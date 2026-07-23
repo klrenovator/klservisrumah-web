@@ -120,7 +120,7 @@ At **KL Servis Rumah**, our waterproofing crews carry out PU Grouting cleanly in
 ### 4 Massive Advantages of PU Grouting
 
 *   **1. Zero Tile Hacking Required**: Your beautiful, expensive marble or ceramic floor tiles in the upper bathroom are left completely untouched.
-*   **2. Completed in Hours**: A standard PU grouting project takes only 2 to 4 hours to complete. Your bathroom remains fully functional.
+*   **2. Completed in Hours**: A standard PU grouting project takes only 2 to 4 hours to complete. Your bathroom remains functional.
 *   **3. Highly Budget-Friendly**: Because it eliminates tile demolition, new materials, and extensive labor hours, PU Grouting is typically 60% cheaper than traditional re-waterproofing.
 *   **4. Extremely Durable**: Polyurethane is a flexible compound. As buildings settle or concrete expands under Malaysia's heat, the rubber seal flexes without cracking, keeping the leak blocked permanently.
 
@@ -138,5 +138,4 @@ If your plaster ceiling is showing damp spots, don't wait for it to collapse and
   }
 ];
 export const blogCategories = ["All", "Painting", "Plumbing", "Ceiling", "Waterproofing", "Handyman"];
-export type { BlogPost };
 export default blogPosts;
