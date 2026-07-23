@@ -1,0 +1,91 @@
+@import "tailwindcss";
+@import "@heroui/theme";
+
+/* =========================================================
+   KL SERVIS RUMAH — Premium Light Theme
+   Palette: Pure White + Dark Navy (#021F44) + Sky Blue (#0781B2)
+   ========================================================= */
+
+@theme {
+  --font-sans: var(--font-sans, ui-sans-serif, system-ui, sans-serif);
+  --font-mono: var(--font-mono, ui-monospace, monospace);
+
+  --color-brand-dark: #021f44;
+  --color-brand-sky: #0781b2;
+  --color-brand-light: #d2dee7;
+  --color-brand-slate: #4a607c;
+  --color-brand-bg: #ffffff;
+
+  --color-brand-50:  #f0f9ff;
+  --color-brand-100: #e0f2fe;
+  --color-brand-200: #bae6fd;
+  --color-brand-300: #7dd3fc;
+  --color-brand-400: #38bdf8;
+  --color-brand-500: #0781b2;
+  --color-brand-600: #026d94;
+  --color-brand-700: #025774;
+  --color-brand-800: #014156;
+  --color-brand-900: #012b38;
+  --color-brand-950: #021f44;
+
+  --color-ink:      #021f44;
+  --color-ink-soft: #4a607c;
+  --color-whatsapp: #22c55e;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: clip;
+  font-size: 15px;
+}
+
+@media (min-width: 640px) {
+  html { font-size: 16px; }
+}
+
+body {
+  background: #ffffff;
+  color: #4a607c;
+  font-feature-settings: "rlig" 1, "calt" 1;
+  overflow-x: clip;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translate3d(0, 20px, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-6px); }
+}
+
+.reveal-hidden {
+  opacity: 0;
+  transform: translate3d(0, 20px, 0);
+  will-change: opacity, transform;
+}
+.reveal-visible {
+  animation: fade-up 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+  will-change: opacity, transform;
+}
+.float-anim { animation: float 3s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-visible { animation: none; opacity: 1; transform: none; }
+  .float-anim { animation: none; }
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+::selection { background: #0781b2; color: #fff; }
+
+:focus-visible {
+  outline: 2px solid #0781b2;
+  outline-offset: 2px;
+}
