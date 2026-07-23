@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "@heroui/theme";
+@import "@heroui/styles";
 
 /* =========================================================
    KL SERVIS RUMAH — Premium Light Theme
@@ -10,29 +10,33 @@
   --font-sans: var(--font-sans, ui-sans-serif, system-ui, sans-serif);
   --font-mono: var(--font-mono, ui-monospace, monospace);
 
+  /* Primary Logo Colors */
   --color-brand-dark: #021f44;
   --color-brand-sky: #0781b2;
   --color-brand-light: #d2dee7;
   --color-brand-slate: #4a607c;
   --color-brand-bg: #ffffff;
 
+  /* Sky blue shades for buttons, icons and borders */
   --color-brand-50:  #f0f9ff;
   --color-brand-100: #e0f2fe;
   --color-brand-200: #bae6fd;
   --color-brand-300: #7dd3fc;
   --color-brand-400: #38bdf8;
-  --color-brand-500: #0781b2;
+  --color-brand-500: #0781b2; /* Sky blue */
   --color-brand-600: #026d94;
   --color-brand-700: #025774;
   --color-brand-800: #014156;
   --color-brand-900: #012b38;
-  --color-brand-950: #021f44;
+  --color-brand-950: #021f44; /* Dark Navy */
 
+  /* Semantic aliases */
   --color-ink:      #021f44;
   --color-ink-soft: #4a607c;
   --color-whatsapp: #22c55e;
 }
 
+/* ── Base ─────────────────────────────────────────────────── */
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
@@ -51,6 +55,7 @@ body {
   overflow-x: clip;
 }
 
+/* ── Reveal Animations ────────────────────────────────────── */
 @keyframes fade-up {
   from { opacity: 0; transform: translate3d(0, 20px, 0); }
   to   { opacity: 1; transform: translate3d(0, 0, 0); }
@@ -80,11 +85,14 @@ body {
   .float-anim { animation: none; }
 }
 
+/* ── Scrollbar ────────────────────────────────────────────── */
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
+/* ── Selection ────────────────────────────────────────────── */
 ::selection { background: #0781b2; color: #fff; }
 
+/* ── Focus rings ──────────────────────────────────────────── */
 :focus-visible {
   outline: 2px solid #0781b2;
   outline-offset: 2px;
