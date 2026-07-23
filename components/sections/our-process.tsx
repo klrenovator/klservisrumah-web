@@ -39,6 +39,7 @@ export function OurProcess() {
     <section className="bg-white py-20 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
+        {/* Header */}
         <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-16">
           <span className="text-xs font-bold text-[#0781B2] tracking-widest uppercase bg-[#D2DEE7]/30 px-4 py-1.5 rounded-full">
             The Work Flow
@@ -51,7 +52,10 @@ export function OurProcess() {
           </p>
         </div>
 
+        {/* Steps mapping */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 relative">
+          
+          {/* Decorative connector line on desktop */}
           <div className="hidden lg:block absolute top-[68px] left-[10%] right-[10%] h-0.5 bg-slate-100 -z-10" />
 
           {steps.map((step, idx) => (
