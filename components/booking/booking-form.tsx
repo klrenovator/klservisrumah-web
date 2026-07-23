@@ -8,6 +8,7 @@ import { siteConfig } from "@/config/site";
 import { servicesData } from "@/config/services-data";
 import { Calendar, User, Phone, MapPin, Clipboard, FileText, CheckCircle2 } from "lucide-react";
 
+// Form validation schema with zod
 const bookingSchema = z.object({
   name: z.string().min(3, "Name must be at least 3 characters long"),
   phone: z.string().regex(/^(?:\+?6?01)[0-46-9]\-?\d{7,8}$/, "Please enter a valid Malaysian phone number (e.g., 0123456789)"),
@@ -43,11 +44,13 @@ export function BookingForm() {
     setFormData(data);
     setIsSuccess(true);
 
+    // Dynamic WhatsApp checkout URL creation
     const serviceTitle = servicesData[data.service]?.title || data.service;
     const notes = data.details ? `\n\nNotes: ${data.details}` : "";
     const waText = `Hi KL Servis Rumah! I would like to book a home service.\n\n👤 Name: ${data.name}\n📞 Phone: ${data.phone}\n🛠️ Service: ${serviceTitle}\n📍 Location: ${data.location}\n📅 Date: ${data.date}${notes}`;
     const encoded = encodeURIComponent(waText);
     
+    // Redirect to WhatsApp in a new tab after 2 seconds
     setTimeout(() => {
       window.open(`https://wa.me/${siteConfig.whatsapp}?text=${encoded}`, "_blank");
     }, 1500);
@@ -67,6 +70,7 @@ export function BookingForm() {
           </p>
         </div>
 
+        {/* Compiled Summary Box */}
         <div className="w-full bg-slate-50 border border-slate-100 rounded-2xl p-5 text-left flex flex-col gap-3">
           <div className="text-xs font-bold text-[#021F44] border-b border-slate-200/50 pb-2 uppercase tracking-widest">
             Summary of Request:
@@ -114,6 +118,8 @@ export function BookingForm() {
   return (
     <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_15px_40px_rgba(2,31,68,0.04)]">
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-5">
+        
+        {/* Row 1: Name */}
         <div className="flex flex-col gap-2">
           <label className="text-xs font-bold text-[#021F44] uppercase tracking-wider flex items-center gap-1.5">
             <User className="w-4 h-4 text-[#0781B2]" />
@@ -130,6 +136,7 @@ export function BookingForm() {
           )}
         </div>
 
+        {/* Row 2: Phone */}
         <div className="flex flex-col gap-2">
           <label className="text-xs font-bold text-[#021F44] uppercase tracking-wider flex items-center gap-1.5">
             <Phone className="w-4 h-4 text-[#0781B2]" />
@@ -146,6 +153,7 @@ export function BookingForm() {
           )}
         </div>
 
+        {/* Row 3: Service */}
         <div className="flex flex-col gap-2">
           <label className="text-xs font-bold text-[#021F44] uppercase tracking-wider flex items-center gap-1.5">
             <Clipboard className="w-4 h-4 text-[#0781B2]" />
@@ -167,6 +175,7 @@ export function BookingForm() {
           )}
         </div>
 
+        {/* Row 4: Suburb */}
         <div className="flex flex-col gap-2">
           <label className="text-xs font-bold text-[#021F44] uppercase tracking-wider flex items-center gap-1.5">
             <MapPin className="w-4 h-4 text-[#0781B2]" />
@@ -188,6 +197,7 @@ export function BookingForm() {
           )}
         </div>
 
+        {/* Row 5: Date */}
         <div className="flex flex-col gap-2">
           <label className="text-xs font-bold text-[#021F44] uppercase tracking-wider flex items-center gap-1.5">
             <Calendar className="w-4 h-4 text-[#0781B2]" />
@@ -203,6 +213,7 @@ export function BookingForm() {
           )}
         </div>
 
+        {/* Row 6: Details */}
         <div className="flex flex-col gap-2">
           <label className="text-xs font-bold text-[#021F44] uppercase tracking-wider flex items-center gap-1.5">
             <FileText className="w-4 h-4 text-[#0781B2]" />
@@ -216,6 +227,7 @@ export function BookingForm() {
           />
         </div>
 
+        {/* Submit action */}
         <button
           type="submit"
           disabled={isSubmitting}
@@ -223,7 +235,8 @@ export function BookingForm() {
         >
           {isSubmitting ? "Compiling booking..." : "Submit Booking Request & Open WhatsApp"}
         </button>
+
       </form>
     </div>
   );
-                                               }
+}
