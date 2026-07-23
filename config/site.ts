@@ -12,7 +12,7 @@ export const siteConfig = {
   metaDescription:
     "Expert home services in KL & Selangor: Premium House Painting, Plaster Ceiling, Plumbing, Waterproofing & Handyman. Transparent pricing & workmanship warranty.",
 
-  phone: "+60182983573",
+  phone: "+60182983573", // Matching parent company contact framework
   phoneDisplay: "+60 18-298 3573",
   whatsapp: "60182983573",
   whatsappLink: "https://wa.me/60182983573?text=Hi%20KL%20Servis%20Rumah,%20I%20want%20to%20book%20a%20home%20service%20for%20my%20property.",
@@ -26,7 +26,7 @@ export const siteConfig = {
   geoLat: 3.1670,
   geoLng: 101.6520,
   hours: "Mon–Sun · 9:00 AM – 6:00 PM (Everyday Open)",
-  googleMapsEmbed: "https://maps.app.goo.gl/dG5WWYBCotRQzvRJA",
+  googleMapsEmbed: "https://maps.app.goo.gl/dG5WWYBCotRQzvRJA", // Synced with company maps portal
   googleBusinessProfile: "https://share.google/HhXvqWDkefZ5bzNdL",
   reviewCount: 120,
   reviewRating: 4.9,
@@ -56,6 +56,7 @@ export const siteConfig = {
     "Selangor", "Sentul", "Bandar Botanic"
   ],
 
+  // Visual Trust stats
   stats: [
     { label: "Completed Projects", value: "1,200+" },
     { label: "Experienced Craftsmen", value: "15+ Pros" },
@@ -65,7 +66,7 @@ export const siteConfig = {
 
   links: {
     whatsapp: "https://wa.me/60182983573",
-    facebook: "https://www.facebook.com/share/1DDDB3523A/",
+    facebook: "https://www.facebook.com/share/1DDDB3523A/", // Consolidated parent links
     instagram: "https://www.instagram.com/klrenovator?igsh=MTNqb3p1NDExZ3Boeg==",
     tiktok: "https://www.tiktok.com/@klrenovator?_r=1&_t=ZS-96tR1k7aVU5",
     youtube: "https://www.youtube.com/@klrenovator",
