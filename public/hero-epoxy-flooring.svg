@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img">
+  <defs>
+    <linearGradient id="epbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0369A1"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#epbg)"/>
+  <circle cx="950" cy="120" r="220" fill="#fff" opacity="0.05"/>
+  <circle cx="200" cy="500" r="150" fill="#fff" opacity="0.04"/>
+  <!-- Glossy floor with decorative flake -->
+  <g transform="translate(550, 130)">
+    <rect x="0" y="0" width="280" height="280" rx="4" fill="#fff" opacity="0.18"/>
+    <rect x="0" y="0" width="280" height="280" rx="4" stroke="#fff" stroke-width="2" fill="none" opacity="0.5"/>
+    <!-- Glossy reflection gradient -->
+    <path d="M0 60 Q140 0 280 60 L280 90 Q140 50 0 90 Z" fill="#fff" opacity="0.25"/>
+    <path d="M0 200 Q140 240 280 200 L280 230 Q140 270 0 230 Z" fill="#fff" opacity="0.1"/>
+    <!-- Flake chips -->
+    <circle cx="40" cy="40" r="6" fill="#0EA5E9" opacity="0.8"/>
+    <circle cx="60" cy="80" r="5" fill="#fff" opacity="0.7"/>
+    <circle cx="90" cy="120" r="7" fill="#0369A1" opacity="0.9"/>
+    <circle cx="120" cy="60" r="4" fill="#0EA5E9"/>
+    <circle cx="160" cy="100" r="6" fill="#fff" opacity="0.6"/>
+    <circle cx="190" cy="140" r="5" fill="#0EA5E9" opacity="0.8"/>
+    <circle cx="220" cy="80" r="7" fill="#fff" opacity="0.7"/>
+    <circle cx="240" cy="160" r="4" fill="#0369A1" opacity="0.9"/>
+    <circle cx="50" cy="180" r="5" fill="#0EA5E9"/>
+    <circle cx="100" cy="200" r="6" fill="#fff" opacity="0.5"/>
+    <circle cx="150" cy="220" r="4" fill="#0369A1" opacity="0.8"/>
+    <circle cx="200" cy="240" r="5" fill="#0EA5E9" opacity="0.7"/>
+  </g>
+  <!-- Roller tool icon -->
+  <g transform="translate(880, 380)">
+    <rect x="0" y="0" width="60" height="20" rx="10" fill="#fff" opacity="0.85"/>
+    <rect x="28" y="20" width="4" height="40" fill="#fff" opacity="0.7"/>
+    <rect x="20" y="60" width="20" height="6" rx="2" fill="#fff" opacity="0.6"/>
+  </g>
+</svg>

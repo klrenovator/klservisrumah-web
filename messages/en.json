@@ -1,0 +1,164 @@
+{
+  "common": {
+    "siteName": "KL Servis Rumah",
+    "tagline": "Market-Rate Painting, Plumbing, Ceiling, Waterproofing & Handyman Services in KL & Selangor",
+    "loading": "Loading...",
+    "viewAll": "View all",
+    "viewDetails": "View details & pricing",
+    "viewMore": "View more",
+    "bookService": "Book this service",
+    "bookWhatsApp": "Book via WhatsApp",
+    "callUs": "Call us",
+    "getQuote": "Get a free quote",
+    "learnMore": "Learn more",
+    "readMore": "Read more",
+    "fromPrice": "From {price}",
+    "fromLabel": "From"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "areas": "Service Areas",
+    "problems": "Problems"
+  },
+  "footer": {
+    "tagline": "Professional home services in KL & Selangor",
+    "explore": "Explore",
+    "company": "Company",
+    "support": "Support",
+    "copyright": "© {year} KL Servis Rumah. All rights reserved.",
+    "operatingHours": "Mon–Sun · 9:00 AM – 6:00 PM (Everyday Open)"
+  },
+  "home": {
+    "topBanner": "Market-rate Home Services in Kuala Lumpur & Selangor — Painting, Plumbing, Ceiling & Handyman",
+    "hero": {
+      "heading1": "Premium Home Services",
+      "heading2": "Done Right",
+      "headingLocation": "in KL & Selangor",
+      "subhead": "Professional house painting, plaster ceiling, leak repair, waterproofing, and handyman work by background-verified local tradesmen, with fully insured operations, up to 90 days craftsmanship warranties, and 100% transparent quotes before work begins.",
+      "feature1": "Upfront Fixed Pricing",
+      "feature2": "Fully Insured Team",
+      "feature3": "Up to 90 Day Warranty"
+    },
+    "trustBadges": {
+      "heading": "Why homeowners and businesses trust KL Servis Rumah",
+      "items": {
+        "verified": "Background-verified tradesmen",
+        "insured": "Fully insured operations",
+        "warranty": "Up to 90-day craftsmanship warranty",
+        "transparent": "100% transparent, itemized quotes"
+      }
+    },
+    "servicesGrid": {
+      "heading": "Our Expert Home Services",
+      "subheading": "Professional painting, plumbing, ceiling, waterproofing and handyman work across Kuala Lumpur and Selangor. Click any service to view details and pricing.",
+      "residential": "Residential Services",
+      "commercial": "Commercial Services"
+    },
+    "whyChooseUs": {
+      "heading": "Why KL Servis Rumah",
+      "items": {
+        "transparent": {
+          "title": "Transparent, fixed pricing",
+          "desc": "Every quote is itemized and confirmed before any drilling, painting, or pipe work begins."
+        },
+        "warranty": {
+          "title": "Real workmanship warranty",
+          "desc": "Up to 90 days of warranty on handyman work and longer warranties on painting, plumbing, and waterproofing."
+        },
+        "verified": {
+          "title": "Verified, background-checked pros",
+          "desc": "All tradesmen are local, trained, and screened so you can trust them in your home."
+        },
+        "fast": {
+          "title": "Same-day response in KL & Selangor",
+          "desc": "Book before noon and our nearest team can often attend the same day, including weekends."
+        }
+      }
+    },
+    "process": {
+      "heading": "Our 4-step booking process",
+      "subheading": "From your first WhatsApp message to a fully completed, warranty-backed job — here's how it works."
+    },
+    "beforeAfter": {
+      "heading": "Before and after: real project results",
+      "subheading": "See the quality of our painting, ceiling, plumbing, waterproofing, and handyman work across Kuala Lumpur and Selangor."
+    },
+    "featuredProjects": {
+      "heading": "Featured projects from our team",
+      "subheading": "A selection of recent painting, ceiling, plumbing, waterproofing, and handyman projects we have delivered across KL & Selangor."
+    },
+    "testimonials": {
+      "heading": "What our customers say",
+      "subheading": "Reviews from real homeowners and businesses across Kuala Lumpur and Selangor."
+    },
+    "serviceAreas": {
+      "heading": "Areas we cover in KL & Selangor",
+      "subheading": "Same-day home services available across all major Klang Valley districts, townships, and suburbs."
+    },
+    "faq": {
+      "heading": "Frequently asked questions",
+      "subheading": "Quick answers about pricing, warranty, response time, and service coverage."
+    },
+    "cta": {
+      "badge": "Get Started Today",
+      "heading": "Ready to book your premium home service?",
+      "subheading": "Contact us now via WhatsApp or call our friendly dispatch desk. Get an instant, fully itemized quote with zero upfront deposits and full workmanship warranties.",
+      "bookButton": "Book Via WhatsApp (Fast Response)",
+      "callButton": "Call Support {phone}",
+      "hours": "* We operate everyday from 9:00 AM to 6:00 PM including public holidays."
+    }
+  },
+  "services": {
+    "pageTitle": "Our Services",
+    "pageSubtitle": "Premium home services across Kuala Lumpur and Selangor. Pick a service to view scope, pricing, and warranty.",
+    "residentialTab": "Residential Services",
+    "commercialTab": "Commercial Services",
+    "startingFrom": "Starting from",
+    "quoteBased": "On Quote",
+    "processHeading": "Our service process",
+    "faqHeading": "Service FAQs",
+    "viewPricing": "View pricing & details",
+    "notFound": "Service not found.",
+    "backToServices": "Back to all services"
+  },
+  "contact": {
+    "pageTitle": "Contact & Booking",
+    "pageSubtitle": "Book your home service via WhatsApp for the fastest response, or fill in the form and we will reply within an hour.",
+    "formHeading": "Send us a booking request",
+    "formSubheading": "Fill in the form below and we will WhatsApp you back with an itemized quote within 60 minutes during operating hours.",
+    "fields": {
+      "name": "Full Name",
+      "phone": "Phone / WhatsApp Number",
+      "email": "Email (optional)",
+      "service": "Service Needed",
+      "area": "Service Area / Address",
+      "message": "Describe the work needed",
+      "urgency": "Urgency"
+    },
+    "urgencyLevels": {
+      "low": "Within a week",
+      "medium": "Within 2–3 days",
+      "high": "Within 24 hours",
+      "emergency": "Emergency (today)"
+    },
+    "submit": "Send booking request",
+    "whatsappHeading": "Prefer WhatsApp?",
+    "whatsappDescription": "Tap the button below to chat with our dispatch desk. Send photos for a faster quote."
+  },
+  "pricing": {
+    "pageTitle": "Our Pricing",
+    "pageSubtitle": "Transparent, market-rate pricing for all home services across KL & Selangor. No hidden charges, no surprise fees.",
+    "compareHeading": "Compare service pricing",
+    "compareSubheading": "Side-by-side pricing for our most-requested services so you can budget before booking."
+  },
+  "languageSwitcher": {
+    "label": "Select language",
+    "currentLanguage": "Current language: {lang}"
+  }
+}

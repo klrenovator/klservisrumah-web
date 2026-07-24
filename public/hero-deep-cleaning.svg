@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img">
+  <defs>
+    <linearGradient id="dcbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#dcbg)"/>
+  <circle cx="950" cy="120" r="220" fill="#fff" opacity="0.05"/>
+  <circle cx="200" cy="500" r="150" fill="#fff" opacity="0.04"/>
+  <!-- Sparkle stars (clean theme) -->
+  <g transform="translate(450, 130)">
+    <path d="M30 30 L34 38 L42 42 L34 46 L30 54 L26 46 L18 42 L26 38 Z" fill="#fff" opacity="0.85"/>
+    <path d="M150 80 L153 86 L159 89 L153 92 L150 98 L147 92 L141 89 L147 86 Z" fill="#fff" opacity="0.7"/>
+    <path d="M80 200 L83 206 L89 209 L83 212 L80 218 L77 212 L71 209 L77 206 Z" fill="#fff" opacity="0.75"/>
+    <path d="M220 240 L223 246 L229 249 L223 252 L220 258 L217 252 L211 249 L217 246 Z" fill="#fff" opacity="0.7"/>
+    <path d="M180 60 L182 64 L186 66 L182 68 L180 72 L178 68 L174 66 L178 64 Z" fill="#fff" opacity="0.8"/>
+    <path d="M260 160 L262 164 L266 166 L262 168 L260 172 L258 168 L254 166 L258 164 Z" fill="#fff" opacity="0.6"/>
+  </g>
+  <!-- Sponge in center -->
+  <g transform="translate(560, 200)">
+    <rect x="0" y="0" width="120" height="80" rx="4" fill="#fff" opacity="0.25" stroke="#fff" stroke-width="2" opacity="0.6"/>
+    <rect x="0" y="0" width="120" height="20" rx="4" fill="#0EA5E9" opacity="0.7"/>
+    <!-- Texture lines on sponge -->
+    <line x1="20" y1="35" x2="100" y2="35" stroke="#fff" stroke-width="0.5" opacity="0.5"/>
+    <line x1="20" y1="45" x2="100" y2="45" stroke="#fff" stroke-width="0.5" opacity="0.5"/>
+    <line x1="20" y1="55" x2="100" y2="55" stroke="#fff" stroke-width="0.5" opacity="0.5"/>
+    <line x1="20" y1="65" x2="100" y2="65" stroke="#fff" stroke-width="0.5" opacity="0.5"/>
+  </g>
+  <!-- Cleaning bubbles -->
+  <circle cx="850" cy="200" r="6" fill="#fff" opacity="0.2"/>
+  <circle cx="870" cy="230" r="4" fill="#fff" opacity="0.3"/>
+  <circle cx="900" cy="280" r="5" fill="#fff" opacity="0.2"/>
+  <circle cx="850" cy="320" r="3" fill="#fff" opacity="0.3"/>
+  <circle cx="890" cy="380" r="4" fill="#fff" opacity="0.2"/>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img">
+  <defs>
+    <linearGradient id="crbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#075985"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#crbg)"/>
+  <circle cx="950" cy="120" r="220" fill="#fff" opacity="0.05"/>
+  <circle cx="200" cy="500" r="150" fill="#fff" opacity="0.04"/>
+  <!-- Built-in wardrobe with 4 doors -->
+  <g transform="translate(490, 90)">
+    <!-- Outer frame -->
+    <rect x="0" y="0" width="220" height="320" rx="2" fill="#fff" opacity="0.15"/>
+    <rect x="0" y="0" width="220" height="320" rx="2" stroke="#fff" stroke-width="2" fill="none" opacity="0.5"/>
+    <!-- Top molding -->
+    <rect x="-10" y="-8" width="240" height="10" fill="#fff" opacity="0.4"/>
+    <!-- 4 door panels -->
+    <line x1="55" y1="0" x2="55" y2="320" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
+    <line x1="110" y1="0" x2="110" y2="320" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
+    <line x1="165" y1="0" x2="165" y2="320" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
+    <!-- Panel insets -->
+    <rect x="8" y="20" width="40" height="200" rx="1" fill="#0EA5E9" opacity="0.15"/>
+    <rect x="63" y="20" width="40" height="200" rx="1" fill="#0EA5E9" opacity="0.15"/>
+    <rect x="118" y="20" width="40" height="200" rx="1" fill="#0EA5E9" opacity="0.15"/>
+    <rect x="173" y="20" width="40" height="200" rx="1" fill="#0EA5E9" opacity="0.15"/>
+    <!-- Handles -->
+    <line x1="51" y1="160" x2="51" y2="180" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <line x1="106" y1="160" x2="106" y2="180" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <line x1="161" y1="160" x2="161" y2="180" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <line x1="216" y1="160" x2="216" y2="180" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <!-- Bottom drawers -->
+    <line x1="0" y1="260" x2="220" y2="260" stroke="#fff" stroke-width="1" opacity="0.5"/>
+    <rect x="8" y="270" width="40" height="40" fill="#0EA5E9" opacity="0.2"/>
+    <rect x="63" y="270" width="40" height="40" fill="#0EA5E9" opacity="0.2"/>
+    <rect x="118" y="270" width="40" height="40" fill="#0EA5E9" opacity="0.2"/>
+    <rect x="173" y="270" width="40" height="40" fill="#0EA5E9" opacity="0.2"/>
+  </g>
+  <!-- Saw tool icon -->
+  <g transform="translate(880, 380)">
+    <rect x="0" y="0" width="80" height="14" rx="2" fill="#fff" opacity="0.85"/>
+    <path d="M0 14 L5 22 L10 14 L15 22 L20 14 L25 22 L30 14 L35 22 L40 14 L45 22 L50 14 L55 22 L60 14 L65 22 L70 14 L75 22 L80 14" fill="#fff" opacity="0.85"/>
+    <rect x="20" y="-8" width="40" height="8" rx="2" fill="#fff" opacity="0.7"/>
+  </g>
+</svg>

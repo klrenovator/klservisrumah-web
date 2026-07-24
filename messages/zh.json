@@ -1,0 +1,164 @@
+{
+  "common": {
+    "siteName": "KL Servis Rumah",
+    "tagline": "市场行情家居服务 — 雪兰莪与吉隆坡的油漆、水管、天花板、防水与杂工服务",
+    "loading": "加载中...",
+    "viewAll": "查看全部",
+    "viewDetails": "查看详情与价格",
+    "viewMore": "查看更多",
+    "bookService": "预订此服务",
+    "bookWhatsApp": "通过 WhatsApp 预订",
+    "callUs": "联系我们",
+    "getQuote": "获取免费报价",
+    "learnMore": "了解更多",
+    "readMore": "阅读更多",
+    "fromPrice": "起价 {price}",
+    "fromLabel": "起"
+  },
+  "nav": {
+    "home": "首页",
+    "services": "服务",
+    "pricing": "价格",
+    "faq": "常见问题",
+    "blog": "博客",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "areas": "服务区域",
+    "problems": "问题"
+  },
+  "footer": {
+    "tagline": "吉隆坡与雪兰莪的专业家居服务",
+    "explore": "探索",
+    "company": "公司",
+    "support": "支持",
+    "copyright": "© {year} KL Servis Rumah. 版权所有。",
+    "operatingHours": "周一至周日 · 上午 9:00 – 下午 6:00（每日营业）"
+  },
+  "home": {
+    "topBanner": "吉隆坡与雪兰莪的市场行情家居服务 — 油漆、水管、天花板与杂工服务",
+    "hero": {
+      "heading1": "优质家居服务",
+      "heading2": "专业到位",
+      "headingLocation": "服务于吉隆坡与雪兰莪",
+      "subhead": "由背景已查证的本地师傅提供专业油漆、石膏天花板、补漏、防水与杂工服务，全程保险，最高 90 天工艺保证，100% 透明报价，开工前确认。",
+      "feature1": "预先固定价格",
+      "feature2": "全程保险团队",
+      "feature3": "最高 90 天保证"
+    },
+    "trustBadges": {
+      "heading": "为何屋主与企业信任 KL Servis Rumah",
+      "items": {
+        "verified": "背景已查证师傅",
+        "insured": "全程保险运营",
+        "warranty": "最高 90 天工艺保证",
+        "transparent": "100% 透明分项报价"
+      }
+    },
+    "servicesGrid": {
+      "heading": "我们的专业家居服务",
+      "subheading": "在吉隆坡与雪兰莪提供专业油漆、水管、天花板、防水与杂工服务。点击任一服务查看详情与价格。",
+      "residential": "住宅服务",
+      "commercial": "商业服务"
+    },
+    "whyChooseUs": {
+      "heading": "为何选择 KL Servis Rumah",
+      "items": {
+        "transparent": {
+          "title": "透明固定价格",
+          "desc": "在开始任何钻孔、油漆或水管工作之前，每份报价都详细列出并经过确认。"
+        },
+        "warranty": {
+          "title": "真实工艺保证",
+          "desc": "杂工工作最高 90 天保证，油漆、水管与防水工作保证期更长。"
+        },
+        "verified": {
+          "title": "已查证的专业师傅",
+          "desc": "所有师傅均为本地、受训并经过背景查证，您可安心让他们进入您的家。"
+        },
+        "fast": {
+          "title": "吉隆坡与雪兰莪当日响应",
+          "desc": "中午前预订，最近的团队通常能在当天上门，包括周末。"
+        }
+      }
+    },
+    "process": {
+      "heading": "我们的 4 步预订流程",
+      "subheading": "从您第一条 WhatsApp 消息，到完整交付带保证的工程，以下是流程。"
+    },
+    "beforeAfter": {
+      "heading": "施工前后：真实项目成果",
+      "subheading": "查看我们在吉隆坡与雪兰莪的油漆、天花板、水管、防水与杂工工程质量。"
+    },
+    "featuredProjects": {
+      "heading": "团队精选项目",
+      "subheading": "我们近期在吉隆坡与雪兰莪完成的精选油漆、天花板、水管、防水与杂工项目。"
+    },
+    "testimonials": {
+      "heading": "客户评价",
+      "subheading": "来自吉隆坡与雪兰莪真实屋主与企业的评价。"
+    },
+    "serviceAreas": {
+      "heading": "我们在吉隆坡与雪兰莪覆盖的区域",
+      "subheading": "在所有主要巴生谷地区、住宅区与郊区提供当日家居服务。"
+    },
+    "faq": {
+      "heading": "常见问题",
+      "subheading": "关于价格、保证、响应时间与服务覆盖范围的快速回答。"
+    },
+    "cta": {
+      "badge": "今天就开始",
+      "heading": "准备好预订您的优质家居服务了吗？",
+      "subheading": "现在通过 WhatsApp 联系我们，或致电我们友好的调度台。即时获得完整分项报价，零预付押金，完整工艺保证。",
+      "bookButton": "通过 WhatsApp 预订（快速响应）",
+      "callButton": "致电客服 {phone}",
+      "hours": "* 我们每天上午 9:00 至下午 6:00 营业，包括公共假期。"
+    }
+  },
+  "services": {
+    "pageTitle": "我们的服务",
+    "pageSubtitle": "覆盖吉隆坡与雪兰莪的优质家居服务。选择一项服务以查看范围、价格与保证。",
+    "residentialTab": "住宅服务",
+    "commercialTab": "商业服务",
+    "startingFrom": "起价",
+    "quoteBased": "依报价",
+    "processHeading": "我们的服务流程",
+    "faqHeading": "服务常见问题",
+    "viewPricing": "查看价格与详情",
+    "notFound": "未找到该服务。",
+    "backToServices": "返回所有服务"
+  },
+  "contact": {
+    "pageTitle": "联系与预订",
+    "pageSubtitle": "通过 WhatsApp 预订家居服务以获得最快响应，或填写表格我们将在 1 小时内回复您。",
+    "formHeading": "发送预订请求",
+    "formSubheading": "填写以下表格，我们将在营业时间内 60 分钟内通过 WhatsApp 回复您，并提供详细报价。",
+    "fields": {
+      "name": "全名",
+      "phone": "电话 / WhatsApp 号码",
+      "email": "电邮（可选）",
+      "service": "所需服务",
+      "area": "服务区域 / 地址",
+      "message": "描述所需工作",
+      "urgency": "紧急程度"
+    },
+    "urgencyLevels": {
+      "low": "一周内",
+      "medium": "2–3 天内",
+      "high": "24 小时内",
+      "emergency": "紧急（今天）"
+    },
+    "submit": "发送预订请求",
+    "whatsappHeading": "更喜欢 WhatsApp？",
+    "whatsappDescription": "点击下方按钮与我们调度台对话。发送照片可获得更快的报价。"
+  },
+  "pricing": {
+    "pageTitle": "我们的价格",
+    "pageSubtitle": "吉隆坡与雪兰莪所有家居服务的透明市场行情价格。无隐藏费用，无意外收费。",
+    "compareHeading": "比较服务价格",
+    "compareSubheading": "并排显示我们最常被请求的服务价格，方便您在预订前做好预算。"
+  },
+  "languageSwitcher": {
+    "label": "选择语言",
+    "currentLanguage": "当前语言：{lang}"
+  }
+}

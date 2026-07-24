@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img">
+  <defs>
+    <linearGradient id="tibg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0369A1"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#tibg)"/>
+  <circle cx="950" cy="120" r="220" fill="#fff" opacity="0.05"/>
+  <circle cx="200" cy="500" r="150" fill="#fff" opacity="0.04"/>
+  <!-- Tile grid pattern -->
+  <g transform="translate(580, 100)">
+    <rect x="0" y="0" width="100" height="100" rx="2" fill="#fff" opacity="0.25" stroke="#fff" stroke-width="2"/>
+    <rect x="120" y="0" width="100" height="100" rx="2" fill="#fff" opacity="0.4" stroke="#fff" stroke-width="2"/>
+    <rect x="240" y="0" width="100" height="100" rx="2" fill="#fff" opacity="0.3" stroke="#fff" stroke-width="2"/>
+    <rect x="0" y="120" width="100" height="100" rx="2" fill="#fff" opacity="0.35" stroke="#fff" stroke-width="2"/>
+    <rect x="120" y="120" width="100" height="100" rx="2" fill="#fff" opacity="0.2" stroke="#fff" stroke-width="2"/>
+    <rect x="240" y="120" width="100" height="100" rx="2" fill="#fff" opacity="0.4" stroke="#fff" stroke-width="2"/>
+    <rect x="0" y="240" width="100" height="100" rx="2" fill="#fff" opacity="0.3" stroke="#fff" stroke-width="2"/>
+    <rect x="120" y="240" width="100" height="100" rx="2" fill="#fff" opacity="0.45" stroke="#fff" stroke-width="2"/>
+    <rect x="240" y="240" width="100" height="100" rx="2" fill="#fff" opacity="0.25" stroke="#fff" stroke-width="2"/>
+  </g>
+  <!-- Tile cutter tool -->
+  <g transform="translate(540, 460)">
+    <rect x="0" y="0" width="60" height="20" rx="3" fill="#fff" opacity="0.6"/>
+    <circle cx="10" cy="10" r="6" fill="#fff" opacity="0.8"/>
+    <circle cx="50" cy="10" r="6" fill="#fff" opacity="0.8"/>
+  </g>
+</svg>
