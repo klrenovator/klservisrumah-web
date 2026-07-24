@@ -27,10 +27,10 @@ export default function BlogPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-16">
-            <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#DBEAFE]/30 px-4 py-1.5 rounded-full">
+            <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
               Informative Resource
             </span>
-            <h1 className="text-3xl sm:text-4xl font-extrabold text-[#1E40AF] tracking-tight">
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
               Our Expert Knowledge Hub
             </h1>
             <p className="text-base text-[#475569] leading-relaxed">
@@ -52,7 +52,7 @@ export default function BlogPage() {
                     <span className="text-xs text-slate-300 font-semibold">{post.date}</span>
                   </div>
 
-                  <h2 className="text-xl font-extrabold text-[#1E40AF] tracking-tight group-hover:text-[#0EA5E9] transition-colors leading-snug">
+                  <h2 className="text-xl font-extrabold text-[#075985] tracking-tight group-hover:text-[#0EA5E9] transition-colors leading-snug">
                     {post.title}
                   </h2>
 
@@ -75,7 +75,7 @@ export default function BlogPage() {
                 <div className="mt-6 pt-4 border-t border-slate-50 flex justify-end">
                   <Link
                     href={`/blog/${post.slug}`}
-                    className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0EA5E9] group-hover:text-[#1E40AF]"
+                    className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0EA5E9] group-hover:text-[#075985]"
                   >
                     <span>Read Article</span>
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

@@ -36,10 +36,10 @@ export function FeaturedProjects() {
         {/* Header */}
         <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-6 mb-16">
           <div className="flex flex-col items-start gap-3 max-w-2xl">
-            <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#DBEAFE]/30 px-4 py-1.5 rounded-full">
+            <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
               Completed Works
             </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1E40AF] tracking-tight">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
               Featured Recent Projects
             </h2>
             <p className="text-base text-[#475569] leading-relaxed">
@@ -47,7 +47,7 @@ export function FeaturedProjects() {
             </p>
           </div>
           
-          <div className="shrink-0 flex items-center gap-2 text-xs font-extrabold text-[#1E40AF] bg-slate-50 border border-slate-100 p-4 rounded-2xl shadow-3xs">
+          <div className="shrink-0 flex items-center gap-2 text-xs font-extrabold text-[#075985] bg-slate-50 border border-slate-100 p-4 rounded-2xl shadow-3xs">
             <ShieldCheck className="w-5 h-5 text-emerald-500" />
             <span>Guaranteed Standards</span>
           </div>
@@ -68,7 +68,7 @@ export function FeaturedProjects() {
                   <span>{project.location}</span>
                 </div>
 
-                <h3 className="text-xl font-extrabold text-[#1E40AF] tracking-tight group-hover:text-[#0EA5E9] transition-colors leading-snug">
+                <h3 className="text-xl font-extrabold text-[#075985] tracking-tight group-hover:text-[#0EA5E9] transition-colors leading-snug">
                   {project.title}
                 </h3>
 
@@ -80,7 +80,7 @@ export function FeaturedProjects() {
 
               {/* Stat footer */}
               <div className="mt-8 pt-5 border-t border-slate-50 flex items-center justify-between">
-                <span className="text-xs text-[#1E40AF] font-bold">
+                <span className="text-xs text-[#075985] font-bold">
                   ⚡ {project.stat}
                 </span>
                 <span className="p-2 bg-slate-50 rounded-xl group-hover:bg-[#0EA5E9] group-hover:text-white transition-colors duration-300">

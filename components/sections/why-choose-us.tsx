@@ -41,10 +41,10 @@ export function WhyChooseUs() {
         
         {/* Section header */}
         <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#DBEAFE]/30 px-4 py-1.5 rounded-full">
+          <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
             The Family Distinction
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1E40AF] tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
             Why KL Servis Rumah stands apart
           </h2>
           <p className="text-base text-[#475569] leading-relaxed">
@@ -59,10 +59,10 @@ export function WhyChooseUs() {
               key={idx}
               className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-100/50 shadow-[0_4px_20px_rgba(2,31,68,0.01)] hover:shadow-[0_15px_40px_rgba(2,31,68,0.03)] hover:border-[#0EA5E9]/20 transition-all duration-300"
             >
-              <div className="p-3 bg-[#DBEAFE]/25 rounded-2xl w-fit mb-6">
+              <div className="p-3 bg-[#E0F2FE]/25 rounded-2xl w-fit mb-6">
                 {point.icon}
               </div>
-              <h3 className="text-lg font-bold text-[#1E40AF] tracking-tight mb-2.5">
+              <h3 className="text-lg font-bold text-[#075985] tracking-tight mb-2.5">
                 {point.title}
               </h3>
               <p className="text-xs sm:text-sm text-[#475569] leading-relaxed font-medium">

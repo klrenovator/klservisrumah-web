@@ -65,7 +65,7 @@ export default async function BlogPostSlugPage(props: { params: Promise<{ slug: 
           <div className="flex flex-col gap-8">
             <Link
               href="/blog"
-              className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0EA5E9] hover:text-[#1E40AF] transition-colors w-fit"
+              className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0EA5E9] hover:text-[#075985] transition-colors w-fit"
             >
               <ArrowLeft className="w-4 h-4" />
               <span>Back to Knowledge Hub</span>
@@ -75,7 +75,7 @@ export default async function BlogPostSlugPage(props: { params: Promise<{ slug: 
               <span className="text-xs font-bold text-[#0EA5E9] bg-[#0EA5E9]/10 px-3 py-1 rounded-md uppercase tracking-wider w-fit">
                 {post.category}
               </span>
-              <h1 className="text-2xl sm:text-4xl font-extrabold text-[#1E40AF] tracking-tight leading-tight">
+              <h1 className="text-2xl sm:text-4xl font-extrabold text-[#075985] tracking-tight leading-tight">
                 {post.title}
               </h1>
               
@@ -102,7 +102,7 @@ export default async function BlogPostSlugPage(props: { params: Promise<{ slug: 
             <div className="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-100/80 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left mt-4">
               <div className="flex flex-col gap-1 max-w-lg">
                 <span className="text-xs font-bold text-[#0EA5E9] uppercase tracking-widest">Expert Support Desk</span>
-                <span className="text-lg sm:text-xl font-extrabold text-[#1E40AF] tracking-tight">Need help with {post.category}?</span>
+                <span className="text-lg sm:text-xl font-extrabold text-[#075985] tracking-tight">Need help with {post.category}?</span>
                 <p className="text-xs text-[#475569] font-semibold leading-relaxed">
                   Our professional tradesmen serve all locations in KL & Selangor. Get an instant, free fixed-rate quote today!
                 </p>

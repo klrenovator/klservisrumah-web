@@ -77,7 +77,7 @@ export default async function AreaSlugPage(props: { params: Promise<{ slug: stri
                   <MapPin className="w-4 h-4 text-[#0EA5E9]" />
                   <span>Serving {area.name}</span>
                 </span>
-                <h1 className="text-3xl sm:text-5xl font-extrabold text-[#1E40AF] tracking-tight leading-tight">
+                <h1 className="text-3xl sm:text-5xl font-extrabold text-[#075985] tracking-tight leading-tight">
                   Premium Home Services in {area.name}
                 </h1>
                 <p className="text-base text-[#475569] leading-relaxed font-semibold">
@@ -90,7 +90,7 @@ export default async function AreaSlugPage(props: { params: Promise<{ slug: stri
               </div>
 
               <div className="bg-slate-50 rounded-3xl p-6 border border-slate-100/80 flex flex-col gap-5">
-                <h2 className="text-lg font-extrabold text-[#1E40AF] tracking-tight flex items-center gap-2">
+                <h2 className="text-lg font-extrabold text-[#075985] tracking-tight flex items-center gap-2">
                   <Landmark className="w-5 h-5 text-[#0EA5E9]" />
                   <span>Coverage Suburbs & Landmarks in {area.name}</span>
                 </h2>
@@ -111,7 +111,7 @@ export default async function AreaSlugPage(props: { params: Promise<{ slug: stri
             </div>
 
             <div className="lg:col-span-5 w-full lg:sticky lg:top-28">
-              <div className="bg-[#1E40AF] text-white rounded-3xl p-6 sm:p-8 flex flex-col gap-6 shadow-[0_20px_50px_rgba(2,31,68,0.12)]">
+              <div className="bg-[#075985] text-white rounded-3xl p-6 sm:p-8 flex flex-col gap-6 shadow-[0_20px_50px_rgba(2,31,68,0.12)]">
                 <div className="flex flex-col gap-1">
                   <span className="text-xs font-bold text-[#0EA5E9] uppercase tracking-widest">Immediate Dispatch</span>
                   <h2 className="text-xl sm:text-2xl font-extrabold tracking-tight">Book in {area.name}</h2>
@@ -157,13 +157,13 @@ export default async function AreaSlugPage(props: { params: Promise<{ slug: stri
 
           <hr className="border-slate-100 my-16" />
           <div className="max-w-4xl mx-auto flex flex-col gap-10">
-            <h2 className="text-2xl font-extrabold text-[#1E40AF] text-center tracking-tight">
+            <h2 className="text-2xl font-extrabold text-[#075985] text-center tracking-tight">
               {area.name} Local FAQs
             </h2>
             <div className="flex flex-col gap-4">
               {area.faqs.map((faq, idx) => (
                 <div key={idx} className="bg-slate-50 rounded-2xl p-5 border border-slate-100/60">
-                  <h3 className="text-base font-extrabold text-[#1E40AF] mb-2">{faq.q}</h3>
+                  <h3 className="text-base font-extrabold text-[#075985] mb-2">{faq.q}</h3>
                   <p className="text-xs sm:text-sm text-[#475569] leading-relaxed font-semibold">{faq.a}</p>
                 </div>
               ))}

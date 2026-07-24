@@ -16,6 +16,7 @@ const areaLinks = siteConfig.areas.map((area) => ({ label: area, href: `/suburbs
 
 const staticLinks = [
   { label: "Contact and booking", href: "/contact", type: "Page" },
+  { label: "Pricing and rates", href: "/pricing", type: "Page" },
   { label: "FAQ helpdesk", href: "/faq", type: "Page" },
   { label: "Home services directory", href: "/services", type: "Page" }
 ];
@@ -38,7 +39,7 @@ export function SiteSearch() {
           value={query}
           onChange={(event) => setQuery(event.target.value)}
           placeholder="Search service..."
-          className="w-full bg-transparent text-xs font-semibold text-[#1E40AF] outline-none placeholder:text-slate-400"
+          className="w-full bg-transparent text-xs font-semibold text-[#075985] outline-none placeholder:text-slate-400"
           aria-label="Search site services"
         />
       </div>
@@ -49,7 +50,7 @@ export function SiteSearch() {
               key={`${item.type}-${item.href}`}
               href={item.href}
               onClick={() => setQuery("")}
-              className="flex items-center justify-between gap-3 rounded-xl px-3 py-2 text-xs font-semibold text-[#475569] hover:bg-slate-50 hover:text-[#1E40AF]"
+              className="flex items-center justify-between gap-3 rounded-xl px-3 py-2 text-xs font-semibold text-[#475569] hover:bg-slate-50 hover:text-[#075985]"
             >
               <span>{item.label}</span>
               <span className="shrink-0 rounded-full bg-[#0EA5E9]/10 px-2 py-0.5 text-[10px] font-bold text-[#0EA5E9]">{item.type}</span>

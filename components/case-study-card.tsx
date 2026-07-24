@@ -7,7 +7,7 @@ export function CaseStudyCard({ title, location, result }: { title: string; loca
       <div className="mb-3 flex items-center gap-2 text-xs font-bold text-[#0EA5E9]">
         <MapPin className="h-4 w-4" /> {location}
       </div>
-      <h3 className="text-lg font-extrabold text-[#1E40AF]">{title}</h3>
+      <h3 className="text-lg font-extrabold text-[#075985]">{title}</h3>
       <p className="mt-2 text-sm font-semibold leading-relaxed text-[#475569]">{result}</p>
     </article>
   );

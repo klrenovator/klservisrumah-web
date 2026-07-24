@@ -22,7 +22,7 @@ export function StickyMobileWhatsAppBar() {
         <a
           href={`tel:${siteConfig.phone}`}
           onClick={() => trackPhoneCall({ page: "sticky_mobile_bar" })}
-          className="flex items-center justify-center gap-2 rounded-xl bg-[#2563EB] px-3 py-3 text-sm font-extrabold text-white"
+          className="flex items-center justify-center gap-2 rounded-xl bg-[#0284C7] px-3 py-3 text-sm font-extrabold text-white"
         >
           <Phone className="h-4 w-4" /> Call
         </a>

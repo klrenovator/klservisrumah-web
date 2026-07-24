@@ -33,6 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: Entry[] = [
     { path: "/", priority: 1.0 },
     { path: "/services", priority: 0.8 },
+    { path: "/pricing", priority: 0.82 },
     { path: "/areas", priority: 0.8 },
     { path: "/blog", priority: 0.7 },
     { path: "/faq", priority: 0.7 },

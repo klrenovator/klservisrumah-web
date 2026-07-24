@@ -16,7 +16,7 @@ export function TrustBar() {
     <section className="border-y border-slate-100 bg-white py-3">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-5 gap-y-2 px-4 sm:px-6 lg:px-8">
         {items.map((item) => (
-          <div key={item.label} className="flex items-center gap-2 text-[11px] font-extrabold uppercase tracking-wide text-[#1E40AF]">
+          <div key={item.label} className="flex items-center gap-2 text-[11px] font-extrabold uppercase tracking-wide text-[#075985]">
             {item.icon}
             <span>{item.label}</span>
           </div>

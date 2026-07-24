@@ -10,7 +10,7 @@ export function ReviewBadge() {
           <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
         ))}
       </div>
-      <span className="text-xs font-bold text-[#1E40AF]">
+      <span className="text-xs font-bold text-[#075985]">
         {siteConfig.reviewRating} / 5.0 Google Rating ({siteConfig.reviewCount}+ reviews)
       </span>
     </div>

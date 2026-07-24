@@ -35,7 +35,7 @@ export default function Home() {
       <ServiceAreas />
       <FAQAccordion />
 
-      <section className="bg-gradient-to-r from-[#1E40AF] to-[#1D4ED8] py-20 border-t border-[#0EA5E9]/30 text-white relative overflow-hidden">
+      <section className="bg-gradient-to-r from-[#075985] to-[#0369A1] py-20 border-t border-[#0EA5E9]/30 text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-80 h-80 rounded-full bg-[#0EA5E9]/10 blur-3xl pointer-events-none" />
         
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 flex flex-col items-center gap-7">

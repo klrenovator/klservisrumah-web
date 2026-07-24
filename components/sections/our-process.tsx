@@ -41,10 +41,10 @@ export function OurProcess() {
         
         {/* Header */}
         <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#DBEAFE]/30 px-4 py-1.5 rounded-full">
+          <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
             The Work Flow
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1E40AF] tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
             Our Professional 5-Step Process
           </h2>
           <p className="text-base text-[#475569] leading-relaxed">
@@ -68,7 +68,7 @@ export function OurProcess() {
                   {step.num}
                 </span>
               </div>
-              <h3 className="text-sm font-bold text-[#1E40AF] tracking-tight mb-2.5">
+              <h3 className="text-sm font-bold text-[#075985] tracking-tight mb-2.5">
                 {step.title}
               </h3>
               <p className="text-[11px] sm:text-xs text-[#475569] leading-relaxed font-semibold">

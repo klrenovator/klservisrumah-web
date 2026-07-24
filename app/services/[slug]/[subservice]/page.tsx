@@ -81,15 +81,15 @@ export default async function SubServicePage(props: { params: Promise<{ slug: st
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-12 lg:px-8">
           <div className="lg:col-span-8 flex flex-col gap-8">
             <div className="flex flex-col gap-4">
-              <span className="w-fit rounded-full bg-[#DBEAFE] px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-[#2563EB]">Sub-service landing page</span>
-              <h1 className="text-3xl font-extrabold leading-tight tracking-tight text-[#1E40AF] sm:text-5xl">
+              <span className="w-fit rounded-full bg-[#E0F2FE] px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-[#0284C7]">Sub-service landing page</span>
+              <h1 className="text-3xl font-extrabold leading-tight tracking-tight text-[#075985] sm:text-5xl">
                 {sub.name} in KL & Selangor — {sub.price}
               </h1>
               <p className="text-base font-semibold leading-relaxed text-[#475569] sm:text-lg">{sub.desc}</p>
             </div>
 
             <div className="rounded-3xl border border-slate-100 bg-white p-6 shadow-xs sm:p-8">
-              <h2 className="text-2xl font-extrabold text-[#1E40AF]">What this service includes</h2>
+              <h2 className="text-2xl font-extrabold text-[#075985]">What this service includes</h2>
               <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
                 {["Initial inspection and scope confirmation", "Surface or fixture preparation", "Professional tools and suitable materials", "Clean execution with property protection", "Function / finish testing before handover", "Transparent market-rate final quote", service.warranty, "WhatsApp support for scheduling"].map((item) => (
                   <div key={item} className="flex items-start gap-3 rounded-2xl bg-slate-50 p-4 text-sm font-semibold text-[#475569]">
@@ -100,13 +100,13 @@ export default async function SubServicePage(props: { params: Promise<{ slug: st
             </div>
 
             <div className="rounded-3xl border border-slate-100 bg-white p-6 shadow-xs sm:p-8">
-              <h2 className="text-2xl font-extrabold text-[#1E40AF]">Process timeline</h2>
+              <h2 className="text-2xl font-extrabold text-[#075985]">Process timeline</h2>
               <div className="mt-5 space-y-4">
                 {service.process.slice(0, 5).map((step) => (
                   <div key={step.step} className="flex gap-4">
-                    <span className="h-fit rounded-xl bg-[#DBEAFE] px-3 py-1.5 text-sm font-extrabold text-[#2563EB]">{step.step}</span>
+                    <span className="h-fit rounded-xl bg-[#E0F2FE] px-3 py-1.5 text-sm font-extrabold text-[#0284C7]">{step.step}</span>
                     <div>
-                      <h3 className="font-extrabold text-[#1E40AF]">{step.title}</h3>
+                      <h3 className="font-extrabold text-[#075985]">{step.title}</h3>
                       <p className="mt-1 text-sm font-semibold leading-relaxed text-[#475569]">{step.desc}</p>
                     </div>
                   </div>
@@ -126,11 +126,11 @@ export default async function SubServicePage(props: { params: Promise<{ slug: st
             />
 
             <div className="rounded-3xl border border-slate-100 bg-white p-6 shadow-xs sm:p-8">
-              <h2 className="mb-5 text-2xl font-extrabold text-[#1E40AF]">FAQs</h2>
+              <h2 className="mb-5 text-2xl font-extrabold text-[#075985]">FAQs</h2>
               <div className="space-y-4">
                 {faqs.map((faq) => (
                   <div key={faq.q} className="rounded-2xl bg-slate-50 p-4">
-                    <h3 className="font-extrabold text-[#1E40AF]">{faq.q}</h3>
+                    <h3 className="font-extrabold text-[#075985]">{faq.q}</h3>
                     <p className="mt-2 text-sm font-semibold leading-relaxed text-[#475569]">{faq.a}</p>
                   </div>
                 ))}
@@ -139,13 +139,13 @@ export default async function SubServicePage(props: { params: Promise<{ slug: st
           </div>
 
           <aside className="lg:col-span-4">
-            <div className="sticky top-28 rounded-3xl bg-[#2563EB] p-6 text-white shadow-xl">
+            <div className="sticky top-28 rounded-3xl bg-[#0284C7] p-6 text-white shadow-xl">
               <h2 className="text-2xl font-extrabold">Book {sub.name}</h2>
               <p className="mt-2 text-sm font-semibold leading-relaxed text-blue-50">Send photos and area. We confirm scope and price before dispatch.</p>
               <a href={getWhatsAppLink({ service: sub.name })} target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#22C55E] px-5 py-3 text-sm font-extrabold text-white">
                 <MessageCircle className="h-4 w-4" /> WhatsApp Quote
               </a>
-              <Link href={`/services/${service.slug}`} className="mt-3 inline-flex w-full items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-extrabold text-[#1E40AF]">
+              <Link href={`/services/${service.slug}`} className="mt-3 inline-flex w-full items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-extrabold text-[#075985]">
                 Parent service page
               </Link>
             </div>
