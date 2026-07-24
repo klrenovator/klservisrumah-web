@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img">
+  <defs>
+    <linearGradient id="rbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0369A1"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#rbg)"/>
+  <circle cx="950" cy="120" r="220" fill="#fff" opacity="0.05"/>
+  <circle cx="200" cy="500" r="150" fill="#fff" opacity="0.04"/>
+  <!-- House outline with tools -->
+  <g transform="translate(700, 130)">
+    <path d="M200 60 L200 200 L0 200 L0 60 L100 0 Z" fill="#fff" opacity="0.12"/>
+    <path d="M200 60 L200 200 L0 200 L0 60 L100 0 Z" stroke="#fff" stroke-width="3" fill="none" stroke-linejoin="round" opacity="0.9"/>
+    <rect x="70" y="120" width="60" height="80" fill="#fff" opacity="0.4"/>
+    <rect x="40" y="80" width="40" height="40" fill="#fff" opacity="0.3"/>
+    <rect x="140" y="80" width="40" height="40" fill="#fff" opacity="0.3"/>
+  </g>
+  <!-- Floating tools -->
+  <rect x="540" y="350" width="60" height="14" rx="3" fill="#fff" opacity="0.4" transform="rotate(-25 570 357)"/>
+  <rect x="620" y="380" width="14" height="60" rx="3" fill="#fff" opacity="0.4" transform="rotate(-25 627 410)"/>
+  <circle cx="560" cy="420" r="14" fill="#fff" opacity="0.3" transform="rotate(-25 560 420)"/>
+  <!-- Paint roller -->
+  <rect x="850" y="380" width="50" height="16" rx="6" fill="#fff" opacity="0.5"/>
+  <rect x="868" y="396" width="14" height="40" rx="2" fill="#fff" opacity="0.4"/>
+</svg>

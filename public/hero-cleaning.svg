@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img">
+  <defs>
+    <linearGradient id="clbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0369A1"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#clbg)"/>
+  <circle cx="950" cy="120" r="220" fill="#fff" opacity="0.05"/>
+  <circle cx="200" cy="500" r="150" fill="#fff" opacity="0.04"/>
+  <!-- Spray bottle -->
+  <g transform="translate(540, 130)">
+    <rect x="0" y="40" width="80" height="160" rx="8" fill="#fff" opacity="0.25" stroke="#fff" stroke-width="2" opacity="0.7"/>
+    <rect x="20" y="0" width="40" height="50" rx="4" fill="#fff" opacity="0.5"/>
+    <rect x="36" y="-10" width="8" height="20" fill="#fff" opacity="0.7"/>
+    <!-- Bottle label -->
+    <rect x="10" y="80" width="60" height="80" rx="2" fill="#fff" opacity="0.4"/>
+    <line x1="20" y1="100" x2="60" y2="100" stroke="#0EA5E9" stroke-width="1.5"/>
+    <line x1="20" y1="110" x2="50" y2="110" stroke="#0EA5E9" stroke-width="1"/>
+    <line x1="20" y1="120" x2="55" y2="120" stroke="#0EA5E9" stroke-width="1"/>
+    <line x1="20" y1="135" x2="50" y2="135" stroke="#0EA5E9" stroke-width="1"/>
+    <!-- Trigger handle -->
+    <path d="M-20 60 L0 50 L0 80 L-15 70 Z" fill="#fff" opacity="0.6"/>
+  </g>
+  <!-- Spray droplets and sparkles -->
+  <circle cx="660" cy="180" r="4" fill="#fff" opacity="0.6"/>
+  <circle cx="700" cy="220" r="3" fill="#fff" opacity="0.5"/>
+  <circle cx="680" cy="280" r="5" fill="#fff" opacity="0.4"/>
+  <circle cx="720" cy="320" r="3" fill="#fff" opacity="0.5"/>
+  <path d="M740 200 L742 204 L746 206 L742 208 L740 212 L738 208 L734 206 L738 204 Z" fill="#fff" opacity="0.8"/>
+  <path d="M860 240 L862 244 L866 246 L862 248 L860 252 L858 248 L854 246 L858 244 Z" fill="#fff" opacity="0.7"/>
+  <path d="M820 380 L822 384 L826 386 L822 388 L820 392 L818 388 L814 386 L818 384 Z" fill="#fff" opacity="0.6"/>
+</svg>

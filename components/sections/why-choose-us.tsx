@@ -1,51 +1,56 @@
+"use client";
+
 import React from "react";
 import { ShieldCheck, Sparkles, Flame, Clock, Heart, Headphones } from "lucide-react";
+import { useTranslations } from "@/hooks/use-translations";
 
 export function WhyChooseUs() {
+  const t = useTranslations();
+
   const points = [
     {
       icon: <ShieldCheck className="w-6 h-6 text-[#0EA5E9]" />,
-      title: "Legally Backed & Registered",
-      desc: "Managed by an established local company with fully insured operations across all property boundaries."
+      titleKey: "home.whyChooseUs.items.verified.title",
+      descKey: "home.whyChooseUs.items.verified.desc"
     },
     {
       icon: <Sparkles className="w-6 h-6 text-[#0EA5E9]" />,
-      title: "Premium Materials Only",
-      desc: "Nippon Paint, Dulux, SIRIM-certified plumbing, and heavy-duty hollow anchors. No low-grade compromises."
+      titleKey: "home.whyChooseUs.items.transparent.title",
+      descKey: "home.whyChooseUs.items.transparent.desc"
     },
     {
       icon: <Flame className="w-6 h-6 text-[#0EA5E9]" />,
-      title: "Cleanliness & Zero Mess",
-      desc: "We deploy plastic sheets and masking tapes to protect your valuable furniture and flooring. Full cleanup conducted."
+      titleKey: "home.whyChooseUs.items.warranty.title",
+      descKey: "home.whyChooseUs.items.warranty.desc"
     },
     {
       icon: <Clock className="w-6 h-6 text-[#0EA5E9]" />,
-      title: "Same-Day Dispatch Slots",
-      desc: "Got an urgent plumbing leak or TV mounting need? Book early for quick same-day dispatch slots in KL & Selangor."
+      titleKey: "home.whyChooseUs.items.fast.title",
+      descKey: "home.whyChooseUs.items.fast.desc"
     },
     {
       icon: <Heart className="w-6 h-6 text-[#0EA5E9]" />,
-      title: "Local Background-Checked Crew",
-      desc: "Polite, background-verified local tradesmen who care deeply about precision alignments and structural safety."
+      titleKey: "home.trustBadges.items.verified",
+      descKey: "home.trustBadges.heading"
     },
     {
       icon: <Headphones className="w-6 h-6 text-[#0EA5E9]" />,
-      title: "Post-Service Warranty",
-      desc: "Every project is locked with a solid written warranty of up to 90 days. If anything holds issues, we return to fix it free."
+      titleKey: "home.trustBadges.items.warranty",
+      descKey: "home.trustBadges.items.transparent"
     }
   ];
 
   return (
     <section className="bg-slate-50 border-y border-slate-100 py-20 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section header */}
         <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-16">
           <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
-            The Family Distinction
+            {t("home.whyChooseUs.heading")}
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
-            Why KL Servis Rumah stands apart
+            {t("home.whyChooseUs.heading")}
           </h2>
           <p className="text-base text-[#475569] leading-relaxed">
             Following the elite visual standards, strict engineering practices, and high-quality guarantees of the KL Renovator brand family.
@@ -63,10 +68,10 @@ export function WhyChooseUs() {
                 {point.icon}
               </div>
               <h3 className="text-lg font-bold text-[#075985] tracking-tight mb-2.5">
-                {point.title}
+                {t(point.titleKey)}
               </h3>
               <p className="text-xs sm:text-sm text-[#475569] leading-relaxed font-medium">
-                {point.desc}
+                {t(point.descKey)}
               </p>
             </div>
           ))}

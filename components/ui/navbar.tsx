@@ -10,11 +10,32 @@ import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { SiteSearch } from "@/components/ui/site-search";
 import { trackPhoneCall, trackWhatsAppClick } from "@/lib/analytics";
 import { Logo } from "@/components/ui/logo";
+import { useTranslations } from "@/hooks/use-translations";
+
+const navKeyMap: Record<string, string> = {
+  "/": "nav.home",
+  "/services": "nav.services",
+  "/pricing": "nav.pricing",
+  "/faq": "nav.faq",
+  "/blog": "nav.blog",
+  "/about": "nav.about",
+  "/contact": "nav.contact"
+};
+
+function resolveNavKey(href: string): string {
+  if (navKeyMap[href]) return navKeyMap[href];
+  if (href.startsWith("/services")) return "nav.services";
+  if (href.startsWith("/areas")) return "nav.areas";
+  if (href.startsWith("/problems")) return "nav.problems";
+  if (href.startsWith("/blog")) return "nav.blog";
+  return "nav.home";
+}
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
+  const t = useTranslations();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -32,7 +53,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full transition-all duration-300">
       <div className="bg-[#0284C7] text-white py-2 text-xs md:text-sm px-4 text-center font-medium border-b border-[#0EA5E9]/20 flex items-center justify-center gap-2">
         <CheckCircle2 className="w-3.5 h-3.5 text-[#E0F2FE]" />
-        <span>Market-rate Home Services in Kuala Lumpur & Selangor — Painting, Plumbing, Ceiling & Handyman</span>
+        <span>{t("home.topBanner")}</span>
       </div>
 
       <nav className={`w-full bg-white transition-all duration-300 border-b ${scrolled ? "py-3 shadow-[0_4px_20px_rgba(2,31,68,0.03)] border-slate-100" : "py-5 border-transparent"}`}>
@@ -45,13 +66,15 @@ export function Navbar() {
             <div className="hidden lg:flex items-center gap-6">
               {siteConfig.navItems.map((item) => {
                 const isActive = pathname === item.href || (item.href !== "/" && pathname.startsWith(item.href));
+                const key = resolveNavKey(item.href);
+                const label = t(key);
                 return (
                   <Link
-                    key={item.label}
+                    key={item.href}
                     href={item.href}
                     className={`font-medium text-sm transition-colors duration-200 ${isActive ? "text-[#0EA5E9] font-semibold" : "text-[#475569] hover:text-[#075985]"}`}
                   >
-                    {item.label}
+                    {label}
                   </Link>
                 );
               })}
@@ -75,7 +98,7 @@ export function Navbar() {
                 onClick={() => trackWhatsAppClick({ page: pathname })}
                 className="bg-[#0284C7] hover:bg-[#0369A1] text-white font-semibold text-sm px-5 py-2.5 rounded-xl transition-all duration-200 shadow-sm hover:shadow-md"
               >
-                Book Service
+                {t("common.bookService")}
               </a>
             </div>
 
@@ -105,9 +128,11 @@ export function Navbar() {
             <div className="flex flex-col gap-3">
               {siteConfig.navItems.map((item) => {
                 const isActive = pathname === item.href;
+                const key = resolveNavKey(item.href);
+                const label = t(key);
                 return (
-                  <Link key={item.label} href={item.href} className={`px-4 py-3 rounded-xl font-medium text-base transition-colors ${isActive ? "bg-[#0EA5E9]/10 text-[#0EA5E9]" : "text-[#475569] hover:bg-slate-50 hover:text-[#075985]"}`}>
-                    {item.label}
+                  <Link key={item.href} href={item.href} className={`px-4 py-3 rounded-xl font-medium text-base transition-colors ${isActive ? "bg-[#0EA5E9]/10 text-[#0EA5E9]" : "text-[#475569] hover:bg-slate-50 hover:text-[#075985]"}`}>
+                    {label}
                   </Link>
                 );
               })}
@@ -116,7 +141,7 @@ export function Navbar() {
             <div className="flex flex-col gap-3 px-4">
               <div className="text-xs text-[#475569] font-medium flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-[#0EA5E9]" />
-                <span>Operating Hours: {siteConfig.hours}</span>
+                <span>{t("footer.operatingHours")}</span>
               </div>
               <a
                 href={waLink}
@@ -125,7 +150,7 @@ export function Navbar() {
                 onClick={() => trackWhatsAppClick({ page: pathname, placement: "mobile_menu" })}
                 className="bg-[#0284C7] hover:bg-[#0369A1] text-white text-center font-semibold text-base py-3 rounded-xl transition-all duration-200 shadow-sm"
               >
-                Book Via WhatsApp
+                {t("common.bookWhatsApp")}
               </a>
               <a
                 href={`tel:${siteConfig.phone}`}
@@ -133,7 +158,7 @@ export function Navbar() {
                 className="border border-[#075985]/20 text-[#075985] text-center font-semibold text-base py-3 rounded-xl transition-all duration-200 hover:bg-slate-50 flex items-center justify-center gap-2"
               >
                 <Phone className="w-4 h-4 text-[#0EA5E9]" />
-                <span>Call {siteConfig.phoneDisplay}</span>
+                <span>{t("common.callUs")} {siteConfig.phoneDisplay}</span>
               </a>
             </div>
           </div>

@@ -3,7 +3,6 @@ import React from "react";
 type HeroBannerProps = {
   service: string;
   title: string;
-  subtitle?: string;
 };
 
 const serviceConfigs: Record<string, { colors: string[]; icon: React.ReactNode }> = {
@@ -66,7 +65,7 @@ const serviceConfigs: Record<string, { colors: string[]; icon: React.ReactNode }
   },
 };
 
-export function HeroBanner({ service, title, subtitle }: HeroBannerProps) {
+export function HeroBanner({ service, title }: HeroBannerProps) {
   const config = serviceConfigs[service] || serviceConfigs.painting;
   const [c1, c2, c3] = config.colors;
 

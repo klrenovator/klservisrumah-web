@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img">
+  <defs>
+    <linearGradient id="wdbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0369A1"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#wdbg)"/>
+  <circle cx="950" cy="120" r="220" fill="#fff" opacity="0.05"/>
+  <circle cx="200" cy="500" r="150" fill="#fff" opacity="0.04"/>
+  <!-- Metal frame being welded -->
+  <g transform="translate(500, 130)">
+    <!-- Vertical post -->
+    <rect x="0" y="0" width="20" height="280" fill="#fff" opacity="0.3" stroke="#fff" stroke-width="2" opacity="0.7"/>
+    <!-- Horizontal rail -->
+    <rect x="0" y="100" width="200" height="20" fill="#fff" opacity="0.3" stroke="#fff" stroke-width="2" opacity="0.7"/>
+    <!-- Weld spots -->
+    <circle cx="10" cy="110" r="6" fill="#fff" opacity="0.9"/>
+    <circle cx="100" cy="110" r="5" fill="#fff" opacity="0.8"/>
+    <circle cx="190" cy="110" r="6" fill="#fff" opacity="0.9"/>
+    <!-- Decorative bars -->
+    <rect x="40" y="120" width="8" height="120" fill="#fff" opacity="0.3"/>
+    <rect x="80" y="120" width="8" height="120" fill="#fff" opacity="0.3"/>
+    <rect x="120" y="120" width="8" height="120" fill="#fff" opacity="0.3"/>
+    <rect x="160" y="120" width="8" height="120" fill="#fff" opacity="0.3"/>
+  </g>
+  <!-- Welding torch -->
+  <g transform="translate(760, 320)">
+    <!-- Torch handle -->
+    <rect x="0" y="0" width="60" height="14" rx="3" fill="#fff" opacity="0.7"/>
+    <!-- Torch head -->
+    <rect x="60" y="3" width="20" height="8" fill="#fff" opacity="0.85"/>
+    <!-- Welding electrode -->
+    <line x1="80" y1="7" x2="100" y2="7" stroke="#075985" stroke-width="2"/>
+    <!-- Bright spark/arc at tip -->
+    <circle cx="105" cy="7" r="6" fill="#fff"/>
+    <circle cx="105" cy="7" r="12" fill="#fff" opacity="0.4"/>
+    <circle cx="105" cy="7" r="20" fill="#fff" opacity="0.2"/>
+  </g>
+  <!-- Spark particles -->
+  <path d="M860 320 L880 310 M870 330 L890 320 M880 340 L900 330" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <circle cx="870" cy="320" r="2" fill="#fff"/>
+  <circle cx="900" cy="340" r="2" fill="#fff"/>
+  <circle cx="880" cy="350" r="1.5" fill="#fff"/>
+  <!-- Welding mask (right) -->
+  <g transform="translate(880, 200)">
+    <path d="M0 10 L60 10 L70 30 L70 70 L-10 70 L-10 30 Z" fill="#fff" opacity="0.5" stroke="#fff" stroke-width="2" opacity="0.7"/>
+    <rect x="0" y="25" width="60" height="20" fill="#075985"/>
+    <rect x="5" y="30" width="50" height="10" fill="#0EA5E9" opacity="0.5"/>
+  </g>
+</svg>

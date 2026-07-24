@@ -1,0 +1,164 @@
+{
+  "common": {
+    "siteName": "KL Servis Rumah",
+    "tagline": "Perkhidmatan Rumah Harga Pasaran — Mengecat, Paip, Siling, Kalis Air & Kerja Tangan di KL & Selangor",
+    "loading": "Memuatkan...",
+    "viewAll": "Lihat semua",
+    "viewDetails": "Lihat butiran & harga",
+    "viewMore": "Lihat lagi",
+    "bookService": "Tempah perkhidmatan ini",
+    "bookWhatsApp": "Tempah melalui WhatsApp",
+    "callUs": "Hubungi kami",
+    "getQuote": "Dapatkan sebut harga percuma",
+    "learnMore": "Ketahui lebih lanjut",
+    "readMore": "Baca lagi",
+    "fromPrice": "Dari {price}",
+    "fromLabel": "Dari"
+  },
+  "nav": {
+    "home": "Utama",
+    "services": "Perkhidmatan",
+    "pricing": "Harga",
+    "faq": "Soalan Lazim",
+    "blog": "Blog",
+    "about": "Tentang Kami",
+    "contact": "Hubungi Kami",
+    "areas": "Kawasan Servis",
+    "problems": "Masalah"
+  },
+  "footer": {
+    "tagline": "Perkhidmatan rumah profesional di KL & Selangor",
+    "explore": "Terokai",
+    "company": "Syarikat",
+    "support": "Sokongan",
+    "copyright": "© {year} KL Servis Rumah. Hak cipta terpelihara.",
+    "operatingHours": "Isnin–Ahad · 9:00 PG – 6:00 PTG (Setiap Hari Buka)"
+  },
+  "home": {
+    "topBanner": "Perkhidmatan Rumah Harga Pasaran di Kuala Lumpur & Selangor — Mengecat, Paip, Siling & Kerja Tangan",
+    "hero": {
+      "heading1": "Perkhidmatan Rumah Premium",
+      "heading2": "Dibuat Dengan Betul",
+      "headingLocation": "di KL & Selangor",
+      "subhead": "Pekerjaan mengecat rumah, siling plaster, pembaikan kebocoran, kalis air, dan kerja tangan oleh tukang tempatan yang telah disahkan latar belakang, dengan operasi yang diinsuranskan sepenuhnya, jaminan kerja sehingga 90 hari, dan sebut harga 100% telus sebelum kerja dimulakan.",
+      "feature1": "Harga Tetap Pendahuluan",
+      "feature2": "Pasukan Diinsuranskan Penuh",
+      "feature3": "Jaminan Sehingga 90 Hari"
+    },
+    "trustBadges": {
+      "heading": "Mengapa pemilik rumah dan perniagaan percaya KL Servis Rumah",
+      "items": {
+        "verified": "Tukang yang disahkan latar belakang",
+        "insured": "Operasi diinsuranskan sepenuhnya",
+        "warranty": "Jaminan kerja sehingga 90 hari",
+        "transparent": "Sebut harga 100% telus dan terperinci"
+      }
+    },
+    "servicesGrid": {
+      "heading": "Perkhidmatan Rumah Pakar Kami",
+      "subheading": "Kerja mengecat, paip, siling, kalis air dan kerja tangan profesional merentasi Kuala Lumpur dan Selangor. Klik mana-mana perkhidmatan untuk melihat butiran dan harga.",
+      "residential": "Perkhidmatan Kediaman",
+      "commercial": "Perkhidmatan Komersial"
+    },
+    "whyChooseUs": {
+      "heading": "Mengapa KL Servis Rumah",
+      "items": {
+        "transparent": {
+          "title": "Harga tetap yang telus",
+          "desc": "Setiap sebut harga diperincikan dan disahkan sebelum sebarang kerja penggerudian, pengecatan, atau paip dimulakan."
+        },
+        "warranty": {
+          "title": "Jaminan kerja sebenar",
+          "desc": "Sehingga 90 hari jaminan untuk kerja tangan dan jaminan lebih panjang untuk pengecatan, paip, dan kalis air."
+        },
+        "verified": {
+          "title": "Profesional yang disahkan dan ditapis",
+          "desc": "Semua tukang adalah tempatan, terlatih, dan ditapis supaya anda boleh percaya mereka di rumah anda."
+        },
+        "fast": {
+          "title": "Tindakan hari sama di KL & Selangor",
+          "desc": "Tempah sebelum tengah hari dan pasukan terdekat kami selalunya boleh hadir pada hari yang sama, termasuk hujung minggu."
+        }
+      }
+    },
+    "process": {
+      "heading": "Proses tempahan 4 langkah kami",
+      "subheading": "Dari mesej WhatsApp pertama anda sehingga kerja siap dengan jaminan — begini caranya."
+    },
+    "beforeAfter": {
+      "heading": "Sebelum dan selepas: hasil projek sebenar",
+      "subheading": "Lihat kualiti kerja mengecat, siling, paip, kalis air, dan kerja tangan kami di seluruh Kuala Lumpur dan Selangor."
+    },
+    "featuredProjects": {
+      "heading": "Projek pilihan dari pasukan kami",
+      "subheading": "Pilihan projek terkini mengecat, siling, paip, kalis air, dan kerja tangan yang telah kami selesaikan di KL & Selangor."
+    },
+    "testimonials": {
+      "heading": "Apa kata pelanggan kami",
+      "subheading": "Ulasan dari pemilik rumah dan perniagaan sebenar di seluruh Kuala Lumpur dan Selangor."
+    },
+    "serviceAreas": {
+      "heading": "Kawasan yang kami liput di KL & Selangor",
+      "subheading": "Perkhidmatan rumah hari sama tersedia di semua daerah utama Lembah Klang, kawasan perumahan, dan suburb."
+    },
+    "faq": {
+      "heading": "Soalan yang sering ditanya",
+      "subheading": "Jawapan ringkas tentang harga, jaminan, masa respons, dan liputan perkhidmatan."
+    },
+    "cta": {
+      "badge": "Mulakan Hari Ini",
+      "heading": "Bersedia untuk menempah perkhidmatan rumah premium anda?",
+      "subheading": "Hubungi kami sekarang melalui WhatsApp atau panggil meja penghantaran kami yang mesra. Dapatkan sebut harga terperinci serta-merta tanpa deposit pendahuluan dan jaminan kerja penuh.",
+      "bookButton": "Tempah Melalui WhatsApp (Respons Pantas)",
+      "callButton": "Hubungi Sokongan {phone}",
+      "hours": "* Kami beroperasi setiap hari dari 9:00 PG hingga 6:00 PTG termasuk cuti umum."
+    }
+  },
+  "services": {
+    "pageTitle": "Perkhidmatan Kami",
+    "pageSubtitle": "Perkhidmatan rumah premium merentasi Kuala Lumpur dan Selangor. Pilih perkhidmatan untuk melihat skop, harga, dan jaminan.",
+    "residentialTab": "Perkhidmatan Kediaman",
+    "commercialTab": "Perkhidmatan Komersial",
+    "startingFrom": "Bermula dari",
+    "quoteBased": "Atas Sebut Harga",
+    "processHeading": "Proses perkhidmatan kami",
+    "faqHeading": "Soalan Lazim Perkhidmatan",
+    "viewPricing": "Lihat harga & butiran",
+    "notFound": "Perkhidmatan tidak dijumpai.",
+    "backToServices": "Kembali ke semua perkhidmatan"
+  },
+  "contact": {
+    "pageTitle": "Hubungi & Tempahan",
+    "pageSubtitle": "Tempah perkhidmatan rumah anda melalui WhatsApp untuk respons terpantas, atau isi borang dan kami akan membalas dalam masa satu jam.",
+    "formHeading": "Hantar permintaan tempahan",
+    "formSubheading": "Isi borang di bawah dan kami akan WhatsApp anda kembali dengan sebut harga terperinci dalam masa 60 minit semasa waktu operasi.",
+    "fields": {
+      "name": "Nama Penuh",
+      "phone": "Nombor Telefon / WhatsApp",
+      "email": "E-mel (pilihan)",
+      "service": "Perkhidmatan Diperlukan",
+      "area": "Kawasan Servis / Alamat",
+      "message": "Terangkan kerja yang diperlukan",
+      "urgency": "Kecemasan"
+    },
+    "urgencyLevels": {
+      "low": "Dalam masa seminggu",
+      "medium": "Dalam 2–3 hari",
+      "high": "Dalam 24 jam",
+      "emergency": "Kecemasan (hari ini)"
+    },
+    "submit": "Hantar permintaan tempahan",
+    "whatsappHeading": "Lebih suka WhatsApp?",
+    "whatsappDescription": "Ketik butang di bawah untuk berbual dengan meja penghantaran kami. Hantar foto untuk sebut harga yang lebih pantas."
+  },
+  "pricing": {
+    "pageTitle": "Harga Kami",
+    "pageSubtitle": "Harga pasaran yang telus untuk semua perkhidmatan rumah di KL & Selangor. Tiada caj tersembunyi, tiada yuran mengejut.",
+    "compareHeading": "Bandingkan harga perkhidmatan",
+    "compareSubheading": "Harga sebelah-menyebelah untuk perkhidmatan kami yang paling diminta supaya anda boleh bajet sebelum membuat tempahan."
+  },
+  "languageSwitcher": {
+    "label": "Pilih bahasa",
+    "currentLanguage": "Bahasa semasa: {lang}"
+  }
+}

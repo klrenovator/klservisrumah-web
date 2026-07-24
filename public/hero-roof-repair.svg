@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img">
+  <defs>
+    <linearGradient id="rrbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#rrbg)"/>
+  <circle cx="950" cy="120" r="220" fill="#fff" opacity="0.05"/>
+  <circle cx="200" cy="500" r="150" fill="#fff" opacity="0.04"/>
+  <!-- House with tiled roof -->
+  <g transform="translate(580, 80)">
+    <!-- House body -->
+    <rect x="40" y="200" width="280" height="180" fill="#fff" opacity="0.18"/>
+    <rect x="40" y="200" width="280" height="180" stroke="#fff" stroke-width="2" fill="none" opacity="0.6"/>
+    <!-- Door -->
+    <rect x="160" y="280" width="50" height="100" fill="#fff" opacity="0.4"/>
+    <circle cx="200" cy="330" r="2" fill="#075985"/>
+    <!-- Windows -->
+    <rect x="60" y="240" width="60" height="60" fill="#fff" opacity="0.3" stroke="#fff" stroke-width="1.5"/>
+    <line x1="90" y1="240" x2="90" y2="300" stroke="#fff" stroke-width="1"/>
+    <line x1="60" y1="270" x2="120" y2="270" stroke="#fff" stroke-width="1"/>
+    <rect x="240" y="240" width="60" height="60" fill="#fff" opacity="0.3" stroke="#fff" stroke-width="1.5"/>
+    <line x1="270" y1="240" x2="270" y2="300" stroke="#fff" stroke-width="1"/>
+    <line x1="240" y1="270" x2="300" y2="270" stroke="#fff" stroke-width="1"/>
+    <!-- Roof with tiles -->
+    <path d="M0 220 L180 80 L360 220 Z" fill="#fff" opacity="0.2"/>
+    <path d="M0 220 L180 80 L360 220 Z" stroke="#fff" stroke-width="2" fill="none" opacity="0.7"/>
+    <!-- Tile rows -->
+    <path d="M30 200 L180 100 L330 200" stroke="#0EA5E9" stroke-width="1" opacity="0.6"/>
+    <path d="M60 180 L180 120 L300 180" stroke="#0EA5E9" stroke-width="1" opacity="0.5"/>
+    <path d="M90 160 L180 140 L270 160" stroke="#0EA5E9" stroke-width="1" opacity="0.4"/>
+    <path d="M120 140 L180 160 L240 140" stroke="#0EA5E9" stroke-width="1" opacity="0.3"/>
+    <!-- Tile divisions -->
+    <line x1="40" y1="210" x2="320" y2="210" stroke="#fff" stroke-width="0.5" opacity="0.5"/>
+    <line x1="70" y1="190" x2="290" y2="190" stroke="#fff" stroke-width="0.5" opacity="0.4"/>
+    <line x1="100" y1="170" x2="260" y2="170" stroke="#fff" stroke-width="0.5" opacity="0.3"/>
+    <!-- Chimney -->
+    <rect x="240" y="120" width="20" height="40" fill="#fff" opacity="0.5"/>
+  </g>
+  <!-- Repair hammer icon -->
+  <g transform="translate(950, 350)">
+    <rect x="0" y="0" width="50" height="16" rx="2" fill="#fff" opacity="0.85" transform="rotate(-30 25 8)"/>
+    <rect x="20" y="14" width="6" height="40" fill="#fff" opacity="0.7" transform="rotate(-30 23 34)"/>
+  </g>
+</svg>

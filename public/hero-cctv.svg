@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img">
+  <defs>
+    <linearGradient id="cctvbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0369A1"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#cctvbg)"/>
+  <circle cx="950" cy="120" r="220" fill="#fff" opacity="0.05"/>
+  <circle cx="200" cy="500" r="150" fill="#fff" opacity="0.04"/>
+  <!-- CCTV Camera 1 (main, center) -->
+  <g transform="translate(500, 180)">
+    <!-- Mounting arm -->
+    <rect x="100" y="-30" width="6" height="40" fill="#fff" opacity="0.7"/>
+    <rect x="80" y="-50" width="46" height="20" rx="3" fill="#fff" opacity="0.6"/>
+    <!-- Camera body (bullet style) -->
+    <rect x="0" y="0" width="200" height="80" rx="8" fill="#0EA5E9" opacity="0.4" stroke="#fff" stroke-width="2" opacity="0.7"/>
+    <!-- Lens -->
+    <circle cx="60" cy="40" r="30" fill="#075985"/>
+    <circle cx="60" cy="40" r="22" fill="#0EA5E9" opacity="0.5"/>
+    <circle cx="60" cy="40" r="14" fill="#075985"/>
+    <circle cx="60" cy="40" r="8" fill="#0EA5E9"/>
+    <circle cx="55" cy="35" r="2" fill="#fff" opacity="0.7"/>
+    <!-- IR LEDs (night vision) -->
+    <circle cx="120" cy="20" r="3" fill="#0EA5E9"/>
+    <circle cx="135" cy="20" r="3" fill="#0EA5E9"/>
+    <circle cx="150" cy="20" r="3" fill="#0EA5E9"/>
+    <circle cx="165" cy="20" r="3" fill="#0EA5E9"/>
+    <circle cx="180" cy="20" r="3" fill="#0EA5E9"/>
+    <circle cx="120" cy="60" r="3" fill="#0EA5E9"/>
+    <circle cx="135" cy="60" r="3" fill="#0EA5E9"/>
+    <circle cx="150" cy="60" r="3" fill="#0EA5E9"/>
+    <circle cx="165" cy="60" r="3" fill="#0EA5E9"/>
+    <circle cx="180" cy="60" r="3" fill="#0EA5E9"/>
+  </g>
+  <!-- Recording indicator -->
+  <g transform="translate(870, 200)">
+    <circle cx="0" cy="0" r="20" fill="#fff" opacity="0.2"/>
+    <circle cx="0" cy="0" r="10" fill="#fff" opacity="0.7"/>
+    <text x="0" y="3" text-anchor="middle" fill="#0284C7" font-size="10" font-weight="bold">REC</text>
+  </g>
+  <!-- Small camera 2 (right) -->
+  <g transform="translate(820, 380)">
+    <rect x="0" y="0" width="50" height="20" rx="3" fill="#0EA5E9" opacity="0.5" stroke="#fff" stroke-width="1.2" opacity="0.7"/>
+    <circle cx="10" cy="10" r="5" fill="#075985"/>
+    <circle cx="10" cy="10" r="3" fill="#0EA5E9"/>
+  </g>
+  <!-- Scan lines (light sweep) -->
+  <line x1="400" y1="280" x2="800" y2="280" stroke="#fff" stroke-width="1" opacity="0.3"/>
+  <line x1="420" y1="300" x2="780" y2="300" stroke="#fff" stroke-width="0.5" opacity="0.2"/>
+</svg>

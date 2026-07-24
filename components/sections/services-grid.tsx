@@ -1,24 +1,29 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import { servicesData } from "@/config/services-data";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { ServiceIcon } from "@/components/ui/service-icon";
+import { useTranslations } from "@/hooks/use-translations";
 
 export function ServicesGrid() {
+  const t = useTranslations();
+
   return (
     <section className="bg-white py-20 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Heading Panel */}
         <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-16">
           <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
-            Our Elite Solutions
+            {t("home.servicesGrid.heading")}
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
-            Comprehensive Home & Office Services
+            {t("home.servicesGrid.subheading")}
           </h2>
           <p className="text-base text-[#475569] leading-relaxed">
-            Professional craftmanship delivered across Kuala Lumpur & Selangor. Select a category below to explore specific services, upfront rates, and dynamic coverage options.
+            Professional craftmanship delivered across Kuala Lumpur &amp; Selangor. Select a category below to explore specific services, upfront rates, and dynamic coverage options.
           </p>
         </div>
 
@@ -30,14 +35,16 @@ export function ServicesGrid() {
               className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_8px_30px_rgba(2,31,68,0.02)] hover:shadow-[0_20px_50px_rgba(2,31,68,0.05)] hover:border-[#0EA5E9]/30 transition-all duration-300 flex flex-col justify-between group"
             >
               <div className="flex flex-col gap-5">
-                
+
                 {/* Header Icon + Price */}
                 <div className="flex items-center justify-between">
                   <div className="p-3 bg-[#E0F2FE]/30 rounded-2xl group-hover:bg-[#0EA5E9]/10 transition-colors shrink-0">
                     <ServiceIcon name={service.icon} className="w-8 h-8" />
                   </div>
                   <div className="flex flex-col items-end">
-                    <span className="text-[10px] text-[#475569] font-bold uppercase tracking-wider">Prices Start From</span>
+                    <span className="text-[10px] text-[#475569] font-bold uppercase tracking-wider">
+                      {t("services.startingFrom")}
+                    </span>
                     <span className="text-lg font-extrabold text-[#075985]">{service.startPrice}</span>
                   </div>
                 </div>
@@ -78,7 +85,7 @@ export function ServicesGrid() {
                   href={`/services/${service.slug}`}
                   className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0EA5E9] hover:text-[#075985] transition-colors"
                 >
-                  <span>Explore Rates</span>
+                  <span>{t("common.viewDetails")}</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
