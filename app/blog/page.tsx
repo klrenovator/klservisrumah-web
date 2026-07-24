@@ -27,13 +27,13 @@ export default function BlogPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-16">
-            <span className="text-xs font-bold text-[#0781B2] tracking-widest uppercase bg-[#D2DEE7]/30 px-4 py-1.5 rounded-full">
+            <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#DBEAFE]/30 px-4 py-1.5 rounded-full">
               Informative Resource
             </span>
-            <h1 className="text-3xl sm:text-4xl font-extrabold text-[#021F44] tracking-tight">
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-[#1E40AF] tracking-tight">
               Our Expert Knowledge Hub
             </h1>
-            <p className="text-base text-[#4A607C] leading-relaxed">
+            <p className="text-base text-[#475569] leading-relaxed">
               Read professional tips, step-by-step guides, and technical explanations on painting, leak prevention, ceiling repairs, and smart handyman alignments under Malaysian weather.
             </p>
           </div>
@@ -42,31 +42,31 @@ export default function BlogPage() {
             {blogPosts.map((post) => (
               <div
                 key={post.slug}
-                className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_4px_25px_rgba(2,31,68,0.01)] hover:shadow-[0_15px_40px_rgba(2,31,68,0.03)] hover:border-[#0781B2]/20 transition-all duration-300 flex flex-col justify-between group cursor-pointer"
+                className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_4px_25px_rgba(2,31,68,0.01)] hover:shadow-[0_15px_40px_rgba(2,31,68,0.03)] hover:border-[#0EA5E9]/20 transition-all duration-300 flex flex-col justify-between group cursor-pointer"
               >
                 <div className="flex flex-col gap-4">
                   <div className="flex items-center justify-between">
-                    <span className="text-[10px] font-bold text-[#0781B2] bg-[#0781B2]/10 px-2.5 py-0.5 rounded-md uppercase tracking-wider">
+                    <span className="text-[10px] font-bold text-[#0EA5E9] bg-[#0EA5E9]/10 px-2.5 py-0.5 rounded-md uppercase tracking-wider">
                       {post.category}
                     </span>
                     <span className="text-xs text-slate-300 font-semibold">{post.date}</span>
                   </div>
 
-                  <h2 className="text-xl font-extrabold text-[#021F44] tracking-tight group-hover:text-[#0781B2] transition-colors leading-snug">
+                  <h2 className="text-xl font-extrabold text-[#1E40AF] tracking-tight group-hover:text-[#0EA5E9] transition-colors leading-snug">
                     {post.title}
                   </h2>
 
-                  <p className="text-xs sm:text-sm text-[#4A607C] leading-relaxed font-medium">
+                  <p className="text-xs sm:text-sm text-[#475569] leading-relaxed font-medium">
                     {post.excerpt}
                   </p>
 
-                  <div className="flex items-center gap-4 text-xs font-bold text-[#4A607C] mt-2">
+                  <div className="flex items-center gap-4 text-xs font-bold text-[#475569] mt-2">
                     <div className="flex items-center gap-1">
-                      <User className="w-4 h-4 text-[#0781B2]" />
+                      <User className="w-4 h-4 text-[#0EA5E9]" />
                       <span>By {post.author.split(" ")[0]}</span>
                     </div>
                     <div className="flex items-center gap-1">
-                      <Clock className="w-4 h-4 text-[#0781B2]" />
+                      <Clock className="w-4 h-4 text-[#0EA5E9]" />
                       <span>{post.readTime}</span>
                     </div>
                   </div>
@@ -75,7 +75,7 @@ export default function BlogPage() {
                 <div className="mt-6 pt-4 border-t border-slate-50 flex justify-end">
                   <Link
                     href={`/blog/${post.slug}`}
-                    className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0781B2] group-hover:text-[#021F44]"
+                    className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0EA5E9] group-hover:text-[#1E40AF]"
                   >
                     <span>Read Article</span>
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

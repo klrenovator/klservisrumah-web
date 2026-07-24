@@ -1,24 +1,24 @@
-import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Inter } from "next/font/google";
+import type { Metadata, Viewport } from "next";
 import "@/styles/globals.css";
 import { Providers } from "./providers";
 import { Navbar } from "@/components/ui/navbar";
 import { Footer } from "@/components/ui/footer";
 import { WhatsAppButton } from "@/components/ui/whatsapp-button";
+import { StickyMobileWhatsAppBar } from "@/components/sticky-mobile-whatsapp-bar";
+import { ExitIntentPopup } from "@/components/exit-intent-popup";
+import { SocialProofWidgets } from "@/components/social-proof-widgets";
+import { WebVitalsReporter } from "@/components/web-vitals-reporter";
+import { ServiceWorkerRegister } from "@/components/service-worker-register";
+import { GoogleAnalytics } from "@/components/analytics/google-analytics";
 import { siteConfig } from "@/config/site";
 import { getOrganizationSchema, getLocalBusinessSchema } from "@/lib/seo";
 
-const plusJakartaSans = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-  display: "swap"
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-body",
-  display: "swap"
-});
+export const viewport: Viewport = {
+  themeColor: "#2563EB",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5
+};
 
 export const metadata: Metadata = {
   title: {
@@ -27,8 +27,15 @@ export const metadata: Metadata = {
   },
   description: siteConfig.metaDescription,
   metadataBase: new URL("https://www.klservisrumah.my"),
+  manifest: "/manifest.json",
   alternates: {
-    canonical: "/"
+    canonical: "/",
+    languages: {
+      "en-MY": "/",
+      "ms-MY": "/ms",
+      "zh-MY": "/zh",
+      "x-default": "/"
+    }
   },
   openGraph: {
     title: `${siteConfig.name} — ${siteConfig.tagline}`,
@@ -37,7 +44,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     images: [
       {
-        url: "/logo/logo.png",
+        url: siteConfig.defaultOgImage,
         width: 1200,
         height: 630,
         alt: siteConfig.name
@@ -50,12 +57,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${siteConfig.name} — ${siteConfig.tagline}`,
     description: siteConfig.metaDescription,
-    images: ["/logo/logo.png"]
+    images: [siteConfig.defaultOgImage]
   },
   icons: {
     icon: "/favicon.ico",
-    shortcut: "/logo/logo.png",
-    apple: "/logo/logo.png"
+    shortcut: siteConfig.logoIcon,
+    apple: "/icons/icon-192.png"
   }
 };
 
@@ -68,9 +75,8 @@ export default function RootLayout({
   const localSchema = getLocalBusinessSchema();
 
   return (
-    <html lang="en-MY" className={`${plusJakartaSans.variable} ${inter.variable} antialiased`}>
-      <body className="font-body text-[#4A607C] bg-white min-h-screen flex flex-col justify-between">
-        
+    <html lang="en-MY" className="antialiased">
+      <body className="font-sans text-[#475569] bg-white min-h-screen flex flex-col justify-between">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
@@ -79,14 +85,19 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localSchema) }}
         />
-
         <Providers>
+          <GoogleAnalytics />
+          <WebVitalsReporter />
+          <ServiceWorkerRegister />
           <Navbar />
           <main className="grow w-full">
             {children}
           </main>
           <Footer />
           <WhatsAppButton />
+          <StickyMobileWhatsAppBar />
+          <ExitIntentPopup />
+          <SocialProofWidgets />
         </Providers>
       </body>
     </html>

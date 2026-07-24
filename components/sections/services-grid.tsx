@@ -7,17 +7,17 @@ export function ServicesGrid() {
   const getIcon = (iconName: string) => {
     switch (iconName) {
       case "paint-brush":
-        return <Paintbrush className="w-6 h-6 text-[#0781B2]" />;
+        return <Paintbrush className="w-6 h-6 text-[#0EA5E9]" />;
       case "droplet":
-        return <Droplet className="w-6 h-6 text-[#0781B2]" />;
+        return <Droplet className="w-6 h-6 text-[#0EA5E9]" />;
       case "layout-grid":
-        return <LayoutGrid className="w-6 h-6 text-[#0781B2]" />;
+        return <LayoutGrid className="w-6 h-6 text-[#0EA5E9]" />;
       case "shield":
-        return <Shield className="w-6 h-6 text-[#0781B2]" />;
+        return <Shield className="w-6 h-6 text-[#0EA5E9]" />;
       case "wrench":
-        return <Wrench className="w-6 h-6 text-[#0781B2]" />;
+        return <Wrench className="w-6 h-6 text-[#0EA5E9]" />;
       default:
-        return <Wrench className="w-6 h-6 text-[#0781B2]" />;
+        return <Wrench className="w-6 h-6 text-[#0EA5E9]" />;
     }
   };
 
@@ -27,13 +27,13 @@ export function ServicesGrid() {
         
         {/* Section Heading Panel */}
         <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-bold text-[#0781B2] tracking-widest uppercase bg-[#D2DEE7]/30 px-4 py-1.5 rounded-full">
+          <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#DBEAFE]/30 px-4 py-1.5 rounded-full">
             Our Elite Solutions
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#021F44] tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1E40AF] tracking-tight">
             Comprehensive Home & Office Services
           </h2>
-          <p className="text-base text-[#4A607C] leading-relaxed">
+          <p className="text-base text-[#475569] leading-relaxed">
             Professional craftmanship delivered across Kuala Lumpur & Selangor. Select a category below to explore specific services, upfront rates, and dynamic coverage options.
           </p>
         </div>
@@ -43,27 +43,27 @@ export function ServicesGrid() {
           {Object.values(servicesData).map((service) => (
             <div
               key={service.slug}
-              className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_8px_30px_rgba(2,31,68,0.02)] hover:shadow-[0_20px_50px_rgba(2,31,68,0.05)] hover:border-[#0781B2]/30 transition-all duration-300 flex flex-col justify-between group"
+              className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_8px_30px_rgba(2,31,68,0.02)] hover:shadow-[0_20px_50px_rgba(2,31,68,0.05)] hover:border-[#0EA5E9]/30 transition-all duration-300 flex flex-col justify-between group"
             >
               <div className="flex flex-col gap-5">
                 
                 {/* Header Icon + Price */}
                 <div className="flex items-center justify-between">
-                  <div className="p-3 bg-[#D2DEE7]/30 rounded-2xl group-hover:bg-[#0781B2]/10 transition-colors shrink-0">
+                  <div className="p-3 bg-[#DBEAFE]/30 rounded-2xl group-hover:bg-[#0EA5E9]/10 transition-colors shrink-0">
                     {getIcon(service.icon)}
                   </div>
                   <div className="flex flex-col items-end">
-                    <span className="text-[10px] text-[#4A607C] font-bold uppercase tracking-wider">Prices Start From</span>
-                    <span className="text-lg font-extrabold text-[#021F44]">{service.startPrice}</span>
+                    <span className="text-[10px] text-[#475569] font-bold uppercase tracking-wider">Prices Start From</span>
+                    <span className="text-lg font-extrabold text-[#1E40AF]">{service.startPrice}</span>
                   </div>
                 </div>
 
                 {/* Info block */}
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-xl font-extrabold text-[#021F44] tracking-tight group-hover:text-[#0781B2] transition-colors">
+                  <h3 className="text-xl font-extrabold text-[#1E40AF] tracking-tight group-hover:text-[#0EA5E9] transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#4A607C] leading-relaxed font-medium">
+                  <p className="text-xs sm:text-sm text-[#475569] leading-relaxed font-medium">
                     {service.tagline}
                   </p>
                 </div>
@@ -72,11 +72,11 @@ export function ServicesGrid() {
 
                 {/* Sub-services previews */}
                 <div className="flex flex-col gap-2.5">
-                  <span className="text-[10px] text-[#021F44] font-bold uppercase tracking-widest">Included Specialities:</span>
+                  <span className="text-[10px] text-[#1E40AF] font-bold uppercase tracking-widest">Included Specialities:</span>
                   <ul className="flex flex-col gap-2">
                     {service.subServices.slice(0, 3).map((sub, idx) => (
-                      <li key={idx} className="flex gap-2 items-start text-xs font-semibold text-[#4A607C]">
-                        <CheckCircle className="w-4 h-4 text-[#0781B2] shrink-0 mt-0.5" />
+                      <li key={idx} className="flex gap-2 items-start text-xs font-semibold text-[#475569]">
+                        <CheckCircle className="w-4 h-4 text-[#0EA5E9] shrink-0 mt-0.5" />
                         <span>{sub.name}</span>
                       </li>
                     ))}
@@ -92,7 +92,7 @@ export function ServicesGrid() {
                 </span>
                 <Link
                   href={`/services/${service.slug}`}
-                  className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0781B2] hover:text-[#021F44] transition-colors"
+                  className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0EA5E9] hover:text-[#1E40AF] transition-colors"
                 >
                   <span>Explore Rates</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

@@ -20,9 +20,9 @@ export function WhatsAppButton() {
         >
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-            <span className="text-xs font-bold text-[#021F44] tracking-wide uppercase">WhatsApp Dispatch Desk</span>
+            <span className="text-xs font-bold text-[#1E40AF] tracking-wide uppercase">WhatsApp Dispatch Desk</span>
           </div>
-          <p className="text-xs text-[#4A607C] leading-normal font-medium">
+          <p className="text-xs text-[#475569] leading-normal font-medium">
             Same-day slots available in KL & Selangor. WhatsApp us for an instant, transparent quote!
           </p>
           <a

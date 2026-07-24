@@ -1,0 +1,30 @@
+# KL Servis Rumah
+
+> Market-rate painting, plumbing, ceiling, waterproofing and handyman services for Kuala Lumpur and Selangor, Malaysia.
+
+## Core pages
+
+- https://www.klservisrumah.my/ — Homepage and booking entry point.
+- https://www.klservisrumah.my/services — Service directory.
+- https://www.klservisrumah.my/contact — Booking form and dispatch contact.
+- https://www.klservisrumah.my/faq — Frequently asked questions.
+
+## Services
+
+- Painting: /services/painting
+- Plumbing: /services/plumbing
+- Ceiling and partitions: /services/ceiling
+- Waterproofing and PU grouting: /services/waterproofing
+- Handyman: /services/handyman
+
+## Coverage
+
+KL Servis Rumah serves Kuala Lumpur, Petaling Jaya, Subang Jaya, Puchong, Shah Alam, Klang and surrounding Klang Valley suburbs.
+
+## Pricing principle
+
+All public prices should follow standard Malaysian market rates: not inflated, not underpriced, and confirmed before work starts.
+
+## Contact
+
+Phone and WhatsApp: +60 11-1662 7349

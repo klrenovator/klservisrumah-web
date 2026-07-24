@@ -2,6 +2,7 @@ import React from "react";
 import { ServicesGrid } from "@/components/sections/services-grid";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { WhyChooseUs } from "@/components/sections/why-choose-us";
+import { ServiceComparisonTable } from "@/components/service-comparison-table";
 import { getBreadcrumbSchema } from "@/lib/seo";
 
 export const metadata = {
@@ -23,6 +24,8 @@ export default function ServicesPage() {
       />
 
       <ServicesGrid />
+
+      <ServiceComparisonTable />
 
       <WhyChooseUs />
     </>

@@ -3,7 +3,7 @@
 
 /* =========================================================
    KL SERVIS RUMAH — Premium Light Theme
-   Palette: Pure White + Dark Navy (#021F44) + Sky Blue (#0781B2)
+   Palette: Pure White + Dark Navy (#1E40AF) + Sky Blue (#0EA5E9)
    ========================================================= */
 
 @theme {
@@ -11,10 +11,10 @@
   --font-mono: var(--font-mono, ui-monospace, monospace);
 
   /* Primary Logo Colors */
-  --color-brand-dark: #021f44;
-  --color-brand-sky: #0781b2;
-  --color-brand-light: #d2dee7;
-  --color-brand-slate: #4a607c;
+  --color-brand-dark: #1E40AF;
+  --color-brand-sky: #0EA5E9;
+  --color-brand-light: #DBEAFE;
+  --color-brand-slate: #475569;
   --color-brand-bg: #ffffff;
 
   /* Sky blue shades for buttons, icons and borders */
@@ -23,16 +23,16 @@
   --color-brand-200: #bae6fd;
   --color-brand-300: #7dd3fc;
   --color-brand-400: #38bdf8;
-  --color-brand-500: #0781b2; /* Sky blue */
+  --color-brand-500: #0EA5E9; /* Sky blue */
   --color-brand-600: #026d94;
   --color-brand-700: #025774;
-  --color-brand-800: #014156;
-  --color-brand-900: #012b38;
-  --color-brand-950: #021f44; /* Dark Navy */
+  --color-brand-800: #1D4ED8;
+  --color-brand-900: #1E3A8A;
+  --color-brand-950: #1E40AF; /* Dark Navy */
 
   /* Semantic aliases */
-  --color-ink:      #021f44;
-  --color-ink-soft: #4a607c;
+  --color-ink:      #1E40AF;
+  --color-ink-soft: #475569;
   --color-whatsapp: #22c55e;
 }
 
@@ -50,7 +50,7 @@ html {
 
 body {
   background: #ffffff;
-  color: #4a607c;
+  color: #475569;
   font-feature-settings: "rlig" 1, "calt" 1;
   overflow-x: clip;
 }
@@ -90,10 +90,10 @@ body {
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
 /* ── Selection ────────────────────────────────────────────── */
-::selection { background: #0781b2; color: #fff; }
+::selection { background: #0EA5E9; color: #fff; }
 
 /* ── Focus rings ──────────────────────────────────────────── */
 :focus-visible {
-  outline: 2px solid #0781b2;
+  outline: 2px solid #0EA5E9;
   outline-offset: 2px;
 }

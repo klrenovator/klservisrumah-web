@@ -5,23 +5,23 @@ import { Award, Shield, FileCheck, Landmark } from "lucide-react";
 export function TrustBadges() {
   const badgeList = [
     {
-      icon: <Award className="w-8 h-8 text-[#0781B2]" />,
+      icon: <Award className="w-8 h-8 text-[#0EA5E9]" />,
       title: "100% Certified",
       desc: "Licensed tradesmen & expert background-checked crews."
     },
     {
-      icon: <Shield className="w-8 h-8 text-[#0781B2]" />,
+      icon: <Shield className="w-8 h-8 text-[#0EA5E9]" />,
       title: "Craftsmanship Warranties",
       desc: "Up to 90 days solid peace of mind guarantees."
     },
     {
-      icon: <FileCheck className="w-8 h-8 text-[#0781B2]" />,
+      icon: <FileCheck className="w-8 h-8 text-[#0EA5E9]" />,
       title: "Transparent Quotes",
       desc: "Fixed upfront itemized pricing. Absolutely zero hidden charges."
     },
     {
-      icon: <Landmark className="w-8 h-8 text-[#0781B2]" />,
-      title: "SSM Registered Company",
+      icon: <Landmark className="w-8 h-8 text-[#0EA5E9]" />,
+      title: "Established Local Company",
       desc: `Legal business managed under ${siteConfig.parentCompany}.`
     }
   ];
@@ -32,12 +32,12 @@ export function TrustBadges() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {badgeList.map((badge, idx) => (
             <div key={idx} className="flex gap-4 items-start bg-white p-5 rounded-2xl border border-slate-100 shadow-3xs hover:shadow-2xs transition-all duration-300">
-              <div className="p-3 bg-[#D2DEE7]/30 rounded-xl shrink-0">
+              <div className="p-3 bg-[#DBEAFE]/30 rounded-xl shrink-0">
                 {badge.icon}
               </div>
               <div className="flex flex-col">
-                <h3 className="text-sm font-bold text-[#021F44] tracking-tight">{badge.title}</h3>
-                <p className="text-xs text-[#4A607C] leading-relaxed mt-1 font-medium">{badge.desc}</p>
+                <h3 className="text-sm font-bold text-[#1E40AF] tracking-tight">{badge.title}</h3>
+                <p className="text-xs text-[#475569] leading-relaxed mt-1 font-medium">{badge.desc}</p>
               </div>
             </div>
           ))}

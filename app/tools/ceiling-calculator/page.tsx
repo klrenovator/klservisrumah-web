@@ -1,0 +1,4 @@
+import { SimpleToolPage } from "@/components/tools/simple-tool-page";
+import { getWebApplicationSchema } from "@/lib/seo";
+export const metadata = { title: "Ceiling Material Calculator KL", description: "Prepare plaster ceiling or partition measurements before requesting a quote." };
+export default function CeilingCalculatorPage(){ return <><script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(getWebApplicationSchema("Ceiling Material Calculator", "/tools/ceiling-calculator", "Estimate ceiling material factors."))}}/><SimpleToolPage title="Ceiling Material Calculator" description="Enter dimensions, design type, and fittings so we can estimate ceiling material and labour scope." fields={["Room length", "Room width", "Ceiling type", "Downlight / fan count"]}/></>; }
