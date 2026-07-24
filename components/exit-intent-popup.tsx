@@ -41,8 +41,8 @@ export function ExitIntentPopup() {
           <X className="h-4 w-4" />
         </button>
         <div className="flex flex-col gap-4 pr-8">
-          <span className="w-fit rounded-full bg-[#DBEAFE] px-3 py-1 text-xs font-extrabold uppercase tracking-widest text-[#2563EB]">Before you go</span>
-          <h2 className="text-2xl font-extrabold text-[#1E40AF]">Get a transparent market-rate quote first</h2>
+          <span className="w-fit rounded-full bg-[#E0F2FE] px-3 py-1 text-xs font-extrabold uppercase tracking-widest text-[#0284C7]">Before you go</span>
+          <h2 className="text-2xl font-extrabold text-[#075985]">Get a transparent market-rate quote first</h2>
           <p className="text-sm font-semibold leading-relaxed text-[#475569]">
             Send photos and your area on WhatsApp. We will confirm scope, price factors, and available service slots before any work begins.
           </p>

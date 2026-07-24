@@ -86,7 +86,7 @@ export function MultiStepBookingForm() {
   if (submitted) {
     return (
       <div className="rounded-3xl border border-emerald-100 bg-white p-8 text-center shadow-[0_20px_50px_rgba(2,31,68,0.06)]">
-        <h2 className="text-2xl font-extrabold text-[#1E40AF]">Booking details compiled</h2>
+        <h2 className="text-2xl font-extrabold text-[#075985]">Booking details compiled</h2>
         <p className="mt-3 text-sm font-semibold leading-relaxed text-[#475569]">
           WhatsApp should open in a new tab with your structured booking request. If it did not open, please allow popups and submit again.
         </p>
@@ -102,7 +102,7 @@ export function MultiStepBookingForm() {
       <div className="mb-6 flex items-center justify-between gap-4">
         <div>
           <span className="text-xs font-extrabold uppercase tracking-widest text-[#0EA5E9]">Step {step} of 6</span>
-          <h2 className="mt-1 text-2xl font-extrabold text-[#1E40AF]">Book a Job</h2>
+          <h2 className="mt-1 text-2xl font-extrabold text-[#075985]">Book a Job</h2>
         </div>
         <div className="text-right text-[11px] font-bold text-[#475569]">No upfront deposits<br />Market-rate quote first</div>
       </div>
@@ -112,8 +112,8 @@ export function MultiStepBookingForm() {
           <StepShell title="Select service category">
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
               {serviceOptions.map((service) => (
-                <button key={service.slug} onClick={() => update("service", service.slug)} className={`rounded-2xl border p-4 text-left transition ${form.service === service.slug ? "border-[#2563EB] bg-[#DBEAFE]" : "border-slate-100 bg-slate-50 hover:bg-white"}`}>
-                  <span className="text-sm font-extrabold text-[#1E40AF]">{service.title}</span>
+                <button key={service.slug} onClick={() => update("service", service.slug)} className={`rounded-2xl border p-4 text-left transition ${form.service === service.slug ? "border-[#0284C7] bg-[#E0F2FE]" : "border-slate-100 bg-slate-50 hover:bg-white"}`}>
+                  <span className="text-sm font-extrabold text-[#075985]">{service.title}</span>
                   <span className="mt-1 block text-xs font-bold text-[#0EA5E9]">From {service.startPrice}</span>
                 </button>
               ))}
@@ -125,8 +125,8 @@ export function MultiStepBookingForm() {
           <StepShell title="Choose sub-service (or continue if unsure)">
             <div className="grid grid-cols-1 gap-3">
               {subServices.map((sub) => (
-                <button key={sub.name} onClick={() => update("subService", sub.name)} className={`rounded-2xl border p-4 text-left transition ${form.subService === sub.name ? "border-[#2563EB] bg-[#DBEAFE]" : "border-slate-100 bg-slate-50 hover:bg-white"}`}>
-                  <span className="text-sm font-extrabold text-[#1E40AF]">{sub.name}</span>
+                <button key={sub.name} onClick={() => update("subService", sub.name)} className={`rounded-2xl border p-4 text-left transition ${form.subService === sub.name ? "border-[#0284C7] bg-[#E0F2FE]" : "border-slate-100 bg-slate-50 hover:bg-white"}`}>
+                  <span className="text-sm font-extrabold text-[#075985]">{sub.name}</span>
                   <span className="mt-1 block text-xs font-bold text-[#0EA5E9]">{sub.price}</span>
                   <span className="mt-1 block text-xs font-semibold text-[#475569]">{sub.desc}</span>
                 </button>
@@ -138,16 +138,16 @@ export function MultiStepBookingForm() {
         {step === 3 && (
           <StepShell title="Area and property type">
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#1E40AF]">
+              <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
                 Area / Suburb
-                <select value={form.suburb} onChange={(event) => update("suburb", event.target.value)} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#1E40AF] outline-none focus:border-[#0EA5E9]">
+                <select value={form.suburb} onChange={(event) => update("suburb", event.target.value)} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]">
                   <option value="">Select suburb...</option>
                   {suburbPages.map((suburb) => <option key={suburb.slug} value={suburb.slug}>{suburb.name}</option>)}
                 </select>
               </label>
-              <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#1E40AF]">
+              <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
                 Property type
-                <select value={form.propertyType} onChange={(event) => update("propertyType", event.target.value)} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#1E40AF] outline-none focus:border-[#0EA5E9]">
+                <select value={form.propertyType} onChange={(event) => update("propertyType", event.target.value)} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]">
                   <option value="">Select type...</option>
                   {propertyTypes.map((type) => <option key={type} value={type}>{type}</option>)}
                 </select>
@@ -159,13 +159,13 @@ export function MultiStepBookingForm() {
         {step === 4 && (
           <StepShell title="Preferred date and time">
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#1E40AF]">
+              <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
                 Preferred date
-                <input value={form.date} onChange={(event) => update("date", event.target.value)} type="date" className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#1E40AF] outline-none focus:border-[#0EA5E9]" />
+                <input value={form.date} onChange={(event) => update("date", event.target.value)} type="date" className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]" />
               </label>
-              <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#1E40AF]">
+              <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
                 Time window
-                <select value={form.time} onChange={(event) => update("time", event.target.value)} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#1E40AF] outline-none focus:border-[#0EA5E9]">
+                <select value={form.time} onChange={(event) => update("time", event.target.value)} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]">
                   {timeWindows.map((time) => <option key={time} value={time}>{time}</option>)}
                 </select>
               </label>
@@ -175,13 +175,13 @@ export function MultiStepBookingForm() {
 
         {step === 5 && (
           <StepShell title="Problem details and photos">
-            <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#1E40AF]">
+            <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
               Describe the job
-              <textarea value={form.details} onChange={(event) => update("details", event.target.value)} rows={5} placeholder="Example: bathroom ceiling is dripping after shower, stain is about 1 meter wide..." className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#1E40AF] outline-none focus:border-[#0EA5E9]" />
+              <textarea value={form.details} onChange={(event) => update("details", event.target.value)} rows={5} placeholder="Example: bathroom ceiling is dripping after shower, stain is about 1 meter wide..." className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]" />
             </label>
-            <label className="mt-4 flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#1E40AF]">
+            <label className="mt-4 flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
               Photos ready?
-              <select value={form.hasPhotos} onChange={(event) => update("hasPhotos", event.target.value)} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#1E40AF] outline-none focus:border-[#0EA5E9]">
+              <select value={form.hasPhotos} onChange={(event) => update("hasPhotos", event.target.value)} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]">
                 <option value="yes">Yes, I will attach photos in WhatsApp</option>
                 <option value="no">No photos yet</option>
               </select>
@@ -203,11 +203,11 @@ export function MultiStepBookingForm() {
       </div>
 
       <div className="mt-6 flex items-center justify-between gap-3 border-t border-slate-100 pt-5">
-        <button type="button" onClick={() => setStep((current) => Math.max(1, current - 1))} disabled={step === 1} className="rounded-xl border border-slate-200 px-4 py-3 text-sm font-extrabold text-[#1E40AF] disabled:cursor-not-allowed disabled:opacity-40">
+        <button type="button" onClick={() => setStep((current) => Math.max(1, current - 1))} disabled={step === 1} className="rounded-xl border border-slate-200 px-4 py-3 text-sm font-extrabold text-[#075985] disabled:cursor-not-allowed disabled:opacity-40">
           Back
         </button>
         {step < 6 ? (
-          <button type="button" onClick={() => setStep((current) => current + 1)} disabled={!canContinue} className="rounded-xl bg-[#2563EB] px-5 py-3 text-sm font-extrabold text-white disabled:cursor-not-allowed disabled:bg-slate-300">
+          <button type="button" onClick={() => setStep((current) => current + 1)} disabled={!canContinue} className="rounded-xl bg-[#0284C7] px-5 py-3 text-sm font-extrabold text-white disabled:cursor-not-allowed disabled:bg-slate-300">
             Continue
           </button>
         ) : (
@@ -223,7 +223,7 @@ export function MultiStepBookingForm() {
 function StepShell({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div>
-      <h3 className="mb-4 text-lg font-extrabold text-[#1E40AF]">{title}</h3>
+      <h3 className="mb-4 text-lg font-extrabold text-[#075985]">{title}</h3>
       {children}
     </div>
   );
@@ -231,9 +231,9 @@ function StepShell({ title, children }: { title: string; children: React.ReactNo
 
 function Input({ label, value, onChange, placeholder }: { label: string; value: string; onChange: (value: string) => void; placeholder?: string }) {
   return (
-    <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#1E40AF]">
+    <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
       {label}
-      <input value={value} onChange={(event) => onChange(event.target.value)} placeholder={placeholder} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#1E40AF] outline-none focus:border-[#0EA5E9]" />
+      <input value={value} onChange={(event) => onChange(event.target.value)} placeholder={placeholder} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]" />
     </label>
   );
 }

@@ -24,7 +24,7 @@ export default function ContactPage() {
                 <span className="text-xs font-bold text-[#0EA5E9] uppercase tracking-widest bg-[#0EA5E9]/10 px-4.5 py-1.5 rounded-full w-fit">
                   Get In Touch
                 </span>
-                <h1 className="text-3xl sm:text-4xl font-extrabold text-[#1E40AF] tracking-tight">
+                <h1 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
                   Book Your Service
                 </h1>
                 <p className="text-sm sm:text-base text-[#475569] leading-relaxed font-semibold">
@@ -39,7 +39,7 @@ export default function ContactPage() {
                   <MapPin className="w-5 h-5 text-[#0EA5E9] shrink-0 mt-0.5" />
                   <div className="flex flex-col gap-0.5">
                     <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Registered Address</span>
-                    <span className="text-xs sm:text-sm text-[#1E40AF] font-bold leading-relaxed">{siteConfig.address}</span>
+                    <span className="text-xs sm:text-sm text-[#075985] font-bold leading-relaxed">{siteConfig.address}</span>
                   </div>
                 </div>
 
@@ -55,7 +55,7 @@ export default function ContactPage() {
                   <Mail className="w-5 h-5 text-[#0EA5E9] shrink-0 mt-0.5" />
                   <div className="flex flex-col gap-0.5">
                     <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Email Inquiry Desk</span>
-                    <a href={`mailto:${siteConfig.email}`} className="text-xs sm:text-sm text-[#1E40AF] font-bold">{siteConfig.email}</a>
+                    <a href={`mailto:${siteConfig.email}`} className="text-xs sm:text-sm text-[#075985] font-bold">{siteConfig.email}</a>
                   </div>
                 </div>
 
@@ -63,7 +63,7 @@ export default function ContactPage() {
                   <Clock className="w-5 h-5 text-[#0EA5E9] shrink-0 mt-0.5" />
                   <div className="flex flex-col gap-0.5">
                     <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Operating Schedule</span>
-                    <span className="text-xs sm:text-sm text-[#1E40AF] font-bold">{siteConfig.hours}</span>
+                    <span className="text-xs sm:text-sm text-[#075985] font-bold">{siteConfig.hours}</span>
                   </div>
                 </div>
               </div>

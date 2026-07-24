@@ -22,7 +22,7 @@ export function Hero() {
     <section className="relative bg-gradient-to-b from-[#F8FAFC] via-white to-white py-16 md:py-24 overflow-hidden border-b border-slate-50">
       {/* Decorative subtle background highlights */}
       <div className="absolute top-20 left-10 w-72 h-72 rounded-full bg-[#0EA5E9]/5 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 right-10 w-96 h-96 rounded-full bg-[#DBEAFE]/10 blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 right-10 w-96 h-96 rounded-full bg-[#E0F2FE]/10 blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -36,7 +36,7 @@ export function Hero() {
             </div>
 
             {/* Main Heading H1 - Target-optimized for LLMO & SXO */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#1E40AF] tracking-tight leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#075985] tracking-tight leading-tight">
               Premium Home Services <br />
               <span className="text-[#0EA5E9]">Done Right</span> in KL & Selangor
             </h1>
@@ -50,15 +50,15 @@ export function Hero() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full mt-2">
               <div className="flex items-center gap-2.5 bg-white px-4 py-3 rounded-xl border border-slate-100 shadow-2xs">
                 <CheckCircle2 className="w-5 h-5 text-[#0EA5E9]" />
-                <span className="text-xs sm:text-sm font-bold text-[#1E40AF]">Upfront Fixed Pricing</span>
+                <span className="text-xs sm:text-sm font-bold text-[#075985]">Upfront Fixed Pricing</span>
               </div>
               <div className="flex items-center gap-2.5 bg-white px-4 py-3 rounded-xl border border-slate-100 shadow-2xs">
                 <ShieldCheck className="w-5 h-5 text-[#0EA5E9]" />
-                <span className="text-xs sm:text-sm font-bold text-[#1E40AF]">Fully Insured Team</span>
+                <span className="text-xs sm:text-sm font-bold text-[#075985]">Fully Insured Team</span>
               </div>
               <div className="flex items-center gap-2.5 bg-white px-4 py-3 rounded-xl border border-slate-100 shadow-2xs">
                 <Star className="w-5 h-5 text-amber-500 fill-amber-500" />
-                <span className="text-xs sm:text-sm font-bold text-[#1E40AF]">Expert Local Crew</span>
+                <span className="text-xs sm:text-sm font-bold text-[#075985]">Expert Local Crew</span>
               </div>
             </div>
 
@@ -75,7 +75,7 @@ export function Hero() {
               </a>
               <a
                 href={`tel:${siteConfig.phone}`}
-                className="bg-white hover:bg-slate-50 border-2 border-[#1E40AF]/15 text-[#1E40AF] text-center font-extrabold text-base px-8 py-4 rounded-2xl transition-all duration-200 flex items-center justify-center gap-2"
+                className="bg-white hover:bg-slate-50 border-2 border-[#075985]/15 text-[#075985] text-center font-extrabold text-base px-8 py-4 rounded-2xl transition-all duration-200 flex items-center justify-center gap-2"
               >
                 <span>Call {siteConfig.phoneDisplay}</span>
               </a>
@@ -87,7 +87,7 @@ export function Hero() {
           <div className="lg:col-span-5 w-full">
             <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-[0_20px_50px_rgba(2,31,68,0.06)] border border-slate-100 flex flex-col gap-6">
               <div className="flex flex-col gap-1.5 border-b border-slate-100 pb-5">
-                <h2 className="text-xl sm:text-2xl font-extrabold text-[#1E40AF] tracking-tight">Instant Service Dispatch</h2>
+                <h2 className="text-xl sm:text-2xl font-extrabold text-[#075985] tracking-tight">Instant Service Dispatch</h2>
                 <p className="text-xs sm:text-sm text-[#475569] font-medium">Select your requirements to see instant slots availability.</p>
               </div>
 
@@ -95,12 +95,12 @@ export function Hero() {
                 
                 {/* Service Selector */}
                 <div className="flex flex-col gap-2">
-                  <label className="text-xs font-bold text-[#1E40AF] uppercase tracking-wider">What service do you need?</label>
+                  <label className="text-xs font-bold text-[#075985] uppercase tracking-wider">What service do you need?</label>
                   <select
                     value={selectedService}
                     onChange={(e) => setSelectedService(e.target.value)}
                     required
-                    className="w-full bg-slate-50 hover:bg-slate-100/50 text-[#1E40AF] font-semibold text-sm py-3.5 px-4 rounded-xl border border-slate-100 outline-none focus:border-[#0EA5E9] transition-all cursor-pointer"
+                    className="w-full bg-slate-50 hover:bg-slate-100/50 text-[#075985] font-semibold text-sm py-3.5 px-4 rounded-xl border border-slate-100 outline-none focus:border-[#0EA5E9] transition-all cursor-pointer"
                   >
                     <option value="" disabled className="text-[#475569]">Select service category...</option>
                     {Object.values(servicesData).map((service) => (
@@ -113,12 +113,12 @@ export function Hero() {
 
                 {/* Location Area Selector */}
                 <div className="flex flex-col gap-2">
-                  <label className="text-xs font-bold text-[#1E40AF] uppercase tracking-wider">Your Location (KL & Selangor)</label>
+                  <label className="text-xs font-bold text-[#075985] uppercase tracking-wider">Your Location (KL & Selangor)</label>
                   <select
                     value={selectedArea}
                     onChange={(e) => setSelectedArea(e.target.value)}
                     required
-                    className="w-full bg-slate-50 hover:bg-slate-100/50 text-[#1E40AF] font-semibold text-sm py-3.5 px-4 rounded-xl border border-slate-100 outline-none focus:border-[#0EA5E9] transition-all cursor-pointer"
+                    className="w-full bg-slate-50 hover:bg-slate-100/50 text-[#075985] font-semibold text-sm py-3.5 px-4 rounded-xl border border-slate-100 outline-none focus:border-[#0EA5E9] transition-all cursor-pointer"
                   >
                     <option value="" disabled className="text-[#475569]">Select your suburb...</option>
                     {siteConfig.areas.map((area) => (
@@ -132,7 +132,7 @@ export function Hero() {
                 {/* Booking button */}
                 <button
                   type="submit"
-                  className="w-full bg-[#0EA5E9] hover:bg-[#1E40AF] text-white font-extrabold text-base py-4 rounded-xl transition-all duration-200 shadow-sm flex items-center justify-center gap-2 mt-2"
+                  className="w-full bg-[#0EA5E9] hover:bg-[#075985] text-white font-extrabold text-base py-4 rounded-xl transition-all duration-200 shadow-sm flex items-center justify-center gap-2 mt-2"
                 >
                   <span>Check Availability</span>
                   <ArrowRight className="w-5 h-5" />

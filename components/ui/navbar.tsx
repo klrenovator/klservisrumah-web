@@ -30,8 +30,8 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full transition-all duration-300">
-      <div className="bg-[#2563EB] text-white py-2 text-xs md:text-sm px-4 text-center font-medium border-b border-[#0EA5E9]/20 flex items-center justify-center gap-2">
-        <CheckCircle2 className="w-3.5 h-3.5 text-[#DBEAFE]" />
+      <div className="bg-[#0284C7] text-white py-2 text-xs md:text-sm px-4 text-center font-medium border-b border-[#0EA5E9]/20 flex items-center justify-center gap-2">
+        <CheckCircle2 className="w-3.5 h-3.5 text-[#E0F2FE]" />
         <span>Market-rate Home Services in Kuala Lumpur & Selangor — Painting, Plumbing, Ceiling & Handyman</span>
       </div>
 
@@ -41,7 +41,7 @@ export function Navbar() {
             <Link href="/" className="flex items-center gap-3 group shrink-0" aria-label="KL Servis Rumah homepage">
               <Image src={siteConfig.logoIcon} alt="" width={44} height={44} className="rounded-xl" priority />
               <div className="flex flex-col">
-                <span className="text-[#1E40AF] font-extrabold text-lg sm:text-2xl tracking-tight leading-none flex items-center gap-1">
+                <span className="text-[#075985] font-extrabold text-lg sm:text-2xl tracking-tight leading-none flex items-center gap-1">
                   KL<span className="text-[#0EA5E9]">SERVIS</span>RUMAH<span className="text-[#0EA5E9] text-xs sm:text-sm font-bold">.MY</span>
                 </span>
                 <span className="text-[9px] sm:text-xs tracking-widest text-[#475569] font-semibold mt-1">
@@ -57,7 +57,7 @@ export function Navbar() {
                   <Link
                     key={item.label}
                     href={item.href}
-                    className={`font-medium text-sm transition-colors duration-200 ${isActive ? "text-[#0EA5E9] font-semibold" : "text-[#475569] hover:text-[#1E40AF]"}`}
+                    className={`font-medium text-sm transition-colors duration-200 ${isActive ? "text-[#0EA5E9] font-semibold" : "text-[#475569] hover:text-[#075985]"}`}
                   >
                     {item.label}
                   </Link>
@@ -71,7 +71,7 @@ export function Navbar() {
               <a
                 href={`tel:${siteConfig.phone}`}
                 onClick={() => trackPhoneCall({ page: pathname })}
-                className="flex items-center gap-2 text-sm font-semibold text-[#1E40AF] hover:text-[#0EA5E9] transition-colors"
+                className="flex items-center gap-2 text-sm font-semibold text-[#075985] hover:text-[#0EA5E9] transition-colors"
               >
                 <Phone className="w-4 h-4 text-[#0EA5E9]" />
                 <span>{siteConfig.phoneDisplay}</span>
@@ -81,7 +81,7 @@ export function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackWhatsAppClick({ page: pathname })}
-                className="bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-semibold text-sm px-5 py-2.5 rounded-xl transition-all duration-200 shadow-sm hover:shadow-md"
+                className="bg-[#0284C7] hover:bg-[#0369A1] text-white font-semibold text-sm px-5 py-2.5 rounded-xl transition-all duration-200 shadow-sm hover:shadow-md"
               >
                 Book Service
               </a>
@@ -92,14 +92,14 @@ export function Navbar() {
               <a
                 href={`tel:${siteConfig.phone}`}
                 onClick={() => trackPhoneCall({ page: pathname })}
-                className="p-2.5 rounded-xl border border-slate-100 text-[#1E40AF] hover:text-[#0EA5E9]"
+                className="p-2.5 rounded-xl border border-slate-100 text-[#075985] hover:text-[#0EA5E9]"
                 aria-label="Call support"
               >
                 <Phone className="w-5 h-5" />
               </a>
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="p-2.5 rounded-xl border border-slate-100 text-[#1E40AF] hover:bg-slate-50 transition-colors"
+                className="p-2.5 rounded-xl border border-slate-100 text-[#075985] hover:bg-slate-50 transition-colors"
                 aria-label="Toggle menu"
               >
                 {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -114,7 +114,7 @@ export function Navbar() {
               {siteConfig.navItems.map((item) => {
                 const isActive = pathname === item.href;
                 return (
-                  <Link key={item.label} href={item.href} className={`px-4 py-3 rounded-xl font-medium text-base transition-colors ${isActive ? "bg-[#0EA5E9]/10 text-[#0EA5E9]" : "text-[#475569] hover:bg-slate-50 hover:text-[#1E40AF]"}`}>
+                  <Link key={item.label} href={item.href} className={`px-4 py-3 rounded-xl font-medium text-base transition-colors ${isActive ? "bg-[#0EA5E9]/10 text-[#0EA5E9]" : "text-[#475569] hover:bg-slate-50 hover:text-[#075985]"}`}>
                     {item.label}
                   </Link>
                 );
@@ -131,14 +131,14 @@ export function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackWhatsAppClick({ page: pathname, placement: "mobile_menu" })}
-                className="bg-[#2563EB] hover:bg-[#1D4ED8] text-white text-center font-semibold text-base py-3 rounded-xl transition-all duration-200 shadow-sm"
+                className="bg-[#0284C7] hover:bg-[#0369A1] text-white text-center font-semibold text-base py-3 rounded-xl transition-all duration-200 shadow-sm"
               >
                 Book Via WhatsApp
               </a>
               <a
                 href={`tel:${siteConfig.phone}`}
                 onClick={() => trackPhoneCall({ page: pathname, placement: "mobile_menu" })}
-                className="border border-[#1E40AF]/20 text-[#1E40AF] text-center font-semibold text-base py-3 rounded-xl transition-all duration-200 hover:bg-slate-50 flex items-center justify-center gap-2"
+                className="border border-[#075985]/20 text-[#075985] text-center font-semibold text-base py-3 rounded-xl transition-all duration-200 hover:bg-slate-50 flex items-center justify-center gap-2"
               >
                 <Phone className="w-4 h-4 text-[#0EA5E9]" />
                 <span>Call {siteConfig.phoneDisplay}</span>

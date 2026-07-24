@@ -26,7 +26,7 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
             <React.Fragment key={item.href}>
               <ChevronRight className="w-3.5 h-3.5 text-slate-300 shrink-0" />
               {isLast ? (
-                <span className="text-[#1E40AF] font-bold truncate shrink-0">
+                <span className="text-[#075985] font-bold truncate shrink-0">
                   {item.label}
                 </span>
               ) : (

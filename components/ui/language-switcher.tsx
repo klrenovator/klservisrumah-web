@@ -25,7 +25,7 @@ export function LanguageSwitcher() {
   };
 
   return (
-    <label className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-2.5 py-2 text-xs font-bold text-[#1E40AF] shadow-xs">
+    <label className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-2.5 py-2 text-xs font-bold text-[#075985] shadow-xs">
       <Languages className="h-4 w-4 text-[#0EA5E9]" aria-hidden="true" />
       <span className="sr-only">Select language</span>
       <select

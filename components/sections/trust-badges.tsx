@@ -1,5 +1,4 @@
 import React from "react";
-import { siteConfig } from "@/config/site";
 import { Award, Shield, FileCheck, Landmark } from "lucide-react";
 
 export function TrustBadges() {
@@ -22,7 +21,7 @@ export function TrustBadges() {
     {
       icon: <Landmark className="w-8 h-8 text-[#0EA5E9]" />,
       title: "Established Local Company",
-      desc: `Legal business managed under ${siteConfig.parentCompany}.`
+      desc: "Insured operations with background-verified crews and proper invoicing."
     }
   ];
 
@@ -32,11 +31,11 @@ export function TrustBadges() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {badgeList.map((badge, idx) => (
             <div key={idx} className="flex gap-4 items-start bg-white p-5 rounded-2xl border border-slate-100 shadow-3xs hover:shadow-2xs transition-all duration-300">
-              <div className="p-3 bg-[#DBEAFE]/30 rounded-xl shrink-0">
+              <div className="p-3 bg-[#E0F2FE]/30 rounded-xl shrink-0">
                 {badge.icon}
               </div>
               <div className="flex flex-col">
-                <h3 className="text-sm font-bold text-[#1E40AF] tracking-tight">{badge.title}</h3>
+                <h3 className="text-sm font-bold text-[#075985] tracking-tight">{badge.title}</h3>
                 <p className="text-xs text-[#475569] leading-relaxed mt-1 font-medium">{badge.desc}</p>
               </div>
             </div>

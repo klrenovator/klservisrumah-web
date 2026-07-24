@@ -16,7 +16,7 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-3">
               <Image src={siteConfig.logoIcon} alt={siteConfig.name} width={46} height={46} className="rounded-xl" />
               <div className="flex flex-col gap-1">
-                <span className="text-[#1E40AF] font-extrabold text-xl tracking-tight leading-none">
+                <span className="text-[#075985] font-extrabold text-xl tracking-tight leading-none">
                   KL<span className="text-[#0EA5E9]">SERVIS</span>RUMAH<span className="text-[#0EA5E9] text-xs font-bold">.MY</span>
                 </span>
                 <span className="text-[10px] tracking-widest text-[#475569] font-semibold">
@@ -28,19 +28,19 @@ export function Footer() {
               Professional, market-rate, and fully insured painting, ceiling repairs, plumbing, waterproofing, and handyman services across Kuala Lumpur and Selangor.
             </p>
             <div className="flex flex-col gap-2.5 mt-2">
-              <div className="flex items-center gap-2.5 text-xs text-[#1E40AF] font-semibold bg-white p-3 rounded-xl border border-slate-100 shadow-xs">
+              <div className="flex items-center gap-2.5 text-xs text-[#075985] font-semibold bg-white p-3 rounded-xl border border-slate-100 shadow-xs">
                 <ShieldCheck className="w-4 h-4 text-[#0EA5E9]" />
                 <span>Fully insured operations</span>
               </div>
-              <div className="flex items-center gap-2.5 text-xs text-[#1E40AF] font-semibold bg-white p-3 rounded-xl border border-slate-100 shadow-xs">
+              <div className="flex items-center gap-2.5 text-xs text-[#075985] font-semibold bg-white p-3 rounded-xl border border-slate-100 shadow-xs">
                 <CheckCircle className="w-4 h-4 text-emerald-500" />
-                <span>Managed by {siteConfig.parentCompany}</span>
+                <span>Background-verified local team</span>
               </div>
             </div>
           </div>
 
           <div className="flex flex-col gap-5">
-            <h3 className="text-sm font-bold text-[#1E40AF] uppercase tracking-wider">Our Core Services</h3>
+            <h3 className="text-sm font-bold text-[#075985] uppercase tracking-wider">Our Core Services</h3>
             <ul className="flex flex-col gap-3">
               {Object.values(servicesData).map((service) => (
                 <li key={service.slug}>
@@ -59,10 +59,11 @@ export function Footer() {
           </div>
 
           <div className="flex flex-col gap-5">
-            <h3 className="text-sm font-bold text-[#1E40AF] uppercase tracking-wider">Helpful Links</h3>
+            <h3 className="text-sm font-bold text-[#075985] uppercase tracking-wider">Helpful Links</h3>
             <ul className="flex flex-col gap-3">
               {[
                 { href: "/contact", label: "Book a Service" },
+                { href: "/pricing", label: "Pricing & Rates" },
                 { href: "/faq", label: "FAQ Helpdesk" },
                 { href: "/blog", label: "Home Care Blog" },
                 { href: "/about", label: "About KL Servis Rumah" },
@@ -78,7 +79,7 @@ export function Footer() {
           </div>
 
           <div className="flex flex-col gap-5">
-            <h3 className="text-sm font-bold text-[#1E40AF] uppercase tracking-wider">Contact & Dispatch</h3>
+            <h3 className="text-sm font-bold text-[#075985] uppercase tracking-wider">Contact & Dispatch</h3>
             <ul className="flex flex-col gap-4">
               <li className="flex gap-3">
                 <MapPin className="w-5 h-5 text-[#0EA5E9] shrink-0 mt-0.5" />
@@ -86,13 +87,13 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-[#0EA5E9] shrink-0" />
-                <a href={`tel:${siteConfig.phone}`} className="text-sm text-[#475569] hover:text-[#1E40AF] font-semibold transition-colors">
+                <a href={`tel:${siteConfig.phone}`} className="text-sm text-[#475569] hover:text-[#075985] font-semibold transition-colors">
                   {siteConfig.phoneDisplay}
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-[#0EA5E9] shrink-0" />
-                <a href={`mailto:${siteConfig.email}`} className="text-sm text-[#475569] hover:text-[#1E40AF] transition-colors">
+                <a href={`mailto:${siteConfig.email}`} className="text-sm text-[#475569] hover:text-[#075985] transition-colors">
                   {siteConfig.email}
                 </a>
               </li>
@@ -110,9 +111,9 @@ export function Footer() {
             &copy; {year} {siteConfig.name}. All rights reserved.
           </p>
           <div className="flex gap-6 text-xs text-[#475569]">
-            <Link href="/about" className="hover:text-[#1E40AF] transition-colors">About Us</Link>
-            <Link href="/contact" className="hover:text-[#1E40AF] transition-colors">Booking Policy</Link>
-            <Link href="/faq" className="hover:text-[#1E40AF] transition-colors">FAQ Helpdesk</Link>
+            <Link href="/about" className="hover:text-[#075985] transition-colors">About Us</Link>
+            <Link href="/contact" className="hover:text-[#075985] transition-colors">Booking Policy</Link>
+            <Link href="/faq" className="hover:text-[#075985] transition-colors">FAQ Helpdesk</Link>
           </div>
         </div>
       </div>

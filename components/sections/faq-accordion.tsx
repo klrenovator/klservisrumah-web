@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { siteConfig } from "@/config/site";
 import { ChevronDown, HelpCircle, CheckCircle } from "lucide-react";
 
 export function FAQAccordion() {
@@ -22,7 +21,7 @@ export function FAQAccordion() {
     },
     {
       q: "Are you an established local company in Malaysia?",
-      a: `Yes. KL Servis Rumah is operated under ${siteConfig.parentCompany}, with fully insured work boundaries, transparent quotations, official invoices, and background-verified tradesmen.`
+      a: "Yes. KL Servis Rumah operates as an established local company with fully insured work boundaries, transparent quotations, official invoices, and background-verified tradesmen."
     },
     {
       q: "Do you offer warranties on your services?",
@@ -44,10 +43,10 @@ export function FAQAccordion() {
         
         {/* Header */}
         <div className="flex flex-col items-center text-center gap-4 mb-16">
-          <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#DBEAFE]/30 px-4 py-1.5 rounded-full">
+          <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
             Helpdesk Support
           </span>
-          <h2 className="text-3xl font-extrabold text-[#1E40AF] tracking-tight">
+          <h2 className="text-3xl font-extrabold text-[#075985] tracking-tight">
             Frequently Asked Questions
           </h2>
           <p className="text-base text-[#475569] leading-relaxed max-w-2xl">
@@ -67,7 +66,7 @@ export function FAQAccordion() {
                 {/* Trigger bar */}
                 <button
                   onClick={() => toggle(idx)}
-                  className="w-full text-left p-5 sm:p-6 flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-[#1E40AF] hover:text-[#0EA5E9] transition-colors focus:outline-none"
+                  className="w-full text-left p-5 sm:p-6 flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-[#075985] hover:text-[#0EA5E9] transition-colors focus:outline-none"
                 >
                   <div className="flex items-center gap-3.5">
                     <HelpCircle className="w-5 h-5 text-[#0EA5E9] shrink-0" />

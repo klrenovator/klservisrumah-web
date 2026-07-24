@@ -19,9 +19,9 @@ export function NearMeLocator() {
 
   return (
     <div className="rounded-3xl border border-slate-100 bg-white p-6 shadow-xs">
-      <h2 className="text-xl font-extrabold text-[#1E40AF]">Nearest dispatch helper</h2>
+      <h2 className="text-xl font-extrabold text-[#075985]">Nearest dispatch helper</h2>
       <p className="mt-2 text-sm font-semibold leading-relaxed text-[#475569]">{status}</p>
-      <button onClick={locate} className="mt-4 inline-flex items-center gap-2 rounded-xl bg-[#2563EB] px-5 py-3 text-sm font-extrabold text-white">
+      <button onClick={locate} className="mt-4 inline-flex items-center gap-2 rounded-xl bg-[#0284C7] px-5 py-3 text-sm font-extrabold text-white">
         <Navigation className="h-4 w-4" /> Use my location
       </button>
     </div>

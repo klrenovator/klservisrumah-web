@@ -27,10 +27,10 @@ export function ServicesGrid() {
         
         {/* Section Heading Panel */}
         <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#DBEAFE]/30 px-4 py-1.5 rounded-full">
+          <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
             Our Elite Solutions
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1E40AF] tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
             Comprehensive Home & Office Services
           </h2>
           <p className="text-base text-[#475569] leading-relaxed">
@@ -49,18 +49,18 @@ export function ServicesGrid() {
                 
                 {/* Header Icon + Price */}
                 <div className="flex items-center justify-between">
-                  <div className="p-3 bg-[#DBEAFE]/30 rounded-2xl group-hover:bg-[#0EA5E9]/10 transition-colors shrink-0">
+                  <div className="p-3 bg-[#E0F2FE]/30 rounded-2xl group-hover:bg-[#0EA5E9]/10 transition-colors shrink-0">
                     {getIcon(service.icon)}
                   </div>
                   <div className="flex flex-col items-end">
                     <span className="text-[10px] text-[#475569] font-bold uppercase tracking-wider">Prices Start From</span>
-                    <span className="text-lg font-extrabold text-[#1E40AF]">{service.startPrice}</span>
+                    <span className="text-lg font-extrabold text-[#075985]">{service.startPrice}</span>
                   </div>
                 </div>
 
                 {/* Info block */}
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-xl font-extrabold text-[#1E40AF] tracking-tight group-hover:text-[#0EA5E9] transition-colors">
+                  <h3 className="text-xl font-extrabold text-[#075985] tracking-tight group-hover:text-[#0EA5E9] transition-colors">
                     {service.title}
                   </h3>
                   <p className="text-xs sm:text-sm text-[#475569] leading-relaxed font-medium">
@@ -72,7 +72,7 @@ export function ServicesGrid() {
 
                 {/* Sub-services previews */}
                 <div className="flex flex-col gap-2.5">
-                  <span className="text-[10px] text-[#1E40AF] font-bold uppercase tracking-widest">Included Specialities:</span>
+                  <span className="text-[10px] text-[#075985] font-bold uppercase tracking-widest">Included Specialities:</span>
                   <ul className="flex flex-col gap-2">
                     {service.subServices.slice(0, 3).map((sub, idx) => (
                       <li key={idx} className="flex gap-2 items-start text-xs font-semibold text-[#475569]">
@@ -92,7 +92,7 @@ export function ServicesGrid() {
                 </span>
                 <Link
                   href={`/services/${service.slug}`}
-                  className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0EA5E9] hover:text-[#1E40AF] transition-colors"
+                  className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0EA5E9] hover:text-[#075985] transition-colors"
                 >
                   <span>Explore Rates</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

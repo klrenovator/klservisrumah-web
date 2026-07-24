@@ -72,6 +72,35 @@
 - ⏳ External/manual tasks: GBP optimization, GSC/Bing verification, Rich Results testing on deployed URLs, real photos, backlink/PR work.
 - ⏳ Further content depth expansion toward the long-term 1,500+ page knowledge platform.
 
+## 🆕 ROUND 2 EXECUTION LOG (2026-07-24) — PRICING HUB + SKY-BLUE THEME REFINEMENT
+
+**User direction:** User asked to continue the remaining work from the handoff and specifically requested the website blue to be changed because the earlier shade was not preferred.
+
+**Round status:** ✅ Completed — additional UX, pricing, trust, and brand-alignment updates implemented and locally verified.
+
+### ✅ Completed in Round 2
+
+- ✅ Pricing hub page added at **`/pricing`** to satisfy the dedicated “Our Pricing” style requirement from the handoff/competitor notes.
+- ✅ Navbar, footer, sitemap, site search, and service comparison table updated to surface the new pricing route clearly.
+- ✅ Theme refined from the earlier blue family to a more **sky-blue + dark-sky** palette across the app for a lighter, cleaner visual feel.
+- ✅ Placeholder logo SVG/PNG, PWA icons, manifest theme color, and favicon refreshed to match the updated blue palette.
+- ✅ Remaining public-facing parent-company references removed from About page, service CTAs, footer, FAQ copy, and trust badges to better align with the “no public company/SSM display” rule.
+
+### ✅ Quality check results
+
+- ✅ `npm run lint` passed after the round 2 updates.
+- ✅ `npm run build` passed after the round 2 updates.
+- ✅ `npx tsc --noEmit` passed after the round 2 updates.
+- ✅ Grep re-check confirms public SSM/registration strings are not visible in website-facing code.
+
+### ⏳ Still pending after Round 2
+
+- ⏳ Replace placeholder logo and placeholder project images with real approved brand/logo/project photos.
+- ⏳ Native-quality BM and ZH translations for all generated scaffold pages.
+- ⏳ Real customer review import only after verified GBP/direct review source is provided.
+- ⏳ External/manual tasks: GBP optimization, GSC/Bing verification, Rich Results testing on deployed URLs, real photos, backlink/PR work.
+- ⏳ Further content depth expansion toward the long-term 1,500+ page knowledge platform.
+
 ## 🆕 v7 → v8 SESSION CHANGELOG (2026-07-24) — PROJECT EXECUTION INSTRUCTIONS & PERMANENT RULES
 
 **Context:** User provided the complete **Project Execution Instructions** (2026-07-24), which define:

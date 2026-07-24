@@ -29,12 +29,12 @@ export function SocialProofWidgets() {
     <div className="pointer-events-none fixed bottom-24 left-4 z-40 hidden max-w-xs flex-col gap-3 lg:flex">
       <div className="pointer-events-auto rounded-2xl border border-slate-100 bg-white p-4 shadow-[0_16px_45px_rgba(2,31,68,0.10)]">
         <div className="flex items-start gap-3">
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#DBEAFE] text-[#2563EB]">
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#E0F2FE] text-[#0284C7]">
             <TrendingUp className="h-5 w-5" />
           </span>
           <div className="flex flex-col gap-1">
             <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#0EA5E9]">Privacy-safe activity</span>
-            <p className="text-xs font-bold leading-relaxed text-[#1E40AF]">
+            <p className="text-xs font-bold leading-relaxed text-[#075985]">
               {current.service} is a popular request in {current.location} {current.timeLabel}.
             </p>
             <span className="flex items-center gap-1 text-[10px] font-semibold text-slate-500">
@@ -44,7 +44,7 @@ export function SocialProofWidgets() {
         </div>
       </div>
       <div className="pointer-events-auto rounded-2xl border border-slate-100 bg-white p-3 shadow-[0_16px_45px_rgba(2,31,68,0.08)]">
-        <div className="flex items-center gap-2 text-xs font-bold text-[#1E40AF]">
+        <div className="flex items-center gap-2 text-xs font-bold text-[#075985]">
           <Eye className="h-4 w-4 text-[#0EA5E9]" />
           <span>Local service demand index: {demandIndex}/50</span>
         </div>

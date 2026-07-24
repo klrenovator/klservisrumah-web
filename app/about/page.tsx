@@ -4,8 +4,8 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CheckCircle2, ShieldCheck, Landmark, Users, Hammer, Flame } from "lucide-react";
 
 export const metadata = {
-  title: "About Us — Multicore Dynamics Resources",
-  description: "Learn about KL Servis Rumah, operated under Multicore Dynamics Resources. Discover our mission, insured operations, and premium home service values."
+  title: "About Us — KL Servis Rumah",
+  description: "Learn about KL Servis Rumah, our mission, insured operations, and premium home service values across Kuala Lumpur and Selangor."
 };
 
 export default function AboutPage() {
@@ -43,33 +43,33 @@ export default function AboutPage() {
             <span className="text-xs font-bold text-[#0EA5E9] uppercase tracking-widest bg-[#0EA5E9]/10 px-4.5 py-1.5 rounded-full w-fit mx-auto sm:mx-0">
               Our Corporate Story
             </span>
-            <h1 className="text-3xl sm:text-4xl font-extrabold text-[#1E40AF] tracking-tight">
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
               About KL Servis Rumah
             </h1>
             <p className="text-base sm:text-lg text-[#475569] leading-relaxed">
-              At <strong>KL Servis Rumah</strong>, we believe that home maintenance should be straightforward, premium, and stress-free. Operated under <strong>{siteConfig.parentCompany}</strong>, we provide a high standard of painting, ceiling repair, plumbing, waterproofing, and handyman services in Kuala Lumpur & Selangor.
+              At <strong>KL Servis Rumah</strong>, we believe that home maintenance should be straightforward, premium, and stress-free. We provide a high standard of painting, ceiling repair, plumbing, waterproofing, and handyman services across Kuala Lumpur &amp; Selangor with insured operations and background-verified tradesmen.
             </p>
           </div>
 
           <hr className="border-slate-200/60" />
 
           <div className="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-100 flex flex-col gap-6">
-            <h2 className="text-xl font-extrabold text-[#1E40AF] tracking-tight flex items-center gap-2">
+            <h2 className="text-xl font-extrabold text-[#075985] tracking-tight flex items-center gap-2">
               <Landmark className="w-5 h-5 text-[#0EA5E9]" />
               <span>Company & Service Standards</span>
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 text-sm font-semibold text-[#475569]">
               <div className="bg-white p-4 rounded-xl border border-slate-100/80 flex flex-col gap-1">
-                <span className="text-[10px] text-slate-400 uppercase tracking-wider block">Operating Company</span>
-                <span className="text-[#1E40AF]">{siteConfig.parentCompany}</span>
+                <span className="text-[10px] text-slate-400 uppercase tracking-wider block">Business Positioning</span>
+                <span className="text-[#075985]">Established local home services company</span>
               </div>
               <div className="bg-white p-4 rounded-xl border border-slate-100/80 flex flex-col gap-1">
                 <span className="text-[10px] text-slate-400 uppercase tracking-wider block">Pricing Standard</span>
-                <span className="text-[#1E40AF]">Transparent market-rate quotations</span>
+                <span className="text-[#075985]">Transparent market-rate quotations</span>
               </div>
               <div className="bg-white p-4 rounded-xl border border-slate-100/80 flex flex-col gap-1">
                 <span className="text-[10px] text-slate-400 uppercase tracking-wider block">Office Area</span>
-                <span className="text-[#1E40AF] truncate">{siteConfig.addressStreet}, Kuala Lumpur</span>
+                <span className="text-[#075985] truncate">{siteConfig.addressStreet}, Kuala Lumpur</span>
               </div>
               <div className="bg-white p-4 rounded-xl border border-slate-100/80 flex flex-col gap-1">
                 <span className="text-[10px] text-slate-400 uppercase tracking-wider block">Operational Status</span>
@@ -81,14 +81,14 @@ export default function AboutPage() {
           </div>
 
           <div className="flex flex-col gap-4">
-            <h2 className="text-2xl font-extrabold text-[#1E40AF] tracking-tight">Our Core Mission</h2>
+            <h2 className="text-2xl font-extrabold text-[#075985] tracking-tight">Our Core Mission</h2>
             <p className="text-sm text-[#475569] leading-relaxed font-semibold">
               Historically, the Malaysian home services market has been fragmented, with homeowners struggling against unreliable independent contractors, sudden price inflation, and messy cleanups. We built KL Servis Rumah following the highly structured, premium visual, and delivery guidelines of our sibling brand, KL Renovator. We aim to elevate local home care by guaranteeing itemized fixed pricing, using superior SIRIM-certified materials, and deploying background-checked specialists who clean up entirely after themselves.
             </p>
           </div>
 
           <div className="flex flex-col gap-6">
-            <h2 className="text-2xl font-extrabold text-[#1E40AF] tracking-tight">Our Core Values</h2>
+            <h2 className="text-2xl font-extrabold text-[#075985] tracking-tight">Our Core Values</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {values.map((val, idx) => (
                 <div key={idx} className="flex gap-4 items-start">
@@ -96,7 +96,7 @@ export default function AboutPage() {
                     {val.icon}
                   </div>
                   <div className="flex flex-col gap-1">
-                    <h3 className="text-sm font-bold text-[#1E40AF]">{val.title}</h3>
+                    <h3 className="text-sm font-bold text-[#075985]">{val.title}</h3>
                     <p className="text-xs text-[#475569] leading-relaxed font-semibold">{val.desc}</p>
                   </div>
                 </div>

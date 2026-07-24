@@ -3,7 +3,7 @@
 
 /* =========================================================
    KL SERVIS RUMAH — Premium Light Theme
-   Palette: Pure White + Dark Navy (#1E40AF) + Sky Blue (#0EA5E9)
+   Palette: Pure White + Dark Navy (#075985) + Sky Blue (#0EA5E9)
    ========================================================= */
 
 @theme {
@@ -11,9 +11,9 @@
   --font-mono: var(--font-mono, ui-monospace, monospace);
 
   /* Primary Logo Colors */
-  --color-brand-dark: #1E40AF;
+  --color-brand-dark: #075985;
   --color-brand-sky: #0EA5E9;
-  --color-brand-light: #DBEAFE;
+  --color-brand-light: #E0F2FE;
   --color-brand-slate: #475569;
   --color-brand-bg: #ffffff;
 
@@ -26,12 +26,12 @@
   --color-brand-500: #0EA5E9; /* Sky blue */
   --color-brand-600: #026d94;
   --color-brand-700: #025774;
-  --color-brand-800: #1D4ED8;
+  --color-brand-800: #0369A1;
   --color-brand-900: #1E3A8A;
-  --color-brand-950: #1E40AF; /* Dark Navy */
+  --color-brand-950: #075985; /* Dark Navy */
 
   /* Semantic aliases */
-  --color-ink:      #1E40AF;
+  --color-ink:      #075985;
   --color-ink-soft: #475569;
   --color-whatsapp: #22c55e;
 }

@@ -14,7 +14,7 @@ import { siteConfig } from "@/config/site";
 import { getOrganizationSchema, getLocalBusinessSchema } from "@/lib/seo";
 
 export const viewport: Viewport = {
-  themeColor: "#2563EB",
+  themeColor: "#0284C7",
   width: "device-width",
   initialScale: 1,
   maximumScale: 5
