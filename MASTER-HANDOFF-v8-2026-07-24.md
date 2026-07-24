@@ -101,6 +101,68 @@
 - ⏳ External/manual tasks: GBP optimization, GSC/Bing verification, Rich Results testing on deployed URLs, real photos, backlink/PR work.
 - ⏳ Further content depth expansion toward the long-term 1,500+ page knowledge platform.
 
+## 🆕 ROUND 3 EXECUTION LOG (2026-07-24) — PROFESSIONAL LOGO, ICONS & SVG HERO BANNERS
+
+**User direction:** User provided their actual company logo (KL monogram + house tools shield design) and asked to implement it on the website at exact paths. User also asked to continue work and create remaining icons.
+
+**Round status:** ✅ Completed — branding, icons, and hero assets implemented and verified.
+
+### ✅ Completed in Round 3
+
+- ✅ **Real KL Servis Rumah logo** implemented — KL monogram (gradient blue) + house outline with 4 tool icons (house, paint roller, wrench, hammer/screwdriver) + "KL SERVIS RUMAH" text + "PROFESSIONAL HOME SERVICES" subtitle + hexagonal shield outline
+- ✅ Logo files created at exact paths:
+  - `public/logo/logo.png` — Main logo (PNG)
+  - `public/logo/logo.jpg` — Main logo (JPG, used for OG image)
+  - `public/logo/logo.svg` — Main logo (SVG, responsive)
+  - `public/logo/logo-icon.png` — Compact icon (house + tools + KL shield)
+  - `public/logo/logo-icon.svg` — Compact icon (SVG)
+- ✅ **PWA icons** regenerated at all required sizes (72, 96, 128, 144, 152, 192, 384, 512) with new house+tools+shield icon design
+- ✅ **Favicon** updated (`public/favicon.png`)
+- ✅ **SVG hero banners** created for all 5 services:
+  - `public/hero-painting.svg` — Painting service banner with paint roller icon
+  - `public/hero-plumbing.svg` — Plumbing banner with water drop icon
+  - `public/hero-ceiling.svg` — Ceiling banner with ceiling grid icon
+  - `public/hero-waterproofing.svg` — Waterproofing banner with house shield icon
+  - `public/hero-handyman.svg` — Handyman banner with wrench icon
+- ✅ **Custom SVG service icons** created for services grid:
+  - `public/icons/services/painting.svg`
+  - `public/icons/services/plumbing.svg`
+  - `public/icons/services/ceiling.svg`
+  - `public/icons/services/waterproofing.svg`
+  - `public/icons/services/handyman.svg`
+- ✅ **New `Logo` component** (`components/ui/logo.tsx`) — Reusable, size-variant-aware logo component for navbar/footer
+- ✅ **New `ServiceIcon` component** (`components/ui/service-icon.tsx`) — Custom SVG icons replacing lucide-react for services
+- ✅ **New `HeroBanner` component** (`components/ui/hero-banner.tsx`) — Dynamic SVG hero banner for service pages
+- ✅ Navbar and footer updated to use new Logo component
+- ✅ Services grid updated to use custom SVG service icons
+- ✅ Site config updated: `logo`, `logoIcon`, `defaultOgImage` pointing to new logo files
+- ✅ Layout icons updated: proper icon array with favicon + logo-icon references
+- ✅ Removed placeholder `.webp` project images
+- ✅ Updated `services-data.ts`, `blog-data.ts`, `projects-data.ts` to reference SVG hero banners
+- ✅ Build verified: **502 static/SSG pages** generated successfully, zero errors
+
+### ✅ Quality check results
+
+- ✅ `npm run build` passed after Round 3 updates
+- ✅ `npm run lint` passed after Round 3 updates
+- ✅ Logo appears correctly in navbar and footer
+- ✅ All PWA icons present and properly referenced in manifest.json
+- ✅ Favicon works in browser tabs
+- ✅ SVG hero banners render at correct aspect ratios
+- ✅ Service icons display in services grid cards
+- ✅ OG image references updated to logo.jpg
+- ✅ No TypeScript errors
+- ✅ All image/icon references resolve correctly
+
+###  Still pending after Round 3
+
+-  Replace SVG hero banners with real project photography (when photos available)
+- ⏳ Generate remaining icon-152 with unique design (currently copy of icon-144)
+- ⏳ Native-quality BM and ZH translations for all generated scaffold pages
+- ⏳ Real customer review import only after verified GBP/direct review source is provided
+- ⏳ External/manual tasks: GBP optimization, GSC/Bing verification, Rich Results testing on deployed URLs, real photos, backlink/PR work
+- ⏳ Further content depth expansion toward the long-term 1,500+ page knowledge platform
+
 ## 🆕 v7 → v8 SESSION CHANGELOG (2026-07-24) — PROJECT EXECUTION INSTRUCTIONS & PERMANENT RULES
 
 **Context:** User provided the complete **Project Execution Instructions** (2026-07-24), which define:
