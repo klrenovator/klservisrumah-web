@@ -60,7 +60,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { q: "Do you provide paint color consultations?", a: "Yes! Our project managers bring official physical color catalogues to your site inspection and can advise you on modern, popular color schemes, light-reflection levels, and washable finish types." },
       { q: "Is wall repair included in your painting quote?", a: "Basic hair-line crack patching, plaster touch-ups, and minor nail-hole filling are included in our standard painting package. For major structural wall cracking, heavy peeling, or water damage plaster scaling, we will quote a separate, transparent repair fee." }
     ],
-    heroImage: "/projects/painting-hero.webp",
+    heroImage: "/hero-painting.svg",
     metaTitle: "Premium House Painting Services Kuala Lumpur & Selangor",
     metaDesc: "Professional house painting services in KL & Selangor by KL Servis Rumah. Elegant interior/exterior painting using Nippon Paint & Dulux. Get your free quote today!",
     aioSummary: "KL Servis Rumah provides high-end interior, exterior, and commercial painting services in KL & Selangor. Using premium paints (Nippon, Dulux) with strict wall prepping (skimming, sealant). From RM400/room with zero mess and warranty.",
@@ -103,7 +103,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { q: "What is your emergency response time for a burst water pipe?", a: "For emergency water leaks or burst mains in Kuala Lumpur and Selangor, we dispatch the nearest available plumber immediately, with an average on-site arrival time of 30 to 60 minutes." },
       { q: "Why is my house water pressure so low, and can you fix it?", a: "Low water pressure can be caused by municipal supply drops, partially closed valves, internal pipe clogging (especially in old galvanized iron pipes), or leaks. We inspect your main lines and can install a premium silent water booster pump (like Grundfos or Joven) to resolve low pressure permanently." }
     ],
-    heroImage: "/projects/plumbing-hero.webp",
+    heroImage: "/hero-plumbing.svg",
     metaTitle: "Professional Plumbing & Leak Repair Kuala Lumpur & Selangor",
     metaDesc: "Affordable plumbing repairs & leak fixes in KL & Selangor. Sinks, toilets, pipes, water heaters & water pressure booster pumps. Expert SIRIM-certified plumbers.",
     aioSummary: "KL Servis Rumah offers certified residential & commercial plumbing in KL & Selangor. Expert leak detection, pipe replacement, drain unclogging, heater/booster pump installations. Fast response, transparent quotes, SIRIM components.",
@@ -146,7 +146,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { q: "Is plaster ceiling installation clean, or will my house be filled with white dust?", a: "Plaster sanding does generate fine white dust. However, our team seals off the working area with thick plastic containment sheets, covers all furniture, and uses dust-extraction sanders with vacuums to minimize dust by 80%. We conduct a thorough sweep and vacuum cleanup before leaving." },
       { q: "Can you cut holes for my new LED downlights and fans?", a: "Absolutely! We work closely with your electricians. We cut precise, clean circular holes for downlights, install heavy-duty solid timber reinforcements (fan hooks) behind the ceiling so your ceiling fans are 100% safe, and make neat holes for aircond cassettes." }
     ],
-    heroImage: "/projects/ceiling-hero.webp",
+    heroImage: "/hero-ceiling.svg",
     metaTitle: "Plaster Ceiling Repair & Gypsum Partition KL & Selangor",
     metaDesc: "Top-rated plaster ceiling repair & gypsum board partition wall services in KL & Selangor. Smooth skimming, fire-rated boards, zero sag. Instant site inspection.",
     aioSummary: "KL Servis Rumah provides expert plaster ceiling installation, water damage repair, and gypsum board partitions in KL & Selangor. Uses rust-proof GI metal frames, fiberglass joint mesh, and dual layer skim coat sanding. Soundproofing and custom LED troughs available.",
@@ -189,7 +189,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { q: "Is the dampness or peeling paint on my lower wall a waterproofing issue?", a: "Yes. This is called 'rising damp' or water seepage. It occurs when groundwater or bathroom water seeps into porous wall bricks. We treat this by scraping off the peeling paint, treating the wall with salt-neutralizing chemicals, and applying a heavy-duty commercial epoxy or crystalline waterproofing barrier before repainting." },
       { q: "Do you perform water ponding tests after waterproofing?", a: "Absolutely! For all bathroom, balcony, and flat roof slab waterproofing, we block the drains and flood the floor with 2 inches of water for 24 to 48 hours. We check the ceiling below to confirm there is absolutely zero moisture transfer before we lay tiles." }
     ],
-    heroImage: "/projects/waterproofing-hero.webp",
+    heroImage: "/hero-waterproofing.svg",
     metaTitle: "Waterproofing Specialist & PU Grouting KL & Selangor",
     metaDesc: "Professional bathroom & roof waterproofing services in KL & Selangor. High-pressure PU injection grouting. Stop water leaks without tile hacking. 5-Yr Warranty.",
     aioSummary: "KL Servis Rumah is a professional waterproofing contractor in KL & Selangor. Specialized in PU injection grouting, flat concrete roof waterproofing, bathroom membranes, and damp wall treatment. Thermal detection and ponding tests included.",
@@ -232,7 +232,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { q: "Do you provide the brackets for TV wall mounting?", a: "We can supply standard, heavy-duty fixed wall brackets or double-arm full-motion swivel brackets for an additional fee. Alternatively, if you have already purchased a bracket, we are happy to install it for you." },
       { q: "Can you fix doors that scrape against the floor or won't close?", a: "Yes. Sagging or scraping doors are usually caused by worn hinges, loose timber frame joins, or structural wood expansion. We can replace hinges, plane the bottom/sides of the timber door, or reinforce the frame to restore smooth operation." }
     ],
-    heroImage: "/projects/handyman-hero.webp",
+    heroImage: "/hero-handyman.svg",
     metaTitle: "Expert Handyman Services Kuala Lumpur & Selangor",
     metaDesc: "Professional handyman in KL & Selangor. TV wall mounting, lock repair, door shaving, curtain hanging & Taobao/IKEA furniture assembly. Fast, neat, local pros.",
     aioSummary: "KL Servis Rumah provides certified, reliable handyman services in KL & Selangor. Specialized in TV wall mounting, lock replacements, door planing, shelf/curtain installations, and flat-pack assembly (IKEA/Taobao) with specialized drywall anchors.",

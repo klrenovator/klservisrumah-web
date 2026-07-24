@@ -1,26 +1,10 @@
 import React from "react";
 import Link from "next/link";
 import { servicesData } from "@/config/services-data";
-import { Paintbrush, Droplet, LayoutGrid, Shield, Wrench, ArrowRight, CheckCircle } from "lucide-react";
+import { ArrowRight, CheckCircle } from "lucide-react";
+import { ServiceIcon } from "@/components/ui/service-icon";
 
 export function ServicesGrid() {
-  const getIcon = (iconName: string) => {
-    switch (iconName) {
-      case "paint-brush":
-        return <Paintbrush className="w-6 h-6 text-[#0EA5E9]" />;
-      case "droplet":
-        return <Droplet className="w-6 h-6 text-[#0EA5E9]" />;
-      case "layout-grid":
-        return <LayoutGrid className="w-6 h-6 text-[#0EA5E9]" />;
-      case "shield":
-        return <Shield className="w-6 h-6 text-[#0EA5E9]" />;
-      case "wrench":
-        return <Wrench className="w-6 h-6 text-[#0EA5E9]" />;
-      default:
-        return <Wrench className="w-6 h-6 text-[#0EA5E9]" />;
-    }
-  };
-
   return (
     <section className="bg-white py-20 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -50,7 +34,7 @@ export function ServicesGrid() {
                 {/* Header Icon + Price */}
                 <div className="flex items-center justify-between">
                   <div className="p-3 bg-[#E0F2FE]/30 rounded-2xl group-hover:bg-[#0EA5E9]/10 transition-colors shrink-0">
-                    {getIcon(service.icon)}
+                    <ServiceIcon name={service.icon} className="w-8 h-8" />
                   </div>
                   <div className="flex flex-col items-end">
                     <span className="text-[10px] text-[#475569] font-bold uppercase tracking-wider">Prices Start From</span>

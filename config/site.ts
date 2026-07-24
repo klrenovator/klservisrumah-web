@@ -29,9 +29,9 @@ export const siteConfig = {
   reviewCount: 120,
   reviewRating: 4.9,
   reviewLastUpdated: "2026-07-23",
-  logo: "/logo/logo.svg",
-  logoIcon: "/logo/logo-icon.svg",
-  defaultOgImage: "/logo/logo.png",
+  logo: "/logo/logo.jpg",
+  logoIcon: "/logo/logo-icon.png",
+  defaultOgImage: "/logo/logo.jpg",
 
   navItems: [
     { label: "Home", href: "/" },

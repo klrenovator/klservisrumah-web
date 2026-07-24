@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img">
+  <defs>
+    <linearGradient id="plbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#0369A1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#plbg)"/>
+  <circle cx="900" cy="100" r="250" fill="#fff" opacity="0.05"/>
+  <circle cx="300" cy="550" r="180" fill="#fff" opacity="0.04"/>
+  <!-- Water drop icon -->
+  <g transform="translate(850, 120)">
+    <path d="M125 0 C125 0 40 130 40 200 C40 260 75 290 125 340 C175 290 210 260 210 200 C210 130 125 0 125 0Z" fill="#fff" opacity="0.9"/>
+    <path d="M125 50 C125 50 70 145 70 195 C70 235 92 255 125 285 C158 255 180 235 180 195 C180 145 125 50 125 50Z" fill="#fff" opacity="0.3"/>
+  </g>
+  <!-- Water effects -->
+  <circle cx="750" cy="420" r="10" fill="#fff" opacity="0.12"/>
+  <circle cx="870" cy="450" r="7" fill="#fff" opacity="0.08"/>
+  <!-- Text -->
+  <text x="80" y="200" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#E0F2FE" letter-spacing="4">PREMIUM HOME SERVICES</text>
+  <text x="80" y="280" font-family="Arial, sans-serif" font-size="72" font-weight="900" fill="#ffffff" letter-spacing="-1">Plumbing Solutions</text>
+  <text x="80" y="350" font-family="Arial, sans-serif" font-size="22" font-weight="500" fill="#E0F2FE">Leak Repairs • New Installations • KL &amp; Selangor • From RM 120</text>
+  <!-- Badge -->
+  <rect x="80" y="400" width="220" height="44" rx="22" fill="#fff" opacity="0.15"/>
+  <text x="190" y="428" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">24/7 Emergency</text>
+</svg>

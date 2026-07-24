@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img">
+  <defs>
+    <linearGradient id="pbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#075985"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#pbg)"/>
+  <circle cx="950" cy="120" r="220" fill="#fff" opacity="0.05"/>
+  <circle cx="200" cy="500" r="150" fill="#fff" opacity="0.04"/>
+  <!-- Paint roller icon -->
+  <g transform="translate(780, 150)">
+    <rect x="0" y="0" width="200" height="50" rx="16" fill="#fff" opacity="0.9"/>
+    <rect x="75" y="50" width="50" height="120" rx="6" fill="#fff" opacity="0.8"/>
+    <rect x="60" y="170" width="80" height="24" rx="12" fill="#fff" opacity="0.6"/>
+  </g>
+  <!-- Paint drip effects -->
+  <circle cx="720" cy="380" r="12" fill="#fff" opacity="0.15"/>
+  <circle cx="860" cy="400" r="8" fill="#fff" opacity="0.1"/>
+  <circle cx="900" cy="350" r="16" fill="#fff" opacity="0.08"/>
+  <!-- Text -->
+  <text x="80" y="200" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#E0F2FE" letter-spacing="4">PREMIUM HOME SERVICES</text>
+  <text x="80" y="280" font-family="Arial, sans-serif" font-size="72" font-weight="900" fill="#ffffff" letter-spacing="-1">House Painting</text>
+  <text x="80" y="350" font-family="Arial, sans-serif" font-size="22" font-weight="500" fill="#E0F2FE">Interior &amp; Exterior • KL &amp; Selangor • From RM 400</text>
+  <!-- Badge -->
+  <rect x="80" y="400" width="180" height="44" rx="22" fill="#fff" opacity="0.15"/>
+  <text x="170" y="428" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">1-Year Warranty</text>
+</svg>

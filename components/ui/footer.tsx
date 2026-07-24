@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { siteConfig } from "@/config/site";
 import { servicesData } from "@/config/services-data";
 import { Phone, Mail, MapPin, Clock, ShieldCheck, CheckCircle } from "lucide-react";
+import { Logo } from "@/components/ui/logo";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -14,15 +14,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="flex flex-col gap-5">
             <Link href="/" className="flex items-center gap-3">
-              <Image src={siteConfig.logoIcon} alt={siteConfig.name} width={46} height={46} className="rounded-xl" />
-              <div className="flex flex-col gap-1">
-                <span className="text-[#075985] font-extrabold text-xl tracking-tight leading-none">
-                  KL<span className="text-[#0EA5E9]">SERVIS</span>RUMAH<span className="text-[#0EA5E9] text-xs font-bold">.MY</span>
-                </span>
-                <span className="text-[10px] tracking-widest text-[#475569] font-semibold">
-                  PAINTING • CEILING • PLUMBING • HANDYMAN
-                </span>
-              </div>
+              <Logo size="sm" />
             </Link>
             <p className="text-sm text-[#475569] leading-relaxed">
               Professional, market-rate, and fully insured painting, ceiling repairs, plumbing, waterproofing, and handyman services across Kuala Lumpur and Selangor.

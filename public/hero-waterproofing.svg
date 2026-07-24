@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img">
+  <defs>
+    <linearGradient id="wpbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0EA5E9"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#wpbg)"/>
+  <circle cx="920" cy="100" r="230" fill="#fff" opacity="0.05"/>
+  <circle cx="180" cy="530" r="170" fill="#fff" opacity="0.04"/>
+  <!-- House/shield icon -->
+  <g transform="translate(830, 120)">
+    <path d="M0 180 L0 80 L125 0 L250 80 L250 180Z" fill="#fff" opacity="0.15"/>
+    <path d="M0 180 L0 80 L125 0 L250 80 L250 180" stroke="#fff" strokeWidth="5" strokeLinejoin="round" fill="none"/>
+    <path d="M60 180 L60 110 L190 110 L190 180Z" fill="#fff" opacity="0.3" stroke="#fff" strokeWidth="3"/>
+    <circle cx="125" cy="70" r="20" fill="#fff" opacity="0.5"/>
+    <path d="M125 50 L115 65 L135 65Z" fill="#fff" opacity="0.7"/>
+  </g>
+  <!-- Text -->
+  <text x="80" y="200" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#E0F2FE" letter-spacing="4">PREMIUM HOME SERVICES</text>
+  <text x="80" y="280" font-family="Arial, sans-serif" font-size="72" font-weight="900" fill="#ffffff" letter-spacing="-1">Waterproofing</text>
+  <text x="80" y="350" font-family="Arial, sans-serif" font-size="22" font-weight="500" fill="#E0F2FE">Leak Seal • PU Injection • Roof Coating • From RM 250</text>
+  <!-- Badge -->
+  <rect x="80" y="400" width="210" height="44" rx="22" fill="#fff" opacity="0.15"/>
+  <text x="185" y="428" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">Leak-Free Guarantee</text>
+</svg>

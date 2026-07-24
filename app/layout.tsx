@@ -60,7 +60,10 @@ export const metadata: Metadata = {
     images: [siteConfig.defaultOgImage]
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.png", sizes: "any", type: "image/png" },
+      { url: "/logo/logo-icon.png", sizes: "any", type: "image/png" }
+    ],
     shortcut: siteConfig.logoIcon,
     apple: "/icons/icon-192.png"
   }
