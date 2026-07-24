@@ -21,7 +21,7 @@ export const blogPosts: BlogPost[] = [
     date: "July 20, 2026",
     readTime: "5 min read",
     author: "KL Servis Rumah Editorial Team",
-    coverImage: "/projects/painting-hero.webp",
+    coverImage: "/hero-painting.svg",
     metaTitle: "How to Choose Living Room & Exterior Paint Colors Malaysia",
     metaDesc: "Struggling with paint color selections? Discover 5 expert tips for choosing modern home paint colors in Malaysia based on lighting, weather, and washability.",
     content: `
@@ -85,7 +85,7 @@ Don't risk crooked borders, paint splatters on your expensive sofa, or peeling c
     date: "July 12, 2026",
     readTime: "6 min read",
     author: "KL Servis Rumah Technical Review Team",
-    coverImage: "/projects/waterproofing-hero.webp",
+    coverImage: "/hero-waterproofing.svg",
     metaTitle: "Fix Inter-Floor Bathroom Ceiling Leak Without Tile Hacking",
     metaDesc: "Dripping ceiling water? Learn how PU Grouting injection seals inter-floor bathroom leaks from below without hacking luxury floor tiles in KL & Selangor.",
     content: `

@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { siteConfig } from "@/config/site";
 import { Menu, X, Phone, CheckCircle2 } from "lucide-react";
@@ -10,6 +9,7 @@ import { getWhatsAppLink } from "@/lib/whatsapp";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { SiteSearch } from "@/components/ui/site-search";
 import { trackPhoneCall, trackWhatsAppClick } from "@/lib/analytics";
+import { Logo } from "@/components/ui/logo";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,16 +38,8 @@ export function Navbar() {
       <nav className={`w-full bg-white transition-all duration-300 border-b ${scrolled ? "py-3 shadow-[0_4px_20px_rgba(2,31,68,0.03)] border-slate-100" : "py-5 border-transparent"}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between gap-4">
-            <Link href="/" className="flex items-center gap-3 group shrink-0" aria-label="KL Servis Rumah homepage">
-              <Image src={siteConfig.logoIcon} alt="" width={44} height={44} className="rounded-xl" priority />
-              <div className="flex flex-col">
-                <span className="text-[#075985] font-extrabold text-lg sm:text-2xl tracking-tight leading-none flex items-center gap-1">
-                  KL<span className="text-[#0EA5E9]">SERVIS</span>RUMAH<span className="text-[#0EA5E9] text-xs sm:text-sm font-bold">.MY</span>
-                </span>
-                <span className="text-[9px] sm:text-xs tracking-widest text-[#475569] font-semibold mt-1">
-                  PAINTING • CEILING • PLUMBING • HANDYMAN
-                </span>
-              </div>
+            <Link href="/" className="group shrink-0" aria-label="KL Servis Rumah homepage">
+              <Logo size="md" />
             </Link>
 
             <div className="hidden lg:flex items-center gap-6">

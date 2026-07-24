@@ -1,6 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="KL Servis Rumah icon">
-  <rect width="512" height="512" rx="112" fill="#0284C7"/>
-  <path d="M105 240 256 96l151 144" fill="none" stroke="#fff" stroke-width="42" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M142 238h228v178H142z" fill="#0EA5E9"/>
-  <path d="M218 416V300h76v116" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="KL Servis Rumah">
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#075985"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield/house outline -->
+  <path d="M256 40 L440 170 L440 290 L256 460 L72 290 L72 170 Z" fill="none" stroke="url(#blueGrad)" stroke-width="18"/>
+  <!-- Chimney -->
+  <rect x="370" y="70" width="30" height="60" rx="4" fill="#075985"/>
+  <!-- Tool icons row -->
+  <g transform="translate(105, 130)">
+    <!-- Small house -->
+    <g transform="translate(0, 0)">
+      <path d="M15 40 L45 15 L75 40 L75 75 L15 75Z" fill="#075985"/>
+      <rect x="35" y="50" width="20" height="25" rx="2" fill="#fff"/>
+      <rect x="30" y="30" width="10" height="10" rx="1" fill="#fff"/>
+      <rect x="50" y="30" width="10" height="10" rx="1" fill="#fff"/>
+    </g>
+    <!-- Paint roller -->
+    <g transform="translate(95, 0)">
+      <rect x="5" y="10" width="55" height="22" rx="6" fill="#0EA5E9"/>
+      <line x1="32" y1="32" x2="32" y2="60" stroke="#075985" stroke-width="5" stroke-linecap="round"/>
+      <rect x="20" y="55" width="24" height="16" rx="4" fill="#075985"/>
+      <path d="M10 32 Q10 50 20 55" fill="none" stroke="#0EA5E9" stroke-width="3"/>
+    </g>
+    <!-- Wrench -->
+    <g transform="translate(195, 0)">
+      <path d="M30 10 L30 70 L45 70 L45 40 C45 30 55 25 55 25 C55 10 40 5 30 10 C20 5 5 10 5 25 C5 35 15 40 15 40 L15 70 L30 70" fill="#075985"/>
+      <circle cx="37" cy="60" r="3" fill="#fff"/>
+    </g>
+    <!-- Hammer & screwdriver -->
+    <g transform="translate(270, 0)">
+      <line x1="10" y1="10" x2="55" y2="70" stroke="#075985" stroke-width="6" stroke-linecap="round"/>
+      <line x1="55" y1="10" x2="10" y2="70" stroke="#0EA5E9" stroke-width="6" stroke-linecap="round"/>
+      <rect x="0" y="2" width="20" height="16" rx="4" fill="#075985" transform="rotate(-45 10 10)"/>
+    </g>
+  </g>
+  <!-- KL text -->
+  <text x="256" y="380" font-family="Arial, Helvetica, sans-serif" font-size="100" font-weight="900" fill="url(#blueGrad)" text-anchor="middle" letter-spacing="4">KL</text>
+  <!-- SERVIS RUMAH text -->
+  <text x="256" y="430" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#075985" text-anchor="middle" letter-spacing="6">SERVIS RUMAH</text>
 </svg>
