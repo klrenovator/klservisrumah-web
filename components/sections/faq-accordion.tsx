@@ -18,11 +18,11 @@ export function FAQAccordion() {
   const faqs = [
     {
       q: "What is your starting price for your home services?",
-      a: "Our minor handyman jobs start from RM 80, basic plumbing repairs from RM 120, plaster ceiling repair from RM 180, and single room painting from RM 350. Every quote we issue is fixed and itemized before any actual work is commenced, so there are absolutely no hidden fees."
+      a: "Our minor handyman jobs start from RM 80, basic plumbing repairs from RM 120, plaster ceiling repair from RM 180, and single room painting from RM 400. Every quote we issue is fixed and itemized before any actual work is commenced, so there are absolutely no hidden fees."
     },
     {
-      q: "Are you a registered company in Malaysia?",
-      a: `Yes, we are a fully registered and legal business operated directly under our parent company ${siteConfig.parentCompany} (SSM Registration Number: ${siteConfig.ssmFull}). All payments are made legally to our corporate banking accounts, and we issue official invoices/receipts.`
+      q: "Are you an established local company in Malaysia?",
+      a: `Yes. KL Servis Rumah is operated under ${siteConfig.parentCompany}, with fully insured work boundaries, transparent quotations, official invoices, and background-verified tradesmen.`
     },
     {
       q: "Do you offer warranties on your services?",
@@ -44,13 +44,13 @@ export function FAQAccordion() {
         
         {/* Header */}
         <div className="flex flex-col items-center text-center gap-4 mb-16">
-          <span className="text-xs font-bold text-[#0781B2] tracking-widest uppercase bg-[#D2DEE7]/30 px-4 py-1.5 rounded-full">
+          <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#DBEAFE]/30 px-4 py-1.5 rounded-full">
             Helpdesk Support
           </span>
-          <h2 className="text-3xl font-extrabold text-[#021F44] tracking-tight">
+          <h2 className="text-3xl font-extrabold text-[#1E40AF] tracking-tight">
             Frequently Asked Questions
           </h2>
-          <p className="text-base text-[#4A607C] leading-relaxed max-w-2xl">
+          <p className="text-base text-[#475569] leading-relaxed max-w-2xl">
             Quick, honest, and comprehensive answers to our clients' most common questions. Pre-optimized for instant AI Overviews (AIO) and snippet placements.
           </p>
         </div>
@@ -67,25 +67,25 @@ export function FAQAccordion() {
                 {/* Trigger bar */}
                 <button
                   onClick={() => toggle(idx)}
-                  className="w-full text-left p-5 sm:p-6 flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-[#021F44] hover:text-[#0781B2] transition-colors focus:outline-none"
+                  className="w-full text-left p-5 sm:p-6 flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-[#1E40AF] hover:text-[#0EA5E9] transition-colors focus:outline-none"
                 >
                   <div className="flex items-center gap-3.5">
-                    <HelpCircle className="w-5 h-5 text-[#0781B2] shrink-0" />
+                    <HelpCircle className="w-5 h-5 text-[#0EA5E9] shrink-0" />
                     <span>{faq.q}</span>
                   </div>
                   <ChevronDown
-                    className={`w-5 h-5 text-[#4A607C] shrink-0 transition-transform duration-300 ${
-                      isOpen ? "rotate-180 text-[#0781B2]" : ""
+                    className={`w-5 h-5 text-[#475569] shrink-0 transition-transform duration-300 ${
+                      isOpen ? "rotate-180 text-[#0EA5E9]" : ""
                     }`}
                   />
                 </button>
 
                 {/* Content body */}
                 {isOpen && (
-                  <div className="px-5 sm:px-6 pb-6 pt-1 text-xs sm:text-sm text-[#4A607C] leading-relaxed border-t border-slate-50 animate-in fade-in slide-in-from-top-4 duration-200">
+                  <div className="px-5 sm:px-6 pb-6 pt-1 text-xs sm:text-sm text-[#475569] leading-relaxed border-t border-slate-50 animate-in fade-in slide-in-from-top-4 duration-200">
                     <div className="bg-slate-50/50 p-4 rounded-xl border border-slate-100 flex gap-3">
                       <CheckCircle className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
-                      <p className="font-semibold text-[#4A607C]">{faq.a}</p>
+                      <p className="font-semibold text-[#475569]">{faq.a}</p>
                     </div>
                   </div>
                 )}

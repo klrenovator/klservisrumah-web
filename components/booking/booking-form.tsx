@@ -11,7 +11,7 @@ import { Calendar, User, Phone, MapPin, Clipboard, FileText, CheckCircle2 } from
 // Form validation schema with zod
 const bookingSchema = z.object({
   name: z.string().min(3, "Name must be at least 3 characters long"),
-  phone: z.string().regex(/^(?:\+?6?01)[0-46-9]\-?\d{7,8}$/, "Please enter a valid Malaysian phone number (e.g., 0123456789)"),
+  phone: z.string().regex(/^(?:\+?6?01)[0-46-9]-?\d{7,8}$/, "Please enter a valid Malaysian phone number (e.g., 0123456789)"),
   service: z.string().min(1, "Please select a service category"),
   location: z.string().min(1, "Please select your suburb"),
   date: z.string().min(1, "Please select a preferred date"),
@@ -64,37 +64,37 @@ export function BookingForm() {
           <CheckCircle2 className="w-8 h-8" />
         </div>
         <div className="flex flex-col gap-2">
-          <h3 className="text-2xl font-extrabold text-[#021F44] tracking-tight">Booking Form Submitted!</h3>
-          <p className="text-sm text-[#4A607C] font-semibold leading-relaxed">
+          <h3 className="text-2xl font-extrabold text-[#1E40AF] tracking-tight">Booking Form Submitted!</h3>
+          <p className="text-sm text-[#475569] font-semibold leading-relaxed">
             Alhamdulillah! We have compiled your request. Opening our official WhatsApp Dispatch Desk in a new tab to complete your scheduling...
           </p>
         </div>
 
         {/* Compiled Summary Box */}
         <div className="w-full bg-slate-50 border border-slate-100 rounded-2xl p-5 text-left flex flex-col gap-3">
-          <div className="text-xs font-bold text-[#021F44] border-b border-slate-200/50 pb-2 uppercase tracking-widest">
+          <div className="text-xs font-bold text-[#1E40AF] border-b border-slate-200/50 pb-2 uppercase tracking-widest">
             Summary of Request:
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 text-xs font-semibold">
             <div>
               <span className="text-slate-400 block mb-0.5 uppercase tracking-wider text-[9px]">Client Name</span>
-              <span className="text-[#021F44]">{formData.name}</span>
+              <span className="text-[#1E40AF]">{formData.name}</span>
             </div>
             <div>
               <span className="text-slate-400 block mb-0.5 uppercase tracking-wider text-[9px]">Contact Number</span>
-              <span className="text-[#021F44]">{formData.phone}</span>
+              <span className="text-[#1E40AF]">{formData.phone}</span>
             </div>
             <div>
               <span className="text-slate-400 block mb-0.5 uppercase tracking-wider text-[9px]">Selected Service</span>
-              <span className="text-[#0781B2] font-bold">{serviceTitle}</span>
+              <span className="text-[#0EA5E9] font-bold">{serviceTitle}</span>
             </div>
             <div>
               <span className="text-slate-400 block mb-0.5 uppercase tracking-wider text-[9px]">Target Location</span>
-              <span className="text-[#021F44]">{formData.location}</span>
+              <span className="text-[#1E40AF]">{formData.location}</span>
             </div>
             <div className="sm:col-span-2">
               <span className="text-slate-400 block mb-0.5 uppercase tracking-wider text-[9px]">Preferred Date</span>
-              <span className="text-[#021F44]">{formData.date}</span>
+              <span className="text-[#1E40AF]">{formData.date}</span>
             </div>
           </div>
         </div>
@@ -121,15 +121,15 @@ export function BookingForm() {
         
         {/* Row 1: Name */}
         <div className="flex flex-col gap-2">
-          <label className="text-xs font-bold text-[#021F44] uppercase tracking-wider flex items-center gap-1.5">
-            <User className="w-4 h-4 text-[#0781B2]" />
+          <label className="text-xs font-bold text-[#1E40AF] uppercase tracking-wider flex items-center gap-1.5">
+            <User className="w-4 h-4 text-[#0EA5E9]" />
             <span>Full Name</span>
           </label>
           <input
             {...register("name")}
             type="text"
             placeholder="e.g. Ahmad bin Ali"
-            className="w-full bg-slate-50 text-[#021F44] font-semibold text-sm py-3.5 px-4 rounded-xl border border-slate-100 outline-none focus:border-[#0781B2] focus:bg-white transition-all"
+            className="w-full bg-slate-50 text-[#1E40AF] font-semibold text-sm py-3.5 px-4 rounded-xl border border-slate-100 outline-none focus:border-[#0EA5E9] focus:bg-white transition-all"
           />
           {errors.name && (
             <span className="text-xs text-rose-500 font-bold">{errors.name.message}</span>
@@ -138,15 +138,15 @@ export function BookingForm() {
 
         {/* Row 2: Phone */}
         <div className="flex flex-col gap-2">
-          <label className="text-xs font-bold text-[#021F44] uppercase tracking-wider flex items-center gap-1.5">
-            <Phone className="w-4 h-4 text-[#0781B2]" />
+          <label className="text-xs font-bold text-[#1E40AF] uppercase tracking-wider flex items-center gap-1.5">
+            <Phone className="w-4 h-4 text-[#0EA5E9]" />
             <span>WhatsApp / Phone Number</span>
           </label>
           <input
             {...register("phone")}
             type="text"
             placeholder="e.g. 0123456789"
-            className="w-full bg-slate-50 text-[#021F44] font-semibold text-sm py-3.5 px-4 rounded-xl border border-slate-100 outline-none focus:border-[#0781B2] focus:bg-white transition-all"
+            className="w-full bg-slate-50 text-[#1E40AF] font-semibold text-sm py-3.5 px-4 rounded-xl border border-slate-100 outline-none focus:border-[#0EA5E9] focus:bg-white transition-all"
           />
           {errors.phone && (
             <span className="text-xs text-rose-500 font-bold">{errors.phone.message}</span>
@@ -155,13 +155,13 @@ export function BookingForm() {
 
         {/* Row 3: Service */}
         <div className="flex flex-col gap-2">
-          <label className="text-xs font-bold text-[#021F44] uppercase tracking-wider flex items-center gap-1.5">
-            <Clipboard className="w-4 h-4 text-[#0781B2]" />
+          <label className="text-xs font-bold text-[#1E40AF] uppercase tracking-wider flex items-center gap-1.5">
+            <Clipboard className="w-4 h-4 text-[#0EA5E9]" />
             <span>Service Required</span>
           </label>
           <select
             {...register("service")}
-            className="w-full bg-slate-50 text-[#021F44] font-semibold text-sm py-3.5 px-4 rounded-xl border border-slate-100 outline-none focus:border-[#0781B2] focus:bg-white transition-all cursor-pointer"
+            className="w-full bg-slate-50 text-[#1E40AF] font-semibold text-sm py-3.5 px-4 rounded-xl border border-slate-100 outline-none focus:border-[#0EA5E9] focus:bg-white transition-all cursor-pointer"
           >
             <option value="" disabled>Select service category...</option>
             {Object.values(servicesData).map((service) => (
@@ -177,13 +177,13 @@ export function BookingForm() {
 
         {/* Row 4: Suburb */}
         <div className="flex flex-col gap-2">
-          <label className="text-xs font-bold text-[#021F44] uppercase tracking-wider flex items-center gap-1.5">
-            <MapPin className="w-4 h-4 text-[#0781B2]" />
+          <label className="text-xs font-bold text-[#1E40AF] uppercase tracking-wider flex items-center gap-1.5">
+            <MapPin className="w-4 h-4 text-[#0EA5E9]" />
             <span>Your Suburb (KL & Selangor)</span>
           </label>
           <select
             {...register("location")}
-            className="w-full bg-slate-50 text-[#021F44] font-semibold text-sm py-3.5 px-4 rounded-xl border border-slate-100 outline-none focus:border-[#0781B2] focus:bg-white transition-all cursor-pointer"
+            className="w-full bg-slate-50 text-[#1E40AF] font-semibold text-sm py-3.5 px-4 rounded-xl border border-slate-100 outline-none focus:border-[#0EA5E9] focus:bg-white transition-all cursor-pointer"
           >
             <option value="" disabled>Select your suburb...</option>
             {siteConfig.areas.map((area) => (
@@ -199,14 +199,14 @@ export function BookingForm() {
 
         {/* Row 5: Date */}
         <div className="flex flex-col gap-2">
-          <label className="text-xs font-bold text-[#021F44] uppercase tracking-wider flex items-center gap-1.5">
-            <Calendar className="w-4 h-4 text-[#0781B2]" />
+          <label className="text-xs font-bold text-[#1E40AF] uppercase tracking-wider flex items-center gap-1.5">
+            <Calendar className="w-4 h-4 text-[#0EA5E9]" />
             <span>Preferred Service Date</span>
           </label>
           <input
             {...register("date")}
             type="date"
-            className="w-full bg-slate-50 text-[#021F44] font-semibold text-sm py-3.5 px-4 rounded-xl border border-slate-100 outline-none focus:border-[#0781B2] focus:bg-white transition-all cursor-pointer"
+            className="w-full bg-slate-50 text-[#1E40AF] font-semibold text-sm py-3.5 px-4 rounded-xl border border-slate-100 outline-none focus:border-[#0EA5E9] focus:bg-white transition-all cursor-pointer"
           />
           {errors.date && (
             <span className="text-xs text-rose-500 font-bold">{errors.date.message}</span>
@@ -215,15 +215,15 @@ export function BookingForm() {
 
         {/* Row 6: Details */}
         <div className="flex flex-col gap-2">
-          <label className="text-xs font-bold text-[#021F44] uppercase tracking-wider flex items-center gap-1.5">
-            <FileText className="w-4 h-4 text-[#0781B2]" />
+          <label className="text-xs font-bold text-[#1E40AF] uppercase tracking-wider flex items-center gap-1.5">
+            <FileText className="w-4 h-4 text-[#0EA5E9]" />
             <span>Additional Details / Specific Problems</span>
           </label>
           <textarea
             {...register("details")}
             rows={4}
             placeholder="Describe the issues (e.g. wall size for painting, leakage details, lock brand, TV weight)..."
-            className="w-full bg-slate-50 text-[#021F44] font-semibold text-xs sm:text-sm py-3.5 px-4 rounded-xl border border-slate-100 outline-none focus:border-[#0781B2] focus:bg-white transition-all resize-none"
+            className="w-full bg-slate-50 text-[#1E40AF] font-semibold text-xs sm:text-sm py-3.5 px-4 rounded-xl border border-slate-100 outline-none focus:border-[#0EA5E9] focus:bg-white transition-all resize-none"
           />
         </div>
 
@@ -231,7 +231,7 @@ export function BookingForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-[#0781B2] hover:bg-[#021F44] text-white font-extrabold text-base py-4 rounded-xl transition-all duration-200 shadow-sm flex items-center justify-center gap-2 mt-2 cursor-pointer disabled:bg-slate-300 disabled:cursor-not-allowed"
+          className="w-full bg-[#0EA5E9] hover:bg-[#1E40AF] text-white font-extrabold text-base py-4 rounded-xl transition-all duration-200 shadow-sm flex items-center justify-center gap-2 mt-2 cursor-pointer disabled:bg-slate-300 disabled:cursor-not-allowed"
         >
           {isSubmitting ? "Compiling booking..." : "Submit Booking Request & Open WhatsApp"}
         </button>

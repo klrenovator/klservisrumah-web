@@ -35,13 +35,13 @@ export function BeforeAfter() {
         
         {/* Header */}
         <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-bold text-[#0781B2] tracking-widest uppercase bg-[#D2DEE7]/30 px-4 py-1.5 rounded-full">
+          <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#DBEAFE]/30 px-4 py-1.5 rounded-full">
             Real Transformations
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#021F44] tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1E40AF] tracking-tight">
             Before & After Quality Proofs
           </h2>
-          <p className="text-base text-[#4A607C] leading-relaxed">
+          <p className="text-base text-[#475569] leading-relaxed">
             See the exact results of our professional workmanship. Real projects completed in Kuala Lumpur & Selangor.
           </p>
         </div>
@@ -54,15 +54,15 @@ export function BeforeAfter() {
                 
                 {/* Badge tags */}
                 <div className="flex items-center justify-between gap-2 mb-5">
-                  <span className="text-[10px] font-bold text-[#0781B2] bg-[#0781B2]/10 px-3 py-1 rounded-full uppercase tracking-wider">
+                  <span className="text-[10px] font-bold text-[#0EA5E9] bg-[#0EA5E9]/10 px-3 py-1 rounded-full uppercase tracking-wider">
                     {item.service}
                   </span>
-                  <span className="text-xs font-semibold text-[#4A607C]">
+                  <span className="text-xs font-semibold text-[#475569]">
                     📍 {item.location}
                   </span>
                 </div>
 
-                <h3 className="text-base font-bold text-[#021F44] tracking-tight leading-snug mb-4">
+                <h3 className="text-base font-bold text-[#1E40AF] tracking-tight leading-snug mb-4">
                   {item.title}
                 </h3>
 
@@ -73,7 +73,7 @@ export function BeforeAfter() {
                       <AlertCircle className="w-4 h-4" />
                       <span className="text-xs font-bold uppercase tracking-wider">The Problem</span>
                     </div>
-                    <p className="text-xs text-[#4A607C] leading-relaxed font-semibold">
+                    <p className="text-xs text-[#475569] leading-relaxed font-semibold">
                       {item.before}
                     </p>
                   </div>
@@ -83,7 +83,7 @@ export function BeforeAfter() {
                       <CheckCircle2 className="w-4 h-4" />
                       <span className="text-xs font-bold uppercase tracking-wider">The Result</span>
                     </div>
-                    <p className="text-xs text-[#4A607C] leading-relaxed font-semibold">
+                    <p className="text-xs text-[#475569] leading-relaxed font-semibold">
                       {item.after}
                     </p>
                   </div>
@@ -92,9 +92,9 @@ export function BeforeAfter() {
               </div>
 
               {/* Bottom benefits */}
-              <div className="mt-5 pt-4 border-t border-slate-50 text-[11px] font-bold text-[#021F44] flex items-center justify-between">
+              <div className="mt-5 pt-4 border-t border-slate-50 text-[11px] font-bold text-[#1E40AF] flex items-center justify-between">
                 <span>Key Benefit:</span>
-                <span className="text-[#0781B2] bg-[#D2DEE7]/25 px-2.5 py-1 rounded-md">{item.benefit}</span>
+                <span className="text-[#0EA5E9] bg-[#DBEAFE]/25 px-2.5 py-1 rounded-md">{item.benefit}</span>
               </div>
 
             </div>

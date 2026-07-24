@@ -1,0 +1,12 @@
+{
+  "name": "KL Servis Rumah",
+  "url": "https://www.klservisrumah.my",
+  "phone": "+601116627349",
+  "whatsapp": "601116627349",
+  "country": "MY",
+  "region": "Kuala Lumpur and Selangor",
+  "services": ["painting", "plumbing", "ceiling", "waterproofing", "handyman"],
+  "pricingPrinciple": "standard Malaysian market rate, confirmed before work begins",
+  "hours": "Mon-Sun 9:00 AM - 6:00 PM",
+  "languages": ["en-MY", "ms-MY", "zh-MY"]
+}

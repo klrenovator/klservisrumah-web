@@ -5,18 +5,18 @@ import { getFAQSchema } from "@/lib/seo";
 
 export const metadata = {
   title: "Frequently Asked Questions — Helpdesk Support",
-  description: "Get answers to pricing, warranties, SSM compliance, areas served, and work preps for KL Servis Rumah painting, plumbing, ceiling, and waterproofing."
+  description: "Get answers to pricing, warranties, insured operations, areas served, and work prep for KL Servis Rumah painting, plumbing, ceiling, and waterproofing."
 };
 
 export default function FAQPage() {
   const faqs = [
     {
       q: "What is your starting price for your home services?",
-      a: "Our minor handyman jobs start from RM 80, basic plumbing repairs from RM 120, plaster ceiling repair from RM 180, and single room painting from RM 350. Every quote we issue is fixed and itemized before any actual work is commenced, so there are absolutely no hidden fees."
+      a: "Our minor handyman jobs start from RM 80, basic plumbing repairs from RM 120, plaster ceiling repair from RM 180, and single room painting from RM 400. Every quote we issue is fixed and itemized before any actual work is commenced, so there are absolutely no hidden fees."
     },
     {
-      q: "Are you a registered company in Malaysia?",
-      a: "Yes, we are a fully registered and legal business operated directly under our parent company Multicore Dynamics Resources (SSM Registration Number: 202503227236 (003765188-T)). All payments are made legally to our corporate banking accounts, and we issue official invoices/receipts."
+      q: "Are you an established local company in Malaysia?",
+      a: "Yes. KL Servis Rumah is operated by an established local company with fully insured operations, transparent quotations, official invoices, and background-verified tradesmen."
     },
     {
       q: "Do you offer warranties on your services?",

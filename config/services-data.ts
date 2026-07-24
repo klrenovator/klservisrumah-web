@@ -28,10 +28,10 @@ export const servicesData: Record<string, ServiceDetail> = {
   "painting": {
     slug: "painting",
     title: "Premium Painting Services",
-    tagline: "Professional interior & exterior painting for residential and commercial spaces. Smooth finish, premium paints, zero-mess protection. From RM 350.",
+    tagline: "Professional interior & exterior painting for residential and commercial spaces. Smooth finish, premium paints, zero-mess protection. From RM 400.",
     description:
       "KL Servis Rumah provides high-end painting services across Kuala Lumpur and Selangor. Our professional painters specialize in interior wall painting, exterior weatherproof coating, ceiling restoration, and commercial shopfront branding. We use only premium paint brands like Nippon Paint and Dulux to ensure long-lasting durability, exceptional depth of color, and high scrub resistance. Before applying a single drop of paint, our team undergoes extensive preparation work, including filling wall cracks, treating water marks, sanding surfaces to a perfectly smooth finish, and sealing damp masonry. We protect your home, furniture, and flooring completely using heavy-duty plastic drop sheets and specialized masking tapes, guaranteeing a zero-mess handover. Let our certified painters revitalize your home or commercial office with a modern, flawless aesthetic that adds real value to your property.",
-    startPrice: "RM 350",
+    startPrice: "RM 400",
     icon: "paint-brush",
     highlights: [
       "Use of premium genuine paints (Nippon Paint, Dulux, Jotun) based on your budget",
@@ -42,7 +42,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       "Professional, background-checked local Malaysian painters with high attention to detail"
     ],
     subServices: [
-      { name: "Interior House Painting", price: "From RM 350 / room", desc: "Premium interior wall painting with low-odor, low-VOC washable paint." },
+      { name: "Interior House Painting", price: "From RM 400 / room", desc: "Premium interior wall painting with low-odor, low-VOC washable paint." },
       { name: "Exterior House Painting", price: "From RM 1,800", desc: "Weatherproof, anti-fungal, and UV-resistant exterior coatings for ultimate protection." },
       { name: "Commercial & Office Painting", price: "On Quote", desc: "Corporate office layouts, shopfronts, and retail spaces painted on tight schedules with minimal business disruption." },
       { name: "Wall Crack & Moisture Repair", price: "From RM 150", desc: "Sanding, skimming, structural crack filling, and applying premium moisture sealer primers." }
@@ -63,7 +63,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     heroImage: "/projects/painting-hero.webp",
     metaTitle: "Premium House Painting Services Kuala Lumpur & Selangor",
     metaDesc: "Professional house painting services in KL & Selangor by KL Servis Rumah. Elegant interior/exterior painting using Nippon Paint & Dulux. Get your free quote today!",
-    aioSummary: "KL Servis Rumah provides high-end interior, exterior, and commercial painting services in KL & Selangor. Using premium paints (Nippon, Dulux) with strict wall prepping (skimming, sealant). From RM350/room with zero mess and warranty.",
+    aioSummary: "KL Servis Rumah provides high-end interior, exterior, and commercial painting services in KL & Selangor. Using premium paints (Nippon, Dulux) with strict wall prepping (skimming, sealant). From RM400/room with zero mess and warranty.",
     warranty: "1-Year Paint Peeling & Craftsmanship Guarantee"
   },
 

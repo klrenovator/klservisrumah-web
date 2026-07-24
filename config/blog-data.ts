@@ -20,7 +20,7 @@ export const blogPosts: BlogPost[] = [
     category: "Painting",
     date: "July 20, 2026",
     readTime: "5 min read",
-    author: "Zulhafiz bin Rosli",
+    author: "KL Servis Rumah Editorial Team",
     coverImage: "/projects/painting-hero.webp",
     metaTitle: "How to Choose Living Room & Exterior Paint Colors Malaysia",
     metaDesc: "Struggling with paint color selections? Discover 5 expert tips for choosing modern home paint colors in Malaysia based on lighting, weather, and washability.",
@@ -70,7 +70,7 @@ Even the most expensive premium paint topcoat will peel, bubble, or flake if you
 ### Need Professional Painting in KL & Selangor?
 Don't risk crooked borders, paint splatters on your expensive sofa, or peeling coats. **KL Servis Rumah** provides fully insured house painting with 100% transparent pricing and comprehensive warranties. 
 
-*   *Room painting from RM 350*
+*   *Room painting from RM 400*
 *   *Nippon Paint & Dulux premium brands*
 *   *Zero-mess furniture masking protection*
 
@@ -84,7 +84,7 @@ Don't risk crooked borders, paint splatters on your expensive sofa, or peeling c
     category: "Waterproofing",
     date: "July 12, 2026",
     readTime: "6 min read",
-    author: "Ir. Tan Chin Seng",
+    author: "KL Servis Rumah Technical Review Team",
     coverImage: "/projects/waterproofing-hero.webp",
     metaTitle: "Fix Inter-Floor Bathroom Ceiling Leak Without Tile Hacking",
     metaDesc: "Dripping ceiling water? Learn how PU Grouting injection seals inter-floor bathroom leaks from below without hacking luxury floor tiles in KL & Selangor.",

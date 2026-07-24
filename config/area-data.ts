@@ -25,7 +25,7 @@ export const areaPages: AreaDetail[] = [
     landmarks: ["KLCC Petronas Towers", "Bukit Bintang", "Mont Kiara", "Bangsar", "KL Sentral", "Sentul", "Cheras", "Kepong"],
     description: "KL Servis Rumah sends expert, background-checked craftsmen across the federal territory of Kuala Lumpur. Whether you are living in a high-rise condominium in Mont Kiara, Bangsar, or KLCC, or managing a shoplot or terrace house in Cheras, Sentul, or Kepong, we deliver premium home maintenance services. Our technical teams specialize in premium interior house painting with Nippon Paint, non-destructive water leak detection and repair, plaster ceiling fixes with seamless skim-coating, high-pressure PU grouting for bathroom leakage, and professional TV mounting and furniture assembly. We follow strict JMB regulations, clean up entirely post-work, and guarantee 100% transparent pricing before any work begins.",
     metaTitle: "Expert Home Services Kuala Lumpur — KL Servis Rumah",
-    metaDesc: "Premium painting, plumbing, plaster ceiling, waterproofing, and handyman services in Kuala Lumpur. Same-day available. Clean, reliable, and SSM-registered.",
+    metaDesc: "Premium painting, plumbing, plaster ceiling, waterproofing, and handyman services in Kuala Lumpur. Same-day available. Clean, reliable, and insured.",
     faqs: [
       { q: "Do you service high-rise condos and offices in Kuala Lumpur?", a: "Yes! KL Servis Rumah regularly handles projects in high-rise residences and offices in Mont Kiara, Bangsar, KLCC, and Bukit Bintang. We coordinate with building security, comply with management work hours, and carry liability insurance." },
       { q: "What is your call-out response time for emergency plumbing in KL?", a: "For critical plumbing leaks, flooding, or broken lines in Kuala Lumpur, we dispatch the nearest technician immediately. Our average arrival time is 30 to 60 minutes." },
@@ -46,7 +46,7 @@ export const areaPages: AreaDetail[] = [
     metaDesc: "Need painting, plumbing, ceiling, waterproofing, or handyman repairs in PJ? KL Servis Rumah delivers tidy, certified tradesmen with upfront pricing.",
     faqs: [
       { q: "Do you cover all areas of Petaling Jaya?", a: "Yes, we serve the entire PJ district including SS2, Section 14, Damansara Utama, Damansara Jaya, Kota Damansara, Ara Damansara, Kelana Jaya, and PJ Old Town." },
-      { q: "How much does painting cost for a single room in PJ?", a: "Our premium interior room painting starts from RM 350, including minor wall patching, sanding, and two coats of premium Nippon or Dulux washable paint." },
+      { q: "How much does painting cost for a single room in PJ?", a: "Our premium interior room painting starts from RM 400, including minor wall patching, sanding, and two coats of premium Nippon or Dulux washable paint." },
       { q: "Can you fix a leaking ceiling in my Petaling Jaya double-storey terrace?", a: "Yes! We conduct non-hacking PU grouting on upper floor bathrooms to seal the concrete slab leak, and then replace and skim-coat any water-damaged plasterboard on the lower floor ceiling." }
     ]
   },

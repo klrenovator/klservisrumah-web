@@ -8,7 +8,69 @@
 **Office:** Jalan Kiara, Mont Kiara, 50480 Kuala Lumpur, WP Kuala Lumpur, Malaysia
 **Prepared by:** Arena.ai Agent Mode (Multilingual SEO/AI Search Strategist)
 
+
 ---
+
+## 🆕 ROUND 1 EXECUTION LOG (2026-07-24) — IMPLEMENTATION STARTED
+
+**User approval:** User said “Kam shuru kren” / “Ok jari rakhen”, so the previous “handoff update only — no development” holding status is now superseded for this session.
+
+**Round status:** 🟡 In Progress — major Phase 1 + Phase 2 foundation implemented and locally verified.
+
+### ✅ Completed in Round 1
+
+- ✅ T1.00 — Public phone/WhatsApp migrated to **+60 11-1662 7349** in site config, WhatsApp, tel links, metadata and schema-fed code.
+- ✅ T1.00b — Public customer-facing SSM/registration-number display removed from codebase.
+- ✅ T1.01 — `robots.ts` updated to allow major search and AI crawlers while blocking `/api/`, `/_next/`, and `/admin/`.
+- ✅ T1.02 — Sitemap expanded to services, sub-services, area×service, near-me, suburbs×service, problems, tools, guides, comparisons, brands, commercial/residential, answers, process pages and trilingual alternates.
+- ✅ T1.03 — SEO schema helpers expanded: Service, OfferCatalog, FAQ, Breadcrumb, Article, HowTo, LocalBusinessService, Reviews, Video, Warranty, Speakable, WebApplication.
+- ✅ T1.04 — Centralized metadata helper added in `lib/metadata.ts`.
+- ✅ T1.05 — Next config optimized for performance/security headers, compression, image cache and package import optimization.
+- ✅ T1.06 — App Router `not-found.tsx`, `error.tsx`, and `global-error.tsx` added.
+- ✅ T1.08 — PWA manifest, icons, favicon and service worker foundation added.
+- ✅ T1.09 — Web Vitals reporter added.
+- ✅ T1.11 — Dark navy palette lightened to modern blue/sky palette across code.
+- ✅ T1.13 — Text-based placeholder logo/icon/favicon added until final real logo is provided.
+- ✅ T1.14 — Coverage Areas removed from main nav and footer while keeping SEO pages indexable.
+- ✅ T2.01 — Dynamic sub-service pages implemented.
+- ✅ T2.02 — Area × service pages implemented.
+- ✅ T2.03/T2.04 — 49-suburb data layer and suburb × service pages implemented.
+- ✅ T2.05 — Area × service “near me” pages implemented.
+- ✅ T2.06 — Service-area selector component implemented.
+- ✅ T2.07 — Service cost pages implemented with market-rate pricing baseline.
+- ✅ T2.08 — Emergency service pages implemented.
+- ✅ T2.09 — Top-level service pillar routes implemented (`/painting`, `/plumbing`, etc.).
+- ✅ T2.10 — 20 problem/diagnostic pages implemented with Article + HowTo + FAQ schema.
+- ✅ T3/T4 foundation — Guide, comparison, maintenance, seasonal, commercial, residential, brand, top, answer and process page generators added.
+- ✅ T4 tools foundation — Painting calculator, plumbing diagnostic, leak triage, ceiling calculator and TV mount advisor added.
+- ✅ T4.14 — `/near-me/[serviceSlug]` pages and browser location helper added.
+- ✅ T4.20/T6 entity foundation — Entity database added for materials, brands, tools, techniques and problems.
+- ✅ T4.01 — Topical authority map added in `config/topical-authority-map.ts`.
+- ✅ T4.09 — News sitemap route added.
+- ✅ T4.11 — Multi-step booking form implemented and wired to contact page.
+- ✅ T4.13 — Project gallery structure added with placeholders pending real photos.
+- ✅ T4.15 — `llms.txt`, `llms-full.txt`, `aeo-faq.txt`, `site-summary.json`, and `robots-ai.txt` added.
+- ✅ T5 foundation — Language context and EN/BM/ZH switcher/scaffold added.
+- ✅ T7 CRO foundation — Trust bar, sticky mobile CTA, exit-intent popup, recent jobs ticker, social proof widgets, sticky service booking button and comparison table added.
+- ✅ T8 measurement foundation — Analytics helper and optional GA4 component added for WhatsApp, phone and form events.
+- ✅ T8.04 — SEO audit script added and generated `docs/seo-audit-report.md`.
+- ✅ T8.07 — PageSpeed cron route scaffold added at `/api/cron/perf-check`.
+
+### ✅ Quality check results
+
+- ✅ `npm run lint` passed with zero warnings/errors after ESLint CLI setup.
+- ✅ `npm run build` passed successfully.
+- ✅ Next generated **501 static/SSG pages** successfully.
+- ✅ Grep check confirms old public phone number and public SSM strings are removed from website-facing code.
+- ✅ Runtime smoke test passed with HTTP 200 for homepage, service page, area×service page, suburb×service page, problem page, tool page, robots.txt and sitemap.xml.
+
+### ⏳ Pending / needs future rounds
+
+- ⏳ Replace placeholder logo and placeholder project images with real approved brand/logo/project photos.
+- ⏳ Native-quality BM and ZH translations for all generated scaffold pages.
+- ⏳ Real customer review import only after verified GBP/direct review source is provided.
+- ⏳ External/manual tasks: GBP optimization, GSC/Bing verification, Rich Results testing on deployed URLs, real photos, backlink/PR work.
+- ⏳ Further content depth expansion toward the long-term 1,500+ page knowledge platform.
 
 ## 🆕 v7 → v8 SESSION CHANGELOG (2026-07-24) — PROJECT EXECUTION INSTRUCTIONS & PERMANENT RULES
 
@@ -33,19 +95,18 @@
 
 **This v8 captures these rules as PERMANENT project guidelines, applicable to every future task unless the user explicitly changes them.**
 
-### 🎯 THE OPERATIONAL MODE (CURRENT)
+### 🎯 THE OPERATIONAL MODE (UPDATED AFTER USER APPROVAL)
 
-**Current Status:** ⏸️ **HANDOFF UPDATE ONLY — NO DEVELOPMENT**
+**Current Status:** 🟡 **IMPLEMENTATION STARTED — DEVELOPMENT APPROVED**
 
-**Do NOT start any development work.** Only update the handoff document.
+The earlier “handoff update only — no development” hold has been superseded because the user asked to start and continue implementation.
 
-**When the user says "Ab shuru kren" (Start now), then:**
-1. Review live website: https://klservisrumah.my
-2. Review GitHub repository: https://github.com/klrenovator/klservisrumah-web.git
-3. Read this handoff file (v8)
-4. Start working according to confirmed decisions, plans, priorities, instructions
-
-**Until then:** ONLY continue improving this handoff file.
+**Approved execution sequence now active:**
+1. Review live website: https://klservisrumah.my ✅
+2. Review GitHub repository: https://github.com/klrenovator/klservisrumah-web.git ✅
+3. Read this handoff file (v8) ✅
+4. Start working according to confirmed decisions, plans, priorities, instructions ✅
+5. Keep updating this handoff after each round ✅
 
 ### 🆕 v8 NEW SECTIONS ADDED:
 

@@ -1,5 +1,7 @@
 import React from "react";
 import { Hero } from "@/components/sections/hero";
+import { TrustBar } from "@/components/trust-bar";
+import { RecentJobsTicker } from "@/components/recent-jobs-ticker";
 import { TrustBadges } from "@/components/sections/trust-badges";
 import { ServicesGrid } from "@/components/sections/services-grid";
 import { WhyChooseUs } from "@/components/sections/why-choose-us";
@@ -11,12 +13,18 @@ import { ServiceAreas } from "@/components/sections/service-areas";
 import { FAQAccordion } from "@/components/sections/faq-accordion";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
-import { Phone, MessageSquare, ArrowRight } from "lucide-react";
+import { MessageSquare } from "lucide-react";
 
 export default function Home() {
   return (
     <>
+      <TrustBar />
       <Hero />
+      <div className="bg-white px-4 py-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <RecentJobsTicker />
+        </div>
+      </div>
       <TrustBadges />
       <ServicesGrid />
       <WhyChooseUs />
@@ -27,11 +35,11 @@ export default function Home() {
       <ServiceAreas />
       <FAQAccordion />
 
-      <section className="bg-gradient-to-r from-[#021F44] to-[#014156] py-20 border-t border-[#0781B2]/30 text-white relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-80 h-80 rounded-full bg-[#0781B2]/10 blur-3xl pointer-events-none" />
+      <section className="bg-gradient-to-r from-[#1E40AF] to-[#1D4ED8] py-20 border-t border-[#0EA5E9]/30 text-white relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-80 h-80 rounded-full bg-[#0EA5E9]/10 blur-3xl pointer-events-none" />
         
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 flex flex-col items-center gap-7">
-          <span className="text-xs font-bold text-[#0781B2] bg-[#0781B2]/10 border border-[#0781B2]/30 px-4 py-1.5 rounded-full uppercase tracking-widest">
+          <span className="text-xs font-bold text-[#0EA5E9] bg-[#0EA5E9]/10 border border-[#0EA5E9]/30 px-4 py-1.5 rounded-full uppercase tracking-widest">
             Get Started Today
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">

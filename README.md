@@ -55,7 +55,7 @@ npm run build
 The website incorporates a structured folder architecture to make expanding pages and adding new services incredibly seamless:
 
 - `/` — Premium high-converting homepage (Hero, Trust Badges, Services, Testimonials, FAQS, local service areas).
-- `/about` — Detailed portfolio showcasing legal parent company **Multicore Dynamics Resources**, SSM credentials, and mission.
+- `/about` — Detailed portfolio showcasing legal parent company **Multicore Dynamics Resources**, service standards, and mission.
 - `/services` — General services directory directory.
 - `/services/[slug]` — Dynamic, rich service details pages for:
   - `painting` (House, Interior, Exterior Painting)
@@ -78,7 +78,7 @@ KL Servis Rumah is built with complete, industry-leading SEO integration from da
 
 1.  **Technical SEO**: 100% pre-rendered static routes (SSG) for instantaneous load times (PageSpeed target: 95-100).
 2.  **Semantic Schema**: Structured JSON-LD blocks injected programmatically:
-    - *Organization Schema* (Legal Parent, SSM, contacts)
+    - *Organization Schema* (brand, contacts, areas served)
     - *LocalBusiness Schema* (Geo coordinates, hours)
     - *Service Schema* (Starting prices, availability, guarantees)
     - *FAQ Schema* (Structured question accordions for PPA ranking)
@@ -104,6 +104,5 @@ The project is pre-optimized for continuous zero-downtime integration on Vercel:
 ## 📝 Legal Info
 
 - **Parent Entity**: Multicore Dynamics Resources
-- **SSM Registration**: 202503227236 (003765188-T)
 - **Email Contact**: info@klservisrumah.my
-- **Direct Dispatch Helpline**: +60 18-298 3573
+- **Direct Dispatch Helpline**: +60 11-1662 7349
