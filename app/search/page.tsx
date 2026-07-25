@@ -7,22 +7,18 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { servicesData } from "@/config/services-data";
 import { areaPages } from "@/config/area-data";
 import { getBreadcrumbSchema } from "@/lib/seo";
+import { buildMetadata } from "@/lib/seo-meta";
 
 export const metadata: Metadata = {
-  title: "Search KL Servis Rumah — Services, Areas, Problems, Guides",
-  description:
-    "Search KL Servis Rumah for home services, coverage areas, common problems, guides and pricing across Kuala Lumpur & Selangor. Instant on-page results, no login needed.",
-  alternates: {
-    canonical: "/search",
-    languages: {
-      "en-MY": "/search",
-      "ms-MY": "/ms/search",
-      "zh-MY": "/zh/search",
-      "x-default": "/search"
-    }
-  },
+  ...buildMetadata({
+    title: "Search — Services, Areas, Problems & Guides",
+    description:
+      "Search KL Servis Rumah for home services, coverage areas, common problems, guides and pricing across Kuala Lumpur and Selangor.",
+    path: "/search"
+  }),
   robots: {
-    // Not indexable: this is a utility page powered by client-side filtering.
+    // Utility page powered by client-side filtering — indexing it would create
+    // thin, near-duplicate results pages. Links are still followed.
     index: false,
     follow: true
   }

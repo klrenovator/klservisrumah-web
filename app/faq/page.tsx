@@ -1,49 +1,25 @@
 import React from "react";
+import { buildMetadata } from "@/lib/seo-meta";
 import type { Metadata } from "next";
 import { FAQAccordion } from "@/components/sections/faq-accordion";
+import { FaqHeroHeading } from "@/components/sections/faq-hero-heading";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { getFAQSchema, getBreadcrumbSchema, getSpeakableSchema } from "@/lib/seo";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
-import { Phone, MessageSquare, HelpCircle } from "lucide-react";
+import { Phone, MessageSquare } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "FAQ — Home Services in KL & Selangor | KL Servis Rumah",
+export const metadata: Metadata = buildMetadata({
+  title: "FAQ — Home Services in KL & Selangor",
   description:
-    "Answers to pricing, warranties, insured operations, areas served, same-day booking and work prep for painting, plumbing, ceiling, waterproofing & handyman services in KL & Selangor.",
+    "Answers on pricing, warranty, insurance, coverage areas, same-day booking and job preparation for painting, plumbing, ceiling and handyman work.",
+  path: "/faq",
   keywords: [
     "home services FAQ Malaysia",
-    "painting warranty KL",
-    "plumbing FAQ Selangor",
-    "handyman prices Malaysia",
-    "waterproofing warranty KL",
-    "same-day service KL"
-  ],
-  alternates: {
-    canonical: "/faq",
-    languages: {
-      "en-MY": "/faq",
-      "ms-MY": "/ms/faq",
-      "zh-MY": "/zh/faq",
-      "x-default": "/faq"
-    }
-  },
-  openGraph: {
-    title: "FAQ — KL Servis Rumah Home Services",
-    description:
-      "Everything you need to know about pricing, warranty, booking, and materials for KL Servis Rumah home services.",
-    url: "https://www.klservisrumah.my/faq",
-    siteName: "KL Servis Rumah",
-    type: "website",
-    locale: "en_MY"
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "FAQ — KL Servis Rumah",
-    description:
-      "Answers on pricing, warranty, booking and materials for painting, plumbing, ceiling, waterproofing & handyman services in KL & Selangor."
-  }
-};
+    "handyman questions KL",
+    "painting cost FAQ Selangor"
+  ]
+});
 
 export default function FAQPage() {
   const faqs = [
@@ -88,17 +64,8 @@ export default function FAQPage() {
       {/* Hero Section — matches klrenovator.com FAQ page */}
       <section className="bg-gradient-to-b from-[#F8FAFC] via-white to-white border-b border-slate-100 py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <FaqHeroHeading />
           <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto">
-            <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
-              <HelpCircle className="w-3.5 h-3.5 inline mr-1" />
-              Knowledge Base
-            </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#075985] tracking-tight">
-              Frequently Asked Questions
-            </h1>
-            <p className="text-base sm:text-lg text-[#475569] leading-relaxed max-w-2xl">
-              Honest answers about home services, pricing, warranty and coverage in KL & Selangor — all in one place.
-            </p>
             <div className="flex items-center gap-4 mt-2">
               <a
                 href={getWhatsAppLink()}

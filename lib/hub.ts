@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo-meta";
 import type { GenericContentPage } from "@/config/content-data";
 import { servicesData } from "@/config/services-data";
-import { siteConfig } from "@/config/site";
 import type { HubItem } from "@/components/content/content-hub-page";
 
 const baseUrl = "https://www.klservisrumah.my";
@@ -13,34 +13,9 @@ type HubMeta = {
 };
 
 export function getHubMetadata({ title, description, path }: HubMeta): Metadata {
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: path,
-      languages: {
-        "en-MY": path,
-        "ms-MY": `/ms${path}`,
-        "zh-MY": `/zh${path}`,
-        "x-default": path
-      }
-    },
-    openGraph: {
-      title,
-      description,
-      url: `${baseUrl}${path}`,
-      siteName: siteConfig.name,
-      images: [{ url: siteConfig.defaultOgImage, width: 1200, height: 630, alt: title }],
-      locale: "en_MY",
-      type: "website"
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      images: [siteConfig.defaultOgImage]
-    }
-  };
+  // Routed through the central builder so every hub gets a self-canonical,
+  // self-referencing hreflang and a length-clamped title/description.
+  return buildMetadata({ title, description, path });
 }
 
 export function genericToHubItems(pages: GenericContentPage[], basePath: string): HubItem[] {

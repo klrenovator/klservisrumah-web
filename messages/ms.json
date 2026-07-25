@@ -236,8 +236,8 @@
     "notFound": "Perkhidmatan tidak dijumpai.",
     "backToServices": "Kembali ke semua perkhidmatan",
     "directoryEyebrow": "28 Perkhidmatan • 3 Bahasa",
-    "directoryTitle1": "Setiap Perkhidmatan Rumah Yang Anda Perlukan.",
-    "directoryTitle2": "Semua Di Satu Tempat.",
+    "directoryTitle1": "Setiap Perkhidmatan Rumah Anda Perlukan",
+    "directoryTitle2": "di KL & Selangor",
     "directorySubtitle": "Daripada pengecatan dan paip kepada pengubahsuaian penuh, elektrik, pembersihan, dan keselamatan — temui harga pasaran, jaminan sebenar, dan ketersediaan hari yang sama di seluruh KL & Selangor.",
     "browseAll": "Semak Semua Perkhidmatan",
     "viewPricingGuide": "Lihat Panduan Harga",
@@ -245,7 +245,7 @@
     "guaranteeLabel": "Jaminan"
   },
   "contact": {
-    "pageTitle": "Hubungi & Tempahan",
+    "pageTitle": "Tempah Perkhidmatan Rumah di KL & Selangor",
     "pageSubtitle": "Tempah perkhidmatan rumah anda melalui WhatsApp untuk respons terpantas, atau isi borang dan kami akan membalas dalam masa satu jam.",
     "formHeading": "Hantar permintaan tempahan",
     "formSubheading": "Isi borang di bawah dan kami akan WhatsApp anda kembali dengan sebut harga terperinci dalam masa 60 minit semasa waktu operasi.",
@@ -294,7 +294,7 @@
     "dispatchNote": "Pengurus dispatch kami aktif di WhatsApp dari 9:00 PG hingga 6:00 PTG setiap hari (termasuk Sabtu dan Ahad) untuk penjadualan hari sama. Hantaran borang selepas 6:00 PTG diproses awal pagi berikutnya."
   },
   "pricing": {
-    "pageTitle": "Harga Kami",
+    "pageTitle": "Harga Perkhidmatan Rumah di KL & Selangor",
     "pageSubtitle": "Harga pasaran yang telus untuk semua perkhidmatan rumah di KL & Selangor. Tiada caj tersembunyi, tiada yuran mengejut.",
     "compareHeading": "Bandingkan harga perkhidmatan",
     "compareSubheading": "Harga sebelah-menyebelah untuk perkhidmatan kami yang paling diminta supaya anda boleh bajet sebelum membuat tempahan."
@@ -368,7 +368,10 @@
         "title": "Kebersihan Yang Teliti",
         "desc": "Kami menutup sempadan dan meletakkan kain penutup plastik tebal untuk menjamin kami meninggalkan hartanah anda sebersih semasa kami tiba."
       }
-    }
+    },
+    "heroEyebrow": "Tentang KL Servis Rumah",
+    "heroTitle": "Dibina atas kemahiran. Didorong oleh kepercayaan.",
+    "heroLead": "Bertahun-tahun kami menjadi rakan perkhidmatan rumah pilihan warga Kuala Lumpur dan Selangor apabila kualiti menjadi keutamaan. Daripada pengecatan dan kerja paip sehingga kalis air dan kerja tukang — kami menyiapkan kerja yang kemas dan teliti setiap kali."
   },
   "comparison": {
     "heading": "Bandingkan perkhidmatan",
@@ -657,5 +660,10 @@
     "bookingForm": "Borang tempahan",
     "guidanceIntro": "Rumah-rumah Malaysia menghadapi kelembapan tropika, kitaran hujan pantas, peraturan pengurusan kondo, dan bahan binaan campuran. Ini bermakna kaedah yang betul bergantung pada keadaan permukaan, akses, keperluan keselamatan, dan sama ada air atau pergerakan struktur terlibat.",
     "guidanceSafeApproach": "Pendekatan paling selamat ialah membuat senarai pendek kemungkinan punca, mengumpul foto yang jelas, mengesahkan jenis hartanah, dan meminta sebut harga terperinci mengikut kadar pasaran. KL Servis Rumah mengesahkan skop sebelum kerja bermula dan mengelakkan penetapan harga sewenang-wenangnya."
+  },
+  "faq": {
+    "heroEyebrow": "Pusat Pengetahuan",
+    "heroTitle": "Soalan Lazim Perkhidmatan Rumah KL & Selangor",
+    "heroLead": "Jawapan jujur tentang harga, jaminan, insurans dan liputan bagi kerja mengecat, paip, siling, kalis air dan tukang."
   }
 }

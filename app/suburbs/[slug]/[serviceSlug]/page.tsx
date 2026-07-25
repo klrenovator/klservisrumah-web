@@ -1,4 +1,5 @@
 import React from "react";
+import { buildMetadata } from "@/lib/seo-meta";
 import { notFound } from "next/navigation";
 import { suburbPages } from "@/config/suburb-data";
 import { servicesData } from "@/config/services-data";
@@ -15,11 +16,11 @@ export async function generateMetadata(props: { params: Promise<{ slug: string; 
   const suburb = suburbPages.find((item) => item.slug === slug);
   const service = servicesData[serviceSlug];
   if (!suburb || !service) return {};
-  return {
+  return buildMetadata({
     title: `${service.title} in ${suburb.name} — From ${service.startPrice}`,
     description: `${service.title} in ${suburb.name}. ${suburb.metaDesc}`,
-    alternates: { canonical: `/suburbs/${suburb.slug}/${service.slug}` }
-  };
+    path: `/suburbs/${suburb.slug}/${service.slug}`
+  });
 }
 
 export default async function SuburbServicePage(props: { params: Promise<{ slug: string; serviceSlug: string }> }) {

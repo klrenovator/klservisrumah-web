@@ -10,7 +10,8 @@ import { ServiceWorkerRegister } from "@/components/service-worker-register";
 import { GoogleAnalytics } from "@/components/analytics/google-analytics";
 import { DeferredWidgets } from "@/components/deferred-widgets";
 import { siteConfig } from "@/config/site";
-import { getOrganizationSchema, getLocalBusinessSchema, getWebsiteSchema, buildServiceAreaGeoCircle } from "@/lib/seo";
+import { getOrganizationSchema, getLocalBusinessSchema, getWebsiteSchema } from "@/lib/seo";
+import { optimizeTitle, optimizeDescription, buildAlternates } from "@/lib/seo-meta";
 
 export const viewport: Viewport = {
   themeColor: "#075985",
@@ -20,28 +21,25 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: {
-    default: `${siteConfig.name} — ${siteConfig.tagline}`,
-    template: `%s | ${siteConfig.name}`
-  },
-  description: siteConfig.metaDescription,
+  // NOTE: deliberately a plain string, NOT { default, template }.
+  // Pages append their own brand suffix via `lib/seo-meta.ts#optimizeTitle`, which
+  // guarantees exactly one brand mention within the 60-char SERP budget. A
+  // `template` here double-appended the brand on 26 pages and pushed 425 of 437
+  // titles past the truncation point.
+  title: optimizeTitle(`${siteConfig.name} — ${siteConfig.tagline}`, { appendBrand: false }),
+  description: optimizeDescription(siteConfig.metaDescription),
   metadataBase: new URL("https://www.klservisrumah.my"),
   manifest: "/manifest.json",
   verification: {
     google: "bXgZJKdBlDiVK9DsjNukmCqqicH37cqU_YdHSIVhjlg",
   },
-  alternates: {
-    canonical: "/",
-    languages: {
-      "en-MY": "/",
-      "ms-MY": "/ms",
-      "zh-MY": "/zh",
-      "x-default": "/"
-    }
-  },
+  // Self-referencing hreflang: all three languages are served from the same URL
+  // (client-side switch). The previous /ms and /zh targets 301-redirect back here,
+  // and Google discards hreflang clusters whose targets redirect.
+  alternates: buildAlternates("/"),
   openGraph: {
-    title: `${siteConfig.name} — ${siteConfig.tagline}`,
-    description: siteConfig.metaDescription,
+    title: optimizeTitle(`${siteConfig.name} — ${siteConfig.tagline}`, { appendBrand: false }),
+    description: optimizeDescription(siteConfig.metaDescription),
     url: "https://www.klservisrumah.my",
     siteName: siteConfig.name,
     images: [
@@ -58,8 +56,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} — ${siteConfig.tagline}`,
-    description: siteConfig.metaDescription,
+    title: optimizeTitle(`${siteConfig.name} — ${siteConfig.tagline}`, { appendBrand: false }),
+    description: optimizeDescription(siteConfig.metaDescription),
     images: [siteConfig.defaultOgImage]
   },
   robots: {

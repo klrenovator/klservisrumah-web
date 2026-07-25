@@ -1,4 +1,5 @@
 import React from "react";
+import { buildMetadata } from "@/lib/seo-meta";
 import { notFound } from "next/navigation";
 import { servicesData } from "@/config/services-data";
 import { clusterPages } from "@/config/content-data";
@@ -27,24 +28,20 @@ export async function generateMetadata(props: { params: Promise<{ slug: string; 
   const cluster = clusterPages.find((page) => page.relatedServiceSlug === params.slug && page.slug === params.subservice);
   if (!service) return {};
   if (cluster) {
-    return {
-      title: cluster.title,
-      description: cluster.intro,
-      alternates: { canonical: `/services/${service.slug}/${cluster.slug}` }
-    };
+    return buildMetadata({
+    title: cluster.title,
+    description: cluster.intro,
+    path: `/services/${service.slug}/${cluster.slug}`
+  });
   }
   if (!sub) return {};
-  return {
-    title: `${sub.name} in KL & Selangor — ${sub.price} | KL Servis Rumah`,
-    description: `${sub.name} by KL Servis Rumah. ${sub.desc} Transparent market-rate pricing starting ${sub.price}, insured team, and WhatsApp booking.`,
-    alternates: { canonical: `/services/${service.slug}/${params.subservice}` },
-    openGraph: {
-      title: `${sub.name} in KL & Selangor`,
-      description: sub.desc,
-      url: `https://www.klservisrumah.my/services/${service.slug}/${params.subservice}`,
-      type: "website"
-    }
-  };
+  return buildMetadata({
+    title: `${sub.name} in KL & Selangor — ${sub.price}`,
+    description: `${sub.desc} Market-rate pricing from ${sub.price}, insured team, and WhatsApp booking across Kuala Lumpur and Selangor.`,
+    path: `/services/${service.slug}/${params.subservice}`,
+    image: service.heroImage,
+    keywords: [sub.name, `${sub.name} KL`, `${sub.name} price`, service.title]
+  });
 }
 
 export default async function SubServicePage(props: { params: Promise<{ slug: string; subservice: string }> }) {

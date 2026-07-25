@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { siteConfig } from "@/config/site";
+import { buildAlternates } from "@/lib/seo-meta";
 import { ArrowRight, MessageSquare, Phone, Home } from "lucide-react";
 
 const supported = ["ms", "zh"] as const;
@@ -53,10 +54,14 @@ export async function generateMetadata(props: { params: Promise<{ lang: string; 
   const { lang } = await props.params;
   if (!supported.includes(lang as SupportedLocale)) return {};
   const info = labels[lang as SupportedLocale];
+  // These scaffold pages exist only so shared /ms and /zh links resolve; they
+  // auto-redirect to "/". They must be noindex AND canonical to "/" so they never
+  // compete with the homepage in the index.
   return {
     title: `${info.title} — ${siteConfig.name}`,
     description: info.notice,
-    alternates: { canonical: "/" }
+    robots: { index: false, follow: true },
+    alternates: buildAlternates("/")
   };
 }
 

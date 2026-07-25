@@ -76,9 +76,9 @@ const faqsByLang: Record<"en" | "ms" | "zh", Faq[]> = {
 };
 
 const headerCopy = {
-  en: { eyebrow: "Helpdesk Support", title: "Frequently Asked Questions", body: "Quick, honest, and comprehensive answers to our clients' most common questions. Pre-optimized for instant AI Overviews (AIO) and snippet placements." },
-  ms: { eyebrow: "Sokongan Helpdesk", title: "Soalan Lazim", body: "Jawapan pantas, jujur, dan komprehensif kepada soalan paling biasa daripada klien kami. Dioptimumkan lebih awal untuk AI Overview (AIO) segera dan penempatan snippet." },
-  zh: { eyebrow: "客服支持", title: "常见问题", body: "针对客户最常见问题的快速、诚实且全面的解答，已预先优化以便被 AI 摘要（AIO）与搜索片段收录。" }
+  en: { eyebrow: "Helpdesk Support", title: "Home Service Questions, Answered", body: "Straight answers on pricing, warranty, insurance, scheduling and site preparation — from the team that does the work." },
+  ms: { eyebrow: "Sokongan Helpdesk", title: "Soalan Perkhidmatan Rumah, Dijawab", body: "Jawapan jujur tentang harga, jaminan, insurans, penjadualan dan persediaan tapak — daripada pasukan yang melakukan kerja itu sendiri." },
+  zh: { eyebrow: "客服支持", title: "家居服务问题解答", body: "关于价格、保修、保险、排期与施工前准备的诚实解答——由实际施工团队提供。" }
 } as const;
 
 export function FAQAccordion() {

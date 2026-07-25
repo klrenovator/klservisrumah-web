@@ -1,4 +1,5 @@
 import React from "react";
+import { buildMetadata } from "@/lib/seo-meta";
 import { notFound } from "next/navigation";
 import { servicesData } from "@/config/services-data";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
@@ -24,9 +25,11 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   const service = servicesData[params.slug];
   if (!service) return {};
 
-  return {
+  return buildMetadata({
     title: service.metaTitle,
     description: service.metaDesc,
+    path: `/services/${service.slug}`,
+    image: service.heroImage,
     keywords: [
       service.title,
       `${service.title} KL`,
@@ -34,42 +37,9 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
       `${service.title} Selangor`,
       `${service.title} price`,
       `${service.title} cost`,
-      `${service.title} Malaysia`,
-      "home services Malaysia",
-      "KL Servis Rumah"
-    ],
-    alternates: {
-      canonical: `/services/${service.slug}`,
-      languages: {
-        "en-MY": `/services/${service.slug}`,
-        "ms-MY": `/ms/services/${service.slug}`,
-        "zh-MY": `/zh/services/${service.slug}`,
-        "x-default": `/services/${service.slug}`
-      }
-    },
-    openGraph: {
-      title: service.metaTitle,
-      description: service.metaDesc,
-      url: `https://www.klservisrumah.my/services/${service.slug}`,
-      type: "website",
-      siteName: "KL Servis Rumah",
-      locale: "en_MY",
-      images: [
-        {
-          url: service.heroImage,
-          width: 1200,
-          height: 630,
-          alt: service.title
-        }
-      ]
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: service.metaTitle,
-      description: service.metaDesc,
-      images: [service.heroImage]
-    }
-  };
+      "home services Malaysia"
+    ]
+  });
 }
 
 export default function ServiceSlugPage(props: { params: Promise<{ slug: string }> }) {

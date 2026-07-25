@@ -236,8 +236,8 @@
     "notFound": "Service not found.",
     "backToServices": "Back to all services",
     "directoryEyebrow": "28 Services • 3 Languages",
-    "directoryTitle1": "Every Home Service You Need.",
-    "directoryTitle2": "All in One Place.",
+    "directoryTitle1": "Every Home Service You Need",
+    "directoryTitle2": "in KL & Selangor",
     "directorySubtitle": "From painting and plumbing to full renovation, electrical, cleaning, and security — discover market-rate pricing, real warranties, and same-day availability across KL & Selangor.",
     "browseAll": "Browse All Services",
     "viewPricingGuide": "View Pricing Guide",
@@ -245,7 +245,7 @@
     "guaranteeLabel": "Guarantee"
   },
   "contact": {
-    "pageTitle": "Contact & Booking",
+    "pageTitle": "Book a Home Service in KL & Selangor",
     "pageSubtitle": "Book your home service via WhatsApp for the fastest response, or fill in the form and we will reply within an hour.",
     "formHeading": "Send us a booking request",
     "formSubheading": "Fill in the form below and we will WhatsApp you back with an itemized quote within 60 minutes during operating hours.",
@@ -294,7 +294,7 @@
     "dispatchNote": "Our dispatch managers are active on WhatsApp from 9:00 AM to 6:00 PM everyday (including Saturdays and Sundays) for same-day scheduling. Form submissions made after 6:00 PM are processed early the following morning."
   },
   "pricing": {
-    "pageTitle": "Our Pricing",
+    "pageTitle": "Home Services Pricing in KL & Selangor",
     "pageSubtitle": "Transparent, market-rate pricing for all home services across KL & Selangor. No hidden charges, no surprise fees.",
     "compareHeading": "Compare service pricing",
     "compareSubheading": "Side-by-side pricing for our most-requested services so you can budget before booking."
@@ -368,7 +368,10 @@
         "title": "Meticulous Cleanliness",
         "desc": "We mask borders and lay down thick plastic drop sheets to guarantee that we leave your property as spotless as we found it."
       }
-    }
+    },
+    "heroEyebrow": "About KL Servis Rumah",
+    "heroTitle": "Built on craft. Driven by trust.",
+    "heroLead": "For years we have been the home service partner Kuala Lumpur and Selangor turn to when quality matters. From painting and plumbing to waterproofing and handyman work — we deliver clean, careful work every visit."
   },
   "comparison": {
     "heading": "Compare services",
@@ -660,5 +663,10 @@
     "bookingForm": "Booking form",
     "guidanceIntro": "Malaysian homes face tropical humidity, fast rain cycles, condo management rules, and mixed construction materials. That means the right method depends on surface condition, access, safety requirements, and whether water or structural movement is involved.",
     "guidanceSafeApproach": "The safest approach is to shortlist the likely cause, collect clear photos, confirm the property type, and request an itemized market-rate quotation. KL Servis Rumah confirms scope before work begins and avoids arbitrary pricing."
+  },
+  "faq": {
+    "heroEyebrow": "Knowledge Base",
+    "heroTitle": "Home Service FAQs for KL & Selangor",
+    "heroLead": "Honest answers about pricing, warranty, insurance and coverage for painting, plumbing, ceiling, waterproofing and handyman work."
   }
 }

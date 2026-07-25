@@ -1,4 +1,5 @@
 import React from "react";
+import { buildMetadata } from "@/lib/seo-meta";
 import type { Metadata } from "next";
 import { MultiStepBookingForm } from "@/components/booking/multi-step-booking-form";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
@@ -9,42 +10,19 @@ import { getBreadcrumbSchema, getSpeakableSchema } from "@/lib/seo";
 
 const baseUrl = "https://www.klservisrumah.my";
 
-export const metadata: Metadata = {
-  title: "Book Professional Home Services in KL & Selangor — Contact Us",
+export const metadata: Metadata = buildMetadata({
+  title: "Contact & Booking — Home Services KL & Selangor",
   description:
-    "WhatsApp KL Servis Rumah for painting, plumbing, plaster ceiling, waterproofing & handyman services. Instant fixed quotes, same-day slots, insured & background-verified crew.",
+    "WhatsApp KL Servis Rumah for painting, plumbing, ceiling, waterproofing and handyman work. Fixed quotes, same-day slots, insured and verified crew.",
+  path: "/contact",
   keywords: [
     "contact KL Servis Rumah",
     "book home service KL",
     "home services WhatsApp Malaysia",
     "handyman booking KL",
     "plumber booking Selangor"
-  ],
-  alternates: {
-    canonical: "/contact",
-    languages: {
-      "en-MY": "/contact",
-      "ms-MY": "/ms/contact",
-      "zh-MY": "/zh/contact",
-      "x-default": "/contact"
-    }
-  },
-  openGraph: {
-    title: "Book KL Servis Rumah — Home Services KL & Selangor",
-    description:
-      "WhatsApp us for a fixed quote in 60 seconds. Painting, plumbing, ceiling, waterproofing, handyman & 20+ other home services across Klang Valley.",
-    url: `${baseUrl}/contact`,
-    siteName: "KL Servis Rumah",
-    type: "website",
-    locale: "en_MY"
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Book KL Servis Rumah — Home Services KL & Selangor",
-    description:
-      "WhatsApp us for a fixed quote in 60 seconds — painting, plumbing, waterproofing, handyman & more."
-  }
-};
+  ]
+});
 
 const contactPageSchema = {
   "@context": "https://schema.org",

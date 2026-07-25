@@ -30,7 +30,7 @@ export const extraBlogPosts: BlogPost[] = [
     excerpt: "Interior every 5–7 years, exterior every 4–6 years — here are the real signals that tell you it's time to repaint your Klang Valley home, plus a fair budget for each option.",
     category: "Painting",
     coverImage: "/hero-painting.svg",
-    metaTitle: "When to Repaint Your House in Malaysia — Signs, Cost, Frequency",
+    metaTitle: "When to Repaint Your House in Malaysia — Signs & Cost",
     metaDesc: "How often should you repaint interior and exterior walls in KL & Selangor? Signs it's time, honest budget ranges and paint brand advice from KL Servis Rumah.",
     content: `
 Deciding when to repaint your house in the Klang Valley isn't a matter of ticking off a calendar date — it's about reading the walls. Malaysia's tropical humidity, monsoon rain, west-facing sun and construction dust all attack paint differently.
@@ -162,7 +162,7 @@ If any of these are true, WhatsApp us the meter reading and a photo of the damp 
     excerpt: "Both are used interchangeably in KL — but they perform very differently under humidity, roof leaks and design. Here's the honest side-by-side.",
     category: "Ceiling",
     coverImage: "/hero-ceiling.svg",
-    metaTitle: "Gypsum vs Plaster Ceiling in Malaysia — Cost, Humidity, Design",
+    metaTitle: "Gypsum vs Plaster Ceiling Malaysia — Cost & Humidity",
     metaDesc: "Which ceiling material is right for your Malaysian home? A no-hype guide to gypsum vs plaster ceiling — humidity, cost, design flexibility and warranty.",
     content: `
 Ask five contractors in KL what the difference is between a "gypsum ceiling" and a "plaster ceiling", and you'll get five slightly different answers. That's because in Malaysian usage the terms overlap — but the *materials* underneath perform very differently.
@@ -559,7 +559,7 @@ Every KL Servis Rumah electrical job comes with a **12-month workmanship warrant
     excerpt: "SPC is trending, vinyl is affordable, laminate is classic — but they age very differently under Malaysian humidity. Here's the honest comparison.",
     category: "Flooring",
     coverImage: "/hero-flooring.svg",
-    metaTitle: "SPC vs Vinyl vs Laminate Flooring in Malaysia — Which to Choose",
+    metaTitle: "SPC vs Vinyl vs Laminate Flooring Malaysia — Compared",
     metaDesc: "SPC vs vinyl vs laminate flooring in Malaysian homes. Cost per sq ft, humidity resistance, installation and warranty from KL Servis Rumah.",
     content: `
 Choosing between SPC, vinyl and laminate flooring for a Malaysian home isn't just about the price sticker. Each material ages very differently under our tropical humidity, water splashes and 6-months-of-monsoon weather.
@@ -735,7 +735,7 @@ We usually come back with a same-day advisory and a slot for a paid inspection (
     excerpt: "Aluminium, solid plywood, MDF or 3G? Choosing the right kitchen cabinet material saves you RM 5k–RM 25k over 10 years — here's the honest breakdown.",
     category: "Renovation",
     coverImage: "/hero-kitchen-cabinet.svg",
-    metaTitle: "Kitchen Cabinet Materials in Malaysia — Aluminium, Plywood, MDF, 3G",
+    metaTitle: "Kitchen Cabinet Materials Malaysia — Which to Pick",
     metaDesc: "Choosing kitchen cabinet material in Malaysia: aluminium, marine plywood, MDF or 3G ceramic. Real cost, humidity performance and warranty from KL Servis Rumah.",
     content: `
 A Malaysian kitchen sees more humidity, hot pans and daily wear than almost any other room. Choose the wrong cabinet material and you're refacing doors within 5 years. Choose right and your kitchen looks fresh for 15+.
@@ -921,7 +921,7 @@ WhatsApp us to book — early September is the sweet spot.
     excerpt: "Samsung, Yale, Kaadas, Philips or Lockin? Here's how our locksmiths compare the top 5 smart locks sold in Malaysia — features, install, warranty, real-world reliability.",
     category: "Guide",
     coverImage: "/hero-locksmith.svg",
-    metaTitle: "Best Smart Lock Malaysia 2026 — Samsung, Yale, Kaadas Compared",
+    metaTitle: "Best Smart Lock Malaysia 2026 — Top Brands Compared",
     metaDesc: "Which smart lock is best for your Malaysian home in 2026? Compare Samsung, Yale, Kaadas, Philips & Lockin — real-world review from KL Servis Rumah locksmiths.",
     content: `
 Smart locks are now standard on new condo handovers and increasingly common on landed home upgrades in KL. But the market has 30+ brands — most of them cheap OEMs from the same 3 Chinese factories — and the wrong choice means a lock that fails in 18 months.
@@ -1104,7 +1104,7 @@ WhatsApp us a photo of your house exterior + a rough floor plan. We come back wi
     excerpt: "Swing arm vs sliding vs underground — which motor is right for your gate? Plus install cost, safety features and reliability tips.",
     category: "Guide",
     coverImage: "/hero-autogate.svg",
-    metaTitle: "Auto Gate Malaysia 2026 — Swing, Sliding, Underground Compared",
+    metaTitle: "Auto Gate Malaysia 2026 — Swing vs Sliding Compared",
     metaDesc: "Choosing an auto gate motor in Malaysia: swing arm vs sliding vs underground. Install cost, safety features, and top brands from KL Servis Rumah.",
     content: `
 Auto gate motors are one of the most common home upgrades in KL & Selangor — but choosing the wrong type can lead to years of nuisance. Here's how our KL Servis Rumah gate specialists guide clients.
@@ -1298,7 +1298,7 @@ WhatsApp us your unit address + a few photos of your worst walls. We'll come bac
     excerpt: "The biggest ripoff signals in Malaysian home services — from vague quotes to zero warranty — and the questions that force honest answers.",
     category: "Guide",
     coverImage: "/hero-renovation.svg",
-    metaTitle: "How to Hire an Honest Home Contractor in Malaysia — Red Flags",
+    metaTitle: "How to Hire an Honest Contractor in Malaysia",
     metaDesc: "Avoid renovation and repair scams in Malaysia. 10 red flags, 8 must-ask questions, and honest warranty benchmarks from KL Servis Rumah.",
     content: `
 Every week we meet homeowners whose previous contractor disappeared halfway through a job, quoted "cheap" and then loaded up variations, or gave verbal "guarantees" that vanished the moment a leak returned.

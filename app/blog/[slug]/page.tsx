@@ -1,8 +1,10 @@
 import React from "react";
+import { toIsoDate } from "@/lib/utils";
+import { buildMetadata } from "@/lib/seo-meta";
 import { notFound } from "next/navigation";
 import { blogPosts } from "@/config/blog-data";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { getBreadcrumbSchema, getArticleSchema, getFAQSchema } from "@/lib/seo";
+import { getBreadcrumbSchema, getArticleSchema } from "@/lib/seo";
 import { Calendar, User, Clock, MessageSquare, ArrowRight, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { getWhatsAppLink } from "@/lib/whatsapp";
@@ -18,18 +20,16 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   const post = blogPosts.find((p) => p.slug === params.slug);
   if (!post) return {};
 
-  return {
+  return buildMetadata({
     title: post.metaTitle,
     description: post.metaDesc,
-    alternates: {
-      canonical: `/blog/${post.slug}`
-    },
-    openGraph: {
-      title: post.metaTitle,
-      description: post.metaDesc,
-      url: `https://www.klservisrumah.my/blog/${post.slug}`
-    }
-  };
+    path: `/blog/${post.slug}`,
+    image: post.coverImage,
+    type: "article",
+    publishedTime: toIsoDate(post.date),
+    modifiedTime: toIsoDate(post.date),
+    keywords: [post.title, post.category, "home maintenance Malaysia"]
+  });
 }
 
 export default async function BlogPostSlugPage(props: { params: Promise<{ slug: string }> }) {

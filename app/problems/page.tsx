@@ -1,4 +1,5 @@
 import React from "react";
+import { buildMetadata } from "@/lib/seo-meta";
 import Link from "next/link";
 import { problemPages } from "@/config/problem-data";
 import { servicesData } from "@/config/services-data";
@@ -8,13 +9,17 @@ import { Phone, MessageSquare, AlertCircle } from "lucide-react";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { getBreadcrumbSchema, getSpeakableSchema } from "@/lib/seo";
 
-export const metadata = {
-  title: "Home Service Problem Guides KL & Selangor | KL Servis Rumah",
-  description: "Diagnose common painting, plumbing, ceiling, waterproofing and handyman problems with causes, fixes, cost ranges and booking guidance. Same-day service available across KL & Selangor.",
-  alternates: {
-    canonical: "/problems"
-  }
-};
+export const metadata = buildMetadata({
+  title: "Home Problem Guides — Diagnose & Fix KL Homes",
+  description:
+    "Diagnose common painting, plumbing, ceiling, waterproofing and handyman problems in Malaysian homes, then see the realistic repair cost and next step.",
+  path: "/problems",
+  keywords: [
+    "home problems Malaysia",
+    "ceiling leak diagnosis KL",
+    "peeling paint fix Selangor"
+  ]
+});
 
 export default function ProblemsIndexPage() {
   const breadcrumbSchema = getBreadcrumbSchema([{ name: "Home", item: "/" }, { name: "Problems", item: "/problems" }]);

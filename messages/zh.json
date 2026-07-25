@@ -236,8 +236,8 @@
     "notFound": "未找到该服务。",
     "backToServices": "返回所有服务",
     "directoryEyebrow": "28 项服务 • 3 种语言",
-    "directoryTitle1": "您需要的每一项家居服务。",
-    "directoryTitle2": "尽在一处。",
+    "directoryTitle1": "您需要的每一项家居服务",
+    "directoryTitle2": "吉隆坡与雪兰莪",
     "directorySubtitle": "从油漆与水管维修到全屋翻新、电气、清洁与安防——在吉隆坡与雪兰莪全境探索市场行情价格、真实保修与当日服务。",
     "browseAll": "浏览所有服务",
     "viewPricingGuide": "查看价格指南",
@@ -245,7 +245,7 @@
     "guaranteeLabel": "保证"
   },
   "contact": {
-    "pageTitle": "联系与预订",
+    "pageTitle": "预订吉隆坡与雪兰莪家居服务",
     "pageSubtitle": "通过 WhatsApp 预订家居服务以获得最快响应，或填写表格我们将在 1 小时内回复您。",
     "formHeading": "发送预订请求",
     "formSubheading": "填写以下表格，我们将在营业时间内 60 分钟内通过 WhatsApp 回复您，并提供详细报价。",
@@ -294,7 +294,7 @@
     "dispatchNote": "我们的调度经理每天上午 9:00 至下午 6:00（包括周六和周日）在 WhatsApp 上提供当日预约服务。下午 6:00 后提交的表格将在次日清晨处理。"
   },
   "pricing": {
-    "pageTitle": "我们的价格",
+    "pageTitle": "吉隆坡与雪兰莪家居服务价格",
     "pageSubtitle": "吉隆坡与雪兰莪所有家居服务的透明市场行情价格。无隐藏费用，无意外收费。",
     "compareHeading": "比较服务价格",
     "compareSubheading": "并排显示我们最常被请求的服务价格，方便您在预订前做好预算。"
@@ -368,7 +368,10 @@
         "title": "一丝不苟的清洁标准",
         "desc": "我们会遮蔽边界并铺设厚重塑料防护布，确保离开时您的物业和我们抵达时一样干净整洁。"
       }
-    }
+    },
+    "heroEyebrow": "关于 KL Servis Rumah",
+    "heroTitle": "以工艺为本，以信任为先。",
+    "heroLead": "多年来，当吉隆坡与雪兰莪的屋主重视施工品质时，都会选择我们。从油漆、水管到防水与维修师傅服务，我们每一次都交付干净、细致的成果。"
   },
   "comparison": {
     "heading": "比较服务",
@@ -657,5 +660,10 @@
     "bookingForm": "预订表格",
     "guidanceIntro": "马来西亚住宅面临热带湿度、快速的雨季、共管公寓管理规则以及混合建筑材料。因此，正确的方法取决于表面状况、通道、安规以及是否涉及水或结构移动。",
     "guidanceSafeApproach": "最安全的方法是列出可能原因的简短清单，收集清晰照片，确认房产类型，并要求市场行情的详细报价。KL Servis Rumah 在开始工作前确认范围，避免随意定价。"
+  },
+  "faq": {
+    "heroEyebrow": "知识库",
+    "heroTitle": "吉隆坡与雪兰莪家居服务常见问题",
+    "heroLead": "关于油漆、水管、天花板、防水与维修师傅服务的价格、保修、保险与服务范围的诚实解答。"
   }
 }

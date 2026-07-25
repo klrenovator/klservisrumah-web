@@ -1,4 +1,5 @@
 import React from "react";
+import { buildMetadata } from "@/lib/seo-meta";
 import { notFound } from "next/navigation";
 import { servicesData } from "@/config/services-data";
 import { getMarketRatesForService, type MarketRateItem } from "@/config/market-rates";
@@ -14,11 +15,11 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   const { slug } = await props.params;
   const service = servicesData[slug];
   if (!service) return {};
-  return {
+  return buildMetadata({
     title: `${service.title} Cost in KL & Selangor — 2026 Pricing Guide`,
     description: `How much does ${service.title.toLowerCase()} cost in KL & Selangor? See market-rate pricing, factors, quote examples, and WhatsApp booking.`,
-    alternates: { canonical: `/services/${slug}/cost` }
-  };
+    path: `/services/${slug}/cost`
+  });
 }
 
 export default async function CostPage(props: { params: Promise<{ slug: string }> }) {

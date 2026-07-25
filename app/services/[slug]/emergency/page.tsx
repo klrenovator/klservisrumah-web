@@ -1,4 +1,5 @@
 import React from "react";
+import { buildMetadata } from "@/lib/seo-meta";
 import { notFound } from "next/navigation";
 import { AlertTriangle, Clock3, MessageCircle } from "lucide-react";
 import { servicesData } from "@/config/services-data";
@@ -15,11 +16,11 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   const { slug } = await props.params;
   const service = servicesData[slug];
   if (!service) return {};
-  return {
+  return buildMetadata({
     title: `Emergency ${service.title} KL & Selangor — Fast Dispatch`,
     description: `Urgent ${service.title.toLowerCase()} help in KL & Selangor. Response priority for leaks, unsafe ceilings, urgent handyman and water damage cases.`,
-    alternates: { canonical: `/services/${slug}/emergency` }
-  };
+    path: `/services/${slug}/emergency`
+  });
 }
 
 export default async function EmergencyPage(props: { params: Promise<{ slug: string }> }) {

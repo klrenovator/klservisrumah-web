@@ -1,4 +1,5 @@
 import React from "react";
+import { buildMetadata } from "@/lib/seo-meta";
 import { notFound } from "next/navigation";
 import { servicesData } from "@/config/services-data";
 import { areaPages } from "@/config/area-data";
@@ -15,11 +16,11 @@ export async function generateMetadata(props: { params: Promise<{ serviceSlug: s
   const { serviceSlug } = await props.params;
   const service = servicesData[serviceSlug];
   if (!service) return {};
-  return {
+  return buildMetadata({
     title: `${service.title} Near Me in KL & Selangor`,
     description: `Find ${service.title.toLowerCase()} near you in KL & Selangor. Check service areas, suburbs, market-rate pricing and WhatsApp dispatch.`,
-    alternates: { canonical: `/near-me/${service.slug}` }
-  };
+    path: `/near-me/${service.slug}`
+  });
 }
 
 export default async function NearMeServicePage(props: { params: Promise<{ serviceSlug: string }> }) {

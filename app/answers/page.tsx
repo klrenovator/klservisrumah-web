@@ -4,8 +4,8 @@ import { answerPages } from "@/config/content-data";
 import { genericToHubItems, getHubMetadata, getItemListSchema } from "@/lib/hub";
 import { getBreadcrumbSchema, getSpeakableSchema } from "@/lib/seo";
 
-const title = "AI Answer Hub for Home Services KL";
-const description = "Direct answer pages for ChatGPT, Gemini, Perplexity and Google AI Overviews covering every KL Servis Rumah service pillar.";
+const title = "Home Service Answers for KL & Selangor";
+const description = "Straight answers to the most common home service questions in Kuala Lumpur and Selangor — cost, timing, warranty and what to expect on site.";
 const path = "/answers";
 const items = genericToHubItems(answerPages, path);
 
@@ -18,7 +18,7 @@ export default function AnswersHubPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getBreadcrumbSchema([{ name: "Home", item: "/" }, { name: "Answers", item: path }])) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getSpeakableSchema(["h1", "h2"])) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getItemListSchema(title, description, path, items)) }} />
-      <ContentHubPage eyebrow="AEO / GEO hub" title={title} description={description} basePath={path} items={items} primaryCtaHref="/services" primaryCtaLabel="Browse Services" />
+      <ContentHubPage eyebrow="Quick answers" title={title} description={description} basePath={path} items={items} primaryCtaHref="/services" primaryCtaLabel="Browse Services" />
     </>
   );
 }

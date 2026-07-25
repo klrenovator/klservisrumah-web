@@ -1,4 +1,5 @@
 import React from "react";
+import { buildMetadata } from "@/lib/seo-meta";
 import Link from "next/link";
 import { blogPosts } from "@/config/blog-data";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
@@ -7,13 +8,17 @@ import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
 import { User, Clock, ArrowRight, Phone, MessageSquare, BookOpen } from "lucide-react";
 
-export const metadata = {
-  title: "Home Maintenance Blog — Expert Tips KL & Selangor | KL Servis Rumah",
-  description: "Read professional home maintenance tips, painting guidelines, leak repairs, and DIY alignment guides written by the KL Servis Rumah specialists. Expert advice for KL & Selangor homeowners.",
-  alternates: {
-    canonical: "/blog"
-  }
-};
+export const metadata = buildMetadata({
+  title: "Home Maintenance Blog — Expert Tips KL & Selangor",
+  description:
+    "Professional home maintenance tips, painting guidance, leak repair advice and practical guides written by the KL Servis Rumah specialist team.",
+  path: "/blog",
+  keywords: [
+    "home maintenance tips Malaysia",
+    "painting guide KL",
+    "leak repair advice Selangor"
+  ]
+});
 
 export default function BlogPage() {
   const crumbs = [{ name: "Blog", item: "/blog" }];

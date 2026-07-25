@@ -22,9 +22,11 @@ export function AboutContent() {
         <span className="text-xs font-bold text-[#0EA5E9] uppercase tracking-widest bg-[#0EA5E9]/10 px-4.5 py-1.5 rounded-full w-fit mx-auto sm:mx-0">
           {t("about.eyebrow")}
         </span>
-        <h1 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
+        {/* h2, not h1 — the page-level <h1> lives in <AboutHeroHeading />.
+            Two <h1> elements on one page is both an a11y and an SEO defect. */}
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
           {t("about.pageTitle")}
-        </h1>
+        </h2>
         <p className="text-base sm:text-lg text-[#475569] leading-relaxed">
           {t("about.intro")}
         </p>

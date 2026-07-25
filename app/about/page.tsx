@@ -1,7 +1,9 @@
 import React from "react";
+import { buildMetadata } from "@/lib/seo-meta";
 import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { AboutContent } from "@/components/sections/about-content";
+import { AboutHeroHeading } from "@/components/sections/about-hero-heading";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
 import { getBreadcrumbSchema, getSpeakableSchema } from "@/lib/seo";
@@ -9,41 +11,19 @@ import { Phone, MessageSquare, Users, Award, Clock } from "lucide-react";
 
 const baseUrl = "https://www.klservisrumah.my";
 
-export const metadata: Metadata = {
-  title: "About KL Servis Rumah | Trusted Home Services KL & Selangor",
+export const metadata: Metadata = buildMetadata({
+  title: "About Us — Trusted Home Services KL & Selangor",
   description:
-    "Learn about KL Servis Rumah — trusted painting, plumbing, waterproofing & handyman specialist in Kuala Lumpur & Selangor. 1,200+ projects completed, 4.9★ Google rating.",
+    "KL Servis Rumah is a trusted painting, plumbing, waterproofing and handyman specialist across Kuala Lumpur and Selangor, with 1,200+ completed projects.",
+  path: "/about",
   keywords: [
     "about KL Servis Rumah",
     "home services company Malaysia",
     "trusted contractor KL",
     "insured handyman Selangor",
     "background-verified tradesmen KL"
-  ],
-  alternates: {
-    canonical: "/about",
-    languages: {
-      "en-MY": "/about",
-      "ms-MY": "/ms/about",
-      "zh-MY": "/zh/about",
-      "x-default": "/about"
-    }
-  },
-  openGraph: {
-    title: "About KL Servis Rumah | Trusted Home Services KL & Selangor",
-    description:
-      "Trusted painting, plumbing, waterproofing & handyman specialist in KL & Selangor. 1,200+ projects, 4.9★ Google rating, insured operations.",
-    url: `${baseUrl}/about`,
-    siteName: "KL Servis Rumah",
-    type: "website",
-    locale: "en_MY"
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "About KL Servis Rumah",
-    description: "Trusted home services specialist in KL & Selangor. 1,200+ projects, 4.9★ Google rating."
-  }
-};
+  ]
+});
 
 const aboutPageSchema = {
   "@context": "https://schema.org",
@@ -80,16 +60,8 @@ export default function AboutPage() {
       {/* Hero Section — matches klrenovator.com about page */}
       <section className="bg-gradient-to-b from-[#F8FAFC] via-white to-white border-b border-slate-100 py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AboutHeroHeading />
           <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto">
-            <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
-              About KL Servis Rumah
-            </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#075985] tracking-tight">
-              Built on craft. Driven by trust.
-            </h1>
-            <p className="about-lead text-base sm:text-lg text-[#475569] leading-relaxed max-w-2xl">
-              For years we have been the home service partner Kuala Lumpur and Selangor turn to when quality matters. From painting and plumbing to waterproofing and handyman work — we deliver clean, careful work every single visit.
-            </p>
             <div className="flex items-center gap-4 mt-2">
               <a
                 href={getWhatsAppLink()}
