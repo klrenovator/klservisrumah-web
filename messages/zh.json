@@ -125,7 +125,13 @@
     "faqHeading": "服务常见问题",
     "viewPricing": "查看价格与详情",
     "notFound": "未找到该服务。",
-    "backToServices": "返回所有服务"
+    "backToServices": "返回所有服务",
+    "directoryEyebrow": "28 项服务 • 3 种语言",
+    "directoryTitle1": "您需要的每一项家居服务。",
+    "directoryTitle2": "尽在一处。",
+    "directorySubtitle": "从油漆与水管维修到全屋翻新、电气、清洁与安防——在吉隆坡与雪兰莪全境探索市场行情价格、真实保修与当日服务。",
+    "browseAll": "浏览所有服务",
+    "viewPricingGuide": "查看价格指南"
   },
   "contact": {
     "pageTitle": "联系与预订",
@@ -193,5 +199,39 @@
     "cta": "与调度台对话",
     "aria": "打开 WhatsApp 对话",
     "close": "关闭"
+  },
+  "about": {
+    "eyebrow": "我们的企业故事",
+    "pageTitle": "关于 KL Servis Rumah",
+    "intro": "在 KL Servis Rumah，我们相信房屋维护应该简单、优质且没有压力。我们在吉隆坡与雪兰莪全境提供高标准的油漆、天花板维修、水管、防水与维修师傅服务，配合投保运营与经过背景审查的技术人员。",
+    "standardsHeading": "公司与服务标准",
+    "positioningLabel": "业务定位",
+    "positioningValue": "成熟的本地家居服务公司",
+    "pricingLabel": "定价标准",
+    "pricingValue": "透明的市场行情报价",
+    "officeLabel": "办公区域",
+    "statusLabel": "运营状态",
+    "statusValue": "正常运营且全面投保",
+    "missionHeading": "我们的核心使命",
+    "missionBody": "长期以来，马来西亚的家居服务市场较为分散，屋主常常面临不可靠的独立承包商、突然涨价与凌乱的现场清理等问题。我们本着结构化、优质且透明的服务理念创立了 KL Servis Rumah。我们致力于通过保证逐项列明的固定价格、使用优质的 SIRIM 认证材料，以及派遣经过背景审查、施工后彻底清理现场的专业人员，来提升本地家居服务水平。",
+    "valuesHeading": "我们的核心价值",
+    "values": {
+      "team": {
+        "title": "高技能本地技工",
+        "desc": "我们不聘用未经核实的临时劳工。每一位建筑工、油漆师与水管工都经过背景审查与专业培训。"
+      },
+      "warranty": {
+        "title": "坚实可靠的保修",
+        "desc": "我们对自己的工作充满信心。若在保修期内出现接头漏水或天花板下垂，我们将免费为您修复。"
+      },
+      "materials": {
+        "title": "优质工程材料",
+        "desc": "从 SIRIM 认证管道到优质涂料与膨胀螺栓锚固件，我们只选用工业级供应品。"
+      },
+      "cleanliness": {
+        "title": "一丝不苟的清洁标准",
+        "desc": "我们会遮蔽边界并铺设厚重塑料防护布，确保离开时您的物业和我们抵达时一样干净整洁。"
+      }
+    }
   }
 }

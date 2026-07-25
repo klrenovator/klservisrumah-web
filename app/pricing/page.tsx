@@ -7,6 +7,7 @@ import { getMarketRatesForService, type MarketRateItem } from "@/config/market-r
 import { servicesData } from "@/config/services-data";
 import { getArticleSchema, getBreadcrumbSchema, getFAQSchema, getOfferCatalogSchema } from "@/lib/seo";
 import { getWhatsAppLink } from "@/lib/whatsapp";
+import { PricingHeroHeading } from "@/components/sections/pricing-hero-heading";
 
 export const metadata = {
   title: "Pricing & Rates in KL & Selangor — Transparent Market-Rate Guide",
@@ -99,19 +100,7 @@ export default function PricingPage() {
 
       <section className="bg-gradient-to-b from-slate-50 via-white to-sky-50/30 py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl">
-            <span className="inline-flex rounded-full bg-[#E0F2FE] px-4 py-1.5 text-xs font-extrabold uppercase tracking-[0.24em] text-[#0284C7]">
-              Transparent pricing hub
-            </span>
-            <h1 className="mt-5 text-3xl font-extrabold tracking-tight text-[#075985] sm:text-5xl">
-              Pricing & rates for KL home services
-            </h1>
-            <p className="mt-5 max-w-3xl text-base font-semibold leading-relaxed text-[#475569] sm:text-lg">
-              Review starting prices, common scopes and service-by-service rate guides for painting, plumbing,
-              ceiling work, waterproofing and handyman jobs. Final quotes stay market-rate, transparent and
-              confirmed before work begins.
-            </p>
-          </div>
+          <PricingHeroHeading />
 
           <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
             {pricingPrinciples.map(({ title, body, icon: Icon }) => (
