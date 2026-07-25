@@ -539,7 +539,10 @@
     "viewAllProblems": "Lihat semua panduan masalah",
     "areas": "Kawasan Perkhidmatan",
     "serviceAreas": "Tersedia di kawasan anda",
-    "viewAllAreas": "Lihat semua kawasan perkhidmatan"
+    "viewAllAreas": "Lihat semua kawasan perkhidmatan",
+    "nearMe": "Berdekatan Saya",
+    "nearMeTitle": "Cari {name} berdekatan anda",
+    "nearMeDesc": "Pilih lokasi anda untuk melihat harga tempatan, ketersediaan dan maklumat perhubungan."
   },
   "hero": {
     "subline": "Perkhidmatan rumah premium di KL & Selangor dengan harga pasaran"

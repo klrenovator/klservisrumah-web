@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { servicesData } from "@/config/services-data";
 import { getMarketRatesForService, type MarketRateItem } from "@/config/market-rates";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { getArticleSchema, getBreadcrumbSchema, getFAQSchema, getOfferCatalogSchema } from "@/lib/seo";
+import { getArticleSchema, getFAQSchema, getOfferCatalogSchema } from "@/lib/seo";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 
 export function generateStaticParams() {
@@ -37,7 +37,6 @@ export default async function CostPage(props: { params: Promise<{ slug: string }
   return (
     <>
       <Breadcrumbs items={[{ label: "Services", href: "/services" }, { label: service.title, href: `/services/${slug}` }, { label: "Cost", href: `/services/${slug}/cost` }]} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getBreadcrumbSchema([{ name: "Services", item: "/services" }, { name: service.title, item: `/services/${slug}` }, { name: "Cost", item: `/services/${slug}/cost` }])) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(faqs)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getOfferCatalogSchema(service.subServices)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getArticleSchema({ title: `${service.title} Cost in KL & Selangor`, slug: `${slug}/cost`, excerpt: service.metaDesc, path: `/services/${slug}/cost`, category: "Pricing" })) }} />

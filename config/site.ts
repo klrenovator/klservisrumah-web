@@ -34,9 +34,11 @@ export const siteConfig = {
   reviewCount: 120,
   reviewRating: 4.9,
   reviewLastUpdated: "2026-07-23",
-  logo: "/logo/logo.jpg",
+  // Transparent PNG for on-page use; JPG/OG variants are pre-composited on white
+  // because social platforms and Schema.org consumers do not honour alpha.
+  logo: "/logo/logo.png",
   logoIcon: "/logo/logo-icon.png",
-  defaultOgImage: "/logo/logo.jpg",
+  defaultOgImage: "/logo/og-image.jpg",
 
   navItems: [
     { label: "Home", href: "/" },

@@ -4,7 +4,7 @@ import { buildMetadata } from "@/lib/seo-meta";
 import { notFound } from "next/navigation";
 import { blogPosts } from "@/config/blog-data";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { getBreadcrumbSchema, getArticleSchema } from "@/lib/seo";
+import { getArticleSchema } from "@/lib/seo";
 import { Calendar, User, Clock, MessageSquare, ArrowRight, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { getWhatsAppLink } from "@/lib/whatsapp";
@@ -39,11 +39,6 @@ export default async function BlogPostSlugPage(props: { params: Promise<{ slug: 
     notFound();
   }
 
-  const crumbs = [
-    { name: "Blog", item: "/blog" },
-    { name: post.title, item: `/blog/${post.slug}` }
-  ];
-  const breadcrumbSchema = getBreadcrumbSchema(crumbs);
   const articleSchema = getArticleSchema(post);
 
   const waLink = getWhatsAppLink({ service: post.category });
@@ -59,11 +54,6 @@ export default async function BlogPostSlugPage(props: { params: Promise<{ slug: 
         { label: "Blog", href: "/blog" },
         { label: post.title, href: `/blog/${post.slug}` }
       ]} />
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}

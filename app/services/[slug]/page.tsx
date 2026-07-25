@@ -5,7 +5,6 @@ import { servicesData } from "@/config/services-data";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import {
   getServiceSchema,
-  getBreadcrumbSchema,
   getFAQSchema,
   getHowToSchema,
   getSpeakableSchema
@@ -66,11 +65,6 @@ async function ServiceSlugPageResolver({
     slug: service.slug
   });
 
-  const crumbs = [
-    { name: "Services", item: "/services" },
-    { name: service.title, item: `/services/${service.slug}` }
-  ];
-  const breadcrumbSchema = getBreadcrumbSchema(crumbs);
   const faqSchema = getFAQSchema(service.faqs);
   const howToSchema = getHowToSchema(
     service.process.map((p) => ({ title: p.title, desc: p.desc }))
@@ -89,10 +83,6 @@ async function ServiceSlugPageResolver({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <script
         type="application/ld+json"

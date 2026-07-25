@@ -3,7 +3,7 @@ import { buildMetadata } from "@/lib/seo-meta";
 import { notFound } from "next/navigation";
 import { areaPages } from "@/config/area-data";
 import { servicesData } from "@/config/services-data";
-import { getBreadcrumbSchema, getFAQSchema, getLocalBusinessServiceSchema } from "@/lib/seo";
+import { getFAQSchema, getLocalBusinessServiceSchema } from "@/lib/seo";
 import { buildAreaBundle, buildServiceBundle, buildServiceLinks } from "@/lib/location-bundles";
 import { LocaleAreaServiceView } from "@/components/sections/locale-area-service-view";
 
@@ -39,7 +39,6 @@ export default async function AreaServicePage(props: { params: Promise<{ slug: s
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getBreadcrumbSchema([{ name: "Coverage Areas", item: "/areas" }, { name: area.name, item: `/areas/${area.slug}` }, { name: service.title, item: `/areas/${area.slug}/${service.slug}` }])) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(faqs)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getLocalBusinessServiceSchema(area, service, `/areas/${area.slug}/${service.slug}`)) }} />
 

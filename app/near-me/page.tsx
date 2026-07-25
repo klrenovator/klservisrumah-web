@@ -3,7 +3,7 @@ import { ContentHubPage, type HubItem } from "@/components/content/content-hub-p
 import { servicesData } from "@/config/services-data";
 import { siteConfig } from "@/config/site";
 import { getHubMetadata, getItemListSchema } from "@/lib/hub";
-import { getBreadcrumbSchema, getSpeakableSchema } from "@/lib/seo";
+import { getSpeakableSchema } from "@/lib/seo";
 
 const title = "Home Services Near Me in KL & Selangor";
 const description = "Find nearby KL Servis Rumah teams for painting, plumbing, ceiling, waterproofing, handyman, electrical and renovation services across Klang Valley.";
@@ -24,7 +24,6 @@ export default function NearMeHubPage() {
   return (
     <>
       <Breadcrumbs items={[{ label: "Near Me", href: path }]} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getBreadcrumbSchema([{ name: "Home", item: "/" }, { name: "Near Me", item: path }])) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getSpeakableSchema(["h1", "h2"])) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getItemListSchema(title, description, path, items)) }} />
       <ContentHubPage eyebrow="Local dispatch hub" title={title} description={description} basePath={path} items={items} primaryCtaHref="/areas" primaryCtaLabel="View Areas" secondaryCtaHref="/services" secondaryCtaLabel="All Services" />

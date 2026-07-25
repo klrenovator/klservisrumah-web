@@ -6,7 +6,6 @@ import { SiteSearch } from "@/components/ui/site-search";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { servicesData } from "@/config/services-data";
 import { areaPages } from "@/config/area-data";
-import { getBreadcrumbSchema } from "@/lib/seo";
 import { buildMetadata } from "@/lib/seo-meta";
 
 export const metadata: Metadata = {
@@ -36,16 +35,9 @@ const POPULAR_QUERIES = [
 ];
 
 export default function SearchPage() {
-  const breadcrumbSchema = getBreadcrumbSchema([
-    { name: "Search", item: "/search" }
-  ]);
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
 
       <Breadcrumbs items={[{ label: "Search", href: "/search" }]} />
 

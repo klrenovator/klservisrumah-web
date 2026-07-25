@@ -3,48 +3,64 @@ import Image from "next/image";
 
 type LogoProps = {
   size?: "sm" | "md" | "lg" | "xl";
-  showText?: boolean;
-  variant?: "full" | "icon";
+  /**
+   * `lockup` (default) — horizontal monogram + wordmark, tuned for header/footer.
+   * `full`   — the original stacked badge artwork, for hero/print/social use.
+   * `icon`   — monogram only, for compact bars and app surfaces.
+   */
+  variant?: "lockup" | "full" | "icon";
+  priority?: boolean;
+  className?: string;
 };
 
 /**
- * Brand logo. The full logo artwork (public/logo/logo.png) already contains the
- * KL monogram, tool-shield and the "KL SERVIS RUMAH — PROFESSIONAL HOME SERVICES"
- * wordmark, so the default `full` variant renders the image only (no HTML text),
- * mirroring the klrenovator.com header pattern.
+ * Brand logo.
  *
- * The logo is intentionally displayed with extra height so the wordmark reads
- * clearly in the navbar without increasing the horizontal footprint.
+ * TRANSPARENCY
+ * The shipped artwork had the image editor's transparency checkerboard flattened
+ * into its pixels and carried no alpha channel (PNG colour type 2), so it
+ * rendered as a grey chequered rectangle that looked pasted onto the page. The
+ * assets were rebuilt with a real alpha channel and now composite cleanly onto
+ * any background.
+ *
+ * LAYOUT
+ * The original badge is very wide (aspect ~2.15) with the wordmark occupying
+ * only the right half, so at a 52px header height it scaled to ~112px wide and
+ * the wordmark became unreadable. `logo-lockup.png` re-arranges the same artwork
+ * into a horizontal monogram + wordmark lockup (aspect ~3.9) that stays legible
+ * at header sizes. The stacked badge remains available via `variant="full"`.
+ *
+ * Width is always derived from height so proportions hold at every breakpoint
+ * and Next.js reserves the right box, avoiding layout shift.
  */
-const LOGO_ASPECT = 1481 / 720;
+const ART = {
+  lockup: { src: "/logo/logo-lockup.png", w: 1558, h: 400 },
+  full: { src: "/logo/logo.png", w: 1200, h: 558 },
+  icon: { src: "/logo/logo-icon.png", w: 512, h: 512 },
+} as const;
 
-export function Logo({ size = "md", variant = "full" }: LogoProps) {
-  // Increased heights so the logo looks taller and the wordmark stays readable
-  const height = size === "sm" ? 48 : size === "lg" ? 72 : size === "xl" ? 100 : 60;
-  const width = Math.round(height * LOGO_ASPECT);
+const HEIGHTS = { sm: 40, md: 52, lg: 64, xl: 88 } as const;
 
-  if (variant === "icon") {
-    return (
-      <Image
-        src="/logo/logo.jpg"
-        alt="KL Servis Rumah"
-        width={height}
-        height={height}
-        className="rounded-xl object-contain"
-        priority
-      />
-    );
-  }
+export function Logo({
+  size = "md",
+  variant = "lockup",
+  priority = true,
+  className,
+}: LogoProps) {
+  const art = ART[variant];
+  const height = HEIGHTS[size];
+  const width = Math.round(height * (art.w / art.h));
 
   return (
     <Image
-      src="/logo/logo.png"
+      src={art.src}
       alt="KL Servis Rumah — Professional Home Services"
       width={width}
       height={height}
-      className="object-contain"
-      style={{ height, width }}
-      priority
+      sizes={`${width}px`}
+      className={className ?? "object-contain"}
+      style={{ height, width: "auto" }}
+      priority={priority}
     />
   );
 }

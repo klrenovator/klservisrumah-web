@@ -539,7 +539,10 @@
     "viewAllProblems": "查看所有问题指南",
     "areas": "服务区域",
     "serviceAreas": "在您所在地区提供服务",
-    "viewAllAreas": "查看所有服务区域"
+    "viewAllAreas": "查看所有服务区域",
+    "nearMe": "我附近",
+    "nearMeTitle": "寻找您附近的{name}",
+    "nearMeDesc": "选择您的位置以查看当地价格、服务时段与联系方式。"
   },
   "hero": {
     "subline": "吉隆坡与雪兰莪的市场行情优质家居服务"

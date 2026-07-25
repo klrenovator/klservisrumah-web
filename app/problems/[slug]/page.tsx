@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { problemPages } from "@/config/problem-data";
 import { servicesData } from "@/config/services-data";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { getArticleSchema, getBreadcrumbSchema, getFAQSchema, getHowToSchema, getSpeakableSchema } from "@/lib/seo";
+import { getArticleSchema, getFAQSchema, getHowToSchema, getSpeakableSchema } from "@/lib/seo";
 import { LocaleProblemView } from "@/components/sections/locale-problem-view";
 
 /**
@@ -79,7 +79,6 @@ export default async function ProblemPage(props: { params: Promise<{ slug: strin
   return (
     <>
       <Breadcrumbs items={[{ label: "Problems", href: "/problems" }, { label: problem.title, href: `/problems/${problem.slug}` }]} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getBreadcrumbSchema([{ name: "Problems", item: "/problems" }, { name: problem.title, item: `/problems/${problem.slug}` }])) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(problem.faqs)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getHowToSchema(howToSteps)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getArticleSchema({ title: problem.title, slug: problem.slug, excerpt: problem.symptom, path: `/problems/${problem.slug}`, category: service.title })) }} />

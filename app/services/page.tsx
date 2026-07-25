@@ -7,7 +7,6 @@ import { WhyChooseUs } from "@/components/sections/why-choose-us";
 import { ServiceComparisonTable } from "@/components/service-comparison-table";
 import { LocaleDecisionTree } from "@/components/sections/locale-decision-tree";
 import { StatsCounter } from "@/components/content/stats-counter";
-import { getBreadcrumbSchema } from "@/lib/seo";
 
 export const metadata = buildMetadata({
   title: "All Home Services in KL & Selangor — 28 Services",
@@ -22,17 +21,10 @@ export const metadata = buildMetadata({
 });
 
 export default function ServicesPage() {
-  const crumbs = [{ name: "Services", item: "/services" }];
-  const schema = getBreadcrumbSchema(crumbs);
 
   return (
     <>
       <Breadcrumbs items={[{ label: "Services", href: "/services" }]} />
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
 
       {/* Hero Section - Klrenovator Style */}
       <section className="bg-gradient-to-b from-[#F0F9FF] to-white py-16 sm:py-20">

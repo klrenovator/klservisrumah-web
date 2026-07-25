@@ -3,7 +3,6 @@ import { buildMetadata } from "@/lib/seo-meta";
 import Link from "next/link";
 import { blogPosts } from "@/config/blog-data";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { getBreadcrumbSchema } from "@/lib/seo";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
 import { User, Clock, ArrowRight, Phone, MessageSquare, BookOpen } from "lucide-react";
@@ -21,8 +20,6 @@ export const metadata = buildMetadata({
 });
 
 export default function BlogPage() {
-  const crumbs = [{ name: "Blog", item: "/blog" }];
-  const breadcrumbSchema = getBreadcrumbSchema(crumbs);
 
   // Featured article (first post)
   const featuredPost = blogPosts[0];
@@ -67,11 +64,6 @@ export default function BlogPage() {
       </section>
 
       <Breadcrumbs items={[{ label: "Blog", href: "/blog" }]} />
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
 
       <section className="bg-white py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

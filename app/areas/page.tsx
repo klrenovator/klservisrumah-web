@@ -3,7 +3,6 @@ import { buildMetadata } from "@/lib/seo-meta";
 import { ServiceAreas } from "@/components/sections/service-areas";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { WhyChooseUs } from "@/components/sections/why-choose-us";
-import { getBreadcrumbSchema } from "@/lib/seo";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
 import { MapPin, Phone, MessageSquare } from "lucide-react";
@@ -21,8 +20,6 @@ export const metadata = buildMetadata({
 });
 
 export default function AreasPage() {
-  const crumbs = [{ name: "Coverage Areas", item: "/areas" }];
-  const schema = getBreadcrumbSchema(crumbs);
 
   return (
     <>
@@ -76,11 +73,6 @@ export default function AreasPage() {
       </section>
 
       <Breadcrumbs items={[{ label: "Coverage Areas", href: "/areas" }]} />
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
 
       <ServiceAreas />
 

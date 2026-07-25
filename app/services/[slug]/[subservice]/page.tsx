@@ -5,7 +5,7 @@ import { servicesData } from "@/config/services-data";
 import { clusterPages } from "@/config/content-data";
 import { GenericContentPageView } from "@/components/content/generic-content-page";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { getBreadcrumbSchema, getFAQSchema, getServiceSchema } from "@/lib/seo";
+import { getFAQSchema, getServiceSchema } from "@/lib/seo";
 import { slugify } from "@/lib/utils";
 import { LocaleServiceView } from "@/components/sections/locale-service-view";
 import { TrustBar } from "@/components/trust-bar";
@@ -63,11 +63,6 @@ export default async function SubServicePage(props: { params: Promise<{ slug: st
     { q: `Do you cover my area for ${sub.name}?`, a: `Yes. We dispatch ${service.title.toLowerCase()} teams daily across all of KL and Selangor — Kuala Lumpur, Petaling Jaya, Subang Jaya, Shah Alam, Puchong, Klang, and every major suburb.` },
     { q: `What warranty comes with ${sub.name}?`, a: `Every ${sub.name} booking is covered by our written ${service.warranty.toLowerCase()}. If anything covered fails within the warranty period, we return to fix it free of charge.` }
   ];
-  const crumbs = [
-    { name: "Services", item: "/services" },
-    { name: service.title, item: `/services/${service.slug}` },
-    { name: sub.name, item: `/services/${service.slug}/${params.subservice}` }
-  ];
 
   return (
     <>
@@ -78,7 +73,6 @@ export default async function SubServicePage(props: { params: Promise<{ slug: st
         { label: service.title, href: `/services/${service.slug}` },
         { label: sub.name, href: `/services/${service.slug}/${params.subservice}` }
       ]} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getBreadcrumbSchema(crumbs)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(faqs)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getServiceSchema({ title: sub.name, description: sub.desc, startPrice: sub.price, slug: service.slug })) }} />
 

@@ -2,7 +2,7 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { ContentHubPage } from "@/components/content/content-hub-page";
 import { maintenancePages } from "@/config/content-data";
 import { genericToHubItems, getHubMetadata, getItemListSchema } from "@/lib/hub";
-import { getBreadcrumbSchema, getSpeakableSchema } from "@/lib/seo";
+import { getSpeakableSchema } from "@/lib/seo";
 
 const title = "Home Maintenance Checklists KL & Selangor";
 const description = "Monthly, rainy-season, rental-turnover and renovation-cleanup checklists for Malaysian homes, condos and landed properties.";
@@ -15,7 +15,6 @@ export default function MaintenanceHubPage() {
   return (
     <>
       <Breadcrumbs items={[{ label: "Guides", href: "/guides" }, { label: "Maintenance", href: path }]} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getBreadcrumbSchema([{ name: "Home", item: "/" }, { name: "Guides", item: "/guides" }, { name: "Maintenance", item: path }])) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getSpeakableSchema(["h1", "h2"])) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getItemListSchema(title, description, path, items)) }} />
       <ContentHubPage eyebrow="Preventive maintenance" title={title} description={description} basePath={path} items={items} primaryCtaHref="/tools" primaryCtaLabel="Use Free Tools" />

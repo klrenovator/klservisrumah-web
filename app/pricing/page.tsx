@@ -4,7 +4,6 @@ import { buildMetadata } from "@/lib/seo-meta";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { servicesData } from "@/config/services-data";
 import {
-  getBreadcrumbSchema,
   getFAQSchema,
   getOfferCatalogSchema,
   getSpeakableSchema
@@ -47,17 +46,10 @@ const pricingFaqs = [
 const offerCatalogItems = Object.values(servicesData).flatMap((service) => service.subServices);
 
 export default function PricingPage() {
-  const breadcrumbItems = [
-    { name: "Pricing", item: "/pricing" },
-  ];
 
   return (
     <>
       <Breadcrumbs items={[{ label: "Pricing", href: "/pricing" }]} />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(getBreadcrumbSchema(breadcrumbItems)) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(pricingFaqs)) }}

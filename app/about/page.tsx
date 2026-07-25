@@ -6,7 +6,7 @@ import { AboutContent } from "@/components/sections/about-content";
 import { AboutHeroHeading } from "@/components/sections/about-hero-heading";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
-import { getBreadcrumbSchema, getSpeakableSchema } from "@/lib/seo";
+import { getSpeakableSchema } from "@/lib/seo";
 import { Phone, MessageSquare, Users, Award, Clock } from "lucide-react";
 
 const baseUrl = "https://www.klservisrumah.my";
@@ -39,7 +39,6 @@ const aboutPageSchema = {
 };
 
 export default function AboutPage() {
-  const breadcrumbSchema = getBreadcrumbSchema([{ name: "About Us", item: "/about" }]);
   const speakableSchema = getSpeakableSchema(["h1", ".about-lead", ".about-body"]);
 
   return (
@@ -47,10 +46,6 @@ export default function AboutPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <script
         type="application/ld+json"

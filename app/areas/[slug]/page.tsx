@@ -2,7 +2,7 @@ import React from "react";
 import { buildMetadata } from "@/lib/seo-meta";
 import { notFound } from "next/navigation";
 import { areaPages } from "@/config/area-data";
-import { getBreadcrumbSchema, getFAQSchema, getSpeakableSchema } from "@/lib/seo";
+import { getFAQSchema, getSpeakableSchema } from "@/lib/seo";
 import { buildAreaBundle } from "@/lib/location-bundles";
 import { LocaleAreaView } from "@/components/sections/locale-area-view";
 import { siteConfig } from "@/config/site";
@@ -47,11 +47,6 @@ export default async function AreaSlugPage(props: { params: Promise<{ slug: stri
 
   // Schema stays canonical (English) for search engines; the visible body is
   // rendered by the client wrapper in the visitor's active language.
-  const crumbs = [
-    { name: "Coverage Areas", item: "/areas" },
-    { name: area.name, item: `/areas/${area.slug}` }
-  ];
-  const breadcrumbSchema = getBreadcrumbSchema(crumbs);
   const faqSchema = getFAQSchema(area.faqs);
   const speakableSchema = getSpeakableSchema(["h1", ".area-intro", ".faq-answer"]);
 
@@ -95,10 +90,6 @@ export default async function AreaSlugPage(props: { params: Promise<{ slug: stri
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
