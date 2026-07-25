@@ -557,5 +557,22 @@
     "insuredOps": "Insured Operations",
     "sameDayAvail": "Same-Day Available",
     "ssmRegistered": "SSM Registered"
+  },
+  "subserviceContent": {
+    "whatsIncluded": "What's included",
+    "pricing": "Pricing",
+    "warranty": "Warranty",
+    "faqs": "FAQs",
+    "howMuchCost": "How much does {name} cost in KL & Selangor?",
+    "includedItems": {
+      "1": "Initial site inspection and scope confirmation",
+      "2": "Surface or fixture preparation work",
+      "3": "Professional tools and suitable materials",
+      "4": "Clean execution with property protection",
+      "5": "Function and finish testing before handover",
+      "6": "Transparent market-rate final quote",
+      "7": "Written warranty documentation",
+      "8": "WhatsApp support for scheduling and questions"
+    }
   }
 }

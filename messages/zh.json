@@ -557,5 +557,22 @@
     "insuredOps": "已投保运营",
     "sameDayAvail": "可当日服务",
     "ssmRegistered": "SSM 注册"
+  },
+  "subserviceContent": {
+    "whatsIncluded": "包括",
+    "pricing": "定价",
+    "warranty": "保修",
+    "faqs": "常见问题",
+    "howMuchCost": "在吉隆坡与雪兰莪{name}的费用是多少？",
+    "includedItems": {
+      "1": "初步现场检查和范围确认",
+      "2": "表面或装置准备工作",
+      "3": "专业工具与适当材料",
+      "4": "带物业保护的干净施工",
+      "5": "交付前的功能和饰面测试",
+      "6": "透明的市场行情最终报价",
+      "7": "书面保修文件",
+      "8": "WhatsApp 预约与咨询支持"
+    }
   }
 }

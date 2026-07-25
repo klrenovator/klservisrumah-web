@@ -17,15 +17,15 @@ type SubserviceDetailContentProps = {
   sub: SubService;
 };
 
-const INCLUDED_ITEMS = [
-  "Initial site inspection and scope confirmation",
-  "Surface or fixture preparation work",
-  "Professional tools and suitable materials",
-  "Clean execution with property protection",
-  "Function and finish testing before handover",
-  "Transparent market-rate final quote",
-  "Written warranty documentation",
-  "WhatsApp support for scheduling and questions"
+const INCLUDED_ITEM_KEYS = [
+  "subserviceContent.includedItems.1",
+  "subserviceContent.includedItems.2",
+  "subserviceContent.includedItems.3",
+  "subserviceContent.includedItems.4",
+  "subserviceContent.includedItems.5",
+  "subserviceContent.includedItems.6",
+  "subserviceContent.includedItems.7",
+  "subserviceContent.includedItems.8"
 ];
 
 /**
@@ -50,7 +50,7 @@ export function SubserviceDetailContent({ service, sub }: SubserviceDetailConten
       <section className="section-tight bg-white">
         <div className="container-default">
           <div className="max-w-2xl">
-            <span className="eyebrow">What's included · Apa yang disertakan · 包括</span>
+            <span className="eyebrow">{t("subserviceContent.whatsIncluded")}</span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#075985] tracking-tight mt-3">
               Everything you get with {sub.name}
             </h2>
@@ -59,10 +59,10 @@ export function SubserviceDetailContent({ service, sub }: SubserviceDetailConten
             </p>
           </div>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-            {INCLUDED_ITEMS.map((item) => (
-              <div key={item} className="card card-tight flex items-start gap-3 bg-slate-50/50">
+            {INCLUDED_ITEM_KEYS.map((key) => (
+              <div key={key} className="card card-tight flex items-start gap-3 bg-slate-50/50">
                 <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
-                <span className="text-sm font-semibold text-[#475569] leading-snug">{item}</span>
+                <span className="text-sm font-semibold text-[#475569] leading-snug">{t(key)}</span>
               </div>
             ))}
           </div>
@@ -135,7 +135,7 @@ export function SubserviceDetailContent({ service, sub }: SubserviceDetailConten
         <div className="container-default">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="card card-loose flex flex-col gap-4">
-              <span className="eyebrow">Pricing · Harga · 定价</span>
+              <span className="eyebrow">{t("subserviceContent.pricing")}</span>
               <h3 className="text-2xl font-extrabold text-[#075985] tracking-tight">
                 Transparent {sub.name.toLowerCase()} pricing
               </h3>
@@ -163,7 +163,7 @@ export function SubserviceDetailContent({ service, sub }: SubserviceDetailConten
             </div>
 
             <div className="card card-loose flex flex-col gap-4">
-              <span className="eyebrow">Warranty · Jaminan · 保修</span>
+              <span className="eyebrow">{t("subserviceContent.warranty")}</span>
               <h3 className="text-2xl font-extrabold text-[#075985] tracking-tight">
                 {sub.name} warranty coverage
               </h3>
@@ -212,14 +212,14 @@ export function SubserviceDetailContent({ service, sub }: SubserviceDetailConten
       <section className="section-tight bg-slate-50">
         <div className="container-narrow">
           <div className="text-center mb-10">
-            <span className="eyebrow">FAQs · Soalan Lazim · 常见问题</span>
+            <span className="eyebrow">{t("subserviceContent.faqs")}</span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#075985] tracking-tight mt-3">
               {sub.name} — frequently asked questions
             </h2>
           </div>
           <div className="flex flex-col gap-3">
             <FaqItem
-              q={`How much does ${sub.name.toLowerCase()} cost in KL & Selangor?`}
+              q={t("subserviceContent.howMuchCost", { name: sub.name })}
               a={`${sub.name} is priced ${sub.price}. The final cost depends on dimensions, access, materials, and actual on-site condition, and is confirmed in writing before any work begins. There are no hidden transport, service, or weekend fees.`}
             />
             <FaqItem
