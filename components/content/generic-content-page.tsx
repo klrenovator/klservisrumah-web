@@ -1,6 +1,6 @@
 'use client';
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { CheckCircle2, MessageCircle } from "lucide-react";
 import type { GenericContentPage } from "@/config/content-data";
@@ -8,18 +8,43 @@ import { servicesData } from "@/config/services-data";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { InternalLinkGrid } from "@/components/internal-link-grid";
 import { useTranslations } from "@/hooks/use-translations";
-import { contentI18n, contentI18nZh, contentI18nMsFull, contentI18nZhFull } from "@/config/content-i18n";
 import { useLang } from "@/context/lang-context";
+
+type GenericContentI18nLookup = Partial<Pick<GenericContentPage, "title" | "intro" | "category">> | null;
 
 export function GenericContentPageView({ page }: { page: GenericContentPage }) {
   const t = useTranslations();
   const { lang } = useLang();
   const relatedService = page.relatedServiceSlug ? servicesData[page.relatedServiceSlug] : undefined;
+  const [remoteI18n, setRemoteI18n] = useState<GenericContentI18nLookup>(null);
 
-  // Apply content-level i18n lookup for MS and ZH (primary dictionary + expanded coverage)
-  const msDict = lang === "ms" ? (contentI18nMsFull[page.slug] ?? contentI18n[page.slug]) : null;
-  const zhDict = lang === "zh" ? (contentI18nZhFull[page.slug] ?? contentI18nZh[page.slug]) : null;
-  const i18nLookup = msDict ?? zhDict ?? (lang === "ms" ? contentI18n[page.slug] : lang === "zh" ? contentI18nZh[page.slug] : page.i18n?.ms ?? page.i18n?.zh);
+  // Keep the default English bundle lean. Large MS/ZH content dictionaries are
+  // loaded only after a visitor actively switches language, instead of being
+  // shipped in every generic content page's initial JS chunk.
+  useEffect(() => {
+    let cancelled = false;
+
+    if (lang === "en") {
+      setRemoteI18n(null);
+      return;
+    }
+
+    import("@/config/content-i18n").then((module) => {
+      if (cancelled) return;
+      const lookup =
+        lang === "ms"
+          ? module.contentI18nMsFull[page.slug] ?? module.contentI18n[page.slug]
+          : module.contentI18nZhFull[page.slug] ?? module.contentI18nZh[page.slug];
+      setRemoteI18n(lookup ?? null);
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [lang, page.slug]);
+
+  const staticFallback = lang === "ms" ? page.i18n?.ms : lang === "zh" ? page.i18n?.zh : null;
+  const i18nLookup = remoteI18n ?? staticFallback;
   const localizedTitle = (i18nLookup?.title as string) ?? page.title;
   const localizedIntro = (i18nLookup?.intro as string) ?? page.intro;
   const localizedCategory = (i18nLookup?.category as string) ?? page.category;
