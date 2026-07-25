@@ -19,11 +19,8 @@ export default function Home() {
     <>
       <TrustBar />
       <Hero />
-      <div className="bg-white px-4 py-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <RecentJobsTicker />
-        </div>
-      </div>
+      {/* Floating rotating request toast — shows one item at a time, fades in/out */}
+      <RecentJobsTicker />
       <TrustBadges />
       <ServicesGrid />
 
