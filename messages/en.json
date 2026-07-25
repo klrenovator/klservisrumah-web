@@ -638,5 +638,18 @@
     "locatorDetected": "Location detected: {lat}, {lng}. Send this pin on WhatsApp for nearest dispatch.",
     "locatorDenied": "Location permission was not granted. You can still send your suburb or Google Maps pin on WhatsApp.",
     "locatorButton": "Use my location"
+  },
+  "content": {
+    "categoryLabel": "Category",
+    "keyTakeaways": "Key takeaways",
+    "practicalGuidance": "Practical guidance for KL & Selangor",
+    "relatedServices": "Related {service} resources",
+    "needHelp": "Need help applying this to your property?",
+    "needHelpDesc": "Send your photos, area, and preferred timing. Our dispatch desk will help identify the suitable service and quote at standard market rate.",
+    "faqs": "FAQs",
+    "whatsappDispatch": "WhatsApp Dispatch",
+    "bookingForm": "Booking form",
+    "guidanceIntro": "Malaysian homes face tropical humidity, fast rain cycles, condo management rules, and mixed construction materials. That means the right method depends on surface condition, access, safety requirements, and whether water or structural movement is involved.",
+    "guidanceSafeApproach": "The safest approach is to shortlist the likely cause, collect clear photos, confirm the property type, and request an itemized market-rate quotation. KL Servis Rumah confirms scope before work begins and avoids arbitrary pricing."
   }
 }

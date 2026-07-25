@@ -8,6 +8,10 @@ export type GenericContentPage = {
   bullets: string[];
   faqs: { q: string; a: string }[];
   relatedServiceSlug?: keyof typeof servicesData;
+  i18n?: {
+    ms?: Partial<Pick<GenericContentPage, "title" | "intro" | "category">>;
+    zh?: Partial<Pick<GenericContentPage, "title" | "intro" | "category">>;
+  };
 };
 
 const faq = (topic: string) => [

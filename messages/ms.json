@@ -638,5 +638,18 @@
     "locatorDetected": "Lokasi dikesan: {lat}, {lng}. Hantar pin ini di WhatsApp untuk dispatch terdekat.",
     "locatorDenied": "Kebenaran lokasi tidak diberikan. Anda masih boleh menghantar kawasan atau pin Google Maps anda di WhatsApp.",
     "locatorButton": "Guna lokasi saya"
+  },
+  "content": {
+    "categoryLabel": "Kategori",
+    "keyTakeaways": "Intipati utama",
+    "practicalGuidance": "Panduan praktikal untuk KL & Selangor",
+    "relatedServices": "Sumber berkaitan {service}",
+    "needHelp": "Perlu bantuan menerapkan ini pada harta anda?",
+    "needHelpDesc": "Hantar foto, kawasan, dan masa pilihan anda. Meja penghantaran kami akan membantu mengenal pasti perkhidmatan sesuai dan sebut harga mengikut kadar pasaran.",
+    "faqs": "Soalan Lazim",
+    "whatsappDispatch": "Penghantaran WhatsApp",
+    "bookingForm": "Borang tempahan",
+    "guidanceIntro": "Rumah-rumah Malaysia menghadapi kelembapan tropika, kitaran hujan pantas, peraturan pengurusan kondo, dan bahan binaan campuran. Ini bermakna kaedah yang betul bergantung pada keadaan permukaan, akses, keperluan keselamatan, dan sama ada air atau pergerakan struktur terlibat.",
+    "guidanceSafeApproach": "Pendekatan paling selamat ialah membuat senarai pendek kemungkinan punca, mengumpul foto yang jelas, mengesahkan jenis hartanah, dan meminta sebut harga terperinci mengikut kadar pasaran. KL Servis Rumah mengesahkan skop sebelum kerja bermula dan mengelakkan penetapan harga sewenang-wenangnya."
   }
 }

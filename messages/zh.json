@@ -638,5 +638,18 @@
     "locatorDetected": "已检测到位置：{lat}, {lng}。请通过 WhatsApp 发送此定位以便就近派工。",
     "locatorDenied": "未获得定位权限。您仍可通过 WhatsApp 发送所在社区或 Google 地图定位。",
     "locatorButton": "使用我的位置"
+  },
+  "content": {
+    "categoryLabel": "分类",
+    "keyTakeaways": "要点总结",
+    "practicalGuidance": "吉隆坡与雪兰莪实用指南",
+    "relatedServices": "相关 {service} 资源",
+    "needHelp": "需要将此应用到您的房产？",
+    "needHelpDesc": "请发送照片、区域和首选时间。我们的调度中心将帮助确定合适的服务，并提供市场行情报价。",
+    "faqs": "常见问题",
+    "whatsappDispatch": "WhatsApp 调度",
+    "bookingForm": "预订表格",
+    "guidanceIntro": "马来西亚住宅面临热带湿度、快速的雨季、共管公寓管理规则以及混合建筑材料。因此，正确的方法取决于表面状况、通道、安规以及是否涉及水或结构移动。",
+    "guidanceSafeApproach": "最安全的方法是列出可能原因的简短清单，收集清晰照片，确认房产类型，并要求市场行情的详细报价。KL Servis Rumah 在开始工作前确认范围，避免随意定价。"
   }
 }
