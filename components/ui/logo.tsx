@@ -12,14 +12,15 @@ type LogoProps = {
  * KL monogram, tool-shield and the "KL SERVIS RUMAH — PROFESSIONAL HOME SERVICES"
  * wordmark, so the default `full` variant renders the image only (no HTML text),
  * mirroring the klrenovator.com header pattern.
+ *
+ * The logo is intentionally displayed with extra height so the wordmark reads
+ * clearly in the navbar without increasing the horizontal footprint.
  */
-// The supplied artwork is intentionally given a little extra horizontal room in
-// the site chrome. This keeps the wordmark readable at navbar sizes without
-// increasing the vertical footprint or changing the source brand artwork.
-const LOGO_ASPECT = (1693 / 929) * 1.1;
+const LOGO_ASPECT = 1481 / 720;
 
 export function Logo({ size = "md", variant = "full" }: LogoProps) {
-  const height = size === "sm" ? 40 : size === "lg" ? 64 : size === "xl" ? 88 : 52;
+  // Increased heights so the logo looks taller and the wordmark stays readable
+  const height = size === "sm" ? 48 : size === "lg" ? 72 : size === "xl" ? 100 : 60;
   const width = Math.round(height * LOGO_ASPECT);
 
   if (variant === "icon") {
