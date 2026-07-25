@@ -475,5 +475,677 @@ export const extraProblemPages: ProblemDetail[] = [
       { q: "Is my heater worth repairing or should I replace it?", a: "Under 5 years old: usually worth repairing. Over 8 years old: often better to replace for reliability, energy efficiency and warranty." },
       { q: "How much for a new instant water heater installed?", a: "Mid-range instant heater supply + install: RM 550 to RM 1,200. Storage tank heater supply + install: RM 850 to RM 1,900." }
     ]
+  },
+
+  // ── TILING extras ────────────────────────────────────────────────────────
+  {
+    slug: "loose-hollow-tiles",
+    serviceSlug: "tiling",
+    title: "Loose or Hollow-Sounding Floor Tiles",
+    symptom: "Tiles crack, pop up, or sound hollow when tapped with a coin because the bond to the substrate has failed.",
+    costRange: "RM 350–RM 2,800+ depending on tile count and access",
+    urgency: "Medium",
+    causes: [
+      "Poor cement bedding during original installation",
+      "Substrate movement due to building settlement",
+      "Water ingress separating tile from screed",
+      "Wrong tile adhesive used for the tile format"
+    ],
+    solutions: [
+      "Tap-test the entire floor to map hollow zones",
+      "Carefully lift affected tiles",
+      "Re-lay with proper thin-set adhesive and 100% coverage",
+      "Re-grout matching the surrounding colour"
+    ],
+    whenToCall: [
+      "Multiple tiles have popped up in the last month",
+      "You feel movement when walking on the floor",
+      "Water is seeping through cracked grout"
+    ],
+    faqs: [
+      { q: "Can loose tiles be re-glued from the top?", a: "Only temporarily for small edge lifts. Proper repair requires lifting the tile and re-bedding it with the correct thin-set adhesive." },
+      { q: "How much to relay a single loose tile?", a: "Single-tile relay: RM 150 to RM 280 including matching grout. Multi-tile relays are quoted by area." },
+      { q: "Can you match my old tile colour?", a: "We keep a stock of common Malaysian tile grouts. If your tile is a rare design, we ask you to bring a spare tile or we source the nearest match." }
+    ]
+  },
+  {
+    slug: "cracked-tile-grout",
+    serviceSlug: "tiling",
+    title: "Cracked or Discoloured Tile Grout",
+    symptom: "Grout lines between tiles are cracking, crumbling, or turning grey/black with mould.",
+    costRange: "RM 250–RM 1,800+ depending on room size",
+    urgency: "Medium",
+    causes: [
+      "Old cement grout past its 5-8 year service life",
+      "Substrate movement stressing the grout line",
+      "Damp environments (bathroom, kitchen) feeding mould",
+      "Cheap unsealed grout used originally"
+    ],
+    solutions: [
+      "Grind out the old grout to a clean depth",
+      "Clean the tile edges with a stain remover",
+      "Apply premium epoxy or acrylic grout",
+      "Seal the grout line with a hydrophobic sealer"
+    ],
+    whenToCall: [
+      "Grout is crumbling to powder when scratched",
+      "Water is leaking to the floor below",
+      "Mould keeps returning despite cleaning"
+    ],
+    faqs: [
+      { q: "Is epoxy grout worth the extra cost?", a: "For bathrooms and kitchens yes — epoxy grout is waterproof, mould-resistant, and lasts 15+ years vs 5-8 years for cement grout." },
+      { q: "Can I just paint over old grout?", a: "Grout paint lasts 6-12 months but doesn't fix cracked or missing grout. Proper regrouting is the right long-term fix." },
+      { q: "How much to regrout a standard bathroom?", a: "Typical bathroom regrouting: RM 650 to RM 1,400 including grout removal, cleaning, epoxy grout and sealing." }
+    ]
+  },
+
+  // ── PLASTER CEILING extras ───────────────────────────────────────────────
+  {
+    slug: "plaster-ceiling-hairline-crack",
+    serviceSlug: "plaster-ceiling",
+    title: "Hairline Cracks in Plaster Ceiling",
+    symptom: "Fine spider-web cracks appear across the plaster ceiling surface, often near joints or corners.",
+    costRange: "RM 300–RM 1,800+ depending on ceiling area",
+    urgency: "Low",
+    causes: [
+      "Skim coat applied too thick or too fast originally",
+      "Thermal expansion cycling",
+      "Building settlement in the first 5 years",
+      "Water damage weakening the plaster bond"
+    ],
+    solutions: [
+      "Widen the crack slightly and clean out debris",
+      "Apply mesh tape over the crack",
+      "Skim-coat over the repair with flexible plaster",
+      "Prime and repaint to match"
+    ],
+    whenToCall: [
+      "Cracks are wider than 1 mm",
+      "Multiple cracks appearing at the same time",
+      "You see water stains alongside cracks"
+    ],
+    faqs: [
+      { q: "Do hairline cracks mean the ceiling will fall?", a: "Cosmetic hairline cracks are rarely structural. They usually mean the skim coat is stress-cycling — easily repaired." },
+      { q: "Can I fill hairline cracks myself?", a: "Small filler jobs are possible but often reopen. Professional repair uses mesh tape + flexible skim for lasting results." },
+      { q: "How much to repair hairline cracks in a room?", a: "Room-level repair (patch + skim + primer + repaint): RM 380 to RM 850 depending on ceiling size." }
+    ]
+  },
+
+  // ── SKIM COAT extras ─────────────────────────────────────────────────────
+  {
+    slug: "uneven-wall-surface-skim",
+    serviceSlug: "skim-coat",
+    title: "Uneven or Bumpy Wall Surface",
+    symptom: "Walls have visible bumps, dips, plaster ridges, or old paint texture that shows through the new topcoat.",
+    costRange: "RM 5–RM 12 per sq ft (skim-coat)",
+    urgency: "Low",
+    causes: [
+      "Old textured paint or old plaster ridges",
+      "Uneven original wall surface",
+      "Multiple paint layers building up unevenly",
+      "Wall repair patches never properly smoothed"
+    ],
+    solutions: [
+      "Sand rough areas smooth",
+      "Apply full-wall skim coat (2-3 mm thick)",
+      "Sand smooth after curing",
+      "Prime with sealer before painting"
+    ],
+    whenToCall: [
+      "The wall looks bumpy under sidelight",
+      "You want a premium modern flat finish",
+      "You're refreshing an old rental property"
+    ],
+    faqs: [
+      { q: "Is skim coat different from filler?", a: "Yes. Filler is for spot repairs. Skim coat is a full-wall thin plaster layer that gives a perfectly smooth premium finish." },
+      { q: "How thick is a skim coat?", a: "Standard skim coat is 2 to 3 mm thick. Very uneven walls may need multiple layers." },
+      { q: "Can I skip skim coat if I'm repainting anyway?", a: "You can, but paint alone doesn't hide bumps. Premium finishes always start with a proper skim." }
+    ]
+  },
+
+  // ── FLOORING extras ──────────────────────────────────────────────────────
+  {
+    slug: "vinyl-flooring-lifting-edges",
+    serviceSlug: "flooring",
+    title: "Vinyl or SPC Flooring Lifting at the Edges",
+    symptom: "Vinyl or SPC planks curl, lift, or gap at the edges — usually near doors, windows, or wet areas.",
+    costRange: "RM 250–RM 1,800+ depending on plank count",
+    urgency: "Medium",
+    causes: [
+      "Insufficient expansion gap at walls (needs 10 mm)",
+      "Direct sunlight overheating the material",
+      "Water seepage under the flooring",
+      "Original click-lock not fully engaged"
+    ],
+    solutions: [
+      "Lift affected planks",
+      "Trim expansion gap at walls",
+      "Dry the substrate fully before reinstall",
+      "Re-click planks with full engagement"
+    ],
+    whenToCall: [
+      "Multiple planks are lifting in the same area",
+      "You feel movement when walking on them",
+      "Water is visible under the plank edges"
+    ],
+    faqs: [
+      { q: "Can lifting vinyl be reused?", a: "Usually yes if not heat-damaged. We lift, dry, trim expansion gap and re-click the same planks." },
+      { q: "Do I need to replace the whole floor?", a: "Only if planks are heat-warped or waterlogged. Most cases are edge-lift only — fixable in 2-4 hours." },
+      { q: "How to prevent future lifting?", a: "Ensure 10 mm expansion gap at walls, avoid direct west-facing sunlight, and use rugs in wet-prone entryways." }
+    ]
+  },
+
+  // ── ROOF REPAIR extras ───────────────────────────────────────────────────
+  {
+    slug: "cracked-roof-tiles",
+    serviceSlug: "roof-repair",
+    title: "Cracked or Displaced Roof Tiles",
+    symptom: "Roof tiles visibly cracked, slipped, or displaced — often first noticed after a heavy storm.",
+    costRange: "RM 380–RM 1,800+ depending on tile count and access",
+    urgency: "High",
+    causes: [
+      "Storm impact or fallen tree branches",
+      "Foot traffic damage (previous contractor)",
+      "Age-related brittleness after 20+ years",
+      "Failed mortar bedding on ridge tiles"
+    ],
+    solutions: [
+      "Locate all cracked/displaced tiles with a drone survey",
+      "Replace individual tiles (colour-matched)",
+      "Re-bed loose ridge caps with fresh polymer mortar",
+      "Seal any hairline cracks with UV-stable sealant"
+    ],
+    whenToCall: [
+      "You've seen a leak after heavy rain",
+      "Tiles are visibly missing from the ground",
+      "The house is 20+ years old"
+    ],
+    faqs: [
+      { q: "Can you match my old roof tile colour?", a: "Yes — we source from Monier, Malaysian Mosaics and other common Malaysian brands. Very old tiles may need close-match rather than exact match." },
+      { q: "Should I replace the whole roof?", a: "Only if 30%+ of tiles are damaged, or the underlay is compromised. Most homes need only spot repair + ridge re-bed." },
+      { q: "How much for a full roof inspection?", a: "Standard roof inspection (drone + ground survey + written report): RM 250 to RM 450 depending on roof access and size." }
+    ]
+  },
+
+  // ── KITCHEN CABINET extras ───────────────────────────────────────────────
+  {
+    slug: "cabinet-door-sagging",
+    serviceSlug: "kitchen-cabinet",
+    title: "Kitchen Cabinet Doors Sagging or Misaligned",
+    symptom: "Cabinet doors don't close flush, sag on one side, or rub against neighbouring doors.",
+    costRange: "RM 150–RM 850+ depending on door count",
+    urgency: "Low",
+    causes: [
+      "Worn or loose Blum/Hafele hinges",
+      "Screws stripped in the cabinet body",
+      "Door swelling from steam/humidity",
+      "Cabinet body movement over time"
+    ],
+    solutions: [
+      "Tighten hinge screws (or use longer screws)",
+      "Replace worn hinges with soft-close Blum equivalents",
+      "Adjust hinge screws for perfect door alignment",
+      "Fill and re-drill stripped screw holes"
+    ],
+    whenToCall: [
+      "Multiple doors are affected",
+      "Hinges show visible movement or looseness",
+      "You want to upgrade to soft-close hinges"
+    ],
+    faqs: [
+      { q: "Should I replace all my hinges at once?", a: "If your cabinet is 5+ years old and one hinge failed, expect others to follow. Full hinge upgrade to soft-close typically RM 30 to RM 60 per door installed." },
+      { q: "Can you match my existing hinge brand?", a: "Yes. Blum and Hafele are the two most common in Malaysia and readily available in both standard and soft-close variants." },
+      { q: "How much for a full kitchen hinge upgrade?", a: "Typical 8-10 door kitchen: RM 350 to RM 620 for a complete soft-close hinge conversion." }
+    ]
+  },
+
+  // ── CARPENTRY extras ─────────────────────────────────────────────────────
+  {
+    slug: "wardrobe-door-jamming",
+    serviceSlug: "carpentry",
+    title: "Wardrobe Door Jamming or Not Closing",
+    symptom: "Sliding wardrobe doors stick on the track, or hinged doors won't shut without pushing hard.",
+    costRange: "RM 180–RM 650+ depending on door type",
+    urgency: "Low",
+    causes: [
+      "Dust and debris in sliding track",
+      "Worn top or bottom rollers",
+      "Door frame settlement",
+      "Panels swollen from humidity"
+    ],
+    solutions: [
+      "Vacuum and clean the sliding track",
+      "Replace worn top/bottom rollers",
+      "Realign the door frame with shim plates",
+      "Plane the door edge if swelling has occurred"
+    ],
+    whenToCall: [
+      "The door is off the track completely",
+      "Rollers show visible flat spots",
+      "Multiple wardrobe doors are affected"
+    ],
+    faqs: [
+      { q: "Can I fix a sliding wardrobe door myself?", a: "Cleaning the track and adjusting rollers is DIY-friendly. Roller replacement usually needs a technician for proper alignment." },
+      { q: "How much for wardrobe door repair?", a: "Standard sliding door realignment + track clean: RM 180 to RM 320. Roller replacement: RM 250 to RM 450 per door." },
+      { q: "Should I replace instead of repair?", a: "For 8+ year-old built-in wardrobes with warped panels or missing spare parts, replacement is often more economical." }
+    ]
+  },
+
+  // ── DOOR extras ──────────────────────────────────────────────────────────
+  {
+    slug: "digital-smart-lock-installation",
+    serviceSlug: "door",
+    title: "Digital / Smart Lock Installation on Existing Door",
+    symptom: "You bought a Samsung, Yale, Kaadas or similar smart lock and need it installed on your current door properly.",
+    costRange: "RM 250–RM 550+ per door",
+    urgency: "Low",
+    causes: [
+      "New smart lock upgrade for security",
+      "Old mechanical lock failing",
+      "Landlord requirement change",
+      "Airbnb / short-let management need"
+    ],
+    solutions: [
+      "Verify door thickness and lock spec compatibility",
+      "Chisel new mortise if the lock body dimensions differ",
+      "Wire the battery pack and connect the mobile app",
+      "Program access codes and test all modes"
+    ],
+    whenToCall: [
+      "You're installing your first smart lock",
+      "Your door is metal or a fire-rated door",
+      "The lock spec doesn't match existing door prep"
+    ],
+    faqs: [
+      { q: "Can any smart lock fit my door?", a: "Not always. Door thickness (35-55 mm typical), mortise/tubular type and material all matter. We check before installation." },
+      { q: "How long does smart lock install take?", a: "Standard door: 45 to 90 minutes. Metal or fire-rated doors: 90 to 150 minutes." },
+      { q: "Do you help set up the mobile app?", a: "Yes — we complete pairing with your phone, help set up user codes and fingerprint enrolment." }
+    ]
+  },
+
+  // ── LOCKSMITH extras ─────────────────────────────────────────────────────
+  {
+    slug: "locked-out-of-house",
+    serviceSlug: "locksmith",
+    title: "Locked Out of Your House",
+    symptom: "You've locked your keys inside or lost them, and you can't get into your house.",
+    costRange: "RM 180–RM 550+ depending on lock type and time",
+    urgency: "Emergency",
+    causes: [
+      "Keys locked inside",
+      "Lost house keys",
+      "Broken key stuck in cylinder",
+      "Battery-dead smart lock with no backup key"
+    ],
+    solutions: [
+      "Non-destructive lock picking (standard cylinders)",
+      "Cylinder removal + replacement",
+      "Broken key extraction",
+      "Emergency battery jump for smart locks"
+    ],
+    whenToCall: [
+      "You're locked out right now",
+      "You have small children or pets inside",
+      "It's night time and you're stranded"
+    ],
+    faqs: [
+      { q: "How fast can you arrive for a lockout?", a: "Typical response time within KL/Selangor is 30 to 75 minutes. Late-night after-hours call: 60 to 90 minutes." },
+      { q: "Will you damage my door?", a: "For 90% of standard cylinder locks, we use non-destructive picking. Only high-security or damaged locks may need the cylinder drilled." },
+      { q: "How much does after-hours lockout cost?", a: "Standard lockout: RM 180 to RM 380. After-hours (10 PM - 6 AM): RM 350 to RM 650. Emergency uplift is explained before we arrive." }
+    ]
+  },
+
+  // ── LIGHTING extras ──────────────────────────────────────────────────────
+  {
+    slug: "downlight-flickering",
+    serviceSlug: "lighting",
+    title: "LED Downlight Flickering or Dying Early",
+    symptom: "LED downlights flicker on/off, dim intermittently, or die months after installation.",
+    costRange: "RM 80–RM 320 per light",
+    urgency: "Medium",
+    causes: [
+      "Cheap unbranded LED driver failing",
+      "Incompatible dimmer switch",
+      "Loose connection at the ceiling junction",
+      "Voltage instability from TNB supply"
+    ],
+    solutions: [
+      "Replace with premium branded LED (Philips, Osram, Panasonic)",
+      "Upgrade to LED-compatible dimmer",
+      "Tighten and insulate the junction box",
+      "Install a whole-house surge protector"
+    ],
+    whenToCall: [
+      "Multiple downlights are affected",
+      "You had them installed less than 2 years ago",
+      "You smell burning near the ceiling"
+    ],
+    faqs: [
+      { q: "Are all LED downlights the same?", a: "No. Cheap unbranded LEDs die in 6-18 months. Branded (Philips, Osram, Panasonic) last 8-15 years with warranty." },
+      { q: "How much for premium LED downlight retrofit?", a: "Branded LED downlight supply + install: RM 120 to RM 220 per point including the ST-licensed electrician." },
+      { q: "Can I replace bulbs myself?", a: "For plug-in bulbs yes. Recessed LED downlights are hard-wired and should be replaced by a licensed electrician." }
+    ]
+  },
+
+  // ── CEILING FAN extras ───────────────────────────────────────────────────
+  {
+    slug: "ceiling-fan-wobbling",
+    serviceSlug: "ceiling-fan",
+    title: "Ceiling Fan Wobbling or Making Noise",
+    symptom: "Ceiling fan wobbles from side to side, or makes a clicking/humming noise while running.",
+    costRange: "RM 150–RM 450 per fan",
+    urgency: "Medium",
+    causes: [
+      "Fan blades out of balance",
+      "Loose fan hook or ceiling mount",
+      "Warped fan blade (heat/humidity)",
+      "Worn bearing in the motor"
+    ],
+    solutions: [
+      "Balance blades with a balancing kit",
+      "Tighten the fan hook screws",
+      "Replace warped blades (matched set)",
+      "Full motor service or replacement"
+    ],
+    whenToCall: [
+      "The fan is visibly moving up and down",
+      "You can hear scraping or grinding",
+      "The fan has fallen partially from the ceiling"
+    ],
+    faqs: [
+      { q: "Is a wobbling ceiling fan dangerous?", a: "Yes — a wobbling fan can eventually pull the mount out of the ceiling. Get it checked within a week." },
+      { q: "How much to balance a fan?", a: "Balancing + mount check: RM 150 to RM 250. Blade replacement: RM 250 to RM 450 depending on fan brand." },
+      { q: "Should I upgrade to a DC motor fan?", a: "DC motor fans use 60% less power, are quieter and last longer. Upgrade cost: RM 850 to RM 1,800 installed." }
+    ]
+  },
+
+  // ── EPOXY FLOORING extras ────────────────────────────────────────────────
+  {
+    slug: "epoxy-floor-yellowing",
+    serviceSlug: "epoxy-flooring",
+    title: "Epoxy Floor Yellowing or Fading",
+    symptom: "Once-clear or coloured epoxy floor develops a yellow tint, especially in areas exposed to sunlight.",
+    costRange: "RM 12–RM 28 per sq ft (topcoat refresh)",
+    urgency: "Low",
+    causes: [
+      "Standard epoxy is not UV-stable",
+      "West-facing window exposure",
+      "Skylight or roof sunlight direct on floor",
+      "Old age-related breakdown"
+    ],
+    solutions: [
+      "Light abrasion of the existing epoxy surface",
+      "Apply new UV-stable polyurethane topcoat",
+      "Add UV-stable pigment layer if colour change desired",
+      "Recoat every 5-7 years for high-UV areas"
+    ],
+    whenToCall: [
+      "The yellowing is aesthetically unacceptable",
+      "You're planning a business/showroom refresh",
+      "You want to switch from epoxy to PU"
+    ],
+    faqs: [
+      { q: "Why does epoxy yellow but polyurethane doesn't?", a: "Standard epoxy resin isn't UV-stable — aromatic bonds break down in sunlight. Polyurethane topcoats are UV-stable and stay clear." },
+      { q: "Can I recoat epoxy without hacking?", a: "Yes — we lightly abrade the surface and apply a fresh PU or epoxy topcoat. Same-day dry, next-day use." },
+      { q: "How long does an epoxy floor last?", a: "Interior areas: 8-15 years. High-UV areas: 3-5 years before recoat needed." }
+    ]
+  },
+
+  // ── GLASS ALUMINIUM extras ───────────────────────────────────────────────
+  {
+    slug: "shower-screen-water-leak",
+    serviceSlug: "glass-aluminium",
+    title: "Shower Screen Leaking Water onto the Floor",
+    symptom: "Water pools outside the shower screen after every use — from either the corner joint, bottom seal, or hinge line.",
+    costRange: "RM 180–RM 850+ depending on screen size",
+    urgency: "Medium",
+    causes: [
+      "Failed silicone at frame joints",
+      "Missing or worn magnetic seal strip",
+      "Frame not properly leveled during install",
+      "Cracked glass corner allowing seepage"
+    ],
+    solutions: [
+      "Strip and re-apply premium sanitary silicone",
+      "Replace worn magnetic seal strips",
+      "Adjust hinge alignment for proper closure",
+      "Full screen replacement if glass is compromised"
+    ],
+    whenToCall: [
+      "Water is leaking every shower use",
+      "The seal strip is visibly torn or missing",
+      "You have small children slipping on the wet floor"
+    ],
+    faqs: [
+      { q: "Can I just re-silicone the shower screen myself?", a: "For small touch-ups yes. For a full reseal, professional cleaning + curing time makes a big difference in longevity." },
+      { q: "How much to replace a shower screen seal?", a: "Magnetic seal strip replacement: RM 120 to RM 250. Full silicone reseal: RM 180 to RM 380 including drying time." },
+      { q: "When should I replace the whole shower screen?", a: "If the glass is cracked, the frame is corroded, or the hinges have visible play, replacement (RM 850 to RM 2,400) is safer than repair." }
+    ]
+  },
+
+  // ── CLEANING extras ──────────────────────────────────────────────────────
+  {
+    slug: "stubborn-bathroom-limescale",
+    serviceSlug: "cleaning",
+    title: "Stubborn Bathroom Limescale and Water Stains",
+    symptom: "White chalky deposits and hard-water stains build up on shower glass, taps and tiles that regular cleaning won't remove.",
+    costRange: "RM 180–RM 550+ per bathroom",
+    urgency: "Low",
+    causes: [
+      "Hard water in Klang Valley (calcium deposits)",
+      "Infrequent cleaning allowing buildup",
+      "No water softener installed",
+      "Rough tile surface trapping mineral deposits"
+    ],
+    solutions: [
+      "Deep clean with mild acid-based descaler",
+      "Steam clean grout lines",
+      "Polish chrome and glass with specialist compound",
+      "Recommend water softener for long-term prevention"
+    ],
+    whenToCall: [
+      "Regular cleaning is no longer effective",
+      "You're preparing for property viewing/sale",
+      "You want a professional deep clean before Hari Raya / CNY"
+    ],
+    faqs: [
+      { q: "Are your bathroom cleaning chemicals safe for family?", a: "Yes. We use eco-friendly descalers and always ventilate the bathroom fully. Chemical residue is fully rinsed before we leave." },
+      { q: "How long does a deep bathroom clean take?", a: "Standard bathroom deep clean: 2 to 4 hours per bathroom depending on scale severity." },
+      { q: "How to prevent limescale returning?", a: "Squeegee shower glass after every use, wipe taps weekly, and consider a whole-house water softener for long-term protection." }
+    ]
+  },
+
+  // ── DEEP CLEANING extras ─────────────────────────────────────────────────
+  {
+    slug: "move-out-condo-deep-clean",
+    serviceSlug: "deep-cleaning",
+    title: "Move-Out Condo Deep Cleaning",
+    symptom: "You're moving out and need the condo cleaned to a standard the landlord/agent will accept for your deposit refund.",
+    costRange: "RM 420–RM 1,800+ depending on unit size",
+    urgency: "Medium",
+    causes: [
+      "Standard tenant wear and tear",
+      "Grease buildup in kitchen",
+      "Bathroom scale buildup",
+      "Marks on walls from furniture and hooks"
+    ],
+    solutions: [
+      "Full room-by-room deep cleaning",
+      "Wall spot-cleaning for scuff marks",
+      "Kitchen degrease including stove and hood",
+      "Bathroom deep clean with descaler",
+      "Final inspection walkthrough with landlord/agent"
+    ],
+    whenToCall: [
+      "You have less than a week before handover",
+      "You want maximum deposit refund",
+      "The unit is 800+ sq ft"
+    ],
+    faqs: [
+      { q: "Do you handle wall touch-ups too?", a: "Basic scuff removal is included. Actual repainting is quoted separately if the wall damage is beyond cleaning." },
+      { q: "How much for a 3-bed condo move-out clean?", a: "Typical 900-1200 sq ft condo: RM 850 to RM 1,400 for a full deep clean including kitchen and 2 bathrooms." },
+      { q: "Do you provide a receipt for the landlord?", a: "Yes — full itemised invoice with company details, ideal for deposit refund negotiations." }
+    ]
+  },
+
+  // ── POST-RENOVATION CLEANING extras ──────────────────────────────────────
+  {
+    slug: "cement-splatter-tile-clean",
+    serviceSlug: "post-renovation-cleaning",
+    title: "Cement Splatter and Dust After Renovation",
+    symptom: "Renovation is complete but cement/paint splatter, silicone residue and construction dust are everywhere.",
+    costRange: "RM 650–RM 3,200+ depending on unit size",
+    urgency: "Medium",
+    causes: [
+      "Standard renovation debris",
+      "Silicone and adhesive drips",
+      "Cement splatter on windows/tiles",
+      "Fine dust throughout the unit"
+    ],
+    solutions: [
+      "Full HEPA-vacuum of every surface",
+      "Cement stain removal from tiles and glass",
+      "Silicone residue scraping and solvent clean",
+      "Full damp-mop and detail wipe-down",
+      "Air-cleaning with HEPA filter units"
+    ],
+    whenToCall: [
+      "Renovation just completed",
+      "You need to move in within a week",
+      "Contractor cleanup was inadequate"
+    ],
+    faqs: [
+      { q: "Does the contractor's cleanup count as post-renovation cleaning?", a: "Rarely. Standard contractor cleanup is basic debris removal. Post-renovation deep clean gets your unit truly move-in-ready." },
+      { q: "How long does post-renovation cleaning take?", a: "A standard 3-bed condo: 6-10 hours with a team of 2-3 cleaners. Larger units or heavy renovation: 1-2 full days." },
+      { q: "How much to remove cement from bathroom tiles?", a: "Included in the deep-clean scope. Standalone cement removal (if needed as a follow-up): RM 250 to RM 550 per bathroom." }
+    ]
+  },
+
+  // ── CCTV extras ──────────────────────────────────────────────────────────
+  {
+    slug: "cctv-not-recording-storage-full",
+    serviceSlug: "cctv",
+    title: "CCTV Not Recording or Showing Blank Feed",
+    symptom: "Your CCTV cameras show no live feed, are stuck on a static image, or the DVR/NVR won't play back recordings.",
+    costRange: "RM 180–RM 850+ depending on system fault",
+    urgency: "High",
+    causes: [
+      "Hard drive full or failed",
+      "Power supply failure to the DVR/NVR",
+      "Network cable disconnected",
+      "IP camera firmware issue"
+    ],
+    solutions: [
+      "Test hard drive and replace if failed",
+      "Replace DVR/NVR power supply",
+      "Test and re-terminate network cables",
+      "Firmware update via manufacturer app"
+    ],
+    whenToCall: [
+      "You need CCTV for insurance/incident report",
+      "Feed has been down more than 24 hours",
+      "You suspect intentional tampering"
+    ],
+    faqs: [
+      { q: "How long do CCTV hard drives last?", a: "Purpose-built CCTV hard drives (WD Purple, Seagate SkyHawk) typically last 4-7 years with 24/7 operation." },
+      { q: "How much to replace a full 8-channel DVR system?", a: "Full 8-channel DVR + hard drive + install: RM 850 to RM 1,800 excluding cameras." },
+      { q: "Can you recover footage from a failed DVR?", a: "For hard drive failures, professional data recovery can retrieve most footage — RM 350 to RM 1,200 depending on damage." }
+    ]
+  },
+
+  // ── AUTOGATE extras ──────────────────────────────────────────────────────
+  {
+    slug: "autogate-remote-not-working",
+    serviceSlug: "autogate",
+    title: "Auto Gate Remote Not Working",
+    symptom: "The auto gate remote no longer opens the gate, or works only intermittently from a very short distance.",
+    costRange: "RM 120–RM 550+ depending on cause",
+    urgency: "Medium",
+    causes: [
+      "Weak remote battery",
+      "Receiver antenna corroded",
+      "Remote code mismatch after motor reset",
+      "Motor control board failure"
+    ],
+    solutions: [
+      "Replace remote battery (CR2032 typical)",
+      "Clean or replace receiver antenna",
+      "Re-programme remote to the motor",
+      "Replace control board if necessary"
+    ],
+    whenToCall: [
+      "You've lost your remote and need a new one paired",
+      "Multiple remotes stopped working at the same time",
+      "The gate opens by itself intermittently"
+    ],
+    faqs: [
+      { q: "Can any remote be paired to my gate?", a: "Only remotes matching your motor brand (SEIP, DEA, AutoGate, DASPI, etc.). We keep the common Malaysian codes in stock." },
+      { q: "How much for a new autogate remote?", a: "Standard remote + programming: RM 120 to RM 250. Rolling-code remote: RM 250 to RM 380." },
+      { q: "Should I upgrade to smartphone gate control?", a: "Wi-Fi gate controllers are RM 350 to RM 650 installed and let you open the gate from anywhere using an app." }
+    ]
+  },
+
+  // ── WELDING extras ───────────────────────────────────────────────────────
+  {
+    slug: "loose-metal-gate-hinges",
+    serviceSlug: "welding",
+    title: "Loose or Sagging Metal Gate Hinges",
+    symptom: "Your metal gate sags, drags on the ground, or the hinges are visibly loose or corroded.",
+    costRange: "RM 250–RM 1,200+ depending on gate size",
+    urgency: "Medium",
+    causes: [
+      "Original hinge weld failed",
+      "Rust corroded the hinge pin",
+      "Gate weight exceeded original spec",
+      "Concrete post movement"
+    ],
+    solutions: [
+      "Grind out old weld and clean surface",
+      "Weld heavy-duty replacement hinges",
+      "Prime and paint the welded area",
+      "Add mid-span support if the gate is unusually wide"
+    ],
+    whenToCall: [
+      "The gate is dragging on the ground",
+      "You can see rust flakes at the hinge",
+      "The gate is close to detaching from the post"
+    ],
+    faqs: [
+      { q: "Can you weld on-site?", a: "Yes. We bring portable arc/MIG welders and can complete most gate hinge repairs in 2-4 hours on-site." },
+      { q: "Will the welded area rust again?", a: "Not if properly primed with rust-inhibiting primer + 2 coats of enamel paint — typical warranty 12-24 months." },
+      { q: "Should I replace the whole gate?", a: "Only if the frame is heavily rusted. Hinge-only repair (RM 350 to RM 850) usually restores the gate for another 10-15 years." }
+    ]
+  },
+
+  // ── WINDOW REPAIR extras ─────────────────────────────────────────────────
+  {
+    slug: "stuck-sliding-window",
+    serviceSlug: "window-repair",
+    title: "Sliding Window Stuck or Jamming",
+    symptom: "Aluminium sliding windows won't slide, need excessive force, or come off the track when moved.",
+    costRange: "RM 180–RM 550+ per window",
+    urgency: "Low",
+    causes: [
+      "Dust and dirt in the track",
+      "Worn or broken roller wheels",
+      "Frame corrosion from coastal moisture",
+      "Weight of glass distorting the frame"
+    ],
+    solutions: [
+      "Vacuum and lubricate the track",
+      "Replace worn nylon rollers",
+      "Straighten distorted frame with careful adjustment",
+      "Install anti-corrosion coating"
+    ],
+    whenToCall: [
+      "You've had the windows more than 10 years",
+      "Rollers are visibly cracked or missing",
+      "Frame is corroded to the point of flaking"
+    ],
+    faqs: [
+      { q: "Can I fix a stuck sliding window myself?", a: "Track cleaning and lubricating are DIY-friendly. Roller replacement usually requires lifting the window sash — better done professionally." },
+      { q: "How much to replace sliding window rollers?", a: "Standard replacement: RM 180 to RM 320 per window including new rollers and track lubrication." },
+      { q: "Should I upgrade to casement windows instead?", a: "Casement (crank) windows seal better and are more secure. Full conversion: RM 850 to RM 1,800 per window." }
+    ]
   }
 ];
