@@ -125,7 +125,13 @@
     "faqHeading": "Service FAQs",
     "viewPricing": "View pricing & details",
     "notFound": "Service not found.",
-    "backToServices": "Back to all services"
+    "backToServices": "Back to all services",
+    "directoryEyebrow": "28 Services • 3 Languages",
+    "directoryTitle1": "Every Home Service You Need.",
+    "directoryTitle2": "All in One Place.",
+    "directorySubtitle": "From painting and plumbing to full renovation, electrical, cleaning, and security — discover market-rate pricing, real warranties, and same-day availability across KL & Selangor.",
+    "browseAll": "Browse All Services",
+    "viewPricingGuide": "View Pricing Guide"
   },
   "contact": {
     "pageTitle": "Contact & Booking",
@@ -193,5 +199,39 @@
     "cta": "Chat With Dispatch",
     "aria": "Open WhatsApp chat",
     "close": "Close"
+  },
+  "about": {
+    "eyebrow": "Our Corporate Story",
+    "pageTitle": "About KL Servis Rumah",
+    "intro": "At KL Servis Rumah, we believe that home maintenance should be straightforward, premium, and stress-free. We provide a high standard of painting, ceiling repair, plumbing, waterproofing, and handyman services across Kuala Lumpur & Selangor with insured operations and background-verified tradesmen.",
+    "standardsHeading": "Company & Service Standards",
+    "positioningLabel": "Business Positioning",
+    "positioningValue": "Established local home services company",
+    "pricingLabel": "Pricing Standard",
+    "pricingValue": "Transparent market-rate quotations",
+    "officeLabel": "Office Area",
+    "statusLabel": "Operational Status",
+    "statusValue": "Active & Fully Insured",
+    "missionHeading": "Our Core Mission",
+    "missionBody": "Historically, the Malaysian home services market has been fragmented, with homeowners struggling against unreliable independent contractors, sudden price inflation, and messy cleanups. We built KL Servis Rumah on structured, premium, and transparent delivery guidelines. We aim to elevate local home care by guaranteeing itemized fixed pricing, using superior SIRIM-certified materials, and deploying background-checked specialists who clean up entirely after themselves.",
+    "valuesHeading": "Our Core Values",
+    "values": {
+      "team": {
+        "title": "Highly Skilled Local Tradesmen",
+        "desc": "We do not hire raw, unverified contract laborers. Every builder, painter, and plumber is background-checked and highly trained."
+      },
+      "warranty": {
+        "title": "Ironclad Warranties",
+        "desc": "We stand firmly behind our work. If any joint leaks or ceiling sags within our warranty period, we fix it free of charge."
+      },
+      "materials": {
+        "title": "Premium Engineering Materials",
+        "desc": "From SIRIM-certified pipes to premium paints and molly toggle wall anchors, we select only industrial-grade supplies."
+      },
+      "cleanliness": {
+        "title": "Meticulous Cleanliness",
+        "desc": "We mask borders and lay down thick plastic drop sheets to guarantee that we leave your property as spotless as we found it."
+      }
+    }
   }
 }

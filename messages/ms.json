@@ -125,7 +125,13 @@
     "faqHeading": "Soalan Lazim Perkhidmatan",
     "viewPricing": "Lihat harga & butiran",
     "notFound": "Perkhidmatan tidak dijumpai.",
-    "backToServices": "Kembali ke semua perkhidmatan"
+    "backToServices": "Kembali ke semua perkhidmatan",
+    "directoryEyebrow": "28 Perkhidmatan • 3 Bahasa",
+    "directoryTitle1": "Setiap Perkhidmatan Rumah Yang Anda Perlukan.",
+    "directoryTitle2": "Semua Di Satu Tempat.",
+    "directorySubtitle": "Daripada pengecatan dan paip kepada pengubahsuaian penuh, elektrik, pembersihan, dan keselamatan — temui harga pasaran, jaminan sebenar, dan ketersediaan hari yang sama di seluruh KL & Selangor.",
+    "browseAll": "Semak Semua Perkhidmatan",
+    "viewPricingGuide": "Lihat Panduan Harga"
   },
   "contact": {
     "pageTitle": "Hubungi & Tempahan",
@@ -193,5 +199,39 @@
     "cta": "Sembang Dengan Dispatch",
     "aria": "Buka sembang WhatsApp",
     "close": "Tutup"
+  },
+  "about": {
+    "eyebrow": "Kisah Korporat Kami",
+    "pageTitle": "Tentang KL Servis Rumah",
+    "intro": "Di KL Servis Rumah, kami percaya bahawa penyelenggaraan rumah patut mudah, premium, dan bebas tekanan. Kami menyediakan standard tinggi perkhidmatan pengecatan, pembaikan siling, paip, kalis air, dan tukang di seluruh Kuala Lumpur & Selangor dengan operasi diinsuranskan dan tukang disaring latar belakang.",
+    "standardsHeading": "Piawaian Syarikat & Perkhidmatan",
+    "positioningLabel": "Kedudukan Perniagaan",
+    "positioningValue": "Syarikat perkhidmatan rumah tempatan yang mantap",
+    "pricingLabel": "Piawaian Harga",
+    "pricingValue": "Sebut harga pasaran yang telus",
+    "officeLabel": "Kawasan Pejabat",
+    "statusLabel": "Status Operasi",
+    "statusValue": "Aktif & Diinsuranskan Sepenuhnya",
+    "missionHeading": "Misi Teras Kami",
+    "missionBody": "Secara sejarah, pasaran perkhidmatan rumah Malaysia telah berpecah-belah, dengan pemilik rumah bergelut dengan kontraktor bebas yang tidak boleh dipercayai, kenaikan harga mendadak, dan pembersihan yang bersepah. Kami membina KL Servis Rumah berdasarkan garis panduan penyampaian yang berstruktur, premium, dan telus. Kami bertujuan meningkatkan penjagaan rumah tempatan dengan menjamin harga tetap terperinci, menggunakan bahan bertauliah SIRIM yang unggul, dan menggunakan pakar yang disaring latar belakang yang membersihkan sepenuhnya selepas kerja mereka.",
+    "valuesHeading": "Nilai Teras Kami",
+    "values": {
+      "team": {
+        "title": "Tukang Tempatan Berkemahiran Tinggi",
+        "desc": "Kami tidak mengupah buruh kontrak mentah yang tidak disahkan. Setiap pembina, pengecat, dan jurutera paip disaring latar belakang dan dilatih dengan baik."
+      },
+      "warranty": {
+        "title": "Jaminan Yang Kukuh",
+        "desc": "Kami berdiri teguh di belakang kerja kami. Jika mana-mana sendi bocor atau siling melendut dalam tempoh jaminan kami, kami membaikinya secara percuma."
+      },
+      "materials": {
+        "title": "Bahan Kejuruteraan Premium",
+        "desc": "Daripada paip bertauliah SIRIM kepada cat premium dan sauh dinding molly toggle, kami hanya memilih bekalan gred perindustrian."
+      },
+      "cleanliness": {
+        "title": "Kebersihan Yang Teliti",
+        "desc": "Kami menutup sempadan dan meletakkan kain penutup plastik tebal untuk menjamin kami meninggalkan hartanah anda sebersih semasa kami tiba."
+      }
+    }
   }
 }

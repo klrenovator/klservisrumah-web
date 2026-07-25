@@ -3,6 +3,7 @@ import { siteConfig } from "@/config/site";
 import { MultiStepBookingForm } from "@/components/booking/multi-step-booking-form";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { ShieldAlert, Phone, Mail, Clock, MapPin } from "lucide-react";
+import { ContactHeroHeading } from "@/components/sections/contact-hero-heading";
 
 export const metadata = {
   title: "Book Professional Home Services KL & Selangor",
@@ -20,17 +21,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             
             <div className="lg:col-span-5 flex flex-col gap-8">
-              <div className="flex flex-col gap-4">
-                <span className="text-xs font-bold text-[#0EA5E9] uppercase tracking-widest bg-[#0EA5E9]/10 px-4.5 py-1.5 rounded-full w-fit">
-                  Get In Touch
-                </span>
-                <h1 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
-                  Book Your Service
-                </h1>
-                <p className="text-sm sm:text-base text-[#475569] leading-relaxed font-semibold">
-                  Complete our secure booking form. Our automated system compiles your details and opens our WhatsApp Dispatch Desk instantly for slot confirmation.
-                </p>
-              </div>
+              <ContactHeroHeading />
 
               <hr className="border-slate-200/60" />
 

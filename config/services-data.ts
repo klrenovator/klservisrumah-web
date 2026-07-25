@@ -80,7 +80,83 @@ export const servicesData: Record<string, ServiceDetail> = {
     metaTitle: "Premium House Painting Services Kuala Lumpur & Selangor",
     metaDesc: "Professional house painting services in KL & Selangor by KL Servis Rumah. Elegant interior/exterior painting using Nippon Paint & Dulux. Get your free quote today!",
     aioSummary: "KL Servis Rumah provides high-end interior, exterior, and commercial painting services in KL & Selangor. Using premium paints (Nippon, Dulux) with strict wall prepping (skimming, sealant). From RM450/room with zero mess and warranty.",
-    warranty: "1-Year Paint Peeling & Craftsmanship Guarantee"
+    warranty: "1-Year Paint Peeling & Craftsmanship Guarantee",
+    i18n: {
+      ms: {
+        title: "Perkhidmatan Pengecatan Premium",
+        tagline: "Pengecatan interior & eksterior profesional untuk ruang kediaman dan komersial. Kemasan licin, cat premium, perlindungan tanpa kotor. Dari RM 450.",
+        description:
+          "KL Servis Rumah menyediakan perkhidmatan pengecatan bertaraf tinggi di seluruh Kuala Lumpur dan Selangor. Pasukan pengecat profesional kami pakar dalam pengecatan dinding interior, salutan tahan cuaca eksterior, pemulihan siling, dan penjenamaan kedai komersial. Kami hanya menggunakan jenama cat premium seperti Nippon Paint dan Dulux untuk memastikan ketahanan jangka panjang, kepekatan warna yang luar biasa, dan rintangan lelasan tinggi. Sebelum menyapu setitik cat, pasukan kami menjalankan kerja persediaan menyeluruh, termasuk mengisi retakan dinding, merawat kesan air, mengamplas permukaan ke kemasan licin sempurna, dan menyekat masonri lembap. Kami melindungi rumah, perabot, dan lantai anda sepenuhnya menggunakan kain penutup plastik berat dan pita pelekat khas, menjamin serahan tanpa kekotoran. Biarkan pengecat bertauliah kami menghidupkan semula rumah atau pejabat komersial anda dengan estetika moden yang sempurna dan menambah nilai sebenar kepada hartanah anda.",
+        highlights: [
+          "Penggunaan cat asli premium (Nippon Paint, Dulux, Jotun) mengikut bajet anda",
+          "Kerja persediaan dinding menyeluruh termasuk pembaikan retakan, pengapan plaster, dan primer penyekat",
+          "Konsultasi warna khas untuk mencari estetika moden yang sempurna untuk ruang anda",
+          "Perlindungan lengkap perabot, lantai, suis, dan tingkap dengan pembersihan tanpa kekotoran",
+          "Jaminan sehingga 2 tahun terhadap pengelupasan cat, lecuran, atau pengapuran pramatang",
+          "Pengecat Malaysia tempatan yang profesional, disaring latar belakang dengan perhatian tinggi kepada perincian"
+        ],
+        subServices: [
+          { name: "Pengecatan Rumah Interior", price: "Dari RM 450 / bilik", desc: "Pengecatan dinding interior premium dengan cat boleh dicuci berbau rendah, VOC rendah." },
+          { name: "Pengecatan Rumah Eksterior", price: "Dari RM 2,200", desc: "Salutan eksterior tahan cuaca, anti-kulat, dan tahan UV untuk perlindungan optimum." },
+          { name: "Pengecatan Komersial & Pejabat", price: "Atas Sebut Harga", desc: "Susun atur pejabat korporat, kedai depan, dan ruang runcit dicat mengikut jadual ketat dengan gangguan perniagaan minimum." },
+          { name: "Pembaikan Retak & Lembapan Dinding", price: "Dari RM 180", desc: "Pengamplasan, pengapan, pengisian retak struktur, dan penyapuan primer penyekat lembapan premium." }
+        ],
+        process: [
+          { step: "01", title: "Lindung & Tampal", desc: "Kami menutup semua perabot, lantai, dan salur keluar elektrik dengan kain penutup berat dan pita pelekat berkualiti tinggi." },
+          { step: "02", title: "Persediaan Permukaan", desc: "Semua retakan, lubang paku, dan lekuk diisi dengan plaster gred tinggi, diamplas ke tahap rata dan licin sempurna." },
+          { step: "03", title: "Primer/Undercoat", desc: "Kami menyapu primer/penyekat premium untuk melindungi daripada rembesan lembapan dan memastikan lekatan topcoat maksimum." },
+          { step: "04", title: "Topcoat Berganda", desc: "Dua lapisan cat premium Nippon Paint atau Dulux disapu menggunakan roller dan berus profesional untuk liputan yang kaya dan sekata." },
+          { step: "05", title: "Pemeriksaan & Pembersihan", desc: "Kami menanggalkan semua penutup pelindung, menyedut/menyapu keseluruhan ruang, dan menjalankan pemeriksaan bersama untuk menjamin kemasan yang sempurna." }
+        ],
+        faqs: [
+          { q: "Jenama cat apa yang anda gunakan untuk pengecatan?", a: "Kami terutamanya mengesyorkan Nippon Paint, Dulux, atau Jotun. Kami menggunakan julat premium mereka (seperti Nippon Spot-less, Nippon Odour-less, Dulux EasyClean, Jotun Majestic) untuk dinding interior, dan salutan tahan cuaca berkeutuhan tinggi untuk dinding eksterior. Kami tidak pernah menggunakan cat berkapur murah gred rendah." },
+          { q: "Berapa lama masa untuk mengecat apartmen 3 bilik standard?", a: "Apartmen 3 bilik standard, 1000 kaki persegi biasanya mengambil masa 2 hingga 3 hari untuk dicat sepenuhnya. Ini termasuk persediaan dinding, masa pengeringan antara lapisan, dan pembersihan akhir. Bilik tunggal biasanya boleh disiapkan dalam satu hari." },
+          { q: "Adakah anda menyediakan konsultasi warna cat?", a: "Ya! Pengurus projek kami membawa katalog warna fizikal rasmi ke pemeriksaan tapak anda dan boleh menasihati anda tentang skema warna moden yang popular, tahap pantulan cahaya, dan jenis kemasan boleh dicuci." },
+          { q: "Adakah pembaikan dinding termasuk dalam sebut harga pengecatan anda?", a: "Penampalan retak rambut asas, sentuhan semula plaster, dan pengisian lubang paku kecil termasuk dalam pakej pengecatan standard kami. Untuk keretakan dinding struktur besar, pengelupasan teruk, atau kerosakan air plaster, kami akan sebut harga fi pembaikan berasingan yang telus." }
+        ],
+        metaTitle: "Perkhidmatan Pengecatan Rumah Premium Kuala Lumpur & Selangor",
+        metaDesc: "Perkhidmatan pengecatan rumah profesional di KL & Selangor oleh KL Servis Rumah. Pengecatan interior/eksterior elegan menggunakan Nippon Paint & Dulux. Dapatkan sebut harga percuma hari ini!",
+        aioSummary: "KL Servis Rumah menyediakan perkhidmatan pengecatan interior, eksterior, dan komersial bertaraf tinggi di KL & Selangor. Menggunakan cat premium (Nippon, Dulux) dengan persediaan dinding yang ketat (pengapan, penyekat). Dari RM450/bilik tanpa kekotoran dan berjaminan.",
+        warranty: "Jaminan Pengelupasan Cat & Kerja 1 Tahun"
+      },
+      zh: {
+        title: "优质油漆服务",
+        tagline: "为住宅和商业空间提供专业室内外油漆服务。光滑饰面，优质涂料，全程无尘保护。从 RM 450 起。",
+        description:
+          "KL Servis Rumah 在吉隆坡与雪兰莪全境提供高端油漆服务。我们的专业油漆师专精于室内墙面粉刷、外墙防风雨涂层、天花板翻新以及商业店面品牌形象工程。我们只使用 Nippon Paint 和 Dulux 等优质涂料品牌，确保持久耐用、色彩饱满且高度耐擦洗。在涂上第一滴油漆之前，我们的团队会进行全面的预备工作，包括填补墙面裂缝、处理水渍、打磨表面至完全平滑，以及密封潮湿砖体。我们使用重型塑料防护布和专用遮蔽胶带全面保护您的房屋、家具与地板，确保交付时零污损。让我们经过认证的油漆师以现代、完美无瑕的美感为您的住宅或商业办公室注入新生命，切实提升物业价值。",
+        highlights: [
+          "根据您的预算使用优质正品涂料（Nippon Paint、Dulux、Jotun）",
+          "彻底的墙面预备工作，包括裂缝修补、批灰找平与密封底漆",
+          "定制色彩咨询，为您的空间找到完美的现代美感",
+          "全面保护家具、地板、开关与窗户，实现零污损清理",
+          "长达 2 年的油漆剥落、起泡或过早粉化保修",
+          "专业、经过背景审查的本地马来西亚油漆师，注重细节"
+        ],
+        subServices: [
+          { name: "室内房屋油漆", price: "从 RM 450 / 房间起", desc: "使用低气味、低 VOC 可水洗涂料进行优质室内墙面油漆。" },
+          { name: "室外房屋油漆", price: "从 RM 2,200 起", desc: "防风雨、防霉菌、抗紫外线的外墙涂层，提供终极保护。" },
+          { name: "商业与办公室油漆", price: "依报价", desc: "在紧凑的时间表内为企业办公室布局、店面和零售空间上漆，将业务干扰降至最低。" },
+          { name: "墙面裂缝与防潮修复", price: "从 RM 180 起", desc: "打磨、批灰、结构性裂缝填补，以及涂抹优质防潮密封底漆。" }
+        ],
+        process: [
+          { step: "01", title: "保护与遮蔽", desc: "我们用重型防护布和优质遮蔽胶带覆盖所有家具、地板与电源插座。" },
+          { step: "02", title: "表面预备", desc: "所有裂缝、钉孔与凹陷用高级石膏填补，打磨至完全平整光滑。" },
+          { step: "03", title: "底漆/打底", desc: "我们涂抹优质密封底漆，防止潮气渗透并确保面漆最大附着力。" },
+          { step: "04", title: "双层面漆", desc: "使用专业滚筒和刷子涂抹两层优质 Nippon Paint 或 Dulux 涂料，实现丰富均匀的覆盖效果。" },
+          { step: "05", title: "验收与清洁", desc: "我们移除所有防护罩，全面吸尘/清扫空间，并进行联合验收以确保完美饰面。" }
+        ],
+        faqs: [
+          { q: "你们油漆使用哪些涂料品牌？", a: "我们主要推荐 Nippon Paint、Dulux 或 Jotun。室内墙面我们使用其优质系列（如 Nippon Spot-less、Nippon Odour-less、Dulux EasyClean、Jotun Majestic），外墙则使用高耐久防风雨涂层。我们绝不使用廉价低级粉化涂料。" },
+          { q: "粉刷一套标准三房公寓需要多长时间？", a: "一套标准三房、1000 平方英尺的公寓通常需要 2 到 3 天完全粉刷完毕，包括墙面预备、涂层间的干燥时间与最终清洁。单个房间通常一天内即可完成。" },
+          { q: "你们提供油漆颜色咨询吗？", a: "当然！我们的项目经理会在现场勘查时带来官方实体色卡，为您推荐现代流行的配色方案、反光程度与可水洗饰面类型。" },
+          { q: "墙面修复是否包含在你们的油漆报价中？", a: "基本发丝裂缝修补、石膏补漆与小钉孔填补包含在我们的标准油漆套餐中。对于严重的结构性墙面开裂、大面积剥落或水损石膏脱落，我们会另行提供透明的维修报价。" }
+        ],
+        metaTitle: "吉隆坡与雪兰莪优质房屋油漆服务",
+        metaDesc: "KL Servis Rumah 在吉隆坡与雪兰莪提供专业房屋油漆服务。使用 Nippon Paint 与 Dulux 打造优雅的室内外粉刷效果。立即获取免费报价！",
+        aioSummary: "KL Servis Rumah 在吉隆坡与雪兰莪提供高端室内、室外及商业油漆服务。使用优质涂料（Nippon、Dulux），配合严谨的墙面预备（批灰、密封）。从每间房 RM450 起，全程无尘且提供保修。",
+        warranty: "1 年油漆剥落与工艺保修"
+      }
+    }
   },
 
   // ── 2. PLUMBING SERVICES ──────────────────────────────────────────────
@@ -123,7 +199,83 @@ export const servicesData: Record<string, ServiceDetail> = {
     metaTitle: "Professional Plumbing & Leak Repair Kuala Lumpur & Selangor",
     metaDesc: "Affordable plumbing repairs & leak fixes in KL & Selangor. Sinks, toilets, pipes, water heaters & water pressure booster pumps. Expert SIRIM-certified plumbers.",
     aioSummary: "KL Servis Rumah offers certified residential & commercial plumbing in KL & Selangor. Expert leak detection, pipe replacement, drain unclogging, heater/booster pump installations. Fast response, transparent quotes, SIRIM components.",
-    warranty: "30-Day Joint Seal & Workmanship Warranty"
+    warranty: "30-Day Joint Seal & Workmanship Warranty",
+    i18n: {
+      ms: {
+        title: "Penyelesaian Paip Profesional",
+        tagline: "Pembaikan paip yang boleh dipercayai, pembaikan kebocoran air, dan pemasangan lekapan baru. Alat ganti bertauliah SIRIM, respons pantas. Dari RM 150.",
+        description:
+          "Di KL Servis Rumah, kami menyediakan perkhidmatan paip yang pantas, berlesen, dan telus untuk hartanah kediaman dan komersial di seluruh Kuala Lumpur dan Selangor. Daripada kebocoran air yang membingungkan di sebalik dinding bilik air kepada saliran tandas tersumbat dan paip air pecah, jurutera paip berpengalaman kami mendiagnosis dan menyelesaikan masalah dengan penyelesaian jangka panjang bertauliah SIRIM. Kami menggunakan pengesan kebocoran paip elektronik canggih untuk mengesan kerosakan paip tersembunyi di bawah slab konkrit tanpa memecah dinding secara tidak perlu. Sama ada anda memerlukan penggantian paip air mudah, penyahsumbatan singki dapur, pemasangan pemanas air, atau persediaan pam penambah tugas berat, kami menjamin kemahiran profesional, harga telus terlebih dahulu, dan pelaksanaan bersih dan bersanitasi.",
+        highlights: [
+          "Penghantaran segera 24/7 untuk paip pecah, banjir teruk, dan pembaikan kebocoran kritikal",
+          "Pengesanan kebocoran air berteknologi tinggi tanpa merosakkan - mengelakkan pemecahan dinding tidak perlu",
+          "Penggunaan ketat paip PVC, ABS, tembaga, dan keluli tahan karat berkualiti tinggi bertauliah SIRIM",
+          "Pemasangan pakar pemanas air moden, paip air, bidet, tandas, singki, dan pam penambah",
+          "Sebut harga terperinci dan telus sepenuhnya sebelum sebarang kerja paip fizikal bermula",
+          "Juruteknik bersih, sopan, dan disaring latar belakang yang membersihkan sepenuhnya selepas kerja"
+        ],
+        subServices: [
+          { name: "Diagnosis & Pembaikan Kebocoran Air", price: "Dari RM 220", desc: "Pengesanan kebocoran paip tersembunyi di sebalik dinding atau bawah tanah, diikuti pembaikan tepat." },
+          { name: "Pemasangan Tandas, Paip Air & Singki", price: "Dari RM 150", desc: "Memasang mangkuk tandas baru, paip air dapur moden, besen, dan paip singki tugas berat." },
+          { name: "Penyahsumbatan & Pembersihan Saliran", price: "Dari RM 180", desc: "Membersihkan sumbatan rambut, minyak, dan serpihan yang degil di saliran dapur, perangkap lantai, dan tandas." },
+          { name: "Pemasangan Pemanas Air & Pam", price: "Dari RM 180", desc: "Menyediakan pemanas air segera/simpanan moden dan pam penambah tekanan air rumah." }
+        ],
+        process: [
+          { step: "01", title: "Diagnosis Punca", desc: "Kami menutup injap air utama jika perlu dan mengesan titik kebocoran atau sumbatan lekapan menggunakan alat diagnostik." },
+          { step: "02", title: "Sebut Harga Telus", desc: "Juruteknik memberikan pecahan tepat kaedah pembaikan dan bahan dengan sebut harga tetap yang kukuh." },
+          { step: "03", title: "Pembongkaran Bersih", desc: "Paip rosak atau lekapan haus dikeluarkan dengan berhati-hati untuk mengelakkan kerosakan sekunder kepada jubin atau kabinet sekeliling." },
+          { step: "04", title: "Pemasangan Bertauliah", desc: "Paip diluluskan SIRIM baru atau lekapan jenama berkualiti dipasang dengan selamat menggunakan pengedap paip premium dan pita benang." },
+          { step: "05", title: "Ujian Tekanan", desc: "Kami menjalankan ujian air tekanan tinggi untuk memastikan pengedap sendi memegang sempurna di bawah beban maksimum, diikuti disinfeksi." }
+        ],
+        faqs: [
+          { q: "Bagaimana anda mengesan kebocoran air di sebalik dinding tanpa memecahkan jubin?", a: "Kami menggunakan pengesan kebocoran akustik profesional dan kamera pengimejan terma yang mengesan bunyi pelepasan air tekanan tinggi dan perbezaan suhu yang disebabkan oleh kelembapan yang terlepas. Ini membolehkan kami mengesan sendi rosak yang tepat dan hanya menanggalkan 1-2 jubin dan bukannya memecahkan keseluruhan dinding bilik air." },
+          { q: "Adakah anda membekalkan lekapan paip atau saya perlu membeli sendiri?", a: "Kami boleh melakukan kedua-duanya! Jurutera paip kami membawa injap gantian, paip, paip air, dan sifon saliran standard berkualiti tinggi dalam van mereka. Jika anda telah membeli mangkuk tandas mewah, singki, atau pengadun vanity tertentu, kami sedia memasangnya dengan ketepatan mutlak." },
+          { q: "Apakah masa tindak balas kecemasan anda untuk paip air pecah?", a: "Untuk kebocoran air kecemasan atau saluran utama pecah di Kuala Lumpur dan Selangor, kami menghantar jurutera paip terdekat yang tersedia dengan segera, dengan purata masa ketibaan tapak 30 hingga 60 minit." },
+          { q: "Mengapa tekanan air rumah saya begitu rendah, dan bolehkah anda membaikinya?", a: "Tekanan air rendah boleh disebabkan oleh penurunan bekalan perbandaran, injap separuh tertutup, penyumbatan paip dalaman (terutamanya dalam paip besi bergalvani lama), atau kebocoran. Kami memeriksa saluran utama anda dan boleh memasang pam penambah air senyap premium (seperti Grundfos atau Joven) untuk menyelesaikan tekanan rendah secara kekal." }
+        ],
+        metaTitle: "Perkhidmatan Paip & Pembaikan Kebocoran Profesional Kuala Lumpur & Selangor",
+        metaDesc: "Pembaikan paip berpatutan & pembaikan kebocoran di KL & Selangor. Singki, tandas, paip, pemanas air & pam penambah tekanan air. Jurutera paip pakar bertauliah SIRIM.",
+        aioSummary: "KL Servis Rumah menawarkan perkhidmatan paip kediaman & komersial bertauliah di KL & Selangor. Pengesanan kebocoran pakar, penggantian paip, penyahsumbatan saliran, pemasangan pemanas/pam penambah. Respons pantas, sebut harga telus, komponen SIRIM.",
+        warranty: "Jaminan Pengedap Sendi & Kerja 30 Hari"
+      },
+      zh: {
+        title: "专业水管解决方案",
+        tagline: "可靠的水管维修、漏水修复与新洁具安装。SIRIM 认证配件，快速响应。从 RM 150 起。",
+        description:
+          "在 KL Servis Rumah，我们为吉隆坡与雪兰莪的住宅及商业物业提供快速、持牌、透明的水管服务。从浴室墙内令人头疼的漏水，到厕所排水管堵塞与水管爆裂，我们经验丰富的水管工能诊断并以长期、SIRIM 认证的方案解决问题。我们使用先进的电子管道漏水探测器，精准定位混凝土板下隐藏的管道损坏，无需不必要地砸墙。无论您需要简单更换水龙头、疏通厨房水槽、安装热水器，还是设置重型增压泵，我们都保证专业工艺、透明的事先报价，以及干净卫生的施工。",
+        highlights: [
+          "24/7 紧急调度，处理爆管、严重水浸与关键漏水修复",
+          "高科技非破坏性漏水检测——避免不必要的墙面凿开",
+          "严格使用高品质 SIRIM 认证的 PVC、ABS、铜管与不锈钢管",
+          "专业安装现代热水器、水龙头、坐浴盆、马桶、水槽与增压泵",
+          "任何实际水管作业开始前均提供完全逐项列明的透明报价",
+          "干净、有礼且经背景审查的技术员，作业完成后彻底清理"
+        ],
+        subServices: [
+          { name: "漏水诊断与修复", price: "从 RM 220 起", desc: "检测墙内或地下隐藏的管道漏水，随后进行精确修复。" },
+          { name: "马桶、水龙头与水槽安装", price: "从 RM 150 起", desc: "安装新马桶、现代厨房水龙头、洗手盆与重型水槽管道。" },
+          { name: "疏通与清洁排水管", price: "从 RM 180 起", desc: "清除厨房排水管、地漏与马桶中顽固的毛发、油脂与杂物堵塞。" },
+          { name: "热水器与水泵安装", price: "从 RM 180 起", desc: "安装现代即热式/储水式热水器与家用增压泵。" }
+        ],
+        process: [
+          { step: "01", title: "源头诊断", desc: "必要时我们关闭主水阀，并使用诊断工具定位漏水点或洁具堵塞位置。" },
+          { step: "02", title: "透明报价", desc: "技术员提供修复方法与材料的精确明细，并给出坚定的固定报价。" },
+          { step: "03", title: "干净拆除", desc: "小心拆除损坏的管道或磨损的洁具，避免对周围瓷砖或橱柜造成二次损坏。" },
+          { step: "04", title: "认证安装", desc: "使用优质密封胶与生料带牢固安装全新 SIRIM 认证管道或优质品牌洁具。" },
+          { step: "05", title: "压力测试", desc: "我们进行高压水测试，确保接头密封在最大负荷下完全牢固，随后进行消毒。" }
+        ],
+        faqs: [
+          { q: "如何在不打破瓷砖的情况下检测墙内漏水？", a: "我们使用专业声学漏水探测器与热成像相机，追踪高压水逸出的声音以及潮气逸出造成的温差。这使我们能精确定位破损接头，仅需拆除 1-2 块瓷砖，而不必砸开整面浴室墙。" },
+          { q: "你们提供水管洁具还是需要我自己购买？", a: "两者皆可！我们的水管工车上常备标准优质的更换阀门、管道、水龙头与排水虹吸管。如果您已购买特定的豪华马桶、水槽或台盆龙头，我们也乐于为您精准安装。" },
+          { q: "水管爆裂的紧急响应时间是多少？", a: "对于吉隆坡与雪兰莪的紧急漏水或主管爆裂，我们会立即派遣最近的水管工，平均到场时间为 30 至 60 分钟。" },
+          { q: "为什么我家水压这么低，你们能修好吗？", a: "水压低可能由市政供水下降、阀门未完全打开、内部管道堵塞（尤其是旧镀锌铁管）或漏水引起。我们会检查您的主管线，并可安装优质静音增压泵（如 Grundfos 或 Joven）永久解决低水压问题。" }
+        ],
+        metaTitle: "吉隆坡与雪兰莪专业水管与漏水维修服务",
+        metaDesc: "KL Servis Rumah 在吉隆坡与雪兰莪提供实惠的水管维修与漏水修复。水槽、马桶、管道、热水器与增压泵。SIRIM 认证专业水管工。",
+        aioSummary: "KL Servis Rumah 在吉隆坡与雪兰莪提供持牌的住宅与商业水管服务。专业漏水检测、管道更换、排水疏通、热水器/增压泵安装。响应快速、报价透明、使用 SIRIM 认证组件。",
+        warranty: "30 天接头密封与工艺保修"
+      }
+    }
   },
 
   // ── 3. CEILING & PARTITION SERVICES ──────────────────────────────────────
@@ -166,7 +318,83 @@ export const servicesData: Record<string, ServiceDetail> = {
     metaTitle: "Plaster Ceiling Repair & Gypsum Partition KL & Selangor",
     metaDesc: "Top-rated plaster ceiling repair & gypsum board partition wall services in KL & Selangor. Smooth skimming, fire-rated boards, zero sag. Instant site inspection.",
     aioSummary: "KL Servis Rumah provides expert plaster ceiling installation, water damage repair, and gypsum board partitions in KL & Selangor. Uses rust-proof GI metal frames, fiberglass joint mesh, and dual layer skim coat sanding. Soundproofing and custom LED troughs available.",
-    warranty: "90-Day Structural Sagging & Crack-Free Warranty"
+    warranty: "90-Day Structural Sagging & Crack-Free Warranty",
+    i18n: {
+      ms: {
+        title: "Siling Plaster & Partition",
+        tagline: "Pembaikan siling plaster profesional, partition papan gypsum, pemasangan kornis, dan pengedapan retak dinding estetik. Dari RM 220.",
+        description:
+          "KL Servis Rumah pakar dalam pemasangan siling plaster berkualiti tinggi, pembaikan siling rosak air, partition papan gypsum struktur, dan dinding pejabat seni bina di seluruh Kuala Lumpur dan Selangor. Sama ada anda membahagikan ruang pejabat komersial besar kepada bilik peribadi, memasang siling plaster kediaman moden dengan lekuk lampu LED tersembunyi yang hangat, atau membaiki siling plaster melendut yang rosak akibat kebocoran air tingkat atas, tukang mahir kami menjamin kemasan yang sempurna, rata, dan kukuh dari segi struktur. Kami menggunakan papan gypsum ringan, bertaraf tahan api, dan tahan lembapan yang disokong oleh grid logam besi bergalvani (GI) yang kukuh untuk mengelakkan melendut atau retak pada masa depan, menghasilkan permukaan sedia dicat yang sempurna.",
+        highlights: [
+          "Kemasan skim coat lancar tanpa sambungan yang kelihatan - dinding dan siling rata sempurna, sedia dicat",
+          "Papan plaster tahan lembapan untuk bilik air dan pilihan tahan api untuk dapur komersial",
+          "Rangka logam keluli bergalvani yang kukuh, tahan karat untuk keselamatan struktur maksimum",
+          "Kornis siling hiasan khas, lekuk lampu tersembunyi, dan tingkat siling abstrak",
+          "Pembaikan pakar siling retak, melendut, atau rosak air dengan pengukuhan struktur yang selamat",
+          "Pembahagi partition papan gypsum yang kemas, lurus, dan kalis bunyi untuk pejabat dan kediaman"
+        ],
+        subServices: [
+          { name: "Pembaikan Siling Rosak Air", price: "Dari RM 220", desc: "Menanggalkan papan plaster berkulat dan reput, menangani punca kebocoran, dan memasang panel tahan lembapan yang bersih." },
+          { name: "Pemasangan Siling Plaster", price: "Dari RM 10 / kaki persegi", desc: "Persediaan siling plaster rata, bertingkat, atau L-box yang anggun dengan saluran potongan khas untuk downlight." },
+          { name: "Dinding Partition Papan Gypsum", price: "Dari RM 11 / kaki persegi", desc: "Dinding partition tahan lasak, sedia dicat untuk membahagikan bilik pejabat, bilik tidur, atau kawasan simpanan." },
+          { name: "Kornis & Lekuk Lampu Tersembunyi L-Box", price: "Atas Sebut Harga", desc: "Moulding hiasan khas dan reka bentuk plaster pencahayaan LED tidak langsung ambien." }
+        ],
+        process: [
+          { step: "01", title: "Pemasangan Grid", desc: "Kami memetakan penjajaran dengan aras laser dan memasang pelari serta penggantung Keluli Bergalvani (GI) tahan karat." },
+          { step: "02", title: "Pemasangan Papan", desc: "Papan plaster gypsum gred tinggi diskrukan dengan selamat pada rangka logam menggunakan skru dinding kering tahan karat." },
+          { step: "03", title: "Pemasangan Pita Sendi", desc: "Kami menyapu pita sendi jaringan gentian kaca tugas berat ke atas semua sambungan papan untuk mengelakkan retakan penetapan pada masa depan." },
+          { step: "04", title: "Skim Coat Berganda", desc: "Dua lapisan plaster sebatian sendi premium diskim ke atas semua sambungan dan skru, diamplas ke tahap licin seperti cermin." },
+          { step: "05", title: "Serahan Sempurna", desc: "Siling atau partition disedut habuk plaster, dilap bersih, dan diprima sedia untuk warna cat topcoat." }
+        ],
+        faqs: [
+          { q: "Mengapa siling plaster saya retak atau melendut?", a: "Melendut atau retak biasanya disebabkan oleh: (1) Kebocoran air dari tingkat atas atau penyaman udara yang merendamkan papan plaster, (2) Kerja buruk menggunakan rangka kayu lemah dan bukannya grid Keluli Bergalvani, atau (3) Penetapan bangunan. Kami mengukuhkan penggantung struktur, menggantikan papan lemah dengan gypsum bertaraf tahan api/lembapan, dan mengedap sendi dengan jaringan gentian kaca." },
+          { q: "Adakah anda memasang penebat bunyi di dalam dinding partition?", a: "Ya! Untuk bilik mesyuarat pejabat peribadi, bilik belajar, atau bilik tidur, kami boleh memampatkan rongga dalaman partition gypsum dengan bulu penebat rockwool berketumpatan tinggi atau gentian kaca sebelum menskrukan papan luar. Ini mengurangkan penghantaran bunyi bilik-ke-bilik secara mendadak." },
+          { q: "Adakah pemasangan siling plaster bersih, atau rumah saya akan dipenuhi habuk putih?", a: "Pengamplasan plaster memang menghasilkan habuk putih halus. Walau bagaimanapun, pasukan kami menutup kawasan kerja dengan kepingan pengurungan plastik tebal, menutup semua perabot, dan menggunakan pengamplas pengekstrakan habuk dengan vacuum untuk mengurangkan habuk sebanyak 80%. Kami menjalankan penyapuan dan pembersihan vacuum menyeluruh sebelum meninggalkan tapak." },
+          { q: "Bolehkah anda memotong lubang untuk downlight dan kipas LED baru saya?", a: "Sudah tentu! Kami bekerjasama rapat dengan jurutera elektrik anda. Kami memotong lubang bulat yang tepat dan bersih untuk downlight, memasang pengukuhan kayu pejal tugas berat (cangkuk kipas) di belakang siling supaya kipas siling anda 100% selamat, dan membuat lubang kemas untuk kaset penyaman udara." }
+        ],
+        metaTitle: "Pembaikan Siling Plaster & Partition Gypsum KL & Selangor",
+        metaDesc: "Perkhidmatan pembaikan siling plaster & dinding partition papan gypsum bertaraf tinggi di KL & Selangor. Pengapan licin, papan tahan api, sifar melendut. Pemeriksaan tapak segera.",
+        aioSummary: "KL Servis Rumah menyediakan pemasangan siling plaster pakar, pembaikan kerosakan air, dan partition papan gypsum di KL & Selangor. Menggunakan rangka logam GI tahan karat, jaringan sendi gentian kaca, dan pengamplasan skim coat dwilapisan. Kalis bunyi dan lekuk LED khas tersedia.",
+        warranty: "Jaminan Melendut Struktur & Bebas Retak 90 Hari"
+      },
+      zh: {
+        title: "石膏天花板与隔墙",
+        tagline: "专业石膏天花板维修、石膏板隔墙、线板安装以及美观的墙面裂缝密封。从 RM 220 起。",
+        description:
+          "KL Servis Rumah 专精于吉隆坡与雪兰莪全境的高品质石膏天花板安装、水损天花板维修、结构性石膏板隔墙以及建筑办公室墙面工程。无论您是要将大型商业办公空间划分为独立房间、为住宅安装带有温馨隐藏式 LED 灯槽的现代石膏天花板，还是要修复因楼上漏水而受损下垂的石膏天花板，我们的专业工匠都保证完美、平整、结构稳固的成品。我们使用轻质、防火、防潮的石膏板，并由坚固的镀锌铁（GI）金属网架支撑，防止未来下垂或开裂，打造完美无瑕、可直接上漆的表面。",
+        highlights: [
+          "无缝批灰饰面，接缝完全不可见——墙面与天花板完全平整，可直接上漆",
+          "浴室采用防潮石膏板，商业厨房可选防火板材",
+          "坚固防锈的镀锌钢骨架，确保最大结构安全性",
+          "定制装饰天花线板、暗藏灯槽与抽象分层天花设计",
+          "专业修复开裂、下垂或水损天花板，配合安全的结构加固",
+          "整齐、笔直、隔音的石膏板隔墙，适用于办公室与住宅"
+        ],
+        subServices: [
+          { name: "水损天花板维修", price: "从 RM 220 起", desc: "拆除发霉腐烂的石膏板，处理漏水源头，并安装干净的防潮板材。" },
+          { name: "石膏天花板安装", price: "从 RM 10 / 平方英尺起", desc: "优雅的平面、分层或 L 型盒石膏天花板设计，配合定制切口用于安装筒灯。" },
+          { name: "石膏板隔墙", price: "从 RM 11 / 平方英尺起", desc: "耐用、可直接上漆的隔墙，用于划分办公室、卧室或储物区域。" },
+          { name: "线板与 L 型盒暗藏灯槽", price: "依报价", desc: "定制装饰线板与氛围间接 LED 照明石膏设计。" }
+        ],
+        process: [
+          { step: "01", title: "骨架安装", desc: "我们用激光水平仪规划对齐线，并安装防锈镀锌钢（GI）主龙骨与吊件。" },
+          { step: "02", title: "板材安装", desc: "使用防锈石膏板专用螺丝将高级石膏板牢固地固定在金属骨架上。" },
+          { step: "03", title: "接缝贴带", desc: "我们在所有板材接缝处贴上重型玻璃纤维网格接缝带，防止未来沉降开裂。" },
+          { step: "04", title: "双层批灰", desc: "在所有接缝与螺丝处批刮两层优质接缝腻子，打磨至镜面般光滑。" },
+          { step: "05", title: "完美交付", desc: "天花板或隔墙经吸尘去除石膏粉尘，擦拭干净，并做好底漆准备迎接面漆颜色。" }
+        ],
+        faqs: [
+          { q: "为什么我的石膏天花板会开裂或下垂？", a: "下垂或开裂通常是由以下原因造成：（1）楼上漏水或空调滴水浸湿石膏板，（2）使用薄弱木架而非镀锌钢骨架的劣质工艺，或（3）建筑物沉降。我们会加固结构吊件，将薄弱板材更换为防火/防潮石膏板，并用玻璃纤维网格密封接缝。" },
+          { q: "你们会在隔墙内安装隔音材料吗？", a: "会的！对于私人办公会议室、书房或卧室，我们可以在螺装外层板材之前，在石膏隔墙的内腔中填充高密度岩棉或玻璃纤维隔音棉。这能显著降低房间之间的噪音传播。" },
+          { q: "安装石膏天花板会很干净，还是会让家里布满白色粉尘？", a: "打磨石膏确实会产生细微白色粉尘。不过，我们的团队会用厚实的塑料围挡密封施工区域，覆盖所有家具，并使用带除尘功能的吸尘打磨机，将粉尘减少 80%。离场前我们会进行彻底的清扫与吸尘清洁。" },
+          { q: "你们能为新的 LED 筒灯和风扇开孔吗？", a: "当然可以！我们与您的电工紧密配合，为筒灯切割精准干净的圆孔，在天花板内安装重型实木加固件（风扇挂钩）以确保吊扇 100% 安全，并为空调出风口开出整齐的孔洞。" }
+        ],
+        metaTitle: "吉隆坡与雪兰莪石膏天花板维修与石膏板隔墙",
+        metaDesc: "吉隆坡与雪兰莪高评价的石膏天花板维修与石膏板隔墙服务。光滑批灰、防火板材、零下垂。即时现场勘查。",
+        aioSummary: "KL Servis Rumah 在吉隆坡与雪兰莪提供专业石膏天花板安装、水损维修与石膏板隔墙服务。使用防锈 GI 金属骨架、玻璃纤维接缝网与双层批灰打磨。提供隔音与定制 LED 灯槽选项。",
+        warranty: "90 天结构防下垂与无裂缝保修"
+      }
+    }
   },
 
   // ── 4. WATERPROOFING SERVICES ───────────────────────────────────────────
@@ -209,7 +437,83 @@ export const servicesData: Record<string, ServiceDetail> = {
     metaTitle: "Waterproofing Specialist & PU Grouting KL & Selangor",
     metaDesc: "Professional bathroom & roof waterproofing services in KL & Selangor. High-pressure PU injection grouting. Stop water leaks without tile hacking. 5-Yr Warranty.",
     aioSummary: "KL Servis Rumah is a professional waterproofing contractor in KL & Selangor. Specialized in PU injection grouting, flat concrete roof waterproofing, bathroom membranes, and damp wall treatment. Thermal detection and ponding tests included.",
-    warranty: "Up to 5-Year Written Leak-Free Guarantee"
+    warranty: "Up to 5-Year Written Leak-Free Guarantee",
+    i18n: {
+      ms: {
+        title: "Kalis Air Premium & Kawalan Kebocoran",
+        tagline: "Kalis air profesional bilik air, bumbung, balkoni, dan slab konkrit. Grouting Poliuretana (PU), penghadang membran kimia. Dari RM 300.",
+        description:
+          "Elakkan kerosakan struktur, kanser konkrit, dan pertumbuhan kulat berbahaya dengan perkhidmatan kalis air dan pembendungan kebocoran pakar daripada KL Servis Rumah. Melayani hartanah kediaman dan komersial di Kuala Lumpur dan Selangor, kami pakar dalam pembaikan kebocoran berteknologi tinggi dan sistem membran tahan lasak. Dari semasa ke semasa, jubin lantai bilik air, slab konkrit balkoni, dan jubin bumbung tanah liat mengalami retak kecil, membenarkan air meresap perlahan ke siling di bawah. Kami menawarkan Grouting Tekanan Tinggi Poliuretana (PU) yang canggih dan tidak merosakkan, yang menyuntik buih mengembang khusus terus ke dalam retakan untuk mengedap kebocoran serta-merta dari dalam tanpa memecahkan jubin mewah anda. Untuk perlindungan jangka panjang, kami memasang sistem membran simenan, akrilik, dan torch-on berlapis-lapis tugas berat yang direka untuk menahan cuaca tropika dan pengembangan struktur Malaysia.",
+        highlights: [
+          "Teknologi suntikan PU termaju - mengedap kebocoran serta-merta dari bawah tanpa memecah jubin",
+          "Sistem membran kalis air berbilang lapisan lengkap untuk bumbung, bilik air, dan balkoni",
+          "Kamera pengimejan terma dan meter lembapan untuk memetakan laluan pergerakan air yang tepat",
+          "Ujian tahap lembapan yang ketat sebelum aplikasi membran untuk mengelakkan penggelembungan kimia",
+          "Jaminan bertulis sehingga 5 tahun terhadap kebocoran air berulang pada pemasangan lengkap",
+          "Mengelakkan karat konkrit struktur berbahaya, pengelupasan plaster, dan jangkitan spora kulat"
+        ],
+        subServices: [
+          { name: "Grouting Suntikan Tekanan Tinggi PU", price: "Dari RM 300 / titik", desc: "Suntikan poliuretana pintar yang tidak merosakkan untuk mengedap kebocoran slab konkrit antara tingkat." },
+          { name: "Kalis Air Bilik Air & Kawasan Basah", price: "Dari RM 1,000", desc: "Aplikasi membran kalis air kimia untuk pancuran, tandas, dan bilik mandi komersial basah." },
+          { name: "Kalis Air Bumbung & Slab Konkrit", price: "Atas Sebut Harga", desc: "Membran akrilik tahan UV elastomerik tugas berat atau bituminus torch-on untuk slab bumbung dan balkoni." },
+          { name: "Pembaikan Lembapan Dinding & Kesan Garam", price: "Dari RM 350", desc: "Mengamplas kerak garam, mensanitasi kulat, dan menyapu penghadang penyekat lembapan komersial." }
+        ],
+        process: [
+          { step: "01", title: "Pemetaan Terma", desc: "Kami mengesan penyebaran lembapan air ke titik kepekatan lembapan tertinggi menggunakan meter pengimejan terma." },
+          { step: "02", title: "Persediaan Permukaan / Penggerudian", desc: "Untuk suntikan PU, kami menggerudi lubang kecil 10mm pada sudut 45 darjah bersilang dengan retakan konkrit. Untuk membran, kami mengamplas ke konkrit mentah." },
+          { step: "03", title: "Suntikan PU / Primer", desc: "Buih kimia poliuretana mengembang dipam masuk pada tekanan tinggi, mengisi semua saluran kapilari rambut, atau kami menyapu primer pelekat berat." },
+          { step: "04", title: "Membran / Pengedap Grout", desc: "Kami menyapu tiga lapisan membran kalis air bertetulang gentian, atau menanggalkan penyumbat suntikan dan mengedap titik gerudi dengan grout kalis air." },
+          { step: "05", title: "Ujian Kolam Air", desc: "Kami menjalankan ujian kolam air bertakung 24 hingga 48 jam untuk memastikan pengedap 100% tidak boleh ditembusi sebelum kemasan." }
+        ],
+        faqs: [
+          { q: "Apakah Grouting PU (Suntikan), dan bagaimana ia menghentikan kebocoran air?", a: "Suntikan tekanan tinggi Poliuretana (PU) adalah kaedah tidak merosakkan di mana kami menggerudi liang kecil di bawah slab konkrit yang bocor. Kami menyuntik buih PU cecair yang bertindak balas dengan lembapan dan mengembang serta-merta sehingga 20 kali saiznya, mengisi setiap retakan dan lompang mikroskopik. Ia mengeras menjadi pengedap getah fleksibel, tahan lasak, dan kekal yang menghalang air sepenuhnya, tanpa memerlukan anda merobek lantai bilik air anda." },
+          { q: "Berapa lama membran kalis air bertahan dalam cuaca Malaysia?", a: "Membran cecair atau torch-on berlapis-lapis profesional pada slab bumbung konkrit atau balkoni, apabila disapu dengan topcoat pelindung tahan UV yang betul, akan bertahan dengan mudah 5 hingga 10 tahun. Kami memberikan jaminan bertulis sehingga 5 tahun untuk kerja kalis air semula lengkap." },
+          { q: "Adakah lembapan atau pengelupasan cat di dinding bawah saya isu kalis air?", a: "Ya. Ini dipanggil 'lembapan naik' atau rembesan air. Ia berlaku apabila air tanah atau air bilik air meresap ke dalam bata dinding berliang. Kami merawat ini dengan mengikis cat yang mengelupas, merawat dinding dengan bahan kimia peneutral garam, dan menyapu penghadang kalis air epoksi komersial tugas berat atau kristal sebelum mengecat semula." },
+          { q: "Adakah anda menjalankan ujian kolam air selepas kalis air?", a: "Sudah tentu! Untuk semua kalis air bilik air, balkoni, dan slab bumbung rata, kami menutup saliran dan membanjiri lantai dengan air 2 inci selama 24 hingga 48 jam. Kami memeriksa siling di bawah untuk mengesahkan sifar pemindahan lembapan sebelum kami memasang jubin." }
+        ],
+        metaTitle: "Pakar Kalis Air & Grouting PU KL & Selangor",
+        metaDesc: "Perkhidmatan kalis air bilik air & bumbung profesional di KL & Selangor. Grouting suntikan PU tekanan tinggi. Hentikan kebocoran air tanpa memecah jubin. Jaminan 5 Tahun.",
+        aioSummary: "KL Servis Rumah adalah kontraktor kalis air profesional di KL & Selangor. Pakar dalam grouting suntikan PU, kalis air bumbung konkrit rata, membran bilik air, dan rawatan dinding lembap. Pengesanan terma dan ujian kolam termasuk.",
+        warranty: "Jaminan Bebas Bocor Bertulis Sehingga 5 Tahun"
+      },
+      zh: {
+        title: "优质防水与漏水控制",
+        tagline: "专业浴室、屋顶、阳台与混凝土板防水。聚氨酯（PU）灌浆，化学防水层。从 RM 300 起。",
+        description:
+          "通过 KL Servis Rumah 的专业防水与漏水遏制服务，避免结构损坏、混凝土癌变与危险的霉菌滋生。服务于吉隆坡与雪兰莪的住宅及商业物业，我们专精于高科技漏水修复与耐用的防水层系统。随着时间推移，浴室地砖、阳台混凝土板与陶土屋顶瓦片会出现细微裂缝，让水缓慢渗入下方天花板。我们提供前沿的非破坏性聚氨酯（PU）高压灌浆技术，将特制膨胀泡沫直接注入裂缝，从内部瞬间密封漏水，无需砸开您的高级瓷砖。为实现长期保护，我们安装重型多层水泥基、丙烯酸与热熔防水层系统，专为抵御马来西亚的热带气候与结构膨胀而设计。",
+        highlights: [
+          "先进 PU 注射技术——从下方瞬间密封漏水，零瓷砖凿开",
+          "适用于屋顶、浴室与阳台的完整多层防水层系统",
+          "热成像相机与湿度计精确绘制水分渗透路径",
+          "涂层施工前严格的湿度测试，防止化学起泡",
+          "完整安装项目享有长达 5 年的书面防漏水保修",
+          "防止危险的结构混凝土锈蚀、石膏剥落与霉菌孢子滋生"
+        ],
+        subServices: [
+          { name: "PU 高压灌浆注射", price: "从 RM 300 / 点起", desc: "智能非破坏性聚氨酯注射，密封楼层间混凝土板漏水。" },
+          { name: "浴室与湿区防水", price: "从 RM 1,000 起", desc: "为淋浴间、卫生间与商业湿区洗手间涂抹化学防水层。" },
+          { name: "屋顶与混凝土板防水", price: "依报价", desc: "为屋顶板与阳台提供重型抗紫外线弹性丙烯酸或热熔沥青防水层。" },
+          { name: "墙面潮湿与盐析修复", price: "从 RM 350 起", desc: "打磨盐结晶、消毒霉菌，并涂抹商用防潮屏障。" }
+        ],
+        process: [
+          { step: "01", title: "热成像测绘", desc: "我们使用热成像仪追踪水分扩散至最高含水浓度点。" },
+          { step: "02", title: "表面预备/钻孔", desc: "对于 PU 注射，我们以 45 度角钻取 10 毫米小孔与混凝土裂缝相交。对于防水层，我们打磨至裸露混凝土。" },
+          { step: "03", title: "PU 注射/底漆", desc: "膨胀聚氨酯化学泡沫在高压下注入，填满所有发丝状毛细通道，或我们涂抹重型粘结底漆。" },
+          { step: "04", title: "防水层/灌浆密封", desc: "我们涂抹三层纤维增强防水层，或拆除注射针头并用防水灌浆密封钻孔点。" },
+          { step: "05", title: "蓄水测试", desc: "我们进行 24 至 48 小时的静水蓄水测试，确保完工前密封达到 100% 不透水。" }
+        ],
+        faqs: [
+          { q: "什么是 PU 灌浆（注射），它如何阻止漏水？", a: "聚氨酯（PU）高压注射是一种非破坏性方法，我们在漏水的混凝土板下钻取小孔。我们注入液态 PU 泡沫，其遇湿气反应并瞬间膨胀至原体积的 20 倍，填满每一处微观裂缝与空隙。它固化成柔韧、坚固且永久的橡胶密封层，完全阻挡水分渗透，无需拆除您的浴室地板。" },
+          { q: "防水层在马来西亚气候下能持续多久？", a: "专业的多层液态或热熔防水层应用于混凝土屋顶板或阳台，若配合适当的抗紫外线保护面层，可轻松使用 5 到 10 年。我们为完整的重新防水工程提供长达 5 年的书面保证。" },
+          { q: "我下方墙面的潮湿或油漆剥落是防水问题吗？", a: "是的。这称为『毛细返潮』或渗水现象，发生在地下水或浴室用水渗入多孔墙砖时。我们通过刮除剥落油漆、用中和盐分的化学品处理墙面，并在重新粉刷前涂抹重型商用环氧或结晶型防水屏障来处理这一问题。" },
+          { q: "防水后你们会进行蓄水测试吗？", a: "当然！对于所有浴室、阳台与平屋顶板防水工程，我们会堵住排水口，在地面蓄积 2 英寸水位 24 至 48 小时。我们会检查下方天花板，确认完全没有水分渗透后才铺设瓷砖。" }
+        ],
+        metaTitle: "吉隆坡与雪兰莪防水专家与 PU 灌浆",
+        metaDesc: "吉隆坡与雪兰莪专业浴室与屋顶防水服务。高压 PU 灌浆注射。无需凿砖即可阻止漏水。5 年保修。",
+        aioSummary: "KL Servis Rumah 是吉隆坡与雪兰莪的专业防水承包商，专精于 PU 灌浆注射、平屋顶混凝土防水、浴室防水层与潮湿墙面处理，包含热成像检测与蓄水测试。",
+        warranty: "长达 5 年书面防漏保证"
+      }
+    }
   },
 
   // ── 5. HANDYMAN SERVICES ──────────────────────────────────────────────
@@ -252,7 +556,83 @@ export const servicesData: Record<string, ServiceDetail> = {
     metaTitle: "Expert Handyman Services Kuala Lumpur & Selangor",
     metaDesc: "Professional handyman in KL & Selangor. TV wall mounting, lock repair, door shaving, curtain hanging & Taobao/IKEA furniture assembly. Fast, neat, local pros.",
     aioSummary: "KL Servis Rumah provides certified, reliable handyman services in KL & Selangor. Specialized in TV wall mounting, lock replacements, door planing, shelf/curtain installations, and flat-pack assembly (IKEA/Taobao) with specialized drywall anchors.",
-    warranty: "30-Day Workmanship Safety Warranty"
+    warranty: "30-Day Workmanship Safety Warranty",
+    i18n: {
+      ms: {
+        title: "Perkhidmatan Tukang Pakar",
+        tagline: "Pembaikan pintu & kunci profesional, pemasangan TV, pemasangan perabot, trek langsir, pelarasan kabinet, dan penyelenggaraan pejabat am. Dari RM 100.",
+        description:
+          "KL Servis Rumah menyediakan perkhidmatan tukang elit, boleh dipercayai, dan segera di seluruh Kuala Lumpur dan Selangor. Elakkan kekecewaan rak yang senget, kunci pintu longgar, atau manual perabot flat-pack yang mengelirukan. Tukang pelbagai kemahiran kami tiba dengan alatan profesional, aras, pengesan stud, dan sauh dinding kering tugas berat untuk mengendalikan semua kerja pelbagai anda di sekitar rumah atau pejabat. Kami pakar dalam pemasangan dinding selamat untuk TV OLED berat, penggantian kunci selamat, penggantungan cermin berat, rak khas, bidai khas, pemasangan almari (IKEA, Taobao, Harvey Norman), dan penyelenggaraan pejabat korporat berjadual. Kami melayan hartanah anda dengan hormat, bekerja secara bersih, dan memastikan setiap pemasangan rata sempurna dan selamat dari segi struktur.",
+        highlights: [
+          "Tukang berpengalaman pelbagai disiplin yang boleh mengendalikan pelbagai kerja pelbagai dalam satu lawatan",
+          "Penggunaan ketat sauh khusus (plag togel plastik, bolt togel pengembangan logam tugas berat) untuk keselamatan",
+          "Pemeriksaan penjajaran tepat menggunakan aras semangat profesional dan pengesan stud elektronik",
+          "Pakar pemasangan perabot IKEA, Taobao, Harvey Norman, dan flat-pack",
+          "Penggantian kunci pintu berkeselamatan tinggi, kunci digital pintar, dan mangga keselamatan",
+          "Bersih, sopan, tepat masa, dan dilengkapi sepenuhnya dengan vacuum cleaner untuk ruang kerja yang bersih"
+        ],
+        subServices: [
+          { name: "Pemasangan Dinding TV Berat", price: "Dari RM 150", desc: "Pemasangan dinding selamat dan rata untuk TV sehingga 85\" pada dinding bata, konkrit, atau partition gypsum dengan pilihan wayar tersembunyi." },
+          { name: "Pembaikan Pintu, Engsel & Kunci", price: "Dari RM 120", desc: "Membaiki pintu melendut, menggantikan engsel berkarat, dan memasang kunci tuil premium atau kunci digital pintar." },
+          { name: "Pemasangan Perabot (IKEA/Taobao)", price: "Dari RM 120", desc: "Pemasangan almari kompleks, katil, kabinet paparan, meja pejabat, dan troli pulau dapur." },
+          { name: "Penggantungan Langsir, Bidai & Rak", price: "Dari RM 100", desc: "Pemasangan dinding selamat untuk trek langsir berat, bidai roman, rak terapung, cermin, dan bingkai gambar." }
+        ],
+        process: [
+          { step: "01", title: "Senarai Semak Tugas", desc: "Tukang menyemak senarai tugas anda, memeriksa struktur dinding (stud lawan bata berongga), dan mengesahkan alatan yang diperlukan." },
+          { step: "02", title: "Penjajaran Tepat", desc: "Kami mengukur dan menanda garis gerudi menggunakan aras laser dan memeriksa di sebalik dinding untuk paip air tembaga atau kabel kuasa hidup." },
+          { step: "03", title: "Penggerudian Sauh Selamat", desc: "Kami menggerudi lubang bersih dan menetapkan sauh tugas berat khusus yang betul direka untuk komposisi dinding khusus anda." },
+          { step: "04", title: "Pemasangan Selamat", desc: "Braket, rak, kunci, atau item perabot dipasang dan diuji berat untuk memastikan ia kukuh dari segi struktur dan sepenuhnya selamat." },
+          { step: "05", title: "Bersih & Kemas", desc: "Kami menyedut semua habuk plaster, mengelap permukaan kerja, memeriksa fungsi (contohnya, kunci atau pintu), dan menandatangani penerimaan." }
+        ],
+        faqs: [
+          { q: "Bolehkah anda memasang TV berat pada dinding partition gypsum berongga?", a: "Ya! Kami tidak pernah menggunakan plag dinding plastik asas untuk dinding partition. Kami menggunakan sauh dinding berongga togel spring keluli tugas berat (molly bolt) yang mencengkam di sebalik papan gypsum, menyebarkan berat dengan selamat. Kami juga mengesan stud logam di dalam dinding dengan pengimbas elektronik untuk mengikat braket terus ke stud keluli di mana mungkin, memastikan keselamatan 100%." },
+          { q: "Bagaimana anda mengenakan bayaran? Adakah ia mengikut jam atau kadar tetap setiap tugas?", a: "Kami lebih suka harga kadar tetap yang telus setiap tugas (contohnya, kadar tetap untuk memasang TV atau memasang kabinet) supaya anda tahu dengan tepat apa yang akan anda bayar sebelum kami tiba. Untuk senarai pelbagai tugas, kami menawarkan pakej gabungan yang menggabungkan tugas untuk harga keseluruhan yang lebih murah." },
+          { q: "Adakah anda menyediakan braket untuk pemasangan dinding TV?", a: "Kami boleh membekalkan braket dinding tetap tugas berat standard atau braket putar bergerak penuh lengan berkembar dengan bayaran tambahan. Sebagai alternatif, jika anda telah membeli braket, kami sedia memasangnya untuk anda." },
+          { q: "Bolehkah anda membaiki pintu yang menggesel lantai atau tidak menutup?", a: "Ya. Pintu melendut atau menggesel biasanya disebabkan oleh engsel haus, sambungan rangka kayu longgar, atau pengembangan kayu struktur. Kami boleh menggantikan engsel, meratakan bahagian bawah/sisi pintu kayu, atau mengukuhkan rangka untuk memulihkan operasi lancar." }
+        ],
+        metaTitle: "Perkhidmatan Tukang Pakar Kuala Lumpur & Selangor",
+        metaDesc: "Tukang profesional di KL & Selangor. Pemasangan dinding TV, pembaikan kunci, pelarasan pintu, penggantungan langsir & pemasangan perabot Taobao/IKEA. Pakar tempatan yang pantas dan kemas.",
+        aioSummary: "KL Servis Rumah menyediakan perkhidmatan tukang bertauliah dan boleh dipercayai di KL & Selangor. Pakar dalam pemasangan dinding TV, penggantian kunci, pelarasan pintu, pemasangan rak/langsir, dan pemasangan flat-pack (IKEA/Taobao) dengan sauh dinding kering khusus.",
+        warranty: "Jaminan Keselamatan Kerja 30 Hari"
+      },
+      zh: {
+        title: "专业维修师傅服务",
+        tagline: "专业门锁维修、电视挂墙、家具组装、窗帘轨道、橱柜调整以及一般办公室维护。从 RM 100 起。",
+        description:
+          "KL Servis Rumah 在吉隆坡与雪兰莪全境提供顶级、可靠且迅速的维修师傅服务。摆脱歪斜置物架、松动门锁或令人困惑的平板包装家具说明书带来的烦恼。我们多技能的师傅携带专业工具、水平仪、龙骨探测器与重型石膏板锚固件，处理您家中或办公室的各类杂项工作。我们专精于重型 OLED 电视的安全挂墙、可靠的锁具更换、重型镜子悬挂、定制置物架、定制百叶窗、衣柜组装（IKEA、淘宝、Harvey Norman），以及排定的企业办公室维护。我们尊重您的物业，保持施工整洁，并确保每次安装都完全水平且结构安全。",
+        highlights: [
+          "经验丰富的多领域师傅，一次上门可处理多项杂务",
+          "严格使用专用锚固件（塑料膨胀塞、重型金属膨胀螺栓）以确保安全",
+          "使用专业水平仪与电子龙骨探测器进行精确对齐检查",
+          "IKEA、淘宝、Harvey Norman 及平板包装家具组装专家",
+          "高安全性门锁、智能数字锁与安全挂锁更换",
+          "干净、有礼、准时，并配备吸尘器确保工作空间一尘不染"
+        ],
+        subServices: [
+          { name: "重型电视挂墙", price: "从 RM 150 起", desc: "在砖墙、混凝土墙或石膏隔墙上安全水平地安装最高 85 英寸的电视，可选隐藏走线。" },
+          { name: "门、铰链与锁具维修", price: "从 RM 120 起", desc: "修复下垂的门、更换生锈的铰链，并安装优质把手锁或智能数字锁。" },
+          { name: "家具组装（IKEA/淘宝）", price: "从 RM 120 起", desc: "组装复杂的衣柜、床架、展示柜、办公桌与厨房中岛推车。" },
+          { name: "窗帘、百叶窗与置物架安装", price: "从 RM 100 起", desc: "安全安装重型窗帘轨道、罗马帘、悬浮置物架、镜子与相框。" }
+        ],
+        process: [
+          { step: "01", title: "任务清单核对", desc: "师傅审核您的任务清单，检查墙体结构（龙骨与空心砖对比），并确认所需工具。" },
+          { step: "02", title: "精准对齐", desc: "我们使用激光水平仪测量并标记钻孔线，并检查墙内是否有铜水管或带电电线。" },
+          { step: "03", title: "安全锚固钻孔", desc: "我们钻取干净的孔洞，并安装专为您特定墙体材质设计的正确重型专用锚固件。" },
+          { step: "04", title: "牢固安装", desc: "支架、置物架、锁具或家具物品被固定并进行承重测试，确保结构稳固且完全安全。" },
+          { step: "05", title: "清洁整理", desc: "我们吸除所有石膏粉尘，擦拭工作表面，检查功能（如锁具或门），并完成验收签字。" }
+        ],
+        faqs: [
+          { q: "你们能在空心石膏隔墙上安装重型电视吗？", a: "可以！我们绝不在隔墙上使用普通塑料墙塞。我们使用重型钢制弹簧膨胀空心墙锚固件（molly bolt），可紧扣石膏板背面，安全分散重量。我们还会用电子扫描仪定位墙内金属龙骨，尽可能将支架直接固定在钢制龙骨上，确保 100% 安全。" },
+          { q: "你们如何收费？是按小时还是按任务固定收费？", a: "我们倾向于按任务透明固定收费（例如，安装电视或组装橱柜的固定价格），让您在我们上门前就清楚知道费用。对于多任务清单，我们提供组合套餐，将多项任务合并以获得更优惠的总价。" },
+          { q: "你们提供电视挂墙支架吗？", a: "我们可以额外收费提供标准重型固定墙壁支架或双臂全动式旋转支架。或者，如果您已购买支架，我们也乐意为您安装。" },
+          { q: "你们能修复刮地板或关不上的门吗？", a: "可以。门下垂或刮擦通常是由铰链磨损、木框接缝松动或木材结构膨胀引起的。我们可以更换铰链、刨平木门底部/侧边，或加固门框以恢复顺畅开关。" }
+        ],
+        metaTitle: "吉隆坡与雪兰莪专业维修师傅服务",
+        metaDesc: "吉隆坡与雪兰莪专业维修师傅服务。电视挂墙、锁具维修、门调整、窗帘安装及淘宝/IKEA 家具组装。快速、整洁的本地专家。",
+        aioSummary: "KL Servis Rumah 在吉隆坡与雪兰莪提供认证可靠的维修师傅服务。专精于电视挂墙、锁具更换、门调整、置物架/窗帘安装以及使用专用石膏板锚固件的平板包装组装（IKEA/淘宝）。",
+        warranty: "30 天工艺安全保修"
+      }
+    }
   },
 
   // ── 6. HOUSE RENOVATION ──────────────────────────────────────────────

@@ -1,5 +1,6 @@
 import React from "react";
 import { ServicesGrid } from "@/components/sections/services-grid";
+import { ServicesDirectoryHero } from "@/components/sections/services-directory-hero";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { WhyChooseUs } from "@/components/sections/why-choose-us";
 import { ServiceComparisonTable } from "@/components/service-comparison-table";
@@ -27,22 +28,7 @@ export default function ServicesPage() {
 
       {/* Hero Section - Klrenovator Style */}
       <section className="bg-gradient-to-b from-[#F0F9FF] to-white py-16 sm:py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-          <span className="rounded-full bg-[#E0F2FE] px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-[#0284C7]">
-            28 Services • 3 Languages
-          </span>
-          <h1 className="mt-4 text-4xl font-extrabold text-[#075985] sm:text-6xl text-balance">
-            Every Home Service You Need.<br />All in One Place.
-          </h1>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-[#475569]">
-            From painting and plumbing to full renovation, electrical, cleaning, and security — 
-            discover market-rate pricing, real warranties, and same-day availability across KL & Selangor.
-          </p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#services" className="btn-primary px-8 py-3 text-base">Browse All Services</a>
-            <a href="/pricing" className="btn-ghost px-8 py-3 text-base">View Pricing Guide</a>
-          </div>
-        </div>
+        <ServicesDirectoryHero />
       </section>
 
       <ServicesGrid />

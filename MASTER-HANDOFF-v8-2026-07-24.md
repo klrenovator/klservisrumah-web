@@ -11,6 +11,78 @@
 
 ---
 
+## 🆕 ROUND 15 EXECUTION LOG (2026-07-25) — TRILINGUAL COMPLETION (ORIGINAL 5 SERVICES + ALL 43 PROBLEM PAGES), LOCALIZED PROBLEM-PAGE UI, ABOUT/CONTACT/PRICING/SERVICES PAGE i18n WIRING
+
+**User direction:** User asked to follow the handoff file as the roadmap, analyze the codebase, prioritize independently, fix critical gaps before minor ones, and complete as much as possible in one batch without repeated back-and-forth.
+
+**Round status:** ✅ **COMPLETED — highest-priority pending trilingual gaps closed; problem pages now actually render translated content; several static pages wired to existing but unused translation dictionaries**
+
+### 🎯 Why these tasks were prioritized
+
+Reviewing the codebase against the handoff's "Still pending" queues (Rounds 11–14) showed the single biggest remaining gap was **incomplete trilingual coverage** — the core "multilingual support" requirement in the user's task brief. Three concrete gaps were found and fixed in priority order:
+
+1. **5 of 28 service pillars had no `i18n` block at all** (Painting, Plumbing, Ceiling, Waterproofing, Handyman) — these are the site's original, highest-traffic services, so leaving them English-only was the most visible inconsistency for BM/ZH visitors.
+2. **All 43 problem/diagnostic pages had zero MS/ZH translations**, and — more importantly — the `/problems/[slug]` page had **no client-side logic to render translations even where they existed** (confirmed by checking Round 14's log, which left this "🟡 In Progress").
+3. **Contact, Pricing, Services, and About pages already had unused translation keys sitting in `messages/*.json`** (or none at all for About) but the page components were hard-coded English JSX, so switching the language pill did nothing on these pages.
+
+### ✅ Completed in Round 15
+
+#### 🈂️ 1. Trilingual content for the 5 original service pillars (`config/services-data.ts`)
+- Added full native `i18n: { ms: {...}, zh: {...} }` blocks for **Painting, Plumbing, Ceiling & Partitions, Waterproofing, Handyman** — title, tagline, full description, 6 highlights, 4 sub-services (name + localized price prefix + desc), 5-step process, 4 FAQs, metaTitle, metaDesc, aioSummary, warranty — following the exact structure and quality bar set in Rounds 10/13 for the other 23 services.
+- **28 / 28 service pillars are now 100% trilingual** (previously 23/28).
+- Market-rate RM pricing preserved exactly; only price-prefix wording localized (*From RM X* → *Dari RM X* / *从 RM X 起*).
+
+#### 🈂️ 2. Trilingual content for all 43 problem/diagnostic pages (`config/problem-data.ts`)
+- Added a `problemI18n` entry (MS + ZH) for the remaining **37 problems** that had no translation (6 had already been added in Round 14: RCCB tripping, flickering lights, water heater not heating, ceiling fan wobbling, hollow tiles, SPC flooring peeling).
+- **All 43 / 43 problem pages now have full MS + ZH coverage** (title, symptom, cost range, causes, solutions, when-to-call, FAQs).
+
+#### 🧭 3. Wired the localized problem-page UI (previously data-only, not rendered)
+- New `lib/problem-i18n.ts` — `getLocalizedProblem()`, mirrors the existing `getLocalizedService()` pattern with English fallback.
+- New `components/sections/locale-problem-view.tsx` — client component that reads the active locale via `useLang()` and renders the fully localized problem page (headings, causes/solutions/when-to-call sections, related-service card, FAQs, WhatsApp CTA) with trilingual UI chrome, not just translated data fields.
+- `app/problems/[slug]/page.tsx` refactored to keep all SEO/schema generation server-side (Article, FAQ, HowTo, Breadcrumb schema — unchanged, still English/canonical for search engines) while delegating the visible body to `LocaleProblemView`. Previously this page rendered hard-coded English JSX with zero locale awareness.
+
+#### 🌐 4. Wired unused/missing translation keys into static pages
+- `components/sections/faq-accordion.tsx` — was fully hard-coded English (used on both the homepage and `/faq`); rebuilt with a `faqsByLang` dictionary (EN/MS/ZH) and trilingual header copy, using `useLang()`.
+- `components/sections/pricing-hero-heading.tsx` (new) — wires the already-existing but unused `pricing.pageTitle` / `pricing.pageSubtitle` keys into `/pricing`.
+- `components/sections/contact-hero-heading.tsx` (new) — wires the already-existing but unused `contact.pageTitle` / `contact.pageSubtitle` keys into `/contact`.
+- `components/sections/services-directory-hero.tsx` (new) — wires new `services.directoryEyebrow/Title1/Title2/Subtitle/browseAll/viewPricingGuide` keys (added to all 3 `messages/*.json` files) into `/services`.
+- `components/sections/about-content.tsx` (new) — About page had **zero** i18n keys previously; added a full `about.*` namespace (eyebrow, intro, standards card, mission, 4 core values) to `messages/en.json`, `messages/ms.json`, `messages/zh.json`, and rebuilt `app/about/page.tsx` to consume it via `useTranslations()`. Also removed a stray "KL Renovator" sibling-brand mention from the mission copy per the no-cross-brand-reference cleanup started in earlier rounds.
+
+### ✅ Quality check results (13-point pre-delivery process)
+
+- ✅ `npm run lint` — **0 errors, 0 warnings** (after every batch of edits, checked incrementally)
+- ✅ `npx tsc --noEmit` — **0 errors** (verified after every file group)
+- ✅ `npm run build` — **green**, 2,181+ SSG pages generated successfully, no route changes, no regressions
+- ✅ **Production smoke test** (`next start`) — HTTP 200 confirmed for `/`, `/services/painting`, `/problems/rccb-tripping-kl`, `/about`, `/contact`, `/pricing`, `/services`, `/faq`
+- ✅ **Permanent rules honoured** — no public SSM display, public phone +60 11-1662 7349 untouched, market-rate pricing unchanged, no fake reviews/claims added, all new copy is original writing for KL Servis Rumah's own services (no third-party/copyrighted content), trilingual structure preserved and extended
+
+### 📊 Round 15 Metrics
+
+- **Files created**: 6 (`lib/problem-i18n.ts`, `components/sections/locale-problem-view.tsx`, `components/sections/pricing-hero-heading.tsx`, `components/sections/contact-hero-heading.tsx`, `components/sections/services-directory-hero.tsx`, `components/sections/about-content.tsx`)
+- **Files modified**: 8 (`config/services-data.ts`, `config/problem-data.ts`, `app/problems/[slug]/page.tsx`, `components/sections/faq-accordion.tsx`, `app/pricing/page.tsx`, `app/contact/page.tsx`, `app/services/page.tsx`, `app/about/page.tsx`, plus `messages/en.json` / `messages/ms.json` / `messages/zh.json`)
+- **Service pillars with full trilingual content**: 23/28 → **28/28 (100%)**
+- **Problem pages with full trilingual content**: 6/43 → **43/43 (100%)**
+- **Static pages newly wired to i18n**: 4 (`/about`, `/contact`, `/pricing`, `/services`) — previously hard-coded English despite the language switcher being present in the navbar on every page
+- **Build status**: 2,181+ SSG pages · 0 lint errors · 0 TS errors · 0 regressions
+
+### ⏳ Still pending after Round 15 (recommended for Round 16+)
+
+- ⏳ **Area / suburb / blog / projects / content-data translation** — `config/area-data.ts` (6 areas), `config/suburb-data.ts` (49 suburbs), `config/blog-data.ts` (2 posts), `config/projects-data.ts` (4 case studies), and `config/content-data.ts` (52 cluster + 10 guide + 15 comparison + 10 maintenance generic pages) are still English-only. This is the largest remaining trilingual gap by page count (1,300+ suburb×service pages alone) — recommend tackling suburb/area data first since those pages carry the most local-SEO value, then blog/guide content.
+- ⏳ **Services list page (`/services`) full klrenovator-style redesign** — hero heading is now trilingual, but the deeper sections (`ServicesGrid`, `DecisionTree`, `ServiceComparisonTable`, `WhyChooseUs`) still need a trilingual pass; only the top hero was wired this round due to scope/time.
+- ⏳ **Contact page form labels and booking form** (`MultiStepBookingForm`) — page heading is now trilingual; the multi-step form fields themselves (name, phone, service, area, urgency, etc.) still render English-only despite `contact.fields.*` keys already existing in `messages/*.json`.
+- ⏳ **Trilingual URL-prefixed routing at `/[locale]/...`** — still client-state-based (localStorage/cookie), not URL-prefixed for full SEO language-splitting. This is a larger architectural change (needs `middleware.ts` + route migration) flagged in Rounds 11–14 as a later-round item; not attempted this round to avoid destabilizing 2,181 existing static routes in a single pass.
+- ⏳ Replace SVG hero banners with real project photography (when user provides photos).
+- ⏳ Replace placeholder/generated logo with final approved brand assets if the user has a newer version.
+- ⏳ Real customer review import (only after verified GBP/direct review source is provided).
+- ⏳ External/manual tasks: GBP optimization, GSC/Bing verification, Rich Results testing on the deployed domain, backlink/PR work.
+- ✅ **Knowledge platform depth** — 1,500+ page target remains **ACHIEVED** (2,181+ SSG pages, unchanged this round since no new routes were added).
+
+### 📝 Notes on scope for this round
+
+Per the user's instruction to "complete the maximum possible improvements... avoid making small isolated changes that require repeated merges," this round intentionally focused on **closing 100% of the two biggest concrete trilingual gaps** (services + problem pages) rather than spreading effort thinly across many partially-done areas. Suburb/area/blog translation was deliberately deferred to a dedicated future round because of its sheer volume (1,300+ generated pages) — attempting it partially in this round would have left another inconsistent "half-done" state, which the user's rules explicitly discourage.
+
+---
+
 ## 🆕 ROUND 1 EXECUTION LOG (2026-07-24) — IMPLEMENTATION STARTED
 
 **User approval:** User said “Kam shuru kren” / “Ok jari rakhen”, so the previous “handoff update only — no development” holding status is now superseded for this session.
