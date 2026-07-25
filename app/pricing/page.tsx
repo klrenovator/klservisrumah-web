@@ -1,17 +1,52 @@
 import React from "react";
+import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { servicesData } from "@/config/services-data";
-import { getBreadcrumbSchema, getFAQSchema, getOfferCatalogSchema } from "@/lib/seo";
+import {
+  getBreadcrumbSchema,
+  getFAQSchema,
+  getOfferCatalogSchema,
+  getSpeakableSchema
+} from "@/lib/seo";
 import { PricingHeroHeading } from "@/components/sections/pricing-hero-heading";
 import { LocalePricingContent } from "@/components/sections/locale-pricing-content";
 
-export const metadata = {
-  title: "Pricing & Rates in KL & Selangor — Transparent Market-Rate Guide",
+export const metadata: Metadata = {
+  title: "Home Services Pricing in KL & Selangor — 2026 Market-Rate Guide",
   description:
-    "Review KL Servis Rumah pricing for painting, plumbing, ceiling, waterproofing and handyman work in KL & Selangor. Market-rate, transparent and itemized.",
+    "Transparent 2026 pricing for painting (RM 450+), plumbing (RM 120+), plaster ceiling (RM 220+), PU waterproofing (RM 300+) & handyman (RM 100+) in KL & Selangor.",
+  keywords: [
+    "home services price KL",
+    "painting price Malaysia",
+    "plumbing rates KL",
+    "waterproofing cost Selangor",
+    "handyman rates Malaysia",
+    "renovation price KL"
+  ],
   alternates: {
     canonical: "/pricing",
+    languages: {
+      "en-MY": "/pricing",
+      "ms-MY": "/ms/pricing",
+      "zh-MY": "/zh/pricing",
+      "x-default": "/pricing"
+    }
   },
+  openGraph: {
+    title: "KL Servis Rumah Pricing — Transparent 2026 Guide",
+    description:
+      "Transparent Klang Valley pricing for painting, plumbing, ceiling, waterproofing, handyman and 20+ home services. Market-rate, no hidden fees.",
+    url: "https://www.klservisrumah.my/pricing",
+    siteName: "KL Servis Rumah",
+    type: "website",
+    locale: "en_MY"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "KL Servis Rumah Pricing — Transparent 2026 Guide",
+    description:
+      "Transparent Klang Valley pricing for 28+ home services. Market-rate, no hidden fees."
+  }
 };
 
 const pricingFaqs = [
@@ -54,6 +89,10 @@ export default function PricingPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(getOfferCatalogSchema(offerCatalogItems)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getSpeakableSchema(["h1", ".pricing-intro", ".faq-answer"])) }}
       />
 
       <section className="bg-gradient-to-b from-slate-50 via-white to-sky-50/30 py-16 sm:py-20">

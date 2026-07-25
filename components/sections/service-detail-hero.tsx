@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { siteConfig } from "@/config/site";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { CheckCircle2, MessageSquare, Phone, Award, Star } from "lucide-react";
@@ -137,10 +138,14 @@ export function ServiceDetailHero({ service }: ServiceDetailHeroProps) {
                 <div className="absolute top-0 right-0 w-72 h-72 rounded-full bg-white/30 blur-3xl" />
                 <div className="absolute bottom-0 left-0 w-60 h-60 rounded-full bg-white/20 blur-2xl" />
               </div>
-              <img
+              <Image
                 src={service.heroImage}
-                alt={`${service.title} service banner`}
-                className="absolute inset-0 w-full h-full object-cover mix-blend-overlay"
+                alt={`${service.title} service banner — KL Servis Rumah`}
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                priority
+                fetchPriority="high"
+                className="object-cover mix-blend-overlay"
               />
               <div className="absolute inset-0 flex flex-col justify-end p-6 sm:p-8 text-white">
                 <div className="eyebrow text-[#7DD3FC] mb-2">All KL & Selangor</div>

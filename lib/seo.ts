@@ -61,10 +61,17 @@ export function getOrganizationSchema() {
     "@type": "HomeAndConstructionBusiness",
     "@id": `${baseUrl}/#organization`,
     name: siteConfig.name,
+    alternateName: ["KL Servis Rumah", "KLSR", "KL Home Services", siteConfig.legalName],
     url: baseUrl,
-    logo: absoluteUrl(siteConfig.logo),
+    logo: {
+      "@type": "ImageObject",
+      url: absoluteUrl(siteConfig.logo),
+      width: 512,
+      height: 512
+    },
     image: absoluteUrl(siteConfig.defaultOgImage),
     description: siteConfig.description,
+    slogan: siteConfig.tagline,
     telephone: siteConfig.phone,
     email: siteConfig.email,
     priceRange: "$$",
@@ -76,9 +83,83 @@ export function getOrganizationSchema() {
       opens: "09:00",
       closes: "18:00"
     },
-    sameAs: [siteConfig.links.facebook, siteConfig.links.instagram, siteConfig.links.tiktok, siteConfig.links.youtube],
+    sameAs: [
+      siteConfig.links.facebook,
+      siteConfig.links.instagram,
+      siteConfig.links.tiktok,
+      siteConfig.links.youtube,
+      siteConfig.googleBusinessProfile
+    ].filter(Boolean),
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: siteConfig.phone,
+        contactType: "customer service",
+        areaServed: "MY",
+        availableLanguage: ["English", "Malay", "Chinese"]
+      },
+      {
+        "@type": "ContactPoint",
+        telephone: siteConfig.phone,
+        contactType: "emergency",
+        areaServed: ["Kuala Lumpur", "Selangor"],
+        availableLanguage: ["English", "Malay", "Chinese"]
+      }
+    ],
+    knowsAbout: [
+      "House Painting",
+      "Interior Painting",
+      "Exterior Painting",
+      "Plumbing",
+      "Water Leak Repair",
+      "Plaster Ceiling",
+      "Gypsum Partition",
+      "Waterproofing",
+      "PU Grouting",
+      "Handyman Services",
+      "TV Wall Mounting",
+      "Furniture Assembly",
+      "Electrical Wiring",
+      "Water Heater Installation",
+      "Ceiling Fan Installation",
+      "Tiling",
+      "Flooring",
+      "Kitchen Cabinet",
+      "Door Repair",
+      "Locksmith",
+      "CCTV Installation",
+      "Auto Gate Installation",
+      "Roof Repair",
+      "House Renovation"
+    ],
+    parentOrganization: {
+      "@type": "Organization",
+      name: siteConfig.parentCompany,
+      legalName: siteConfig.legalName
+    },
     areaServed: getServiceAreaSchema(),
     aggregateRating: aggregateRating()
+  };
+}
+
+export function getWebsiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${baseUrl}/#website`,
+    url: baseUrl,
+    name: siteConfig.name,
+    description: siteConfig.metaDescription,
+    publisher: { "@id": `${baseUrl}/#organization` },
+    inLanguage: ["en-MY", "ms-MY", "zh-MY"],
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${baseUrl}/search?q={search_term_string}`
+      },
+      "query-input": "required name=search_term_string"
+    }
   };
 }
 

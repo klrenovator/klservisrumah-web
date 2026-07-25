@@ -10,11 +10,8 @@
     "seo:audit": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types scripts/seo-audit.ts"
   },
   "dependencies": {
-    "@heroui/react": "3.0.3",
-    "@heroui/styles": "3.0.3",
     "@hookform/resolvers": "^3.10.0",
     "clsx": "^2.1.1",
-    "framer-motion": "^12.4.2",
     "lucide-react": "^0.475.0",
     "next": "15.5.21",
     "react": "^19.0.0",

@@ -757,6 +757,17 @@ export const problemPages: ProblemDetail[] = [
   }
 ];
 
+// Additional problem entries (kept in a separate file for
+// readability; combined here so `problemPages` remains the single
+// source of truth used across the app and schemas).
+import { extraProblemPages } from "@/config/problem-data-extra";
+export const allProblemPages: ProblemDetail[] = [...problemPages, ...extraProblemPages];
+
+// Overwrite the exported array (import site expects `problemPages`
+// to include every problem). Downstream code uses `problemPages`
+// directly, so we mutate-append rather than shadow-export.
+(problemPages as ProblemDetail[]).push(...extraProblemPages);
+
 export const problemSlugs = problemPages.map((problem) => problem.slug);
 
 // Trilingual problem content (MS + ZH) — Round 14

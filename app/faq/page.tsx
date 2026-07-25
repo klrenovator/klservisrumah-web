@@ -1,16 +1,47 @@
 import React from "react";
+import type { Metadata } from "next";
 import { FAQAccordion } from "@/components/sections/faq-accordion";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { getFAQSchema } from "@/lib/seo";
+import { getFAQSchema, getBreadcrumbSchema, getSpeakableSchema } from "@/lib/seo";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
 import { Phone, MessageSquare, HelpCircle } from "lucide-react";
 
-export const metadata = {
-  title: "FAQ — Frequently Asked Questions | KL Servis Rumah",
-  description: "Get answers to pricing, warranties, insured operations, areas served, and work prep for KL Servis Rumah painting, plumbing, ceiling, and waterproofing. Same-day service available across KL & Selangor.",
+export const metadata: Metadata = {
+  title: "FAQ — Home Services in KL & Selangor | KL Servis Rumah",
+  description:
+    "Answers to pricing, warranties, insured operations, areas served, same-day booking and work prep for painting, plumbing, ceiling, waterproofing & handyman services in KL & Selangor.",
+  keywords: [
+    "home services FAQ Malaysia",
+    "painting warranty KL",
+    "plumbing FAQ Selangor",
+    "handyman prices Malaysia",
+    "waterproofing warranty KL",
+    "same-day service KL"
+  ],
   alternates: {
-    canonical: "/faq"
+    canonical: "/faq",
+    languages: {
+      "en-MY": "/faq",
+      "ms-MY": "/ms/faq",
+      "zh-MY": "/zh/faq",
+      "x-default": "/faq"
+    }
+  },
+  openGraph: {
+    title: "FAQ — KL Servis Rumah Home Services",
+    description:
+      "Everything you need to know about pricing, warranty, booking, and materials for KL Servis Rumah home services.",
+    url: "https://www.klservisrumah.my/faq",
+    siteName: "KL Servis Rumah",
+    type: "website",
+    locale: "en_MY"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FAQ — KL Servis Rumah",
+    description:
+      "Answers on pricing, warranty, booking and materials for painting, plumbing, ceiling, waterproofing & handyman services in KL & Selangor."
   }
 };
 
@@ -95,6 +126,22 @@ export default function FAQPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            getBreadcrumbSchema([{ name: "FAQ Helpdesk", item: "/faq" }])
+          )
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            getSpeakableSchema(["h1", ".faq-intro", ".faq-answer"])
+          )
+        }}
       />
 
       <FAQAccordion />

@@ -2,7 +2,13 @@ import React from "react";
 import { notFound } from "next/navigation";
 import { servicesData } from "@/config/services-data";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { getServiceSchema, getBreadcrumbSchema, getFAQSchema } from "@/lib/seo";
+import {
+  getServiceSchema,
+  getBreadcrumbSchema,
+  getFAQSchema,
+  getHowToSchema,
+  getSpeakableSchema
+} from "@/lib/seo";
 import { TrustBar } from "@/components/trust-bar";
 import { StickyBookButton } from "@/components/sticky-book-button";
 import { LocaleServiceView } from "@/components/sections/locale-service-view";
@@ -21,13 +27,33 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   return {
     title: service.metaTitle,
     description: service.metaDesc,
+    keywords: [
+      service.title,
+      `${service.title} KL`,
+      `${service.title} Kuala Lumpur`,
+      `${service.title} Selangor`,
+      `${service.title} price`,
+      `${service.title} cost`,
+      `${service.title} Malaysia`,
+      "home services Malaysia",
+      "KL Servis Rumah"
+    ],
     alternates: {
-      canonical: `/services/${service.slug}`
+      canonical: `/services/${service.slug}`,
+      languages: {
+        "en-MY": `/services/${service.slug}`,
+        "ms-MY": `/ms/services/${service.slug}`,
+        "zh-MY": `/zh/services/${service.slug}`,
+        "x-default": `/services/${service.slug}`
+      }
     },
     openGraph: {
       title: service.metaTitle,
       description: service.metaDesc,
       url: `https://www.klservisrumah.my/services/${service.slug}`,
+      type: "website",
+      siteName: "KL Servis Rumah",
+      locale: "en_MY",
       images: [
         {
           url: service.heroImage,
@@ -36,6 +62,12 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
           alt: service.title
         }
       ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: service.metaTitle,
+      description: service.metaDesc,
+      images: [service.heroImage]
     }
   };
 }
@@ -70,6 +102,10 @@ async function ServiceSlugPageResolver({
   ];
   const breadcrumbSchema = getBreadcrumbSchema(crumbs);
   const faqSchema = getFAQSchema(service.faqs);
+  const howToSchema = getHowToSchema(
+    service.process.map((p) => ({ title: p.title, desc: p.desc }))
+  );
+  const speakableSchema = getSpeakableSchema(["h1", ".service-hero-tagline", ".faq-answer"]);
 
   return (
     <>
@@ -91,6 +127,14 @@ async function ServiceSlugPageResolver({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
       />
 
       <LocaleServiceView service={service} />

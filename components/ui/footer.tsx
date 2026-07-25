@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { servicesData } from "@/config/services-data";
-import { Phone, Mail, MapPin, Clock, ShieldCheck, CheckCircle, Facebook, Instagram, Youtube } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, ShieldCheck, CheckCircle, Facebook, Instagram } from "lucide-react";
 import { Logo } from "@/components/ui/logo";
 import { useTranslations } from "@/hooks/use-translations";
 
@@ -24,9 +24,45 @@ export function Footer() {
   // Top services for footer (limited to 8 for cleaner layout)
   const topServices = Object.values(servicesData).slice(0, 8);
 
+  // Curated top areas for footer — mirrors KLRenovator area-linking density
+  // and pushes internal-link equity from every page to the most valuable
+  // location silos.
+  const topAreas = [
+    { slug: "kuala-lumpur", label: "Kuala Lumpur" },
+    { slug: "petaling-jaya", label: "Petaling Jaya" },
+    { slug: "subang-jaya", label: "Subang Jaya" },
+    { slug: "shah-alam", label: "Shah Alam" },
+    { slug: "puchong", label: "Puchong" },
+    { slug: "klang", label: "Klang" },
+    { slug: "cheras", label: "Cheras" },
+    { slug: "ampang", label: "Ampang" }
+  ];
+
   return (
     <footer className="bg-white text-slate-500 border-t border-slate-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+      {/* Trust strip — surfaces the four core promises on every page */}
+      <div className="bg-gradient-to-r from-sky-50 via-white to-emerald-50/60 border-b border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 grid grid-cols-2 md:grid-cols-4 gap-3 text-[11px] sm:text-xs text-slate-700 font-semibold">
+          <div className="flex items-center gap-2">
+            <ShieldCheck className="h-4 w-4 text-emerald-500 shrink-0" />
+            <span>Insured &amp; verified crew</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <CheckCircle className="h-4 w-4 text-sky-500 shrink-0" />
+            <span>Fixed quote before work</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <ShieldCheck className="h-4 w-4 text-amber-500 shrink-0" />
+            <span>30-day to 5-year warranty</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <CheckCircle className="h-4 w-4 text-violet-500 shrink-0" />
+            <span>Same-day dispatch KL &amp; Selangor</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-5">
         {/* Brand Block */}
         <div className="space-y-4">
           <Link href="/" className="inline-block">
@@ -86,6 +122,28 @@ export function Footer() {
               <li><Link href="/about" className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("nav.about")}</Link></li>
             </ul>
           </div>
+        </div>
+
+        {/* Areas Block — pushes location silos and boosts local SEO signals */}
+        <div className="space-y-4">
+          <p className="text-xs font-black uppercase tracking-wider text-slate-900">{t("nav.areas")}</p>
+          <ul className="space-y-2">
+            {topAreas.map((a) => (
+              <li key={a.slug}>
+                <Link
+                  href={`/areas/${a.slug}`}
+                  className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium"
+                >
+                  {a.label}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <Link href="/areas" className="text-xs font-bold text-sky-600 hover:text-sky-700 transition-colors">
+                {t("common.viewAll")} &rarr;
+              </Link>
+            </li>
+          </ul>
         </div>
 
         {/* Contact Block */}

@@ -5,13 +5,12 @@ import { Navbar } from "@/components/ui/navbar";
 import { Footer } from "@/components/ui/footer";
 import { WhatsAppButton } from "@/components/ui/whatsapp-button";
 import { StickyMobileWhatsAppBar } from "@/components/sticky-mobile-whatsapp-bar";
-import { ExitIntentPopup } from "@/components/exit-intent-popup";
-import { SocialProofWidgets } from "@/components/social-proof-widgets";
 import { WebVitalsReporter } from "@/components/web-vitals-reporter";
 import { ServiceWorkerRegister } from "@/components/service-worker-register";
 import { GoogleAnalytics } from "@/components/analytics/google-analytics";
+import { DeferredWidgets } from "@/components/deferred-widgets";
 import { siteConfig } from "@/config/site";
-import { getOrganizationSchema, getLocalBusinessSchema } from "@/lib/seo";
+import { getOrganizationSchema, getLocalBusinessSchema, getWebsiteSchema } from "@/lib/seo";
 
 export const viewport: Viewport = {
   themeColor: "#0284C7",
@@ -32,8 +31,8 @@ export const metadata: Metadata = {
     canonical: "/",
     languages: {
       "en-MY": "/",
-      "ms-MY": "/",
-      "zh-MY": "/",
+      "ms-MY": "/ms",
+      "zh-MY": "/zh",
       "x-default": "/"
     }
   },
@@ -76,9 +75,23 @@ export default function RootLayout({
 }>) {
   const orgSchema = getOrganizationSchema();
   const localSchema = getLocalBusinessSchema();
+  const websiteSchema = getWebsiteSchema();
 
   return (
     <html lang="en-MY" className="antialiased">
+      <head>
+        {/* Performance hints — pre-warm the DNS/TCP handshake to critical
+            third-party endpoints so first-click WhatsApp and analytics are
+            instant. `dns-prefetch` covers older browsers; `preconnect`
+            wins on modern ones. */}
+        <link rel="preconnect" href="https://wa.me" crossOrigin="" />
+        <link rel="preconnect" href="https://api.whatsapp.com" crossOrigin="" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://wa.me" />
+        <link rel="dns-prefetch" href="https://api.whatsapp.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+      </head>
       <body className="font-sans text-[#475569] bg-white min-h-screen flex flex-col justify-between">
         <script
           type="application/ld+json"
@@ -87,6 +100,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
         <Providers>
           <GoogleAnalytics />
@@ -99,8 +116,7 @@ export default function RootLayout({
           <Footer />
           <WhatsAppButton />
           <StickyMobileWhatsAppBar />
-          <ExitIntentPopup />
-          <SocialProofWidgets />
+          <DeferredWidgets />
         </Providers>
       </body>
     </html>

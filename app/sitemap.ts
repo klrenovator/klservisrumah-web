@@ -14,16 +14,20 @@ type Entry = { path: string; priority: number; changeFrequency?: MetadataRoute.S
 function entry({ path, priority, changeFrequency = "weekly" }: Entry): MetadataRoute.Sitemap[number] {
   const cleanPath = path === "/" ? "" : path;
   const pageUrl = `${baseUrl}${cleanPath}`;
+  // Properly point ms/zh alternates at the localised URL prefixes so
+  // Google and Bing serve the correct language variant per user locale.
+  const msUrl = `${baseUrl}/ms${cleanPath}`;
+  const zhUrl = `${baseUrl}/zh${cleanPath}`;
   return {
     url: pageUrl,
-    lastModified: new Date("2026-07-25"),
+    lastModified: new Date(),
     changeFrequency,
     priority,
     alternates: {
       languages: {
         "en-MY": pageUrl,
-        "ms-MY": pageUrl,
-        "zh-MY": pageUrl,
+        "ms-MY": msUrl,
+        "zh-MY": zhUrl,
         "x-default": pageUrl
       }
     }

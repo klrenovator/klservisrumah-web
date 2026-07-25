@@ -7,7 +7,9 @@ import { siteConfig } from "@/config/site";
 import { useTranslations } from "@/hooks/use-translations";
 
 export function NotSureSection() {
-  const t = useTranslations();
+  // Translations wiring reserved for future locale-specific overrides.
+  const _t = useTranslations();
+  void _t;
 
   return (
     <section className="bg-gradient-to-b from-white to-slate-50 border-y border-slate-100 py-20 sm:py-24">
