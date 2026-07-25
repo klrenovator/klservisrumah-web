@@ -4,6 +4,7 @@ import { servicesData } from "@/config/services-data";
 import { areaPages } from "@/config/area-data";
 import { problemPages } from "@/config/problem-data";
 import { siteConfig } from "@/config/site";
+import { Reveal } from "@/components/ui/reveal";
 
 // Curated top-lists — prioritised for topical authority + click depth.
 // Every homepage internal link keeps the site's SEO PageRank flowing to the
@@ -63,24 +64,26 @@ export function HomepageAeoLinks() {
   return (
     <section className="relative bg-gradient-to-b from-slate-50 to-white section border-y border-slate-100">
       <div className="container-default">
-        <div className="mx-auto max-w-3xl text-center mb-14">
-          <span className="eyebrow inline-flex items-center gap-2">
-            <Users className="w-3.5 h-3.5" />
-            Explore KL Servis Rumah
-          </span>
-          <h2 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#075985] tracking-tight text-balance">
-            Everything a Klang Valley homeowner needs — all in one place
-          </h2>
-          <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
-            Jump straight to the service, area, common home problem or planning tool
-            that matches what you&apos;re dealing with today. Every page is written by
-            local tradesmen and updated for {new Date().getFullYear()}.
-          </p>
-        </div>
+        <Reveal>
+          <div className="mx-auto max-w-3xl text-center mb-14">
+            <span className="eyebrow inline-flex items-center gap-2">
+              <Users className="w-3.5 h-3.5" />
+              Explore KL Servis Rumah
+            </span>
+            <h2 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#075985] tracking-tight text-balance">
+              Everything a Klang Valley homeowner needs — all in one place
+            </h2>
+            <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
+              Jump straight to the service, area, common home problem or planning tool
+              that matches what you&apos;re dealing with today. Every page is written by
+              local tradesmen and updated for {new Date().getFullYear()}.
+            </p>
+          </div>
+        </Reveal>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
           {/* Top services */}
-          <div className="rounded-3xl bg-white border border-slate-100 shadow-sm p-6 sm:p-8">
+          <Reveal className="rounded-3xl bg-white border border-slate-100 shadow-sm p-6 sm:p-8">
             <div className="flex items-center gap-3 mb-5">
               <div className="w-11 h-11 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center border border-sky-100">
                 <Wrench className="w-5 h-5" />
@@ -114,10 +117,10 @@ export function HomepageAeoLinks() {
               Browse all {Object.keys(servicesData).length}+ services
               <ArrowRight className="w-4 h-4" />
             </Link>
-          </div>
+          </Reveal>
 
           {/* Top areas */}
-          <div className="rounded-3xl bg-white border border-slate-100 shadow-sm p-6 sm:p-8">
+          <Reveal delay={80} className="rounded-3xl bg-white border border-slate-100 shadow-sm p-6 sm:p-8">
             <div className="flex items-center gap-3 mb-5">
               <div className="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center border border-emerald-100">
                 <MapPin className="w-5 h-5" />
@@ -151,10 +154,10 @@ export function HomepageAeoLinks() {
               View all {siteConfig.areas.length}+ service areas
               <ArrowRight className="w-4 h-4" />
             </Link>
-          </div>
+          </Reveal>
 
           {/* Common problems */}
-          <div className="rounded-3xl bg-white border border-slate-100 shadow-sm p-6 sm:p-8">
+          <Reveal delay={160} className="rounded-3xl bg-white border border-slate-100 shadow-sm p-6 sm:p-8">
             <div className="flex items-center gap-3 mb-5">
               <div className="w-11 h-11 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center border border-amber-100">
                 <AlertTriangle className="w-5 h-5" />
@@ -188,10 +191,10 @@ export function HomepageAeoLinks() {
               See every diagnosed problem
               <ArrowRight className="w-4 h-4" />
             </Link>
-          </div>
+          </Reveal>
 
           {/* Planning tools + guides */}
-          <div className="rounded-3xl bg-white border border-slate-100 shadow-sm p-6 sm:p-8">
+          <Reveal delay={240} className="rounded-3xl bg-white border border-slate-100 shadow-sm p-6 sm:p-8">
             <div className="flex items-center gap-3 mb-5">
               <div className="w-11 h-11 rounded-xl bg-violet-50 text-violet-600 flex items-center justify-center border border-violet-100">
                 <Calculator className="w-5 h-5" />
@@ -238,7 +241,7 @@ export function HomepageAeoLinks() {
                 <Calculator className="w-4 h-4" /> Full price list
               </Link>
             </div>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>

@@ -8,6 +8,7 @@ import { ServiceIcon } from "@/components/ui/service-icon";
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
 import { getLocalizedService } from "@/lib/service-i18n";
+import { Reveal } from "@/components/ui/reveal";
 
 export function ServicesGrid() {
   const t = useTranslations();
@@ -18,25 +19,31 @@ export function ServicesGrid() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Section Heading Panel */}
-        <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
-            {t("home.servicesGrid.heading")}
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
-            {t("home.servicesGrid.subheading")}
-          </h2>
-          <p className="text-base text-[#475569] leading-relaxed">
-            {t("services.pageSubtitle")}
-          </p>
-        </div>
+        <Reveal>
+          <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-16">
+            <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
+              {t("home.servicesGrid.heading")}
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
+              {t("home.servicesGrid.subheading")}
+            </h2>
+            <p className="text-base text-[#475569] leading-relaxed">
+              {t("services.pageSubtitle")}
+            </p>
+          </div>
+        </Reveal>
 
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {Object.values(servicesData).map((sourceService) => {
+          {Object.values(servicesData).map((sourceService, idx) => {
             const service = getLocalizedService(sourceService, lang);
+            // Stagger the reveal within the visible row (cap so late
+            // cards don't wait too long after scrolling into view).
+            const delay = Math.min((idx % 6) * 60, 300);
             return (
-            <div
+            <Reveal
               key={service.slug}
+              delay={delay}
               className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_8px_30px_rgba(2,31,68,0.02)] hover:shadow-[0_20px_50px_rgba(2,31,68,0.05)] hover:border-[#0EA5E9]/30 transition-all duration-300 flex flex-col justify-between group"
             >
               <div className="flex flex-col gap-5">
@@ -97,7 +104,7 @@ export function ServicesGrid() {
                 </Link>
               </div>
 
-            </div>
+            </Reveal>
             );
           })}
         </div>
