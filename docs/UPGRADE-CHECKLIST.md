@@ -50,7 +50,7 @@ Last updated: 2026-07-25 (latest agent run: hub architecture + social proof + pe
 - [x] `app/sitemap.ts`: proper `/ms` and `/zh` hreflang alternates; live `lastModified` timestamp.
 
 ### Content architecture — 2204 → 3110 static pages (+41%)  ✅
-- [x] +15 area pages (Cheras, Ampang, Kajang, Mont Kiara, Bangsar, Damansara, Kepong, Setapak, Sri Petaling, Kota Damansara, Ara Damansara, Sunway, USJ, Putrajaya, Cyberjaya).
+- [x] +32 area pages total after latest pass: original expansion plus Wangsa Maju, Bukit Jalil, Desa ParkCity, Taman Melawati, Bandar Utama, SS2, Setia Alam, Kota Kemuning, Batu Caves, Selayang, Rawang, Sungai Buloh, Semenyih, Seri Kembangan, Pandan Indah and Sentul.
 - [x] +34 problem pages via new `config/problem-data-extra.ts` — every service pillar now owns 2–3+ diagnostic pages.
 - [x] +16 long-form blog posts via new `config/blog-data-extra.ts` covering every core service pillar plus smart lock, CCTV, autogate, condo-vs-terrace repaint guides.
 
@@ -93,8 +93,8 @@ Last updated: 2026-07-25 (latest agent run: hub architecture + social proof + pe
 
 | Metric | Before | After |
 |--------|--------|-------|
-| Static pages generated | 2,204 | 3,121 (+42%) |
-| Area pages | 6 | 21 |
+| Static pages generated | 2,204 | 4,033 (+83%) |
+| Area pages | 6 | 38 |
 | Problem pages | 43 | 77 |
 | Blog posts | 2 | 18 |
 | Homepage JSON-LD blocks | 2 (org + local) | 8 (org + local + website + breadcrumb + FAQ + speakable + service + offer catalog) |

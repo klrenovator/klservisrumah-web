@@ -61,6 +61,7 @@
 - ✅ Add hero section with coverage messaging
 - ✅ Add WhatsApp/Call CTAs
 - ✅ Add stats (40+ areas, same-day, 4.9 rating)
+- ✅ Expanded crawlable area hub pages from 21 to 38, adding high-intent KL/Selangor locations such as Wangsa Maju, Bukit Jalil, Desa ParkCity, Setia Alam, Kota Kemuning, Rawang, Semenyih, Seri Kembangan and Sentul
 
 ### 10. About Page Improvements
 - ✅ Add hero section with "Built on craft. Driven by trust." messaging

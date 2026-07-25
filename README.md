@@ -60,7 +60,7 @@ To build the static optimized pages and verify TypeScript compilations:
 npm run build
 ```
 
-The build generates **3,100+ static pages** (SSG) covering services, suburbs, areas, problems, guides, comparison hubs, answer hubs, tools, and more.
+The build generates **4,000+ static pages** (SSG) covering services, suburbs, areas, problems, guides, comparison hubs, answer hubs, tools, and more.
 
 ---
 
@@ -171,7 +171,7 @@ The project is pre-optimized for continuous zero-downtime integration on Vercel:
 
 - **Total Services**: 28 service pillars
 - **Sub-Services**: 137+ specialized sub-services
-- **Total Pages**: 3,100+ static pages (SSG)
+- **Total Pages**: 4,000+ static pages (SSG)
 - **Languages**: 3 (English, Bahasa Malaysia, Chinese)
 - **Suburbs Covered**: 49+ across KL & Selangor
 - **Problem Pages**: 43 diagnostic/solution pages
