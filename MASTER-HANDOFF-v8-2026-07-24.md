@@ -1,3 +1,115 @@
+## 🆕 ROUND 28 EXECUTION LOG (2026-07-25) — LOCATION PAGES TRILINGUAL PASS (AREAS, SUBURBS, NEAR-ME) — 1,742 PAGES
+
+**User direction:** "Kam shuru kren handoff file k mutabiq" — start work according to the handoff file.
+
+**Round status:** ✅ **COMPLETED — the largest remaining trilingual gap (location pages) is now closed**
+
+### 🎯 Why this was prioritized
+
+The handoff's "Still pending" queues from Rounds 15–27 repeatedly flagged the same #1 item:
+
+> ⏳ **Area / suburb / blog / projects / content-data translation** — "This is the largest remaining trilingual gap by page count (1,300+ suburb×service pages alone) — recommend tackling suburb/area data first since those pages carry the most local-SEO value."
+
+Every location route was still hard-coded English with zero locale awareness, so BM/ZH visitors landing on any of the 1,742 location pages saw a fully English page even after switching the language pill. These pages carry the highest local-SEO value in the project, so they were closed first — completely, rather than partially.
+
+### ✅ What was changed
+
+#### 🈂️ 1. Trilingual data layer for locations
+- ✅ **`config/area-i18n.ts` (new)** — Full native MS + ZH content for all **6 coverage areas** (Kuala Lumpur, Petaling Jaya, Subang Jaya, Puchong, Shah Alam, Klang): description, metaTitle, metaDesc and 3 FAQs each. Written as original copy for KL Servis Rumah, not machine-style translation.
+- ✅ **`config/suburb-i18n.ts` (new)** — MS + ZH housing-profile copy for all **49 suburbs**, plus localised "common issues" lists. **49/49 coverage, no fallbacks.**
+- ✅ **ZH area names** — Added proper Chinese names (吉隆坡, 八打灵再也, 梳邦再也, 蒲种, 莎阿南, 巴生) so headings read natively instead of mixing Chinese copy with English place names. Suburb names were deliberately kept canonical to avoid propagating uncertain transliterations across 1,372 pages.
+
+#### 🧭 2. Localization helpers
+- ✅ **`lib/location-i18n.ts` (new)** — `getLocalizedArea()` and `getLocalizedSuburb()`, mirroring the existing `getLocalizedService()` / `getLocalizedProblem()` pattern with English fallback. Suburb FAQs and population copy are generated from per-locale templates so all 49 suburbs stay consistent without 49× duplication.
+- ✅ **`lib/location-bundles.ts` (new)** — Server-side builders that pre-compute compact EN/MS/ZH string bundles for each page. This exists specifically to satisfy permanent rule 17 (Core Web Vitals budget) — see the performance note below.
+
+#### 🖥️ 3. Locale-aware page views (5 new client components)
+- ✅ `components/sections/locale-area-view.tsx` — `/areas/[slug]`
+- ✅ `components/sections/locale-area-service-view.tsx` — `/areas/[slug]/[serviceSlug]`
+- ✅ `components/sections/locale-near-me-view.tsx` — `/areas/[slug]/[serviceSlug]/near-me`
+- ✅ `components/sections/locale-suburb-service-view.tsx` — `/suburbs/[slug]/[serviceSlug]`
+- ✅ `components/sections/locale-near-me-hub.tsx` — `/near-me/[serviceSlug]`
+- ✅ `components/near-me-locator.tsx` — geolocation helper text, button and all four status messages localised (was hard-coded English state strings).
+
+Every heading, eyebrow, badge, sidebar, safety-pack list, CTA, breadcrumb label, pricing block, landmark panel and FAQ on these pages is now translated. Sub-service names and prices resolve through `getLocalizedService()`, so BM shows *"Dari RM 450 / bilik"* and ZH shows *"从 RM 450 / 房间起"*.
+
+#### 🌐 4. Translation dictionaries
+- ✅ Added a new **`location.*` namespace with 59 keys × 3 languages (177 new strings)** covering area, suburb, near-me and locator UI. Verified programmatically: **0 missing keys, 0 keys identical to English** in MS/ZH.
+
+#### ⚡ 5. Performance fix caught during QA (important)
+The first implementation passed the whole `AreaDetail` / `ServiceDetail` objects into client components. That worked, but pulled the 479 KB `services-data.ts` dataset into the client bundle and **inflated `/areas/[slug]/[serviceSlug]` first-load JS from 132 kB → 301 kB** — a direct violation of permanent rule 17 (CWV budget).
+
+Refactored to the server-bundle pattern in `lib/location-bundles.ts`: the server component pre-computes only the strings each page renders and passes them down. Result:
+
+| Route | Baseline | First attempt | **Final** |
+|---|---|---|---|
+| `/areas/[slug]/[serviceSlug]` | 132 kB | 301 kB ❌ | **138 kB ✅** |
+| `/suburbs/[slug]/[serviceSlug]` | 131 kB | 154 kB | **138 kB ✅** |
+| `/near-me/[serviceSlug]` | 107 kB | 158 kB | **138 kB ✅** |
+| `/areas/[slug]/[serviceSlug]/near-me` | 131 kB | 149 kB | **137 kB ✅** |
+
+Final overhead is **+6 to +7 kB** per route for three full languages of content — acceptable and within budget.
+
+#### 🔍 6. SEO integrity preserved
+- ✅ All schema generation (BreadcrumbList, FAQPage, LocalBusiness, HomeAndConstructionBusiness) stays **server-side and canonical English** — search engines still receive stable structured data while visitors see their own language.
+- ✅ `generateMetadata`, canonical URLs, `generateStaticParams` and all 1,742 URLs unchanged. No route or slug changes.
+- ✅ Verified on the running production build: 1 `<h1>` per page, correct canonical tag, schema blocks intact.
+
+### 📁 Files created (4)
+- ✅ `config/area-i18n.ts`
+- ✅ `config/suburb-i18n.ts`
+- ✅ `lib/location-i18n.ts`
+- ✅ `lib/location-bundles.ts`
+
+### 📁 Components created (5)
+- ✅ `components/sections/locale-area-view.tsx`
+- ✅ `components/sections/locale-area-service-view.tsx`
+- ✅ `components/sections/locale-suburb-service-view.tsx`
+- ✅ `components/sections/locale-near-me-view.tsx`
+- ✅ `components/sections/locale-near-me-hub.tsx`
+
+### 📁 Files modified (9)
+- ✅ `app/areas/[slug]/page.tsx`
+- ✅ `app/areas/[slug]/[serviceSlug]/page.tsx`
+- ✅ `app/areas/[slug]/[serviceSlug]/near-me/page.tsx`
+- ✅ `app/suburbs/[slug]/[serviceSlug]/page.tsx`
+- ✅ `app/near-me/[serviceSlug]/page.tsx`
+- ✅ `components/near-me-locator.tsx`
+- ✅ `messages/en.json`, `messages/ms.json`, `messages/zh.json`
+
+### ✅ Quality check results (13-point pre-delivery process)
+- ✅ TypeScript: **0 errors** (`npx tsc --noEmit`)
+- ✅ ESLint: **0 errors, 0 warnings** (`npx eslint . --max-warnings=0`)
+- ✅ Build: **green — 2,204 / 2,204 SSG pages generated**, no route changes, no regressions
+- ✅ Production smoke test (`next start`): **HTTP 200 on all 20 sampled routes** including `/areas/kuala-lumpur`, `/areas/shah-alam`, `/areas/petaling-jaya/painting`, `/areas/klang/waterproofing/near-me`, `/suburbs/mont-kiara/plumbing`, `/suburbs/putrajaya/painting`, `/near-me/painting`, `/near-me/electrical`, `/sitemap.xml`
+- ✅ Translation coverage script: **6/6 areas and 49/49 suburbs** have genuine MS + ZH content (0 silently falling back to English)
+- ✅ Key parity: **460 keys in each of EN / MS / ZH** — 0 missing
+- ✅ Bundle budget: verified against the pre-round baseline (table above)
+- ✅ Permanent rules honoured — no public SSM display, phone +60 11-1662 7349 untouched, market-rate RM pricing unchanged (only price-prefix wording localised), no fake reviews or claims, no internal SEO/AEO/GEO jargon in any customer-facing string (verified by grep across all new copy and all 3 dictionaries)
+
+### 📊 Round 28 Metrics
+- **Location pages now trilingual**: 0 → **1,742** (6 area + 168 area×service + 168 near-me + 1,372 suburb×service + 28 near-me hubs)
+- **Areas with full MS/ZH content**: 0/6 → **6/6 (100%)**
+- **Suburbs with full MS/ZH content**: 0/49 → **49/49 (100%)**
+- **New translation keys**: 59 × 3 languages = **177 strings**
+- **Files created**: 9 · **Files modified**: 9
+- **Build**: 2,204 SSG pages · 0 lint errors · 0 TS errors · 0 regressions
+
+### ⏳ Still pending after Round 28 (recommended for Round 29+)
+- ⏳ **`config/content-data.ts`** — 52 cluster + 10 guide + 15 comparison + 10 maintenance pages rendered by `GenericContentPageView`, still English-only. This is now the largest remaining trilingual gap.
+- ⏳ **`config/blog-data.ts`** (2 long-form posts) and **`config/projects-data.ts`** (4 case studies) — still English-only.
+- ⏳ **`components/content/generic-content-page.tsx`** — the shared body ("Key takeaways", "Practical guidance for KL & Selangor", CTA block) is hard-coded English and affects ~87 pages; wiring it to the dictionary is a cheap, high-leverage next step.
+- ⏳ Visual QA on deployed URLs at 375px and desktop breakpoints (no browser available in this environment — only HTTP/DOM-level checks were possible).
+- ⏳ Replace SVG hero banners and placeholder project images with real photography when the user supplies assets.
+- ⏳ Real customer review import (only after a verified GBP/direct review source is provided).
+- ⏳ External/manual tasks: GBP optimization, GSC/Bing verification, Rich Results testing on the live domain, backlink/PR work.
+- ✅ **Knowledge platform depth** — 1,500+ page target remains **ACHIEVED** (2,204 SSG pages, unchanged this round since no new routes were added).
+
+### 📝 Notes on scope for this round
+Following the handoff's guidance to close gaps completely rather than leaving half-done states, this round translated **100% of the location surface** (all 6 areas and all 49 suburbs) instead of spreading effort across several partially-translated areas. The CWV regression caught in QA is documented above because it is a pattern worth reusing: any future client component that needs large dataset content should receive a pre-computed server bundle rather than importing `services-data.ts` directly.
+
+---
+
 ## 🆕 ROUND 27 EXECUTION LOG (2026-07-25) — LANGUAGE ROUTING FIX, MIDDLEWARE, SEO CORRECTIONS, FOOTER SOCIAL LINKS, LOADING STATE
 
 **Round status:** ✅ **COMPLETED**
