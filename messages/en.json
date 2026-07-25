@@ -530,7 +530,16 @@
   },
   "internalLinks": {
     "eyebrow": "More from this category",
-    "defaultTitle": "Related resources"
+    "defaultTitle": "Related resources",
+    "problems": "Common Problems",
+    "commonProblems": "Related issues we can solve",
+    "viewAllProblems": "View all problem guides",
+    "areas": "Service Areas",
+    "serviceAreas": "Available in your area",
+    "viewAllAreas": "View all service areas",
+    "nearMe": "Near Me",
+    "nearMeTitle": "Find {name} near you",
+    "nearMeDesc": "Select your location to see local pricing, availability, and contact information."
   },
   "hero": {
     "subline": "Premium home services in KL & Selangor at market-rate pricing"

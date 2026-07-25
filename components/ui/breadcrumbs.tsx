@@ -1,48 +1,91 @@
-"use client";
-
 import React from "react";
 import Link from "next/link";
 import { ChevronRight, Home } from "lucide-react";
-import { useTranslations } from "@/hooks/use-translations";
 
-export interface BreadcrumbItem {
-  label: string;
+/**
+ * Breadcrumb item for both UI display and JSON-LD schema.
+ * Supports both `name` and `label` for backward compatibility.
+ */
+export type BreadcrumbItem = {
+  name?: string;
+  label?: string;
   href: string;
-}
+};
 
-export interface BreadcrumbsProps {
-  items: BreadcrumbItem[];
-}
+/**
+ * Visible breadcrumb navigation bar + JSON-LD schema in one component.
+ * Matches the KLRenovator pattern: visible breadcrumbs for UX + structured
+ * data for SEO on every page.
+ *
+ * Usage:
+ *   <Breadcrumbs items={[
+ *     { name: "Home", href: "/" },
+ *     { name: "Services", href: "/services" },
+ *     { name: "House Painting", href: "/services/painting" },
+ *   ]} />
+ */
+export function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
+  if (!items || items.length === 0) return null;
 
-export function Breadcrumbs({ items }: BreadcrumbsProps) {
-  const t = useTranslations();
+  const baseUrl = "https://www.klservisrumah.my";
+
+  // Normalize items: accept both `name` and `label` keys
+  const normalized = items.map((item) => ({
+    ...item,
+    name: item.name || item.label || "",
+  }));
 
   return (
-    <nav aria-label="Breadcrumb" className="py-3 px-4 bg-slate-50 border-b border-slate-100">
-      <div className="max-w-7xl mx-auto flex items-center gap-2 text-xs md:text-sm text-[#475569] font-medium overflow-x-auto no-scrollbar">
-        <Link href="/" className="hover:text-[#0EA5E9] transition-colors flex items-center gap-1 shrink-0">
-          <Home className="w-4 h-4 text-[#0EA5E9]" />
-          <span>{t("breadcrumbs.home")}</span>
-        </Link>
-        
-        {items.map((item, index) => {
-          const isLast = index === items.length - 1;
-          return (
-            <React.Fragment key={item.href}>
-              <ChevronRight className="w-3.5 h-3.5 text-slate-300 shrink-0" />
-              {isLast ? (
-                <span className="text-[#075985] font-bold truncate shrink-0">
-                  {item.label}
-                </span>
-              ) : (
-                <Link href={item.href} className="hover:text-[#0EA5E9] transition-colors shrink-0">
-                  {item.label}
-                </Link>
-              )}
-            </React.Fragment>
-          );
-        })}
-      </div>
-    </nav>
+    <>
+      {/* JSON-LD BreadcrumbList Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: normalized.map((item, index) => ({
+              "@type": "ListItem",
+              position: index + 1,
+              name: item.name,
+              item: `${baseUrl}${item.href}`,
+            })),
+          }),
+        }}
+      />
+
+      {/* Visible Breadcrumb Navigation */}
+      <nav
+        aria-label="Breadcrumb"
+        className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-4 pb-2"
+      >
+        <ol className="flex flex-wrap items-center gap-1.5 text-xs text-slate-500">
+          {normalized.map((item, index) => {
+            const isLast = index === normalized.length - 1;
+            return (
+              <li key={item.href} className="flex items-center gap-1.5">
+                {index === 0 ? (
+                  <Home className="h-3 w-3 shrink-0" />
+                ) : (
+                  <ChevronRight className="h-3 w-3 shrink-0 text-slate-400" />
+                )}
+                {isLast ? (
+                  <span className="font-medium text-slate-800 truncate max-w-[200px] sm:max-w-xs" aria-current="page">
+                    {item.name}
+                  </span>
+                ) : (
+                  <Link
+                    href={item.href}
+                    className="hover:text-sky-600 transition-colors font-medium truncate max-w-[150px] sm:max-w-[200px]"
+                  >
+                    {item.name}
+                  </Link>
+                )}
+              </li>
+            );
+          })}
+        </ol>
+      </nav>
+    </>
   );
 }

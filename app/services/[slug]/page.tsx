@@ -112,8 +112,8 @@ async function ServiceSlugPageResolver({
       <TrustBar />
       <StickyBookButton service={service.title} />
       <Breadcrumbs items={[
-        { label: "Services", href: "/services" },
-        { label: service.title, href: `/services/${service.slug}` }
+        { name: "Services", href: "/services" },
+        { name: service.title, href: `/services/${service.slug}` }
       ]} />
 
       <script

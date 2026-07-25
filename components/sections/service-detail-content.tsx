@@ -10,6 +10,8 @@ import { ComparisonTable } from "@/components/content/comparison-table";
 import { ProcessTimeline } from "@/components/content/process-timeline";
 import { TrustBadgesRow } from "@/components/content/trust-badges-row";
 import { RelatedServices } from "@/components/sections/related-services";
+import { RelatedProblems } from "@/components/sections/related-problems";
+import { ServiceAreaLinks } from "@/components/sections/service-area-links";
 
 type ServiceDetailContentProps = {
   service: ServiceDetail;
@@ -259,7 +261,13 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
         </div>
       </section>
 
-      {/* Section 9 — Related Services (internal linking) */}
+      {/* Section 9 — Related Problems (internal linking to symptom/diagnostic pages) */}
+      <RelatedProblems serviceSlug={service.slug} maxItems={4} />
+
+      {/* Section 10 — Service Area Links (internal linking to location pages) */}
+      <ServiceAreaLinks serviceSlug={service.slug} maxItems={8} />
+
+      {/* Section 11 — Related Services (internal linking) */}
       <RelatedServices currentSlug={service.slug} maxItems={6} />
     </>
   );

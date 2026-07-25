@@ -1,0 +1,84 @@
+# https://www.klservisrumah.my/robots.txt
+User-agent: *
+Allow: /
+Allow: /services/
+Allow: /areas/
+Allow: /blog/
+Allow: /problems/
+Allow: /pricing/
+Allow: /faq/
+Allow: /about/
+Allow: /contact/
+Allow: /near-me/
+Allow: /answers/
+Allow: /guides/
+Allow: /compare/
+Allow: /brands/
+Allow: /process/
+Allow: /commercial/
+Allow: /residential/
+Allow: /seasonal/
+Allow: /tools/
+Allow: /top/
+Allow: /projects/
+
+Disallow: /api/
+Disallow: /search?
+Disallow: /admin/
+
+Sitemap: https://www.klservisrumah.my/sitemap.xml
+
+# Crawl delay for polite crawling
+Crawl-Delay: 10
+
+# ChatGPT/GPTBot
+User-agent: GPTBot
+Allow: /
+Allow: /services/
+Allow: /areas/
+Disallow: /api/
+
+# Google-Extended (Google AI / Gemini training data)
+User-agent: Google-Extended
+Allow: /
+Allow: /services/
+Allow: /areas/
+Allow: /blog/
+Allow: /problems/
+Allow: /answers/
+Disallow: /api/
+
+# Anthropic AI (Claude training data)  
+User-agent: anthropic-ai
+Allow: /
+Allow: /services/
+Allow: /areas/
+Allow: /blog/
+Allow: /problems/
+Allow: /answers/
+Disallow: /api/
+
+# PerplexityBot
+User-agent: PerplexityBot
+Allow: /
+Allow: /services/
+Allow: /areas/
+Allow: /blog/
+Allow: /problems/
+Allow: /answers/
+Disallow: /api/
+
+# Common Crawl (used for AI training)
+User-agent: CCBot
+Allow: /
+Allow: /services/
+Allow: /areas/
+Allow: /blog/
+Disallow: /api/
+
+# ChatGPT-User
+User-agent: ChatGPT-User
+Allow: /
+Allow: /services/
+Allow: /areas/
+Disallow: /api/

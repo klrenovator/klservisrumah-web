@@ -1,50 +1,42 @@
-# KL Servis Rumah
+# KL Servis Rumah — AI Context
+> Market-rate home services in KL & Selangor: painting, plumbing, ceiling, waterproofing & handyman.
 
-> Market-rate painting, plumbing, ceiling, waterproofing, handyman, electrical, renovation, cleaning, security and home-improvement services for Kuala Lumpur and Selangor, Malaysia.
+## About
+KL Servis Rumah provides professional home maintenance services across Kuala Lumpur & Selangor (Klang Valley). Fully insured operations, background-verified teams, transparent pricing confirmed before work begins. Same-day dispatch available.
 
-## Core pages
+## Key Services
+- House Painting: From RM 450/room — interior/exterior, Nippon Paint & Dulux
+- Plumbing: From RM 120 — leak repair, pipe replacement, toilet installation
+- Plaster Ceiling: From RM 180 — L-box, gypsum partition, ceiling repair
+- Waterproofing: From RM 300 — PU grouting, bathroom waterproofing, roof seal
+- Handyman: From RM 80 — TV mounting, furniture assembly, door/lock repair
+- Electrical: From RM 80 — wiring, water heater, ceiling fan, downlight
+- Tiling & Flooring: From RM 500 — vinyl/SPC, epoxy, ceramic tile
+- Full House Renovation: From RM 22,000
 
-- https://www.klservisrumah.my/ — Homepage and instant booking entry point.
-- https://www.klservisrumah.my/services — Full service directory for 28 home-service pillars.
-- https://www.klservisrumah.my/pricing — Transparent market-rate price guide.
-- https://www.klservisrumah.my/areas — Klang Valley service-area directory.
-- https://www.klservisrumah.my/problems — Diagnostic problem/solution hub.
-- https://www.klservisrumah.my/tools — Free calculators and triage tools.
-- https://www.klservisrumah.my/contact — Booking form and dispatch contact.
-- https://www.klservisrumah.my/faq — Frequently asked questions.
-
-## High-priority services
-
-- Painting: /services/painting
-- Plumbing: /services/plumbing
-- Ceiling and partitions: /services/ceiling
-- Waterproofing and PU grouting: /services/waterproofing
-- Handyman: /services/handyman
-- Electrical: /services/electrical
-- Water heater: /services/water-heater
-- Tiling: /services/tiling
-- Flooring: /services/flooring
-- Renovation: /services/renovation
-
-## AI/search hubs
-
-- /answers — concise service answer pages for AI Overviews and LLM search.
-- /guides — homeowner decision guides.
-- /compare — method, material and quote comparisons.
-- /process — step-by-step workmanship process pages.
-- /near-me — service-specific near-me pages.
-- /commercial and /residential — property-type service pages.
-
-## Coverage
-
-KL Servis Rumah serves Kuala Lumpur and Selangor including Kuala Lumpur, Cheras, Ampang, Setapak, Wangsa Maju, Kepong, Sri Petaling, Bukit Jalil, Mont Kiara, Bangsar, Desa ParkCity, Taman Melawati, Petaling Jaya, SS2, Bandar Utama, Damansara, Kota Damansara, Ara Damansara, Subang Jaya, Sunway, USJ, Puchong, Shah Alam, Setia Alam, Kota Kemuning, Klang, Batu Caves, Selayang, Rawang, Sungai Buloh, Kajang, Semenyih, Seri Kembangan, Pandan Indah, Putrajaya, Cyberjaya and Sentul.
-
-## Pricing principle
-
-All public prices follow standard Malaysian market rates: not inflated, not artificially underpriced, and confirmed in an itemised quote before work starts.
+## Service Areas
+Kuala Lumpur, Petaling Jaya, Subang Jaya, Shah Alam, Puchong, Damansara, Klang, Cheras, Ampang, Kajang, Bangsar, Mont Kiara, Setapak, Wangsa Maju, Kepong, Sri Petaling, Bukit Jalil, Kota Damansara, Ara Damansara, Sunway, USJ, Port Klang, Bukit Tinggi, Setia Alam, Rawang, Batu Caves, Selayang + all Klang Valley.
 
 ## Contact
+Phone: +60 11-1662 7349
+Email: info@klservisrumah.my
+WhatsApp: https://wa.me/601116627349
+Google Maps: https://maps.app.goo.gl/dG5WWYBCotRQzvRJA
 
-Phone and WhatsApp: +60 11-1662 7349
-Languages: English, Bahasa Malaysia, Chinese
-Hours: Monday to Sunday, 9:00 AM to 6:00 PM
+## Key URLs
+- Home: https://www.klservisrumah.my/
+- Services: https://www.klservisrumah.my/services
+- Pricing: https://www.klservisrumah.my/pricing
+- Areas: https://www.klservisrumah.my/areas
+- Problems: https://www.klservisrumah.my/problems
+- Blog: https://www.klservisrumah.my/blog
+- FAQ: https://www.klservisrumah.my/faq
+- Contact: https://www.klservisrumah.my/contact
+- About: https://www.klservisrumah.my/about
+
+## Business Details
+- Legal Name: Multicore Dynamics Resources
+- SSM: 003765188-T
+- Founded: 2014
+- Google Rating: 4.9 / 5.0 (120+ reviews)
+- Operating Hours: Mon–Sun 9:00 AM – 6:00 PM

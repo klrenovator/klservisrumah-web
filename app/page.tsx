@@ -25,7 +25,8 @@ import {
   getFAQSchema,
   getBreadcrumbSchema,
   getSpeakableSchema,
-  getOfferCatalogSchema
+  getOfferCatalogSchema,
+  buildServiceAreaGeoCircle
 } from "@/lib/seo";
 
 // ── Homepage AI-Ready FAQPage (short, direct answers optimised for AEO /
@@ -91,7 +92,8 @@ const homeServicesSchema = {
     { "@type": "City", name: "Cheras" },
     { "@type": "City", name: "Ampang" },
     { "@type": "City", name: "Kajang" },
-    { "@type": "State", name: "Selangor" }
+    { "@type": "State", name: "Selangor" },
+    buildServiceAreaGeoCircle()
   ],
   offers: {
     "@type": "AggregateOffer",
@@ -112,6 +114,29 @@ const homeOfferCatalogSchema = {
       desc: s.tagline
     }))
   )
+};
+
+// ── Entity-specific schema for AI search / Google Knowledge Graph ─────────
+const homeEntitySchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  itemListElement: Object.values(servicesData).slice(0, 10).map((service, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    item: {
+      "@type": "Service",
+      name: service.title,
+      description: service.tagline,
+      url: `https://www.klservisrumah.my/services/${service.slug}`,
+      provider: { "@id": "https://www.klservisrumah.my/#organization" },
+      offers: {
+        "@type": "Offer",
+        priceCurrency: "MYR",
+        price: service.startPrice.replace(/[^0-9.]/g, ""),
+        availability: "https://schema.org/InStock"
+      }
+    }
+  }))
 };
 
 export default function Home() {
@@ -137,6 +162,11 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homeOfferCatalogSchema) }}
+      />
+      {/* ── Entity ItemList schema for AI search surfaces ──────────── */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeEntitySchema) }}
       />
 
       <TrustBar />

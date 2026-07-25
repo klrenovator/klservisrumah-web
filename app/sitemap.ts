@@ -9,6 +9,9 @@ import { slugify } from "@/lib/utils";
 
 const baseUrl = "https://www.klservisrumah.my";
 
+// Stable lastModified date to prevent unnecessary crawl budget waste
+const SITEMAP_LAST_MODIFIED = new Date("2026-07-25T00:00:00.000Z");
+
 type Entry = { path: string; priority: number; changeFrequency?: MetadataRoute.Sitemap[number]["changeFrequency"] };
 
 function entry({ path, priority, changeFrequency = "weekly" }: Entry): MetadataRoute.Sitemap[number] {
@@ -20,7 +23,7 @@ function entry({ path, priority, changeFrequency = "weekly" }: Entry): MetadataR
   const zhUrl = `${baseUrl}/zh${cleanPath}`;
   return {
     url: pageUrl,
-    lastModified: new Date(),
+    lastModified: SITEMAP_LAST_MODIFIED,
     changeFrequency,
     priority,
     alternates: {
@@ -67,7 +70,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const serviceRoutes: Entry[] = Object.values(servicesData).flatMap((service) => [
     { path: `/services/${service.slug}`, priority: 0.95 },
-    { path: `/${service.slug}`, priority: 0.9 },
     { path: `/near-me/${service.slug}`, priority: 0.86 },
     { path: `/services/${service.slug}/cost`, priority: 0.88 },
     { path: `/services/${service.slug}/emergency`, priority: 0.86 },

@@ -1,73 +1,296 @@
-import { servicesData } from "@/config/services-data";
-import { areaPages } from "@/config/area-data";
-import { suburbPages } from "@/config/suburb-data";
-import { problemPages } from "@/config/problem-data";
-import { clusterPages, guidePages, comparisonPages, brandPages, processPages } from "@/config/content-data";
-import { slugify } from "@/lib/utils";
+/**
+ * Topical Authority Map — KL Servis Rumah
+ *
+ * Defines the internal linking silos for every service pillar. Mirrors the
+ * KLRenovator approach where each key service page links to:
+ *   - Related services (within the same vertical)
+ *   - Problem / diagnostic pages
+ *   - Top area/location pages for that service
+ *   - FAQ pages
+ *   - Relevant blog posts
+ *
+ * This file is used by:
+ *   - Service detail pages (for "Related Services", "Related Problems", "Service Areas")
+ *   - Area detail pages (for "Available Services")
+ *   - Blog posts (for "Related Content")
+ *   - The homepage AEO links hub
+ *
+ * Usage: import { getRelatedItems } from "@/config/topical-authority-map"
+ */
 
-export const TOPICAL_AUTHORITY_MAP = {
-  servicePillars: Object.fromEntries(
-    Object.values(servicesData).map((service) => [
-      service.slug,
-      {
-        pillarPage: `/services/${service.slug}`,
-        alternatePillarPage: `/${service.slug}`,
-        subServices: service.subServices.map((sub) => ({
-          slug: slugify(sub.name),
-          title: sub.name,
-          url: `/services/${service.slug}/${slugify(sub.name)}`
-        })),
-        clusterPages: clusterPages.filter((page) => page.relatedServiceSlug === service.slug).map((page) => `/services/${service.slug}/${page.slug}`),
-        problems: problemPages.filter((problem) => problem.serviceSlug === service.slug).map((problem) => `/problems/${problem.slug}`),
-        buyingGuides: guidePages.filter((page) => page.relatedServiceSlug === service.slug || page.title.toLowerCase().includes(service.slug)).map((page) => `/guides/${page.slug}`),
-        comparisons: comparisonPages.filter((page) => page.title.toLowerCase().includes(service.slug)).map((page) => `/compare/${page.slug}`),
-        brandPages: brandPages.filter((page) => page.relatedServiceSlug === service.slug).map((page) => `/brands/${page.slug}`),
-        processPages: processPages.filter((page) => page.relatedServiceSlug === service.slug).map((page) => `/process/${page.slug}`),
-        relatedServices: Object.keys(servicesData).filter((slug) => slug !== service.slug).slice(0, 3)
-      }
-    ])
-  ),
-  areaHierarchy: Object.fromEntries(
-    areaPages.map((area) => [
-      area.slug,
-      {
-        areaPage: `/areas/${area.slug}`,
-        servicePages: Object.keys(servicesData).map((serviceSlug) => `/areas/${area.slug}/${serviceSlug}`),
-        nearMePages: Object.keys(servicesData).map((serviceSlug) => `/areas/${area.slug}/${serviceSlug}/near-me`),
-        suburbs: suburbPages.filter((suburb) => suburb.parentArea === area.slug).map((suburb) => suburb.slug)
-      }
-    ])
-  ),
-  crossLinkingRules: {
-    painting: {
-      ceiling: "After painting content, suggest ceiling crack and water-stain repair where relevant.",
-      handyman: "Suggest curtain, shelf and TV mounting once repainting is complete."
-    },
-    plumbing: {
-      waterproofing: "Pipe leaks and inter-floor leaks often require waterproofing diagnostics.",
-      ceiling: "Ceiling stains after plumbing leaks should cross-link to ceiling repair."
-    },
-    ceiling: {
-      waterproofing: "Sagging and stained ceilings should link to leak-source waterproofing pages.",
-      painting: "Finished ceiling repairs often need primer and repainting."
-    },
-    waterproofing: {
-      ceiling: "After active leaks are sealed, link to ceiling board replacement and repainting.",
-      plumbing: "Confirm whether leak is pipe-related before membrane work."
-    },
-    handyman: {
-      painting: "Wall drilling and mounting may require patching/repainting afterwards.",
-      ceiling: "Fan, downlight, and partition tasks can overlap with ceiling works."
-    }
+export type TopicalSilo = {
+  serviceSlug: string;
+  /** Related service slugs within the same silo */
+  relatedServices: string[];
+  /** Problem/symptom page slugs that link to this service */
+  relatedProblems: string[];
+  /** Top area slugs where this service is most requested */
+  topAreas: string[];
+  /** Related FAQ section identifiers */
+  faqSlugs: string[];
+  /** Related blog post slugs */
+  relatedBlogs: string[];
+  /** AI-generated search queries this service should rank for */
+  targetQueries: string[];
+};
+
+/**
+ * HOMEPAGE_SILO — exported for the homepage AEO section to reuse the same
+ * curated link lists, ensuring a single source of truth.
+ */
+export const HOMEPAGE_SILO = {
+  topServices: [
+    "painting", "plumbing", "ceiling", "waterproofing",
+    "handyman", "electrical", "tiling", "flooring",
+    "house-renovation", "kitchen-cabinet", "roof-repair", "cctv"
+  ],
+  topAreas: [
+    "kuala-lumpur", "petaling-jaya", "subang-jaya",
+    "shah-alam", "puchong", "klang", "cheras", "ampang"
+  ],
+  topProblems: [
+    "peeling-paint-malaysia", "leaking-bathroom",
+    "sagging-ceiling", "low-water-pressure",
+    "clogged-drain", "toilet-not-flushing",
+    "damp-walls-paint-bubbling", "ceiling-mold-stains"
+  ],
+};
+
+/**
+ * Full topical authority map — one entry per service pillar.
+ * Each entry defines related content for strong internal linking.
+ */
+export const topicalAuthorityMap: Record<string, TopicalSilo> = {
+  painting: {
+    serviceSlug: "painting",
+    relatedServices: ["ceiling", "handyman", "house-renovation"],
+    relatedProblems: [
+      "peeling-paint-malaysia",
+      "damp-walls-paint-bubbling",
+      "faded-exterior-paint-malaysia",
+      "wall-cracks-malaysia"
+    ],
+    topAreas: [
+      "kuala-lumpur", "petaling-jaya", "subang-jaya",
+      "shah-alam", "puchong", "klang", "cheras", "ampang",
+      "mont-kiara", "bangsar", "kajang", "damansara"
+    ],
+    faqSlugs: ["painting-faq"],
+    relatedBlogs: ["how-to-choose-house-painter", "nippon-vs-dulux-paint"],
+    targetQueries: [
+      "house painting KL",
+      "interior painting cost Malaysia",
+      "exterior painting Selangor",
+      "best painter near me KL"
+    ]
+  },
+  plumbing: {
+    serviceSlug: "plumbing",
+    relatedServices: ["waterproofing", "handyman", "house-renovation"],
+    relatedProblems: [
+      "leaking-bathroom",
+      "low-water-pressure",
+      "clogged-drain",
+      "toilet-not-flushing",
+      "burst-pipe-emergency",
+      "water-heater-leaking"
+    ],
+    topAreas: [
+      "kuala-lumpur", "petaling-jaya", "subang-jaya",
+      "shah-alam", "puchong", "klang", "cheras", "ampang",
+      "kajang", "setia-alam", "batu-caves"
+    ],
+    faqSlugs: ["plumbing-faq"],
+    relatedBlogs: ["how-to-choose-plumber", "plumbing-pipe-comparison"],
+    targetQueries: [
+      "plumber KL",
+      "plumbing repair Selangor",
+      "leaking pipe repair Malaysia",
+      "emergency plumber near me KL"
+    ]
+  },
+  ceiling: {
+    serviceSlug: "ceiling",
+    relatedServices: ["painting", "handyman", "house-renovation", "electrical"],
+    relatedProblems: [
+      "sagging-ceiling",
+      "ceiling-mold-stains",
+      "ceiling-water-stains",
+      "wall-cracks-malaysia"
+    ],
+    topAreas: [
+      "kuala-lumpur", "petaling-jaya", "subang-jaya",
+      "shah-alam", "puchong", "klang", "cheras", "ampang",
+      "damansara", "mont-kiara"
+    ],
+    faqSlugs: ["ceiling-faq"],
+    relatedBlogs: ["how-to-choose-ceiling-contractor", "plaster-vs-gypsum-ceiling"],
+    targetQueries: [
+      "plaster ceiling KL",
+      "ceiling repair Selangor",
+      "L-box ceiling installation",
+      "gypsum ceiling price Malaysia"
+    ]
+  },
+  waterproofing: {
+    serviceSlug: "waterproofing",
+    relatedServices: ["plumbing", "ceiling", "painting", "house-renovation"],
+    relatedProblems: [
+      "leaking-bathroom",
+      "ceiling-water-stains",
+      "damp-walls-paint-bubbling",
+      "roof-leaking-malaysia"
+    ],
+    topAreas: [
+      "kuala-lumpur", "petaling-jaya", "subang-jaya",
+      "shah-alam", "puchong", "klang", "cheras", "ampang",
+      "kajang", "setia-alam"
+    ],
+    faqSlugs: ["waterproofing-faq"],
+    relatedBlogs: ["how-to-choose-waterproofing-contractor", "pu-vs-membrane-comparison"],
+    targetQueries: [
+      "waterproofing KL",
+      "bathroom waterproofing Selangor",
+      "PU grouting Malaysia",
+      "roof waterproofing KL"
+    ]
+  },
+  handyman: {
+    serviceSlug: "handyman",
+    relatedServices: ["painting", "plumbing", "ceiling", "electrical"],
+    relatedProblems: [
+      "door-not-closing",
+      "furniture-assembly",
+      "tv-mounting",
+      "sagging-ceiling",
+      "toilet-not-flushing"
+    ],
+    topAreas: [
+      "kuala-lumpur", "petaling-jaya", "subang-jaya",
+      "shah-alam", "puchong", "klang", "cheras", "ampang",
+      "mont-kiara", "bangsar"
+    ],
+    faqSlugs: ["handyman-faq"],
+    relatedBlogs: ["how-to-choose-handyman", "tv-mount-types-comparison"],
+    targetQueries: [
+      "handyman KL",
+      "handyman near me Selangor",
+      "TV mounting service KL",
+      "furniture assembly Malaysia"
+    ]
+  },
+  electrical: {
+    serviceSlug: "electrical",
+    relatedServices: ["handyman", "ceiling", "house-renovation"],
+    relatedProblems: [
+      "power-trip-malaysia",
+      "ceiling-fan-not-working",
+      "water-heater-leaking"
+    ],
+    topAreas: [
+      "kuala-lumpur", "petaling-jaya", "subang-jaya",
+      "shah-alam", "puchong", "klang", "cheras", "ampang"
+    ],
+    faqSlugs: ["electrical-faq"],
+    relatedBlogs: [],
+    targetQueries: [
+      "electrical wiring KL",
+      "ceiling fan installation Malaysia",
+      "water heater installation KL",
+      "downlight installation Selangor"
+    ]
+  },
+  tiling: {
+    serviceSlug: "tiling",
+    relatedServices: ["waterproofing", "painting", "handyman", "house-renovation"],
+    relatedProblems: [
+      "loose-tiles-malaysia",
+      "broken-tiles-malaysia",
+      "damp-walls-paint-bubbling"
+    ],
+    topAreas: [
+      "kuala-lumpur", "petaling-jaya", "subang-jaya",
+      "shah-alam", "puchong", "klang", "cheras", "ampang"
+    ],
+    faqSlugs: ["tiling-faq"],
+    relatedBlogs: [],
+    targetQueries: [
+      "tiling KL",
+      "tile installation Selangor",
+      "vinyl flooring Malaysia",
+      "epoxy flooring KL"
+    ]
+  },
+  flooring: {
+    serviceSlug: "flooring",
+    relatedServices: ["tiling", "painting", "handyman", "house-renovation"],
+    relatedProblems: [
+      "loose-tiles-malaysia",
+      "damp-walls-paint-bubbling"
+    ],
+    topAreas: [
+      "kuala-lumpur", "petaling-jaya", "subang-jaya",
+      "shah-alam", "puchong", "klang", "cheras", "ampang"
+    ],
+    faqSlugs: ["flooring-faq"],
+    relatedBlogs: [],
+    targetQueries: [
+      "flooring KL",
+      "SPC flooring Malaysia",
+      "vinyl flooring installation KL",
+      "epoxy flooring price Selangor"
+    ]
+  },
+  "house-renovation": {
+    serviceSlug: "house-renovation",
+    relatedServices: ["painting", "plumbing", "ceiling", "waterproofing", "tiling", "flooring", "electrical", "kitchen-cabinet"],
+    relatedProblems: [
+      "peeling-paint-malaysia",
+      "leaking-bathroom",
+      "ceiling-water-stains",
+      "wall-cracks-malaysia"
+    ],
+    topAreas: [
+      "kuala-lumpur", "petaling-jaya", "subang-jaya",
+      "shah-alam", "puchong", "klang", "cheras", "ampang",
+      "mont-kiara", "bangsar"
+    ],
+    faqSlugs: ["renovation-faq"],
+    relatedBlogs: [],
+    targetQueries: [
+      "house renovation KL",
+      "home renovation Malaysia",
+      "full house renovation Selangor",
+      "renovation contractor near me"
+    ]
   }
-} as const;
+};
 
-export function getRelatedLinksForService(serviceSlug: keyof typeof servicesData) {
-  const pillar = TOPICAL_AUTHORITY_MAP.servicePillars[serviceSlug];
-  return [
-    pillar.pillarPage,
-    ...pillar.subServices.slice(0, 3).map((item) => item.url),
-    ...pillar.problems.slice(0, 3),
-    ...pillar.clusterPages.slice(0, 2)
-  ];
+/**
+ * Get related items for a given service slug.
+ * Falls back to handyman for unknown services.
+ */
+export function getRelatedItems(slug: string): TopicalSilo {
+  return topicalAuthorityMap[slug] || topicalAuthorityMap.handyman;
+}
+
+/**
+ * Get related service slugs for a given service.
+ */
+export function getRelatedServices(slug: string): string[] {
+  return getRelatedItems(slug).relatedServices;
+}
+
+/**
+ * Get related problem slugs for a given service.
+ */
+export function getRelatedProblems(slug: string): string[] {
+  return getRelatedItems(slug).relatedProblems;
+}
+
+/**
+ * Get top area slugs for a given service.
+ */
+export function getTopAreas(slug: string): string[] {
+  return getRelatedItems(slug).topAreas;
 }

@@ -529,8 +529,14 @@
     "home": "首页"
   },
   "internalLinks": {
-    "eyebrow": "更多同类内容",
-    "defaultTitle": "相关资源"
+    "eyebrow": "更多来自此类别",
+    "defaultTitle": "相关资源",
+    "problems": "常见问题",
+    "commonProblems": "我们可以解决的相关问题",
+    "viewAllProblems": "查看所有问题指南",
+    "areas": "服务区域",
+    "serviceAreas": "在您所在地区提供服务",
+    "viewAllAreas": "查看所有服务区域"
   },
   "hero": {
     "subline": "吉隆坡与雪兰莪的市场行情优质家居服务"

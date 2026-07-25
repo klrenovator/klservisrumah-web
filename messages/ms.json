@@ -530,7 +530,13 @@
   },
   "internalLinks": {
     "eyebrow": "Lagi dari kategori ini",
-    "defaultTitle": "Sumber berkaitan"
+    "defaultTitle": "Sumber berkaitan",
+    "problems": "Masalah Biasa",
+    "commonProblems": "Isu berkaitan yang boleh kami selesaikan",
+    "viewAllProblems": "Lihat semua panduan masalah",
+    "areas": "Kawasan Perkhidmatan",
+    "serviceAreas": "Tersedia di kawasan anda",
+    "viewAllAreas": "Lihat semua kawasan perkhidmatan"
   },
   "hero": {
     "subline": "Perkhidmatan rumah premium di KL & Selangor dengan harga pasaran"
