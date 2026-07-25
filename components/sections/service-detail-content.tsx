@@ -9,6 +9,7 @@ import { DecisionTree } from "@/components/content/decision-tree";
 import { ComparisonTable } from "@/components/content/comparison-table";
 import { ProcessTimeline } from "@/components/content/process-timeline";
 import { TrustBadgesRow } from "@/components/content/trust-badges-row";
+import { RelatedServices } from "@/components/sections/related-services";
 
 type ServiceDetailContentProps = {
   service: ServiceDetail;
@@ -25,6 +26,7 @@ type ServiceDetailContentProps = {
  *   6. Comparison Table (us vs typical)
  *   7. Coverage area chips
  *   8. FAQs
+ *   9. Related Services (internal linking)
  */
 export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
   const t = useTranslations();
@@ -256,6 +258,9 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
           </div>
         </div>
       </section>
+
+      {/* Section 9 — Related Services (internal linking) */}
+      <RelatedServices currentSlug={service.slug} maxItems={6} />
     </>
   );
 }
