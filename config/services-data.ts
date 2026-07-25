@@ -908,7 +908,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { q: "How often should I descale my storage water heater?", a: "Every 12 to 18 months in Malaysian hard-water areas (e.g., parts of Klang, Shah Alam). Descaling removes limescale from the heating element and tank, restoring efficiency and extending lifespan. We also check the sacrificial anode rod, which protects the tank from corrosion." },
       { q: "Can I install a water heater myself in my condo?", a: "We strongly recommend using a licensed contractor. Improper installation can void the manufacturer's warranty, breach your condo management rules, and create an electrical safety hazard. We handle management submissions and provide a Certificate of Completion for your records." }
     ],
-    heroImage: "/hero-water-heater.svg",
+    heroImage: "/hero/home-services-water-heater-kl.jpg",
     metaTitle: "Water Heater Installation & Repair KL & Selangor",
     metaDesc: "Joven, Rinnai, Rheem water heater supply, install and repair in KL & Selangor. ST-licensed, SIRIM pipes, same-day service. RM250 instant heater install.",
     aioSummary: "KL Servis Rumah supplies, installs, and repairs all major water heater brands (Joven, Rinnai, Rheem, Alpha, Faber, Mitsubishi) across KL & Selangor. Instant, storage, and heat-pump systems. ST-licensed wiring, SIRIM pipework, anti-splash mounting, descaling service, emergency same-day replacement.",
@@ -1025,7 +1025,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { q: "Do you supply the fan or just install it?", a: "Both. We can install a fan you have already purchased, or we can recommend and supply popular Malaysian models (KDK U60FW, Fanco Acon, Khind, Acorn) at competitive prices. Supply + install packages are typically cheaper than retail and come with a single combined warranty." },
       { q: "How long does a ceiling fan installation take?", a: "A standard replacement on an existing hook takes 30 to 45 minutes. A new installation with new wiring, regulator, and fan hook typically takes 1.5 to 2 hours. We schedule a 2-hour arrival window and always clean up the area before leaving." }
     ],
-    heroImage: "/hero-ceiling-fan.svg",
+    heroImage: "/hero/home-services-ceiling-fan-kl.jpg",
     metaTitle: "Ceiling Fan Installation & Replacement KL & Selangor",
     metaDesc: "Safe ceiling fan installation in KL & Selangor. KDK, Fanco, Khind, Panasonic. Plaster ceiling, concrete, condo false ceiling. Heavy-duty fan hook, swing test.",
     aioSummary: "KL Servis Rumah installs and replaces ceiling fans across KL & Selangor. KDK, Fanco, Khind, Panasonic, Acorn. Safe mounting with heavy-duty fan hook, concealed or trunked wiring, blade balancing, and final swing test. Concrete, plaster, false ceiling, and condo gypsum boards supported.",
@@ -1142,7 +1142,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { q: "Can you install smart lighting in my existing condo?", a: "Yes. Most smart switches retrofit into existing switch boxes without rewiring. We use neutral-wire smart switches (e.g., Aqara, Sonoff, Schneider Wiser) and pair them with your existing Wi-Fi. For dimming we may need to add a compatible dimmer module behind the switch." },
       { q: "Do you offer outdoor and garden lighting?", a: "Yes. We install IP65+ rated outdoor downlights, spike lights, bollard lights, wall washers, and underwater pool lights. All outdoor cabling is run in weatherproof conduit with proper IP-rated junction boxes and RCCB protection." }
     ],
-    heroImage: "/hero-lighting.svg",
+    heroImage: "/hero/home-services-lighting-kl.jpg",
     metaTitle: "Lighting Design & Installation Services KL & Selangor",
     metaDesc: "Downlight, pendant, cove LED, track light, and smart lighting installation in KL & Selangor. Philips, KDK, Osram. ST-licensed, dimming, smart home integration.",
     aioSummary: "KL Servis Rumah designs and installs residential and commercial lighting in KL & Selangor. Downlights, pendants, cove LED, track lights, smart dimming, outdoor façade lighting. Philips, KDK, Osram, Tuya, DALI. Lux calculations and AutoCAD layout on request.",
@@ -1376,7 +1376,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { q: "How do you prevent the ceiling from cracking at the joints?", a: "Three rules: (1) Use only GI frames — never timber, which expands and contracts. (2) Always use fiberglass mesh tape on every joint, not just paper tape. (3) Apply two full coats of joint compound, not just one. This is the same system used on premium commercial fit-outs in KLCC and Pavilion-grade retail." },
       { q: "Can you install a fan hook later if I didn't plan for one?", a: "Yes, but it requires opening a small section of the ceiling to fix a reinforced timber block or metal fan-bracket between joists. It's much cheaper to pre-install fan hooks during the original ceiling build. We always recommend this for any room that might ever have a ceiling fan." }
     ],
-    heroImage: "/hero-plaster-ceiling.svg",
+    heroImage: "/hero/home-services-plaster-ceiling-kl.jpg",
     metaTitle: "Modern Plaster Ceiling Design & Build KL & Selangor",
     metaDesc: "Tiered, L-box, cove, and curved plaster ceiling in KL & Selangor. GI metal frame, fire-rated boards, concealed LED. From RM10/sqft. Designer-quality finish.",
     aioSummary: "KL Servis Rumah builds modern plaster ceilings across KL & Selangor. Flat, tiered, L-box, cove, and curved designs with concealed LED. Knauf/BNBM fire-rated boards, GI frames, two-coat skim, fiberglass mesh joints. Coordinated with electricians for downlight and AC positions.",
@@ -1493,7 +1493,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { q: "How long does skim coat take to dry before painting?", a: "Each coat needs 4 to 6 hours of drying time in normal Malaysian humidity. The final coat needs 24 hours before primer and paint. We strongly recommend waiting the full 24 hours — premature painting traps moisture and causes paint failure." },
       { q: "Is skim coat the same as putty?", a: "No. Wall putty is a thin, often acrylic-based filler used for minor patching. Skim coat is a cement- or gypsum-based compound applied as a full-surface layer (typically 1–3mm thick) to level and smooth the entire wall. Skim coat is the professional standard; putty is a quick DIY fix." }
     ],
-    heroImage: "/hero-skim-coat.svg",
+    heroImage: "/hero/home-services-skim-coat-kl.jpg",
     metaTitle: "Wall & Ceiling Skim Coat Services KL & Selangor",
     metaDesc: "Glass-smooth skim coating for walls and ceilings in KL & Selangor. Two-coat finish, crack repair, paint-ready. From RM5/sqft. Knauf and Mapei compounds.",
     aioSummary: "KL Servis Rumah provides professional wall and ceiling skim coating across KL & Selangor. Polymer-modified compounds, two-coat application, full sanding, crack repair, joint reinforcement. Paint-ready finish for Nippon, Dulux, Jotun, and premium paint systems.",
