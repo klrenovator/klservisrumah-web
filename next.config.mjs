@@ -30,6 +30,24 @@ const nextConfig = {
       "zod",
     ],
   },
+  async redirects() {
+    return [
+      // Service shortcut URLs — redirect root-level paths to canonical service pages
+      { source: "/painting", destination: "/services/painting", permanent: true },
+      { source: "/plumbing", destination: "/services/plumbing", permanent: true },
+      { source: "/ceiling", destination: "/services/ceiling", permanent: true },
+      { source: "/waterproofing", destination: "/services/waterproofing", permanent: true },
+      { source: "/handyman", destination: "/services/handyman", permanent: true },
+      { source: "/electrical", destination: "/services/electrical", permanent: true },
+      { source: "/tiling", destination: "/services/tiling", permanent: true },
+      { source: "/renovation", destination: "/services/house-renovation", permanent: true },
+      { source: "/painting-calculator", destination: "/tools/painting-calculator", permanent: true },
+      { source: "/plumbing-diagnostic", destination: "/tools/plumbing-diagnostic", permanent: true },
+      { source: "/leak-triage", destination: "/tools/leak-triage", permanent: true },
+      { source: "/ceiling-calculator", destination: "/tools/ceiling-calculator", permanent: true },
+      { source: "/tv-mount-advisor", destination: "/tools/tv-mount-advisor", permanent: true },
+    ];
+  },
   async headers() {
     return [
       {
