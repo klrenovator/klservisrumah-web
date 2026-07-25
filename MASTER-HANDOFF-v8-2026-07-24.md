@@ -1,5 +1,28 @@
 # KL SERVIS RUMAH — MASTER WEBSITE HANDOFF DOCUMENT
 
+## 🆕 ROUND 17 EXECUTION LOG (2026-07-25) — WEBSITE-MATCHED LOGO COLOURS
+
+**Round status:** ✅ **COMPLETED**
+
+### ✅ What was changed
+- ✅ Regenerated the raster logo assets from the existing approved SVG palette so the logo now uses the website's sky-blue and dark-sky colours (`#0EA5E9` / `#075985`) consistently.
+- ✅ Updated both `logo.png` and `logo.jpg`; the SVG source already used the correct website palette.
+- ✅ Preserved the previously requested slightly wider wordmark presentation and all logo accessibility text.
+
+### 📁 Files modified
+- ✅ `public/logo/logo.png`
+- ✅ `public/logo/logo.jpg`
+- ✅ `MASTER-HANDOFF-v8-2026-07-24.md`
+
+### ⚠️ Remaining issues
+- ⏳ Real project photography and verified customer reviews still require approved source assets/data.
+- ⏳ The broader trilingual/content and URL-prefixed routing items listed in Round 15 remain pending.
+
+### ➡️ Recommended next steps
+- Validate logo contrast and appearance on the deployed navbar and footer at mobile and desktop breakpoints.
+
+---
+
 ## 🆕 ROUND 16 EXECUTION LOG (2026-07-25) — SLIGHTLY LONGER WORDMARK
 
 **Round status:** ✅ **COMPLETED**
