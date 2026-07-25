@@ -4,9 +4,11 @@ import { ChevronRight, Home } from "lucide-react";
 
 /**
  * Breadcrumb item for both UI display and JSON-LD schema.
+ * Supports both `name` and `label` for backward compatibility.
  */
 export type BreadcrumbItem = {
-  name: string;
+  name?: string;
+  label?: string;
   href: string;
 };
 
@@ -27,6 +29,12 @@ export function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
 
   const baseUrl = "https://www.klservisrumah.my";
 
+  // Normalize items: accept both `name` and `label` keys
+  const normalized = items.map((item) => ({
+    ...item,
+    name: item.name || item.label || "",
+  }));
+
   return (
     <>
       {/* JSON-LD BreadcrumbList Schema */}
@@ -36,7 +44,7 @@ export function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
-            itemListElement: items.map((item, index) => ({
+            itemListElement: normalized.map((item, index) => ({
               "@type": "ListItem",
               position: index + 1,
               name: item.name,
@@ -52,8 +60,8 @@ export function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
         className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-4 pb-2"
       >
         <ol className="flex flex-wrap items-center gap-1.5 text-xs text-slate-500">
-          {items.map((item, index) => {
-            const isLast = index === items.length - 1;
+          {normalized.map((item, index) => {
+            const isLast = index === normalized.length - 1;
             return (
               <li key={item.href} className="flex items-center gap-1.5">
                 {index === 0 ? (

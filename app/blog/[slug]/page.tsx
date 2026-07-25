@@ -2,8 +2,8 @@ import React from "react";
 import { notFound } from "next/navigation";
 import { blogPosts } from "@/config/blog-data";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { getBreadcrumbSchema } from "@/lib/seo";
-import { Calendar, User, Clock, MessageSquare, ArrowLeft } from "lucide-react";
+import { getBreadcrumbSchema, getArticleSchema, getFAQSchema } from "@/lib/seo";
+import { Calendar, User, Clock, MessageSquare, ArrowRight, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 
@@ -44,8 +44,14 @@ export default async function BlogPostSlugPage(props: { params: Promise<{ slug: 
     { name: post.title, item: `/blog/${post.slug}` }
   ];
   const breadcrumbSchema = getBreadcrumbSchema(crumbs);
+  const articleSchema = getArticleSchema(post);
 
   const waLink = getWhatsAppLink({ service: post.category });
+
+  // Related posts for internal linking
+  const relatedPosts = blogPosts
+    .filter((p) => p.slug !== post.slug && p.category === post.category)
+    .slice(0, 3);
 
   return (
     <>
@@ -57,6 +63,10 @@ export default async function BlogPostSlugPage(props: { params: Promise<{ slug: 
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
 
       <section className="bg-white py-12 sm:py-16">
@@ -122,6 +132,47 @@ export default async function BlogPostSlugPage(props: { params: Promise<{ slug: 
 
         </div>
       </section>
+
+      {relatedPosts.length > 0 && (
+        <section className="bg-slate-50 border-t border-slate-100 py-16" aria-label="Related blog posts">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-12">
+              <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
+                Related Articles
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#075985] tracking-tight">
+                More {post.category} Guides
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {relatedPosts.map((rp) => (
+                <Link
+                  key={rp.slug}
+                  href={`/blog/${rp.slug}`}
+                  className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-[#0EA5E9]/30 hover:shadow-md transition-all duration-300 group"
+                >
+                  <span className="text-[10px] font-bold text-[#0EA5E9] bg-[#E0F2FE]/30 px-2 py-0.5 rounded uppercase tracking-wider">
+                    {rp.category}
+                  </span>
+                  <h3 className="text-sm font-extrabold text-[#075985] mt-3 group-hover:text-[#0EA5E9] transition-colors line-clamp-2">
+                    {rp.title}
+                  </h3>
+                  <p className="text-xs text-[#475569] mt-2 font-medium line-clamp-2">
+                    {rp.excerpt}
+                  </p>
+                  <div className="flex items-center justify-between mt-4 pt-3 border-t border-slate-50">
+                    <span className="text-[10px] text-slate-400">{rp.readTime}</span>
+                    <span className="inline-flex items-center gap-1 text-xs font-bold text-[#0EA5E9]">
+                      Read More <ArrowRight className="w-3 h-3" />
+                    </span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
     </>
   );
 }
