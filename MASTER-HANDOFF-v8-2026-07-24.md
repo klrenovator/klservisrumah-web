@@ -1,3 +1,108 @@
+## 🆕 ROUND 26 EXECUTION LOG (2026-07-25) — SUBSERVICE DETAIL CONTENT i18n
+
+**Round status:** ✅ **COMPLETED**
+
+### ✅ What was changed
+- ✅ **SubserviceDetailContent** — All hardcoded eyebrows replaced with translation keys (What's included, Pricing, Warranty, FAQs). FAQ question now uses `subserviceContent.howMuchCost` with `{name}` variable. Included items array replaced with `INCLUDED_ITEM_KEYS` that resolve via `t(key)` for all 8 items in EN/MS/ZH.
+
+### 📁 Files modified
+- ✅ `components/sections/subservice-detail-content.tsx`
+- ✅ `messages/en.json`, `messages/ms.json`, `messages/zh.json`
+
+---
+
+## 🆕 ROUND 25 EXECUTION LOG (2026-07-25) — SERVICE DETAIL CONTENT i18n
+
+**Round status:** ✅ **COMPLETED**
+
+### ✅ What was changed
+- ✅ **ServiceDetailContent** — Converted to client component. All hardcoded section eyebrows replaced: Overview, About service, Why choose us, Pricing & scope, Coverage, FAQs. DirectAnswer trust items now translated (Price Confirmed First, Warranty, Insured Operations, Same-Day Available, SSM Registered).
+
+### 📁 Files modified
+- ✅ `components/sections/service-detail-content.tsx`
+- ✅ `messages/en.json`, `messages/ms.json`, `messages/zh.json`
+
+---
+
+## 🆕 ROUND 24 EXECUTION LOG (2026-07-25) — BREADCRUMBS, INTERNAL LINKS, TRUST BADGES ROW, HERO, SERVICE DETAIL HEROES i18n
+
+**Round status:** ✅ **COMPLETED**
+
+### ✅ What was changed
+- ✅ **Breadcrumbs** — Converted to client, translated "Home" label via `breadcrumbs.home` key.
+- ✅ **Internal Link Grid** — Converted to client, translated eyebrow and default title.
+- ✅ **Trust Badges Row** — Converted to client, default items translated (insured, price confirmed, google, same-day, warranty).
+- ✅ **Hero** — Replaced hardcoded trilingual subline with locale-aware `hero.subline` key.
+- ✅ **Service Detail Hero** — Converted to client, "Book via WhatsApp" and trust line translated.
+- ✅ **Subservice Detail Hero** — Converted to client, "Book via WhatsApp" translated.
+- ✅ **Subservice Detail Content** — Converted to client, "Book {name} on WhatsApp" translated with vars.
+- ✅ **Decision Tree** — Compare actions now use full translated sentences.
+
+### 📁 Files modified
+- ✅ `components/ui/breadcrumbs.tsx`
+- ✅ `components/internal-link-grid.tsx`
+- ✅ `components/content/trust-badges-row.tsx`
+- ✅ `components/sections/hero.tsx`
+- ✅ `components/sections/service-detail-hero.tsx`
+- ✅ `components/sections/subservice-detail-hero.tsx`
+- ✅ `components/sections/subservice-detail-content.tsx`
+- ✅ `components/sections/locale-decision-tree.tsx`
+- ✅ `messages/en.json`, `messages/ms.json`, `messages/zh.json`
+
+---
+
+## 🆕 CUMULATIVE SUMMARY — SESSION ROUNDS 21–26 (2026-07-25)
+
+**Total rounds completed:** 6 (Rounds 21–26)
+**Total files modified/created:** ~35
+**Total new translation keys added:** ~250+ across EN/MS/ZH
+**Total SSG pages:** 2,204 (unchanged, all building successfully)
+
+### Components now fully localised (EN/MS/ZH):
+- ✅ Navbar, Footer, Language Switcher
+- ✅ Hero section
+- ✅ Trust bar (all 3 languages inline)
+- ✅ Trust badges (homepage section)
+- ✅ Trust badges row (compact, in-page)
+- ✅ Services grid (directory cards)
+- ✅ Services directory hero
+- ✅ Service comparison table (28 services × response times)
+- ✅ Decision tree (services page)
+- ✅ Why Choose Us
+- ✅ Our Process (5 steps)
+- ✅ Stats counter (locale-aware label swap)
+- ✅ Testimonials (4 items full content)
+- ✅ Featured Projects (4 items full content)
+- ✅ Before & After (3 items full content)
+- ✅ Service Areas
+- ✅ FAQ Accordion (5 Q&A in all 3 languages)
+- ✅ Home CTA
+- ✅ Pricing page (principles, 28 service cards, quote factors, FAQ, WhatsApp sidebar)
+- ✅ Contact page (labels, dispatch note)
+- ✅ Breadcrumbs
+- ✅ Internal Link Grid
+- ✅ Sticky mobile WhatsApp bar
+- ✅ Sticky book button
+- ✅ Exit intent popup
+- ✅ Not-found page (404)
+- ✅ Service Detail Hero
+- ✅ Service Detail Content (overview, highlights, pricing, FAQs, trust items)
+- ✅ Subservice Detail Hero
+- ✅ Subservice Detail Content (included items, pricing, warranty, FAQs)
+
+### Quality check results (all rounds):
+- ✅ TypeScript: 0 errors
+- ✅ ESLint: 0 errors, 0 warnings
+- ✅ Build: 2,204 SSG pages generated successfully (100% pass rate)
+
+### ⏳ Remaining items:
+- Location/content datasets (requires additional data input)
+- Trilingual URL-prefixed routing at `/[locale]/...` level (requires middleware + route migration)
+- Visual QA on deployed URLs at mobile/desktop breakpoints
+- Blog post content localisation (when blog content is created)
+
+---
+
 ## 🆕 ROUND 23 EXECUTION LOG (2026-07-25) — NOT-FOUND, STICKY BAR, EXIT POPUP i18n
 
 **Round status:** ✅ **COMPLETED**
