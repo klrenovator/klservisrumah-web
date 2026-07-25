@@ -2,10 +2,16 @@ import React from "react";
 import { FAQAccordion } from "@/components/sections/faq-accordion";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { getFAQSchema } from "@/lib/seo";
+import { getWhatsAppLink } from "@/lib/whatsapp";
+import { siteConfig } from "@/config/site";
+import { Phone, MessageSquare, HelpCircle } from "lucide-react";
 
 export const metadata = {
-  title: "Frequently Asked Questions — Helpdesk Support",
-  description: "Get answers to pricing, warranties, insured operations, areas served, and work prep for KL Servis Rumah painting, plumbing, ceiling, and waterproofing."
+  title: "FAQ — Frequently Asked Questions | KL Servis Rumah",
+  description: "Get answers to pricing, warranties, insured operations, areas served, and work prep for KL Servis Rumah painting, plumbing, ceiling, and waterproofing. Same-day service available across KL & Selangor.",
+  alternates: {
+    canonical: "/faq"
+  }
 };
 
 export default function FAQPage() {
@@ -29,6 +35,18 @@ export default function FAQPage() {
     {
       q: "Do you supply the paint, pipes, and anchors, or do I need to?",
       a: "We supply all standard professional materials: premium Nippon/Dulux paints, SIRIM PVC/PPR plumbing pipes, rust-proof plasterboards, steel wall anchors, and framing. If you have purchased specific aesthetic finishes (like custom luxury lights, taps, or shelves), we are happy to install those with precision."
+    },
+    {
+      q: "How do I book a service?",
+      a: "The fastest way is via WhatsApp at " + siteConfig.phoneDisplay + ". Tell us your service type, area, and the issue. We'll confirm availability and pricing within 30 minutes."
+    },
+    {
+      q: "What areas does KL Servis Rumah cover?",
+      a: "We cover the entire Klang Valley — all areas of Kuala Lumpur and Selangor including Petaling Jaya, Ampang, Batu Caves, Cheras, Subang Jaya, Puchong, Shah Alam, Damansara, Klang, Kajang, Bangsar, Mont Kiara, Setapak, Sentul, Selayang, Putrajaya, and Cyberjaya."
+    },
+    {
+      q: "Are your tradesmen background-checked?",
+      a: "Yes. All our tradesmen are local, trained, and screened so you can trust them in your home. We verify their identity, work history, and conduct background checks before hiring."
     }
   ];
 
@@ -36,6 +54,42 @@ export default function FAQPage() {
 
   return (
     <>
+      {/* Hero Section — matches klrenovator.com FAQ page */}
+      <section className="bg-gradient-to-b from-[#F8FAFC] via-white to-white border-b border-slate-100 py-12 sm:py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto">
+            <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
+              <HelpCircle className="w-3.5 h-3.5 inline mr-1" />
+              Knowledge Base
+            </span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#075985] tracking-tight">
+              Frequently Asked Questions
+            </h1>
+            <p className="text-base sm:text-lg text-[#475569] leading-relaxed max-w-2xl">
+              Honest answers about home services, pricing, warranty and coverage in KL & Selangor — all in one place.
+            </p>
+            <div className="flex items-center gap-4 mt-2">
+              <a
+                href={getWhatsAppLink()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-[#22C55E] hover:bg-[#16A34A] text-white font-extrabold text-sm px-6 py-3 rounded-xl transition-all duration-200 shadow-sm"
+              >
+                <MessageSquare className="w-4 h-4" />
+                <span>Ask on WhatsApp</span>
+              </a>
+              <a
+                href={`tel:${siteConfig.phone}`}
+                className="inline-flex items-center gap-2 bg-transparent hover:bg-slate-50 border-2 border-slate-200 hover:border-[#0EA5E9] text-[#075985] font-extrabold text-sm px-6 py-3 rounded-xl transition-all duration-200"
+              >
+                <Phone className="w-4 h-4" />
+                <span>Call {siteConfig.phoneDisplay}</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Breadcrumbs items={[{ label: "FAQ Helpdesk", href: "/faq" }]} />
 
       <script
