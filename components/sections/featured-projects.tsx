@@ -1,7 +1,11 @@
+"use client";
+
 import React from "react";
 import { ArrowUpRight, ShieldCheck, MapPin } from "lucide-react";
+import { useTranslations } from "@/hooks/use-translations";
 
 export function FeaturedProjects() {
+  const t = useTranslations();
   const projects = [
     {
       title: "Semi-D Bungalow Full Exterior Painting",
@@ -37,13 +41,13 @@ export function FeaturedProjects() {
         <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-6 mb-16">
           <div className="flex flex-col items-start gap-3 max-w-2xl">
             <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
-              Completed Works
+              {t("home.featuredProjects.heading")}
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
-              Featured Recent Projects
+              {t("home.featuredProjects.heading")}
             </h2>
             <p className="text-base text-[#475569] leading-relaxed">
-              Explore actual projects executed by our skilled technicians. Delivering premium quality standards across residential and commercial estates.
+              {t("home.featuredProjects.subheading")}
             </p>
           </div>
           

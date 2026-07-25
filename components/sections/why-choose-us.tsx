@@ -53,7 +53,7 @@ export function WhyChooseUs() {
             {t("home.whyChooseUs.heading")}
           </h2>
           <p className="text-base text-[#475569] leading-relaxed">
-            Following the elite visual standards, strict engineering practices, and high-quality guarantees of the KL Renovator brand family.
+            {t("home.servicesGrid.subheading")}
           </p>
         </div>
 

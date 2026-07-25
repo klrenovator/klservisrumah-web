@@ -1,3 +1,61 @@
+## 🆕 ROUND 21 EXECUTION LOG (2026-07-25) — SERVICES DIRECTORY MULTILINGUAL PASS (DECISION TREE, COMPARISON TABLE, PROCESS STEPS, PRICING PAGE, HOMEPAGE SECTIONS)
+
+**Round status:** ✅ **COMPLETED**
+
+### ✅ What was changed
+- ✅ **Decision Tree** (`components/content/decision-tree.tsx`) — Refactored to accept translation-aware tag labels via props. Removed hardcoded English tag strings ("Recommended", "Lighter option", "Escalate first"). Created `LocaleDecisionTree` client wrapper that reads EN/MS/ZH decision tree content from the translation dictionaries.
+- ✅ **Service Comparison Table** (`components/service-comparison-table.tsx`) — Fully localised: table headers, service titles, warranty labels, response times (with per-service translation keys for all 28 services), sub-service names, and the "View pricing" action link. Uses `getLocalizedService()` for service data and `comparison.responseTimes.*` keys for response time strings.
+- ✅ **Pricing Page** (`app/pricing/page.tsx`) — Extracted all visible content into `LocalePricingContent` client component. Pricing principles (4 cards), per-service pricing cards (28 services), quote-factor list, WhatsApp sidebar, and pricing FAQ (4 items) are all fully translated in EN/MS/ZH.
+- ✅ **Our Process** (`components/sections/our-process.tsx`) — Converted to client component. All 5 step titles and descriptions now read from `home.process.steps.*` translation keys. Eyebrow, heading, and subtitle also translated.
+- ✅ **Stats Counter** (`components/content/stats-counter.tsx`) — Converted to client component. Now displays only the current locale's label instead of showing all three languages stacked. Uses `useLang()` to pick between `label`, `trilingualMs`, and `trilingualZh`.
+- ✅ **Testimonials** (`components/sections/testimonials.tsx`) — Converted to client component. Heading and subtitle now use `home.testimonials.heading` and `home.testimonials.subheading` translation keys.
+- ✅ **Featured Projects** (`components/sections/featured-projects.tsx`) — Converted to client component. Heading and subtitle now use `home.featuredProjects.heading` and `home.featuredProjects.subheading`.
+- ✅ **Before & After** (`components/sections/before-after.tsx`) — Converted to client component. Heading and subtitle now use `home.beforeAfter.heading` and `home.beforeAfter.subheading`.
+- ✅ **Service Areas** (`components/sections/service-areas.tsx`) — Converted to client component. Heading and subtitle now use `home.serviceAreas.heading` and `home.serviceAreas.subheading`.
+- ✅ **Trust Badges** (`components/sections/trust-badges.tsx`) — Converted to client component. Badge titles now use `home.trustBadges.items.*` translation keys (verified, warranty, transparent, insured).
+- ✅ **Why Choose Us** (`components/sections/why-choose-us.tsx`) — Fixed remaining hardcoded English paragraph about "elite visual standards" to use the localised `home.servicesGrid.subheading` key.
+- ✅ **Services Grid** (`components/sections/services-grid.tsx`) — Replaced hardcoded paragraph with `services.pageSubtitle`. Added `services.includedSpecialities` and `services.guaranteeLabel` translation keys for the card labels.
+- ✅ **Translation dictionaries** — Added `comparison.*` (table headers + 28 response times), `decisionTree.*` (tags + services page options), `pricingPage.*` (principles, quote factors, FAQ, WhatsApp sidebar), and `home.process.*` (5 steps with title/desc) keys in all three message files (EN/MS/ZH).
+
+### 📁 Files modified
+- ✅ `components/content/decision-tree.tsx` (refactored — props-driven tag labels)
+- ✅ `components/sections/locale-decision-tree.tsx` (new client wrapper)
+- ✅ `components/service-comparison-table.tsx` (full localisation)
+- ✅ `components/sections/locale-pricing-content.tsx` (new client component)
+- ✅ `app/pricing/page.tsx` (extracted visible content to locale component)
+- ✅ `components/sections/our-process.tsx` (converted to client, translated)
+- ✅ `components/content/stats-counter.tsx` (converted to client, locale-aware)
+- ✅ `components/sections/testimonials.tsx` (converted to client, translated headings)
+- ✅ `components/sections/featured-projects.tsx` (converted to client, translated headings)
+- ✅ `components/sections/before-after.tsx` (converted to client, translated headings)
+- ✅ `components/sections/service-areas.tsx` (converted to client, translated headings)
+- ✅ `components/sections/trust-badges.tsx` (converted to client, translated badges)
+- ✅ `components/sections/why-choose-us.tsx` (fixed hardcoded paragraph)
+- ✅ `components/sections/services-grid.tsx` (replaced hardcoded labels)
+- ✅ `app/services/page.tsx` (uses LocaleDecisionTree wrapper)
+- ✅ `messages/en.json` (new keys: comparison, decisionTree, pricingPage, home.process.steps, services.includedSpecialities, services.guaranteeLabel)
+- ✅ `messages/ms.json` (same keys in Bahasa Malaysia)
+- ✅ `messages/zh.json` (same keys in 中文)
+
+### ✅ Quality check results
+- ✅ TypeScript: 0 errors (`npx tsc --noEmit`)
+- ✅ ESLint: 0 errors, 0 warnings (`npx eslint . --max-warnings=0`)
+- ✅ Build: 2,204 SSG pages generated successfully
+- ✅ All existing functionality preserved
+- ✅ No breaking changes to public APIs
+
+### ⚠️ Remaining issues
+- ⏳ Location/content datasets remain pending.
+- ⏳ Some deeper section content (detailed testimonial text, before/after item descriptions, featured project scopes) remain English-only and need full MS/ZH translation in a follow-up round.
+- ⏳ Contact page contact-info labels ("Registered Address", "Call Dispatch Support", etc.) remain English-only.
+
+### ➡️ Recommended next steps
+- Continue with contact page localisation.
+- Add full trilingual content for testimonial text, project descriptions, and before/after items.
+- Continue with the location/content datasets per the roadmap.
+
+---
+
 # KL SERVIS RUMAH — MASTER WEBSITE HANDOFF DOCUMENT
 
 ## 🆕 ROUND 20 EXECUTION LOG (2026-07-25) — LOCALIZED SERVICES DIRECTORY CARDS

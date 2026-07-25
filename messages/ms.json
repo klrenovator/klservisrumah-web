@@ -85,7 +85,32 @@
     },
     "process": {
       "heading": "Proses tempahan 4 langkah kami",
-      "subheading": "Dari mesej WhatsApp pertama anda sehingga kerja siap dengan jaminan — begini caranya."
+      "subheading": "Dari mesej WhatsApp pertama anda sehingga kerja siap dengan jaminan — begini caranya.",
+      "eyebrow": "Aliran Kerja",
+      "title": "Proses 5 Langkah Profesional Kami",
+      "subtitle": "Direka untuk memberikan ketenangan maksimum, kebersihan yang sempurna, dan ketelusan harga sepenuhnya dari klik pertama hingga tandatangan akhir.",
+      "steps": {
+        "1": {
+          "title": "Tempahan Segera",
+          "desc": "Pilih perkhidmatan dan kawasan anda. Semak slot segera melalui portal WhatsApp automatik atau talian telefon kami."
+        },
+        "2": {
+          "title": "Sebut Harga Tetap",
+          "desc": "Pengurus kami memeriksa keperluan dan memberikan sebut harga tetap terperinci sebelum sebarang kerja dimulakan."
+        },
+        "3": {
+          "title": "Persediaan Perlindungan",
+          "desc": "Pengecat/tukang kami menutup perabot, suis, dan lantai anda sepenuhnya. Pita sempadan dan tutup kawasan bersih."
+        },
+        "4": {
+          "title": "Pelaksanaan Tepat",
+          "desc": "Kerja dilaksanakan menggunakan alat premium, paras laser, dan bahan bertauliah SIRIM. Semua habuk/sisa divakum."
+        },
+        "5": {
+          "title": "Jaminan & Tandatangan",
+          "desc": "Kami melakukan ujian tekanan akhir (semak kebocoran / paras). Anda semak, tandatangan, dan terima jaminan bertulis 30-90 hari."
+        }
+      }
     },
     "beforeAfter": {
       "heading": "Sebelum dan selepas: hasil projek sebenar",
@@ -133,7 +158,9 @@
     "directoryTitle2": "Semua Di Satu Tempat.",
     "directorySubtitle": "Daripada pengecatan dan paip kepada pengubahsuaian penuh, elektrik, pembersihan, dan keselamatan — temui harga pasaran, jaminan sebenar, dan ketersediaan hari yang sama di seluruh KL & Selangor.",
     "browseAll": "Semak Semua Perkhidmatan",
-    "viewPricingGuide": "Lihat Panduan Harga"
+    "viewPricingGuide": "Lihat Panduan Harga",
+    "includedSpecialities": "Termasuk Kepakaran",
+    "guaranteeLabel": "Jaminan"
   },
   "contact": {
     "pageTitle": "Hubungi & Tempahan",
@@ -251,6 +278,140 @@
       "cleanliness": {
         "title": "Kebersihan Yang Teliti",
         "desc": "Kami menutup sempadan dan meletakkan kain penutup plastik tebal untuk menjamin kami meninggalkan hartanah anda sebersih semasa kami tiba."
+      }
+    }
+  },
+  "comparison": {
+    "heading": "Bandingkan perkhidmatan",
+    "title": "Pilih perkhidmatan yang betul sebelum membuat tempahan",
+    "subtitle": "Semak harga permulaan, jaminan dan tugas biasa. Skop akhir disahkan dengan sebut harga pasaran yang telus.",
+    "service": "Perkhidmatan",
+    "startsFrom": "Bermula dari",
+    "warranty": "Jaminan",
+    "response": "Respons",
+    "bestFor": "Sesuai untuk",
+    "action": "Tindakan",
+    "viewPricing": "Lihat harga",
+    "responseTimes": {
+      "painting": "Dijadualkan / minggu sama",
+      "plumbing": "Hari sama untuk kebocoran kecemasan",
+      "ceiling": "Pemeriksaan + pembaikan dijadualkan",
+      "waterproofing": "Keutamaan triage kebocoran",
+      "handyman": "Slot hari sama tersedia",
+      "renovation": "Tinjauan tapak + dijadualkan",
+      "electrical": "Hari sama untuk kerosakan",
+      "water-heater": "Hari sama jika tiada air panas",
+      "ceiling-fan": "Pemasangan dijadualkan",
+      "lighting": "Pemasangan dijadualkan",
+      "tiling": "Dijadualkan / minggu sama",
+      "plaster-ceiling": "Pemeriksaan + dijadualkan",
+      "skim-coat": "Dijadualkan / minggu sama",
+      "flooring": "Ukuran tapak + dijadualkan",
+      "epoxy-flooring": "Tinjauan tapak + dijadualkan",
+      "roof-repair": "Kebocoran kecemasan hari sama",
+      "kitchen-cabinet": "Konsultasi reka bentuk + dijadualkan",
+      "carpentry": "Dijadualkan / minggu sama",
+      "door": "Dijadualkan / minggu sama",
+      "window-repair": "Dijadualkan / minggu sama",
+      "locksmith": "Hari sama untuk terkunci",
+      "glass-aluminium": "Ukuran + dijadualkan",
+      "cleaning": "Tempahan minggu sama",
+      "deep-cleaning": "Tempahan dijadualkan",
+      "post-renovation-cleaning": "Tempahan selepas kerja",
+      "cctv": "Tinjauan tapak + dijadualkan",
+      "autogate": "Tinjauan tapak + dijadualkan",
+      "welding": "Tinjauan tapak + dijadualkan",
+      "aircond": "Servis dijadualkan",
+      "smart-home": "Konsultasi + dijadualkan",
+      "pest-control": "Rawatan dijadualkan"
+    }
+  },
+  "decisionTree": {
+    "defaultTitle": "Perlukah anda menempah perkhidmatan ini?",
+    "tags": {
+      "recommended": "Disyorkan",
+      "lighter": "Pilihan lebih ringan",
+      "urgent": "Utamakan dahulu"
+    },
+    "servicesPage": {
+      "title": "Tidak pasti pilihan mana untuk dipilih?",
+      "fullService": {
+        "title": "Pakej Perkhidmatan Penuh",
+        "description": "Tempah perkhidmatan lengkap dengan pasukan pakar kami. Termasuk diagnosis, bahan, upah, dan jaminan."
+      },
+      "diyMaterials": {
+        "title": "DIY + Bahan Sahaja",
+        "description": "Dapatkan bahan berkualiti + panduan. Sesuai jika anda ingin mengendalikan kerja sendiri atau mempunyai tukang."
+      },
+      "emergency": {
+        "title": "Kecemasan / Hari Sama",
+        "description": "Masalah mendesak? Kami menghantar pasukan terdekat yang tersedia dalam beberapa jam (tertakluk kepada ketersediaan)."
+      }
+    }
+  },
+  "pricingPage": {
+    "principlesHeading": "Prinsip harga kami",
+    "principles": {
+      "marketRate": {
+        "title": "Harga pasaran standard",
+        "body": "Harga awam kami mengikut peraturan: tidak terlalu tinggi, tidak terlalu rendah, dan sentiasa selari dengan pasaran tempatan biasa."
+      },
+      "itemized": {
+        "title": "Diperincikan sebelum kerja",
+        "body": "Skop, bahan, upah, cabaran akses dan masa yang mendesak diterangkan sebelum juruteknik memulakan kerja."
+      },
+      "warranty": {
+        "title": "Sebut harga peka jaminan",
+        "body": "Di mana jaminan kerja terpakai, sebut harga dipadankan dengan kaedah pembaikan yang betul dan bukannya tampalan murah jangka pendek."
+      },
+      "whatsapp": {
+        "title": "Kemudahan WhatsApp dahulu",
+        "body": "Hantar foto, saiz, lokasi dan masa untuk mendapatkan arah harga yang lebih pantas sebelum lawatan tapak ditempah."
+      }
+    },
+    "serviceByServiceHeading": "Harga setiap perkhidmatan",
+    "serviceByServiceTitle": "Pilih perkhidmatan dan buka panduan harga penuh",
+    "serviceByServiceSubtitle": "Setiap perkhidmatan mempunyai panduan kos sendiri supaya pelanggan dapat melihat bajet yang mungkin, kemasukan biasa dan faktor biasa yang mempengaruhi sebut harga akhir.",
+    "startsFrom": "Bermula dari",
+    "warranty": "Jaminan",
+    "pricingNote": "Nota harga",
+    "openPricingGuide": "Buka panduan harga",
+    "viewServicePage": "Lihat halaman perkhidmatan",
+    "quoteFactorsHeading": "Bagaimana sebut harga akhir anda disahkan",
+    "quoteFactorsTitle": "Apa yang biasanya mengubah harga di tapak?",
+    "quoteFactors": {
+      "0": "Saiz, kuantiti atau jumlah kawasan kerja yang diukur",
+      "1": "Keadaan dinding, paip, papan atau kalis air sedia ada",
+      "2": "Gred bahan, jenama dan keperluan keselamatan",
+      "3": "Peraturan akses kondominium, perlindungan lif atau masa terhad",
+      "4": "Respons kecemasan, selepas waktu atau keterdesakan hari sama",
+      "5": "Kerja berkumpulan yang mengurangkan caj lawatan berasingan"
+    },
+    "whatsappBox": {
+      "eyebrow": "Perlukan jawapan lebih pantas?",
+      "title": "Hantar foto melalui WhatsApp",
+      "body": "Kongsikan kawasan, ukuran, foto dan masa anda. Pasukan kami akan membimbing anda ke arah perkhidmatan yang betul dan mengesahkan bajet pasaran yang mungkin sebelum penghantaran.",
+      "cta": "WhatsApp untuk bantuan harga",
+      "phoneLabel": "Telefon & WhatsApp awam"
+    },
+    "faqHeading": "Soalan Lazim Harga",
+    "faqTitle": "Soalan harga biasa",
+    "faqs": {
+      "0": {
+        "q": "Bagaimana anda menetapkan harga?",
+        "a": "Kami mengikut kadar pasaran standard Lembah Klang. Harga tidak dinaikkan dan tidak dikurangkan. Sebut harga akhir disahkan hanya selepas skop, akses, bahan dan keterdesakan disemak."
+      },
+      "1": {
+        "q": "Adakah anda mengenakan caj tersembunyi kemudian?",
+        "a": "Tidak. Jika kerja tambahan diperlukan, ia diterangkan dahulu dan diluluskan oleh anda sebelum kami meneruskan."
+      },
+      "2": {
+        "q": "Bolehkah saya mendapatkan sebut harga dari foto di WhatsApp?",
+        "a": "Ya. Banyak kerja kecil boleh dianggarkan dari foto yang jelas, ukuran dan kawasan anda. Kerja kebocoran, siling atau luaran yang lebih kompleks mungkin masih memerlukan pemeriksaan."
+      },
+      "3": {
+        "q": "Adakah kerja kecemasan dikenakan caj berbeza?",
+        "a": "Kerja kecemasan boleh kos lebih apabila penghantaran mendesak, buruh selepas waktu, kesukaran akses atau kawalan keselamatan terlibat. Kenaikan kecemasan diterangkan sebelum kerja bermula."
       }
     }
   }

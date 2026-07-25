@@ -1,8 +1,12 @@
+"use client";
+
 import React from "react";
 import { Check, ArrowRight, Sparkles, AlertCircle } from "lucide-react";
 
+type DecisionLevel = "recommended" | "lighter" | "urgent";
+
 type DecisionOption = {
-  level: "recommended" | "lighter" | "urgent";
+  level: DecisionLevel;
   title: string;
   description: string;
   compareService?: string;
@@ -12,34 +16,48 @@ type DecisionOption = {
 type DecisionTreeProps = {
   title?: string;
   options: DecisionOption[];
+  /** Optional override for the three level tag labels (per locale) */
+  tagLabels?: Partial<Record<DecisionLevel, string>>;
 };
 
-const levelConfig: Record<DecisionOption["level"], { icon: React.ReactNode; className: string; tag: string; tagColor: string }> = {
-  recommended: {
-    icon: <Sparkles className="w-4 h-4" />,
-    className: "decision-card decision-card-recommended",
-    tag: "Recommended",
-    tagColor: "bg-[#0EA5E9] text-white"
-  },
-  lighter: {
-    icon: <Check className="w-4 h-4" />,
-    className: "decision-card decision-card-lighter",
-    tag: "Lighter option",
-    tagColor: "bg-[#BAE6FD] text-[#075985]"
-  },
-  urgent: {
-    icon: <AlertCircle className="w-4 h-4" />,
-    className: "decision-card decision-card-urgent",
-    tag: "Escalate first",
-    tagColor: "bg-rose-100 text-rose-700"
-  }
+/**
+ * Default English tag labels for the three decision levels.
+ * Callers can override by passing `tagLabels` (e.g. from a translation dictionary).
+ */
+const defaultTagLabels: Record<DecisionLevel, string> = {
+  recommended: "Recommended",
+  lighter: "Lighter option",
+  urgent: "Escalate first"
+};
+
+const iconForLevel: Record<DecisionLevel, React.ReactNode> = {
+  recommended: <Sparkles className="w-4 h-4" />,
+  lighter: <Check className="w-4 h-4" />,
+  urgent: <AlertCircle className="w-4 h-4" />
+};
+
+const classNameForLevel: Record<DecisionLevel, string> = {
+  recommended: "decision-card decision-card-recommended",
+  lighter: "decision-card decision-card-lighter",
+  urgent: "decision-card decision-card-urgent"
+};
+
+const tagColorForLevel: Record<DecisionLevel, string> = {
+  recommended: "bg-[#0EA5E9] text-white",
+  lighter: "bg-[#BAE6FD] text-[#075985]",
+  urgent: "bg-rose-100 text-rose-700"
 };
 
 /**
  * DecisionTree — Klrenovator-style "should I book this?" visual flow.
  * Shows three tiers: recommended, lighter, urgent.
+ *
+ * All visible text is passed via props so callers can supply translations.
  */
-export function DecisionTree({ title = "Should you book this service?", options }: DecisionTreeProps) {
+export function DecisionTree({ title, options, tagLabels }: DecisionTreeProps) {
+  // Merge caller overrides with defaults
+  const labels = { ...defaultTagLabels, ...tagLabels };
+
   return (
     <section className="space-y-5">
       {title && (
@@ -49,13 +67,13 @@ export function DecisionTree({ title = "Should you book this service?", options 
       )}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {options.map((option, idx) => {
-          const cfg = levelConfig[option.level];
+          const tag = labels[option.level];
           return (
-            <div key={idx} className={cfg.className}>
+            <div key={idx} className={classNameForLevel[option.level]}>
               <div className="flex items-center justify-between gap-2">
-                <span className={`trust-pill ${cfg.tagColor}`}>
-                  {cfg.icon}
-                  <span>{cfg.tag}</span>
+                <span className={`trust-pill ${tagColorForLevel[option.level]}`}>
+                  {iconForLevel[option.level]}
+                  <span>{tag}</span>
                 </span>
                 <span className="text-xs font-extrabold text-slate-400">0{idx + 1}</span>
               </div>

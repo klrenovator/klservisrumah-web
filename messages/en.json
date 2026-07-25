@@ -85,7 +85,32 @@
     },
     "process": {
       "heading": "Our 4-step booking process",
-      "subheading": "From your first WhatsApp message to a fully completed, warranty-backed job — here's how it works."
+      "subheading": "From your first WhatsApp message to a fully completed, warranty-backed job — here's how it works.",
+      "eyebrow": "The Work Flow",
+      "title": "Our Professional 5-Step Process",
+      "subtitle": "Engineered to deliver maximum peace of mind, immaculate cleanliness, and total price transparency from first click to final sign-off.",
+      "steps": {
+        "1": {
+          "title": "Secure Instant Booking",
+          "desc": "Select your desired services and suburb. Check instant slots via our automated WhatsApp portal or phone line."
+        },
+        "2": {
+          "title": "Upfront Fixed Quote",
+          "desc": "Our manager inspects the requirements and outlines a detailed, itemized fixed pricing quote before any work starts."
+        },
+        "3": {
+          "title": "Surface Protection Prep",
+          "desc": "Our painters/craftsmen cover your furniture, switches, and floors completely. Tape borders and mask clean areas."
+        },
+        "4": {
+          "title": "Precision Execution",
+          "desc": "Work is executed using premium tools, laser-levels, and SIRIM-certified materials. All dust/waste is vacuumed."
+        },
+        "5": {
+          "title": "Warranty & Sign-Off",
+          "desc": "We perform final stress tests (leak checks / level checks). You review, sign off, and unlock a 30-to-90 days written warranty."
+        }
+      }
     },
     "beforeAfter": {
       "heading": "Before and after: real project results",
@@ -133,7 +158,9 @@
     "directoryTitle2": "All in One Place.",
     "directorySubtitle": "From painting and plumbing to full renovation, electrical, cleaning, and security — discover market-rate pricing, real warranties, and same-day availability across KL & Selangor.",
     "browseAll": "Browse All Services",
-    "viewPricingGuide": "View Pricing Guide"
+    "viewPricingGuide": "View Pricing Guide",
+    "includedSpecialities": "Included Specialities",
+    "guaranteeLabel": "Guarantee"
   },
   "contact": {
     "pageTitle": "Contact & Booking",
@@ -251,6 +278,140 @@
       "cleanliness": {
         "title": "Meticulous Cleanliness",
         "desc": "We mask borders and lay down thick plastic drop sheets to guarantee that we leave your property as spotless as we found it."
+      }
+    }
+  },
+  "comparison": {
+    "heading": "Compare services",
+    "title": "Choose the right service before booking",
+    "subtitle": "Review starting price, warranty and common tasks. Final scope is confirmed with a transparent market-rate quote.",
+    "service": "Service",
+    "startsFrom": "Starts from",
+    "warranty": "Warranty",
+    "response": "Response",
+    "bestFor": "Best for",
+    "action": "Action",
+    "viewPricing": "View pricing",
+    "responseTimes": {
+      "painting": "Scheduled / same-week",
+      "plumbing": "Same-day for urgent leaks",
+      "ceiling": "Inspection + scheduled repair",
+      "waterproofing": "Leak triage priority",
+      "handyman": "Same-day slots available",
+      "renovation": "Site survey + scheduled",
+      "electrical": "Same-day for faults",
+      "water-heater": "Same-day for no hot water",
+      "ceiling-fan": "Scheduled install",
+      "lighting": "Scheduled install",
+      "tiling": "Scheduled / same-week",
+      "plaster-ceiling": "Inspection + scheduled",
+      "skim-coat": "Scheduled / same-week",
+      "flooring": "Site measure + scheduled",
+      "epoxy-flooring": "Site survey + scheduled",
+      "roof-repair": "Urgent leak same-day",
+      "kitchen-cabinet": "Design consult + scheduled",
+      "carpentry": "Scheduled / same-week",
+      "door": "Scheduled / same-week",
+      "window-repair": "Scheduled / same-week",
+      "locksmith": "Same-day for lockouts",
+      "glass-aluminium": "Measure + scheduled",
+      "cleaning": "Same-week booking",
+      "deep-cleaning": "Scheduled booking",
+      "post-renovation-cleaning": "Post-job booking",
+      "cctv": "Site survey + scheduled",
+      "autogate": "Site survey + scheduled",
+      "welding": "Site survey + scheduled",
+      "aircond": "Scheduled service",
+      "smart-home": "Consult + scheduled",
+      "pest-control": "Scheduled treatment"
+    }
+  },
+  "decisionTree": {
+    "defaultTitle": "Should you book this service?",
+    "tags": {
+      "recommended": "Recommended",
+      "lighter": "Lighter option",
+      "urgent": "Escalate first"
+    },
+    "servicesPage": {
+      "title": "Not sure which option to choose?",
+      "fullService": {
+        "title": "Full Service Package",
+        "description": "Book the complete service with our expert team. Includes diagnosis, materials, labour, and warranty."
+      },
+      "diyMaterials": {
+        "title": "DIY + Materials Only",
+        "description": "Get quality materials + guidance. Perfect if you want to handle labour yourself or have a handyman."
+      },
+      "emergency": {
+        "title": "Emergency / Same-Day",
+        "description": "Urgent issue? We dispatch the nearest available team within hours (subject to availability)."
+      }
+    }
+  },
+  "pricingPage": {
+    "principlesHeading": "Our pricing principles",
+    "principles": {
+      "marketRate": {
+        "title": "Standard market rate",
+        "body": "Our public pricing follows the handoff rule: not too high, not too low, and always aligned with the normal local market."
+      },
+      "itemized": {
+        "title": "Itemized before work",
+        "body": "Scope, materials, labour, access challenges and urgent timing are explained before technicians begin the job."
+      },
+      "warranty": {
+        "title": "Warranty-aware quoting",
+        "body": "Where workmanship warranty applies, the quote is matched to the correct repair method instead of a cheap short-term patch."
+      },
+      "whatsapp": {
+        "title": "WhatsApp-first convenience",
+        "body": "Send photos, size, location and timing to get a faster pricing direction before a site visit is booked."
+      }
+    },
+    "serviceByServiceHeading": "Service-by-service pricing",
+    "serviceByServiceTitle": "Choose a service and open the full pricing guide",
+    "serviceByServiceSubtitle": "Each service keeps its own cost guide so customers can see the likely budget, common inclusions and the typical factors that affect the final quotation.",
+    "startsFrom": "Starts from",
+    "warranty": "Warranty",
+    "pricingNote": "Pricing note",
+    "openPricingGuide": "Open pricing guide",
+    "viewServicePage": "View service page",
+    "quoteFactorsHeading": "How your final quote is confirmed",
+    "quoteFactorsTitle": "What usually changes the price on site?",
+    "quoteFactors": {
+      "0": "Measured size, quantity or total work area",
+      "1": "Existing wall, pipe, board or waterproofing condition",
+      "2": "Material grade, brand and safety requirements",
+      "3": "Condo access rules, lift protection or restricted timing",
+      "4": "Emergency response, after-hours or same-day urgency",
+      "5": "Bundled work that reduces separate visit charges"
+    },
+    "whatsappBox": {
+      "eyebrow": "Need a faster answer?",
+      "title": "Send photos on WhatsApp",
+      "body": "Share your area, measurements, photos and timing. Our team will guide you toward the right service and confirm the likely market-rate budget before dispatch.",
+      "cta": "WhatsApp for pricing help",
+      "phoneLabel": "Public phone & WhatsApp"
+    },
+    "faqHeading": "Pricing FAQ",
+    "faqTitle": "Common pricing questions",
+    "faqs": {
+      "0": {
+        "q": "How do you set your prices?",
+        "a": "We follow standard Klang Valley market rates. Prices are not inflated and not underpriced. Final quotes are confirmed only after scope, access, materials and urgency are checked."
+      },
+      "1": {
+        "q": "Do you charge hidden fees later?",
+        "a": "No. If extra work is needed, it is explained first and approved by you before we continue."
+      },
+      "2": {
+        "q": "Can I get a quote from photos on WhatsApp?",
+        "a": "Yes. Many small jobs can be estimated from clear photos, measurements and your area. More complex leak, ceiling or exterior jobs may still need an inspection."
+      },
+      "3": {
+        "q": "Are emergency jobs charged differently?",
+        "a": "Emergency jobs can cost more when urgent dispatch, after-hours labour, access difficulty or safety controls are involved. The emergency uplift is explained before work starts."
       }
     }
   }

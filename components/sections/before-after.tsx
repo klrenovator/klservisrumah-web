@@ -1,7 +1,11 @@
+"use client";
+
 import React from "react";
 import { CheckCircle2, AlertCircle } from "lucide-react";
+import { useTranslations } from "@/hooks/use-translations";
 
 export function BeforeAfter() {
+  const t = useTranslations();
   const comparisons = [
     {
       title: "Living Room Wall Painting Restoration",
@@ -36,13 +40,13 @@ export function BeforeAfter() {
         {/* Header */}
         <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-16">
           <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
-            Real Transformations
+            {t("home.beforeAfter.heading")}
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
-            Before & After Quality Proofs
+            {t("home.beforeAfter.heading")}
           </h2>
           <p className="text-base text-[#475569] leading-relaxed">
-            See the exact results of our professional workmanship. Real projects completed in Kuala Lumpur & Selangor.
+            {t("home.beforeAfter.subheading")}
           </p>
         </div>
 

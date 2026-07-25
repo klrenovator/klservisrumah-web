@@ -1,7 +1,11 @@
+"use client";
+
 import React from "react";
+import { useTranslations } from "@/hooks/use-translations";
 import { Star, Quote } from "lucide-react";
 
 export function Testimonials() {
+  const t = useTranslations();
   const feedbackThemes = [
     {
       name: "Verified homeowner feedback",
@@ -34,13 +38,13 @@ export function Testimonials() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-16">
           <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
-            Client Feedback Themes
+            {t("home.testimonials.heading")}
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
-            What Customers Usually Value
+            {t("home.testimonials.heading")}
           </h2>
           <p className="text-base text-[#475569] leading-relaxed">
-            Privacy-safe themes based on common homeowner expectations: clean work, transparent quotes, correct materials, and reliable warranty support.
+            {t("home.testimonials.subheading")}
           </p>
         </div>
 
