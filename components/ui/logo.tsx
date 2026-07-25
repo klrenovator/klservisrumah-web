@@ -7,18 +7,25 @@ type LogoProps = {
   variant?: "full" | "icon";
 };
 
-export function Logo({ size = "md", showText = true, variant = "full" }: LogoProps) {
-  const iconSize = size === "sm" ? 44 : size === "lg" ? 64 : size === "xl" ? 96 : 52;
-  const textSize = size === "sm" ? "text-base" : size === "lg" ? "text-2xl" : size === "xl" ? "text-3xl" : "text-lg";
-  const subTextSize = size === "sm" ? "text-[8px]" : "text-[10px]";
+/**
+ * Brand logo. The full logo artwork (public/logo/logo.png) already contains the
+ * KL monogram, tool-shield and the "KL SERVIS RUMAH — PROFESSIONAL HOME SERVICES"
+ * wordmark, so the default `full` variant renders the image only (no HTML text),
+ * mirroring the klrenovator.com header pattern.
+ */
+const LOGO_ASPECT = 1693 / 929; // intrinsic width / height of logo.png
+
+export function Logo({ size = "md", variant = "full" }: LogoProps) {
+  const height = size === "sm" ? 40 : size === "lg" ? 64 : size === "xl" ? 88 : 52;
+  const width = Math.round(height * LOGO_ASPECT);
 
   if (variant === "icon") {
     return (
       <Image
         src="/logo/logo.jpg"
         alt="KL Servis Rumah"
-        width={iconSize}
-        height={iconSize}
+        width={height}
+        height={height}
         className="rounded-xl object-contain"
         priority
       />
@@ -26,26 +33,14 @@ export function Logo({ size = "md", showText = true, variant = "full" }: LogoPro
   }
 
   return (
-    <div className="flex items-center gap-2 group shrink-0">
-      <Image
-        src="/logo/logo.jpg"
-        alt="KL Servis Rumah - Professional Home Services"
-        width={iconSize}
-        height={iconSize}
-        className="rounded-xl object-contain"
-        priority
-      />
-      {showText && (
-        <div className="flex flex-col">
-          <span className={`${textSize} text-[#075985] font-extrabold tracking-tight leading-none flex items-center gap-0.5`}>
-            KL<span className="text-[#0EA5E9]">SERVIS</span>RUMAH
-            <span className="text-[#0EA5E9] text-[10px] sm:text-xs font-bold">.MY</span>
-          </span>
-          <span className={`${subTextSize} tracking-widest text-[#475569] font-semibold mt-0.5`}>
-            PAINTING • CEILING • PLUMBING • HANDYMAN
-          </span>
-        </div>
-      )}
-    </div>
+    <Image
+      src="/logo/logo.png"
+      alt="KL Servis Rumah — Professional Home Services"
+      width={width}
+      height={height}
+      className="object-contain"
+      style={{ height, width: "auto" }}
+      priority
+    />
   );
 }

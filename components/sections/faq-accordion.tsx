@@ -17,7 +17,7 @@ export function FAQAccordion() {
   const faqs = [
     {
       q: "What is your starting price for your home services?",
-      a: "Our minor handyman jobs start from RM 80, basic plumbing repairs from RM 120, plaster ceiling repair from RM 180, and single room painting from RM 400. Every quote we issue is fixed and itemized before any actual work is commenced, so there are absolutely no hidden fees."
+      a: "Our minor handyman jobs start from RM 80, basic plumbing repairs from RM 120, plaster ceiling repair from RM 180, and single room painting from RM 450. Every quote we issue is fixed and itemized before any actual work is commenced, so there are absolutely no hidden fees."
     },
     {
       q: "Are you an established local company in Malaysia?",

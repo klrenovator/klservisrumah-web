@@ -4,9 +4,10 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { siteConfig } from "@/config/site";
-import { Menu, X, Phone, CheckCircle2 } from "lucide-react";
+import { Phone, CheckCircle2 } from "lucide-react";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
+import { AllPagesMenu } from "@/components/ui/all-pages-menu";
 import { SiteSearch } from "@/components/ui/site-search";
 import { trackPhoneCall, trackWhatsAppClick } from "@/lib/analytics";
 import { Logo } from "@/components/ui/logo";
@@ -32,7 +33,6 @@ function resolveNavKey(href: string): string {
 }
 
 export function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
   const t = useTranslations();
@@ -43,10 +43,6 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    setIsOpen(false);
-  }, [pathname]);
-
   const waLink = getWhatsAppLink();
 
   return (
@@ -56,14 +52,14 @@ export function Navbar() {
         <span>{t("home.topBanner")}</span>
       </div>
 
-      <nav className={`w-full bg-white transition-all duration-300 border-b ${scrolled ? "py-3 shadow-[0_4px_20px_rgba(2,31,68,0.03)] border-slate-100" : "py-5 border-transparent"}`}>
+      <nav className={`w-full bg-white transition-all duration-300 border-b ${scrolled ? "py-2.5 shadow-[0_4px_20px_rgba(2,31,68,0.03)] border-slate-100" : "py-4 border-transparent"}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between gap-4">
             <Link href="/" className="group shrink-0" aria-label="KL Servis Rumah homepage">
               <Logo size="md" />
             </Link>
 
-            <div className="hidden lg:flex items-center gap-6">
+            <div className="hidden xl:flex items-center gap-6">
               {siteConfig.navItems.map((item) => {
                 const isActive = pathname === item.href || (item.href !== "/" && pathname.startsWith(item.href));
                 const key = resolveNavKey(item.href);
@@ -83,6 +79,7 @@ export function Navbar() {
             <div className="hidden lg:flex items-center gap-3">
               <SiteSearch />
               <LanguageSwitcher />
+              <AllPagesMenu />
               <a
                 href={`tel:${siteConfig.phone}`}
                 onClick={() => trackPhoneCall({ page: pathname })}
@@ -102,7 +99,7 @@ export function Navbar() {
               </a>
             </div>
 
-            <div className="flex lg:hidden items-center gap-3">
+            <div className="flex lg:hidden items-center gap-2.5">
               <LanguageSwitcher />
               <a
                 href={`tel:${siteConfig.phone}`}
@@ -112,57 +109,10 @@ export function Navbar() {
               >
                 <Phone className="w-5 h-5" />
               </a>
-              <button
-                onClick={() => setIsOpen(!isOpen)}
-                className="p-2.5 rounded-xl border border-slate-100 text-[#075985] hover:bg-slate-50 transition-colors"
-                aria-label="Toggle menu"
-              >
-                {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-              </button>
+              <AllPagesMenu />
             </div>
           </div>
         </div>
-
-        {isOpen && (
-          <div className="lg:hidden absolute top-full left-0 w-full bg-white border-b border-slate-100 shadow-lg py-6 px-4 flex flex-col gap-4 animate-in fade-in slide-in-from-top-4 duration-200">
-            <div className="flex flex-col gap-3">
-              {siteConfig.navItems.map((item) => {
-                const isActive = pathname === item.href;
-                const key = resolveNavKey(item.href);
-                const label = t(key);
-                return (
-                  <Link key={item.href} href={item.href} className={`px-4 py-3 rounded-xl font-medium text-base transition-colors ${isActive ? "bg-[#0EA5E9]/10 text-[#0EA5E9]" : "text-[#475569] hover:bg-slate-50 hover:text-[#075985]"}`}>
-                    {label}
-                  </Link>
-                );
-              })}
-            </div>
-            <hr className="border-slate-100 my-1" />
-            <div className="flex flex-col gap-3 px-4">
-              <div className="text-xs text-[#475569] font-medium flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-[#0EA5E9]" />
-                <span>{t("footer.operatingHours")}</span>
-              </div>
-              <a
-                href={waLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => trackWhatsAppClick({ page: pathname, placement: "mobile_menu" })}
-                className="bg-[#0284C7] hover:bg-[#0369A1] text-white text-center font-semibold text-base py-3 rounded-xl transition-all duration-200 shadow-sm"
-              >
-                {t("common.bookWhatsApp")}
-              </a>
-              <a
-                href={`tel:${siteConfig.phone}`}
-                onClick={() => trackPhoneCall({ page: pathname, placement: "mobile_menu" })}
-                className="border border-[#075985]/20 text-[#075985] text-center font-semibold text-base py-3 rounded-xl transition-all duration-200 hover:bg-slate-50 flex items-center justify-center gap-2"
-              >
-                <Phone className="w-4 h-4 text-[#0EA5E9]" />
-                <span>{t("common.callUs")} {siteConfig.phoneDisplay}</span>
-              </a>
-            </div>
-          </div>
-        )}
       </nav>
     </header>
   );
