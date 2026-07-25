@@ -10,8 +10,12 @@ export function ServicesDirectoryHero() {
       <span className="rounded-full bg-[#E0F2FE] px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-[#0284C7]">
         {t("services.directoryEyebrow")}
       </span>
+      {/* The two halves render as one continuous sentence for assistive tech and
+          for the crawler's text extraction, so they need a real space between
+          them — a <br /> alone produced "…You Needin KL & Selangor". */}
       <h1 className="mt-4 text-4xl font-extrabold text-[#075985] sm:text-6xl text-balance">
-        {t("services.directoryTitle1")}<br />{t("services.directoryTitle2")}
+        {t("services.directoryTitle1")}{" "}
+        <span className="block sm:inline">{t("services.directoryTitle2")}</span>
       </h1>
       <p className="mt-4 max-w-2xl mx-auto text-lg text-[#475569]">
         {t("services.directorySubtitle")}
