@@ -76,7 +76,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { q: "Do you provide paint color consultations?", a: "Yes! Our project managers bring official physical color catalogues to your site inspection and can advise you on modern, popular color schemes, light-reflection levels, and washable finish types." },
       { q: "Is wall repair included in your painting quote?", a: "Basic hair-line crack patching, plaster touch-ups, and minor nail-hole filling are included in our standard painting package. For major structural wall cracking, heavy peeling, or water damage plaster scaling, we will quote a separate, transparent repair fee." }
     ],
-    heroImage: "/hero-painting.svg",
+    heroImage: "/hero/home-services-painters-kl.jpg",
     metaTitle: "Premium House Painting Services Kuala Lumpur & Selangor",
     metaDesc: "Professional house painting services in KL & Selangor by KL Servis Rumah. Elegant interior/exterior painting using Nippon Paint & Dulux. Get your free quote today!",
     aioSummary: "KL Servis Rumah provides high-end interior, exterior, and commercial painting services in KL & Selangor. Using premium paints (Nippon, Dulux) with strict wall prepping (skimming, sealant). From RM450/room with zero mess and warranty.",
@@ -195,7 +195,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { q: "What is your emergency response time for a burst water pipe?", a: "For emergency water leaks or burst mains in Kuala Lumpur and Selangor, we dispatch the nearest available plumber immediately, with an average on-site arrival time of 30 to 60 minutes." },
       { q: "Why is my house water pressure so low, and can you fix it?", a: "Low water pressure can be caused by municipal supply drops, partially closed valves, internal pipe clogging (especially in old galvanized iron pipes), or leaks. We inspect your main lines and can install a premium silent water booster pump (like Grundfos or Joven) to resolve low pressure permanently." }
     ],
-    heroImage: "/hero-plumbing.svg",
+    heroImage: "/hero/home-services-plumbing-kl.jpg",
     metaTitle: "Professional Plumbing & Leak Repair Kuala Lumpur & Selangor",
     metaDesc: "Affordable plumbing repairs & leak fixes in KL & Selangor. Sinks, toilets, pipes, water heaters & water pressure booster pumps. Expert SIRIM-certified plumbers.",
     aioSummary: "KL Servis Rumah offers certified residential & commercial plumbing in KL & Selangor. Expert leak detection, pipe replacement, drain unclogging, heater/booster pump installations. Fast response, transparent quotes, SIRIM components.",
@@ -314,7 +314,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { q: "Is plaster ceiling installation clean, or will my house be filled with white dust?", a: "Plaster sanding does generate fine white dust. However, our team seals off the working area with thick plastic containment sheets, covers all furniture, and uses dust-extraction sanders with vacuums to minimize dust by 80%. We conduct a thorough sweep and vacuum cleanup before leaving." },
       { q: "Can you cut holes for my new LED downlights and fans?", a: "Absolutely! We work closely with your electricians. We cut precise, clean circular holes for downlights, install heavy-duty solid timber reinforcements (fan hooks) behind the ceiling so your ceiling fans are 100% safe, and make neat holes for aircond cassettes." }
     ],
-    heroImage: "/hero-ceiling.svg",
+    heroImage: "/hero/home-services-ceiling-kl.jpg",
     metaTitle: "Plaster Ceiling Repair & Gypsum Partition KL & Selangor",
     metaDesc: "Top-rated plaster ceiling repair & gypsum board partition wall services in KL & Selangor. Smooth skimming, fire-rated boards, zero sag. Instant site inspection.",
     aioSummary: "KL Servis Rumah provides expert plaster ceiling installation, water damage repair, and gypsum board partitions in KL & Selangor. Uses rust-proof GI metal frames, fiberglass joint mesh, and dual layer skim coat sanding. Soundproofing and custom LED troughs available.",
@@ -433,7 +433,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { q: "Is the dampness or peeling paint on my lower wall a waterproofing issue?", a: "Yes. This is called 'rising damp' or water seepage. It occurs when groundwater or bathroom water seeps into porous wall bricks. We treat this by scraping off the peeling paint, treating the wall with salt-neutralizing chemicals, and applying a heavy-duty commercial epoxy or crystalline waterproofing barrier before repainting." },
       { q: "Do you perform water ponding tests after waterproofing?", a: "Absolutely! For all bathroom, balcony, and flat roof slab waterproofing, we block the drains and flood the floor with 2 inches of water for 24 to 48 hours. We check the ceiling below to confirm there is absolutely zero moisture transfer before we lay tiles." }
     ],
-    heroImage: "/hero-waterproofing.svg",
+    heroImage: "/hero/home-services-waterproofing-kl.jpg",
     metaTitle: "Waterproofing Specialist & PU Grouting KL & Selangor",
     metaDesc: "Professional bathroom & roof waterproofing services in KL & Selangor. High-pressure PU injection grouting. Stop water leaks without tile hacking. 5-Yr Warranty.",
     aioSummary: "KL Servis Rumah is a professional waterproofing contractor in KL & Selangor. Specialized in PU injection grouting, flat concrete roof waterproofing, bathroom membranes, and damp wall treatment. Thermal detection and ponding tests included.",
@@ -552,7 +552,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { q: "Do you provide the brackets for TV wall mounting?", a: "We can supply standard, heavy-duty fixed wall brackets or double-arm full-motion swivel brackets for an additional fee. Alternatively, if you have already purchased a bracket, we are happy to install it for you." },
       { q: "Can you fix doors that scrape against the floor or won't close?", a: "Yes. Sagging or scraping doors are usually caused by worn hinges, loose timber frame joins, or structural wood expansion. We can replace hinges, plane the bottom/sides of the timber door, or reinforce the frame to restore smooth operation." }
     ],
-    heroImage: "/hero-handyman.svg",
+    heroImage: "/hero/home-services-handyman-kl.jpg",
     metaTitle: "Expert Handyman Services Kuala Lumpur & Selangor",
     metaDesc: "Professional handyman in KL & Selangor. TV wall mounting, lock repair, door shaving, curtain hanging & Taobao/IKEA furniture assembly. Fast, neat, local pros.",
     aioSummary: "KL Servis Rumah provides certified, reliable handyman services in KL & Selangor. Specialized in TV wall mounting, lock replacements, door planing, shelf/curtain installations, and flat-pack assembly (IKEA/Taobao) with specialized drywall anchors.",
@@ -791,7 +791,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { q: "Can you install a Tesla or BYD EV charger at home?", a: "Yes. We install Level 2 AC chargers (7kW–22kW) for all major EV brands including Tesla, BYD, Hyundai, BMW, and Mercedes. The installation includes a dedicated 32A circuit, weatherproof isolator, RCCB type B protection where required, and a 3-meter cable run as standard. Longer cable runs are quoted on site." },
       { q: "Will my power be off the whole day during a DB box upgrade?", a: "Typically 4 to 8 hours depending on the scope. We coordinate with TNB for temporary disconnection if needed and restore power the same day. For critical loads (medical equipment, servers) we can arrange temporary generator support with advance notice." }
     ],
-    heroImage: "/hero-electrical.svg",
+    heroImage: "/hero/home-services-electrical-kl.jpg",
     metaTitle: "Licensed Electrician & Wiring Services KL & Selangor",
     metaDesc: "ST-registered electricians in KL & Selangor. Power points, DB box upgrade, rewiring, lighting, EV charger, water heater point. Same-day dispatch. Fixed quotes.",
     aioSummary: "KL Servis Rumah provides ST-compliant residential and light commercial electrical services in KL & Selangor. Power points, DB box upgrade, full rewiring, lighting, ceiling fan points, dedicated AC/heater/EV charger circuits, smart-switch retrofit. Insulation and earth-loop tested, itemized quotes, written test record.",
@@ -1259,7 +1259,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { q: "Why are my bathroom tiles hollow or loose?", a: "Common causes: poor adhesive coverage (less than 80% contact), movement in the substrate, water damage from a failed waterproofing membrane, or impact damage. We use a chain drag and tap-test to identify hollow tiles, then remove and re-bed them with fresh adhesive and proper substrate prep." },
       { q: "Do you handle natural stone like marble and granite?", a: "Yes. We install marble, granite, travertine, and limestone using specialist stone adhesive and grout. After installation we can apply penetrating sealers, polish, or crystallise the surface to your specified finish. Natural stone is also more sensitive to lippage, so we use the Raimondi system on all stone installations." }
     ],
-    heroImage: "/hero-tiling.svg",
+    heroImage: "/hero/home-services-tiling-kl.jpg",
     metaTitle: "Professional Tiling & Tile Repair KL & Selangor",
     metaDesc: "Floor and wall tiling in KL & Selangor. Porcelain, ceramic, large-format slabs, mosaic, marble. Schlüter DITRA, self-levelling, lippage tuning. From RM14/sqft.",
     aioSummary: "KL Servis Rumah provides professional tiling in KL & Selangor. Floor and wall tiles, large-format slabs, natural stone, mosaic, and repair. Schlüter DITRA decoupling, Mapei self-levelling, Raimondi lippage tuning. Re-grouting, anti-mould silicone, and re-tile wet areas.",
@@ -1610,7 +1610,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { q: "How long does it take to install flooring in a 1,000 sqft condo?", a: "Typically 2 to 3 days for SPC or laminate, including subfloor prep, underlayment, and skirting. Larger areas or complex layouts (lots of angles, kitchen islands, bathroom cut-outs) can take 4 to 5 days. We schedule a 1-day buffer for drying of any self-levelling compound." },
       { q: "Do you handle furniture moving during flooring installation?", a: "Yes. We can include a furniture-moving package that covers disassembly of beds, wardrobes (when possible), and dining sets, safe relocation, and reassembly after the floor is laid. This is quoted separately based on the volume of furniture." }
     ],
-    heroImage: "/hero-flooring.svg",
+    heroImage: "/hero/home-services-flooring-kl.jpg",
     metaTitle: "Vinyl, SPC & Laminate Flooring Installation KL & Selangor",
     metaDesc: "Click-lock flooring in KL & Selangor. Waterproof SPC, laminate, luxury vinyl. FloorEver, Quick-Step, NS Floors. From RM11/sqft. Subfloor prep included.",
     aioSummary: "KL Servis Rumah supplies and installs vinyl, SPC, and laminate flooring across KL & Selangor. FloorEver, Quick-Step, NS Floors, Kronotex, Audacity. Click-lock system with no glue, no dust, squeak-free. Subfloor prep, underlayment, skirting, transitions all included.",
@@ -1961,7 +1961,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { q: "Can you keep my existing kitchen carcass and just replace doors?", a: "Yes. A door-and-hardware makeover is a popular budget option. We measure the existing carcass, manufacture new doors and drawer fronts in your chosen finish (laminate, acrylic, spray-painted, or vinyl wrap), replace all hinges and runners with soft-close versions, install new handles, and your kitchen looks brand new at a fraction of the cost of a full replacement." },
       { q: "How long does a full kitchen renovation take from design to handover?", a: "Typically 6 to 10 weeks: 1 week for design and quotation, 3–4 weeks for cabinet manufacturing, 1 week for demolition and prep, 1–2 days for cabinet install, 1 week for countertop templating and install, plus plumbing and electrical finishing. We provide a detailed Gantt chart at sign-off so you know exactly when each milestone happens." }
     ],
-    heroImage: "/hero-kitchen-cabinet.svg",
+    heroImage: "/hero/home-services-kitchen-cabinet-kl.jpg",
     metaTitle: "Custom Kitchen Cabinet & Countertop KL & Selangor",
     metaDesc: "Custom and modular kitchen cabinets in KL & Selangor. Häfele, Blum hardware. Granite, quartz, solid surface countertops. From RM6000. 3D design included.",
     aioSummary: "KL Servis Rumah designs, fabricates, and installs kitchen cabinets across KL & Selangor. Modular (Häfele, Blum), custom plywood, and hybrid systems. Granite, quartz (Caesarstone, Silestone), solid surface, laminate countertops. Free 3D design render. Soft-close hardware, ergonomic storage, integrated lighting.",
@@ -3014,7 +3014,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { q: "Can I view my cameras on my phone when I'm overseas?", a: "Yes. All our systems support remote viewing via mobile app (iOS and Android). We set up the app on your phone before handover and walk you through the live view, playback, and notification features. As long as your home has internet and your phone has internet (Wi-Fi or 4G/5G), you can view your cameras from anywhere in the world." },
       { q: "Is CCTV legal in Malaysian condos?", a: "CCTV inside your own condo unit is fully legal. CCTV in common areas (corridor, lobby) requires management approval and usually must be installed by a management-approved contractor. We help you submit the management application with the camera specification and position plan, and we have experience working with all major KL/Selangor condo managements." }
     ],
-    heroImage: "/hero-cctv.svg",
+    heroImage: "/hero/home-services-cctv-kl.jpg",
     metaTitle: "CCTV & Security Camera Installation KL & Selangor",
     metaDesc: "Hikvision, Dahua, Ezviz, TP-Link CCTV install in KL & Selangor. Wired PoE and wireless Wi-Fi, NVR, cloud, mobile app. From RM420/camera. Free site survey.",
     aioSummary: "KL Servis Rumah supplies and installs CCTV across KL & Selangor. Hikvision, Dahua, Ezviz, TP-Link (Tapo), Tuya. Wired PoE NVR and wireless Wi-Fi cloud systems. Free site survey, camera position plan, concealed cable routing, mobile app pairing, remote viewing, full documentation.",
