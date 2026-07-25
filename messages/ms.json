@@ -500,5 +500,23 @@
         "a": "Kerja kecemasan boleh kos lebih apabila penghantaran mendesak, buruh selepas waktu, kesukaran akses atau kawalan keselamatan terlibat. Kenaikan kecemasan diterangkan sebelum kerja bermula."
       }
     }
+  },
+  "notFound": {
+    "badge": "404 halaman tidak dijumpai",
+    "title": "Kami tidak dapat mencari halaman perkhidmatan tersebut",
+    "body": "Halaman mungkin telah berpindah, tetapi meja dispatch perkhidmatan rumah kami masih sedia membantu dengan permintaan pengecatan, paip, siling, kalis air, dan tukang di KL & Selangor.",
+    "backHome": "Kembali ke laman utama",
+    "browseServices": "Layari perkhidmatan",
+    "whatsappUs": "WhatsApp kami"
+  },
+  "stickyBook": {
+    "label": "Tempah Perkhidmatan Ini"
+  },
+  "exitPopup": {
+    "badge": "Sebelum anda pergi",
+    "title": "Dapatkan sebut harga pasaran yang telus dahulu",
+    "body": "Hantar foto dan kawasan anda di WhatsApp. Kami akan mengesahkan skop, faktor harga, dan slot perkhidmatan yang tersedia sebelum sebarang kerja bermula.",
+    "cta": "WhatsApp untuk Sebut Harga",
+    "closeAria": "Tutup popup"
   }
 }

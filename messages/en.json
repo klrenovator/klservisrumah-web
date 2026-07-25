@@ -500,5 +500,23 @@
         "a": "Emergency jobs can cost more when urgent dispatch, after-hours labour, access difficulty or safety controls are involved. The emergency uplift is explained before work starts."
       }
     }
+  },
+  "notFound": {
+    "badge": "404 page not found",
+    "title": "We could not find that service page",
+    "body": "The page may have moved, but our home service dispatch desk is still ready to help with painting, plumbing, ceiling, waterproofing, and handyman requests in KL & Selangor.",
+    "backHome": "Back to homepage",
+    "browseServices": "Browse services",
+    "whatsappUs": "WhatsApp us"
+  },
+  "stickyBook": {
+    "label": "Book This Service"
+  },
+  "exitPopup": {
+    "badge": "Before you go",
+    "title": "Get a transparent market-rate quote first",
+    "body": "Send photos and your area on WhatsApp. We will confirm scope, price factors, and available service slots before any work begins.",
+    "cta": "WhatsApp for Quote",
+    "closeAria": "Close popup"
   }
 }
