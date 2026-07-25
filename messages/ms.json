@@ -167,7 +167,15 @@
     "whatsappDescription": "Ketik butang di bawah untuk berbual dengan meja penghantaran kami. Hantar foto untuk sebut harga yang lebih pantas.",
     "step": "Langkah",
     "of": "daripada",
-    "openWhatsApp": "Buka WhatsApp Lagi"
+    "openWhatsApp": "Buka WhatsApp Lagi",
+    "formNote": "Tiada deposit pendahuluan",
+    "quoteNote": "Sebut harga pasaran dahulu",
+    "selectSuburb": "Pilih kawasan...",
+    "selectType": "Pilih jenis...",
+    "timeWindow": "Waktu pilihan",
+    "photosReady": "Foto tersedia?",
+    "photosYes": "Ya, saya akan lampirkan foto di WhatsApp",
+    "photosNo": "Belum ada foto"
   },
   "pricing": {
     "pageTitle": "Harga Kami",

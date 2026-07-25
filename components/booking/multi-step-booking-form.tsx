@@ -73,7 +73,7 @@ export function MultiStepBookingForm() {
       `Sub-service: ${form.subService || "Not sure"}`,
       `Area/Suburb: ${suburb}`,
       `Property type: ${form.propertyType}`,
-      `Preferred date: ${form.date}`,
+      `{t("contact.fields.date")}: ${form.date}`,
       `Preferred time: ${form.time}`,
       `Problem details: ${form.details}`,
       `Photos ready to attach in WhatsApp: ${form.hasPhotos}`
@@ -106,7 +106,7 @@ export function MultiStepBookingForm() {
           <span className="text-xs font-extrabold uppercase tracking-widest text-[#0EA5E9]">Step {step} of 6</span>
           <h2 className="mt-1 text-2xl font-extrabold text-[#075985]">Book a Job</h2>
         </div>
-        <div className="text-right text-[11px] font-bold text-[#475569]">No upfront deposits<br />Market-rate quote first</div>
+        <div className="text-right text-[11px] font-bold text-[#475569]">{t("contact.formNote")}<br />{t("contact.quoteNote")}</div>
       </div>
 
       <div className="min-h-80">
@@ -116,7 +116,7 @@ export function MultiStepBookingForm() {
               {serviceOptions.map((service) => (
                 <button key={service.slug} onClick={() => update("service", service.slug)} className={`rounded-2xl border p-4 text-left transition ${form.service === service.slug ? "border-[#0284C7] bg-[#E0F2FE]" : "border-slate-100 bg-slate-50 hover:bg-white"}`}>
                   <span className="text-sm font-extrabold text-[#075985]">{service.title}</span>
-                  <span className="mt-1 block text-xs font-bold text-[#0EA5E9]">From {service.startPrice}</span>
+                  <span className="mt-1 block text-xs font-bold text-[#0EA5E9]">{t("common.fromLabel")} {service.startPrice}</span>
                 </button>
               ))}
             </div>
@@ -143,14 +143,14 @@ export function MultiStepBookingForm() {
               <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
                 Area / Suburb
                 <select value={form.suburb} onChange={(event) => update("suburb", event.target.value)} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]">
-                  <option value="">Select suburb...</option>
+                  <option value="">{t("contact.selectSuburb")}</option>
                   {suburbPages.map((suburb) => <option key={suburb.slug} value={suburb.slug}>{suburb.name}</option>)}
                 </select>
               </label>
               <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
                 Property type
                 <select value={form.propertyType} onChange={(event) => update("propertyType", event.target.value)} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]">
-                  <option value="">Select type...</option>
+                  <option value="">{t("contact.selectType")}</option>
                   {propertyTypes.map((type) => <option key={type} value={type}>{type}</option>)}
                 </select>
               </label>
@@ -162,11 +162,11 @@ export function MultiStepBookingForm() {
           <StepShell title={t("contact.fields.schedule")}>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
-                Preferred date
+                {t("contact.fields.date")}
                 <input value={form.date} onChange={(event) => update("date", event.target.value)} type="date" className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]" />
               </label>
               <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
-                Time window
+                {t("contact.timeWindow")}
                 <select value={form.time} onChange={(event) => update("time", event.target.value)} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]">
                   {timeWindows.map((time) => <option key={time} value={time}>{time}</option>)}
                 </select>
@@ -178,14 +178,14 @@ export function MultiStepBookingForm() {
         {step === 5 && (
           <StepShell title={t("contact.fields.problem")}>
             <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
-              Describe the job
+              {t("contact.fields.message")}
               <textarea value={form.details} onChange={(event) => update("details", event.target.value)} rows={5} placeholder="Example: bathroom ceiling is dripping after shower, stain is about 1 meter wide..." className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]" />
             </label>
             <label className="mt-4 flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
-              Photos ready?
+              {t("contact.photosReady")}
               <select value={form.hasPhotos} onChange={(event) => update("hasPhotos", event.target.value)} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]">
-                <option value="yes">Yes, I will attach photos in WhatsApp</option>
-                <option value="no">No photos yet</option>
+                <option value="yes">{t("contact.photosYes")}</option>
+                <option value="no">{t("contact.photosNo")}</option>
               </select>
             </label>
           </StepShell>

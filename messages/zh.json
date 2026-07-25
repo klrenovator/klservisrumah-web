@@ -167,7 +167,15 @@
     "whatsappDescription": "点击下方按钮与我们调度台对话。发送照片可获得更快的报价。",
     "step": "步骤",
     "of": "共",
-    "openWhatsApp": "再次打开 WhatsApp"
+    "openWhatsApp": "再次打开 WhatsApp",
+    "formNote": "无需预付定金",
+    "quoteNote": "先提供市场价格报价",
+    "selectSuburb": "选择地区...",
+    "selectType": "选择类型...",
+    "timeWindow": "时间段",
+    "photosReady": "有照片吗？",
+    "photosYes": "有，我会在 WhatsApp 上传照片",
+    "photosNo": "暂时没有照片"
   },
   "pricing": {
     "pageTitle": "我们的价格",

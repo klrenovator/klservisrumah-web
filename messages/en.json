@@ -167,7 +167,15 @@
     "whatsappDescription": "Tap the button below to chat with our dispatch desk. Send photos for a faster quote.",
     "step": "Step",
     "of": "of",
-    "openWhatsApp": "Open WhatsApp Again"
+    "openWhatsApp": "Open WhatsApp Again",
+    "formNote": "No upfront deposits",
+    "quoteNote": "Market-rate quote first",
+    "selectSuburb": "Select suburb...",
+    "selectType": "Select type...",
+    "timeWindow": "Time window",
+    "photosReady": "Photos ready?",
+    "photosYes": "Yes, I will attach photos in WhatsApp",
+    "photosNo": "No photos yet"
   },
   "pricing": {
     "pageTitle": "Our Pricing",
