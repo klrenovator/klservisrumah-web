@@ -6,7 +6,10 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    formats: ["image/avif", "image/webp"],
+    // AVIF removed — it aggressively re-encodes colours and caused visible
+    // desaturation / hue shifts on hero photos and the brand logo.
+    // WebP with an sRGB ICC profile preserves colour fidelity much better.
+    formats: ["image/webp"],
     deviceSizes: [360, 414, 640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 31536000,

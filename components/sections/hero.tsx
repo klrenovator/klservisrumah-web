@@ -100,7 +100,7 @@ export function Hero() {
             decoding="async"
             placeholder="blur"
             blurDataURL={HERO_BLUR}
-            quality={72}
+            quality={85}
           />
         ) : null}
         <Image
@@ -117,7 +117,7 @@ export function Hero() {
           }`}
           placeholder="blur"
           blurDataURL={HERO_BLUR}
-          quality={72}
+          quality={85}
           onLoad={() => setVisible(true)}
         />
         {/* Layered overlays for text contrast */}

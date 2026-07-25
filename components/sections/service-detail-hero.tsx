@@ -145,7 +145,7 @@ export function ServiceDetailHero({ service }: ServiceDetailHeroProps) {
                 sizes="(max-width: 1024px) 100vw, 40vw"
                 priority
                 fetchPriority="high"
-                className="object-cover mix-blend-overlay"
+                className="object-cover"
               />
               <div className="absolute inset-0 flex flex-col justify-end p-6 sm:p-8 text-white">
                 <div className="eyebrow text-[#7DD3FC] mb-2">All KL & Selangor</div>
