@@ -1,3 +1,35 @@
+## 🆕 ROUND 27 EXECUTION LOG (2026-07-25) — LANGUAGE ROUTING FIX, MIDDLEWARE, SEO CORRECTIONS, FOOTER SOCIAL LINKS, LOADING STATE
+
+**Round status:** ✅ **COMPLETED**
+
+### ✅ What was changed
+- ✅ **Language Switcher Fix** — Removed URL-changing behavior. Language switching is now purely client-side via React context + localStorage. URLs remain stable at their canonical paths (e.g. `/services` regardless of language). This fixes the critical bug where switching to BM/ZH would navigate to `/ms/services` or `/zh/services` which hit a scaffold "coming soon" page instead of showing the actual translated content.
+- ✅ **LangProvider Enhancement** — Now detects locale from URL path prefix on initial load (e.g. if user arrives at `/ms` via an old link, the locale is set to BM). Priority: URL → localStorage → cookie → default (EN).
+- ✅ **Middleware (`middleware.ts`)** — New Next.js middleware that handles locale-prefixed URLs: bare `/ms` and `/zh` pass through to scaffold landing pages (which auto-redirect after 2s); deep locale URLs like `/ms/services` get 301-redirected to `/services` with locale cookie set. This ensures all shared/bookmarked locale URLs resolve to real content.
+- ✅ **Sitemap Fix** — Removed non-existent `/ms` and `/zh` URL alternates. Since language switching is client-side, all hreflang alternates now correctly point to the same canonical URL (the page serves all languages from a single URL).
+- ✅ **Root Layout Metadata Fix** — Updated `alternates.languages` to point all locales to `/` (same URL) since translations are rendered client-side.
+- ✅ **[lang] Scaffold Page Improvement** — Converted from minimal "coming soon" notice to a proper localized landing page with: translated title/notice, primary CTA to homepage, quick links (services, pricing, contact, WhatsApp, phone), and auto-redirect script (2s delay) that sets locale and navigates to homepage.
+- ✅ **Global Loading State** — Added `app/loading.tsx` with a professional animated skeleton loader matching the brand's sky-blue palette. Shows during page transitions for better UX.
+- ✅ **Footer Social Media Links** — Added social media icon row (Facebook, Instagram, TikTok, YouTube, Google Maps) to the footer contact section. All links are from `siteConfig.links` with proper `rel="noopener noreferrer"` and aria-labels. Custom TikTok SVG icon included since lucide-react doesn't have one.
+
+### 📁 Files modified
+- ✅ `components/ui/language-switcher.tsx` (removed URL routing, simplified to client-side only)
+- ✅ `context/lang-context.tsx` (added URL-based locale detection)
+- ✅ `middleware.ts` (new file — locale URL redirect handling)
+- ✅ `app/sitemap.ts` (fixed hreflang alternates)
+- ✅ `app/layout.tsx` (fixed metadata alternates)
+- ✅ `app/[lang]/[[...slug]]/page.tsx` (improved scaffold landing page with auto-redirect)
+- ✅ `app/loading.tsx` (new file — global loading skeleton)
+- ✅ `components/ui/footer.tsx` (added social media links row)
+
+### ✅ Quality check results
+- ✅ TypeScript: 0 errors
+- ✅ ESLint: 0 errors, 0 warnings
+- ✅ Build: 2,204+ SSG pages generated successfully (100% pass rate)
+- ✅ Middleware compiled: 34.4 kB
+
+---
+
 ## 🆕 ROUND 26 EXECUTION LOG (2026-07-25) — SUBSERVICE DETAIL CONTENT i18n
 
 **Round status:** ✅ **COMPLETED**
@@ -51,12 +83,12 @@
 
 ---
 
-## 🆕 CUMULATIVE SUMMARY — SESSION ROUNDS 21–26 (2026-07-25)
+## 🆕 CUMULATIVE SUMMARY — SESSION ROUNDS 21–27 (2026-07-25)
 
-**Total rounds completed:** 6 (Rounds 21–26)
-**Total files modified/created:** ~35
+**Total rounds completed:** 7 (Rounds 21–27)
+**Total files modified/created:** ~43
 **Total new translation keys added:** ~250+ across EN/MS/ZH
-**Total SSG pages:** 2,204 (unchanged, all building successfully)
+**Total SSG pages:** 2,204+ (unchanged, all building successfully)
 
 ### Components now fully localised (EN/MS/ZH):
 - ✅ Navbar, Footer, Language Switcher
@@ -90,16 +122,26 @@
 - ✅ Subservice Detail Hero
 - ✅ Subservice Detail Content (included items, pricing, warranty, FAQs)
 
+### Round 27 — Language routing & infrastructure improvements:
+- ✅ Fixed critical language switcher bug (was navigating to non-existent scaffold pages)
+- ✅ Implemented middleware for proper locale URL handling
+- ✅ Corrected sitemap hreflang alternates (all point to same URL for client-side i18n)
+- ✅ Improved [lang] scaffold pages with auto-redirect and localized content
+- ✅ Added global loading.tsx for better UX
+- ✅ Added social media links to footer (Facebook, Instagram, TikTok, YouTube, Google Maps)
+- ✅ Enhanced LangProvider with URL-based locale detection
+
 ### Quality check results (all rounds):
 - ✅ TypeScript: 0 errors
 - ✅ ESLint: 0 errors, 0 warnings
-- ✅ Build: 2,204 SSG pages generated successfully (100% pass rate)
+- ✅ Build: 2,204+ SSG pages generated successfully (100% pass rate)
+- ✅ Middleware: 34.4 kB compiled successfully
 
 ### ⏳ Remaining items:
 - Location/content datasets (requires additional data input)
-- Trilingual URL-prefixed routing at `/[locale]/...` level (requires middleware + route migration)
 - Visual QA on deployed URLs at mobile/desktop breakpoints
 - Blog post content localisation (when blog content is created)
+- Replace placeholder logo and project images with real brand assets
 
 ---
 
