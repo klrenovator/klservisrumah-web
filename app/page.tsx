@@ -17,6 +17,8 @@ import { ServiceAreas } from "@/components/sections/service-areas";
 import { FAQAccordion } from "@/components/sections/faq-accordion";
 import { HomeCTA } from "@/components/sections/home-cta";
 import { HomepageAeoLinks } from "@/components/sections/homepage-aeo-links";
+import { TikTokShowcase } from "@/components/sections/tiktok-showcase";
+import { InstagramFeed } from "@/components/sections/instagram-feed";
 import { siteConfig } from "@/config/site";
 import { servicesData } from "@/config/services-data";
 import {
@@ -172,6 +174,10 @@ export default function Home() {
       <HomepageAeoLinks />
 
       <FAQAccordion />
+
+      {/* Lightweight social proof sections — match the KLRenovator trust pattern without loading third-party embeds on page load. */}
+      <TikTokShowcase locale="en" />
+      <InstagramFeed locale="en" />
 
       <HomeCTA />
     </>
