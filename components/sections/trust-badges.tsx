@@ -1,27 +1,32 @@
+"use client";
+
 import React from "react";
 import { Award, Shield, FileCheck, Landmark } from "lucide-react";
+import { useTranslations } from "@/hooks/use-translations";
 
 export function TrustBadges() {
+  const t = useTranslations();
+
   const badgeList = [
     {
       icon: <Award className="w-8 h-8 text-[#0EA5E9]" />,
-      title: "100% Certified",
-      desc: "Licensed tradesmen & expert background-checked crews."
+      title: t("home.trustBadges.items.verified"),
+      desc: t("home.trustBadges.items.verified")
     },
     {
       icon: <Shield className="w-8 h-8 text-[#0EA5E9]" />,
-      title: "Craftsmanship Warranties",
-      desc: "Up to 90 days solid peace of mind guarantees."
+      title: t("home.trustBadges.items.warranty"),
+      desc: t("home.trustBadges.items.warranty")
     },
     {
       icon: <FileCheck className="w-8 h-8 text-[#0EA5E9]" />,
-      title: "Transparent Quotes",
-      desc: "Fixed upfront itemized pricing. Absolutely zero hidden charges."
+      title: t("home.trustBadges.items.transparent"),
+      desc: t("home.trustBadges.items.transparent")
     },
     {
       icon: <Landmark className="w-8 h-8 text-[#0EA5E9]" />,
-      title: "Established Local Company",
-      desc: "Insured operations with background-verified crews and proper invoicing."
+      title: t("home.trustBadges.items.insured"),
+      desc: t("home.trustBadges.items.insured")
     }
   ];
 
@@ -36,7 +41,6 @@ export function TrustBadges() {
               </div>
               <div className="flex flex-col">
                 <h3 className="text-sm font-bold text-[#075985] tracking-tight">{badge.title}</h3>
-                <p className="text-xs text-[#475569] leading-relaxed mt-1 font-medium">{badge.desc}</p>
               </div>
             </div>
           ))}

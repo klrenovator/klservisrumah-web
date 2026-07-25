@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import { ChevronRight, Home } from "lucide-react";
+import { useTranslations } from "@/hooks/use-translations";
 
 export interface BreadcrumbItem {
   label: string;
@@ -12,12 +15,14 @@ export interface BreadcrumbsProps {
 }
 
 export function Breadcrumbs({ items }: BreadcrumbsProps) {
+  const t = useTranslations();
+
   return (
     <nav aria-label="Breadcrumb" className="py-3 px-4 bg-slate-50 border-b border-slate-100">
       <div className="max-w-7xl mx-auto flex items-center gap-2 text-xs md:text-sm text-[#475569] font-medium overflow-x-auto no-scrollbar">
         <Link href="/" className="hover:text-[#0EA5E9] transition-colors flex items-center gap-1 shrink-0">
           <Home className="w-4 h-4 text-[#0EA5E9]" />
-          <span>Home</span>
+          <span>{t("breadcrumbs.home")}</span>
         </Link>
         
         {items.map((item, index) => {

@@ -1,5 +1,8 @@
+"use client";
+
 import React from "react";
 import { CheckCircle2, ShieldCheck, Star, Award, Clock, ThumbsUp } from "lucide-react";
+import { useTranslations } from "@/hooks/use-translations";
 
 type TrustBadgeItem = {
   icon: "check" | "shield" | "star" | "award" | "clock" | "thumbsup";
@@ -25,19 +28,26 @@ const iconMap = {
  * Renders inline pill-style trust signals.
  */
 export function TrustBadgesRow({
-  items = [
-    { icon: "shield", text: "Insured & Verified" },
-    { icon: "check", text: "Price Confirmed First" },
-    { icon: "star", text: "4.9 / 5 Google" },
-    { icon: "clock", text: "Same-Day Available" },
-    { icon: "award", text: "Up to 90-Day Warranty" }
-  ],
+  items,
   variant = "light"
 }: TrustBadgesRowProps) {
+  const t = useTranslations();
   const isDark = variant === "dark";
+
+  // Default items use translation keys
+  const defaultItems: TrustBadgeItem[] = [
+    { icon: "shield", text: t("trustBadgesRow.insured") },
+    { icon: "check", text: t("trustBadgesRow.priceFirst") },
+    { icon: "star", text: t("trustBadgesRow.google") },
+    { icon: "clock", text: t("trustBadgesRow.sameDay") },
+    { icon: "award", text: t("trustBadgesRow.warranty") }
+  ];
+
+  const displayItems = items ?? defaultItems;
+
   return (
     <ul className={`flex flex-wrap items-center gap-2 ${isDark ? "text-white" : ""}`}>
-      {items.map((item, idx) => {
+      {displayItems.map((item, idx) => {
         const Icon = iconMap[item.icon];
         return (
           <li

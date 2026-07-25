@@ -48,11 +48,9 @@ export function Hero() {
               <span className="text-[#0EA5E9]">{t("home.hero.heading2")}</span> {t("home.hero.headingLocation")}
             </h1>
 
-            {/* Trilingual subline */}
-            <p className="trilingual-sub italic">
-              <b>BM:</b> Servis rumah premium di KL &amp; Selangor dengan harga pasaran.
-              <span className="mx-1.5 text-slate-300">|</span>
-              <b>中文:</b> 吉隆坡与雪兰莪的市场行情优质家居服务。
+            {/* Locale-aware subline */}
+            <p className="text-sm italic text-[#075985]/60 font-medium">
+              {t("hero.subline")}
             </p>
 
             {/* Semantic Subtext Body Copy */}

@@ -85,19 +85,123 @@
     },
     "process": {
       "heading": "我们的 4 步预订流程",
-      "subheading": "从您第一条 WhatsApp 消息，到完整交付带保证的工程，以下是流程。"
+      "subheading": "从您第一条 WhatsApp 消息，到完整交付带保证的工程，以下是流程。",
+      "eyebrow": "工作流程",
+      "title": "我们的专业 5 步流程",
+      "subtitle": "旨在从第一次点击到最终签署，提供最大安心、完美清洁和完全价格透明。",
+      "steps": {
+        "1": {
+          "title": "即时预订",
+          "desc": "选择您需要的服务和地区。通过我们的自动 WhatsApp 门户或电话线路检查即时可用时段。"
+        },
+        "2": {
+          "title": "预先固定报价",
+          "desc": "我们的经理检查需求，并在开工前提供详细的逐项固定价格报价。"
+        },
+        "3": {
+          "title": "表面保护准备",
+          "desc": "我们的油漆工/技工完全覆盖您的家具、开关和地板。贴边并遮盖保护区域。"
+        },
+        "4": {
+          "title": "精准执行",
+          "desc": "使用优质工具、激光水平仪和 SIRIM 认证材料进行施工。所有灰尘/废物均被吸尘清理。"
+        },
+        "5": {
+          "title": "保修与签收",
+          "desc": "我们进行最终压力测试（漏水检查/水平检查）。您审核、签收，并获得 30 至 90 天书面保修。"
+        }
+      }
     },
     "beforeAfter": {
       "heading": "施工前后：真实项目成果",
-      "subheading": "查看我们在吉隆坡与雪兰莪的油漆、天花板、水管、防水与杂工工程质量。"
+      "subheading": "查看我们在吉隆坡与雪兰莪的油漆、天花板、水管、防水与杂工工程质量。",
+      "items": {
+        "1": {
+          "title": "客厅墙面油漆修复",
+          "service": "油漆",
+          "location": "Petaling Jaya",
+          "before": "水渍、油漆开裂、褪色发黄。",
+          "after": "完美光滑腻子、底漆密封层、双层 Nippon Spot-less 面漆。",
+          "benefit": "可擦洗墙面、防霉保护、明亮现代视觉效果。"
+        },
+        "2": {
+          "title": "楼层间浴室混凝土漏水",
+          "service": "防水",
+          "location": "Cheras",
+          "before": "潮湿天花板滴水，损坏石膏板，形成黑色霉菌。",
+          "after": "无需打砖：高压 PU 注浆，受损石膏板更换并抹腻子。",
+          "benefit": "100% 密封防潮、结构加固、零漏水证书。"
+        },
+        "3": {
+          "title": "下垂石膏天花板修复",
+          "service": "天花板维修",
+          "location": "Subang Jaya",
+          "before": "因漏水导致石膏板下垂，木质框架松动不安全地悬挂。",
+          "after": "新型防锈镀锌钢吊挂件、防潮板、玻璃纤维接缝胶带。",
+          "benefit": "完美的结构防下垂安全性、完全平整的无缝涂漆准备面。"
+        }
+      }
     },
     "featuredProjects": {
       "heading": "团队精选项目",
-      "subheading": "我们近期在吉隆坡与雪兰莪完成的精选油漆、天花板、水管、防水与杂工项目。"
+      "subheading": "我们近期在吉隆坡与雪兰莪完成的精选油漆、天花板、水管、防水与杂工项目。",
+      "items": {
+        "1": {
+          "title": "半独立别墅全屋外墙油漆",
+          "location": "Bukit Jelutong, Shah Alam",
+          "scope": "高压水冲洗、裂缝修补、潮湿底漆以及双层 Nippon Weatherbond 保护涂层。",
+          "stat": "4 天完成"
+        },
+        "2": {
+          "title": "豪华公寓浴室 PU 防水",
+          "location": "Mont Kiara, Kuala Lumpur",
+          "scope": "高压聚氨酯 (PU) 注浆穿过混凝土板以密封活跃浴室漏水。",
+          "stat": "3 小时完成"
+        },
+        "3": {
+          "title": "企业总部石膏板隔墙",
+          "location": "Glenmarie, Shah Alam",
+          "scope": "干墙组装，内置双密度岩棉隔音，完美腻子抹灰。",
+          "stat": "周末完成"
+        },
+        "4": {
+          "title": "现代电视安装与窗帘挂装",
+          "location": "Bandar Puteri, Puchong",
+          "scope": "使用膨胀螺栓空心墙锚安装 75 英寸 OLED 电视，3 个房间完美水平窗帘轨道。",
+          "stat": "2 小时完成"
+        }
+      }
     },
     "testimonials": {
       "heading": "客户评价",
-      "subheading": "来自吉隆坡与雪兰莪真实屋主与企业的评价。"
+      "subheading": "来自吉隆坡与雪兰莪真实屋主与企业的评价。",
+      "items": {
+        "1": {
+          "name": "已查证屋主反馈",
+          "location": "Mont Kiara, KL",
+          "text": "客户始终重视家具保护、仔细的墙面准备、优质油漆选择，以及油漆工作后的干净交接。",
+          "service": "房屋油漆"
+        },
+        "2": {
+          "name": "已查证屋主反馈",
+          "location": "Subang Jaya, Selangor",
+          "text": "对于天花板和防水问题，客户希望在维修前清楚解释漏水来源，并在合适的情况下偏好非打拆方案。",
+          "service": "漏水防水"
+        },
+        "3": {
+          "name": "已查证屋主反馈",
+          "location": "Cheras, Kuala Lumpur",
+          "text": "对于杂工工作，客户最重视直线对齐、正确的墙壁锚固、安全安装和整洁的钻孔清理。",
+          "service": "杂工维修"
+        },
+        "4": {
+          "name": "已查证屋主反馈",
+          "location": "Setia Alam, Shah Alam",
+          "text": "对于水管维修，客户重视快速响应、零件清晰解释、压力测试和透明的市场行情价格。",
+          "service": "水管维修"
+        }
+      },
+      "header": "客户反馈主题"
     },
     "serviceAreas": {
       "heading": "我们在吉隆坡与雪兰莪覆盖的区域",
@@ -133,7 +237,9 @@
     "directoryTitle2": "尽在一处。",
     "directorySubtitle": "从油漆与水管维修到全屋翻新、电气、清洁与安防——在吉隆坡与雪兰莪全境探索市场行情价格、真实保修与当日服务。",
     "browseAll": "浏览所有服务",
-    "viewPricingGuide": "查看价格指南"
+    "viewPricingGuide": "查看价格指南",
+    "includedSpecialities": "包含专长",
+    "guaranteeLabel": "保证"
   },
   "contact": {
     "pageTitle": "联系与预订",
@@ -175,7 +281,14 @@
     "timeWindow": "时间段",
     "photosReady": "有照片吗？",
     "photosYes": "有，我会在 WhatsApp 上传照片",
-    "photosNo": "暂时没有照片"
+    "photosNo": "暂时没有照片",
+    "labels": {
+      "address": "注册地址",
+      "phone": "致电调度支持",
+      "email": "电子邮件咨询台",
+      "hours": "营业时间"
+    },
+    "dispatchNote": "我们的调度经理每天上午 9:00 至下午 6:00（包括周六和周日）在 WhatsApp 上提供当日预约服务。下午 6:00 后提交的表格将在次日清晨处理。"
   },
   "pricing": {
     "pageTitle": "我们的价格",
@@ -252,6 +365,214 @@
         "title": "一丝不苟的清洁标准",
         "desc": "我们会遮蔽边界并铺设厚重塑料防护布，确保离开时您的物业和我们抵达时一样干净整洁。"
       }
+    }
+  },
+  "comparison": {
+    "heading": "比较服务",
+    "title": "在预订前选择正确的服务",
+    "subtitle": "查看起价、保修与常见任务。最终范围以透明的市场行情报价确认。",
+    "service": "服务",
+    "startsFrom": "起价",
+    "warranty": "保修",
+    "response": "响应",
+    "bestFor": "适合",
+    "action": "操作",
+    "viewPricing": "查看价格",
+    "responseTimes": {
+      "painting": "预约 / 本周内",
+      "plumbing": "紧急漏水当日响应",
+      "ceiling": "检查 + 预约维修",
+      "waterproofing": "漏水优先处理",
+      "handyman": "当日可约",
+      "renovation": "现场勘测 + 预约",
+      "electrical": "故障当日响应",
+      "water-heater": "无热水当日响应",
+      "ceiling-fan": "预约安装",
+      "lighting": "预约安装",
+      "tiling": "预约 / 本周内",
+      "plaster-ceiling": "检查 + 预约",
+      "skim-coat": "预约 / 本周内",
+      "flooring": "现场测量 + 预约",
+      "epoxy-flooring": "现场勘测 + 预约",
+      "roof-repair": "紧急漏水当日处理",
+      "kitchen-cabinet": "设计咨询 + 预约",
+      "carpentry": "预约 / 本周内",
+      "door": "预约 / 本周内",
+      "window-repair": "预约 / 本周内",
+      "locksmith": "锁门外当日响应",
+      "glass-aluminium": "测量 + 预约",
+      "cleaning": "本周预约",
+      "deep-cleaning": "预约安排",
+      "post-renovation-cleaning": "施工后预约",
+      "cctv": "现场勘测 + 预约",
+      "autogate": "现场勘测 + 预约",
+      "welding": "现场勘测 + 预约",
+      "aircond": "预约服务",
+      "smart-home": "咨询 + 预约",
+      "pest-control": "预约处理"
+    }
+  },
+  "decisionTree": {
+    "defaultTitle": "您应该预订这项服务吗？",
+    "tags": {
+      "recommended": "推荐",
+      "lighter": "轻量选择",
+      "urgent": "优先处理"
+    },
+    "servicesPage": {
+      "title": "不确定该选哪个方案？",
+      "fullService": {
+        "title": "全包服务套餐",
+        "description": "与我们专业团队预订完整服务。包括诊断、材料、人工与保修。",
+        "compareAction": "需要更简单的方案？"
+      },
+      "diyMaterials": {
+        "title": "DIY + 仅材料",
+        "description": "获取优质材料+指导。适合您想自己处理人工或已有杂工的情况。",
+        "compareAction": "想要专业执行？"
+      },
+      "emergency": {
+        "title": "紧急 / 当日服务",
+        "description": "紧急情况？我们会在数小时内派遣最近的可用的团队（视情况而定）。",
+        "compareAction": "可以等 24–48 小时？"
+      }
+    }
+  },
+  "pricingPage": {
+    "principlesHeading": "我们的定价原则",
+    "principles": {
+      "marketRate": {
+        "title": "标准市场行情价",
+        "body": "我们的公开定价遵循规则：不会过高、不会过低，始终与本地正常市场一致。"
+      },
+      "itemized": {
+        "title": "开工前逐项列出",
+        "body": "范围、材料、人工、出入难题与紧急时间在技术人员开工前说明。"
+      },
+      "warranty": {
+        "title": "保修意识报价",
+        "body": "在有工艺保修的情况下，报价与正确的维修方法相匹配，而不是廉价的短期修补。"
+      },
+      "whatsapp": {
+        "title": "WhatsApp 优先便利",
+        "body": "发送照片、尺寸、位置和时间，在预约现场参观之前更快获取价格方向。"
+      }
+    },
+    "serviceByServiceHeading": "逐项服务定价",
+    "serviceByServiceTitle": "选择一项服务并打开完整价格指南",
+    "serviceByServiceSubtitle": "每项服务都有自己的费用指南，方便客户查看可能的预算、常见包含项目以及影响最终报价的典型因素。",
+    "startsFrom": "起价",
+    "warranty": "保修",
+    "pricingNote": "价格说明",
+    "openPricingGuide": "打开价格指南",
+    "viewServicePage": "查看服务页面",
+    "quoteFactorsHeading": "您的最终报价如何确认",
+    "quoteFactorsTitle": "通常会改变现场价格的因素？",
+    "quoteFactors": {
+      "0": "测量的尺寸、数量或总工作区域",
+      "1": "现有墙面、管道、板材或防水状况",
+      "2": "材料等级、品牌和安全要求",
+      "3": "公寓出入规定、电梯保护或限制时间",
+      "4": "紧急响应、加班或当日急件",
+      "5": "捆绑工程可减少单独上门费用"
+    },
+    "whatsappBox": {
+      "eyebrow": "需要更快的答案？",
+      "title": "通过 WhatsApp 发送照片",
+      "body": "分享您的区域、测量、照片和时间。我们的团队将引导您找到合适的服务，并在派遣前确认可能的市场行情预算。",
+      "cta": "WhatsApp 获取价格帮助",
+      "phoneLabel": "公共电话与 WhatsApp"
+    },
+    "faqHeading": "价格常见问题",
+    "faqTitle": "常见定价问题",
+    "faqs": {
+      "0": {
+        "q": "您如何设定价格？",
+        "a": "我们遵循巴生谷标准市场行情。价格不会过高或过低。最终报价仅在检查范围、出入、材料和紧急程度后确认。"
+      },
+      "1": {
+        "q": "您会后来收取隐藏费用吗？",
+        "a": "不会。如果需要额外工作，会先向您说明并在您批准后继续。"
+      },
+      "2": {
+        "q": "我可以通过 WhatsApp 上的照片获取报价吗？",
+        "a": "可以。许多小工作可以通过清晰照片、测量和您的区域进行估算。更复杂的漏水、天花板或外墙工作可能仍需要检查。"
+      },
+      "3": {
+        "q": "紧急工作的收费不同吗？",
+        "a": "当涉及紧急派遣、加班人工、出入困难或安全控制时，紧急工作可能成本更高。紧急加价在开工前说明。"
+      }
+    }
+  },
+  "notFound": {
+    "badge": "404 未找到页面",
+    "title": "我们找不到该服务页面",
+    "body": "该页面可能已移动，但我们的家居服务调度台仍随时准备帮助您处理吉隆坡与雪兰莪的油漆、水管、天花板、防水与杂工需求。",
+    "backHome": "返回首页",
+    "browseServices": "浏览服务",
+    "whatsappUs": "WhatsApp 联系我们"
+  },
+  "stickyBook": {
+    "label": "预订此服务"
+  },
+  "exitPopup": {
+    "badge": "离开之前",
+    "title": "先获取透明的市场行情报价",
+    "body": "在 WhatsApp 上发送照片和您的区域。我们将在任何工作开始前确认范围、价格因素和可用的服务时段。",
+    "cta": "WhatsApp 获取报价",
+    "closeAria": "关闭弹窗"
+  },
+  "breadcrumbs": {
+    "home": "首页"
+  },
+  "internalLinks": {
+    "eyebrow": "更多同类内容",
+    "defaultTitle": "相关资源"
+  },
+  "hero": {
+    "subline": "吉隆坡与雪兰莪的市场行情优质家居服务"
+  },
+  "trustBadgesRow": {
+    "insured": "已投保与查证",
+    "priceFirst": "先确认价格",
+    "google": "4.9 / 5 谷歌",
+    "sameDay": "可当日服务",
+    "warranty": "最高 90 天保修"
+  },
+  "serviceDetail": {
+    "bookWhatsApp": "通过 WhatsApp 预订",
+    "trustLine": "当日可约 · 有保修 · 已投保",
+    "bookSubWhatsApp": "通过 WhatsApp 预订{name}"
+  },
+  "serviceContent": {
+    "overviewEyebrow": "概述",
+    "aboutService": "关于此{name}服务",
+    "whyChooseUs": "为何选择我们",
+    "pricingScope": "价格与范围",
+    "allCoverage": "全吉隆坡与雪兰莪",
+    "faqs": "常见问题",
+    "isRightService": "{name}是适合您的服务吗？",
+    "priceConfirmed": "先确认价格",
+    "warranty": "{days}保修",
+    "insuredOps": "已投保运营",
+    "sameDayAvail": "可当日服务",
+    "ssmRegistered": "SSM 注册"
+  },
+  "subserviceContent": {
+    "whatsIncluded": "包括",
+    "pricing": "定价",
+    "warranty": "保修",
+    "faqs": "常见问题",
+    "howMuchCost": "在吉隆坡与雪兰莪{name}的费用是多少？",
+    "includedItems": {
+      "1": "初步现场检查和范围确认",
+      "2": "表面或装置准备工作",
+      "3": "专业工具与适当材料",
+      "4": "带物业保护的干净施工",
+      "5": "交付前的功能和饰面测试",
+      "6": "透明的市场行情最终报价",
+      "7": "书面保修文件",
+      "8": "WhatsApp 预约与咨询支持"
     }
   }
 }

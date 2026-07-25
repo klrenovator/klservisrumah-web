@@ -1,46 +1,31 @@
+"use client";
+
 import React from "react";
 import { Star, Quote } from "lucide-react";
+import { useTranslations } from "@/hooks/use-translations";
 
 export function Testimonials() {
-  const feedbackThemes = [
-    {
-      name: "Verified homeowner feedback",
-      location: "Mont Kiara, KL",
-      text: "Customers consistently value furniture protection, careful wall preparation, premium paint options, and a clean handover after painting work.",
-      service: "House Painting"
-    },
-    {
-      name: "Verified homeowner feedback",
-      location: "Subang Jaya, Selangor",
-      text: "For ceiling and waterproofing issues, customers want the leak source explained clearly before repair and prefer non-hacking options where suitable.",
-      service: "Leak Waterproofing"
-    },
-    {
-      name: "Verified homeowner feedback",
-      location: "Cheras, Kuala Lumpur",
-      text: "For handyman jobs, customers care most about straight alignment, correct wall anchors, secure mounting, and tidy drilling cleanup.",
-      service: "Handyman odd jobs"
-    },
-    {
-      name: "Verified homeowner feedback",
-      location: "Setia Alam, Shah Alam",
-      text: "For plumbing repairs, customers value fast response, clear explanation of parts, pressure testing, and transparent market-rate pricing.",
-      service: "Plumbing repairs"
-    }
-  ];
+  const t = useTranslations();
+
+  const feedbackThemes = [1, 2, 3, 4].map((n) => ({
+    name: t(`home.testimonials.items.${n}.name`),
+    location: t(`home.testimonials.items.${n}.location`),
+    text: t(`home.testimonials.items.${n}.text`),
+    service: t(`home.testimonials.items.${n}.service`)
+  }));
 
   return (
     <section className="bg-slate-50 border-y border-slate-100 py-20 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-16">
           <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
-            Client Feedback Themes
+            {t("home.testimonials.header")}
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
-            What Customers Usually Value
+            {t("home.testimonials.heading")}
           </h2>
           <p className="text-base text-[#475569] leading-relaxed">
-            Privacy-safe themes based on common homeowner expectations: clean work, transparent quotes, correct materials, and reliable warranty support.
+            {t("home.testimonials.subheading")}
           </p>
         </div>
 
@@ -63,7 +48,7 @@ export function Testimonials() {
                   </span>
                 </div>
                 <p className="text-xs sm:text-sm text-[#475569] leading-relaxed font-semibold italic">
-                  “{review.text}”
+                  &ldquo;{review.text}&rdquo;
                 </p>
               </div>
               <div className="mt-8 pt-5 border-t border-slate-50 flex flex-col gap-1">

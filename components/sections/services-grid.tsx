@@ -26,7 +26,7 @@ export function ServicesGrid() {
             {t("home.servicesGrid.subheading")}
           </h2>
           <p className="text-base text-[#475569] leading-relaxed">
-            Professional craftmanship delivered across Kuala Lumpur &amp; Selangor. Select a category below to explore specific services, upfront rates, and dynamic coverage options.
+            {t("services.pageSubtitle")}
           </p>
         </div>
 
@@ -68,7 +68,9 @@ export function ServicesGrid() {
 
                 {/* Sub-services previews */}
                 <div className="flex flex-col gap-2.5">
-                  <span className="text-[10px] text-[#075985] font-bold uppercase tracking-widest">Included Specialities:</span>
+                  <span className="text-[10px] text-[#075985] font-bold uppercase tracking-widest">
+                    {t("services.includedSpecialities")}:
+                  </span>
                   <ul className="flex flex-col gap-2">
                     {service.subServices.slice(0, 3).map((sub, idx) => (
                       <li key={idx} className="flex gap-2 items-start text-xs font-semibold text-[#475569]">
@@ -84,7 +86,7 @@ export function ServicesGrid() {
               {/* Action Button */}
               <div className="mt-8 pt-4 border-t border-slate-50 flex items-center justify-between">
                 <span className="text-xs text-emerald-500 font-bold bg-emerald-50 px-2.5 py-1 rounded-md">
-                  {service.warranty.split(" ")[0]} Guarantee
+                  {service.warranty.split(" ")[0]} {t("services.guaranteeLabel")}
                 </span>
                 <Link
                   href={`/services/${service.slug}`}

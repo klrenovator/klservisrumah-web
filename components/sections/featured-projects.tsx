@@ -1,33 +1,18 @@
+"use client";
+
 import React from "react";
 import { ArrowUpRight, ShieldCheck, MapPin } from "lucide-react";
+import { useTranslations } from "@/hooks/use-translations";
 
 export function FeaturedProjects() {
-  const projects = [
-    {
-      title: "Semi-D Bungalow Full Exterior Painting",
-      location: "Bukit Jelutong, Shah Alam",
-      scope: "Pressure jet washing, crack repairs, damp priming, and double coat Nippon Weatherbond protection.",
-      stat: "Completed in 4 days"
-    },
-    {
-      title: "Luxury Condo Bathroom PU Waterproofing",
-      location: "Mont Kiara, Kuala Lumpur",
-      scope: "High-pressure Polyurethane (PU) grouting injection through concrete slabs to seal active bath leaks.",
-      stat: "Completed in 3 hours"
-    },
-    {
-      title: "Corporate Head Office Gypsum Board Partition",
-      location: "Glenmarie, Shah Alam",
-      scope: "Drywall assembly with internal double-density rockwool soundproofing and flawless plaster skim-coating.",
-      stat: "Completed over weekend"
-    },
-    {
-      title: "Modern TV Mounting & Curtain Hanging",
-      location: "Bandar Puteri, Puchong",
-      scope: "Molly bolt hollow-wall anchors mounting of 75\" OLED TV, perfectly level curtain tracks in 3 rooms.",
-      stat: "Completed in 2 hours"
-    }
-  ];
+  const t = useTranslations();
+
+  const projects = [1, 2, 3, 4].map((n) => ({
+    title: t(`home.featuredProjects.items.${n}.title`),
+    location: t(`home.featuredProjects.items.${n}.location`),
+    scope: t(`home.featuredProjects.items.${n}.scope`),
+    stat: t(`home.featuredProjects.items.${n}.stat`)
+  }));
 
   return (
     <section className="bg-white py-20 sm:py-24">
@@ -37,19 +22,19 @@ export function FeaturedProjects() {
         <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-6 mb-16">
           <div className="flex flex-col items-start gap-3 max-w-2xl">
             <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
-              Completed Works
+              {t("home.featuredProjects.heading")}
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
-              Featured Recent Projects
+              {t("home.featuredProjects.heading")}
             </h2>
             <p className="text-base text-[#475569] leading-relaxed">
-              Explore actual projects executed by our skilled technicians. Delivering premium quality standards across residential and commercial estates.
+              {t("home.featuredProjects.subheading")}
             </p>
           </div>
           
           <div className="shrink-0 flex items-center gap-2 text-xs font-extrabold text-[#075985] bg-slate-50 border border-slate-100 p-4 rounded-2xl shadow-3xs">
             <ShieldCheck className="w-5 h-5 text-emerald-500" />
-            <span>Guaranteed Standards</span>
+            <span>{t("services.guaranteeLabel")}</span>
           </div>
         </div>
 

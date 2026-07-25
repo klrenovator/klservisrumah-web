@@ -1,5 +1,8 @@
+"use client";
+
 import React from "react";
 import { CheckCircle, AlertCircle } from "lucide-react";
+import { useTranslations } from "@/hooks/use-translations";
 import type { ServiceDetail } from "@/config/services-data";
 import { DirectAnswer } from "@/components/content/direct-answer";
 import { DecisionTree } from "@/components/content/decision-tree";
@@ -24,6 +27,7 @@ type ServiceDetailContentProps = {
  *   8. FAQs
  */
 export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
+  const t = useTranslations();
   return (
     <>
       {/* Section 1 — Overview */}
@@ -32,9 +36,9 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
             <div className="lg:col-span-8 flex flex-col gap-6">
               <div>
-                <span className="eyebrow">Overview · Gambaran keseluruhan · 概述</span>
+                <span className="eyebrow">{t("serviceContent.overviewEyebrow")}</span>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-[#075985] tracking-tight mt-3">
-                  About this {service.title.toLowerCase()} service
+                  {t("serviceContent.aboutService", { name: service.title })}
                 </h2>
               </div>
               <p className="text-base sm:text-lg text-[#475569] leading-relaxed font-medium">
@@ -42,7 +46,7 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
               </p>
             </div>
             <div className="lg:col-span-4 flex flex-col gap-3">
-              <span className="eyebrow">Why choose us · Mengapa kami · 为何选择</span>
+              <span className="eyebrow">{t("serviceContent.whyChooseUs")}</span>
               <ul className="flex flex-col gap-2.5 mt-1">
                 {service.highlights.map((h, idx) => (
                   <li key={idx} className="flex gap-2.5 items-start text-sm font-semibold text-[#475569]">
@@ -65,11 +69,11 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
             trilingualMs={`${service.title} disyorkan apabila anda memerlukan ${service.tagline.toLowerCase()} Pakej kami bermula dari ${service.startPrice} dengan sebut harga terperinci, operasi diinsuranskan, dan ${service.warranty.toLowerCase()}.`}
             trilingualZh={`${service.title} 适合需要${service.tagline.toLowerCase()}的客户。我们的服务从 ${service.startPrice} 起，包含透明分项报价、全程保险、以及${service.warranty.toLowerCase()}。`}
             trustItems={[
-              "Price Confirmed First",
-              `${service.warranty.split(" ")[0]} Warranty`,
-              "Insured Operations",
-              "Same-Day Available",
-              "SSM Registered"
+              t("serviceContent.priceConfirmed"),
+              t("serviceContent.warranty", { days: service.warranty.split(" ")[0] }),
+              t("serviceContent.insuredOps"),
+              t("serviceContent.sameDayAvail"),
+              t("serviceContent.ssmRegistered")
             ]}
           />
         </div>
@@ -79,7 +83,7 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
       <section className="section-tight bg-white">
         <div className="container-default">
           <div className="max-w-2xl">
-            <span className="eyebrow">Pricing & scope · Harga & skop · 价格范围</span>
+            <span className="eyebrow">{t("serviceContent.pricingScope")}</span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#075985] tracking-tight mt-3">
               {service.title} pricing breakdown
             </h2>
@@ -205,7 +209,7 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
       <section className="section-tight bg-white">
         <div className="container-default">
           <div className="card text-center">
-            <span className="eyebrow">All KL & Selangor · Semua KL & Selangor</span>
+            <span className="eyebrow">{t("serviceContent.allCoverage")}</span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#075985] tracking-tight mt-3">
               {service.title} you can trust
             </h2>
@@ -223,7 +227,7 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
       <section className="section-tight bg-slate-50">
         <div className="container-narrow">
           <div className="text-center mb-10">
-            <span className="eyebrow">FAQs · Soalan Lazim · 常见问题</span>
+            <span className="eyebrow">{t("serviceContent.faqs")}</span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#075985] tracking-tight mt-3">
               {service.title} — frequently asked questions
             </h2>

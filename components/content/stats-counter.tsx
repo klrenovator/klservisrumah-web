@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { useLang } from "@/context/lang-context";
 
 type Stat = {
   value: string;
@@ -17,13 +20,15 @@ type StatsCounterProps = {
 /**
  * StatsCounter — Klrenovator-style big-numbers section.
  * Renders 4 key metrics in a responsive grid.
+ * When the locale changes, it swaps the stat label to match.
  */
 export function StatsCounter({
-  title = "Trusted across Klang Valley · Dipercayai di Lembah Klang",
+  title = "Trusted across Klang Valley",
   subtitle,
   stats,
   variant = "light"
 }: StatsCounterProps) {
+  const { lang } = useLang();
   const isDark = variant === "dark" || variant === "gradient";
 
   return (
@@ -52,23 +57,25 @@ export function StatsCounter({
       )}
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-6xl mx-auto">
-        {stats.map((stat, idx) => (
-          <div key={idx} className="text-center">
-            <div className={`text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight ${isDark ? "text-white" : "text-[#075985]"}`}>
-              {stat.value}
-            </div>
-            <div className={`mt-2 text-sm sm:text-base font-bold ${isDark ? "text-[#7DD3FC]" : "text-[#475569]"}`}>
-              {stat.label}
-            </div>
-            {(stat.trilingualMs || stat.trilingualZh) && (
-              <div className={`mt-1 text-xs font-medium ${isDark ? "text-slate-300" : "text-slate-500"}`}>
-                {stat.trilingualMs && <span>{stat.trilingualMs}</span>}
-                {stat.trilingualMs && stat.trilingualZh && <span className="mx-1">·</span>}
-                {stat.trilingualZh && <span>{stat.trilingualZh}</span>}
+        {stats.map((stat, idx) => {
+          // Choose the label based on current locale
+          let displayLabel = stat.label;
+          if (lang === "ms" && stat.trilingualMs) {
+            displayLabel = stat.trilingualMs;
+          } else if (lang === "zh" && stat.trilingualZh) {
+            displayLabel = stat.trilingualZh;
+          }
+          return (
+            <div key={idx} className="text-center">
+              <div className={`text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight ${isDark ? "text-white" : "text-[#075985]"}`}>
+                {stat.value}
               </div>
-            )}
-          </div>
-        ))}
+              <div className={`mt-2 text-sm sm:text-base font-bold ${isDark ? "text-[#7DD3FC]" : "text-[#475569]"}`}>
+                {displayLabel}
+              </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
