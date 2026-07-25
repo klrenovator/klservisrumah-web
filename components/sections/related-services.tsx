@@ -8,17 +8,7 @@ import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
 import { getLocalizedService } from "@/lib/service-i18n";
 
-// Category definitions for smart relatedness matching
-const SERVICE_CATEGORIES: Record<string, string[]> = {
-  painting: ["painting", "handyman"],
-  plumbing: ["plumbing", "waterproofing", "handyman"],
-  ceiling: ["ceiling", "painting", "handyman"],
-  waterproofing: ["waterproofing", "plumbing", "ceiling"],
-  handyman: ["handyman", "painting", "ceiling", "electrical"],
-  electrical: ["electrical", "handyman", "ceiling"],
-  tiling: ["tiling", "waterproofing", "handyman"],
-  renovation: ["renovation", "painting", "plumbing", "ceiling", "electrical", "tiling", "waterproofing"],
-};
+import { getRelatedServices } from "@/config/topical-authority-map";
 
 const SERVICE_ICONS: Record<string, React.ReactNode> = {
   painting: <PaintBucket className="w-5 h-5" />,
@@ -44,20 +34,12 @@ export function RelatedServices({ currentSlug, maxItems = 6 }: RelatedServicesPr
   const t = useTranslations();
   const { lang } = useLang();
 
-  // Find related categories
-  const relatedCategories = SERVICE_CATEGORIES[currentSlug] || ["handyman"];
-
-  // Score and sort services by relatedness
-  const scored = Object.values(servicesData)
-    .filter((s) => s.slug !== currentSlug)
-    .map((service) => {
-      const serviceCats = SERVICE_CATEGORIES[service.slug] || ["handyman"];
-      const matchCount = relatedCategories.filter((c) => serviceCats.includes(c)).length;
-      return { service, score: matchCount };
-    })
-    .sort((a, b) => b.score - a.score || a.service.title.localeCompare(b.service.title));
-
-  const related = scored.slice(0, maxItems).map((s) => s.service);
+  // Use Topical Authority Map for smart relatedness
+  const relatedSlugs = getRelatedServices(currentSlug);
+  const related = relatedSlugs
+    .map((slug) => servicesData[slug])
+    .filter(Boolean)
+    .slice(0, maxItems);
 
   if (related.length === 0) return null;
 
