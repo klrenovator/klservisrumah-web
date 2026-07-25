@@ -205,7 +205,10 @@
     },
     "serviceAreas": {
       "heading": "Kawasan yang kami liput di KL & Selangor",
-      "subheading": "Perkhidmatan rumah hari sama tersedia di semua daerah utama Lembah Klang, kawasan perumahan, dan suburb."
+      "subheading": "Perkhidmatan rumah hari sama tersedia di semua daerah utama Lembah Klang, kawasan perumahan, dan suburb.",
+      "notListedTitle": "Tidak nampak kawasan anda disenaraikan di atas?",
+      "notListedDesc": "Kami berkhidmat di semua lokasi dalam lingkungan 45km dari Pusat Bandar Kuala Lumpur.",
+      "askDispatch": "Tanya Kaunter Dispatch Kami"
     },
     "faq": {
       "heading": "Soalan yang sering ditanya",

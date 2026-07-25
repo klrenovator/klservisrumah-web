@@ -205,7 +205,10 @@
     },
     "serviceAreas": {
       "heading": "我们在吉隆坡与雪兰莪覆盖的区域",
-      "subheading": "在所有主要巴生谷地区、住宅区与郊区提供当日家居服务。"
+      "subheading": "在所有主要巴生谷地区、住宅区与郊区提供当日家居服务。",
+      "notListedTitle": "没有看到您的社区在上方列出？",
+      "notListedDesc": "我们为吉隆坡市中心 45 公里范围内的所有地点提供服务。",
+      "askDispatch": "咨询我们的调度台"
     },
     "faq": {
       "heading": "常见问题",

@@ -46,7 +46,7 @@ export function ServiceAreas() {
               <Link
                 href={`/areas/${area.slug}`}
                 className="p-2 bg-white rounded-xl border border-slate-100 group-hover:bg-[#0EA5E9] group-hover:text-white transition-colors"
-                aria-label={`View details for ${area.name}`}
+                aria-label={`${t("common.viewDetails")} ${area.name}`}
               >
                 <ArrowRight className="w-4 h-4 text-[#0EA5E9] group-hover:text-white group-hover:translate-x-0.5 transition-transform" />
               </Link>
@@ -57,8 +57,8 @@ export function ServiceAreas() {
         {/* Note block */}
         <div className="mt-12 bg-[#F8FAFC] rounded-3xl p-6 border border-slate-100 max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-5 text-center sm:text-left">
           <div className="flex flex-col gap-1">
-            <span className="text-sm font-bold text-[#075985]">Don't see your neighborhood listed above?</span>
-            <p className="text-xs text-[#475569] font-semibold">We service all locations within 45km of Kuala Lumpur City Centre.</p>
+            <span className="text-sm font-bold text-[#075985]">{t("home.serviceAreas.notListedTitle")}</span>
+            <p className="text-xs text-[#475569] font-semibold">{t("home.serviceAreas.notListedDesc")}</p>
           </div>
           <a
             href={getWhatsAppLink({ location: "KL & Selangor" })}
@@ -66,7 +66,7 @@ export function ServiceAreas() {
             rel="noopener noreferrer"
             className="bg-[#0EA5E9] hover:bg-[#075985] text-white text-xs font-bold px-5 py-3 rounded-xl transition-all duration-200 shadow-3xs"
           >
-            Ask Our Dispatch Desk
+            {t("home.serviceAreas.askDispatch")}
           </a>
         </div>
 
