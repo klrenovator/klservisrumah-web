@@ -61,6 +61,7 @@
 - ✅ Add hero section with coverage messaging
 - ✅ Add WhatsApp/Call CTAs
 - ✅ Add stats (40+ areas, same-day, 4.9 rating)
+- ✅ Expanded crawlable area hub pages from 21 to 38, adding high-intent KL/Selangor locations such as Wangsa Maju, Bukit Jalil, Desa ParkCity, Setia Alam, Kota Kemuning, Rawang, Semenyih, Seri Kembangan and Sentul
 
 ### 10. About Page Improvements
 - ✅ Add hero section with "Built on craft. Driven by trust." messaging
@@ -78,19 +79,25 @@
 ## ⏳ PENDING TASKS
 
 ### 12. Schema & Technical SEO
-- ⏳ Add more schema types
-- ⏳ Improve existing schema
-- ⏳ Add speakable schema
+- ✅ Added CollectionPage + ItemList schema to /guides, /guides/maintenance, /compare, /brands, /top, /answers, /process, /commercial, /residential, /seasonal, /near-me, /projects and /tools hubs
+- ✅ Added BreadcrumbList + Speakable schema to new hub pages and improved /problems index
+- ✅ Added WebApplication schema to free tool index entries
+- ✅ Updated sitemap to include all hub pages now linked from navigation
 
 ### 13. Internal Linking
-- ⏳ Strengthen internal linking throughout
-- ⏳ Add related services sections
-- ⏳ Add breadcrumbs to all pages
+- ✅ Strengthened internal linking throughout by creating first-class hub index pages for every All Pages menu destination
+- ✅ Fixed broken /guides, /near-me, /compare, /top, /brands, /answers, /process, /commercial, /residential and /seasonal menu destinations
+- ✅ Added related CTA paths from project cards, tools, hub pages, services, pricing, areas and WhatsApp
+- ✅ Added breadcrumbs to new hub pages, /projects, /tools and /problems index
 
 ### 14. Additional Page Improvements
-- ⏳ Add symptom clusters to problem pages
-- ⏳ Create dedicated price guide pages
-- ⏳ Add more trilingual content
+- ✅ Added lightweight TikTok-style workflow showcase and Instagram social proof sections without loading third-party embeds on initial page load
+- ✅ Improved hero slideshow performance by rendering only current and previous images instead of all hero slides
+- ✅ Upgraded project gallery into a proof hub with stronger hero, service links and quote CTAs
+- ✅ Upgraded tools index into an SEO/AEO tool hub with schema and richer UX
+- ⏳ Add deeper symptom clusters to problem pages
+- ⏳ Create dedicated standalone price guide comparison pages beyond /pricing and /services/[slug]/cost
+- ⏳ Add true server-rendered translated content at /ms/* and /zh/* instead of locale-cookie redirects
 
 ---
 

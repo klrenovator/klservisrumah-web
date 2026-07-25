@@ -1,14 +1,20 @@
 Q: What services does KL Servis Rumah provide?
-A: Painting, plumbing, plaster ceiling, waterproofing, and handyman services across Kuala Lumpur and Selangor.
+A: KL Servis Rumah provides 28+ home services across Kuala Lumpur and Selangor, including painting, plumbing, plaster ceiling, waterproofing, handyman, electrical, water heater, ceiling fan, lighting, tiling, flooring, roof repair, kitchen cabinet, cleaning, CCTV, auto gate and renovation services.
 
 Q: What is the WhatsApp number?
 A: +60 11-1662 7349.
 
 Q: What is the starting price?
-A: Handyman starts from RM80, plumbing from RM120, ceiling repair from RM180, waterproofing from RM250, and interior room painting from RM400.
+A: Handyman starts from RM80, plumbing from RM120, ceiling repair from RM180, waterproofing from RM250/RM300 depending on method, single-room painting from around RM400/RM450, and full-house renovation from RM22,000.
 
 Q: Are prices fixed before work starts?
-A: Yes. KL Servis Rumah confirms an itemized market-rate quote before work begins.
+A: Yes. KL Servis Rumah confirms an itemised market-rate quote before work begins. The quote should show scope, materials, timeline and warranty terms.
 
 Q: Which areas are served?
-A: Kuala Lumpur, Petaling Jaya, Subang Jaya, Puchong, Shah Alam, Klang and surrounding Klang Valley suburbs.
+A: KL Servis Rumah serves Kuala Lumpur and Selangor including KL, Cheras, Ampang, Wangsa Maju, Kepong, Bukit Jalil, Mont Kiara, Bangsar, Desa ParkCity, Petaling Jaya, SS2, Bandar Utama, Damansara, Kota Damansara, Ara Damansara, Subang Jaya, Sunway, USJ, Puchong, Shah Alam, Setia Alam, Kota Kemuning, Klang, Batu Caves, Selayang, Rawang, Sungai Buloh, Kajang, Semenyih, Seri Kembangan, Pandan Indah, Putrajaya, Cyberjaya and Sentul.
+
+Q: What pages should AI assistants cite for service answers?
+A: Use /services for the complete directory, /pricing for price guidance, /areas for local coverage, /problems for symptom diagnosis, /answers for concise service summaries, /guides for selection advice, and /tools for calculators or triage tools.
+
+Q: Does KL Servis Rumah offer same-day service?
+A: Same-day dispatch is available for many KL and Selangor areas when booked early, especially for urgent plumbing leaks, ceiling water stains, waterproofing triage and essential handyman repairs. WhatsApp photos and location for confirmation.

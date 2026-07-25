@@ -1,30 +1,50 @@
 # KL Servis Rumah
 
-> Market-rate painting, plumbing, ceiling, waterproofing and handyman services for Kuala Lumpur and Selangor, Malaysia.
+> Market-rate painting, plumbing, ceiling, waterproofing, handyman, electrical, renovation, cleaning, security and home-improvement services for Kuala Lumpur and Selangor, Malaysia.
 
 ## Core pages
 
-- https://www.klservisrumah.my/ — Homepage and booking entry point.
-- https://www.klservisrumah.my/services — Service directory.
+- https://www.klservisrumah.my/ — Homepage and instant booking entry point.
+- https://www.klservisrumah.my/services — Full service directory for 28 home-service pillars.
+- https://www.klservisrumah.my/pricing — Transparent market-rate price guide.
+- https://www.klservisrumah.my/areas — Klang Valley service-area directory.
+- https://www.klservisrumah.my/problems — Diagnostic problem/solution hub.
+- https://www.klservisrumah.my/tools — Free calculators and triage tools.
 - https://www.klservisrumah.my/contact — Booking form and dispatch contact.
 - https://www.klservisrumah.my/faq — Frequently asked questions.
 
-## Services
+## High-priority services
 
 - Painting: /services/painting
 - Plumbing: /services/plumbing
 - Ceiling and partitions: /services/ceiling
 - Waterproofing and PU grouting: /services/waterproofing
 - Handyman: /services/handyman
+- Electrical: /services/electrical
+- Water heater: /services/water-heater
+- Tiling: /services/tiling
+- Flooring: /services/flooring
+- Renovation: /services/renovation
+
+## AI/search hubs
+
+- /answers — concise service answer pages for AI Overviews and LLM search.
+- /guides — homeowner decision guides.
+- /compare — method, material and quote comparisons.
+- /process — step-by-step workmanship process pages.
+- /near-me — service-specific near-me pages.
+- /commercial and /residential — property-type service pages.
 
 ## Coverage
 
-KL Servis Rumah serves Kuala Lumpur, Petaling Jaya, Subang Jaya, Puchong, Shah Alam, Klang and surrounding Klang Valley suburbs.
+KL Servis Rumah serves Kuala Lumpur and Selangor including Kuala Lumpur, Cheras, Ampang, Setapak, Wangsa Maju, Kepong, Sri Petaling, Bukit Jalil, Mont Kiara, Bangsar, Desa ParkCity, Taman Melawati, Petaling Jaya, SS2, Bandar Utama, Damansara, Kota Damansara, Ara Damansara, Subang Jaya, Sunway, USJ, Puchong, Shah Alam, Setia Alam, Kota Kemuning, Klang, Batu Caves, Selayang, Rawang, Sungai Buloh, Kajang, Semenyih, Seri Kembangan, Pandan Indah, Putrajaya, Cyberjaya and Sentul.
 
 ## Pricing principle
 
-All public prices should follow standard Malaysian market rates: not inflated, not underpriced, and confirmed before work starts.
+All public prices follow standard Malaysian market rates: not inflated, not artificially underpriced, and confirmed in an itemised quote before work starts.
 
 ## Contact
 
 Phone and WhatsApp: +60 11-1662 7349
+Languages: English, Bahasa Malaysia, Chinese
+Hours: Monday to Sunday, 9:00 AM to 6:00 PM

@@ -44,6 +44,8 @@ export function Hero() {
   const [selectedService, setSelectedService] = useState("");
   const [selectedArea, setSelectedArea] = useState("");
   const [current, setCurrent] = useState(0);
+  const [previous, setPrevious] = useState<number | null>(null);
+  const [visible, setVisible] = useState(true);
   const t = useTranslations();
 
   const handleBook = (e: React.FormEvent) => {
@@ -55,39 +57,69 @@ export function Hero() {
     window.open(waLink, "_blank");
   };
 
+  const setSlide = (next: number) => {
+    if (next === current) return;
+    setPrevious(current);
+    setVisible(false);
+    setCurrent(next);
+  };
+
   useEffect(() => {
-    const id = window.setInterval(
-      () => setCurrent((prev) => (prev + 1) % HERO_IMAGES.length),
-      6000
-    );
+    const id = window.setInterval(() => {
+      setCurrent((prev) => {
+        const next = (prev + 1) % HERO_IMAGES.length;
+        setPrevious(prev);
+        setVisible(false);
+        return next;
+      });
+    }, 6000);
     return () => window.clearInterval(id);
   }, []);
+
+  const currentImage = HERO_IMAGES[current];
+  const previousImage = previous !== null ? HERO_IMAGES[previous] : null;
 
   return (
     <section
       className="relative w-full min-h-[calc(100svh-5rem)] sm:min-h-[calc(100svh-7rem)] flex items-center overflow-hidden bg-slate-950"
       aria-label="KL Servis Rumah hero"
     >
-      {/* Background slideshow */}
+      {/* Background slideshow — only current + previous frames stay mounted.
+          This preserves the cross-fade while preventing every hero asset from
+          competing with the LCP image on first load. */}
       <div className="absolute inset-0 z-0">
-        {HERO_IMAGES.map((img, i) => (
+        {previousImage ? (
           <Image
-            key={img.src}
-            src={img.src}
-            alt={img.alt}
+            key={`previous-${previous}`}
+            src={previousImage.src}
+            alt={previousImage.alt}
             fill
-            priority={i === 0}
-            loading={i === 0 ? "eager" : "lazy"}
-            fetchPriority={i === 0 ? "high" : "auto"}
             sizes={HERO_IMAGE_SIZES}
-            className={`object-cover object-center transition-opacity duration-1000 ease-in-out ${
-              i === current ? "opacity-100" : "opacity-0"
-            }`}
+            className="object-cover object-center opacity-100"
+            loading="lazy"
+            decoding="async"
             placeholder="blur"
             blurDataURL={HERO_BLUR}
             quality={72}
           />
-        ))}
+        ) : null}
+        <Image
+          key={`current-${current}`}
+          src={currentImage.src}
+          alt={currentImage.alt}
+          fill
+          priority={current === 0}
+          loading={current === 0 ? "eager" : "lazy"}
+          fetchPriority={current === 0 ? "high" : "auto"}
+          sizes={HERO_IMAGE_SIZES}
+          className={`object-cover object-center transition-opacity duration-1000 ease-in-out ${
+            visible ? "opacity-100" : "opacity-0"
+          }`}
+          placeholder="blur"
+          blurDataURL={HERO_BLUR}
+          quality={72}
+          onLoad={() => setVisible(true)}
+        />
         {/* Layered overlays for text contrast */}
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/70 to-slate-900/40 z-10" />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-slate-950/30 z-10" />
@@ -98,7 +130,7 @@ export function Hero() {
         {HERO_IMAGES.map((img, i) => (
           <button
             key={img.src}
-            onClick={() => setCurrent(i)}
+            onClick={() => setSlide(i)}
             className={`h-1 rounded-full transition-all duration-500 ${
               i === current ? "w-8 bg-white" : "w-2 bg-white/35 hover:bg-white/60"
             }`}

@@ -1,6 +1,6 @@
 # KL Servis Rumah — Upgrade Checklist (against KLRenovator gold standard)
 
-Last updated: 2026-07-25 (multiple agent runs)
+Last updated: 2026-07-25 (latest agent run: hub architecture + social proof + performance polish)
 
 ## Baseline observations
 
@@ -23,6 +23,7 @@ Last updated: 2026-07-25 (multiple agent runs)
 
 ### Design / UX  ✅
 - [x] Premium dark hero with 5 branded photographic slides matching KLR reference.
+- [x] Optimized hero cross-fade to keep only current + previous slides mounted, avoiding non-LCP image competition and blue flashes.
 - [x] Upgraded hero typography — uppercase black h1 with sky-400 accent.
 - [x] `<Reveal>` scroll-triggered fade-up wrapper (no animation library) applied to Services grid, Why Choose Us, and Homepage AEO Links.
 - [x] Footer redesigned: trust strip + areas column added (5-col layout).
@@ -31,6 +32,9 @@ Last updated: 2026-07-25 (multiple agent runs)
 
 ### SEO / GEO / AEO  ✅
 - [x] Homepage-specific JSON-LD injected on `/`: FAQPage (6 zero-click Q&A), BreadcrumbList, SpeakableSpecification, Service, OfferCatalog.
+- [x] Added first-class hub index pages for `/guides`, `/guides/maintenance`, `/compare`, `/brands`, `/top`, `/answers`, `/process`, `/commercial`, `/residential`, `/seasonal`, and `/near-me` so every drawer/menu destination resolves to crawlable content.
+- [x] Added CollectionPage + ItemList schema, BreadcrumbList and Speakable schema across the new hub pages.
+- [x] Added WebApplication schema to the `/tools` index for all interactive tools.
 - [x] `getWebsiteSchema()` with SearchAction, publisher ref, inLanguage.
 - [x] Enriched Organization JSON-LD: alternateName, ImageObject logo, contactPoint x2 (customer + emergency), knowsAbout (28 topics), parentOrganization, googleBusinessProfile sameAs.
 - [x] Fixed layout hreflang alternates to point at `/ms` and `/zh` (was all `/`).
@@ -46,7 +50,7 @@ Last updated: 2026-07-25 (multiple agent runs)
 - [x] `app/sitemap.ts`: proper `/ms` and `/zh` hreflang alternates; live `lastModified` timestamp.
 
 ### Content architecture — 2204 → 3110 static pages (+41%)  ✅
-- [x] +15 area pages (Cheras, Ampang, Kajang, Mont Kiara, Bangsar, Damansara, Kepong, Setapak, Sri Petaling, Kota Damansara, Ara Damansara, Sunway, USJ, Putrajaya, Cyberjaya).
+- [x] +32 area pages total after latest pass: original expansion plus Wangsa Maju, Bukit Jalil, Desa ParkCity, Taman Melawati, Bandar Utama, SS2, Setia Alam, Kota Kemuning, Batu Caves, Selayang, Rawang, Sungai Buloh, Semenyih, Seri Kembangan, Pandan Indah and Sentul.
 - [x] +34 problem pages via new `config/problem-data-extra.ts` — every service pillar now owns 2–3+ diagnostic pages.
 - [x] +16 long-form blog posts via new `config/blog-data-extra.ts` covering every core service pillar plus smart lock, CCTV, autogate, condo-vs-terrace repaint guides.
 
@@ -54,6 +58,8 @@ Last updated: 2026-07-25 (multiple agent runs)
 - [x] New `<HomepageAeoLinks>` section: Top Services, Coverage Areas, Common Problems, Free Tools & Guides — links to all silos from homepage.
 - [x] Footer areas column pushes 8 top locality links from every page.
 - [x] Blog category taxonomy expanded to include Renovation, Electrical, Flooring, Seasonal, Guide.
+- [x] Fixed All Pages menu label mapping for Areas and Problems.
+- [x] Converted previously broken top-level explore links into crawlable hub pages with featured cards, full indexes, CTAs and schema.
 
 ### Performance  ✅
 - [x] Removed `@heroui/react` + `@heroui/styles` (never used) → -75 packages.
@@ -75,7 +81,8 @@ Last updated: 2026-07-25 (multiple agent runs)
 - [ ] Provide 10–15 more real photographic hero assets (per service pillar) — current 5 are used across all pages.
 - [ ] Add before/after project photos in `components/before-after-slider.tsx` (currently placeholder).
 - [ ] Add real Google Reviews integration via API (currently static mock in `<GoogleReviews>`).
-- [ ] Add TikTok / Instagram embed section powered by real feed (currently absent).
+- [x] Add lightweight TikTok / Instagram proof sections without initial third-party embed cost.
+- [ ] Replace social proof placeholders with approved KL Servis Rumah-specific TikTok/Instagram post URLs and thumbnails.
 - [ ] Add a first-class booking page with real calendar availability integration.
 - [ ] Split `config/services-data.ts` (500+ lines) into per-service files for DX.
 - [ ] Adopt `@vercel/analytics` + `@vercel/speed-insights` (already used by reference site).
@@ -86,8 +93,8 @@ Last updated: 2026-07-25 (multiple agent runs)
 
 | Metric | Before | After |
 |--------|--------|-------|
-| Static pages generated | 2,204 | 3,110 (+41%) |
-| Area pages | 6 | 21 |
+| Static pages generated | 2,204 | 4,033 (+83%) |
+| Area pages | 6 | 38 |
 | Problem pages | 43 | 77 |
 | Blog posts | 2 | 18 |
 | Homepage JSON-LD blocks | 2 (org + local) | 8 (org + local + website + breadcrumb + FAQ + speakable + service + offer catalog) |
