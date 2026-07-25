@@ -114,15 +114,94 @@
     },
     "beforeAfter": {
       "heading": "Sebelum dan selepas: hasil projek sebenar",
-      "subheading": "Lihat kualiti kerja mengecat, siling, paip, kalis air, dan kerja tangan kami di seluruh Kuala Lumpur dan Selangor."
+      "subheading": "Lihat kualiti kerja mengecat, siling, paip, kalis air, dan kerja tangan kami di seluruh Kuala Lumpur dan Selangor.",
+      "items": {
+        "1": {
+          "title": "Pemulihan Cat Dinding Ruang Tamu",
+          "service": "Pengecatan",
+          "location": "Petaling Jaya",
+          "before": "Kesan kelembapan, cat retak, kemasan kuning pudar.",
+          "after": "Skimming lancar sempurna, lapis primer-penutup, dwi-lapisan atas premium Nippon Spot-less.",
+          "benefit": "Dinding boleh dicuci, perlindungan anti-kulat, visual moden cerah."
+        },
+        "2": {
+          "title": "Kebocoran Konkrit Bilik Mandi Antara Tingkat",
+          "service": "Kalis Air",
+          "location": "Cheras",
+          "before": "Siling lembap menitis air, merosakkan papan drywall, kulat gelap terbentuk.",
+          "after": "Tanpa pecah jubin: Suntikan Grouting PU tekanan tinggi, drywall rosak air diganti dan diskim.",
+          "benefit": "100% kelembapan ditutup, pengukuhan struktur, sijil sifar kebocoran."
+        },
+        "3": {
+          "title": "Pembaikan Siling Plaster Melendut",
+          "service": "Pembaikan Siling",
+          "location": "Subang Jaya",
+          "before": "Drywall melendut akibat kebocoran air, rangka kayu longgar tergantung tidak selamat.",
+          "after": "Penyangkut keluli tergalvani tahan karat (GI) baharu, papan tahan kelembapan, pita sendi gentian kaca.",
+          "benefit": "Keselamatan lendutan struktur sempurna, kemasan rata sempurna sedia untuk cat."
+        }
+      }
     },
     "featuredProjects": {
       "heading": "Projek pilihan dari pasukan kami",
-      "subheading": "Pilihan projek terkini mengecat, siling, paip, kalis air, dan kerja tangan yang telah kami selesaikan di KL & Selangor."
+      "subheading": "Pilihan projek terkini mengecat, siling, paip, kalis air, dan kerja tangan yang telah kami selesaikan di KL & Selangor.",
+      "items": {
+        "1": {
+          "title": "Cat Penuh Eksterior Banglo Semi-D",
+          "location": "Bukit Jelutong, Shah Alam",
+          "scope": "Cuci jet tekanan, pembaikan retak, priming lembap, dan perlindungan dwi-lapisan Nippon Weatherbond.",
+          "stat": "Siap dalam 4 hari"
+        },
+        "2": {
+          "title": "Kalis Air PU Bilik Mandi Kondo Mewah",
+          "location": "Mont Kiara, Kuala Lumpur",
+          "scope": "Suntikan grouting Polyurethane (PU) tekanan tinggi melalui plat konkrit untuk menutup kebocoran mandi aktif.",
+          "stat": "Siap dalam 3 jam"
+        },
+        "3": {
+          "title": "Partisi Papan Gips Pejabat Korporat",
+          "location": "Glenmarie, Shah Alam",
+          "scope": "Pemasangan drywall dengan penebat bunyi rockwool ketumpatan ganda dua dalaman dan lapisan skim plaster sempurna.",
+          "stat": "Siap sepanjang hujung minggu"
+        },
+        "4": {
+          "title": "Pemasangan TV Moden & Langsir",
+          "location": "Bandar Puteri, Puchong",
+          "scope": "Pemasangan sauh dinding berongga bolt molly untuk TV OLED 75\", track langsir rata sempurna di 3 bilik.",
+          "stat": "Siap dalam 2 jam"
+        }
+      }
     },
     "testimonials": {
       "heading": "Apa kata pelanggan kami",
-      "subheading": "Ulasan dari pemilik rumah dan perniagaan sebenar di seluruh Kuala Lumpur dan Selangor."
+      "subheading": "Ulasan dari pemilik rumah dan perniagaan sebenar di seluruh Kuala Lumpur dan Selangor.",
+      "items": {
+        "1": {
+          "name": "Maklum balas pemilik rumah yang disahkan",
+          "location": "Mont Kiara, KL",
+          "text": "Pelanggan sentiasa menghargai perlindungan perabot, penyediaan dinding yang teliti, pilihan cat premium, dan serahan bersih selepas kerja pengecatan.",
+          "service": "Pengecatan Rumah"
+        },
+        "2": {
+          "name": "Maklum balas pemilik rumah yang disahkan",
+          "location": "Subang Jaya, Selangor",
+          "text": "Untuk masalah siling dan kalis air, pelanggan mahu punca kebocoran dijelaskan dengan jelas sebelum pembaikan dan lebih suka pilihan tanpa pecahan di mana sesuai.",
+          "service": "Kalis Air Kebocoran"
+        },
+        "3": {
+          "name": "Maklum balas pemilik rumah yang disahkan",
+          "location": "Cheras, Kuala Lumpur",
+          "text": "Untuk kerja tukang, pelanggan paling mementingkan penjajaran lurus, sauh dinding yang betul, pemasangan kukuh, dan pembersihan penggerudian yang kemas.",
+          "service": "Kerja tukang pelbagai"
+        },
+        "4": {
+          "name": "Maklum balas pemilik rumah yang disahkan",
+          "location": "Setia Alam, Shah Alam",
+          "text": "Untuk pembaikan paip, pelanggan menghargai respons pantas, penjelasan jelas tentang bahagian, ujian tekanan, dan harga pasaran yang telus.",
+          "service": "Pembaikan paip"
+        }
+      },
+      "header": "Tema Maklum Balas Pelanggan"
     },
     "serviceAreas": {
       "heading": "Kawasan yang kami liput di KL & Selangor",
@@ -202,7 +281,14 @@
     "timeWindow": "Waktu pilihan",
     "photosReady": "Foto tersedia?",
     "photosYes": "Ya, saya akan lampirkan foto di WhatsApp",
-    "photosNo": "Belum ada foto"
+    "photosNo": "Belum ada foto",
+    "labels": {
+      "address": "Alamat Berdaftar",
+      "phone": "Hubungi Sokongan Dispatch",
+      "email": "Meja Pertanyaan E-mel",
+      "hours": "Jadual Operasi"
+    },
+    "dispatchNote": "Pengurus dispatch kami aktif di WhatsApp dari 9:00 PG hingga 6:00 PTG setiap hari (termasuk Sabtu dan Ahad) untuk penjadualan hari sama. Hantaran borang selepas 6:00 PTG diproses awal pagi berikutnya."
   },
   "pricing": {
     "pageTitle": "Harga Kami",

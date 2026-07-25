@@ -1,9 +1,8 @@
 import React from "react";
-import { siteConfig } from "@/config/site";
 import { MultiStepBookingForm } from "@/components/booking/multi-step-booking-form";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { ShieldAlert, Phone, Mail, Clock, MapPin } from "lucide-react";
 import { ContactHeroHeading } from "@/components/sections/contact-hero-heading";
+import { LocaleContactInfo } from "@/components/sections/locale-contact-info";
 
 export const metadata = {
   title: "Book Professional Home Services KL & Selangor",
@@ -22,49 +21,8 @@ export default function ContactPage() {
             
             <div className="lg:col-span-5 flex flex-col gap-8">
               <ContactHeroHeading />
-
               <hr className="border-slate-200/60" />
-
-              <div className="flex flex-col gap-5">
-                <div className="flex gap-4 items-start p-4 bg-white rounded-2xl border border-slate-100 shadow-3xs">
-                  <MapPin className="w-5 h-5 text-[#0EA5E9] shrink-0 mt-0.5" />
-                  <div className="flex flex-col gap-0.5">
-                    <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Registered Address</span>
-                    <span className="text-xs sm:text-sm text-[#075985] font-bold leading-relaxed">{siteConfig.address}</span>
-                  </div>
-                </div>
-
-                <div className="flex gap-4 items-start p-4 bg-white rounded-2xl border border-slate-100 shadow-3xs">
-                  <Phone className="w-5 h-5 text-[#0EA5E9] shrink-0 mt-0.5" />
-                  <div className="flex flex-col gap-0.5">
-                    <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Call Dispatch Support</span>
-                    <a href={`tel:${siteConfig.phone}`} className="text-xs sm:text-sm text-[#0EA5E9] font-extrabold">{siteConfig.phoneDisplay}</a>
-                  </div>
-                </div>
-
-                <div className="flex gap-4 items-start p-4 bg-white rounded-2xl border border-slate-100 shadow-3xs">
-                  <Mail className="w-5 h-5 text-[#0EA5E9] shrink-0 mt-0.5" />
-                  <div className="flex flex-col gap-0.5">
-                    <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Email Inquiry Desk</span>
-                    <a href={`mailto:${siteConfig.email}`} className="text-xs sm:text-sm text-[#075985] font-bold">{siteConfig.email}</a>
-                  </div>
-                </div>
-
-                <div className="flex gap-4 items-start p-4 bg-white rounded-2xl border border-slate-100 shadow-3xs">
-                  <Clock className="w-5 h-5 text-[#0EA5E9] shrink-0 mt-0.5" />
-                  <div className="flex flex-col gap-0.5">
-                    <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Operating Schedule</span>
-                    <span className="text-xs sm:text-sm text-[#075985] font-bold">{siteConfig.hours}</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-[#F8FAFC] rounded-3xl p-5 border border-slate-100/60 flex gap-3">
-                <ShieldAlert className="w-5 h-5 text-[#0EA5E9] shrink-0 mt-0.5" />
-                <p className="text-[11px] font-bold text-[#475569] leading-normal">
-                  Our dispatch managers are active on WhatsApp from 9:00 AM to 6:00 PM everyday (including Saturdays and Sundays) for same-day scheduling. Form submissions made after 6:00 PM are processed early the following morning.
-                </p>
-              </div>
+              <LocaleContactInfo />
             </div>
 
             <div className="lg:col-span-7">

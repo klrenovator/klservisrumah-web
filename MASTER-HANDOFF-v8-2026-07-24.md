@@ -1,3 +1,41 @@
+## 🆕 ROUND 22 EXECUTION LOG (2026-07-25) — CONTACT PAGE i18n, TESTIMONIAL/PROJECT/BEFORE-AFTER FULL TRILINGUAL CONTENT
+
+**Round status:** ✅ **COMPLETED**
+
+### ✅ What was changed
+- ✅ **Contact Page** (`app/contact/page.tsx`) — Extracted contact info sidebar into `LocaleContactInfo` client component. All labels ("Registered Address", "Call Dispatch Support", "Email Inquiry Desk", "Operating Schedule") and the dispatch-note paragraph are now translated in EN/MS/ZH.
+- ✅ **Testimonials** (`components/sections/testimonials.tsx`) — All 4 testimonial items (name, location, text, service) now read from `home.testimonials.items.*` translation keys with full EN/MS/ZH content. Fixed eyebrow label to use `home.testimonials.header`.
+- ✅ **Featured Projects** (`components/sections/featured-projects.tsx`) — All 4 project items (title, location, scope, stat) now read from `home.featuredProjects.items.*` translation keys with full EN/MS/ZH content. "Guaranteed Standards" badge now uses `services.guaranteeLabel`.
+- ✅ **Before & After** (`components/sections/before-after.tsx`) — All 3 comparison items (title, service, location, before, after, benefit) now read from `home.beforeAfter.items.*` translation keys with full EN/MS/ZH content.
+- ✅ **Translation dictionaries** — Added `contact.labels.*`, `contact.dispatchNote`, `home.testimonials.items.*`, `home.testimonials.header`, `home.featuredProjects.items.*`, `home.beforeAfter.items.*` keys in all three message files (EN/MS/ZH).
+
+### 📁 Files modified
+- ✅ `components/sections/locale-contact-info.tsx` (new client component)
+- ✅ `app/contact/page.tsx` (extracted contact info to locale component)
+- ✅ `components/sections/testimonials.tsx` (full trilingual items)
+- ✅ `components/sections/featured-projects.tsx` (full trilingual items)
+- ✅ `components/sections/before-after.tsx` (full trilingual items)
+- ✅ `messages/en.json` (new keys)
+- ✅ `messages/ms.json` (new keys)
+- ✅ `messages/zh.json` (new keys)
+
+### ✅ Quality check results
+- ✅ TypeScript: 0 errors
+- ✅ ESLint: 0 errors, 0 warnings
+- ✅ Build: 2,204 SSG pages generated successfully
+
+### ⚠️ Remaining issues
+- ⏳ Location/content datasets remain pending.
+- ⏳ Service detail content (descriptions, FAQs, process steps on individual service pages) could benefit from a visual QA pass to confirm the client-side locale swap renders correctly at mobile/desktop breakpoints.
+- ⏳ Trilingual URL-prefixed routing at `/[locale]/...` level remains pending for full SEO-split URLs.
+
+### ➡️ Recommended next steps
+- Continue with location/content datasets per the roadmap.
+- Visual QA on deployed URLs at mobile/desktop breakpoints.
+- Consider adding more detailed per-service trilingual FAQ translations.
+
+---
+
 ## 🆕 ROUND 21 EXECUTION LOG (2026-07-25) — SERVICES DIRECTORY MULTILINGUAL PASS (DECISION TREE, COMPARISON TABLE, PROCESS STEPS, PRICING PAGE, HOMEPAGE SECTIONS)
 
 **Round status:** ✅ **COMPLETED**

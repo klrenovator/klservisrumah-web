@@ -114,15 +114,94 @@
     },
     "beforeAfter": {
       "heading": "Before and after: real project results",
-      "subheading": "See the quality of our painting, ceiling, plumbing, waterproofing, and handyman work across Kuala Lumpur and Selangor."
+      "subheading": "See the quality of our painting, ceiling, plumbing, waterproofing, and handyman work across Kuala Lumpur and Selangor.",
+      "items": {
+        "1": {
+          "title": "Living Room Wall Painting Restoration",
+          "service": "Painting",
+          "location": "Petaling Jaya",
+          "before": "Moisture stains, cracking paint, faded yellowing finish.",
+          "after": "Flawless smooth skimming, primer-seal coat, double top-coat premium Nippon Spot-less.",
+          "benefit": "Washable walls, anti-mold protection, modern bright visual."
+        },
+        "2": {
+          "title": "Inter-Floor Bathroom Concrete Leak",
+          "service": "Waterproofing",
+          "location": "Cheras",
+          "before": "Damp ceiling dripping water, ruining drywall boards, dark mildew forming.",
+          "after": "No tile hacking: High-pressure PU Injection Grouting, water-damaged drywall replaced and skimmed.",
+          "benefit": "100% moisture sealed, structural reinforcing, zero-leak certificate."
+        },
+        "3": {
+          "title": "Sagging Plaster Ceiling Repair",
+          "service": "Ceiling Repair",
+          "location": "Subang Jaya",
+          "before": "Drywall sagging down due to water leak, loose wooden frame hanging unsafely.",
+          "after": "New rust-proof galvanized steel (GI) hangers, moisture-resistant boards, fiberglass joint taping.",
+          "benefit": "Perfect structural sag safety, perfectly flat seamless paint-ready finish."
+        }
+      }
     },
     "featuredProjects": {
       "heading": "Featured projects from our team",
-      "subheading": "A selection of recent painting, ceiling, plumbing, waterproofing, and handyman projects we have delivered across KL & Selangor."
+      "subheading": "A selection of recent painting, ceiling, plumbing, waterproofing, and handyman projects we have delivered across KL & Selangor.",
+      "items": {
+        "1": {
+          "title": "Semi-D Bungalow Full Exterior Painting",
+          "location": "Bukit Jelutong, Shah Alam",
+          "scope": "Pressure jet washing, crack repairs, damp priming, and double coat Nippon Weatherbond protection.",
+          "stat": "Completed in 4 days"
+        },
+        "2": {
+          "title": "Luxury Condo Bathroom PU Waterproofing",
+          "location": "Mont Kiara, Kuala Lumpur",
+          "scope": "High-pressure Polyurethane (PU) grouting injection through concrete slabs to seal active bath leaks.",
+          "stat": "Completed in 3 hours"
+        },
+        "3": {
+          "title": "Corporate Head Office Gypsum Board Partition",
+          "location": "Glenmarie, Shah Alam",
+          "scope": "Drywall assembly with internal double-density rockwool soundproofing and flawless plaster skim-coating.",
+          "stat": "Completed over weekend"
+        },
+        "4": {
+          "title": "Modern TV Mounting & Curtain Hanging",
+          "location": "Bandar Puteri, Puchong",
+          "scope": "Molly bolt hollow-wall anchors mounting of 75\" OLED TV, perfectly level curtain tracks in 3 rooms.",
+          "stat": "Completed in 2 hours"
+        }
+      }
     },
     "testimonials": {
       "heading": "What our customers say",
-      "subheading": "Reviews from real homeowners and businesses across Kuala Lumpur and Selangor."
+      "subheading": "Reviews from real homeowners and businesses across Kuala Lumpur and Selangor.",
+      "items": {
+        "1": {
+          "name": "Verified homeowner feedback",
+          "location": "Mont Kiara, KL",
+          "text": "Customers consistently value furniture protection, careful wall preparation, premium paint options, and a clean handover after painting work.",
+          "service": "House Painting"
+        },
+        "2": {
+          "name": "Verified homeowner feedback",
+          "location": "Subang Jaya, Selangor",
+          "text": "For ceiling and waterproofing issues, customers want the leak source explained clearly before repair and prefer non-hacking options where suitable.",
+          "service": "Leak Waterproofing"
+        },
+        "3": {
+          "name": "Verified homeowner feedback",
+          "location": "Cheras, Kuala Lumpur",
+          "text": "For handyman jobs, customers care most about straight alignment, correct wall anchors, secure mounting, and tidy drilling cleanup.",
+          "service": "Handyman odd jobs"
+        },
+        "4": {
+          "name": "Verified homeowner feedback",
+          "location": "Setia Alam, Shah Alam",
+          "text": "For plumbing repairs, customers value fast response, clear explanation of parts, pressure testing, and transparent market-rate pricing.",
+          "service": "Plumbing repairs"
+        }
+      },
+      "header": "Client Feedback Themes"
     },
     "serviceAreas": {
       "heading": "Areas we cover in KL & Selangor",
@@ -202,7 +281,14 @@
     "timeWindow": "Time window",
     "photosReady": "Photos ready?",
     "photosYes": "Yes, I will attach photos in WhatsApp",
-    "photosNo": "No photos yet"
+    "photosNo": "No photos yet",
+    "labels": {
+      "address": "Registered Address",
+      "phone": "Call Dispatch Support",
+      "email": "Email Inquiry Desk",
+      "hours": "Operating Schedule"
+    },
+    "dispatchNote": "Our dispatch managers are active on WhatsApp from 9:00 AM to 6:00 PM everyday (including Saturdays and Sundays) for same-day scheduling. Form submissions made after 6:00 PM are processed early the following morning."
   },
   "pricing": {
     "pageTitle": "Our Pricing",

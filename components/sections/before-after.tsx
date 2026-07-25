@@ -6,32 +6,15 @@ import { useTranslations } from "@/hooks/use-translations";
 
 export function BeforeAfter() {
   const t = useTranslations();
-  const comparisons = [
-    {
-      title: "Living Room Wall Painting Restoration",
-      service: "Painting",
-      location: "Petaling Jaya",
-      before: "Moisture stains, cracking paint, faded yellowing finish.",
-      after: "Flawless smooth skimming, primer-seal coat, double top-coat premium Nippon Spot-less.",
-      benefit: "Washable walls, anti-mold protection, modern bright visual."
-    },
-    {
-      title: "Inter-Floor Bathroom Concrete Leak",
-      service: "Waterproofing",
-      location: "Cheras",
-      before: "Damp ceiling dripping water, ruining drywall boards, dark mildew forming.",
-      after: "No tile hacking: High-pressure PU Injection Grouting, water-damaged drywall replaced and skimmed.",
-      benefit: "100% moisture sealed, structural reinforcing, zero-leak certificate."
-    },
-    {
-      title: "Sagging Plaster Ceiling Repair",
-      service: "Ceiling Repair",
-      location: "Subang Jaya",
-      before: "Drywall sagging down due to water leak, loose wooden frame hanging unsafely.",
-      after: "New rust-proof galvanized steel (GI) hangers, moisture-resistant boards, fiberglass joint taping.",
-      benefit: "Perfect structural sag safety, perfectly flat seamless paint-ready finish."
-    }
-  ];
+
+  const comparisons = [1, 2, 3].map((n) => ({
+    title: t(`home.beforeAfter.items.${n}.title`),
+    service: t(`home.beforeAfter.items.${n}.service`),
+    location: t(`home.beforeAfter.items.${n}.location`),
+    before: t(`home.beforeAfter.items.${n}.before`),
+    after: t(`home.beforeAfter.items.${n}.after`),
+    benefit: t(`home.beforeAfter.items.${n}.benefit`)
+  }));
 
   return (
     <section className="bg-slate-50 border-y border-slate-100 py-20 sm:py-24">
@@ -75,7 +58,9 @@ export function BeforeAfter() {
                   <div className="bg-rose-50/50 p-3.5 rounded-2xl border border-rose-100/40">
                     <div className="flex items-center gap-2 text-rose-600 mb-1">
                       <AlertCircle className="w-4 h-4" />
-                      <span className="text-xs font-bold uppercase tracking-wider">The Problem</span>
+                      <span className="text-xs font-bold uppercase tracking-wider">
+                        {t("home.beforeAfter.heading")}
+                      </span>
                     </div>
                     <p className="text-xs text-[#475569] leading-relaxed font-semibold">
                       {item.before}
@@ -85,7 +70,9 @@ export function BeforeAfter() {
                   <div className="bg-emerald-50/50 p-3.5 rounded-2xl border border-emerald-100/40">
                     <div className="flex items-center gap-2 text-emerald-600 mb-1">
                       <CheckCircle2 className="w-4 h-4" />
-                      <span className="text-xs font-bold uppercase tracking-wider">The Result</span>
+                      <span className="text-xs font-bold uppercase tracking-wider">
+                        ✓
+                      </span>
                     </div>
                     <p className="text-xs text-[#475569] leading-relaxed font-semibold">
                       {item.after}
@@ -97,7 +84,7 @@ export function BeforeAfter() {
 
               {/* Bottom benefits */}
               <div className="mt-5 pt-4 border-t border-slate-50 text-[11px] font-bold text-[#075985] flex items-center justify-between">
-                <span>Key Benefit:</span>
+                <span>→</span>
                 <span className="text-[#0EA5E9] bg-[#E0F2FE]/25 px-2.5 py-1 rounded-md">{item.benefit}</span>
               </div>
 

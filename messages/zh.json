@@ -114,15 +114,94 @@
     },
     "beforeAfter": {
       "heading": "施工前后：真实项目成果",
-      "subheading": "查看我们在吉隆坡与雪兰莪的油漆、天花板、水管、防水与杂工工程质量。"
+      "subheading": "查看我们在吉隆坡与雪兰莪的油漆、天花板、水管、防水与杂工工程质量。",
+      "items": {
+        "1": {
+          "title": "客厅墙面油漆修复",
+          "service": "油漆",
+          "location": "Petaling Jaya",
+          "before": "水渍、油漆开裂、褪色发黄。",
+          "after": "完美光滑腻子、底漆密封层、双层 Nippon Spot-less 面漆。",
+          "benefit": "可擦洗墙面、防霉保护、明亮现代视觉效果。"
+        },
+        "2": {
+          "title": "楼层间浴室混凝土漏水",
+          "service": "防水",
+          "location": "Cheras",
+          "before": "潮湿天花板滴水，损坏石膏板，形成黑色霉菌。",
+          "after": "无需打砖：高压 PU 注浆，受损石膏板更换并抹腻子。",
+          "benefit": "100% 密封防潮、结构加固、零漏水证书。"
+        },
+        "3": {
+          "title": "下垂石膏天花板修复",
+          "service": "天花板维修",
+          "location": "Subang Jaya",
+          "before": "因漏水导致石膏板下垂，木质框架松动不安全地悬挂。",
+          "after": "新型防锈镀锌钢吊挂件、防潮板、玻璃纤维接缝胶带。",
+          "benefit": "完美的结构防下垂安全性、完全平整的无缝涂漆准备面。"
+        }
+      }
     },
     "featuredProjects": {
       "heading": "团队精选项目",
-      "subheading": "我们近期在吉隆坡与雪兰莪完成的精选油漆、天花板、水管、防水与杂工项目。"
+      "subheading": "我们近期在吉隆坡与雪兰莪完成的精选油漆、天花板、水管、防水与杂工项目。",
+      "items": {
+        "1": {
+          "title": "半独立别墅全屋外墙油漆",
+          "location": "Bukit Jelutong, Shah Alam",
+          "scope": "高压水冲洗、裂缝修补、潮湿底漆以及双层 Nippon Weatherbond 保护涂层。",
+          "stat": "4 天完成"
+        },
+        "2": {
+          "title": "豪华公寓浴室 PU 防水",
+          "location": "Mont Kiara, Kuala Lumpur",
+          "scope": "高压聚氨酯 (PU) 注浆穿过混凝土板以密封活跃浴室漏水。",
+          "stat": "3 小时完成"
+        },
+        "3": {
+          "title": "企业总部石膏板隔墙",
+          "location": "Glenmarie, Shah Alam",
+          "scope": "干墙组装，内置双密度岩棉隔音，完美腻子抹灰。",
+          "stat": "周末完成"
+        },
+        "4": {
+          "title": "现代电视安装与窗帘挂装",
+          "location": "Bandar Puteri, Puchong",
+          "scope": "使用膨胀螺栓空心墙锚安装 75 英寸 OLED 电视，3 个房间完美水平窗帘轨道。",
+          "stat": "2 小时完成"
+        }
+      }
     },
     "testimonials": {
       "heading": "客户评价",
-      "subheading": "来自吉隆坡与雪兰莪真实屋主与企业的评价。"
+      "subheading": "来自吉隆坡与雪兰莪真实屋主与企业的评价。",
+      "items": {
+        "1": {
+          "name": "已查证屋主反馈",
+          "location": "Mont Kiara, KL",
+          "text": "客户始终重视家具保护、仔细的墙面准备、优质油漆选择，以及油漆工作后的干净交接。",
+          "service": "房屋油漆"
+        },
+        "2": {
+          "name": "已查证屋主反馈",
+          "location": "Subang Jaya, Selangor",
+          "text": "对于天花板和防水问题，客户希望在维修前清楚解释漏水来源，并在合适的情况下偏好非打拆方案。",
+          "service": "漏水防水"
+        },
+        "3": {
+          "name": "已查证屋主反馈",
+          "location": "Cheras, Kuala Lumpur",
+          "text": "对于杂工工作，客户最重视直线对齐、正确的墙壁锚固、安全安装和整洁的钻孔清理。",
+          "service": "杂工维修"
+        },
+        "4": {
+          "name": "已查证屋主反馈",
+          "location": "Setia Alam, Shah Alam",
+          "text": "对于水管维修，客户重视快速响应、零件清晰解释、压力测试和透明的市场行情价格。",
+          "service": "水管维修"
+        }
+      },
+      "header": "客户反馈主题"
     },
     "serviceAreas": {
       "heading": "我们在吉隆坡与雪兰莪覆盖的区域",
@@ -202,7 +281,14 @@
     "timeWindow": "时间段",
     "photosReady": "有照片吗？",
     "photosYes": "有，我会在 WhatsApp 上传照片",
-    "photosNo": "暂时没有照片"
+    "photosNo": "暂时没有照片",
+    "labels": {
+      "address": "注册地址",
+      "phone": "致电调度支持",
+      "email": "电子邮件咨询台",
+      "hours": "营业时间"
+    },
+    "dispatchNote": "我们的调度经理每天上午 9:00 至下午 6:00（包括周六和周日）在 WhatsApp 上提供当日预约服务。下午 6:00 后提交的表格将在次日清晨处理。"
   },
   "pricing": {
     "pageTitle": "我们的价格",
