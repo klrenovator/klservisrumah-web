@@ -10,6 +10,7 @@ export interface BlogPost {
   coverImage: string;
   metaTitle: string;
   metaDesc: string;
+  i18n?: { ms?: Partial<BlogPost>; zh?: Partial<BlogPost> };
 }
 
 export const blogPosts: BlogPost[] = [
@@ -24,6 +25,20 @@ export const blogPosts: BlogPost[] = [
     coverImage: "/hero-painting.svg",
     metaTitle: "How to Choose Living Room & Exterior Paint Colors Malaysia",
     metaDesc: "Struggling with paint color selections? Discover 5 expert tips for choosing modern home paint colors in Malaysia based on lighting, weather, and washability.",
+    i18n: {
+      ms: {
+        title: "5 Petua Memilih Warna Cat Rumah Moden di Malaysia",
+        excerpt: "Bingung memilih warna cat yang sesuai untuk ruang tamu atau dinding luar? Pelajari bagaimana kelembapan, pencahayaan, dan kemasan mengubah warna dalam cuaca Malaysia.",
+        metaTitle: "Cara Memilih Warna Cat Ruang Tamu & Luar Malaysia",
+        metaDesc: "Bingung dengan pilihan warna cat? Temui 5 petua pakar untuk memilih warna cat rumah moden di Malaysia berdasarkan pencahayaan, cuaca, dan kebolehcucian."
+      },
+      zh: {
+        title: "马来西亚现代居家油漆颜色选择的5个技巧",
+        excerpt: "为客厅或外墙选择正确的油漆颜色而苦恼？了解湿度、光照和饰面如何在马来西亚天气下改变颜色。",
+        metaTitle: "如何为马来西亚客厅与外墙选择油漆颜色",
+        metaDesc: "油漆颜色选择有困扰？根据光照、天气与耐洗性，探索在马来西亚选择现代居家油漆颜色的5个专家技巧。"
+      }
+    },
     content: `
 Selecting the perfect paint color for your Malaysian home is more than just choosing a swatch from a booklet. Due to Malaysia's tropical humidity, year-round sun exposure, and specific interior lighting setups, paint colors can look and perform very differently than they do in other climates.
 
@@ -88,6 +103,20 @@ Don't risk crooked borders, paint splatters on your expensive sofa, or peeling c
     coverImage: "/hero-waterproofing.svg",
     metaTitle: "Fix Inter-Floor Bathroom Ceiling Leak Without Tile Hacking",
     metaDesc: "Dripping ceiling water? Learn how PU Grouting injection seals inter-floor bathroom leaks from below without hacking luxury floor tiles in KL & Selangor.",
+    i18n: {
+      ms: {
+        title: "Cara Membaiki Siling Bilik Air Bocor Tanpa Memecah Jubin",
+        excerpt: "Air menitis dari bilik air tingkat atas? Temui bagaimana Grouting PU Tekanan Tinggi menutup kebocoran konkrit serta-merta dari bawah tanpa memecah jubin.",
+        metaTitle: "Baiki Kebocoran Siling Bilik Air Antara Tingkat Tanpa Memecah Jubin",
+        metaDesc: "Siling menitis? Pelajari bagaimana suntikan Grouting PU menutup kebocoran antara tingkat dari bawah tanpa memecah jubin mewah di KL & Selangor."
+      },
+      zh: {
+        title: "无需砸瓷砖修复浴室天花板漏水的方法",
+        excerpt: "楼上浴室漏水滴到天花板？了解聚氨酯（PU）高压注浆如何从下方瞬间封堵混凝土裂缝，无需砸瓷砖。",
+        metaTitle: "无需砸瓷砖修复楼层间浴室天花板漏水",
+        metaDesc: "天花板滴水？了解PU注浆如何从下方封堵楼层间浴室漏水，无需砸破吉隆坡与雪兰莪的豪华地砖。"
+      }
+    },
     content: `
 A dripping plaster ceiling is one of the most frustrating problems a Malaysian homeowner can experience. It starts with a small damp patch, develops into a dark moldy circle, and eventually turns into an active drip, ruining your plasterboard ceiling and threatening your electrical wiring.
 
