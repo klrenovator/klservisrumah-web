@@ -543,5 +543,19 @@
     "bookWhatsApp": "通过 WhatsApp 预订",
     "trustLine": "当日可约 · 有保修 · 已投保",
     "bookSubWhatsApp": "通过 WhatsApp 预订{name}"
+  },
+  "serviceContent": {
+    "overviewEyebrow": "概述",
+    "aboutService": "关于此{name}服务",
+    "whyChooseUs": "为何选择我们",
+    "pricingScope": "价格与范围",
+    "allCoverage": "全吉隆坡与雪兰莪",
+    "faqs": "常见问题",
+    "isRightService": "{name}是适合您的服务吗？",
+    "priceConfirmed": "先确认价格",
+    "warranty": "{days}保修",
+    "insuredOps": "已投保运营",
+    "sameDayAvail": "可当日服务",
+    "ssmRegistered": "SSM 注册"
   }
 }

@@ -543,5 +543,19 @@
     "bookWhatsApp": "Book via WhatsApp",
     "trustLine": "Same-day available · Warranty-backed · Insured",
     "bookSubWhatsApp": "Book {name} on WhatsApp"
+  },
+  "serviceContent": {
+    "overviewEyebrow": "Overview",
+    "aboutService": "About this {name} service",
+    "whyChooseUs": "Why choose us",
+    "pricingScope": "Pricing & scope",
+    "allCoverage": "All KL & Selangor",
+    "faqs": "FAQs",
+    "isRightService": "Is {name} the right service for you?",
+    "priceConfirmed": "Price Confirmed First",
+    "warranty": "{days} Warranty",
+    "insuredOps": "Insured Operations",
+    "sameDayAvail": "Same-Day Available",
+    "ssmRegistered": "SSM Registered"
   }
 }

@@ -543,5 +543,19 @@
     "bookWhatsApp": "Tempah melalui WhatsApp",
     "trustLine": "Hari sama tersedia · Dijamin · Diinsuranskan",
     "bookSubWhatsApp": "Tempah {name} di WhatsApp"
+  },
+  "serviceContent": {
+    "overviewEyebrow": "Gambaran keseluruhan",
+    "aboutService": "Mengenai perkhidmatan {name} ini",
+    "whyChooseUs": "Mengapa pilih kami",
+    "pricingScope": "Harga & skop",
+    "allCoverage": "Semua KL & Selangor",
+    "faqs": "Soalan Lazim",
+    "isRightService": "Adakah {name} perkhidmatan yang sesuai untuk anda?",
+    "priceConfirmed": "Harga Disahkan Dahulu",
+    "warranty": "{days} Jaminan",
+    "insuredOps": "Operasi Diinsuranskan",
+    "sameDayAvail": "Hari Sama Tersedia",
+    "ssmRegistered": "Berdaftar SSM"
   }
 }
