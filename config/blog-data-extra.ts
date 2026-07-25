@@ -916,6 +916,383 @@ WhatsApp us to book — early September is the sweet spot.
   }),
 
   post({
+    slug: "smart-lock-buying-guide-malaysia-2026",
+    title: "Smart Lock Buying Guide for Malaysian Homes (2026)",
+    excerpt: "Samsung, Yale, Kaadas, Philips or Lockin? Here's how our locksmiths compare the top 5 smart locks sold in Malaysia — features, install, warranty, real-world reliability.",
+    category: "Guide",
+    coverImage: "/hero-locksmith.svg",
+    metaTitle: "Best Smart Lock Malaysia 2026 — Samsung, Yale, Kaadas Compared",
+    metaDesc: "Which smart lock is best for your Malaysian home in 2026? Compare Samsung, Yale, Kaadas, Philips & Lockin — real-world review from KL Servis Rumah locksmiths.",
+    content: `
+Smart locks are now standard on new condo handovers and increasingly common on landed home upgrades in KL. But the market has 30+ brands — most of them cheap OEMs from the same 3 Chinese factories — and the wrong choice means a lock that fails in 18 months.
+
+Here's the honest comparison from our KL Servis Rumah locksmiths, based on hundreds of installs.
+
+---
+
+### The 5 brands worth considering in Malaysia
+
+**1. Samsung SHP series (RM 1,500–RM 2,800)**
+
+- Established brand, wide local service network.
+- Robust mechanism, fingerprint accuracy above average.
+- Frequent OTA firmware updates.
+- **Best for**: Landed homes wanting long-term reliability.
+
+**2. Yale YDM series (RM 1,200–RM 2,500)**
+
+- 180+ year lock heritage.
+- Reliable magnetic bolt mechanism.
+- Great fingerprint recognition speed.
+- **Best for**: Condos wanting a proven mechanical lock brand with smart features.
+
+**3. Kaadas KDS (RM 1,400–RM 2,400)**
+
+- Rapidly growing in Malaysia.
+- 3D face recognition on top models.
+- Palm vein recognition (unique).
+- **Best for**: Tech-forward users who want cutting-edge biometrics.
+
+**4. Philips EasyKey (RM 1,300–RM 2,300)**
+
+- Consumer-friendly interface.
+- Good app ecosystem integration.
+- Solid warranty support.
+- **Best for**: Families wanting simplicity and brand trust.
+
+**5. Lockin S30/L (RM 900–RM 1,800)**
+
+- Value option with premium features.
+- Xiaomi ecosystem integration.
+- 6-way unlock (fingerprint, PIN, card, app, key, voice).
+- **Best for**: Budget-conscious buyers who want smart features without paying flagship prices.
+
+---
+
+### 5 things to check BEFORE buying
+
+1. **Door thickness compatibility** — most smart locks fit 35–55 mm doors. Fire-rated doors are often 65–80 mm; check first.
+2. **Mortise vs tubular** — most Malaysian doors are mortise (deep pocket). Confirm your lock brand fits.
+3. **Backup key** — always insist on a mechanical backup key slot, not just battery jumpstart.
+4. **Battery type** — 4×AA or 8×AA typical, lasting 8–15 months. Rechargeable Li-ion needs replacement every 3-5 years.
+5. **Warranty terms** — 2 years is standard. Some brands offer 3 years with local Malaysian distributor.
+
+---
+
+### 3 mistakes we see every week
+
+1. **Buying online without checking door compatibility** — wasted 25% of installs need extra chiselling or lock return.
+2. **Skipping the backup key** — battery dies at 2am, you're locked out for hours.
+3. **Choosing the cheapest OEM** — no local service, firmware never updated, fails at 12-18 months.
+
+---
+
+### 2026 install cost from KL Servis Rumah
+
+- Standard install on existing prepared door: **RM 250–RM 380**.
+- Install with door modification (extra chiselling): **RM 380–RM 550**.
+- Metal or fire-rated door install: **RM 450–RM 750**.
+- All includes app pairing, user code programming, warranty registration.
+
+---
+
+### Ready to upgrade?
+
+WhatsApp us a photo of your existing door + the smart lock model you're considering. We'll confirm compatibility and can install same-week across KL & Selangor.
+`
+  }),
+
+  post({
+    slug: "cctv-installation-buying-guide-kl",
+    title: "CCTV Buying & Installation Guide for KL Homes",
+    excerpt: "Analog vs IP, 4-channel vs 8-channel, cloud vs local storage — here's how to specify a home CCTV system that actually works when you need it.",
+    category: "Guide",
+    coverImage: "/hero-cctv.svg",
+    metaTitle: "CCTV Installation Guide KL — Analog vs IP, Storage, Cost",
+    metaDesc: "How to plan a home CCTV system in Kuala Lumpur: camera types, channel count, storage, night vision, and cost breakdown from KL Servis Rumah.",
+    content: `
+Every week we install CCTV for a homeowner who bought the wrong system online. The kit costs less upfront but doesn't cover the entry points, doesn't record enough days, or produces footage too blurry to identify anyone.
+
+Here's how our KL Servis Rumah CCTV specialists actually spec a home system.
+
+---
+
+### Step 1 — Map your coverage priorities
+
+Walk around your house and note:
+
+- **Main gate**: needs number-plate recognition capability (2 MP+ with strong zoom).
+- **Front door**: needs face-level clarity (2-4 MP).
+- **Driveway/carport**: wide-angle to cover the whole area.
+- **Side gates and rear**: wide-angle security overview.
+- **Living room** (indoor): for peace-of-mind + pet monitoring.
+
+Most 3-bedroom terrace homes need **4-6 cameras**; a bungalow typically needs **6-10**.
+
+---
+
+### Step 2 — Analog vs IP
+
+**Analog (TVI/AHD)**
+- Coax cable, no network setup.
+- Cheaper per camera.
+- Max 5 MP resolution typically.
+- No cloud, purely local recording.
+- **Best for**: Budget systems, replacing older systems, sites without network.
+
+**IP (Network)**
+- CAT6 cable with PoE (single cable for power + data).
+- Higher resolution options (4K available).
+- Optional cloud backup.
+- Camera-level intelligence (motion zones, line crossing).
+- **Best for**: New installs, modern homes, integration with smart home.
+
+Our recommendation for most Malaysian homes: **IP with local NVR + optional cloud backup**.
+
+---
+
+### Step 3 — Storage & recording days
+
+Standard formula:
+- 4 MP camera at 24/7 continuous = ~15 GB/day per camera.
+- 4 cameras × 30 days = ~1.8 TB.
+- 8 cameras × 30 days = ~3.6 TB.
+
+We always recommend purpose-built CCTV hard drives (WD Purple, Seagate SkyHawk) — regular desktop drives fail within 12 months of 24/7 CCTV use.
+
+---
+
+### Step 4 — Night vision that actually works
+
+- Ordinary IR cameras produce grainy black-and-white footage at night.
+- **Colour night vision (Ambarella IMX415 sensor)** produces full colour footage down to 0.05 lux — massively better for facial ID.
+- Cost premium: about 25-40% more per camera, worth it for main entry points.
+
+---
+
+### 2026 KL Servis Rumah CCTV pricing (installed)
+
+| System                              | Approx cost         |
+|-------------------------------------|---------------------|
+| 4-channel analog kit, 4 MP cameras  | RM 1,600 – RM 2,800 |
+| 4-channel IP kit, 4 MP + PoE        | RM 2,400 – RM 3,800 |
+| 8-channel IP kit, 4 MP + PoE + 2 TB HDD | RM 3,600 – RM 5,800 |
+| 8-channel IP kit, 4K + colour night vision | RM 5,800 – RM 9,500 |
+
+*Prices include cabling, installation, DVR/NVR setup, mobile app configuration and 1-year workmanship warranty.*
+
+---
+
+### 4 install rules we never break
+
+1. **Cables run in concealed conduit** — never exposed cables anyone can cut.
+2. **NVR in a secure location** — not visible from the front door.
+3. **UPS on the NVR** — 30-60 minute battery backup for power cuts.
+4. **Weatherproof outdoor cameras only** — IP66 minimum rating.
+
+---
+
+### Ready for a quote?
+
+WhatsApp us a photo of your house exterior + a rough floor plan. We come back with a 2-3 camera-position options and a fixed quote in 24 hours.
+`
+  }),
+
+  post({
+    slug: "auto-gate-installation-guide-malaysia",
+    title: "Auto Gate Installation Guide for Malaysian Homes",
+    excerpt: "Swing arm vs sliding vs underground — which motor is right for your gate? Plus install cost, safety features and reliability tips.",
+    category: "Guide",
+    coverImage: "/hero-autogate.svg",
+    metaTitle: "Auto Gate Malaysia 2026 — Swing, Sliding, Underground Compared",
+    metaDesc: "Choosing an auto gate motor in Malaysia: swing arm vs sliding vs underground. Install cost, safety features, and top brands from KL Servis Rumah.",
+    content: `
+Auto gate motors are one of the most common home upgrades in KL & Selangor — but choosing the wrong type can lead to years of nuisance. Here's how our KL Servis Rumah gate specialists guide clients.
+
+---
+
+### Motor types explained
+
+**Swing arm (articulated arm)**
+
+- Two arms attach to a hinged gate.
+- Best for gates that already swing open.
+- Space required: about 400 mm swing clearance inside.
+- Typical cost installed: **RM 2,200 – RM 3,800** for a pair.
+
+**Sliding (linear motor)**
+
+- Motor drives a rack along the gate frame.
+- Best for wide driveways or where swing clearance is limited.
+- Requires a straight run along the fence.
+- Typical cost installed: **RM 2,800 – RM 4,600**.
+
+**Underground (buried motor)**
+
+- Motor is hidden underground at the hinge point.
+- Cleanest aesthetics — no visible arm.
+- Requires civil work and drainage.
+- Typical cost installed: **RM 4,500 – RM 7,800** for a pair.
+
+---
+
+### Popular brands in Malaysia
+
+- **SEIP** — solid mid-market Italian brand.
+- **DEA** — Italian, widely available spare parts.
+- **AutoGate Malaysia (AGM)** — local support, budget-friendly.
+- **DASPI** — European build, longer warranty.
+- **BFT** — premium Italian, best-in-class reliability.
+
+---
+
+### 4 safety features to insist on
+
+1. **Photocell beam** — auto-stops the gate if someone crosses.
+2. **Rubber safety strip** — pressure-triggered stop on contact.
+3. **Slow-start / slow-stop** — reduces mechanical wear and improves safety.
+4. **UPS or 12V battery backup** — 30-60 minute backup during power cuts (crucial in Malaysia).
+
+---
+
+### Installation timeline
+
+- **Site inspection**: 30-45 minutes.
+- **Civil work** (if needed): 1-2 days.
+- **Motor + control installation**: 4-6 hours.
+- **Testing + user training**: 30 minutes.
+
+Most standard swing or sliding gate installs complete in **1 day**.
+
+---
+
+### Maintenance schedule
+
+- **Monthly**: check remote battery, listen for unusual noises.
+- **Every 6 months**: lubricate hinges/rollers, check photocell alignment.
+- **Every 12 months**: professional service including motor grease, control board inspection, battery test.
+
+Skip annual service and expect motor failure at 4-6 years vs 10-15 years with maintenance.
+
+---
+
+### 2026 KL Servis Rumah service pricing
+
+| Service                                  | Cost                |
+|------------------------------------------|---------------------|
+| New swing arm installation (pair)        | RM 2,200 – RM 3,800 |
+| New sliding motor installation           | RM 2,800 – RM 4,600 |
+| Underground motor installation           | RM 4,500 – RM 7,800 |
+| Annual maintenance service               | RM 180 – RM 350     |
+| Remote replacement + pairing             | RM 120 – RM 380     |
+| Motor + control board replacement        | RM 850 – RM 2,200   |
+
+All work includes 12-month workmanship warranty and manufacturer's motor warranty.
+
+---
+
+### Ready to install?
+
+WhatsApp us a photo of your gate + a photo of your driveway from the road. We'll advise the right motor type and give you a fixed quote in 24 hours.
+`
+  }),
+
+  post({
+    slug: "when-to-repaint-condo-vs-repaint-terrace-house",
+    title: "Condo Repaint vs Landed Terrace House Repaint: What's Different?",
+    excerpt: "The scope, the JMB rules, the paint choice, and the timeline are all different. Here's what every KL homeowner should know before repainting.",
+    category: "Painting",
+    coverImage: "/hero-painting.svg",
+    metaTitle: "Condo vs Landed House Repaint Guide — KL & Selangor",
+    metaDesc: "Painting a condo vs a landed terrace house in KL: how the scope, JMB rules, paint choice, cost and timeline differ. Honest guide from KL Servis Rumah.",
+    content: `
+The word "repaint" covers a very different job depending on whether you live in a strata condo or a landed terrace house. Here's what our KL Servis Rumah painters explain to every client before quoting.
+
+---
+
+### Scope difference
+
+**Condo repaint (typical 900-1200 sq ft):**
+- Interior walls + ceilings only.
+- No exterior work (facade is JMB responsibility).
+- Balcony walls: check if it's your responsibility (usually yes for the outer face).
+- Typical timeline: 2-4 days.
+
+**Landed terrace house repaint:**
+- Interior AND exterior walls + ceilings.
+- Boundary wall + gate posts often included.
+- Roof-line trim, gutter facing, and eaves.
+- Typical timeline: 5-10 days depending on story count.
+
+---
+
+### Cost comparison (2026 Klang Valley)
+
+| Job                                      | Cost                |
+|------------------------------------------|---------------------|
+| 900 sq ft condo interior repaint         | RM 3,200 – RM 5,500 |
+| 1,200 sq ft condo interior repaint       | RM 4,200 – RM 6,800 |
+| Single-storey terrace interior only      | RM 3,800 – RM 5,800 |
+| Single-storey terrace interior + exterior | RM 8,500 – RM 14,000 |
+| Double-storey terrace interior + exterior | RM 12,500 – RM 22,000 |
+
+---
+
+### JMB rules (condo-specific)
+
+Every condo has different rules. Common requirements:
+
+- **Contractor deposit** (RM 300-2,000 refundable).
+- **Loading bay booking** (usually 1-3 days in advance).
+- **Work hours** (typically 9 AM - 6 PM, no Sundays/holidays).
+- **Lift protection** (blankets or padded panels).
+- **Common area clean-up** after each day.
+- **Rubbish disposal** (specific bin or your own).
+
+We handle all JMB paperwork for our condo repaint clients — it's included in the quote.
+
+---
+
+### Paint choice difference
+
+**Condo interior:**
+- Low-VOC paint (Nippon Odour-less, Dulux EasyClean) — no smell for you or neighbours.
+- Washable finish for high-traffic walls.
+- Ceilings: matte white for even light reflection.
+
+**Landed terrace exterior:**
+- Weatherproof topcoat (Nippon Weatherbond, Dulux Weathershield, Jotun Jotashield).
+- UV-stable pigments.
+- Anti-alkali sealer/primer under.
+- Silicone-modified for hairline crack bridging.
+
+---
+
+### Preparation difference
+
+**Condo:** Minimal — you empty your walls, move furniture to the middle, we cover everything with drop sheets.
+
+**Landed:** More prep — power wash exterior, treat any mould, fix hairline cracks, seal any moisture ingress, install scaffolding for double-storey.
+
+---
+
+### 5 questions to ask before booking
+
+1. **Are you including primer/sealer?** (Should be yes for premium jobs.)
+2. **What paint grade are you quoting?** (Ask for the exact product code.)
+3. **How many topcoats?** (2 minimum, 3 for dark or exterior.)
+4. **Do you handle JMB deposit and paperwork?** (For condos, this saves you a headache.)
+5. **What's the workmanship warranty?** (6-12 months minimum written.)
+
+---
+
+### Ready to repaint?
+
+WhatsApp us your unit address + a few photos of your worst walls. We'll come back within 24 hours with a rough ballpark and book a site visit for the exact quote.
+`
+  }),
+
+  post({
     slug: "how-to-hire-honest-contractor-malaysia",
     title: "How to Hire an Honest Home Contractor in Malaysia (Red Flag Guide)",
     excerpt: "The biggest ripoff signals in Malaysian home services — from vague quotes to zero warranty — and the questions that force honest answers.",
