@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { siteConfig } from "@/config/site";
-import { Phone, CheckCircle2 } from "lucide-react";
+import { Phone } from "lucide-react";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { AllPagesMenu } from "@/components/ui/all-pages-menu";
@@ -47,11 +47,6 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full transition-all duration-300">
-      <div className="bg-[#0284C7] text-white py-2 text-xs md:text-sm px-4 text-center font-medium border-b border-[#0EA5E9]/20 flex items-center justify-center gap-2">
-        <CheckCircle2 className="w-3.5 h-3.5 text-[#E0F2FE]" />
-        <span>{t("home.topBanner")}</span>
-      </div>
-
       <nav className={`w-full bg-white transition-all duration-300 border-b ${scrolled ? "py-2.5 shadow-[0_4px_20px_rgba(2,31,68,0.03)] border-slate-100" : "py-4 border-transparent"}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between gap-4">
