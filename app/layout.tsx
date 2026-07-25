@@ -11,7 +11,7 @@ import { WebVitalsReporter } from "@/components/web-vitals-reporter";
 import { ServiceWorkerRegister } from "@/components/service-worker-register";
 import { GoogleAnalytics } from "@/components/analytics/google-analytics";
 import { siteConfig } from "@/config/site";
-import { getOrganizationSchema, getLocalBusinessSchema } from "@/lib/seo";
+import { getOrganizationSchema, getLocalBusinessSchema, getWebsiteSchema } from "@/lib/seo";
 
 export const viewport: Viewport = {
   themeColor: "#0284C7",
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
     canonical: "/",
     languages: {
       "en-MY": "/",
-      "ms-MY": "/",
-      "zh-MY": "/",
+      "ms-MY": "/ms",
+      "zh-MY": "/zh",
       "x-default": "/"
     }
   },
@@ -76,6 +76,7 @@ export default function RootLayout({
 }>) {
   const orgSchema = getOrganizationSchema();
   const localSchema = getLocalBusinessSchema();
+  const websiteSchema = getWebsiteSchema();
 
   return (
     <html lang="en-MY" className="antialiased">
@@ -87,6 +88,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
         <Providers>
           <GoogleAnalytics />

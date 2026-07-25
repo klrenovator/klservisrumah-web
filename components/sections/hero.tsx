@@ -42,8 +42,8 @@ export function Hero() {
               <span>{t("home.servicesGrid.heading")}</span>
             </span>
 
-            {/* Main Heading */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#075985] tracking-tight leading-[1.05] text-balance">
+            {/* Main Heading — speakable target for AEO (Gemini/ChatGPT/Perplexity) */}
+            <h1 className="hero-h1 text-4xl sm:text-5xl md:text-6xl lg:text-[64px] font-extrabold text-[#075985] tracking-tight leading-[1.05] text-balance">
               {t("home.hero.heading1")} <br />
               <span className="text-[#0EA5E9]">{t("home.hero.heading2")}</span> {t("home.hero.headingLocation")}
             </h1>
@@ -53,8 +53,8 @@ export function Hero() {
               {t("hero.subline")}
             </p>
 
-            {/* Semantic Subtext Body Copy */}
-            <p className="text-base sm:text-lg text-[#475569] leading-relaxed max-w-2xl">
+            {/* Semantic Subtext Body Copy — targeted by speakable JSON-LD */}
+            <p className="hero-subhead text-base sm:text-lg text-[#475569] leading-relaxed max-w-2xl">
               {t("home.hero.subhead")}
             </p>
 
