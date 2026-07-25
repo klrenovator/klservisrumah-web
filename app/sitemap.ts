@@ -13,17 +13,18 @@ type Entry = { path: string; priority: number; changeFrequency?: MetadataRoute.S
 
 function entry({ path, priority, changeFrequency = "weekly" }: Entry): MetadataRoute.Sitemap[number] {
   const cleanPath = path === "/" ? "" : path;
+  const pageUrl = `${baseUrl}${cleanPath}`;
   return {
-    url: `${baseUrl}${cleanPath}`,
-    lastModified: new Date("2026-07-24"),
+    url: pageUrl,
+    lastModified: new Date("2026-07-25"),
     changeFrequency,
     priority,
     alternates: {
       languages: {
-        "en-MY": `${baseUrl}${cleanPath}`,
-        "ms-MY": `${baseUrl}/ms${cleanPath}`,
-        "zh-MY": `${baseUrl}/zh${cleanPath}`,
-        "x-default": `${baseUrl}${cleanPath}`
+        "en-MY": pageUrl,
+        "ms-MY": pageUrl,
+        "zh-MY": pageUrl,
+        "x-default": pageUrl
       }
     }
   };

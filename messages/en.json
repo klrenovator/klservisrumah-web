@@ -205,7 +205,10 @@
     },
     "serviceAreas": {
       "heading": "Areas we cover in KL & Selangor",
-      "subheading": "Same-day home services available across all major Klang Valley districts, townships, and suburbs."
+      "subheading": "Same-day home services available across all major Klang Valley districts, townships, and suburbs.",
+      "notListedTitle": "Don't see your neighborhood listed above?",
+      "notListedDesc": "We service all locations within 45km of Kuala Lumpur City Centre.",
+      "askDispatch": "Ask Our Dispatch Desk"
     },
     "faq": {
       "heading": "Frequently asked questions",

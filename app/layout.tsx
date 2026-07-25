@@ -32,8 +32,8 @@ export const metadata: Metadata = {
     canonical: "/",
     languages: {
       "en-MY": "/",
-      "ms-MY": "/ms",
-      "zh-MY": "/zh",
+      "ms-MY": "/",
+      "zh-MY": "/",
       "x-default": "/"
     }
   },

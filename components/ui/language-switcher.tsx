@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { usePathname, useRouter } from "next/navigation";
 import { type SupportedLang, useLang } from "@/context/lang-context";
 import { useTranslations } from "@/hooks/use-translations";
 
@@ -11,36 +10,21 @@ const LANG_OPTIONS: { code: SupportedLang; short: string; full: string }[] = [
   { code: "zh", short: "中", full: "中文" }
 ];
 
-function stripLang(pathname: string): string {
-  for (const code of LANG_OPTIONS) {
-    if (pathname === `/${code.code}`) return "/";
-    if (pathname.startsWith(`/${code.code}/`)) {
-      return pathname.slice(code.code.length + 1) || "/";
-    }
-  }
-  return pathname;
-}
-
-function pushWithLang(pathname: string, nextLang: SupportedLang): string {
-  const cleanPath = stripLang(pathname);
-  if (nextLang === "en") return cleanPath;
-  return `/${nextLang}${cleanPath === "/" ? "" : cleanPath}`;
-}
-
 /**
  * Trilingual language switcher — klrenovator.com-style segmented pill
  * (EN | BM | 中) with the active locale highlighted.
+ *
+ * Language switching is purely client-side via React context + localStorage.
+ * URLs remain the same (no locale prefix) to ensure all routes resolve correctly.
+ * Locale-specific canonical URLs are handled via hreflang meta tags for SEO.
  */
 export function LanguageSwitcher() {
   const { lang, setLang } = useLang();
-  const pathname = usePathname() || "/";
-  const router = useRouter();
   const t = useTranslations();
 
   const handleChange = (nextLang: SupportedLang) => {
     if (nextLang === lang) return;
     setLang(nextLang);
-    router.push(pushWithLang(pathname, nextLang));
   };
 
   return (

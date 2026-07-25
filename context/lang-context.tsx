@@ -20,15 +20,31 @@ const LangContext = createContext<{
   labels: langLabels
 });
 
+/** Detect locale from URL path prefix (e.g. /ms/services → "ms") */
+function detectLocaleFromPath(): SupportedLang | null {
+  if (typeof window === "undefined") return null;
+  const segments = window.location.pathname.split("/").filter(Boolean);
+  const first = segments[0];
+  if (first === "ms" || first === "zh") return first;
+  return null;
+}
+
 export function LangProvider({ children }: { children: React.ReactNode }) {
   const [lang, setLangState] = useState<SupportedLang>("en");
 
   useEffect(() => {
+    // Priority 1: URL path prefix (for SEO landing pages at /ms, /zh)
+    const fromUrl = detectLocaleFromPath();
+    // Priority 2: localStorage
     const stored = window.localStorage.getItem("klservisrumah-lang") as SupportedLang | null;
-    if (stored === "en" || stored === "ms" || stored === "zh") {
-      setLangState(stored);
-      document.documentElement.lang = stored === "en" ? "en-MY" : stored === "ms" ? "ms-MY" : "zh-MY";
-    }
+    // Priority 3: cookie
+    const cookieMatch = document.cookie.match(/klservisrumah-lang=(en|ms|zh)/);
+    const fromCookie = cookieMatch ? cookieMatch[1] as SupportedLang : null;
+
+    const resolved: SupportedLang = fromUrl || (stored === "en" || stored === "ms" || stored === "zh" ? stored : null) || fromCookie || "en";
+
+    setLangState(resolved);
+    document.documentElement.lang = resolved === "en" ? "en-MY" : resolved === "ms" ? "ms-MY" : "zh-MY";
   }, []);
 
   const setLang = (nextLang: SupportedLang) => {
