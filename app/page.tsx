@@ -10,6 +10,9 @@ import { OurProcess } from "@/components/sections/our-process";
 import { BeforeAfter } from "@/components/sections/before-after";
 import { FeaturedProjects } from "@/components/sections/featured-projects";
 import { Testimonials } from "@/components/sections/testimonials";
+import { GoogleReviews } from "@/components/sections/google-reviews";
+import { PricingComparison } from "@/components/sections/pricing-comparison";
+import { NotSureSection } from "@/components/sections/not-sure-section";
 import { ServiceAreas } from "@/components/sections/service-areas";
 import { FAQAccordion } from "@/components/sections/faq-accordion";
 import { HomeCTA } from "@/components/sections/home-cta";
@@ -43,6 +46,9 @@ export default function Home() {
       <BeforeAfter />
       <FeaturedProjects />
       <Testimonials />
+      <GoogleReviews />
+      <PricingComparison />
+      <NotSureSection />
       <ServiceAreas />
       <FAQAccordion />
 
