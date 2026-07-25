@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArrowRight, Calculator, ClipboardCheck, MessageSquare } from "lucide-react";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { getHubMetadata, getItemListSchema } from "@/lib/hub";
-import { getBreadcrumbSchema, getSpeakableSchema, getWebApplicationSchema } from "@/lib/seo";
+import { getSpeakableSchema, getWebApplicationSchema } from "@/lib/seo";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 
 const title = "Free Home Service Tools KL";
@@ -23,7 +23,6 @@ export default function ToolsPage() {
   return (
     <>
       <Breadcrumbs items={[{ label: "Tools", href: path }]} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getBreadcrumbSchema([{ name: "Home", item: "/" }, { name: "Tools", item: path }])) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getSpeakableSchema(["h1", "h2"])) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getItemListSchema(title, description, path, items)) }} />
       {tools.map((tool) => (

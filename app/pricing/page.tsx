@@ -1,9 +1,9 @@
 import React from "react";
-import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo-meta";
+
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { servicesData } from "@/config/services-data";
 import {
-  getBreadcrumbSchema,
   getFAQSchema,
   getOfferCatalogSchema,
   getSpeakableSchema
@@ -11,43 +11,18 @@ import {
 import { PricingHeroHeading } from "@/components/sections/pricing-hero-heading";
 import { LocalePricingContent } from "@/components/sections/locale-pricing-content";
 
-export const metadata: Metadata = {
-  title: "Home Services Pricing in KL & Selangor — 2026 Market-Rate Guide",
+export const metadata = buildMetadata({
+  title: "Home Services Pricing KL & Selangor — 2026 Guide",
   description:
-    "Transparent 2026 pricing for painting (RM 450+), plumbing (RM 120+), plaster ceiling (RM 220+), PU waterproofing (RM 300+) & handyman (RM 100+) in KL & Selangor.",
+    "Transparent 2026 market rates for painting, plumbing, plaster ceiling, waterproofing and handyman work in Kuala Lumpur and Selangor. No hidden charges.",
+  path: "/pricing",
   keywords: [
-    "home services price KL",
-    "painting price Malaysia",
-    "plumbing rates KL",
-    "waterproofing cost Selangor",
-    "handyman rates Malaysia",
-    "renovation price KL"
-  ],
-  alternates: {
-    canonical: "/pricing",
-    languages: {
-      "en-MY": "/pricing",
-      "ms-MY": "/ms/pricing",
-      "zh-MY": "/zh/pricing",
-      "x-default": "/pricing"
-    }
-  },
-  openGraph: {
-    title: "KL Servis Rumah Pricing — Transparent 2026 Guide",
-    description:
-      "Transparent Klang Valley pricing for painting, plumbing, ceiling, waterproofing, handyman and 20+ home services. Market-rate, no hidden fees.",
-    url: "https://www.klservisrumah.my/pricing",
-    siteName: "KL Servis Rumah",
-    type: "website",
-    locale: "en_MY"
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "KL Servis Rumah Pricing — Transparent 2026 Guide",
-    description:
-      "Transparent Klang Valley pricing for 28+ home services. Market-rate, no hidden fees."
-  }
-};
+    "home service price Malaysia",
+    "painting cost KL",
+    "plumber rate Selangor",
+    "waterproofing price KL"
+  ]
+});
 
 const pricingFaqs = [
   {
@@ -71,17 +46,10 @@ const pricingFaqs = [
 const offerCatalogItems = Object.values(servicesData).flatMap((service) => service.subServices);
 
 export default function PricingPage() {
-  const breadcrumbItems = [
-    { name: "Pricing", item: "/pricing" },
-  ];
 
   return (
     <>
       <Breadcrumbs items={[{ label: "Pricing", href: "/pricing" }]} />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(getBreadcrumbSchema(breadcrumbItems)) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(pricingFaqs)) }}

@@ -17,10 +17,10 @@ type Entry = { path: string; priority: number; changeFrequency?: MetadataRoute.S
 function entry({ path, priority, changeFrequency = "weekly" }: Entry): MetadataRoute.Sitemap[number] {
   const cleanPath = path === "/" ? "" : path;
   const pageUrl = `${baseUrl}${cleanPath}`;
-  // Properly point ms/zh alternates at the localised URL prefixes so
-  // Google and Bing serve the correct language variant per user locale.
-  const msUrl = `${baseUrl}/ms${cleanPath}`;
-  const zhUrl = `${baseUrl}/zh${cleanPath}`;
+  // Self-referencing hreflang. Language switching is client-side, so all three
+  // locales are served from this one URL. The previous /ms and /zh alternates
+  // 301-redirected back here — and Google discards hreflang clusters whose
+  // targets redirect, which silently invalidated the annotations sitewide.
   return {
     url: pageUrl,
     lastModified: SITEMAP_LAST_MODIFIED,
@@ -29,8 +29,8 @@ function entry({ path, priority, changeFrequency = "weekly" }: Entry): MetadataR
     alternates: {
       languages: {
         "en-MY": pageUrl,
-        "ms-MY": msUrl,
-        "zh-MY": zhUrl,
+        "ms-MY": pageUrl,
+        "zh-MY": pageUrl,
         "x-default": pageUrl
       }
     }

@@ -1,10 +1,11 @@
 import React from "react";
+import { buildMetadata } from "@/lib/seo-meta";
 import { notFound } from "next/navigation";
 import { AlertTriangle, Clock3, MessageCircle } from "lucide-react";
 import { servicesData } from "@/config/services-data";
 import { areaPages } from "@/config/area-data";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { getBreadcrumbSchema, getFAQSchema, getServiceSchema } from "@/lib/seo";
+import { getFAQSchema, getServiceSchema } from "@/lib/seo";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 
 export function generateStaticParams() {
@@ -15,11 +16,11 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   const { slug } = await props.params;
   const service = servicesData[slug];
   if (!service) return {};
-  return {
+  return buildMetadata({
     title: `Emergency ${service.title} KL & Selangor — Fast Dispatch`,
     description: `Urgent ${service.title.toLowerCase()} help in KL & Selangor. Response priority for leaks, unsafe ceilings, urgent handyman and water damage cases.`,
-    alternates: { canonical: `/services/${slug}/emergency` }
-  };
+    path: `/services/${slug}/emergency`
+  });
 }
 
 export default async function EmergencyPage(props: { params: Promise<{ slug: string }> }) {
@@ -35,7 +36,6 @@ export default async function EmergencyPage(props: { params: Promise<{ slug: str
   return (
     <>
       <Breadcrumbs items={[{ label: "Services", href: "/services" }, { label: service.title, href: `/services/${slug}` }, { label: "Emergency", href: `/services/${slug}/emergency` }]} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getBreadcrumbSchema([{ name: "Services", item: "/services" }, { name: service.title, item: `/services/${slug}` }, { name: "Emergency", item: `/services/${slug}/emergency` }])) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(faqs)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getServiceSchema({ title: `Emergency ${service.title}`, description: service.description, startPrice: service.startPrice, slug: service.slug })) }} />
 

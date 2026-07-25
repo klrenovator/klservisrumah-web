@@ -1,4 +1,5 @@
 import { siteConfig } from "@/config/site";
+import { toIsoDate } from "@/lib/utils";
 import { servicesData, type ServiceDetail } from "@/config/services-data";
 import type { AreaDetail } from "@/config/area-data";
 import type { SuburbDetail } from "@/config/suburb-data";
@@ -366,8 +367,10 @@ export function getArticleSchema(post: BlogPost | { title: string; excerpt?: str
     headline: post.title,
     description: "excerpt" in post ? post.excerpt : undefined,
     image: absoluteUrl(("coverImage" in post && post.coverImage) || siteConfig.defaultOgImage),
-    datePublished: ("date" in post && post.date) || "2026-07-24",
-    dateModified: "2026-07-24",
+    // Must be ISO-8601 — the blog data stores display strings like "July 20, 2026",
+    // which Google rejects as an invalid date and drops the Article rich result.
+    datePublished: toIsoDate("date" in post ? post.date : undefined),
+    dateModified: toIsoDate("date" in post ? post.date : undefined),
     author: {
       "@type": "Person",
       name: ("author" in post && post.author) || siteConfig.name

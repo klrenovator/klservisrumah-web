@@ -1,8 +1,9 @@
 import React from "react";
+import { buildMetadata } from "@/lib/seo-meta";
 import { notFound } from "next/navigation";
 import { areaPages } from "@/config/area-data";
 import { servicesData } from "@/config/services-data";
-import { getBreadcrumbSchema, getFAQSchema, getLocalBusinessServiceSchema } from "@/lib/seo";
+import { getFAQSchema, getLocalBusinessServiceSchema } from "@/lib/seo";
 import { buildAreaBundle, buildServiceBundle, buildServiceLinks } from "@/lib/location-bundles";
 import { LocaleAreaServiceView } from "@/components/sections/locale-area-service-view";
 
@@ -15,11 +16,11 @@ export async function generateMetadata(props: { params: Promise<{ slug: string; 
   const area = areaPages.find((item) => item.slug === slug);
   const service = servicesData[serviceSlug];
   if (!area || !service) return {};
-  return {
+  return buildMetadata({
     title: `${service.title} in ${area.name} — From ${service.startPrice}`,
     description: `${service.title} in ${area.name}. Local team, market-rate pricing, landmarks covered, warranty and WhatsApp booking for ${area.shortName}.`,
-    alternates: { canonical: `/areas/${area.slug}/${service.slug}` }
-  };
+    path: `/areas/${area.slug}/${service.slug}`
+  });
 }
 
 export default async function AreaServicePage(props: { params: Promise<{ slug: string; serviceSlug: string }> }) {
@@ -38,7 +39,6 @@ export default async function AreaServicePage(props: { params: Promise<{ slug: s
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getBreadcrumbSchema([{ name: "Coverage Areas", item: "/areas" }, { name: area.name, item: `/areas/${area.slug}` }, { name: service.title, item: `/areas/${area.slug}/${service.slug}` }])) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(faqs)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getLocalBusinessServiceSchema(area, service, `/areas/${area.slug}/${service.slug}`)) }} />
 

@@ -18,6 +18,9 @@ export async function GET(req: Request) {
     const payload = {
       host: host,
       key: key,
+      // Required by the IndexNow spec so Bing/Yandex can verify key ownership.
+      // It was computed but never sent, which makes submissions fail verification.
+      keyLocation: keyLocation,
       urlList: [
         `https://${host}/`,
         `https://${host}/services`,

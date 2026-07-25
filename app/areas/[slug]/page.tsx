@@ -1,7 +1,8 @@
 import React from "react";
+import { buildMetadata } from "@/lib/seo-meta";
 import { notFound } from "next/navigation";
 import { areaPages } from "@/config/area-data";
-import { getBreadcrumbSchema, getFAQSchema, getSpeakableSchema } from "@/lib/seo";
+import { getFAQSchema, getSpeakableSchema } from "@/lib/seo";
 import { buildAreaBundle } from "@/lib/location-bundles";
 import { LocaleAreaView } from "@/components/sections/locale-area-view";
 import { siteConfig } from "@/config/site";
@@ -19,9 +20,10 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   const area = areaPages.find((a) => a.slug === params.slug);
   if (!area) return {};
 
-  return {
+  return buildMetadata({
     title: area.metaTitle,
     description: area.metaDesc,
+    path: `/areas/${area.slug}`,
     keywords: [
       `home services ${area.name}`,
       `painter ${area.name}`,
@@ -29,44 +31,11 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
       `handyman ${area.name}`,
       `waterproofing ${area.name}`,
       `plaster ceiling ${area.name}`,
-      `${area.name} renovation`,
       area.name,
       area.shortName,
-      area.state,
-      "KL Servis Rumah"
-    ],
-    alternates: {
-      canonical: `/areas/${area.slug}`,
-      languages: {
-        "en-MY": `/areas/${area.slug}`,
-        "ms-MY": `/ms/areas/${area.slug}`,
-        "zh-MY": `/zh/areas/${area.slug}`,
-        "x-default": `/areas/${area.slug}`
-      }
-    },
-    openGraph: {
-      title: area.metaTitle,
-      description: area.metaDesc,
-      url: `${baseUrl}/areas/${area.slug}`,
-      siteName: "KL Servis Rumah",
-      type: "website",
-      locale: "en_MY",
-      images: [
-        {
-          url: siteConfig.defaultOgImage,
-          width: 1200,
-          height: 630,
-          alt: `${area.name} home services — KL Servis Rumah`
-        }
-      ]
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: area.metaTitle,
-      description: area.metaDesc,
-      images: [siteConfig.defaultOgImage]
-    }
-  };
+      area.state
+    ]
+  });
 }
 
 export default async function AreaSlugPage(props: { params: Promise<{ slug: string }> }) {
@@ -78,11 +47,6 @@ export default async function AreaSlugPage(props: { params: Promise<{ slug: stri
 
   // Schema stays canonical (English) for search engines; the visible body is
   // rendered by the client wrapper in the visitor's active language.
-  const crumbs = [
-    { name: "Coverage Areas", item: "/areas" },
-    { name: area.name, item: `/areas/${area.slug}` }
-  ];
-  const breadcrumbSchema = getBreadcrumbSchema(crumbs);
   const faqSchema = getFAQSchema(area.faqs);
   const speakableSchema = getSpeakableSchema(["h1", ".area-intro", ".faq-answer"]);
 
@@ -126,10 +90,6 @@ export default async function AreaSlugPage(props: { params: Promise<{ slug: stri
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

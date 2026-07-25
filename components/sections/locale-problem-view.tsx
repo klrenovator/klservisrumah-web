@@ -16,9 +16,9 @@ type LocaleProblemViewProps = {
 };
 
 const copy = {
-  en: { causes: "Common causes", solutions: "Professional solutions", whenToCall: "When to call a pro", related: "Related service", relatedBody: (title: string) => `This problem usually connects to ${title}. Review service scope, pricing, warranty, and process before booking.`, view: "View", faqs: "FAQs", needFixed: "Need this fixed?", needFixedBody: "Send photos and a short video if safe. We confirm a market-rate quote before dispatch.", whatsapp: "WhatsApp Diagnosis", estimate: "Estimated professional fix:", urgency: "Urgency", titlePrefix: "Why Is My", titleSuffix: "? Causes, Fixes & Cost in KL" },
-  ms: { causes: "Punca biasa", solutions: "Penyelesaian profesional", whenToCall: "Bila perlu hubungi pakar", related: "Perkhidmatan berkaitan", relatedBody: (title: string) => `Masalah ini biasanya berkaitan dengan ${title}. Semak skop perkhidmatan, harga, jaminan, dan proses sebelum menempah.`, view: "Lihat", faqs: "Soalan Lazim", needFixed: "Perlu dibaiki?", needFixedBody: "Hantar foto dan video pendek jika selamat. Kami sahkan sebut harga pasaran sebelum penghantaran.", whatsapp: "Diagnosis WhatsApp", estimate: "Anggaran pembaikan profesional:", urgency: "Kesegeraan", titlePrefix: "Mengapa", titleSuffix: "Saya? Punca, Pembaikan & Kos di KL" },
-  zh: { causes: "常见原因", solutions: "专业解决方案", whenToCall: "何时应联系专业人员", related: "相关服务", relatedBody: (title: string) => `此问题通常与${title}相关。预约前请先了解服务范围、价格、保修与流程。`, view: "查看", faqs: "常见问题", needFixed: "需要维修吗？", needFixedBody: "如安全的话，请发送照片和简短视频。我们会在派工前确认市场价报价。", whatsapp: "WhatsApp 诊断", estimate: "专业维修预估费用：", urgency: "紧急程度", titlePrefix: "为什么我的", titleSuffix: "会这样？原因、修复方法与吉隆坡费用" }
+  en: { causes: "Common causes", solutions: "Professional solutions", whenToCall: "When to call a pro", related: "Related service", relatedBody: (title: string) => `This problem usually connects to ${title}. Review service scope, pricing, warranty, and process before booking.`, view: "View", faqs: "FAQs", needFixed: "Need this fixed?", needFixedBody: "Send photos and a short video if safe. We confirm a market-rate quote before dispatch.", whatsapp: "WhatsApp Diagnosis", estimate: "Estimated professional fix:", urgency: "Urgency", headingSuffix: "— Causes, Fixes & Cost in KL" },
+  ms: { causes: "Punca biasa", solutions: "Penyelesaian profesional", whenToCall: "Bila perlu hubungi pakar", related: "Perkhidmatan berkaitan", relatedBody: (title: string) => `Masalah ini biasanya berkaitan dengan ${title}. Semak skop perkhidmatan, harga, jaminan, dan proses sebelum menempah.`, view: "Lihat", faqs: "Soalan Lazim", needFixed: "Perlu dibaiki?", needFixedBody: "Hantar foto dan video pendek jika selamat. Kami sahkan sebut harga pasaran sebelum penghantaran.", whatsapp: "Diagnosis WhatsApp", estimate: "Anggaran pembaikan profesional:", urgency: "Kesegeraan", headingSuffix: "— Punca, Cara Baiki & Kos di KL" },
+  zh: { causes: "常见原因", solutions: "专业解决方案", whenToCall: "何时应联系专业人员", related: "相关服务", relatedBody: (title: string) => `此问题通常与${title}相关。预约前请先了解服务范围、价格、保修与流程。`, view: "查看", faqs: "常见问题", needFixed: "需要维修吗？", needFixedBody: "如安全的话，请发送照片和简短视频。我们会在派工前确认市场价报价。", whatsapp: "WhatsApp 诊断", estimate: "专业维修预估费用：", urgency: "紧急程度", headingSuffix: "— 原因、修复方法与吉隆坡费用" }
 } as const;
 
 export function LocaleProblemView({ problem, service }: LocaleProblemViewProps) {
@@ -35,8 +35,12 @@ export function LocaleProblemView({ problem, service }: LocaleProblemViewProps) 
             <span className="inline-flex items-center gap-2 rounded-full bg-rose-50 px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-rose-600">
               <AlertTriangle className="h-4 w-4" /> {t.urgency}: {localizedProblem.urgency}
             </span>
-            <h1 className="mt-4 text-3xl font-extrabold leading-tight text-[#075985] sm:text-5xl">
-              {lang === "en" ? `${t.titlePrefix} ${localizedProblem.title}${t.titleSuffix}` : `${t.titlePrefix} ${localizedProblem.title} ${t.titleSuffix}`}
+            {/* The problem title already reads as a noun phrase ("Peeling Paint in
+                Malaysian Homes"), so prefixing "Why Is My …?" produced broken
+                grammar on all 44 problem pages. A trailing qualifier keeps the
+                primary keyword first — which is also what Google weights most. */}
+            <h1 className="mt-4 text-3xl font-extrabold leading-tight text-[#075985] sm:text-5xl text-balance">
+              {`${localizedProblem.title} ${t.headingSuffix}`}
             </h1>
             <p className="mt-4 text-base font-semibold leading-relaxed text-[#475569]">{localizedProblem.symptom}</p>
             <p className="mt-3 text-sm font-extrabold text-[#0EA5E9]">{t.estimate} {localizedProblem.costRange}</p>

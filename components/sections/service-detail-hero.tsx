@@ -149,9 +149,12 @@ export function ServiceDetailHero({ service }: ServiceDetailHeroProps) {
               />
               <div className="absolute inset-0 flex flex-col justify-end p-6 sm:p-8 text-white">
                 <div className="eyebrow text-[#7DD3FC] mb-2">All KL & Selangor</div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight leading-tight">
+                {/* Decorative image caption, not a document heading: it repeats the
+                    <h1> verbatim. Marking it up as <h2> created a duplicate top-level
+                    heading and polluted the outline for screen readers and crawlers. */}
+                <p className="text-2xl sm:text-3xl font-extrabold tracking-tight leading-tight" aria-hidden="true">
                   {service.title}
-                </h2>
+                </p>
                 <p className="text-sm text-white/80 font-medium mt-1">
                   {t("serviceDetail.trustLine")}
                 </p>

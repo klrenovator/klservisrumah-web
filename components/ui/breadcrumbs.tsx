@@ -29,11 +29,18 @@ export function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
 
   const baseUrl = "https://www.klservisrumah.my";
 
-  // Normalize items: accept both `name` and `label` keys
-  const normalized = items.map((item) => ({
+  // Normalize items: accept both `name` and `label` keys.
+  const provided = items.map((item) => ({
     ...item,
     name: item.name || item.label || "",
   }));
+
+  // Always anchor the trail at Home. Callers passed only the sub-path (e.g.
+  // [{ FAQ }]), so both the visible trail and the BreadcrumbList started at
+  // position 1 = "FAQ" with no route back to the root. Google expects the full
+  // path from the homepage, and users expect a Home crumb.
+  const normalized =
+    provided[0]?.href === "/" ? provided : [{ name: "Home", href: "/" }, ...provided];
 
   return (
     <>

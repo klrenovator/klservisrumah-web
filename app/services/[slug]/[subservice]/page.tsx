@@ -1,10 +1,11 @@
 import React from "react";
+import { buildMetadata } from "@/lib/seo-meta";
 import { notFound } from "next/navigation";
 import { servicesData } from "@/config/services-data";
 import { clusterPages } from "@/config/content-data";
 import { GenericContentPageView } from "@/components/content/generic-content-page";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { getBreadcrumbSchema, getFAQSchema, getServiceSchema } from "@/lib/seo";
+import { getFAQSchema, getServiceSchema } from "@/lib/seo";
 import { slugify } from "@/lib/utils";
 import { LocaleServiceView } from "@/components/sections/locale-service-view";
 import { TrustBar } from "@/components/trust-bar";
@@ -27,24 +28,20 @@ export async function generateMetadata(props: { params: Promise<{ slug: string; 
   const cluster = clusterPages.find((page) => page.relatedServiceSlug === params.slug && page.slug === params.subservice);
   if (!service) return {};
   if (cluster) {
-    return {
-      title: cluster.title,
-      description: cluster.intro,
-      alternates: { canonical: `/services/${service.slug}/${cluster.slug}` }
-    };
+    return buildMetadata({
+    title: cluster.title,
+    description: cluster.intro,
+    path: `/services/${service.slug}/${cluster.slug}`
+  });
   }
   if (!sub) return {};
-  return {
-    title: `${sub.name} in KL & Selangor — ${sub.price} | KL Servis Rumah`,
-    description: `${sub.name} by KL Servis Rumah. ${sub.desc} Transparent market-rate pricing starting ${sub.price}, insured team, and WhatsApp booking.`,
-    alternates: { canonical: `/services/${service.slug}/${params.subservice}` },
-    openGraph: {
-      title: `${sub.name} in KL & Selangor`,
-      description: sub.desc,
-      url: `https://www.klservisrumah.my/services/${service.slug}/${params.subservice}`,
-      type: "website"
-    }
-  };
+  return buildMetadata({
+    title: `${sub.name} in KL & Selangor — ${sub.price}`,
+    description: `${sub.desc} Market-rate pricing from ${sub.price}, insured team, and WhatsApp booking across Kuala Lumpur and Selangor.`,
+    path: `/services/${service.slug}/${params.subservice}`,
+    image: service.heroImage,
+    keywords: [sub.name, `${sub.name} KL`, `${sub.name} price`, service.title]
+  });
 }
 
 export default async function SubServicePage(props: { params: Promise<{ slug: string; subservice: string }> }) {
@@ -66,11 +63,6 @@ export default async function SubServicePage(props: { params: Promise<{ slug: st
     { q: `Do you cover my area for ${sub.name}?`, a: `Yes. We dispatch ${service.title.toLowerCase()} teams daily across all of KL and Selangor — Kuala Lumpur, Petaling Jaya, Subang Jaya, Shah Alam, Puchong, Klang, and every major suburb.` },
     { q: `What warranty comes with ${sub.name}?`, a: `Every ${sub.name} booking is covered by our written ${service.warranty.toLowerCase()}. If anything covered fails within the warranty period, we return to fix it free of charge.` }
   ];
-  const crumbs = [
-    { name: "Services", item: "/services" },
-    { name: service.title, item: `/services/${service.slug}` },
-    { name: sub.name, item: `/services/${service.slug}/${params.subservice}` }
-  ];
 
   return (
     <>
@@ -81,7 +73,6 @@ export default async function SubServicePage(props: { params: Promise<{ slug: st
         { label: service.title, href: `/services/${service.slug}` },
         { label: sub.name, href: `/services/${service.slug}/${params.subservice}` }
       ]} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getBreadcrumbSchema(crumbs)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(faqs)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getServiceSchema({ title: sub.name, description: sub.desc, startPrice: sub.price, slug: service.slug })) }} />
 

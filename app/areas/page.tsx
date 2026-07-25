@@ -1,23 +1,25 @@
 import React from "react";
+import { buildMetadata } from "@/lib/seo-meta";
 import { ServiceAreas } from "@/components/sections/service-areas";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { WhyChooseUs } from "@/components/sections/why-choose-us";
-import { getBreadcrumbSchema } from "@/lib/seo";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
 import { MapPin, Phone, MessageSquare } from "lucide-react";
 
-export const metadata = {
-  title: "Service Coverage Areas KL & Selangor | KL Servis Rumah",
-  description: "KL Servis Rumah provides professional home services across all major Klang Valley areas including Kuala Lumpur, Petaling Jaya, Subang Jaya, Shah Alam, Puchong, Klang, and more. Same-day service available.",
-  alternates: {
-    canonical: "/areas"
-  }
-};
+export const metadata = buildMetadata({
+  title: "Service Coverage Areas in KL & Selangor",
+  description:
+    "See every Klang Valley area we cover — Kuala Lumpur, Petaling Jaya, Subang Jaya, Shah Alam, Puchong, Klang and more. Same-day home service available.",
+  path: "/areas",
+  keywords: [
+    "home service areas KL",
+    "handyman coverage Selangor",
+    "Klang Valley home services"
+  ]
+});
 
 export default function AreasPage() {
-  const crumbs = [{ name: "Coverage Areas", item: "/areas" }];
-  const schema = getBreadcrumbSchema(crumbs);
 
   return (
     <>
@@ -71,11 +73,6 @@ export default function AreasPage() {
       </section>
 
       <Breadcrumbs items={[{ label: "Coverage Areas", href: "/areas" }]} />
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
 
       <ServiceAreas />
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { buildMetadata } from "@/lib/seo-meta";
 import Link from "next/link";
 import { problemPages } from "@/config/problem-data";
 import { servicesData } from "@/config/services-data";
@@ -6,24 +7,26 @@ import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
 import { Phone, MessageSquare, AlertCircle } from "lucide-react";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { getBreadcrumbSchema, getSpeakableSchema } from "@/lib/seo";
+import { getSpeakableSchema } from "@/lib/seo";
 
-export const metadata = {
-  title: "Home Service Problem Guides KL & Selangor | KL Servis Rumah",
-  description: "Diagnose common painting, plumbing, ceiling, waterproofing and handyman problems with causes, fixes, cost ranges and booking guidance. Same-day service available across KL & Selangor.",
-  alternates: {
-    canonical: "/problems"
-  }
-};
+export const metadata = buildMetadata({
+  title: "Home Problem Guides — Diagnose & Fix KL Homes",
+  description:
+    "Diagnose common painting, plumbing, ceiling, waterproofing and handyman problems in Malaysian homes, then see the realistic repair cost and next step.",
+  path: "/problems",
+  keywords: [
+    "home problems Malaysia",
+    "ceiling leak diagnosis KL",
+    "peeling paint fix Selangor"
+  ]
+});
 
 export default function ProblemsIndexPage() {
-  const breadcrumbSchema = getBreadcrumbSchema([{ name: "Home", item: "/" }, { name: "Problems", item: "/problems" }]);
   const speakableSchema = getSpeakableSchema(["h1", "h2"]);
 
   return (
     <>
       <Breadcrumbs items={[{ label: "Problems", href: "/problems" }]} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
       {/* Hero Section — matches klrenovator.com problems page */}
       <section className="bg-gradient-to-b from-[#F8FAFC] via-white to-white border-b border-slate-100 py-12 sm:py-16">
