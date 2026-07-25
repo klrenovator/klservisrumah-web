@@ -1,3 +1,27 @@
+## 🆕 ROUND 23 EXECUTION LOG (2026-07-25) — NOT-FOUND, STICKY BAR, EXIT POPUP i18n
+
+**Round status:** ✅ **COMPLETED**
+
+### ✅ What was changed
+- ✅ **Not-found page** (`app/not-found.tsx`) — Extracted to `LocaleNotFoundContent` client component. Badge, title, body, and all three action buttons now translated in EN/MS/ZH.
+- ✅ **Sticky mobile bar** (`components/sticky-mobile-whatsapp-bar.tsx`) — "WhatsApp" and "Call" labels now use `common.bookWhatsApp` and `common.callUs` translation keys.
+- ✅ **Exit intent popup** (`components/exit-intent-popup.tsx`) — Badge ("Before you go"), title, body, CTA button, and close aria-label all translated in EN/MS/ZH.
+- ✅ **Translation dictionaries** — Added `notFound.*`, `stickyBook.*`, `exitPopup.*` keys in all three message files (EN/MS/ZH).
+
+### 📁 Files modified
+- ✅ `components/locale-not-found-content.tsx` (new client component)
+- ✅ `app/not-found.tsx` (simplified to wrapper)
+- ✅ `components/sticky-mobile-whatsapp-bar.tsx` (translated labels)
+- ✅ `components/exit-intent-popup.tsx` (full i18n)
+- ✅ `messages/en.json`, `messages/ms.json`, `messages/zh.json` (new keys)
+
+### ✅ Quality check results
+- ✅ TypeScript: 0 errors
+- ✅ ESLint: 0 errors, 0 warnings
+- ✅ Build: 2,204 SSG pages generated successfully
+
+---
+
 ## 🆕 ROUND 22 EXECUTION LOG (2026-07-25) — CONTACT PAGE i18n, TESTIMONIAL/PROJECT/BEFORE-AFTER FULL TRILINGUAL CONTENT
 
 **Round status:** ✅ **COMPLETED**
