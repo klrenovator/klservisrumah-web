@@ -2,11 +2,14 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: "KL Servis Rumah",
+  shortName: "KLSR",
   parentCompany: "Multicore Dynamics Resources",
   legalName: "Multicore Dynamics Resources",
+  ssm: "003765188-T",
+  ssmFull: "202503227236 (003765188-T)",
   tagline: "Market-Rate Painting, Plumbing, Ceiling, Waterproofing & Handyman Services in KL & Selangor",
   description:
-    "KL Servis Rumah provides professional home maintenance including house painting, plaster ceiling repair, gypsum partition setup, plumbing leak repairs, waterproofing, door and lock repairs, TV mounting, and handyman services across Kuala Lumpur & Selangor. Same-day service is available, with fully insured operations, background-verified teams, and transparent market-rate pricing confirmed before work begins.",
+    "KL Servis Rumah provides professional home maintenance including house painting, plaster ceiling repair, gypsum partition setup, plumbing leak repairs, waterproofing, door and lock repairs, TV mounting, and handyman services across Kuala Lumpur & Selangor. Same-day service is available, with fully insured operations, background-verified teams, and transparent market-rate pricing confirmed before work begins. Serving Kuala Lumpur, Petaling Jaya, Subang Jaya, Shah Alam, Puchong, Damansara, Klang, Cheras, Ampang, Kajang, Bangsar, Mont Kiara, Setapak, Wangsa Maju, Kepong, Sri Petaling, Bukit Jalil, Kota Damansara, Ara Damansara, Sunway, USJ, Port Klang, Bukit Tinggi, Setia Alam, Rawang, Semenyih, Balakong, Seri Kembangan, Pandan Indah, Putrajaya, Cyberjaya & Dengkil.",
   metaDescription:
     "Market-rate home services in KL & Selangor: house painting, plaster ceiling, plumbing, waterproofing & handyman. Transparent quotes and warranty.",
 
@@ -23,6 +26,8 @@ export const siteConfig = {
   addressCountry: "MY",
   geoLat: 3.1670,
   geoLng: 101.6520,
+  foundingDate: "2014",
+  numberOfEmployees: 10,
   hours: "Mon–Sun · 9:00 AM – 6:00 PM (Everyday Open)",
   googleMapsEmbed: "https://maps.app.goo.gl/dG5WWYBCotRQzvRJA",
   googleBusinessProfile: "https://share.google/HhXvqWDkefZ5bzNdL",
@@ -59,6 +64,59 @@ export const siteConfig = {
     "Selangor", "Sentul", "Bandar Botanic"
   ],
 
+  // Brands supported/worked with
+  brandsSupported: [
+    "Nippon Paint", "Dulux", "Jotun", "Kansai Paint", "ICI Paints",
+    "Kohler", "American Standard", "Grohe", "Ruba", "Johnson Suisse",
+    "Simmons", "Panasonic", "Matsushita", "Rubine", "Midea",
+    "LG", "Samsung", "Sharp", "Toshiba", "Daikin"
+  ],
+
+  // Service type categories
+  serviceTypes: [
+    "House Painting",
+    "Plumbing Repair & Installation",
+    "Plaster Ceiling & Gypsum Partition",
+    "Waterproofing & PU Grouting",
+    "Handyman Services",
+    "Electrical Wiring & Installation",
+    "Water Heater Installation",
+    "Ceiling Fan & Downlight Installation",
+    "Tiling & Flooring",
+    "Kitchen Cabinet & Carpentry",
+    "Door & Lock Repair",
+    "CCTV & Auto Gate Installation",
+    "Roof Repair & Maintenance",
+    "Full House Renovation"
+  ],
+
+  knowsAbout: [
+    "Interior Painting",
+    "Exterior Painting",
+    "Plumbing Leak Repair",
+    "Pipe Replacement",
+    "Plaster Ceiling Repair",
+    "Gypsum Partition Installation",
+    "L-Box Ceiling Design",
+    "PU Grouting Waterproofing",
+    "Bathroom Waterproofing",
+    "TV Wall Mounting",
+    "Furniture Assembly",
+    "Fence & Gate Repair",
+    "Window & Door Installation",
+    "Toilet Bowl Repair",
+    "Water Heater Installation",
+    "Ceiling Fan Wiring",
+    "Downlight Installation",
+    "Epoxy Flooring",
+    "Vinyl/SPC Flooring",
+    "Roof Leak Repair",
+    "Kitchen Cabinet Installation",
+    "Full House Renovation"
+  ],
+
+  areaPages: [],
+
   stats: [
     { label: "Completed Projects", value: "1,200+" },
     { label: "Experienced Craftsmen", value: "15+ Pros" },
@@ -72,6 +130,12 @@ export const siteConfig = {
     instagram: "https://www.instagram.com/klrenovator?igsh=MTNqb3p1NDExZ3Boeg==",
     tiktok: "https://www.tiktok.com/@klrenovator?_r=1&_t=ZS-96tR1k7aVU5",
     youtube: "https://www.youtube.com/@klrenovator",
-    googleMaps: "https://maps.app.goo.gl/dG5WWYBCotRQzvRJA"
+    googleMaps: "https://maps.app.goo.gl/dG5WWYBCotRQzvRJA",
+    googleBusiness: "https://share.google/HhXvqWDkefZ5bzNdL",
+    twitter: "https://x.com/KlRenovator",
+    linkedin: "https://www.linkedin.com/in/kl-renovator-7912b7389",
+    pinterest: "https://www.pinterest.com/klrenovator/",
+    linktr: "https://linktr.ee/klrenovator",
+    medium: "https://medium.com/@klrenovator"
   }
 };

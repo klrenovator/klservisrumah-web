@@ -10,10 +10,10 @@ import { ServiceWorkerRegister } from "@/components/service-worker-register";
 import { GoogleAnalytics } from "@/components/analytics/google-analytics";
 import { DeferredWidgets } from "@/components/deferred-widgets";
 import { siteConfig } from "@/config/site";
-import { getOrganizationSchema, getLocalBusinessSchema, getWebsiteSchema } from "@/lib/seo";
+import { getOrganizationSchema, getLocalBusinessSchema, getWebsiteSchema, buildServiceAreaGeoCircle } from "@/lib/seo";
 
 export const viewport: Viewport = {
-  themeColor: "#0284C7",
+  themeColor: "#075985",
   width: "device-width",
   initialScale: 1,
   maximumScale: 5
@@ -27,6 +27,9 @@ export const metadata: Metadata = {
   description: siteConfig.metaDescription,
   metadataBase: new URL("https://www.klservisrumah.my"),
   manifest: "/manifest.json",
+  verification: {
+    google: "bXgZJKdBlDiVK9DsjNukmCqqicH37cqU_YdHSIVhjlg",
+  },
   alternates: {
     canonical: "/",
     languages: {
@@ -50,6 +53,7 @@ export const metadata: Metadata = {
       }
     ],
     locale: "en_MY",
+    alternateLocale: ["ms_MY", "zh_MY"],
     type: "website"
   },
   twitter: {
@@ -58,6 +62,17 @@ export const metadata: Metadata = {
     description: siteConfig.metaDescription,
     images: [siteConfig.defaultOgImage]
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   icons: {
     icon: [
       { url: "/favicon.png", sizes: "any", type: "image/png" },
@@ -65,6 +80,17 @@ export const metadata: Metadata = {
     ],
     shortcut: siteConfig.logoIcon,
     apple: "/icons/icon-192.png"
+  },
+  // Geo + AI meta tags
+  other: {
+    "geo.region": "MY-10",
+    "geo.placename": "Kuala Lumpur, Selangor, Malaysia",
+    "geo.position": `${siteConfig.geoLat};${siteConfig.geoLng}`,
+    ICBM: `${siteConfig.geoLat}, ${siteConfig.geoLng}`,
+    language: "English, Bahasa Malaysia, Chinese",
+    "ai-context": "https://www.klservisrumah.my/llms.txt",
+    llms: "https://www.klservisrumah.my/llms.txt",
+    "llms-full": "https://www.klservisrumah.my/llms-full.txt",
   }
 };
 
@@ -78,12 +104,9 @@ export default function RootLayout({
   const websiteSchema = getWebsiteSchema();
 
   return (
-    <html lang="en-MY" className="antialiased">
+    <html lang="en-MY" className="scroll-smooth">
       <head>
-        {/* Performance hints — pre-warm the DNS/TCP handshake to critical
-            third-party endpoints so first-click WhatsApp and analytics are
-            instant. `dns-prefetch` covers older browsers; `preconnect`
-            wins on modern ones. */}
+        {/* Performance hints — pre-warm critical third-party endpoints */}
         <link rel="preconnect" href="https://wa.me" crossOrigin="" />
         <link rel="preconnect" href="https://api.whatsapp.com" crossOrigin="" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
@@ -91,20 +114,25 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://wa.me" />
         <link rel="dns-prefetch" href="https://api.whatsapp.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-      </head>
-      <body className="font-sans text-[#475569] bg-white min-h-screen flex flex-col justify-between">
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        
+        {/* 1. Organization Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
         />
+        {/* 2. Local Business Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localSchema) }}
         />
+        {/* 3. WebSite Schema with SearchAction */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
+      </head>
+      <body className="font-sans text-[#475569] bg-white min-h-screen flex flex-col justify-between antialiased">
         <Providers>
           <GoogleAnalytics />
           <WebVitalsReporter />

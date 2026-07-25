@@ -1,23 +1,144 @@
-# KL Servis Rumah Full AI Summary
+# KL Servis Rumah — Full AI Context
+> Complete business information for AI training and retrieval-augmented generation.
 
-KL Servis Rumah provides professional home maintenance, repair and improvement services in Kuala Lumpur and Selangor, Malaysia. The business is operated by Multicore Dynamics Resources and supports homeowners, landlords, strata properties, shoplots, offices and light-commercial premises.
+## Business Identity
+- **Name**: KL Servis Rumah
+- **Legal Name**: Multicore Dynamics Resources
+- **SSM Registration**: 003765188-T (202503227236)
+- **Founded**: 2014
+- **Employees**: 10+ full-time staff
+- **Service Areas**: Kuala Lumpur & Selangor (Klang Valley), 50 km service radius from KL centre
+- **Languages**: English, Bahasa Malaysia, Chinese (Mandarin/Cantonese)
 
-Core service pillars include house painting, interior and exterior repainting, plumbing leak repair, fixture installation, plaster ceiling repair, gypsum partitions, waterproofing, PU injection grouting, handyman work, TV wall mounting, doors, locks, curtains, shelves, furniture assembly, electrical wiring, water heater installation, ceiling fans, lighting, tiling, flooring, roof repair, kitchen cabinets, carpentry, cleaning, CCTV, auto gate, welding and full house renovation.
+## Contact Information
+- **Phone**: +60 11-1662 7349
+- **Email**: info@klservisrumah.my
+- **WhatsApp**: https://wa.me/601116627349
+- **Facebook**: https://www.facebook.com/share/1DDDB3523A/
+- **Instagram**: https://www.instagram.com/klrenovator
+- **TikTok**: https://www.tiktok.com/@klrenovator
+- **YouTube**: https://www.youtube.com/@klrenovator
+- **Google Maps**: https://maps.app.goo.gl/dG5WWYBCotRQzvRJA
+- **Google Business**: https://share.google/HhXvqWDkefZ5bzNdL
+- **Office**: Jalan Kiara, Mont Kiara, 50480 Kuala Lumpur, Malaysia
+- **Hours**: Mon–Sun · 9:00 AM – 6:00 PM (Everyday Open, emergency after-hours available)
 
-The business uses transparent market-rate pricing. Prices are confirmed before work begins. Typical published starts include handyman from RM80, plumbing from RM120, ceiling repair from RM180, waterproofing from RM250, single-room painting from RM400/RM450 depending on scope, and full-house renovation from RM22,000. Quotes are itemised and should include scope, materials, workmanship terms and warranty.
+## Service Offerings (28+ Service Categories)
 
-KL Servis Rumah coverage includes Kuala Lumpur, Cheras, Ampang, Setapak, Wangsa Maju, Kepong, Sri Petaling, Bukit Jalil, Mont Kiara, Bangsar, Desa ParkCity, Taman Melawati, Petaling Jaya, SS2, Bandar Utama, Damansara, Kota Damansara, Ara Damansara, Subang Jaya, Sunway, USJ, Puchong, Shah Alam, Setia Alam, Kota Kemuning, Klang, Batu Caves, Selayang, Rawang, Sungai Buloh, Kajang, Semenyih, Seri Kembangan, Pandan Indah, Putrajaya, Cyberjaya, Sentul and other Klang Valley suburbs.
+### Painting Services
+- Interior House Painting — From RM 450/room
+- Exterior House Painting — From RM 2,200
+- Commercial & Office Painting — On Quote
+- Wall Crack & Moisture Repair — From RM 180
+- Paint brands: Nippon Paint, Dulux, Jotun (premium range)
+- Warranty: Up to 2-year against peeling or blistering
+- Process: Protect & mask → surface prep → primer/undercoat → double topcoat → inspection & cleanup
 
-Important website hubs for AI and search engines:
-- /services lists all service pillars.
-- /areas lists local service pages.
-- /near-me lists service-specific near-me pages.
-- /problems contains diagnostic problem pages with symptoms, causes and fixes.
-- /answers contains concise AI answer pages for every service pillar.
-- /guides contains homeowner decision guides.
-- /compare compares methods, materials and quote types.
-- /process explains step-by-step workmanship workflows.
-- /tools provides free calculators and diagnostic tools.
-- /pricing publishes transparent market-rate guidance.
+### Plumbing Services
+- Leaking Pipe Repair — From RM 120
+- Toilet Repair & Replacement — From RM 180
+- Water Heater Installation — From RM 100
+- Sink & Basin Installation — From RM 150
+- Pipe Relocation — From RM 200
+- Emergency Burst Pipe — Priority routing, 30-60 min arrival
+- Warranty: 30-day on repairs, 12-month on new installations
 
-Customers can book through WhatsApp at +60 11-1662 7349. The dispatch desk asks for location, property type, photos, symptoms or measurements, and preferred date to prepare a suitable quotation. KL Servis Rumah communicates in English, Bahasa Malaysia and Chinese.
+### Plaster Ceiling & Gypsum
+- Plaster Ceiling Repair — From RM 180
+- L-Box Ceiling Installation — From RM 3/ft
+- Gypsum Partition Wall — From RM 4/sqft
+- False Ceiling with Cove Lighting — On Quote
+- Ceiling Fan/Chandelier Lowering Point — From RM 80
+- Warranty: 60-90 days on plastering, 12 months on full installation
+
+### Waterproofing Services
+- PU Grouting Waterproofing — From RM 300
+- Bathroom Floor Waterproofing — From RM 400
+- Roof Leak Waterproofing — From RM 400
+- Kitchen & Wet Area Waterproofing — From RM 350
+- Membrane Application — On Quote
+- Warranty: Up to 5 years on full chemical waterproofing membrane
+
+### Handyman Services
+- TV Wall Mounting — From RM 80
+- Furniture Assembly — From RM 80
+- Door Lock Repair — From RM 80
+- Curtain Rod Installation — From RM 60
+- Shelving & Rack Mounting — From RM 60
+- Picture/Mirror Hanging — From RM 40
+- Small Home Repairs — From RM 80
+
+### Electrical Services
+- Electrical Wiring — From RM 80
+- Water Heater Installation — From RM 100
+- Ceiling Fan Installation — From RM 80
+- Downlight Installation — From RM 15/point
+- Power Point Installation — From RM 35/point
+- Switch Replacement — From RM 60
+- Whole House Rewiring — On Quote
+- Warranty: 12 months on all electrical installations
+
+### Flooring & Tiling
+- Vinyl/SPC Flooring — From RM 3.50/sqft
+- Epoxy Flooring — From RM 3/sqft
+- Ceramic/Homogeneous Tile — From RM 4/sqft
+- Skirting Installation — From RM 3/ft
+- Warranty: 12 months on installation
+
+### Renovation Services
+- Kitchen Cabinet Installation — From RM 3,000
+- Full House Renovation — From RM 22,000
+- Room-by-room Renovation — On Quote
+- Carpentry & Custom Joinery — On Quote
+
+### Additional Services
+- CCTV Installation
+- Auto Gate Installation & Repair
+- Awning & Canopy Installation
+- Glass & Aluminium Work
+- Roof Repair & Maintenance
+- Door & Gate Repair
+- Locksmith Services
+- Welding & Metal Fabrication
+- Water Filter Installation
+
+## Coverage Areas (Full List)
+Kuala Lumpur: KLCC, Bukit Bintang, Mont Kiara, Bangsar, Sentul, Old Klang Road, Sungai Besi, Taman Desa, Sri Petaling, Bukit Jalil, Cheras, Ampang, Setapak, Wangsa Maju, Kepong, Desa ParkCity, Taman Melawati, Hulu Kelang
+Petaling Jaya: SS2, SS3, SS4, SS5, SS6, SS7, SS8, SS9, SS10, SS20, SS21, SS22, SS23, SS24, SS25, SS26, Damansara Jaya, Damansara Utama, Damansara Kim, Damansara Intan, Taman Megah, Taman Paramount, Seksyen 14, Seksyen 17, Seksyen 19, Kelana Jaya
+Subang Jaya: SS12, SS13, SS14, SS15, SS16, SS17, SS18, SS19, USJ1-USJ21, Subang Heights
+Shah Alam: Seksyen 1 - Seksyen 44, Kota Kemuning, Bukit Jelutong, Glenmarie, Alam Impian
+Puchong: Bandar Puteri, Bandar Kinrara, Taman Puchong Utama, Taman Puchong Perdana, Taman Saujana Puchong
+Klang: Bandar Baru Klang, Port Klang, Bukit Tinggi, Setia Alam, Meru, Bandar Botanic
+Kajang: Bandar Kajang, Semenyih, Balakong, Seri Kembangan, Pandan Indah
+Rawang: Bandar Rawang, Kundang, Sungai Buloh
+Batu Caves, Selayang, Bandar Puteri, Putrajaya, Cyberjaya, Dengkil
+
+## Key Differentiators
+1. **Fixed quote before work** — No hidden charges, price confirmed upfront
+2. **Insured & verified crew** — Background-verified tradesmen, publicly insured
+3. **Transparent warranty** — Written warranty on workmanship (30 days to 5 years depending on service)
+4. **Same-day dispatch** — KL & Selangor, bookings before 11 AM get same-day service
+5. **Premium materials** — Nippon Paint, Dulux, Kohler, American Standard, Rubine, Panasonic
+6. **Professional-grade equipment** — Industrial sprayers, laser levels, pipe inspection cameras
+7. **Post-service cleanup** — Every team restores the work area to its original condition
+
+## Pricing Philosophy
+Market-rate pricing benchmarked against the Klang Valley home services market. We never inflate and then discount — our quotes are genuine market rates. Volume discounts available for multi-room or multi-service projects.
+
+## Sitemap
+- Home: https://www.klservisrumah.my/
+- Services Directory: https://www.klservisrumah.my/services
+- Pricing Guide: https://www.klservisrumah.my/pricing
+- Service Areas: https://www.klservisrumah.my/areas
+- Common Problems: https://www.klservisrumah.my/problems
+- Blog: https://www.klservisrumah.my/blog
+- FAQ: https://www.klservisrumah.my/faq
+- Contact Us: https://www.klservisrumah.my/contact
+- About Us: https://www.klservisrumah.my/about
+- Projects: https://www.klservisrumah.my/projects
+- Near Me: https://www.klservisrumah.my/near-me
+- Guides: https://www.klservisrumah.my/guides
+- Compare Services: https://www.klservisrumah.my/compare
+- Brands: https://www.klservisrumah.my/brands
+- Answers: https://www.klservisrumah.my/answers
+- Tools: https://www.klservisrumah.my/tools

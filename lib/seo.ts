@@ -44,9 +44,13 @@ function geoCoordinates() {
   };
 }
 
+/**
+ * Build a comprehensive areaServed array with GeoCoordinates for LocalBusiness schema.
+ * Matches KLRenovator's rich GeoCoordinate-aware area serving.
+ */
 export function getServiceAreaSchema(areas = siteConfig.areas) {
   return areas.map((area) => ({
-    "@type": "AdministrativeArea",
+    "@type": "City",
     name: area,
     containedInPlace: {
       "@type": "Country",
@@ -55,13 +59,36 @@ export function getServiceAreaSchema(areas = siteConfig.areas) {
   }));
 }
 
+/**
+ * Build a GeoCircle for the service radius (Klang Valley, ~50km from KL centre).
+ * Complements per-City areaServed list.
+ */
+export function buildServiceAreaGeoCircle() {
+  return {
+    "@type": "GeoCircle",
+    geoMidpoint: {
+      "@type": "GeoCoordinates",
+      latitude: siteConfig.geoLat,
+      longitude: siteConfig.geoLng
+    },
+    geoRadius: {
+      "@type": "Distance",
+      name: "50 km",
+      value: 50000,
+      unitCode: "MTR"
+    }
+  };
+}
+
 export function getOrganizationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
     "@id": `${baseUrl}/#organization`,
     name: siteConfig.name,
-    alternateName: ["KL Servis Rumah", "KLSR", "KL Home Services", siteConfig.legalName],
+    legalName: siteConfig.legalName,
+    taxID: siteConfig.ssm,
+    alternateName: ["KL Servis Rumah", "KLSR", "KL Home Services", "Servis Rumah KL", siteConfig.legalName],
     url: baseUrl,
     logo: {
       "@type": "ImageObject",
@@ -72,11 +99,19 @@ export function getOrganizationSchema() {
     image: absoluteUrl(siteConfig.defaultOgImage),
     description: siteConfig.description,
     slogan: siteConfig.tagline,
+    foundingDate: siteConfig.foundingDate,
+    numberOfEmployees: {
+      "@type": "QuantitativeValue",
+      value: siteConfig.numberOfEmployees
+    },
     telephone: siteConfig.phone,
     email: siteConfig.email,
-    priceRange: "$$",
+    priceRange: "RM80 - RM22000",
+    currenciesAccepted: "MYR",
+    paymentAccepted: "Cash, Bank Transfer, DuitNow",
     address: postalAddress(),
     geo: geoCoordinates(),
+    hasMap: siteConfig.links.googleMaps,
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
@@ -88,7 +123,11 @@ export function getOrganizationSchema() {
       siteConfig.links.instagram,
       siteConfig.links.tiktok,
       siteConfig.links.youtube,
-      siteConfig.googleBusinessProfile
+      siteConfig.links.googleMaps,
+      siteConfig.links.twitter,
+      siteConfig.links.linkedin,
+      siteConfig.links.pinterest,
+      siteConfig.links.medium
     ].filter(Boolean),
     contactPoint: [
       {
@@ -104,41 +143,34 @@ export function getOrganizationSchema() {
         contactType: "emergency",
         areaServed: ["Kuala Lumpur", "Selangor"],
         availableLanguage: ["English", "Malay", "Chinese"]
+      },
+      {
+        "@type": "ContactPoint",
+        url: siteConfig.whatsappLink,
+        contactType: "sales",
+        areaServed: "MY",
+        availableLanguage: ["English", "Malay", "Chinese"]
       }
     ],
-    knowsAbout: [
-      "House Painting",
-      "Interior Painting",
-      "Exterior Painting",
-      "Plumbing",
-      "Water Leak Repair",
-      "Plaster Ceiling",
-      "Gypsum Partition",
-      "Waterproofing",
-      "PU Grouting",
-      "Handyman Services",
-      "TV Wall Mounting",
-      "Furniture Assembly",
-      "Electrical Wiring",
-      "Water Heater Installation",
-      "Ceiling Fan Installation",
-      "Tiling",
-      "Flooring",
-      "Kitchen Cabinet",
-      "Door Repair",
-      "Locksmith",
-      "CCTV Installation",
-      "Auto Gate Installation",
-      "Roof Repair",
-      "House Renovation"
-    ],
+    knowsAbout: siteConfig.knowsAbout.map((k) => ({
+      "@type": "Thing",
+      name: k
+    })),
     parentOrganization: {
       "@type": "Organization",
       name: siteConfig.parentCompany,
       legalName: siteConfig.legalName
     },
-    areaServed: getServiceAreaSchema(),
-    aggregateRating: aggregateRating()
+    areaServed: [
+      ...getServiceAreaSchema(),
+      buildServiceAreaGeoCircle()
+    ],
+    aggregateRating: aggregateRating(),
+    brand: siteConfig.brandsSupported.map((brand) => ({
+      "@type": "Brand",
+      name: brand
+    })),
+    serviceType: siteConfig.serviceTypes
   };
 }
 
@@ -172,7 +204,7 @@ export function getLocalBusinessSchema() {
     image: absoluteUrl(siteConfig.defaultOgImage),
     url: baseUrl,
     telephone: siteConfig.phone,
-    priceRange: "$$",
+    priceRange: "RM80 - RM22000",
     address: postalAddress(),
     geo: geoCoordinates(),
     openingHoursSpecification: {
@@ -181,7 +213,10 @@ export function getLocalBusinessSchema() {
       opens: "09:00",
       closes: "18:00"
     },
-    areaServed: getServiceAreaSchema(),
+    areaServed: [
+      ...getServiceAreaSchema(),
+      buildServiceAreaGeoCircle()
+    ],
     aggregateRating: aggregateRating()
   };
 }
@@ -234,11 +269,20 @@ export function getServiceSchema(service: { title: string; description: string; 
       priceCurrency: "MYR",
       price: service.startPrice.replace(/[^0-9.]/g, ""),
       priceValidUntil: "2027-12-31",
-      availability: "https://schema.org/InStock"
+      availability: "https://schema.org/InStock",
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        price: service.startPrice.replace(/[^0-9.]/g, ""),
+        priceCurrency: "MYR",
+        description: `Starting from ${service.startPrice}`
+      }
     },
     hasOfferCatalog: detail ? getOfferCatalogSchema(detail.subServices) : undefined,
     aggregateRating: aggregateRating(),
-    areaServed: getServiceAreaSchema()
+    areaServed: [
+      ...getServiceAreaSchema(),
+      buildServiceAreaGeoCircle()
+    ]
   };
 }
 
@@ -280,7 +324,7 @@ export function getLocalBusinessServiceSchema(area: AreaDetail | SuburbDetail, s
     name: `${siteConfig.name} — ${service.title} in ${area.name}`,
     url: absoluteUrl(path ?? `/areas/${area.slug}/${service.slug}`),
     telephone: siteConfig.phone,
-    priceRange: "$$",
+    priceRange: "RM80 - RM22000",
     image: absoluteUrl(service.heroImage),
     address: postalAddress(),
     geo: {
