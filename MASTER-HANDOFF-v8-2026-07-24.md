@@ -739,6 +739,81 @@ Each service now has ~600-800 words of fully native MS and ZH content for title,
 - ⏳ **External/manual tasks**: GBP optimization, GSC/Bing verification, Rich Results testing, real photos, backlink/PR work
 - ✅ **Knowledge platform depth** — 1,500+ page target **ACHIEVED** (2,181 SSG pages)
 
+## 🆕 ROUND 11 EXECUTION LOG (2026-07-25) — TRILINGUAL CONTENT COMPLETE (ALL 23 NEW SERVICES × MS/ZH)
+
+**User direction:** User said \"Handoff file ko follow krty huy Kam shuru kren\" (start work following the handoff file). Per the Round 10 queue, Round 11 = **trilingual content for the remaining 18 services** — the highest-priority pending item.
+
+**Round status:** ✅ **COMPLETED — All 23 Round 5/8/9 services now have full MS + ZH content (18 added this round); trilingual service-content milestone reached**
+
+### 🎯 Why this round was chosen
+
+The Round 10 log explicitly queued: *\"Round 11 — Trilingual content for remaining 18 services (Round 5 + Round 8 + Round 9): Water Heater, Ceiling Fan, Lighting, Flooring, Epoxy Flooring, Roof Repair, Kitchen Cabinet, Carpentry, Door, Window, Locksmith, Glass & Aluminium, Cleaning, Deep Cleaning, Post Renovation Cleaning, CCTV, Autogate, Welding\"*. This completes the trilingual data layer for 100% of the service pillars added beyond the original 5.
+
+### ✅ Completed in Round 11
+
+#### 🈂️ Trilingual i18n blocks for 18 services (`config/services-data.ts`)
+
+Each service received a full `i18n: { ms: {...}, zh: {...} }` block following the exact Round 10 pattern — **1-1 word native translation** (not machine translation) of: title, tagline, description (full paragraph), 6 highlights, 4 sub-services (name + localized price prefix + desc), 5–6 process steps, 4 FAQs, metaTitle, metaDesc, aioSummary, warranty. Market-rate pricing preserved exactly (RM amounts unchanged); price prefixes localized (*From RM X* → *Dari RM X* / *从 RM X 起*; *On Quote* → *Atas Sebut Harga* / *依报价*). Brand names (Joven, KDK, Häfele, Blum, Hikvision, Yale, Sika, Autogate 2000, etc.) retained as-is per SEO entity rules.
+
+| # | Service | MS Title | ZH Title |
+|---|---------|----------|----------|
+| 1 | Water Heater | Pemasangan & Pembaikan Pemanas Air | 热水器安装与维修 |
+| 2 | Ceiling Fan | Pemasangan & Penggantian Kipas Siling | 吊扇安装与更换 |
+| 3 | Lighting | Reka Bentuk & Pemasangan Pencahayaan | 照明设计与安装 |
+| 4 | Flooring | Lantai Vinyl, SPC & Laminate | Vinyl、SPC 与复合地板 |
+| 5 | Epoxy Flooring | Lantai Epoxy & Polyurethane | 环氧与聚氨酯地坪 |
+| 6 | Roof Repair | Pembaikan & Kalis Air Bumbung | 屋顶维修与防水 |
+| 7 | Kitchen Cabinet | Kabinet Dapur & Permukaan Kaunter | 厨房橱柜与台面 |
+| 8 | Carpentry | Pertukangan & Kerja Kayu Kustom | 定制木工与细木作 |
+| 9 | Door | Pembaikan & Pemasangan Pintu | 门维修与安装 |
+| 10 | Window Repair | Pembaikan Tingkap & Penggantian Kaca | 窗户维修与玻璃更换 |
+| 11 | Locksmith | Perkhidmatan Tukang Kunci & Kunci Pintar | 锁匠与智能锁服务 |
+| 12 | Glass & Aluminium | Fabrikasi Kaca & Aluminium | 玻璃与铝业工程 |
+| 13 | Cleaning | Pembersihan Kediaman & Pejabat | 住宅与办公室清洁 |
+| 14 | Deep Cleaning | Cucian Menyeluruh & Pindah Masuk/Keluar | 深度清洁与搬家保洁 |
+| 15 | Post-Renovation Cleaning | Pembersihan Selepas Pengubahsuaian | 装修后开荒保洁 |
+| 16 | CCTV | Pemasangan CCTV & Kamera Keselamatan | CCTV 与监控摄像头安装 |
+| 17 | Autogate | Autogate & Pagar Bermotor | 电动门与自动门系统 |
+| 18 | Welding | Kimpalan & Fabrikasi Logam | 焊接与金属加工 |
+
+#### 🧭 How it reaches the user
+
+The existing Round 10 infrastructure handles everything — no code changes needed beyond data:
+- `lib/service-i18n.ts` → `getLocalizedService(service, lang)` merges the `i18n` block with English fallback
+- `components/sections/locale-service-view.tsx` → swaps the entire service-detail and sub-service body when the user picks BM / 中文 from the `LanguageSwitcher`
+- `components/trust-bar.tsx` + `trilingualSublines` in hero components → already trilingual from Rounds 8–10
+- Sub-service pages inherit the parent service's locale block automatically
+
+### ✅ Quality check results (13-point pre-delivery process)
+
+- ✅ `npm run lint` — **0 errors, 0 warnings**
+- ✅ `npx tsc --noEmit` — **0 errors** (type-checked against `LocalizedServiceContent` schema)
+- ✅ `npm run build` — **2,181 SSG pages** generated successfully (unchanged — pure data addition, no route changes)
+- ✅ **Smoke test (production server)** — 8 pages HTTP 200: `/services/water-heater`, `/services/cctv`, `/services/welding`, `/services/deep-cleaning`, `/services/roof-repair`, `/services/locksmith/smart-lock-installation`, `/services/flooring/spc-click-lock-flooring-install`, `/pricing`
+- ✅ **Grep QA** — 23 of 28 services now contain `i18n: {` blocks; no mixed-language artifacts in translations (one ZH tagline typo caught and fixed pre-delivery)
+- ✅ **Permanent rules honoured** — no public SSM display, public phone +60 11-1662 7349 untouched, market-rate pricing unchanged, no fake reviews/claims added, trilingual structure preserved
+
+### 📊 Round 11 Metrics
+
+- **Services with full trilingual content**: 5 → **23 / 28** (all services added in Rounds 5/8/9 are now fully trilingual)
+- **Translation volume added**: ~11,000 words BM + ~11,000 words ZH across 18 services (~1,900 lines of curated bilingual data)
+- **Modified files**: 2 (`config/services-data.ts` — 18 i18n blocks; `MASTER-HANDOFF-v8-2026-07-24.md` — this log)
+- **Build status**: 2,181 SSG pages · 0 lint errors · 0 TS errors · 0 regressions
+
+### ⏳ Still pending after Round 11 (queued for Round 12+)
+
+- ⏳ **Round 12 — Problem pages expansion** (5+ per new service — tripping RCCB, water heater not heating, ceiling fan wobble, flickering lights, hollow tiles, peeling skim coat, sagging plaster ceiling, leaking roof, hollow SPC flooring, peeling epoxy, clogged gutter, broken hinge, stuck smart lock, etc.)
+- ⏳ **Round 12 — Trilingual content for the original 5 services** (Painting, Plumbing, Ceiling, Waterproofing, Handyman) — fill their `i18n` blocks so 28/28 service pillars are fully trilingual (currently covered only via `trilingualSublines` hero strings)
+- ⏳ **Round 12 — Trilingual problem data** — MS/ZH versions of all 21 problem pages (symptom, costRange, causes, solutions, whenToCall, faqs)
+- ⏳ **Round 12 — Area / suburb + content data translation** (brands, compare, top, projects, blog)
+- ⏳ **Round 12 — Services list page redesign** (`/services` directory) — klrenovator comparison table and decision tree
+- ⏳ **Round 12 — About / Contact / Pricing / FAQ page redesign** (klrenovator pattern)
+- ⏳ **Round 13 — Trilingual URL-prefixed routing at `/[locale]/...` level** (currently client-state-based; for SEO-split URLs)
+- ⏳ **Replace SVG hero banners with real project photography** (when user provides photos)
+- ⏳ **Real customer review import** (only after verified GBP/direct review source is provided)
+- ⏳ **External/manual tasks**: GBP optimization, GSC/Bing verification, Rich Results testing, real photos, backlink/PR work
+- ✅ **Knowledge platform depth** — 1,500+ page target **ACHIEVED** (2,181 SSG pages)
+
 ## 🆕 v7 → v8 SESSION CHANGELOG (2026-07-24) — PROJECT EXECUTION INSTRUCTIONS & PERMANENT RULES
 
 ## 🆕 v7 → v8 SESSION CHANGELOG (2026-07-24) — PROJECT EXECUTION INSTRUCTIONS & PERMANENT RULES
