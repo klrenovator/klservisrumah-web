@@ -1,5 +1,28 @@
 # KL SERVIS RUMAH — MASTER WEBSITE HANDOFF DOCUMENT
 
+## 🆕 ROUND 16 EXECUTION LOG (2026-07-25) — SLIGHTLY LONGER WORDMARK
+
+**Round status:** ✅ **COMPLETED**
+
+### ✅ What was changed
+- ✅ Adjusted the shared full-logo presentation to be approximately 10% wider while keeping the existing height, artwork, colours, alt text, and icon variant unchanged.
+- ✅ Applied the adjustment centrally in `components/ui/logo.tsx`, so the navbar and footer remain consistent without duplicating styling.
+- ✅ Kept the logo responsive at each existing `sm`, `md`, `lg`, and `xl` size; no source image or brand asset was overwritten.
+
+### 📁 Files modified
+- ✅ `components/ui/logo.tsx`
+- ✅ `MASTER-HANDOFF-v8-2026-07-24.md`
+
+### ⚠️ Remaining issues
+- ⏳ Real project photography and verified customer reviews still require approved source assets/data.
+- ⏳ The broader trilingual/content and URL-prefixed routing items listed in Round 15 remain pending.
+
+### ➡️ Recommended next steps
+- Pending user-approved real photography, review-source import, and future multilingual content expansion.
+- Validate the wider wordmark against the deployed navbar at the smallest supported viewport during visual QA.
+
+---
+
 **v8 — 2026-07-24 — PROJECT EXECUTION INSTRUCTIONS & PERMANENT RULES (Pre-Implementation, Pending Approval)**
 **Prepared for:** Asiya / Tauseef — KL Servis Rumah (Multicore Dynamics Resources)
 **Domain:** https://www.klservisrumah.my
