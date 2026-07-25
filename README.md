@@ -2,7 +2,7 @@
 
 Professional, modern, and SEO-focused Home Services website for **KL Servis Rumah** (parent company: **Multicore Dynamics Resources**), serving Kuala Lumpur and Selangor, Malaysia.
 
-This project is built from scratch with an elite, enterprise-level architecture using Next.js 15, React 19, HeroUI v3, and Tailwind CSS v4.
+This project uses an enterprise-level Next.js 15 + React 19 + Tailwind CSS v4 architecture with reusable SEO, AEO, GEO and local-service components. Heavy UI/animation runtimes were removed in favour of native CSS and lightweight React components.
 
 ---
 
@@ -23,8 +23,8 @@ Language switching is handled via React context + localStorage, with all UI stri
 - **Core Library**: [React 19](https://react.dev/)
 - **Programming Language**: [TypeScript](https://www.typescriptlang.org/)
 - **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
-- **UI Components**: [HeroUI v3 (formerly NextUI)](https://heroui.com/)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **UI Components**: Custom reusable React components styled with Tailwind CSS
+- **Animations**: Native CSS transitions and lightweight IntersectionObserver reveal effects
 - **Forms & Validation**: [React Hook Form](https://react-hook-form.com/) & [Zod](https://zod.dev/)
 - **Icons**: [Lucide React](https://lucide.dev/)
 - **Middleware**: Next.js Middleware for locale URL handling
@@ -60,7 +60,7 @@ To build the static optimized pages and verify TypeScript compilations:
 npm run build
 ```
 
-The build generates **2,200+ static pages** (SSG) covering all services, suburbs, areas, problems, guides, and more.
+The build generates **3,100+ static pages** (SSG) covering services, suburbs, areas, problems, guides, comparison hubs, answer hubs, tools, and more.
 
 ---
 
@@ -171,7 +171,7 @@ The project is pre-optimized for continuous zero-downtime integration on Vercel:
 
 - **Total Services**: 28 service pillars
 - **Sub-Services**: 137+ specialized sub-services
-- **Total Pages**: 2,200+ static pages (SSG)
+- **Total Pages**: 3,100+ static pages (SSG)
 - **Languages**: 3 (English, Bahasa Malaysia, Chinese)
 - **Suburbs Covered**: 49+ across KL & Selangor
 - **Problem Pages**: 43 diagnostic/solution pages
