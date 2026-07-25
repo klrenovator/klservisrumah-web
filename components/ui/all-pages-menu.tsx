@@ -12,6 +12,8 @@ import { useTranslations } from "@/hooks/use-translations";
 const MAIN_LINK_KEYS: Record<string, string> = {
   "/": "nav.home",
   "/services": "nav.services",
+  "/areas": "nav.areas",
+  "/problems": "nav.problems",
   "/pricing": "nav.pricing",
   "/faq": "nav.faq",
   "/blog": "nav.blog",
