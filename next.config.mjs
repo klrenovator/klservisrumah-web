@@ -12,9 +12,20 @@ const nextConfig = {
     minimumCacheTTL: 31536000,
   },
   experimental: {
+    // NB: `cpus: 1` and `workerThreads: false` are kept from the original
+    // repo to stabilise build memory on constrained CI runners.
     cpus: 1,
     workerThreads: false,
-    optimizePackageImports: ["lucide-react", "framer-motion"],
+    // Tree-shake the biggest offenders. Every package here has hundreds
+    // of exports; without this Next.js pulls the whole barrel file into
+    // the client bundle even when a single icon is used.
+    optimizePackageImports: [
+      "lucide-react",
+      "clsx",
+      "tailwind-merge",
+      "react-hook-form",
+      "zod",
+    ],
   },
   async headers() {
     return [

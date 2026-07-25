@@ -1,9 +1,12 @@
 import React from "react";
 import { notFound } from "next/navigation";
 import { areaPages } from "@/config/area-data";
-import { getBreadcrumbSchema, getFAQSchema } from "@/lib/seo";
+import { getBreadcrumbSchema, getFAQSchema, getSpeakableSchema } from "@/lib/seo";
 import { buildAreaBundle } from "@/lib/location-bundles";
 import { LocaleAreaView } from "@/components/sections/locale-area-view";
+import { siteConfig } from "@/config/site";
+
+const baseUrl = "https://www.klservisrumah.my";
 
 export async function generateStaticParams() {
   return areaPages.map((area) => ({
@@ -19,13 +22,49 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   return {
     title: area.metaTitle,
     description: area.metaDesc,
+    keywords: [
+      `home services ${area.name}`,
+      `painter ${area.name}`,
+      `plumber ${area.name}`,
+      `handyman ${area.name}`,
+      `waterproofing ${area.name}`,
+      `plaster ceiling ${area.name}`,
+      `${area.name} renovation`,
+      area.name,
+      area.shortName,
+      area.state,
+      "KL Servis Rumah"
+    ],
     alternates: {
-      canonical: `/areas/${area.slug}`
+      canonical: `/areas/${area.slug}`,
+      languages: {
+        "en-MY": `/areas/${area.slug}`,
+        "ms-MY": `/ms/areas/${area.slug}`,
+        "zh-MY": `/zh/areas/${area.slug}`,
+        "x-default": `/areas/${area.slug}`
+      }
     },
     openGraph: {
       title: area.metaTitle,
       description: area.metaDesc,
-      url: `https://www.klservisrumah.my/areas/${area.slug}`
+      url: `${baseUrl}/areas/${area.slug}`,
+      siteName: "KL Servis Rumah",
+      type: "website",
+      locale: "en_MY",
+      images: [
+        {
+          url: siteConfig.defaultOgImage,
+          width: 1200,
+          height: 630,
+          alt: `${area.name} home services — KL Servis Rumah`
+        }
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: area.metaTitle,
+      description: area.metaDesc,
+      images: [siteConfig.defaultOgImage]
     }
   };
 }
@@ -45,6 +84,45 @@ export default async function AreaSlugPage(props: { params: Promise<{ slug: stri
   ];
   const breadcrumbSchema = getBreadcrumbSchema(crumbs);
   const faqSchema = getFAQSchema(area.faqs);
+  const speakableSchema = getSpeakableSchema(["h1", ".area-intro", ".faq-answer"]);
+
+  // Area-specific LocalBusiness Service schema — signals that KL Servis
+  // Rumah services this exact locality (crucial for local-pack ranking).
+  const areaServiceSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": `${baseUrl}/areas/${area.slug}#localbusiness`,
+    name: `${siteConfig.name} — ${area.name}`,
+    description: area.description,
+    url: `${baseUrl}/areas/${area.slug}`,
+    telephone: siteConfig.phone,
+    priceRange: "$$",
+    image: siteConfig.defaultOgImage,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: area.name,
+      addressRegion: area.state,
+      addressCountry: "MY"
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: area.lat,
+      longitude: area.lng
+    },
+    areaServed: {
+      "@type": "City",
+      name: area.name,
+      containedInPlace: { "@type": "State", name: area.state }
+    },
+    parentOrganization: { "@id": `${baseUrl}/#organization` },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: siteConfig.reviewRating,
+      reviewCount: siteConfig.reviewCount,
+      bestRating: 5,
+      worstRating: 1
+    }
+  };
 
   return (
     <>
@@ -55,6 +133,14 @@ export default async function AreaSlugPage(props: { params: Promise<{ slug: stri
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(areaServiceSchema) }}
       />
 
       <LocaleAreaView slug={area.slug} landmarks={area.landmarks} bundle={buildAreaBundle(area)} />

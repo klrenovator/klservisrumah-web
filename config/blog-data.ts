@@ -166,5 +166,23 @@ If your plaster ceiling is showing damp spots, don't wait for it to collapse and
     `
   }
 ];
-export const blogCategories = ["All", "Painting", "Plumbing", "Ceiling", "Waterproofing", "Handyman"];
+
+// Extra long-form blog posts (kept in a separate file for readability).
+// Appended to `blogPosts` so downstream imports remain a single source of truth.
+import { extraBlogPosts } from "@/config/blog-data-extra";
+(blogPosts as BlogPost[]).push(...extraBlogPosts);
+
+export const blogCategories = [
+  "All",
+  "Painting",
+  "Plumbing",
+  "Ceiling",
+  "Waterproofing",
+  "Handyman",
+  "Renovation",
+  "Electrical",
+  "Flooring",
+  "Seasonal",
+  "Guide"
+];
 export default blogPosts;
