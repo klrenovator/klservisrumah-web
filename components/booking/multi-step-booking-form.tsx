@@ -5,6 +5,7 @@ import { servicesData } from "@/config/services-data";
 import { suburbPages } from "@/config/suburb-data";
 import { siteConfig } from "@/config/site";
 import { trackFormSubmit, trackWhatsAppClick } from "@/lib/analytics";
+import { useTranslations } from "@/hooks/use-translations";
 
 const serviceOptions = Object.values(servicesData);
 const propertyTypes = ["Landed", "Condo / Apartment", "Commercial / Office", "Shoplot", "Other"];
@@ -42,6 +43,7 @@ export function MultiStepBookingForm() {
   const [step, setStep] = useState(1);
   const [form, setForm] = useState<FormState>(initialState);
   const [submitted, setSubmitted] = useState(false);
+  const t = useTranslations();
 
   const selectedService = form.service ? servicesData[form.service] : null;
   const subServices = selectedService?.subServices ?? [];
@@ -109,7 +111,7 @@ export function MultiStepBookingForm() {
 
       <div className="min-h-80">
         {step === 1 && (
-          <StepShell title="Select service category">
+          <StepShell title={t("contact.fields.service")}>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
               {serviceOptions.map((service) => (
                 <button key={service.slug} onClick={() => update("service", service.slug)} className={`rounded-2xl border p-4 text-left transition ${form.service === service.slug ? "border-[#0284C7] bg-[#E0F2FE]" : "border-slate-100 bg-slate-50 hover:bg-white"}`}>
@@ -122,7 +124,7 @@ export function MultiStepBookingForm() {
         )}
 
         {step === 2 && (
-          <StepShell title="Choose sub-service (or continue if unsure)">
+          <StepShell title={t("contact.fields.subService")}>
             <div className="grid grid-cols-1 gap-3">
               {subServices.map((sub) => (
                 <button key={sub.name} onClick={() => update("subService", sub.name)} className={`rounded-2xl border p-4 text-left transition ${form.subService === sub.name ? "border-[#0284C7] bg-[#E0F2FE]" : "border-slate-100 bg-slate-50 hover:bg-white"}`}>
@@ -136,7 +138,7 @@ export function MultiStepBookingForm() {
         )}
 
         {step === 3 && (
-          <StepShell title="Area and property type">
+          <StepShell title={t("contact.fields.location")}>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
                 Area / Suburb
@@ -157,7 +159,7 @@ export function MultiStepBookingForm() {
         )}
 
         {step === 4 && (
-          <StepShell title="Preferred date and time">
+          <StepShell title={t("contact.fields.schedule")}>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
                 Preferred date
@@ -174,7 +176,7 @@ export function MultiStepBookingForm() {
         )}
 
         {step === 5 && (
-          <StepShell title="Problem details and photos">
+          <StepShell title={t("contact.fields.problem")}>
             <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
               Describe the job
               <textarea value={form.details} onChange={(event) => update("details", event.target.value)} rows={5} placeholder="Example: bathroom ceiling is dripping after shower, stain is about 1 meter wide..." className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]" />
@@ -190,12 +192,12 @@ export function MultiStepBookingForm() {
         )}
 
         {step === 6 && (
-          <StepShell title="Contact information">
+          <StepShell title={t("contact.fields.contact")}>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <Input label="Full name" value={form.name} onChange={(value) => update("name", value)} />
-              <Input label="WhatsApp / phone" value={form.phone} onChange={(value) => update("phone", value)} placeholder="01116627349" />
+              <Input label={t("contact.fields.name")} value={form.name} onChange={(value) => update("name", value)} />
+              <Input label={t("contact.fields.phone")} value={form.phone} onChange={(value) => update("phone", value)} placeholder="01116627349" />
               <div className="sm:col-span-2">
-                <Input label="Email (optional)" value={form.email} onChange={(value) => update("email", value)} placeholder="you@example.com" />
+                <Input label={t("contact.fields.email")} value={form.email} onChange={(value) => update("email", value)} placeholder="you@example.com" />
               </div>
             </div>
           </StepShell>

@@ -13,7 +13,9 @@
     "learnMore": "Ketahui lebih lanjut",
     "readMore": "Baca lagi",
     "fromPrice": "Dari {price}",
-    "fromLabel": "Dari"
+    "fromLabel": "Dari",
+    "back": "Kembali",
+    "continue": "Teruskan"
   },
   "nav": {
     "home": "Utama",
@@ -145,7 +147,14 @@
       "service": "Perkhidmatan Diperlukan",
       "area": "Kawasan Servis / Alamat",
       "message": "Terangkan kerja yang diperlukan",
-      "urgency": "Kecemasan"
+      "urgency": "Kecemasan",
+      "date": "Tarikh pilihan",
+      "propertyType": "Jenis hartanah",
+      "contact": "Maklumat hubungan",
+      "problem": "Butiran masalah dan foto",
+      "schedule": "Tarikh dan masa pilihan",
+      "location": "Kawasan dan jenis hartanah",
+      "subService": "Pilih subperkhidmatan (atau teruskan jika tidak pasti)"
     },
     "urgencyLevels": {
       "low": "Dalam masa seminggu",
@@ -155,7 +164,10 @@
     },
     "submit": "Hantar permintaan tempahan",
     "whatsappHeading": "Lebih suka WhatsApp?",
-    "whatsappDescription": "Ketik butang di bawah untuk berbual dengan meja penghantaran kami. Hantar foto untuk sebut harga yang lebih pantas."
+    "whatsappDescription": "Ketik butang di bawah untuk berbual dengan meja penghantaran kami. Hantar foto untuk sebut harga yang lebih pantas.",
+    "step": "Langkah",
+    "of": "daripada",
+    "openWhatsApp": "Buka WhatsApp Lagi"
   },
   "pricing": {
     "pageTitle": "Harga Kami",

@@ -1,5 +1,31 @@
 # KL SERVIS RUMAH — MASTER WEBSITE HANDOFF DOCUMENT
 
+## 🆕 ROUND 18 EXECUTION LOG (2026-07-25) — TRILINGUAL BOOKING FORM
+
+**Round status:** ✅ **COMPLETED**
+
+### ✅ What was changed
+- ✅ Wired the multi-step booking form to the existing EN/MS/ZH translation system.
+- ✅ Localized the form heading, step headings, contact labels, navigation buttons, and WhatsApp completion action.
+- ✅ Added the missing shared translation keys to all three message dictionaries.
+- ✅ Preserved the existing validation, WhatsApp payload, service options, suburb options, analytics events, and booking flow.
+
+### 📁 Files modified
+- ✅ `components/booking/multi-step-booking-form.tsx`
+- ✅ `messages/en.json`
+- ✅ `messages/ms.json`
+- ✅ `messages/zh.json`
+- ✅ `MASTER-HANDOFF-v8-2026-07-24.md`
+
+### ⚠️ Remaining issues
+- ⏳ Some descriptive helper text and option values in the booking form remain English-only and should be localized in a follow-up refinement.
+- ⏳ Services directory deeper sections and location/content datasets remain pending per the roadmap.
+
+### ➡️ Recommended next steps
+- Localize booking option values and helper text, then continue with the services directory sections.
+
+---
+
 ## 🆕 ROUND 17 EXECUTION LOG (2026-07-25) — WEBSITE-MATCHED LOGO COLOURS
 
 **Round status:** ✅ **COMPLETED**
