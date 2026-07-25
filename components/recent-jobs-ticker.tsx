@@ -38,7 +38,7 @@ export function RecentJobsTicker() {
 
   return (
     <div
-      className="pointer-events-none fixed inset-x-0 top-24 z-40 flex justify-center px-4 sm:top-28"
+      className="pointer-events-none fixed inset-x-0 top-24 z-40 flex justify-center px-4"
       aria-live="polite"
     >
       <div
