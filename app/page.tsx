@@ -54,6 +54,26 @@ const HOMEPAGE_FAQS = [
   {
     q: "Which areas in KL & Selangor do you cover?",
     a: `We cover all of Kuala Lumpur and Selangor including ${siteConfig.areas.slice(0, 24).join(", ")} and more. Same-day dispatch is available across the entire Klang Valley — WhatsApp ${siteConfig.phoneDisplay} for coverage confirmation.`
+  },
+  {
+    q: "How do I book home services in KL?",
+    a: "Booking is simple: (1) Select your service and location on our homepage quote form, (2) Click 'Get My Instant Quote', (3) You'll be connected to WhatsApp with our team immediately. For urgent issues, call us directly at " + siteConfig.phoneDisplay + ". We respond within 30 minutes during business hours."
+  },
+  {
+    q: "What makes KL Servis Rumah different from other home service providers?",
+    a: "Four key differences: (1) Background-verified tradesmen only, (2) Fixed-price quotes before work begins - no variation orders, (3) Written warranties on all work, (4) Insured operations with public liability coverage. Plus: same-day dispatch, transparent pricing, and clean work practices."
+  },
+  {
+    q: "Can I get a quote before booking?",
+    a: "Absolutely. Use our instant quote form on the homepage to get pricing in 60 seconds. Or WhatsApp us with photos of your problem - we'll provide a preliminary quote range before scheduling a site visit if needed."
+  },
+  {
+    q: "Do you provide services for commercial properties?",
+    a: "Yes. We handle light-commercial projects: office painting, plumbing for shoplots, ceiling & partition for offices, commercial waterproofing, and maintenance contracts. We coordinate with building management for condos and commercial spaces."
+  },
+  {
+    q: "What payment methods do you accept?",
+    a: "We offer flexible payment: (1) Pay after service completion (most popular), (2) Milestone payments for larger projects, (3) Online transfer, (4) Cash. No upfront deposits required for standard services."
   }
 ];
 
