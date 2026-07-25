@@ -160,5 +160,38 @@
   "languageSwitcher": {
     "label": "选择语言",
     "currentLanguage": "当前语言：{lang}"
+  },
+  "menu": {
+    "button": "全部页面",
+    "aria": "打开全部页面菜单",
+    "title": "浏览网站",
+    "subtitle": "所有页面尽在一处",
+    "main": "主要页面",
+    "services": "全部服务",
+    "problems": "问题指南",
+    "tools": "免费工具",
+    "explore": "更多探索",
+    "close": "关闭菜单",
+    "links": {
+      "areas": "服务区域",
+      "nearMe": "附近服务",
+      "projects": "项目案例",
+      "guides": "实用指南",
+      "compare": "对比评测",
+      "top": "最佳榜单",
+      "brands": "合作品牌",
+      "answers": "快速解答",
+      "process": "服务流程",
+      "commercial": "商业服务",
+      "residential": "住宅服务",
+      "seasonal": "季节保养"
+    }
+  },
+  "whatsappDesk": {
+    "title": "WhatsApp 调度台",
+    "body": "吉隆坡与雪兰莪当日可约。WhatsApp 联系我们，即时获取透明报价！",
+    "cta": "与调度台对话",
+    "aria": "打开 WhatsApp 对话",
+    "close": "关闭"
   }
 }

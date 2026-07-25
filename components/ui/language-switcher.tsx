@@ -2,18 +2,20 @@
 
 import React from "react";
 import { usePathname, useRouter } from "next/navigation";
-import { Languages } from "lucide-react";
 import { type SupportedLang, useLang } from "@/context/lang-context";
-import { LOCALE_LABELS, type Locale, stripLocale, withLocale } from "@/lib/i18n";
 import { useTranslations } from "@/hooks/use-translations";
 
-const supportedLangs: SupportedLang[] = ["en", "ms", "zh"];
+const LANG_OPTIONS: { code: SupportedLang; short: string; full: string }[] = [
+  { code: "en", short: "EN", full: "English" },
+  { code: "ms", short: "BM", full: "Bahasa Malaysia" },
+  { code: "zh", short: "中", full: "中文" }
+];
 
 function stripLang(pathname: string): string {
-  for (const code of supportedLangs) {
-    if (pathname === `/${code}`) return "/";
-    if (pathname.startsWith(`/${code}/`)) {
-      return pathname.slice(code.length + 1) || "/";
+  for (const code of LANG_OPTIONS) {
+    if (pathname === `/${code.code}`) return "/";
+    if (pathname.startsWith(`/${code.code}/`)) {
+      return pathname.slice(code.code.length + 1) || "/";
     }
   }
   return pathname;
@@ -25,6 +27,10 @@ function pushWithLang(pathname: string, nextLang: SupportedLang): string {
   return `/${nextLang}${cleanPath === "/" ? "" : cleanPath}`;
 }
 
+/**
+ * Trilingual language switcher — klrenovator.com-style segmented pill
+ * (EN | BM | 中) with the active locale highlighted.
+ */
 export function LanguageSwitcher() {
   const { lang, setLang } = useLang();
   const pathname = usePathname() || "/";
@@ -32,28 +38,40 @@ export function LanguageSwitcher() {
   const t = useTranslations();
 
   const handleChange = (nextLang: SupportedLang) => {
+    if (nextLang === lang) return;
     setLang(nextLang);
-    const target = pushWithLang(pathname, nextLang);
-    router.push(target);
+    router.push(pushWithLang(pathname, nextLang));
   };
 
   return (
-    <label className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-2.5 py-2 text-xs font-bold text-[#075985] shadow-xs">
-      <Languages className="h-4 w-4 text-[#0EA5E9]" aria-hidden="true" />
-      <span className="sr-only">{t("languageSwitcher.label")}</span>
-      <select
-        value={lang}
-        onChange={(event) => handleChange(event.target.value as SupportedLang)}
-        className="bg-transparent outline-none cursor-pointer"
-        aria-label={t("languageSwitcher.label")}
-      >
-        {supportedLangs.map((code) => (
-          <option key={code} value={code}>{LOCALE_LABELS[code as Locale]}</option>
-        ))}
-      </select>
-    </label>
+    <div
+      role="group"
+      aria-label={t("languageSwitcher.label")}
+      className="inline-flex items-center rounded-full border border-slate-200 bg-white p-0.5 shadow-xs"
+    >
+      {LANG_OPTIONS.map((option) => {
+        const active = lang === option.code;
+        return (
+          <button
+            key={option.code}
+            type="button"
+            onClick={() => handleChange(option.code)}
+            aria-pressed={active}
+            aria-label={option.full}
+            title={option.full}
+            className={`rounded-full px-2.5 py-1 text-[11px] font-bold leading-5 transition-colors ${
+              active
+                ? "bg-[#0284C7] text-white shadow-sm"
+                : "text-[#475569] hover:bg-slate-50 hover:text-[#075985]"
+            }`}
+          >
+            {option.short}
+          </button>
+        );
+      })}
+    </div>
   );
 }
 
 // Re-export helper for advanced callers
-export { stripLocale, withLocale };
+export { stripLocale, withLocale } from "@/lib/i18n";

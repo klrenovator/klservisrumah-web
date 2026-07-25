@@ -160,5 +160,38 @@
   "languageSwitcher": {
     "label": "Pilih bahasa",
     "currentLanguage": "Bahasa semasa: {lang}"
+  },
+  "menu": {
+    "button": "Semua Halaman",
+    "aria": "Buka menu semua halaman",
+    "title": "Terokai Laman Web",
+    "subtitle": "Setiap halaman di satu tempat",
+    "main": "Halaman Utama",
+    "services": "Semua Perkhidmatan",
+    "problems": "Panduan Masalah",
+    "tools": "Alatan Percuma",
+    "explore": "Terokai Lagi",
+    "close": "Tutup menu",
+    "links": {
+      "areas": "Kawasan Perkhidmatan",
+      "nearMe": "Berhampiran Saya",
+      "projects": "Projek Kami",
+      "guides": "Panduan",
+      "compare": "Perbandingan",
+      "top": "Senarai Terbaik",
+      "brands": "Jenama",
+      "answers": "Jawapan Pantas",
+      "process": "Proses Kami",
+      "commercial": "Komersial",
+      "residential": "Kediaman",
+      "seasonal": "Bermusim"
+    }
+  },
+  "whatsappDesk": {
+    "title": "Meja Dispatch WhatsApp",
+    "body": "Slot hari sama tersedia di KL & Selangor. WhatsApp kami untuk sebut harga telus serta-merta!",
+    "cta": "Sembang Dengan Dispatch",
+    "aria": "Buka sembang WhatsApp",
+    "close": "Tutup"
   }
 }

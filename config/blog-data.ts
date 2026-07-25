@@ -70,7 +70,7 @@ Even the most expensive premium paint topcoat will peel, bubble, or flake if you
 ### Need Professional Painting in KL & Selangor?
 Don't risk crooked borders, paint splatters on your expensive sofa, or peeling coats. **KL Servis Rumah** provides fully insured house painting with 100% transparent pricing and comprehensive warranties. 
 
-*   *Room painting from RM 400*
+*   *Room painting from RM 450*
 *   *Nippon Paint & Dulux premium brands*
 *   *Zero-mess furniture masking protection*
 

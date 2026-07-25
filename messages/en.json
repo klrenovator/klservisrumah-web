@@ -160,5 +160,38 @@
   "languageSwitcher": {
     "label": "Select language",
     "currentLanguage": "Current language: {lang}"
+  },
+  "menu": {
+    "button": "All Pages",
+    "aria": "Open all pages menu",
+    "title": "Browse the Website",
+    "subtitle": "Every page in one place",
+    "main": "Main Pages",
+    "services": "All Services",
+    "problems": "Problem Guides",
+    "tools": "Free Tools",
+    "explore": "Explore More",
+    "close": "Close menu",
+    "links": {
+      "areas": "Service Areas",
+      "nearMe": "Near Me",
+      "projects": "Projects",
+      "guides": "Guides",
+      "compare": "Comparisons",
+      "top": "Top Lists",
+      "brands": "Brands",
+      "answers": "Quick Answers",
+      "process": "Our Process",
+      "commercial": "Commercial",
+      "residential": "Residential",
+      "seasonal": "Seasonal"
+    }
+  },
+  "whatsappDesk": {
+    "title": "WhatsApp Dispatch Desk",
+    "body": "Same-day slots available in KL & Selangor. WhatsApp us for an instant, transparent quote!",
+    "cta": "Chat With Dispatch",
+    "aria": "Open WhatsApp chat",
+    "close": "Close"
   }
 }
