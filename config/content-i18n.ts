@@ -91,7 +91,7 @@ export const contentI18nMsFull: Record<string, Partial<{ title: string; intro: s
   "leak-repair-kl": { title: "Pembaikan Kebocoran di KL", intro: "Panduan pengesanan dan pembaikan kebocoran paip.", category: "Kluster Perkhidmatan" },
   "installation-kl": { title: "Pemasangan Paip di KL", intro: "Panduan pemasangan aksesori paip.", category: "Kluster Perkhidmatan" },
   "emergency-plumbing-kl": { title: "Paip Kecemasan di KL", intro: "Panduan tindak balas kecemasan paip.", category: "Kluster Perkhidmatan" },
-  "installation-kl": { title: "Pemasangan Siling di KL", intro: "Panduan pemasangan papan gypsum dan bingkai.", category: "Kluster Perkhidmatan" },
+  "ceiling-installation-kl": { title: "Pemasangan Siling di KL", intro: "Panduan pemasangan papan gypsum dan bingkai.", category: "Kluster Perkhidmatan" },
   "repair-kl": { title: "Pembaikan Siling di KL", intro: "Panduan pembaikan siling rosak.", category: "Kluster Perkhidmatan" },
   "partition-kl": { title: "Dinding Sekatan di KL", intro: "Panduan sekatan gypsum dan penebat bunyi.", category: "Kluster Perkhidmatan" },
   "bathroom-kl": { title: "Kalis Air Bilik Air di KL", intro: "Panduan kalis air bilik air lengkap.", category: "Kluster Perkhidmatan" },
