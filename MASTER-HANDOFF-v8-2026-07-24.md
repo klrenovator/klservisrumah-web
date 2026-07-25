@@ -1,5 +1,28 @@
 # KL SERVIS RUMAH — MASTER WEBSITE HANDOFF DOCUMENT
 
+## 🆕 ROUND 20 EXECUTION LOG (2026-07-25) — LOCALIZED SERVICES DIRECTORY CARDS
+
+**Round status:** ✅ **COMPLETED**
+
+### ✅ What was changed
+- ✅ Updated the services directory cards to consume the existing localized service data for EN/MS/ZH.
+- ✅ Localized service titles, taglines, sub-service previews, warranty text, and starting-price labels wherever approved service translations exist.
+- ✅ Preserved links, pricing values, custom icons, responsive layout, and card styling.
+- ✅ Verified lint and TypeScript checks.
+
+### 📁 Files modified
+- ✅ `components/sections/services-grid.tsx`
+- ✅ `MASTER-HANDOFF-v8-2026-07-24.md`
+
+### ⚠️ Remaining issues
+- ⏳ Services directory decision tree, comparison table, and Why Choose Us sections still need a full multilingual pass.
+- ⏳ Location/content datasets remain pending.
+
+### ➡️ Recommended next steps
+- Continue with the services directory decision tree and comparison table translations.
+
+---
+
 ## 🆕 ROUND 19 EXECUTION LOG (2026-07-25) — BOOKING FORM HELPER TEXT & OPTIONS
 
 **Round status:** ✅ **COMPLETED**
