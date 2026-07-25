@@ -1,6 +1,6 @@
 # KL Servis Rumah — Upgrade Checklist (against KLRenovator gold standard)
 
-Last updated: 2026-07-25 (agent run)
+Last updated: 2026-07-25 (multiple agent runs)
 
 ## Baseline observations
 
@@ -10,55 +10,86 @@ Last updated: 2026-07-25 (agent run)
 - Rich JSON-LD: LocalBusiness, Service, OfferCatalog, FAQPage, HowTo, BreadcrumbList — all with `@id` de-duped between layout & page.
 - Trilingual: en (default), `/ms/*`, `/zh/*` full page duplication.
 - Sticky mobile bar, floating booking button, exit-intent popup, review trust widgets, TikTok/Instagram feed sections.
-- Trust-focused visual language: dark hero, uppercase black type, sky-400 accent, generous whitespace.
 
-**KL Servis Rumah (current):**
-- Two-column light hero with an inline "Get a Quote in 60s" form. No hero background photo.
-- Broader multi-vertical: painting, plumbing, ceiling, waterproofing, handyman, electrical, tiling, flooring, cleaning, roof, kitchen, doors, locks, CCTV, gates, welding etc.
-- Very rich sitemap (2200+ pages), full i18n (`/ms`, `/zh`), area + suburb + problem + blog + guides + tools + comparisons + brands + commercial + residential + top-lists + answers.
-- Rich schema builders already in `lib/seo.ts` (organization, local, service, faq, breadcrumb, HowTo, review, video, area, item list, speakable, offer catalog).
-- Only SVG hero graphics in `public/`, no photographic hero backgrounds.
-- Homepage sections: TrustBar, Hero, RecentJobsTicker, TrustBadges, ServicesGrid, StatsCounter, WhyChooseUs, OurProcess, BeforeAfter, FeaturedProjects, Testimonials, GoogleReviews, PricingComparison, NotSureSection, ServiceAreas, FAQAccordion, HomeCTA.
+**KL Servis Rumah (before this upgrade):**
+- Two-column light hero, no photographic background.
+- 2204 static pages generated.
+- Broader multi-vertical: 28 service pillars.
+- Only 2 blog posts, 43 problems, 6 area pages.
+- Client bundle carrying unused @heroui/react + framer-motion for a single animation.
+- No homepage-specific JSON-LD; alternates.languages pointing everywhere to `/`.
 
-## Gap analysis & upgrade plan
+## What's changed in this upgrade
 
-### Design / UX (high impact, first)
-- [x] Homepage hero — add a full-bleed background image variant (KL Renovator-style) while preserving the 60-second quote form. Use available SVG hero graphics as a layered mosaic (photographic assets aren't in-repo).
-- [x] Elevate hero typography to match reference (uppercase black tracking-tight h1, sky-400 accent).
-- [x] Add homepage FAQPage JSON-LD + speakable JSON-LD like KLRenovator does inline on `/`.
-- [x] Add `HomeService`/`OfferCatalog` JSON-LD to homepage (already have builder; wire into page).
-- [x] Ensure sticky mobile WhatsApp bar and floating action button match visual weight.
-- [ ] Photographic hero swap once real photos are supplied (documented in Future Improvements).
+### Design / UX  ✅
+- [x] Premium dark hero with 5 branded photographic slides matching KLR reference.
+- [x] Upgraded hero typography — uppercase black h1 with sky-400 accent.
+- [x] `<Reveal>` scroll-triggered fade-up wrapper (no animation library) applied to Services grid, Why Choose Us, and Homepage AEO Links.
+- [x] Footer redesigned: trust strip + areas column added (5-col layout).
+- [x] Service detail hero upgraded from `<img>` to `<Image>` with priority + fetchPriority=high.
+- [x] Hero images generated via AI (5 branded on-set photographs).
 
-### SEO / GEO / AEO
-- [x] Confirm `robots.ts`, `sitemap.ts`, `sitemap-news.xml`, `manifest.json`, `llms.txt`, `llms-full.txt` all present. — Already there; audit for URLs.
-- [x] Inject homepage-specific FAQ + Service + OfferCatalog JSON-LD (KL Renovator has these inline on `/`).
-- [x] Ensure Organization schema in layout uses `HomeAndConstructionBusiness` + `knowsAbout` + `contactPoint` + `sameAs`.
-- [x] Ensure per-locale `alternates.languages` on layout (currently all `/`, fix to `/ms`, `/zh`).
-- [x] Add `WebSite` + `SearchAction` JSON-LD in layout for sitelinks searchbox.
-- [x] Add BreadcrumbList JSON-LD helper usage checks on services/areas/problems (already done in most pages; verify).
-- [x] Ensure canonical URLs use absolute URL prefixes (metadataBase set — good).
-- [x] Verify hreflang on locale pages emits `en-MY`, `ms-MY`, `zh-MY`, and `x-default`.
+### SEO / GEO / AEO  ✅
+- [x] Homepage-specific JSON-LD injected on `/`: FAQPage (6 zero-click Q&A), BreadcrumbList, SpeakableSpecification, Service, OfferCatalog.
+- [x] `getWebsiteSchema()` with SearchAction, publisher ref, inLanguage.
+- [x] Enriched Organization JSON-LD: alternateName, ImageObject logo, contactPoint x2 (customer + emergency), knowsAbout (28 topics), parentOrganization, googleBusinessProfile sameAs.
+- [x] Fixed layout hreflang alternates to point at `/ms` and `/zh` (was all `/`).
+- [x] `/services/[slug]`: HowTo + Speakable JSON-LD; keyword-rich metadata + hreflang + full OG + Twitter.
+- [x] `/areas/[slug]`: per-area LocalBusiness JSON-LD with GeoCoordinates + parent org link; Speakable; richer metadata.
+- [x] `/problems/[slug]`: Speakable JSON-LD; richer metadata with hreflang.
+- [x] `/contact`: ContactPage schema + Breadcrumb + Speakable + full metadata.
+- [x] `/about`: AboutPage schema + Breadcrumb + Speakable + full metadata.
+- [x] `/pricing`: Speakable schema added; hreflang alternates; richer OG/Twitter.
+- [x] `/faq`: Breadcrumb + Speakable JSON-LD; hreflang; keyword-optimised meta.
+- [x] New `/search` page (indexable: false) — fulfils SearchAction promise from WebSite JSON-LD.
+- [x] `app/robots.ts`: expanded AI-bot allow-list (OAI-SearchBot, ChatGPT-User, ClaudeBot, anthropic-ai, Claude-Web, PerplexityBot, Perplexity-User, Amazonbot, cohere-ai, YouBot, Bytespider, meta-externalagent). Two sitemaps registered.
+- [x] `app/sitemap.ts`: proper `/ms` and `/zh` hreflang alternates; live `lastModified` timestamp.
 
-### Internal linking
-- [x] Add prominent "Related services" + "Nearby areas" + "Common problems" cross-link blocks on homepage.
-- [x] Homepage should link to `/tools`, `/pricing`, `/faq`, `/blog`, top areas, top services, top problems.
+### Content architecture — 2204 → 3110 static pages (+41%)  ✅
+- [x] +15 area pages (Cheras, Ampang, Kajang, Mont Kiara, Bangsar, Damansara, Kepong, Setapak, Sri Petaling, Kota Damansara, Ara Damansara, Sunway, USJ, Putrajaya, Cyberjaya).
+- [x] +34 problem pages via new `config/problem-data-extra.ts` — every service pillar now owns 2–3+ diagnostic pages.
+- [x] +16 long-form blog posts via new `config/blog-data-extra.ts` covering every core service pillar plus smart lock, CCTV, autogate, condo-vs-terrace repaint guides.
 
-### Content architecture
-- [x] Verify /areas, /services, /problems, /blog index pages have quality index cards + schema.
-- [x] Ensure /pricing page exists (config has it, `app/pricing/page.tsx` — verify).
-- [x] `/tools` hub exists — good.
+### Internal linking  ✅
+- [x] New `<HomepageAeoLinks>` section: Top Services, Coverage Areas, Common Problems, Free Tools & Guides — links to all silos from homepage.
+- [x] Footer areas column pushes 8 top locality links from every page.
+- [x] Blog category taxonomy expanded to include Renovation, Electrical, Flooring, Seasonal, Guide.
 
-### Code quality
-- [x] Fix any TypeScript / lint warnings surfaced by CI.
-- [x] Ensure no duplicate JSON-LD @id across layout + page.
-- [x] Add missing analytics / consent script where appropriate.
+### Performance  ✅
+- [x] Removed `@heroui/react` + `@heroui/styles` (never used) → -75 packages.
+- [x] Removed `framer-motion` (only in one whatsapp animation) — replaced with pure CSS.
+- [x] `ExitIntentPopup` + `SocialProofWidgets` deferred with `next/dynamic ssr:false` via `<DeferredWidgets>` client wrapper.
+- [x] `optimizePackageImports` covers lucide-react, clsx, tailwind-merge, react-hook-form, zod.
+- [x] `<link rel=preconnect>` + `dns-prefetch` for wa.me, api.whatsapp.com, googletagmanager, google-analytics.
+- [x] All hero images: priority + fetchPriority=high + blur placeholder + proper sizes.
+- [x] Zero `<img>` tags remaining — all images use `<Image>` for automatic AVIF/WebP.
 
-## Recommendations & Future Improvements (post-run)
-- Provide real photographic hero assets and set them in `components/sections/hero.tsx` HERO_IMAGES list (currently uses layered SVG mosaic + gradient).
-- Add TikTok / Instagram feed section powered by real embeds if a business account is connected.
-- Move the `SocialProofWidgets` / `RecentJobsTicker` into a shared context to allow throttling.
-- Add a first-class booking page (form + calendar) similar to `/book` on KLRenovator.
-- Move heavy client-only components behind `next/dynamic` with `ssr: false` where interactivity is optional (already partly done).
-- Split `config/services-data.ts` into per-service files to improve DX.
-- Adopt `@vercel/analytics` + `@vercel/speed-insights` (already used by reference site).
+### Code quality  ✅
+- [x] Lint clean (0 errors, 0 warnings).
+- [x] Build clean (3110 static pages generated).
+- [x] No duplicate `@id` across layout + page JSON-LD.
+- [x] TypeScript strict mode passes.
+
+## Recommendations & Future Improvements
+
+- [ ] Provide 10–15 more real photographic hero assets (per service pillar) — current 5 are used across all pages.
+- [ ] Add before/after project photos in `components/before-after-slider.tsx` (currently placeholder).
+- [ ] Add real Google Reviews integration via API (currently static mock in `<GoogleReviews>`).
+- [ ] Add TikTok / Instagram embed section powered by real feed (currently absent).
+- [ ] Add a first-class booking page with real calendar availability integration.
+- [ ] Split `config/services-data.ts` (500+ lines) into per-service files for DX.
+- [ ] Adopt `@vercel/analytics` + `@vercel/speed-insights` (already used by reference site).
+- [ ] Add a real news sitemap generator for the blog with recent-first ordering.
+- [ ] Add an IndexNow API integration to notify Bing / Yandex of new content instantly.
+
+## Final metrics
+
+| Metric | Before | After |
+|--------|--------|-------|
+| Static pages generated | 2,204 | 3,110 (+41%) |
+| Area pages | 6 | 21 |
+| Problem pages | 43 | 77 |
+| Blog posts | 2 | 18 |
+| Homepage JSON-LD blocks | 2 (org + local) | 8 (org + local + website + breadcrumb + FAQ + speakable + service + offer catalog) |
+| Client bundle deps | @heroui + framer-motion + 27 more | -3 major deps, -75 npm packages |
+| First Load JS shared | 102 kB | 103 kB (stayed roughly same despite +40% pages) |
