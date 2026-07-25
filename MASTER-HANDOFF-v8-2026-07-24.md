@@ -1,5 +1,124 @@
 # KL SERVIS RUMAH — MASTER WEBSITE HANDOFF DOCUMENT
 
+## 🆕 ROUND 20 EXECUTION LOG (2026-07-25) — LOCALIZED SERVICES DIRECTORY CARDS
+
+**Round status:** ✅ **COMPLETED**
+
+### ✅ What was changed
+- ✅ Updated the services directory cards to consume the existing localized service data for EN/MS/ZH.
+- ✅ Localized service titles, taglines, sub-service previews, warranty text, and starting-price labels wherever approved service translations exist.
+- ✅ Preserved links, pricing values, custom icons, responsive layout, and card styling.
+- ✅ Verified lint and TypeScript checks.
+
+### 📁 Files modified
+- ✅ `components/sections/services-grid.tsx`
+- ✅ `MASTER-HANDOFF-v8-2026-07-24.md`
+
+### ⚠️ Remaining issues
+- ⏳ Services directory decision tree, comparison table, and Why Choose Us sections still need a full multilingual pass.
+- ⏳ Location/content datasets remain pending.
+
+### ➡️ Recommended next steps
+- Continue with the services directory decision tree and comparison table translations.
+
+---
+
+## 🆕 ROUND 19 EXECUTION LOG (2026-07-25) — BOOKING FORM HELPER TEXT & OPTIONS
+
+**Round status:** ✅ **COMPLETED**
+
+### ✅ What was changed
+- ✅ Localized the booking form's remaining helper text, select placeholders, time-window label, photo options, and starting-price label in EN/MS/ZH.
+- ✅ Kept the booking logic and WhatsApp message values unchanged.
+- ✅ Verified lint and TypeScript checks.
+
+### 📁 Files modified
+- ✅ `components/booking/multi-step-booking-form.tsx`
+- ✅ `messages/en.json`
+- ✅ `messages/ms.json`
+- ✅ `messages/zh.json`
+- ✅ `MASTER-HANDOFF-v8-2026-07-24.md`
+
+### ⚠️ Remaining issues
+- ⏳ Service directory deeper sections and location/content datasets remain pending.
+
+### ➡️ Recommended next steps
+- Continue the trilingual pass through the services directory components.
+
+---
+
+## 🆕 ROUND 18 EXECUTION LOG (2026-07-25) — TRILINGUAL BOOKING FORM
+
+**Round status:** ✅ **COMPLETED**
+
+### ✅ What was changed
+- ✅ Wired the multi-step booking form to the existing EN/MS/ZH translation system.
+- ✅ Localized the form heading, step headings, contact labels, navigation buttons, and WhatsApp completion action.
+- ✅ Added the missing shared translation keys to all three message dictionaries.
+- ✅ Preserved the existing validation, WhatsApp payload, service options, suburb options, analytics events, and booking flow.
+
+### 📁 Files modified
+- ✅ `components/booking/multi-step-booking-form.tsx`
+- ✅ `messages/en.json`
+- ✅ `messages/ms.json`
+- ✅ `messages/zh.json`
+- ✅ `MASTER-HANDOFF-v8-2026-07-24.md`
+
+### ⚠️ Remaining issues
+- ⏳ Some descriptive helper text and option values in the booking form remain English-only and should be localized in a follow-up refinement.
+- ⏳ Services directory deeper sections and location/content datasets remain pending per the roadmap.
+
+### ➡️ Recommended next steps
+- Localize booking option values and helper text, then continue with the services directory sections.
+
+---
+
+## 🆕 ROUND 17 EXECUTION LOG (2026-07-25) — WEBSITE-MATCHED LOGO COLOURS
+
+**Round status:** ✅ **COMPLETED**
+
+### ✅ What was changed
+- ✅ Regenerated the raster logo assets from the existing approved SVG palette so the logo now uses the website's sky-blue and dark-sky colours (`#0EA5E9` / `#075985`) consistently.
+- ✅ Updated both `logo.png` and `logo.jpg`; the SVG source already used the correct website palette.
+- ✅ Preserved the previously requested slightly wider wordmark presentation and all logo accessibility text.
+
+### 📁 Files modified
+- ✅ `public/logo/logo.png`
+- ✅ `public/logo/logo.jpg`
+- ✅ `MASTER-HANDOFF-v8-2026-07-24.md`
+
+### ⚠️ Remaining issues
+- ⏳ Real project photography and verified customer reviews still require approved source assets/data.
+- ⏳ The broader trilingual/content and URL-prefixed routing items listed in Round 15 remain pending.
+
+### ➡️ Recommended next steps
+- Validate logo contrast and appearance on the deployed navbar and footer at mobile and desktop breakpoints.
+
+---
+
+## 🆕 ROUND 16 EXECUTION LOG (2026-07-25) — SLIGHTLY LONGER WORDMARK
+
+**Round status:** ✅ **COMPLETED**
+
+### ✅ What was changed
+- ✅ Adjusted the shared full-logo presentation to be approximately 10% wider while keeping the existing height, artwork, colours, alt text, and icon variant unchanged.
+- ✅ Applied the adjustment centrally in `components/ui/logo.tsx`, so the navbar and footer remain consistent without duplicating styling.
+- ✅ Kept the logo responsive at each existing `sm`, `md`, `lg`, and `xl` size; no source image or brand asset was overwritten.
+
+### 📁 Files modified
+- ✅ `components/ui/logo.tsx`
+- ✅ `MASTER-HANDOFF-v8-2026-07-24.md`
+
+### ⚠️ Remaining issues
+- ⏳ Real project photography and verified customer reviews still require approved source assets/data.
+- ⏳ The broader trilingual/content and URL-prefixed routing items listed in Round 15 remain pending.
+
+### ➡️ Recommended next steps
+- Pending user-approved real photography, review-source import, and future multilingual content expansion.
+- Validate the wider wordmark against the deployed navbar at the smallest supported viewport during visual QA.
+
+---
+
 **v8 — 2026-07-24 — PROJECT EXECUTION INSTRUCTIONS & PERMANENT RULES (Pre-Implementation, Pending Approval)**
 **Prepared for:** Asiya / Tauseef — KL Servis Rumah (Multicore Dynamics Resources)
 **Domain:** https://www.klservisrumah.my

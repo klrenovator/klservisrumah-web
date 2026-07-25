@@ -6,9 +6,12 @@ import { servicesData } from "@/config/services-data";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { ServiceIcon } from "@/components/ui/service-icon";
 import { useTranslations } from "@/hooks/use-translations";
+import { useLang } from "@/context/lang-context";
+import { getLocalizedService } from "@/lib/service-i18n";
 
 export function ServicesGrid() {
   const t = useTranslations();
+  const { lang } = useLang();
 
   return (
     <section className="bg-white py-20 sm:py-24">
@@ -29,7 +32,9 @@ export function ServicesGrid() {
 
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {Object.values(servicesData).map((service) => (
+          {Object.values(servicesData).map((sourceService) => {
+            const service = getLocalizedService(sourceService, lang);
+            return (
             <div
               key={service.slug}
               className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_8px_30px_rgba(2,31,68,0.02)] hover:shadow-[0_20px_50px_rgba(2,31,68,0.05)] hover:border-[#0EA5E9]/30 transition-all duration-300 flex flex-col justify-between group"
@@ -91,7 +96,8 @@ export function ServicesGrid() {
               </div>
 
             </div>
-          ))}
+            );
+          })}
         </div>
 
       </div>

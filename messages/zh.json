@@ -13,7 +13,9 @@
     "learnMore": "了解更多",
     "readMore": "阅读更多",
     "fromPrice": "起价 {price}",
-    "fromLabel": "起"
+    "fromLabel": "起",
+    "back": "返回",
+    "continue": "继续"
   },
   "nav": {
     "home": "首页",
@@ -145,7 +147,14 @@
       "service": "所需服务",
       "area": "服务区域 / 地址",
       "message": "描述所需工作",
-      "urgency": "紧急程度"
+      "urgency": "紧急程度",
+      "date": "首选日期",
+      "propertyType": "房产类型",
+      "contact": "联系资料",
+      "problem": "问题详情和照片",
+      "schedule": "首选日期和时间",
+      "location": "地区和房产类型",
+      "subService": "选择子服务（不确定可继续）"
     },
     "urgencyLevels": {
       "low": "一周内",
@@ -155,7 +164,18 @@
     },
     "submit": "发送预订请求",
     "whatsappHeading": "更喜欢 WhatsApp？",
-    "whatsappDescription": "点击下方按钮与我们调度台对话。发送照片可获得更快的报价。"
+    "whatsappDescription": "点击下方按钮与我们调度台对话。发送照片可获得更快的报价。",
+    "step": "步骤",
+    "of": "共",
+    "openWhatsApp": "再次打开 WhatsApp",
+    "formNote": "无需预付定金",
+    "quoteNote": "先提供市场价格报价",
+    "selectSuburb": "选择地区...",
+    "selectType": "选择类型...",
+    "timeWindow": "时间段",
+    "photosReady": "有照片吗？",
+    "photosYes": "有，我会在 WhatsApp 上传照片",
+    "photosNo": "暂时没有照片"
   },
   "pricing": {
     "pageTitle": "我们的价格",

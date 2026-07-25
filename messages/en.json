@@ -13,7 +13,9 @@
     "learnMore": "Learn more",
     "readMore": "Read more",
     "fromPrice": "From {price}",
-    "fromLabel": "From"
+    "fromLabel": "From",
+    "back": "Back",
+    "continue": "Continue"
   },
   "nav": {
     "home": "Home",
@@ -145,7 +147,14 @@
       "service": "Service Needed",
       "area": "Service Area / Address",
       "message": "Describe the work needed",
-      "urgency": "Urgency"
+      "urgency": "Urgency",
+      "date": "Preferred date",
+      "propertyType": "Property type",
+      "contact": "Contact information",
+      "problem": "Problem details and photos",
+      "schedule": "Preferred date and time",
+      "location": "Area and property type",
+      "subService": "Choose sub-service (or continue if unsure)"
     },
     "urgencyLevels": {
       "low": "Within a week",
@@ -155,7 +164,18 @@
     },
     "submit": "Send booking request",
     "whatsappHeading": "Prefer WhatsApp?",
-    "whatsappDescription": "Tap the button below to chat with our dispatch desk. Send photos for a faster quote."
+    "whatsappDescription": "Tap the button below to chat with our dispatch desk. Send photos for a faster quote.",
+    "step": "Step",
+    "of": "of",
+    "openWhatsApp": "Open WhatsApp Again",
+    "formNote": "No upfront deposits",
+    "quoteNote": "Market-rate quote first",
+    "selectSuburb": "Select suburb...",
+    "selectType": "Select type...",
+    "timeWindow": "Time window",
+    "photosReady": "Photos ready?",
+    "photosYes": "Yes, I will attach photos in WhatsApp",
+    "photosNo": "No photos yet"
   },
   "pricing": {
     "pageTitle": "Our Pricing",
