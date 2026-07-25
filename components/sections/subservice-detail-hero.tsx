@@ -1,8 +1,11 @@
+"use client";
+
 import React from "react";
 import { siteConfig } from "@/config/site";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { CheckCircle2, MessageSquare, Phone, ArrowRight, Award } from "lucide-react";
 import { TrustBadgesRow } from "@/components/content/trust-badges-row";
+import { useTranslations } from "@/hooks/use-translations";
 import type { SubService, ServiceDetail } from "@/config/services-data";
 
 type SubserviceDetailHeroProps = {
@@ -47,6 +50,7 @@ const trilingualSublines: Record<string, { ms: string; zh: string }> = {
 export function SubserviceDetailHero({ service, sub }: SubserviceDetailHeroProps) {
   const subline = trilingualSublines[service.slug] ?? { ms: "", zh: "" };
   const waLink = getWhatsAppLink({ service: sub.name });
+  const t = useTranslations();
 
   return (
     <section className="relative bg-white section-tight border-b border-slate-100 overflow-hidden">
@@ -112,7 +116,7 @@ export function SubserviceDetailHero({ service, sub }: SubserviceDetailHeroProps
                 className="btn-whatsapp text-base"
               >
                 <MessageSquare className="w-5 h-5 fill-white text-[#22C55E]" />
-                <span>Book via WhatsApp</span>
+                <span>{t("serviceDetail.bookWhatsApp")}</span>
               </a>
               <a
                 href={`tel:${siteConfig.phone}`}

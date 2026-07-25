@@ -33,21 +33,21 @@ export function LocaleDecisionTree({ variant = "servicesPage" }: Props) {
             title: t("decisionTree.servicesPage.fullService.title"),
             description: t("decisionTree.servicesPage.fullService.description"),
             compareService: t("decisionTree.servicesPage.diyMaterials.title"),
-            compareAction: "DIY?"
+            compareAction: t("decisionTree.servicesPage.fullService.compareAction")
           },
           {
             level: "lighter",
             title: t("decisionTree.servicesPage.diyMaterials.title"),
             description: t("decisionTree.servicesPage.diyMaterials.description"),
             compareService: t("decisionTree.servicesPage.fullService.title"),
-            compareAction: "Pro?"
+            compareAction: t("decisionTree.servicesPage.diyMaterials.compareAction")
           },
           {
             level: "urgent",
             title: t("decisionTree.servicesPage.emergency.title"),
             description: t("decisionTree.servicesPage.emergency.description"),
             compareService: t("decisionTree.servicesPage.fullService.title"),
-            compareAction: "24–48h?"
+            compareAction: t("decisionTree.servicesPage.emergency.compareAction")
           }
         ]}
       />

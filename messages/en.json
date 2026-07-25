@@ -423,15 +423,18 @@
       "title": "Not sure which option to choose?",
       "fullService": {
         "title": "Full Service Package",
-        "description": "Book the complete service with our expert team. Includes diagnosis, materials, labour, and warranty."
+        "description": "Book the complete service with our expert team. Includes diagnosis, materials, labour, and warranty.",
+        "compareAction": "Need something simpler?"
       },
       "diyMaterials": {
         "title": "DIY + Materials Only",
-        "description": "Get quality materials + guidance. Perfect if you want to handle labour yourself or have a handyman."
+        "description": "Get quality materials + guidance. Perfect if you want to handle labour yourself or have a handyman.",
+        "compareAction": "Want professional execution?"
       },
       "emergency": {
         "title": "Emergency / Same-Day",
-        "description": "Urgent issue? We dispatch the nearest available team within hours (subject to availability)."
+        "description": "Urgent issue? We dispatch the nearest available team within hours (subject to availability).",
+        "compareAction": "Can wait 24–48 hours?"
       }
     }
   },
@@ -518,5 +521,27 @@
     "body": "Send photos and your area on WhatsApp. We will confirm scope, price factors, and available service slots before any work begins.",
     "cta": "WhatsApp for Quote",
     "closeAria": "Close popup"
+  },
+  "breadcrumbs": {
+    "home": "Home"
+  },
+  "internalLinks": {
+    "eyebrow": "More from this category",
+    "defaultTitle": "Related resources"
+  },
+  "hero": {
+    "subline": "Premium home services in KL & Selangor at market-rate pricing"
+  },
+  "trustBadgesRow": {
+    "insured": "Insured & Verified",
+    "priceFirst": "Price Confirmed First",
+    "google": "4.9 / 5 Google",
+    "sameDay": "Same-Day Available",
+    "warranty": "Up to 90-Day Warranty"
+  },
+  "serviceDetail": {
+    "bookWhatsApp": "Book via WhatsApp",
+    "trustLine": "Same-day available · Warranty-backed · Insured",
+    "bookSubWhatsApp": "Book {name} on WhatsApp"
   }
 }

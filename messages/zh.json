@@ -423,15 +423,18 @@
       "title": "不确定该选哪个方案？",
       "fullService": {
         "title": "全包服务套餐",
-        "description": "与我们专业团队预订完整服务。包括诊断、材料、人工与保修。"
+        "description": "与我们专业团队预订完整服务。包括诊断、材料、人工与保修。",
+        "compareAction": "需要更简单的方案？"
       },
       "diyMaterials": {
         "title": "DIY + 仅材料",
-        "description": "获取优质材料+指导。适合您想自己处理人工或已有杂工的情况。"
+        "description": "获取优质材料+指导。适合您想自己处理人工或已有杂工的情况。",
+        "compareAction": "想要专业执行？"
       },
       "emergency": {
         "title": "紧急 / 当日服务",
-        "description": "紧急情况？我们会在数小时内派遣最近的可用的团队（视情况而定）。"
+        "description": "紧急情况？我们会在数小时内派遣最近的可用的团队（视情况而定）。",
+        "compareAction": "可以等 24–48 小时？"
       }
     }
   },
@@ -518,5 +521,27 @@
     "body": "在 WhatsApp 上发送照片和您的区域。我们将在任何工作开始前确认范围、价格因素和可用的服务时段。",
     "cta": "WhatsApp 获取报价",
     "closeAria": "关闭弹窗"
+  },
+  "breadcrumbs": {
+    "home": "首页"
+  },
+  "internalLinks": {
+    "eyebrow": "更多同类内容",
+    "defaultTitle": "相关资源"
+  },
+  "hero": {
+    "subline": "吉隆坡与雪兰莪的市场行情优质家居服务"
+  },
+  "trustBadgesRow": {
+    "insured": "已投保与查证",
+    "priceFirst": "先确认价格",
+    "google": "4.9 / 5 谷歌",
+    "sameDay": "可当日服务",
+    "warranty": "最高 90 天保修"
+  },
+  "serviceDetail": {
+    "bookWhatsApp": "通过 WhatsApp 预订",
+    "trustLine": "当日可约 · 有保修 · 已投保",
+    "bookSubWhatsApp": "通过 WhatsApp 预订{name}"
   }
 }

@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import { CheckCircle2, ArrowRight, MessageSquare, AlertCircle } from "lucide-react";
 import { siteConfig } from "@/config/site";
+import { useTranslations } from "@/hooks/use-translations";
 import type { SubService, ServiceDetail } from "@/config/services-data";
 import { DirectAnswer } from "@/components/content/direct-answer";
 import { DecisionTree } from "@/components/content/decision-tree";
@@ -38,6 +41,7 @@ const INCLUDED_ITEMS = [
  *   8. FAQs
  */
 export function SubserviceDetailContent({ service, sub }: SubserviceDetailContentProps) {
+  const t = useTranslations();
   const otherSubs = service.subServices.filter((item) => item.name !== sub.name);
 
   return (
@@ -249,7 +253,7 @@ export function SubserviceDetailContent({ service, sub }: SubserviceDetailConten
               className="btn-whatsapp text-base"
             >
               <MessageSquare className="w-5 h-5 fill-white text-[#22C55E]" />
-              <span>Book {sub.name} on WhatsApp</span>
+              <span>{t("serviceDetail.bookSubWhatsApp", { name: sub.name })}</span>
               <ArrowRight className="w-4 h-4" />
             </a>
           </div>

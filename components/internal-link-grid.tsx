@@ -1,11 +1,14 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { useTranslations } from "@/hooks/use-translations";
 
 export type InternalLinkItem = { title: string; href: string; desc?: string };
 
 export function InternalLinkGrid({
-  title = "Related resources",
+  title,
   subtitle,
   links
 }: {
@@ -13,13 +16,17 @@ export function InternalLinkGrid({
   subtitle?: string;
   links: InternalLinkItem[];
 }) {
+  const t = useTranslations();
+
   if (!links.length) return null;
 
   return (
     <section className="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8">
       <div className="mb-6">
-        <span className="eyebrow">More from this category · Lebih banyak · 更多信息</span>
-        <h2 className="text-2xl font-extrabold text-[#075985] tracking-tight mt-2">{title}</h2>
+        <span className="eyebrow">{t("internalLinks.eyebrow")}</span>
+        <h2 className="text-2xl font-extrabold text-[#075985] tracking-tight mt-2">
+          {title || t("internalLinks.defaultTitle")}
+        </h2>
         {subtitle && (
           <p className="text-sm text-[#475569] leading-relaxed mt-2 font-medium">{subtitle}</p>
         )}

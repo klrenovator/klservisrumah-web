@@ -423,15 +423,18 @@
       "title": "Tidak pasti pilihan mana untuk dipilih?",
       "fullService": {
         "title": "Pakej Perkhidmatan Penuh",
-        "description": "Tempah perkhidmatan lengkap dengan pasukan pakar kami. Termasuk diagnosis, bahan, upah, dan jaminan."
+        "description": "Tempah perkhidmatan lengkap dengan pasukan pakar kami. Termasuk diagnosis, bahan, upah, dan jaminan.",
+        "compareAction": "Perlukan sesuatu yang lebih ringkas?"
       },
       "diyMaterials": {
         "title": "DIY + Bahan Sahaja",
-        "description": "Dapatkan bahan berkualiti + panduan. Sesuai jika anda ingin mengendalikan kerja sendiri atau mempunyai tukang."
+        "description": "Dapatkan bahan berkualiti + panduan. Sesuai jika anda ingin mengendalikan kerja sendiri atau mempunyai tukang.",
+        "compareAction": "Mahukan pelaksanaan profesional?"
       },
       "emergency": {
         "title": "Kecemasan / Hari Sama",
-        "description": "Masalah mendesak? Kami menghantar pasukan terdekat yang tersedia dalam beberapa jam (tertakluk kepada ketersediaan)."
+        "description": "Masalah mendesak? Kami menghantar pasukan terdekat yang tersedia dalam beberapa jam (tertakluk kepada ketersediaan).",
+        "compareAction": "Boleh tunggu 24–48 jam?"
       }
     }
   },
@@ -518,5 +521,27 @@
     "body": "Hantar foto dan kawasan anda di WhatsApp. Kami akan mengesahkan skop, faktor harga, dan slot perkhidmatan yang tersedia sebelum sebarang kerja bermula.",
     "cta": "WhatsApp untuk Sebut Harga",
     "closeAria": "Tutup popup"
+  },
+  "breadcrumbs": {
+    "home": "Utama"
+  },
+  "internalLinks": {
+    "eyebrow": "Lagi dari kategori ini",
+    "defaultTitle": "Sumber berkaitan"
+  },
+  "hero": {
+    "subline": "Perkhidmatan rumah premium di KL & Selangor dengan harga pasaran"
+  },
+  "trustBadgesRow": {
+    "insured": "Diinsuranskan & Disahkan",
+    "priceFirst": "Harga Disahkan Dahulu",
+    "google": "4.9 / 5 Google",
+    "sameDay": "Hari Sama Tersedia",
+    "warranty": "Sehingga Jaminan 90 Hari"
+  },
+  "serviceDetail": {
+    "bookWhatsApp": "Tempah melalui WhatsApp",
+    "trustLine": "Hari sama tersedia · Dijamin · Diinsuranskan",
+    "bookSubWhatsApp": "Tempah {name} di WhatsApp"
   }
 }
