@@ -3,7 +3,8 @@
 import React from "react";
 import Link from "next/link";
 import { servicesData } from "@/config/services-data";
-import { ArrowRight, CheckCircle } from "lucide-react";
+import { ArrowRight, CheckCircle, MessageSquare } from "lucide-react";
+import { getWhatsAppLink } from "@/lib/whatsapp";
 import { ServiceIcon } from "@/components/ui/service-icon";
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
@@ -90,18 +91,15 @@ export function ServicesGrid() {
 
               </div>
 
-              {/* Action Button */}
-              <div className="mt-8 pt-4 border-t border-slate-50 flex items-center justify-between">
-                <span className="text-xs text-emerald-500 font-bold bg-emerald-50 px-2.5 py-1 rounded-md">
-                  {service.warranty.split(" ")[0]} {t("services.guaranteeLabel")}
-                </span>
-                <Link
-                  href={`/services/${service.slug}`}
-                  className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0EA5E9] hover:text-[#075985] transition-colors"
-                >
-                  <span>{t("common.viewDetails")}</span>
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              {/* Matching paired service actions: clear detail path + instant booking. */}
+              <div className="mt-8 flex flex-col gap-3 border-t border-slate-100 pt-6">
+                <Link href={`/services/${service.slug}`} className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#0284C7] py-3.5 text-xs font-black uppercase tracking-widest text-white transition-all duration-200 hover:bg-[#0369A1] active:scale-[0.98]">
+                  {t("common.viewDetails")} <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
                 </Link>
+                <a href={getWhatsAppLink({ service: service.title })} target="_blank" rel="nofollow noopener noreferrer" className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#22C55E] py-3.5 text-xs font-black uppercase tracking-widest text-white shadow-sm transition-all duration-200 hover:bg-[#16A34A] hover:shadow-green-200 active:scale-[0.98]">
+                  <MessageSquare className="h-4 w-4" /> {t("common.bookService")}
+                </a>
+                <span className="text-center text-xs font-bold text-emerald-600">{service.warranty.split(" ")[0]} {t("services.guaranteeLabel")}</span>
               </div>
 
             </Reveal>
