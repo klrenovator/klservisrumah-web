@@ -3,16 +3,19 @@ import { buildMetadata } from "@/lib/seo-meta";
 import type { Metadata } from "next";
 import { FAQAccordion } from "@/components/sections/faq-accordion";
 import { FaqHeroHeading } from "@/components/sections/faq-hero-heading";
+import { FaqSearchFilter } from "@/components/sections/faq-search-filter";
+import { FaqDirectoryView } from "@/components/sections/faq-directory-view";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { getSpeakableSchema } from "@/lib/seo";
+import { getSpeakableSchema, getFAQSchema } from "@/lib/seo";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
 import { Phone, MessageSquare } from "lucide-react";
+import { faqDirectory, faqDirectoryTotalCount } from "@/lib/faq-directory";
 
 export const metadata: Metadata = buildMetadata({
-  title: "FAQ — Home Services in KL & Selangor",
+  title: "FAQ — Every Home Service Question Answered",
   description:
-    "Answers on pricing, warranty, insurance, coverage areas, same-day booking and job preparation for painting, plumbing, ceiling and handyman work.",
+    `${faqDirectoryTotalCount}+ questions on pricing, warranty, insurance, coverage areas, materials and booking — answered across every service, area and problem page on the site.`,
   path: "/faq",
   keywords: [
     "home services FAQ Malaysia",
@@ -63,6 +66,27 @@ export default function FAQPage() {
       />
 
       <FAQAccordion />
+
+      {/* Search box for the full site-wide FAQ directory below */}
+      <section className="bg-slate-50 border-t border-slate-100 py-12 sm:py-14">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <FaqSearchFilter />
+        </div>
+      </section>
+
+      <FaqDirectoryView categories={faqDirectory} totalCount={faqDirectoryTotalCount} />
+
+      {/* Single combined FAQPage schema for the full directory — Google only
+          honours one FAQPage graph per page, so every question below is
+          merged into one script tag rather than one block per topic. */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            getFAQSchema(faqDirectory.flatMap((category) => category.items.map((item) => ({ q: item.q, a: item.a }))))
+          )
+        }}
+      />
     </>
   );
 }
