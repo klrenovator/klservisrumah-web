@@ -1,3 +1,91 @@
+## 🆕 ROUND 29 EXECUTION LOG (2026-07-27) — CALCULATOR SIMPLIFICATION (SINGLE PAGE) + ESTIMATOR ON ALL 28 SERVICE PAGES
+
+**User direction:** "Handoff file k mutabiq check kren k jo kam ho gey hn wo shi huy hn k ni… Calculators ko b simple kren, ikatha kren 1 e page pr… hr calculator k liye alg page ho or usi 1 page pr hi sub details dropdown ki soorat mein fill kr astimate rate mil jaye… jitna Asaan ho system utna zyada acha hy. Jb mushkil hota hy to customer bhag jata hy." Then: "jis jis service k liey calculator ya astimator mumkin hy us k liey bna den or calculator jis service k liey bny ga wo us service k page pr b laazmi show ho intro ya discription k neechy."
+
+**Round status:** ✅ **COMPLETED**
+
+### 🔍 Verification of Round 28's claims (done first, before any new work)
+
+Round 28 claimed "6/6 areas and 49/49 suburbs have genuine MS + ZH content (0 silently falling back to English)". Verified programmatically against the real data:
+
+| Claim | Verified result |
+|---|---|
+| Suburbs 49/49 MS+ZH | ✅ **True** — 49/49 confirmed |
+| Key parity EN/MS/ZH | ✅ **True** — 486 keys each, 0 missing |
+| Build green, 0 TS errors, 0 lint errors | ✅ **True** — reproduced (4,028 SSG pages) |
+| Areas "6/6 (100%)" | ❌ **Misleading** — `config/area-data.ts` contains **37** areas, not 6. Only the 6 headline areas had MS/ZH; **31 areas were silently falling back to English** |
+
+**Fixed this round.** The "6/6" figure was correct only against the 6 areas the round chose to translate; the codebase actually ships 37 area pages. Coverage is now genuinely 37/37.
+
+### ✅ What was changed
+
+#### 1. 🧮 Calculators rebuilt as single-page forms (the main request)
+- ✅ **`components/tools/estimator/estimator-form.tsx` (new)** — replaces the multi-step wizard. Deleted `estimator-wizard.tsx`.
+  - **No next buttons.** Every question is on one screen.
+  - **Live price pinned to the top** while scrolling, so the customer always sees the number.
+  - **Optional details collapsed** behind one "fine-tune the price" toggle. Every collapsed question has a working default, so an untouched section still produces a bookable estimate.
+  - **Result renders inline** on the same page — no screen change, no "Get My Estimate" gate.
+- ✅ **`advanced?: boolean` added to the `Step` type.** Secondary questions across all five estimators (paint grade, colour, access, urgency, property age, parts supply, extras…) were marked advanced. Visible questions dropped from **5–7 steps to 2–4 questions**.
+
+| Estimator | Before | Visible now | Collapsed |
+|---|---|---|---|
+| Painting | 7 steps | 3 | 4 |
+| Leak triage | 5 steps | 3 | 2 |
+| Ceiling | 5 steps | 4 | 1 |
+| Plumbing | 5 steps | 3 | 2 |
+| TV mount | 4 steps | 3 | 1 |
+
+#### 2. 🛠️ Estimator on every service page (the second request)
+- ✅ **`lib/estimator/service-estimator.ts` (new)** — one generic engine covering **all 28 services**, built at render time from each service's own published sub-service rates. No service needed a hand-written spec.
+- ✅ **`scripts/generate-rate-book.ts` extended** — now also emits `SERVICE_SCOPES`: every service's published sub-service prices, parsed into amount + unit (`job` / `sqft` / `linearft` / `point` / `visit` / `room` / `panel`) + the verbatim published string. Regenerated on every build, so a calculator **can never show a rate the service page does not publish**.
+- ✅ **`components/tools/service-estimator-block.tsx` (new)** — rendered in `service-detail-content.tsx` as Section 2, **directly under the description**, exactly as requested.
+  - Services with a dedicated in-depth tool (painting, plumbing, ceiling, plaster-ceiling, waterproofing, handyman) show a linked card to that tool instead of a shallower duplicate.
+  - The other 22 services get the live generic estimator inline.
+- ✅ Only **2 visible questions** (what do you need / how much of it), with condition, access and timing collapsed.
+- ✅ **Pricing safety rails:** quantity × published rate, then named multipliers shown in the breakdown; result clamped to the service's published `startPrice`; `On Quote` scopes are never given a number and route to a site visit instead.
+- ✅ Opening quantity for metered units is chosen so the page opens near the service's own published starting price (a window grille at RM 42/sq ft no longer opens at RM 5,040).
+
+#### 3. 🈂️ Area translation gap closed (found during verification)
+- ✅ **`config/area-i18n-extra.ts` (new)** — MS + ZH for the **31 untranslated areas**. Each carries a hand-written housing profile and its own area-specific FAQ (a Mont Kiara high-rise owner and a Rawang landed-house owner do not have the same problem); shared sentences come from per-locale templates.
+- ✅ ZH names added only where the rendering is well established (蕉赖, 安邦, 满家乐, 孟沙, 甲洞, 万挠…); uncertain ones stay canonical, matching the existing suburb decision.
+- ✅ **Area MS/ZH coverage: 6/37 → 37/37.**
+
+#### 4. ✍️ Copy corrected to match the new flow
+Removed every "Answer 7 quick questions" / "next step" phrasing from `config/tools-data.ts` and `app/tools/page.tsx`; `howTo` steps rewritten from 6 steps to 4 and now describe the single-page flow. New `serviceEstimator.*` keys added in all three languages (492 keys each, still 0 missing).
+
+### 📁 Files created (4)
+`components/tools/estimator/estimator-form.tsx` · `components/tools/service-estimator-block.tsx` · `lib/estimator/service-estimator.ts` · `config/area-i18n-extra.ts`
+
+### 📁 Files deleted (1)
+`components/tools/estimator/estimator-wizard.tsx`
+
+### 📁 Files modified (17)
+5 estimator specs · 5 wizard entry points · `lib/estimator/types.ts` · `lib/location-i18n.ts` · `scripts/generate-rate-book.ts` · `scripts/test-estimators.ts` · `config/tools-data.ts` · `components/tools/tool-page.tsx` · `components/sections/service-detail-content.tsx` · `app/tools/page.tsx` · `messages/{en,ms,zh}.json`
+
+### ✅ Quality check results
+- ✅ TypeScript **0 errors** · ESLint **0 errors, 0 warnings**
+- ✅ Build green — **4,028 / 4,028 SSG pages**, no route changes
+- ✅ Estimator harness: **195,971 assertions, 0 failures** (was 77,068 — the new per-service suite adds 5,184 combinations across 28 estimators)
+- ✅ Production smoke test: HTTP 200 on all sampled service and tool routes; 1 `<h1>`, correct canonical and 16 schema blocks per service page
+- ✅ Translation parity: **492 keys × EN/MS/ZH**, 0 missing
+- ✅ Area coverage script: **37/37 areas**, 49/49 suburbs with genuine MS+ZH
+- ✅ Bundle budget: `/services/[slug]` **379 kB → 382 kB** (+3 kB). A first attempt cost +32 kB; the estimator was code-split with `next/dynamic` to bring it back down — same pattern Round 28 documented for location pages. Tool routes unchanged (130–133 kB).
+- ✅ Permanent rules honoured — no public SSM display, phone untouched, all pricing traced to published rates, no invented figures, no internal SEO/AEO/GEO jargon in customer-facing copy.
+
+### 🧪 Two real bugs the new tests caught
+1. **Price below published minimum** — rounding was applied *after* the `startPrice` clamp, so flooring's RM 14 minimum rounded down to RM 10. Fixed by rounding first, clamping second.
+2. **Two quantity questions at once** — scopes in different units could show "how many sq ft" and "how many panels" together. Now asserted: exactly one quantity question per scope, matching that scope's unit.
+
+### ⏳ Still pending after Round 29
+- ⏳ `config/content-data.ts` (~87 pages) and `components/content/generic-content-page.tsx` — still English-only; now the largest remaining trilingual gap.
+- ⏳ `config/blog-data.ts` and `config/projects-data.ts` — still English-only.
+- ⏳ **The estimators themselves are English-only.** Question text, options and result labels are not wired to the dictionary. This is the highest-value next round given the trilingual audience.
+- ⏳ Visual QA at 375px and desktop on deployed URLs (no browser in this environment — only HTTP/DOM checks were possible).
+- ⏳ Real photography and verified review import when assets are supplied.
+- ⏳ External tasks: GBP optimization, GSC/Bing verification, Rich Results testing on the live domain.
+
+---
+
 ## 🆕 ROUND 28 EXECUTION LOG (2026-07-25) — LOCATION PAGES TRILINGUAL PASS (AREAS, SUBURBS, NEAR-ME) — 1,742 PAGES
 
 **User direction:** "Kam shuru kren handoff file k mutabiq" — start work according to the handoff file.
