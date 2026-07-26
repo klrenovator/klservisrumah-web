@@ -9,6 +9,11 @@ import { Calendar, User, Clock, MessageSquare, ArrowRight, ArrowLeft } from "luc
 import Link from "next/link";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 
+// Every valid param is enumerated in `generateStaticParams()`, so anything
+// else must 404 rather than be rendered on demand and cached as a 200
+// (a soft 404). See `app/[lang]/[[...slug]]/page.tsx` for the full rationale.
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   return blogPosts.map((post) => ({
     slug: post.slug

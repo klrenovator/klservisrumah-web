@@ -28,6 +28,7 @@ export default function robots(): MetadataRoute.Robots {
     "Google-Extended",
     "Amazonbot",
     "cohere-ai",
+    "CCBot",
     "YouBot",
     "Bytespider",
     "meta-externalagent",

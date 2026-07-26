@@ -11,6 +11,11 @@ import { LocaleServiceView } from "@/components/sections/locale-service-view";
 import { TrustBar } from "@/components/trust-bar";
 import { StickyBookButton } from "@/components/sticky-book-button";
 
+// Every valid param is enumerated in `generateStaticParams()`, so anything
+// else must 404 rather than be rendered on demand and cached as a 200
+// (a soft 404). See `app/[lang]/[[...slug]]/page.tsx` for the full rationale.
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   const subServiceParams = Object.values(servicesData).flatMap((service) =>
     service.subServices.map((sub) => ({ slug: service.slug, subservice: slugify(sub.name) }))
@@ -37,7 +42,9 @@ export async function generateMetadata(props: { params: Promise<{ slug: string; 
   if (!sub) return {};
   return buildMetadata({
     title: `${sub.name} in KL & Selangor — ${sub.price}`,
-    description: `${sub.desc} Market-rate pricing from ${sub.price}, insured team, and WhatsApp booking across Kuala Lumpur and Selangor.`,
+    // `sub.price` is already phrased as "From RM 16 / sq ft", so don't prefix
+    // another "from" — that rendered "pricing from From RM 16 / sq ft".
+    description: `${sub.desc} Market-rate pricing ${sub.price.replace(/^From\s+/i, "from ")}, insured team, and WhatsApp booking across Kuala Lumpur and Selangor.`,
     path: `/services/${service.slug}/${params.subservice}`,
     image: service.heroImage,
     keywords: [sub.name, `${sub.name} KL`, `${sub.name} price`, service.title]

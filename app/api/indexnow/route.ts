@@ -1,52 +1,97 @@
 import { NextResponse } from "next/server";
 
-export const dynamic = "force-static";
+/**
+ * IndexNow ping endpoint (Bing / Yandex / Seznam).
+ *
+ * Must be dynamic: the handler reads `searchParams`, and under the previous
+ * `force-static` export the route was evaluated once at build time with an
+ * empty query string. The `trigger` check therefore always failed and the
+ * endpoint returned 401 for every caller — it had never actually submitted
+ * a single URL in production.
+ */
+export const dynamic = "force-dynamic";
+
+const HOST = "www.klservisrumah.my";
+const INDEXNOW_KEY = "e7492c813de342fca1deeb6b05df8445";
+
+const URL_LIST = [
+  "/",
+  "/services",
+  "/areas",
+  "/blog",
+  "/pricing",
+  "/problems",
+  "/faq",
+  "/contact"
+].map((path) => `https://${HOST}${path}`);
+
+/**
+ * Constant-time-ish comparison so the shared secret can't be recovered by
+ * timing the response. Node's `crypto.timingSafeEqual` needs equal lengths,
+ * so length is compared first and short-circuits on mismatch.
+ */
+function safeEqual(a: string, b: string): boolean {
+  if (a.length !== b.length) return false;
+  let mismatch = 0;
+  for (let i = 0; i < a.length; i += 1) {
+    mismatch |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  }
+  return mismatch === 0;
+}
 
 export async function GET(req: Request) {
-  const { searchParams } = new URL(req.url);
-  const trigger = searchParams.get("trigger");
+  const secret = process.env.INDEXNOW_SECRET;
 
-  if (trigger !== "auto" && trigger !== "manual") {
+  // Fail closed. Without a configured secret this endpoint would let anyone
+  // trigger outbound submissions on the brand's behalf.
+  if (!secret) {
+    return NextResponse.json(
+      { error: "IndexNow is not configured. Set INDEXNOW_SECRET." },
+      { status: 503 }
+    );
+  }
+
+  const provided =
+    new URL(req.url).searchParams.get("secret") ??
+    req.headers.get("authorization")?.replace(/^Bearer\s+/i, "") ??
+    "";
+
+  if (!safeEqual(provided, secret)) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
   try {
-    const host = "www.klservisrumah.my";
-    const key = "e7492c813de342fca1deeb6b05df8445";
-    const keyLocation = `https://${host}/${key}.txt`;
-
-    const payload = {
-      host: host,
-      key: key,
-      // Required by the IndexNow spec so Bing/Yandex can verify key ownership.
-      // It was computed but never sent, which makes submissions fail verification.
-      keyLocation: keyLocation,
-      urlList: [
-        `https://${host}/`,
-        `https://${host}/services`,
-        `https://${host}/areas`,
-        `https://${host}/blog`,
-        `https://${host}/pricing`,
-        `https://${host}/problems`,
-        `https://${host}/faq`,
-        `https://${host}/contact`
-      ]
-    };
-
     const response = await fetch("https://api.indexnow.org/indexnow", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json; charset=utf-8",
-      },
-      body: JSON.stringify(payload),
+      headers: { "Content-Type": "application/json; charset=utf-8" },
+      body: JSON.stringify({
+        host: HOST,
+        key: INDEXNOW_KEY,
+        // Required by the IndexNow spec so Bing/Yandex can verify key ownership.
+        keyLocation: `https://${HOST}/${INDEXNOW_KEY}.txt`,
+        urlList: URL_LIST
+      })
     });
 
-    if (response.ok || response.status === 200 || response.status === 202) {
-      return NextResponse.json({ success: true, message: "IndexNow Ping Sent to Bing/Yahoo!" });
-    } else {
-      return NextResponse.json({ success: false, error: await response.text() });
+    if (!response.ok) {
+      return NextResponse.json(
+        { success: false, status: response.status, error: await response.text() },
+        { status: 502 }
+      );
     }
-  } catch (error: any) {
-    return NextResponse.json({ error: "Failed to send IndexNow ping", details: error.message }, { status: 500 });
+
+    return NextResponse.json({
+      success: true,
+      submitted: URL_LIST.length,
+      message: "IndexNow ping accepted."
+    });
+  } catch (error) {
+    return NextResponse.json(
+      {
+        error: "Failed to send IndexNow ping",
+        details: error instanceof Error ? error.message : String(error)
+      },
+      { status: 500 }
+    );
   }
 }

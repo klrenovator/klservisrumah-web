@@ -82,7 +82,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { path: `/areas/${area.slug}/${serviceSlug}/near-me`, priority: 0.82 }
     ])
   ]);
-  const suburbRoutes: Entry[] = suburbPages.flatMap((suburb) => Object.keys(servicesData).map((serviceSlug) => ({ path: `/suburbs/${suburb.slug}/${serviceSlug}`, priority: 0.85 })));
+  // Only list suburbs that do NOT have an `/areas` twin. The 37 overlapping
+  // suburbs canonicalise to `/areas/<slug>/<service>` (see
+  // `app/suburbs/[slug]/[serviceSlug]/page.tsx`), and a sitemap should never
+  // advertise a URL that points its canonical somewhere else — that asks Google
+  // to crawl 1,036 pages only to discard them.
+  const areaSlugs = new Set(areaPages.map((area) => area.slug));
+  const suburbRoutes: Entry[] = suburbPages
+    .filter((suburb) => !areaSlugs.has(suburb.slug))
+    .flatMap((suburb) => Object.keys(servicesData).map((serviceSlug) => ({ path: `/suburbs/${suburb.slug}/${serviceSlug}`, priority: 0.85 })));
   const problemRoutes: Entry[] = problemPages.map((problem) => ({ path: `/problems/${problem.slug}`, priority: 0.8 }));
   const blogRoutes: Entry[] = blogPosts.map((post) => ({ path: `/blog/${post.slug}`, priority: 0.7, changeFrequency: "monthly" }));
 

@@ -4,7 +4,32 @@ import { areaPages } from "@/config/area-data";
 
 export const dynamic = "force-dynamic";
 
-export async function GET() {
+/**
+ * Guard the endpoint. It was previously open to the public while spending a
+ * billable Google PageSpeed API quota — anyone could drain the key by looping
+ * requests. Vercel Cron sends `Authorization: Bearer $CRON_SECRET`, so accept
+ * that and fall back to a `?secret=` param for manual runs.
+ */
+function isAuthorized(req: Request): boolean {
+  const secret = process.env.CRON_SECRET;
+  if (!secret) return false;
+  const provided =
+    req.headers.get("authorization")?.replace(/^Bearer\s+/i, "") ??
+    new URL(req.url).searchParams.get("secret") ??
+    "";
+  if (provided.length !== secret.length) return false;
+  let mismatch = 0;
+  for (let i = 0; i < provided.length; i += 1) {
+    mismatch |= provided.charCodeAt(i) ^ secret.charCodeAt(i);
+  }
+  return mismatch === 0;
+}
+
+export async function GET(req: Request) {
+  if (!isAuthorized(req)) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
   const apiKey = process.env.PAGESPEED_API_KEY;
   const baseUrl = "https://www.klservisrumah.my";
   const paths = [

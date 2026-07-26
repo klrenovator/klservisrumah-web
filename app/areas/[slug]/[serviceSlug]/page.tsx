@@ -7,6 +7,11 @@ import { getFAQSchema, getLocalBusinessServiceSchema } from "@/lib/seo";
 import { buildAreaBundle, buildServiceBundle, buildServiceLinks } from "@/lib/location-bundles";
 import { LocaleAreaServiceView } from "@/components/sections/locale-area-service-view";
 
+// Every valid param is enumerated in `generateStaticParams()`, so anything
+// else must 404 rather than be rendered on demand and cached as a 200
+// (a soft 404). See `app/[lang]/[[...slug]]/page.tsx` for the full rationale.
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return areaPages.flatMap((area) => Object.keys(servicesData).map((serviceSlug) => ({ slug: area.slug, serviceSlug })));
 }

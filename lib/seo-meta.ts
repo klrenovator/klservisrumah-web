@@ -147,13 +147,20 @@ export function optimizeDescription(rawDescription: string): string {
   const max = isCjk(value) ? CJK_DESC_MAX : DESC_MAX;
   if (value.length <= max) return value;
 
-  // Prefer ending on a complete sentence.
+  // Prefer ending on a complete sentence — but only when the surviving text
+  // still fills the SERP snippet. Cutting at the first sentence break used to
+  // discard the trailing value proposition on 51 sub-service pages, leaving
+  // ~96-char descriptions well under the 110-char floor (e.g. "Kitchen
+  // splashback, bathroom wall … patterns." dropped the pricing, insurance and
+  // booking clause). Requiring `>= DESC_MIN` keeps the sentence cut only when
+  // it produces a description that is actually long enough to be useful.
+  const minKeep = isCjk(value) ? Math.floor(CJK_DESC_MAX * 0.7) : DESC_MIN;
   const sentenceEnd = Math.max(
     value.lastIndexOf(". ", max),
     value.lastIndexOf("! ", max),
     value.lastIndexOf("? ", max),
   );
-  if (sentenceEnd > max * 0.6) return value.slice(0, sentenceEnd + 1).trim();
+  if (sentenceEnd >= minKeep) return value.slice(0, sentenceEnd + 1).trim();
 
   return `${clampAtBoundary(value, max - 1)}…`;
 }
@@ -201,6 +208,16 @@ export type BuildMetadataInput = {
   description: string;
   /** Site-relative path, e.g. "/services/painting". */
   path: string;
+  /**
+   * Point the canonical (and hreflang cluster) at a *different* URL.
+   *
+   * Only for genuine duplicates: the 37 suburbs that are also coverage areas
+   * publish the same service page under both `/suburbs/<x>/<svc>` and
+   * `/areas/<x>/<svc>`. Consolidating them onto the `/areas` URL — which carries
+   * the fuller content — stops the two versions competing for the same query.
+   * Defaults to `path` so every other route stays self-canonical.
+   */
+  canonicalPath?: string;
   image?: string;
   type?: "website" | "article";
   keywords?: string[];
@@ -220,6 +237,7 @@ export function buildMetadata({
   title,
   description,
   path,
+  canonicalPath,
   image = siteConfig.defaultOgImage,
   type = "website",
   keywords = [],
@@ -230,14 +248,15 @@ export function buildMetadata({
 }: BuildMetadataInput): Metadata {
   const finalTitle = optimizeTitle(title, { appendBrand });
   const finalDescription = optimizeDescription(description);
-  const url = absoluteUrl(path);
+  // og:url should agree with the canonical, otherwise the two signals conflict.
+  const url = absoluteUrl(canonicalPath ?? path);
   const imageUrl = image.startsWith("http") ? image : `${SITE_URL}${image.startsWith("/") ? image : `/${image}`}`;
 
   return {
     title: finalTitle,
     description: finalDescription,
     ...(keywords.length ? { keywords } : {}),
-    alternates: buildAlternates(path),
+    alternates: buildAlternates(canonicalPath ?? path),
     robots: noIndex
       ? { index: false, follow: false }
       : {

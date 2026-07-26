@@ -9,6 +9,11 @@ import { siteConfig } from "@/config/site";
 
 const baseUrl = "https://www.klservisrumah.my";
 
+// Every valid param is enumerated in `generateStaticParams()`, so anything
+// else must 404 rather than be rendered on demand and cached as a 200
+// (a soft 404). See `app/[lang]/[[...slug]]/page.tsx` for the full rationale.
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   return areaPages.map((area) => ({
     slug: area.slug

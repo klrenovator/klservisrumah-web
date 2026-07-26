@@ -45,6 +45,11 @@ function lowerFirst(value: string): string {
   return value.charAt(0).toLowerCase() + value.slice(1);
 }
 
+// Every valid param is enumerated in `generateStaticParams()`, so anything
+// else must 404 rather than be rendered on demand and cached as a 200
+// (a soft 404). See `app/[lang]/[[...slug]]/page.tsx` for the full rationale.
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return problemPages.map((problem) => ({ slug: problem.slug }));
 }
