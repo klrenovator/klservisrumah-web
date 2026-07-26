@@ -6,6 +6,7 @@ import { suburbPages } from "@/config/suburb-data";
 import { problemPages } from "@/config/problem-data";
 import { allGenericPages, clusterPages, maintenancePages } from "@/config/content-data";
 import { toolsList } from "@/config/tools-data";
+import { TOOLS_INDEX_PATH, toolLocaleUrls } from "@/config/tools-i18n";
 import { slugify } from "@/lib/utils";
 
 const baseUrl = "https://www.klservisrumah.my";
@@ -13,27 +14,44 @@ const baseUrl = "https://www.klservisrumah.my";
 // Stable lastModified date to prevent unnecessary crawl budget waste
 const SITEMAP_LAST_MODIFIED = new Date("2026-07-25T00:00:00.000Z");
 
-type Entry = { path: string; priority: number; changeFrequency?: MetadataRoute.Sitemap[number]["changeFrequency"] };
+type Entry = {
+  path: string;
+  priority: number;
+  changeFrequency?: MetadataRoute.Sitemap[number]["changeFrequency"];
+  /**
+   * Real per-language URL cluster (the tools pages). When present, the entry's
+   * hreflang points at the actual localised siblings instead of self-referencing.
+   */
+  languages?: { en: string; ms: string; zh: string };
+};
 
-function entry({ path, priority, changeFrequency = "weekly" }: Entry): MetadataRoute.Sitemap[number] {
+function entry({ path, priority, changeFrequency = "weekly", languages }: Entry): MetadataRoute.Sitemap[number] {
   const cleanPath = path === "/" ? "" : path;
   const pageUrl = `${baseUrl}${cleanPath}`;
   // Self-referencing hreflang. Language switching is client-side, so all three
   // locales are served from this one URL. The previous /ms and /zh alternates
   // 301-redirected back here — and Google discards hreflang clusters whose
   // targets redirect, which silently invalidated the annotations sitewide.
+  const langs = languages
+    ? {
+        "en-MY": `${baseUrl}${languages.en}`,
+        "ms-MY": `${baseUrl}${languages.ms}`,
+        "zh-MY": `${baseUrl}${languages.zh}`,
+        "x-default": `${baseUrl}${languages.en}`
+      }
+    : {
+        "en-MY": pageUrl,
+        "ms-MY": pageUrl,
+        "zh-MY": pageUrl,
+        "x-default": pageUrl
+      };
   return {
     url: pageUrl,
     lastModified: SITEMAP_LAST_MODIFIED,
     changeFrequency,
     priority,
     alternates: {
-      languages: {
-        "en-MY": pageUrl,
-        "ms-MY": pageUrl,
-        "zh-MY": pageUrl,
-        "x-default": pageUrl
-      }
+      languages: langs
     }
   };
 }
@@ -61,9 +79,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/commercial", priority: 0.72 },
     { path: "/residential", priority: 0.72 },
     { path: "/seasonal", priority: 0.68 },
-    { path: "/tools", priority: 0.8 },
+    // The free-tools cluster exists in three languages at three real URLs —
+    // every member entry carries the full hreflang cluster so the annotations
+    // resolve both ways (Google drops clusters that only link one way).
+    {
+      path: TOOLS_INDEX_PATH.en,
+      priority: 0.8,
+      languages: { en: TOOLS_INDEX_PATH.en, ms: TOOLS_INDEX_PATH.ms, zh: TOOLS_INDEX_PATH.zh }
+    },
+    { path: TOOLS_INDEX_PATH.ms, priority: 0.8, languages: { en: TOOLS_INDEX_PATH.en, ms: TOOLS_INDEX_PATH.ms, zh: TOOLS_INDEX_PATH.zh } },
+    { path: TOOLS_INDEX_PATH.zh, priority: 0.8, languages: { en: TOOLS_INDEX_PATH.en, ms: TOOLS_INDEX_PATH.ms, zh: TOOLS_INDEX_PATH.zh } },
     // Derived from the tool registry so a new estimator is never missed.
-    ...toolsList.map((tool) => ({ path: `/tools/${tool.slug}`, priority: 0.82 }))
+    ...toolsList.flatMap((tool) => {
+      const urls = toolLocaleUrls(tool.slug);
+      return [
+        { path: urls.en, priority: 0.82, languages: urls },
+        { path: urls.ms, priority: 0.82, languages: urls },
+        { path: urls.zh, priority: 0.82, languages: urls }
+      ];
+    })
   ];
 
   const serviceRoutes: Entry[] = Object.values(servicesData).flatMap((service) => [

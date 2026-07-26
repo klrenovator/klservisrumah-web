@@ -1,3 +1,53 @@
+## 🆕 ROUND 31 EXECUTION LOG (2026-07-27) — DEEP-TOOL SPECS TRILINGUAL (EN/MS/ZH) + REAL INDEXABLE MS/ZH TOOL PAGES (/ms/alatan/*, /zh/gongju/*)
+
+**User direction:** "start on the deep-tool spec content trilingual round next" — then, in Urdu this session, the strategic requirement: **the tools must surface when a customer searches Google for an estimate/calculator in their own language (BM/中文), and their URLs must exist in the site's three languages** — i.e. real, indexable MS/ZH tool pages, not the site-wide 301-redirect-to-English behaviour that locale URLs had until now.
+
+**Round status:** ✅ **COMPLETED — closes the Round 30 pending item ("the five hand-built deep estimators' content is still authored in English") AND ships the site's first truly localised indexable route trees**
+
+### ✅ What was changed
+
+#### 1. 🧱 Deep-tool spec content converted to trilingual builders (the Round 30 pending item)
+- ✅ **`lib/estimator/builders/{painting,leak,ceiling,plumbing,tv-mount}.ts` (new)** — every hand-built spec refactored into a `buildXSpec(t)` builder mirroring the generic engine. Catalogues slimmed to locale-neutral data (values, icons, ratios only); all question text, choice labels, breakdown notes, findings, assumptions and add-on copy resolve through the injected translator.
+- ✅ **15 content dictionaries** in `lib/estimator/i18n/tools/{tool}-{en,ms,zh}.ts` — EN extracted **verbatim** from the original specs; MS/ZH hand-authored with rates/units re-interpolated via `{token}` placeholders ("kps", 平方英尺…). **1,060 keys × 3 locales.**
+- ✅ **Compat modules** — the original `lib/estimator/{painting,leak,ceiling,plumbing,tv-mount}.ts` now bind the EN dictionaries and keep every existing export, so EN behaviour is byte-identical (proven by a 3,248-combination snapshot diff across all five tools, EN output unchanged).
+- ✅ **Per-locale chrome modules** `lib/estimator/i18n/chrome-{en,ms,zh}.ts` — standalone form/result/severity/whatsapp sections kept byte-identical to `messages/*.json` (harness-enforced), so a locale route ships ONLY its own language.
+- ✅ **10 locale wizards** `components/tools/estimator/wizards/{ms,zh}/*.tsx` — each imports only its locale's dicts, builds the spec and renders `<EstimatorForm>` with the matching chrome translator.
+- ✅ Fixed a latent type error in the new ceiling builder (`PriceLabelKey` narrowing) that `tsc` caught.
+
+#### 2. 🌐 Real indexable MS/ZH tool pages (the strategic request)
+**URLs (user-approved):** BM = translated slugs — `/ms/alatan` (+ `kalkulator-cat`, `diagnosis-kebocoran`, `kalkulator-siling`, `diagnostik-paip`, `penasihat-pemasangan-tv`); 中文 = CJK slugs — `/zh/gongju` (+ 油漆计算器, 漏水诊断, 天花板计算器, 水管诊断, 电视安装估价).
+
+- ✅ **`config/tools-i18n.ts` (new)** — slug registry + reverse maps, per-tool MS/ZH shell content (heading, meta, direct answer, hero alt, stats, how-to, FAQs, price-table scope/note, related-service labels) with **every ringgit figure interpolated from `RATES` via `money()`/`band()`**, and the published `rate` column always merged from the English row by index. Shared page-chrome copy + tools-index copy for all three languages. Shape integrity throws at module load.
+- ✅ **12 new routes** — `app/ms/alatan/page.tsx`, `app/ms/alatan/<5 slugs>/page.tsx`, `app/zh/gongju/page.tsx`, `app/zh/gongju/<5 slugs>/page.tsx`. **Concrete per-tool route files** (not a shared `[slug]` dynamic route) so each route chunk ships exactly ONE wizard — matching the EN per-route bundle discipline (MS/ZH pages: 141–146 kB vs EN 139–144 kB; a single `[slug]` route had fused all five wizards into one 168 kB chunk and was rejected).
+- ✅ **`components/tools/tool-page.tsx`** — locale-aware: all chrome literals from `toolShellCopy[locale]`; trilingual strip now **links to the sibling locale URLs** (crawlable cross-language paths on every tool page, all locales); related-tool links resolve to locale slugs; disclaimer served from the locale's chrome dictionary.
+- ✅ **Metadata/SEO layer** — `buildMetadata()` gained `languageUrls` (real 3-URL hreflang cluster: en-MY/ms-MY/zh-MY/x-default, self-canonical per page) and `ogLocale` options; `getToolGraph()` gained url/language/HowTo-copy overrides; breadcrumbs gained a localised home crumb ("Utama"/"首页"); `app/sitemap.ts` now lists all 12 locale URLs with the full cluster on every member (and the EN tool entries were updated to reference the same cluster — reciprocal hreflang, both sitemap and on-page).
+- ✅ **`middleware.ts`** — `/ms/alatan` and `/zh/gongju` are allowlisted through (locale cookie set), everything else keeps the 301-to-English behaviour; verified `/ms/services` still redirects.
+- ✅ **Shared index extraction** — `components/tools/tools-index-page.tsx` (+ `buildToolsIndexGraph`) now drives `/tools`, `/ms/alatan` and `/zh/gongju`; EN output verified unchanged (byte-level JSON-LD equality + identical visible text against a saved baseline build).
+- ✅ **`public/llms.txt`** — new "Free Tools" section listing all 18 tool-cluster URLs.
+
+### 📁 Files created (48)
+`config/tools-i18n.ts` · `components/tools/localized-tool-route.tsx` · `components/tools/tools-index-page.tsx` · 12 locale route files (`app/ms/alatan/**`, `app/zh/gongju/**`) · 6 builders (`lib/estimator/builders/*`) · 15 tool dicts + 3 chrome dicts (`lib/estimator/i18n/*`) · 10 locale wizards (`components/tools/estimator/wizards/{ms,zh}/*`) · `scripts/snapshot-specs.ts`
+
+### 📁 Files modified (23)
+5 EN tool routes (+ `app/tools/page.tsx`) · `app/sitemap.ts` · `middleware.ts` · `components/tools/tool-page.tsx` · `components/ui/breadcrumbs.tsx` · `lib/seo-meta.ts` · `lib/estimator/schema.ts` · `lib/i18n.ts` · `lib/estimator/chrome-i18n.ts` · 5 estimator compat modules · `scripts/test-estimators.ts` · `public/llms.txt`
+
+### ✅ Quality check results (13-point)
+- ✅ TypeScript **0 errors** · ESLint **0 errors, 0 warnings**
+- ✅ Build green — **4,040 / 4,040 SSG pages** (was 4,028; +12 locale routes), 0 warnings
+- ✅ Estimator harness: **223,558 assertions, 0 failures** (was 195,971) — new sections: dict key/placeholder parity (1,060 keys × 3), numeric parity across locales, chrome↔messages sync, and the locale page layer (slug registry integrity, priceTable `rate` byte-equality with English, **every RM figure on a localised page must exist on the English page**, name parity with each locale's wizard, SERP budgets incl. CJK 34/80)
+- ✅ EN parity proven — visible text and all JSON-LD blocks byte-identical vs a saved pre-change baseline build; the only intended diffs are hreflang now pointing at real locale URLs and the trilingual strip becoming links
+- ✅ Production smoke test (`next start`): HTTP 200 on all 12 locale routes + no redirect; `/ms/services` still 301s; exactly one `<h1>` per page; self-canonical + reciprocal 4-way hreflang on every cluster member; og:locale ms_MY/zh_MY; SSR-rendered localised wizards (verified BM question text + 中文 result panel in raw HTML); sitemap lists 6 MS + 6 ZH URLs
+- ✅ Bundle discipline honoured — locale tool routes **141–146 kB** (EN 139–144 kB), single-language dicts per route; `/ms/alatan` + `/zh/gongju` indexes 111 kB like `/tools`
+- ✅ Permanent rules honoured — phone +60 11-1662 7349 untouched, no public SSM number added, every price traces to the published 2026 rate book (harness-enforced), no invented figures; meta titles/descriptions within budgets via the real optimiser.
+
+### ⏳ Still pending after Round 31
+- ⏳ The rest of the site remains client-side-language-switched (services/areas/blog…). The tools cluster is the pilot for real locale URLs; extending the pattern is a deliberate later-round decision (3× URL inventory).
+- ⏳ Visual QA at 375px and desktop on deployed URLs (no browser in this environment — only HTTP/DOM checks were possible).
+- ⏳ Real photography and verified review import when assets are supplied.
+- ⏳ External tasks: GBP optimization, GSC/Bing verification, Rich Results testing on the live domain — **when GSC is connected, submit the new `/ms/alatan` + `/zh/gongju` URLs for indexing** and watch BM/中文 query impressions.
+
+---
+
 ## 🆕 ROUND 30 EXECUTION LOG (2026-07-27) — ESTIMATOR TRILINGUAL PASS (EN/MS/ZH) + PRICE-CLARITY (TOTAL = LABOUR + MATERIALS)
 
 **User direction:** "Handoff file mein estimators k hawaly sy Jo next eham Kam hy wo shuru kren. Or Total Estimate price with material hy ya Sirf labour? estimate price mein ye wazeh hona chaiye." (Start the next important estimator task from the handoff. And is the Total Estimate price with material or only labour? This should be made explicit in the estimate price.)

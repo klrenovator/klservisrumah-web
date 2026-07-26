@@ -4,6 +4,14 @@ import type { NextRequest } from "next/server";
 const SUPPORTED_LOCALES = ["ms", "zh"] as const;
 
 /**
+ * Locale-prefixed subtrees that serve REAL, fully-localised, indexable pages
+ * (the free-tools cluster). These pass through untouched instead of
+ * redirecting to English — everything else locale-prefixed still redirects,
+ * because those pages switch language client-side at the same URL.
+ */
+const REAL_LOCALE_TREES = ["/ms/alatan", "/zh/gongju"] as const;
+
+/**
  * Middleware for locale-prefixed URL handling.
  *
  * Since language switching is client-side (React context + localStorage),
@@ -11,6 +19,7 @@ const SUPPORTED_LOCALES = ["ms", "zh"] as const;
  *
  * - /ms and /zh (bare) → allowed through to the scaffold landing page
  *   which sets the locale and auto-redirects to /
+ * - /ms/alatan/* and /zh/gongju/* → real localised pages, pass through
  * - /ms/* and /zh/* (deep) → 301 redirect to the English URL with the
  *   locale cookie set, so the user sees translated content at the canonical URL
  *
@@ -36,6 +45,18 @@ export function middleware(request: NextRequest) {
     }
 
     if (pathname.startsWith(`${prefix}/`)) {
+      // Genuine localised subtree (the tools cluster) → straight through,
+      // cookie set so the client-side language context agrees with the URL.
+      if (REAL_LOCALE_TREES.some((tree) => pathname === tree || pathname.startsWith(`${tree}/`))) {
+        const response = NextResponse.next();
+        response.cookies.set("klservisrumah-lang", locale, {
+          path: "/",
+          maxAge: 31536000,
+          sameSite: "lax"
+        });
+        return response;
+      }
+
       // Deep locale URL like /ms/services → redirect to /services with cookie set
       const targetPath = pathname.slice(prefix.length) || "/";
       const targetUrl = request.nextUrl.clone();

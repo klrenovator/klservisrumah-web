@@ -25,8 +25,25 @@ function absolute(path = "") {
   return `${baseUrl}${path.startsWith("/") ? path : `/${path}`}`;
 }
 
-export function getToolGraph(content: ToolContent) {
-  const url = absolute(`/tools/${content.slug}`);
+export function getToolGraph(
+  content: ToolContent,
+  options: {
+    /** Absolute page URL — the localised MS/ZH routes pass their own. */
+    url?: string;
+    /** BCP-47 tag for this rendering (default: the trilingual EN-page list). */
+    language?: string;
+    /** Localised HowTo node strings (defaults keep the English wording). */
+    howToName?: string;
+    howToDescription?: string;
+  } = {}
+) {
+  const url = options.url ?? absolute(`/tools/${content.slug}`);
+  const inLanguage = options.language ? [options.language] : ["en-MY", "ms-MY", "zh-MY"];
+  const howToName =
+    options.howToName ?? `How to use the ${content.name}`;
+  const howToDescription =
+    options.howToDescription ??
+    `Get an instant ${content.name.toLowerCase()} estimate for Kuala Lumpur and Selangor in about ${content.estimatedMinutes} minute${content.estimatedMinutes > 1 ? "s" : ""}.`;
 
   return {
     "@context": "https://schema.org",
@@ -42,7 +59,7 @@ export function getToolGraph(content: ToolContent) {
         operatingSystem: "Any (web browser)",
         browserRequirements: "Requires JavaScript",
         description: content.metaDesc,
-        inLanguage: ["en-MY", "ms-MY", "zh-MY"],
+        inLanguage,
         isAccessibleForFree: true,
         offers: { "@type": "Offer", price: "0", priceCurrency: "MYR" },
         featureList: content.covers,
@@ -90,8 +107,8 @@ export function getToolGraph(content: ToolContent) {
       {
         "@type": "HowTo",
         "@id": `${url}#howto`,
-        name: `How to use the ${content.name}`,
-        description: `Get an instant ${content.name.toLowerCase()} estimate for Kuala Lumpur and Selangor in about ${content.estimatedMinutes} minute${content.estimatedMinutes > 1 ? "s" : ""}.`,
+        name: howToName,
+        description: howToDescription,
         totalTime: `PT${content.estimatedMinutes}M`,
         estimatedCost: { "@type": "MonetaryAmount", currency: "MYR", value: "0" },
         tool: [{ "@type": "HowToTool", name: content.name }],

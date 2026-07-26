@@ -34,6 +34,17 @@ Google Maps: https://maps.app.goo.gl/dG5WWYBCotRQzvRJA
 - Contact: https://www.klservisrumah.my/contact
 - About: https://www.klservisrumah.my/about
 
+## Free Tools (Instant Estimators)
+Free single-page estimators priced from the published 2026 rate list — available in English, Bahasa Malaysia and Chinese.
+- Tools index (EN): https://www.klservisrumah.my/tools
+- Indeks alatan (BM): https://www.klservisrumah.my/ms/alatan
+- 工具索引 (中文): https://www.klservisrumah.my/zh/gongju
+- Painting calculator: https://www.klservisrumah.my/tools/painting-calculator · BM https://www.klservisrumah.my/ms/alatan/kalkulator-cat · 中文 https://www.klservisrumah.my/zh/gongju/油漆计算器
+- Leak triage: https://www.klservisrumah.my/tools/leak-triage · BM https://www.klservisrumah.my/ms/alatan/diagnosis-kebocoran · 中文 https://www.klservisrumah.my/zh/gongju/漏水诊断
+- Ceiling estimator: https://www.klservisrumah.my/tools/ceiling-calculator · BM https://www.klservisrumah.my/ms/alatan/kalkulator-siling · 中文 https://www.klservisrumah.my/zh/gongju/天花板计算器
+- Plumbing diagnostic: https://www.klservisrumah.my/tools/plumbing-diagnostic · BM https://www.klservisrumah.my/ms/alatan/diagnostik-paip · 中文 https://www.klservisrumah.my/zh/gongju/水管诊断
+- TV mount advisor: https://www.klservisrumah.my/tools/tv-mount-advisor · BM https://www.klservisrumah.my/ms/alatan/penasihat-pemasangan-tv · 中文 https://www.klservisrumah.my/zh/gongju/电视安装估价
+
 ## Business Details
 - Legal Name: Multicore Dynamics Resources
 - SSM: 003765188-T

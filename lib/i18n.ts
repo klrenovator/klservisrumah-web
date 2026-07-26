@@ -111,6 +111,19 @@ export type Translator = (key: string, vars?: Record<string, string | number>) =
  * Falls back to English, then to the key itself, so missing translations
  * never produce empty strings.
  */
+/**
+ * Translator bound to ONE self-contained dictionary.
+ *
+ * Used by the deep-tool routes, where each calculator ships its own compact
+ * per-locale dictionary (spec content + chrome) instead of the full ~44 KB
+ * site message bundles — that keeps every `/tools/*` route inside its Core Web
+ * Vitals JavaScript budget. Missing keys resolve to the key itself, and the
+ * test harness sweeps every spec in every locale so a gap fails the build.
+ */
+export function createStaticTranslator(dict: MessageDictionary): Translator {
+  return createTranslator({ en: dict, ms: dict, zh: dict }, "en");
+}
+
 export function createTranslator(
   messages: Record<Locale, MessageDictionary>,
   locale: Locale
