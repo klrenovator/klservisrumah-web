@@ -23,6 +23,14 @@ import { ceilingSpec, CEILING_TYPES } from "../lib/estimator/ceiling.ts";
 import { plumbingSpec, PLUMBING_PROBLEMS } from "../lib/estimator/plumbing.ts";
 import { tvMountSpec } from "../lib/estimator/tv-mount.ts";
 import { RATES } from "../lib/estimator/pricing.ts";
+import { SERVICE_SCOPES } from "../lib/estimator/rate-book.generated.ts";
+import {
+  buildServiceEstimator,
+  hasServiceEstimator,
+  DEDICATED_TOOL_BY_SERVICE
+} from "../lib/estimator/service-estimator.ts";
+import { servicesData } from "../config/services-data.ts";
+import { toolsContent } from "../config/tools-data.ts";
 import {
   blockingMessage,
   canAdvance,
@@ -472,6 +480,135 @@ for (const spec of [paintingSpec, leakSpec, ceilingSpec, plumbingSpec, tvMountSp
   }
 }
 console.log("  every estimator opens with a live price and ≤4 visible questions");
+
+/* ── Generic per-service estimators ────────────────────────────────────────
+ * One engine covers every service that does not have a hand-built estimator.
+ * It must satisfy the same invariants as the five bespoke ones, and — because
+ * it is generated rather than authored — it must additionally never quote a
+ * rate that the service page does not publish.
+ */
+console.log("• Per-service estimators");
+let serviceSpecs = 0;
+let serviceCases = 0;
+for (const service of Object.values(servicesData)) {
+  if (!hasServiceEstimator(service.slug)) {
+    fail(`[${service.slug}] no estimator could be built — the service page would have no calculator`);
+    continue;
+  }
+
+  const spec = buildServiceEstimator({
+    slug: service.slug,
+    title: service.title,
+    warranty: service.warranty
+  });
+  serviceSpecs += 1;
+
+  const book = SERVICE_SCOPES[service.slug];
+  const publishedNames = new Set(book.scopes.map((scope) => scope.name));
+  const floor = book.startPrice;
+
+  // Sweep every scope against every quantity preset and every modifier.
+  for (const scope of book.scopes) {
+    assert(
+      publishedNames.has(scope.name),
+      `[${service.slug}] scope "${scope.name}" is not in the published price list`
+    );
+    assert(
+      service.subServices.some((item) => item.name === scope.name && item.price === scope.published),
+      `[${service.slug}] scope "${scope.name}" quotes "${scope.published}", which does not match the service page`
+    );
+
+    const qtyField = `qty_${scope.unit}`;
+    const quantities = [1, 4, 40, 500];
+    serviceCases += sweep(
+      spec,
+      {
+        condition: ["new", "normal", "damaged"],
+        access: ["easy", "difficult"],
+        urgency: ["standard", "emergency"],
+        [qtyField]: quantities
+      },
+      { scope: scope.name }
+    );
+
+    // The published starting price is a hard floor in every combination.
+    for (const quantity of quantities) {
+      const result = spec.compute({ ...spec.defaults, scope: scope.name, [qtyField]: quantity });
+      assert(
+        result.price >= floor,
+        `[${service.slug}] "${scope.name}" × ${quantity} quoted ${result.price}, below the published minimum ${floor}`
+      );
+      assert(
+        result.serviceHref === `/services/${service.slug}`,
+        `[${service.slug}] estimator links to ${result.serviceHref} instead of its own service page`
+      );
+      assert(
+        result.breakdown.some((row) => row.value === scope.published),
+        `[${service.slug}] breakdown for "${scope.name}" never shows the published rate ${scope.published}`
+      );
+    }
+  }
+
+  // More of something must never cost less.
+  for (const scope of book.scopes) {
+    const qtyField = `qty_${scope.unit}`;
+    let previous = 0;
+    for (const quantity of [1, 2, 5, 20, 100]) {
+      const { price } = spec.compute({ ...spec.defaults, scope: scope.name, [qtyField]: quantity });
+      assert(
+        price >= previous,
+        `[${service.slug}] "${scope.name}" costs less at ${quantity} units than at the previous step`
+      );
+      previous = price;
+    }
+  }
+
+  // Single-page contract applies here too.
+  const reachable = visibleSteps(spec, spec.defaults);
+  const primary = reachable.filter((step) => !step.advanced);
+  assert(
+    primary.length <= 2,
+    `[${service.slug}] ${primary.length} primary questions — a service-page estimator must stay to 2`
+  );
+  for (const step of reachable) {
+    assert(
+      canAdvance(step, spec.defaults) || !step.advanced,
+      `[${service.slug}] step "${step.id}" needs an answer but is hidden in the advanced section`
+    );
+  }
+
+  // Only one quantity question may ever be visible at a time, or the customer
+  // sees "how many panels" and "how many sq ft" side by side.
+  for (const scope of book.scopes) {
+    const answers = { ...spec.defaults, scope: scope.name };
+    const shown = visibleSteps(spec, answers)
+      .flatMap((step) => visibleFields(step, answers))
+      .filter((field) => field.id.startsWith("qty_"));
+    assert(
+      shown.length === 1,
+      `[${service.slug}] "${scope.name}" shows ${shown.length} quantity questions — exactly 1 is required`
+    );
+    assert(
+      shown[0]?.id === `qty_${scope.unit}`,
+      `[${service.slug}] "${scope.name}" is charged per ${scope.unit} but asks "${shown[0]?.id}"`
+    );
+  }
+}
+
+// Services with a bespoke estimator must map to a tool that actually exists,
+// otherwise the service page would link into a 404.
+for (const [serviceSlug, toolSlug] of Object.entries(DEDICATED_TOOL_BY_SERVICE)) {
+  assert(
+    Boolean(servicesData[serviceSlug]),
+    `DEDICATED_TOOL_BY_SERVICE references unknown service "${serviceSlug}"`
+  );
+  assert(
+    Boolean(toolsContent[toolSlug]),
+    `DEDICATED_TOOL_BY_SERVICE points "${serviceSlug}" at unknown tool "${toolSlug}"`
+  );
+}
+
+console.log(`  ${serviceSpecs} service estimators · ${serviceCases} combinations checked`);
 
 /* ── Summary ───────────────────────────────────────────────────────────── */
 console.log(`\n${failures === 0 ? "✓ PASS" : "✗ FAIL"} — ${checks} assertions, ${failures} failure${failures === 1 ? "" : "s"}`);
