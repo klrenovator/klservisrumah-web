@@ -494,6 +494,7 @@ export const leakSpec: EstimatorSpec = {
     },
     {
       id: "duration",
+      advanced: true,
       title: "How long has it been leaking?",
       subtitle: "Older leaks usually mean more hidden damage.",
       icon: "🗓️",
@@ -509,6 +510,7 @@ export const leakSpec: EstimatorSpec = {
     },
     {
       id: "property",
+      advanced: true,
       title: "Tell us about the property",
       subtitle: "Building type and age change the access and repair method.",
       icon: "🏠",

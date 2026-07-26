@@ -424,6 +424,55 @@ for (const spec of [paintingSpec, leakSpec, ceilingSpec, plumbingSpec, tvMountSp
 }
 console.log(`  ${walkthroughs} full walkthroughs completed`);
 
+/* ── Single-page contract ──────────────────────────────────────────────── */
+/**
+ * The estimator renders on one page: primary questions are always visible and
+ * everything marked `advanced` is collapsed behind an optional toggle. That
+ * only works if (a) the visitor is never asked more than a handful of things
+ * up front, and (b) nothing hidden in the advanced section can block them —
+ * so every advanced field must already carry a usable default.
+ */
+console.log("• Single-page form contract");
+const MAX_PRIMARY_QUESTIONS = 4;
+for (const spec of [paintingSpec, leakSpec, ceilingSpec, plumbingSpec, tvMountSpec]) {
+  const reachable = visibleSteps(spec, spec.defaults);
+  const primary = reachable.filter((step) => !step.advanced);
+  const advanced = reachable.filter((step) => step.advanced);
+
+  assert(primary.length >= 1, `[${spec.slug}] no primary questions — the page would open empty`);
+  assert(
+    primary.length <= MAX_PRIMARY_QUESTIONS,
+    `[${spec.slug}] ${primary.length} primary questions shown up front — keep it to ${MAX_PRIMARY_QUESTIONS} or fewer and mark the rest advanced`
+  );
+
+  // An untouched advanced section must still produce a bookable estimate.
+  for (const step of advanced) {
+    for (const field of visibleFields(step, spec.defaults)) {
+      assert(
+        !field.required || spec.defaults[field.id] !== undefined,
+        `[${spec.slug}] advanced field "${field.id}" is required but has no default — it would silently block the estimate`
+      );
+      assert(
+        canAdvance(step, spec.defaults),
+        `[${spec.slug}] advanced step "${step.id}" blocks on defaults — a collapsed section must never stop the customer`
+      );
+    }
+  }
+
+  // The headline price must be real before a single tap.
+  const opening = spec.compute(spec.defaults);
+  assert(opening.price > 0, `[${spec.slug}] opening price must be a real number, not zero`);
+  // Anything the defaults cannot satisfy must be a *visible* primary question.
+  // A customer can only fix what they can see.
+  for (const step of reachable) {
+    assert(
+      canAdvance(step, spec.defaults) || !step.advanced,
+      `[${spec.slug}] step "${step.id}" needs an answer but is hidden in the advanced section`
+    );
+  }
+}
+console.log("  every estimator opens with a live price and ≤4 visible questions");
+
 /* ── Summary ───────────────────────────────────────────────────────────── */
 console.log(`\n${failures === 0 ? "✓ PASS" : "✗ FAIL"} — ${checks} assertions, ${failures} failure${failures === 1 ? "" : "s"}`);
 if (failures > 0) process.exit(1);

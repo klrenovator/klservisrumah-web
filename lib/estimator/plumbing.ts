@@ -388,6 +388,7 @@ export const plumbingSpec: EstimatorSpec = {
     },
     {
       id: "property",
+      advanced: true,
       title: "About the property",
       subtitle: "Older pipework usually needs more work to reach.",
       icon: "🏠",
@@ -417,6 +418,7 @@ export const plumbingSpec: EstimatorSpec = {
     },
     {
       id: "timing",
+      advanced: true,
       title: "When do you need a plumber?",
       subtitle: "Emergency dispatch carries an uplift — always explained before work starts.",
       icon: "⏱️",

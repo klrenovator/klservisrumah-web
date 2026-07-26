@@ -706,6 +706,7 @@ export const paintingSpec: EstimatorSpec = {
     },
     {
       id: "paint",
+      advanced: true,
       title: "Which paint system do you want?",
       subtitle: "We use genuine Nippon, Dulux and Jotun products across every grade.",
       icon: "🪣",
@@ -743,6 +744,7 @@ export const paintingSpec: EstimatorSpec = {
     },
     {
       id: "colour",
+      advanced: true,
       title: "What colour direction?",
       subtitle: "Colour affects coverage — dark shades usually need an extra coat.",
       icon: "🎨",
@@ -758,6 +760,7 @@ export const paintingSpec: EstimatorSpec = {
     },
     {
       id: "access",
+      advanced: true,
       title: "How easy is site access?",
       subtitle: "Height and access drive the safety equipment we bring.",
       icon: "🪜",
@@ -773,6 +776,7 @@ export const paintingSpec: EstimatorSpec = {
     },
     {
       id: "urgency",
+      advanced: true,
       title: "When do you need it done?",
       subtitle: "Standard scheduling keeps the price lowest.",
       icon: "⏱️",

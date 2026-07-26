@@ -49,7 +49,7 @@ const hubFaqs = [
   },
   {
     q: "How long does each estimator take?",
-    a: "Between one and two minutes. Almost every answer is a tap on a card, a dropdown or a slider — there is very little typing."
+    a: "Under a minute for most people. Every estimator is a single page — there are no next buttons and no multi-step wizard. You tap two or three answers, the price appears at the top of the page straight away, and anything optional stays collapsed until you want it."
   },
   {
     q: "Do the estimators work on a phone?",
@@ -130,13 +130,13 @@ export default function ToolsPage() {
             Know Your Price Before You Book
           </h1>
           <p className="mt-5 max-w-3xl text-base font-medium leading-relaxed text-white/85 sm:text-lg">
-            Answer a few tap-and-go questions and get an instant cost estimate, timeline and recommended service — all
-            calculated from the same 2026 rates published on this website. No sign-up, no email, no waiting for a
-            callback.
+            Every estimator is a single page — no next buttons, no multi-step form. Tap two or three answers and the cost,
+            timeline and recommended service appear instantly, calculated from the same 2026 rates published on this
+            website. No sign-up, no email, no waiting for a callback.
           </p>
           <div className="mt-7 flex flex-wrap gap-x-6 gap-y-3 text-xs font-bold text-white/80">
             <span className="inline-flex items-center gap-1.5">
-              <Clock className="h-4 w-4 text-sky-300" /> 1–2 minutes each
+              <Clock className="h-4 w-4 text-sky-300" /> One page · under a minute
             </span>
             <span className="inline-flex items-center gap-1.5">
               <ShieldCheck className="h-4 w-4 text-emerald-400" /> No sign-up required
@@ -267,7 +267,7 @@ export default function ToolsPage() {
             <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
               {[
                 { title: "Priced from this website", desc: "Every rate is pulled from our published service pricing — the calculator cannot show you a number we do not publish." },
-                { title: "Almost no typing", desc: "Cards, dropdowns and sliders. Even a first-time visitor finishes in under two minutes on a phone." },
+                { title: "One page, no next buttons", desc: "Every question is on a single screen and the price updates live as you tap. Optional fine-tuning stays collapsed, so nothing gets in your way." },
                 { title: "A real scope, not a guess", desc: "Surface condition, access height, urgency, materials and add-ons are all modelled, so the number reflects your actual job." },
                 { title: "Straight to booking", desc: "Your answers and the estimate are pre-filled into WhatsApp so the dispatch desk can route the right tradesman immediately." }
               ].map((item) => (

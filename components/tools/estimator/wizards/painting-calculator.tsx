@@ -2,7 +2,7 @@
 
 import React from "react";
 import { paintingSpec } from "@/lib/estimator/painting";
-import { EstimatorWizard } from "../estimator-wizard";
+import { EstimatorForm } from "../estimator-form";
 
 /**
  * Per-tool client entry point. Estimator specs carry `compute` and `visible`
@@ -11,5 +11,5 @@ import { EstimatorWizard } from "../estimator-wizard";
  * webpack code-split one spec per route instead of bundling all five.
  */
 export default function Wizard() {
-  return <EstimatorWizard spec={paintingSpec} />;
+  return <EstimatorForm spec={paintingSpec} />;
 }

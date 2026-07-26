@@ -71,7 +71,7 @@ export const toolsContent: Record<string, ToolContent> = {
     ],
     eyebrow: "Free instant estimator",
     intro:
-      "Answer 7 quick questions and get an instant painting estimate based on our published KL & Selangor rates.",
+      "One page, no next buttons. Pick what you are painting and the size — the price appears instantly from our published KL & Selangor rates.",
     directQuestion: "How much does house painting cost in KL and Selangor?",
     directAnswer: `Interior painting in Kuala Lumpur and Selangor runs ${band(RATES.painting.interiorSqft.low, RATES.painting.interiorSqft.high)} per square foot, with a minimum of ${money(RATES.painting.roomMinimum)} per room. Exterior painting runs ${band(RATES.painting.exteriorSqft.low, RATES.painting.exteriorSqft.high)} per square foot and starts from ${money(RATES.painting.exteriorMinimum)}. The final figure depends on surface condition, paint grade, colour change, access height and how quickly you need it. This calculator applies those same published rates to your answers in about 90 seconds.`,
     trilingualMs:
@@ -86,12 +86,10 @@ export const toolsContent: Record<string, ToolContent> = {
       { label: "Time to finish", value: "Under 2 minutes" }
     ],
     howTo: [
-      { title: "Choose what you want painted", desc: "Pick from interior walls, ceilings, exterior walls, roof, doors, windows, gates, fences, cabinets, wardrobes, railings, steel structures, or a whole apartment, condo, landed house, office, shop lot, factory or warehouse." },
-      { title: "Select the area", desc: "Tap a common room size such as 10 × 12 ft, choose a property built-up band, or enter your own length, width and height — the calculator converts it into paintable surface area." },
-      { title: "Describe the surface condition", desc: "Tell us whether the surface is new, sound, cracked, peeling, water damaged, mouldy, uneven or bare cement, and flag any skim coat or waterproofing needed." },
-      { title: "Pick your paint system", desc: "Economy, standard, premium or luxury, plus features such as low VOC, odourless, washable, anti-mould, weather resistant or heat reflective. Choose whether we supply the paint." },
-      { title: "Set colour, access and urgency", desc: "Dark colours need an extra coat, upper floors and scaffold add access cost, and urgent scheduling carries a stated uplift." },
-      { title: "Get your estimate and book", desc: "See estimated cost, range, labour vs materials split, completion time, recommended package and add-ons — then book on WhatsApp or request a free site visit." }
+      { title: "Pick what you want painted and how big it is", desc: "Everything is on one page. Choose from interior walls, ceilings, exterior walls, roof, doors, windows, gates, fences, cabinets, wardrobes, railings, steel structures, or a whole apartment, condo, landed house, office, shop lot, factory or warehouse — then tap a common room size such as 10 × 12 ft, a property built-up band, or enter your own measurements." },
+      { title: "Say what condition the surface is in", desc: "New, sound, cracked, peeling, water damaged, mouldy, uneven or bare cement — and flag any skim coat or waterproofing needed. The price at the top of the page updates on every tap." },
+      { title: "Optional: fine-tune paint, colour, access and urgency", desc: "Open the optional section only if you want to change the paint grade, colour direction, access height or scheduling. Skip it and we use the most common answers — economy to luxury grades, ground-floor access and standard scheduling." },
+      { title: "Read your estimate and book", desc: "The estimated cost, range, labour vs materials split, completion time, recommended package and add-ons all appear on the same page — then book on WhatsApp or request a free site visit." }
     ],
     priceTable: [
       { scope: "Interior wall painting", rate: `${money(RATES.painting.interiorSqft.low)}–${money(RATES.painting.interiorSqft.high)} / sq ft`, note: `Minimum ${money(RATES.painting.roomMinimum)} per room` },
@@ -149,7 +147,7 @@ export const toolsContent: Record<string, ToolContent> = {
     ],
     eyebrow: "Free guided diagnosis",
     intro:
-      "Answer 6 quick questions to find the likely cause, how urgent it is, and what the repair should cost.",
+      "One page, no next buttons. Tell us where the leak is and what you see — the likely cause, urgency and repair cost appear instantly.",
     directQuestion: "How do I tell how serious a water leak is, and what will it cost to repair?",
     directAnswer: `Leak severity is judged on three things: whether water is actively moving, how fast the affected area is spreading, and how long it has been running. In Kuala Lumpur and Selangor, PU injection grouting for slab leaks costs ${band(RATES.waterproofing.puBand.low, RATES.waterproofing.puPoint)} per point, bathroom waterproofing without hacking runs ${band(RATES.waterproofing.bathroomBand.low, RATES.waterproofing.bathroomBand.high)}, roof leak diagnosis and repair starts from ${money(RATES.waterproofing.roofDiagnosis)}, and water-damaged ceiling reinstatement starts from ${money(RATES.waterproofing.ceilingRepair)}. This triage tool matches your symptoms to the likely cause, assigns an urgency level and estimates the repair using those published rates.`,
     trilingualMs:
@@ -164,12 +162,10 @@ export const toolsContent: Record<string, ToolContent> = {
       { label: "Diagnosis time", value: "Under 2 minutes" }
     ],
     howTo: [
-      { title: "Pick where the leak appears", desc: "Bathroom, kitchen, roof, ceiling, balcony, wall, outdoor area, water tank, pipe, toilet, tap or water heater." },
-      { title: "Select every symptom you see", desc: "Wet wall, active dripping, low pressure, brown stain, ceiling bubbling, cracks, mould, burst pipe, pipe noise, a spinning water meter or an unusually high bill." },
-      { title: "Rate the severity and spread", desc: "Choose whether it is slow, moderate, fast or severe, and how much area is affected — from a palm-sized spot to multiple rooms." },
-      { title: "Tell us how long it has been leaking", desc: "Leaks that have run for months usually mean hidden substrate damage that changes the repair method." },
-      { title: "Add the property type and age", desc: "Condo, terrace, semi-D or shop lot, and the building age — both affect access control and pipe condition." },
-      { title: "Review the diagnosis and book", desc: "You get likely causes, an urgency level, estimated repair cost and range, plus recommended add-ons such as ceiling reinstatement or repainting." }
+      { title: "Pick where the leak appears and what you see", desc: "Everything is on one page. Choose the location — bathroom, kitchen, roof, ceiling, balcony, wall, outdoor area, water tank, pipe, toilet, tap or water heater — then tick every symptom: wet wall, active dripping, low pressure, brown stain, ceiling bubbling, cracks, mould, burst pipe, pipe noise, a spinning water meter or an unusually high bill." },
+      { title: "Rate how bad it is and how much area is affected", desc: "Slow, moderate, fast or severe, and from a palm-sized spot to multiple rooms. The urgency level and the price at the top of the page update immediately." },
+      { title: "Optional: add how long it has run and the property details", desc: "Open the optional section to add leak duration, property type and building age. Skip it and we assume a typical mid-age Klang Valley home." },
+      { title: "Read the diagnosis and book", desc: "Likely causes, urgency level, estimated repair cost and range, plus recommended add-ons such as ceiling reinstatement or repainting — all on the same page." }
     ],
     priceTable: [
       { scope: "PU high-pressure injection grouting", rate: `${money(RATES.waterproofing.puBand.low)}–${money(RATES.waterproofing.puPoint)} / point`, note: "Non-destructive slab leak sealing" },
@@ -226,7 +222,7 @@ export const toolsContent: Record<string, ToolContent> = {
     ],
     eyebrow: "Free instant estimator",
     intro:
-      "Tell us the ceiling type, area and damage — get an instant estimate from our published sq ft rates.",
+      "One page, no next buttons. Pick the ceiling type, work needed and area — the estimate appears instantly from our published sq ft rates.",
     directQuestion: "How much does plaster ceiling work cost in KL and Selangor?",
     directAnswer: `Flat plaster ceiling installation is published from ${money(RATES.ceiling.flatSqft)} per square foot, tiered and L-box designs from ${money(RATES.ceiling.tieredSqft)}, cove and curved ceilings from ${money(RATES.ceiling.coveSqft)}, and repair or re-skim of an existing ceiling from ${money(RATES.ceiling.reskimSqft)} per square foot. Gypsum partition walls are from ${money(RATES.ceiling.partitionSqft)} per square foot and water-damaged ceiling repair starts from ${money(RATES.ceiling.repairMinimum)}. This estimator applies those rates to your ceiling type, area, damage level, height and extras.`,
     trilingualMs:
@@ -241,12 +237,10 @@ export const toolsContent: Record<string, ToolContent> = {
       { label: "Time to finish", value: "Under 2 minutes" }
     ],
     howTo: [
-      { title: "Choose your ceiling type", desc: "Gypsum board, plaster, PVC panel, calcium silicate, timber, cement board — or pick \"not sure\" and we identify it on site." },
-      { title: "Select the work needed", desc: "Repair an existing ceiling, replace a damaged section, install a new flat, tiered L-box or cove design, or build a gypsum partition wall." },
-      { title: "Pick the area", desc: "Tap a preset from a small 20 sq ft patch up to 20 × 25 ft, or enter your own length and width." },
-      { title: "Describe the damage", desc: "Hairline cracks, visible cracks, water stains, sagging boards, holes, partial collapse or mould — each changes how much framing has to be rebuilt." },
-      { title: "Add extras and access", desc: "Painting, lighting removal, fan refit, cornice, insulation and debris disposal, plus the ceiling height that determines access equipment." },
-      { title: "Get your estimate and book", desc: "See estimated cost, range, labour and materials, completion time, recommended package and add-ons — then book on WhatsApp." }
+      { title: "Pick the ceiling type, work needed and area", desc: "Everything is on one page. Gypsum board, plaster, PVC panel, calcium silicate, timber, cement board — or \"not sure\" and we identify it on site. Then choose repair, replacement, a new flat, tiered L-box or cove design, or a gypsum partition, and tap an area preset from a 20 sq ft patch up to 20 × 25 ft." },
+      { title: "Describe the damage and any extras", desc: "Hairline cracks, visible cracks, water stains, sagging boards, holes, partial collapse or mould — plus painting, lighting removal, fan refit, cornice, insulation or debris disposal. The price updates on every tap." },
+      { title: "Optional: ceiling height and timing", desc: "Open the optional section only if your ceiling is unusually high or you need the job fast. Skip it and we price standard height and standard scheduling." },
+      { title: "Read your estimate and book", desc: "Estimated cost, range, labour and materials, completion time, recommended package and add-ons all appear on the same page — then book on WhatsApp." }
     ],
     priceTable: [
       { scope: "Flat plaster ceiling", rate: `From ${money(RATES.ceiling.flatSqft)} / sq ft`, note: "Single-level, skim finished" },
@@ -303,7 +297,7 @@ export const toolsContent: Record<string, ToolContent> = {
     ],
     eyebrow: "Free guided diagnosis",
     intro:
-      "Pick your symptom and get the likely cause, urgency and repair cost — built from our published plumbing rates.",
+      "One page, no next buttons. Pick your problem and the price, likely cause and urgency appear instantly from our published plumbing rates.",
     directQuestion: "How much does a plumber charge in KL and Selangor?",
     directAnswer: `Minor plumbing repairs in the Klang Valley are published from ${money(RATES.plumbing.minorRepair)}, with a validated market band of ${band(RATES.plumbing.minorBand.low, RATES.plumbing.minorBand.high)} depending on complexity. Drain and toilet unclogging starts from ${money(RATES.plumbing.drain)}, water leakage diagnosis and repair from ${money(RATES.plumbing.leakDiagnosis)}, fixture installation from ${money(RATES.plumbing.fixtureInstall)}, and water heater work from ${money(RATES.plumbing.heaterRepair)}. This diagnostic tool matches your symptom to the likely cause and prices it from those published rates.`,
     trilingualMs:
@@ -318,12 +312,10 @@ export const toolsContent: Record<string, ToolContent> = {
       { label: "Diagnosis time", value: "Under 2 minutes" }
     ],
     howTo: [
-      { title: "Pick your plumbing problem", desc: "Blocked sink, toilet, floor trap or outdoor drain; pipe leak, concealed leak, low pressure, no water; tap, mixer, toilet, sink or bidet work; water heater or booster pump." },
-      { title: "Rate the severity", desc: "Minor, moderate, major or emergency — this drives both the urgency level and how the job is dispatched." },
-      { title: "Choose the location and how many points", desc: "Kitchen, main or en-suite bathroom, laundry, outdoor, roof tank, or multiple locations, plus the number of affected fixtures." },
-      { title: "Tell us about the property", desc: "Condo, terrace, semi-D, shop lot or factory, and the building age — older galvanised pipework needs more work to reach and repair." },
-      { title: "Choose who supplies the parts", desc: "We supply SIRIM-certified parts, or you supply your own fixtures and we install them." },
-      { title: "Get your diagnosis and book", desc: "You get likely causes, urgency, estimated cost and range, time on site, and add-ons such as a whole-house plumbing health check." }
+      { title: "Pick your plumbing problem and how severe it is", desc: "Everything is on one page. Blocked sink, toilet, floor trap or outdoor drain; pipe leak, concealed leak, low pressure, no water; tap, mixer, toilet, sink or bidet work; water heater or booster pump — then rate it minor, moderate, major or emergency." },
+      { title: "Choose the location and how many points are affected", desc: "Kitchen, main or en-suite bathroom, laundry, outdoor, roof tank, or multiple locations, plus the number of affected fixtures. The price at the top of the page updates immediately." },
+      { title: "Optional: property details, parts and timing", desc: "Open the optional section to set property type, building age, who supplies the parts and how urgently you need a plumber. Skip it and we price a typical terrace house on standard scheduling with our SIRIM-certified parts." },
+      { title: "Read your diagnosis and book", desc: "Likely causes, urgency, estimated cost and range, time on site, and add-ons such as a whole-house plumbing health check — all on the same page." }
     ],
     priceTable: [
       { scope: "Minor plumbing repair", rate: `From ${money(RATES.plumbing.minorRepair)}`, note: `Market band ${band(RATES.plumbing.minorBand.low, RATES.plumbing.minorBand.high)}` },
@@ -343,7 +335,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { q: "Why is my water pressure suddenly low?", a: "The four common causes are a partially closed or seized stopcock, scale build-up inside old galvanised pipe, a failed pressure pump or tank float, and a hidden leak bleeding line pressure. The diagnostic tool lists these against your specific answers." },
       { q: "Can I supply my own taps and fixtures?", a: "Yes. Select \"I already bought the parts\" and the estimate drops the material portion. We warrant our workmanship; the fixture itself carries its own manufacturer warranty." },
       { q: "Is the plumbing estimate a final quotation?", a: "No. It is an estimated quotation based on the information provided. Final pricing may change after an on-site inspection depending on actual site conditions such as pipe accessibility and hidden corrosion." },
-      { q: "Do you handle emergency plumbing at night?", a: "Yes. Emergency and after-hours dispatch is available across KL and Selangor. Select it in the timing step and the uplift is added transparently to your estimate." },
+      { q: "Do you handle emergency plumbing at night?", a: "Yes. Emergency and after-hours dispatch is available across KL and Selangor. Select it in the optional timing section and the uplift is added transparently to your estimate." },
       { q: "How long does a typical plumbing repair take?", a: "Most tap, trap and fixture jobs are done in one to two hours. Concealed leak detection and repair usually takes half a day. The estimator predicts on-site time from your answers." }
     ],
     covers: [
@@ -380,7 +372,7 @@ export const toolsContent: Record<string, ToolContent> = {
     ],
     eyebrow: "Free instant advisor",
     intro:
-      "Get the right bracket, the right anchors and an instant installation price in under a minute.",
+      "One page, no next buttons. Pick your TV size and wall type — the right bracket, anchors and price appear instantly.",
     directQuestion: "How much does TV wall mounting cost in KL and Selangor?",
     directAnswer: `TV wall mounting is published from ${money(RATES.handyman.tvMount)}, within a validated market band of ${band(RATES.handyman.tvBand.low, RATES.handyman.tvBand.high)} depending on screen size, wall type and bracket. Concrete and solid brick walls are straightforward; plasterboard partitions need a backing plate fixed across the studs, which costs more. Adding in-wall cable concealment or a new power point behind the TV — published from ${money(RATES.handyman.powerPoint)} per point — is best done during the same visit. This advisor recommends the fixing method and prices the job instantly.`,
     trilingualMs:
@@ -395,12 +387,10 @@ export const toolsContent: Record<string, ToolContent> = {
       { label: "Advice time", value: "Under 1 minute" }
     ],
     howTo: [
-      { title: "Select your TV size", desc: "From 32 inches up to commercial displays above 85 inches — each maps to a bracket load rating and VESA pattern." },
-      { title: "Identify the wall", desc: "Knock it: a dull thud means concrete or brick, a drummy sound means a hollow plasterboard partition. Pick tiled, timber, cement board — or \"not sure\" and we test on arrival." },
-      { title: "Choose the bracket", desc: "Fixed flat, tilting, full-motion swivel arm or ceiling mount. Choose \"recommend one for me\" and the tool advises based on your TV size and wall." },
-      { title: "Say whether you need the bracket supplied", desc: "Use your own bracket — we check it is rated for your TV before drilling — or have us supply a load-rated one." },
-      { title: "Add cables, power and extras", desc: "In-wall concealment, surface trunking, a new power point, soundbar mounting, floating shelf, removing an old TV, or device setup." },
-      { title: "Get your recommendation and book", desc: "You get the exact fixing method, a load safety check, estimated cost and range, time on site, and add-ons." }
+      { title: "Pick your TV size and the wall type", desc: "Everything is on one page. From 32 inches up to commercial displays above 85 inches, then knock the wall: a dull thud means concrete or brick, a drummy sound means a hollow plasterboard partition. Tiled, timber, cement board — or \"not sure\" and we test on arrival." },
+      { title: "Choose the bracket", desc: "Fixed flat, tilting, full-motion swivel arm or ceiling mount — or choose \"recommend one for me\" and the tool advises based on your TV size and wall. Say whether you already own a bracket or want us to supply a load-rated one." },
+      { title: "Optional: cables, power and extras", desc: "Open the optional section for in-wall concealment, surface trunking, a new power point, soundbar mounting, a floating shelf, removing an old TV or device setup. Skip it and we price a straightforward mount." },
+      { title: "Read your recommendation and book", desc: "The exact fixing method, a load safety check, estimated cost and range, time on site, and add-ons — all on the same page." }
     ],
     priceTable: [
       { scope: "TV wall mounting", rate: `From ${money(RATES.handyman.tvMount)}`, note: `Market band ${band(RATES.handyman.tvBand.low, RATES.handyman.tvBand.high)}` },
