@@ -1,9 +1,46 @@
-import { SimpleToolPage } from "@/components/tools/simple-tool-page";
-import { getWebApplicationSchema } from "@/lib/seo";
+import React from "react";
+import dynamic from "next/dynamic";
+import { Breadcrumbs } from "@/components/ui/breadcrumbs";
+import { ToolPage } from "@/components/tools/tool-page";
+import { toolsContent } from "@/config/tools-data";
+import { getToolGraph } from "@/lib/estimator/schema";
 import { buildMetadata } from "@/lib/seo-meta";
-export const metadata = buildMetadata({
-  title: "Plumbing Diagnostic Tool for KL Homes",
-  description: "Narrow down the likely cause of a leak, blockage or low water pressure in your Malaysian home before booking a plumber visit.",
-  path: "/tools/plumbing-diagnostic"
+
+const content = toolsContent["plumbing-diagnostic"];
+
+/**
+ * The wizard is the only interactive part of this route. Deferring it keeps the
+ * hero image, direct answer, price table and FAQ in the static HTML payload, so
+ * the LCP element never waits on estimator JavaScript.
+ */
+const Wizard = dynamic(() => import("@/components/tools/estimator/wizards/plumbing-diagnostic"), {
+  loading: () => (
+    <div className="h-[34rem] animate-pulse rounded-3xl border border-slate-200 bg-slate-50" aria-hidden="true" />
+  )
 });
-export default function PlumbingDiagnosticPage(){ return <><script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(getWebApplicationSchema("Plumbing Diagnostic Tool", "/tools/plumbing-diagnostic", "Triage plumbing symptoms."))}}/><SimpleToolPage title="Plumbing Diagnostic Tool" description="Describe the symptom, fixture location, duration and severity so we can recommend the right next step." fields={["Symptom", "Fixture location", "Duration", "Severity 1-5"]}/></>; }
+
+export const metadata = buildMetadata({
+  title: content.metaTitle,
+  description: content.metaDesc,
+  path: "/tools/plumbing-diagnostic",
+  keywords: content.keywords,
+  image: content.heroImage
+});
+
+export default function Page() {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getToolGraph(content)) }}
+      />
+      <Breadcrumbs
+        items={[
+          { label: "Free Tools", href: "/tools" },
+          { label: content.name, href: "/tools/plumbing-diagnostic" }
+        ]}
+      />
+      <ToolPage content={content} intro={content.intro} wizard={<Wizard />} />
+    </>
+  );
+}

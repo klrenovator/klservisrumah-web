@@ -1,9 +1,46 @@
-import { SimpleToolPage } from "@/components/tools/simple-tool-page";
-import { getWebApplicationSchema } from "@/lib/seo";
+import React from "react";
+import dynamic from "next/dynamic";
+import { Breadcrumbs } from "@/components/ui/breadcrumbs";
+import { ToolPage } from "@/components/tools/tool-page";
+import { toolsContent } from "@/config/tools-data";
+import { getToolGraph } from "@/lib/estimator/schema";
 import { buildMetadata } from "@/lib/seo-meta";
-export const metadata = buildMetadata({
-  title: "Painting Cost Calculator KL & Selangor",
-  description: "Estimate paint quantity, coats and wall preparation for your rooms before requesting a market-rate painting quote in KL and Selangor.",
-  path: "/tools/painting-calculator"
+
+const content = toolsContent["painting-calculator"];
+
+/**
+ * The wizard is the only interactive part of this route. Deferring it keeps the
+ * hero image, direct answer, price table and FAQ in the static HTML payload, so
+ * the LCP element never waits on estimator JavaScript.
+ */
+const Wizard = dynamic(() => import("@/components/tools/estimator/wizards/painting-calculator"), {
+  loading: () => (
+    <div className="h-[34rem] animate-pulse rounded-3xl border border-slate-200 bg-slate-50" aria-hidden="true" />
+  )
 });
-export default function PaintingCalculatorPage(){ return <><script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(getWebApplicationSchema("Painting Cost Calculator", "/tools/painting-calculator", "Estimate painting cost factors."))}}/><SimpleToolPage title="Painting Cost Calculator" description="Enter room quantity, approximate area, wall condition, and paint preference to prepare a better quote request." fields={["Room count", "Approximate wall area", "Wall condition", "Paint preference"]}/></>; }
+
+export const metadata = buildMetadata({
+  title: content.metaTitle,
+  description: content.metaDesc,
+  path: "/tools/painting-calculator",
+  keywords: content.keywords,
+  image: content.heroImage
+});
+
+export default function Page() {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getToolGraph(content)) }}
+      />
+      <Breadcrumbs
+        items={[
+          { label: "Free Tools", href: "/tools" },
+          { label: content.name, href: "/tools/painting-calculator" }
+        ]}
+      />
+      <ToolPage content={content} intro={content.intro} wizard={<Wizard />} />
+    </>
+  );
+}

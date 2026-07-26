@@ -1,9 +1,46 @@
-import { SimpleToolPage } from "@/components/tools/simple-tool-page";
-import { getWebApplicationSchema } from "@/lib/seo";
+import React from "react";
+import dynamic from "next/dynamic";
+import { Breadcrumbs } from "@/components/ui/breadcrumbs";
+import { ToolPage } from "@/components/tools/tool-page";
+import { toolsContent } from "@/config/tools-data";
+import { getToolGraph } from "@/lib/estimator/schema";
 import { buildMetadata } from "@/lib/seo-meta";
-export const metadata = buildMetadata({
-  title: "Ceiling Cost Calculator KL & Selangor",
-  description: "Estimate plaster ceiling, cornice and L-box material scope for your room before asking for a market-rate ceiling quote in the Klang Valley.",
-  path: "/tools/ceiling-calculator"
+
+const content = toolsContent["ceiling-calculator"];
+
+/**
+ * The wizard is the only interactive part of this route. Deferring it keeps the
+ * hero image, direct answer, price table and FAQ in the static HTML payload, so
+ * the LCP element never waits on estimator JavaScript.
+ */
+const Wizard = dynamic(() => import("@/components/tools/estimator/wizards/ceiling-calculator"), {
+  loading: () => (
+    <div className="h-[34rem] animate-pulse rounded-3xl border border-slate-200 bg-slate-50" aria-hidden="true" />
+  )
 });
-export default function CeilingCalculatorPage(){ return <><script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(getWebApplicationSchema("Ceiling Material Calculator", "/tools/ceiling-calculator", "Estimate ceiling material factors."))}}/><SimpleToolPage title="Ceiling Material Calculator" description="Enter dimensions, design type, and fittings so we can estimate ceiling material and labour scope." fields={["Room length", "Room width", "Ceiling type", "Downlight / fan count"]}/></>; }
+
+export const metadata = buildMetadata({
+  title: content.metaTitle,
+  description: content.metaDesc,
+  path: "/tools/ceiling-calculator",
+  keywords: content.keywords,
+  image: content.heroImage
+});
+
+export default function Page() {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getToolGraph(content)) }}
+      />
+      <Breadcrumbs
+        items={[
+          { label: "Free Tools", href: "/tools" },
+          { label: content.name, href: "/tools/ceiling-calculator" }
+        ]}
+      />
+      <ToolPage content={content} intro={content.intro} wizard={<Wizard />} />
+    </>
+  );
+}

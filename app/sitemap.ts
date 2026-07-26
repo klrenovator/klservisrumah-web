@@ -5,6 +5,7 @@ import { blogPosts } from "@/config/blog-data";
 import { suburbPages } from "@/config/suburb-data";
 import { problemPages } from "@/config/problem-data";
 import { allGenericPages, clusterPages, maintenancePages } from "@/config/content-data";
+import { toolsList } from "@/config/tools-data";
 import { slugify } from "@/lib/utils";
 
 const baseUrl = "https://www.klservisrumah.my";
@@ -60,12 +61,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/commercial", priority: 0.72 },
     { path: "/residential", priority: 0.72 },
     { path: "/seasonal", priority: 0.68 },
-    { path: "/tools", priority: 0.7 },
-    { path: "/tools/painting-calculator", priority: 0.75 },
-    { path: "/tools/plumbing-diagnostic", priority: 0.75 },
-    { path: "/tools/leak-triage", priority: 0.75 },
-    { path: "/tools/ceiling-calculator", priority: 0.7 },
-    { path: "/tools/tv-mount-advisor", priority: 0.7 }
+    { path: "/tools", priority: 0.8 },
+    // Derived from the tool registry so a new estimator is never missed.
+    ...toolsList.map((tool) => ({ path: `/tools/${tool.slug}`, priority: 0.82 }))
   ];
 
   const serviceRoutes: Entry[] = Object.values(servicesData).flatMap((service) => [
