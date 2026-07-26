@@ -1,3 +1,54 @@
+## 🆕 ROUND 30 EXECUTION LOG (2026-07-27) — ESTIMATOR TRILINGUAL PASS (EN/MS/ZH) + PRICE-CLARITY (TOTAL = LABOUR + MATERIALS)
+
+**User direction:** "Handoff file mein estimators k hawaly sy Jo next eham Kam hy wo shuru kren. Or Total Estimate price with material hy ya Sirf labour? estimate price mein ye wazeh hona chaiye." (Start the next important estimator task from the handoff. And is the Total Estimate price with material or only labour? This should be made explicit in the estimate price.)
+
+**Round status:** ✅ **COMPLETED — closes the handoff's #1 pending item ("the estimators themselves are English-only") for the generic engine + shared chrome, and makes the price inclusive of labour + materials explicit**
+
+### 💰 Price-clarity finding (answers the user's question directly)
+- **The Total Estimate price already INCLUDES BOTH labour and materials** — it is NOT labour-only. In `EstimateResult`, `price` is the mid-point total and `labour`/`materials` are a split of it (`price = labour + materials`); the generic engine computes `materials = price × materialShare` and `labour = price − materials`.
+- The result panel already showed Labour and Materials as separate metrics, but the headline only read "Estimated cost", which left it ambiguous. **Fixed this round:** the headline now reads **"Estimated total"** with an explicit **"incl. labour & materials"** sub-line (and the sticky live-price bar carries the same clarifier), in all three languages.
+
+### ✅ What was changed
+
+#### 1. 🈂️ Trilingual estimator engine + chrome (EN/MS/ZH)
+- ✅ **New `estimator` namespace** added to `messages/{en,ms,zh}.json` — **201 keys × 3 languages (603 strings)** covering: shared chrome (form, result panel, fields, severity labels, WhatsApp pre-fill), and the full generic-engine content (units, condition/access/urgency modifiers, step text, breakdown labels, assumptions, add-ons, related links, durations). Verified: 0 missing keys, 0 placeholder mismatches across the three languages.
+- ✅ **`lib/i18n.ts`** — exported a `Translator` type so data-layer modules can be locale-aware without a React dependency.
+- ✅ **`lib/estimator/service-estimator.ts`** — the generic engine (covers the 22 service pages that don't have a dedicated tool) now threads a `Translator` through every question, option, hint, breakdown label/note, assumption, add-on and related link. Numeric values, the published-rate string and the service/sub-service names stay locale-independent (a calculator never quotes a rate the service page does not publish). Test-critical `value` fields untouched.
+- ✅ **Shared estimator components** (`estimator-form.tsx`, `estimate-result.tsx`, `fields.tsx`) now render entirely through a translator — every question title, choice label, result metric, CTA, severity tag and WhatsApp message line is trilingual.
+- ✅ **`components/tools/service-estimator-block.tsx`** passes the active locale's translator into the form, so the estimator on every `/services/[slug]` page follows the language pill.
+
+#### 2. ⚡ Bundle-safety (no regression on the 5 deep-tool routes)
+A naive first pass (letting the shared components call `useTranslations()` directly) pulled the full ~44 KB message dictionaries into the five `/tools/[slug]` calculator routes, inflating them from ~130 kB → ~180 kB (a CWV-budget violation) and producing a half-translated state on those tools (Malay chrome + English content, since their hand-built specs are not yet localized).
+- ✅ Fixed with an **optional-translator pattern**: the shared components accept `translator?: Translator` and fall back to a lean, inline **`lib/estimator/chrome-i18n.ts`** English translator when none is passed.
+- ✅ The generic engine on service pages passes the real locale translator → **fully trilingual**. The five deep tools pass nothing → **cleanly English** (chrome + content together), no bundle cost.
+- ✅ Result: tool routes back to **138–141 kB** (within budget); `/services/[slug]` 382 → 392 kB.
+
+#### 3. 🧪 Test harness kept intact
+- ✅ `scripts/test-estimators.ts` builds an English translator from the dictionaries and passes it to the generic-engine builder, so the **195,971-assertion / 0-failure** suite still locks every pricing invariant.
+
+### 📁 Files created (1)
+`lib/estimator/chrome-i18n.ts` (lean English fallback translator for the shared estimator chrome)
+
+### 📁 Files modified (9)
+`lib/i18n.ts` · `lib/estimator/service-estimator.ts` · `components/tools/service-estimator/estimator-form.tsx` · `components/tools/service-estimator/estimate-result.tsx` · `components/tools/estimator/fields.tsx` · `components/tools/service-estimator-block.tsx` · `scripts/test-estimators.ts` · `messages/en.json` · `messages/ms.json` · `messages/zh.json`
+
+### ✅ Quality check results (13-point)
+- ✅ TypeScript **0 errors** · ESLint **0 errors, 0 warnings**
+- ✅ Build green — **4,028 / 4,028 SSG pages**, no route changes, 0 warnings
+- ✅ Estimator harness: **195,971 assertions, 0 failures**
+- ✅ Translation parity: **201 keys × EN/MS/ZH**, 0 missing, 0 placeholder mismatches
+- ✅ Production smoke test (`next start`): HTTP 200 on `/services/electrical` (generic estimator section present, eyebrow localized) and `/tools/painting-calculator`
+- ✅ Bundle budget honoured — tool routes 130→138 kB (+8 kB fallback map), no CWV regression
+- ✅ Permanent rules honoured — no public SSM, phone +60 11-1662 7349 untouched, all pricing traced to published rates (market-rate discipline preserved), no invented figures.
+
+### ⏳ Still pending after Round 30
+- ⏳ **The five hand-built deep estimators' content** (`lib/estimator/painting.ts`, `leak.ts`, `ceiling.ts`, `plumbing.ts`, `tv-mount.ts`) — their question text, choice labels, breakdown notes, findings and assumptions are still authored in English. The shared chrome (result panel, form, fields) is already trilingual for them; converting the spec content is the clean next step (convert each spec to a `buildXSpec(t)` builder mirroring the generic engine, then thread the translator from each `/tools/[slug]` wizard entry point).
+- ⏳ Visual QA at 375px and desktop on deployed URLs (no browser in this environment — only HTTP/DOM checks were possible).
+- ⏳ Real photography and verified review import when assets are supplied.
+- ⏳ External tasks: GBP optimization, GSC/Bing verification, Rich Results testing on the live domain.
+
+---
+
 ## 🆕 ROUND 29 EXECUTION LOG (2026-07-27) — CALCULATOR SIMPLIFICATION (SINGLE PAGE) + ESTIMATOR ON ALL 28 SERVICE PAGES
 
 **User direction:** "Handoff file k mutabiq check kren k jo kam ho gey hn wo shi huy hn k ni… Calculators ko b simple kren, ikatha kren 1 e page pr… hr calculator k liye alg page ho or usi 1 page pr hi sub details dropdown ki soorat mein fill kr astimate rate mil jaye… jitna Asaan ho system utna zyada acha hy. Jb mushkil hota hy to customer bhag jata hy." Then: "jis jis service k liey calculator ya astimator mumkin hy us k liey bna den or calculator jis service k liey bny ga wo us service k page pr b laazmi show ho intro ya discription k neechy."

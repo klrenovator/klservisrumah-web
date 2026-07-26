@@ -29,6 +29,24 @@ import {
   hasServiceEstimator,
   DEDICATED_TOOL_BY_SERVICE
 } from "../lib/estimator/service-estimator.ts";
+import { createTranslator, type MessageDictionary } from "../lib/i18n.ts";
+import enMessages from "../messages/en.json" with { type: "json" };
+import msMessages from "../messages/ms.json" with { type: "json" };
+import zhMessages from "../messages/zh.json" with { type: "json" };
+
+/**
+ * English translator for the generic engine. The harness exercises pricing
+ * invariants, which are locale-independent, so a single English translator is
+ * sufficient and keeps the assertions stable.
+ */
+const testTranslator = createTranslator(
+  {
+    en: enMessages as MessageDictionary,
+    ms: msMessages as MessageDictionary,
+    zh: zhMessages as MessageDictionary
+  },
+  "en"
+);
 import { servicesData } from "../config/services-data.ts";
 import { toolsContent } from "../config/tools-data.ts";
 import {
@@ -499,7 +517,8 @@ for (const service of Object.values(servicesData)) {
   const spec = buildServiceEstimator({
     slug: service.slug,
     title: service.title,
-    warranty: service.warranty
+    warranty: service.warranty,
+    t: testTranslator
   });
   serviceSpecs += 1;
 

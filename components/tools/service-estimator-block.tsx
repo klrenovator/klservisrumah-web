@@ -33,9 +33,11 @@ export function ServiceEstimatorBlock({
   const dedicatedSlug = DEDICATED_TOOL_BY_SERVICE[slug];
   const dedicated = dedicatedSlug ? toolsContent[dedicatedSlug] : undefined;
 
+  // The spec is rebuilt whenever the locale changes (t is memoised on lang),
+  // so every question, modifier and breakdown label follows the language pill.
   const spec = useMemo(
-    () => (dedicated || !hasServiceEstimator(slug) ? null : buildServiceEstimator({ slug, title, warranty })),
-    [dedicated, slug, title, warranty]
+    () => (dedicated || !hasServiceEstimator(slug) ? null : buildServiceEstimator({ slug, title, warranty, t })),
+    [dedicated, slug, title, warranty, t]
   );
 
   if (dedicated) {
@@ -86,7 +88,7 @@ export function ServiceEstimatorBlock({
         </p>
 
         <div className="mt-6">
-          <EstimatorForm spec={spec} />
+          <EstimatorForm spec={spec} translator={t} />
         </div>
 
         <p className="mt-4 flex gap-2.5 text-xs font-bold leading-relaxed text-slate-500">

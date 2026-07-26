@@ -676,5 +676,235 @@
     "openTool": "打开完整的{name}",
     "dedicatedIntro": "我们为此服务提供了更详细的专属估算工具——表面状况、材料、施工通道与附加项目均已建模。",
     "disclaimerShort": "此为估算报价。最终价格以现场勘查后确认为准。"
+  },
+  "estimator": {
+    "common": {
+      "disclaimer": "这是根据您提供的信息作出的估算报价。最终价格可能因现场实际状况，于上门勘查后调整。",
+      "priceInclusive": "总计含人工与材料",
+      "inclusiveNote": "已包含人工与材料",
+      "popular": "热门",
+      "yes": "是",
+      "no": "否",
+      "decrease": "减少",
+      "increase": "增加",
+      "startOver": "重新开始"
+    },
+    "form": {
+      "liveEstimate": "您目前的估价",
+      "liveRange": "{low} – {high} · {duration}",
+      "seeBreakdown": "查看完整明细",
+      "answerMore": "再回答 {n} 项",
+      "fineTuneTitle": "可选 — 微调价格",
+      "fineTuneSub": "{titles}。跳过此部分，我们将使用最常见的答案。",
+      "progressNudge": "已回答 {answered} / {total} 项。点击此处完成“{field}”即可锁定您的估价。",
+      "seeFullEstimate": "查看我的完整估价",
+      "showLeft": "显示剩余问题",
+      "srAnnouncement": "当前估价 {price}，区间 {low} 至 {high}。{status}",
+      "srAllAnswered": "所有问题已回答。",
+      "srQuestionsLeft": "还剩 {n} 个问题。"
+    },
+    "result": {
+      "instantEstimate": "您的即时估价",
+      "estimatedTotal": "估价总计",
+      "totalInclusive": "含人工与材料",
+      "rangeLabel": "估价区间 {low} – {high}",
+      "metricLabour": "人工",
+      "metricMaterials": "材料",
+      "metricTime": "所需时间",
+      "metricPackage": "套餐",
+      "recommendedService": "推荐服务",
+      "viewService": "查看完整服务详情",
+      "bookNow": "立即预订",
+      "sendWhatsapp": "发送至 WhatsApp",
+      "requestSiteVisit": "预约上门勘查",
+      "callLabel": "致电 {phone}",
+      "changeAnswers": "修改我的答案",
+      "findingsTitle": "可能原因与诊断结果",
+      "addonsTitle": "建议附加项目",
+      "addonsHint": "点击添加——总价即时更新",
+      "recommendedForYou": "为您推荐",
+      "addonsSelected": "已选附加项目：{amount} · 新估价总计 {total}",
+      "breakdownTitle": "我们如何计算",
+      "breakdownSub": "每一项费率均来自本网站公布的价目表",
+      "whatWeAssumed": "我们的假设",
+      "nextStepsTitle": "建议的后续步骤",
+      "maintenanceTitle": "保养提示",
+      "relatedReading": "延伸阅读"
+    },
+    "severity": {
+      "routine": "例行",
+      "soon": "本周内预约",
+      "urgent": "紧急 — 24 至 48 小时",
+      "emergency": "紧急 — 立即处理"
+    },
+    "whatsapp": {
+      "greeting": "您好 KL Servis Rumah，我使用了您的{tool}，想进行预约。",
+      "myAnswers": "我的回答",
+      "estimateSection": "网站估价",
+      "recommended": "推荐服务：{value}",
+      "package": "套餐：{value}",
+      "estimatedCost": "估价：{value}",
+      "range": "估价区间：{low} – {high}",
+      "time": "预计用时：{value}",
+      "addons": "附加项目：{value}",
+      "totalAddons": "含附加项目估价总计：{value}",
+      "closing": "请于勘查后确认档期与最终报价。",
+      "siteVisitGreeting": "您好 KL Servis Rumah，我想预约免费上门勘查。",
+      "siteVisitLine": "网站估价：{price}（{low} – {high}）— {service}。"
+    },
+    "steps": {
+      "scopeTitle": "您需要什么？",
+      "scopeSub": "下方每个选项均按本服务公布的费率计价。",
+      "scopeFieldLabel": "工程类型",
+      "sizeTitle": "工程量多少？",
+      "sizeSub": "点选最接近的选项——确切数字于现场确认。",
+      "detailsTitle": "状况、通道与时间",
+      "detailsSub": "跳过此项，我们将按一般工程、底层通道、标准排期计价。",
+      "conditionQuestion": "目前状况如何？",
+      "accessQuestion": "通道是否方便？",
+      "urgencyQuestion": "您何时需要？"
+    },
+    "breakdown": {
+      "publishedRate": "公布费率",
+      "publishedRateNote": "直接取自本网站{title}的价目表。",
+      "quantity": "数量",
+      "quantityNote": "{published} × {qty} = {base}（未作任何调整前）。",
+      "conditionLabel": "状况 — {label}",
+      "accessLabel": "通道 — {label}",
+      "timingLabel": "时间 — {label}",
+      "minimumApplied": "已套用公布最低价",
+      "minimumAppliedNote": "{title}由{min}起价，因此较小的工程按该公布最低价收取。"
+    },
+    "assumptions": {
+      "quantities": "数量为您输入的数值——最终报价以现场实测范围为准。",
+      "warranty": "受我们的{warranty}保障。",
+      "confirmed": "开工前以书面确认价格；任何额外工程都先经您同意。",
+      "quoteOnly": "以下项目须于上门勘查后报价，此处不作估算：{names}。"
+    },
+    "addons": {
+      "siteVisitLabel": "预订前免费上门测量",
+      "siteVisitNote": "确认确切范围，使最终报价与工程相符。",
+      "postCleanLabel": "完工清洁",
+      "postCleanNote": "完工后全面清理与擦拭。"
+    },
+    "related": {
+      "serviceDesc": "完整范围、流程与保修",
+      "priceGuide": "2026 价目指南",
+      "priceGuideDesc": "所有公布费率一目了然",
+      "allEstimators": "全部免费估价工具",
+      "allEstimatorsDesc": "即时估算其他工程"
+    },
+    "duration": {
+      "halfDay": "现场约半天",
+      "oneDay": "约 1 个工作日",
+      "twoDays": "1–2 个工作日",
+      "threeToFive": "3–5 个工作日",
+      "oneToThreeWeeks": "1–3 周",
+      "threeWeeksPlus": "3 周或以上"
+    },
+    "units": {
+      "job": {
+        "label": "您需要多少个？",
+        "noun": "项",
+        "plural": "项",
+        "presets": {
+          "1": { "label": "只要一项", "hint": "同一地点的单项工作" },
+          "2": { "label": "两项" },
+          "3": { "label": "三项" },
+          "5": { "label": "五项或以上", "hint": "确切数量于现场确认" }
+        }
+      },
+      "sqft": {
+        "label": "面积有多大？",
+        "noun": "平方呎",
+        "plural": "平方呎",
+        "presets": {
+          "60": { "label": "小型 — 约 60 平方呎", "hint": "浴室或储藏室" },
+          "120": { "label": "标准房间 — 约 120 平方呎", "hint": "10 × 12 呎卧室" },
+          "250": { "label": "大房间 — 约 250 平方呎", "hint": "客厅" },
+          "600": { "label": "小单位 — 约 600 平方呎", "hint": "小型或单身公寓" },
+          "1000": { "label": "公寓 — 约 1,000 平方呎", "hint": "典型三房公寓" },
+          "2000": { "label": "有地住宅 — 约 2,000 平方呎", "hint": "两层排屋" }
+        }
+      },
+      "linearft": {
+        "label": "有多少呎长度？",
+        "noun": "直线呎",
+        "plural": "直线呎",
+        "presets": {
+          "6": { "label": "约 6 呎", "hint": "一段短距离" },
+          "10": { "label": "约 10 呎", "hint": "一面标准墙" },
+          "20": { "label": "约 20 呎", "hint": "两面墙或长距离" },
+          "40": { "label": "约 40 呎", "hint": "整间房的周长" },
+          "80": { "label": "约 80 呎或以上", "hint": "现场测量" }
+        }
+      },
+      "point": {
+        "label": "有多少个点位？",
+        "noun": "点位",
+        "plural": "点位",
+        "presets": {
+          "1": { "label": "1 个点位" },
+          "4": { "label": "4 个点位", "hint": "一间房" },
+          "8": { "label": "8 个点位", "hint": "两到三间房" },
+          "16": { "label": "16 个点位", "hint": "整套公寓" },
+          "30": { "label": "30 个或以上", "hint": "整间房屋或商用" }
+        }
+      },
+      "visit": {
+        "label": "需要多少次上门？",
+        "noun": "次",
+        "plural": "次",
+        "presets": {
+          "1": { "label": "单次上门" },
+          "4": { "label": "4 次", "hint": "每周一次，持续一个月" },
+          "12": { "label": "12 次", "hint": "每周一次，持续三个月" },
+          "26": { "label": "26 次", "hint": "每两周一次，持续一年" }
+        }
+      },
+      "room": {
+        "label": "有多少间房？",
+        "noun": "间",
+        "plural": "间",
+        "presets": {
+          "1": { "label": "1 间" },
+          "2": { "label": "2 间" },
+          "3": { "label": "3 间", "hint": "典型公寓" },
+          "5": { "label": "5 间", "hint": "有地住宅" },
+          "8": { "label": "8 间或以上" }
+        }
+      },
+      "panel": {
+        "label": "有多少块面板？",
+        "noun": "块",
+        "plural": "块",
+        "presets": {
+          "1": { "label": "1 块" },
+          "2": { "label": "2 块" },
+          "4": { "label": "4 块" },
+          "8": { "label": "8 块或以上" }
+        }
+      }
+    },
+    "modifiers": {
+      "condition": {
+        "new": { "label": "全新 / 简单", "hint": "无需先拆除或修补" },
+        "normal": { "label": "一般状况", "hint": "仅标准预处理" },
+        "worn": { "label": "老旧 / 磨损", "hint": "需额外预处理与找补" },
+        "damaged": { "label": "损坏 / 需先修补", "hint": "主要工程前先做修补" }
+      },
+      "access": {
+        "easy": { "label": "容易 — 底层", "hint": "正常通道，无需登高" },
+        "upper": { "label": "楼上", "hint": "需走楼梯或轻度搭架" },
+        "highrise": { "label": "高层单位", "hint": "需预约电梯并保护地板" },
+        "difficult": { "label": "困难 — 高处或狭窄空间", "hint": "需搭架或作业空间受限" }
+      },
+      "urgency": {
+        "standard": { "label": "标准排期", "hint": "下一个可用时段——价格最低" },
+        "week": { "label": "一周内", "hint": "优先排期" },
+        "urgent": { "label": "加急 — 48 小时", "hint": "为您调动班组" },
+        "emergency": { "label": "紧急 — 当天", "hint": "立即派工" }
+      }
+    }
   }
 }

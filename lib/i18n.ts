@@ -99,6 +99,14 @@ export function resolveKey(dict: MessageDictionary, key: string): string {
 }
 
 /**
+ * The signature of a translator function, returned by {@link createTranslator}
+ * and threaded into data modules that need locale-aware strings (e.g. the
+ * estimator engine). Extracting it as a type lets those modules stay free of
+ * a hard React dependency.
+ */
+export type Translator = (key: string, vars?: Record<string, string | number>) => string;
+
+/**
  * Curried translator. Given a locale, returns a `t(key)` function.
  * Falls back to English, then to the key itself, so missing translations
  * never produce empty strings.
@@ -106,7 +114,7 @@ export function resolveKey(dict: MessageDictionary, key: string): string {
 export function createTranslator(
   messages: Record<Locale, MessageDictionary>,
   locale: Locale
-) {
+): Translator {
   const primary = messages[locale] ?? messages.en;
   const fallback = messages.en;
   return function t(key: string, vars?: Record<string, string | number>): string {

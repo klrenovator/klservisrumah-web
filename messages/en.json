@@ -676,5 +676,235 @@
     "openTool": "Open the full {name}",
     "dedicatedIntro": "We have a dedicated estimator for this service with far more detail — surface condition, materials, access and add-ons all modelled.",
     "disclaimerShort": "Estimated quotation. Final price is confirmed after an on-site inspection."
+  },
+  "estimator": {
+    "common": {
+      "disclaimer": "This is an estimated quotation based on the information provided. Final pricing may change after an on-site inspection depending on actual site conditions.",
+      "priceInclusive": "Total incl. labour & materials",
+      "inclusiveNote": "Covers both labour and materials",
+      "popular": "Popular",
+      "yes": "Yes",
+      "no": "No",
+      "decrease": "Decrease",
+      "increase": "Increase",
+      "startOver": "Start over"
+    },
+    "form": {
+      "liveEstimate": "Your estimate right now",
+      "liveRange": "{low} – {high} · {duration}",
+      "seeBreakdown": "See full breakdown",
+      "answerMore": "Answer {n} more",
+      "fineTuneTitle": "Optional — fine-tune the price",
+      "fineTuneSub": "{titles}. Skip this and we use the most common answers.",
+      "progressNudge": "{answered} of {total} answered. Tap here to finish “{field}” and lock in your estimate.",
+      "seeFullEstimate": "See my full estimate",
+      "showLeft": "Show me what is left",
+      "srAnnouncement": "Current estimate {price}, range {low} to {high}. {status}",
+      "srAllAnswered": "All questions answered.",
+      "srQuestionsLeft": "{n} question(s) left."
+    },
+    "result": {
+      "instantEstimate": "Your instant estimate",
+      "estimatedTotal": "Estimated total",
+      "totalInclusive": "incl. labour & materials",
+      "rangeLabel": "Estimated range {low} – {high}",
+      "metricLabour": "Labour",
+      "metricMaterials": "Materials",
+      "metricTime": "Time needed",
+      "metricPackage": "Package",
+      "recommendedService": "Recommended service",
+      "viewService": "View full service details",
+      "bookNow": "Book Now",
+      "sendWhatsapp": "Send on WhatsApp",
+      "requestSiteVisit": "Request Site Visit",
+      "callLabel": "Call {phone}",
+      "changeAnswers": "Change my answers",
+      "findingsTitle": "Likely causes & findings",
+      "addonsTitle": "Suggested add-ons",
+      "addonsHint": "Tap to add — the total updates instantly",
+      "recommendedForYou": "Recommended for you",
+      "addonsSelected": "Add-ons selected: {amount} · New estimated total {total}",
+      "breakdownTitle": "How we calculated this",
+      "breakdownSub": "Every rate comes from the price list published on this website",
+      "whatWeAssumed": "What we assumed",
+      "nextStepsTitle": "Recommended next steps",
+      "maintenanceTitle": "Maintenance tips",
+      "relatedReading": "Related reading"
+    },
+    "severity": {
+      "routine": "Routine",
+      "soon": "Book this week",
+      "urgent": "Urgent — 24 to 48 hours",
+      "emergency": "Emergency — act now"
+    },
+    "whatsapp": {
+      "greeting": "Hi KL Servis Rumah, I used your {tool} and would like to book.",
+      "myAnswers": "MY ANSWERS",
+      "estimateSection": "ESTIMATE FROM YOUR WEBSITE",
+      "recommended": "Recommended service: {value}",
+      "package": "Package: {value}",
+      "estimatedCost": "Estimated cost: {value}",
+      "range": "Estimated range: {low} – {high}",
+      "time": "Estimated time: {value}",
+      "addons": "Add-ons: {value}",
+      "totalAddons": "Estimated total with add-ons: {value}",
+      "closing": "Please confirm availability and the final quotation after inspection.",
+      "siteVisitGreeting": "Hi KL Servis Rumah, I would like to request a free site visit.",
+      "siteVisitLine": "Website estimate: {price} ({low} – {high}) for {service}."
+    },
+    "steps": {
+      "scopeTitle": "What do you need?",
+      "scopeSub": "Every option below is priced from this service's published rates.",
+      "scopeFieldLabel": "Type of work",
+      "sizeTitle": "How much of it?",
+      "sizeSub": "Tap the closest option — we confirm the exact figure on site.",
+      "detailsTitle": "Condition, access and timing",
+      "detailsSub": "Skip this and we price a normal job, ground-floor access, standard scheduling.",
+      "conditionQuestion": "What condition is it in?",
+      "accessQuestion": "How easy is access?",
+      "urgencyQuestion": "When do you need it?"
+    },
+    "breakdown": {
+      "publishedRate": "Published rate",
+      "publishedRateNote": "Taken directly from the {title} price list on this website.",
+      "quantity": "Quantity",
+      "quantityNote": "{published} × {qty} = {base} before any adjustment.",
+      "conditionLabel": "Condition — {label}",
+      "accessLabel": "Access — {label}",
+      "timingLabel": "Timing — {label}",
+      "minimumApplied": "Published minimum applied",
+      "minimumAppliedNote": "{title} starts from {min}, so smaller jobs are charged at that published minimum."
+    },
+    "assumptions": {
+      "quantities": "Quantities are the ones you entered — the final quotation follows the measured scope on site.",
+      "warranty": "Covered by our {warranty}.",
+      "confirmed": "Price confirmed in writing before any work starts; extra scope is always approved by you first.",
+      "quoteOnly": "Quoted after a site visit rather than estimated here: {names}."
+    },
+    "addons": {
+      "siteVisitLabel": "Free on-site measurement before booking",
+      "siteVisitNote": "Confirms the exact scope so the final quotation matches the job.",
+      "postCleanLabel": "Post-work cleaning",
+      "postCleanNote": "Full clear-out and wipe-down after the job."
+    },
+    "related": {
+      "serviceDesc": "Full scope, process and warranty",
+      "priceGuide": "2026 Price Guide",
+      "priceGuideDesc": "Every published rate in one place",
+      "allEstimators": "All free estimators",
+      "allEstimatorsDesc": "Estimate another job instantly"
+    },
+    "duration": {
+      "halfDay": "Half a day on site",
+      "oneDay": "About 1 working day",
+      "twoDays": "1–2 working days",
+      "threeToFive": "3–5 working days",
+      "oneToThreeWeeks": "1–3 weeks",
+      "threeWeeksPlus": "3 weeks or more"
+    },
+    "units": {
+      "job": {
+        "label": "How many of these do you need?",
+        "noun": "job",
+        "plural": "jobs",
+        "presets": {
+          "1": { "label": "Just one", "hint": "A single job at one location" },
+          "2": { "label": "Two" },
+          "3": { "label": "Three" },
+          "5": { "label": "Five or more", "hint": "We confirm the exact count on site" }
+        }
+      },
+      "sqft": {
+        "label": "How big is the area?",
+        "noun": "sq ft",
+        "plural": "sq ft",
+        "presets": {
+          "60": { "label": "Small — about 60 sq ft", "hint": "Bathroom or store room" },
+          "120": { "label": "Standard room — about 120 sq ft", "hint": "10 × 12 ft bedroom" },
+          "250": { "label": "Large room — about 250 sq ft", "hint": "Living hall" },
+          "600": { "label": "Small unit — about 600 sq ft", "hint": "Studio or small apartment" },
+          "1000": { "label": "Condo — about 1,000 sq ft", "hint": "Typical 3-bedroom condo" },
+          "2000": { "label": "Landed house — about 2,000 sq ft", "hint": "2-storey terrace" }
+        }
+      },
+      "linearft": {
+        "label": "How many running feet?",
+        "noun": "linear ft",
+        "plural": "linear ft",
+        "presets": {
+          "6": { "label": "About 6 ft", "hint": "A single short run" },
+          "10": { "label": "About 10 ft", "hint": "One standard wall" },
+          "20": { "label": "About 20 ft", "hint": "Two walls or a long run" },
+          "40": { "label": "About 40 ft", "hint": "A full room perimeter" },
+          "80": { "label": "About 80 ft or more", "hint": "Measured on site" }
+        }
+      },
+      "point": {
+        "label": "How many points?",
+        "noun": "point",
+        "plural": "points",
+        "presets": {
+          "1": { "label": "1 point" },
+          "4": { "label": "4 points", "hint": "One room" },
+          "8": { "label": "8 points", "hint": "Two to three rooms" },
+          "16": { "label": "16 points", "hint": "A whole condo unit" },
+          "30": { "label": "30 or more", "hint": "Whole house or commercial" }
+        }
+      },
+      "visit": {
+        "label": "How many visits?",
+        "noun": "visit",
+        "plural": "visits",
+        "presets": {
+          "1": { "label": "One-off visit" },
+          "4": { "label": "4 visits", "hint": "Weekly for a month" },
+          "12": { "label": "12 visits", "hint": "Weekly for three months" },
+          "26": { "label": "26 visits", "hint": "Fortnightly for a year" }
+        }
+      },
+      "room": {
+        "label": "How many rooms?",
+        "noun": "room",
+        "plural": "rooms",
+        "presets": {
+          "1": { "label": "1 room" },
+          "2": { "label": "2 rooms" },
+          "3": { "label": "3 rooms", "hint": "Typical condo" },
+          "5": { "label": "5 rooms", "hint": "Landed house" },
+          "8": { "label": "8 or more rooms" }
+        }
+      },
+      "panel": {
+        "label": "How many panels?",
+        "noun": "panel",
+        "plural": "panels",
+        "presets": {
+          "1": { "label": "1 panel" },
+          "2": { "label": "2 panels" },
+          "4": { "label": "4 panels" },
+          "8": { "label": "8 or more panels" }
+        }
+      }
+    },
+    "modifiers": {
+      "condition": {
+        "new": { "label": "New / straightforward", "hint": "Nothing to remove or repair first" },
+        "normal": { "label": "Normal condition", "hint": "Standard preparation only" },
+        "worn": { "label": "Worn or aged", "hint": "Extra preparation and making good" },
+        "damaged": { "label": "Damaged / needs repair first", "hint": "Repair work before the main job" }
+      },
+      "access": {
+        "easy": { "label": "Easy — ground floor", "hint": "Normal access, nothing to climb" },
+        "upper": { "label": "Upper floor", "hint": "Stairs or light staging" },
+        "highrise": { "label": "High-rise unit", "hint": "Lift booking and floor protection" },
+        "difficult": { "label": "Difficult — height or tight space", "hint": "Scaffold or restricted working space" }
+      },
+      "urgency": {
+        "standard": { "label": "Standard schedule", "hint": "Next available slot — lowest price" },
+        "week": { "label": "Within a week", "hint": "Priority scheduling" },
+        "urgent": { "label": "Urgent — 48 hours", "hint": "Crew reshuffled for you" },
+        "emergency": { "label": "Emergency — same day", "hint": "Immediate dispatch" }
+      }
+    }
   }
 }
