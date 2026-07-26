@@ -761,12 +761,31 @@ export const problemPages: ProblemDetail[] = [
 // readability; combined here so `problemPages` remains the single
 // source of truth used across the app and schemas).
 import { extraProblemPages } from "@/config/problem-data-extra";
-export const allProblemPages: ProblemDetail[] = [...problemPages, ...extraProblemPages];
+
+/**
+ * Merge the extras, dropping any slug already defined above.
+ *
+ * `problem-data-extra.ts` re-declared `ceiling-fan-wobbling` and
+ * `epoxy-floor-yellowing`, which are also defined in this file. Page lookups
+ * use `.find()`, so the first record always won and the second was dead data —
+ * but it still inflated the array, emitting duplicate `<loc>` entries in
+ * sitemap.xml and double-counting questions in the `/faq` directory.
+ * De-duplicating here keeps the rendered content identical while making the
+ * collection internally consistent.
+ */
+const seenProblemSlugs = new Set(problemPages.map((problem) => problem.slug));
+const uniqueExtraProblemPages = extraProblemPages.filter((problem) => {
+  if (seenProblemSlugs.has(problem.slug)) return false;
+  seenProblemSlugs.add(problem.slug);
+  return true;
+});
+
+export const allProblemPages: ProblemDetail[] = [...problemPages, ...uniqueExtraProblemPages];
 
 // Overwrite the exported array (import site expects `problemPages`
 // to include every problem). Downstream code uses `problemPages`
 // directly, so we mutate-append rather than shadow-export.
-(problemPages as ProblemDetail[]).push(...extraProblemPages);
+(problemPages as ProblemDetail[]).push(...uniqueExtraProblemPages);
 
 export const problemSlugs = problemPages.map((problem) => problem.slug);
 

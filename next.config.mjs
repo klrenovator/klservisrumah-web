@@ -59,9 +59,18 @@ const nextConfig = {
         ],
       },
       {
+        // NB: no `Cache-Control` here on purpose.
+        //
+        // Next.js applies `headers()` rules in order, but a later matching rule
+        // *overrides* an earlier one for the same header key. This catch-all
+        // matches `/_next/static/*` too, so setting Cache-Control here stomped
+        // the `immutable` policy above and served every hashed JS/CSS chunk as
+        // `max-age=3600` — forcing repeat visitors to re-validate ~1.3 MB of
+        // fingerprinted assets on every visit. Content-hashed files never change,
+        // so they must keep the immutable rule. HTML caching is left to Next.js,
+        // which already emits correct per-route values.
         source: "/:path*",
         headers: [
-          { key: "Cache-Control", value: "public, max-age=3600, must-revalidate" },
           { key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains; preload" },
           { key: "X-Frame-Options", value: "DENY" },
           { key: "X-Content-Type-Options", value: "nosniff" },

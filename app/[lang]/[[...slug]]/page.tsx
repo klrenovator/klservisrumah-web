@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { siteConfig } from "@/config/site";
-import { buildAlternates } from "@/lib/seo-meta";
+import { buildAlternates, optimizeTitle, optimizeDescription } from "@/lib/seo-meta";
 import { ArrowRight, MessageSquare, Phone, Home } from "lucide-react";
 
 const supported = ["ms", "zh"] as const;
@@ -46,6 +46,20 @@ const labels: Record<SupportedLocale, {
   }
 };
 
+/**
+ * Restrict this optional catch-all to the two locale scaffolds it exists for.
+ *
+ * Without this, `/[lang]/[[...slug]]` matches *every* unmatched URL on the site
+ * (`/foo`, `/services/bad-slug`, `/a/b/c`). Next.js then renders the route
+ * on demand, `notFound()` fires, and the resulting 404 body gets cached and
+ * served with a **200 OK** — a soft 404. Google treats those as thin duplicate
+ * pages and they burn crawl budget across an unbounded URL space.
+ *
+ * `dynamicParams = false` makes any param outside `generateStaticParams()`
+ * return a real 404, so unmatched URLs fall through to `app/not-found.tsx`.
+ */
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   return supported.map((lang) => ({ lang, slug: [] }));
 }
@@ -58,8 +72,11 @@ export async function generateMetadata(props: { params: Promise<{ lang: string; 
   // auto-redirect to "/". They must be noindex AND canonical to "/" so they never
   // compete with the homepage in the index.
   return {
-    title: `${info.title} — ${siteConfig.name}`,
-    description: info.notice,
+    // Route through the shared optimizers so these two pages obey the same
+    // title/description budgets as the rest of the site. Written literally,
+    // the BM notice rendered a 207-char description.
+    title: optimizeTitle(info.title),
+    description: optimizeDescription(info.notice),
     robots: { index: false, follow: true },
     alternates: buildAlternates("/")
   };

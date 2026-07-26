@@ -56,7 +56,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-5">
         {/* Brand Block */}
         <div className="space-y-4">
-          <Link href="/" className="inline-block">
+          <Link href="/" className="inline-block" aria-label="KL Servis Rumah homepage">
             <Logo size="sm" />
           </Link>
           <p className="text-xs leading-relaxed text-slate-500">{t("footer.tagline")}</p>

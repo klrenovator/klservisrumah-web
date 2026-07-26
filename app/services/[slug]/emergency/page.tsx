@@ -8,6 +8,11 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { getFAQSchema, getServiceSchema } from "@/lib/seo";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 
+// Every valid param is enumerated in `generateStaticParams()`, so anything
+// else must 404 rather than be rendered on demand and cached as a 200
+// (a soft 404). See `app/[lang]/[[...slug]]/page.tsx` for the full rationale.
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return Object.keys(servicesData).map((slug) => ({ slug }));
 }

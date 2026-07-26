@@ -13,6 +13,8 @@ import { TrustBar } from "@/components/trust-bar";
 import { StickyBookButton } from "@/components/sticky-book-button";
 import { LocaleServiceView } from "@/components/sections/locale-service-view";
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   return Object.keys(servicesData).map((slug) => ({
     slug: slug

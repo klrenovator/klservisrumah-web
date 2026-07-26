@@ -8,6 +8,11 @@ import { getLocalBusinessServiceSchema } from "@/lib/seo";
 import { buildAreaLinks, buildServiceBundle } from "@/lib/location-bundles";
 import { LocaleNearMeHub } from "@/components/sections/locale-near-me-hub";
 
+// Every valid param is enumerated in `generateStaticParams()`, so anything
+// else must 404 rather than be rendered on demand and cached as a 200
+// (a soft 404). See `app/[lang]/[[...slug]]/page.tsx` for the full rationale.
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return Object.keys(servicesData).map((serviceSlug) => ({ serviceSlug }));
 }
