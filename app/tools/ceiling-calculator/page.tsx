@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { ToolPage } from "@/components/tools/tool-page";
 import { toolsContent } from "@/config/tools-data";
+import { toolLocaleUrls } from "@/config/tools-i18n";
 import { getToolGraph } from "@/lib/estimator/schema";
 import { buildMetadata } from "@/lib/seo-meta";
 
@@ -24,7 +25,8 @@ export const metadata = buildMetadata({
   description: content.metaDesc,
   path: "/tools/ceiling-calculator",
   keywords: content.keywords,
-  image: content.heroImage
+  image: content.heroImage,
+  languageUrls: toolLocaleUrls(content.slug)
 });
 
 export default function Page() {

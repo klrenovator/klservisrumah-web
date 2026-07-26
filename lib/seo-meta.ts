@@ -218,6 +218,21 @@ export type BuildMetadataInput = {
    * Defaults to `path` so every other route stays self-canonical.
    */
   canonicalPath?: string;
+  /**
+   * Real per-language URLs for a genuine multilingual cluster (the tool pages).
+   *
+   * When provided, hreflang stops being self-referencing and instead links the
+   * three sibling URLs — `/tools/<slug>`, `/ms/alatan/<slug>`, `/zh/gongju/<slug>`
+   * — with `x-default` on the English one. Only use this when each URL serves
+   * fully localised, indexable content (hreflang targets must never redirect).
+   */
+  languageUrls?: { en: string; ms: string; zh: string };
+  /**
+   * og:locale for this page; the other two locales are emitted as
+   * og:locale:alternate. Defaults to the English site-wide values.
+   */
+  ogLocale?: string;
+  ogAlternateLocales?: [string, string];
   image?: string;
   type?: "website" | "article";
   keywords?: string[];
@@ -238,6 +253,9 @@ export function buildMetadata({
   description,
   path,
   canonicalPath,
+  languageUrls,
+  ogLocale = "en_MY",
+  ogAlternateLocales = ["ms_MY", "zh_MY"],
   image = siteConfig.defaultOgImage,
   type = "website",
   keywords = [],
@@ -252,11 +270,26 @@ export function buildMetadata({
   const url = absoluteUrl(canonicalPath ?? path);
   const imageUrl = image.startsWith("http") ? image : `${SITE_URL}${image.startsWith("/") ? image : `/${image}`}`;
 
+  // A genuine multilingual cluster (the MS/ZH tool pages) links its three
+  // sibling URLs. Everything else keeps the self-referencing cluster because
+  // its languages share one URL.
+  const alternates = languageUrls
+    ? {
+        canonical: url,
+        languages: {
+          "en-MY": absoluteUrl(languageUrls.en),
+          "ms-MY": absoluteUrl(languageUrls.ms),
+          "zh-MY": absoluteUrl(languageUrls.zh),
+          "x-default": absoluteUrl(languageUrls.en),
+        },
+      }
+    : buildAlternates(canonicalPath ?? path);
+
   return {
     title: finalTitle,
     description: finalDescription,
     ...(keywords.length ? { keywords } : {}),
-    alternates: buildAlternates(canonicalPath ?? path),
+    alternates,
     robots: noIndex
       ? { index: false, follow: false }
       : {
@@ -276,8 +309,8 @@ export function buildMetadata({
       url,
       siteName: BRAND,
       images: [{ url: imageUrl, width: 1200, height: 630, alt: finalTitle }],
-      locale: "en_MY",
-      alternateLocale: ["ms_MY", "zh_MY"],
+      locale: ogLocale,
+      alternateLocale: [...ogAlternateLocales],
       type,
       ...(type === "article" ? { publishedTime, modifiedTime } : {}),
     },
