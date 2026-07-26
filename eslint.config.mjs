@@ -10,7 +10,11 @@ export default [
       "public/**",
       "next-env.d.ts",
       "*.config.mjs",
-      "coverage/**"
+      "coverage/**",
+      // Node-only build tooling: runs under `node --experimental-strip-types`,
+      // not through the Next.js/browser lint profile.
+      "scripts/ts-resolver.mjs",
+      "lib/estimator/rate-book.generated.ts"
     ]
   },
   js.configs.recommended,

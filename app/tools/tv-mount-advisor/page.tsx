@@ -1,9 +1,46 @@
-import { SimpleToolPage } from "@/components/tools/simple-tool-page";
-import { getWebApplicationSchema } from "@/lib/seo";
+import React from "react";
+import dynamic from "next/dynamic";
+import { Breadcrumbs } from "@/components/ui/breadcrumbs";
+import { ToolPage } from "@/components/tools/tool-page";
+import { toolsContent } from "@/config/tools-data";
+import { getToolGraph } from "@/lib/estimator/schema";
 import { buildMetadata } from "@/lib/seo-meta";
-export const metadata = buildMetadata({
-  title: "TV Mount Advisor — Wall Type & Bracket",
-  description: "Find the right TV bracket and fixing method for brick, concrete, gypsum or partition walls in Malaysian condos and landed homes.",
-  path: "/tools/tv-mount-advisor"
+
+const content = toolsContent["tv-mount-advisor"];
+
+/**
+ * The wizard is the only interactive part of this route. Deferring it keeps the
+ * hero image, direct answer, price table and FAQ in the static HTML payload, so
+ * the LCP element never waits on estimator JavaScript.
+ */
+const Wizard = dynamic(() => import("@/components/tools/estimator/wizards/tv-mount-advisor"), {
+  loading: () => (
+    <div className="h-[34rem] animate-pulse rounded-3xl border border-slate-200 bg-slate-50" aria-hidden="true" />
+  )
 });
-export default function TvMountAdvisorPage(){ return <><script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(getWebApplicationSchema("TV Mount Advisor", "/tools/tv-mount-advisor", "Recommend TV mount factors."))}}/><SimpleToolPage title="TV Mount Advisor" description="Share TV size, wall type, bracket type and cable preference for a safe mounting recommendation." fields={["TV size", "Wall type", "Bracket type", "Cable preference"]}/></>; }
+
+export const metadata = buildMetadata({
+  title: content.metaTitle,
+  description: content.metaDesc,
+  path: "/tools/tv-mount-advisor",
+  keywords: content.keywords,
+  image: content.heroImage
+});
+
+export default function Page() {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getToolGraph(content)) }}
+      />
+      <Breadcrumbs
+        items={[
+          { label: "Free Tools", href: "/tools" },
+          { label: content.name, href: "/tools/tv-mount-advisor" }
+        ]}
+      />
+      <ToolPage content={content} intro={content.intro} wizard={<Wizard />} />
+    </>
+  );
+}
