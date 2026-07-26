@@ -383,6 +383,7 @@ export const tvMountSpec: EstimatorSpec = {
     },
     {
       id: "extras",
+      advanced: true,
       title: "Cables, power and extras",
       subtitle: "Everything here can be done in the same visit.",
       icon: "🔌",

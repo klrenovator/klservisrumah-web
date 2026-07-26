@@ -668,5 +668,13 @@
     "heroEyebrow": "Pusat Pengetahuan",
     "heroTitle": "Soalan Lazim Perkhidmatan Rumah KL & Selangor",
     "heroLead": "Jawapan jujur tentang harga, jaminan, insurans dan liputan bagi kerja mengecat, paip, siling, kalis air dan tukang."
+  },
+  "serviceEstimator": {
+    "eyebrow": "Anggaran segera",
+    "heading": "Kira harga anda sekarang",
+    "sub": "Semuanya ada di halaman ini — tiada butang seterusnya. Ketik jawapan anda dan harga dikemas kini serta-merta, menggunakan kadar tersiar di atas.",
+    "openTool": "Buka {name} penuh",
+    "dedicatedIntro": "Kami mempunyai alat anggaran khusus untuk perkhidmatan ini dengan lebih banyak butiran — keadaan permukaan, bahan, akses dan tambahan semuanya dimodelkan.",
+    "disclaimerShort": "Anggaran sebut harga. Harga akhir disahkan selepas pemeriksaan di tapak."
   }
 }

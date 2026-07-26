@@ -149,7 +149,12 @@ export function ToolPage({
       {/* ── Estimator ────────────────────────────────────────────────── */}
       <section id="estimator" className="scroll-mt-20 bg-white py-6 sm:py-10">
         <div className="container-default">
-          <div className="mx-auto max-w-3xl">{wizard}</div>
+          <div className="mx-auto max-w-3xl">
+            <div className="mb-5 rounded-2xl border border-sky-100 bg-sky-50/60 p-4 text-sm font-bold leading-relaxed text-[#075985]">
+              Everything is on this one page — no next buttons. Tap your answers and the price updates as you go.
+            </div>
+            {wizard}
+          </div>
         </div>
       </section>
 

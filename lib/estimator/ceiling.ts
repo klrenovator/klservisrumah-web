@@ -481,6 +481,7 @@ export const ceilingSpec: EstimatorSpec = {
     },
     {
       id: "access",
+      advanced: true,
       title: "Ceiling height & timing",
       subtitle: "Height decides the access equipment we bring.",
       icon: "🪜",

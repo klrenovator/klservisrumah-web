@@ -2,6 +2,7 @@ import type { Locale } from "@/lib/i18n";
 import type { AreaDetail } from "@/config/area-data";
 import type { SuburbDetail } from "@/config/suburb-data";
 import { areaI18n } from "@/config/area-i18n";
+import { areaI18nExtra } from "@/config/area-i18n-extra";
 import { suburbHousingProfileI18n, suburbCommonIssuesI18n } from "@/config/suburb-i18n";
 
 /**
@@ -11,7 +12,9 @@ import { suburbHousingProfileI18n, suburbCommonIssuesI18n } from "@/config/subur
  */
 export function getLocalizedArea(area: AreaDetail, locale: Locale): AreaDetail {
   if (locale === "en") return area;
-  const override = areaI18n[area.slug]?.[locale];
+  // The hand-written entries in `areaI18n` cover the 6 headline areas and take
+  // precedence; `areaI18nExtra` fills in the remaining 31 coverage areas.
+  const override = areaI18n[area.slug]?.[locale] ?? areaI18nExtra[area.slug]?.[locale];
   if (!override) return area;
   return {
     ...area,

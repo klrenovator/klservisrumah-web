@@ -95,6 +95,13 @@ export type Step = {
   fields: Field[];
   /** Skip the whole step when the condition fails. */
   visible?: (answers: Answers) => boolean;
+  /**
+   * Fine-tuning section. The single-page estimator keeps these collapsed behind
+   * one "optional details" toggle so a first-time visitor only sees the few
+   * questions that actually decide the headline price. Sensible defaults are
+   * always applied, so an untouched advanced section never blocks an estimate.
+   */
+  advanced?: boolean;
 };
 
 /** An optional extra the customer can toggle on the result screen. */

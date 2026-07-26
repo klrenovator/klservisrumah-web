@@ -12,6 +12,26 @@ import { TrustBadgesRow } from "@/components/content/trust-badges-row";
 import { RelatedServices } from "@/components/sections/related-services";
 import { RelatedProblems } from "@/components/sections/related-problems";
 import { ServiceAreaLinks } from "@/components/sections/service-area-links";
+import dynamic from "next/dynamic";
+
+/**
+ * The estimator is the only heavy interactive block on this page and it sits
+ * below the fold, so it is code-split out of the initial payload. Everything
+ * a crawler needs — description, published sub-service rates, FAQs — is
+ * already static HTML above and below it.
+ */
+const ServiceEstimatorBlock = dynamic(
+  () => import("@/components/tools/service-estimator-block").then((mod) => mod.ServiceEstimatorBlock),
+  {
+    loading: () => (
+      <div className="section-tight bg-gradient-to-b from-sky-50/60 to-white">
+        <div className="container-narrow">
+          <div className="h-96 animate-pulse rounded-3xl border border-slate-200 bg-white" aria-hidden="true" />
+        </div>
+      </div>
+    )
+  }
+);
 
 type ServiceDetailContentProps = {
   service: ServiceDetail;
@@ -21,14 +41,15 @@ type ServiceDetailContentProps = {
  * ServiceDetailContent — Klrenovator-style service page body.
  * Sections in order:
  *   1. Overview (description + highlights)
- *   2. Direct Answer (AI-citable)
- *   3. Sub-services pricing
- *   4. Process Timeline
- *   5. Decision Tree
- *   6. Comparison Table (us vs typical)
- *   7. Coverage area chips
- *   8. FAQs
- *   9. Related Services (internal linking)
+ *   2. Instant estimator (or a link to the dedicated tool for that trade)
+ *   3. Direct Answer (AI-citable)
+ *   4. Sub-services pricing
+ *   5. Process Timeline
+ *   6. Decision Tree
+ *   7. Comparison Table (us vs typical)
+ *   8. Trust badges row
+ *   9. FAQs
+ *  10. Related problems, coverage areas and related services (internal linking)
  */
 export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
   const t = useTranslations();
@@ -64,7 +85,10 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
         </div>
       </section>
 
-      {/* Section 2 — Direct Answer (AI-citable) */}
+      {/* Section 2 — Instant estimator, directly under the description */}
+      <ServiceEstimatorBlock slug={service.slug} title={service.title} warranty={service.warranty} />
+
+      {/* Section 3 — Direct Answer (AI-citable) */}
       <section className="section-tight bg-slate-50">
         <div className="container-narrow">
           <DirectAnswer
@@ -83,7 +107,7 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
         </div>
       </section>
 
-      {/* Section 3 — Sub-services pricing */}
+      {/* Section 4 — Sub-services pricing */}
       <section className="section-tight bg-white">
         <div className="container-default">
           <div className="max-w-2xl">
@@ -124,7 +148,7 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
         </div>
       </section>
 
-      {/* Section 4 — Process Timeline */}
+      {/* Section 5 — Process Timeline */}
       <section className="section-tight bg-slate-50">
         <div className="container-narrow">
           <ProcessTimeline
@@ -135,7 +159,7 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
         </div>
       </section>
 
-      {/* Section 5 — Decision Tree */}
+      {/* Section 6 — Decision Tree */}
       <section className="section-tight bg-white">
         <div className="container-default">
           <DecisionTree
@@ -167,7 +191,7 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
         </div>
       </section>
 
-      {/* Section 6 — Comparison Table */}
+      {/* Section 7 — Comparison Table */}
       <section className="section-tight bg-slate-50">
         <div className="container-default">
           <ComparisonTable
@@ -209,7 +233,7 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
         </div>
       </section>
 
-      {/* Section 7 — Trust Badges row (compact, repeated) */}
+      {/* Section 8 — Trust Badges row (compact, repeated) */}
       <section className="section-tight bg-white">
         <div className="container-default">
           <div className="card text-center">
@@ -227,7 +251,7 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
         </div>
       </section>
 
-      {/* Section 8 — FAQs */}
+      {/* Section 9 — FAQs */}
       <section className="section-tight bg-slate-50">
         <div className="container-narrow">
           <div className="text-center mb-10">
@@ -261,13 +285,13 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
         </div>
       </section>
 
-      {/* Section 9 — Related Problems (internal linking to symptom/diagnostic pages) */}
+      {/* Section 10 — Related Problems (internal linking to symptom/diagnostic pages) */}
       <RelatedProblems serviceSlug={service.slug} maxItems={4} />
 
-      {/* Section 10 — Service Area Links (internal linking to location pages) */}
+      {/* Section 11 — Service Area Links (internal linking to location pages) */}
       <ServiceAreaLinks serviceSlug={service.slug} maxItems={8} />
 
-      {/* Section 11 — Related Services (internal linking) */}
+      {/* Section 12 — Related Services (internal linking) */}
       <RelatedServices currentSlug={service.slug} maxItems={6} />
     </>
   );

@@ -668,5 +668,13 @@
     "heroEyebrow": "Knowledge Base",
     "heroTitle": "Home Service FAQs for KL & Selangor",
     "heroLead": "Honest answers about pricing, warranty, insurance and coverage for painting, plumbing, ceiling, waterproofing and handyman work."
+  },
+  "serviceEstimator": {
+    "eyebrow": "Instant estimate",
+    "heading": "Work out your price now",
+    "sub": "Everything is on this page — no next buttons. Tap your answers and the price updates as you go, using the published rates listed above.",
+    "openTool": "Open the full {name}",
+    "dedicatedIntro": "We have a dedicated estimator for this service with far more detail — surface condition, materials, access and add-ons all modelled.",
+    "disclaimerShort": "Estimated quotation. Final price is confirmed after an on-site inspection."
   }
 }

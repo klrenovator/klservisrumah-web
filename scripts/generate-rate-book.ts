@@ -206,6 +206,65 @@ const labelPairs: [string, string, string][] = [
 
 const labels = Object.fromEntries(labelPairs.map(([key, slug, fragment]) => [key, sub(slug, fragment).label]));
 
+/* ── Per-service scope catalogue ─────────────────────────────────────────── */
+
+/**
+ * Every service's published sub-services, distilled into the minimum a
+ * calculator needs: the amount, the unit it is charged in, and the exact
+ * published string to quote back to the customer.
+ *
+ * This is what lets a single generic estimator cover all 28 services without
+ * anyone hand-writing 28 specs — and it guarantees the calculator can never
+ * show a rate that is not published on the service page itself.
+ */
+type ScopeUnit = "job" | "sqft" | "linearft" | "point" | "visit" | "room" | "panel";
+
+function unitOf(price: string): ScopeUnit {
+  const tail = price.split("/")[1]?.trim().toLowerCase() ?? "";
+  if (!tail) return "job";
+  if (tail.startsWith("sq ft")) return "sqft";
+  // "linier ft" is the spelling used in services-data.ts.
+  if (tail.startsWith("linier ft") || tail.startsWith("linear ft") || tail === "ft") return "linearft";
+  if (tail.startsWith("point")) return "point";
+  if (tail.startsWith("visit")) return "visit";
+  if (tail.startsWith("room")) return "room";
+  if (tail.startsWith("panel")) return "panel";
+  return "job";
+}
+
+const serviceScopes = Object.fromEntries(
+  Object.values(servicesData).map((service) => [
+    service.slug,
+    {
+      /** `startPrice` — the lowest published figure for the whole service. */
+      startPrice: parseAmount(service.startPrice) ?? 0,
+      scopes: service.subServices
+        // "On Quote" scopes carry no number, so they cannot be estimated. They
+        // are surfaced separately by the UI as a "request a quote" route.
+        .filter((item) => parseAmount(item.price) !== null)
+        .map((item) => ({
+          name: item.name,
+          amount: parseAmount(item.price)!,
+          unit: unitOf(item.price),
+          published: item.price,
+          desc: item.desc
+        })),
+      /** Scopes we publish but deliberately do not price without a site visit. */
+      quoteOnly: service.subServices
+        .filter((item) => parseAmount(item.price) === null)
+        .map((item) => ({ name: item.name, desc: item.desc }))
+    }
+  ])
+);
+
+for (const [slug, entry] of Object.entries(serviceScopes)) {
+  if (!entry.scopes.length) {
+    throw new Error(
+      `[rate-book] Service "${slug}" has no numerically-priced sub-service, so no estimator can be generated for it.`
+    );
+  }
+}
+
 const output = `/**
  * AUTO-GENERATED — DO NOT EDIT BY HAND.
  *
@@ -228,6 +287,30 @@ export const RATES = ${JSON.stringify(rates, null, 2)} as const;
 export const PRICE_LABELS = ${JSON.stringify(labels, null, 2)} as const;
 
 export type PriceLabelKey = keyof typeof PRICE_LABELS;
+
+/** How a published sub-service rate is charged. */
+export type ScopeUnit = "job" | "sqft" | "linearft" | "point" | "visit" | "room" | "panel";
+
+export type PublishedScope = {
+  name: string;
+  amount: number;
+  unit: ScopeUnit;
+  /** The published price string, quoted verbatim to the customer. */
+  published: string;
+  desc: string;
+};
+
+export type ServiceScopeBook = {
+  startPrice: number;
+  scopes: PublishedScope[];
+  quoteOnly: { name: string; desc: string }[];
+};
+
+/**
+ * Published sub-service pricing for all ${Object.keys(serviceScopes).length} services, powering the generic
+ * per-service estimator at \`/services/[slug]\` and \`/tools/[slug]-calculator\`.
+ */
+export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = ${JSON.stringify(serviceScopes, null, 2)};
 `;
 
 const target = path.join(process.cwd(), "lib", "estimator", "rate-book.generated.ts");
