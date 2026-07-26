@@ -17,166 +17,95 @@
  *   • The result can never fall below the service's published `startPrice`.
  *   • Scopes we publish as "On Quote" are never given a number — they route the
  *     customer to a site visit instead.
+ *
+ * Every visible string the engine emits is resolved through a `Translator`
+ * bound to the active locale (EN/MS/ZH), so the 22 service pages that rely on
+ * this engine are fully trilingual. Numeric values and the published rate
+ * string itself are locale-independent.
  */
 
 import type { Answers, EstimateResult, EstimatorSpec, Choice } from "./types";
 import { RATES, SERVICE_SCOPES, type PublishedScope, type ScopeUnit } from "./rate-book.generated";
 import { clamp, roundMoney } from "./pricing";
 import { formatMYR } from "./format";
+import type { Translator } from "../i18n";
 
 /* ── Unit handling ───────────────────────────────────────────────────────── */
 
-type UnitConfig = {
-  /** Question shown for the quantity, e.g. "How big is the area?". */
-  label: string;
-  /** Noun for one unit, used in the breakdown. */
-  noun: string;
-  /** Plural noun. */
-  plural: string;
+type UnitMeta = {
   /** Sensible default quantity so the page opens with a real price. */
   defaultQty: number;
   min: number;
   max: number;
-  /** Preset choices so the customer taps instead of typing. */
-  presets: { value: number; label: string; hint?: string }[];
+  /** Preset values so the customer taps instead of typing. Label/hint come from the dictionary. */
+  presets: { value: number }[];
 };
 
-const UNITS: Record<ScopeUnit, UnitConfig> = {
-  job: {
-    label: "How many of these do you need?",
-    noun: "job",
-    plural: "jobs",
-    defaultQty: 1,
-    min: 1,
-    max: 20,
-    presets: [
-      { value: 1, label: "Just one", hint: "A single job at one location" },
-      { value: 2, label: "Two" },
-      { value: 3, label: "Three" },
-      { value: 5, label: "Five or more", hint: "We confirm the exact count on site" }
-    ]
-  },
-  sqft: {
-    label: "How big is the area?",
-    noun: "sq ft",
-    plural: "sq ft",
-    defaultQty: 120,
-    min: 10,
-    max: 8000,
-    presets: [
-      { value: 60, label: "Small — about 60 sq ft", hint: "Bathroom or store room" },
-      { value: 120, label: "Standard room — about 120 sq ft", hint: "10 × 12 ft bedroom" },
-      { value: 250, label: "Large room — about 250 sq ft", hint: "Living hall" },
-      { value: 600, label: "Small unit — about 600 sq ft", hint: "Studio or small apartment" },
-      { value: 1000, label: "Condo — about 1,000 sq ft", hint: "Typical 3-bedroom condo" },
-      { value: 2000, label: "Landed house — about 2,000 sq ft", hint: "2-storey terrace" }
-    ]
-  },
-  linearft: {
-    label: "How many running feet?",
-    noun: "linear ft",
-    plural: "linear ft",
-    defaultQty: 10,
-    min: 1,
-    max: 500,
-    presets: [
-      { value: 6, label: "About 6 ft", hint: "A single short run" },
-      { value: 10, label: "About 10 ft", hint: "One standard wall" },
-      { value: 20, label: "About 20 ft", hint: "Two walls or a long run" },
-      { value: 40, label: "About 40 ft", hint: "A full room perimeter" },
-      { value: 80, label: "About 80 ft or more", hint: "Measured on site" }
-    ]
-  },
-  point: {
-    label: "How many points?",
-    noun: "point",
-    plural: "points",
-    defaultQty: 4,
-    min: 1,
-    max: 100,
-    presets: [
-      { value: 1, label: "1 point" },
-      { value: 4, label: "4 points", hint: "One room" },
-      { value: 8, label: "8 points", hint: "Two to three rooms" },
-      { value: 16, label: "16 points", hint: "A whole condo unit" },
-      { value: 30, label: "30 or more", hint: "Whole house or commercial" }
-    ]
-  },
-  visit: {
-    label: "How many visits?",
-    noun: "visit",
-    plural: "visits",
-    defaultQty: 1,
-    min: 1,
-    max: 52,
-    presets: [
-      { value: 1, label: "One-off visit" },
-      { value: 4, label: "4 visits", hint: "Weekly for a month" },
-      { value: 12, label: "12 visits", hint: "Weekly for three months" },
-      { value: 26, label: "26 visits", hint: "Fortnightly for a year" }
-    ]
-  },
-  room: {
-    label: "How many rooms?",
-    noun: "room",
-    plural: "rooms",
-    defaultQty: 1,
-    min: 1,
-    max: 30,
-    presets: [
-      { value: 1, label: "1 room" },
-      { value: 2, label: "2 rooms" },
-      { value: 3, label: "3 rooms", hint: "Typical condo" },
-      { value: 5, label: "5 rooms", hint: "Landed house" },
-      { value: 8, label: "8 or more rooms" }
-    ]
-  },
-  panel: {
-    label: "How many panels?",
-    noun: "panel",
-    plural: "panels",
-    defaultQty: 1,
-    min: 1,
-    max: 40,
-    presets: [
-      { value: 1, label: "1 panel" },
-      { value: 2, label: "2 panels" },
-      { value: 4, label: "4 panels" },
-      { value: 8, label: "8 or more panels" }
-    ]
-  }
+const UNIT_META: Record<ScopeUnit, UnitMeta> = {
+  job: { defaultQty: 1, min: 1, max: 20, presets: [{ value: 1 }, { value: 2 }, { value: 3 }, { value: 5 }] },
+  sqft: { defaultQty: 120, min: 10, max: 8000, presets: [{ value: 60 }, { value: 120 }, { value: 250 }, { value: 600 }, { value: 1000 }, { value: 2000 }] },
+  linearft: { defaultQty: 10, min: 1, max: 500, presets: [{ value: 6 }, { value: 10 }, { value: 20 }, { value: 40 }, { value: 80 }] },
+  point: { defaultQty: 4, min: 1, max: 100, presets: [{ value: 1 }, { value: 4 }, { value: 8 }, { value: 16 }, { value: 30 }] },
+  visit: { defaultQty: 1, min: 1, max: 52, presets: [{ value: 1 }, { value: 4 }, { value: 12 }, { value: 26 }] },
+  room: { defaultQty: 1, min: 1, max: 30, presets: [{ value: 1 }, { value: 2 }, { value: 3 }, { value: 5 }, { value: 8 }] },
+  panel: { defaultQty: 1, min: 1, max: 40, presets: [{ value: 1 }, { value: 2 }, { value: 4 }, { value: 8 }] }
 };
 
 /* ── Transparent multipliers ─────────────────────────────────────────────── */
 
-type Modifier = { value: string; label: string; hint: string; factor: number };
+type ModifierMeta = { value: string; factor: number };
 
-const CONDITION: Modifier[] = [
-  { value: "new", label: "New / straightforward", hint: "Nothing to remove or repair first", factor: 0.95 },
-  { value: "normal", label: "Normal condition", hint: "Standard preparation only", factor: 1 },
-  { value: "worn", label: "Worn or aged", hint: "Extra preparation and making good", factor: 1.15 },
-  { value: "damaged", label: "Damaged / needs repair first", hint: "Repair work before the main job", factor: 1.32 }
+const CONDITION: ModifierMeta[] = [
+  { value: "new", factor: 0.95 },
+  { value: "normal", factor: 1 },
+  { value: "worn", factor: 1.15 },
+  { value: "damaged", factor: 1.32 }
 ];
 
-const ACCESS: Modifier[] = [
-  { value: "easy", label: "Easy — ground floor", hint: "Normal access, nothing to climb", factor: 1 },
-  { value: "upper", label: "Upper floor", hint: "Stairs or light staging", factor: 1.08 },
-  { value: "highrise", label: "High-rise unit", hint: "Lift booking and floor protection", factor: 1.12 },
-  { value: "difficult", label: "Difficult — height or tight space", hint: "Scaffold or restricted working space", factor: 1.25 }
+const ACCESS: ModifierMeta[] = [
+  { value: "easy", factor: 1 },
+  { value: "upper", factor: 1.08 },
+  { value: "highrise", factor: 1.12 },
+  { value: "difficult", factor: 1.25 }
 ];
 
-const URGENCY: Modifier[] = [
-  { value: "standard", label: "Standard schedule", hint: "Next available slot — lowest price", factor: 1 },
-  { value: "week", label: "Within a week", hint: "Priority scheduling", factor: 1.05 },
-  { value: "urgent", label: "Urgent — 48 hours", hint: "Crew reshuffled for you", factor: 1.16 },
-  { value: "emergency", label: "Emergency — same day", hint: "Immediate dispatch", factor: 1.28 }
+const URGENCY: ModifierMeta[] = [
+  { value: "standard", factor: 1 },
+  { value: "week", factor: 1.05 },
+  { value: "urgent", factor: 1.16 },
+  { value: "emergency", factor: 1.28 }
 ];
 
-const find = (list: Modifier[], value: unknown) =>
+const find = (list: ModifierMeta[], value: unknown): ModifierMeta =>
   list.find((row) => row.value === String(value)) ?? list.find((row) => row.factor === 1) ?? list[0];
 
-const toChoices = (list: Modifier[], popular?: string): Choice[] =>
-  list.map((row) => ({ value: row.value, label: row.label, hint: row.hint, popular: row.value === popular }));
+type ModifierGroup = "condition" | "access" | "urgency";
+
+/** Resolved modifier label/hint for the active locale. */
+function modifierText(t: Translator, group: ModifierGroup, value: string): { label: string; hint?: string } {
+  const label = t(`estimator.modifiers.${group}.${value}.label`);
+  return { label, hint: optional(t, `estimator.modifiers.${group}.${value}.hint`) };
+}
+
+/** Build selectable choices for a modifier group in the active locale. */
+function modifierChoices(t: Translator, group: ModifierGroup, list: ModifierMeta[], popular?: string): Choice[] {
+  return list.map((row) => {
+    const { label, hint } = modifierText(t, group, row.value);
+    return { value: row.value, label, hint, popular: row.value === popular };
+  });
+}
+
+/* ── Helpers ────────────────────────────────────────────────────────────── */
+
+/**
+ * Resolve a key, returning `undefined` when no translation exists so optional
+ * helper lines (hints that only some presets carry) are omitted cleanly rather
+ * than showing the raw key.
+ */
+function optional(t: Translator, key: string): string | undefined {
+  const value = t(key);
+  return value === key ? undefined : value;
+}
 
 /* ── Duration ────────────────────────────────────────────────────────────── */
 
@@ -185,13 +114,13 @@ const toChoices = (list: Modifier[], popular?: string): Choice[] =>
  * Deliberately coarse and always expressed as a range, because this generic
  * engine does not know the trade's real productivity rates.
  */
-function durationFor(price: number): string {
-  if (price < 400) return "Half a day on site";
-  if (price < 1200) return "About 1 working day";
-  if (price < 3500) return "1–2 working days";
-  if (price < 9000) return "3–5 working days";
-  if (price < 25000) return "1–3 weeks";
-  return "3 weeks or more";
+function durationKey(price: number): string {
+  if (price < 400) return "estimator.duration.halfDay";
+  if (price < 1200) return "estimator.duration.oneDay";
+  if (price < 3500) return "estimator.duration.twoDays";
+  if (price < 9000) return "estimator.duration.threeToFive";
+  if (price < 25000) return "estimator.duration.oneToThreeWeeks";
+  return "estimator.duration.threeWeeksPlus";
 }
 
 /**
@@ -214,6 +143,12 @@ export type ServiceEstimatorInput = {
   title: string;
   /** Published warranty line, quoted in the assumptions. */
   warranty: string;
+  /**
+   * Translator bound to the active locale. The estimator renders on every
+   * service page, where the language is client-side React state, so the spec is
+   * rebuilt whenever the locale changes (see `service-estimator-block.tsx`).
+   */
+  t: Translator;
 };
 
 /** Is a generic estimator available for this service? */
@@ -221,7 +156,7 @@ export function hasServiceEstimator(slug: string): boolean {
   return Boolean(SERVICE_SCOPES[slug]?.scopes.length);
 }
 
-export function buildServiceEstimator({ slug, title, warranty }: ServiceEstimatorInput): EstimatorSpec {
+export function buildServiceEstimator({ slug, title, warranty, t }: ServiceEstimatorInput): EstimatorSpec {
   const book = SERVICE_SCOPES[slug];
   if (!book) throw new Error(`No published scopes for service "${slug}".`);
 
@@ -235,6 +170,12 @@ export function buildServiceEstimator({ slug, title, warranty }: ServiceEstimato
 
   const qtyFieldId = (unit: ScopeUnit) => `qty_${unit}`;
 
+  /** Localized unit noun (singular vs plural). */
+  const unitNoun = (unit: ScopeUnit, quantity: number) => {
+    const root = quantity === 1 ? `estimator.units.${unit}.noun` : `estimator.units.${unit}.plural`;
+    return t(root);
+  };
+
   /**
    * Opening quantity for a unit.
    *
@@ -246,16 +187,16 @@ export function buildServiceEstimator({ slug, title, warranty }: ServiceEstimato
    * already seen at the top of the page.
    */
   function openingQuantity(unit: ScopeUnit): number {
-    const config = UNITS[unit];
+    const meta = UNIT_META[unit];
     const metered = unit === "sqft" || unit === "linearft" || unit === "point";
-    if (!metered) return config.defaultQty;
+    if (!metered) return meta.defaultQty;
 
     const rate = scopes.find((scope) => scope.unit === unit)?.amount;
-    if (!rate || !book.startPrice) return config.defaultQty;
+    if (!rate || !book.startPrice) return meta.defaultQty;
 
-    let best = config.defaultQty;
+    let best = meta.defaultQty;
     let bestGap = Infinity;
-    for (const preset of config.presets) {
+    for (const preset of meta.presets) {
       const gap = Math.abs(preset.value * rate - book.startPrice);
       if (gap < bestGap) {
         bestGap = gap;
@@ -273,18 +214,17 @@ export function buildServiceEstimator({ slug, title, warranty }: ServiceEstimato
     access: "easy",
     urgency: "standard"
   };
-  for (const unit of unitsUsed) defaults[qtyFieldId(unit)] = openingQty.get(unit) ?? UNITS[unit].defaultQty;
+  for (const unit of unitsUsed) defaults[qtyFieldId(unit)] = openingQty.get(unit) ?? UNIT_META[unit].defaultQty;
 
   function quantityFor(answers: Answers, scope: PublishedScope): number {
     const raw = Number(answers[qtyFieldId(scope.unit)]);
-    const config = UNITS[scope.unit];
-    if (!Number.isFinite(raw)) return openingQty.get(scope.unit) ?? config.defaultQty;
-    return clamp(Math.round(raw), config.min, config.max);
+    const meta = UNIT_META[scope.unit];
+    if (!Number.isFinite(raw)) return openingQty.get(scope.unit) ?? meta.defaultQty;
+    return clamp(Math.round(raw), meta.min, meta.max);
   }
 
   function compute(answers: Answers): EstimateResult {
     const scope = scopeByValue.get(String(answers.scope)) ?? defaultScope;
-    const config = UNITS[scope.unit];
     const quantity = quantityFor(answers, scope);
 
     const condition = find(CONDITION, answers.condition);
@@ -309,75 +249,81 @@ export function buildServiceEstimator({ slug, title, warranty }: ServiceEstimato
     const materials = roundMoney(price * materialShare(scope), 5);
     const labour = price - materials;
 
-    const unitNoun = quantity === 1 ? config.noun : config.plural;
+    const noun = unitNoun(scope.unit, quantity);
+
+    const conditionText = modifierText(t, "condition", condition.value);
+    const accessText = modifierText(t, "access", access.value);
+    const urgencyText = modifierText(t, "urgency", urgency.value);
 
     const breakdown: { label: string; value: string; note?: string }[] = [
       {
-        label: "Published rate",
+        label: t("estimator.breakdown.publishedRate"),
         value: scope.published,
-        note: `Taken directly from the ${title} price list on this website.`
+        note: t("estimator.breakdown.publishedRateNote", { title })
       },
       {
-        label: "Quantity",
-        value: `${quantity.toLocaleString()} ${unitNoun}`,
-        note: `${scope.published} × ${quantity.toLocaleString()} = ${formatMYR(base)} before any adjustment.`
+        label: t("estimator.breakdown.quantity"),
+        value: `${quantity.toLocaleString()} ${noun}`,
+        note: t("estimator.breakdown.quantityNote", {
+          published: scope.published,
+          qty: quantity.toLocaleString(),
+          base: formatMYR(base)
+        })
       }
     ];
 
     if (condition.factor !== 1) {
       breakdown.push({
-        label: `Condition — ${condition.label}`,
+        label: t("estimator.breakdown.conditionLabel", { label: conditionText.label }),
         value: `${condition.factor > 1 ? "+" : "−"}${Math.round(Math.abs(condition.factor - 1) * 100)}%`,
-        note: condition.hint
+        note: conditionText.hint
       });
     }
     if (access.factor !== 1) {
       breakdown.push({
-        label: `Access — ${access.label}`,
+        label: t("estimator.breakdown.accessLabel", { label: accessText.label }),
         value: `+${Math.round((access.factor - 1) * 100)}%`,
-        note: access.hint
+        note: accessText.hint
       });
     }
     if (urgency.factor !== 1) {
       breakdown.push({
-        label: `Timing — ${urgency.label}`,
+        label: t("estimator.breakdown.timingLabel", { label: urgencyText.label }),
         value: `+${Math.round((urgency.factor - 1) * 100)}%`,
-        note: urgency.hint
+        note: urgencyText.hint
       });
     }
     if (minimumApplied) {
       breakdown.push({
-        label: "Published minimum applied",
+        label: t("estimator.breakdown.minimumApplied"),
         value: formatMYR(book.startPrice),
-        note: `${title} starts from ${formatMYR(book.startPrice)}, so smaller jobs are charged at that published minimum.`
+        note: t("estimator.breakdown.minimumAppliedNote", { title, min: formatMYR(book.startPrice) })
       });
     }
 
     const assumptions = [
-      "Quantities are the ones you entered — the final quotation follows the measured scope on site.",
-      `Covered by our ${warranty.toLowerCase()}.`,
-      "Price confirmed in writing before any work starts; extra scope is always approved by you first."
+      t("estimator.assumptions.quantities"),
+      t("estimator.assumptions.warranty", { warranty }),
+      t("estimator.assumptions.confirmed")
     ];
     if (book.quoteOnly.length) {
       assumptions.push(
-        `${book.quoteOnly.map((item) => item.name).join(" and ")} ${
-          book.quoteOnly.length === 1 ? "is" : "are"
-        } quoted after a site visit rather than estimated here.`
+        t("estimator.assumptions.quoteOnly", { names: book.quoteOnly.map((item) => item.name).join(", ") })
       );
     }
 
     const addOns = [
       {
         id: "site-visit",
-        label: "Free on-site measurement before booking",
+        label: t("estimator.addons.siteVisitLabel"),
         price: 0,
-        note: "Confirms the exact scope so the final quotation matches the job."
+        note: optional(t, "estimator.addons.siteVisitNote")
       },
       {
         id: "post-clean",
-        label: "Post-work cleaning",
+        label: t("estimator.addons.postCleanLabel"),
         price: roundMoney(RATES.painting.cleaning),
-        note: "Full clear-out and wipe-down after the job."
+        note: optional(t, "estimator.addons.postCleanNote")
       }
     ].filter((addOn) => addOn.price > 0);
 
@@ -387,16 +333,16 @@ export function buildServiceEstimator({ slug, title, warranty }: ServiceEstimato
       high,
       labour,
       materials,
-      duration: durationFor(price),
+      duration: t(durationKey(price)),
       recommendedService: scope.name,
       packageName: title,
       serviceHref: `/services/${slug}`,
       breakdown,
       addOns,
       related: [
-        { label: title, href: `/services/${slug}`, desc: "Full scope, process and warranty" },
-        { label: "2026 Price Guide", href: "/pricing", desc: "Every published rate in one place" },
-        { label: "All free estimators", href: "/tools", desc: "Estimate another job instantly" }
+        { label: title, href: `/services/${slug}`, desc: t("estimator.related.serviceDesc") },
+        { label: t("estimator.related.priceGuide"), href: "/pricing", desc: t("estimator.related.priceGuideDesc") },
+        { label: t("estimator.related.allEstimators"), href: "/tools", desc: t("estimator.related.allEstimatorsDesc") }
       ],
       assumptions
     };
@@ -406,20 +352,20 @@ export function buildServiceEstimator({ slug, title, warranty }: ServiceEstimato
     slug: `${slug}-estimator`,
     name: `${title} Estimator`,
     serviceSlug: slug,
-    resultLabel: "Estimated cost",
+    resultLabel: t("estimator.result.estimatedTotal"),
     defaults,
     compute,
     steps: [
       {
         id: "scope",
-        title: "What do you need?",
-        subtitle: "Every option below is priced from this service's published rates.",
+        title: t("estimator.steps.scopeTitle"),
+        subtitle: t("estimator.steps.scopeSub"),
         icon: "🎯",
         fields: [
           {
             id: "scope",
             kind: scopes.length > 4 ? "select" : "cards",
-            label: "Type of work",
+            label: t("estimator.steps.scopeFieldLabel"),
             required: true,
             columns: 1,
             choices: scopes.map((scope, index) => ({
@@ -434,57 +380,57 @@ export function buildServiceEstimator({ slug, title, warranty }: ServiceEstimato
       },
       {
         id: "size",
-        title: "How much of it?",
-        subtitle: "Tap the closest option — we confirm the exact figure on site.",
+        title: t("estimator.steps.sizeTitle"),
+        subtitle: t("estimator.steps.sizeSub"),
         icon: "📐",
         fields: unitsUsed.map((unit) => ({
           id: qtyFieldId(unit),
           kind: "cards" as const,
-          label: UNITS[unit].label,
+          label: t(`estimator.units.${unit}.label`),
           required: true,
           columns: 1 as const,
           // Only the unit matching the currently-selected scope is shown, so
           // the customer never sees "how many panels" for a per-sq-ft scope.
           visible: (answers: Answers) =>
             (scopeByValue.get(String(answers.scope)) ?? defaultScope).unit === unit,
-          choices: UNITS[unit].presets.map((preset) => ({
+          choices: UNIT_META[unit].presets.map((preset) => ({
             value: String(preset.value),
-            label: preset.label,
-            hint: preset.hint,
-            popular: preset.value === (openingQty.get(unit) ?? UNITS[unit].defaultQty)
+            label: t(`estimator.units.${unit}.presets.${preset.value}.label`),
+            hint: optional(t, `estimator.units.${unit}.presets.${preset.value}.hint`),
+            popular: preset.value === (openingQty.get(unit) ?? UNIT_META[unit].defaultQty)
           }))
         }))
       },
       {
         id: "details",
         advanced: true,
-        title: "Condition, access and timing",
-        subtitle: "Skip this and we price a normal job, ground-floor access, standard scheduling.",
+        title: t("estimator.steps.detailsTitle"),
+        subtitle: t("estimator.steps.detailsSub"),
         icon: "🎚️",
         fields: [
           {
             id: "condition",
             kind: "cards",
-            label: "What condition is it in?",
+            label: t("estimator.steps.conditionQuestion"),
             required: true,
             columns: 1,
-            choices: toChoices(CONDITION, "normal")
+            choices: modifierChoices(t, "condition", CONDITION, "normal")
           },
           {
             id: "access",
             kind: "cards",
-            label: "How easy is access?",
+            label: t("estimator.steps.accessQuestion"),
             required: true,
             columns: 1,
-            choices: toChoices(ACCESS, "easy")
+            choices: modifierChoices(t, "access", ACCESS, "easy")
           },
           {
             id: "urgency",
             kind: "cards",
-            label: "When do you need it?",
+            label: t("estimator.steps.urgencyQuestion"),
             required: true,
             columns: 1,
-            choices: toChoices(URGENCY, "standard")
+            choices: modifierChoices(t, "urgency", URGENCY, "standard")
           }
         ]
       }

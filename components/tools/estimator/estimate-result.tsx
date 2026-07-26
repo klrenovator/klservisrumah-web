@@ -22,14 +22,16 @@ import {
 } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { trackEvent, trackPhoneCall, trackWhatsAppClick } from "@/lib/analytics";
-import { ESTIMATE_DISCLAIMER, formatMYR } from "@/lib/estimator/format";
+import { englishEstimatorT } from "@/lib/estimator/chrome-i18n";
+import { formatMYR } from "@/lib/estimator/format";
 import type { EstimateResult, Severity } from "@/lib/estimator/types";
+import type { Translator } from "@/lib/i18n";
 
-const severityStyles: Record<Severity, { label: string; className: string; icon: React.ReactNode }> = {
-  routine: { label: "Routine", className: "bg-emerald-50 text-emerald-700 border-emerald-200", icon: <ShieldCheck className="h-4 w-4" /> },
-  soon: { label: "Book this week", className: "bg-amber-50 text-amber-700 border-amber-200", icon: <CalendarClock className="h-4 w-4" /> },
-  urgent: { label: "Urgent — 24 to 48 hours", className: "bg-orange-50 text-orange-700 border-orange-200", icon: <AlertTriangle className="h-4 w-4" /> },
-  emergency: { label: "Emergency — act now", className: "bg-rose-50 text-rose-700 border-rose-200", icon: <AlertTriangle className="h-4 w-4" /> }
+const severityStyles: Record<Severity, { key: string; className: string; icon: React.ReactNode }> = {
+  routine: { key: "estimator.severity.routine", className: "bg-emerald-50 text-emerald-700 border-emerald-200", icon: <ShieldCheck className="h-4 w-4" /> },
+  soon: { key: "estimator.severity.soon", className: "bg-amber-50 text-amber-700 border-amber-200", icon: <CalendarClock className="h-4 w-4" /> },
+  urgent: { key: "estimator.severity.urgent", className: "bg-orange-50 text-orange-700 border-orange-200", icon: <AlertTriangle className="h-4 w-4" /> },
+  emergency: { key: "estimator.severity.emergency", className: "bg-rose-50 text-rose-700 border-rose-200", icon: <AlertTriangle className="h-4 w-4" /> }
 };
 
 export function EstimateResultPanel({
@@ -37,14 +39,18 @@ export function EstimateResultPanel({
   toolName,
   summaryLines,
   onReset,
-  onEdit
+  onEdit,
+  translator
 }: {
   result: EstimateResult;
   toolName: string;
   summaryLines: string[];
   onReset: () => void;
   onEdit: () => void;
+  /** Locale-aware translator. Falls back to English when the caller (the five deep tools) does not supply one. */
+  translator?: Translator;
 }) {
+  const t = translator ?? englishEstimatorT;
   const [selectedAddOns, setSelectedAddOns] = useState<string[]>(() =>
     result.addOns.filter((addOn) => addOn.recommended).map((addOn) => addOn.id)
   );
@@ -65,29 +71,36 @@ export function EstimateResultPanel({
   const whatsappMessage = useMemo(() => {
     const chosen = result.addOns.filter((addOn) => selectedAddOns.includes(addOn.id));
     return [
-      `Hi KL Servis Rumah, I used your ${toolName} and would like to book.`,
+      t("estimator.whatsapp.greeting", { tool: toolName }),
       "",
-      "MY ANSWERS",
+      t("estimator.whatsapp.myAnswers"),
       ...summaryLines.map((line) => `• ${line}`),
       "",
-      "ESTIMATE FROM YOUR WEBSITE",
-      `• Recommended service: ${result.recommendedService}`,
-      `• Package: ${result.packageName}`,
-      `• Estimated cost: ${formatMYR(result.price)}`,
-      `• Estimated range: ${formatMYR(result.low)} – ${formatMYR(result.high)}`,
-      `• Estimated time: ${result.duration}`,
-      chosen.length ? `• Add-ons: ${chosen.map((addOn) => `${addOn.label} (${formatMYR(addOn.price)})`).join(", ")}` : "",
-      chosen.length ? `• Estimated total with add-ons: ${formatMYR(grandTotal)}` : "",
+      t("estimator.whatsapp.estimateSection"),
+      `• ${t("estimator.whatsapp.recommended", { value: result.recommendedService })}`,
+      `• ${t("estimator.whatsapp.package", { value: result.packageName })}`,
+      `• ${t("estimator.whatsapp.estimatedCost", { value: formatMYR(result.price) })}`,
+      `• ${t("estimator.whatsapp.range", { low: formatMYR(result.low), high: formatMYR(result.high) })}`,
+      `• ${t("estimator.whatsapp.time", { value: result.duration })}`,
+      chosen.length
+        ? `• ${t("estimator.whatsapp.addons", {
+            value: chosen.map((addOn) => `${addOn.label} (${formatMYR(addOn.price)})`).join(", ")
+          })}`
+        : "",
+      chosen.length ? `• ${t("estimator.whatsapp.totalAddons", { value: formatMYR(grandTotal) })}` : "",
       "",
-      "Please confirm availability and the final quotation after inspection."
+      t("estimator.whatsapp.closing")
     ]
       .filter(Boolean)
       .join("\n");
-  }, [grandTotal, result, selectedAddOns, summaryLines, toolName]);
+  }, [grandTotal, result, selectedAddOns, summaryLines, t, toolName]);
 
   const whatsappHref = `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(whatsappMessage)}`;
   const siteVisitHref = `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(
-    `Hi KL Servis Rumah, I would like to request a free site visit.\n\n${summaryLines.map((line) => `• ${line}`).join("\n")}\n\nWebsite estimate: ${formatMYR(result.price)} (${formatMYR(result.low)} – ${formatMYR(result.high)}) for ${result.recommendedService}.`
+    `${t("estimator.whatsapp.siteVisitGreeting")}\n\n${summaryLines.map((line) => `• ${line}`).join("\n")}\n\n${t(
+      "estimator.whatsapp.siteVisitLine",
+      { price: formatMYR(result.price), low: formatMYR(result.low), high: formatMYR(result.high), service: result.recommendedService }
+    )}`
   )}`;
 
   const severity = result.severity ? severityStyles[result.severity] : null;
@@ -100,22 +113,28 @@ export function EstimateResultPanel({
           <div className="absolute -right-16 -top-16 h-56 w-56 rounded-full bg-white/10 blur-2xl" aria-hidden="true" />
           <div className="relative">
             <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1.5 text-[11px] font-black uppercase tracking-widest backdrop-blur">
-              <Sparkles className="h-3.5 w-3.5" /> Your instant estimate
+              <Sparkles className="h-3.5 w-3.5" /> {t("estimator.result.instantEstimate")}
             </span>
 
-            <p className="mt-5 text-sm font-bold uppercase tracking-widest text-sky-100">Estimated cost</p>
+            <p className="mt-5 text-sm font-bold uppercase tracking-widest text-sky-100">
+              {t("estimator.result.estimatedTotal")}
+            </p>
             <p className="mt-1 text-5xl font-black leading-none tracking-tight sm:text-6xl">
               {formatMYR(grandTotal)}
             </p>
+            {/* Price clarity: the total is explicitly labelled as inclusive of labour + materials. */}
+            <p className="mt-2 text-xs font-black uppercase tracking-widest text-sky-200/90">
+              {t("estimator.result.totalInclusive")}
+            </p>
             <p className="mt-3 text-sm font-bold text-sky-50">
-              Estimated range {formatMYR(grandLow)} – {formatMYR(grandHigh)}
+              {t("estimator.result.rangeLabel", { low: formatMYR(grandLow), high: formatMYR(grandHigh) })}
             </p>
 
             <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-              <Metric icon={<Hammer className="h-4 w-4" />} label="Labour" value={formatMYR(result.labour)} />
-              <Metric icon={<Package className="h-4 w-4" />} label="Materials" value={formatMYR(result.materials)} />
-              <Metric icon={<Clock className="h-4 w-4" />} label="Time needed" value={result.duration} />
-              <Metric icon={<BadgeCheck className="h-4 w-4" />} label="Package" value={result.packageName} />
+              <Metric icon={<Hammer className="h-4 w-4" />} label={t("estimator.result.metricLabour")} value={formatMYR(result.labour)} />
+              <Metric icon={<Package className="h-4 w-4" />} label={t("estimator.result.metricMaterials")} value={formatMYR(result.materials)} />
+              <Metric icon={<Clock className="h-4 w-4" />} label={t("estimator.result.metricTime")} value={result.duration} />
+              <Metric icon={<BadgeCheck className="h-4 w-4" />} label={t("estimator.result.metricPackage")} value={result.packageName} />
             </div>
           </div>
         </div>
@@ -124,17 +143,19 @@ export function EstimateResultPanel({
         <div className="border-b border-amber-100 bg-amber-50 px-6 py-4 sm:px-8">
           <p className="flex gap-2.5 text-xs font-bold leading-relaxed text-amber-900">
             <Info className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
-            <span>{ESTIMATE_DISCLAIMER}</span>
+            <span>{t("estimator.common.disclaimer")}</span>
           </p>
         </div>
 
         {/* Recommended service + CTAs */}
         <div className="p-6 sm:p-8">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="text-xs font-black uppercase tracking-widest text-[#0EA5E9]">Recommended service</span>
+            <span className="text-xs font-black uppercase tracking-widest text-[#0EA5E9]">
+              {t("estimator.result.recommendedService")}
+            </span>
             {severity ? (
               <span className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[11px] font-black uppercase tracking-wide ${severity.className}`}>
-                {severity.icon} {severity.label}
+                {severity.icon} {t(severity.key)}
               </span>
             ) : null}
           </div>
@@ -146,7 +167,7 @@ export function EstimateResultPanel({
             href={result.serviceHref}
             className="mt-3 inline-flex items-center gap-1.5 text-sm font-black text-[#0EA5E9] hover:text-[#075985]"
           >
-            View full service details <ArrowRight className="h-4 w-4" />
+            {t("estimator.result.viewService")} <ArrowRight className="h-4 w-4" />
           </Link>
 
           {result.quoteOnly && result.quoteOnlyReason ? (
@@ -166,7 +187,7 @@ export function EstimateResultPanel({
               }}
               className="inline-flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-[#22C55E] px-5 py-3.5 text-sm font-black text-white shadow-lg shadow-emerald-500/25 transition hover:bg-[#16A34A]"
             >
-              <MessageSquare className="h-4 w-4" /> Book Now
+              <MessageSquare className="h-4 w-4" /> {t("estimator.result.bookNow")}
             </a>
             <a
               href={whatsappHref}
@@ -175,7 +196,7 @@ export function EstimateResultPanel({
               onClick={() => trackWhatsAppClick({ service: result.recommendedService, page: `${toolName}_whatsapp` })}
               className="inline-flex min-h-14 items-center justify-center gap-2 rounded-2xl border-2 border-emerald-200 bg-white px-5 py-3.5 text-sm font-black text-emerald-700 transition hover:border-emerald-400 hover:bg-emerald-50"
             >
-              <MessageSquare className="h-4 w-4" /> Send on WhatsApp
+              <MessageSquare className="h-4 w-4" /> {t("estimator.result.sendWhatsapp")}
             </a>
             <a
               href={siteVisitHref}
@@ -184,7 +205,7 @@ export function EstimateResultPanel({
               onClick={() => trackEvent({ action: "estimator_site_visit", category: "lead", label: toolName })}
               className="inline-flex min-h-14 items-center justify-center gap-2 rounded-2xl border-2 border-sky-200 bg-white px-5 py-3.5 text-sm font-black text-[#075985] transition hover:border-[#0EA5E9] hover:bg-sky-50"
             >
-              <ClipboardList className="h-4 w-4" /> Request Site Visit
+              <ClipboardList className="h-4 w-4" /> {t("estimator.result.requestSiteVisit")}
             </a>
           </div>
 
@@ -194,21 +215,21 @@ export function EstimateResultPanel({
               onClick={() => trackPhoneCall({ page: toolName })}
               className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-bold text-[#075985] transition hover:border-sky-300 hover:bg-sky-50"
             >
-              <Phone className="h-4 w-4 text-[#0EA5E9]" /> Call {siteConfig.phoneDisplay}
+              <Phone className="h-4 w-4 text-[#0EA5E9]" /> {t("estimator.result.callLabel", { phone: siteConfig.phoneDisplay })}
             </a>
             <button
               type="button"
               onClick={onEdit}
               className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-bold text-[#075985] transition hover:border-sky-300 hover:bg-sky-50"
             >
-              <Wrench className="h-4 w-4 text-[#0EA5E9]" /> Change my answers
+              <Wrench className="h-4 w-4 text-[#0EA5E9]" /> {t("estimator.result.changeAnswers")}
             </button>
             <button
               type="button"
               onClick={onReset}
               className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-bold text-slate-600 transition hover:border-slate-300 hover:bg-slate-50"
             >
-              <RotateCcw className="h-4 w-4" /> Start over
+              <RotateCcw className="h-4 w-4" /> {t("estimator.common.startOver")}
             </button>
           </div>
         </div>
@@ -217,7 +238,7 @@ export function EstimateResultPanel({
       {/* ── Diagnostic findings ───────────────────────────────────────── */}
       {result.findings?.length ? (
         <section className="rounded-3xl border border-slate-200 bg-white p-6 sm:p-7">
-          <h3 className="text-lg font-black text-[#075985]">Likely causes & findings</h3>
+          <h3 className="text-lg font-black text-[#075985]">{t("estimator.result.findingsTitle")}</h3>
           <ul className="mt-4 space-y-3">
             {result.findings.map((finding) => (
               <li key={finding.title} className="rounded-2xl border border-slate-100 bg-slate-50/70 p-4">
@@ -233,8 +254,8 @@ export function EstimateResultPanel({
       {result.addOns.length ? (
         <section className="rounded-3xl border border-slate-200 bg-white p-6 sm:p-7">
           <div className="flex flex-wrap items-baseline justify-between gap-2">
-            <h3 className="text-lg font-black text-[#075985]">Suggested add-ons</h3>
-            <span className="text-xs font-bold text-slate-500">Tap to add — the total updates instantly</span>
+            <h3 className="text-lg font-black text-[#075985]">{t("estimator.result.addonsTitle")}</h3>
+            <span className="text-xs font-bold text-slate-500">{t("estimator.result.addonsHint")}</span>
           </div>
           <div className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
             {result.addOns.map((addOn) => {
@@ -271,7 +292,7 @@ export function EstimateResultPanel({
                     ) : null}
                     {addOn.recommended ? (
                       <span className="mt-2 inline-block rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-black uppercase tracking-wide text-emerald-700">
-                        Recommended for you
+                        {t("estimator.result.recommendedForYou")}
                       </span>
                     ) : null}
                   </span>
@@ -281,7 +302,7 @@ export function EstimateResultPanel({
           </div>
           {addOnTotal > 0 ? (
             <p className="mt-4 rounded-2xl bg-sky-50 p-4 text-sm font-black text-[#075985]">
-              Add-ons selected: {formatMYR(addOnTotal)} · New estimated total {formatMYR(grandTotal)}
+              {t("estimator.result.addonsSelected", { amount: formatMYR(addOnTotal), total: formatMYR(grandTotal) })}
             </p>
           ) : null}
         </section>
@@ -296,9 +317,9 @@ export function EstimateResultPanel({
           className="flex w-full items-center justify-between gap-3 p-6 text-left sm:p-7"
         >
           <span>
-            <span className="block text-lg font-black text-[#075985]">How we calculated this</span>
+            <span className="block text-lg font-black text-[#075985]">{t("estimator.result.breakdownTitle")}</span>
             <span className="mt-1 block text-xs font-semibold text-slate-500">
-              Every rate comes from the price list published on this website
+              {t("estimator.result.breakdownSub")}
             </span>
           </span>
           <ChevronDown
@@ -321,7 +342,9 @@ export function EstimateResultPanel({
               ))}
             </ul>
 
-            <h4 className="mt-6 text-sm font-black uppercase tracking-wider text-[#075985]">What we assumed</h4>
+            <h4 className="mt-6 text-sm font-black uppercase tracking-wider text-[#075985]">
+              {t("estimator.result.whatWeAssumed")}
+            </h4>
             <ul className="mt-2 space-y-2">
               {result.assumptions.map((assumption) => (
                 <li key={assumption} className="flex gap-2 text-xs font-semibold leading-relaxed text-slate-600">
@@ -331,7 +354,7 @@ export function EstimateResultPanel({
               ))}
             </ul>
             <p className="mt-4 rounded-2xl bg-slate-50 p-4 text-xs font-bold leading-relaxed text-slate-600">
-              {ESTIMATE_DISCLAIMER}
+              {t("estimator.common.disclaimer")}
             </p>
           </div>
         ) : null}
@@ -339,7 +362,7 @@ export function EstimateResultPanel({
 
       {/* ── Cross-sell & resources ────────────────────────────────────── */}
       <section className="rounded-3xl border border-slate-200 bg-white p-6 sm:p-7">
-        <h3 className="text-lg font-black text-[#075985]">Recommended next steps</h3>
+        <h3 className="text-lg font-black text-[#075985]">{t("estimator.result.nextStepsTitle")}</h3>
         <div className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
           {result.related.map((link) => (
             <Link
@@ -360,7 +383,9 @@ export function EstimateResultPanel({
 
         {result.maintenance?.length ? (
           <>
-            <h4 className="mt-6 text-sm font-black uppercase tracking-wider text-[#075985]">Maintenance tips</h4>
+            <h4 className="mt-6 text-sm font-black uppercase tracking-wider text-[#075985]">
+              {t("estimator.result.maintenanceTitle")}
+            </h4>
             <ul className="mt-2 space-y-2">
               {result.maintenance.map((tip) => (
                 <li key={tip} className="flex gap-2 text-xs font-semibold leading-relaxed text-slate-600">
@@ -374,7 +399,9 @@ export function EstimateResultPanel({
 
         {result.articles?.length ? (
           <>
-            <h4 className="mt-6 text-sm font-black uppercase tracking-wider text-[#075985]">Related reading</h4>
+            <h4 className="mt-6 text-sm font-black uppercase tracking-wider text-[#075985]">
+              {t("estimator.result.relatedReading")}
+            </h4>
             <div className="mt-2 flex flex-wrap gap-2">
               {result.articles.map((article) => (
                 <Link

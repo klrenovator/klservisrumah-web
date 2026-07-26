@@ -3,16 +3,20 @@
 import React from "react";
 import { Check } from "lucide-react";
 import type { Answers, Field } from "@/lib/estimator/types";
+import { englishEstimatorT } from "@/lib/estimator/chrome-i18n";
+import type { Translator } from "@/lib/i18n";
 
 /** Shared control renderer for the estimator wizard. */
 export function FieldControl({
   field,
   answers,
-  onChange
+  onChange,
+  translator
 }: {
   field: Field;
   answers: Answers;
   onChange: (id: string, value: Answers[string]) => void;
+  translator?: Translator;
 }) {
   const labelId = `${field.id}-label`;
 
@@ -26,7 +30,7 @@ export function FieldControl({
         <p className="mt-1 text-xs font-semibold leading-relaxed text-slate-500">{field.help}</p>
       ) : null}
       <div className="mt-3">
-        <Control field={field} answers={answers} onChange={onChange} labelId={labelId} />
+        <Control field={field} answers={answers} onChange={onChange} labelId={labelId} t={translator ?? englishEstimatorT} />
       </div>
     </fieldset>
   );
@@ -36,12 +40,14 @@ function Control({
   field,
   answers,
   onChange,
-  labelId
+  labelId,
+  t
 }: {
   field: Field;
   answers: Answers;
   onChange: (id: string, value: Answers[string]) => void;
   labelId: string;
+  t: Translator;
 }) {
   switch (field.kind) {
     case "cards": {
@@ -113,7 +119,7 @@ function Control({
                 </span>
                 {choice.popular && !active ? (
                   <span className="shrink-0 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-black uppercase tracking-wide text-amber-700">
-                    Popular
+                    {t("estimator.common.popular")}
                   </span>
                 ) : null}
                 {active ? (
@@ -243,7 +249,7 @@ function Control({
           <div className="mt-3 flex gap-2">
             <button
               type="button"
-              aria-label={`Decrease ${field.label}`}
+              aria-label={`${t("estimator.common.decrease")} ${field.label}`}
               onClick={() => onChange(field.id, Math.max(field.min, value - (field.step ?? 1)))}
               className="flex h-10 flex-1 items-center justify-center rounded-xl border-2 border-slate-200 bg-white text-lg font-black text-[#075985] transition hover:border-sky-300 hover:bg-sky-50"
             >
@@ -251,7 +257,7 @@ function Control({
             </button>
             <button
               type="button"
-              aria-label={`Increase ${field.label}`}
+              aria-label={`${t("estimator.common.increase")} ${field.label}`}
               onClick={() => onChange(field.id, Math.min(field.max, value + (field.step ?? 1)))}
               className="flex h-10 flex-1 items-center justify-center rounded-xl border-2 border-slate-200 bg-white text-lg font-black text-[#075985] transition hover:border-sky-300 hover:bg-sky-50"
             >
@@ -268,7 +274,7 @@ function Control({
         <div className="flex items-center gap-2 rounded-2xl border-2 border-slate-200 bg-white p-2">
           <button
             type="button"
-            aria-label={`Decrease ${field.label}`}
+            aria-label={`${t("estimator.common.decrease")} ${field.label}`}
             onClick={() => onChange(field.id, Math.max(field.min, value - (field.step ?? 1)))}
             className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-xl font-black text-[#075985] transition hover:bg-sky-100"
           >
@@ -291,7 +297,7 @@ function Control({
           ) : null}
           <button
             type="button"
-            aria-label={`Increase ${field.label}`}
+            aria-label={`${t("estimator.common.increase")} ${field.label}`}
             onClick={() => onChange(field.id, Math.min(field.max, value + (field.step ?? 1)))}
             className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-xl font-black text-[#075985] transition hover:bg-sky-100"
           >
@@ -315,7 +321,7 @@ function Control({
           }`}
         >
           <span className="text-sm font-extrabold text-[#075985]">
-            {active ? (field.onLabel ?? "Yes") : (field.offLabel ?? "No")}
+            {active ? (field.onLabel ?? t("estimator.common.yes")) : (field.offLabel ?? t("estimator.common.no"))}
           </span>
           <span
             aria-hidden="true"

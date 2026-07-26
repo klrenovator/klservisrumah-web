@@ -676,5 +676,235 @@
     "openTool": "Buka {name} penuh",
     "dedicatedIntro": "Kami mempunyai alat anggaran khusus untuk perkhidmatan ini dengan lebih banyak butiran — keadaan permukaan, bahan, akses dan tambahan semuanya dimodelkan.",
     "disclaimerShort": "Anggaran sebut harga. Harga akhir disahkan selepas pemeriksaan di tapak."
+  },
+  "estimator": {
+    "common": {
+      "disclaimer": "Ini adalah sebut harga anggaran berdasarkan maklumat yang diberikan. Harga akhir mungkin berubah selepas pemeriksaan di tapak bergantung kepada keadaan sebenar tapak.",
+      "priceInclusive": "Jumlah termasuk upah & bahan",
+      "inclusiveNote": "Merangkumi upah dan bahan",
+      "popular": "Popular",
+      "yes": "Ya",
+      "no": "Tidak",
+      "decrease": "Kurangkan",
+      "increase": "Tambah",
+      "startOver": "Mula semula"
+    },
+    "form": {
+      "liveEstimate": "Anggaran anda sekarang",
+      "liveRange": "{low} – {high} · {duration}",
+      "seeBreakdown": "Lihat pecahan penuh",
+      "answerMore": "Jawab {n} lagi",
+      "fineTuneTitle": "Pilihan — laras harga",
+      "fineTuneSub": "{titles}. Langkau bahagian ini dan kami gunakan jawapan paling biasa.",
+      "progressNudge": "{answered} daripada {total} dijawab. Ketik di sini untuk selesaikan “{field}” dan kunci anggaran anda.",
+      "seeFullEstimate": "Lihat anggaran penuh saya",
+      "showLeft": "Tunjukkan yang tinggal",
+      "srAnnouncement": "Anggaran semasa {price}, julat {low} hingga {high}. {status}",
+      "srAllAnswered": "Semua soalan dijawab.",
+      "srQuestionsLeft": "{n} soalan lagi."
+    },
+    "result": {
+      "instantEstimate": "Anggaran segera anda",
+      "estimatedTotal": "Jumlah anggaran",
+      "totalInclusive": "termasuk upah & bahan",
+      "rangeLabel": "Julat anggaran {low} – {high}",
+      "metricLabour": "Upah",
+      "metricMaterials": "Bahan",
+      "metricTime": "Masa diperlukan",
+      "metricPackage": "Pakej",
+      "recommendedService": "Perkhidmatan disyorkan",
+      "viewService": "Lihat butiran perkhidmatan penuh",
+      "bookNow": "Tempah Sekarang",
+      "sendWhatsapp": "Hantar di WhatsApp",
+      "requestSiteVisit": "Minta Lawatan Tapak",
+      "callLabel": "Hubungi {phone}",
+      "changeAnswers": "Tukar jawapan saya",
+      "findingsTitle": "Kemungkinan punca & penemuan",
+      "addonsTitle": "Tambahan dicadangkan",
+      "addonsHint": "Ketik untuk tambah — jumlah dikemas kini serta-merta",
+      "recommendedForYou": "Disyorkan untuk anda",
+      "addonsSelected": "Tambahan dipilih: {amount} · Jumlah anggaran baharu {total}",
+      "breakdownTitle": "Cara kami mengira ini",
+      "breakdownSub": "Setiap kadar datang daripada senarai harga yang tersiar di laman web ini",
+      "whatWeAssumed": "Apa yang kami anggapkan",
+      "nextStepsTitle": "Langkah seterusnya disyorkan",
+      "maintenanceTitle": "Tip penyenggaraan",
+      "relatedReading": "Bacaan berkaitan"
+    },
+    "severity": {
+      "routine": "Biasa",
+      "soon": "Tempah minggu ini",
+      "urgent": "Mendesak — 24 hingga 48 jam",
+      "emergency": "Kecemasan — bertindak sekarang"
+    },
+    "whatsapp": {
+      "greeting": "Salam KL Servis Rumah, saya gunakan {tool} anda dan ingin menempah.",
+      "myAnswers": "JAWAPAN SAYA",
+      "estimateSection": "ANGGARAN DARIPADA LAMAN WEB ANDA",
+      "recommended": "Perkhidmatan disyorkan: {value}",
+      "package": "Pakej: {value}",
+      "estimatedCost": "Anggaran kos: {value}",
+      "range": "Julat anggaran: {low} – {high}",
+      "time": "Anggaran masa: {value}",
+      "addons": "Tambahan: {value}",
+      "totalAddons": "Jumlah anggaran dengan tambahan: {value}",
+      "closing": "Sila sahkan ketersediaan dan sebut harga akhir selepas pemeriksaan.",
+      "siteVisitGreeting": "Salam KL Servis Rumah, saya ingin meminta lawatan tapak percuma.",
+      "siteVisitLine": "Anggaran laman web: {price} ({low} – {high}) bagi {service}."
+    },
+    "steps": {
+      "scopeTitle": "Apa yang anda perlukan?",
+      "scopeSub": "Setiap pilihan di bawah diharga daripada kadar tersiar perkhidmatan ini.",
+      "scopeFieldLabel": "Jenis kerja",
+      "sizeTitle": "Berapa banyak?",
+      "sizeSub": "Ketik pilihan terdekat — kami sahkan angka tepat di tapak.",
+      "detailsTitle": "Keadaan, akses dan masa",
+      "detailsSub": "Langkau ini dan kami hargakan kerja biasa, akses tingkat bawah, penjadualan standard.",
+      "conditionQuestion": "Apakah keadaannya?",
+      "accessQuestion": "Se mudah mana aksesnya?",
+      "urgencyQuestion": "Bila anda perlukannya?"
+    },
+    "breakdown": {
+      "publishedRate": "Kadar tersiar",
+      "publishedRateNote": "Diambil terus daripada senarai harga {title} di laman web ini.",
+      "quantity": "Kuantiti",
+      "quantityNote": "{published} × {qty} = {base} sebelum apa-apa pelarasan.",
+      "conditionLabel": "Keadaan — {label}",
+      "accessLabel": "Akses — {label}",
+      "timingLabel": "Masa — {label}",
+      "minimumApplied": "Minimum tersiar dikenakan",
+      "minimumAppliedNote": "{title} bermula daripada {min}, jadi kerja lebih kecil dikenakan pada minimum tersiar itu."
+    },
+    "assumptions": {
+      "quantities": "Kuantiti ialah yang anda masukkan — sebut harga akhir mengikut skop diukur di tapak.",
+      "warranty": "Dilindungi {warranty} kami.",
+      "confirmed": "Harga disahkan secara bertulis sebelum kerja bermula; skop tambahan sentiasa diluluskan oleh anda dahulu.",
+      "quoteOnly": "Disebut selepas lawatan tapak dan bukan dianggarkan di sini: {names}."
+    },
+    "addons": {
+      "siteVisitLabel": "Pengukuran di tapak percuma sebelum menempah",
+      "siteVisitNote": "Mengesahkan skop tepat supaya sebut harga akhir sepadan dengan kerja.",
+      "postCleanLabel": "Pembersihan selepas kerja",
+      "postCleanNote": "Pembersihan dan lap menyeluruh selepas kerja siap."
+    },
+    "related": {
+      "serviceDesc": "Skop, proses dan jaminan penuh",
+      "priceGuide": "Panduan Harga 2026",
+      "priceGuideDesc": "Setiap kadar tersiar di satu tempat",
+      "allEstimators": "Semua alat anggaran percuma",
+      "allEstimatorsDesc": "Anggarkan kerja lain dengan serta-merta"
+    },
+    "duration": {
+      "halfDay": "Separuh hari di tapak",
+      "oneDay": "Kira-kira 1 hari bekerja",
+      "twoDays": "1–2 hari bekerja",
+      "threeToFive": "3–5 hari bekerja",
+      "oneToThreeWeeks": "1–3 minggu",
+      "threeWeeksPlus": "3 minggu atau lebih"
+    },
+    "units": {
+      "job": {
+        "label": "Berapa banyak anda perlukan?",
+        "noun": "kerja",
+        "plural": "kerja",
+        "presets": {
+          "1": { "label": "Satu sahaja", "hint": "Satu kerja di satu lokasi" },
+          "2": { "label": "Dua" },
+          "3": { "label": "Tiga" },
+          "5": { "label": "Lima atau lebih", "hint": "Kami sahkan jumlah tepat di tapak" }
+        }
+      },
+      "sqft": {
+        "label": "Berapa luas kawasan?",
+        "noun": "kaki persegi",
+        "plural": "kaki persegi",
+        "presets": {
+          "60": { "label": "Kecil — kira-kira 60 kaki persegi", "hint": "Bilik mandi atau stor" },
+          "120": { "label": "Bilik biasa — kira-kira 120 kaki persegi", "hint": "Bilik tidur 10 × 12 ft" },
+          "250": { "label": "Bilik besar — kira-kira 250 kaki persegi", "hint": "Ruang tamu" },
+          "600": { "label": "Unit kecil — kira-kira 600 kaki persegi", "hint": "Studio atau pangsapuri kecil" },
+          "1000": { "label": "Kondo — kira-kira 1,000 kaki persegi", "hint": "Kondo 3 bilik biasa" },
+          "2000": { "label": "Rumah berkembar — kira-kira 2,000 kaki persegi", "hint": "Teres 2 tingkat" }
+        }
+      },
+      "linearft": {
+        "label": "Berapa kaki larian?",
+        "noun": "kaki larian",
+        "plural": "kaki larian",
+        "presets": {
+          "6": { "label": "Kira-kira 6 ft", "hint": "Satu larian pendek" },
+          "10": { "label": "Kira-kira 10 ft", "hint": "Satu dinding biasa" },
+          "20": { "label": "Kira-kira 20 ft", "hint": "Dua dinding atau larian panjang" },
+          "40": { "label": "Kira-kira 40 ft", "hint": "Perimeter satu bilik penuh" },
+          "80": { "label": "Kira-kira 80 ft atau lebih", "hint": "Diukur di tapak" }
+        }
+      },
+      "point": {
+        "label": "Berapa mata?",
+        "noun": "mata",
+        "plural": "mata",
+        "presets": {
+          "1": { "label": "1 mata" },
+          "4": { "label": "4 mata", "hint": "Satu bilik" },
+          "8": { "label": "8 mata", "hint": "Dua hingga tiga bilik" },
+          "16": { "label": "16 mata", "hint": "Seluruh unit kondo" },
+          "30": { "label": "30 atau lebih", "hint": "Seluruh rumah atau komersial" }
+        }
+      },
+      "visit": {
+        "label": "Berapa lawatan?",
+        "noun": "lawatan",
+        "plural": "lawatan",
+        "presets": {
+          "1": { "label": "Lawatan sekali" },
+          "4": { "label": "4 lawatan", "hint": "Mingguan sebulan" },
+          "12": { "label": "12 lawatan", "hint": "Mingguan tiga bulan" },
+          "26": { "label": "26 lawatan", "hint": "Dua minggu sekali setahun" }
+        }
+      },
+      "room": {
+        "label": "Berapa bilik?",
+        "noun": "bilik",
+        "plural": "bilik",
+        "presets": {
+          "1": { "label": "1 bilik" },
+          "2": { "label": "2 bilik" },
+          "3": { "label": "3 bilik", "hint": "Kondo biasa" },
+          "5": { "label": "5 bilik", "hint": "Rumah berkembar" },
+          "8": { "label": "8 bilik atau lebih" }
+        }
+      },
+      "panel": {
+        "label": "Berapa panel?",
+        "noun": "panel",
+        "plural": "panel",
+        "presets": {
+          "1": { "label": "1 panel" },
+          "2": { "label": "2 panel" },
+          "4": { "label": "4 panel" },
+          "8": { "label": "8 panel atau lebih" }
+        }
+      }
+    },
+    "modifiers": {
+      "condition": {
+        "new": { "label": "Baru / mudah", "hint": "Tiada yang perlu dibuang atau dibaiki dahulu" },
+        "normal": { "label": "Keadaan biasa", "hint": "Penyediaan standard sahaja" },
+        "worn": { "label": "Lama / haus", "hint": "Penyediaan tambahan dan pembaikan" },
+        "damaged": { "label": "Rosak / perlu dibaiki dahulu", "hint": "Kerja pembaikan sebelum kerja utama" }
+      },
+      "access": {
+        "easy": { "label": "Mudah — tingkat bawah", "hint": "Akses biasa, tiada yang perlu dipanjat" },
+        "upper": { "label": "Tingkat atas", "hint": "Tangga atau staging ringan" },
+        "highrise": { "label": "Unit tinggi", "hint": "Tempahan lif dan perlindungan lantai" },
+        "difficult": { "label": "Sukar — ketinggian atau ruang sempit", "hint": "Pancang atau ruang kerja terhad" }
+      },
+      "urgency": {
+        "standard": { "label": "Jadual biasa", "hint": "Slot seterusnya tersedia — harga terendah" },
+        "week": { "label": "Dalam seminggu", "hint": "Penjadualan keutamaan" },
+        "urgent": { "label": "Mendesak — 48 jam", "hint": "Kru disusun semula untuk anda" },
+        "emergency": { "label": "Kecemasan — hari sama", "hint": "Penghantaran serta-merta" }
+      }
+    }
   }
 }
