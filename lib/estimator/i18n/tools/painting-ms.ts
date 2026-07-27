@@ -264,7 +264,7 @@ export const paintingMsDict: MessageDictionary = {
   },
   related: {
     service: { label: "Servis Mengecat Rumah", desc: "Skop penuh, waranti dan proses" },
-    costGuide: { label: "Panduan Kos Mengecat", desc: "Kadar pasaran 2026 diterbitkan" },
+    costGuide: { label: "Panduan Kos Mengecat", desc: "Harga telus 2026 diterbitkan" },
     skimCoat: { label: "Skim Coat & Pelicinan Dinding", desc: "Untuk dinding tidak sekata atau bertampal" },
     waterproofing: { label: "Kalis Air", desc: "Baiki lembap sebelum mengecat" },
     plasterCeiling: { label: "Siling Plaster", desc: "Baiki sebelum cat semula siling" }

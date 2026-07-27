@@ -298,7 +298,7 @@
   },
   "pricing": {
     "pageTitle": "Harga Perkhidmatan Rumah di KL & Selangor",
-    "pageSubtitle": "Harga pasaran yang telus untuk semua perkhidmatan rumah di KL & Selangor. Tiada caj tersembunyi, tiada yuran mengejut.",
+    "pageSubtitle": "Harga tetap yang telus untuk semua perkhidmatan rumah di KL & Selangor. Tiada caj tersembunyi, tiada yuran mengejut.",
     "compareHeading": "Bandingkan harga perkhidmatan",
     "compareSubheading": "Harga sebelah-menyebelah untuk perkhidmatan kami yang paling diminta supaya anda boleh bajet sebelum membuat tempahan."
   },
@@ -488,7 +488,7 @@
     "whatsappBox": {
       "eyebrow": "Perlukan jawapan lebih pantas?",
       "title": "Hantar foto melalui WhatsApp",
-      "body": "Kongsikan kawasan, ukuran, foto dan masa anda. Pasukan kami akan membimbing anda ke arah perkhidmatan yang betul dan mengesahkan bajet pasaran yang mungkin sebelum penghantaran.",
+      "body": "Kongsikan kawasan, ukuran, foto dan masa anda. Pasukan kami akan membimbing anda ke arah perkhidmatan yang betul dan mengesahkan bajet yang munasabah sebelum penghantaran.",
       "cta": "WhatsApp untuk bantuan harga",
       "phoneLabel": "Telefon & WhatsApp awam"
     },
@@ -599,10 +599,56 @@
       "3": "Alat profesional dan bahan yang sesuai",
       "4": "Pelaksanaan bersih dengan perlindungan hartanah",
       "5": "Ujian fungsi dan kemasan sebelum serahan",
-      "6": "Sebut harga akhir pasaran yang telus",
+      "6": "Sebut harga akhir yang jelas",
       "7": "Dokumentasi jaminan bertulis",
       "8": "Sokongan WhatsApp untuk penjadualan dan soalan"
-    }
+    },
+    "includedHeading": "Semua yang disertakan dengan {name}",
+    "includedSub": "Pakej {nameLower} kami meliputi skop penuh daripada persediaan hingga serahan, tanpa caj tersembunyi.",
+    "directQuestion": "Apa yang termasuk dalam {nameLower} di KL & Selangor?",
+    "directAnswer": "{name} oleh KL Servis Rumah ialah sub-perkhidmatan profesional di bawah {service}, dengan harga {price}. {desc} Setiap tempahan termasuk sebut harga tetap yang telus, juruteknik yang disemak latar belakang, dan {warrantyLower} bertulis. Skop dan harga sebenar disahkan secara bertulis sebelum kerja bermula.",
+    "processHeading": "Proses {name} di KL & Selangor — langkah demi langkah",
+    "processSub": "Setiap langkah disahkan, setiap tindakan direkodkan, dan setiap serahan dipersetujui. Tiada langkah tersembunyi, tiada kejutan.",
+    "decisionHeading": "Perlukah anda tempah {name}, pilihan lebih kecil, atau pemeriksaan dahulu?",
+    "decisionBookTitle": "Tempah {name}",
+    "decisionBookDesc": "Situasi anda sepadan dengan tanda masalah dan skop untuk {nameLower}. Ini ialah sub-perkhidmatan yang sesuai untuk kebanyakan pelanggan.",
+    "decisionBookService": "Lihat harga",
+    "decisionBookAction": "Lihat",
+    "decisionLighterTitle": "Pertimbangkan pilihan lebih ringan",
+    "decisionLighterDesc": "Jika keperluan anda lebih kecil, sub-perkhidmatan lain di bawah {serviceLower} mungkin lebih sesuai dan lebih menjimatkan. Kami boleh berikan sebut harga untuk apa-apa skop.",
+    "decisionLighterService": "Sub-perkhidmatan lain",
+    "decisionLighterAction": "Semak",
+    "decisionEscalateTitle": "Dapatkan pemeriksaan dahulu",
+    "decisionEscalateDesc": "Jika kerja melibatkan kerosakan tersembunyi, kebimbangan struktur, atau koordinasi dengan tukang lain, kami mungkin perlu memeriksa atau memberi sebut harga di tapak sebelum tempahan.",
+    "decisionEscalateService": "Pemeriksaan tapak",
+    "decisionEscalateAction": "Tempah",
+    "pricingHeading": "Harga {nameLower} yang telus",
+    "pricingDescBefore": "{name} berharga",
+    "pricingDescAfter": ". Harga akhir bergantung pada ukuran sebenar di tapak, kesukaran akses, gred bahan, dan apa-apa tambahan yang anda pilih. Semuanya diperincikan dan disahkan secara bertulis sebelum kerja bermula.",
+    "pricingBullets": {
+      "noHidden": "Tiada caj pengangkutan atau caj servis tersembunyi",
+      "noSurcharge": "Tiada surcaj hujung minggu atau selepas waktu kerja",
+      "itemizedMaterials": "Kos bahan diperincikan sebelum penggantian",
+      "payAfter": "Bayaran selepas kerja disahkan siap, bukan sebelum itu"
+    },
+    "warrantyHeading": "Liputan jaminan {name}",
+    "warrantyDescBefore": "Setiap tempahan {nameLower} disokong oleh jaminan bertulis kami",
+    "warrantyDescAfter": ". Jika perkara yang dilindungi jaminan gagal dalam tempoh tersebut, kami kembali membaikinya secara percuma — tanpa pertikaian, tanpa sebut harga semula.",
+    "warrantyNote": "Terma jaminan diterangkan secara bertulis pada setiap invois. Simpan invois anda sepanjang tempoh perlindungan.",
+    "relatedHeading": "Sub-perkhidmatan {service} lain",
+    "relatedSub": "Anda mungkin juga memerlukan perkhidmatan berkaitan ini daripada kategori yang sama.",
+    "faqHeading": "Soalan Lazim {name} — harga, jaminan dan masa",
+    "faqCostAnswer": "{name} berharga {price}. Kos akhir bergantung pada ukuran, akses, bahan, dan keadaan sebenar di tapak, dan disahkan secara bertulis sebelum kerja bermula. Tiada caj pengangkutan, servis, atau hujung minggu yang tersembunyi.",
+    "faqIncludedQ": "Apa yang termasuk dalam {nameLower}?",
+    "faqIncludedA": "Pakej {nameLower} kami termasuk skop kerja, persediaan standard, alat yang sesuai, pembersihan penuh, dan perlindungan jaminan berkaitan {serviceLower}. Inklusi khusus diperincikan dalam sebut harga anda.",
+    "faqWhatsAppQ": "Bolehkah saya tempah {nameLower} melalui WhatsApp?",
+    "faqWhatsAppA": "Ya. Hantar kawasan, gambar, jenis hartanah, dan tarikh pilihan supaya meja dispatch kami boleh mengesahkan sebut harga tetap dan menempah slot yang sesuai. Slot hari sama selalunya tersedia untuk permintaan segera.",
+    "faqSameDayQ": "Adakah {nameLower} tersedia pada hari yang sama?",
+    "faqSameDayA": "Slot hari sama bergantung pada ketersediaan juruteknik dan tahap segera. Isu {serviceLower} yang bersifat kecemasan atau keselamatan diberi keutamaan dispatch. WhatsApp awal pada hari tersebut untuk peluang terbaik mendapatkan slot hari sama.",
+    "faqAreaQ": "Adakah kawasan saya diliputi untuk {nameLower}?",
+    "faqAreaA": "Ya. Kami menghantar pasukan {serviceLower} setiap hari di seluruh KL dan Selangor — Kuala Lumpur, Petaling Jaya, Subang Jaya, Shah Alam, Puchong, Klang, dan semua suburb utama. Sahkan kawasan anda di WhatsApp dan kami akan padankan anda dengan juruteknik terdekat yang tersedia.",
+    "faqWarrantyQ": "Apakah jaminan untuk {nameLower}?",
+    "faqWarrantyA": "Setiap tempahan {nameLower} dilindungi oleh {warrantyLower} bertulis kami. Jika perkara yang dilindungi gagal dalam tempoh jaminan, kami kembali membaikinya secara percuma. Terma jaminan diterangkan pada setiap invois."
   },
   "location": {
     "servingBadge": "Berkhidmat di {area}",
@@ -1072,5 +1118,21 @@
     "openEstimator": "Buka pengira",
     "allServices": "Semua {count} perkhidmatan — satu pautan boleh kongsi setiap satu",
     "from": "Dari {price}"
+  },
+  "subserviceHero": {
+    "subserviceLabel": "Sub-perkhidmatan {service}",
+    "h1": "{name} di KL & Selangor",
+    "priceLabel": "Harga",
+    "viewFull": "Lihat {service} penuh",
+    "snapshotEyebrow": "Ringkasan tempahan",
+    "atGlance": "Sekilas pandang",
+    "service": "Perkhidmatan",
+    "category": "Kategori",
+    "price": "Harga",
+    "warranty": "Jaminan",
+    "coverage": "Liputan",
+    "allKLSelangor": "Seluruh KL & Selangor",
+    "getMyQuote": "Dapatkan Sebut Harga",
+    "call": "Hubungi {phone}"
   }
 }

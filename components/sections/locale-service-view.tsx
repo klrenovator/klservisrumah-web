@@ -25,10 +25,13 @@ export function LocaleServiceView({ service, sub }: LocaleServiceViewProps) {
   const localized = getLocalizedService(service, lang);
 
   if (sub) {
+    const subIndex = service.subServices.findIndex((item) => item.name === sub.name);
+    const localizedSub = subIndex >= 0 ? localized.subServices[subIndex] ?? sub : sub;
+
     return (
       <>
-        <SubserviceDetailHero service={localized} sub={sub} />
-        <SubserviceDetailContent service={localized} sub={sub} />
+        <SubserviceDetailHero service={localized} sub={localizedSub} />
+        <SubserviceDetailContent service={localized} sub={localizedSub} baseService={service} />
       </>
     );
   }
