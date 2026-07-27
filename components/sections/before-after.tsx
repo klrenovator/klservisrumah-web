@@ -23,7 +23,7 @@ export function BeforeAfter() {
         {/* Header */}
         <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-16">
           <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
-            {t("home.beforeAfter.heading")}
+            {t("home.beforeAfter.eyebrow", { defaultValue: "Before and after" })}
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
             {t("home.beforeAfter.heading")}
@@ -59,7 +59,7 @@ export function BeforeAfter() {
                     <div className="flex items-center gap-2 text-rose-600 mb-1">
                       <AlertCircle className="w-4 h-4" />
                       <span className="text-xs font-bold uppercase tracking-wider">
-                        {t("home.beforeAfter.heading")}
+                        {t("home.beforeAfter.beforeLabel", { defaultValue: "Before" })}
                       </span>
                     </div>
                     <p className="text-xs text-[#475569] leading-relaxed font-semibold">
@@ -71,7 +71,7 @@ export function BeforeAfter() {
                     <div className="flex items-center gap-2 text-emerald-600 mb-1">
                       <CheckCircle2 className="w-4 h-4" />
                       <span className="text-xs font-bold uppercase tracking-wider">
-                        ✓
+                        {t("home.beforeAfter.afterLabel", { defaultValue: "After" })}
                       </span>
                     </div>
                     <p className="text-xs text-[#475569] leading-relaxed font-semibold">

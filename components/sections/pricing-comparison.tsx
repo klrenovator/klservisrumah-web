@@ -3,6 +3,7 @@
 import React from "react";
 import { Check, X, BadgeCheck } from "lucide-react";
 import { useTranslations } from "@/hooks/use-translations";
+import { siteConfig } from "@/config/site";
 
 const comparisonRows = [
   {
@@ -49,7 +50,7 @@ const comparisonRows = [
   },
   {
     feature: "Verified Reviews",
-    klServis: "{reviewCount}+ Google Reviews with real job photos. Read what actual customers say.",
+    klServis: `${siteConfig.reviewCount}+ Google Reviews with real job photos. Read what actual customers say.`,
     competitor: "Few or no reviews — or fake reviews from inactive accounts.",
     klServisIcon: <Check className="w-5 h-5 text-emerald-500" />,
     competitorIcon: <X className="w-5 h-5 text-rose-500" />

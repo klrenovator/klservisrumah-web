@@ -9,6 +9,7 @@ import { ServiceIcon } from "@/components/ui/service-icon";
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
 import { getLocalizedService } from "@/lib/service-i18n";
+import { warrantyLead } from "@/lib/utils";
 import { Reveal } from "@/components/ui/reveal";
 
 export function ServicesGrid() {
@@ -99,7 +100,7 @@ export function ServicesGrid() {
                 <a href={getWhatsAppLink({ service: service.title })} target="_blank" rel="nofollow noopener noreferrer" className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#22C55E] py-3.5 text-xs font-black uppercase tracking-widest text-white shadow-sm transition-all duration-200 hover:bg-[#16A34A] hover:shadow-green-200 active:scale-[0.98]">
                   <MessageSquare className="h-4 w-4" /> {t("common.bookService")}
                 </a>
-                <span className="text-center text-xs font-bold text-emerald-600">{service.warranty.split(" ")[0]} {t("services.guaranteeLabel")}</span>
+                <span className="text-center text-xs font-bold text-emerald-600">{warrantyLead(service.warranty)} {t("services.guaranteeLabel")}</span>
               </div>
 
             </Reveal>

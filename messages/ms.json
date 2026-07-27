@@ -113,8 +113,11 @@
       }
     },
     "beforeAfter": {
+      "eyebrow": "Bukti sebelum & selepas",
       "heading": "Sebelum dan selepas: hasil projek sebenar",
       "subheading": "Lihat kualiti kerja mengecat, siling, paip, kalis air, dan kerja tangan kami di seluruh Kuala Lumpur dan Selangor.",
+      "beforeLabel": "Sebelum",
+      "afterLabel": "Selepas",
       "items": {
         "1": {
           "title": "Pemulihan Cat Dinding Ruang Tamu",
@@ -220,7 +223,7 @@
       "subheading": "Hubungi kami sekarang melalui WhatsApp atau panggil meja penghantaran kami yang mesra. Dapatkan sebut harga terperinci serta-merta tanpa deposit pendahuluan dan jaminan kerja penuh.",
       "bookButton": "Tempah Melalui WhatsApp (Respons Pantas)",
       "callButton": "Hubungi Sokongan {phone}",
-      "hours": "* Kami beroperasi setiap hari dari 9:00 PG hingga 6:00 PTG termasuk cuti umum."
+      "hours": "Kami beroperasi setiap hari dari 9:00 PG hingga 6:00 PTG termasuk cuti umum."
     }
   },
   "services": {
