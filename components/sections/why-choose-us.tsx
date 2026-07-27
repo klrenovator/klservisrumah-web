@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { ShieldCheck, Sparkles, Flame, Clock, Heart, Headphones } from "lucide-react";
+import { ShieldCheck, Sparkles, Flame, Clock } from "lucide-react";
 import { useTranslations } from "@/hooks/use-translations";
 import { Reveal } from "@/components/ui/reveal";
 
@@ -28,16 +28,6 @@ export function WhyChooseUs() {
       icon: <Clock className="w-6 h-6 text-[#0EA5E9]" />,
       titleKey: "home.whyChooseUs.items.fast.title",
       descKey: "home.whyChooseUs.items.fast.desc"
-    },
-    {
-      icon: <Heart className="w-6 h-6 text-[#0EA5E9]" />,
-      titleKey: "home.trustBadges.items.verified",
-      descKey: "home.trustBadges.heading"
-    },
-    {
-      icon: <Headphones className="w-6 h-6 text-[#0EA5E9]" />,
-      titleKey: "home.trustBadges.items.warranty",
-      descKey: "home.trustBadges.items.transparent"
     }
   ];
 

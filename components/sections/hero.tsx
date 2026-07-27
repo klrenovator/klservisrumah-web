@@ -180,7 +180,7 @@ export function Hero() {
                 "Insured & verified",
                 "Price confirmed first",
                 "Same-day available",
-                "Up to 5-year warranty"
+                "30-day to 10-year warranty"
               ].map((chip) => (
                 <span
                   key={chip}
