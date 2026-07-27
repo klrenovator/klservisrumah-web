@@ -1,3 +1,55 @@
+## 🆕 ROUND 33 EXECUTION LOG (2026-07-27) — SEO:AUDIT FIX + CONTENT I18N FULL COVERAGE (164/164 MS/ZH) + PROJECTS I18N NATIVE QUALITY
+
+**User direction (Urdu):** "Handoff file check kren Kuch rehta hy to mukammal kren" — Check the handoff, complete anything remaining.
+
+**Handoff check:** Round 32 is ✅ COMPLETED. Its pending items are all external (GSC, IndexNow, Visual QA, real photography). Two code-level gaps remained from earlier rounds: (1) `seo:audit` npm script was broken (`ERR_MODULE_NOT_FOUND` — flagged in Round 32 as "pre-existing, untouched"), and (2) `config/content-i18n.ts` only covered ~25 of the 164 unique content-page slugs with MS, and ~6 with ZH — the largest remaining trilingual gap by page count. Both were fixed this round.
+
+**Round status:** ✅ **COMPLETED — seo:audit script now runs; content i18n coverage went from ~25 MS/~6 ZH to 164/164 MS/164/164 ZH (100%); project i18n entries upgraded from half-English to native-quality**
+
+### 🎯 What was built
+
+#### 1. 🔧 seo:audit script fix (pre-existing bug, Round 32 flagged)
+- ✅ **`package.json`** — `seo:audit` script was missing `--import ./scripts/ts-resolver.mjs`, causing `ERR_MODULE_NOT_FOUND` because the script imports from `@/config/*` (TypeScript path alias that bare Node can't resolve). Added the same resolver flag used by `test:estimators` and `gen:rates`.
+- ✅ `npm run seo:audit` now runs successfully and generates `docs/seo-audit-report.md`.
+
+#### 2. 🈂️ Content i18n full coverage — 164/164 MS, 164/164 ZH
+- ✅ **`config/content-i18n.ts`** — `contentI18nMsFull` expanded from ~25 entries to **164 entries** covering every unique content-page slug (15 Cluster, 2 Painting, 2 Plumbing, 2 Waterproofing, 2 Ceiling, 2 Handyman, 15 Comparison, 10 Maintenance, 8 Seasonal, 28 Commercial, 12 Brand, 10 Top, 28 Answer, 28 Process). Every entry has native MS `title`, `intro`, and `category`.
+- ✅ **`contentI18nZhFull`** expanded from ~6 entries to **164 entries** with native ZH `title`, `intro`, and `category` for every slug.
+- ✅ Category translations mapped across all 15 categories (MS: Kluster Perkhidmatan, Perbandingan, Musiman, Komersial, Kediaman, Panduan Jenama, Pertimbangan Teratas, Panduan Jawapan AI, Proses, etc. — ZH: 服务集群, 比较, 季节性, 商业, 住宅, 品牌指南, 重要考量, AI回答指南, 流程, etc.)
+- ✅ Verified programmatically: **164/164 unique slugs covered in MS, 164/164 in ZH, 0 missing.**
+- ✅ The `contentI18n` (9 detailed MS) and `contentI18nZh` (6 detailed ZH) dictionaries preserved unchanged — these are the higher-quality hand-written entries that the component prefers over the full dictionaries for those specific slugs.
+- ✅ `GenericContentPageView` component already dynamically imports these dictionaries and resolves via `contentI18nMsFull[slug] ?? contentI18n[slug]` / `contentI18nZhFull[slug] ?? contentI18nZh[slug]` — so all 164 pages now render translated titles, intros, and categories when a visitor switches language.
+
+#### 3. 🏗️ Projects i18n native quality upgrade
+- ✅ **`config/projects-data.ts`** — 3 project case studies had half-English/half-MS translations (e.g. "Noda air ceiling board replacement", "Bilik air PU grouting leak control"). Upgraded to fully native MS/ZH:
+  - `subang-jaya-ceiling-leak-repair`: MS → "Penggantian papan siling bernoda air" / ZH → "水渍天花板板更换"
+  - `mont-kiara-pu-grouting`: MS → "Pengawalan kebocoran bilik air dengan grouting PU" / ZH → "浴室PU注浆漏水控制"
+  - `cheras-tv-wall-mounting`: MS → "Pemasangan TV selamat pada dinding campuran" / ZH → "混合墙体安全电视安装"
+
+### ✅ Quality check results
+- ✅ TypeScript **0 errors** · ESLint **0 errors, 0 warnings**
+- ✅ Build green — **4,063 / 4,063 SSG pages** (unchanged — no route changes, only data updates)
+- ✅ Estimator harness: **223,726 assertions, 0 failures** (unchanged)
+- ✅ `npm run seo:audit` runs successfully, generates `docs/seo-audit-report.md`
+- ✅ Production smoke test (`next start`): HTTP 200 on `/`, `/guides/how-to-choose-house-painter-kl`, `/estimate/electrical`, `/estimate`
+- ✅ Content i18n coverage: **164/164 MS, 164/164 ZH, 0 missing** (verified programmatically)
+- ✅ Permanent rules honoured — no public SSM, phone +60 11-1662 7349 untouched, market-rate pricing unchanged, no invented figures
+
+### 📁 Files modified (3)
+- `package.json` — seo:audit script fix
+- `config/content-i18n.ts` — full MS/ZH coverage for 164 content pages
+- `config/projects-data.ts` — native-quality project i18n entries
+
+### ⏳ Still pending after Round 33
+- ⏳ **GSC:** submit sitemaps in console (`sitemap.xml` + `sitemap-news.xml`); URL-inspect + request indexing for new locale/tool/estimate pages
+- ⏳ **IndexNow:** fire ping once after deploy (`GET /api/indexnow?secret=…`, needs `INDEXNOW_SECRET` set)
+- ⏳ **Visual QA** at 375px and desktop on deployed URLs (no browser here)
+- ⏳ **Real photography and verified review import** when assets supplied
+- ⏳ **Content data body-level MS/ZH** — title/intro/category are now 100% covered, but the bullet points and FAQ content on individual content pages are still English-only (the `GenericContentPageView` renders them from `page.bullets` and `page.faqs`, which are English arrays generated by `content-data.ts`). Full body-level translation requires converting bullets/faqs to locale-aware arrays — a larger structural change.
+- ⏳ The rest of the site remains client-side-language-switched (deliberate later-round decision, 3× URL inventory)
+
+---
+
 ## 🆕 ROUND 32 EXECUTION LOG (2026-07-27) — SHAREABLE PER-SERVICE ESTIMATOR LINKS (/estimate/<service>) FOR CUSTOMER WHATSAPP SHARING
 
 **User direction (Urdu):** "Handoff file k mutabiq check kren agla kia Kam hy ya pichla Kam agr rehta hy to usy mukammal kren. Or estimator ka hr service k liey link b bna den Jo mein direct customer ko bhej sakun k is sy andaza lga lo Kitna kharcha aye ga" — (Check the handoff for the next/pending task and complete it. And make a link for EVERY service's estimator that I can send directly to a customer so they can work out roughly how much it will cost.)
