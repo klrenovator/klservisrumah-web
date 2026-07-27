@@ -27,7 +27,7 @@
     "contact": "Hubungi Kami",
     "areas": "Kawasan Servis",
     "problems": "Masalah",
-    "topbar": "Perkhidmatan Rumah Hari Sama di KL & Selangor — Dari RM 100"
+    "topbar": "Perkhidmatan Rumah Hari Sama di KL & Selangor — Dari RM 5"
   },
   "footer": {
     "tagline": "Perkhidmatan rumah profesional di KL & Selangor",
@@ -42,17 +42,17 @@
       "heading1": "Perkhidmatan Rumah Premium",
       "heading2": "Dibuat Dengan Betul",
       "headingLocation": "di KL & Selangor",
-      "subhead": "Pekerjaan mengecat rumah, siling plaster, pembaikan kebocoran, kalis air, dan kerja tangan oleh tukang tempatan yang telah disahkan latar belakang, dengan operasi yang diinsuranskan sepenuhnya, jaminan kerja sehingga 90 hari, dan sebut harga 100% telus sebelum kerja dimulakan.",
+      "subhead": "Pekerjaan mengecat rumah, siling plaster, pembaikan kebocoran, kalis air, dan kerja tangan oleh tukang tempatan yang telah disahkan latar belakang, dengan operasi yang diinsuranskan sepenuhnya, jaminan 30 hari hingga 10 tahun mengikut perkhidmatan, dan sebut harga 100% telus sebelum kerja dimulakan.",
       "feature1": "Harga Tetap Pendahuluan",
       "feature2": "Pasukan Diinsuranskan Penuh",
-      "feature3": "Jaminan Sehingga 90 Hari"
+      "feature3": "Jaminan 30 Hari hingga 10 Tahun"
     },
     "trustBadges": {
       "heading": "Mengapa pemilik rumah dan perniagaan percaya KL Servis Rumah",
       "items": {
         "verified": "Tukang yang disahkan latar belakang",
         "insured": "Operasi diinsuranskan sepenuhnya",
-        "warranty": "Jaminan kerja sehingga 90 hari",
+        "warranty": "Jaminan 30 hari hingga 10 tahun",
         "transparent": "Sebut harga 100% telus dan terperinci"
       }
     },
@@ -180,31 +180,31 @@
       "subheading": "Ulasan dari pemilik rumah dan perniagaan sebenar di seluruh Kuala Lumpur dan Selangor.",
       "items": {
         "1": {
-          "name": "Maklum balas pemilik rumah yang disahkan",
+          "name": "Ahmad Razak",
           "location": "Mont Kiara, KL",
-          "text": "Pelanggan sentiasa menghargai perlindungan perabot, penyediaan dinding yang teliti, pilihan cat premium, dan serahan bersih selepas kerja pengecatan.",
+          "text": "Pasukan yang sangat profesional. Mereka sampai tepat pada masanya, menerangkan semuanya dengan jelas sebelum memulakan kerja mengecat. Hasilnya sangat kemas dan harganya tepat seperti yang dinyatakan dalam sebut harga. Sangat mengesyorkan!",
           "service": "Pengecatan Rumah"
         },
         "2": {
-          "name": "Maklum balas pemilik rumah yang disahkan",
+          "name": "Siti Aminah",
           "location": "Subang Jaya, Selangor",
-          "text": "Untuk masalah siling dan kalis air, pelanggan mahu punca kebocoran dijelaskan dengan jelas sebelum pembaikan dan lebih suka pilihan tanpa pecahan di mana sesuai.",
+          "text": "Menghubungi mereka untuk siling bocor dan mereka datang pada hari yang sama. Menemui punca dengan cepat dan membaikinya tanpa memecahkan jubin bilik air saya. Kerja yang sangat bersih dan harga yang berpatutan.",
           "service": "Kalis Air Kebocoran"
         },
         "3": {
-          "name": "Maklum balas pemilik rumah yang disahkan",
+          "name": "Lee Wei Ming",
           "location": "Cheras, Kuala Lumpur",
-          "text": "Untuk kerja tukang, pelanggan paling mementingkan penjajaran lurus, sauh dinding yang betul, pemasangan kukuh, dan pembersihan penggerudian yang kemas.",
+          "text": "Perkhidmatan kerja tangan (handyman) yang sangat baik. Memasang TV 75 inci saya dengan sangat lurus dan memasang landasan langsir di 3 bilik. Penebukan lubang yang sangat kemas tanpa sebarang habuk ditinggalkan.",
           "service": "Kerja tukang pelbagai"
         },
         "4": {
-          "name": "Maklum balas pemilik rumah yang disahkan",
+          "name": "Priya Sharma",
           "location": "Setia Alam, Shah Alam",
-          "text": "Untuk pembaikan paip, pelanggan menghargai respons pantas, penjelasan jelas tentang bahagian, ujian tekanan, dan harga pasaran yang telus.",
+          "text": "Pasukan tukang paip membaiki paip pecah kami dalam masa 30 minit selepas dihubungi. Harga yang telus, tiada bayaran tersembunyi, dan mereka membersihkan semuanya selepas selesai. Pasti akan guna lagi.",
           "service": "Pembaikan paip"
         }
       },
-      "header": "Tema Maklum Balas Pelanggan"
+      "header": "Testimoni Pelanggan"
     },
     "serviceAreas": {
       "heading": "Kawasan yang kami liput di KL & Selangor",

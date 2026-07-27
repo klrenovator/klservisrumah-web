@@ -23,7 +23,8 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   return buildMetadata({
     title: `${service.title} Cost in KL & Selangor — 2026 Pricing Guide`,
     description: `How much does ${service.title.toLowerCase()} cost in KL & Selangor? See market-rate pricing, factors, quote examples, and WhatsApp booking.`,
-    path: `/services/${slug}/cost`
+    path: `/services/${slug}/cost`,
+    canonicalPath: `/services/${slug}`
   });
 }
 

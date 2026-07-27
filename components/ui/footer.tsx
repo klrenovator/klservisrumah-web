@@ -44,7 +44,7 @@ export function Footer() {
           </div>
           <div className="flex items-center gap-2">
             <ShieldCheck className="h-4 w-4 text-amber-500 shrink-0" />
-            <span>30-day to 5-year warranty</span>
+            <span>30-day to 10-year warranty</span>
           </div>
           <div className="flex items-center gap-2">
             <CheckCircle className="h-4 w-4 text-violet-500 shrink-0" />

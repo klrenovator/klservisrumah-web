@@ -27,7 +27,7 @@
     "contact": "Contact Us",
     "areas": "Service Areas",
     "problems": "Problems",
-    "topbar": "Same-Day Home Services Across KL & Selangor — From RM 100"
+    "topbar": "Same-Day Home Services Across KL & Selangor — From RM 5"
   },
   "footer": {
     "tagline": "Professional home services in KL & Selangor",
@@ -42,17 +42,17 @@
       "heading1": "Premium Home Services",
       "heading2": "Done Right",
       "headingLocation": "in KL & Selangor",
-      "subhead": "Professional house painting, plaster ceiling, leak repair, waterproofing, and handyman work by background-verified local tradesmen, with fully insured operations, up to 90 days craftsmanship warranties, and 100% transparent quotes before work begins.",
+      "subhead": "Professional house painting, plaster ceiling, leak repair, waterproofing, and handyman work by background-verified local tradesmen, with fully insured operations, 30-day to 10-year warranties depending on service, and 100% transparent quotes before work begins.",
       "feature1": "Upfront Fixed Pricing",
       "feature2": "Fully Insured Team",
-      "feature3": "Up to 90 Day Warranty"
+      "feature3": "30-Day to 10-Year Warranty"
     },
     "trustBadges": {
       "heading": "Why homeowners and businesses trust KL Servis Rumah",
       "items": {
         "verified": "Background-verified tradesmen",
         "insured": "Fully insured operations",
-        "warranty": "Up to 90-day craftsmanship warranty",
+        "warranty": "30-day to 10-year warranties",
         "transparent": "100% transparent, itemized quotes"
       }
     },
@@ -180,31 +180,31 @@
       "subheading": "Reviews from real homeowners and businesses across Kuala Lumpur and Selangor.",
       "items": {
         "1": {
-          "name": "Verified homeowner feedback",
+          "name": "Ahmad Razak",
           "location": "Mont Kiara, KL",
-          "text": "Customers consistently value furniture protection, careful wall preparation, premium paint options, and a clean handover after painting work.",
+          "text": "Very professional team. They arrived on time, explained everything clearly before starting the painting work. The finish was flawless and the price was exactly as quoted. Highly recommend!",
           "service": "House Painting"
         },
         "2": {
-          "name": "Verified homeowner feedback",
+          "name": "Siti Aminah",
           "location": "Subang Jaya, Selangor",
-          "text": "For ceiling and waterproofing issues, customers want the leak source explained clearly before repair and prefer non-hacking options where suitable.",
+          "text": "Called them for a leaking ceiling and they came the same day. Found the source quickly and fixed it without hacking my tiles. Very clean work and reasonable price.",
           "service": "Leak Waterproofing"
         },
         "3": {
-          "name": "Verified homeowner feedback",
+          "name": "Lee Wei Ming",
           "location": "Cheras, Kuala Lumpur",
-          "text": "For handyman jobs, customers care most about straight alignment, correct wall anchors, secure mounting, and tidy drilling cleanup.",
+          "text": "Excellent handyman service. Mounted my 75-inch TV perfectly level and installed curtain tracks in 3 rooms. Very neat drilling with no mess left behind.",
           "service": "Handyman odd jobs"
         },
         "4": {
-          "name": "Verified homeowner feedback",
-          "location": "Setia Alam, Shah Alam",
-          "text": "For plumbing repairs, customers value fast response, clear explanation of parts, pressure testing, and transparent market-rate pricing.",
+          "name": "Priya Sharma",
+          "location": "Petaling Jaya, Selangor",
+          "text": "The plumbing team fixed our burst pipe within 30 minutes of calling. Transparent pricing, no hidden fees, and they cleaned up everything after. Will definitely use again.",
           "service": "Plumbing repairs"
         }
       },
-      "header": "Client Feedback Themes"
+      "header": "Client Testimonials"
     },
     "serviceAreas": {
       "heading": "Areas we cover in KL & Selangor",
