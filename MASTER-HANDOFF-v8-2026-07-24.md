@@ -19,12 +19,13 @@
 - ✅ **Trilingual copy** — new `estimateShare` namespace in `messages/{en,ms,zh}.json`: **26 keys × 3 locales (78 strings)** covering share bar, standalone page and hub; everything follows the language pill.
 - ✅ **Sitemap** — hub + 22 direct URLs added (self-referencing hreflang like every client-switched page); the six redirecting slugs are deliberately NOT listed (never advertise a redirect). **23 entries verified in the live sitemap.xml, 0 redirect URLs.**
 - ✅ **`public/llms.txt`** — new "Shareable Per-Service Estimators" section: the pattern + hub + all 22 direct URLs.
+- ✅ **IndexNow coverage (Round 32 follow-up, 2026-07-27)** — `app/api/indexnow/route.ts` pinged a hand-maintained list of 8 core URLs only. It now derives its URL set from the registries: 8 core + 18 tool-cluster URLs (EN/MS/ZH index + 5 tools × 3 locales) + the estimate hub + 22 direct estimator pages = **49 URLs per ping**. Redirecting `/estimate/*` slugs are excluded (IndexNow wants canonical targets). Bing/Yandex now learn about every new cluster on the next ping.
 
 ### 📁 Files created (6)
 `config/estimate-links.ts` · `components/tools/estimator-share-bar.tsx` · `components/estimate/estimate-share-page.tsx` · `components/estimate/estimate-hub.tsx` · `app/estimate/page.tsx` · `app/estimate/[slug]/page.tsx`
 
-### 📁 Files modified (8)
-`middleware.ts` (estimate→tool 301s) · `components/tools/service-estimator-block.tsx` (share rows) · `app/sitemap.ts` · `scripts/test-estimators.ts` (new locked section) · `messages/{en,ms,zh}.json` · `public/llms.txt`
+### 📁 Files modified (9)
+`middleware.ts` (estimate→tool 301s) · `components/tools/service-estimator-block.tsx` (share rows) · `app/sitemap.ts` · `scripts/test-estimators.ts` (new locked section) · `messages/{en,ms,zh}.json` · `public/llms.txt` · `app/api/indexnow/route.ts` (URL list derived from registries)
 
 ### ✅ Quality check results
 - ✅ TypeScript **0 errors** · ESLint **0 errors, 0 warnings**
@@ -43,7 +44,8 @@ Direct estimator pages (22): `/estimate/house-renovation` · `/estimate/electric
 Redirects to the deep tools (6): `/estimate/painting` → painting-calculator · `/estimate/plumbing` → plumbing-diagnostic · `/estimate/ceiling` + `/estimate/plaster-ceiling` → ceiling-calculator · `/estimate/waterproofing` → leak-triage · `/estimate/handyman` → tv-mount-advisor
 
 ### ⏳ Still pending after Round 32
-- ⏳ Submit `/estimate` + the 22 URLs in GSC once connected; watch "cost/price/berapa" query impressions.
+- ⏳ **GSC (verified 2026-07-27):** submit the sitemaps in the console — `sitemap.xml` + `sitemap-news.xml` (robots.txt already declares both, but the console Sitemaps report needs them entered once). Then URL-inspect + request indexing for `/estimate`, `/ms/alatan`, `/zh/gongju` and a sample of `/estimate/<slug>` pages; watch "cost/price/berapa" query impressions.
+- ⏳ Fire the IndexNow ping once after deploy (`GET /api/indexnow?secret=…`, needs `INDEXNOW_SECRET` set) — now submits all 49 cluster URLs to Bing/Yandex.
 - ⏳ Visual QA at 375px and desktop on deployed URLs (no browser in this environment — HTTP/DOM checks only).
 - ⏳ (Pre-existing) Fix the `seo:audit` npm script to import `./scripts/ts-resolver.mjs` like `test:estimators` does.
 - ⏳ Real photography and verified review import when assets are supplied; GBP optimization, GSC/Bing verification, Rich Results testing on the live domain.
