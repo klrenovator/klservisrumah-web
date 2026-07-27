@@ -7,11 +7,11 @@ export const siteConfig = {
   legalName: "Multicore Dynamics Resources",
   ssm: "003765188-T",
   ssmFull: "202503227236 (003765188-T)",
-  tagline: "Market-Rate Painting, Plumbing, Ceiling, Waterproofing & Handyman Services in KL & Selangor",
+  tagline: "Fixed-Price Home Services in KL & Selangor — Painting, Plumbing, Ceiling, Waterproofing & Handyman",
   description:
-    "KL Servis Rumah provides professional home maintenance including house painting, plaster ceiling repair, gypsum partition setup, plumbing leak repairs, waterproofing, door and lock repairs, TV mounting, and handyman services across Kuala Lumpur & Selangor. Same-day service is available, with fully insured operations, background-verified teams, and transparent market-rate pricing confirmed before work begins. Serving Kuala Lumpur, Petaling Jaya, Subang Jaya, Shah Alam, Puchong, Damansara, Klang, Cheras, Ampang, Kajang, Bangsar, Mont Kiara, Setapak, Wangsa Maju, Kepong, Sri Petaling, Bukit Jalil, Kota Damansara, Ara Damansara, Sunway, USJ, Port Klang, Bukit Tinggi, Setia Alam, Rawang, Semenyih, Balakong, Seri Kembangan, Pandan Indah, Putrajaya, Cyberjaya & Dengkil.",
+    "KL Servis Rumah provides professional home maintenance including house painting, plaster ceiling repair, gypsum partition setup, plumbing leak repairs, waterproofing, door and lock repairs, TV mounting, and handyman services across Kuala Lumpur & Selangor. Same-day service is available, with fully insured operations, background-verified teams, and honest fixed prices confirmed in writing before work begins. Serving Kuala Lumpur, Petaling Jaya, Subang Jaya, Shah Alam, Puchong, Damansara, Klang, Cheras, Ampang, Kajang, Bangsar, Mont Kiara, Setapak, Wangsa Maju, Kepong, Sri Petaling, Bukit Jalil, Kota Damansara, Ara Damansara, Sunway, USJ, Port Klang, Bukit Tinggi, Setia Alam, Rawang, Semenyih, Balakong, Seri Kembangan, Pandan Indah, Putrajaya, Cyberjaya & Dengkil.",
   metaDescription:
-    "Market-rate home services in KL & Selangor: house painting, plaster ceiling, plumbing, waterproofing & handyman. Transparent quotes and warranty.",
+    "Same-day home services in KL & Selangor: house painting, plaster ceiling, plumbing, waterproofing & handyman. Fixed upfront quotes, real warranty.",
 
   phone: "+601116627349",
   phoneDisplay: "+60 11-1662 7349",

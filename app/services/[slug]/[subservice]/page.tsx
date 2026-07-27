@@ -44,7 +44,7 @@ export async function generateMetadata(props: { params: Promise<{ slug: string; 
     title: `${sub.name} in KL & Selangor — ${sub.price}`,
     // `sub.price` is already phrased as "From RM 16 / sq ft", so don't prefix
     // another "from" — that rendered "pricing from From RM 16 / sq ft".
-    description: `${sub.desc} Market-rate pricing ${sub.price.replace(/^From\s+/i, "from ")}, insured team, and WhatsApp booking across Kuala Lumpur and Selangor.`,
+    description: `${sub.desc} Upfront pricing ${sub.price.replace(/^From\s+/i, "from ")}, insured team, and WhatsApp booking across Kuala Lumpur and Selangor.`,
     path: `/services/${service.slug}/${params.subservice}`,
     image: service.heroImage,
     keywords: [sub.name, `${sub.name} KL`, `${sub.name} price`, service.title]
@@ -65,7 +65,7 @@ export default async function SubServicePage(props: { params: Promise<{ slug: st
   const faqs = [
     { q: `How much does ${sub.name} cost in KL & Selangor?`, a: `${sub.name} is priced ${sub.price}. Final cost depends on dimensions, access, materials, and actual site condition, and is confirmed before work begins.` },
     { q: `What is included in ${sub.name}?`, a: `Our quote includes workmanship scope, standard preparation, suitable tools, cleanup, and warranty terms related to ${service.title}.` },
-    { q: `Can I book ${sub.name} on WhatsApp?`, a: `Yes. Send your area, photos, property type, and preferred date so our dispatch desk can confirm a market-rate quote.` },
+    { q: `Can I book ${sub.name} on WhatsApp?`, a: `Yes. Send your area, photos, property type, and preferred date so our dispatch desk can confirm a fixed-price quote.` },
     { q: `Is ${sub.name} available same day?`, a: `Same-day slots depend on technician availability and urgency. Emergency and safety-related ${service.title.toLowerCase()} issues receive priority dispatch.` },
     { q: `Do you cover my area for ${sub.name}?`, a: `Yes. We dispatch ${service.title.toLowerCase()} teams daily across all of KL and Selangor — Kuala Lumpur, Petaling Jaya, Subang Jaya, Shah Alam, Puchong, Klang, and every major suburb.` },
     { q: `What warranty comes with ${sub.name}?`, a: `Every ${sub.name} booking is covered by our written ${service.warranty.toLowerCase()}. If anything covered fails within the warranty period, we return to fix it free of charge.` }

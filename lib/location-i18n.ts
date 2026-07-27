@@ -48,7 +48,7 @@ const suburbTemplates: Record<Exclude<Locale, "en">, {
       },
       {
         q: `Adakah harga di ${name} ditetapkan sebelum kerja bermula?`,
-        a: "Ya. Kami mengesahkan sebut harga terperinci pada kadar pasaran sebelum memulakan kerja, dan sebarang skop tambahan perlu diluluskan oleh anda terlebih dahulu."
+        a: "Ya. Kami mengesahkan sebut harga terperinci pada kadar adil sebelum memulakan kerja, dan sebarang skop tambahan perlu diluluskan oleh anda terlebih dahulu."
       }
     ]
   },
@@ -65,7 +65,7 @@ const suburbTemplates: Record<Exclude<Locale, "en">, {
       },
       {
         q: `${name}的价格会在开工前确定吗？`,
-        a: "会的。我们在开工前确认按市场价计算的逐项报价，任何额外工程都需先经您批准。"
+        a: "会的。我们在开工前确认公道的逐项报价，任何额外工程都需先经您批准。"
       }
     ]
   }

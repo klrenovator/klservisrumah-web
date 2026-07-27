@@ -287,7 +287,7 @@ export const areaPages: AreaDetail[] = [
       "Ukay Perdana",
     ],
     description:
-      "From luxury bungalows in Ampang Hilir and Taman TAR to hillside condos in Bukit Antarabangsa and mid-market terraces in Pandan Indah, KL Servis Rumah delivers polished home maintenance across every Ampang neighbourhood. We handle exterior repainting for the diplomatic quarter, PU grouting for rain-season slab leaks in hillside apartments, and full-service handyman visits for expat family homes. Every job comes with itemised market-rate pricing and up to 5-year written waterproofing warranty.",
+      "From luxury bungalows in Ampang Hilir and Taman TAR to hillside condos in Bukit Antarabangsa and mid-market terraces in Pandan Indah, KL Servis Rumah delivers polished home maintenance across every Ampang neighbourhood. We handle exterior repainting for the diplomatic quarter, PU grouting for rain-season slab leaks in hillside apartments, and full-service handyman visits for expat family homes. Every job comes with itemised, upfront pricing and up to 5-year written waterproofing warranty.",
     metaTitle: "Ampang Painting, Plumbing & Waterproofing — KL Servis Rumah",
     metaDesc:
       "Painting, plumbing, ceiling & waterproofing in Ampang, Ampang Hilir, Bukit Antarabangsa & Pandan Indah. Insured, background-verified crew. Free WhatsApp quote.",
@@ -540,7 +540,7 @@ export const areaPages: AreaDetail[] = [
       "Taman OUG",
     ],
     description:
-      "Sri Petaling, Bukit Jalil and Taman OUG cover a mix of family terrace homes and newer luxury condos surrounding Pavilion Bukit Jalil. KL Servis Rumah handles the full range: repainting classic single-storey OUG terraces, PU-grouting waterproofing for new-launch Bukit Jalil high-rises, gypsum partition builds for growing home offices, and handyman visits for TV mounting, curtain rails and lighting upgrades. Every job is quoted at market rates before we start.",
+      "Sri Petaling, Bukit Jalil and Taman OUG cover a mix of family terrace homes and newer luxury condos surrounding Pavilion Bukit Jalil. KL Servis Rumah handles the full range: repainting classic single-storey OUG terraces, PU-grouting waterproofing for new-launch Bukit Jalil high-rises, gypsum partition builds for growing home offices, and handyman visits for TV mounting, curtain rails and lighting upgrades. Every job is quoted at fair, published rates before we start.",
     metaTitle: "Sri Petaling & Bukit Jalil Painter, Plumber — KL Servis Rumah",
     metaDesc:
       "Home services in Sri Petaling, Bukit Jalil, Taman OUG & Happy Garden — painting, plumbing, ceiling, waterproofing & handyman. Fixed quotes, insured crew.",
@@ -792,7 +792,7 @@ export const areaPages: AreaDetail[] = [
       "KL East",
     ],
     description:
-      "KL Servis Rumah covers Wangsa Maju, Sri Rampai, Taman Melati and the Setapak corridor with same-day painting, plumbing, ceiling, waterproofing and handyman teams. Our crews are used to mature apartments, busy shoplots and terrace homes along Genting Klang where common jobs include low water pressure, ceiling stains from upstairs leaks, door alignment, interior repainting and downlight or fan replacement. We coordinate with management offices, protect lifts and common areas, and confirm market-rate pricing before any work begins.",
+      "KL Servis Rumah covers Wangsa Maju, Sri Rampai, Taman Melati and the Setapak corridor with same-day painting, plumbing, ceiling, waterproofing and handyman teams. Our crews are used to mature apartments, busy shoplots and terrace homes along Genting Klang where common jobs include low water pressure, ceiling stains from upstairs leaks, door alignment, interior repainting and downlight or fan replacement. We coordinate with management offices, protect lifts and common areas, and confirm the full price upfront before any work begins.",
     metaTitle: "Wangsa Maju Home Services — Painter, Plumber & Handyman",
     metaDesc:
       "Painting, plumbing, ceiling repair, waterproofing and handyman services in Wangsa Maju, Sri Rampai & Taman Melati. Same-day KL dispatch.",

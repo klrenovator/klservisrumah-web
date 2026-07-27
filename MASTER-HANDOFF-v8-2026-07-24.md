@@ -1,3 +1,135 @@
+## 🆕 ROUND 35 EXECUTION LOG (2026-07-28) — ESTIMATOR-FIRST SERVICE PAGES + "MARKET-RATE" COPY REPLACED SITE-WIDE + SEO HEADINGS + CONTENT BODY i18n (100%)
+
+**User direction (Urdu):** "Astimator ko her service page k bilkul top py rakhen. Or google search krny pr jb website samny ati hy to 1 discription mein ye b likha ata hy k market-rate painting, is mein Jo market ka Lafz hy ye acha ni lgg rha… Kuch or hona chaiye Jo logon k liey attractive hona chahiye. Tamam heading or discriptions ko SEO k lehaaz sy best kren. Or is k ilawa b Jo b Kam hn handoff file mein wo dekhen k kia pending hy or wo kren."
+
+**Handoff check:** Round 34 is ✅ COMPLETED. Its only open item at code level was the Round 33 carry-over: **"Content data body-level MS/ZH — title/intro/category are 100% covered, but the bullet points and FAQ content on individual content pages are still English-only."** That is now closed in this round. Everything else still pending is external (GSC, IndexNow ping, browser visual QA, real photography/reviews).
+
+**Round status:** ✅ **COMPLETED — estimator is now the first block on all 28 service pages, every "market-rate" phrase is gone from customer-facing copy in all 3 languages, service-page headings are SEO-rewritten and trilingual, and the 192 content pages are 100% translated at body level (bullets + FAQs).**
+
+---
+
+### 🎯 1. Estimator moved to the very top of every service page
+
+**What the visitor sees now:** hero (H1 + price + warranty + CTAs) → **instant estimator** → description → everything else. Previously the estimator sat *below* the description block, so the "how much will this cost?" answer — the reason most visitors land on the page — was pushed under a wall of text.
+
+- ✅ **`components/sections/service-detail-content.tsx`** — the `ServiceEstimatorBlock` is now **Section 1**, directly under the hero. Section order is now: estimator → overview → direct answer → price list → process → decision tree → comparison → trust → FAQs → internal links.
+- ✅ **Removed the `next/dynamic` lazy wrapper.** This mattered: with `dynamic()`, the estimator was streamed in through a Suspense boundary, so in the raw HTML it rendered *last* — after every section below it. Verified on the old build: `/services/electrical` emitted "Work out your price now" as the **13th and final H2**. It is now the **2nd heading in the document**, statically rendered.
+  - Verified in production HTML (`next start`, JS-free `curl`): `/services/electrical`, `/services/roof-repair`, `/services/cctv` → 1st heading = H1 service title, 2nd = "Work out your price now"; `/services/painting` → 2nd = "Painting Cost Calculator" (the dedicated-tool card, correct for the 6 deep-tool services).
+  - The estimator block server-renders **~17 KB of real HTML with live RM figures** (`RM 150`, `RM 130`, `RM 200`, `RM 2,200`…) — a crawler or a JS-disabled visitor sees prices immediately, no skeleton.
+  - Exactly one `<h1>` per page preserved; the inline share bar (`/estimate/<slug>`) still rides along.
+- ℹ️ **Bundle cost:** `/services/[slug]` first-load went 394 kB → **427 kB** (+33 kB). Deliberate and accepted: the estimator was always downloaded on this route, `dynamic()` only deferred *when*. Trading a 33 kB earlier download for the page's primary conversion answer being in the initial HTML is the right call for both CWV-perceived value and SEO. Deep tool routes are untouched at 140–146 kB.
+
+---
+
+### 🎯 2. "Market-rate" removed from all customer-facing copy (EN / MS / ZH)
+
+The user is right: **"market-rate" is an internal pricing-discipline term, not a selling phrase.** It told a customer nothing appealing and read like jargon in the Google snippet.
+
+**The Google snippet before → after:**
+
+| | Before | After |
+|---|---|---|
+| Title | `KL Servis Rumah — Market-Rate Painting, Plumbing, Ceiling` | **`KL Servis Rumah — Fixed-Price Home Services in KL & Selangor`** |
+| Description | `Market-rate home services in KL & Selangor: house painting…` | **`Same-day home services in KL & Selangor: house painting, plaster ceiling, plumbing, waterproofing & handyman. Fixed upfront quotes, real warranty.`** |
+
+- ✅ **64 occurrences across 30 files** rewritten into benefit-led language a customer actually responds to: **"fixed-price"**, **"honest upfront pricing"**, **"fair, upfront"**, **"no hidden charges"**, **"you see the real price before you call"**.
+- ✅ **All three languages**, not just English:
+  - **MS:** `harga pasaran` / `kadar pasaran` → **`harga adil`**, **`harga tetap`**, **`kadar adil`** (tagline → *"Harga Tetap Untuk Kerja Rumah…"*)
+  - **ZH:** `市场行情` / `市场价` → **`固定价格`**, **`价格公道透明`** (tagline → *"固定价格家居服务…"*)
+- ✅ Files touched include `config/site.ts` (tagline, description, metaDescription — these three feed **every** page's OG tags, the org schema `slogan`, and the homepage SERP entry), `messages/{en,ms,zh}.json`, `public/{llms.txt,llms-full.txt,aeo-faq.txt,manifest.json,site-summary.json}`, `components/trust-bar.tsx`, and 15 route/component files.
+- ✅ **Internal jargon also removed:** the pricing page's principle card literally said *"Our public pricing follows the handoff rule"* — leaking an internal project term to customers. Rewritten in all 3 languages to *"You see the real price before you call. Never inflated, never a cut-price shortcut — just the fair Klang Valley rate for proper work."*
+- ⚠️ **The pricing discipline itself is unchanged.** Permanent Rule (v7) — "every rate = standard market rate, not more, not less" — still governs every number. **Not a single RM figure moved.** Only the *words describing* the pricing changed. `config/market-rates.ts`, `marketRange`, `publishedRate` and the whole rate book are untouched (those are internal identifiers, never rendered).
+
+---
+
+### 🎯 3. SEO rewrite of service-page headings — and they are now trilingual
+
+Every H2 on the service page body was **hardcoded English** and keyword-thin. They are now translation keys with the service name and locality interpolated, so they carry keywords *and* follow the language pill.
+
+| Section | Before (English-only, hardcoded) | After (EN, + native MS/ZH) |
+|---|---|---|
+| Price list | `{service} pricing breakdown` | **`{service} price list in KL & Selangor`** |
+| Process | `How we deliver {service}` | **`How we deliver {service} — step by step`** |
+| Decision tree | `Should you book this service, a lighter option, or escalate first?` | **`Do you need full {service}, a smaller job, or an inspection first?`** |
+| Comparison | `KL Servis Rumah vs typical home service contractors` | **`KL Servis Rumah vs a typical {service} contractor in KL`** |
+| Trust | `{service} you can trust` | **`{service} in KL & Selangor you can trust`** |
+| FAQs | `{service} — frequently asked questions` | **`{service} FAQs — price, warranty and timing`** |
+
+- ✅ **11 new keys × 3 locales (33 strings)** added to the `serviceContent` namespace in `messages/{en,ms,zh}.json`, with native MS and ZH throughout.
+- ✅ The Direct Answer question was also hardcoded English — now uses the existing (already translated, previously unused) `serviceContent.isRightService` key.
+- ✅ Every heading now carries the **service name + "KL & Selangor"**, which is exactly the long-tail pattern these pages compete for.
+- ✅ **SERP budgets re-verified** through the real optimiser for all 28 services + all 28 `/cost` pages + sub-service pages: **0 titles over 60 chars, 0 descriptions outside the 110–158 band.**
+
+---
+
+### 🎯 4. Pending item closed — content-page body i18n, 164 → 100% at body level
+
+This was the largest open code task in the handoff, carried since Round 33. The 192 generic content pages rendered a **translated heading above English bullets and English FAQs**.
+
+**Why it was left open, and how it was solved cheaply:** translating per page = ~1,500 strings. But the generator in `content-data.ts` only ever emits from a **small closed vocabulary**, so translating per *phrase* = 121 strings.
+
+- ✅ **`config/content-body-i18n.ts` (new)** — 93 bullet phrases × MS + ZH, the 4 generic FAQ templates × MS + ZH (natively written, not machine-mapped), and the `/answers` derived-bullet labels.
+- ✅ **`lib/content-body-i18n.ts` (new)** — `localizeContentBody()` resolver with three tiers:
+  1. **`serviceDerived` pages** (`/answers/*`, `/process/*`, 56 pages) — bullets and FAQs are generated *from* `servicesData`, which is already fully translated, so they are simply re-derived from the localised service. Zero new translation needed.
+  2. **`faqTopic` pages** — the 4 FAQ templates rebuilt natively, with the page's own **already-translated** title substituted for `{topic}` (so a Malay question reads with a Malay noun phrase, not an English one).
+  3. Anything unmatched falls back to English — never to a blank.
+- ✅ **`config/content-data.ts`** — added two metadata fields (`faqTopic`, `serviceDerived`) so the resolver is deterministic rather than string-guessing.
+- ✅ **`components/content/generic-content-page.tsx`** — the dictionary and the body resolver are now loaded in a single `Promise.all`, so the page can never paint a translated heading above an English bullet list. Still dynamically imported (EN visitors download neither).
+- ✅ **Result: 192 pages × 2 locales = 1,614 bullets + 1,536 FAQs, 0 untranslated.**
+- 🐛 **Real bug the coverage check caught:** `servicesData.painting.i18n.ms.process[3].title` was still `"Primer/Undercoat"` — an English string sitting inside the Malay translation block, shipped since the service data was written. Fixed to `"Primer/Lapisan Bawah"`. This also silently affected the Malay `/services/painting` process timeline, not just the content pages.
+
+---
+
+### 🧪 5. New harness section (regression lock)
+
+- ✅ **`scripts/test-estimators.ts`** — new locked section **"Content-page body i18n (bullets + FAQs)"** asserting, for all 192 pages × MS/ZH:
+  1. **Coverage** — no bullet comes back as unchanged ASCII prose (the signature of an untranslated leak).
+  2. **FAQ localisation** — the FAQ answer set must differ from English; ZH pages must contain actual CJK; no unsubstituted `{topic}` tokens.
+  3. **Shape stability** — bullet and FAQ counts never drift, so the layout and the FAQPage JSON-LD stay in lockstep with the English page.
+- ✅ Harness: **231,370 assertions, 0 failures** (was 223,726 — **+7,644**).
+
+---
+
+### ✅ Quality check results (13-point)
+
+- ✅ TypeScript **0 errors** · ESLint **0 errors, 0 warnings**
+- ✅ Build green from a clean `.next` — **4,063 / 4,063 SSG pages**, 0 warnings (unchanged page count — no route changes)
+- ✅ Estimator harness **231,370 assertions, 0 failures**
+- ✅ `npm run seo:audit` runs clean, `docs/seo-audit-report.md` regenerated
+- ✅ Production smoke test (`next start`): HTTP 200 on `/`, `/services`, `/pricing`, `/contact`, `/faq`, `/estimate`, `/estimate/electrical`, `/guides/*`, `/answers/*`, `/process/*`, `/commercial/*`, `/tools`, `/ms/alatan`, `/zh/gongju`, `/areas/kajang`, `/services/painting/cost`
+- ✅ Dedicated-tool redirects intact — `/estimate/painting` → 301 `/tools/painting-calculator`, `/estimate/plumbing` → 301 `/tools/plumbing-diagnostic`
+- ✅ Exactly one `<h1>` per service page; canonical correct (`/services/painting` → self); sitemap.xml **3,018 URLs**
+- ✅ Estimator questions **and live RM prices SSR-rendered** in raw HTML on every service page (no JS required to see a number)
+- ✅ Bundle discipline — deep tool routes unchanged at 140–146 kB; `/services/[slug]` 394 → 427 kB (documented trade-off above)
+- ✅ **Permanent rules honoured** — phone +60 11-1662 7349 untouched, no public SSM display, **zero RM figures changed** (market-rate pricing discipline fully preserved — only the descriptive wording changed), no invented figures, no fake reviews, no internal SEO/AEO/GEO jargon in customer copy (and one pre-existing leak, "the handoff rule", removed)
+
+---
+
+### 📁 Files created (2)
+`config/content-body-i18n.ts` · `lib/content-body-i18n.ts`
+
+### 📁 Files modified (37)
+`components/sections/service-detail-content.tsx` (estimator-first + SEO headings) · `components/content/generic-content-page.tsx` · `components/trust-bar.tsx` · `components/content/content-hub-page.tsx` · `components/exit-intent-popup.tsx` · `components/sections/{locale-problem-view,related-services,subservice-detail-content}.tsx` · `config/{site,content-data,content-i18n,content-body-i18n,services-data,area-data,area-i18n-extra,suburb-data,tools-i18n}.ts` · `lib/{location-i18n,estimator/i18n/tools/painting-en}.ts` · `messages/{en,ms,zh}.json` · `app/page.tsx` · `app/pricing/page.tsx` · `app/services/[slug]/{cost,emergency,[subservice]}/page.tsx` · `app/areas/[slug]/[serviceSlug]/{page,near-me/page}.tsx` · `app/near-me/[serviceSlug]/page.tsx` · `app/suburbs/[slug]/[serviceSlug]/page.tsx` · `public/{llms.txt,llms-full.txt,aeo-faq.txt,manifest.json,site-summary.json}` · `scripts/test-estimators.ts` · `docs/seo-audit-report.md`
+
+---
+
+### ⏳ Still pending after Round 35
+
+**Code-level (nothing blocking; these are enhancements, in priority order):**
+- ⏳ **Area / suburb / problem page body i18n** — the same gap this round closed for content pages still exists for the ~1,742 location pages and 77 problem pages: their *headings* follow the language pill, but some hand-written English body prose in `config/area-data.ts` (the long `intro` / neighbourhood paragraphs) is English-only. The `localizeContentBody` phrase-dictionary pattern established this round is the template to reuse.
+- ⏳ **Sub-service page (`/services/[slug]/[subservice]`) headings** are still hardcoded English in `components/sections/subservice-detail-content.tsx` — the same SEO/trilingual treatment applied to the parent service page this round should be applied there (≈8 headings).
+- ⏳ **`/services/[slug]/cost` and `/emergency` pages are English-only** (no locale view component). They currently render hardcoded English regardless of the language pill.
+- ⏳ Consider re-lazy-loading the estimator **only for the 6 dedicated-tool services**, where the top block is a static link card and not the interactive engine — would claw back part of the +33 kB on those 6 routes.
+
+**External / manual (unchanged, cannot be done from this environment):**
+- ⏳ **GSC:** submit `sitemap.xml` + `sitemap-news.xml` in the console; URL-inspect + request re-indexing — **especially important this round**, since the homepage title and description changed and every service page's heading structure changed. Watch for the new "fixed price" / "upfront price" query cluster.
+- ⏳ **IndexNow:** fire the ping once after deploy (`GET /api/indexnow?secret=…`, needs `INDEXNOW_SECRET` set) — submits all 49 cluster URLs to Bing/Yandex.
+- ⏳ **Visual QA** at 375 px and desktop on the deployed URLs — **specifically confirm the estimator-first layout feels right on mobile**, since it now occupies the first screen after the hero. No browser in this environment; all checks here were HTTP/DOM-level.
+- ⏳ Real photography and verified review import when assets are supplied; GBP optimisation, Bing verification, Rich Results testing on the live domain.
+- ⏳ The rest of the site remains client-side-language-switched (deliberate earlier-round decision, 3× URL inventory).
+
+---
+
 ## 🆕 ROUND 34 EXECUTION LOG (2026-07-27) — BUGS AND CONSISTENCY FIXES (CRITICAL BUGS, WARRANTY, PRICING, SOCIAL PROOF & AUTHENTIC REVIEWS)
 
 **User direction (Urdu/Hindi):** "Jo Kam ni huy wo kren. Handoff file b dekhen or Jo mein issues bta rha hun wo b dekhen. 🔴 Critical bugs (turant fix karo)... 🟠 Trust/consistency issues... 🟡 Strategic/SEO concerns..."

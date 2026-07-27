@@ -93,7 +93,7 @@ export const suburbPages: SuburbDetail[] = rawSuburbs.map((item) => {
     commonIssues: serviceIssues,
     nearbySuburbs,
     metaTitle: `${name} Home Services — Painter, Plumber, Ceiling & Handyman`,
-    metaDesc: `Market-rate painting, plumbing, ceiling, waterproofing and handyman services in ${name}. Transparent quotes, insured teams and WhatsApp booking.`,
+    metaDesc: `Fixed-price painting, plumbing, ceiling, waterproofing and handyman services in ${name}. Transparent quotes, insured teams and WhatsApp booking.`,
     faqs: [
       {
         q: `Do you provide same-day service in ${name}?`,
@@ -105,7 +105,7 @@ export const suburbPages: SuburbDetail[] = rawSuburbs.map((item) => {
       },
       {
         q: `Are prices in ${name} fixed before work starts?`,
-        a: `Yes. We confirm a market-rate, itemized quote before starting, and any additional scope is approved by you first.`
+        a: `Yes. We confirm a fixed-price, itemised quote before starting, and any additional scope is approved by you first.`
       }
     ]
   };

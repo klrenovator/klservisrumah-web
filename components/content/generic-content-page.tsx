@@ -11,12 +11,14 @@ import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
 
 type GenericContentI18nLookup = Partial<Pick<GenericContentPage, "title" | "intro" | "category">> | null;
+type GenericContentBody = { bullets: string[]; faqs: { q: string; a: string }[] } | null;
 
 export function GenericContentPageView({ page }: { page: GenericContentPage }) {
   const t = useTranslations();
   const { lang } = useLang();
   const relatedService = page.relatedServiceSlug ? servicesData[page.relatedServiceSlug] : undefined;
   const [remoteI18n, setRemoteI18n] = useState<GenericContentI18nLookup>(null);
+  const [remoteBody, setRemoteBody] = useState<GenericContentBody>(null);
 
   // Keep the default English bundle lean. Large MS/ZH content dictionaries are
   // loaded only after a visitor actively switches language, instead of being
@@ -26,28 +28,37 @@ export function GenericContentPageView({ page }: { page: GenericContentPage }) {
 
     if (lang === "en") {
       setRemoteI18n(null);
+      setRemoteBody(null);
       return;
     }
 
-    import("@/config/content-i18n").then((module) => {
-      if (cancelled) return;
-      const lookup =
-        lang === "ms"
-          ? module.contentI18nMsFull[page.slug] ?? module.contentI18n[page.slug]
-          : module.contentI18nZhFull[page.slug] ?? module.contentI18nZh[page.slug];
-      setRemoteI18n(lookup ?? null);
-    });
+    // The title/intro/category dictionary and the body (bullets + FAQs)
+    // resolver are loaded together so the page never renders a translated
+    // heading above an English bullet list.
+    Promise.all([import("@/config/content-i18n"), import("@/lib/content-body-i18n")]).then(
+      ([dictionaries, body]) => {
+        if (cancelled) return;
+        const lookup =
+          lang === "ms"
+            ? dictionaries.contentI18nMsFull[page.slug] ?? dictionaries.contentI18n[page.slug]
+            : dictionaries.contentI18nZhFull[page.slug] ?? dictionaries.contentI18nZh[page.slug];
+        setRemoteI18n(lookup ?? null);
+        setRemoteBody(body.localizeContentBody(page, lang, lookup?.title as string | undefined));
+      }
+    );
 
     return () => {
       cancelled = true;
     };
-  }, [lang, page.slug]);
+  }, [lang, page]);
 
   const staticFallback = lang === "ms" ? page.i18n?.ms : lang === "zh" ? page.i18n?.zh : null;
   const i18nLookup = remoteI18n ?? staticFallback;
   const localizedTitle = (i18nLookup?.title as string) ?? page.title;
   const localizedIntro = (i18nLookup?.intro as string) ?? page.intro;
   const localizedCategory = (i18nLookup?.category as string) ?? page.category;
+  const localizedBullets = remoteBody?.bullets ?? page.bullets;
+  const localizedFaqs = remoteBody?.faqs ?? page.faqs;
 
   return (
     <section className="bg-gradient-to-b from-slate-50 to-white py-16 sm:py-20">
@@ -67,7 +78,7 @@ export function GenericContentPageView({ page }: { page: GenericContentPage }) {
         <div className="rounded-3xl border border-slate-100 bg-white p-6 shadow-xs sm:p-8">
           <h2 className="mb-5 text-2xl font-extrabold text-[#075985]">{t("content.keyTakeaways")}</h2>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            {page.bullets.map((bullet) => (
+            {localizedBullets.map((bullet) => (
               <div key={bullet} className="flex items-start gap-3 rounded-2xl bg-slate-50 p-4">
                 <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-emerald-500" />
                 <span className="text-sm font-semibold leading-relaxed text-[#475569]">{bullet}</span>
@@ -120,7 +131,7 @@ export function GenericContentPageView({ page }: { page: GenericContentPage }) {
         <div className="rounded-3xl border border-slate-100 bg-white p-6 shadow-xs sm:p-8">
           <h2 className="mb-5 text-2xl font-extrabold text-[#075985]">{t("content.faqs")}</h2>
           <div className="space-y-4">
-            {page.faqs.map((faq) => (
+            {localizedFaqs.map((faq) => (
               <div key={faq.q} className="rounded-2xl bg-slate-50 p-4">
                 <h3 className="font-extrabold text-[#075985]">{faq.q}</h3>
                 <p className="mt-2 text-sm font-semibold leading-relaxed text-[#475569]">{faq.a}</p>

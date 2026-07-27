@@ -273,7 +273,7 @@ export const paintingEnDict: MessageDictionary = {
   },
   related: {
     service: { label: "House Painting Service", desc: "Full scope, warranty and process" },
-    costGuide: { label: "Painting Cost Guide", desc: "Published 2026 market rates" },
+    costGuide: { label: "Painting Cost Guide", desc: "Published 2026 price list" },
     skimCoat: { label: "Skim Coat & Wall Levelling", desc: "For uneven or patched walls" },
     waterproofing: { label: "Waterproofing", desc: "Fix damp before painting" },
     plasterCeiling: { label: "Plaster Ceiling", desc: "Repair before ceiling repaint" }

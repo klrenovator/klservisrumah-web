@@ -1,7 +1,7 @@
 {
   "common": {
     "siteName": "KL Servis Rumah",
-    "tagline": "市场行情家居服务 — 雪兰莪与吉隆坡的油漆、水管、天花板、防水与杂工服务",
+    "tagline": "固定价格家居服务 — 吉隆坡与雪兰莪的油漆、水管、天花板、防水与杂工",
     "loading": "加载中...",
     "viewAll": "查看全部",
     "viewDetails": "查看详情与价格",
@@ -241,7 +241,7 @@
     "directoryEyebrow": "28 项服务 • 3 种语言",
     "directoryTitle1": "您需要的每一项家居服务",
     "directoryTitle2": "吉隆坡与雪兰莪",
-    "directorySubtitle": "从油漆与水管维修到全屋翻新、电气、清洁与安防——在吉隆坡与雪兰莪全境探索市场行情价格、真实保修与当日服务。",
+    "directorySubtitle": "从油漆与水管维修到全屋翻新、电气、清洁与安防——在吉隆坡与雪兰莪全境探索公开透明的价格、真实保修与当日服务。",
     "browseAll": "浏览所有服务",
     "viewPricingGuide": "查看价格指南",
     "includedSpecialities": "包含专长",
@@ -281,7 +281,7 @@
     "of": "共",
     "openWhatsApp": "再次打开 WhatsApp",
     "formNote": "无需预付定金",
-    "quoteNote": "先提供市场价格报价",
+    "quoteNote": "先给固定报价",
     "selectSuburb": "选择地区...",
     "selectType": "选择类型...",
     "timeWindow": "时间段",
@@ -298,7 +298,7 @@
   },
   "pricing": {
     "pageTitle": "吉隆坡与雪兰莪家居服务价格",
-    "pageSubtitle": "吉隆坡与雪兰莪所有家居服务的透明市场行情价格。无隐藏费用，无意外收费。",
+    "pageSubtitle": "吉隆坡与雪兰莪所有家居服务的价格公道透明。无隐藏费用，无意外收费。",
     "compareHeading": "比较服务价格",
     "compareSubheading": "并排显示我们最常被请求的服务价格，方便您在预订前做好预算。"
   },
@@ -347,7 +347,7 @@
     "positioningLabel": "业务定位",
     "positioningValue": "成熟的本地家居服务公司",
     "pricingLabel": "定价标准",
-    "pricingValue": "透明的市场行情报价",
+    "pricingValue": "透明的固定价报价",
     "officeLabel": "办公区域",
     "statusLabel": "运营状态",
     "statusValue": "正常运营且全面投保",
@@ -379,7 +379,7 @@
   "comparison": {
     "heading": "比较服务",
     "title": "在预订前选择正确的服务",
-    "subtitle": "查看起价、保修与常见任务。最终范围以透明的市场行情报价确认。",
+    "subtitle": "查看起价、保修与常见任务。最终范围以透明的固定价报价确认。",
     "service": "服务",
     "startsFrom": "起价",
     "warranty": "保修",
@@ -451,8 +451,8 @@
     "principlesHeading": "我们的定价原则",
     "principles": {
       "marketRate": {
-        "title": "标准市场行情价",
-        "body": "我们的公开定价遵循规则：不会过高、不会过低，始终与本地正常市场一致。"
+        "title": "公道透明的价格",
+        "body": "打电话之前您就看到真实价格。不抬价，也不用低价敷衍——只是巴生谷正规施工的公道价。"
       },
       "itemized": {
         "title": "开工前逐项列出",
@@ -488,7 +488,7 @@
     "whatsappBox": {
       "eyebrow": "需要更快的答案？",
       "title": "通过 WhatsApp 发送照片",
-      "body": "分享您的区域、测量、照片和时间。我们的团队将引导您找到合适的服务，并在派遣前确认可能的市场行情预算。",
+      "body": "分享您的区域、测量、照片和时间。我们的团队将引导您找到合适的服务，并在派遣前确认您大致的预算。",
       "cta": "WhatsApp 获取价格帮助",
       "phoneLabel": "公共电话与 WhatsApp"
     },
@@ -497,7 +497,7 @@
     "faqs": {
       "0": {
         "q": "您如何设定价格？",
-        "a": "我们遵循巴生谷标准市场行情。价格不会过高或过低。最终报价仅在检查范围、出入、材料和紧急程度后确认。"
+        "a": "我们遵循巴生谷的公道价格。价格不会过高或过低。最终报价仅在检查范围、出入、材料和紧急程度后确认。"
       },
       "1": {
         "q": "您会后来收取隐藏费用吗？",
@@ -526,7 +526,7 @@
   },
   "exitPopup": {
     "badge": "离开之前",
-    "title": "先获取透明的市场行情报价",
+    "title": "先获取透明的固定价报价",
     "body": "在 WhatsApp 上发送照片和您的区域。我们将在任何工作开始前确认范围、价格因素和可用的服务时段。",
     "cta": "WhatsApp 获取报价",
     "closeAria": "关闭弹窗"
@@ -548,7 +548,7 @@
     "nearMeDesc": "选择您的位置以查看当地价格、服务时段与联系方式。"
   },
   "hero": {
-    "subline": "吉隆坡与雪兰莪的市场行情优质家居服务"
+    "subline": "吉隆坡与雪兰莪的优质家居服务，价格公道透明"
   },
   "trustBadgesRow": {
     "insured": "已投保与查证",
@@ -574,7 +574,18 @@
     "warranty": "{days}保修",
     "insuredOps": "已投保运营",
     "sameDayAvail": "可当日服务",
-    "ssmRegistered": "SSM 注册"
+    "ssmRegistered": "SSM 注册",
+    "pricingHeading": "{name}在吉隆坡与雪兰莪的价格表",
+    "pricingSub": "以下每一项收费都逐项列出并提前公开。无隐藏费用、无周末附加费、无交通费。",
+    "pricingNote": "收费会因现场实际尺寸、施工出入难度或升级高级材料而略有不同。最终价格会在开工前由您确认并批准。",
+    "processHeading": "我们如何完成{name} — 逐步流程",
+    "processSub": "每一步都会说明，每个动作都会确认，每次交付都会签收。没有隐藏步骤，没有意外。",
+    "decisionHeading": "您需要完整的{name}、较小的工程，还是先做检查？",
+    "comparisonHeading": "KL Servis Rumah 与吉隆坡一般{name}承包商的比较",
+    "comparisonSub": "我们公开真实价格与真实流程。多数承包商要您先打电话。以下是这个差别对您家的意义。",
+    "trustHeading": "值得信赖的吉隆坡与雪兰莪{name}",
+    "trustSub": "每一次{nameLower}预约都包含这些保障。没有例外，没有小字条款。",
+    "faqHeading": "{name}常见问题 — 价格、保修与时间"
   },
   "subserviceContent": {
     "whatsIncluded": "包括",
@@ -588,7 +599,7 @@
       "3": "专业工具与适当材料",
       "4": "带物业保护的干净施工",
       "5": "交付前的功能和饰面测试",
-      "6": "透明的市场行情最终报价",
+      "6": "清楚的固定最终报价",
       "7": "书面保修文件",
       "8": "WhatsApp 预约与咨询支持"
     }
@@ -629,21 +640,21 @@
     "faqWhichAreas": "你们覆盖{area}的哪些社区？",
     "faqWhichAreasA": "我们覆盖主要地标与社区，包括{landmarks}。请通过 WhatsApp 发送您的确切地址以便确认。",
     "faqHowMuch": "在{area}做{service}需要多少钱？",
-    "faqHowMuchA": "{service}起价为{price}。最终价格会在确认施工范围、出入条件和材料后，按标准市场价确定。",
-    "faqHowMuchSuburbA": "{service}起价为{price}。最终价格按市场价计算，并在确认施工范围、出入条件和材料后确定。",
+    "faqHowMuchA": "{service}起价为{price}。最终价格会在确认施工范围、出入条件和材料后，按我们公开的公道价确定。",
+    "faqHowMuchSuburbA": "{service}起价为{price}。最终价格公道合理，并在确认施工范围、出入条件和材料后确定。",
     "nearMeBadge": "附近本地页面",
     "nearMeH1": "{area}附近的{service} — {price}起",
-    "nearMeIntro": "如果您在{area}搜索附近的“{service}”，KL Servis Rumah 可为{landmarks}一带提供服务。我们的团队会在开工前确认出入条件、施工范围和市场价报价。",
+    "nearMeIntro": "如果您在{area}搜索附近的“{service}”，KL Servis Rumah 可为{landmarks}一带提供服务。我们的团队会在开工前确认出入条件、施工范围和公道报价。",
     "nearMeCta": "通过 WhatsApp 查询最近档期",
     "nearMeFaqAvailable": "{area}附近可以预约{service}吗？",
     "nearMeFaqAvailableA": "可以。我们覆盖{area}及周边地标，例如{landmarks}。",
     "nearMeFaqConfirm": "如何确认最近的派工团队？",
     "nearMeFaqConfirmA": "请通过 WhatsApp 发送您的确切地址或位置定位，我们即可查看最近的可用团队。",
     "nearMeFaqPricing": "附近服务的价格会更高吗？",
-    "nearMeFaqPricingA": "不会随意加价。价格遵循标准市场价，若涉及交通或出入因素，也会在开工前说明。",
+    "nearMeFaqPricingA": "不会随意加价。价格维持同样的公道标准，若涉及交通或出入因素，也会在开工前说明。",
     "nearMeHubBadge": "附近服务",
     "nearMeHubH1": "在吉隆坡与雪兰莪寻找您附近的{service}",
-    "nearMeHubIntro": "KL Servis Rumah 覆盖巴生谷主要地区，价格按市场价透明计算。可使用定位助手，或在下方选择您所在的地区进入本地页面。",
+    "nearMeHubIntro": "KL Servis Rumah 覆盖巴生谷主要地区，价格公道透明。可使用定位助手，或在下方选择您所在的地区进入本地页面。",
     "nearMeHubCovers": "覆盖{landmarks}。",
     "popularSuburbs": "热门社区",
     "nearMeHubCta": "WhatsApp 最近派工",
@@ -660,12 +671,12 @@
     "practicalGuidance": "吉隆坡与雪兰莪实用指南",
     "relatedServices": "相关 {service} 资源",
     "needHelp": "需要将此应用到您的房产？",
-    "needHelpDesc": "请发送照片、区域和首选时间。我们的调度中心将帮助确定合适的服务，并提供市场行情报价。",
+    "needHelpDesc": "请发送照片、区域和首选时间。我们的调度中心将帮助确定合适的服务，并给出公道的报价。",
     "faqs": "常见问题",
     "whatsappDispatch": "WhatsApp 调度",
     "bookingForm": "预订表格",
     "guidanceIntro": "马来西亚住宅面临热带湿度、快速的雨季、共管公寓管理规则以及混合建筑材料。因此，正确的方法取决于表面状况、通道、安规以及是否涉及水或结构移动。",
-    "guidanceSafeApproach": "最安全的方法是列出可能原因的简短清单，收集清晰照片，确认房产类型，并要求市场行情的详细报价。KL Servis Rumah 在开始工作前确认范围，避免随意定价。"
+    "guidanceSafeApproach": "最安全的方法是列出可能原因的简短清单，收集清晰照片，确认房产类型，并索取一份公道的逐项报价。KL Servis Rumah 在开始工作前确认范围，避免随意定价。"
   },
   "faq": {
     "heroEyebrow": "知识库",
@@ -811,10 +822,20 @@
         "noun": "项",
         "plural": "项",
         "presets": {
-          "1": { "label": "只要一项", "hint": "同一地点的单项工作" },
-          "2": { "label": "两项" },
-          "3": { "label": "三项" },
-          "5": { "label": "五项或以上", "hint": "确切数量于现场确认" }
+          "1": {
+            "label": "只要一项",
+            "hint": "同一地点的单项工作"
+          },
+          "2": {
+            "label": "两项"
+          },
+          "3": {
+            "label": "三项"
+          },
+          "5": {
+            "label": "五项或以上",
+            "hint": "确切数量于现场确认"
+          }
         }
       },
       "sqft": {
@@ -822,12 +843,30 @@
         "noun": "平方呎",
         "plural": "平方呎",
         "presets": {
-          "60": { "label": "小型 — 约 60 平方呎", "hint": "浴室或储藏室" },
-          "120": { "label": "标准房间 — 约 120 平方呎", "hint": "10 × 12 呎卧室" },
-          "250": { "label": "大房间 — 约 250 平方呎", "hint": "客厅" },
-          "600": { "label": "小单位 — 约 600 平方呎", "hint": "小型或单身公寓" },
-          "1000": { "label": "公寓 — 约 1,000 平方呎", "hint": "典型三房公寓" },
-          "2000": { "label": "有地住宅 — 约 2,000 平方呎", "hint": "两层排屋" }
+          "60": {
+            "label": "小型 — 约 60 平方呎",
+            "hint": "浴室或储藏室"
+          },
+          "120": {
+            "label": "标准房间 — 约 120 平方呎",
+            "hint": "10 × 12 呎卧室"
+          },
+          "250": {
+            "label": "大房间 — 约 250 平方呎",
+            "hint": "客厅"
+          },
+          "600": {
+            "label": "小单位 — 约 600 平方呎",
+            "hint": "小型或单身公寓"
+          },
+          "1000": {
+            "label": "公寓 — 约 1,000 平方呎",
+            "hint": "典型三房公寓"
+          },
+          "2000": {
+            "label": "有地住宅 — 约 2,000 平方呎",
+            "hint": "两层排屋"
+          }
         }
       },
       "linearft": {
@@ -835,11 +874,26 @@
         "noun": "直线呎",
         "plural": "直线呎",
         "presets": {
-          "6": { "label": "约 6 呎", "hint": "一段短距离" },
-          "10": { "label": "约 10 呎", "hint": "一面标准墙" },
-          "20": { "label": "约 20 呎", "hint": "两面墙或长距离" },
-          "40": { "label": "约 40 呎", "hint": "整间房的周长" },
-          "80": { "label": "约 80 呎或以上", "hint": "现场测量" }
+          "6": {
+            "label": "约 6 呎",
+            "hint": "一段短距离"
+          },
+          "10": {
+            "label": "约 10 呎",
+            "hint": "一面标准墙"
+          },
+          "20": {
+            "label": "约 20 呎",
+            "hint": "两面墙或长距离"
+          },
+          "40": {
+            "label": "约 40 呎",
+            "hint": "整间房的周长"
+          },
+          "80": {
+            "label": "约 80 呎或以上",
+            "hint": "现场测量"
+          }
         }
       },
       "point": {
@@ -847,11 +901,25 @@
         "noun": "点位",
         "plural": "点位",
         "presets": {
-          "1": { "label": "1 个点位" },
-          "4": { "label": "4 个点位", "hint": "一间房" },
-          "8": { "label": "8 个点位", "hint": "两到三间房" },
-          "16": { "label": "16 个点位", "hint": "整套公寓" },
-          "30": { "label": "30 个或以上", "hint": "整间房屋或商用" }
+          "1": {
+            "label": "1 个点位"
+          },
+          "4": {
+            "label": "4 个点位",
+            "hint": "一间房"
+          },
+          "8": {
+            "label": "8 个点位",
+            "hint": "两到三间房"
+          },
+          "16": {
+            "label": "16 个点位",
+            "hint": "整套公寓"
+          },
+          "30": {
+            "label": "30 个或以上",
+            "hint": "整间房屋或商用"
+          }
         }
       },
       "visit": {
@@ -859,10 +927,21 @@
         "noun": "次",
         "plural": "次",
         "presets": {
-          "1": { "label": "单次上门" },
-          "4": { "label": "4 次", "hint": "每周一次，持续一个月" },
-          "12": { "label": "12 次", "hint": "每周一次，持续三个月" },
-          "26": { "label": "26 次", "hint": "每两周一次，持续一年" }
+          "1": {
+            "label": "单次上门"
+          },
+          "4": {
+            "label": "4 次",
+            "hint": "每周一次，持续一个月"
+          },
+          "12": {
+            "label": "12 次",
+            "hint": "每周一次，持续三个月"
+          },
+          "26": {
+            "label": "26 次",
+            "hint": "每两周一次，持续一年"
+          }
         }
       },
       "room": {
@@ -870,11 +949,23 @@
         "noun": "间",
         "plural": "间",
         "presets": {
-          "1": { "label": "1 间" },
-          "2": { "label": "2 间" },
-          "3": { "label": "3 间", "hint": "典型公寓" },
-          "5": { "label": "5 间", "hint": "有地住宅" },
-          "8": { "label": "8 间或以上" }
+          "1": {
+            "label": "1 间"
+          },
+          "2": {
+            "label": "2 间"
+          },
+          "3": {
+            "label": "3 间",
+            "hint": "典型公寓"
+          },
+          "5": {
+            "label": "5 间",
+            "hint": "有地住宅"
+          },
+          "8": {
+            "label": "8 间或以上"
+          }
         }
       },
       "panel": {
@@ -882,31 +973,75 @@
         "noun": "块",
         "plural": "块",
         "presets": {
-          "1": { "label": "1 块" },
-          "2": { "label": "2 块" },
-          "4": { "label": "4 块" },
-          "8": { "label": "8 块或以上" }
+          "1": {
+            "label": "1 块"
+          },
+          "2": {
+            "label": "2 块"
+          },
+          "4": {
+            "label": "4 块"
+          },
+          "8": {
+            "label": "8 块或以上"
+          }
         }
       }
     },
     "modifiers": {
       "condition": {
-        "new": { "label": "全新 / 简单", "hint": "无需先拆除或修补" },
-        "normal": { "label": "一般状况", "hint": "仅标准预处理" },
-        "worn": { "label": "老旧 / 磨损", "hint": "需额外预处理与找补" },
-        "damaged": { "label": "损坏 / 需先修补", "hint": "主要工程前先做修补" }
+        "new": {
+          "label": "全新 / 简单",
+          "hint": "无需先拆除或修补"
+        },
+        "normal": {
+          "label": "一般状况",
+          "hint": "仅标准预处理"
+        },
+        "worn": {
+          "label": "老旧 / 磨损",
+          "hint": "需额外预处理与找补"
+        },
+        "damaged": {
+          "label": "损坏 / 需先修补",
+          "hint": "主要工程前先做修补"
+        }
       },
       "access": {
-        "easy": { "label": "容易 — 底层", "hint": "正常通道，无需登高" },
-        "upper": { "label": "楼上", "hint": "需走楼梯或轻度搭架" },
-        "highrise": { "label": "高层单位", "hint": "需预约电梯并保护地板" },
-        "difficult": { "label": "困难 — 高处或狭窄空间", "hint": "需搭架或作业空间受限" }
+        "easy": {
+          "label": "容易 — 底层",
+          "hint": "正常通道，无需登高"
+        },
+        "upper": {
+          "label": "楼上",
+          "hint": "需走楼梯或轻度搭架"
+        },
+        "highrise": {
+          "label": "高层单位",
+          "hint": "需预约电梯并保护地板"
+        },
+        "difficult": {
+          "label": "困难 — 高处或狭窄空间",
+          "hint": "需搭架或作业空间受限"
+        }
       },
       "urgency": {
-        "standard": { "label": "标准排期", "hint": "下一个可用时段——价格最低" },
-        "week": { "label": "一周内", "hint": "优先排期" },
-        "urgent": { "label": "加急 — 48 小时", "hint": "为您调动班组" },
-        "emergency": { "label": "紧急 — 当天", "hint": "立即派工" }
+        "standard": {
+          "label": "标准排期",
+          "hint": "下一个可用时段——价格最低"
+        },
+        "week": {
+          "label": "一周内",
+          "hint": "优先排期"
+        },
+        "urgent": {
+          "label": "加急 — 48 小时",
+          "hint": "为您调动班组"
+        },
+        "emergency": {
+          "label": "紧急 — 当天",
+          "hint": "立即派工"
+        }
       }
     }
   },

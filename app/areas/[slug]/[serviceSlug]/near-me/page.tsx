@@ -44,7 +44,7 @@ export default async function NearMePage(props: { params: Promise<{ slug: string
   const faqs = [
     { q: `Is ${service.title} available near me in ${area.name}?`, a: `Yes. We cover ${area.name} and nearby landmarks such as ${area.landmarks.slice(0, 4).join(", ")}.` },
     { q: "How do I confirm nearest dispatch?", a: "Send your exact address or pin location on WhatsApp so we can check the closest available crew." },
-    { q: "Will near-me pricing be higher?", a: "No arbitrary uplift. Prices follow standard market rate, with travel or access factors stated before work begins." }
+    { q: "Will near-me pricing be higher?", a: "No arbitrary uplift. Prices stay the same fair rate, with travel or access factors stated before work begins." }
   ];
 
   return (

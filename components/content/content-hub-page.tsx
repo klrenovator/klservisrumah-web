@@ -167,7 +167,7 @@ export function ContentHubPage({
                 <p className="text-xs font-black uppercase tracking-widest text-sky-100">Need a local opinion?</p>
                 <h2 className="mt-2 text-2xl font-black sm:text-3xl">Send photos and your area — we will recommend the right next step.</h2>
                 <p className="mt-3 max-w-2xl text-sm font-semibold leading-relaxed text-sky-50">
-                  KL Servis Rumah covers {siteConfig.areas.slice(0, 10).join(", ")} and the wider Klang Valley with transparent market-rate quotes.
+                  KL Servis Rumah covers {siteConfig.areas.slice(0, 10).join(", ")} and the wider Klang Valley with transparent fixed-price quotes.
                 </p>
               </div>
               <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">

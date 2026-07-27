@@ -1,7 +1,7 @@
 {
   "common": {
     "siteName": "KL Servis Rumah",
-    "tagline": "Perkhidmatan Rumah Harga Pasaran — Mengecat, Paip, Siling, Kalis Air & Kerja Tangan di KL & Selangor",
+    "tagline": "Harga Tetap Untuk Kerja Rumah — Mengecat, Paip, Siling, Kalis Air & Kerja Tangan di KL & Selangor",
     "loading": "Memuatkan...",
     "viewAll": "Lihat semua",
     "viewDetails": "Lihat butiran & harga",
@@ -241,7 +241,7 @@
     "directoryEyebrow": "28 Perkhidmatan • 3 Bahasa",
     "directoryTitle1": "Setiap Perkhidmatan Rumah Anda Perlukan",
     "directoryTitle2": "di KL & Selangor",
-    "directorySubtitle": "Daripada pengecatan dan paip kepada pengubahsuaian penuh, elektrik, pembersihan, dan keselamatan — temui harga pasaran, jaminan sebenar, dan ketersediaan hari yang sama di seluruh KL & Selangor.",
+    "directorySubtitle": "Daripada pengecatan dan paip kepada pengubahsuaian penuh, elektrik, pembersihan, dan keselamatan — temui harga telus di depan, jaminan sebenar, dan ketersediaan hari yang sama di seluruh KL & Selangor.",
     "browseAll": "Semak Semua Perkhidmatan",
     "viewPricingGuide": "Lihat Panduan Harga",
     "includedSpecialities": "Termasuk Kepakaran",
@@ -281,7 +281,7 @@
     "of": "daripada",
     "openWhatsApp": "Buka WhatsApp Lagi",
     "formNote": "Tiada deposit pendahuluan",
-    "quoteNote": "Sebut harga pasaran dahulu",
+    "quoteNote": "Sebut harga tetap dahulu",
     "selectSuburb": "Pilih kawasan...",
     "selectType": "Pilih jenis...",
     "timeWindow": "Waktu pilihan",
@@ -347,7 +347,7 @@
     "positioningLabel": "Kedudukan Perniagaan",
     "positioningValue": "Syarikat perkhidmatan rumah tempatan yang mantap",
     "pricingLabel": "Piawaian Harga",
-    "pricingValue": "Sebut harga pasaran yang telus",
+    "pricingValue": "Sebut harga tetap yang telus",
     "officeLabel": "Kawasan Pejabat",
     "statusLabel": "Status Operasi",
     "statusValue": "Aktif & Diinsuranskan Sepenuhnya",
@@ -379,7 +379,7 @@
   "comparison": {
     "heading": "Bandingkan perkhidmatan",
     "title": "Pilih perkhidmatan yang betul sebelum membuat tempahan",
-    "subtitle": "Semak harga permulaan, jaminan dan tugas biasa. Skop akhir disahkan dengan sebut harga pasaran yang telus.",
+    "subtitle": "Semak harga permulaan, jaminan dan tugas biasa. Skop akhir disahkan dengan sebut harga tetap yang telus.",
     "service": "Perkhidmatan",
     "startsFrom": "Bermula dari",
     "warranty": "Jaminan",
@@ -451,8 +451,8 @@
     "principlesHeading": "Prinsip harga kami",
     "principles": {
       "marketRate": {
-        "title": "Harga pasaran standard",
-        "body": "Harga awam kami mengikut peraturan: tidak terlalu tinggi, tidak terlalu rendah, dan sentiasa selari dengan pasaran tempatan biasa."
+        "title": "Harga adil & jujur",
+        "body": "Anda nampak harga sebenar sebelum menelefon. Tidak dinaikkan, bukan juga jalan pintas murah — hanya kadar Lembah Klang yang adil untuk kerja yang betul."
       },
       "itemized": {
         "title": "Diperincikan sebelum kerja",
@@ -497,7 +497,7 @@
     "faqs": {
       "0": {
         "q": "Bagaimana anda menetapkan harga?",
-        "a": "Kami mengikut kadar pasaran standard Lembah Klang. Harga tidak dinaikkan dan tidak dikurangkan. Sebut harga akhir disahkan hanya selepas skop, akses, bahan dan keterdesakan disemak."
+        "a": "Kami mengikut kadar Lembah Klang yang adil. Harga tidak dinaikkan dan tidak dikurangkan. Sebut harga akhir disahkan hanya selepas skop, akses, bahan dan keterdesakan disemak."
       },
       "1": {
         "q": "Adakah anda mengenakan caj tersembunyi kemudian?",
@@ -526,7 +526,7 @@
   },
   "exitPopup": {
     "badge": "Sebelum anda pergi",
-    "title": "Dapatkan sebut harga pasaran yang telus dahulu",
+    "title": "Dapatkan sebut harga tetap yang telus dahulu",
     "body": "Hantar foto dan kawasan anda di WhatsApp. Kami akan mengesahkan skop, faktor harga, dan slot perkhidmatan yang tersedia sebelum sebarang kerja bermula.",
     "cta": "WhatsApp untuk Sebut Harga",
     "closeAria": "Tutup popup"
@@ -548,7 +548,7 @@
     "nearMeDesc": "Pilih lokasi anda untuk melihat harga tempatan, ketersediaan dan maklumat perhubungan."
   },
   "hero": {
-    "subline": "Perkhidmatan rumah premium di KL & Selangor dengan harga pasaran"
+    "subline": "Perkhidmatan rumah premium di KL & Selangor dengan harga adil dan telus"
   },
   "trustBadgesRow": {
     "insured": "Diinsuranskan & Disahkan",
@@ -574,7 +574,18 @@
     "warranty": "{days} Jaminan",
     "insuredOps": "Operasi Diinsuranskan",
     "sameDayAvail": "Hari Sama Tersedia",
-    "ssmRegistered": "Berdaftar SSM"
+    "ssmRegistered": "Berdaftar SSM",
+    "pricingHeading": "Senarai harga {name} di KL & Selangor",
+    "pricingSub": "Setiap kadar di bawah diperincikan dan disiarkan di depan. Tiada caj tersembunyi, tiada caj hujung minggu, tiada bayaran pengangkutan.",
+    "pricingNote": "Kadar berubah sedikit mengikut ukuran sebenar di tapak, akses yang sukar, atau naik taraf bahan premium. Harga akhir anda disahkan dan diluluskan oleh anda sebelum sebarang kerja bermula.",
+    "processHeading": "Bagaimana kami menyiapkan {name} — langkah demi langkah",
+    "processSub": "Setiap langkah diterangkan, setiap tindakan disahkan, dan setiap serahan ditandatangani. Tiada langkah tersembunyi, tiada kejutan.",
+    "decisionHeading": "Anda perlukan {name} penuh, kerja lebih kecil, atau pemeriksaan dahulu?",
+    "comparisonHeading": "KL Servis Rumah berbanding kontraktor {name} biasa di KL",
+    "comparisonSub": "Kami menyiarkan harga sebenar dan proses sebenar. Kebanyakan kontraktor suruh anda telefon dahulu. Inilah maksud perbezaan itu untuk rumah anda.",
+    "trustHeading": "{name} di KL & Selangor yang boleh anda percayai",
+    "trustSub": "Setiap tempahan {nameLower} disertakan jaminan ini. Tiada pengecualian, tiada cetakan halus.",
+    "faqHeading": "Soalan lazim {name} — harga, jaminan dan masa"
   },
   "subserviceContent": {
     "whatsIncluded": "Apa yang disertakan",
@@ -629,21 +640,21 @@
     "faqWhichAreas": "Kawasan {area} yang manakah anda liputi?",
     "faqWhichAreasA": "Kami meliputi mercu tanda dan kawasan utama termasuk {landmarks}. Hantar alamat tepat anda di WhatsApp untuk pengesahan.",
     "faqHowMuch": "Berapakah kos {service} di {area}?",
-    "faqHowMuchA": "{service} bermula dari {price}. Harga akhir disahkan pada kadar pasaran standard selepas skop, akses dan bahan diperiksa.",
-    "faqHowMuchSuburbA": "{service} bermula dari {price}. Harga akhir mengikut kadar pasaran dan disahkan selepas skop, akses dan bahan diperiksa.",
+    "faqHowMuchA": "{service} bermula dari {price}. Harga akhir disahkan pada kadar tersiar kami yang adil selepas skop, akses dan bahan diperiksa.",
+    "faqHowMuchSuburbA": "{service} bermula dari {price}. Harga akhir adalah adil dan disahkan selepas skop, akses dan bahan diperiksa.",
     "nearMeBadge": "Halaman tempatan berdekatan",
     "nearMeH1": "{service} Berdekatan Saya di {area} — Dari {price}",
-    "nearMeIntro": "Jika anda mencari “{service}” berdekatan anda di {area}, KL Servis Rumah boleh membantu di seluruh {landmarks}. Pasukan kami mengesahkan akses, skop, dan harga kadar pasaran sebelum kerja bermula.",
+    "nearMeIntro": "Jika anda mencari “{service}” berdekatan anda di {area}, KL Servis Rumah boleh membantu di seluruh {landmarks}. Pasukan kami mengesahkan akses, skop, dan harga adil dan telus sebelum kerja bermula.",
     "nearMeCta": "Semak slot terdekat di WhatsApp",
     "nearMeFaqAvailable": "Adakah {service} tersedia berdekatan saya di {area}?",
     "nearMeFaqAvailableA": "Ya. Kami meliputi {area} dan mercu tanda berdekatan seperti {landmarks}.",
     "nearMeFaqConfirm": "Bagaimana saya mengesahkan dispatch terdekat?",
     "nearMeFaqConfirmA": "Hantar alamat tepat atau pin lokasi anda di WhatsApp supaya kami boleh menyemak krew terdekat yang tersedia.",
     "nearMeFaqPricing": "Adakah harga berdekatan lebih mahal?",
-    "nearMeFaqPricingA": "Tiada kenaikan sewenang-wenangnya. Harga mengikut kadar pasaran standard, dengan faktor perjalanan atau akses dinyatakan sebelum kerja bermula.",
+    "nearMeFaqPricingA": "Tiada kenaikan sewenang-wenangnya. Harga kekal pada kadar adil yang sama, dengan faktor perjalanan atau akses dinyatakan sebelum kerja bermula.",
     "nearMeHubBadge": "Berdekatan saya",
     "nearMeHubH1": "Cari {service} Berdekatan Anda di KL & Selangor",
-    "nearMeHubIntro": "KL Servis Rumah meliputi kawasan utama Lembah Klang dengan harga kadar pasaran yang telus. Gunakan pembantu pencari lokasi atau pilih kawasan anda di bawah untuk ke halaman tempatan.",
+    "nearMeHubIntro": "KL Servis Rumah meliputi kawasan utama Lembah Klang dengan harga adil yang telus. Gunakan pembantu pencari lokasi atau pilih kawasan anda di bawah untuk ke halaman tempatan.",
     "nearMeHubCovers": "Meliputi {landmarks}.",
     "popularSuburbs": "Kawasan popular",
     "nearMeHubCta": "WhatsApp dispatch terdekat",
@@ -660,12 +671,12 @@
     "practicalGuidance": "Panduan praktikal untuk KL & Selangor",
     "relatedServices": "Sumber berkaitan {service}",
     "needHelp": "Perlu bantuan menerapkan ini pada harta anda?",
-    "needHelpDesc": "Hantar foto, kawasan, dan masa pilihan anda. Meja penghantaran kami akan membantu mengenal pasti perkhidmatan sesuai dan sebut harga mengikut kadar pasaran.",
+    "needHelpDesc": "Hantar foto, kawasan, dan masa pilihan anda. Meja penghantaran kami akan membantu mengenal pasti perkhidmatan sesuai dan sebut harga yang adil dan telus.",
     "faqs": "Soalan Lazim",
     "whatsappDispatch": "Penghantaran WhatsApp",
     "bookingForm": "Borang tempahan",
     "guidanceIntro": "Rumah-rumah Malaysia menghadapi kelembapan tropika, kitaran hujan pantas, peraturan pengurusan kondo, dan bahan binaan campuran. Ini bermakna kaedah yang betul bergantung pada keadaan permukaan, akses, keperluan keselamatan, dan sama ada air atau pergerakan struktur terlibat.",
-    "guidanceSafeApproach": "Pendekatan paling selamat ialah membuat senarai pendek kemungkinan punca, mengumpul foto yang jelas, mengesahkan jenis hartanah, dan meminta sebut harga terperinci mengikut kadar pasaran. KL Servis Rumah mengesahkan skop sebelum kerja bermula dan mengelakkan penetapan harga sewenang-wenangnya."
+    "guidanceSafeApproach": "Pendekatan paling selamat ialah membuat senarai pendek kemungkinan punca, mengumpul foto yang jelas, mengesahkan jenis hartanah, dan meminta sebut harga tetap yang terperinci. KL Servis Rumah mengesahkan skop sebelum kerja bermula dan mengelakkan penetapan harga sewenang-wenangnya."
   },
   "faq": {
     "heroEyebrow": "Pusat Pengetahuan",
@@ -811,10 +822,20 @@
         "noun": "kerja",
         "plural": "kerja",
         "presets": {
-          "1": { "label": "Satu sahaja", "hint": "Satu kerja di satu lokasi" },
-          "2": { "label": "Dua" },
-          "3": { "label": "Tiga" },
-          "5": { "label": "Lima atau lebih", "hint": "Kami sahkan jumlah tepat di tapak" }
+          "1": {
+            "label": "Satu sahaja",
+            "hint": "Satu kerja di satu lokasi"
+          },
+          "2": {
+            "label": "Dua"
+          },
+          "3": {
+            "label": "Tiga"
+          },
+          "5": {
+            "label": "Lima atau lebih",
+            "hint": "Kami sahkan jumlah tepat di tapak"
+          }
         }
       },
       "sqft": {
@@ -822,12 +843,30 @@
         "noun": "kaki persegi",
         "plural": "kaki persegi",
         "presets": {
-          "60": { "label": "Kecil — kira-kira 60 kaki persegi", "hint": "Bilik mandi atau stor" },
-          "120": { "label": "Bilik biasa — kira-kira 120 kaki persegi", "hint": "Bilik tidur 10 × 12 ft" },
-          "250": { "label": "Bilik besar — kira-kira 250 kaki persegi", "hint": "Ruang tamu" },
-          "600": { "label": "Unit kecil — kira-kira 600 kaki persegi", "hint": "Studio atau pangsapuri kecil" },
-          "1000": { "label": "Kondo — kira-kira 1,000 kaki persegi", "hint": "Kondo 3 bilik biasa" },
-          "2000": { "label": "Rumah berkembar — kira-kira 2,000 kaki persegi", "hint": "Teres 2 tingkat" }
+          "60": {
+            "label": "Kecil — kira-kira 60 kaki persegi",
+            "hint": "Bilik mandi atau stor"
+          },
+          "120": {
+            "label": "Bilik biasa — kira-kira 120 kaki persegi",
+            "hint": "Bilik tidur 10 × 12 ft"
+          },
+          "250": {
+            "label": "Bilik besar — kira-kira 250 kaki persegi",
+            "hint": "Ruang tamu"
+          },
+          "600": {
+            "label": "Unit kecil — kira-kira 600 kaki persegi",
+            "hint": "Studio atau pangsapuri kecil"
+          },
+          "1000": {
+            "label": "Kondo — kira-kira 1,000 kaki persegi",
+            "hint": "Kondo 3 bilik biasa"
+          },
+          "2000": {
+            "label": "Rumah berkembar — kira-kira 2,000 kaki persegi",
+            "hint": "Teres 2 tingkat"
+          }
         }
       },
       "linearft": {
@@ -835,11 +874,26 @@
         "noun": "kaki larian",
         "plural": "kaki larian",
         "presets": {
-          "6": { "label": "Kira-kira 6 ft", "hint": "Satu larian pendek" },
-          "10": { "label": "Kira-kira 10 ft", "hint": "Satu dinding biasa" },
-          "20": { "label": "Kira-kira 20 ft", "hint": "Dua dinding atau larian panjang" },
-          "40": { "label": "Kira-kira 40 ft", "hint": "Perimeter satu bilik penuh" },
-          "80": { "label": "Kira-kira 80 ft atau lebih", "hint": "Diukur di tapak" }
+          "6": {
+            "label": "Kira-kira 6 ft",
+            "hint": "Satu larian pendek"
+          },
+          "10": {
+            "label": "Kira-kira 10 ft",
+            "hint": "Satu dinding biasa"
+          },
+          "20": {
+            "label": "Kira-kira 20 ft",
+            "hint": "Dua dinding atau larian panjang"
+          },
+          "40": {
+            "label": "Kira-kira 40 ft",
+            "hint": "Perimeter satu bilik penuh"
+          },
+          "80": {
+            "label": "Kira-kira 80 ft atau lebih",
+            "hint": "Diukur di tapak"
+          }
         }
       },
       "point": {
@@ -847,11 +901,25 @@
         "noun": "mata",
         "plural": "mata",
         "presets": {
-          "1": { "label": "1 mata" },
-          "4": { "label": "4 mata", "hint": "Satu bilik" },
-          "8": { "label": "8 mata", "hint": "Dua hingga tiga bilik" },
-          "16": { "label": "16 mata", "hint": "Seluruh unit kondo" },
-          "30": { "label": "30 atau lebih", "hint": "Seluruh rumah atau komersial" }
+          "1": {
+            "label": "1 mata"
+          },
+          "4": {
+            "label": "4 mata",
+            "hint": "Satu bilik"
+          },
+          "8": {
+            "label": "8 mata",
+            "hint": "Dua hingga tiga bilik"
+          },
+          "16": {
+            "label": "16 mata",
+            "hint": "Seluruh unit kondo"
+          },
+          "30": {
+            "label": "30 atau lebih",
+            "hint": "Seluruh rumah atau komersial"
+          }
         }
       },
       "visit": {
@@ -859,10 +927,21 @@
         "noun": "lawatan",
         "plural": "lawatan",
         "presets": {
-          "1": { "label": "Lawatan sekali" },
-          "4": { "label": "4 lawatan", "hint": "Mingguan sebulan" },
-          "12": { "label": "12 lawatan", "hint": "Mingguan tiga bulan" },
-          "26": { "label": "26 lawatan", "hint": "Dua minggu sekali setahun" }
+          "1": {
+            "label": "Lawatan sekali"
+          },
+          "4": {
+            "label": "4 lawatan",
+            "hint": "Mingguan sebulan"
+          },
+          "12": {
+            "label": "12 lawatan",
+            "hint": "Mingguan tiga bulan"
+          },
+          "26": {
+            "label": "26 lawatan",
+            "hint": "Dua minggu sekali setahun"
+          }
         }
       },
       "room": {
@@ -870,11 +949,23 @@
         "noun": "bilik",
         "plural": "bilik",
         "presets": {
-          "1": { "label": "1 bilik" },
-          "2": { "label": "2 bilik" },
-          "3": { "label": "3 bilik", "hint": "Kondo biasa" },
-          "5": { "label": "5 bilik", "hint": "Rumah berkembar" },
-          "8": { "label": "8 bilik atau lebih" }
+          "1": {
+            "label": "1 bilik"
+          },
+          "2": {
+            "label": "2 bilik"
+          },
+          "3": {
+            "label": "3 bilik",
+            "hint": "Kondo biasa"
+          },
+          "5": {
+            "label": "5 bilik",
+            "hint": "Rumah berkembar"
+          },
+          "8": {
+            "label": "8 bilik atau lebih"
+          }
         }
       },
       "panel": {
@@ -882,31 +973,75 @@
         "noun": "panel",
         "plural": "panel",
         "presets": {
-          "1": { "label": "1 panel" },
-          "2": { "label": "2 panel" },
-          "4": { "label": "4 panel" },
-          "8": { "label": "8 panel atau lebih" }
+          "1": {
+            "label": "1 panel"
+          },
+          "2": {
+            "label": "2 panel"
+          },
+          "4": {
+            "label": "4 panel"
+          },
+          "8": {
+            "label": "8 panel atau lebih"
+          }
         }
       }
     },
     "modifiers": {
       "condition": {
-        "new": { "label": "Baru / mudah", "hint": "Tiada yang perlu dibuang atau dibaiki dahulu" },
-        "normal": { "label": "Keadaan biasa", "hint": "Penyediaan standard sahaja" },
-        "worn": { "label": "Lama / haus", "hint": "Penyediaan tambahan dan pembaikan" },
-        "damaged": { "label": "Rosak / perlu dibaiki dahulu", "hint": "Kerja pembaikan sebelum kerja utama" }
+        "new": {
+          "label": "Baru / mudah",
+          "hint": "Tiada yang perlu dibuang atau dibaiki dahulu"
+        },
+        "normal": {
+          "label": "Keadaan biasa",
+          "hint": "Penyediaan standard sahaja"
+        },
+        "worn": {
+          "label": "Lama / haus",
+          "hint": "Penyediaan tambahan dan pembaikan"
+        },
+        "damaged": {
+          "label": "Rosak / perlu dibaiki dahulu",
+          "hint": "Kerja pembaikan sebelum kerja utama"
+        }
       },
       "access": {
-        "easy": { "label": "Mudah — tingkat bawah", "hint": "Akses biasa, tiada yang perlu dipanjat" },
-        "upper": { "label": "Tingkat atas", "hint": "Tangga atau staging ringan" },
-        "highrise": { "label": "Unit tinggi", "hint": "Tempahan lif dan perlindungan lantai" },
-        "difficult": { "label": "Sukar — ketinggian atau ruang sempit", "hint": "Pancang atau ruang kerja terhad" }
+        "easy": {
+          "label": "Mudah — tingkat bawah",
+          "hint": "Akses biasa, tiada yang perlu dipanjat"
+        },
+        "upper": {
+          "label": "Tingkat atas",
+          "hint": "Tangga atau staging ringan"
+        },
+        "highrise": {
+          "label": "Unit tinggi",
+          "hint": "Tempahan lif dan perlindungan lantai"
+        },
+        "difficult": {
+          "label": "Sukar — ketinggian atau ruang sempit",
+          "hint": "Pancang atau ruang kerja terhad"
+        }
       },
       "urgency": {
-        "standard": { "label": "Jadual biasa", "hint": "Slot seterusnya tersedia — harga terendah" },
-        "week": { "label": "Dalam seminggu", "hint": "Penjadualan keutamaan" },
-        "urgent": { "label": "Mendesak — 48 jam", "hint": "Kru disusun semula untuk anda" },
-        "emergency": { "label": "Kecemasan — hari sama", "hint": "Penghantaran serta-merta" }
+        "standard": {
+          "label": "Jadual biasa",
+          "hint": "Slot seterusnya tersedia — harga terendah"
+        },
+        "week": {
+          "label": "Dalam seminggu",
+          "hint": "Penjadualan keutamaan"
+        },
+        "urgent": {
+          "label": "Mendesak — 48 jam",
+          "hint": "Kru disusun semula untuk anda"
+        },
+        "emergency": {
+          "label": "Kecemasan — hari sama",
+          "hint": "Penghantaran serta-merta"
+        }
       }
     }
   },

@@ -48,7 +48,7 @@ export default async function EmergencyPage(props: { params: Promise<{ slug: str
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <span className="inline-flex items-center gap-2 rounded-full bg-rose-100 px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-rose-600"><AlertTriangle className="h-4 w-4" /> Urgent response guide</span>
           <h1 className="mt-4 text-3xl font-extrabold text-[#075985] sm:text-5xl">Emergency {service.title} in KL & Selangor</h1>
-          <p className="mt-4 text-base font-semibold leading-relaxed text-[#475569]">For urgent problems, send photos, your area, and a short video if safe. We triage the risk, explain immediate steps, and confirm a market-rate emergency quote before permanent work begins.</p>
+          <p className="mt-4 text-base font-semibold leading-relaxed text-[#475569]">For urgent problems, send photos, your area, and a short video if safe. We triage the risk, explain immediate steps, and confirm a fixed emergency quote before permanent work begins.</p>
 
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
             {["Stop or isolate the source if safe", "Send photos and your location", "Approve the quote before repair starts"].map((step, idx) => (

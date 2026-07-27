@@ -17,6 +17,8 @@
  * Run: npm run test:estimators
  */
 
+import { allGenericPages } from "../config/content-data.ts";
+import { localizeContentBody } from "../lib/content-body-i18n.ts";
 import { paintingSpec, PAINT_TARGETS } from "../lib/estimator/painting.ts";
 import { leakSpec, LEAK_LOCATIONS } from "../lib/estimator/leak.ts";
 import { ceilingSpec, CEILING_TYPES } from "../lib/estimator/ceiling.ts";
@@ -1078,6 +1080,72 @@ console.log("\n• Localised tool pages (config/tools-i18n.ts)");
 
   const localePages = Object.keys(toolsContent).length * 2;
   console.log(`  ✓ ${localePages} localised tool pages + 2 indexes — slugs, rates, figures, names and budgets verified`);
+}
+
+/* ── Content-page body i18n (bullets + FAQs on the 192 generic pages) ───
+   `config/content-i18n.ts` covers title/intro/category for every content
+   page. This section locks the *body* — the "Key takeaways" bullet grid and
+   the FAQ accordion — which used to render English under a translated
+   heading. Three invariants:
+
+   1. Full coverage — every bullet on every page resolves to a real MS and ZH
+      string. A miss means an English phrase leaking into a translated page.
+   2. FAQ localisation — every page's four FAQs come back in the target
+      language (either the native templates, or the already-translated
+      service FAQs for the derived /answers and /process pages).
+   3. Shape stability — the localiser never changes the number of bullets or
+      FAQs, so the layout and the FAQPage JSON-LD stay in lockstep with the
+      English page. */
+console.log("\n• Content-page body i18n (bullets + FAQs)");
+{
+  // Latin letters/digits/punctuation only — i.e. prose that never went
+  // through translation. Written as a negated non-ASCII class to keep the
+  // linter's no-control-regex rule happy.
+  const ASCII_ONLY = (value: string) => !/[^\u0020-\u007E]/.test(value);
+  const CJK = /[\u4e00-\u9fff]/;
+  let bulletChecks = 0;
+  let faqChecks = 0;
+  for (const page of allGenericPages) {
+    for (const locale of ["ms", "zh"] as const) {
+      const body = localizeContentBody(page, locale, undefined);
+
+      assert(
+        body.bullets.length === page.bullets.length,
+        `[${page.slug}] ${locale}: bullet count drifted (${body.bullets.length} vs ${page.bullets.length})`
+      );
+      assert(
+        body.faqs.length === page.faqs.length,
+        `[${page.slug}] ${locale}: FAQ count drifted (${body.faqs.length} vs ${page.faqs.length})`
+      );
+
+      body.bullets.forEach((bullet, index) => {
+        const english = page.bullets[index];
+        // A bullet that is unchanged AND still pure ASCII prose is an
+        // untranslated leak. Short tokens (RM figures, "01:", dates) and
+        // brand names legitimately survive translation unchanged.
+        const leaked = bullet === english && ASCII_ONLY(bullet) && bullet.length > 3;
+        assert(!leaked, `[${page.slug}] ${locale}: bullet "${bullet}" has no translation`);
+        assert(bullet.trim().length > 0, `[${page.slug}] ${locale}: empty bullet at ${index}`);
+        bulletChecks++;
+      });
+
+      body.faqs.forEach((faq, index) => {
+        assert(faq.q.trim().length > 0 && faq.a.trim().length > 0, `[${page.slug}] ${locale}: empty FAQ at ${index}`);
+        assert(!faq.q.includes("{topic}"), `[${page.slug}] ${locale}: unsubstituted {topic} in FAQ ${index}`);
+        faqChecks++;
+      });
+
+      // The whole FAQ block must actually differ from English.
+      const sameAsEnglish = body.faqs.every((faq, index) => faq.a === page.faqs[index].a);
+      assert(!sameAsEnglish, `[${page.slug}] ${locale}: FAQ answers are still the English ones`);
+
+      if (locale === "zh") {
+        const hasChinese = body.faqs.some((faq) => CJK.test(faq.a));
+        assert(hasChinese, `[${page.slug}] zh: no Chinese found in any FAQ answer`);
+      }
+    }
+  }
+  console.log(`  ✓ ${allGenericPages.length} content pages × 2 locales — ${bulletChecks} bullets, ${faqChecks} FAQs all localised`);
 }
 
 /* ── Summary ───────────────────────────────────────────────────────────── */

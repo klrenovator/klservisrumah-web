@@ -166,7 +166,7 @@ export const toolsContentI18n: Record<ToolLocale, Record<string, ToolContentI18n
         { scope: "Rawatan kelembapan dinding", note: "Efloresens dan penghalang lembapan" }
       ],
       priceTableNote:
-        "Ini adalah kadar diterbitkan yang sama digunakan oleh kalkulator. Ia mencerminkan harga pasaran Lembah Klang standard untuk 2026 — tidak dilambungkan, tidak terlalu murah.",
+        "Ini adalah kadar diterbitkan yang sama digunakan oleh kalkulator. Ia mencerminkan harga Lembah Klang yang adil untuk 2026 — tidak dilambungkan, tidak terlalu murah.",
       faqs: [
         { q: "Berapa kos mengecat satu bilik di KL?", a: `Bilik tidur standard 10 × 12 kaki dengan dinding dalam keadaan baik biasanya berhampiran minimum diterbitkan kami iaitu ${money(RATES.painting.roomMinimum)} setiap bilik. Bilik lebih besar, siling tinggi, pertukaran ke warna gelap atau baik pulih retak teruk menaikkan angka itu — dan itulah yang dimodelkan oleh kalkulator.` },
         { q: "Berapa kos mengecat luaran rumah di Selangor?", a: `Pengecatan luaran berharga ${band(RATES.painting.exteriorSqft.low, RATES.painting.exteriorSqft.high)} sekaki persegi bergantung pada akses dan sistem cat, bermula dari ${money(RATES.painting.exteriorMinimum)} untuk fasad kecil. Perancah atau akses tali menambah kos, dan kalkulator merangkumi kedua-dua pilihan.` },
@@ -510,7 +510,7 @@ export const toolsContentI18n: Record<ToolLocale, Record<string, ToolContentI18n
         { scope: "墙面防潮处理", note: "泛碱处理与防潮层" }
       ],
       priceTableNote:
-        "以上与本计算器使用的是同一套公开价格，反映 2026 年巴生谷标准市场行情——不虚高，也不低价误导。",
+        "以上与本计算器使用的是同一套公开价格，反映 2026 年巴生谷标准公道价格——不虚高，也不低价误导。",
       faqs: [
         { q: "在吉隆坡油漆一间房需要多少钱？", a: `一间状况良好的标准 10 × 12 英尺卧室通常接近我们公开的每间房最低 ${money(RATES.painting.roomMinimum)}。房间更大、层高更高、改深色或大量裂缝修补会推高价格——这正是计算器所模拟的。` },
         { q: "雪兰莪外墙油漆需要多少钱？", a: `外墙油漆按施工条件与涂料系统为每平方英尺 ${band(RATES.painting.exteriorSqft.low, RATES.painting.exteriorSqft.high)}，小型立面 ${money(RATES.painting.exteriorMinimum)} 起。脚手架或吊绳施工会增加费用，计算器已包含两种选项。` },
@@ -941,7 +941,7 @@ export const toolShellCopy: Record<SiteLocale, ToolShellCopy> = {
     ssmBadge: "SSM registered",
     ctaHeading: "Prefer to talk it through?",
     ctaBody:
-      "Send us photos on WhatsApp and our dispatch desk will confirm the itemised market-rate quote before any work begins.",
+      "Send us photos on WhatsApp and our dispatch desk will confirm the itemised fixed-price quote before any work begins.",
     ctaWhatsapp: "WhatsApp us",
     takesAbout: (minutes) => `Takes about ${minutes} minute${minutes > 1 ? "s" : ""}`,
     noSignup: "No sign-up, no email required",
@@ -977,7 +977,7 @@ export const toolShellCopy: Record<SiteLocale, ToolShellCopy> = {
     ssmBadge: "Berdaftar SSM",
     ctaHeading: "Lebih selesa berbincang?",
     ctaBody:
-      "Hantar gambar melalui WhatsApp dan meja penghantaran kami akan mengesahkan sebut harga kadar pasaran terperinci sebelum sebarang kerja bermula.",
+      "Hantar gambar melalui WhatsApp dan meja penghantaran kami akan mengesahkan sebut harga tetap terperinci sebelum sebarang kerja bermula.",
     ctaWhatsapp: "WhatsApp kami",
     takesAbout: (minutes) => `Mengambil masa lebih kurang ${minutes} minit`,
     noSignup: "Tiada pendaftaran, tiada e-mel diperlukan",
@@ -1011,7 +1011,7 @@ export const toolShellCopy: Record<SiteLocale, ToolShellCopy> = {
     allToolsLink: "全部免费工具",
     ssmBadge: "SSM 注册公司",
     ctaHeading: "想直接沟通？",
-    ctaBody: "通过 WhatsApp 发送照片，调度团队会在施工前确认按市场价的明细报价。",
+    ctaBody: "通过 WhatsApp 发送照片，调度团队会在施工前确认公道的明细报价。",
     ctaWhatsapp: "WhatsApp 联系我们",
     takesAbout: (minutes) => `约需 ${minutes} 分钟`,
     noSignup: "无需注册，无需邮箱",
@@ -1121,7 +1121,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
       },
       {
         q: "Where do the prices come from?",
-        a: "Every figure is derived from the same published 2026 price list on this website — the service pages, the pricing page and our validated Klang Valley market-rate baseline. Nothing is invented for the calculator."
+        a: "Every figure is derived from the same published 2026 price list on this website — the service pages, the pricing page and our validated Klang Valley fair-price baseline. Nothing is invented for the calculator."
       },
       { q: "Is the estimate a final quotation?", a: ESTIMATE_DISCLAIMER },
       {
@@ -1139,7 +1139,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
     ],
     ctaTitle: "Need something else estimated?",
     ctaBody:
-      "We cover 29 service categories across KL and Selangor. Send photos on WhatsApp and our dispatch desk will come back with an itemised market-rate quote.",
+      "We cover 29 service categories across KL and Selangor. Send photos on WhatsApp and our dispatch desk will come back with an itemised fixed-price quote.",
     ctaQuote: "Get a custom quote",
     ctaBrowse: "Browse all services",
     waFollowUpService: "Free estimator follow-up",
@@ -1198,7 +1198,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
       },
       {
         q: "Dari manakah harga ini diperoleh?",
-        a: "Setiap angka diperoleh daripada senarai harga 2026 yang sama diterbitkan di laman web ini — halaman perkhidmatan, halaman harga dan garis dasar kadar pasaran Lembah Klang kami yang disahkan. Tiada apa yang direka untuk kalkulator."
+        a: "Setiap angka diperoleh daripada senarai harga 2026 yang sama diterbitkan di laman web ini — halaman perkhidmatan, halaman harga dan garis dasar harga adil Lembah Klang kami yang disahkan. Tiada apa yang direka untuk kalkulator."
       },
       { q: "Adakah anggaran ini sebut harga muktamad?", a: msDisclaimer },
       {
@@ -1216,7 +1216,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
     ],
     ctaTitle: "Perlukan anggaran untuk kerja lain?",
     ctaBody:
-      "Kami merangkumi 29 kategori perkhidmatan merentasi KL dan Selangor. Hantar gambar di WhatsApp dan meja penghantaran kami akan kembali dengan sebut harga kadar pasaran terperinci.",
+      "Kami merangkumi 29 kategori perkhidmatan merentasi KL dan Selangor. Hantar gambar di WhatsApp dan meja penghantaran kami akan kembali dengan sebut harga tetap terperinci.",
     ctaQuote: "Dapatkan sebut harga khas",
     ctaBrowse: "Lihat semua perkhidmatan",
     waFollowUpService: "Susulan alat anggaran percuma",
@@ -1275,7 +1275,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
       },
       {
         q: "价格从哪里来？",
-        a: "每个数字都来自本网站公开的 2026 年价格表——服务页面、价格页面，以及我们经验证的巴生谷市场价基准。计算器不虚构任何数字。"
+        a: "每个数字都来自本网站公开的 2026 年价格表——服务页面、价格页面，以及我们经验证的巴生谷公道价基准。计算器不虚构任何数字。"
       },
       { q: "估价是最终报价吗？", a: zhDisclaimer },
       {
@@ -1292,7 +1292,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
       }
     ],
     ctaTitle: "需要估价其他项目？",
-    ctaBody: "我们覆盖吉隆坡与雪兰莪 29 个服务类别。通过 WhatsApp 发送照片，调度团队会回复按市场价的明细报价。",
+    ctaBody: "我们覆盖吉隆坡与雪兰莪 29 个服务类别。通过 WhatsApp 发送照片，调度团队会回复公道的明细报价。",
     ctaQuote: "获取定制报价",
     ctaBrowse: "浏览全部服务",
     waFollowUpService: "免费估价工具咨询",
