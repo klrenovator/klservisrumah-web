@@ -112,7 +112,9 @@ export const config = {
      * - favicon.ico, sitemap.xml, robots.txt
      * - logo, icons, hero SVGs
      * - manifest.json, sw.js
+     * - BingSiteAuth.xml (Bing Webmaster verification file)
+     * - IndexNow key file e7492c...txt
      */
-    "/((?!_next/static|_next/image|favicon|sitemap|robots|logo|icons|hero-|manifest|sw\\.js|site-summary|llms|aeo).*)",
+    "/((?!_next/static|_next/image|favicon|sitemap|robots|logo|icons|hero-|manifest|sw\\.js|site-summary|llms|aeo|BingSiteAuth|e7492c81).*)",
   ],
 };
