@@ -32,6 +32,9 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
   verification: {
     google: "bXgZJKdBlDiVK9DsjNukmCqqicH37cqU_YdHSIVhjlg",
+    other: {
+      "msvalidate.01": "6CA0BEF9CB1FECC50C10A3F56F7ED27E",
+    },
   },
   // Self-referencing hreflang: all three languages are served from the same URL
   // (client-side switch). The previous /ms and /zh targets 301-redirect back here,
@@ -87,7 +90,6 @@ export const metadata: Metadata = {
     ICBM: `${siteConfig.geoLat}, ${siteConfig.geoLng}`,
     language: "English, Bahasa Malaysia, Chinese",
     "ai-context": "https://www.klservisrumah.my/llms.txt",
-    "msvalidate.01": "6CA0BEF9CB1FECC50C10A3F56F7ED27E",
     llms: "https://www.klservisrumah.my/llms.txt",
     "llms-full": "https://www.klservisrumah.my/llms-full.txt",
   }
@@ -105,6 +107,8 @@ export default function RootLayout({
   return (
     <html lang="en-MY" className="scroll-smooth">
       <head>
+        {/* Bing Webmaster verification — explicit meta guarantees detection even if Metadata API changes */}
+        <meta name="msvalidate.01" content="6CA0BEF9CB1FECC50C10A3F56F7ED27E" />
         {/* Performance hints — pre-warm critical third-party endpoints */}
         <link rel="preconnect" href="https://wa.me" crossOrigin="" />
         <link rel="preconnect" href="https://api.whatsapp.com" crossOrigin="" />
