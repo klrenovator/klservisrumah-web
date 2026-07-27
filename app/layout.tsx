@@ -87,6 +87,7 @@ export const metadata: Metadata = {
     ICBM: `${siteConfig.geoLat}, ${siteConfig.geoLng}`,
     language: "English, Bahasa Malaysia, Chinese",
     "ai-context": "https://www.klservisrumah.my/llms.txt",
+    "msvalidate.01": "6CA0BEF9CB1FECC50C10A3F56F7ED27E",
     llms: "https://www.klservisrumah.my/llms.txt",
     "llms-full": "https://www.klservisrumah.my/llms-full.txt",
   }
