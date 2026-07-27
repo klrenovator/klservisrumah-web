@@ -906,5 +906,33 @@
         "emergency": { "label": "Kecemasan — hari sama", "hint": "Penghantaran serta-merta" }
       }
     }
+  },
+  "estimateShare": {
+    "copyLink": "Salin pautan",
+    "copied": "Disalin ✓",
+    "shareWhatsApp": "Hantar WhatsApp",
+    "shareWhatsAppText": "Hai! Ini pengira kos segera {service} kami — jawab beberapa soalan di telefon anda dan ia terus mengira anggaran harga (termasuk upah + bahan): {url}",
+    "shareHint": "Hantar pautan ini kepada pelanggan dan mereka boleh mengira sendiri anggaran harga dalam masa kurang satu minit — tiada panggilan telefon diperlukan.",
+    "pageEyebrow": "Anggaran segera",
+    "pageHeading": "Pengira kos {service}",
+    "pageSub": "Jawab soalan di bawah dan harga dikemas kini secara langsung, menggunakan kadar 2026 yang diterbitkan yang sama seperti di halaman {service} kami. Jumlah sentiasa termasuk upah dan bahan.",
+    "howTitle": "Bagaimana anggaran ini dikira",
+    "how1": "Setiap kadar datang daripada senarai harga 2026 kami yang diterbitkan — angka yang sama seperti di halaman perkhidmatan.",
+    "how2": "Jumlah termasuk upah dan bahan, dengan pecahan ditunjukkan dalam butiran.",
+    "how3": "Ini angka anggaran. Harga muktamad disahkan selepas pemeriksaan tapak percuma, sebelum sebarang kerja dimulakan.",
+    "warrantyLine": "Jaminan: {warranty}",
+    "startingAt": "Harga permulaan diterbitkan: {price}",
+    "viewFullService": "Lihat halaman penuh {service}",
+    "hubEyebrow": "Anggaran segera percuma",
+    "hubHeading": "Pengira kos segera untuk setiap perkhidmatan",
+    "hubSub": "Buka mana-mana pengira di bawah, atau hantar pautannya terus kepada pelanggan di WhatsApp — mereka jawab beberapa soalan dan dapat anggaran harga (upah + bahan) dalam masa kurang satu minit.",
+    "hubHowTitle": "Cara berkongsi pautan dengan pelanggan",
+    "hubHow1": "Buka pengira untuk perkhidmatan yang ditanya oleh pelanggan anda.",
+    "hubHow2": "Ketik Salin pautan — atau guna butang WhatsApp hijau untuk mengemukannya dalam satu langkah.",
+    "hubHow3": "Pelanggan anda menjawab 3–4 soalan di telefon mereka dan terus melihat julat harga anggaran.",
+    "dedicatedBadge": "Pengira terperinci",
+    "openEstimator": "Buka pengira",
+    "allServices": "Semua {count} perkhidmatan — satu pautan boleh kongsi setiap satu",
+    "from": "Dari {price}"
   }
 }

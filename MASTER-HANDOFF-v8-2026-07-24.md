@@ -1,3 +1,58 @@
+## 🆕 ROUND 32 EXECUTION LOG (2026-07-27) — SHAREABLE PER-SERVICE ESTIMATOR LINKS (/estimate/<service>) FOR CUSTOMER WHATSAPP SHARING
+
+**User direction (Urdu):** "Handoff file k mutabiq check kren agla kia Kam hy ya pichla Kam agr rehta hy to usy mukammal kren. Or estimator ka hr service k liey link b bna den Jo mein direct customer ko bhej sakun k is sy andaza lga lo Kitna kharcha aye ga" — (Check the handoff for the next/pending task and complete it. And make a link for EVERY service's estimator that I can send directly to a customer so they can work out roughly how much it will cost.)
+
+**Handoff check:** The latest round (31, same day) is ✅ COMPLETED. Every item it left pending is external to this codebase — visual QA on deployed URLs (no browser here), real photography/review import (no assets supplied), and GBP/GSC/Bing/Rich-Results account work. There was no pending *code* task, so this round ships the user's new requirement.
+
+**Round status:** ✅ **COMPLETED — every one of the 28 services now has one short, stable, shareable estimator URL the owner can paste into a customer WhatsApp chat**
+
+### 🎯 What was built
+
+**The pattern (uniform, by design):** `https://www.klservisrumah.my/estimate/<service-slug>` for all 28 services — the same slug the owner already sees in `/services/<slug>`, so there is exactly one pattern to remember.
+
+- ✅ **`config/estimate-links.ts` (new)** — single source of truth for the mapping: `estimatePath(slug)`, `buildEstimateLinks()` (all 28 entries with published title + startPrice + kind), `genericEstimateSlugs()` (the 22 that render directly).
+- ✅ **22 direct estimator pages** — `app/estimate/[slug]/page.tsx` renders a focused, single-purpose page (SSG, `dynamicParams = false`): heading, the **share bar first**, the full generic-engine estimator (trilingual, same published-rate engine as the service page), a "How this estimate works" card (rates trace to the published 2026 list; **total always incl. labour & materials**; final price after free site inspection), warranty + published-start-price chips, full-service-page link and click-to-call. Unknown slugs 404.
+- ✅ **6 dedicated-tool services redirect, not duplicate** — painting, plumbing, ceiling, plaster-ceiling, waterproofing and handyman own deeper hand-built tools, so their `/estimate/<slug>` URL **301-redirects at the middleware** to `/tools/<tool>` (verified: painting→painting-calculator, plumbing→plumbing-diagnostic, ceiling & plaster-ceiling→ceiling-calculator, waterproofing→leak-triage, handyman→tv-mount-advisor). A real HTTP redirect: zero client hop, no shallower duplicate built, and those six slugs carry no static page at all. The page component keeps a belt-and-braces `redirect()` for dev previews without the middleware.
+- ✅ **`/estimate` hub page (new)** — one page listing all 28 links with published starting prices, per-card **Copy link** + one-tap **WhatsApp forward** buttons, and a 3-step "How to share a link with a customer" card. Indexed, OfferCatalog JSON-LD. This is the owner's dashboard: open it, tap copy, paste into WhatsApp.
+- ✅ **`components/tools/estimator-share-bar.tsx` (new)** — the share widget: absolute canonical URL, Copy link (Clipboard API + `execCommand` fallback for older WebViews, "Copied ✓" feedback) and WhatsApp share (`wa.me/?text=` contact-picker with a pre-written trilingual intro). Two variants: `page` (standalone pages) and `inline` (compact). Fires `estimator_copy_link` / `estimator_share_whatsapp` analytics.
+- ✅ **Share bar wired into BOTH service-page estimator blocks** — the generic estimator under every `/services/[slug]` and the dedicated-tool card now carry the inline share row (`/estimate/<slug>` — one pattern even for the six redirects), so the owner can grab a link from the service page too.
+- ✅ **Trilingual copy** — new `estimateShare` namespace in `messages/{en,ms,zh}.json`: **26 keys × 3 locales (78 strings)** covering share bar, standalone page and hub; everything follows the language pill.
+- ✅ **Sitemap** — hub + 22 direct URLs added (self-referencing hreflang like every client-switched page); the six redirecting slugs are deliberately NOT listed (never advertise a redirect). **23 entries verified in the live sitemap.xml, 0 redirect URLs.**
+- ✅ **`public/llms.txt`** — new "Shareable Per-Service Estimators" section: the pattern + hub + all 22 direct URLs.
+- ✅ **IndexNow coverage (Round 32 follow-up, 2026-07-27)** — `app/api/indexnow/route.ts` pinged a hand-maintained list of 8 core URLs only. It now derives its URL set from the registries: 8 core + 18 tool-cluster URLs (EN/MS/ZH index + 5 tools × 3 locales) + the estimate hub + 22 direct estimator pages = **49 URLs per ping**. Redirecting `/estimate/*` slugs are excluded (IndexNow wants canonical targets). Bing/Yandex now learn about every new cluster on the next ping.
+
+### 📁 Files created (6)
+`config/estimate-links.ts` · `components/tools/estimator-share-bar.tsx` · `components/estimate/estimate-share-page.tsx` · `components/estimate/estimate-hub.tsx` · `app/estimate/page.tsx` · `app/estimate/[slug]/page.tsx`
+
+### 📁 Files modified (9)
+`middleware.ts` (estimate→tool 301s) · `components/tools/service-estimator-block.tsx` (share rows) · `app/sitemap.ts` · `scripts/test-estimators.ts` (new locked section) · `messages/{en,ms,zh}.json` · `public/llms.txt` · `app/api/indexnow/route.ts` (URL list derived from registries)
+
+### ✅ Quality check results
+- ✅ TypeScript **0 errors** · ESLint **0 errors, 0 warnings**
+- ✅ Build green — **4,063 / 4,063 SSG pages** (was 4,040; +1 hub +22 estimator pages), 0 warnings
+- ✅ Estimator harness: **223,726 assertions, 0 failures** (was 223,558) — new locked section "Shareable estimator links": every service resolves to exactly one estimator route (22 direct + 6 redirects), `estimateShare` key + {placeholder} parity across en/ms/zh, and SERP budgets for all 28 per-service titles + the hub through the real optimiser
+- ✅ Production smoke test (`next start`): HTTP 200 on `/estimate` + `/estimate/electrical`; **301 with correct Location on all six dedicated-tool links**; 404 on unknown slugs; `/ms/estimate` still 301s to `/estimate` (locale behaviour intact); exactly one `<h1>` per page; canonical + 4-way self hreflang; meta titles 43/46 chars; estimator questions AND live RM prices SSR-rendered in raw HTML (no JS needed to see a number); hub shows 28 card links, 28 WhatsApp buttons, OfferCatalog JSON-LD; sitemap.xml lists 23 estimate URLs and 0 redirecting slugs; inline share bars present on both `/services/electrical` (generic) and `/services/painting` (dedicated card)
+- ✅ Bundle discipline honoured — deep tool routes unchanged at **140–146 kB**; `/estimate/[slug]` 327 kB first-load (below the 394 kB service page it mirrors the estimator from); hub 154 kB
+- ✅ Permanent rules honoured — phone +60 11-1662 7349 untouched, no public SSM number, every figure on the new pages traces to the published rate book (the generic engine is harness-locked), no invented pricing
+- ℹ️ Pre-existing, untouched: `npm run seo:audit` fails with `ERR_MODULE_NOT_FOUND` on the pristine checkout too (the script lacks the `--import ./scripts/ts-resolver.mjs` alias resolver that `test:estimators` has) — verified identical failure before this round's changes, so left out of scope
+
+### 📋 The shareable links (for the owner)
+Hub (all links + copy buttons): **https://www.klservisrumah.my/estimate**
+
+Direct estimator pages (22): `/estimate/house-renovation` · `/estimate/electrical` · `/estimate/water-heater` · `/estimate/ceiling-fan` · `/estimate/lighting` · `/estimate/tiling` · `/estimate/skim-coat` · `/estimate/flooring` · `/estimate/epoxy-flooring` · `/estimate/roof-repair` · `/estimate/kitchen-cabinet` · `/estimate/carpentry` · `/estimate/door` · `/estimate/window-repair` · `/estimate/locksmith` · `/estimate/glass-aluminium` · `/estimate/cleaning` · `/estimate/deep-cleaning` · `/estimate/post-renovation-cleaning` · `/estimate/cctv` · `/estimate/autogate` · `/estimate/welding`
+
+Redirects to the deep tools (6): `/estimate/painting` → painting-calculator · `/estimate/plumbing` → plumbing-diagnostic · `/estimate/ceiling` + `/estimate/plaster-ceiling` → ceiling-calculator · `/estimate/waterproofing` → leak-triage · `/estimate/handyman` → tv-mount-advisor
+
+### ⏳ Still pending after Round 32
+- ⏳ **GSC (verified 2026-07-27):** submit the sitemaps in the console — `sitemap.xml` + `sitemap-news.xml` (robots.txt already declares both, but the console Sitemaps report needs them entered once). Then URL-inspect + request indexing for `/estimate`, `/ms/alatan`, `/zh/gongju` and a sample of `/estimate/<slug>` pages; watch "cost/price/berapa" query impressions.
+- ⏳ Fire the IndexNow ping once after deploy (`GET /api/indexnow?secret=…`, needs `INDEXNOW_SECRET` set) — now submits all 49 cluster URLs to Bing/Yandex.
+- ⏳ Visual QA at 375px and desktop on deployed URLs (no browser in this environment — HTTP/DOM checks only).
+- ⏳ (Pre-existing) Fix the `seo:audit` npm script to import `./scripts/ts-resolver.mjs` like `test:estimators` does.
+- ⏳ Real photography and verified review import when assets are supplied; GBP optimization, GSC/Bing verification, Rich Results testing on the live domain.
+- ⏳ The rest of the site remains client-side-language-switched (deliberate later-round decision, 3× URL inventory).
+
+---
+
 ## 🆕 ROUND 31 EXECUTION LOG (2026-07-27) — DEEP-TOOL SPECS TRILINGUAL (EN/MS/ZH) + REAL INDEXABLE MS/ZH TOOL PAGES (/ms/alatan/*, /zh/gongju/*)
 
 **User direction:** "start on the deep-tool spec content trilingual round next" — then, in Urdu this session, the strategic requirement: **the tools must surface when a customer searches Google for an estimate/calculator in their own language (BM/中文), and their URLs must exist in the site's three languages** — i.e. real, indexable MS/ZH tool pages, not the site-wide 301-redirect-to-English behaviour that locale URLs had until now.

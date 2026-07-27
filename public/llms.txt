@@ -45,6 +45,32 @@ Free single-page estimators priced from the published 2026 rate list — availab
 - Plumbing diagnostic: https://www.klservisrumah.my/tools/plumbing-diagnostic · BM https://www.klservisrumah.my/ms/alatan/diagnostik-paip · 中文 https://www.klservisrumah.my/zh/gongju/水管诊断
 - TV mount advisor: https://www.klservisrumah.my/tools/tv-mount-advisor · BM https://www.klservisrumah.my/ms/alatan/penasihat-pemasangan-tv · 中文 https://www.klservisrumah.my/zh/gongju/电视安装估价
 
+## Shareable Per-Service Estimators
+One short, stable link per service (https://www.klservisrumah.my/estimate/<service>) that opens just the cost estimator — designed to be sent to a customer in a WhatsApp chat so they can work out a ballpark price (labour + materials, from the published 2026 rates) on their own phone. The six services with a dedicated deep tool redirect to it.
+- All estimator links: https://www.klservisrumah.my/estimate
+- Electrical: https://www.klservisrumah.my/estimate/electrical
+- Water heater: https://www.klservisrumah.my/estimate/water-heater
+- Ceiling fan: https://www.klservisrumah.my/estimate/ceiling-fan
+- Lighting: https://www.klservisrumah.my/estimate/lighting
+- Tiling: https://www.klservisrumah.my/estimate/tiling
+- Skim coat: https://www.klservisrumah.my/estimate/skim-coat
+- Flooring: https://www.klservisrumah.my/estimate/flooring
+- Epoxy flooring: https://www.klservisrumah.my/estimate/epoxy-flooring
+- Roof repair: https://www.klservisrumah.my/estimate/roof-repair
+- Kitchen cabinet: https://www.klservisrumah.my/estimate/kitchen-cabinet
+- Carpentry: https://www.klservisrumah.my/estimate/carpentry
+- Door: https://www.klservisrumah.my/estimate/door
+- Window repair: https://www.klservisrumah.my/estimate/window-repair
+- Locksmith: https://www.klservisrumah.my/estimate/locksmith
+- Glass & aluminium: https://www.klservisrumah.my/estimate/glass-aluminium
+- Cleaning: https://www.klservisrumah.my/estimate/cleaning
+- Deep cleaning: https://www.klservisrumah.my/estimate/deep-cleaning
+- Post-renovation cleaning: https://www.klservisrumah.my/estimate/post-renovation-cleaning
+- CCTV: https://www.klservisrumah.my/estimate/cctv
+- Autogate: https://www.klservisrumah.my/estimate/autogate
+- Welding: https://www.klservisrumah.my/estimate/welding
+- House renovation: https://www.klservisrumah.my/estimate/house-renovation
+
 ## Business Details
 - Legal Name: Multicore Dynamics Resources
 - SSM: 003765188-T

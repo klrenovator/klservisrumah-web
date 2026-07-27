@@ -1,4 +1,7 @@
 import { NextResponse } from "next/server";
+import { buildEstimateLinks, ESTIMATE_INDEX_PATH } from "@/config/estimate-links";
+import { toolsList } from "@/config/tools-data";
+import { TOOLS_INDEX_PATH, toolLocaleUrls } from "@/config/tools-i18n";
 
 /**
  * IndexNow ping endpoint (Bing / Yandex / Seznam).
@@ -14,7 +17,14 @@ export const dynamic = "force-dynamic";
 const HOST = "www.klservisrumah.my";
 const INDEXNOW_KEY = "e7492c813de342fca1deeb6b05df8445";
 
-const URL_LIST = [
+/**
+ * The URL set to ping. Derived from the real registries (not a hand-maintained
+ * list) so a new estimator or tool is submitted automatically. Redirecting
+ * URLs are never submitted — IndexNow wants canonical targets only, so the
+ * six `/estimate/<slug>` links that 301 to `/tools/*` are excluded by taking
+ * only the generic entries, and the tools themselves are listed directly.
+ */
+const CORE_PATHS = [
   "/",
   "/services",
   "/areas",
@@ -23,7 +33,28 @@ const URL_LIST = [
   "/problems",
   "/faq",
   "/contact"
-].map((path) => `https://${HOST}${path}`);
+];
+
+const TOOL_PATHS = [
+  TOOLS_INDEX_PATH.en,
+  TOOLS_INDEX_PATH.ms,
+  TOOLS_INDEX_PATH.zh,
+  ...toolsList.flatMap((tool) => {
+    const urls = toolLocaleUrls(tool.slug);
+    return [urls.en, urls.ms, urls.zh];
+  })
+];
+
+const ESTIMATE_PATHS = [
+  ESTIMATE_INDEX_PATH,
+  ...buildEstimateLinks()
+    .filter((link) => link.kind === "generic")
+    .map((link) => link.path)
+];
+
+const URL_LIST = [...CORE_PATHS, ...TOOL_PATHS, ...ESTIMATE_PATHS].map(
+  (path) => `https://${HOST}${path}`
+);
 
 /**
  * Constant-time-ish comparison so the shared secret can't be recovered by

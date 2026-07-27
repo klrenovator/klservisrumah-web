@@ -906,5 +906,33 @@
         "emergency": { "label": "紧急 — 当天", "hint": "立即派工" }
       }
     }
+  },
+  "estimateShare": {
+    "copyLink": "复制链接",
+    "copied": "已复制 ✓",
+    "shareWhatsApp": "WhatsApp 发送",
+    "shareWhatsAppText": "您好！这是我们的{service}即时估价工具 —— 在手机上回答几个问题，马上算出大概费用（含人工与材料）：{url}",
+    "shareHint": "把此链接发给客户，他们一分钟内就能自己算出大概费用 —— 无需打电话。",
+    "pageEyebrow": "即时估价",
+    "pageHeading": "{service}费用估价器",
+    "pageSub": "回答下面的问题，价格会即时更新，采用与我们{service}页面相同的已公布2026年价目。总价始终包含人工与材料。",
+    "howTitle": "此估价如何计算",
+    "how1": "所有单价均来自我们已公布的2026年价目表 —— 与服务页面上的数字完全一致。",
+    "how2": "总价包含人工和材料，明细中会列出两者的分配。",
+    "how3": "这只是大概数字。最终价格在动工前经免费上门勘察后确认。",
+    "warrantyLine": "保修：{warranty}",
+    "startingAt": "已公布起步价：{price}",
+    "viewFullService": "查看{service}完整页面",
+    "hubEyebrow": "免费即时估价",
+    "hubHeading": "每项服务的即时费用估价器",
+    "hubSub": "打开下面任何一个估价器，或直接把链接通过 WhatsApp 发给客户 —— 他们回答几个问题，一分钟内就能得到大概费用（含人工与材料）。",
+    "hubHowTitle": "如何把链接分享给客户",
+    "hubHow1": "打开客户询问的那项服务的估价器。",
+    "hubHow2": "点击「复制链接」—— 或用绿色 WhatsApp 按钮一步转发。",
+    "hubHow3": "客户在手机上回答 3–4 个问题，立刻看到预估价格范围。",
+    "dedicatedBadge": "详细估价器",
+    "openEstimator": "打开估价器",
+    "allServices": "全部 {count} 项服务 —— 每项一个可分享链接",
+    "from": "{price} 起"
   }
 }

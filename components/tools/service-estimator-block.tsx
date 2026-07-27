@@ -6,7 +6,9 @@ import { ArrowRight, Info, Sparkles } from "lucide-react";
 import { useTranslations } from "@/hooks/use-translations";
 import { buildServiceEstimator, DEDICATED_TOOL_BY_SERVICE, hasServiceEstimator } from "@/lib/estimator/service-estimator";
 import { toolsContent } from "@/config/tools-data";
+import { estimatePath } from "@/config/estimate-links";
 import { EstimatorForm } from "./estimator/estimator-form";
+import { EstimatorShareBar } from "./estimator-share-bar";
 
 /**
  * The estimator that appears on every `/services/[slug]` page, directly under
@@ -68,6 +70,12 @@ export function ServiceEstimatorBlock({
                 </div>
               ))}
             </div>
+            {/* The uniform shareable link for this service — `/estimate/<slug>`
+                301-redirects to the dedicated tool, so the owner can copy one
+                pattern for every service and send it to a customer. */}
+            <div className="border-t border-slate-100 px-5 pb-5 pt-4 sm:px-6">
+              <EstimatorShareBar path={estimatePath(slug)} serviceName={title} translator={t} variant="inline" />
+            </div>
           </div>
         </div>
       </section>
@@ -95,6 +103,9 @@ export function ServiceEstimatorBlock({
           <Info className="mt-0.5 h-4 w-4 shrink-0 text-[#0EA5E9]" aria-hidden="true" />
           <span>{t("serviceEstimator.disclaimerShort")}</span>
         </p>
+
+        {/* Copy or forward this estimator's link to a customer. */}
+        <EstimatorShareBar path={estimatePath(slug)} serviceName={title} translator={t} variant="inline" />
       </div>
     </section>
   );
