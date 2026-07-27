@@ -1,6 +1,6 @@
 # SEO Audit Report
 
-Generated: 2026-07-24T09:34:31.212Z
+Generated: 2026-07-27T03:55:10.740Z
 
 ## Route Inventory
 
@@ -15,12 +15,66 @@ Generated: 2026-07-24T09:34:31.212Z
 - /services/ceiling
 - /services/waterproofing
 - /services/handyman
+- /services/house-renovation
+- /services/electrical
+- /services/water-heater
+- /services/ceiling-fan
+- /services/lighting
+- /services/tiling
+- /services/plaster-ceiling
+- /services/skim-coat
+- /services/flooring
+- /services/epoxy-flooring
+- /services/roof-repair
+- /services/kitchen-cabinet
+- /services/carpentry
+- /services/door
+- /services/window-repair
+- /services/locksmith
+- /services/glass-aluminium
+- /services/cleaning
+- /services/deep-cleaning
+- /services/post-renovation-cleaning
+- /services/cctv
+- /services/autogate
+- /services/welding
 - /areas/kuala-lumpur
 - /areas/petaling-jaya
 - /areas/subang-jaya
 - /areas/puchong
 - /areas/shah-alam
 - /areas/klang
+- /areas/cheras
+- /areas/ampang
+- /areas/kajang
+- /areas/mont-kiara
+- /areas/bangsar
+- /areas/damansara
+- /areas/kepong
+- /areas/setapak
+- /areas/sri-petaling
+- /areas/kota-damansara
+- /areas/ara-damansara
+- /areas/sunway
+- /areas/usj
+- /areas/putrajaya
+- /areas/cyberjaya
+- /areas/wangsa-maju
+- /areas/bukit-jalil
+- /areas/desa-parkcity
+- /areas/taman-melawati
+- /areas/bandar-utama
+- /areas/ss2
+- /areas/setia-alam
+- /areas/kota-kemuning
+- /areas/batu-caves
+- /areas/selayang
+- /areas/rawang
+- /areas/sungai-buloh
+- /areas/semenyih
+- /areas/seri-kembangan
+- /areas/pandan-indah
+- /areas/sentul
 - /suburbs/kuala-lumpur/painting
 - /suburbs/cheras/painting
 - /suburbs/ampang/painting
@@ -61,17 +115,90 @@ Generated: 2026-07-24T09:34:31.212Z
 - /problems/tv-fell-off-wall
 - /problems/stuck-window-lock
 - /problems/ikea-furniture-assembly-help
+- /problems/rccb-tripping-kl
+- /problems/flickering-lights-kl
+- /problems/water-heater-not-heating
+- /problems/ceiling-fan-wobbling
+- /problems/hollow-tiles-floor
+- /problems/spc-flooring-peeling-edges
+- /problems/clogged-gutter-leaking
+- /problems/kitchen-cabinet-door-misaligned
+- /problems/flickering-downlights
+- /problems/plaster-ceiling-cracking-joints
+- /problems/peeling-skim-coat
+- /problems/epoxy-floor-yellowing
+- /problems/wardrobe-door-not-closing
+- /problems/door-scraping-floor
+- /problems/sliding-window-stuck
+- /problems/smart-lock-not-working
+- /problems/shower-screen-leaking
+- /problems/mold-in-bathroom-after-cleaning
+- /problems/stubborn-grout-stains-after-deep-clean
+- /problems/construction-dust-returning
+- /problems/cctv-not-recording
+- /problems/autogate-not-closing
+- /problems/rusting-window-grille
+- /problems/yellowing-white-walls
+- /problems/paint-cracking-hairline-walls
+- /problems/leaking-bathroom
+- /problems/low-water-pressure
+- /problems/clogged-drain
+- /problems/toilet-not-flushing
+- /problems/sagging-ceiling
+- /problems/ceiling-cornice-crack
+- /problems/balcony-leak-condo
+- /problems/concrete-slab-crack-leak
+- /problems/curtain-track-falling
+- /problems/door-hinge-sagging
+- /problems/old-condo-full-refurbishment
+- /problems/power-tripping-frequently
+- /problems/water-heater-cold
+- /problems/loose-hollow-tiles
+- /problems/cracked-tile-grout
+- /problems/plaster-ceiling-hairline-crack
+- /problems/uneven-wall-surface-skim
+- /problems/vinyl-flooring-lifting-edges
+- /problems/cracked-roof-tiles
+- /problems/cabinet-door-sagging
+- /problems/wardrobe-door-jamming
+- /problems/digital-smart-lock-installation
+- /problems/locked-out-of-house
+- /problems/downlight-flickering
+- /problems/shower-screen-water-leak
+- /problems/stubborn-bathroom-limescale
+- /problems/move-out-condo-deep-clean
+- /problems/cement-splatter-tile-clean
+- /problems/cctv-not-recording-storage-full
+- /problems/autogate-remote-not-working
+- /problems/loose-metal-gate-hinges
+- /problems/stuck-sliding-window
 - /blog/5-tips-choosing-paint-colors-malaysia
 - /blog/how-to-fix-leaking-ceiling-without-tile-hacking
+- /blog/when-to-repaint-your-house-malaysia
+- /blog/hidden-water-leak-detection-kl
+- /blog/gypsum-vs-plaster-ceiling-malaysia
+- /blog/pu-grouting-vs-full-membrane-waterproofing
+- /blog/tv-wall-mounting-safety-guide
+- /blog/cost-of-full-house-renovation-kl
+- /blog/safe-electrical-wiring-upgrade-old-house
+- /blog/spc-vs-vinyl-vs-laminate-flooring-malaysia
+- /blog/how-to-fix-a-leaking-roof-in-kl
+- /blog/kitchen-cabinet-material-guide-malaysia
+- /blog/monsoon-home-prep-klang-valley
+- /blog/smart-lock-buying-guide-malaysia-2026
+- /blog/cctv-installation-buying-guide-kl
+- /blog/auto-gate-installation-guide-malaysia
+- /blog/when-to-repaint-condo-vs-repaint-terrace-house
+- /blog/how-to-hire-honest-contractor-malaysia
 
 ## Checks
 
-- Total representative routes: 59
-- Service pages: 5
-- Area pages: 6
+- Total representative routes: 186
+- Service pages: 28
+- Area pages: 37
 - Suburb records: 49
-- Problem pages: 20
-- Blog posts: 2
+- Problem pages: 77
+- Blog posts: 18
 
 ## Manual follow-up
 
