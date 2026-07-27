@@ -722,7 +722,7 @@ const FRAME: Record<Exclude<Locale, "en">, {
     services:
       "Pasukan kami mengendalikan kerja mengecat dalaman dan luaran, pengesanan serta pembaikan kebocoran paip, pembaikan dan pemasangan siling plaster, kalis air dan suntikan PU, kerja tangan, pemasangan TV serta pemasangan perabot.",
     promise:
-      "Setiap sebut harga disahkan pada kadar pasaran sebelum kerja bermula, tapak dibersihkan sepenuhnya selepas siap, dan kerja kami disertakan jaminan.",
+      "Setiap sebut harga disahkan pada kadar adil sebelum kerja bermula, tapak dibersihkan sepenuhnya selepas siap, dan kerja kami disertakan jaminan.",
     metaTitle: (name) => `Perkhidmatan Rumah ${name} — Mengecat, Paip & Siling`,
     metaDesc: (name) =>
       `Mengecat, paip, siling plaster, kalis air dan kerja tangan di ${name}. Tukang bertauliah, harga telus, kerja berjaminan. WhatsApp untuk sebut harga percuma.`,
@@ -733,7 +733,7 @@ const FRAME: Record<Exclude<Locale, "en">, {
       },
       {
         q: `Adakah harga di ${name} disahkan sebelum kerja bermula?`,
-        a: "Ya. Kami memberi sebut harga terperinci pada kadar pasaran sebelum memulakan kerja. Jika skop bertambah selepas kami melihat keadaan sebenar, kami memaklumkan dan mendapatkan kelulusan anda dahulu."
+        a: "Ya. Kami memberi sebut harga terperinci pada kadar adil sebelum memulakan kerja. Jika skop bertambah selepas kami melihat keadaan sebenar, kami memaklumkan dan mendapatkan kelulusan anda dahulu."
       }
     ]
   },
@@ -741,7 +741,7 @@ const FRAME: Record<Exclude<Locale, "en">, {
     intro: (name) => `KL Servis Rumah 为${name}全区派遣经过背景审查的专业技师。`,
     services:
       "我们的团队承接室内外粉刷、漏水检测与维修、石膏天花板修补与安装、防水与 PU 灌浆、杂工服务、电视挂装以及家具组装。",
-    promise: "每一份报价都在开工前按市场价确认，完工后彻底清理现场，所有施工均提供保修。",
+    promise: "每一份报价都在开工前按公道价确认，完工后彻底清理现场，所有施工均提供保修。",
     metaTitle: (name) => `${name}住宅服务 — 油漆、水管与天花板`,
     metaDesc: (name) =>
       `${name}的油漆、水管、石膏天花板、防水与杂工服务。持证技师、价格透明、施工保修。欢迎 WhatsApp 免费询价。`,
@@ -752,7 +752,7 @@ const FRAME: Record<Exclude<Locale, "en">, {
       },
       {
         q: `${name}的价格会在开工前确认吗？`,
-        a: "会的。我们在开工前提供按市场价计算的逐项报价。若现场查看后需要增加工程范围，我们会先告知并取得您的同意。"
+        a: "会的。我们在开工前提供公道的逐项报价。若现场查看后需要增加工程范围，我们会先告知并取得您的同意。"
       }
     ]
   }

@@ -8,6 +8,20 @@ export type GenericContentPage = {
   bullets: string[];
   faqs: { q: string; a: string }[];
   relatedServiceSlug?: keyof typeof servicesData;
+  /**
+   * The English noun phrase substituted into the four generic FAQ templates
+   * (see `faq()` below). Recording it lets the MS/ZH resolver rebuild those
+   * same four questions natively instead of shipping them English-only.
+   */
+  faqTopic?: string;
+  /**
+   * Set when `bullets` / `faqs` are derived from `servicesData` rather than
+   * hand-authored, so the client resolver can pull the already-translated
+   * MS/ZH service copy instead of needing its own dictionary entry.
+   *   • "tagline" → answer pages (tagline + startPrice + warranty + date)
+   *   • "process" → process pages (the numbered process step titles)
+   */
+  serviceDerived?: "tagline" | "process";
   i18n?: {
     ms?: Partial<Pick<GenericContentPage, "title" | "intro" | "category">>;
     zh?: Partial<Pick<GenericContentPage, "title" | "intro" | "category">>;
@@ -16,9 +30,9 @@ export type GenericContentPage = {
 
 const faq = (topic: string) => [
   { q: `Is ${topic} relevant for KL and Selangor homes?`, a: `Yes. The recommendations are written for Klang Valley property types, tropical humidity, condo rules, and common Malaysian construction materials.` },
-  { q: `How should I budget for ${topic}?`, a: `Use the guide as a planning range only, then confirm a market-rate itemized quote after photos or an onsite inspection.` },
+  { q: `How should I budget for ${topic}?`, a: `Use the guide as a planning range only, then confirm a fixed-price itemised quote after photos or an onsite inspection.` },
   { q: `Can KL Servis Rumah help with ${topic}?`, a: `Yes. Share your property type, area, photos, and preferred timing on WhatsApp so we can advise the suitable scope.` },
-  { q: `Will the price be confirmed before work starts?`, a: `Yes. We confirm transparent market-rate pricing before work begins and only proceed after approval.` }
+  { q: `Will the price be confirmed before work starts?`, a: `Yes. We confirm honest upfront pricing before work begins and only proceed after approval.` }
 ];
 
 export const clusterPages: GenericContentPage[] = [
@@ -37,7 +51,7 @@ export const clusterPages: GenericContentPage[] = [
   ["handyman", "tv-mounting-kl", "TV Mounting in KL", "A safety-first guide to mounting TVs on brick, concrete, and gypsum walls with the correct anchor system.", ["Wall type identification", "Stud scanning", "Bracket choice", "Weight testing"]],
   ["handyman", "door-lock-kl", "Door and Lock Repair in KL", "A practical guide for sagging doors, hinges, latch alignment, lockset replacement, and digital lock preparation.", ["Hinge checks", "Door planing", "Latch alignment", "Lockset installation"]],
   ["handyman", "furniture-assembly-kl", "Furniture Assembly in KL", "A flat-pack assembly hub covering wardrobes, beds, desks, shelving, safety anchoring, and adjustment.", ["Part sorting", "Level assembly", "Wall anchoring", "Drawer and hinge tuning"]]
-].map(([serviceSlug, slug, title, intro, bullets]) => ({ slug: slug as string, title: title as string, category: "Service Cluster", intro: intro as string, bullets: bullets as string[], faqs: faq(title as string), relatedServiceSlug: serviceSlug as keyof typeof servicesData }));
+].map(([serviceSlug, slug, title, intro, bullets]) => ({ slug: slug as string, title: title as string, category: "Service Cluster", intro: intro as string, bullets: bullets as string[], faqs: faq(title as string), faqTopic: title as string, relatedServiceSlug: serviceSlug as keyof typeof servicesData }));
 
 export const guidePages: GenericContentPage[] = [
   ["how-to-choose-house-painter-kl", "How to Choose a House Painter in KL", "Painting"],
@@ -50,7 +64,7 @@ export const guidePages: GenericContentPage[] = [
   ["ceiling-material-comparison-plaster-vs-gypsum", "Ceiling Material Comparison: Plaster vs Gypsum", "Ceiling"],
   ["plumbing-pipe-comparison-pvc-vs-copper-vs-ppr", "Plumbing Pipe Comparison: PVC vs Copper vs PPR", "Plumbing"],
   ["tv-mount-types-comparison-fixed-vs-tilt-vs-full-motion", "TV Mount Types: Fixed vs Tilt vs Full-Motion", "Handyman"]
-].map(([slug, title, category]) => ({ slug, title, category, intro: `${title} explains practical decision criteria, pricing signals, material quality checks, warranty questions, and red flags for Malaysian homeowners.`, bullets: ["Check proven scope and material details", "Ask for itemized market-rate pricing", "Confirm warranty scope in writing", "Avoid vague quotes and pressure tactics"], faqs: faq(title) }));
+].map(([slug, title, category]) => ({ slug, title, category, intro: `${title} explains practical decision criteria, pricing signals, material quality checks, warranty questions, and red flags for Malaysian homeowners.`, bullets: ["Check proven scope and material details", "Ask for an itemised, fixed-price quote", "Confirm warranty scope in writing", "Avoid vague quotes and pressure tactics"], faqs: faq(title), faqTopic: title }));
 
 export const comparisonPages: GenericContentPage[] = [
   ["pu-grouting-vs-tile-hacking", "PU Grouting vs Tile Hacking"],
@@ -68,7 +82,7 @@ export const comparisonPages: GenericContentPage[] = [
   ["fixed-quote-vs-hourly-handyman", "Fixed Quote vs Hourly Handyman"],
   ["drywall-partition-vs-glass-partition", "Drywall Partition vs Glass Partition"],
   ["roof-coating-vs-torch-on-membrane", "Roof Coating vs Torch-On Membrane"]
-].map(([slug, title]) => ({ slug, title, category: "Comparison", intro: `${title} compares use cases, cost ranges, durability, disruption level, and suitability for KL and Selangor properties.`, bullets: ["Best-use scenarios", "Cost and disruption comparison", "Durability considerations", "When to call a professional"], faqs: faq(title) }));
+].map(([slug, title]) => ({ slug, title, category: "Comparison", intro: `${title} compares use cases, cost ranges, durability, disruption level, and suitability for KL and Selangor properties.`, bullets: ["Best-use scenarios", "Cost and disruption comparison", "Durability considerations", "When to call a professional"], faqs: faq(title), faqTopic: title }));
 
 export const maintenancePages: GenericContentPage[] = [
   "painting-maintenance-schedule",
@@ -81,7 +95,7 @@ export const maintenancePages: GenericContentPage[] = [
   "condo-maintenance-checklist",
   "landed-house-maintenance-calendar",
   "rental-property-turnover-checklist"
-].map((slug) => ({ slug, title: slug.split("-").map((w) => w[0].toUpperCase() + w.slice(1)).join(" "), category: "Maintenance Guide", intro: "A checklist-style maintenance plan for Malaysian homes, with tasks grouped by urgency, frequency, and whether DIY or professional help is safer.", bullets: ["Monthly checks", "Quarterly prevention", "Rainy-season readiness", "When to book inspection"], faqs: faq(slug.replace(/-/g, " ")) }));
+].map((slug) => ({ slug, title: slug.split("-").map((w) => w[0].toUpperCase() + w.slice(1)).join(" "), category: "Maintenance Guide", intro: "A checklist-style maintenance plan for Malaysian homes, with tasks grouped by urgency, frequency, and whether DIY or professional help is safer.", bullets: ["Monthly checks", "Quarterly prevention", "Rainy-season readiness", "When to book inspection"], faqs: faq(slug.replace(/-/g, " ")), faqTopic: slug.replace(/-/g, " ") }));
 
 export const seasonalPages: GenericContentPage[] = [
   "home-prep-rainy-season-kl",
@@ -92,7 +106,7 @@ export const seasonalPages: GenericContentPage[] = [
   "year-end-renovation-planning",
   "hari-raya-painting-promo",
   "monsoon-leak-emergency-guide"
-].map((slug) => ({ slug, title: slug.split("-").map((w) => w[0].toUpperCase() + w.slice(1)).join(" "), category: "Seasonal", intro: "Season-aware planning advice for KL and Selangor homeowners, timed around Malaysian weather, holidays, and peak service windows.", bullets: ["Book early before peak weeks", "Prioritize leaks before repainting", "Protect furniture and flooring", "Confirm work hours with building management"], faqs: faq(slug.replace(/-/g, " ")) }));
+].map((slug) => ({ slug, title: slug.split("-").map((w) => w[0].toUpperCase() + w.slice(1)).join(" "), category: "Seasonal", intro: "Season-aware planning advice for KL and Selangor homeowners, timed around Malaysian weather, holidays, and peak service windows.", bullets: ["Book early before peak weeks", "Prioritize leaks before repainting", "Protect furniture and flooring", "Confirm work hours with building management"], faqs: faq(slug.replace(/-/g, " ")), faqTopic: slug.replace(/-/g, " ") }));
 
 export const commercialPages: GenericContentPage[] = Object.values(servicesData).map((service) => ({
   slug: `${service.slug}-services-kl`,
@@ -101,6 +115,7 @@ export const commercialPages: GenericContentPage[] = Object.values(servicesData)
   intro: `Commercial ${service.title.toLowerCase()} focuses on offices, retail lots, showrooms, warehouses, and strata facilities that need tidy scheduling and minimal disruption.`,
   bullets: ["After-hours or weekend scheduling", "Clear scope documentation", "Material and safety planning", "Fast WhatsApp coordination"],
   faqs: faq(`commercial ${service.title}`),
+  faqTopic: `commercial ${service.title}`,
   relatedServiceSlug: service.slug as keyof typeof servicesData
 }));
 
@@ -109,8 +124,9 @@ export const residentialPages: GenericContentPage[] = Object.values(servicesData
   title: `Residential ${service.title} in KL`,
   category: "Residential",
   intro: `Residential ${service.title.toLowerCase()} supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental units across KL and Selangor.`,
-  bullets: ["Furniture and floor protection", "Condo/JMB coordination", "Transparent market-rate quotes", "Warranty-backed workmanship"],
+  bullets: ["Furniture and floor protection", "Condo/JMB coordination", "Transparent fixed-price quotes", "Warranty-backed workmanship"],
   faqs: faq(`residential ${service.title}`),
+  faqTopic: `residential ${service.title}`,
   relatedServiceSlug: service.slug as keyof typeof servicesData
 }));
 
@@ -127,7 +143,7 @@ export const brandPages: GenericContentPage[] = [
   ["sika-waterproofing-application", "Sika Waterproofing Application", "waterproofing"],
   ["bostik-waterproofing-application", "Bostik Waterproofing Application", "waterproofing"],
   ["mapei-waterproofing-application", "Mapei Waterproofing Application", "waterproofing"]
-].map(([slug, title, relatedServiceSlug]) => ({ slug, title, category: "Brand Guide", intro: `${title} explains when this brand or material category is suitable, how it should be applied, and what homeowners should check before approving a quote.`, bullets: ["Compatibility with the surface", "Correct preparation method", "Warranty and care considerations", "No claim of exclusive partnership unless documented"], faqs: faq(title), relatedServiceSlug: relatedServiceSlug as keyof typeof servicesData }));
+].map(([slug, title, relatedServiceSlug]) => ({ slug, title, category: "Brand Guide", intro: `${title} explains when this brand or material category is suitable, how it should be applied, and what homeowners should check before approving a quote.`, bullets: ["Compatibility with the surface", "Correct preparation method", "Warranty and care considerations", "No claim of exclusive partnership unless documented"], faqs: faq(title), faqTopic: title, relatedServiceSlug: relatedServiceSlug as keyof typeof servicesData }));
 
 export const topPages: GenericContentPage[] = [
   "best-house-painters-kl-2026",
@@ -140,15 +156,16 @@ export const topPages: GenericContentPage[] = [
   "bathroom-waterproofing-options",
   "ceiling-materials-malaysia",
   "handyman-services-every-homeowner-needs"
-].map((slug) => ({ slug, title: slug.split("-").map((w) => w[0].toUpperCase() + w.slice(1)).join(" "), category: "Top Considerations", intro: "An educational list of criteria, not a fabricated ranking. Use it to compare providers, methods, materials, and quote quality fairly.", bullets: ["Transparent pricing", "Workmanship warranty", "Material quality", "Clean site handover", "Relevant local experience"], faqs: faq(slug.replace(/-/g, " ")) }));
+].map((slug) => ({ slug, title: slug.split("-").map((w) => w[0].toUpperCase() + w.slice(1)).join(" "), category: "Top Considerations", intro: "An educational list of criteria, not a fabricated ranking. Use it to compare providers, methods, materials, and quote quality fairly.", bullets: ["Transparent pricing", "Workmanship warranty", "Material quality", "Clean site handover", "Relevant local experience"], faqs: faq(slug.replace(/-/g, " ")), faqTopic: slug.replace(/-/g, " ") }));
 
 export const answerPages: GenericContentPage[] = Object.values(servicesData).map((service) => ({
   slug: `${service.slug}-ultimate-guide`,
   title: `${service.title} Ultimate Guide for KL & Selangor`,
   category: "AI Answer Guide",
-  intro: `${service.title} in KL and Selangor should be priced at standard market rates, scoped clearly, performed by insured and background-verified tradesmen, and backed by written workmanship terms.`,
+  intro: `${service.title} in KL and Selangor should be priced fairly and openly, scoped clearly, performed by insured and background-verified tradesmen, and backed by written workmanship terms.`,
   bullets: [service.tagline, `Starting price: ${service.startPrice}`, `Warranty: ${service.warranty}`, "Last updated: 2026-07-24"],
   faqs: service.faqs,
+  serviceDerived: "tagline",
   relatedServiceSlug: service.slug as keyof typeof servicesData
 }));
 
@@ -159,6 +176,7 @@ export const processPages: GenericContentPage[] = Object.values(servicesData).ma
   intro: `A step-by-step process page for ${service.title.toLowerCase()}, including preparation, execution, quality checks, and warranty handover.`,
   bullets: service.process.map((step) => `${step.step}: ${step.title}`),
   faqs: service.faqs,
+  serviceDerived: "process",
   relatedServiceSlug: service.slug as keyof typeof servicesData
 }));
 

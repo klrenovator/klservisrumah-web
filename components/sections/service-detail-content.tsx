@@ -12,27 +12,13 @@ import { TrustBadgesRow } from "@/components/content/trust-badges-row";
 import { RelatedServices } from "@/components/sections/related-services";
 import { RelatedProblems } from "@/components/sections/related-problems";
 import { ServiceAreaLinks } from "@/components/sections/service-area-links";
-import dynamic from "next/dynamic";
 import { warrantyLead } from "@/lib/utils";
-
-/**
- * The estimator is the only heavy interactive block on this page and it sits
- * below the fold, so it is code-split out of the initial payload. Everything
- * a crawler needs — description, published sub-service rates, FAQs — is
- * already static HTML above and below it.
- */
-const ServiceEstimatorBlock = dynamic(
-  () => import("@/components/tools/service-estimator-block").then((mod) => mod.ServiceEstimatorBlock),
-  {
-    loading: () => (
-      <div className="section-tight bg-gradient-to-b from-sky-50/60 to-white">
-        <div className="container-narrow">
-          <div className="h-96 animate-pulse rounded-3xl border border-slate-200 bg-white" aria-hidden="true" />
-        </div>
-      </div>
-    )
-  }
-);
+// Imported statically, not via next/dynamic. The estimator is now the first
+// block under the hero, so a Suspense boundary would stream it in *after*
+// every section below it — pushing the page's primary answer ("how much
+// does this cost?") to the bottom of the raw HTML a crawler reads, and
+// showing a skeleton in the most valuable slot on the page.
+import { ServiceEstimatorBlock } from "@/components/tools/service-estimator-block";
 
 type ServiceDetailContentProps = {
   service: ServiceDetail;
@@ -41,8 +27,11 @@ type ServiceDetailContentProps = {
 /**
  * ServiceDetailContent — Klrenovator-style service page body.
  * Sections in order:
- *   1. Overview (description + highlights)
- *   2. Instant estimator (or a link to the dedicated tool for that trade)
+ *   1. Instant estimator (or a link to the dedicated tool for that trade) —
+ *      deliberately the FIRST block under the hero: "how much will this cost?"
+ *      is the question every visitor arrives with, so the answer must not be
+ *      buried below a wall of description text.
+ *   2. Overview (description + highlights)
  *   3. Direct Answer (AI-citable)
  *   4. Sub-services pricing
  *   5. Process Timeline
@@ -56,7 +45,10 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
   const t = useTranslations();
   return (
     <>
-      {/* Section 1 — Overview */}
+      {/* Section 1 — Instant estimator, the very first block under the hero */}
+      <ServiceEstimatorBlock slug={service.slug} title={service.title} warranty={service.warranty} />
+
+      {/* Section 2 — Overview */}
       <section className="section-tight bg-white">
         <div className="container-default">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
@@ -86,14 +78,11 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
         </div>
       </section>
 
-      {/* Section 2 — Instant estimator, directly under the description */}
-      <ServiceEstimatorBlock slug={service.slug} title={service.title} warranty={service.warranty} />
-
       {/* Section 3 — Direct Answer (AI-citable) */}
       <section className="section-tight bg-slate-50">
         <div className="container-narrow">
           <DirectAnswer
-            question={`Is ${service.title.toLowerCase()} the right service for you?`}
+            question={t("serviceContent.isRightService", { name: service.title.toLowerCase() })}
             answer={`${service.title} is recommended when you need ${service.tagline.toLowerCase()} Our ${service.title} packages start from ${service.startPrice} and include transparent itemized quotes, fully insured operations, and a written ${service.warranty.toLowerCase()}. KL Servis Rumah confirms the exact scope, price, and any material costs before work begins so you can book with a clear budget and no hidden surprises.`}
             trilingualMs={`${service.title} disyorkan apabila anda memerlukan ${service.tagline.toLowerCase()} Pakej kami bermula dari ${service.startPrice} dengan sebut harga terperinci, operasi diinsuranskan, dan ${service.warranty.toLowerCase()}.`}
             trilingualZh={`${service.title} 适合需要${service.tagline.toLowerCase()}的客户。我们的服务从 ${service.startPrice} 起，包含透明分项报价、全程保险、以及${service.warranty.toLowerCase()}。`}
@@ -114,10 +103,10 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
           <div className="max-w-2xl">
             <span className="eyebrow">{t("serviceContent.pricingScope")}</span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#075985] tracking-tight mt-3">
-              {service.title} pricing breakdown
+              {t("serviceContent.pricingHeading", { name: service.title })}
             </h2>
             <p className="text-base text-[#475569] leading-relaxed mt-3 font-medium">
-              100% itemized upfront rates. No hidden charges, no weekend surcharges, no transport fees.
+              {t("serviceContent.pricingSub")}
             </p>
           </div>
 
@@ -144,7 +133,7 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
 
           <div className="mt-5 text-xs font-semibold text-[#475569] flex items-start gap-2.5 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3">
             <AlertCircle className="w-4 h-4 text-[#0EA5E9] shrink-0 mt-0.5" />
-            <span>Standard rates vary slightly based on actual on-site dimensions, difficult access, or premium material upgrades. Final prices are confirmed and approved by you before any work begins.</span>
+            <span>{t("serviceContent.pricingNote")}</span>
           </div>
         </div>
       </section>
@@ -153,8 +142,8 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
       <section className="section-tight bg-slate-50">
         <div className="container-narrow">
           <ProcessTimeline
-            title={`How we deliver ${service.title.toLowerCase()}`}
-            subtitle="Every step is explained, every action is confirmed, and every handover is signed off. No hidden steps, no surprises."
+            title={t("serviceContent.processHeading", { name: service.title })}
+            subtitle={t("serviceContent.processSub")}
             steps={service.process}
           />
         </div>
@@ -164,7 +153,7 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
       <section className="section-tight bg-white">
         <div className="container-default">
           <DecisionTree
-            title="Should you book this service, a lighter option, or escalate first?"
+            title={t("serviceContent.decisionHeading", { name: service.title })}
             options={[
               {
                 level: "recommended",
@@ -196,8 +185,8 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
       <section className="section-tight bg-slate-50">
         <div className="container-default">
           <ComparisonTable
-            title="KL Servis Rumah vs typical home service contractors"
-            subtitle="We publish real prices and process. Others make you call first. Here's what that means for your home."
+            title={t("serviceContent.comparisonHeading", { name: service.title })}
+            subtitle={t("serviceContent.comparisonSub")}
             rows={[
               {
                 criteria: "Price display",
@@ -240,10 +229,10 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
           <div className="card text-center">
             <span className="eyebrow">{t("serviceContent.allCoverage")}</span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#075985] tracking-tight mt-3">
-              {service.title} you can trust
+              {t("serviceContent.trustHeading", { name: service.title })}
             </h2>
             <p className="text-base text-[#475569] leading-relaxed mt-3 max-w-2xl mx-auto">
-              Every {service.title.toLowerCase()} booking comes with these guarantees. No exceptions, no fine print.
+              {t("serviceContent.trustSub", { nameLower: service.title.toLowerCase() })}
             </p>
             <div className="mt-6 flex justify-center">
               <TrustBadgesRow variant="light" />
@@ -258,7 +247,7 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
           <div className="text-center mb-10">
             <span className="eyebrow">{t("serviceContent.faqs")}</span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#075985] tracking-tight mt-3">
-              {service.title} — frequently asked questions
+              {t("serviceContent.faqHeading", { name: service.title })}
             </h2>
           </div>
           <div className="flex flex-col gap-3">

@@ -104,7 +104,7 @@ export const servicesData: Record<string, ServiceDetail> = {
         process: [
           { step: "01", title: "Lindung & Tampal", desc: "Kami menutup semua perabot, lantai, dan salur keluar elektrik dengan kain penutup berat dan pita pelekat berkualiti tinggi." },
           { step: "02", title: "Persediaan Permukaan", desc: "Semua retakan, lubang paku, dan lekuk diisi dengan plaster gred tinggi, diamplas ke tahap rata dan licin sempurna." },
-          { step: "03", title: "Primer/Undercoat", desc: "Kami menyapu primer/penyekat premium untuk melindungi daripada rembesan lembapan dan memastikan lekatan topcoat maksimum." },
+          { step: "03", title: "Primer/Lapisan Bawah", desc: "Kami menyapu primer/penyekat premium untuk melindungi daripada rembesan lembapan dan memastikan lekatan topcoat maksimum." },
           { step: "04", title: "Topcoat Berganda", desc: "Dua lapisan cat premium Nippon Paint atau Dulux disapu menggunakan roller dan berus profesional untuk liputan yang kaya dan sekata." },
           { step: "05", title: "Pemeriksaan & Pembersihan", desc: "Kami menanggalkan semua penutup pelindung, menyedut/menyapu keseluruhan ruang, dan menjalankan pemeriksaan bersama untuk menjamin kemasan yang sempurna." }
         ],

@@ -14,7 +14,7 @@ import { LocalePricingContent } from "@/components/sections/locale-pricing-conte
 export const metadata = buildMetadata({
   title: "Home Services Pricing KL & Selangor — 2026 Guide",
   description:
-    "Transparent 2026 market rates for painting, plumbing, plaster ceiling, waterproofing and handyman work in Kuala Lumpur and Selangor. No hidden charges.",
+    "Honest 2026 prices for painting, plumbing, plaster ceiling, waterproofing and handyman work in Kuala Lumpur and Selangor. No hidden charges.",
   path: "/pricing",
   keywords: [
     "home service price Malaysia",
@@ -27,7 +27,7 @@ export const metadata = buildMetadata({
 const pricingFaqs = [
   {
     q: "How do you set your prices?",
-    a: "We follow standard Klang Valley market rates. Prices are not inflated and not underpriced. Final quotes are confirmed only after scope, access, materials and urgency are checked.",
+    a: "We follow fair Klang Valley rates. Prices are not inflated and not underpriced. Final quotes are confirmed only after scope, access, materials and urgency are checked.",
   },
   {
     q: "Do you charge hidden fees later?",

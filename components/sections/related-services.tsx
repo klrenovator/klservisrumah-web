@@ -54,7 +54,7 @@ export function RelatedServices({ currentSlug, maxItems = 6 }: RelatedServicesPr
             {t("internalLinks.defaultTitle")}
           </h2>
           <p className="text-sm text-[#475569] max-w-2xl leading-relaxed">
-            Explore our full range of professional home services — from painting and plumbing to ceiling installation and handyman repairs. Each service comes with transparent market-rate pricing and a written warranty.
+            Explore our full range of professional home services — from painting and plumbing to ceiling installation and handyman repairs. Each service comes with honest upfront pricing and a written warranty.
           </p>
         </div>
 

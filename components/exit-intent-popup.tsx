@@ -49,7 +49,7 @@ export function ExitIntentPopup() {
             {t("exitPopup.body")}
           </p>
           <a
-            href={getWhatsAppLink({ service: "market-rate home service quote" })}
+            href={getWhatsAppLink({ service: "fixed-price home service quote" })}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackWhatsAppClick({ page: "exit_intent_popup" })}

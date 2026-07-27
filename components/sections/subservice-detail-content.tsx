@@ -74,7 +74,7 @@ export function SubserviceDetailContent({ service, sub }: SubserviceDetailConten
         <div className="container-narrow">
           <DirectAnswer
             question={`What does ${sub.name.toLowerCase()} include in KL & Selangor?`}
-            answer={`${sub.name} by KL Servis Rumah is a professional sub-service under ${service.title}, priced ${sub.price}. ${sub.desc} Every booking includes a transparent market-rate quote, background-verified technicians, and a written ${service.warranty.toLowerCase()}. The exact scope and price are confirmed in writing before any work begins, so you book with a clear budget and no hidden surprises.`}
+            answer={`${sub.name} by KL Servis Rumah is a professional sub-service under ${service.title}, priced ${sub.price}. ${sub.desc} Every booking includes a transparent fixed-price quote, background-verified technicians, and a written ${service.warranty.toLowerCase()}. The exact scope and price are confirmed in writing before any work begins, so you book with a clear budget and no hidden surprises.`}
             trilingualMs={`${sub.name} oleh KL Servis Rumah adalah sub-perkhidmatan di bawah ${service.title}, berharga ${sub.price}. ${sub.desc} Setiap tempahan termasuk sebut harga telus, tukang terlatih, dan ${service.warranty.toLowerCase()}.`}
             trilingualZh={`${sub.name} 由 KL Servis Rumah 提供，是${service.title}下的专业子服务，价格为 ${sub.price}。${sub.desc} 每次预订包含透明报价、经过背景核查的技术人员，以及${service.warranty.toLowerCase()}。`}
             trustItems={[
@@ -228,7 +228,7 @@ export function SubserviceDetailContent({ service, sub }: SubserviceDetailConten
             />
             <FaqItem
               q={`Can I book ${sub.name.toLowerCase()} via WhatsApp?`}
-              a={`Yes. Send your area, photos, property type, and preferred date so our dispatch desk can confirm a market-rate quote and book a slot that fits your schedule. Same-day slots are often available for urgent requests.`}
+              a={`Yes. Send your area, photos, property type, and preferred date so our dispatch desk can confirm a fixed-price quote and book a slot that fits your schedule. Same-day slots are often available for urgent requests.`}
             />
             <FaqItem
               q={`Is ${sub.name.toLowerCase()} available same-day?`}

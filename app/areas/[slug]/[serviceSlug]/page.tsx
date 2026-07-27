@@ -23,7 +23,7 @@ export async function generateMetadata(props: { params: Promise<{ slug: string; 
   if (!area || !service) return {};
   return buildMetadata({
     title: `${service.title} in ${area.name} — From ${service.startPrice}`,
-    description: `${service.title} in ${area.name}. Local team, market-rate pricing, landmarks covered, warranty and WhatsApp booking for ${area.shortName}.`,
+    description: `${service.title} in ${area.name}. Local team, upfront pricing, landmarks covered, warranty and WhatsApp booking for ${area.shortName}.`,
     path: `/areas/${area.slug}/${service.slug}`
   });
 }
@@ -39,7 +39,7 @@ export default async function AreaServicePage(props: { params: Promise<{ slug: s
   const faqs = [
     { q: `How fast can you reach ${area.name} for ${service.title}?`, a: `Timing depends on crew location and traffic, but ${area.name} is part of our active KL & Selangor dispatch coverage. Same-day slots are offered when available.` },
     { q: `Which ${area.name} neighbourhoods do you cover?`, a: `We cover key landmarks and neighbourhoods including ${area.landmarks.join(", ")}. Send your exact address on WhatsApp to confirm.` },
-    { q: `How much does ${service.title} cost in ${area.name}?`, a: `${service.title} starts from ${service.startPrice}. Final price is confirmed at standard market rate after scope, access and materials are checked.` }
+    { q: `How much does ${service.title} cost in ${area.name}?`, a: `${service.title} starts from ${service.startPrice}. Final price is confirmed at our published fair rate after scope, access and materials are checked.` }
   ];
 
   return (

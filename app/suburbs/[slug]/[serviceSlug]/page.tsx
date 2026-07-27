@@ -50,7 +50,7 @@ export default async function SuburbServicePage(props: { params: Promise<{ slug:
   // localised client-side by LocaleSuburbServiceView.
   const faqs = [
     ...suburb.faqs.slice(0, 2),
-    { q: `How much does ${service.title} cost in ${suburb.name}?`, a: `${service.title} starts from ${service.startPrice}. Final pricing is market-rate and confirmed after checking scope, access and materials.` }
+    { q: `How much does ${service.title} cost in ${suburb.name}?`, a: `${service.title} starts from ${service.startPrice}. Final pricing is fair and confirmed after checking scope, access and materials.` }
   ];
 
   return (

@@ -222,7 +222,7 @@ export const contentI18nMsFull: Record<string, Partial<{ title: string; intro: s
   "handyman-services-every-homeowner-needs": { title: "Perkhidmatan Tukang Serba Setiap Pemilik Perlu", intro: "Senarai perkhidmatan tukang serba penting.", category: "Pertimbangan Teratas" },
 
   // ─── AI Answer Guide (28) ───
-  "painting-ultimate-guide": { title: "Panduan Lengkap Pengecatan", intro: "Panduan lengkap perkhidmatan pengecatan di KL — harga pasaran, waranti, dan skop.", category: "Panduan Jawapan AI" },
+  "painting-ultimate-guide": { title: "Panduan Lengkap Pengecatan", intro: "Panduan lengkap perkhidmatan pengecatan di KL — harga telus, waranti, dan skop.", category: "Panduan Jawapan AI" },
   "plumbing-ultimate-guide": { title: "Panduan Lengkap Paip", intro: "Panduan lengkap perkhidmatan paip di KL.", category: "Panduan Jawapan AI" },
   "ceiling-ultimate-guide": { title: "Panduan Lengkap Siling", intro: "Panduan lengkap perkhidmatan siling di KL.", category: "Panduan Jawapan AI" },
   "waterproofing-ultimate-guide": { title: "Panduan Lengkap Kalis Air", intro: "Panduan lengkap perkhidmatan kalis air di KL.", category: "Panduan Jawapan AI" },
@@ -420,7 +420,7 @@ export const contentI18nZhFull: Record<string, Partial<{ title: string; intro: s
   "handyman-services-every-homeowner-needs": { title: "每位业主需要的杂工服务", intro: "每位业主应了解的杂工服务清单。", category: "重要考量" },
 
   // ─── AI Answer Guide (28) ───
-  "painting-ultimate-guide": { title: "油漆完整指南", intro: "吉隆坡油漆服务完整指南 — 市场价格、保修与范围。", category: "AI回答指南" },
+  "painting-ultimate-guide": { title: "油漆完整指南", intro: "吉隆坡油漆服务完整指南 — 透明价格、保修与范围。", category: "AI回答指南" },
   "plumbing-ultimate-guide": { title: "水管完整指南", intro: "吉隆坡水管服务完整指南。", category: "AI回答指南" },
   "ceiling-ultimate-guide": { title: "天花板完整指南", intro: "吉隆坡天花板服务完整指南。", category: "AI回答指南" },
   "waterproofing-ultimate-guide": { title: "防水完整指南", intro: "吉隆坡防水服务完整指南。", category: "AI回答指南" },

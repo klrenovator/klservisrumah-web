@@ -22,7 +22,7 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   if (!service) return {};
   return buildMetadata({
     title: `${service.title} Cost in KL & Selangor — 2026 Pricing Guide`,
-    description: `How much does ${service.title.toLowerCase()} cost in KL & Selangor? See market-rate pricing, factors, quote examples, and WhatsApp booking.`,
+    description: `How much does ${service.title.toLowerCase()} cost in KL & Selangor? See real price ranges, cost factors, quote examples, and WhatsApp booking.`,
     path: `/services/${slug}/cost`,
     canonicalPath: `/services/${slug}`
   });
@@ -35,7 +35,7 @@ export default async function CostPage(props: { params: Promise<{ slug: string }
   const rates = getMarketRatesForService(slug as MarketRateItem["serviceSlug"]);
   const faqs = [
     { q: `What is the starting price for ${service.title}?`, a: `${service.title} starts from ${service.startPrice}. Final cost depends on dimensions, access, materials, and actual site condition.` },
-    { q: "Are prices standard market rate?", a: "Yes. KL Servis Rumah follows standard Malaysian market-rate pricing: not inflated, not underpriced, and confirmed before work starts." },
+    { q: "Are your prices fair for KL & Selangor?", a: "Yes. KL Servis Rumah prices are the fair Klang Valley standard: not inflated, not underpriced, and confirmed before work starts." },
     { q: "Can I get a quote from photos?", a: "For many small jobs, clear photos and measurements help us estimate. Complex leaks, ceilings, and exterior access may need inspection." },
     { q: "Do you charge hidden fees?", a: "No. Additional scope is explained and approved before proceeding." }
   ];
@@ -51,7 +51,7 @@ export default async function CostPage(props: { params: Promise<{ slug: string }
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <span className="rounded-full bg-[#E0F2FE] px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-[#0284C7]">2026 pricing guide</span>
           <h1 className="mt-4 text-3xl font-extrabold text-[#075985] sm:text-5xl">How Much Does {service.title} Cost in KL & Selangor?</h1>
-          <p className="mt-4 text-base font-semibold leading-relaxed text-[#475569]">This guide follows the project rule: prices should match standard market rate — not too high, not too low. Use these ranges to understand your likely budget before requesting a fixed quote.</p>
+          <p className="mt-4 text-base font-semibold leading-relaxed text-[#475569]">This guide follows the project rule: prices should be fair for the Klang Valley — not too high, not too low. Use these ranges to understand your likely budget before requesting a fixed quote.</p>
 
           <div className="mt-10 overflow-x-auto rounded-3xl border border-slate-100 bg-white shadow-xs">
             <table className="w-full min-w-[720px] text-left text-sm">
@@ -77,7 +77,7 @@ export default async function CostPage(props: { params: Promise<{ slug: string }
 
           <div className="mt-10 rounded-3xl bg-[#0284C7] p-6 text-white sm:p-8">
             <h2 className="text-2xl font-extrabold">Need an exact quote?</h2>
-            <p className="mt-2 text-sm font-semibold text-blue-50">Send photos, measurements and your area. We confirm the itemized market-rate quote before work begins.</p>
+            <p className="mt-2 text-sm font-semibold text-blue-50">Send photos, measurements and your area. We confirm the itemised fixed-price quote before work begins.</p>
             <a href={getWhatsAppLink({ service: `${service.title} cost quote` })} target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex rounded-xl bg-[#22C55E] px-5 py-3 text-sm font-extrabold text-white">WhatsApp for Quote</a>
           </div>
         </div>
