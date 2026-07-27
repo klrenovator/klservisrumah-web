@@ -1,7 +1,25 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { DEDICATED_TOOL_BY_SERVICE } from "@/lib/estimator/service-estimator";
 
 const SUPPORTED_LOCALES = ["ms", "zh"] as const;
+
+/**
+ * Shareable estimator links (`/estimate/<service-slug>`).
+ *
+ * Every service has one uniform short URL the owner can paste into a customer
+ * WhatsApp chat. Twenty-two of them render a real static estimator page at
+ * `/estimate/<slug>`; the six services below own a deeper hand-built tool, so
+ * their shareable URL 301-redirects to it. A genuine HTTP redirect (rather
+ * than a redirect page) means the shared link lands on the full tool with zero
+ * client-side hop, and those six slugs never need a static page at all.
+ */
+const ESTIMATE_TOOL_REDIRECTS: Record<string, string> = Object.fromEntries(
+  Object.entries(DEDICATED_TOOL_BY_SERVICE).map(([serviceSlug, toolSlug]) => [
+    `/estimate/${serviceSlug}`,
+    `/tools/${toolSlug}`
+  ])
+);
 
 /**
  * Locale-prefixed subtrees that serve REAL, fully-localised, indexable pages
@@ -27,6 +45,15 @@ const REAL_LOCALE_TREES = ["/ms/alatan", "/zh/gongju"] as const;
  */
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+  // Shareable estimator link for a service that owns a deep tool → 301 to it.
+  const toolTarget = ESTIMATE_TOOL_REDIRECTS[pathname];
+  if (toolTarget) {
+    const targetUrl = request.nextUrl.clone();
+    targetUrl.pathname = toolTarget;
+    targetUrl.search = "";
+    return NextResponse.redirect(targetUrl, 301);
+  }
 
   // Check if URL starts with a supported locale prefix
   for (const locale of SUPPORTED_LOCALES) {

@@ -906,5 +906,33 @@
         "emergency": { "label": "Emergency — same day", "hint": "Immediate dispatch" }
       }
     }
+  },
+  "estimateShare": {
+    "copyLink": "Copy link",
+    "copied": "Copied ✓",
+    "shareWhatsApp": "WhatsApp it",
+    "shareWhatsAppText": "Hi! Here is our instant {service} cost estimator — answer a few questions on your phone and it works out a ballpark price (labour + materials included) right away: {url}",
+    "shareHint": "Send this link to a customer and they can work out their own ballpark price in under a minute — no phone call needed.",
+    "pageEyebrow": "Instant estimate",
+    "pageHeading": "{service} cost estimator",
+    "pageSub": "Answer the questions below and the price updates live, using the same published 2026 rates listed on our {service} page. The total always includes labour and materials.",
+    "howTitle": "How this estimate works",
+    "how1": "Every rate comes from our published 2026 price list — the same figures you see on the service page.",
+    "how2": "The total includes both labour and materials, with the split shown in the breakdown.",
+    "how3": "This is a ballpark figure. The final price is confirmed after a free on-site inspection, before any work starts.",
+    "warrantyLine": "Warranty: {warranty}",
+    "startingAt": "Published starting price: {price}",
+    "viewFullService": "See the full {service} page",
+    "hubEyebrow": "Free instant estimates",
+    "hubHeading": "Instant cost estimators for every service",
+    "hubSub": "Open any estimator below, or send its link straight to a customer on WhatsApp — they answer a few questions and get a ballpark price (labour + materials) in under a minute.",
+    "hubHowTitle": "How to share a link with a customer",
+    "hubHow1": "Open the estimator for the service your customer asked about.",
+    "hubHow2": "Tap Copy link — or use the green WhatsApp button to forward it in one step.",
+    "hubHow3": "Your customer answers 3–4 questions on their phone and instantly sees an estimated price range.",
+    "dedicatedBadge": "Detailed estimator",
+    "openEstimator": "Open estimator",
+    "allServices": "All {count} services — one shareable link each",
+    "from": "From {price}"
   }
 }

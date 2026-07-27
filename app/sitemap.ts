@@ -7,6 +7,7 @@ import { problemPages } from "@/config/problem-data";
 import { allGenericPages, clusterPages, maintenancePages } from "@/config/content-data";
 import { toolsList } from "@/config/tools-data";
 import { TOOLS_INDEX_PATH, toolLocaleUrls } from "@/config/tools-i18n";
+import { ESTIMATE_INDEX_PATH, estimatePath, genericEstimateSlugs } from "@/config/estimate-links";
 import { slugify } from "@/lib/utils";
 
 const baseUrl = "https://www.klservisrumah.my";
@@ -97,7 +98,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { path: urls.ms, priority: 0.82, languages: urls },
         { path: urls.zh, priority: 0.82, languages: urls }
       ];
-    })
+    }),
+    // Shareable per-service estimator links (`/estimate/<slug>`). Only the
+    // hub and the pages that actually render here are listed — the six
+    // dedicated-tool services 301-redirect to `/tools/*` at the middleware,
+    // and a sitemap must never advertise a redirect.
+    { path: ESTIMATE_INDEX_PATH, priority: 0.74 },
+    ...genericEstimateSlugs().map((slug) => ({ path: estimatePath(slug), priority: 0.62 }))
   ];
 
   const serviceRoutes: Entry[] = Object.values(servicesData).flatMap((service) => [

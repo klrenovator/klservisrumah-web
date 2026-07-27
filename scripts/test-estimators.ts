@@ -881,6 +881,95 @@ console.log("\n• Deep-tool chrome sync with site dictionaries");
     }
   }
   console.log("  ✓ chrome-en/ms/zh shared sections identical to messages/*.json");
+
+/* ── Shareable estimator links (/estimate/<slug>) ───────────────────────
+   The business owner sends one uniform short link per service to customers
+   on WhatsApp so they can work out a ballpark price themselves. Three
+   invariants must never break:
+
+   1. Coverage — every service in servicesData resolves to an estimator:
+      either the generic engine (SERVICE_SCOPES) or a dedicated-tool
+      redirect. A service with neither would hand the owner a dead link.
+   2. Message parity — the `estimateShare` namespace (share bar, standalone
+      page, hub) ships an identical key set and identical {placeholder}
+      tokens in en/ms/zh, so the language pill can never surface a raw key
+      or a sentence with a dropped figure.
+   3. SERP budgets — the per-service and hub metadata pass the real
+      optimiser's char budgets (same rule every other route is held to). */
+console.log("\n• Shareable estimator links (/estimate/*)");
+{
+  const serviceSlugs = Object.keys(servicesData);
+  let dedicatedCount = 0;
+  let genericCount = 0;
+  for (const slug of serviceSlugs) {
+    const dedicated = DEDICATED_TOOL_BY_SERVICE[slug];
+    if (dedicated) {
+      dedicatedCount += 1;
+      assert(Boolean(toolsContent[dedicated]), `/estimate/${slug} redirects to unknown tool "${dedicated}"`);
+    } else {
+      assert(
+        hasServiceEstimator(slug),
+        `service "${slug}" has neither a dedicated tool nor a generic estimator — /estimate/${slug} would be a dead link`
+      );
+      genericCount += 1;
+    }
+  }
+  assert(
+    dedicatedCount + genericCount === serviceSlugs.length,
+    "every service must resolve to exactly one estimator route"
+  );
+
+  // estimateShare namespace parity across the three message files.
+  const enNs = (enMessages as MessageDictionary).estimateShare as MessageDictionary | undefined;
+  assert(Boolean(enNs), "messages/en.json is missing the estimateShare namespace");
+  const enKeys = flattenKeys(enNs ?? {}).sort();
+  const enStrings = leafStrings(enNs ?? {});
+  for (const [locale, dict] of [
+    ["ms", msMessages],
+    ["zh", zhMessages]
+  ] as const) {
+    const ns = (dict as MessageDictionary).estimateShare as MessageDictionary | undefined;
+    assert(Boolean(ns), `messages/${locale}.json is missing the estimateShare namespace`);
+    const localeKeys = flattenKeys(ns ?? {}).sort();
+    assert(
+      localeKeys.join("|") === enKeys.join("|"),
+      `estimateShare ${locale} keys drifted from en (${localeKeys.length} vs ${enKeys.length})`
+    );
+    const localeStrings = leafStrings(ns ?? {});
+    for (const key of enKeys) {
+      const enTokens = placeholdersOf(enStrings[key] ?? "");
+      const localeTokens = placeholdersOf(localeStrings[key] ?? "");
+      assert(
+        JSON.stringify(enTokens) === JSON.stringify(localeTokens),
+        `estimateShare ${locale} "${key}" placeholders ${localeTokens} ≠ en ${enTokens}`
+      );
+      assert(
+        (localeStrings[key] ?? "").length > 0,
+        `estimateShare ${locale} "${key}" is empty`
+      );
+    }
+  }
+
+  // SERP budgets through the real optimiser — the per-service title pattern
+  // used by app/estimate/[slug]/page.tsx and the hub metadata.
+  for (const slug of serviceSlugs) {
+    const title = optimizeTitle(`${servicesData[slug].title} Cost Estimator`);
+    assert(
+      [...title].length <= 60,
+      `/estimate/${slug}: optimised title ${[...title].length} chars > 60 ("${title}")`
+    );
+  }
+  const hubTitle = optimizeTitle("Instant Cost Estimators for Every Home Service");
+  assert([...hubTitle].length <= 60, `/estimate hub: optimised title ${[...hubTitle].length} chars > 60`);
+  const hubDesc = optimizeDescription(
+    "Free shareable cost estimators for all 28 home services in KL & Selangor. Send a customer the link — they answer a few questions and see a ballpark price, incl. labour & materials."
+  );
+  assert([...hubDesc].length <= 158, `/estimate hub: optimised description ${[...hubDesc].length} chars > 158`);
+
+  console.log(
+    `  ✓ ${serviceSlugs.length} shareable links (${genericCount} direct estimators + ${dedicatedCount} tool redirects) · estimateShare ${enKeys.length} keys × 3 locales`
+  );
+}
 }
 
 /* ── Locale tool-page layer (config/tools-i18n.ts) ─────────────────────── */
