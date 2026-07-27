@@ -9,7 +9,7 @@ import { DirectAnswer } from "@/components/content/direct-answer";
 import { DecisionTree } from "@/components/content/decision-tree";
 import { ProcessTimeline } from "@/components/content/process-timeline";
 import { InternalLinkGrid } from "@/components/internal-link-grid";
-import { slugify } from "@/lib/utils";
+import { slugify, warrantyLead } from "@/lib/utils";
 import { ServiceAreaSelector } from "@/components/service-area-selector";
 
 type SubserviceDetailContentProps = {
@@ -79,7 +79,7 @@ export function SubserviceDetailContent({ service, sub }: SubserviceDetailConten
             trilingualZh={`${sub.name} 由 KL Servis Rumah 提供，是${service.title}下的专业子服务，价格为 ${sub.price}。${sub.desc} 每次预订包含透明报价、经过背景核查的技术人员，以及${service.warranty.toLowerCase()}。`}
             trustItems={[
               "Price Confirmed First",
-              `${service.warranty.split(" ")[0]} Warranty`,
+              `${warrantyLead(service.warranty)} Warranty`,
               "Insured Operations",
               "Same-Day Available"
             ]}

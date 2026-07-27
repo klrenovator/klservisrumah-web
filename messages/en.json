@@ -113,8 +113,11 @@
       }
     },
     "beforeAfter": {
+      "eyebrow": "Before & after proof",
       "heading": "Before and after: real project results",
       "subheading": "See the quality of our painting, ceiling, plumbing, waterproofing, and handyman work across Kuala Lumpur and Selangor.",
+      "beforeLabel": "Before",
+      "afterLabel": "After",
       "items": {
         "1": {
           "title": "Living Room Wall Painting Restoration",
@@ -220,7 +223,7 @@
       "subheading": "Contact us now via WhatsApp or call our friendly dispatch desk. Get an instant, fully itemized quote with zero upfront deposits and full workmanship warranties.",
       "bookButton": "Book Via WhatsApp (Fast Response)",
       "callButton": "Call Support {phone}",
-      "hours": "* We operate everyday from 9:00 AM to 6:00 PM including public holidays."
+      "hours": "We operate everyday from 9:00 AM to 6:00 PM including public holidays."
     }
   },
   "services": {

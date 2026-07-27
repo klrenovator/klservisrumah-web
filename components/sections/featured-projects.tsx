@@ -25,7 +25,7 @@ export function FeaturedProjects() {
               {t("home.featuredProjects.heading")}
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
-              {t("home.featuredProjects.heading")}
+              Recent projects delivered across KL &amp; Selangor
             </h2>
             <p className="text-base text-[#475569] leading-relaxed">
               {t("home.featuredProjects.subheading")}

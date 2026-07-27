@@ -13,6 +13,7 @@ import { RelatedServices } from "@/components/sections/related-services";
 import { RelatedProblems } from "@/components/sections/related-problems";
 import { ServiceAreaLinks } from "@/components/sections/service-area-links";
 import dynamic from "next/dynamic";
+import { warrantyLead } from "@/lib/utils";
 
 /**
  * The estimator is the only heavy interactive block on this page and it sits
@@ -98,7 +99,7 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
             trilingualZh={`${service.title} 适合需要${service.tagline.toLowerCase()}的客户。我们的服务从 ${service.startPrice} 起，包含透明分项报价、全程保险、以及${service.warranty.toLowerCase()}。`}
             trustItems={[
               t("serviceContent.priceConfirmed"),
-              t("serviceContent.warranty", { days: service.warranty.split(" ")[0] }),
+              t("serviceContent.warranty", { days: warrantyLead(service.warranty) }),
               t("serviceContent.insuredOps"),
               t("serviceContent.sameDayAvail"),
               t("serviceContent.ssmRegistered")

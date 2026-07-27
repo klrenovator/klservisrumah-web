@@ -98,13 +98,17 @@ export function resolveKey(dict: MessageDictionary, key: string): string {
   return key;
 }
 
+export type TranslateOptions = {
+  defaultValue?: string;
+} & Record<string, string | number>;
+
 /**
  * The signature of a translator function, returned by {@link createTranslator}
  * and threaded into data modules that need locale-aware strings (e.g. the
  * estimator engine). Extracting it as a type lets those modules stay free of
  * a hard React dependency.
  */
-export type Translator = (key: string, vars?: Record<string, string | number>) => string;
+export type Translator = (key: string, vars?: Record<string, string | number> | TranslateOptions) => string;
 
 /**
  * Curried translator. Given a locale, returns a `t(key)` function.
@@ -130,10 +134,23 @@ export function createTranslator(
 ): Translator {
   const primary = messages[locale] ?? messages.en;
   const fallback = messages.en;
-  return function t(key: string, vars?: Record<string, string | number>): string {
-    const value = resolveKey(primary, key);
-    const finalValue = value === key ? resolveKey(fallback, key) : value;
-    if (typeof vars !== "object" || vars === null) return finalValue;
-    return Object.entries(vars).reduce((acc, [k, v]) => acc.replaceAll(`{${k}}`, String(v)), finalValue);
+  return function t(key: string, vars?: Record<string, string | number> | TranslateOptions): string {
+    const { defaultValue, ...replacements } =
+      vars && typeof vars === "object" && !Array.isArray(vars)
+        ? (vars as TranslateOptions)
+        : { defaultValue: undefined };
+    let value = resolveKey(primary, key);
+    value = value === key ? resolveKey(fallback, key) : value;
+    let finalValue: string;
+    if (value === key && typeof defaultValue === "string") {
+      finalValue = defaultValue;
+    } else {
+      finalValue = value;
+    }
+    if (typeof replacements !== "object" || replacements === null) return finalValue;
+    return Object.entries(replacements).reduce(
+      (acc, [k, v]) => (k === "defaultValue" ? acc : acc.replaceAll(`{${k}}`, String(v))),
+      finalValue
+    );
   };
 }

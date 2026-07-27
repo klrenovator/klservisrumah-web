@@ -113,8 +113,11 @@
       }
     },
     "beforeAfter": {
+      "eyebrow": "前后对比",
       "heading": "施工前后：真实项目成果",
       "subheading": "查看我们在吉隆坡与雪兰莪的油漆、天花板、水管、防水与杂工工程质量。",
+      "beforeLabel": "施工前",
+      "afterLabel": "施工后",
       "items": {
         "1": {
           "title": "客厅墙面油漆修复",
@@ -220,7 +223,7 @@
       "subheading": "现在通过 WhatsApp 联系我们，或致电我们友好的调度台。即时获得完整分项报价，零预付押金，完整工艺保证。",
       "bookButton": "通过 WhatsApp 预订（快速响应）",
       "callButton": "致电客服 {phone}",
-      "hours": "* 我们每天上午 9:00 至下午 6:00 营业，包括公共假期。"
+      "hours": "我们每天上午 9:00 至下午 6:00 营业，包括公共假期。"
     }
   },
   "services": {
