@@ -511,7 +511,9 @@
         "q": "Adakah kerja kecemasan dikenakan caj berbeza?",
         "a": "Kerja kecemasan boleh kos lebih apabila penghantaran mendesak, buruh selepas waktu, kesukaran akses atau kawalan keselamatan terlibat. Kenaikan kecemasan diterangkan sebelum kerja bermula."
       }
-    }
+    },
+    "confirmedAfterScope": "Disahkan selepas semakan skop",
+    "taskUnit": "tugas"
   },
   "notFound": {
     "badge": "404 halaman tidak dijumpai",
@@ -1134,5 +1136,127 @@
     "allKLSelangor": "Seluruh KL & Selangor",
     "getMyQuote": "Dapatkan Sebut Harga",
     "call": "Hubungi {phone}"
+  },
+  "costPage": {
+    "servicesCrumb": "Perkhidmatan",
+    "costCrumb": "Kos",
+    "badge": "Panduan harga 2026",
+    "h1": "Berapakah kos {name} di KL & Selangor?",
+    "intro": "Gunakan panduan ini untuk memahami harga adil Lembah Klang sebelum meminta sebut harga tetap. Kos akhir bergantung pada ukuran, akses, bahan dan keadaan sebenar di tapak.",
+    "tableCaption": "Julat harga {name}",
+    "scope": "Skop",
+    "publishedRate": "Kadar tersiar kami",
+    "typicalRange": "Julat tempatan biasa",
+    "notes": "Nota",
+    "confirmedAfterScope": "Disahkan selepas skop",
+    "factorsEyebrow": "Faktor kos",
+    "factorsHeading": "Apa yang mempengaruhi kos {name}?",
+    "factorsSub": "Kami mengesahkan perkara ini sebelum kerja bermula supaya sebut harga jelas dan diluluskan dahulu.",
+    "factor1": "Saiz hartanah dan kawasan kerja yang diukur",
+    "factor2": "Keadaan permukaan atau lekapan sebelum kerja bermula",
+    "factor3": "Gred bahan dan jenama yang dipilih",
+    "factor4": "Peraturan pengurusan kondo, perlindungan lif atau akses sukar",
+    "factor5": "Masa temu janji kecemasan berbanding berjadual",
+    "factor6": "Penjimatan lawatan apabila beberapa tugas digabungkan",
+    "ctaHeading": "Perlu sebut harga {name} yang tepat?",
+    "ctaBody": "Hantar foto, ukuran dan kawasan anda. Kami sahkan sebut harga tetap terperinci sebelum kerja bermula.",
+    "ctaButton": "WhatsApp untuk Sebut Harga",
+    "rateCopy": {
+      "painting": {
+        "0": {
+          "label": "Mengecat bilik dalaman",
+          "publishedRate": "Dari RM 450 / bilik",
+          "unit": "bilik / kaki persegi",
+          "range": "RM 300–RM 900 / bilik atau RM 1.50–RM 6.80 / kaki persegi",
+          "note": "Julat biasa Lembah Klang 2026 untuk mengecat bilik; sebut harga akhir bergantung pada pembaikan dinding, ketinggian siling, gred cat dan skop perlindungan."
+        },
+        "1": {
+          "label": "Mengecat luar rumah",
+          "publishedRate": "Dari RM 2,200",
+          "unit": "kerja / kaki persegi",
+          "range": "RM 2.50–RM 6.00 / kaki persegi bergantung pada akses dan sistem cat",
+          "note": "Bermula untuk rumah teres kecil atau skop fasad terhad; rumah landed penuh memerlukan ukuran dan sebut harga."
+        }
+      },
+      "plumbing": {
+        "0": {
+          "label": "Pembaikan paip kecil",
+          "publishedRate": "Dari RM 150",
+          "unit": "tugas",
+          "range": "RM 80–RM 500 bergantung pada kerumitan pembaikan",
+          "note": "Sesuai untuk kerja paip air, injap, singki, paip kecil dan pemeriksaan masalah biasa."
+        },
+        "1": {
+          "label": "Menyah-sumbat saliran",
+          "publishedRate": "Dari RM 180",
+          "unit": "tugas",
+          "range": "RM 150–RM 500 bergantung pada kedalaman sumbatan",
+          "note": "Selaras dengan kadar tempatan untuk saliran dan tandas tersumbat; kes saliran utama yang berat disebut harga berasingan."
+        }
+      },
+      "ceiling": {
+        "0": {
+          "label": "Pembaikan siling plaster",
+          "publishedRate": "Dari RM 220",
+          "unit": "tugas / kawasan",
+          "range": "RM 180–RM 1,500+ bergantung pada kerosakan papan dan rangka",
+          "note": "Pembaikan tampalan kecil bermula pada skop lawatan standard; penggantian lebih besar dikira mengikut kawasan yang diukur."
+        },
+        "1": {
+          "label": "Pemasangan siling plaster",
+          "publishedRate": "Dari RM 10 / kaki persegi",
+          "unit": "kaki persegi",
+          "range": "RM 6–RM 15 / kaki persegi bergantung pada reka bentuk",
+          "note": "Dalam julat biasa Lembah Klang untuk siling gypsum rata; reka bentuk L-box dan bertingkat kos lebih tinggi."
+        }
+      },
+      "waterproofing": {
+        "0": {
+          "label": "Suntikan PU grouting",
+          "publishedRate": "Dari RM 300 / titik",
+          "unit": "titik suntikan",
+          "range": "RM 80–RM 350 / titik bergantung pada tahap kebocoran",
+          "note": "Julat biasa untuk kebocoran papak konkrit aktif apabila bilangan titik dan akses berbeza."
+        },
+        "1": {
+          "label": "Kalis air bilik air / kawasan basah",
+          "publishedRate": "Dari RM 1,000",
+          "unit": "bilik air / kawasan",
+          "range": "RM 800–RM 3,500 tanpa pecah jubin atau RM 4,500–RM 9,000 dengan hacking",
+          "note": "Harga permulaan untuk rawatan terhad; skop hacking penuh dan jubin semula perlu sebut harga tapak."
+        }
+      },
+      "handyman": {
+        "0": {
+          "label": "Tugas kerja tangan umum",
+          "publishedRate": "Dari RM 100",
+          "unit": "tugas",
+          "range": "RM 40–RM 180 / jam atau RM 60–RM 300 untuk tugas biasa",
+          "note": "Titik permulaan yang adil untuk pemasangan kecil, langsir, rak atau pelarasan kunci."
+        },
+        "1": {
+          "label": "Pemasangan TV di dinding",
+          "publishedRate": "Dari RM 150",
+          "unit": "tugas",
+          "range": "RM 80–RM 300+ bergantung pada saiz TV dan jenis dinding",
+          "note": "Sebut harga berubah mengikut saiz TV, jenis bracket, bahan dinding, trunking kabel dan keperluan anchor."
+        }
+      }
+    }
+  },
+  "emergencyPage": {
+    "servicesCrumb": "Perkhidmatan",
+    "emergencyCrumb": "Kecemasan",
+    "badge": "Panduan respons segera",
+    "h1": "{name} kecemasan di KL & Selangor",
+    "intro": "Untuk masalah mendesak, hantar foto, kawasan anda dan video pendek jika selamat. Kami menilai risiko, menerangkan langkah segera, dan mengesahkan sebut harga kecemasan tetap sebelum kerja kekal bermula.",
+    "step1": "Hentikan atau asingkan punca jika selamat",
+    "step2": "Hantar foto dan lokasi anda",
+    "step3": "Luluskan sebut harga sebelum pembaikan bermula",
+    "coverageHeading": "Kawasan liputan terpantas",
+    "coverageSub": "Kongsi alamat tepat atau pin peta supaya kami boleh menyemak krew terdekat yang tersedia dan masa ketibaan praktikal.",
+    "ctaHeading": "Dispatch segera melalui WhatsApp",
+    "ctaBody": "Gunakan butang di bawah dan sertakan perkataan URGENT dalam mesej anda.",
+    "ctaButton": "WhatsApp Permintaan Segera"
   }
 }
