@@ -61,7 +61,7 @@ export function SubserviceDetailHero({ service, sub }: SubserviceDetailHeroProps
       <div className="container-default relative z-10">
         {/* Breadcrumb-style category line */}
         <div className="flex items-center gap-2 text-xs sm:text-sm font-bold text-[#475569] mb-6">
-          <a href="/services" className="hover:text-[#0EA5E9] transition-colors">Services</a>
+          <a href="/services" className="hover:text-[#0EA5E9] transition-colors">{t("nav.services")}</a>
           <span className="text-slate-300">/</span>
           <a href={`/services/${service.slug}`} className="hover:text-[#0EA5E9] transition-colors">{service.title}</a>
           <span className="text-slate-300">/</span>
@@ -73,11 +73,11 @@ export function SubserviceDetailHero({ service, sub }: SubserviceDetailHeroProps
           <div className="lg:col-span-8 flex flex-col items-start gap-5">
             <span className="trust-pill-blue trust-pill">
               <CheckCircle2 className="w-3.5 h-3.5" />
-              <span>{service.title} sub-service</span>
+              <span>{t("subserviceHero.subserviceLabel", { service: service.title })}</span>
             </span>
 
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#075985] tracking-tight leading-[1.1] text-balance">
-              {sub.name} in KL &amp; Selangor
+              {t("subserviceHero.h1", { name: sub.name })}
             </h1>
 
             <p className="text-base sm:text-lg text-[#475569] leading-relaxed font-semibold max-w-2xl">
@@ -95,7 +95,7 @@ export function SubserviceDetailHero({ service, sub }: SubserviceDetailHeroProps
             {/* Price + Warranty row */}
             <div className="flex flex-wrap items-center gap-3 mt-1">
               <span className="inline-flex items-baseline gap-2 bg-[#F0F9FF] border-2 border-[#BAE6FD] rounded-2xl px-5 py-3">
-                <span className="text-xs font-extrabold text-[#0EA5E9] uppercase tracking-wider">{sub.price.toLowerCase().startsWith("from") ? "" : "Price"}</span>
+                <span className="text-xs font-extrabold text-[#0EA5E9] uppercase tracking-wider">{sub.price.toLowerCase().startsWith("from") || sub.price.toLowerCase().startsWith("dari") || sub.price.startsWith("从") ? "" : t("subserviceHero.priceLabel")}</span>
                 <span className="text-2xl sm:text-3xl font-black text-[#075985] tracking-tight">{sub.price}</span>
               </span>
               <span className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 text-emerald-700 px-4 py-3 rounded-2xl text-sm font-bold">
@@ -129,7 +129,7 @@ export function SubserviceDetailHero({ service, sub }: SubserviceDetailHeroProps
                 href={`/services/${service.slug}`}
                 className="btn-link self-center"
               >
-                <span>View full {service.title}</span>
+                <span>{t("subserviceHero.viewFull", { service: service.title })}</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
             </div>
@@ -139,31 +139,31 @@ export function SubserviceDetailHero({ service, sub }: SubserviceDetailHeroProps
           <div className="lg:col-span-4 w-full">
             <div className="card sticky top-28 flex flex-col gap-5">
               <div>
-                <span className="eyebrow">Booking snapshot · Ringkasan · 概览</span>
+                <span className="eyebrow">{t("subserviceHero.snapshotEyebrow")}</span>
                 <h2 className="text-lg font-extrabold text-[#075985] tracking-tight mt-2">
-                  At a glance
+                  {t("subserviceHero.atGlance")}
                 </h2>
               </div>
               <dl className="flex flex-col gap-3 text-sm">
                 <div className="flex justify-between gap-3 border-b border-slate-100 pb-2">
-                  <dt className="font-bold text-[#475569]">Service</dt>
+                  <dt className="font-bold text-[#475569]">{t("subserviceHero.service")}</dt>
                   <dd className="text-[#075985] font-extrabold text-right">{sub.name}</dd>
                 </div>
                 <div className="flex justify-between gap-3 border-b border-slate-100 pb-2">
-                  <dt className="font-bold text-[#475569]">Category</dt>
+                  <dt className="font-bold text-[#475569]">{t("subserviceHero.category")}</dt>
                   <dd className="text-[#075985] font-extrabold text-right">{service.title}</dd>
                 </div>
                 <div className="flex justify-between gap-3 border-b border-slate-100 pb-2">
-                  <dt className="font-bold text-[#475569]">Price</dt>
+                  <dt className="font-bold text-[#475569]">{t("subserviceHero.price")}</dt>
                   <dd className="text-[#0EA5E9] font-extrabold text-right">{sub.price}</dd>
                 </div>
                 <div className="flex justify-between gap-3 border-b border-slate-100 pb-2">
-                  <dt className="font-bold text-[#475569]">Warranty</dt>
+                  <dt className="font-bold text-[#475569]">{t("subserviceHero.warranty")}</dt>
                   <dd className="text-emerald-600 font-extrabold text-right text-xs">{service.warranty}</dd>
                 </div>
                 <div className="flex justify-between gap-3">
-                  <dt className="font-bold text-[#475569]">Coverage</dt>
-                  <dd className="text-[#075985] font-extrabold text-right text-xs">All KL &amp; Selangor</dd>
+                  <dt className="font-bold text-[#475569]">{t("subserviceHero.coverage")}</dt>
+                  <dd className="text-[#075985] font-extrabold text-right text-xs">{t("subserviceHero.allKLSelangor")}</dd>
                 </div>
               </dl>
 
@@ -174,14 +174,14 @@ export function SubserviceDetailHero({ service, sub }: SubserviceDetailHeroProps
                 className="btn-whatsapp w-full"
               >
                 <MessageSquare className="w-4 h-4 fill-white text-[#22C55E]" />
-                <span>Get My Quote</span>
+                <span>{t("subserviceHero.getMyQuote")}</span>
               </a>
               <a
                 href={`tel:${siteConfig.phone}`}
                 className="btn-ghost w-full"
               >
                 <Phone className="w-4 h-4 text-[#0EA5E9]" />
-                <span>Call {siteConfig.phoneDisplay}</span>
+                <span>{t("subserviceHero.call", { phone: siteConfig.phoneDisplay })}</span>
               </a>
             </div>
           </div>

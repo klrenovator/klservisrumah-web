@@ -15,6 +15,7 @@ import { ServiceAreaSelector } from "@/components/service-area-selector";
 type SubserviceDetailContentProps = {
   service: ServiceDetail;
   sub: SubService;
+  baseService?: ServiceDetail;
 };
 
 const INCLUDED_ITEM_KEYS = [
@@ -26,6 +27,13 @@ const INCLUDED_ITEM_KEYS = [
   "subserviceContent.includedItems.6",
   "subserviceContent.includedItems.7",
   "subserviceContent.includedItems.8"
+];
+
+const PRICING_BULLET_KEYS = [
+  "subserviceContent.pricingBullets.noHidden",
+  "subserviceContent.pricingBullets.noSurcharge",
+  "subserviceContent.pricingBullets.itemizedMaterials",
+  "subserviceContent.pricingBullets.payAfter"
 ];
 
 /**
@@ -40,9 +48,14 @@ const INCLUDED_ITEM_KEYS = [
  *   7. Related sub-services (InternalLinkGrid)
  *   8. FAQs
  */
-export function SubserviceDetailContent({ service, sub }: SubserviceDetailContentProps) {
+export function SubserviceDetailContent({ service, sub, baseService }: SubserviceDetailContentProps) {
   const t = useTranslations();
-  const otherSubs = service.subServices.filter((item) => item.name !== sub.name);
+  const otherSubs = service.subServices
+    .map((item, index) => ({ item, baseItem: baseService?.subServices[index] ?? item }))
+    .filter(({ item }) => item.name !== sub.name);
+  const nameLower = sub.name.toLowerCase();
+  const serviceLower = service.title.toLowerCase();
+  const warrantyLower = service.warranty.toLowerCase();
 
   return (
     <>
@@ -52,10 +65,10 @@ export function SubserviceDetailContent({ service, sub }: SubserviceDetailConten
           <div className="max-w-2xl">
             <span className="eyebrow">{t("subserviceContent.whatsIncluded")}</span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#075985] tracking-tight mt-3">
-              Everything you get with {sub.name}
+              {t("subserviceContent.includedHeading", { name: sub.name })}
             </h2>
             <p className="text-base text-[#475569] leading-relaxed mt-3 font-medium">
-              Our {sub.name.toLowerCase()} package covers the full scope from preparation to handover, with no hidden charges.
+              {t("subserviceContent.includedSub", { nameLower })}
             </p>
           </div>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
@@ -73,15 +86,19 @@ export function SubserviceDetailContent({ service, sub }: SubserviceDetailConten
       <section className="section-tight bg-slate-50">
         <div className="container-narrow">
           <DirectAnswer
-            question={`What does ${sub.name.toLowerCase()} include in KL & Selangor?`}
-            answer={`${sub.name} by KL Servis Rumah is a professional sub-service under ${service.title}, priced ${sub.price}. ${sub.desc} Every booking includes a transparent fixed-price quote, background-verified technicians, and a written ${service.warranty.toLowerCase()}. The exact scope and price are confirmed in writing before any work begins, so you book with a clear budget and no hidden surprises.`}
-            trilingualMs={`${sub.name} oleh KL Servis Rumah adalah sub-perkhidmatan di bawah ${service.title}, berharga ${sub.price}. ${sub.desc} Setiap tempahan termasuk sebut harga telus, tukang terlatih, dan ${service.warranty.toLowerCase()}.`}
-            trilingualZh={`${sub.name} 由 KL Servis Rumah 提供，是${service.title}下的专业子服务，价格为 ${sub.price}。${sub.desc} 每次预订包含透明报价、经过背景核查的技术人员，以及${service.warranty.toLowerCase()}。`}
+            question={t("subserviceContent.directQuestion", { nameLower })}
+            answer={t("subserviceContent.directAnswer", {
+              name: sub.name,
+              service: service.title,
+              price: sub.price,
+              desc: sub.desc,
+              warrantyLower
+            })}
             trustItems={[
-              "Price Confirmed First",
-              `${warrantyLead(service.warranty)} Warranty`,
-              "Insured Operations",
-              "Same-Day Available"
+              t("serviceContent.priceConfirmed"),
+              t("serviceContent.warranty", { days: warrantyLead(service.warranty) }),
+              t("serviceContent.insuredOps"),
+              t("serviceContent.sameDayAvail")
             ]}
           />
         </div>
@@ -91,8 +108,8 @@ export function SubserviceDetailContent({ service, sub }: SubserviceDetailConten
       <section className="section-tight bg-white">
         <div className="container-narrow">
           <ProcessTimeline
-            title={`How we deliver ${sub.name.toLowerCase()}`}
-            subtitle="Every step is confirmed, every action is documented, and every handover is signed off. No hidden steps, no surprises."
+            title={t("subserviceContent.processHeading", { name: sub.name })}
+            subtitle={t("subserviceContent.processSub")}
             steps={service.process.slice(0, 5)}
           />
         </div>
@@ -102,28 +119,28 @@ export function SubserviceDetailContent({ service, sub }: SubserviceDetailConten
       <section className="section-tight bg-slate-50">
         <div className="container-default">
           <DecisionTree
-            title="Should you book this sub-service, a simpler option, or escalate first?"
+            title={t("subserviceContent.decisionHeading", { name: sub.name })}
             options={[
               {
                 level: "recommended",
-                title: `Book ${sub.name}`,
-                description: `Your situation matches the symptoms and scope for ${sub.name.toLowerCase()}. This is the right sub-service for most customers.`,
-                compareService: "View pricing",
-                compareAction: "See"
+                title: t("subserviceContent.decisionBookTitle", { name: sub.name }),
+                description: t("subserviceContent.decisionBookDesc", { nameLower }),
+                compareService: t("subserviceContent.decisionBookService"),
+                compareAction: t("subserviceContent.decisionBookAction")
               },
               {
                 level: "lighter",
-                title: "Consider a lighter option",
-                description: `If your need is smaller in scope, another sub-service under ${service.title.toLowerCase()} may fit better and cost less. We happily quote any scope.`,
-                compareService: "Other sub-services",
-                compareAction: "Browse"
+                title: t("subserviceContent.decisionLighterTitle"),
+                description: t("subserviceContent.decisionLighterDesc", { serviceLower }),
+                compareService: t("subserviceContent.decisionLighterService"),
+                compareAction: t("subserviceContent.decisionLighterAction")
               },
               {
                 level: "urgent",
-                title: "Escalate first",
-                description: "If the work involves hidden damage, structural concerns, or coordination with other trades, we may need to inspect or quote on-site before booking.",
-                compareService: "Site inspection",
-                compareAction: "Book"
+                title: t("subserviceContent.decisionEscalateTitle"),
+                description: t("subserviceContent.decisionEscalateDesc"),
+                compareService: t("subserviceContent.decisionEscalateService"),
+                compareAction: t("subserviceContent.decisionEscalateAction")
               }
             ]}
           />
@@ -137,38 +154,32 @@ export function SubserviceDetailContent({ service, sub }: SubserviceDetailConten
             <div className="card card-loose flex flex-col gap-4">
               <span className="eyebrow">{t("subserviceContent.pricing")}</span>
               <h3 className="text-2xl font-extrabold text-[#075985] tracking-tight">
-                Transparent {sub.name.toLowerCase()} pricing
+                {t("subserviceContent.pricingHeading", { nameLower })}
               </h3>
               <p className="text-base text-[#475569] leading-relaxed">
-                {sub.name} starts from <b className="text-[#0EA5E9]">{sub.price}</b>. Final pricing depends on actual on-site dimensions, access difficulty, material grade, and any add-ons you select. All of this is itemized and confirmed with you in writing before any work begins.
+                {t("subserviceContent.pricingDescBefore", { name: sub.name })}{" "}
+                <b className="text-[#0EA5E9]">{sub.price}</b>
+                {t("subserviceContent.pricingDescAfter")}
               </p>
               <ul className="flex flex-col gap-2 mt-2">
-                <li className="flex items-start gap-2 text-sm font-semibold text-[#475569]">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
-                  <span>No hidden transport or service charges</span>
-                </li>
-                <li className="flex items-start gap-2 text-sm font-semibold text-[#475569]">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
-                  <span>No weekend or after-hours surcharge</span>
-                </li>
-                <li className="flex items-start gap-2 text-sm font-semibold text-[#475569]">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
-                  <span>Itemized material costs before replacement</span>
-                </li>
-                <li className="flex items-start gap-2 text-sm font-semibold text-[#475569]">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
-                  <span>Payment after work is signed off, never before</span>
-                </li>
+                {PRICING_BULLET_KEYS.map((key) => (
+                  <li key={key} className="flex items-start gap-2 text-sm font-semibold text-[#475569]">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                    <span>{t(key)}</span>
+                  </li>
+                ))}
               </ul>
             </div>
 
             <div className="card card-loose flex flex-col gap-4">
               <span className="eyebrow">{t("subserviceContent.warranty")}</span>
               <h3 className="text-2xl font-extrabold text-[#075985] tracking-tight">
-                {sub.name} warranty coverage
+                {t("subserviceContent.warrantyHeading", { name: sub.name })}
               </h3>
               <p className="text-base text-[#475569] leading-relaxed">
-                Every {sub.name.toLowerCase()} booking is backed by our written <b className="text-emerald-600">{service.warranty.toLowerCase()}</b>. If anything covered by the warranty fails within the period, we return to fix it free of charge — no arguments, no re-quoting.
+                {t("subserviceContent.warrantyDescBefore", { nameLower })}{" "}
+                <b className="text-emerald-600">{warrantyLower}</b>
+                {t("subserviceContent.warrantyDescAfter")}
               </p>
               <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4 mt-2">
                 <p className="text-sm font-extrabold text-emerald-700 flex items-center gap-2">
@@ -176,7 +187,7 @@ export function SubserviceDetailContent({ service, sub }: SubserviceDetailConten
                   <span>{service.warranty}</span>
                 </p>
                 <p className="text-xs text-emerald-700/80 mt-1 font-semibold">
-                  Warranty terms explained in writing on every invoice. Keep your invoice for the duration of the coverage period.
+                  {t("subserviceContent.warrantyNote")}
                 </p>
               </div>
             </div>
@@ -196,11 +207,11 @@ export function SubserviceDetailContent({ service, sub }: SubserviceDetailConten
         <section className="section-tight bg-white">
           <div className="container-default">
             <InternalLinkGrid
-              title={`Other ${service.title} sub-services`}
-              subtitle="You may also need these related services from the same category."
-              links={otherSubs.map((item) => ({
+              title={t("subserviceContent.relatedHeading", { service: service.title })}
+              subtitle={t("subserviceContent.relatedSub")}
+              links={otherSubs.map(({ item, baseItem }) => ({
                 title: item.name,
-                href: `/services/${service.slug}/${slugify(item.name)}`,
+                href: `/services/${service.slug}/${slugify(baseItem.name)}`,
                 desc: item.desc
               }))}
             />
@@ -214,33 +225,33 @@ export function SubserviceDetailContent({ service, sub }: SubserviceDetailConten
           <div className="text-center mb-10">
             <span className="eyebrow">{t("subserviceContent.faqs")}</span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#075985] tracking-tight mt-3">
-              {sub.name} — frequently asked questions
+              {t("subserviceContent.faqHeading", { name: sub.name })}
             </h2>
           </div>
           <div className="flex flex-col gap-3">
             <FaqItem
               q={t("subserviceContent.howMuchCost", { name: sub.name })}
-              a={`${sub.name} is priced ${sub.price}. The final cost depends on dimensions, access, materials, and actual on-site condition, and is confirmed in writing before any work begins. There are no hidden transport, service, or weekend fees.`}
+              a={t("subserviceContent.faqCostAnswer", { name: sub.name, price: sub.price })}
             />
             <FaqItem
-              q={`What is included in ${sub.name.toLowerCase()}?`}
-              a={`Our ${sub.name.toLowerCase()} package includes workmanship scope, standard preparation, suitable tools, full cleanup, and warranty coverage related to ${service.title.toLowerCase()}. Specific inclusions are itemized in your quote.`}
+              q={t("subserviceContent.faqIncludedQ", { nameLower })}
+              a={t("subserviceContent.faqIncludedA", { nameLower, serviceLower })}
             />
             <FaqItem
-              q={`Can I book ${sub.name.toLowerCase()} via WhatsApp?`}
-              a={`Yes. Send your area, photos, property type, and preferred date so our dispatch desk can confirm a fixed-price quote and book a slot that fits your schedule. Same-day slots are often available for urgent requests.`}
+              q={t("subserviceContent.faqWhatsAppQ", { nameLower })}
+              a={t("subserviceContent.faqWhatsAppA")}
             />
             <FaqItem
-              q={`Is ${sub.name.toLowerCase()} available same-day?`}
-              a={`Same-day slots depend on technician availability and urgency. Emergency and safety-related ${service.title.toLowerCase()} issues (e.g. active leaks, electrical hazards) receive priority dispatch. WhatsApp early in the day for the best chance of a same-day slot.`}
+              q={t("subserviceContent.faqSameDayQ", { nameLower })}
+              a={t("subserviceContent.faqSameDayA", { serviceLower })}
             />
             <FaqItem
-              q={`Do you cover my area for ${sub.name.toLowerCase()}?`}
-              a={`Yes. We dispatch ${service.title.toLowerCase()} teams daily across all of KL and Selangor — Kuala Lumpur, Petaling Jaya, Subang Jaya, Shah Alam, Puchong, Klang, and every major suburb. Just confirm your area in WhatsApp and we will match you with the nearest available technician.`}
+              q={t("subserviceContent.faqAreaQ", { nameLower })}
+              a={t("subserviceContent.faqAreaA", { serviceLower })}
             />
             <FaqItem
-              q={`What warranty comes with ${sub.name.toLowerCase()}?`}
-              a={`Every ${sub.name.toLowerCase()} booking is covered by our written ${service.warranty.toLowerCase()}. If anything covered fails within the warranty period, we return to fix it free of charge. Warranty terms are explained on every invoice.`}
+              q={t("subserviceContent.faqWarrantyQ", { nameLower })}
+              a={t("subserviceContent.faqWarrantyA", { nameLower, warrantyLower })}
             />
           </div>
 

@@ -1,3 +1,54 @@
+## 🆕 ROUND 36 EXECUTION LOG (2026-07-27) — SUB-SERVICE PAGE i18n + SEO HEADING PASS + CUSTOMER-FACING MARKET WORD CLEANUP
+
+**User direction (Urdu/Hindi):** "Handoff file check kren or Kam shuru kren" — checked the latest handoff and started the next highest-value code-level pending item.
+
+**Handoff check:** Round 35 is marked ✅ completed. The first code-level pending item that was small enough to close safely in this round was: **Sub-service page (`/services/[slug]/[subservice]`) headings are still hardcoded English in `components/sections/subservice-detail-content.tsx` — apply the same SEO/trilingual treatment as parent service pages.** While testing that flow, one related localisation bug was found and fixed: sub-service pages were rendering the parent service in MS/ZH but still using the English sub-service object, so names/prices/descriptions did not switch consistently.
+
+**Round status:** ✅ **COMPLETED — sub-service page hero + body chrome is now trilingual, SEO headings now include sub-service name + KL & Selangor, localised sub-service data is selected by index, and remaining customer-facing MS “market-rate” phrasing discovered in this checkout was replaced with benefit-led wording.**
+
+---
+
+### 🎯 What changed
+
+- ✅ **`components/sections/locale-service-view.tsx`** — sub-service pages now select the localised sub-service by the original sub-service index, not the English object. This fixes the mixed-language state where MS/ZH service pages could show translated parent service content above English sub-service name/description/price.
+- ✅ **`components/sections/subservice-detail-content.tsx`** — removed the hardcoded English headings/body chrome for: included section, direct answer, process title/subtitle, decision tree, pricing card, warranty card, related sub-services, and all six FAQ questions/answers.
+- ✅ **SEO heading upgrade:** sub-service H2/H3 text now carries the actual sub-service name and locality where useful, e.g. `{name} process in KL & Selangor — step by step`, `{name} FAQs — price, warranty and timing`, and translated MS/ZH equivalents.
+- ✅ **Related sub-service links remain canonical:** visible related cards use localised titles/descriptions, but hrefs still use the original English slug (`/services/<service>/<subservice>`) so the language switch cannot create non-existent Malay/Chinese slugs.
+- ✅ **`components/sections/subservice-detail-hero.tsx`** — hero chrome now uses translations for the service crumb, “sub-service” pill, H1 locality pattern, price label, “View full service”, snapshot labels, quote/call buttons and coverage label.
+- ✅ **`messages/{en,ms,zh}.json`** — added `subserviceHero` namespace and expanded `subserviceContent` from 6 keys to 57 leaf keys. Placeholder parity verified across EN/MS/ZH.
+- ✅ **Customer-facing wording cleanup:** removed remaining Malay “harga/kadar/bajet pasaran” phrases found in this checkout from public dictionaries/tool copy (`messages/ms.json`, `lib/estimator/i18n/tools/painting-ms.ts`). Internal identifiers/imports such as `market-rates.ts` remain untouched because they are not customer-facing and are required by the pricing engine.
+
+---
+
+### ✅ Quality check results
+
+- ✅ TypeScript: `npx tsc --noEmit` — 0 errors
+- ✅ ESLint: `npm run lint -- --max-warnings=0` — 0 errors, 0 warnings
+- ✅ Estimator harness: `npm run test:estimators` — **231,370 assertions, 0 failures**
+- ✅ Build: `npm run build` — green, **4,063 / 4,063 SSG pages**, 0 route-count changes
+- ✅ SEO audit: `npm run seo:audit` — clean run, `docs/seo-audit-report.md` regenerated
+- ✅ Production smoke test (`next start`): `/services/painting/interior-house-painting` returned HTTP 200, exactly one `<h1>`, 7 H2s
+- ✅ Customer-facing “market-rate” grep: no remaining `market-rate`, `harga pasaran`, `kadar pasaran`, or `bajet pasaran` in public message/tool/page copy; only internal import/file names remain
+- ✅ Permanent rules honoured — phone +60 11-1662 7349 untouched, no public SSM display added, no RM figures changed, no fake reviews/claims, no new route slugs
+
+---
+
+### 📁 Files modified (9)
+`components/sections/locale-service-view.tsx` · `components/sections/subservice-detail-content.tsx` · `components/sections/subservice-detail-hero.tsx` · `messages/en.json` · `messages/ms.json` · `messages/zh.json` · `lib/estimator/i18n/tools/painting-ms.ts` · `docs/seo-audit-report.md` · `MASTER-HANDOFF-v8-2026-07-24.md`
+
+---
+
+### ⏳ Still pending after Round 36
+
+**Code-level:**
+- ⏳ Area / suburb / problem page body i18n — long hand-written English body prose in `config/area-data.ts` and some problem/location bodies still needs the phrase-dictionary/localised-body pattern.
+- ⏳ `/services/[slug]/cost` and `/services/[slug]/emergency` pages are still English-only server-rendered views. Next recommended round: extract both into client locale view components and add `costPage` / `emergencyPage` namespaces.
+- ⏳ Consider re-lazy-loading the estimator only for the 6 dedicated-tool services to reclaim part of the service-page bundle increase.
+
+**External / manual:** GSC sitemap submission, IndexNow ping after deploy, live browser visual QA, real photography/reviews, GBP/Bing/Rich Results checks.
+
+---
+
 ## 🆕 ROUND 35 EXECUTION LOG (2026-07-28) — ESTIMATOR-FIRST SERVICE PAGES + "MARKET-RATE" COPY REPLACED SITE-WIDE + SEO HEADINGS + CONTENT BODY i18n (100%)
 
 **User direction (Urdu):** "Astimator ko her service page k bilkul top py rakhen. Or google search krny pr jb website samny ati hy to 1 discription mein ye b likha ata hy k market-rate painting, is mein Jo market ka Lafz hy ye acha ni lgg rha… Kuch or hona chaiye Jo logon k liey attractive hona chahiye. Tamam heading or discriptions ko SEO k lehaaz sy best kren. Or is k ilawa b Jo b Kam hn handoff file mein wo dekhen k kia pending hy or wo kren."
