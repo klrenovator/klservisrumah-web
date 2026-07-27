@@ -2,6 +2,11 @@
 const nextConfig = {
   poweredByHeader: false,
   compress: true,
+  // Keep verification and SEO metadata in the initial HTML document. Next.js
+  // otherwise streams metadata for user agents it does not recognise as
+  // HTML-limited bots; Bing's verification fetcher can then inspect the
+  // response before the streamed tags have been moved into <head>.
+  htmlLimitedBots: /.*/,
   eslint: {
     ignoreDuringBuilds: true,
   },
