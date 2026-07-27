@@ -15,7 +15,7 @@ export const marketRateBaseline: MarketRateItem[] = [
     publishedRate: "From RM 450 / room",
     marketRange: "RM 300–RM 900 / room or RM 1.50–RM 6.80 / sq ft",
     pricingUnit: "room / sq ft",
-    validationNote: "Aligned to mid-market Klang Valley 2026 room-painting ranges; final quote depends on wall repair, ceiling height, paint grade, and protection scope.",
+    validationNote: "Aligned to typical Klang Valley 2026 room-painting ranges; final quote depends on wall repair, ceiling height, paint grade, and protection scope.",
     lastReviewed: "2026-07-25"
   },
   {
@@ -33,7 +33,7 @@ export const marketRateBaseline: MarketRateItem[] = [
     publishedRate: "From RM 150",
     marketRange: "RM 80–RM 500 depending on repair complexity",
     pricingUnit: "task",
-    validationNote: "Within market range for tap, valve, sink, minor pipe, and troubleshooting tasks.",
+    validationNote: "Within the usual local range for tap, valve, sink, minor pipe, and troubleshooting tasks.",
     lastReviewed: "2026-07-25"
   },
   {
@@ -42,7 +42,7 @@ export const marketRateBaseline: MarketRateItem[] = [
     publishedRate: "From RM 180",
     marketRange: "RM 150–RM 500 depending on blockage depth",
     pricingUnit: "task",
-    validationNote: "Aligned with local drain and toilet choke market rates; severe main drain cases quoted separately.",
+    validationNote: "Aligned with local drain and toilet choke rates; severe main drain cases quoted separately.",
     lastReviewed: "2026-07-25"
   },
   {
@@ -51,7 +51,7 @@ export const marketRateBaseline: MarketRateItem[] = [
     publishedRate: "From RM 220",
     marketRange: "RM 180–RM 1,500+ depending on board and frame damage",
     pricingUnit: "task / area",
-    validationNote: "Small patch repairs start at market-rate callout scope; larger replacement priced by measured area.",
+    validationNote: "Small patch repairs start at standard callout scope; larger replacement priced by measured area.",
     lastReviewed: "2026-07-25"
   },
   {
@@ -69,7 +69,7 @@ export const marketRateBaseline: MarketRateItem[] = [
     publishedRate: "From RM 300 / point",
     marketRange: "RM 80–RM 350 / point depending on leak severity",
     pricingUnit: "injection point",
-    validationNote: "Sits in market range for active concrete slab leaks where point count and access vary.",
+    validationNote: "Fits the typical range for active concrete slab leaks where point count and access vary.",
     lastReviewed: "2026-07-25"
   },
   {
@@ -87,7 +87,7 @@ export const marketRateBaseline: MarketRateItem[] = [
     publishedRate: "From RM 100",
     marketRange: "RM 40–RM 180 / hour or RM 60–RM 300 per common task",
     pricingUnit: "task",
-    validationNote: "Market-rate entry point for small installation, curtain, shelf, or lock adjustment jobs.",
+    validationNote: "Fair entry point for small installation, curtain, shelf, or lock adjustment jobs.",
     lastReviewed: "2026-07-25"
   },
   {

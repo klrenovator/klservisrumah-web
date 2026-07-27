@@ -1,3 +1,53 @@
+## 🆕 ROUND 37 EXECUTION LOG (2026-07-27) — COST + EMERGENCY SERVICE PAGES TRILINGUALISED, PRICING RATE ROWS LOCALISED
+
+**User direction (Urdu/Hindi):** "Handoff file check kren or Kam shuru kren" — checked the latest handoff and continued with the next small, high-value code-level pending item.
+
+**Handoff check:** Round 36 is marked ✅ completed. The most contained remaining code task was: **`/services/[slug]/cost` and `/services/[slug]/emergency` are still English-only server-rendered views.**
+
+**Round status:** ✅ **COMPLETED — the 28 cost-guide pages and 28 emergency pages now switch visible body copy with EN / BM / 中文, while canonical metadata/schema stay stable. Pricing-page baseline rate cards also reuse the same localised rate copy.**
+
+---
+
+### 🎯 What changed
+
+- ✅ **`app/services/[slug]/cost/page.tsx`** — kept canonical English metadata + FAQ/OfferCatalog/Article schema on the server, but moved the visible page body into a locale-aware client view.
+- ✅ **`components/sections/locale-service-cost-view.tsx` (new)** — localises cost-page breadcrumbs, badge, H1, intro, table headings, fallback sub-service rows, cost factors and WhatsApp CTA. The table now says **"Typical local range"** instead of customer-facing "Market range", and the leaked **"project rule"** sentence is gone.
+- ✅ **`app/services/[slug]/emergency/page.tsx`** — kept canonical English emergency schema, but moved the visible guide into a locale-aware client view.
+- ✅ **`components/sections/locale-service-emergency-view.tsx` (new)** — localises emergency breadcrumbs, badge, H1, intro, three triage steps, coverage heading/body, area chips and urgent WhatsApp CTA. Coverage area names are precomputed server-side as a compact EN/MS/ZH bundle.
+- ✅ **`messages/{en,ms,zh}.json`** — added complete `costPage` and `emergencyPage` namespaces. `costPage.rateCopy` covers all 10 published baseline rate rows (label, published rate wording, unit, range and note) in all 3 languages. Placeholder/key parity verified across EN/MS/ZH.
+- ✅ **`components/sections/locale-pricing-content.tsx`** — pricing-page cards now reuse `costPage.rateCopy`, so the baseline painting/plumbing/ceiling/waterproofing/handyman rate labels, units, ranges and notes no longer stay English when BM/ZH is selected. Fallback "confirmed after scope" and unit text are also translated.
+- ✅ **`config/market-rates.ts`** — customer-facing validation notes were cleaned up to remove exact "market-rate" / "market range" phrasing. **No RM figures were changed.**
+
+---
+
+### ✅ Quality check results
+
+- ✅ TypeScript: `npx tsc --noEmit` — 0 errors
+- ✅ ESLint: `npm run lint -- --max-warnings=0` — 0 errors, 0 warnings
+- ✅ Estimator harness: `npm run test:estimators` — **231,370 assertions, 0 failures**
+- ✅ Build: `npm run build` — green, **4,063 / 4,063 SSG pages**, 0 route-count changes
+- ✅ SEO audit: `npm run seo:audit` — clean run, `docs/seo-audit-report.md` regenerated
+- ✅ Translation parity spot-check: `costPage` + `emergencyPage` key sets and `{placeholder}` sets match across EN/MS/ZH
+- ✅ Customer-facing wording grep: no remaining `project rule`, `handoff rule`, visible `Market range`, `market-rate`, `harga pasaran`, `kadar pasaran`, or `bajet pasaran` in app/components/config/lib/messages/public copy; only internal import/file names remain
+- ✅ Permanent rules honoured — phone +60 11-1662 7349 untouched, no public SSM display added, **no RM figures changed**, no fake reviews/claims, no new route slugs
+
+---
+
+### 📁 Files modified / created (11)
+`app/services/[slug]/cost/page.tsx` · `app/services/[slug]/emergency/page.tsx` · `components/sections/locale-service-cost-view.tsx` · `components/sections/locale-service-emergency-view.tsx` · `components/sections/locale-pricing-content.tsx` · `config/market-rates.ts` · `messages/en.json` · `messages/ms.json` · `messages/zh.json` · `docs/seo-audit-report.md` · `MASTER-HANDOFF-v8-2026-07-24.md`
+
+---
+
+### ⏳ Still pending after Round 37
+
+**Code-level:**
+- ⏳ Area / suburb / problem page body i18n — long hand-written English body prose in `config/area-data.ts` and some problem/location bodies still needs the phrase-dictionary/localised-body pattern.
+- ⏳ Consider re-lazy-loading the estimator only for the 6 dedicated-tool services to reclaim part of the service-page bundle increase.
+
+**External / manual:** GSC sitemap submission, IndexNow ping after deploy, live browser visual QA, real photography/reviews, GBP/Bing/Rich Results checks.
+
+---
+
 ## 🆕 ROUND 36 EXECUTION LOG (2026-07-27) — SUB-SERVICE PAGE i18n + SEO HEADING PASS + CUSTOMER-FACING MARKET WORD CLEANUP
 
 **User direction (Urdu/Hindi):** "Handoff file check kren or Kam shuru kren" — checked the latest handoff and started the next highest-value code-level pending item.

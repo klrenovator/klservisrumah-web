@@ -511,7 +511,9 @@
         "q": "Are emergency jobs charged differently?",
         "a": "Emergency jobs can cost more when urgent dispatch, after-hours labour, access difficulty or safety controls are involved. The emergency uplift is explained before work starts."
       }
-    }
+    },
+    "confirmedAfterScope": "Confirmed after scope check",
+    "taskUnit": "task"
   },
   "notFound": {
     "badge": "404 page not found",
@@ -1134,5 +1136,127 @@
     "allKLSelangor": "All KL & Selangor",
     "getMyQuote": "Get My Quote",
     "call": "Call {phone}"
+  },
+  "costPage": {
+    "servicesCrumb": "Services",
+    "costCrumb": "Cost",
+    "badge": "2026 pricing guide",
+    "h1": "How much does {name} cost in KL & Selangor?",
+    "intro": "Use this guide to understand fair Klang Valley pricing before requesting a fixed quote. Final cost depends on measurements, access, materials and the actual site condition.",
+    "tableCaption": "{name} price ranges",
+    "scope": "Scope",
+    "publishedRate": "Our published rate",
+    "typicalRange": "Typical local range",
+    "notes": "Notes",
+    "confirmedAfterScope": "Confirmed after scope",
+    "factorsEyebrow": "Cost factors",
+    "factorsHeading": "What affects {name} cost?",
+    "factorsSub": "We confirm these points before work starts so the quote is clear and approved first.",
+    "factor1": "Property size and measured work area",
+    "factor2": "Surface or fixture condition before work starts",
+    "factor3": "Material grade and brand selected",
+    "factor4": "Condo management rules, lift protection, or difficult access",
+    "factor5": "Emergency versus scheduled appointment timing",
+    "factor6": "Bundled multi-task visit savings",
+    "ctaHeading": "Need an exact {name} quote?",
+    "ctaBody": "Send photos, measurements and your area. We confirm the itemised fixed-price quote before work begins.",
+    "ctaButton": "WhatsApp for Quote",
+    "rateCopy": {
+      "painting": {
+        "0": {
+          "label": "Interior room painting",
+          "publishedRate": "From RM 450 / room",
+          "unit": "room / sq ft",
+          "range": "RM 300–RM 900 / room or RM 1.50–RM 6.80 / sq ft",
+          "note": "Typical Klang Valley 2026 room-painting ranges; final quote depends on wall repair, ceiling height, paint grade and protection scope."
+        },
+        "1": {
+          "label": "Exterior house painting",
+          "publishedRate": "From RM 2,200",
+          "unit": "job / sq ft",
+          "range": "RM 2.50–RM 6.00 / sq ft depending on access and paint system",
+          "note": "Starts at small terrace or limited facade scope; full landed homes require a measured quotation."
+        }
+      },
+      "plumbing": {
+        "0": {
+          "label": "Minor plumbing repair",
+          "publishedRate": "From RM 150",
+          "unit": "task",
+          "range": "RM 80–RM 500 depending on repair complexity",
+          "note": "Fits common tap, valve, sink, minor pipe and troubleshooting tasks."
+        },
+        "1": {
+          "label": "Drain unclogging",
+          "publishedRate": "From RM 180",
+          "unit": "task",
+          "range": "RM 150–RM 500 depending on blockage depth",
+          "note": "Aligned with local drain and toilet choke rates; severe main drain cases are quoted separately."
+        }
+      },
+      "ceiling": {
+        "0": {
+          "label": "Plaster ceiling repair",
+          "publishedRate": "From RM 220",
+          "unit": "task / area",
+          "range": "RM 180–RM 1,500+ depending on board and frame damage",
+          "note": "Small patch repairs start at standard callout scope; larger replacement is priced by measured area."
+        },
+        "1": {
+          "label": "Plaster ceiling installation",
+          "publishedRate": "From RM 10 / sq ft",
+          "unit": "sq ft",
+          "range": "RM 6–RM 15 / sq ft depending on design",
+          "note": "Within typical Klang Valley rates for plain gypsum ceiling; L-box and tiered designs cost more."
+        }
+      },
+      "waterproofing": {
+        "0": {
+          "label": "PU injection grouting",
+          "publishedRate": "From RM 300 / point",
+          "unit": "injection point",
+          "range": "RM 80–RM 350 / point depending on leak severity",
+          "note": "A typical range for active concrete slab leaks where point count and access vary."
+        },
+        "1": {
+          "label": "Bathroom / wet-area waterproofing",
+          "publishedRate": "From RM 1,000",
+          "unit": "bathroom / area",
+          "range": "RM 800–RM 3,500 no-hack or RM 4,500–RM 9,000 with hacking",
+          "note": "Starting point is for limited treatment; full hacking and retiling needs a site quotation."
+        }
+      },
+      "handyman": {
+        "0": {
+          "label": "General handyman task",
+          "publishedRate": "From RM 100",
+          "unit": "task",
+          "range": "RM 40–RM 180 / hour or RM 60–RM 300 per common task",
+          "note": "Fair entry point for small installation, curtain, shelf or lock adjustment jobs."
+        },
+        "1": {
+          "label": "TV wall mounting",
+          "publishedRate": "From RM 150",
+          "unit": "task",
+          "range": "RM 80–RM 300+ depending on TV size and wall type",
+          "note": "Quote adjusts for TV size, bracket type, wall material, cable trunking and anchor requirements."
+        }
+      }
+    }
+  },
+  "emergencyPage": {
+    "servicesCrumb": "Services",
+    "emergencyCrumb": "Emergency",
+    "badge": "Urgent response guide",
+    "h1": "Emergency {name} in KL & Selangor",
+    "intro": "For urgent problems, send photos, your area, and a short video if safe. We triage the risk, explain immediate steps, and confirm a fixed emergency quote before permanent work begins.",
+    "step1": "Stop or isolate the source if safe",
+    "step2": "Send photos and your location",
+    "step3": "Approve the quote before repair starts",
+    "coverageHeading": "Fastest coverage areas",
+    "coverageSub": "Share your exact address or map pin so we can check the closest available crew and practical arrival timing.",
+    "ctaHeading": "Urgent WhatsApp dispatch",
+    "ctaBody": "Use the button below and include the word URGENT in your message.",
+    "ctaButton": "WhatsApp Urgent Request"
   }
 }

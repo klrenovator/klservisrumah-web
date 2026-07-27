@@ -511,7 +511,9 @@
         "q": "紧急工作的收费不同吗？",
         "a": "当涉及紧急派遣、加班人工、出入困难或安全控制时，紧急工作可能成本更高。紧急加价在开工前说明。"
       }
-    }
+    },
+    "confirmedAfterScope": "确认范围后报价",
+    "taskUnit": "任务"
   },
   "notFound": {
     "badge": "404 未找到页面",
@@ -1134,5 +1136,127 @@
     "allKLSelangor": "整个KL与雪兰莪",
     "getMyQuote": "获取报价",
     "call": "拨打 {phone}"
+  },
+  "costPage": {
+    "servicesCrumb": "服务",
+    "costCrumb": "费用",
+    "badge": "2026 价格指南",
+    "h1": "{name}在KL与雪兰莪需要多少钱？",
+    "intro": "使用本指南先了解巴生谷公道价格，再索取固定报价。最终费用取决于实际尺寸、出入条件、材料和现场状况。",
+    "tableCaption": "{name}价格范围",
+    "scope": "范围",
+    "publishedRate": "我们的公开价格",
+    "typicalRange": "本地常见范围",
+    "notes": "说明",
+    "confirmedAfterScope": "确认范围后报价",
+    "factorsEyebrow": "费用因素",
+    "factorsHeading": "哪些因素会影响{name}费用？",
+    "factorsSub": "开工前我们会确认这些事项，让报价清楚并先获得您的批准。",
+    "factor1": "房屋大小和实际测量施工面积",
+    "factor2": "开工前表面或配件的状况",
+    "factor3": "所选材料等级和品牌",
+    "factor4": "公寓管理规定、电梯保护或出入困难",
+    "factor5": "紧急预约与预定时段的差别",
+    "factor6": "多项任务合并上门的节省",
+    "ctaHeading": "需要准确的{name}报价？",
+    "ctaBody": "请发送照片、尺寸和所在地区。开工前我们会确认逐项固定报价。",
+    "ctaButton": "WhatsApp 获取报价",
+    "rateCopy": {
+      "painting": {
+        "0": {
+          "label": "室内房间粉刷",
+          "publishedRate": "RM 450 / 房间起",
+          "unit": "房间 / 平方英尺",
+          "range": "RM 300–RM 900 / 房间，或 RM 1.50–RM 6.80 / 平方英尺",
+          "note": "巴生谷 2026 年常见房间粉刷范围；最终报价取决于墙面修补、天花高度、油漆等级和保护范围。"
+        },
+        "1": {
+          "label": "外墙房屋粉刷",
+          "publishedRate": "RM 2,200 起",
+          "unit": "工程 / 平方英尺",
+          "range": "RM 2.50–RM 6.00 / 平方英尺，视出入条件和油漆系统而定",
+          "note": "起价适用于小型排屋或有限外墙范围；完整有地住宅需量尺后报价。"
+        }
+      },
+      "plumbing": {
+        "0": {
+          "label": "小型水管维修",
+          "publishedRate": "RM 150 起",
+          "unit": "任务",
+          "range": "RM 80–RM 500，视维修复杂度而定",
+          "note": "适用于水龙头、阀门、洗手盆、小管道和常见排查任务。"
+        },
+        "1": {
+          "label": "排水管疏通",
+          "publishedRate": "RM 180 起",
+          "unit": "任务",
+          "range": "RM 150–RM 500，视堵塞深度而定",
+          "note": "符合本地排水管和马桶堵塞处理的常见收费；严重主管堵塞另行报价。"
+        }
+      },
+      "ceiling": {
+        "0": {
+          "label": "石膏天花板维修",
+          "publishedRate": "RM 220 起",
+          "unit": "任务 / 面积",
+          "range": "RM 180–RM 1,500+，视板材和框架损坏而定",
+          "note": "小面积补修按标准上门范围起算；较大更换按实际测量面积计价。"
+        },
+        "1": {
+          "label": "石膏天花板安装",
+          "publishedRate": "RM 10 / 平方英尺起",
+          "unit": "平方英尺",
+          "range": "RM 6–RM 15 / 平方英尺，视设计而定",
+          "note": "适用于巴生谷常见平面 gypsum 天花范围；L-box 和分层设计费用更高。"
+        }
+      },
+      "waterproofing": {
+        "0": {
+          "label": "PU 注浆",
+          "publishedRate": "RM 300 / 点起",
+          "unit": "注浆点",
+          "range": "RM 80–RM 350 / 点，视漏水严重程度而定",
+          "note": "适用于活动性混凝土楼板漏水的常见范围，点位数量和出入条件会影响报价。"
+        },
+        "1": {
+          "label": "浴室 / 湿区防水",
+          "publishedRate": "RM 1,000 起",
+          "unit": "浴室 / 区域",
+          "range": "免打凿 RM 800–RM 3,500，打凿重做 RM 4,500–RM 9,000",
+          "note": "起价适用于有限范围处理；完整打凿和重铺瓷砖需现场报价。"
+        }
+      },
+      "handyman": {
+        "0": {
+          "label": "一般杂工任务",
+          "publishedRate": "RM 100 起",
+          "unit": "任务",
+          "range": "RM 40–RM 180 / 小时，或常见任务 RM 60–RM 300",
+          "note": "适用于小型安装、窗帘、层架或锁具调校的公道起点。"
+        },
+        "1": {
+          "label": "电视挂墙安装",
+          "publishedRate": "RM 150 起",
+          "unit": "任务",
+          "range": "RM 80–RM 300+，视电视尺寸和墙体类型而定",
+          "note": "报价会按电视尺寸、支架类型、墙体材料、线槽和锚栓要求调整。"
+        }
+      }
+    }
+  },
+  "emergencyPage": {
+    "servicesCrumb": "服务",
+    "emergencyCrumb": "紧急",
+    "badge": "紧急响应指南",
+    "h1": "KL与雪兰莪紧急{name}",
+    "intro": "遇到紧急问题时，请发送照片、所在地区，安全的话再附上短视频。我们会先判断风险、说明即时步骤，并在永久维修开始前确认固定紧急报价。",
+    "step1": "安全情况下先停止或隔离源头",
+    "step2": "发送照片和您的位置",
+    "step3": "维修开始前先批准报价",
+    "coverageHeading": "最快覆盖地区",
+    "coverageSub": "请分享准确地址或地图定位，以便我们查看最近可用团队和实际抵达时间。",
+    "ctaHeading": "WhatsApp 紧急派工",
+    "ctaBody": "请使用下方按钮，并在消息中写上 URGENT。",
+    "ctaButton": "WhatsApp 紧急请求"
   }
 }

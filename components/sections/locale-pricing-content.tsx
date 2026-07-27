@@ -75,13 +75,13 @@ export function LocalePricingContent() {
               const service = getLocalizedService(sourceService, lang);
               const rates = getMarketRatesForService(service.slug as MarketRateItem["serviceSlug"]);
               const visibleRates = rates.length
-                ? rates
+                ? rates.map((rate, index) => localizeRateRow(t, sourceService.slug, index, rate))
                 : service.subServices.slice(0, 3).map((sub) => ({
                     serviceSlug: service.slug as MarketRateItem["serviceSlug"],
                     label: sub.name,
                     publishedRate: sub.price,
-                    marketRange: "Confirmed after scope check",
-                    pricingUnit: "task",
+                    marketRange: t("pricingPage.confirmedAfterScope"),
+                    pricingUnit: t("pricingPage.taskUnit"),
                     validationNote: sub.desc,
                     lastReviewed: "2026-07-24"
                   }));
@@ -220,6 +220,23 @@ export function LocalePricingContent() {
       </section>
     </>
   );
+}
+
+function localizeRateRow(
+  t: (key: string, vars?: Record<string, string | number>) => string,
+  serviceSlug: string,
+  index: number,
+  rate: MarketRateItem
+): MarketRateItem {
+  const prefix = `costPage.rateCopy.${serviceSlug}.${index}`;
+  return {
+    ...rate,
+    label: t(`${prefix}.label`, { defaultValue: rate.label }),
+    publishedRate: t(`${prefix}.publishedRate`, { defaultValue: rate.publishedRate }),
+    pricingUnit: t(`${prefix}.unit`, { defaultValue: rate.pricingUnit }),
+    marketRange: t(`${prefix}.range`, { defaultValue: rate.marketRange }),
+    validationNote: t(`${prefix}.note`, { defaultValue: rate.validationNote })
+  };
 }
 
 /**
