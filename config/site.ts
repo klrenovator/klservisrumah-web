@@ -29,7 +29,8 @@ export const siteConfig = {
   foundingDate: "2014",
   numberOfEmployees: 10,
   hours: "Mon–Sun · 9:00 AM – 6:00 PM (Everyday Open)",
-  googleMapsEmbed: "https://maps.app.goo.gl/dG5WWYBCotRQzvRJA",
+  // Kept for compatibility with map consumers; directs to the correct business profile.
+  googleMapsEmbed: "https://share.google/2lPdnOVE7zZ1JsZuO",
   googleBusinessProfile: "https://share.google/2lPdnOVE7zZ1JsZuO",
   reviewCount: 120,
   reviewRating: 4.9,
@@ -128,11 +129,13 @@ export const siteConfig = {
 
   links: {
     whatsapp: "https://wa.me/601116627349",
-    facebook: "https://www.facebook.com/share/1DDDB3523A/",
-    instagram: "https://www.instagram.com/klrenovator?igsh=MTNqb3p1NDExZ3Boeg==",
+    facebook: "https://www.facebook.com/share/1JdtwFMoKR/",
+    instagram: "https://www.instagram.com/klservisrumah?igsh=MXd5d21rcTdtajRrcg==",
     tiktok: "https://www.tiktok.com/@klrenovator?_r=1&_t=ZS-96tR1k7aVU5",
     youtube: "https://www.youtube.com/@klrenovator",
-    googleMaps: "https://maps.app.goo.gl/dG5WWYBCotRQzvRJA",
+    // The former map short link redirected to the unrelated KLRenovator site.
+    // Use the verified KL Servis Rumah Google Business Profile instead.
+    googleMaps: "https://share.google/2lPdnOVE7zZ1JsZuO",
     googleBusiness: "https://share.google/2lPdnOVE7zZ1JsZuO",
     twitter: "https://x.com/KlRenovator",
     linkedin: "https://www.linkedin.com/in/kl-renovator-7912b7389",
