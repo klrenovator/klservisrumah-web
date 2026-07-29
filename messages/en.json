@@ -294,7 +294,24 @@
       "email": "Email Inquiry Desk",
       "hours": "Operating Schedule"
     },
-    "dispatchNote": "Our dispatch managers are active on WhatsApp from 9:00 AM to 6:00 PM everyday (including Saturdays and Sundays) for same-day scheduling. Form submissions made after 6:00 PM are processed early the following morning."
+    "dispatchNote": "Our dispatch managers are active on WhatsApp from 9:00 AM to 6:00 PM everyday (including Saturdays and Sundays) for same-day scheduling. Form submissions made after 6:00 PM are processed early the following morning.",
+    "propertyTypes": {
+      "landed": "Landed",
+      "condo": "Condo / Apartment",
+      "commercial": "Commercial / Office",
+      "shoplot": "Shoplot",
+      "other": "Other"
+    },
+    "timeWindows": {
+      "morning": "Morning (9 AM–12 PM)",
+      "afternoon": "Afternoon (12 PM–3 PM)",
+      "late": "Late afternoon (3 PM–6 PM)",
+      "flexible": "Flexible"
+    },
+    "submitAndOpen": "Submit & Open WhatsApp",
+    "bookingCompiled": "Booking details compiled",
+    "bookingCompiledDesc": "WhatsApp should open in a new tab with your structured booking request. If it did not open, please allow popups and submit again.",
+    "bookJob": "Book a Job"
   },
   "pricing": {
     "pageTitle": "Home Services Pricing in KL & Selangor",

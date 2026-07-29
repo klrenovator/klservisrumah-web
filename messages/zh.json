@@ -294,7 +294,24 @@
       "email": "电子邮件咨询台",
       "hours": "营业时间"
     },
-    "dispatchNote": "我们的调度经理每天上午 9:00 至下午 6:00（包括周六和周日）在 WhatsApp 上提供当日预约服务。下午 6:00 后提交的表格将在次日清晨处理。"
+    "dispatchNote": "我们的调度经理每天上午 9:00 至下午 6:00（包括周六和周日）在 WhatsApp 上提供当日预约服务。下午 6:00 后提交的表格将在次日清晨处理。",
+    "propertyTypes": {
+      "landed": "有地住宅",
+      "condo": "公寓",
+      "commercial": "商业 / 办公室",
+      "shoplot": "店屋",
+      "other": "其他"
+    },
+    "timeWindows": {
+      "morning": "早上 (9 AM–12 PM)",
+      "afternoon": "下午 (12 PM–3 PM)",
+      "late": "傍晚 (3 PM–6 PM)",
+      "flexible": "时间灵活"
+    },
+    "submitAndOpen": "提交并打开 WhatsApp",
+    "bookingCompiled": "预订详情已整理",
+    "bookingCompiledDesc": "WhatsApp 应该会在新标签页中打开，并附有您的预订请求。如果没有打开，请允许弹出窗口并重新提交。",
+    "bookJob": "预订服务"
   },
   "pricing": {
     "pageTitle": "吉隆坡与雪兰莪家居服务价格",

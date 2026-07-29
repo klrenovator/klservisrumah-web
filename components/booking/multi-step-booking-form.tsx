@@ -8,8 +8,8 @@ import { trackFormSubmit, trackWhatsAppClick } from "@/lib/analytics";
 import { useTranslations } from "@/hooks/use-translations";
 
 const serviceOptions = Object.values(servicesData);
-const propertyTypes = ["Landed", "Condo / Apartment", "Commercial / Office", "Shoplot", "Other"];
-const timeWindows = ["Morning (9 AM–12 PM)", "Afternoon (12 PM–3 PM)", "Late afternoon (3 PM–6 PM)", "Flexible"];
+const propertyTypeKeys = ["landed", "condo", "commercial", "shoplot", "other"] as const;
+const timeWindowKeys = ["morning", "afternoon", "late", "flexible"] as const;
 
 type FormState = {
   service: string;
@@ -88,12 +88,12 @@ export function MultiStepBookingForm() {
   if (submitted) {
     return (
       <div className="rounded-3xl border border-emerald-100 bg-white p-8 text-center shadow-[0_20px_50px_rgba(2,31,68,0.06)]">
-        <h2 className="text-2xl font-extrabold text-[#075985]">Booking details compiled</h2>
+        <h2 className="text-2xl font-extrabold text-[#075985]">{t("contact.bookingCompiled")}</h2>
         <p className="mt-3 text-sm font-semibold leading-relaxed text-[#475569]">
-          WhatsApp should open in a new tab with your structured booking request. If it did not open, please allow popups and submit again.
+          {t("contact.bookingCompiledDesc")}
         </p>
         <button onClick={submit} className="mt-6 rounded-xl bg-[#22C55E] px-5 py-3 text-sm font-extrabold text-white">
-          Open WhatsApp Again
+          {t("contact.openWhatsApp")}
         </button>
       </div>
     );
@@ -103,8 +103,8 @@ export function MultiStepBookingForm() {
     <div className="rounded-3xl border border-slate-100 bg-white p-6 shadow-[0_15px_40px_rgba(2,31,68,0.04)] sm:p-8">
       <div className="mb-6 flex items-center justify-between gap-4">
         <div>
-          <span className="text-xs font-extrabold uppercase tracking-widest text-[#0EA5E9]">Step {step} of 6</span>
-          <h2 className="mt-1 text-2xl font-extrabold text-[#075985]">Book a Job</h2>
+          <span className="text-xs font-extrabold uppercase tracking-widest text-[#0EA5E9]">{t("contact.step")} {step} {t("contact.of")} 6</span>
+          <h2 className="mt-1 text-2xl font-extrabold text-[#075985]">{t("contact.bookJob")}</h2>
         </div>
         <div className="text-right text-[11px] font-bold text-[#475569]">{t("contact.formNote")}<br />{t("contact.quoteNote")}</div>
       </div>
@@ -141,17 +141,17 @@ export function MultiStepBookingForm() {
           <StepShell title={t("contact.fields.location")}>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
-                Area / Suburb
+                {t("contact.fields.area")}
                 <select value={form.suburb} onChange={(event) => update("suburb", event.target.value)} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]">
                   <option value="">{t("contact.selectSuburb")}</option>
                   {suburbPages.map((suburb) => <option key={suburb.slug} value={suburb.slug}>{suburb.name}</option>)}
                 </select>
               </label>
               <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
-                Property type
+                {t("contact.fields.propertyType")}
                 <select value={form.propertyType} onChange={(event) => update("propertyType", event.target.value)} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]">
                   <option value="">{t("contact.selectType")}</option>
-                  {propertyTypes.map((type) => <option key={type} value={type}>{type}</option>)}
+                  {propertyTypeKeys.map((key) => <option key={key} value={t(`contact.propertyTypes.${key}`)}>{t(`contact.propertyTypes.${key}`)}</option>)}
                 </select>
               </label>
             </div>
@@ -168,7 +168,7 @@ export function MultiStepBookingForm() {
               <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
                 {t("contact.timeWindow")}
                 <select value={form.time} onChange={(event) => update("time", event.target.value)} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]">
-                  {timeWindows.map((time) => <option key={time} value={time}>{time}</option>)}
+                  {timeWindowKeys.map((key) => <option key={key} value={t(`contact.timeWindows.${key}`)}>{t(`contact.timeWindows.${key}`)}</option>)}
                 </select>
               </label>
             </div>
@@ -206,15 +206,15 @@ export function MultiStepBookingForm() {
 
       <div className="mt-6 flex items-center justify-between gap-3 border-t border-slate-100 pt-5">
         <button type="button" onClick={() => setStep((current) => Math.max(1, current - 1))} disabled={step === 1} className="rounded-xl border border-slate-200 px-4 py-3 text-sm font-extrabold text-[#075985] disabled:cursor-not-allowed disabled:opacity-40">
-          Back
+          {t("common.back")}
         </button>
         {step < 6 ? (
           <button type="button" onClick={() => setStep((current) => current + 1)} disabled={!canContinue} className="rounded-xl bg-[#0284C7] px-5 py-3 text-sm font-extrabold text-white disabled:cursor-not-allowed disabled:bg-slate-300">
-            Continue
+            {t("common.continue")}
           </button>
         ) : (
           <button type="button" onClick={submit} disabled={!canContinue} className="rounded-xl bg-[#22C55E] px-5 py-3 text-sm font-extrabold text-white disabled:cursor-not-allowed disabled:bg-slate-300">
-            Submit & Open WhatsApp
+            {t("contact.submitAndOpen")}
           </button>
         )}
       </div>
