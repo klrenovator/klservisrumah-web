@@ -294,7 +294,24 @@
       "email": "Meja Pertanyaan E-mel",
       "hours": "Jadual Operasi"
     },
-    "dispatchNote": "Pengurus dispatch kami aktif di WhatsApp dari 9:00 PG hingga 6:00 PTG setiap hari (termasuk Sabtu dan Ahad) untuk penjadualan hari sama. Hantaran borang selepas 6:00 PTG diproses awal pagi berikutnya."
+    "dispatchNote": "Pengurus dispatch kami aktif di WhatsApp dari 9:00 PG hingga 6:00 PTG setiap hari (termasuk Sabtu dan Ahad) untuk penjadualan hari sama. Hantaran borang selepas 6:00 PTG diproses awal pagi berikutnya.",
+    "propertyTypes": {
+      "landed": "Rumah Bertanah (Landed)",
+      "condo": "Kondo / Pangsapuri",
+      "commercial": "Komersial / Pejabat",
+      "shoplot": "Lot Kedai",
+      "other": "Lain-lain"
+    },
+    "timeWindows": {
+      "morning": "Pagi (9 PG–12 TGH)",
+      "afternoon": "Tengah hari (12 TGH–3 PTG)",
+      "late": "Petang (3 PTG–6 PTG)",
+      "flexible": "Bila-bila masa"
+    },
+    "submitAndOpen": "Hantar & Buka WhatsApp",
+    "bookingCompiled": "Butiran tempahan telah disusun",
+    "bookingCompiledDesc": "WhatsApp sepatutnya dibuka dalam tab baru dengan permintaan tempahan anda. Jika ia tidak dibuka, sila benarkan pop-up dan hantar sekali lagi.",
+    "bookJob": "Tempah Perkhidmatan"
   },
   "pricing": {
     "pageTitle": "Harga Perkhidmatan Rumah di KL & Selangor",
