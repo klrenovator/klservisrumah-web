@@ -1,27 +1,39 @@
 # KL Servis Rumah — AI Context
-> Same-day home services in KL & Selangor: painting, plumbing, ceiling, waterproofing & handyman.
+> Same-day home services in KL & Selangor: house painting, plaster ceiling, plumbing, waterproofing & handyman. Fixed upfront quotes, real warranty.
 
 ## About
-KL Servis Rumah provides professional home maintenance services across Kuala Lumpur & Selangor (Klang Valley). Fully insured operations, background-verified teams, transparent pricing confirmed before work begins. Same-day dispatch available.
+KL Servis Rumah provides professional home maintenance services across Kuala Lumpur & Selangor (Klang Valley). Fully insured operations, background-verified teams, and an itemised fixed-price quote confirmed in writing before work begins. Same-day dispatch available.
 
-## Key Services
-- House Painting: From RM 450/room — interior/exterior, Nippon Paint & Dulux
-- Plumbing: From RM 120 — leak repair, pipe replacement, toilet installation
-- Plaster Ceiling: From RM 180 — L-box, gypsum partition, ceiling repair
-- Waterproofing: From RM 300 — PU grouting, bathroom waterproofing, roof seal
-- Handyman: From RM 80 — TV mounting, furniture assembly, door/lock repair
-- Electrical: From RM 80 — wiring, water heater, ceiling fan, downlight
-- Tiling & Flooring: From RM 500 — vinyl/SPC, epoxy, ceramic tile
-- Full House Renovation: From RM 22,000
+## Key Services (published starting prices)
+- Premium Painting Services: from RM 450 — Interior House Painting, Exterior House Painting, Commercial & Office Painting
+- Professional Plumbing Solutions: from RM 150 — Water Leakage Diagnosis & Repair, Toilet, Tap & Sink Installation, Drain Unclogging & Cleaning
+- Plaster Ceiling & Partitions: from RM 220 — Water-Damaged Ceiling Repair, Plaster Ceiling Installation, Gypsum Board Partition Wall
+- Premium Waterproofing & Leak Control: from RM 300 — PU High-Pressure Injection Grouting, Bathroom & Wet Area Waterproofing, Roof & Concrete Slab Waterproofing
+- Expert Handyman Services: from RM 100 — Heavy TV Wall Mounting, Door, Hinge & Lockset Repair, Furniture Assembly (IKEA/Taobao)
+- Complete House Renovation: from RM 22,000 — Full House Renovation Package, Kitchen & Bathroom Makeover, Condo Interior Refurbishment
+- Licensed Electrical Services: from RM 150 — New Power Point & Switch Installation, DB Box Upgrade & Rewiring, Lighting Point & Downlight Installation
+- Water Heater Installation & Repair: from RM 180 — Instant Water Heater Installation, Storage Tank Heater Installation, Water Heater Repair & Descaling
+- Ceiling Fan Installation & Replacement: from RM 150 — New Ceiling Fan Installation, Ceiling Fan Replacement, DC Motor Smart Fan Install
+- Lighting Design & Installation: from RM 120 — LED Downlight Installation, Pendant & Chandelier Install, Cove & Strip LED Installation
+- Professional Tiling & Tile Repair: from RM 14 — Floor Tiling Installation, Wall Tiling Installation, Large-Format Slab Tiling
+- Plaster Ceiling Design & Build: from RM 10 — Flat Plaster Ceiling, Tiered & L-Box Ceiling, Cove & Curved Ceiling
+
+Full directory of all 28 services: https://www.klservisrumah.my/services
 
 ## Service Areas
-Kuala Lumpur, Petaling Jaya, Subang Jaya, Shah Alam, Puchong, Damansara, Klang, Cheras, Ampang, Kajang, Bangsar, Mont Kiara, Setapak, Wangsa Maju, Kepong, Sri Petaling, Bukit Jalil, Kota Damansara, Ara Damansara, Sunway, USJ, Port Klang, Bukit Tinggi, Setia Alam, Rawang, Batu Caves, Selayang + all Klang Valley.
+Kuala Lumpur, Cheras, Ampang, Setapak, Wangsa Maju, Kepong, Sri Petaling, Bukit Jalil, Mont Kiara, Bangsar, Desa ParkCity, Taman Melawati, Hulu Kelang, Petaling Jaya, Subang Jaya, Shah Alam, Puchong, Damansara, Kota Damansara, Ara Damansara, Sunway, USJ, Bandar Utama, SS2, Klang, Port Klang, Bukit Tinggi, Setia Alam, Meru, Kota Kemuning, Bukit Jelutong, Glenmarie, Batu Caves, Selayang, Rawang, Kundang, Sungai Buloh, Kajang, Semenyih, Balakong, Seri Kembangan, Pandan Indah, Bandar Puteri, Putrajaya, Cyberjaya, Dengkil, Selangor, Sentul, Bandar Botanic.
 
 ## Contact
-Phone: +60 11-1662 7349
-Email: info@klservisrumah.my
-WhatsApp: https://wa.me/601116627349
-Google Maps: https://maps.app.goo.gl/dG5WWYBCotRQzvRJA
+- **Phone**: +60 11-1662 7349
+- **Email**: info@klservisrumah.my
+- **WhatsApp**: https://wa.me/601116627349
+- **Facebook**: https://www.facebook.com/share/1HFzAa3AdZ/
+- **Instagram**: https://www.instagram.com/klservisrumah?igsh=MXd5d21rcTdtajRrcg==
+- **TikTok**: https://www.tiktok.com/@klrenovator?_r=1&_t=ZS-96tR1k7aVU5
+- **YouTube**: https://www.youtube.com/@klrenovator
+- **Google Business Profile**: https://share.google/7GZef2rDjtRuqW2h1
+- **Office**: Jalan Kiara, Mont Kiara, 50480 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia
+- **Hours**: Mon–Sun · 9:00 AM – 6:00 PM (Everyday Open)
 
 ## Key URLs
 - Home: https://www.klservisrumah.my/
@@ -35,45 +47,45 @@ Google Maps: https://maps.app.goo.gl/dG5WWYBCotRQzvRJA
 - About: https://www.klservisrumah.my/about
 
 ## Free Tools (Instant Estimators)
-Free single-page estimators priced from the published 2026 rate list — available in English, Bahasa Malaysia and Chinese.
+Free single-page estimators priced from the published rate list — available in English, Bahasa Malaysia and Chinese.
 - Tools index (EN): https://www.klservisrumah.my/tools
 - Indeks alatan (BM): https://www.klservisrumah.my/ms/alatan
 - 工具索引 (中文): https://www.klservisrumah.my/zh/gongju
-- Painting calculator: https://www.klservisrumah.my/tools/painting-calculator · BM https://www.klservisrumah.my/ms/alatan/kalkulator-cat · 中文 https://www.klservisrumah.my/zh/gongju/油漆计算器
-- Leak triage: https://www.klservisrumah.my/tools/leak-triage · BM https://www.klservisrumah.my/ms/alatan/diagnosis-kebocoran · 中文 https://www.klservisrumah.my/zh/gongju/漏水诊断
-- Ceiling estimator: https://www.klservisrumah.my/tools/ceiling-calculator · BM https://www.klservisrumah.my/ms/alatan/kalkulator-siling · 中文 https://www.klservisrumah.my/zh/gongju/天花板计算器
-- Plumbing diagnostic: https://www.klservisrumah.my/tools/plumbing-diagnostic · BM https://www.klservisrumah.my/ms/alatan/diagnostik-paip · 中文 https://www.klservisrumah.my/zh/gongju/水管诊断
-- TV mount advisor: https://www.klservisrumah.my/tools/tv-mount-advisor · BM https://www.klservisrumah.my/ms/alatan/penasihat-pemasangan-tv · 中文 https://www.klservisrumah.my/zh/gongju/电视安装估价
+- Painting Cost Calculator for KL & Selangor: https://www.klservisrumah.my/tools/painting-calculator · BM https://www.klservisrumah.my/ms/alatan/kalkulator-cat · 中文 https://www.klservisrumah.my/zh/gongju/油漆计算器
+- Water Leak Triage & Repair Cost Estimator: https://www.klservisrumah.my/tools/leak-triage · BM https://www.klservisrumah.my/ms/alatan/diagnosis-kebocoran · 中文 https://www.klservisrumah.my/zh/gongju/漏水诊断
+- Ceiling Repair & Installation Cost Estimator: https://www.klservisrumah.my/tools/ceiling-calculator · BM https://www.klservisrumah.my/ms/alatan/kalkulator-siling · 中文 https://www.klservisrumah.my/zh/gongju/天花板计算器
+- Plumbing Diagnostic & Repair Cost Estimator: https://www.klservisrumah.my/tools/plumbing-diagnostic · BM https://www.klservisrumah.my/ms/alatan/diagnostik-paip · 中文 https://www.klservisrumah.my/zh/gongju/水管诊断
+- TV Wall Mount Advisor & Installation Cost: https://www.klservisrumah.my/tools/tv-mount-advisor · BM https://www.klservisrumah.my/ms/alatan/penasihat-pemasangan-tv · 中文 https://www.klservisrumah.my/zh/gongju/电视安装估价
 
 ## Shareable Per-Service Estimators
-One short, stable link per service (https://www.klservisrumah.my/estimate/<service>) that opens just the cost estimator — designed to be sent to a customer in a WhatsApp chat so they can work out a ballpark price (labour + materials, from the published 2026 rates) on their own phone. The six services with a dedicated deep tool redirect to it.
+One short, stable link per service (https://www.klservisrumah.my/estimate/<service>) that opens just the cost estimator, designed to be sent to a customer over WhatsApp so they can work out a ballpark price (labour + materials, from the published rates) on their own phone. Services with a dedicated deep tool redirect to it.
 - All estimator links: https://www.klservisrumah.my/estimate
-- Electrical: https://www.klservisrumah.my/estimate/electrical
-- Water heater: https://www.klservisrumah.my/estimate/water-heater
-- Ceiling fan: https://www.klservisrumah.my/estimate/ceiling-fan
-- Lighting: https://www.klservisrumah.my/estimate/lighting
-- Tiling: https://www.klservisrumah.my/estimate/tiling
-- Skim coat: https://www.klservisrumah.my/estimate/skim-coat
-- Flooring: https://www.klservisrumah.my/estimate/flooring
-- Epoxy flooring: https://www.klservisrumah.my/estimate/epoxy-flooring
-- Roof repair: https://www.klservisrumah.my/estimate/roof-repair
-- Kitchen cabinet: https://www.klservisrumah.my/estimate/kitchen-cabinet
-- Carpentry: https://www.klservisrumah.my/estimate/carpentry
-- Door: https://www.klservisrumah.my/estimate/door
-- Window repair: https://www.klservisrumah.my/estimate/window-repair
-- Locksmith: https://www.klservisrumah.my/estimate/locksmith
-- Glass & aluminium: https://www.klservisrumah.my/estimate/glass-aluminium
-- Cleaning: https://www.klservisrumah.my/estimate/cleaning
-- Deep cleaning: https://www.klservisrumah.my/estimate/deep-cleaning
-- Post-renovation cleaning: https://www.klservisrumah.my/estimate/post-renovation-cleaning
-- CCTV: https://www.klservisrumah.my/estimate/cctv
-- Autogate: https://www.klservisrumah.my/estimate/autogate
-- Welding: https://www.klservisrumah.my/estimate/welding
-- House renovation: https://www.klservisrumah.my/estimate/house-renovation
+- Complete House Renovation (from RM 22,000): https://www.klservisrumah.my/estimate/house-renovation
+- Licensed Electrical Services (from RM 150): https://www.klservisrumah.my/estimate/electrical
+- Water Heater Installation & Repair (from RM 180): https://www.klservisrumah.my/estimate/water-heater
+- Ceiling Fan Installation & Replacement (from RM 150): https://www.klservisrumah.my/estimate/ceiling-fan
+- Lighting Design & Installation (from RM 120): https://www.klservisrumah.my/estimate/lighting
+- Professional Tiling & Tile Repair (from RM 14): https://www.klservisrumah.my/estimate/tiling
+- Wall & Ceiling Skim Coat (from RM 5): https://www.klservisrumah.my/estimate/skim-coat
+- Vinyl, SPC & Laminate Flooring (from RM 14): https://www.klservisrumah.my/estimate/flooring
+- Epoxy & Polyurethane Flooring (from RM 22): https://www.klservisrumah.my/estimate/epoxy-flooring
+- Roof Repair & Waterproofing (from RM 380): https://www.klservisrumah.my/estimate/roof-repair
+- Kitchen Cabinet & Countertop (from RM 7,500): https://www.klservisrumah.my/estimate/kitchen-cabinet
+- Custom Carpentry & Joinery (from RM 300): https://www.klservisrumah.my/estimate/carpentry
+- Door Repair & Installation (from RM 250): https://www.klservisrumah.my/estimate/door
+- Window Repair & Glass Replacement (from RM 200): https://www.klservisrumah.my/estimate/window-repair
+- Locksmith & Smart Lock Services (from RM 180): https://www.klservisrumah.my/estimate/locksmith
+- Glass & Aluminium Fabrication (from RM 320): https://www.klservisrumah.my/estimate/glass-aluminium
+- Residential & Office Cleaning (from RM 180): https://www.klservisrumah.my/estimate/cleaning
+- Deep Cleaning & Move-In/Out (from RM 420): https://www.klservisrumah.my/estimate/deep-cleaning
+- Post-Renovation Cleaning (from RM 650): https://www.klservisrumah.my/estimate/post-renovation-cleaning
+- CCTV & Security Camera Installation (from RM 420): https://www.klservisrumah.my/estimate/cctv
+- Auto Gate & Motorised Gate (from RM 2,200): https://www.klservisrumah.my/estimate/autogate
+- Welding & Metal Fabrication (from RM 280): https://www.klservisrumah.my/estimate/welding
 
 ## Business Details
 - Legal Name: Multicore Dynamics Resources
 - SSM: 003765188-T
 - Founded: 2014
 - Google Rating: 4.9 / 5.0 (120+ reviews)
-- Operating Hours: Mon–Sun 9:00 AM – 6:00 PM
+- Operating Hours: Mon–Sun · 9:00 AM – 6:00 PM (Everyday Open)

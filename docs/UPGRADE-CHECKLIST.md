@@ -76,6 +76,43 @@ Last updated: 2026-07-25 (latest agent run: hub architecture + social proof + pe
 - [x] No duplicate `@id` across layout + page JSON-LD.
 - [x] TypeScript strict mode passes.
 
+## 2026-07-30 — AI-context files made generated (drift fix)
+
+**Problem found:** `public/llms.txt`, `llms-full.txt`, `aeo-faq.txt` and
+`site-summary.json` are the machine-readable copy of the business that answer
+engines (ChatGPT, Perplexity, Claude, Gemini) read *instead of* the pages. They
+were hand-maintained, and they had silently drifted away from the site:
+
+- **Wrong social/profile links.** PRs #39, #40 and #41 fixed the footer and the
+  JSON-LD `sameAs`, but not these files — so AI assistants were still being
+  handed the old `instagram.com/klrenovator` handle, a retired Facebook share
+  link and two dead Google short links, all pointing at a different brand.
+- **Stale prices, under-quoting the business.** Plumbing was advertised "from
+  RM 120" against a published RM 150; handyman RM 80 vs RM 100; plaster ceiling
+  RM 180 vs RM 220; electrical RM 80 vs RM 150. Quoting a price the site does
+  not honour is a commercial problem, not just an SEO one.
+- **Contradicted warranties** (e.g. "2-year" painting vs the published 1-year).
+- **Stale counts** (38 areas / 4,033 pages vs the real 37 / 3,018 sitemap URLs).
+
+**Fix — structural, not a one-off correction:**
+- [x] Added `scripts/generate-ai-context.ts`, which *derives* all four files
+      from `config/site.ts`, `services-data.ts`, `area-data.ts`,
+      `problem-data.ts`, `blog-data.ts`, the tool registry and `app/sitemap.ts`.
+      Prices, warranties, links and counts now have exactly one source.
+- [x] Wired into `prebuild` and `predev` as `npm run gen:ai-context`, alongside
+      the existing `gen:rates` — the files regenerate on every build.
+- [x] Page count is read from `app/sitemap.ts` rather than re-derived, so there
+      is no second copy of that arithmetic to drift. This required changing
+      `app/sitemap.ts` to import `MetadataRoute` as a **type-only** import; as a
+      value import the module could not be loaded outside the Next.js bundler.
+- [x] Added a regression section to `npm run test:estimators` that re-checks the
+      committed files against the live config — every price, every warranty,
+      all five profile links, the contact details and the counts, plus an
+      explicit deny-list for the four retired links. Verified it actually fails
+      (exit 1) when either bug class is reintroduced, so `prebuild` blocks it.
+
+Build stays green: 4,063 pages, lint clean, `tsc` clean, 231,502 assertions.
+
 ## Recommendations & Future Improvements
 
 - [ ] Provide 10–15 more real photographic hero assets (per service pillar) — current 5 are used across all pages.
