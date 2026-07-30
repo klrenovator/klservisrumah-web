@@ -167,10 +167,11 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homeEntitySchema) }}
       />
 
-      <TrustBar />
       <Hero />
       {/* Floating rotating request toast — shows one item at a time, fades in/out */}
       <RecentJobsTicker />
+      {/* Trust strip — relocated below the hero so the slideshow leads the page */}
+      <TrustBar />
       <TrustBadges />
       <ServicesGrid />
 

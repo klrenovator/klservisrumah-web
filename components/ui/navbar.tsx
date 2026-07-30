@@ -120,7 +120,7 @@ export function Navbar() {
         <div className="hidden items-center gap-6 md:flex"><a href={`tel:${siteConfig.phone}`} className="inline-flex items-center gap-2 font-black text-slate-200 transition hover:text-sky-300"><Phone className="h-3 w-3 text-sky-300" />{siteConfig.phoneDisplay}</a><a href={waLink} target="_blank" rel="nofollow noopener noreferrer" className="inline-flex items-center gap-2 font-black transition hover:text-[#22c55e]"><WhatsAppIcon className="h-3.5 w-3.5 text-[#22c55e]" />WhatsApp Online</a></div>
       </div>
     </div>
-    <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-3 px-3 sm:px-6 lg:px-8">
+    <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-1.5 min-[430px]:gap-3 px-2 min-[430px]:px-3 sm:px-6 lg:px-8">
       <Link href="/" className="shrink-0" aria-label="KL Servis Rumah homepage"><span className="sm:hidden"><Logo size="sm" priority={false} /></span><span className="hidden sm:inline"><Logo size="md" priority={false} /></span></Link>
       <div className="hidden items-center gap-1 lg:flex">
         {PRIMARY_LINKS.slice(0, 1).map(item => <NavLink key={item.href} href={item.href} active={pathname === item.href} label={t(item.key)} />)}
@@ -134,7 +134,11 @@ export function Navbar() {
         {PRIMARY_LINKS.slice(1).map(item => <NavLink key={item.href} href={item.href} active={pathname === item.href || pathname.startsWith(`${item.href}/`)} label={t(item.key)} />)}
       </div>
       <div className="hidden items-center gap-3 lg:flex"><LanguageSwitcher /><HeaderWhatsAppActions /></div>
-      <div className="flex shrink-0 items-center gap-3 lg:hidden"><div className="hidden min-[430px]:block"><LanguageSwitcher /></div><HeaderWhatsAppActions compact /><AllPagesMenu /></div>
+      {/* Mobile actions: the language switcher stays visible at every width.
+          On very narrow phones (<430px) the compact header WhatsApp button is
+          dropped — the sticky bottom WhatsApp/Call bar already covers that
+          surface — so the multilingual pill fits without crowding. */}
+      <div className="flex shrink-0 items-center gap-1.5 min-[430px]:gap-3 lg:hidden"><LanguageSwitcher /><div className="hidden min-[430px]:block"><HeaderWhatsAppActions compact /></div><AllPagesMenu /></div>
     </nav>
   </header>;
 }
