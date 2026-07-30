@@ -1,144 +1,495 @@
 # KL Servis Rumah — Full AI Context
-> Complete business information for AI training and retrieval-augmented generation.
+> Complete business information for AI assistants, answer engines and retrieval-augmented generation.
+> Generated from the site's own published data — every price, warranty and link below matches the live pages.
 
 ## Business Identity
 - **Name**: KL Servis Rumah
 - **Legal Name**: Multicore Dynamics Resources
-- **SSM Registration**: 003765188-T (202503227236)
+- **SSM Registration**: 202503227236 (003765188-T)
 - **Founded**: 2014
 - **Employees**: 10+ full-time staff
-- **Service Areas**: Kuala Lumpur & Selangor (Klang Valley), 50 km service radius from KL centre
-- **Languages**: English, Bahasa Malaysia, Chinese (Mandarin/Cantonese)
+- **Service Areas**: Kuala Lumpur & Selangor (Klang Valley)
+- **Languages**: English, Bahasa Malaysia, Chinese
+- **Google Rating**: 4.9 / 5.0 across 120+ reviews
 
 ## Contact Information
 - **Phone**: +60 11-1662 7349
 - **Email**: info@klservisrumah.my
 - **WhatsApp**: https://wa.me/601116627349
-- **Facebook**: https://www.facebook.com/share/1DDDB3523A/
-- **Instagram**: https://www.instagram.com/klrenovator
-- **TikTok**: https://www.tiktok.com/@klrenovator
+- **Facebook**: https://www.facebook.com/share/1HFzAa3AdZ/
+- **Instagram**: https://www.instagram.com/klservisrumah?igsh=MXd5d21rcTdtajRrcg==
+- **TikTok**: https://www.tiktok.com/@klrenovator?_r=1&_t=ZS-96tR1k7aVU5
 - **YouTube**: https://www.youtube.com/@klrenovator
-- **Google Maps**: https://maps.app.goo.gl/dG5WWYBCotRQzvRJA
-- **Google Business**: https://share.google/HhXvqWDkefZ5bzNdL
-- **Office**: Jalan Kiara, Mont Kiara, 50480 Kuala Lumpur, Malaysia
-- **Hours**: Mon–Sun · 9:00 AM – 6:00 PM (Everyday Open, emergency after-hours available)
+- **Google Business Profile**: https://share.google/7GZef2rDjtRuqW2h1
+- **Office**: Jalan Kiara, Mont Kiara, 50480 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia
+- **Hours**: Mon–Sun · 9:00 AM – 6:00 PM (Everyday Open)
 
-## Service Offerings (28+ Service Categories)
+## Service Offerings (28 service categories)
+All prices are the published starting prices shown on the live service pages. Final pricing is confirmed in an itemised written quote before work begins.
 
-### Painting Services
-- Interior House Painting — From RM 450/room
+### Premium Painting Services
+- Page: https://www.klservisrumah.my/services/painting
+- Starting price: RM 450
+- Warranty: 1-Year Paint Peeling & Craftsmanship Guarantee
+- Interior House Painting — From RM 450 / room
 - Exterior House Painting — From RM 2,200
 - Commercial & Office Painting — On Quote
 - Wall Crack & Moisture Repair — From RM 180
-- Paint brands: Nippon Paint, Dulux, Jotun (premium range)
-- Warranty: Up to 2-year against peeling or blistering
-- Process: Protect & mask → surface prep → primer/undercoat → double topcoat → inspection & cleanup
+- Cost guide: https://www.klservisrumah.my/services/painting/cost
 
-### Plumbing Services
-- Leaking Pipe Repair — From RM 120
-- Toilet Repair & Replacement — From RM 180
-- Water Heater Installation — From RM 100
-- Sink & Basin Installation — From RM 150
-- Pipe Relocation — From RM 200
-- Emergency Burst Pipe — Priority routing, 30-60 min arrival
-- Warranty: 30-day on repairs, 12-month on new installations
+### Professional Plumbing Solutions
+- Page: https://www.klservisrumah.my/services/plumbing
+- Starting price: RM 150
+- Warranty: 30-Day Joint Seal & Workmanship Warranty
+- Water Leakage Diagnosis & Repair — From RM 220
+- Toilet, Tap & Sink Installation — From RM 150
+- Drain Unclogging & Cleaning — From RM 180
+- Water Heater & Pump Installation — From RM 180
+- Cost guide: https://www.klservisrumah.my/services/plumbing/cost
 
-### Plaster Ceiling & Gypsum
-- Plaster Ceiling Repair — From RM 180
-- L-Box Ceiling Installation — From RM 3/ft
-- Gypsum Partition Wall — From RM 4/sqft
-- False Ceiling with Cove Lighting — On Quote
-- Ceiling Fan/Chandelier Lowering Point — From RM 80
-- Warranty: 60-90 days on plastering, 12 months on full installation
+### Plaster Ceiling & Partitions
+- Page: https://www.klservisrumah.my/services/ceiling
+- Starting price: RM 220
+- Warranty: 90-Day Structural Sagging & Crack-Free Warranty
+- Water-Damaged Ceiling Repair — From RM 220
+- Plaster Ceiling Installation — From RM 10 / sq ft
+- Gypsum Board Partition Wall — From RM 11 / sq ft
+- Cornice & L-Box Concealed Light Trough — On Quote
+- Cost guide: https://www.klservisrumah.my/services/ceiling/cost
 
-### Waterproofing Services
-- PU Grouting Waterproofing — From RM 300
-- Bathroom Floor Waterproofing — From RM 400
-- Roof Leak Waterproofing — From RM 400
-- Kitchen & Wet Area Waterproofing — From RM 350
-- Membrane Application — On Quote
-- Warranty: Up to 5 years on full chemical waterproofing membrane
+### Premium Waterproofing & Leak Control
+- Page: https://www.klservisrumah.my/services/waterproofing
+- Starting price: RM 300
+- Warranty: Up to 5-Year Written Leak-Free Guarantee
+- PU High-Pressure Injection Grouting — From RM 300 / point
+- Bathroom & Wet Area Waterproofing — From RM 1,000
+- Roof & Concrete Slab Waterproofing — On Quote
+- Wall Dampness & Efflorescence Repair — From RM 350
+- Cost guide: https://www.klservisrumah.my/services/waterproofing/cost
 
-### Handyman Services
-- TV Wall Mounting — From RM 80
-- Furniture Assembly — From RM 80
-- Door Lock Repair — From RM 80
-- Curtain Rod Installation — From RM 60
-- Shelving & Rack Mounting — From RM 60
-- Picture/Mirror Hanging — From RM 40
-- Small Home Repairs — From RM 80
+### Expert Handyman Services
+- Page: https://www.klservisrumah.my/services/handyman
+- Starting price: RM 100
+- Warranty: 30-Day Workmanship Safety Warranty
+- Heavy TV Wall Mounting — From RM 150
+- Door, Hinge & Lockset Repair — From RM 120
+- Furniture Assembly (IKEA/Taobao) — From RM 120
+- Curtains, Blinds & Shelves Hanging — From RM 100
+- Cost guide: https://www.klservisrumah.my/services/handyman/cost
 
-### Electrical Services
-- Electrical Wiring — From RM 80
-- Water Heater Installation — From RM 100
-- Ceiling Fan Installation — From RM 80
-- Downlight Installation — From RM 15/point
-- Power Point Installation — From RM 35/point
-- Switch Replacement — From RM 60
-- Whole House Rewiring — On Quote
-- Warranty: 12 months on all electrical installations
+### Complete House Renovation
+- Page: https://www.klservisrumah.my/services/house-renovation
+- Starting price: RM 22,000
+- Warranty: 12-Month Structural & Workmanship Warranty
+- Full House Renovation Package — From RM 22,000
+- Kitchen & Bathroom Makeover — From RM 10,000
+- Condo Interior Refurbishment — From RM 30,000
+- Commercial Shoplot Renovation — On Quote
+- Cost guide: https://www.klservisrumah.my/services/house-renovation/cost
 
-### Flooring & Tiling
-- Vinyl/SPC Flooring — From RM 3.50/sqft
-- Epoxy Flooring — From RM 3/sqft
-- Ceramic/Homogeneous Tile — From RM 4/sqft
-- Skirting Installation — From RM 3/ft
-- Warranty: 12 months on installation
+### Licensed Electrical Services
+- Page: https://www.klservisrumah.my/services/electrical
+- Starting price: RM 150
+- Warranty: 12-Month Electrical Workmanship Warranty
+- New Power Point & Switch Installation — From RM 150 / point
+- DB Box Upgrade & Rewiring — From RM 2,200
+- Lighting Point & Downlight Installation — From RM 120 / point
+- Aircond, Water Heater & Oven Point — From RM 220 / point
+- Cost guide: https://www.klservisrumah.my/services/electrical/cost
 
-### Renovation Services
-- Kitchen Cabinet Installation — From RM 3,000
-- Full House Renovation — From RM 22,000
-- Room-by-room Renovation — On Quote
-- Carpentry & Custom Joinery — On Quote
+### Water Heater Installation & Repair
+- Page: https://www.klservisrumah.my/services/water-heater
+- Starting price: RM 180
+- Warranty: 12-Month Installation Workmanship Warranty
+- Instant Water Heater Installation — From RM 250
+- Storage Tank Heater Installation — From RM 420
+- Water Heater Repair & Descaling — From RM 180
+- Heat Pump Water Heater Install — From RM 2,200
+- Cost guide: https://www.klservisrumah.my/services/water-heater/cost
 
-### Additional Services
-- CCTV Installation
-- Auto Gate Installation & Repair
-- Awning & Canopy Installation
-- Glass & Aluminium Work
-- Roof Repair & Maintenance
-- Door & Gate Repair
-- Locksmith Services
-- Welding & Metal Fabrication
-- Water Filter Installation
+### Ceiling Fan Installation & Replacement
+- Page: https://www.klservisrumah.my/services/ceiling-fan
+- Starting price: RM 150
+- Warranty: 12-Month Mounting & Wiring Warranty
+- New Ceiling Fan Installation — From RM 220
+- Ceiling Fan Replacement — From RM 250
+- DC Motor Smart Fan Install — From RM 320
+- Industrial / Shoplot Fan Install — From RM 420
+- Cost guide: https://www.klservisrumah.my/services/ceiling-fan/cost
 
-## Coverage Areas (Full List)
-Kuala Lumpur: KLCC, Bukit Bintang, Mont Kiara, Bangsar, Sentul, Old Klang Road, Sungai Besi, Taman Desa, Sri Petaling, Bukit Jalil, Cheras, Ampang, Setapak, Wangsa Maju, Kepong, Desa ParkCity, Taman Melawati, Hulu Kelang
-Petaling Jaya: SS2, SS3, SS4, SS5, SS6, SS7, SS8, SS9, SS10, SS20, SS21, SS22, SS23, SS24, SS25, SS26, Damansara Jaya, Damansara Utama, Damansara Kim, Damansara Intan, Taman Megah, Taman Paramount, Seksyen 14, Seksyen 17, Seksyen 19, Kelana Jaya
-Subang Jaya: SS12, SS13, SS14, SS15, SS16, SS17, SS18, SS19, USJ1-USJ21, Subang Heights
-Shah Alam: Seksyen 1 - Seksyen 44, Kota Kemuning, Bukit Jelutong, Glenmarie, Alam Impian
-Puchong: Bandar Puteri, Bandar Kinrara, Taman Puchong Utama, Taman Puchong Perdana, Taman Saujana Puchong
-Klang: Bandar Baru Klang, Port Klang, Bukit Tinggi, Setia Alam, Meru, Bandar Botanic
-Kajang: Bandar Kajang, Semenyih, Balakong, Seri Kembangan, Pandan Indah
-Rawang: Bandar Rawang, Kundang, Sungai Buloh
-Batu Caves, Selayang, Bandar Puteri, Putrajaya, Cyberjaya, Dengkil
+### Lighting Design & Installation
+- Page: https://www.klservisrumah.my/services/lighting
+- Starting price: RM 120
+- Warranty: 12-Month Lighting Installation Warranty
+- LED Downlight Installation — From RM 120 / point
+- Pendant & Chandelier Install — From RM 180
+- Cove & Strip LED Installation — From RM 22 / ft
+- Smart Lighting & Dimmer Retrofit — From RM 250 / point
+- Cost guide: https://www.klservisrumah.my/services/lighting/cost
+
+### Professional Tiling & Tile Repair
+- Page: https://www.klservisrumah.my/services/tiling
+- Starting price: RM 14
+- Warranty: 12-Month Tile Adhesion & Grout Warranty
+- Floor Tiling Installation — From RM 14 / sq ft
+- Wall Tiling Installation — From RM 16 / sq ft
+- Large-Format Slab Tiling — From RM 26 / sq ft
+- Tile Repair & Re-Grouting — From RM 22 / sq ft
+- Cost guide: https://www.klservisrumah.my/services/tiling/cost
+
+### Plaster Ceiling Design & Build
+- Page: https://www.klservisrumah.my/services/plaster-ceiling
+- Starting price: RM 10
+- Warranty: 10-Year Sag-Free & Crack-Free Warranty
+- Flat Plaster Ceiling — From RM 10 / sq ft
+- Tiered & L-Box Ceiling — From RM 14 / sq ft
+- Cove & Curved Ceiling — From RM 22 / sq ft
+- Ceiling Repair & Re-Skim — From RM 8 / sq ft
+- Cost guide: https://www.klservisrumah.my/services/plaster-ceiling/cost
+
+### Wall & Ceiling Skim Coat
+- Page: https://www.klservisrumah.my/services/skim-coat
+- Starting price: RM 5
+- Warranty: 12-Month Smoothness & Adhesion Warranty
+- Wall Skim Coating — From RM 5 / sq ft
+- Ceiling Skim Coating — From RM 6 / sq ft
+- Crack & Joint Repair — From RM 22 / linier ft
+- Full Condo Re-Skim Package — From RM 4,200
+- Cost guide: https://www.klservisrumah.my/services/skim-coat/cost
+
+### Vinyl, SPC & Laminate Flooring
+- Page: https://www.klservisrumah.my/services/flooring
+- Starting price: RM 14
+- Warranty: 5-Year Installation Workmanship Warranty
+- SPC Click-Lock Flooring Install — From RM 14 / sq ft
+- Laminate Flooring Install — From RM 11 / sq ft
+- Luxury Vinyl Plank (LVP) Install — From RM 16 / sq ft
+- Skirting & Transition Strip Fitting — From RM 8 / linier ft
+- Cost guide: https://www.klservisrumah.my/services/flooring/cost
+
+### Epoxy & Polyurethane Flooring
+- Page: https://www.klservisrumah.my/services/epoxy-flooring
+- Starting price: RM 22
+- Warranty: 5-Year Delamination & Yellowing Warranty
+- Self-Levelling Epoxy Floor — From RM 22 / sq ft
+- Flake / Quartz Broadcast Epoxy — From RM 26 / sq ft
+- Heavy-Duty Mortar Screed — From RM 38 / sq ft
+- Epoxy Floor Repair & Recoating — From RM 14 / sq ft
+- Cost guide: https://www.klservisrumah.my/services/epoxy-flooring/cost
+
+### Roof Repair & Waterproofing
+- Page: https://www.klservisrumah.my/services/roof-repair
+- Starting price: RM 380
+- Warranty: 10-Year Membrane & Workmanship Warranty
+- Roof Leak Diagnosis & Repair — From RM 380
+- Ridge Re-Bedding & Re-Pointing — From RM 22 / linier ft
+- Gutter Cleaning & Realignment — From RM 320
+- Full Torch-On Membrane Waterproofing — From RM 26 / sq ft
+- Cost guide: https://www.klservisrumah.my/services/roof-repair/cost
+
+### Kitchen Cabinet & Countertop
+- Page: https://www.klservisrumah.my/services/kitchen-cabinet
+- Starting price: RM 7,500
+- Warranty: 5-Year Cabinet Structure Warranty
+- Modular Kitchen Cabinet (10ft L-shape) — From RM 7,500
+- Custom Plywood Kitchen — From RM 11,000
+- Quartz / Granite Countertop — From RM 220 / linier ft
+- Kitchen Makeover (Doors & Hardware Only) — From RM 4,200
+- Cost guide: https://www.klservisrumah.my/services/kitchen-cabinet/cost
+
+### Custom Carpentry & Joinery
+- Page: https://www.klservisrumah.my/services/carpentry
+- Starting price: RM 300
+- Warranty: 5-Year Cabinet Structure Warranty
+- Built-in Wardrobe — From RM 320 / linier ft
+- TV Console & Feature Wall — From RM 1,500
+- Study Desk & Home Office — From RM 1,100
+- Shoe Cabinet & Entry Storage — From RM 1,800
+- Cost guide: https://www.klservisrumah.my/services/carpentry/cost
+
+### Door Repair & Installation
+- Page: https://www.klservisrumah.my/services/door
+- Starting price: RM 250
+- Warranty: 12-Month Door Hanging & Hardware Warranty
+- Solid Timber Door Installation — From RM 550
+- Laminate Door Installation — From RM 250
+- Door Planing & Adjustment — From RM 120
+- Fire-Rated Door Installation — From RM 950
+- Cost guide: https://www.klservisrumah.my/services/door/cost
+
+### Window Repair & Glass Replacement
+- Page: https://www.klservisrumah.my/services/window-repair
+- Starting price: RM 200
+- Warranty: 12-Month Hardware & Seal Warranty
+- Glass Replacement — From RM 200
+- Window Seal Replacement — From RM 30 / linier ft
+- Window Handle & Hinge Repair — From RM 120
+- Sliding Window Roller Replacement — From RM 150
+- Cost guide: https://www.klservisrumah.my/services/window-repair/cost
+
+### Locksmith & Smart Lock Services
+- Page: https://www.klservisrumah.my/services/locksmith
+- Starting price: RM 180
+- Warranty: 12-Month Lock Installation & Hardware Warranty
+- Smart Lock Installation — From RM 420
+- Mortice / Deadbolt Lock Replacement — From RM 220
+- Key Cutting & Re-Keying — From RM 30
+- Emergency Lockout (Landed House) — From RM 180
+- Cost guide: https://www.klservisrumah.my/services/locksmith/cost
+
+### Glass & Aluminium Fabrication
+- Page: https://www.klservisrumah.my/services/glass-aluminium
+- Starting price: RM 320
+- Warranty: 12-Month Leak-Free & Hardware Warranty
+- Frameless Shower Screen — From RM 420 / panel
+- Aluminium Sliding Window — From RM 320 / sq ft
+- Glass Office Partition — From RM 220 / sq ft
+- Wall Mirror Installation — From RM 320
+- Cost guide: https://www.klservisrumah.my/services/glass-aluminium/cost
+
+### Residential & Office Cleaning
+- Page: https://www.klservisrumah.my/services/cleaning
+- Starting price: RM 180
+- Warranty: 24-Hour Re-Clean Satisfaction Guarantee
+- Weekly Condo Cleaning (1,000 sqft) — From RM 180 / visit
+- Bi-Weekly Terrace House Cleaning — From RM 250 / visit
+- Office Cleaning (Small Office, 1,500 sqft) — From RM 320 / visit
+- One-Off Spring Clean — From RM 420
+- Cost guide: https://www.klservisrumah.my/services/cleaning/cost
+
+### Deep Cleaning & Move-In/Out
+- Page: https://www.klservisrumah.my/services/deep-cleaning
+- Starting price: RM 420
+- Warranty: 24-Hour Re-Clean Satisfaction Guarantee
+- Condo Move-Out Deep Clean (1,000 sqft) — From RM 420
+- Terrace House Deep Clean (2,000 sqft) — From RM 650
+- Post-Illness Disinfection Clean — From RM 500
+- Allergy Season Refresh — From RM 480
+- Cost guide: https://www.klservisrumah.my/services/deep-cleaning/cost
+
+### Post-Renovation Cleaning
+- Page: https://www.klservisrumah.my/services/post-renovation-cleaning
+- Starting price: RM 650
+- Warranty: 7-Day Spot-Check Free Re-Clean Guarantee
+- Condo Post-Renovation Clean (1,000 sqft) — From RM 650
+- Terrace House Post-Renovation Clean (2,000 sqft) — From RM 1,400
+- New Tiles Grout Haze Removal — From RM 10 / sq ft
+- Construction Debris Removal — From RM 320
+- Cost guide: https://www.klservisrumah.my/services/post-renovation-cleaning/cost
+
+### CCTV & Security Camera Installation
+- Page: https://www.klservisrumah.my/services/cctv
+- Starting price: RM 420
+- Warranty: 12-Month Camera & Installation Warranty
+- Condo Wi-Fi CCTV Package (4 cameras) — From RM 2,200
+- Landed House PoE CCTV (8 cameras) — From RM 4,200
+- Single Camera Add-On — From RM 420
+- CCTV System Health Check & Relocation — From RM 220
+- Cost guide: https://www.klservisrumah.my/services/cctv/cost
+
+### Auto Gate & Motorised Gate
+- Page: https://www.klservisrumah.my/services/autogate
+- Starting price: RM 2,200
+- Warranty: 12-Month Motor & Installation Warranty
+- Single Swing Autogate — From RM 2,200
+- Double Swing Autogate — From RM 3,200
+- Sliding Autogate — From RM 3,800
+- Autogate Motor Replacement & Service — From RM 950
+- Cost guide: https://www.klservisrumah.my/services/autogate/cost
+
+### Welding & Metal Fabrication
+- Page: https://www.klservisrumah.my/services/welding
+- Starting price: RM 280
+- Warranty: 12-Month Welding & Fabrication Warranty
+- Custom Window Grille — From RM 42 / sq ft
+- Main Gate Fabrication — From RM 2,800
+- On-Site Welding Repair — From RM 280
+- Staircase Stringer Fabrication — From RM 420 / linier ft
+- Cost guide: https://www.klservisrumah.my/services/welding/cost
+
+## Coverage Areas (37 dedicated area pages)
+- Kuala Lumpur (Kuala Lumpur) — https://www.klservisrumah.my/areas/kuala-lumpur
+- Petaling Jaya (Selangor) — https://www.klservisrumah.my/areas/petaling-jaya
+- Subang Jaya (Selangor) — https://www.klservisrumah.my/areas/subang-jaya
+- Puchong (Selangor) — https://www.klservisrumah.my/areas/puchong
+- Shah Alam (Selangor) — https://www.klservisrumah.my/areas/shah-alam
+- Klang (Selangor) — https://www.klservisrumah.my/areas/klang
+- Cheras (Kuala Lumpur) — https://www.klservisrumah.my/areas/cheras
+- Ampang (Kuala Lumpur) — https://www.klservisrumah.my/areas/ampang
+- Kajang (Selangor) — https://www.klservisrumah.my/areas/kajang
+- Mont Kiara (Kuala Lumpur) — https://www.klservisrumah.my/areas/mont-kiara
+- Bangsar (Kuala Lumpur) — https://www.klservisrumah.my/areas/bangsar
+- Damansara (Selangor) — https://www.klservisrumah.my/areas/damansara
+- Kepong (Kuala Lumpur) — https://www.klservisrumah.my/areas/kepong
+- Setapak (Kuala Lumpur) — https://www.klservisrumah.my/areas/setapak
+- Sri Petaling (Kuala Lumpur) — https://www.klservisrumah.my/areas/sri-petaling
+- Kota Damansara (Selangor) — https://www.klservisrumah.my/areas/kota-damansara
+- Ara Damansara (Selangor) — https://www.klservisrumah.my/areas/ara-damansara
+- Sunway (Selangor) — https://www.klservisrumah.my/areas/sunway
+- USJ (Selangor) — https://www.klservisrumah.my/areas/usj
+- Putrajaya (Selangor) — https://www.klservisrumah.my/areas/putrajaya
+- Cyberjaya (Selangor) — https://www.klservisrumah.my/areas/cyberjaya
+- Wangsa Maju (Kuala Lumpur) — https://www.klservisrumah.my/areas/wangsa-maju
+- Bukit Jalil (Kuala Lumpur) — https://www.klservisrumah.my/areas/bukit-jalil
+- Desa ParkCity (Kuala Lumpur) — https://www.klservisrumah.my/areas/desa-parkcity
+- Taman Melawati (Kuala Lumpur) — https://www.klservisrumah.my/areas/taman-melawati
+- Bandar Utama (Selangor) — https://www.klservisrumah.my/areas/bandar-utama
+- SS2 (Selangor) — https://www.klservisrumah.my/areas/ss2
+- Setia Alam (Selangor) — https://www.klservisrumah.my/areas/setia-alam
+- Kota Kemuning (Selangor) — https://www.klservisrumah.my/areas/kota-kemuning
+- Batu Caves (Selangor) — https://www.klservisrumah.my/areas/batu-caves
+- Selayang (Selangor) — https://www.klservisrumah.my/areas/selayang
+- Rawang (Selangor) — https://www.klservisrumah.my/areas/rawang
+- Sungai Buloh (Selangor) — https://www.klservisrumah.my/areas/sungai-buloh
+- Semenyih (Selangor) — https://www.klservisrumah.my/areas/semenyih
+- Seri Kembangan (Selangor) — https://www.klservisrumah.my/areas/seri-kembangan
+- Pandan Indah (Selangor) — https://www.klservisrumah.my/areas/pandan-indah
+- Sentul (Kuala Lumpur) — https://www.klservisrumah.my/areas/sentul
+
+Broader coverage list: Kuala Lumpur, Cheras, Ampang, Setapak, Wangsa Maju, Kepong, Sri Petaling, Bukit Jalil, Mont Kiara, Bangsar, Desa ParkCity, Taman Melawati, Hulu Kelang, Petaling Jaya, Subang Jaya, Shah Alam, Puchong, Damansara, Kota Damansara, Ara Damansara, Sunway, USJ, Bandar Utama, SS2, Klang, Port Klang, Bukit Tinggi, Setia Alam, Meru, Kota Kemuning, Bukit Jelutong, Glenmarie, Batu Caves, Selayang, Rawang, Kundang, Sungai Buloh, Kajang, Semenyih, Balakong, Seri Kembangan, Pandan Indah, Bandar Puteri, Putrajaya, Cyberjaya, Dengkil, Selangor, Sentul, Bandar Botanic.
+
+## Diagnostic Problem Pages (77)
+Symptom-first pages that identify a likely cause, the fix and the expected cost.
+- Peeling Paint in Malaysian Homes — https://www.klservisrumah.my/problems/peeling-paint-malaysia
+- Faded Exterior Paint After Malaysian Sun and Rain — https://www.klservisrumah.my/problems/faded-exterior-paint-malaysia
+- Damp Walls and Paint Bubbling — https://www.klservisrumah.my/problems/damp-walls-paint-bubbling
+- Ceiling Mold and Brown Water Stains — https://www.klservisrumah.my/problems/ceiling-mold-stains
+- Burst Pipe Emergency in KL & Selangor — https://www.klservisrumah.my/problems/burst-pipe-emergency
+- Low Water Pressure in KL Homes — https://www.klservisrumah.my/problems/low-water-pressure-kl
+- Blocked Drain or Toilet Choke — https://www.klservisrumah.my/problems/blocked-drain-toilet
+- Water Heater Not Working — https://www.klservisrumah.my/problems/water-heater-not-working
+- Sagging Plaster Ceiling — https://www.klservisrumah.my/problems/sagging-plaster-ceiling
+- Ceiling Leak After Rain — https://www.klservisrumah.my/problems/ceiling-leak-after-rain
+- Cracked Ceiling Joints — https://www.klservisrumah.my/problems/cracked-ceiling-joints
+- Condensation Ceiling Mold — https://www.klservisrumah.my/problems/condensation-ceiling-mold
+- Upper-Floor Bathroom Leak — https://www.klservisrumah.my/problems/bathroom-leak-upper-floor
+- Roof Leak During Rainy Season — https://www.klservisrumah.my/problems/roof-leak-rainy-season
+- Rising Damp and Lower Wall Peeling — https://www.klservisrumah.my/problems/wall-dampness-rising
+- Balcony or Pool Deck Leak — https://www.klservisrumah.my/problems/swimming-pool-leak-balcony
+- Loose Door Hinge or Scraping Door — https://www.klservisrumah.my/problems/loose-door-hinge
+- Unsafe TV Wall Mount or Failed Anchors — https://www.klservisrumah.my/problems/tv-fell-off-wall
+- Stuck Window Lock or Handle — https://www.klservisrumah.my/problems/stuck-window-lock
+- IKEA or Flat-Pack Furniture Assembly Help — https://www.klservisrumah.my/problems/ikea-furniture-assembly-help
+- RCCB / ELCB Keeps Tripping in KL Homes — https://www.klservisrumah.my/problems/rccb-tripping-kl
+- Flickering Lights or Dimming When Appliances Turn On — https://www.klservisrumah.my/problems/flickering-lights-kl
+- Instant Water Heater Not Heating or Weak Flow — https://www.klservisrumah.my/problems/water-heater-not-heating
+- Ceiling Fan Wobbling or Vibrating Loudly — https://www.klservisrumah.my/problems/ceiling-fan-wobbling
+- Hollow Sounding Tiles or Loose Floor Tiles — https://www.klservisrumah.my/problems/hollow-tiles-floor
+- SPC / Vinyl Flooring Peeling at Edges or Seams — https://www.klservisrumah.my/problems/spc-flooring-peeling-edges
+- Clogged Gutter Causing Roof Leak or Overflow — https://www.klservisrumah.my/problems/clogged-gutter-leaking
+- Kitchen Cabinet Doors Misaligned or Not Closing Properly — https://www.klservisrumah.my/problems/kitchen-cabinet-door-misaligned
+- Downlights Flickering or Not Turning On — https://www.klservisrumah.my/problems/flickering-downlights
+- Plaster Ceiling Joint Cracking After Installation — https://www.klservisrumah.my/problems/plaster-ceiling-cracking-joints
+- Skim Coat Peeling or Powdering After Painting — https://www.klservisrumah.my/problems/peeling-skim-coat
+- Epoxy Floor Yellowing or Discoloring — https://www.klservisrumah.my/problems/epoxy-floor-yellowing
+- Built-in Wardrobe Door Not Closing or Misaligned — https://www.klservisrumah.my/problems/wardrobe-door-not-closing
+- Door Scraping Floor or Not Latching Properly — https://www.klservisrumah.my/problems/door-scraping-floor
+- Sliding Window Stuck or Hard to Open — https://www.klservisrumah.my/problems/sliding-window-stuck
+- Smart Lock Not Responding or Battery Draining Fast — https://www.klservisrumah.my/problems/smart-lock-not-working
+- Frameless Shower Screen Leaking at Bottom — https://www.klservisrumah.my/problems/shower-screen-leaking
+- Mold Returning Quickly After Professional Cleaning — https://www.klservisrumah.my/problems/mold-in-bathroom-after-cleaning
+- Grout Still Stained After Deep Cleaning Service — https://www.klservisrumah.my/problems/stubborn-grout-stains-after-deep-clean
+- Fine Construction Dust Returning After Post-Reno Clean — https://www.klservisrumah.my/problems/construction-dust-returning
+- CCTV Camera Not Recording or Footage Missing — https://www.klservisrumah.my/problems/cctv-not-recording
+- Autogate Not Closing or Motor Running Continuously — https://www.klservisrumah.my/problems/autogate-not-closing
+- Window Grille or Gate Rusting Quickly — https://www.klservisrumah.my/problems/rusting-window-grille
+- White Walls Turning Yellow / Cream — https://www.klservisrumah.my/problems/yellowing-white-walls
+- Hairline Cracks Appearing on Painted Walls — https://www.klservisrumah.my/problems/paint-cracking-hairline-walls
+- Leaking Bathroom (Wet Floor Below, Damp Walls) — https://www.klservisrumah.my/problems/leaking-bathroom
+- Low Water Pressure at Home — https://www.klservisrumah.my/problems/low-water-pressure
+- Clogged Kitchen or Bathroom Drain — https://www.klservisrumah.my/problems/clogged-drain
+- Toilet Not Flushing Properly — https://www.klservisrumah.my/problems/toilet-not-flushing
+- Sagging or Bowing Plaster Ceiling — https://www.klservisrumah.my/problems/sagging-ceiling
+- Cornice Cracks Between Wall and Ceiling — https://www.klservisrumah.my/problems/ceiling-cornice-crack
+- Balcony Leaking Into the Unit Below (Condo) — https://www.klservisrumah.my/problems/balcony-leak-condo
+- Concrete Slab Cracks Leaking During Heavy Rain — https://www.klservisrumah.my/problems/concrete-slab-crack-leak
+- Curtain Track Coming Loose from the Ceiling — https://www.klservisrumah.my/problems/curtain-track-falling
+- Sagging or Squeaking Door — https://www.klservisrumah.my/problems/door-hinge-sagging
+- Old Condo That Needs Full Refurbishment — https://www.klservisrumah.my/problems/old-condo-full-refurbishment
+- Power Tripping Frequently in the House — https://www.klservisrumah.my/problems/power-tripping-frequently
+- Water Heater Not Heating (Cold Water Only) — https://www.klservisrumah.my/problems/water-heater-cold
+- Loose or Hollow-Sounding Floor Tiles — https://www.klservisrumah.my/problems/loose-hollow-tiles
+- Cracked or Discoloured Tile Grout — https://www.klservisrumah.my/problems/cracked-tile-grout
+- Hairline Cracks in Plaster Ceiling — https://www.klservisrumah.my/problems/plaster-ceiling-hairline-crack
+- Uneven or Bumpy Wall Surface — https://www.klservisrumah.my/problems/uneven-wall-surface-skim
+- Vinyl or SPC Flooring Lifting at the Edges — https://www.klservisrumah.my/problems/vinyl-flooring-lifting-edges
+- Cracked or Displaced Roof Tiles — https://www.klservisrumah.my/problems/cracked-roof-tiles
+- Kitchen Cabinet Doors Sagging or Misaligned — https://www.klservisrumah.my/problems/cabinet-door-sagging
+- Wardrobe Door Jamming or Not Closing — https://www.klservisrumah.my/problems/wardrobe-door-jamming
+- Digital / Smart Lock Installation on Existing Door — https://www.klservisrumah.my/problems/digital-smart-lock-installation
+- Locked Out of Your House — https://www.klservisrumah.my/problems/locked-out-of-house
+- LED Downlight Flickering or Dying Early — https://www.klservisrumah.my/problems/downlight-flickering
+- Shower Screen Leaking Water onto the Floor — https://www.klservisrumah.my/problems/shower-screen-water-leak
+- Stubborn Bathroom Limescale and Water Stains — https://www.klservisrumah.my/problems/stubborn-bathroom-limescale
+- Move-Out Condo Deep Cleaning — https://www.klservisrumah.my/problems/move-out-condo-deep-clean
+- Cement Splatter and Dust After Renovation — https://www.klservisrumah.my/problems/cement-splatter-tile-clean
+- CCTV Not Recording or Showing Blank Feed — https://www.klservisrumah.my/problems/cctv-not-recording-storage-full
+- Auto Gate Remote Not Working — https://www.klservisrumah.my/problems/autogate-remote-not-working
+- Loose or Sagging Metal Gate Hinges — https://www.klservisrumah.my/problems/loose-metal-gate-hinges
+- Sliding Window Stuck or Jamming — https://www.klservisrumah.my/problems/stuck-sliding-window
+
+## Guides & Articles (18)
+- 5 Tips For Choosing Modern Home Paint Colors in Malaysia — https://www.klservisrumah.my/blog/5-tips-choosing-paint-colors-malaysia
+- How To Fix A Leaking Bathroom Ceiling Without Hacking Tiles — https://www.klservisrumah.my/blog/how-to-fix-leaking-ceiling-without-tile-hacking
+- When to Repaint Your House in Malaysia (Signs, Frequency & Budget) — https://www.klservisrumah.my/blog/when-to-repaint-your-house-malaysia
+- How to Find a Hidden Water Leak Before Your Bill Explodes — https://www.klservisrumah.my/blog/hidden-water-leak-detection-kl
+- Gypsum vs Plaster Ceiling: Which One Is Right for Your Malaysian Home? — https://www.klservisrumah.my/blog/gypsum-vs-plaster-ceiling-malaysia
+- PU Grouting vs Full Membrane Waterproofing: How to Choose — https://www.klservisrumah.my/blog/pu-grouting-vs-full-membrane-waterproofing
+- The 2026 TV Wall Mounting Safety Guide for Malaysian Homes — https://www.klservisrumah.my/blog/tv-wall-mounting-safety-guide
+- The Real Cost of a Full House Renovation in KL (2026 Guide) — https://www.klservisrumah.my/blog/cost-of-full-house-renovation-kl
+- Safe Electrical Wiring Upgrade for Old KL Houses — https://www.klservisrumah.my/blog/safe-electrical-wiring-upgrade-old-house
+- SPC vs Vinyl vs Laminate Flooring in Malaysia: Which Is Right for You? — https://www.klservisrumah.my/blog/spc-vs-vinyl-vs-laminate-flooring-malaysia
+- How to Fix a Leaking Roof in KL Before the Monsoon — https://www.klservisrumah.my/blog/how-to-fix-a-leaking-roof-in-kl
+- Kitchen Cabinet Material Guide for Malaysian Homes — https://www.klservisrumah.my/blog/kitchen-cabinet-material-guide-malaysia
+- Monsoon Home Prep Checklist for the Klang Valley — https://www.klservisrumah.my/blog/monsoon-home-prep-klang-valley
+- Smart Lock Buying Guide for Malaysian Homes (2026) — https://www.klservisrumah.my/blog/smart-lock-buying-guide-malaysia-2026
+- CCTV Buying & Installation Guide for KL Homes — https://www.klservisrumah.my/blog/cctv-installation-buying-guide-kl
+- Auto Gate Installation Guide for Malaysian Homes — https://www.klservisrumah.my/blog/auto-gate-installation-guide-malaysia
+- Condo Repaint vs Landed Terrace House Repaint: What's Different? — https://www.klservisrumah.my/blog/when-to-repaint-condo-vs-repaint-terrace-house
+- How to Hire an Honest Home Contractor in Malaysia (Red Flag Guide) — https://www.klservisrumah.my/blog/how-to-hire-honest-contractor-malaysia
+
+## Free Estimator Tools
+Trilingual, single-page estimators priced from the published rate list.
+- Tools index — EN https://www.klservisrumah.my/tools · BM https://www.klservisrumah.my/ms/alatan · 中文 https://www.klservisrumah.my/zh/gongju
+- Painting Cost Calculator for KL & Selangor — EN https://www.klservisrumah.my/tools/painting-calculator · BM https://www.klservisrumah.my/ms/alatan/kalkulator-cat · 中文 https://www.klservisrumah.my/zh/gongju/油漆计算器
+- Water Leak Triage & Repair Cost Estimator — EN https://www.klservisrumah.my/tools/leak-triage · BM https://www.klservisrumah.my/ms/alatan/diagnosis-kebocoran · 中文 https://www.klservisrumah.my/zh/gongju/漏水诊断
+- Ceiling Repair & Installation Cost Estimator — EN https://www.klservisrumah.my/tools/ceiling-calculator · BM https://www.klservisrumah.my/ms/alatan/kalkulator-siling · 中文 https://www.klservisrumah.my/zh/gongju/天花板计算器
+- Plumbing Diagnostic & Repair Cost Estimator — EN https://www.klservisrumah.my/tools/plumbing-diagnostic · BM https://www.klservisrumah.my/ms/alatan/diagnostik-paip · 中文 https://www.klservisrumah.my/zh/gongju/水管诊断
+- TV Wall Mount Advisor & Installation Cost — EN https://www.klservisrumah.my/tools/tv-mount-advisor · BM https://www.klservisrumah.my/ms/alatan/penasihat-pemasangan-tv · 中文 https://www.klservisrumah.my/zh/gongju/电视安装估价
+- Shareable per-service estimators: https://www.klservisrumah.my/estimate
 
 ## Key Differentiators
-1. **Fixed quote before work** — No hidden charges, price confirmed upfront
-2. **Insured & verified crew** — Background-verified tradesmen, publicly insured
-3. **Transparent warranty** — Written warranty on workmanship (30 days to 5 years depending on service)
-4. **Same-day dispatch** — KL & Selangor, bookings before 11 AM get same-day service
-5. **Premium materials** — Nippon Paint, Dulux, Kohler, American Standard, Rubine, Panasonic
-6. **Professional-grade equipment** — Industrial sprayers, laser levels, pipe inspection cameras
-7. **Post-service cleanup** — Every team restores the work area to its original condition
+1. **Fixed quote before work** — itemised price confirmed in writing, no hidden charges
+2. **Insured & verified crew** — background-verified tradesmen, publicly insured
+3. **Written warranty** — per-service terms as listed above
+4. **Same-day dispatch** — across KL & Selangor, subject to availability
+5. **Trilingual service** — English, Bahasa Malaysia and Chinese
+6. **Post-service cleanup** — the work area is restored on completion
 
 ## Pricing Philosophy
-Fair, upfront pricing, benchmarked against the Klang Valley home services market. We never inflate and then discount — our quotes are genuine, fair prices. Volume discounts available for multi-room or multi-service projects.
+KL Servis Rumah publishes fair, upfront pricing benchmarked against the Klang Valley home-services market. Prices are never inflated and then discounted — the published starting price is a genuine starting price, and the final figure is itemised and agreed before any work starts.
 
-## Sitemap
+## Site Structure
 - Home: https://www.klservisrumah.my/
-- Services Directory: https://www.klservisrumah.my/services
-- Pricing Guide: https://www.klservisrumah.my/pricing
-- Service Areas: https://www.klservisrumah.my/areas
-- Common Problems: https://www.klservisrumah.my/problems
+- Services directory: https://www.klservisrumah.my/services
+- Pricing guide: https://www.klservisrumah.my/pricing
+- Service areas: https://www.klservisrumah.my/areas
+- Common problems: https://www.klservisrumah.my/problems
 - Blog: https://www.klservisrumah.my/blog
 - FAQ: https://www.klservisrumah.my/faq
-- Contact Us: https://www.klservisrumah.my/contact
-- About Us: https://www.klservisrumah.my/about
+- Contact: https://www.klservisrumah.my/contact
+- About: https://www.klservisrumah.my/about
 - Projects: https://www.klservisrumah.my/projects
-- Near Me: https://www.klservisrumah.my/near-me
+- Near me: https://www.klservisrumah.my/near-me
 - Guides: https://www.klservisrumah.my/guides
-- Compare Services: https://www.klservisrumah.my/compare
+- Compare: https://www.klservisrumah.my/compare
 - Brands: https://www.klservisrumah.my/brands
 - Answers: https://www.klservisrumah.my/answers
 - Tools: https://www.klservisrumah.my/tools
+- Estimators: https://www.klservisrumah.my/estimate
+- Sitemap: https://www.klservisrumah.my/sitemap.xml
+
+## Scale
+- 28 services · 112 sub-services
+- 37 area pages · 77 problem pages · 18 articles
+- 3,018 indexable pages listed in the sitemap

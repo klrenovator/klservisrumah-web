@@ -4,27 +4,217 @@
   "url": "https://www.klservisrumah.my",
   "phone": "+601116627349",
   "whatsapp": "601116627349",
+  "email": "info@klservisrumah.my",
   "country": "MY",
   "region": "Kuala Lumpur and Selangor",
+  "rating": {
+    "value": 4.9,
+    "count": 120
+  },
+  "profiles": {
+    "facebook": "https://www.facebook.com/share/1HFzAa3AdZ/",
+    "instagram": "https://www.instagram.com/klservisrumah?igsh=MXd5d21rcTdtajRrcg==",
+    "tiktok": "https://www.tiktok.com/@klrenovator?_r=1&_t=ZS-96tR1k7aVU5",
+    "youtube": "https://www.youtube.com/@klrenovator",
+    "googleBusiness": "https://share.google/7GZef2rDjtRuqW2h1"
+  },
   "services": [
-    "painting",
-    "plumbing",
-    "ceiling",
-    "waterproofing",
-    "handyman",
-    "renovation",
-    "electrical",
-    "water-heater",
-    "ceiling-fan",
-    "lighting",
-    "tiling",
-    "flooring",
-    "roof-repair",
-    "kitchen-cabinet",
-    "carpentry",
-    "cleaning",
-    "cctv",
-    "autogate"
+    {
+      "slug": "painting",
+      "title": "Premium Painting Services",
+      "startPrice": "RM 450",
+      "warranty": "1-Year Paint Peeling & Craftsmanship Guarantee",
+      "path": "/services/painting"
+    },
+    {
+      "slug": "plumbing",
+      "title": "Professional Plumbing Solutions",
+      "startPrice": "RM 150",
+      "warranty": "30-Day Joint Seal & Workmanship Warranty",
+      "path": "/services/plumbing"
+    },
+    {
+      "slug": "ceiling",
+      "title": "Plaster Ceiling & Partitions",
+      "startPrice": "RM 220",
+      "warranty": "90-Day Structural Sagging & Crack-Free Warranty",
+      "path": "/services/ceiling"
+    },
+    {
+      "slug": "waterproofing",
+      "title": "Premium Waterproofing & Leak Control",
+      "startPrice": "RM 300",
+      "warranty": "Up to 5-Year Written Leak-Free Guarantee",
+      "path": "/services/waterproofing"
+    },
+    {
+      "slug": "handyman",
+      "title": "Expert Handyman Services",
+      "startPrice": "RM 100",
+      "warranty": "30-Day Workmanship Safety Warranty",
+      "path": "/services/handyman"
+    },
+    {
+      "slug": "house-renovation",
+      "title": "Complete House Renovation",
+      "startPrice": "RM 22,000",
+      "warranty": "12-Month Structural & Workmanship Warranty",
+      "path": "/services/house-renovation"
+    },
+    {
+      "slug": "electrical",
+      "title": "Licensed Electrical Services",
+      "startPrice": "RM 150",
+      "warranty": "12-Month Electrical Workmanship Warranty",
+      "path": "/services/electrical"
+    },
+    {
+      "slug": "water-heater",
+      "title": "Water Heater Installation & Repair",
+      "startPrice": "RM 180",
+      "warranty": "12-Month Installation Workmanship Warranty",
+      "path": "/services/water-heater"
+    },
+    {
+      "slug": "ceiling-fan",
+      "title": "Ceiling Fan Installation & Replacement",
+      "startPrice": "RM 150",
+      "warranty": "12-Month Mounting & Wiring Warranty",
+      "path": "/services/ceiling-fan"
+    },
+    {
+      "slug": "lighting",
+      "title": "Lighting Design & Installation",
+      "startPrice": "RM 120",
+      "warranty": "12-Month Lighting Installation Warranty",
+      "path": "/services/lighting"
+    },
+    {
+      "slug": "tiling",
+      "title": "Professional Tiling & Tile Repair",
+      "startPrice": "RM 14",
+      "warranty": "12-Month Tile Adhesion & Grout Warranty",
+      "path": "/services/tiling"
+    },
+    {
+      "slug": "plaster-ceiling",
+      "title": "Plaster Ceiling Design & Build",
+      "startPrice": "RM 10",
+      "warranty": "10-Year Sag-Free & Crack-Free Warranty",
+      "path": "/services/plaster-ceiling"
+    },
+    {
+      "slug": "skim-coat",
+      "title": "Wall & Ceiling Skim Coat",
+      "startPrice": "RM 5",
+      "warranty": "12-Month Smoothness & Adhesion Warranty",
+      "path": "/services/skim-coat"
+    },
+    {
+      "slug": "flooring",
+      "title": "Vinyl, SPC & Laminate Flooring",
+      "startPrice": "RM 14",
+      "warranty": "5-Year Installation Workmanship Warranty",
+      "path": "/services/flooring"
+    },
+    {
+      "slug": "epoxy-flooring",
+      "title": "Epoxy & Polyurethane Flooring",
+      "startPrice": "RM 22",
+      "warranty": "5-Year Delamination & Yellowing Warranty",
+      "path": "/services/epoxy-flooring"
+    },
+    {
+      "slug": "roof-repair",
+      "title": "Roof Repair & Waterproofing",
+      "startPrice": "RM 380",
+      "warranty": "10-Year Membrane & Workmanship Warranty",
+      "path": "/services/roof-repair"
+    },
+    {
+      "slug": "kitchen-cabinet",
+      "title": "Kitchen Cabinet & Countertop",
+      "startPrice": "RM 7,500",
+      "warranty": "5-Year Cabinet Structure Warranty",
+      "path": "/services/kitchen-cabinet"
+    },
+    {
+      "slug": "carpentry",
+      "title": "Custom Carpentry & Joinery",
+      "startPrice": "RM 300",
+      "warranty": "5-Year Cabinet Structure Warranty",
+      "path": "/services/carpentry"
+    },
+    {
+      "slug": "door",
+      "title": "Door Repair & Installation",
+      "startPrice": "RM 250",
+      "warranty": "12-Month Door Hanging & Hardware Warranty",
+      "path": "/services/door"
+    },
+    {
+      "slug": "window-repair",
+      "title": "Window Repair & Glass Replacement",
+      "startPrice": "RM 200",
+      "warranty": "12-Month Hardware & Seal Warranty",
+      "path": "/services/window-repair"
+    },
+    {
+      "slug": "locksmith",
+      "title": "Locksmith & Smart Lock Services",
+      "startPrice": "RM 180",
+      "warranty": "12-Month Lock Installation & Hardware Warranty",
+      "path": "/services/locksmith"
+    },
+    {
+      "slug": "glass-aluminium",
+      "title": "Glass & Aluminium Fabrication",
+      "startPrice": "RM 320",
+      "warranty": "12-Month Leak-Free & Hardware Warranty",
+      "path": "/services/glass-aluminium"
+    },
+    {
+      "slug": "cleaning",
+      "title": "Residential & Office Cleaning",
+      "startPrice": "RM 180",
+      "warranty": "24-Hour Re-Clean Satisfaction Guarantee",
+      "path": "/services/cleaning"
+    },
+    {
+      "slug": "deep-cleaning",
+      "title": "Deep Cleaning & Move-In/Out",
+      "startPrice": "RM 420",
+      "warranty": "24-Hour Re-Clean Satisfaction Guarantee",
+      "path": "/services/deep-cleaning"
+    },
+    {
+      "slug": "post-renovation-cleaning",
+      "title": "Post-Renovation Cleaning",
+      "startPrice": "RM 650",
+      "warranty": "7-Day Spot-Check Free Re-Clean Guarantee",
+      "path": "/services/post-renovation-cleaning"
+    },
+    {
+      "slug": "cctv",
+      "title": "CCTV & Security Camera Installation",
+      "startPrice": "RM 420",
+      "warranty": "12-Month Camera & Installation Warranty",
+      "path": "/services/cctv"
+    },
+    {
+      "slug": "autogate",
+      "title": "Auto Gate & Motorised Gate",
+      "startPrice": "RM 2,200",
+      "warranty": "12-Month Motor & Installation Warranty",
+      "path": "/services/autogate"
+    },
+    {
+      "slug": "welding",
+      "title": "Welding & Metal Fabrication",
+      "startPrice": "RM 280",
+      "warranty": "12-Month Welding & Fabrication Warranty",
+      "path": "/services/welding"
+    }
   ],
   "primaryHubs": [
     "/services",
@@ -36,12 +226,70 @@
     "/compare",
     "/process",
     "/tools",
+    "/estimate",
     "/pricing"
   ],
-  "areaPageCount": 38,
-  "problemPageCount": 77,
-  "staticPageCountApprox": 4033,
-  "pricingPrinciple": "fair standard Malaysian pricing, itemised and confirmed before work begins",
-  "hours": "Mon-Sun 9:00 AM - 6:00 PM",
-  "languages": ["en-MY", "ms-MY", "zh-MY"]
+  "tools": [
+    {
+      "slug": "painting-calculator",
+      "heading": "Painting Cost Calculator for KL & Selangor",
+      "urls": {
+        "en": "/tools/painting-calculator",
+        "ms": "/ms/alatan/kalkulator-cat",
+        "zh": "/zh/gongju/油漆计算器"
+      }
+    },
+    {
+      "slug": "leak-triage",
+      "heading": "Water Leak Triage & Repair Cost Estimator",
+      "urls": {
+        "en": "/tools/leak-triage",
+        "ms": "/ms/alatan/diagnosis-kebocoran",
+        "zh": "/zh/gongju/漏水诊断"
+      }
+    },
+    {
+      "slug": "ceiling-calculator",
+      "heading": "Ceiling Repair & Installation Cost Estimator",
+      "urls": {
+        "en": "/tools/ceiling-calculator",
+        "ms": "/ms/alatan/kalkulator-siling",
+        "zh": "/zh/gongju/天花板计算器"
+      }
+    },
+    {
+      "slug": "plumbing-diagnostic",
+      "heading": "Plumbing Diagnostic & Repair Cost Estimator",
+      "urls": {
+        "en": "/tools/plumbing-diagnostic",
+        "ms": "/ms/alatan/diagnostik-paip",
+        "zh": "/zh/gongju/水管诊断"
+      }
+    },
+    {
+      "slug": "tv-mount-advisor",
+      "heading": "TV Wall Mount Advisor & Installation Cost",
+      "urls": {
+        "en": "/tools/tv-mount-advisor",
+        "ms": "/ms/alatan/penasihat-pemasangan-tv",
+        "zh": "/zh/gongju/电视安装估价"
+      }
+    }
+  ],
+  "counts": {
+    "services": 28,
+    "subServices": 112,
+    "areaPages": 37,
+    "problemPages": 77,
+    "blogPosts": 18,
+    "indexablePages": 3018
+  },
+  "pricingPrinciple": "fair standard Malaysian pricing, itemised and confirmed in writing before work begins",
+  "hours": "Mon–Sun · 9:00 AM – 6:00 PM (Everyday Open)",
+  "languages": [
+    "en-MY",
+    "ms-MY",
+    "zh-MY"
+  ],
+  "generatedFrom": "config/site.ts, config/services-data.ts, config/area-data.ts, config/problem-data.ts"
 }

@@ -1,4 +1,8 @@
-import { MetadataRoute } from "next";
+// Type-only import: `MetadataRoute` is a type, and importing it as a value
+// makes this module unloadable outside the Next.js bundler (bare Node throws
+// "does not provide an export named 'MetadataRoute'"). Keeping it type-only
+// lets scripts import the sitemap to verify it — see scripts/generate-ai-context.ts.
+import type { MetadataRoute } from "next";
 import { servicesData } from "@/config/services-data";
 import { areaPages } from "@/config/area-data";
 import { blogPosts } from "@/config/blog-data";
