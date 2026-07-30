@@ -40,6 +40,98 @@ const HERO_IMAGE_SIZES =
 const HERO_BLUR =
   "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxNiA5Jz48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9J2cnIHgxPScwJyB5MT0nMCcgeDI9JzEnIHkyPScxJz48c3RvcCBzdG9wLWNvbG9yPScjMDc1OTg1Jy8+PHN0b3Agb2Zmc2V0PScxJyBzdG9wLWNvbG9yPScjMEVBNUU5Jy8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9JzE2JyBoZWlnaHQ9JzknIGZpbGw9J3VybCgjZyknLz48L3N2Zz4=";
 
+type QuoteBoxProps = {
+  selectedService: string;
+  selectedArea: string;
+  onServiceChange: (value: string) => void;
+  onAreaChange: (value: string) => void;
+  onSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
+  variant: "desktop" | "mobile";
+};
+
+function QuoteBox({
+  selectedService,
+  selectedArea,
+  onServiceChange,
+  onAreaChange,
+  onSubmit,
+  variant
+}: QuoteBoxProps) {
+  return (
+    <div
+      className={
+        variant === "desktop"
+          ? "flex flex-col gap-6 rounded-3xl border border-white/40 bg-white/95 p-6 shadow-[0_20px_60px_rgba(0,0,0,0.25)] backdrop-blur-xl sm:p-8"
+          : "flex flex-col gap-6 rounded-3xl border border-slate-100 bg-white p-6 shadow-[0_18px_50px_rgba(2,31,68,0.10)] sm:p-8"
+      }
+    >
+      <div className="flex flex-col gap-1.5 border-b border-slate-100 pb-5">
+        <span className="eyebrow">Instant dispatch · Segera · 即时</span>
+        <h2 className="text-xl sm:text-2xl font-extrabold text-[#075985] tracking-tight">
+          Get Your Quote in 60 Seconds
+        </h2>
+        <p className="text-xs sm:text-sm text-[#475569] font-medium">
+          Dapatkan sebut harga dalam 60 saat · 60秒内获得报价
+        </p>
+      </div>
+
+      <form onSubmit={onSubmit} className="flex flex-col gap-5">
+        <div className="flex flex-col gap-2">
+          <label className="text-xs font-extrabold text-[#075985] uppercase tracking-wider">
+            What service do you need? · Perkhidmatan · 服务
+          </label>
+          <select
+            value={selectedService}
+            onChange={(e) => onServiceChange(e.target.value)}
+            required
+            className="w-full bg-slate-50 hover:bg-slate-100/50 text-[#075985] font-semibold text-sm py-3.5 px-4 rounded-xl border border-slate-100 outline-none focus:border-[#0EA5E9] focus:bg-white transition-all cursor-pointer"
+          >
+            <option value="" disabled className="text-[#475569]">
+              Select a service...
+            </option>
+            {Object.values(servicesData).map((service) => (
+              <option key={service.slug} value={service.slug}>
+                {service.title} (From {service.startPrice})
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div className="flex flex-col gap-2">
+          <label className="text-xs font-extrabold text-[#075985] uppercase tracking-wider">
+            Your Location · Lokasi · 位置 (KL &amp; Selangor)
+          </label>
+          <select
+            value={selectedArea}
+            onChange={(e) => onAreaChange(e.target.value)}
+            required
+            className="w-full bg-slate-50 hover:bg-slate-100/50 text-[#075985] font-semibold text-sm py-3.5 px-4 rounded-xl border border-slate-100 outline-none focus:border-[#0EA5E9] focus:bg-white transition-all cursor-pointer"
+          >
+            <option value="" disabled className="text-[#475569]">
+              Select your area...
+            </option>
+            {siteConfig.areas.map((area) => (
+              <option key={area} value={area}>
+                {area}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <button type="submit" className="btn-primary w-full text-base mt-2">
+          <span>Get My Instant Quote</span>
+          <ArrowRight className="w-5 h-5" />
+        </button>
+      </form>
+
+      <div className="flex items-center justify-center gap-2 border-t border-slate-100 pt-5 text-xs text-[#475569] font-semibold">
+        <ShieldCheck className="w-4 h-4 text-emerald-500" />
+        <span>No upfront deposits · Bayar selepas siap · 完工后付款</span>
+      </div>
+    </div>
+  );
+}
+
 export function Hero() {
   const [selectedService, setSelectedService] = useState("");
   const [selectedArea, setSelectedArea] = useState("");
@@ -48,7 +140,7 @@ export function Hero() {
   const [visible, setVisible] = useState(true);
   const t = useTranslations();
 
-  const handleBook = (e: React.FormEvent) => {
+  const handleBook = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const serviceName = selectedService
       ? servicesData[selectedService]?.title
@@ -78,210 +170,163 @@ export function Hero() {
 
   const currentImage = HERO_IMAGES[current];
   const previousImage = previous !== null ? HERO_IMAGES[previous] : null;
+  const quoteBoxProps = {
+    selectedService,
+    selectedArea,
+    onServiceChange: setSelectedService,
+    onAreaChange: setSelectedArea,
+    onSubmit: handleBook
+  };
 
   return (
-    <section
-      className="relative w-full min-h-[calc(100svh-5rem)] sm:min-h-[calc(100svh-7rem)] flex items-center overflow-hidden bg-slate-950"
-      aria-label="KL Servis Rumah hero"
-    >
-      {/* Background slideshow — only current + previous frames stay mounted.
-          This preserves the cross-fade while preventing every hero asset from
-          competing with the LCP image on first load. */}
-      <div className="absolute inset-0 z-0">
-        {previousImage ? (
+    <>
+      <section
+        className="relative flex min-h-[calc(100svh-5rem)] w-full items-center overflow-hidden bg-slate-950 sm:min-h-[calc(100svh-7rem)]"
+        aria-label="KL Servis Rumah hero"
+      >
+        {/* Background slideshow — only current + previous frames stay mounted.
+            This preserves the cross-fade while preventing every hero asset from
+            competing with the LCP image on first load. */}
+        <div className="absolute inset-0 z-0">
+          {previousImage ? (
+            <Image
+              key={`previous-${previous}`}
+              src={previousImage.src}
+              alt={previousImage.alt}
+              fill
+              sizes={HERO_IMAGE_SIZES}
+              className="object-cover object-center opacity-100"
+              loading="lazy"
+              decoding="async"
+              placeholder="blur"
+              blurDataURL={HERO_BLUR}
+              quality={85}
+            />
+          ) : null}
           <Image
-            key={`previous-${previous}`}
-            src={previousImage.src}
-            alt={previousImage.alt}
+            key={`current-${current}`}
+            src={currentImage.src}
+            alt={currentImage.alt}
             fill
+            priority={current === 0}
+            loading={current === 0 ? "eager" : "lazy"}
+            fetchPriority={current === 0 ? "high" : "auto"}
             sizes={HERO_IMAGE_SIZES}
-            className="object-cover object-center opacity-100"
-            loading="lazy"
-            decoding="async"
+            className={`object-cover object-center transition-opacity duration-1000 ease-in-out ${
+              visible ? "opacity-100" : "opacity-0"
+            }`}
             placeholder="blur"
             blurDataURL={HERO_BLUR}
             quality={85}
+            onLoad={() => setVisible(true)}
           />
-        ) : null}
-        <Image
-          key={`current-${current}`}
-          src={currentImage.src}
-          alt={currentImage.alt}
-          fill
-          priority={current === 0}
-          loading={current === 0 ? "eager" : "lazy"}
-          fetchPriority={current === 0 ? "high" : "auto"}
-          sizes={HERO_IMAGE_SIZES}
-          className={`object-cover object-center transition-opacity duration-1000 ease-in-out ${
-            visible ? "opacity-100" : "opacity-0"
-          }`}
-          placeholder="blur"
-          blurDataURL={HERO_BLUR}
-          quality={85}
-          onLoad={() => setVisible(true)}
-        />
-        {/* Layered overlays for text contrast */}
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/70 to-slate-900/40 z-10" />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-slate-950/30 z-10" />
-      </div>
+          {/* Layered overlays for text contrast */}
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/70 to-slate-900/40 z-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-slate-950/30 z-10" />
+        </div>
 
-      {/* Slide indicators */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex gap-2">
-        {HERO_IMAGES.map((img, i) => (
-          <button
-            key={img.src}
-            onClick={() => setSlide(i)}
-            className={`h-1 rounded-full transition-all duration-500 ${
-              i === current ? "w-8 bg-white" : "w-2 bg-white/35 hover:bg-white/60"
-            }`}
-            aria-label={`Slide ${i + 1}: ${img.alt}`}
-          />
-        ))}
-      </div>
+        {/* Slide indicators */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex gap-2">
+          {HERO_IMAGES.map((img, i) => (
+            <button
+              key={img.src}
+              onClick={() => setSlide(i)}
+              className={`h-1 rounded-full transition-all duration-500 ${
+                i === current ? "w-8 bg-white" : "w-2 bg-white/35 hover:bg-white/60"
+              }`}
+              aria-label={`Slide ${i + 1}: ${img.alt}`}
+            />
+          ))}
+        </div>
 
-      {/* Content */}
-      <div className="container-default relative z-20 py-14 sm:py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-          {/* Left content */}
-          <div className="lg:col-span-7 flex flex-col items-start gap-6 text-white">
-            {/* Rating badge */}
-            <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-md">
-              <div className="flex items-center gap-0.5">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-3 w-3 fill-amber-400 text-amber-400" />
+        {/* Content */}
+        <div className="container-default relative z-20 py-14 pb-20 sm:py-20">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+            {/* Left content */}
+            <div className="lg:col-span-7 flex flex-col items-start gap-6 text-white">
+              {/* Rating badge */}
+              <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-md">
+                <div className="flex items-center gap-0.5">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-3 w-3 fill-amber-400 text-amber-400" />
+                  ))}
+                </div>
+                <span className="text-[11px] font-black uppercase tracking-widest text-white/90">
+                  4.9 / 5 · {siteConfig.reviewCount}+ Google reviews
+                </span>
+              </div>
+
+              {/* Main Heading — speakable target for AEO (Gemini/ChatGPT/Perplexity) */}
+              <h1 className="hero-h1 text-4xl sm:text-5xl md:text-6xl lg:text-[64px] font-black uppercase tracking-tight leading-[1.05] text-white text-balance">
+                {t("home.hero.heading1")}{" "}
+                <br className="hidden sm:block" />
+                <span className="text-sky-400">{t("home.hero.heading2")}</span>{" "}
+                {t("home.hero.headingLocation")}
+              </h1>
+
+              {/* Locale-aware subline */}
+              <p className="text-sm italic text-white/70 font-medium">
+                {t("hero.subline")}
+              </p>
+
+              {/* Semantic Subtext Body Copy — targeted by speakable JSON-LD */}
+              <p className="hero-subhead text-base sm:text-lg text-white/85 leading-relaxed max-w-2xl">
+                {t("home.hero.subhead")}
+              </p>
+
+              {/* Trust chips */}
+              <div className="flex flex-wrap gap-2 text-xs">
+                {[
+                  "Insured & verified",
+                  "Price confirmed first",
+                  "Same-day available",
+                  "30-day to 10-year warranty"
+                ].map((chip) => (
+                  <span
+                    key={chip}
+                    className="rounded-full border border-white/20 bg-white/10 px-3 py-1.5 font-semibold text-white/90 backdrop-blur-sm"
+                  >
+                    {chip}
+                  </span>
                 ))}
               </div>
-              <span className="text-[11px] font-black uppercase tracking-widest text-white/90">
-                4.9 / 5 · {siteConfig.reviewCount}+ Google reviews
-              </span>
-            </div>
 
-            {/* Main Heading — speakable target for AEO (Gemini/ChatGPT/Perplexity) */}
-            <h1 className="hero-h1 text-4xl sm:text-5xl md:text-6xl lg:text-[64px] font-black uppercase tracking-tight leading-[1.05] text-white text-balance">
-              {t("home.hero.heading1")}{" "}
-              <br className="hidden sm:block" />
-              <span className="text-sky-400">{t("home.hero.heading2")}</span>{" "}
-              {t("home.hero.headingLocation")}
-            </h1>
-
-            {/* Locale-aware subline */}
-            <p className="text-sm italic text-white/70 font-medium">
-              {t("hero.subline")}
-            </p>
-
-            {/* Semantic Subtext Body Copy — targeted by speakable JSON-LD */}
-            <p className="hero-subhead text-base sm:text-lg text-white/85 leading-relaxed max-w-2xl">
-              {t("home.hero.subhead")}
-            </p>
-
-            {/* Trust chips */}
-            <div className="flex flex-wrap gap-2 text-xs">
-              {[
-                "Insured & verified",
-                "Price confirmed first",
-                "Same-day available",
-                "30-day to 10-year warranty"
-              ].map((chip) => (
-                <span
-                  key={chip}
-                  className="rounded-full border border-white/20 bg-white/10 px-3 py-1.5 font-semibold text-white/90 backdrop-blur-sm"
+              {/* CTA buttons */}
+              <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto mt-2">
+                <a
+                  href={getWhatsAppLink()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-whatsapp text-base"
                 >
-                  {chip}
-                </span>
-              ))}
+                  <MessageSquare className="w-5 h-5 fill-white text-[#22C55E]" />
+                  <span>{t("home.cta.bookButton")}</span>
+                </a>
+                <a
+                  href={`tel:${siteConfig.phone}`}
+                  className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/25 bg-white/10 px-5 py-3 text-sm sm:text-base font-bold text-white transition-all hover:bg-white/20 backdrop-blur-md"
+                >
+                  <Phone className="w-4 h-4 text-sky-300" />
+                  <span>{t("common.callUs")} {siteConfig.phoneDisplay}</span>
+                </a>
+              </div>
             </div>
 
-            {/* CTA buttons */}
-            <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto mt-2">
-              <a
-                href={getWhatsAppLink()}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-whatsapp text-base"
-              >
-                <MessageSquare className="w-5 h-5 fill-white text-[#22C55E]" />
-                <span>{t("home.cta.bookButton")}</span>
-              </a>
-              <a
-                href={`tel:${siteConfig.phone}`}
-                className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/25 bg-white/10 px-5 py-3 text-sm sm:text-base font-bold text-white transition-all hover:bg-white/20 backdrop-blur-md"
-              >
-                <Phone className="w-4 h-4 text-sky-300" />
-                <span>{t("common.callUs")} {siteConfig.phoneDisplay}</span>
-              </a>
-            </div>
-          </div>
-
-          {/* Right conversion box */}
-          <div className="lg:col-span-5 w-full">
-            <div className="bg-white/95 backdrop-blur-xl rounded-3xl p-6 sm:p-8 shadow-[0_20px_60px_rgba(0,0,0,0.25)] border border-white/40 flex flex-col gap-6">
-              <div className="flex flex-col gap-1.5 border-b border-slate-100 pb-5">
-                <span className="eyebrow">Instant dispatch · Segera · 即时</span>
-                <h2 className="text-xl sm:text-2xl font-extrabold text-[#075985] tracking-tight">
-                  Get Your Quote in 60 Seconds
-                </h2>
-                <p className="text-xs sm:text-sm text-[#475569] font-medium">
-                  Dapatkan sebut harga dalam 60 saat · 60秒内获得报价
-                </p>
-              </div>
-
-              <form onSubmit={handleBook} className="flex flex-col gap-5">
-                <div className="flex flex-col gap-2">
-                  <label className="text-xs font-extrabold text-[#075985] uppercase tracking-wider">
-                    What service do you need? · Perkhidmatan · 服务
-                  </label>
-                  <select
-                    value={selectedService}
-                    onChange={(e) => setSelectedService(e.target.value)}
-                    required
-                    className="w-full bg-slate-50 hover:bg-slate-100/50 text-[#075985] font-semibold text-sm py-3.5 px-4 rounded-xl border border-slate-100 outline-none focus:border-[#0EA5E9] focus:bg-white transition-all cursor-pointer"
-                  >
-                    <option value="" disabled className="text-[#475569]">
-                      Select a service...
-                    </option>
-                    {Object.values(servicesData).map((service) => (
-                      <option key={service.slug} value={service.slug}>
-                        {service.title} (From {service.startPrice})
-                      </option>
-                    ))}
-                  </select>
-                </div>
-
-                <div className="flex flex-col gap-2">
-                  <label className="text-xs font-extrabold text-[#075985] uppercase tracking-wider">
-                    Your Location · Lokasi · 位置 (KL &amp; Selangor)
-                  </label>
-                  <select
-                    value={selectedArea}
-                    onChange={(e) => setSelectedArea(e.target.value)}
-                    required
-                    className="w-full bg-slate-50 hover:bg-slate-100/50 text-[#075985] font-semibold text-sm py-3.5 px-4 rounded-xl border border-slate-100 outline-none focus:border-[#0EA5E9] focus:bg-white transition-all cursor-pointer"
-                  >
-                    <option value="" disabled className="text-[#475569]">
-                      Select your area...
-                    </option>
-                    {siteConfig.areas.map((area) => (
-                      <option key={area} value={area}>
-                        {area}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-
-                <button type="submit" className="btn-primary w-full text-base mt-2">
-                  <span>Get My Instant Quote</span>
-                  <ArrowRight className="w-5 h-5" />
-                </button>
-              </form>
-
-              <div className="flex items-center justify-center gap-2 border-t border-slate-100 pt-5 text-xs text-[#475569] font-semibold">
-                <ShieldCheck className="w-4 h-4 text-emerald-500" />
-                <span>No upfront deposits · Bayar selepas siap · 完工后付款</span>
-              </div>
+            {/* Right conversion box (desktop only to preserve the desktop hero layout) */}
+            <div className="hidden w-full lg:col-span-5 lg:block">
+              <QuoteBox {...quoteBoxProps} variant="desktop" />
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* Mobile quote card is intentionally placed after the hero image section,
+          preventing the form from overlapping the photographic background. */}
+      <section className="bg-white px-4 py-8 sm:px-6 sm:py-10 lg:hidden" aria-label="Get your quote in 60 seconds">
+        <div className="mx-auto max-w-xl">
+          <QuoteBox {...quoteBoxProps} variant="mobile" />
+        </div>
+      </section>
+    </>
   );
 }

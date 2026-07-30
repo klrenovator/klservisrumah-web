@@ -152,7 +152,7 @@ export function Footer() {
       </div>
 
       <hr className="border-slate-200/60" />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div className="max-w-7xl mx-auto px-4 pt-6 pb-[calc(6.5rem+env(safe-area-inset-bottom))] sm:px-6 lg:px-8 md:pb-6 flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-xs text-slate-500">
           {t("footer.copyright", { year })}
         </p>

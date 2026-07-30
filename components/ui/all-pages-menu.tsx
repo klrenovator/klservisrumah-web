@@ -36,8 +36,8 @@ export function AllPagesMenu() {
 
   return <>
     <button type="button" onClick={() => setOpen(true)} aria-label="Open menu" aria-expanded={open}
-      className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 bg-white text-[#075985] shadow-sm transition hover:border-[#0EA5E9] hover:text-[#0284C7]">
-      <Menu className="h-5 w-5" />
+      className="inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-[#075985] bg-[#075985] text-white shadow-[0_8px_22px_rgba(7,89,133,0.28)] ring-1 ring-sky-200/60 transition hover:bg-[#0369A1] hover:shadow-[0_10px_26px_rgba(7,89,133,0.34)] focus-visible:outline-[#0EA5E9]">
+      <Menu className="h-6 w-6 stroke-[2.75]" />
     </button>
     {open && <div className="fixed inset-0 z-[80]" role="dialog" aria-modal="true" aria-label="Main navigation">
       <button className="absolute inset-0 cursor-default bg-slate-950/35 backdrop-blur-sm" onClick={() => setOpen(false)} aria-label="Close menu" />
