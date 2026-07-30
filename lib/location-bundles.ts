@@ -5,6 +5,7 @@ import type { SuburbDetail } from "@/config/suburb-data";
 import type { ServiceDetail } from "@/config/services-data";
 import { getLocalizedArea, getLocalizedSuburb } from "@/lib/location-i18n";
 import { getLocalizedService } from "@/lib/service-i18n";
+import { localizeAreaDescription } from "@/lib/area-body-i18n";
 
 /**
  * Server-side locale bundle builders for the location pages.
@@ -39,9 +40,15 @@ export type AreaBundleEntry = {
 export function buildAreaBundle(area: AreaDetail): LocaleMap<AreaBundleEntry> {
   return forEachLocale((locale) => {
     const localized = getLocalizedArea(area, locale);
+    const localisedDescription = localizeAreaDescription(
+      area.slug,
+      locale,
+      localized.description
+    );
+
     return {
       name: localized.name,
-      description: localized.description,
+      description: localisedDescription,
       faqs: localized.faqs
     };
   });
