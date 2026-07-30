@@ -66,8 +66,6 @@ function contactLines(): string[] {
     `- **WhatsApp**: ${siteConfig.links.whatsapp}`,
     `- **Facebook**: ${siteConfig.links.facebook}`,
     `- **Instagram**: ${siteConfig.links.instagram}`,
-    `- **TikTok**: ${siteConfig.links.tiktok}`,
-    `- **YouTube**: ${siteConfig.links.youtube}`,
     `- **Google Business Profile**: ${siteConfig.links.googleBusiness}`,
     `- **Office**: ${siteConfig.address}`,
     `- **Hours**: ${siteConfig.hours}`
@@ -342,8 +340,6 @@ function buildSiteSummary() {
     profiles: {
       facebook: siteConfig.links.facebook,
       instagram: siteConfig.links.instagram,
-      tiktok: siteConfig.links.tiktok,
-      youtube: siteConfig.links.youtube,
       googleBusiness: siteConfig.links.googleBusiness
     },
     // Published starting price per service, so an assistant answering

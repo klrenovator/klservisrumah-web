@@ -131,16 +131,9 @@ export const siteConfig = {
     whatsapp: "https://wa.me/601116627349",
     facebook: "https://www.facebook.com/share/1HFzAa3AdZ/",
     instagram: "https://www.instagram.com/klservisrumah?igsh=MXd5d21rcTdtajRrcg==",
-    tiktok: "https://www.tiktok.com/@klrenovator?_r=1&_t=ZS-96tR1k7aVU5",
-    youtube: "https://www.youtube.com/@klrenovator",
     // Verified KL Servis Rumah Google Business Profile (replaces the old
     // short link that resolved to the unrelated KLRenovator presence).
     googleMaps: "https://share.google/7GZef2rDjtRuqW2h1",
-    googleBusiness: "https://share.google/7GZef2rDjtRuqW2h1",
-    twitter: "https://x.com/KlRenovator",
-    linkedin: "https://www.linkedin.com/in/kl-renovator-7912b7389",
-    pinterest: "https://www.pinterest.com/klrenovator/",
-    linktr: "https://linktr.ee/klrenovator",
-    medium: "https://medium.com/@klrenovator"
+    googleBusiness: "https://share.google/7GZef2rDjtRuqW2h1"
   }
 };

@@ -1181,7 +1181,7 @@ console.log("\n• AI-context files (llms.txt, llms-full.txt, aeo-faq.txt, site-
   const corpus = `${llms}\n${llmsFull}\n${aeoFaq}`;
 
   // 1. Every public profile link must be the current one from config/site.ts.
-  for (const key of ["facebook", "instagram", "tiktok", "youtube", "googleBusiness"] as const) {
+  for (const key of ["facebook", "instagram", "googleBusiness"] as const) {
     const expected = siteConfig.links[key];
     assert(
       corpus.includes(expected),
