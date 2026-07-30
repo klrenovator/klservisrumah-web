@@ -122,13 +122,7 @@ export function getOrganizationSchema() {
     sameAs: [
       siteConfig.links.facebook,
       siteConfig.links.instagram,
-      siteConfig.links.tiktok,
-      siteConfig.links.youtube,
-      siteConfig.links.googleMaps,
-      siteConfig.links.twitter,
-      siteConfig.links.linkedin,
-      siteConfig.links.pinterest,
-      siteConfig.links.medium
+      siteConfig.links.googleMaps
     ].filter(Boolean),
     contactPoint: [
       {
