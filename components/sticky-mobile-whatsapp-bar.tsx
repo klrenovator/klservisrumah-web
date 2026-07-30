@@ -10,23 +10,23 @@ import { useTranslations } from "@/hooks/use-translations";
 export function StickyMobileWhatsAppBar() {
   const t = useTranslations();
   return (
-    <div className="fixed inset-x-0 bottom-0 z-50 border-t border-slate-200 bg-white/95 px-3 pt-2 pb-[calc(0.5rem+env(safe-area-inset-bottom))] shadow-[0_-10px_30px_rgba(2,31,68,0.08)] backdrop-blur md:hidden">
-      <div className="grid grid-cols-2 gap-2">
+    <div className="fixed inset-x-0 bottom-0 z-50 border-t border-slate-200 bg-white/95 px-3 pt-2.5 pb-[calc(0.75rem+env(safe-area-inset-bottom))] shadow-[0_-10px_30px_rgba(2,31,68,0.08)] backdrop-blur md:hidden">
+      <div className="grid grid-cols-2 gap-2.5">
         <a
           href={getWhatsAppLink()}
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => trackWhatsAppClick({ page: "sticky_mobile_bar" })}
-          className="flex items-center justify-center gap-2 rounded-xl bg-[#22C55E] px-3 py-3 text-sm font-extrabold text-white"
+          className="flex items-center justify-center gap-2 min-[430px]:gap-2.5 rounded-xl bg-[#22C55E] px-3 min-[430px]:px-4 py-4 text-sm min-[430px]:text-base font-extrabold text-white shadow-[0_8px_20px_rgba(34,197,94,0.28)]"
         >
-          <MessageCircle className="h-4 w-4" /> {t("common.bookWhatsApp")}
+          <MessageCircle className="h-4 w-4 min-[430px]:h-5 min-[430px]:w-5" /> {t("common.bookWhatsApp")}
         </a>
         <a
           href={`tel:${siteConfig.phone}`}
           onClick={() => trackPhoneCall({ page: "sticky_mobile_bar" })}
-          className="flex items-center justify-center gap-2 rounded-xl bg-[#0284C7] px-3 py-3 text-sm font-extrabold text-white"
+          className="flex items-center justify-center gap-2 min-[430px]:gap-2.5 rounded-xl bg-[#0284C7] px-3 min-[430px]:px-4 py-4 text-sm min-[430px]:text-base font-extrabold text-white shadow-[0_8px_20px_rgba(2,132,199,0.28)]"
         >
-          <Phone className="h-4 w-4" /> {t("common.callUs")}
+          <Phone className="h-4 w-4 min-[430px]:h-5 min-[430px]:w-5" /> {t("common.callUs")}
         </a>
       </div>
     </div>
