@@ -2,6 +2,7 @@
 
 import React from "react";
 import { type SupportedLang, useLang } from "@/context/lang-context";
+import { usePathname, useRouter } from "next/navigation";
 import { useTranslations } from "@/hooks/use-translations";
 
 const LANG_OPTIONS: { code: SupportedLang; short: string; full: string }[] = [
@@ -21,10 +22,27 @@ const LANG_OPTIONS: { code: SupportedLang; short: string; full: string }[] = [
 export function LanguageSwitcher() {
   const { lang, setLang } = useLang();
   const t = useTranslations();
+  const pathname = usePathname();
+  const router = useRouter();
+
+  // These hubs have real translated server-rendered pages. Keeping the user
+  // on /blog or /faq only changed the small client widgets, while the large
+  // article/FAQ directory stayed English. Navigate to the matching localized
+  // hub so the complete page (including its data) changes language.
+  const localizedHub = (nextLang: SupportedLang): string | null => {
+    const base = pathname.replace(/^\/(ms|zh)(?=\/|$)/, "") || "/";
+    const hubs: Record<string, Record<SupportedLang, string>> = {
+      "/blog": { en: "/blog", ms: "/ms/blog", zh: "/zh/bo-ke" },
+      "/faq": { en: "/faq", ms: "/ms/soalan-lazim", zh: "/zh/chang-jian-wen-ti" },
+    };
+    return hubs[base]?.[nextLang] ?? null;
+  };
 
   const handleChange = (nextLang: SupportedLang) => {
     if (nextLang === lang) return;
     setLang(nextLang);
+    const destination = localizedHub(nextLang);
+    if (destination && destination !== pathname) router.push(destination);
   };
 
   return (
