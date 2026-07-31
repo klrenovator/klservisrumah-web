@@ -213,6 +213,18 @@ export const suburbHousingProfileI18n: Record<
   "bandar-botanic": {
     ms: "Rumah bertanah moden dan unit komersial yang memerlukan cat dalaman kemas, kunci pintu, dan pembaikan paip.",
     zh: "现代有地住宅与商业单位，需要整洁的室内粉刷、门锁与水管维修。"
+  },
+  "kampung-baru": {
+    ms: "Enklaf bersejarah dengan campuran rumah kayu tradisional dan pangsapuri bertingkat tinggi moden yang memerlukan penyelenggaraan khusus.",
+    zh: "历史悠久的聚落，融合了传统木屋与现代高层公寓，需要专门的维护服务。"
+  },
+  "kampung-pandan": {
+    ms: "Kawasan kediaman mapan dengan rumah teres dan flat yang memerlukan kerja paip dan mengecat semula secara berkala.",
+    zh: "成熟的住宅区，拥有排屋与平房，需要定期进行水管与重新粉刷工程。"
+  },
+  "kampung-datuk-keramat": {
+    ms: "Kejiranan matang dengan hartanah bertanah dan kuarters kerajaan yang memerlukan perkhidmatan kerja tangan dan pembaikan siling.",
+    zh: "成熟社区，拥有有地房产与政府宿舍，需要杂工与天花板维修服务。"
   }
 };
 

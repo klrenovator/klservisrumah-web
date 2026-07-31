@@ -31,8 +31,8 @@ export async function generateMetadata(props: { params: Promise<{ slug: string; 
   const areaTwin = areaPages.find((area) => area.slug === suburb.slug);
 
   return buildMetadata({
-    title: `${service.title} in ${suburb.name} — From ${service.startPrice}`,
-    description: `${service.title} in ${suburb.name}. ${suburb.metaDesc}`,
+    title: `Best ${service.title} in ${suburb.name} — Trusted Near Me`,
+    description: `Professional ${service.title} in ${suburb.name}. ${suburb.metaDesc}`,
     path: `/suburbs/${suburb.slug}/${service.slug}`,
     canonicalPath: areaTwin
       ? `/areas/${areaTwin.slug}/${service.slug}`
