@@ -7,27 +7,40 @@ import { servicesData } from "@/config/services-data";
 import { Phone, Mail, MapPin, Clock, ShieldCheck, CheckCircle } from "lucide-react";
 import { Logo } from "@/components/ui/logo";
 import { useTranslations } from "@/hooks/use-translations";
+import { useLang } from "@/context/lang-context";
+import { getLocalizedService } from "@/lib/service-i18n";
+import { getLocalizedArea } from "@/lib/location-i18n";
+import { areaPages } from "@/config/area-data";
 
 export function Footer() {
   const year = new Date().getFullYear();
   const t = useTranslations();
+  const { lang } = useLang();
 
   // Top services for footer (limited to 8 for cleaner layout)
-  const topServices = Object.values(servicesData).slice(0, 8);
+  const topServices = Object.values(servicesData)
+    .slice(0, 8)
+    .map((source) => getLocalizedService(source, lang));
 
   // Curated top areas for footer — mirrors KLRenovator area-linking density
   // and pushes internal-link equity from every page to the most valuable
   // location silos.
   const topAreas = [
-    { slug: "kuala-lumpur", label: "Kuala Lumpur" },
-    { slug: "petaling-jaya", label: "Petaling Jaya" },
-    { slug: "subang-jaya", label: "Subang Jaya" },
-    { slug: "shah-alam", label: "Shah Alam" },
-    { slug: "puchong", label: "Puchong" },
-    { slug: "klang", label: "Klang" },
-    { slug: "cheras", label: "Cheras" },
-    { slug: "ampang", label: "Ampang" }
-  ];
+    "kuala-lumpur",
+    "petaling-jaya",
+    "subang-jaya",
+    "shah-alam",
+    "puchong",
+    "klang",
+    "cheras",
+    "ampang"
+  ]
+    .map((slug) => areaPages.find((a) => a.slug === slug))
+    .filter((a): a is NonNullable<typeof a> => Boolean(a))
+    .map((area) => ({
+      slug: area.slug,
+      label: getLocalizedArea(area, lang).name
+    }));
 
   return (
     <footer className="bg-white text-slate-500 border-t border-slate-200">
@@ -36,19 +49,19 @@ export function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 grid grid-cols-2 md:grid-cols-4 gap-3 text-[11px] sm:text-xs text-slate-700 font-semibold">
           <div className="flex items-center gap-2">
             <ShieldCheck className="h-4 w-4 text-emerald-500 shrink-0" />
-            <span>Insured &amp; verified crew</span>
+            <span>{t("footer.trustStrip.insured")}</span>
           </div>
           <div className="flex items-center gap-2">
             <CheckCircle className="h-4 w-4 text-sky-500 shrink-0" />
-            <span>Fixed quote before work</span>
+            <span>{t("footer.trustStrip.fixedQuote")}</span>
           </div>
           <div className="flex items-center gap-2">
             <ShieldCheck className="h-4 w-4 text-amber-500 shrink-0" />
-            <span>30-day to 10-year warranty</span>
+            <span>{t("footer.trustStrip.warranty")}</span>
           </div>
           <div className="flex items-center gap-2">
             <CheckCircle className="h-4 w-4 text-violet-500 shrink-0" />
-            <span>Same-day dispatch KL &amp; Selangor</span>
+            <span>{t("footer.trustStrip.dispatch")}</span>
           </div>
         </div>
       </div>
@@ -95,9 +108,9 @@ export function Footer() {
             <p className="text-[10px] font-black uppercase tracking-widest text-sky-600 mb-2">{t("nav.pricing")}</p>
             <ul className="space-y-1.5">
               <li><Link href="/pricing" className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("pricing.pageTitle")}</Link></li>
-              <li><Link href="/services/painting" className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">Painting Price Guide</Link></li>
-              <li><Link href="/services/plumbing" className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">Plumbing Price Guide</Link></li>
-              <li><Link href="/services/waterproofing" className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">Waterproofing Price Guide</Link></li>
+              <li><Link href="/services/painting" className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("footer.priceGuide", { service: getLocalizedService(servicesData.painting, lang).title })}</Link></li>
+              <li><Link href="/services/plumbing" className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("footer.priceGuide", { service: getLocalizedService(servicesData.plumbing, lang).title })}</Link></li>
+              <li><Link href="/services/waterproofing" className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("footer.priceGuide", { service: getLocalizedService(servicesData.waterproofing, lang).title })}</Link></li>
             </ul>
           </div>
 

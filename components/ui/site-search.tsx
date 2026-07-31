@@ -6,6 +6,7 @@ import { Search } from "lucide-react";
 import { servicesData } from "@/config/services-data";
 import { siteConfig } from "@/config/site";
 import { slugify } from "@/lib/utils";
+import { useTranslations } from "@/hooks/use-translations";
 
 const serviceLinks = Object.values(servicesData).flatMap((service) => [
   { label: service.title, href: `/services/${service.slug}`, type: "Service" },
@@ -23,6 +24,7 @@ const staticLinks = [
 
 export function SiteSearch() {
   const [query, setQuery] = useState("");
+  const t = useTranslations();
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
     if (q.length < 2) return [];
@@ -38,9 +40,9 @@ export function SiteSearch() {
         <input
           value={query}
           onChange={(event) => setQuery(event.target.value)}
-          placeholder="Search service..."
+          placeholder={t("siteSearch.placeholder")}
           className="w-full bg-transparent text-xs font-semibold text-[#075985] outline-none placeholder:text-slate-400"
-          aria-label="Search site services"
+          aria-label={t("siteSearch.ariaLabel")}
         />
       </div>
       {results.length > 0 && (

@@ -35,7 +35,14 @@
     "company": "公司",
     "support": "支持",
     "copyright": "© {year} KL Servis Rumah. 版权所有。",
-    "operatingHours": "周一至周日 · 上午 9:00 – 下午 6:00（每日营业）"
+    "operatingHours": "周一至周日 · 上午 9:00 – 下午 6:00（每日营业）",
+    "trustStrip": {
+      "insured": "正规保险与专业认证团队",
+      "fixedQuote": "施工前确认一口价报价",
+      "warranty": "30天至10年工艺质量保修",
+      "dispatch": "吉隆坡与雪兰莪当日派工"
+    },
+    "priceGuide": "{service} 价格指南"
   },
   "home": {
     "hero": {
@@ -1362,5 +1369,28 @@
     "reviewsOurs": "{reviewCount}+ 条Google评价，附真实工程照片。看看真实客户怎么说。",
     "reviewsTheirs": "几乎没有评价 — 或者来自不活跃账户的虚假评价。",
     "trustNote": "SSM注册 · 全额保险 · 保修"
+  },
+  "faqSearch": {
+    "placeholder": "搜索所有常见问题 — 例如：质保、漏水、油漆价格、公寓规则...",
+    "ariaLabel": "搜索所有常见问题",
+    "clearAria": "清除搜索",
+    "showingResults": "显示 {count} 个相关问题",
+    "showingResultsPlural": "显示 {count} 个相关问题",
+    "noResults": "没有找到相关问题 — 请尝试其它关键词或直接联系我们的 WhatsApp。"
+  },
+  "reviewsCarousel": {
+    "ariaLabel": "客户评价",
+    "prev": "上一则评价",
+    "next": "下一则评价",
+    "showReview": "显示第 {index} 则评价",
+    "stars": "{rating} 星（满分 5 星）"
+  },
+  "ticker": {
+    "hideAria": "隐藏最新动向通知",
+    "liveDemand": "本地实时服务需求 — 不显示客户名称"
+  },
+  "siteSearch": {
+    "placeholder": "搜索服务...",
+    "ariaLabel": "搜索网站服务"
   }
 }
