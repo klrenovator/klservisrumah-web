@@ -137,10 +137,13 @@ ${estimateLines.join("\n")}
 
 ## Business Details
 - Legal Name: ${siteConfig.legalName}
-- SSM: ${siteConfig.ssm}
 - Founded: ${siteConfig.foundingDate}
 - Google Rating: ${siteConfig.reviewRating} / 5.0 (${siteConfig.reviewCount}+ reviews)
 - Operating Hours: ${siteConfig.hours}
+
+_Note: SSM company registration numbers are intentionally not exposed in the
+public AI context, the Organization schema or any on-page markup, per the
+permanent handoff rule "SSM NOT TO BE SHOWN PUBLICALLY ON WEBSITE"._
 `;
 }
 
@@ -181,12 +184,15 @@ ${subs}
 ## Business Identity
 - **Name**: ${siteConfig.name}
 - **Legal Name**: ${siteConfig.legalName}
-- **SSM Registration**: ${siteConfig.ssmFull}
 - **Founded**: ${siteConfig.foundingDate}
 - **Employees**: ${siteConfig.numberOfEmployees}+ full-time staff
 - **Service Areas**: Kuala Lumpur & Selangor (Klang Valley)
 - **Languages**: English, Bahasa Malaysia, Chinese
 - **Google Rating**: ${siteConfig.reviewRating} / 5.0 across ${siteConfig.reviewCount}+ reviews
+
+_Note: SSM company registration numbers are intentionally not exposed in the
+public AI context, the Organization schema or any on-page markup, per the
+permanent handoff rule "SSM NOT TO BE SHOWN PUBLICALLY ON WEBSITE"._
 
 ## Contact Information
 ${contactLines().join("\n")}

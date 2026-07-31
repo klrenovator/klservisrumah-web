@@ -1,13 +1,13 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ChevronDown, MessageCircle, Phone } from "lucide-react";
+import { ChevronDown, Phone } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { servicesData } from "@/config/services-data";
 import { getWhatsAppLink } from "@/lib/whatsapp";
-import { trackPhoneCall, trackWhatsAppClick } from "@/lib/analytics";
+import { trackWhatsAppClick } from "@/lib/analytics";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { AllPagesMenu } from "@/components/ui/all-pages-menu";
 import { Logo } from "@/components/ui/logo";
@@ -32,73 +32,32 @@ function WhatsAppIcon({ className = "h-5 w-5" }: { className?: string }) {
   );
 }
 
+/**
+ * Header WhatsApp action — single, direct link to WhatsApp.
+ * Rounds 43 / 44 had a dropdown (Message on WhatsApp / Call us) here.
+ * Per user direction 2026-08-01, the Call option was removed and the
+ * button now opens WhatsApp in one tap on every viewport.
+ */
 function HeaderWhatsAppActions({ compact = false }: { compact?: boolean }) {
-  const [open, setOpen] = useState(false);
-  const menuRef = useRef<HTMLDivElement>(null);
+  const t = useTranslations();
   const waLink = getWhatsAppLink();
 
-  useEffect(() => {
-    if (!open) return;
-    const onPointerDown = (event: PointerEvent) => {
-      if (!menuRef.current?.contains(event.target as Node)) setOpen(false);
-    };
-    const onKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setOpen(false);
-    };
-    document.addEventListener("pointerdown", onPointerDown);
-    document.addEventListener("keydown", onKey);
-    return () => {
-      document.removeEventListener("pointerdown", onPointerDown);
-      document.removeEventListener("keydown", onKey);
-    };
-  }, [open]);
-
   return (
-    <div ref={menuRef} className="relative">
-      <button
-        type="button"
-        onClick={() => setOpen((value) => !value)}
-        aria-label="Open WhatsApp contact options"
-        aria-expanded={open}
-        className={
-          compact
-            ? "inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-[#25D366] text-white shadow-[0_8px_22px_rgba(37,211,102,0.35)] ring-1 ring-[#128C7E]/20 transition hover:bg-[#1fb957] focus-visible:outline-[#128C7E]"
-            : "inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-5 py-2.5 text-sm font-extrabold text-white shadow-[0_8px_22px_rgba(37,211,102,0.22)] transition hover:bg-[#1fb957] hover:shadow-[0_10px_26px_rgba(37,211,102,0.28)]"
-        }
-      >
-        <WhatsAppIcon className={compact ? "h-6 w-6" : "h-4 w-4"} />
-        {!compact && <span>WhatsApp</span>}
-        {!compact && <ChevronDown className={`h-3.5 w-3.5 transition-transform ${open ? "rotate-180" : ""}`} />}
-      </button>
-      {open && (
-        <div className="absolute right-0 top-full z-[70] mt-2 w-60 overflow-hidden rounded-2xl border border-emerald-100 bg-white p-2 text-sm shadow-[0_18px_50px_rgba(2,31,68,0.18)] animate-in fade-in zoom-in-95 duration-150 transform-gpu">
-          <a
-            href={waLink}
-            target="_blank"
-            rel="nofollow noopener noreferrer"
-            onClick={() => {
-              trackWhatsAppClick({ page: "header_whatsapp_menu" });
-              setOpen(false);
-            }}
-            className="flex items-center gap-3 rounded-xl px-3 py-3 font-extrabold text-slate-700 transition hover:bg-emerald-50 hover:text-[#128C7E]"
-          >
-            <MessageCircle className="h-4 w-4" aria-hidden="true" />
-            <span>Message on WhatsApp</span>
-          </a>
-          <a
-            href={`tel:${siteConfig.phone}`}
-            onClick={() => {
-              trackPhoneCall({ page: "header_whatsapp_menu" });
-              setOpen(false);
-            }}
-            className="flex items-center gap-3 rounded-xl px-3 py-3 font-extrabold text-slate-700 transition hover:bg-emerald-50 hover:text-[#128C7E]"
-          >
-            <Phone className="h-4 w-4" aria-hidden="true" />
-            <span>Call us</span>
-          </a>
-        </div>
-      )}
-    </div>
+    <a
+      href={waLink}
+      target="_blank"
+      rel="nofollow noopener noreferrer"
+      onClick={() => trackWhatsAppClick({ page: "header_whatsapp_button" })}
+      aria-label={t("common.whatsapp")}
+      className={
+        compact
+          ? "inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-[#25D366] text-white shadow-[0_8px_22px_rgba(37,211,102,0.35)] ring-1 ring-[#128C7E]/20 transition hover:bg-[#1fb957] focus-visible:outline-[#128C7E]"
+          : "inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-5 py-2.5 text-sm font-extrabold text-white shadow-[0_8px_22px_rgba(37,211,102,0.22)] transition hover:bg-[#1fb957] hover:shadow-[0_10px_26px_rgba(37,211,102,0.28)]"
+      }
+    >
+      <WhatsAppIcon className={compact ? "h-6 w-6" : "h-4 w-4"} />
+      {!compact && <span>{t("common.whatsapp")}</span>}
+    </a>
   );
 }
 
@@ -123,7 +82,7 @@ export function Navbar() {
     <div className="hidden bg-[#075985] py-2 text-xs text-white sm:block">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 sm:px-6 lg:px-8">
         <span className="flex items-center gap-1.5 truncate font-black uppercase tracking-wider text-slate-200"><span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[#22c55e]" />{t("nav.topbar")}</span>
-        <div className="hidden items-center gap-6 md:flex"><a href={`tel:${siteConfig.phone}`} className="inline-flex items-center gap-2 font-black text-slate-200 transition hover:text-sky-300"><Phone className="h-3 w-3 text-sky-300" />{siteConfig.phoneDisplay}</a><a href={waLink} target="_blank" rel="nofollow noopener noreferrer" className="inline-flex items-center gap-2 font-black transition hover:text-[#22c55e]"><WhatsAppIcon className="h-3.5 w-3.5 text-[#22c55e]" />WhatsApp Online</a></div>
+        <div className="hidden items-center gap-6 md:flex"><a href={`tel:${siteConfig.phone}`} className="inline-flex items-center gap-2 font-black text-slate-200 transition hover:text-sky-300"><Phone className="h-3 w-3 text-sky-300" />{siteConfig.phoneDisplay}</a><a href={waLink} target="_blank" rel="nofollow noopener noreferrer" className="inline-flex items-center gap-2 font-black transition hover:text-[#22c55e]"><WhatsAppIcon className="h-3.5 w-3.5 text-[#22c55e]" />{t("common.whatsappOnline")}</a></div>
       </div>
     </div>
     <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-1.5 min-[430px]:gap-3 px-2 min-[430px]:px-3 sm:px-6 lg:px-8">

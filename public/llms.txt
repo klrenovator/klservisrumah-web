@@ -83,7 +83,10 @@ One short, stable link per service (https://www.klservisrumah.my/estimate/<servi
 
 ## Business Details
 - Legal Name: Multicore Dynamics Resources
-- SSM: 003765188-T
 - Founded: 2014
 - Google Rating: 4.9 / 5.0 (120+ reviews)
 - Operating Hours: Mon–Sun · 9:00 AM – 6:00 PM (Everyday Open)
+
+_Note: SSM company registration numbers are intentionally not exposed in the
+public AI context, the Organization schema or any on-page markup, per the
+permanent handoff rule "SSM NOT TO BE SHOWN PUBLICALLY ON WEBSITE"._

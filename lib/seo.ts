@@ -88,7 +88,12 @@ export function getOrganizationSchema() {
     "@id": `${baseUrl}/#organization`,
     name: siteConfig.name,
     legalName: siteConfig.legalName,
-    taxID: siteConfig.ssm,
+    // NB: `taxID` is intentionally omitted from the public Organization
+    // schema. Per the permanent handoff rule (Section 56, Rule 2):
+    // "SSM number only in backend schema, never in visible HTML text."
+    // Search engines do not require it for LocalBusiness / HomeAndConstructionBusiness
+    // markup, and the rest of the legal-name + NAP + contact-point data is
+    // more than sufficient to anchor the entity in the Knowledge Graph.
     alternateName: ["KL Servis Rumah", "KLSR", "KL Home Services", "Servis Rumah KL", siteConfig.legalName],
     url: baseUrl,
     logo: {

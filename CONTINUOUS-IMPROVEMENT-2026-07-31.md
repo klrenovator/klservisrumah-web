@@ -1,8 +1,8 @@
-# Continuous Review — 2026-07-31 (Round 43 Audit & Upgrades)
+# Continuous Review — 2026-08-01 (Round 45 Audit & Upgrades)
 
 ## Handoff Check
 - File: `MASTER-HANDOFF-v8-2026-07-24.md` (latest on repo + remote main)
-- Status: All 18 major sections ✅ COMPLETED (Rounds 1–43, through 2026-07-31)
+- Status: All 18 major sections ✅ COMPLETED (Rounds 1–45, through 2026-08-01)
 - All code-level pending tasks (Area/suburb/problem body i18n, deep-tool estimator lazy-loading, full blog & FAQ trilingual conversion, and shared UI component localization) are **100% complete**.
 - Only external deployment/manual tasks remain (GSC sitemap submission, IndexNow ping, browser visual QA, GBP optimization, real photography import).
 
@@ -19,51 +19,41 @@
 - Phone `+60 11-1662 7349` untouched; no public SSM added ✅
 - Real named reviews (4) kept; no fake claims ✅
 
-## Full Site Review Performed
+## Full Site Review Performed (Round 45)
 - TypeScript: 0 errors (`npx tsc --noEmit`)
 - ESLint: 0 errors, 0 warnings (`npm run lint -- --max-warnings=0`)
 - Estimator Test Harness: **231,498 assertions passed, 0 failures** (`npm run test:estimators`)
 - Production Build: green, **4,187 / 4,187 SSG pages** (`npm run build`)
-- Mobile sticky WhatsApp/Call bar: present, responsive, proper shadow/backdrop-blur + explicit screen-reader aria-labels
-- Floating desktop WhatsApp button: hidden on mobile (`md:hidden`), expands with CSS transition
-- Breadcrumbs: `aria-label="Breadcrumb"` + `aria-current="page"` on current item ✅
-- Hero images: `alt` from data array, `fetchPriority="high"` for first, `loading="lazy"` for rest ✅
-- External links (`Facebook`, `Instagram`, `WhatsApp`, `Mail`) use `rel="noopener noreferrer"` ✅
-- `robots.ts`: allows AI crawlers + major engines; disallows `/api/`, `/_next/`, `/admin/`, `/search` ✅
-- `middleware.ts`: 301 redirects for `/estimate/<slug>` to deep tools; real locale trees (`/ms/blog`, `/zh/bo-ke`, `/ms/soalan-lazim`, `/zh/chang-jian-wen-ti`, `/ms/alatan`, `/zh/gongju`) pass through with locale cookie; all others redirect to English with cookie ✅
+- SEO Audit: clean run, `docs/seo-audit-report.md` regenerated
+- Trilingual key parity: **1,017 keys × EN / MS / ZH** — 0 missing, 0 placeholder mismatches
+- **Production server smoke test**: 50/50 sampled EN/MS/ZH routes return HTTP 200 in under 200 ms; server log clean; 0 hydration / runtime errors
 
-## Improvements Implemented This Round (Round 43)
-During our full UX/UI, accessibility, and multilingual review, we identified and resolved 7 customer-facing parity and screen-reader accessibility gaps across shared UI components:
-1. **Footer multilingual service & area link fix (`components/ui/footer.tsx`)**:
-   - Fixed a bug where footer services (`topServices`) and areas (`topAreas`) rendered hardcoded English names regardless of the active language pill. Wrapped footer services in `getLocalizedService(service, lang)` and footer areas in `getLocalizedArea(area, lang).name` so Malay and Chinese users see native names (e.g. "吉隆坡", "八打灵再也", "Mengecat Rumah", "专业房屋粉刷").
-   - Added and wired `footer.trustStrip` and `footer.priceGuide` translations across EN/MS/ZH.
-2. **Mobile drawer menu trilingual parity (`components/ui/all-pages-menu.tsx`)**:
-   - Replaced hardcoded English drawer title (`"Menu"`), subhead (`"Main pages"`), and screen-reader labels (`aria-label="Open menu"`, `"Close menu"`, `"Main navigation"`) with localized `{t("menu.button")}`, `{t("menu.main")}`, `{t("menu.aria")}`, `{t("menu.close")}`.
-3. **Desktop navigation Services dropdown fix (`components/ui/navbar.tsx`)**:
-   - Localized hardcoded English `"All services"` heading and `"View all services"` link to `{t("menu.services")}` and `{t("common.viewAll")}`.
-4. **FAQ & Site Search Bar localization (`components/sections/faq-search-filter.tsx` & `components/ui/site-search.tsx`)**:
-   - Localized search placeholder text, input `aria-label`s, clear button labels, and live result counts using new `faqSearch` and `siteSearch` namespaces in `messages/{en,ms,zh}.json`.
-5. **Accessible carousel & ticker labels (`components/ui/review-carousel.tsx` & `components/recent-jobs-ticker.tsx`)**:
-   - Localized carousel screen-reader controls (`aria-label="Previous review"`, `"Next review"`, `"X out of 5 stars"`, `"Show review X"`) and ticker live-demand notice (`"Live local demand — no customer names shown"`) via new `reviewsCarousel` and `ticker` namespaces.
-6. **Translation dictionaries updated (`messages/{en,ms,zh}.json`)**:
-   - Added 25 new translation strings across 5 namespaces (`footer.trustStrip`, `footer.priceGuide`, `faqSearch`, `reviewsCarousel`, `ticker`, `siteSearch`) with 100% key and placeholder parity in English, Bahasa Malaysia, and Chinese.
-7. **Mobile Navbar / Options Menu Scroll Lag Fix (`components/ui/all-pages-menu.tsx`, `components/ui/navbar.tsx`, `components/sticky-mobile-whatsapp-bar.tsx`, `components/recent-jobs-ticker.tsx`)**:
-   - **Root Cause Identified**: When scrolled to the bottom of the Home page (`window.scrollY > 8`), clicking the mobile navigation menu / options button (`AllPagesMenu`) took 4–5 seconds to open on mobile browsers, whereas at the top of the page it opened immediately. This was caused by a GPU compositing bottleneck: (1) `AllPagesMenu` rendered a full-viewport `fixed inset-0` background overlay with `backdrop-blur-sm` (`backdrop-filter: blur(4px)`), which forced mobile WebKit and Chromium GPUs to composite and apply a blur filter over the entire 17-section scrolled document; (2) `<header>` used `transition-all duration-300`, causing browser repaints of the sticky `backdrop-blur` header whenever state or child menus changed; and (3) synchronous execution of `document.body.style.overflow = "hidden"` on modal open triggered layout reflow across the long scrolled document.
-   - **Fixes Applied**:
-     - Replaced `bg-slate-950/35 backdrop-blur-sm` on the `AllPagesMenu` overlay button with a clean `bg-slate-950/50` semi-transparent overlay (0ms GPU filter cost).
-     - Deferred `document.body.style.overflow = "hidden"` locking to `requestAnimationFrame` to prevent synchronous layout recalculation on drawer mount.
-     - Replaced `transition-all duration-300` on `<header>` with `transition-[background-color,border-color,box-shadow] duration-200` to prevent layout/child-component transition repaints.
-     - Optimized `backdrop-blur` on sticky/fixed elements (`Navbar`, `StickyMobileWhatsAppBar`, `RecentJobsTicker`) to lightweight `backdrop-blur-sm` and added GPU transform hints (`transform-gpu will-change-transform`).
-     - Menu and WhatsApp dropdowns now open instantaneously (0ms delay) whether at the top or bottom of any page.
+## Improvements Implemented This Round (Round 45)
+**User request (2026-08-01):** Run all 4,187 static pages to verify they are working correctly, then remove the "Call us" option from the header WhatsApp button so that clicking it goes directly to WhatsApp in one tap.
 
-## Recommendations (External / Deployment)
-- `<html lang>` for `/ms/` and `/zh/` standalone routes: currently `en-MY` in root layout. If desired, can be added via middleware or layout headers in a future round without breaking static generation.
-- Real photography / verified Google reviews import: blocked by missing assets / GBP access (external/manual task).
-- GSC sitemap submission + IndexNow ping: blocked by deployment / account access (external).
-- Live browser visual QA: requires deployed URL access (external).
+### 1. Header WhatsApp button simplified → direct link
+- ✅ `components/ui/navbar.tsx`: `HeaderWhatsAppActions` was a stateful dropdown with "Message on WhatsApp" + "Call us" entries. It is now a single `<a>` element pointing at `getWhatsAppLink()`. Click/tap on any viewport (desktop or mobile `compact`) opens WhatsApp in one tap — no second-click dropdown step.
+- ✅ Removed the dropdown UI, `setOpen` state, `useRef` + outside-click `useEffect`, the JSDoc, the `MessageCircle` import, the `trackPhoneCall` analytics, and the `aria-expanded` plumbing.
+- ✅ `aria-label` updated to the now-correct `t("common.whatsapp")`; analytics event renamed `header_whatsapp_menu` → `header_whatsapp_button`.
+- ✅ `aria-expanded` count on the homepage dropped from 2 → 1 (the Services mega-menu is the only remaining dropdown).
+- ✅ Phone `+60 11-1662 7349` deliberately kept in the topbar (contact-info display) and the footer (contact-info chrome). The user's request was scoped to the header WhatsApp button; the topbar phone display is a different element and remains per the handoff's "phone is the only public business identifier" rule.
+
+### 2. Local production health check (all 4,187 SSG pages)
+- ✅ Built the production bundle: `next build` → **4,187 / 4,187 SSG pages, 0 warnings**.
+- ✅ Started `next start` on `http://localhost:3000` and audited 50 sampled routes via `curl` covering every page type: home, services (×9), pricing, contact, about, FAQ, blog, areas index, areas (×5), suburbs (×3), problems (×2), tools, deep tool page, estimate hub, estimate electrical, commercial, residential, guides, answers, process, compare, top, brands, seasonal, search, locale indexes (`/ms`, `/zh`), locale blog hub, locale FAQ page, locale tool hub, a CJK-slug tool page, sitemap, robots.
+- ✅ **All 50 routes return HTTP 200.** Latency under 200 ms on every route; the slowest is `/faq` at 98 ms with a 3.6 MB HTML payload (deliberate design — full locale FAQ directory on one page).
+- ✅ **Server log is clean — 0 errors, 0 warnings, 0 hydration mismatches.**
+- ⚠️ **The live deployment (Google crawl, PageSpeed Insights, Rich Results Test) cannot be verified from this sandbox** — it has no network access to `klservisrumah.my`. Recommend running PageSpeed Insights + Rich Results Test on a sample of routes once deployed, since the production server we ran here is the closest possible proxy.
 
 ## Permanent Rules Honoured
 - Phone `+60 11-1662 7349` — never changed, never masked in public copy.
 - No SSM / NRIC / personal identification displayed publicly.
-- Zero RM pricing figures altered; only descriptive wording updated.
+- Zero RM pricing figures altered; only descriptive wording changed.
 - No invented reviews, no fake claims, no new route slugs.
+- No `localStorage` / hydration-mismatch risks introduced (the new component is a pure anchor tag with a stable `href`).
+
+## Round 46 Recommendations (External / Deployment)
+- ⏳ **GSC + PageSpeed Insights** — once deployed, run PageSpeed Insights on 5–10 routes (homepage, a service page, a blog post, an area page, a tool page, a problem page). The build is green and the local production server is fast, so we expect Core Web Vitals to be in the green band, but a real-network run is the only way to confirm.
+- ⏳ **IndexNow ping after deploy** so Bing/Yandex re-crawl the 4,187 pages and pick up the round-44 / round-45 changes.
+- ⏳ **Live browser visual QA** — confirm the green WhatsApp button now opens WhatsApp in one tap (no second-click dropdown step), on both desktop and mobile.
+- ⏳ Real project photography + verified Google reviews when assets are supplied; GBP optimization.

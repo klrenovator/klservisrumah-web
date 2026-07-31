@@ -116,32 +116,45 @@ export function FAQAccordion() {
         <div className="flex flex-col gap-4">
           {faqs.map((faq, idx) => {
             const isOpen = openIndex === idx;
+            const panelId = `faq-panel-${idx}`;
             return (
               <div
                 key={faq.q}
                 className="bg-white rounded-2xl border border-slate-100/80 shadow-[0_2px_15px_rgba(2,31,68,0.01)] overflow-hidden transition-all duration-300"
               >
                 {/* Trigger bar */}
-                <button
-                  onClick={() => toggle(idx)}
-                  className="w-full text-left p-5 sm:p-6 flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-[#075985] hover:text-[#0EA5E9] transition-colors focus:outline-none"
-                >
-                  <div className="flex items-center gap-3.5">
-                    <HelpCircle className="w-5 h-5 text-[#0EA5E9] shrink-0" />
-                    <span>{faq.q}</span>
-                  </div>
-                  <ChevronDown
-                    className={`w-5 h-5 text-[#475569] shrink-0 transition-transform duration-300 ${
-                      isOpen ? "rotate-180 text-[#0EA5E9]" : ""
-                    }`}
-                  />
-                </button>
+                <h3 className="m-0">
+                  <button
+                    type="button"
+                    onClick={() => toggle(idx)}
+                    aria-expanded={isOpen}
+                    aria-controls={panelId}
+                    id={`faq-trigger-${idx}`}
+                    className="w-full text-left p-5 sm:p-6 flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-[#075985] hover:text-[#0EA5E9] transition-colors focus:outline-none"
+                  >
+                    <div className="flex items-center gap-3.5">
+                      <HelpCircle className="w-5 h-5 text-[#0EA5E9] shrink-0" aria-hidden="true" />
+                      <span>{faq.q}</span>
+                    </div>
+                    <ChevronDown
+                      className={`w-5 h-5 text-[#475569] shrink-0 transition-transform duration-300 ${
+                        isOpen ? "rotate-180 text-[#0EA5E9]" : ""
+                      }`}
+                      aria-hidden="true"
+                    />
+                  </button>
+                </h3>
 
                 {/* Content body */}
                 {isOpen && (
-                  <div className="px-5 sm:px-6 pb-6 pt-1 text-xs sm:text-sm text-[#475569] leading-relaxed border-t border-slate-50 animate-in fade-in slide-in-from-top-4 duration-200">
+                  <div
+                    id={panelId}
+                    role="region"
+                    aria-labelledby={`faq-trigger-${idx}`}
+                    className="px-5 sm:px-6 pb-6 pt-1 text-xs sm:text-sm text-[#475569] leading-relaxed border-t border-slate-50 animate-in fade-in slide-in-from-top-4 duration-200"
+                  >
                     <div className="bg-slate-50/50 p-4 rounded-xl border border-slate-100 flex gap-3">
-                      <CheckCircle className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
+                      <CheckCircle className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" aria-hidden="true" />
                       <p className="font-semibold text-[#475569]">{faq.a}</p>
                     </div>
                   </div>

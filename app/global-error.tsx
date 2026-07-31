@@ -1,5 +1,13 @@
 "use client";
 
+/**
+ * Last-resort error boundary — rendered when the root layout itself fails
+ * (no providers, no language context, no translations yet available).
+ *
+ * The visible copy is therefore kept in plain English so it remains
+ * serviceable in that edge case. Browser locale is respected via the
+ * `lang` attribute on <html>.
+ */
 export default function GlobalError({ reset }: { error: Error & { digest?: string }; reset: () => void }) {
   return (
     <html lang="en-MY">
