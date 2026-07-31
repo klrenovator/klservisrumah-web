@@ -154,27 +154,32 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
         <div className="container-default">
           <DecisionTree
             title={t("serviceContent.decisionHeading", { name: service.title })}
+            tagLabels={{
+              recommended: t("decisionTree.tags.recommended"),
+              lighter: t("decisionTree.tags.lighter"),
+              urgent: t("decisionTree.tags.urgent")
+            }}
             options={[
               {
                 level: "recommended",
-                title: `Book ${service.title}`,
-                description: `Your situation matches the primary symptoms, scope, and pricing band for ${service.title.toLowerCase()}. This is the right service for most customers.`,
-                compareService: "View pricing above",
-                compareAction: "See"
+                title: t("serviceContent.decisionTreeBookTitle", { name: service.title }),
+                description: t("serviceContent.decisionTreeBookDesc", { nameLower: service.title.toLowerCase() }),
+                compareService: t("serviceContent.decisionTreePricingAbove"),
+                compareAction: t("serviceContent.decisionTreeSee")
               },
               {
                 level: "lighter",
-                title: "Consider a lighter option",
-                description: "If your problem is smaller in scope, you may only need a single sub-service (e.g. one repair or one point) rather than the full package. We'll happily quote the smaller scope.",
-                compareService: "Sub-services list",
-                compareAction: "Browse"
+                title: t("serviceContent.decisionTreeLighterTitle"),
+                description: t("serviceContent.decisionTreeLighterDesc"),
+                compareService: t("serviceContent.decisionTreeSubServices"),
+                compareAction: t("serviceContent.decisionTreeBrowse")
               },
               {
                 level: "urgent",
-                title: "Escalate first",
-                description: "If the work involves permits, building works, structural changes, or hidden issues that need assessment, we may need to inspect first or coordinate with other trades before booking.",
-                compareService: "Site inspection",
-                compareAction: "Book"
+                title: t("serviceContent.decisionTreeEscalateTitle"),
+                description: t("serviceContent.decisionTreeEscalateDesc"),
+                compareService: t("serviceContent.decisionTreeSiteInspection"),
+                compareAction: t("serviceContent.decisionTreeBookAction")
               }
             ]}
           />
@@ -187,36 +192,38 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
           <ComparisonTable
             title={t("serviceContent.comparisonHeading", { name: service.title })}
             subtitle={t("serviceContent.comparisonSub")}
+            ourLabel={t("comparison.ourLabel")}
+            theirLabel={t("comparison.theirLabel")}
             rows={[
               {
-                criteria: "Price display",
-                ours: `Full pricing published online — you see ${service.startPrice} before you even call.`,
-                theirs: "No prices online. \"Call for quote\" — price depends on who answers the phone."
+                criteria: t("serviceContent.compPriceDisplay"),
+                ours: t("serviceContent.compPriceOurs", { startPrice: service.startPrice }),
+                theirs: t("serviceContent.compPriceTheirs")
               },
               {
-                criteria: "Quote before work",
-                ours: "Price confirmed in writing before any work begins. No surprise variation orders.",
-                theirs: "Quote given verbally, often changes after \"inspection\" with add-on charges."
+                criteria: t("serviceContent.compQuote"),
+                ours: t("serviceContent.compQuoteOurs"),
+                theirs: t("serviceContent.compQuoteTheirs")
               },
               {
-                criteria: "Hidden fees",
-                ours: "Zero hidden fees. Materials, transport, and labour are all included in the starting price.",
-                theirs: "Transport fee, service charge, weekend surcharge — all added after arrival."
+                criteria: t("serviceContent.compHiddenFees"),
+                ours: t("serviceContent.compHiddenOurs"),
+                theirs: t("serviceContent.compHiddenTheirs")
               },
               {
-                criteria: "Workmanship warranty",
-                ours: `${service.warranty}. If it fails within the warranty period, we return free.`,
-                theirs: "Most offer no warranty. If they do, it's verbal only — no written guarantee."
+                criteria: t("serviceContent.compWarranty"),
+                ours: t("serviceContent.compWarrantyOurs", { warranty: service.warranty }),
+                theirs: t("serviceContent.compWarrantyTheirs")
               },
               {
-                criteria: "Business registration",
-                ours: "Registered Malaysian business. Legitimate operation with a public track record.",
-                theirs: "Many are unregistered freelancers operating from a personal phone number."
+                criteria: t("serviceContent.compRegistration"),
+                ours: t("serviceContent.compRegistrationOurs"),
+                theirs: t("serviceContent.compRegistrationTheirs")
               },
               {
-                criteria: "Materials & parts",
-                ours: "Genuine or OEM-equivalent parts from trusted Malaysian suppliers. Quoted before replacement.",
-                theirs: "Unknown part sources. Some use recycled or counterfeit components."
+                criteria: t("serviceContent.compMaterials"),
+                ours: t("serviceContent.compMaterialsOurs"),
+                theirs: t("serviceContent.compMaterialsTheirs")
               }
             ]}
           />

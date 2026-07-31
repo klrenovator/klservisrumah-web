@@ -47,6 +47,7 @@ type QuoteBoxProps = {
   onAreaChange: (value: string) => void;
   onSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
   variant: "desktop" | "mobile";
+  t: (key: string, vars?: Record<string, string>) => string;
 };
 
 function QuoteBox({
@@ -55,7 +56,8 @@ function QuoteBox({
   onServiceChange,
   onAreaChange,
   onSubmit,
-  variant
+  variant,
+  t
 }: QuoteBoxProps) {
   return (
     <div
@@ -66,19 +68,16 @@ function QuoteBox({
       }
     >
       <div className="flex flex-col gap-1.5 border-b border-slate-100 pb-5">
-        <span className="eyebrow">Instant dispatch · Segera · 即时</span>
+        <span className="eyebrow">{t("hero.eyebrow")}</span>
         <h2 className="text-xl sm:text-2xl font-extrabold text-[#075985] tracking-tight">
-          Get Your Quote in 60 Seconds
+          {t("hero.quoteTitle")}
         </h2>
-        <p className="text-xs sm:text-sm text-[#475569] font-medium">
-          Dapatkan sebut harga dalam 60 saat · 60秒内获得报价
-        </p>
       </div>
 
       <form onSubmit={onSubmit} className="flex flex-col gap-5">
         <div className="flex flex-col gap-2">
           <label className="text-xs font-extrabold text-[#075985] uppercase tracking-wider">
-            What service do you need? · Perkhidmatan · 服务
+            {t("hero.serviceLabel")}
           </label>
           <select
             value={selectedService}
@@ -87,7 +86,7 @@ function QuoteBox({
             className="w-full bg-slate-50 hover:bg-slate-100/50 text-[#075985] font-semibold text-sm py-3.5 px-4 rounded-xl border border-slate-100 outline-none focus:border-[#0EA5E9] focus:bg-white transition-all cursor-pointer"
           >
             <option value="" disabled className="text-[#475569]">
-              Select a service...
+              {t("hero.selectService")}
             </option>
             {Object.values(servicesData).map((service) => (
               <option key={service.slug} value={service.slug}>
@@ -99,7 +98,7 @@ function QuoteBox({
 
         <div className="flex flex-col gap-2">
           <label className="text-xs font-extrabold text-[#075985] uppercase tracking-wider">
-            Your Location · Lokasi · 位置 (KL &amp; Selangor)
+            {t("hero.locationLabel")}
           </label>
           <select
             value={selectedArea}
@@ -108,7 +107,7 @@ function QuoteBox({
             className="w-full bg-slate-50 hover:bg-slate-100/50 text-[#075985] font-semibold text-sm py-3.5 px-4 rounded-xl border border-slate-100 outline-none focus:border-[#0EA5E9] focus:bg-white transition-all cursor-pointer"
           >
             <option value="" disabled className="text-[#475569]">
-              Select your area...
+              {t("hero.selectArea")}
             </option>
             {siteConfig.areas.map((area) => (
               <option key={area} value={area}>
@@ -119,14 +118,14 @@ function QuoteBox({
         </div>
 
         <button type="submit" className="btn-primary w-full text-base mt-2">
-          <span>Get My Instant Quote</span>
+          <span>{t("hero.getQuote")}</span>
           <ArrowRight className="w-5 h-5" />
         </button>
       </form>
 
       <div className="flex items-center justify-center gap-2 border-t border-slate-100 pt-5 text-xs text-[#475569] font-semibold">
         <ShieldCheck className="w-4 h-4 text-emerald-500" />
-        <span>No upfront deposits · Bayar selepas siap · 完工后付款</span>
+        <span>{t("hero.noDeposit")}</span>
       </div>
     </div>
   );
@@ -175,7 +174,8 @@ export function Hero() {
     selectedArea,
     onServiceChange: setSelectedService,
     onAreaChange: setSelectedArea,
-    onSubmit: handleBook
+    onSubmit: handleBook,
+    t
   };
 
   return (
@@ -252,7 +252,7 @@ export function Hero() {
                   ))}
                 </div>
                 <span className="text-[11px] font-black uppercase tracking-widest text-white/90">
-                  4.9 / 5 · {siteConfig.reviewCount}+ Google reviews
+                  4.9 / 5 · {t("hero.googleReviews", { count: String(siteConfig.reviewCount) })}
                 </span>
               </div>
 
@@ -277,10 +277,10 @@ export function Hero() {
               {/* Trust chips */}
               <div className="flex flex-wrap gap-2 text-xs">
                 {[
-                  "Insured & verified",
-                  "Price confirmed first",
-                  "Same-day available",
-                  "30-day to 10-year warranty"
+                  t("hero.chipInsured"),
+                  t("hero.chipPrice"),
+                  t("hero.chipSameDay"),
+                  t("hero.chipWarranty")
                 ].map((chip) => (
                   <span
                     key={chip}

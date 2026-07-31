@@ -5,80 +5,80 @@ import { Check, X, BadgeCheck } from "lucide-react";
 import { useTranslations } from "@/hooks/use-translations";
 import { siteConfig } from "@/config/site";
 
-const comparisonRows = [
-  {
-    feature: "Price Display",
-    klServis: "Full price list published online — you see starting prices before you even call.",
-    competitor: "No prices online. \"Call for quote\" — price depends on who answers the phone.",
-    klServisIcon: <Check className="w-5 h-5 text-emerald-500" />,
-    competitorIcon: <X className="w-5 h-5 text-rose-500" />
-  },
-  {
-    feature: "Quote Before Work",
-    klServis: "Price confirmed in writing before any work begins. No surprises.",
-    competitor: "Quote given verbally, often changes after \"inspection\" with add-on charges.",
-    klServisIcon: <Check className="w-5 h-5 text-emerald-500" />,
-    competitorIcon: <X className="w-5 h-5 text-rose-500" />
-  },
-  {
-    feature: "Hidden Fees",
-    klServis: "Zero hidden fees. Materials, transport & labour included in the starting price.",
-    competitor: "Transport fee, service charge, weekend surcharge — all added after arrival.",
-    klServisIcon: <Check className="w-5 h-5 text-emerald-500" />,
-    competitorIcon: <X className="w-5 h-5 text-rose-500" />
-  },
-  {
-    feature: "Workmanship Warranty",
-    klServis: "Up to 90 days written warranty on handyman work, longer on painting & waterproofing.",
-    competitor: "Most offer no warranty. If they do, it's verbal only — no written guarantee.",
-    klServisIcon: <Check className="w-5 h-5 text-emerald-500" />,
-    competitorIcon: <X className="w-5 h-5 text-rose-500" />
-  },
-  {
-    feature: "Business Registration",
-    klServis: "SSM registered. Legitimate Malaysian business with a track record.",
-    competitor: "Many are unregistered freelancers operating from a personal phone number.",
-    klServisIcon: <Check className="w-5 h-5 text-emerald-500" />,
-    competitorIcon: <X className="w-5 h-5 text-rose-500" />
-  },
-  {
-    feature: "Parts & Materials",
-    klServis: "Genuine SIRIM-certified parts and premium materials. Quote before replacement.",
-    competitor: "Unknown part sources. Some use recycled or counterfeit components.",
-    klServisIcon: <Check className="w-5 h-5 text-emerald-500" />,
-    competitorIcon: <X className="w-5 h-5 text-rose-500" />
-  },
-  {
-    feature: "Verified Reviews",
-    klServis: `${siteConfig.reviewCount}+ Google Reviews with real job photos. Read what actual customers say.`,
-    competitor: "Few or no reviews — or fake reviews from inactive accounts.",
-    klServisIcon: <Check className="w-5 h-5 text-emerald-500" />,
-    competitorIcon: <X className="w-5 h-5 text-rose-500" />
-  }
-];
-
 export function PricingComparison() {
   const t = useTranslations();
+
+  const comparisonRows = [
+    {
+      feature: t("pricingComparison.priceDisplay"),
+      klServis: t("pricingComparison.priceDisplayOurs"),
+      competitor: t("pricingComparison.priceDisplayTheirs"),
+      klServisIcon: <Check className="w-5 h-5 text-emerald-500" />,
+      competitorIcon: <X className="w-5 h-5 text-rose-500" />
+    },
+    {
+      feature: t("pricingComparison.quoteBefore"),
+      klServis: t("pricingComparison.quoteBeforeOurs"),
+      competitor: t("pricingComparison.quoteBeforeTheirs"),
+      klServisIcon: <Check className="w-5 h-5 text-emerald-500" />,
+      competitorIcon: <X className="w-5 h-5 text-rose-500" />
+    },
+    {
+      feature: t("pricingComparison.hiddenFees"),
+      klServis: t("pricingComparison.hiddenFeesOurs"),
+      competitor: t("pricingComparison.hiddenFeesTheirs"),
+      klServisIcon: <Check className="w-5 h-5 text-emerald-500" />,
+      competitorIcon: <X className="w-5 h-5 text-rose-500" />
+    },
+    {
+      feature: t("pricingComparison.warranty"),
+      klServis: t("pricingComparison.warrantyOurs"),
+      competitor: t("pricingComparison.warrantyTheirs"),
+      klServisIcon: <Check className="w-5 h-5 text-emerald-500" />,
+      competitorIcon: <X className="w-5 h-5 text-rose-500" />
+    },
+    {
+      feature: t("pricingComparison.registration"),
+      klServis: t("pricingComparison.registrationOurs"),
+      competitor: t("pricingComparison.registrationTheirs"),
+      klServisIcon: <Check className="w-5 h-5 text-emerald-500" />,
+      competitorIcon: <X className="w-5 h-5 text-rose-500" />
+    },
+    {
+      feature: t("pricingComparison.materials"),
+      klServis: t("pricingComparison.materialsOurs"),
+      competitor: t("pricingComparison.materialsTheirs"),
+      klServisIcon: <Check className="w-5 h-5 text-emerald-500" />,
+      competitorIcon: <X className="w-5 h-5 text-rose-500" />
+    },
+    {
+      feature: t("pricingComparison.reviews"),
+      klServis: t("pricingComparison.reviewsOurs", { reviewCount: String(siteConfig.reviewCount) }),
+      competitor: t("pricingComparison.reviewsTheirs"),
+      klServisIcon: <Check className="w-5 h-5 text-emerald-500" />,
+      competitorIcon: <X className="w-5 h-5 text-rose-500" />
+    }
+  ];
 
   return (
     <section className="bg-slate-50 border-y border-slate-100 py-20 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-16">
           <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
-            Transparent Pricing
+            {t("pricingComparison.eyebrow")}
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
-            KL Servis Rumah vs Typical Competitors
+            {t("pricingComparison.title")}
           </h2>
           <p className="text-base text-[#475569] leading-relaxed">
-            We publish real prices. Others make you call first. Here&apos;s what that means for your wallet.
+            {t("pricingComparison.subtitle")}
           </p>
           <div className="flex items-center gap-3 mt-2">
             <span className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-600 bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-100">
-              <BadgeCheck className="w-3.5 h-3.5" /> KL Servis Rumah
+              <BadgeCheck className="w-3.5 h-3.5" /> {t("comparison.ourLabel")}
             </span>
             <span className="inline-flex items-center gap-1.5 text-xs font-bold text-rose-600 bg-rose-50 px-3 py-1.5 rounded-full border border-rose-100">
-              <X className="w-3.5 h-3.5" /> Typical Competitors
+              <X className="w-3.5 h-3.5" /> {t("comparison.theirLabel")}
             </span>
           </div>
         </div>
@@ -86,12 +86,12 @@ export function PricingComparison() {
         <div className="bg-white rounded-3xl border border-slate-100 shadow-[0_8px_30px_rgba(2,31,68,0.02)] overflow-hidden">
           {/* Header Row */}
           <div className="grid grid-cols-3 gap-4 bg-slate-50 px-6 py-4 border-b border-slate-100">
-            <div className="text-xs font-bold text-[#475569] uppercase tracking-wider">Feature</div>
+            <div className="text-xs font-bold text-[#475569] uppercase tracking-wider">{t("pricingComparison.featureHeader")}</div>
             <div className="text-xs font-bold text-emerald-600 uppercase tracking-wider flex items-center gap-1.5">
-              <BadgeCheck className="w-3.5 h-3.5" /> KL Servis Rumah
+              <BadgeCheck className="w-3.5 h-3.5" /> {t("comparison.ourLabel")}
             </div>
             <div className="text-xs font-bold text-rose-500 uppercase tracking-wider flex items-center gap-1.5">
-              <X className="w-3.5 h-3.5" /> Typical Competitors
+              <X className="w-3.5 h-3.5" /> {t("comparison.theirLabel")}
             </div>
           </div>
 
@@ -116,7 +116,7 @@ export function PricingComparison() {
 
         <div className="mt-10 text-center">
           <p className="text-sm text-[#475569] font-medium">
-            SSM Registered · Fully Insured · {t("home.trustBadges.items.warranty")}
+            {t("pricingComparison.trustNote")}
           </p>
         </div>
       </div>

@@ -391,7 +391,13 @@
     },
     "heroEyebrow": "关于 KL Servis Rumah",
     "heroTitle": "以工艺为本，以信任为先。",
-    "heroLead": "多年来，当吉隆坡与雪兰莪的屋主重视施工品质时，都会选择我们。从油漆、水管到防水与维修师傅服务，我们每一次都交付干净、细致的成果。"
+    "heroLead": "多年来，当吉隆坡与雪兰莪的屋主重视施工品质时，都会选择我们。从油漆、水管到防水与维修师傅服务，我们每一次都交付干净、细致的成果。",
+    "whatsappUs": "WhatsApp 联系我们",
+    "callLabel": "致电 {phone}",
+    "projectsCompleted": "已完成项目",
+    "googleRating": "Google评分",
+    "avgResponse": "平均响应",
+    "servicePillars": "服务支柱"
   },
   "comparison": {
     "heading": "比较服务",
@@ -436,7 +442,13 @@
       "aircond": "预约服务",
       "smart-home": "咨询 + 预约",
       "pest-control": "预约处理"
-    }
+    },
+    "eyebrow": "对比分析",
+    "criteriaHeader": "评估项",
+    "ourLabel": "KL Servis Rumah",
+    "theirLabel": "典型竞争对手",
+    "usShort": "我们",
+    "othersShort": "其他"
   },
   "decisionTree": {
     "defaultTitle": "您应该预订这项服务吗？",
@@ -551,7 +563,8 @@
     "closeAria": "关闭弹窗"
   },
   "breadcrumbs": {
-    "home": "首页"
+    "home": "首页",
+    "about": "关于我们"
   },
   "internalLinks": {
     "eyebrow": "更多来自此类别",
@@ -567,7 +580,20 @@
     "nearMeDesc": "选择您的位置以查看当地价格、服务时段与联系方式。"
   },
   "hero": {
-    "subline": "吉隆坡与雪兰莪的优质家居服务，价格公道透明"
+    "subline": "吉隆坡与雪兰莪的优质家居服务，价格公道透明",
+    "eyebrow": "即时派单",
+    "chipInsured": "已投保并认证",
+    "chipPrice": "价格先确认",
+    "chipSameDay": "当天可用",
+    "chipWarranty": "30天至10年保修",
+    "quoteTitle": "60秒内获得报价",
+    "serviceLabel": "您需要什么服务？",
+    "locationLabel": "您的位置（吉隆坡 & 雪兰莪）",
+    "selectService": "选择服务...",
+    "selectArea": "选择您的区域...",
+    "getQuote": "获取即时报价",
+    "noDeposit": "无需预付定金",
+    "googleReviews": "{count}+ Google评价"
   },
   "trustBadgesRow": {
     "insured": "已投保与查证",
@@ -604,7 +630,37 @@
     "comparisonSub": "我们公开真实价格与真实流程。多数承包商要您先打电话。以下是这个差别对您家的意义。",
     "trustHeading": "值得信赖的吉隆坡与雪兰莪{name}",
     "trustSub": "每一次{nameLower}预约都包含这些保障。没有例外，没有小字条款。",
-    "faqHeading": "{name}常见问题 — 价格、保修与时间"
+    "faqHeading": "{name}常见问题 — 价格、保修与时间",
+    "decisionTreeBookTitle": "预订 {name}",
+    "decisionTreeBookDesc": "您的情况符合 {nameLower}的主要症状、范围和价格区间。这是大多数客户的正确选择。",
+    "decisionTreeLighterTitle": "考虑更轻量的方案",
+    "decisionTreeLighterDesc": "如果您的问题范围较小，您可能只需要单项子服务（如一次维修或一个点位），而不是完整套餐。我们很乐意为您报价较小范围的服务。",
+    "decisionTreeEscalateTitle": "优先处理",
+    "decisionTreeEscalateDesc": "如果工程涉及许可证、建筑施工、结构变更或需要评估的隐蔽问题，我们可能需要先检查或在预订前与其他工种协调。",
+    "decisionTreePricingAbove": "查看上方价格",
+    "decisionTreeSee": "查看",
+    "decisionTreeSubServices": "子服务列表",
+    "decisionTreeBrowse": "浏览",
+    "decisionTreeSiteInspection": "现场检查",
+    "decisionTreeBookAction": "预订",
+    "compPriceDisplay": "价格展示",
+    "compPriceOurs": "完整价格在线发布 — 您在拨打电话前就能看到 {startPrice}。",
+    "compPriceTheirs": "网上无价格。\"致电咨询\" — 价格取决于接听电话的人。",
+    "compQuote": "施工前报价",
+    "compQuoteOurs": "任何工程开始前书面确认价格。没有意外变更单。",
+    "compQuoteTheirs": "口头报价，通常在\"检查\"后加收附加费用后变动。",
+    "compHiddenFees": "隐藏费用",
+    "compHiddenOurs": "零隐藏费用。材料、运输和人工全部包含在起始价格中。",
+    "compHiddenTheirs": "运输费、服务费、周末附加费 — 全部到场后才加上。",
+    "compWarranty": "工艺保修",
+    "compWarrantyOurs": "{warranty}。如果在保修期内出现问题，我们免费上门维修。",
+    "compWarrantyTheirs": "大多数不提供保修。即使有，也只是口头承诺 — 没有书面保证。",
+    "compRegistration": "工商注册",
+    "compRegistrationOurs": "注册马来西亚企业。正规经营，有公开的业绩记录。",
+    "compRegistrationTheirs": "许多是未注册的自由职业者，使用个人手机号码经营。",
+    "compMaterials": "材料与配件",
+    "compMaterialsOurs": "来自马来西亚可靠供应商的正品或OEM等效配件。更换前先报价。",
+    "compMaterialsTheirs": "零件来源不明。部分使用回收或假冒组件。"
   },
   "subserviceContent": {
     "whatsIncluded": "包括",
@@ -741,7 +797,10 @@
     "whatsappDispatch": "WhatsApp 调度",
     "bookingForm": "预订表格",
     "guidanceIntro": "马来西亚住宅面临热带湿度、快速的雨季、共管公寓管理规则以及混合建筑材料。因此，正确的方法取决于表面状况、通道、安规以及是否涉及水或结构移动。",
-    "guidanceSafeApproach": "最安全的方法是列出可能原因的简短清单，收集清晰照片，确认房产类型，并索取一份公道的逐项报价。KL Servis Rumah 在开始工作前确认范围，避免随意定价。"
+    "guidanceSafeApproach": "最安全的方法是列出可能原因的简短清单，收集清晰照片，确认房产类型，并索取一份公道的逐项报价。KL Servis Rumah 在开始工作前确认范围，避免随意定价。",
+    "featuredPathways": "精选路径",
+    "completeIndex": "完整索引",
+    "selectedScopes": "精选范围"
   },
   "faq": {
     "heroEyebrow": "知识库",
@@ -1275,5 +1334,33 @@
     "ctaHeading": "WhatsApp 紧急派工",
     "ctaBody": "请使用下方按钮，并在消息中写上 URGENT。",
     "ctaButton": "WhatsApp 紧急请求"
+  },
+  "pricingComparison": {
+    "eyebrow": "透明定价",
+    "title": "KL Servis Rumah vs 典型竞争对手",
+    "subtitle": "我们公布真实价格。别人让您先打电话咨询。这对您的钱包意味着什么。",
+    "featureHeader": "特点",
+    "priceDisplay": "价格展示",
+    "priceDisplayOurs": "完整价目表在线发布 — 您在拨打电话前就能看到起始价格。",
+    "priceDisplayTheirs": "网上无价格。\"致电咨询\" — 价格取决于接听电话的人。",
+    "quoteBefore": "施工前报价",
+    "quoteBeforeOurs": "工程开始前书面确认价格。没有意外。",
+    "quoteBeforeTheirs": "口头报价，通常在\"检查\"后加收附加费用后变动。",
+    "hiddenFees": "隐藏费用",
+    "hiddenFeesOurs": "零隐藏费用。材料、运输和人工全部包含在起始价格中。",
+    "hiddenFeesTheirs": "运输费、服务费、周末附加费 — 全部到场后才加上。",
+    "warranty": "工艺保修",
+    "warrantyOurs": "杂工工程最长90天书面保修，油漆和防水工程保修更长。",
+    "warrantyTheirs": "大多数不提供保修。即使有，也只是口头承诺 — 没有书面保证。",
+    "registration": "工商注册",
+    "registrationOurs": "SSM注册企业。正规马来西亚企业，有业绩记录。",
+    "registrationTheirs": "许多是未注册的自由职业者，使用个人手机号码经营。",
+    "materials": "零件与材料",
+    "materialsOurs": "经SIRIM认证的正品零件和优质材料。更换前先报价。",
+    "materialsTheirs": "零件来源不明。部分使用回收或假冒组件。",
+    "reviews": "已验证评价",
+    "reviewsOurs": "{reviewCount}+ 条Google评价，附真实工程照片。看看真实客户怎么说。",
+    "reviewsTheirs": "几乎没有评价 — 或者来自不活跃账户的虚假评价。",
+    "trustNote": "SSM注册 · 全额保险 · 保修"
   }
 }
