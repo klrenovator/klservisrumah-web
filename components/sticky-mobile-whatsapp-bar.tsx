@@ -16,6 +16,7 @@ export function StickyMobileWhatsAppBar() {
           href={getWhatsAppLink()}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label={`${t("common.bookWhatsApp")} — open WhatsApp chat with KL Servis Rumah`}
           onClick={() => trackWhatsAppClick({ page: "sticky_mobile_bar" })}
           className="flex items-center justify-center gap-2 min-[430px]:gap-2.5 rounded-xl bg-[#22C55E] px-3 min-[430px]:px-4 py-4 text-sm min-[430px]:text-base font-extrabold text-white shadow-[0_8px_20px_rgba(34,197,94,0.28)]"
         >
@@ -23,6 +24,7 @@ export function StickyMobileWhatsAppBar() {
         </a>
         <a
           href={`tel:${siteConfig.phone}`}
+          aria-label={`${t("common.callUs")} — call KL Servis Rumah at ${siteConfig.phoneDisplay}`}
           onClick={() => trackPhoneCall({ page: "sticky_mobile_bar" })}
           className="flex items-center justify-center gap-2 min-[430px]:gap-2.5 rounded-xl bg-[#0284C7] px-3 min-[430px]:px-4 py-4 text-sm min-[430px]:text-base font-extrabold text-white shadow-[0_8px_20px_rgba(2,132,199,0.28)]"
         >
