@@ -22,8 +22,8 @@ export async function generateMetadata(props: { params: Promise<{ slug: string; 
   const service = servicesData[serviceSlug];
   if (!area || !service) return {};
   return buildMetadata({
-    title: `${service.title} in ${area.name} — From ${service.startPrice}`,
-    description: `${service.title} in ${area.name}. Local team, upfront pricing, landmarks covered, warranty and WhatsApp booking for ${area.shortName}.`,
+    title: `Best ${service.title} in ${area.name} — Trusted Local Service`,
+    description: `Professional and trusted ${service.title} in ${area.name}. Local team, upfront fixed pricing, landmarks covered, warranty and WhatsApp booking for ${area.shortName}.`,
     path: `/areas/${area.slug}/${service.slug}`
   });
 }

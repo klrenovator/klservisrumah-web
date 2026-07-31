@@ -68,6 +68,9 @@ const rawSuburbs = [
   ["Selangor", "shah-alam", "Selangor", 3.0738, 101.5183, ["Shah Alam", "Petaling Jaya", "Subang Jaya", "Klang"], "State-wide service coverage across mature towns, new townships, commercial units, and landed homes."],
   ["Sentul", "kuala-lumpur", "Kuala Lumpur", 3.1801, 101.6956, ["Sentul Depot", "Sentul West", "KLPAC", "Sentul Timur"], "Older apartments, terraces, and new condos with frequent plumbing, painting, and handyman jobs."],
   ["Bandar Botanic", "klang", "Selangor", 2.9997, 101.4469, ["Bandar Botanic Klang", "AEON Bukit Tinggi", "KESAS", "Bukit Tinggi border"], "Modern landed homes and commercial units needing clean interior painting, door locks, and plumbing repairs."],
+  ["Kampung Baru", "kuala-lumpur", "Kuala Lumpur", 3.1611, 101.7078, ["Saloma Bridge", "Kampung Baru MRT", "Masjid Jamek Kampung Baru", "Traditional wooden houses"], "Historic enclave with mix of traditional wooden houses and modern high-rise apartments needing specialized maintenance."],
+  ["Kampung Pandan", "kuala-lumpur", "Kuala Lumpur", 3.1416, 101.7377, ["Taman Maluri", "Royal Selangor Golf Club", "Kampung Pandan Sports Complex"], "Established residential area with terrace houses and flats requiring regular plumbing and repainting."],
+  ["Kampung Datuk Keramat", "kuala-lumpur", "Kuala Lumpur", 3.1654, 101.7275, ["Jelatek LRT", "Dato' Keramat LRT", "Keramat Mall"], "Mature neighborhood with landed properties and government quarters needing handyman and ceiling repair services."],
 ] as const;
 
 const serviceIssues = ["water seepage after heavy rain", "paint peeling caused by humidity", "aging bathroom fittings", "ceiling stains from leaks"];
@@ -92,8 +95,8 @@ export const suburbPages: SuburbDetail[] = rawSuburbs.map((item) => {
     landmarks: [...landmarks],
     commonIssues: serviceIssues,
     nearbySuburbs,
-    metaTitle: `${name} Home Services — Painter, Plumber, Ceiling & Handyman`,
-    metaDesc: `Fixed-price painting, plumbing, ceiling, waterproofing and handyman services in ${name}. Transparent quotes, insured teams and WhatsApp booking.`,
+    metaTitle: `Best ${name} Home Services Near Me — Trusted Painter & Plumber`,
+    metaDesc: `Trusted and professional painting, plumbing, ceiling, waterproofing and handyman services in ${name}. Transparent fixed quotes, insured teams and WhatsApp booking.`,
     faqs: [
       {
         q: `Do you provide same-day service in ${name}?`,
