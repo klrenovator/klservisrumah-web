@@ -35,7 +35,14 @@
     "company": "Company",
     "support": "Support",
     "copyright": "© {year} KL Servis Rumah. All rights reserved.",
-    "operatingHours": "Mon–Sun · 9:00 AM – 6:00 PM (Everyday Open)"
+    "operatingHours": "Mon–Sun · 9:00 AM – 6:00 PM (Everyday Open)",
+    "trustStrip": {
+      "insured": "Insured & verified crew",
+      "fixedQuote": "Fixed quote before work",
+      "warranty": "30-day to 10-year warranty",
+      "dispatch": "Same-day dispatch KL & Selangor"
+    },
+    "priceGuide": "{service} Price Guide"
   },
   "home": {
     "hero": {
@@ -1362,5 +1369,28 @@
     "reviewsOurs": "{reviewCount}+ Google Reviews with real job photos. Read what actual customers say.",
     "reviewsTheirs": "Few or no reviews — or fake reviews from inactive accounts.",
     "trustNote": "SSM Registered · Fully Insured · Warranty"
+  },
+  "faqSearch": {
+    "placeholder": "Search all FAQs — e.g. warranty, leak, painting price, condo rules...",
+    "ariaLabel": "Search all frequently asked questions",
+    "clearAria": "Clear search",
+    "showingResults": "Showing {count} matching question",
+    "showingResultsPlural": "Showing {count} matching questions",
+    "noResults": "No matching questions — try a different keyword or WhatsApp us directly."
+  },
+  "reviewsCarousel": {
+    "ariaLabel": "Customer reviews",
+    "prev": "Previous review",
+    "next": "Next review",
+    "showReview": "Show review {index}",
+    "stars": "{rating} out of 5 stars"
+  },
+  "ticker": {
+    "hideAria": "Hide recent activity notifications",
+    "liveDemand": "Live local demand — no customer names shown"
+  },
+  "siteSearch": {
+    "placeholder": "Search service...",
+    "ariaLabel": "Search site services"
   }
 }

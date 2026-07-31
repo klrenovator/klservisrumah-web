@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { Search, X } from "lucide-react";
+import { useTranslations } from "@/hooks/use-translations";
 
 /**
  * Client-side search box for the `/faq` mega-page.
@@ -17,6 +18,7 @@ export function FaqSearchFilter() {
   const [query, setQuery] = useState("");
   const [resultCount, setResultCount] = useState<number | null>(null);
   const totalRef = useRef<number>(0);
+  const t = useTranslations();
 
   useEffect(() => {
     const items = Array.from(document.querySelectorAll<HTMLElement>("[data-faq-item]"));
@@ -64,15 +66,15 @@ export function FaqSearchFilter() {
         <input
           value={query}
           onChange={(event) => setQuery(event.target.value)}
-          placeholder="Search all FAQs — e.g. warranty, leak, painting price, condo rules..."
+          placeholder={t("faqSearch.placeholder")}
           className="w-full bg-transparent text-sm font-semibold text-[#075985] outline-none placeholder:text-slate-400"
-          aria-label="Search all frequently asked questions"
+          aria-label={t("faqSearch.ariaLabel")}
         />
         {query && (
           <button
             type="button"
             onClick={() => setQuery("")}
-            aria-label="Clear search"
+            aria-label={t("faqSearch.clearAria")}
             className="shrink-0 rounded-full p-1 text-slate-400 hover:bg-slate-100 hover:text-slate-600"
           >
             <X className="h-4 w-4" />
@@ -82,8 +84,10 @@ export function FaqSearchFilter() {
       {query && (
         <p className="mt-3 text-center text-xs font-bold text-[#475569]">
           {resultCount === 0
-            ? "No matching questions — try a different keyword or WhatsApp us directly."
-            : `Showing ${resultCount} matching question${resultCount === 1 ? "" : "s"}`}
+            ? t("faqSearch.noResults")
+            : resultCount === 1
+              ? t("faqSearch.showingResults", { count: resultCount ?? 0 })
+              : t("faqSearch.showingResultsPlural", { count: resultCount ?? 0 })}
         </p>
       )}
     </div>

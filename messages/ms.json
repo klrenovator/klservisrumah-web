@@ -35,7 +35,14 @@
     "company": "Syarikat",
     "support": "Sokongan",
     "copyright": "© {year} KL Servis Rumah. Hak cipta terpelihara.",
-    "operatingHours": "Isnin–Ahad · 9:00 PG – 6:00 PTG (Setiap Hari Buka)"
+    "operatingHours": "Isnin–Ahad · 9:00 PG – 6:00 PTG (Setiap Hari Buka)",
+    "trustStrip": {
+      "insured": "Kru berinsurans & disahkan",
+      "fixedQuote": "Sebutharga tetap sebelum kerja",
+      "warranty": "Waranti 30 hari hingga 10 tahun",
+      "dispatch": "Penghantaran hari sama KL & Selangor"
+    },
+    "priceGuide": "Panduan Harga {service}"
   },
   "home": {
     "hero": {
@@ -1362,5 +1369,28 @@
     "reviewsOurs": "{reviewCount}+ Ulasan Google dengan foto kerja sebenar. Baca kata pelanggan sebenar.",
     "reviewsTheirs": "Sedikit atau tiada ulasan — atau ulasan palsu dari akaun tidak aktif.",
     "trustNote": "SSM Berdaftar · Sepenuhnya Diinsuranskan · Jaminan"
+  },
+  "faqSearch": {
+    "placeholder": "Cari semua soalan lazim — cth. waranti, bocor, harga cat, peraturan kondo...",
+    "ariaLabel": "Cari semua soalan lazim",
+    "clearAria": "Kosongkan carian",
+    "showingResults": "Menunjukkan {count} soalan sepadan",
+    "showingResultsPlural": "Menunjukkan {count} soalan sepadan",
+    "noResults": "Tiada soalan sepadan — cuba kata kunci lain atau WhatsApp kami terus."
+  },
+  "reviewsCarousel": {
+    "ariaLabel": "Ulasan pelanggan",
+    "prev": "Ulasan sebelumnya",
+    "next": "Ulasan seterusnya",
+    "showReview": "Papar ulasan {index}",
+    "stars": "{rating} daripada 5 bintang"
+  },
+  "ticker": {
+    "hideAria": "Sembunyikan pemberitahuan aktiviti terkini",
+    "liveDemand": "Permintaan tempatan langsung — tiada nama pelanggan dipaparkan"
+  },
+  "siteSearch": {
+    "placeholder": "Cari perkhidmatan...",
+    "ariaLabel": "Cari perkhidmatan laman web"
   }
 }
