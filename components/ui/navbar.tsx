@@ -3,10 +3,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ChevronDown, Phone } from "lucide-react";
+import { ChevronDown, MessageCircle, Phone } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { servicesData } from "@/config/services-data";
 import { getWhatsAppLink } from "@/lib/whatsapp";
+import { trackPhoneCall, trackWhatsAppClick } from "@/lib/analytics";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { AllPagesMenu } from "@/components/ui/all-pages-menu";
 import { Logo } from "@/components/ui/logo";
@@ -35,7 +36,6 @@ function HeaderWhatsAppActions({ compact = false }: { compact?: boolean }) {
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const waLink = getWhatsAppLink();
-  const whatsappCallLink = `whatsapp://call?phone=${siteConfig.whatsapp}`;
 
   useEffect(() => {
     if (!open) return;
@@ -76,19 +76,25 @@ function HeaderWhatsAppActions({ compact = false }: { compact?: boolean }) {
             href={waLink}
             target="_blank"
             rel="nofollow noopener noreferrer"
-            onClick={() => setOpen(false)}
+            onClick={() => {
+              trackWhatsAppClick({ page: "header_whatsapp_menu" });
+              setOpen(false);
+            }}
             className="flex items-center gap-3 rounded-xl px-3 py-3 font-extrabold text-slate-700 transition hover:bg-emerald-50 hover:text-[#128C7E]"
           >
-            <span aria-hidden="true">💬</span>
-            <span>WhatsApp Message</span>
+            <MessageCircle className="h-4 w-4" aria-hidden="true" />
+            <span>Message on WhatsApp</span>
           </a>
           <a
-            href={whatsappCallLink}
-            onClick={() => setOpen(false)}
+            href={`tel:${siteConfig.phone}`}
+            onClick={() => {
+              trackPhoneCall({ page: "header_whatsapp_menu" });
+              setOpen(false);
+            }}
             className="flex items-center gap-3 rounded-xl px-3 py-3 font-extrabold text-slate-700 transition hover:bg-emerald-50 hover:text-[#128C7E]"
           >
-            <span aria-hidden="true">📞</span>
-            <span>WhatsApp Call</span>
+            <Phone className="h-4 w-4" aria-hidden="true" />
+            <span>Call us</span>
           </a>
         </div>
       )}
@@ -134,11 +140,8 @@ export function Navbar() {
         {PRIMARY_LINKS.slice(1).map(item => <NavLink key={item.href} href={item.href} active={pathname === item.href || pathname.startsWith(`${item.href}/`)} label={t(item.key)} />)}
       </div>
       <div className="hidden items-center gap-3 lg:flex"><LanguageSwitcher /><HeaderWhatsAppActions /></div>
-      {/* Mobile actions: the language switcher stays visible at every width.
-          On very narrow phones (<430px) the compact header WhatsApp button is
-          dropped — the sticky bottom WhatsApp/Call bar already covers that
-          surface — so the multilingual pill fits without crowding. */}
-      <div className="flex shrink-0 items-center gap-1.5 min-[430px]:gap-3 lg:hidden"><LanguageSwitcher /><div className="hidden min-[430px]:block"><HeaderWhatsAppActions compact /></div><AllPagesMenu /></div>
+      {/* Keep WhatsApp between the language selector and the all-pages menu on every phone size. */}
+      <div className="flex shrink-0 items-center gap-1.5 min-[430px]:gap-3 lg:hidden"><LanguageSwitcher /><HeaderWhatsAppActions compact /><AllPagesMenu /></div>
     </nav>
   </header>;
 }
