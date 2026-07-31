@@ -8,12 +8,10 @@ type SupportedLang = "en" | "ms" | "zh";
 /**
  * Translated UI chrome for the FAQ directory section.
  *
- * The ~1,000 FAQ entries themselves are sourced from the English service /
- * problem / area pages and stay in English — translating every single entry
- * would require a separate data pipeline. But the section headings, category
- * titles, descriptions and small UI labels are fully translated here so
- * visitors on /ms/soalan-lazim and /zh/chang-jian-wen-ti see a
- * properly-localised page shell.
+ * The directory data is resolved by `getFaqDirectory(locale)` before it reaches
+ * this component. That keeps the complete FAQ set (not just the page chrome)
+ * in the selected language while preserving the same questions, links and
+ * schema coverage in all three hubs.
  */
 const DIRECTORY_COPY: Record<SupportedLang, {
   eyebrow: string;

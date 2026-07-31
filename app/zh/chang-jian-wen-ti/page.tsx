@@ -8,7 +8,7 @@ import { getSpeakableSchema, getFAQSchema } from "@/lib/seo";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
 import { Phone, MessageSquare } from "lucide-react";
-import { faqDirectory, faqDirectoryTotalCount } from "@/lib/faq-directory";
+import { faqDirectoryTotalCount, getFaqDirectory } from "@/lib/faq-directory";
 
 export const metadata = buildMetadata({
   title: "常见问题 — 所有住宅服务问题解答",
@@ -23,6 +23,7 @@ export const metadata = buildMetadata({
 });
 
 export default function ChineseFaqPage() {
+  const faqDirectory = getFaqDirectory("zh");
   return (
     <>
       <section className="bg-gradient-to-b from-[#F8FAFC] via-white to-white border-b border-slate-100 py-12 sm:py-16">
