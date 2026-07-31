@@ -391,7 +391,13 @@
     },
     "heroEyebrow": "Tentang KL Servis Rumah",
     "heroTitle": "Dibina atas kemahiran. Didorong oleh kepercayaan.",
-    "heroLead": "Bertahun-tahun kami menjadi rakan perkhidmatan rumah pilihan warga Kuala Lumpur dan Selangor apabila kualiti menjadi keutamaan. Daripada pengecatan dan kerja paip sehingga kalis air dan kerja tukang — kami menyiapkan kerja yang kemas dan teliti setiap kali."
+    "heroLead": "Bertahun-tahun kami menjadi rakan perkhidmatan rumah pilihan warga Kuala Lumpur dan Selangor apabila kualiti menjadi keutamaan. Daripada pengecatan dan kerja paip sehingga kalis air dan kerja tukang — kami menyiapkan kerja yang kemas dan teliti setiap kali.",
+    "whatsappUs": "WhatsApp Kami",
+    "callLabel": "Hubungi {phone}",
+    "projectsCompleted": "Projek Selesai",
+    "googleRating": "Rating Google",
+    "avgResponse": "Respons Purata",
+    "servicePillars": "Tiang Perkhidmatan"
   },
   "comparison": {
     "heading": "Bandingkan perkhidmatan",
@@ -436,7 +442,13 @@
       "aircond": "Servis dijadualkan",
       "smart-home": "Konsultasi + dijadualkan",
       "pest-control": "Rawatan dijadualkan"
-    }
+    },
+    "eyebrow": "Sisi demi sisi",
+    "criteriaHeader": "Kriteria",
+    "ourLabel": "KL Servis Rumah",
+    "theirLabel": "Pesaing Tipikal",
+    "usShort": "Kami",
+    "othersShort": "Lain"
   },
   "decisionTree": {
     "defaultTitle": "Perlukah anda menempah perkhidmatan ini?",
@@ -551,7 +563,8 @@
     "closeAria": "Tutup popup"
   },
   "breadcrumbs": {
-    "home": "Utama"
+    "home": "Utama",
+    "about": "Tentang Kami"
   },
   "internalLinks": {
     "eyebrow": "Lagi dari kategori ini",
@@ -567,7 +580,20 @@
     "nearMeDesc": "Pilih lokasi anda untuk melihat harga tempatan, ketersediaan dan maklumat perhubungan."
   },
   "hero": {
-    "subline": "Perkhidmatan rumah premium di KL & Selangor dengan harga adil dan telus"
+    "subline": "Perkhidmatan rumah premium di KL & Selangor dengan harga adil dan telus",
+    "eyebrow": "Segera",
+    "chipInsured": "Diinsuranskan & disahkan",
+    "chipPrice": "Harga disahkan dahulu",
+    "chipSameDay": "Tersedia hari yang sama",
+    "chipWarranty": "Jaminan 30 hari hingga 10 tahun",
+    "quoteTitle": "Dapatkan Sebut Harga dalam 60 Saat",
+    "serviceLabel": "Perkhidmatan apa yang anda perlukan?",
+    "locationLabel": "Lokasi Anda (KL & Selangor)",
+    "selectService": "Pilih perkhidmatan...",
+    "selectArea": "Pilih kawasan anda...",
+    "getQuote": "Dapatkan Sebut Harga Segera",
+    "noDeposit": "Tiada deposit awal",
+    "googleReviews": "{count}+ ulasan Google"
   },
   "trustBadgesRow": {
     "insured": "Diinsuranskan & Disahkan",
@@ -604,7 +630,37 @@
     "comparisonSub": "Kami menyiarkan harga sebenar dan proses sebenar. Kebanyakan kontraktor suruh anda telefon dahulu. Inilah maksud perbezaan itu untuk rumah anda.",
     "trustHeading": "{name} di KL & Selangor yang boleh anda percayai",
     "trustSub": "Setiap tempahan {nameLower} disertakan jaminan ini. Tiada pengecualian, tiada cetakan halus.",
-    "faqHeading": "Soalan lazim {name} — harga, jaminan dan masa"
+    "faqHeading": "Soalan lazim {name} — harga, jaminan dan masa",
+    "decisionTreeBookTitle": "Tempah {name}",
+    "decisionTreeBookDesc": "Situasi anda sepadan dengan gejala utama, skop dan julat harga bagi {nameLower}. Ini adalah perkhidmatan yang tepat untuk kebanyakan pelanggan.",
+    "decisionTreeLighterTitle": "Pertimbangkan pilihan lebih ringan",
+    "decisionTreeLighterDesc": "Jika masalah anda lebih kecil skopnya, anda mungkin hanya memerlukan satu sub-perkhidmatan (cth. satu pembaikan atau satu titik) dan bukannya pakej penuh. Kami dengan senang hati akan mengutip skop yang lebih kecil.",
+    "decisionTreeEscalateTitle": "Utamakan dahulu",
+    "decisionTreeEscalateDesc": "Jika kerja melibatkan permit, kerja bangunan, perubahan struktur, atau masalah tersembunyi yang memerlukan penilaian, kami mungkin perlu memeriksa dahulu atau berkoordinasi dengan perdagangan lain sebelum menempah.",
+    "decisionTreePricingAbove": "Lihat harga di atas",
+    "decisionTreeSee": "Lihat",
+    "decisionTreeSubServices": "Senarai sub-perkhidmatan",
+    "decisionTreeBrowse": "Layari",
+    "decisionTreeSiteInspection": "Pemeriksaan tapak",
+    "decisionTreeBookAction": "Tempah",
+    "compPriceDisplay": "Paparan harga",
+    "compPriceOurs": "Senarai harga penuh diterbitkan dalam talian — anda melihat {startPrice} sebelum menelefon.",
+    "compPriceTheirs": "Tiada harga dalam talian. \"Hubungi untuk sebut harga\" — harga bergantung pada siapa yang menjawab telefon.",
+    "compQuote": "Sebut harga sebelum kerja",
+    "compQuoteOurs": "Harga disahkan secara bertulis sebelum sebarang kerja bermula. Tiada pesanan variasi mengejut.",
+    "compQuoteTheirs": "Sebut harga diberikan secara lisan, sering berubah selepas \"pemeriksaan\" dengan caj tambahan.",
+    "compHiddenFees": "Yuran tersembunyi",
+    "compHiddenOurs": "Sifar yuran tersembunyi. Bahan, pengangkutan dan upah semuanya termasuk dalam harga permulaan.",
+    "compHiddenTheirs": "Yuran pengangkutan, caj perkhidmatan, caj hujung minggu — semua ditambah selepas ketibaan.",
+    "compWarranty": "Jaminan kualiti kerja",
+    "compWarrantyOurs": "{warranty}. Jika ia gagal dalam tempoh jaminan, kami kembali secara percuma.",
+    "compWarrantyTheirs": "Kebanyakan tidak menawarkan jaminan. Jika ya, ia hanya secara lisan — tiada jaminan bertulis.",
+    "compRegistration": "Pendaftaran perniagaan",
+    "compRegistrationOurs": "Perniagaan berdaftar Malaysia. Operasi sah dengan rekod prestasi awam.",
+    "compRegistrationTheirs": "Ramai adalah freelancer tidak berdaftar beroperasi dari nombor telefon peribadi.",
+    "compMaterials": "Bahan & alat ganti",
+    "compMaterialsOurs": "Alat ganti tulen atau setara OEM daripada pembekal Malaysia yang dipercayai. Dikutip sebelum penggantian.",
+    "compMaterialsTheirs": "Sumber bahagian tidak diketahui. Sesetengah menggunakan komponen kitar semula atau tiruan."
   },
   "subserviceContent": {
     "whatsIncluded": "Apa yang disertakan",
@@ -741,7 +797,10 @@
     "whatsappDispatch": "Penghantaran WhatsApp",
     "bookingForm": "Borang tempahan",
     "guidanceIntro": "Rumah-rumah Malaysia menghadapi kelembapan tropika, kitaran hujan pantas, peraturan pengurusan kondo, dan bahan binaan campuran. Ini bermakna kaedah yang betul bergantung pada keadaan permukaan, akses, keperluan keselamatan, dan sama ada air atau pergerakan struktur terlibat.",
-    "guidanceSafeApproach": "Pendekatan paling selamat ialah membuat senarai pendek kemungkinan punca, mengumpul foto yang jelas, mengesahkan jenis hartanah, dan meminta sebut harga tetap yang terperinci. KL Servis Rumah mengesahkan skop sebelum kerja bermula dan mengelakkan penetapan harga sewenang-wenangnya."
+    "guidanceSafeApproach": "Pendekatan paling selamat ialah membuat senarai pendek kemungkinan punca, mengumpul foto yang jelas, mengesahkan jenis hartanah, dan meminta sebut harga tetap yang terperinci. KL Servis Rumah mengesahkan skop sebelum kerja bermula dan mengelakkan penetapan harga sewenang-wenangnya.",
+    "featuredPathways": "Laluan terpilih",
+    "completeIndex": "Indeks lengkap",
+    "selectedScopes": "Skop terpilih"
   },
   "faq": {
     "heroEyebrow": "Pusat Pengetahuan",
@@ -1275,5 +1334,33 @@
     "ctaHeading": "Dispatch segera melalui WhatsApp",
     "ctaBody": "Gunakan butang di bawah dan sertakan perkataan URGENT dalam mesej anda.",
     "ctaButton": "WhatsApp Permintaan Segera"
+  },
+  "pricingComparison": {
+    "eyebrow": "Harga Telus",
+    "title": "KL Servis Rumah vs Pesaing Tipikal",
+    "subtitle": "Kami menerbitkan harga sebenar. Orang lain suruh anda hubungi dahulu. Inilah maknanya untuk dompet anda.",
+    "featureHeader": "Ciri",
+    "priceDisplay": "Paparan Harga",
+    "priceDisplayOurs": "Senarai harga penuh diterbitkan dalam talian — anda melihat harga permulaan sebelum menelefon.",
+    "priceDisplayTheirs": "Tiada harga dalam talian. \"Hubungi untuk sebut harga\" — harga bergantung pada siapa yang menjawab telefon.",
+    "quoteBefore": "Sebut Harga Sebelum Kerja",
+    "quoteBeforeOurs": "Harga disahkan secara bertulis sebelum sebarang kerja bermula. Tiada kejutan.",
+    "quoteBeforeTheirs": "Sebut harga diberikan secara lisan, sering berubah selepas \"pemeriksaan\" dengan caj tambahan.",
+    "hiddenFees": "Yuran Tersembunyi",
+    "hiddenFeesOurs": "Sifar yuran tersembunyi. Bahan, pengangkutan & upah termasuk dalam harga permulaan.",
+    "hiddenFeesTheirs": "Yuran pengangkutan, caj perkhidmatan, caj hujung minggu — semua ditambah selepas ketibaan.",
+    "warranty": "Jaminan Kualiti Kerja",
+    "warrantyOurs": "Sehingga 90 hari jaminan bertulis untuk kerja tukang, lebih lama untuk cat & kalis air.",
+    "warrantyTheirs": "Kebanyakan tidak menawarkan jaminan. Jika ya, ia hanya secara lisan — tiada jaminan bertulis.",
+    "registration": "Pendaftaran Perniagaan",
+    "registrationOurs": "Berdaftar SSM. Perniagaan Malaysia yang sah dengan rekod prestasi.",
+    "registrationTheirs": "Ramai adalah freelancer tidak berdaftar beroperasi dari nombor telefon peribadi.",
+    "materials": "Alat Ganti & Bahan",
+    "materialsOurs": "Alat ganti bersijil SIRIM tulen dan bahan premium. Dikutip sebelum penggantian.",
+    "materialsTheirs": "Sumber bahagian tidak diketahui. Sesetengah menggunakan komponen kitar semula atau tiruan.",
+    "reviews": "Ulasan Disahkan",
+    "reviewsOurs": "{reviewCount}+ Ulasan Google dengan foto kerja sebenar. Baca kata pelanggan sebenar.",
+    "reviewsTheirs": "Sedikit atau tiada ulasan — atau ulasan palsu dari akaun tidak aktif.",
+    "trustNote": "SSM Berdaftar · Sepenuhnya Diinsuranskan · Jaminan"
   }
 }

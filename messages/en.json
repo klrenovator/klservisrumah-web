@@ -391,7 +391,13 @@
     },
     "heroEyebrow": "About KL Servis Rumah",
     "heroTitle": "Built on craft. Driven by trust.",
-    "heroLead": "For years we have been the home service partner Kuala Lumpur and Selangor turn to when quality matters. From painting and plumbing to waterproofing and handyman work — we deliver clean, careful work every visit."
+    "heroLead": "For years we have been the home service partner Kuala Lumpur and Selangor turn to when quality matters. From painting and plumbing to waterproofing and handyman work — we deliver clean, careful work every visit.",
+    "whatsappUs": "WhatsApp Us",
+    "callLabel": "Call {phone}",
+    "projectsCompleted": "Projects Completed",
+    "googleRating": "Google Rating",
+    "avgResponse": "Avg Response",
+    "servicePillars": "Service Pillars"
   },
   "comparison": {
     "heading": "Compare services",
@@ -436,7 +442,13 @@
       "aircond": "Scheduled service",
       "smart-home": "Consult + scheduled",
       "pest-control": "Scheduled treatment"
-    }
+    },
+    "eyebrow": "Side-by-side",
+    "criteriaHeader": "Criteria",
+    "ourLabel": "KL Servis Rumah",
+    "theirLabel": "Typical Competitors",
+    "usShort": "Us",
+    "othersShort": "Others"
   },
   "decisionTree": {
     "defaultTitle": "Should you book this service?",
@@ -551,7 +563,8 @@
     "closeAria": "Close popup"
   },
   "breadcrumbs": {
-    "home": "Home"
+    "home": "Home",
+    "about": "About Us"
   },
   "internalLinks": {
     "eyebrow": "More from this category",
@@ -567,7 +580,20 @@
     "nearMeDesc": "Select your location to see local pricing, availability, and contact information."
   },
   "hero": {
-    "subline": "Premium home services in KL & Selangor at fair, upfront pricing"
+    "subline": "Premium home services in KL & Selangor at fair, upfront pricing",
+    "eyebrow": "Instant dispatch",
+    "chipInsured": "Insured & verified",
+    "chipPrice": "Price confirmed first",
+    "chipSameDay": "Same-day available",
+    "chipWarranty": "30-day to 10-year warranty",
+    "quoteTitle": "Get Your Quote in 60 Seconds",
+    "serviceLabel": "What service do you need?",
+    "locationLabel": "Your Location (KL & Selangor)",
+    "selectService": "Select a service...",
+    "selectArea": "Select your area...",
+    "getQuote": "Get My Instant Quote",
+    "noDeposit": "No upfront deposits",
+    "googleReviews": "{count}+ Google reviews"
   },
   "trustBadgesRow": {
     "insured": "Insured & Verified",
@@ -604,7 +630,37 @@
     "comparisonSub": "We publish real prices and a real process. Most contractors make you call first. Here is what that difference means for your home.",
     "trustHeading": "{name} in KL & Selangor you can trust",
     "trustSub": "Every {nameLower} booking comes with these guarantees. No exceptions, no fine print.",
-    "faqHeading": "{name} FAQs — price, warranty and timing"
+    "faqHeading": "{name} FAQs — price, warranty and timing",
+    "decisionTreeBookDesc": "Your situation matches the primary symptoms, scope, and pricing band for {nameLower}. This is the right service for most customers.",
+    "decisionTreeLighterDesc": "If your problem is smaller in scope, you may only need a single sub-service (e.g. one repair or one point) rather than the full package. We'll happily quote the smaller scope.",
+    "decisionTreeEscalateDesc": "If the work involves permits, building works, structural changes, or hidden issues that need assessment, we may need to inspect first or coordinate with other trades before booking.",
+    "decisionTreePricingAbove": "View pricing above",
+    "decisionTreeSee": "See",
+    "decisionTreeSubServices": "Sub-services list",
+    "decisionTreeBrowse": "Browse",
+    "decisionTreeSiteInspection": "Site inspection",
+    "decisionTreeBookTitle": "Book {name}",
+    "decisionTreeLighterTitle": "Consider a lighter option",
+    "decisionTreeEscalateTitle": "Escalate first",
+    "decisionTreeBookAction": "Book",
+    "compPriceDisplay": "Price display",
+    "compPriceOurs": "Full pricing published online — you see {startPrice} before you even call.",
+    "compPriceTheirs": "No prices online. \"Call for quote\" — price depends on who answers the phone.",
+    "compQuote": "Quote before work",
+    "compQuoteOurs": "Price confirmed in writing before any work begins. No surprise variation orders.",
+    "compQuoteTheirs": "Quote given verbally, often changes after \"inspection\" with add-on charges.",
+    "compHiddenFees": "Hidden fees",
+    "compHiddenOurs": "Zero hidden fees. Materials, transport, and labour are all included in the starting price.",
+    "compHiddenTheirs": "Transport fee, service charge, weekend surcharge — all added after arrival.",
+    "compWarranty": "Workmanship warranty",
+    "compWarrantyOurs": "{warranty}. If it fails within the warranty period, we return free.",
+    "compWarrantyTheirs": "Most offer no warranty. If they do, it's verbal only — no written guarantee.",
+    "compRegistration": "Business registration",
+    "compRegistrationOurs": "Registered Malaysian business. Legitimate operation with a public track record.",
+    "compRegistrationTheirs": "Many are unregistered freelancers operating from a personal phone number.",
+    "compMaterials": "Materials & parts",
+    "compMaterialsOurs": "Genuine or OEM-equivalent parts from trusted Malaysian suppliers. Quoted before replacement.",
+    "compMaterialsTheirs": "Unknown part sources. Some use recycled or counterfeit components."
   },
   "subserviceContent": {
     "whatsIncluded": "What's included",
@@ -741,7 +797,10 @@
     "whatsappDispatch": "WhatsApp Dispatch",
     "bookingForm": "Booking form",
     "guidanceIntro": "Malaysian homes face tropical humidity, fast rain cycles, condo management rules, and mixed construction materials. That means the right method depends on surface condition, access, safety requirements, and whether water or structural movement is involved.",
-    "guidanceSafeApproach": "The safest approach is to shortlist the likely cause, collect clear photos, confirm the property type, and request an itemised fixed-price quotation. KL Servis Rumah confirms scope before work begins and avoids arbitrary pricing."
+    "guidanceSafeApproach": "The safest approach is to shortlist the likely cause, collect clear photos, confirm the property type, and request an itemised fixed-price quotation. KL Servis Rumah confirms scope before work begins and avoids arbitrary pricing.",
+    "featuredPathways": "Featured pathways",
+    "completeIndex": "Complete index",
+    "selectedScopes": "Selected scopes"
   },
   "faq": {
     "heroEyebrow": "Knowledge Base",
@@ -1275,5 +1334,33 @@
     "ctaHeading": "Urgent WhatsApp dispatch",
     "ctaBody": "Use the button below and include the word URGENT in your message.",
     "ctaButton": "WhatsApp Urgent Request"
+  },
+  "pricingComparison": {
+    "eyebrow": "Transparent Pricing",
+    "title": "KL Servis Rumah vs Typical Competitors",
+    "subtitle": "We publish real prices. Others make you call first. Here's what that means for your wallet.",
+    "featureHeader": "Feature",
+    "priceDisplay": "Price Display",
+    "priceDisplayOurs": "Full price list published online — you see starting prices before you even call.",
+    "priceDisplayTheirs": "No prices online. \"Call for quote\" — price depends on who answers the phone.",
+    "quoteBefore": "Quote Before Work",
+    "quoteBeforeOurs": "Price confirmed in writing before any work begins. No surprises.",
+    "quoteBeforeTheirs": "Quote given verbally, often changes after \"inspection\" with add-on charges.",
+    "hiddenFees": "Hidden Fees",
+    "hiddenFeesOurs": "Zero hidden fees. Materials, transport & labour included in the starting price.",
+    "hiddenFeesTheirs": "Transport fee, service charge, weekend surcharge — all added after arrival.",
+    "warranty": "Workmanship Warranty",
+    "warrantyOurs": "Up to 90 days written warranty on handyman work, longer on painting & waterproofing.",
+    "warrantyTheirs": "Most offer no warranty. If they do, it's verbal only — no written guarantee.",
+    "registration": "Business Registration",
+    "registrationOurs": "SSM registered. Legitimate Malaysian business with a track record.",
+    "registrationTheirs": "Many are unregistered freelancers operating from a personal phone number.",
+    "materials": "Parts & Materials",
+    "materialsOurs": "Genuine SIRIM-certified parts and premium materials. Quote before replacement.",
+    "materialsTheirs": "Unknown part sources. Some use recycled or counterfeit components.",
+    "reviews": "Verified Reviews",
+    "reviewsOurs": "{reviewCount}+ Google Reviews with real job photos. Read what actual customers say.",
+    "reviewsTheirs": "Few or no reviews — or fake reviews from inactive accounts.",
+    "trustNote": "SSM Registered · Fully Insured · Warranty"
   }
 }

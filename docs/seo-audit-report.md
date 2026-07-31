@@ -1,6 +1,6 @@
 # SEO Audit Report
 
-Generated: 2026-07-27T16:54:13.187Z
+Generated: 2026-07-31T03:59:47.883Z
 
 ## Route Inventory
 
@@ -196,7 +196,7 @@ Generated: 2026-07-27T16:54:13.187Z
 - Total representative routes: 186
 - Service pages: 28
 - Area pages: 37
-- Suburb records: 49
+- Suburb records: 52
 - Problem pages: 77
 - Blog posts: 18
 
