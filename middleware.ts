@@ -27,7 +27,7 @@ const ESTIMATE_TOOL_REDIRECTS: Record<string, string> = Object.fromEntries(
  * redirecting to English — everything else locale-prefixed still redirects,
  * because those pages switch language client-side at the same URL.
  */
-const REAL_LOCALE_TREES = ["/ms/alatan", "/zh/gongju"] as const;
+const REAL_LOCALE_TREES = ["/ms/alatan", "/zh/gongju", "/ms/blog", "/zh/bo-ke", "/ms/soalan-lazim", "/zh/chang-jian-wen-ti"] as const;
 
 /**
  * Middleware for locale-prefixed URL handling.

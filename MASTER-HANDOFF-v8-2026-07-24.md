@@ -14313,3 +14313,31 @@ This is the **third iteration** of the master handover document for klservisruma
 - **Total pages with MS/ZH coverage**: 2,204+ (entire site surface translated or dictionary-wired)
 
 ---
+
+---
+
+## 🆕 ROUND 33 EXECUTION LOG (2026-07-31) — VERIFIED BUILD + FIRST NATIVE BLOG URL CLUSTER
+
+**Status:** ⚠️ Foundation delivered; full blog/FAQ migration remains in progress.
+
+### Completed
+- ✅ Installed dependencies and ran production validation successfully: ESLint passes; `next build` completes; estimator/content test suite passes **231,498 assertions**.
+- ✅ Added real, indexable native-language blog routes (not cookie redirects) for the first fully translated painting article:
+  - English: `/blog/5-tips-choosing-paint-colors-malaysia`
+  - Bahasa Malaysia: `/ms/blog/5-petua-memilih-warna-cat-rumah-malaysia`
+  - Chinese: `/zh/bo-ke/ma-lai-xi-ya-xuan-ze-jia-ju-you-qi-yan-se-5-ge-ji-qiao`
+- ✅ Added complete standalone Malay and Chinese article bodies, translated title, excerpt, category and metadata for that article in `config/blog-i18n.ts`; no mixed-language article body.
+- ✅ Updated middleware to allow these real locale route trees through and retain the locale cookie.
+- ✅ Added locale-specific FAQ entry URLs: `/ms/soalan-lazim` and `/zh/chang-jian-wen-ti`. The existing primary FAQ accordion already contains complete EN/MS/ZH Q&As.
+
+### Important remaining work (do not mark as complete)
+1. **Highest priority:** translate the full bodies, metadata and locale-native slugs for the remaining 17 published blog posts, then add each real URL cluster to sitemap and reciprocal hreflang metadata.
+2. Translate the large site-wide FAQ directory (not just the five-question primary accordion). Its source FAQs originate from services, areas, problems and content data and require a deliberate data-level translation strategy; do not expose English directory cards on the new locale URLs.
+3. Add dedicated Malay/Chinese blog hub pages which list only translated posts and link to locale URLs. Do not link untranslated English posts from those hubs.
+4. Add reciprocal hreflang clusters to blog metadata and `app/sitemap.ts` only after all three URLs in a cluster are real, indexable pages. Never point hreflang to a redirect or English fallback.
+5. Visual browser/mobile QA and real project photography/review import still require assets/deployed access.
+
+### Quality notes
+- The production build now renders **4,151 static pages** and includes the three new article routes.
+- `npm run lint` and `npm run build` are both green as of this round.
+- Existing English content and business/contact details were not changed.
