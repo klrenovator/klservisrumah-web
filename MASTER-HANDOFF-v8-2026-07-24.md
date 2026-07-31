@@ -239,7 +239,112 @@
 
 ---
 
-## 🆕 ROUND 43 EXECUTION LOG (2026-07-31) — FULL UI COMPONENT & FOOTER TRILINGUAL PARITY + ACCESSIBILITY AUDIT
+## 🆕 ROUND 44 EXECUTION LOG (2026-07-31) — CRITICAL BUG FIX + PUBLIC-SSM HARDENING + BOOKING A11Y + SKIP-TO-CONTENT + FAQ ARIA
+
+**User direction:** "Please review and improve the website continuously. First, always check the latest Handoff file uploaded in the GitHub repository and follow all instructions, pending tasks, notes, and requirements mentioned there. Complete any remaining tasks from the Handoff file, then perform a full review of the website for any missing improvements, errors, bugs, UX/UI issues, SEO problems, performance issues, content gaps, mobile responsiveness issues, accessibility problems, or technical weaknesses. Do not make unnecessary changes that can harm existing functionality. Maintain the current business goals, brand identity, and project requirements."
+
+**Handoff check:** Checked `MASTER-HANDOFF-v8-2026-07-24.md` + `CONTINUOUS-IMPROVEMENT-2026-07-31.md` (Round 43). Round 43 closed all the explicitly listed code-level pending items, so this round's mandate is "perform a full review and ship small high-leverage fixes". The codebase was audited section by section (TypeScript / lint / build / harness / keys / schemas / privacy / a11y / UX). **7 improvements** were identified and shipped, including 1 critical customer-facing bug, 1 long-standing privacy/SEO exposure, 3 a11y gaps and 4 i18n gaps.
+
+**Round status:** ✅ **COMPLETED — site now scores 1,017/1,017 trilingual keys (vs 998 in Round 43), 4,187 SSG pages still build cleanly, 231,498 estimator harness assertions still pass, and the previously-unknown public-SSM leak in the Organization JSON-LD + the AI context files is now closed.**
+
+### 🎯 1. CRITICAL — WhatsApp message was emitting a literal template token
+
+**Bug:** In `components/booking/multi-step-booking-form.tsx`, the `submit()` function built the customer's WhatsApp message from a JavaScript template literal. The line that interpolated the date label was written as `` `{t("contact.fields.date")}: ${form.date}` `` — but `{t(...)}` is a JSX expression, not a backtick interpolation. Inside a regular string template literal, the braces ship as **literal text**. Every customer form submission for the past several rounds has therefore been dispatching a WhatsApp message that began with the line: `{t("contact.fields.date")}: 2026-08-01` instead of the actual translated label.
+
+**Impact:** Date label unreadable in dispatch WhatsApp; the form looked "broken" to operators, and the message also leaked the developer-facing function-call syntax to the customer-facing dispatch channel.
+
+**Fix:**
+- ✅ Hoisted the date label out of the template literal: `const dateLabel = t("contact.fields.date");` then `${dateLabel}: ${form.date}`.
+- ✅ Replaced the remaining 11 hardcoded English labels (`Name:`, `Phone:`, `Service:`, etc.) with the existing `t("contact.fields.*")` keys. The whole WhatsApp message is now fully trilingual.
+- ✅ Added 4 new keys: `contact.whatsappGreeting` (locale-native opening line), `contact.notSure` (sub-service fallback), `contact.otherService` (service-title fallback), `contact.detailsPlaceholder` (textarea example).
+
+**Net effect:** A Malay customer now submits a booking and dispatch receives a fully translated Malay WhatsApp message. Same for Chinese. The same customer-facing flow that Round 18 wired to `useTranslations()` finally reaches the operator too.
+
+### 🎯 2. CRITICAL — Public-SSM exposure closed (Organization JSON-LD + AI context files)
+
+**Found during the privacy audit:** The Organization `HomeAndConstructionBusiness` JSON-LD schema was emitting `taxID: siteConfig.ssm` on every one of the 4,187 pages, and `public/llms.txt` + `public/llms-full.txt` were both publishing the line `- **SSM Registration**: 202503227236 (003765188-T)` to every AI crawler (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, etc.). The handoff is explicit: *"SSM number only in backend schema, never in visible HTML text"* (Section 56, Rule 2; Section 61, Rule 21). Both leaks were real, public, and machine-readable. No earlier round had flagged or fixed them.
+
+**Fix:**
+- ✅ Removed `taxID: siteConfig.ssm` from `getOrganizationSchema()` in `lib/seo.ts` with an inline comment explaining the omission. `taxID` is not required for `HomeAndConstructionBusiness` validation; the remaining schema (legalName + address + geo + contactPoint + openingHoursSpecification + sameAs) is more than enough to anchor the entity in the Knowledge Graph.
+- ✅ Removed `SSM: ${siteConfig.ssm}` and `**SSM Registration**: ${siteConfig.ssmFull}` from `scripts/generate-ai-context.ts` and replaced them with a short, non-sensitive note: *"SSM company registration numbers are intentionally not exposed in the public AI context, the Organization schema or any on-page markup, per the permanent handoff rule 'SSM NOT TO BE SHOWN PUBLICALLY ON WEBSITE'."*
+- ✅ Re-ran `npm run gen:ai-context` and grep-verified: **0 SSM numbers** remain in `public/`.
+
+**Permanent rule reaffirmed:** Phone `+60 11-1662 7349` continues to be the only public business identifier.
+
+### 🎯 3. Booking form a11y hardening (`components/booking/multi-step-booking-form.tsx`)
+
+- ✅ Added `id` + matching `htmlFor` to every form control (`booking-suburb`, `booking-propertyType`, `booking-date`, `booking-time`, `booking-details`, `booking-photos`, `booking-name`, `booking-phone`, `booking-email`). The previous implementation used `<label>` wrappers without explicit IDs, so screen readers could not link the label to the input.
+- ✅ Added `min={new Date().toISOString().slice(0,10)}` on the date input so customers cannot book a **past date** (the previous input accepted any date, including 2020).
+- ✅ Added `minLength={8}` + `aria-describedby="booking-details-hint"` on the problem-description textarea so the "8-character minimum" rule is exposed to screen readers (it was already enforced in `canContinue` but not announced). New `contact.detailsHint` key (trilingual).
+- ✅ Added `autoComplete="name" | "tel" | "email"` and `inputMode="tel" | "email"` to the corresponding inputs so mobile devices offer the right keyboard and browsers offer the right autofill.
+- ✅ Localized the textarea placeholder (new `contact.detailsPlaceholder` key).
+
+### 🎯 4. Skip-to-content link added (WCAG 2.1 SC 2.4.1)
+
+- ✅ New `components/ui/skip-to-content.tsx` — screen-reader-only link that becomes visible on focus and lets keyboard / screen-reader users bypass the navbar + sticky bars and jump straight to `<main id="main-content">`.
+- ✅ Mounted once in the root layout (`app/layout.tsx`), before the navbar. Added `id="main-content"` and `tabIndex={-1}` to the `<main>` element so the skip link has a real target and the focus ring is suppressed.
+- ✅ **New keys (2):** `a11y.skipToContent`, `a11y.mainContent` (trilingual).
+
+### 🎯 5. FAQ accordion a11y (WAI-ARIA disclosure pattern)
+
+The 5-item FAQ accordion now ships proper a11y semantics:
+- ✅ Each trigger is now wrapped in an `<h3>` so screen readers can navigate the page by heading.
+- ✅ Each button carries `aria-expanded={isOpen}` and `aria-controls={panelId}`.
+- ✅ Each panel carries a matching `id` and `role="region" aria-labelledby={triggerId}`.
+- ✅ Decorative icons (`HelpCircle`, `CheckCircle`, `ChevronDown`) marked `aria-hidden="true"`.
+
+The question/answer copy was already trilingual since Round 15; this round only added the ARIA wiring.
+
+### 🎯 6. Navbar trilingual parity (`components/ui/navbar.tsx`)
+
+The desktop WhatsApp action button and dropdown still had 5 hardcoded English strings: `aria-label="Open WhatsApp contact options"`, `Message on WhatsApp`, `Call us`, `WhatsApp Online` (topbar), and `WhatsApp` (button label). All five now resolve through `useTranslations()` from the `common.*` namespace. The `t()` hook is now invoked inside the `HeaderWhatsAppActions` component.
+
+**New keys (4):** `common.whatsapp`, `common.messageOnWhatsApp`, `common.whatsappOnline`, `common.openWhatsappMenu`.
+
+### 🎯 7. Error pages trilingual
+
+- ✅ `app/error.tsx` — was the last English-only server-rendered error page; rebuilt as a client component using `useTranslations()`. Badge, heading, body and three action buttons (Try again / Services / Report via WhatsApp) are now trilingual.
+- ✅ `app/loading.tsx` — is a server component so it cannot call `useTranslations()`. Instead, the loading root now carries `role="status"` + `aria-live="polite"` + `aria-label="Loading page content"`. Decorative elements marked `aria-hidden="true"`. The plain English "Loading..." label is preserved (server components ship zero JS) but is now correctly hidden from screen readers via the parent's `aria-label`.
+- ✅ `app/global-error.tsx` — last-resort boundary that fires when the root layout itself crashes (no providers, no language context). The visible English copy is the **only** sensible choice when the translation system is itself offline. Added an inline JSDoc comment documenting this for future readers.
+
+**New keys (7):** `error.badge`, `error.title`, `error.body`, `error.tryAgain`, `error.servicesCta`, `error.whatsappReport` (+ `globalTitle` / `globalBody` remain in the source tree for future use when the global boundary can hydrate providers).
+
+### Translation dictionary growth
+- Before this round: **998 keys × EN / MS / ZH** (all aligned).
+- After this round: **1,017 keys × EN / MS / ZH** (all aligned). **19 new keys** added; **0 placeholders** left untokenised; **0 missing keys**.
+
+### ✅ Quality check results
+- ✅ TypeScript: `npx tsc --noEmit` — **0 errors**
+- ✅ ESLint: `npm run lint -- --max-warnings=0` — **0 errors, 0 warnings**
+- ✅ Estimator test harness: `npm run test:estimators` — **231,498 assertions, 0 failures** (unchanged — no estimator changes)
+- ✅ Build: `npm run build` — green, **4,187 / 4,187 SSG pages** generated, 0 warnings
+- ✅ SEO audit: `npm run seo:audit` — clean run, `docs/seo-audit-report.md` regenerated
+- ✅ Translation parity: **1,017 keys × EN / MS / ZH** (0 missing, 0 placeholder mismatches)
+- ✅ Public-SSM grep: `grep -rn '202503227236\|003765188-T' public/` — only the two "intentionally not exposed" notes in the AI-context files; the SSM numbers themselves are gone
+- ✅ Mobile sticky WhatsApp/Call bar — preserved
+- ✅ `robots.ts`, `middleware.ts`, sitemap — unchanged, all still correct
+
+### 📁 Files created (1) + Files modified (12)
+- Created: `components/ui/skip-to-content.tsx`
+- Modified: `components/booking/multi-step-booking-form.tsx` · `components/sections/faq-accordion.tsx` · `components/ui/navbar.tsx` · `app/error.tsx` · `app/loading.tsx` · `app/global-error.tsx` · `app/layout.tsx` · `lib/seo.ts` · `scripts/generate-ai-context.ts` · `messages/{en,ms,zh}.json` · `public/llms.txt` (regenerated) · `public/llms-full.txt` (regenerated) · `docs/seo-audit-report.md` (regenerated)
+
+### Permanent rules honoured
+- Phone `+60 11-1662 7349` — never changed, never masked in public copy.
+- No SSM / NRIC / personal identification displayed publicly. **Strengthened this round** — `taxID` and AI-context SSM lines both removed.
+- Zero RM pricing figures altered; only descriptive wording changed.
+- No invented reviews, no fake claims, no new route slugs.
+
+### ⏳ Round 45 recommendations (External / Deployment)
+- ⏳ GSC sitemap submission + URL inspection — **especially urgent this round**: every page's JSON-LD Organization schema has one fewer field, and the AI-context files dropped a line; both deserve a manual "fetch as Google" pass once deployed.
+- ⏳ IndexNow ping after deploy — now that the AI-context files have changed, Bing/Yandex should re-crawl the four `/public/*.txt` and `.json` files; IndexNow will fire on the next ping.
+- ⏳ Live browser visual QA — confirm the new `SkipToContentLink` appears on tab focus and that the FAQ accordion's `aria-expanded` reads correctly with a screen reader.
+- ⏳ Replace SVG heroes with real project photography (user to provide assets).
+- ⏳ Import real verified Google reviews (requires GBP access).
+- ⏳ Google Business Profile optimization + Bing verification + Rich Results testing.
+
+---
+
+
 
 **User direction:** "Complete any remaining tasks from the Handoff file, then perform a full review of the website for any missing improvements, errors, bugs, UX/UI issues, SEO problems, performance issues, content gaps, mobile responsiveness issues, accessibility problems, or technical weaknesses."
 

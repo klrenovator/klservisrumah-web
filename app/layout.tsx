@@ -9,6 +9,7 @@ import { WebVitalsReporter } from "@/components/web-vitals-reporter";
 import { ServiceWorkerRegister } from "@/components/service-worker-register";
 import { GoogleAnalytics } from "@/components/analytics/google-analytics";
 import { DeferredWidgets } from "@/components/deferred-widgets";
+import { SkipToContentLink } from "@/components/ui/skip-to-content";
 import { siteConfig } from "@/config/site";
 import { getOrganizationSchema, getLocalBusinessSchema, getWebsiteSchema } from "@/lib/seo";
 import { optimizeTitle, optimizeDescription, buildAlternates } from "@/lib/seo-meta";
@@ -140,8 +141,9 @@ export default function RootLayout({
           <GoogleAnalytics />
           <WebVitalsReporter />
           <ServiceWorkerRegister />
+          <SkipToContentLink />
           <Navbar />
-          <main className="grow w-full">
+          <main id="main-content" tabIndex={-1} className="grow w-full focus:outline-none">
             {children}
           </main>
           <Footer />

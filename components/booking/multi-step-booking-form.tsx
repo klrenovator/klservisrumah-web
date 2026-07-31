@@ -61,22 +61,23 @@ export function MultiStepBookingForm() {
   const update = (key: keyof FormState, value: string) => setForm((current) => ({ ...current, [key]: value }));
 
   const submit = () => {
-    const serviceTitle = selectedService?.title ?? "Other home service";
+    const serviceTitle = selectedService?.title ?? t("contact.otherService");
     const suburb = suburbPages.find((item) => item.slug === form.suburb)?.name ?? form.suburb;
+    const dateLabel = t("contact.fields.date");
     const text = [
-      "Hi KL Servis Rumah, I want to book a home service.",
+      t("contact.whatsappGreeting"),
       "",
-      `Name: ${form.name}`,
-      `Phone: ${form.phone}`,
-      form.email ? `Email: ${form.email}` : "",
-      `Service: ${serviceTitle}`,
-      `Sub-service: ${form.subService || "Not sure"}`,
-      `Area/Suburb: ${suburb}`,
-      `Property type: ${form.propertyType}`,
-      `{t("contact.fields.date")}: ${form.date}`,
-      `Preferred time: ${form.time}`,
-      `Problem details: ${form.details}`,
-      `Photos ready to attach in WhatsApp: ${form.hasPhotos}`
+      `${t("contact.fields.name")}: ${form.name}`,
+      `${t("contact.fields.phone")}: ${form.phone}`,
+      form.email ? `${t("contact.fields.email")}: ${form.email}` : "",
+      `${t("contact.fields.service")}: ${serviceTitle}`,
+      `${t("contact.fields.subService")}: ${form.subService || t("contact.notSure")}`,
+      `${t("contact.fields.area")}: ${suburb}`,
+      `${t("contact.fields.propertyType")}: ${form.propertyType}`,
+      `${dateLabel}: ${form.date}`,
+      `${t("contact.timeWindow")}: ${form.time}`,
+      `${t("contact.fields.message")}: ${form.details}`,
+      `${t("contact.photosReady")}: ${form.hasPhotos}`
     ].filter(Boolean).join("\n");
 
     trackFormSubmit({ service: serviceTitle, area: suburb });
@@ -140,16 +141,16 @@ export function MultiStepBookingForm() {
         {step === 3 && (
           <StepShell title={t("contact.fields.location")}>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
+              <label htmlFor="booking-suburb" className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
                 {t("contact.fields.area")}
-                <select value={form.suburb} onChange={(event) => update("suburb", event.target.value)} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]">
+                <select id="booking-suburb" value={form.suburb} onChange={(event) => update("suburb", event.target.value)} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]">
                   <option value="">{t("contact.selectSuburb")}</option>
                   {suburbPages.map((suburb) => <option key={suburb.slug} value={suburb.slug}>{suburb.name}</option>)}
                 </select>
               </label>
-              <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
+              <label htmlFor="booking-propertyType" className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
                 {t("contact.fields.propertyType")}
-                <select value={form.propertyType} onChange={(event) => update("propertyType", event.target.value)} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]">
+                <select id="booking-propertyType" value={form.propertyType} onChange={(event) => update("propertyType", event.target.value)} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]">
                   <option value="">{t("contact.selectType")}</option>
                   {propertyTypeKeys.map((key) => <option key={key} value={t(`contact.propertyTypes.${key}`)}>{t(`contact.propertyTypes.${key}`)}</option>)}
                 </select>
@@ -161,13 +162,20 @@ export function MultiStepBookingForm() {
         {step === 4 && (
           <StepShell title={t("contact.fields.schedule")}>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
+              <label htmlFor="booking-date" className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
                 {t("contact.fields.date")}
-                <input value={form.date} onChange={(event) => update("date", event.target.value)} type="date" className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]" />
+                <input
+                  id="booking-date"
+                  value={form.date}
+                  onChange={(event) => update("date", event.target.value)}
+                  type="date"
+                  min={new Date().toISOString().slice(0, 10)}
+                  className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]"
+                />
               </label>
-              <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
+              <label htmlFor="booking-time" className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
                 {t("contact.timeWindow")}
-                <select value={form.time} onChange={(event) => update("time", event.target.value)} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]">
+                <select id="booking-time" value={form.time} onChange={(event) => update("time", event.target.value)} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]">
                   {timeWindowKeys.map((key) => <option key={key} value={t(`contact.timeWindows.${key}`)}>{t(`contact.timeWindows.${key}`)}</option>)}
                 </select>
               </label>
@@ -177,13 +185,23 @@ export function MultiStepBookingForm() {
 
         {step === 5 && (
           <StepShell title={t("contact.fields.problem")}>
-            <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
+            <label htmlFor="booking-details" className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
               {t("contact.fields.message")}
-              <textarea value={form.details} onChange={(event) => update("details", event.target.value)} rows={5} placeholder="Example: bathroom ceiling is dripping after shower, stain is about 1 meter wide..." className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]" />
+              <textarea
+                id="booking-details"
+                value={form.details}
+                onChange={(event) => update("details", event.target.value)}
+                rows={5}
+                minLength={8}
+                aria-describedby="booking-details-hint"
+                placeholder={t("contact.detailsPlaceholder")}
+                className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]"
+              />
+              <span id="booking-details-hint" className="text-[10px] font-semibold normal-case text-slate-500">{t("contact.detailsHint")}</span>
             </label>
-            <label className="mt-4 flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
+            <label htmlFor="booking-photos" className="mt-4 flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
               {t("contact.photosReady")}
-              <select value={form.hasPhotos} onChange={(event) => update("hasPhotos", event.target.value)} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]">
+              <select id="booking-photos" value={form.hasPhotos} onChange={(event) => update("hasPhotos", event.target.value)} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]">
                 <option value="yes">{t("contact.photosYes")}</option>
                 <option value="no">{t("contact.photosNo")}</option>
               </select>
@@ -194,10 +212,10 @@ export function MultiStepBookingForm() {
         {step === 6 && (
           <StepShell title={t("contact.fields.contact")}>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <Input label={t("contact.fields.name")} value={form.name} onChange={(value) => update("name", value)} />
-              <Input label={t("contact.fields.phone")} value={form.phone} onChange={(value) => update("phone", value)} placeholder="01116627349" />
+              <Input id="booking-name" label={t("contact.fields.name")} value={form.name} onChange={(value) => update("name", value)} autoComplete="name" />
+              <Input id="booking-phone" label={t("contact.fields.phone")} value={form.phone} onChange={(value) => update("phone", value)} placeholder="01116627349" autoComplete="tel" inputMode="tel" />
               <div className="sm:col-span-2">
-                <Input label={t("contact.fields.email")} value={form.email} onChange={(value) => update("email", value)} placeholder="you@example.com" />
+                <Input id="booking-email" label={t("contact.fields.email")} value={form.email} onChange={(value) => update("email", value)} placeholder="you@example.com" autoComplete="email" inputMode="email" />
               </div>
             </div>
           </StepShell>
@@ -231,11 +249,19 @@ function StepShell({ title, children }: { title: string; children: React.ReactNo
   );
 }
 
-function Input({ label, value, onChange, placeholder }: { label: string; value: string; onChange: (value: string) => void; placeholder?: string }) {
+function Input({ id, label, value, onChange, placeholder, autoComplete, inputMode }: { id: string; label: string; value: string; onChange: (value: string) => void; placeholder?: string; autoComplete?: string; inputMode?: "text" | "tel" | "email" | "numeric" | "url" | "search" }) {
   return (
-    <label className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
+    <label htmlFor={id} className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
       {label}
-      <input value={value} onChange={(event) => onChange(event.target.value)} placeholder={placeholder} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]" />
+      <input
+        id={id}
+        value={value}
+        onChange={(event) => onChange(event.target.value)}
+        placeholder={placeholder}
+        autoComplete={autoComplete}
+        inputMode={inputMode}
+        className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]"
+      />
     </label>
   );
 }

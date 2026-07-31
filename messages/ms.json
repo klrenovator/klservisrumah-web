@@ -15,7 +15,11 @@
     "fromPrice": "Dari {price}",
     "fromLabel": "Dari",
     "back": "Kembali",
-    "continue": "Teruskan"
+    "continue": "Teruskan",
+    "whatsapp": "WhatsApp",
+    "messageOnWhatsApp": "Hantar mesej di WhatsApp",
+    "whatsappOnline": "WhatsApp Dalam Talian",
+    "openWhatsappMenu": "Buka pilihan hubungan WhatsApp"
   },
   "nav": {
     "home": "Utama",
@@ -318,7 +322,12 @@
     "submitAndOpen": "Hantar & Buka WhatsApp",
     "bookingCompiled": "Butiran tempahan telah disusun",
     "bookingCompiledDesc": "WhatsApp sepatutnya dibuka dalam tab baru dengan permintaan tempahan anda. Jika ia tidak dibuka, sila benarkan pop-up dan hantar sekali lagi.",
-    "bookJob": "Tempah Perkhidmatan"
+    "bookJob": "Tempah Perkhidmatan",
+    "detailsHint": "Sila jelaskan kerja sekurang-kurangnya 8 aksara supaya kami dapat memberikan sebut harga yang tepat.",
+    "whatsappGreeting": "Hai KL Servis Rumah, saya mahu menempah perkhidmatan rumah.",
+    "notSure": "Tidak pasti",
+    "otherService": "Perkhidmatan rumah lain",
+    "detailsPlaceholder": "Contoh: siling bilik air menitis selepas mandi, kesan kira-kira 1 meter lebar…"
   },
   "pricing": {
     "pageTitle": "Harga Perkhidmatan Rumah di KL & Selangor",
@@ -1392,5 +1401,19 @@
   "siteSearch": {
     "placeholder": "Cari perkhidmatan...",
     "ariaLabel": "Cari perkhidmatan laman web"
+  },
+  "error": {
+    "badge": "Sesuatu telah berlaku",
+    "title": "Halaman ini menghadapi masalah sementara",
+    "body": "Sila cuba lagi, atau laporkan isu melalui WhatsApp supaya pasukan kami dapat membantu anda mencapai halaman perkhidmatan yang betul.",
+    "tryAgain": "Cuba lagi",
+    "servicesCta": "Perkhidmatan",
+    "whatsappReport": "Lapor melalui WhatsApp",
+    "globalTitle": "KL Servis Rumah tidak tersedia buat sementara waktu",
+    "globalBody": "Sila cuba lagi. Jika masalah berterusan, hubungi meja penghantaran kami melalui halaman hubungan."
+  },
+  "a11y": {
+    "skipToContent": "Langkau ke kandungan utama",
+    "mainContent": "Kandungan utama"
   }
 }

@@ -15,7 +15,11 @@
     "fromPrice": "From {price}",
     "fromLabel": "From",
     "back": "Back",
-    "continue": "Continue"
+    "continue": "Continue",
+    "whatsapp": "WhatsApp",
+    "messageOnWhatsApp": "Message on WhatsApp",
+    "whatsappOnline": "WhatsApp Online",
+    "openWhatsappMenu": "Open WhatsApp contact options"
   },
   "nav": {
     "home": "Home",
@@ -318,7 +322,12 @@
     "submitAndOpen": "Submit & Open WhatsApp",
     "bookingCompiled": "Booking details compiled",
     "bookingCompiledDesc": "WhatsApp should open in a new tab with your structured booking request. If it did not open, please allow popups and submit again.",
-    "bookJob": "Book a Job"
+    "bookJob": "Book a Job",
+    "detailsHint": "Please describe the work in at least 8 characters so we can give you an accurate quote.",
+    "whatsappGreeting": "Hi KL Servis Rumah, I want to book a home service.",
+    "notSure": "Not sure",
+    "otherService": "Other home service",
+    "detailsPlaceholder": "Example: bathroom ceiling is dripping after shower, stain is about 1 meter wide…"
   },
   "pricing": {
     "pageTitle": "Home Services Pricing in KL & Selangor",
@@ -1392,5 +1401,19 @@
   "siteSearch": {
     "placeholder": "Search service...",
     "ariaLabel": "Search site services"
+  },
+  "error": {
+    "badge": "Something went wrong",
+    "title": "This page hit a temporary issue",
+    "body": "Please retry, or report the issue through WhatsApp so our team can help you reach the right service page.",
+    "tryAgain": "Try again",
+    "servicesCta": "Services",
+    "whatsappReport": "Report via WhatsApp",
+    "globalTitle": "KL Servis Rumah is temporarily unavailable",
+    "globalBody": "Please try again. If the issue continues, contact our dispatch desk through the contact page."
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content",
+    "mainContent": "Main content"
   }
 }

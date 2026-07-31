@@ -5,12 +5,15 @@
 ## Business Identity
 - **Name**: KL Servis Rumah
 - **Legal Name**: Multicore Dynamics Resources
-- **SSM Registration**: 202503227236 (003765188-T)
 - **Founded**: 2014
 - **Employees**: 10+ full-time staff
 - **Service Areas**: Kuala Lumpur & Selangor (Klang Valley)
 - **Languages**: English, Bahasa Malaysia, Chinese
 - **Google Rating**: 4.9 / 5.0 across 120+ reviews
+
+_Note: SSM company registration numbers are intentionally not exposed in the
+public AI context, the Organization schema or any on-page markup, per the
+permanent handoff rule "SSM NOT TO BE SHOWN PUBLICALLY ON WEBSITE"._
 
 ## Contact Information
 - **Phone**: +60 11-1662 7349

@@ -15,7 +15,11 @@
     "fromPrice": "起价 {price}",
     "fromLabel": "起",
     "back": "返回",
-    "continue": "继续"
+    "continue": "继续",
+    "whatsapp": "WhatsApp",
+    "messageOnWhatsApp": "通过 WhatsApp 发消息",
+    "whatsappOnline": "WhatsApp 在线",
+    "openWhatsappMenu": "打开 WhatsApp 联系方式选项"
   },
   "nav": {
     "home": "首页",
@@ -318,7 +322,12 @@
     "submitAndOpen": "提交并打开 WhatsApp",
     "bookingCompiled": "预订详情已整理",
     "bookingCompiledDesc": "WhatsApp 应该会在新标签页中打开，并附有您的预订请求。如果没有打开，请允许弹出窗口并重新提交。",
-    "bookJob": "预订服务"
+    "bookJob": "预订服务",
+    "detailsHint": "请至少用 8 个字符描述工作内容,以便我们为您提供准确的报价。",
+    "whatsappGreeting": "你好 KL Servis Rumah,我想预约家居服务。",
+    "notSure": "待定",
+    "otherService": "其他家居服务",
+    "detailsPlaceholder": "例如:浴室天花板在淋浴后滴水,污渍约 1 米宽…"
   },
   "pricing": {
     "pageTitle": "吉隆坡与雪兰莪家居服务价格",
@@ -1392,5 +1401,19 @@
   "siteSearch": {
     "placeholder": "搜索服务...",
     "ariaLabel": "搜索网站服务"
+  },
+  "error": {
+    "badge": "出现问题",
+    "title": "此页面遇到临时问题",
+    "body": "请重试,或通过 WhatsApp 报告问题,以便我们的团队帮助您找到正确的服务页面。",
+    "tryAgain": "重试",
+    "servicesCta": "服务",
+    "whatsappReport": "通过 WhatsApp 报告",
+    "globalTitle": "KL Servis Rumah 暂时无法使用",
+    "globalBody": "请重试。如果问题持续,请通过联系页面联系我们的调度台。"
+  },
+  "a11y": {
+    "skipToContent": "跳至主要内容",
+    "mainContent": "主要内容"
   }
 }
