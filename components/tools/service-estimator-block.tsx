@@ -7,8 +7,22 @@ import { useTranslations } from "@/hooks/use-translations";
 import { buildServiceEstimator, DEDICATED_TOOL_BY_SERVICE, hasServiceEstimator } from "@/lib/estimator/service-estimator";
 import { toolsContent } from "@/config/tools-data";
 import { estimatePath } from "@/config/estimate-links";
-import { EstimatorForm } from "./estimator/estimator-form";
+import dynamic from "next/dynamic";
 import { EstimatorShareBar } from "./estimator-share-bar";
+
+// Lazy-load the interactive estimator engine. On the 6 dedicated-tool
+// services the form is never rendered (only a static link card), so the
+// chunk (~44 kB) is excluded from their route bundles entirely.
+const EstimatorForm = dynamic(() => import("./estimator/estimator-form").then((mod) => mod.EstimatorForm), {
+  ssr: true,
+  loading: () => (
+    <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm animate-pulse">
+      <div className="h-8 w-48 rounded-xl bg-slate-100 mb-4" />
+      <div className="h-4 w-full rounded-lg bg-slate-100 mb-3 max-w-md" />
+      <div className="h-4 w-3/4 rounded-lg bg-slate-100" />
+    </div>
+  )
+});
 
 /**
  * The estimator that appears on every `/services/[slug]` page, directly under
