@@ -6,6 +6,7 @@ import type { MetadataRoute } from "next";
 import { servicesData } from "@/config/services-data";
 import { areaPages } from "@/config/area-data";
 import { blogPosts } from "@/config/blog-data";
+import { blogI18n, localizedBlogPath } from "@/config/blog-i18n";
 import { suburbPages } from "@/config/suburb-data";
 import { problemPages } from "@/config/problem-data";
 import { allGenericPages, clusterPages, maintenancePages } from "@/config/content-data";
@@ -139,6 +140,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const problemRoutes: Entry[] = problemPages.map((problem) => ({ path: `/problems/${problem.slug}`, priority: 0.8 }));
   const blogRoutes: Entry[] = blogPosts.map((post) => ({ path: `/blog/${post.slug}`, priority: 0.7, changeFrequency: "monthly" }));
 
+  // Locale blog and FAQ routes — only include posts that have full translations
+  const localeBlogRoutes: Entry[] = [];
+  for (const post of blogPosts) {
+    const i18n = blogI18n[post.slug];
+    if (i18n?.ms) localeBlogRoutes.push({ path: localizedBlogPath("ms", i18n.ms.slug), priority: 0.65, changeFrequency: "monthly" });
+    if (i18n?.zh) localeBlogRoutes.push({ path: localizedBlogPath("zh", i18n.zh.slug), priority: 0.65, changeFrequency: "monthly" });
+  }
+  const localeFaqRoutes: Entry[] = [
+    { path: "/ms/soalan-lazim", priority: 0.7 },
+    { path: "/zh/chang-jian-wen-ti", priority: 0.7 },
+    { path: "/ms/blog", priority: 0.65 },
+    { path: "/zh/bo-ke", priority: 0.65 },
+  ];
+
   const genericRoutes: Entry[] = allGenericPages
     .filter((page) => !clusterPages.some((cluster) => cluster.slug === page.slug) && !maintenancePages.some((maintenance) => maintenance.slug === page.slug))
     .map((page) => {
@@ -162,6 +177,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...suburbRoutes,
     ...problemRoutes,
     ...blogRoutes,
+    ...localeBlogRoutes,
+    ...localeFaqRoutes,
     ...genericRoutes,
     ...maintenanceRoutes
   ].map(entry);

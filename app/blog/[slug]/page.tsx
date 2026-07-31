@@ -8,6 +8,7 @@ import { getArticleSchema } from "@/lib/seo";
 import { Calendar, User, Clock, MessageSquare, ArrowRight, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { getWhatsAppLink } from "@/lib/whatsapp";
+import { blogI18n, localizedBlogPath } from "@/config/blog-i18n";
 
 // Every valid param is enumerated in `generateStaticParams()`, so anything
 // else must 404 rather than be rendered on demand and cached as a 200
@@ -25,6 +26,10 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   const post = blogPosts.find((p) => p.slug === params.slug);
   if (!post) return {};
 
+  const msSlug = blogI18n[post.slug]?.ms?.slug;
+  const zhSlug = blogI18n[post.slug]?.zh?.slug;
+  const hasFullCluster = msSlug && zhSlug;
+
   return buildMetadata({
     title: post.metaTitle,
     description: post.metaDesc,
@@ -33,7 +38,14 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
     type: "article",
     publishedTime: toIsoDate(post.date),
     modifiedTime: toIsoDate(post.date),
-    keywords: [post.title, post.category, "home maintenance Malaysia"]
+    keywords: [post.title, post.category, "home maintenance Malaysia"],
+    ...(hasFullCluster ? {
+      languageUrls: {
+        en: `/blog/${post.slug}`,
+        ms: localizedBlogPath("ms", msSlug!),
+        zh: localizedBlogPath("zh", zhSlug!),
+      }
+    } : {})
   });
 }
 

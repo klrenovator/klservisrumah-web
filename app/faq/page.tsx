@@ -17,6 +17,11 @@ export const metadata: Metadata = buildMetadata({
   description:
     `${faqDirectoryTotalCount}+ questions on pricing, warranty, insurance, coverage areas, materials and booking — answered across every service, area and problem page on the site.`,
   path: "/faq",
+  languageUrls: {
+    en: "/faq",
+    ms: "/ms/soalan-lazim",
+    zh: "/zh/chang-jian-wen-ti",
+  },
   keywords: [
     "home services FAQ Malaysia",
     "handyman questions KL",
