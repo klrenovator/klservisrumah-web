@@ -6,6 +6,7 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
 import { User, Clock, ArrowRight, Phone, MessageSquare, BookOpen } from "lucide-react";
+import { LocaleHubRedirect } from "@/components/ui/locale-hub-redirect";
 
 export const metadata = buildMetadata({
   title: "Home Maintenance Blog — Expert Tips KL & Selangor",
@@ -32,6 +33,11 @@ export default function BlogPage() {
 
   return (
     <>
+      {/* Auto-redirect to /ms/blog or /zh/bo-ke when the visitor's preferred
+          language is not English — keeps the full page (including this
+          server-rendered listing) in sync with the language switcher. */}
+      <LocaleHubRedirect />
+
       {/* Hero Section — matches klrenovator.com blog page */}
       <section className="bg-gradient-to-b from-[#F8FAFC] via-white to-white border-b border-slate-100 py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

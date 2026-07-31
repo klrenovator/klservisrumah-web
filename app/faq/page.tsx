@@ -11,6 +11,7 @@ import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
 import { Phone, MessageSquare } from "lucide-react";
 import { faqDirectory, faqDirectoryTotalCount } from "@/lib/faq-directory";
+import { LocaleHubRedirect } from "@/components/ui/locale-hub-redirect";
 
 export const metadata: Metadata = buildMetadata({
   title: "FAQ — Every Home Service Question Answered",
@@ -33,6 +34,11 @@ export default function FAQPage() {
 
   return (
     <>
+      {/* Auto-redirect to /ms/soalan-lazim or /zh/chang-jian-wen-ti when the
+          visitor's preferred language is not English — the localised hubs
+          carry the fully-translated directory chrome + data. */}
+      <LocaleHubRedirect />
+
       {/* Hero Section — matches klrenovator.com FAQ page */}
       <section className="bg-gradient-to-b from-[#F8FAFC] via-white to-white border-b border-slate-100 py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -79,7 +85,7 @@ export default function FAQPage() {
         </div>
       </section>
 
-      <FaqDirectoryView categories={faqDirectory} totalCount={faqDirectoryTotalCount} />
+      <FaqDirectoryView categories={faqDirectory} totalCount={faqDirectoryTotalCount} lang="en" />
 
       {/* Single combined FAQPage schema for the full directory — Google only
           honours one FAQPage graph per page, so every question below is

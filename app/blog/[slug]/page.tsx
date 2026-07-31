@@ -9,6 +9,7 @@ import { Calendar, User, Clock, MessageSquare, ArrowRight, ArrowLeft } from "luc
 import Link from "next/link";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { blogI18n, localizedBlogPath } from "@/config/blog-i18n";
+import { BlogPostLocaleRedirect } from "@/components/ui/blog-post-locale-redirect";
 
 // Every valid param is enumerated in `generateStaticParams()`, so anything
 // else must 404 rather than be rendered on demand and cached as a 200
@@ -67,6 +68,10 @@ export default async function BlogPostSlugPage(props: { params: Promise<{ slug: 
 
   return (
     <>
+      {/* Auto-redirect to the localised article URL when the visitor's
+          preferred language is Malay or Chinese. */}
+      <BlogPostLocaleRedirect englishSlug={post.slug} />
+
       <Breadcrumbs items={[
         { label: "Blog", href: "/blog" },
         { label: post.title, href: `/blog/${post.slug}` }

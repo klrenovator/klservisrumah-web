@@ -54,7 +54,7 @@ export default function ChineseFaqPage() {
         </div>
       </section>
 
-      <FaqDirectoryView categories={faqDirectory} totalCount={faqDirectoryTotalCount} />
+      <FaqDirectoryView categories={faqDirectory} totalCount={faqDirectoryTotalCount} lang="zh" />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{
         __html: JSON.stringify(getFAQSchema(faqDirectory.flatMap((c) => c.items.map((i) => ({ q: i.q, a: i.a })))))
