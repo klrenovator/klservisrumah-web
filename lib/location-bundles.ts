@@ -6,6 +6,7 @@ import type { ServiceDetail } from "@/config/services-data";
 import { getLocalizedArea, getLocalizedSuburb } from "@/lib/location-i18n";
 import { getLocalizedService } from "@/lib/service-i18n";
 import { localizeAreaDescription } from "@/lib/area-body-i18n";
+import { localizeSuburbBody } from "@/lib/suburb-body-i18n";
 
 /**
  * Server-side locale bundle builders for the location pages.
@@ -63,10 +64,22 @@ export type SuburbBundleEntry = {
 export function buildSuburbBundle(suburb: SuburbDetail): LocaleMap<SuburbBundleEntry> {
   return forEachLocale((locale) => {
     const localized = getLocalizedSuburb(suburb, locale);
+    const localisedBody = localizeSuburbBody(
+      suburb.slug,
+      locale,
+      localized.housingProfile,
+      localized.commonIssues
+    );
+
+    const faqs = [...localized.faqs];
+    if (localisedBody.localFaq) {
+      faqs.push(localisedBody.localFaq);
+    }
+
     return {
-      housingProfile: localized.housingProfile,
-      commonIssues: localized.commonIssues,
-      faqs: localized.faqs
+      housingProfile: localisedBody.housingProfile,
+      commonIssues: localisedBody.commonIssues,
+      faqs: faqs
     };
   });
 }
