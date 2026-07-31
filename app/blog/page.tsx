@@ -12,6 +12,11 @@ export const metadata = buildMetadata({
   description:
     "Professional home maintenance tips, painting guidance, leak repair advice and practical guides written by the KL Servis Rumah specialist team.",
   path: "/blog",
+  languageUrls: {
+    en: "/blog",
+    ms: "/ms/blog",
+    zh: "/zh/bo-ke",
+  },
   keywords: [
     "home maintenance tips Malaysia",
     "painting guide KL",
