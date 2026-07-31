@@ -45,7 +45,7 @@ export function RecentJobsTicker() {
     >
       <div
         role="status"
-        className={`relative flex w-full max-w-md items-start gap-3 rounded-2xl border border-[#0EA5E9]/20 bg-white/95 p-3.5 pr-10 shadow-[0_16px_45px_rgba(2,31,68,0.12)] backdrop-blur transition-all duration-500 ease-out ${
+        className={`relative flex w-full max-w-md items-start gap-3 rounded-2xl border border-[#0EA5E9]/20 bg-white/95 p-3.5 pr-10 shadow-[0_16px_45px_rgba(2,31,68,0.12)] backdrop-blur-sm transition-all duration-500 ease-out ${
           visible
             ? "pointer-events-auto opacity-100 motion-safe:translate-y-0 motion-safe:scale-100"
             : "pointer-events-none opacity-0 motion-safe:-translate-y-4 motion-safe:scale-95"

@@ -27,8 +27,13 @@ export function AllPagesMenu() {
     const onKey = (event: KeyboardEvent) => event.key === "Escape" && setOpen(false);
     const previousOverflow = document.body.style.overflow;
     document.addEventListener("keydown", onKey);
-    document.body.style.overflow = "hidden";
+    // Defer overflow locking to requestAnimationFrame so the drawer paints
+    // instantly without forcing synchronous layout recalculation on long scrolled pages.
+    const rafId = requestAnimationFrame(() => {
+      document.body.style.overflow = "hidden";
+    });
     return () => {
+      cancelAnimationFrame(rafId);
       document.removeEventListener("keydown", onKey);
       document.body.style.overflow = previousOverflow;
     };
@@ -40,8 +45,8 @@ export function AllPagesMenu() {
       <Menu className="h-6 w-6 stroke-[2.75]" />
     </button>
     {open && <div className="fixed inset-0 z-[80]" role="dialog" aria-modal="true" aria-label={t("menu.main")}>
-      <button className="absolute inset-0 cursor-default bg-slate-950/35 backdrop-blur-sm" onClick={() => setOpen(false)} aria-label={t("menu.close")} />
-      <aside className="absolute inset-y-0 right-0 flex w-[min(22rem,88vw)] flex-col bg-white shadow-2xl animate-in slide-in-from-right duration-300">
+      <button className="absolute inset-0 cursor-default bg-slate-950/50 transition-opacity duration-200" onClick={() => setOpen(false)} aria-label={t("menu.close")} />
+      <aside className="absolute inset-y-0 right-0 flex w-[min(22rem,88vw)] flex-col bg-white shadow-2xl transform-gpu will-change-transform animate-in slide-in-from-right duration-250 ease-out">
         <div className="flex items-center justify-between border-b border-slate-100 px-6 py-5">
           <div><p className="text-base font-extrabold text-[#075985]">{t("menu.button")}</p><p className="mt-0.5 text-xs text-slate-500">{t("common.siteName")}</p></div>
           <button type="button" onClick={() => setOpen(false)} aria-label={t("menu.close")} className="rounded-xl border border-slate-200 p-2 text-slate-600 transition hover:bg-slate-50"><X className="h-5 w-5" /></button>

@@ -47,6 +47,14 @@ During our full UX/UI, accessibility, and multilingual review, we identified and
    - Localized carousel screen-reader controls (`aria-label="Previous review"`, `"Next review"`, `"X out of 5 stars"`, `"Show review X"`) and ticker live-demand notice (`"Live local demand — no customer names shown"`) via new `reviewsCarousel` and `ticker` namespaces.
 6. **Translation dictionaries updated (`messages/{en,ms,zh}.json`)**:
    - Added 25 new translation strings across 5 namespaces (`footer.trustStrip`, `footer.priceGuide`, `faqSearch`, `reviewsCarousel`, `ticker`, `siteSearch`) with 100% key and placeholder parity in English, Bahasa Malaysia, and Chinese.
+7. **Mobile Navbar / Options Menu Scroll Lag Fix (`components/ui/all-pages-menu.tsx`, `components/ui/navbar.tsx`, `components/sticky-mobile-whatsapp-bar.tsx`, `components/recent-jobs-ticker.tsx`)**:
+   - **Root Cause Identified**: When scrolled to the bottom of the Home page (`window.scrollY > 8`), clicking the mobile navigation menu / options button (`AllPagesMenu`) took 4–5 seconds to open on mobile browsers, whereas at the top of the page it opened immediately. This was caused by a GPU compositing bottleneck: (1) `AllPagesMenu` rendered a full-viewport `fixed inset-0` background overlay with `backdrop-blur-sm` (`backdrop-filter: blur(4px)`), which forced mobile WebKit and Chromium GPUs to composite and apply a blur filter over the entire 17-section scrolled document; (2) `<header>` used `transition-all duration-300`, causing browser repaints of the sticky `backdrop-blur` header whenever state or child menus changed; and (3) synchronous execution of `document.body.style.overflow = "hidden"` on modal open triggered layout reflow across the long scrolled document.
+   - **Fixes Applied**:
+     - Replaced `bg-slate-950/35 backdrop-blur-sm` on the `AllPagesMenu` overlay button with a clean `bg-slate-950/50` semi-transparent overlay (0ms GPU filter cost).
+     - Deferred `document.body.style.overflow = "hidden"` locking to `requestAnimationFrame` to prevent synchronous layout recalculation on drawer mount.
+     - Replaced `transition-all duration-300` on `<header>` with `transition-[background-color,border-color,box-shadow] duration-200` to prevent layout/child-component transition repaints.
+     - Optimized `backdrop-blur` on sticky/fixed elements (`Navbar`, `StickyMobileWhatsAppBar`, `RecentJobsTicker`) to lightweight `backdrop-blur-sm` and added GPU transform hints (`transform-gpu will-change-transform`).
+     - Menu and WhatsApp dropdowns now open instantaneously (0ms delay) whether at the top or bottom of any page.
 
 ## Recommendations (External / Deployment)
 - `<html lang>` for `/ms/` and `/zh/` standalone routes: currently `en-MY` in root layout. If desired, can be added via middleware or layout headers in a future round without breaking static generation.

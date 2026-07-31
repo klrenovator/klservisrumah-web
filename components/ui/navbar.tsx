@@ -71,7 +71,7 @@ function HeaderWhatsAppActions({ compact = false }: { compact?: boolean }) {
         {!compact && <ChevronDown className={`h-3.5 w-3.5 transition-transform ${open ? "rotate-180" : ""}`} />}
       </button>
       {open && (
-        <div className="absolute right-0 top-full z-[70] mt-2 w-60 overflow-hidden rounded-2xl border border-emerald-100 bg-white p-2 text-sm shadow-[0_18px_50px_rgba(2,31,68,0.18)]">
+        <div className="absolute right-0 top-full z-[70] mt-2 w-60 overflow-hidden rounded-2xl border border-emerald-100 bg-white p-2 text-sm shadow-[0_18px_50px_rgba(2,31,68,0.18)] animate-in fade-in zoom-in-95 duration-150 transform-gpu">
           <a
             href={waLink}
             target="_blank"
@@ -119,7 +119,7 @@ export function Navbar() {
   useEffect(() => { setServicesOpen(false); }, [pathname]);
 
   const isServices = pathname === "/services" || pathname.startsWith("/services/");
-  return <header className={`sticky top-0 z-50 w-full transition-all duration-300 ${scrolled ? "border-b border-slate-100 bg-white/95 shadow-[0_4px_20px_rgba(0,0,0,0.08)] backdrop-blur" : "border-b border-slate-200 bg-white"}`}>
+  return <header className={`sticky top-0 z-50 w-full transition-[background-color,border-color,box-shadow] duration-200 ${scrolled ? "border-b border-slate-100 bg-white/95 shadow-[0_4px_20px_rgba(0,0,0,0.08)] backdrop-blur-sm" : "border-b border-slate-200 bg-white"}`}>
     <div className="hidden bg-[#075985] py-2 text-xs text-white sm:block">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 sm:px-6 lg:px-8">
         <span className="flex items-center gap-1.5 truncate font-black uppercase tracking-wider text-slate-200"><span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[#22c55e]" />{t("nav.topbar")}</span>
@@ -132,7 +132,7 @@ export function Navbar() {
         {PRIMARY_LINKS.slice(0, 1).map(item => <NavLink key={item.href} href={item.href} active={pathname === item.href} label={t(item.key)} />)}
         <div className="relative" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
           <button type="button" onClick={() => setServicesOpen(value => !value)} className={`relative inline-flex items-center gap-1 px-3 py-2 text-xs font-black uppercase tracking-widest transition-colors ${isServices ? "text-[#0284C7]" : "text-slate-900 hover:text-[#0284C7]"}`} aria-expanded={servicesOpen}>{t("nav.services")}<ChevronDown className={`h-3.5 w-3.5 transition-transform ${servicesOpen ? "rotate-180" : ""}`} />{isServices && <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#0284C7]" />}</button>
-          {servicesOpen && <div className="absolute left-0 top-full mt-2 w-[620px] rounded-2xl border border-slate-100 bg-white p-3 shadow-[0_18px_50px_rgba(2,31,68,0.15)]">
+          {servicesOpen && <div className="absolute left-0 top-full mt-2 w-[620px] rounded-2xl border border-slate-100 bg-white p-3 shadow-[0_18px_50px_rgba(2,31,68,0.15)] animate-in fade-in zoom-in-95 duration-150 transform-gpu">
             <div className="mb-2 flex items-center justify-between px-2"><span className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-400">{t("menu.services")}</span><Link href="/services" className="text-xs font-bold text-[#0284C7] hover:text-[#075985]">{t("common.viewAll")}</Link></div>
             <div className="grid grid-cols-2 gap-1">{Object.values(servicesData).map(source => { const service = getLocalizedService(source, lang); return <Link key={service.slug} href={`/services/${service.slug}`} className="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-sky-50 hover:text-[#0284C7]">{service.title}</Link>; })}</div>
           </div>}
