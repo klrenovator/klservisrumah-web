@@ -61,7 +61,7 @@ export function ContentHubPage({
               {description}
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a href={getWhatsAppLink({ service: title })} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#22C55E] px-6 py-3.5 text-sm font-black uppercase tracking-wider text-white shadow-lg shadow-green-950/30 transition hover:bg-[#16A34A]">
+              <a href={getWhatsAppLink({ service: title })} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-6 py-3.5 text-sm font-black uppercase tracking-wider text-white shadow-lg shadow-[#075E54]/30 transition hover:bg-[#128C7E]">
                 <MessageSquare className="h-4 w-4" /> WhatsApp Advice
               </a>
               <Link href={primaryCtaHref} className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3.5 text-sm font-black uppercase tracking-wider text-[#075985] transition hover:bg-sky-50">
@@ -171,7 +171,7 @@ export function ContentHubPage({
                 </p>
               </div>
               <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
-                <a href={getWhatsAppLink({ service: title })} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#22C55E] px-6 py-3.5 text-sm font-black uppercase tracking-wider text-white transition hover:bg-[#16A34A]">
+                <a href={getWhatsAppLink({ service: title })} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-6 py-3.5 text-sm font-black uppercase tracking-wider text-white transition hover:bg-[#128C7E]">
                   <MessageSquare className="h-4 w-4" /> WhatsApp Now
                 </a>
                 <Link href="/areas" className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3.5 text-sm font-black uppercase tracking-wider text-[#075985] transition hover:bg-sky-50">

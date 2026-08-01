@@ -63,7 +63,7 @@ export function ProjectGallery() {
                     <Link href={serviceHref[project.service] ?? "/services"} className="text-xs font-black uppercase tracking-widest text-[#0EA5E9] hover:text-[#075985]">
                       Service page
                     </Link>
-                    <a href={getWhatsAppLink({ service: project.title, location: project.location })} target="_blank" rel="noopener noreferrer" className="rounded-lg bg-[#22C55E] px-3 py-2 text-[11px] font-black text-white transition hover:bg-[#16A34A]">
+                    <a href={getWhatsAppLink({ service: project.title, location: project.location })} target="_blank" rel="noopener noreferrer" className="rounded-lg bg-[#25D366] px-3 py-2 text-[11px] font-black text-white transition hover:bg-[#128C7E]">
                       Quote
                     </a>
                   </div>

@@ -263,7 +263,7 @@ export function SubserviceDetailContent({ service, sub, baseService }: Subservic
               rel="noopener noreferrer"
               className="btn-whatsapp text-base"
             >
-              <MessageSquare className="w-5 h-5 fill-white text-[#22C55E]" />
+              <MessageSquare className="w-5 h-5 fill-white text-[#25D366]" />
               <span>{t("serviceDetail.bookSubWhatsApp", { name: sub.name })}</span>
               <ArrowRight className="w-4 h-4" />
             </a>

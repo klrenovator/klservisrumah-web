@@ -149,7 +149,7 @@ export default async function LocalizedLandingPage(props: { params: Promise<{ la
               href={siteConfig.whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-[#22C55E] font-semibold hover:underline"
+              className="inline-flex items-center gap-1 text-[#25D366] font-semibold hover:underline"
             >
               <MessageSquare className="w-3.5 h-3.5" />
               WhatsApp

@@ -275,7 +275,7 @@ export function EstimateResultPanel({
                 trackWhatsAppClick({ service: result.recommendedService, page: toolName });
                 trackEvent({ action: "estimator_book_now", category: "lead", label: toolName, value: grandTotal });
               }}
-              className="inline-flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-[#22C55E] px-5 py-3.5 text-sm font-black text-white shadow-lg shadow-emerald-500/25 transition hover:bg-[#16A34A]"
+              className="inline-flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-5 py-3.5 text-sm font-black text-white shadow-lg shadow-[#25D366]/25 transition hover:bg-[#128C7E]"
             >
               <MessageSquare className="h-4 w-4" /> {t("estimator.result.bookNow")}
             </a>
@@ -579,7 +579,7 @@ export function EstimateResultPanel({
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleSendEstimate}
-                className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-2xl bg-[#22C55E] px-6 py-3.5 text-sm font-black text-white shadow-lg shadow-emerald-500/25 transition hover:bg-[#16A34A] sm:flex-none"
+                className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-6 py-3.5 text-sm font-black text-white shadow-lg shadow-[#25D366]/25 transition hover:bg-[#128C7E] sm:flex-none"
               >
                 <MessageSquare className="h-5 w-5" />
                 Send via WhatsApp

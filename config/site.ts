@@ -18,6 +18,13 @@ export const siteConfig = {
   phoneDisplay: "+60 11-1662 7349",
   whatsapp: "601116627349",
   whatsappLink: "https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah,%20I%20want%20to%20book%20a%20home%20service%20for%20my%20property.",
+  // Official WhatsApp brand colors (brand.whatsapp.com) — used for every
+  // WhatsApp CTA across the site so they always match the app recognisably.
+  whatsappColors: {
+    green: "#25D366", // WhatsApp Green — primary button background
+    teal: "#128C7E", // Teal Green — hover state
+    darkGreen: "#075E54", // Dark Green — deep accents (rings, deep shadows)
+  },
   email: "info@klservisrumah.my",
   address: "Jalan Kiara, Mont Kiara, 50480 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia",
   addressStreet: "Jalan Kiara, Mont Kiara",

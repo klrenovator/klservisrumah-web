@@ -93,7 +93,7 @@ export function MultiStepBookingForm() {
         <p className="mt-3 text-sm font-semibold leading-relaxed text-[#475569]">
           {t("contact.bookingCompiledDesc")}
         </p>
-        <button onClick={submit} className="mt-6 rounded-xl bg-[#22C55E] px-5 py-3 text-sm font-extrabold text-white">
+        <button onClick={submit} className="mt-6 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white">
           {t("contact.openWhatsApp")}
         </button>
       </div>
@@ -231,7 +231,7 @@ export function MultiStepBookingForm() {
             {t("common.continue")}
           </button>
         ) : (
-          <button type="button" onClick={submit} disabled={!canContinue} className="rounded-xl bg-[#22C55E] px-5 py-3 text-sm font-extrabold text-white disabled:cursor-not-allowed disabled:bg-slate-300">
+          <button type="button" onClick={submit} disabled={!canContinue} className="rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white disabled:cursor-not-allowed disabled:bg-slate-300">
             {t("contact.submitAndOpen")}
           </button>
         )}

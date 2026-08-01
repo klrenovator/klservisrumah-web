@@ -143,7 +143,7 @@ export function LocaleSuburbServiceView({
                 href={getWhatsAppLink({ service: serviceBundle.en.title, location: suburbName })}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#22C55E] px-5 py-3 text-sm font-extrabold text-white"
+                className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white"
               >
                 <MessageCircle className="h-4 w-4" /> {t("location.whatsappDispatch")}
               </a>

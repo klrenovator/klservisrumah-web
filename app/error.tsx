@@ -40,7 +40,7 @@ export default function ErrorPage({ error, reset }: { error: Error & { digest?: 
             href={getWhatsAppLink({ service: "website issue report" })}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-xl bg-[#22C55E] px-5 py-3 text-sm font-extrabold text-white"
+            className="rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white"
           >
             {t("error.whatsappReport")}
           </a>

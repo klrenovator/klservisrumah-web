@@ -114,9 +114,9 @@ export function LocaleAreaView({
                     href={waLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full bg-[#22C55E] hover:bg-[#1eb050] text-white text-center font-extrabold text-sm py-4 rounded-xl transition-all duration-200 shadow-sm flex items-center justify-center gap-2"
+                    className="w-full bg-[#25D366] hover:bg-[#128C7E] text-white text-center font-extrabold text-sm py-4 rounded-xl transition-all duration-200 shadow-sm flex items-center justify-center gap-2"
                   >
-                    <MessageSquare className="w-4.5 h-4.5 fill-white text-[#22C55E]" />
+                    <MessageSquare className="w-4.5 h-4.5 fill-white text-[#25D366]" />
                     <span>{t("common.bookWhatsApp")}</span>
                   </a>
                   <a

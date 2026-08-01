@@ -75,7 +75,7 @@ export function LocaleNearMeView({
             href={getWhatsAppLink({ service: serviceBundle.en.title, location: areaBundle.en.name })}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-8 inline-flex rounded-xl bg-[#22C55E] px-5 py-3 text-sm font-extrabold text-white"
+            className="mt-8 inline-flex rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white"
           >
             {t("location.nearMeCta")}
           </a>
