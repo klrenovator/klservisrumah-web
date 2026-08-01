@@ -34,7 +34,7 @@ type LogoProps = {
  * and Next.js reserves the right box, avoiding layout shift.
  */
 const ART = {
-  lockup: { src: "/logo/logo-lockup.png", w: 1558, h: 400 },
+  lockup: { src: "/logo/logo-lockup.png", w: 520, h: 133 },
   full: { src: "/logo/logo.png", w: 1200, h: 558 },
   icon: { src: "/logo/logo-icon.png", w: 512, h: 512 },
 } as const;

@@ -110,15 +110,9 @@ export default function RootLayout({
       <head>
         {/* Bing Webmaster verification — explicit meta guarantees detection even if Metadata API changes */}
         <meta name="msvalidate.01" content="6CA0BEF9CB1FECC50C10A3F56F7ED27E" />
-        {/* Performance hints — pre-warm critical third-party endpoints */}
+        {/* Performance hints — only preconnect what is actually used on first paint */}
         <link rel="preconnect" href="https://wa.me" crossOrigin="" />
-        <link rel="preconnect" href="https://api.whatsapp.com" crossOrigin="" />
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://www.google-analytics.com" />
         <link rel="dns-prefetch" href="https://wa.me" />
-        <link rel="dns-prefetch" href="https://api.whatsapp.com" />
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         
         {/* 1. Organization Schema */}
         <script
