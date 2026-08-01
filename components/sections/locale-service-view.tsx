@@ -9,6 +9,7 @@ import { ServiceDetailContent } from "@/components/sections/service-detail-conte
 import { SubserviceDetailHero } from "@/components/sections/subservice-detail-hero";
 import { SubserviceDetailContent } from "@/components/sections/subservice-detail-content";
 import type { SubService } from "@/config/services-data";
+import { ServiceEstimatorBlock } from "@/components/tools/service-estimator-block";
 
 type LocaleServiceViewProps = {
   service: ServiceDetail;
@@ -19,6 +20,9 @@ type LocaleServiceViewProps = {
  * Client-side wrapper that picks the localized content for the active
  * language (EN / MS / ZH) and renders either the parent service page or
  * a sub-service page. Falls back to English when a locale is missing.
+ * 
+ * IMPORTANT: The ServiceEstimatorBlock is rendered FIRST, before the hero,
+ * so customers can immediately calculate their estimate without scrolling.
  */
 export function LocaleServiceView({ service, sub }: LocaleServiceViewProps) {
   const { lang } = useLang();
@@ -38,7 +42,13 @@ export function LocaleServiceView({ service, sub }: LocaleServiceViewProps) {
 
   return (
     <>
+      {/* Calculator/Estimator at TOP - before hero image for immediate access */}
+      <ServiceEstimatorBlock slug={service.slug} title={service.title} warranty={service.warranty} />
+      
+      {/* Hero section comes AFTER estimator */}
       <ServiceDetailHero service={localized} />
+      
+      {/* Rest of content (overviews, FAQs, etc.) */}
       <ServiceDetailContent service={localized} />
     </>
   );
