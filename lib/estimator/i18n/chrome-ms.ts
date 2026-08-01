@@ -65,7 +65,17 @@ export const chromeMsDict: MessageDictionary = {
     "whatWeAssumed": "Apa yang kami anggapkan",
     "nextStepsTitle": "Langkah seterusnya disyorkan",
     "maintenanceTitle": "Tip penyenggaraan",
-    "relatedReading": "Bacaan berkaitan"
+    "relatedReading": "Bacaan berkaitan",
+    "sendToCustomer": "Hantar Anggaran kepada Pelanggan",
+    "sendToCustomerDesc": "Kongsi anggaran ini dengan pelanggan anda melalui WhatsApp",
+    "sendToCustomerBtn": "Hantar kepada Pelanggan",
+    "customerNameLabel": "Nama Pelanggan (Pilihan)",
+    "customerPhoneLabel": "Telefon Pelanggan (Pilihan)",
+    "messagePreview": "Pratonton Mesej",
+    "sendViaWhatsApp": "Hantar melalui WhatsApp",
+    "copyMessage": "Salin Mesej",
+    "messageCopied": "Mesej disalin ke papan klip!",
+    "estimateReady": "Mesej anggaran sedia untuk dihantar! Pelanggan anda akan menerima pecahan terperinci."
   },
   "severity": {
     "routine": "Biasa",

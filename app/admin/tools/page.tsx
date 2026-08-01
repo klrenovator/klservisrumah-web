@@ -192,7 +192,7 @@ export default function AdminToolsPage() {
                   <ArrowRight className="h-5 w-5 text-slate-400 transition group-hover:translate-x-1 group-hover:text-violet-600" />
                 </div>
                 <h4 className="mt-4 font-black text-[#075985]">{tool.name}</h4>
-                <p className="mt-1 text-xs text-slate-500 line-clamp-2">{tool.tagline}</p>
+                <p className="mt-1 text-xs text-slate-500 line-clamp-2">{tool.intro}</p>
                 <div className="mt-3 flex flex-wrap gap-2">
                   {tool.stats.map((stat) => (
                     <span key={stat.label} className="rounded-full bg-slate-100 px-2 py-1 text-[10px] font-bold text-slate-600">
