@@ -13,12 +13,9 @@ import { RelatedServices } from "@/components/sections/related-services";
 import { RelatedProblems } from "@/components/sections/related-problems";
 import { ServiceAreaLinks } from "@/components/sections/service-area-links";
 import { warrantyLead } from "@/lib/utils";
-// Imported statically, not via next/dynamic. The estimator is now the first
-// block under the hero, so a Suspense boundary would stream it in *after*
-// every section below it — pushing the page's primary answer ("how much
-// does this cost?") to the bottom of the raw HTML a crawler reads, and
-// showing a skeleton in the most valuable slot on the page.
-import { ServiceEstimatorBlock } from "@/components/tools/service-estimator-block";
+// NOTE: ServiceEstimatorBlock has been moved to locale-service-view.tsx
+// and is now rendered at the TOP of the page (before the hero) for
+// immediate customer access. Do not import it here.
 
 type ServiceDetailContentProps = {
   service: ServiceDetail;
@@ -27,28 +24,25 @@ type ServiceDetailContentProps = {
 /**
  * ServiceDetailContent — Klrenovator-style service page body.
  * Sections in order:
- *   1. Instant estimator (or a link to the dedicated tool for that trade) —
- *      deliberately the FIRST block under the hero: "how much will this cost?"
- *      is the question every visitor arrives with, so the answer must not be
- *      buried below a wall of description text.
- *   2. Overview (description + highlights)
- *   3. Direct Answer (AI-citable)
- *   4. Sub-services pricing
- *   5. Process Timeline
- *   6. Decision Tree
- *   7. Comparison Table (us vs typical)
- *   8. Trust badges row
- *   9. FAQs
- *  10. Related problems, coverage areas and related services (internal linking)
+ *   1. Overview (description + highlights)
+ *   2. Direct Answer (AI-citable)
+ *   3. Sub-services pricing
+ *   4. Process Timeline
+ *   5. Decision Tree
+ *   6. Comparison Table (us vs typical)
+ *   7. Trust badges row
+ *   8. FAQs
+ *   9. Related problems, coverage areas and related services (internal linking)
+ * 
+ * NOTE: The ServiceEstimatorBlock is rendered at the TOP of the page
+ * in locale-service-view.tsx, NOT here. This ensures customers see the
+ * calculator immediately without scrolling.
  */
 export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
   const t = useTranslations();
   return (
     <>
-      {/* Section 1 — Instant estimator, the very first block under the hero */}
-      <ServiceEstimatorBlock slug={service.slug} title={service.title} warranty={service.warranty} />
-
-      {/* Section 2 — Overview */}
+      {/* Section 1 — Overview */}
       <section className="section-tight bg-white">
         <div className="container-default">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">

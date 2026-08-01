@@ -883,7 +883,17 @@
       "whatWeAssumed": "What we assumed",
       "nextStepsTitle": "Recommended next steps",
       "maintenanceTitle": "Maintenance tips",
-      "relatedReading": "Related reading"
+      "relatedReading": "Related reading",
+      "sendToCustomer": "Send Estimate to Customer",
+      "sendToCustomerDesc": "Share this estimate with your customer via WhatsApp",
+      "sendToCustomerBtn": "Send to Customer",
+      "customerNameLabel": "Customer Name (Optional)",
+      "customerPhoneLabel": "Customer Phone (Optional)",
+      "messagePreview": "Message Preview",
+      "sendViaWhatsApp": "Send via WhatsApp",
+      "copyMessage": "Copy Message",
+      "messageCopied": "Message copied to clipboard!",
+      "estimateReady": "Estimate message ready to send! Your customer will receive a detailed breakdown."
     },
     "severity": {
       "routine": "Routine",
