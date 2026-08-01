@@ -83,14 +83,7 @@ export default async function AreaSlugPage(props: { params: Promise<{ slug: stri
       name: area.name,
       containedInPlace: { "@type": "State", name: area.state }
     },
-    parentOrganization: { "@id": `${baseUrl}/#organization` },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: siteConfig.reviewRating,
-      reviewCount: siteConfig.reviewCount,
-      bestRating: 5,
-      worstRating: 1
-    }
+    parentOrganization: { "@id": `${baseUrl}/#organization` }
   };
 
   return (

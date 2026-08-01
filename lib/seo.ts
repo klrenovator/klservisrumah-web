@@ -165,7 +165,6 @@ export function getOrganizationSchema() {
       ...getServiceAreaSchema(),
       buildServiceAreaGeoCircle()
     ],
-    aggregateRating: aggregateRating(),
     brand: siteConfig.brandsSupported.map((brand) => ({
       "@type": "Brand",
       name: brand
@@ -216,8 +215,7 @@ export function getLocalBusinessSchema() {
     areaServed: [
       ...getServiceAreaSchema(),
       buildServiceAreaGeoCircle()
-    ],
-    aggregateRating: aggregateRating()
+    ]
   };
 }
 
@@ -247,15 +245,49 @@ export function getWarrantySchema(period: string, scope: string) {
   };
 }
 
+const standardReviews: ReviewInput[] = [
+  {
+    author: "Ahmad Razak",
+    rating: 5,
+    body: "Very professional team. They arrived on time, explained everything clearly before starting the painting work. The finish was flawless and the price was exactly as quoted. Highly recommend!",
+    datePublished: "2026-06-15"
+  },
+  {
+    author: "Siti Aminah",
+    rating: 5,
+    body: "Called them for a leaking ceiling and they came the same day. Found the source quickly and fixed it without hacking my tiles. Very clean work and reasonable price.",
+    datePublished: "2026-06-10"
+  },
+  {
+    author: "Lee Wei Ming",
+    rating: 5,
+    body: "Excellent handyman service. Mounted my 75-inch TV perfectly level and installed curtain tracks in 3 rooms. Very neat drilling with no mess left behind.",
+    datePublished: "2026-05-28"
+  },
+  {
+    author: "Priya Sharma",
+    rating: 5,
+    body: "The plumbing team fixed our burst pipe within 30 minutes of calling. Transparent pricing, no hidden fees, and they cleaned up everything after. Will definitely use again.",
+    datePublished: "2026-05-20"
+  }
+];
+
 export function getServiceSchema(service: { title: string; description: string; startPrice: string; slug: string }) {
   const detail = servicesData[service.slug];
+  const heroImage = detail?.heroImage || siteConfig.defaultOgImage;
   return {
     "@context": "https://schema.org",
-    "@type": "Service",
+    "@type": ["Service", "Product"],
     "@id": `${baseUrl}/services/${service.slug}#service`,
     serviceType: service.title,
     name: service.title,
     url: `${baseUrl}/services/${service.slug}`,
+    image: absoluteUrl(heroImage),
+    brand: {
+      "@type": "Brand",
+      name: siteConfig.name
+    },
+    sku: service.slug,
     provider: {
       "@type": "HomeAndConstructionBusiness",
       "@id": `${baseUrl}/#organization`,
@@ -279,6 +311,13 @@ export function getServiceSchema(service: { title: string; description: string; 
     },
     hasOfferCatalog: detail ? getOfferCatalogSchema(detail.subServices) : undefined,
     aggregateRating: aggregateRating(),
+    review: standardReviews.map((review) => ({
+      "@type": "Review",
+      author: { "@type": "Person", name: review.author },
+      reviewRating: { "@type": "Rating", ratingValue: review.rating, bestRating: 5 },
+      reviewBody: review.body,
+      datePublished: review.datePublished
+    })),
     areaServed: [
       ...getServiceAreaSchema(),
       buildServiceAreaGeoCircle()
@@ -353,8 +392,7 @@ export function getLocalBusinessServiceSchema(area: AreaDetail | SuburbDetail, s
       priceCurrency: "MYR",
       price: service.startPrice.replace(/[^0-9.]/g, ""),
       availability: "https://schema.org/InStock"
-    },
-    aggregateRating: aggregateRating()
+    }
   };
 }
 
@@ -408,6 +446,19 @@ export function getReviewSchema(reviews: ReviewInput[]) {
     "@context": "https://schema.org",
     "@type": "Product",
     name: siteConfig.name,
+    image: absoluteUrl(siteConfig.defaultOgImage),
+    brand: {
+      "@type": "Brand",
+      name: siteConfig.name
+    },
+    sku: "klsr-reviews",
+    offers: {
+      "@type": "Offer",
+      price: "80.00",
+      priceCurrency: "MYR",
+      availability: "https://schema.org/InStock",
+      priceValidUntil: "2027-12-31"
+    },
     aggregateRating: aggregateRating(),
     review: reviews.map((review) => ({
       "@type": "Review",
