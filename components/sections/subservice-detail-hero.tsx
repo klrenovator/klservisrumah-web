@@ -115,7 +115,7 @@ export function SubserviceDetailHero({ service, sub }: SubserviceDetailHeroProps
                 rel="noopener noreferrer"
                 className="btn-whatsapp text-base"
               >
-                <MessageSquare className="w-5 h-5 fill-white text-[#22C55E]" />
+                <MessageSquare className="w-5 h-5 fill-white text-[#25D366]" />
                 <span>{t("serviceDetail.bookWhatsApp")}</span>
               </a>
               <a
@@ -173,7 +173,7 @@ export function SubserviceDetailHero({ service, sub }: SubserviceDetailHeroProps
                 rel="noopener noreferrer"
                 className="btn-whatsapp w-full"
               >
-                <MessageSquare className="w-4 h-4 fill-white text-[#22C55E]" />
+                <MessageSquare className="w-4 h-4 fill-white text-[#25D366]" />
                 <span>{t("subserviceHero.getMyQuote")}</span>
               </a>
               <a

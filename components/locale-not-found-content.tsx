@@ -30,7 +30,7 @@ export function LocaleNotFoundContent() {
             href={getWhatsAppLink()}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#22C55E] px-5 py-3 text-sm font-extrabold text-white"
+            className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white"
           >
             <MessageCircle className="h-4 w-4" /> {t("notFound.whatsappUs")}
           </a>

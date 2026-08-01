@@ -105,7 +105,7 @@ export function EstimatorShareBar({
             target="_blank"
             rel="noopener noreferrer"
             onClick={trackShare}
-            className="inline-flex min-h-9 items-center gap-1.5 rounded-full bg-[#22C55E] px-3 py-1.5 text-xs font-black text-white transition hover:bg-[#16A34A]"
+            className="inline-flex min-h-9 items-center gap-1.5 rounded-full bg-[#25D366] px-3 py-1.5 text-xs font-black text-white transition hover:bg-[#128C7E]"
           >
             <MessageSquare className="h-3.5 w-3.5" /> {t("estimateShare.shareWhatsApp")}
           </a>
@@ -134,7 +134,7 @@ export function EstimatorShareBar({
           target="_blank"
           rel="noopener noreferrer"
           onClick={trackShare}
-          className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-[#22C55E] px-4 py-2.5 text-sm font-black text-white shadow-md shadow-emerald-500/20 transition hover:bg-[#16A34A]"
+          className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-[#25D366] px-4 py-2.5 text-sm font-black text-white shadow-md shadow-[#25D366]/20 transition hover:bg-[#128C7E]"
         >
           <MessageSquare className="h-4 w-4" /> {t("estimateShare.shareWhatsApp")}
         </a>

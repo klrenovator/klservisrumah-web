@@ -148,7 +148,7 @@ export function EstimateHub({ links }: { links: EstimateLinkEntry[] }) {
                     onClick={() =>
                       trackEvent({ action: "estimator_share_whatsapp", category: "engagement", label: entry.path })
                     }
-                    className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[#22C55E] text-white transition hover:bg-[#16A34A]"
+                    className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[#25D366] text-white transition hover:bg-[#128C7E]"
                   >
                     <MessageSquare className="h-4 w-4" aria-hidden="true" />
                   </a>

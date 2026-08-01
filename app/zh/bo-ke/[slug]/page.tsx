@@ -93,7 +93,7 @@ export default async function ChineseArticle({ params }: { params: Promise<{ slu
           <aside className="mt-12 rounded-2xl bg-slate-50 p-6 sm:p-8">
             <h2 className="text-xl font-extrabold text-[#075985]">需要{post.category}帮助？</h2>
             <p className="mt-2 text-slate-600">联系我们在吉隆坡和雪兰莪的团队，获取免费报价。</p>
-            <a className="mt-4 inline-flex items-center gap-2 rounded-xl bg-[#22C55E] px-5 py-3 text-sm font-bold text-white hover:bg-[#16A34A] transition-colors" href={getWhatsAppLink({ service: original.category })} target="_blank" rel="noopener noreferrer">
+            <a className="mt-4 inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-bold text-white hover:bg-[#128C7E] transition-colors" href={getWhatsAppLink({ service: original.category })} target="_blank" rel="noopener noreferrer">
               <MessageSquare className="h-4 w-4" /> WhatsApp 咨询
             </a>
           </aside>

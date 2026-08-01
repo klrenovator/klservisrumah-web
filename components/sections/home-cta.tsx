@@ -29,9 +29,9 @@ export function HomeCTA() {
             href={getWhatsAppLink()}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#22C55E] hover:bg-[#1eb050] text-white text-center font-extrabold text-base px-8 py-4 rounded-2xl transition-all duration-200 shadow-sm flex items-center justify-center gap-2"
+            className="bg-[#25D366] hover:bg-[#128C7E] text-white text-center font-extrabold text-base px-8 py-4 rounded-2xl transition-all duration-200 shadow-sm flex items-center justify-center gap-2"
           >
-            <MessageSquare className="w-5 h-5 fill-white text-[#22C55E]" />
+            <MessageSquare className="w-5 h-5 fill-white text-[#25D366]" />
             <span>{t("home.cta.bookButton")}</span>
           </a>
           <a

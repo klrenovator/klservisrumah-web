@@ -133,9 +133,9 @@ export default async function BlogPostSlugPage(props: { params: Promise<{ slug: 
                 href={waLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#22C55E] hover:bg-[#1eb050] text-white text-center font-extrabold text-sm px-6 py-3.5 rounded-xl transition-all duration-200 shadow-sm flex items-center gap-2"
+                className="bg-[#25D366] hover:bg-[#128C7E] text-white text-center font-extrabold text-sm px-6 py-3.5 rounded-xl transition-all duration-200 shadow-sm flex items-center gap-2"
               >
-                <MessageSquare className="w-4.5 h-4.5 fill-white text-[#22C55E]" />
+                <MessageSquare className="w-4.5 h-4.5 fill-white text-[#25D366]" />
                 <span>Chat On WhatsApp</span>
               </a>
             </div>

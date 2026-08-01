@@ -31,7 +31,7 @@ export default function ChineseFaqPage() {
           <FaqHeroHeading />
           <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto">
             <div className="flex items-center gap-4 mt-2">
-              <a href={getWhatsAppLink()} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#22C55E] hover:bg-[#16A34A] text-white font-extrabold text-sm px-6 py-3 rounded-xl transition-all duration-200 shadow-sm">
+              <a href={getWhatsAppLink()} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white font-extrabold text-sm px-6 py-3 rounded-xl transition-all duration-200 shadow-sm">
                 <MessageSquare className="w-4 h-4" />
                 <span>WhatsApp 咨询</span>
               </a>

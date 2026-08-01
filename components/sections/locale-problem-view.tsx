@@ -73,7 +73,7 @@ export function LocaleProblemView({ problem, service }: LocaleProblemViewProps) 
           <div className="sticky top-28 rounded-3xl bg-[#0284C7] p-6 text-white shadow-xl">
             <h2 className="text-2xl font-extrabold">{t.needFixed}</h2>
             <p className="mt-2 text-sm font-semibold text-blue-50">{t.needFixedBody}</p>
-            <a href={getWhatsAppLink({ service: localizedProblem.title })} target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#22C55E] px-5 py-3 text-sm font-extrabold text-white">
+            <a href={getWhatsAppLink({ service: localizedProblem.title })} target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white">
               <MessageCircle className="h-4 w-4" /> {t.whatsapp}
             </a>
           </div>

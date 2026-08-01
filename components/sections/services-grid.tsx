@@ -106,7 +106,7 @@ export function ServicesGrid() {
                   target="_blank"
                   rel="nofollow noopener noreferrer"
                   aria-label={`${t("common.bookService")} — ${service.title}`}
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#15803D] py-3.5 text-xs font-black uppercase tracking-widest text-white shadow-sm transition-all duration-200 hover:bg-[#166534] hover:shadow-green-200 active:scale-[0.98]"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] py-3.5 text-xs font-black uppercase tracking-widest text-white shadow-sm transition-all duration-200 hover:bg-[#128C7E] hover:shadow-[#25D366]/40 active:scale-[0.98]"
                 >
                   <MessageSquare className="h-4 w-4" /> {t("common.bookService")}
                 </a>

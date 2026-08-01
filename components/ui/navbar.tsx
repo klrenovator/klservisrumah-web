@@ -51,8 +51,8 @@ function HeaderWhatsAppActions({ compact = false }: { compact?: boolean }) {
       aria-label={t("common.whatsapp")}
       className={
         compact
-          ? "inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-[#15803D] text-white shadow-[0_8px_22px_rgba(21,128,61,0.35)] ring-1 ring-emerald-900/10 transition hover:bg-[#166534] focus-visible:outline-[#166534]"
-          : "inline-flex items-center gap-2 rounded-xl bg-[#15803D] px-5 py-2.5 text-sm font-extrabold text-white shadow-[0_8px_22px_rgba(21,128,61,0.22)] transition hover:bg-[#166534] hover:shadow-[0_10px_26px_rgba(21,128,61,0.28)]"
+          ? "inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-[#25D366] text-white shadow-[0_8px_22px_rgba(37,211,102,0.35)] ring-1 ring-[#075E54]/10 transition hover:bg-[#128C7E] focus-visible:outline-[#128C7E]"
+          : "inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-5 py-2.5 text-sm font-extrabold text-white shadow-[0_8px_22px_rgba(37,211,102,0.22)] transition hover:bg-[#128C7E] hover:shadow-[0_10px_26px_rgba(18,140,126,0.28)]"
       }
     >
       <WhatsAppIcon className={compact ? "h-6 w-6" : "h-4 w-4"} />

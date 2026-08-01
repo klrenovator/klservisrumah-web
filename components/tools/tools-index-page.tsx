@@ -235,7 +235,7 @@ export function ToolsIndexPage({
                 href={getWhatsAppLink({ service: copy.waCustomService })}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-5 inline-flex items-center justify-center gap-2 rounded-2xl bg-[#22C55E] px-5 py-3.5 text-sm font-black text-white transition hover:bg-[#16A34A]"
+                className="mt-5 inline-flex items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-5 py-3.5 text-sm font-black text-white transition hover:bg-[#128C7E]"
               >
                 <MessageSquare className="h-4 w-4" /> {copy.ctaQuote}
               </a>
