@@ -65,7 +65,17 @@ export const chromeZhDict: MessageDictionary = {
     "whatWeAssumed": "我们的假设",
     "nextStepsTitle": "建议的后续步骤",
     "maintenanceTitle": "保养提示",
-    "relatedReading": "延伸阅读"
+    "relatedReading": "延伸阅读",
+    "sendToCustomer": "发送估价给客户",
+    "sendToCustomerDesc": "通过 WhatsApp 与客户分享此估价",
+    "sendToCustomerBtn": "发送给客户",
+    "customerNameLabel": "客户姓名（可选）",
+    "customerPhoneLabel": "客户电话（可选）",
+    "messagePreview": "消息预览",
+    "sendViaWhatsApp": "通过 WhatsApp 发送",
+    "copyMessage": "复制消息",
+    "messageCopied": "消息已复制到剪贴板！",
+    "estimateReady": "估价消息已准备好发送！您的客户将收到详细的报价明细。"
   },
   "severity": {
     "routine": "例行",
