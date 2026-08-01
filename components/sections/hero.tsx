@@ -3,10 +3,12 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { siteConfig } from "@/config/site";
-import { servicesData } from "@/config/services-data";
+import { serviceSummaryBySlug, serviceSummaryList } from "@/config/service-summary.generated";
 import { ArrowRight, ShieldCheck, MessageSquare, Phone, Star } from "lucide-react";
+import { getLocalizedServiceSummary } from "@/lib/service-summary-i18n";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { useTranslations } from "@/hooks/use-translations";
+import { useLang } from "@/context/lang-context";
 
 // Photographic hero slideshow — matches the KLRenovator gold-standard
 // visual language while keeping the KL Servis Rumah quote form.
@@ -47,6 +49,7 @@ type QuoteBoxProps = {
   onAreaChange: (value: string) => void;
   onSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
   variant: "desktop" | "mobile";
+  lang: "en" | "ms" | "zh";
   t: (key: string, vars?: Record<string, string>) => string;
 };
 
@@ -57,6 +60,7 @@ function QuoteBox({
   onAreaChange,
   onSubmit,
   variant,
+  lang,
   t
 }: QuoteBoxProps) {
   return (
@@ -89,11 +93,14 @@ function QuoteBox({
             <option value="" disabled className="text-[#475569]">
               {t("hero.selectService")}
             </option>
-            {Object.values(servicesData).map((service) => (
-              <option key={service.slug} value={service.slug}>
-                {service.title} (From {service.startPrice})
-              </option>
-            ))}
+            {serviceSummaryList.map((sourceService) => {
+              const service = getLocalizedServiceSummary(sourceService, lang);
+              return (
+                <option key={service.slug} value={service.slug}>
+                  {service.title} ({t("common.fromLabel")} {service.startPrice})
+                </option>
+              );
+            })}
           </select>
         </div>
 
@@ -140,13 +147,16 @@ export function Hero() {
   const [previous, setPrevious] = useState<number | null>(null);
   const [visible, setVisible] = useState(true);
   const t = useTranslations();
+  const { lang } = useLang();
 
   const handleBook = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const serviceName = selectedService
-      ? servicesData[selectedService]?.title
+    const localizedSelectedService = selectedService
+      ? serviceSummaryBySlug[selectedService]
+        ? getLocalizedServiceSummary(serviceSummaryBySlug[selectedService], lang).title
+        : t("common.bookService")
       : t("common.bookService");
-    const waLink = getWhatsAppLink({ service: serviceName, location: selectedArea });
+    const waLink = getWhatsAppLink({ service: localizedSelectedService, location: selectedArea });
     window.open(waLink, "_blank");
   };
 
@@ -177,6 +187,7 @@ export function Hero() {
     onServiceChange: setSelectedService,
     onAreaChange: setSelectedArea,
     onSubmit: handleBook,
+    lang,
     t
   };
 
@@ -228,16 +239,23 @@ export function Hero() {
         </div>
 
         {/* Slide indicators */}
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex gap-2">
+        <div className="absolute bottom-6 left-1/2 z-30 flex -translate-x-1/2 gap-1">
           {HERO_IMAGES.map((img, i) => (
             <button
               key={img.src}
+              type="button"
               onClick={() => setSlide(i)}
-              className={`h-1 rounded-full transition-all duration-500 ${
-                i === current ? "w-8 bg-white" : "w-2 bg-white/35 hover:bg-white/60"
-              }`}
+              className="flex h-8 w-8 items-center justify-center rounded-full"
               aria-label={`Slide ${i + 1}: ${img.alt}`}
-            />
+              aria-pressed={i === current}
+            >
+              <span
+                aria-hidden="true"
+                className={`block h-1.5 rounded-full transition-all duration-500 ${
+                  i === current ? "w-8 bg-white" : "w-3 bg-white/35 hover:bg-white/60"
+                }`}
+              />
+            </button>
           ))}
         </div>
 

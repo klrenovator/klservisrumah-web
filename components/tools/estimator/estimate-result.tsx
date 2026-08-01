@@ -20,8 +20,7 @@ import {
   ShieldCheck,
   Sparkles,
   User,
-  Wrench,
-  X
+  Wrench
 } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { trackEvent, trackPhoneCall, trackWhatsAppClick } from "@/lib/analytics";
@@ -194,10 +193,6 @@ export function EstimateResultPanel({
       label: toolName,
       value: grandTotal
     });
-  };
-
-  const openWhatsAppWithEstimate = () => {
-    window.open(whatsappHref, "_blank");
   };
 
   return (

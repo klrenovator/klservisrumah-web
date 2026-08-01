@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronDown, Phone } from "lucide-react";
 import { siteConfig } from "@/config/site";
-import { servicesData } from "@/config/services-data";
+import { serviceSummaryList } from "@/config/service-summary.generated";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { trackWhatsAppClick } from "@/lib/analytics";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
@@ -13,7 +13,7 @@ import { AllPagesMenu } from "@/components/ui/all-pages-menu";
 import { Logo } from "@/components/ui/logo";
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
-import { getLocalizedService } from "@/lib/service-i18n";
+import { getLocalizedServiceSummary } from "@/lib/service-summary-i18n";
 
 const PRIMARY_LINKS = [
   { href: "/", key: "nav.home" },
@@ -51,8 +51,8 @@ function HeaderWhatsAppActions({ compact = false }: { compact?: boolean }) {
       aria-label={t("common.whatsapp")}
       className={
         compact
-          ? "inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-[#25D366] text-white shadow-[0_8px_22px_rgba(37,211,102,0.35)] ring-1 ring-[#128C7E]/20 transition hover:bg-[#1fb957] focus-visible:outline-[#128C7E]"
-          : "inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-5 py-2.5 text-sm font-extrabold text-white shadow-[0_8px_22px_rgba(37,211,102,0.22)] transition hover:bg-[#1fb957] hover:shadow-[0_10px_26px_rgba(37,211,102,0.28)]"
+          ? "inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-[#15803D] text-white shadow-[0_8px_22px_rgba(21,128,61,0.35)] ring-1 ring-emerald-900/10 transition hover:bg-[#166534] focus-visible:outline-[#166534]"
+          : "inline-flex items-center gap-2 rounded-xl bg-[#15803D] px-5 py-2.5 text-sm font-extrabold text-white shadow-[0_8px_22px_rgba(21,128,61,0.22)] transition hover:bg-[#166534] hover:shadow-[0_10px_26px_rgba(21,128,61,0.28)]"
       }
     >
       <WhatsAppIcon className={compact ? "h-6 w-6" : "h-4 w-4"} />
@@ -86,14 +86,14 @@ export function Navbar() {
       </div>
     </div>
     <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-1.5 min-[430px]:gap-3 px-2 min-[430px]:px-3 sm:px-6 lg:px-8">
-      <Link href="/" className="shrink-0" aria-label="KL Servis Rumah homepage"><span className="sm:hidden"><Logo size="sm" priority={false} /></span><span className="hidden sm:inline"><Logo size="md" priority={false} /></span></Link>
+      <Link href="/" className="shrink-0" aria-label="KL Servis Rumah homepage"><span className="sm:hidden"><Logo size="sm" priority /></span><span className="hidden sm:inline"><Logo size="md" priority /></span></Link>
       <div className="hidden items-center gap-1 lg:flex">
         {PRIMARY_LINKS.slice(0, 1).map(item => <NavLink key={item.href} href={item.href} active={pathname === item.href} label={t(item.key)} />)}
         <div className="relative" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
           <button type="button" onClick={() => setServicesOpen(value => !value)} className={`relative inline-flex items-center gap-1 px-3 py-2 text-xs font-black uppercase tracking-widest transition-colors ${isServices ? "text-[#0284C7]" : "text-slate-900 hover:text-[#0284C7]"}`} aria-expanded={servicesOpen}>{t("nav.services")}<ChevronDown className={`h-3.5 w-3.5 transition-transform ${servicesOpen ? "rotate-180" : ""}`} />{isServices && <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#0284C7]" />}</button>
           {servicesOpen && <div className="absolute left-0 top-full mt-2 w-[620px] rounded-2xl border border-slate-100 bg-white p-3 shadow-[0_18px_50px_rgba(2,31,68,0.15)] animate-in fade-in zoom-in-95 duration-150 transform-gpu">
             <div className="mb-2 flex items-center justify-between px-2"><span className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-400">{t("menu.services")}</span><Link href="/services" className="text-xs font-bold text-[#0284C7] hover:text-[#075985]">{t("common.viewAll")}</Link></div>
-            <div className="grid grid-cols-2 gap-1">{Object.values(servicesData).map(source => { const service = getLocalizedService(source, lang); return <Link key={service.slug} href={`/services/${service.slug}`} className="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-sky-50 hover:text-[#0284C7]">{service.title}</Link>; })}</div>
+            <div className="grid grid-cols-2 gap-1">{serviceSummaryList.map(source => { const service = getLocalizedServiceSummary(source, lang); return <Link key={service.slug} href={`/services/${service.slug}`} className="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-sky-50 hover:text-[#0284C7]">{service.title}</Link>; })}</div>
           </div>}
         </div>
         {PRIMARY_LINKS.slice(1).map(item => <NavLink key={item.href} href={item.href} active={pathname === item.href || pathname.startsWith(`${item.href}/`)} label={t(item.key)} />)}

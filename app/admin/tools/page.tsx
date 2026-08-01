@@ -2,28 +2,24 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { 
-  Calculator, 
-  Lock, 
-  ArrowRight, 
+import {
+  Calculator,
+  Lock,
+  ArrowRight,
   MessageSquare,
   Paintbrush,
   Wrench,
-  Home,
   ShieldCheck,
   Eye,
-  EyeOff,
-  Sparkles
+  EyeOff
 } from "lucide-react";
 import { servicesData } from "@/config/services-data";
 import { toolsContent } from "@/config/tools-data";
-import { useTranslations } from "@/hooks/use-translations";
 
 // Simple password - you can change this
 const ADMIN_PASSWORD = "KL2024Admin"; // Change this to your desired password
 
 export default function AdminToolsPage() {
-  const t = useTranslations();
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
