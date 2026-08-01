@@ -59,7 +59,7 @@ export function LanguageSwitcher() {
             type="button"
             onClick={() => handleChange(option.code)}
             aria-pressed={active}
-            aria-label={option.full}
+            aria-label={`${option.full} language`}
             title={option.full}
             className={`rounded-full px-1.5 py-1 text-[10px] min-[430px]:px-2.5 min-[430px]:text-[11px] font-bold leading-5 transition-colors ${
               active

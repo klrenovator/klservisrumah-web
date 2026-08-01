@@ -76,10 +76,11 @@ function QuoteBox({
 
       <form onSubmit={onSubmit} className="flex flex-col gap-5">
         <div className="flex flex-col gap-2">
-          <label className="text-xs font-extrabold text-[#075985] uppercase tracking-wider">
+          <label htmlFor={`${variant}-service`} className="text-xs font-extrabold text-[#075985] uppercase tracking-wider">
             {t("hero.serviceLabel")}
           </label>
           <select
+            id={`${variant}-service`}
             value={selectedService}
             onChange={(e) => onServiceChange(e.target.value)}
             required
@@ -97,10 +98,11 @@ function QuoteBox({
         </div>
 
         <div className="flex flex-col gap-2">
-          <label className="text-xs font-extrabold text-[#075985] uppercase tracking-wider">
+          <label htmlFor={`${variant}-area`} className="text-xs font-extrabold text-[#075985] uppercase tracking-wider">
             {t("hero.locationLabel")}
           </label>
           <select
+            id={`${variant}-area`}
             value={selectedArea}
             onChange={(e) => onAreaChange(e.target.value)}
             required
@@ -200,7 +202,7 @@ export function Hero() {
               decoding="async"
               placeholder="blur"
               blurDataURL={HERO_BLUR}
-              quality={85}
+              quality={65}
             />
           ) : null}
           <Image
@@ -217,7 +219,7 @@ export function Hero() {
             }`}
             placeholder="blur"
             blurDataURL={HERO_BLUR}
-            quality={85}
+            quality={65}
             onLoad={() => setVisible(true)}
           />
           {/* Layered overlays for text contrast */}
@@ -246,9 +248,9 @@ export function Hero() {
             <div className="lg:col-span-7 flex flex-col items-start gap-6 text-white">
               {/* Rating badge */}
               <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-md">
-                <div className="flex items-center gap-0.5">
+                <div className="flex items-center gap-0.5" aria-hidden="true">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-3 w-3 fill-amber-400 text-amber-400" />
+                    <Star key={i} className="h-3 w-3 fill-amber-400 text-amber-400" aria-hidden="true" />
                   ))}
                 </div>
                 <span className="text-[11px] font-black uppercase tracking-widest text-white/90">

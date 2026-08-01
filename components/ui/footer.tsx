@@ -44,24 +44,25 @@ export function Footer() {
 
   return (
     <footer className="bg-white text-slate-500 border-t border-slate-200">
-      {/* Trust strip — surfaces the four core promises on every page */}
-      <div className="bg-gradient-to-r from-sky-50 via-white to-emerald-50/60 border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 grid grid-cols-2 md:grid-cols-4 gap-3 text-[11px] sm:text-xs text-slate-700 font-semibold">
-          <div className="flex items-center gap-2">
-            <ShieldCheck className="h-4 w-4 text-emerald-500 shrink-0" />
-            <span>{t("footer.trustStrip.insured")}</span>
+      {/* Trust strip — surfaces the four core promises on every page.
+          Fixed height + no-wrap to completely eliminate CLS (0.307 culprit on both mobile & desktop) */}
+      <div className="bg-gradient-to-r from-sky-50 via-white to-emerald-50/60 border-b border-slate-100 h-[52px] md:h-[44px] flex items-center overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-0.5 text-[10px] sm:text-[11px] text-slate-700 font-semibold">
+          <div className="flex items-center gap-1.5">
+            <ShieldCheck className="h-3.5 w-3.5 text-emerald-500 shrink-0" />
+            <span className="leading-tight truncate">{t("footer.trustStrip.insured")}</span>
           </div>
-          <div className="flex items-center gap-2">
-            <CheckCircle className="h-4 w-4 text-sky-500 shrink-0" />
-            <span>{t("footer.trustStrip.fixedQuote")}</span>
+          <div className="flex items-center gap-1.5">
+            <CheckCircle className="h-3.5 w-3.5 text-sky-500 shrink-0" />
+            <span className="leading-tight truncate">{t("footer.trustStrip.fixedQuote")}</span>
           </div>
-          <div className="flex items-center gap-2">
-            <ShieldCheck className="h-4 w-4 text-amber-500 shrink-0" />
-            <span>{t("footer.trustStrip.warranty")}</span>
+          <div className="flex items-center gap-1.5">
+            <ShieldCheck className="h-3.5 w-3.5 text-amber-500 shrink-0" />
+            <span className="leading-tight truncate">{t("footer.trustStrip.warranty")}</span>
           </div>
-          <div className="flex items-center gap-2">
-            <CheckCircle className="h-4 w-4 text-violet-500 shrink-0" />
-            <span>{t("footer.trustStrip.dispatch")}</span>
+          <div className="flex items-center gap-1.5">
+            <CheckCircle className="h-3.5 w-3.5 text-violet-500 shrink-0" />
+            <span className="leading-tight truncate">{t("footer.trustStrip.dispatch")}</span>
           </div>
         </div>
       </div>
