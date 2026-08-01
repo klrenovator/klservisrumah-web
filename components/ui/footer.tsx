@@ -3,12 +3,12 @@
 import React from "react";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
-import { servicesData } from "@/config/services-data";
+import { serviceSummaryBySlug, serviceSummaryList } from "@/config/service-summary.generated";
 import { Phone, Mail, MapPin, Clock, ShieldCheck, CheckCircle } from "lucide-react";
 import { Logo } from "@/components/ui/logo";
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
-import { getLocalizedService } from "@/lib/service-i18n";
+import { getLocalizedServiceSummary } from "@/lib/service-summary-i18n";
 import { getLocalizedArea } from "@/lib/location-i18n";
 import { areaPages } from "@/config/area-data";
 
@@ -18,9 +18,9 @@ export function Footer() {
   const { lang } = useLang();
 
   // Top services for footer (limited to 8 for cleaner layout)
-  const topServices = Object.values(servicesData)
+  const topServices = serviceSummaryList
     .slice(0, 8)
-    .map((source) => getLocalizedService(source, lang));
+    .map((source) => getLocalizedServiceSummary(source, lang));
 
   // Curated top areas for footer — mirrors KLRenovator area-linking density
   // and pushes internal-link equity from every page to the most valuable
@@ -48,21 +48,21 @@ export function Footer() {
           Fixed height + no-wrap to completely eliminate CLS (0.307 culprit on both mobile & desktop) */}
       <div className="bg-gradient-to-r from-sky-50 via-white to-emerald-50/60 border-b border-slate-100 h-[52px] md:h-[44px] flex items-center overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-0.5 text-[10px] sm:text-[11px] text-slate-700 font-semibold">
-          <div className="flex items-center gap-1.5">
+          <div className="flex min-w-0 items-center gap-1.5">
             <ShieldCheck className="h-3.5 w-3.5 text-emerald-500 shrink-0" />
-            <span className="leading-tight truncate">{t("footer.trustStrip.insured")}</span>
+            <span className="min-w-0 leading-tight truncate">{t("footer.trustStrip.insured")}</span>
           </div>
-          <div className="flex items-center gap-1.5">
+          <div className="flex min-w-0 items-center gap-1.5">
             <CheckCircle className="h-3.5 w-3.5 text-sky-500 shrink-0" />
-            <span className="leading-tight truncate">{t("footer.trustStrip.fixedQuote")}</span>
+            <span className="min-w-0 leading-tight truncate">{t("footer.trustStrip.fixedQuote")}</span>
           </div>
-          <div className="flex items-center gap-1.5">
+          <div className="flex min-w-0 items-center gap-1.5">
             <ShieldCheck className="h-3.5 w-3.5 text-amber-500 shrink-0" />
-            <span className="leading-tight truncate">{t("footer.trustStrip.warranty")}</span>
+            <span className="min-w-0 leading-tight truncate">{t("footer.trustStrip.warranty")}</span>
           </div>
-          <div className="flex items-center gap-1.5">
+          <div className="flex min-w-0 items-center gap-1.5">
             <CheckCircle className="h-3.5 w-3.5 text-violet-500 shrink-0" />
-            <span className="leading-tight truncate">{t("footer.trustStrip.dispatch")}</span>
+            <span className="min-w-0 leading-tight truncate">{t("footer.trustStrip.dispatch")}</span>
           </div>
         </div>
       </div>
@@ -109,9 +109,9 @@ export function Footer() {
             <p className="text-[10px] font-black uppercase tracking-widest text-sky-600 mb-2">{t("nav.pricing")}</p>
             <ul className="space-y-1.5">
               <li><Link href="/pricing" className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("pricing.pageTitle")}</Link></li>
-              <li><Link href="/services/painting" className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("footer.priceGuide", { service: getLocalizedService(servicesData.painting, lang).title })}</Link></li>
-              <li><Link href="/services/plumbing" className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("footer.priceGuide", { service: getLocalizedService(servicesData.plumbing, lang).title })}</Link></li>
-              <li><Link href="/services/waterproofing" className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("footer.priceGuide", { service: getLocalizedService(servicesData.waterproofing, lang).title })}</Link></li>
+              <li><Link href="/services/painting" className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("footer.priceGuide", { service: getLocalizedServiceSummary(serviceSummaryBySlug.painting, lang).title })}</Link></li>
+              <li><Link href="/services/plumbing" className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("footer.priceGuide", { service: getLocalizedServiceSummary(serviceSummaryBySlug.plumbing, lang).title })}</Link></li>
+              <li><Link href="/services/waterproofing" className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("footer.priceGuide", { service: getLocalizedServiceSummary(serviceSummaryBySlug.waterproofing, lang).title })}</Link></li>
             </ul>
           </div>
 

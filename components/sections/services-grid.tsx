@@ -2,13 +2,13 @@
 
 import React from "react";
 import Link from "next/link";
-import { servicesData } from "@/config/services-data";
+import { serviceSummaryList } from "@/config/service-summary.generated";
 import { ArrowRight, CheckCircle, MessageSquare } from "lucide-react";
+import { getLocalizedServiceSummary } from "@/lib/service-summary-i18n";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { ServiceIcon } from "@/components/ui/service-icon";
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
-import { getLocalizedService } from "@/lib/service-i18n";
 import { warrantyLead } from "@/lib/utils";
 import { Reveal } from "@/components/ui/reveal";
 
@@ -37,8 +37,8 @@ export function ServicesGrid() {
 
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {Object.values(servicesData).map((sourceService, idx) => {
-            const service = getLocalizedService(sourceService, lang);
+          {serviceSummaryList.map((sourceService, idx) => {
+            const service = getLocalizedServiceSummary(sourceService, lang);
             // Stagger the reveal within the visible row (cap so late
             // cards don't wait too long after scrolling into view).
             const delay = Math.min((idx % 6) * 60, 300);
@@ -94,10 +94,20 @@ export function ServicesGrid() {
 
               {/* Matching paired service actions: clear detail path + instant booking. */}
               <div className="mt-8 flex flex-col gap-3 border-t border-slate-100 pt-6">
-                <Link href={`/services/${service.slug}`} className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#0284C7] py-3.5 text-xs font-black uppercase tracking-widest text-white transition-all duration-200 hover:bg-[#0369A1] active:scale-[0.98]">
+                <Link
+                  href={`/services/${service.slug}`}
+                  aria-label={`${t("common.viewDetails")} — ${service.title}`}
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#0284C7] py-3.5 text-xs font-black uppercase tracking-widest text-white transition-all duration-200 hover:bg-[#0369A1] active:scale-[0.98]"
+                >
                   {t("common.viewDetails")} <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
                 </Link>
-                <a href={getWhatsAppLink({ service: service.title })} target="_blank" rel="nofollow noopener noreferrer" className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#22C55E] py-3.5 text-xs font-black uppercase tracking-widest text-white shadow-sm transition-all duration-200 hover:bg-[#16A34A] hover:shadow-green-200 active:scale-[0.98]">
+                <a
+                  href={getWhatsAppLink({ service: service.title })}
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label={`${t("common.bookService")} — ${service.title}`}
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#15803D] py-3.5 text-xs font-black uppercase tracking-widest text-white shadow-sm transition-all duration-200 hover:bg-[#166534] hover:shadow-green-200 active:scale-[0.98]"
+                >
                   <MessageSquare className="h-4 w-4" /> {t("common.bookService")}
                 </a>
                 <span className="text-center text-xs font-bold text-emerald-600">{warrantyLead(service.warranty)} {t("services.guaranteeLabel")}</span>

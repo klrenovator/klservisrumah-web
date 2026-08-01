@@ -61,9 +61,9 @@ export function LanguageSwitcher() {
             aria-pressed={active}
             aria-label={`${option.full} language`}
             title={option.full}
-            className={`rounded-full px-1.5 py-1 text-[10px] min-[430px]:px-2.5 min-[430px]:text-[11px] font-bold leading-5 transition-colors ${
+            className={`min-h-9 min-w-9 rounded-full px-2 py-1.5 text-[11px] min-[430px]:px-3 min-[430px]:text-xs font-bold leading-5 transition-colors ${
               active
-                ? "bg-[#0284C7] text-white shadow-sm"
+                ? "bg-[#075985] text-white shadow-sm"
                 : "text-[#475569] hover:bg-slate-50 hover:text-[#075985]"
             }`}
           >
