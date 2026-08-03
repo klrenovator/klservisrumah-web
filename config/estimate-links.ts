@@ -43,6 +43,15 @@ export type EstimateLinkEntry = {
   startPrice: string;
   /** The shareable path: always `/estimate/<slug>`. */
   path: string;
+  /**
+   * The final destination of the shareable path. Identical to `path` for the
+   * 22 generic estimators; for the 6 dedicated-tool services it is the
+   * `/tools/<tool-slug>` page their short URL 301-redirects to. Internal page
+   * links (hub card CTA) should use this so crawlers never follow a needless
+   * redirect, while the *displayed* and *copied* URL stays the uniform short
+   * `/estimate/<slug>` the owner pastes into WhatsApp.
+   */
+  resolvedPath: string;
   /** How the link resolves — a direct estimator page or a redirect to a deep tool. */
   kind: EstimateLinkKind;
   /** For `dedicated` entries, the underlying `/tools/<slug>` page. */
@@ -61,11 +70,13 @@ export function estimatePath(slug: string): string {
 export function buildEstimateLinks(): EstimateLinkEntry[] {
   return Object.values(servicesData).map((service) => {
     const toolSlug = DEDICATED_TOOL_BY_SERVICE[service.slug];
+    const path = estimatePath(service.slug);
     return {
       slug: service.slug,
       title: service.title,
       startPrice: service.startPrice,
-      path: estimatePath(service.slug),
+      path,
+      resolvedPath: toolSlug ? `/tools/${toolSlug}` : path,
       kind: toolSlug ? "dedicated" : "generic",
       ...(toolSlug ? { toolSlug } : {})
     };
