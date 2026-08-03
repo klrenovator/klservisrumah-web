@@ -127,7 +127,7 @@ export function EstimateHub({ links }: { links: EstimateLinkEntry[] }) {
                 </p>
                 <div className="mt-4 flex flex-wrap items-center gap-2">
                   <Link
-                    href={entry.path}
+                    href={entry.resolvedPath}
                     className="inline-flex min-h-11 items-center gap-1.5 rounded-xl bg-gradient-to-br from-[#075985] to-[#0EA5E9] px-4 py-2.5 text-xs font-black text-white transition hover:from-[#0c4a6e] hover:to-[#0284C7]"
                   >
                     {t("estimateShare.openEstimator")} <ArrowRight className="h-3.5 w-3.5" />
