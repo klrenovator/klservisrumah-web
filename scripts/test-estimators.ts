@@ -871,7 +871,7 @@ console.log("\n• Deep-tool chrome sync with site dictionaries");
   // The standalone chrome modules carry only the shared form/result/fields
   // sections — the generic service-estimator sections belong to the site
   // dictionaries and are intentionally excluded to keep tool routes lean.
-  const chromeSections = ["common", "form", "result", "severity", "whatsapp"] as const;
+  const chromeSections = ["common", "form", "result", "severity", "whatsapp", "sendToCustomer"] as const;
   const chromePairs: [string, MessageDictionary, MessageDictionary][] = [
     ["en", chromeEnDict, enMessages as MessageDictionary],
     ["ms", chromeMsDict, msMessages as MessageDictionary],

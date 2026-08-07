@@ -183,7 +183,7 @@ export function EstimateResultPanel({
 
   const handleSendEstimate = () => {
     if (!customerPhone && !customerName) {
-      alert("Please enter customer name or phone number");
+      alert(t("estimator.sendToCustomer.needContact"));
       return;
     }
     setMessageSent(true);
@@ -515,8 +515,8 @@ export function EstimateResultPanel({
               <Send className="h-6 w-6 text-violet-600" />
             </div>
             <div>
-              <h3 className="text-lg font-black text-[#075985]">Send Estimate to Customer</h3>
-              <p className="text-sm font-semibold text-slate-600">Share this estimate with your customer via WhatsApp</p>
+              <h3 className="text-lg font-black text-[#075985]">{t("estimator.sendToCustomer.title")}</h3>
+              <p className="text-sm font-semibold text-slate-600">{t("estimator.sendToCustomer.subtitle")}</p>
             </div>
           </div>
           <button
@@ -526,7 +526,7 @@ export function EstimateResultPanel({
               showSendPanel ? "bg-slate-200 text-slate-700 hover:bg-slate-300" : "bg-violet-600 text-white hover:bg-violet-700"
             }`}
           >
-            {showSendPanel ? "Close" : "Send to Customer"}
+            {showSendPanel ? t("estimator.sendToCustomer.close") : t("estimator.sendToCustomer.open")}
           </button>
         </div>
 
@@ -537,26 +537,26 @@ export function EstimateResultPanel({
               <div>
                 <label className="mb-2 block text-sm font-bold text-slate-700">
                   <User className="mr-2 inline h-4 w-4" />
-                  Customer Name (Optional)
+                  {t("estimator.sendToCustomer.nameLabel")}
                 </label>
                 <input
                   type="text"
                   value={customerName}
                   onChange={(e) => setCustomerName(e.target.value)}
-                  placeholder="e.g. Ahmad Razak"
+                  placeholder={t("estimator.sendToCustomer.namePlaceholder")}
                   className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-medium text-slate-800 placeholder:text-slate-400 focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500/20"
                 />
               </div>
               <div>
                 <label className="mb-2 block text-sm font-bold text-slate-700">
                   <Phone className="mr-2 inline h-4 w-4" />
-                  Customer Phone (Optional)
+                  {t("estimator.sendToCustomer.phoneLabel")}
                 </label>
                 <input
                   type="tel"
                   value={customerPhone}
                   onChange={(e) => setCustomerPhone(e.target.value)}
-                  placeholder="e.g. 0123456789"
+                  placeholder={t("estimator.sendToCustomer.phonePlaceholder")}
                   className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-medium text-slate-800 placeholder:text-slate-400 focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500/20"
                 />
               </div>
@@ -565,7 +565,7 @@ export function EstimateResultPanel({
             {/* Preview Message */}
             <div>
               <label className="mb-2 block text-sm font-bold text-slate-700">
-                📝 Message Preview
+                📝 {t("estimator.sendToCustomer.previewLabel")}
               </label>
               <div className="max-h-80 overflow-y-auto rounded-xl border border-slate-200 bg-white p-4">
                 <pre className="whitespace-pre-wrap text-xs font-medium text-slate-700">{customerEstimateMessage}</pre>
@@ -582,24 +582,24 @@ export function EstimateResultPanel({
                 className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-6 py-3.5 text-sm font-black text-white shadow-lg shadow-[#25D366]/25 transition hover:bg-[#128C7E] sm:flex-none"
               >
                 <MessageSquare className="h-5 w-5" />
-                Send via WhatsApp
+                {t("estimator.sendToCustomer.sendWhatsApp")}
               </a>
               <button
                 type="button"
                 onClick={() => {
                   navigator.clipboard.writeText(customerEstimateMessage);
-                  alert("Message copied to clipboard!");
+                  alert(t("estimator.sendToCustomer.copied"));
                 }}
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl border-2 border-slate-300 bg-white px-6 py-3.5 text-sm font-bold text-slate-700 transition hover:border-slate-400 hover:bg-slate-50"
               >
-                Copy Message
+                {t("estimator.sendToCustomer.copyMessage")}
               </button>
             </div>
 
             {messageSent && (
               <div className="flex items-center gap-2 rounded-xl bg-emerald-50 p-4 text-sm font-bold text-emerald-700">
                 <BadgeCheck className="h-5 w-5" />
-                Estimate message ready to send! Your customer will receive a detailed breakdown.
+                {t("estimator.sendToCustomer.ready")}
               </div>
             )}
           </div>

@@ -930,6 +930,22 @@
       "siteVisitGreeting": "您好 KL Servis Rumah，我想预约免费上门勘查。",
       "siteVisitLine": "网站估价：{price}（{low} – {high}）— {service}。"
     },
+    "sendToCustomer": {
+      "title": "将估价发送给客户",
+      "subtitle": "通过 WhatsApp 与您的客户分享此估价",
+      "open": "发送给客户",
+      "close": "关闭",
+      "nameLabel": "客户姓名（选填）",
+      "namePlaceholder": "例如：Ahmad Razak",
+      "phoneLabel": "客户电话（选填）",
+      "phonePlaceholder": "例如：0123456789",
+      "previewLabel": "消息预览",
+      "sendWhatsApp": "通过 WhatsApp 发送",
+      "copyMessage": "复制消息",
+      "copied": "消息已复制到剪贴板！",
+      "needContact": "请输入客户姓名或电话号码",
+      "ready": "估价消息已准备好发送！您的客户将收到详细的费用明细。"
+    },
     "steps": {
       "scopeTitle": "您需要什么？",
       "scopeSub": "下方每个选项均按本服务公布的费率计价。",

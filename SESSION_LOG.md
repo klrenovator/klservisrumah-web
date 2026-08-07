@@ -472,3 +472,75 @@ All green: lint 0/0, type-check PASS, build SUCCESS (4,245 pages), estimator tes
 - All seven fixes reuse dictionary keys that already existed in EN/MS/ZH — zero new translation debt, and the new links render in-language on localized pages.
 - The `NoFallbackError` line in the prod-server log during the 404 smoke test is Next.js's internal mechanism for serving a genuine 404 on a `dynamicParams = false` route — the response is a correct HTTP 404, not an error.
 - Headline outcome: **1,077 orphaned pages (25% of the site) brought into the internal link graph**, and the single defect most likely to have been suppressing indexation — nine hubs plus the entire MS/ZH tree being invisible to crawlers — is resolved at its root cause.
+
+---
+
+## Session 006
+
+**Date:** 2026-08-07 (UTC)
+**Branch:** `arena/019fdb85-klservisrumah-web` (continuing from S005 @ `e76cbb1`)
+**Status:** ✅ COMPLETED
+
+### Objectives
+- Continue autonomously from S005's recommended next task and audit the dimensions previous sessions had not measured directly: **security headers** and **hardcoded-English leakage in shared client components**.
+- Fix, verify, re-audit.
+
+### Issues discovered & fixed this session (2 new, both fixed)
+
+**🟠 N8 — No Content-Security-Policy anywhere on the site.**
+Five security headers were configured (HSTS, `X-Frame-Options`, `nosniff`, `Referrer-Policy`, `Permissions-Policy`) but **CSP was entirely absent** — the most effective defence-in-depth header against XSS and the clearest gap in an otherwise disciplined header set. The app writes trusted JSON-LD and a locale-bootstrap script via `dangerouslySetInnerHTML` in nine locations; CSP is what caps the damage if any of those ever receives attacker-influenced input, and it independently blocks injected third-party scripts, foreign form posts, plugins and framing.
+
+*Fix:* a policy derived from an actual inventory of what the app loads — I enumerated every external origin referenced in source (only Google Tag Manager, plus GA collection endpoints), every `data:`/`blob:` usage (the hero's base64 SVG blur placeholder, next/image), every fetch/beacon target (`/api/error-log`, admin endpoints), and confirmed zero iframes and zero remote image patterns. Result: `default-src 'self'`; `object-src`/`frame-src`/`frame-ancestors` `'none'`; `form-action 'self'`; `base-uri 'self'`; origin-limited `script-src`; `upgrade-insecure-requests`. Added `Cross-Origin-Opener-Policy: same-origin` and `Cross-Origin-Resource-Policy: same-origin`.
+
+*Documented trade-off:* `script-src` keeps `'unsafe-inline'`. Next.js App Router bootstraps hydration with inline scripts and this site is ~4,245 statically prerendered pages served from a CDN, so no per-request nonce exists. This is stated explicitly in the config comment rather than left as a silent compromise. The policy is still a large net gain — an injected `<script src="https://evil.tld">` is blocked, as are `eval`, foreign form actions, plugins and framing.
+
+*Care taken:* `next.config.mjs` already carried a comment warning that a later matching `headers()` rule overrides an earlier one for the same key, and that this had previously stomped the `immutable` cache policy on hashed assets. I added CSP to the existing catch-all block (not a new rule) and **explicitly re-verified** `Cache-Control: public, max-age=31536000, immutable` still lands on `/_next/static/*` afterwards.
+
+**🟡 N9 — "Send Estimate to Customer" panel was hardcoded English on every locale.**
+13 user-facing strings — heading, subtitle, toggle label, two field labels, two placeholders, preview label, two buttons, two `alert()` messages and the success confirmation — were literal English inside `estimate-result.tsx`. That component is `EstimateResultPanel`, shared by **every** estimator surface including the five MS wizards (`/ms/alatan/*`) and five ZH wizards (`/zh/gongju/*`). A Malay or Chinese visitor completing an estimate hit a block of raw English mid-flow.
+
+*Fix:* new `estimator.sendToCustomer` namespace (14 keys) added to all three site dictionaries **and** all three standalone chrome modules, with Malay and Chinese written naturally for native speakers. The component resolves every string through the locale-aware `t()` already in scope — no signature change.
+
+*Guard extended:* the repo has a strict harness asserting the standalone chrome modules never drift from `messages/*.json`, but it only covered five sections. I added `sendToCustomer` to `chromeSections` in `scripts/test-estimators.ts` so this namespace gets the same protection. Assertions 231,498 → **231,501**.
+
+### Files modified (8)
+- `next.config.mjs` — CSP + COOP/CORP + `X-DNS-Prefetch-Control` (N8).
+- `components/tools/estimator/estimate-result.tsx` — 13 strings routed through `t()` (N9).
+- `messages/en.json`, `messages/ms.json`, `messages/zh.json` — `estimator.sendToCustomer` × 14 keys (N9).
+- `lib/estimator/i18n/chrome-en.ts`, `chrome-ms.ts`, `chrome-zh.ts` — same namespace for the deep-tool routes (N9).
+- `scripts/test-estimators.ts` — harness now guards the new section (N9).
+- Governance: `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
+
+### Files created / deleted
+None.
+
+### Tests/Verification performed
+1. `npm run lint` — **0 errors, 0 warnings** (2×). 2. `npm run type-check` — **PASS** (2×).
+3. `npm run build` — **SUCCESS**, 4,245 pages. 4. Estimator harness — **231,501 assertions, 0 failures**.
+5. `npm audit` — **0 vulnerabilities**.
+6. Dictionaries — **1,055 keys × 3 locales, 0 missing, 0 empty** (was 1,041; +14 × 3).
+7. **CSP correctness, empirically:** header confirmed present on HTML *and* static assets; `immutable` caching preserved on `/_next/static/*`; parsed the delivered policy and checked every subresource the homepage actually fetches against it — all same-origin (`/_next/...`, `/logo/...`) and permitted. The one flagged external origin was `https://www.klservisrumah.my` appearing in `rel="canonical"`/`hreflang` links, which CSP does not govern (no fetch occurs) and which is `'self'` in production — verified as a false positive of the local-host test rather than assumed.
+8. **25-URL prod-server smoke under the live CSP** — all 200, `/admin/login` 200, unknown URL → real **404**. Covered EN, MS and ZH trees, both tool locales, estimator, area/near-me/cost/emergency pages, `manifest.json`, `sw.js`, `robots.txt`, `sitemap.xml`.
+9. Confirmed the Malay and Chinese `sendToCustomer` strings ship in their respective locale route bundles by fetching each route's client chunks; confirmed each locale wizard binds its own chrome dict (`chromeMsDict`/`chromeZhDict`), so the correct language renders.
+
+### Build/Lint/Type-Check Status
+All green: lint 0/0, type-check PASS, build SUCCESS (4,245 pages), 231,501 estimator assertions, `npm audit` 0 vulnerabilities.
+
+### Current Project Status
+- 🔴 Critical: **0 remaining.** 🟠 High: N8 ✅ (new); S005's N3/N4/N5/N7 ✅; H3 pilot live; H1/H1b business override; H2 field-data gated.
+- 🟡 Medium: N9 ✅ (new); S005's N1/N2/N6 ✅; A1, M1–M5, M7, M9 ✅; M8 deferred. 🟢 Low: L1–L11 ✅.
+- **Production-ready.** Remaining items are owner-side (env vars, pings) or data-gated.
+
+### Remaining priorities
+1. **CSP field-check after deploy** — the policy was verified against every subresource the build references, but browsers issue runtime-only requests too. Watch one real session for violations; if anything is blocked, widen that specific directive rather than loosening `default-src`.
+2. Deploy + re-crawl to re-measure GSC coverage after S005's linking repair.
+3. H3 full-rollout go/no-go on post-fix data.
+4. Owner-side: `ADMIN_PASSWORD` + env vars in Vercel; GBP / IndexNow / Bing pings.
+
+### Recommended Next Task
+CSP field-check, then the "low inbound (≤2)" tier: 648 `/suburbs/*` and the 1,036 near-me pages now have ≥1 inbound link but remain thin on internal equity — a contextual related-links block is the natural next improvement.
+
+### Notes
+- No business logic, pricing, colour, schema meaning or English copy changed. N8 is a header addition; N9 replaces English literals with the translations of the same text.
+- Both fixes were verified by observing real behaviour (delivered headers, parsed policy vs. actual subresources, strings present in locale bundles) rather than by reading the diff.
+- The `'unsafe-inline'` compromise in `script-src` is a genuine constraint of static Next.js, not an oversight; it is documented in the config so a future session does not "discover" it as a finding.

@@ -97,6 +97,22 @@ export const chromeEnDict: MessageDictionary = {
     "closing": "Please confirm availability and the final quotation after inspection.",
     "siteVisitGreeting": "Hi KL Servis Rumah, I would like to request a free site visit.",
     "siteVisitLine": "Website estimate: {price} ({low} – {high}) for {service}."
+  },
+  "sendToCustomer": {
+    "title": "Send Estimate to Customer",
+    "subtitle": "Share this estimate with your customer via WhatsApp",
+    "open": "Send to Customer",
+    "close": "Close",
+    "nameLabel": "Customer Name (Optional)",
+    "namePlaceholder": "e.g. Ahmad Razak",
+    "phoneLabel": "Customer Phone (Optional)",
+    "phonePlaceholder": "e.g. 0123456789",
+    "previewLabel": "Message Preview",
+    "sendWhatsApp": "Send via WhatsApp",
+    "copyMessage": "Copy Message",
+    "copied": "Message copied to clipboard!",
+    "needContact": "Please enter customer name or phone number",
+    "ready": "Estimate message ready to send! Your customer will receive a detailed breakdown."
   }
 }
 };
