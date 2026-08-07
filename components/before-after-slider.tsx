@@ -22,7 +22,7 @@ export function BeforeAfterSlider({ title = "Before / after proof", beforeLabel 
         </div>
         <div className="relative flex min-h-40 items-end bg-[#E0F2FE] p-3">
           <AfterIllustration className="absolute inset-0 h-full w-full text-sky-300" />
-          <span className="relative rounded-full bg-[#0284C7] px-2.5 py-1 text-[10px] font-extrabold uppercase tracking-widest text-white">
+          <span className="relative rounded-full bg-[#0369A1] px-2.5 py-1 text-[10px] font-extrabold uppercase tracking-widest text-white">
             {afterLabel}
           </span>
         </div>

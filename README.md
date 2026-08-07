@@ -25,7 +25,7 @@ Language switching is handled via React context + localStorage, with all UI stri
 - **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
 - **UI Components**: Custom reusable React components styled with Tailwind CSS
 - **Animations**: Native CSS transitions and lightweight IntersectionObserver reveal effects
-- **Forms & Validation**: [React Hook Form](https://react-hook-form.com/) & [Zod](https://zod.dev/)
+- **Forms**: Controlled React state with a WhatsApp handoff (no server form POST by design — the booking form composes a pre-filled `wa.me` message)
 - **Icons**: [Lucide React](https://lucide.dev/)
 - **Middleware**: Next.js Middleware for locale URL handling
 

@@ -101,7 +101,7 @@ export function FAQAccordion() {
         
         {/* Header */}
         <div className="flex flex-col items-center text-center gap-4 mb-16">
-          <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
+          <span className="text-xs font-bold text-[#0369A1] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
             {header.eyebrow}
           </span>
           <h2 className="text-3xl font-extrabold text-[#075985] tracking-tight">
@@ -130,15 +130,15 @@ export function FAQAccordion() {
                     aria-expanded={isOpen}
                     aria-controls={panelId}
                     id={`faq-trigger-${idx}`}
-                    className="w-full text-left p-5 sm:p-6 flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-[#075985] hover:text-[#0EA5E9] transition-colors focus:outline-none"
+                    className="w-full text-left p-5 sm:p-6 flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-[#075985] hover:text-[#0369A1] transition-colors focus:outline-none"
                   >
                     <div className="flex items-center gap-3.5">
-                      <HelpCircle className="w-5 h-5 text-[#0EA5E9] shrink-0" aria-hidden="true" />
+                      <HelpCircle className="w-5 h-5 text-[#0369A1] shrink-0" aria-hidden="true" />
                       <span>{faq.q}</span>
                     </div>
                     <ChevronDown
                       className={`w-5 h-5 text-[#475569] shrink-0 transition-transform duration-300 ${
-                        isOpen ? "rotate-180 text-[#0EA5E9]" : ""
+                        isOpen ? "rotate-180 text-[#0369A1]" : ""
                       }`}
                       aria-hidden="true"
                     />

@@ -110,7 +110,7 @@ export function FaqDirectoryView({ categories, totalCount, lang = "en" }: { cate
     <section className="bg-white py-16 sm:py-20" id="faq-directory">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-4 text-center">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#0EA5E9] bg-[#E0F2FE]/40 px-4 py-1.5 rounded-full">
+          <span className="text-xs font-bold uppercase tracking-widest text-[#0369A1] bg-[#E0F2FE]/40 px-4 py-1.5 rounded-full">
             {copy.eyebrow}
           </span>
           <h2 className="text-3xl font-extrabold tracking-tight text-[#075985] sm:text-4xl">
@@ -127,7 +127,7 @@ export function FaqDirectoryView({ categories, totalCount, lang = "en" }: { cate
             <a
               key={category.id}
               href={`#faq-${category.id}`}
-              className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-xs font-bold text-[#075985] transition-colors hover:border-[#0EA5E9] hover:bg-[#E0F2FE]/40 hover:text-[#0EA5E9]"
+              className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-xs font-bold text-[#075985] transition-colors hover:border-[#0EA5E9] hover:bg-[#E0F2FE]/40 hover:text-[#0369A1]"
             >
               {catCopy[category.id]?.title ?? category.title} <span className="text-slate-400">({category.items.length})</span>
             </a>
@@ -162,7 +162,7 @@ export function FaqDirectoryView({ categories, totalCount, lang = "en" }: { cate
                   >
                     <summary className="flex cursor-pointer list-none items-start justify-between gap-3 p-4 text-sm font-bold text-[#075985] sm:p-5">
                       <span>{item.q}</span>
-                      <span className="mt-0.5 shrink-0 text-lg font-bold text-[#0EA5E9] transition-transform group-open:rotate-45">
+                      <span className="mt-0.5 shrink-0 text-lg font-bold text-[#0369A1] transition-transform group-open:rotate-45">
                         +
                       </span>
                     </summary>
@@ -170,7 +170,7 @@ export function FaqDirectoryView({ categories, totalCount, lang = "en" }: { cate
                       <p className="text-sm font-medium leading-relaxed text-[#475569]">{item.a}</p>
                       <Link
                         href={item.href}
-                        className="mt-3 inline-flex items-center gap-1 text-xs font-extrabold uppercase tracking-wide text-[#0284C7] hover:text-[#0EA5E9]"
+                        className="mt-3 inline-flex items-center gap-1 text-xs font-extrabold uppercase tracking-wide text-[#0369A1] hover:text-[#0369A1]"
                       >
                         {copy.readMore} {item.source} <ArrowUpRight className="h-3.5 w-3.5" />
                       </Link>

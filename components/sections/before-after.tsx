@@ -22,7 +22,7 @@ export function BeforeAfter() {
         
         {/* Header */}
         <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
+          <span className="text-xs font-bold text-[#0369A1] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
             {t("home.beforeAfter.eyebrow", { defaultValue: "Before and after" })}
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
@@ -41,7 +41,7 @@ export function BeforeAfter() {
                 
                 {/* Badge tags */}
                 <div className="flex items-center justify-between gap-2 mb-5">
-                  <span className="text-[10px] font-bold text-[#0EA5E9] bg-[#0EA5E9]/10 px-3 py-1 rounded-full uppercase tracking-wider">
+                  <span className="text-[10px] font-bold text-[#0369A1] bg-[#0EA5E9]/10 px-3 py-1 rounded-full uppercase tracking-wider">
                     {item.service}
                   </span>
                   <span className="text-xs font-semibold text-[#475569]">
@@ -85,7 +85,7 @@ export function BeforeAfter() {
               {/* Bottom benefits */}
               <div className="mt-5 pt-4 border-t border-slate-50 text-[11px] font-bold text-[#075985] flex items-center justify-between">
                 <span>→</span>
-                <span className="text-[#0EA5E9] bg-[#E0F2FE]/25 px-2.5 py-1 rounded-md">{item.benefit}</span>
+                <span className="text-[#0369A1] bg-[#E0F2FE]/25 px-2.5 py-1 rounded-md">{item.benefit}</span>
               </div>
 
             </div>

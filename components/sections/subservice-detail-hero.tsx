@@ -61,9 +61,9 @@ export function SubserviceDetailHero({ service, sub }: SubserviceDetailHeroProps
       <div className="container-default relative z-10">
         {/* Breadcrumb-style category line */}
         <div className="flex items-center gap-2 text-xs sm:text-sm font-bold text-[#475569] mb-6">
-          <a href="/services" className="hover:text-[#0EA5E9] transition-colors">{t("nav.services")}</a>
+          <a href="/services" className="hover:text-[#0369A1] transition-colors">{t("nav.services")}</a>
           <span className="text-slate-300">/</span>
-          <a href={`/services/${service.slug}`} className="hover:text-[#0EA5E9] transition-colors">{service.title}</a>
+          <a href={`/services/${service.slug}`} className="hover:text-[#0369A1] transition-colors">{service.title}</a>
           <span className="text-slate-300">/</span>
           <span className="text-[#075985]">{sub.name}</span>
         </div>
@@ -95,7 +95,7 @@ export function SubserviceDetailHero({ service, sub }: SubserviceDetailHeroProps
             {/* Price + Warranty row */}
             <div className="flex flex-wrap items-center gap-3 mt-1">
               <span className="inline-flex items-baseline gap-2 bg-[#F0F9FF] border-2 border-[#BAE6FD] rounded-2xl px-5 py-3">
-                <span className="text-xs font-extrabold text-[#0EA5E9] uppercase tracking-wider">{sub.price.toLowerCase().startsWith("from") || sub.price.toLowerCase().startsWith("dari") || sub.price.startsWith("从") ? "" : t("subserviceHero.priceLabel")}</span>
+                <span className="text-xs font-extrabold text-[#0369A1] uppercase tracking-wider">{sub.price.toLowerCase().startsWith("from") || sub.price.toLowerCase().startsWith("dari") || sub.price.startsWith("从") ? "" : t("subserviceHero.priceLabel")}</span>
                 <span className="text-2xl sm:text-3xl font-black text-[#075985] tracking-tight">{sub.price}</span>
               </span>
               <span className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 text-emerald-700 px-4 py-3 rounded-2xl text-sm font-bold">
@@ -122,7 +122,7 @@ export function SubserviceDetailHero({ service, sub }: SubserviceDetailHeroProps
                 href={`tel:${siteConfig.phone}`}
                 className="btn-ghost text-base"
               >
-                <Phone className="w-4 h-4 text-[#0EA5E9]" />
+                <Phone className="w-4 h-4 text-[#0369A1]" />
                 <span>{siteConfig.phoneDisplay}</span>
               </a>
               <a
@@ -155,7 +155,7 @@ export function SubserviceDetailHero({ service, sub }: SubserviceDetailHeroProps
                 </div>
                 <div className="flex justify-between gap-3 border-b border-slate-100 pb-2">
                   <dt className="font-bold text-[#475569]">{t("subserviceHero.price")}</dt>
-                  <dd className="text-[#0EA5E9] font-extrabold text-right">{sub.price}</dd>
+                  <dd className="text-[#0369A1] font-extrabold text-right">{sub.price}</dd>
                 </div>
                 <div className="flex justify-between gap-3 border-b border-slate-100 pb-2">
                   <dt className="font-bold text-[#475569]">{t("subserviceHero.warranty")}</dt>
@@ -180,7 +180,7 @@ export function SubserviceDetailHero({ service, sub }: SubserviceDetailHeroProps
                 href={`tel:${siteConfig.phone}`}
                 className="btn-ghost w-full"
               >
-                <Phone className="w-4 h-4 text-[#0EA5E9]" />
+                <Phone className="w-4 h-4 text-[#0369A1]" />
                 <span>{t("subserviceHero.call", { phone: siteConfig.phoneDisplay })}</span>
               </a>
             </div>

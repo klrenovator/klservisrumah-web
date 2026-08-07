@@ -5,11 +5,11 @@ import { ClipboardCheck, Sparkles, Hammer, ShieldAlert, BadgeCheck } from "lucid
 import { useTranslations } from "@/hooks/use-translations";
 
 const stepIcons = [
-  <ClipboardCheck key="1" className="w-6 h-6 text-[#0EA5E9]" />,
-  <ShieldAlert key="2" className="w-6 h-6 text-[#0EA5E9]" />,
-  <Sparkles key="3" className="w-6 h-6 text-[#0EA5E9]" />,
-  <Hammer key="4" className="w-6 h-6 text-[#0EA5E9]" />,
-  <BadgeCheck key="5" className="w-6 h-6 text-[#0EA5E9]" />
+  <ClipboardCheck key="1" className="w-6 h-6 text-[#0369A1]" />,
+  <ShieldAlert key="2" className="w-6 h-6 text-[#0369A1]" />,
+  <Sparkles key="3" className="w-6 h-6 text-[#0369A1]" />,
+  <Hammer key="4" className="w-6 h-6 text-[#0369A1]" />,
+  <BadgeCheck key="5" className="w-6 h-6 text-[#0369A1]" />
 ];
 
 export function OurProcess() {
@@ -28,7 +28,7 @@ export function OurProcess() {
 
         {/* Header */}
         <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
+          <span className="text-xs font-bold text-[#0369A1] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
             {t("home.process.eyebrow")}
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
@@ -51,7 +51,7 @@ export function OurProcess() {
                 <div className="p-4 bg-white border border-slate-100 rounded-2xl shadow-sm group-hover:border-[#0EA5E9] group-hover:shadow-md transition-all duration-300 relative z-10">
                   {step.icon}
                 </div>
-                <span className="absolute -top-4 -right-4 text-3xl font-extrabold text-slate-100 group-hover:text-[#0EA5E9]/10 transition-colors pointer-events-none select-none">
+                <span className="absolute -top-4 -right-4 text-3xl font-extrabold text-slate-100 group-hover:text-[#0369A1]/10 transition-colors pointer-events-none select-none">
                   {step.num}
                 </span>
               </div>

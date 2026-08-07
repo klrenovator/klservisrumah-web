@@ -35,7 +35,7 @@ export function StatsCounter({
     <section
       className={`${
         variant === "gradient"
-          ? "bg-gradient-to-br from-[#075985] via-[#0369A1] to-[#0EA5E9] text-white"
+          ? "bg-gradient-to-br from-[#075985] via-[#0369A1] to-[#0369A1] text-white"
           : variant === "dark"
           ? "bg-[#075985] text-white"
           : "bg-white text-[#075985]"

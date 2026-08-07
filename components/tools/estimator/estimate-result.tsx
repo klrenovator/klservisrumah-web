@@ -199,7 +199,7 @@ export function EstimateResultPanel({
     <div className="space-y-5">
       {/* ── Headline estimate ─────────────────────────────────────────── */}
       <div className="overflow-hidden rounded-3xl border border-sky-100 bg-white shadow-[0_20px_60px_-25px_rgba(2,31,68,0.28)]">
-        <div className="relative bg-gradient-to-br from-[#075985] via-[#0369A1] to-[#0EA5E9] p-6 text-white sm:p-8">
+        <div className="relative bg-gradient-to-br from-[#075985] via-[#0369A1] to-[#0369A1] p-6 text-white sm:p-8">
           <div className="absolute -right-16 -top-16 h-56 w-56 rounded-full bg-white/10 blur-2xl" aria-hidden="true" />
           <div className="relative">
             <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1.5 text-[11px] font-black uppercase tracking-widest backdrop-blur">
@@ -240,7 +240,7 @@ export function EstimateResultPanel({
         {/* Recommended service + CTAs */}
         <div className="p-6 sm:p-8">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="text-xs font-black uppercase tracking-widest text-[#0EA5E9]">
+            <span className="text-xs font-black uppercase tracking-widest text-[#0369A1]">
               {t("estimator.result.recommendedService")}
             </span>
             {severity ? (
@@ -255,7 +255,7 @@ export function EstimateResultPanel({
           ) : null}
           <Link
             href={result.serviceHref}
-            className="mt-3 inline-flex items-center gap-1.5 text-sm font-black text-[#0EA5E9] hover:text-[#075985]"
+            className="mt-3 inline-flex items-center gap-1.5 text-sm font-black text-[#0369A1] hover:text-[#075985]"
           >
             {t("estimator.result.viewService")} <ArrowRight className="h-4 w-4" />
           </Link>
@@ -275,7 +275,7 @@ export function EstimateResultPanel({
                 trackWhatsAppClick({ service: result.recommendedService, page: toolName });
                 trackEvent({ action: "estimator_book_now", category: "lead", label: toolName, value: grandTotal });
               }}
-              className="inline-flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-5 py-3.5 text-sm font-black text-white shadow-lg shadow-[#25D366]/25 transition hover:bg-[#128C7E]"
+              className="inline-flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-[#15803D] px-5 py-3.5 text-sm font-black text-white shadow-lg shadow-[#25D366]/25 transition hover:bg-[#166534]"
             >
               <MessageSquare className="h-4 w-4" /> {t("estimator.result.bookNow")}
             </a>
@@ -305,14 +305,14 @@ export function EstimateResultPanel({
               onClick={() => trackPhoneCall({ page: toolName })}
               className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-bold text-[#075985] transition hover:border-sky-300 hover:bg-sky-50"
             >
-              <Phone className="h-4 w-4 text-[#0EA5E9]" /> {t("estimator.result.callLabel", { phone: siteConfig.phoneDisplay })}
+              <Phone className="h-4 w-4 text-[#0369A1]" /> {t("estimator.result.callLabel", { phone: siteConfig.phoneDisplay })}
             </a>
             <button
               type="button"
               onClick={onEdit}
               className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-bold text-[#075985] transition hover:border-sky-300 hover:bg-sky-50"
             >
-              <Wrench className="h-4 w-4 text-[#0EA5E9]" /> {t("estimator.result.changeAnswers")}
+              <Wrench className="h-4 w-4 text-[#0369A1]" /> {t("estimator.result.changeAnswers")}
             </button>
             <button
               type="button"
@@ -367,7 +367,7 @@ export function EstimateResultPanel({
                   <span
                     aria-hidden="true"
                     className={`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-md border-2 text-[11px] font-black ${
-                      active ? "border-[#0EA5E9] bg-[#0EA5E9] text-white" : "border-slate-300 bg-white text-transparent"
+                      active ? "border-[#0369A1] bg-[#0369A1] text-white" : "border-slate-300 bg-white text-transparent"
                     }`}
                   >
                     ✓
@@ -375,7 +375,7 @@ export function EstimateResultPanel({
                   <span className="min-w-0 flex-1">
                     <span className="flex flex-wrap items-baseline justify-between gap-2">
                       <span className="text-sm font-extrabold text-[#075985]">{addOn.label}</span>
-                      <span className="text-sm font-black text-[#0EA5E9]">+{formatMYR(addOn.price)}</span>
+                      <span className="text-sm font-black text-[#0369A1]">+{formatMYR(addOn.price)}</span>
                     </span>
                     {addOn.note ? (
                       <span className="mt-1 block text-xs font-semibold leading-snug text-slate-500">{addOn.note}</span>
@@ -413,7 +413,7 @@ export function EstimateResultPanel({
             </span>
           </span>
           <ChevronDown
-            className={`h-5 w-5 shrink-0 text-[#0EA5E9] transition-transform ${showBreakdown ? "rotate-180" : ""}`}
+            className={`h-5 w-5 shrink-0 text-[#0369A1] transition-transform ${showBreakdown ? "rotate-180" : ""}`}
           />
         </button>
         {showBreakdown ? (
@@ -423,7 +423,7 @@ export function EstimateResultPanel({
                 <li key={`${row.label}-${index}`} className="border-b border-dashed border-slate-100 pb-3 last:border-0">
                   <div className="flex flex-wrap items-baseline justify-between gap-2">
                     <span className="text-sm font-extrabold text-[#075985]">{row.label}</span>
-                    <span className="text-sm font-black text-[#0284C7]">{row.value}</span>
+                    <span className="text-sm font-black text-[#0369A1]">{row.value}</span>
                   </div>
                   {row.note ? (
                     <p className="mt-1 text-xs font-semibold leading-relaxed text-slate-500">{row.note}</p>
@@ -438,7 +438,7 @@ export function EstimateResultPanel({
             <ul className="mt-2 space-y-2">
               {result.assumptions.map((assumption) => (
                 <li key={assumption} className="flex gap-2 text-xs font-semibold leading-relaxed text-slate-600">
-                  <span aria-hidden="true" className="text-[#0EA5E9]">•</span>
+                  <span aria-hidden="true" className="text-[#0369A1]">•</span>
                   {assumption}
                 </li>
               ))}
@@ -466,7 +466,7 @@ export function EstimateResultPanel({
                   <span className="mt-0.5 block text-xs font-semibold text-slate-500">{link.desc}</span>
                 ) : null}
               </span>
-              <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-[#0EA5E9] transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-[#0369A1] transition-transform group-hover:translate-x-1" />
             </Link>
           ))}
         </div>
@@ -579,7 +579,7 @@ export function EstimateResultPanel({
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleSendEstimate}
-                className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-6 py-3.5 text-sm font-black text-white shadow-lg shadow-[#25D366]/25 transition hover:bg-[#128C7E] sm:flex-none"
+                className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-2xl bg-[#15803D] px-6 py-3.5 text-sm font-black text-white shadow-lg shadow-[#25D366]/25 transition hover:bg-[#166534] sm:flex-none"
               >
                 <MessageSquare className="h-5 w-5" />
                 Send via WhatsApp

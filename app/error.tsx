@@ -10,6 +10,22 @@ export default function ErrorPage({ error, reset }: { error: Error & { digest?: 
 
   useEffect(() => {
     console.error(error);
+    // Production observability: persist a sanitized copy to the server-side
+    // error log (see /api/error-log). Previously the console was the ONLY
+    // place a client error ever surfaced.
+    try {
+      const payload = JSON.stringify({
+        source: "error-boundary",
+        message: error.message,
+        stack: error.stack,
+        digest: error.digest,
+        pathname: window.location.pathname
+      });
+      const blob = new Blob([payload], { type: "application/json" });
+      navigator.sendBeacon("/api/error-log", blob);
+    } catch {
+      // Reporting must never itself throw inside an error boundary.
+    }
   }, [error]);
 
   return (
@@ -26,7 +42,7 @@ export default function ErrorPage({ error, reset }: { error: Error & { digest?: 
           <button
             type="button"
             onClick={reset}
-            className="rounded-xl bg-[#0284C7] px-5 py-3 text-sm font-extrabold text-white"
+            className="rounded-xl bg-[#0369A1] px-5 py-3 text-sm font-extrabold text-white"
           >
             {t("error.tryAgain")}
           </button>
@@ -40,7 +56,7 @@ export default function ErrorPage({ error, reset }: { error: Error & { digest?: 
             href={getWhatsAppLink({ service: "website issue report" })}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white"
+            className="rounded-xl bg-[#15803D] px-5 py-3 text-sm font-extrabold text-white"
           >
             {t("error.whatsappReport")}
           </a>

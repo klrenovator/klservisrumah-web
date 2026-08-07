@@ -32,7 +32,9 @@ export default [
     rules: {
       "no-unused-vars": "off",
       "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }],
-      "@typescript-eslint/no-explicit-any": "off",
+      // Guardrail ON: the tree currently has zero `any` (verified across all
+      // sources). Keep it that way — lint fails the build.
+      "@typescript-eslint/no-explicit-any": "error",
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn"
     }

@@ -118,7 +118,7 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
                     {sub.desc}
                   </p>
                 </div>
-                <span className="text-sm sm:text-base font-extrabold text-[#0EA5E9] shrink-0 bg-[#F0F9FF] px-5 py-2.5 rounded-xl border border-[#BAE6FD] w-fit">
+                <span className="text-sm sm:text-base font-extrabold text-[#0369A1] shrink-0 bg-[#F0F9FF] px-5 py-2.5 rounded-xl border border-[#BAE6FD] w-fit">
                   {sub.price}
                 </span>
               </div>
@@ -126,7 +126,7 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
           </div>
 
           <div className="mt-5 text-xs font-semibold text-[#475569] flex items-start gap-2.5 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3">
-            <AlertCircle className="w-4 h-4 text-[#0EA5E9] shrink-0 mt-0.5" />
+            <AlertCircle className="w-4 h-4 text-[#0369A1] shrink-0 mt-0.5" />
             <span>{t("serviceContent.pricingNote")}</span>
           </div>
         </div>
@@ -261,7 +261,7 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
                   <h3 className="text-base sm:text-lg font-extrabold text-[#075985]">
                     {faq.q}
                   </h3>
-                  <span className="text-2xl text-[#0EA5E9] font-bold shrink-0 transition-transform group-open:rotate-45">
+                  <span className="text-2xl text-[#0369A1] font-bold shrink-0 transition-transform group-open:rotate-45">
                     +
                   </span>
                 </summary>

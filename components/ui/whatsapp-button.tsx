@@ -31,6 +31,8 @@ export function WhatsAppButton() {
       >
         <div className="flex items-center justify-between gap-8">
           <div className="flex items-center gap-2">
+            {/* Decorative pulse dot (no text) — keeps the original bright brand green;
+            WCAG contrast rules apply only to text/UI controls. */}
             <div className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse" />
             <span className="text-xs font-bold text-[#075985] tracking-wide uppercase">
               {t("whatsappDesk.title")}
@@ -52,7 +54,7 @@ export function WhatsAppButton() {
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center bg-[#25D366] hover:bg-[#128C7E] text-white font-bold text-xs py-2.5 px-4 rounded-xl transition-all duration-200 gap-2"
+          className="flex items-center justify-center bg-[#15803D] hover:bg-[#166534] text-white font-bold text-xs py-2.5 px-4 rounded-xl transition-all duration-200 gap-2"
         >
           <MessageSquare className="w-4 h-4" aria-hidden="true" />
           <span>{t("whatsappDesk.cta")}</span>
@@ -64,7 +66,7 @@ export function WhatsAppButton() {
         onClick={() => setOpen((prev) => !prev)}
         aria-expanded={open}
         aria-label={open ? t("whatsappDesk.close") : t("whatsappDesk.aria")}
-        className="flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_8px_24px_rgba(37,211,102,0.35)] transition-all duration-200 hover:scale-105 hover:bg-[#128C7E]"
+        className="flex h-14 w-14 items-center justify-center rounded-full bg-[#15803D] text-white shadow-[0_8px_24px_rgba(37,211,102,0.35)] transition-all duration-200 hover:scale-105 hover:bg-[#166534]"
       >
         {open ? (
           <X className="h-6 w-6" aria-hidden="true" />

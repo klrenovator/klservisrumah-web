@@ -23,7 +23,7 @@ export function ServicesGrid() {
         {/* Section Heading Panel */}
         <Reveal>
           <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-16">
-            <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
+            <span className="text-xs font-bold text-[#0369A1] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
               {t("home.servicesGrid.heading")}
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
@@ -65,7 +65,7 @@ export function ServicesGrid() {
 
                 {/* Info block */}
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-xl font-extrabold text-[#075985] tracking-tight group-hover:text-[#0EA5E9] transition-colors">
+                  <h3 className="text-xl font-extrabold text-[#075985] tracking-tight group-hover:text-[#0369A1] transition-colors">
                     {service.title}
                   </h3>
                   <p className="text-xs sm:text-sm text-[#475569] leading-relaxed font-medium">
@@ -83,7 +83,7 @@ export function ServicesGrid() {
                   <ul className="flex flex-col gap-2">
                     {service.subServices.slice(0, 3).map((sub, idx) => (
                       <li key={idx} className="flex gap-2 items-start text-xs font-semibold text-[#475569]">
-                        <CheckCircle className="w-4 h-4 text-[#0EA5E9] shrink-0 mt-0.5" />
+                        <CheckCircle className="w-4 h-4 text-[#0369A1] shrink-0 mt-0.5" />
                         <span>{sub.name}</span>
                       </li>
                     ))}
@@ -97,7 +97,7 @@ export function ServicesGrid() {
                 <Link
                   href={`/services/${service.slug}`}
                   aria-label={`${t("common.viewDetails")} — ${service.title}`}
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#0284C7] py-3.5 text-xs font-black uppercase tracking-widest text-white transition-all duration-200 hover:bg-[#0369A1] active:scale-[0.98]"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#0369A1] py-3.5 text-xs font-black uppercase tracking-widest text-white transition-all duration-200 hover:bg-[#075985] active:scale-[0.98]"
                 >
                   {t("common.viewDetails")} <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
                 </Link>
@@ -106,7 +106,7 @@ export function ServicesGrid() {
                   target="_blank"
                   rel="nofollow noopener noreferrer"
                   aria-label={`${t("common.bookService")} — ${service.title}`}
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] py-3.5 text-xs font-black uppercase tracking-widest text-white shadow-sm transition-all duration-200 hover:bg-[#128C7E] hover:shadow-[#25D366]/40 active:scale-[0.98]"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#15803D] py-3.5 text-xs font-black uppercase tracking-widest text-white shadow-sm transition-all duration-200 hover:bg-[#166534] hover:shadow-[#25D366]/40 active:scale-[0.98]"
                 >
                   <MessageSquare className="h-4 w-4" /> {t("common.bookService")}
                 </a>

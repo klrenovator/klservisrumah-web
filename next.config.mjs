@@ -27,12 +27,11 @@ const nextConfig = {
     // Tree-shake the biggest offenders. Every package here has hundreds
     // of exports; without this Next.js pulls the whole barrel file into
     // the client bundle even when a single icon is used.
+    // (tailwind-merge / react-hook-form / zod were removed — never imported;
+    // see PART5/A1 of the forensic audit and SESSION_LOG Session 001.)
     optimizePackageImports: [
       "lucide-react",
       "clsx",
-      "tailwind-merge",
-      "react-hook-form",
-      "zod",
     ],
   },
   async redirects() {

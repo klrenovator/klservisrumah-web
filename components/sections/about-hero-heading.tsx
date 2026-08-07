@@ -17,7 +17,7 @@ export function AboutHeroHeading() {
 
   return (
     <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto">
-      <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
+      <span className="text-xs font-bold text-[#0369A1] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
         {t("about.heroEyebrow")}
       </span>
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#075985] tracking-tight text-balance">

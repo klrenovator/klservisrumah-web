@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { DEDICATED_TOOL_BY_SERVICE } from "@/lib/estimator/service-estimator";
+import { verifyAdminTokenEdge } from "@/lib/admin-auth-edge";
 
 const SUPPORTED_LOCALES = ["ms", "zh"] as const;
 
@@ -43,8 +44,33 @@ const REAL_LOCALE_TREES = ["/ms/alatan", "/zh/gongju", "/ms/blog", "/zh/bo-ke", 
  *
  * This ensures shared/bookmarked locale URLs always resolve to real content.
  */
-export function middleware(request: NextRequest) {
+/**
+ * Admin area gate.
+ *
+ * Every `/admin/*` URL except the login screen requires the signed, expiring,
+ * httpOnly session cookie issued by `/api/admin/login`. Verification happens
+ * here (edge) AND again in the server component that renders the dashboard —
+ * defense in depth, and unauthenticated visitors never receive the dashboard
+ * markup even if one layer is bypassed or misconfigured.
+ */
+const ADMIN_LOGIN_PATH = "/admin/login";
+const ADMIN_PREFIX = "/admin";
+
+export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+  if (pathname.startsWith(`${ADMIN_PREFIX}/`) || pathname === ADMIN_PREFIX) {
+    if (pathname !== ADMIN_LOGIN_PATH) {
+      const token = request.cookies.get("kl_admin_session")?.value;
+      if (!(await verifyAdminTokenEdge(token))) {
+        const loginUrl = request.nextUrl.clone();
+        loginUrl.pathname = ADMIN_LOGIN_PATH;
+        loginUrl.search = "";
+        return NextResponse.redirect(loginUrl, 307);
+      }
+    }
+    return NextResponse.next();
+  }
 
   // Shareable estimator link for a service that owns a deep tool → 301 to it.
   const toolTarget = ESTIMATE_TOOL_REDIRECTS[pathname];

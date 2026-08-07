@@ -58,7 +58,7 @@ export function TrustBadgesRow({
                 : "bg-[#F0F9FF] text-[#075985] px-3 py-1.5 rounded-full"
             }`}
           >
-            <Icon className={`w-3.5 h-3.5 ${isDark ? "text-[#7DD3FC]" : "text-[#0EA5E9]"}`} />
+            <Icon className={`w-3.5 h-3.5 ${isDark ? "text-[#7DD3FC]" : "text-[#0369A1]"}`} />
             <span>{item.text}</span>
           </li>
         );

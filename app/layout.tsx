@@ -6,6 +6,7 @@ import { Footer } from "@/components/ui/footer";
 import { WhatsAppButton } from "@/components/ui/whatsapp-button";
 import { StickyMobileWhatsAppBar } from "@/components/sticky-mobile-whatsapp-bar";
 import { WebVitalsReporter } from "@/components/web-vitals-reporter";
+import { ErrorReporter } from "@/components/error-reporter";
 import { ServiceWorkerRegister } from "@/components/service-worker-register";
 import { GoogleAnalytics } from "@/components/analytics/google-analytics";
 import { DeferredWidgets } from "@/components/deferred-widgets";
@@ -131,6 +132,7 @@ export default function RootLayout({
         <Providers>
           <GoogleAnalytics />
           <WebVitalsReporter />
+          <ErrorReporter />
           <ServiceWorkerRegister />
           <SkipToContentLink />
           <Navbar />

@@ -17,11 +17,11 @@ export function NotSureSection() {
         <div className="bg-white rounded-3xl p-8 sm:p-12 border border-slate-100 shadow-[0_20px_50px_rgba(2,31,68,0.05)] text-center">
           <div className="flex flex-col items-center gap-6">
             <div className="p-4 bg-[#E0F2FE]/30 rounded-2xl">
-              <Camera className="w-10 h-10 text-[#0EA5E9]" />
+              <Camera className="w-10 h-10 text-[#0369A1]" />
             </div>
 
             <div className="flex flex-col items-center gap-3">
-              <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
+              <span className="text-xs font-bold text-[#0369A1] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
                 Not sure what you need?
               </span>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-[#075985] tracking-tight">
@@ -34,17 +34,17 @@ export function NotSureSection() {
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full mt-4">
               <div className="flex flex-col items-center gap-2 p-4 bg-slate-50 rounded-2xl border border-slate-100">
-                <Camera className="w-6 h-6 text-[#0EA5E9]" />
+                <Camera className="w-6 h-6 text-[#0369A1]" />
                 <span className="text-xs font-bold text-[#075985]">1. Send Photos</span>
                 <span className="text-[10px] text-[#475569] text-center">Snap a photo of the problem area</span>
               </div>
               <div className="flex flex-col items-center gap-2 p-4 bg-slate-50 rounded-2xl border border-slate-100">
-                <MessageSquare className="w-6 h-6 text-[#0EA5E9]" />
+                <MessageSquare className="w-6 h-6 text-[#0369A1]" />
                 <span className="text-xs font-bold text-[#075985]">2. Get Quote</span>
                 <span className="text-[10px] text-[#475569] text-center">Receive accurate quote within 30 min</span>
               </div>
               <div className="flex flex-col items-center gap-2 p-4 bg-slate-50 rounded-2xl border border-slate-100">
-                <Phone className="w-6 h-6 text-[#0EA5E9]" />
+                <Phone className="w-6 h-6 text-[#0369A1]" />
                 <span className="text-xs font-bold text-[#075985]">3. Book Slot</span>
                 <span className="text-[10px] text-[#475569] text-center">Confirm your preferred time slot</span>
               </div>
@@ -55,7 +55,7 @@ export function NotSureSection() {
                 href={getWhatsAppLink()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white font-extrabold text-base px-8 py-4 rounded-2xl transition-all duration-200 shadow-sm"
+                className="inline-flex items-center justify-center gap-2 bg-[#15803D] hover:bg-[#166534] text-white font-extrabold text-base px-8 py-4 rounded-2xl transition-all duration-200 shadow-sm"
               >
                 <MessageSquare className="w-5 h-5" />
                 <span>Get Free Quote on WhatsApp</span>

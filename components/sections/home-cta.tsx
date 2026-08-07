@@ -14,7 +14,9 @@ export function HomeCTA() {
       <div className="absolute top-0 right-0 w-80 h-80 rounded-full bg-[#0EA5E9]/10 blur-3xl pointer-events-none" />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 flex flex-col items-center gap-7">
-        <span className="text-xs font-bold text-[#0EA5E9] bg-[#0EA5E9]/10 border border-[#0EA5E9]/30 px-4 py-1.5 rounded-full uppercase tracking-widest">
+        {/* Dark hero: chip text uses sky-200 (#BAE6FD, 5.70:1 on the navy
+            gradient — WCAG AA pass); bright sky shades fail on this surface. */}
+        <span className="text-xs font-bold text-[#BAE6FD] bg-[#0EA5E9]/10 border border-[#0EA5E9]/30 px-4 py-1.5 rounded-full uppercase tracking-widest">
           {t("home.cta.badge")}
         </span>
         <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">
@@ -29,7 +31,7 @@ export function HomeCTA() {
             href={getWhatsAppLink()}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#25D366] hover:bg-[#128C7E] text-white text-center font-extrabold text-base px-8 py-4 rounded-2xl transition-all duration-200 shadow-sm flex items-center justify-center gap-2"
+            className="bg-[#15803D] hover:bg-[#166534] text-white text-center font-extrabold text-base px-8 py-4 rounded-2xl transition-all duration-200 shadow-sm flex items-center justify-center gap-2"
           >
             <MessageSquare className="w-5 h-5 fill-white text-[#25D366]" />
             <span>{t("home.cta.bookButton")}</span>

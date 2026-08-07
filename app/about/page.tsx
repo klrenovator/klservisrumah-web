@@ -6,6 +6,7 @@ import { AboutContent } from "@/components/sections/about-content";
 import { AboutHeroHeading } from "@/components/sections/about-hero-heading";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
+import { servicesData } from "@/config/services-data";
 import { getSpeakableSchema } from "@/lib/seo";
 import { Phone, MessageSquare, Users, Award, Clock } from "lucide-react";
 
@@ -62,7 +63,7 @@ export default function AboutPage() {
                 href={getWhatsAppLink()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white font-extrabold text-sm px-6 py-3 rounded-xl transition-all duration-200 shadow-sm"
+                className="inline-flex items-center gap-2 bg-[#15803D] hover:bg-[#166534] text-white font-extrabold text-sm px-6 py-3 rounded-xl transition-all duration-200 shadow-sm"
               >
                 <MessageSquare className="w-4 h-4" />
                 <span>WhatsApp Us</span>
@@ -80,7 +81,7 @@ export default function AboutPage() {
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 max-w-4xl mx-auto">
             <div className="flex flex-col items-center gap-2 p-4 bg-white rounded-2xl border border-slate-100">
-              <Users className="w-6 h-6 text-[#0EA5E9]" />
+              <Users className="w-6 h-6 text-[#0369A1]" />
               <span className="text-2xl font-extrabold text-[#075985]">1,200+</span>
               <span className="text-xs text-[#475569] font-semibold">Projects Completed</span>
             </div>
@@ -95,8 +96,10 @@ export default function AboutPage() {
               <span className="text-xs text-[#475569] font-semibold">Avg Response</span>
             </div>
             <div className="flex flex-col items-center gap-2 p-4 bg-white rounded-2xl border border-slate-100">
-              <span className="text-2xl font-extrabold text-[#075985]">13+</span>
-              <span className="text-xs text-[#475569] font-semibold">Service Pillars</span>
+              {/* Derived from the same registry as every other count on the
+                  site (was a stale hardcoded "13+"). */}
+              <span className="text-2xl font-extrabold text-[#075985]">{`${Object.keys(servicesData).length}+`}</span>
+              <span className="text-xs text-[#475569] font-semibold">Home Services</span>
             </div>
           </div>
         </div>
