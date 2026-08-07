@@ -12,6 +12,7 @@ import {
 import { TrustBar } from "@/components/trust-bar";
 import { StickyBookButton } from "@/components/sticky-book-button";
 import { LocaleServiceView } from "@/components/sections/locale-service-view";
+import { localizedServiceLanguageUrls } from "@/components/sections/locale-service-page";
 
 export const dynamicParams = false;
 
@@ -31,6 +32,8 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
     description: service.metaDesc,
     path: `/services/${service.slug}`,
     image: service.heroImage,
+    // Real hreflang cluster with the H3-pilot localized twins.
+    languageUrls: localizedServiceLanguageUrls(service.slug),
     keywords: [
       service.title,
       `${service.title} KL`,

@@ -52,9 +52,10 @@ All findings below were **independently re-verified in Session 001** against the
 - 🟡 **H2. `/faq` and ~42 other pages over 256KB raw HTML (up to ~3MB)**
   - Status: **verified pre-mitigated; remainder 🔒 deliberate product decision.** Session 001 measurements (`next start` production server): `/faq` = 3.65 MB raw → **254 KB gzipped** on the wire (MS: 229 KB, ZH: 233 KB). The directory is server-rendered with native `<details>` accordions; the client search filter reads the live DOM, so the ~560-Q&A dataset is NOT duplicated into the client JS bundle or RSC props. The remaining raw size is intentionally-indexable content server-rendered for SEO/AEO. Paginating would trade indexable content for bytes — prior documented decision (`docs/bing-site-scan-2026-08-03.md`) is to keep it. Revisit **only** after real PageSpeed Insights/CrUX field data demonstrates actual CWV harm (measured, not estimated).
 - 🔒 **H3. Trilingual architecture gives MS/ZH content no separate crawlable URLs (~97% of page count)**
-  - `/ms/*` and `/zh/*` deep paths 301 → EN (client-side language switch at one canonical URL). Only 6 real localized subtrees exist (`/ms/alatan`, `/zh/gongju`, `/ms/blog`, `/zh/bo-ke`, `/ms/soalan-lazim`, `/zh/chang-jian-wen-ti`).
-  - **Why blocked:** generating ~4,100 pages × 2 locales at build time is a strategic project (build cost ×3, translation quality gate, Google scaled-content risk). Requires an explicit owner go/no-go with budget. Options analysis recorded in Session 001 notes.
-  - Session 001: verified the hreflang/sitemap behavior is coherent for the current one-URL model (self-consistent, no conflicting signals); deepened the 6 real localized trees is the safe incremental path.
+  - `/ms/*` and `/zh/*` deep paths 301 → EN (client-side language switch at one canonical URL). Only 6 real localized subtrees existed (`/ms/alatan`, `/zh/gongju`, `/ms/blog`, `/zh/bo-ke`, `/ms/soalan-lazim`, `/zh/chang-jian-wen-ti`).
+  - **Why blocked (full rollout):** generating ~4,100 pages × 2 locales at build time is a strategic project (build cost ×3, translation quality gate, Google scaled-content risk). Requires an explicit owner go/no-go with budget. Options analysis recorded in Session 001 notes.
+  - ✅ **[2026-08-07 / S003] PILOT IMPLEMENTED (the "no decision needed" intermediate step):** real, indexable localized service pages `/ms/services/*` + `/zh/services/*` — all 28 services × 2 locales + 2 localized directory indexes (`/ms/services`, `/zh/services`). Server-rendered 100% in-language from the already-complete service i18n data (verified 0 missing fields across all 28 services); real 3-URL hreflang clusters in metadata + sitemap (x-default → EN); middleware lets the two new trees pass through; language switcher + `/ms`/`/zh` scaffolds navigate to the real localized URLs; localized Service schema (incl. OfferCatalog) with page-correct `@id`/`url`. Sitemap 3,142 → **3,200** URLs; build 4,187 → **4,245** pages; `llms-full.txt`/`site-summary.json` counts auto-derived and regenerated. Est. indexable-surface expansion: +58 MS/ZH URLs for the service catalogue.
+  - **Remaining for H3:** full rollout of areas/problems/suburbs/generic pages × 2 locales still needs the owner's go/no-go (that's the 8k-page project); the pilot measures indexation + conversions first.
 
 ### 🟠 High (new in S003)
 
@@ -134,16 +135,30 @@ Objectives:
 - Read all governance files; verify S001/S002 claims against the checkout.
 - Independent deep audit of the entire repository (static greps, message-dictionary parity, asset-usage sweep, security re-check, runtime smoke tests).
 - Fix the highest-priority unfinished actionable work: trilingual parity on conversion/estimator surfaces (backlog item 4) + a11y + dead assets.
+- Implement the H3 pilot (real localized service URLs — the roadmap's recommended "no decision needed" intermediate step).
 - Verify: lint / type-check / build / estimator tests / SEO audit / prod-server smoke tests.
 
-Completed:
+Completed (first half — parity/a11y/assets):
 - **M9 (High) — trilingual parity on conversion surfaces fixed**: booking form (`multi-step-booking-form.tsx`) now localizes service titles, sub-service names/descriptions and the WhatsApp handoff via `getLocalizedService(…, lang)`; form stores property-type/time as dictionary keys translated at render (fixes the hardcoded English `"Flexible"` default that matched no translated `<option>`); `locale-service-view.tsx` passes `localized.title`/`localized.warranty` to `ServiceEstimatorBlock`; `estimate-share-page.tsx` and `estimate-hub.tsx` localize titles embedded in translated sentences + WhatsApp share text.
 - **A1 (Medium) — exit-intent modal dialog a11y fixed**: Escape-to-close, initial focus, Tab trap, focus restore, `aria-labelledby`/`aria-describedby`.
 - **L4/L5/L6 (Low) — dead assets removed**: 6 unused hero SVGs (`hero-ceiling-fan/lighting/plaster-ceiling/skim-coat/tiling/water-heater.svg`), stale `public/robots-ai.txt`, and `logo.jpg` (byte-identical duplicate of `og-image.jpg`). All confirmed 0-references repo-wide; git history preserves them.
-- Verification: `npm install` clean; `npm audit` 0 vulns; `npm run lint` 0/0; `npm run type-check` PASS; `npm run build` SUCCESS (4187 pages); estimator suite 231,498 assertions PASS; `npm run seo:audit` clean; prod-server smoke: `/contact` 200, `/estimate` 200, `/estimate/painting` 301→tool, deleted assets 404, robots.txt regenerated. Message dictionaries: 1027 keys × 3 locales, 0 missing/extra/empty/placeholder-mismatch. All 28 services have ms+zh i18n overrides.
-- No changes to business logic; no color/schema/content changes.
 
-Remaining: H2 field-data gated, H3 🔒 owner decision, M8 deferred, backlog items 5/7/8/9 — unchanged.
+Completed (second half — H3 pilot, all 28 services × 2 locales + 2 indexes):
+- New server-rendered localized service pages `/ms/services/[slug]` + `/zh/services/[slug]` (SSG, `dynamicParams=false`, real 404s) rendered 100% in-language from `getLocalizedService` + a new server translator (`lib/i18n-server.ts`, same message keys as the client) — hero, overview, direct answer, pricing, process, FAQs, schema, CTAs; no English flash, no client-data duplication.
+- New localized directory indexes `/ms/services` + `/zh/services` (server-rendered, localized titles/taglines/prices).
+- Real 3-URL hreflang clusters for every service page + both directories: metadata (`buildMetadata` `languageUrls`) on EN + MS + ZH pages and full clusters in `app/sitemap.ts` (x-default → EN; self-referencing kept for EN-only cost/emergency/sub-service pages).
+- `middleware.ts` REAL_LOCALE_TREES extended with `/ms/services`, `/zh/services` (no more 301 → EN).
+- Language switcher navigates `/services` ↔ `/ms/services` ↔ `/zh/services` and `/services/<slug>` ↔ localized twins; `/ms` and `/zh` scaffolds link to their localized directories.
+- `getServiceSchema` gained optional `path` + `subServices` so localized pages emit page-correct `@id`/`url` and in-language OfferCatalog.
+- 14 new message keys (1041 × 3, parity kept): `serviceDetail.verifiedBadge/allCoverage`, `breadcrumbs.services`, `serviceContent.isRightAnswer/ctaHeading/ctaSub/estimateCta/allServices/pricingLink`, `services.pageEyebrow/warrantyBadge/notSureHeading/notSureSub/askWhatsApp`.
+- Counts auto-derived: sitemap 3,142 → 3,200 URLs; build 4,187 → 4,245 pages; `llms-full.txt` + `site-summary.json` regenerated (3,200 indexable pages).
+
+Verification (both halves):
+- `npm install` clean; `npm audit` 0 vulns; `npm run lint` 0/0; `npm run type-check` PASS; `npm run build` SUCCESS (4,245 pages); estimator suite 231,498 assertions PASS; `npm run seo:audit` clean.
+- Message dictionaries: 1,041 keys × 3 locales, 0 missing/extra/empty/placeholder-mismatch.
+- Prod-server smoke: `/ms/services` 200 (no 301), `/ms/services/painting` 200 with Malay `<title>` + `<h1>` + Malay schema (serviceType, url, OfferCatalog), `/zh/services/painting` 200 with Chinese title, `/ms/services/not-a-service` real 404, EN `/services/painting` emits the real ms/zh hreflang cluster, canonical self-correct on every page, sitemap shows full clusters, `/ms` scaffold still 200.
+
+Remaining: H2 field-data gated; H3 full rollout (8k pages) still 🔒 owner go/no-go (pilot now live to measure); M8 deferred; backlog items 5/7/8/9 — unchanged.
 
 ---
 
@@ -152,7 +167,7 @@ Remaining: H2 field-data gated, H3 🔒 owner decision, M8 deferred, backlog ite
 Priority-ordered remaining work:
 
 ### 🟠 High
-1. 🔒 **H3 go/no-go**: owner decision on genuine per-locale SSG (`/ms/services/*`, `/zh/services/*`). Recommended intermediate step (no decision needed): extend the 6 proven real localized trees with the highest-traffic service pages only (top ~10 services × 2 locales) as a pilot measuring indexation + conversions before committing to 8k pages.
+1. ✅ **[2026-08-07 / S003] H3 PILOT LIVE** — real localized service URLs implemented for all 28 services × 2 locales + 2 directory indexes (sitemap 3,200 URLs, build 4,245 pages). Next: **owner go/no-go for the FULL rollout** (~8k more pages: areas/suburbs/problems/generic × 2 locales) once the pilot's indexation + conversion data is measured. `/services/<slug>/cost|emergency` + sub-service pages stay client-side-switching until the full-rollout decision.
 2. 🟡 **H2 field-data checkpoint**: once CrUX/PageSpeed field data exists for `/faq` (needs live traffic), decide paginate/lazy-by-category vs keep. Do not act before real data.
 3. ⬜ **Set `ADMIN_PASSWORD` + confirm `INDEXNOW_SECRET`/`CRON_SECRET`/`GOOGLE_API_KEY` env vars in production** (owner action in Vercel; cannot be done from the repo). Rotate the burned `KL2024Admin` everywhere else it may have been reused.
 
@@ -167,7 +182,7 @@ Priority-ordered remaining work:
 9. ⬜ Periodic `npm outdated` / `npm audit` hygiene (audit re-run Session 003: 0 vulnerabilities; `npm outdated` not yet run — package pins are current and deliberate, see SESSION_LOG S001).
 
 ### Long-term opportunities (not defects)
-- Grow the 6 real localized trees (proven pattern) as the de-facto expansion path for MS/ZH search visibility.
+- Grow the real localized trees (now 8: tools, blog, FAQ, services) as the de-facto expansion path for MS/ZH search visibility — the H3 pilot proves the pattern; the full rollout decision determines the next ~8k pages.
 - Content velocity for AEO: `llms.txt`/`aeo-faq.txt` already generated — keep the generator scripts wired into `prebuild` (they are).
 - Consider lightweight review-collection pipeline feeding the testimonials schema.
 

@@ -7,12 +7,15 @@ import { WhyChooseUs } from "@/components/sections/why-choose-us";
 import { ServiceComparisonTable } from "@/components/service-comparison-table";
 import { LocaleDecisionTree } from "@/components/sections/locale-decision-tree";
 import { StatsCounter } from "@/components/content/stats-counter";
+import { localizedServicesIndexLanguageUrls } from "@/components/sections/locale-services-index";
 
 export const metadata = buildMetadata({
   title: "All Home Services in KL & Selangor — 28 Services",
   description:
     "Browse 28 professional home services across Kuala Lumpur and Selangor: painting, plumbing, electrical, renovation, cleaning, security and more.",
   path: "/services",
+  // Real hreflang cluster with the H3-pilot localized directories.
+  languageUrls: localizedServicesIndexLanguageUrls(),
   keywords: [
     "home services KL",
     "handyman Selangor",
