@@ -89,7 +89,7 @@ export function ToolPage({
         <div className="container-default relative z-10">
           <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12">
             <div className="lg:col-span-7">
-              <span className="inline-flex items-center gap-2 rounded-full bg-[#E0F2FE] px-4 py-1.5 text-[11px] font-black uppercase tracking-widest text-[#0284C7]">
+              <span className="inline-flex items-center gap-2 rounded-full bg-[#E0F2FE] px-4 py-1.5 text-[11px] font-black uppercase tracking-widest text-[#0369A1]">
                 <Sparkles className="h-3.5 w-3.5" /> {content.eyebrow}
               </span>
 
@@ -105,7 +105,7 @@ export function ToolPage({
                     {index > 0 && <span className="mx-2 text-slate-300">·</span>}
                     <span>
                       <b>{item.label}</b>{" "}
-                      <Link href={item.href} className="underline decoration-slate-300 underline-offset-2 hover:text-[#0284C7] hover:decoration-[#0284C7]">
+                      <Link href={item.href} className="underline decoration-slate-300 underline-offset-2 hover:text-[#0369A1] hover:decoration-[#0284C7]">
                         {item.line}
                       </Link>
                     </span>
@@ -128,7 +128,7 @@ export function ToolPage({
                   {shell.reviewsSummary(siteConfig.reviewRating, siteConfig.reviewCount)}
                 </span>
                 <span className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-600">
-                  <Clock className="h-4 w-4 text-[#0EA5E9]" /> {shell.takesAbout(content.estimatedMinutes)}
+                  <Clock className="h-4 w-4 text-[#0369A1]" /> {shell.takesAbout(content.estimatedMinutes)}
                 </span>
                 <span className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-600">
                   <ShieldCheck className="h-4 w-4 text-emerald-500" /> {shell.noSignup}
@@ -249,7 +249,7 @@ export function ToolPage({
                       <th scope="row" className="px-5 py-4 text-left font-extrabold text-[#075985]">
                         {row.scope}
                       </th>
-                      <td className="px-5 py-4 font-black text-[#0EA5E9]">{row.rate}</td>
+                      <td className="px-5 py-4 font-black text-[#0369A1]">{row.rate}</td>
                       <td className="px-5 py-4 text-xs font-semibold text-slate-600">{row.note}</td>
                     </tr>
                   ))}
@@ -263,7 +263,7 @@ export function ToolPage({
 
             <Link
               href="/pricing"
-              className="mt-5 inline-flex items-center gap-1.5 text-sm font-black text-[#0EA5E9] hover:text-[#075985]"
+              className="mt-5 inline-flex items-center gap-1.5 text-sm font-black text-[#0369A1] hover:text-[#075985]"
             >
               {shell.fullGuideLink} <ArrowRight className="h-4 w-4" />
             </Link>
@@ -289,7 +289,7 @@ export function ToolPage({
                     {faq.q}
                     <span
                       aria-hidden="true"
-                      className="mt-0.5 shrink-0 text-[#0EA5E9] transition-transform group-open:rotate-180"
+                      className="mt-0.5 shrink-0 text-[#0369A1] transition-transform group-open:rotate-180"
                     >
                       ▾
                     </span>
@@ -316,7 +316,7 @@ export function ToolPage({
                       className="group flex items-center justify-between gap-2 rounded-xl border border-slate-100 bg-slate-50/60 px-4 py-3 text-sm font-bold text-slate-700 transition hover:border-sky-200 hover:bg-sky-50 hover:text-[#075985]"
                     >
                       {service.label}
-                      <ArrowRight className="h-3.5 w-3.5 shrink-0 text-[#0EA5E9] transition-transform group-hover:translate-x-1" />
+                      <ArrowRight className="h-3.5 w-3.5 shrink-0 text-[#0369A1] transition-transform group-hover:translate-x-1" />
                     </Link>
                   </li>
                 ))}
@@ -334,7 +334,7 @@ export function ToolPage({
                     >
                       <span className="flex items-center justify-between gap-2 text-sm font-bold text-slate-700 group-hover:text-[#075985]">
                         {tool.name}
-                        <ArrowRight className="h-3.5 w-3.5 shrink-0 text-[#0EA5E9] transition-transform group-hover:translate-x-1" />
+                        <ArrowRight className="h-3.5 w-3.5 shrink-0 text-[#0369A1] transition-transform group-hover:translate-x-1" />
                       </span>
                       <span className="mt-1 block text-xs font-semibold text-slate-500">{tool.firstStat}</span>
                     </Link>
@@ -346,7 +346,7 @@ export function ToolPage({
                     className="group flex items-center justify-between gap-2 rounded-xl border border-slate-100 bg-slate-50/60 px-4 py-3 text-sm font-bold text-slate-700 transition hover:border-sky-200 hover:bg-sky-50 hover:text-[#075985]"
                   >
                     {shell.allToolsLink}
-                    <ArrowRight className="h-3.5 w-3.5 shrink-0 text-[#0EA5E9] transition-transform group-hover:translate-x-1" />
+                    <ArrowRight className="h-3.5 w-3.5 shrink-0 text-[#0369A1] transition-transform group-hover:translate-x-1" />
                   </Link>
                 </li>
               </ul>
@@ -364,7 +364,7 @@ export function ToolPage({
                 href={waLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-5 py-3.5 text-sm font-black text-white transition hover:bg-[#128C7E]"
+                className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#15803D] px-5 py-3.5 text-sm font-black text-white transition hover:bg-[#166534]"
               >
                 <MessageSquare className="h-4 w-4" /> {shell.ctaWhatsapp}
               </a>

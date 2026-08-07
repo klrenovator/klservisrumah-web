@@ -24,14 +24,6 @@ export function formatCurrencyRange(startPrice: string) {
 }
 
 /**
- * Normalise a human-readable date ("July 20, 2026") into ISO-8601 ("2026-07-20").
- *
- * Schema.org `datePublished`/`dateModified` and Open Graph `article:published_time`
- * both require ISO-8601. Blog data was authored as display strings, which Google's
- * Rich Results Test rejects as invalid date values — silently costing Article rich
- * results on every post. Values already in ISO form pass through untouched.
- */
-/**
  * Extract the human-readable "duration lead" from a warranty string.
  *
  * Warranty strings come in two shapes:
@@ -60,7 +52,25 @@ export function warrantyLead(warranty: string): string {
   return w;
 }
 
-export function toIsoDate(value?: string, fallback = "2026-07-24"): string {
+/**
+ * Default date used when a content date is missing or unparseable.
+ *
+ * Deliberately a named, manually-maintained constant and NOT an auto-computed
+ * "today": a daily-shifting `dateModified` makes every page look perpetually
+ * touched, which erodes the trust signals schema dates are meant to provide.
+ * Update this when a real content release ships (see SESSION_LOG.md).
+ */
+export const DEFAULT_CONTENT_DATE = "2026-08-07";
+
+/**
+ * Normalise a human-readable date ("July 20, 2026") into ISO-8601 ("2026-07-20").
+ *
+ * Schema.org `datePublished`/`dateModified` and Open Graph `article:published_time`
+ * both require ISO-8601. Blog data was authored as display strings, which Google's
+ * Rich Results Test rejects as invalid date values — silently costing Article rich
+ * results on every post. Values already in ISO form pass through untouched.
+ */
+export function toIsoDate(value?: string, fallback = DEFAULT_CONTENT_DATE): string {
   if (!value) return fallback;
   const trimmed = value.trim();
   if (/^\d{4}-\d{2}-\d{2}(T.*)?$/.test(trimmed)) return trimmed;

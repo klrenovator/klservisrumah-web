@@ -49,7 +49,7 @@ export function LocaleNearMeView({
 
       <section className="bg-gradient-to-b from-slate-50 to-white py-16 sm:py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <span className="rounded-full bg-[#E0F2FE] px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-[#0284C7]">
+          <span className="rounded-full bg-[#E0F2FE] px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-[#0369A1]">
             {t("location.nearMeBadge")}
           </span>
           <h1 className="mt-4 text-3xl font-extrabold text-[#075985] sm:text-5xl">{heading}</h1>
@@ -65,7 +65,7 @@ export function LocaleNearMeView({
             {service.subServices.map((sub) => (
               <div key={sub.name} className="rounded-2xl border border-slate-100 bg-white p-5">
                 <h2 className="font-extrabold text-[#075985]">{sub.name}</h2>
-                <p className="mt-1 text-sm font-bold text-[#0EA5E9]">{sub.price}</p>
+                <p className="mt-1 text-sm font-bold text-[#0369A1]">{sub.price}</p>
                 <p className="mt-2 text-xs font-semibold text-[#475569]">{sub.desc}</p>
               </div>
             ))}
@@ -75,7 +75,7 @@ export function LocaleNearMeView({
             href={getWhatsAppLink({ service: serviceBundle.en.title, location: areaBundle.en.name })}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-8 inline-flex rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white"
+            className="mt-8 inline-flex rounded-xl bg-[#15803D] px-5 py-3 text-sm font-extrabold text-white"
           >
             {t("location.nearMeCta")}
           </a>

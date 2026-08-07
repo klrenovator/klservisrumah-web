@@ -47,7 +47,7 @@ export function RelatedServices({ currentSlug, maxItems = 6 }: RelatedServicesPr
     <section className="bg-slate-50 border-t border-slate-100 py-16 sm:py-20" aria-label="Related services">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-12">
-          <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
+          <span className="text-xs font-bold text-[#0369A1] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
             {t("internalLinks.eyebrow")}
           </span>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-[#075985] tracking-tight">
@@ -70,10 +70,10 @@ export function RelatedServices({ currentSlug, maxItems = 6 }: RelatedServicesPr
               >
                 <div className="flex flex-col gap-3">
                   <div className="flex items-center gap-2.5">
-                    <span className="text-[#0EA5E9] bg-[#E0F2FE] p-2 rounded-lg">
+                    <span className="text-[#0369A1] bg-[#E0F2FE] p-2 rounded-lg">
                       {icon}
                     </span>
-                    <h3 className="text-base font-extrabold text-[#075985] group-hover:text-[#0EA5E9] transition-colors">
+                    <h3 className="text-base font-extrabold text-[#075985] group-hover:text-[#0369A1] transition-colors">
                       {localized.title}
                     </h3>
                   </div>
@@ -81,10 +81,10 @@ export function RelatedServices({ currentSlug, maxItems = 6 }: RelatedServicesPr
                     {localized.tagline}
                   </p>
                   <div className="flex items-center justify-between mt-2">
-                    <span className="text-xs font-bold text-[#0EA5E9] bg-[#E0F2FE]/30 px-2.5 py-1 rounded-md">
+                    <span className="text-xs font-bold text-[#0369A1] bg-[#E0F2FE]/30 px-2.5 py-1 rounded-md">
                       {localized.startPrice}
                     </span>
-                    <span className="inline-flex items-center gap-1 text-xs font-bold text-[#0EA5E9] group-hover:text-[#075985]">
+                    <span className="inline-flex items-center gap-1 text-xs font-bold text-[#0369A1] group-hover:text-[#075985]">
                       <span>{t("common.viewDetails")}</span>
                       <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
                     </span>

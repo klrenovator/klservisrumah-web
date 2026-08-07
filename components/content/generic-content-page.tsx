@@ -64,7 +64,7 @@ export function GenericContentPageView({ page }: { page: GenericContentPage }) {
     <section className="bg-gradient-to-b from-slate-50 to-white py-16 sm:py-20">
       <div className="mx-auto flex max-w-5xl flex-col gap-10 px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-4">
-          <span className="w-fit rounded-full bg-[#E0F2FE] px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-[#0284C7]">
+          <span className="w-fit rounded-full bg-[#E0F2FE] px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-[#0369A1]">
             {localizedCategory}
           </span>
           <h1 className="text-3xl font-extrabold leading-tight tracking-tight text-[#075985] sm:text-5xl">
@@ -113,13 +113,13 @@ export function GenericContentPageView({ page }: { page: GenericContentPage }) {
           />
         ) : null}
 
-        <div className="rounded-3xl bg-[#0284C7] p-6 text-white sm:p-8">
+        <div className="rounded-3xl bg-[#0369A1] p-6 text-white sm:p-8">
           <h2 className="text-2xl font-extrabold">{t("content.needHelp")}</h2>
           <p className="mt-2 text-sm font-semibold leading-relaxed text-blue-50">
             {t("content.needHelpDesc")}
           </p>
           <div className="mt-5 flex flex-col gap-3 sm:flex-row">
-            <a href={getWhatsAppLink({ service: page.title })} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white">
+            <a href={getWhatsAppLink({ service: page.title })} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#15803D] px-5 py-3 text-sm font-extrabold text-white">
               <MessageCircle className="h-4 w-4" /> {t("whatsappDesk.cta")}
             </a>
             <Link href="/contact" className="inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-extrabold text-[#075985]">

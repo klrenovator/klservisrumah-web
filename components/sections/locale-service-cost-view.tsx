@@ -53,7 +53,7 @@ export function LocaleServiceCostView({ slug, bundle, rates }: LocaleServiceCost
 
       <section className="bg-gradient-to-b from-slate-50 to-white py-16 sm:py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <span className="rounded-full bg-[#E0F2FE] px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-[#0284C7]">
+          <span className="rounded-full bg-[#E0F2FE] px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-[#0369A1]">
             {t("costPage.badge")}
           </span>
           <h1 className="mt-4 text-3xl font-extrabold text-[#075985] sm:text-5xl text-balance">
@@ -78,7 +78,7 @@ export function LocaleServiceCostView({ slug, bundle, rates }: LocaleServiceCost
                 {rows.map((rate) => (
                   <tr key={rate.label}>
                     <td className="px-5 py-4 font-extrabold text-[#075985]">{rate.label}</td>
-                    <td className="px-5 py-4 font-bold text-[#0EA5E9]">{rate.publishedRate}</td>
+                    <td className="px-5 py-4 font-bold text-[#0369A1]">{rate.publishedRate}</td>
                     <td className="px-5 py-4 text-[#475569]">{rate.typicalRange}</td>
                     <td className="px-5 py-4 text-xs font-semibold text-[#475569]">{rate.note}</td>
                   </tr>
@@ -88,7 +88,7 @@ export function LocaleServiceCostView({ slug, bundle, rates }: LocaleServiceCost
           </div>
 
           <div className="mt-10">
-            <span className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#0EA5E9]">
+            <span className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#0369A1]">
               {t("costPage.factorsEyebrow")}
             </span>
             <h2 className="mt-3 text-2xl font-extrabold text-[#075985] sm:text-3xl">
@@ -110,14 +110,14 @@ export function LocaleServiceCostView({ slug, bundle, rates }: LocaleServiceCost
             </div>
           </div>
 
-          <div className="mt-10 rounded-3xl bg-[#0284C7] p-6 text-white sm:p-8">
+          <div className="mt-10 rounded-3xl bg-[#0369A1] p-6 text-white sm:p-8">
             <h2 className="text-2xl font-extrabold">{t("costPage.ctaHeading", { name: service.title })}</h2>
             <p className="mt-2 text-sm font-semibold text-blue-50">{t("costPage.ctaBody")}</p>
             <a
               href={waLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white"
+              className="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#15803D] px-5 py-3 text-sm font-extrabold text-white"
             >
               <MessageSquare className="h-4 w-4" />
               {t("costPage.ctaButton")}

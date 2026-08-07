@@ -7,7 +7,7 @@ export function PricingHeroHeading() {
   const t = useTranslations();
   return (
     <div className="max-w-4xl">
-      <span className="inline-flex rounded-full bg-[#E0F2FE] px-4 py-1.5 text-xs font-extrabold uppercase tracking-[0.24em] text-[#0284C7]">
+      <span className="inline-flex rounded-full bg-[#E0F2FE] px-4 py-1.5 text-xs font-extrabold uppercase tracking-[0.24em] text-[#0369A1]">
         {t("pricing.pageTitle")}
       </span>
       <h1 className="mt-5 text-3xl font-extrabold tracking-tight text-[#075985] sm:text-5xl">

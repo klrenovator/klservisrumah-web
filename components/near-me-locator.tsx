@@ -33,7 +33,7 @@ export function NearMeLocator() {
       </p>
       <button
         onClick={locate}
-        className="mt-4 inline-flex items-center gap-2 rounded-xl bg-[#0284C7] px-5 py-3 text-sm font-extrabold text-white"
+        className="mt-4 inline-flex items-center gap-2 rounded-xl bg-[#0369A1] px-5 py-3 text-sm font-extrabold text-white"
       >
         <Navigation className="h-4 w-4" /> {t("location.locatorButton")}
       </button>

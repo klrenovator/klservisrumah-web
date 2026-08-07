@@ -179,7 +179,10 @@ export default function Home() {
         <div className="mx-auto max-w-7xl">
           <StatsCounter
             stats={[
-              { value: "13+", label: "Service pillars", trilingualMs: "Pilar perkhidmatan", trilingualZh: "服务项目" },
+              // Count derived from the same servicesData registry the FAQ
+              // copy and grid use — a hardcoded "13+" previously sat on the
+              // same page as "28+ services" (visible inconsistency).
+              { value: `${Object.keys(servicesData).length}+`, label: "Home services", trilingualMs: "Perkhidmatan rumah", trilingualZh: "家庭服务" },
               { value: "1,200+", label: "Completed projects", trilingualMs: "Projek siap", trilingualZh: "完成项目" },
               { value: "4.9 / 5", label: "Google rating", trilingualMs: "Penilaian Google", trilingualZh: "谷歌评分" },
               { value: "30 min", label: "Avg response time", trilingualMs: "Purata respons", trilingualZh: "平均响应" }

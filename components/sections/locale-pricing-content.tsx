@@ -40,7 +40,7 @@ export function LocalePricingContent() {
               return (
                 <div key={key} className="rounded-3xl border border-slate-100 bg-white p-6 shadow-sm shadow-sky-100/50">
                   <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#E0F2FE]">
-                    <Icon className="h-5 w-5 text-[#0284C7]" />
+                    <Icon className="h-5 w-5 text-[#0369A1]" />
                   </div>
                   <h2 className="mt-4 text-lg font-extrabold text-[#075985]">
                     {t(`pricingPage.principles.${key}.title`)}
@@ -59,7 +59,7 @@ export function LocalePricingContent() {
       <section className="bg-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-8 max-w-3xl">
-            <span className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#0EA5E9]">
+            <span className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#0369A1]">
               {t("pricingPage.serviceByServiceHeading")}
             </span>
             <h2 className="mt-3 text-3xl font-extrabold text-[#075985]">
@@ -93,7 +93,7 @@ export function LocalePricingContent() {
                 >
                   <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
                     <div>
-                      <div className="inline-flex items-center gap-2 rounded-full bg-[#E0F2FE] px-3 py-1 text-[11px] font-extrabold uppercase tracking-[0.24em] text-[#0284C7]">
+                      <div className="inline-flex items-center gap-2 rounded-full bg-[#E0F2FE] px-3 py-1 text-[11px] font-extrabold uppercase tracking-[0.24em] text-[#0369A1]">
                         <BadgeCheck className="h-3.5 w-3.5" />
                         {t("pricingPage.startsFrom")} {service.startPrice}
                       </div>
@@ -103,16 +103,16 @@ export function LocalePricingContent() {
                       </p>
                     </div>
                     <div className="rounded-2xl border border-sky-100 bg-white px-4 py-3 text-sm font-bold text-[#075985] shadow-sm">
-                      {t("pricingPage.warranty")}: <span className="text-[#0284C7]">{service.warranty}</span>
+                      {t("pricingPage.warranty")}: <span className="text-[#0369A1]">{service.warranty}</span>
                     </div>
                   </div>
 
                   <div className="mt-6 grid gap-4 sm:grid-cols-3">
                     {visibleRates.map((rate) => (
                       <div key={`${service.slug}-${rate.label}`} className="rounded-2xl border border-slate-100 bg-white p-4 shadow-sm">
-                        <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#0EA5E9]">{rate.pricingUnit}</p>
+                        <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#0369A1]">{rate.pricingUnit}</p>
                         <h4 className="mt-2 text-base font-extrabold text-[#075985]">{rate.label}</h4>
-                        <p className="mt-3 text-lg font-extrabold text-[#0284C7]">{rate.publishedRate}</p>
+                        <p className="mt-3 text-lg font-extrabold text-[#0369A1]">{rate.publishedRate}</p>
                         <p className="mt-2 text-xs font-semibold leading-relaxed text-[#475569]">{rate.marketRange}</p>
                       </div>
                     ))}
@@ -126,7 +126,7 @@ export function LocalePricingContent() {
                   <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                     <Link
                       href={`/services/${service.slug}/cost`}
-                      className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#0284C7] px-5 py-3 text-sm font-extrabold text-white transition hover:bg-[#0369A1]"
+                      className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#0369A1] px-5 py-3 text-sm font-extrabold text-white transition hover:bg-[#075985]"
                     >
                       {t("pricingPage.openPricingGuide")}
                       <ArrowRight className="h-4 w-4" />
@@ -149,7 +149,7 @@ export function LocalePricingContent() {
       <section className="bg-slate-50 py-16">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.15fr_0.85fr] lg:px-8">
           <div>
-            <span className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#0EA5E9]">
+            <span className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#0369A1]">
               {t("pricingPage.quoteFactorsHeading")}
             </span>
             <h2 className="mt-3 text-3xl font-extrabold text-[#075985]">
@@ -179,7 +179,7 @@ export function LocalePricingContent() {
               href={getWhatsAppLink({ service: "pricing quote" })}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white transition hover:bg-[#128C7E]"
+              className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#15803D] px-5 py-3 text-sm font-extrabold text-white transition hover:bg-[#166534]"
             >
               <MessageCircle className="h-4 w-4" />
               {t("pricingPage.whatsappBox.cta")}
@@ -196,7 +196,7 @@ export function LocalePricingContent() {
       <section className="bg-white py-16">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <span className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#0EA5E9]">
+            <span className="text-xs font-extrabold uppercase tracking-[0.24em] text-[#0369A1]">
               {t("pricingPage.faqHeading")}
             </span>
             <h2 className="mt-3 text-3xl font-extrabold text-[#075985]">

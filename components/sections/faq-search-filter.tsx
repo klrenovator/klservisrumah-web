@@ -62,7 +62,7 @@ export function FaqSearchFilter() {
   return (
     <div className="mx-auto max-w-2xl">
       <div className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-3.5 shadow-sm focus-within:border-[#0EA5E9]">
-        <Search className="h-5 w-5 shrink-0 text-[#0EA5E9]" />
+        <Search className="h-5 w-5 shrink-0 text-[#0369A1]" />
         <input
           value={query}
           onChange={(event) => setQuery(event.target.value)}

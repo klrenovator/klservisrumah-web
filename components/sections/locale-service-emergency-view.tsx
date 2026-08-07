@@ -64,7 +64,7 @@ export function LocaleServiceEmergencyView({
               const stepText = t(`emergencyPage.step${step}`);
               return (
                 <div key={step} className="rounded-3xl border border-slate-100 bg-white p-6 shadow-xs">
-                  <span className="rounded-xl bg-[#E0F2FE] px-3 py-1.5 text-sm font-extrabold text-[#0284C7]">
+                  <span className="rounded-xl bg-[#E0F2FE] px-3 py-1.5 text-sm font-extrabold text-[#0369A1]">
                     0{idx + 1}
                   </span>
                   <h2 className="mt-4 text-lg font-extrabold text-[#075985]">{stepText}</h2>
@@ -75,7 +75,7 @@ export function LocaleServiceEmergencyView({
 
           <div className="mt-10 rounded-3xl border border-slate-100 bg-white p-6 shadow-xs sm:p-8">
             <h2 className="flex items-center gap-2 text-2xl font-extrabold text-[#075985]">
-              <Clock3 className="h-6 w-6 text-[#0EA5E9]" /> {t("emergencyPage.coverageHeading")}
+              <Clock3 className="h-6 w-6 text-[#0369A1]" /> {t("emergencyPage.coverageHeading")}
             </h2>
             <p className="mt-2 text-sm font-semibold leading-relaxed text-[#475569]">
               {t("emergencyPage.coverageSub")}
@@ -89,14 +89,14 @@ export function LocaleServiceEmergencyView({
             </div>
           </div>
 
-          <div className="mt-10 rounded-3xl bg-[#0284C7] p-6 text-white sm:p-8">
+          <div className="mt-10 rounded-3xl bg-[#0369A1] p-6 text-white sm:p-8">
             <h2 className="text-2xl font-extrabold">{t("emergencyPage.ctaHeading")}</h2>
             <p className="mt-2 text-sm font-semibold text-blue-50">{t("emergencyPage.ctaBody")}</p>
             <a
               href={waLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white"
+              className="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#15803D] px-5 py-3 text-sm font-extrabold text-white"
             >
               <MessageCircle className="h-4 w-4" /> {t("emergencyPage.ctaButton")}
             </a>

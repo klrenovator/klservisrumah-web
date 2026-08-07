@@ -21,7 +21,7 @@ export function FeaturedProjects() {
         {/* Header */}
         <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-6 mb-16">
           <div className="flex flex-col items-start gap-3 max-w-2xl">
-            <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
+            <span className="text-xs font-bold text-[#0369A1] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
               {t("home.featuredProjects.heading")}
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
@@ -48,12 +48,12 @@ export function FeaturedProjects() {
               <div className="flex flex-col gap-4">
                 
                 {/* Location and pin */}
-                <div className="flex items-center gap-1.5 text-xs text-[#0EA5E9] font-semibold">
+                <div className="flex items-center gap-1.5 text-xs text-[#0369A1] font-semibold">
                   <MapPin className="w-4 h-4" />
                   <span>{project.location}</span>
                 </div>
 
-                <h3 className="text-xl font-extrabold text-[#075985] tracking-tight group-hover:text-[#0EA5E9] transition-colors leading-snug">
+                <h3 className="text-xl font-extrabold text-[#075985] tracking-tight group-hover:text-[#0369A1] transition-colors leading-snug">
                   {project.title}
                 </h3>
 
@@ -68,8 +68,8 @@ export function FeaturedProjects() {
                 <span className="text-xs text-[#075985] font-bold">
                   ⚡ {project.stat}
                 </span>
-                <span className="p-2 bg-slate-50 rounded-xl group-hover:bg-[#0EA5E9] group-hover:text-white transition-colors duration-300">
-                  <ArrowUpRight className="w-4 h-4 text-[#0EA5E9] group-hover:text-white" />
+                <span className="p-2 bg-slate-50 rounded-xl group-hover:bg-[#0369A1] group-hover:text-white transition-colors duration-300">
+                  <ArrowUpRight className="w-4 h-4 text-[#0369A1] group-hover:text-white" />
                 </span>
               </div>
 

@@ -40,7 +40,7 @@ export function InternalLinkGrid({
           >
             <div className="flex items-start justify-between gap-2">
               <span className="text-base font-extrabold text-[#075985] leading-tight">{link.title}</span>
-              <ArrowRight className="w-4 h-4 text-[#0EA5E9] shrink-0 mt-1 transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="w-4 h-4 text-[#0369A1] shrink-0 mt-1 transition-transform group-hover:translate-x-1" />
             </div>
             {link.desc ? (
               <p className="mt-2 text-xs font-semibold leading-relaxed text-[#475569]">{link.desc}</p>

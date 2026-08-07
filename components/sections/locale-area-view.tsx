@@ -44,8 +44,8 @@ export function LocaleAreaView({
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-7 flex flex-col gap-10">
               <div className="flex flex-col gap-4">
-                <span className="text-xs font-bold text-[#0EA5E9] uppercase tracking-widest bg-[#0EA5E9]/10 px-4 py-1.5 rounded-full w-fit flex items-center gap-1.5">
-                  <MapPin className="w-4 h-4 text-[#0EA5E9]" />
+                <span className="text-xs font-bold text-[#0369A1] uppercase tracking-widest bg-[#0EA5E9]/10 px-4 py-1.5 rounded-full w-fit flex items-center gap-1.5">
+                  <MapPin className="w-4 h-4 text-[#0369A1]" />
                   <span>{t("location.servingBadge", { area: area.name })}</span>
                 </span>
                 <h1 className="text-3xl sm:text-5xl font-extrabold text-[#075985] tracking-tight leading-tight">
@@ -62,7 +62,7 @@ export function LocaleAreaView({
 
               <div className="bg-slate-50 rounded-3xl p-6 border border-slate-100/80 flex flex-col gap-5">
                 <h2 className="text-lg font-extrabold text-[#075985] tracking-tight flex items-center gap-2">
-                  <Landmark className="w-5 h-5 text-[#0EA5E9]" />
+                  <Landmark className="w-5 h-5 text-[#0369A1]" />
                   <span>{t("location.coverageHeading", { area: area.name })}</span>
                 </h2>
                 <div className="grid grid-cols-2 gap-4">
@@ -83,7 +83,7 @@ export function LocaleAreaView({
             <div className="lg:col-span-5 w-full lg:sticky lg:top-28">
               <div className="bg-[#075985] text-white rounded-3xl p-6 sm:p-8 flex flex-col gap-6 shadow-[0_20px_50px_rgba(2,31,68,0.12)]">
                 <div className="flex flex-col gap-1">
-                  <span className="text-xs font-bold text-[#0EA5E9] uppercase tracking-widest">
+                  <span className="text-xs font-bold text-[#0369A1] uppercase tracking-widest">
                     {t("location.immediateDispatch")}
                   </span>
                   <h2 className="text-xl sm:text-2xl font-extrabold tracking-tight">
@@ -95,7 +95,7 @@ export function LocaleAreaView({
                 </div>
 
                 <div className="bg-white/5 p-5 rounded-2xl border border-white/10 flex flex-col gap-3 text-xs sm:text-sm font-semibold">
-                  <div className="flex items-center gap-2 text-[#0EA5E9]">
+                  <div className="flex items-center gap-2 text-[#0369A1]">
                     <Shield className="w-5 h-5" />
                     <span className="text-xs uppercase tracking-wider block font-bold">
                       {t("location.safetyPack")}
@@ -114,7 +114,7 @@ export function LocaleAreaView({
                     href={waLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full bg-[#25D366] hover:bg-[#128C7E] text-white text-center font-extrabold text-sm py-4 rounded-xl transition-all duration-200 shadow-sm flex items-center justify-center gap-2"
+                    className="w-full bg-[#15803D] hover:bg-[#166534] text-white text-center font-extrabold text-sm py-4 rounded-xl transition-all duration-200 shadow-sm flex items-center justify-center gap-2"
                   >
                     <MessageSquare className="w-4.5 h-4.5 fill-white text-[#25D366]" />
                     <span>{t("common.bookWhatsApp")}</span>

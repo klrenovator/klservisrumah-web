@@ -27,7 +27,7 @@ export default function AreasPage() {
       <section className="bg-gradient-to-b from-[#F8FAFC] via-white to-white border-b border-slate-100 py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto">
-            <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
+            <span className="text-xs font-bold text-[#0369A1] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
               Service Coverage
             </span>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#075985] tracking-tight">
@@ -41,7 +41,7 @@ export default function AreasPage() {
                 href={getWhatsAppLink({ location: "KL & Selangor" })}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white font-extrabold text-sm px-6 py-3 rounded-xl transition-all duration-200 shadow-sm"
+                className="inline-flex items-center gap-2 bg-[#15803D] hover:bg-[#166534] text-white font-extrabold text-sm px-6 py-3 rounded-xl transition-all duration-200 shadow-sm"
               >
                 <MessageSquare className="w-4 h-4" />
                 <span>WhatsApp to Book</span>
@@ -56,7 +56,7 @@ export default function AreasPage() {
             </div>
             <div className="flex items-center gap-6 mt-4 text-sm text-[#475569] font-semibold">
               <span className="flex items-center gap-1.5">
-                <MapPin className="w-4 h-4 text-[#0EA5E9]" />
+                <MapPin className="w-4 h-4 text-[#0369A1]" />
                 40+ Areas
               </span>
               <span className="flex items-center gap-1.5">

@@ -86,7 +86,7 @@ export function ServiceDetailHero({ service }: ServiceDetailHeroProps) {
             {/* Price + Warranty row */}
             <div className="flex flex-wrap items-center gap-3 mt-2">
               <span className="inline-flex items-baseline gap-2 bg-[#F0F9FF] border-2 border-[#BAE6FD] rounded-2xl px-5 py-3">
-                <span className="text-xs font-extrabold text-[#0EA5E9] uppercase tracking-wider">From</span>
+                <span className="text-xs font-extrabold text-[#0369A1] uppercase tracking-wider">From</span>
                 <span className="text-3xl sm:text-4xl font-black text-[#075985] tracking-tight">{service.startPrice}</span>
               </span>
               <span className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 text-emerald-700 px-4 py-3 rounded-2xl text-sm font-bold">
@@ -113,7 +113,7 @@ export function ServiceDetailHero({ service }: ServiceDetailHeroProps) {
                 href={`tel:${siteConfig.phone}`}
                 className="btn-ghost text-base"
               >
-                <Phone className="w-4 h-4 text-[#0EA5E9]" />
+                <Phone className="w-4 h-4 text-[#0369A1]" />
                 <span>{siteConfig.phoneDisplay}</span>
               </a>
             </div>

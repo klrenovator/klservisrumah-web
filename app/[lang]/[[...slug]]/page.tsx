@@ -105,7 +105,7 @@ export default async function LocalizedLandingPage(props: { params: Promise<{ la
       />
       <section className="bg-gradient-to-b from-slate-50 to-white py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-          <span className="rounded-full bg-[#E0F2FE] px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-[#0284C7]">
+          <span className="rounded-full bg-[#E0F2FE] px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-[#0369A1]">
             {info.badge}
           </span>
           <h1 className="mt-4 text-3xl font-extrabold text-[#075985] sm:text-5xl">
@@ -118,7 +118,7 @@ export default async function LocalizedLandingPage(props: { params: Promise<{ la
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <Link
               href="/"
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#0284C7] px-6 py-3 text-sm font-extrabold text-white shadow-sm hover:bg-[#0369A1] transition-colors"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#0369A1] px-6 py-3 text-sm font-extrabold text-white shadow-sm hover:bg-[#075985] transition-colors"
             >
               <Home className="w-4 h-4" />
               {info.ctaPrimary}
@@ -133,15 +133,15 @@ export default async function LocalizedLandingPage(props: { params: Promise<{ la
           </div>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm">
-            <Link href="/services" className="text-[#0EA5E9] font-semibold hover:underline">
+            <Link href="/services" className="text-[#0369A1] font-semibold hover:underline">
               {info.ctaServices}
             </Link>
             <span className="text-slate-300">·</span>
-            <Link href="/pricing" className="text-[#0EA5E9] font-semibold hover:underline">
+            <Link href="/pricing" className="text-[#0369A1] font-semibold hover:underline">
               {info.ctaPricing}
             </Link>
             <span className="text-slate-300">·</span>
-            <Link href="/contact" className="text-[#0EA5E9] font-semibold hover:underline">
+            <Link href="/contact" className="text-[#0369A1] font-semibold hover:underline">
               {info.ctaContact}
             </Link>
             <span className="text-slate-300">·</span>
@@ -149,7 +149,7 @@ export default async function LocalizedLandingPage(props: { params: Promise<{ la
               href={siteConfig.whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-[#25D366] font-semibold hover:underline"
+              className="inline-flex items-center gap-1 text-[#15803D] font-semibold hover:underline"
             >
               <MessageSquare className="w-3.5 h-3.5" />
               WhatsApp
