@@ -119,7 +119,7 @@ export function GenericContentPageView({ page }: { page: GenericContentPage }) {
             {t("content.needHelpDesc")}
           </p>
           <div className="mt-5 flex flex-col gap-3 sm:flex-row">
-            <a href={getWhatsAppLink({ service: page.title })} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white">
+            <a href={getWhatsAppLink({ service: page.title, lang })} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white">
               <MessageCircle className="h-4 w-4" /> {t("whatsappDesk.cta")}
             </a>
             <Link href="/contact" className="inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-extrabold text-[#075985]">

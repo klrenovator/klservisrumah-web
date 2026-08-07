@@ -6,9 +6,11 @@ import { areaPages } from "@/config/area-data";
 import { MapPin, ArrowRight } from "lucide-react";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { useTranslations } from "@/hooks/use-translations";
+import { useLang } from "@/context/lang-context";
 
 export function ServiceAreas() {
   const t = useTranslations();
+  const { lang } = useLang();
   return (
     <section className="bg-white py-20 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -61,7 +63,7 @@ export function ServiceAreas() {
             <p className="text-xs text-[#475569] font-semibold">{t("home.serviceAreas.notListedDesc")}</p>
           </div>
           <a
-            href={getWhatsAppLink({ location: "KL & Selangor" })}
+            href={getWhatsAppLink({ location: "KL & Selangor", lang })}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#0EA5E9] hover:bg-[#075985] text-white text-xs font-bold px-5 py-3 rounded-xl transition-all duration-200 shadow-3xs"

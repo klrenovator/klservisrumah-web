@@ -28,7 +28,7 @@ export function LocaleAreaView({
   const { lang } = useLang();
   const t = useTranslations();
   const area = bundle[lang] ?? bundle.en;
-  const waLink = getWhatsAppLink({ location: bundle.en.name });
+  const waLink = getWhatsAppLink({ location: area.name, lang });
 
   return (
     <>

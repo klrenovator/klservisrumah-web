@@ -5,6 +5,7 @@ import { X, MessageCircle } from "lucide-react";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { trackWhatsAppClick } from "@/lib/analytics";
 import { useTranslations } from "@/hooks/use-translations";
+import { useLang } from "@/context/lang-context";
 
 const STORAGE_KEY = "klservisrumah-exit-popup-dismissed-at";
 const THIRTY_DAYS = 1000 * 60 * 60 * 24 * 30;
@@ -20,6 +21,7 @@ const THIRTY_DAYS = 1000 * 60 * 60 * 24 * 30;
  */
 export function ExitIntentPopup() {
   const t = useTranslations();
+  const { lang } = useLang();
   const [open, setOpen] = useState(false);
   const dialogRef = useRef<HTMLDivElement>(null);
 
@@ -117,7 +119,7 @@ export function ExitIntentPopup() {
             {t("exitPopup.body")}
           </p>
           <a
-            href={getWhatsAppLink({ service: "fixed-price home service quote" })}
+            href={getWhatsAppLink({ service: t("exitPopup.whatsappService"), lang: lang })}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackWhatsAppClick({ page: "exit_intent_popup" })}

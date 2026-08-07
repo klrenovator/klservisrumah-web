@@ -58,7 +58,7 @@ export function ToolPage({
   localeUrls?: Record<SiteLocale, string>;
 }) {
   const shell = toolShellCopy[locale];
-  const waLink = getWhatsAppLink({ service: content.name });
+  const waLink = getWhatsAppLink({ service: content.name, lang: locale });
   const urls = localeUrls ?? toolLocaleUrls(content.slug);
   const related = content.relatedTools
     .map((slug) => {

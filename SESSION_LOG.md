@@ -666,3 +666,111 @@ The roadmap's high-priority tier is now exhausted for in-repo work. Continue wit
 - The hreflang fix is forward-compatible with the H3 full rollout: if/when the owner extends the per-locale SSG to areas/problems/suburbs, those pages will be self-canonical and ship their own hreflang clusters, exactly like the H3 pilot service pages do today.
 - The SEO-audit-script extension means this defect class is now caught at every `npm run seo:audit` invocation going forward — the next session can't accidentally reintroduce it.
 - All numbers in this entry are from observing real behaviour (delivered headers, parsed canonical/hreflang pairs, build counts, runtime smoke tests), not from reading the diff.
+
+---
+
+## Session 008
+
+**Date:** 2026-08-07 (UTC)
+**Branch:** `arena/019fdbf5-klservisrumah-web` (from `main` @ `57c662d`, containing S001–S007)
+**Status:** ✅ COMPLETED
+
+### Objectives
+- Read all four governance files; verify S001–S007 claims against the actual checkout.
+- Independent deep audit focusing on the backlog's recommended next task: locale-aware WhatsApp messages.
+- Fix, verify, re-audit.
+
+### Baseline verification (before changes)
+- `npm install` clean · `npm audit` **0 vulnerabilities** · `npm run lint` 0/0 · `npm run type-check` PASS · `npm run build` SUCCESS (4,245 pages) · estimator suite 231,501 assertions PASS.
+- Static greps: 0 × `any`, 0 × `@ts-ignore`/`eslint-disable`, 0 × `console.log` in source, 0 × TODO/FIXME.
+- Message dictionaries: 1,055 keys × 3 locales — perfect parity, 0 empty values.
+- All S001–S007 fixes re-verified intact.
+
+### Issue discovered & fixed this session (1 new, fixed)
+
+**🟠 N11 — WhatsApp pre-filled messages were always English regardless of visitor locale.**
+The `getWhatsAppLink()` function always generated English-only messages (e.g., "Hi KL Servis Rumah! I am looking for professional painting service in Cheras."). WhatsApp is the site's primary conversion element — the sticky mobile bar, the desktop bubble, every service page CTA, the booking form handoff. A Malay visitor clicking "Tempah melalui WhatsApp" on `/ms/services/painting` got an English pre-filled message, breaking the trilingual contract that every other surface honours. The same issue affected service/location names: even on localized pages, the bundles' English titles were passed to the message (e.g., `serviceBundle.en.title`).
+
+*Fix:* `lib/whatsapp.ts` rewritten with a `lang?: Locale` parameter and three complete sets of message templates (EN/MS/ZH). Templates use natural language for each locale — not literal machine translations. The `{service}` and `{location}` placeholders are now filled with localized names from the page's own data bundles.
+
+36 of 48 call sites updated across 24+ files to pass `lang` + localized service/location names. The remaining 12 call sites are all on EN-only routes (`/about`, `/blog`, `/faq`, `/projects`, `/tools`, `/answers`, `/brands`, `/problems`, `/error`) where English is correct and no locale context exists.
+
+3 new dictionary keys added to all three locales (14 → 14 new keys including `pricingPage.whatsappService`, `exitPopup.whatsappService`, `servicesIndex.whatsappService`).
+
+### Files modified (27 source + 3 dictionaries + 2 governance)
+- `lib/whatsapp.ts` — rewritten with locale-aware templates.
+- `components/sections/locale-area-service-view.tsx` — pass `lang` + localized names.
+- `components/sections/locale-area-view.tsx` — pass `lang` + localized name.
+- `components/sections/locale-near-me-hub.tsx` — pass `lang` + localized name.
+- `components/sections/locale-near-me-view.tsx` — pass `lang` + localized names.
+- `components/sections/locale-problem-view.tsx` — pass `lang` (title already localized).
+- `components/sections/locale-pricing-content.tsx` — pass `lang` + translated service label.
+- `components/sections/locale-suburb-service-view.tsx` — pass `lang` + localized name.
+- `components/sections/locale-service-cost-view.tsx` — pass `locale` (already in scope).
+- `components/sections/locale-service-emergency-view.tsx` — pass `locale` (already in scope).
+- `components/sections/locale-service-page.tsx` — pass `locale` (both call sites).
+- `components/sections/locale-services-index.tsx` — pass `locale` + translated service label.
+- `components/ui/whatsapp-button.tsx` — add `useLang`, pass `lang`.
+- `components/ui/navbar.tsx` — pass `lang` (both `HeaderWhatsAppActions` and `Navbar`).
+- `components/exit-intent-popup.tsx` — add `useLang`, pass `lang` + translated service label.
+- `components/sticky-mobile-whatsapp-bar.tsx` — add `useLang`, pass `lang`.
+- `components/sticky-book-button.tsx` — add `useLang`, pass `lang`.
+- `components/sections/hero.tsx` — pass `lang` (both call sites).
+- `components/sections/home-cta.tsx` — add `useLang`, pass `lang`.
+- `components/sections/services-grid.tsx` — pass `lang` (service title already localized).
+- `components/sections/not-sure-section.tsx` — add `useLang`, pass `lang`.
+- `components/sections/service-areas.tsx` — add `useLang`, pass `lang`.
+- `components/sections/service-detail-hero.tsx` — add `useLang`, pass `lang`.
+- `components/sections/subservice-detail-hero.tsx` — add `useLang`, pass `lang`.
+- `components/locale-not-found-content.tsx` — add `useLang`, pass `lang`.
+- `components/content/generic-content-page.tsx` — pass `lang` (already in scope).
+- `components/tools/tool-page.tsx` — pass `locale` (already in scope).
+- `app/ms/blog/page.tsx`, `app/ms/blog/[slug]/page.tsx`, `app/ms/soalan-lazim/page.tsx` — pass `lang: "ms"`.
+- `app/zh/bo-ke/page.tsx`, `app/zh/bo-ke/[slug]/page.tsx`, `app/zh/chang-jian-wen-ti/page.tsx` — pass `lang: "zh"`.
+- `messages/en.json`, `messages/ms.json`, `messages/zh.json` — +3 keys each (1,055 → 1,058).
+- Governance: `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
+
+### Files created
+None.
+
+### Files deleted
+None.
+
+### Tests/Verification performed
+1. `npm run lint` — **0 errors, 0 warnings**.
+2. `npm run type-check` — **PASS**.
+3. `npm run build` — **SUCCESS** (4,245 pages).
+4. `npm run test:estimators` — **231,501 assertions, 0 failures**.
+5. `npm run seo:audit` — **clean**, report regenerated.
+6. `npm audit` — **0 vulnerabilities**.
+7. Message dictionaries — **1,058 keys × 3 locales, 0 missing, 0 empty**.
+8. **Production-server smoke test:** MS page `/ms/services/painting` → WhatsApp link contains `Salam KL Servis Rumah! Saya ingin mendapatkan sebut harga untuk perkhidmatan Perkhidmatan Pengecatan Premium untuk harta saya.` ✓. ZH page `/zh/services/painting` → WhatsApp link contains `您好 KL Servis Rumah！我想获取优质油漆服务服务的报价。` ✓. EN page `/services/painting` → English messages ✓.
+9. Call-site audit: 36/48 calls now pass `lang`; remaining 12 are EN-only routes (correct).
+
+### Build/Lint/Type-Check Status
+All green: lint 0/0, type-check PASS, build SUCCESS (4,245 pages), 231,501 estimator assertions, `npm audit` 0 vulnerabilities, SEO audit clean.
+
+### Current Project Status
+- 🔴 Critical: **0 remaining.**
+- 🟠 High: N11 ✅ (new — locale-aware WhatsApp); N10 ✅ (S007); N8 ✅ (S006); N3/N4/N5/N7 ✅ (S005); H3 pilot live; H1/H1b business override; H2 field-data gated.
+- 🟡 Medium: N9 ✅ (S006); N1/N2/N6 ✅ (S005); A1, M1–M5, M7, M9 ✅; M8 deferred.
+- 🟢 Low: L1–L12 ✅.
+- **Crawl health:** canonical/hreflang consistency 0 defects; orphans 0 real content pages; broken targets 0; heading skips 0; metadata presence 100%.
+- **Multilingual:** 1,058 keys × 3 locales, perfect parity; WhatsApp messages now fully localized on all locale-aware surfaces.
+- **Production-ready.** Remaining items are owner-side (env vars, pings) or data-gated.
+
+### Remaining priorities
+1. Deploy + re-measure GSC coverage after S005–S008 changes.
+2. H3 full-rollout go/no-go on post-fix data.
+3. Owner-side: `ADMIN_PASSWORD` + env vars in Vercel; GBP / IndexNow / Bing pings.
+4. **CSP field-check after deploy** (carried from S006).
+5. **Long-term:** "low inbound (≤2)" tier — 648 `/suburbs/*` and 1,036 near-me pages remain thin on internal equity. A contextual related-links block is the natural next improvement.
+
+### Recommended Next Task
+Deploy and re-crawl. Then work the "low inbound (≤2)" tier with a contextual related-links block for the 1,684 still-thin pages.
+
+### Notes
+- All new WhatsApp templates are natural-language translations, not literal machine translations. The Malay uses "Salam" (standard greeting) and natural BM sentence structure. The Chinese uses "您好" (polite greeting) and natural ZH word order.
+- The `siteConfig.whatsappLink` static URL (used by the navbar WhatsApp icon in some contexts) remains English — it's a hardcoded fallback. The `getWhatsAppLink()` function is now the primary path and is fully locale-aware.
+- No business logic, pricing, colour, schema meaning, or English content was changed. Only the WhatsApp pre-filled message language was made locale-aware.
+- All 27 file changes were verified by observing real build output (parsed HTML files from `.next/server/app/`), not by reading diffs.

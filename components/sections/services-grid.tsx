@@ -102,7 +102,7 @@ export function ServicesGrid() {
                   {t("common.viewDetails")} <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
                 </Link>
                 <a
-                  href={getWhatsAppLink({ service: service.title })}
+                  href={getWhatsAppLink({ service: service.title, lang })}
                   target="_blank"
                   rel="nofollow noopener noreferrer"
                   aria-label={`${t("common.bookService")} — ${service.title}`}

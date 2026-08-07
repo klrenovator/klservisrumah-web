@@ -563,7 +563,8 @@
       }
     },
     "confirmedAfterScope": "确认范围后报价",
-    "taskUnit": "任务"
+    "taskUnit": "任务",
+    "whatsappService": "报价咨询"
   },
   "notFound": {
     "badge": "404 未找到页面",
@@ -581,7 +582,8 @@
     "title": "先获取透明的固定价报价",
     "body": "在 WhatsApp 上发送照片和您的区域。我们将在任何工作开始前确认范围、价格因素和可用的服务时段。",
     "cta": "WhatsApp 获取报价",
-    "closeAria": "关闭弹窗"
+    "closeAria": "关闭弹窗",
+    "whatsappService": "固定价格家居服务报价"
   },
   "breadcrumbs": {
     "home": "首页",
@@ -1455,5 +1457,8 @@
   "a11y": {
     "skipToContent": "跳至主要内容",
     "mainContent": "主要内容"
+  },
+  "servicesIndex": {
+    "whatsappService": "家居服务"
   }
 }

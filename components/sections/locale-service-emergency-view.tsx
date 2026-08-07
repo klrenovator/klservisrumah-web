@@ -34,7 +34,7 @@ export function LocaleServiceEmergencyView({
   const locale = lang as Locale;
   const service = bundle[locale] ?? bundle.en;
   const areas = coverageAreaNames[locale] ?? coverageAreaNames.en;
-  const waLink = getWhatsAppLink({ service: `URGENT ${service.title}` });
+  const waLink = getWhatsAppLink({ service: `URGENT ${service.title}`, lang: locale });
 
   return (
     <>

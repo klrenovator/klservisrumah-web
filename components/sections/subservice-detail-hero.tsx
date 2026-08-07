@@ -6,6 +6,7 @@ import { getWhatsAppLink } from "@/lib/whatsapp";
 import { CheckCircle2, MessageSquare, Phone, ArrowRight, Award } from "lucide-react";
 import { TrustBadgesRow } from "@/components/content/trust-badges-row";
 import { useTranslations } from "@/hooks/use-translations";
+import { useLang } from "@/context/lang-context";
 import type { SubService, ServiceDetail } from "@/config/services-data";
 
 type SubserviceDetailHeroProps = {
@@ -49,8 +50,9 @@ const trilingualSublines: Record<string, { ms: string; zh: string }> = {
  */
 export function SubserviceDetailHero({ service, sub }: SubserviceDetailHeroProps) {
   const subline = trilingualSublines[service.slug] ?? { ms: "", zh: "" };
-  const waLink = getWhatsAppLink({ service: sub.name });
   const t = useTranslations();
+  const { lang } = useLang();
+  const waLink = getWhatsAppLink({ service: sub.name, lang });
 
   return (
     <section className="relative bg-white section-tight border-b border-slate-100 overflow-hidden">

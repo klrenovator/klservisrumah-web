@@ -72,7 +72,7 @@ export function LocaleNearMeView({
           </div>
 
           <a
-            href={getWhatsAppLink({ service: serviceBundle.en.title, location: areaBundle.en.name })}
+            href={getWhatsAppLink({ service: serviceBundle[lang]?.title ?? serviceBundle.en.title, location: areaBundle[lang]?.name ?? areaBundle.en.name, lang })}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-8 inline-flex rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white"

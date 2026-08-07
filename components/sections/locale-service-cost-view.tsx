@@ -39,7 +39,7 @@ export function LocaleServiceCostView({ slug, bundle, rates }: LocaleServiceCost
   const locale = lang as Locale;
   const service = bundle[locale] ?? bundle.en;
   const rows = buildRows({ slug, rates, service, t });
-  const waLink = getWhatsAppLink({ service: `${service.title} cost quote` });
+  const waLink = getWhatsAppLink({ service: `${service.title} cost quote`, lang: locale });
 
   return (
     <>

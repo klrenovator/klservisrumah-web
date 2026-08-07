@@ -171,7 +171,7 @@ export function LocaleAreaServiceView({
               <h2 className="text-2xl font-extrabold">{t("location.bookIn", { area: area.name })}</h2>
               <p className="mt-2 text-sm font-semibold text-blue-50">{t("location.bookInBodyShort")}</p>
               <a
-                href={getWhatsAppLink({ service: serviceBundle.en.title, location: areaBundle.en.name })}
+                href={getWhatsAppLink({ service: serviceBundle[lang]?.title ?? serviceBundle.en.title, location: areaBundle[lang]?.name ?? areaBundle.en.name, lang })}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white"

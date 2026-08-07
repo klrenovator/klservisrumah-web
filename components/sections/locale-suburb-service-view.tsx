@@ -140,7 +140,7 @@ export function LocaleSuburbServiceView({
               <h2 className="text-2xl font-extrabold">{t("location.bookIn", { area: suburbName })}</h2>
               <p className="mt-2 text-sm font-semibold text-blue-50">{t("location.bookInBodySuburb")}</p>
               <a
-                href={getWhatsAppLink({ service: serviceBundle.en.title, location: suburbName })}
+                href={getWhatsAppLink({ service: service.title, location: suburbName, lang })}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white"

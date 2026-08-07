@@ -156,7 +156,7 @@ export function Hero() {
         ? getLocalizedServiceSummary(serviceSummaryBySlug[selectedService], lang).title
         : t("common.bookService")
       : t("common.bookService");
-    const waLink = getWhatsAppLink({ service: localizedSelectedService, location: selectedArea });
+    const waLink = getWhatsAppLink({ service: localizedSelectedService, location: selectedArea, lang });
     window.open(waLink, "_blank");
   };
 
@@ -314,7 +314,7 @@ export function Hero() {
               {/* CTA buttons */}
               <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto mt-2">
                 <a
-                  href={getWhatsAppLink()}
+                  href={getWhatsAppLink({ lang })}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-whatsapp text-base"

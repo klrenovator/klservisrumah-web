@@ -77,7 +77,7 @@ export function LocaleServicesIndex({ locale }: { locale: "ms" | "zh" }) {
               {t("services.notSureSub")}
             </p>
             <a
-              href={getWhatsAppLink({ service: "home services" })}
+              href={getWhatsAppLink({ service: t("servicesIndex.whatsappService"), lang: locale })}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-whatsapp"
