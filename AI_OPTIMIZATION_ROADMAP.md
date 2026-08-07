@@ -77,6 +77,11 @@ All findings below were **independently re-verified in Session 001** against the
 - ✅ **[2026-08-07 / S003] L4. Six dead hero SVGs** — `public/hero-ceiling-fan.svg`, `hero-lighting.svg`, `hero-plaster-ceiling.svg`, `hero-skim-coat.svg`, `hero-tiling.svg`, `hero-water-heater.svg`. Zero references in `app/`/`components/`/`config/`/`lib/`/`scripts/`/`public/`; the 6 services they were drawn for switched to `/hero/home-services-*.jpg` photos. **Deleted** (git history preserves them).
 - ✅ **[2026-08-07 / S003] L5. Stale `public/robots-ai.txt`** — a leftover AI-crawler allow-list fully superseded by `app/robots.ts` (which allow-lists the same bots + more and references both sitemaps). Zero references anywhere. **Deleted.**
 - ✅ **[2026-08-07 / S003] L6. `public/logo/logo.jpg` byte-identical duplicate of `og-image.jpg`** (md5 `7529284c…`) — zero references; `config/site.ts` uses `logo.png`/`og-image.jpg`. **Deleted.**
+- ✅ **[2026-08-07 / S004] L7. Dead component `components/before-after-slider.tsx`** — placeholder before/after SVG illustration; never imported. Homepage uses `sections/before-after.tsx`. **Deleted.**
+- ✅ **[2026-08-07 / S004] L8. Dead component `components/case-study-card.tsx`** — unused case study card component; never imported. **Deleted.**
+- ✅ **[2026-08-07 / S004] L9. Dead component `components/sections/testimonials.tsx`** — superseded by `google-reviews.tsx`; never imported. **Deleted.**
+- ✅ **[2026-08-07 / S004] L10. Dead asset `public/logo/logo.svg`** — zero references in any source file. Site uses PNG variants. **Deleted.**
+- ✅ **[2026-08-07 / S004] L11. Dead asset `public/logo/logo-icon.svg`** — zero references. Site uses `logo-icon.png`. **Deleted.**
 
 ---
 
@@ -130,7 +135,7 @@ Remaining: H2 field-data gated, H3 🔒 owner decision, M8 deferred — unchange
 Business note for H1:
 - ✅ S001 fixed AA (5.01:1 green, 5.94:1 blue) → ✅ S002 reverted to brand `#25D366`/`#0EA5E9` per owner (`klrenovator.com` reference). Status changed from "Fixed" to "Business override — owner prefers brand vibrancy; documented, not a regression". If AA is required later, use S001's `#15803D`/`#0369A1` mapping (still in git history: commit 3887cfd).
 
-### ✅ Session 003 — 2026-08-07 (current)
+### ✅ Session 003 — 2026-08-07
 Objectives:
 - Read all governance files; verify S001/S002 claims against the checkout.
 - Independent deep audit of the entire repository (static greps, message-dictionary parity, asset-usage sweep, security re-check, runtime smoke tests).
@@ -160,6 +165,67 @@ Verification (both halves):
 
 Remaining: H2 field-data gated; H3 full rollout (8k pages) still 🔒 owner go/no-go (pilot now live to measure); M8 deferred; backlog items 5/7/8/9 — unchanged.
 
+### ✅ Session 004 — 2026-08-07
+Objectives:
+- Independent deep re-audit of the entire repository after S003 changes.
+- Identify and fix any remaining dead code, unused assets, and dependency hygiene issues.
+- Verify all S001–S003 fixes remain intact.
+- Update dependencies to latest safe minor/patch versions.
+
+Completed:
+- **L7 (🟢 Low) — Dead component `components/before-after-slider.tsx`** — placeholder before/after illustration component with SVG art; never imported anywhere. The homepage uses `components/sections/before-after.tsx` (which has its own inline before/after rendering). **Deleted.**
+- **L8 (🟢 Low) — Dead component `components/case-study-card.tsx`** — simple case study card component with MapPin icon; never imported anywhere. **Deleted.**
+- **L9 (🟢 Low) — Dead component `components/sections/testimonials.tsx`** — superseded testimonials component using `ReviewCarousel`; never imported. Homepage uses `components/sections/google-reviews.tsx` instead. Translation keys (`home.testimonials.*`) retained in dictionaries (shared by `google-reviews.tsx` for the header badge). **Deleted.**
+- **L10 (🟢 Low) — Dead asset `public/logo/logo.svg`** — SVG logo file, zero references in any source file, layout icons, or metadata. Site uses `logo.png` / `logo-lockup.png` / `logo-icon.png`. **Deleted.**
+- **L11 (🟢 Low) — Dead asset `public/logo/logo-icon.svg`** — SVG icon file, zero references anywhere. Site uses `logo-icon.png` (referenced in `app/layout.tsx` favicon, `components/ui/logo.tsx`, `config/site.ts`). **Deleted.**
+- **Dependency hygiene (🟢 Low #9 partial)** — Safe minor/patch updates applied: `@types/react` 19.2.17 → 19.2.18, `@types/react-dom` 19.2.3 → 19.2.4, `lucide-react` 1.28.0 → 1.29.0, `postcss` 8.5.25 → 8.5.26, `typescript-eslint` 8.65.0 → 8.66.0. Major-version bumps deliberately skipped (`next` 15→16, `typescript` 5→7, `@types/node` 22→26) — too risky for a production site.
+- Verified all S001–S003 fixes remain intact (admin auth, error beacon, middleware gates, H3 pilot, trilingual parity, exit-intent a11y, color revert).
+
+Verification:
+- `npm install` clean · `npm audit` **0 vulnerabilities**.
+- `npm run lint` — **0 errors, 0 warnings**.
+- `npm run type-check` — **PASS**.
+- `npm run build` — **SUCCESS** (4,245 pages; estimator suite 231,498 assertions PASS).
+- `npm run seo:audit` — clean, report regenerated.
+- Message dictionaries — **1,041 keys × 3 locales, perfect parity** (0 missing/extra/empty).
+- Prod-server smoke: `/` 200, `/ms/services` 200, `/zh/services` 200, `/ms/services/painting` 200, `/contact` 200, `/faq` 200, `/admin/tools` 307 → login, deleted `logo.svg` 404, `robots.txt` correct.
+
+New issues discovered this session:
+- 🟢 **L7/L8/L9/L10/L11** — dead components and assets. **All fixed.**
+- (Observation) `getWhatsAppLink()` always generates English-only message templates regardless of locale — affects ~30 call sites. Not a bug (business reads English), but a future improvement would be locale-aware templates. Noted for backlog.
+- (Observation) A few `getWhatsAppLink()` call sites on locale-aware pages pass hardcoded English strings (e.g. `locale-services-index.tsx` passes `"home services"`, `exit-intent-popup.tsx` passes `"fixed-price home service quote"`). Since the WhatsApp message templates are English anyway, this is cosmetic. Deferred.
+
+Files deleted (5):
+- `components/before-after-slider.tsx` — never imported, superseded by `before-after.tsx`.
+- `components/case-study-card.tsx` — never imported.
+- `components/sections/testimonials.tsx` — never imported, superseded by `google-reviews.tsx`.
+- `public/logo/logo.svg` — zero references.
+- `public/logo/logo-icon.svg` — zero references.
+
+Files modified (3):
+- `package.json` — dependency version bumps.
+- `package-lock.json` — lockfile updated.
+- `docs/seo-audit-report.md` — regenerated by `npm run seo:audit`.
+
+### Current Project Status
+- 🔴 Critical: **0 remaining.**
+- 🟠 High: H3 pilot ✅ live; H1/H1b business override (documented); H2 field-data gated.
+- 🟡 Medium: A1 ✅; M1–M5, M7, M9 ✅; M8 deferred.
+- 🟢 Low: L1–L11 ✅; dependency hygiene updated.
+- **Production-ready** pending owner-side env vars + full H3 rollout decision.
+
+### Remaining High-Priority Tasks (owner-side / data-gated)
+1. **H3 full-rollout decision** — owner go/no-go after measuring the pilot's indexation + conversions.
+2. **H2 checkpoint** — revisit `/faq` page size only after real CrUX/PageSpeed field data.
+3. **Set `ADMIN_PASSWORD`** + confirm `INDEXNOW_SECRET`/`CRON_SECRET`/`PAGESPEED_API_KEY`/`NEXT_PUBLIC_GA_ID` in Vercel.
+4. Google Business Profile + IndexNow + Bing Webmaster post-deploy pings (owner-side).
+
+### Recommended Next Task
+1. Measure the H3 pilot (indexation in GSC after deploy; MS/ZH organic queries). Then owner go/no-go for the full H3 rollout.
+2. Owner-side env vars + pings (blocking nothing in code).
+3. Future: `getWhatsAppLink()` locale-aware message templates (cosmetic improvement; business currently receives English messages).
+4. When a content-migration milestone arrives, consolidate `config/` families (M8).
+
 ---
 
 ## Phase 3 — Backlog (post-critical roadmap)
@@ -179,7 +245,7 @@ Priority-ordered remaining work:
 
 ### 🟢 Low
 8. ⬜ Visual QA pass on real devices (no renderer available in sandbox): spot-check the 3 fluid components + WhatsApp CWA states on small phones.
-9. ⬜ Periodic `npm outdated` / `npm audit` hygiene (audit re-run Session 003: 0 vulnerabilities; `npm outdated` not yet run — package pins are current and deliberate, see SESSION_LOG S001).
+9. ✅ **[2026-08-07 / S004]** Periodic `npm outdated` / `npm audit` hygiene — `npm audit` 0 vulns; safe minor/patch updates applied (`@types/react` 19.2.18, `@types/react-dom` 19.2.4, `lucide-react` 1.29.0, `postcss` 8.5.26, `typescript-eslint` 8.66.0). Major bumps (`next` 16, `typescript` 7, `@types/node` 26) deliberately deferred (too risky for production). Re-run periodically.
 
 ### Long-term opportunities (not defects)
 - Grow the real localized trees (now 8: tools, blog, FAQ, services) as the de-facto expansion path for MS/ZH search visibility — the H3 pilot proves the pattern; the full rollout decision determines the next ~8k pages.
