@@ -12,6 +12,49 @@ import { getLocalizedServiceSummary } from "@/lib/service-summary-i18n";
 import { getLocalizedArea } from "@/lib/location-i18n";
 import { areaPages } from "@/config/area-data";
 
+/**
+ * Sitewide "Explore" links.
+ *
+ * WHY THIS LIST EXISTS
+ * --------------------
+ * A full-corpus crawl of the production build (4,240 pages, 219k internal
+ * links) found that nine content-hub pages had **zero** inbound internal links
+ * anywhere on the site: `/answers`, `/brands`, `/commercial`, `/compare`,
+ * `/near-me`, `/process`, `/residential`, `/seasonal` and `/top`. Their child
+ * pages (≈180 URLs) were reachable only from the sitemap, so they averaged 1–4
+ * inbound links and received almost no internal PageRank.
+ *
+ * Root cause: the hub destinations were only ever rendered inside
+ * `components/ui/all-pages-menu.tsx`, a drawer whose contents mount **after a
+ * click**. Nothing in the server-rendered HTML linked to them, so crawlers
+ * (and AI retrievers, which do not execute click handlers) never saw them —
+ * the `menu.links.*` dictionary entries existed in all three locales but were
+ * never rendered by any component.
+ *
+ * Linking them from the footer puts a real, server-rendered `<a href>` on every
+ * page of the site, which is also what the sitemap already claims. Keys are
+ * reused from the existing `menu.links.*` namespace (already translated to
+ * EN/MS/ZH), so this adds no new translation debt.
+ */
+const EXPLORE_LINKS = [
+  { href: "/areas", key: "nav.areas" },
+  { href: "/near-me", key: "menu.links.nearMe" },
+  { href: "/problems", key: "nav.problems" },
+  { href: "/answers", key: "menu.links.answers" },
+  { href: "/guides", key: "menu.links.guides" },
+  { href: "/process", key: "menu.links.process" },
+  { href: "/compare", key: "menu.links.compare" },
+  { href: "/top", key: "menu.links.top" },
+  { href: "/brands", key: "menu.links.brands" },
+  { href: "/residential", key: "menu.links.residential" },
+  { href: "/commercial", key: "menu.links.commercial" },
+  { href: "/seasonal", key: "menu.links.seasonal" },
+  { href: "/projects", key: "menu.links.projects" },
+  { href: "/blog", key: "nav.blog" },
+  { href: "/faq", key: "nav.faq" },
+  { href: "/about", key: "nav.about" }
+] as const;
+
 export function Footer() {
   const year = new Date().getFullYear();
   const t = useTranslations();
@@ -118,11 +161,13 @@ export function Footer() {
           <div className="pt-2 border-t border-slate-100">
             <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">{t("footer.explore")}</p>
             <ul className="space-y-1.5">
-              <li><Link href="/areas" className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("nav.areas")}</Link></li>
-              <li><Link href="/problems" className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("nav.problems")}</Link></li>
-              <li><Link href="/blog" className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("nav.blog")}</Link></li>
-              <li><Link href="/faq" className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("nav.faq")}</Link></li>
-              <li><Link href="/about" className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("nav.about")}</Link></li>
+              {EXPLORE_LINKS.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">
+                    {t(link.key)}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

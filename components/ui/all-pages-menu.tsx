@@ -5,8 +5,7 @@ import Link from "next/link";
 import { Menu, X, ChevronRight } from "lucide-react";
 import { useTranslations } from "@/hooks/use-translations";
 
-/** A deliberately focused mobile navigation drawer. Service discovery lives in
- * the Services dropdown; this drawer only contains primary destinations. */
+/** Primary destinations — the pages a visitor reaches most often. */
 const MAIN_PAGES = [
   { href: "/", key: "nav.home" },
   { href: "/services", key: "nav.services" },
@@ -16,6 +15,31 @@ const MAIN_PAGES = [
   { href: "/blog", key: "nav.blog" },
   { href: "/about", key: "nav.about" },
   { href: "/contact", key: "nav.contact" }
+];
+
+/**
+ * Secondary content hubs.
+ *
+ * These `menu.links.*` keys were translated into all three locales but were
+ * never rendered by any component, which left nine hubs (`/answers`,
+ * `/brands`, `/commercial`, `/compare`, `/near-me`, `/process`,
+ * `/residential`, `/seasonal`, `/top`) with zero inbound internal links
+ * sitewide. The footer now carries the crawlable copies; surfacing them here
+ * too restores the human wayfinding the keys were written for.
+ */
+const EXPLORE_PAGES = [
+  { href: "/near-me", key: "menu.links.nearMe" },
+  { href: "/problems", key: "nav.problems" },
+  { href: "/answers", key: "menu.links.answers" },
+  { href: "/guides", key: "menu.links.guides" },
+  { href: "/process", key: "menu.links.process" },
+  { href: "/compare", key: "menu.links.compare" },
+  { href: "/top", key: "menu.links.top" },
+  { href: "/brands", key: "menu.links.brands" },
+  { href: "/residential", key: "menu.links.residential" },
+  { href: "/commercial", key: "menu.links.commercial" },
+  { href: "/seasonal", key: "menu.links.seasonal" },
+  { href: "/projects", key: "menu.links.projects" }
 ];
 
 export function AllPagesMenu() {
@@ -56,6 +80,13 @@ export function AllPagesMenu() {
           <div className="space-y-1">
             {MAIN_PAGES.map((page) => <Link key={page.href} href={page.href} onClick={() => setOpen(false)} className="flex items-center justify-between rounded-xl px-3 py-3 text-sm font-bold text-slate-700 transition hover:bg-sky-50 hover:text-[#0284C7]">
               {t(page.key)} <ChevronRight className="h-4 w-4 text-sky-500" />
+            </Link>)}
+          </div>
+
+          <p className="mt-6 px-3 pb-2 text-[10px] font-black uppercase tracking-[0.16em] text-slate-400">{t("menu.explore")}</p>
+          <div className="space-y-1">
+            {EXPLORE_PAGES.map((page) => <Link key={page.href} href={page.href} onClick={() => setOpen(false)} className="flex items-center justify-between rounded-xl px-3 py-2.5 text-sm font-semibold text-slate-600 transition hover:bg-sky-50 hover:text-[#0284C7]">
+              {t(page.key)} <ChevronRight className="h-4 w-4 text-sky-400" />
             </Link>)}
           </div>
         </nav>

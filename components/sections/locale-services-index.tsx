@@ -8,6 +8,7 @@ import { getServerTranslator } from "@/lib/i18n-server";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { localizedServiceLanguageUrls, localizedServicesIndexPath, SERVICE_LOCALE_PATHS } from "@/components/sections/locale-service-page";
+import { LocaleTreeLinks } from "@/components/sections/locale-tree-links";
 
 /**
  * Fully-localised services directory (`/ms/services`, `/zh/services`) — the
@@ -90,6 +91,9 @@ export function LocaleServicesIndex({ locale }: { locale: "ms" | "zh" }) {
           </div>
         </div>
       </section>
+
+      {/* Crawl path from this tree to the other three localized trees. */}
+      <LocaleTreeLinks locale={locale} current="services" />
     </>
   );
 }

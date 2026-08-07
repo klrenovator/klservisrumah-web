@@ -8,6 +8,7 @@ import {
 } from "@/config/tools-i18n";
 import { toolsList } from "@/config/tools-data";
 import { buildMetadata } from "@/lib/seo-meta";
+import { LocaleTreeLinks } from "@/components/sections/locale-tree-links";
 
 /**
  * /zh/gongju — 中文（简体）工具索引页。真实、服务器渲染、可索引的中文内容：
@@ -47,11 +48,16 @@ const tools: ToolIndexCard[] = toolsList.map((tool) => {
 
 export default function GongjuPage() {
   return (
-    <ToolsIndexPage
-      copy={copy}
-      path={path}
-      tools={tools}
-      graph={buildToolsIndexGraph({ path, copy, tools, inLanguage: copy.schemaLanguage })}
-    />
+    <>
+      <ToolsIndexPage
+        copy={copy}
+        path={path}
+        tools={tools}
+        graph={buildToolsIndexGraph({ path, copy, tools, inLanguage: copy.schemaLanguage })}
+      />
+
+      {/* Crawl path from this tree to the other three localized trees. */}
+      <LocaleTreeLinks locale="zh" current="tools" />
+    </>
   );
 }

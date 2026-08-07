@@ -5,6 +5,7 @@ import { blogPosts } from "@/config/blog-data";
 import { blogI18n } from "@/config/blog-i18n";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
+import { LocaleTreeLinks } from "@/components/sections/locale-tree-links";
 import { ArrowRight, Phone, MessageSquare, BookOpen, Clock } from "lucide-react";
 
 export const metadata = buildMetadata({
@@ -122,6 +123,9 @@ export default function ChineseBlogHub() {
           </div>
         </div>
       </section>
+
+      {/* Crawl path from this tree to the other three localized trees. */}
+      <LocaleTreeLinks locale="zh" current="blog" />
     </>
   );
 }

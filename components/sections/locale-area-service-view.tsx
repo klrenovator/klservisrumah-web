@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { MapPin, MessageCircle } from "lucide-react";
 import { useLang } from "@/context/lang-context";
 import { useTranslations } from "@/hooks/use-translations";
@@ -89,6 +90,23 @@ export function LocaleAreaServiceView({
                 })}
               </p>
               <p className="mt-4 text-base font-semibold leading-relaxed text-[#475569]">{service.description}</p>
+
+              {/*
+                Crawl path to the "near me" variant of this exact area × service
+                pair. Before this link, all 1,036 `/areas/<area>/<service>/near-me`
+                pages were orphans: they were listed in the sitemap but had zero
+                inbound internal links anywhere on the site, so they depended
+                entirely on sitemap discovery and received no internal link
+                equity. The parent page is the only natural, contextually
+                relevant referrer, and it exists for every one of the 1,036 pairs.
+              */}
+              <Link
+                href={`/areas/${areaSlug}/${serviceSlug}/near-me`}
+                className="mt-5 inline-flex items-center gap-2 rounded-xl border border-sky-200 bg-sky-50 px-4 py-2.5 text-sm font-extrabold text-[#0284C7] transition hover:border-[#0EA5E9] hover:bg-sky-100"
+              >
+                <MapPin className="h-4 w-4" />
+                {t("location.nearMeH1", { service: service.title, area: area.name, price: startPrice })}
+              </Link>
             </div>
 
             <div className="rounded-3xl border border-slate-100 bg-white p-6 shadow-xs sm:p-8">

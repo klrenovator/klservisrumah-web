@@ -70,6 +70,16 @@ export function EstimateSharePage({
 
         {/* ── The estimator itself ────────────────────────────────────── */}
         <div className="mt-7">
+          {/*
+            The estimator's question cards render as <h3>. Without a section
+            heading above them the document went h1 -> h3, an accessibility
+            (WCAG 1.3.1) and document-outline defect present on all 22
+            `/estimate/<slug>` pages. `/tools/*` already renders a visible <h2>
+            above the same form; this page's layout has no room for one, so the
+            heading is exposed to assistive tech and crawlers via sr-only. The
+            existing `pageHeading` key is reused — no new translation debt.
+          */}
+          <h2 className="sr-only">{t("estimateShare.pageHeading", { service: localizedTitle })}</h2>
           <EstimatorForm spec={spec} translator={t} />
         </div>
 

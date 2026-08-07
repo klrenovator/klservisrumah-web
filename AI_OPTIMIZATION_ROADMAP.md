@@ -72,6 +72,47 @@ All findings below were **independently re-verified in Session 001** against the
 - ✅ **[2026-08-07 / S003] A1. Exit-intent modal violated dialog a11y contract** — `role="dialog"`/`aria-modal="true"` with no Escape-to-close, no initial focus, no Tab trap, no focus restore, no `aria-labelledby`/`aria-describedby`.
   - **Fix:** `components/exit-intent-popup.tsx` rewritten — Escape closes, focus moves to the close button on open, Tab cycles within the dialog (visible focusables only), focus restored to the previously-focused element on dismiss, dialog titled/described via `aria-labelledby`/`aria-describedby`.
 
+### 🟠 High (new in S005 — found by full-corpus build crawl)
+
+- ✅ **[2026-08-07 / S005] N3. Nine content hubs had ZERO inbound internal links sitewide (crawl orphans)**
+  - `/answers`, `/brands`, `/commercial`, `/compare`, `/near-me`, `/process`, `/residential`, `/seasonal`, `/top` — all listed in the sitemap, all reachable by URL, but **not one `<a href>` anywhere in the 4,240-page build pointed at them**. Their ~180 child pages therefore averaged 1–4 inbound links.
+  - **Root cause:** the destinations existed only inside `components/ui/all-pages-menu.tsx`, a drawer whose contents mount *after a click*. The `menu.links.*` dictionary keys were fully translated in EN/MS/ZH but were never rendered by any component — so the server HTML never contained the links, and neither crawlers nor AI retrievers (which do not execute click handlers) could see them.
+  - **Fix:** a sitewide, server-rendered `EXPLORE_LINKS` block in `components/ui/footer.tsx` (16 destinations on all 4,240 pages) + the same destinations surfaced in the drawer under an "Explore More" group. Reuses the existing translated keys — zero new translation debt.
+  - **Verified:** hub inbound links 0 → 147–475 each; child clusters `/compare` avg 4 → 269, `/brands` 4 → 330, `/top` 4 → 389, `/seasonal` 4 → 475.
+
+- ✅ **[2026-08-07 / S005] N4. All 1,036 `/areas/<area>/<service>/near-me` pages were crawl orphans**
+  - The largest single orphan cluster in the build — 24% of all pages. Sitemap-listed, zero inbound internal links, so they depended entirely on sitemap discovery and received no internal link equity.
+  - **Fix:** `components/sections/locale-area-service-view.tsx` now links each page's own near-me variant from the parent area × service page — the only contextually correct referrer, and it exists for every one of the 1,036 pairs. Localized via the existing `location.nearMeH1` key.
+  - **Verified:** orphans 1,036 → 0.
+
+- ✅ **[2026-08-07 / S005] N5. 27 of 28 `/services/<slug>/emergency` pages were crawl orphans**
+  - Only `/services/plumbing/emergency` had inbound links (from the plumbing-diagnostic tool). The other 27 were sitemap-only.
+  - **Fix:** `components/sections/locale-service-cost-view.tsx` adds an emergency call-out linking `/services/<slug>/emergency` — the closest sibling in the same service silo, built for all 28 services. Uses existing `emergencyPage.*` keys (EN/MS/ZH).
+  - **Verified:** orphans 27 → 0.
+
+- ✅ **[2026-08-07 / S005] N7. Localized MS/ZH trees were isolated islands (H3 pilot structurally starved)**
+  - `/ms/soalan-lazim` and `/zh/chang-jian-wen-ti` had **zero** inbound internal links; the rest of the localized pages averaged ≤2. The sitewide navbar/footer only ever emit English URLs, and the only pointers to the localized FAQs were an hreflang annotation and a client-side `LocaleHubRedirect` — neither is a crawlable link. A crawler entering at `/ms/services/painting` could not walk to the Malay FAQ, blog or tools.
+  - **Fix:** new `components/sections/locale-tree-links.tsx` — a server-rendered, in-language link row wired into all four localized trees × 2 locales (services index + detail, blog index + article, FAQ, tools index + detail). Reuses `nav.*`/`menu.*` keys already translated in three languages.
+  - **Verified:** `/ms` and `/zh` cluster avg inbound 3 → 5; both localized FAQ hubs now linked; 0 orphans in the localized trees.
+
+### 🟡 Medium (new in S005)
+
+- ✅ **[2026-08-07 / S005] N1. The 404 page was a metadata clone of the homepage (soft-404 signal)**
+  - With no `metadata` export, `app/not-found.tsx` inherited everything from the root layout, so the rendered 404 shipped: the homepage `<title>` + description (a byte-identical duplicate of `/`), **`<link rel="canonical" href="https://www.klservisrumah.my">`** — i.e. the error page told Google it *was* the homepage, inviting consolidation of every 404-serving URL into `/` — a full hreflang cluster and `og:url` pointing at the homepage, and **two contradictory `<meta name="robots">` tags** (`noindex` from the not-found boundary + `index, follow` inherited from the layout).
+  - **Fix:** explicit metadata — distinct title/description, single `noindex, follow`, `alternates: {}` so **no canonical or hreflang is emitted at all** (a 404 must never canonicalise to a 200 page), plus own OG/Twitter copy so shared 404 links no longer preview as the homepage.
+  - **Verified:** live `curl` → HTTP **404**, no canonical, no hreflang, own title.
+
+- ✅ **[2026-08-07 / S005] N2. MS/ZH service pages were the only place linking six redirecting `/estimate/<slug>` URLs**
+  - Painting, plumbing, ceiling, plaster-ceiling, waterproofing and handyman own deeper hand-built tools; their `/estimate/<slug>` URL is a 301 handled in middleware and no static page is ever built for it. The 12 localized service pages linked the redirecting URL on a primary CTA — the only internal redirect hops in the entire build.
+  - **Fix:** `components/sections/locale-service-page.tsx` resolves `buildEstimateLinks().resolvedPath` (the same canonical destination the `/estimate` hub already uses).
+  - **Verified:** broken/redirecting internal link targets **6 → 0**.
+
+- ✅ **[2026-08-07 / S005] N6. 58 pages shipped a broken heading hierarchy (h1 → h3 skip)**
+  - 36 MS/ZH blog articles: the localized markdown renderer emitted every `###` block as `<h3>`, but `###` is the *only* heading level used anywhere in `config/blog-i18n.ts` (verified: zero `##`, zero `####`), so those are the articles' top-level sections. 22 `/estimate/<slug>` pages: the estimator's question cards re cards render as `<h3>` with no section heading above them (`/tools/*` already has a visible `<h2>` there).
+  - **Fix:** localized blog renderers emit `<h2>` (visual size unchanged); `estimate-share-page.tsx` adds an `sr-only` `<h2>` above the form reusing the existing `estimateShare.pageHeading` key.
+  - **Impact:** WCAG 1.3.1 conformance + cleaner document outline for AI answer-engine section extraction.
+  - **Verified:** heading-skip pages **58 → 0**.
+
 ### 🟢 Low (new in S003)
 
 - ✅ **[2026-08-07 / S003] L4. Six dead hero SVGs** — `public/hero-ceiling-fan.svg`, `hero-lighting.svg`, `hero-plaster-ceiling.svg`, `hero-skim-coat.svg`, `hero-tiling.svg`, `hero-water-heater.svg`. Zero references in `app/`/`components/`/`config/`/`lib/`/`scripts/`/`public/`; the 6 services they were drawn for switched to `/hero/home-services-*.jpg` photos. **Deleted** (git history preserves them).
@@ -207,24 +248,27 @@ Files modified (3):
 - `package-lock.json` — lockfile updated.
 - `docs/seo-audit-report.md` — regenerated by `npm run seo:audit`.
 
-### Current Project Status
+### Current Project Status (updated S005)
 - 🔴 Critical: **0 remaining.**
-- 🟠 High: H3 pilot ✅ live; H1/H1b business override (documented); H2 field-data gated.
-- 🟡 Medium: A1 ✅; M1–M5, M7, M9 ✅; M8 deferred.
+- 🟠 High: N3/N4/N5/N7 ✅ (S005 — internal-linking architecture repaired); H3 pilot ✅ live; H1/H1b business override (documented); H2 field-data gated.
+- 🟡 Medium: N1/N2/N6 ✅ (S005); A1 ✅; M1–M5, M7, M9 ✅; M8 deferred.
 - 🟢 Low: L1–L11 ✅; dependency hygiene updated.
+- **Crawl health (full-corpus measurement, 4,240 built pages):** orphan pages **1,077 → 0** real content pages (only `/ms`, `/zh` noindex scaffolds and noindex `/search` remain, all correct); broken/redirecting internal link targets **6 → 0**; heading-hierarchy skips **58 → 0**; internal links **219,562 → 267,596** (+48,034).
 - **Production-ready** pending owner-side env vars + full H3 rollout decision.
 
 ### Remaining High-Priority Tasks (owner-side / data-gated)
-1. **H3 full-rollout decision** — owner go/no-go after measuring the pilot's indexation + conversions.
+1. **H3 full-rollout decision** — owner go/no-go after measuring the pilot's indexation + conversions. *S005 note: the pilot's structural handicap is now fixed — before this session the localized trees had almost no internal links, so pilot indexation data gathered earlier under-represents its real potential. Re-measure after this deploy before deciding.*
 2. **H2 checkpoint** — revisit `/faq` page size only after real CrUX/PageSpeed field data.
 3. **Set `ADMIN_PASSWORD`** + confirm `INDEXNOW_SECRET`/`CRON_SECRET`/`PAGESPEED_API_KEY`/`NEXT_PUBLIC_GA_ID` in Vercel.
 4. Google Business Profile + IndexNow + Bing Webmaster post-deploy pings (owner-side).
 
 ### Recommended Next Task
-1. Measure the H3 pilot (indexation in GSC after deploy; MS/ZH organic queries). Then owner go/no-go for the full H3 rollout.
-2. Owner-side env vars + pings (blocking nothing in code).
-3. Future: `getWhatsAppLink()` locale-aware message templates (cosmetic improvement; business currently receives English messages).
-4. When a content-migration milestone arrives, consolidate `config/` families (M8).
+1. **Deploy + re-measure.** The S005 internal-linking repair changes what Google can reach and how equity flows; give it a crawl cycle, then read GSC (coverage for the 9 hubs, the 1,036 near-me pages and the localized trees).
+2. Then the H3 full-rollout go/no-go with clean data.
+3. Owner-side env vars + pings (blocking nothing in code).
+4. Future: `getWhatsAppLink()` locale-aware message templates (cosmetic; business currently receives English messages).
+5. Consider `low inbound (≤2)` clusters as the next optimisation tier — 648 `/suburbs/*` and 1,036 near-me pages now have ≥1 link but remain thin on internal equity (see S005 notes).
+6. When a content-migration milestone arrives, consolidate `config/` families (M8).
 
 ---
 

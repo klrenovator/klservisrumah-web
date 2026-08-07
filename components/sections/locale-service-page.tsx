@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import type { Locale } from "@/lib/i18n";
 import { servicesData } from "@/config/services-data";
+import { buildEstimateLinks } from "@/config/estimate-links";
 import { siteConfig } from "@/config/site";
 import { getLocalizedService } from "@/lib/service-i18n";
 import { getServerTranslator } from "@/lib/i18n-server";
@@ -28,6 +29,7 @@ import {
 } from "@/lib/seo";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { DirectAnswer } from "@/components/content/direct-answer";
+import { LocaleTreeLinks } from "@/components/sections/locale-tree-links";
 import { ProcessTimeline } from "@/components/content/process-timeline";
 
 /**
@@ -104,6 +106,9 @@ export function LocaleServicePage({ locale, slug }: { locale: "ms" | "zh"; slug:
   const path = SERVICE_LOCALE_PATHS[locale](slug);
   const indexPath = localizedServicesIndexPath(locale);
   const subline = trilingualSublines[slug] ?? { ms: "", zh: "" };
+  // The estimator destination that does not redirect — see the CTA below.
+  const estimateHref =
+    buildEstimateLinks().find((link) => link.slug === slug)?.resolvedPath ?? `/estimate/${slug}`;
 
   const serviceSchema = getServiceSchema({
     title: localized.title,
@@ -381,8 +386,20 @@ export function LocaleServicePage({ locale, slug }: { locale: "ms" | "zh"; slug:
             {t("serviceContent.ctaSub")}
           </p>
           <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
+            {/*
+              Resolve the estimator target rather than always linking the
+              uniform `/estimate/<slug>` share URL. Six services (painting,
+              plumbing, ceiling, plaster-ceiling, waterproofing, handyman) own
+              a deeper hand-built tool, and their `/estimate/<slug>` URL is a
+              301 handled in middleware — no static page is ever built for it.
+              These localized pages were the only place in the entire build
+              that linked those six redirecting URLs internally, so a crawl of
+              `/ms/services/painting` and its 11 siblings hit a redirect hop on
+              a primary CTA. `resolvedPath` is the canonical destination the
+              rest of the site (e.g. the /estimate hub) already links to.
+            */}
             <Link
-              href={`/estimate/${slug}`}
+              href={estimateHref}
               className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#0284C7] px-6 py-3 text-sm font-extrabold text-white shadow-sm hover:bg-[#0369A1] transition-colors"
             >
               <Calculator className="w-4 h-4" />
@@ -409,6 +426,9 @@ export function LocaleServicePage({ locale, slug }: { locale: "ms" | "zh"; slug:
           </p>
         </div>
       </section>
+
+      {/* Crawl path from this tree to the other three localized trees. */}
+      <LocaleTreeLinks locale={locale} current="services" />
     </>
   );
 }
