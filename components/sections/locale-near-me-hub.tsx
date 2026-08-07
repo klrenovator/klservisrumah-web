@@ -5,7 +5,7 @@ import Link from "next/link";
 import { MapPinned } from "lucide-react";
 import { useLang } from "@/context/lang-context";
 import { useTranslations } from "@/hooks/use-translations";
-import type { AreaLinkEntry, LocaleMap, ServiceBundleEntry } from "@/lib/location-bundles";
+import type { AreaLinkEntry, LocaleMap, ServiceBundleEntry, ServiceLinkEntry } from "@/lib/location-bundles";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { NearMeLocator } from "@/components/near-me-locator";
 
@@ -18,11 +18,13 @@ export type SuburbChip = { slug: string; name: string };
 export function LocaleNearMeHub({
   serviceSlug,
   serviceBundle,
+  relatedServices,
   areaLinks,
   suburbChips
 }: {
   serviceSlug: string;
   serviceBundle: LocaleMap<ServiceBundleEntry>;
+  relatedServices: ServiceLinkEntry[];
   areaLinks: AreaLinkEntry[];
   suburbChips: SuburbChip[];
 }) {
@@ -63,6 +65,30 @@ export function LocaleNearMeHub({
             </Link>
           ))}
         </div>
+
+        <section className="mt-10" aria-labelledby="near-me-related-services">
+          <h2 id="near-me-related-services" className="text-2xl font-extrabold text-[#075985]">
+            {t("serviceDetail.otherServicesHeading")}
+          </h2>
+          <p className="mt-2 max-w-3xl text-sm font-semibold leading-relaxed text-[#475569]">
+            {t("serviceDetail.otherServicesSub")}
+          </p>
+          <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {relatedServices.map((relatedBundle) => {
+              const title = relatedBundle.titles[lang] ?? relatedBundle.titles.en;
+              return (
+                <Link
+                  key={relatedBundle.href}
+                  href={relatedBundle.href}
+                  className="rounded-2xl border border-slate-100 bg-white p-5 shadow-xs transition hover:-translate-y-0.5 hover:border-[#0EA5E9]/30 hover:shadow-md"
+                >
+                  <h3 className="font-extrabold text-[#075985]">{title}</h3>
+                  <span className="mt-2 inline-flex text-sm font-bold text-[#0EA5E9]">{t("common.viewDetails")}</span>
+                </Link>
+              );
+            })}
+          </div>
+        </section>
 
         <div className="mt-10 rounded-3xl border border-slate-100 bg-white p-6 shadow-xs">
           <h2 className="text-2xl font-extrabold text-[#075985]">{t("location.popularSuburbs")}</h2>

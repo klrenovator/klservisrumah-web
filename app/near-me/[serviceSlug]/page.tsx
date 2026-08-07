@@ -5,7 +5,7 @@ import { servicesData } from "@/config/services-data";
 import { areaPages } from "@/config/area-data";
 import { suburbPages } from "@/config/suburb-data";
 import { getLocalBusinessServiceSchema } from "@/lib/seo";
-import { buildAreaLinks, buildServiceBundle } from "@/lib/location-bundles";
+import { buildAreaLinks, buildServiceBundle, buildServiceLinks } from "@/lib/location-bundles";
 import { LocaleNearMeHub } from "@/components/sections/locale-near-me-hub";
 
 // Every valid param is enumerated in `generateStaticParams()`, so anything
@@ -40,9 +40,22 @@ export default async function NearMeServicePage(props: { params: Promise<{ servi
       <LocaleNearMeHub
         serviceSlug={service.slug}
         serviceBundle={buildServiceBundle(service)}
+        relatedServices={buildRelatedServiceBundles(service.slug)}
         areaLinks={buildAreaLinks(areaPages, (area) => `/areas/${area.slug}/${service.slug}`)}
         suburbChips={suburbPages.slice(0, 24).map((suburb) => ({ slug: suburb.slug, name: suburb.name }))}
       />
     </>
   );
+}
+
+/** Circular selection gives each near-me hub equal, contextual sibling links. */
+function buildRelatedServiceBundles(serviceSlug: string) {
+  const allServices = Object.values(servicesData);
+  const currentIndex = allServices.findIndex((service) => service.slug === serviceSlug);
+
+  const relatedServices = Array.from({ length: Math.min(6, allServices.length - 1) }, (_, offset) => (
+    allServices[(currentIndex + offset + 1) % allServices.length]
+  ));
+
+  return buildServiceLinks(relatedServices, (service) => `/near-me/${service.slug}`);
 }

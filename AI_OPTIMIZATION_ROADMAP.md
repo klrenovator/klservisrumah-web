@@ -438,3 +438,29 @@ These are the natural next improvements.
 ### Recommended Next Task (updated S009)
 Implement the remaining low-inbound fixes listed in #1 above — smallest is `/near-me/[service]` hubs (28 pages, add related block: 1 → ~7 inbound), then emergency pages, then MS/ZH blog related. After that, re-audit and the low-inbound tier will be <200 pages (mostly canonicalised suburbs).
 
+
+### ✅ Session 010 — 2026-08-07
+Objectives: continue the S009 low-inbound remediation, covering the remaining non-canonical clusters where a concise, contextual sibling block improves discovery without creating a link farm.
+
+- ✅ **[2026-08-07 / S010] N16. `/near-me/[service]` hubs had thin internal equity (1 → ≥7 inbound).**
+  - Root cause: every hub had its area directory content but no crawlable links to sibling near-me service hubs, leaving each dependent on its service page alone.
+  - Fix: server-generated circular next-6 sibling-service links in `LocaleNearMeHub`, carrying each title from the existing locale bundles. Circular selection prevents first-item bias and gives every one of the 28 hubs six peer inlinks.
+  - Verified full-corpus: 28 pages, inbound **min 7 / max 9 / avg 7.25**.
+- ✅ **[2026-08-07 / S010] N17. Emergency guides had only the sibling cost-page link (1 → ≥7 inbound).**
+  - Fix: circular next-6 emergency-guide links in `LocaleServiceEmergencyView`, with EN/MS/ZH service names resolved from existing server-side link bundles.
+  - Verified full-corpus: 28 pages, inbound **min 7 / max 10 / avg 7.11**.
+- ✅ **[2026-08-07 / S010] N18. Blog articles remained thinly interlinked (EN avg 4.44; MS/ZH 2).**
+  - Fix: circular next-6 related-article grids on every MS and ZH article, written in their native UI language; EN now uses the same even six-article circular selection rather than category-only `slice(0, 3)` selection, which starved articles in small categories.
+  - Verified full-corpus: MS blog **8 even** inbound, ZH blog **8 even**, EN blog **9 even** inbound (18 articles per tree).
+
+### Current Project Status (updated S010)
+- 🔴 Critical: **0 remaining.**
+- 🟠 High: all actionable in-repository items completed; H1/H1b remain the explicit owner-approved brand-colour accessibility override; H2 remains field-data gated; H3 full multilingual rollout remains owner-governed after pilot measurement.
+- 🟡 Medium: N16–N18 ✅; remaining items are owner-side/data-gated or the planned M8 data-layer consolidation.
+- **Crawl health:** 0 real orphans, 0 broken/redirecting internal targets, 0 heading skips, 0 canonical/hreflang defects. The former low-inbound priority clusters are now all ≥7 inbound links. Canonicalised suburb pages remain deliberately lower priority because they are excluded from the sitemap and canonicalise to their area twins.
+
+### Recommended Next Task (updated S010)
+1. Deploy and inspect GSC / Bing Webmaster coverage and the MS/ZH service-pilot conversion data before making the owner-only H3 full-rollout decision.
+2. Complete the post-deploy CSP browser-console check.
+3. Owner: configure/rotate production secrets and complete GBP, IndexNow and Bing post-deploy pings.
+4. At the next content migration, consolidate the `config/` file families (M8); do not perform a risky standalone migration solely for naming.

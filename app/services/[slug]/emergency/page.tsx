@@ -6,7 +6,7 @@ import { areaPages } from "@/config/area-data";
 import { getFAQSchema, getServiceSchema } from "@/lib/seo";
 import { SUPPORTED_LOCALES, type Locale } from "@/lib/i18n";
 import { getLocalizedArea } from "@/lib/location-i18n";
-import { buildServiceBundle, type LocaleMap } from "@/lib/location-bundles";
+import { buildServiceBundle, buildServiceLinks, type LocaleMap } from "@/lib/location-bundles";
 import { LocaleServiceEmergencyView } from "@/components/sections/locale-service-emergency-view";
 
 // Every valid param is enumerated in `generateStaticParams()`, so anything
@@ -47,10 +47,23 @@ export default async function EmergencyPage(props: { params: Promise<{ slug: str
       <LocaleServiceEmergencyView
         slug={slug}
         bundle={buildServiceBundle(service)}
+        relatedServices={buildRelatedServiceBundles(service.slug)}
         coverageAreaNames={buildCoverageAreaNames()}
       />
     </>
   );
+}
+
+/** Circular selection gives each emergency guide the same six sibling inlinks. */
+function buildRelatedServiceBundles(serviceSlug: string) {
+  const allServices = Object.values(servicesData);
+  const currentIndex = allServices.findIndex((service) => service.slug === serviceSlug);
+
+  const relatedServices = Array.from({ length: Math.min(6, allServices.length - 1) }, (_, offset) => (
+    allServices[(currentIndex + offset + 1) % allServices.length]
+  ));
+
+  return buildServiceLinks(relatedServices, (service) => `/services/${service.slug}/emergency`);
 }
 
 function buildCoverageAreaNames(): LocaleMap<string[]> {
