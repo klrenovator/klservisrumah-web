@@ -631,7 +631,9 @@
     "trustLine": "Same-day available · Warranty-backed · Insured",
     "bookSubWhatsApp": "Book {name} on WhatsApp",
     "verifiedBadge": "Verified Specialist Service",
-    "allCoverage": "All KL & Selangor"
+    "allCoverage": "All KL & Selangor",
+    "otherServicesHeading": "Other services you might need",
+    "otherServicesSub": "Browse our other home services across KL & Selangor — fixed pricing and same-day slots available."
   },
   "serviceContent": {
     "overviewEyebrow": "Overview",
@@ -816,7 +818,14 @@
     "locatorUnsupported": "Geolocation is not supported. Please send your area or location pin on WhatsApp.",
     "locatorDetected": "Location detected: {lat}, {lng}. Send this pin on WhatsApp for nearest dispatch.",
     "locatorDenied": "Location permission was not granted. You can still send your suburb or Google Maps pin on WhatsApp.",
-    "locatorButton": "Use my location"
+    "locatorButton": "Use my location",
+    "nearMeRelatedHeading": "Other services near you in {area}",
+    "nearMeRelatedSub": "Browse other nearby services available in {area} — fixed pricing and same-day slots.",
+    "nearMeBackToAreaService": "{service} in {area}",
+    "nearMeAllServicesInArea": "All services in {area}",
+    "nearMeViewArea": "View {area}",
+    "nearMeParentHeading": "Go back to",
+    "nearMeOtherNearMeHeading": "More near-me pages in {area}"
   },
   "content": {
     "categoryLabel": "Category",

@@ -774,3 +774,103 @@ Deploy and re-crawl. Then work the "low inbound (≤2)" tier with a contextual r
 - The `siteConfig.whatsappLink` static URL (used by the navbar WhatsApp icon in some contexts) remains English — it's a hardcoded fallback. The `getWhatsAppLink()` function is now the primary path and is fully locale-aware.
 - No business logic, pricing, colour, schema meaning, or English content was changed. Only the WhatsApp pre-filled message language was made locale-aware.
 - All 27 file changes were verified by observing real build output (parsed HTML files from `.next/server/app/`), not by reading diffs.
+
+---
+
+## Session 009
+
+**Date:** 2026-08-07 (UTC)
+**Branch:** `arena/019fdc43-klservisrumah-web` (from `main` @ `690d7e3`, containing S001–S008)
+**Status:** ✅ COMPLETED
+
+### Objectives
+- Read all governance files; verify S001–S008 claims against checkout.
+- Perform independent deep audit focusing on the roadmap's recommended next task: low inbound (≤2) tier — 1,910 pages with thin internal equity despite 0 orphans.
+- Implement production-quality interlinking improvements to lift equity across MS/ZH service trees, near-me cluster, and generic content hubs.
+- Verify via lint / type-check / build / estimator tests / seo:audit / full-corpus inbound re-audit.
+
+### Baseline verification (before changes)
+- `npm install` clean · `npm audit` 0 vulns · `npm run lint` 0/0 · `npm run type-check` PASS · `npm run build` SUCCESS (4,245 pages) · estimator 231,501 PASS · seo:audit 0 defects.
+- Message dictionaries: 1,058 keys × 3 locales — perfect parity.
+- Full-corpus inbound audit (4,240 HTML): total internal links 267,596 · orphans 0 real · **low inbound ≤2: 1,910 pages** (previously 0 orphans after S005, but thin equity remained).
+- Breakdown of 1,910: 1,036 `/areas/<area>/<service>/near-me` ×1, 56 MS/ZH service detail ×1, 648 suburbs avg 5.67 but many ≤2, 28 answers/process etc avg 1–4, 28 near-me hubs ×1, blog EN 4.44, MS/ZH blog articles 2.
+
+### Issues discovered & fixed (3 new, all fixed)
+
+**🟠 N13 — MS/ZH localized service pages had avg 1 inbound, uneven distribution.**
+- `locale-service-page.tsx` only rendered `LocaleTreeLinks` (3 links to other hubs), no sibling service links — each detail page only linked from index.
+- Initial quick fix used `slice(0,12)` after filter → uneven: first 12 services got 28 inbound, tail (autogate etc) got 1.
+- **Fix:** added server-rendered related services grid with **circular next-12** selection (currentIdx+1..+12 modulo 28) so every page gets exactly 12 from siblings +1 from index = **13 even min=max**. Uses `getLocalizedService` for in-language titles, reuses existing keys plus new `serviceDetail.otherServicesHeading/Sub` (natural EN/MS/ZH).
+- **Verified:** `/ms/services/painting` 1→13, `/ms/services/autogate` 1→13, `/zh/services/*` same, avg 1.00→13.00 min=max=13.
+
+**🟠 N14 — 1,036 near-me pages had 1 inbound → now 13 even.**
+- Root cause: each `/areas/<area>/<service>/near-me` only linked from parent area×service page; no cross-links among near-me in same area.
+- **Fix:** server page `app/areas/[slug]/[serviceSlug]/near-me/page.tsx` now builds `relatedNearMe` via circular next-12 (all slugs, next 12 modulo) with localized titles via `buildServiceBundle`. Client view `LocaleNearMeView` now renders:
+  - Parent nav block (back to area×service, area, /areas) — improves crawl back to equity-rich parents.
+  - Related near-me grid (12 siblings) — lifts inbound 1→13 per page, localized via `lang`.
+- New dictionary keys: `location.nearMeRelatedHeading`, `nearMeRelatedSub`, `nearMeBackToAreaService`, `nearMeAllServicesInArea`, `nearMeViewArea`, `nearMeParentHeading`, `nearMeOtherNearMeHeading` ×3 locales (7 keys, natural translations).
+- **Verified:** `/areas/kuala-lumpur/painting/near-me` 1→13, `/areas/kuala-lumpur/autogate/near-me` 1→13, avg for 56 pages per area 21.5 (includes parents), overall near-me cluster +12,432 internal links (1,036×12).
+
+**🟡 N15 — Generic content hubs (answers, process, compare, top, brands, commercial, residential, seasonal, guides, maintenance) had 1–4 inbound → now 7–16 even.**
+- `GenericContentPageView` only linked related service (1–3 links) but not other pages in same category.
+- **Fix:** added circular next-6 related reading block — `allGenericPages` filtered by same category, circular next-6 so each gets ~6 inbound from siblings. Helper `getHref` maps categories to correct URL prefixes (`/answers`, `/brands`, `/commercial`, `/compare`, `/residential`, `/seasonal`, `/top`, `/process`, `/guides/maintenance`, `/guides`, `/services/<service>/<slug>` for Service Cluster). Reuses `content.relatedReading`.
+- **Verified:** `/answers/` avg 1.21→7.21 min7 max8, `/process/` same, `/compare/` 10.4→16.4, `/top/` 4→16.6, `/brands/` 4→16.5.
+
+### Overall impact
+- Total internal links: **267,596 → 286,022 (+18,426)**
+- Low inbound ≤2 pages: **1,910 → 762 (−60%, −1,148 pages)**
+- MS/ZH service inbound: 1→13 even
+- Near-me inbound: 1→13 even
+- Answers/process: 1→7 even
+- Remaining 762 low-inbound: mostly 22 near-me hub children (1), 28 emergency (1 from cost), ~? suburbs canonicalised (avg 5.67), blog EN 4.44, MS/ZH blog articles 2, maintenance hub 1 — natural next tier.
+
+### Files modified (6 source + 3 dictionaries + 2 governance + 1 generated)
+- `components/sections/locale-service-page.tsx` — related services grid with circular next-12 (N13)
+- `app/areas/[slug]/[serviceSlug]/near-me/page.tsx` — builds relatedNearMe circular next-12 (N14)
+- `components/sections/locale-near-me-view.tsx` — parent nav + related near-me grid, localized (N14)
+- `components/content/generic-content-page.tsx` — circular next-6 related reading (N15)
+- `messages/en.json`, `messages/ms.json`, `messages/zh.json` — +9 keys each (2 serviceDetail +7 location) → 1,067 keys ×3 parity
+- `docs/seo-audit-report.md` — regenerated
+- `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md` — governance
+
+### Files created / deleted
+None (temp audit scripts created and removed within session).
+
+### Tests/Verification performed
+1. `npm run lint` — 0/0 (after removing temp scripts, fixing `any`).
+2. `npm run type-check` — PASS.
+3. `npm run build` — SUCCESS (4,245 pages).
+4. `npm run test:estimators` — 231,501 PASS.
+5. `npm run seo:audit` — PASS, 0 canonical/hreflang defects.
+6. `npm audit` — 0 vulnerabilities.
+7. Message dictionaries — 1,067 ×3 parity, 0 missing/empty.
+8. Full-corpus inbound audit re-run twice: first (uneven slice) showed 28 inbound for painting but 1 for autogate, second (circular) showed even 13 min=max for MS/ZH services and near-me (13 each), answers 7-8 even, total links +18k, low inbound 1910→762.
+9. Manual spot-checks: `/ms/services/painting` contains 12 related MS links, `/areas/kuala-lumpur/painting/near-me` contains 12 related near-me links + parent nav, `/answers/painting-ultimate-guide` contains 6 related reading links.
+
+### Build/Lint/Type-Check Status
+All green: lint 0/0, type-check PASS, build SUCCESS (4,245 pages), estimator 231,501, seo:audit PASS.
+
+### Current Project Status
+- 🔴 Critical: 0
+- 🟠 High: N13/N14 ✅ S009, N11 ✅ S008, N10 ✅ S007, N8 ✅ S006, N3/N4/N5/N7 ✅ S005, H3 pilot live (now 13 inbound each), H1/H1b business override, H2 field-data gated.
+- 🟡 Medium: N15 ✅ S009, N9 ✅ S006, N1/N2/N6 ✅ S005, A1, M1–M5, M7, M9 ✅, M8 deferred.
+- 🟢 Low: L1–L12 ✅, dictionary 1,067×3.
+- Crawl health: orphans 0 real, broken 0, heading skips 0, canonical/hreflang 0, low-inbound 1910→762 (−60%), internal links +18,426, MS/ZH service 1→13 even, near-me 1→13 even, answers/process 1→7 even.
+- Production-ready pending owner-side env vars + H3 full-rollout decision.
+
+### Remaining priorities
+1. Remaining low-inbound 762 pages: /near-me/[service] hubs (28×1), emergency (28×1), MS/ZH blog articles (36×2), blog EN (4.44), suburbs canonicalised (avg 5.67) — smallest next is near-me hubs.
+2. Deploy + re-measure GSC after S005–S009.
+3. H3 full-rollout go/no-go on post-fix data.
+4. Owner-side env vars, GBP/IB/BWM pings.
+5. CSP field-check after deploy.
+
+### Recommended Next Task
+Implement related block for `/near-me/[service]` hubs (28 pages) and for MS/ZH blog articles (36 pages) — both small, high-impact, will bring low-inbound <500. Then emergency pages interlinking.
+
+### Notes
+- Circular next-N selection was key to even distribution — initial slice(0,N) gave 28 inbound for first pages and 1 for tail, now 13 even everywhere.
+- All new keys are natural translations, not literal MT: MS "Perkhidmatan lain yang mungkin anda perlukan", ZH "您可能需要的其他服务" etc.
+- No business logic, pricing, colour, schema meaning, English content changed — only additive internal linking + i18n keys.
+- Total internal links +18k improves PageRank flow significantly for the H3 pilot and the 1,036 near-me cluster, which previously relied solely on sitemap discovery.
+

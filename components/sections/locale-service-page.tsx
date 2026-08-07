@@ -376,6 +376,59 @@ export function LocaleServicePage({ locale, slug }: { locale: "ms" | "zh"; slug:
         </div>
       </section>
 
+      {/* ── Related services — boosts internal link equity for the MS/ZH trees ── */}
+      <section className="section-tight bg-slate-50 border-t border-slate-100">
+        <div className="container-default">
+          <div className="max-w-2xl">
+            <span className="eyebrow">{t("services.pageEyebrow")}</span>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#075985] tracking-tight mt-3">
+              {t("serviceDetail.otherServicesHeading")}
+            </h2>
+            <p className="text-base text-[#475569] leading-relaxed mt-3 font-medium">
+              {t("serviceDetail.otherServicesSub")}
+            </p>
+          </div>
+          <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {(() => {
+              const allSlugs = Object.keys(servicesData);
+              const currentIdx = allSlugs.indexOf(slug);
+              const relatedSlugs: string[] = [];
+              for (let i = 1; i <= 12; i++) {
+                const idx = (currentIdx + i) % allSlugs.length;
+                const s = allSlugs[idx];
+                if (s !== slug) relatedSlugs.push(s);
+              }
+              return relatedSlugs.map((otherSlug) => {
+                const other = servicesData[otherSlug];
+                const otherLocalized = getLocalizedService(other, locale);
+                return (
+                  <Link
+                    key={other.slug}
+                    href={SERVICE_LOCALE_PATHS[locale](other.slug)}
+                    className="group rounded-2xl border border-slate-200 bg-white p-5 transition-all hover:border-[#0EA5E9] hover:shadow-md flex flex-col gap-2"
+                  >
+                    <span className="text-sm font-extrabold text-[#075985] group-hover:text-[#0284C7] leading-tight">
+                      {otherLocalized.title}
+                    </span>
+                    <span className="text-xs font-semibold leading-relaxed text-[#475569] line-clamp-2">
+                      {otherLocalized.tagline}
+                    </span>
+                    <span className="mt-auto text-[11px] font-extrabold text-[#0EA5E9]">
+                      {t("common.fromLabel")} {other.startPrice}
+                    </span>
+                  </Link>
+                );
+              });
+            })()}
+          </div>
+          <div className="mt-6 text-center">
+            <Link href={indexPath} className="inline-flex items-center gap-2 text-sm font-extrabold text-[#0284C7] hover:text-[#0369A1]">
+              {t("common.viewAll")} → 
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ── Final CTA ────────────────────────────────────────────────── */}
       <section className="section-tight bg-slate-50 border-t border-slate-100">
         <div className="container-narrow text-center">

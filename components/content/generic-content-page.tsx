@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { CheckCircle2, MessageCircle } from "lucide-react";
 import type { GenericContentPage } from "@/config/content-data";
+import { allGenericPages } from "@/config/content-data";
 import { servicesData } from "@/config/services-data";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { InternalLinkGrid } from "@/components/internal-link-grid";
@@ -112,6 +113,57 @@ export function GenericContentPageView({ page }: { page: GenericContentPage }) {
             ]}
           />
         ) : null}
+
+        {/* Related pages in same category — improves inbound for thin hubs like /answers, /process etc.
+            Uses circular next-6 selection so each page gets ~6 inbound from siblings instead of only the first 6. */}
+        {(() => {
+          const allInCategory = allGenericPages.filter((p) => p.category === page.category);
+          const currentIdx = allInCategory.findIndex((p) => p.slug === page.slug);
+          const siblings: GenericContentPage[] = [];
+          for (let i = 1; i <= 6; i++) {
+            if (allInCategory.length <= 1) break;
+            const idx = (currentIdx + i) % allInCategory.length;
+            const s = allInCategory[idx];
+            if (s.slug !== page.slug) siblings.push(s);
+          }
+          // Fallback: if circular didn't yield (e.g., single page), use filter
+          const finalSiblings = siblings.length ? siblings : allInCategory.filter((p) => p.slug !== page.slug).slice(0, 6);
+          if (!finalSiblings.length) return null;
+          const getHref = (s: GenericContentPage) => {
+            if (s.category === "Service Cluster" && s.relatedServiceSlug) {
+              return `/services/${s.relatedServiceSlug}/${s.slug}`;
+            }
+            const map: Record<string, string> = {
+              "AI Answer Guide": "/answers",
+              "Brand Guide": "/brands",
+              Commercial: "/commercial",
+              Comparison: "/compare",
+              Residential: "/residential",
+              Seasonal: "/seasonal",
+              "Top Considerations": "/top",
+              Process: "/process",
+              "Maintenance Guide": "/guides/maintenance",
+              Painting: "/guides",
+              Plumbing: "/guides",
+              Waterproofing: "/guides",
+              Ceiling: "/guides",
+              Handyman: "/guides",
+            };
+            const prefix = map[s.category] || "/guides";
+            return `${prefix}/${s.slug}`;
+          };
+          return (
+            <InternalLinkGrid
+              title={t("content.relatedReading") || "Related reading"}
+              subtitle={`${page.category} — ${finalSiblings.length} more guides`}
+              links={finalSiblings.map((s) => ({
+                title: s.title,
+                href: getHref(s),
+                desc: s.intro.slice(0, 120)
+              }))}
+            />
+          );
+        })()}
 
         <div className="rounded-3xl bg-[#0284C7] p-6 text-white sm:p-8">
           <h2 className="text-2xl font-extrabold">{t("content.needHelp")}</h2>
