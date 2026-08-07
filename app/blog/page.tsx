@@ -42,7 +42,7 @@ export default function BlogPage() {
       <section className="bg-gradient-to-b from-[#F8FAFC] via-white to-white border-b border-slate-100 py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto">
-            <span className="text-xs font-bold text-[#0369A1] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
+            <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
               <BookOpen className="w-3.5 h-3.5 inline mr-1" />
               Knowledge Base
             </span>
@@ -57,7 +57,7 @@ export default function BlogPage() {
                 href={getWhatsAppLink()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#15803D] hover:bg-[#166534] text-white font-extrabold text-sm px-6 py-3 rounded-xl transition-all duration-200 shadow-sm"
+                className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white font-extrabold text-sm px-6 py-3 rounded-xl transition-all duration-200 shadow-sm"
               >
                 <MessageSquare className="w-4 h-4" />
                 <span>WhatsApp Us</span>
@@ -83,7 +83,7 @@ export default function BlogPage() {
           {featuredPost && (
             <div className="mb-16">
               <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-10">
-                <span className="text-xs font-bold text-[#0369A1] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
+                <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
                   Featured Article
                 </span>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-[#075985] tracking-tight">
@@ -96,10 +96,10 @@ export default function BlogPage() {
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                   <div className="flex flex-col gap-4">
-                    <span className="text-[10px] font-bold text-[#0369A1] bg-[#0EA5E9]/10 px-2.5 py-0.5 rounded-md uppercase tracking-wider w-fit">
+                    <span className="text-[10px] font-bold text-[#0EA5E9] bg-[#0EA5E9]/10 px-2.5 py-0.5 rounded-md uppercase tracking-wider w-fit">
                       {featuredPost.category}
                     </span>
-                    <h3 className="text-xl sm:text-2xl font-extrabold text-[#075985] tracking-tight group-hover:text-[#0369A1] transition-colors leading-snug">
+                    <h3 className="text-xl sm:text-2xl font-extrabold text-[#075985] tracking-tight group-hover:text-[#0EA5E9] transition-colors leading-snug">
                       {featuredPost.title}
                     </h3>
                     <p className="text-sm text-[#475569] leading-relaxed font-medium">
@@ -107,15 +107,15 @@ export default function BlogPage() {
                     </p>
                     <div className="flex items-center gap-4 text-xs font-bold text-[#475569]">
                       <div className="flex items-center gap-1">
-                        <User className="w-4 h-4 text-[#0369A1]" />
+                        <User className="w-4 h-4 text-[#0EA5E9]" />
                         <span>By {featuredPost.author.split(" ")[0]}</span>
                       </div>
                       <div className="flex items-center gap-1">
-                        <Clock className="w-4 h-4 text-[#0369A1]" />
+                        <Clock className="w-4 h-4 text-[#0EA5E9]" />
                         <span>{featuredPost.readTime}</span>
                       </div>
                     </div>
-                    <span className="inline-flex items-center gap-1.5 text-sm font-bold text-[#0369A1] group-hover:text-[#075985]">
+                    <span className="inline-flex items-center gap-1.5 text-sm font-bold text-[#0EA5E9] group-hover:text-[#075985]">
                       <span>Read Full Guide</span>
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </span>
@@ -130,7 +130,7 @@ export default function BlogPage() {
 
           {/* All Articles */}
           <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-10">
-            <span className="text-xs font-bold text-[#0369A1] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
+            <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
               All Articles
             </span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#075985] tracking-tight">
@@ -146,13 +146,13 @@ export default function BlogPage() {
               >
                 <div className="flex flex-col gap-4">
                   <div className="flex items-center justify-between">
-                    <span className="text-[10px] font-bold text-[#0369A1] bg-[#0EA5E9]/10 px-2.5 py-0.5 rounded-md uppercase tracking-wider">
+                    <span className="text-[10px] font-bold text-[#0EA5E9] bg-[#0EA5E9]/10 px-2.5 py-0.5 rounded-md uppercase tracking-wider">
                       {post.category}
                     </span>
                     <span className="text-xs text-slate-300 font-semibold">{post.date}</span>
                   </div>
 
-                  <h3 className="text-xl font-extrabold text-[#075985] tracking-tight group-hover:text-[#0369A1] transition-colors leading-snug">
+                  <h3 className="text-xl font-extrabold text-[#075985] tracking-tight group-hover:text-[#0EA5E9] transition-colors leading-snug">
                     {post.title}
                   </h3>
 
@@ -162,11 +162,11 @@ export default function BlogPage() {
 
                   <div className="flex items-center gap-4 text-xs font-bold text-[#475569] mt-2">
                     <div className="flex items-center gap-1">
-                      <User className="w-4 h-4 text-[#0369A1]" />
+                      <User className="w-4 h-4 text-[#0EA5E9]" />
                       <span>By {post.author.split(" ")[0]}</span>
                     </div>
                     <div className="flex items-center gap-1">
-                      <Clock className="w-4 h-4 text-[#0369A1]" />
+                      <Clock className="w-4 h-4 text-[#0EA5E9]" />
                       <span>{post.readTime}</span>
                     </div>
                   </div>
@@ -175,7 +175,7 @@ export default function BlogPage() {
                 <div className="mt-6 pt-4 border-t border-slate-50 flex justify-end">
                   <Link
                     href={`/blog/${post.slug}`}
-                    className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0369A1] group-hover:text-[#075985]"
+                    className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0EA5E9] group-hover:text-[#075985]"
                   >
                     <span>Read Article</span>
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

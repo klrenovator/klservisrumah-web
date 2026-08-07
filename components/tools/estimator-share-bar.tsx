@@ -88,7 +88,7 @@ export function EstimatorShareBar({
     return (
       <div className="mt-4 flex flex-wrap items-center gap-2 rounded-2xl border border-dashed border-sky-200 bg-sky-50/60 px-3.5 py-2.5">
         <span className="flex min-w-0 items-center gap-1.5 text-xs font-bold text-slate-500">
-          <Link2 className="h-3.5 w-3.5 shrink-0 text-[#0369A1]" aria-hidden="true" />
+          <Link2 className="h-3.5 w-3.5 shrink-0 text-[#0EA5E9]" aria-hidden="true" />
           <span className="truncate">{absoluteUrl.replace(/^https?:\/\/(www\.)?/, "")}</span>
         </span>
         <span className="ml-auto flex items-center gap-2">
@@ -105,7 +105,7 @@ export function EstimatorShareBar({
             target="_blank"
             rel="noopener noreferrer"
             onClick={trackShare}
-            className="inline-flex min-h-9 items-center gap-1.5 rounded-full bg-[#15803D] px-3 py-1.5 text-xs font-black text-white transition hover:bg-[#166534]"
+            className="inline-flex min-h-9 items-center gap-1.5 rounded-full bg-[#25D366] px-3 py-1.5 text-xs font-black text-white transition hover:bg-[#128C7E]"
           >
             <MessageSquare className="h-3.5 w-3.5" /> {t("estimateShare.shareWhatsApp")}
           </a>
@@ -118,7 +118,7 @@ export function EstimatorShareBar({
     <div className="rounded-3xl border border-sky-200 bg-sky-50/70 p-4 sm:p-5">
       <div className="flex flex-wrap items-center gap-2.5">
         <span className="flex min-w-0 flex-1 items-center gap-2 rounded-xl border border-sky-200 bg-white px-3.5 py-2.5 text-xs font-bold text-slate-600 sm:text-sm">
-          <Link2 className="h-4 w-4 shrink-0 text-[#0369A1]" aria-hidden="true" />
+          <Link2 className="h-4 w-4 shrink-0 text-[#0EA5E9]" aria-hidden="true" />
           <span className="truncate">{absoluteUrl.replace(/^https?:\/\/(www\.)?/, "")}</span>
         </span>
         <button
@@ -134,7 +134,7 @@ export function EstimatorShareBar({
           target="_blank"
           rel="noopener noreferrer"
           onClick={trackShare}
-          className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-[#15803D] px-4 py-2.5 text-sm font-black text-white shadow-md shadow-[#25D366]/20 transition hover:bg-[#166534]"
+          className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-[#25D366] px-4 py-2.5 text-sm font-black text-white shadow-md shadow-[#25D366]/20 transition hover:bg-[#128C7E]"
         >
           <MessageSquare className="h-4 w-4" /> {t("estimateShare.shareWhatsApp")}
         </a>

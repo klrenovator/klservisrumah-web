@@ -62,7 +62,7 @@ export function ServiceComparisonTable() {
     <section className="bg-white py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-8 flex flex-col gap-3 text-center">
-          <span className="text-xs font-extrabold uppercase tracking-widest text-[#0369A1]">
+          <span className="text-xs font-extrabold uppercase tracking-widest text-[#0EA5E9]">
             {t("comparison.heading")}
           </span>
           <h2 className="text-3xl font-extrabold text-[#075985]">{t("comparison.title")}</h2>
@@ -88,7 +88,7 @@ export function ServiceComparisonTable() {
                 return (
                   <tr key={service.slug} className="align-top">
                     <td className="px-5 py-4 font-extrabold text-[#075985]">{service.title}</td>
-                    <td className="px-5 py-4 font-bold text-[#0369A1]">{service.startPrice}</td>
+                    <td className="px-5 py-4 font-bold text-[#0EA5E9]">{service.startPrice}</td>
                     <td className="px-5 py-4 text-xs font-semibold text-[#475569]">{service.warranty}</td>
                     <td className="px-5 py-4 text-xs font-semibold text-[#475569]">{getResponseTime(service.slug)}</td>
                     <td className="px-5 py-4 text-xs font-semibold text-[#475569]">
@@ -97,7 +97,7 @@ export function ServiceComparisonTable() {
                     <td className="px-5 py-4">
                       <Link
                         href={`/services/${service.slug}/cost`}
-                        className="rounded-xl bg-[#0369A1] px-4 py-2 text-xs font-extrabold text-white transition hover:bg-[#075985]"
+                        className="rounded-xl bg-[#0284C7] px-4 py-2 text-xs font-extrabold text-white transition hover:bg-[#0369A1]"
                       >
                         {t("comparison.viewPricing")}
                       </Link>

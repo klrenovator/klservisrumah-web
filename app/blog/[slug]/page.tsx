@@ -87,14 +87,14 @@ export default async function BlogPostSlugPage(props: { params: Promise<{ slug: 
           <div className="flex flex-col gap-8">
             <Link
               href="/blog"
-              className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0369A1] hover:text-[#075985] transition-colors w-fit"
+              className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0EA5E9] hover:text-[#075985] transition-colors w-fit"
             >
               <ArrowLeft className="w-4 h-4" />
               <span>Back to Knowledge Hub</span>
             </Link>
 
             <div className="flex flex-col gap-4">
-              <span className="text-xs font-bold text-[#0369A1] bg-[#0EA5E9]/10 px-3 py-1 rounded-md uppercase tracking-wider w-fit">
+              <span className="text-xs font-bold text-[#0EA5E9] bg-[#0EA5E9]/10 px-3 py-1 rounded-md uppercase tracking-wider w-fit">
                 {post.category}
               </span>
               <h1 className="text-2xl sm:text-4xl font-extrabold text-[#075985] tracking-tight leading-tight">
@@ -103,15 +103,15 @@ export default async function BlogPostSlugPage(props: { params: Promise<{ slug: 
               
               <div className="flex items-center gap-6 text-xs sm:text-sm font-bold text-[#475569] border-y border-slate-100 py-3.5 mt-2">
                 <div className="flex items-center gap-1.5">
-                  <User className="w-4.5 h-4.5 text-[#0369A1]" />
+                  <User className="w-4.5 h-4.5 text-[#0EA5E9]" />
                   <span>By {post.author}</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <Calendar className="w-4.5 h-4.5 text-[#0369A1]" />
+                  <Calendar className="w-4.5 h-4.5 text-[#0EA5E9]" />
                   <span>{post.date}</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <Clock className="w-4.5 h-4.5 text-[#0369A1]" />
+                  <Clock className="w-4.5 h-4.5 text-[#0EA5E9]" />
                   <span>{post.readTime}</span>
                 </div>
               </div>
@@ -123,7 +123,7 @@ export default async function BlogPostSlugPage(props: { params: Promise<{ slug: 
 
             <div className="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-100/80 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left mt-4">
               <div className="flex flex-col gap-1 max-w-lg">
-                <span className="text-xs font-bold text-[#0369A1] uppercase tracking-widest">Expert Support Desk</span>
+                <span className="text-xs font-bold text-[#0EA5E9] uppercase tracking-widest">Expert Support Desk</span>
                 <span className="text-lg sm:text-xl font-extrabold text-[#075985] tracking-tight">Need help with {post.category}?</span>
                 <p className="text-xs text-[#475569] font-semibold leading-relaxed">
                   Our professional tradesmen serve all locations in KL & Selangor. Get an instant, free fixed-rate quote today!
@@ -133,7 +133,7 @@ export default async function BlogPostSlugPage(props: { params: Promise<{ slug: 
                 href={waLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#15803D] hover:bg-[#166534] text-white text-center font-extrabold text-sm px-6 py-3.5 rounded-xl transition-all duration-200 shadow-sm flex items-center gap-2"
+                className="bg-[#25D366] hover:bg-[#128C7E] text-white text-center font-extrabold text-sm px-6 py-3.5 rounded-xl transition-all duration-200 shadow-sm flex items-center gap-2"
               >
                 <MessageSquare className="w-4.5 h-4.5 fill-white text-[#25D366]" />
                 <span>Chat On WhatsApp</span>
@@ -149,7 +149,7 @@ export default async function BlogPostSlugPage(props: { params: Promise<{ slug: 
         <section className="bg-slate-50 border-t border-slate-100 py-16" aria-label="Related blog posts">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-12">
-              <span className="text-xs font-bold text-[#0369A1] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
+              <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
                 Related Articles
               </span>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-[#075985] tracking-tight">
@@ -164,10 +164,10 @@ export default async function BlogPostSlugPage(props: { params: Promise<{ slug: 
                   href={`/blog/${rp.slug}`}
                   className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-[#0EA5E9]/30 hover:shadow-md transition-all duration-300 group"
                 >
-                  <span className="text-[10px] font-bold text-[#0369A1] bg-[#E0F2FE]/30 px-2 py-0.5 rounded uppercase tracking-wider">
+                  <span className="text-[10px] font-bold text-[#0EA5E9] bg-[#E0F2FE]/30 px-2 py-0.5 rounded uppercase tracking-wider">
                     {rp.category}
                   </span>
-                  <h3 className="text-sm font-extrabold text-[#075985] mt-3 group-hover:text-[#0369A1] transition-colors line-clamp-2">
+                  <h3 className="text-sm font-extrabold text-[#075985] mt-3 group-hover:text-[#0EA5E9] transition-colors line-clamp-2">
                     {rp.title}
                   </h3>
                   <p className="text-xs text-[#475569] mt-2 font-medium line-clamp-2">
@@ -175,7 +175,7 @@ export default async function BlogPostSlugPage(props: { params: Promise<{ slug: 
                   </p>
                   <div className="flex items-center justify-between mt-4 pt-3 border-t border-slate-50">
                     <span className="text-[10px] text-slate-400">{rp.readTime}</span>
-                    <span className="inline-flex items-center gap-1 text-xs font-bold text-[#0369A1]">
+                    <span className="inline-flex items-center gap-1 text-xs font-bold text-[#0EA5E9]">
                       Read More <ArrowRight className="w-3 h-3" />
                     </span>
                   </div>

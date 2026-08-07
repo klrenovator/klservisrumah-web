@@ -80,7 +80,7 @@ export function EstimateHub({ links }: { links: EstimateLinkEntry[] }) {
         {/* ── How to share ────────────────────────────────────────────── */}
         <section className="mt-6 rounded-3xl border border-sky-200 bg-sky-50/70 p-5 sm:p-6">
           <h2 className="flex items-center gap-2 text-base font-black text-[#075985]">
-            <Share2 className="h-4 w-4 text-[#0369A1]" aria-hidden="true" />
+            <Share2 className="h-4 w-4 text-[#0EA5E9]" aria-hidden="true" />
             {t("estimateShare.hubHowTitle")}
           </h2>
           <ol className="mt-3 space-y-2">
@@ -90,7 +90,7 @@ export function EstimateHub({ links }: { links: EstimateLinkEntry[] }) {
               t("estimateShare.hubHow3")
             ].map((line, index) => (
               <li key={line} className="flex gap-2.5 text-sm font-semibold leading-relaxed text-slate-600">
-                <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#0369A1] text-[10px] font-black text-white">
+                <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#0EA5E9] text-[10px] font-black text-white">
                   {index + 1}
                 </span>
                 <span>{line}</span>
@@ -128,7 +128,7 @@ export function EstimateHub({ links }: { links: EstimateLinkEntry[] }) {
                 <div className="mt-4 flex flex-wrap items-center gap-2">
                   <Link
                     href={entry.resolvedPath}
-                    className="inline-flex min-h-11 items-center gap-1.5 rounded-xl bg-gradient-to-br from-[#075985] to-[#0369A1] px-4 py-2.5 text-xs font-black text-white transition hover:from-[#0c4a6e] hover:to-[#0369A1]"
+                    className="inline-flex min-h-11 items-center gap-1.5 rounded-xl bg-gradient-to-br from-[#075985] to-[#0EA5E9] px-4 py-2.5 text-xs font-black text-white transition hover:from-[#0c4a6e] hover:to-[#0284C7]"
                   >
                     {t("estimateShare.openEstimator")} <ArrowRight className="h-3.5 w-3.5" />
                   </Link>
@@ -148,7 +148,7 @@ export function EstimateHub({ links }: { links: EstimateLinkEntry[] }) {
                     onClick={() =>
                       trackEvent({ action: "estimator_share_whatsapp", category: "engagement", label: entry.path })
                     }
-                    className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[#15803D] text-white transition hover:bg-[#166534]"
+                    className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[#25D366] text-white transition hover:bg-[#128C7E]"
                   >
                     <MessageSquare className="h-4 w-4" aria-hidden="true" />
                   </a>

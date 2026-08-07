@@ -10,22 +10,22 @@ export function WhyChooseUs() {
 
   const points = [
     {
-      icon: <ShieldCheck className="w-6 h-6 text-[#0369A1]" />,
+      icon: <ShieldCheck className="w-6 h-6 text-[#0EA5E9]" />,
       titleKey: "home.whyChooseUs.items.verified.title",
       descKey: "home.whyChooseUs.items.verified.desc"
     },
     {
-      icon: <Sparkles className="w-6 h-6 text-[#0369A1]" />,
+      icon: <Sparkles className="w-6 h-6 text-[#0EA5E9]" />,
       titleKey: "home.whyChooseUs.items.transparent.title",
       descKey: "home.whyChooseUs.items.transparent.desc"
     },
     {
-      icon: <Flame className="w-6 h-6 text-[#0369A1]" />,
+      icon: <Flame className="w-6 h-6 text-[#0EA5E9]" />,
       titleKey: "home.whyChooseUs.items.warranty.title",
       descKey: "home.whyChooseUs.items.warranty.desc"
     },
     {
-      icon: <Clock className="w-6 h-6 text-[#0369A1]" />,
+      icon: <Clock className="w-6 h-6 text-[#0EA5E9]" />,
       titleKey: "home.whyChooseUs.items.fast.title",
       descKey: "home.whyChooseUs.items.fast.desc"
     }
@@ -38,7 +38,7 @@ export function WhyChooseUs() {
         {/* Section header */}
         <Reveal>
           <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-16">
-            <span className="text-xs font-bold text-[#0369A1] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
+            <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
               {t("home.whyChooseUs.heading")}
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">

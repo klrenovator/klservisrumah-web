@@ -12,7 +12,7 @@ export function ServiceAreaSelector({ serviceSlug }: { serviceSlug: string }) {
   return (
     <div className="rounded-3xl border border-slate-100 bg-slate-50 p-5">
       <div className="mb-4 flex items-center gap-2 text-sm font-extrabold text-[#075985]">
-        <MapPin className="h-5 w-5 text-[#0369A1]" /> Find this service near your suburb
+        <MapPin className="h-5 w-5 text-[#0EA5E9]" /> Find this service near your suburb
       </div>
       <div className="flex flex-col gap-3 sm:flex-row">
         <select
@@ -29,7 +29,7 @@ export function ServiceAreaSelector({ serviceSlug }: { serviceSlug: string }) {
           type="button"
           disabled={!selected}
           onClick={() => router.push(`/suburbs/${selected}/${serviceSlug}`)}
-          className="rounded-xl bg-[#0369A1] px-5 py-3 text-sm font-extrabold text-white disabled:cursor-not-allowed disabled:bg-slate-300"
+          className="rounded-xl bg-[#0284C7] px-5 py-3 text-sm font-extrabold text-white disabled:cursor-not-allowed disabled:bg-slate-300"
         >
           View local page
         </button>

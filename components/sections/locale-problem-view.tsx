@@ -43,7 +43,7 @@ export function LocaleProblemView({ problem, service }: LocaleProblemViewProps) 
               {`${localizedProblem.title} ${t.headingSuffix}`}
             </h1>
             <p className="mt-4 text-base font-semibold leading-relaxed text-[#475569]">{localizedProblem.symptom}</p>
-            <p className="mt-3 text-sm font-extrabold text-[#0369A1]">{t.estimate} {localizedProblem.costRange}</p>
+            <p className="mt-3 text-sm font-extrabold text-[#0EA5E9]">{t.estimate} {localizedProblem.costRange}</p>
           </div>
 
           <Section title={t.causes} items={localizedProblem.causes} />
@@ -53,7 +53,7 @@ export function LocaleProblemView({ problem, service }: LocaleProblemViewProps) 
           <div className="rounded-3xl border border-slate-100 bg-white p-6 shadow-xs sm:p-8">
             <h2 className="text-2xl font-extrabold text-[#075985]">{t.related}</h2>
             <p className="mt-2 text-sm font-semibold leading-relaxed text-[#475569]">{t.relatedBody(localizedService.title)}</p>
-            <Link href={`/services/${service.slug}`} className="mt-5 inline-flex rounded-xl bg-[#0369A1] px-5 py-3 text-sm font-extrabold text-white">{t.view} {localizedService.title}</Link>
+            <Link href={`/services/${service.slug}`} className="mt-5 inline-flex rounded-xl bg-[#0284C7] px-5 py-3 text-sm font-extrabold text-white">{t.view} {localizedService.title}</Link>
           </div>
 
           <div className="rounded-3xl border border-slate-100 bg-white p-6 shadow-xs sm:p-8">
@@ -70,10 +70,10 @@ export function LocaleProblemView({ problem, service }: LocaleProblemViewProps) 
         </article>
 
         <aside className="lg:col-span-4">
-          <div className="sticky top-28 rounded-3xl bg-[#0369A1] p-6 text-white shadow-xl">
+          <div className="sticky top-28 rounded-3xl bg-[#0284C7] p-6 text-white shadow-xl">
             <h2 className="text-2xl font-extrabold">{t.needFixed}</h2>
             <p className="mt-2 text-sm font-semibold text-blue-50">{t.needFixedBody}</p>
-            <a href={getWhatsAppLink({ service: localizedProblem.title })} target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#15803D] px-5 py-3 text-sm font-extrabold text-white">
+            <a href={getWhatsAppLink({ service: localizedProblem.title })} target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white">
               <MessageCircle className="h-4 w-4" /> {t.whatsapp}
             </a>
           </div>

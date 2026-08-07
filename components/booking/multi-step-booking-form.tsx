@@ -93,7 +93,7 @@ export function MultiStepBookingForm() {
         <p className="mt-3 text-sm font-semibold leading-relaxed text-[#475569]">
           {t("contact.bookingCompiledDesc")}
         </p>
-        <button onClick={submit} className="mt-6 rounded-xl bg-[#15803D] px-5 py-3 text-sm font-extrabold text-white">
+        <button onClick={submit} className="mt-6 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white">
           {t("contact.openWhatsApp")}
         </button>
       </div>
@@ -104,7 +104,7 @@ export function MultiStepBookingForm() {
     <div className="rounded-3xl border border-slate-100 bg-white p-6 shadow-[0_15px_40px_rgba(2,31,68,0.04)] sm:p-8">
       <div className="mb-6 flex items-center justify-between gap-4">
         <div>
-          <span className="text-xs font-extrabold uppercase tracking-widest text-[#0369A1]">{t("contact.step")} {step} {t("contact.of")} 6</span>
+          <span className="text-xs font-extrabold uppercase tracking-widest text-[#0EA5E9]">{t("contact.step")} {step} {t("contact.of")} 6</span>
           <h2 className="mt-1 text-2xl font-extrabold text-[#075985]">{t("contact.bookJob")}</h2>
         </div>
         <div className="text-right text-[11px] font-bold text-[#475569]">{t("contact.formNote")}<br />{t("contact.quoteNote")}</div>
@@ -117,7 +117,7 @@ export function MultiStepBookingForm() {
               {serviceOptions.map((service) => (
                 <button key={service.slug} onClick={() => update("service", service.slug)} className={`rounded-2xl border p-4 text-left transition ${form.service === service.slug ? "border-[#0284C7] bg-[#E0F2FE]" : "border-slate-100 bg-slate-50 hover:bg-white"}`}>
                   <span className="text-sm font-extrabold text-[#075985]">{service.title}</span>
-                  <span className="mt-1 block text-xs font-bold text-[#0369A1]">{t("common.fromLabel")} {service.startPrice}</span>
+                  <span className="mt-1 block text-xs font-bold text-[#0EA5E9]">{t("common.fromLabel")} {service.startPrice}</span>
                 </button>
               ))}
             </div>
@@ -130,7 +130,7 @@ export function MultiStepBookingForm() {
               {subServices.map((sub) => (
                 <button key={sub.name} onClick={() => update("subService", sub.name)} className={`rounded-2xl border p-4 text-left transition ${form.subService === sub.name ? "border-[#0284C7] bg-[#E0F2FE]" : "border-slate-100 bg-slate-50 hover:bg-white"}`}>
                   <span className="text-sm font-extrabold text-[#075985]">{sub.name}</span>
-                  <span className="mt-1 block text-xs font-bold text-[#0369A1]">{sub.price}</span>
+                  <span className="mt-1 block text-xs font-bold text-[#0EA5E9]">{sub.price}</span>
                   <span className="mt-1 block text-xs font-semibold text-[#475569]">{sub.desc}</span>
                 </button>
               ))}
@@ -227,11 +227,11 @@ export function MultiStepBookingForm() {
           {t("common.back")}
         </button>
         {step < 6 ? (
-          <button type="button" onClick={() => setStep((current) => current + 1)} disabled={!canContinue} className="rounded-xl bg-[#0369A1] px-5 py-3 text-sm font-extrabold text-white disabled:cursor-not-allowed disabled:bg-slate-300">
+          <button type="button" onClick={() => setStep((current) => current + 1)} disabled={!canContinue} className="rounded-xl bg-[#0284C7] px-5 py-3 text-sm font-extrabold text-white disabled:cursor-not-allowed disabled:bg-slate-300">
             {t("common.continue")}
           </button>
         ) : (
-          <button type="button" onClick={submit} disabled={!canContinue} className="rounded-xl bg-[#15803D] px-5 py-3 text-sm font-extrabold text-white disabled:cursor-not-allowed disabled:bg-slate-300">
+          <button type="button" onClick={submit} disabled={!canContinue} className="rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white disabled:cursor-not-allowed disabled:bg-slate-300">
             {t("contact.submitAndOpen")}
           </button>
         )}

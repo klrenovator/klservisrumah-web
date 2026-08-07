@@ -32,7 +32,7 @@ export default function ProblemsIndexPage() {
       <section className="bg-gradient-to-b from-[#F8FAFC] via-white to-white border-b border-slate-100 py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto">
-            <span className="text-xs font-bold text-[#0369A1] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
+            <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
               <AlertCircle className="w-3.5 h-3.5 inline mr-1" />
               Problem Diagnosis
             </span>
@@ -47,7 +47,7 @@ export default function ProblemsIndexPage() {
                 href={getWhatsAppLink()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#15803D] hover:bg-[#166534] text-white font-extrabold text-sm px-6 py-3 rounded-xl transition-all duration-200 shadow-sm"
+                className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white font-extrabold text-sm px-6 py-3 rounded-xl transition-all duration-200 shadow-sm"
               >
                 <MessageSquare className="w-4 h-4" />
                 <span>WhatsApp For Diagnosis</span>
@@ -67,7 +67,7 @@ export default function ProblemsIndexPage() {
       <section className="bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-12">
-            <span className="text-xs font-bold text-[#0369A1] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
+            <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
               All Problems
             </span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#075985] tracking-tight">
@@ -79,10 +79,10 @@ export default function ProblemsIndexPage() {
               const service = servicesData[problem.serviceSlug];
               return (
                 <Link key={problem.slug} href={`/problems/${problem.slug}`} className="rounded-3xl border border-slate-100 bg-white p-5 shadow-xs transition hover:-translate-y-0.5 hover:shadow-md group">
-                  <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#0369A1]">{service.title} · {problem.urgency}</span>
-                  <h3 className="mt-2 text-lg font-extrabold text-[#075985] group-hover:text-[#0369A1] transition-colors">{problem.title}</h3>
+                  <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#0EA5E9]">{service.title} · {problem.urgency}</span>
+                  <h3 className="mt-2 text-lg font-extrabold text-[#075985] group-hover:text-[#0EA5E9] transition-colors">{problem.title}</h3>
                   <p className="mt-2 text-xs font-semibold leading-relaxed text-[#475569]">{problem.symptom}</p>
-                  <span className="mt-3 inline-flex items-center gap-1 text-xs font-bold text-[#0369A1]">
+                  <span className="mt-3 inline-flex items-center gap-1 text-xs font-bold text-[#0EA5E9]">
                     See Fix →
                   </span>
                 </Link>

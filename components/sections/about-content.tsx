@@ -9,17 +9,17 @@ export function AboutContent() {
   const t = useTranslations();
 
   const values = [
-    { icon: <Users className="w-6 h-6 text-[#0369A1]" />, key: "team" },
-    { icon: <ShieldCheck className="w-6 h-6 text-[#0369A1]" />, key: "warranty" },
-    { icon: <Hammer className="w-6 h-6 text-[#0369A1]" />, key: "materials" },
-    { icon: <Flame className="w-6 h-6 text-[#0369A1]" />, key: "cleanliness" }
+    { icon: <Users className="w-6 h-6 text-[#0EA5E9]" />, key: "team" },
+    { icon: <ShieldCheck className="w-6 h-6 text-[#0EA5E9]" />, key: "warranty" },
+    { icon: <Hammer className="w-6 h-6 text-[#0EA5E9]" />, key: "materials" },
+    { icon: <Flame className="w-6 h-6 text-[#0EA5E9]" />, key: "cleanliness" }
   ];
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-10">
 
       <div className="flex flex-col gap-4 text-center sm:text-left">
-        <span className="text-xs font-bold text-[#0369A1] uppercase tracking-widest bg-[#0EA5E9]/10 px-4.5 py-1.5 rounded-full w-fit mx-auto sm:mx-0">
+        <span className="text-xs font-bold text-[#0EA5E9] uppercase tracking-widest bg-[#0EA5E9]/10 px-4.5 py-1.5 rounded-full w-fit mx-auto sm:mx-0">
           {t("about.eyebrow")}
         </span>
         {/* h2, not h1 — the page-level <h1> lives in <AboutHeroHeading />.
@@ -36,7 +36,7 @@ export function AboutContent() {
 
       <div className="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-100 flex flex-col gap-6">
         <h2 className="text-xl font-extrabold text-[#075985] tracking-tight flex items-center gap-2">
-          <Landmark className="w-5 h-5 text-[#0369A1]" />
+          <Landmark className="w-5 h-5 text-[#0EA5E9]" />
           <span>{t("about.standardsHeading")}</span>
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 text-sm font-semibold text-[#475569]">

@@ -35,11 +35,11 @@ export function RecentJobsTicker() {
   return (
     <div className="pointer-events-none fixed inset-x-0 top-24 z-40 flex justify-center px-4" aria-live="polite">
       <div role="status" className="pointer-events-auto relative flex w-full max-w-md items-start gap-3 rounded-2xl border border-[#0EA5E9]/20 bg-white/95 p-3.5 pr-10 shadow-[0_16px_45px_rgba(2,31,68,0.12)] backdrop-blur-sm">
-        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#E0F2FE] text-[#0369A1]">
+        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#E0F2FE] text-[#0284C7]">
           <Activity className="h-5 w-5" />
         </span>
         <div className="flex min-w-0 flex-col gap-0.5">
-          <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#0369A1]">{job.label}</span>
+          <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#0EA5E9]">{job.label}</span>
           <p className="text-xs font-bold leading-relaxed text-[#075985] sm:text-sm">
             {job.service} in {job.location} · {job.timeLabel}
           </p>

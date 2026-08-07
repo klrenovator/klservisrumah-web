@@ -70,7 +70,7 @@ export function EstimateSharePage({
         {/* ── How the figure is built ─────────────────────────────────── */}
         <section className="mt-8 rounded-3xl border border-slate-200 bg-white p-6 sm:p-7">
           <h2 className="flex items-center gap-2 text-lg font-black text-[#075985]">
-            <Calculator className="h-5 w-5 text-[#0369A1]" aria-hidden="true" />
+            <Calculator className="h-5 w-5 text-[#0EA5E9]" aria-hidden="true" />
             {t("estimateShare.howTitle")}
           </h2>
           <ul className="mt-4 space-y-3">
@@ -100,7 +100,7 @@ export function EstimateSharePage({
         <section className="mt-6 flex flex-col gap-3 sm:flex-row">
           <Link
             href={`/services/${slug}`}
-            className="inline-flex min-h-13 flex-1 items-center justify-center gap-2 rounded-2xl bg-gradient-to-br from-[#075985] to-[#0369A1] px-6 py-3.5 text-sm font-black text-white shadow-lg shadow-sky-500/25 transition hover:from-[#0c4a6e] hover:to-[#0369A1]"
+            className="inline-flex min-h-13 flex-1 items-center justify-center gap-2 rounded-2xl bg-gradient-to-br from-[#075985] to-[#0EA5E9] px-6 py-3.5 text-sm font-black text-white shadow-lg shadow-sky-500/25 transition hover:from-[#0c4a6e] hover:to-[#0284C7]"
           >
             {t("estimateShare.viewFullService", { service: title })} <ArrowRight className="h-4 w-4" />
           </Link>
@@ -109,7 +109,7 @@ export function EstimateSharePage({
             onClick={() => trackPhoneCall({ page: `estimate_${slug}` })}
             className="inline-flex min-h-13 flex-1 items-center justify-center gap-2 rounded-2xl border-2 border-slate-200 bg-white px-6 py-3.5 text-sm font-black text-[#075985] transition hover:border-sky-300 hover:bg-sky-50"
           >
-            <Phone className="h-4 w-4 text-[#0369A1]" aria-hidden="true" /> {siteConfig.phoneDisplay}
+            <Phone className="h-4 w-4 text-[#0EA5E9]" aria-hidden="true" /> {siteConfig.phoneDisplay}
           </a>
         </section>
       </div>

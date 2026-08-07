@@ -32,7 +32,7 @@ export function ReviewCarousel({ reviews, muted = false }: { reviews: Review[]; 
                   <Star key={star} className="h-4 w-4 fill-amber-400 text-amber-400" aria-hidden="true" />
                 ))}
               </div>
-              <span className="rounded-md bg-sky-50 px-2.5 py-1 text-[10px] font-bold text-[#0369A1]">{review.service}</span>
+              <span className="rounded-md bg-sky-50 px-2.5 py-1 text-[10px] font-bold text-[#0284C7]">{review.service}</span>
             </div>
             <p className="mt-6 text-sm font-semibold italic leading-relaxed text-[#475569] sm:text-base">&ldquo;{review.text}&rdquo;</p>
           </div>

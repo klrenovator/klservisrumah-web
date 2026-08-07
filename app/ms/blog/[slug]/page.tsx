@@ -63,39 +63,39 @@ export default async function MalayArticle({ params }: { params: Promise<{ slug:
     <>
       <nav aria-label="Breadcrumb" className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-8 text-sm">
         <ol className="flex items-center gap-2 text-[#475569]">
-          <li><Link href="/" className="hover:text-[#0369A1]">Utama</Link></li>
+          <li><Link href="/" className="hover:text-[#0EA5E9]">Utama</Link></li>
           <li className="text-slate-300">/</li>
-          <li><Link href="/ms/blog" className="hover:text-[#0369A1]">Blog</Link></li>
+          <li><Link href="/ms/blog" className="hover:text-[#0EA5E9]">Blog</Link></li>
           <li className="text-slate-300">/</li>
           <li className="font-semibold text-[#075985] truncate max-w-[200px]">{post.title}</li>
         </ol>
         {/* Language switcher for this article */}
         <div className="flex items-center gap-2 mt-3 text-xs">
-          <Link href={`/blog/${englishSlug}`} className="px-2 py-1 rounded border border-slate-200 hover:border-[#0EA5E9] hover:text-[#0369A1]">EN</Link>
-          <span className="px-2 py-1 rounded border border-[#0EA5E9] text-[#0369A1] font-bold">BM</span>
-          {zhPost && <Link href={localizedBlogPath("zh", zhPost.slug)} className="px-2 py-1 rounded border border-slate-200 hover:border-[#0EA5E9] hover:text-[#0369A1]">中文</Link>}
+          <Link href={`/blog/${englishSlug}`} className="px-2 py-1 rounded border border-slate-200 hover:border-[#0EA5E9] hover:text-[#0EA5E9]">EN</Link>
+          <span className="px-2 py-1 rounded border border-[#0EA5E9] text-[#0EA5E9] font-bold">BM</span>
+          {zhPost && <Link href={localizedBlogPath("zh", zhPost.slug)} className="px-2 py-1 rounded border border-slate-200 hover:border-[#0EA5E9] hover:text-[#0EA5E9]">中文</Link>}
         </div>
       </nav>
 
       <main className="bg-white py-8 sm:py-12">
         <article className="mx-auto max-w-4xl px-4 sm:px-6">
-          <Link href="/ms/blog" className="inline-flex items-center gap-1.5 text-sm font-bold text-[#0369A1] hover:text-[#075985] transition-colors w-fit mb-8">
+          <Link href="/ms/blog" className="inline-flex items-center gap-1.5 text-sm font-bold text-[#0EA5E9] hover:text-[#075985] transition-colors w-fit mb-8">
             <ArrowLeft className="w-4 h-4" />
             <span>Kembali ke Blog</span>
           </Link>
 
-          <span className="text-xs font-bold text-[#0369A1] bg-[#0EA5E9]/10 px-3 py-1 rounded-md uppercase tracking-wider w-fit">{post.category}</span>
+          <span className="text-xs font-bold text-[#0EA5E9] bg-[#0EA5E9]/10 px-3 py-1 rounded-md uppercase tracking-wider w-fit">{post.category}</span>
           <h1 className="mt-4 text-3xl font-extrabold leading-tight text-[#075985] sm:text-4xl">{post.title}</h1>
           <div className="mt-4 flex flex-wrap items-center gap-4 border-y border-slate-100 py-3 text-sm font-semibold text-slate-500">
-            <div className="flex items-center gap-1"><User className="w-4 h-4 text-[#0369A1]" /><span>{original.author}</span></div>
-            <div className="flex items-center gap-1"><Calendar className="w-4 h-4 text-[#0369A1]" /><span>{original.date}</span></div>
-            <div className="flex items-center gap-1"><Clock className="w-4 h-4 text-[#0369A1]" /><span>{original.readTime}</span></div>
+            <div className="flex items-center gap-1"><User className="w-4 h-4 text-[#0EA5E9]" /><span>{original.author}</span></div>
+            <div className="flex items-center gap-1"><Calendar className="w-4 h-4 text-[#0EA5E9]" /><span>{original.date}</span></div>
+            <div className="flex items-center gap-1"><Clock className="w-4 h-4 text-[#0EA5E9]" /><span>{original.readTime}</span></div>
           </div>
           <div className="mt-8 prose-article" dangerouslySetInnerHTML={{ __html: contentHtml }} />
           <aside className="mt-12 rounded-2xl bg-slate-50 p-6 sm:p-8">
             <h2 className="text-xl font-extrabold text-[#075985]">Perlukan bantuan {post.category.toLowerCase()}?</h2>
             <p className="mt-2 text-slate-600">Dapatkan sebut harga percuma daripada pasukan kami di KL dan Selangor.</p>
-            <a className="mt-4 inline-flex items-center gap-2 rounded-xl bg-[#15803D] px-5 py-3 text-sm font-bold text-white hover:bg-[#166534] transition-colors" href={getWhatsAppLink({ service: original.category })} target="_blank" rel="noopener noreferrer">
+            <a className="mt-4 inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-bold text-white hover:bg-[#128C7E] transition-colors" href={getWhatsAppLink({ service: original.category })} target="_blank" rel="noopener noreferrer">
               <MessageSquare className="h-4 w-4" /> WhatsApp kami
             </a>
           </aside>

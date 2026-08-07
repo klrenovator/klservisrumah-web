@@ -55,15 +55,15 @@ export function ProjectGallery() {
                   <Image src={project.image} alt={`${project.title} in ${project.location}`} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw" className="object-cover transition duration-300 group-hover:scale-105" />
                 </div>
                 <div className="p-5">
-                  <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#0369A1]">{project.service}</span>
-                  <h3 className="mt-2 text-base font-extrabold leading-tight text-[#075985] group-hover:text-[#0369A1]">{project.title}</h3>
+                  <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#0EA5E9]">{project.service}</span>
+                  <h3 className="mt-2 text-base font-extrabold leading-tight text-[#075985] group-hover:text-[#0EA5E9]">{project.title}</h3>
                   <p className="mt-2 flex items-center gap-1.5 text-xs font-bold text-slate-500"><MapPin className="h-3.5 w-3.5 text-sky-400" /> {project.location}</p>
                   <p className="mt-3 text-xs font-semibold leading-relaxed text-[#475569]">{project.summary}</p>
                   <div className="mt-5 flex items-center justify-between gap-3 border-t border-slate-100 pt-4">
-                    <Link href={serviceHref[project.service] ?? "/services"} className="text-xs font-black uppercase tracking-widest text-[#0369A1] hover:text-[#075985]">
+                    <Link href={serviceHref[project.service] ?? "/services"} className="text-xs font-black uppercase tracking-widest text-[#0EA5E9] hover:text-[#075985]">
                       Service page
                     </Link>
-                    <a href={getWhatsAppLink({ service: project.title, location: project.location })} target="_blank" rel="noopener noreferrer" className="rounded-lg bg-[#15803D] px-3 py-2 text-[11px] font-black text-white transition hover:bg-[#166534]">
+                    <a href={getWhatsAppLink({ service: project.title, location: project.location })} target="_blank" rel="noopener noreferrer" className="rounded-lg bg-[#25D366] px-3 py-2 text-[11px] font-black text-white transition hover:bg-[#128C7E]">
                       Quote
                     </a>
                   </div>
