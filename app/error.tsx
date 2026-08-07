@@ -42,13 +42,13 @@ export default function ErrorPage({ error, reset }: { error: Error & { digest?: 
           <button
             type="button"
             onClick={reset}
-            className="rounded-xl bg-[#0369A1] px-5 py-3 text-sm font-extrabold text-white"
+            className="rounded-xl bg-[#0284C7] px-5 py-3 text-sm font-extrabold text-white hover:bg-[#0369A1] transition-colors"
           >
             {t("error.tryAgain")}
           </button>
           <Link
             href="/services"
-            className="rounded-xl border border-slate-200 px-5 py-3 text-sm font-extrabold text-[#075985]"
+            className="rounded-xl border border-slate-200 px-5 py-3 text-sm font-extrabold text-[#075985] hover:border-[#0EA5E9] hover:text-[#0EA5E9] transition-colors"
           >
             {t("error.servicesCta")}
           </Link>
@@ -56,7 +56,7 @@ export default function ErrorPage({ error, reset }: { error: Error & { digest?: 
             href={getWhatsAppLink({ service: "website issue report" })}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-xl bg-[#15803D] px-5 py-3 text-sm font-extrabold text-white"
+            className="rounded-xl bg-[#25D366] hover:bg-[#128C7E] px-5 py-3 text-sm font-extrabold text-white transition-colors"
           >
             {t("error.whatsappReport")}
           </a>

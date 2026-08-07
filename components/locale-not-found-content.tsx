@@ -12,7 +12,7 @@ export function LocaleNotFoundContent() {
   return (
     <section className="bg-gradient-to-b from-slate-50 to-white py-24">
       <div className="mx-auto flex max-w-3xl flex-col items-center gap-6 px-4 text-center">
-        <span className="rounded-full bg-[#E0F2FE] px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-[#0369A1]">
+        <span className="rounded-full bg-[#E0F2FE] px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-[#0284C7]">
           {t("notFound.badge")}
         </span>
         <h1 className="text-4xl font-extrabold text-[#075985]">{t("notFound.title")}</h1>
@@ -20,7 +20,7 @@ export function LocaleNotFoundContent() {
           {t("notFound.body")}
         </p>
         <div className="flex flex-col gap-3 sm:flex-row">
-          <Link href="/" className="rounded-xl bg-[#0369A1] px-5 py-3 text-sm font-extrabold text-white">
+          <Link href="/" className="rounded-xl bg-[#0284C7] px-5 py-3 text-sm font-extrabold text-white">
             {t("notFound.backHome")}
           </Link>
           <Link href="/services" className="rounded-xl border border-slate-200 px-5 py-3 text-sm font-extrabold text-[#075985]">
@@ -30,7 +30,7 @@ export function LocaleNotFoundContent() {
             href={getWhatsAppLink()}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#15803D] px-5 py-3 text-sm font-extrabold text-white"
+            className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white"
           >
             <MessageCircle className="h-4 w-4" /> {t("notFound.whatsappUs")}
           </a>

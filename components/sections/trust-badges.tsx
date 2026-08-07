@@ -9,22 +9,22 @@ export function TrustBadges() {
 
   const badgeList = [
     {
-      icon: <Award className="w-8 h-8 text-[#0369A1]" />,
+      icon: <Award className="w-8 h-8 text-[#0EA5E9]" />,
       title: t("home.trustBadges.items.verified"),
       desc: t("home.trustBadges.items.verified")
     },
     {
-      icon: <Shield className="w-8 h-8 text-[#0369A1]" />,
+      icon: <Shield className="w-8 h-8 text-[#0EA5E9]" />,
       title: t("home.trustBadges.items.warranty"),
       desc: t("home.trustBadges.items.warranty")
     },
     {
-      icon: <FileCheck className="w-8 h-8 text-[#0369A1]" />,
+      icon: <FileCheck className="w-8 h-8 text-[#0EA5E9]" />,
       title: t("home.trustBadges.items.transparent"),
       desc: t("home.trustBadges.items.transparent")
     },
     {
-      icon: <Landmark className="w-8 h-8 text-[#0369A1]" />,
+      icon: <Landmark className="w-8 h-8 text-[#0EA5E9]" />,
       title: t("home.trustBadges.items.insured"),
       desc: t("home.trustBadges.items.insured")
     }

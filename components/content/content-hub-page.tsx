@@ -61,7 +61,7 @@ export function ContentHubPage({
               {description}
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a href={getWhatsAppLink({ service: title })} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#15803D] px-6 py-3.5 text-sm font-black uppercase tracking-wider text-white shadow-lg shadow-[#075E54]/30 transition hover:bg-[#166534]">
+              <a href={getWhatsAppLink({ service: title })} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-6 py-3.5 text-sm font-black uppercase tracking-wider text-white shadow-lg shadow-[#075E54]/30 transition hover:bg-[#128C7E]">
                 <MessageSquare className="h-4 w-4" /> WhatsApp Advice
               </a>
               <Link href={primaryCtaHref} className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3.5 text-sm font-black uppercase tracking-wider text-[#075985] transition hover:bg-sky-50">
@@ -115,11 +115,11 @@ export function ContentHubPage({
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {featured.map((item) => (
               <Link key={item.slug} href={item.href ?? `${basePath}/${item.slug}`} className="group rounded-3xl border border-slate-100 bg-slate-50/60 p-6 transition hover:-translate-y-0.5 hover:border-sky-200 hover:bg-white hover:shadow-lg">
-                <span className="text-[10px] font-black uppercase tracking-widest text-[#0369A1]">{item.category}</span>
-                <h3 className="mt-2 text-lg font-black leading-tight text-[#075985] group-hover:text-[#0369A1]">{item.title}</h3>
+                <span className="text-[10px] font-black uppercase tracking-widest text-[#0EA5E9]">{item.category}</span>
+                <h3 className="mt-2 text-lg font-black leading-tight text-[#075985] group-hover:text-[#0EA5E9]">{item.title}</h3>
                 <p className="mt-3 line-clamp-3 text-sm font-semibold leading-relaxed text-slate-600">{item.intro}</p>
                 {item.relatedServiceTitle ? <p className="mt-4 text-xs font-bold text-slate-500">Related service: {item.relatedServiceTitle}</p> : null}
-                <span className="mt-5 inline-flex items-center gap-1 text-xs font-black uppercase tracking-widest text-[#0369A1] group-hover:gap-2 transition-all">
+                <span className="mt-5 inline-flex items-center gap-1 text-xs font-black uppercase tracking-widest text-[#0EA5E9] group-hover:gap-2 transition-all">
                   Open guide <ArrowRight className="h-3.5 w-3.5" />
                 </span>
               </Link>
@@ -143,7 +143,7 @@ export function ContentHubPage({
                 <div className="flex items-start justify-between gap-3">
                   <div>
                     <p className="text-[10px] font-black uppercase tracking-widest text-slate-400">{item.category}</p>
-                    <h3 className="mt-1 text-sm font-black leading-snug text-[#075985] group-hover:text-[#0369A1]">{item.title}</h3>
+                    <h3 className="mt-1 text-sm font-black leading-snug text-[#075985] group-hover:text-[#0EA5E9]">{item.title}</h3>
                   </div>
                   <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-sky-400 opacity-0 transition group-hover:opacity-100" />
                 </div>
@@ -161,7 +161,7 @@ export function ContentHubPage({
 
       <section className="bg-white py-14 sm:py-16">
         <div className="container-default">
-          <div className="rounded-3xl bg-gradient-to-br from-[#075985] to-[#0369A1] p-6 text-white sm:p-8 lg:p-10">
+          <div className="rounded-3xl bg-gradient-to-br from-[#075985] to-[#0EA5E9] p-6 text-white sm:p-8 lg:p-10">
             <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
               <div>
                 <p className="text-xs font-black uppercase tracking-widest text-sky-100">Need a local opinion?</p>
@@ -171,7 +171,7 @@ export function ContentHubPage({
                 </p>
               </div>
               <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
-                <a href={getWhatsAppLink({ service: title })} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#15803D] px-6 py-3.5 text-sm font-black uppercase tracking-wider text-white transition hover:bg-[#166534]">
+                <a href={getWhatsAppLink({ service: title })} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-6 py-3.5 text-sm font-black uppercase tracking-wider text-white transition hover:bg-[#128C7E]">
                   <MessageSquare className="h-4 w-4" /> WhatsApp Now
                 </a>
                 <Link href="/areas" className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3.5 text-sm font-black uppercase tracking-wider text-[#075985] transition hover:bg-sky-50">

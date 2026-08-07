@@ -43,7 +43,7 @@ export function ExitIntentPopup() {
           <X className="h-4 w-4" />
         </button>
         <div className="flex flex-col gap-4 pr-8">
-          <span className="w-fit rounded-full bg-[#E0F2FE] px-3 py-1 text-xs font-extrabold uppercase tracking-widest text-[#0369A1]">{t("exitPopup.badge")}</span>
+          <span className="w-fit rounded-full bg-[#E0F2FE] px-3 py-1 text-xs font-extrabold uppercase tracking-widest text-[#0284C7]">{t("exitPopup.badge")}</span>
           <h2 className="text-2xl font-extrabold text-[#075985]">{t("exitPopup.title")}</h2>
           <p className="text-sm font-semibold leading-relaxed text-[#475569]">
             {t("exitPopup.body")}
@@ -53,7 +53,7 @@ export function ExitIntentPopup() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackWhatsAppClick({ page: "exit_intent_popup" })}
-            className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#15803D] px-5 py-3 text-sm font-extrabold text-white"
+            className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white"
           >
             <MessageCircle className="h-4 w-4" /> {t("exitPopup.cta")}
           </a>

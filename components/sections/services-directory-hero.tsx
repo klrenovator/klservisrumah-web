@@ -7,7 +7,7 @@ export function ServicesDirectoryHero() {
   const t = useTranslations();
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-      <span className="rounded-full bg-[#E0F2FE] px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-[#0369A1]">
+      <span className="rounded-full bg-[#E0F2FE] px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-[#0284C7]">
         {t("services.directoryEyebrow")}
       </span>
       {/* The two halves render as one continuous sentence for assistive tech and

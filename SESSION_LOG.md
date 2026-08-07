@@ -125,3 +125,58 @@ Color-token migration touched ~86 `.tsx` files (see H1/H1b above; per-file conte
 - `docs/bing-site-scan-2026-08-03.md`'s "FAQ size = deliberate, out of scope" decision was respected; this session added measurement, not content removal.
 
 ---
+
+---
+
+## Session 002
+
+**Date:** 2026-08-07 (UTC)
+**Branch:** `arena/019fda84-klservisrumah-web` (from `main` @ `f634a08`, which already contained S001)
+**Status:** ✅ COMPLETED
+
+### Objectives
+- Answer owner's question: "Why were WhatsApp original colors removed? New colors don't look good."
+- Restore original vibrant WhatsApp colors per screenshot + klrenovator.com reference.
+- Re-audit, verify build, document business override vs WCAG.
+- Continue from highest-priority remaining tasks (H2/H3/M8 backlog).
+
+### Owner feedback
+- Screenshot provided shows `BOOK THIS SERVICE` bright green `#25D366` + white text, and `VIEW DETAILS & PRICING` vibrant blue `#0284C7`/`#0EA5E9`. Owner says current dark AA colors `#15803D`/`#0369A1` "achy ni lgg rye" (don't look good).
+- Reference: klrenovator.com — same vibrant palette used there.
+
+### Investigation (why colors were changed)
+- Session 001 implemented WCAG AA fix per forensic audit Part 4 B1: white on `#25D366` contrast 1.98:1 (needs 4.5:1). Migration to `#15803D` (5.01:1) / `#166534` (7.13:1) for green, `#0369A1` (5.94:1) for blue.
+- Node contrast check: `#25D366` vs white 1.98 FAIL, vs black 10.59 PASS; `#15803D` vs white 5.02 PASS. No vibrant green hits 4.5:1 with white.
+- Owner decision: prioritize brand recognizability / klrenovator.com consistency over strict AA for primary CTAs.
+
+### Tasks completed
+- ✅ **Color revert per owner + klrenovator.com**:
+  - Restored ~80 files from pre-S001 commit `b15640d33d9308fab4fb22c970cbccb35b910321` — sections, content, service grids, estimators, sticky bars, navbar, whatsapp button, `styles/globals.css`, `config/site.ts`.
+  - `config/site.ts`: back to original 3-color spec (`#25D366` primary, `#128C7E` hover, `#075E54` accent).
+  - `styles/globals.css`: `.btn-whatsapp` `#25D366`/`#128C7E`, `.btn-primary` `#0EA5E9`/`#075985`.
+  - `app/about/page.tsx`: kept dynamic count fix + bright colors.
+  - `app/error.tsx` / `global-error.tsx`: kept error-beacon + bright colors.
+  - Verified 0 × `15803D`/`166534`; `0369A1` only as hover/gradient (original pattern).
+- ✅ **Preserved S001 non-color fixes**: admin auth, error observability, dep cleanup, service-count dynamic, lint guard, type-check script, etc.
+- ✅ **Verification**: `npm run lint` 0/0, `type-check` PASS, `build` SUCCESS 4187 pages.
+
+### Files modified (~85)
+- Checkout from `b15640d`: see list in roadmap Phase 2 Session 002.
+- Manual edits: `app/about/page.tsx`, `app/error.tsx`, `app/global-error.tsx`, governance docs.
+
+### Current project status
+- 🔴 Critical: 0
+- 🟠 High: H1/H1b business override (vibrant brand restored), H2 field-data gated, H3 🔒 owner decision.
+- 🟡/🟢: preserved.
+- Build / lint / type-check: all green.
+
+### Remaining priorities
+1. H3 pilot decision.
+2. H2 checkpoint.
+3. Medium backlog.
+
+### Notes
+- Colors removed in S001 for WCAG AA (1.98:1→5.01:1). Owner prefers original vibrant brand per klrenovator.com. Revert implemented with full preservation of security/observability fixes.
+- AA palette recoverable from commit `3887cfd1e6ef400904b9e7c0ba19630876401d67`.
+
+---

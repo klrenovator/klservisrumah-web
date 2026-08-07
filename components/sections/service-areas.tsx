@@ -15,7 +15,7 @@ export function ServiceAreas() {
         
         {/* Header */}
         <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-bold text-[#0369A1] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
+          <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
             {t("home.serviceAreas.heading")}
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
@@ -34,8 +34,8 @@ export function ServiceAreas() {
               className="bg-slate-50 hover:bg-white border border-slate-100/60 hover:border-[#0EA5E9]/30 rounded-2xl p-5 shadow-3xs hover:shadow-sm transition-all duration-300 flex items-center justify-between group cursor-pointer"
             >
               <div className="flex items-center gap-4">
-                <div className="p-2.5 bg-white rounded-xl border border-slate-100 group-hover:bg-[#0369A1]/10 transition-colors shrink-0">
-                  <MapPin className="w-5 h-5 text-[#0369A1]" />
+                <div className="p-2.5 bg-white rounded-xl border border-slate-100 group-hover:bg-[#0EA5E9]/10 transition-colors shrink-0">
+                  <MapPin className="w-5 h-5 text-[#0EA5E9]" />
                 </div>
                 <div className="flex flex-col">
                   <span className="text-base font-bold text-[#075985] tracking-tight">{area.name}</span>
@@ -45,10 +45,10 @@ export function ServiceAreas() {
 
               <Link
                 href={`/areas/${area.slug}`}
-                className="p-2 bg-white rounded-xl border border-slate-100 group-hover:bg-[#0369A1] group-hover:text-white transition-colors"
+                className="p-2 bg-white rounded-xl border border-slate-100 group-hover:bg-[#0EA5E9] group-hover:text-white transition-colors"
                 aria-label={`${t("common.viewDetails")} ${area.name}`}
               >
-                <ArrowRight className="w-4 h-4 text-[#0369A1] group-hover:text-white group-hover:translate-x-0.5 transition-transform" />
+                <ArrowRight className="w-4 h-4 text-[#0EA5E9] group-hover:text-white group-hover:translate-x-0.5 transition-transform" />
               </Link>
             </div>
           ))}
@@ -64,7 +64,7 @@ export function ServiceAreas() {
             href={getWhatsAppLink({ location: "KL & Selangor" })}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#0369A1] hover:bg-[#075985] text-white text-xs font-bold px-5 py-3 rounded-xl transition-all duration-200 shadow-3xs"
+            className="bg-[#0EA5E9] hover:bg-[#075985] text-white text-xs font-bold px-5 py-3 rounded-xl transition-all duration-200 shadow-3xs"
           >
             {t("home.serviceAreas.askDispatch")}
           </a>

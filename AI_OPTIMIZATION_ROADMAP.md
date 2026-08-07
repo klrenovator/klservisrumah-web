@@ -41,12 +41,14 @@ All findings below were **independently re-verified in Session 001** against the
 
 ### 🟠 High
 
-- ✅ **[2026-08-07 / S001] H1. WCAG AA contrast failure — white text on `#25D366` WhatsApp green (1.98:1; needs ≥4.5:1)**
+- 🔄 **[2026-08-07 / S001 → S002 business override] H1. WCAG AA contrast failure — white text on `#25D366` WhatsApp green (1.98:1; needs ≥4.5:1) — REVERTED PER OWNER**
   - 47 files used bright `#25D366` behind white button text, including the sitewide sticky mobile WhatsApp bar (primary conversion element).
-  - **Fix:** button text-bearing surfaces moved to darker accessible WhatsApp green `#15803D` (5.01:1, AA ✓) with hover `#166534` (7.13:1, AAA ✓); `text-[#25D366]` (1.98:1 on white) → `text-[#15803D]`. Decorative/icon uses (pulse dot, shadows, white-filled icons whose shape is carried by the white fill) evaluated individually and kept on-brand; AA shades recorded as tokens in `config/site.ts` (`buttonGreen`/`buttonGreenHover`).
-- ✅ **[2026-08-07 / S001] H1b (NEW, found during this session's independent audit). The same WCAG failure existed across the sky-blue button family**
-  - The audit tabled `#0284C7` at 4.10:1 but prescribed no fix; small white text (`text-xs`/`text-sm`, incl. the sticky mobile bar's Call half and the booking form's continue button) fails strict AA at both 2.77:1 (`#0EA5E9`, incl. `.btn-primary`) and 4.10:1. 235 × `text-[#0EA5E9]` + 32 × `text-[#0284C7]` sitewide also failed (bright sky text fails even the 3:1 large-text bar at 2.77:1).
-  - **Fix:** systematic token migration — `bg-[#0EA5E9]`/`bg-[#0284C7]` text-bearing fills → `#0369A1` (5.94:1 AA ✓); hovers → `#075985` (7.56:1 AAA ✓); all `text-[#0EA5E9]`/`text-[#0284C7]` → `text-[#0369A1]`; `.btn-primary`/`.btn-whatsapp` globals updated; white-text gradient CTA endpoints `to-[#0EA5E9]`→`to-[#0369A1]`; checkbox indicators → `#0369A1`; the one dark-hero eyebrow chip (HomeCTA, navy background) → `text-[#BAE6FD]` (5.70:1 ✓); decorative tints/dots/blurs untouched. Context analysis (light vs dark surface) performed for every occurrence before changing it.
+  - **S001 Fix (AA):** button surfaces → `#15803D` (5.01:1 AA), hover `#166534` (7.13:1 AAA); `text-[#25D366]` → `text-[#15803D]`; tokens `buttonGreen`/`buttonGreenHover` in site.ts.
+  - **S002 Owner decision:** Owner reported new AA colors "achy ni lgg rye" and requested original vibrant colors per screenshot + klrenovator.com reference. **Reverted** to `#25D366` primary / `#128C7E` hover for WhatsApp, `#0EA5E9`/`#0284C7` for blue — 59 green + 386 blue occurrences restored. Business override documented; white-on-`#25D366` = 1.98:1 (fails AA) but matches official WhatsApp brand and klrenovator.com. Revert commit preserved in history (`f634a08` parent); AA palette available at `3887cfd`.
+- 🔄 **[2026-08-07 / S001 → S002 business override] H1b. Same WCAG failure across sky-blue button family — REVERTED PER OWNER**
+  - Audit tabled `#0284C7` at 4.10:1; `text-xs`/`text-sm` white on `#0EA5E9` = 2.77:1.
+  - **S001 Fix:** `bg-[#0EA5E9]`/`bg-[#0284C7]` → `#0369A1` (5.94:1), hovers → `#075985` (7.56:1), texts → `#0369A1`, etc.
+  - **S002 Owner decision:** Reverted to original vibrant `.btn-primary` `#0EA5E9`/`#075985`, secondary blue `#0284C7`/`#0369A1` hover, text accents `#0EA5E9`. Matches klrenovator.com "VIEW DETAILS & PRICING" blue. Same AA trade-off documented as H1.
 - 🟡 **H2. `/faq` and ~42 other pages over 256KB raw HTML (up to ~3MB)**
   - Status: **verified pre-mitigated; remainder 🔒 deliberate product decision.** Session 001 measurements (`next start` production server): `/faq` = 3.65 MB raw → **254 KB gzipped** on the wire (MS: 229 KB, ZH: 233 KB). The directory is server-rendered with native `<details>` accordions; the client search filter reads the live DOM, so the ~560-Q&A dataset is NOT duplicated into the client JS bundle or RSC props. The remaining raw size is intentionally-indexable content server-rendered for SEO/AEO. Paginating would trade indexable content for bytes — prior documented decision (`docs/bing-site-scan-2026-08-03.md`) is to keep it. Revisit **only** after real PageSpeed Insights/CrUX field data demonstrates actual CWV harm (measured, not estimated).
 - 🔒 **H3. Trilingual architecture gives MS/ZH content no separate crawlable URLs (~97% of page count)**
@@ -81,10 +83,28 @@ All findings below were **independently re-verified in Session 001** against the
 
 ## Phase 2 — Sessions
 
-### ✅ Session 001 — 2026-08-07 (this session)
+### ✅ Session 001 — 2026-08-07
 Objectives: scaffolding + full re-verification + fix all 🔴 and as many 🟠/🟡/🟢 as safely possible.
 Completed: Phase 0, C1, H1, M1–M5, M7, L1–L3, plus verification suite (lint / type-check / build / estimator tests / SEO snapshot).
 Remaining: H2 partial (field-data gated), H3 🔒 owner decision, M8 deferred.
+
+### ✅ Session 002 — 2026-08-07 (current)
+Objectives:
+- Address owner feedback on WhatsApp brand colors (reported as "achy ni lgg rye" after WCAG AA migration).
+- Restore original vibrant brand palette per klrenovator.com reference + screenshot provided.
+- Re-audit after revert; ensure build/lint/type-check remain green.
+- Continue from highest-priority remaining tasks (H2/H3/M8).
+
+Completed:
+- **WhatsApp colors reverted per owner request**: `bg-[#15803D]` → `bg-[#25D366]` (59 files), `hover:bg-[#166534]` → `hover:bg-[#128C7E]`, `.btn-whatsapp` globals restored to `#25D366`/`#128C7E`, `config/site.ts` whatsappColors back to original 3-color spec (`#25D366` primary, `#128C7E` hover, `#075E54` dark). Verified against `b15640d` (pre-S001 commit) + screenshot + klrenovator.com.
+- **Primary blue restored**: `bg-[#0369A1]` (AA-migrated) → original vibrant `#0EA5E9` / `#0284C7` with hover `#0369A1` / `#075985`; `text-[#0369A1]` → `text-[#0EA5E9]` (386 occurrences), `.btn-primary` back to `#0EA5E9` / `#075985`. Matches klrenovator.com "VIEW DETAILS & PRICING" vibrant blue.
+- Preserved non-color fixes from S001: admin server-auth (C1), error beacon (M1), dep cleanup (M2), service-count dynamic fix (M3) kept in `app/about/page.tsx`, `no-explicit-any` guard (M4), `type-check` script (M5), `DEFAULT_CONTENT_DATE` (L3), doc-comment fix (L2), `public/robots.txt` deletion (L1).
+- Verification: `npm install`, `npm run lint` 0/0, `npm run type-check` PASS, `npm run build` SUCCESS (4187 pages), no `15803D`/`166534` remaining; `#0369A1` only as intentional hover/gradient middle (original pattern).
+- Documented trade-off: original brand colors fail WCAG AA (white on `#25D366` = 1.98:1, blue `#0EA5E9` white = 2.77:1, `#0284C7` white = 4.10:1 fails small-text 4.5:1). Owner explicitly requested brand vibrancy over strict AA for primary CTAs — recorded as business override, not a bug. Accessibility otherwise maintained (focus-visible, ARIA, labels, skip-link, error reporting).
+Remaining: H2 field-data gated, H3 🔒 owner decision, M8 deferred — unchanged.
+
+Business note for H1:
+- ✅ S001 fixed AA (5.01:1 green, 5.94:1 blue) → ✅ S002 reverted to brand `#25D366`/`#0EA5E9` per owner (`klrenovator.com` reference). Status changed from "Fixed" to "Business override — owner prefers brand vibrancy; documented, not a regression". If AA is required later, use S001's `#15803D`/`#0369A1` mapping (still in git history: commit 3887cfd).
 
 ---
 

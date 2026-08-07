@@ -158,7 +158,7 @@ export function SubserviceDetailContent({ service, sub, baseService }: Subservic
               </h3>
               <p className="text-base text-[#475569] leading-relaxed">
                 {t("subserviceContent.pricingDescBefore", { name: sub.name })}{" "}
-                <b className="text-[#0369A1]">{sub.price}</b>
+                <b className="text-[#0EA5E9]">{sub.price}</b>
                 {t("subserviceContent.pricingDescAfter")}
               </p>
               <ul className="flex flex-col gap-2 mt-2">
@@ -279,7 +279,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
     <details className="group bg-white rounded-2xl border border-slate-200 hover:border-[#BAE6FD] transition-all overflow-hidden">
       <summary className="cursor-pointer list-none p-5 sm:p-6 flex items-center justify-between gap-4">
         <h3 className="text-base sm:text-lg font-extrabold text-[#075985]">{q}</h3>
-        <span className="text-2xl text-[#0369A1] font-bold shrink-0 transition-transform group-open:rotate-45">+</span>
+        <span className="text-2xl text-[#0EA5E9] font-bold shrink-0 transition-transform group-open:rotate-45">+</span>
       </summary>
       <div className="px-5 sm:px-6 pb-5 sm:pb-6 -mt-1">
         <p className="text-sm sm:text-base text-[#475569] leading-relaxed font-medium">{a}</p>

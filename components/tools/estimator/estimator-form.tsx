@@ -109,7 +109,7 @@ export function EstimatorForm({ spec, translator }: { spec: EstimatorSpec; trans
       <div className="sticky top-20 z-30 -mx-1 mb-5 px-1 sm:top-24">
         <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-sky-200 bg-white/95 px-4 py-3 shadow-[0_10px_30px_-12px_rgba(2,31,68,0.35)] backdrop-blur">
           <div className="min-w-0">
-            <span className="flex items-center gap-1.5 text-[10px] font-black uppercase tracking-widest text-[#0369A1]">
+            <span className="flex items-center gap-1.5 text-[10px] font-black uppercase tracking-widest text-[#0EA5E9]">
               <Sparkles className="h-3.5 w-3.5" /> {t("estimator.form.liveEstimate")}
             </span>
             <p className="mt-0.5 text-2xl font-black leading-none text-[#075985]">{formatMYR(result.price)}</p>
@@ -128,7 +128,7 @@ export function EstimatorForm({ spec, translator }: { spec: EstimatorSpec; trans
           <button
             type="button"
             onClick={showResult}
-            className="inline-flex min-h-12 shrink-0 items-center justify-center gap-2 rounded-xl bg-[#0369A1] px-5 py-3 text-sm font-black text-white shadow-lg shadow-sky-500/25 transition hover:bg-[#075985]"
+            className="inline-flex min-h-12 shrink-0 items-center justify-center gap-2 rounded-xl bg-[#0EA5E9] px-5 py-3 text-sm font-black text-white shadow-lg shadow-sky-500/25 transition hover:bg-[#075985]"
           >
             {ready ? t("estimator.form.seeBreakdown") : t("estimator.form.answerMore", { n: outstanding.length })}
           </button>
@@ -165,7 +165,7 @@ export function EstimatorForm({ spec, translator }: { spec: EstimatorSpec; trans
                 </span>
               </span>
               <ChevronDown
-                className={`h-5 w-5 shrink-0 text-[#0369A1] transition-transform ${showAdvanced ? "rotate-180" : ""}`}
+                className={`h-5 w-5 shrink-0 text-[#0EA5E9] transition-transform ${showAdvanced ? "rotate-180" : ""}`}
               />
             </button>
             {showAdvanced ? (
@@ -202,7 +202,7 @@ export function EstimatorForm({ spec, translator }: { spec: EstimatorSpec; trans
         <button
           type="button"
           onClick={showResult}
-          className="inline-flex min-h-13 flex-1 items-center justify-center gap-2 rounded-2xl bg-[#0369A1] px-6 py-3.5 text-sm font-black text-white shadow-lg shadow-sky-500/25 transition hover:bg-[#075985] sm:flex-none sm:px-10"
+          className="inline-flex min-h-13 flex-1 items-center justify-center gap-2 rounded-2xl bg-[#0EA5E9] px-6 py-3.5 text-sm font-black text-white shadow-lg shadow-sky-500/25 transition hover:bg-[#075985] sm:flex-none sm:px-10"
         >
           {ready ? t("estimator.form.seeFullEstimate") : t("estimator.form.showLeft")}
         </button>
@@ -274,7 +274,7 @@ function QuestionCard({
         className="flex items-start gap-2.5 text-lg font-black leading-tight text-[#075985] sm:text-xl"
       >
         {index ? (
-          <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#E0F2FE] text-xs font-black text-[#0369A1]">
+          <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#E0F2FE] text-xs font-black text-[#0284C7]">
             {index}
           </span>
         ) : step.icon ? (

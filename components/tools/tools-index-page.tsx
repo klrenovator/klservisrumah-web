@@ -202,12 +202,12 @@ export function ToolsIndexPage({
                     loading={index < 2 ? "eager" : "lazy"}
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <span className="absolute left-3 top-3 rounded-full bg-white/95 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-[#0369A1] backdrop-blur">
+                  <span className="absolute left-3 top-3 rounded-full bg-white/95 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-[#0284C7] backdrop-blur">
                     {copy.minutesBadge(tool.estimatedMinutes)}
                   </span>
                 </div>
                 <div className="flex flex-1 flex-col p-6">
-                  <h2 className="text-lg font-black leading-tight text-[#075985] group-hover:text-[#0369A1]">
+                  <h2 className="text-lg font-black leading-tight text-[#075985] group-hover:text-[#0EA5E9]">
                     {tool.name}
                   </h2>
                   <p className="mt-2 flex-1 text-sm font-semibold leading-relaxed text-slate-600">{tool.metaDesc}</p>
@@ -219,7 +219,7 @@ export function ToolsIndexPage({
                       </div>
                     ))}
                   </dl>
-                  <span className="mt-5 inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-[#0369A1] transition-all group-hover:gap-3">
+                  <span className="mt-5 inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-[#0EA5E9] transition-all group-hover:gap-3">
                     {copy.startEstimating} <ArrowRight className="h-3.5 w-3.5" />
                   </span>
                 </div>
@@ -235,7 +235,7 @@ export function ToolsIndexPage({
                 href={getWhatsAppLink({ service: copy.waCustomService })}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-5 inline-flex items-center justify-center gap-2 rounded-2xl bg-[#15803D] px-5 py-3.5 text-sm font-black text-white transition hover:bg-[#166534]"
+                className="mt-5 inline-flex items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-5 py-3.5 text-sm font-black text-white transition hover:bg-[#128C7E]"
               >
                 <MessageSquare className="h-4 w-4" /> {copy.ctaQuote}
               </a>
@@ -291,7 +291,7 @@ export function ToolsIndexPage({
                     {faq.q}
                     <span
                       aria-hidden="true"
-                      className="mt-0.5 shrink-0 text-[#0369A1] transition-transform group-open:rotate-180"
+                      className="mt-0.5 shrink-0 text-[#0EA5E9] transition-transform group-open:rotate-180"
                     >
                       ▾
                     </span>

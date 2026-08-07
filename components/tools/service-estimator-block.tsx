@@ -61,7 +61,7 @@ export function ServiceEstimatorBlock({
       <section className="section-tight bg-gradient-to-b from-sky-50/60 to-white">
         <div className="container-narrow">
           <div className="overflow-hidden rounded-3xl border border-sky-200 bg-white shadow-[0_18px_50px_-30px_rgba(2,31,68,0.35)]">
-            <div className="bg-gradient-to-br from-[#075985] to-[#0369A1] p-6 text-white sm:p-8">
+            <div className="bg-gradient-to-br from-[#075985] to-[#0EA5E9] p-6 text-white sm:p-8">
               <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1.5 text-[11px] font-black uppercase tracking-widest backdrop-blur">
                 <Sparkles className="h-3.5 w-3.5" /> {t("serviceEstimator.eyebrow")}
               </span>
@@ -114,7 +114,7 @@ export function ServiceEstimatorBlock({
         </div>
 
         <p className="mt-4 flex gap-2.5 text-xs font-bold leading-relaxed text-slate-500">
-          <Info className="mt-0.5 h-4 w-4 shrink-0 text-[#0369A1]" aria-hidden="true" />
+          <Info className="mt-0.5 h-4 w-4 shrink-0 text-[#0EA5E9]" aria-hidden="true" />
           <span>{t("serviceEstimator.disclaimerShort")}</span>
         </p>
 

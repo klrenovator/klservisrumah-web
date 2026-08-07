@@ -33,7 +33,7 @@ export default function ChineseBlogHub() {
       <section className="bg-gradient-to-b from-[#F8FAFC] via-white to-white border-b border-slate-100 py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto">
-            <span className="text-xs font-bold text-[#0369A1] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
+            <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
               <BookOpen className="w-3.5 h-3.5 inline mr-1" />
               知识中心
             </span>
@@ -44,7 +44,7 @@ export default function ChineseBlogHub() {
               来自KL Servis Rumah的实用家居维护建议——吉隆坡和雪兰莪值得信赖的住宅服务专家。
             </p>
             <div className="flex items-center gap-4 mt-2">
-              <a href={getWhatsAppLink()} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#15803D] hover:bg-[#166534] text-white font-extrabold text-sm px-6 py-3 rounded-xl transition-all duration-200 shadow-sm">
+              <a href={getWhatsAppLink()} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white font-extrabold text-sm px-6 py-3 rounded-xl transition-all duration-200 shadow-sm">
                 <MessageSquare className="w-4 h-4" />
                 <span>WhatsApp 咨询</span>
               </a>
@@ -59,7 +59,7 @@ export default function ChineseBlogHub() {
 
       <nav aria-label="Breadcrumb" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 text-sm">
         <ol className="flex items-center gap-2 text-[#475569]">
-          <li><Link href="/" className="hover:text-[#0369A1]">首页</Link></li>
+          <li><Link href="/" className="hover:text-[#0EA5E9]">首页</Link></li>
           <li className="text-slate-300">/</li>
           <li className="font-semibold text-[#075985]">博客</li>
         </ol>
@@ -70,16 +70,16 @@ export default function ChineseBlogHub() {
           {featured && (
             <div className="mb-16">
               <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-10">
-                <span className="text-xs font-bold text-[#0369A1] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">精选文章</span>
+                <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">精选文章</span>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-[#075985] tracking-tight">专家最新分享</h2>
               </div>
               <Link href={`/zh/bo-ke/${featured.zh.slug}`} className="block bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-sm hover:shadow-lg hover:border-[#0EA5E9]/20 transition-all duration-300 group">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                   <div className="flex flex-col gap-4">
-                    <span className="text-[10px] font-bold text-[#0369A1] bg-[#0EA5E9]/10 px-2.5 py-0.5 rounded-md uppercase tracking-wider w-fit">{featured.zh.category}</span>
-                    <h3 className="text-xl sm:text-2xl font-extrabold text-[#075985] tracking-tight group-hover:text-[#0369A1] transition-colors leading-snug">{featured.zh.title}</h3>
+                    <span className="text-[10px] font-bold text-[#0EA5E9] bg-[#0EA5E9]/10 px-2.5 py-0.5 rounded-md uppercase tracking-wider w-fit">{featured.zh.category}</span>
+                    <h3 className="text-xl sm:text-2xl font-extrabold text-[#075985] tracking-tight group-hover:text-[#0EA5E9] transition-colors leading-snug">{featured.zh.title}</h3>
                     <p className="text-sm text-[#475569] leading-relaxed font-medium">{featured.zh.excerpt}</p>
-                    <span className="inline-flex items-center gap-1.5 text-sm font-bold text-[#0369A1] group-hover:text-[#075985]">
+                    <span className="inline-flex items-center gap-1.5 text-sm font-bold text-[#0EA5E9] group-hover:text-[#075985]">
                       <span>阅读完整指南</span>
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </span>
@@ -93,7 +93,7 @@ export default function ChineseBlogHub() {
           )}
 
           <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-10">
-            <span className="text-xs font-bold text-[#0369A1] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">所有文章</span>
+            <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">所有文章</span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#075985] tracking-tight">更多指南与贴士</h2>
           </div>
 
@@ -102,17 +102,17 @@ export default function ChineseBlogHub() {
               <Link key={original.slug} href={`/zh/bo-ke/${zh.slug}`} className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-sm hover:shadow-lg hover:border-[#0EA5E9]/20 transition-all duration-300 flex flex-col justify-between group">
                 <div className="flex flex-col gap-4">
                   <div className="flex items-center justify-between">
-                    <span className="text-[10px] font-bold text-[#0369A1] bg-[#0EA5E9]/10 px-2.5 py-0.5 rounded-md uppercase tracking-wider">{zh.category}</span>
+                    <span className="text-[10px] font-bold text-[#0EA5E9] bg-[#0EA5E9]/10 px-2.5 py-0.5 rounded-md uppercase tracking-wider">{zh.category}</span>
                     <span className="text-xs text-slate-300 font-semibold">{original.date}</span>
                   </div>
-                  <h3 className="text-xl font-extrabold text-[#075985] tracking-tight group-hover:text-[#0369A1] transition-colors leading-snug">{zh.title}</h3>
+                  <h3 className="text-xl font-extrabold text-[#075985] tracking-tight group-hover:text-[#0EA5E9] transition-colors leading-snug">{zh.title}</h3>
                   <p className="text-xs sm:text-sm text-[#475569] leading-relaxed font-medium">{zh.excerpt}</p>
                   <div className="flex items-center gap-4 text-xs font-bold text-[#475569] mt-2">
-                    <div className="flex items-center gap-1"><Clock className="w-4 h-4 text-[#0369A1]" /><span>{original.readTime}</span></div>
+                    <div className="flex items-center gap-1"><Clock className="w-4 h-4 text-[#0EA5E9]" /><span>{original.readTime}</span></div>
                   </div>
                 </div>
                 <div className="mt-6 pt-4 border-t border-slate-50 flex justify-end">
-                  <span className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0369A1] group-hover:text-[#075985]">
+                  <span className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0EA5E9] group-hover:text-[#075985]">
                     <span>阅读文章</span>
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </span>

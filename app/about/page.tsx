@@ -63,7 +63,7 @@ export default function AboutPage() {
                 href={getWhatsAppLink()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#15803D] hover:bg-[#166534] text-white font-extrabold text-sm px-6 py-3 rounded-xl transition-all duration-200 shadow-sm"
+                className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white font-extrabold text-sm px-6 py-3 rounded-xl transition-all duration-200 shadow-sm"
               >
                 <MessageSquare className="w-4 h-4" />
                 <span>WhatsApp Us</span>
@@ -81,7 +81,7 @@ export default function AboutPage() {
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 max-w-4xl mx-auto">
             <div className="flex flex-col items-center gap-2 p-4 bg-white rounded-2xl border border-slate-100">
-              <Users className="w-6 h-6 text-[#0369A1]" />
+              <Users className="w-6 h-6 text-[#0EA5E9]" />
               <span className="text-2xl font-extrabold text-[#075985]">1,200+</span>
               <span className="text-xs text-[#475569] font-semibold">Projects Completed</span>
             </div>

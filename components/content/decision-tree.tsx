@@ -43,7 +43,7 @@ const classNameForLevel: Record<DecisionLevel, string> = {
 };
 
 const tagColorForLevel: Record<DecisionLevel, string> = {
-  recommended: "bg-[#0369A1] text-white",
+  recommended: "bg-[#0EA5E9] text-white",
   lighter: "bg-[#BAE6FD] text-[#075985]",
   urgent: "bg-rose-100 text-rose-700"
 };
@@ -85,7 +85,7 @@ export function DecisionTree({ title, options, tagLabels }: DecisionTreeProps) {
               </p>
               {option.compareService && (
                 <div className="mt-4 pt-3 border-t border-slate-100 flex items-center gap-2 text-xs font-bold text-[#475569]">
-                  <ArrowRight className="w-3.5 h-3.5 text-[#0369A1]" />
+                  <ArrowRight className="w-3.5 h-3.5 text-[#0EA5E9]" />
                   <span>{option.compareAction} <b className="text-[#075985]">{option.compareService}</b></span>
                 </div>
               )}

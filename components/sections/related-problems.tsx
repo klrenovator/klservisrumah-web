@@ -76,7 +76,7 @@ export function RelatedProblems({ serviceSlug, maxItems = 4 }: RelatedProblemsPr
           <div className="mt-8 text-center">
             <Link
               href="/problems"
-              className="inline-flex items-center gap-2 text-sm font-bold text-[#0369A1] hover:text-[#075985] transition-colors"
+              className="inline-flex items-center gap-2 text-sm font-bold text-[#0EA5E9] hover:text-[#075985] transition-colors"
             >
               {t("internalLinks.viewAllProblems")} <ArrowRight className="w-4 h-4" />
             </Link>

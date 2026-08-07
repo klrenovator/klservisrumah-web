@@ -4,7 +4,7 @@ import { MapPin } from "lucide-react";
 export function CaseStudyCard({ title, location, result }: { title: string; location: string; result: string }) {
   return (
     <article className="rounded-3xl border border-slate-100 bg-white p-5 shadow-xs">
-      <div className="mb-3 flex items-center gap-2 text-xs font-bold text-[#0369A1]">
+      <div className="mb-3 flex items-center gap-2 text-xs font-bold text-[#0EA5E9]">
         <MapPin className="h-4 w-4" /> {location}
       </div>
       <h3 className="text-lg font-extrabold text-[#075985]">{title}</h3>

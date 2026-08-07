@@ -114,7 +114,7 @@ function Control({
                     </span>
                   ) : null}
                   {choice.price ? (
-                    <span className="mt-1 block text-xs font-black text-[#0369A1]">{choice.price}</span>
+                    <span className="mt-1 block text-xs font-black text-[#0EA5E9]">{choice.price}</span>
                   ) : null}
                 </span>
                 {choice.popular && !active ? (
@@ -123,7 +123,7 @@ function Control({
                   </span>
                 ) : null}
                 {active ? (
-                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#0369A1] text-white">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#0EA5E9] text-white">
                     <Check className="h-3.5 w-3.5" strokeWidth={3} />
                   </span>
                 ) : null}
@@ -196,7 +196,7 @@ function Control({
                 <span
                   aria-hidden="true"
                   className={`flex h-5 w-5 shrink-0 items-center justify-center rounded-md border-2 transition ${
-                    active ? "border-[#0369A1] bg-[#0369A1] text-white" : "border-slate-300 bg-white"
+                    active ? "border-[#0EA5E9] bg-[#0EA5E9] text-white" : "border-slate-300 bg-white"
                   }`}
                 >
                   {active ? <Check className="h-3 w-3" strokeWidth={3.5} /> : null}
@@ -230,7 +230,7 @@ function Control({
               {field.min}
               {field.format ? "" : ""}
             </span>
-            <span className="rounded-full bg-sky-50 px-3.5 py-1.5 text-sm font-black text-[#0369A1]">
+            <span className="rounded-full bg-sky-50 px-3.5 py-1.5 text-sm font-black text-[#0284C7]">
               {field.format ? field.format(value) : value}
             </span>
             <span className="text-xs font-bold uppercase tracking-wider text-slate-500">{field.max}</span>
@@ -325,7 +325,7 @@ function Control({
           </span>
           <span
             aria-hidden="true"
-            className={`relative h-7 w-12 rounded-full transition ${active ? "bg-[#0369A1]" : "bg-slate-300"}`}
+            className={`relative h-7 w-12 rounded-full transition ${active ? "bg-[#0EA5E9]" : "bg-slate-300"}`}
           >
             <span
               className={`absolute top-1 h-5 w-5 rounded-full bg-white shadow transition-all ${

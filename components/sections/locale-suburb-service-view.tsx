@@ -63,7 +63,7 @@ export function LocaleSuburbServiceView({
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-12 lg:px-8">
           <div className="lg:col-span-8 flex flex-col gap-8">
             <div>
-              <span className="inline-flex items-center gap-2 rounded-full bg-[#E0F2FE] px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-[#0369A1]">
+              <span className="inline-flex items-center gap-2 rounded-full bg-[#E0F2FE] px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-[#0284C7]">
                 <MapPin className="h-4 w-4" /> {suburbName}
               </span>
               <h1 className="mt-4 text-3xl font-extrabold text-[#075985] sm:text-5xl">
@@ -100,7 +100,7 @@ export function LocaleSuburbServiceView({
                 {service.subServices.map((sub) => (
                   <div key={sub.name} className="rounded-2xl bg-slate-50 p-4">
                     <h3 className="font-extrabold text-[#075985]">{sub.name}</h3>
-                    <p className="text-sm font-bold text-[#0369A1]">{sub.price}</p>
+                    <p className="text-sm font-bold text-[#0EA5E9]">{sub.price}</p>
                     <p className="mt-1 text-xs font-semibold text-[#475569]">{sub.desc}</p>
                   </div>
                 ))}
@@ -136,14 +136,14 @@ export function LocaleSuburbServiceView({
           </div>
 
           <aside className="lg:col-span-4">
-            <div className="sticky top-28 rounded-3xl bg-[#0369A1] p-6 text-white shadow-xl">
+            <div className="sticky top-28 rounded-3xl bg-[#0284C7] p-6 text-white shadow-xl">
               <h2 className="text-2xl font-extrabold">{t("location.bookIn", { area: suburbName })}</h2>
               <p className="mt-2 text-sm font-semibold text-blue-50">{t("location.bookInBodySuburb")}</p>
               <a
                 href={getWhatsAppLink({ service: serviceBundle.en.title, location: suburbName })}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#15803D] px-5 py-3 text-sm font-extrabold text-white"
+                className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white"
               >
                 <MessageCircle className="h-4 w-4" /> {t("location.whatsappDispatch")}
               </a>

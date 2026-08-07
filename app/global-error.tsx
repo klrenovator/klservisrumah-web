@@ -35,9 +35,8 @@ export default function GlobalError({ error, reset }: { error: Error & { digest?
           <section style={{ maxWidth: 620, textAlign: "center" }}>
             <h1 style={{ color: "#075985", fontSize: 36, marginBottom: 12 }}>KL Servis Rumah is temporarily unavailable</h1>
             <p style={{ color: "#475569", lineHeight: 1.7 }}>Please try again. If the issue continues, contact our dispatch desk through the contact page.</p>
-            {/* #0284C7 measured 4.10:1 against white ( WCAG AA small-text fail );
-                #0369A1 passes at 5.94:1. */}
-            <button onClick={reset} style={{ marginTop: 24, background: "#0369A1", color: "white", border: 0, borderRadius: 12, padding: "12px 18px", fontWeight: 800 }}>Try again</button>
+            {/* Brand colors restored per owner request (klrenovator.com reference). Original vibrant #0284C7/#25D366. */}
+            <button onClick={reset} style={{ marginTop: 24, background: "#0284C7", color: "white", border: 0, borderRadius: 12, padding: "12px 18px", fontWeight: 800 }}>Try again</button>
           </section>
         </main>
       </body>
