@@ -61,10 +61,13 @@ export default async function BlogPostSlugPage(props: { params: Promise<{ slug: 
 
   const waLink = getWhatsAppLink({ service: post.category });
 
-  // Related posts for internal linking
-  const relatedPosts = blogPosts
-    .filter((p) => p.slug !== post.slug && p.category === post.category)
-    .slice(0, 3);
+  // Circular selection gives every article equal inlinks instead of repeatedly
+  // favouring the first posts in a category. These guides remain adjacent in
+  // the same home-maintenance knowledge hub, so each is contextually useful.
+  const currentIndex = blogPosts.findIndex((candidate) => candidate.slug === post.slug);
+  const relatedPosts = Array.from({ length: Math.min(6, blogPosts.length - 1) }, (_, offset) => (
+    blogPosts[(currentIndex + offset + 1) % blogPosts.length]
+  ));
 
   return (
     <>
@@ -153,7 +156,7 @@ export default async function BlogPostSlugPage(props: { params: Promise<{ slug: 
                 Related Articles
               </span>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-[#075985] tracking-tight">
-                More {post.category} Guides
+                More Home Maintenance Guides
               </h2>
             </div>
 

@@ -46,6 +46,12 @@ export default async function ChineseArticle({ params }: { params: Promise<{ slu
   if (!result) notFound();
   const { original, post, englishSlug } = result;
   const msPost = blogI18n[englishSlug]?.ms;
+  const localizedPosts = Object.entries(blogI18n)
+    .flatMap(([sourceSlug, locales]) => locales.zh ? [{ englishSlug: sourceSlug, post: locales.zh }] : []);
+  const currentIndex = localizedPosts.findIndex((entry) => entry.englishSlug === englishSlug);
+  const relatedPosts = Array.from({ length: Math.min(6, localizedPosts.length - 1) }, (_, offset) => (
+    localizedPosts[(currentIndex + offset + 1) % localizedPosts.length]
+  ));
 
   const contentHtml = post.content
     .split("\n\n")
@@ -98,6 +104,20 @@ export default async function ChineseArticle({ params }: { params: Promise<{ slu
             <div className="flex items-center gap-1"><Clock className="w-4 h-4 text-[#0EA5E9]" /><span>{original.readTime}</span></div>
           </div>
           <div className="mt-8 prose-article" dangerouslySetInnerHTML={{ __html: contentHtml }} />
+          <section className="mt-12" aria-labelledby="related-articles">
+            <h2 id="related-articles" className="text-2xl font-extrabold text-[#075985]">更多您可能需要的文章</h2>
+            <p className="mt-2 text-sm font-semibold text-[#475569]">浏览 KL Servis Rumah 团队编写的更多住宅指南。</p>
+            <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {relatedPosts.map((related) => (
+                <Link key={related.englishSlug} href={localizedBlogPath("zh", related.post.slug)} className="rounded-2xl border border-slate-100 bg-slate-50 p-5 transition hover:-translate-y-0.5 hover:border-[#0EA5E9]/30 hover:shadow-md">
+                  <span className="text-xs font-bold text-[#0EA5E9]">{related.post.category}</span>
+                  <h3 className="mt-2 font-extrabold text-[#075985]">{related.post.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-[#475569]">{related.post.excerpt}</p>
+                </Link>
+              ))}
+            </div>
+          </section>
+
           <aside className="mt-12 rounded-2xl bg-slate-50 p-6 sm:p-8">
             <h2 className="text-xl font-extrabold text-[#075985]">需要{post.category}帮助？</h2>
             <p className="mt-2 text-slate-600">联系我们在吉隆坡和雪兰莪的团队，获取免费报价。</p>

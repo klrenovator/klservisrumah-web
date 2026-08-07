@@ -3,7 +3,7 @@
 import React from "react";
 import { AlertTriangle, Clock3, MessageCircle } from "lucide-react";
 import type { Locale } from "@/lib/i18n";
-import type { LocaleMap, ServiceBundleEntry } from "@/lib/location-bundles";
+import type { LocaleMap, ServiceBundleEntry, ServiceLinkEntry } from "@/lib/location-bundles";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { useLang } from "@/context/lang-context";
 import { useTranslations } from "@/hooks/use-translations";
@@ -12,6 +12,7 @@ import { getWhatsAppLink } from "@/lib/whatsapp";
 type LocaleServiceEmergencyViewProps = {
   slug: string;
   bundle: LocaleMap<ServiceBundleEntry>;
+  relatedServices: ServiceLinkEntry[];
   coverageAreaNames: LocaleMap<string[]>;
 };
 
@@ -27,6 +28,7 @@ const emergencySteps = [1, 2, 3] as const;
 export function LocaleServiceEmergencyView({
   slug,
   bundle,
+  relatedServices,
   coverageAreaNames
 }: LocaleServiceEmergencyViewProps) {
   const { lang } = useLang();
@@ -88,6 +90,30 @@ export function LocaleServiceEmergencyView({
               ))}
             </div>
           </div>
+
+          <section className="mt-10" aria-labelledby="emergency-related-services">
+            <h2 id="emergency-related-services" className="text-2xl font-extrabold text-[#075985]">
+              {t("serviceDetail.otherServicesHeading")}
+            </h2>
+            <p className="mt-2 max-w-3xl text-sm font-semibold leading-relaxed text-[#475569]">
+              {t("serviceDetail.otherServicesSub")}
+            </p>
+            <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {relatedServices.map((relatedBundle) => {
+                const title = relatedBundle.titles[locale] ?? relatedBundle.titles.en;
+                return (
+                  <a
+                    key={relatedBundle.href}
+                    href={relatedBundle.href}
+                    className="rounded-2xl border border-slate-100 bg-white p-5 shadow-xs transition hover:-translate-y-0.5 hover:border-[#0EA5E9]/30 hover:shadow-md"
+                  >
+                    <h3 className="font-extrabold text-[#075985]">{title}</h3>
+                    <span className="mt-2 inline-flex text-sm font-bold text-[#0EA5E9]">{t("common.viewDetails")}</span>
+                  </a>
+                );
+              })}
+            </div>
+          </section>
 
           <div className="mt-10 rounded-3xl bg-[#0284C7] p-6 text-white sm:p-8">
             <h2 className="text-2xl font-extrabold">{t("emergencyPage.ctaHeading")}</h2>

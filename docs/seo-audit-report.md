@@ -1,6 +1,6 @@
 # SEO Audit Report
 
-Generated: 2026-08-07T13:23:16.089Z
+Generated: 2026-08-07T13:48:40.152Z
 
 ## Route Inventory
 
