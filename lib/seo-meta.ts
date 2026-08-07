@@ -188,9 +188,21 @@ export function absoluteUrl(path: string): string {
  * self-referencing. Pointing `ms-MY` at `/ms/...` was actively harmful: those URLs
  * 301-redirect to the English path, and Google drops hreflang clusters whose
  * targets redirect.
+ *
+ * `omitLanguages` strips the `languages` field and ships `canonical` only. This
+ * is the correct shape for a page that canonicalises to another URL — Google's
+ * hreflang docs are explicit: "If page A points to page B via `rel=canonical`,
+ * the canonical tag overrides hreflang on page A." So the canonicalised page
+ * must NOT emit hreflang (the canonical page does). Every 1,036 suburb pages
+ * and 28 cost pages were emitting a 4-lang hreflang cluster pointing at their
+ * canonical, which Google silently dropped from the cluster and which
+ * third-party hreflang validators flag as a defect.
  */
-export function buildAlternates(path: string) {
+export function buildAlternates(path: string, omitLanguages = false) {
   const url = absoluteUrl(path);
+  if (omitLanguages) {
+    return { canonical: url };
+  }
   return {
     canonical: url,
     languages: {
@@ -271,8 +283,11 @@ export function buildMetadata({
   const imageUrl = image.startsWith("http") ? image : `${SITE_URL}${image.startsWith("/") ? image : `/${image}`}`;
 
   // A genuine multilingual cluster (the MS/ZH tool pages) links its three
-  // sibling URLs. Everything else keeps the self-referencing cluster because
-  // its languages share one URL.
+  // sibling URLs. A page that points its canonical at a different URL must
+  // NOT emit hreflang at all (Google: canonical overrides hreflang, and
+  // emitting both creates a cluster the canonical does not reciprocate).
+  // Every other route keeps the self-referencing cluster because its
+  // languages share one URL.
   const alternates = languageUrls
     ? {
         canonical: url,
@@ -283,7 +298,12 @@ export function buildMetadata({
           "x-default": absoluteUrl(languageUrls.en),
         },
       }
-    : buildAlternates(canonicalPath ?? path);
+    : buildAlternates(
+        canonicalPath ?? path,
+        // Omit hreflang when this page is canonicalised to a different URL.
+        // The canonical page is responsible for the multilingual cluster.
+        canonicalPath != null && canonicalPath !== path
+      );
 
   return {
     title: finalTitle,
