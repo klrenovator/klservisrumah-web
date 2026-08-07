@@ -103,7 +103,7 @@ export default async function MalayArticle({ params }: { params: Promise<{ slug:
           <aside className="mt-12 rounded-2xl bg-slate-50 p-6 sm:p-8">
             <h2 className="text-xl font-extrabold text-[#075985]">Perlukan bantuan {post.category.toLowerCase()}?</h2>
             <p className="mt-2 text-slate-600">Dapatkan sebut harga percuma daripada pasukan kami di KL dan Selangor.</p>
-            <a className="mt-4 inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-bold text-white hover:bg-[#128C7E] transition-colors" href={getWhatsAppLink({ service: original.category })} target="_blank" rel="noopener noreferrer">
+            <a className="mt-4 inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-bold text-white hover:bg-[#128C7E] transition-colors" href={getWhatsAppLink({ service: original.category, lang: "ms" })} target="_blank" rel="noopener noreferrer">
               <MessageSquare className="h-4 w-4" /> WhatsApp kami
             </a>
           </aside>

@@ -563,7 +563,8 @@
       }
     },
     "confirmedAfterScope": "Confirmed after scope check",
-    "taskUnit": "task"
+    "taskUnit": "task",
+    "whatsappService": "pricing quote"
   },
   "notFound": {
     "badge": "404 page not found",
@@ -581,7 +582,8 @@
     "title": "Get a transparent fixed-price quote first",
     "body": "Send photos and your area on WhatsApp. We will confirm scope, price factors, and available service slots before any work begins.",
     "cta": "WhatsApp for Quote",
-    "closeAria": "Close popup"
+    "closeAria": "Close popup",
+    "whatsappService": "fixed-price home service quote"
   },
   "breadcrumbs": {
     "home": "Home",
@@ -1455,5 +1457,8 @@
   "a11y": {
     "skipToContent": "Skip to main content",
     "mainContent": "Main content"
+  },
+  "servicesIndex": {
+    "whatsappService": "home services"
   }
 }

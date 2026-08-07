@@ -345,3 +345,15 @@ Priority-ordered remaining work:
 3. 🔒 items require owner input — document, do not silently force.
 4. After every fix: run `npm run lint`, `npm run type-check`, `npm run build` (+ relevant generators/tests) before marking ✅.
 5. Append to `SESSION_LOG.md` at session end. Never overwrite history.
+
+### ✅ Session 008 — 2026-08-07
+Objectives: locale-aware WhatsApp messages — close the trilingual gap on the primary conversion element.
+
+- ✅ **[2026-08-07 / S008] N11. WhatsApp messages were always English regardless of visitor locale**
+  - `getWhatsAppLink()` always generated English pre-filled messages even on MS/ZH pages, and passed English-only service/location names from localized bundles.
+  - **Fix:** `lib/whatsapp.ts` rewritten — added `lang?: Locale` parameter with translated templates for all three locales (EN/MS/ZH). 36 of 48 call sites updated to pass `lang` + localized service/location names. Remaining 12 are EN-only routes (`/about`, `/blog`, `/faq`, `/projects`, `/tools`, `/answers`, `/brands`, `/problems`, `/error`) where English is correct.
+  - **Components updated (24 files):** `locale-area-service-view`, `locale-area-view`, `locale-near-me-hub`, `locale-near-me-view`, `locale-problem-view`, `locale-pricing-content`, `locale-suburb-service-view`, `locale-service-cost-view`, `locale-service-emergency-view`, `locale-service-page`, `locale-services-index`, `whatsapp-button`, `exit-intent-popup`, `home-cta`, `hero`, `services-grid`, `not-sure-section`, `service-areas`, `service-detail-hero`, `subservice-detail-hero`, `sticky-mobile-whatsapp-bar`, `sticky-book-button`, `navbar`, `locale-not-found-content`, `generic-content-page`, `tool-page`, `content-hub-page` (EN-only), `tools-index-page` (EN-only), `project-gallery` (EN-only).
+  - **MS/ZH localized pages** (`app/ms/blog/*`, `app/ms/soalan-lazim`, `app/zh/bo-ke/*`, `app/zh/chang-jian-wen-ti`) pass hardcoded locale.
+  - **3 new dictionary keys** × 3 locales (1,058 keys total, perfect parity): `pricingPage.whatsappService`, `exitPopup.whatsappService`, `servicesIndex.whatsappService`.
+  - **Verified:** Build 4,245 pages SUCCESS. Lint 0/0. Type-check PASS. Estimator tests 231,501 assertions PASS. Dictionary parity 1,058 × 3 locales (0 missing/empty). SEO audit clean. Production-server smoke test confirmed Malay messages on `/ms/services/painting` ("Salam KL Servis Rumah!..."), Chinese messages on `/zh/services/painting` ("您好 KL Servis Rumah！..."), English on EN pages.
+

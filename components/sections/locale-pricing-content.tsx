@@ -176,7 +176,7 @@ export function LocalePricingContent() {
               {t("pricingPage.whatsappBox.body")}
             </p>
             <a
-              href={getWhatsAppLink({ service: "pricing quote" })}
+              href={getWhatsAppLink({ service: t("pricingPage.whatsappService"), lang })}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white transition hover:bg-[#128C7E]"

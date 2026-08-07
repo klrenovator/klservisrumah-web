@@ -5,9 +5,11 @@ import { MessageSquare } from "lucide-react";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
 import { useTranslations } from "@/hooks/use-translations";
+import { useLang } from "@/context/lang-context";
 
 export function HomeCTA() {
   const t = useTranslations();
+  const { lang } = useLang();
 
   return (
     <section className="bg-gradient-to-r from-[#075985] to-[#0369A1] py-20 border-t border-[#0EA5E9]/30 text-white relative overflow-hidden">
@@ -26,7 +28,7 @@ export function HomeCTA() {
 
         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mt-2">
           <a
-            href={getWhatsAppLink()}
+            href={getWhatsAppLink({ lang })}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#25D366] hover:bg-[#128C7E] text-white text-center font-extrabold text-base px-8 py-4 rounded-2xl transition-all duration-200 shadow-sm flex items-center justify-center gap-2"

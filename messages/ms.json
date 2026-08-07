@@ -563,7 +563,8 @@
       }
     },
     "confirmedAfterScope": "Disahkan selepas semakan skop",
-    "taskUnit": "tugas"
+    "taskUnit": "tugas",
+    "whatsappService": "sebut harga"
   },
   "notFound": {
     "badge": "404 halaman tidak dijumpai",
@@ -581,7 +582,8 @@
     "title": "Dapatkan sebut harga tetap yang telus dahulu",
     "body": "Hantar foto dan kawasan anda di WhatsApp. Kami akan mengesahkan skop, faktor harga, dan slot perkhidmatan yang tersedia sebelum sebarang kerja bermula.",
     "cta": "WhatsApp untuk Sebut Harga",
-    "closeAria": "Tutup popup"
+    "closeAria": "Tutup popup",
+    "whatsappService": "sebut harga tetap perkhidmatan rumah"
   },
   "breadcrumbs": {
     "home": "Utama",
@@ -1455,5 +1457,8 @@
   "a11y": {
     "skipToContent": "Langkau ke kandungan utama",
     "mainContent": "Kandungan utama"
+  },
+  "servicesIndex": {
+    "whatsappService": "perkhidmatan rumah"
   }
 }

@@ -40,7 +40,8 @@ function WhatsAppIcon({ className = "h-5 w-5" }: { className?: string }) {
  */
 function HeaderWhatsAppActions({ compact = false }: { compact?: boolean }) {
   const t = useTranslations();
-  const waLink = getWhatsAppLink();
+  const { lang } = useLang();
+  const waLink = getWhatsAppLink({ lang });
 
   return (
     <a
@@ -67,7 +68,7 @@ export function Navbar() {
   const pathname = usePathname();
   const t = useTranslations();
   const { lang } = useLang();
-  const waLink = getWhatsAppLink();
+  const waLink = getWhatsAppLink({ lang });
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);

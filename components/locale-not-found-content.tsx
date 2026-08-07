@@ -5,9 +5,11 @@ import Link from "next/link";
 import { MessageCircle } from "lucide-react";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { useTranslations } from "@/hooks/use-translations";
+import { useLang } from "@/context/lang-context";
 
 export function LocaleNotFoundContent() {
   const t = useTranslations();
+  const { lang } = useLang();
 
   return (
     <section className="bg-gradient-to-b from-slate-50 to-white py-24">
@@ -27,7 +29,7 @@ export function LocaleNotFoundContent() {
             {t("notFound.browseServices")}
           </Link>
           <a
-            href={getWhatsAppLink()}
+            href={getWhatsAppLink({ lang })}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white"

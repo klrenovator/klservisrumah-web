@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { MessageSquare, X } from "lucide-react";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { useTranslations } from "@/hooks/use-translations";
+import { useLang } from "@/context/lang-context";
 
 /**
  * WhatsApp dispatch desk — compact floating bubble that expands into the
@@ -15,9 +16,10 @@ import { useTranslations } from "@/hooks/use-translations";
  * framer-motion was only imported here.
  */
 export function WhatsAppButton() {
-  const link = getWhatsAppLink();
-  const [open, setOpen] = useState(false);
   const t = useTranslations();
+  const { lang } = useLang();
+  const link = getWhatsAppLink({ lang });
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="fixed bottom-6 right-6 z-40 hidden md:flex flex-col items-end gap-3">

@@ -204,7 +204,7 @@ export function LocaleServicePage({ locale, slug }: { locale: "ms" | "zh"; slug:
 
               <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto mt-2">
                 <a
-                  href={getWhatsAppLink({ service: localized.title })}
+                  href={getWhatsAppLink({ service: localized.title, lang: locale })}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-whatsapp text-base"
@@ -406,7 +406,7 @@ export function LocaleServicePage({ locale, slug }: { locale: "ms" | "zh"; slug:
               {t("serviceContent.estimateCta")}
             </Link>
             <a
-              href={getWhatsAppLink({ service: localized.title })}
+              href={getWhatsAppLink({ service: localized.title, lang: locale })}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-whatsapp"

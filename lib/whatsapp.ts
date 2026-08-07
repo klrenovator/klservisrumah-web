@@ -1,16 +1,61 @@
 import { siteConfig } from "@/config/site";
+import type { Locale } from "@/lib/i18n";
 
-export function getWhatsAppLink(messageDetails?: { service?: string; location?: string }) {
-  let text = "Hello KL Servis Rumah! I want to book a home service.";
-  
-  if (messageDetails) {
-    if (messageDetails.service && messageDetails.location) {
-      text = `Hi KL Servis Rumah! I am looking for professional ${messageDetails.service} service in ${messageDetails.location}. Can I check your slot availability?`;
-    } else if (messageDetails.service) {
-      text = `Hi KL Servis Rumah! I would like to get a quote for ${messageDetails.service} service for my property.`;
-    } else if (messageDetails.location) {
-      text = `Hi KL Servis Rumah! I am located in ${messageDetails.location} and would like to check what slots are available this week.`;
-    }
+/**
+ * WhatsApp message templates for each supported locale.
+ *
+ * When a visitor opens a WhatsApp link from a localised page, the pre-filled
+ * message should match their language — a Malay visitor should not see an
+ * English message, and vice-versa. The {service} and {location} placeholders
+ * are replaced with the localised names from the page's own data bundles,
+ * so the business owner receives the request in the visitor's language.
+ */
+const templates: Record<Locale, {
+  default: string;
+  serviceAndLocation: string;
+  service: string;
+  location: string;
+}> = {
+  en: {
+    default: "Hello KL Servis Rumah! I want to book a home service.",
+    serviceAndLocation: "Hi KL Servis Rumah! I am looking for professional {service} service in {location}. Can I check your slot availability?",
+    service: "Hi KL Servis Rumah! I would like to get a quote for {service} service for my property.",
+    location: "Hi KL Servis Rumah! I am located in {location} and would like to check what slots are available this week."
+  },
+  ms: {
+    default: "Salam KL Servis Rumah! Saya ingin menempah servis rumah.",
+    serviceAndLocation: "Salam KL Servis Rumah! Saya mencari perkhidmatan {service} di {location}. Boleh saya tanya tentang ketersediaan slot?",
+    service: "Salam KL Servis Rumah! Saya ingin mendapatkan sebut harga untuk perkhidmatan {service} untuk harta saya.",
+    location: "Salam KL Servis Rumah! Saya berada di {location} dan ingin tahu slot yang tersedia minggu ini."
+  },
+  zh: {
+    default: "您好 KL Servis Rumah！我想预约家居服务。",
+    serviceAndLocation: "您好 KL Servis Rumah！我想找{location}的专业{service}服务。请问最近有可用的时间段吗？",
+    service: "您好 KL Servis Rumah！我想获取{service}服务的报价。",
+    location: "您好 KL Servis Rumah！我在{location}，想了解这周有哪些可用的时间段。"
+  }
+};
+
+export function getWhatsAppLink(messageDetails?: {
+  service?: string;
+  location?: string;
+  lang?: Locale;
+}) {
+  const lang = messageDetails?.lang ?? "en";
+  const t = templates[lang] ?? templates.en;
+
+  let text: string;
+
+  if (messageDetails?.service && messageDetails?.location) {
+    text = t.serviceAndLocation
+      .replace("{service}", messageDetails.service)
+      .replace("{location}", messageDetails.location);
+  } else if (messageDetails?.service) {
+    text = t.service.replace("{service}", messageDetails.service);
+  } else if (messageDetails?.location) {
+    text = t.location.replace("{location}", messageDetails.location);
+  } else {
+    text = t.default;
   }
 
   const encodedText = encodeURIComponent(text);

@@ -5,11 +5,13 @@ import { MessageSquare, Phone, Camera } from "lucide-react";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
 import { useTranslations } from "@/hooks/use-translations";
+import { useLang } from "@/context/lang-context";
 
 export function NotSureSection() {
   // Translations wiring reserved for future locale-specific overrides.
   const _t = useTranslations();
   void _t;
+  const { lang } = useLang();
 
   return (
     <section className="bg-gradient-to-b from-white to-slate-50 border-y border-slate-100 py-20 sm:py-24">
@@ -52,7 +54,7 @@ export function NotSureSection() {
 
             <div className="flex flex-col sm:flex-row gap-4 mt-4">
               <a
-                href={getWhatsAppLink()}
+                href={getWhatsAppLink({ lang })}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white font-extrabold text-base px-8 py-4 rounded-2xl transition-all duration-200 shadow-sm"

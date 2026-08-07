@@ -6,14 +6,16 @@ import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
 import { trackPhoneCall, trackWhatsAppClick } from "@/lib/analytics";
 import { useTranslations } from "@/hooks/use-translations";
+import { useLang } from "@/context/lang-context";
 
 export function StickyMobileWhatsAppBar() {
   const t = useTranslations();
+  const { lang } = useLang();
   return (
     <div className="fixed inset-x-0 bottom-0 z-50 border-t border-slate-200 bg-white/95 px-3 pt-2.5 pb-[calc(0.75rem+env(safe-area-inset-bottom))] shadow-[0_-10px_30px_rgba(2,31,68,0.08)] backdrop-blur-sm md:hidden">
       <div className="grid grid-cols-2 gap-2.5">
         <a
-          href={getWhatsAppLink()}
+          href={getWhatsAppLink({ lang })}
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`${t("common.bookWhatsApp")} — open WhatsApp chat with KL Servis Rumah`}

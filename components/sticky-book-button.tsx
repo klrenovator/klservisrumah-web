@@ -5,12 +5,14 @@ import { MessageCircle } from "lucide-react";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { trackWhatsAppClick } from "@/lib/analytics";
 import { useTranslations } from "@/hooks/use-translations";
+import { useLang } from "@/context/lang-context";
 
 export function StickyBookButton({ service, location }: { service?: string; location?: string }) {
   const t = useTranslations();
+  const { lang } = useLang();
   return (
     <a
-      href={getWhatsAppLink({ service, location })}
+      href={getWhatsAppLink({ service, location, lang })}
       target="_blank"
       rel="noopener noreferrer"
       onClick={() => trackWhatsAppClick({ service, location, page: "sticky_book_button" })}
