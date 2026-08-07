@@ -97,6 +97,22 @@ export const chromeMsDict: MessageDictionary = {
     "closing": "Sila sahkan ketersediaan dan sebut harga akhir selepas pemeriksaan.",
     "siteVisitGreeting": "Salam KL Servis Rumah, saya ingin meminta lawatan tapak percuma.",
     "siteVisitLine": "Anggaran laman web: {price} ({low} – {high}) bagi {service}."
+  },
+  "sendToCustomer": {
+    "title": "Hantar Anggaran kepada Pelanggan",
+    "subtitle": "Kongsi anggaran ini dengan pelanggan anda melalui WhatsApp",
+    "open": "Hantar kepada Pelanggan",
+    "close": "Tutup",
+    "nameLabel": "Nama Pelanggan (Pilihan)",
+    "namePlaceholder": "cth. Ahmad Razak",
+    "phoneLabel": "Nombor Telefon Pelanggan (Pilihan)",
+    "phonePlaceholder": "cth. 0123456789",
+    "previewLabel": "Pratonton Mesej",
+    "sendWhatsApp": "Hantar melalui WhatsApp",
+    "copyMessage": "Salin Mesej",
+    "copied": "Mesej telah disalin!",
+    "needContact": "Sila masukkan nama atau nombor telefon pelanggan",
+    "ready": "Mesej anggaran sedia untuk dihantar! Pelanggan anda akan menerima pecahan terperinci."
   }
 }
 };

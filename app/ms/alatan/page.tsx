@@ -8,6 +8,7 @@ import {
 } from "@/config/tools-i18n";
 import { toolsList } from "@/config/tools-data";
 import { buildMetadata } from "@/lib/seo-meta";
+import { LocaleTreeLinks } from "@/components/sections/locale-tree-links";
 
 /**
  * /ms/alatan — the Bahasa Malaysia tools index. Real, server-rendered,
@@ -48,11 +49,16 @@ const tools: ToolIndexCard[] = toolsList.map((tool) => {
 
 export default function AlatanPage() {
   return (
-    <ToolsIndexPage
-      copy={copy}
-      path={path}
-      tools={tools}
-      graph={buildToolsIndexGraph({ path, copy, tools, inLanguage: copy.schemaLanguage })}
-    />
+    <>
+      <ToolsIndexPage
+        copy={copy}
+        path={path}
+        tools={tools}
+        graph={buildToolsIndexGraph({ path, copy, tools, inLanguage: copy.schemaLanguage })}
+      />
+
+      {/* Crawl path from this tree to the other three localized trees. */}
+      <LocaleTreeLinks locale="ms" current="tools" />
+    </>
   );
 }

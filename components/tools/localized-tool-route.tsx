@@ -10,6 +10,7 @@ import {
 } from "@/config/tools-i18n";
 import { getToolGraph } from "@/lib/estimator/schema";
 import { buildMetadata } from "@/lib/seo-meta";
+import { LocaleTreeLinks } from "@/components/sections/locale-tree-links";
 
 /**
  * Shared render + metadata for the concrete MS/ZH tool routes
@@ -73,6 +74,10 @@ export function LocalizedToolRoute({
         ]}
       />
       <ToolPage content={content} intro={content.intro} wizard={wizard} locale={locale} localeUrls={urls} />
+
+      {/* Crawl path from this tree to the other three localized trees.
+          `ToolLocale` is "ms" | "zh" — this route never renders English. */}
+      <LocaleTreeLinks locale={locale} current="tools" />
     </>
   );
 }

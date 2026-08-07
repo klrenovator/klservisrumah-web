@@ -9,6 +9,7 @@ import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
 import { Phone, MessageSquare } from "lucide-react";
 import { faqDirectoryTotalCount, getFaqDirectory } from "@/lib/faq-directory";
+import { LocaleTreeLinks } from "@/components/sections/locale-tree-links";
 
 export const metadata = buildMetadata({
   title: "Soalan Lazim — Setiap Soalan Perkhidmatan Rumah Dijawab",
@@ -60,6 +61,9 @@ export default function MalayFaqPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{
         __html: JSON.stringify(getFAQSchema(faqDirectory.flatMap((c) => c.items.map((i) => ({ q: i.q, a: i.a })))))
       }} />
+
+      {/* Crawl path from this tree to the other three localized trees. */}
+      <LocaleTreeLinks locale="ms" current="faq" />
     </>
   );
 }

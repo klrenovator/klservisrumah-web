@@ -364,3 +364,183 @@ All green: lint 0/0, type-check PASS, build SUCCESS (4,245 pages), estimator tes
 - All S001–S003 fixes verified intact: admin auth, error beacon, middleware gates, H3 pilot, trilingual parity, exit-intent a11y, color revert, service count, etc.
 - Translation keys for `home.testimonials.*` retained in dictionaries because `google-reviews.tsx` uses `home.testimonials.header`.
 ---
+
+---
+
+## Session 005
+
+**Date:** 2026-08-07 (UTC)
+**Branch:** `arena/019fdb85-klservisrumah-web` (from `main` @ `cf44647`, containing S001–S004)
+**Status:** ✅ COMPLETED
+
+### Objectives
+- Read all four governance files; verify S001–S004 claims against the actual checkout.
+- Perform an **independent deep audit** — going beyond previous sessions' static greps and route spot-checks by crawling the **entire built corpus** (all 4,240 generated HTML documents) the way Googlebot and AI retrievers actually see it.
+- Merge findings with the existing roadmap, fix the highest-priority unfinished work, verify every fix, re-audit.
+
+### Baseline verification (before changes)
+- `npm install` clean · `npm audit` **0 vulnerabilities** · `npm run lint` 0/0 · `npm run type-check` PASS · `npm run build` SUCCESS (4,245 pages) · estimator suite 231,498 assertions PASS.
+- Static greps: 0 × `any`, 0 × `@ts-ignore`/`eslint-disable`, 0 × `console.log` in app source (39 hits are legitimate CLI output in `scripts/`), 0 × TODO/FIXME.
+- Message dictionaries: 1,041 keys × 3 locales — perfect parity, 0 empty values.
+- All S001–S004 fixes re-verified intact (admin auth, error beacon, middleware gates, H3 pilot, trilingual parity, exit-intent a11y, deleted assets still absent).
+
+### Audit method (new this session)
+Previous sessions verified *source code* and sampled a handful of URLs from a running server. This session wrote four throwaway analysers that parse **every** built HTML file and reason about the corpus as a graph:
+1. **Metadata audit** — title/description/canonical/OG/viewport/H1 presence, length budgets (CJK-aware), duplicate-group detection across 4,240 pages.
+2. **Link-graph audit** — extracts all 219,562 internal links, resolves them against the set of pages actually built, and computes inbound-link counts, broken targets and orphans per cluster.
+3. **Hreflang reciprocity audit** — verifies every alternate target exists *and* links back, with canonical-aware exemptions.
+4. **Structure audit** — `<html lang>`, JSON-LD parse validity, heading-hierarchy skips.
+
+This surfaced a class of defect no amount of source reading finds: pages that are correct in isolation but **unreachable in the graph**.
+
+### Issues discovered & fixed this session (7 new, all fixed)
+
+**🟠 N3 — Nine content hubs had ZERO inbound internal links sitewide.**
+`/answers`, `/brands`, `/commercial`, `/compare`, `/near-me`, `/process`, `/residential`, `/seasonal`, `/top`. Sitemap-listed and URL-reachable, but not one `<a href>` in the entire 4,240-page build pointed at them; their ~180 child pages averaged 1–4 inbound links.
+*Root cause:* the destinations existed only inside `components/ui/all-pages-menu.tsx`, a drawer whose contents mount **after a click**. The `menu.links.*` keys were fully translated in EN/MS/ZH but rendered by **no component**, so the server HTML never contained the links — invisible to crawlers and to AI retrievers, which do not execute click handlers.
+*Fix:* server-rendered `EXPLORE_LINKS` block in the footer (16 destinations × all 4,240 pages) + the same destinations grouped under "Explore More" in the drawer. Reuses existing translated keys.
+*Result:* hub inbound 0 → 147–475 each; `/compare` cluster avg 4 → 269, `/brands` 4 → 330, `/top` 4 → 389, `/seasonal` 4 → 475.
+
+**🟠 N4 — All 1,036 `/areas/<area>/<service>/near-me` pages were orphans** (24% of the whole site — the largest orphan cluster). *Fix:* the parent area × service page now links its own near-me variant (`locale-area-service-view.tsx`), localized via the existing `location.nearMeH1` key. *Result:* 1,036 → 0.
+
+**🟠 N5 — 27 of 28 `/services/<slug>/emergency` pages were orphans** (only the plumbing one was linked, from a tool page). *Fix:* emergency call-out on the sibling `/cost` page (`locale-service-cost-view.tsx`), using existing `emergencyPage.*` keys. *Result:* 27 → 0.
+
+**🟠 N7 — The localized MS/ZH trees were isolated islands.** `/ms/soalan-lazim` and `/zh/chang-jian-wen-ti` had **zero** inbound links; other localized pages averaged ≤2. The sitewide navbar/footer only emit English URLs, and the only pointers to the localized FAQs were an hreflang annotation and a client-side redirect — neither is a crawlable link. A crawler entering at `/ms/services/painting` could not reach the Malay FAQ, blog or tools. **This structurally starved the H3 pilot.** *Fix:* new `components/sections/locale-tree-links.tsx`, wired into all four localized trees × 2 locales (services index + detail, blog index + article, FAQ, tools index + detail), reusing already-translated `nav.*`/`menu.*` keys.
+
+**🟡 N1 — The 404 page was a metadata clone of the homepage (soft-404 signal).** With no `metadata` export it inherited the root layout, shipping the homepage title + description, **`<link rel="canonical">` pointing at the homepage** (telling Google the error page *was* `/`, inviting consolidation of every 404-serving URL), a homepage hreflang cluster + `og:url`, and **two contradictory `robots` tags**. *Fix:* explicit metadata — own title/description, single `noindex, follow`, `alternates: {}` so no canonical/hreflang is emitted at all, own OG + Twitter copy. *Verified live:* HTTP **404**, no canonical, no hreflang.
+
+**🟡 N2 — The MS/ZH service pages were the only internal links to six redirecting URLs.** Six services own deeper tools, so their `/estimate/<slug>` is a middleware 301 with no page ever built; the 12 localized service pages linked it on a primary CTA. *Fix:* resolve `buildEstimateLinks().resolvedPath`. *Result:* broken/redirecting internal targets **6 → 0**.
+
+**🟡 N6 — 58 pages shipped a broken heading hierarchy (h1 → h3).** 36 MS/ZH blog articles (the localized renderer emitted every `###` as `<h3>`, but `###` is the only heading level used in `blog-i18n.ts` — verified zero `##`/`####` — so they are the top-level sections) and 22 `/estimate/*` pages (estimator question cards are `<h3>` with no `<h2>` above them; `/tools/*` already has one). *Fix:* localized renderers emit `<h2>` (visual size unchanged); `estimate-share-page.tsx` gains an `sr-only` `<h2>` reusing `estimateShare.pageHeading`. *Result:* 58 → 0. Improves WCAG 1.3.1 and AI answer-engine section extraction.
+
+### Files created (1)
+- `components/sections/locale-tree-links.tsx` — server-rendered in-language cross-links between the four localized subtrees.
+
+### Files modified (17)
+- `components/ui/footer.tsx` — sitewide `EXPLORE_LINKS` (N3).
+- `components/ui/all-pages-menu.tsx` — "Explore More" group (N3).
+- `components/sections/locale-area-service-view.tsx` — near-me link (N4).
+- `components/sections/locale-service-cost-view.tsx` — emergency call-out (N5).
+- `components/sections/locale-service-page.tsx` — resolved estimator href (N2) + cross-tree links (N7).
+- `components/sections/locale-services-index.tsx`, `components/tools/localized-tool-route.tsx`, `app/ms/alatan/page.tsx`, `app/zh/gongju/page.tsx`, `app/ms/blog/page.tsx`, `app/zh/bo-ke/page.tsx`, `app/ms/blog/[slug]/page.tsx`, `app/zh/bo-ke/[slug]/page.tsx`, `app/ms/soalan-lazim/page.tsx`, `app/zh/chang-jian-wen-ti/page.tsx` — cross-tree links (N7); the two blog article routes also carry the `###` → `<h2>` fix (N6).
+- `app/not-found.tsx` — explicit 404 metadata (N1).
+- `components/estimate/estimate-share-page.tsx` — `sr-only` section heading (N6).
+- Generated: `docs/seo-audit-report.md`. Governance: `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
+
+### Files deleted
+None this session.
+
+### Tests/Verification performed
+1. `npm install` clean · 2. `npm audit` **0 vulnerabilities**.
+3. `npm run lint` — **0 errors, 0 warnings** (run 3×).
+4. `npm run type-check` — **PASS** (3×).
+5. `npm run build` — **SUCCESS**, 4,245 pages; estimator suite **231,498 assertions, 0 failures**.
+6. `npm run seo:audit` — clean, regenerated.
+7. **Full-corpus re-audit after the rebuild** (the same four analysers, re-run against the new build):
+   - orphan pages **1,077 → 3** — and all 3 are correct (`/ms`, `/zh` are `noindex` locale scaffolds; `/search` is `noindex`). **0 real content orphans.**
+   - broken/redirecting internal link targets **6 → 0**.
+   - heading-hierarchy skips **58 → 0**.
+   - internal links **219,562 → 267,596** (+48,034).
+   - metadata: 0 missing titles / descriptions / OG / viewport / H1; 0 multi-H1; 0 over-length titles or descriptions.
+   - canonical: only the 404 emits none (intentional); all duplicate title/canonical groups are the deliberate `/areas` ↔ `/suburbs` canonicalised pairs.
+   - hreflang: **0 non-reciprocal, 0 targets-not-built** (1,066 "points at own canonical" are the intended canonicalised pages).
+   - JSON-LD: **0 invalid blocks** across all 4,240 pages; 0 pages without schema.
+8. Dictionaries: **1,041 keys × 3 locales, 0 missing / 0 empty**.
+9. Prod-server smoke (25 URLs): all 200 except `/admin/tools` 307 → login (correct) and an unknown URL → real **404**. Verified rendered output for: footer explore links on a deep area page, the near-me link, the emergency link, MS/ZH cross-tree links, the resolved `/tools/painting-calculator` href on `/ms/services/painting`, MS blog article headings now `h1 h2 h2…`, and the `sr-only` h2 on `/estimate/autogate`.
+
+### Build/Lint/Type-Check Status
+All green: lint 0/0, type-check PASS, build SUCCESS (4,245 pages), estimator tests PASS, `npm audit` 0 vulnerabilities, SEO audit clean.
+
+### Current Project Status
+- 🔴 Critical: **0 remaining.**
+- 🟠 High: N3/N4/N5/N7 ✅ (new, fixed); H3 pilot ✅ live and now properly interlinked; H1/H1b business override; H2 field-data gated.
+- 🟡 Medium: N1/N2/N6 ✅ (new, fixed); A1, M1–M5, M7, M9 ✅; M8 deferred.
+- 🟢 Low: L1–L11 ✅.
+- **Production-ready.** Remaining items are owner-side (env vars, pings) or data-gated.
+
+### Remaining priorities
+1. Deploy, then re-measure GSC coverage — this session materially changed what is reachable.
+2. H3 full-rollout go/no-go, using post-fix data (earlier pilot data under-represents it: the localized tree was nearly unlinked).
+3. Set `ADMIN_PASSWORD` + confirm other env vars in Vercel; rotate the burned `KL2024Admin`.
+4. GBP + IndexNow + Bing Webmaster post-deploy pings.
+
+### Recommended Next Task
+**Deploy and re-crawl.** Then work the "low inbound (≤2)" tier: 648 `/suburbs/*` and the 1,036 near-me pages now have ≥1 inbound link but remain thin on internal equity — a contextual related-links block would be the natural next improvement.
+
+### Notes
+- No business logic, pricing, colour, schema meaning or English content was changed. Every fix is additive linking, metadata correctness, or a heading level.
+- All seven fixes reuse dictionary keys that already existed in EN/MS/ZH — zero new translation debt, and the new links render in-language on localized pages.
+- The `NoFallbackError` line in the prod-server log during the 404 smoke test is Next.js's internal mechanism for serving a genuine 404 on a `dynamicParams = false` route — the response is a correct HTTP 404, not an error.
+- Headline outcome: **1,077 orphaned pages (25% of the site) brought into the internal link graph**, and the single defect most likely to have been suppressing indexation — nine hubs plus the entire MS/ZH tree being invisible to crawlers — is resolved at its root cause.
+
+---
+
+## Session 006
+
+**Date:** 2026-08-07 (UTC)
+**Branch:** `arena/019fdb85-klservisrumah-web` (continuing from S005 @ `e76cbb1`)
+**Status:** ✅ COMPLETED
+
+### Objectives
+- Continue autonomously from S005's recommended next task and audit the dimensions previous sessions had not measured directly: **security headers** and **hardcoded-English leakage in shared client components**.
+- Fix, verify, re-audit.
+
+### Issues discovered & fixed this session (2 new, both fixed)
+
+**🟠 N8 — No Content-Security-Policy anywhere on the site.**
+Five security headers were configured (HSTS, `X-Frame-Options`, `nosniff`, `Referrer-Policy`, `Permissions-Policy`) but **CSP was entirely absent** — the most effective defence-in-depth header against XSS and the clearest gap in an otherwise disciplined header set. The app writes trusted JSON-LD and a locale-bootstrap script via `dangerouslySetInnerHTML` in nine locations; CSP is what caps the damage if any of those ever receives attacker-influenced input, and it independently blocks injected third-party scripts, foreign form posts, plugins and framing.
+
+*Fix:* a policy derived from an actual inventory of what the app loads — I enumerated every external origin referenced in source (only Google Tag Manager, plus GA collection endpoints), every `data:`/`blob:` usage (the hero's base64 SVG blur placeholder, next/image), every fetch/beacon target (`/api/error-log`, admin endpoints), and confirmed zero iframes and zero remote image patterns. Result: `default-src 'self'`; `object-src`/`frame-src`/`frame-ancestors` `'none'`; `form-action 'self'`; `base-uri 'self'`; origin-limited `script-src`; `upgrade-insecure-requests`. Added `Cross-Origin-Opener-Policy: same-origin` and `Cross-Origin-Resource-Policy: same-origin`.
+
+*Documented trade-off:* `script-src` keeps `'unsafe-inline'`. Next.js App Router bootstraps hydration with inline scripts and this site is ~4,245 statically prerendered pages served from a CDN, so no per-request nonce exists. This is stated explicitly in the config comment rather than left as a silent compromise. The policy is still a large net gain — an injected `<script src="https://evil.tld">` is blocked, as are `eval`, foreign form actions, plugins and framing.
+
+*Care taken:* `next.config.mjs` already carried a comment warning that a later matching `headers()` rule overrides an earlier one for the same key, and that this had previously stomped the `immutable` cache policy on hashed assets. I added CSP to the existing catch-all block (not a new rule) and **explicitly re-verified** `Cache-Control: public, max-age=31536000, immutable` still lands on `/_next/static/*` afterwards.
+
+**🟡 N9 — "Send Estimate to Customer" panel was hardcoded English on every locale.**
+13 user-facing strings — heading, subtitle, toggle label, two field labels, two placeholders, preview label, two buttons, two `alert()` messages and the success confirmation — were literal English inside `estimate-result.tsx`. That component is `EstimateResultPanel`, shared by **every** estimator surface including the five MS wizards (`/ms/alatan/*`) and five ZH wizards (`/zh/gongju/*`). A Malay or Chinese visitor completing an estimate hit a block of raw English mid-flow.
+
+*Fix:* new `estimator.sendToCustomer` namespace (14 keys) added to all three site dictionaries **and** all three standalone chrome modules, with Malay and Chinese written naturally for native speakers. The component resolves every string through the locale-aware `t()` already in scope — no signature change.
+
+*Guard extended:* the repo has a strict harness asserting the standalone chrome modules never drift from `messages/*.json`, but it only covered five sections. I added `sendToCustomer` to `chromeSections` in `scripts/test-estimators.ts` so this namespace gets the same protection. Assertions 231,498 → **231,501**.
+
+### Files modified (8)
+- `next.config.mjs` — CSP + COOP/CORP + `X-DNS-Prefetch-Control` (N8).
+- `components/tools/estimator/estimate-result.tsx` — 13 strings routed through `t()` (N9).
+- `messages/en.json`, `messages/ms.json`, `messages/zh.json` — `estimator.sendToCustomer` × 14 keys (N9).
+- `lib/estimator/i18n/chrome-en.ts`, `chrome-ms.ts`, `chrome-zh.ts` — same namespace for the deep-tool routes (N9).
+- `scripts/test-estimators.ts` — harness now guards the new section (N9).
+- Governance: `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
+
+### Files created / deleted
+None.
+
+### Tests/Verification performed
+1. `npm run lint` — **0 errors, 0 warnings** (2×). 2. `npm run type-check` — **PASS** (2×).
+3. `npm run build` — **SUCCESS**, 4,245 pages. 4. Estimator harness — **231,501 assertions, 0 failures**.
+5. `npm audit` — **0 vulnerabilities**.
+6. Dictionaries — **1,055 keys × 3 locales, 0 missing, 0 empty** (was 1,041; +14 × 3).
+7. **CSP correctness, empirically:** header confirmed present on HTML *and* static assets; `immutable` caching preserved on `/_next/static/*`; parsed the delivered policy and checked every subresource the homepage actually fetches against it — all same-origin (`/_next/...`, `/logo/...`) and permitted. The one flagged external origin was `https://www.klservisrumah.my` appearing in `rel="canonical"`/`hreflang` links, which CSP does not govern (no fetch occurs) and which is `'self'` in production — verified as a false positive of the local-host test rather than assumed.
+8. **25-URL prod-server smoke under the live CSP** — all 200, `/admin/login` 200, unknown URL → real **404**. Covered EN, MS and ZH trees, both tool locales, estimator, area/near-me/cost/emergency pages, `manifest.json`, `sw.js`, `robots.txt`, `sitemap.xml`.
+9. Confirmed the Malay and Chinese `sendToCustomer` strings ship in their respective locale route bundles by fetching each route's client chunks; confirmed each locale wizard binds its own chrome dict (`chromeMsDict`/`chromeZhDict`), so the correct language renders.
+
+### Build/Lint/Type-Check Status
+All green: lint 0/0, type-check PASS, build SUCCESS (4,245 pages), 231,501 estimator assertions, `npm audit` 0 vulnerabilities.
+
+### Current Project Status
+- 🔴 Critical: **0 remaining.** 🟠 High: N8 ✅ (new); S005's N3/N4/N5/N7 ✅; H3 pilot live; H1/H1b business override; H2 field-data gated.
+- 🟡 Medium: N9 ✅ (new); S005's N1/N2/N6 ✅; A1, M1–M5, M7, M9 ✅; M8 deferred. 🟢 Low: L1–L11 ✅.
+- **Production-ready.** Remaining items are owner-side (env vars, pings) or data-gated.
+
+### Remaining priorities
+1. **CSP field-check after deploy** — the policy was verified against every subresource the build references, but browsers issue runtime-only requests too. Watch one real session for violations; if anything is blocked, widen that specific directive rather than loosening `default-src`.
+2. Deploy + re-crawl to re-measure GSC coverage after S005's linking repair.
+3. H3 full-rollout go/no-go on post-fix data.
+4. Owner-side: `ADMIN_PASSWORD` + env vars in Vercel; GBP / IndexNow / Bing pings.
+
+### Recommended Next Task
+CSP field-check, then the "low inbound (≤2)" tier: 648 `/suburbs/*` and the 1,036 near-me pages now have ≥1 inbound link but remain thin on internal equity — a contextual related-links block is the natural next improvement.
+
+### Notes
+- No business logic, pricing, colour, schema meaning or English copy changed. N8 is a header addition; N9 replaces English literals with the translations of the same text.
+- Both fixes were verified by observing real behaviour (delivered headers, parsed policy vs. actual subresources, strings present in locale bundles) rather than by reading the diff.
+- The `'unsafe-inline'` compromise in `script-src` is a genuine constraint of static Next.js, not an oversight; it is documented in the config so a future session does not "discover" it as a finding.

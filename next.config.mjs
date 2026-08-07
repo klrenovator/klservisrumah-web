@@ -1,3 +1,57 @@
+/**
+ * Content Security Policy.
+ *
+ * WHY THIS EXISTS
+ * ---------------
+ * The site shipped HSTS, X-Frame-Options, nosniff, Referrer-Policy and
+ * Permissions-Policy but **no CSP at all** — the single most effective
+ * defence-in-depth header against XSS. The app renders trusted JSON-LD and a
+ * locale-bootstrap script through `dangerouslySetInnerHTML` in nine places; a
+ * CSP is what limits the blast radius should any of those ever be fed
+ * attacker-influenced data, and it also blocks injected third-party scripts,
+ * form hijacking and clickjacking via `frame-ancestors`.
+ *
+ * The directives below are derived from an inventory of what the app actually
+ * loads — nothing speculative:
+ *
+ *   script-src   'self' + Google Tag Manager (the only third-party script,
+ *                loaded by components/analytics/google-analytics.tsx).
+ *   connect-src  'self' (the /api/error-log beacon and admin fetches) plus the
+ *                Google Analytics collection endpoints.
+ *   img-src      'self' + data: (the hero's inline base64 SVG blur placeholder)
+ *                + blob: (next/image) + GA's tracking pixel.
+ *   style-src    'self' + 'unsafe-inline' — required: React/Next inject inline
+ *                <style> for critical CSS and the code base uses `style={{…}}`.
+ *   frame-src    'none' — the site embeds no iframes (verified: zero matches).
+ *   frame-ancestors 'none' — the modern equivalent of X-Frame-Options: DENY,
+ *                which we keep alongside it for older browsers.
+ *
+ * NOTE ON 'unsafe-inline' IN script-src: Next.js App Router bootstraps
+ * hydration with inline scripts that have no stable nonce in a fully static
+ * export, and this site is ~4,245 statically prerendered pages served from a
+ * CDN, so a per-request nonce is not available. `'unsafe-inline'` is therefore
+ * required for the app to run. It is still a substantial improvement over no
+ * CSP: script-src remains origin-limited, so an injected `<script src>`
+ * pointing at an attacker domain is blocked, as are eval, foreign form posts,
+ * plugins and framing.
+ */
+const CONTENT_SECURITY_POLICY = [
+  "default-src 'self'",
+  "base-uri 'self'",
+  "object-src 'none'",
+  "frame-src 'none'",
+  "frame-ancestors 'none'",
+  "form-action 'self'",
+  "manifest-src 'self'",
+  "worker-src 'self'",
+  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com",
+  "style-src 'self' 'unsafe-inline'",
+  "img-src 'self' data: blob: https://www.googletagmanager.com https://www.google-analytics.com",
+  "font-src 'self' data:",
+  "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com",
+  "upgrade-insecure-requests",
+].join("; ");
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   poweredByHeader: false,
@@ -80,6 +134,14 @@ const nextConfig = {
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
           { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(self)" },
+          { key: "Content-Security-Policy", value: CONTENT_SECURITY_POLICY },
+          // Blocks the legacy cross-origin isolation leaks that CSP does not
+          // cover. `same-origin` on COOP severs the window.opener relationship
+          // for cross-origin popups; CORP stops other origins embedding our
+          // subresources.
+          { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
+          { key: "Cross-Origin-Resource-Policy", value: "same-origin" },
+          { key: "X-DNS-Prefetch-Control", value: "on" },
         ],
       },
     ];
