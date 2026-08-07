@@ -14,7 +14,7 @@ import { LocaleTreeLinks } from "@/components/sections/locale-tree-links";
 
 /**
  * Shared render + metadata for the concrete MS/ZH tool routes
- * (app/ms/alatan/<slug>/page.tsx, app/zh/gongju/<slug>/page.tsx).
+ * (app/(ms)/ms/alatan/<slug>/page.tsx, app/(zh)/zh/gongju/<slug>/page.tsx).
  *
  * Each route file hard-codes its canonical English slug and its own dynamic
  * wizard import, so the route chunk ships exactly ONE wizard — matching the

@@ -69,7 +69,12 @@ function checkMetadataConsistency(): {
         if (!c || alts.length === 0) continue;
         const cLocal = toLocal(c);
         if (!cLocal) continue;
-        const rel = p.slice(BUILD.length).replace(/\.html$/, "");
+        // Route groups appear in the on-disk build path (`(ms)/ms/...`) but not
+        // in the URL — strip them before deriving the page URL.
+        const rel = p
+          .slice(BUILD.length)
+          .replace(/\.html$/, "")
+          .replace(/\/\([^)]+\)/g, "");
         let myUrl = rel;
         if (myUrl.startsWith("/")) myUrl = myUrl.slice(1);
         if (myUrl.endsWith("/index")) myUrl = myUrl.slice(0, -"/index".length);
