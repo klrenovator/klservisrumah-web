@@ -464,3 +464,37 @@ Objectives: continue the S009 low-inbound remediation, covering the remaining no
 2. Complete the post-deploy CSP browser-console check.
 3. Owner: configure/rotate production secrets and complete GBP, IndexNow and Bing post-deploy pings.
 4. At the next content migration, consolidate the `config/` file families (M8); do not perform a risky standalone migration solely for naming.
+
+
+### ✅ Session 011 — 2026-08-07
+Objectives: independent deep re-audit (S011) with a new corpus-level HTML quality dimension; fix the one genuine defect found — server-rendered `<html lang>` was wrong on all 112 localized pages.
+
+- ✅ **[2026-08-07 / S011] N19 (🟠 High). All 112 real MS/ZH pages shipped `<html lang="en-MY">` in the server HTML.**
+  - Root cause: the site had a single root layout with a hardcoded `lang="en-MY"`; the localized trees only corrected `document.documentElement.lang` **on hydration** (`components/localized-html-lang.tsx`), so crawlers and AI retrievers (which do not execute JS) saw English-language markup on Malay/Chinese pages — wrong screen-reader synthesis, wrong translation cues, and a multilingual-SEO correctness gap.
+  - **Fix (architecture):** switched the app to **three root layouts via route groups** — `app/(en)/layout.tsx` (`lang="en-MY"`), `app/(ms)/layout.tsx` (`lang="ms-MY"`), `app/(zh)/layout.tsx` (`lang="zh-MY"`) — the supported Next.js pattern. Shared `<head>` (schema + Bing verification) → `components/layout/site-head.tsx`; shared `<body>` chrome → `components/layout/site-chrome.tsx`; localized root-layout fallback metadata in MS/ZH. Deleted `components/localized-html-lang.tsx` (no longer needed).
+  - **Ripple fixes required by the architecture:**
+    - `app/not-found.tsx` cannot exist without a root layout → enabled the official `experimental.globalNotFound` (Next 15.4+) + new `app/global-not-found.tsx` (complete document: chrome, EN lang, noindex, no canonical/hreflang) — restores the full-chrome 404 for unmatched URLs and NoFallbackError cases (e.g. `/ms/services/not-a-service`).
+    - `app/robots.ts` must sit at the app root (group placement silently dropped it — verified live 404 → moved back to root, now 200).
+    - `scripts/generate-ai-context.ts` import path updated to `app/(en)/sitemap.ts`.
+    - Per-tree `error.tsx` wrappers (`(en)`, `(ms)/ms`, `(zh)/zh`) around a new shared `components/error-page.tsx` (locale-aware, tree-correct services CTA).
+    - MS/ZH scaffolds `/ms` + `/zh` became static pages `app/(ms)/ms/page.tsx` + `app/(zh)/zh/page.tsx` rendering the new shared `components/locale-scaffold.tsx` (same copy/redirect behavior, now served with the correct lang attribute).
+    - `app/(zh)/not-found.tsx` — self-contained 404 boundary for unknown `/zh/*` URLs (Next renders it in its minimal shell; server JSX copy + lang-fix script).
+  - **Regression found & fixed during verification (N19b):** the five literal-CJK tool pages (`/zh/gongju/天花板计算器` etc.) 404'd at their percent-encoded URLs after removing the old `/[lang]/[[...slug]]` catch-all (whose dynamicParams=false retry flow had been resolving them via the decoded pathname; proven by base-commit A/B build). Fix: `app/(zh)/zh/[...unmatched]/page.tsx` catch-all that decodes segments and permanently redirects to the canonical raw-CJK URL (verified against `canonicalToolSlug` so it never redirects to arbitrary strings), else renders the zh 404. Dev-mode CJK 404 proven pre-existing on the base commit (not a regression).
+  - **Verified (full battery):** `lang` correct on all 12 spot-checked page types incl. scaffolds/tools/blogs/FAQs; all 58 expected-200 URLs pass; expected redirects (301/307/308) and 404s correct; `audit:html` **0 findings across 4,240 pages** (new audit dimension: img alt, dead links, tabnabbing, unnamed buttons, duplicate ids, title/description, lang consistency, JSON-LD parseability, page-size report); `seo:audit` clean; sitemap 3,200 URLs all sampled 200; JSON-LD 18 blocks/page; robots.txt 200; admin gate 307; API guards 503/401/405; lint 0/0; type-check PASS; build SUCCESS (4,245 pages; estimator suite 231,501 assertions PASS); `npm audit` 0 vulnerabilities.
+  - **Cost note:** the restructure adds ~1 KB gzipped per page (all root layouts inline their module maps into every document's flight data); the raw-HTML growth is highly compressible chunk-name lists. Worth it for correct server-side language metadata on 112 pages.
+  - **New tooling:** `scripts/html-quality-audit.ts` + `npm run audit:html` — full-corpus generated-HTML quality gate (extends `seo:audit`'s coverage into WCAG/link-integrity/JSON-LD territory), wired as a repeatable verification step.
+
+### Current Project Status (updated S011)
+- 🔴 Critical: **0 remaining.**
+- 🟠 High: N19/N19b ✅ (S011 — server-side lang on all localized pages + CJK-URL resolution); all prior actionable in-repository items remain completed; H1/H1b owner-approved brand override; H2 field-data gated; H3 full rollout owner-governed after pilot data.
+- 🟡 Medium: N16–N18 ✅; N19's ripple work ✅; remaining items owner-side/data-gated or M8 (deferred content-layer consolidation).
+- 🟢 Low: L1–L12 ✅; dependency hygiene current (`npm audit` 0).
+- **Server-rendered language metadata:** 112/112 localized pages now ship the correct `<html lang>` in the raw HTML (was 0/112) — screen readers, crawlers and AI retrievers no longer see English markup on Malay/Chinese pages.
+- **Crawl health:** 0 real orphans, 0 broken/redirecting internal targets, 0 heading skips, 0 canonical/hreflang defects; new `audit:html` gate: 0 findings across 4,240 pages.
+- **Infrastructure:** 3 root layouts (route groups), `globalNotFound` (experimental, flagged and documented), root `robots.ts`, zh catch-all for canonical CJK redirects.
+
+### Recommended Next Task (updated S011)
+1. Deploy and verify in production: browser-console CSP check (carried), Search Console re-crawl of the localized trees (the lang/hreflang combination is materially different for MS/ZH now), and re-run `npm run audit:html` in CI after deploys.
+2. Inspect GSC/Bing coverage + MS/ZH pilot conversions before the owner-only H3 full-rollout decision.
+3. Owner: configure/rotate production secrets; GBP / IndexNow / Bing post-deploy pings.
+4. At the next content migration, consolidate `config/` families (M8).

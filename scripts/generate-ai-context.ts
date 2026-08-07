@@ -43,7 +43,7 @@ import { blogPosts } from "../config/blog-data.ts";
 import { toolsList } from "../config/tools-data.ts";
 import { TOOLS_INDEX_PATH, toolLocaleUrls } from "../config/tools-i18n.ts";
 import { ESTIMATE_INDEX_PATH, buildEstimateLinks } from "../config/estimate-links.ts";
-import sitemap from "../app/sitemap.ts";
+import sitemap from "../app/(en)/sitemap.ts";
 
 const BASE = "https://www.klservisrumah.my";
 const url = (p: string) => `${BASE}${p === "/" ? "/" : p}`;

@@ -78,6 +78,14 @@ const nextConfig = {
     // repo to stabilise build memory on constrained CI runners.
     cpus: 1,
     workerThreads: false,
+    // The site has multiple root layouts (one per language tree — see
+    // app/(en)/layout.tsx for why), so a conventional app/not-found.tsx cannot
+    // exist (it would have no root layout). The experimental global-not-found
+    // convention (Next 15.4+) renders app/global-not-found.tsx — a complete
+    // document with the site chrome — for every URL that matches no route and
+    // for NoFallbackError cases (dynamicParams=false pages with unknown
+    // params, e.g. /ms/services/not-a-service).
+    globalNotFound: true,
     // Tree-shake the biggest offenders. Every package here has hundreds
     // of exports; without this Next.js pulls the whole barrel file into
     // the client bundle even when a single icon is used.

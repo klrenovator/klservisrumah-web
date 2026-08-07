@@ -9,6 +9,7 @@
     "lint": "eslint . --max-warnings=0",
     "type-check": "tsc --noEmit",
     "seo:audit": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/seo-audit.ts",
+    "audit:html": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/html-quality-audit.ts",
     "gen:rates": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/generate-rate-book.ts",
     "gen:ai-context": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/generate-ai-context.ts",
     "gen:service-summary": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/generate-service-summary.ts",

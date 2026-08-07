@@ -4,8 +4,27 @@ import Link from "next/link";
 import { useEffect } from "react";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { useTranslations } from "@/hooks/use-translations";
+import type { Locale } from "@/lib/i18n";
 
-export default function ErrorPage({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {
+/**
+ * ErrorPage — shared client error boundary UI for all three language trees.
+ *
+ * Copy is resolved through the language context (`error.*` dictionary keys
+ * exist in EN/MS/ZH), so the same component renders correctly in every tree.
+ * The wrappers (`(en)/error.tsx`, `(ms)/ms/error.tsx`, `(zh)/zh/error.tsx`)
+ * pass the tree's language and localized services URL.
+ */
+export function ErrorPage({
+  error,
+  reset,
+  lang = "en",
+  servicesHref = "/services",
+}: {
+  error: Error & { digest?: string };
+  reset: () => void;
+  lang?: Locale;
+  servicesHref?: string;
+}) {
   const t = useTranslations();
 
   useEffect(() => {
@@ -47,13 +66,13 @@ export default function ErrorPage({ error, reset }: { error: Error & { digest?: 
             {t("error.tryAgain")}
           </button>
           <Link
-            href="/services"
+            href={servicesHref}
             className="rounded-xl border border-slate-200 px-5 py-3 text-sm font-extrabold text-[#075985] hover:border-[#0EA5E9] hover:text-[#0EA5E9] transition-colors"
           >
             {t("error.servicesCta")}
           </Link>
           <a
-            href={getWhatsAppLink({ service: "website issue report" })}
+            href={getWhatsAppLink({ service: "website issue report", lang })}
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-xl bg-[#25D366] hover:bg-[#128C7E] px-5 py-3 text-sm font-extrabold text-white transition-colors"

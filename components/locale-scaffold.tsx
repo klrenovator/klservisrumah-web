@@ -1,26 +1,25 @@
-import React from "react";
 import Link from "next/link";
-import { notFound } from "next/navigation";
-import { siteConfig } from "@/config/site";
-import { buildAlternates, optimizeTitle, optimizeDescription } from "@/lib/seo-meta";
 import { ArrowRight, MessageSquare, Phone, Home } from "lucide-react";
+import { siteConfig } from "@/config/site";
 
-const supported = ["ms", "zh"] as const;
-type SupportedLocale = (typeof supported)[number];
+export type ScaffoldLocale = "ms" | "zh";
 
-const labels: Record<SupportedLocale, {
-  name: string;
-  badge: string;
-  title: string;
-  notice: string;
-  ctaPrimary: string;
-  ctaSecondary: string;
-  ctaServices: string;
-  ctaServicesHref: string;
-  ctaPricing: string;
-  ctaContact: string;
-  redirectNote: string;
-}> = {
+const labels: Record<
+  ScaffoldLocale,
+  {
+    name: string;
+    badge: string;
+    title: string;
+    notice: string;
+    ctaPrimary: string;
+    ctaSecondary: string;
+    ctaServices: string;
+    ctaServicesHref: string;
+    ctaPricing: string;
+    ctaContact: string;
+    redirectNote: string;
+  }
+> = {
   ms: {
     name: "Bahasa Malaysia",
     badge: "BM",
@@ -50,51 +49,18 @@ const labels: Record<SupportedLocale, {
 };
 
 /**
- * Restrict this optional catch-all to the two locale scaffolds it exists for.
+ * LocaleScaffold — the shared `/ms` and `/zh` landing page body.
  *
- * Without this, `/[lang]/[[...slug]]` matches *every* unmatched URL on the site
- * (`/foo`, `/services/bad-slug`, `/a/b/c`). Next.js then renders the route
- * on demand, `notFound()` fires, and the resulting 404 body gets cached and
- * served with a **200 OK** — a soft 404. Google treats those as thin duplicate
- * pages and they burn crawl budget across an unbounded URL space.
+ * These pages exist only so shared /ms and /zh links resolve; they set the
+ * visitor's locale (cookie + localStorage) and auto-redirect to "/" after a
+ * short pause. They are noindex and canonical to "/" (declared by each page's
+ * metadata), so they never compete with the homepage in the index.
  *
- * `dynamicParams = false` makes any param outside `generateStaticParams()`
- * return a real 404, so unmatched URLs fall through to `app/not-found.tsx`.
+ * Rendered as a server component inside the (ms)/(zh) root layouts, so the
+ * document ships the correct `<html lang>` and localized chrome.
  */
-export const dynamicParams = false;
-
-export async function generateStaticParams() {
-  return supported.map((lang) => ({ lang, slug: [] }));
-}
-
-export async function generateMetadata(props: { params: Promise<{ lang: string; slug?: string[] }> }) {
-  const { lang } = await props.params;
-  if (!supported.includes(lang as SupportedLocale)) return {};
-  const info = labels[lang as SupportedLocale];
-  // These scaffold pages exist only so shared /ms and /zh links resolve; they
-  // auto-redirect to "/". They must be noindex AND canonical to "/" so they never
-  // compete with the homepage in the index.
-  return {
-    // Route through the shared optimizers so these two pages obey the same
-    // title/description budgets as the rest of the site. Written literally,
-    // the BM notice rendered a 207-char description.
-    title: optimizeTitle(info.title),
-    description: optimizeDescription(info.notice),
-    // These scaffold pages exist only so shared /ms and /zh links resolve; they
-    // auto-redirect to "/". They are noindex AND canonical to "/" so they never
-    // compete with the homepage in the index. They must also NOT emit hreflang:
-    // canonical overrides hreflang, and a self-referencing hreflang pointing at
-    // "/" would falsely claim that "/ms" and "/zh" are localised siblings of
-    // the homepage (they are redirect stubs, not real locale URLs).
-    robots: { index: false, follow: true },
-    alternates: buildAlternates("/", true)
-  };
-}
-
-export default async function LocalizedLandingPage(props: { params: Promise<{ lang: string; slug?: string[] }> }) {
-  const { lang } = await props.params;
-  if (!supported.includes(lang as SupportedLocale)) notFound();
-  const info = labels[lang as SupportedLocale];
+export function LocaleScaffold({ lang }: { lang: ScaffoldLocale }) {
+  const info = labels[lang];
 
   return (
     <>
