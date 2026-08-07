@@ -631,7 +631,9 @@
     "trustLine": "当日可约 · 有保修 · 已投保",
     "bookSubWhatsApp": "通过 WhatsApp 预订{name}",
     "verifiedBadge": "认证专家服务",
-    "allCoverage": "覆盖整个吉隆坡与雪兰莪"
+    "allCoverage": "覆盖整个吉隆坡与雪兰莪",
+    "otherServicesHeading": "您可能需要的其他服务",
+    "otherServicesSub": "探索我们在吉隆坡与雪兰莪的其他家居服务——固定价格，当日可约。"
   },
   "serviceContent": {
     "overviewEyebrow": "概述",
@@ -816,7 +818,14 @@
     "locatorUnsupported": "不支持地理定位。请通过 WhatsApp 发送您所在的地区或位置定位。",
     "locatorDetected": "已检测到位置：{lat}, {lng}。请通过 WhatsApp 发送此定位以便就近派工。",
     "locatorDenied": "未获得定位权限。您仍可通过 WhatsApp 发送所在社区或 Google 地图定位。",
-    "locatorButton": "使用我的位置"
+    "locatorButton": "使用我的位置",
+    "nearMeRelatedHeading": "您在{area}附近的其他服务",
+    "nearMeRelatedSub": "浏览{area}附近可用的其他服务——固定价格，当日可约。",
+    "nearMeBackToAreaService": "{area}{service}",
+    "nearMeAllServicesInArea": "{area}所有服务",
+    "nearMeViewArea": "查看{area}",
+    "nearMeParentHeading": "返回",
+    "nearMeOtherNearMeHeading": "{area}更多附近页面"
   },
   "content": {
     "categoryLabel": "分类",

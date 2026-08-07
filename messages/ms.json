@@ -631,7 +631,9 @@
     "trustLine": "Hari sama tersedia · Dijamin · Diinsuranskan",
     "bookSubWhatsApp": "Tempah {name} di WhatsApp",
     "verifiedBadge": "Perkhidmatan Pakar Disahkan",
-    "allCoverage": "Seluruh KL & Selangor"
+    "allCoverage": "Seluruh KL & Selangor",
+    "otherServicesHeading": "Perkhidmatan lain yang mungkin anda perlukan",
+    "otherServicesSub": "Terokai perkhidmatan rumah lain kami di seluruh KL & Selangor — harga tetap dan slot hari sama tersedia."
   },
   "serviceContent": {
     "overviewEyebrow": "Gambaran keseluruhan",
@@ -816,7 +818,14 @@
     "locatorUnsupported": "Geolokasi tidak disokong. Sila hantar kawasan atau pin lokasi anda di WhatsApp.",
     "locatorDetected": "Lokasi dikesan: {lat}, {lng}. Hantar pin ini di WhatsApp untuk dispatch terdekat.",
     "locatorDenied": "Kebenaran lokasi tidak diberikan. Anda masih boleh menghantar kawasan atau pin Google Maps anda di WhatsApp.",
-    "locatorButton": "Guna lokasi saya"
+    "locatorButton": "Guna lokasi saya",
+    "nearMeRelatedHeading": "Perkhidmatan lain berdekatan anda di {area}",
+    "nearMeRelatedSub": "Terokai perkhidmatan lain yang tersedia di {area} — harga tetap dan slot hari sama.",
+    "nearMeBackToAreaService": "{service} di {area}",
+    "nearMeAllServicesInArea": "Semua perkhidmatan di {area}",
+    "nearMeViewArea": "Lihat {area}",
+    "nearMeParentHeading": "Kembali ke",
+    "nearMeOtherNearMeHeading": "Lagi halaman berdekatan di {area}"
   },
   "content": {
     "categoryLabel": "Kategori",
