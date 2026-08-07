@@ -44,7 +44,7 @@ export function RelatedServices({ currentSlug, maxItems = 6 }: RelatedServicesPr
   if (related.length === 0) return null;
 
   return (
-    <section className="bg-slate-50 border-t border-slate-100 py-16 sm:py-20" aria-label="Related services">
+    <section className="bg-slate-50 border-t border-slate-100 py-16 sm:py-20" aria-label={t("internalLinks.defaultTitle")}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-12">
           <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">

@@ -45,6 +45,7 @@ export function LocaleServiceCostView({ slug, bundle, rates }: LocaleServiceCost
     <>
       <Breadcrumbs
         homeLabel={t("breadcrumbs.home")}
+        ariaLabel={t("breadcrumbs.navAria")}
         items={[
           { label: t("costPage.servicesCrumb"), href: "/services" },
           { label: service.title, href: `/services/${slug}` },

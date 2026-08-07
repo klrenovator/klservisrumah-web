@@ -68,6 +68,7 @@ export function LocalizedToolRoute({
       />
       <Breadcrumbs
         homeLabel={shell.homeLabel}
+        ariaLabel={shell.navAriaLabel}
         items={[
           { label: shell.indexLabel, href: TOOLS_INDEX_PATH[locale] },
           { label: content.name, href: urls[locale] }

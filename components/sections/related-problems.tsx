@@ -27,7 +27,7 @@ export function RelatedProblems({ serviceSlug, maxItems = 4 }: RelatedProblemsPr
   if (related.length === 0) return null;
 
   return (
-    <section className="bg-white border-t border-slate-100 py-16 sm:py-20" aria-label="Related problems">
+    <section className="bg-white border-t border-slate-100 py-16 sm:py-20" aria-label={t("internalLinks.commonProblems")}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-12">
           <span className="text-xs font-bold text-amber-600 tracking-widest uppercase bg-amber-50 px-4 py-1.5 rounded-full">

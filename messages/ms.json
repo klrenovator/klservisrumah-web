@@ -8,7 +8,9 @@
     "viewMore": "Lihat lagi",
     "bookService": "Tempah perkhidmatan ini",
     "bookWhatsApp": "Tempah melalui WhatsApp",
+    "bookWhatsAppAria": "Tempah melalui WhatsApp — buka sembang WhatsApp dengan KL Servis Rumah",
     "callUs": "Hubungi kami",
+    "callUsAria": "Hubungi kami — hubungi KL Servis Rumah di {phone}",
     "getQuote": "Dapatkan sebut harga percuma",
     "learnMore": "Ketahui lebih lanjut",
     "readMore": "Baca lagi",
@@ -40,6 +42,7 @@
     "support": "Sokongan",
     "copyright": "© {year} KL Servis Rumah. Hak cipta terpelihara.",
     "operatingHours": "Isnin–Ahad · 9:00 PG – 6:00 PTG (Setiap Hari Buka)",
+    "emergencyNote": "Tempahan kecemasan diterima",
     "trustStrip": {
       "insured": "Kru berinsurans & disahkan",
       "fixedQuote": "Sebutharga tetap sebelum kerja",
@@ -587,6 +590,7 @@
   },
   "breadcrumbs": {
     "home": "Utama",
+    "navAria": "Laluan navigasi",
     "about": "Tentang Kami",
     "services": "Perkhidmatan"
   },
@@ -617,7 +621,8 @@
     "selectArea": "Pilih kawasan anda...",
     "getQuote": "Dapatkan Sebut Harga Segera",
     "noDeposit": "Tiada deposit awal",
-    "googleReviews": "{count}+ ulasan Google"
+    "googleReviews": "{count}+ ulasan Google",
+    "slideAria": "Slaid {n}: {alt}"
   },
   "trustBadgesRow": {
     "insured": "Diinsuranskan & Disahkan",

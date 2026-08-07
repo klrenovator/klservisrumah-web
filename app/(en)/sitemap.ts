@@ -13,12 +13,17 @@ import { allGenericPages, clusterPages, maintenancePages } from "@/config/conten
 import { toolsList } from "@/config/tools-data";
 import { TOOLS_INDEX_PATH, toolLocaleUrls } from "@/config/tools-i18n";
 import { ESTIMATE_INDEX_PATH, estimatePath, genericEstimateSlugs } from "@/config/estimate-links";
-import { slugify } from "@/lib/utils";
+import { slugify, DEFAULT_CONTENT_DATE } from "@/lib/utils";
 
 const baseUrl = "https://www.klservisrumah.my";
 
-// Stable lastModified date to prevent unnecessary crawl budget waste
-const SITEMAP_LAST_MODIFIED = new Date("2026-07-25T00:00:00.000Z");
+// Stable lastModified date, derived from the manually-maintained content
+// release date (lib/utils.ts#DEFAULT_CONTENT_DATE) so the sitemap can never
+// drift from the schema dateModified policy or predate newly-published pages
+// (it did: /ms/services/* shipped 2026-08-07 with lastmod 2026-07-25).
+// Deliberately NOT the build date: a daily-shifting lastmod churns crawl
+// budget on pages that did not materially change.
+const SITEMAP_LAST_MODIFIED = new Date(`${DEFAULT_CONTENT_DATE}T00:00:00.000Z`);
 
 type Entry = {
   path: string;

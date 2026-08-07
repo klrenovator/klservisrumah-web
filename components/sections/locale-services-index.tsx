@@ -24,6 +24,7 @@ export function LocaleServicesIndex({ locale }: { locale: "ms" | "zh" }) {
   return (
     <>
       <Breadcrumbs
+        ariaLabel={t("breadcrumbs.navAria")}
         items={[
           { name: t("breadcrumbs.home"), href: "/" },
           { name: t("breadcrumbs.services"), href: indexPath },

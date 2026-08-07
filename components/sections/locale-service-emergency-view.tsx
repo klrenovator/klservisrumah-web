@@ -42,6 +42,7 @@ export function LocaleServiceEmergencyView({
     <>
       <Breadcrumbs
         homeLabel={t("breadcrumbs.home")}
+        ariaLabel={t("breadcrumbs.navAria")}
         items={[
           { label: t("emergencyPage.servicesCrumb"), href: "/services" },
           { label: service.title, href: `/services/${slug}` },

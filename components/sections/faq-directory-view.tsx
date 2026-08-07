@@ -20,6 +20,7 @@ const DIRECTORY_COPY: Record<SupportedLang, {
   questions: (n: number) => string;
   readMore: string;
   noMatches: string;
+  categoriesAria: string;
 }> = {
   en: {
     eyebrow: "Complete FAQ Directory",
@@ -28,6 +29,7 @@ const DIRECTORY_COPY: Record<SupportedLang, {
     questions: (n) => `${n} question${n === 1 ? "" : "s"}`,
     readMore: "Read more on",
     noMatches: "No matches in this topic.",
+    categoriesAria: "FAQ categories",
   },
   ms: {
     eyebrow: "Direktori Soalan Lazim Lengkap",
@@ -36,6 +38,7 @@ const DIRECTORY_COPY: Record<SupportedLang, {
     questions: (n) => `${n} soalan`,
     readMore: "Baca lagi di",
     noMatches: "Tiada padanan dalam topik ini.",
+    categoriesAria: "Kategori soalan lazim",
   },
   zh: {
     eyebrow: "完整常见问题目录",
@@ -44,6 +47,7 @@ const DIRECTORY_COPY: Record<SupportedLang, {
     questions: (n) => `${n} 个问题`,
     readMore: "阅读更多：",
     noMatches: "该主题下没有匹配项。",
+    categoriesAria: "常见问题类别",
   },
 };
 
@@ -122,7 +126,7 @@ export function FaqDirectoryView({ categories, totalCount, lang = "en" }: { cate
         </div>
 
         {/* Category jump nav */}
-        <nav aria-label="FAQ categories" className="mt-10 flex flex-wrap justify-center gap-2">
+        <nav aria-label={copy.categoriesAria} className="mt-10 flex flex-wrap justify-center gap-2">
           {categories.map((category) => (
             <a
               key={category.id}

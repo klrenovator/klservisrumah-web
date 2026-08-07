@@ -1007,3 +1007,79 @@ All green: lint 0/0, type-check PASS, build SUCCESS (4,245 pages), estimator 231
 ### Notes
 - The multi-root-layout pattern is now the documented architecture: route groups + `globalNotFound` (flagged experimental in next.config.mjs with rationale), root `robots.ts`, and a zh-only catch-all for canonical CJK redirects. Any future localized tree must live inside its group (`app/(ms)/ms/...`) and may need a matching `not-found.tsx` if it renders `notFound()` for unknown deep URLs.
 - Wire cost of the fix: ~1 KB gzipped per page (root-layout module maps inlined in flight data); acceptable vs. the correctness win on 112 pages.
+
+## Session 012
+
+**Date:** 2026-08-07 (UTC)
+**Branch:** `arena/019fdce5-klservisrumah-web`
+**Status:** ✅ COMPLETED
+
+### Objectives
+- Read all four governance files (master instructions, forensic audit, roadmap, session log) and continue from the highest-priority unfinished task.
+- Baseline-verify the checkout reproduces the S011 state, then run a NEW-dimension independent deep audit: full-corpus metadata quality, JSON-LD deep validation (not just parseability), NAP cross-source consistency, visible-text + a11y i18n sweep on localized trees, service-worker cache design, sitemap lastmod accuracy, next/image usage.
+- Fix every genuine issue found; verify each in the built corpus and against a live production server (`next start`).
+
+### Baseline verification (all green before changes)
+- `npm install` clean · `npm audit` 0 vulnerabilities · lint 0/0 · type-check PASS · build SUCCESS (4,240 HTML files) · `seo:audit` clean · `audit:html` 0 fatal/0 warnings · `npm outdated` shows only the deliberately-deferred majors (next 16, typescript 7, @types/node 26).
+
+### New issues discovered
+- 🟠 **N20 — all 110 localized-tree pages (55 MS + 55 ZH) server-rendered the entire site chrome in English.** Root cause: `LangProvider` initial state hardcoded `"en"` + `useTranslations` eagerly ships only the EN dictionary, so no SSR path could produce in-language navbar/footer/sticky bars. Crawlers/no-JS users never saw localized chrome; humans got a post-hydration flash. (S011 fixed `<html lang>` server-side; the *visible chrome language* was the unfixed sibling defect.)
+- 🟠 **N22 — malformed placeholder `{ warranty }` (spaces) in `messages/zh.json` `serviceContent.isRightAnswer` rendered RAW to visitors on all 29 ZH service pages** (`书面{ warranty }。`). The interpolator replaces exact `{warranty}` tokens only.
+- 🟠 **N24 — localized FAQ hubs mixed English problem titles into native content for 34 of 77 problems.** Those 34 (config/problem-data-extra.ts) have no `problemI18n` override (intended for their pages under the H3 client-switch design), but `/ms/soalan-lazim` + `/zh/chang-jian-wen-ti` interpolated the raw English titles into translated fallback templates and source labels.
+- 🟡 **N21 — breadcrumb nav landmark (`aria-label="Breadcrumb"`) and Home crumb rendered English on localized pages** across 48+ pages/tree (blog indexes/articles, service pages/indexes, FAQ hubs, tool routes).
+- 🟡 **N23 — hardcoded English a11y/visible strings**: footer "Emergency bookings accepted"; sticky-bar aria suffixes "— open WhatsApp chat with…"/"— call KL Servis Rumah at…"; FAQ-directory landmark "FAQ categories"; hero "Slide {n}:" indicators + mobile quote landmark; related-problems/related-services/service-area-links section landmarks; language-switcher "… language" suffixes.
+- 🟢 **N25 — sitemap `lastmod` was hardcoded 2026-07-25** and predated all 58 H3-pilot pages created 2026-08-07; drift from `DEFAULT_CONTENT_DATE` (2026-08-07).
+- 🟢 **N26 — service-worker navigation cache unbounded** (4,240-page site could grow the Cache Storage to hundreds of MB and trigger quota eviction).
+
+### Completed tasks / fixes
+- **N20 — per-tree locale seeding.** The three root layouts pass `initialLang` + the tree dictionary (`messages/ms.json`/`zh.json`) via `SiteChrome` → `Providers`, which calls the new idempotent `seedInitialMessages()` before children render; `LangProvider({ initialLang })` initializes state to the tree locale. Language switching semantics unchanged. Byte cost +17 KB gz (MS) / +19 KB (ZH) per localized page — offsets the ~21–23 KB lazy dictionary chunk previously fetched post-hydration; EN pages byte-neutral; dictionaries verified absent from shared first-load chunks.
+- **N21 — `Breadcrumbs` gained `ariaLabel` prop**; new dictionary key `breadcrumbs.navAria` ×3; localized call sites wired (service pages/indexes, cost/emergency views, FAQ hubs with `homeLabel="Utama"/"首页"`); tool shells gained `navAriaLabel` (config/tools-i18n.ts); four blog pages localized inline navs.
+- **N22 — corrected `{ warranty }` → `{warranty}`**; verified live: `书面1 年油漆剥落与工艺保修。` New permanent gate `scripts/i18n-parity.ts` + `npm run audit:i18n` (key parity, empty values, placeholder parity, malformed-token detection) **wired into `prebuild`** — a recurrence now fails the build.
+- **N23 — seven new/updated localized strings**: `common.bookWhatsAppAria`, `common.callUsAria`, `footer.emergencyNote`, `hero.slideAria`, `hero.quoteTitle` reuse, `faq-directory-view` per-locale `categoriesAria`, related-problems/services and service-area-links landmarks now reuse existing keys; language-switcher option aria = bare locale name.
+- **N24 — new `config/problem-faq-i18n.ts`**: hand-written native MS + ZH `title` (source label) + `topic` (grammar-correct template-interpolation phrase) for all 34 problems; `lib/faq-directory.ts` consumes them only when no full `problemI18n` override exists (zero regression for the 43 native problems). Problem pages unchanged (H3 scope).
+- **N25 — sitemap lastmod derives from `DEFAULT_CONTENT_DATE`** (single release constant; still not build-date-churned). Verified `<lastmod>2026-08-07` live.
+- **N26 — bounded SW navigation cache** (60 entries, approximate LRU, OFFLINE_URLS + hashed statics protected). Network-first strategy unchanged.
+
+### Audit dimensions validated clean (no action)
+Full-corpus metadata (0 missing/over-long titles/descriptions; all 859 dup-title groups proven to be exactly the documented canonicalised suburb pairs; CJK short-length findings = false positives of Latin heuristics) · JSON-LD deep validation (0 parse failures; NAP complete; AggregateRating 4.9/120 uniform on 224 pages; breadcrumb terminal URLs all match) · NAP consistency across config/llms.txt/aeo-faq.txt/site-summary.json · manifest icons all exist · 0 generic anchor texts · fetchpriority correct · all `fill` images carry `sizes` · no http:// mixed content · estimator chrome parity (231,501 assertions) intact.
+
+### Files modified (36)
+`app/(en)/sitemap.ts` · `app/(ms)/layout.tsx` · `app/(zh)/layout.tsx` · `app/(ms)/ms/soalan-lazim/page.tsx` · `app/(zh)/zh/chang-jian-wen-ti/page.tsx` · `app/(ms)/ms/blog/page.tsx` · `app/(ms)/ms/blog/[slug]/page.tsx` · `app/(zh)/zh/bo-ke/page.tsx` · `app/(zh)/zh/bo-ke/[slug]/page.tsx` · `app/providers.tsx` · `components/layout/site-chrome.tsx` · `components/sections/faq-directory-view.tsx` · `components/sections/hero.tsx` · `components/sections/locale-service-cost-view.tsx` · `components/sections/locale-service-emergency-view.tsx` · `components/sections/locale-service-page.tsx` · `components/sections/locale-services-index.tsx` · `components/sections/related-problems.tsx` · `components/sections/related-services.tsx` · `components/sections/service-area-links.tsx` · `components/sticky-mobile-whatsapp-bar.tsx` · `components/tools/localized-tool-route.tsx` · `components/tools/tools-index-page.tsx` · `components/ui/breadcrumbs.tsx` · `components/ui/footer.tsx` · `components/ui/language-switcher.tsx` · `config/tools-i18n.ts` · `context/lang-context.tsx` · `hooks/use-translations.ts` · `lib/faq-directory.ts` · `messages/en.json` · `messages/ms.json` · `messages/zh.json` · `package.json` · `public/sw.js` · `docs/seo-audit-report.md` (regenerated).
+
+### Files created (3)
+- `config/problem-faq-i18n.ts` — native MS/ZH title+topic map for the 34 otherwise-untranslated problems (N24).
+- `scripts/i18n-parity.ts` — site-dictionary parity gate; wired into `prebuild` (N22 defence).
+- `scripts/metadata-schema-audit.ts` — full-corpus metadata + JSON-LD deep-validation audit tool (S012 discovery).
+
+### Files deleted
+- None.
+
+### Tests/Verification performed
+1. `npm run lint` — **0 errors, 0 warnings**.
+2. `npm run type-check` — **PASS**.
+3. `npm run build` — **SUCCESS** (4,240 HTML files; prebuild gate `audit:i18n` PASS 1,072 keys ×3; estimator suite 231,501 assertions PASS).
+4. `npm run audit:html` — **0 fatal, 0 warnings** across the corpus.
+5. `npm run seo:audit` — PASS, report regenerated.
+6. Full-corpus S012-fix verification (4,240 files): English chrome strings **55→0** per tree (`>Contact Us<`, `>About Us<`, `>Home<`, `>Problems<`); `aria-label="Breadcrumb"` **48→0** per tree; `{ warranty }` **3→0** corpus-wide; "Emergency bookings accepted" on trees **→0**; sampled English problem titles on ZH tree **→0**.
+7. Placeholder-parity scan: **0 malformed tokens** in dictionaries and config; placeholder parity **1072/1072**.
+8. Dictionary parity: 1,072 keys × 3 locales — 0 missing/extra/empty.
+9. Live production-server battery (`next start -p 3100`): 13-route status sweep correct (200s, `/admin/tools` 307, `/zzz-nope` + `/ms/services/not-a-service` real 404s, `%E5%A4%A9%E8%8A%B1%E6%9D%BF%E8%AE%A1%E7%AE%97%E5%99%A8` 200); `lang` correct (ms-MY/zh-MY/en-MY); live MS chrome Malay, no English nav; live ZH warranty interpolated; live sitemap lastmod 2026-08-07; blog landmark aria localized on both trees; MS/ZH FAQ hubs show fully native fallback Q&A ("Bolehkah KL Servis Rumah membantu dengan tandas yang tidak menyiram dengan baik?", "能协助处理马桶冲水不畅问题吗？"), 0 English titles.
+10. Bundle isolation: ms/zh dictionaries verified absent from shared first-load chunks (language-switch lazy fetch still works).
+
+### Build/Lint/Type-Check Status
+All green: lint 0/0 · type-check PASS · build SUCCESS (4,240 pages) · audit:i18n PASS · estimator 231,501 PASS · audit:html 0 findings · seo:audit PASS · npm audit 0 vulnerabilities.
+
+### Current Project Status
+- 🔴 Critical `0` · 🟠 actionable High `0` in-repo · H1/H1b owner-approved brand override (documented) · H2 field-data gated · H3 full rollout owner-governed (pilot now measurably native end-to-end).
+- All 112 localized-tree pages server-render fully in-language: `<html lang>` (S011) + chrome (N20) + breadcrumb landmarks (N21) + interpolated strings (N22) + FAQ content (N24) — crawlers and no-JS users see zero English boilerplate on MS/ZH pages.
+
+### Remaining priorities / recommended next task
+1. Deploy; then browser-console CSP check (carried) + GSC/Bing re-crawl of the localized trees (S011+S012 changed both `lang` and the entire visible chrome language — treat pre-deploy pilot indexation/conversion data as under-representative; re-measure).
+2. H3 full-rollout go/no-go on the re-measured data.
+3. Owner-side: set/rotate `ADMIN_PASSWORD` + confirm other env vars; GBP / IndexNow / Bing pings.
+4. Consolidate `config/` families (M8) at the next content migration.
+5. Optional: native translation of the 34 problem-page bodies (their FAQ-hub entries are native since S012; the source pages remain English-under-switch by design).
+
+### Notes
+- The N20 provider-seeding pattern is now the documented way to add a new localized tree: pass `initialLang` + that locale's dictionary through `SiteChrome`. Add a third localized tree and the chrome is native from first render with no extra wiring.
+- `DEFAULT_CONTENT_DATE` bump procedure now also moves sitemap lastmod — one manual release-date edit per content release, exactly as the constant's comment prescribes.

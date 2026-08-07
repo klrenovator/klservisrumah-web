@@ -45,7 +45,7 @@ export default function ChineseFaqPage() {
         </div>
       </section>
 
-      <Breadcrumbs items={[{ label: "常见问题", href: "/zh/chang-jian-wen-ti" }]} />
+      <Breadcrumbs homeLabel="首页" ariaLabel="面包屑导航" items={[{ label: "常见问题", href: "/zh/chang-jian-wen-ti" }]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getSpeakableSchema(["h1", ".faq-intro", ".faq-answer"])) }} />
 
       <FAQAccordion />

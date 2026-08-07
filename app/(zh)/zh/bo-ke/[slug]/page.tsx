@@ -74,7 +74,7 @@ export default async function ChineseArticle({ params }: { params: Promise<{ slu
 
   return (
     <>
-      <nav aria-label="Breadcrumb" className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-8 text-sm">
+      <nav aria-label="面包屑导航" className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-8 text-sm">
         <ol className="flex items-center gap-2 text-[#475569]">
           <li><Link href="/" className="hover:text-[#0EA5E9]">首页</Link></li>
           <li className="text-slate-300">/</li>
