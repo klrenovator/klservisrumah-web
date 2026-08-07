@@ -1317,3 +1317,109 @@ Important Rules
 - Continue improving the project until the entire roadmap is completed.
 
 Your goal is to make the website production-ready through multiple sessions while maintaining complete progress history.
+
+SESSION LOG MANAGEMENT (MANDATORY)
+
+In addition to maintaining "AI_OPTIMIZATION_ROADMAP.md", you must also maintain a permanent project history file named:
+
+"SESSION_LOG.md"
+
+This file serves as the complete historical record of all work performed on this project.
+
+---
+
+At the Beginning of Every Session
+
+Before making any changes:
+
+1. Read "MASTER_AI_AGENT_INSTRUCTIONS.md".
+2. Read "KLServisRumah-Complete-Forensic-Audit.md".
+3. Read "AI_OPTIMIZATION_ROADMAP.md".
+4. Read "SESSION_LOG.md".
+
+Use these files to understand previous work and continue from the highest-priority unfinished task.
+
+Never restart completed work.
+
+---
+
+At the End of Every Session
+
+Append a new session entry to "SESSION_LOG.md".
+
+Do not overwrite previous entries.
+
+Keep the complete project history.
+
+Each session entry should include:
+
+- Session Number
+- Date & Time
+- Objectives
+- Tasks Completed
+- Issues Fixed
+- New Issues Discovered
+- Files Modified
+- Files Created
+- Files Deleted (with reasons)
+- Tests/Verification Performed
+- Build/Lint/Type Check Status
+- Current Project Status
+- Remaining High-Priority Tasks
+- Recommended Next Task
+- Notes
+
+---
+
+Example Format
+
+Session 001
+
+Date: YYYY-MM-DD HH:MM
+
+Objectives
+
+- ...
+
+Completed
+
+- ✅ ...
+
+New Issues Found
+
+- ...
+
+Files Modified
+
+- ...
+
+Files Created
+
+- ...
+
+Files Deleted
+
+- ...
+
+Verification
+
+- npm install
+- npm run lint
+- npm run type-check
+- npm run build
+
+Current Status
+
+...
+
+Next Session Should Start With
+
+...
+
+---
+
+Never delete previous session history.
+
+Always append new sessions to the end of the file.
+
+"SESSION_LOG.md" must remain an accurate chronological history of the project from the first session until the website is fully production-ready.
