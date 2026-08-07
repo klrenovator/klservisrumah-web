@@ -6,6 +6,8 @@ import { suburbPages } from "@/config/suburb-data";
 import { siteConfig } from "@/config/site";
 import { trackFormSubmit, trackWhatsAppClick } from "@/lib/analytics";
 import { useTranslations } from "@/hooks/use-translations";
+import { useLang } from "@/context/lang-context";
+import { getLocalizedService } from "@/lib/service-i18n";
 
 const serviceOptions = Object.values(servicesData);
 const propertyTypeKeys = ["landed", "condo", "commercial", "shoplot", "other"] as const;
@@ -31,7 +33,11 @@ const initialState: FormState = {
   suburb: "",
   propertyType: "",
   date: "",
-  time: "Flexible",
+  // Stored as the dictionary KEY (e.g. "flexible"), translated at render time —
+  // storing a display string here broke the select + WhatsApp message whenever
+  // the visitor's language differed from English (the default was the literal
+  // English label "Flexible", which matched no translated <option>).
+  time: "flexible",
   details: "",
   hasPhotos: "yes",
   name: "",
@@ -44,8 +50,13 @@ export function MultiStepBookingForm() {
   const [form, setForm] = useState<FormState>(initialState);
   const [submitted, setSubmitted] = useState(false);
   const t = useTranslations();
+  const { lang } = useLang();
 
-  const selectedService = form.service ? servicesData[form.service] : null;
+  // Apply the service's MS/ZH content overrides (title, sub-services) so the
+  // form chrome AND the data match the visitor's language — previously the
+  // step-1/step-2 options and the WhatsApp handoff always used English titles
+  // even when the rest of the form was translated.
+  const selectedService = form.service ? getLocalizedService(servicesData[form.service], lang) : null;
   const subServices = selectedService?.subServices ?? [];
 
   const canContinue = useMemo(() => {
@@ -73,9 +84,9 @@ export function MultiStepBookingForm() {
       `${t("contact.fields.service")}: ${serviceTitle}`,
       `${t("contact.fields.subService")}: ${form.subService || t("contact.notSure")}`,
       `${t("contact.fields.area")}: ${suburb}`,
-      `${t("contact.fields.propertyType")}: ${form.propertyType}`,
+      `${t("contact.fields.propertyType")}: ${t(`contact.propertyTypes.${form.propertyType}`)}`,
       `${dateLabel}: ${form.date}`,
-      `${t("contact.timeWindow")}: ${form.time}`,
+      `${t("contact.timeWindow")}: ${t(`contact.timeWindows.${form.time}`)}`,
       `${t("contact.fields.message")}: ${form.details}`,
       `${t("contact.photosReady")}: ${form.hasPhotos}`
     ].filter(Boolean).join("\n");
@@ -114,12 +125,15 @@ export function MultiStepBookingForm() {
         {step === 1 && (
           <StepShell title={t("contact.fields.service")}>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-              {serviceOptions.map((service) => (
-                <button key={service.slug} onClick={() => update("service", service.slug)} className={`rounded-2xl border p-4 text-left transition ${form.service === service.slug ? "border-[#0284C7] bg-[#E0F2FE]" : "border-slate-100 bg-slate-50 hover:bg-white"}`}>
-                  <span className="text-sm font-extrabold text-[#075985]">{service.title}</span>
-                  <span className="mt-1 block text-xs font-bold text-[#0EA5E9]">{t("common.fromLabel")} {service.startPrice}</span>
-                </button>
-              ))}
+              {serviceOptions.map((service) => {
+                const localized = getLocalizedService(service, lang);
+                return (
+                  <button key={service.slug} onClick={() => update("service", service.slug)} className={`rounded-2xl border p-4 text-left transition ${form.service === service.slug ? "border-[#0284C7] bg-[#E0F2FE]" : "border-slate-100 bg-slate-50 hover:bg-white"}`}>
+                    <span className="text-sm font-extrabold text-[#075985]">{localized.title}</span>
+                    <span className="mt-1 block text-xs font-bold text-[#0EA5E9]">{t("common.fromLabel")} {service.startPrice}</span>
+                  </button>
+                );
+              })}
             </div>
           </StepShell>
         )}
@@ -152,7 +166,7 @@ export function MultiStepBookingForm() {
                 {t("contact.fields.propertyType")}
                 <select id="booking-propertyType" value={form.propertyType} onChange={(event) => update("propertyType", event.target.value)} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]">
                   <option value="">{t("contact.selectType")}</option>
-                  {propertyTypeKeys.map((key) => <option key={key} value={t(`contact.propertyTypes.${key}`)}>{t(`contact.propertyTypes.${key}`)}</option>)}
+                  {propertyTypeKeys.map((key) => <option key={key} value={key}>{t(`contact.propertyTypes.${key}`)}</option>)}
                 </select>
               </label>
             </div>
@@ -176,7 +190,7 @@ export function MultiStepBookingForm() {
               <label htmlFor="booking-time" className="flex flex-col gap-2 text-xs font-bold uppercase tracking-wider text-[#075985]">
                 {t("contact.timeWindow")}
                 <select id="booking-time" value={form.time} onChange={(event) => update("time", event.target.value)} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm normal-case text-[#075985] outline-none focus:border-[#0EA5E9]">
-                  {timeWindowKeys.map((key) => <option key={key} value={t(`contact.timeWindows.${key}`)}>{t(`contact.timeWindows.${key}`)}</option>)}
+                  {timeWindowKeys.map((key) => <option key={key} value={key}>{t(`contact.timeWindows.${key}`)}</option>)}
                 </select>
               </label>
             </div>

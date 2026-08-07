@@ -43,7 +43,10 @@ export function LocaleServiceView({ service, sub }: LocaleServiceViewProps) {
   return (
     <>
       {/* Calculator/Estimator at TOP - before hero image for immediate access */}
-      <ServiceEstimatorBlock slug={service.slug} title={service.title} warranty={service.warranty} />
+      {/* Uses the localized title/warranty (not the raw English service) so the
+          estimator wizard, package name and share-bar text stay in the
+          visitor's language. */}
+      <ServiceEstimatorBlock slug={service.slug} title={localized.title} warranty={localized.warranty} />
       
       {/* Hero section comes AFTER estimator */}
       <ServiceDetailHero service={localized} />

@@ -76,7 +76,6 @@ export default async function EstimateServicePage(props: { params: Promise<{ slu
       />
       <EstimateSharePage
         slug={service.slug}
-        title={service.title}
         warranty={service.warranty}
         startPrice={service.startPrice}
       />

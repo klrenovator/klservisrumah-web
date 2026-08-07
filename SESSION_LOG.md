@@ -180,3 +180,92 @@ Color-token migration touched ~86 `.tsx` files (see H1/H1b above; per-file conte
 - AA palette recoverable from commit `3887cfd1e6ef400904b9e7c0ba19630876401d67`.
 
 ---
+## Session 003
+
+**Date:** 2026-08-07 (UTC)
+**Branch:** `arena/019fdb39-klservisrumah-web` (from `main` @ `7b8cb55`, which contained S001 + S002)
+**Status:** ✅ COMPLETED
+
+### Objectives
+- Read all four governance files (`MASTER_AI_AGENT_INSTRUCTIONS.md`, `KLServisRumah-Complete-Forensic-Audit.md`, `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`) and verify S001/S002 claims against the actual checkout.
+- Perform an independent deep audit of the entire repository (security, SEO, multilingual, performance, assets, dependencies, a11y).
+- Continue from the highest-priority unfinished actionable task: **backlog item 4 — MS/ZH contact & booking chrome parity** (forms, estimator surfaces) + any new issues found.
+- Verify every fix (lint / type-check / build / estimator tests / SEO audit / runtime smoke tests) and update the roadmap + session log.
+
+### Baseline verification (before changes)
+- `npm install` clean · `npm audit` **0 vulnerabilities** · `npm run lint` 0/0 · `npm run type-check` PASS · `npm run build` SUCCESS (4,187 pages) · estimator suite 231,498 assertions PASS.
+- Codebase-wide static greps: 0 × `any`, 0 × `@ts-ignore`/`eslint-disable`, 0 × `console.log` in source, 0 × TODO/FIXME.
+- Message dictionaries: **1,027 keys × 3 locales — 0 missing, 0 extra, 0 empty values, 0 placeholder mismatches** (scripted check).
+- Admin auth (C1), error beacon (M1), middleware gates, robots/sitemap — re-verified intact.
+
+### Tasks completed
+- ✅ **M9 (🟠 High) — Trilingual parity on conversion + estimator surfaces fixed.**
+  - `components/booking/multi-step-booking-form.tsx`: step-1 service cards and step-2 sub-services now render `getLocalizedService(service, lang)` (titles, names, descriptions); the WhatsApp handoff message uses the localized service title; property-type and time-window selects now store **dictionary keys** and translate at render — fixing the hardcoded English default `time: "Flexible"`, which previously matched no translated `<option>` and always sent "Flexible" in the WhatsApp message regardless of language.
+  - `components/sections/locale-service-view.tsx`: `ServiceEstimatorBlock` now receives `localized.title`/`localized.warranty` instead of the raw English service (estimator wizard, package name and share-bar text now follow the language pill).
+  - `components/estimate/estimate-share-page.tsx`: dropped the English `title` prop; computes `localizedTitle` client-side for translated sentences ("Pengira kos {service}"), the estimator spec and the share bar.
+  - `components/estimate/estimate-hub.tsx`: card headings, WhatsApp forward text and aria-labels use `localizedTitle(entry)`.
+  - Verified all 28 services carry complete `ms` + `zh` i18n overrides (scripted check: 28/28 ms, 28/28 zh).
+- ✅ **A1 (🟡 Medium) — Exit-intent modal a11y.** `components/exit-intent-popup.tsx` rewritten: Escape closes; focus moves to close button on open; Tab trapped within the dialog (visible focusables only); focus restored to the previously-focused element on dismiss; `aria-labelledby`/`aria-describedby` wired to the heading/body.
+- ✅ **L4 (🟢 Low) — 6 dead hero SVGs deleted** (`public/hero-ceiling-fan.svg`, `hero-lighting.svg`, `hero-plaster-ceiling.svg`, `hero-skim-coat.svg`, `hero-tiling.svg`, `hero-water-heater.svg`). Zero references in `app/`, `components/`, `config/`, `lib/`, `scripts/`, `public/` (full-repo sweep); the 6 services use `/hero/home-services-*.jpg` photos instead. Recoverable from git history.
+- ✅ **L5 (🟢 Low) — stale `public/robots-ai.txt` deleted.** Leftover AI-crawler allow-list, fully superseded by `app/robots.ts` (same bots + more, both sitemaps). Zero references.
+- ✅ **L6 (🟢 Low) — `public/logo/logo.jpg` deleted.** Byte-identical duplicate of `public/logo/og-image.jpg` (md5 `7529284c926ae6f95ff374236b82b376`); zero references (`config/site.ts` uses `logo.png` + `og-image.jpg`).
+
+### New issues discovered this session
+- 🟠 **M9** — booking form + service-page estimator + `/estimate` share/hub pages embedded raw English service names into translated MS/ZH UI (mixed-language sentences), and the booking form's time select default (`"Flexible"`) was a hardcoded English display string that never matched translated options. **Fixed.**
+- 🟡 **A1** — exit-intent modal lacked Escape/initial-focus/Tab-trap/focus-restore + accessible name/description. **Fixed.**
+- 🟢 **L4/L5/L6** — dead assets (6 SVGs, stale robots-ai.txt, duplicate logo.jpg). **Fixed.**
+
+### Files modified (6 source + 1 generated report)
+- `components/booking/multi-step-booking-form.tsx` — localized service/sub-service rendering, key-based select values, localized WhatsApp handoff.
+- `components/sections/locale-service-view.tsx` — localized title/warranty into `ServiceEstimatorBlock`.
+- `components/estimate/estimate-share-page.tsx` — client-side localized title (removed English `title` prop).
+- `components/estimate/estimate-hub.tsx` — localized card titles + WhatsApp forward text.
+- `app/estimate/[slug]/page.tsx` — dropped now-unused `title` prop.
+- `components/exit-intent-popup.tsx` — full dialog a11y (Escape, focus management, trap, labelled-by/described-by).
+- `docs/seo-audit-report.md` — regenerated by `npm run seo:audit` (timestamp only).
+- `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md` — governance updates (this entry).
+
+### Files deleted (8, all confirmed unused)
+- `public/hero-ceiling-fan.svg`, `public/hero-lighting.svg`, `public/hero-plaster-ceiling.svg`, `public/hero-skim-coat.svg`, `public/hero-tiling.svg`, `public/hero-water-heater.svg` — dead assets; services use JPG hero photos.
+- `public/robots-ai.txt` — stale; superseded by `app/robots.ts`.
+- `public/logo/logo.jpg` — byte-identical duplicate of `og-image.jpg`.
+
+### Tests/Verification performed
+1. `npm install` — clean.
+2. `npm audit` — **0 vulnerabilities**.
+3. `npm run lint` — **0 errors, 0 warnings** (incl. new code).
+4. `npm run type-check` — **PASS**.
+5. `npm run build` — **SUCCESS** (4,187 pages; prebuild generators + estimator suite: 231,498 assertions, 0 failures).
+6. `npm run seo:audit` — clean, report regenerated.
+7. Message-dictionary parity script — 1,027 keys × 3 locales, 0 missing/extra/empty/placeholder-mismatch.
+8. i18n coverage script — 28/28 services have `ms` + `zh` overrides.
+9. Asset-usage sweep — 0 references to any deleted file (code, data, scripts, docs, public).
+10. Production-server smoke tests (`next start`, port 3100): `/contact` 200 · `/estimate` 200 · `/estimate/painting` 301 → `/tools/painting-calculator` · `/estimate/cleaning` 200 · deleted assets 404 · `/robots.txt` regenerated correctly (incl. `Disallow: /admin/`).
+
+### Build/Lint/Type-Check Status
+All green: lint 0/0, type-check PASS, build SUCCESS, estimator tests PASS, SEO audit clean.
+
+### Current Project Status
+- 🔴 Critical: **0 remaining.**
+- 🟠 High: M9 ✅ (new, fixed this session); H1/H1b business override (vibrant brand restored, documented); H2 field-data gated; H3 🔒 owner decision.
+- 🟡 Medium: A1 ✅ (new, fixed this session); M1–M5, M7 ✅; M8 deferred to content-migration milestone.
+- 🟢 Low: L1–L6 ✅ (L4–L6 new, fixed this session).
+- Production-ready pending owner-side env vars + H3 decision (see below).
+
+### Remaining High-Priority Tasks (owner-side / data-gated)
+1. **H3 decision & pilot** — owner go/no-go on per-locale SSG; recommended no-decision-needed intermediate: extend the 6 real localized trees with top ~10 services × 2 locales as a pilot.
+2. **H2 checkpoint** — revisit `/faq` page size only after real CrUX/PageSpeed field data.
+3. **Set `ADMIN_PASSWORD`** (long random passphrase) + confirm `INDEXNOW_SECRET`/`CRON_SECRET`/`PAGESPEED_API_KEY`/`NEXT_PUBLIC_GA_ID` in Vercel; rotate burned `KL2024Admin` anywhere reused.
+4. Google Business Profile + IndexNow + Bing Webmaster post-deploy ping confirmation (owner-side).
+
+### Recommended Next Task
+1. H3 pilot content (top ~10 services × 2 locales real localized pages) — **or** if the owner wants to defer H3, the next actionable item is backlog #5 (owner-side pings) or a visual-QA pass (#8) once a browser is available.
+2. When next content milestone happens, consolidate `config/` families (M8).
+
+### Notes
+- All fixes are behavior-preserving for EN; MS/ZH users now see coherent, single-language UI on the booking form, service-page estimator and `/estimate` surfaces.
+- The `/estimate` hub is owner-oriented by design (built for copying share links) but now also follows the language pill.
+- No color, schema, content, or business-logic changes were made this session.
+- Deleted files remain recoverable from git history; no active functionality removed.
+
+---

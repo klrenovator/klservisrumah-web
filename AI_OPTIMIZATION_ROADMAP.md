@@ -56,7 +56,30 @@ All findings below were **independently re-verified in Session 001** against the
   - **Why blocked:** generating ~4,100 pages × 2 locales at build time is a strategic project (build cost ×3, translation quality gate, Google scaled-content risk). Requires an explicit owner go/no-go with budget. Options analysis recorded in Session 001 notes.
   - Session 001: verified the hreflang/sitemap behavior is coherent for the current one-URL model (self-consistent, no conflicting signals); deepened the 6 real localized trees is the safe incremental path.
 
-### 🟡 Medium
+### 🟠 High (new in S003)
+
+- ✅ **[2026-08-07 / S003] M9. Trilingual parity gaps on the primary conversion + estimator surfaces (EN-only content leaked into MS/ZH UI)**
+  - Four surfaces embedded the RAW English service title/name into otherwise-translated UI, producing mixed-language sentences for MS/ZH visitors:
+    - `components/booking/multi-step-booking-form.tsx` — step-1 service cards (`service.title`), step-2 sub-service names/descriptions, and the WhatsApp handoff message (`serviceTitle`) were English even when the form chrome was translated. Also: `initialState.time = "Flexible"` stored the English display label, so the select matched no translated `<option>` and the WhatsApp message always said "Flexible" regardless of language; property-type/time stored display strings instead of keys.
+    - `components/sections/locale-service-view.tsx` — `ServiceEstimatorBlock` received `service.title`/`service.warranty` (raw English) instead of `localized.*`, so the estimator wizard, package name and share-bar text were English while the rest of the service page was localized.
+    - `components/estimate/estimate-share-page.tsx` — `title` prop (English) embedded into translated sentences ("Pengira kos {service}", share text).
+    - `components/estimate/estimate-hub.tsx` — card headings + WhatsApp forward text used `entry.title` (English).
+  - **Fix:** booking form + share page + hub now resolve `getLocalizedService(servicesData[slug], lang)` (all 28 services carry ms+zh overrides — verified); `locale-service-view` passes `localized.title`/`localized.warranty`; form stores property-type/time as dictionary keys translated at render + in the message. Verified 1027-key × 3-locale dictionary parity (0 missing/extra/empty/placeholder-mismatch), full build, and prod-server smoke tests.
+
+### 🟡 Medium (new in S003)
+
+- ✅ **[2026-08-07 / S003] A1. Exit-intent modal violated dialog a11y contract** — `role="dialog"`/`aria-modal="true"` with no Escape-to-close, no initial focus, no Tab trap, no focus restore, no `aria-labelledby`/`aria-describedby`.
+  - **Fix:** `components/exit-intent-popup.tsx` rewritten — Escape closes, focus moves to the close button on open, Tab cycles within the dialog (visible focusables only), focus restored to the previously-focused element on dismiss, dialog titled/described via `aria-labelledby`/`aria-describedby`.
+
+### 🟢 Low (new in S003)
+
+- ✅ **[2026-08-07 / S003] L4. Six dead hero SVGs** — `public/hero-ceiling-fan.svg`, `hero-lighting.svg`, `hero-plaster-ceiling.svg`, `hero-skim-coat.svg`, `hero-tiling.svg`, `hero-water-heater.svg`. Zero references in `app/`/`components/`/`config/`/`lib/`/`scripts/`/`public/`; the 6 services they were drawn for switched to `/hero/home-services-*.jpg` photos. **Deleted** (git history preserves them).
+- ✅ **[2026-08-07 / S003] L5. Stale `public/robots-ai.txt`** — a leftover AI-crawler allow-list fully superseded by `app/robots.ts` (which allow-lists the same bots + more and references both sitemaps). Zero references anywhere. **Deleted.**
+- ✅ **[2026-08-07 / S003] L6. `public/logo/logo.jpg` byte-identical duplicate of `og-image.jpg`** (md5 `7529284c…`) — zero references; `config/site.ts` uses `logo.png`/`og-image.jpg`. **Deleted.**
+
+---
+
+### 🟡 Medium (S001–S002 items)
 
 - ✅ **[2026-08-07 / S001] M1. No production error monitoring** — only `console.error` in `app/error.tsx`.
   - **Fix:** zero-dependency client error beacon — `app/error.tsx` + a global `error`/`unhandledrejection` listener report via `navigator.sendBeacon` to new `/api/error-log` route (sanitized, no PII, rate-limited), which logs structured JSON server-side → surfaces in Vercel function logs. No new packages, no external account required.
@@ -73,7 +96,7 @@ All findings below were **independently re-verified in Session 001** against the
 - ✅ **[2026-08-07 / S001] M7. Three components without explicit responsive classes** (`faq-search-filter`, `locale-decision-tree`, `locale-service-view`)
   - Reviewed: both `locale-*` files are layout-neutral wrappers delegating to responsive children (`DecisionTree` = `grid-cols-1 md:grid-cols-3`; detail-hero/content sections all carry `sm:`/`lg:` systems); `faq-search-filter` is a centred `max-w-2xl` fluid block. **No defect found; no changes required.**
 
-### 🟢 Low
+### 🟢 Low (S001–S002 items)
 
 - ✅ **[2026-08-07 / S001] L1. Stale `public/robots.txt`** shadowed by `app/robots.ts` (misleading to future readers) — **deleted** (confirmed inert: App Router `robots.ts` wins; no `output: "export"`).
 - ✅ **[2026-08-07 / S001] L2. Misplaced doc comment in `lib/utils.ts`** — the `toIsoDate` block sat above `warrantyLead`; **moved** to the correct function.
@@ -88,7 +111,7 @@ Objectives: scaffolding + full re-verification + fix all 🔴 and as many 🟠/�
 Completed: Phase 0, C1, H1, M1–M5, M7, L1–L3, plus verification suite (lint / type-check / build / estimator tests / SEO snapshot).
 Remaining: H2 partial (field-data gated), H3 🔒 owner decision, M8 deferred.
 
-### ✅ Session 002 — 2026-08-07 (current)
+### ✅ Session 002 — 2026-08-07
 Objectives:
 - Address owner feedback on WhatsApp brand colors (reported as "achy ni lgg rye" after WCAG AA migration).
 - Restore original vibrant brand palette per klrenovator.com reference + screenshot provided.
@@ -106,6 +129,22 @@ Remaining: H2 field-data gated, H3 🔒 owner decision, M8 deferred — unchange
 Business note for H1:
 - ✅ S001 fixed AA (5.01:1 green, 5.94:1 blue) → ✅ S002 reverted to brand `#25D366`/`#0EA5E9` per owner (`klrenovator.com` reference). Status changed from "Fixed" to "Business override — owner prefers brand vibrancy; documented, not a regression". If AA is required later, use S001's `#15803D`/`#0369A1` mapping (still in git history: commit 3887cfd).
 
+### ✅ Session 003 — 2026-08-07 (current)
+Objectives:
+- Read all governance files; verify S001/S002 claims against the checkout.
+- Independent deep audit of the entire repository (static greps, message-dictionary parity, asset-usage sweep, security re-check, runtime smoke tests).
+- Fix the highest-priority unfinished actionable work: trilingual parity on conversion/estimator surfaces (backlog item 4) + a11y + dead assets.
+- Verify: lint / type-check / build / estimator tests / SEO audit / prod-server smoke tests.
+
+Completed:
+- **M9 (High) — trilingual parity on conversion surfaces fixed**: booking form (`multi-step-booking-form.tsx`) now localizes service titles, sub-service names/descriptions and the WhatsApp handoff via `getLocalizedService(…, lang)`; form stores property-type/time as dictionary keys translated at render (fixes the hardcoded English `"Flexible"` default that matched no translated `<option>`); `locale-service-view.tsx` passes `localized.title`/`localized.warranty` to `ServiceEstimatorBlock`; `estimate-share-page.tsx` and `estimate-hub.tsx` localize titles embedded in translated sentences + WhatsApp share text.
+- **A1 (Medium) — exit-intent modal dialog a11y fixed**: Escape-to-close, initial focus, Tab trap, focus restore, `aria-labelledby`/`aria-describedby`.
+- **L4/L5/L6 (Low) — dead assets removed**: 6 unused hero SVGs (`hero-ceiling-fan/lighting/plaster-ceiling/skim-coat/tiling/water-heater.svg`), stale `public/robots-ai.txt`, and `logo.jpg` (byte-identical duplicate of `og-image.jpg`). All confirmed 0-references repo-wide; git history preserves them.
+- Verification: `npm install` clean; `npm audit` 0 vulns; `npm run lint` 0/0; `npm run type-check` PASS; `npm run build` SUCCESS (4187 pages); estimator suite 231,498 assertions PASS; `npm run seo:audit` clean; prod-server smoke: `/contact` 200, `/estimate` 200, `/estimate/painting` 301→tool, deleted assets 404, robots.txt regenerated. Message dictionaries: 1027 keys × 3 locales, 0 missing/extra/empty/placeholder-mismatch. All 28 services have ms+zh i18n overrides.
+- No changes to business logic; no color/schema/content changes.
+
+Remaining: H2 field-data gated, H3 🔒 owner decision, M8 deferred, backlog items 5/7/8/9 — unchanged.
+
 ---
 
 ## Phase 3 — Backlog (post-critical roadmap)
@@ -118,14 +157,14 @@ Priority-ordered remaining work:
 3. ⬜ **Set `ADMIN_PASSWORD` + confirm `INDEXNOW_SECRET`/`CRON_SECRET`/`GOOGLE_API_KEY` env vars in production** (owner action in Vercel; cannot be done from the repo). Rotate the burned `KL2024Admin` everywhere else it may have been reused.
 
 ### 🟡 Medium
-4. ⬜ Extend real localized content depth: MS/ZH contact & booking chrome parity audit (forms, calculator output language consistency).
+4. ✅ **[2026-08-07 / S003]** MS/ZH contact & booking chrome parity audit — **completed as M9** (booking form, service-page estimator block, `/estimate` hub + share pages now fully localized; form time/property-type select values are language-keyed). Residual: `/estimate` hub is owner-oriented (EN-first by design), but now follows the language pill too.
 5. ⬜ Google Business Profile + IndexNow + Bing Webmaster post-deploy ping confirmation (owner-side, flagged in prior docs).
 6. ⬜ Consolidate `config/` families at a content-migration milestone (M8).
 7. ⬜ Optional: wire Sentry (or similar) **if** Vercel-log-based error beacon proves insufficient once traffic grows (M1 implemented the zero-cost baseline).
 
 ### 🟢 Low
 8. ⬜ Visual QA pass on real devices (no renderer available in sandbox): spot-check the 3 fluid components + WhatsApp CWA states on small phones.
-9. ⬜ Periodic `npm outdated` / `npm audit` hygiene (last run: Session 001 — see SESSION_LOG).
+9. ⬜ Periodic `npm outdated` / `npm audit` hygiene (audit re-run Session 003: 0 vulnerabilities; `npm outdated` not yet run — package pins are current and deliberate, see SESSION_LOG S001).
 
 ### Long-term opportunities (not defects)
 - Grow the 6 real localized trees (proven pattern) as the de-facto expansion path for MS/ZH search visibility.
