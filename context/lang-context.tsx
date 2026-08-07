@@ -29,8 +29,22 @@ function detectLocaleFromPath(): SupportedLang | null {
   return null;
 }
 
-export function LangProvider({ children }: { children: React.ReactNode }) {
-  const [lang, setLangState] = useState<SupportedLang>("en");
+export function LangProvider({
+  children,
+  initialLang = "en",
+}: {
+  children: React.ReactNode;
+  /**
+   * Tree-native locale passed by the per-language root layouts (`(en)`/`(ms)`/`(zh)`).
+   * Only the INITIAL value is affected: the effect below still reconciles the
+   * URL prefix / localStorage / cookie after hydration, so client-side language
+   * switching behaves exactly as before. Without this, every page prerendered
+   * "en" chrome, and visitors (plus crawlers, which never run the effect)
+   * received an English navbar/footer on Malay and Chinese pages.
+   */
+  initialLang?: SupportedLang;
+}) {
+  const [lang, setLangState] = useState<SupportedLang>(initialLang);
 
   useEffect(() => {
     // Priority 1: URL path prefix (for SEO landing pages at /ms, /zh)

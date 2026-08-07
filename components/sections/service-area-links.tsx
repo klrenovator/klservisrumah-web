@@ -38,7 +38,7 @@ export function ServiceAreaLinks({ serviceSlug, maxItems = 8 }: ServiceAreaLinks
   const areas = TOP_AREAS.slice(0, maxItems);
 
   return (
-    <section className="bg-slate-50 border-t border-slate-100 py-16 sm:py-20" aria-label="Service areas">
+    <section className="bg-slate-50 border-t border-slate-100 py-16 sm:py-20" aria-label={t("internalLinks.serviceAreas")}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-12">
           <span className="text-xs font-bold text-emerald-600 tracking-widest uppercase bg-emerald-50 px-4 py-1.5 rounded-full">

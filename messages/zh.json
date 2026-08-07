@@ -8,7 +8,9 @@
     "viewMore": "查看更多",
     "bookService": "预订此服务",
     "bookWhatsApp": "通过 WhatsApp 预订",
+    "bookWhatsAppAria": "通过 WhatsApp 预订 — 打开与 KL Servis Rumah 的 WhatsApp 对话",
     "callUs": "联系我们",
+    "callUsAria": "联系我们 — 致电 KL Servis Rumah：{phone}",
     "getQuote": "获取免费报价",
     "learnMore": "了解更多",
     "readMore": "阅读更多",
@@ -40,6 +42,7 @@
     "support": "支持",
     "copyright": "© {year} KL Servis Rumah. 版权所有。",
     "operatingHours": "周一至周日 · 上午 9:00 – 下午 6:00（每日营业）",
+    "emergencyNote": "接受紧急预约",
     "trustStrip": {
       "insured": "正规保险与专业认证团队",
       "fixedQuote": "施工前确认一口价报价",
@@ -587,6 +590,7 @@
   },
   "breadcrumbs": {
     "home": "首页",
+    "navAria": "面包屑导航",
     "about": "关于我们",
     "services": "服务"
   },
@@ -617,7 +621,8 @@
     "selectArea": "选择您的区域...",
     "getQuote": "获取即时报价",
     "noDeposit": "无需预付定金",
-    "googleReviews": "{count}+ Google评价"
+    "googleReviews": "{count}+ Google评价",
+    "slideAria": "幻灯片 {n}：{alt}"
   },
   "trustBadgesRow": {
     "insured": "已投保与查证",
@@ -689,7 +694,7 @@
     "compMaterials": "材料与配件",
     "compMaterialsOurs": "来自马来西亚可靠供应商的正品或OEM等效配件。更换前先报价。",
     "compMaterialsTheirs": "零件来源不明。部分使用回收或假冒组件。",
-    "isRightAnswer": "是您需要{tagline}时的正确选择。服务从 {startPrice} 起，包含透明分项报价、全程保险以及书面{ warranty }。KL Servis Rumah 会在开工前确认具体范围、价格及任何材料费用——预算清晰，绝无隐藏费用。",
+    "isRightAnswer": "是您需要{tagline}时的正确选择。服务从 {startPrice} 起，包含透明分项报价、全程保险以及书面{warranty}。KL Servis Rumah 会在开工前确认具体范围、价格及任何材料费用——预算清晰，绝无隐藏费用。",
     "ctaHeading": "准备好预订{name}了吗？",
     "ctaSub": "获取固定报价、当日上门时段和书面保修——通过 WhatsApp 告诉我们您的需求，或先试用即时估价工具。",
     "estimateCta": "获取即时估价",

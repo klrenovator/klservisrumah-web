@@ -8,7 +8,9 @@
     "viewMore": "View more",
     "bookService": "Book this service",
     "bookWhatsApp": "Book via WhatsApp",
+    "bookWhatsAppAria": "Book via WhatsApp — open WhatsApp chat with KL Servis Rumah",
     "callUs": "Call us",
+    "callUsAria": "Call us — call KL Servis Rumah at {phone}",
     "getQuote": "Get a free quote",
     "learnMore": "Learn more",
     "readMore": "Read more",
@@ -40,6 +42,7 @@
     "support": "Support",
     "copyright": "© {year} KL Servis Rumah. All rights reserved.",
     "operatingHours": "Mon–Sun · 9:00 AM – 6:00 PM (Everyday Open)",
+    "emergencyNote": "Emergency bookings accepted",
     "trustStrip": {
       "insured": "Insured & verified crew",
       "fixedQuote": "Fixed quote before work",
@@ -587,6 +590,7 @@
   },
   "breadcrumbs": {
     "home": "Home",
+    "navAria": "Breadcrumb",
     "about": "About Us",
     "services": "Services"
   },
@@ -617,7 +621,8 @@
     "selectArea": "Select your area...",
     "getQuote": "Get My Instant Quote",
     "noDeposit": "No upfront deposits",
-    "googleReviews": "{count}+ Google reviews"
+    "googleReviews": "{count}+ Google reviews",
+    "slideAria": "Slide {n}: {alt}"
   },
   "trustBadgesRow": {
     "insured": "Insured & Verified",

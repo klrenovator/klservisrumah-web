@@ -145,6 +145,7 @@ export function LocaleServicePage({ locale, slug }: { locale: "ms" | "zh"; slug:
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
 
       <Breadcrumbs
+        ariaLabel={t("breadcrumbs.navAria")}
         items={[
           { name: t("breadcrumbs.home"), href: "/" },
           { name: t("breadcrumbs.services"), href: indexPath },

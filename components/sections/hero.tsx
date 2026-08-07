@@ -246,7 +246,7 @@ export function Hero() {
               type="button"
               onClick={() => setSlide(i)}
               className="flex h-8 w-8 items-center justify-center rounded-full"
-              aria-label={`Slide ${i + 1}: ${img.alt}`}
+              aria-label={t("hero.slideAria", { n: i + 1, alt: img.alt })}
               aria-pressed={i === current}
             >
               <span
@@ -342,7 +342,7 @@ export function Hero() {
 
       {/* Mobile quote card is intentionally placed after the hero image section,
           preventing the form from overlapping the photographic background. */}
-      <section className="bg-white px-4 py-8 sm:px-6 sm:py-10 lg:hidden" aria-label="Get your quote in 60 seconds">
+      <section className="bg-white px-4 py-8 sm:px-6 sm:py-10 lg:hidden" aria-label={t("hero.quoteTitle")}>
         <div className="mx-auto max-w-xl">
           <QuoteBox {...quoteBoxProps} variant="mobile" />
         </div>

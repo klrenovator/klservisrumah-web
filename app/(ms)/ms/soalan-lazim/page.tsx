@@ -45,7 +45,7 @@ export default function MalayFaqPage() {
         </div>
       </section>
 
-      <Breadcrumbs items={[{ label: "Soalan Lazim", href: "/ms/soalan-lazim" }]} />
+      <Breadcrumbs homeLabel="Utama" ariaLabel="Laluan navigasi" items={[{ label: "Soalan Lazim", href: "/ms/soalan-lazim" }]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getSpeakableSchema(["h1", ".faq-intro", ".faq-answer"])) }} />
 
       <FAQAccordion />

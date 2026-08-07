@@ -116,7 +116,7 @@ export function ToolsIndexPage({
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }} />
-      <Breadcrumbs homeLabel={copy.homeLabel} items={[{ label: copy.breadcrumbLabel, href: path }]} />
+      <Breadcrumbs homeLabel={copy.homeLabel} ariaLabel={copy.navAriaLabel} items={[{ label: copy.breadcrumbLabel, href: path }]} />
 
       {/* Hero */}
       <section className="relative overflow-hidden bg-slate-950 py-14 text-white sm:py-20">

@@ -4,6 +4,16 @@ import { SiteHead } from "@/components/layout/site-head";
 import { SiteChrome } from "@/components/layout/site-chrome";
 import { siteConfig } from "@/config/site";
 import { optimizeTitle, optimizeDescription, buildAlternates } from "@/lib/seo-meta";
+import msMessages from "@/messages/ms.json";
+import type { MessageDictionary } from "@/lib/i18n";
+
+/**
+ * The tree's dictionary is serialized across the RSC boundary into
+ * <Providers>, which seeds the lazy translation cache before first render —
+ * so the client chrome (navbar, footer, CTA bars) prerenders in Bahasa
+ * Malaysia instead of flashing English until the post-hydration lazy fetch.
+ */
+const initialMessages = msMessages as MessageDictionary;
 
 export const viewport: Viewport = {
   themeColor: "#075985",
@@ -110,7 +120,7 @@ export default function MalayRootLayout({
         <SiteHead />
       </head>
       <body className="font-sans text-[#475569] bg-white min-h-screen flex flex-col justify-between antialiased">
-        <SiteChrome>{children}</SiteChrome>
+        <SiteChrome initialLang="ms" initialMessages={initialMessages}>{children}</SiteChrome>
       </body>
     </html>
   );

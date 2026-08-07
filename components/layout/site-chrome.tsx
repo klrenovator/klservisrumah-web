@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { Providers } from "@/app/providers";
+import type { Locale, MessageDictionary } from "@/lib/i18n";
 import { Navbar } from "@/components/ui/navbar";
 import { Footer } from "@/components/ui/footer";
 import { WhatsAppButton } from "@/components/ui/whatsapp-button";
@@ -19,10 +20,23 @@ import { SkipToContentLink } from "@/components/ui/skip-to-content";
  * `<body>` is identical across languages — providers, analytics, navigation,
  * footer, floating CTAs — and lives here so it is defined exactly once.
  */
-export function SiteChrome({ children }: { children: ReactNode }) {
+export function SiteChrome({
+  children,
+  initialLang = "en",
+  initialMessages,
+}: {
+  children: ReactNode;
+  /**
+   * Tree-native locale. Each per-language root layout passes its own locale
+   * and dictionary so the chrome (navbar/footer/CTAs) prerenders in the
+   * tree's language instead of English.
+   */
+  initialLang?: Locale;
+  initialMessages?: MessageDictionary;
+}) {
   return (
     <>
-      <Providers>
+      <Providers initialLang={initialLang} initialMessages={initialMessages}>
         <GoogleAnalytics />
         <WebVitalsReporter />
         <ErrorReporter />

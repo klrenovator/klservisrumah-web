@@ -2,6 +2,7 @@ import { servicesData } from "@/config/services-data";
 import { getLocalizedService } from "@/lib/service-i18n";
 import { problemPages } from "@/config/problem-data";
 import { getLocalizedProblem } from "@/lib/problem-i18n";
+import { problemFaqI18n } from "@/config/problem-faq-i18n";
 import { getLocalizedArea, getLocalizedSuburb } from "@/lib/location-i18n";
 import { localizeContentBody } from "@/lib/content-body-i18n";
 import { faqTemplatesMs, faqTemplatesZh } from "@/config/content-body-i18n";
@@ -114,10 +115,16 @@ function buildDirectory(locale: Locale = "en"): FaqCategory[] {
     "Common symptoms Malaysian homeowners search for — causes, fixes and when to call a professional.",
     problemPages.flatMap((problem) => {
       const localized = localize ? getLocalizedProblem(problem, locale) : problem;
+      // 34 problems carry no full native override in problemI18n; for those,
+      // the translated fallback templates must not interpolate the raw ENGLISH
+      // title into the localized hubs. problemFaqI18n supplies a native
+      // display title (source label) and a grammar-correct topic phrase.
+      const faqOverride = localize ? problemFaqI18n[problem.slug]?.[locale as "ms" | "zh"] : undefined;
+      const sourceLabel = faqOverride?.title ?? localized.title;
       const faqs = localize && localized.faqs.every((faq, index) => faq.q === problem.faqs[index]?.q && faq.a === problem.faqs[index]?.a)
-        ? localizedFallbackFaqs(problem.faqs.length, localized.title)
+        ? localizedFallbackFaqs(problem.faqs.length, faqOverride?.topic ?? localized.title)
         : localized.faqs;
-      return faqs.map((faq) => ({ ...faq, href: `/problems/${problem.slug}`, source: localized.title }));
+      return faqs.map((faq) => ({ ...faq, href: `/problems/${problem.slug}`, source: sourceLabel }));
     })
   );
 

@@ -484,17 +484,60 @@ Objectives: independent deep re-audit (S011) with a new corpus-level HTML qualit
   - **Cost note:** the restructure adds ~1 KB gzipped per page (all root layouts inline their module maps into every document's flight data); the raw-HTML growth is highly compressible chunk-name lists. Worth it for correct server-side language metadata on 112 pages.
   - **New tooling:** `scripts/html-quality-audit.ts` + `npm run audit:html` — full-corpus generated-HTML quality gate (extends `seo:audit`'s coverage into WCAG/link-integrity/JSON-LD territory), wired as a repeatable verification step.
 
-### Current Project Status (updated S011)
+### Current Project Status (updated S012)
 - 🔴 Critical: **0 remaining.**
-- 🟠 High: N19/N19b ✅ (S011 — server-side lang on all localized pages + CJK-URL resolution); all prior actionable in-repository items remain completed; H1/H1b owner-approved brand override; H2 field-data gated; H3 full rollout owner-governed after pilot data.
-- 🟡 Medium: N16–N18 ✅; N19's ripple work ✅; remaining items owner-side/data-gated or M8 (deferred content-layer consolidation).
-- 🟢 Low: L1–L12 ✅; dependency hygiene current (`npm audit` 0).
-- **Server-rendered language metadata:** 112/112 localized pages now ship the correct `<html lang>` in the raw HTML (was 0/112) — screen readers, crawlers and AI retrievers no longer see English markup on Malay/Chinese pages.
-- **Crawl health:** 0 real orphans, 0 broken/redirecting internal targets, 0 heading skips, 0 canonical/hreflang defects; new `audit:html` gate: 0 findings across 4,240 pages.
-- **Infrastructure:** 3 root layouts (route groups), `globalNotFound` (experimental, flagged and documented), root `robots.ts`, zh catch-all for canonical CJK redirects.
+- 🟠 High: N20 ✅ (S012 — localized chrome server-rendered in-language on all 110 tree pages); N22 ✅ (S012 — raw `{ warranty }` placeholder on ZH pages); N24 ✅ (S012 — localized FAQ hubs fully native for all 77 problems); N19/N19b ✅ (S011); all prior actionable in-repository items remain completed; H1/H1b owner-approved brand override; H2 field-data gated; H3 full rollout owner-governed after pilot data.
+- 🟡 Medium: N21 ✅ (S012 — breadcrumb landmarks), N23 ✅ (S012 — hardcoded-English a11y-string sweep); N16–N18 ✅; remaining items owner-side/data-gated or M8 (deferred).
+- 🟢 Low: N25 ✅ (S012 — sitemap lastmod unified), N26 ✅ (S012 — bounded SW cache); L1–L12 ✅; dependency hygiene current (`npm audit` 0).
+- **Localized trees fully native end-to-end:** all 112 MS/ZH pages now server-render with in-language `<html lang>` (S011), in-language navbar/footer/CTAs (S012 N20), in-language breadcrumb trails + landmarks (S012 N21), correctly interpolated strings (S012 N22), and — on the two indexable FAQ hubs — 100% native FAQ entries incl. the 34 previously-English problems (S012 N24). Crawlers and no-JS users see zero English boilerplate on localized pages.
+- **Crawl health:** 0 real orphans, 0 broken/redirecting internal targets, 0 heading skips, 0 canonical/hreflang defects; `audit:html` 0 findings across 4,240 pages; full-corpus metadata/JSON-LD audit clean (0 missing titles/descriptions, NAP complete, rating uniform).
+- **Multilingual:** 1,072 keys × 3 locales perfect parity, enforced at build time by the new prebuild gate `audit:i18n` (S012).
+- **Infrastructure:** 3 root layouts (route groups) now also seed per-tree locale + dictionary into the client providers; `globalNotFound`; root `robots.ts`; zh catch-all; bounded service-worker cache; sitemap lastmod derived from the single content-release date constant.
 
-### Recommended Next Task (updated S011)
-1. Deploy and verify in production: browser-console CSP check (carried), Search Console re-crawl of the localized trees (the lang/hreflang combination is materially different for MS/ZH now), and re-run `npm run audit:html` in CI after deploys.
-2. Inspect GSC/Bing coverage + MS/ZH pilot conversions before the owner-only H3 full-rollout decision.
+### Recommended Next Task (updated S012)
+1. Deploy and verify in production: browser-console CSP check (carried), Search Console re-crawl of the localized trees — S011 changed `<html lang>` and S012 changed the entire server-rendered chrome language on all 112 pages, so a fresh crawl materially changes what the MS/ZH pages signal to search engines. Also confirm the +17–19 KB gz initialMessages payload reads fine in field data.
+2. Inspect GSC/Bing coverage + MS/ZH pilot conversions before the owner-only H3 full-rollout decision. **S012 note:** the pilot was structurally sound since S005 but its pages still rendered English chrome to crawlers until S012 — treat any indexation/conversion data gathered before this deploy as under-representative and re-measure.
 3. Owner: configure/rotate production secrets; GBP / IndexNow / Bing post-deploy pings.
 4. At the next content migration, consolidate `config/` families (M8).
+5. Optional future tier: translate the 34 problem-page bodies (`config/problem-data-extra.ts`) natively — their FAQ-hub entries are fully native since S012, but the source pages still render English under the H3 client-switch design.
+
+### ✅ Session 012 — 2026-08-07
+Objectives: new-dimension deep audit after S011 (metadata quality, JSON-LD deep validation, NAP consistency, a11y landmark/i18n sweep, service-worker cache design). Baseline verified green first; every fix verified in the built corpus and on a live production server.
+
+**New findings & fixes (all verified):**
+
+- ✅ **[2026-08-07 / S012] N20 (🟠 High). All 110 localized-tree pages server-rendered the entire site chrome (navbar, footer, sticky WhatsApp/call bar, floating CTAs, language switcher) in ENGLISH — crawlers and no-JS users never saw localized chrome, and human visitors got a post-hydration English flash.**
+  - Root cause chain: `LangProvider` hardcoded initial state `lang="en"` (locale only resolved in a client `useEffect`), and `useTranslations` only eagerly ships the English dictionary (MS/ZH lazy-fetched post-hydration) — so even a correct initial lang could not have prerendered localized chrome. Confirmed by corpus grep: 55 MS + 55 ZH pages contained raw `>Contact Us<`, `>About Us<`, `>Home<`, etc.
+  - Fix: the three per-language root layouts now pass `initialLang` + the tree's full dictionary (`messages/ms.json` / `zh.json`) through `SiteChrome` → `Providers`, which seeds the lazy dictionary cache (`seedInitialMessages`) before children render and initializes `LangProvider` state to the tree locale. Client-side language switching behavior is unchanged (URL prefix still wins after hydration).
+  - Byte cost measured: +17 KB gz (MS) / +19 KB gz (ZH) per localized page — offsets the ~21–23 KB lazy dictionary chunk those pages previously downloaded post-hydration anyway; net ≈ neutral bytes, minus one round trip, minus the flash. Verified the dictionaries did NOT leak into the shared first-load chunks (EN pages byte-neutral).
+  - Verified: 0 English chrome strings on either tree; live `curl` confirms rendered Malay/Chinese navbar, footer, CTAs, aria-labels.
+
+- ✅ **[2026-08-07 / S012] N21 (🟡 Medium). Breadcrumb `Home` crumb + landmark aria-labels were English on localized pages.**
+  - `<Breadcrumbs>` defaulted `homeLabel="Home"`/`aria-label="Breadcrumb"` and the four localized blog pages (`/ms/blog`, `/ms/blog/[slug]`, `/zh/bo-ke`, `/zh/bo-ke/[slug]`) inline a hardcoded-English breadcrumb nav; the two localized FAQ pages and the localized service pages/indexes omitted the localized landmark name.
+  - Fix: `Breadcrumbs` gained an optional `ariaLabel` prop (backward compatible); localized call sites pass `breadcrumbs.navAria` (new dictionary key ×3: "Breadcrumb" / "Laluan navigasi" / "面包屑导航") or matching hardcoded values; FAQ pages + localized tool routes + tools-index pass `homeLabel` (Utama/首页) — the tool shells gained a `navAriaLabel` field in `config/tools-i18n.ts`.
+  - Verified: `aria-label="Breadcrumb"` 48→0 per tree; `>Home<` breadcrumb 55→0; live pages show Utama/首页 crumbs and localized landmark names.
+
+- ✅ **[2026-08-07 / S012] N22 (🟠 High). Malformed ZH dictionary placeholder `{ warranty }` rendered RAW to visitors on all 29 ZH service pages.**
+  - `messages/zh.json` `serviceContent.isRightAnswer` used `{ warranty }` (spaces), but the interpreter replaces exact `{warranty}` tokens — live pages showed `书面{ warranty }。` to Chinese visitors. Found by the new placeholder-parity audit (only defect of its class corpus-wide).
+  - Fix: corrected to `{warranty}`; verified live: `书面1 年油漆剥落与工艺保修。`
+  - **Defence for the future:** new permanent gate `scripts/i18n-parity.ts` + `npm run audit:i18n` — key-set parity, empty values, placeholder-token parity and malformed-token detection across all three dictionaries; **wired into `prebuild`** so a recurrence fails the build. Passes: 1,072 keys × 3 locales.
+
+- ✅ **[2026-08-07 / S012] N23 (🟡 Medium). Footer "Emergency bookings accepted" hardcoded English on every page (including MS/ZH trees).**
+  - Fix: new `footer.emergencyNote` key ×3 ("Emergency bookings accepted" / "Tempahan kecemasan diterima" / "接受紧急预约") consumed by `components/ui/footer.tsx`.
+  - Also fixed in the same a11y/i18n sweep: sticky-mobile-whatsapp-bar aria-labels had English suffix templates → new `common.bookWhatsAppAria` / `common.callUsAria` keys; `faq-directory-view` landmark "FAQ categories" → `categoriesAria` in its per-locale copy; hero slide indicators "Slide {n}:" → `hero.slideAria` key; hero mobile quote section landmark → `hero.quoteTitle`; related-problems / related-services / service-area-links section landmarks now reuse existing translated keys; language-switcher option aria lost its hardcoded "language" suffix (group label supplies context).
+
+- ✅ **[2026-08-07 / S012] N24 (🟠 High). Localized FAQ hubs mixed English problem titles/questions into native content for 34 of 77 problems.**
+  - 34 problems (`config/problem-data-extra.ts`) carry no `problemI18n` override (their pages intentionally stay English under the H3 client-switch design), so `/ms/soalan-lazim` and `/zh/chang-jian-wen-ti` — two indexable localized hubs — interpolated raw English titles into the translated fallback templates and source labels ("Bagaimana... untuk Toilet Not Flushing Properly?").
+  - Fix: new `config/problem-faq-i18n.ts` with hand-written native MS + ZH translations for all 34 problems × 2 forms (`title` for source labels, grammar-correct `topic` phrase for template interpolation). `lib/faq-directory.ts` uses them only when a full `problemI18n` override is absent (zero regression for the 43 translated problems). Problem pages themselves unchanged (H3 scope decision documented).
+  - Verified live: "Bolehkah KL Servis Rumah membantu dengan tandas yang tidak menyiram dengan baik?", "能协助处理马桶冲水不畅问题吗？", zero English problem titles remain on either hub.
+
+- ✅ **[2026-08-07 / S012] N25 (🟢 Low). Sitemap `lastmod` drifted from the content-release date constant — new pages predated their own lastmod.**
+  - `SITEMAP_LAST_MODIFIED` was hardcoded 2026-07-25 while `DEFAULT_CONTENT_DATE` (schema dateModified policy) was bumped to 2026-08-07 — so the 58 H3-pilot pages (created 2026-08-07) reported a modification date before they existed, and the two release-date constants could drift again.
+  - Fix: sitemap now derives from `DEFAULT_CONTENT_DATE` (single manually-maintained release date; still deliberately NOT the build date — no crawl-budget churn). Verified: sitemap now emits `<lastmod>2026-08-07T00:00:00.000Z`.
+
+- ✅ **[2026-08-07 / S012] N26 (🟢 Low). Service-worker navigation cache was unbounded (4,240-page site → hundreds of MB worst case, browser quota eviction risk).**
+  - Fix: `public/sw.js` trims the navigation page pool to the 60 most recent entries (approximate LRU via insertion order), explicitly protecting the OFFLINE_URLS fallbacks and immutable `/_next/static/*` entries. Network-first strategy for HTML unchanged.
+
+**Audit dimensions validated clean (no action needed):** full-corpus metadata quality (0 missing/over-long titles/descriptions; 859 dup-title groups proven exactly the documented canonicalised suburb pairs — 0 anomalous; CJK short-title/description findings are false positives of Latin heuristics), JSON-LD deep validation (0 parse failures; NAP complete; AggregateRating 4.9/120 uniform on all 224 pages; breadcrumb last-item URLs all match), NAP cross-source consistency, manifest icon existence, zero generic anchor texts, fetchpriority distribution correct, all `fill` images carry `sizes`, no `http://` mixed-content, estimator chrome parity still asserted by the test suite.
+
+**New tooling:** `scripts/i18n-parity.ts` (gate, in prebuild) · `scripts/metadata-schema-audit.ts` (corpus metadata + JSON-LD audit).

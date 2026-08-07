@@ -58,7 +58,7 @@ export default function MalayBlogHub() {
         </div>
       </section>
 
-      <nav aria-label="Breadcrumb" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 text-sm">
+      <nav aria-label="Laluan navigasi" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 text-sm">
         <ol className="flex items-center gap-2 text-[#475569]">
           <li><Link href="/" className="hover:text-[#0EA5E9]">Utama</Link></li>
           <li className="text-slate-300">/</li>

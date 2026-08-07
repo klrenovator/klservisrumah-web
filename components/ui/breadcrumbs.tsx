@@ -27,10 +27,13 @@ export type BreadcrumbItem = {
 export function Breadcrumbs({
   items,
   homeLabel = "Home",
+  ariaLabel = "Breadcrumb",
 }: {
   items: BreadcrumbItem[];
   /** Anchor word for the "/" crumb — localised on the MS/ZH tool routes. */
   homeLabel?: string;
+  /** Accessible name of the nav landmark — localised on localized routes. */
+  ariaLabel?: string;
 }) {
   if (!items || items.length === 0) return null;
 
@@ -70,7 +73,7 @@ export function Breadcrumbs({
 
       {/* Visible Breadcrumb Navigation */}
       <nav
-        aria-label="Breadcrumb"
+        aria-label={ariaLabel}
         className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-4 pb-2"
       >
         <ol className="flex flex-wrap items-center gap-1.5 text-xs text-slate-500">

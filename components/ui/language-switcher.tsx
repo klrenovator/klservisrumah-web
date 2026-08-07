@@ -68,7 +68,11 @@ export function LanguageSwitcher() {
             type="button"
             onClick={() => handleChange(option.code)}
             aria-pressed={active}
-            aria-label={`${option.full} language`}
+            // The button name is just the language name ("English", "Bahasa
+            // Malaysia", "中文") — locale-neutral by construction. The wrapping
+            // group's translated aria-label already supplies the "language"
+            // context, so no hardcoded English suffix is needed here.
+            aria-label={option.full}
             title={option.full}
             className={`min-h-9 min-w-9 rounded-full px-2 py-1.5 text-[11px] min-[430px]:px-3 min-[430px]:text-xs font-bold leading-5 transition-colors ${
               active

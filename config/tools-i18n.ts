@@ -908,6 +908,8 @@ export type ToolShellCopy = {
   directEyebrow: string;
   /** Breadcrumb anchor word for "/". */
   homeLabel: string;
+  /** Accessible name of the breadcrumb nav landmark. */
+  navAriaLabel: string;
   /** Breadcrumb label for the tools index. */
   indexLabel: string;
   /** HowTo-schema strings. */
@@ -949,6 +951,7 @@ export const toolShellCopy: Record<SiteLocale, ToolShellCopy> = {
     reviewsSummary: (rating, count) => `${rating} / 5 · ${count}+ Google reviews`,
     directEyebrow: "Direct Answer · Jawapan Ringkas · 直接答案",
     homeLabel: "Home",
+    navAriaLabel: "Breadcrumb",
     indexLabel: "Free Tools",
     howToSchemaName: (name) => `How to use the ${name}`,
     howToSchemaDescription: (nameLower, minutes) =>
@@ -985,6 +988,7 @@ export const toolShellCopy: Record<SiteLocale, ToolShellCopy> = {
     reviewsSummary: (rating, count) => `${rating} / 5 · ${count}+ ulasan Google`,
     directEyebrow: "Jawapan Ringkas · Direct Answer · 直接答案",
     homeLabel: "Utama",
+    navAriaLabel: "Laluan navigasi",
     indexLabel: "Alat Percuma",
     howToSchemaName: (name) => `Cara menggunakan ${name}`,
     howToSchemaDescription: (nameLower, minutes) =>
@@ -1019,6 +1023,7 @@ export const toolShellCopy: Record<SiteLocale, ToolShellCopy> = {
     reviewsSummary: (rating, count) => `${rating} / 5 · ${count}+ 条 Google 评价`,
     directEyebrow: "直接答案 · Direct Answer · Jawapan Ringkas",
     homeLabel: "首页",
+    navAriaLabel: "面包屑导航",
     indexLabel: "免费工具",
     howToSchemaName: (name) => `如何使用${name}`,
     howToSchemaDescription: (nameLower, minutes) =>
@@ -1069,6 +1074,8 @@ export type ToolsIndexCopy = {
   graphCollectionDescription: string;
   graphItemListName: string;
   homeLabel: string;
+  /** Accessible name of the breadcrumb nav landmark. */
+  navAriaLabel: string;
   schemaLanguage: string;
   ogLocale: string;
   ogAlternateLocales: [string, string];
@@ -1151,6 +1158,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
       "Five free interactive cost estimators for painting, water leak triage, ceiling repair, plumbing diagnostics and TV mounting in Kuala Lumpur and Selangor.",
     graphItemListName: "Free home service estimators",
     homeLabel: "Home",
+    navAriaLabel: "Breadcrumb",
     schemaLanguage: "en-MY",
     ogLocale: "en_MY",
     ogAlternateLocales: ["ms_MY", "zh_MY"]
@@ -1228,6 +1236,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
       "Lima alat anggaran kos interaktif percuma untuk mengecat, trias kebocoran air, baik pulih siling, diagnostik paip dan pemasangan TV di Kuala Lumpur dan Selangor.",
     graphItemListName: "Alat anggaran perkhidmatan rumah percuma",
     homeLabel: "Utama",
+    navAriaLabel: "Laluan navigasi",
     schemaLanguage: "ms-MY",
     ogLocale: "ms_MY",
     ogAlternateLocales: ["en_MY", "zh_MY"]
@@ -1304,6 +1313,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
       "五个免费互动费用估价工具：吉隆坡与雪兰莪的油漆、漏水分诊、天花维修、水管诊断与电视挂装。",
     graphItemListName: "免费家庭服务估价工具",
     homeLabel: "首页",
+    navAriaLabel: "面包屑导航",
     schemaLanguage: "zh-MY",
     ogLocale: "zh_MY",
     ogAlternateLocales: ["en_MY", "ms_MY"]

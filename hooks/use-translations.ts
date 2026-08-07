@@ -24,6 +24,26 @@ async function loadMessages(locale: Exclude<Locale, "en">) {
 }
 
 /**
+ * Seed the lazy dictionary cache with a tree-native dictionary during render.
+ *
+ * The per-language root layouts pass their locale's dictionary down through
+ * `<Providers initialMessages={…}>`, which calls this BEFORE any child renders.
+ * That makes the very first render (server prerender AND client hydration)
+ * resolve `messageCache[lang]` synchronously, so the site chrome (navbar,
+ * footer, CTAs) is server-rendered in the tree's language — no post-hydration
+ * English flash, and crawlers never see English chrome on /ms or /zh pages.
+ *
+ * Idempotent: the first seeded value wins and reseeds are no-ops, so React
+ * strict-mode double renders (and multiple subtrees seeding the same locale)
+ * are safe.
+ */
+export function seedInitialMessages(locale: Locale, messages: MessageDictionary) {
+  if (locale !== "en" && !messageCache[locale]) {
+    messageCache[locale] = messages;
+  }
+}
+
+/**
  * Client-side translation hook.
  *
  * English ships in the main bundle because it is the default locale and the one
