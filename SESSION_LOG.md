@@ -1083,3 +1083,35 @@ All green: lint 0/0 · type-check PASS · build SUCCESS (4,240 pages) · audit:i
 ### Notes
 - The N20 provider-seeding pattern is now the documented way to add a new localized tree: pass `initialLang` + that locale's dictionary through `SiteChrome`. Add a third localized tree and the chrome is native from first render with no extra wiring.
 - `DEFAULT_CONTENT_DATE` bump procedure now also moves sitemap lastmod — one manual release-date edit per content release, exactly as the constant's comment prescribes.
+
+---
+
+## Post-S012 — PR #82 merged into trunk (2026-08-07)
+
+### Event
+Owner-requested merge of the Session 012 changeset into `main`:
+- **Pull Request:** #82 — "S012: Fully-native localized trees, i18n parity gate, native FAQ-hub problem entries" → **state: MERGED**.
+- **Merge commit on `main`:** `66528c86edd4c89aac9f26eefc7de6da19eacc53` (merged 2026-08-07T17:22:45Z).
+- **Pre-merge gate:** branch protection checks green — Vercel **pass**, Vercel Preview Comments **pass**; `mergeable: MERGEABLE`, `mergeStateStatus: CLEAN`; changeset 41 files (36 modified, 3 created, 0 deleted).
+- **Branch reconciliation:** session branch `arena/019fdce5-klservisrumah-web` fast-forwarded `9a81a50 → 66528c8` to track `main`; zero conflicts (its head was an ancestor of the merge).
+
+### Impact
+All S012 work (`9a81a50`) is now on `main` and queued for the Vercel production deploy that `main` triggers: fully-native MS/ZH server-rendered chrome (N20), breadcrumb/a11y localization (N21, N23), the malformed `{warranty}` fix + `audit:i18n` prebuild gate (N22), native FAQ-hub problem entries (N24), derived sitemap lastmod (N25), and the service-worker navigation-cache trim (N26) — 4,240 pages.
+
+### Verification performed (this action)
+1. Pre-merge: `gh pr checks 82` all pass; merge state clean.
+2. Post-merge: PR API reports `state: MERGED`, `mergeCommit.oid = 66528c8…`; `origin/main` fetched and inspected — history is `66528c8 (Merge PR #82) → 9a81a50 (S012) → 1e0bb34 (Merge PR #81)`.
+3. Fast-forward merge of `origin/main` into the session branch completed without conflict.
+
+### Files modified / created / deleted
+- **Modified:** `SESSION_LOG.md` (this record only — documentation append, no code change).
+- **Created:** none. **Deleted:** none.
+
+### Current status
+🔴 Critical `0` · 🟠 actionable in-repo High `0`. Trunk is up to date with all repo-side optimization work.
+
+### Remaining priorities
+1. Confirm the Vercel production deploy of `66528c8` finished, then GSC/Bing re-crawl of the localized trees (pre-S011/S012 pilot indexation data is under-representative — re-measure before the H3 go/no-go).
+2. Carried owner-side items: post-deploy browser-console CSP check; set/rotate `ADMIN_PASSWORD`; confirm `INDEXNOW_SECRET` / `CRON_SECRET` / `PAGESPEED_API_KEY` / `NEXT_PUBLIC_GA_ID` / `GOOGLE_API_KEY`; GBP / IndexNow / Bing pings.
+3. H3 full-rollout decision on the re-measured data (owner go/no-go).
+4. M8 `config/` family consolidation at the next content migration.
