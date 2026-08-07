@@ -65,7 +65,11 @@ function entry({ path, priority, changeFrequency = "weekly", languages }: Entry)
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: Entry[] = [
     { path: "/", priority: 1.0 },
-    { path: "/services", priority: 0.8 },
+    {
+      path: "/services",
+      priority: 0.8,
+      languages: { en: "/services", ms: "/ms/services", zh: "/zh/services" },
+    },
     { path: "/pricing", priority: 0.82 },
     { path: "/areas", priority: 0.8 },
     { path: "/blog", priority: 0.7 },
@@ -112,8 +116,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...genericEstimateSlugs().map((slug) => ({ path: estimatePath(slug), priority: 0.62 }))
   ];
 
+  // The main service page is the head of a REAL three-URL hreflang cluster
+  // (`/services/<slug>` + `/ms/services/<slug>` + `/zh/services/<slug>`, the
+  // H3 pilot) — every member carries the full cluster so the annotations
+  // resolve both ways. The /cost, /emergency and sub-service pages stay
+  // English-only and keep self-referencing hreflang.
   const serviceRoutes: Entry[] = Object.values(servicesData).flatMap((service) => [
-    { path: `/services/${service.slug}`, priority: 0.95 },
+    {
+      path: `/services/${service.slug}`,
+      priority: 0.95,
+      languages: {
+        en: `/services/${service.slug}`,
+        ms: `/ms/services/${service.slug}`,
+        zh: `/zh/services/${service.slug}`,
+      },
+    },
+    { path: `/ms/services/${service.slug}`, priority: 0.9, languages: { en: `/services/${service.slug}`, ms: `/ms/services/${service.slug}`, zh: `/zh/services/${service.slug}` } },
+    { path: `/zh/services/${service.slug}`, priority: 0.9, languages: { en: `/services/${service.slug}`, ms: `/ms/services/${service.slug}`, zh: `/zh/services/${service.slug}` } },
     { path: `/near-me/${service.slug}`, priority: 0.86 },
     { path: `/services/${service.slug}/cost`, priority: 0.88 },
     { path: `/services/${service.slug}/emergency`, priority: 0.86 },
@@ -152,6 +171,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/zh/chang-jian-wen-ti", priority: 0.7 },
     { path: "/ms/blog", priority: 0.65 },
     { path: "/zh/bo-ke", priority: 0.65 },
+    // H3 pilot: the localized services directories are the hubs of the new
+    // real MS/ZH service tree (the per-service pages are emitted above with
+    // their full hreflang clusters).
+    { path: "/ms/services", priority: 0.78, languages: { en: "/services", ms: "/ms/services", zh: "/zh/services" } },
+    { path: "/zh/services", priority: 0.78, languages: { en: "/services", ms: "/ms/services", zh: "/zh/services" } },
   ];
 
   const genericRoutes: Entry[] = allGenericPages

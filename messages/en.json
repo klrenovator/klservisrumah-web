@@ -256,7 +256,12 @@
     "browseAll": "Browse All Services",
     "viewPricingGuide": "View Pricing Guide",
     "includedSpecialities": "Included Specialities",
-    "guaranteeLabel": "Guarantee"
+    "guaranteeLabel": "Guarantee",
+    "pageEyebrow": "Home Services Directory",
+    "warrantyBadge": "Warranty included",
+    "notSureHeading": "Not sure which service you need?",
+    "notSureSub": "Message us on WhatsApp and we'll recommend the right specialist within minutes — fixed quotes and same-day slots available across KL & Selangor.",
+    "askWhatsApp": "Ask on WhatsApp"
   },
   "contact": {
     "pageTitle": "Book a Home Service in KL & Selangor",
@@ -580,7 +585,8 @@
   },
   "breadcrumbs": {
     "home": "Home",
-    "about": "About Us"
+    "about": "About Us",
+    "services": "Services"
   },
   "internalLinks": {
     "eyebrow": "More from this category",
@@ -621,7 +627,9 @@
   "serviceDetail": {
     "bookWhatsApp": "Book via WhatsApp",
     "trustLine": "Same-day available · Warranty-backed · Insured",
-    "bookSubWhatsApp": "Book {name} on WhatsApp"
+    "bookSubWhatsApp": "Book {name} on WhatsApp",
+    "verifiedBadge": "Verified Specialist Service",
+    "allCoverage": "All KL & Selangor"
   },
   "serviceContent": {
     "overviewEyebrow": "Overview",
@@ -676,7 +684,13 @@
     "compRegistrationTheirs": "Many are unregistered freelancers operating from a personal phone number.",
     "compMaterials": "Materials & parts",
     "compMaterialsOurs": "Genuine or OEM-equivalent parts from trusted Malaysian suppliers. Quoted before replacement.",
-    "compMaterialsTheirs": "Unknown part sources. Some use recycled or counterfeit components."
+    "compMaterialsTheirs": "Unknown part sources. Some use recycled or counterfeit components.",
+    "isRightAnswer": "is the right choice when you need {tagline} Packages start from {startPrice} and include transparent itemized quotes, fully insured operations and a written {warranty}. KL Servis Rumah confirms the exact scope, price and any material costs before work begins — book with a clear budget and no hidden surprises.",
+    "ctaHeading": "Ready to book {name}?",
+    "ctaSub": "Get a fixed quote, same-day slots and a written warranty — tell us your scope on WhatsApp, or try the instant estimator first.",
+    "estimateCta": "Get an instant estimate",
+    "allServices": "All services",
+    "pricingLink": "Pricing guide"
   },
   "subserviceContent": {
     "whatsIncluded": "What's included",

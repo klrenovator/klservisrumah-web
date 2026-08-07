@@ -4,8 +4,11 @@ import React, { useMemo } from "react";
 import Link from "next/link";
 import { ArrowRight, BadgeCheck, Calculator, Phone, ShieldCheck, Sparkles } from "lucide-react";
 import { useTranslations } from "@/hooks/use-translations";
+import { useLang } from "@/context/lang-context";
 import { buildServiceEstimator } from "@/lib/estimator/service-estimator";
 import { estimatePath } from "@/config/estimate-links";
+import { servicesData } from "@/config/services-data";
+import { getLocalizedService } from "@/lib/service-i18n";
 import { siteConfig } from "@/config/site";
 import { trackPhoneCall } from "@/lib/analytics";
 import { EstimatorForm } from "@/components/tools/estimator/estimator-form";
@@ -26,20 +29,23 @@ import { EstimatorShareBar } from "@/components/tools/estimator-share-bar";
  */
 export function EstimateSharePage({
   slug,
-  title,
   warranty,
   startPrice
 }: {
   slug: string;
-  title: string;
   warranty: string;
   startPrice: string;
 }) {
   const t = useTranslations();
+  const { lang } = useLang();
+
+  // The page-level copy is translated ("Pengira kos {service}" in MS), so the
+  // service name embedded in those sentences must follow the language pill too.
+  const localizedTitle = getLocalizedService(servicesData[slug], lang).title;
 
   const spec = useMemo(
-    () => buildServiceEstimator({ slug, title, warranty, t }),
-    [slug, title, warranty, t]
+    () => buildServiceEstimator({ slug, title: localizedTitle, warranty, t }),
+    [slug, localizedTitle, warranty, t]
   );
 
   return (
@@ -51,15 +57,15 @@ export function EstimateSharePage({
           {t("estimateShare.pageEyebrow")}
         </span>
         <h1 className="mt-2 text-3xl font-black tracking-tight text-[#075985] sm:text-4xl">
-          {t("estimateShare.pageHeading", { service: title })}
+          {t("estimateShare.pageHeading", { service: localizedTitle })}
         </h1>
         <p className="mt-3 max-w-2xl text-sm font-semibold leading-relaxed text-slate-600 sm:text-base">
-          {t("estimateShare.pageSub", { service: title })}
+          {t("estimateShare.pageSub", { service: localizedTitle })}
         </p>
 
         {/* ── Share bar — the reason this page exists ─────────────────── */}
         <div className="mt-5">
-          <EstimatorShareBar path={estimatePath(slug)} serviceName={title} translator={t} />
+          <EstimatorShareBar path={estimatePath(slug)} serviceName={localizedTitle} translator={t} />
         </div>
 
         {/* ── The estimator itself ────────────────────────────────────── */}
@@ -102,7 +108,7 @@ export function EstimateSharePage({
             href={`/services/${slug}`}
             className="inline-flex min-h-13 flex-1 items-center justify-center gap-2 rounded-2xl bg-gradient-to-br from-[#075985] to-[#0EA5E9] px-6 py-3.5 text-sm font-black text-white shadow-lg shadow-sky-500/25 transition hover:from-[#0c4a6e] hover:to-[#0284C7]"
           >
-            {t("estimateShare.viewFullService", { service: title })} <ArrowRight className="h-4 w-4" />
+            {t("estimateShare.viewFullService", { service: localizedTitle })} <ArrowRight className="h-4 w-4" />
           </Link>
           <a
             href={`tel:${siteConfig.phone}`}

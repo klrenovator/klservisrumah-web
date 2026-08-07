@@ -4,7 +4,10 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { ArrowRight, Check, Copy, MessageSquare, Share2, Sparkles } from "lucide-react";
 import { useTranslations } from "@/hooks/use-translations";
+import { useLang } from "@/context/lang-context";
 import { trackEvent } from "@/lib/analytics";
+import { servicesData } from "@/config/services-data";
+import { getLocalizedService } from "@/lib/service-i18n";
 import { siteConfig } from "@/config/site";
 import { SITE_URL } from "@/lib/seo-meta";
 import type { EstimateLinkEntry } from "@/config/estimate-links";
@@ -22,7 +25,13 @@ import type { EstimateLinkEntry } from "@/config/estimate-links";
  */
 export function EstimateHub({ links }: { links: EstimateLinkEntry[] }) {
   const t = useTranslations();
+  const { lang } = useLang();
   const [copiedSlug, setCopiedSlug] = useState<string | null>(null);
+
+  // Cards and the pre-written WhatsApp forward message embed the service name,
+  // so it must follow the language pill like the rest of the hub copy.
+  const localizedTitle = (entry: EstimateLinkEntry): string =>
+    getLocalizedService(servicesData[entry.slug], lang).title || entry.title;
 
   const copyLink = async (entry: EstimateLinkEntry) => {
     const url = `${SITE_URL}${entry.path}`;
@@ -59,7 +68,7 @@ export function EstimateHub({ links }: { links: EstimateLinkEntry[] }) {
 
   const whatsappHref = (entry: EstimateLinkEntry) =>
     `https://wa.me/?text=${encodeURIComponent(
-      t("estimateShare.shareWhatsAppText", { service: entry.title, url: `${SITE_URL}${entry.path}` })
+      t("estimateShare.shareWhatsAppText", { service: localizedTitle(entry), url: `${SITE_URL}${entry.path}` })
     )}`;
 
   return (
@@ -112,7 +121,7 @@ export function EstimateHub({ links }: { links: EstimateLinkEntry[] }) {
                 className="flex flex-col rounded-3xl border border-slate-200 bg-white p-5 shadow-[0_12px_35px_-28px_rgba(2,31,68,0.4)] transition hover:border-sky-300"
               >
                 <div className="flex items-start justify-between gap-2">
-                  <h3 className="text-base font-black leading-snug text-[#075985]">{entry.title}</h3>
+                  <h3 className="text-base font-black leading-snug text-[#075985]">{localizedTitle(entry)}</h3>
                   {entry.kind === "dedicated" ? (
                     <span className="shrink-0 rounded-full bg-amber-100 px-2.5 py-1 text-[10px] font-black uppercase tracking-wide text-amber-800">
                       {t("estimateShare.dedicatedBadge")}
@@ -144,7 +153,7 @@ export function EstimateHub({ links }: { links: EstimateLinkEntry[] }) {
                     href={whatsappHref(entry)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={`${t("estimateShare.shareWhatsApp")} — ${entry.title}`}
+                    aria-label={`${t("estimateShare.shareWhatsApp")} — ${localizedTitle(entry)}`}
                     onClick={() =>
                       trackEvent({ action: "estimator_share_whatsapp", category: "engagement", label: entry.path })
                     }

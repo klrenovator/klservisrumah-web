@@ -16,6 +16,7 @@ const labels: Record<SupportedLocale, {
   ctaPrimary: string;
   ctaSecondary: string;
   ctaServices: string;
+  ctaServicesHref: string;
   ctaPricing: string;
   ctaContact: string;
   redirectNote: string;
@@ -28,6 +29,7 @@ const labels: Record<SupportedLocale, {
     ctaPrimary: "Buka Laman Utama",
     ctaSecondary: "Lihat Perkhidmatan",
     ctaServices: "Semua Perkhidmatan",
+    ctaServicesHref: "/ms/services",
     ctaPricing: "Harga",
     ctaContact: "Hubungi Kami",
     redirectNote: "Anda akan diarahkan ke laman utama. Gunakan suis bahasa EN | BM | 中 di navbar untuk menukar bahasa bila-bila masa."
@@ -40,6 +42,7 @@ const labels: Record<SupportedLocale, {
     ctaPrimary: "打开首页",
     ctaSecondary: "查看服务",
     ctaServices: "所有服务",
+    ctaServicesHref: "/zh/services",
     ctaPricing: "价格",
     ctaContact: "联系我们",
     redirectNote: "您将被重定向到首页。随时使用导航栏中的 EN | BM | 中 语言切换器更改语言。"
@@ -125,7 +128,7 @@ export default async function LocalizedLandingPage(props: { params: Promise<{ la
               <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
-              href="/services"
+              href={info.ctaServicesHref}
               className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-6 py-3 text-sm font-extrabold text-[#075985] hover:bg-slate-50 transition-colors"
             >
               {info.ctaSecondary}
@@ -133,7 +136,7 @@ export default async function LocalizedLandingPage(props: { params: Promise<{ la
           </div>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm">
-            <Link href="/services" className="text-[#0EA5E9] font-semibold hover:underline">
+            <Link href={info.ctaServicesHref} className="text-[#0EA5E9] font-semibold hover:underline">
               {info.ctaServices}
             </Link>
             <span className="text-slate-300">·</span>

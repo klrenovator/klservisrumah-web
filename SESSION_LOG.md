@@ -180,3 +180,104 @@ Color-token migration touched ~86 `.tsx` files (see H1/H1b above; per-file conte
 - AA palette recoverable from commit `3887cfd1e6ef400904b9e7c0ba19630876401d67`.
 
 ---
+## Session 003
+
+**Date:** 2026-08-07 (UTC)
+**Branch:** `arena/019fdb39-klservisrumah-web` (from `main` @ `7b8cb55`, which contained S001 + S002)
+**Status:** ✅ COMPLETED
+
+### Objectives
+- Read all four governance files and verify S001/S002 claims against the actual checkout.
+- Independent deep audit of the entire repository (security, SEO, multilingual, performance, assets, dependencies, a11y).
+- Fix the highest-priority unfinished actionable work: backlog item 4 (MS/ZH contact & booking chrome parity) + new issues found.
+- Implement the **H3 pilot** (the roadmap's recommended "no decision needed" intermediate step): real, indexable localized service URLs.
+- Verify every fix (lint / type-check / build / estimator tests / SEO audit / runtime smoke tests) and update governance docs.
+
+### Baseline verification (before changes)
+- `npm install` clean · `npm audit` **0 vulnerabilities** · `npm run lint` 0/0 · `npm run type-check` PASS · `npm run build` SUCCESS (4,187 pages) · estimator suite 231,498 assertions PASS.
+- Codebase-wide static greps: 0 × `any`, 0 × `@ts-ignore`/`eslint-disable`, 0 × `console.log` in source, 0 × TODO/FIXME.
+- Message dictionaries: 1,027 keys × 3 locales — perfect parity (scripted check).
+- Admin auth (C1), error beacon (M1), middleware gates, robots/sitemap — re-verified intact.
+
+### Part A — Parity, a11y, dead assets
+- ✅ **M9 (🟠 High) — Trilingual parity on conversion + estimator surfaces fixed.**
+  - `components/booking/multi-step-booking-form.tsx`: step-1 service cards and step-2 sub-services now render `getLocalizedService(service, lang)`; the WhatsApp handoff uses the localized title; property-type/time selects store dictionary keys and translate at render — fixing the hardcoded English default `time: "Flexible"` (previously matched no translated `<option>` and always sent "Flexible" in the message).
+  - `components/sections/locale-service-view.tsx`: `ServiceEstimatorBlock` now receives `localized.title`/`localized.warranty` instead of raw English.
+  - `components/estimate/estimate-share-page.tsx`: dropped the English `title` prop; computes `localizedTitle` client-side for translated sentences, the estimator spec and the share bar.
+  - `components/estimate/estimate-hub.tsx`: card headings, WhatsApp forward text and aria-labels use localized titles.
+- ✅ **A1 (🟡 Medium) — Exit-intent modal a11y.** `components/exit-intent-popup.tsx` rewritten: Escape closes; focus moves to close button; Tab trapped; focus restored on dismiss; `aria-labelledby`/`aria-describedby` wired.
+- ✅ **L4/L5/L6 (🟢 Low) — Dead assets removed**: 6 unused hero SVGs, stale `public/robots-ai.txt`, and `public/logo/logo.jpg` (byte-identical duplicate of `og-image.jpg`). All verified 0-references repo-wide; recoverable from git history.
+
+### Part B — H3 pilot: real localized service URLs (all 28 services × 2 locales + 2 indexes)
+- ✅ New **server-rendered localized service pages** `/ms/services/[slug]` + `/zh/services/[slug]` (SSG, `dynamicParams=false`, real 404s). Rendered 100% in-language from `getLocalizedService` + new server translator `lib/i18n-server.ts` (same message keys as client `useTranslations`): hero, overview, direct answer, pricing, process, FAQs, schema, CTAs — no English flash, no client-data duplication, no estimator-JS tax on the initial HTML.
+- ✅ New **localized directory indexes** `/ms/services` + `/zh/services` (server-rendered, localized titles/taglines/prices + WhatsApp CTA).
+- ✅ **Real 3-URL hreflang clusters**: EN + MS + ZH service pages and both directories carry full clusters in metadata and in `app/sitemap.ts` (`x-default` → EN). EN-only `/cost`, `/emergency`, sub-service pages keep self-referencing hreflang.
+- ✅ `middleware.ts` — `/ms/services`, `/zh/services` added to `REAL_LOCALE_TREES` (no more 301 → EN).
+- ✅ Language switcher navigates `/services` and `/services/<slug>` to the real localized twins; `/ms` + `/zh` scaffold pages link to their localized directories.
+- ✅ `lib/seo.ts` — `getServiceSchema` accepts optional `path` + `subServices`, so localized pages emit page-correct `@id`/`url` and in-language OfferCatalog.
+- ✅ 14 new message keys added to all three dictionaries (1,041 × 3, parity kept).
+- ✅ Counts auto-derived and regenerated: sitemap 3,142 → **3,200** URLs; build 4,187 → **4,245** pages; `llms-full.txt`/`site-summary.json` updated.
+
+### New issues discovered this session
+- 🟠 **M9** — booking form + service-page estimator + `/estimate` share/hub pages embedded raw English service names into translated MS/ZH UI; booking form time default was a hardcoded English display string. **Fixed.**
+- 🟡 **A1** — exit-intent modal lacked Escape/initial-focus/Tab-trap/focus-restore + accessible name/description. **Fixed.**
+- 🟢 **L4/L5/L6** — dead assets (6 SVGs, stale robots-ai.txt, duplicate logo.jpg). **Fixed.**
+- (Part B) Schema `getServiceSchema` hardcoded the EN `/services/<slug>` URL and EN sub-services even on localized pages. **Fixed** via optional `path`/`subServices`.
+
+### Files created (7)
+- `lib/i18n-server.ts` — server-safe translator bound to the full site dictionaries.
+- `components/sections/locale-service-page.tsx` — shared server component for localized service pages.
+- `components/sections/locale-services-index.tsx` — shared server component for localized directories.
+- `app/ms/services/page.tsx`, `app/ms/services/[slug]/page.tsx`, `app/zh/services/page.tsx`, `app/zh/services/[slug]/page.tsx` — the H3 pilot routes.
+
+### Files modified (Part A: 6 source; Part B: 10 source + 3 generated)
+- Part A: `components/booking/multi-step-booking-form.tsx`, `components/sections/locale-service-view.tsx`, `components/estimate/estimate-share-page.tsx`, `components/estimate/estimate-hub.tsx`, `app/estimate/[slug]/page.tsx`, `components/exit-intent-popup.tsx`.
+- Part B: `middleware.ts`, `app/sitemap.ts`, `app/services/[slug]/page.tsx`, `app/services/page.tsx`, `components/ui/language-switcher.tsx`, `app/[lang]/[[...slug]]/page.tsx`, `lib/seo.ts`, `messages/en.json`, `messages/ms.json`, `messages/zh.json`, `app/ms/layout.tsx`, `app/zh/layout.tsx`.
+- Generated: `public/llms-full.txt`, `public/site-summary.json`, `docs/seo-audit-report.md` (regenerated by the project's own tools).
+- Governance: `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md` (this entry).
+
+### Files deleted (8, all confirmed unused)
+- `public/hero-ceiling-fan.svg`, `public/hero-lighting.svg`, `public/hero-plaster-ceiling.svg`, `public/hero-skim-coat.svg`, `public/hero-tiling.svg`, `public/hero-water-heater.svg` — dead assets; services use JPG hero photos.
+- `public/robots-ai.txt` — stale; superseded by `app/robots.ts`.
+- `public/logo/logo.jpg` — byte-identical duplicate of `og-image.jpg`.
+
+### Tests/Verification performed
+1. `npm install` — clean. 2. `npm audit` — **0 vulnerabilities**.
+3. `npm run lint` — **0 errors, 0 warnings** (twice: after Part A and after Part B).
+4. `npm run type-check` — **PASS** (twice).
+5. `npm run build` — **SUCCESS** twice: 4,187 pages (Part A) and **4,245 pages** (Part B, +58: 56 localized service pages + 2 indexes).
+6. Estimator suite — 231,498 assertions, 0 failures (both builds).
+7. `npm run seo:audit` — clean, report regenerated.
+8. Message dictionaries — 1,041 keys × 3 locales, 0 missing/extra/empty/placeholder-mismatch; all 28 services have complete ms+zh overrides (0 missing fields across 11 fields × 2 locales).
+9. Asset-usage sweep — 0 references to any deleted file.
+10. Prod-server smoke (Part A): `/contact` 200, `/estimate` 200, `/estimate/painting` 301→tool, deleted assets 404, robots.txt regenerated.
+11. Prod-server smoke (Part B): `/ms/services` **200 (was 301)**; `/ms/services/painting` 200 with Malay `<title>` + `<h1>` + Malay schema (`serviceType` "Perkhidmatan Pengecatan Premium", `url` → `/ms/services/painting`, OfferCatalog items in Malay); `/zh/services/painting` 200 with Chinese title; `/ms/services/not-a-service` real 404; EN `/services/painting` emits the real ms/zh hreflang cluster; canonical self-correct on every page; sitemap shows full 3-URL clusters for `/services`, `/services/<slug>`, `/ms/services/<slug>`, `/zh/services/<slug>`; `/ms` scaffold 200; `/ms/services` h1 "Perkhidmatan Kami", `/zh/services` h1 "我们的服务".
+
+### Build/Lint/Type-Check Status
+All green: lint 0/0, type-check PASS, build SUCCESS (4,245 pages), estimator tests PASS, SEO audit clean.
+
+### Current Project Status
+- 🔴 Critical: **0 remaining.**
+- 🟠 High: M9 ✅ (new); **H3 pilot ✅ live (56 localized service pages + 2 indexes)** — full rollout still 🔒 owner go/no-go; H1/H1b business override (documented); H2 field-data gated.
+- 🟡 Medium: A1 ✅ (new); M1–M5, M7 ✅; M8 deferred.
+- 🟢 Low: L1–L6 ✅.
+- Production-ready pending owner-side env vars + full-rollout decision.
+
+### Remaining High-Priority Tasks (owner-side / data-gated)
+1. **H3 full-rollout decision** — owner go/no-go after measuring the pilot's indexation + conversions; next tranche would be areas/suburbs/problems/generic × 2 locales (~8k pages).
+2. **H2 checkpoint** — revisit `/faq` page size only after real CrUX/PageSpeed field data.
+3. **Set `ADMIN_PASSWORD`** + confirm `INDEXNOW_SECRET`/`CRON_SECRET`/`PAGESPEED_API_KEY`/`NEXT_PUBLIC_GA_ID` in Vercel; rotate burned `KL2024Admin`.
+4. Google Business Profile + IndexNow + Bing Webmaster post-deploy pings (owner-side). Note: the new localized service URLs should be included in the next IndexNow ping — `app/api/indexnow/route.ts` derives CORE_PATHS statically; the pilot URLs were added to the sitemap but not to the IndexNow CORE_PATHS list (sitemap submission covers them; a follow-up could extend CORE_PATHS with the localized index URLs).
+
+### Recommended Next Task
+1. Measure the pilot (indexation in GSC after deploy; MS/ZH organic queries). Then owner go/no-go for the full H3 rollout.
+2. Owner-side env vars + pings (blocking nothing in code).
+3. When a content-migration milestone arrives, consolidate `config/` families (M8).
+
+### Notes
+- Part A preserves EN behavior; MS/ZH users now see coherent single-language UI on the booking form, service-page estimator and `/estimate` surfaces.
+- Part B is the H3 pilot exactly as recommended in the roadmap ("no decision needed" intermediate step): the service i18n data already existed and was complete, so the pilot adds URLs + server-side rendering rather than new translations. All content is derived from the same `config/services-data.ts` the EN pages render.
+- Known App-Router limitation (pre-existing, shared by blog/tools/FAQ trees): the SSR `<html lang>` stays `en-MY` until hydration; `LocalizedHtmlLang` corrects it client-side. Also the sitewide navbar/footer SSR in English on localized URLs, hydrating to the target language (same as the existing localized trees). Not a regression.
+- The `/estimate` hub is owner-oriented by design but now follows the language pill.
+- No color, schema-meaning, business-logic or EN-content changes were made.
+---

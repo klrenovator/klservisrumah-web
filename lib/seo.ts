@@ -4,6 +4,7 @@ import { servicesData, type ServiceDetail } from "@/config/services-data";
 import type { AreaDetail } from "@/config/area-data";
 import type { SuburbDetail } from "@/config/suburb-data";
 import type { BlogPost } from "@/config/blog-data";
+import type { SubService } from "@/config/services-data";
 
 const baseUrl = "https://www.klservisrumah.my";
 
@@ -272,16 +273,21 @@ const standardReviews: ReviewInput[] = [
   }
 ];
 
-export function getServiceSchema(service: { title: string; description: string; startPrice: string; slug: string }) {
+export function getServiceSchema(service: { title: string; description: string; startPrice: string; slug: string; path?: string; subServices?: SubService[] }) {
   const detail = servicesData[service.slug];
   const heroImage = detail?.heroImage || siteConfig.defaultOgImage;
+  // Localised service pages (`/ms/services/*`, `/zh/services/*`) pass their own
+  // path so the schema's @id/url point at the page that actually renders it,
+  // and their localized sub-services so the offer catalog is in-language too.
+  const servicePath = service.path ?? `/services/${service.slug}`;
+  const catalogSubServices = service.subServices ?? detail?.subServices;
   return {
     "@context": "https://schema.org",
     "@type": ["Service", "Product"],
-    "@id": `${baseUrl}/services/${service.slug}#service`,
+    "@id": `${baseUrl}${servicePath}#service`,
     serviceType: service.title,
     name: service.title,
-    url: `${baseUrl}/services/${service.slug}`,
+    url: `${baseUrl}${servicePath}`,
     image: absoluteUrl(heroImage),
     brand: {
       "@type": "Brand",
@@ -309,7 +315,7 @@ export function getServiceSchema(service: { title: string; description: string; 
         description: `Starting from ${service.startPrice}`
       }
     },
-    hasOfferCatalog: detail ? getOfferCatalogSchema(detail.subServices) : undefined,
+    hasOfferCatalog: catalogSubServices ? getOfferCatalogSchema(catalogSubServices) : undefined,
     aggregateRating: aggregateRating(),
     review: standardReviews.map((review) => ({
       "@type": "Review",

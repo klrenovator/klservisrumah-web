@@ -256,7 +256,12 @@
     "browseAll": "Semak Semua Perkhidmatan",
     "viewPricingGuide": "Lihat Panduan Harga",
     "includedSpecialities": "Termasuk Kepakaran",
-    "guaranteeLabel": "Jaminan"
+    "guaranteeLabel": "Jaminan",
+    "pageEyebrow": "Direktori Perkhidmatan Rumah",
+    "warrantyBadge": "Jaminan disertakan",
+    "notSureHeading": "Tidak pasti perkhidmatan mana yang anda perlukan?",
+    "notSureSub": "Mesej kami di WhatsApp dan kami akan mengesyorkan pakar yang sesuai dalam beberapa minit — sebut harga tetap dan slot hari yang sama tersedia di seluruh KL & Selangor.",
+    "askWhatsApp": "Tanya di WhatsApp"
   },
   "contact": {
     "pageTitle": "Tempah Perkhidmatan Rumah di KL & Selangor",
@@ -580,7 +585,8 @@
   },
   "breadcrumbs": {
     "home": "Utama",
-    "about": "Tentang Kami"
+    "about": "Tentang Kami",
+    "services": "Perkhidmatan"
   },
   "internalLinks": {
     "eyebrow": "Lagi dari kategori ini",
@@ -621,7 +627,9 @@
   "serviceDetail": {
     "bookWhatsApp": "Tempah melalui WhatsApp",
     "trustLine": "Hari sama tersedia · Dijamin · Diinsuranskan",
-    "bookSubWhatsApp": "Tempah {name} di WhatsApp"
+    "bookSubWhatsApp": "Tempah {name} di WhatsApp",
+    "verifiedBadge": "Perkhidmatan Pakar Disahkan",
+    "allCoverage": "Seluruh KL & Selangor"
   },
   "serviceContent": {
     "overviewEyebrow": "Gambaran keseluruhan",
@@ -676,7 +684,13 @@
     "compRegistrationTheirs": "Ramai adalah freelancer tidak berdaftar beroperasi dari nombor telefon peribadi.",
     "compMaterials": "Bahan & alat ganti",
     "compMaterialsOurs": "Alat ganti tulen atau setara OEM daripada pembekal Malaysia yang dipercayai. Dikutip sebelum penggantian.",
-    "compMaterialsTheirs": "Sumber bahagian tidak diketahui. Sesetengah menggunakan komponen kitar semula atau tiruan."
+    "compMaterialsTheirs": "Sumber bahagian tidak diketahui. Sesetengah menggunakan komponen kitar semula atau tiruan.",
+    "isRightAnswer": "adalah pilihan tepat apabila anda memerlukan {tagline} Pakej bermula dari {startPrice} dan termasuk sebut harga terperinci yang telus, operasi diinsuranskan sepenuhnya, dan {warranty} bertulis. KL Servis Rumah mengesahkan skop, harga dan sebarang kos bahan sebelum kerja bermula — tempah dengan bajet yang jelas dan tanpa kejutan tersembunyi.",
+    "ctaHeading": "Bersedia untuk menempah {name}?",
+    "ctaSub": "Dapatkan sebut harga tetap, slot hari yang sama dan jaminan bertulis — beritahu kami skop kerja anda di WhatsApp, atau cuba pengira anggaran segera dahulu.",
+    "estimateCta": "Dapatkan anggaran segera",
+    "allServices": "Semua perkhidmatan",
+    "pricingLink": "Panduan harga"
   },
   "subserviceContent": {
     "whatsIncluded": "Apa yang disertakan",

@@ -32,7 +32,12 @@ const CORE_PATHS = [
   "/pricing",
   "/problems",
   "/faq",
-  "/contact"
+  "/contact",
+  // H3 pilot heads — the real localized service directories added in Session
+  // 003. Their per-service pages are covered by sitemap submission; pinging
+  // the tree heads gives Bing/Yandex the entry points directly.
+  "/ms/services",
+  "/zh/services"
 ];
 
 const TOOL_PATHS = [

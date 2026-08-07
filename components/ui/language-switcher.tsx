@@ -34,7 +34,16 @@ export function LanguageSwitcher() {
     const hubs: Record<string, Record<SupportedLang, string>> = {
       "/blog": { en: "/blog", ms: "/ms/blog", zh: "/zh/bo-ke" },
       "/faq": { en: "/faq", ms: "/ms/soalan-lazim", zh: "/zh/chang-jian-wen-ti" },
+      "/services": { en: "/services", ms: "/ms/services", zh: "/zh/services" },
     };
+    // Service detail pages (the H3 pilot) also have real localized twins.
+    // Sub-service / cost / emergency paths have none yet, so they keep the
+    // client-side switch at the same URL (no hub match → null).
+    const serviceMatch = base.match(/^\/services\/([a-z0-9-]+)$/);
+    if (serviceMatch) {
+      const slug = serviceMatch[1];
+      return { en: `/services/${slug}`, ms: `/ms/services/${slug}`, zh: `/zh/services/${slug}` }[nextLang];
+    }
     return hubs[base]?.[nextLang] ?? null;
   };
 

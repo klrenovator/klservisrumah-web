@@ -28,7 +28,20 @@ const ESTIMATE_TOOL_REDIRECTS: Record<string, string> = Object.fromEntries(
  * redirecting to English — everything else locale-prefixed still redirects,
  * because those pages switch language client-side at the same URL.
  */
-const REAL_LOCALE_TREES = ["/ms/alatan", "/zh/gongju", "/ms/blog", "/zh/bo-ke", "/ms/soalan-lazim", "/zh/chang-jian-wen-ti"] as const;
+// Real, fully-localised, indexable subtrees. Extended with the H3 pilot
+// service directories (`/ms/services`, `/zh/services`) — every URL under
+// these prefixes is server-rendered in the target language and must pass
+// through untouched instead of redirecting to English.
+const REAL_LOCALE_TREES = [
+  "/ms/alatan",
+  "/zh/gongju",
+  "/ms/blog",
+  "/zh/bo-ke",
+  "/ms/soalan-lazim",
+  "/zh/chang-jian-wen-ti",
+  "/ms/services",
+  "/zh/services"
+] as const;
 
 /**
  * Middleware for locale-prefixed URL handling.

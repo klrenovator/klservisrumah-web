@@ -256,7 +256,12 @@
     "browseAll": "浏览所有服务",
     "viewPricingGuide": "查看价格指南",
     "includedSpecialities": "包含专长",
-    "guaranteeLabel": "保证"
+    "guaranteeLabel": "保证",
+    "pageEyebrow": "家居服务目录",
+    "warrantyBadge": "含保修",
+    "notSureHeading": "不确定需要哪种服务？",
+    "notSureSub": "通过 WhatsApp 联系我们，我们会在几分钟内为您推荐合适的专家——吉隆坡与雪兰莪全境均可提供固定报价和当日上门时段。",
+    "askWhatsApp": "在 WhatsApp 咨询"
   },
   "contact": {
     "pageTitle": "预订吉隆坡与雪兰莪家居服务",
@@ -580,7 +585,8 @@
   },
   "breadcrumbs": {
     "home": "首页",
-    "about": "关于我们"
+    "about": "关于我们",
+    "services": "服务"
   },
   "internalLinks": {
     "eyebrow": "更多来自此类别",
@@ -621,7 +627,9 @@
   "serviceDetail": {
     "bookWhatsApp": "通过 WhatsApp 预订",
     "trustLine": "当日可约 · 有保修 · 已投保",
-    "bookSubWhatsApp": "通过 WhatsApp 预订{name}"
+    "bookSubWhatsApp": "通过 WhatsApp 预订{name}",
+    "verifiedBadge": "认证专家服务",
+    "allCoverage": "覆盖整个吉隆坡与雪兰莪"
   },
   "serviceContent": {
     "overviewEyebrow": "概述",
@@ -676,7 +684,13 @@
     "compRegistrationTheirs": "许多是未注册的自由职业者，使用个人手机号码经营。",
     "compMaterials": "材料与配件",
     "compMaterialsOurs": "来自马来西亚可靠供应商的正品或OEM等效配件。更换前先报价。",
-    "compMaterialsTheirs": "零件来源不明。部分使用回收或假冒组件。"
+    "compMaterialsTheirs": "零件来源不明。部分使用回收或假冒组件。",
+    "isRightAnswer": "是您需要{tagline}时的正确选择。服务从 {startPrice} 起，包含透明分项报价、全程保险以及书面{ warranty }。KL Servis Rumah 会在开工前确认具体范围、价格及任何材料费用——预算清晰，绝无隐藏费用。",
+    "ctaHeading": "准备好预订{name}了吗？",
+    "ctaSub": "获取固定报价、当日上门时段和书面保修——通过 WhatsApp 告诉我们您的需求，或先试用即时估价工具。",
+    "estimateCta": "获取即时估价",
+    "allServices": "所有服务",
+    "pricingLink": "价格指南"
   },
   "subserviceContent": {
     "whatsIncluded": "包括",
