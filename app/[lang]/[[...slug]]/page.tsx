@@ -80,8 +80,14 @@ export async function generateMetadata(props: { params: Promise<{ lang: string; 
     // the BM notice rendered a 207-char description.
     title: optimizeTitle(info.title),
     description: optimizeDescription(info.notice),
+    // These scaffold pages exist only so shared /ms and /zh links resolve; they
+    // auto-redirect to "/". They are noindex AND canonical to "/" so they never
+    // compete with the homepage in the index. They must also NOT emit hreflang:
+    // canonical overrides hreflang, and a self-referencing hreflang pointing at
+    // "/" would falsely claim that "/ms" and "/zh" are localised siblings of
+    // the homepage (they are redirect stubs, not real locale URLs).
     robots: { index: false, follow: true },
-    alternates: buildAlternates("/")
+    alternates: buildAlternates("/", true)
   };
 }
 

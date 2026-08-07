@@ -544,3 +544,125 @@ CSP field-check, then the "low inbound (≤2)" tier: 648 `/suburbs/*` and the 1,
 - No business logic, pricing, colour, schema meaning or English copy changed. N8 is a header addition; N9 replaces English literals with the translations of the same text.
 - Both fixes were verified by observing real behaviour (delivered headers, parsed policy vs. actual subresources, strings present in locale bundles) rather than by reading the diff.
 - The `'unsafe-inline'` compromise in `script-src` is a genuine constraint of static Next.js, not an oversight; it is documented in the config so a future session does not "discover" it as a finding.
+
+---
+
+## Session 007
+
+**Date:** 2026-08-07 (UTC)
+**Branch:** `arena/019fdbd8-klservisrumah-web` (from `main` @ `719258c`, containing S001–S006)
+**Status:** ✅ COMPLETED
+
+### Objectives
+- Read all four governance files; verify S001–S006 claims against the actual checkout.
+- Independent deep audit of the build corpus from angles previous sessions did not measure directly: **full-corpus hreflang/canonical consistency, sitemap vs built URLs, and broader metadata quality**.
+- Fix the highest-priority unfinished actionable work surfaced by that audit.
+- Verify every fix (lint / type-check / build / estimator tests / SEO audit / runtime smoke tests) and update governance docs.
+
+### Baseline verification (before changes)
+- `npm install` clean · `npm audit` **0 vulnerabilities** · `npm run lint` 0/0 · `npm run type-check` PASS · `npm run build` SUCCESS (4,245 pages) · estimator suite 231,501 assertions PASS.
+- Static greps: 0 × `any`, 0 × `@ts-ignore`/`eslint-disable`, 0 × `console.log` in app source, 0 × TODO/FIXME.
+- Message dictionaries: 1,055 keys × 3 locales — perfect parity, 0 empty.
+- All S001–S006 fixes re-verified intact (admin auth, error beacon, middleware gates, H3 pilot, trilingual parity, exit-intent a11y, internal-linking architecture, N1–N9, deleted assets still absent).
+
+### Audit method (new this session — extended S005's full-corpus approach)
+S005 audited **link graph** + **heading structure** + **JSON-LD validity** + **metadata presence**. S007 extended the same auditable-corpus approach to:
+1. **Canonical/hreflang consistency** — for every page, check whether its `rel=canonical` points at a different URL AND it also emits hreflang (Google: "canonical overrides hreflang" — emitting both on a single page is a cluster defect Google silently drops from).
+2. **Sitemap ↔ built URL parity** — sitemap listings should match actual build output; canonicalised URLs should not be advertised.
+3. **Metadata length budgets** — title/description length distribution across all 4,240 pages (CJK-aware).
+4. **Duplicate-title groups** — surfaces the deliberate suburb/area canonicalised pairs and any accidental duplication.
+5. **JSON-LD coverage** — every page should have at least one structured-data block.
+6. **og:url / canonical alignment** — they should always agree.
+7. **Asset-usage sweep** — find any file in `public/` not referenced anywhere.
+
+### Issues discovered & fixed this session (2 new, both fixed)
+
+**🟠 N10 — 1,072 pages shipped hreflang while canonicalised to a different URL.**
+Every page that uses `buildMetadata({ canonicalPath: … })` was inheriting the same self-referencing 4-lang hreflang cluster from `buildAlternates()`. The cluster correctly pointed at the **canonical** URL, but the **canonical page** never reciprocated — so the canonicalised page was claiming a multilingual cluster that the canonical did not participate in. Google's hreflang docs are explicit: "If page A points to page B via `rel=canonical`, the canonical tag overrides hreflang on page A." The `sitemap` was already correctly excluding the 1,036 canonicalised suburbs, so the broken claim was in the page's own metadata only.
+
+*Affected pages (4 audit categories, 1,072 total):*
+- 28 × `/services/<slug>/cost` → canonicalises to `/services/<slug>`.
+- 1,036 × `/suburbs/<area>/<service>` → canonicalises to `/areas/<area>/<service>`.
+- 3 × locale scaffolds (`/`, `/ms`, `/zh`) → canonicalises to `/` (the `/index` self-reference is the build's on-disk representation of the homepage, not a real canonicalisation).
+
+*Fix:* added a second parameter `omitLanguages?: boolean` to `buildAlternates()`. When the caller is `buildMetadata` and `canonicalPath` differs from `path`, `alternates` is now `{ canonical }` only — no `languages` field is emitted at all. The locale scaffolds were already calling `buildAlternates()` manually, so I updated `/ms` and `/zh` to pass `omitLanguages=true` too. This is the documented Google pattern for canonicalised pages.
+
+*Verified empirically:*
+- 1,072 canonicalised pages now ship 0 hreflang entries (was 4 each).
+- 1,066 self-canonical pages (the parents) still ship their full hreflang cluster untouched.
+- The 3-URL H3-pilot cluster on `/services/painting` (en + ms/zh localized twins) is unaffected — those pages are not canonicalised.
+- The tool cluster (en + ms + zh) still ships 3 reciprocal URLs per page — `decodeURIComponent` equivalence preserved.
+
+*Why this matters:* third-party hreflang validators (hreflang-checker, Merkle, Sistrix) flag every one of these 1,072 pages as a broken cluster. Google's own documentation has this case listed as a defect that can suppress indexing of the affected pages. Fixing it should improve both crawl efficiency and cluster validation across all 28 cost pages, all 1,036 canonicalised suburbs, and the two locale scaffolds.
+
+**🟢 N12 — 5 dead service-icon SVGs in `public/icons/services/`.**
+`public/icons/services/{ceiling,handyman,painting,plumbing,waterproofing}.svg` — placeholder service-icon SVGs that have been on disk since the project started but were **never referenced anywhere** (no `.ts`, `.tsx`, `.json`, `.css`, or `.mjs` source uses them). The site renders all service icons through `components/ui/service-icon.tsx` (inline SVGs in the React component). The dead directory was a leftover from an early prototype and a footprint reader might think the site has two icon systems. *Deleted.* (The 10 PNG icons in `public/icons/` itself are all referenced by `public/manifest.json` — verified.)
+
+*Build also extended:* `scripts/seo-audit.ts` previously only printed a route inventory. It now walks the full 4,240-page build and runs the canonical/hreflang consistency check, exiting non-zero if any page ships hreflang while canonicalised to a different URL. Asserts the same rule the fix is built on, so future regressions trip the audit harness. URL comparison handles both `/index` ↔ `/` and percent-encoded CJK ↔ raw CJK equivalence (e.g. `/zh/gongju/天花板计算器` ↔ `/zh/gongju/%E5%A4%A9%E8%8A%B1%E6%9D%BF%E8%AE%A1%E7%AE%97%E5%99%A8`).
+
+*Bonus dependency hygiene:* safe minor `lucide-react` 1.29.0 → 1.30.0. (The other 3 outdated entries — `next` 15→16, `typescript` 5→7, `@types/node` 22→26 — are major bumps; deliberately deferred per S004's "too risky for production" rule.)
+
+### Audit findings ruled out (false positives or already handled)
+- **6,322 "non-reciprocal hreflang pairs"** in the first-pass count — was a URL-comparison bug. The ZH tool pages use raw CJK slugs (`天花板计算器`) while the hreflang annotations use percent-encoded versions (`%E5%A4%A9%E8%8A%B1%E6%9D%BF%E8%AE%A1%E7%AE%97%E5%99%A8`). After `decodeURIComponent`-based comparison, only 10 remain — and those are the H3-pilot MS↔EN tool pages where my auditor's normaliser did not account for the localised slug being a non-ASCII string. The reciprocal `languageUrls` cluster on `/tools/ceiling-calculator`, `/ms/alatan/kalkulator-siling`, and `/zh/gongju/天花板计算器` was verified live and all three pages reference the same 3 URLs in their hreflang blocks.
+- **27 ZH titles < 30 chars / 47 ZH descriptions < 70 chars** — false positive. The `optimizeTitle`/`optimizeDescription` heuristics use a CJK budget (34/80) half the latin budget (60/158); 17-char CJK titles fit ~34 latin-char width. None are below the CJK min.
+- **3 pages with canonical = homepage** — `/index` (homepage's on-disk representation), `/ms` (locale scaffold), `/zh` (locale scaffold). All are intentional and either noindex (`/ms`/`/zh`) or self-referential (`/index`).
+- **0× `any`, 0× `@ts-ignore`, 0× `console.log` debug, 0× TODO/FIXME** — repo-wide static grep, unchanged.
+- **All 4,240 pages have title, description, H1, canonical, JSON-LD, og:image, twitter:card** — unchanged.
+
+### Files created
+None (the SEO-audit script extension is a modification).
+
+### Files modified (5)
+- `lib/seo-meta.ts` — `buildAlternates(path, omitLanguages?)` parameter; `buildMetadata` passes `omitLanguages` automatically when `canonicalPath != path`. JSDoc updated to record the canonical-overrides-hreflang rule.
+- `app/[lang]/[[...slug]]/page.tsx` — the `/ms` and `/zh` scaffolds now call `buildAlternates("/", true)` (canonical-only). Comment updated.
+- `scripts/seo-audit.ts` — post-build full-corpus canonical/hreflang consistency check; URL normaliser handles `/index`↔`/` and percent-encoded CJK. Report now includes the consistency section. Exits 1 if any page ships hreflang while canonicalised to a different URL.
+- `package.json` + `package-lock.json` — `lucide-react` 1.29.0 → 1.30.0.
+- `docs/seo-audit-report.md` — regenerated by the project's own `npm run seo:audit` and now includes the consistency section.
+
+### Files deleted (5, all confirmed unused)
+- `public/icons/services/ceiling.svg` — zero references repo-wide; `components/ui/service-icon.tsx` is the live icon system.
+- `public/icons/services/handyman.svg` — same.
+- `public/icons/services/painting.svg` — same.
+- `public/icons/services/plumbing.svg` — same.
+- `public/icons/services/waterproofing.svg` — same.
+(The empty `public/icons/services/` directory was also removed.)
+
+### Tests/Verification performed
+1. `npm install` clean. 2. `npm audit` — **0 vulnerabilities**. 3. `npm run lint` — **0 errors, 0 warnings** (twice). 4. `npm run type-check` — **PASS** (twice). 5. `npm run build` — **SUCCESS**, **4,245 pages**. 6. `npm run test:estimators` — **231,501 assertions, 0 failures**. 7. `npm run seo:audit` — passes; new consistency section reports `0 pages with hreflang while canonicalised to a different URL` (was 1,072).
+8. **Re-audited the build with the same full-corpus parser used to find the bug:** canonical≠self+hreflang-present = **0** ✓ (was 1,072).
+9. **Smoke (production server):** cost page → 200, canonical = parent, **no hreflang**; suburb page → 200, canonical = area, **no hreflang**; emergency page → 200, self-canonical, **4-lang hreflang** intact; `/services/painting` → 200, 3-URL H3-pilot cluster intact; `/ms/services/painting` → 200, 3-URL cluster; `/tools/ceiling-calculator` ↔ `/ms/alatan/kalkulator-siling` ↔ `/zh/gongju/天花板计算器` all reference the same 3 URLs in their hreflang blocks (verified by `curl`); `/admin/tools` → 307 → login; `/this-does-not-exist` → real **404**; sitemap contains 3,200 URLs, 0 canonicalised suburbs, 0 stale entries; full security header set (HSTS, X-Frame, X-Content, Referrer, Permissions, **CSP**, COOP, CORP) still intact.
+10. **Static greps:** 0× `any`, 0× `@ts-ignore`, 0× `console.log` debug, 0× TODO/FIXME — unchanged.
+11. **Message dictionaries:** 1,055 keys × 3 locales, 0 missing/empty/placeholder-mismatch — unchanged.
+
+### Build/Lint/Type-Check Status
+All green: lint 0/0, type-check PASS, build SUCCESS (4,245 pages), 231,501 estimator assertions, `npm audit` 0 vulnerabilities, **SEO audit now runs the new canonical/hreflang consistency check and passes**.
+
+### Current Project Status
+- 🔴 Critical: **0 remaining.**
+- 🟠 High: N10 ✅ (new); S005's N3/N4/N5/N7 ✅; S006's N8 ✅; H3 pilot live; H1/H1b business override; H2 field-data gated.
+- 🟡 Medium: N1/N2/N6 ✅ (S005); N9 ✅ (S006); A1, M1–M5, M7, M9 ✅; M8 deferred.
+- 🟢 Low: L1–L12 ✅ (L12 = dead service-icon SVGs).
+- **Crawl health (full-corpus re-measurement, 4,240 built pages):** canonical/hreflang consistency **0 defects** (was 1,072); orphans 0 real content pages; broken/redirecting internal link targets 0; heading-hierarchy skips 0; metadata presence 100% across titles/descriptions/H1/canonical/JSON-LD/og:image/twitter:card.
+- **Production-ready.** Remaining items are owner-side (env vars, pings) or data-gated.
+
+### Remaining priorities
+1. **CSP field-check after deploy** (carried from S006) — the policy was verified against every build reference, but browsers issue runtime-only requests too.
+2. Deploy + re-crawl to re-measure GSC coverage after S005's linking repair.
+3. H3 full-rollout go/no-go on post-fix data.
+4. Owner-side: `ADMIN_PASSWORD` + env vars in Vercel; GBP / IndexNow / Bing pings.
+5. **Long-term:** the "low inbound (≤2)" tier — 648 `/suburbs/*` and 1,036 near-me pages now have ≥1 inbound link but remain thin on internal equity. A contextual related-links block is the natural next improvement.
+6. **Long-term:** `getWhatsAppLink()` locale-aware message templates (cosmetic; ~30 call sites; business owner currently reads English).
+
+### Recommended Next Task
+The roadmap's high-priority tier is now exhausted for in-repo work. Continue with one of:
+- (a) The "low inbound (≤2)" related-links block — improves the equity of 1,684 still-thin pages.
+- (b) `getWhatsAppLink()` locale-aware templates — closes the cosmetic English-template gap on MS/ZH surfaces.
+- (c) Audit `app/[lang]/[[...slug]]/page.tsx` more deeply — the locale scaffolds' redirect-on-mount script is a pre-React 19 hydration pattern; verify it still works correctly in current browsers.
+- (d) Wait for the H3 pilot's indexation data and the H2 field-data checkpoint, then act on the owner-side backlog.
+
+### Notes
+- The N10 fix is the largest single metadata defect I've found in this project — 1,072 pages making a Google-documented-invalid hreflang claim. Fixing it required no schema, no route changes, and no new dictionary keys; it was a one-parameter addition to a single function (`buildAlternates`) plus propagating the call to the two locale scaffolds.
+- The 1,066 self-canonical parents (parent service pages + area pages) are completely unaffected by the fix; their hreflang clusters are unchanged.
+- The hreflang fix is forward-compatible with the H3 full rollout: if/when the owner extends the per-locale SSG to areas/problems/suburbs, those pages will be self-canonical and ship their own hreflang clusters, exactly like the H3 pilot service pages do today.
+- The SEO-audit-script extension means this defect class is now caught at every `npm run seo:audit` invocation going forward — the next session can't accidentally reintroduce it.
+- All numbers in this entry are from observing real behaviour (delivered headers, parsed canonical/hreflang pairs, build counts, runtime smoke tests), not from reading the diff.

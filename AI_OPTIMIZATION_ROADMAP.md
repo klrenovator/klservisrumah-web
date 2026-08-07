@@ -121,6 +121,15 @@ All findings below were **independently re-verified in Session 001** against the
   - **Documented trade-off:** `script-src` retains `'unsafe-inline'` because Next.js App Router bootstraps hydration with inline scripts and this site is ~4,245 statically prerendered pages served from a CDN — there is no per-request nonce available. Still a large net gain: an injected `<script src="https://evil.tld">` is blocked, as are `eval`, foreign form actions, plugins and framing.
   - **Verified:** header present on both HTML documents and static assets; the `immutable` cache rule on `/_next/static/*` is preserved (checked explicitly — a naive header addition would have stomped it); every real subresource on the homepage is same-origin and permitted; 25-URL smoke test all 200/404 as expected.
 
+### 🟠 High (new in S007)
+
+- ✅ **[2026-08-07 / S007] N10. 1,072 pages shipped hreflang while canonicalised to a different URL (canonical-overrides-hreflang violation)**
+  - The full-corpus hreflang/canonical audit (new S007) found that every page using `buildMetadata({ canonicalPath })` inherited a self-referencing 4-lang hreflang cluster from `buildAlternates()`. The cluster correctly pointed at the **canonical** URL, but the **canonical page** never reciprocated, so the canonicalised page was making a claim about a multilingual cluster that the canonical did not participate in. Google's docs are explicit: "If page A points to page B via `rel=canonical`, the canonical tag overrides hreflang on page A." Every third-party hreflang validator (hreflang-checker, Merkle, Sistrix) flags this as a cluster defect.
+  - **Affected (1,072 total):** 28 × `/services/<slug>/cost` → canonicalises to parent; 1,036 × `/suburbs/<area>/<service>` → canonicalises to area twin; 3 × locale scaffolds (`/`, `/ms`, `/zh`) → canonicalises to `/`.
+  - **Fix:** added `omitLanguages?: boolean` to `buildAlternates()`. `buildMetadata` now passes `omitLanguages=true` automatically when `canonicalPath != path`; the locale scaffolds' manual call was updated. The `alternates` block is now `{ canonical }` only — no `languages` field is emitted at all (the canonical page is responsible for the cluster). 1,066 self-canonical parents (the parents) are completely unaffected.
+  - **Verified:** full-corpus re-audit: canonical≠self AND hreflang-present = **0** (was 1,072). All 6 smoke-tested surfaces correct: cost page → canonical-only, suburb page → canonical-only, emergency page → self-canonical + hreflang intact, main service page → 3-URL H3 cluster intact, `/ms/services/painting` → 3-URL cluster, ZH tool page → 3-URL cluster with raw CJK + percent-encoded equivalence.
+  - **Defence for the future:** `scripts/seo-audit.ts` now walks the full 4,240-page build and runs this exact check, exiting non-zero if any page violates the rule. URL comparison handles `/index`↔`/` and percent-encoded CJK equivalence so the harness doesn't false-positive on those cases.
+
 ### 🟡 Medium (new in S006)
 
 - ✅ **[2026-08-07 / S006] N9. "Send Estimate to Customer" panel was hardcoded English on every locale**
@@ -259,34 +268,47 @@ Files deleted (5):
 - `public/logo/logo.svg` — zero references.
 - `public/logo/logo-icon.svg` — zero references.
 
+### ✅ Session 005 — 2026-08-07
+Objectives: full-corpus build crawl (every one of 4,240 generated HTML files), surface the class of defect no amount of source reading finds (pages correct in isolation but unreachable in the graph).
+Completed: **N3 (🟠)** — 9 zero-inbound-link content hubs (`/answers`, `/brands`, `/commercial`, `/compare`, `/near-me`, `/process`, `/residential`, `/seasonal`, `/top`); root cause: destinations only inside a click-mounted drawer. Fix: server-rendered `EXPLORE_LINKS` in footer + same group in drawer. **N4 (🟠)** — 1,036 `/areas/<area>/<service>/near-me` orphans (24% of site). Fix: parent area×service page links its near-me variant. **N5 (🟠)** — 27 of 28 emergency pages orphans. Fix: sibling /cost page emergency call-out. **N7 (🟠)** — localized MS/ZH trees were isolated islands. Fix: new `locale-tree-links.tsx` wired into all 4 localized trees × 2 locales. **N1 (🟡)** — 404 page was a metadata clone of the homepage (soft-404 signal). **N2 (🟡)** — MS/ZH service pages were the only internal links to 6 redirecting URLs. **N6 (🟡)** — 58 pages with h1→h3 skip. Result: orphans **1,077 → 0** real content pages; broken targets **6 → 0**; heading skips **58 → 0**; internal links **+48,034**. All fixes reuse existing translated keys.
+
+### ✅ Session 006 — 2026-08-07
+Objectives: audit security headers + shared-component English leakage.
+Completed: **N8 (🟠)** — added CSP + COOP + CORP + X-DNS-Prefetch-Control. Policy derived from an inventory of what the app actually loads. `'unsafe-inline'` in `script-src` documented as a Next.js static-export limitation. **N9 (🟡)** — "Send Estimate to Customer" panel was hardcoded English on every locale. Fix: 14-key `estimator.sendToCustomer` namespace in all 3 site dictionaries + 3 standalone chrome modules, with natural Malay and Chinese. Added the section to the test-estimators harness (231,498 → 231,501 assertions).
+
+### ✅ Session 007 — 2026-08-07
+Objectives: full-corpus canonical/hreflang consistency audit (new dimension not measured by S005).
+Completed: **N10 (🟠)** — 1,072 pages shipped hreflang while canonicalised to a different URL (28 cost pages + 1,036 canonicalised suburbs + 3 locale scaffolds). Google: "canonical overrides hreflang." Fix: `buildAlternates(path, omitLanguages?)` parameter; `buildMetadata` auto-passes `omitLanguages=true` when `canonicalPath != path`; `/ms` and `/zh` scaffolds updated. **L12 (🟢)** — 5 dead service-icon SVGs in `public/icons/services/` (zero references; site uses `components/ui/service-icon.tsx` inline SVGs). Deleted. **Defence for the future:** `scripts/seo-audit.ts` extended with a post-build full-corpus canonical/hreflang consistency check that exits non-zero on any violation. **Bonus dep hygiene:** `lucide-react` 1.29.0 → 1.30.0. Result: canonical/hreflang consistency **1,072 → 0** across 4,240 pages. All other S001–S006 fixes verified intact.
+
 Files modified (3):
 - `package.json` — dependency version bumps.
 - `package-lock.json` — lockfile updated.
 - `docs/seo-audit-report.md` — regenerated by `npm run seo:audit`.
 
-### Current Project Status (updated S006)
+### Current Project Status (updated S007)
 - 🔴 Critical: **0 remaining.**
-- 🟠 High: N8 ✅ (S006 — CSP + cross-origin isolation headers); N3/N4/N5/N7 ✅ (S005 — internal-linking architecture repaired); H3 pilot ✅ live; H1/H1b business override (documented); H2 field-data gated.
+- 🟠 High: N10 ✅ (S007 — canonical/hreflang consistency); N8 ✅ (S006 — CSP + cross-origin isolation headers); N3/N4/N5/N7 ✅ (S005 — internal-linking architecture repaired); H3 pilot ✅ live; H1/H1b business override (documented); H2 field-data gated.
 - 🟡 Medium: N9 ✅ (S006 — estimator send-panel trilingual); N1/N2/N6 ✅ (S005); A1 ✅; M1–M5, M7, M9 ✅; M8 deferred.
-- 🟢 Low: L1–L11 ✅; dependency hygiene updated.
-- **Security headers (S006):** CSP, COOP, CORP now shipped alongside the pre-existing HSTS / X-Frame-Options / nosniff / Referrer-Policy / Permissions-Policy. `npm audit` 0 vulnerabilities.
+- 🟢 Low: L1–L12 ✅ (L12 = dead service-icon SVGs); dependency hygiene updated.
+- **Security headers (S006):** CSP, COOP, CORP shipped alongside HSTS / X-Frame-Options / nosniff / Referrer-Policy / Permissions-Policy. `npm audit` 0 vulnerabilities.
+- **Metadata integrity (S007):** canonical/hreflang consistency **0 defects** across 4,240 pages (was 1,072); every page has title, description, H1, canonical, JSON-LD, og:image, twitter:card.
 - **Multilingual:** 1,055 keys × 3 locales, perfect parity, 0 empty values; no hardcoded English remains in any shared estimator surface.
-- **Crawl health (full-corpus measurement, 4,240 built pages):** orphan pages **1,077 → 0** real content pages (only `/ms`, `/zh` noindex scaffolds and noindex `/search` remain, all correct); broken/redirecting internal link targets **6 → 0**; heading-hierarchy skips **58 → 0**; internal links **219,562 → 267,596** (+48,034).
+- **Crawl health (full-corpus measurement, 4,240 built pages):** orphan pages **1,077 → 0** real content pages; broken/redirecting internal link targets **6 → 0**; heading-hierarchy skips **58 → 0**; internal links **219,562 → 267,596** (+48,034); canonical/hreflang consistency **1,072 → 0**.
 - **Production-ready** pending owner-side env vars + full H3 rollout decision.
 
 ### Remaining High-Priority Tasks (owner-side / data-gated)
-1. **H3 full-rollout decision** — owner go/no-go after measuring the pilot's indexation + conversions. *S005 note: the pilot's structural handicap is now fixed — before this session the localized trees had almost no internal links, so pilot indexation data gathered earlier under-represents its real potential. Re-measure after this deploy before deciding.*
+1. **H3 full-rollout decision** — owner go/no-go after measuring the pilot's indexation + conversions. *S005 note: the pilot's structural handicap is now fixed — before S005 the localized trees had almost no internal links, so pilot indexation data gathered earlier under-represents its real potential. Re-measure after the S005/S006/S007 deploys before deciding.*
 2. **H2 checkpoint** — revisit `/faq` page size only after real CrUX/PageSpeed field data.
 3. **Set `ADMIN_PASSWORD`** + confirm `INDEXNOW_SECRET`/`CRON_SECRET`/`PAGESPEED_API_KEY`/`NEXT_PUBLIC_GA_ID` in Vercel.
 4. Google Business Profile + IndexNow + Bing Webmaster post-deploy pings (owner-side).
 
-### Recommended Next Task (updated S006)
-0. **CSP field-check after deploy.** The policy was verified against every subresource the build actually references, but browsers see runtime-only requests too. After deploying, watch the browser console / `report-uri`-less violations on a real session (homepage, an estimator, the booking form) for one cycle. If anything is blocked, widen the specific directive rather than loosening `default-src`.
-1. **Deploy + re-measure.** The S005 internal-linking repair changes what Google can reach and how equity flows; give it a crawl cycle, then read GSC (coverage for the 9 hubs, the 1,036 near-me pages and the localized trees).
+### Recommended Next Task (updated S007)
+0. **CSP field-check after deploy** (carried from S006) — the policy was verified against every build reference, but browsers issue runtime-only requests too. After deploying, watch the browser console for one real session (homepage, an estimator, the booking form). If anything is blocked, widen the specific directive rather than loosening `default-src`.
+1. **Deploy + re-measure.** The S005 internal-linking repair, S006's CSP, and S007's hreflang fix materially change what is reachable and how Google reads clusters; give it a crawl cycle, then read GSC (coverage for the 9 hubs, the 1,036 near-me pages, the localized trees, and the hreflang-validating tools).
 2. Then the H3 full-rollout go/no-go with clean data.
 3. Owner-side env vars + pings (blocking nothing in code).
 4. Future: `getWhatsAppLink()` locale-aware message templates (cosmetic; business currently receives English messages).
-5. Consider `low inbound (≤2)` clusters as the next optimisation tier — 648 `/suburbs/*` and 1,036 near-me pages now have ≥1 link but remain thin on internal equity (see S005 notes).
+5. Consider the `low inbound (≤2)` clusters as the next in-repo optimisation tier — 648 `/suburbs/*` and 1,036 near-me pages now have ≥1 link but remain thin on internal equity (S005 notes).
 6. When a content-migration milestone arrives, consolidate `config/` families (M8).
 
 ---
