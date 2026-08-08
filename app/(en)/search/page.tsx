@@ -8,6 +8,12 @@ import { servicesData } from "@/config/services-data";
 import { areaPages } from "@/config/area-data";
 import { buildMetadata } from "@/lib/seo-meta";
 
+/** Async server wrapper — resolves the searchParams promise before passing `q` to the client component. */
+async function SearchPageFinder({ searchParams }: { searchParams: Promise<{ q?: string }> }) {
+  const resolved = await searchParams;
+  return <SmartServiceFinder initialQuery={resolved.q || ""} />;
+}
+
 export const metadata: Metadata = {
   ...buildMetadata({
     title: "Smart Service Finder — Instant 3-Language Home Service Discovery",
@@ -32,7 +38,7 @@ const POPULAR_QUERIES = [
   { label: "Deep cleaning Subang Jaya", href: "/areas/subang-jaya/deep-cleaning" }
 ];
 
-export default function SearchPage() {
+export default function SearchPage({ searchParams }: { searchParams: Promise<{ q?: string }> }) {
   return (
     <>
       <Breadcrumbs items={[{ label: "Smart Service Finder", href: "/search" }]} />
@@ -40,7 +46,7 @@ export default function SearchPage() {
       <section className="relative bg-gradient-to-b from-slate-900 to-slate-950 py-16 sm:py-24 border-b border-slate-800">
         <div className="container-default max-w-6xl">
           <Suspense fallback={<div className="h-40 rounded-3xl bg-slate-800 animate-pulse" />}>
-            <SmartServiceFinder />
+            <SearchPageFinder searchParams={searchParams} />
           </Suspense>
 
           <div className="mt-14">

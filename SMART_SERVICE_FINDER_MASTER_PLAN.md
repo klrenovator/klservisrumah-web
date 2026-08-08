@@ -155,8 +155,13 @@ In addition to the 28 core services, the Smart Service Finder integrates:
   - Services Directory (`/services`) integration above the grid.
   - Dedicated search page (`/search`) upgrade.
   - Production verification (`npm run lint`, `npm run type-check`, `npm run build` — 4,341 static pages compiled successfully).
+- **Completed (`[x]`)**:
+  - Full conversion analytics tracking via GA4 events (`smart_finder_search`, `smart_finder_card_expand`, `smart_finder_calculator_click`, `smart_finder_quote_click`, `smart_finder_no_results`, `smart_finder_popular_tag`, `smart_finder_related_click`) with GTM/GA4 dual-push, debounced search tracking, source attribution, and WhatsApp lead-source indicator.
+  - Smart Service Finder integrated into localized (ms/zh) services directories via `LocaleServicesIndex` component — `/ms/services` and `/zh/services` now show the trilingual Smart Finder.
+  - Google `SearchAction` schema connected to `/search?q=` parameter — search box pre-fills from URL query.
+  - Dead code cleanup: removed unused `site-search.tsx` (old basic search component).
 - **Pending (`[ ]`)**:
-  - Ongoing conversion analytics tracking via Google Analytics / UTM tags.
+  - Monitor live GA4 events once `NEXT_PUBLIC_GA_ID` environment variable is configured.
 - **Blocked / Needs Business Decision (`[!]`)**:
   - Business confirmation required for `aircond-wiring-circuit` (HVAC licensing check) and `smart-home-automation` (supplier SLA check).
 - **Recommended Future Work**:

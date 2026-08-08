@@ -7,6 +7,7 @@ import { getLocalizedService } from "@/lib/service-i18n";
 import { getServerTranslator } from "@/lib/i18n-server";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
+import { SmartServiceFinder } from "@/components/ui/smart-service-finder";
 import { localizedServiceLanguageUrls, localizedServicesIndexPath, SERVICE_LOCALE_PATHS } from "@/components/sections/locale-service-page";
 import { LocaleTreeLinks } from "@/components/sections/locale-tree-links";
 
@@ -41,6 +42,10 @@ export function LocaleServicesIndex({ locale }: { locale: "ms" | "zh" }) {
             <p className="mt-4 text-base font-semibold leading-relaxed text-[#475569] sm:text-lg">
               {t("services.pageSubtitle")}
             </p>
+          </div>
+
+          <div className="mt-10">
+            <SmartServiceFinder />
           </div>
 
           <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
