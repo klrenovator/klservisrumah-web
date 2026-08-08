@@ -1,5 +1,6 @@
 import React from "react";
 import { Hero } from "@/components/sections/hero";
+import { SmartServiceFinder } from "@/components/ui/smart-service-finder";
 import { TrustBar } from "@/components/trust-bar";
 import { RecentJobsTicker } from "@/components/recent-jobs-ticker";
 import { TrustBadges } from "@/components/sections/trust-badges";
@@ -168,6 +169,9 @@ export default function Home() {
       />
 
       <Hero />
+      <div className="container-default py-10 sm:py-14">
+        <SmartServiceFinder />
+      </div>
       {/* Floating rotating request toast — shows one item at a time, fades in/out */}
       <RecentJobsTicker />
       {/* Trust strip — relocated below the hero so the slideshow leads the page */}
