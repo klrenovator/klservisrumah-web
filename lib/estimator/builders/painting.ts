@@ -685,7 +685,12 @@ export function buildPaintingSpec(t: Translator): EstimatorSpec {
     serviceSlug: "painting",
     resultLabel: t("meta.resultLabel"),
     defaults: {
-      paintingType: "walls-only",
+      // NOTE: `paintingType` is intentionally NOT defaulted. The legacy
+      // target/areaPreset/propertySize interface (exercised by the estimator
+      // test harness and calibration guards) must keep working for callers
+      // that do not explicitly pick a painting type, and the wizard's first
+      // question is exactly that choice. Once the visitor picks one, the
+      // answer flows into `compute` and the new walls/ceiling modes engage.
       roomPreset: "12x12",
       areaPreset: "10x12", // legacy compat
       customLength: 12,

@@ -88,6 +88,135 @@ import { tvMountZhDict } from "../lib/estimator/i18n/tools/tv-mount-zh.ts";
 import { chromeEnDict } from "../lib/estimator/i18n/chrome-en.ts";
 import { chromeMsDict } from "../lib/estimator/i18n/chrome-ms.ts";
 import { chromeZhDict } from "../lib/estimator/i18n/chrome-zh.ts";
+import { buildCeilingReplacementCostSpec } from "../lib/estimator/builders/ceiling-replacement-cost.ts";
+import { ceilingReplacementCostEnDict } from "../lib/estimator/i18n/tools/ceiling-replacement-cost-en.ts";
+import { ceilingReplacementCostMsDict } from "../lib/estimator/i18n/tools/ceiling-replacement-cost-ms.ts";
+import { ceilingReplacementCostZhDict } from "../lib/estimator/i18n/tools/ceiling-replacement-cost-zh.ts";
+import { buildPipeReplacementCostSpec } from "../lib/estimator/builders/pipe-replacement-cost.ts";
+import { pipeReplacementCostEnDict } from "../lib/estimator/i18n/tools/pipe-replacement-cost-en.ts";
+import { pipeReplacementCostMsDict } from "../lib/estimator/i18n/tools/pipe-replacement-cost-ms.ts";
+import { pipeReplacementCostZhDict } from "../lib/estimator/i18n/tools/pipe-replacement-cost-zh.ts";
+import { buildWaterproofingCostCalculatorSpec } from "../lib/estimator/builders/waterproofing-cost-calculator.ts";
+import { waterproofingCostCalculatorEnDict } from "../lib/estimator/i18n/tools/waterproofing-cost-calculator-en.ts";
+import { waterproofingCostCalculatorMsDict } from "../lib/estimator/i18n/tools/waterproofing-cost-calculator-ms.ts";
+import { waterproofingCostCalculatorZhDict } from "../lib/estimator/i18n/tools/waterproofing-cost-calculator-zh.ts";
+import { buildBathroomWaterproofingEstimatorSpec } from "../lib/estimator/builders/bathroom-waterproofing-estimator.ts";
+import { bathroomWaterproofingEstimatorEnDict } from "../lib/estimator/i18n/tools/bathroom-waterproofing-estimator-en.ts";
+import { bathroomWaterproofingEstimatorMsDict } from "../lib/estimator/i18n/tools/bathroom-waterproofing-estimator-ms.ts";
+import { bathroomWaterproofingEstimatorZhDict } from "../lib/estimator/i18n/tools/bathroom-waterproofing-estimator-zh.ts";
+import { buildBalconyWaterproofingEstimatorSpec } from "../lib/estimator/builders/balcony-waterproofing-estimator.ts";
+import { balconyWaterproofingEstimatorEnDict } from "../lib/estimator/i18n/tools/balcony-waterproofing-estimator-en.ts";
+import { balconyWaterproofingEstimatorMsDict } from "../lib/estimator/i18n/tools/balcony-waterproofing-estimator-ms.ts";
+import { balconyWaterproofingEstimatorZhDict } from "../lib/estimator/i18n/tools/balcony-waterproofing-estimator-zh.ts";
+import { buildElectricalInstallationCostSpec } from "../lib/estimator/builders/electrical-installation-cost.ts";
+import { electricalInstallationCostEnDict } from "../lib/estimator/i18n/tools/electrical-installation-cost-en.ts";
+import { electricalInstallationCostMsDict } from "../lib/estimator/i18n/tools/electrical-installation-cost-ms.ts";
+import { electricalInstallationCostZhDict } from "../lib/estimator/i18n/tools/electrical-installation-cost-zh.ts";
+import { buildLightingInstallationCalculatorSpec } from "../lib/estimator/builders/lighting-installation-calculator.ts";
+import { lightingInstallationCalculatorEnDict } from "../lib/estimator/i18n/tools/lighting-installation-calculator-en.ts";
+import { lightingInstallationCalculatorMsDict } from "../lib/estimator/i18n/tools/lighting-installation-calculator-ms.ts";
+import { lightingInstallationCalculatorZhDict } from "../lib/estimator/i18n/tools/lighting-installation-calculator-zh.ts";
+import { buildCeilingFanInstallationEstimatorSpec } from "../lib/estimator/builders/ceiling-fan-installation-estimator.ts";
+import { ceilingFanInstallationEstimatorEnDict } from "../lib/estimator/i18n/tools/ceiling-fan-installation-estimator-en.ts";
+import { ceilingFanInstallationEstimatorMsDict } from "../lib/estimator/i18n/tools/ceiling-fan-installation-estimator-ms.ts";
+import { ceilingFanInstallationEstimatorZhDict } from "../lib/estimator/i18n/tools/ceiling-fan-installation-estimator-zh.ts";
+import { buildHandymanCostEstimatorSpec } from "../lib/estimator/builders/handyman-cost-estimator.ts";
+import { handymanCostEstimatorEnDict } from "../lib/estimator/i18n/tools/handyman-cost-estimator-en.ts";
+import { handymanCostEstimatorMsDict } from "../lib/estimator/i18n/tools/handyman-cost-estimator-ms.ts";
+import { handymanCostEstimatorZhDict } from "../lib/estimator/i18n/tools/handyman-cost-estimator-zh.ts";
+import { buildFurnitureAssemblyEstimatorSpec } from "../lib/estimator/builders/furniture-assembly-estimator.ts";
+import { furnitureAssemblyEstimatorEnDict } from "../lib/estimator/i18n/tools/furniture-assembly-estimator-en.ts";
+import { furnitureAssemblyEstimatorMsDict } from "../lib/estimator/i18n/tools/furniture-assembly-estimator-ms.ts";
+import { furnitureAssemblyEstimatorZhDict } from "../lib/estimator/i18n/tools/furniture-assembly-estimator-zh.ts";
+import { buildCurtainInstallationCalculatorSpec } from "../lib/estimator/builders/curtain-installation-calculator.ts";
+import { curtainInstallationCalculatorEnDict } from "../lib/estimator/i18n/tools/curtain-installation-calculator-en.ts";
+import { curtainInstallationCalculatorMsDict } from "../lib/estimator/i18n/tools/curtain-installation-calculator-ms.ts";
+import { curtainInstallationCalculatorZhDict } from "../lib/estimator/i18n/tools/curtain-installation-calculator-zh.ts";
+import { buildDoorInstallationCostSpec } from "../lib/estimator/builders/door-installation-cost.ts";
+import { doorInstallationCostEnDict } from "../lib/estimator/i18n/tools/door-installation-cost-en.ts";
+import { doorInstallationCostMsDict } from "../lib/estimator/i18n/tools/door-installation-cost-ms.ts";
+import { doorInstallationCostZhDict } from "../lib/estimator/i18n/tools/door-installation-cost-zh.ts";
+import { buildWindowReplacementEstimatorSpec } from "../lib/estimator/builders/window-replacement-estimator.ts";
+import { windowReplacementEstimatorEnDict } from "../lib/estimator/i18n/tools/window-replacement-estimator-en.ts";
+import { windowReplacementEstimatorMsDict } from "../lib/estimator/i18n/tools/window-replacement-estimator-ms.ts";
+import { windowReplacementEstimatorZhDict } from "../lib/estimator/i18n/tools/window-replacement-estimator-zh.ts";
+import { buildGlassReplacementCalculatorSpec } from "../lib/estimator/builders/glass-replacement-calculator.ts";
+import { glassReplacementCalculatorEnDict } from "../lib/estimator/i18n/tools/glass-replacement-calculator-en.ts";
+import { glassReplacementCalculatorMsDict } from "../lib/estimator/i18n/tools/glass-replacement-calculator-ms.ts";
+import { glassReplacementCalculatorZhDict } from "../lib/estimator/i18n/tools/glass-replacement-calculator-zh.ts";
+import { buildVinylFlooringCostEstimatorSpec } from "../lib/estimator/builders/vinyl-flooring-cost-estimator.ts";
+import { vinylFlooringCostEstimatorEnDict } from "../lib/estimator/i18n/tools/vinyl-flooring-cost-estimator-en.ts";
+import { vinylFlooringCostEstimatorMsDict } from "../lib/estimator/i18n/tools/vinyl-flooring-cost-estimator-ms.ts";
+import { vinylFlooringCostEstimatorZhDict } from "../lib/estimator/i18n/tools/vinyl-flooring-cost-estimator-zh.ts";
+import { buildRoofRepairEstimatorSpec } from "../lib/estimator/builders/roof-repair-estimator.ts";
+import { roofRepairEstimatorEnDict } from "../lib/estimator/i18n/tools/roof-repair-estimator-en.ts";
+import { roofRepairEstimatorMsDict } from "../lib/estimator/i18n/tools/roof-repair-estimator-ms.ts";
+import { roofRepairEstimatorZhDict } from "../lib/estimator/i18n/tools/roof-repair-estimator-zh.ts";
+import { buildRoofReplacementCostSpec } from "../lib/estimator/builders/roof-replacement-cost.ts";
+import { roofReplacementCostEnDict } from "../lib/estimator/i18n/tools/roof-replacement-cost-en.ts";
+import { roofReplacementCostMsDict } from "../lib/estimator/i18n/tools/roof-replacement-cost-ms.ts";
+import { roofReplacementCostZhDict } from "../lib/estimator/i18n/tools/roof-replacement-cost-zh.ts";
+import { buildRenovationBudgetCalculatorSpec } from "../lib/estimator/builders/renovation-budget-calculator.ts";
+import { renovationBudgetCalculatorEnDict } from "../lib/estimator/i18n/tools/renovation-budget-calculator-en.ts";
+import { renovationBudgetCalculatorMsDict } from "../lib/estimator/i18n/tools/renovation-budget-calculator-ms.ts";
+import { renovationBudgetCalculatorZhDict } from "../lib/estimator/i18n/tools/renovation-budget-calculator-zh.ts";
+import { buildRoomRenovationEstimatorSpec } from "../lib/estimator/builders/room-renovation-estimator.ts";
+import { roomRenovationEstimatorEnDict } from "../lib/estimator/i18n/tools/room-renovation-estimator-en.ts";
+import { roomRenovationEstimatorMsDict } from "../lib/estimator/i18n/tools/room-renovation-estimator-ms.ts";
+import { roomRenovationEstimatorZhDict } from "../lib/estimator/i18n/tools/room-renovation-estimator-zh.ts";
+import { buildKitchenRenovationEstimatorSpec } from "../lib/estimator/builders/kitchen-renovation-estimator.ts";
+import { kitchenRenovationEstimatorEnDict } from "../lib/estimator/i18n/tools/kitchen-renovation-estimator-en.ts";
+import { kitchenRenovationEstimatorMsDict } from "../lib/estimator/i18n/tools/kitchen-renovation-estimator-ms.ts";
+import { kitchenRenovationEstimatorZhDict } from "../lib/estimator/i18n/tools/kitchen-renovation-estimator-zh.ts";
+import { buildBathroomRenovationEstimatorSpec } from "../lib/estimator/builders/bathroom-renovation-estimator.ts";
+import { bathroomRenovationEstimatorEnDict } from "../lib/estimator/i18n/tools/bathroom-renovation-estimator-en.ts";
+import { bathroomRenovationEstimatorMsDict } from "../lib/estimator/i18n/tools/bathroom-renovation-estimator-ms.ts";
+import { bathroomRenovationEstimatorZhDict } from "../lib/estimator/i18n/tools/bathroom-renovation-estimator-zh.ts";
+import { buildDeepCleaningCostEstimatorSpec } from "../lib/estimator/builders/deep-cleaning-cost-estimator.ts";
+import { deepCleaningCostEstimatorEnDict } from "../lib/estimator/i18n/tools/deep-cleaning-cost-estimator-en.ts";
+import { deepCleaningCostEstimatorMsDict } from "../lib/estimator/i18n/tools/deep-cleaning-cost-estimator-ms.ts";
+import { deepCleaningCostEstimatorZhDict } from "../lib/estimator/i18n/tools/deep-cleaning-cost-estimator-zh.ts";
+import { buildMoveInOutCleaningCalculatorSpec } from "../lib/estimator/builders/move-in-out-cleaning-calculator.ts";
+import { moveInOutCleaningCalculatorEnDict } from "../lib/estimator/i18n/tools/move-in-out-cleaning-calculator-en.ts";
+import { moveInOutCleaningCalculatorMsDict } from "../lib/estimator/i18n/tools/move-in-out-cleaning-calculator-ms.ts";
+import { moveInOutCleaningCalculatorZhDict } from "../lib/estimator/i18n/tools/move-in-out-cleaning-calculator-zh.ts";
+import { buildPaintQuantityEstimatorSpec } from "../lib/estimator/builders/paint-quantity-estimator.ts";
+import { paintQuantityEstimatorEnDict } from "../lib/estimator/i18n/tools/paint-quantity-estimator-en.ts";
+import { paintQuantityEstimatorMsDict } from "../lib/estimator/i18n/tools/paint-quantity-estimator-ms.ts";
+import { paintQuantityEstimatorZhDict } from "../lib/estimator/i18n/tools/paint-quantity-estimator-zh.ts";
+import { buildWallAreaCalculatorSpec } from "../lib/estimator/builders/wall-area-calculator.ts";
+import { wallAreaCalculatorEnDict } from "../lib/estimator/i18n/tools/wall-area-calculator-en.ts";
+import { wallAreaCalculatorMsDict } from "../lib/estimator/i18n/tools/wall-area-calculator-ms.ts";
+import { wallAreaCalculatorZhDict } from "../lib/estimator/i18n/tools/wall-area-calculator-zh.ts";
+import { buildCeilingAreaCalculatorSpec } from "../lib/estimator/builders/ceiling-area-calculator.ts";
+import { ceilingAreaCalculatorEnDict } from "../lib/estimator/i18n/tools/ceiling-area-calculator-en.ts";
+import { ceilingAreaCalculatorMsDict } from "../lib/estimator/i18n/tools/ceiling-area-calculator-ms.ts";
+import { ceilingAreaCalculatorZhDict } from "../lib/estimator/i18n/tools/ceiling-area-calculator-zh.ts";
+import { buildRoofAreaCalculatorSpec } from "../lib/estimator/builders/roof-area-calculator.ts";
+import { roofAreaCalculatorEnDict } from "../lib/estimator/i18n/tools/roof-area-calculator-en.ts";
+import { roofAreaCalculatorMsDict } from "../lib/estimator/i18n/tools/roof-area-calculator-ms.ts";
+import { roofAreaCalculatorZhDict } from "../lib/estimator/i18n/tools/roof-area-calculator-zh.ts";
+import { buildFlooringAreaCalculatorSpec } from "../lib/estimator/builders/flooring-area-calculator.ts";
+import { flooringAreaCalculatorEnDict } from "../lib/estimator/i18n/tools/flooring-area-calculator-en.ts";
+import { flooringAreaCalculatorMsDict } from "../lib/estimator/i18n/tools/flooring-area-calculator-ms.ts";
+import { flooringAreaCalculatorZhDict } from "../lib/estimator/i18n/tools/flooring-area-calculator-zh.ts";
+import { buildSocketQuantityCalculatorSpec } from "../lib/estimator/builders/socket-quantity-calculator.ts";
+import { socketQuantityCalculatorEnDict } from "../lib/estimator/i18n/tools/socket-quantity-calculator-en.ts";
+import { socketQuantityCalculatorMsDict } from "../lib/estimator/i18n/tools/socket-quantity-calculator-ms.ts";
+import { socketQuantityCalculatorZhDict } from "../lib/estimator/i18n/tools/socket-quantity-calculator-zh.ts";
+import { buildTileQuantityCalculatorSpec } from "../lib/estimator/builders/tile-quantity-calculator.ts";
+import { tileQuantityCalculatorEnDict } from "../lib/estimator/i18n/tools/tile-quantity-calculator-en.ts";
+import { tileQuantityCalculatorMsDict } from "../lib/estimator/i18n/tools/tile-quantity-calculator-ms.ts";
+import { tileQuantityCalculatorZhDict } from "../lib/estimator/i18n/tools/tile-quantity-calculator-zh.ts";
+import { buildPipeLeakEstimatorSpec } from "../lib/estimator/builders/pipe-leak-estimator.ts";
+import { pipeLeakEstimatorEnDict } from "../lib/estimator/i18n/tools/pipe-leak-estimator-en.ts";
+import { pipeLeakEstimatorMsDict } from "../lib/estimator/i18n/tools/pipe-leak-estimator-ms.ts";
+import { pipeLeakEstimatorZhDict } from "../lib/estimator/i18n/tools/pipe-leak-estimator-zh.ts";
+import { buildWaterPressureTroubleshooterSpec } from "../lib/estimator/builders/water-pressure-troubleshooter.ts";
+import { waterPressureTroubleshooterEnDict } from "../lib/estimator/i18n/tools/water-pressure-troubleshooter-en.ts";
+import { waterPressureTroubleshooterMsDict } from "../lib/estimator/i18n/tools/water-pressure-troubleshooter-ms.ts";
+import { waterPressureTroubleshooterZhDict } from "../lib/estimator/i18n/tools/water-pressure-troubleshooter-zh.ts";
+import { estimatorSpecs } from "../lib/estimator/index.ts";
 import {
   TOOLS_INDEX_PATH,
   TOOL_SLUG_I18N,
@@ -807,6 +936,199 @@ const toolI18n: ToolI18n[] = [
         powerPoint: ["yes", "no"]
       })
     ]
+  },
+
+  {
+    slug: "ceiling-replacement-cost",
+    build: buildCeilingReplacementCostSpec,
+    dicts: { en: ceilingReplacementCostEnDict, ms: ceilingReplacementCostMsDict, zh: ceilingReplacementCostZhDict },
+    samples: samplingSweep(estimatorSpecs["ceiling-replacement-cost"], { area: [120, 450, 1200], condition: ["good", "worn", "damaged"] })
+  },
+  {
+    slug: "pipe-replacement-cost",
+    build: buildPipeReplacementCostSpec,
+    dicts: { en: pipeReplacementCostEnDict, ms: pipeReplacementCostMsDict, zh: pipeReplacementCostZhDict },
+    samples: samplingSweep(estimatorSpecs["pipe-replacement-cost"], { area: [120, 450, 1200], condition: ["good", "worn", "damaged"] })
+  },
+  {
+    slug: "waterproofing-cost-calculator",
+    build: buildWaterproofingCostCalculatorSpec,
+    dicts: { en: waterproofingCostCalculatorEnDict, ms: waterproofingCostCalculatorMsDict, zh: waterproofingCostCalculatorZhDict },
+    samples: samplingSweep(estimatorSpecs["waterproofing-cost-calculator"], { area: [120, 450, 1200], condition: ["good", "worn", "damaged"] })
+  },
+  {
+    slug: "bathroom-waterproofing-estimator",
+    build: buildBathroomWaterproofingEstimatorSpec,
+    dicts: { en: bathroomWaterproofingEstimatorEnDict, ms: bathroomWaterproofingEstimatorMsDict, zh: bathroomWaterproofingEstimatorZhDict },
+    samples: samplingSweep(estimatorSpecs["bathroom-waterproofing-estimator"], { area: [120, 450, 1200], condition: ["good", "worn", "damaged"] })
+  },
+  {
+    slug: "balcony-waterproofing-estimator",
+    build: buildBalconyWaterproofingEstimatorSpec,
+    dicts: { en: balconyWaterproofingEstimatorEnDict, ms: balconyWaterproofingEstimatorMsDict, zh: balconyWaterproofingEstimatorZhDict },
+    samples: samplingSweep(estimatorSpecs["balcony-waterproofing-estimator"], { area: [120, 450, 1200], condition: ["good", "worn", "damaged"] })
+  },
+  {
+    slug: "electrical-installation-cost",
+    build: buildElectricalInstallationCostSpec,
+    dicts: { en: electricalInstallationCostEnDict, ms: electricalInstallationCostMsDict, zh: electricalInstallationCostZhDict },
+    samples: samplingSweep(estimatorSpecs["electrical-installation-cost"], { area: [120, 450, 1200], condition: ["good", "worn", "damaged"] })
+  },
+  {
+    slug: "lighting-installation-calculator",
+    build: buildLightingInstallationCalculatorSpec,
+    dicts: { en: lightingInstallationCalculatorEnDict, ms: lightingInstallationCalculatorMsDict, zh: lightingInstallationCalculatorZhDict },
+    samples: samplingSweep(estimatorSpecs["lighting-installation-calculator"], { area: [120, 450, 1200], condition: ["good", "worn", "damaged"] })
+  },
+  {
+    slug: "ceiling-fan-installation-estimator",
+    build: buildCeilingFanInstallationEstimatorSpec,
+    dicts: { en: ceilingFanInstallationEstimatorEnDict, ms: ceilingFanInstallationEstimatorMsDict, zh: ceilingFanInstallationEstimatorZhDict },
+    samples: samplingSweep(estimatorSpecs["ceiling-fan-installation-estimator"], { area: [120, 450, 1200], condition: ["good", "worn", "damaged"] })
+  },
+  {
+    slug: "handyman-cost-estimator",
+    build: buildHandymanCostEstimatorSpec,
+    dicts: { en: handymanCostEstimatorEnDict, ms: handymanCostEstimatorMsDict, zh: handymanCostEstimatorZhDict },
+    samples: samplingSweep(estimatorSpecs["handyman-cost-estimator"], { area: [120, 450, 1200], condition: ["good", "worn", "damaged"] })
+  },
+  {
+    slug: "furniture-assembly-estimator",
+    build: buildFurnitureAssemblyEstimatorSpec,
+    dicts: { en: furnitureAssemblyEstimatorEnDict, ms: furnitureAssemblyEstimatorMsDict, zh: furnitureAssemblyEstimatorZhDict },
+    samples: samplingSweep(estimatorSpecs["furniture-assembly-estimator"], { area: [120, 450, 1200], condition: ["good", "worn", "damaged"] })
+  },
+  {
+    slug: "curtain-installation-calculator",
+    build: buildCurtainInstallationCalculatorSpec,
+    dicts: { en: curtainInstallationCalculatorEnDict, ms: curtainInstallationCalculatorMsDict, zh: curtainInstallationCalculatorZhDict },
+    samples: samplingSweep(estimatorSpecs["curtain-installation-calculator"], { area: [120, 450, 1200], condition: ["good", "worn", "damaged"] })
+  },
+  {
+    slug: "door-installation-cost",
+    build: buildDoorInstallationCostSpec,
+    dicts: { en: doorInstallationCostEnDict, ms: doorInstallationCostMsDict, zh: doorInstallationCostZhDict },
+    samples: samplingSweep(estimatorSpecs["door-installation-cost"], { area: [120, 450, 1200], condition: ["good", "worn", "damaged"] })
+  },
+  {
+    slug: "window-replacement-estimator",
+    build: buildWindowReplacementEstimatorSpec,
+    dicts: { en: windowReplacementEstimatorEnDict, ms: windowReplacementEstimatorMsDict, zh: windowReplacementEstimatorZhDict },
+    samples: samplingSweep(estimatorSpecs["window-replacement-estimator"], { area: [120, 450, 1200], condition: ["good", "worn", "damaged"] })
+  },
+  {
+    slug: "glass-replacement-calculator",
+    build: buildGlassReplacementCalculatorSpec,
+    dicts: { en: glassReplacementCalculatorEnDict, ms: glassReplacementCalculatorMsDict, zh: glassReplacementCalculatorZhDict },
+    samples: samplingSweep(estimatorSpecs["glass-replacement-calculator"], { area: [120, 450, 1200], condition: ["good", "worn", "damaged"] })
+  },
+  {
+    slug: "vinyl-flooring-cost-estimator",
+    build: buildVinylFlooringCostEstimatorSpec,
+    dicts: { en: vinylFlooringCostEstimatorEnDict, ms: vinylFlooringCostEstimatorMsDict, zh: vinylFlooringCostEstimatorZhDict },
+    samples: samplingSweep(estimatorSpecs["vinyl-flooring-cost-estimator"], { area: [120, 450, 1200], condition: ["good", "worn", "damaged"] })
+  },
+  {
+    slug: "roof-repair-estimator",
+    build: buildRoofRepairEstimatorSpec,
+    dicts: { en: roofRepairEstimatorEnDict, ms: roofRepairEstimatorMsDict, zh: roofRepairEstimatorZhDict },
+    samples: samplingSweep(estimatorSpecs["roof-repair-estimator"], { area: [120, 450, 1200], condition: ["good", "worn", "damaged"] })
+  },
+  {
+    slug: "roof-replacement-cost",
+    build: buildRoofReplacementCostSpec,
+    dicts: { en: roofReplacementCostEnDict, ms: roofReplacementCostMsDict, zh: roofReplacementCostZhDict },
+    samples: samplingSweep(estimatorSpecs["roof-replacement-cost"], { area: [120, 450, 1200], condition: ["good", "worn", "damaged"] })
+  },
+  {
+    slug: "renovation-budget-calculator",
+    build: buildRenovationBudgetCalculatorSpec,
+    dicts: { en: renovationBudgetCalculatorEnDict, ms: renovationBudgetCalculatorMsDict, zh: renovationBudgetCalculatorZhDict },
+    samples: samplingSweep(estimatorSpecs["renovation-budget-calculator"], { area: [120, 450, 1200], condition: ["good", "worn", "damaged"] })
+  },
+  {
+    slug: "room-renovation-estimator",
+    build: buildRoomRenovationEstimatorSpec,
+    dicts: { en: roomRenovationEstimatorEnDict, ms: roomRenovationEstimatorMsDict, zh: roomRenovationEstimatorZhDict },
+    samples: samplingSweep(estimatorSpecs["room-renovation-estimator"], { area: [120, 450, 1200], condition: ["good", "worn", "damaged"] })
+  },
+  {
+    slug: "kitchen-renovation-estimator",
+    build: buildKitchenRenovationEstimatorSpec,
+    dicts: { en: kitchenRenovationEstimatorEnDict, ms: kitchenRenovationEstimatorMsDict, zh: kitchenRenovationEstimatorZhDict },
+    samples: samplingSweep(estimatorSpecs["kitchen-renovation-estimator"], { area: [120, 450, 1200], condition: ["good", "worn", "damaged"] })
+  },
+  {
+    slug: "bathroom-renovation-estimator",
+    build: buildBathroomRenovationEstimatorSpec,
+    dicts: { en: bathroomRenovationEstimatorEnDict, ms: bathroomRenovationEstimatorMsDict, zh: bathroomRenovationEstimatorZhDict },
+    samples: samplingSweep(estimatorSpecs["bathroom-renovation-estimator"], { area: [120, 450, 1200], condition: ["good", "worn", "damaged"] })
+  },
+  {
+    slug: "deep-cleaning-cost-estimator",
+    build: buildDeepCleaningCostEstimatorSpec,
+    dicts: { en: deepCleaningCostEstimatorEnDict, ms: deepCleaningCostEstimatorMsDict, zh: deepCleaningCostEstimatorZhDict },
+    samples: samplingSweep(estimatorSpecs["deep-cleaning-cost-estimator"], { area: [120, 450, 1200], condition: ["good", "worn", "damaged"] })
+  },
+  {
+    slug: "move-in-out-cleaning-calculator",
+    build: buildMoveInOutCleaningCalculatorSpec,
+    dicts: { en: moveInOutCleaningCalculatorEnDict, ms: moveInOutCleaningCalculatorMsDict, zh: moveInOutCleaningCalculatorZhDict },
+    samples: samplingSweep(estimatorSpecs["move-in-out-cleaning-calculator"], { area: [120, 450, 1200], condition: ["good", "worn", "damaged"] })
+  },
+  {
+    slug: "paint-quantity-estimator",
+    build: buildPaintQuantityEstimatorSpec,
+    dicts: { en: paintQuantityEstimatorEnDict, ms: paintQuantityEstimatorMsDict, zh: paintQuantityEstimatorZhDict },
+    samples: samplingSweep(estimatorSpecs["paint-quantity-estimator"], { length: [10, 15, 20], width: [12, 18, 25] })
+  },
+  {
+    slug: "wall-area-calculator",
+    build: buildWallAreaCalculatorSpec,
+    dicts: { en: wallAreaCalculatorEnDict, ms: wallAreaCalculatorMsDict, zh: wallAreaCalculatorZhDict },
+    samples: samplingSweep(estimatorSpecs["wall-area-calculator"], { length: [10, 15, 20], width: [12, 18, 25] })
+  },
+  {
+    slug: "ceiling-area-calculator",
+    build: buildCeilingAreaCalculatorSpec,
+    dicts: { en: ceilingAreaCalculatorEnDict, ms: ceilingAreaCalculatorMsDict, zh: ceilingAreaCalculatorZhDict },
+    samples: samplingSweep(estimatorSpecs["ceiling-area-calculator"], { length: [10, 15, 20], width: [12, 18, 25] })
+  },
+  {
+    slug: "roof-area-calculator",
+    build: buildRoofAreaCalculatorSpec,
+    dicts: { en: roofAreaCalculatorEnDict, ms: roofAreaCalculatorMsDict, zh: roofAreaCalculatorZhDict },
+    samples: samplingSweep(estimatorSpecs["roof-area-calculator"], { length: [10, 15, 20], width: [12, 18, 25] })
+  },
+  {
+    slug: "flooring-area-calculator",
+    build: buildFlooringAreaCalculatorSpec,
+    dicts: { en: flooringAreaCalculatorEnDict, ms: flooringAreaCalculatorMsDict, zh: flooringAreaCalculatorZhDict },
+    samples: samplingSweep(estimatorSpecs["flooring-area-calculator"], { length: [10, 15, 20], width: [12, 18, 25] })
+  },
+  {
+    slug: "socket-quantity-calculator",
+    build: buildSocketQuantityCalculatorSpec,
+    dicts: { en: socketQuantityCalculatorEnDict, ms: socketQuantityCalculatorMsDict, zh: socketQuantityCalculatorZhDict },
+    samples: samplingSweep(estimatorSpecs["socket-quantity-calculator"], { length: [10, 15, 20], width: [12, 18, 25] })
+  },
+  {
+    slug: "tile-quantity-calculator",
+    build: buildTileQuantityCalculatorSpec,
+    dicts: { en: tileQuantityCalculatorEnDict, ms: tileQuantityCalculatorMsDict, zh: tileQuantityCalculatorZhDict },
+    samples: samplingSweep(estimatorSpecs["tile-quantity-calculator"], { length: [10, 15, 20], width: [12, 18, 25] })
+  },
+  {
+    slug: "pipe-leak-estimator",
+    build: buildPipeLeakEstimatorSpec,
+    dicts: { en: pipeLeakEstimatorEnDict, ms: pipeLeakEstimatorMsDict, zh: pipeLeakEstimatorZhDict },
+    samples: samplingSweep(estimatorSpecs["pipe-leak-estimator"], { severity: ["minor", "severe"], location: ["kitchen", "bathroom", "outdoor"], urgency: ["standard", "emergency"] })
+  },
+  {
+    slug: "water-pressure-troubleshooter",
+    build: buildWaterPressureTroubleshooterSpec,
+    dicts: { en: waterPressureTroubleshooterEnDict, ms: waterPressureTroubleshooterMsDict, zh: waterPressureTroubleshooterZhDict },
+    samples: samplingSweep(estimatorSpecs["water-pressure-troubleshooter"], { severity: ["minor", "severe"], location: ["kitchen", "bathroom", "outdoor"], urgency: ["standard", "emergency"] })
   }
 ];
 
@@ -1058,7 +1380,8 @@ console.log("\n• Localised tool pages (config/tools-i18n.ts)");
       // Page name must equal the wizard's (built from the same-locale dict).
       const tool = toolI18n.find((entry) => entry.slug === slug);
       assert(Boolean(tool), `[${slug}] missing from the deep-tool i18n registry`);
-      const spec = tool!.build(createStaticTranslator(tool!.dicts[locale]));
+      if (!tool) continue;
+      const spec = tool.build(createStaticTranslator(tool.dicts[locale]));
       assert(c.name === spec.name, `[${slug}] ${locale}: page name "${c.name}" ≠ wizard name "${spec.name}"`);
     }
     // hreflang cluster wiring.

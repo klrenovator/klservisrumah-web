@@ -84,12 +84,14 @@ export function buildPaintQuantityEstimatorSpec(t: Translator): EstimatorSpec {
         { label: t("breakdown.area"), value: `${area} sq ft (${L}×${W} ft)`, note: `${sqm.toFixed(2)} m²` },
         { label: t("breakdown.quantity"), value: `${qty} ${unit}`, note: desc }
       ];
+      const materials = roundMoney(price * 0.4);
+      const labour = price - materials;
       return {
         price,
         low: roundMoney(price * 0.9),
         high: roundMoney(price * 1.2),
-        labour: roundMoney(price * 0.6),
-        materials: roundMoney(price * 0.4),
+        labour,
+        materials,
         duration: "1–2 working days",
         recommendedService: t("meta.service"),
         packageName: t("packages.standard"),
