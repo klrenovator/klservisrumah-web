@@ -1,5 +1,6 @@
 /**
- * tools-i18n.ts — Bahasa Malaysia + 中文 locale layer for the five deep tools.
+ * tools-i18n.ts — Bahasa Malaysia + 中文 locale layer for the full tool cluster
+ * (the five deep tools plus every calculator in the 37-tool suite).
  *
  * WHY THIS EXISTS
  * ---------------
@@ -593,9 +594,1576 @@ export const toolsContentI18n: Record<ToolLocale, Record<string, ToolContentI18n
         { label: "Pemasangan Elektrik", href: "/services/electrical" },
         { label: "Kerja Kayu & Dinding Ciri", href: "/services/carpentry" }
       ]
-    }
+    },
+    "paint-quantity-estimator": {
+      name: "Kalkulator Kuantiti Cat",
+      heading: "Kalkulator Kuantiti Cat untuk KL & Selangor",
+      metaTitle: "Kalkulator Kuantiti Cat KL — Liter & Kos",
+      metaDesc: "Kalkulator kuantiti cat percuma untuk KL & Selangor. Masukkan saiz bilik dan bilangan lapisan untuk dapatkan liter, liputan dan kos serta-merta.",
+      keywords: ["kalkulator kuantiti cat Malaysia", "berapa liter cat per bilik", "pengiraan cat dinding KL"],
+      eyebrow: "Alat kuantiti cat percuma",
+      intro: "Anggarkan liter cat yang diperlukan untuk sebarang saiz bilik, bilangan lapisan dan pembaziran. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos kalkulator kuantiti cat di KL dan Selangor?",
+      directAnswer: "Anggarkan liter cat yang diperlukan untuk sebarang saiz bilik, bilangan lapisan dan pembaziran. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Tin cat dan penggelek dengan ukuran bilik untuk pengiraan kuantiti cat",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Kuantiti Cat — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Kuantiti Cat — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Kuantiti Cat — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Kuantiti Cat — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Anggarkan liter cat yang diperlukan untuk sebarang saiz bilik, bilangan lapisan dan pembaziran.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Mengecat", href: "/services/painting" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "wall-area-calculator": {
+      name: "Kalkulator Keluasan Dinding",
+      heading: "Kalkulator Keluasan Dinding — Kps Serta-merta",
+      metaTitle: "Kalkulator Keluasan Dinding KL — Kps Serta-merta",
+      metaDesc: "Kalkulator keluasan dinding percuma. Masukkan panjang, lebar dan tinggi untuk mendapatkan jumlah keluasan dinding dalam kaki persegi.",
+      keywords: ["kalkulator keluasan dinding", "cara kira keluasan dinding", "kaki persegi dinding Malaysia"],
+      eyebrow: "Alat keluasan percuma",
+      intro: "Kira keluasan dinding yang boleh dicat menggunakan formula 2×(P+L)×T serta-merta. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos kalkulator keluasan dinding di KL dan Selangor?",
+      directAnswer: "Kira keluasan dinding yang boleh dicat menggunakan formula 2×(P+L)×T serta-merta. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Pita pengukur pada dinding untuk pengiraan keluasan",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Keluasan Dinding — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Keluasan Dinding — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Keluasan Dinding — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Keluasan Dinding — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Kira keluasan dinding yang boleh dicat menggunakan formula 2×(P+L)×T serta-merta.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Mengecat", href: "/services/painting" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "ceiling-area-calculator": {
+      name: "Kalkulator Keluasan Siling",
+      heading: "Kalkulator Keluasan Siling",
+      metaTitle: "Kalkulator Keluasan Siling — Kps Serta-merta",
+      metaDesc: "Kalkulator keluasan siling percuma untuk sebarang saiz bilik.",
+      keywords: ["kalkulator keluasan siling", "kaki persegi siling", "kira keluasan siling Malaysia"],
+      eyebrow: "Alat keluasan percuma",
+      intro: "Kira keluasan siling P×L serta-merta. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos kalkulator keluasan siling di KL dan Selangor?",
+      directAnswer: "Kira keluasan siling P×L serta-merta. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Pengukuran siling",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Keluasan Siling — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Keluasan Siling — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Keluasan Siling — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Keluasan Siling — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Kira keluasan siling P×L serta-merta.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Siling", href: "/services/ceiling" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "ceiling-replacement-cost": {
+      name: "Kalkulator Kos Ganti Siling",
+      heading: "Kalkulator Kos Ganti Siling",
+      metaTitle: "Kalkulator Kos Ganti Siling KL",
+      metaDesc: "Anggarkan kos gantian siling plaster di KL & Selangor daripada kadar kaki persegi yang diterbitkan.",
+      keywords: ["kos ganti siling Malaysia", "harga siling plaster"],
+      eyebrow: "Kalkulator kos percuma",
+      intro: "Anggarkan kos gantian siling daripada kadar kaki persegi. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos ganti siling di KL dan Selangor?",
+      directAnswer: "Anggarkan kos gantian siling daripada kadar kaki persegi. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Gantian siling",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Kos Ganti Siling — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Kos Ganti Siling — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Kos Ganti Siling — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Kos Ganti Siling — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Anggarkan kos gantian siling daripada kadar kaki persegi.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Siling Plaster", href: "/services/plaster-ceiling" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "pipe-leak-estimator": {
+      name: "Kalkulator Baiki Paip Bocor",
+      heading: "Kalkulator Baiki Paip Bocor",
+      metaTitle: "Kalkulator Baiki Paip Bocor KL",
+      metaDesc: "Kalkulator paip bocor percuma untuk rumah di KL & Selangor. Dapatkan punca, kecemasan dan kos.",
+      keywords: ["kos baiki paip bocor Malaysia", "paip air bocor KL"],
+      eyebrow: "Alat diagnostik percuma",
+      intro: "Diagnosis punca dan kos paip bocor. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos baiki paip bocor di KL dan Selangor?",
+      directAnswer: "Diagnosis punca dan kos paip bocor. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Paip bocor",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Baiki Paip Bocor — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Baiki Paip Bocor — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Baiki Paip Bocor — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Baiki Paip Bocor — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Diagnosis punca dan kos paip bocor.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Paip", href: "/services/plumbing" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "water-pressure-troubleshooter": {
+      name: "Penyelesai Masalah Tekanan Air",
+      heading: "Penyelesai Masalah Tekanan Air",
+      metaTitle: "Penyelesai Masalah Tekanan Air KL",
+      metaDesc: "Diagnosis punca tekanan air rendah dan dapatkan anggaran kos pembaikan.",
+      keywords: ["baiki tekanan air rendah Malaysia", "tekanan air rendah KL"],
+      eyebrow: "Penyelesai masalah percuma",
+      intro: "Selesaikan punca dan pembaikan tekanan air rendah. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos menyelesaikan masalah tekanan air di KL dan Selangor?",
+      directAnswer: "Selesaikan punca dan pembaikan tekanan air rendah. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Tekanan air rendah",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Penyelesai Masalah Tekanan Air — Standard", note: "Skop standard" },
+        { scope: "Penyelesai Masalah Tekanan Air — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Penyelesai Masalah Tekanan Air — Bahan", note: "Kos bahan" },
+        { scope: "Penyelesai Masalah Tekanan Air — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Selesaikan punca dan pembaikan tekanan air rendah.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Paip", href: "/services/plumbing" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "pipe-replacement-cost": {
+      name: "Kalkulator Kos Ganti Paip",
+      heading: "Kalkulator Kos Ganti Paip",
+      metaTitle: "Kalkulator Kos Ganti Paip KL",
+      metaDesc: "Kalkulator kos ganti paip percuma untuk KL & Selangor.",
+      keywords: ["kos ganti paip Malaysia", "harga paip semula rumah KL"],
+      eyebrow: "Kalkulator kos percuma",
+      intro: "Anggarkan kos ganti paip per kaki linear. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos ganti paip di KL dan Selangor?",
+      directAnswer: "Anggarkan kos ganti paip per kaki linear. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Gantian paip",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Kos Ganti Paip — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Kos Ganti Paip — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Kos Ganti Paip — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Kos Ganti Paip — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Anggarkan kos ganti paip per kaki linear.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Paip", href: "/services/plumbing" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "waterproofing-cost-calculator": {
+      name: "Kalkulator Kos Kalis Air",
+      heading: "Kalkulator Kos Kalis Air",
+      metaTitle: "Kalkulator Kos Kalis Air KL — Serta-merta",
+      metaDesc: "Kalkulator kos kalis air percuma untuk bilik mandi, bumbung dan balkoni.",
+      keywords: ["kos kalis air Malaysia", "harga kalis air bilik mandi KL"],
+      eyebrow: "Kalkulator kos percuma",
+      intro: "Anggarkan kos kalis air daripada keluasan dan jenis permukaan. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos kalis air di KL dan Selangor?",
+      directAnswer: "Anggarkan kos kalis air daripada keluasan dan jenis permukaan. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Membran kalis air",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Kos Kalis Air — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Kos Kalis Air — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Kos Kalis Air — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Kos Kalis Air — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Anggarkan kos kalis air daripada keluasan dan jenis permukaan.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Kalis Air", href: "/services/waterproofing" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "roof-area-calculator": {
+      name: "Kalkulator Keluasan Bumbung",
+      heading: "Kalkulator Keluasan Bumbung",
+      metaTitle: "Kalkulator Keluasan Bumbung — Kps",
+      metaDesc: "Kalkulator keluasan bumbung percuma dengan faktor cerun.",
+      keywords: ["kalkulator keluasan bumbung", "kaki persegi bumbung Malaysia"],
+      eyebrow: "Alat keluasan percuma",
+      intro: "Kira keluasan bumbung daripada panjang, lebar dan cerun. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos kalkulator keluasan bumbung di KL dan Selangor?",
+      directAnswer: "Kira keluasan bumbung daripada panjang, lebar dan cerun. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Pengukuran keluasan bumbung",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Keluasan Bumbung — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Keluasan Bumbung — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Keluasan Bumbung — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Keluasan Bumbung — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Kira keluasan bumbung daripada panjang, lebar dan cerun.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Baiki Bumbung", href: "/services/roof-repair" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "bathroom-waterproofing-estimator": {
+      name: "Kalkulator Kalis Air Bilik Mandi",
+      heading: "Kalkulator Kalis Air Bilik Mandi",
+      metaTitle: "Kalkulator Kos Kalis Air Bilik Mandi KL",
+      metaDesc: "Kalkulator kos kalis air bilik mandi percuma untuk KL & Selangor.",
+      keywords: ["kos kalis air bilik mandi Malaysia", "kalis air tandas KL"],
+      eyebrow: "Kalkulator percuma",
+      intro: "Anggarkan kos kalis air bilik mandi. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos kalis air bilik mandi di KL dan Selangor?",
+      directAnswer: "Anggarkan kos kalis air bilik mandi. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Kalis air bilik mandi",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Kalis Air Bilik Mandi — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Kalis Air Bilik Mandi — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Kalis Air Bilik Mandi — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Kalis Air Bilik Mandi — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Anggarkan kos kalis air bilik mandi.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Kalis Air", href: "/services/waterproofing" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "balcony-waterproofing-estimator": {
+      name: "Kalkulator Kalis Air Balkoni",
+      heading: "Kalkulator Kalis Air Balkoni",
+      metaTitle: "Kalkulator Kalis Air Balkoni KL",
+      metaDesc: "Kalkulator kos kalis air balkoni percuma.",
+      keywords: ["kos kalis air balkoni Malaysia"],
+      eyebrow: "Kalkulator percuma",
+      intro: "Anggarkan kos kalis air balkoni. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos kalis air balkoni di KL dan Selangor?",
+      directAnswer: "Anggarkan kos kalis air balkoni. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Kalis air balkoni",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Kalis Air Balkoni — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Kalis Air Balkoni — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Kalis Air Balkoni — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Kalis Air Balkoni — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Anggarkan kos kalis air balkoni.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Kalis Air", href: "/services/waterproofing" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "electrical-installation-cost": {
+      name: "Kalkulator Kos Pemasangan Elektrik",
+      heading: "Kalkulator Kos Pemasangan Elektrik",
+      metaTitle: "Kalkulator Kos Pemasangan Elektrik KL",
+      metaDesc: "Kalkulator kos pemasangan elektrik percuma untuk KL & Selangor.",
+      keywords: ["kos pemasangan elektrik Malaysia", "harga titik kuasa KL"],
+      eyebrow: "Kalkulator kos percuma",
+      intro: "Anggarkan kos pemasangan titik elektrik. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos pemasangan elektrik di KL dan Selangor?",
+      directAnswer: "Anggarkan kos pemasangan titik elektrik. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Pemasangan elektrik",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Kos Pemasangan Elektrik — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Kos Pemasangan Elektrik — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Kos Pemasangan Elektrik — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Kos Pemasangan Elektrik — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Anggarkan kos pemasangan titik elektrik.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Elektrik", href: "/services/electrical" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "socket-quantity-calculator": {
+      name: "Kalkulator Kuantiti Soket",
+      heading: "Kalkulator Kuantiti Soket",
+      metaTitle: "Kalkulator Kuantiti Soket — Berapa Soket Per Bilik",
+      metaDesc: "Alat percuma untuk mengira kuantiti soket ideal untuk sebarang bilik.",
+      keywords: ["berapa soket per bilik", "kalkulator kuantiti soket"],
+      eyebrow: "Alat kuantiti percuma",
+      intro: "Kira kuantiti soket yang disyorkan per bilik. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos kalkulator kuantiti soket di KL dan Selangor?",
+      directAnswer: "Kira kuantiti soket yang disyorkan per bilik. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Soket elektrik",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Kuantiti Soket — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Kuantiti Soket — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Kuantiti Soket — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Kuantiti Soket — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Kira kuantiti soket yang disyorkan per bilik.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Elektrik", href: "/services/electrical" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "lighting-installation-calculator": {
+      name: "Kalkulator Pemasangan Lampu",
+      heading: "Kalkulator Pemasangan Lampu",
+      metaTitle: "Kalkulator Kos Pemasangan Lampu KL",
+      metaDesc: "Kalkulator kos pemasangan lampu percuma.",
+      keywords: ["kos pasang downlight Malaysia", "harga titik lampu KL"],
+      eyebrow: "Alat kos percuma",
+      intro: "Anggarkan kos titik lampu dan downlight. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos pemasangan lampu di KL dan Selangor?",
+      directAnswer: "Anggarkan kos titik lampu dan downlight. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Pemasangan downlight",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Pemasangan Lampu — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Pemasangan Lampu — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Pemasangan Lampu — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Pemasangan Lampu — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Anggarkan kos titik lampu dan downlight.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Pemasangan Lampu", href: "/services/lighting" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "ceiling-fan-installation-estimator": {
+      name: "Kalkulator Pasang Kipas Siling",
+      heading: "Kalkulator Pasang Kipas Siling",
+      metaTitle: "Kalkulator Kos Pasang Kipas Siling KL",
+      metaDesc: "Kalkulator kos pemasangan kipas siling percuma.",
+      keywords: ["kos pasang kipas siling Malaysia"],
+      eyebrow: "Kalkulator percuma",
+      intro: "Anggarkan kos pemasangan kipas siling. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos pasang kipas siling di KL dan Selangor?",
+      directAnswer: "Anggarkan kos pemasangan kipas siling. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Kipas siling",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Pasang Kipas Siling — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Pasang Kipas Siling — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Pasang Kipas Siling — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Pasang Kipas Siling — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Anggarkan kos pemasangan kipas siling.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Kipas Siling", href: "/services/ceiling-fan" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "handyman-cost-estimator": {
+      name: "Kalkulator Kos Handyman",
+      heading: "Kalkulator Kos Handyman",
+      metaTitle: "Kalkulator Kos Handyman KL",
+      metaDesc: "Kalkulator kos handyman percuma untuk sebarang kerja kecil.",
+      keywords: ["kos handyman Malaysia", "harga kerja kecil KL"],
+      eyebrow: "Kalkulator percuma",
+      intro: "Anggarkan kos kerja handyman. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos handyman di KL dan Selangor?",
+      directAnswer: "Anggarkan kos kerja handyman. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Handyman",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Kos Handyman — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Kos Handyman — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Kos Handyman — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Kos Handyman — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Anggarkan kos kerja handyman.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Handyman", href: "/services/handyman" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "furniture-assembly-estimator": {
+      name: "Kalkulator Pasang Perabot",
+      heading: "Kalkulator Pasang Perabot",
+      metaTitle: "Kalkulator Kos Pasang Perabot KL",
+      metaDesc: "Kalkulator kos pemasangan perabot percuma.",
+      keywords: ["kos pasang perabot Malaysia", "harga pasang IKEA KL"],
+      eyebrow: "Kalkulator percuma",
+      intro: "Anggarkan kos pemasangan perabot seperti IKEA dan lain-lain. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos pasang perabot di KL dan Selangor?",
+      directAnswer: "Anggarkan kos pemasangan perabot seperti IKEA dan lain-lain. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Pemasangan perabot",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Pasang Perabot — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Pasang Perabot — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Pasang Perabot — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Pasang Perabot — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Anggarkan kos pemasangan perabot seperti IKEA dan lain-lain.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Handyman", href: "/services/handyman" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "curtain-installation-calculator": {
+      name: "Kalkulator Pasang Langsir",
+      heading: "Kalkulator Pasang Langsir",
+      metaTitle: "Kalkulator Kos Pasang Langsir KL",
+      metaDesc: "Kalkulator kos pemasangan langsir percuma.",
+      keywords: ["kos pasang langsir Malaysia"],
+      eyebrow: "Alat kos percuma",
+      intro: "Anggarkan kos rel dan pemasangan langsir. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos pasang langsir di KL dan Selangor?",
+      directAnswer: "Anggarkan kos rel dan pemasangan langsir. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Pemasangan langsir",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Pasang Langsir — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Pasang Langsir — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Pasang Langsir — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Pasang Langsir — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Anggarkan kos rel dan pemasangan langsir.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Handyman", href: "/services/handyman" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "door-installation-cost": {
+      name: "Kalkulator Kos Pasang Pintu",
+      heading: "Kalkulator Kos Pasang Pintu",
+      metaTitle: "Kalkulator Kos Pasang Pintu KL",
+      metaDesc: "Kalkulator kos pemasangan pintu percuma untuk KL & Selangor.",
+      keywords: ["kos pasang pintu Malaysia"],
+      eyebrow: "Kalkulator percuma",
+      intro: "Anggarkan kos pemasangan pintu. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos pasang pintu di KL dan Selangor?",
+      directAnswer: "Anggarkan kos pemasangan pintu. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Pemasangan pintu",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Kos Pasang Pintu — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Kos Pasang Pintu — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Kos Pasang Pintu — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Kos Pasang Pintu — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Anggarkan kos pemasangan pintu.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Pintu", href: "/services/door" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "window-replacement-estimator": {
+      name: "Kalkulator Ganti Tingkap",
+      heading: "Kalkulator Ganti Tingkap",
+      metaTitle: "Kalkulator Kos Ganti Tingkap KL",
+      metaDesc: "Kalkulator kos gantian tingkap percuma.",
+      keywords: ["kos ganti tingkap Malaysia"],
+      eyebrow: "Kalkulator percuma",
+      intro: "Anggarkan kos gantian tingkap. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos ganti tingkap di KL dan Selangor?",
+      directAnswer: "Anggarkan kos gantian tingkap. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Gantian tingkap",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Ganti Tingkap — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Ganti Tingkap — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Ganti Tingkap — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Ganti Tingkap — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Anggarkan kos gantian tingkap.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Tingkap", href: "/services/window-repair" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "glass-replacement-calculator": {
+      name: "Kalkulator Ganti Kaca",
+      heading: "Kalkulator Ganti Kaca",
+      metaTitle: "Kalkulator Kos Ganti Kaca KL",
+      metaDesc: "Kalkulator kos gantian kaca percuma.",
+      keywords: ["kos ganti kaca Malaysia"],
+      eyebrow: "Alat kos percuma",
+      intro: "Anggarkan kos gantian kaca per kaki persegi. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos ganti kaca di KL dan Selangor?",
+      directAnswer: "Anggarkan kos gantian kaca per kaki persegi. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Gantian kaca",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Ganti Kaca — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Ganti Kaca — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Ganti Kaca — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Ganti Kaca — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Anggarkan kos gantian kaca per kaki persegi.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Kaca & Aluminium", href: "/services/glass-aluminium" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "flooring-area-calculator": {
+      name: "Kalkulator Keluasan Lantai",
+      heading: "Kalkulator Keluasan Lantai",
+      metaTitle: "Kalkulator Keluasan Lantai — Kps",
+      metaDesc: "Kalkulator keluasan lantai percuma dengan 10% pembaziran.",
+      keywords: ["kalkulator keluasan lantai", "berapa keluasan lantai"],
+      eyebrow: "Alat keluasan percuma",
+      intro: "Kira keluasan lantai dan pembaziran. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos kalkulator keluasan lantai di KL dan Selangor?",
+      directAnswer: "Kira keluasan lantai dan pembaziran. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Keluasan lantai",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Keluasan Lantai — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Keluasan Lantai — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Keluasan Lantai — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Keluasan Lantai — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Kira keluasan lantai dan pembaziran.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Lantai", href: "/services/flooring" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "tile-quantity-calculator": {
+      name: "Kalkulator Kuantiti Jubin",
+      heading: "Kalkulator Kuantiti Jubin",
+      metaTitle: "Kalkulator Kuantiti Jubin — Berapa Keping Jubin",
+      metaDesc: "Kalkulator kuantiti jubin percuma untuk lantai dan dinding.",
+      keywords: ["kalkulator jubin", "berapa keping jubin diperlukan"],
+      eyebrow: "Alat kuantiti percuma",
+      intro: "Kira kuantiti jubin yang diperlukan termasuk pembaziran. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos kalkulator kuantiti jubin di KL dan Selangor?",
+      directAnswer: "Kira kuantiti jubin yang diperlukan termasuk pembaziran. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Jubin",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Kuantiti Jubin — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Kuantiti Jubin — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Kuantiti Jubin — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Kuantiti Jubin — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Kira kuantiti jubin yang diperlukan termasuk pembaziran.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Jubin", href: "/services/tiling" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "vinyl-flooring-cost-estimator": {
+      name: "Kalkulator Kos Lantai Vinyl",
+      heading: "Kalkulator Kos Lantai Vinyl",
+      metaTitle: "Kalkulator Kos Lantai Vinyl KL",
+      metaDesc: "Kalkulator kos lantai vinyl percuma untuk KL & Selangor.",
+      keywords: ["kos lantai vinyl Malaysia", "harga lantai SPC KL"],
+      eyebrow: "Kalkulator percuma",
+      intro: "Anggarkan kos lantai vinyl per kaki persegi. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos lantai vinyl di KL dan Selangor?",
+      directAnswer: "Anggarkan kos lantai vinyl per kaki persegi. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Lantai vinyl",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Kos Lantai Vinyl — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Kos Lantai Vinyl — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Kos Lantai Vinyl — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Kos Lantai Vinyl — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Anggarkan kos lantai vinyl per kaki persegi.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Lantai", href: "/services/flooring" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "roof-repair-estimator": {
+      name: "Kalkulator Baiki Bumbung",
+      heading: "Kalkulator Baiki Bumbung",
+      metaTitle: "Kalkulator Kos Baiki Bumbung KL",
+      metaDesc: "Kalkulator kos pembaikan bumbung percuma.",
+      keywords: ["kos baiki bumbung Malaysia", "harga bumbung bocor KL"],
+      eyebrow: "Kalkulator percuma",
+      intro: "Anggarkan kos pembaikan bumbung bocor. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos baiki bumbung di KL dan Selangor?",
+      directAnswer: "Anggarkan kos pembaikan bumbung bocor. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Pembaikan bumbung",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Baiki Bumbung — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Baiki Bumbung — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Baiki Bumbung — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Baiki Bumbung — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Anggarkan kos pembaikan bumbung bocor.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Baiki Bumbung", href: "/services/roof-repair" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "roof-replacement-cost": {
+      name: "Kalkulator Kos Ganti Bumbung",
+      heading: "Kalkulator Kos Ganti Bumbung",
+      metaTitle: "Kalkulator Kos Ganti Bumbung KL",
+      metaDesc: "Kalkulator kos gantian bumbung percuma.",
+      keywords: ["kos ganti bumbung Malaysia"],
+      eyebrow: "Kalkulator percuma",
+      intro: "Anggarkan kos gantian bumbung per kaki persegi. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos ganti bumbung di KL dan Selangor?",
+      directAnswer: "Anggarkan kos gantian bumbung per kaki persegi. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Gantian bumbung",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Kos Ganti Bumbung — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Kos Ganti Bumbung — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Kos Ganti Bumbung — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Kos Ganti Bumbung — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Anggarkan kos gantian bumbung per kaki persegi.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Baiki Bumbung", href: "/services/roof-repair" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "renovation-budget-calculator": {
+      name: "Kalkulator Bajet Renovasi",
+      heading: "Kalkulator Bajet Renovasi",
+      metaTitle: "Kalkulator Bajet Renovasi KL — per Kps",
+      metaDesc: "Kalkulator bajet renovasi percuma untuk Malaysia.",
+      keywords: ["kalkulator bajet renovasi Malaysia", "kos renovasi rumah per kps KL"],
+      eyebrow: "Alat bajet percuma",
+      intro: "Anggarkan bajet renovasi penuh per kaki persegi. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos bajet renovasi di KL dan Selangor?",
+      directAnswer: "Anggarkan bajet renovasi penuh per kaki persegi. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Bajet renovasi",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Bajet Renovasi — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Bajet Renovasi — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Bajet Renovasi — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Bajet Renovasi — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Anggarkan bajet renovasi penuh per kaki persegi.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Renovasi Rumah", href: "/services/house-renovation" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "room-renovation-estimator": {
+      name: "Kalkulator Renovasi Bilik",
+      heading: "Kalkulator Renovasi Bilik",
+      metaTitle: "Kalkulator Kos Renovasi Bilik KL",
+      metaDesc: "Kalkulator kos renovasi bilik percuma.",
+      keywords: ["kos renovasi bilik Malaysia"],
+      eyebrow: "Kalkulator percuma",
+      intro: "Anggarkan kos renovasi per bilik. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos renovasi bilik di KL dan Selangor?",
+      directAnswer: "Anggarkan kos renovasi per bilik. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Renovasi bilik",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Renovasi Bilik — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Renovasi Bilik — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Renovasi Bilik — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Renovasi Bilik — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Anggarkan kos renovasi per bilik.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Renovasi Rumah", href: "/services/house-renovation" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "kitchen-renovation-estimator": {
+      name: "Kalkulator Renovasi Dapur",
+      heading: "Kalkulator Renovasi Dapur",
+      metaTitle: "Kalkulator Kos Renovasi Dapur KL",
+      metaDesc: "Kalkulator kos renovasi dapur percuma.",
+      keywords: ["kos renovasi dapur Malaysia", "harga kabinet dapur KL"],
+      eyebrow: "Kalkulator percuma",
+      intro: "Anggarkan kos renovasi dapur. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos renovasi dapur di KL dan Selangor?",
+      directAnswer: "Anggarkan kos renovasi dapur. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Renovasi dapur",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Renovasi Dapur — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Renovasi Dapur — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Renovasi Dapur — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Renovasi Dapur — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Anggarkan kos renovasi dapur.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Kabinet Dapur", href: "/services/kitchen-cabinet" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "bathroom-renovation-estimator": {
+      name: "Kalkulator Renovasi Bilik Air",
+      heading: "Kalkulator Renovasi Bilik Air",
+      metaTitle: "Kalkulator Kos Renovasi Bilik Air KL",
+      metaDesc: "Kalkulator kos renovasi bilik air percuma.",
+      keywords: ["kos renovasi bilik air Malaysia"],
+      eyebrow: "Kalkulator percuma",
+      intro: "Anggarkan kos renovasi bilik air. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos renovasi bilik air di KL dan Selangor?",
+      directAnswer: "Anggarkan kos renovasi bilik air. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Renovasi bilik air",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Renovasi Bilik Air — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Renovasi Bilik Air — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Renovasi Bilik Air — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Renovasi Bilik Air — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Anggarkan kos renovasi bilik air.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Renovasi Rumah", href: "/services/house-renovation" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "deep-cleaning-cost-estimator": {
+      name: "Kalkulator Kos Cuci Menyeluruh",
+      heading: "Kalkulator Kos Cuci Menyeluruh",
+      metaTitle: "Kalkulator Kos Cuci Menyeluruh KL",
+      metaDesc: "Kalkulator kos pembersihan menyeluruh percuma.",
+      keywords: ["kos cuci menyeluruh Malaysia", "harga cuci pindah keluar KL"],
+      eyebrow: "Kalkulator percuma",
+      intro: "Anggarkan kos pembersihan menyeluruh per kaki persegi. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos cuci menyeluruh di KL dan Selangor?",
+      directAnswer: "Anggarkan kos pembersihan menyeluruh per kaki persegi. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Pembersihan menyeluruh",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Kos Cuci Menyeluruh — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Kos Cuci Menyeluruh — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Kos Cuci Menyeluruh — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Kos Cuci Menyeluruh — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Anggarkan kos pembersihan menyeluruh per kaki persegi.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Pembersihan Menyeluruh", href: "/services/deep-cleaning" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
+    "move-in-out-cleaning-calculator": {
+      name: "Kalkulator Cuci Pindah Masuk/Keluar",
+      heading: "Kalkulator Cuci Pindah Masuk/Keluar",
+      metaTitle: "Kalkulator Kos Cuci Pindah Masuk/Keluar KL",
+      metaDesc: "Kalkulator kos pembersihan pindah masuk/keluar percuma.",
+      keywords: ["kos cuci pindah masuk Malaysia", "cuci pindah keluar KL"],
+      eyebrow: "Kalkulator percuma",
+      intro: "Anggarkan kos pembersihan pindah masuk/keluar. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
+      directQuestion: "Berapa kos cuci pindah masuk/keluar di KL dan Selangor?",
+      directAnswer: "Anggarkan kos pembersihan pindah masuk/keluar. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
+      heroAlt: "Pembersihan pindah masuk/keluar",
+      stats: [
+        { label: "Serta-merta", value: "Bawah 2 minit" },
+        { label: "Dari", value: "RM 150" },
+        { label: "Liputan", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
+        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
+        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
+        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
+      ],
+      priceTable: [
+        { scope: "Kalkulator Cuci Pindah Masuk/Keluar — Standard", note: "Skop standard" },
+        { scope: "Kalkulator Cuci Pindah Masuk/Keluar — Premium", note: "Skop premium dengan tambahan" },
+        { scope: "Kalkulator Cuci Pindah Masuk/Keluar — Bahan", note: "Kos bahan" },
+        { scope: "Kalkulator Cuci Pindah Masuk/Keluar — Upah", note: "Upah sahaja" },
+      ],
+      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
+      faqs: [
+        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
+        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
+        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
+        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
+        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
+      ],
+      covers: [
+        "Anggarkan kos pembersihan pindah masuk/keluar.",
+        "Anggaran langsung serta-merta",
+        "Pecahan upah berbanding bahan",
+        "Pengiraan keluasan",
+        "Anggaran tempoh",
+        "Tempahan WhatsApp",
+      ],
+      relatedServices: [
+        { label: "Perkhidmatan Pembersihan Menyeluruh", href: "/services/deep-cleaning" },
+        { label: "Panduan Harga", href: "/pricing" }
+      ]
+    },
   },
-
   zh: {
     /* ── 油漆费用计算器 ──────────────────────────────────────────────── */
     "painting-calculator": {
@@ -933,7 +2501,1575 @@ export const toolsContentI18n: Record<ToolLocale, Record<string, ToolContentI18n
         { label: "电气安装", href: "/services/electrical" },
         { label: "木工与背景墙", href: "/services/carpentry" }
       ]
-    }
+    },
+    "paint-quantity-estimator": {
+      name: "油漆用量计算器",
+      heading: "油漆用量计算器——吉隆坡与雪兰莪",
+      metaTitle: "油漆用量计算器 KL——升数与费用",
+      metaDesc: "吉隆坡与雪兰莪免费油漆用量计算器。输入房间尺寸和涂刷遍数，立即获得升数、覆盖面积和费用。",
+      keywords: ["油漆用量计算器 马来西亚", "每平方英尺需要多少油漆", "油漆覆盖计算器 KL"],
+      eyebrow: "免费油漆用量工具",
+      intro: "估算任何房间尺寸、涂刷遍数和损耗所需的油漆升数。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪的油漆用量计算器收费多少？",
+      directAnswer: "估算任何房间尺寸、涂刷遍数和损耗所需的油漆升数。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "油漆罐和滚筒以及用于计算油漆用量的房间尺寸",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "油漆用量计算器——标准", note: "标准范围" },
+        { scope: "油漆用量计算器——高级", note: "高级范围含附加项" },
+        { scope: "油漆用量计算器——材料", note: "材料费" },
+        { scope: "油漆用量计算器——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "估算任何房间尺寸、涂刷遍数和损耗所需的油漆升数。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "油漆服务", href: "/services/painting" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "wall-area-calculator": {
+      name: "墙面面积计算器",
+      heading: "墙面面积计算器——即时平方英尺",
+      metaTitle: "墙面面积计算器——即时平方英尺",
+      metaDesc: "免费墙面面积计算器。输入长、宽、高即可获得墙面总面积（平方英尺）。",
+      keywords: ["墙面面积计算器", "如何计算墙面面积", "马来西亚墙面平方英尺"],
+      eyebrow: "免费面积工具",
+      intro: "使用 2×(长+宽)×高 公式即时计算可涂刷的墙面面积。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪的墙面面积计算器收费多少？",
+      directAnswer: "使用 2×(长+宽)×高 公式即时计算可涂刷的墙面面积。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "用于面积计算的墙面卷尺",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "墙面面积计算器——标准", note: "标准范围" },
+        { scope: "墙面面积计算器——高级", note: "高级范围含附加项" },
+        { scope: "墙面面积计算器——材料", note: "材料费" },
+        { scope: "墙面面积计算器——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "使用 2×(长+宽)×高 公式即时计算可涂刷的墙面面积。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "油漆服务", href: "/services/painting" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "ceiling-area-calculator": {
+      name: "天花面积计算器",
+      heading: "天花面积计算器",
+      metaTitle: "天花面积计算器——即时平方英尺",
+      metaDesc: "适用于任何房间尺寸的免费天花面积计算器。",
+      keywords: ["天花面积计算器", "天花平方英尺"],
+      eyebrow: "免费面积工具",
+      intro: "即时计算天花面积（长×宽）。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪的天花面积计算器收费多少？",
+      directAnswer: "即时计算天花面积（长×宽）。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "天花测量",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "天花面积计算器——标准", note: "标准范围" },
+        { scope: "天花面积计算器——高级", note: "高级范围含附加项" },
+        { scope: "天花面积计算器——材料", note: "材料费" },
+        { scope: "天花面积计算器——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "即时计算天花面积（长×宽）。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "天花板服务", href: "/services/ceiling" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "ceiling-replacement-cost": {
+      name: "天花更换费用计算器",
+      heading: "天花更换费用计算器",
+      metaTitle: "天花更换费用计算器 KL",
+      metaDesc: "根据已发布的每平方英尺费率估算吉隆坡与雪兰莪的石膏天花更换费用。",
+      keywords: ["马来西亚天花更换费用", "石膏天花价格"],
+      eyebrow: "免费费用计算器",
+      intro: "根据每平方英尺费率估算天花更换费用。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪更换天花要多少钱？",
+      directAnswer: "根据每平方英尺费率估算天花更换费用。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "天花更换",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "天花更换费用计算器——标准", note: "标准范围" },
+        { scope: "天花更换费用计算器——高级", note: "高级范围含附加项" },
+        { scope: "天花更换费用计算器——材料", note: "材料费" },
+        { scope: "天花更换费用计算器——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "根据每平方英尺费率估算天花更换费用。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "石膏天花板服务", href: "/services/plaster-ceiling" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "pipe-leak-estimator": {
+      name: "水管漏水维修估价",
+      heading: "水管漏水维修估价",
+      metaTitle: "水管漏水维修估价 KL",
+      metaDesc: "为吉隆坡与雪兰莪家庭提供免费水管漏水估价，了解原因、紧急程度和费用。",
+      keywords: ["马来西亚水管漏水维修费用", "吉隆坡水管漏水"],
+      eyebrow: "免费诊断工具",
+      intro: "诊断水管漏水的原因和费用。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪的水管漏水维修估价收费多少？",
+      directAnswer: "诊断水管漏水的原因和费用。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "水管漏水",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "水管漏水维修估价——标准", note: "标准范围" },
+        { scope: "水管漏水维修估价——高级", note: "高级范围含附加项" },
+        { scope: "水管漏水维修估价——材料", note: "材料费" },
+        { scope: "水管漏水维修估价——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "诊断水管漏水的原因和费用。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "水管服务", href: "/services/plumbing" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "water-pressure-troubleshooter": {
+      name: "水压问题排查",
+      heading: "水压问题排查",
+      metaTitle: "水压问题排查 KL",
+      metaDesc: "诊断水压过低的原因并获得维修费用估算。",
+      keywords: ["马来西亚水压过低维修", "水压低 KL"],
+      eyebrow: "免费排查工具",
+      intro: "排查水压过低的原因和维修方案。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪排查水压问题收费多少？",
+      directAnswer: "排查水压过低的原因和维修方案。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "水压过低",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "水压问题排查——标准", note: "标准范围" },
+        { scope: "水压问题排查——高级", note: "高级范围含附加项" },
+        { scope: "水压问题排查——材料", note: "材料费" },
+        { scope: "水压问题排查——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "排查水压过低的原因和维修方案。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "水管服务", href: "/services/plumbing" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "pipe-replacement-cost": {
+      name: "水管更换费用计算器",
+      heading: "水管更换费用计算器",
+      metaTitle: "水管更换费用计算器 KL",
+      metaDesc: "吉隆坡与雪兰莪免费水管更换费用计算器。",
+      keywords: ["马来西亚水管更换费用", "吉隆坡全屋换管价格"],
+      eyebrow: "免费费用计算器",
+      intro: "按每英尺估算水管更换费用。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪更换水管要多少钱？",
+      directAnswer: "按每英尺估算水管更换费用。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "水管更换",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "水管更换费用计算器——标准", note: "标准范围" },
+        { scope: "水管更换费用计算器——高级", note: "高级范围含附加项" },
+        { scope: "水管更换费用计算器——材料", note: "材料费" },
+        { scope: "水管更换费用计算器——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "按每英尺估算水管更换费用。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "水管服务", href: "/services/plumbing" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "waterproofing-cost-calculator": {
+      name: "防水费用计算器",
+      heading: "防水费用计算器",
+      metaTitle: "防水费用计算器 KL——即时",
+      metaDesc: "浴室、屋顶、阳台免费防水费用计算器。",
+      keywords: ["马来西亚防水费用", "吉隆坡浴室防水价格"],
+      eyebrow: "免费费用计算器",
+      intro: "根据面积和类型估算防水费用。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪做防水要多少钱？",
+      directAnswer: "根据面积和类型估算防水费用。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "防水膜",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "防水费用计算器——标准", note: "标准范围" },
+        { scope: "防水费用计算器——高级", note: "高级范围含附加项" },
+        { scope: "防水费用计算器——材料", note: "材料费" },
+        { scope: "防水费用计算器——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "根据面积和类型估算防水费用。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "防水服务", href: "/services/waterproofing" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "roof-area-calculator": {
+      name: "屋顶面积计算器",
+      heading: "屋顶面积计算器",
+      metaTitle: "屋顶面积计算器——平方英尺",
+      metaDesc: "带坡度系数的免费屋顶面积计算器。",
+      keywords: ["屋顶面积计算器", "马来西亚屋顶平方英尺"],
+      eyebrow: "免费面积工具",
+      intro: "根据长、宽和坡度计算屋顶面积。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪的屋顶面积计算器收费多少？",
+      directAnswer: "根据长、宽和坡度计算屋顶面积。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "屋顶面积测量",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "屋顶面积计算器——标准", note: "标准范围" },
+        { scope: "屋顶面积计算器——高级", note: "高级范围含附加项" },
+        { scope: "屋顶面积计算器——材料", note: "材料费" },
+        { scope: "屋顶面积计算器——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "根据长、宽和坡度计算屋顶面积。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "屋顶维修服务", href: "/services/roof-repair" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "bathroom-waterproofing-estimator": {
+      name: "浴室防水估价",
+      heading: "浴室防水估价",
+      metaTitle: "浴室防水费用估价 KL",
+      metaDesc: "吉隆坡与雪兰莪免费浴室防水费用估价。",
+      keywords: ["马来西亚浴室防水费用", "吉隆坡厕所防水"],
+      eyebrow: "免费估价工具",
+      intro: "估算浴室防水费用。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪浴室防水要多少钱？",
+      directAnswer: "估算浴室防水费用。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "浴室防水",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "浴室防水估价——标准", note: "标准范围" },
+        { scope: "浴室防水估价——高级", note: "高级范围含附加项" },
+        { scope: "浴室防水估价——材料", note: "材料费" },
+        { scope: "浴室防水估价——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "估算浴室防水费用。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "防水服务", href: "/services/waterproofing" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "balcony-waterproofing-estimator": {
+      name: "阳台防水估价",
+      heading: "阳台防水估价",
+      metaTitle: "阳台防水估价 KL",
+      metaDesc: "免费阳台防水费用估价。",
+      keywords: ["阳台防水费用"],
+      eyebrow: "免费估价工具",
+      intro: "估算阳台防水费用。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪阳台防水要多少钱？",
+      directAnswer: "估算阳台防水费用。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "阳台防水",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "阳台防水估价——标准", note: "标准范围" },
+        { scope: "阳台防水估价——高级", note: "高级范围含附加项" },
+        { scope: "阳台防水估价——材料", note: "材料费" },
+        { scope: "阳台防水估价——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "估算阳台防水费用。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "防水服务", href: "/services/waterproofing" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "electrical-installation-cost": {
+      name: "电工安装费用估价",
+      heading: "电工安装费用估价",
+      metaTitle: "电工安装费用估价 KL",
+      metaDesc: "吉隆坡与雪兰莪免费电工安装费用估价。",
+      keywords: ["马来西亚电工安装费用", "吉隆坡插座价格"],
+      eyebrow: "免费费用计算器",
+      intro: "估算电工点位安装费用。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪电工安装要多少钱？",
+      directAnswer: "估算电工点位安装费用。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "电工安装",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "电工安装费用估价——标准", note: "标准范围" },
+        { scope: "电工安装费用估价——高级", note: "高级范围含附加项" },
+        { scope: "电工安装费用估价——材料", note: "材料费" },
+        { scope: "电工安装费用估价——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "估算电工点位安装费用。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "电工服务", href: "/services/electrical" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "socket-quantity-calculator": {
+      name: "插座数量计算器",
+      heading: "插座数量计算器",
+      metaTitle: "插座数量计算器——每间房几个插座",
+      metaDesc: "免费工具，计算任何房间的理想插座数量。",
+      keywords: ["每间房几个插座", "插座数量计算器"],
+      eyebrow: "免费数量工具",
+      intro: "计算每个房间的建议插座数量。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪的插座数量计算器收费多少？",
+      directAnswer: "计算每个房间的建议插座数量。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "电源插座",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "插座数量计算器——标准", note: "标准范围" },
+        { scope: "插座数量计算器——高级", note: "高级范围含附加项" },
+        { scope: "插座数量计算器——材料", note: "材料费" },
+        { scope: "插座数量计算器——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "计算每个房间的建议插座数量。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "电工服务", href: "/services/electrical" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "lighting-installation-calculator": {
+      name: "灯具安装计算器",
+      heading: "灯具安装计算器",
+      metaTitle: "灯具安装费用计算器 KL",
+      metaDesc: "免费灯具安装费用计算器。",
+      keywords: ["马来西亚筒灯安装费用", "吉隆坡灯位价格"],
+      eyebrow: "免费费用工具",
+      intro: "估算灯位和筒灯安装费用。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪安装灯具要多少钱？",
+      directAnswer: "估算灯位和筒灯安装费用。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "筒灯安装",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "灯具安装计算器——标准", note: "标准范围" },
+        { scope: "灯具安装计算器——高级", note: "高级范围含附加项" },
+        { scope: "灯具安装计算器——材料", note: "材料费" },
+        { scope: "灯具安装计算器——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "估算灯位和筒灯安装费用。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "灯具安装服务", href: "/services/lighting" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "ceiling-fan-installation-estimator": {
+      name: "吊扇安装估价",
+      heading: "吊扇安装估价",
+      metaTitle: "吊扇安装费用估价 KL",
+      metaDesc: "免费吊扇安装费用估价。",
+      keywords: ["马来西亚吊扇安装费用"],
+      eyebrow: "免费估价工具",
+      intro: "估算吊扇安装费用。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪安装吊扇要多少钱？",
+      directAnswer: "估算吊扇安装费用。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "吊扇",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "吊扇安装估价——标准", note: "标准范围" },
+        { scope: "吊扇安装估价——高级", note: "高级范围含附加项" },
+        { scope: "吊扇安装估价——材料", note: "材料费" },
+        { scope: "吊扇安装估价——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "估算吊扇安装费用。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "吊扇安装服务", href: "/services/ceiling-fan" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "handyman-cost-estimator": {
+      name: "杂工费用估价",
+      heading: "杂工费用估价",
+      metaTitle: "杂工费用估价 KL",
+      metaDesc: "适用于任何零散工作的免费杂工费用估价。",
+      keywords: ["马来西亚杂工费用", "吉隆坡零工价格"],
+      eyebrow: "免费估价工具",
+      intro: "估算杂工工作费用。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪请杂工要多少钱？",
+      directAnswer: "估算杂工工作费用。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "杂工",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "杂工费用估价——标准", note: "标准范围" },
+        { scope: "杂工费用估价——高级", note: "高级范围含附加项" },
+        { scope: "杂工费用估价——材料", note: "材料费" },
+        { scope: "杂工费用估价——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "估算杂工工作费用。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "杂工服务", href: "/services/handyman" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "furniture-assembly-estimator": {
+      name: "家具组装估价",
+      heading: "家具组装估价",
+      metaTitle: "家具组装费用估价 KL",
+      metaDesc: "免费家具组装费用估价。",
+      keywords: ["马来西亚家具组装费用", "吉隆坡宜家组装价格"],
+      eyebrow: "免费估价工具",
+      intro: "估算宜家等家具的组装费用。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪组装家具要多少钱？",
+      directAnswer: "估算宜家等家具的组装费用。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "家具组装",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "家具组装估价——标准", note: "标准范围" },
+        { scope: "家具组装估价——高级", note: "高级范围含附加项" },
+        { scope: "家具组装估价——材料", note: "材料费" },
+        { scope: "家具组装估价——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "估算宜家等家具的组装费用。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "杂工服务", href: "/services/handyman" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "curtain-installation-calculator": {
+      name: "窗帘安装计算器",
+      heading: "窗帘安装计算器",
+      metaTitle: "窗帘安装费用计算器 KL",
+      metaDesc: "免费窗帘安装费用计算器。",
+      keywords: ["马来西亚窗帘安装费用"],
+      eyebrow: "免费费用工具",
+      intro: "估算窗帘轨道和安装费用。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪安装窗帘要多少钱？",
+      directAnswer: "估算窗帘轨道和安装费用。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "窗帘安装",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "窗帘安装计算器——标准", note: "标准范围" },
+        { scope: "窗帘安装计算器——高级", note: "高级范围含附加项" },
+        { scope: "窗帘安装计算器——材料", note: "材料费" },
+        { scope: "窗帘安装计算器——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "估算窗帘轨道和安装费用。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "杂工服务", href: "/services/handyman" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "door-installation-cost": {
+      name: "门安装费用计算器",
+      heading: "门安装费用计算器",
+      metaTitle: "门安装费用计算器 KL",
+      metaDesc: "吉隆坡与雪兰莪免费门安装费用计算器。",
+      keywords: ["马来西亚门安装费用"],
+      eyebrow: "免费估价工具",
+      intro: "估算门安装费用。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪安装门要多少钱？",
+      directAnswer: "估算门安装费用。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "门安装",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "门安装费用计算器——标准", note: "标准范围" },
+        { scope: "门安装费用计算器——高级", note: "高级范围含附加项" },
+        { scope: "门安装费用计算器——材料", note: "材料费" },
+        { scope: "门安装费用计算器——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "估算门安装费用。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "门安装服务", href: "/services/door" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "window-replacement-estimator": {
+      name: "窗户更换估价",
+      heading: "窗户更换估价",
+      metaTitle: "窗户更换费用估价 KL",
+      metaDesc: "免费窗户更换费用估价。",
+      keywords: ["马来西亚窗户更换费用"],
+      eyebrow: "免费估价工具",
+      intro: "估算窗户更换费用。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪更换窗户要多少钱？",
+      directAnswer: "估算窗户更换费用。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "窗户更换",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "窗户更换估价——标准", note: "标准范围" },
+        { scope: "窗户更换估价——高级", note: "高级范围含附加项" },
+        { scope: "窗户更换估价——材料", note: "材料费" },
+        { scope: "窗户更换估价——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "估算窗户更换费用。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "窗户维修服务", href: "/services/window-repair" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "glass-replacement-calculator": {
+      name: "玻璃更换计算器",
+      heading: "玻璃更换计算器",
+      metaTitle: "玻璃更换费用计算器 KL",
+      metaDesc: "免费玻璃更换费用计算器。",
+      keywords: ["马来西亚玻璃更换费用"],
+      eyebrow: "免费费用工具",
+      intro: "按每平方英尺估算玻璃更换费用。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪更换玻璃要多少钱？",
+      directAnswer: "按每平方英尺估算玻璃更换费用。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "玻璃更换",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "玻璃更换计算器——标准", note: "标准范围" },
+        { scope: "玻璃更换计算器——高级", note: "高级范围含附加项" },
+        { scope: "玻璃更换计算器——材料", note: "材料费" },
+        { scope: "玻璃更换计算器——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "按每平方英尺估算玻璃更换费用。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "玻璃与铝业服务", href: "/services/glass-aluminium" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "flooring-area-calculator": {
+      name: "地板面积计算器",
+      heading: "地板面积计算器",
+      metaTitle: "地板面积计算器——平方英尺",
+      metaDesc: "含 10% 损耗的免费地板面积计算器。",
+      keywords: ["地板面积计算器", "需要多少地板"],
+      eyebrow: "免费面积工具",
+      intro: "计算地板面积和损耗。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪的地板面积计算器收费多少？",
+      directAnswer: "计算地板面积和损耗。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "地板面积",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "地板面积计算器——标准", note: "标准范围" },
+        { scope: "地板面积计算器——高级", note: "高级范围含附加项" },
+        { scope: "地板面积计算器——材料", note: "材料费" },
+        { scope: "地板面积计算器——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "计算地板面积和损耗。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "地板服务", href: "/services/flooring" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "tile-quantity-calculator": {
+      name: "瓷砖数量计算器",
+      heading: "瓷砖数量计算器",
+      metaTitle: "瓷砖数量计算器——需要多少瓷砖",
+      metaDesc: "适用于地面和墙面的免费瓷砖数量计算器。",
+      keywords: ["瓷砖计算器", "需要多少瓷砖"],
+      eyebrow: "免费数量工具",
+      intro: "计算所需瓷砖数量（含损耗）。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪的瓷砖数量计算器收费多少？",
+      directAnswer: "计算所需瓷砖数量（含损耗）。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "瓷砖",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "瓷砖数量计算器——标准", note: "标准范围" },
+        { scope: "瓷砖数量计算器——高级", note: "高级范围含附加项" },
+        { scope: "瓷砖数量计算器——材料", note: "材料费" },
+        { scope: "瓷砖数量计算器——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "计算所需瓷砖数量（含损耗）。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "瓷砖服务", href: "/services/tiling" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "vinyl-flooring-cost-estimator": {
+      name: "塑胶地板费用估价",
+      heading: "塑胶地板费用估价",
+      metaTitle: "塑胶地板费用估价 KL",
+      metaDesc: "吉隆坡与雪兰莪免费塑胶地板费用估价。",
+      keywords: ["马来西亚塑胶地板费用", "吉隆坡 SPC 地板价格"],
+      eyebrow: "免费估价工具",
+      intro: "按每平方英尺估算塑胶地板费用。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪铺塑胶地板要多少钱？",
+      directAnswer: "按每平方英尺估算塑胶地板费用。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "塑胶地板",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "塑胶地板费用估价——标准", note: "标准范围" },
+        { scope: "塑胶地板费用估价——高级", note: "高级范围含附加项" },
+        { scope: "塑胶地板费用估价——材料", note: "材料费" },
+        { scope: "塑胶地板费用估价——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "按每平方英尺估算塑胶地板费用。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "地板服务", href: "/services/flooring" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "roof-repair-estimator": {
+      name: "屋顶维修估价",
+      heading: "屋顶维修估价",
+      metaTitle: "屋顶维修费用估价 KL",
+      metaDesc: "免费屋顶维修费用估价。",
+      keywords: ["马来西亚屋顶维修费用", "吉隆坡屋顶漏水价格"],
+      eyebrow: "免费估价工具",
+      intro: "估算屋顶漏水维修费用。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪维修屋顶要多少钱？",
+      directAnswer: "估算屋顶漏水维修费用。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "屋顶维修",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "屋顶维修估价——标准", note: "标准范围" },
+        { scope: "屋顶维修估价——高级", note: "高级范围含附加项" },
+        { scope: "屋顶维修估价——材料", note: "材料费" },
+        { scope: "屋顶维修估价——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "估算屋顶漏水维修费用。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "屋顶维修服务", href: "/services/roof-repair" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "roof-replacement-cost": {
+      name: "屋顶更换费用计算器",
+      heading: "屋顶更换费用计算器",
+      metaTitle: "屋顶更换费用计算器 KL",
+      metaDesc: "免费屋顶更换费用计算器。",
+      keywords: ["马来西亚屋顶更换费用"],
+      eyebrow: "免费估价工具",
+      intro: "按每平方英尺估算屋顶更换费用。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪更换屋顶要多少钱？",
+      directAnswer: "按每平方英尺估算屋顶更换费用。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "屋顶更换",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "屋顶更换费用计算器——标准", note: "标准范围" },
+        { scope: "屋顶更换费用计算器——高级", note: "高级范围含附加项" },
+        { scope: "屋顶更换费用计算器——材料", note: "材料费" },
+        { scope: "屋顶更换费用计算器——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "按每平方英尺估算屋顶更换费用。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "屋顶维修服务", href: "/services/roof-repair" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "renovation-budget-calculator": {
+      name: "装修预算计算器",
+      heading: "装修预算计算器",
+      metaTitle: "装修预算计算器 KL——每平方英尺",
+      metaDesc: "马来西亚免费装修预算计算器。",
+      keywords: ["马来西亚装修预算计算器", "吉隆坡房屋装修每平方英尺费用"],
+      eyebrow: "免费预算工具",
+      intro: "按每平方英尺估算整体装修预算。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪的装修预算计算器收费多少？",
+      directAnswer: "按每平方英尺估算整体装修预算。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "装修预算",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "装修预算计算器——标准", note: "标准范围" },
+        { scope: "装修预算计算器——高级", note: "高级范围含附加项" },
+        { scope: "装修预算计算器——材料", note: "材料费" },
+        { scope: "装修预算计算器——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "按每平方英尺估算整体装修预算。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "房屋装修服务", href: "/services/house-renovation" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "room-renovation-estimator": {
+      name: "房间装修估价",
+      heading: "房间装修估价",
+      metaTitle: "房间装修费用估价 KL",
+      metaDesc: "免费房间装修费用估价。",
+      keywords: ["马来西亚房间装修费用"],
+      eyebrow: "免费估价工具",
+      intro: "估算每间房的装修费用。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪装修房间要多少钱？",
+      directAnswer: "估算每间房的装修费用。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "房间装修",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "房间装修估价——标准", note: "标准范围" },
+        { scope: "房间装修估价——高级", note: "高级范围含附加项" },
+        { scope: "房间装修估价——材料", note: "材料费" },
+        { scope: "房间装修估价——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "估算每间房的装修费用。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "房屋装修服务", href: "/services/house-renovation" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "kitchen-renovation-estimator": {
+      name: "厨房装修估价",
+      heading: "厨房装修估价",
+      metaTitle: "厨房装修费用估价 KL",
+      metaDesc: "免费厨房装修费用估价。",
+      keywords: ["马来西亚厨房装修费用", "吉隆坡厨房橱柜价格"],
+      eyebrow: "免费估价工具",
+      intro: "估算厨房装修费用。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪装修厨房要多少钱？",
+      directAnswer: "估算厨房装修费用。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "厨房装修",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "厨房装修估价——标准", note: "标准范围" },
+        { scope: "厨房装修估价——高级", note: "高级范围含附加项" },
+        { scope: "厨房装修估价——材料", note: "材料费" },
+        { scope: "厨房装修估价——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "估算厨房装修费用。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "厨房橱柜服务", href: "/services/kitchen-cabinet" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "bathroom-renovation-estimator": {
+      name: "浴室装修估价",
+      heading: "浴室装修估价",
+      metaTitle: "浴室装修费用估价 KL",
+      metaDesc: "免费浴室装修费用估价。",
+      keywords: ["马来西亚浴室装修费用"],
+      eyebrow: "免费估价工具",
+      intro: "估算浴室装修费用。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪装修浴室要多少钱？",
+      directAnswer: "估算浴室装修费用。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "浴室装修",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "浴室装修估价——标准", note: "标准范围" },
+        { scope: "浴室装修估价——高级", note: "高级范围含附加项" },
+        { scope: "浴室装修估价——材料", note: "材料费" },
+        { scope: "浴室装修估价——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "估算浴室装修费用。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "房屋装修服务", href: "/services/house-renovation" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "deep-cleaning-cost-estimator": {
+      name: "深度清洁费用估价",
+      heading: "深度清洁费用估价",
+      metaTitle: "深度清洁费用估价 KL",
+      metaDesc: "免费深度清洁费用估价。",
+      keywords: ["马来西亚深度清洁费用", "吉隆坡退租清洁价格"],
+      eyebrow: "免费估价工具",
+      intro: "按每平方英尺估算深度清洁费用。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪深度清洁要多少钱？",
+      directAnswer: "按每平方英尺估算深度清洁费用。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "深度清洁",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "深度清洁费用估价——标准", note: "标准范围" },
+        { scope: "深度清洁费用估价——高级", note: "高级范围含附加项" },
+        { scope: "深度清洁费用估价——材料", note: "材料费" },
+        { scope: "深度清洁费用估价——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "按每平方英尺估算深度清洁费用。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "深度清洁服务", href: "/services/deep-cleaning" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
+    "move-in-out-cleaning-calculator": {
+      name: "搬家清洁计算器",
+      heading: "搬家清洁计算器",
+      metaTitle: "搬家清洁费用计算器 KL",
+      metaDesc: "免费搬家（迁入/迁出）清洁费用计算器。",
+      keywords: ["马来西亚迁入清洁费用", "吉隆坡迁出清洁"],
+      eyebrow: "免费估价工具",
+      intro: "估算迁入/迁出清洁费用。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
+      directQuestion: "吉隆坡和雪兰莪搬家清洁要多少钱？",
+      directAnswer: "估算迁入/迁出清洁费用。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
+      heroAlt: "搬家清洁",
+      stats: [
+        { label: "即时", value: "2分钟内" },
+        { label: "起", value: "RM 150" },
+        { label: "覆盖区域", value: "KL & Selangor" }
+      ],
+      howTo: [
+        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
+        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
+        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
+        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
+      ],
+      priceTable: [
+        { scope: "搬家清洁计算器——标准", note: "标准范围" },
+        { scope: "搬家清洁计算器——高级", note: "高级范围含附加项" },
+        { scope: "搬家清洁计算器——材料", note: "材料费" },
+        { scope: "搬家清洁计算器——人工", note: "仅人工" },
+      ],
+      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
+      faqs: [
+        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
+        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
+        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
+        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
+        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
+      ],
+      covers: [
+        "估算迁入/迁出清洁费用。",
+        "即时在线估价",
+        "人工与材料拆分",
+        "面积计算",
+        "工期估算",
+        "WhatsApp 预订",
+      ],
+      relatedServices: [
+        { label: "深度清洁服务", href: "/services/deep-cleaning" },
+        { label: "价格指南", href: "/pricing" }
+      ]
+    },
   }
 };
 

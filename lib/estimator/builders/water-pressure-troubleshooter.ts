@@ -63,12 +63,14 @@ export function buildWaterPressureTroubleshooterSpec(t: Translator): EstimatorSp
       const findings = symptoms.map(s=> ({ title: t(`symptoms.${s}.label`), detail: t(`symptoms.${s}.hint`) || t("findings.generic") })).slice(0,3);
       if (!findings.length) findings.push({ title: t("findings.inspectionTitle"), detail: t("findings.inspectionDetail") });
       const sev: any = severity === "emergency" ? "emergency" : severity === "severe" ? "urgent" : severity === "moderate" ? "soon" : "routine";
+      const materials = roundMoney(price * 0.3);
+      const labour = price - materials;
       return {
         price,
         low: roundMoney(price * 0.85),
         high: roundMoney(price * 1.3),
-        labour: roundMoney(price * 0.7),
-        materials: roundMoney(price * 0.3),
+        labour,
+        materials,
         duration: severity === "emergency" ? "Same day" : "1–2 working days",
         recommendedService: t("meta.service"),
         packageName: t("packages.standard"),
