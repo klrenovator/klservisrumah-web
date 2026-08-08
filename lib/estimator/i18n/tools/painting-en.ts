@@ -1,17 +1,3 @@
-/**
- * Painting Cost Calculator — English content dictionary.
- *
- * Every user-facing string the painting estimator can render lives here, in
- * ONE language per module, so a route only ever ships the locale it serves.
- * The builder (`lib/estimator/builders/painting.ts`) resolves copy through
- * these keys; the ms/zh siblings must provide the identical key set
- * (parity is asserted by scripts/test-estimators.ts).
- *
- * `{tokens}` are interpolated by the builder. "Published …" notes name the
- * rate card line the figure comes from — pricing traceability is intentional
- * and must survive translation.
- */
-
 import type { MessageDictionary } from "../../../i18n";
 
 export const paintingEnDict: MessageDictionary = {
@@ -20,6 +6,18 @@ export const paintingEnDict: MessageDictionary = {
     resultLabel: "Estimated painting cost"
   },
   steps: {
+    paintingType: {
+      title: "What do you want to paint?",
+      subtitle: "Choose Walls Only, Ceiling Only, or Walls + Ceiling — calculation changes instantly."
+    },
+    roomSize: {
+      title: "How big is the room?",
+      subtitle: "Pick a preset or enter custom dimensions — no measuring tape needed."
+    },
+    ceilingHeight: {
+      title: "Ceiling height?",
+      subtitle: "Needed only when walls are included. Hidden for Ceiling Only."
+    },
     scope: {
       title: "What do you want to paint?",
       subtitle: "Pick the surface, item or property type — we price each differently."
@@ -50,14 +48,21 @@ export const paintingEnDict: MessageDictionary = {
     }
   },
   fields: {
+    paintingType: {
+      label: "Painting type",
+      help: "Walls Only = 2×(L+W)×H, Ceiling Only = L×W, Walls+Ceiling = both"
+    },
+    roomSize: { label: "Room size" },
+    roomPreset: { label: "Room size" },
+    paintingArea: { label: "Painting area" },
+    customLength: { label: "Length" },
+    customWidth: { label: "Width" },
+    customHeight: { label: "Ceiling height" },
+    ceilingHeight: { label: "Ceiling height", help: "Standard Malaysian ceiling is 10 ft. Hidden when you select Ceiling Only." },
     target: {
       label: "Painting scope",
       help: "Choose the closest match. You can add more scopes on WhatsApp after the estimate."
     },
-    roomSize: { label: "Room size" },
-    customLength: { label: "Length" },
-    customWidth: { label: "Width" },
-    customHeight: { label: "Ceiling height" },
     propertySize: { label: "Property built-up size" },
     itemCount: { label: "How many units?" },
     condition: { label: "Overall surface condition" },
@@ -68,6 +73,42 @@ export const paintingEnDict: MessageDictionary = {
     colour: { label: "Colour preference" },
     access: { label: "Access level" },
     urgency: { label: "Preferred timing" }
+  },
+  paintingTypes: {
+    "walls-only": {
+      label: "Walls Only",
+      service: "Interior Wall Repainting",
+      hint: "2 × (Length + Width) × Height",
+      note: "Two topcoats over sealed walls"
+    },
+    "ceiling-only": {
+      label: "Ceiling Only",
+      service: "Ceiling Repainting",
+      hint: "Length × Width — height not needed",
+      note: "For ceiling stains and discolouration"
+    },
+    "walls-ceiling": {
+      label: "Walls + Ceiling",
+      service: "Full Room Repainting — Walls + Ceiling",
+      hint: "Wall area + ceiling area",
+      note: "Most popular for full refresh"
+    }
+  },
+  roomPresets: {
+    "10x10": { label: "10 × 10 ft", hint: "Small bedroom · 100 sq ft floor · 40% of KL rooms" },
+    "12x12": { label: "12 × 12 ft", hint: "Standard bedroom · 144 sq ft floor" },
+    "12x15": { label: "12 × 15 ft", hint: "Master bedroom · 180 sq ft floor" },
+    "15x15": { label: "15 × 15 ft", hint: "Large hall · 225 sq ft floor" },
+    "20x20": { label: "20 × 20 ft", hint: "Open-plan area · 400 sq ft floor" },
+    custom: { label: "Custom size", hint: "Enter your own length and width" },
+    "8x8": { hint: "Small bedroom / store" },
+    "8x10": { hint: "Single bedroom" },
+    "10x10_old": { hint: "Standard bedroom" },
+    "10x12": { hint: "Master bedroom" },
+    "12x12_old": { hint: "Large bedroom" },
+    "12x15_old": { hint: "Living hall" },
+    "15x15_old": { hint: "Large hall" },
+    "20x20_old": { hint: "Open-plan area" }
   },
   targets: {
     "interior-walls": {
@@ -211,7 +252,10 @@ export const paintingEnDict: MessageDictionary = {
     property: "{sqft} sq ft built-up × {factor} paintable-surface factor",
     customCeiling: "{length} × {width} ft ceiling",
     customRoomBoth: "{length} × {width} ft room, {height} ft ceiling — walls + ceiling",
-    customRoomWalls: "{length} × {width} ft room, {height} ft ceiling — wall surface"
+    customRoomWalls: "{length} × {width} ft room, {height} ft ceiling — wall surface",
+    newWallsOnly: "{length} × {width} ft × {height} ft — walls {wall} sq ft using 2 × (L+W) × H",
+    newCeilingOnly: "{length} × {width} ft — ceiling {ceiling} sq ft using L × W",
+    newWallsCeiling: "{length} × {width} ft × {height} ft — walls {wall} + ceiling {ceiling} = {total} sq ft"
   },
   durations: {
     halfDay: "Half day (3–4 hours)",
@@ -235,7 +279,15 @@ export const paintingEnDict: MessageDictionary = {
   },
   bands: { interior: "interior", exterior: "exterior" },
   breakdown: {
+    paintingType: "Painting type",
+    roomDimensions: "Room dimensions",
     paintedArea: "Painted area",
+    totalArea: "Total paintable area",
+    wallArea: "Wall area",
+    ceilingArea: "Ceiling area",
+    paintQuantity: "Paint quantity needed",
+    paintQuantityValue: "{litres} litres for {coats} coats",
+    paintQuantityNote: "~{area} sq ft × {coats} coats ÷ {coverage} sq ft per litre incl. 10% wastage",
     paintedAreaValue: "{area} sq ft",
     appliedRate: "Applied rate",
     appliedRateValue: "RM {rate} / sq ft",

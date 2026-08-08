@@ -1,8 +1,3 @@
-/**
- * Painting Cost Calculator — Chinese (Simplified) content dictionary.
- * Key set and {tokens} must stay identical to painting-en.ts (harness-checked).
- */
-
 import type { MessageDictionary } from "../../../i18n";
 
 export const paintingZhDict: MessageDictionary = {
@@ -11,6 +6,18 @@ export const paintingZhDict: MessageDictionary = {
     resultLabel: "油漆工程估价"
   },
   steps: {
+    paintingType: {
+      title: "您要油漆什么?",
+      subtitle: "选择只刷墙、只刷天花、或墙面+天花——计算方式即时变化。"
+    },
+    roomSize: {
+      title: "房间多大?",
+      subtitle: "选择预设或输入自定义尺寸——无需量尺。"
+    },
+    ceilingHeight: {
+      title: "天花高度?",
+      subtitle: "仅在包含墙面时需要。选只刷天花时隐藏。"
+    },
     scope: {
       title: "您要油漆什么?",
       subtitle: "选择表面、项目或房产类型——每种计价方式不同。"
@@ -41,14 +48,21 @@ export const paintingZhDict: MessageDictionary = {
     }
   },
   fields: {
+    paintingType: {
+      label: "油漆类型",
+      help: "只刷墙 = 2×(长+宽)×高,只刷天花 = 长×宽,墙+天花 = 两者相加"
+    },
+    roomSize: { label: "房间尺寸" },
+    roomPreset: { label: "房间尺寸" },
+    paintingArea: { label: "油漆面积" },
+    customLength: { label: "长度" },
+    customWidth: { label: "宽度" },
+    customHeight: { label: "天花高度" },
+    ceilingHeight: { label: "天花高度", help: "马来西亚标准天花 10 英尺。只刷天花时隐藏。" },
     target: {
       label: "油漆范围",
       help: "选择最接近的一项。估价后可在 WhatsApp 上追加其他范围。"
     },
-    roomSize: { label: "房间尺寸" },
-    customLength: { label: "长度" },
-    customWidth: { label: "宽度" },
-    customHeight: { label: "天花板高度" },
     propertySize: { label: "房产建筑面积" },
     itemCount: { label: "多少件?" },
     condition: { label: "整体表面状况" },
@@ -59,6 +73,42 @@ export const paintingZhDict: MessageDictionary = {
     colour: { label: "颜色偏好" },
     access: { label: "出入条件" },
     urgency: { label: "期望时间" }
+  },
+  paintingTypes: {
+    "walls-only": {
+      label: "只刷墙",
+      service: "室内墙面翻新油漆",
+      hint: "2 × (长 + 宽) × 高",
+      note: "封底修补后涂两层面漆"
+    },
+    "ceiling-only": {
+      label: "只刷天花",
+      service: "天花翻新油漆",
+      hint: "长 × 宽 — 无需高度",
+      note: "适用于天花污渍与变色"
+    },
+    "walls-ceiling": {
+      label: "墙面 + 天花",
+      service: "全房翻新油漆 — 墙面+天花",
+      hint: "墙面积 + 天花面积",
+      note: "全房翻新最受欢迎"
+    }
+  },
+  roomPresets: {
+    "10x10": { label: "10 × 10 英尺", hint: "小卧室 · 100 平方英尺地板 · 占吉隆坡 40%" },
+    "12x12": { label: "12 × 12 英尺", hint: "标准卧室 · 144 平方英尺地板" },
+    "12x15": { label: "12 × 15 英尺", hint: "主人房 · 180 平方英尺地板" },
+    "15x15": { label: "15 × 15 英尺", hint: "大厅 · 225 平方英尺地板" },
+    "20x20": { label: "20 × 20 英尺", hint: "开放式空间 · 400 平方英尺地板" },
+    custom: { label: "自定义尺寸", hint: "输入您自己的长和宽" },
+    "8x8": { hint: "小卧室 / 储藏室" },
+    "8x10": { hint: "单人卧室" },
+    "10x10_old": { hint: "标准卧室" },
+    "10x12": { hint: "主人房" },
+    "12x12_old": { hint: "大卧室" },
+    "12x15_old": { hint: "客厅" },
+    "15x15_old": { hint: "大客厅" },
+    "20x20_old": { hint: "开放式空间" }
   },
   targets: {
     "interior-walls": {
@@ -202,7 +252,10 @@ export const paintingZhDict: MessageDictionary = {
     property: "建筑面积 {sqft} 平方英尺 × {factor} 可涂表面系数",
     customCeiling: "{length} × {width} 英尺天花板",
     customRoomBoth: "{length} × {width} 英尺房间、天花板高 {height} 英尺 — 墙壁+天花板",
-    customRoomWalls: "{length} × {width} 英尺房间、天花板高 {height} 英尺 — 墙面"
+    customRoomWalls: "{length} × {width} 英尺房间、天花板高 {height} 英尺 — 墙面",
+    newWallsOnly: "{length} × {width} 英尺 × {height} 英尺 — 墙 {wall} 平方英尺 按 2 × (长+宽) × 高",
+    newCeilingOnly: "{length} × {width} 英尺 — 天花 {ceiling} 平方英尺 按 长 × 宽",
+    newWallsCeiling: "{length} × {width} 英尺 × {height} 英尺 — 墙 {wall} + 天花 {ceiling} = {total} 平方英尺"
   },
   durations: {
     halfDay: "半天(3–4 小时)",
@@ -226,7 +279,15 @@ export const paintingZhDict: MessageDictionary = {
   },
   bands: { interior: "室内", exterior: "室外" },
   breakdown: {
+    paintingType: "油漆类型",
+    roomDimensions: "房间尺寸",
     paintedArea: "油漆面积",
+    totalArea: "总可油漆面积",
+    wallArea: "墙面积",
+    ceilingArea: "天花面积",
+    paintQuantity: "所需油漆数量",
+    paintQuantityValue: "{litres} 升 {coats} 层",
+    paintQuantityNote: "~{area} 平方英尺 × {coats} 层 ÷ 每升 {coverage} 平方英尺 含 10% 损耗",
     paintedAreaValue: "{area} 平方英尺",
     appliedRate: "适用单价",
     appliedRateValue: "每平方英尺 RM {rate}",

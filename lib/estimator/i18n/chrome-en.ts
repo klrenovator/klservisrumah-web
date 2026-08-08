@@ -15,7 +15,7 @@ import type { MessageDictionary } from "../../i18n";
 export const chromeEnDict: MessageDictionary = {
   estimator: {
   "common": {
-    "disclaimer": "This is an estimated quotation based on the information provided. Final pricing may change after an on-site inspection depending on actual site conditions.",
+    "disclaimer": "This is an estimated price only. Final quotation will be provided after inspection or after confirming project details.",
     "priceInclusive": "Total incl. labour & materials",
     "inclusiveNote": "Covers both labour and materials",
     "popular": "Popular",
