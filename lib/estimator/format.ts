@@ -6,4 +6,4 @@ export function formatMYR(value: number): string {
 
 /** The disclaimer that must appear before any customer books. */
 export const ESTIMATE_DISCLAIMER =
-  "This is an estimated quotation based on the information provided. Final pricing may change after an on-site inspection depending on actual site conditions.";
+  "This is an estimated price only. Final quotation will be provided after inspection or after confirming project details.";

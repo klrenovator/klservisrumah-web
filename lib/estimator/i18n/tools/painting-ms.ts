@@ -1,8 +1,3 @@
-/**
- * Painting Cost Calculator — Bahasa Malaysia content dictionary.
- * Key set and {tokens} must stay identical to painting-en.ts (harness-checked).
- */
-
 import type { MessageDictionary } from "../../../i18n";
 
 export const paintingMsDict: MessageDictionary = {
@@ -11,6 +6,18 @@ export const paintingMsDict: MessageDictionary = {
     resultLabel: "Anggaran kos mengecat"
   },
   steps: {
+    paintingType: {
+      title: "Apa yang anda mahu cat?",
+      subtitle: "Pilih Dinding Sahaja, Siling Sahaja atau Dinding + Siling — kiraan berubah serta-merta."
+    },
+    roomSize: {
+      title: "Berapa besar bilik?",
+      subtitle: "Pilih preset atau masukkan ukuran custom — tak perlu pita pengukur."
+    },
+    ceilingHeight: {
+      title: "Ketinggian siling?",
+      subtitle: "Diperlukan hanya bila dinding terlibat. Disembunyikan untuk Siling Sahaja."
+    },
     scope: {
       title: "Apa yang anda mahu cat?",
       subtitle: "Pilih permukaan, item atau jenis hartanah — setiap satu dikira berbeza."
@@ -41,14 +48,21 @@ export const paintingMsDict: MessageDictionary = {
     }
   },
   fields: {
+    paintingType: {
+      label: "Jenis pengecatan",
+      help: "Dinding Sahaja = 2×(P+L)×T, Siling Sahaja = P×L, Dinding+Siling = kedua-duanya"
+    },
+    roomSize: { label: "Saiz bilik" },
+    roomPreset: { label: "Saiz bilik" },
+    paintingArea: { label: "Kawasan cat" },
+    customLength: { label: "Panjang" },
+    customWidth: { label: "Lebar" },
+    customHeight: { label: "Ketinggian siling" },
+    ceilingHeight: { label: "Ketinggian siling", help: "Siling standard Malaysia 10 kaki. Disembunyikan bila pilih Siling Sahaja." },
     target: {
       label: "Skop pengecatan",
       help: "Pilih yang paling hampir. Anda boleh tambah skop lain di WhatsApp selepas anggaran."
     },
-    roomSize: { label: "Saiz bilik" },
-    customLength: { label: "Panjang" },
-    customWidth: { label: "Lebar" },
-    customHeight: { label: "Ketinggian siling" },
     propertySize: { label: "Luas binaan hartanah" },
     itemCount: { label: "Berapa banyak unit?" },
     condition: { label: "Keadaan keseluruhan permukaan" },
@@ -59,6 +73,42 @@ export const paintingMsDict: MessageDictionary = {
     colour: { label: "Keutamaan warna" },
     access: { label: "Tahap akses" },
     urgency: { label: "Masa pilihan" }
+  },
+  paintingTypes: {
+    "walls-only": {
+      label: "Dinding Sahaja",
+      service: "Pengecatan Semula Dinding Dalaman",
+      hint: "2 × (Panjang + Lebar) × Tinggi",
+      note: "Dua lapisan kemasan di atas dinding termeterai"
+    },
+    "ceiling-only": {
+      label: "Siling Sahaja",
+      service: "Pengecatan Semula Siling",
+      hint: "Panjang × Lebar — ketinggian tidak perlu",
+      note: "Untuk kotoran dan perubahan warna siling"
+    },
+    "walls-ceiling": {
+      label: "Dinding + Siling",
+      service: "Pakej Pengecatan Penuh Bilik — Dinding + Siling",
+      hint: "Keluasan dinding + keluasan siling",
+      note: "Paling popular untuk segarkan penuh"
+    }
+  },
+  roomPresets: {
+    "10x10": { label: "10 × 10 kaki", hint: "Bilik tidur kecil · 100 kps lantai · 40% bilik KL" },
+    "12x12": { label: "12 × 12 kaki", hint: "Bilik tidur standard · 144 kps lantai" },
+    "12x15": { label: "12 × 15 kaki", hint: "Bilik tidur utama · 180 kps lantai" },
+    "15x15": { label: "15 × 15 kaki", hint: "Dewan besar · 225 kps lantai" },
+    "20x20": { label: "20 × 20 kaki", hint: "Ruang terbuka · 400 kps lantai" },
+    custom: { label: "Saiz custom", hint: "Masukkan panjang dan lebar anda sendiri" },
+    "8x8": { hint: "Bilik tidur kecil / stor" },
+    "8x10": { hint: "Bilik tidur bujang" },
+    "10x10_old": { hint: "Bilik tidur standard" },
+    "10x12": { hint: "Bilik tidur utama" },
+    "12x12_old": { hint: "Bilik tidur besar" },
+    "12x15_old": { hint: "Ruang tamu" },
+    "15x15_old": { hint: "Ruang tamu besar" },
+    "20x20_old": { hint: "Ruang konsep terbuka" }
   },
   targets: {
     "interior-walls": {
@@ -202,7 +252,10 @@ export const paintingMsDict: MessageDictionary = {
     property: "{sqft} kps luas binaan × {factor} faktor permukaan cat",
     customCeiling: "siling {length} × {width} kaki",
     customRoomBoth: "bilik {length} × {width} kaki, siling {height} kaki — dinding + siling",
-    customRoomWalls: "bilik {length} × {width} kaki, siling {height} kaki — permukaan dinding"
+    customRoomWalls: "bilik {length} × {width} kaki, siling {height} kaki — permukaan dinding",
+    newWallsOnly: "{length} × {width} kaki × {height} kaki — dinding {wall} kps guna 2 × (P+L) × T",
+    newCeilingOnly: "{length} × {width} kaki — siling {ceiling} kps guna P × L",
+    newWallsCeiling: "{length} × {width} kaki × {height} kaki — dinding {wall} + siling {ceiling} = {total} kps"
   },
   durations: {
     halfDay: "Setengah hari (3–4 jam)",
@@ -226,7 +279,15 @@ export const paintingMsDict: MessageDictionary = {
   },
   bands: { interior: "dalaman", exterior: "luaran" },
   breakdown: {
+    paintingType: "Jenis pengecatan",
+    roomDimensions: "Dimensi bilik",
     paintedArea: "Keluasan dicat",
+    totalArea: "Jumlah keluasan boleh cat",
+    wallArea: "Keluasan dinding",
+    ceilingArea: "Keluasan siling",
+    paintQuantity: "Kuantiti cat diperlukan",
+    paintQuantityValue: "{litres} liter untuk {coats} lapisan",
+    paintQuantityNote: "~{area} kps × {coats} lapisan ÷ {coverage} kps per liter termasuk 10% pembaziran",
     paintedAreaValue: "{area} kps",
     appliedRate: "Kadar dikenakan",
     appliedRateValue: "RM {rate} / kps",

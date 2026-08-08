@@ -272,6 +272,294 @@
         "ms": "/ms/alatan/penasihat-pemasangan-tv",
         "zh": "/zh/gongju/电视安装估价"
       }
+    },
+    {
+      "slug": "paint-quantity-estimator",
+      "heading": "Paint Quantity Estimator for KL & Selangor",
+      "urls": {
+        "en": "/tools/paint-quantity-estimator",
+        "ms": "/ms/alatan/kalkulator-kuantiti-cat",
+        "zh": "/zh/gongju/油漆用量计算器"
+      }
+    },
+    {
+      "slug": "wall-area-calculator",
+      "heading": "Wall Area Calculator — Instant sq ft",
+      "urls": {
+        "en": "/tools/wall-area-calculator",
+        "ms": "/ms/alatan/kalkulator-keluasan-dinding",
+        "zh": "/zh/gongju/墙面面积计算器"
+      }
+    },
+    {
+      "slug": "ceiling-area-calculator",
+      "heading": "Ceiling Area Calculator",
+      "urls": {
+        "en": "/tools/ceiling-area-calculator",
+        "ms": "/ms/alatan/kalkulator-keluasan-siling",
+        "zh": "/zh/gongju/天花面积计算器"
+      }
+    },
+    {
+      "slug": "ceiling-replacement-cost",
+      "heading": "Ceiling Replacement Cost Calculator",
+      "urls": {
+        "en": "/tools/ceiling-replacement-cost",
+        "ms": "/ms/alatan/kos-ganti-siling",
+        "zh": "/zh/gongju/天花更换费用"
+      }
+    },
+    {
+      "slug": "pipe-leak-estimator",
+      "heading": "Pipe Leak Repair Estimator",
+      "urls": {
+        "en": "/tools/pipe-leak-estimator",
+        "ms": "/ms/alatan/anggaran-bocor-paip",
+        "zh": "/zh/gongju/水管漏水估价"
+      }
+    },
+    {
+      "slug": "water-pressure-troubleshooter",
+      "heading": "Water Pressure Troubleshooter",
+      "urls": {
+        "en": "/tools/water-pressure-troubleshooter",
+        "ms": "/ms/alatan/masalah-tekanan-air",
+        "zh": "/zh/gongju/水压问题排查"
+      }
+    },
+    {
+      "slug": "pipe-replacement-cost",
+      "heading": "Pipe Replacement Cost Calculator",
+      "urls": {
+        "en": "/tools/pipe-replacement-cost",
+        "ms": "/ms/alatan/kos-ganti-paip",
+        "zh": "/zh/gongju/水管更换费用"
+      }
+    },
+    {
+      "slug": "waterproofing-cost-calculator",
+      "heading": "Waterproofing Cost Calculator",
+      "urls": {
+        "en": "/tools/waterproofing-cost-calculator",
+        "ms": "/ms/alatan/kalkulator-kos-kalis-air",
+        "zh": "/zh/gongju/防水费用计算器"
+      }
+    },
+    {
+      "slug": "roof-area-calculator",
+      "heading": "Roof Area Calculator",
+      "urls": {
+        "en": "/tools/roof-area-calculator",
+        "ms": "/ms/alatan/kalkulator-keluasan-bumbung",
+        "zh": "/zh/gongju/屋顶面积计算器"
+      }
+    },
+    {
+      "slug": "bathroom-waterproofing-estimator",
+      "heading": "Bathroom Waterproofing Estimator",
+      "urls": {
+        "en": "/tools/bathroom-waterproofing-estimator",
+        "ms": "/ms/alatan/kalis-air-bilik-mandi",
+        "zh": "/zh/gongju/浴室防水估价"
+      }
+    },
+    {
+      "slug": "balcony-waterproofing-estimator",
+      "heading": "Balcony Waterproofing Estimator",
+      "urls": {
+        "en": "/tools/balcony-waterproofing-estimator",
+        "ms": "/ms/alatan/kalis-air-balkoni",
+        "zh": "/zh/gongju/阳台防水估价"
+      }
+    },
+    {
+      "slug": "electrical-installation-cost",
+      "heading": "Electrical Installation Cost Estimator",
+      "urls": {
+        "en": "/tools/electrical-installation-cost",
+        "ms": "/ms/alatan/kos-pemasangan-elektrik",
+        "zh": "/zh/gongju/电工安装费用"
+      }
+    },
+    {
+      "slug": "socket-quantity-calculator",
+      "heading": "Socket Quantity Calculator",
+      "urls": {
+        "en": "/tools/socket-quantity-calculator",
+        "ms": "/ms/alatan/kalkulator-kuantiti-soket",
+        "zh": "/zh/gongju/插座数量计算器"
+      }
+    },
+    {
+      "slug": "lighting-installation-calculator",
+      "heading": "Lighting Installation Calculator",
+      "urls": {
+        "en": "/tools/lighting-installation-calculator",
+        "ms": "/ms/alatan/kalkulator-pemasangan-lampu",
+        "zh": "/zh/gongju/灯具安装计算器"
+      }
+    },
+    {
+      "slug": "ceiling-fan-installation-estimator",
+      "heading": "Ceiling Fan Installation Estimator",
+      "urls": {
+        "en": "/tools/ceiling-fan-installation-estimator",
+        "ms": "/ms/alatan/pasang-kipas-siling",
+        "zh": "/zh/gongju/吊扇安装估价"
+      }
+    },
+    {
+      "slug": "handyman-cost-estimator",
+      "heading": "Handyman Cost Estimator",
+      "urls": {
+        "en": "/tools/handyman-cost-estimator",
+        "ms": "/ms/alatan/kos-handyman",
+        "zh": "/zh/gongju/杂工费用估价"
+      }
+    },
+    {
+      "slug": "furniture-assembly-estimator",
+      "heading": "Furniture Assembly Estimator",
+      "urls": {
+        "en": "/tools/furniture-assembly-estimator",
+        "ms": "/ms/alatan/pasang-perabot",
+        "zh": "/zh/gongju/家具组装估价"
+      }
+    },
+    {
+      "slug": "curtain-installation-calculator",
+      "heading": "Curtain Installation Calculator",
+      "urls": {
+        "en": "/tools/curtain-installation-calculator",
+        "ms": "/ms/alatan/pasang-langsir",
+        "zh": "/zh/gongju/窗帘安装估价"
+      }
+    },
+    {
+      "slug": "door-installation-cost",
+      "heading": "Door Installation Cost Calculator",
+      "urls": {
+        "en": "/tools/door-installation-cost",
+        "ms": "/ms/alatan/kos-pasang-pintu",
+        "zh": "/zh/gongju/门安装费用"
+      }
+    },
+    {
+      "slug": "window-replacement-estimator",
+      "heading": "Window Replacement Estimator",
+      "urls": {
+        "en": "/tools/window-replacement-estimator",
+        "ms": "/ms/alatan/ganti-tingkap",
+        "zh": "/zh/gongju/窗户更换估价"
+      }
+    },
+    {
+      "slug": "glass-replacement-calculator",
+      "heading": "Glass Replacement Calculator",
+      "urls": {
+        "en": "/tools/glass-replacement-calculator",
+        "ms": "/ms/alatan/ganti-kaca",
+        "zh": "/zh/gongju/玻璃更换费用"
+      }
+    },
+    {
+      "slug": "flooring-area-calculator",
+      "heading": "Flooring Area Calculator",
+      "urls": {
+        "en": "/tools/flooring-area-calculator",
+        "ms": "/ms/alatan/kalkulator-keluasan-lantai",
+        "zh": "/zh/gongju/地板面积计算器"
+      }
+    },
+    {
+      "slug": "tile-quantity-calculator",
+      "heading": "Tile Quantity Calculator",
+      "urls": {
+        "en": "/tools/tile-quantity-calculator",
+        "ms": "/ms/alatan/kalkulator-kuantiti-jubin",
+        "zh": "/zh/gongju/瓷砖数量计算器"
+      }
+    },
+    {
+      "slug": "vinyl-flooring-cost-estimator",
+      "heading": "Vinyl Flooring Cost Estimator",
+      "urls": {
+        "en": "/tools/vinyl-flooring-cost-estimator",
+        "ms": "/ms/alatan/kos-lantai-vinyl",
+        "zh": "/zh/gongju/塑胶地板费用"
+      }
+    },
+    {
+      "slug": "roof-repair-estimator",
+      "heading": "Roof Repair Estimator",
+      "urls": {
+        "en": "/tools/roof-repair-estimator",
+        "ms": "/ms/alatan/baiki-bumbung",
+        "zh": "/zh/gongju/屋顶维修估价"
+      }
+    },
+    {
+      "slug": "roof-replacement-cost",
+      "heading": "Roof Replacement Cost Calculator",
+      "urls": {
+        "en": "/tools/roof-replacement-cost",
+        "ms": "/ms/alatan/kos-ganti-bumbung",
+        "zh": "/zh/gongju/屋顶更换费用"
+      }
+    },
+    {
+      "slug": "renovation-budget-calculator",
+      "heading": "Renovation Budget Calculator",
+      "urls": {
+        "en": "/tools/renovation-budget-calculator",
+        "ms": "/ms/alatan/kalkulator-bajet-renovasi",
+        "zh": "/zh/gongju/装修预算计算器"
+      }
+    },
+    {
+      "slug": "room-renovation-estimator",
+      "heading": "Room Renovation Estimator",
+      "urls": {
+        "en": "/tools/room-renovation-estimator",
+        "ms": "/ms/alatan/renovasi-bilik",
+        "zh": "/zh/gongju/房间装修估价"
+      }
+    },
+    {
+      "slug": "kitchen-renovation-estimator",
+      "heading": "Kitchen Renovation Estimator",
+      "urls": {
+        "en": "/tools/kitchen-renovation-estimator",
+        "ms": "/ms/alatan/renovasi-dapur",
+        "zh": "/zh/gongju/厨房装修估价"
+      }
+    },
+    {
+      "slug": "bathroom-renovation-estimator",
+      "heading": "Bathroom Renovation Estimator",
+      "urls": {
+        "en": "/tools/bathroom-renovation-estimator",
+        "ms": "/ms/alatan/renovasi-bilik-air",
+        "zh": "/zh/gongju/浴室装修估价"
+      }
+    },
+    {
+      "slug": "deep-cleaning-cost-estimator",
+      "heading": "Deep Cleaning Cost Estimator",
+      "urls": {
+        "en": "/tools/deep-cleaning-cost-estimator",
+        "ms": "/ms/alatan/kos-cuci-menyeluruh",
+        "zh": "/zh/gongju/深度清洁费用"
+      }
+    },
+    {
+      "slug": "move-in-out-cleaning-calculator",
+      "heading": "Move-In / Move-Out Cleaning Calculator",
+      "urls": {
+        "en": "/tools/move-in-out-cleaning-calculator",
+        "ms": "/ms/alatan/cuci-pindah-masuk-keluar",
+        "zh": "/zh/gongju/搬家清洁计算器"
+      }
     }
   ],
   "counts": {
@@ -280,7 +568,7 @@
     "areaPages": 37,
     "problemPages": 77,
     "blogPosts": 18,
-    "indexablePages": 3200
+    "indexablePages": 3296
   },
   "pricingPrinciple": "fair standard Malaysian pricing, itemised and confirmed in writing before work begins",
   "hours": "Mon–Sun · 9:00 AM – 6:00 PM (Everyday Open)",
