@@ -10,9 +10,9 @@
 
 ## PROJECT STATUS OVERVIEW
 
-- **Current Session Phase**: COMPLETE — Production Certified (Phases 1–9 Finished & Verified)  
-- **Last Completed Task**: Phase 9 (Comprehensive Testing & Production Build Verification — `npm run lint`, `npm run type-check`, `npm run build`)  
-- **Next Highest-Priority Pending Task**: Monitor user analytics and conversion metrics on `/search` and modal launcher  
+- **Current Session Phase**: Phases 1–9 Complete; Phase 10 (Analytics) Implemented  
+- **Last Completed Task**: Phase 10 — Smart Service Finder Conversion Analytics & UTM Source Tracking  
+- **Next Highest-Priority Pending Task**: Monitor live GA4 events (`smart_finder_*`) once GA is connected; `[!]` Business decisions for `aircond-wiring-circuit` and `smart-home-automation`; Future: AI chat widget  
 
 ---
 
@@ -129,6 +129,22 @@
 
 ---
 
+## PHASE 10 — Smart Service Finder Conversion Analytics
+- [x] Add dedicated GA4 analytics events to `lib/analytics.ts` for all Smart Finder interactions (`smart_finder_search`, `smart_finder_card_expand`, `smart_finder_calculator_click`, `smart_finder_quote_click`, `smart_finder_no_results`, `smart_finder_popular_tag`, `smart_finder_related_click`)
+- [x] Wire search tracking with 600ms debounce in `SmartServiceFinder` component to avoid per-keystroke noise
+- [x] Track popular tag clicks with dedicated `smart_finder_popular_tag` event and source attribution
+- [x] Track no-result queries separately via `smart_finder_no_results` for gap analysis
+- [x] Track card expand/detail view events (`smart_finder_card_expand`) with service slug, title, and score
+- [x] Track calculator link clicks (`smart_finder_calculator_click`) with service and calculator identifiers
+- [x] Track quote CTA clicks (`smart_finder_quote_click`) with service slug
+- [x] Track related-service chip navigation (`smart_finder_related_click`) with from/to service slugs
+- [x] Add lead-source indicator `"[From: Smart Service Finder]"` appended to WhatsApp CTA pre-filled text
+- [x] All events push to `window.dataLayer` (GTM-compatible) and call `window.gtag` (GA4-compatible) with structured params
+- [x] Verified `npm run lint` — 0 errors, 0 warnings
+- [x] Verified `npm run build` — all pages compile successfully
+
+---
+
 ## CHANGE & VERIFICATION LOG
 
 ### 2026-08-08 — Session 001
@@ -150,3 +166,18 @@
   - `npx eslint lib/smart-finder-index.ts lib/smart-finder-search.ts components/ui/smart-service-finder.tsx components/ui/smart-finder-modal.tsx app/(en)/page.tsx app/(en)/search/page.tsx app/(en)/services/page.tsx components/ui/navbar.tsx --max-warnings=0` — PASS (0 errors, 0 warnings)
   - `npm run build` — PASS (4,341 static pages compiled and verified successfully)
 - **Status**: Production-Ready.
+
+### 2026-08-08 — Session 002
+- **Completed**: Phase 10 — Smart Service Finder Conversion Analytics & UTM Source Tracking.
+- **Files Modified**:
+  - `lib/analytics.ts` — Added 7 new GA4 event functions: `trackSmartFinderSearch`, `trackSmartFinderCardExpand`, `trackSmartFinderCalculatorClick`, `trackSmartFinderQuoteClick`, `trackSmartFinderNoResults`, `trackSmartFinderPopularTag`, `trackSmartFinderRelatedClick`. All push to `window.dataLayer` (GTM) and call `window.gtag` (GA4) with structured params.
+  - `components/ui/smart-service-finder.tsx` — Wired all 7 analytics events into the interactive component with debounced search tracking (600ms), popular-tag source attribution, no-result gap analysis, card expand/collapse tracking, calculator/quote/WhatsApp CTA click tracking, and related-service navigation tracking. Added lead-source indicator `[From: Smart Service Finder]` to WhatsApp pre-filled message.
+- **Verification Performed**:
+  - `npx eslint lib/analytics.ts components/ui/smart-service-finder.tsx --max-warnings=0` — PASS (0 errors, 0 warnings)
+  - `npm run build` — PASS (all pages compile successfully)
+- **Status**: Production-Ready.
+- **Remaining Work**:
+  - `[!]` Needs Business Decision: `aircond-wiring-circuit` (HVAC licensing verification) and `smart-home-automation` (supplier SLA verification)
+  - `[ ]` Monitor live GA4 `smart_finder_*` events once Google Analytics Measurement ID is configured (`NEXT_PUBLIC_GA_ID`)
+  - **Future**: Integrate AI-powered natural language chat widget using `public/llms-full.txt` context
+  - **Future**: Expand standalone estimator wizards for any new specialist services approved by management

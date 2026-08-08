@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useRef, useEffect, useCallback } from "react";
 import Link from "next/link";
 import {
   Search,
@@ -21,7 +21,7 @@ import {
 import { searchSmartServices, type SmartSearchResult } from "@/lib/smart-finder-search";
 import { useLang } from "@/context/lang-context";
 import { getWhatsAppLink } from "@/lib/whatsapp";
-import { trackWhatsAppClick } from "@/lib/analytics";
+import { trackWhatsAppClick, trackSmartFinderSearch, trackSmartFinderCardExpand, trackSmartFinderCalculatorClick, trackSmartFinderQuoteClick, trackSmartFinderNoResults, trackSmartFinderPopularTag, trackSmartFinderRelatedClick } from "@/lib/analytics";
 
 type TabType = "included" | "materials" | "process" | "faqs";
 
@@ -225,7 +225,13 @@ function ResultCard({ result, copy, onSelectRelated }: ResultCardProps) {
       <div className="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between">
         <button
           type="button"
-          onClick={() => setExpanded((prev) => !prev)}
+          onClick={() => {
+            const next = !expanded;
+            setExpanded(next);
+            if (next) {
+              trackSmartFinderCardExpand({ serviceSlug: service.serviceSlug, serviceTitle: service.title, score });
+            }
+          }}
           className="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-[#0EA5E9] hover:text-[#0284C7] transition-colors"
           aria-expanded={expanded}
         >
@@ -367,7 +373,10 @@ function ResultCard({ result, copy, onSelectRelated }: ResultCardProps) {
             <button
               key={rel.slug}
               type="button"
-              onClick={() => onSelectRelated(rel.title)}
+              onClick={() => {
+                trackSmartFinderRelatedClick({ fromService: service.serviceSlug, toService: rel.slug });
+                onSelectRelated(rel.title);
+              }}
               className="rounded-lg bg-slate-100 px-2.5 py-1 text-xs font-bold text-[#075985] hover:bg-[#E0F2FE] hover:text-[#0284C7] transition-colors"
             >
               {rel.title}
@@ -380,7 +389,7 @@ function ResultCard({ result, copy, onSelectRelated }: ResultCardProps) {
       <div className="mt-6 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
         {/* Primary CTA: WhatsApp */}
         <a
-          href={service.ctaUrl}
+          href={`${service.ctaUrl}${encodeURIComponent("\n\n[From: Smart Service Finder]")}`}
           target="_blank"
           rel="nofollow noopener noreferrer"
           onClick={() => trackWhatsAppClick({ page: "smart_service_finder_card", service: service.title })}
@@ -393,6 +402,7 @@ function ResultCard({ result, copy, onSelectRelated }: ResultCardProps) {
         {/* Secondary CTA: Quote Link */}
         <Link
           href={service.quoteUrl}
+          onClick={() => trackSmartFinderQuoteClick({ serviceSlug: service.serviceSlug, serviceTitle: service.title })}
           className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-slate-50 px-5 py-3.5 text-sm font-extrabold text-[#075985] hover:bg-slate-100 transition-colors"
         >
           <span>{copy.getQuote}</span>
@@ -403,6 +413,7 @@ function ResultCard({ result, copy, onSelectRelated }: ResultCardProps) {
         {service.calculators.length > 0 && (
           <Link
             href={service.calculators[0].url}
+            onClick={() => trackSmartFinderCalculatorClick({ serviceSlug: service.serviceSlug, calculatorSlug: service.calculators[0].slug, calculatorUrl: service.calculators[0].url })}
             className="inline-flex items-center justify-center gap-2 rounded-xl border border-[#0EA5E9]/30 bg-[#E0F2FE]/40 px-4 py-3.5 text-xs font-extrabold text-[#0284C7] hover:bg-[#E0F2FE] transition-colors"
           >
             <Calculator className="h-4 w-4" />
@@ -418,14 +429,47 @@ export function SmartServiceFinder({ initialQuery = "" }: { initialQuery?: strin
   const { lang } = useLang();
   const [query, setQuery] = useState(initialQuery);
   const copy = FINDER_COPY[lang] || FINDER_COPY.en;
+  const lastTrackedQuery = useRef<string>("");
+  const searchSource = useRef<"input" | "popular_tag" | "related_service">("input");
 
   const searchResponse = useMemo(() => {
     return searchSmartServices(query, lang);
   }, [query, lang]);
 
-  const handleSelectTag = (tag: string) => {
+  // ── Debounced search analytics ───────────────────────────────────────
+  // Track search queries after a short debounce so we don't fire on every
+  // keystroke, only when the user pauses typing.
+  useEffect(() => {
+    const trimmed = query.trim();
+    if (!trimmed || trimmed === lastTrackedQuery.current) return;
+    const timer = setTimeout(() => {
+      lastTrackedQuery.current = trimmed;
+      trackSmartFinderSearch({
+        query: trimmed,
+        resultCount: searchResponse.results.length,
+        lang,
+        source: searchSource.current,
+      });
+      // Reset source back to default after tracking
+      searchSource.current = "input";
+      // Track no-results separately for easier filtering in GA
+      if (searchResponse.results.length === 0) {
+        trackSmartFinderNoResults({ query: trimmed, lang });
+      }
+    }, 600);
+    return () => clearTimeout(timer);
+  }, [query, searchResponse.results.length, lang]);
+
+  const handleSelectTag = useCallback((tag: string) => {
+    searchSource.current = "popular_tag";
+    trackSmartFinderPopularTag({ tag, lang });
     setQuery(tag);
-  };
+  }, [lang]);
+
+  const handleSelectRelated = useCallback((title: string) => {
+    searchSource.current = "related_service";
+    setQuery(title);
+  }, []);
 
   const hasSearch = query.trim().length > 0;
   const hasResults = searchResponse.results.length > 0;
@@ -522,7 +566,7 @@ export function SmartServiceFinder({ initialQuery = "" }: { initialQuery?: strin
                       result={result}
                       lang={lang}
                       copy={copy}
-                      onSelectRelated={handleSelectTag}
+                      onSelectRelated={handleSelectRelated}
                     />
                   ))}
                 </div>
