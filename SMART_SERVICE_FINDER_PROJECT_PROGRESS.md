@@ -10,9 +10,9 @@
 
 ## PROJECT STATUS OVERVIEW
 
-- **Current Session Phase**: Phases 1–9 Complete; Phase 10 (Analytics) Implemented  
-- **Last Completed Task**: Phase 10 — Smart Service Finder Conversion Analytics & UTM Source Tracking  
-- **Next Highest-Priority Pending Task**: Monitor live GA4 events (`smart_finder_*`) once GA is connected; `[!]` Business decisions for `aircond-wiring-circuit` and `smart-home-automation`; Future: AI chat widget  
+- **Current Session Phase**: Phases 1–10 Complete; Phase 11 (Localization & SEO Integration) Implemented  
+- **Last Completed Task**: Phase 11 — Localized Services Directory Integration, SearchAction Query Param, Dead Code Cleanup  
+- **Next Highest-Priority Pending Task**: `[!]` Business decisions for `aircond-wiring-circuit` and `smart-home-automation`; Monitor live GA4 events; Future: AI chat widget  
 
 ---
 
@@ -129,6 +129,15 @@
 
 ---
 
+## PHASE 11 — Localized Directory Integration & Search SEO
+- [x] Integrate SmartServiceFinder into `LocaleServicesIndex` component (shared by `/ms/services` and `/zh/services`) — embedded between the hero heading and the services grid, matching the English `/services` page layout
+- [x] Connect Google `SearchAction` schema to actual search results — `/search` page now reads `?q=` query parameter and passes it to `SmartServiceFinder` via `initialQuery` prop (async server component wrapper)
+- [x] Remove dead code: deleted unused `components/ui/site-search.tsx` (old basic search, fully replaced by Smart Service Finder)
+- [x] Verified `npm run lint` — 0 errors, 0 warnings
+- [x] Verified `npm run build` — all pages compile successfully
+
+---
+
 ## PHASE 10 — Smart Service Finder Conversion Analytics
 - [x] Add dedicated GA4 analytics events to `lib/analytics.ts` for all Smart Finder interactions (`smart_finder_search`, `smart_finder_card_expand`, `smart_finder_calculator_click`, `smart_finder_quote_click`, `smart_finder_no_results`, `smart_finder_popular_tag`, `smart_finder_related_click`)
 - [x] Wire search tracking with 600ms debounce in `SmartServiceFinder` component to avoid per-keystroke noise
@@ -181,3 +190,14 @@
   - `[ ]` Monitor live GA4 `smart_finder_*` events once Google Analytics Measurement ID is configured (`NEXT_PUBLIC_GA_ID`)
   - **Future**: Integrate AI-powered natural language chat widget using `public/llms-full.txt` context
   - **Future**: Expand standalone estimator wizards for any new specialist services approved by management
+
+### 2026-08-08 — Session 003
+- **Completed**: Phase 11 — Localized Services Directory Integration, SearchAction Query Param Support, Dead Code Cleanup.
+- **Files Modified**:
+  - `components/sections/locale-services-index.tsx` — Integrated `<SmartServiceFinder />` between hero heading and services grid. Both `/ms/services` and `/zh/services` now show the trilingual Smart Service Finder above their service cards.
+  - `app/(en)/search/page.tsx` — Connected Google `SearchAction` schema to actual search results. Added `SearchPageFinder` async server wrapper that resolves `searchParams.q` and passes it to `<SmartServiceFinder initialQuery={q} />`. URLs like `/search?q=plumbing` now pre-fill the search box.
+  - `components/ui/site-search.tsx` — **DELETED** (dead code, fully replaced by Smart Service Finder; zero imports across the entire codebase).
+- **Verification Performed**:
+  - `eslint` — PASS (0 errors, 0 warnings)
+  - `npm run build` — PASS (all pages compile successfully)
+- **Status**: Production-Ready.
