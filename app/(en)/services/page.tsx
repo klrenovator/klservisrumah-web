@@ -2,6 +2,7 @@ import React from "react";
 import { buildMetadata } from "@/lib/seo-meta";
 import { ServicesGrid } from "@/components/sections/services-grid";
 import { ServicesDirectoryHero } from "@/components/sections/services-directory-hero";
+import { SmartServiceFinder } from "@/components/ui/smart-service-finder";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { WhyChooseUs } from "@/components/sections/why-choose-us";
 import { ServiceComparisonTable } from "@/components/service-comparison-table";
@@ -33,6 +34,10 @@ export default function ServicesPage() {
       <section className="bg-gradient-to-b from-[#F0F9FF] to-white py-16 sm:py-20">
         <ServicesDirectoryHero />
       </section>
+
+      <div className="container-default py-10 sm:py-14">
+        <SmartServiceFinder />
+      </div>
 
       <ServicesGrid />
 

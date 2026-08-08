@@ -10,6 +10,7 @@ import { getWhatsAppLink } from "@/lib/whatsapp";
 import { trackWhatsAppClick } from "@/lib/analytics";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { AllPagesMenu } from "@/components/ui/all-pages-menu";
+import { SmartFinderModal } from "@/components/ui/smart-finder-modal";
 import { Logo } from "@/components/ui/logo";
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
@@ -99,9 +100,9 @@ export function Navbar() {
         </div>
         {PRIMARY_LINKS.slice(1).map(item => <NavLink key={item.href} href={item.href} active={pathname === item.href || pathname.startsWith(`${item.href}/`)} label={t(item.key)} />)}
       </div>
-      <div className="hidden items-center gap-3 lg:flex"><LanguageSwitcher /><HeaderWhatsAppActions /></div>
+      <div className="hidden items-center gap-3 lg:flex"><SmartFinderModal /><LanguageSwitcher /><HeaderWhatsAppActions /></div>
       {/* Keep WhatsApp between the language selector and the all-pages menu on every phone size. */}
-      <div className="flex shrink-0 items-center gap-1.5 min-[430px]:gap-3 lg:hidden"><LanguageSwitcher /><HeaderWhatsAppActions compact /><AllPagesMenu /></div>
+      <div className="flex shrink-0 items-center gap-1.5 min-[430px]:gap-2 lg:hidden"><SmartFinderModal /><LanguageSwitcher /><HeaderWhatsAppActions compact /><AllPagesMenu /></div>
     </nav>
   </header>;
 }

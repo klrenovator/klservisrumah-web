@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
-import { Search as SearchIcon, ArrowRight } from "lucide-react";
-import { SiteSearch } from "@/components/ui/site-search";
+import { ArrowRight } from "lucide-react";
+import { SmartServiceFinder } from "@/components/ui/smart-service-finder";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { servicesData } from "@/config/services-data";
 import { areaPages } from "@/config/area-data";
@@ -10,15 +10,13 @@ import { buildMetadata } from "@/lib/seo-meta";
 
 export const metadata: Metadata = {
   ...buildMetadata({
-    title: "Search — Services, Areas, Problems & Guides",
+    title: "Smart Service Finder — Instant 3-Language Home Service Discovery",
     description:
-      "Search KL Servis Rumah for home services, coverage areas, common problems, guides and pricing across Kuala Lumpur and Selangor.",
+      "Search KL Servis Rumah for home services, coverage areas, common problems, guides, pricing, and cost calculators across Kuala Lumpur and Selangor in English, Malay, or Chinese.",
     path: "/search"
   }),
   robots: {
-    // Utility page powered by client-side filtering — indexing it would create
-    // thin, near-duplicate results pages. Links are still followed.
-    index: false,
+    index: true,
     follow: true
   }
 };
@@ -35,47 +33,29 @@ const POPULAR_QUERIES = [
 ];
 
 export default function SearchPage() {
-
   return (
     <>
+      <Breadcrumbs items={[{ label: "Smart Service Finder", href: "/search" }]} />
 
-      <Breadcrumbs items={[{ label: "Search", href: "/search" }]} />
-
-      <section className="relative bg-gradient-to-b from-slate-50 to-white section border-b border-slate-100">
-        <div className="container-default max-w-4xl">
-          <div className="text-center mb-10">
-            <span className="eyebrow inline-flex items-center gap-2">
-              <SearchIcon className="w-3.5 h-3.5" /> Search KL Servis Rumah
-            </span>
-            <h1 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#075985] tracking-tight text-balance">
-              Find the right service, area, or answer in seconds
-            </h1>
-            <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
-              Type a service (painting, plumbing, waterproofing), an area (Petaling
-              Jaya, Puchong), or a symptom (leaking bathroom, peeling paint) — we&apos;ll
-              take you straight to the right page.
-            </p>
-          </div>
-
-          <div className="max-w-2xl mx-auto">
-            <Suspense fallback={<div className="h-12 rounded-xl bg-slate-100 animate-pulse" />}>
-              <SiteSearch />
-            </Suspense>
-          </div>
+      <section className="relative bg-gradient-to-b from-slate-900 to-slate-950 py-16 sm:py-24 border-b border-slate-800">
+        <div className="container-default max-w-6xl">
+          <Suspense fallback={<div className="h-40 rounded-3xl bg-slate-800 animate-pulse" />}>
+            <SmartServiceFinder />
+          </Suspense>
 
           <div className="mt-14">
-            <p className="text-center text-xs font-black uppercase tracking-widest text-slate-500 mb-5">
-              Popular searches
+            <p className="text-center text-xs font-black uppercase tracking-widest text-slate-400 mb-5">
+              Popular service shortcuts
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {POPULAR_QUERIES.map((q) => (
                 <Link
                   key={q.href}
                   href={q.href}
-                  className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:border-sky-300 hover:bg-sky-50 hover:text-sky-700 transition-all"
+                  className="inline-flex items-center gap-1.5 rounded-full border border-slate-700 bg-slate-800/80 px-4 py-2 text-sm font-semibold text-slate-200 hover:border-sky-400 hover:bg-sky-500/20 hover:text-white transition-all"
                 >
                   {q.label}
-                  <ArrowRight className="w-3.5 h-3.5" />
+                  <ArrowRight className="w-3.5 h-3.5 text-sky-400" />
                 </Link>
               ))}
             </div>

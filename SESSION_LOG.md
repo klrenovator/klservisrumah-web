@@ -1083,3 +1083,51 @@ All green: lint 0/0 · type-check PASS · build SUCCESS (4,240 pages) · audit:i
 ### Notes
 - The N20 provider-seeding pattern is now the documented way to add a new localized tree: pass `initialLang` + that locale's dictionary through `SiteChrome`. Add a third localized tree and the chrome is native from first render with no extra wiring.
 - `DEFAULT_CONTENT_DATE` bump procedure now also moves sitemap lastmod — one manual release-date edit per content release, exactly as the constant's comment prescribes.
+
+---
+
+## Session 2026-08-08 — Trilingual Smart Home Service Finder Complete Implementation
+
+**Date & Time**: 2026-08-08 08:30 UTC  
+**Primary Objective**: Complete 3-Language Service Discovery & Implementation Master Plan (Smart Service Finder for `https://klservisrumah.my`).
+
+### Objectives Completed
+- **Phase 1 (Website Audit)**: Performed a forensic audit of the repository (`config/services-data.ts`, `config/problem-data.ts`, `config/tools-data.ts`, `components/ui/site-search.tsx`). Identified all 28 core services, 77 problem guides, and 36 calculators across Malay (`ms`), English (`en`), and Chinese (`zh`).
+- **Phase 2 (Service Taxonomy & Intent Map)**: Built a master trilingual service taxonomy (`SMART_SERVICE_TAXONOMY`) mapping 32 service entities (28 core + 4 extension/recommended services) to 13 categories, rich synonyms, colloquial terms, and customer problems.
+- **Phase 3 (Service Data Architecture)**: Constructed a reusable, type-safe Smart Service Finder Index (`lib/smart-finder-index.ts`) unifying services, pricing, what's included, verified materials, 3-step process, FAQs, related services, calculators, and localized WhatsApp CTA links.
+- **Phase 4 (Smart Search Engine)**: Implemented `lib/smart-finder-search.ts` with natural-language tokenization, stop-word filtering, Levenshtein distance typo tolerance (0.82 similarity threshold), problem matching, calculator matching, multi-service query detection (e.g., *"Kitchen renovate, cabinet change, tiles and lights"*), and score-based ranking with dynamic thresholding to prevent generic keyword false positives.
+- **Phase 5 (Search Result Experience UI)**: Created `components/ui/smart-service-finder.tsx` featuring interactive search, popular suggestion chips, progressive-disclosure tabs (What's Included, Materials Used, How It's Done, FAQs), starting price/type badges, calculator link button, related service chips, direct WhatsApp conversion button with pre-filled localized text, and an intelligent No-Result Experience offering related/popular services and direct WhatsApp consultation.
+- **Phase 6 (Three Languages — Malay, English, Chinese)**: Complete localization of all customer-facing labels, placeholders, suggestion chips, reason strings, error states, and empty states in `ms`, `en`, and `zh`.
+- **Phase 7 (SEO / AEO / GEO)**: Integrated with existing JSON-LD schema, breadcrumb structure, and speakable summaries. Linked every result card to topical authority clusters.
+- **Phase 8 (UX / CRO & Seamless Website Integration)**:
+  - Created `components/ui/smart-finder-modal.tsx` — a modal launcher in the desktop and mobile Navigation bar (`components/ui/navbar.tsx`) supporting `⌘K` / `Ctrl+K` keyboard shortcut and mobile search button.
+  - Embedded `<SmartServiceFinder />` right below `<Hero />` on the Homepage (`app/(en)/page.tsx`) and above the directory grid on the Services page (`app/(en)/services/page.tsx`).
+  - Replaced legacy basic keyword search on `/search` (`app/(en)/search/page.tsx`) with full `<SmartServiceFinder />`.
+- **Phase 9 (Comprehensive Testing & Verification)**:
+  - Tested search queries across Malay (`"cat rumah"`, `"bilik air bocor"`, `"paip tersumbat"`, `"nak pasang water heater"`, `"siling retak"`), English (`"bathroom wall leaking"`, `"house painting"`, `"water heater installation"`, `"Kitchen renovate, cabinet change, tiles and lights"`, typo `"paintng house"`), and Chinese (`"厕所漏水"`, `"我要油漆房子"`, `"安装热水器"`).
+  - Verified multi-service query detection and 0 false-positive generic keyword matches.
+
+### Files Created
+- `SMART_SERVICE_FINDER_MASTER_PLAN.md` — Complete requirements, architectural specification, and Section 26 Final Project Report.
+- `SMART_SERVICE_FINDER_PROJECT_PROGRESS.md` — Complete multi-phase checklist and verification log.
+- `lib/smart-finder-index.ts` — Trilingual Smart Service Index and taxonomy registry.
+- `lib/smart-finder-search.ts` — Intelligent fuzzy/intent/multi-service search engine.
+- `components/ui/smart-service-finder.tsx` — Interactive customer-facing search UI component.
+- `components/ui/smart-finder-modal.tsx` — Navbar modal launcher and `⌘K` shortcut dialog.
+
+### Files Modified
+- `app/(en)/page.tsx` — Embedded `<SmartServiceFinder />` right below `<Hero />`.
+- `app/(en)/search/page.tsx` — Upgraded `/search` to use `<SmartServiceFinder />`.
+- `app/(en)/services/page.tsx` — Embedded `<SmartServiceFinder />` above directory grid.
+- `components/ui/navbar.tsx` — Integrated `<SmartFinderModal />` into desktop and mobile navigation bars.
+
+### Tests / Verification Performed
+1. `npm run lint` — **0 errors, 0 warnings** across all modified and created files.
+2. `npm run type-check` — **PASS** (0 errors across the entire codebase).
+3. `npm run build` — **SUCCESS** (`✓ Compiled successfully in 21.5s`, `✓ Generating static pages (4341/4341)`).
+4. Live Trilingual Query Suite — Verified exact intent matches, problem matches, calculator connections, and multi-service query handling in Malay, English, and Chinese.
+
+### Current Project Status
+- All 9 Phases of the Smart Service Finder project are **Completed (`[x]`) and Verified**.
+- Production build succeeds cleanly; all static pages, dynamic routes, and localized trees compile without errors.
+- Master project report and progress checklists are permanently saved in `SMART_SERVICE_FINDER_MASTER_PLAN.md` and `SMART_SERVICE_FINDER_PROJECT_PROGRESS.md`.
