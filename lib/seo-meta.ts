@@ -162,7 +162,10 @@ export function optimizeDescription(rawDescription: string): string {
   );
   if (sentenceEnd >= minKeep) return value.slice(0, sentenceEnd + 1).trim();
 
-  return `${clampAtBoundary(value, max - 1)}…`;
+  // Do not write a literal ellipsis into the source description. Search engines
+  // apply device-specific truncation themselves; an authored "…" makes the
+  // snippet look incomplete even when the full meta tag is displayed.
+  return `${clampAtBoundary(value, max - 1).replace(/[.!?]+$/, "")}.`;
 }
 
 /** Normalise any path into a leading-slash, no-trailing-slash form. */

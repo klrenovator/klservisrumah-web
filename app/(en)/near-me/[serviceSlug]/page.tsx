@@ -24,7 +24,8 @@ export async function generateMetadata(props: { params: Promise<{ serviceSlug: s
   return buildMetadata({
     title: `${service.title} Near Me in KL & Selangor`,
     description: `Find ${service.title.toLowerCase()} near you in KL & Selangor. Check service areas, suburbs, upfront pricing and WhatsApp dispatch.`,
-    path: `/near-me/${service.slug}`
+    path: `/near-me/${service.slug}`,
+    image: service.heroImage
   });
 }
 

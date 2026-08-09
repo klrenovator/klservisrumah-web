@@ -1,5 +1,5 @@
 import React from "react";
-import { buildMetadata } from "@/lib/seo-meta";
+import { buildMetadata, clampAtBoundary } from "@/lib/seo-meta";
 import { notFound } from "next/navigation";
 import { servicesData } from "@/config/services-data";
 import { clusterPages } from "@/config/content-data";
@@ -34,17 +34,20 @@ export async function generateMetadata(props: { params: Promise<{ slug: string; 
   if (!service) return {};
   if (cluster) {
     return buildMetadata({
-    title: cluster.title,
-    description: cluster.intro,
-    path: `/services/${service.slug}/${cluster.slug}`
-  });
+      title: cluster.title,
+      description: cluster.intro,
+      path: `/services/${service.slug}/${cluster.slug}`,
+      image: service.heroImage,
+      keywords: [cluster.title, `${cluster.title} KL`, service.title]
+    });
   }
   if (!sub) return {};
+  const serviceSummary = clampAtBoundary(sub.desc, 96).replace(/[.!?]+$/, "");
   return buildMetadata({
     title: `${sub.name} in KL & Selangor — ${sub.price}`,
-    // `sub.price` is already phrased as "From RM 16 / sq ft", so don't prefix
-    // another "from" — that rendered "pricing from From RM 16 / sq ft".
-    description: `${sub.desc} Upfront pricing ${sub.price.replace(/^From\s+/i, "from ")}, insured team, and WhatsApp booking across Kuala Lumpur and Selangor.`,
+    // Keep enough room for a complete local-benefit and CTA ending. The old
+    // template regularly cut descriptions mid-location ("across Kuala…").
+    description: `${serviceSummary}. Serving KL & Selangor. Request a clear quote on WhatsApp.`,
     path: `/services/${service.slug}/${params.subservice}`,
     image: service.heroImage,
     keywords: [sub.name, `${sub.name} KL`, `${sub.name} price`, service.title]

@@ -53,10 +53,10 @@
   },
   "home": {
     "hero": {
-      "heading1": "Perkhidmatan Rumah Premium",
-      "heading2": "Dibuat Dengan Betul",
+      "heading1": "Mengecat, Siling & Partition",
+      "heading2": "Perkhidmatan Rumah",
       "headingLocation": "di KL & Selangor",
-      "subhead": "Pekerjaan mengecat rumah, siling plaster, pembaikan kebocoran, kalis air, dan kerja tangan oleh tukang tempatan yang telah disahkan latar belakang, dengan operasi yang diinsuranskan sepenuhnya, jaminan 30 hari hingga 10 tahun mengikut perkhidmatan, dan sebut harga 100% telus sebelum kerja dimulakan.",
+      "subhead": "Servis mengecat rumah, siling dan partition, paip, kalis air serta handyman profesional di KL & Selangor, dengan sebut harga jelas sebelum kerja bermula.",
       "feature1": "Harga Tetap Pendahuluan",
       "feature2": "Pasukan Diinsuranskan Penuh",
       "feature3": "Jaminan 30 Hari hingga 10 Tahun"
@@ -241,8 +241,8 @@
     }
   },
   "services": {
-    "pageTitle": "Perkhidmatan Kami",
-    "pageSubtitle": "Perkhidmatan rumah premium merentasi Kuala Lumpur dan Selangor. Pilih perkhidmatan untuk melihat skop, harga, dan jaminan.",
+    "pageTitle": "Servis Mengecat, Siling & Rumah",
+    "pageSubtitle": "Terokai servis mengecat, siling dan partition, paip, kalis air, handyman serta penyelenggaraan rumah lain di Kuala Lumpur dan Selangor.",
     "residentialTab": "Perkhidmatan Kediaman",
     "commercialTab": "Perkhidmatan Komersial",
     "startingFrom": "Bermula dari",
@@ -253,9 +253,9 @@
     "notFound": "Perkhidmatan tidak dijumpai.",
     "backToServices": "Kembali ke semua perkhidmatan",
     "directoryEyebrow": "28 Perkhidmatan • 3 Bahasa",
-    "directoryTitle1": "Setiap Perkhidmatan Rumah Anda Perlukan",
+    "directoryTitle1": "Servis Mengecat, Siling & Rumah",
     "directoryTitle2": "di KL & Selangor",
-    "directorySubtitle": "Daripada pengecatan dan paip kepada pengubahsuaian penuh, elektrik, pembersihan, dan keselamatan — temui harga telus di depan, jaminan sebenar, dan ketersediaan hari yang sama di seluruh KL & Selangor.",
+    "directorySubtitle": "Terokai servis mengecat, siling dan partition, paip, kalis air, handyman serta penyelenggaraan rumah lain dengan butiran skop dan harga yang jelas.",
     "browseAll": "Semak Semua Perkhidmatan",
     "viewPricingGuide": "Lihat Panduan Harga",
     "includedSpecialities": "Termasuk Kepakaran",
@@ -608,7 +608,7 @@
     "nearMeDesc": "Pilih lokasi anda untuk melihat harga tempatan, ketersediaan dan maklumat perhubungan."
   },
   "hero": {
-    "subline": "Perkhidmatan rumah premium di KL & Selangor dengan harga adil dan telus",
+    "subline": "Servis mengecat, siling, partition dan penyelenggaraan rumah di KL & Selangor",
     "eyebrow": "Segera",
     "chipInsured": "Diinsuranskan & disahkan",
     "chipPrice": "Harga disahkan dahulu",
@@ -766,7 +766,7 @@
   },
   "location": {
     "servingBadge": "Berkhidmat di {area}",
-    "areaH1": "Perkhidmatan Rumah Premium di {area}",
+    "areaH1": "Servis Mengecat, Siling & Rumah di {area}",
     "areaSubtitle": "Perkhidmatan Mengecat, Paip, Siling Plaster, Kalis Air & Kerja Tangan Tempatan.",
     "coverageHeading": "Kawasan & Mercu Tanda Liputan di {area}",
     "immediateDispatch": "Penghantaran Segera",

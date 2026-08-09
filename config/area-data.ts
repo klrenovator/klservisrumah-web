@@ -34,9 +34,9 @@ export const areaPages: AreaDetail[] = [
     ],
     description:
       "KL Servis Rumah sends expert, background-checked craftsmen across the federal territory of Kuala Lumpur. Whether you are living in a high-rise condominium in Mont Kiara, Bangsar, or KLCC, or managing a shoplot or terrace house in Cheras, Sentul, or Kepong, we deliver premium home maintenance services. Our technical teams specialize in premium interior house painting with Nippon Paint, non-destructive water leak detection and repair, plaster ceiling fixes with seamless skim-coating, high-pressure PU grouting for bathroom leakage, and professional TV mounting and furniture assembly. We follow strict JMB regulations, clean up entirely post-work, and guarantee 100% transparent pricing before any work begins.",
-    metaTitle: "Expert Home Services Kuala Lumpur — KL Servis Rumah",
+    metaTitle: "Painting, Ceiling & Home Services in Kuala Lumpur",
     metaDesc:
-      "Premium painting, plumbing, plaster ceiling, waterproofing, and handyman services in Kuala Lumpur. Same-day available. Clean, reliable, and insured.",
+      "Professional painting, ceiling & partition, plumbing, waterproofing and handyman services in Kuala Lumpur. View local coverage and request a clear quote.",
     faqs: [
       {
         q: "Do you service high-rise condos and offices in Kuala Lumpur?",
@@ -71,7 +71,7 @@ export const areaPages: AreaDetail[] = [
     ],
     description:
       "Serving all of Petaling Jaya, KL Servis Rumah provides premier home improvements and repairs. From residential bungalows in Section 14 and SS2 to modern apartments in Kota Damansara, Bandar Utama, and Ara Damansara, our multi-skilled technicians are near you. We specialize in interior and exterior house painting using weather-resistant Dulux coatings, repairing sagging ceiling boards, partition wall installations for home offices, resolving low water pressure issues, toilet bowl installations, and IKEA furniture assemblies. Our work is fully insured, and our technicians are background-checked for your family's safety.",
-    metaTitle: "Top-Rated Painting & Handyman Petaling Jaya — PJ Home Services",
+    metaTitle: "Painting, Ceiling & Handyman Services Petaling Jaya",
     metaDesc:
       "Need painting, plumbing, ceiling, waterproofing, or handyman repairs in PJ? KL Servis Rumah delivers tidy, certified tradesmen with upfront pricing.",
     faqs: [
@@ -182,7 +182,7 @@ export const areaPages: AreaDetail[] = [
       "As the state capital of Selangor, Shah Alam hosts a wide variety of properties, from large semi-Ds in Bukit Jelutong and Kota Kemuning to multi-storey warehouses. KL Servis Rumah provides expert care for Shah Alam properties. Our services include high-durability exterior wall painting to withstand the tropical sun and rain, roof tile leakage repairs, gypsum partitions for study areas, toilet bowl and water heater fittings, and mounting curtains and shelves. We use laser leveling for all shelves and cabinets to ensure clean, perfect horizontal alignments.",
     metaTitle: "Professional Painter & Plumber Shah Alam — KL Servis Rumah",
     metaDesc:
-      "Best home maintenance in Shah Alam. Plaster ceiling repair, exterior house painting, toilet repairs, and TV mounting. Background-verified local pros.",
+      "Home maintenance in Shah Alam for plaster ceiling repair, exterior house painting, toilet repairs and TV mounting. View coverage and request a quote.",
     faqs: [
       {
         q: "Do you service Setia Alam and Bukit Jelutong?",
@@ -363,7 +363,7 @@ export const areaPages: AreaDetail[] = [
       "Mont Kiara is one of Kuala Lumpur's densest luxury condominium clusters, and KL Servis Rumah handles the specific demands of high-rise living here: strict JMB access rules, tight lift booking windows, marble-floor protection, and premium finishes that don't tolerate sloppy workmanship. We're regulars in 1 Mont Kiara, Verve Suites, Kiara 163 and Publika-area residences, delivering interior repaints with low-VOC washable paints, invisible drywall repairs, TV wall mounting on drywall or concrete, and PU-grouting waterproofing for master bathroom leaks.",
     metaTitle: "Mont Kiara Home Services — Painter, Plumber & Handyman KL",
     metaDesc:
-      "Premium home services in Mont Kiara condos: low-VOC painting, marble-safe plumbing, PU waterproofing & handyman work. Insured, JMB-friendly, English-speaking.",
+      "Painting, plumbing, PU waterproofing and handyman services for Mont Kiara condos, with low-VOC paint options, floor protection and JMB-aware scheduling.",
     faqs: [
       {
         q: "Are you approved to work in Mont Kiara luxury condominiums?",
@@ -865,9 +865,9 @@ export const areaPages: AreaDetail[] = [
     ],
     description:
       "KL Servis Rumah provides premium, clean home maintenance for Desa ParkCity condos, landed homes and retail suites. Work in this area often requires careful floor protection, lift booking, quiet work hours and high finishing standards. We handle low-VOC repainting, plumbing fixture replacement, water leak diagnosis, ceiling board repair, cabinet and door adjustments, TV mounting and small electrical jobs with discreet, tidy teams.",
-    metaTitle: "Desa ParkCity Home Services — Premium Painter & Handyman",
+    metaTitle: "Desa ParkCity Painting, Ceiling & Handyman Services",
     metaDesc:
-      "Premium painting, plumbing, ceiling, waterproofing and handyman services in Desa ParkCity, The Waterfront and Plaza Arkadia. Clean insured crews.",
+      "Painting, plumbing, ceiling, waterproofing and handyman services in Desa ParkCity, The Waterfront and Plaza Arkadia, with tidy work and clear quotes.",
     faqs: [
       {
         q: "Do you work in Desa ParkCity condos and landed homes?",

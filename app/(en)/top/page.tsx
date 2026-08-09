@@ -4,8 +4,8 @@ import { topPages } from "@/config/content-data";
 import { genericToHubItems, getHubMetadata, getItemListSchema } from "@/lib/hub";
 import { getSpeakableSchema } from "@/lib/seo";
 
-const title = "Best Home Service Criteria KL";
-const description = "Educational best-of criteria for evaluating contractors, methods and materials without fake rankings or paid placements.";
+const title = "Home Service Comparison Criteria KL";
+const description = "Educational criteria for comparing contractors, methods and materials in KL without fabricated rankings or paid placements.";
 const path = "/top";
 const items = genericToHubItems(topPages, path);
 

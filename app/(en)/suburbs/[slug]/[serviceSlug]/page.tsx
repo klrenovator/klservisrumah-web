@@ -31,9 +31,12 @@ export async function generateMetadata(props: { params: Promise<{ slug: string; 
   const areaTwin = areaPages.find((area) => area.slug === suburb.slug);
 
   return buildMetadata({
-    title: `Best ${service.title} in ${suburb.name} — Trusted Near Me`,
-    description: `Professional ${service.title} in ${suburb.name}. ${suburb.metaDesc}`,
+    // "Local" distinguishes these supporting suburb guides from an `/areas`
+    // canonical twin even when both pages mention the same place and service.
+    title: `Local ${suburb.name} ${service.title}`,
+    description: `Book ${service.title.toLowerCase()} in ${suburb.name}. View local service scope and upfront pricing, then request a clear quote on WhatsApp.`,
     path: `/suburbs/${suburb.slug}/${service.slug}`,
+    image: service.heroImage,
     canonicalPath: areaTwin
       ? `/areas/${areaTwin.slug}/${service.slug}`
       : `/suburbs/${suburb.slug}/${service.slug}`

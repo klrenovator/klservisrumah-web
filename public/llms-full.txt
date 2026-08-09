@@ -28,7 +28,7 @@ permanent handoff rule "SSM NOT TO BE SHOWN PUBLICALLY ON WEBSITE"._
 ## Service Offerings (28 service categories)
 All prices are the published starting prices shown on the live service pages. Final pricing is confirmed in an itemised written quote before work begins.
 
-### Premium Painting Services
+### House Painting Services
 - Page: https://www.klservisrumah.my/services/painting
 - Starting price: RM 450
 - Warranty: 1-Year Paint Peeling & Craftsmanship Guarantee
@@ -38,7 +38,7 @@ All prices are the published starting prices shown on the live service pages. Fi
 - Wall Crack & Moisture Repair — From RM 180
 - Cost guide: https://www.klservisrumah.my/services/painting/cost
 
-### Professional Plumbing Solutions
+### Plumbing & Leak Repair Services
 - Page: https://www.klservisrumah.my/services/plumbing
 - Starting price: RM 150
 - Warranty: 30-Day Joint Seal & Workmanship Warranty
@@ -48,7 +48,7 @@ All prices are the published starting prices shown on the live service pages. Fi
 - Water Heater & Pump Installation — From RM 180
 - Cost guide: https://www.klservisrumah.my/services/plumbing/cost
 
-### Plaster Ceiling & Partitions
+### Ceiling & Partition Services
 - Page: https://www.klservisrumah.my/services/ceiling
 - Starting price: RM 220
 - Warranty: 90-Day Structural Sagging & Crack-Free Warranty
@@ -58,7 +58,7 @@ All prices are the published starting prices shown on the live service pages. Fi
 - Cornice & L-Box Concealed Light Trough — On Quote
 - Cost guide: https://www.klservisrumah.my/services/ceiling/cost
 
-### Premium Waterproofing & Leak Control
+### Waterproofing & Leak Repair Services
 - Page: https://www.klservisrumah.my/services/waterproofing
 - Starting price: RM 300
 - Warranty: Up to 5-Year Written Leak-Free Guarantee
@@ -68,7 +68,7 @@ All prices are the published starting prices shown on the live service pages. Fi
 - Wall Dampness & Efflorescence Repair — From RM 350
 - Cost guide: https://www.klservisrumah.my/services/waterproofing/cost
 
-### Expert Handyman Services
+### Handyman Services
 - Page: https://www.klservisrumah.my/services/handyman
 - Starting price: RM 100
 - Warranty: 30-Day Workmanship Safety Warranty

@@ -28,8 +28,9 @@ export async function generateMetadata(props: { params: Promise<{ slug: string; 
     // the ranking term on a near-me page, so it must survive truncation.
     // Leading with it yields 0 duplicates across all 1,036 combinations.
     title: `${area.name} ${service.title} Near Me`,
-    description: `Looking for ${service.title.toLowerCase()} near me in ${area.name}? KL Servis Rumah covers ${area.landmarks.slice(0, 4).join(", ")} with WhatsApp booking.`,
-    path: `/areas/${area.slug}/${service.slug}/near-me`
+    description: `${service.title} near ${area.name}. Check local coverage and pricing, then request a clear quote on WhatsApp.`,
+    path: `/areas/${area.slug}/${service.slug}/near-me`,
+    image: service.heroImage
   });
 }
 

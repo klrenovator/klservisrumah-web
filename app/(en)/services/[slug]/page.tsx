@@ -13,6 +13,7 @@ import { TrustBar } from "@/components/trust-bar";
 import { StickyBookButton } from "@/components/sticky-book-button";
 import { LocaleServiceView } from "@/components/sections/locale-service-view";
 import { localizedServiceLanguageUrls } from "@/components/sections/locale-service-page";
+import { getServiceSeo } from "@/config/service-seo";
 
 export const dynamicParams = false;
 
@@ -26,10 +27,14 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   const params = await props.params;
   const service = servicesData[params.slug];
   if (!service) return {};
+  const seo = getServiceSeo(service.slug, "en", {
+    title: service.metaTitle,
+    description: service.metaDesc
+  });
 
   return buildMetadata({
-    title: service.metaTitle,
-    description: service.metaDesc,
+    title: seo.title,
+    description: seo.description,
     path: `/services/${service.slug}`,
     image: service.heroImage,
     // Real hreflang cluster with the H3-pilot localized twins.

@@ -95,7 +95,7 @@ export const suburbPages: SuburbDetail[] = rawSuburbs.map((item) => {
     landmarks: [...landmarks],
     commonIssues: serviceIssues,
     nearbySuburbs,
-    metaTitle: `Best ${name} Home Services Near Me — Trusted Painter & Plumber`,
+    metaTitle: `${name} Home Services Near Me — Painting, Ceiling & Plumbing`,
     metaDesc: `Trusted and professional painting, plumbing, ceiling, waterproofing and handyman services in ${name}. Transparent fixed quotes, insured teams and WhatsApp booking.`,
     faqs: [
       {

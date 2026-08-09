@@ -921,7 +921,7 @@ WhatsApp us to book — early September is the sweet spot.
     excerpt: "Samsung, Yale, Kaadas, Philips or Lockin? Here's how our locksmiths compare the top 5 smart locks sold in Malaysia — features, install, warranty, real-world reliability.",
     category: "Guide",
     coverImage: "/hero-locksmith.svg",
-    metaTitle: "Best Smart Lock Malaysia 2026 — Top Brands Compared",
+    metaTitle: "Smart Lock Brands in Malaysia — 2026 Comparison Guide",
     metaDesc: "Which smart lock is best for your Malaysian home in 2026? Compare Samsung, Yale, Kaadas, Philips & Lockin — real-world review from KL Servis Rumah locksmiths.",
     content: `
 Smart locks are now standard on new condo handovers and increasingly common on landed home upgrades in KL. But the market has 30+ brands — most of them cheap OEMs from the same 3 Chinese factories — and the wrong choice means a lock that fails in 18 months.

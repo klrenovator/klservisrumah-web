@@ -4,6 +4,7 @@ import { servicesData } from "@/config/services-data";
 import { getLocalizedService } from "@/lib/service-i18n";
 import { buildMetadata } from "@/lib/seo-meta";
 import { LocaleServicePage, localizedServiceLanguageUrls } from "@/components/sections/locale-service-page";
+import { getServiceSeo } from "@/config/service-seo";
 
 /**
  * Real, indexable Bahasa Malaysia service pages — part of the H3 pilot that
@@ -22,9 +23,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const service = servicesData[slug];
   if (!service) return {};
   const localized = getLocalizedService(service, "ms");
-  return buildMetadata({
+  const seo = getServiceSeo(service.slug, "ms", {
     title: localized.metaTitle,
-    description: localized.metaDesc,
+    description: localized.metaDesc
+  });
+  return buildMetadata({
+    title: seo.title,
+    description: seo.description,
     path: `/ms/services/${slug}`,
     image: service.heroImage,
     languageUrls: localizedServiceLanguageUrls(slug),

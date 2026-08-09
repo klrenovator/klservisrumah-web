@@ -23,9 +23,10 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   const service = servicesData[slug];
   if (!service) return {};
   return buildMetadata({
-    title: `Emergency ${service.title} KL & Selangor — Fast Dispatch`,
-    description: `Urgent ${service.title.toLowerCase()} help in KL & Selangor. Response priority for leaks, unsafe ceilings, urgent handyman and water damage cases.`,
-    path: `/services/${slug}/emergency`
+    title: `Urgent ${service.title} KL & Selangor`,
+    description: `Need urgent ${service.title.toLowerCase()} in KL & Selangor? Check priority availability, immediate steps, pricing factors and WhatsApp booking details.`,
+    path: `/services/${slug}/emergency`,
+    image: service.heroImage
   });
 }
 
