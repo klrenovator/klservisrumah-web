@@ -56,6 +56,8 @@ export function RecentJobsTicker() {
         >
           <X className="h-3.5 w-3.5" />
         </button>
+          </div>
+        </div>
       </div>
     </section>
   );
