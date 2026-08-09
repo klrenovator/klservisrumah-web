@@ -44,7 +44,7 @@ export const clusterPages: GenericContentPage[] = [
   ["plumbing", "emergency-plumbing-kl", "Emergency Plumbing in KL", "A fast-response guide for burst pipes, major leaks, blocked toilets, and urgent water shut-off actions.", ["Main valve checklist", "Flood reduction", "Priority dispatch", "Permanent repair options"]],
   ["ceiling", "ceiling-installation-kl", "Ceiling Installation in KL", "A practical ceiling installation hub covering gypsum boards, GI frames, L-boxes, downlight openings, and skim finishing.", ["Laser-level framing", "Moisture-resistant boards", "Joint tape and skim coat", "Downlight coordination"]],
   ["ceiling", "repair-kl", "Ceiling Repair in KL", "A guide to cracked, stained, sagging, or water-damaged ceilings and when to replace boards instead of patching only.", ["Leak-source checks", "Board replacement", "Mold-safe removal", "Seamless repainting"]],
-  ["ceiling", "partition-kl", "Partition Walls in KL", "A commercial and residential guide for gypsum partitions, office rooms, soundproofing, and fire-rated board options.", ["Metal tracks", "Rockwool insulation", "Door opening prep", "Smooth skim finish"]],
+  ["ceiling", "partition-kl", "Gypsum Partition Services KL & Selangor", "Gypsum partitions for homes and offices across KL & Selangor, with metal framing, soundproofing, board options and smooth skim finishing. Request a quote.", ["Metal tracks", "Rockwool insulation", "Door opening prep", "Smooth skim finish"]],
   ["waterproofing", "bathroom-kl", "Bathroom Waterproofing in KL", "A focused hub for bathroom leaks, no-hack sealing, PU grouting, full membrane replacement, and water ponding tests.", ["Leak diagnosis", "PU injection", "No-hack coating", "Full hacking membrane"]],
   ["waterproofing", "roof-kl", "Roof Waterproofing in KL", "A roof and concrete slab guide covering membranes, crack routing, ponding, UV exposure, and rainy-season leak prevention.", ["Torch-on membrane", "Acrylic coating", "Crack repair", "Drainage checks"]],
   ["waterproofing", "pu-grouting-kl", "PU Grouting in KL", "An in-depth hub on polyurethane injection for active concrete cracks and inter-floor leaks without unnecessary tile hacking.", ["Injection packers", "High-pressure pump", "Flexible PU foam", "Leak verification"]],
@@ -95,7 +95,18 @@ export const maintenancePages: GenericContentPage[] = [
   "condo-maintenance-checklist",
   "landed-house-maintenance-calendar",
   "rental-property-turnover-checklist"
-].map((slug) => ({ slug, title: slug.split("-").map((w) => w[0].toUpperCase() + w.slice(1)).join(" "), category: "Maintenance Guide", intro: "A checklist-style maintenance plan for Malaysian homes, with tasks grouped by urgency, frequency, and whether DIY or professional help is safer.", bullets: ["Monthly checks", "Quarterly prevention", "Rainy-season readiness", "When to book inspection"], faqs: faq(slug.replace(/-/g, " ")), faqTopic: slug.replace(/-/g, " ") }));
+].map((slug) => {
+  const title = slug.split("-").map((w) => w[0].toUpperCase() + w.slice(1)).join(" ");
+  return {
+    slug,
+    title,
+    category: "Maintenance Guide",
+    intro: `${title} provides a practical checklist for Malaysian homes, with tasks grouped by urgency, frequency, rainy-season needs and when professional help is safer.`,
+    bullets: ["Monthly checks", "Quarterly prevention", "Rainy-season readiness", "When to book inspection"],
+    faqs: faq(slug.replace(/-/g, " ")),
+    faqTopic: slug.replace(/-/g, " ")
+  };
+});
 
 export const seasonalPages: GenericContentPage[] = [
   "home-prep-rainy-season-kl",
@@ -106,7 +117,18 @@ export const seasonalPages: GenericContentPage[] = [
   "year-end-renovation-planning",
   "hari-raya-painting-promo",
   "monsoon-leak-emergency-guide"
-].map((slug) => ({ slug, title: slug.split("-").map((w) => w[0].toUpperCase() + w.slice(1)).join(" "), category: "Seasonal", intro: "Season-aware planning advice for KL and Selangor homeowners, timed around Malaysian weather, holidays, and peak service windows.", bullets: ["Book early before peak weeks", "Prioritize leaks before repainting", "Protect furniture and flooring", "Confirm work hours with building management"], faqs: faq(slug.replace(/-/g, " ")), faqTopic: slug.replace(/-/g, " ") }));
+].map((slug) => {
+  const title = slug.split("-").map((w) => w[0].toUpperCase() + w.slice(1)).join(" ");
+  return {
+    slug,
+    title,
+    category: "Seasonal",
+    intro: `${title} offers season-aware planning for KL and Selangor homes, with practical timing around Malaysian weather, holidays and busy service periods.`,
+    bullets: ["Book early before peak weeks", "Prioritize leaks before repainting", "Protect furniture and flooring", "Confirm work hours with building management"],
+    faqs: faq(slug.replace(/-/g, " ")),
+    faqTopic: slug.replace(/-/g, " ")
+  };
+});
 
 export const commercialPages: GenericContentPage[] = Object.values(servicesData).map((service) => ({
   slug: `${service.slug}-services-kl`,
@@ -146,17 +168,25 @@ export const brandPages: GenericContentPage[] = [
 ].map(([slug, title, relatedServiceSlug]) => ({ slug, title, category: "Brand Guide", intro: `${title} explains when this brand or material category is suitable, how it should be applied, and what homeowners should check before approving a quote.`, bullets: ["Compatibility with the surface", "Correct preparation method", "Warranty and care considerations", "No claim of exclusive partnership unless documented"], faqs: faq(title), faqTopic: title, relatedServiceSlug: relatedServiceSlug as keyof typeof servicesData }));
 
 export const topPages: GenericContentPage[] = [
-  "best-house-painters-kl-2026",
-  "best-plumbers-kl",
-  "best-ceiling-contractors-kl",
-  "best-waterproofing-contractors-kl",
-  "best-handyman-kl",
-  "best-paint-brands-malaysia-2026",
-  "best-waterproofing-methods-malaysia",
-  "bathroom-waterproofing-options",
-  "ceiling-materials-malaysia",
-  "handyman-services-every-homeowner-needs"
-].map((slug) => ({ slug, title: slug.split("-").map((w) => w[0].toUpperCase() + w.slice(1)).join(" "), category: "Top Considerations", intro: "An educational list of criteria, not a fabricated ranking. Use it to compare providers, methods, materials, and quote quality fairly.", bullets: ["Transparent pricing", "Workmanship warranty", "Material quality", "Clean site handover", "Relevant local experience"], faqs: faq(slug.replace(/-/g, " ")), faqTopic: slug.replace(/-/g, " ") }));
+  ["best-house-painters-kl-2026", "How to Compare House Painters in KL (2026)"],
+  ["best-plumbers-kl", "How to Compare Plumbers in KL"],
+  ["best-ceiling-contractors-kl", "How to Compare Ceiling Contractors in KL"],
+  ["best-waterproofing-contractors-kl", "How to Compare Waterproofing Contractors in KL"],
+  ["best-handyman-kl", "How to Compare Handyman Services in KL"],
+  ["best-paint-brands-malaysia-2026", "Paint Brands in Malaysia: 2026 Guide"],
+  ["best-waterproofing-methods-malaysia", "Waterproofing Methods in Malaysia"],
+  ["bathroom-waterproofing-options", "Bathroom Waterproofing Options"],
+  ["ceiling-materials-malaysia", "Ceiling Materials in Malaysia"],
+  ["handyman-services-every-homeowner-needs", "Useful Handyman Services for Homeowners"]
+].map(([slug, title]) => ({
+  slug,
+  title,
+  category: "Top Considerations",
+  intro: `${title} explains practical criteria for comparing providers, methods, materials, workmanship terms and quote quality without presenting a fabricated ranking.`,
+  bullets: ["Transparent pricing", "Workmanship warranty", "Material quality", "Clean site handover", "Relevant local experience"],
+  faqs: faq(title),
+  faqTopic: title
+}));
 
 export const answerPages: GenericContentPage[] = Object.values(servicesData).map((service) => ({
   slug: `${service.slug}-ultimate-guide`,

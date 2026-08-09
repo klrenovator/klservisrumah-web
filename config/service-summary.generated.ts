@@ -20,10 +20,10 @@ export type ServiceSummary = {
 export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
   "painting": {
     "slug": "painting",
-    "title": "Premium Painting Services",
+    "title": "House Painting Services",
     "startPrice": "RM 450",
     "icon": "paint-brush",
-    "tagline": "Professional interior & exterior painting for residential and commercial spaces. Smooth finish, premium paints, zero-mess protection. From RM 450.",
+    "tagline": "Interior, exterior and wall repainting for homes, offices and shops across KL & Selangor, with surface preparation, floor and furniture protection, and clean handover. From RM 450.",
     "subServices": [
       {
         "name": "Interior House Painting"
@@ -41,7 +41,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
     "warranty": "1-Year Paint Peeling & Craftsmanship Guarantee",
     "i18n": {
       "ms": {
-        "title": "Perkhidmatan Pengecatan Premium",
+        "title": "Perkhidmatan Mengecat Rumah",
         "tagline": "Pengecatan interior & eksterior profesional untuk ruang kediaman dan komersial. Kemasan licin, cat premium, perlindungan tanpa kotor. Dari RM 450.",
         "subServices": [
           {
@@ -60,7 +60,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
         "warranty": "Jaminan Pengelupasan Cat & Kerja 1 Tahun"
       },
       "zh": {
-        "title": "优质油漆服务",
+        "title": "房屋油漆服务",
         "tagline": "为住宅和商业空间提供专业室内外油漆服务。光滑饰面，优质涂料，全程无尘保护。从 RM 450 起。",
         "subServices": [
           {
@@ -82,10 +82,10 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
   },
   "plumbing": {
     "slug": "plumbing",
-    "title": "Professional Plumbing Solutions",
+    "title": "Plumbing & Leak Repair Services",
     "startPrice": "RM 150",
     "icon": "droplet",
-    "tagline": "Reliable plumbing repairs, water leakage fixing, and new fixtures installation. SIRIM-certified parts, rapid response. From RM 150.",
+    "tagline": "Plumbing and leak repair for pipes, taps, toilets, drains, water heaters and pumps across KL & Selangor, with the scope confirmed before work. From RM 150.",
     "subServices": [
       {
         "name": "Water Leakage Diagnosis & Repair"
@@ -103,7 +103,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
     "warranty": "30-Day Joint Seal & Workmanship Warranty",
     "i18n": {
       "ms": {
-        "title": "Penyelesaian Paip Profesional",
+        "title": "Perkhidmatan Paip & Baiki Kebocoran",
         "tagline": "Pembaikan paip yang boleh dipercayai, pembaikan kebocoran air, dan pemasangan lekapan baru. Alat ganti bertauliah SIRIM, respons pantas. Dari RM 150.",
         "subServices": [
           {
@@ -122,7 +122,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
         "warranty": "Jaminan Pengedap Sendi & Kerja 30 Hari"
       },
       "zh": {
-        "title": "专业水管解决方案",
+        "title": "水管与漏水维修服务",
         "tagline": "可靠的水管维修、漏水修复与新洁具安装。SIRIM 认证配件，快速响应。从 RM 150 起。",
         "subServices": [
           {
@@ -144,10 +144,10 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
   },
   "ceiling": {
     "slug": "ceiling",
-    "title": "Plaster Ceiling & Partitions",
+    "title": "Ceiling & Partition Services",
     "startPrice": "RM 220",
     "icon": "layout-grid",
-    "tagline": "Professional plaster ceiling repair, gypsum board partitions, cornice installation, and aesthetic wall crack sealing. From RM 220.",
+    "tagline": "Plaster ceiling installation and repair, gypsum partitions, cornices, L-box features and skim finishing for homes and commercial spaces across KL & Selangor. From RM 220.",
     "subServices": [
       {
         "name": "Water-Damaged Ceiling Repair"
@@ -165,7 +165,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
     "warranty": "90-Day Structural Sagging & Crack-Free Warranty",
     "i18n": {
       "ms": {
-        "title": "Siling Plaster & Partition",
+        "title": "Perkhidmatan Siling & Partition",
         "tagline": "Pembaikan siling plaster profesional, partition papan gypsum, pemasangan kornis, dan pengedapan retak dinding estetik. Dari RM 220.",
         "subServices": [
           {
@@ -184,7 +184,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
         "warranty": "Jaminan Melendut Struktur & Bebas Retak 90 Hari"
       },
       "zh": {
-        "title": "石膏天花板与隔墙",
+        "title": "天花板与隔墙服务",
         "tagline": "专业石膏天花板维修、石膏板隔墙、线板安装以及美观的墙面裂缝密封。从 RM 220 起。",
         "subServices": [
           {
@@ -206,10 +206,10 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
   },
   "waterproofing": {
     "slug": "waterproofing",
-    "title": "Premium Waterproofing & Leak Control",
+    "title": "Waterproofing & Leak Repair Services",
     "startPrice": "RM 300",
     "icon": "shield",
-    "tagline": "Professional bathroom, roof, balcony, and concrete slab waterproofing. Polyurethane (PU) grouting, chemical membrane barrier. From RM 300.",
+    "tagline": "Bathroom, roof, balcony and concrete waterproofing plus PU injection grouting for leaks across KL & Selangor, selected after assessing the cause. From RM 300.",
     "subServices": [
       {
         "name": "PU High-Pressure Injection Grouting"
@@ -227,7 +227,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
     "warranty": "Up to 5-Year Written Leak-Free Guarantee",
     "i18n": {
       "ms": {
-        "title": "Kalis Air Premium & Kawalan Kebocoran",
+        "title": "Perkhidmatan Kalis Air & Baiki Kebocoran",
         "tagline": "Kalis air profesional bilik air, bumbung, balkoni, dan slab konkrit. Grouting Poliuretana (PU), penghadang membran kimia. Dari RM 300.",
         "subServices": [
           {
@@ -246,7 +246,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
         "warranty": "Jaminan Bebas Bocor Bertulis Sehingga 5 Tahun"
       },
       "zh": {
-        "title": "优质防水与漏水控制",
+        "title": "防水与漏水维修服务",
         "tagline": "专业浴室、屋顶、阳台与混凝土板防水。聚氨酯（PU）灌浆，化学防水层。从 RM 300 起。",
         "subServices": [
           {
@@ -268,10 +268,10 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
   },
   "handyman": {
     "slug": "handyman",
-    "title": "Expert Handyman Services",
+    "title": "Handyman Services",
     "startPrice": "RM 100",
     "icon": "wrench",
-    "tagline": "Professional door & lock repair, TV mounting, furniture assembly, curtain tracks, cabinet adjustments, and general office maintenance. From RM 100.",
+    "tagline": "TV mounting, door and lock repair, furniture assembly, curtain and shelf installation, cabinet adjustments and general maintenance across KL & Selangor. From RM 100.",
     "subServices": [
       {
         "name": "Heavy TV Wall Mounting"
@@ -289,7 +289,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
     "warranty": "30-Day Workmanship Safety Warranty",
     "i18n": {
       "ms": {
-        "title": "Perkhidmatan Tukang Pakar",
+        "title": "Perkhidmatan Handyman",
         "tagline": "Pembaikan pintu & kunci profesional, pemasangan TV, pemasangan perabot, trek langsir, pelarasan kabinet, dan penyelenggaraan pejabat am. Dari RM 100.",
         "subServices": [
           {
@@ -308,7 +308,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
         "warranty": "Jaminan Keselamatan Kerja 30 Hari"
       },
       "zh": {
-        "title": "专业维修师傅服务",
+        "title": "家居杂工服务",
         "tagline": "专业门锁维修、电视挂墙、家具组装、窗帘轨道、橱柜调整以及一般办公室维护。从 RM 100 起。",
         "subServices": [
           {

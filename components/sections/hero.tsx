@@ -21,7 +21,7 @@ const HERO_IMAGES = [
   },
   {
     src: "/hero/home-services-plumbing-kl.jpg",
-    alt: "Certified Malaysian plumber fixing a modern chrome kitchen tap in a Kuala Lumpur home"
+    alt: "Malaysian plumber repairing a modern chrome kitchen tap in a Kuala Lumpur home"
   },
   {
     src: "/hero/home-services-waterproofing-kl.jpg",

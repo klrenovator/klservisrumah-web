@@ -53,10 +53,10 @@
   },
   "home": {
     "hero": {
-      "heading1": "Premium Home Services",
-      "heading2": "Done Right",
+      "heading1": "Painting, Ceiling & Partition",
+      "heading2": "Home Services",
       "headingLocation": "in KL & Selangor",
-      "subhead": "Professional house painting, plaster ceiling, leak repair, waterproofing, and handyman work by background-verified local tradesmen, with fully insured operations, 30-day to 10-year warranties depending on service, and 100% transparent quotes before work begins.",
+      "subhead": "Professional house painting, ceiling and partition work, plumbing, waterproofing and handyman services across KL & Selangor, with clear quotes confirmed before work begins.",
       "feature1": "Upfront Fixed Pricing",
       "feature2": "Fully Insured Team",
       "feature3": "30-Day to 10-Year Warranty"
@@ -241,8 +241,8 @@
     }
   },
   "services": {
-    "pageTitle": "Our Services",
-    "pageSubtitle": "Premium home services across Kuala Lumpur and Selangor. Pick a service to view scope, pricing, and warranty.",
+    "pageTitle": "Painting, Ceiling & Home Services",
+    "pageSubtitle": "Explore painting, ceiling and partition, plumbing, waterproofing, handyman and other home maintenance services across Kuala Lumpur and Selangor.",
     "residentialTab": "Residential Services",
     "commercialTab": "Commercial Services",
     "startingFrom": "Starting from",
@@ -253,9 +253,9 @@
     "notFound": "Service not found.",
     "backToServices": "Back to all services",
     "directoryEyebrow": "28 Services • 3 Languages",
-    "directoryTitle1": "Every Home Service You Need",
+    "directoryTitle1": "Painting, Ceiling & Home Services",
     "directoryTitle2": "in KL & Selangor",
-    "directorySubtitle": "From painting and plumbing to full renovation, electrical, cleaning, and security — discover upfront pricing, real warranties, and same-day availability across KL & Selangor.",
+    "directorySubtitle": "Explore painting, ceiling and partition, plumbing, waterproofing, handyman and other home maintenance services, with clear scope and pricing details.",
     "browseAll": "Browse All Services",
     "viewPricingGuide": "View Pricing Guide",
     "includedSpecialities": "Included Specialities",
@@ -608,7 +608,7 @@
     "nearMeDesc": "Select your location to see local pricing, availability, and contact information."
   },
   "hero": {
-    "subline": "Premium home services in KL & Selangor at fair, upfront pricing",
+    "subline": "Painting, ceiling, partition and home maintenance across KL & Selangor",
     "eyebrow": "Instant dispatch",
     "chipInsured": "Insured & verified",
     "chipPrice": "Price confirmed first",
@@ -766,7 +766,7 @@
   },
   "location": {
     "servingBadge": "Serving {area}",
-    "areaH1": "Premium Home Services in {area}",
+    "areaH1": "Painting, Ceiling & Home Services in {area}",
     "areaSubtitle": "Local Painting, Plumbing, Plaster Ceiling, Waterproofing & Handyman Services.",
     "coverageHeading": "Coverage Suburbs & Landmarks in {area}",
     "immediateDispatch": "Immediate Dispatch",

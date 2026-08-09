@@ -43,8 +43,8 @@ export const servicesData: Record<string, ServiceDetail> = {
   // ── 1. PAINTING SERVICES ──────────────────────────────────────────────
   "painting": {
     slug: "painting",
-    title: "Premium Painting Services",
-    tagline: "Professional interior & exterior painting for residential and commercial spaces. Smooth finish, premium paints, zero-mess protection. From RM 450.",
+    title: "House Painting Services",
+    tagline: "Interior, exterior and wall repainting for homes, offices and shops across KL & Selangor, with surface preparation, floor and furniture protection, and clean handover. From RM 450.",
     description:
       "KL Servis Rumah provides high-end painting services across Kuala Lumpur and Selangor. Our professional painters specialize in interior wall painting, exterior weatherproof coating, ceiling restoration, and commercial shopfront branding. We use only premium paint brands like Nippon Paint and Dulux to ensure long-lasting durability, exceptional depth of color, and high scrub resistance. Before applying a single drop of paint, our team undergoes extensive preparation work, including filling wall cracks, treating water marks, sanding surfaces to a perfectly smooth finish, and sealing damp masonry. We protect your home, furniture, and flooring completely using heavy-duty plastic drop sheets and specialized masking tapes, guaranteeing a zero-mess handover. Let our certified painters revitalize your home or commercial office with a modern, flawless aesthetic that adds real value to your property.",
     startPrice: "RM 450",
@@ -83,7 +83,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     warranty: "1-Year Paint Peeling & Craftsmanship Guarantee",
     i18n: {
       ms: {
-        title: "Perkhidmatan Pengecatan Premium",
+        title: "Perkhidmatan Mengecat Rumah",
         tagline: "Pengecatan interior & eksterior profesional untuk ruang kediaman dan komersial. Kemasan licin, cat premium, perlindungan tanpa kotor. Dari RM 450.",
         description:
           "KL Servis Rumah menyediakan perkhidmatan pengecatan bertaraf tinggi di seluruh Kuala Lumpur dan Selangor. Pasukan pengecat profesional kami pakar dalam pengecatan dinding interior, salutan tahan cuaca eksterior, pemulihan siling, dan penjenamaan kedai komersial. Kami hanya menggunakan jenama cat premium seperti Nippon Paint dan Dulux untuk memastikan ketahanan jangka panjang, kepekatan warna yang luar biasa, dan rintangan lelasan tinggi. Sebelum menyapu setitik cat, pasukan kami menjalankan kerja persediaan menyeluruh, termasuk mengisi retakan dinding, merawat kesan air, mengamplas permukaan ke kemasan licin sempurna, dan menyekat masonri lembap. Kami melindungi rumah, perabot, dan lantai anda sepenuhnya menggunakan kain penutup plastik berat dan pita pelekat khas, menjamin serahan tanpa kekotoran. Biarkan pengecat bertauliah kami menghidupkan semula rumah atau pejabat komersial anda dengan estetika moden yang sempurna dan menambah nilai sebenar kepada hartanah anda.",
@@ -120,7 +120,7 @@ export const servicesData: Record<string, ServiceDetail> = {
         warranty: "Jaminan Pengelupasan Cat & Kerja 1 Tahun"
       },
       zh: {
-        title: "优质油漆服务",
+        title: "房屋油漆服务",
         tagline: "为住宅和商业空间提供专业室内外油漆服务。光滑饰面，优质涂料，全程无尘保护。从 RM 450 起。",
         description:
           "KL Servis Rumah 在吉隆坡与雪兰莪全境提供高端油漆服务。我们的专业油漆师专精于室内墙面粉刷、外墙防风雨涂层、天花板翻新以及商业店面品牌形象工程。我们只使用 Nippon Paint 和 Dulux 等优质涂料品牌，确保持久耐用、色彩饱满且高度耐擦洗。在涂上第一滴油漆之前，我们的团队会进行全面的预备工作，包括填补墙面裂缝、处理水渍、打磨表面至完全平滑，以及密封潮湿砖体。我们使用重型塑料防护布和专用遮蔽胶带全面保护您的房屋、家具与地板，确保交付时零污损。让我们经过认证的油漆师以现代、完美无瑕的美感为您的住宅或商业办公室注入新生命，切实提升物业价值。",
@@ -162,8 +162,8 @@ export const servicesData: Record<string, ServiceDetail> = {
   // ── 2. PLUMBING SERVICES ──────────────────────────────────────────────
   "plumbing": {
     slug: "plumbing",
-    title: "Professional Plumbing Solutions",
-    tagline: "Reliable plumbing repairs, water leakage fixing, and new fixtures installation. SIRIM-certified parts, rapid response. From RM 150.",
+    title: "Plumbing & Leak Repair Services",
+    tagline: "Plumbing and leak repair for pipes, taps, toilets, drains, water heaters and pumps across KL & Selangor, with the scope confirmed before work. From RM 150.",
     description:
       "At KL Servis Rumah, we provide fast, licensed, and transparent plumbing services for residential and commercial properties across Kuala Lumpur and Selangor. From frustrating water leakage behind bathroom walls to blocked toilet drains and burst water pipes, our experienced plumbers diagnose and resolve issues with long-term, SIRIM-certified solutions. We utilize advanced electronic pipe-leak detectors to pinpoint hidden pipe damage beneath concrete slabs without unnecessary wall smashing. Whether you need a simple tap replacement, kitchen sink unclogging, water heater installation, or a heavy-duty booster pump setup, we guarantee professional craftsmanship, transparent upfront pricing, and clean, sanitary executions.",
     startPrice: "RM 150",
@@ -202,7 +202,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     warranty: "30-Day Joint Seal & Workmanship Warranty",
     i18n: {
       ms: {
-        title: "Penyelesaian Paip Profesional",
+        title: "Perkhidmatan Paip & Baiki Kebocoran",
         tagline: "Pembaikan paip yang boleh dipercayai, pembaikan kebocoran air, dan pemasangan lekapan baru. Alat ganti bertauliah SIRIM, respons pantas. Dari RM 150.",
         description:
           "Di KL Servis Rumah, kami menyediakan perkhidmatan paip yang pantas, berlesen, dan telus untuk hartanah kediaman dan komersial di seluruh Kuala Lumpur dan Selangor. Daripada kebocoran air yang membingungkan di sebalik dinding bilik air kepada saliran tandas tersumbat dan paip air pecah, jurutera paip berpengalaman kami mendiagnosis dan menyelesaikan masalah dengan penyelesaian jangka panjang bertauliah SIRIM. Kami menggunakan pengesan kebocoran paip elektronik canggih untuk mengesan kerosakan paip tersembunyi di bawah slab konkrit tanpa memecah dinding secara tidak perlu. Sama ada anda memerlukan penggantian paip air mudah, penyahsumbatan singki dapur, pemasangan pemanas air, atau persediaan pam penambah tugas berat, kami menjamin kemahiran profesional, harga telus terlebih dahulu, dan pelaksanaan bersih dan bersanitasi.",
@@ -239,7 +239,7 @@ export const servicesData: Record<string, ServiceDetail> = {
         warranty: "Jaminan Pengedap Sendi & Kerja 30 Hari"
       },
       zh: {
-        title: "专业水管解决方案",
+        title: "水管与漏水维修服务",
         tagline: "可靠的水管维修、漏水修复与新洁具安装。SIRIM 认证配件，快速响应。从 RM 150 起。",
         description:
           "在 KL Servis Rumah，我们为吉隆坡与雪兰莪的住宅及商业物业提供快速、持牌、透明的水管服务。从浴室墙内令人头疼的漏水，到厕所排水管堵塞与水管爆裂，我们经验丰富的水管工能诊断并以长期、SIRIM 认证的方案解决问题。我们使用先进的电子管道漏水探测器，精准定位混凝土板下隐藏的管道损坏，无需不必要地砸墙。无论您需要简单更换水龙头、疏通厨房水槽、安装热水器，还是设置重型增压泵，我们都保证专业工艺、透明的事先报价，以及干净卫生的施工。",
@@ -281,8 +281,8 @@ export const servicesData: Record<string, ServiceDetail> = {
   // ── 3. CEILING & PARTITION SERVICES ──────────────────────────────────────
   "ceiling": {
     slug: "ceiling",
-    title: "Plaster Ceiling & Partitions",
-    tagline: "Professional plaster ceiling repair, gypsum board partitions, cornice installation, and aesthetic wall crack sealing. From RM 220.",
+    title: "Ceiling & Partition Services",
+    tagline: "Plaster ceiling installation and repair, gypsum partitions, cornices, L-box features and skim finishing for homes and commercial spaces across KL & Selangor. From RM 220.",
     description:
       "KL Servis Rumah specializes in high-quality plaster ceiling installations, water-damaged ceiling repair, structural gypsum board partitions, and architectural office walls across Kuala Lumpur and Selangor. Whether you are dividing a large commercial office space into private rooms, installing a modern residential plaster ceiling with warm concealed LED light troughs, or repairing a sagging plaster ceiling damaged by an upper-floor water leak, our expert craftsmen guarantee flawless, flat, and structurally sound finishes. We use lightweight, fire-rated, and moisture-resistant gypsum boards supported by sturdy galvanized iron (GI) metal grids to prevent future sagging or cracking, delivering an immaculate, paint-ready surface.",
     startPrice: "RM 220",
@@ -321,7 +321,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     warranty: "90-Day Structural Sagging & Crack-Free Warranty",
     i18n: {
       ms: {
-        title: "Siling Plaster & Partition",
+        title: "Perkhidmatan Siling & Partition",
         tagline: "Pembaikan siling plaster profesional, partition papan gypsum, pemasangan kornis, dan pengedapan retak dinding estetik. Dari RM 220.",
         description:
           "KL Servis Rumah pakar dalam pemasangan siling plaster berkualiti tinggi, pembaikan siling rosak air, partition papan gypsum struktur, dan dinding pejabat seni bina di seluruh Kuala Lumpur dan Selangor. Sama ada anda membahagikan ruang pejabat komersial besar kepada bilik peribadi, memasang siling plaster kediaman moden dengan lekuk lampu LED tersembunyi yang hangat, atau membaiki siling plaster melendut yang rosak akibat kebocoran air tingkat atas, tukang mahir kami menjamin kemasan yang sempurna, rata, dan kukuh dari segi struktur. Kami menggunakan papan gypsum ringan, bertaraf tahan api, dan tahan lembapan yang disokong oleh grid logam besi bergalvani (GI) yang kukuh untuk mengelakkan melendut atau retak pada masa depan, menghasilkan permukaan sedia dicat yang sempurna.",
@@ -358,7 +358,7 @@ export const servicesData: Record<string, ServiceDetail> = {
         warranty: "Jaminan Melendut Struktur & Bebas Retak 90 Hari"
       },
       zh: {
-        title: "石膏天花板与隔墙",
+        title: "天花板与隔墙服务",
         tagline: "专业石膏天花板维修、石膏板隔墙、线板安装以及美观的墙面裂缝密封。从 RM 220 起。",
         description:
           "KL Servis Rumah 专精于吉隆坡与雪兰莪全境的高品质石膏天花板安装、水损天花板维修、结构性石膏板隔墙以及建筑办公室墙面工程。无论您是要将大型商业办公空间划分为独立房间、为住宅安装带有温馨隐藏式 LED 灯槽的现代石膏天花板，还是要修复因楼上漏水而受损下垂的石膏天花板，我们的专业工匠都保证完美、平整、结构稳固的成品。我们使用轻质、防火、防潮的石膏板，并由坚固的镀锌铁（GI）金属网架支撑，防止未来下垂或开裂，打造完美无瑕、可直接上漆的表面。",
@@ -400,8 +400,8 @@ export const servicesData: Record<string, ServiceDetail> = {
   // ── 4. WATERPROOFING SERVICES ───────────────────────────────────────────
   "waterproofing": {
     slug: "waterproofing",
-    title: "Premium Waterproofing & Leak Control",
-    tagline: "Professional bathroom, roof, balcony, and concrete slab waterproofing. Polyurethane (PU) grouting, chemical membrane barrier. From RM 300.",
+    title: "Waterproofing & Leak Repair Services",
+    tagline: "Bathroom, roof, balcony and concrete waterproofing plus PU injection grouting for leaks across KL & Selangor, selected after assessing the cause. From RM 300.",
     description:
       "Prevent structural damage, concrete cancer, and hazardous mold growth with expert waterproofing and leak containment services from KL Servis Rumah. Serving residential and commercial properties in Kuala Lumpur and Selangor, we specialize in high-tech leak repairs and durable membrane systems. Over time, bathroom floor tiles, balcony concrete slabs, and clay roof tiles develop minor cracks, letting water seep slowly into the ceiling below. We offer cutting-edge non-destructive Polyurethane (PU) High-Pressure Grouting, which injects specialized expanding foam directly into cracks to seal leaks instantly from the inside without hacking up your luxury tiles. For long-term protection, we install heavy-duty multi-layered cementitious, acrylic, and torch-on membrane systems designed to withstand the tropical weather and structural expansion of Malaysia.",
     startPrice: "RM 300",
@@ -440,7 +440,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     warranty: "Up to 5-Year Written Leak-Free Guarantee",
     i18n: {
       ms: {
-        title: "Kalis Air Premium & Kawalan Kebocoran",
+        title: "Perkhidmatan Kalis Air & Baiki Kebocoran",
         tagline: "Kalis air profesional bilik air, bumbung, balkoni, dan slab konkrit. Grouting Poliuretana (PU), penghadang membran kimia. Dari RM 300.",
         description:
           "Elakkan kerosakan struktur, kanser konkrit, dan pertumbuhan kulat berbahaya dengan perkhidmatan kalis air dan pembendungan kebocoran pakar daripada KL Servis Rumah. Melayani hartanah kediaman dan komersial di Kuala Lumpur dan Selangor, kami pakar dalam pembaikan kebocoran berteknologi tinggi dan sistem membran tahan lasak. Dari semasa ke semasa, jubin lantai bilik air, slab konkrit balkoni, dan jubin bumbung tanah liat mengalami retak kecil, membenarkan air meresap perlahan ke siling di bawah. Kami menawarkan Grouting Tekanan Tinggi Poliuretana (PU) yang canggih dan tidak merosakkan, yang menyuntik buih mengembang khusus terus ke dalam retakan untuk mengedap kebocoran serta-merta dari dalam tanpa memecahkan jubin mewah anda. Untuk perlindungan jangka panjang, kami memasang sistem membran simenan, akrilik, dan torch-on berlapis-lapis tugas berat yang direka untuk menahan cuaca tropika dan pengembangan struktur Malaysia.",
@@ -477,7 +477,7 @@ export const servicesData: Record<string, ServiceDetail> = {
         warranty: "Jaminan Bebas Bocor Bertulis Sehingga 5 Tahun"
       },
       zh: {
-        title: "优质防水与漏水控制",
+        title: "防水与漏水维修服务",
         tagline: "专业浴室、屋顶、阳台与混凝土板防水。聚氨酯（PU）灌浆，化学防水层。从 RM 300 起。",
         description:
           "通过 KL Servis Rumah 的专业防水与漏水遏制服务，避免结构损坏、混凝土癌变与危险的霉菌滋生。服务于吉隆坡与雪兰莪的住宅及商业物业，我们专精于高科技漏水修复与耐用的防水层系统。随着时间推移，浴室地砖、阳台混凝土板与陶土屋顶瓦片会出现细微裂缝，让水缓慢渗入下方天花板。我们提供前沿的非破坏性聚氨酯（PU）高压灌浆技术，将特制膨胀泡沫直接注入裂缝，从内部瞬间密封漏水，无需砸开您的高级瓷砖。为实现长期保护，我们安装重型多层水泥基、丙烯酸与热熔防水层系统，专为抵御马来西亚的热带气候与结构膨胀而设计。",
@@ -519,8 +519,8 @@ export const servicesData: Record<string, ServiceDetail> = {
   // ── 5. HANDYMAN SERVICES ──────────────────────────────────────────────
   "handyman": {
     slug: "handyman",
-    title: "Expert Handyman Services",
-    tagline: "Professional door & lock repair, TV mounting, furniture assembly, curtain tracks, cabinet adjustments, and general office maintenance. From RM 100.",
+    title: "Handyman Services",
+    tagline: "TV mounting, door and lock repair, furniture assembly, curtain and shelf installation, cabinet adjustments and general maintenance across KL & Selangor. From RM 100.",
     description:
       "KL Servis Rumah provides elite, reliable, and prompt handyman services across Kuala Lumpur and Selangor. Skip the frustration of crooked shelves, loose door locks, or confusing flat-pack furniture manuals. Our multi-skilled tradesmen arrive equipped with professional tools, levels, studs detectors, and heavy-duty drywall anchors to handle all your odd jobs around the house or office. We specialize in safe wall mounting of heavy OLED TVs, secure lockset replacements, hanging heavy mirrors, custom shelving, custom blinds, wardrobe assembly (IKEA, Taobao, Harvey Norman), and scheduled corporate office maintenance. We treat your property with respect, work cleanly, and ensure every installation is perfectly level and structurally safe.",
     startPrice: "RM 100",
@@ -559,7 +559,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     warranty: "30-Day Workmanship Safety Warranty",
     i18n: {
       ms: {
-        title: "Perkhidmatan Tukang Pakar",
+        title: "Perkhidmatan Handyman",
         tagline: "Pembaikan pintu & kunci profesional, pemasangan TV, pemasangan perabot, trek langsir, pelarasan kabinet, dan penyelenggaraan pejabat am. Dari RM 100.",
         description:
           "KL Servis Rumah menyediakan perkhidmatan tukang elit, boleh dipercayai, dan segera di seluruh Kuala Lumpur dan Selangor. Elakkan kekecewaan rak yang senget, kunci pintu longgar, atau manual perabot flat-pack yang mengelirukan. Tukang pelbagai kemahiran kami tiba dengan alatan profesional, aras, pengesan stud, dan sauh dinding kering tugas berat untuk mengendalikan semua kerja pelbagai anda di sekitar rumah atau pejabat. Kami pakar dalam pemasangan dinding selamat untuk TV OLED berat, penggantian kunci selamat, penggantungan cermin berat, rak khas, bidai khas, pemasangan almari (IKEA, Taobao, Harvey Norman), dan penyelenggaraan pejabat korporat berjadual. Kami melayan hartanah anda dengan hormat, bekerja secara bersih, dan memastikan setiap pemasangan rata sempurna dan selamat dari segi struktur.",
@@ -596,7 +596,7 @@ export const servicesData: Record<string, ServiceDetail> = {
         warranty: "Jaminan Keselamatan Kerja 30 Hari"
       },
       zh: {
-        title: "专业维修师傅服务",
+        title: "家居杂工服务",
         tagline: "专业门锁维修、电视挂墙、家具组装、窗帘轨道、橱柜调整以及一般办公室维护。从 RM 100 起。",
         description:
           "KL Servis Rumah 在吉隆坡与雪兰莪全境提供顶级、可靠且迅速的维修师傅服务。摆脱歪斜置物架、松动门锁或令人困惑的平板包装家具说明书带来的烦恼。我们多技能的师傅携带专业工具、水平仪、龙骨探测器与重型石膏板锚固件，处理您家中或办公室的各类杂项工作。我们专精于重型 OLED 电视的安全挂墙、可靠的锁具更换、重型镜子悬挂、定制置物架、定制百叶窗、衣柜组装（IKEA、淘宝、Harvey Norman），以及排定的企业办公室维护。我们尊重您的物业，保持施工整洁，并确保每次安装都完全水平且结构安全。",

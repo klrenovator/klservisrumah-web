@@ -12,6 +12,8 @@
     "audit:html": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/html-quality-audit.ts",
     "audit:i18n": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/i18n-parity.ts",
     "audit:meta": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/metadata-schema-audit.ts",
+    "audit:seo-inventory": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/seo-metadata-inventory.ts",
+    "audit:seo-head": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/seo-head-audit.ts",
     "gen:rates": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/generate-rate-book.ts",
     "gen:ai-context": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/generate-ai-context.ts",
     "gen:service-summary": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/generate-service-summary.ts",

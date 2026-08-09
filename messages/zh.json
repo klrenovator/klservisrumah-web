@@ -53,10 +53,10 @@
   },
   "home": {
     "hero": {
-      "heading1": "优质家居服务",
-      "heading2": "专业到位",
-      "headingLocation": "服务于吉隆坡与雪兰莪",
-      "subhead": "由背景已查证的本地师傅提供专业油漆、石膏天花板、补漏、防水与杂工服务，全程保险，提供 30 天至 10 年保修（视项目而定），100% 透明报价，开工前确认。",
+      "heading1": "油漆、天花板与隔墙",
+      "heading2": "家居服务",
+      "headingLocation": "覆盖吉隆坡与雪兰莪",
+      "subhead": "在吉隆坡与雪兰莪提供专业房屋油漆、天花板与隔墙、水管、防水及家居杂工服务，开工前提供清楚报价。",
       "feature1": "预先固定价格",
       "feature2": "全程保险团队",
       "feature3": "30 天至 10 年保修"
@@ -241,8 +241,8 @@
     }
   },
   "services": {
-    "pageTitle": "我们的服务",
-    "pageSubtitle": "覆盖吉隆坡与雪兰莪的优质家居服务。选择一项服务以查看范围、价格与保证。",
+    "pageTitle": "油漆、天花板与家居服务",
+    "pageSubtitle": "浏览吉隆坡与雪兰莪的油漆、天花板与隔墙、水管、防水、家居杂工及其他维修服务。选择服务以查看范围与价格。",
     "residentialTab": "住宅服务",
     "commercialTab": "商业服务",
     "startingFrom": "起价",
@@ -253,9 +253,9 @@
     "notFound": "未找到该服务。",
     "backToServices": "返回所有服务",
     "directoryEyebrow": "28 项服务 • 3 种语言",
-    "directoryTitle1": "您需要的每一项家居服务",
-    "directoryTitle2": "吉隆坡与雪兰莪",
-    "directorySubtitle": "从油漆与水管维修到全屋翻新、电气、清洁与安防——在吉隆坡与雪兰莪全境探索公开透明的价格、真实保修与当日服务。",
+    "directoryTitle1": "油漆、天花板与家居服务",
+    "directoryTitle2": "覆盖吉隆坡与雪兰莪",
+    "directorySubtitle": "浏览油漆、天花板与隔墙、水管、防水、家居杂工及其他维修服务，并查看清楚的服务范围与价格资料。",
     "browseAll": "浏览所有服务",
     "viewPricingGuide": "查看价格指南",
     "includedSpecialities": "包含专长",
@@ -608,7 +608,7 @@
     "nearMeDesc": "选择您的位置以查看当地价格、服务时段与联系方式。"
   },
   "hero": {
-    "subline": "吉隆坡与雪兰莪的优质家居服务，价格公道透明",
+    "subline": "吉隆坡与雪兰莪油漆、天花板、隔墙及家居维修服务",
     "eyebrow": "即时派单",
     "chipInsured": "已投保并认证",
     "chipPrice": "价格先确认",
@@ -766,7 +766,7 @@
   },
   "location": {
     "servingBadge": "服务范围：{area}",
-    "areaH1": "{area}优质住宅服务",
+    "areaH1": "{area}油漆、天花板与家居服务",
     "areaSubtitle": "本地油漆、水管、石膏天花板、防水与杂工服务。",
     "coverageHeading": "{area}覆盖社区与地标",
     "immediateDispatch": "即时派工",

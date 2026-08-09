@@ -3,9 +3,9 @@ import { buildMetadata } from "@/lib/seo-meta";
 import { LocaleServicesIndex, localizedServicesIndexLanguageUrls } from "@/components/sections/locale-services-index";
 
 export const metadata = buildMetadata({
-  title: "吉隆坡与雪兰莪家居服务",
+  title: "吉隆坡与雪兰莪油漆、天花板与家居服务",
   description:
-    "KL Servis Rumah 在吉隆坡与雪兰莪提供的全部家居服务——油漆、水管、天花板、防水、电路、清洁等。固定价格从 RM 450 起，附书面保修。",
+    "浏览吉隆坡与雪兰莪的油漆、天花板与隔墙、水管、防水、家居杂工及其他维修服务，并查看服务范围与价格。",
   path: "/zh/services",
   languageUrls: localizedServicesIndexLanguageUrls(),
   ogLocale: "zh_MY",

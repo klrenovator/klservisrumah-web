@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   // guarantees exactly one brand mention within the 60-char SERP budget. A
   // `template` here double-appended the brand on 26 pages and pushed 425 of 437
   // titles past the truncation point.
-  title: optimizeTitle(`${siteConfig.name} — ${siteConfig.tagline}`, { appendBrand: false }),
+  title: optimizeTitle(`${siteConfig.name} | ${siteConfig.tagline}`, { appendBrand: false }),
   description: optimizeDescription(siteConfig.metaDescription),
   metadataBase: new URL("https://www.klservisrumah.my"),
   manifest: "/manifest.json",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   // and Google discards hreflang clusters whose targets redirect.
   alternates: buildAlternates("/"),
   openGraph: {
-    title: optimizeTitle(`${siteConfig.name} — ${siteConfig.tagline}`, { appendBrand: false }),
+    title: optimizeTitle(`${siteConfig.name} | ${siteConfig.tagline}`, { appendBrand: false }),
     description: optimizeDescription(siteConfig.metaDescription),
     url: "https://www.klservisrumah.my",
     siteName: siteConfig.name,
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
         url: siteConfig.defaultOgImage,
         width: 1200,
         height: 630,
-        alt: siteConfig.name
+        alt: "KL Servis Rumah painting and ceiling services in KL & Selangor"
       }
     ],
     locale: "en_MY",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: optimizeTitle(`${siteConfig.name} — ${siteConfig.tagline}`, { appendBrand: false }),
+    title: optimizeTitle(`${siteConfig.name} | ${siteConfig.tagline}`, { appendBrand: false }),
     description: optimizeDescription(siteConfig.metaDescription),
     images: [siteConfig.defaultOgImage]
   },

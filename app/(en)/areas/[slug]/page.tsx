@@ -5,7 +5,6 @@ import { areaPages } from "@/config/area-data";
 import { getFAQSchema, getSpeakableSchema } from "@/lib/seo";
 import { buildAreaBundle } from "@/lib/location-bundles";
 import { LocaleAreaView } from "@/components/sections/locale-area-view";
-import { siteConfig } from "@/config/site";
 
 const baseUrl = "https://www.klservisrumah.my";
 
@@ -55,35 +54,22 @@ export default async function AreaSlugPage(props: { params: Promise<{ slug: stri
   const faqSchema = getFAQSchema(area.faqs);
   const speakableSchema = getSpeakableSchema(["h1", ".area-intro", ".faq-answer"]);
 
-  // Area-specific LocalBusiness Service schema — signals that KL Servis
-  // Rumah services this exact locality (crucial for local-pack ranking).
+  // This is a coverage page, not a separate business branch. Service schema
+  // accurately describes the relationship without inventing a postal address
+  // or placing the company's physical geo coordinates at the area centroid.
   const areaServiceSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": `${baseUrl}/areas/${area.slug}#localbusiness`,
-    name: `${siteConfig.name} — ${area.name}`,
+    "@type": "Service",
+    "@id": `${baseUrl}/areas/${area.slug}#service`,
+    name: `Home services in ${area.name}`,
     description: area.description,
     url: `${baseUrl}/areas/${area.slug}`,
-    telephone: siteConfig.phone,
-    priceRange: "$$",
-    image: siteConfig.defaultOgImage,
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: area.name,
-      addressRegion: area.state,
-      addressCountry: "MY"
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: area.lat,
-      longitude: area.lng
-    },
+    provider: { "@id": `${baseUrl}/#organization` },
     areaServed: {
       "@type": "City",
       name: area.name,
       containedInPlace: { "@type": "State", name: area.state }
-    },
-    parentOrganization: { "@id": `${baseUrl}/#organization` }
+    }
   };
 
   return (

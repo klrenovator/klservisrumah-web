@@ -11,9 +11,9 @@ import { StatsCounter } from "@/components/content/stats-counter";
 import { localizedServicesIndexLanguageUrls } from "@/components/sections/locale-services-index";
 
 export const metadata = buildMetadata({
-  title: "All Home Services in KL & Selangor — 28 Services",
+  title: "Painting, Ceiling & Home Services KL & Selangor",
   description:
-    "Browse 28 professional home services across Kuala Lumpur and Selangor: painting, plumbing, electrical, renovation, cleaning, security and more.",
+    "Explore painting, ceiling & partition, plumbing, waterproofing, handyman and other home maintenance services across KL & Selangor. View scope and pricing.",
   path: "/services",
   // Real hreflang cluster with the H3-pilot localized directories.
   languageUrls: localizedServicesIndexLanguageUrls(),

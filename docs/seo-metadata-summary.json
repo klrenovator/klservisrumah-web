@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-08-09T19:29:46.522Z",
+  "pagesAudited": 4335,
+  "pagesUpdated": 3917,
+  "titlesUpdated": 2791,
+  "descriptionsUpdated": 3883,
+  "h1sUpdated": 732,
+  "duplicateTitles": {
+    "before": {
+      "groups": 859,
+      "pages": 1718
+    },
+    "after": {
+      "groups": 0,
+      "pages": 0
+    },
+    "groupsFixed": 859
+  },
+  "duplicateDescriptions": {
+    "before": {
+      "groups": 3,
+      "pages": 28
+    },
+    "after": {
+      "groups": 0,
+      "pages": 0
+    },
+    "groupsFixed": 3
+  },
+  "missingMetadata": {
+    "before": 0,
+    "after": 0,
+    "pagesFixed": 0
+  },
+  "status": {
+    "indexable": 3296,
+    "canonicalized": 1036,
+    "noindex": 3
+  }
+}

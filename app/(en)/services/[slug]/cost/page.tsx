@@ -22,9 +22,9 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   if (!service) return {};
   return buildMetadata({
     title: `${service.title} Cost in KL & Selangor — 2026 Pricing Guide`,
-    description: `How much does ${service.title.toLowerCase()} cost in KL & Selangor? See real price ranges, cost factors, quote examples, and WhatsApp booking.`,
+    description: `How much does ${service.title.toLowerCase()} cost in KL & Selangor? Review published price ranges, cost factors, examples and WhatsApp quote options.`,
     path: `/services/${slug}/cost`,
-    canonicalPath: `/services/${slug}`
+    image: service.heroImage
   });
 }
 

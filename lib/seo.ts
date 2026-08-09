@@ -246,33 +246,6 @@ export function getWarrantySchema(period: string, scope: string) {
   };
 }
 
-const standardReviews: ReviewInput[] = [
-  {
-    author: "Ahmad Razak",
-    rating: 5,
-    body: "Very professional team. They arrived on time, explained everything clearly before starting the painting work. The finish was flawless and the price was exactly as quoted. Highly recommend!",
-    datePublished: "2026-06-15"
-  },
-  {
-    author: "Siti Aminah",
-    rating: 5,
-    body: "Called them for a leaking ceiling and they came the same day. Found the source quickly and fixed it without hacking my tiles. Very clean work and reasonable price.",
-    datePublished: "2026-06-10"
-  },
-  {
-    author: "Lee Wei Ming",
-    rating: 5,
-    body: "Excellent handyman service. Mounted my 75-inch TV perfectly level and installed curtain tracks in 3 rooms. Very neat drilling with no mess left behind.",
-    datePublished: "2026-05-28"
-  },
-  {
-    author: "Priya Sharma",
-    rating: 5,
-    body: "The plumbing team fixed our burst pipe within 30 minutes of calling. Transparent pricing, no hidden fees, and they cleaned up everything after. Will definitely use again.",
-    datePublished: "2026-05-20"
-  }
-];
-
 export function getServiceSchema(service: { title: string; description: string; startPrice: string; slug: string; path?: string; subServices?: SubService[] }) {
   const detail = servicesData[service.slug];
   const heroImage = detail?.heroImage || siteConfig.defaultOgImage;
@@ -283,17 +256,12 @@ export function getServiceSchema(service: { title: string; description: string; 
   const catalogSubServices = service.subServices ?? detail?.subServices;
   return {
     "@context": "https://schema.org",
-    "@type": ["Service", "Product"],
+    "@type": "Service",
     "@id": `${baseUrl}${servicePath}#service`,
     serviceType: service.title,
     name: service.title,
     url: `${baseUrl}${servicePath}`,
     image: absoluteUrl(heroImage),
-    brand: {
-      "@type": "Brand",
-      name: siteConfig.name
-    },
-    sku: service.slug,
     provider: {
       "@type": "HomeAndConstructionBusiness",
       "@id": `${baseUrl}/#organization`,
@@ -316,14 +284,6 @@ export function getServiceSchema(service: { title: string; description: string; 
       }
     },
     hasOfferCatalog: catalogSubServices ? getOfferCatalogSchema(catalogSubServices) : undefined,
-    aggregateRating: aggregateRating(),
-    review: standardReviews.map((review) => ({
-      "@type": "Review",
-      author: { "@type": "Person", name: review.author },
-      reviewRating: { "@type": "Rating", ratingValue: review.rating, bestRating: 5 },
-      reviewBody: review.body,
-      datePublished: review.datePublished
-    })),
     areaServed: [
       ...getServiceAreaSchema(),
       buildServiceAreaGeoCircle()
@@ -362,21 +322,22 @@ export function getHandymanServiceSchema() {
 }
 
 export function getLocalBusinessServiceSchema(area: AreaDetail | SuburbDetail, service: ServiceDetail, path?: string) {
+  const pagePath = path ?? `/areas/${area.slug}/${service.slug}`;
+
+  // Location landing pages describe where one real business offers a service;
+  // they are not additional LocalBusiness branches. Service + areaServed keeps
+  // the markup truthful and avoids conflicting the Mont Kiara business address
+  // with a different locality's centroid.
   return {
     "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-    "@id": `${baseUrl}${path ?? `/areas/${"parentArea" in area ? area.slug : area.slug}/${service.slug}`}#local-service`,
-    name: `${siteConfig.name} — ${service.title} in ${area.name}`,
-    url: absoluteUrl(path ?? `/areas/${area.slug}/${service.slug}`),
-    telephone: siteConfig.phone,
-    priceRange: "RM80 - RM22000",
+    "@type": "Service",
+    "@id": `${baseUrl}${pagePath}#service`,
+    name: `${service.title} in ${area.name}`,
+    serviceType: service.title,
+    description: service.description,
+    url: absoluteUrl(pagePath),
     image: absoluteUrl(service.heroImage),
-    address: postalAddress(),
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: area.lat,
-      longitude: area.lng
-    },
+    provider: { "@id": `${baseUrl}/#organization` },
     areaServed: {
       "@type": "Place",
       name: area.name,
@@ -386,19 +347,13 @@ export function getLocalBusinessServiceSchema(area: AreaDetail | SuburbDetail, s
         longitude: area.lng
       }
     },
-    makesOffer: {
+    offers: {
       "@type": "Offer",
-      itemOffered: {
-        "@type": "Service",
-        name: service.title,
-        serviceType: service.title,
-        description: service.description,
-        hasOfferCatalog: getOfferCatalogSchema(service.subServices)
-      },
       priceCurrency: "MYR",
       price: service.startPrice.replace(/[^0-9.]/g, ""),
       availability: "https://schema.org/InStock"
-    }
+    },
+    hasOfferCatalog: getOfferCatalogSchema(service.subServices)
   };
 }
 

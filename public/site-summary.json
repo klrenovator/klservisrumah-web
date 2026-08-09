@@ -19,35 +19,35 @@
   "services": [
     {
       "slug": "painting",
-      "title": "Premium Painting Services",
+      "title": "House Painting Services",
       "startPrice": "RM 450",
       "warranty": "1-Year Paint Peeling & Craftsmanship Guarantee",
       "path": "/services/painting"
     },
     {
       "slug": "plumbing",
-      "title": "Professional Plumbing Solutions",
+      "title": "Plumbing & Leak Repair Services",
       "startPrice": "RM 150",
       "warranty": "30-Day Joint Seal & Workmanship Warranty",
       "path": "/services/plumbing"
     },
     {
       "slug": "ceiling",
-      "title": "Plaster Ceiling & Partitions",
+      "title": "Ceiling & Partition Services",
       "startPrice": "RM 220",
       "warranty": "90-Day Structural Sagging & Crack-Free Warranty",
       "path": "/services/ceiling"
     },
     {
       "slug": "waterproofing",
-      "title": "Premium Waterproofing & Leak Control",
+      "title": "Waterproofing & Leak Repair Services",
       "startPrice": "RM 300",
       "warranty": "Up to 5-Year Written Leak-Free Guarantee",
       "path": "/services/waterproofing"
     },
     {
       "slug": "handyman",
-      "title": "Expert Handyman Services",
+      "title": "Handyman Services",
       "startPrice": "RM 100",
       "warranty": "30-Day Workmanship Safety Warranty",
       "path": "/services/handyman"

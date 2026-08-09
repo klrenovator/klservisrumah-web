@@ -22,9 +22,12 @@ export async function generateMetadata(props: { params: Promise<{ slug: string; 
   const service = servicesData[serviceSlug];
   if (!area || !service) return {};
   return buildMetadata({
-    title: `Best ${service.title} in ${area.name} — Trusted Local Service`,
-    description: `Professional and trusted ${service.title} in ${area.name}. Local team, upfront fixed pricing, landmarks covered, warranty and WhatsApp booking for ${area.shortName}.`,
-    path: `/areas/${area.slug}/${service.slug}`
+    // Lead with the location so long service names cannot truncate the local
+    // intent or collide with another area in search results.
+    title: `${area.name} ${service.title}`,
+    description: `Book ${service.title.toLowerCase()} in ${area.name}. Review local scope and upfront pricing, then request a clear quote on WhatsApp.`,
+    path: `/areas/${area.slug}/${service.slug}`,
+    image: service.heroImage
   });
 }
 
