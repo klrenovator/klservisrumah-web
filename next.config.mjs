@@ -69,6 +69,9 @@ const nextConfig = {
     // desaturation / hue shifts on hero photos and the brand logo.
     // WebP with an sRGB ICC profile preserves colour fidelity much better.
     formats: ["image/webp"],
+    // Explicit quality allow-list (Next 16 will require it): 75 is the
+    // default, 65 is used by the hero slideshow.
+    qualities: [65, 75],
     deviceSizes: [360, 414, 640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 31536000,

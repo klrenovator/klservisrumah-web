@@ -36,11 +36,14 @@ export function SmartFinderModal() {
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="inline-flex items-center gap-1.5 rounded-xl border border-sky-500/20 bg-sky-50 px-3 py-2 text-xs font-black text-[#075985] shadow-sm hover:border-sky-500 hover:bg-sky-100 transition-all"
+        className="inline-flex items-center gap-1.5 rounded-xl border border-sky-500/20 bg-sky-50 px-2.5 py-2 text-xs font-black text-[#075985] shadow-sm hover:border-sky-500 hover:bg-sky-100 transition-all min-[430px]:px-3"
         aria-label={label}
       >
         <Search className="h-3.5 w-3.5 text-[#0EA5E9]" />
-        <span className="hidden min-[500px]:inline">{label}</span>
+        {/* Label from sm (640px) up only — between 500px and 639px the
+            expanded button plus the language switcher and WhatsApp pushed
+            the hamburger menu off the right edge of the viewport. */}
+        <span className="hidden sm:inline">{label}</span>
         <span className="hidden md:inline-flex rounded border border-sky-200 bg-white px-1 text-[9px] font-bold text-[#0EA5E9]">
           ⌘K
         </span>

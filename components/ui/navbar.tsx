@@ -72,7 +72,19 @@ export function Navbar() {
   const waLink = getWhatsAppLink({ lang });
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8);
+    // Scroll listener only toggles the header's shadow/border once the 8px
+    // threshold is crossed. `current` guards the state update so React is not
+    // asked to re-render on every scroll event — the header never re-renders
+    // while the boolean is unchanged, and there is no hide-on-scroll logic
+    // (the header is `sticky top-0` and stays visible at all scroll depths).
+    let current = window.scrollY > 8;
+    const onScroll = () => {
+      const next = window.scrollY > 8;
+      if (next !== current) {
+        current = next;
+        setScrolled(next);
+      }
+    };
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
     return () => window.removeEventListener("scroll", onScroll);
@@ -80,15 +92,22 @@ export function Navbar() {
   useEffect(() => { setServicesOpen(false); }, [pathname]);
 
   const isServices = pathname === "/services" || pathname.startsWith("/services/");
-  return <header className={`sticky top-0 z-50 w-full transition-[background-color,border-color,box-shadow] duration-200 ${scrolled ? "border-b border-slate-100 bg-white/95 shadow-[0_4px_20px_rgba(0,0,0,0.08)] backdrop-blur-sm" : "border-b border-slate-200 bg-white"}`}>
+  // NOTE: no `backdrop-blur` on purpose. `backdrop-filter` on a
+  // `position: sticky` element is a known WebKit/iOS-Safari compositing bug —
+  // the header (and the hamburger button inside it) can disappear while
+  // scrolling and only reappear after the scroll settles or the filter class
+  // is removed. The header sits on a white page, so the frosted-glass blur was
+  // imperceptible; a solid background keeps the exact same look with none of
+  // the disappearing-header risk (and is cheaper to paint on low-end phones).
+  return <header className={`sticky top-0 z-50 w-full transition-[background-color,border-color,box-shadow] duration-200 ${scrolled ? "border-b border-slate-100 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)]" : "border-b border-slate-200 bg-white"}`}>
     <div className="hidden bg-[#075985] py-2 text-xs text-white sm:block">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 sm:px-6 lg:px-8">
         <span className="flex items-center gap-1.5 truncate font-black uppercase tracking-wider text-slate-200"><span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[#22c55e]" />{t("nav.topbar")}</span>
         <div className="hidden items-center gap-6 md:flex"><a href={`tel:${siteConfig.phone}`} className="inline-flex items-center gap-2 font-black text-slate-200 transition hover:text-sky-300"><Phone className="h-3 w-3 text-sky-300" />{siteConfig.phoneDisplay}</a><a href={waLink} target="_blank" rel="nofollow noopener noreferrer" className="inline-flex items-center gap-2 font-black transition hover:text-[#22c55e]"><WhatsAppIcon className="h-3.5 w-3.5 text-[#22c55e]" />{t("common.whatsappOnline")}</a></div>
       </div>
     </div>
-    <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-1.5 min-[430px]:gap-3 px-2 min-[430px]:px-3 sm:px-6 lg:px-8">
-      <Link href="/" className="shrink-0" aria-label="KL Servis Rumah homepage"><span className="sm:hidden"><Logo size="sm" priority /></span><span className="hidden sm:inline"><Logo size="md" priority /></span></Link>
+    <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-1 min-[430px]:gap-3 px-2 min-[430px]:px-3 sm:px-6 lg:px-8">
+      <Link href="/" className="shrink-0" aria-label="KL Servis Rumah homepage"><span className="min-[430px]:hidden"><Logo size="xs" priority /></span><span className="hidden min-[430px]:inline sm:hidden"><Logo size="sm" priority /></span><span className="hidden sm:inline"><Logo size="md" priority /></span></Link>
       <div className="hidden items-center gap-1 lg:flex">
         {PRIMARY_LINKS.slice(0, 1).map(item => <NavLink key={item.href} href={item.href} active={pathname === item.href} label={t(item.key)} />)}
         <div className="relative" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
@@ -101,8 +120,17 @@ export function Navbar() {
         {PRIMARY_LINKS.slice(1).map(item => <NavLink key={item.href} href={item.href} active={pathname === item.href || pathname.startsWith(`${item.href}/`)} label={t(item.key)} />)}
       </div>
       <div className="hidden items-center gap-3 lg:flex"><SmartFinderModal /><LanguageSwitcher /><HeaderWhatsAppActions /></div>
-      {/* Keep WhatsApp between the language selector and the all-pages menu on every phone size. */}
-      <div className="flex shrink-0 items-center gap-1.5 min-[430px]:gap-2 lg:hidden"><SmartFinderModal /><LanguageSwitcher /><HeaderWhatsAppActions compact /><AllPagesMenu /></div>
+      {/*
+        Mobile cluster. On phones and small tablets the four controls
+        (finder + language + WhatsApp + hamburger) plus the logo overflowed
+        the viewport — the hamburger was pushed off the right edge and
+        clipped (visible at 360–639px). The WhatsApp compact button is
+        redundant below sm anyway (the sticky mobile bar at the bottom
+        always shows WhatsApp + Call on <768px), so it only renders from
+        sm up; below 430px the logo, gaps and language pills are compacted
+        so every control stays fully on screen.
+      */}
+      <div className="flex shrink-0 items-center gap-1 min-[430px]:gap-2 lg:hidden"><SmartFinderModal /><LanguageSwitcher /><span className="hidden sm:inline-flex"><HeaderWhatsAppActions compact /></span><AllPagesMenu /></div>
     </nav>
   </header>;
 }

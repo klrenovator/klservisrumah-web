@@ -168,15 +168,38 @@ export function Hero() {
   };
 
   useEffect(() => {
-    const id = window.setInterval(() => {
+    let id: number | null = null;
+    const advance = () => {
       setCurrent((prev) => {
         const next = (prev + 1) % HERO_IMAGES.length;
         setPrevious(prev);
         setVisible(false);
         return next;
       });
-    }, 6000);
-    return () => window.clearInterval(id);
+    };
+    const start = () => {
+      if (id !== null) window.clearInterval(id);
+      id = window.setInterval(advance, 6000);
+    };
+    const stop = () => {
+      if (id !== null) {
+        window.clearInterval(id);
+        id = null;
+      }
+    };
+    // Pause the slideshow while the tab is hidden — a background tab has no
+    // visible audience, and each tick churns two React state updates plus an
+    // image decode for nothing (battery/CPU on mobile).
+    const onVisibility = () => {
+      if (document.hidden) stop();
+      else start();
+    };
+    start();
+    document.addEventListener("visibilitychange", onVisibility);
+    return () => {
+      stop();
+      document.removeEventListener("visibilitychange", onVisibility);
+    };
   }, []);
 
   const currentImage = HERO_IMAGES[current];

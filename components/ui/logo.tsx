@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 type LogoProps = {
-  size?: "sm" | "md" | "lg" | "xl";
+  size?: "xs" | "sm" | "md" | "lg" | "xl";
   /**
    * `lockup` (default) — horizontal monogram + wordmark, tuned for header/footer.
    * `full`   — the original stacked badge artwork, for hero/print/social use.
@@ -39,7 +39,7 @@ const ART = {
   icon: { src: "/logo/logo-icon.png", w: 512, h: 512 },
 } as const;
 
-const HEIGHTS = { sm: 40, md: 52, lg: 64, xl: 88 } as const;
+const HEIGHTS = { xs: 34, sm: 40, md: 52, lg: 64, xl: 88 } as const;
 
 export function Logo({
   size = "md",

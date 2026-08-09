@@ -74,7 +74,7 @@ export function LanguageSwitcher() {
             // context, so no hardcoded English suffix is needed here.
             aria-label={option.full}
             title={option.full}
-            className={`min-h-9 min-w-9 rounded-full px-2 py-1.5 text-[11px] min-[430px]:px-3 min-[430px]:text-xs font-bold leading-5 transition-colors ${
+            className={`min-h-9 min-w-8 rounded-full px-1.5 py-1.5 text-[11px] min-[430px]:min-w-9 min-[430px]:px-3 min-[430px]:text-xs font-bold leading-5 transition-colors ${
               active
                 ? "bg-[#075985] text-white shadow-sm"
                 : "text-[#475569] hover:bg-slate-50 hover:text-[#075985]"
