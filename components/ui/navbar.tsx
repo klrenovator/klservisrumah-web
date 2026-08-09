@@ -10,7 +10,6 @@ import { getWhatsAppLink } from "@/lib/whatsapp";
 import { trackWhatsAppClick } from "@/lib/analytics";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { AllPagesMenu } from "@/components/ui/all-pages-menu";
-import { SmartFinderModal } from "@/components/ui/smart-finder-modal";
 import { Logo } from "@/components/ui/logo";
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
@@ -119,18 +118,13 @@ export function Navbar() {
         </div>
         {PRIMARY_LINKS.slice(1).map(item => <NavLink key={item.href} href={item.href} active={pathname === item.href || pathname.startsWith(`${item.href}/`)} label={t(item.key)} />)}
       </div>
-      <div className="hidden items-center gap-3 lg:flex"><SmartFinderModal /><LanguageSwitcher /><HeaderWhatsAppActions /></div>
+      <div className="hidden items-center gap-3 lg:flex"><LanguageSwitcher /><HeaderWhatsAppActions /></div>
       {/*
-        Mobile cluster. On phones and small tablets the four controls
-        (finder + language + WhatsApp + hamburger) plus the logo overflowed
-        the viewport — the hamburger was pushed off the right edge and
-        clipped (visible at 360–639px). The WhatsApp compact button is
-        redundant below sm anyway (the sticky mobile bar at the bottom
-        always shows WhatsApp + Call on <768px), so it only renders from
-        sm up; below 430px the logo, gaps and language pills are compacted
+        Mobile cluster. On phones and small tablets the controls
+        (language + WhatsApp + hamburger) plus the logo are compacted
         so every control stays fully on screen.
       */}
-      <div className="flex shrink-0 items-center gap-1 min-[430px]:gap-2 lg:hidden"><SmartFinderModal /><LanguageSwitcher /><span className="hidden sm:inline-flex"><HeaderWhatsAppActions compact /></span><AllPagesMenu /></div>
+      <div className="flex shrink-0 items-center gap-1 min-[430px]:gap-2 lg:hidden"><LanguageSwitcher /><span className="hidden sm:inline-flex"><HeaderWhatsAppActions compact /></span><AllPagesMenu /></div>
     </nav>
   </header>;
 }

@@ -9,6 +9,7 @@ import { getLocalizedServiceSummary } from "@/lib/service-summary-i18n";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
+import { HeroSearchBar } from "@/components/ui/hero-search-bar";
 
 // Photographic hero slideshow — matches the KLRenovator gold-standard
 // visual language while keeping the KL Servis Rumah quote form.
@@ -287,6 +288,11 @@ export function Hero() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left content */}
             <div className="lg:col-span-7 flex flex-col items-start gap-6 text-white">
+              {/* Hero Search Bar - Prominent search bar for finding services */}
+              <div className="w-full mb-4">
+                <HeroSearchBar />
+              </div>
+
               {/* Rating badge */}
               <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-md">
                 <div className="flex items-center gap-0.5" aria-hidden="true">
