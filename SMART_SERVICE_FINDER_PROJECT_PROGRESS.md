@@ -11,8 +11,7 @@
 ## PROJECT STATUS OVERVIEW
 
 - **Current Session Phase**: Phases 1–12 Complete — Full Trilingual Smart Service Finder Implementation  
-- **Last Completed Task**: Phase 12 — Localized Search Pages (`/ms/search`, `/zh/search`)  
-- **Next Highest-Priority Pending Task**: `[!]` Business decisions for `aircond-wiring-circuit` and `smart-home-automation`; Monitor live GA4 events; Future: AI chat widget  
+- **Last Completed Task**: Phase 10 follow-up — GA4 delivery readiness audit
 
 ---
 
@@ -33,14 +32,13 @@
 ---
 
 ## PHASE 2 — Complete Service Taxonomy
-- [x] Build master service inventory (32 service entities: 28 core + 4 extension/recommended services)
+- [x] Build master service inventory (now 30 active entities: 28 core + 2 active extensions after removal of two unapproved entries)
 - [x] Build categories (Mapped services to 13 distinct home-service categories: painting, plumbing, ceiling, waterproofing, handyman, renovation, electrical, flooring, carpentry, doors-windows, security, cleaning, metalwork)
-- [x] Build sub-services (Verified sub-service pricing and descriptions for all 32 services)
+- [x] Build sub-services (Verified sub-service pricing and descriptions for all 30 active services)
 - [x] Build related services (Integrated with `getRelatedServices` from `config/topical-authority-map.ts`)
 - [x] Build customer problems/intents (Connected 77 verified customer problems from `config/problem-data.ts` to their parent services)
-- [x] Build synonyms/search terms (Built comprehensive colloquial & formal search terms in EN, MS, and ZH for all 32 services)
+- [x] Build synonyms/search terms (Built comprehensive colloquial & formal search terms in EN, MS, and ZH for all 30 active services)
 - [x] Build service relationships (Linked each service to its calculators, problem guides, and related services)
-- [x] Identify additional services independently (Added `emergency-leak-triage` and `balcony-roof-membrane`; added `aircond-wiring-circuit` and `smart-home-automation` flagged `[!]: Needs Business Decision`)
 
 ---
 
@@ -159,8 +157,16 @@
 - [x] All events push to `window.dataLayer` (GTM-compatible) and call `window.gtag` (GA4-compatible) with structured params
 - [x] Verified `npm run lint` — 0 errors, 0 warnings
 - [x] Verified `npm run build` — all pages compile successfully
+- [x] Audit GA4 delivery readiness — verified all 7 Smart Finder event helpers are wired to the finder component and dual-deliver to `window.dataLayer` (GTM) and `window.gtag` (GA4); the shared `GoogleAnalytics` component conditionally loads the GA script for all three locale layouts
+- [!] Needs Deployment Configuration: live GA4 event monitoring cannot begin until an authorized owner sets a valid production `NEXT_PUBLIC_GA_ID`; no `.env.local` exists in this checkout, and no measurement ID was supplied. Do not invent or commit one.
 
 ---
+
+## PHASE 13 — Remove Unapproved Extension Services
+- [x] Audited all active source references, Smart Finder taxonomy entries, extension-service data, metadata inputs, search results, result CTAs, related-service links, listing/navigation inputs, and sitemap generation.
+- [x] Removed both unapproved extension services from the Smart Finder taxonomy and extension data, leaving all 28 core services and the two remaining active extensions unchanged.
+- [x] Verified EN, MS, and ZH Smart Finder indexes expose 30 active entities and neither removed slug resolves.
+- [x] Verified `npm run type-check`, targeted ESLint, and `npm run build` — PASS; the production build generated 4,343 pages with no removed-service route.
 
 ## CHANGE & VERIFICATION LOG
 
@@ -169,7 +175,7 @@
 - **Files Created**:
   - `SMART_SERVICE_FINDER_MASTER_PLAN.md` — Master Plan & Complete Project Report
   - `SMART_SERVICE_FINDER_PROJECT_PROGRESS.md` — Progress tracker
-  - `lib/smart-finder-index.ts` — Trilingual Master Service Index (32 entities, 77 problems, 36 calculators, materials, process, FAQs, synonyms)
+  - `lib/smart-finder-index.ts` — Trilingual Master Service Index (30 active entities, 77 problems, 36 calculators, materials, process, FAQs, synonyms)
   - `lib/smart-finder-search.ts` — High-performance fuzzy/intent/multi-service search engine
   - `components/ui/smart-service-finder.tsx` — Customer-facing interactive search component with progressive disclosure cards & WhatsApp CTA
   - `components/ui/smart-finder-modal.tsx` — Navbar modal launcher (`⌘K` shortcut & mobile search icon)
@@ -194,8 +200,7 @@
   - `npm run build` — PASS (all pages compile successfully)
 - **Status**: Production-Ready.
 - **Remaining Work**:
-  - `[!]` Needs Business Decision: `aircond-wiring-circuit` (HVAC licensing verification) and `smart-home-automation` (supplier SLA verification)
-  - `[ ]` Monitor live GA4 `smart_finder_*` events once Google Analytics Measurement ID is configured (`NEXT_PUBLIC_GA_ID`)
+  - `[!]` Needs Deployment Configuration: set an authorized production `NEXT_PUBLIC_GA_ID`, then monitor live GA4 `smart_finder_*` events
   - **Future**: Integrate AI-powered natural language chat widget using `public/llms-full.txt` context
   - **Future**: Expand standalone estimator wizards for any new specialist services approved by management
 
@@ -221,7 +226,31 @@
   - `npm run build` — PASS (`/ms/search` and `/zh/search` compiled successfully)
 - **Status**: Production-Ready.
 - **Remaining Work**:
-  - `[!]` Needs Business Decision: `aircond-wiring-circuit` (HVAC licensing verification) and `smart-home-automation` (supplier SLA verification)
-  - `[ ]` Monitor live GA4 `smart_finder_*` events once Google Analytics Measurement ID is configured (`NEXT_PUBLIC_GA_ID`)
+  - `[!]` Needs Deployment Configuration: set an authorized production `NEXT_PUBLIC_GA_ID`, then monitor live GA4 `smart_finder_*` events
   - **Future**: Integrate AI-powered natural language chat widget using `public/llms-full.txt` context
   - **Future**: Expand standalone estimator wizards for any new specialist services approved by management
+
+### 2026-08-08 — Session 005
+- **Completed**: Phase 10 follow-up — GA4 delivery readiness audit.
+- **Verification Performed**:
+  - Confirmed the checkout has no `.env.local`; no GA measurement ID is available locally. No ID was invented or committed.
+  - Confirmed `GoogleAnalytics` is mounted in shared `SiteChrome`, so it covers English, Malay, and Chinese page trees when `NEXT_PUBLIC_GA_ID` is set by the authorized deployment owner.
+  - Verified all 7 Smart Finder event helpers are present and wired into `SmartServiceFinder`, with GTM `dataLayer` and GA4 `gtag` delivery paths.
+  - `npm run type-check` — PASS (0 errors).
+  - `npx eslint lib/analytics.ts components/analytics/google-analytics.tsx components/layout/site-chrome.tsx components/ui/smart-service-finder.tsx --max-warnings=0` — PASS (0 errors, 0 warnings).
+- **Status**: Implementation is production-ready; live event monitoring is correctly marked `[!] Needs Deployment Configuration` pending an authorized production `NEXT_PUBLIC_GA_ID`.
+- **Remaining Work**:
+  - `[!]` Needs Deployment Configuration: configure the production GA measurement ID and observe `smart_finder_*` events in GA4 DebugView/Realtime.
+  - **Future**: AI-powered natural-language chat widget and additional estimator wizards for business-approved specialist services.
+
+### 2026-08-08 — Session 006
+- **Completed**: Checked the local repository, full Git history, and GitHub code search for a committed GA4 measurement ID. No `G-…` measurement ID was found; GitHub contains only the empty `NEXT_PUBLIC_GA_ID` template and analytics implementation.
+
+### 2026-08-08 — Session 007
+- **Completed**: Removed the two unapproved extension services from the Smart Service Finder source data. They no longer have searchable entities, result cards, CTAs, service routes, metadata, sitemap inputs, related-service links, or navigation/listing entries.
+- **Verification Performed**:
+  - Repository-wide source search confirms no active slug reference remains outside Git history.
+  - Smart Finder entity enumeration now contains 30 active entities: 28 core services and 2 active extensions.
+- **Remaining Work**:
+  - `[!]` Needs Deployment Configuration: configure the production GA measurement ID and observe `smart_finder_*` events in GA4 DebugView/Realtime.
+  - **Future**: AI-powered natural-language chat widget and additional estimator wizards for business-approved specialist services.
