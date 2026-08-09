@@ -42,6 +42,11 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  /* `clip` (not `hidden`) on `html` only: it prevents horizontal page
+     scrolling WITHOUT creating a scroll container, so the sticky header
+     keeps sticking. Setting overflow-x on `body` too is deliberately
+     avoided — overflow on body is a well-known `position: sticky`
+     breaker on iOS Safari. */
   overflow-x: clip;
   font-size: 15px;
   line-height: 1.6;
@@ -58,7 +63,6 @@ body {
   background: #ffffff;
   color: #475569;
   font-feature-settings: "rlig" 1, "calt" 1, "ss01" 1;
-  overflow-x: clip;
 }
 
 /* ── Typography — klrenovator-style hierarchy ─────────────── */
