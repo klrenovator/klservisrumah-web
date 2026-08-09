@@ -1131,3 +1131,44 @@ All green: lint 0/0 · type-check PASS · build SUCCESS (4,240 pages) · audit:i
 - All 9 Phases of the Smart Service Finder project are **Completed (`[x]`) and Verified**.
 - Production build succeeds cleanly; all static pages, dynamic routes, and localized trees compile without errors.
 - Master project report and progress checklists are permanently saved in `SMART_SERVICE_FINDER_MASTER_PLAN.md` and `SMART_SERVICE_FINDER_PROJECT_PROGRESS.md`.
+
+---
+
+## Session 2026-08-09 — Complete Service Architecture / Multilingual SEO Audit
+
+**Branch:** `arena/019fe8e5-klservisrumah-web`
+**Baseline:** `99d450c0355b48c060a5b6ba9c69d60ef9aeaf52`
+**Status:** ✅ AUDIT PHASE COMPLETED · ⏳ FULL PROJECT NOT COMPLETED
+
+### Objectives
+- Follow the user’s audit-first rule and inspect the complete service/content/language/SEO architecture before creating pages.
+- Inventory every service, specialty, blog, FAQ hub, and problem URL.
+- Verify live language URLs, sitemap, metadata, canonical/hreflang, internal links, duplicate intent, thin content, and missing requirements.
+- Update the existing project roadmap rather than creating a duplicate progress tracker.
+
+### Completed
+- Created `docs/service-architecture-multilingual-audit-2026-08-09.md` with a 140-row service/specialty table and full URL inventories.
+- Verified: 28 equal top-level service records; 112 specialties; 0 explicit additional-service classification; 15 EN-only service clusters; 18 blogs ×3 languages; 3 FAQ hubs; 77 EN problem pages; 1,022 FAQ-directory entries.
+- Verified multilingual gaps: 224 locale specialty URLs and 154 locale problem URLs missing.
+- Verified internal-link gaps: 0 main → specialty links, no service ↔ blog links, only 9/28 topical maps, stale slugs, and wrong Handyman fallback for 19 services.
+- Verified duplicate/thin risks before any expansion.
+- No customer-facing page was created or modified.
+
+### Verification
+- `npm ci` / `npm audit`: PASS, 0 vulnerabilities.
+- `npm run type-check`: PASS.
+- `npm run audit:i18n`: PASS, 1,072 keys ×3.
+- `npm run test:estimators`: PASS, 263,293 assertions.
+- `npm run build`: PASS, 4,343 routes generated.
+- `npm run audit:html`: PASS, 4,335 HTML pages, 0 findings.
+- `npm run audit:meta`: no missing metadata/schema; 16 short titles and 88 short descriptions for review.
+- `npm run seo:audit`: PASS.
+- `npm run lint`: FAIL — pre-existing unused `t` at `components/ui/hero-search-bar.tsx:29`.
+
+### Files
+- Created: `docs/service-architecture-multilingual-audit-2026-08-09.md`
+- Updated: `AI_OPTIMIZATION_ROADMAP.md`
+- Updated: `SESSION_LOG.md`
+
+### Next session
+Start at the final **Next Session — START HERE** section of `AI_OPTIMIZATION_ROADMAP.md`: restore green lint, complete typed relationships/internal links, resolve Painting/Ceiling competing intent, then implement only the priority locale-specialty tranche.

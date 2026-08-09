@@ -541,3 +541,133 @@ Objectives: new-dimension deep audit after S011 (metadata quality, JSON-LD deep 
 **Audit dimensions validated clean (no action needed):** full-corpus metadata quality (0 missing/over-long titles/descriptions; 859 dup-title groups proven exactly the documented canonicalised suburb pairs — 0 anomalous; CJK short-title/description findings are false positives of Latin heuristics), JSON-LD deep validation (0 parse failures; NAP complete; AggregateRating 4.9/120 uniform on all 224 pages; breadcrumb last-item URLs all match), NAP cross-source consistency, manifest icon existence, zero generic anchor texts, fetchpriority distribution correct, all `fill` images carry `sizes`, no `http://` mixed-content, estimator chrome parity still asserted by the test suite.
 
 **New tooling:** `scripts/i18n-parity.ts` (gate, in prebuild) · `scripts/metadata-schema-audit.ts` (corpus metadata + JSON-LD audit).
+
+---
+
+# COMPLETE SERVICE ARCHITECTURE + PROBLEM SEO + MULTILINGUAL CONTENT PROJECT
+
+## Session 2026-08-09 — Audit-first baseline
+
+**Status legend for this project:** ✅ GREEN TICK — COMPLETED · 🟡 IN PROGRESS · ⏳ PENDING
+
+### Project phase checklist
+
+- ✅ **PHASE 1 — COMPLETE EXISTING WEBSITE AUDIT**
+  - Audited codebase and representative live routes before page generation.
+  - Verified 28 top-level service records, 112 specialties, 15 service-cluster pages, 18 blogs × 3 languages, 3 FAQ hubs, 77 problem pages, 1,022 FAQ-directory entries, language routing, middleware, metadata, canonicals, hreflang, sitemap, robots, indexability, internal links, duplicate intent, thin content, and missing content.
+  - Full report: `docs/service-architecture-multilingual-audit-2026-08-09.md`.
+- 🟡 **PHASE 2 — MULTILINGUAL URL ARCHITECTURE**
+  - Existing prefix system selected for reuse: EN non-prefixed, MS `/ms`, ZH `/zh`.
+  - Main services, blogs, FAQs, and tools already have real locale URLs.
+  - Missing: 224 locale specialty URLs, 154 locale problem URLs, localized cost/emergency routes, and other important supporting trees.
+- 🟡 **PHASE 3 — LANGUAGE CONTENT REQUIREMENTS**
+  - Complete data exists for 28 main services and 18 blogs in all three languages.
+  - Native problem translations exist for 43/77; 34 are missing.
+  - Native editorial QA remains mandatory; live copy contains Chinese duplication and mixed-language labels.
+- ✅ **PHASE 4 — SERVICE HIERARCHY AUDIT**
+  - Actual code hierarchy documented: 28 equal top-level service records + 112 nested specialties.
+  - No explicit “additional service” classification exists; no category split was invented.
+  - Required 140-row service/specialty audit table completed.
+- 🟡 **PHASE 5 — EVERY MAIN SERVICE**
+  - 28/28 have EN/MS/ZH pages and 4 localized FAQs.
+  - 14/28 have a clearly topical blog.
+  - Main → specialty and service ↔ blog contextual links are missing.
+- 🟡 **PHASE 6 — EVERY SUB-SERVICE**
+  - 112 EN URLs exist; 224 MS/ZH URLs are missing.
+  - Existing six-FAQ sets are repeated templates, not specialty-authored sets.
+  - 0/112 specialties have an explicit end-to-end blog/problem/FAQ relationship.
+- 🟡 **PHASE 7 — PROBLEM-BASED SEO**
+  - 77 EN problem pages exist; all 28 services have at least one problem.
+  - Overlap groups and missing specialty mappings must be resolved before localization.
+- 🟡 **PHASE 8 — PROBLEM CONTENT**
+  - Existing records include symptom, causes, solutions, when-to-call guidance, service, urgency, cost range, and 2–4 FAQs.
+  - Missing: related specialty/blog/FAQ/location links and 34 native translations.
+- 🟡 **PHASE 9 — BLOG REQUIREMENT**
+  - 18 useful articles exist in EN/MS/ZH.
+  - 14 service pillars and all 112 specialty mappings remain uncovered under the strict requirement.
+  - EN Markdown currently renders visibly as plain text and needs correction.
+- 🟡 **PHASE 10 — FAQ REQUIREMENT**
+  - Main services: 28/28 with 4 localized FAQs.
+  - Problems: 58/77 have 3–4; 19 have only 2.
+  - Specialties: 0/112 verified unique sets; current 672 answers are templated.
+- 🟡 **PHASE 11 — INTERNAL LINKING SYSTEM**
+  - Home → service, problem → service, service ↔ location, and specialty → parent/siblings exist.
+  - Missing: main → specialty, service ↔ blog, problem → specialty/blog/FAQ/location.
+  - Only 9/28 topical maps exist; 19 services use the wrong Handyman fallback; existing maps contain stale slugs.
+- ⏳ **PHASE 12 — PRIORITY SEO: PAINTING + CEILING/PARTITION**
+  - Audit completed; implementation not started.
+  - Resolve competing cluster/specialty intent before creating locale pages.
+- 🟡 **PHASE 13 — SEO METADATA**
+  - Automated corpus checks found no missing title, description, H1, canonical, or invalid JSON-LD.
+  - 16 short titles and 88 short descriptions need manual review; specialty body uniqueness remains weak despite unique metadata.
+- 🟡 **PHASE 14 — SITEMAP**
+  - Existing sitemap: 3,296 unique URLs (3,122 non-prefixed, 87 MS, 87 ZH), 0 duplicate `<loc>` values.
+  - Missing locale specialties/problems must be added only after real pages exist.
+- 🟡 **PHASE 15 — HREFLANG**
+  - Real clusters work for main services, blogs, FAQs, and tools.
+  - Specialty/problem/supporting routes still use same-URL multilingual annotations and do not meet the separate-URL requirement.
+- 🟡 **PHASE 16 — THIN/DUPLICATE CONTROL**
+  - 112 templated specialty pages, 192 generic pages, 15 overlapping clusters, 14 problem-overlap groups, and the large location estate documented.
+  - No deletion/redirect was made without evidence.
+- ✅ **PHASE 17 — LANGUAGE URL STRUCTURE DECISION**
+  - Reuse established `/ms` and `/zh` prefix trees; stable service slugs remain the lowest-risk service pattern.
+- 🟡 **PHASE 18 — NEXT.JS IMPLEMENTATION**
+  - Reusable dynamic routes/shared data architecture already exists.
+  - It must be extended with locale-aware specialty/problem content rather than duplicated components.
+- ✅ **PHASE 19 — DO NOT CHANGE BUSINESS INFORMATION (AUDIT SESSION)**
+  - No prices, claims, addresses, phone numbers, ratings, warranties, brands, or service areas were changed.
+- 🟡 **PHASE 20 — QUALITY CONTROL**
+  - TypeScript PASS; production build PASS (4,343 generated routes); i18n PASS; HTML audit PASS; 263,293 estimator/content assertions PASS; npm audit 0 vulnerabilities.
+  - ESLint FAILS on the existing unused `t` variable in `components/ui/hero-search-bar.tsx:29`.
+- ⏳ **PHASE 21 — FINAL AUDIT REPORT**
+  - Final completion report is pending because implementation phases are incomplete.
+
+### Verified baseline inventory
+
+- **Top-level/main service records:** 28
+- **Sub-services/specialties:** 112
+- **Explicit additional/standalone classification:** 0
+- **EN service-tree URLs:** 212 (index + 28 main + 56 cost/emergency + 112 specialties + 15 clusters)
+- **MS service-tree URLs:** 29 (index + 28 main)
+- **ZH service-tree URLs:** 29 (index + 28 main)
+- **Blogs:** 18 EN + 18 MS + 18 ZH
+- **FAQ hubs:** 1 EN + 1 MS + 1 ZH
+- **Problem pages:** 77 EN + 0 MS + 0 ZH
+- **Missing localized specialty URLs:** 224
+- **Missing localized problem URLs:** 154
+
+### This session completed
+
+- Completed the required audit before generating any content page.
+- Selected the existing locale-prefix architecture for future work.
+- Documented every service and specialty, all blog URLs, all FAQ URLs, all problem URLs, metadata/sitemap/hreflang behavior, internal links, duplicate/overlap groups, and thin-content risks.
+- Ran production and corpus-level quality checks.
+- Did **not** create or modify customer-facing pages.
+
+### Files changed/created this session
+
+- **Created:** `docs/service-architecture-multilingual-audit-2026-08-09.md`
+- **Updated:** `AI_OPTIMIZATION_ROADMAP.md`
+- **Updated:** `SESSION_LOG.md`
+
+### Pending tasks
+
+1. Fix the baseline lint error.
+2. Add a canonical relationship registry for all 28 services and 112 specialties.
+3. Resolve the 15 service-cluster overlaps and 14 problem-intent overlap groups before multiplying URLs.
+4. Correct internal-link foundations, especially main → specialty and service ↔ blog.
+5. Implement and native-review the Painting + Ceiling/Partition priority tranche.
+6. Add real locale specialty/problem routes, metadata, hreflang, sitemap entries, and tests.
+7. Continue service-by-service without creating thin or spun pages.
+
+## Next Session — START HERE
+
+1. Read `docs/service-architecture-multilingual-audit-2026-08-09.md`, especially sections 4, 12, and 14.
+2. Fix `components/ui/hero-search-bar.tsx:29` so baseline ESLint is green.
+3. Implement the **relationship/data architecture only** first: replace the incomplete `topicalAuthorityMap`/Handyman fallback with complete, valid mappings for all 28 services; add typed specialty → problem/blog relationships; validate every referenced slug.
+4. Add contextual **main service → four specialty links** and correct localized FAQ → localized service links.
+5. Before creating localized priority pages, document a canonical keep/merge decision for:
+   - Painting specialty URLs vs `interior-painting-kl`, `exterior-painting-kl`, `commercial-painting-kl`.
+   - Ceiling specialties vs `ceiling-installation-kl`, `repair-kl`, `partition-kl`.
+   - Ceiling main service vs standalone Plaster Ceiling intent.
+6. Then begin the Painting + Ceiling/Partition locale-specialty tranche using shared dynamic routes and native EN/MS/ZH structured content. Do not mass-generate the remaining specialties yet.
