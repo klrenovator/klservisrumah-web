@@ -172,12 +172,13 @@ export default function Home() {
       <div className="container-default py-10 sm:py-14">
         <SmartServiceFinder />
       </div>
-      {/* Floating rotating request toast — shows one item at a time, fades in/out */}
-      <RecentJobsTicker />
       {/* Trust strip — relocated below the hero so the slideshow leads the page */}
       <TrustBar />
       <TrustBadges />
       <ServicesGrid />
+
+      {/* Popular Local Requests — moved below services to avoid overlap with hero search */}
+      <RecentJobsTicker />
 
       <div className="bg-white section-tight px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">

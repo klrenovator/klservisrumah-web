@@ -6,9 +6,8 @@ import { recentJobs } from "@/config/recent-jobs";
 import { useTranslations } from "@/hooks/use-translations";
 
 /**
- * This widget is purely cosmetic, so it waits for a real user interaction
- * before appearing. That keeps the initial Lighthouse session visually stable
- * and avoids CLS from a floating toast animating in on its own.
+ * Popular Local Requests widget - shows recent job requests
+ * Now positioned as a regular element in the page flow to avoid overlapping with hero search
  */
 export function RecentJobsTicker() {
   const [visible, setVisible] = useState(false);
@@ -33,8 +32,10 @@ export function RecentJobsTicker() {
   const job = recentJobs[0];
 
   return (
-    <div className="pointer-events-none fixed inset-x-0 top-24 z-40 flex justify-center px-4" aria-live="polite">
-      <div role="status" className="pointer-events-auto relative flex w-full max-w-md items-start gap-3 rounded-2xl border border-[#0EA5E9]/20 bg-white/95 p-3.5 pr-10 shadow-[0_16px_45px_rgba(2,31,68,0.12)] backdrop-blur-sm">
+    <section className="py-8" aria-label="Popular Local Requests">
+      <div className="container-default">
+        <div className="pointer-events-none flex justify-center px-4">
+          <div role="status" className="pointer-events-auto relative flex w-full max-w-md items-start gap-3 rounded-2xl border border-[#0EA5E9]/20 bg-white/95 p-3.5 pr-10 shadow-[0_16px_45px_rgba(2,31,68,0.12)] backdrop-blur-sm">
         <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#E0F2FE] text-[#0284C7]">
           <Activity className="h-5 w-5" />
         </span>
@@ -56,6 +57,6 @@ export function RecentJobsTicker() {
           <X className="h-3.5 w-3.5" />
         </button>
       </div>
-    </div>
+    </section>
   );
 }
