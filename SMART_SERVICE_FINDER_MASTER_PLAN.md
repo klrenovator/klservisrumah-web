@@ -85,11 +85,9 @@ The Smart Service Finder covers all 28 existing core services defined in `config
 In addition to the 28 core services, the Smart Service Finder integrates:
 - **77 Existing Customer Problem Diagnoses** from `config/problem-data.ts` and `config/problem-data-extra.ts` (e.g., *"ceiling-water-stains"*, *"popping-tiles"*, *"low-water-pressure"*, *"peeling-paint"*).
 - **36 Interactive Estimators & Calculators** from `config/tools-data.ts` (e.g., Painting Cost Calculator, Leak Triage, Ceiling Repair Estimator).
-- **Recommended Extension Services**:
+- **Active Extension Services**:
   - `emergency-leak-triage`: *Emergency Leak Triaging & Non-Hacking Diagnostic* (RM 150, 30-Day Diagnostic Accuracy Guarantee)
   - `balcony-roof-membrane`: *Balcony & Flat Roof Membrane Waterproofing* (RM 600, 5-Year Water Seepage Guarantee)
-  - `aircond-wiring-circuit`: *Air Conditioner DB Circuit & Wiring Installation* (RM 250, 1-Year Electrical Safety Warranty) — **Flagged `[!] Needs Business Decision`** (Verify specialist HVAC electrical contractor licensing for dedicated AC DB circuits)
-  - `smart-home-automation`: *Smart Home IoT Automation & Switch Setup* (RM 180, 1-Year Installation Warranty) — **Flagged `[!] Needs Business Decision`** (Verify supplier SLA and hardware compatibility for IoT automation)
 
 ---
 
@@ -97,7 +95,7 @@ In addition to the 28 core services, the Smart Service Finder integrates:
 
 ### A. Complete Service Inventory
 - **28 Core Services**: All main services from `config/services-data.ts` are indexed with trilingual titles, taglines, starting prices, warranties, highlights, sub-services, materials, process steps, FAQs, and WhatsApp CTAs.
-- **4 Extension/Recommended Services**: 2 verified within standard scope (`emergency-leak-triage`, `balcony-roof-membrane`) + 2 flagged for business confirmation (`aircond-wiring-circuit`, `smart-home-automation`).
+- **2 Active Extension Services**: `emergency-leak-triage` and `balcony-roof-membrane`, both available through the Smart Service Finder.
 - **77 Connected Problem Pages**: Each service is mapped to its associated customer problem diagnoses from `config/problem-data.ts` and `config/problem-data-extra.ts`.
 - **36 Connected Interactive Tools**: Each service is mapped to its interactive cost calculators from `config/tools-data.ts`.
 - **Related Services Network**: Powered by `getRelatedServices` from `config/topical-authority-map.ts` to ensure contextual internal linking and 0 orphan services.
@@ -127,23 +125,21 @@ In addition to the 28 core services, the Smart Service Finder integrates:
 | `"厨房装修"` (ZH) | Kitchen makeover | `house-renovation` & `kitchen-cabinet` | 95% | `精准匹配查询: "厨房装修"` |
 
 ### C. Missing Services Report
-1. **Specialist Aircond Wiring & DB Circuit Upgrades (`aircond-wiring-circuit`)**: Currently flagged `[!] Needs Business Decision` to confirm HVAC contractor registration. Highly recommended due to frequent customer queries about air conditioner power trips.
-2. **Smart Home IoT Switch Automation (`smart-home-automation`)**: Currently flagged `[!] Needs Business Decision` to verify hardware warranty and supplier SLA. Highly recommended due to high demand for smart touch switches in KL condos.
-3. **Solar Water Heater System Maintenance**: Currently not listed; recommended future expansion if specialist rooftop solar heating teams are available.
-4. **Elevated Water Tank & Booster Pump Overhaul**: Currently handled under general plumbing; recommended as a standalone sub-service with dedicated pricing.
+1. **Solar Water Heater System Maintenance**: Currently not listed; recommended future expansion if specialist rooftop solar heating teams are available.
+2. **Elevated Water Tank & Booster Pump Overhaul**: Currently handled under general plumbing; recommended as a standalone sub-service with dedicated pricing.
 
 ### D. Pricing Coverage
-- **Starting From Prices**: All 28 core services and 4 extension services feature clear starting prices (e.g., `"Starting From RM 150"`).
+- **Starting From Prices**: All 28 core services and 2 active extension services feature clear starting prices (e.g., `"Starting From RM 150"`).
 - **Price Type Labelling**: Every card explicitly states its pricing model (`"Starting From"`, `"Fixed Price"`, `"Price Range"`, `"Calculator"`).
 - **Estimation Disclaimer**: Every search result card prominently displays: *"Estimated Price — Final quotation confirmed after on-site or video inspection"* in English, Malay, or Chinese.
 - **Calculator Connection**: 36 interactive cost calculators are linked directly to matching service cards, allowing customers to generate instant customized estimates.
-- **Missing Pricing**: Zero missing prices. All 32 indexed services have published starting prices and package structures.
+- **Missing Pricing**: Zero missing prices. All 30 indexed services have published starting prices and package structures.
 
 ### E. Language Coverage
 - **Malay (Bahasa Malaysia — `ms`)**: 100% customer-facing coverage. All search UI labels, buttons, placeholders, suggestion chips, empty states, error messages, reasons, and business decision flags are localized in natural Malaysian Malay.
 - **English (`en`)**: 100% customer-facing coverage.
 - **Chinese (Simplified Chinese / 简体中文 — `zh`)**: 100% customer-facing coverage. All Chinese terms are segmented and matched accurately without literal machine translation.
-- **Missing Translations**: None. All 32 service entities have complete `en`, `ms`, and `zh` translation dictionaries.
+- **Missing Translations**: None. All 30 active service entities have complete `en`, `ms`, and `zh` translation dictionaries.
 
 ### F. Implementation Report
 - **Completed (`[x]`)**:
@@ -162,8 +158,6 @@ In addition to the 28 core services, the Smart Service Finder integrates:
   - Dead code cleanup: removed unused `site-search.tsx` (old basic search component).
 - **Pending (`[ ]`)**:
   - Monitor live GA4 events once `NEXT_PUBLIC_GA_ID` environment variable is configured.
-- **Blocked / Needs Business Decision (`[!]`)**:
-  - Business confirmation required for `aircond-wiring-circuit` (HVAC licensing check) and `smart-home-automation` (supplier SLA check).
 - **Recommended Future Work**:
   - Integrate an AI-powered natural language chat widget (using our LLM context files in `public/llms-full.txt`) for interactive conversational diagnostics.
   - Expand standalone estimator wizards for any new specialist services approved by management.
