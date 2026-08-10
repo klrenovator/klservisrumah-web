@@ -102,6 +102,10 @@ const PRIORITY_KEYS = [
   "glass-aluminium/aluminium-sliding-window",
   "glass-aluminium/glass-office-partition",
   "glass-aluminium/wall-mirror-installation",
+"door/solid-timber-door-installation",
+  "door/laminate-door-installation",
+  "door/door-planing-and-adjustment",
+  "door/fire-rated-door-installation",
 ];
 
 function checkBlock(key: string, locale: "ms" | "zh", b: SpecialtyLocaleBlock, issues: Issue[]) {
