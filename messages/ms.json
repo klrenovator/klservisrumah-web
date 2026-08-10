@@ -605,7 +605,10 @@
     "viewAllAreas": "Lihat semua kawasan perkhidmatan",
     "nearMe": "Berdekatan Saya",
     "nearMeTitle": "Cari {name} berdekatan anda",
-    "nearMeDesc": "Pilih lokasi anda untuk melihat harga tempatan, ketersediaan dan maklumat perhubungan."
+    "nearMeDesc": "Pilih lokasi anda untuk melihat harga tempatan, ketersediaan dan maklumat perhubungan.",
+    "guides": "Panduan Berkaitan",
+    "guidesEyebrow": "Panduan Pakar",
+    "guidesSub": "Panduan praktikal untuk membantu anda memilih, merancang dan menyelenggara — daripada warna cat hingga kos pengubahsuaian."
   },
   "hero": {
     "subline": "Servis mengecat, siling, partition dan penyelenggaraan rumah di KL & Selangor",

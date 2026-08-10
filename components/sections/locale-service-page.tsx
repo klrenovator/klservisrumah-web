@@ -19,7 +19,8 @@ import { siteConfig } from "@/config/site";
 import { getLocalizedService } from "@/lib/service-i18n";
 import { getServerTranslator } from "@/lib/i18n-server";
 import { getWhatsAppLink } from "@/lib/whatsapp";
-import { warrantyLead } from "@/lib/utils";
+import { warrantyLead, slugify } from "@/lib/utils";
+import { hasSpecialtyLocaleContent } from "@/config/specialty-locale-content";
 import {
   getBreadcrumbSchema,
   getFAQSchema,
@@ -323,20 +324,43 @@ export function LocaleServicePage({ locale, slug }: { locale: "ms" | "zh"; slug:
           </div>
 
           <div className="mt-8 flex flex-col gap-3">
-            {localized.subServices.map((sub, idx) => (
-              <div
-                key={idx}
-                className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 hover:border-[#BAE6FD] hover:shadow-md transition-all flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
-              >
+            {service.subServices.map((enSub, idx) => {
+              const sub = localized.subServices[idx] ?? enSub;
+              const subSlug = slugify(enSub.name);
+              const hasLocale = hasSpecialtyLocaleContent(slug, subSlug, locale);
+              const card = (
                 <div className="flex flex-col gap-1.5">
                   <h3 className="text-base sm:text-lg font-extrabold text-[#075985]">{sub.name}</h3>
                   <p className="text-sm text-[#475569] leading-relaxed font-medium">{sub.desc}</p>
                 </div>
+              );
+              const price = (
                 <span className="text-sm sm:text-base font-extrabold text-[#0EA5E9] shrink-0 bg-[#F0F9FF] px-5 py-2.5 rounded-xl border border-[#BAE6FD] w-fit">
                   {sub.price}
                 </span>
-              </div>
-            ))}
+              );
+              if (hasLocale) {
+                return (
+                  <Link
+                    key={idx}
+                    href={locale === "ms" ? `/ms/services/${slug}/${subSlug}` : `/zh/services/${slug}/${subSlug}`}
+                    className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 hover:border-[#BAE6FD] hover:shadow-md transition-all flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 group"
+                  >
+                    {card}
+                    {price}
+                  </Link>
+                );
+              }
+              return (
+                <div
+                  key={idx}
+                  className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 hover:border-[#BAE6FD] hover:shadow-md transition-all flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
+                >
+                  {card}
+                  {price}
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

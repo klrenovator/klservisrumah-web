@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import { Search, X } from "lucide-react";
 import { searchSmartServices, type SmartSearchResult } from "@/lib/smart-finder-search";
 import { useLang } from "@/context/lang-context";
-import { useTranslations } from "@/hooks/use-translations";
 
 const SEARCH_PLACEHOLDERS = {
   en: "Find any service...",
@@ -26,7 +25,6 @@ interface HeroSearchBarProps {
 export function HeroSearchBar({ onSearch }: HeroSearchBarProps) {
   const router = useRouter();
   const { lang } = useLang();
-  const t = useTranslations();
   const [query, setQuery] = useState("");
   const [isFocused, setIsFocused] = useState(false);
   const [searchResults, setSearchResults] = useState<SmartSearchResult[]>([]);

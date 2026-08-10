@@ -605,7 +605,10 @@
     "viewAllAreas": "查看所有服务区域",
     "nearMe": "我附近",
     "nearMeTitle": "寻找您附近的{name}",
-    "nearMeDesc": "选择您的位置以查看当地价格、服务时段与联系方式。"
+    "nearMeDesc": "选择您的位置以查看当地价格、服务时段与联系方式。",
+    "guides": "相关指南",
+    "guidesEyebrow": "专家指南",
+    "guidesSub": "实用指南助您选择、规划与维护——从油漆颜色到装修费用。"
   },
   "hero": {
     "subline": "吉隆坡与雪兰莪油漆、天花板、隔墙及家居维修服务",

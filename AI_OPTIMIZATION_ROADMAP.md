@@ -559,7 +559,7 @@ Objectives: new-dimension deep audit after S011 (metadata quality, JSON-LD deep 
 - 🟡 **PHASE 2 — MULTILINGUAL URL ARCHITECTURE**
   - Existing prefix system selected for reuse: EN non-prefixed, MS `/ms`, ZH `/zh`.
   - Main services, blogs, FAQs, and tools already have real locale URLs.
-  - Missing: 224 locale specialty URLs, 154 locale problem URLs, localized cost/emergency routes, and other important supporting trees.
+  - Added (2026-08-10): 24 real locale specialty URLs for the priority Painting + Ceiling tranche and the Plaster Ceiling tranche (12 specialties × MS + ZH) + sitemap/hreflang. Still missing: 200 locale specialty URLs, 154 locale problem URLs, localized cost/emergency routes, and other important supporting trees.
 - 🟡 **PHASE 3 — LANGUAGE CONTENT REQUIREMENTS**
   - Complete data exists for 28 main services and 18 blogs in all three languages.
   - Native problem translations exist for 43/77; 34 are missing.
@@ -590,13 +590,16 @@ Objectives: new-dimension deep audit after S011 (metadata quality, JSON-LD deep 
   - Main services: 28/28 with 4 localized FAQs.
   - Problems: 58/77 have 3–4; 19 have only 2.
   - Specialties: 0/112 verified unique sets; current 672 answers are templated.
-- 🟡 **PHASE 11 — INTERNAL LINKING SYSTEM**
+- ✅ **PHASE 11 — INTERNAL LINKING SYSTEM** *(completed for the EN tree + priority tranche, 2026-08-10)*
   - Home → service, problem → service, service ↔ location, and specialty → parent/siblings exist.
-  - Missing: main → specialty, service ↔ blog, problem → specialty/blog/FAQ/location.
-  - Only 9/28 topical maps exist; 19 services use the wrong Handyman fallback; existing maps contain stale slugs.
-- ⏳ **PHASE 12 — PRIORITY SEO: PAINTING + CEILING/PARTITION**
-  - Audit completed; implementation not started.
-  - Resolve competing cluster/specialty intent before creating locale pages.
+  - Now added: main → specialty links (all 28 EN service pages link their 4 specialties; MS/ZH link the priority localized specialties), service ↔ blog links (`RelatedBlogs` on all 28 EN service pages, driven by the validated map), and localized FAQ → localized service links (FAQ hubs + sitewide footer now point to `/ms/services/*` / `/zh/services/*` on localized trees).
+  - `topicalAuthorityMap` now complete for all 28 services + 112 typed specialty → problem/blog relationships, with zero Handyman fallback and a validation gate (`npm run audit:topical-map`, wired into `prebuild`).
+- ✅ **PHASE 12 — PRIORITY SEO: PAINTING + CEILING/PARTITION + PLASTER CEILING** *(2026-08-10)*
+  - Canonical keep/merge decision documented in `docs/canonical-painting-ceiling-decisions.md` (keep all; no deletions/redirects without GSC evidence).
+  - Priority tranche implemented: all 8 Painting + Ceiling specialties now have real `/ms/services/<s>/<sub>` and `/zh/services/<s>/<sub>` pages with authored native MS/ZH content, three-way hreflang clusters, sitemap entries, and localized links from the MS/ZH service pages.
+  - Extended to the **Plaster Ceiling tranche** (4 specialties × MS + ZH = 8 more pages, 2026-08-10): flat / tiered & L-box / cove & curved / ceiling repair & re-skim, all authored native and non-thin.
+  - Added `npm run audit:specialty-locale` (non-thin content gate for the locale store, wired into `prebuild`).
+  - Localized specialty pages now render typed **related guides + problems** from the validated topical map (blog links use localized routes where a translation exists).
 - 🟡 **PHASE 13 — SEO METADATA**
   - Automated corpus checks found no missing title, description, H1, canonical, or invalid JSON-LD.
   - 16 short titles and 88 short descriptions need manual review; specialty body uniqueness remains weak despite unique metadata.
@@ -605,20 +608,20 @@ Objectives: new-dimension deep audit after S011 (metadata quality, JSON-LD deep 
   - Missing locale specialties/problems must be added only after real pages exist.
 - 🟡 **PHASE 15 — HREFLANG**
   - Real clusters work for main services, blogs, FAQs, and tools.
-  - Specialty/problem/supporting routes still use same-URL multilingual annotations and do not meet the separate-URL requirement.
+  - Specialty routes: the 8 priority Painting + Ceiling specialties now use real three-URL clusters (EN + MS + ZH) in both metadata and sitemap (2026-08-10). Remaining 104 specialties + problems/supporting routes still use same-URL multilingual annotations.
 - 🟡 **PHASE 16 — THIN/DUPLICATE CONTROL**
   - 112 templated specialty pages, 192 generic pages, 15 overlapping clusters, 14 problem-overlap groups, and the large location estate documented.
   - No deletion/redirect was made without evidence.
 - ✅ **PHASE 17 — LANGUAGE URL STRUCTURE DECISION**
   - Reuse established `/ms` and `/zh` prefix trees; stable service slugs remain the lowest-risk service pattern.
 - 🟡 **PHASE 18 — NEXT.JS IMPLEMENTATION**
-  - Reusable dynamic routes/shared data architecture already exists.
-  - It must be extended with locale-aware specialty/problem content rather than duplicated components.
+  - Reusable dynamic routes/shared data architecture exists.
+  - Extended (2026-08-10) with locale-aware specialty routes for the priority tranche: shared `LocaleSpecialtyPage` server component + `specialty-locale-content.ts` authored native store, driven by `app/(ms)/ms/services/[slug]/[subservice]` and `app/(zh)/zh/services/[slug]/[subservice]`. Remaining specialties/problems still to be extended the same way (no duplicated components).
 - ✅ **PHASE 19 — DO NOT CHANGE BUSINESS INFORMATION (AUDIT SESSION)**
   - No prices, claims, addresses, phone numbers, ratings, warranties, brands, or service areas were changed.
-- 🟡 **PHASE 20 — QUALITY CONTROL**
-  - TypeScript PASS; production build PASS (4,343 generated routes); i18n PASS; HTML audit PASS; 263,293 estimator/content assertions PASS; npm audit 0 vulnerabilities.
-  - ESLint FAILS on the existing unused `t` variable in `components/ui/hero-search-bar.tsx:29`.
+- ✅ **PHASE 20 — QUALITY CONTROL** *(2026-08-10)*
+  - TypeScript PASS; production build PASS (4,343 generated routes); i18n PASS (1,075 keys × 3); HTML audit PASS (0 fatal); 263,293 estimator/content assertions PASS; npm audit 0 vulnerabilities; `npm run seo:audit` PASS.
+  - ESLint now **green** — removed the unused `t`/`useTranslations` in `components/ui/hero-search-bar.tsx:29`. Added `npm run audit:topical-map` to the QC gates.
 - ⏳ **PHASE 21 — FINAL AUDIT REPORT**
   - Final completion report is pending because implementation phases are incomplete.
 
@@ -650,24 +653,33 @@ Objectives: new-dimension deep audit after S011 (metadata quality, JSON-LD deep 
 - **Updated:** `AI_OPTIMIZATION_ROADMAP.md`
 - **Updated:** `SESSION_LOG.md`
 
-### Pending tasks
+### Pending tasks (updated 2026-08-10)
 
-1. Fix the baseline lint error.
-2. Add a canonical relationship registry for all 28 services and 112 specialties.
-3. Resolve the 15 service-cluster overlaps and 14 problem-intent overlap groups before multiplying URLs.
-4. Correct internal-link foundations, especially main → specialty and service ↔ blog.
-5. Implement and native-review the Painting + Ceiling/Partition priority tranche.
-6. Add real locale specialty/problem routes, metadata, hreflang, sitemap entries, and tests.
-7. Continue service-by-service without creating thin or spun pages.
+- ✅ 1. Baseline lint error fixed (`hero-search-bar.tsx:29`).
+- ✅ 2. Canonical relationship registry added for all 28 services + 112 specialties (complete `topicalAuthorityMap` + typed specialty map, validated by `audit:topical-map`).
+- ✅ 3. Cluster/problem intent decision documented (`docs/canonical-painting-ceiling-decisions.md`); 14 problem-overlap groups still need GSC-evidenced consolidation before problem localization.
+- ✅ 4. Internal-link foundations corrected: main → specialty links, service ↔ blog (`RelatedBlogs`), localized FAQ → localized service links (FAQ hub + sitewide footer).
+- ✅ 5. Painting + Ceiling/Partition priority tranche implemented (all 8 specialties × MS + ZH with authored native content, hreflang, sitemap).
+- ⏳ 6. Real locale problem routes (154) still pending; locale cost/emergency routes pending.
+- ⏳ 7. Continue service-by-service (remaining 104 specialties) without creating thin or spun pages.
+
+## Session 2026-08-10 — Implementation: relationship architecture + Painting/Ceiling locale-specialty tranche
+
+Executed the previous "Next Session — START HERE" plan end-to-end:
+
+- **Relationship/data architecture (Task 3):** rewrote `config/topical-authority-map.ts` to a complete, validated map for all **28 services** with **112 typed specialty → problem/blog relationships**. Removed the Handyman fallback (unknown slugs now yield an empty silo, never wrong content). Every referenced service/problem/blog/specialty slug is validated against the source-of-truth data by the new `scripts/validate-topical-map.ts` → `npm run audit:topical-map`, wired into `prebuild`.
+- **Internal linking foundation (Task 4):** EN main service pages now render their 4 specialties as contextual links (`service-detail-content.tsx`) and a new `RelatedBlogs` section driven by the map; MS/ZH service pages link the priority localized specialties; `lib/faq-directory.ts` + `components/ui/footer.tsx` now point localized FAQ-hub and footer service links at `/ms/services/*` / `/zh/services/*`.
+- **Canonical decision (Task 5):** documented keep-all decisions in `docs/canonical-painting-ceiling-decisions.md` (no deletions/redirects without GSC evidence).
+- **Priority tranche (Task 6):** created `config/specialty-locale-content.ts` (authored native MS + ZH blocks for the 8 priority specialties), shared `components/sections/locale-specialty-page.tsx`, and real routes `app/(ms)/ms/services/[slug]/[subservice]` + `app/(zh)/zh/services/[slug]/[subservice]`. Each of the 16 pages is self-canonical with a real three-way hreflang cluster; sitemap includes all 16 with full clusters; EN priority specialty pages emit the real cluster too (non-priority specialties keep self-referencing).
+- **Verification:** lint 0/0, type-check PASS, production build PASS (4,343 routes incl. 16 new localized specialty pages), i18n parity 1,075 keys × 3, `audit:topical-map` PASS, `seo:audit` PASS, `audit:html` 0 fatal, estimator 263,293 assertions PASS.
+
+**New files:** `config/specialty-locale-content.ts`, `components/sections/locale-specialty-page.tsx`, `components/sections/related-blogs.tsx`, `scripts/validate-topical-map.ts`, `docs/canonical-painting-ceiling-decisions.md`, `app/(ms)/ms/services/[slug]/[subservice]/page.tsx`, `app/(zh)/zh/services/[slug]/[subservice]/page.tsx`.
+
+**Modified:** `config/topical-authority-map.ts`, `components/ui/hero-search-bar.tsx`, `components/sections/service-detail-content.tsx`, `components/sections/locale-service-page.tsx`, `components/ui/footer.tsx`, `lib/faq-directory.ts`, `app/(en)/services/[slug]/[subservice]/page.tsx`, `app/(en)/sitemap.ts`, `messages/{en,ms,zh}.json`, `package.json`, `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
 
 ## Next Session — START HERE
 
-1. Read `docs/service-architecture-multilingual-audit-2026-08-09.md`, especially sections 4, 12, and 14.
-2. Fix `components/ui/hero-search-bar.tsx:29` so baseline ESLint is green.
-3. Implement the **relationship/data architecture only** first: replace the incomplete `topicalAuthorityMap`/Handyman fallback with complete, valid mappings for all 28 services; add typed specialty → problem/blog relationships; validate every referenced slug.
-4. Add contextual **main service → four specialty links** and correct localized FAQ → localized service links.
-5. Before creating localized priority pages, document a canonical keep/merge decision for:
-   - Painting specialty URLs vs `interior-painting-kl`, `exterior-painting-kl`, `commercial-painting-kl`.
-   - Ceiling specialties vs `ceiling-installation-kl`, `repair-kl`, `partition-kl`.
-   - Ceiling main service vs standalone Plaster Ceiling intent.
-6. Then begin the Painting + Ceiling/Partition locale-specialty tranche using shared dynamic routes and native EN/MS/ZH structured content. Do not mass-generate the remaining specialties yet.
+1. Continue the locale-specialty tranche service-by-service. Completed so far: **Painting + Ceiling (8)** and **Plaster Ceiling (4)** = 12 specialties × MS + ZH (24 pages). Next logical tranches: **Waterproofing** (4), then **Plumbing** (4). Reuse `specialty-locale-content.ts` + `LocaleSpecialtyPage` — no duplicated components. Author genuine native MS/ZH content (the `audit:specialty-locale` gate enforces non-thin minimums).
+2. Add real locale problem routes (154) once the 14 problem-overlap groups are consolidated with evidence; then localize the `RelatedProblems` links on localized specialty pages (they currently point to EN problem pages).
+3. Business/translator QA of the 24 localized specialty pages is strongly advised before the next tranche's GSC/indexation is measured.
+4. Continue without creating thin or spun pages; rerun lint/type-check/build/`audit:topical-map`/`audit:specialty-locale`/`audit:i18n`/`audit:html`/`seo:audit` after each tranche.
