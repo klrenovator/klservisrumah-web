@@ -62,6 +62,10 @@ const PRIORITY_KEYS = [
   "plumbing/toilet-tap-and-sink-installation",
   "plumbing/drain-unclogging-and-cleaning",
   "plumbing/water-heater-and-pump-installation",
+  "handyman/heavy-tv-wall-mounting",
+  "handyman/door-hinge-and-lockset-repair",
+  "handyman/furniture-assembly-ikea-taobao",
+  "handyman/curtains-blinds-and-shelves-hanging",
 ];
 
 function checkBlock(key: string, locale: "ms" | "zh", b: SpecialtyLocaleBlock, issues: Issue[]) {
