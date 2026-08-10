@@ -950,3 +950,33 @@ Started exactly from the preceding **Next Session — START HERE** section. Sele
 2. Add real locale problem routes (154) only after the 14 problem-overlap groups are consolidated with evidence; then localize `RelatedProblems` links on localized specialty pages (they currently point to EN problem pages—documented and still blocked).
 3. Obtain business/translator QA for the completed localized specialty pages (112 so far) before measuring GSC indexation; this requires an owner/translator and cannot be completed from repository code alone.
 4. Do not create thin or spun pages; rerun lint, type-check, build, topical-map, specialty-locale, i18n, HTML and SEO audits after every tranche.
+
+### ✅ Session 2026-08-10 (part 14) — Glass & Aluminium locale-specialty tranche
+
+**Status:** ✅ COMPLETED
+
+Continued from the final **Next Session — START HERE** section and selected the listed **Glass & Aluminium** tranche. No standalone Air Conditioning content was created.
+
+- Added genuine native Bahasa Malaysia + Simplified Chinese content for all four Glass & Aluminium specialties in `config/specialty-locale-content.ts`:
+  1. `glass-aluminium/frameless-shower-screen` — Skrin Pancuran Tanpa Bingkai / 无框淋浴屏 (from RM420/panel)
+  2. `glass-aluminium/aluminium-sliding-window` — Tingkap Gelangsar Aluminium / 铝合金推拉窗 (from RM320/sq ft)
+  3. `glass-aluminium/glass-office-partition` — Partition Pejabat Kaca / 玻璃办公隔断 (from RM220/sq ft)
+  4. `glass-aluminium/wall-mirror-installation` — Pemasangan Cermin Dinding / 墙镜安装 (from RM320)
+- Every block has an authored native name, tagline, substantive description, five highlights, five process steps, four FAQs, meta title and meta description. Source facts remain tied to the published service record: 10–12mm tempered shower glass, drip-edge/sanitary silicone and 12-month seal cover; 5mm clear/tinted glass, nylon rollers/weatherstrip and Akasia/Hua Ho/YKK AP profiles for windows; 10–12mm office partitions with U-channel or frameless systems; and 5–6mm silver-backed mirrors fixed with concealed aluminium channels. No thin or spun pages.
+- The shared `LocaleSpecialtyPage` architecture publishes the eight localized routes, upgrades all four EN specialty hreflang clusters to EN/MS/ZH/x-default, preserves typed related-problem sections, localized service links and real 404s. `PRIORITY_KEYS` now requires every one of the four entries.
+- Generated AI context and sitemap now report **3,416 indexable URLs** (+8).
+
+#### Verification
+- PASS: lint (0 errors/warnings), type-check, topical map (28/28; 112 typed specialty relationships), locale gate (**60 specialties × MS/ZH = 120 native blocks**), i18n parity (1,074 × 3), and estimator suite (263,293 assertions).
+- PASS: production build (**4,463 routes**), HTML audit (**4,455 pages**, 0 fatal / 0 warnings), SEO audit and `npm audit` (0 vulnerabilities).
+- Production smoke: native MS shower screen, native ZH aluminium sliding window and EN office partition pages return 200 with correct language/title/self-canonical and localized cluster URLs; unknown MS specialty returns a real 404.
+
+### Files
+- Modified: `config/specialty-locale-content.ts`, `scripts/validate-specialty-locale.ts`, `docs/seo-audit-report.md`, `public/llms-full.txt`, `public/site-summary.json`, `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
+
+## Next Session — START HERE
+
+1. Continue the locale-specialty tranche service-by-service. Completed: Painting + Ceiling (8), Plaster Ceiling (4), Waterproofing (4), Plumbing (4), Handyman (4), Electrical (4), Tiling (4), Flooring (4), Kitchen Cabinet (4), Carpentry (4), Epoxy Flooring (4), CCTV (4), Window Repair (4), and **Glass & Aluminium (4)** = **60 specialties × MS + ZH (120 localized pages)**. Pick the next coherent four-specialty tranche from an actual remaining high-value service: **Door** (4) or **Roofing** (4). Reuse `specialty-locale-content.ts` + `LocaleSpecialtyPage` and author genuine native MS/ZH content. **Do not create Air Conditioning pages or content** (owner confirmed not offered).
+2. Add real locale problem routes (154) only after the 14 problem-overlap groups are consolidated with evidence; then localize `RelatedProblems` links on localized specialty pages (they currently point to EN problem pages—documented and still blocked).
+3. Obtain business/translator QA for the completed localized specialty pages (120 so far) before measuring GSC indexation; this requires an owner/translator and cannot be completed from repository code alone.
+4. Do not create thin or spun pages; rerun lint, type-check, build, topical-map, specialty-locale, i18n, HTML and SEO audits after every tranche.

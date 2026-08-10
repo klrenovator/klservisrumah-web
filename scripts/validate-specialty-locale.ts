@@ -98,6 +98,10 @@ const PRIORITY_KEYS = [
   "window-repair/window-seal-replacement",
   "window-repair/window-handle-and-hinge-repair",
   "window-repair/sliding-window-roller-replacement",
+  "glass-aluminium/frameless-shower-screen",
+  "glass-aluminium/aluminium-sliding-window",
+  "glass-aluminium/glass-office-partition",
+  "glass-aluminium/wall-mirror-installation",
 ];
 
 function checkBlock(key: string, locale: "ms" | "zh", b: SpecialtyLocaleBlock, issues: Issue[]) {

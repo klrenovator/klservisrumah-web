@@ -1690,3 +1690,36 @@ Started exactly from the final "Next Session — START HERE" section of `AI_OPTI
 #### Next session
 - Continue the locale-specialty tranche with a real remaining high-value service: **Glass & Aluminium** (4) or **Door** (4) or **Roofing** (4). Never create standalone Air Conditioning content.
 - Locale problem routes remain blocked until evidence-based consolidation of the 14 overlap groups; translator/business QA remains owner-side.
+
+---
+
+## Session 2026-08-10 (part 14) — Glass & Aluminium locale-specialty tranche
+
+Continued exactly from the final **Next Session — START HERE** section of `AI_OPTIMIZATION_ROADMAP.md`. Selected **Glass & Aluminium**, the next listed real high-value service. No standalone Air Conditioning content was created.
+
+### Completed
+- Authored native Bahasa Malaysia and Simplified Chinese content for all four Glass & Aluminium specialties in `config/specialty-locale-content.ts`:
+  - `glass-aluminium/frameless-shower-screen` — Skrin Pancuran Tanpa Bingkai / 无框淋浴屏 (from RM420/panel)
+  - `glass-aluminium/aluminium-sliding-window` — Tingkap Gelangsar Aluminium / 铝合金推拉窗 (from RM320/sq ft)
+  - `glass-aluminium/glass-office-partition` — Partition Pejabat Kaca / 玻璃办公隔断 (from RM220/sq ft)
+  - `glass-aluminium/wall-mirror-installation` — Pemasangan Cermin Dinding / 墙镜安装 (from RM320)
+- Each locale block contains authored name, tagline, substantive description, 5 highlights, 5 process steps, 4 FAQs, meta title and meta description. Content is grounded in the published Glass & Aluminium record: 10–12mm tempered shower glass, drip edges and sanitary silicone, 5mm clear/tinted window glass with nylon rollers/weatherstrip, Akasia/Hua Ho/YKK AP profiles, 10–12mm office partitions with U-channel or frameless systems, and 5–6mm silver-backed mirrors with concealed aluminium channels.
+- Added all four keys to `PRIORITY_KEYS`, retaining the non-thin build gate.
+- Reused the shared locale-specialty architecture: eight MS/ZH routes now publish, the four EN specialty pages emit real EN/MS/ZH/x-default clusters, typed related problems render, and unknown localized specialty slugs remain true 404s.
+- Sitemap and generated AI context now contain 3,416 indexable URLs (+8 localized specialty URLs).
+
+### Verification
+- PASS: lint (0 errors/warnings), type-check, topical-map (28/28 services; 112 typed relationships), specialty locale gate (60 specialties × MS/ZH = 120 native blocks), and i18n parity (1,074 keys × 3 locales).
+- PASS: build (4,463 routes), prebuild estimator suite (263,293 assertions), HTML quality audit (4,455 pages; 0 fatal/0 warnings), SEO audit, and `npm audit` (0 vulnerabilities).
+- Production smoke PASS: native MS shower-screen, native ZH sliding-window and EN office-partition pages return 200 with correct language, title and self-canonical; localized URLs are present in the page cluster; unknown MS specialty returns 404. Sitemap exposes the expected Glass & Aluminium specialty URLs.
+
+### Files changed
+- `config/specialty-locale-content.ts`
+- `scripts/validate-specialty-locale.ts`
+- `docs/seo-audit-report.md`
+- `public/llms-full.txt`, `public/site-summary.json`
+- `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`
+
+### Next session
+- Continue with **Door** (4) or **Roofing** (4) only; never create standalone Air Conditioning content.
+- Locale problem routes remain blocked pending evidence-based consolidation of the 14 overlap groups. Business/translator QA remains owner-side.
