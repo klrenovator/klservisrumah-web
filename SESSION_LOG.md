@@ -1279,3 +1279,8 @@ Waterproofing (4) then Plumbing (4) locale-specialty tranches; add real locale p
 - **Sitemap:** 3,328 indexable URLs.
 - **Build:** 4,375 routes.
 - All audit gates green: lint, type-check, build, topical-map, specialty-locale, i18n, seo-audit, html, estimators, npm audit.
+
+### 2026-08-10 — Locale specialty tranche: Plumbing
+- Completed the four Plumbing specialties in native MS/ZH (8 localized pages) using the existing shared locale-specialty route/component architecture.
+- Extended the specialty locale validation priority list to require all four Plumbing entries.
+- Full verification passed: type-check, lint, topical-map, specialty-locale, i18n, build, SEO audit and HTML audit.

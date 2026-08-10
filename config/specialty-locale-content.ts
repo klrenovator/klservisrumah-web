@@ -942,6 +942,468 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       metaDesc: "吉隆坡与雪兰莪潮湿墙面、油漆剥落与盐析修复。环氧屏障、盐分处理与重新涂刷。免费报价。",
     },
   },
+  /* ── PLUMBING ─────────────────────────────────────────────────────────── */
+  "plumbing/water-leakage-diagnosis-and-repair": {
+    ms: {
+      name: "Pengesanan & Pembaikan Kebocoran Air",
+      tagline:
+        "Mengesan punca kebocoran paip, dinding atau siling sebelum membaikinya dengan kaedah yang tepat.",
+      description:
+        "Kebocoran yang tidak dirawat boleh merosakkan siling, cat dan struktur rumah serta menaikkan bil air. Tukang paip kami memeriksa simptom di tapak, mengasingkan punca pada paip bekalan, sambungan atau kelengkapan, lalu menerangkan pilihan pembaikan sebelum kerja bermula. Kami utamakan pembaikan setempat yang munasabah dan melakukan ujian semula selepas kerja supaya kawasan yang dibaiki benar-benar kering dan berfungsi.",
+      highlights: [
+        "Pemeriksaan punca kebocoran di paip, sambungan dan kelengkapan",
+        "Pilihan pembaikan diterangkan sebelum kerja dimulakan",
+        "Pembaikan setempat untuk mengurangkan kerja buka yang tidak perlu",
+        "Ujian tekanan atau aliran selepas pembaikan",
+        "Sesuai untuk rumah, kondominium dan premis kecil",
+      ],
+      process: [
+        {
+          step: "01",
+          title: "Pemeriksaan simptom",
+          desc: "Kami menilai kesan air, meter, tekanan dan lokasi paip yang disyaki bocor.",
+        },
+        {
+          step: "02",
+          title: "Kenal pasti punca",
+          desc: "Sambungan, injap dan paip diuji untuk membezakan kebocoran aktif daripada kesan lama.",
+        },
+        {
+          step: "03",
+          title: "Pembaikan tepat",
+          desc: "Bahagian rosak dibaiki atau diganti dengan bahan yang sesuai selepas persetujuan anda.",
+        },
+        {
+          step: "04",
+          title: "Ujian & kemasan",
+          desc: "Kami menguji aliran semula, memeriksa kebocoran dan membersihkan kawasan kerja.",
+        },
+      ],
+      faqs: [
+        {
+          q: "Perlukah pecahkan semua jubin untuk mencari kebocoran?",
+          a: "Tidak semestinya. Kami mula dengan pemeriksaan dan ujian pada titik yang boleh dicapai; kerja membuka hanya dicadangkan apabila punca memerlukannya.",
+        },
+        {
+          q: "Bolehkah kebocoran kecil menaikkan bil air?",
+          a: "Ya. Kebocoran berterusan, walaupun kecil, boleh membazir air dan menyebabkan bacaan meter meningkat dari masa ke masa.",
+        },
+        {
+          q: "Adakah anda membaiki paip dalam dinding?",
+          a: "Kami akan menilai akses dan keadaan paip dahulu. Jika perlu membuka kemasan, skop serta pilihan pembaikan dibincangkan dengan jelas terlebih dahulu.",
+        },
+        {
+          q: "Apa perlu dibuat sebelum tukang paip tiba?",
+          a: "Jika air mengalir kuat, tutup injap utama jika selamat dan alihkan barang daripada kawasan basah. Jangan sentuh suis berhampiran air.",
+        },
+      ],
+      metaTitle: "Pengesanan & Pembaikan Kebocoran Air KL | Plumber",
+      metaDesc:
+        "Pengesanan punca dan pembaikan kebocoran paip, dinding atau siling di KL & Selangor. Pemeriksaan jelas, pembaikan tepat dan ujian semula.",
+    },
+    zh: {
+      name: "漏水检测与维修",
+      tagline: "先找出水管、墙面或天花的漏水源头，再采用合适方法进行维修。",
+      description:
+        "未处理的漏水会损坏天花、油漆与家居结构，也可能令水费上升。我们的水管团队会在现场检查水渍、阀门、接头及可接触管线，判断漏水是否仍在发生，并在施工前说明可行的维修范围。我们优先采用合理的局部维修方式，完工后再测试水流与接头，确保维修位置恢复正常。",
+      highlights: [
+        "检查水管、接头与洁具的漏水源头",
+        "施工前清楚说明维修选择",
+        "优先局部维修，减少不必要拆除",
+        "维修后进行水流或压力测试",
+        "适合住宅、公寓及小型商铺",
+      ],
+      process: [
+        {
+          step: "01",
+          title: "现场检查",
+          desc: "检查水渍、水表、压力及疑似漏水的位置。",
+        },
+        {
+          step: "02",
+          title: "确认源头",
+          desc: "测试接头、阀门与管线，区分活跃漏水和旧水痕。",
+        },
+        {
+          step: "03",
+          title: "针对性维修",
+          desc: "经您同意后维修或更换损坏部件，并选用合适材料。",
+        },
+        {
+          step: "04",
+          title: "复测交接",
+          desc: "恢复供水后检查是否渗漏，并清理施工区域。",
+        },
+      ],
+      faqs: [
+        {
+          q: "找漏水一定要敲掉所有瓷砖吗？",
+          a: "不一定。我们会先检查可接触的位置和症状，只有在源头需要时才建议有限范围的拆开。",
+        },
+        {
+          q: "小漏水会让水费变高吗？",
+          a: "会。持续的小漏水也会长期浪费水，令水表读数和水费逐渐增加。",
+        },
+        {
+          q: "墙内水管漏水可以修吗？",
+          a: "可以先评估管线位置和施工入口。如需打开饰面，我们会先说明范围、风险和维修方案。",
+        },
+        {
+          q: "师傅到前我该做什么？",
+          a: "若水流很大，在安全情况下关闭总水阀，并移开湿区物品。水靠近电源时请勿触碰开关。",
+        },
+      ],
+      metaTitle: "吉隆坡漏水检测与维修 | 专业水管服务",
+      metaDesc:
+        "吉隆坡与雪兰莪水管、墙面及天花漏水检测维修。先查明源头，清楚报价，维修完成后复测，确保供水恢复正常。",
+    },
+  },
+  "plumbing/toilet-tap-and-sink-installation": {
+    ms: {
+      name: "Pemasangan Tandas, Paip & Sinki",
+      tagline:
+        "Memasang atau mengganti mangkuk tandas, paip, kepala pancuran dan singki dengan sambungan yang kemas.",
+      description:
+        "Kelengkapan bilik air dan dapur perlu dipasang dengan ukuran, sambungan dan pengedapan yang betul supaya tidak longgar atau menitis selepas digunakan. Kami membantu pemasangan serta penggantian tandas, paip air, kepala pancuran, sinki dan aksesori berkaitan. Pasukan kami memeriksa kedudukan paip masuk dan keluar, memasang kelengkapan mengikut spesifikasi produk, kemudian menguji fungsi serta kebocoran sebelum serahan.",
+      highlights: [
+        "Pemasangan tandas, bidet, paip dan kepala pancuran",
+        "Pemasangan sinki dapur atau bilik air serta perangkap air",
+        "Semakan kedudukan, sambungan dan pengedapan",
+        "Ujian aliran, siraman dan kebocoran sebelum serahan",
+        "Boleh memasang kelengkapan yang dibekalkan pelanggan",
+      ],
+      process: [
+        {
+          step: "01",
+          title: "Semak kelengkapan",
+          desc: "Kami mengesahkan model, ukuran dan titik sambungan sedia ada sebelum memasang.",
+        },
+        {
+          step: "02",
+          title: "Sedia sambungan",
+          desc: "Injap, paip masuk, saliran dan permukaan pemasangan disediakan dengan kemas.",
+        },
+        {
+          step: "03",
+          title: "Pasang & kedap",
+          desc: "Kelengkapan dipasang rata, diketatkan dengan betul dan dikedapkan pada titik perlu.",
+        },
+        {
+          step: "04",
+          title: "Uji fungsi",
+          desc: "Kami menguji aliran air, siraman dan saliran untuk memastikan tiada titisan atau kebocoran.",
+        },
+      ],
+      faqs: [
+        {
+          q: "Bolehkah anda memasang tandas atau paip yang saya beli sendiri?",
+          a: "Boleh. Hantar model atau gambar jika ada supaya kami boleh semak kesesuaian asas sebelum lawatan.",
+        },
+        {
+          q: "Adakah harga termasuk kelengkapan baru?",
+          a: "Harga pemasangan dan bahan kecil bergantung pada skop. Kelengkapan utama boleh dibekalkan pelanggan atau disebut harga berasingan.",
+        },
+        {
+          q: "Berapa lama pemasangan sinki biasa?",
+          a: "Jika titik paip sedia ada sesuai, pemasangan biasa lazimnya selesai dalam satu lawatan. Kerja ubah suai paip memerlukan masa tambahan.",
+        },
+        {
+          q: "Adakah sambungan lama yang bocor boleh ditukar sekali?",
+          a: "Ya. Kami boleh memeriksa hos, injap dan perangkap air semasa lawatan lalu mencadangkan penggantian jika sudah haus.",
+        },
+      ],
+      metaTitle: "Pemasangan Tandas, Paip & Sinki KL | Tukang Paip",
+      metaDesc:
+        "Pemasangan dan penggantian tandas, paip, pancuran serta sinki di KL & Selangor. Sambungan kemas, pengedapan betul dan ujian kebocoran.",
+    },
+    zh: {
+      name: "马桶、水龙头与水槽安装",
+      tagline: "规范安装或更换马桶、水龙头、花洒和水槽，连接整齐并完成测试。",
+      description:
+        "浴室和厨房洁具必须按正确尺寸、接口及密封方式安装，才能避免日后松动或滴漏。我们提供马桶、水龙头、花洒、水槽和相关配件的安装与更换服务。团队会先检查进水、排水和安装位置，依照产品要求完成固定与密封，再测试冲水、排水及各接口情况后交接。",
+      highlights: [
+        "安装马桶、喷枪、水龙头和花洒",
+        "安装厨房或浴室水槽及存水弯",
+        "检查位置、接头和密封处理",
+        "交接前测试水流、冲水与渗漏",
+        "可安装客户自备的洁具",
+      ],
+      process: [
+        {
+          step: "01",
+          title: "核对洁具",
+          desc: "确认产品型号、尺寸和原有接口位置。",
+        },
+        {
+          step: "02",
+          title: "准备接口",
+          desc: "整理进水阀、排水口及安装表面，确保接口适配。",
+        },
+        {
+          step: "03",
+          title: "安装密封",
+          desc: "固定洁具并在需要的位置做好密封和连接。",
+        },
+        {
+          step: "04",
+          title: "功能测试",
+          desc: "测试水流、冲水和排水，确认没有滴漏后交接。",
+        },
+      ],
+      faqs: [
+        {
+          q: "我自己买的马桶或水龙头可以安装吗？",
+          a: "可以。若方便，请先提供型号或照片，我们可在上门前初步确认接口是否合适。",
+        },
+        {
+          q: "报价包括新的洁具吗？",
+          a: "安装费和小型辅料会按现场范围计算；主要洁具可由您提供，也可另行报价供应。",
+        },
+        {
+          q: "普通水槽安装要多久？",
+          a: "原有水管位置合适时，通常一次上门可完成；如需改管或改柜体，工时会增加。",
+        },
+        {
+          q: "旧接口漏水能一起处理吗？",
+          a: "可以。我们会检查软管、角阀和存水弯，如发现老化会说明更换建议。",
+        },
+      ],
+      metaTitle: "吉隆坡马桶、水龙头与水槽安装 | 水管服务",
+      metaDesc:
+        "吉隆坡与雪兰莪马桶、水龙头、花洒及水槽安装更换。接口规范、密封整齐，交接前测试漏水。",
+    },
+  },
+  "plumbing/drain-unclogging-and-cleaning": {
+    ms: {
+      name: "Membuka Sumbatan & Membersih Longkang",
+      tagline:
+        "Membuka sumbatan singki, lantai, tandas dan paip buangan dengan pemeriksaan yang selamat.",
+      description:
+        "Air yang lambat turun, bau dari saliran atau tandas yang melimpah biasanya menandakan sumbatan pada perangkap atau paip buangan. Kami memeriksa lokasi dan jenis sumbatan sebelum menggunakan alat yang sesuai untuk membersihkan laluan. Selepas itu, kami menguji aliran air dan memberi panduan penjagaan asas. Untuk paip rosak atau sumbatan jauh, kami akan menerangkan langkah susulan yang diperlukan tanpa membuat janji yang tidak munasabah.",
+      highlights: [
+        "Membuka sumbatan singki, floor trap dan tandas",
+        "Pemeriksaan punca bau dan aliran perlahan",
+        "Alat pembersihan sesuai dengan jenis saliran",
+        "Ujian aliran selepas kerja pembersihan",
+        "Nasihat pencegahan sumbatan berulang",
+      ],
+      process: [
+        {
+          step: "01",
+          title: "Semak saliran",
+          desc: "Kami menguji aliran dan mengenal pasti saliran atau perangkap yang tersumbat.",
+        },
+        {
+          step: "02",
+          title: "Akses sumbatan",
+          desc: "Penutup atau perangkap dibuka dengan cermat untuk mendapatkan laluan kerja.",
+        },
+        {
+          step: "03",
+          title: "Bersih paip",
+          desc: "Sisa dibersihkan menggunakan alat yang sesuai tanpa merosakkan kelengkapan.",
+        },
+        {
+          step: "04",
+          title: "Uji aliran",
+          desc: "Air dialirkan semula untuk memastikan saliran bergerak lancar dan kawasan dibersihkan.",
+        },
+      ],
+      faqs: [
+        {
+          q: "Bolehkah sumbatan tandas dibuka pada hari yang sama?",
+          a: "Bagi sumbatan biasa, kami cuba bantu dalam lawatan yang sama tertakluk kepada akses, tahap sumbatan dan jadual pasukan.",
+        },
+        {
+          q: "Patutkah saya tuang bahan kimia kuat ke dalam paip?",
+          a: "Elakkan mencampurkan bahan kimia kerana ia boleh membahayakan dan merosakkan paip. Beritahu kami bahan yang telah digunakan sebelum kerja.",
+        },
+        {
+          q: "Mengapa sinki masih berbau selepas dibersihkan?",
+          a: "Bau boleh datang daripada perangkap kering, sisa makanan atau masalah pengudaraan. Kami akan periksa punca yang boleh dicapai.",
+        },
+        {
+          q: "Bagaimana mencegah sumbatan berulang?",
+          a: "Gunakan penapis sisa, jangan tuang minyak masak ke sinki dan bersihkan perangkap secara berkala.",
+        },
+      ],
+      metaTitle: "Buka Sumbatan Longkang, Sinki & Tandas KL | Plumber",
+      metaDesc:
+        "Perkhidmatan membuka sumbatan dan membersih saliran singki, tandas serta floor trap di KL & Selangor. Pemeriksaan, ujian aliran dan kerja kemas.",
+    },
+    zh: {
+      name: "排水管疏通与清洁",
+      tagline: "处理水槽、地漏、马桶和排水管堵塞，并在完工后测试排水。",
+      description:
+        "排水慢、下水道异味或马桶溢水，通常表示存水弯或排水管出现堵塞。我们会先检查堵塞位置和情况，再使用适合的工具清理通道。完成后会测试水流，并提供基本保养建议。若发现管线损坏或深处堵塞，我们会如实说明后续所需的处理方式。",
+      highlights: [
+        "疏通水槽、地漏和马桶堵塞",
+        "检查异味与排水缓慢的原因",
+        "按排水状况选择合适工具",
+        "清洁后测试排水水流",
+        "提供防止重复堵塞的建议",
+      ],
+      process: [
+        {
+          step: "01",
+          title: "检查排水",
+          desc: "测试水流并确认堵塞的排水口或存水弯。",
+        },
+        {
+          step: "02",
+          title: "打开入口",
+          desc: "小心拆开可接触的盖板或存水弯，建立施工入口。",
+        },
+        {
+          step: "03",
+          title: "清除堵塞",
+          desc: "使用适当工具清除积聚物，避免损坏洁具。",
+        },
+        {
+          step: "04",
+          title: "复测清理",
+          desc: "重新放水测试排水顺畅度，并清理工作区域。",
+        },
+      ],
+      faqs: [
+        {
+          q: "马桶堵塞可以当天处理吗？",
+          a: "一般堵塞我们会尽量安排同次上门处理，实际仍取决于入口、堵塞程度和团队档期。",
+        },
+        {
+          q: "可以先倒强力化学剂通管吗？",
+          a: "不建议混用化学剂，可能伤害人身或管道。上门前请告知已经使用过的产品。",
+        },
+        {
+          q: "清完后水槽为什么仍有异味？",
+          a: "异味可能来自干涸存水弯、食物残渣或通气问题；我们会检查现场可接触的原因。",
+        },
+        {
+          q: "如何避免再堵塞？",
+          a: "使用滤网、不要把食用油倒入水槽，并定期清理存水弯和滤网。",
+        },
+      ],
+      metaTitle: "吉隆坡排水管、水槽与马桶疏通 | 水管服务",
+      metaDesc:
+        "吉隆坡与雪兰莪水槽、马桶及地漏堵塞疏通清洁。先检查再处理，完工后测试排水，并提供日常保养建议。",
+    },
+  },
+  "plumbing/water-heater-and-pump-installation": {
+    ms: {
+      name: "Pemasangan Pemanas Air & Pam Air",
+      tagline:
+        "Memasang pemanas air dan pam air dengan semakan sambungan air, tekanan dan keselamatan tapak.",
+      description:
+        "Pemanas air dan pam air perlu dipilih serta dipasang mengikut keadaan bekalan air, ruang dan sambungan sedia ada. Kami memeriksa titik paip, injap, tekanan dan kedudukan pemasangan sebelum memasang unit. Selepas sambungan siap, kami menguji aliran dan fungsi asas bersama pelanggan. Kerja elektrik perlu dikendalikan oleh pihak yang berkelayakan; kami akan menyelaras skop yang jelas jika sambungan elektrik diperlukan.",
+      highlights: [
+        "Pemasangan pemanas air simpanan atau segera",
+        "Pemasangan pam penggalak dan semakan tekanan air",
+        "Pemeriksaan injap, paip dan kedudukan unit",
+        "Ujian aliran serta fungsi selepas pemasangan",
+        "Penerangan penggunaan asas dan titik penutupan air",
+      ],
+      process: [
+        {
+          step: "01",
+          title: "Nilai tapak",
+          desc: "Kami menyemak tekanan air, ruang, titik paip dan model unit yang akan dipasang.",
+        },
+        {
+          step: "02",
+          title: "Sedia sambungan",
+          desc: "Injap serta sambungan paip disusun untuk akses dan penyelenggaraan yang munasabah.",
+        },
+        {
+          step: "03",
+          title: "Pasang unit",
+          desc: "Unit dipasang kukuh dan paip disambung mengikut keperluan produk.",
+        },
+        {
+          step: "04",
+          title: "Uji & terangkan",
+          desc: "Kami menguji aliran air dan menerangkan penggunaan serta injap penutupan kepada pelanggan.",
+        },
+      ],
+      faqs: [
+        {
+          q: "Bolehkah anda memasang pemanas air yang saya beli?",
+          a: "Boleh, tertakluk kepada kesesuaian model dan keadaan paip di tapak. Kongsi model atau gambar sebelum lawatan jika boleh.",
+        },
+        {
+          q: "Adakah pam boleh menyelesaikan semua masalah tekanan rendah?",
+          a: "Tidak semua. Kami akan semak punca tekanan rendah dahulu kerana masalah mungkin datang daripada paip, injap atau bekalan bangunan.",
+        },
+        {
+          q: "Adakah kerja pendawaian termasuk?",
+          a: "Sambungan elektrik mesti dibuat oleh pihak berkelayakan. Kami jelaskan skop paip dan boleh menyelaras keperluan berkaitan.",
+        },
+        {
+          q: "Apa yang perlu disediakan sebelum pemasangan?",
+          a: "Sediakan unit, akses kepada titik air dan ruang kerja. Jika tinggal di kondominium, semak juga peraturan pengurusan bangunan.",
+        },
+      ],
+      metaTitle: "Pemasangan Pemanas Air & Pam Air KL | Tukang Paip",
+      metaDesc:
+        "Pemasangan pemanas air dan pam penggalak di KL & Selangor. Semakan paip, tekanan, sambungan kemas dan ujian fungsi.",
+    },
+    zh: {
+      name: "热水器与水泵安装",
+      tagline: "安装热水器和增压水泵，并检查供水、压力和现场接口。",
+      description:
+        "热水器和水泵必须配合现场供水、空间和原有接口选择及安装。我们会先检查水管位置、阀门、水压和安装位置，再完成设备固定与管道连接。完成后会与客户测试基本水流和功能。电气连接必须由合格人员处理；如涉及电工工作，我们会清楚说明及协调相关范围。",
+      highlights: [
+        "安装储水式或即热式热水器",
+        "安装增压水泵并检查水压",
+        "检查阀门、水管和设备位置",
+        "安装后测试水流与基本功能",
+        "说明基本使用方式和总水阀位置",
+      ],
+      process: [
+        {
+          step: "01",
+          title: "现场评估",
+          desc: "检查水压、空间、水管点位和待安装设备型号。",
+        },
+        {
+          step: "02",
+          title: "准备连接",
+          desc: "安排阀门及管道连接，保留合理的检修空间。",
+        },
+        {
+          step: "03",
+          title: "固定设备",
+          desc: "稳固安装设备，并依产品要求完成水管连接。",
+        },
+        {
+          step: "04",
+          title: "测试说明",
+          desc: "测试水流与基本功能，并向客户说明使用和关闭水阀的方法。",
+        },
+      ],
+      faqs: [
+        {
+          q: "我买好的热水器可以请你们安装吗？",
+          a: "可以，前提是型号和现场水管条件合适。如方便，请先提供型号或照片。",
+        },
+        {
+          q: "安装水泵能解决所有水压低问题吗？",
+          a: "不一定。我们会先检查原因，低水压也可能来自旧管、阀门或大楼供水系统。",
+        },
+        {
+          q: "报价包含电线工作吗？",
+          a: "电气连接应由合格人员完成。我们会清楚划分水管安装范围，并协调相关需求。",
+        },
+        {
+          q: "安装前需要准备什么？",
+          a: "准备好设备、供水点的通行空间；公寓住户也应先确认管理处的施工规定。",
+        },
+      ],
+      metaTitle: "吉隆坡热水器与水泵安装 | 专业水管服务",
+      metaDesc:
+        "吉隆坡与雪兰莪热水器、增压水泵安装。检查水管与水压，连接整齐，安装后测试基本功能，并说明日常使用注意事项。",
+    },
+  },
+
 };
 
 /**
