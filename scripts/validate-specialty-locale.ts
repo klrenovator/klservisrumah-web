@@ -74,6 +74,10 @@ const PRIORITY_KEYS = [
   "tiling/wall-tiling-installation",
   "tiling/large-format-slab-tiling",
   "tiling/tile-repair-and-re-grouting",
+  "flooring/spc-click-lock-flooring-install",
+  "flooring/laminate-flooring-install",
+  "flooring/luxury-vinyl-plank-lvp-install",
+  "flooring/skirting-and-transition-strip-fitting",
 ];
 
 function checkBlock(key: string, locale: "ms" | "zh", b: SpecialtyLocaleBlock, issues: Issue[]) {

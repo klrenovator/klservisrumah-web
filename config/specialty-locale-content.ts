@@ -2082,6 +2082,248 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
     },
   },
 
+  /* ── FLOORING ─────────────────────────────────────────────────────── */
+  "flooring/spc-click-lock-flooring-install": {
+    ms: {
+      name: "Pemasangan Lantai SPC Click-Lock",
+      tagline: "Pemasangan lantai SPC kalis air 100% seluruh rumah dengan sistem click-lock tanpa gam, underlay terbina dalam dan jaminan kerja 5 tahun.",
+      description:
+        "Lantai SPC (Stone Polymer Composite) ialah pilihan paling popular untuk rumah Malaysia kerana teras batu-plastiknya kalis air 100%, stabil dimensi dan tahan lama sehingga 15+ tahun. Kami membekalkan dan memasang jenama FloorEver, Quick-Step, Kronotex dan Audacity dengan sistem click-lock—tiada gam, tiada paku, tiada habuk pengisaran. Setiap projek bermula dengan ujian kelembapan subfloor; kandungan melebihi 3% memerlukan halangan wap 6-mil untuk mengelakkan cupping dan kulat. Subfloor yang tidak rata diratakan dengan sebatian self-levelling (toleransi 3mm atas 2m) sebelum papan dipasang baris demi baris dengan sambungan selang-seli dan jurang pengembangan 8–12mm pada semua dinding. Bingkai pintu diundercut untuk kemasan rata, dan skirting serta jalur peralihan dipasang untuk kemasan bilik-ke-bilik yang kemas. Harga dari RM14 setiap kaki persegi termasuk underlayment dan kemasan skirting standard.",
+      highlights: [
+        "Papan SPC kalis air 100% sesuai untuk dapur, bilik mandi dan rumah berkelembapan tinggi",
+        "Sistem click-lock tanpa gam, tanpa paku dan tanpa habuk di tapak",
+        "Underlayment dan halangan wap disertakan mengikut keputusan ujian kelembapan",
+        "Jurang pengembangan 8–12mm, undercut bingkai pintu dan kemasan skirting profesional",
+        "Jaminan kerja pemasangan 5 tahun dan jangka hayat lantai 15+ tahun",
+      ],
+      process: [
+        { step: "01", title: "Ujian Kelembapan & Pemeriksaan", desc: "Kandungan lembapan subfloor diukur; melebihi 3% memerlukan halangan wap 6-mil untuk elak cupping dan kulat." },
+        { step: "02", title: "Pemerataan Subfloor", desc: "Permukaan tidak rata diisi dengan sebatian self-levelling supaya memenuhi toleransi 3mm atas 2m." },
+        { step: "03", title: "Pemasangan Underlayment", desc: "Underlayment IXPE atau EVA dibentangkan dengan sambungan bertape untuk redaman bunyi dan penebat haba." },
+        { step: "04", title: "Pemasangan Papan Click-Lock", desc: "Papan dipasang baris demi baris dengan sambungan selang-seli dan diketuk menggunakan pull bar serta blok ketuk." },
+        { step: "05", title: "Skirting & Peralihan", desc: "Skirting PVC atau sepadan dipasang dengan sudut mitred, dan T-mould atau reducer dipasang di laluan pintu." },
+      ],
+      faqs: [
+        { q: "Apa bezanya SPC dengan laminate dan LVP?", a: "SPC mempunyai teras batu-plastik yang kalis air 100% dan sangat stabil; laminate berteras HDF yang tidak tahan air; LVP ialah PVC tulen yang kalis air dan lebih lembut di kaki. Kami mengesyorkan SPC untuk kegunaan seluruh rumah." },
+        { q: "Bolehkah lantai SPC dipasang di atas jubin sedia ada?", a: "Ya, jika jubin sedia ada pepejal, rata dalam 3mm atas 2m dan bebas lippage. Kami menggunakan underlayment berkualiti untuk merentangi tekstur grout, menjimatkan kos perobohan dan masa pemasangan." },
+        { q: "Berapa lama pemasangan untuk kondominium 1,000 kaki persegi?", a: "Biasanya 2 hingga 3 hari untuk SPC termasuk persediaan subfloor, underlayment dan skirting. Susun atur kompleks dengan banyak sudut atau potongan bilik mandi boleh mengambil 4 hingga 5 hari." },
+        { q: "Adakah SPC benar-benar kalis air untuk dapur dan bilik mandi?", a: "Ya, teras SPC tidak menyerap air, jadi ia selamat untuk dapur dan bilik mandi. Pastikan jurang pengembangan dan skirting dipasang dengan betul supaya air tidak meresap ke bawah lantai." },
+        { q: "Berapa harga pemasangan lantai SPC?", a: "Harga bermula RM14 setiap kaki persegi termasuk underlayment dan skirting standard. Kos akhir bergantung pada keluasan, keadaan subfloor dan kerumitan susun atur." },
+      ],
+      metaTitle: "Pemasangan Lantai SPC Click-Lock KL & Selangor | Dari RM14/kaki²",
+      metaDesc: "Pasang lantai SPC kalis air 100% di KL & Selangor. FloorEver, Quick-Step, Kronotex. Click-lock tanpa gam, ujian kelembapan, skirting termasuk. Jaminan 5 tahun. WhatsApp percuma.",
+    },
+    zh: {
+      name: "SPC 锁扣地板安装",
+      tagline: "全屋铺设 100% 防水 SPC 锁扣地板，免胶免钉、内置垫层，附 5 年施工保修。",
+      description:
+        "SPC（石塑复合地板）是马来西亚家庭最受欢迎的地板选择，其石粉塑料芯材 100% 防水、尺寸稳定，使用寿命可达 15 年以上。我们供应并安装 FloorEver、Quick-Step、Kronotex 与 Audacity 等品牌，采用锁扣系统——免胶、免钉、现场无打磨粉尘。每个项目都先进行基层含水率测试；含水率超过 3% 需铺设 6-mil 防潮膜，防止日后起拱与发霉。不平的基层用自流平找平（2 米内 3mm 公差），然后逐排错缝安装地板，所有墙体处按规范预留 8–12mm 伸缩缝。门框下切处理保证收口平整，最后安装踢脚线与收边条，房间之间过渡干净利落。价格从 RM14/平方英尺起，含垫层与标准踢脚线收尾。",
+      highlights: [
+        "100% 防水 SPC，适合厨房、浴室与高湿度的马来西亚家庭",
+        "锁扣系统免胶、免钉，现场无打磨或上漆粉尘",
+        "按含水率测试结果配置垫层与防潮膜",
+        "预留 8–12mm 伸缩缝、门框下切与专业踢脚线收口",
+        "5 年施工保修，地板寿命 15 年以上",
+      ],
+      process: [
+        { step: "01", title: "含水率测试与检查", desc: "测量基层含水率；超过 3% 铺设 6-mil 防潮膜，防止日后起拱与发霉。" },
+        { step: "02", title: "基层找平", desc: "不平处施工自流平，达到 2 米内 3mm 的平整度要求。" },
+        { step: "03", title: "垫层铺设", desc: "铺设 IXPE 或 EVA 泡沫垫层，接缝贴胶带，隔音并保温。" },
+        { step: "04", title: "锁扣安装", desc: "逐排错缝安装，用回力钩与敲块敲合，不伤板边。" },
+        { step: "05", title: "踢脚线与收边", desc: "安装 PVC 或配套踢脚线，转角斜切整齐，门口装 T 型条或高低扣。" },
+      ],
+      faqs: [
+        { q: "SPC 和复合地板、乙烯基地板有什么区别？", a: "SPC 石粉塑料芯材 100% 防水且尺寸稳定；复合地板为 HDF 芯材、不防水；LVP 为纯 PVC、防水且脚感更软。全屋铺装我们建议用 SPC。" },
+        { q: "可以在现有瓷砖上直接铺 SPC 吗？", a: "大多数情况可以：瓷砖需坚实无空鼓、2 米内平整度 3mm 以内且无高低差。我们会用优质垫层弥合砖缝纹理，省去拆除费用与时间。" },
+        { q: "1,000 平方英尺的公寓铺 SPC 要多久？", a: "通常 2 到 3 天，含基层处理、垫层与踢脚线。转角多或带浴室缺口的复杂布局需要 4 到 5 天。" },
+        { q: "SPC 真的能用于厨房和浴室吗？", a: "可以。SPC 芯材不吸水，适合厨房与浴室，但伸缩缝与踢脚线必须按规范安装，防止水渗入地板下方。" },
+        { q: "SPC 安装怎么收费？", a: "每平方英尺 RM14 起，含垫层与标准踢脚线。最终价格取决于面积、基层状况与布局复杂程度。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪 SPC 锁扣地板安装 | 每平方英尺RM14起",
+      metaDesc: "吉隆坡与雪兰莪 100% 防水 SPC 锁扣地板安装。FloorEver、Quick-Step、Kronotex。免胶免钉，含水率测试，含踢脚线。5年保修。WhatsApp免费报价。",
+    },
+  },
+  "flooring/laminate-flooring-install": {
+    ms: {
+      name: "Pemasangan Lantai Laminate",
+      tagline: "Pemasangan lantai laminate HDF rupa kayu yang mesra bajet dengan penarafan haus AC4–AC5, underlayment akustik dan kemasan profesional.",
+      description:
+        "Lantai laminate ialah pilihan mesra bajet untuk bilik tidur, ruang tamu dan pejabat di KL & Selangor. Teras HDF (high-density fibreboard) dengan lapisan cetakan rupa kayu dan penarafan haus AC4–AC5 memberikan rintangan calar yang sangat baik untuk trafik kediaman. Penting: laminate bukan kalis air, jadi ia hanya sesuai untuk ruang kering seperti bilik tidur dan ruang tamu. Kami memasang jenama seperti Kronotex, Quick-Step dan FloorEver dengan underlayment akustik IXPE atau EVA, jurang pengembangan 8–12mm pada semua dinding, undercut bingkai pintu dan skirting kemasan. Subfloor diperiksa dan diratakan dahulu dengan toleransi 3mm atas 2m. Harga bermula RM11 setiap kaki persegi termasuk underlayment; jangka hayat 10–20 tahun jika dikekalkan kering.",
+      highlights: [
+        "Laminate HDF dengan penarafan haus AC4–AC5 untuk trafik kediaman",
+        "Paling mesra bajet antara tiga sistem lantai click-lock utama",
+        "Underlayment akustik mengurangkan bunyi antara lantai",
+        "Jurang pengembangan, undercut bingkai pintu dan skirting termasuk",
+        "Sesuai untuk bilik tidur, ruang tamu dan ruang kering lain",
+      ],
+      process: [
+        { step: "01", title: "Pemeriksaan Subfloor", desc: "Kerataan dan kelembapan subfloor diperiksa; masalah kecil dibaiki sebelum pemasangan bermula." },
+        { step: "02", title: "Pemasangan Underlayment", desc: "Underlayment akustik IXPE atau EVA dibentangkan dengan sambungan bertape untuk redaman bunyi." },
+        { step: "03", title: "Pemasangan Papan", desc: "Papan dipasang dengan sambungan selang-seli dan jurang pengembangan 8–12mm pada semua dinding." },
+        { step: "04", title: "Undercut Bingkai Pintu", desc: "Bingkai pintu digergaji di bahagian bawah supaya papan meluncur masuk untuk kemasan rata." },
+        { step: "05", title: "Skirting & Peralihan", desc: "Skirting dan jalur peralihan dipasang untuk menutup jurang pengembangan dengan kemas." },
+      ],
+      faqs: [
+        { q: "Adakah lantai laminate kalis air?", a: "Tidak. Teras HDF mengembang jika terkena air berpanjangan. Laminate hanya sesuai untuk ruang kering seperti bilik tidur dan ruang tamu; untuk dapur dan bilik mandi kami mengesyorkan SPC atau LVP." },
+        { q: "Apa itu penarafan haus AC4–AC5?", a: "Penarafan haus Eropah menunjukkan ketahanan lapisan permukaan: AC4 sesuai untuk trafik kediaman berat hingga komersial ringan, manakala AC5 untuk komersial. Kedua-duanya sangat tahan calar untuk kegunaan rumah." },
+        { q: "Bolehkah laminate dipasang di atas jubin sedia ada?", a: "Ya, jika jubin pepejal dan rata. Underlayment berkualiti digunakan untuk merentangi tekstur grout, dan kami memastikan aras pintu masih sesuai." },
+        { q: "Berapa lama pemasangan untuk 1,000 kaki persegi?", a: "2 hingga 3 hari termasuk persediaan subfloor, underlayment dan skirting. Kami menjadualkan sehari tambahan jika sebatian self-levelling perlu kering." },
+        { q: "Berapa harga laminate berbanding SPC?", a: "Laminate bermula RM11 setiap kaki persegi, lebih murah daripada SPC (RM14) dan LVP (RM16). Kos akhir bergantung pada keluasan dan keadaan subfloor." },
+      ],
+      metaTitle: "Pemasangan Lantai Laminate KL & Selangor | Dari RM11/kaki²",
+      metaDesc: "Pasang lantai laminate HDF di KL & Selangor. Kronotex, Quick-Step, FloorEver. AC4–AC5, underlayment akustik, skirting termasuk. Dari RM11/kaki². WhatsApp percuma.",
+    },
+    zh: {
+      name: "复合地板安装",
+      tagline: "经济实惠的仿木纹 HDF 复合地板安装，AC4–AC5 耐磨等级，含隔音垫层与专业收口。",
+      description:
+        "复合地板是吉隆坡与雪兰莪卧室、客厅与办公室的经济之选。HDF（高密度纤维板）芯材加上仿木纹印刷耐磨层，AC4–AC5 耐磨等级在家居环境下抗刮性能出色。请注意：复合地板不防水，只适合卧室、客厅等干燥空间。我们安装 Kronotex、Quick-Step 与 FloorEver 等品牌，配 IXPE 或 EVA 隔音垫层、墙体 8–12mm 伸缩缝、门框下切与踢脚线收尾。基层先检查并找平（2 米内 3mm 公差）。价格从 RM11/平方英尺起，含垫层；保持干燥可使用 10–20 年。",
+      highlights: [
+        "HDF 复合地板，AC4–AC5 耐磨等级适合家庭使用",
+        "三大锁扣地板系统中价格最实惠",
+        "隔音垫层降低楼层间噪音",
+        "含伸缩缝、门框下切与踢脚线收口",
+        "适合卧室、客厅等干燥空间",
+      ],
+      process: [
+        { step: "01", title: "基层检查", desc: "检查基层平整度与含水率，小问题先修补再开工。" },
+        { step: "02", title: "垫层铺设", desc: "铺设 IXPE 或 EVA 隔音垫层，接缝贴胶带。" },
+        { step: "03", title: "地板安装", desc: "逐排错缝安装，墙体处预留 8–12mm 伸缩缝。" },
+        { step: "04", title: "门框下切", desc: "锯切门框底部，让地板嵌入，收口平整。" },
+        { step: "05", title: "踢脚线与收边", desc: "安装踢脚线与收边条，遮盖伸缩缝，过渡干净。" },
+      ],
+      faqs: [
+        { q: "复合地板防水吗？", a: "不防水。HDF 芯材长期遇水会膨胀变形，只适合卧室、客厅等干燥空间；厨房与浴室建议使用 SPC 或 LVP。" },
+        { q: "什么是 AC4–AC5 耐磨等级？", a: "欧洲耐磨等级表示表面层耐用度：AC4 适合重度家用至轻度商用，AC5 适合商用。两者在家居环境下都足够抗刮。" },
+        { q: "可以在现有瓷砖上铺复合地板吗？", a: "可以，只要瓷砖坚实平整。我们会用优质垫层弥合砖缝纹理，并确认门底高度足够。" },
+        { q: "1,000 平方英尺要铺多久？", a: "通常 2 到 3 天，含基层处理、垫层与踢脚线。如需自流平施工，会预留一天干燥时间。" },
+        { q: "复合地板比 SPC 便宜多少？", a: "复合地板每平方英尺 RM11 起，比 SPC（RM14）与 LVP（RM16）更经济，最终价格取决于面积与基层状况。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪复合地板安装 | 每平方英尺RM11起",
+      metaDesc: "吉隆坡与雪兰莪 HDF 复合地板安装。Kronotex、Quick-Step、FloorEver。AC4–AC5 耐磨，隔音垫层，含踢脚线。每平方英尺RM11起。WhatsApp免费报价。",
+    },
+  },
+  "flooring/luxury-vinyl-plank-lvp-install": {
+    ms: {
+      name: "Pemasangan Papan Vinyl Mewah (LVP)",
+      tagline: "Pemasangan LVP 100% kalis air dengan urat kayu realistik untuk dapur basah, bilik mandi dan kawasan lembap lain.",
+      description:
+        "Luxury Vinyl Plank (LVP) ialah papan PVC tulen dengan cetakan urat kayu yang realistik, 100% kalis air dan lebih lembut di kaki berbanding SPC atau laminate. Ia pilihan terbaik untuk dapur basah, bilik mandi, balkoni tertutup dan ruang bawah tanah. Kami memasang LVP jenis click-lock atau glue-down bergantung pada keadaan tapak, dengan ujian kelembapan subfloor, pemerataan jika perlu, underlayment untuk jenis click-lock dan jurang pengembangan yang betul. Setiap projek disiapkan dengan undercut bingkai pintu, skirting dan jalur peralihan untuk kemasan profesional. Harga bermula RM16 setiap kaki persegi; jangka hayat 15–25 tahun dengan penyelenggaraan minimum.",
+      highlights: [
+        "LVP 100% kalis air untuk dapur basah, bilik mandi dan besmen",
+        "Cetakan urat kayu realistik dengan permukaan lebih lembut di kaki",
+        "Pilihan sistem click-lock atau glue-down mengikut keadaan tapak",
+        "Ujian kelembapan, undercut bingkai pintu dan skirting termasuk",
+        "Jangka hayat 15–25 tahun dengan penyelenggaraan minimum",
+      ],
+      process: [
+        { step: "01", title: "Penilaian Tapak", desc: "Kami menilai kelembapan dan kerataan subfloor, kemudian memilih sistem click-lock atau glue-down yang sesuai." },
+        { step: "02", title: "Penyediaan Subfloor", desc: "Permukaan dibersihkan dan diratakan; retakan halus diisi untuk tapak pelekat yang sempurna." },
+        { step: "03", title: "Pemasangan Papan", desc: "Papan dipasang dengan corak selang-seli; jenis click-lock diketuk dengan pull bar, jenis glue-down dilekatkan dengan pelekat penuh." },
+        { step: "04", title: "Kemasan Tepi", desc: "Bingkai pintu diundercut dan jurang pengembangan disediakan pada semua dinding." },
+        { step: "05", title: "Skirting & Peralihan", desc: "Skirting, T-mould dan reducer dipasang untuk peralihan bilik-ke-bilik yang kemas." },
+      ],
+      faqs: [
+        { q: "Apa bezanya LVP dengan SPC?", a: "LVP ialah PVC tulen yang lebih lembut dan senyap di kaki, sesuai untuk kawasan basah dan bilik tidur. SPC berteras batu-plastik lebih tegar dan sesuai untuk seluruh rumah. Kedua-duanya kalis air 100%." },
+        { q: "Bolehkah LVP dipasang di bilik mandi?", a: "Ya. LVP kalis air 100% dan kerap dipasang di bilik mandi serta dapur basah. Pastikan skirting dan silikon kedap air dipasang di tepi untuk perlindungan tambahan." },
+        { q: "Adakah LVP tahan calar?", a: "Permukaan LVP mempunyai lapisan haus yang tahan calar untuk kegunaan rumah. Untuk mengelakkan calar dalam, gunakan pelapik pada kaki perabot dan elak menyeret barang berat." },
+        { q: "Berapa lama pemasangan untuk satu rumah teres?", a: "Rumah teres 1,500–2,000 kaki persegi biasanya mengambil 3 hingga 5 hari termasuk penyediaan subfloor dan kemasan, bergantung pada kerumitan susun atur." },
+        { q: "Kenapa LVP lebih mahal daripada laminate?", a: "LVP diperbuat daripada PVC kalis air sepenuhnya dengan lapisan haus lebih tebal, manakala laminate berteras HDF yang tidak tahan air. Kos RM16/kaki persegi mencerminkan ketahanan dan fleksibiliti penggunaannya." },
+      ],
+      metaTitle: "Pemasangan LVP (Vinyl Mewah) KL & Selangor | Dari RM16/kaki²",
+      metaDesc: "Pasang LVP 100% kalis air di KL & Selangor. Urat kayu realistik, sesuai untuk dapur basah & bilik mandi. Click-lock atau glue-down. Dari RM16/kaki². WhatsApp percuma.",
+    },
+    zh: {
+      name: "豪华乙烯基地板 (LVP) 安装",
+      tagline: "100% 防水 LVP 地板安装，木纹逼真，适合湿厨房、浴室等潮湿区域。",
+      description:
+        "豪华乙烯基地板（LVP）由纯 PVC 制成，木纹印刷逼真，100% 防水，脚感比 SPC 与复合地板更柔软舒适。它是湿厨房、浴室、封闭阳台与地下室的最佳选择。我们根据现场条件安装锁扣式或胶粘式 LVP，包含基层含水率测试、必要时的找平、锁扣型的垫层铺设与规范的伸缩缝处理。每个项目均含门框下切、踢脚线与收边条安装。价格从 RM16/平方英尺起；维护成本低，使用寿命 15–25 年。",
+      highlights: [
+        "100% 防水 LVP，适合湿厨房、浴室与地下室",
+        "木纹逼真，脚感柔软，比瓷砖安静温暖",
+        "锁扣式或胶粘式可选，按现场条件决定",
+        "含含水率测试、门框下切与踢脚线收口",
+        "寿命 15–25 年，日常维护简单",
+      ],
+      process: [
+        { step: "01", title: "现场评估", desc: "检查基层含水率与平整度，确定锁扣式或胶粘式方案。" },
+        { step: "02", title: "基层处理", desc: "清洁并找平基层，细裂缝填补，确保胶粘面完美。" },
+        { step: "03", title: "地板铺设", desc: "错缝铺设；锁扣式用回力钩敲合，胶粘式满刮胶粘贴。" },
+        { step: "04", title: "边缘处理", desc: "门框下切，墙体处预留伸缩缝。" },
+        { step: "05", title: "踢脚线与收边", desc: "安装踢脚线、T 型条与高低扣，房间过渡干净。" },
+      ],
+      faqs: [
+        { q: "LVP 和 SPC 有什么区别？", a: "LVP 为纯 PVC，脚感更软更安静，适合浴室、湿厨房与卧室；SPC 石塑芯材更坚硬，适合全屋铺装。两者都 100% 防水。" },
+        { q: "LVP 可以铺在浴室吗？", a: "可以。LVP 100% 防水，常用于浴室与湿厨房。建议在边缘加打防水硅胶，提供进一步保护。" },
+        { q: "LVP 耐刮吗？", a: "LVP 表面有耐磨层，家用抗刮表现良好。避免拖拽重物，家具脚加保护垫可防止深划痕。" },
+        { q: "铺一整套排屋要多久？", a: "1,500–2,000 平方英尺的排屋通常 3 到 5 天，含基层处理与收尾，具体视布局复杂程度而定。" },
+        { q: "为什么 LVP 比复合地板贵？", a: "LVP 由纯 PVC 制成、完全防水且耐磨层更厚；复合地板是 HDF 芯材、不防水。RM16/平方英尺的价格反映其耐用性与使用灵活性。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪 LVP 豪华乙烯基地板安装 | 每平方英尺RM16起",
+      metaDesc: "吉隆坡与雪兰莪 100% 防水 LVP 地板安装。木纹逼真，适合湿厨房与浴室。锁扣式或胶粘式。每平方英尺RM16起。WhatsApp免费报价。",
+    },
+  },
+  "flooring/skirting-and-transition-strip-fitting": {
+    ms: {
+      name: "Pemasangan Skirting & Jalur Peralihan",
+      tagline: "Pemasangan skirting PVC, MDF atau aluminium serta T-mould, reducer dan end-cap untuk kemasan lantai bilik-ke-bilik yang kemas.",
+      description:
+        "Skirting dan jalur peralihan ialah kemasan akhir yang menjadikan pemasangan lantai kelihatan profesional. Skirting menutup jurang pengembangan 8–12mm antara lantai dan dinding, melindungi dinding daripada hentakan penyapu dan kemop, serta menyembunyikan kabel kecil. Kami memasang skirting PVC, MDF atau aluminium dengan sudut mitred yang kemas, serta T-mould untuk sambungan lantai sama tinggi, reducer untuk lantai berbeza aras (contohnya lantai ke jubin) dan end-cap untuk tepi tangga atau bukaan. Kerja termasuk memotong bingkai pintu supaya skirting meluncur masuk dengan kemas. Harga bermula RM8 setiap kaki linier; skirting boleh dipadankan dengan warna lantai atau dinding anda.",
+      highlights: [
+        "Skirting PVC, MDF atau aluminium dengan sudut mitred kemas",
+        "T-mould, reducer dan end-cap untuk semua jenis peralihan",
+        "Menutup jurang pengembangan 8–12mm dengan kemas",
+        "Boleh dipadankan dengan warna lantai atau dinding",
+        "Termasuk pemotongan bingkai pintu untuk kemasan rata",
+      ],
+      process: [
+        { step: "01", title: "Pengukuran", desc: "Kami mengukur perimeter bilik dan mengenal pasti semua titik peralihan antara jenis lantai." },
+        { step: "02", title: "Pemilihan Bahan", desc: "Skirting PVC, MDF atau aluminium serta jenis peralihan dipilih mengikut lantai dan bajet anda." },
+        { step: "03", title: "Pemotongan & Penyediaan", desc: "Semua bahagian dipotong dengan sudut mitred 45° di penjuru dan bingkai pintu diundercut." },
+        { step: "04", title: "Pemasangan", desc: "Skirting dipasang dengan pelekat atau skru tersembunyi; T-mould, reducer dan end-cap dipasang di lokasi peralihan." },
+        { step: "05", title: "Pemeriksaan & Kemasan", desc: "Semua sambungan diperiksa, sudut ditutup rapat dan kawasan dibersihkan." },
+      ],
+      faqs: [
+        { q: "Kenapa skirting perlu dipasang selepas lantai baru?", a: "Skirting menutup jurang pengembangan yang wajib ditinggalkan pada dinding supaya lantai boleh mengembang dan mengecut. Tanpa skirting, jurang itu kelihatan dan mengumpul habuk." },
+        { q: "Apa beza T-mould dan reducer?", a: "T-mould digunakan untuk menyambung dua lantai sama tinggi, manakala reducer digunakan apabila aras berbeza—contohnya lantai ke jubin—supaya peralihan selamat dan kemas." },
+        { q: "Bolehkah skirting lama dikekalkan?", a: "Boleh, jika ia dalam keadaan baik dan sepadan. Kami akan menilai di tapak; selalunya skirting lama perlu ditanggalkan kerana aras lantai baru berbeza." },
+        { q: "Berapa harga pemasangan skirting?", a: "Harga bermula RM8 setiap kaki linier termasuk bahan standard dan pemasangan. Skirting aluminium atau reka bentuk khas dikenakan kos tambahan." },
+        { q: "Bolehkah skirting dipadankan dengan warna lantai?", a: "Ya, kami boleh memadankan warna skirting dengan lantai, dinding atau kontras mengikut citarasa anda. Contoh warna boleh disemak sebelum pemasangan." },
+      ],
+      metaTitle: "Pemasangan Skirting & Jalur Peralihan KL & Selangor | Dari RM8/kaki",
+      metaDesc: "Pasang skirting PVC, MDF, aluminium & jalur peralihan di KL & Selangor. T-mould, reducer, end-cap. Sudut mitred kemas. Dari RM8/kaki linier. WhatsApp percuma.",
+    },
+    zh: {
+      name: "踢脚线与收边条安装",
+      tagline: "PVC、MDF 或铝合金踢脚线及 T 型条、高低扣、收边条安装，房间收口干净利落。",
+      description:
+        "踢脚线与收边条是让地板安装呈现专业效果的最后一道工序。踢脚线遮盖墙体处必须预留的 8–12mm 伸缩缝，保护墙脚免受扫把与拖把碰撞，还能收纳细小线缆。我们安装 PVC、MDF 或铝合金踢脚线，阴阳角斜切整齐；同高度的两块地板用 T 型条连接，不同高度（如地板接瓷砖）用高低扣过渡，楼梯口或门口用收边条收口。施工含门框底部锯切，让踢脚线嵌入收口。价格从 RM8/延英尺起，颜色可与地板或墙面搭配。",
+      highlights: [
+        "PVC、MDF 或铝合金踢脚线，阴阳角斜切整齐",
+        "T 型条、高低扣与收边条覆盖各类过渡",
+        "整齐遮盖 8–12mm 伸缩缝",
+        "颜色可与地板或墙面搭配",
+        "含门框锯切，收口平整",
+      ],
+      process: [
+        { step: "01", title: "测量", desc: "测量房间周长，并确认所有不同地面材料之间的过渡位置。" },
+        { step: "02", title: "选材", desc: "根据地板类型与预算选择 PVC、MDF 或铝合金踢脚线及过渡配件。" },
+        { step: "03", title: "切割与准备", desc: "转角按 45° 斜切，门框底部锯切留出嵌入位。" },
+        { step: "04", title: "安装", desc: "踢脚线用胶粘或隐藏螺丝固定；T 型条、高低扣与收边条在过渡处安装。" },
+        { step: "05", title: "检查与收尾", desc: "检查所有接缝与转角，清理现场。" },
+      ],
+      faqs: [
+        { q: "为什么铺完地板要装踢脚线？", a: "踢脚线遮盖墙体处必须预留的伸缩缝，让地板可以热胀冷缩；不装的话缝隙裸露、容易积灰。" },
+        { q: "T 型条和高低扣有什么区别？", a: "T 型条用于连接两块高度相同的地板；高低扣用于高度不同的过渡，比如地板接瓷砖，行走更安全、收口更美观。" },
+        { q: "旧踢脚线可以保留吗？", a: "状态好且高度合适时可以保留，但新地板通常会改变地面高度，多数情况旧踢脚线需要拆除重装。我们会在现场评估。" },
+        { q: "装踢脚线怎么收费？", a: "每延英尺 RM8 起，含标准材料与安装。铝合金或特别造型需另计。" },
+        { q: "踢脚线颜色可以和地板搭配吗？", a: "可以，踢脚线颜色可搭配地板、墙面或做对比色。安装前可先看色样确认。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪踢脚线与收边条安装 | 每延英尺RM8起",
+      metaDesc: "吉隆坡与雪兰莪踢脚线及收边条安装。PVC、MDF、铝合金，T 型条、高低扣、收边条，斜切整齐。每延英尺RM8起。WhatsApp免费报价。",
+    },
+  },
+
 };
 
 /**
