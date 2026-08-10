@@ -58,6 +58,10 @@ const PRIORITY_KEYS = [
   "ceiling/plaster-ceiling-installation",
   "ceiling/gypsum-board-partition-wall",
   "ceiling/cornice-and-l-box-concealed-light-trough",
+  "plumbing/water-leakage-diagnosis-and-repair",
+  "plumbing/toilet-tap-and-sink-installation",
+  "plumbing/drain-unclogging-and-cleaning",
+  "plumbing/water-heater-and-pump-installation",
 ];
 
 function checkBlock(key: string, locale: "ms" | "zh", b: SpecialtyLocaleBlock, issues: Issue[]) {

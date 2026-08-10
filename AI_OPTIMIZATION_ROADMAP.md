@@ -718,3 +718,19 @@ Executed the previous "Next Session — START HERE" plan end-to-end:
 2. Add real locale problem routes (154) once the 14 problem-overlap groups are consolidated with evidence; then localize the `RelatedProblems` links on localized specialty pages (they currently point to EN problem pages).
 3. Business/translator QA of the 32 localized specialty pages is strongly advised before the next tranche's GSC/indexation is measured.
 4. Continue without creating thin or spun pages; rerun lint/type-check/build/`audit:topical-map`/`audit:specialty-locale`/`audit:i18n`/`audit:html`/`seo:audit` after each tranche.
+
+### ✅ Session 2026-08-10 (part 4) — Plumbing locale-specialty tranche
+
+**Status:** ✅ COMPLETED
+
+- Added genuinely authored Bahasa Malaysia and Simplified Chinese content for all four Plumbing specialties in `config/specialty-locale-content.ts`: water-leak diagnosis & repair, toilet/tap/sink installation, drain unclogging & cleaning, and water-heater/pump installation.
+- The existing shared locale-specialty architecture now publishes the 8 real pages under `/ms/services/plumbing/*` and `/zh/services/plumbing/*`, with their existing canonical, hreflang, sitemap and localized service-page-link behavior; no duplicated route/component was added.
+- Extended the non-thin priority gate so these four Plumbing entries are required in future builds.
+- Verification passed: `npm run type-check`, `npm run lint`, `npm run audit:topical-map`, `npm run audit:specialty-locale` (20 specialties × 2 = 40 native blocks), `npm run audit:i18n`, `npm run build` (4,383 routes), `npm run seo:audit`, and `npm run audit:html` (4,375 pages, 0 fatal / 0 warnings). Estimator suite passed during prebuild (263,293 assertions).
+
+## Next Session — START HERE
+
+1. Continue the locale-specialty tranche service-by-service. Completed: Painting + Ceiling (8), Plaster Ceiling (4), Waterproofing (4), and Plumbing (4) = **20 specialties × MS + ZH (40 localized pages)**. Select the next coherent four-specialty service tranche, reuse `specialty-locale-content.ts` + `LocaleSpecialtyPage`, and author genuine native MS/ZH content.
+2. Add real locale problem routes (154) only after the 14 problem-overlap groups are consolidated with evidence; then localize `RelatedProblems` links on localized specialty pages.
+3. Obtain business/translator QA for the completed localized specialty pages before measuring GSC indexation.
+4. Do not create thin or spun pages; rerun lint, type-check, build, topical-map, specialty-locale, i18n, HTML, and SEO audits after every tranche.
