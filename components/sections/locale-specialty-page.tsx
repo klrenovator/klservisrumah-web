@@ -101,6 +101,10 @@ export function LocaleSpecialtyPage({
     startPrice: localizedSub.price,
     slug: service.slug,
     path,
+    // The localized sub-service records so the JSON-LD OfferCatalog is
+    // in-language too — without this it falls back to the English catalogue
+    // (same pattern as `locale-service-page.tsx`).
+    subServices: localized.subServices,
   });
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: t("breadcrumbs.home"), item: "/" },
