@@ -94,6 +94,10 @@ const PRIORITY_KEYS = [
   "cctv/landed-house-poe-cctv-8-cameras",
   "cctv/single-camera-add-on",
   "cctv/cctv-system-health-check-and-relocation",
+  "window-repair/glass-replacement",
+  "window-repair/window-seal-replacement",
+  "window-repair/window-handle-and-hinge-repair",
+  "window-repair/sliding-window-roller-replacement",
 ];
 
 function checkBlock(key: string, locale: "ms" | "zh", b: SpecialtyLocaleBlock, issues: Issue[]) {

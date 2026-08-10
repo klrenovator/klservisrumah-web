@@ -3260,6 +3260,256 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
     },
   },
 
+  /* ── WINDOW REPAIR ─────────────────────────────────────────── */
+  "window-repair/glass-replacement": {
+    ms: {
+      name: "Penggantian Kaca Tingkap",
+      tagline:
+        "Ganti kaca tingkap retak, pecah atau mengurangkan penglihatan dengan kaca jernih, tinted, frosted atau tempered mengikut saiz dan ketebalan asal. Dari RM 200.",
+      description:
+        "Perkhidmatan penggantian kaca tingkap kami menangani kaca retak, pecah, serpih atau calar teruk yang menjejaskan keselamatan dan pemandangan. Kami memasang kaca jernih, tinted, frosted atau tempered dalam bingkai sedia ada selagi bingkai dalam keadaan baik — jauh lebih murah daripada menukar seluruh tingkap. Kami mengukur bukaan dengan tepat, memilih ketebalan yang betul (biasanya 4mm atau 5mm untuk tingkap kediaman) dan memasang dengan pita glazing, jalur getah serta pengedap silikon tahan cuaca untuk pengedapan kemas tanpa bocor. Untuk rumah landed, kami menawarkan penggantian kecemasan hari sama untuk saiz biasa yang kami bawa dalam van; untuk saiz kustom, kaca tempered atau unit dua lapisan, kami menutup bukaan dengan papan dengan selamat dan kembali dalam 2–5 hari bekerja untuk pemasangan kekal. Kami juga boleh menaik taraf kaca tunggal kepada dua lapisan untuk penebatan bunyi dan haba yang lebih baik.",
+      highlights: [
+        "Kaca jernih, tinted, frosted atau tempered mengikut keperluan anda",
+        "Penggantian kecemasan hari sama untuk rumah landed (saiz biasa dibawa dalam van)",
+        "Pemasangan dengan pita glazing, jalur getah dan pengedap silikon tahan cuaca",
+        "Menaik taraf kaca tunggal kepada dua lapisan untuk penebatan bunyi dan haba",
+        "Ukuran tepat dan pemilihan ketebalan yang betul untuk setiap bukaan",
+      ],
+      process: [
+        { step: "01", title: "Pemeriksaan & Ukuran", desc: "Kami menilai kerosakan, mengukur bukaan dan menentukan jenis serta ketebalan kaca yang sesuai." },
+        { step: "02", title: "Sebut Harga Telus", desc: "Sebut harga terperinci merangkumi kaca, alat ganti, buruh dan masa tunggu kaca jika kustom diperlukan." },
+        { step: "03", title: "Penyingkiran Kaca Selamat", desc: "Kaca pecah atau retak ditanggalkan dengan rapi, serpihan divakum dan bukaan dikedap sementara jika kaca kustom diperlukan." },
+        { step: "04", title: "Pemasangan Kaca Baharu", desc: "Kaca baharu dipasang dengan pita glazing, jalur getah dan pengedap silikon, kemudian diselaraskan dalam bingkai." },
+        { step: "05", title: "Ujian & Serahan", desc: "Tingkap diuji buka/tutup, pengedapan tahan cuaca dan kebocoran air sebelum kawasan dibersihkan dan diserahkan." },
+      ],
+      faqs: [
+        { q: "Bolehkah anda menggantikan kaca sahaja tanpa menukar seluruh tingkap?", a: "Ya, dalam kebanyakan kes. Selagi bingkai dalam keadaan baik dan saiz betul, kami boleh memasang kaca baharu dalam bingkai sedia ada — jauh lebih murah daripada menggantikan seluruh tingkap. Kami juga boleh menaik taraf kaca tunggal kepada dua lapisan, walaupun ini mungkin memerlukan penukaran bingkai bergantung pada ketebalan asal." },
+        { q: "Berapa lama masa untuk menggantikan kaca tingkap?", a: "Untuk saiz biasa (4mm dan 5mm jernih atau tinted) yang kami bawa dalam van, penggantian boleh siap pada hari yang sama. Kaca kustom, tempered atau dua lapisan biasanya mengambil 2–5 hari bekerja selepas fabrikasi di kilang." },
+        { q: "Apakah perbezaan antara kaca jernih, tinted, frosted dan tempered?", a: "Kaca jernih ialah pilihan lutsinar standard. Kaca tinted (kelabu, gangsa, hijau) mengurangkan pemanasan matahari 30–40% dan sesuai untuk tingkap menghadap barat. Kaca frosted lut cahaya tetapi memberikan privasi. Kaca tempered ialah kaca keselamatan yang pecah menjadi serpihan kecil tanpa bahaya, sesuai untuk kawasan kanak-kanak dan pintu." },
+        { q: "Adakah anda menyediakan perkhidmatan penggantian kaca kecemasan?", a: "Ya, untuk rumah landed. Kami membawa saiz biasa dalam van dan boleh menggantikan kaca pecah di tempat kejadian pada hari yang sama. Untuk saiz kustom, tempered atau dua lapisan, kami menutup bukaan dengan papan dengan selamat dan kembali dalam 2–5 hari bekerja untuk pemasangan kekal." },
+      ],
+      metaTitle: "Penggantian Kaca Tingkap KL & Selangor | Dari RM 200",
+      metaDesc:
+        "Ganti kaca tingkap retak atau pecah di KL & Selangor — jernih, tinted, frosted atau tempered. Kecemasan hari sama untuk rumah landed. Dari RM200. WhatsApp untuk sebut harga.",
+    },
+    zh: {
+      name: "窗户玻璃更换",
+      tagline:
+        "更换开裂、碎裂或影响视线的窗玻璃——白玻、茶色玻、磨砂玻或钢化玻璃，同尺寸同厚度。从 RM 200 起。",
+      description:
+        "我们的窗玻璃更换服务处理玻璃开裂、碎裂、崩边或严重影响视线的划痕。只要窗框状况良好、尺寸合适，我们就在现有窗框内安装新白玻、茶色玻、磨砂玻或钢化玻璃——这比整扇换窗便宜得多。我们会精确测量开口，选择合适厚度（住宅窗户通常为 4mm 或 5mm），并使用压条胶带、橡胶条和耐候硅酮密封胶安装，确保密封严密不漏水。有地住宅提供当日紧急更换服务，服务车常备常用规格；定制尺寸、钢化玻璃或中空玻璃，我们会先安全封板，2–5 个工作日内回来正式安装。我们还可将单层玻璃升级为中空玻璃，以获得更好的隔音隔热。",
+      highlights: [
+        "白玻、茶色玻、磨砂玻或钢化玻璃，按需选择",
+        "有地住宅当日紧急更换（服务车常备常用规格）",
+        "使用压条胶带、橡胶条与耐候硅酮密封胶安装",
+        "单层升级中空玻璃，提升隔音与隔热",
+        "每个开口精确测量、匹配合适厚度",
+      ],
+      process: [
+        { step: "01", title: "检查与测量", desc: "评估损坏情况，测量开口尺寸，确定合适的玻璃类型与厚度。" },
+        { step: "02", title: "透明报价", desc: "逐项报价涵盖玻璃、配件、人工及定制玻璃交期。" },
+        { step: "03", title: "安全拆玻璃", desc: "小心拆除碎裂或开裂玻璃，吸净碎屑；定制玻璃前先临时封板。" },
+        { step: "04", title: "安装新玻璃", desc: "以压条胶带、橡胶条与硅酮密封胶安装新玻璃，并在窗框内调校。" },
+        { step: "05", title: "测试与交付", desc: "反复开合测试，确认气密防水无渗漏，再清理并交付。" },
+      ],
+      faqs: [
+        { q: "可以只换玻璃不换整扇窗吗？", a: "大多数情况下可以。只要窗框状况良好、尺寸合适，我们就能在现有窗框内安装新玻璃，比整窗更换便宜得多。我们也可以将单层玻璃升级为中空玻璃，不过视原始厚度可能需要换框。" },
+        { q: "换一块窗玻璃要多久？", a: "服务车常备的常用规格（4mm 和 5mm 白玻或茶色玻）可当日完成。定制尺寸、钢化玻璃或中空玻璃通常需在工厂加工，2–5 个工作日内完成安装。" },
+        { q: "白玻、茶色玻、磨砂玻和钢化玻璃有什么区别？", a: "白玻是标准透明玻璃。茶色玻（灰、青铜、绿）可减少 30–40% 太阳热量，适合西晒窗户。磨砂玻透光但保隐私。钢化玻璃是安全玻璃，碎后成细小圆粒不伤人，适合儿童房间与门扇。" },
+        { q: "你们提供紧急玻璃更换服务吗？", a: "有地住宅提供。服务车常备常用规格，可当日到场更换碎玻璃。定制尺寸、钢化玻璃或中空玻璃，我们会先安全封板，2–5 个工作日内回来正式安装。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪窗玻璃更换 | RM200起",
+      metaDesc:
+        "吉隆坡与雪兰莪更换开裂或碎裂窗玻璃——白玻、茶色玻、磨砂玻或钢化玻璃。有地住宅当日紧急服务。从RM200起。",
+    },
+  },
+  "window-repair/window-seal-replacement": {
+    ms: {
+      name: "Penggantian Pengedap Tingkap",
+      tagline:
+        "Ganti pengedap getah EPDM haus atau mengeras untuk menghentikan resapan air dan bahang angin serta menambah baik penebatan. Dari RM 30 / kaki linier.",
+      description:
+        "Pengedap tingkap ialah jalur getah yang memampatkan antara bingkai dan sengkuap atau panel kaca untuk mengelakkan air, habuk dan bunyi daripada masuk. Lama kelamaan getah EPDM menjadi mengeras, retak atau mengelupas, menyebabkan resapan air semasa hujan lebat, bahang angin apabila tingkap ditutup, kehilangan penghawa dingin dan bunyi jalan yang lebih kuat. Kami menggantikan pengedap getah haus dengan jalur EPDM baharu berkualiti untuk semua jenis tingkap — casement, gelangsar, top-hung, awning dan tingkap louvre. Kami juga membersihkan dan menyediakan alur pengedap, menyapu pelekat yang sesuai dan memastikan pengedap memampat dengan sekata untuk penutupan kemas. Kerja termasuk ujian air ringkas untuk mengesahkan tiada kebocoran selepas pemasangan.",
+      highlights: [
+        "Pengedap EPDM baharu untuk casement, gelangsar, top-hung, awning dan louvre",
+        "Menghentikan resapan air, bahang angin dan kehilangan penghawa dingin",
+        "Mengurangkan bunyi lalu lintas untuk rumah di kawasan sibuk",
+        "Pembersihan alur pengedap dan penyediaan permukaan sebelum pemasangan",
+        "Ujian air ringkas selepas pemasangan untuk memastikan tiada kebocoran",
+      ],
+      process: [
+        { step: "01", title: "Pemeriksaan Pengedap", desc: "Kami memeriksa keadaan jalur getah, mengenal pasti titik bocor dan menentukan jenis pengedap yang sesuai untuk tingkap anda." },
+        { step: "02", title: "Sebut Harga Telus", desc: "Sebut harga terperinci mengikut kaki linier pengedap serta sebarang kerja tambahan yang diperlukan." },
+        { step: "03", title: "Penyingkiran Pengedap Lama", desc: "Pengedap lama yang keras, retak atau mengelupas ditanggalkan dan alur dibersihkan daripada sisa pelekat dan kotoran." },
+        { step: "04", title: "Pemasangan Pengedap Baharu", desc: "Jalur EPDM baharu dipasang dengan pelekat yang sesuai dan dimampatkan sekata di sekeliling bingkai." },
+        { step: "05", title: "Ujian Air", desc: "Tingkap diuji dengan semburan air ringkas untuk mengesahkan pengedapan kalis bocor sebelum serahan." },
+      ],
+      faqs: [
+        { q: "Bagaimana saya tahu pengedap tingkap saya perlu diganti?", a: "Tanda biasa: resapan air semasa hujan lebat, bahang angin apabila tingkap ditutup, kehilangan penghawa dingin, bunyi jalan lebih kuat dan retakan atau pengelupasan getah yang kelihatan. Kami boleh menilai di tapak dan mengesyorkan penggantian." },
+        { q: "Berapa kos untuk menggantikan pengedap tingkap?", a: "Harga bermula RM30 setiap kaki linier termasuk jalur EPDM dan pemasangan. Sebuah tingkap casement standard biasanya memerlukan 3–6 kaki linier, bergantung pada saiz. Sebut harga penuh diberikan selepas pemeriksaan." },
+        { q: "Berapa lama kerja menggantikan pengedap tingkap?", a: "Kebanyakan tingkap boleh disiapkan dalam masa 30–60 minit setiap satu, bergantung pada saiz dan bilangan tingkap. Kerja ini biasanya tidak memerlukan anda meninggalkan rumah." },
+        { q: "Boleh pengedap baharu menyelesaikan masalah pemeluwapan antara kaca?", a: "Tidak semestinya. Pemeluwapan antara dua lapisan kaca biasanya menunjukkan pengedap kaca itu sendiri (bukan pengedap tingkap) gagal dan mungkin memerlukan penggantian kaca dua lapisan. Pengedap tingkap baharu membantu menghentikan resapan air dan bahang angin di sekeliling bingkai, tetapi tidak membaiki kaca dua lapisan yang telah rosak." },
+      ],
+      metaTitle: "Penggantian Pengedap Tingkap KL & Selangor | Dari RM30/kaki linier",
+      metaDesc:
+        "Ganti pengedap getah EPDM tingkap haus di KL & Selangor untuk menghentikan resapan air, bahang angin dan kehilangan penghawa dingin. Dari RM30/kaki linier.",
+    },
+    zh: {
+      name: "窗户密封条更换",
+      tagline:
+        "更换老化变硬的 EPDM 橡胶密封条，阻止渗水、穿堂风与冷气流失，改善保温。从 RM 30 / 延英尺起。",
+      description:
+        "窗密封条是夹在窗框与窗扇或玻璃面板之间的橡胶条，用来阻挡水、灰尘与噪音进入室内。随着时间推移，EPDM 橡胶会变硬、开裂或剥落，导致大雨渗水、关窗后有穿堂风、冷气流失以及街边噪音变大。我们为所有常见窗型——平开窗、推拉窗、上悬窗、外开下悬窗和百叶窗——更换高质量的 EPDM 密封条。我们会清洁并处理密封槽，涂上合适的胶粘剂，确保密封条均匀压紧、严密闭合。完成后会用受控喷水做简单测试，确认无渗漏。",
+      highlights: [
+        "适用于平开窗、推拉窗、上悬窗、外开下悬窗与百叶窗的 EPDM 新密封条",
+        "阻止渗水、穿堂风与冷气流失",
+        "降低繁忙路段的交通噪音",
+        "安装前清洁密封槽并处理表面",
+        "安装后用受控喷水测试，确保无渗漏",
+      ],
+      process: [
+        { step: "01", title: "检查密封条", desc: "检查橡胶条状况，找出渗漏点，确定适合您窗型的密封条类型。" },
+        { step: "02", title: "透明报价", desc: "按延英尺逐项报价，并说明任何需要的额外工作。" },
+        { step: "03", title: "拆除旧密封条", desc: "拆除变硬、开裂或剥落的旧胶条，清洁槽内残余胶剂与灰尘。" },
+        { step: "04", title: "安装新密封条", desc: "以合适的胶粘剂安装新 EPDM 胶条，并沿窗框均匀压紧。" },
+        { step: "05", title: "喷水测试", desc: "用受控喷水测试窗户，确认密封防水后才交付。" },
+      ],
+      faqs: [
+        { q: "怎么判断窗户密封条需要更换？", a: "常见迹象：大雨时渗水、关窗后有穿堂风、冷气流失、街边噪音变大，以及橡胶明显开裂或剥落。我们可以现场评估并给出更换建议。" },
+        { q: "换窗密封条要多少钱？", a: "从 RM30 每延英尺起，包含 EPDM 胶条与安装。一扇标准平开窗通常需要 3–6 延英尺，具体视尺寸而定。现场检查后提供完整报价。" },
+        { q: "换密封条要多久？", a: "多数窗户每扇 30–60 分钟内完成，视尺寸和数量而定。您通常无需离开家中。" },
+        { q: "换密封条能解决中空玻璃结雾吗？", a: "不一定。玻璃夹层间结雾通常意味着中空玻璃本身的封胶失效，可能需要更换中空玻璃单元。新的窗密封条能阻止窗框四周渗水和穿堂风，但无法修复已损坏的中空玻璃。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪窗户密封条更换 | RM30/延英尺起",
+      metaDesc:
+        "吉隆坡与雪兰莪更换老化 EPDM 窗密封条，阻止渗水、穿堂风与冷气流失。从RM30/延英尺起。",
+    },
+  },
+  "window-repair/window-handle-and-hinge-repair": {
+    ms: {
+      name: "Pembaikan Pemegang & Engsel Tingkap",
+      tagline:
+        "Baiki atau ganti pemegang, engsel, stay dan mekanisme kunci tingkap casement atau top-hung yang rosak, keras atau berkarat. Dari RM 120.",
+      description:
+        "Pemegang, engsel dan mekanisme kunci yang rosak atau berkarat menjadikan tingkap sukar dibuka, tidak menutup rapat atau menimbulkan risiko keselamatan. Kami membaiki dan menggantikan semua jenis perkakasan tingkap untuk tingkap casement dan top-hung: pemegang yang patah atau longgar, engsel yang berkarat atau bengkok, stay (penyokong buka) yang rosak dan mekanisme kunci yang tidak berfungsi. Kami menggunakan alat ganti yang sepadan atau setara kualiti, melaraskan penjajaran sengkuap supaya tingkap menutup rapat dan selamat, serta melincirkan bahagian bergerak untuk operasi lancar. Untuk tingkap yang tidak selaras dengan bingkai, kami juga boleh menjajarkan semula sengkuap supaya muat kemas tanpa celah.",
+      highlights: [
+        "Pemegang, engsel, stay dan mekanisme kunci untuk tingkap casement & top-hung",
+        "Alat ganti sepadan atau setara kualiti dengan pelarasan penjajaran",
+        "Mengembalikan buka/tutup lancar dan penutupan rapat yang selamat",
+        "Melincirkan bahagian bergerak untuk mengelakkan kekakuan pada masa depan",
+        "Menggantikan pemegang berkarat atau bengkok yang menjejaskan keselamatan",
+      ],
+      process: [
+        { step: "01", title: "Pemeriksaan Perkakasan", desc: "Kami menilai keadaan pemegang, engsel, stay dan mekanisme kunci serta punca kerosakan." },
+        { step: "02", title: "Sebut Harga Telus", desc: "Sebut harga terperinci untuk alat ganti dan buruh; pemegang khas mungkin perlu dipesan." },
+        { step: "03", title: "Penyingkiran Perkakasan Lama", desc: "Pemegang, engsel atau stay yang rosak ditanggalkan dengan berhati-hati tanpa merosakkan bingkai." },
+        { step: "04", title: "Pemasangan & Pelarasan", desc: "Alat ganti baharu dipasang, penjajaran sengkuap dilaras dan bahagian bergerak dilincirkan." },
+        { step: "05", title: "Ujian & Serahan", desc: "Tingkap dibuka, ditutup dan dikunci berulang kali untuk memastikan operasi lancar dan selamat." },
+      ],
+      faqs: [
+        { q: "Berapa kos untuk membaiki pemegang tingkap?", a: "Harga bermula RM120 untuk menggantikan pemegang atau engsel yang rosak. Kos sebenar bergantung pada jenis dan bilangan alat ganti. Sebut harga terperinci diberikan selepas pemeriksaan." },
+        { q: "Bolehkah anda menggantikan pemegang dengan model yang berbeza?", a: "Ya. Jika pemegang asal tidak lagi dikeluarkan, kami boleh memasang model yang sepadan dengan lubang sedia ada atau menggerudi lubang baharu jika perlu. Kami akan mencadangkan pilihan yang sesuai dengan bingkai dan gaya tingkap anda." },
+        { q: "Mengapa tingkap casement saya tidak menutup rapat?", a: "Biasanya disebabkan oleh engsel yang longgar atau bengkok, pemegang atau mekanisme kunci yang rosak, atau sengkuap yang tidak jajar dengan bingkai. Kami memeriksa semua bahagian dan membaiki atau menjajarkan semula supaya tingkap menutup rapat." },
+        { q: "Adakah anda melincirkan perkakasan tingkap?", a: "Ya, selepas pembaikan kami melincirkan semua bahagian bergerak dengan pelincir sesuai untuk memastikan operasi lancar dan mengurangkan kekakuan pada masa depan." },
+      ],
+      metaTitle: "Pembaikan Pemegang & Engsel Tingkap KL | Dari RM 120",
+      metaDesc:
+        "Baiki atau ganti pemegang, engsel, stay & kunci tingkap casement/top-hung di KL & Selangor. Dari RM120. Pemegang berkarat, engsel bengkok, kunci rosak.",
+    },
+    zh: {
+      name: "窗户执手与铰链维修",
+      tagline:
+        "维修或更换平开窗、上悬窗上损坏、卡涩或腐蚀的执手、铰链、撑挡与锁闭机构。从 RM 120 起。",
+      description:
+        "执手、铰链或锁闭机构损坏、腐蚀会令窗户难以开启、无法关严，甚至带来安全隐患。我们为平开窗和上悬窗维修、更换各类窗五金：断裂或松动的执手、生锈或弯曲的铰链、损坏的撑挡（开窗支撑件），以及失灵的上锁机构。我们使用匹配的原型号或同级品质配件，调整窗扇与窗框的贴合，使窗户关得严密牢固，并为活动部件上油，操作顺滑。对与窗框不齐的窗扇，我们也会重新调校，使其严密吻合、无缝隙。",
+      highlights: [
+        "平开窗与上悬窗的执手、铰链、撑挡及锁闭机构",
+        "匹配原型号或同级品质配件，并做对齐调校",
+        "恢复顺滑开合与严密、安全的上锁",
+        "为活动部件上油，避免日后卡涩",
+        "更换生锈或弯曲、影响安全的执手",
+      ],
+      process: [
+        { step: "01", title: "五金检查", desc: "评估执手、铰链、撑挡与锁闭机构的状况，找出损坏原因。" },
+        { step: "02", title: "透明报价", desc: "逐项列出配件与人工费用；特殊执手可能需要订购。" },
+        { step: "03", title: "拆除旧五金", desc: "小心拆下损坏的执手、铰链或撑挡，不损伤窗框。" },
+        { step: "04", title: "安装与调校", desc: "安装新配件，调校窗扇与窗框的贴合，并为活动部件上油。" },
+        { step: "05", title: "测试与交付", desc: "反复开合、上锁测试，确保操作顺滑、安全可靠。" },
+      ],
+      faqs: [
+        { q: "修一个执手要多少钱？", a: "更换损坏的执手或铰链从 RM120 起，实际费用取决于配件类型与数量。现场检查后提供逐项报价。" },
+        { q: "可以换不同型号的执手吗？", a: "可以。如果原型号停产，我们会选择与现有孔位匹配的型号，必要时也可重新钻孔。我们会根据您的窗框与窗户风格推荐合适选项。" },
+        { q: "为什么我的平开窗关不严？", a: "通常是因为铰链松动或弯曲、执手或锁闭机构损坏，或窗扇与窗框错位。我们会检查各部件并修复或重新调校，使窗户关得严密。" },
+        { q: "你们会给窗五金上油吗？", a: "会的。维修完成后，我们为所有活动部件涂上合适的润滑剂，确保操作顺滑并减少日后卡涩。" },
+      ],
+      metaTitle: "吉隆坡窗户执手与铰链维修 | RM120起",
+      metaDesc:
+        "吉隆坡与雪兰莪维修或更换窗户执手、铰链、撑挡与锁闭机构。平开窗、上悬窗。从RM120起。",
+    },
+  },
+  "window-repair/sliding-window-roller-replacement": {
+    ms: {
+      name: "Penggantian Roller Tingkap Gelangsar",
+      tagline:
+        "Ganti roller nilon atau keluli haus dan bersihkan trek untuk tingkap gelangsar beroperasi lancar semula. Dari RM 150.",
+      description:
+        "Tingkap gelangsar menjadi sukar dibuka biasanya bukan kerana tingkap rosak, tetapi kerana roller (roda) di bahagian bawah sengkuap telah haus, trek dipenuhi kotoran atau sengkuap sedikit tidak jajar. Kami menggantikan roller nilon atau keluli yang haus dengan roller baharu yang sesuai untuk berat dan jenis bingkai tingkap anda, membersihkan dan melincirkan trek, serta menjajarkan semula sengkuap supaya tingkap gelangsar terbuka dan tertutup dengan lancar dan senyap. Kerja ini jauh lebih murah daripada menggantikan seluruh tingkap dan biasanya memulihkan operasi lancar sepenuhnya. Kami juga memeriksa keadaan trek dan pengedap sedia ada untuk memastikan tiada isu lain yang menjejaskan fungsi.",
+      highlights: [
+        "Roller nilon atau keluli baharu yang sepadan dengan berat dan jenis bingkai",
+        "Pembersihan dan pelinciran trek untuk gelongsoran lancar dan senyap",
+        "Penjajaran semula sengkuap untuk muat kemas tanpa tersekat",
+        "Jauh lebih murah daripada menggantikan seluruh tingkap",
+        "Pemeriksaan trek dan pengedap untuk mengesan isu lain",
+      ],
+      process: [
+        { step: "01", title: "Pemeriksaan Roller & Trek", desc: "Kami mengeluarkan sengkuap, memeriksa keadaan roller, trek dan penjajaran untuk mengenal pasti punca kekakuan." },
+        { step: "02", title: "Sebut Harga Telus", desc: "Sebut harga terperinci untuk roller baharu dan buruh; roller khas mungkin perlu dipesan." },
+        { step: "03", title: "Penggantian Roller", desc: "Roller haus ditanggalkan dan roller baharu dipasang, memastikan ia menempati dengan betul pada trek." },
+        { step: "04", title: "Pembersihan & Pelinciran Trek", desc: "Trek dibersihkan daripada kotoran dan serpihan, kemudian dilincirkan untuk gelongsoran lancar." },
+        { step: "05", title: "Pemasangan Semula & Ujian", desc: "Sengkuap dipasang semula, dijajarkan dan diuji buka/tutup berulang kali untuk operasi lancar." },
+      ],
+      faqs: [
+        { q: "Berapa kos untuk menggantikan roller tingkap gelangsar?", a: "Harga bermula RM150 setiap tingkap untuk roller baharu dan pemasangan. Jika roller khas atau trek perlu dibaiki, kos mungkin lebih tinggi. Sebut harga terperinci diberikan selepas pemeriksaan." },
+        { q: "Apakah tanda roller tingkap gelangsar perlu diganti?", a: "Tanda biasa: tingkap sukar dibuka atau ditutup, berbunyi semasa menggelongsor, tersekat di tengah-tengah atau sengkuap condong. Ini biasanya disebabkan oleh roller haus atau trek kotor." },
+        { q: "Perlukah saya menggantikan seluruh tingkap jika roller haus?", a: "Tidak. Kebanyakan tingkap gelangsar menjadi sukar dikendalikan kerana roller haus atau trek kotor, bukan kerana tingkap rosak. Menggantikan roller biasanya memulihkan operasi lancar pada sebahagian kecil kos tingkap baharu." },
+        { q: "Berapa lama kerja menggantikan roller?", a: "Sebuah tingkap gelangsar biasanya mengambil masa 30–60 minit untuk siap, termasuk penggantian roller, pembersihan trek dan pelarasan. Anda boleh menggunakan tingkap dengan segera selepas serahan." },
+      ],
+      metaTitle: "Penggantian Roller Tingkap Gelangsar KL | Dari RM 150",
+      metaDesc:
+        "Ganti roller tingkap gelangsar haus di KL & Selangor. Roller nilon/keluli, pembersihan & pelinciran trek, penjajaran sengkuap. Dari RM150/tingkap.",
+    },
+    zh: {
+      name: "推拉窗滑轮更换",
+      tagline:
+        "更换磨损的尼龙或钢滑轮并清洁轨道，让推拉窗恢复顺滑推拉。从 RM 150 起。",
+      description:
+        "推拉窗难以推开，通常不是因为窗户坏了，而是窗扇底部的滑轮（滚轮）磨损、轨道积灰，或窗扇轻微错位。我们根据您窗户的重量与框料类型更换合适的尼龙或钢滑轮，清洁并润滑轨道，重新调校窗扇，使推拉窗开合顺滑安静。这项维修比整扇换窗便宜得多，通常能完全恢复顺畅操作。我们也会一并检查轨道与现有密封条状况，确保没有其他影响功能的隐患。",
+      highlights: [
+        "根据窗扇重量与框料匹配新的尼龙或钢滑轮",
+        "清洁并润滑轨道，推拉顺滑安静",
+        "重新调校窗扇，吻合严密、不卡滞",
+        "比整扇换窗便宜得多",
+        "一并检查轨道与密封条，排查其他隐患",
+      ],
+      process: [
+        { step: "01", title: "检查滑轮与轨道", desc: "卸下窗扇，检查滑轮、轨道与对位状况，找出卡涩原因。" },
+        { step: "02", title: "透明报价", desc: "逐项列出滑轮与人工费用；特殊滑轮可能需要订购。" },
+        { step: "03", title: "更换滑轮", desc: "拆下磨损滑轮，安装新滑轮并确保其在轨道上正确就位。" },
+        { step: "04", title: "清洁与润滑轨道", desc: "清理轨道内的灰尘与杂物，再上油润滑，确保推拉顺滑。" },
+        { step: "05", title: "装回与测试", desc: "装回窗扇、重新调校，并反复推拉测试确认顺畅。" },
+      ],
+      faqs: [
+        { q: "换一个推拉窗滑轮要多少钱？", a: "每扇窗从 RM150 起，包含新滑轮与安装。如需特殊滑轮或修复轨道，费用可能略高。现场检查后提供逐项报价。" },
+        { q: "怎么判断推拉窗滑轮需要更换？", a: "常见迹象：窗户很难推开或关拢、滑动时有噪音、滑到一半卡住，或窗扇倾斜。这通常由滑轮磨损或轨道积灰造成。" },
+        { q: "滑轮磨损需要整扇换窗吗？", a: "不需要。大多数推拉窗变涩是因为滑轮磨损或轨道积灰，而非窗户损坏。更换滑轮通常只需新窗零头的价格即可恢复顺滑。" },
+        { q: "换滑轮要多久？", a: "一扇推拉窗通常 30–60 分钟完成，含更换滑轮、清洁轨道与调校。交付后即可正常使用。" },
+      ],
+      metaTitle: "吉隆坡推拉窗滑轮更换 | RM150起",
+      metaDesc:
+        "吉隆坡与雪兰莪更换磨损推拉窗滑轮。尼龙/钢滑轮、轨道清洁润滑、窗扇调校。每扇从RM150起。",
+    },
+  },
+
 };
 
 /**
