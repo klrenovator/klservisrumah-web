@@ -36,7 +36,6 @@ const defaultResponseTimes: Record<string, string> = {
   cctv: "Site survey + scheduled",
   autogate: "Site survey + scheduled",
   welding: "Site survey + scheduled",
-  aircond: "Scheduled service",
   "smart-home": "Consult + scheduled",
   "pest-control": "Scheduled treatment"
 };

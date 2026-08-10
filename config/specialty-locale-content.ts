@@ -1,11 +1,11 @@
 /**
  * Specialty locale content — KL Servis Rumah
  *
- * Real, authored native-content store for the priority locale-specialty
- * tranche (Painting + Ceiling/Partition). Each entry is keyed by
- * `<serviceSlug>/<specialtySlug>` and holds full Malay (ms) and Chinese (zh)
- * blocks so the localized specialty routes render genuine, non-thin content
- * instead of templated clones.
+ * Real, authored native-content store for the service-by-service locale-
+ * specialty rollout. Each entry is keyed by `<serviceSlug>/<specialtySlug>`
+ * and holds full Malay (ms) and Chinese (zh) blocks so the localized
+ * specialty routes render genuine, non-thin content instead of templated
+ * clones.
  *
  * Only specialties listed here get real `/ms/services/<s>/<sub>` and
  * `/zh/services/<s>/<sub>` routes (see the localized specialty page).
@@ -3023,6 +3023,240 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       ],
       metaTitle: "吉隆坡环氧地坪修补与重涂 | RM14/sq ft起",
       metaDesc: "吉隆坡与雪兰莪环氧地坪修补与重涂。金刚石打磨、补裂缝气泡、紫外稳定面漆。比重新施工更省。WhatsApp免费报价。",
+    },
+  },
+
+  /* ── CCTV ────────────────────────────────────────────────────────────── */
+  "cctv/condo-wi-fi-cctv-package-4-cameras": {
+    ms: {
+      name: "Pakej CCTV Wi-Fi Kondominium (4 Kamera)",
+      tagline: "Empat kamera Wi-Fi 4MP untuk kondominium 1,000–1,500 kaki persegi, lengkap dengan storan awan, aplikasi telefon dan tontonan jauh.",
+      description:
+        "Pakej ini direka untuk kondominium yang memerlukan liputan pintu masuk, ruang tamu dan kawasan dalaman utama tanpa menarik kabel rangkaian ke setiap kamera. Kami menyemak kekuatan Wi-Fi di setiap titik, merancang sudut yang mengurangkan titik buta, memasang empat kamera 4MP dengan saluran kuasa yang kemas, kemudian mengkonfigurasi storan awan dan aplikasi mudah alih. Tontonan langsung, main semula rakaman dan pemberitahuan gerakan diuji pada telefon anda sebelum serahan. Untuk kamera yang menghadap koridor atau kawasan bersama, kedudukan hanya dimuktamadkan selepas keperluan pengurusan kondominium dan privasi jiran disemak. Harga bermula RM2,200 dan pemasangan disokong jaminan kamera serta kerja 12 bulan.",
+      highlights: [
+        "Empat kamera Wi-Fi 4MP untuk kondominium 1,000–1,500 kaki persegi",
+        "Semakan liputan Wi-Fi dan pelan sudut kamera untuk mengurangkan titik buta",
+        "Saluran kuasa diskret—kamera tanpa wayar masih dipasang dengan bekalan kuasa yang kemas",
+        "Konfigurasi storan awan, aplikasi iOS/Android, tontonan jauh dan amaran gerakan",
+        "Serahan kata laluan, foto kedudukan dan jaminan kamera serta pemasangan 12 bulan",
+      ],
+      process: [
+        { step: "01", title: "Semakan Unit & Wi-Fi", desc: "Kami menyemak pelan unit, lokasi pintu masuk, soket kuasa dan kekuatan isyarat Wi-Fi pada setiap kedudukan cadangan." },
+        { step: "02", title: "Pelan Kamera & Kelulusan", desc: "Empat sudut liputan dicadangkan; kamera yang mungkin melihat kawasan bersama disemak terhadap syarat pengurusan dan privasi." },
+        { step: "03", title: "Pemasangan Kemas", desc: "Kamera dipasang kukuh dan kabel kuasa disorok dalam saluran diskret tanpa merosakkan kemasan unit." },
+        { step: "04", title: "Awan & Aplikasi", desc: "Storan awan, akaun pemilik, tontonan langsung, main semula dan pemberitahuan gerakan dikonfigurasi pada telefon anda." },
+        { step: "05", title: "Ujian & Serahan", desc: "Kami menguji imej siang dan malam, capaian jauh serta rakaman, lalu menyerahkan kata laluan, foto kedudukan dan dokumen jaminan." },
+      ],
+      faqs: [
+        { q: "Berapakah harga pakej empat kamera untuk kondominium?", a: "Harga bermula RM2,200 untuk empat kamera Wi-Fi 4MP, pemasangan, saluran kuasa, persediaan aplikasi dan konfigurasi storan awan. Yuran langganan awan, jika dipilih, dinyatakan berasingan dalam sebut harga." },
+        { q: "Adakah kamera Wi-Fi benar-benar tidak memerlukan kabel?", a: "Ia tidak memerlukan kabel data CAT6 ke NVR, tetapi setiap kamera tetap memerlukan bekalan kuasa. Kami menghala kabel kuasa melalui saluran diskret supaya pemasangan kelihatan kemas." },
+        { q: "Boleh kamera dipasang menghadap koridor kondominium?", a: "Kamera dalam unit sendiri biasanya dibenarkan, tetapi koridor ialah kawasan bersama. Kami membantu menyediakan spesifikasi dan pelan kedudukan; pemasangan hanya diteruskan selepas syarat atau kelulusan pengurusan dipenuhi." },
+        { q: "Boleh saya melihat rakaman semasa berada di luar negara?", a: "Ya. Selepas aplikasi dipasangkan, anda boleh melihat siaran langsung dan main semula dari mana-mana lokasi selagi internet rumah dan telefon berfungsi. Kami menguji capaian jauh sebelum serahan." },
+      ],
+      metaTitle: "Pakej CCTV Wi-Fi Kondominium KL | 4 Kamera RM2,200",
+      metaDesc: "Pakej 4 kamera CCTV Wi-Fi 4MP untuk kondominium KL & Selangor. Storan awan, aplikasi telefon, tontonan jauh, pemasangan kemas dan jaminan 12 bulan.",
+    },
+    zh: {
+      name: "公寓 Wi-Fi CCTV 套餐（4台）",
+      tagline: "为1,000–1,500平方英尺公寓配置4台4MP Wi-Fi摄像头，包含云端存储、手机App与远程查看设置。",
+      description:
+        "本套餐适合希望覆盖大门、客厅与主要室内区域，又不想为每台摄像头铺设网线的公寓住户。我们先检测每个点位的Wi-Fi强度，规划减少盲区的拍摄角度，再安装4台4MP摄像头，并以整齐线槽处理电源线。安装后配置云端存储与手机App，在您的手机上测试实时画面、录像回放及移动侦测通知。若摄像头可能拍到走廊或其他公共区域，我们会先核对公寓管理处规定与邻居隐私要求，再确认最终位置。套餐从RM2,200起，摄像头与安装工程享12个月书面保修。",
+      highlights: [
+        "4台4MP Wi-Fi摄像头，适合1,000–1,500平方英尺公寓",
+        "逐点检测Wi-Fi信号并规划拍摄角度，尽量减少监控盲区",
+        "电源线采用隐蔽线槽整理——无线摄像头仍需稳定供电",
+        "配置云端存储、iOS/Android App、远程查看与移动侦测通知",
+        "移交密码、点位照片，并提供12个月摄像头与安装保修",
+      ],
+      process: [
+        { step: "01", title: "户型与网络检查", desc: "检查户型、出入口、电源插座，并在每个拟定点位测试Wi-Fi信号强度。" },
+        { step: "02", title: "布点与审批确认", desc: "提出4个覆盖角度；如可能拍到公共区域，先核对管理处规定与隐私要求。" },
+        { step: "03", title: "整洁安装", desc: "牢固安装摄像头，并以隐蔽线槽整理电源线，尽量不破坏室内饰面。" },
+        { step: "04", title: "云端与App设置", desc: "在您的手机上配置云端存储、业主账号、实时画面、回放及移动侦测通知。" },
+        { step: "05", title: "测试与交付", desc: "测试日夜画质、远程连接与录像，并移交密码、点位照片及保修文件。" },
+      ],
+      faqs: [
+        { q: "公寓4台摄像头套餐多少钱？", a: "套餐从RM2,200起，包含4台4MP Wi-Fi摄像头、安装、电源线槽、App设置与云端存储配置。若选择收费云端方案，订阅费会在报价中另列。" },
+        { q: "Wi-Fi摄像头真的完全不用电线吗？", a: "它不需要从NVR铺设CAT6数据线，但每台摄像头仍需供电。我们会以隐蔽线槽整理电源线，让安装保持整洁。" },
+        { q: "摄像头可以对着公寓走廊吗？", a: "自己单位内安装通常没有问题，但走廊属于公共区域。我们可协助准备规格与布点图，须符合管理处要求或取得批准后才施工。" },
+        { q: "人在国外可以查看录像吗？", a: "可以。App配对后，只要家中网络和手机网络正常，就能在外地查看实时画面与录像回放。交付前我们会实际测试远程连接。" },
+      ],
+      metaTitle: "吉隆坡公寓 Wi-Fi CCTV 套餐 | 4台 RM2,200起",
+      metaDesc: "吉隆坡与雪兰莪公寓4台4MP Wi-Fi监控套餐，含云端存储配置、手机App、远程查看、整洁安装及12个月保修。",
+    },
+  },
+  "cctv/landed-house-poe-cctv-8-cameras": {
+    ms: {
+      name: "CCTV PoE Rumah Landed (8 Kamera)",
+      tagline: "Sistem lapan kamera PoE 4MP dengan NVR 8 saluran, HDD 2TB dan rakaman berterusan sekitar satu minggu untuk rumah landed.",
+      description:
+        "Pakej PoE lapan kamera memberikan liputan stabil 24/7 untuk rumah teres, semi-D dan banglo tanpa bergantung pada sambungan Wi-Fi setiap kamera. Kami meninjau pintu depan dan belakang, garaj, pagar sisi, laluan kereta serta perimeter, kemudian menyediakan pelan kedudukan yang mengutamakan wajah dan laluan masuk sambil mengurangkan titik buta. Setiap kamera bullet 4MP menerima kuasa dan data melalui satu kabel CAT6 ke NVR 8 saluran. NVR dengan HDD pengawasan 2TB dikonfigurasi untuk kira-kira satu minggu rakaman berterusan, bergantung pada kadar bit dan tetapan gerakan. Kabel dilalukan melalui rongga siling, konduit atau saluran yang kemas, dan aplikasi telefon disediakan untuk tontonan jauh. Harga bermula RM4,200 dengan jaminan kamera serta pemasangan 12 bulan.",
+      highlights: [
+        "Lapan kamera bullet PoE 4MP dengan sambungan data dan kuasa melalui CAT6",
+        "NVR 8 saluran dan HDD pengawasan 2TB untuk sekitar satu minggu rakaman berterusan",
+        "Pelan liputan pintu, garaj, pagar, laluan kereta dan perimeter berdasarkan tinjauan tapak",
+        "Laluan kabel tersembunyi melalui rongga siling, konduit atau saluran yang kemas",
+        "Aplikasi iOS/Android, tontonan jauh, serahan kata laluan dan jaminan 12 bulan",
+      ],
+      process: [
+        { step: "01", title: "Tinjauan Keselamatan", desc: "Kami memeriksa titik masuk, laluan, ketinggian pemasangan, pencahayaan malam dan lokasi selamat untuk NVR." },
+        { step: "02", title: "Pelan 8 Kamera", desc: "Pelan bertanda menunjukkan sudut setiap kamera, laluan CAT6, lokasi NVR, kapasiti storan dan sebarang akses kerja tinggi." },
+        { step: "03", title: "Laluan CAT6", desc: "Kabel kuprum CAT6 ditarik melalui rongga siling, konduit atau saluran dan dilabel pada kedua-dua hujung untuk penyelenggaraan." },
+        { step: "04", title: "Pemasangan & NVR", desc: "Lapan kamera dipasang dan difokuskan; NVR 8 saluran serta HDD 2TB dikonfigurasi untuk rakaman berterusan." },
+        { step: "05", title: "Aplikasi & Serahan", desc: "Tontonan langsung, main semula, waktu sistem dan capaian jauh diuji sebelum foto kedudukan, kata laluan dan jaminan diserahkan." },
+      ],
+      faqs: [
+        { q: "Berapakah harga sistem PoE lapan kamera?", a: "Harga bermula RM4,200 untuk 8 kamera PoE 4MP, NVR 8 saluran, HDD 2TB, laluan kabel standard, pemasangan dan persediaan aplikasi. Akses tinggi atau laluan kabel luar biasa dinyatakan berasingan selepas tinjauan." },
+        { q: "Mengapa PoE lebih sesuai untuk rumah landed?", a: "PoE menggunakan satu kabel CAT6 untuk kuasa dan data, tidak bergantung pada liputan Wi-Fi setiap kamera dan membolehkan rakaman tempatan 24/7 ke NVR tanpa langganan awan wajib." },
+        { q: "Adakah HDD 2TB benar-benar menyimpan rakaman seminggu?", a: "Ia disasarkan untuk kira-kira satu minggu rakaman berterusan bagi lapan kamera 4MP. Tempoh sebenar berubah mengikut kadar bit, bilangan bingkai, pemampatan dan sama ada rakaman gerakan digunakan." },
+        { q: "Boleh sistem terus berfungsi semasa gangguan elektrik?", a: "Sistem standard berhenti apabila bekalan elektrik terputus. UPS untuk NVR dan suis PoE boleh ditambah sebagai pilihan supaya sistem terus merakam untuk tempoh sandaran yang ditetapkan." },
+      ],
+      metaTitle: "CCTV PoE Rumah Landed KL | 8 Kamera Dari RM4,200",
+      metaDesc: "Sistem CCTV PoE 8 kamera 4MP untuk rumah landed KL & Selangor. NVR 8 saluran, HDD 2TB, CAT6 tersembunyi, aplikasi telefon dan jaminan 12 bulan.",
+    },
+    zh: {
+      name: "有地住宅 PoE CCTV（8台）",
+      tagline: "为有地住宅安装8台4MP PoE摄像头、8路NVR与2TB硬盘，提供约一周连续录像。",
+      description:
+        "8台PoE监控套餐为排屋、半独立式住宅与独立洋房提供稳定的24小时覆盖，每台摄像头无需依赖独立Wi-Fi连接。我们会勘察前后门、车库、侧门、车道与外围，规划既能捕捉人脸及出入路线、又尽量减少盲区的点位。每台4MP枪式摄像头通过一条CAT6网线同时传输电力与数据，统一连接至8路NVR。2TB监控专用硬盘按连续录像配置，实际保存时间会随码率与移动侦测设置变化，目标约为一周。线缆经吊顶空腔、线管或整齐线槽敷设，并设置手机App供远程查看。整套系统从RM4,200起，摄像头与安装享12个月书面保修。",
+      highlights: [
+        "8台4MP PoE枪式摄像头，以CAT6同时传输数据与电力",
+        "8路NVR配2TB监控硬盘，目标约一周连续录像",
+        "按现场勘察规划大门、车库、侧门、车道与外围覆盖",
+        "线缆经吊顶空腔、线管或整齐线槽隐蔽敷设",
+        "配置iOS/Android App、远程查看、密码移交及12个月保修",
+      ],
+      process: [
+        { step: "01", title: "安防现场勘察", desc: "检查各出入口、通道、安装高度、夜间照明，并选择安全隐蔽的NVR位置。" },
+        { step: "02", title: "8点位方案", desc: "点位图列明每台摄像头角度、CAT6路线、NVR位置、存储容量与高处作业要求。" },
+        { step: "03", title: "CAT6布线", desc: "纯铜CAT6网线经吊顶空腔、线管或线槽敷设，两端编号，方便日后检修。" },
+        { step: "04", title: "安装与NVR配置", desc: "安装并调校8台摄像头，把8路NVR与2TB硬盘配置为连续录像。" },
+        { step: "05", title: "App与交付", desc: "测试实时画面、回放、系统时间与远程连接，再移交点位照片、密码及保修文件。" },
+      ],
+      faqs: [
+        { q: "8台PoE监控系统多少钱？", a: "从RM4,200起，包含8台4MP PoE摄像头、8路NVR、2TB硬盘、标准布线、安装及App设置。高处作业或特殊布线路线会在勘察后另列。" },
+        { q: "为什么有地住宅更适合PoE？", a: "PoE以一条CAT6同时传输电力与数据，不依赖每个点位的Wi-Fi信号，并可24小时录到本地NVR，无需强制订阅云端服务。" },
+        { q: "2TB硬盘一定能保存一周吗？", a: "本套餐以8台4MP摄像头约一周连续录像为配置目标。实际天数取决于码率、帧率、压缩方式以及是否启用移动侦测录像。" },
+        { q: "停电时系统还能录像吗？", a: "标准系统在断电时会停止。可选配为NVR与PoE交换机供电的UPS，按所选容量在停电期间维持一段时间的录像。" },
+      ],
+      metaTitle: "吉隆坡有地住宅 PoE CCTV | 8台 RM4,200起",
+      metaDesc: "吉隆坡与雪兰莪有地住宅8台4MP PoE监控系统，含8路NVR、2TB硬盘、隐蔽CAT6布线、手机App及12个月保修。",
+    },
+  },
+  "cctv/single-camera-add-on": {
+    ms: {
+      name: "Tambahan Satu Kamera CCTV",
+      tagline: "Tambah satu kamera pada sistem Hikvision, Dahua, Ezviz atau Tapo sedia ada, termasuk semakan keserasian, kabel, pemasangan dan pasangan aplikasi.",
+      description:
+        "Tambahan satu kamera sesuai apabila sistem sedia ada masih baik tetapi terdapat pintu, garaj, stor atau sudut baharu yang belum diliputi. Sebelum menawarkan kamera, kami menyemak jenama dan model DVR/NVR, baki saluran, resolusi yang disokong, jenis kabel, bekalan kuasa dan ruang storan supaya unit baharu benar-benar serasi. Kamera kemudian dipasang pada sudut yang dipersetujui, kabel CAT6 atau kuasa dilalukan dengan kemas, dan paparan ditambah ke perakam serta aplikasi telefon. Kami menguji imej siang/malam, rakaman dan main semula—bukan sekadar memasang kamera yang hanya menunjukkan paparan langsung. Harga bermula RM420 untuk pemasangan standard; kerja kabel panjang, akses tinggi atau peningkatan storan akan dinyatakan dalam sebut harga.",
+      highlights: [
+        "Semakan jenama, model, baki saluran, resolusi dan storan sebelum kamera dipilih",
+        "Sokongan sistem biasa Hikvision, Dahua, Ezviz dan TP-Link Tapo yang serasi",
+        "Kabel, pendakap dan pemasangan standard termasuk dari RM420",
+        "Kamera ditambah ke DVR/NVR dan aplikasi telefon—bukan paparan berasingan",
+        "Ujian imej malam, rakaman, main semula dan tontonan jauh sebelum serahan",
+      ],
+      process: [
+        { step: "01", title: "Audit Sistem Sedia Ada", desc: "Kami merekod jenama, model, jenis kamera, baki saluran, resolusi perakam, kabel dan keadaan storan." },
+        { step: "02", title: "Pengesahan Keserasian", desc: "Kamera yang sepadan dipilih dan kos kabel, pendakap, akses tinggi atau peningkatan HDD dijelaskan sebelum kerja." },
+        { step: "03", title: "Laluan & Pemasangan", desc: "Kabel CAT6, koaksial atau kuasa yang sesuai dilalukan dengan kemas sebelum kamera dipasang pada sudut liputan baharu." },
+        { step: "04", title: "Tambah Ke Sistem", desc: "Kamera didaftarkan pada DVR/NVR atau akaun awan dan ditambah ke aplikasi telefon pemilik." },
+        { step: "05", title: "Ujian Rakaman", desc: "Kami mengesahkan paparan siang/malam, cap masa, rakaman, main semula, notifikasi dan capaian jauh." },
+      ],
+      faqs: [
+        { q: "Berapakah harga untuk menambah satu kamera CCTV?", a: "Harga bermula RM420 termasuk kamera yang serasi, pemasangan standard, kabel dan pasangan aplikasi. Jarak kabel, ketinggian, jenis kamera dan keperluan penukar atau storan boleh mengubah harga akhir." },
+        { q: "Boleh jenama kamera berbeza ditambah ke NVR saya?", a: "Kadangkala boleh melalui protokol yang disokong, tetapi tidak semua fungsi akan tersedia. Kami menyemak model tepat dahulu dan mengutamakan kamera yang serasi sepenuhnya dengan perakam anda." },
+        { q: "Bagaimana jika semua saluran NVR sudah digunakan?", a: "Kami akan terangkan pilihan sebelum pemasangan—menggantikan satu titik, menaik taraf kepada perakam lebih banyak saluran, atau menggunakan kamera awan berasingan jika itu lebih praktikal." },
+        { q: "Adakah menambah kamera mengurangkan tempoh rakaman?", a: "Ya, satu kamera tambahan menggunakan ruang HDD dan boleh memendekkan hari simpanan. Kami mengira anggaran tempoh baharu dan mencadangkan peningkatan HDD jika perlu." },
+      ],
+      metaTitle: "Tambah Satu Kamera CCTV KL & Selangor | Dari RM420",
+      metaDesc: "Tambah kamera Hikvision, Dahua, Ezviz atau Tapo pada sistem CCTV sedia ada. Semakan keserasian, kabel, pemasangan, aplikasi dan ujian rakaman dari RM420.",
+    },
+    zh: {
+      name: "单台 CCTV 摄像头加装",
+      tagline: "为现有Hikvision、Dahua、Ezviz或Tapo系统加装一台摄像头，包含兼容性检查、布线、安装与App配对。",
+      description:
+        "当现有监控系统运作良好，但大门、车库、储藏室或新区域仍有盲区时，可以单独加装一台摄像头。报价前我们会检查DVR/NVR品牌型号、剩余通道、支持分辨率、线缆类型、供电与硬盘空间，确保新摄像头真正兼容。确认后在约定角度安装，整齐敷设CAT6或电源线，并把新画面加入录像机与业主手机App。我们会测试日夜画质、实际录像与回放，而不是只安装一台仅能看实时画面的摄像头。标准加装从RM420起；长距离布线、高处作业或硬盘升级会在报价中清楚列明。",
+      highlights: [
+        "选型前检查品牌型号、剩余通道、分辨率与硬盘容量",
+        "支持兼容的Hikvision、Dahua、Ezviz与TP-Link Tapo常见系统",
+        "RM420起包含标准线缆、支架与安装",
+        "把新摄像头加入DVR/NVR与手机App，而非独立显示",
+        "交付前测试夜间画面、录像、回放及远程查看",
+      ],
+      process: [
+        { step: "01", title: "现有系统检查", desc: "记录品牌、型号、摄像头制式、剩余通道、录像机分辨率、线缆及硬盘状态。" },
+        { step: "02", title: "兼容性确认", desc: "选择匹配摄像头，并在施工前说明线缆、支架、高处作业或硬盘升级费用。" },
+        { step: "03", title: "布线与安装", desc: "按系统敷设CAT6、同轴或电源线，再把摄像头固定在新增覆盖角度。" },
+        { step: "04", title: "接入系统", desc: "将摄像头注册到DVR/NVR或云端账号，并加入业主手机App。" },
+        { step: "05", title: "录像测试", desc: "确认日夜画面、时间戳、录像、回放、通知与远程连接均正常。" },
+      ],
+      faqs: [
+        { q: "加装一台CCTV摄像头多少钱？", a: "从RM420起，包含兼容摄像头、标准安装、线缆与App配对。线长、安装高度、摄像头类型以及转换器或存储需求会影响最终价格。" },
+        { q: "不同品牌摄像头能接入我的NVR吗？", a: "部分型号可通过共同协议接入，但未必保留所有功能。我们会先核对准确型号，并优先选择与录像机完全兼容的摄像头。" },
+        { q: "如果NVR通道已经用满怎么办？", a: "施工前会说明可选方案：替换一个点位、升级更多通道的录像机，或在合适情况下采用独立云端摄像头。" },
+        { q: "多一台摄像头会缩短录像保存天数吗？", a: "会。新增摄像头会占用硬盘容量，可能缩短保存天数。我们会估算新的录像周期，并在需要时建议升级硬盘。" },
+      ],
+      metaTitle: "吉隆坡单台 CCTV 摄像头加装 | RM420起",
+      metaDesc: "为现有Hikvision、Dahua、Ezviz或Tapo监控系统加装摄像头，含兼容检查、布线、安装、App配对与录像测试，RM420起。",
+    },
+  },
+  "cctv/cctv-system-health-check-and-relocation": {
+    ms: {
+      name: "Pemeriksaan Kesihatan & Pemindahan Sistem CCTV",
+      tagline: "Diagnosis di tapak untuk kamera, DVR/NVR, HDD, kuasa, rangkaian dan aplikasi, termasuk pilihan membersih, menyasar semula atau memindahkan kamera.",
+      description:
+        "Perkhidmatan ini membantu apabila CCTV menunjukkan paparan langsung tetapi tidak merakam, rakaman hilang, aplikasi tidak boleh disambung, imej kabur, atau kamera perlu dipindahkan selepas pengubahsuaian. Juruteknik memeriksa bekalan kuasa, kabel dan penyambung, status rangkaian, tetapan DVR/NVR, kesihatan HDD, perisian tegar, cap masa dan jadual rakaman. Lensa dibersihkan dan sudut boleh dilaraskan semula sebagai sebahagian daripada lawatan. Jika pemindahan diperlukan, kami menilai laluan kabel dan bidang pandangan baharu sebelum memasang semula kamera serta menguji rakaman. Lawatan bermula RM220; alat ganti, kabel tambahan, kerja akses tinggi atau pemulihan data dibincangkan dahulu dan tidak dianggap termasuk secara automatik.",
+      highlights: [
+        "Diagnosis kamera, DVR/NVR, HDD, bekalan kuasa, kabel, rangkaian dan aplikasi",
+        "Pembersihan lensa, pelarasan fokus/sudut dan pembetulan cap masa atau jadual rakaman",
+        "Ujian main semula sebenar untuk mengesahkan sistem merakam—bukan paparan langsung sahaja",
+        "Pemindahan kamera dengan semakan bidang pandangan dan laluan kabel baharu",
+        "Laporan dapatan serta sebut harga berasingan sebelum alat ganti atau peningkatan dipasang",
+      ],
+      process: [
+        { step: "01", title: "Catat Simptom", desc: "Kami merekod kamera yang terjejas, bila rakaman terakhir berjaya, mesej ralat aplikasi dan sebarang perubahan kuasa atau rangkaian." },
+        { step: "02", title: "Ujian Perkakasan", desc: "Bekalan kuasa, kabel, penyambung, port, DVR/NVR dan status kesihatan HDD diuji secara sistematik." },
+        { step: "03", title: "Semak Tetapan", desc: "Kami menyemak alamat rangkaian, perisian tegar, waktu sistem, jadual rakaman, storan dan pasangan aplikasi." },
+        { step: "04", title: "Servis Atau Pindah", desc: "Lensa dibersih dan kamera disasar semula; jika dipindah, kabel serta pendakap dipasang pada lokasi baharu yang dipersetujui." },
+        { step: "05", title: "Sahkan & Lapor", desc: "Paparan langsung, rakaman, main semula dan capaian jauh diuji sebelum dapatan serta cadangan kos diserahkan." },
+      ],
+      faqs: [
+        { q: "Apakah yang termasuk dalam pemeriksaan CCTV dari RM220?", a: "Ia meliputi lawatan diagnosis, pemeriksaan kuasa/kabel/rangkaian, semakan DVR/NVR dan HDD, tetapan rakaman serta aplikasi, dan pelarasan asas. Alat ganti atau kabel pemindahan tambahan disebutharga dahulu." },
+        { q: "Boleh rakaman yang hilang dipulihkan?", a: "Kadangkala, bergantung pada keadaan HDD dan sama ada data telah ditindih. Kami menilai storan terlebih dahulu; pemulihan data profesional ialah kerja berasingan dan kejayaan tidak boleh dijamin." },
+        { q: "Kenapa ada paparan langsung tetapi tiada rakaman?", a: "Punca biasa termasuk HDD gagal atau penuh, jadual rakaman salah, cap masa tidak tepat, saluran tidak ditetapkan untuk merekod, atau masalah perisian tegar. Kami menguji main semula selepas pembaikan." },
+        { q: "Boleh kamera dipindahkan selepas renovasi?", a: "Ya. Kami menilai sudut baharu, panjang dan jenis kabel, permukaan pemasangan serta liputan malam. Harga akhir bergantung pada jarak pemindahan, akses dan sama ada kabel lama boleh digunakan semula." },
+      ],
+      metaTitle: "Pemeriksaan & Pemindahan CCTV KL | Dari RM220",
+      metaDesc: "Diagnosis CCTV di KL & Selangor: kamera, DVR/NVR, HDD, kabel, rangkaian dan aplikasi. Pembersihan, sasaran semula atau pemindahan dari RM220.",
+    },
+    zh: {
+      name: "CCTV 系统检查与移机",
+      tagline: "上门检测摄像头、DVR/NVR、硬盘、电源、网络与App，并可进行清洁、重新调校或移机。",
+      description:
+        "当CCTV只有实时画面却不录像、录像丢失、App无法连接、画面模糊，或装修后需要移动摄像头时，可预约本服务。技术人员会逐项检查电源、线缆与接头、网络状态、DVR/NVR设置、硬盘健康、固件、系统时间及录像计划。上门期间可清洁镜头，并进行基本对焦与角度调整。若需要移机，我们会先评估新点位视野与布线路线，再重新安装并测试实际录像。上门检查从RM220起；更换零件、增加线缆、高处作业或数据恢复均会先说明报价，不会默认计入基础检查费。",
+      highlights: [
+        "系统检测摄像头、DVR/NVR、硬盘、电源、线缆、网络与App",
+        "清洁镜头、调整焦距与角度，并修正系统时间或录像计划",
+        "实际测试录像回放，确认系统不只是能看实时画面",
+        "移机前检查新点位视野与布线路线",
+        "先提交故障结果与报价，再更换零件或进行升级",
+      ],
+      process: [
+        { step: "01", title: "记录故障现象", desc: "记录受影响摄像头、最后正常录像时间、App错误信息以及近期电源或网络变化。" },
+        { step: "02", title: "硬件测试", desc: "按顺序检测电源、线缆、接头、端口、DVR/NVR及硬盘健康状态。" },
+        { step: "03", title: "设置检查", desc: "核对网络地址、固件、系统时间、录像计划、存储设置与App配对。" },
+        { step: "04", title: "保养或移机", desc: "清洁镜头并重新调校；如需移机，则在约定新位置铺线并安装支架。" },
+        { step: "05", title: "验证与报告", desc: "测试实时画面、录像、回放与远程连接，再提交检测结果及费用建议。" },
+      ],
+      faqs: [
+        { q: "RM220起的CCTV检查包含什么？", a: "包含上门诊断、电源/线缆/网络检查、DVR/NVR与硬盘状态、录像及App设置检查和基本调整。零件或移机新增线缆会先另行报价。" },
+        { q: "丢失的录像可以恢复吗？", a: "视硬盘状态以及数据是否已被覆盖而定。我们会先评估存储；专业数据恢复属于另项服务，且无法保证一定成功。" },
+        { q: "为什么有实时画面却没有录像？", a: "常见原因包括硬盘故障或已满、录像计划设置错误、系统时间不准、通道未启用录像或固件问题。修复后我们会实际测试回放。" },
+        { q: "装修后可以移动摄像头吗？", a: "可以。我们会评估新角度、线缆长度与类型、安装表面及夜间覆盖。最终费用取决于移动距离、施工高度及旧线能否继续使用。" },
+      ],
+      metaTitle: "吉隆坡 CCTV 系统检查与移机 | RM220起",
+      metaDesc: "吉隆坡与雪兰莪CCTV故障检测：摄像头、DVR/NVR、硬盘、线缆、网络与App。可清洁、重新调校或移机，RM220起。",
     },
   },
 

@@ -44,9 +44,10 @@ All tasks have been successfully implemented to improve the search UX and servic
   - Plumbing
   - Waterproofing
   - Handyman
-  - Aircon
+  - CCTV
   - Repair
   - And all other services in the database
+- Business-scope correction (2026-08-10): standalone Air Conditioning is not offered and must not be presented as a service. The separate Electrical sub-service for a dedicated aircond appliance point remains valid electrical work.
 - User flow:
   1. User clicks on search bar
   2. Types service name/type

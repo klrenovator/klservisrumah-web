@@ -594,22 +594,22 @@ Objectives: new-dimension deep audit after S011 (metadata quality, JSON-LD deep 
   - Home → service, problem → service, service ↔ location, and specialty → parent/siblings exist.
   - Now added: main → specialty links (all 28 EN service pages link their 4 specialties; MS/ZH link the priority localized specialties), service ↔ blog links (`RelatedBlogs` on all 28 EN service pages, driven by the validated map), and localized FAQ → localized service links (FAQ hubs + sitewide footer now point to `/ms/services/*` / `/zh/services/*` on localized trees).
   - `topicalAuthorityMap` now complete for all 28 services + 112 typed specialty → problem/blog relationships, with zero Handyman fallback and a validation gate (`npm run audit:topical-map`, wired into `prebuild`).
-- ✅ **PHASE 12 — PRIORITY SEO: PAINTING + CEILING/PARTITION + PLASTER CEILING + WATERPROOFING + PLUMBING + HANDYMAN + ELECTRICAL + TILING** *(2026-08-10)*
+- ✅ **PHASE 12 — PRIORITY LOCALE-SPECIALTY SEO ROLLOUT** *(updated 2026-08-10)*
   - Canonical keep/merge decision documented in `docs/canonical-painting-ceiling-decisions.md` (keep all; no deletions/redirects without GSC evidence).
   - Priority tranche implemented: all 8 Painting + Ceiling specialties now have real `/ms/services/<s>/<sub>` and `/zh/services/<s>/<sub>` pages with authored native MS/ZH content, three-way hreflang clusters, sitemap entries, and localized links from the MS/ZH service pages.
-  - Extended to the **Plaster Ceiling** (4), **Waterproofing** (4), **Plumbing** (4), **Handyman** (4), **Electrical** (4) and **Tiling** (4) tranches (2026-08-10): 32 specialties × MS + ZH = **64 real localized specialty pages**, all authored native and non-thin.
-  - Added `npm run audit:specialty-locale` (non-thin content gate for the locale store, wired into `prebuild`; PRIORITY_KEYS now requires all 24 priority entries = 6 tranches × 4, +4 Tiling in part 7).
+  - Extended service-by-service through Plaster Ceiling, Waterproofing, Plumbing, Handyman, Electrical, Tiling, Flooring, Kitchen Cabinet, Carpentry, Epoxy Flooring and CCTV: **52 specialties × MS + ZH = 104 real localized specialty pages**, all authored native and non-thin.
+  - Added `npm run audit:specialty-locale` (non-thin content gate for the locale store, wired into `prebuild`; `PRIORITY_KEYS` now requires all 52 completed specialties).
   - Localized specialty pages now render typed **related guides + problems** from the validated topical map (blog links use localized routes where a translation exists).
   - JSON-LD OfferCatalog on localized specialty pages is in-language (passes `subServices: localized.subServices` to `getServiceSchema` — same pattern as the main localized service pages).
 - 🟡 **PHASE 13 — SEO METADATA**
   - Automated corpus checks found no missing title, description, H1, canonical, or invalid JSON-LD.
   - 16 short titles and 88 short descriptions need manual review; specialty body uniqueness remains weak despite unique metadata.
 - 🟡 **PHASE 14 — SITEMAP**
-  - Existing sitemap: 3,360 unique URLs after the Tiling tranche (3,138 non-prefixed, 111 MS, 111 ZH), 0 duplicate `<loc>` values.
+  - Existing sitemap: **3,400 unique URLs after the CCTV tranche**, including all 104 real MS/ZH specialty pages, with 0 duplicate `<loc>` values.
   - Missing locale specialties/problems must be added only after real pages exist.
 - 🟡 **PHASE 15 — HREFLANG**
   - Real clusters work for main services, blogs, FAQs, and tools.
-  - Specialty routes: the 32 authored specialties (Painting + Ceiling, Plaster Ceiling, Waterproofing, Plumbing, Handyman, Electrical, Tiling) now use real three-URL clusters (EN + MS + ZH) in both metadata and sitemap (2026-08-10). Remaining 80 specialties + problems/supporting routes still use same-URL multilingual annotations.
+  - Specialty routes: **52 authored specialties** now use real three-URL clusters (EN + MS + ZH) in both metadata and sitemap (2026-08-10). The remaining 60 specialties plus problems/supporting routes are not presented as translated equivalents.
 - 🟡 **PHASE 16 — THIN/DUPLICATE CONTROL**
   - 112 templated specialty pages, 192 generic pages, 15 overlapping clusters, 14 problem-overlap groups, and the large location estate documented.
   - No deletion/redirect was made without evidence.
@@ -617,11 +617,11 @@ Objectives: new-dimension deep audit after S011 (metadata quality, JSON-LD deep 
   - Reuse established `/ms` and `/zh` prefix trees; stable service slugs remain the lowest-risk service pattern.
 - 🟡 **PHASE 18 — NEXT.JS IMPLEMENTATION**
   - Reusable dynamic routes/shared data architecture exists.
-  - Extended (2026-08-10) with locale-aware specialty routes for seven tranches (32 specialties): shared `LocaleSpecialtyPage` server component + `specialty-locale-content.ts` authored native store, driven by `app/(ms)/ms/services/[slug]/[subservice]` and `app/(zh)/zh/services/[slug]/[subservice]`. Remaining 80 specialties/problems still to be extended the same way (no duplicated components).
+  - Extended (2026-08-10) with locale-aware specialty routes for **52 specialties**: shared `LocaleSpecialtyPage` server component + `specialty-locale-content.ts` authored native store, driven by `app/(ms)/ms/services/[slug]/[subservice]` and `app/(zh)/zh/services/[slug]/[subservice]`. The remaining 60 specialties still need the same non-duplicated treatment; problem routes remain evidence-gated.
 - ✅ **PHASE 19 — DO NOT CHANGE BUSINESS INFORMATION (AUDIT SESSION)**
   - No prices, claims, addresses, phone numbers, ratings, warranties, brands, or service areas were changed.
 - ✅ **PHASE 20 — QUALITY CONTROL** *(2026-08-10)*
-  - TypeScript PASS; production build PASS (4,399 static pages — `audit:html` checks 4,399, 0 fatal / 0 warnings); i18n PASS (1,075 keys × 3); 263,293 estimator/content assertions PASS; npm audit 0 vulnerabilities; `npm run seo:audit` PASS.
+  - TypeScript PASS; production build PASS (`audit:html` checks **4,439 pages**, 0 fatal / 0 warnings); i18n PASS (**1,074 keys × 3**); 263,293 estimator/content assertions PASS; npm audit 0 vulnerabilities; `npm run seo:audit` PASS.
   - ESLint now **green** — removed the unused `t`/`useTranslations` in `components/ui/hero-search-bar.tsx:29`. Added `npm run audit:topical-map` to the QC gates.
 - ⏳ **PHASE 21 — FINAL AUDIT REPORT**
   - Final completion report is pending because implementation phases are incomplete.
@@ -632,12 +632,12 @@ Objectives: new-dimension deep audit after S011 (metadata quality, JSON-LD deep 
 - **Sub-services/specialties:** 112
 - **Explicit additional/standalone classification:** 0
 - **EN service-tree URLs:** 212 (index + 28 main + 56 cost/emergency + 112 specialties + 15 clusters)
-- **MS service-tree URLs:** 29 (index + 28 main)
-- **ZH service-tree URLs:** 29 (index + 28 main)
+- **MS service-tree URLs:** 81 (index + 28 main + 52 authored specialties)
+- **ZH service-tree URLs:** 81 (index + 28 main + 52 authored specialties)
 - **Blogs:** 18 EN + 18 MS + 18 ZH
 - **FAQ hubs:** 1 EN + 1 MS + 1 ZH
 - **Problem pages:** 77 EN + 0 MS + 0 ZH
-- **Missing localized specialty URLs:** 224
+- **Missing localized specialty URLs:** 120 (60 specialties × 2 locales)
 - **Missing localized problem URLs:** 154
 
 ### This session completed
@@ -660,9 +660,9 @@ Objectives: new-dimension deep audit after S011 (metadata quality, JSON-LD deep 
 - ✅ 2. Canonical relationship registry added for all 28 services + 112 specialties (complete `topicalAuthorityMap` + typed specialty map, validated by `audit:topical-map`).
 - ✅ 3. Cluster/problem intent decision documented (`docs/canonical-painting-ceiling-decisions.md`); 14 problem-overlap groups still need GSC-evidenced consolidation before problem localization.
 - ✅ 4. Internal-link foundations corrected: main → specialty links, service ↔ blog (`RelatedBlogs`), localized FAQ → localized service links (FAQ hub + sitewide footer).
-- ✅ 5. Painting + Ceiling/Partition priority tranche implemented and extended through Tiling (32 specialties × MS + ZH with authored native content, hreflang, sitemap).
+- ✅ 5. Locale-specialty rollout implemented through CCTV (52 specialties × MS + ZH with authored native content, hreflang and sitemap entries).
 - ⏳ 6. Real locale problem routes (154) still pending; locale cost/emergency routes pending.
-- ⏳ 7. Continue service-by-service (remaining 80 specialties) without creating thin or spun pages.
+- ⏳ 7. Continue service-by-service (remaining 60 specialties) without creating thin or spun pages; standalone Air Conditioning is explicitly out of scope per the owner.
 
 ## Session 2026-08-10 — Implementation: relationship architecture + Painting/Ceiling locale-specialty tranche
 
@@ -884,3 +884,48 @@ Executed the previous "Next Session — START HERE" plan end-to-end:
 2. Add real locale problem routes (154) only after the 14 problem-overlap groups are consolidated with evidence; then localize `RelatedProblems` links on localized specialty pages (they currently point to EN problem pages — documented).
 3. Obtain business/translator QA for the completed localized specialty pages (96 so far) before measuring GSC indexation.
 4. Do not create thin or spun pages; rerun lint, type-check, build, topical-map, specialty-locale, i18n, HTML, and SEO audits after every tranche.
+
+### ✅ Session 2026-08-10 (part 12) — CCTV locale-specialty tranche + Air Conditioning scope correction
+
+**Status:** ✅ COMPLETED
+
+Started exactly from the preceding **Next Session — START HERE** section. The owner confirmed that KL Servis Rumah does **not** provide standalone Air Conditioning service, so no Air Conditioning service or specialty content was created. CCTV was selected as the next conversion-relevant, existing four-specialty service.
+
+- Added genuinely authored Bahasa Malaysia and Simplified Chinese content for all four CCTV specialties in `config/specialty-locale-content.ts`:
+  1. `cctv/condo-wi-fi-cctv-package-4-cameras` — Pakej CCTV Wi-Fi Kondominium (4 Kamera) / 公寓 Wi-Fi CCTV 套餐（4台） (from RM2,200)
+  2. `cctv/landed-house-poe-cctv-8-cameras` — CCTV PoE Rumah Landed (8 Kamera) / 有地住宅 PoE CCTV（8台） (from RM4,200)
+  3. `cctv/single-camera-add-on` — Tambahan Satu Kamera CCTV / 单台 CCTV 摄像头加装 (from RM420)
+  4. `cctv/cctv-system-health-check-and-relocation` — Pemeriksaan Kesihatan & Pemindahan Sistem CCTV / CCTV 系统检查与移机 (from RM220)
+- Each entry contains a native name, tagline, substantive description, 5 highlights, 5 process steps, 4 FAQs, `metaTitle` and `metaDesc`. The details are grounded in the published CCTV record: 4MP Wi-Fi/cloud condo systems, 4MP PoE/CAT6 landed-house systems, 8-channel NVR + 2TB surveillance HDD, approximately one week of continuous recording subject to bitrate/settings, app pairing and remote viewing, compatibility checks before add-ons, and systematic camera/NVR/HDD/power/network diagnosis. Nothing was spun from a generic template.
+- Extended `PRIORITY_KEYS` in `scripts/validate-specialty-locale.ts` so all four CCTV entries are required by future prebuilds.
+- Reused the existing `LocaleSpecialtyPage` route architecture. It now publishes eight real pages under `/ms/services/cctv/*` and `/zh/services/cctv/*`; the four EN CCTV specialty pages emit the real EN/MS/ZH/x-default hreflang cluster. Typed related problems and the CCTV buying guide come from the existing validated topical-authority map.
+- Corrected the business-scope mismatch: replaced the visible Aircon / Penyaman Udara / 空调 popular-search chip with CCTV in all three locales, and removed the dead standalone `aircond` response-time key from the comparison fallback and locale dictionaries. The valid Electrical specialty for a dedicated **aircond electrical point** remains unchanged because it is electrical circuit work, not air-conditioning servicing.
+- Sitemap increased **3,392 → 3,400** indexable URLs (+8 localized CCTV specialty pages). Build-generated AI context and the SEO report were regenerated.
+
+#### Verification
+- `npm run lint`: PASS (0 errors, 0 warnings).
+- `npm run type-check`: PASS.
+- `npm run audit:topical-map`: PASS (28/28 services, 112 typed specialty relationships).
+- `npm run audit:specialty-locale`: PASS (**52 specialties × MS/ZH = 104 native blocks**; was 48×2=96).
+- `npm run audit:i18n`: PASS (**1,074 keys × 3 locales**, perfect parity; one dead Air Conditioning key removed consistently).
+- `npm run build`: PASS; estimator suite **263,293 assertions**, 0 failures.
+- `npm run audit:html`: PASS (**4,439 pages**, 0 fatal / 0 warnings; was 4,431).
+- `npm run seo:audit`: PASS with 0 canonical/hreflang defects; report regenerated.
+- `npm audit`: 0 vulnerabilities.
+- Production-server smoke tests:
+  - MS condo package returned 200 with `<html lang="ms-MY">`, native content, self-canonical, EN/MS/ZH/x-default hreflang and in-language OfferCatalog.
+  - ZH landed-house package returned 200 with `<html lang="zh-MY">`, native content, self-canonical and the full hreflang cluster.
+  - EN single-camera page returned 200 and now advertises the real localized equivalents.
+  - MS + ZH CCTV indexes link all four localized specialties.
+  - Unknown MS CCTV specialty returned a real 404.
+  - Sitemap contains all eight new MS/ZH URLs; total URL count is 3,400.
+
+### Files
+- Modified: `config/specialty-locale-content.ts`, `scripts/validate-specialty-locale.ts`, `components/ui/hero-search-bar.tsx`, `components/service-comparison-table.tsx`, `messages/{en,ms,zh}.json`, `IMPLEMENTATION_REPORT.md`, `docs/seo-audit-report.md`, `public/llms-full.txt`, `public/site-summary.json`, `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
+
+## Next Session — START HERE
+
+1. **Do not create Air Conditioning pages or content.** The owner confirmed standalone Air Conditioning is not a KL Servis Rumah service. CCTV is now complete, bringing the rollout to **52 specialties × MS + ZH (104 localized pages)**. Pick the next coherent four-specialty tranche from an actual remaining high-value service—prefer **Glass & Aluminium / Window Repair**, then Door or Roofing—and reuse `specialty-locale-content.ts` + `LocaleSpecialtyPage` with genuine native MS/ZH content.
+2. Add real locale problem routes (154) only after the 14 problem-overlap groups are consolidated with evidence; then localize `RelatedProblems` links on localized specialty pages (they currently point to EN problem pages—documented and still blocked).
+3. Obtain business/translator QA for the 104 completed localized specialty pages before measuring GSC indexation; this requires an owner/translator and cannot be completed from repository code alone.
+4. Do not create thin or spun pages; rerun lint, type-check, build, topical-map, specialty-locale, i18n, HTML and SEO audits after every tranche.

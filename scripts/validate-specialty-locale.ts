@@ -90,6 +90,10 @@ const PRIORITY_KEYS = [
   "epoxy-flooring/flake-quartz-broadcast-epoxy",
   "epoxy-flooring/heavy-duty-mortar-screed",
   "epoxy-flooring/epoxy-floor-repair-and-recoating",
+  "cctv/condo-wi-fi-cctv-package-4-cameras",
+  "cctv/landed-house-poe-cctv-8-cameras",
+  "cctv/single-camera-add-on",
+  "cctv/cctv-system-health-check-and-relocation",
 ];
 
 function checkBlock(key: string, locale: "ms" | "zh", b: SpecialtyLocaleBlock, issues: Issue[]) {
