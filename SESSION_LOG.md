@@ -1720,6 +1720,33 @@ Continued exactly from the final **Next Session — START HERE** section of `AI_
 - `public/llms-full.txt`, `public/site-summary.json`
 - `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`
 
+## Session 2026-08-10 (part 15) — Door locale-specialty tranche
+
+Continued exactly from the final **Next Session — START HERE** section of `AI_OPTIMIZATION_ROADMAP.md`. Selected **Door**, the next listed real high-value service. No standalone Air Conditioning content was created.
+
+### Completed
+- Authored genuine native Bahasa Malaysia + Simplified Chinese content for all four Door specialties in `config/specialty-locale-content.ts`:
+  - `door/solid-timber-door-installation` — Pemasangan Pintu Kayu Pepejal / 实木门安装 (from RM550)
+  - `door/laminate-door-installation` — Pemasangan Pintu Laminate / 防火板门安装 (from RM250)
+  - `door/door-planing-and-adjustment` — Ketam & Pelarasan Pintu / 门刨修与调校 (from RM120)
+  - `door/fire-rated-door-installation` — Pemasangan Pintu Tahan Api / 防火门安装 (from RM950)
+- Each locale block contains authored name, tagline, substantive description, 5 highlights, 5 process steps, 4 FAQs, meta title and meta description. Content is grounded in the published Door service record: meranti/chengal/oak solid timber with meranti frame and 3 × SS304 stainless hinges (14–21 day lead time), HDF-skin laminate engineered doors for humid areas (3–7 day lead time), door planing with electric planer for scraping/sticking doors swollen by tropical humidity or sagging hinges (30–60 min per door), and 1-hour/2-hour certified fire-rated doors with intumescent seals and self-closing devices from Sanitor/Felicia/local certified manufacturers.
+- Added all four Door keys to `PRIORITY_KEYS` in `scripts/validate-specialty-locale.ts`, retaining the non-thin build gate.
+- Reused the shared locale-specialty architecture: eight MS/ZH routes now publish, the four EN specialty pages emit real EN/MS/ZH/x-default clusters, typed related problems (`door-scraping-floor`, `digital-smart-lock-installation`) render, and unknown localized specialty slugs remain true 404s.
+- Sitemap and generated AI context now contain **3,424 indexable URLs** (+8 localized specialty URLs).
+
+### Verification
+- PASS: lint (0 errors/warnings), type-check, topical-map (28/28 services; 112 typed relationships), specialty locale gate (**64 specialties × MS/ZH = 128 native blocks**), and i18n parity (1,074 keys × 3 locales).
+- PASS: build (**4,471 routes**), prebuild estimator suite (263,293 assertions), HTML quality audit (**4,463 pages**; 0 fatal/0 warnings), SEO audit, and `npm audit` (0 vulnerabilities).
+- Production smoke PASS: native MS solid-timber door, native ZH laminate door and EN door-planing pages return 200 with correct language, title and self-canonical; full EN/MS/ZH/x-default hreflang clusters and in-language OfferCatalog; MS + ZH Door indexes link all 4 localized specialties; unknown MS specialty returns 404. Sitemap exposes the expected Door specialty URLs.
+
+### Files changed
+- `config/specialty-locale-content.ts`
+- `scripts/validate-specialty-locale.ts`
+- `docs/seo-audit-report.md`
+- `public/llms-full.txt`, `public/site-summary.json`
+- `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`
+
 ### Next session
-- Continue with **Door** (4) or **Roofing** (4) only; never create standalone Air Conditioning content.
+- Continue with **Roofing** (4) only — `roof-repair` (Roof Leak Diagnosis & Repair / Ridge Re-Bedding & Re-Pointing / Gutter Cleaning & Realignment / Full Torch-On Membrane Waterproofing); never create standalone Air Conditioning content.
 - Locale problem routes remain blocked pending evidence-based consolidation of the 14 overlap groups. Business/translator QA remains owner-side.
