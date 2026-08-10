@@ -105,7 +105,15 @@ function buildDirectory(locale: Locale = "en"): FaqCategory[] {
     "Pricing, materials, process and warranty questions for every service we offer.",
     Object.values(servicesData).flatMap((service) => {
       const localized = localize ? getLocalizedService(service, locale) : service;
-      return localized.faqs.map((faq) => ({ ...faq, href: `/services/${service.slug}`, source: localized.title }));
+      // Localized hubs must deep-link to the localized service URL so the
+      // crawl stays within the active language tree (MS/ZH service routes are
+      // real indexable pages under /ms/services and /zh/services).
+      const href = localize
+        ? locale === "ms"
+          ? `/ms/services/${service.slug}`
+          : `/zh/services/${service.slug}`
+        : `/services/${service.slug}`;
+      return localized.faqs.map((faq) => ({ ...faq, href, source: localized.title }));
     })
   );
 

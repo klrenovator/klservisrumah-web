@@ -60,6 +60,14 @@ export function Footer() {
   const t = useTranslations();
   const { lang } = useLang();
 
+  // Localized service tree URL for the active language so the footer never
+  // breaks the localized crawl out of its MS/ZH tree (the service catalogue
+  // has real indexable pages under /ms/services and /zh/services).
+  const localizedServicePath = (slug: string) =>
+    lang === "ms" ? `/ms/services/${slug}` : lang === "zh" ? `/zh/services/${slug}` : `/services/${slug}`;
+  const localizedServicesIndex =
+    lang === "ms" ? "/ms/services" : lang === "zh" ? "/zh/services" : "/services";
+
   // Top services for footer (limited to 8 for cleaner layout)
   const topServices = serviceSummaryList
     .slice(0, 8)
@@ -131,13 +139,13 @@ export function Footer() {
           <ul className="space-y-2">
             {topServices.map((service) => (
               <li key={service.slug}>
-                <Link href={`/services/${service.slug}`} className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">
+                <Link href={localizedServicePath(service.slug)} className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">
                   {service.title}
                 </Link>
               </li>
             ))}
             <li>
-              <Link href="/services" className="text-xs font-bold text-sky-600 hover:text-sky-700 transition-colors">
+              <Link href={localizedServicesIndex} className="text-xs font-bold text-sky-600 hover:text-sky-700 transition-colors">
                 {t("common.viewAll")} &rarr;
               </Link>
             </li>
@@ -152,9 +160,9 @@ export function Footer() {
             <p className="text-[10px] font-black uppercase tracking-widest text-sky-600 mb-2">{t("nav.pricing")}</p>
             <ul className="space-y-1.5">
               <li><Link href="/pricing" className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("pricing.pageTitle")}</Link></li>
-              <li><Link href="/services/painting" className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("footer.priceGuide", { service: getLocalizedServiceSummary(serviceSummaryBySlug.painting, lang).title })}</Link></li>
-              <li><Link href="/services/plumbing" className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("footer.priceGuide", { service: getLocalizedServiceSummary(serviceSummaryBySlug.plumbing, lang).title })}</Link></li>
-              <li><Link href="/services/waterproofing" className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("footer.priceGuide", { service: getLocalizedServiceSummary(serviceSummaryBySlug.waterproofing, lang).title })}</Link></li>
+              <li><Link href={localizedServicePath("painting")} className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("footer.priceGuide", { service: getLocalizedServiceSummary(serviceSummaryBySlug.painting, lang).title })}</Link></li>
+              <li><Link href={localizedServicePath("plumbing")} className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("footer.priceGuide", { service: getLocalizedServiceSummary(serviceSummaryBySlug.plumbing, lang).title })}</Link></li>
+              <li><Link href={localizedServicePath("waterproofing")} className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("footer.priceGuide", { service: getLocalizedServiceSummary(serviceSummaryBySlug.waterproofing, lang).title })}</Link></li>
             </ul>
           </div>
 

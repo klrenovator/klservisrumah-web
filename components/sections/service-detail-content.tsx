@@ -12,7 +12,9 @@ import { TrustBadgesRow } from "@/components/content/trust-badges-row";
 import { RelatedServices } from "@/components/sections/related-services";
 import { RelatedProblems } from "@/components/sections/related-problems";
 import { ServiceAreaLinks } from "@/components/sections/service-area-links";
-import { warrantyLead } from "@/lib/utils";
+import { RelatedBlogs } from "@/components/sections/related-blogs";
+import { warrantyLead, slugify } from "@/lib/utils";
+import Link from "next/link";
 // NOTE: ServiceEstimatorBlock has been moved to locale-service-view.tsx
 // and is now rendered at the TOP of the page (before the hero) for
 // immediate customer access. Do not import it here.
@@ -106,12 +108,13 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
 
           <div className="mt-8 flex flex-col gap-3">
             {service.subServices.map((sub, idx) => (
-              <div
+              <Link
                 key={idx}
-                className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 hover:border-[#BAE6FD] hover:shadow-md transition-all flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
+                href={`/services/${service.slug}/${slugify(sub.name)}`}
+                className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 hover:border-[#BAE6FD] hover:shadow-md transition-all flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 group"
               >
                 <div className="flex flex-col gap-1.5">
-                  <h3 className="text-base sm:text-lg font-extrabold text-[#075985]">
+                  <h3 className="text-base sm:text-lg font-extrabold text-[#075985] group-hover:text-[#0EA5E9] transition-colors">
                     {sub.name}
                   </h3>
                   <p className="text-sm text-[#475569] leading-relaxed font-medium">
@@ -121,7 +124,7 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
                 <span className="text-sm sm:text-base font-extrabold text-[#0EA5E9] shrink-0 bg-[#F0F9FF] px-5 py-2.5 rounded-xl border border-[#BAE6FD] w-fit">
                   {sub.price}
                 </span>
-              </div>
+              </Link>
             ))}
           </div>
 
@@ -278,6 +281,9 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
 
       {/* Section 10 — Related Problems (internal linking to symptom/diagnostic pages) */}
       <RelatedProblems serviceSlug={service.slug} maxItems={4} />
+
+      {/* Section 10b — Related Blogs (internal linking service ↔ blog) */}
+      <RelatedBlogs serviceSlug={service.slug} maxItems={3} />
 
       {/* Section 11 — Service Area Links (internal linking to location pages) */}
       <ServiceAreaLinks serviceSlug={service.slug} maxItems={8} />

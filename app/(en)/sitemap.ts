@@ -14,6 +14,7 @@ import { toolsList } from "@/config/tools-data";
 import { TOOLS_INDEX_PATH, toolLocaleUrls } from "@/config/tools-i18n";
 import { ESTIMATE_INDEX_PATH, estimatePath, genericEstimateSlugs } from "@/config/estimate-links";
 import { slugify, DEFAULT_CONTENT_DATE } from "@/lib/utils";
+import { hasSpecialtyLocaleContent } from "@/config/specialty-locale-content";
 
 const baseUrl = "https://www.klservisrumah.my";
 
@@ -141,7 +142,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: `/near-me/${service.slug}`, priority: 0.86 },
     { path: `/services/${service.slug}/cost`, priority: 0.88 },
     { path: `/services/${service.slug}/emergency`, priority: 0.86 },
-    ...service.subServices.map((sub) => ({ path: `/services/${service.slug}/${slugify(sub.name)}`, priority: 0.9 }))
+    ...service.subServices.map((sub) => {
+      const subSlug = slugify(sub.name);
+      // Priority tranche specialties have real MS/ZH twins — emit the full
+      // three-URL hreflang cluster for EN + the two localized members.
+      const hasLocale = hasSpecialtyLocaleContent(service.slug, subSlug, "ms");
+      const languages = hasLocale
+        ? {
+            en: `/services/${service.slug}/${subSlug}`,
+            ms: `/ms/services/${service.slug}/${subSlug}`,
+            zh: `/zh/services/${service.slug}/${subSlug}`,
+          }
+        : undefined;
+      return { path: `/services/${service.slug}/${subSlug}`, priority: 0.9, languages };
+    }),
+    // Localized members of the priority specialty hreflang clusters.
+    ...service.subServices.flatMap((sub) => {
+      const subSlug = slugify(sub.name);
+      if (!hasSpecialtyLocaleContent(service.slug, subSlug, "ms")) return [];
+      const languages = {
+        en: `/services/${service.slug}/${subSlug}`,
+        ms: `/ms/services/${service.slug}/${subSlug}`,
+        zh: `/zh/services/${service.slug}/${subSlug}`,
+      };
+      return [
+        { path: `/ms/services/${service.slug}/${subSlug}`, priority: 0.86, languages },
+        { path: `/zh/services/${service.slug}/${subSlug}`, priority: 0.86, languages },
+      ];
+    }),
   ]);
 
   const clusterRoutes: Entry[] = clusterPages.map((page) => ({ path: `/services/${page.relatedServiceSlug}/${page.slug}`, priority: 0.82 }));

@@ -10,6 +10,8 @@ import { slugify } from "@/lib/utils";
 import { LocaleServiceView } from "@/components/sections/locale-service-view";
 import { TrustBar } from "@/components/trust-bar";
 import { StickyBookButton } from "@/components/sticky-book-button";
+import { localeSpecialtyPaths } from "@/components/sections/locale-specialty-page";
+import { hasSpecialtyLocaleContent } from "@/config/specialty-locale-content";
 
 // Every valid param is enumerated in `generateStaticParams()`, so anything
 // else must 404 rather than be rendered on demand and cached as a 200
@@ -43,13 +45,18 @@ export async function generateMetadata(props: { params: Promise<{ slug: string; 
   }
   if (!sub) return {};
   const serviceSummary = clampAtBoundary(sub.desc, 96).replace(/[.!?]+$/, "");
+  const path = `/services/${service.slug}/${params.subservice}`;
+  const hasLocale = hasSpecialtyLocaleContent(service.slug, params.subservice, "ms");
   return buildMetadata({
     title: `${sub.name} in KL & Selangor — ${sub.price}`,
     // Keep enough room for a complete local-benefit and CTA ending. The old
     // template regularly cut descriptions mid-location ("across Kuala…").
     description: `${serviceSummary}. Serving KL & Selangor. Request a clear quote on WhatsApp.`,
-    path: `/services/${service.slug}/${params.subservice}`,
+    path,
     image: service.heroImage,
+    // Priority tranche specialties have real MS/ZH twins — emit the real
+    // three-way hreflang cluster so the annotations resolve both ways.
+    languageUrls: hasLocale ? localeSpecialtyPaths(service.slug, params.subservice) : undefined,
     keywords: [sub.name, `${sub.name} KL`, `${sub.name} price`, service.title]
   });
 }

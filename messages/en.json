@@ -605,7 +605,10 @@
     "viewAllAreas": "View all service areas",
     "nearMe": "Near Me",
     "nearMeTitle": "Find {name} near you",
-    "nearMeDesc": "Select your location to see local pricing, availability, and contact information."
+    "nearMeDesc": "Select your location to see local pricing, availability, and contact information.",
+    "guides": "Related Guides",
+    "guidesEyebrow": "Expert Guides",
+    "guidesSub": "Practical guides to help you choose, plan and maintain — from paint colours to renovation costs."
   },
   "hero": {
     "subline": "Painting, ceiling, partition and home maintenance across KL & Selangor",
