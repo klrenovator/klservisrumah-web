@@ -1610,3 +1610,45 @@ Continued from the "Next Session — START HERE" section of `AI_OPTIMIZATION_ROA
 - All four originally-suggested candidates (Painting + Ceiling, Plaster Ceiling, Waterproofing, Plumbing, Handyman, Electrical, Tiling, Flooring, Kitchen Cabinet, Carpentry, Epoxy Flooring = 48 specialties × MS + ZH) are now localized. The next coherent four-specialty tranche should come from a remaining high-value service (e.g. Air-Conditioning, CCTV, Glass & Window, Door, or Roofing) — pick whichever is most conversion-relevant, preserving the same non-thin, authored-native-content standard.
 - Real locale problem routes remain blocked on evidence-based consolidation of the 14 problem-overlap groups; localized specialty pages still link to EN problem pages until then.
 - Recommend business/translator QA for the 96 localized specialty pages before GSC/indexation measurement.
+
+### Session 2026-08-10 (part 12) — CCTV locale-specialty tranche + Air Conditioning scope correction
+
+Continued exactly from the final **Next Session — START HERE** section of `AI_OPTIMIZATION_ROADMAP.md`. Per the owner's clarification, standalone Air Conditioning is not offered and was excluded. Selected **CCTV**, an existing high-value four-specialty service.
+
+#### Completed
+- Authored genuine native Bahasa Malaysia + Simplified Chinese blocks for all four CCTV specialties in `config/specialty-locale-content.ts`:
+  - `cctv/condo-wi-fi-cctv-package-4-cameras` — Pakej CCTV Wi-Fi Kondominium (4 Kamera) / 公寓 Wi-Fi CCTV 套餐（4台） (from RM2,200)
+  - `cctv/landed-house-poe-cctv-8-cameras` — CCTV PoE Rumah Landed (8 Kamera) / 有地住宅 PoE CCTV（8台） (from RM4,200)
+  - `cctv/single-camera-add-on` — Tambahan Satu Kamera CCTV / 单台 CCTV 摄像头加装 (from RM420)
+  - `cctv/cctv-system-health-check-and-relocation` — Pemeriksaan Kesihatan & Pemindahan Sistem CCTV / CCTV 系统检查与移机 (from RM220)
+- Every locale block includes native name, tagline, substantive description, 5 highlights, 5 process steps, 4 FAQs, meta title and meta description, grounded in the published CCTV service facts (4MP Wi-Fi/cloud, 4MP PoE/CAT6, 8-channel NVR + 2TB HDD, app/remote viewing, compatibility checks, camera/NVR/HDD/power/network diagnosis). No thin or spun content.
+- Added all four CCTV keys to the non-thin `PRIORITY_KEYS` build gate.
+- Reused the shared localized specialty route/component architecture; eight new MS/ZH pages now exist and EN CCTV specialties emit real four-way hreflang clusters. Existing typed CCTV guide/problem relationships render through the shared page.
+- Replaced the misleading visible Aircon popular-search term with CCTV in EN/MS/ZH and removed the unused standalone `aircond` comparison response key from code and all locale dictionaries. Kept the distinct Electrical specialty for a dedicated aircond appliance circuit because that is electrical work, not AC servicing.
+- Sitemap: 3,392 → 3,400 URLs. AI context and SEO report regenerated.
+
+#### Verification
+- Lint PASS (0/0), type-check PASS.
+- Topical map PASS: 28/28 services, 112 typed specialty relationships.
+- Specialty locale gate PASS: 52 specialties × MS/ZH = 104 native blocks.
+- i18n PASS: 1,074 keys × 3 locales with perfect parity.
+- Build PASS; estimator harness PASS (263,293 assertions).
+- HTML audit PASS: 4,439 pages, 0 fatal / 0 warnings.
+- SEO audit PASS; npm audit reports 0 vulnerabilities.
+- Production smoke PASS: native MS condo, native ZH landed-house and EN add-on pages return 200 with correct language, canonicals and EN/MS/ZH/x-default clusters; OfferCatalog present; both localized service indexes link all 4 specialties; unknown localized specialty returns 404; all 8 new URLs are in the 3,400-URL sitemap.
+
+#### Files changed
+- `config/specialty-locale-content.ts`
+- `scripts/validate-specialty-locale.ts`
+- `components/ui/hero-search-bar.tsx`
+- `components/service-comparison-table.tsx`
+- `messages/en.json`, `messages/ms.json`, `messages/zh.json`
+- `IMPLEMENTATION_REPORT.md`
+- `docs/seo-audit-report.md`
+- `public/llms-full.txt`, `public/site-summary.json`
+- `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`
+
+#### Next session
+- Never create standalone Air Conditioning content; it is explicitly outside the business scope.
+- Continue with a real service: preferably the next four-specialty Glass & Aluminium / Window Repair tranche, then Door or Roofing.
+- Locale problem routes remain blocked until evidence-based consolidation of the 14 overlap groups; translator/business QA remains owner-side.

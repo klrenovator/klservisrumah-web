@@ -13,9 +13,9 @@ const SEARCH_PLACEHOLDERS = {
 };
 
 const POPULAR_SEARCHES = {
-  en: ["Painting", "Ceiling", "Plaster Ceiling", "Partition", "Plumbing", "Waterproofing", "Handyman", "Aircon", "Repair"],
-  ms: ["Pengecatan", "Siling", "Siling Plaster", "Partition", "Paip", "Kalis Air", "Tukang", "Penyaman Udara", "Pembaikan"],
-  zh: ["油漆", "天花板", "石膏天花", "隔墙", "水管", "防水", "维修工", "空调", "维修"]
+  en: ["Painting", "Ceiling", "Plaster Ceiling", "Partition", "Plumbing", "Waterproofing", "Handyman", "CCTV", "Repair"],
+  ms: ["Pengecatan", "Siling", "Siling Plaster", "Partition", "Paip", "Kalis Air", "Tukang", "CCTV", "Pembaikan"],
+  zh: ["油漆", "天花板", "石膏天花", "隔墙", "水管", "防水", "维修工", "CCTV监控", "维修"]
 };
 
 interface HeroSearchBarProps {
