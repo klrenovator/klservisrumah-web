@@ -78,6 +78,14 @@ const PRIORITY_KEYS = [
   "flooring/laminate-flooring-install",
   "flooring/luxury-vinyl-plank-lvp-install",
   "flooring/skirting-and-transition-strip-fitting",
+  "kitchen-cabinet/modular-kitchen-cabinet-10ft-l-shape",
+  "kitchen-cabinet/custom-plywood-kitchen",
+  "kitchen-cabinet/quartz-granite-countertop",
+  "kitchen-cabinet/kitchen-makeover-doors-and-hardware-only",
+  "carpentry/built-in-wardrobe",
+  "carpentry/tv-console-and-feature-wall",
+  "carpentry/study-desk-and-home-office",
+  "carpentry/shoe-cabinet-and-entry-storage",
 ];
 
 function checkBlock(key: string, locale: "ms" | "zh", b: SpecialtyLocaleBlock, issues: Issue[]) {

@@ -2324,6 +2324,474 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
     },
   },
 
+  /* ── KITCHEN CABINET ─────────────────────────────────────────────────── */
+  "kitchen-cabinet/modular-kitchen-cabinet-10ft-l-shape": {
+    ms: {
+      name: "Kabinet Dapur Modular (L-shape 10 kaki)",
+      tagline: "Kabinet dapur modular L-shape 10 kaki dengan rangka melamin 18mm, perkakasan Häfele atau Blum tutup lembut, pintu laminate/akrilik dan reka bentuk 3D—siap dipasang dalam 14–21 hari.",
+      description:
+        "Pakej kabinet dapur modular L-shape 10 kaki kami ialah pilihan paling popular untuk rumah teres dan kondominium di KL & Selangor. Setiap unit dibina dengan rangka melamin 18mm tahan lembap, pintu dalam kemasan laminate tekanan tinggi, akrilik berkilat atau cat semburan, serta perkakasan Häfele atau Blum termasuk engsel tutup lembut dan rel laci sambungan penuh. Setiap projek bermula dengan ukuran laser di tapak dan reka bentuk 3D yang membolehkan anda melihat susun atur, kedudukan perkakas dan ruang storan sebelum pembuatan bermula. Kabinet modular menawarkan kualiti konsisten, masa tunggu lebih pantas (14–21 hari) dan harga yang jelas. Termasuk penyelarasan titik paip dan elektrik serta pemeriksaan penjajaran akhir sebelum serahan.",
+      highlights: [
+        "Rangka melamin 18mm tahan lembap dengan potongan CNC untuk ketepatan dan kualiti konsisten",
+        "Perkakasan Häfele atau Blum—engsel tutup lembut dan rel laci sambungan penuh",
+        "Pintu dalam kemasan laminate, akrilik berkilat atau cat semburan mengikut citarasa anda",
+        "Reka bentuk 3D dan sebut harga terperinci sebelum sebarang pembuatan bermula",
+        "Masa tunggu pantas 14–21 hari dan jaminan struktur kabinet 5 tahun",
+      ],
+      process: [
+        { step: "01", title: "Ukuran & Reka Bentuk", desc: "Kami mengukur dapur dengan laser, menangkap keperluan masakan dan senarai perkakas anda, lalu menyediakan reka bentuk 3D dan sebut harga terperinci." },
+        { step: "02", title: "Pelulusan & Pemilihan Bahan", desc: "Anda memilih kemasan pintu, warna dan perkakasan; kami membekukan reka bentuk sebelum memesan bahan." },
+        { step: "03", title: "Pembuatan Bengkel", desc: "Rangka dan pintu dipotong dengan CNC, di-edge-band dan dikawal kualiti di bengkel selama 14–21 hari." },
+        { step: "04", title: "Penyediaan Tapak", desc: "Kabinet lama ditanggalkan jika perlu, dan titik paip serta elektrik diselaraskan dengan susun atur baharu." },
+        { step: "05", title: "Pemasangan & Serahan", desc: "Kabinet diratakan, disauh dan diuji fungsi—engsel, laci dan pintu—sebelum pemeriksaan bersama dan pengaktifan jaminan." },
+      ],
+      faqs: [
+        { q: "Berapa lama masa untuk siap kabinet modular 10 kaki?", a: "Pembuatan di bengkel mengambil masa 14–21 hari, diikuti pemasangan 1–2 hari di tapak. Masa keseluruhan biasanya 3–5 minggu dari tarikh reka bentuk diluluskan." },
+        { q: "Apakah perkakasan yang disertakan?", a: "Kami menggunakan perkakasan Häfele atau Blum, termasuk engsel tutup lembut dan rel laci sambungan penuh. Semua kabinet disertakan jaminan struktur 5 tahun." },
+        { q: "Bolehkah saya memilih kemasan pintu?", a: "Ya. Anda boleh memilih kemasan laminate tekanan tinggi, akrilik berkilat atau cat semburan. Kami menunjukkan sampel fizikal semasa konsultasi reka bentuk 3D." },
+        { q: "Adakah penyelarasan titik paip dan elektrik termasuk?", a: "Kami menyelaraskan kedudukan titik paip dan elektrik dengan susun atur baharu. Kerja pendawaian dan paip sebenar diselaraskan dengan juruelektrik dan tukang paip kami." },
+      ],
+      metaTitle: "Kabinet Dapur Modular L-Shape 10ft KL | Dari RM7,500",
+      metaDesc: "Kabinet dapur modular L-shape 10 kaki di KL & Selangor. Rangka melamin 18mm, perkakasan Häfele/Blum, reka bentuk 3D, siap 14–21 hari. Jaminan struktur 5 tahun. Sebut harga percuma di WhatsApp.",
+    },
+    zh: {
+      name: "模块化厨房橱柜（10 英尺 L 型）",
+      tagline: "10 英尺 L 型模块化厨房橱柜，18mm 三聚氰胺柜体、Häfele/Blum 缓冲五金、防火板/亚克力门板，含 3D 设计，14–21 天交付。",
+      description:
+        "我们的 10 英尺 L 型模块化厨房橱柜套餐是吉隆坡与雪兰莪排屋和公寓最热门的选择。每个柜体采用 18mm 防潮三聚氰胺柜体，门板可选高压防火板、亮面亚克力或喷漆饰面，并配 Häfele 或 Blum 五金——含缓冲铰链与全拉出抽屉滑轨。每个项目都从现场激光测量与 3D 设计开始，让您在投产前直观看到布局、电器位置与收纳规划。模块化橱柜品质稳定、交付更快（14–21 天），价格清晰透明。含水电点位协调与交接前的最终调校检查。",
+      highlights: [
+        "18mm 防潮三聚氰胺柜体，CNC 切割尺寸精准、品质稳定",
+        "Häfele 或 Blum 五金——缓冲铰链与全拉出抽屉滑轨",
+        "门板可选高压防火板、亮面亚克力或喷漆饰面",
+        "投产前提供 3D 设计与逐项报价",
+        "14–21 天快速交付，柜体结构 5 年保修",
+      ],
+      process: [
+        { step: "01", title: "测量与设计", desc: "激光测量厨房，记录烹饪习惯与电器清单，出具 3D 设计与逐项报价。" },
+        { step: "02", title: "确认与选材", desc: "您选定门板饰面、颜色与五金，我们在下单生产前冻结设计。" },
+        { step: "03", title: "工厂制作", desc: "CNC 切割柜体与门板，封边并质检，工期 14–21 天。" },
+        { step: "04", title: "现场准备", desc: "按需拆除旧橱柜，并根据新布局协调水电点位。" },
+        { step: "05", title: "安装与交付", desc: "调平、固定柜体并测试铰链、抽屉与门板，验收后激活保修。" },
+      ],
+      faqs: [
+        { q: "10 英尺模块化橱柜多久能完工？", a: "工厂制作需 14–21 天，现场安装 1–2 天。从设计确认起算，整体通常 3–5 周。" },
+        { q: "包含哪些五金？", a: "我们使用 Häfele 或 Blum 五金，含缓冲铰链与全拉出抽屉滑轨，所有柜体享 5 年结构保修。" },
+        { q: "门板饰面可以自选吗？", a: "可以。可选高压防火板、亮面亚克力或喷漆饰面，3D 设计咨询时提供实物样板。" },
+        { q: "包含水电点位协调吗？", a: "我们会按新布局协调水电点位位置，实际水电施工由我们的电工与水管工完成。" },
+      ],
+      metaTitle: "吉隆坡10英尺L型模块化橱柜 | RM7,500起",
+      metaDesc: "吉隆坡与雪兰莪 10 英尺 L 型模块化厨房橱柜。18mm 柜体、Häfele/Blum 五金、3D 设计、14–21 天交付、5 年结构保修。WhatsApp免费报价。",
+    },
+  },
+  "kitchen-cabinet/custom-plywood-kitchen": {
+    ms: {
+      name: "Dapur Papan Lapis Kustom",
+      tagline: "Kabinet dapur papan lapis bina-mengikut-ukuran dengan perkakasan tutup lembut, pintu kustom dan unit pantry penuh tinggi untuk susun atur luar biasa dan storan maksimum.",
+      description:
+        "Kabinet papan lapis kustom ialah penyelesaian untuk dapur yang mempunyai susun atur luar biasa, ruang awkward atau keperluan storan maksimum. Tidak seperti kabinet modular bersaiz standard, setiap panel papan lapis dipotong dan dibina mengikut ukuran sebenar dapur anda di bengkel KL kami. Kami menggunakan papan lapis berkualiti (bukan MDF murah) dengan para 25mm tebal untuk daya tahan, kemasan laminate tekanan tinggi atau cat semburan, serta perkakasan Häfele atau Blum. Pilihan termasuk unit pantry penuh tinggi, laci khas untuk periuk dan peralatan, serta rak tersembunyi untuk perkakas kecil. Sesuai untuk pemilik yang maharkan dapur benar-benar unik dan direka di sekitar tabiat masakan mereka. Masa tunggu pembuatan 21–28 hari.",
+      highlights: [
+        "Papan lapis berkualiti (bukan MDF murah) dengan para 25mm tebal untuk daya tahan",
+        "Bina-mengikut-ukuran untuk susun atur luar biasa dan ruang awkward",
+        "Unit pantry penuh tinggi serta laci khas untuk periuk dan peralatan",
+        "Perkakasan Häfele atau Blum dengan kemasan laminate atau cat semburan pilihan",
+        "Masa tunggu pembuatan 21–28 hari dan jaminan struktur kabinet 5 tahun",
+      ],
+      process: [
+        { step: "01", title: "Ukuran & Brief", desc: "Kami mengukur setiap sudut dapur dengan laser, menangkap tabiat masakan dan senarai perkakas anda, lalu melukis susun atur kustom." },
+        { step: "02", title: "Reka Bentuk 3D & Sebut Harga", desc: "Anda menerima render 3D dengan harga terperinci—setiap panel, rak, laci dan perkakasan disenaraikan. Kami semak semula sehingga anda berpuas hati." },
+        { step: "03", title: "Pembuatan Bengkel", desc: "Panel papan lapis dipotong, dibingkai dan dipra-pasang di bengkel selama 21–28 hari menggunakan CNC dan kerja kayu tradisional." },
+        { step: "04", title: "Penyediaan Tapak", desc: "Kabinet lama ditanggalkan dan titik paip serta elektrik diselaraskan dengan reka bentuk baharu." },
+        { step: "05", title: "Pemasangan & Serahan", desc: "Setiap unit diratakan, disauh dan diuji; laci dan pintu dilaraskan sehingga licin sebelum pemeriksaan bersama." },
+      ],
+      faqs: [
+        { q: "Kenapa pilih papan lapis kustom berbanding modular?", a: "Papan lapis kustom sesuai untuk susun atur luar biasa, ruang awkward atau keperluan storan maksimum. Setiap panel dibina mengikut ukuran sebenar dapur anda, bukan saiz standard." },
+        { q: "Berapa lama masa pembuatan?", a: "Pembuatan di bengkel mengambil masa 21–28 hari kerana setiap panel dipotong dan dibina mengikut ukuran, diikuti pemasangan 1–3 hari di tapak." },
+        { q: "Adakah anda menggunakan MDF murah?", a: "Tidak. Kami menggunakan papan lapis berkualiti dengan para 25mm tebal untuk daya tahan, bukan MDF murah yang mudah mengembang apabila lembap." },
+        { q: "Bolehkah saya termasuk unit pantry penuh tinggi?", a: "Ya. Kami kerap memasukkan unit pantry penuh tinggi, laci khas periuk dan rak tersembunyi untuk memaksimumkan storan mengikut keperluan anda." },
+      ],
+      metaTitle: "Kabinet Dapur Papan Lapis Kustom KL | Dari RM11,000",
+      metaDesc: "Kabinet dapur papan lapis bina-mengikut-ukuran di KL & Selangor. Para 25mm, unit pantry penuh tinggi, perkakasan Häfele/Blum, siap 21–28 hari. Jaminan 5 tahun. Sebut harga percuma di WhatsApp.",
+    },
+    zh: {
+      name: "定制胶合板厨房",
+      tagline: "按尺寸打造的胶合板厨房橱柜，配缓冲五金、定制门板与通顶 pantry 柜，适合异形布局与最大化收纳。",
+      description:
+        "胶合板定制橱柜专为布局不规则、空间尴尬或需要最大化收纳的厨房而设。与标准尺寸的模块化橱柜不同，每块胶合板都在我们吉隆坡工厂按您厨房的真实尺寸切割打造。我们使用优质胶合板（非廉价 MDF），25mm 加厚层板确保耐用，饰面可选高压防火板或喷漆，五金为 Häfele 或 Blum。可选通顶 pantry 柜、专用锅具抽屉以及小电器隐藏层架。适合追求真正独一无二、围绕自身烹饪习惯设计厨房的业主。工厂工期 21–28 天。",
+      highlights: [
+        "优质胶合板（非廉价 MDF），25mm 加厚层板更耐用",
+        "按尺寸打造，适配异形布局与尴尬空间",
+        "通顶 pantry 柜与专用锅具抽屉",
+        "Häfele 或 Blum 五金，防火板或喷漆饰面可选",
+        "工厂工期 21–28 天，柜体结构 5 年保修",
+      ],
+      process: [
+        { step: "01", title: "测量与需求", desc: "激光测量每个角落，记录烹饪习惯与电器清单，绘制定制布局。" },
+        { step: "02", title: "3D 设计与报价", desc: "提供 3D 渲染与逐项报价——每块层板、抽屉、配件都列明，修改至满意。" },
+        { step: "03", title: "工厂制作", desc: "胶合板切割、组框并预装，工期 21–28 天，CNC 与传统木工结合。" },
+        { step: "04", title: "现场准备", desc: "拆除旧橱柜，并按新设计协调水电点位。" },
+        { step: "05", title: "安装与交付", desc: "调平固定并测试，抽屉与门板调校顺滑后联合验收。" },
+      ],
+      faqs: [
+        { q: "为什么要选胶合板定制而不是模块化？", a: "胶合板定制适合异形布局、尴尬空间或需要最大化收纳的厨房。每块板材都按厨房真实尺寸打造，而非标准尺寸。" },
+        { q: "制作需要多久？", a: "工厂制作需 21–28 天，因为每块板材都按尺寸切割打造，之后现场安装 1–3 天。" },
+        { q: "你们用廉价 MDF 吗？", a: "不会。我们使用优质胶合板配 25mm 加厚层板以确保耐用，而非受潮易膨胀的廉价 MDF。" },
+        { q: "可以包含通顶 pantry 柜吗？", a: "可以。我们通常配置通顶 pantry 柜、专用锅具抽屉与隐藏层架，按需最大化收纳。" },
+      ],
+      metaTitle: "吉隆坡定制胶合板厨房橱柜 | RM11,000起",
+      metaDesc: "吉隆坡与雪兰莪按尺寸打造的胶合板厨房。25mm 层板、通顶 pantry 柜、Häfele/Blum 五金、21–28 天交付、5 年保修。WhatsApp免费报价。",
+    },
+  },
+  "kitchen-cabinet/quartz-granite-countertop": {
+    ms: {
+      name: "Permukaan Kaunter Kuarza / Granit",
+      tagline: "Permukaan kaunter kuarza kejuruteraan (Caesarstone, Silestone) atau granit tempatan dengan potongan singki bawah-duduk, sambungan lancar dan kemasan profesional.",
+      description:
+        "Permukaan kaunter ialah permukaan paling banyak digunakan di dapur, jadi kualiti dan ketahanan adalah penting. Kami membekalkan dan memasang kuarza kejuruteraan daripada jenama seperti Caesarstone dan Silestone—tahan calar, tahan kotoran dan tidak berliang—serta granit tempatan yang kekal menjadi kegemaran Malaysia kerana rupa semula jadi dan rintangan haba. Setiap projek dimulakan dengan templating selepas kabinet dipasang, supaya ukuran tepat termasuk potongan singki bawah-duduk, soket dapur dan tepi pilihan anda (contohnya tepi mitred atau bullnose). Sambungan diratakan dengan teliti untuk rupa yang licin, dan permukaan diserahkan siap dipasang. Pilihan lain termasuk solid surface (Corian) untuk sambungan lancar sepenuhnya serta laminate tekanan tinggi untuk bajet lebih rendah.",
+      highlights: [
+        "Kuarza kejuruteraan Caesarstone dan Silestone—tahan calar, tahan kotoran, tidak berliang",
+        "Granit tempatan dengan rupa semula jadi unik dan rintangan haba",
+        "Templating selepas pemasangan kabinet untuk ukuran yang tepat",
+        "Potongan singki bawah-duduk, soket dapur dan tepi mitred atau bullnose pilihan",
+        "Sambungan lancar yang diratakan dengan teliti—rupa mewah dan kemas",
+      ],
+      process: [
+        { step: "01", title: "Pemilihan Slab", desc: "Kami membantu anda memilih slab kuarza atau granit mengikut warna, corak dan bajet, dengan sampel fizikal." },
+        { step: "02", title: "Pemasangan Kabinet", desc: "Kabinet dipasang dan diratakan dahulu, kerana templating kaunter bergantung pada aras akhir kabinet." },
+        { step: "03", title: "Templating", desc: "Kami membuat templat tepat di tapak, termasuk potongan singki, soket dan lengkung tepi pilihan anda." },
+        { step: "04", title: "Pemotongan Kilang", desc: "Slab dipotong dan digilap di kilang mengikut templat, dengan potongan singki bawah-duduk yang tepat." },
+        { step: "05", title: "Pemasangan & Serahan", desc: "Kaunter dipasang, sambungan diratakan, singki disambung dan permukaan diserahkan siap digunakan." },
+      ],
+      faqs: [
+        { q: "Kuarza atau granit—yang mana lebih baik?", a: "Kuarza tidak berliang, tahan calar dan tidak perlu disekat, menjadikannya sangat sesuai untuk dapur. Granit mempunyai rupa semula jadi unik dan tahan haba, tetapi perlu disekat secara berkala. Kami menasihati berdasarkan gaya hidup dan bajet anda." },
+        { q: "Berapa harga kaunter kuarza atau granit?", a: "Harga bermula dari RM220 setiap kaki linier, bergantung pada jenama kuarza, jenis granit, kerumitan potongan dan jenis tepi. Sebut harga tepat diberikan selepas templating." },
+        { q: "Bilakah kaunter dipasang selepas kabinet?", a: "Kaunter ditemplat selepas kabinet siap dipasang, dipotong di kilang dalam 5–7 hari, kemudian dipasang. Jumlah masa tambahan kira-kira 1–2 minggu selepas kabinet siap." },
+        { q: "Adakah potongan singki termasuk?", a: "Ya. Kami menyediakan potongan singki bawah-duduk (undermount) yang tepat mengikut model singki anda. Soket dapur dan tepi khas juga termasuk dalam templat." },
+      ],
+      metaTitle: "Permukaan Kaunter Kuarza & Granit KL | Dari RM220/kaki",
+      metaDesc: "Permukaan kaunter kuarza (Caesarstone, Silestone) & granit di KL & Selangor. Potongan singki bawah-duduk, sambungan lancar, templating tepat. Sebut harga percuma di WhatsApp.",
+    },
+    zh: {
+      name: "石英石 / 花岗岩台面",
+      tagline: "人造石英石（Caesarstone、Silestone）或本地花岗岩台面，台下盆开孔、无缝拼接、专业安装。",
+      description:
+        "台面是厨房使用最频繁的表面，品质与耐用至关重要。我们供应并安装 Caesarstone、Silestone 等人造石英石——耐刮、耐污、无孔隙——以及马来西亚长盛不衰的本地花岗岩，纹理自然且耐高温。每个项目都在柜体安装后进行模板测量，确保尺寸精准，含台下盆开孔、灶具开孔以及您选择的边型（如斜拼边或圆弧边）。接缝细致找平，表面光洁，一次安装到位。也可选实体面材（Corian）实现完全无缝拼接，以及高压防火板以控制预算。",
+      highlights: [
+        "Caesarstone、Silestone 人造石英石——耐刮、耐污、无孔隙",
+        "本地花岗岩，天然纹理与耐高温性能",
+        "柜体安装后现场模板测量，尺寸精准",
+        "台下盆开孔、灶具开孔、斜拼边或圆弧边可选",
+        "接缝细致找平——奢华整洁的整体观感",
+      ],
+      process: [
+        { step: "01", title: "选板", desc: "根据颜色、纹路与预算协助您挑选石英或花岗岩板材，提供实物样板。" },
+        { step: "02", title: "柜体安装", desc: "先安装并调平柜体，因为台面模板需以柜体最终高度为准。" },
+        { step: "03", title: "模板测量", desc: "现场精准制模，含台下盆开孔、灶具开孔及所选边型。" },
+        { step: "04", title: "工厂切割", desc: "按模板在工厂切割并抛光板材，台下盆开孔精准。" },
+        { step: "05", title: "安装与交付", desc: "安装台面、找平接缝、连接水槽，交付即可使用。" },
+      ],
+      faqs: [
+        { q: "石英和花岗岩哪个更好？", a: "石英无孔隙、耐刮且无需做防护，非常适合厨房。花岗岩纹理独特且耐高温，但需定期做防护。我们会根据您的生活方式与预算给出建议。" },
+        { q: "石英或花岗岩台面怎么收费？", a: "从每延英尺 RM220 起，价格取决于石英品牌、花岗岩种类、切割复杂度与边型。模板测量后提供准确报价。" },
+        { q: "柜体装完多久能装台面？", a: "柜体安装完成后现场制模，工厂切割 5–7 天，再行安装。整体在柜体完工后约再需 1–2 周。" },
+        { q: "包含水槽开孔吗？", a: "包含。我们按您的水槽型号精准开台下盆孔位，灶具开孔与特殊边型也一并计入模板。" },
+      ],
+      metaTitle: "吉隆坡石英与花岗岩台面 | 每延英尺RM220起",
+      metaDesc: "吉隆坡与雪兰莪石英（Caesarstone、Silestone）与花岗岩台面。台下盆开孔、无缝拼接、精准制模。WhatsApp免费报价。",
+    },
+  },
+  "kitchen-cabinet/kitchen-makeover-doors-and-hardware-only": {
+    ms: {
+      name: "Makeover Dapur (Pintu & Perkakasan Sahaja)",
+      tagline: "Segarkan kabinet dapur sedia ada dengan menukar pintu, muka laci, pemegang, engsel dan rel—tanpa membina rangka baharu, jimat dan pantas.",
+      description:
+        "Jika rangka kabinet dapur anda masih kukuh tetapi pintu sudah lusuh atau perkakasan sudah haus, makeover pintu dan perkakasan sahaja ialah penyelesaian paling menjimatkan. Kami menanggalkan pintu dan muka laci lama, menggantikannya dengan pintu baharu dalam kemasan laminate, akrilik atau cat semburan, serta menukar engsel kepada versi tutup lembut Häfele atau Blum dan rel laci kepada sambungan penuh. Pemegang dan knob juga dikemas kini untuk rupa yang segar. Kerja ini mengelakkan kos dan gangguan membina rangka baharu, dan kebanyakan projek siap dalam 1–3 hari. Sesuai untuk pemilik yang mahu penampilan baharu sebelum menjual atau menyewakan, atau sekadar mengemas kini dapur tanpa pengubahsuaian penuh.",
+      highlights: [
+        "Menggantikan pintu, muka laci, pemegang, engsel dan rel sahaja—bukan rangka",
+        "Rangka sedia ada kekal—menjimatkan kos dan gangguan pengubahsuaian penuh",
+        "Engsel tutup lembut Häfele/Blum dan rel laci sambungan penuh",
+        "Pintu baharu dalam kemasan laminate, akrilik atau cat semburan",
+        "Kebanyakan projek siap dalam 1–3 hari di tapak",
+      ],
+      process: [
+        { step: "01", title: "Penilaian Rangka", desc: "Kami memeriksa rangka kabinet sedia ada untuk memastikan ia kukuh dan sesuai untuk makeover pintu dan perkakasan." },
+        { step: "02", title: "Pengukuran & Pilihan", desc: "Setiap pintu dan muka laci diukur, dan anda memilih kemasan, warna, pemegang dan perkakasan baharu." },
+        { step: "03", title: "Pembuatan Pintu", desc: "Pintu dan muka laci baharu dipotong dan dibuat di bengkel mengikut ukuran tepat." },
+        { step: "04", title: "Penanggalan & Pemasangan", desc: "Pintu lama ditanggalkan, engsel dan rel diganti, dan pintu baharu dipasang dengan pemegang baharu." },
+        { step: "05", title: "Pelarasan & Serahan", desc: "Setiap pintu dan laci dilaraskan supaya licin dan rata, lalu diserahkan bersama pembersihan kawasan." },
+      ],
+      faqs: [
+        { q: "Bilakah makeover pintu sesuai berbanding kabinet baharu?", a: "Makeover pintu sesuai jika rangka kabinet sedia ada anda masih kukuh—hanya pintu dan perkakasan yang lusuh. Ia jauh lebih murah dan pantas daripada membina kabinet baharu." },
+        { q: "Adakah anda menukar engsel dan rel laci juga?", a: "Ya. Kami menggantikan engsel lama dengan engsel tutup lembut Häfele atau Blum, dan menukar rel laci kepada sambungan penuh supaya laci berfungsi seperti baharu." },
+        { q: "Berapa lama makeover dapur mengambil masa?", a: "Kebanyakan projek siap dalam 1–3 hari di tapak, selepas pintu baharu dibuat di bengkel (biasanya 7–14 hari)." },
+        { q: "Bolehkah pemegang dan knob dikemas kini?", a: "Ya. Kami menawarkan pelbagai pemegang dan knob baharu—dari gaya minimalis sehingga klasik—untuk menyempurnakan rupa baharu dapur anda." },
+      ],
+      metaTitle: "Makeover Dapur (Pintu & Perkakasan) KL | Dari RM4,200",
+      metaDesc: "Segarkan kabinet dapur sedia ada di KL & Selangor—tukar pintu, pemegang, engsel tutup lembut Häfele/Blum & rel laci. Jimat dan pantas, siap 1–3 hari. Sebut harga percuma di WhatsApp.",
+    },
+    zh: {
+      name: "厨房翻新（仅门板与五金）",
+      tagline: "更换门板、抽屉面板、拉手、铰链与滑轨，焕新现有柜体——无需重做柜体，省时省钱。",
+      description:
+        "如果您的厨房柜体仍然坚固，但门板陈旧或五金老化，仅翻新门板与五金是最经济的方案。我们拆除旧门板与抽屉面板，换上防火板、亚克力或喷漆饰面的新门板，并将铰链升级为 Häfele 或 Blum 缓冲铰链，滑轨升级为全拉出式。拉手与旋钮同步更新，整体焕然一新。该方案避免重建柜体的费用与干扰，多数项目 1–3 天即可完工，非常适合想在出售或出租前焕新、或只想局部升级厨房的业主。",
+      highlights: [
+        "仅更换门板、抽屉面板、拉手、铰链与滑轨——不动柜体",
+        "保留现有柜体——节省全面翻新的费用与干扰",
+        "升级为 Häfele/Blum 缓冲铰链与全拉出滑轨",
+        "门板可选防火板、亚克力或喷漆饰面",
+        "多数项目 1–3 天现场即可完工",
+      ],
+      process: [
+        { step: "01", title: "柜体评估", desc: "检查现有柜体是否坚固，确认适合进行门板与五金翻新。" },
+        { step: "02", title: "测量与选型", desc: "逐扇测量门板与抽屉面板，由您选定新饰面、颜色、拉手与五金。" },
+        { step: "03", title: "门板制作", desc: "按精准尺寸在工厂切割并制作新门板与抽屉面板。" },
+        { step: "04", title: "拆除与安装", desc: "拆除旧门板，更换铰链与滑轨，安装新门板与新拉手。" },
+        { step: "05", title: "调校与交付", desc: "调校每扇门与抽屉使其顺滑平整，清理现场后交付。" },
+      ],
+      faqs: [
+        { q: "什么时候适合做门板翻新而不是换新橱柜？", a: "柜体仍然坚固、仅门板与五金陈旧时，门板翻新是最佳选择——比重建橱柜便宜得多、快得多。" },
+        { q: "铰链和滑轨也一起换吗？", a: "会。我们将旧铰链更换为 Häfele 或 Blum 缓冲铰链，滑轨升级为全拉出式，让抽屉顺滑如新。" },
+        { q: "厨房翻新需要多久？", a: "新门板在工厂制作（通常 7–14 天）后，现场施工多数 1–3 天即可完成。" },
+        { q: "拉手和旋钮可以更新吗？", a: "可以。我们提供多种新拉手与旋钮——从极简到经典——为厨房焕新画龙点睛。" },
+      ],
+      metaTitle: "吉隆坡厨房门板与五金翻新 | RM4,200起",
+      metaDesc: "吉隆坡与雪兰莪厨房柜体焕新——更换门板、拉手、Häfele/Blum 缓冲铰链与全拉出滑轨。省时省钱，1–3 天完工。WhatsApp免费报价。",
+    },
+  },
+
+  /* ── CARPENTRY ───────────────────────────────────────────────────────── */
+  "carpentry/built-in-wardrobe": {
+    ms: {
+      name: "Almari Pakaian Tanam",
+      tagline: "Almari pakaian lantai-ke-siling bina-mengikut-ukuran dengan rangka papan lapis 18mm, para 25mm, rel gantungan, laci tutup lembut Häfele/Blum dan pintu cermin atau laminate.",
+      description:
+        "Almari pakaian tanam ialah cara paling popular untuk memaksimumkan storan di bilik tidur tanpa membazirkan ruang lantai. Setiap unit kami dibina mengikut ukuran sebenar dinding anda menggunakan rangka papan lapis 18mm (bukan MDF murah) dengan para 25mm tebal yang tidak melendut walaupun memikul beban pakaian tebal dan kotak storan. Dalaman disesuaikan sepenuhnya—rel gantungan panjang, ruang berkembar, laci dalam, rak kasut dan laci kemasan—disusun kemas. Pintu tersedia dalam laminate tekanan tinggi, akrilik berkilat, cat semburan atau cermin, dengan engsel tutup lembut Häfele atau Blum serta rel laci sambungan penuh. Reka bentuk bermula dengan ukuran laser di tapak dan render 3D supaya anda dapat melihat susunan dalaman sebelum pembuatan bermula di bengkel KL kami.",
+      highlights: [
+        "Rangka papan lapis 18mm dengan para 25mm tebal—tahan beban, tidak melendut",
+        "Dalaman disesuaikan: rel gantungan, ruang berkembar, laci dalam, rak kasut",
+        "Pintu laminate, akrilik, cat semburan atau cermin dengan susun atur gelangsar",
+        "Engsel tutup lembut Häfele/Blum dan rel laci sambungan penuh",
+        "Reka bentuk 3D dengan ukuran laser dan jaminan struktur kabinet 5 tahun",
+      ],
+      process: [
+        { step: "01", title: "Ukuran & Kajian Storan", desc: "Kami mengukur dinding dengan laser, menangkap tabiat penyimpanan pakaian, keperluan ruang bergantung dan keutamaan gaya anda." },
+        { step: "02", title: "Reka Bentuk 3D & Sebut Harga", desc: "Anda menerima render 3D dalaman dengan sebut harga terperinci—setiap para, laci, rel dan pintu disenaraikan. Kami ubah sehingga anda berpuas hati." },
+        { step: "03", title: "Pembuatan Bengkel", desc: "Komponen dipotong dengan CNC, di-edge-band dan dipra-pasang di bengkel KL kami selama 2–3 minggu menggunakan papan lapis dan kerja kayu tradisional." },
+        { step: "04", title: "Pemasangan Di Tapak", desc: "Unit dipasang dalam 1–2 hari, diratakan ke dinding dan diselaras; habuk dikawal dengan kain plastik." },
+        { step: "05", title: "Penjajaran & Serahan", desc: "Setiap pintu, laci dan para diuji kelicinan, engsel dilaraskan, dan kad jaminan 5 tahun diserahkan." },
+      ],
+      faqs: [
+        { q: "Berapa lama masa untuk membina almari pakaian tanam?", a: "Dari sign-off reka bentuk ke pemasangan, biasanya 4 hingga 6 minggu: 1 minggu untuk semakan reka bentuk, 2–3 minggu pembuatan bengkel, 1–2 hari pemasangan di tapak. Kami berikan garis masa terperinci semasa sign-off." },
+        { q: "Kenapa papan lapis berbanding MDF?", a: "Papan lapis mempunyai kekuatan struktur, rintangan kelembapan dan keupayaan pegangan skru yang jauh lebih tinggi—sesuai untuk almari yang menanggung beban pakaian. MDF melendut di bawah beban dan menyerap kelembapan. Kami guna papan lapis untuk semua komponen struktur." },
+        { q: "Bolehkah dalaman disesuaikan dengan keperluan saya?", a: "Ya sepenuhnya. Kami mereka susunan rel gantungan, ruang berkembar, laci dalam, rak kasut dan laci kemasan mengikut koleksi pakaian dan tabiat anda, ditunjukkan dalam render 3D." },
+        { q: "Adakah anda membina almari tanam di kondominium?", a: "Ya. Kami berpengalaman di kondominium di seluruh KL—Mont Kiara, Bangsar, KLCC, Damansara—mematuhi peraturan waktu kerja pengurusan, menggunakan perlindungan lif dan mengendalikan penyingkiran serpihan." },
+      ],
+      metaTitle: "Almari Pakaian Tanam Custom KL & Selangor | Dari RM320/kaki",
+      metaDesc: "Almari pakaian tanam lantai-ke-siling di KL & Selangor. Rangka papan lapis 18mm, para 25mm, perkakasan Häfele/Blum, reka bentuk 3D, dalaman disesuaikan. Jaminan struktur 5 tahun. Sebut harga percuma di WhatsApp.",
+    },
+    zh: {
+      name: "入墙衣柜",
+      tagline: "顶天立地定制入墙衣柜，18mm 胶合板柜体、25mm 层板、挂衣杆、Häfele/Blum 缓冲抽屉，门板可选镜面或防火板。",
+      description:
+        "入墙衣柜是卧室最大化收纳又不占地面空间的最常见方案。每个柜体都按您墙面的真实尺寸打造，采用 18mm 胶合板柜体（非廉价 MDF），配 25mm 加厚层板——即使堆满厚重衣物与收纳箱也不下弯。内部完全按需定制：长挂衣杆、双挂区、内置抽屉、鞋架与配件抽，分类清晰。门板可选高压防火板、亮面亚克力、喷漆或镜面，配 Häfele 或 Blum 缓冲铰链与全拉出抽屉滑轨。设计从现场激光测量与 3D 渲染开始，让您在投产前直观看到内部布局，所有制作在我们吉隆坡自有工厂完成。",
+      highlights: [
+        "18mm 胶合板柜体配 25mm 加厚层板——承重不下弯",
+        "内部按需定制：挂衣杆、双挂区、内置抽屉、鞋架",
+        "门板可选防火板、亚克力、喷漆或镜面，配推拉/平开",
+        "Häfele/Blum 缓冲铰链与全拉出抽屉滑轨",
+        "激光测量 + 3D 设计，柜体结构 5 年保修",
+      ],
+      process: [
+        { step: "01", title: "测量与收纳分析", desc: "激光测量墙面，记录衣物收纳习惯、悬挂区需求与风格偏好。" },
+        { step: "02", title: "3D 设计与报价", desc: "提供内部布局 3D 渲染与逐项报价——每块层板、抽屉、挂杆、门板都列明，修改至满意。" },
+        { step: "03", title: "工厂制作", desc: "CNC 切割部件、封边并预组装，工期 2–3 周，胶合板与传统木工结合。" },
+        { step: "04", title: "现场安装", desc: "1–2 天安装到位，靠墙调平对齐，塑料布控制粉尘。" },
+        { step: "05", title: "调校与交付", desc: "测试每扇门、抽屉、层板的顺滑度，调节铰链，移交 5 年保修卡。" },
+      ],
+      faqs: [
+        { q: "定制入墙衣柜需要多久？", a: "从设计定稿到安装通常 4 到 6 周：1 周设计确认，2–3 周工厂生产，1–2 天现场安装。定稿时提供详细时间表。" },
+        { q: "为什么用胶合板而不是 MDF？", a: "胶合板结构强度、防潮性与握钉力都远高于 MDF——适合承重衣柜。MDF 承重下会下弯、易吸潮。我们所有结构部件都用胶合板。" },
+        { q: "内部可以按我的需求定制吗？", a: "可以，完全定制。挂衣杆、双挂区、内置抽屉、鞋架、配件抽都按您的衣物与习惯设计，并在 3D 渲染中呈现。" },
+        { q: "公寓可以做入墙衣柜吗？", a: "可以。我们在吉隆坡各地公寓（Mont Kiara、Bangsar、KLCC、Damansara）经验丰富，遵守管理处工时、使用电梯保护并负责废料清运。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪定制入墙衣柜 | 每延英尺RM320起",
+      metaDesc: "吉隆坡与雪兰莪顶天立地定制入墙衣柜。18mm 胶合板柜体、25mm 层板、Häfele/Blum 五金、3D 设计、内部按需定制。5 年结构保修。WhatsApp免费报价。",
+    },
+  },
+  "carpentry/tv-console-and-feature-wall": {
+    ms: {
+      name: "Konsol TV & Dinding Feature",
+      tagline: "Konsol TV bina-mengikut-ukuran dengan laci storan, para terapung, pengurusan kabel dan panel dinding feature sepadan untuk ruang tamu moden.",
+      description:
+        "Konsol TV dan dinding feature ialah titik tumpuan ruang tamu moden, dan reka bentuk kustom membolehkan ia menyembunyikan kabel, perkakasan dan wayar sambil menampilkan skrin anda. Kami membina konsol dengan rangka papan lapis 18mm, laci storan tutup lembut untuk alat kawalan jauh dan aksesori, para terapung untuk barangan hiasan, serta saluran pengurusan kabel yang tersembunyi di belakang TV. Dinding feature sepadan—sama ada panel kayu menegak, batu salji (fluted panel) atau kemasan laminate—menyepadukan konsol dengan keseluruhan dinding untuk rupa yang bersepadu. Setiap projek bermula dengan ukuran dan susun atur 3D yang mengambil kira saiz TV, kedudukan konsol permainan dan soket kuasa sedia ada.",
+      highlights: [
+        "Konsol papan lapis 18mm dengan laci storan tutup lembut Häfele/Blum",
+        "Saluran pengurusan kabel tersembunyi—tiada wayar kelihatan",
+        "Para terapung untuk hiasan dan barangan peribadi",
+        "Dinding feature sepadan: panel kayu, fluted panel atau laminate",
+        "Reka bentuk 3D mengambil kira saiz TV dan soket kuasa sedia ada",
+      ],
+      process: [
+        { step: "01", title: "Ukuran & Susun Atur", desc: "Kami mengukur dinding, mengesahkan saiz TV, kedudukan mata soket dan keperluan storan aksesori anda." },
+        { step: "02", title: "Reka Bentuk 3D & Sebut Harga", desc: "Anda melihat konsol dan dinding feature dalam render 3D dengan sebut harga terperinci setiap panel dan aksesori." },
+        { step: "03", title: "Pembuatan Bengkel", desc: "Konsol dan panel dinding dipotong CNC, di-edge-band dan dicat semburan atau dilaminate di bengkel selama 2–3 minggu." },
+        { step: "04", title: "Pemasangan Di Tapak", desc: "Konsol dipasang, panel dinding disekrup dan diselaraskan, dan saluran kabel disambung ke soket sedia ada." },
+        { step: "05", title: "Pengurusan Kabel & Serahan", desc: "Wayar TV, konsol permainan dan pembesar suara dilalukan melalui saluran tersembunyi, dan unit diserahkan bersama jaminan 5 tahun." },
+      ],
+      faqs: [
+        { q: "Bolehkah wayar TV disembunyikan sepenuhnya?", a: "Ya. Kami mereka saluran pengurusan kabel tersembunyi di belakang konsol dan TV, jadi wayar kuasa, HDMI dan audio tidak kelihatan dari hadapan. Soket kuasa juga boleh dipindahkan ke belakang TV jika diperlukan." },
+        { q: "Adakah dinding feature termasuk dalam harga konsol?", a: "Dinding feature biasanya disebutharga berasingan kerana melibatkan panel dan kerja dinding tambahan. Kami menunjukkan kedua-duanya dalam render 3D dan sebut harga terperinci." },
+        { q: "Berapa tinggi konsol TV sepatutnya?", a: "Ketinggian konsol bergantung pada ketinggian duduk anda dan saiz TV; kami menetapkan ketinggian supaya pusat skrin selaras dengan paras mata semasa duduk, biasanya konsol 18–24 inci tinggi." },
+        { q: "Bolehkah konsol menampung konsol permainan dan pembesar suara?", a: "Ya. Kami mereka ruang storan dan rak terbuka mengikut peralatan anda—konsol permainan, pembesar suara soundbar, penghala dan pengumpul habuk semuanya diambil kira dalam reka bentuk." },
+      ],
+      metaTitle: "Konsol TV & Dinding Feature Custom KL | Dari RM1,500",
+      metaDesc: "Konsol TV kustom dengan laci storan, pengurusan kabel tersembunyi dan dinding feature sepadan di KL & Selangor. Rangka papan lapis, reka bentuk 3D. Sebut harga percuma di WhatsApp.",
+    },
+    zh: {
+      name: "电视柜与背景墙",
+      tagline: "定制电视柜，配收纳抽屉、悬浮层架、隐藏走线与配套背景墙，打造现代客厅视觉焦点。",
+      description:
+        "电视柜与背景墙是现代客厅的视觉焦点，定制设计能在展示屏幕的同时隐藏线缆、电器与杂线。我们用 18mm 胶合板打造柜体，配缓冲收纳抽屉（放置遥控与配件）、悬浮层架（摆放装饰），并在电视后方预留隐藏走线槽。配套背景墙——可选竖向木饰面板、格栅（fluted panel）或防火板饰面——将电视柜与整面墙融为一体，呈现协调统一的效果。每个项目都从测量与 3D 布局开始，综合考虑电视尺寸、游戏主机位置与现有电源插座。",
+      highlights: [
+        "18mm 胶合板电视柜，配 Häfele/Blum 缓冲收纳抽屉",
+        "隐藏走线槽——正面看不到任何线缆",
+        "悬浮层架摆放装饰与个人物品",
+        "配套背景墙：木饰面板、格栅或防火板",
+        "3D 设计综合考虑电视尺寸与现有插座",
+      ],
+      process: [
+        { step: "01", title: "测量与布局", desc: "测量墙面，确认电视尺寸、插座位置与配件收纳需求。" },
+        { step: "02", title: "3D 设计与报价", desc: "在 3D 渲染中呈现电视柜与背景墙，每块面板与配件逐项报价。" },
+        { step: "03", title: "工厂制作", desc: "电视柜与墙板 CNC 切割、封边，喷漆或贴防火板，工期 2–3 周。" },
+        { step: "04", title: "现场安装", desc: "安装柜体、固定墙板并对齐，走线槽接入现有插座。" },
+        { step: "05", title: "走线整理与交付", desc: "电视、游戏主机与音响线缆经隐藏槽布置，交付含 5 年保修。" },
+      ],
+      faqs: [
+        { q: "电视线可以完全藏起来吗？", a: "可以。我们在电视柜与电视后方设计隐藏走线槽，电源线、HDMI 与音频线正面都看不到。需要时也可将电源插座移到电视背后。" },
+        { q: "背景墙包含在电视柜报价内吗？", a: "背景墙通常单独报价，因为涉及额外的墙板与施工。两者都会在 3D 渲染与逐项报价中清晰呈现。" },
+        { q: "电视柜应该多高？", a: "高度取决于您的坐高与电视尺寸；我们设定高度让屏幕中心与落座时的视线齐平，柜体一般 18–24 英寸高。" },
+        { q: "柜体能放下游戏主机和音响吗？", a: "可以。我们按您的设备——游戏主机、回音壁、路由器、防尘位——设计储物格与开放层架。" },
+      ],
+      metaTitle: "吉隆坡定制电视柜与背景墙 | RM1,500起",
+      metaDesc: "吉隆坡与雪兰莪定制电视柜，配收纳抽屉、隐藏走线与配套背景墙。胶合板柜体、3D 设计。WhatsApp免费报价。",
+    },
+  },
+  "carpentry/study-desk-and-home-office": {
+    ms: {
+      name: "Meja Belajar & Pejabat Rumah",
+      tagline: "Meja belajar tanam bina-mengikut-ukuran dengan pengurusan kabel, laci, kabinet atas dan rak sepadan untuk bilik belajar dan pejabat rumah.",
+      description:
+        "Meja belajar dan pejabat rumah tanam memaksimumkan ruang kerja sambil mengekalkan rupa yang kemas dan bersepadu dengan bilik. Kami membina meja dengan rangka papan lapis 18mm, top yang tahan calar, lubang pengurusan kabel untuk monitor dan komputer riba, laci tutup lembut untuk stesen kerja, serta kabinet atas dan rak sepadan untuk buku dan fail. Susun atur disesuaikan dengan ruang anda—sama ada cermin sudut, dinding penuh atau stesen kerja berkembar—dan mengambil kira kedudukan soket kuasa, pencahayaan task dan keperluan ergonomik. Setiap unit direka dalam 3D supaya anda dapat melihat susunan stesen kerja sebelum pembuatan bermula.",
+      highlights: [
+        "Rangka papan lapis 18mm dengan top tahan calar untuk kegunaan harian",
+        "Lubang dan saluran pengurusan kabel untuk monitor dan komputer riba",
+        "Laci tutup lembut Häfele/Blum untuk stesen kerja",
+        "Kabinet atas dan rak sepadan untuk buku, fail dan aksesori",
+        "Susun atur disesuaikan—cermin sudut, dinding penuh atau stesen berkembar",
+      ],
+      process: [
+        { step: "01", title: "Ukuran & Kajian Ergonomik", desc: "Kami mengukur ruang, mengesahkan ketinggian meja ergonomik, dan menangkap keperluan storan serta peralatan anda." },
+        { step: "02", title: "Reka Bentuk 3D & Sebut Harga", desc: "Anda melihat susunan stesen kerja, kabinet atas dan rak dalam render 3D dengan sebut harga terperinci." },
+        { step: "03", title: "Pembuatan Bengkel", desc: "Meja, kabinet dan rak dipotong CNC, di-edge-band dan dikemas di bengkel selama 2–3 minggu." },
+        { step: "04", title: "Pemasangan Di Tapak", desc: "Unit dipasang dan disauh ke dinding, lubang kabel diselaraskan dengan soket sedia ada." },
+        { step: "05", title: "Pengurusan Kabel & Serahan", desc: "Wayar monitor, komputer riba dan lampu dilalukan dengan kemas, laci diuji, dan kad jaminan diserahkan." },
+      ],
+      faqs: [
+        { q: "Bolehkah meja disesuaikan dengan ruang kecil atau sudut?", a: "Ya. Kami mengkhusus dalam susun atur cermin sudut, meja dinding penuh dan stesen kerja padat untuk bilik kecil. Setiap unit dibina mengikut ukuran sebenar ruang anda." },
+        { q: "Adakah pengurusan kabel termasuk?", a: "Ya. Kami menyediakan lubang pengurusan kabel dan saluran tersembunyi untuk monitor, komputer riba, pengisi cas dan lampu, supaya permukaan meja kekal kemas." },
+        { q: "Berapa tinggi meja belajar yang selesa?", a: "Ketinggian standard sekitar 74cm untuk kegunaan dewasa, tetapi kami boleh disesuaikan mengikut ketinggian anda dan sama ada anda menggunakan kerusi ergonomik." },
+        { q: "Bolehkah saya termasuk kabinet atas dan rak buku?", a: "Ya. Kabinet atas, rak buku dinding dan unit storan sepadan sentiasa direka bersama meja untuk rupa yang bersepadu dan storan maksimum." },
+      ],
+      metaTitle: "Meja Belajar & Pejabat Rumah Custom KL | Dari RM1,100",
+      metaDesc: "Meja belajar dan pejabat rumah tanam di KL & Selangor. Pengurusan kabel, laci tutup lembut, kabinet atas dan rak sepadan, reka bentuk 3D. Sebut harga percuma di WhatsApp.",
+    },
+    zh: {
+      name: "书桌与家庭办公",
+      tagline: "定制入墙书桌，配走线管理、抽屉、吊柜与配套层架，适合书房与家庭办公。",
+      description:
+        "入墙书桌与家庭办公柜能最大化工作空间，同时保持整洁、与房间协调统一的外观。我们用 18mm 胶合板打造书桌，桌面耐磨，配显示器与笔记本电脑走线孔、办公缓冲抽屉，以及配套吊柜与书架用于书籍和文件。布局按您的空间定制——转角、满墙或双工位——并综合考虑电源插座位置、台灯光照与人体工学需求。每个柜体都经 3D 设计，让您在投产前直观看到工位布局。",
+      highlights: [
+        "18mm 胶合板柜体，桌面耐磨适合日常使用",
+        "显示器与笔记本电脑走线孔与走线槽",
+        "Häfele/Blum 缓冲办公抽屉",
+        "配套吊柜与书架，收纳书籍、文件与配件",
+        "布局可定制——转角、满墙或双工位",
+      ],
+      process: [
+        { step: "01", title: "测量与人因分析", desc: "测量空间，确认人体工学桌高，记录收纳与设备需求。" },
+        { step: "02", title: "3D 设计与报价", desc: "在 3D 渲染中呈现工位、吊柜与层架布局，逐项报价。" },
+        { step: "03", title: "工厂制作", desc: "书桌、柜体与层架 CNC 切割、封边并饰面，工期 2–3 周。" },
+        { step: "04", title: "现场安装", desc: "安装柜体并固定到墙面，走线孔对齐现有插座。" },
+        { step: "05", title: "走线整理与交付", desc: "显示器、笔记本电脑与台灯线缆整齐布置，测试抽屉，移交保修卡。" },
+      ],
+      faqs: [
+        { q: "书桌可以适配小空间或转角吗？", a: "可以。我们专做转角、满墙书桌与紧凑工位，每个柜体都按您空间的实际尺寸打造。" },
+        { q: "包含走线管理吗？", a: "包含。我们为显示器、笔记本电脑、充电器与台灯预留走线孔与隐藏线槽，保持桌面整洁。" },
+        { q: "书桌多高比较舒适？", a: "成人标准桌高约 74cm，但可按您的身高及是否使用人体工学椅定制。" },
+        { q: "可以加吊柜和书架吗？", a: "可以。吊柜、墙挂书架与配套收纳柜通常与书桌一体设计，外观协调、收纳最大化。" },
+      ],
+      metaTitle: "吉隆坡定制书桌与家庭办公 | RM1,100起",
+      metaDesc: "吉隆坡与雪兰莪入墙书桌与家庭办公柜。走线管理、缓冲抽屉、配套吊柜与层架、3D 设计。WhatsApp免费报价。",
+    },
+  },
+  "carpentry/shoe-cabinet-and-entry-storage": {
+    ms: {
+      name: "Kabinet Kasut & Storan Pintu Masuk",
+      tagline: "Kabinet kasut kedalaman nipis dengan laci tilt-out, bangku duduk, cermin dan pencahayaan bersepadu untuk laluan masuk yang kemas dan berfungsi.",
+      description:
+        "Laluan masuk ialah ruang pertama yang dilihat tetamu, dan kabinet kasut kustom menjadikannya kemas, berfungsi dan bergaya. Kami membina kabinet kedalaman nipis yang sesuai untuk laluan sempit, dengan laci tilt-out yang memegang kasut secara menegak untuk memaksimumkan kapasiti, bangku duduk terbina dalam untuk memakai kasut dengan selesa, cermin penuh atau separa, serta pencahayaan LED bersepadu. Rangka papan lapis 18mm dengan kemasan laminate atau cat semburan menahan habuk dan calar harian, dan laci menggunakan rel sambungan penuh Häfele atau Blum supaya boleh ditarik sepenuhnya. Setiap unit direka dalam 3D mengambil kira bilangan pasang kasut ahli keluarga, ruang payung dan kunci, serta lebar laluan masuk anda.",
+      highlights: [
+        "Kabinet kedalaman nipis sesuai untuk laluan masuk sempit",
+        "Laci tilt-out memegang kasut menegak untuk kapasiti maksimum",
+        "Bangku duduk terbina dalam untuk memakai kasut dengan selesa",
+        "Cermin penuh atau separa dengan pencahayaan LED bersepadu",
+        "Rel laci sambungan penuh Häfele/Blum dan kemasan tahan calar",
+      ],
+      process: [
+        { step: "01", title: "Ukuran & Kajian Storan", desc: "Kami mengukur laluan masuk, menganggar bilangan pasang kasut, dan menangkap keperluan ruang payung, kunci dan beg." },
+        { step: "02", title: "Reka Bentuk 3D & Sebut Harga", desc: "Anda melihat kabinet, bangku dan cermin dalam render 3D dengan sebut harga terperinci setiap komponen." },
+        { step: "03", title: "Pembuatan Bengkel", desc: "Kabinet, laci tilt-out dan bangku dipotong CNC, di-edge-band dan dikemas di bengkel selama 2–3 minggu." },
+        { step: "04", title: "Pemasangan Di Tapak", desc: "Unit dipasang ke dinding, pencahayaan LED disambung, dan cermin dilekap dengan selamat." },
+        { step: "05", title: "Ujian & Serahan", desc: "Laci tilt-out diuji kelicinan, pencahayaan diperiksa, dan kad jaminan 5 tahun diserahkan." },
+      ],
+      faqs: [
+        { q: "Berapa banyak kasut yang boleh dimuatkan?", a: "Ia bergantung pada reka bentuk dan kedalaman, tetapi laci tilt-out biasanya memegang 12–20 pasang kasut setiap meter. Kami menganggar kapasiti berdasarkan koleksi kasut ahli keluarga anda semasa reka bentuk 3D." },
+        { q: "Adakah bangku duduk termasuk?", a: "Bangku duduk terbina dalam boleh disertakan sebagai sebahagian reka bentuk. Ia memberi tempat selesa untuk memakai kasut dan sering mempunyai storan tersembunyi di bawah." },
+        { q: "Bolehkah kabinet dipasang di laluan masuk yang sangat sempit?", a: "Ya. Kabinet kedalaman nipis (serendah 15–20cm) dengan laci tilt-out direka khas untuk laluan sempit di mana kabinet tradisional tidak muat." },
+        { q: "Adakah pencahayaan dan cermin termasuk?", a: "Pencahayaan LED bersepadu dan cermin penuh atau separa boleh disertakan. Kami menyambung pencahayaan ke suis atau sensor sedia ada semasa pemasangan." },
+      ],
+      metaTitle: "Kabinet Kasut & Storan Pintu Masuk KL | Dari RM1,800",
+      metaDesc: "Kabinet kasut kedalaman nipis dengan laci tilt-out, bangku duduk, cermin & lampu LED di KL & Selangor. Rangka papan lapis, reka bentuk 3D. Sebut harga percuma di WhatsApp.",
+    },
+    zh: {
+      name: "鞋柜与玄关收纳",
+      tagline: "薄进深鞋柜，配翻斗抽屉、换鞋凳、镜面与内嵌灯光，打造整洁实用的玄关。",
+      description:
+        "玄关是客人进门第一眼看到的空间，定制鞋柜能让它整洁、实用又时尚。我们打造适合狭窄过道的薄进深鞋柜，翻斗抽屉将鞋子竖向收纳以最大化容量，配嵌入式换鞋凳方便舒适穿鞋，整镜或半身镜，以及内嵌 LED 灯。18mm 胶合板柜体配防火板或喷漆饰面，耐日常灰尘与刮擦，抽屉采用 Häfele 或 Blum 全拉出滑轨，可完全拉出。每个柜体都经 3D 设计，综合考虑家人的鞋子数量、雨伞与钥匙的收纳，以及玄关宽度。",
+      highlights: [
+        "薄进深柜体，适合狭窄玄关",
+        "翻斗抽屉竖向收纳鞋子，容量最大化",
+        "嵌入式换鞋凳，舒适穿鞋",
+        "整镜或半身镜，配内嵌 LED 灯",
+        "Häfele/Blum 全拉出滑轨，耐磨饰面",
+      ],
+      process: [
+        { step: "01", title: "测量与收纳分析", desc: "测量玄关，估算鞋子数量，记录雨伞、钥匙与包的收纳需求。" },
+        { step: "02", title: "3D 设计与报价", desc: "在 3D 渲染中呈现柜体、换鞋凳与镜面，每个组件逐项报价。" },
+        { step: "03", title: "工厂制作", desc: "柜体、翻斗抽屉与换鞋凳 CNC 切割、封边并饰面，工期 2–3 周。" },
+        { step: "04", title: "现场安装", desc: "柜体固定到墙面，连接 LED 灯，镜面安全嵌装。" },
+        { step: "05", title: "测试与交付", desc: "测试翻斗抽屉顺滑度，检查灯光，移交 5 年保修卡。" },
+      ],
+      faqs: [
+        { q: "能放多少双鞋？", a: "取决于设计与进深，翻斗抽屉一般每米可放 12–20 双鞋。我们在 3D 设计时按家人鞋量估算容量。" },
+        { q: "包含换鞋凳吗？", a: "嵌入式换鞋凳可作为设计的一部分，提供舒适穿鞋位置，下方常带隐藏收纳。" },
+        { q: "非常狭窄的玄关能装吗？", a: "可以。薄进深鞋柜（薄至 15–20cm）配翻斗抽屉专为狭窄过道设计，传统柜体放不下的地方也能装。" },
+        { q: "包含灯光和镜面吗？", a: "内嵌 LED 灯与整镜/半身镜可一并配置。安装时将灯光接入现有开关或感应器。" },
+      ],
+      metaTitle: "吉隆坡鞋柜与玄关收纳 | RM1,800起",
+      metaDesc: "吉隆坡与雪兰莪薄进深鞋柜，配翻斗抽屉、换鞋凳、镜面与 LED 灯。胶合板柜体、3D 设计。WhatsApp免费报价。",
+    },
+  },
+
 };
 
 /**
