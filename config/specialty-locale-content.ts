@@ -1848,6 +1848,240 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
     },
   },
 
+  /* ── TILING ─────────────────────────────────────────────────────────── */
+  "tiling/floor-tiling-installation": {
+    ms: {
+      name: "Pemasangan Jubin Lantai",
+      tagline: "Pemasangan jubin lantai homogen, porselin dan seramik 300x300mm hingga 600x600mm dengan pelekat polimer dan kemasan rata sempurna.",
+      description:
+        "Kami memasang jubin lantai homogen, porselin dan seramik bersaiz 300x300mm hingga 600x600mm menggunakan pelekat jubin yang diubah suai polimer. Substrat diperiksa kerataan, kelembapan dan kekuatannya dahulu; permukaan yang tidak rata diratakan dengan sebatian self-levelling dan diprima sebelum jubin diletakkan. Susun atur dirancang lebih awal supaya jubin penuh berada di kedudukan utama dan serpihan nipis dialihkan ke tepi yang kurang kelihatan, dengan cerun lantai diarahkan ke longkang di kawasan basah. Setiap jubin ditekan ke dalam pelekat menggunakan trowel takuk bersaiz betul, dan sendi diisi dengan grout tahan kulat yang dipadankan warnanya. Semua kerja disokong jaminan lekatan jubin dan grout selama 12 bulan.",
+      highlights: [
+        "Jubin homogen, porselin dan seramik 300x300mm hingga 600x600mm",
+        "Pemeriksaan kerataan substrat dengan self-levelling jika perlu",
+        "Susun atur dirancang untuk elak serpihan nipis di tepi",
+        "Grout tahan kulat dipadankan warna dengan jubin anda",
+        "Jaminan lekatan jubin & grout 12 bulan",
+      ],
+      process: [
+        { step: "01", title: "Pemeriksaan Substrat", desc: "Kami menguji kerataan, kandungan lembapan dan kekuatan permukaan sebelum sebarang pelekat dicampur." },
+        { step: "02", title: "Perancangan Susun Atur", desc: "Garis datum ditanda supaya jubin penuh berada di kedudukan utama dan serpihan dialihkan ke tepi yang kurang kelihatan." },
+        { step: "03", title: "Penyediaan Permukaan", desc: "Substrat yang tidak rata diisi dengan sebatian self-levelling dan diprima untuk lekatan maksimum." },
+        { step: "04", title: "Pemasangan Jubin", desc: "Jubin diletakkan dalam pelekat polimer menggunakan trowel takuk bersaiz betul dengan sendi seragam." },
+        { step: "05", title: "Grouting & Pembersihan", desc: "Selepas pengeringan 24 jam, sendi diisi dengan grout tahan kulat dan permukaan dibersihkan tanpa kesan." },
+      ],
+      faqs: [
+        { q: "Berapa saiz jubin lantai yang paling popular di Malaysia?", a: "Jubin 600x600mm ialah pilihan paling popular untuk rumah dan kondominium di Malaysia kerana saiznya yang sederhana besar memberikan ruang yang kemas dengan kos pemasangan yang berpatutan. Jubin 800x800mm semakin diminati untuk ruang tamu yang luas." },
+        { q: "Bolehkah jubin lantai dipasang di atas lantai sedia ada?", a: "Tidak disyorkan. Meletakkan jubin di atas jubin lama menaikkan aras lantai, menyukarkan pembukaan pintu dan mengurangkan ketinggian siling. Jubin lama perlu ditanggalkan dan permukaan disediakan dahulu untuk lekatan dan ketahanan jangka panjang." },
+        { q: "Berapa lama masa untuk memasang jubin lantai satu ruang tamu?", a: "Ruang tamu seluas 20m² biasanya mengambil masa 2–3 hari termasuk penyediaan substrat, pemasangan dan grouting. Pelekat perlu kering selama 24 jam sebelum grout boleh diisi." },
+        { q: "Adakah harga termasuk jubin?", a: "Harga asas RM14 setiap kaki persegi adalah untuk buruh pemasangan sahaja. Jubin boleh dibeli oleh anda sendiri, atau kami boleh membantu membekalkannya dengan kos berasingan mengikut pilihan anda." },
+      ],
+      metaTitle: "Pemasangan Jubin Lantai KL & Selangor | Harga Dari RM14/kaki²",
+      metaDesc: "Pasang jubin lantai homogen, porselin & seramik di KL & Selangor. Pelekat polimer, self-levelling, grout tahan kulat. Jaminan 12 bulan. Sebut harga percuma di WhatsApp.",
+    },
+    zh: {
+      name: "地面瓷砖铺贴",
+      tagline: "300x300mm 至 600x600mm 地面瓷砖铺贴，聚合物瓷砖胶、自流平找平，平整无空鼓。",
+      description:
+        "我们使用改性聚合物瓷砖胶铺贴瓷质、玻化与陶瓷地砖（300x300mm 至 600x600mm）。铺贴前先检查基层平整度、含水率与强度；不平处用自流平找平并涂刷界面剂。排版预先规划，整砖位于显眼位置，窄条移至不显眼边缘；湿区地漏处合理找坡。每块砖以正确规格的齿形抹刀满浆铺贴，勾缝使用与瓷砖颜色匹配的防霉勾缝剂。全部工程享有 12 个月瓷砖粘结与勾缝保修。",
+      highlights: [
+        "瓷质、玻化与陶瓷地砖，300x300mm 至 600x600mm",
+        "基层平整度检查，必要时自流平找平",
+        "排版规划，避免墙边窄条，湿区合理找坡",
+        "防霉勾缝剂颜色匹配，满浆铺贴无空鼓",
+        "12 个月瓷砖粘结与勾缝保修",
+      ],
+      process: [
+        { step: "01", title: "基层检查", desc: "拌胶前测试基层平整度、含水率与强度。" },
+        { step: "02", title: "排版规划", desc: "弹线确定整砖位置，窄条移至不显眼边缘。" },
+        { step: "03", title: "表面处理", desc: "不平基层用自流平找平并涂刷界面剂。" },
+        { step: "04", title: "瓷砖铺贴", desc: "以正确齿形抹刀满浆铺贴，接缝均匀。" },
+        { step: "05", title: "勾缝与清洁", desc: "养护后填入防霉勾缝剂，表面擦净无残浆。" },
+      ],
+      faqs: [
+        { q: "马来西亚最流行的地砖尺寸是什么？", a: "600x600mm 是马来西亚住宅与公寓最流行的地砖尺寸，砖面适中、铺贴成本合理。800x800mm 大砖越来越受欢迎，适合空间较大的客厅。" },
+        { q: "可以在旧地砖上直接铺新砖吗？", a: "不建议。在旧砖上铺新砖会抬高地面，影响门扇开合并压低层高。应先拆除旧砖并处理好基层，才能保证粘结牢固、经久耐用。" },
+        { q: "铺一个客厅的地砖需要多久？", a: "约 20 平方米的客厅通常需要 2–3 天，包括基层处理、铺贴与勾缝。勾缝前需等待瓷砖胶养护 24 小时。" },
+        { q: "报价含瓷砖吗？", a: "RM14/平方英尺 的基础价只含铺贴人工。瓷砖可由您自购，我们也可代为采购，费用另计。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪地砖铺贴 | 每平方英尺RM14起",
+      metaDesc: "吉隆坡与雪兰莪地砖铺贴服务。瓷质、玻化与陶瓷砖，聚合物瓷砖胶，自流平找平，防霉勾缝。12个月保修。WhatsApp免费报价。",
+    },
+  },
+  "tiling/wall-tiling-installation": {
+    ms: {
+      name: "Pemasangan Jubin Dinding",
+      tagline: "Jubin dinding dapur, bilik mandi dan dinding ciri dengan corak lurus, bata atau herringbone, kemasan kalis air dan sendi kemas.",
+      description:
+        "Kami memasang jubin dinding untuk splashback dapur, dinding bilik mandi dan dinding ciri menggunakan pelekat polimer berkualiti. Permukaan dinding diperiksa kerataan dan kekuatannya, diprima jika perlu, dan garis datum ditanda dengan aras sebelum jubin dilekatkan. Corak lurus, bata atau herringbone dirancang bersama anda, dengan potongan kemas di sudut dan sekitar suis serta paip. Sendi diisi dengan grout tahan kulat, dan kawasan basah ditutup dengan silikon anti-kulat di sudut dan sendi untuk mengelakkan kebocoran. Jubin dinding dipasang tegak, sekata dan sedia untuk digunakan serta-merta selepas grout kering.",
+      highlights: [
+        "Splashback dapur, dinding bilik mandi & dinding ciri",
+        "Corak lurus, bata atau herringbone pilihan anda",
+        "Potongan kemas di sudut, suis dan paip",
+        "Grout tahan kulat & silikon anti-kulat untuk kawasan basah",
+        "Jaminan lekatan jubin 12 bulan",
+      ],
+      process: [
+        { step: "01", title: "Pemeriksaan Dinding", desc: "Dinding diperiksa kerataan, kelembapan dan kekuatannya sebelum pelekat disapu." },
+        { step: "02", title: "Penandaan Garis", desc: "Garis datum dan penjajaran ditanda dengan aras supaya jubin lurus dari lantai ke siling." },
+        { step: "03", title: "Penyediaan & Pelekat", desc: "Permukaan diprima jika perlu dan pelekat disapu dengan trowel takuk yang betul." },
+        { step: "04", title: "Pemasangan Jubin", desc: "Jubin ditekan ke dalam pelekat dengan spacer untuk sendi seragam dan permukaan rata." },
+        { step: "05", title: "Grouting & Pengedap", desc: "Sendi diisi dengan grout tahan kulat dan sudut kawasan basah ditutup silikon anti-kulat." },
+      ],
+      faqs: [
+        { q: "Apakah corak jubin dinding yang paling popular?", a: "Corak lurus ialah pilihan paling popular kerana kemas dan mudah diselenggara. Corak bata memberi tekstur menarik untuk splashback dapur, manakala corak herringbone sesuai untuk dinding ciri yang ingin menonjol." },
+        { q: "Berapa tinggi jubin dinding bilik mandi perlu dipasang?", a: "Kebanyakan pemilik rumah memasang jubin dinding bilik mandi sehingga siling untuk perlindungan penuh daripada percikan air. Pilihan separa tinggi (1.2–1.5m) lebih murah tetapi memerlukan kemasan atas yang kemas dan cat kalis air di bahagian atas." },
+        { q: "Bolehkah jubin dinding dipasang di atas jubin lama?", a: "Untuk dinding, jubin lama perlu ditanggalkan dahulu kerana permukaan berkilat tidak memberikan lekatan yang baik dan menambah beban pada dinding. Kami menanggalkan, membaiki dan menyediakan permukaan sebelum pemasangan baharu." },
+        { q: "Apakah perbezaan harga jubin dinding dan lantai?", a: "Jubin dinding (RM16 setiap kaki persegi) lebih mahal sedikit daripada jubin lantai (RM14 setiap kaki persegi) kerana kerja dinding memerlukan lebih ketelitian dalam penjajaran menegak, potongan di sudut dan pengendalian jubin." },
+      ],
+      metaTitle: "Pemasangan Jubin Dinding KL & Selangor | Harga Dari RM16/kaki²",
+      metaDesc: "Pasang jubin dinding dapur & bilik mandi di KL & Selangor. Splashback, dinding ciri, corak lurus/bata/herringbone. Grout tahan kulat. Jaminan 12 bulan. Sebut harga percuma.",
+    },
+    zh: {
+      name: "墙面瓷砖铺贴",
+      tagline: "厨房防溅墙、卫生间墙面与主题墙铺贴，直拼、工字拼或人字拼任选，缝隙均匀整洁。",
+      description:
+        "我们使用优质聚合物瓷砖胶铺贴厨房防溅墙、卫生间墙面与主题墙。铺贴前检查墙面平整度、含水率与强度，必要时涂刷界面剂并用水平仪弹线定位。直拼、工字拼或人字拼图案可按您的喜好选择，转角、开关与管道处切割整齐。勾缝使用防霉勾缝剂，湿区阴角打防霉硅胶防止渗水。墙面砖垂直平整、缝隙均匀，勾缝干透后即可正常使用。",
+      highlights: [
+        "厨房防溅墙、卫生间墙面与主题墙",
+        "直拼、工字拼或人字拼任选",
+        "转角、开关与管道处整齐切割",
+        "防霉勾缝剂，湿区阴角打防霉硅胶",
+        "12 个月瓷砖粘结保修",
+      ],
+      process: [
+        { step: "01", title: "墙面检查", desc: "铺贴前检查墙面平整度、含水率与强度。" },
+        { step: "02", title: "弹线定位", desc: "用水平仪弹出基准线，确保瓷砖垂直对齐。" },
+        { step: "03", title: "打底与涂胶", desc: "必要时涂刷界面剂，用正确齿形抹刀批刮瓷砖胶。" },
+        { step: "04", title: "瓷砖铺贴", desc: "瓷砖按压入胶并放置调平卡，接缝均匀、表面平整。" },
+        { step: "05", title: "勾缝与密封", desc: "填入防霉勾缝剂，湿区阴角打防霉硅胶。" },
+      ],
+      faqs: [
+        { q: "最流行的墙面砖图案是什么？", a: "直拼最受欢迎，整齐且易于清洁。工字拼为厨房防溅墙增添质感，人字拼则适合想让主题墙出彩的空间。" },
+        { q: "卫生间墙砖要铺多高？", a: "多数业主选择通顶铺贴，以全面防溅。半高方案（1.2–1.5m）更省钱，但需要整洁的收边并在上部使用防水漆。" },
+        { q: "可以在旧墙砖上直接铺新砖吗？", a: "墙面不建议。旧砖表面光滑、附着力差，且增加墙体负荷。我们会先拆旧、修补并处理基层再铺新砖。" },
+        { q: "墙砖和地砖价格为何不同？", a: "墙砖铺贴（RM16/平方英尺）略高于地砖（RM14/平方英尺），因为立面铺贴更考验垂直对齐、转角切割与瓷砖搬运。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪墙砖铺贴 | 每平方英尺RM16起",
+      metaDesc: "吉隆坡与雪兰莪厨房与卫生间墙砖铺贴。防溅墙、主题墙，直拼/工字拼/人字拼。防霉勾缝。12个月保修。免费报价。",
+    },
+  },
+  "tiling/large-format-slab-tiling": {
+    ms: {
+      name: "Pemasangan Slab Format Besar",
+      tagline: "Pemasangan slab 600x1200mm, 800x1800mm dan 1200x2400mm dengan self-levelling, pengangkat cawan sedutan dan lippage tuning.",
+      description:
+        "Slab format besar memberikan rupa moden dengan sendi yang minimum, tetapi memerlukan kemahiran dan peralatan khusus. Kami memasang slab 600x1200mm, 800x1800mm dan 1200x2400mm di atas substrat yang diratakan dengan sebatian self-levelling untuk permukaan yang sempurna rata. Pengangkat cawan sedutan dan rak khas digunakan untuk mengendalikan slab berat dengan selamat tanpa risiko kerosakan. Sistem lippage tuning (Raimondi atau Rubi) memastikan tiada jurang tinggi antara slab, dan pelekat disapu pada belakang slab (back-buttering) untuk liputan penuh dan mengelakkan bintik berongga. Hasilnya lantai slab besar yang rata, kemas dan mewah untuk ruang tamu, dapur dan ruang komersial.",
+      highlights: [
+        "Slab 600x1200mm, 800x1800mm & 1200x2400mm",
+        "Self-levelling untuk substrat sempurna rata",
+        "Pengangkat cawan sedutan & rak untuk slab berat",
+        "Sistem lippage tuning — tiada jurang tinggi",
+        "Back-buttering untuk liputan pelekat penuh",
+      ],
+      process: [
+        { step: "01", title: "Penilaian Substrat", desc: "Kerataan dan kekuatan substrat dinilai; lantai tidak rata diisi dengan sebatian self-levelling." },
+        { step: "02", title: "Perancangan Susun Atur", desc: "Susun atur slab dirancang untuk meminimumkan potongan dan memastikan corak seimbang." },
+        { step: "03", title: "Self-Levelling & Primer", desc: "Sebatian self-levelling dituang, diratakan dan dibiarkan kering sebelum primer disapu." },
+        { step: "04", title: "Pemasangan Slab", desc: "Slab diangkat dengan cawan sedutan, disapu pelekat (back-buttering) dan diletakkan dengan klip lippage tuning." },
+        { step: "05", title: "Grouting & Kemasan", desc: "Selepas pengeringan, sendi diisi dengan grout epoksi atau simen yang dipadankan, dan permukaan digilap bersih." },
+      ],
+      faqs: [
+        { q: "Apakah kelebihan slab format besar berbanding jubin biasa?", a: "Slab besar seperti 800x1800mm atau 1200x2400mm mengurangkan bilangan sendi, memberikan rupa yang lebih bersih dan mewah. Ia juga lebih mudah dibersihkan kerana kurang garisan grout yang mengumpul kotoran." },
+        { q: "Mengapa harga slab besar lebih mahal?", a: "Slab besar memerlukan self-levelling yang teliti, pengangkat cawan sedutan, klip lippage tuning dan tenaga kerja yang lebih mahir. Risiko kerosakan juga lebih tinggi kerana slab berat dan rapuh sebelum dipasang." },
+        { q: "Bolehkah slab besar dipasang di atas lantai yang tidak rata?", a: "Tidak digalakkan. Slab besar sangat sensitif terhadap permukaan yang tidak rata — sebarang ketidaksamaan akan kelihatan sebagai jurang tinggi antara slab. Kami meratakan substrat dengan self-levelling terlebih dahulu." },
+        { q: "Apakah itu back-buttering?", a: "Back-buttering ialah menyapu pelekat pada bahagian belakang slab selain pelekat di lantai, untuk memastikan liputan penuh. Ini penting untuk slab melebihi 600mm bagi mengelakkan bintik berongga." },
+      ],
+      metaTitle: "Pemasangan Slab Format Besar KL & Selangor | Dari RM26/kaki²",
+      metaDesc: "Pemasangan slab 600x1200mm, 800x1800mm & 1200x2400mm di KL & Selangor. Self-levelling, cawan sedutan, lippage tuning. Kemasan rata & mewah. Sebut harga percuma.",
+    },
+    zh: {
+      name: "超大板铺贴",
+      tagline: "600x1200mm、800x1800mm 与 1200x2400mm 超大板铺贴，自流平找平、吸盘搬运、找平器调平。",
+      description:
+        "超大板缝隙少、观感现代大气，但对工艺与设备要求极高。我们铺贴 600x1200mm、800x1800mm 与 1200x2400mm 超大板：先用自流平将基层找平，再用吸盘与专用支架安全搬运沉重易碎的大板，以 Raimondi 或 Rubi 找平器系统消除板间高低差，并对板材背涂瓷砖胶确保满浆、杜绝空鼓。完工后的地面平整、缝隙均匀、气派十足，适合客厅、厨房与商业空间。",
+      highlights: [
+        "600x1200mm、800x1800mm 与 1200x2400mm 超大板",
+        "自流平找平，基层绝对平整",
+        "吸盘与专用支架安全搬运重板",
+        "找平器系统，板间零高低差",
+        "背涂瓷砖胶，保证满浆无空鼓",
+      ],
+      process: [
+        { step: "01", title: "基层评估", desc: "评估基层平整度与强度，不平处用自流平找平。" },
+        { step: "02", title: "排版规划", desc: "规划大板排版，尽量减少切割并保持图案均衡。" },
+        { step: "03", title: "自流平与界面剂", desc: "浇筑自流平、刮平并养护，干透后涂刷界面剂。" },
+        { step: "04", title: "大板铺贴", desc: "用吸盘起板、背涂瓷砖胶，以找平器系统调平铺贴。" },
+        { step: "05", title: "勾缝与收尾", desc: "养护后填环氧或水泥基勾缝剂，颜色匹配，表面擦净。" },
+      ],
+      faqs: [
+        { q: "超大板比普通瓷砖有什么优势？", a: "800x1800mm 或 1200x2400mm 的大板缝隙极少，整体更整洁大气，也更易清洁——勾缝线少，藏污纳垢的地方就少。" },
+        { q: "为什么超大板铺贴价格更高？", a: "超大板需要精细的自流平、吸盘搬运、找平器系统与更有经验的瓦工。大板重且铺贴前易碎，搬运与施工风险更高。" },
+        { q: "基层不平能铺超大板吗？", a: "不建议。超大板对基层平整度极其敏感，任何不平都会显现为板间高低差。我们先用自流平把基层找平再铺贴。" },
+        { q: "什么是背涂？", a: "背涂是在板材背面额外批刮瓷砖胶，与地面胶层共同保证满浆。超过 600mm 的大板必须背涂，以避免空鼓。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪超大板铺贴 | 每平方英尺RM26起",
+      metaDesc: "吉隆坡与雪兰莪 600x1200mm/800x1800mm/1200x2400mm 超大板铺贴。自流平、吸盘搬运、找平器调平。平整大气。免费报价。",
+    },
+  },
+  "tiling/tile-repair-and-re-grouting": {
+    ms: {
+      name: "Pembaikan Jubin & Grout Semula",
+      tagline: "Mengganti jubin berongga, retak atau longgar, membaiki substrat dan menggantikan grout lama dengan grout tahan kulat.",
+      description:
+        "Jubin berongga, retak atau longgar bukan sahaja tidak sedap dipandang — ia boleh menjadi bahaya tersandung dan laluan masuk air ke substrat. Kami mengesan jubin berongga dengan ujian ketukan, menanggalkannya dengan berhati-hati tanpa merosakkan jubin sekeliling, membaiki substrat di bawahnya dan memasang jubin gantian dengan pelekat segar. Grout lama yang berubah warna, berkulat atau retak dibuang dan digantikan dengan grout tahan kulat yang dipadankan warnanya. Untuk kawasan basah, kami juga menggantikan silikon di sudut dengan silikon anti-kulat. Semua kerja siap dalam masa yang singkat dengan gangguan minimum kepada rutin harian anda.",
+      highlights: [
+        "Pengesanan jubin berongga dengan ujian ketukan",
+        "Penggantian jubin dengan pelekat segar & substrat dibaiki",
+        "Grout lama dibuang & diganti dengan grout tahan kulat",
+        "Padanan warna grout dengan jubin sedia ada",
+        "Silikon anti-kulat baharu untuk kawasan basah",
+      ],
+      process: [
+        { step: "01", title: "Pengesanan & Penilaian", desc: "Kawasan berongga dikenal pasti dengan ujian ketukan dan kerosakan dinilai." },
+        { step: "02", title: "Penanggalan Jubin", desc: "Jubin rosak ditanggalkan dengan berhati-hati tanpa merosakkan jubin sekeliling." },
+        { step: "03", title: "Pembaikan Substrat", desc: "Pelekat lama dan serpihan dibersihkan; substrat dibaiki dan diratakan jika perlu." },
+        { step: "04", title: "Pemasangan Gantian", desc: "Jubin gantian dipasang dengan pelekat segar dan diselaraskan dengan permukaan sekeliling." },
+        { step: "05", title: "Grouting & Pengedap", desc: "Grout lama diganti dengan grout tahan kulat; kawasan basah ditutup silikon anti-kulat." },
+      ],
+      faqs: [
+        { q: "Bagaimana saya tahu jubin saya berongga?", a: "Jubin berongga menghasilkan bunyi berongga apabila diketuk dengan objek keras seperti syiling atau pemegang alat. Tanda lain: grout retak di sekeliling jubin, jubin berderit apabila dipijak, atau habuk halus keluar dari grout." },
+        { q: "Bolehkah jubin gantian dipadankan dengan jubin sedia ada?", a: "Jika anda masih menyimpan stok jubin yang sama, kami akan gunakan itu. Jika tidak, kami akan cuba mencari jubin yang paling hampir dari segi warna dan tekstur. Untuk padanan yang sempurna, simpan stok tambahan semasa pembelian awal." },
+        { q: "Mengapa grout saya berkulat dan berubah warna?", a: "Grout simen berliang dan mudah menyerap lembapan, menjadikannya tempat tumbuh kulat di kawasan basah. Kami menggantikannya dengan grout epoksi atau grout tahan kulat yang kurang berliang, dan menutup sudut dengan silikon anti-kulat." },
+        { q: "Berapa lama pembaikan jubin mengambil masa?", a: "Penggantian beberapa jubin berongga biasanya siap dalam satu hari, termasuk masa pengeringan pelekat. Kerja grout semula untuk kawasan yang lebih besar boleh mengambil masa 1–2 hari." },
+      ],
+      metaTitle: "Pembaikan Jubin & Grout Semula KL | Dari RM22/kaki²",
+      metaDesc: "Baiki jubin berongga, retak & longgar di KL & Selangor. Ujian ketukan, substrat dibaiki, grout tahan kulat. Kemas & cepat. Sebut harga percuma di WhatsApp.",
+    },
+    zh: {
+      name: "瓷砖修补与重新勾缝",
+      tagline: "更换空鼓、开裂或松动的瓷砖，修补基层，并以防霉勾缝剂替换旧勾缝。",
+      description:
+        "空鼓、开裂或松动的瓷砖不仅难看，还可能绊脚并让水渗入基层。我们通过敲击测试找出空鼓砖，小心拆除而不伤及邻砖，修补基层后以新瓷砖胶重新铺贴。变黑、发霉或开裂的旧勾缝会被清除，换以颜色匹配的防霉勾缝剂。湿区阴角同步更换防霉硅胶。整个流程快速、干净，对日常生活影响极小。",
+      highlights: [
+        "敲击测试精准找出空鼓砖",
+        "更换瓷砖并修补基层，新胶重贴",
+        "清除旧勾缝，换防霉勾缝剂",
+        "勾缝颜色与现有瓷砖匹配",
+        "湿区阴角重打防霉硅胶",
+      ],
+      process: [
+        { step: "01", title: "检测与评估", desc: "用敲击测试定位空鼓区域并评估损坏程度。" },
+        { step: "02", title: "拆除瓷砖", desc: "小心拆除损坏瓷砖，不伤及邻砖。" },
+        { step: "03", title: "基层修补", desc: "清除旧胶与碎屑，修补并找平基层。" },
+        { step: "04", title: "铺贴新砖", desc: "以新瓷砖胶铺贴替换砖，与周边表面找齐。" },
+        { step: "05", title: "勾缝与密封", desc: "换防霉勾缝剂，湿区阴角打防霉硅胶。" },
+      ],
+      faqs: [
+        { q: "怎么知道瓷砖空鼓了？", a: "用硬币或工具柄敲击瓷砖：声音空洞即为空鼓。其他迹象包括瓷砖四周勾缝开裂、踩踏时有咯吱声，或勾缝中渗出细灰。" },
+        { q: "替换砖能和现有瓷砖配得上吗？", a: "若您存有同款瓷砖，我们直接用。没有的话我们会尽量找颜色与纹理最接近的。想完美匹配，建议买砖时多留几箱库存。" },
+        { q: "为什么勾缝会发霉变黑？", a: "水泥基勾缝剂多孔易吸潮，在湿区容易滋生霉菌。我们会换用低孔率的环氧或防霉勾缝剂，并在阴角打防霉硅胶。" },
+        { q: "瓷砖修补需要多久？", a: "更换几块空鼓砖通常一天内完成，包括瓷砖胶养护时间。较大面积的重新勾缝约需 1–2 天。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪瓷砖修补与重新勾缝 | 每平方英尺RM22起",
+      metaDesc: "吉隆坡与雪兰莪空鼓、开裂、松动瓷砖修补。敲击检测、基层修补、防霉勾缝剂。快速整洁。WhatsApp免费报价。",
+    },
+  },
+
 };
 
 /**

@@ -70,6 +70,10 @@ const PRIORITY_KEYS = [
   "handyman/door-hinge-and-lockset-repair",
   "handyman/furniture-assembly-ikea-taobao",
   "handyman/curtains-blinds-and-shelves-hanging",
+  "tiling/floor-tiling-installation",
+  "tiling/wall-tiling-installation",
+  "tiling/large-format-slab-tiling",
+  "tiling/tile-repair-and-re-grouting",
 ];
 
 function checkBlock(key: string, locale: "ms" | "zh", b: SpecialtyLocaleBlock, issues: Issue[]) {
