@@ -86,6 +86,10 @@ const PRIORITY_KEYS = [
   "carpentry/tv-console-and-feature-wall",
   "carpentry/study-desk-and-home-office",
   "carpentry/shoe-cabinet-and-entry-storage",
+  "epoxy-flooring/self-levelling-epoxy-floor",
+  "epoxy-flooring/flake-quartz-broadcast-epoxy",
+  "epoxy-flooring/heavy-duty-mortar-screed",
+  "epoxy-flooring/epoxy-floor-repair-and-recoating",
 ];
 
 function checkBlock(key: string, locale: "ms" | "zh", b: SpecialtyLocaleBlock, issues: Issue[]) {

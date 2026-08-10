@@ -2792,6 +2792,240 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
     },
   },
 
+  /* ── EPOXY FLOORING ─────────────────────────────────────────────── */
+  "epoxy-flooring/self-levelling-epoxy-floor": {
+    ms: {
+      name: "Lantai Epoxy Rata-Sendiri",
+      tagline: "Salutan epoxy rata-sendiri licin cermin 2–3mm untuk lantai kediaman, bilik pameran dan komersial ringan.",
+      description:
+        "Lantai epoxy rata-sendiri (self-levelling) menghasilkan permukaan licin seperti cermin pada ketebalan 2–3mm, ideal untuk kediaman moden, bilik pameran kereta, butik dan ruang komersial ringan. Selepas pengisaran intan substrat konkrit, lapisan epoxy cecair dituang dan merebak sendiri ke ketebalan yang sekata tanpa kesan roller. Hasilnya lantai yang mudah dibersihkan, tahan calar, tahan kimia dan kelihatan premium. Sesuai untuk garaj rumah, studio, lobi dan dapur basah yang mahukan kemasan minimalis yang bersih. Setiap kerja termasuk primer menembus, lapisan badan rata-sendiri dan topcoat polyurethane alifatik stabil UV untuk ketahanan jangka panjang.",
+      highlights: [
+        "Ketebalan seragam 2–3mm tanpa kesan roller atau calarkan untuk kemasan licin cermin",
+        "Mudah dibersihkan dan tahan noda — sesuai untuk dapur basah dan bilik pameran",
+        "Permukaan rata-sendiri meliputi retakan halus dan ketidakrataan konkrit",
+        "Topcoat polyurethane alifatik stabil UV — tidak menguning di bawah cahaya matahari",
+        "Selesai dalam 3–4 hari dengan gangguan minimum kepada penghuni",
+      ],
+      process: [
+        { step: "01", title: "Penilaian Substrat", desc: "Kami memeriksa konkrit untuk lembapan, minyak, retakan dan profil permukaan, serta menjalankan ujian lembapan kalsium klorida jika perlu." },
+        { step: "02", title: "Pengisaran Intan", desc: "Pengisar intan walk-behind mencapai profil CSP 3–4; retakan dibuka dan diisi dengan mortar epoxy." },
+        { step: "03", title: "Penyapuan Primer", desc: "Primer epoxy menembus disapu dengan roller untuk ikatan kimia maksimum; dibiarkan kering 12–24 jam." },
+        { step: "04", title: "Lapisan Rata-Sendiri", desc: "Epoxy rata-sendiri dituang dan disebarkan dengan trowel bergerigi supaya merebak sendiri ke ketebalan sekata." },
+        { step: "05", title: "Topcoat & Pengeringan", desc: "Lebihan dikikis, kemudian topcoat polyurethane alifatik disapu dua lapisan untuk rintangan calar dan kimia." },
+      ],
+      faqs: [
+        { q: "Berapa lama lantai epoxy rata-sendiri mengambil masa untuk dipasang?", a: "Projek garaj atau bilik pameran kediaman (300–500 kaki persegi) biasanya mengambil 3–4 hari termasuk pengisaran, primer, lapisan badan dan topcoat. Trafik kaki dibenarkan selepas 24 jam, kenderaan selepas 72 jam, dan rintangan kimia penuh selepas 7 hari." },
+        { q: "Adakah lantai ini sesuai untuk dapur basah?", a: "Ya. Permukaan licin cermin mudah dilap dan tahan kepada tumpahan air serta bahan dapur. Untuk kawasan yang sangat licin bila basah, kami boleh menambah additive halus untuk cengkaman tambahan." },
+        { q: "Bolehkah epoxy rata-sendiri menutup retakan lantai?", a: "Lapisan rata-sendiri mengisi ketidakrataan dan retakan halus semasa merebak sendiri. Retakan struktur besar akan dibuka dan diisi dengan mortar epoxy dahulu sebelum lapisan badan disapu." },
+        { q: "Adakah ia akan menguning di bawah cahaya matahari?", a: "Tidak. Kami sentiasa menutup dengan topcoat polyurethane alifatik stabil UV (Sika, BASF atau RPM) yang kekal jernih 10+ tahun walaupun di beranda kereta terdedah matahari." },
+      ],
+      metaTitle: "Lantai Epoxy Rata-Sendiri KL & Selangor | Harga Dari RM22/sq ft",
+      metaDesc: "Lantai epoxy rata-sendiri licin cermin 2–3mm untuk kediaman, bilik pameran dan komersial ringan di KL & Selangor. Mudah dibersihkan, tahan kimia, topcoat UV-stabil. Sebut harga percuma di WhatsApp.",
+    },
+    zh: {
+      name: "自流平环氧地坪",
+      tagline: "2–3毫米镜面光滑的自流平环氧涂层，适用于住宅、展厅与轻型商业地面。",
+      description:
+        "自流平环氧地坪在2–3毫米厚度上呈现镜面般光滑的表面，非常适合现代住宅、汽车展厅、精品店及轻型商业空间。经过混凝土基面金刚石打磨后，液态环氧涂料被倾倒并自动流平至均匀厚度，不留下滚筒痕迹。最终地面易清洁、耐刮擦、耐化学腐蚀且外观高端。适用于追求极简洁净效果的住宅车库、工作室、大堂与湿区厨房。每道工序均包含渗透底漆、自流平中层与紫外稳定脂肪族聚氨酯面漆，以确保长久耐用。",
+      highlights: [
+        "2–3毫米均匀厚度，无滚筒痕与刮痕，呈现镜面效果",
+        "易清洁、抗污，适合湿区厨房与展厅",
+        "自流平层可覆盖细微裂缝与混凝土不平整",
+        "脂肪族聚氨酯紫外稳定面漆，日光下不发黄",
+        "3–4天完工，对住户打扰最小",
+      ],
+      process: [
+        { step: "01", title: "基面评估", desc: "我们检查混凝土是否受潮、油污、开裂及表面平整度，必要时进行氯化钙含水率测试。" },
+        { step: "02", title: "金刚石打磨", desc: "采用手推式金刚石打磨机达到CSP 3–4处理度，裂缝开槽并以环氧砂浆填补。" },
+        { step: "03", title: "涂刷底漆", desc: "滚涂渗透型环氧底漆以形成最大化学结合，静置固化12–24小时。" },
+        { step: "04", title: "自流平层", desc: "倾倒自流平环氧，用齿形镘刀摊铺，使其自动流平至均匀厚度。" },
+        { step: "05", title: "面漆与固化", desc: "铲除多余物料后，涂刷两道脂肪族聚氨酯面漆，提供抗刮与抗化学性能。" },
+      ],
+      faqs: [
+        { q: "自流平环氧地坪安装需要多长时间？", a: "一般住宅车库或展厅项目（300–500平方英尺）约需3–4天，包括打磨、底漆、中层与面漆。24小时后可步行，72小时后可行车，7天后达到完全耐化学性。" },
+        { q: "这种地面适合湿区厨房吗？", a: "适合。镜面光滑表面易于擦拭，并能抵抗水渍与厨房油污。若用于极易湿滑区域，我们可添加细颗粒助剂以提升防滑性。" },
+        { q: "自流平环氧能遮盖地面裂缝吗？", a: "自流平层在流动时可填补细微不平与裂缝。较大结构性裂缝会先开槽并用环氧砂浆填补，再涂中层。" },
+        { q: "它在阳光下会发黄吗？", a: "不会。我们始终以紫外稳定脂肪族聚氨酯面漆（Sika、BASF或RPM）罩面，即使在曝晒的车棚下也能保持清澈10年以上。" },
+      ],
+      metaTitle: "吉隆坡自流平环氧地坪 | RM22/sq ft起",
+      metaDesc: "吉隆坡与雪兰莪2–3毫米镜面自流平环氧地坪，适用于住宅、展厅与轻型商业。易清洁、耐化学、紫外稳定面漆。WhatsApp免费报价。",
+    },
+  },
+  "epoxy-flooring/flake-quartz-broadcast-epoxy": {
+    ms: {
+      name: "Epoxy Taburan Flake / Kuarza",
+      tagline: "Salutan epoxy hiasan dengan taburan flake vinil atau kuarza berwarna, kemasan rintangan gelincir untuk garaj dan dapur.",
+      description:
+        "Epoxy taburan flake atau kuarza ialah sistem salutan hiasan yang menggabungkan keindahan dengan kefungsian. Semasa lapisan badan epoxy masih basah, kepingan flake vinil atau kuarza berwarna ditabur tangan ke penolakan penuh, mencipta tekstur visual yang unik dan kemasan rintangan gelincir (P4–P5). Sesuai untuk garaj kediaman, dapur komersial, dek kolam dan laluan luar yang kerap basah. Sistem ini menyembunyikan calar kecil dan kotoran dengan lebih baik daripada epoxy licin cermin, sambil mengekalkan lantai yang mudah dibersihkan dan tahan kimia. Setiap pemasangan termasuk pengisaran intan, primer, taburan badan dan topcoat polyurethane alifatik dua lapisan.",
+      highlights: [
+        "Kemasan rintangan gelincir P4–P5 — selamat untuk garaj dan dapur basah",
+        "Corak flake hiasan unik menutup calar dan kotoran halus",
+        "Pilihan warna flake dan kuarza disesuaikan dengan tema rumah",
+        "Mudah dibersihkan dan tahan kimia seperti sistem epoxy lain",
+        "Topcoat UV-stabil — warna flake tidak pudar di bawah matahari",
+      ],
+      process: [
+        { step: "01", title: "Penilaian Substrat", desc: "Kami memeriksa konkrit untuk lembapan, minyak, retakan dan profil permukaan sebelum kerja bermula." },
+        { step: "02", title: "Pengisaran Intan", desc: "Pengisar intan walk-behind mencapai profil CSP 3–4; retakan dibuka dan diisi dengan mortar epoxy." },
+        { step: "03", title: "Penyapuan Primer", desc: "Primer epoxy menembus disapu dengan roller untuk ikatan kimia maksimum; dibiarkan kering 12–24 jam." },
+        { step: "04", title: "Taburan Badan", desc: "Lapisan epoxy dituang dan disebarkan, kemudian flake vinil atau kuarza berwarna ditabur tangan ke penolakan penuh ke dalam lapisan basah." },
+        { step: "05", title: "Topcoat & Pengeringan", desc: "Lebihan flake dikikis dan divakum, diikuti dua lapisan topcoat polyurethane alifatik untuk rintangan calar dan kimia." },
+      ],
+      faqs: [
+        { q: "Adakah lantai epoxy flake selamat apabila basah?", a: "Ya. Sistem taburan flake dengan additive kasar halus mencapai penarafan gelincir P4–P5 (AS/NZS 4586), menjadikannya selamat untuk dapur, garaj dan dek kolam yang kerap basah tanpa mengorbankan kebolehbersihan." },
+        { q: "Bolehkah saya memilih warna flake?", a: "Ya. Kami menawarkan pelbagai kombinasi warna flake vinil dan kuarza berwarna yang boleh dipadankan dengan tema kediaman atau jenama perniagaan anda." },
+        { q: "Berapa lama ia tahan?", a: "Dengan topcoat polyurethane alifatik dua lapisan, lantai kekal tahan lasak dan warna flake kekal ceria 10+ tahun walaupun di kawasan terdedah matahari." },
+        { q: "Adakah ia menyembunyikan calar lantai?", a: "Ya. Corak flake hiasan memecahkan cahaya dan menyembunyikan calar kecil serta kotoran dengan lebih baik berbanding epoxy licin cermin." },
+      ],
+      metaTitle: "Epoxy Taburan Flake / Kuarza KL & Selangor | Harga Dari RM26/sq ft",
+      metaDesc: "Epoxy taburan flake atau kuarza berwarna dengan kemasan rintangan gelincir untuk garaj dan dapur di KL & Selangor. Hiasan, selamat dan tahan lama. Sebut harga percuma di WhatsApp.",
+    },
+    zh: {
+      name: "片材/石英砂抛洒环氧地坪",
+      tagline: "装饰性乙烯基片材或彩色石英砂抛洒，防滑饰面，适用于车库与厨房。",
+      description:
+        "片材（flake）或石英砂抛洒环氧系统将美观与功能结合。在环氧中层仍处于湿润状态时，手工将彩色乙烯基片材或石英砂满撒至饱合，形成独特视觉纹理与防滑饰面（P4–P5）。适用于住宅车库、商业厨房、泳池甲板及常湿的外走道。相比镜面环氧，该系统更能隐藏细微划痕与污渍，同时保持易清洁与耐化学腐蚀。每道工序包含金刚石打磨、底漆、抛洒中层与两道脂肪族聚氨酯面漆。",
+      highlights: [
+        "P4–P5防滑饰面，车库与湿区厨房更安全",
+        "独特片材纹理隐藏细微划痕与污渍",
+        "片材与石英砂颜色可配合家居主题定制",
+        "与其他环氧系统同样易清洁、耐化学",
+        "紫外稳定面漆，片材颜色日晒不褪",
+      ],
+      process: [
+        { step: "01", title: "基面评估", desc: "我们检查混凝土是否受潮、油污、开裂及表面平整度，开工前做好评估。" },
+        { step: "02", title: "金刚石打磨", desc: "手推式金刚石打磨机达到CSP 3–4处理度，裂缝开槽并以环氧砂浆填补。" },
+        { step: "03", title: "涂刷底漆", desc: "滚涂渗透型环氧底漆以形成最大化学结合，静置固化12–24小时。" },
+        { step: "04", title: "抛洒中层", desc: "倾倒并摊铺环氧中层，随后将彩色乙烯基片材或石英砂手工满撒至湿润涂层中。" },
+        { step: "05", title: "面漆与固化", desc: "铲除并吸除多余片材，再涂两道脂肪族聚氨酯面漆，提供抗刮与抗化学性能。" },
+      ],
+      faqs: [
+        { q: "片材环氧地面湿滑时安全吗？", a: "安全。配合细颗粒助剂的片材抛洒系统可达P4–P5防滑等级（AS/NZS 4586），即使厨房、车库与泳池甲板常湿也安全，且不牺牲易清洁性。" },
+        { q: "我可以选择片材颜色吗？", a: "可以。我们提供多种乙烯基片材与彩色石英砂配色，可配合您的家居主题或品牌色调。" },
+        { q: "它能用多久？", a: "采用两道脂肪族聚氨酯面漆罩面，地面耐磨且片材颜色可保持鲜亮10年以上，即使在曝晒区域亦然。" },
+        { q: "它能遮盖地面划痕吗？", a: "能。装饰性片材纹理可打散光线，比镜面环氧更能隐藏细微划痕与污渍。" },
+      ],
+      metaTitle: "吉隆坡片材/石英砂抛洒环氧地坪 | RM26/sq ft起",
+      metaDesc: "吉隆坡与雪兰莪片材或彩色石英砂抛洒环氧地坪，防滑饰面，适用于车库与厨房。美观、安全、耐用。WhatsApp免费报价。",
+    },
+  },
+  "epoxy-flooring/heavy-duty-mortar-screed": {
+    ms: {
+      name: "Mortar Screed Tugas Berat",
+      tagline: "Mortar epoxy sapuan trowel 5–10mm untuk gudang, kilang dan zon trafik forklift.",
+      description:
+        "Mortar screed tugas berat ialah sistem salutan epoxy paling tebal (5–10mm) yang direka untuk lantai industri dengan trafik berat — gudang, kilang, pusat logistik dan zon laluan forklift. Campuran mortar epoxy bergred tinggi disapu dengan trowel tangan untuk menghasilkan permukaan padu yang tahan hentaman, tahan calar dan tahan kimia agresif. Sesuai untuk kawasan yang menerima jatuhan alatan berat, pergerakan palet besi dan penggunaan troli industri. Sistem ini juga bertindak sebagai perapat kelembapan pada konkrit baharu. Setiap kerja termasuk pengisaran intan, primer tebusan kelembapan, sapuan mortar dan topcoat polyurethane alifatik dua lapisan.",
+      highlights: [
+        "Ketebalan 5–10mm menahan impak alatan berat dan trafik forklift",
+        "Rintangan kimia agresif untuk kilang dan gudang",
+        "Permukaan padu tanpa sambungan lemah untuk lantai industri",
+        "Berfungsi sebagai perapat kelembapan pada konkrit baharu",
+        "Topcoat UV-stabil tahan calar untuk laluan trak",
+      ],
+      process: [
+        { step: "01", title: "Penilaian Substrat", desc: "Kami mengukur kekuatan konkrit, kelembapan dan beban trafik untuk memilih ketebalan mortar 5–10mm yang sesuai." },
+        { step: "02", title: "Pengisaran Intan", desc: "Pengisar intan mencapai profil CSP 3–4; retakan dan lompang diisi dengan mortar epoxy." },
+        { step: "03", title: "Primer Tebusan Kelembapan", desc: "Primer epik khas disapu untuk menghalang kelembapan naik pada konkrit baharu atau lembap." },
+        { step: "04", title: "Sapuan Mortar", desc: "Mortar epoxy bergred tinggi disapu dengan trowel tangan ke ketebalan 5–10mm yang seragam." },
+        { step: "05", title: "Topcoat & Pengeringan", desc: "Selepas kering, dua lapisan topcoat polyurethane alifatik disapu untuk rintangan calar dan kimia maksimum." },
+      ],
+      faqs: [
+        { q: "Berapa tebal mortar screed tugas berat?", a: "Ketebalan dipilih antara 5–10mm bergantung pada beban — 6mm untuk laluan forklift ringan, sehingga 10mm untuk zon jatuhan alatan berat dan trafik berat berterusan. Ketebalan disahkan semasa lawatan tapak." },
+        { q: "Bolehkah ia dipasang ke atas konkrit baharu?", a: "Ya. Kami menggunakan primer tebusan kelembapan supaya mortar boleh disapu ke atas konkrit baharu sebaik sahaja ia cukup keras, bertindak sebagai perapat kelembapan." },
+        { q: "Adakah ia tahan kimia kilang?", a: "Ya. Sistem mortar screed dengan topcoat polyurethane alifatik menahan minyak, pelarut dan bahan kimia industri dengan baik, sesuai untuk lantai kilang dan gudang." },
+        { q: "Berapa lama sebelum forklift boleh digunakan semula?", a: "Kenderaan berat dibenarkan selepas 72 jam; trafik forklift berterusan disyorkan selepas 7 hari apabila rintangan kimia penuh tercapai." },
+      ],
+      metaTitle: "Mortar Screed Tugas Berat KL & Selangor | Harga Dari RM38/sq ft",
+      metaDesc: "Mortar screed epoxy tugas berat 5–10mm untuk gudang, kilang dan zon forklift di KL & Selangor. Tahan impak, tahan kimia, perapat kelembapan. Sebut harga percuma di WhatsApp.",
+    },
+    zh: {
+      name: "重型环氧砂浆镘涂",
+      tagline: "5–10毫米手工镘涂环氧砂浆，适用于仓库、工厂与叉车通道。",
+      description:
+        "重型环氧砂浆镘涂是最厚的环氧系统（5–10毫米），专为承受重型交通的工业地面设计——仓库、工厂、物流中心与叉车通道。高标号环氧砂浆以手工镘刀摊铺，形成坚固、抗冲击、耐刮擦并能抵御强化学腐蚀的整体表面。适用于重型工具坠落、钢制托盘搬运与工业推车频繁使用的区域，也可作为新混凝土防潮层。每道工序包含金刚石打磨、防潮底漆、砂浆镘涂与两道脂肪族聚氨酯面漆。",
+      highlights: [
+        "5–10毫米厚度，承受重型工具冲击与叉车交通",
+        "抗强化学腐蚀，适合工厂与仓库",
+        "整体无缝表面，无薄弱接缝",
+        "可作为新混凝土防潮层",
+        "紫外稳定抗刮面漆，适用于车道",
+      ],
+      process: [
+        { step: "01", title: "基面评估", desc: "我们测量混凝土强度、含水率与交通荷载，以选择5–10毫米合适厚度。" },
+        { step: "02", title: "金刚石打磨", desc: "金刚石打磨至CSP 3–4处理度，裂缝与空鼓以环氧砂浆填补。" },
+        { step: "03", title: "防潮底漆", desc: "涂刷专用环氧底漆，阻隔新浇或潮湿混凝土返潮。" },
+        { step: "04", title: "砂浆镘涂", desc: "高标号环氧砂浆以手工镘刀摊铺至均匀5–10毫米厚度。" },
+        { step: "05", title: "面漆与固化", desc: "固化后涂两道脂肪族聚氨酯面漆，提供最大抗刮与抗化学性能。" },
+      ],
+      faqs: [
+        { q: "重型环氧砂浆有多厚？", a: "厚度在5–10毫米间按荷载选择：轻型叉车通道约6毫米，重型工具坠落与持续重载区可达10毫米，具体于现场勘察时确认。" },
+        { q: "可以在新混凝土上施工吗？", a: "可以。我们采用防潮底漆，待新混凝土达到足够硬度后即可镘涂砂浆，并兼作防潮层。" },
+        { q: "它能耐受工厂化学品吗？", a: "能。环氧砂浆配脂肪族聚氨酯面漆可良好抵御油品、溶剂与工业化学品，适合工厂与仓库地面。" },
+        { q: "叉车多久可重新通行？", a: "重型车辆72小时后可通行；建议7天达到完全耐化学性后再进行持续叉车作业。" },
+      ],
+      metaTitle: "吉隆坡重型环氧砂浆镘涂 | RM38/sq ft起",
+      metaDesc: "吉隆坡与雪兰莪5–10毫米重型环氧砂浆镘涂，适用于仓库、工厂与叉车通道。抗冲击、耐化学、防潮。WhatsApp免费报价。",
+    },
+  },
+  "epoxy-flooring/epoxy-floor-repair-and-recoating": {
+    ms: {
+      name: "Pembaikan & Salutan Semula Lantai Epoxy",
+      tagline: "Mengisar intan epoxy sedia ada, membaiki kawasan rosak dan menyapu primer + topcoat baharu.",
+      description:
+        "Jika lantai epoxy sedia ada mengelupas, merekah atau kusam, kami boleh menyelamatkannya tanpa mengalih keseluruhan lapisan. Proses bermula dengan pengisaran intan untuk membuang lapisan lama yang longgar dan mencapai profil yang kasar untuk lekatan baharu. Kawasan rosak — gelembung, retakan atau lubang — dibaiki dengan mortar epoxy sebelum primer menembus dan topcoat polyurethane alifatik baharu disapu. Ini memulihkan rupa licin cermin dan perlindungan kimia pada sebahagian kecil daripada kos pemasangan baharu. Sesuai untuk garaj, bilik pameran dan dapur yang epoxy asalnya masih melekat dengan baik pada konkrit.",
+      highlights: [
+        "Kos lebih rendah daripada pemasangan baharu sepenuhnya",
+        "Pengisaran intan membuang lapisan longgar dan mencapai lekatan baharu",
+        "Retakan, gelembung dan lubang dibaiki dengan mortar epoxy",
+        "Topcoat UV-stabil memulihkan kilauan cermin",
+        "Selesai lebih pantas dengan gangguan minimum",
+      ],
+      process: [
+        { step: "01", title: "Penilaian & Ujian Lekatan", desc: "Kami memeriksa epoxy sedia ada — retakan, gelembung, kawasan longgar — dan menguji lekatan pada konkrit." },
+        { step: "02", title: "Pengisaran Intan", desc: "Pengisar intan membuang lapisan lama yang longgar dan mencapai profil kasar untuk lekatan baharu." },
+        { step: "03", title: "Baiki Kawasan Rosak", desc: "Retakan, gelembung dan lubang diisi dengan mortar epoxy supaya permukaan rata sebelum salutan." },
+        { step: "04", title: "Primer Menembus", desc: "Primer epoxy disapu untuk mengikat lapisan lama dengan topcoat baharu." },
+        { step: "05", title: "Topcoat Baharu", desc: "Dua lapisan topcoat polyurethane alifatik disapu untuk memulihkan rintangan calar dan kimia." },
+      ],
+      faqs: [
+        { q: "Bilakah lantai epoxy perlu disalut semula?", a: "Apabila ia menunjukkan pengelupasan, retakan, gelembung atau kilauan pudar, biasanya selepas 7–10 tahun penggunaan. Jika epoxy asal masih melekat erat pada konkrit, penyambungan semula jauh lebih menjimatkan daripada pasang baharu." },
+        { q: "Bolehkah epoxy lama yang menguning diselamatkan?", a: "Ya. Kami mengisar intan lapisan lama, membaiki kerosakan, kemudian menyapu topcoat polyurethane alifatik stabil UV yang jernih — mengembalikan rupa baharu tanpa menguning." },
+        { q: "Adakah perlu mengalih jubin atau lapisan lama?", a: "Tidak untuk epoxy sedia ada. Kami mengisar dan menyambung terus di atasnya. Jika ada jubin asas, ia perlu dibuang dahulu supaya epoxy melekat pada konkrit." },
+        { q: "Berapa cepat ia boleh digunakan semula?", a: "Kebanyakan kerja penyambungan semula selesai dalam 2–3 hari; trafik kaki selepas 24 jam, kenderaan selepas 72 jam." },
+      ],
+      metaTitle: "Pembaikan & Salutan Semula Lantai Epoxy KL & Selangor | Dari RM14/sq ft",
+      metaDesc: "Pembaikan dan salutan semula lantai epoxy di KL & Selangor. Pengisaran intan, baiki retakan/gelembung, topcoat UV-stabil. Lebih menjimatkan daripada pasang baharu. Sebut harga percuma di WhatsApp.",
+    },
+    zh: {
+      name: "环氧地坪修补与重涂",
+      tagline: "金刚石打磨旧环氧，修补损坏区域并重涂底漆与面漆。",
+      description:
+        "若既有环氧地面出现起皮、开裂或失去光泽，我们可在不铲除整层的情况下修复。流程始于金刚石打磨，去除松动旧层并形成粗糙处理度以利新层附着。损坏区域——气泡、裂缝或孔洞——以环氧砂浆修补后，再涂渗透底漆与新的脂肪族聚氨酯面漆。这能以远低于重新施工的成本恢复镜面外观与化学防护，适用于原有环氧仍与混凝土附着良好的车库、展厅与厨房。",
+      highlights: [
+        "成本远低于整体重新施工",
+        "金刚石打磨去除松动层并形成新附着力",
+        "裂缝、气泡与孔洞以环氧砂浆修补",
+        "紫外稳定面漆恢复镜面光泽",
+        "完工更快、打扰更小",
+      ],
+      process: [
+        { step: "01", title: "评估与附着测试", desc: "我们检查既有环氧的裂缝、气泡与松动区域，并测试其与混凝土的附着力。" },
+        { step: "02", title: "金刚石打磨", desc: "金刚石打磨去除松动旧层，形成粗糙处理度以利新附着。" },
+        { step: "03", title: "修补损坏区", desc: "以环氧砂浆填补裂缝、气泡与孔洞，使表面平整后再涂覆。" },
+        { step: "04", title: "渗透底漆", desc: "涂刷环氧底漆，使旧层与新面漆结合。" },
+        { step: "05", title: "新面漆", desc: "涂两道脂肪族聚氨酯面漆，恢复抗刮与抗化学性能。" },
+      ],
+      faqs: [
+        { q: "环氧地坪何时需要重涂？", a: "当出现起皮、开裂、气泡或光泽褪去，通常使用7–10年后。若原环氧仍牢固附着于混凝土，重涂远比新做划算。" },
+        { q: "发黄的旧环氧能救吗？", a: "能。我们打磨旧层、修补损坏，再罩以清澈的紫外稳定脂肪族聚氨酯面漆，恢复如新且不发黄。" },
+        { q: "需要铲除瓷砖或旧层吗？", a: "既有环氧无需铲除，可直接打磨重涂。若底层为瓷砖，则需先铲除以使环氧附着混凝土。" },
+        { q: "多久可重新使用？", a: "多数重涂工程2–3天完工；24小时后可步行，72小时后可行车。" },
+      ],
+      metaTitle: "吉隆坡环氧地坪修补与重涂 | RM14/sq ft起",
+      metaDesc: "吉隆坡与雪兰莪环氧地坪修补与重涂。金刚石打磨、补裂缝气泡、紫外稳定面漆。比重新施工更省。WhatsApp免费报价。",
+    },
+  },
+
 };
 
 /**
