@@ -1404,6 +1404,233 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
     },
   },
 
+  /* ── ELECTRICAL ───────────────────────────────────────────────────────── */
+  "electrical/new-power-point-and-switch-installation": {
+    ms: {
+      name: "Pemasangan Power Point & Suis Baharu",
+      tagline: "Tambah soket 13A, outlet USB, suis dan dimmer pada kediaman atau pejabat dengan pendawaian yang kemas, berlabel dan selamat.",
+      description:
+        "Perkhidmatan ini sesuai untuk rumah yang kekurangan soket, bilik kerja yang memerlukan lebih banyak outlet, atau ruang yang perlu suis baharu serta kawalan dimmer. Juruelektrik kami menyemak beban litar sedia ada, memilih kedudukan soket yang praktikal, dan menjalankan pendawaian menggunakan konduit atau trunking yang kemas. Setiap pemasangan termasuk ujian kekutuban, pembumian dan operasi RCD sebelum serahan. Untuk kondominium, kami menyelaraskan waktu kerja serta perlindungan lif dan kawasan umum mengikut peraturan pengurusan bangunan.",
+      highlights: [
+        "Soket 13A, outlet USB, suis double-pole dan dimmer",
+        "Semakan beban litar sebelum menambah outlet baharu",
+        "Pendawaian dalam konduit atau trunking yang kemas",
+        "Ujian kekutuban, pembumian dan trip RCD",
+        "Pelabelan litar serta pembersihan kawasan kerja",
+      ],
+      process: [
+        { step: "01", title: "Semakan Tapak", desc: "Kami menyemak lokasi suis, jarak ke DB box dan sama ada litar sedia ada mampu menampung outlet baharu." },
+        { step: "02", title: "Perancangan Litar", desc: "Kedudukan soket, laluan kabel dan keperluan litar baharu diterangkan sebelum penggerudian dimulakan." },
+        { step: "03", title: "Pemasangan", desc: "Kabel ditarik dengan kemas, aksesori dipasang rata, dan sambungan ditebat serta diketatkan mengikut standard." },
+        { step: "04", title: "Ujian & Serahan", desc: "Kami menguji setiap soket, suis dan perlindungan RCD, kemudian melabel litar dan membersihkan kawasan kerja." },
+      ],
+      faqs: [
+        { q: "Berapa harga tambah satu power point?", a: "Harga bermula dari RM150 setiap point untuk pemasangan standard. Sebut harga akhir bergantung pada jarak pendawaian, jenis aksesori dan sama ada litar baharu diperlukan." },
+        { q: "Bolehkah soket sedia ada ditukar ke soket USB?", a: "Ya, banyak soket 13A boleh ditukar kepada unit dengan port USB, tetapi kami akan semak kedalaman kotak dan pendawaian pembumian terlebih dahulu." },
+        { q: "Perlukah litar baharu untuk beberapa soket tambahan?", a: "Ia bergantung pada beban sedia ada. Jika litar semula hampir had, kami akan cadangkan litar baharu supaya penggunaan lebih selamat." },
+        { q: "Adakah kerja ini sesuai untuk kondominium?", a: "Ya. Kami biasa membuat kerja elektrik di kondominium dan boleh menyelaraskan permit, waktu kerja serta perlindungan lif jika diperlukan." },
+      ],
+      metaTitle: "Pemasangan Power Point & Suis KL | Dari RM150",
+      metaDesc: "Tambah soket 13A, USB outlet, suis dan dimmer di KL & Selangor. Semakan beban litar, pemasangan kemas, ujian RCD dan sebut harga telus.",
+    },
+    zh: {
+      name: "新增插座与开关安装",
+      tagline: "为住宅或办公室增加13A插座、USB插座、开关与调光器，走线整齐、标签清晰且通过安全测试。",
+      description:
+        "当家中插座不足、工作室需要更多取电点，或空间需要新增开关与调光控制时，这项服务最适合。我们的电工会先检查现有回路负荷，确认插座位置，并以线管或明线槽完成整齐布线。每个安装点都会进行极性、接地和漏电保护器动作测试后才交付。公寓项目也可配合管理处规定，安排施工时间、电梯保护和公共区域防护。",
+      highlights: [
+        "安装13A插座、USB插座、双极开关和调光器",
+        "施工前检查现有回路负荷",
+        "线管或明线槽走线，外观整齐",
+        "进行极性、接地与RCD跳闸测试",
+        "回路贴标签并清理施工现场",
+      ],
+      process: [
+        { step: "01", title: "现场检查", desc: "检查开关位置、配电箱距离，以及现有回路是否能承受新增插座。" },
+        { step: "02", title: "回路规划", desc: "在钻孔前说明插座位置、走线方向和是否需要新设回路。" },
+        { step: "03", title: "安装接线", desc: "电缆整齐拉设，配件安装平直，端子按规范紧固并做好绝缘。" },
+        { step: "04", title: "测试交付", desc: "逐个测试插座、开关和RCD保护，贴好回路标签并清理现场。" },
+      ],
+      faqs: [
+        { q: "加一个插座多少钱？", a: "标准安装从RM150/位起。最终报价取决于走线距离、配件款式，以及是否需要新增回路。" },
+        { q: "旧插座可以换成USB插座吗？", a: "可以，多数13A插座可换成带USB端口的款式，但我们会先检查底盒深度和接地接线。" },
+        { q: "多加几个插座需要新回路吗？", a: "要看现有负荷。如果原回路已接近上限，为了安全我们会建议增设新回路。" },
+        { q: "公寓可以施工吗？", a: "可以。我们熟悉公寓电工流程，可配合办理施工许可、施工时段和电梯保护。" },
+      ],
+      metaTitle: "吉隆坡新增插座与开关安装 | RM150起",
+      metaDesc: "吉隆坡与雪兰莪13A插座、USB插座、开关和调光器安装。检查回路负荷，走线整齐，完成RCD测试并透明报价。",
+    },
+  },
+  "electrical/db-box-upgrade-and-rewiring": {
+    ms: {
+      name: "Naik Taraf DB Box & Pendawaian Semula",
+      tagline: "Ganti kotak fius lama dengan papan agihan MCB/RCCB moden dan tingkatkan pendawaian rumah lama untuk keselamatan jangka panjang.",
+      description:
+        "Rumah lama dengan kotak fius, wayar getah atau soket tanpa pembumian mempunyai risiko terlalu panas dan kebakaran elektrik. Perkhidmatan ini merangkumi audit beban, naik taraf DB box kepada MCB dan RCCB yang sesuai, serta pendawaian semula separa atau penuh mengikut keadaan rumah. Kami menyelaraskan pemotongan bekalan jika perlu, melabel setiap litar, dan menjalankan ujian rintangan penebat, kekutuban, kesinambungan bumi serta masa trip RCD. Anda akan menerima penerangan jelas tentang skop sebelum kerja dimulakan.",
+      highlights: [
+        "Naik taraf kotak fius kepada DB box MCB/RCCB moden",
+        "Audit beban untuk rumah teres, banglo dan unit komersial ringan",
+        "Pendawaian semula penuh atau separa mengikut keadaan sebenar",
+        "Ujian rintangan penebat, kekutuban, bumi dan RCD",
+        "Pelabelan litar yang jelas untuk penyelenggaraan masa depan",
+      ],
+      process: [
+        { step: "01", title: "Pemeriksaan & Audit", desc: "Kami memeriksa DB box, jenis kabel, soket, pembumian dan jumlah beban yang dijangka." },
+        { step: "02", title: "Cadangan & Sebut Harga", desc: "Skop naik taraf, kapasiti pemutus, laluan kabel dan anggaran gangguan bekalan diterangkan secara bertulis." },
+        { step: "03", title: "Pemasangan DB & Kabel", desc: "DB box baharu dipasang, kabel usang diganti, dan setiap litar ditamatkan dengan kemas." },
+        { step: "04", title: "Ujian & Rekod", desc: "Kami menjalankan ujian elektrik, melabel litar, dan menyerahkan rekod ujian asas untuk simpanan anda." },
+      ],
+      faqs: [
+        { q: "Bilakah rumah perlu pendawaian semula?", a: "Antara tanda biasa ialah kabel getah lama, DB box tanpa RCCB, soket dua pin tanpa bumi, kerap trip, atau kesan hangus pada soket dan suis." },
+        { q: "Berapa lama naik taraf DB box mengambil masa?", a: "Banyak kerja naik taraf mengambil masa 4 hingga 8 jam, tetapi pendawaian semula penuh rumah boleh mengambil beberapa hari bergantung pada saiz dan akses." },
+        { q: "Adakah bekalan elektrik akan terputus sepanjang kerja?", a: "Akan ada tempoh pemotongan ketika sambungan akhir. Kami akan memaklumkan jadualnya dan boleh menyelaraskan dengan TNB atau pengurusan bangunan jika perlu." },
+        { q: "Adakah anda memberikan rekod ujian?", a: "Ya, kami akan menunjukkan keputusan ujian asas seperti rintangan penebat, kekutuban, pembumian dan trip RCD selepas siap." },
+      ],
+      metaTitle: "Naik Taraf DB Box & Pendawaian Semula KL | RM2,200",
+      metaDesc: "Ganti kotak fius lama dengan DB box MCB/RCCB dan pendawaian semula di KL & Selangor. Audit beban, ujian penebat serta rekod ujian asas disediakan.",
+    },
+    zh: {
+      name: "配电箱升级与重新布线",
+      tagline: "将老旧保险丝盒更换为现代MCB/RCCB配电箱，并按老房状况进行局部或全屋重新布线。",
+      description:
+        "老房子若仍使用保险丝盒、橡胶电线或无接地插座，会有过热和电气火灾风险。这项服务包括负荷审计、将配电箱升级为合适的MCB和RCCB，并根据现场情况进行局部或全屋重新布线。必要时我们会协调停电，为每个回路贴标签，并进行绝缘电阻、极性、接地连续性和RCD跳闸时间测试。施工前会清楚说明范围、停电时间和报价。",
+      highlights: [
+        "保险丝盒升级为现代MCB/RCCB配电箱",
+        "为排屋、洋房和轻商业空间进行负荷审计",
+        "按现场情况进行全屋或局部重新布线",
+        "绝缘电阻、极性、接地和RCD测试",
+        "清晰回路标签，方便日后维修",
+      ],
+      process: [
+        { step: "01", title: "检查与审计", desc: "检查配电箱、电线类型、插座、接地状况和预计总负荷。" },
+        { step: "02", title: "方案与报价", desc: "以书面说明升级范围、断路器容量、走线路径和预计停电时间。" },
+        { step: "03", title: "配电箱与线缆施工", desc: "安装新配电箱，更换老化线缆，并将各回路整齐接线。" },
+        { step: "04", title: "测试与记录", desc: "完成电气测试、贴上回路标签，并提供基本测试记录供您保存。" },
+      ],
+      faqs: [
+        { q: "什么情况下需要重新布线？", a: "常见征兆包括老旧橡胶电线、配电箱没有RCCB、两脚插座无接地、频繁跳闸，或插座开关有烧焦痕迹。" },
+        { q: "配电箱升级需要多久？", a: "一般升级约需4至8小时；若全屋重新布线，则可能需要数天，取决于房屋面积和施工入口。" },
+        { q: "施工期间会整天停电吗？", a: "最终接线阶段会停电。我们会提前告知时间，并在需要时与TNB或管理处协调。" },
+        { q: "会提供测试记录吗？", a: "会。完工后我们会说明绝缘电阻、极性、接地和RCD跳闸等基本测试结果。" },
+      ],
+      metaTitle: "吉隆坡配电箱升级与重新布线 | RM2,200起",
+      metaDesc: "吉隆坡与雪兰莪老旧保险丝盒升级、MCB/RCCB配电箱和重新布线。包含负荷审计、绝缘测试、接地测试和基本测试记录。",
+    },
+  },
+  "electrical/lighting-point-and-downlight-installation": {
+    ms: {
+      name: "Pemasangan Titik Lampu & Downlight",
+      tagline: "Pasang downlight LED, titik pendant, lampu trek dan suis lampu dengan kedudukan yang sekata serta pendawaian yang selamat.",
+      description:
+        "Pemasangan lampu yang baik memerlukan perancangan kedudukan, kapasiti litar dan jenis siling. Kami membantu menambah downlight LED, titik lampu pendant, trek lampu, serta suis kawalan yang sepadan. Sebelum memotong siling plaster atau papan gypsum, pasukan kami menyemak kedudukan penyokong dan kabel sedia ada. Semua penyambungan dibuat dalam kotak sambungan yang sesuai, dan lampu diuji untuk flicker, kecerahan serta kestabilan. Perkhidmatan ini sesuai untuk rumah, pejabat kecil dan ruang runcit yang mahukan pencahayaan lebih moden.",
+      highlights: [
+        "Downlight LED, pendant, trek lampu dan suis berkaitan",
+        "Semakan struktur siling dan kabel sedia ada sebelum memotong",
+        "Pendawaian tersembunyi menggunakan kotak sambungan yang sesuai",
+        "Ujian kecerahan, flicker dan kestabilan lampu",
+        "Kemasan kemas pada siling plaster atau gypsum",
+      ],
+      process: [
+        { step: "01", title: "Reka Letak Cahaya", desc: "Kami menandakan kedudukan lampu mengikut susun atur bilik, jarak siling dan keutamaan kecerahan anda." },
+        { step: "02", title: "Semakan Siling", desc: "Kedudukan penyokong, kabel dan ruang belakang siling diperiksa sebelum lubang dipotong." },
+        { step: "03", title: "Pendawaian & Pemasangan", desc: "Kabel ditarik ke titik lampu, pemandu LED disambung dengan selamat, dan kelengkapan dipasang rata." },
+        { step: "04", title: "Ujian & Kemasan", desc: "Setiap lampu dan suis diuji, kemudian kawasan kerja dibersihkan dan kemasan siling diperiksa." },
+      ],
+      faqs: [
+        { q: "Berapa harga pasang satu downlight?", a: "Harga bermula dari RM120 setiap titik untuk pemasangan standard. Harga bergantung pada jenis lampu, ketinggian siling dan keperlukan pendawaian baharu." },
+        { q: "Bolehkah downlight sedia ada ditukar kepada LED?", a: "Ya, selalunya boleh. Kami akan semak saiz lubang, ruang belakang siling dan sama ada pemandu LED lama serasi." },
+        { q: "Adakah anda membekalkan lampu atau hanya pasang?", a: "Kami boleh membekalkan lampu atau memasang unit yang anda sediakan, tertakluk pada kesesuaian teknikal dan jaminan produk." },
+        { q: "Adakah pemasangan akan merosakkan siling?", a: "Kami memotong hanya pada kedudukan yang dipersetujui dan menggunakan kemasan yang sesuai. Jika pembaikan plaster diperlukan, ia akan disebut terlebih dahulu." },
+      ],
+      metaTitle: "Pasang Downlight & Titik Lampu KL | Dari RM120",
+      metaDesc: "Pemasangan downlight LED, lampu pendant, trek lampu dan suis di KL & Selangor. Semakan siling, pendawaian selamat dan ujian lampu.",
+    },
+    zh: {
+      name: "照明与筒灯点位安装",
+      tagline: "安装LED筒灯、吊灯点位、轨道灯和灯光开关，位置均匀，接线安全，天花收口整齐。",
+      description:
+        "良好的灯光安装需要考虑点位、回路负荷和天花结构。我们可协助增设LED筒灯、吊灯点位、轨道灯及相应控制开关。在切割石膏或石膏板天花前，团队会检查龙骨和现有电线位置。所有接线均使用合适接线盒，并测试灯具闪烁、亮度和稳定性。这项服务适合想要提升现代照明效果的住宅、小型办公室和零售空间。",
+      highlights: [
+        "LED筒灯、吊灯、轨道灯及相关开关安装",
+        "切割前检查天花龙骨和现有电线",
+        "使用合适接线盒进行隐蔽接线",
+        "测试亮度、频闪和灯具稳定性",
+        "石膏或石膏板天花收口整齐",
+      ],
+      process: [
+        { step: "01", title: "灯光布局", desc: "根据房间格局、天花高度和亮度需求标记灯具位置。" },
+        { step: "02", title: "天花检查", desc: "确认龙骨、线缆和天花后部空间，再进行开孔。" },
+        { step: "03", title: "布线与安装", desc: "将线缆拉至灯位，安全连接LED驱动器，并平整安装灯具。" },
+        { step: "04", title: "测试与收尾", desc: "测试每盏灯和开关，清理施工区域并检查天花收口。" },
+      ],
+      faqs: [
+        { q: "装一个筒灯多少钱？", a: "标准安装从RM120/位起。价格取决于灯具类型、天花高度和是否需要新布线。" },
+        { q: "旧筒灯可以换成LED吗？", a: "通常可以。我们会检查开孔尺寸、天花后部空间和旧驱动器是否兼容。" },
+        { q: "你们提供灯具还是只负责安装？", a: "我们可以提供灯具，也可安装您自备的产品，但需先确认技术适配和产品保修条件。" },
+        { q: "安装会损坏天花吗？", a: "我们只在确认的位置开孔并做好收口。如需要修补石膏，会先说明并另行报价。" },
+      ],
+      metaTitle: "吉隆坡筒灯与照明点位安装 | RM120起",
+      metaDesc: "吉隆坡与雪兰莪LED筒灯、吊灯、轨道灯和开关安装。检查天花结构，安全接线，并完成亮度与稳定性测试。",
+    },
+  },
+  "electrical/aircond-water-heater-and-oven-point": {
+    ms: {
+      name: "Titik Aircond, Pemanas Air & Ketuhar",
+      tagline: "Pasang titik beban berat 20A–32A untuk aircond, pemanas air, ketuhar atau pengecas EV dengan kabel dan isolator yang bersesuaian.",
+      description:
+        "Perkakas beban tinggi tidak boleh disambungkan ke soket biasa kerana ia memerlukan saiz kabel, pemutus litar dan isolator yang betul. Perkhidmatan ini merangkumi pemasangan titik khusus untuk aircond, pemanas air, ketuhar, pengering dan pengecas EV kediaman. Kami mengira keperluan beban, menyemak jarak dari DB box, dan memasang kabel serta pemutus yang sesuai. Setiap titik diuji untuk voltan, kekutuban, pembumian dan kestabilan sebelum peralatan digunakan.",
+      highlights: [
+        "Titik khusus 20A–32A untuk peralatan beban tinggi",
+        "Pengiraan saiz kabel dan rating pemutus yang sesuai",
+        "Isolator berasingan untuk aircond, pemanas air atau ketuhar",
+        "Ujian voltan, kekutuban, pembumian dan beban asas",
+        "Sesuai untuk kediaman, pejabat kecil dan pengecas EV",
+      ],
+      process: [
+        { step: "01", title: "Semakan Perkakas", desc: "Kami menyemak kW, kedudukan perkakas, jarak dari DB box dan keperluan pengecasan atau bekalan." },
+        { step: "02", title: "Reka Bentuk Litar", desc: "Saiz kabel, rating MCB/RCCB dan isolator dipilih berdasarkan beban serta keadaan tapak." },
+        { step: "03", title: "Pendawaian Beban Tinggi", desc: "Kabel ditarik dengan kaedah yang selamat, pemutus dipasang, dan sambungan diketatkan mengikut standard." },
+        { step: "04", title: "Ujian & Pentauliahan", desc: "Kami menguji litar, mengesahkan tiada voltan terpapar pada bahagian sentuh, dan menerangkan cara penggunaan isolator." },
+      ],
+      faqs: [
+        { q: "Berapa harga satu titik aircond atau pemanas air?", a: "Harga bermula dari RM220 setiap titik untuk pemasangan standard. Harga akhir bergantung pada jarak kabel, saiz kabel dan keperluan pemutus khas." },
+        { q: "Perlukah litar berasingan untuk pengecas EV?", a: "Ya. Pengecas EV biasanya memerlukan litar 32A khusus, isolator kalis cuaca jika di luar, dan perlindungan RCD yang sesuai." },
+        { q: "Bolehkah anda pasang titik untuk ketuhar dan dapur induksi?", a: "Ya, tetapi kami memerlukan spesifikasi perkakas terlebih dahulu untuk menentukan saiz kabel dan rating pemutus yang betul." },
+        { q: "Adakah DB box sedia ada perlu diubah?", a: "Kadangkala ya, jika tiada ruang pemutus atau kapasiti bekalan tidak mencukupi. Kami akan memaklumkannya selepas semakan tapak." },
+      ],
+      metaTitle: "Titik Aircond, Pemanas Air & Ketuhar KL | RM220",
+      metaDesc: "Pemasangan titik beban tinggi 20A–32A untuk aircond, pemanas air, ketuhar dan EV di KL & Selangor. Kabel, isolator serta ujian beban disediakan.",
+    },
+    zh: {
+      name: "空调、热水器与烤箱专用点位",
+      tagline: "为空调、热水器、烤箱或电动车充电桩安装20A–32A大功率专用点位，并配置合适电缆与隔离开关。",
+      description:
+        "大功率电器不能随意插在普通插座上，因为它们需要匹配的电缆截面、断路器和隔离开关。本服务包括空调、热水器、烤箱、烘干机及家用电动车充电桩专用点位安装。我们会计算负荷需求，检查配电箱距离，并安装相应电缆与保护装置。每个点位都会进行电压、极性、接地和基本稳定性测试，确认安全后才交付使用。",
+      highlights: [
+        "20A–32A大功率设备专用点位",
+        "按负荷计算电缆截面和断路器额定值",
+        "空调、热水器或烤箱配置独立隔离开关",
+        "进行电压、极性、接地和基本负载测试",
+        "适合住宅、小型办公室和电动车充电桩",
+      ],
+      process: [
+        { step: "01", title: "设备检查", desc: "确认功率kW、设备位置、到配电箱距离及供电或充电需求。" },
+        { step: "02", title: "回路设计", desc: "根据负荷和现场条件选择电缆尺寸、MCB/RCCB额定值和隔离开关。" },
+        { step: "03", title: "大功率布线", desc: "以安全方式敷设电缆，安装断路器，并按规范紧固连接。" },
+        { step: "04", title: "测试与启用", desc: "测试回路，确认可接触部件无带电，并说明隔离开关使用方式。" },
+      ],
+      faqs: [
+        { q: "空调或热水器点位多少钱？", a: "标准安装从RM220/位起。最终价格取决于线缆距离、电缆尺寸和是否需要特殊断路器。" },
+        { q: "电动车充电桩需要独立回路吗？", a: "需要。EV充电桩通常需要32A专用回路，户外还需防水隔离开关和合适的RCD保护。" },
+        { q: "可以安装烤箱和电磁炉点位吗？", a: "可以，但需要先提供电器规格，以便确定正确电缆尺寸和断路器额定值。" },
+        { q: "现有配电箱需要改吗？", a: "如果没有断路器位或供电容量不足，有时需要升级。我们会在现场检查后说明。" },
+      ],
+      metaTitle: "吉隆坡空调、热水器与烤箱点位 | RM220起",
+      metaDesc: "吉隆坡与雪兰莪20A–32A空调、热水器、烤箱和EV充电桩专用点位。配置合适电缆、隔离开关并完成负载测试。",
+    },
+  },
+
+
   "handyman/heavy-tv-wall-mounting": {
     ms: {
       name: "Pemasangan Dinding TV Berat",
