@@ -677,9 +677,44 @@ Executed the previous "Next Session — START HERE" plan end-to-end:
 
 **Modified:** `config/topical-authority-map.ts`, `components/ui/hero-search-bar.tsx`, `components/sections/service-detail-content.tsx`, `components/sections/locale-service-page.tsx`, `components/ui/footer.tsx`, `lib/faq-directory.ts`, `app/(en)/services/[slug]/[subservice]/page.tsx`, `app/(en)/sitemap.ts`, `messages/{en,ms,zh}.json`, `package.json`, `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
 
+### ✅ Session 2026-08-10 (part 3) — Waterproofing locale-specialty tranche
+
+**Branch:** `arena/019fe9bc-klservisrumah-web`
+**Status:** ✅ COMPLETED
+
+### Objectives (from the roadmap's "Next Session — START HERE")
+- Continue the locale-specialty tranche: implement the **Waterproofing** tranche (4 specialties × MS + ZH = 8 new pages).
+
+### Completed
+- **Waterproofing tranche:** added authored native MS + ZH content for all 4 waterproofing specialties to `config/specialty-locale-content.ts`:
+  - `waterproofing/pu-high-pressure-injection-grouting` — PU 高压灌浆注射
+  - `waterproofing/bathroom-and-wet-area-waterproofing` — 浴室与湿区防水
+  - `waterproofing/roof-and-concrete-slab-waterproofing` — 屋顶与混凝土板防水
+  - `waterproofing/wall-dampness-and-efflorescence-repair` — 墙面潮湿与盐析修复
+- Each entry carries full MS + ZH blocks (name, tagline, description, 5 highlights, 5 process steps, 4 FAQs, metaTitle, metaDesc) — all above the `audit:specialty-locale` non-thin thresholds.
+- These automatically gained real `/ms/services/waterproofing/*` and `/zh/services/waterproofing/*` pages (self-canonical, three-way hreflang, sitemap entries, MS/ZH service-page links) via the existing shared `LocaleSpecialtyPage` architecture.
+- EN waterproofing specialty pages now emit the real three-way hreflang cluster (previously self-referencing only).
+- Sitemap 3,320 → **3,328** indexable URLs (+8 new localized specialty pages with full clusters).
+- Build 4,343 → **4,375** routes (+32 — 8 new localized specialty pages + associated regenerated EN pages with updated hreflang).
+
+### Verification
+- `npm run lint`: PASS 0/0.
+- `npm run type-check`: PASS.
+- `npm run build`: PASS (4,375 routes).
+- `npm run audit:topical-map`: PASS (28/28 services, 112 typed specialty relationships).
+- `npm run audit:specialty-locale`: PASS (16 specialties × ms/zh = **32 native blocks** above non-thin threshold; was 12×2=24).
+- `npm run audit:i18n`: PASS (1,075 keys × 3).
+- `npm run seo:audit`: PASS, 0 canonical/hreflang defects.
+- `npm run audit:html`: PASS (4,367 pages checked, 0 fatal, 0 warnings).
+- `npm run test:estimators`: PASS (263,293 assertions).
+- Spot-checked new pages: MS `/ms/services/waterproofing/pu-high-pressure-injection-grouting` renders `<html lang="ms-MY">`, Malay title, self-canonical, full 3-way hreflang cluster; ZH `/zh/services/waterproofing/pu-high-pressure-injection-grouting` renders `<html lang="zh-MY">`, Chinese title, self-canonical, full cluster; EN parent now emits real cluster.
+
+### Files
+- Modified: `config/specialty-locale-content.ts`, `docs/seo-audit-report.md` (regenerated), `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
+
 ## Next Session — START HERE
 
-1. Continue the locale-specialty tranche service-by-service. Completed so far: **Painting + Ceiling (8)** and **Plaster Ceiling (4)** = 12 specialties × MS + ZH (24 pages). Next logical tranches: **Waterproofing** (4), then **Plumbing** (4). Reuse `specialty-locale-content.ts` + `LocaleSpecialtyPage` — no duplicated components. Author genuine native MS/ZH content (the `audit:specialty-locale` gate enforces non-thin minimums).
+1. Continue the locale-specialty tranche service-by-service. Completed so far: **Painting + Ceiling (8)**, **Plaster Ceiling (4)**, and **Waterproofing (4)** = 16 specialties × MS + ZH (32 pages). Next logical tranche: **Plumbing** (4 specialties). Reuse `specialty-locale-content.ts` + `LocaleSpecialtyPage` — no duplicated components. Author genuine native MS/ZH content (the `audit:specialty-locale` gate enforces non-thin minimums).
 2. Add real locale problem routes (154) once the 14 problem-overlap groups are consolidated with evidence; then localize the `RelatedProblems` links on localized specialty pages (they currently point to EN problem pages).
-3. Business/translator QA of the 24 localized specialty pages is strongly advised before the next tranche's GSC/indexation is measured.
+3. Business/translator QA of the 32 localized specialty pages is strongly advised before the next tranche's GSC/indexation is measured.
 4. Continue without creating thin or spun pages; rerun lint/type-check/build/`audit:topical-map`/`audit:specialty-locale`/`audit:i18n`/`audit:html`/`seo:audit` after each tranche.
