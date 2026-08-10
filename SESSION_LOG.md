@@ -1652,3 +1652,41 @@ Continued exactly from the final **Next Session — START HERE** section of `AI_
 - Never create standalone Air Conditioning content; it is explicitly outside the business scope.
 - Continue with a real service: preferably the next four-specialty Glass & Aluminium / Window Repair tranche, then Door or Roofing.
 - Locale problem routes remain blocked until evidence-based consolidation of the 14 overlap groups; translator/business QA remains owner-side.
+
+---
+
+## Session 2026-08-10 (part 13) — Window Repair locale-specialty tranche
+
+Started exactly from the final "Next Session — START HERE" section of `AI_OPTIMIZATION_ROADMAP.md`. Selected **Window Repair** from the "Glass & Aluminium / Window Repair" preference (the higher-conversion repair service: emergency glass replacement, broken handles, stuck sliding windows are frequent urgent searches). No Air Conditioning content was created.
+
+#### What was done
+- Authored genuine native MS + ZH content for all four Window Repair specialties in `config/specialty-locale-content.ts`:
+  - `window-repair/glass-replacement` — Penggantian Kaca Tingkap / 窗户玻璃更换 (from RM200)
+  - `window-repair/window-seal-replacement` — Penggantian Pengedap Tingkap / 窗户密封条更换 (from RM30/linier ft)
+  - `window-repair/window-handle-and-hinge-repair` — Pembaikan Pemegang & Engsel Tingkap / 窗户执手与铰链维修 (from RM120)
+  - `window-repair/sliding-window-roller-replacement` — Penggantian Roller Tingkap Gelangsar / 推拉窗滑轮更换 (from RM150)
+- Each block has a native name, tagline, substantive description, 5 highlights, 5 process steps, 4 FAQs, `metaTitle` and `metaDesc`, grounded in the published Window Repair service record (EPDM seal wear, single-to-double glazing upgrade, in-van 4mm/5mm common sizes for same-day emergency, casement/top-hung/sliding/louvre hardware, roller + track cleaning, published prices, 12-month hardware & seal warranty). Nothing spun.
+- Added all four Window Repair keys to the non-thin `PRIORITY_KEYS` build gate in `scripts/validate-specialty-locale.ts`.
+- Reused the shared localized specialty route/component architecture; eight new MS/ZH pages now exist and the four EN Window Repair specialties emit real four-way hreflang clusters. Typed related problems (`sliding-window-stuck`, `stuck-sliding-window`, `stuck-window-lock`) render through the shared page.
+- Sitemap: 3,400 → 3,408 URLs. AI context (`site-summary.json`/`llms-full.txt`) and SEO report regenerated.
+
+#### Verification
+- Lint PASS (0/0), type-check PASS.
+- Topical map PASS: 28/28 services, 112 typed specialty relationships.
+- Specialty locale gate PASS: 56 specialties × MS/ZH = 112 native blocks.
+- i18n PASS: 1,074 keys × 3 locales with perfect parity.
+- Build PASS (4,455 routes); estimator harness PASS (263,293 assertions).
+- HTML audit PASS: 4,447 pages, 0 fatal / 0 warnings.
+- SEO audit PASS (0 canonical/hreflang defects); npm audit reports 0 vulnerabilities.
+- Production smoke PASS: native MS and ZH window-repair pages return 200 with correct `<html lang>`, native titles/H1, self-canonicals and EN/MS/ZH/x-default clusters; in-language OfferCatalog; both localized service indexes link all 4 specialties; typed related problems render; unknown localized specialty returns a real 404; all 8 new URLs are in the 3,408-URL sitemap.
+
+#### Files changed
+- `config/specialty-locale-content.ts`
+- `scripts/validate-specialty-locale.ts`
+- `docs/seo-audit-report.md`
+- `public/llms-full.txt`, `public/site-summary.json`
+- `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`
+
+#### Next session
+- Continue the locale-specialty tranche with a real remaining high-value service: **Glass & Aluminium** (4) or **Door** (4) or **Roofing** (4). Never create standalone Air Conditioning content.
+- Locale problem routes remain blocked until evidence-based consolidation of the 14 overlap groups; translator/business QA remains owner-side.
