@@ -1179,9 +1179,33 @@ Continued exactly from the final **Next Session — START HERE** section and sel
 ### Files
 - Modified: `config/specialty-locale-content.ts`, `scripts/validate-specialty-locale.ts`, `docs/seo-audit-report.md`, `docs/seo-metadata-inventory.csv`, `docs/seo-metadata-summary.json`, `public/llms-full.txt`, `public/site-summary.json`, `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
 
+### ✅ Session 2026-08-11 (part 23) — Water Heater locale-specialty tranche
+
+**Status:** ✅ COMPLETED
+
+Continued exactly from the final **Next Session — START HERE** section and selected the listed candidate, **Water Heater**. No standalone Air Conditioning content was created.
+
+- Added genuine native Bahasa Malaysia + Simplified Chinese content for all four Water Heater specialties in `config/specialty-locale-content.ts`:
+  1. `water-heater/instant-water-heater-installation` — Pemasangan Pemanas Air Segera / 即热式热水器安装 (from RM 250)
+  2. `water-heater/storage-tank-heater-installation` — Pemasangan Pemanas Tangki Simpanan / 储水式热水器安装 (from RM 420)
+  3. `water-heater/water-heater-repair-and-descaling` — Pembaikan & Nyahkerak Pemanas Air / 热水器维修与除垢 (from RM 180)
+  4. `water-heater/heat-pump-water-heater-install` — Pemasangan Pemanas Air Pam Haba / 热泵热水器安装 (from RM 2,200)
+- Every locale block has an authored native name, tagline, substantive description, five highlights, five process steps, four FAQs, meta title and meta description. Content remains grounded in the published Water Heater service record: single-point instant heaters (Alpha, Faber, Rinnai, Joven, Panasonic, Midea) with >0.5 bar inlet pressure and 3.5–8.5kW kW rating guidance; multi-point storage tanks 15L–50L (Joven, Rheem, Rinnai) with wall mounting on solid brick/concrete, pressure/temperature relief valve, copper pipework and anode-rod check; repair & descaling of leaks, RCCB trips, slow heating and knocking noises using insulation resistance testers, with descaling every 12–18 months in hard-water areas (Klang, Shah Alam); ST (Suruhanjaya Tenaga) wiring rules and SIRIM plumbing, dedicated 20A–32A circuits with double-pole isolators, anti-splash/water-proof mounting, earth-loop testing, condo management submissions and Certificate of Completion; and energy-efficient heat-pump systems (Mitsubishi Electric, Daikin) for landed properties with outdoor condenser mounting cutting electricity up to 70%. No thin or spun pages.
+- Added all four Water Heater keys to `PRIORITY_KEYS` in `scripts/validate-specialty-locale.ts`, retaining the non-thin build gate (now enforcing all 96 completed specialties).
+- Reused the shared `LocaleSpecialtyPage` architecture: eight MS/ZH routes now publish; all four EN Water Heater specialty pages emit real EN/MS/ZH/x-default hreflang clusters; typed related problems (`water-heater-not-heating`, `water-heater-cold`) render through the existing topical map; localized service links and true 404s are preserved.
+- Sitemap and generated AI context increased **3,480 → 3,488 indexable URLs** (+8 localized specialty pages).
+
+#### Verification
+- PASS: lint (0 errors/warnings), type-check, topical map (28/28 services; 112 typed specialty relationships), locale gate (**96 specialties × MS/ZH = 192 native blocks**), i18n parity (1,074 × 3), estimator suite (263,293 assertions) and `npm audit` (0 vulnerabilities).
+- PASS: production build (**4,535 static pages generated**), full-corpus HTML audit (**4,527 pages**, 0 fatal / 0 warnings), technical SEO head audit (3,488 self-canonical indexable pages; 0 warnings) and metadata consistency SEO audit.
+- Production smoke: native MS `instant-water-heater-installation`, native ZH `heat-pump-water-heater-install` and EN `storage-tank-heater-installation` pages return 200 with the correct `<html lang>`, native titles/H1s, self-canonicals and full EN/MS/ZH/x-default hreflang clusters with in-language OfferCatalog, FAQPage and HowTo JSON-LD; MS + ZH Water Heater indexes link all 4 localized specialties; unknown MS Water Heater specialty returns a real 404; sitemap contains all 8 new Water Heater URLs.
+
+### Files
+- Modified: `config/specialty-locale-content.ts`, `scripts/validate-specialty-locale.ts`, `docs/seo-audit-report.md`, `docs/seo-metadata-inventory.csv`, `docs/seo-metadata-summary.json`, `public/llms-full.txt`, `public/site-summary.json`, `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
+
 ## Next Session — START HERE
 
-1. Continue the locale-specialty tranche service-by-service. Completed: Painting + Ceiling (8), Plaster Ceiling (4), Waterproofing (4), Plumbing (4), Handyman (4), Electrical (4), Tiling (4), Flooring (4), Kitchen Cabinet (4), Carpentry (4), Epoxy Flooring (4), CCTV (4), Window Repair (4), Glass & Aluminium (4), Door (4), Roofing (4), Ceiling Fan (4), Lighting (4), Skim Coat (4), Locksmith (4), Autogate (4), and **Welding (4)** = **92 specialties × MS + ZH (184 localized pages)**. Pick the next coherent four-specialty tranche from the remaining 5 real services—next candidates: **Water Heater** (4), **House Renovation** (4), **Cleaning** (4), **Deep Cleaning** (4), **Post-Renovation Cleaning** (4). Reuse `specialty-locale-content.ts` + `LocaleSpecialtyPage` and author genuine native MS/ZH content. **Do not create Air Conditioning pages or content** (owner confirmed not offered).
+1. Continue the locale-specialty tranche service-by-service. Completed: Painting + Ceiling (8), Plaster Ceiling (4), Waterproofing (4), Plumbing (4), Handyman (4), Electrical (4), Tiling (4), Flooring (4), Kitchen Cabinet (4), Carpentry (4), Epoxy Flooring (4), CCTV (4), Window Repair (4), Glass & Aluminium (4), Door (4), Roofing (4), Ceiling Fan (4), Lighting (4), Skim Coat (4), Locksmith (4), Autogate (4), Welding (4), and **Water Heater (4)** = **96 specialties × MS + ZH (192 localized pages)**. Pick the next coherent four-specialty tranche from the remaining 4 real services—next candidates: **House Renovation** (4), **Cleaning** (4), **Deep Cleaning** (4), **Post-Renovation Cleaning** (4). Reuse `specialty-locale-content.ts` + `LocaleSpecialtyPage` and author genuine native MS/ZH content. **Do not create Air Conditioning pages or content** (owner confirmed not offered).
 2. Add real locale problem routes (154) only after the 14 problem-overlap groups are consolidated with evidence; then localize `RelatedProblems` links on localized specialty pages (they currently point to EN problem pages—documented and still blocked).
 3. Obtain business/translator QA for the completed localized specialty pages (184 so far) before measuring GSC indexation; this requires an owner/translator and cannot be completed from repository code alone.
 4. Do not create thin or spun pages; rerun lint, type-check, build, topical-map, specialty-locale, i18n, HTML and SEO audits after every tranche.

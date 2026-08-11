@@ -5382,6 +5382,243 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       metaDesc: "吉隆坡与雪兰莪定制钢结构楼梯龙骨制作与安装。单脊中梁、悬挑悬浮楼梯、化学锚栓加固、12个月保修。从RM420/延英尺起。",
     },
   },
+
+  /* ── WATER HEATER ─────────────────────────────────────────────────────── */
+  "water-heater/instant-water-heater-installation": {
+    ms: {
+      name: "Pemasangan Pemanas Air Segera",
+      tagline: "Bekalan dan pemasangan pemanas mandi segera satu titik oleh juruteknik berlesen ST di KL & Selangor, lengkap dengan isolator & ujian tekanan, dari RM 250.",
+      description:
+        "Pemanas air segera (instant water heater) merupakan pilihan paling popular untuk bilik mandi di kondominium dan rumah teres Malaysia kerana ia memanaskan air secara on-demand tanpa tangki simpanan, menjimatkan ruang dan tenaga. KL Servis Rumah menyediakan bekalan dan pemasangan pemanas mandi segera satu titik untuk jenama utama seperti Alpha, Faber, Rinnai, Joven, Panasonic dan Midea di seluruh Kuala Lumpur dan Selangor. Sebelum pemasangan, juruteknik kami mengesahkan tekanan air rumah anda (mesti melebihi 0.5 bar untuk pemanas segera), menilai kedudukan masuk paip dan jarak titik elektrik, serta mengesyorkan penarafan kW yang betul (3.5kW hingga 8.5kW). Setiap pemasangan dilakukan oleh wireman berdaftar ST dengan litar khusus 20A–32A, isolator dwi-kutub, penutup kalis air anti-percikan, kerja paip tembaga dan ujian tekanan serta ujian gelung bumi. Untuk unit kondominium, kami mengendalikan borang pengurusan dan menyediakan Sijil Penyiapan untuk rekod anda.",
+      highlights: [
+        "Bekalan & pemasangan pemanas mandi segera satu titik jenama Alpha, Faber, Rinnai, Joven, Panasonic & Midea dari RM250",
+        "Pengesahan tekanan air >0.5 bar dan pengesyoran penarafan kW yang betul (3.5–8.5kW) sebelum kerja bermula",
+        "Litar khusus 20A–32A dengan isolator dwi-kutub oleh wireman berdaftar ST serta ujian gelung bumi",
+        "Pemasangan anti-percikan dengan penutup kalis air dan laluan paip tembaga yang kemas dan bersih",
+        "Pengendalian borang pengurusan kondominium & Sijil Penyiapan untuk pematuhan bangunan bertingkat tinggi",
+      ],
+      process: [
+        { step: "01", title: "Tinjauan & Pengesahan Tekanan Air", desc: "Mengukur tekanan air masuk (mesti melebihi 0.5 bar), menilai kedudukan paip, jarak titik elektrik dan mengesyorkan penarafan kW serta jenama yang sesuai." },
+        { step: "02", title: "Sebut Harga Telus Bertulis", desc: "Harga pemanas, buruh pemasangan, isolator, kerja paip tembaga dan sebarang naik taraf elektrik atau paip diperincikan secara bertulis." },
+        { step: "03", title: "Pemasangan Dinding & Laluan Paip", desc: "Pemanas dipasang pada dinding bata pepejal atau konkrit dengan pendakap tahan karat dan penutup kalis air anti-percikan." },
+        { step: "04", title: "Pendawaian Litar Khusus", desc: "Wireman berdaftar ST memasang litar khusus 20A–32A dengan isolator dwi-kutub dan menjalankan ujian gelung bumi." },
+        { step: "05", title: "Ujian & Serahan", desc: "Menguji tekanan dan suhu air, mendemonstrasikan fungsi pemanas, dan menyerahkan kad jaminan, manual serta Sijil Penyiapan." },
+      ],
+      faqs: [
+        { q: "Berapakah kos pemasangan pemanas air segera?", a: "Bekalan dan pemasangan pemanas mandi segera satu titik bermula dari RM 250, termasuk isolator dwi-kutub, penutup kalis air dan ujian tekanan. Kos sebenar bergantung pada jenama, penarafan kW, jarak paip dan keperluan naik taraf litar elektrik." },
+        { q: "Bolehkah saya beli pemanas air sendiri dan anda pasang sahaja?", a: "Ya. Kami menerima pemasangan pemanas air yang anda beli sendiri, tetapi kami akan memeriksa dahulu kesesuaian penarafan kW dengan litar sedia ada dan ketebalan wayar sebelum memulakan kerja demi keselamatan." },
+        { q: "Apakah keperluan elektrik untuk pemanas air segera?", a: "Pemanas air segera 3.5kW hingga 8.5kW memerlukan litar khusus 20A hingga 32A dengan isolator dwi-kutub. Wireman berdaftar ST kami memastikan saiz kabel betul dan menjalankan ujian gelung bumi sebelum mengaktifkan unit." },
+        { q: "Adakah anda menyediakan Sijil Penyiapan untuk pemasangan di kondominium?", a: "Ya. Untuk unit kondominium dan hartanah bertingkat tinggi, kami mengendalikan borang pengurusan, menjadualkan waktu kerja, melindungi lif dan menyediakan Sijil Penyiapan (Certificate of Completion) untuk rekod anda." },
+      ],
+      metaTitle: "Pemasangan Pemanas Air Segera KL | Dari RM 250",
+      metaDesc: "Bekalan & pemasangan pemanas mandi segera satu titik di KL & Selangor. Juruteknik berlesen ST, isolator dwi-kutub, penutup kalis air & ujian tekanan. Dari RM250.",
+    },
+    zh: {
+      name: "即热式热水器安装",
+      tagline: "吉隆坡与雪兰莪单点即热式淋浴热水器供应与安装，由 ST 持牌技师施工，含隔离开关与压力测试，从 RM 250 起。",
+      description:
+        "即热式热水器（Instant Water Heater）是马来西亚公寓与排屋浴室最受欢迎的选择——无需储水箱，即开即热、节省空间与电力。KL Servis Rumah 在吉隆坡与雪兰莪提供 Alpha、Faber、Rinnai、Joven、Panasonic、Midea 等主流品牌单点即热式淋浴热水器的供应与安装服务。安装前技师会先确认您家的进水压力（即热式热水器需高于 0.5 bar）、评估进水口位置与电源点距离，并推荐合适的功率（3.5kW 至 8.5kW）。每项安装均由 ST 注册电工完成专用 20A–32A 电路、双极隔离开关、防溅防水罩、铜管走管以及压力测试与接地环路测试。公寓单位我们代办管理处表格并提供完工证书，确保高层建筑合规。",
+      highlights: [
+        "供应并安装 Alpha、Faber、Rinnai、Joven、Panasonic、Midea 等品牌单点即热式淋浴热水器，RM250 起",
+        "施工前确认水压 >0.5bar 并推荐合适功率（3.5–8.5kW）与品牌",
+        "由 ST 注册电工施工专用 20A–32A 电路与双极隔离开关，含接地环路测试",
+        "防溅安装与防水罩保护，铜管走管整齐美观",
+        "代办公寓管理处申报与完工证书，满足高层住宅合规要求",
+      ],
+      process: [
+        { step: "01", title: "现场勘察与进水压力确认", desc: "测量进水压力（需高于0.5bar），评估进水口位置与电源点距离，推荐合适的功率与品牌型号。" },
+        { step: "02", title: "透明书面报价", desc: "逐项书面列出热水器价格、安装人工、隔离开关、铜管工程及任何必要的电气或水管升级费用。" },
+        { step: "03", title: "壁挂安装与铜管走管", desc: "使用防锈支架将热水器固定在实心砖墙或混凝土墙上，安装防溅防水罩并整齐布设铜管。" },
+        { step: "04", title: "专用电路与隔离接线", desc: "由 ST 注册电工布设专用 20A–32A 电路与双极隔离开关，并进行接地环路测试。" },
+        { step: "05", title: "压力温度测试与交付", desc: "测试水压与出水温度、演示热水器操作，交付保修卡、说明书与完工证书。" },
+      ],
+      faqs: [
+        { q: "即热式热水器安装费用大概是多少？", a: "即热式淋浴热水器供应与安装起步价为 RM 250（含专用隔离开关与防溅防水罩安装）。最终费用视热水器品牌功率、水管接线距离以及是否需要升级现有电路而定。" },
+        { q: "家里水压太低可以装即热式热水器吗？", a: "即热式热水器一般要求进水压力高于 0.5 bar 才能正常启动与控温。若压力不足，技师会建议先加装增压水泵（Booster Pump）以确保稳定的淋浴体验。" },
+        { q: "即热式热水器需要配多大的电源线路？", a: "视功率而定，一般 3.5kW 至 8.5kW 的即热式热水器需要专用 20A 至 32A 电路并配双极隔离开关。我们严格按 ST 布线规范施工并测试接地环路，确保安全。" },
+        { q: "在公寓安装热水器需要经过管理处批准吗？", a: "一般需要。我们代办公寓管理处申报表格、协调作业时段并保护电梯，完工后提供 Certificate of Completion（完工证书）供您与管理处存档。" },
+      ],
+      metaTitle: "吉隆坡即热式热水器安装 | RM250起",
+      metaDesc: "吉隆坡与雪兰莪 Alpha、Faber、Rinnai 单点即热式淋浴热水器供应与安装。ST 持牌电工、双极隔离开关、防溅安装、完工证书。从RM250起。",
+    },
+  },
+
+  "water-heater/storage-tank-heater-installation": {
+    ms: {
+      name: "Pemasangan Pemanas Tangki Simpanan",
+      tagline: "Pemasangan pemanas air tangki simpanan 15L–50L pelbagai titik untuk dapur & bilik air di KL & Selangor, lengkap dengan injap pelega tekanan, dari RM 420.",
+      description:
+        "Pemanas air tangki simpanan (storage water heater) menyediakan bekalan air panas kepada pelbagai titik dalam rumah — bilik air dan dapur — melalui tangki berpenebat yang dipanaskan terlebih dahulu dan dikekalkan pada suhu tetap. KL Servis Rumah pakar dalam bekalan dan pemasangan pemanas tangki simpanan 15L hingga 50L daripada jenama utama seperti Joven, Rheem dan Rinnai di seluruh Kuala Lumpur dan Selangor. Setiap pemasangan termasuk pelekap dinding pada bata pepejal atau konkrit menggunakan pendakap tahan karat, laluan paip tembaga ke titik bekalan, pemasangan injap pelega tekanan (pressure relief valve) pada tangki, sambungan termostat dan elemen pemanas, serta litar khusus 20A–32A dengan isolator dwi-kutip oleh wireman berdaftar ST. Kami turut menjalankan semakan rod anod dan memberi nasihat penjadualan nyahkerak setiap 12–18 bulan untuk memanjangkan jangka hayat tangki.",
+      highlights: [
+        "Bekalan & pemasangan pemanas tangki simpanan 15L–50L pelbagai titik dari jenama Joven, Rheem & Rinnai dari RM420",
+        "Pelekap dinding kukuh pada bata pepejal atau konkrit dengan pendakap tahan karat dan injap pelega tekanan",
+        "Litar khusus 20A–32A dengan isolator dwi-kutub oleh wireman berdaftar ST serta ujian gelung bumi",
+        "Laluan paip tembaga kemas ke bilik air dan dapur dengan penebatan haba yang betul",
+        "Semakan rod anod dan nasihat nyahkerak 12–18 bulan untuk jangka hayat tangki yang panjang",
+      ],
+      process: [
+        { step: "01", title: "Tinjauan & Pengiraan Saiz Tangki", desc: "Menilai bilangan bilik air, corak penggunaan keluarga dan ruang pemasangan untuk mengesyorkan kapasiti tangki 15L, 25L, 40L atau 50L yang sesuai." },
+        { step: "02", title: "Sebut Harga Telus", desc: "Harga tangki, buruh pemasangan, injap pelega tekanan, paip tembaga, isolator dan kerja naik taraf elektrik diperincikan secara bertulis." },
+        { step: "03", title: "Pelekap Dinding & Paip", desc: "Tangki dipasang kukuh pada dinding bata pepejal atau konkrit dengan pendakap tahan karat, diikuti laluan paip tembaga ke titik bekalan." },
+        { step: "04", title: "Pendawaian Litar Khusus", desc: "Wireman berdaftar ST menyambungkan litar khusus 20A–32A dengan isolator dwi-kutub, termostat dan elemen pemanas, lalu menguji gelung bumi." },
+        { step: "05", title: "Ujian & Serahan", desc: "Menguji injap pelega tekanan, suhu air dan kadar aliran, mendemonstrasikan operasi, dan menyerahkan kad jaminan, manual serta Sijil Penyiapan." },
+      ],
+      faqs: [
+        { q: "Berapakah kos pemasangan pemanas tangki simpanan?", a: "Pemasangan pemanas tangki simpanan bermula dari RM 420, termasuk pelekap dinding, injap pelega tekanan dan laluan paip asas. Kapasiti yang lebih besar (40L–50L) atau titik bekalan tambahan akan menaikkan kos mengikut skop kerja." },
+        { q: "Apakah perbezaan pemanas tangki simpanan dan pemanas segera?", a: "Pemanas tangki simpanan memanaskan dan menyimpan air dalam tangki berpenebat untuk dibekalkan ke beberapa titik (bilik air dan dapur), manakala pemanas segera hanya memanaskan air satu titik secara on-demand. Tangki simpanan lebih sesuai untuk keluarga yang memerlukan air panas serentak di beberapa tempat." },
+        { q: "Mengapa injap pelega tekanan sangat penting pada tangki simpanan?", a: "Injap pelega tekanan (pressure/temperature relief valve) melepaskan tekanan berlebihan apabila air dalam tangki mengembang semasa dipanaskan. Tanpa injap ini, tekanan dalaman boleh meningkat dan menyebabkan kerosakan atau risiko letupan tangki. Ia wajib dipasang pada setiap pemasangan." },
+        { q: "Berapa kerap perlu menyahkerak tangki simpanan?", a: "Di kawasan air liat Malaysia seperti sebahagian Klang dan Shah Alam, kami mengesyorkan nyahkerak setiap 12 hingga 18 bulan untuk membuang kerak kapur pada elemen pemanas dan memeriksa rod anod korban yang melindungi tangki daripada kakisan." },
+      ],
+      metaTitle: "Pemasangan Pemanas Tangki Simpanan KL | Dari RM 420",
+      metaDesc: "Bekalan & pemasangan pemanas air tangki simpanan 15L–50L pelbagai titik di KL & Selangor. Injap pelega tekanan, ST-licensed wiring, jaminan 12 bulan. Dari RM420.",
+    },
+    zh: {
+      name: "储水式热水器安装",
+      tagline: "吉隆坡与雪兰莪 15L–50L 多点储水式热水器供应与安装，供水至厨房与浴室，含泄压阀，从 RM 420 起。",
+      description:
+        "储水式热水器（Storage Water Heater）通过带保温层的储水箱提前加热并保持恒定温度，将热水稳定供应至家中多个出水点——浴室与厨房。KL Servis Rumah 专注于在吉隆坡与雪兰莪提供 Joven、Rheem、Rinnai 等主流品牌 15L 至 50L 储水式热水器的供应与安装。每项安装包含：使用防锈支架将热水器牢固固定在实心砖墙或混凝土墙上、布设通往各出水点的铜管、在储水箱安装泄压阀（Pressure Relief Valve）、连接温控器与加热元件，并由 ST 注册电工施工专用 20A–32A 电路与双极隔离开关。我们还会检查牺牲阳极棒，并建议在硬水地区每 12 至 18 个月进行一次除垢以延长水箱寿命。",
+      highlights: [
+        "供应并安装 Joven、Rheem、Rinnai 品牌 15L–50L 多点储水式热水器，从 RM420 起",
+        "防锈支架牢固壁挂于实心砖墙或混凝土墙，标配泄压阀与温控系统",
+        "由 ST 注册电工施工专用 20A–32A 电路与双极隔离开关，含接地环路测试",
+        "铜管整齐布设至浴室与厨房各出水点，配备良好保温处理",
+        "检查牺牲阳极棒并建议 12–18 个月除垢，延长水箱使用寿命",
+      ],
+      process: [
+        { step: "01", title: "现场勘察与水箱容量选型", desc: "评估浴室数量、家庭用水习惯与安装空间，推荐合适的 15L、25L、40L 或 50L 水箱容量。" },
+        { step: "02", title: "透明书面报价", desc: "逐项列出水箱价格、安装人工、泄压阀、铜管、隔离开关及必要的电气升级费用。" },
+        { step: "03", title: "壁挂与管道安装", desc: "使用防锈支架将水箱牢固安装在实心砖墙或混凝土墙上，随后布设通往各出水点的铜管。" },
+        { step: "04", title: "专用电路与温控接线", desc: "由 ST 注册电工连接专用 20A–32A 电路与双极隔离开关、温控器及加热元件，并进行接地环路测试。" },
+        { step: "05", title: "测试与交付", desc: "测试泄压阀、出水温度与流速，演示操作并交付保修卡、说明书与完工证书。" },
+      ],
+      faqs: [
+        { q: "安装储水式热水器的费用是多少？", a: "储水式热水器安装起步价为 RM 420，包含壁挂安装、泄压阀与基础管道工程。更大容量（40L–50L）或更多出水点会增加费用，具体视施工范围而定。" },
+        { q: "储水式和即热式热水器有什么区别？", a: "储水式热水器把水加热并储存在保温水箱中，可同时供应多个出水点（浴室与厨房）；即热式热水器则按需即时加热单个出水点。若家人需要在多个地方同时用热水，储水式更为合适。" },
+        { q: "为什么储水式热水器必须安装泄压阀？", a: "泄压阀（Pressure Relief Valve）用于在水加热膨胀时释放水箱内多余压力，防止内部压力过高导致水箱损坏甚至爆炸风险。因此每台储水式热水器安装时都强制配备。" },
+        { q: "储水式热水器多久需要除一次垢？", a: "在马来西亚硬水地区（如巴生、莎阿南部分地区），建议每 12 至 18 个月除垢一次，清除加热元件上的水垢，并检查保护水箱免受腐蚀的牺牲阳极棒。" },
+      ],
+      metaTitle: "吉隆坡储水式热水器安装 | RM420起",
+      metaDesc: "吉隆坡与雪兰莪 Joven、Rheem、Rinnai 15L–50L 多点储水式热水器供应与安装。泄压阀、ST 持牌布线、阳极棒检查、12个月保修。从RM420起。",
+    },
+  },
+
+  "water-heater/water-heater-repair-and-descaling": {
+    ms: {
+      name: "Pembaikan & Nyahkerak Pemanas Air",
+      tagline: "Servis diagnosis & pembaikan pemanas air yang bocor, RCCB trip, lambat panas atau berbunyi di KL & Selangor, termasuk nyahkerak, dari RM 180.",
+      description:
+        "Pemanas air yang bocor, kerap menyebabkan RCCB trip, lambat panas, mengeluarkan bunyi ketukan atau tidak panas langsung amat mengganggu keselesaan harian dan boleh menjadi risiko keselamatan elektrik. KL Servis Rumah menyediakan perkhidmatan diagnosis dan pembaikan pemanas air yang pantas di seluruh Kuala Lumpur dan Selangor. Juruteknik berlesen ST kami menggunakan penguji rintangan penebat (insulation resistance tester) untuk mengesan kebocoran arus ke bumi, memeriksa elemen pemanas, termostat, fius keselamatan dan rod anod, serta menjalankan nyahkerak pada tangki simpanan untuk membuang kerak kapur yang mengurangkan kecekapan. Kami turut mengesyorkan sama ada pembaikan atau penggantian berdasarkan usia dan keadaan unit, dan menyediakan penggantian kecemasan hari sama untuk pemanas yang bocor, berkilau atau tidak panas.",
+      highlights: [
+        "Diagnosis & pembaikan pemanas air bocor, RCCB trip, lambat panas, bunyi ketukan atau tidak panas dari RM180",
+        "Pengesanan kebocoran arus ke bumi menggunakan penguji rintangan penebat (insulation resistance tester)",
+        "Pemeriksaan menyeluruh elemen pemanas, termostat, fius keselamatan dan rod anod korban",
+        "Perkhidmatan nyahkerak tangki simpanan untuk memulihkan kecekapan pemanasan dan memanjangkan jangka hayat",
+        "Penggantian kecemasan hari sama untuk unit bocor, berkilau atau tidak panas di kawasan utama KL & Selangor",
+      ],
+      process: [
+        { step: "01", title: "Diagnosis & Pengujian", desc: "Menguji rintangan penebat, memeriksa RCCB, elemen pemanas, termostat dan sambungan bumi untuk mengenal pasti punca kerosakan sebenar." },
+        { step: "02", title: "Laporan & Sebut Harga", desc: "Menerangkan punca kerosakan secara jelas dan memberikan sebut harga pembaikan atau penggantian yang telus sebelum sebarang kerja dijalankan." },
+        { step: "03", title: "Nyahkerak & Pembersihan", desc: "Membuka elemen pemanas dan tangki untuk nyahkerak, membuang kerak kapur dan memeriksa rod anod korban." },
+        { step: "04", title: "Penggantian Komponen", desc: "Menggantikan elemen pemanas, termostat, fius atau bahagian bocor yang rosak dengan komponen berkualiti asal." },
+        { step: "05", title: "Ujian Akhir & Serahan", desc: "Menguji pemanasan, suhu dan keselamatan elektrik selepas pembaikan, membersihkan kawasan kerja dan menyerahkan jaminan kerja." },
+      ],
+      faqs: [
+        { q: "Berapakah kos membaiki pemanas air?", a: "Diagnosis dan pembaikan asas pemanas air bermula dari RM 180, termasuk nyahkerak dan pemeriksaan rod anod pada tangki simpanan. Kos penggantian elemen pemanas, termostat atau komponen lain ditentukan selepas diagnosis dan disahkan sebelum kerja." },
+        { q: "Mengapa pemanas air saya kerap menyebabkan RCCB trip?", a: "Punca paling biasa ialah kemasukan lembapan ke dalam elemen pemanas atau pendawaian dalaman, terutamanya jika pemanas dipasang terus di atas pancuran tanpa perlindungan percikan yang betul. Kami mendiagnosis dengan penguji rintangan penebat dan mengesyorkan pembaikan atau penggantian mengikut usia unit." },
+        { q: "Bolehkah pemanas air yang berbunyi ketukan dibaiki?", a: "Bunyi ketukan atau mendidih selalunya disebabkan oleh kerak kapur terkumpul pada elemen pemanas tangki simpanan. Proses nyahkerak akan membuang kerak tersebut dan biasanya memulihkan operasi yang senyap dan cekap." },
+        { q: "Bilakah lebih baik menggantikan pemanas air daripada membaikinya?", a: "Jika unit sudah berusia lebih 8–10 tahun, elemen telah bocor teruk atau kerosakan berulang, penggantian biasanya lebih menjimatkan daripada pembaikan. Juruteknik kami akan memberi nasihat jujur berdasarkan pemeriksaan unit anda." },
+      ],
+      metaTitle: "Pembaikan Pemanas Air KL & Selangor | Dari RM 180",
+      metaDesc: "Servis diagnosis & pembaikan pemanas air bocor, RCCB trip, lambat panas & berbunyi di KL & Selangor. Nyahkerak & semakan rod anod, penggantian hari sama. Dari RM180.",
+    },
+    zh: {
+      name: "热水器维修与除垢",
+      tagline: "吉隆坡与雪兰莪上门诊断与维修漏水、RCCB 跳闸、加热缓慢或异响的热水器，含除垢服务，从 RM 180 起。",
+      description:
+        "热水器漏水、频繁导致 RCCB 跳闸、加热缓慢、发出敲击声甚至完全不加热，不仅影响日常生活，更可能构成电气安全隐患。KL Servis Rumah 在吉隆坡与雪兰莪提供快捷的热水器上门诊断与维修服务。我们 ST 持牌技师使用绝缘电阻测试仪检测漏电到地线的情况，全面检查加热元件、温控器、保险丝与牺牲阳极棒，并对储水式热水器进行除垢，清除降低加热效率的水垢。我们会根据机组的使用年限与状况，诚实地建议维修或更换，并为漏水、打火或不加热的机组提供当日紧急更换服务。",
+      highlights: [
+        "上门诊断与维修漏水、RCCB 跳闸、加热缓慢、敲击异响或不加热的热水器，RM180 起",
+        "使用绝缘电阻测试仪精确检测漏电到地线的潜在安全隐患",
+        "全面检查加热元件、温控器、保险丝与牺牲阳极棒",
+        "储水式热水器专业除垢，恢复加热效率并延长机组寿命",
+        "吉隆坡与雪兰莪主要区域漏水、打火或不加热机组的当日紧急更换",
+      ],
+      process: [
+        { step: "01", title: "检测与故障诊断", desc: "测试绝缘电阻，检查 RCCB、加热元件、温控器与接地连接，精确定位真正故障原因。" },
+        { step: "02", title: "故障说明与报价", desc: "清晰解释故障原因，并在动工前提供透明的维修或更换报价供您确认。" },
+        { step: "03", title: "除垢与内部清洁", desc: "拆开加热元件与水箱进行除垢，清除水垢并检查牺牲阳极棒的腐蚀状况。" },
+        { step: "04", title: "更换损坏部件", desc: "更换损坏的加热元件、温控器、保险丝或漏水部件，均使用高品质配件。" },
+        { step: "05", title: "最终测试与交付", desc: "修复后测试加热效果、水温与电气安全，清理作业现场并交付工作保修。" },
+      ],
+      faqs: [
+        { q: "维修热水器大概需要多少费用？", a: "热水器基础诊断与维修起步价为 RM 180，包含储水式热水器的除垢与阳极棒检查。更换加热元件、温控器或其他部件的费用在诊断后确定并先征得您同意。" },
+        { q: "为什么我的热水器老是让 RCCB 跳闸？", a: "最常见原因是加热元件或内部接线进水受潮，尤其是热水器直接安装在淋浴上方而缺乏防溅保护。我们用绝缘电阻测试仪诊断，并根据机组使用年限建议维修或更换。" },
+        { q: "热水器发出敲击或煮沸声能修好吗？", a: "这种异响通常由储水式水箱加热元件上堆积的水垢引起。进行除垢清除水垢后，一般即可恢复安静高效的运行状态。" },
+        { q: "什么时候应该更换而不是维修热水器？", a: "当机组使用超过 8–10 年、加热元件严重漏水或故障反复出现时，更换通常比维修更经济。技师会依据对您机组的实际检查给出诚实建议。" },
+      ],
+      metaTitle: "吉隆坡热水器维修与除垢 | RM180起",
+      metaDesc: "吉隆坡与雪兰莪上门维修漏水、RCCB 跳闸、加热缓慢与异响的热水器。除垢、阳极棒检查、当日紧急更换。从RM180起。",
+    },
+  },
+
+  "water-heater/heat-pump-water-heater-install": {
+    ms: {
+      name: "Pemasangan Pemanas Air Pam Haba",
+      tagline: "Pemasangan sistem pemanas air pam haba cekap tenaga untuk hartanah bertanah di KL & Selangor, dengan pelekap pemeluwap luar, dari RM 2,200.",
+      description:
+        "Pemanas air pam haba (heat pump water heater) adalah penyelesaian paling cekap tenaga untuk bekalan air panas rumah Malaysia, mampu mengurangkan bil elektrik sehingga 70% berbanding pemanas elemen tradisional. Ia berfungsi dengan menyerap haba dari udara sekeliling dan memindahkannya ke tangki air melalui kitaran penyejukan, bukan dengan memanaskan air terus menggunakan elemen elektrik. KL Servis Rumah menyediakan bekalan dan pemasangan sistem pam haba daripada jenama seperti Mitsubishi Electric dan Daikin untuk rumah landed di Kuala Lumpur dan Selangor. Setiap pemasangan termasuk pelekap tangki simpanan, pemasangan pemeluwap (condenser) luar pada kedudukan yang sesuai, laluan paip tembaga penebat haba, sambungan elektrik khusus dengan isolator oleh wireman berdaftar ST, serta ujian COP dan suhu air. Sistem ini sangat sesuai untuk keluarga di rumah landed yang memerlukan air panas dengan kos operasi yang rendah.",
+      highlights: [
+        "Bekalan & pemasangan sistem pam haba Mitsubishi Electric & Daikin yang jimat tenaga untuk rumah landed dari RM2,200",
+        "Penjimatan bil elektrik sehingga 70% berbanding pemanas elemen tradisional dengan kitaran penyerapan haba udara",
+        "Pelekap pemeluwap luar pada kedudukan pengudaraan optimum untuk prestasi dan jangka hayat maksimum",
+        "Litar elektrik khusus dengan isolator oleh wireman berdaftar ST serta ujian COP dan suhu air",
+        "Sesuai untuk keluarga yang memerlukan bekalan air panas yang banyak dengan kos operasi bulanan yang rendah",
+      ],
+      process: [
+        { step: "01", title: "Penilaian Tapak & Keperluan Air Panas", desc: "Mengukur ruang pemasangan, menilai lokasi pemeluwap luar dan mengira kapasiti tangki yang sesuai dengan bilangan penghuni dan corak penggunaan." },
+        { step: "02", title: "Sebut Harga & Cadangan Sistem", desc: "Mencadangkan jenama dan kapasiti sistem pam haba yang sesuai serta menyediakan sebut harga bertulis lengkap termasuk pemasangan dan pendawaian." },
+        { step: "03", title: "Pelekap Tangki & Pemeluwap", desc: "Memasang tangki simpanan pada asas kukuh dan pemeluwap luar pada kedudukan pengudaraan yang baik dengan pendakap tahan karat." },
+        { step: "04", title: "Paip & Pendawaian", desc: "Memasang laluan paip tembaga berpenebat haba dan litar elektrik khusus dengan isolator oleh wireman berdaftar ST." },
+        { step: "05", title: "Ujian & Serahan", desc: "Menguji kecekapan sistem (COP), suhu air dan keselamatan elektrik, mendemonstrasikan penggunaan dan menyerahkan kad jaminan serta manual." },
+      ],
+      faqs: [
+        { q: "Berapakah kos memasang pemanas air pam haba?", a: "Pemasangan sistem pam haba bermula dari RM 2,200 untuk sistem asas. Kos sebenar bergantung pada jenama, kapasiti tangki (contohnya 200L–300L), kerumitan pemasangan pemeluwap luar dan jarak paip ke titik bekalan." },
+        { q: "Berapakah penjimatan elektrik yang dapat dijimatkan dengan pam haba?", a: "Sistem pam haba dapat mengurangkan penggunaan tenaga untuk pemanasan air sehingga 70% berbanding pemanas elemen tradisional kerana ia memindahkan haba dari udara dan bukannya menghasilkan haba terus, menghasilkan nisbah kecekapan (COP) yang jauh lebih tinggi." },
+        { q: "Adakah pam haba memerlukan ruang luar yang besar?", a: "Ya, sistem pam haba memerlukan ruang luar untuk pemeluwap (condenser) dengan pengudaraan yang baik. Ia paling sesuai untuk rumah landed seperti banglo, semi-D dan rumah teres dengan ruang belakang atau tepi rumah." },
+        { q: "Berapa lamakah tempoh pemasangan sistem pam haba?", a: "Kebanyakan pemasangan pam haba disiapkan dalam 1 hingga 2 hari bekerja, termasuk pelekap tangki, pemeluwap luar, paip tembaga dan pendawaian elektrik. Masa sebenar bergantung pada kerumitan tapak." },
+      ],
+      metaTitle: "Pemasangan Pemanas Air Pam Haba KL | Dari RM 2,200",
+      metaDesc: "Pemasangan sistem pemanas air pam haba cekap tenaga Mitsubishi Electric & Daikin untuk rumah landed di KL & Selangor. Jimat elektrik hingga 70%. Dari RM2,200.",
+    },
+    zh: {
+      name: "热泵热水器安装",
+      tagline: "吉隆坡与雪兰莪有地住宅节能热泵热水系统供应与安装，含室外冷凝器挂装，从 RM 2,200 起。",
+      description:
+        "热泵热水器（Heat Pump Water Heater）是马来西亚家庭最节能的热水解决方案，相比传统电加热元件热水器可节省高达 70% 的电费。其原理是利用制冷循环从周围空气中吸收热量并传递给水箱中的水，而不是直接用电力加热。KL Servis Rumah 在吉隆坡与雪兰莪为有地住宅提供 Mitsubishi Electric 与 Daikin 等品牌热泵系统的供应与安装。每项安装包含储水箱的牢固固定、室外冷凝器（Condenser）在通风良好位置的挂装、带保温层的铜管走管、由 ST 注册电工施工的专用电路与隔离开关，以及 COP 与水温测试。该系统非常适合用水量大的有地家庭，长期运营成本显著更低。",
+      highlights: [
+        "供应并安装 Mitsubishi Electric、Daikin 等品牌节能热泵系统，适用于有地住宅，RM2,200 起",
+        "相比传统电加热元件，节省高达 70% 电费——通过吸收空气热量而非直接电加热",
+        "室外冷凝器安装于通风最佳位置，确保性能与使用寿命",
+        "由 ST 注册电工施工专用电路与隔离开关，含 COP 与水温测试",
+        "适合用水量大的家庭，长期月度运营成本更低",
+      ],
+      process: [
+        { step: "01", title: "现场评估与热水需求测算", desc: "测量安装空间、评估室外冷凝器位置，并根据居住人数与用水习惯计算合适的水箱容量。" },
+        { step: "02", title: "系统方案与书面报价", desc: "推荐合适的品牌与水箱容量，提供包含安装与电气工程的完整书面报价。" },
+        { step: "03", title: "水箱与冷凝器安装", desc: "将储水箱固定在坚实基础上，冷凝器安装在通风良好的位置并使用防锈支架。" },
+        { step: "04", title: "管道与电气施工", desc: "布设带保温层的铜管，并由 ST 注册电工施工专用电路与隔离开关。" },
+        { step: "05", title: "测试与交付", desc: "测试系统能效（COP）、水温与电气安全，演示操作并交付保修卡与说明书。" },
+      ],
+      faqs: [
+        { q: "安装热泵热水器的费用是多少？", a: "热泵系统安装起步价为 RM 2,200。实际费用视品牌、水箱容量（如 200L–300L）、室外冷凝器安装复杂程度以及到各出水点的管道距离而定。" },
+        { q: "热泵热水器能节省多少电费？", a: "相比传统电加热元件，热泵热水器可节省高达 70% 的加热能耗，因为它从空气中搬运热量而非直接发电发热，具有远超传统加热的能效比（COP）。" },
+        { q: "热泵系统需要很大的室外空间吗？", a: "是的，热泵系统需要良好的室外通风位置放置冷凝器，因此最适合独立别墅、半独立洋房及有后院或侧边空间的排屋等有地住宅。" },
+        { q: "热泵系统的安装工期一般多久？", a: "大多数热泵安装可在 1 至 2 个工作日内完成，包括水箱与冷凝器固定、铜管布设和电气接线。具体时间视现场复杂程度而定。" },
+      ],
+      metaTitle: "吉隆坡热泵热水器安装 | RM2,200起",
+      metaDesc: "吉隆坡与雪兰莪有地住宅节能热泵热水系统安装。Mitsubishi Electric、Daikin、省电高达70%、室外冷凝器、12个月保修。从RM2,200起。",
+    },
+  },
 };
 
 /**
