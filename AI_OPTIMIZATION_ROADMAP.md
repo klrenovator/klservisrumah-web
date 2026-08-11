@@ -1044,10 +1044,34 @@ Continued exactly from the final **Next Session — START HERE** section and sel
 ### Files
 - Modified: `config/specialty-locale-content.ts`, `scripts/validate-specialty-locale.ts`, `docs/seo-audit-report.md`, `public/llms-full.txt`, `public/site-summary.json`, `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
 
+### ✅ Session 2026-08-11 (part 18) — Lighting locale-specialty tranche
+
+**Status:** ✅ COMPLETED
+
+Continued exactly from the final **Next Session — START HERE** section and selected the first listed candidate, the **Lighting** tranche. No standalone Air Conditioning content was created.
+
+- Added genuine native Bahasa Malaysia + Simplified Chinese content for all four Lighting specialties in `config/specialty-locale-content.ts`:
+  1. `lighting/led-downlight-installation` — Pemasangan Downlight LED / LED 筒灯安装 (from RM120 / point)
+  2. `lighting/pendant-and-chandelier-install` — Pemasangan Pendant & Chandelier / 吊灯与枝形吊灯安装 (from RM180)
+  3. `lighting/cove-and-strip-led-installation` — Pemasangan LED Cove & Jalur / 灯槽与 LED 灯带安装 (from RM22 / ft)
+  4. `lighting/smart-lighting-and-dimmer-retrofit` — Retrofit Pencahayaan Pintar & Malap / 智能照明与调光改造 (from RM250 / point)
+- Every block has an authored native name, tagline, substantive description, five highlights, five process steps, four FAQs, meta title and meta description. Source facts remain tied to the published Lighting service record: Suruhanjaya Tenaga (ST) licensed electricians, 75–90mm precision hole cutting, Philips / Osram / Tronic / Eurolux COB LED fixtures with proper driver heat management, free lux calculations and 3000K/4000K colour-temperature guidance, dynabolt or timber/GI reinforcement for heavy pendants and chandeliers (never plasterboard-only) with steel safety cables and 75–90cm dining-table drop height, aluminium heatsink profiles with serviceable driver placement and power injection for long cove runs, dual-colour strip and dimmer options, neutral-wire audits for smart-switch retrofits (Aqara, Sonoff, Schneider Wiser), leading/trailing-edge dimmer-to-driver compatibility checks, and Wi-Fi / Zigbee / DALI / 0–10V / KNX support with Google Home, Alexa, Apple Home and Tuya pairing. No thin or spun pages.
+- Added all four Lighting keys to `PRIORITY_KEYS` in `scripts/validate-specialty-locale.ts`, retaining the non-thin build gate (now enforcing all 76 completed specialties).
+- The shared `LocaleSpecialtyPage` architecture publishes the eight localized routes, upgrades all four EN lighting specialty hreflang clusters to EN/MS/ZH/x-default, preserves typed related-problem sections (`flickering-downlights`, `downlight-flickering`), localized service links and real 404s.
+- Generated AI context and sitemap now report **3,448 indexable URLs** (+8).
+
+#### Verification
+- PASS: lint (0 errors/warnings), type-check, topical map (28/28; 112 typed specialty relationships), locale gate (**76 specialties × MS/ZH = 152 native blocks**), i18n parity (1,074 × 3), and estimator suite (263,293 assertions).
+- PASS: production build (**4,490 prerendered routes**), HTML audit (**4,487 pages**, 0 fatal / 0 warnings), SEO audit and `npm audit` (0 vulnerabilities).
+- Production smoke: native MS led-downlight-installation, native ZH cove-and-strip-led-installation and EN smart-lighting-and-dimmer-retrofit pages return 200 with correct `<html lang>`, native titles/H1, self-canonicals and full EN/MS/ZH/x-default hreflang clusters with in-language OfferCatalog, FAQPage (4 Q&A) and HowTo (5 steps); MS + ZH Lighting indexes link all 4 localized specialties; unknown MS Lighting specialty returns a real 404; sitemap contains all 8 new Lighting URLs.
+
+### Files
+- Modified: `config/specialty-locale-content.ts`, `scripts/validate-specialty-locale.ts`, `docs/seo-audit-report.md`, `public/llms-full.txt`, `public/site-summary.json`, `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
+
 ## Next Session — START HERE
 
-1. Continue the locale-specialty tranche service-by-service. Completed: Painting + Ceiling (8), Plaster Ceiling (4), Waterproofing (4), Plumbing (4), Handyman (4), Electrical (4), Tiling (4), Flooring (4), Kitchen Cabinet (4), Carpentry (4), Epoxy Flooring (4), CCTV (4), Window Repair (4), Glass & Aluminium (4), Door (4), Roofing (4), and **Ceiling Fan (4)** = **72 specialties × MS + ZH (144 localized pages)**. Pick the next coherent four-specialty tranche from the remaining real high-value services—next candidates: **Lighting** (4), **Skim Coat** (4), **Locksmith** (4), **Autogate** (4), **Welding** (4), **Water Heater** (4), or any other real service from the 28-service catalogue. Reuse `specialty-locale-content.ts` + `LocaleSpecialtyPage` and author genuine native MS/ZH content. **Do not create Air Conditioning pages or content** (owner confirmed not offered).
+1. Continue the locale-specialty tranche service-by-service. Completed: Painting + Ceiling (8), Plaster Ceiling (4), Waterproofing (4), Plumbing (4), Handyman (4), Electrical (4), Tiling (4), Flooring (4), Kitchen Cabinet (4), Carpentry (4), Epoxy Flooring (4), CCTV (4), Window Repair (4), Glass & Aluminium (4), Door (4), Roofing (4), Ceiling Fan (4), and **Lighting (4)** = **76 specialties × MS + ZH (152 localized pages)**. Pick the next coherent four-specialty tranche from the remaining real high-value services—next candidates: **Skim Coat** (4), **Locksmith** (4), **Autogate** (4), **Welding** (4), **Water Heater** (4), or any other real service from the 28-service catalogue. Reuse `specialty-locale-content.ts` + `LocaleSpecialtyPage` and author genuine native MS/ZH content. **Do not create Air Conditioning pages or content** (owner confirmed not offered).
 2. Add real locale problem routes (154) only after the 14 problem-overlap groups are consolidated with evidence; then localize `RelatedProblems` links on localized specialty pages (they currently point to EN problem pages—documented and still blocked).
-3. Obtain business/translator QA for the completed localized specialty pages (144 so far) before measuring GSC indexation; this requires an owner/translator and cannot be completed from repository code alone.
+3. Obtain business/translator QA for the completed localized specialty pages (152 so far) before measuring GSC indexation; this requires an owner/translator and cannot be completed from repository code alone.
 4. Do not create thin or spun pages; rerun lint, type-check, build, topical-map, specialty-locale, i18n, HTML and SEO audits after every tranche.
 

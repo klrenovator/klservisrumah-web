@@ -1813,3 +1813,38 @@ Continued exactly from the final **Next Session — START HERE** section of `AI_
 ### Next session
 - Continue the locale-specialty tranche with a remaining real high-value service: **Ceiling Fan** (4), **Lighting** (4), **Skim Coat** (4), **Locksmith** (4), **Autogate** (4), **Welding** (4), or any other real service from the 28-service catalogue. Never create standalone Air Conditioning content.
 - Locale problem routes remain blocked pending evidence-based consolidation of the 14 overlap groups. Business/translator QA remains owner-side.
+
+
+## Session 2026-08-11 (part 18) — Lighting locale-specialty tranche
+
+**Branch:** `arena/019fefc0-klservisrumah-web`
+**Status:** ✅ COMPLETED
+
+Continued exactly from the final **Next Session — START HERE** section of `AI_OPTIMIZATION_ROADMAP.md`. Selected **Lighting**, the first listed candidate service. No Air Conditioning content was created.
+
+### Completed
+- Authored genuine native Bahasa Malaysia + Simplified Chinese content for all four Lighting specialties in `config/specialty-locale-content.ts`:
+  - `lighting/led-downlight-installation` — Pemasangan Downlight LED / LED 筒灯安装 (from RM120 / point)
+  - `lighting/pendant-and-chandelier-install` — Pemasangan Pendant & Chandelier / 吊灯与枝形吊灯安装 (from RM180)
+  - `lighting/cove-and-strip-led-installation` — Pemasangan LED Cove & Jalur / 灯槽与 LED 灯带安装 (from RM22 / ft)
+  - `lighting/smart-lighting-and-dimmer-retrofit` — Retrofit Pencahayaan Pintar & Malap / 智能照明与调光改造 (from RM250 / point)
+- Each locale block contains an authored name, tagline, substantive description, 5 highlights, 5 process steps, 4 FAQs, meta title and meta description. Content is grounded in the published Lighting service record: Suruhanjaya Tenaga (ST) licensed electricians on every connection and switch grouping, 75–90mm precision hole-saw cutting, Philips / Osram / Tronic / Eurolux COB LED fixtures with correct driver heat management, free lux calculations with 3000K vs 4000K colour-temperature guidance, dynabolt anchoring into concrete slab or timber/GI reinforcement inside gypsum ceilings for heavy pendants and chandeliers (never plasterboard-only) plus steel safety cables and 75–90cm dining-table drop height, aluminium heatsink profiles with serviceable driver placement and mid-run power injection for long cove runs, dual-colour-temperature strips and dimmer options, neutral-wire audits for smart-switch retrofits (Aqara, Sonoff, Schneider Wiser) with no-neutral and concealed relay-module alternatives, leading/trailing-edge dimmer-to-driver compatibility checks for flicker and buzz, and Wi-Fi / Zigbee / DALI / 0–10V / KNX support with Google Home, Alexa, Apple Home and Tuya / Smart Life pairing. No thin or spun pages.
+- Added all four Lighting keys to `PRIORITY_KEYS` in `scripts/validate-specialty-locale.ts`, retaining the non-thin build gate (now enforcing all 76 completed specialties).
+- Reused the shared locale-specialty architecture: eight MS/ZH routes now publish, the four EN lighting specialty pages emit real EN/MS/ZH/x-default clusters, typed related problems (`flickering-downlights`, `downlight-flickering`) render through the shared page, and unknown localized specialty slugs remain true 404s.
+- Sitemap and generated AI context now contain **3,448 indexable URLs** (+8 localized specialty URLs).
+
+### Verification
+- PASS: lint (0 errors/warnings), type-check, topical-map (28/28 services; 112 typed relationships), specialty locale gate (**76 specialties × MS/ZH = 152 native blocks**), and i18n parity (1,074 keys × 3 locales).
+- PASS: build (**4,490 prerendered routes**), prebuild estimator suite (263,293 assertions), HTML quality audit (**4,487 pages**, 0 fatal / 0 warnings), SEO audit, and `npm audit` (0 vulnerabilities).
+- Production smoke PASS: native MS `led-downlight-installation`, native ZH `cove-and-strip-led-installation` and EN `smart-lighting-and-dimmer-retrofit` pages return 200 with correct `<html lang>` (`ms-MY` / `zh-MY` / `en-MY`), native titles and H1, self-canonicals and full EN/MS/ZH/x-default hreflang clusters; in-language OfferCatalog, FAQPage (4 Q&A) and HowTo (5 steps) JSON-LD; MS + ZH Lighting indexes link all 4 localized specialties; typed related problems render on localized pages; unknown MS Lighting specialty returns a real 404; all 8 new URLs are present in the sitemap.
+
+### Files changed
+- `config/specialty-locale-content.ts`
+- `scripts/validate-specialty-locale.ts`
+- `docs/seo-audit-report.md`
+- `public/llms-full.txt`, `public/site-summary.json`
+- `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`
+
+### Next session
+- Continue the locale-specialty tranche with a remaining real high-value service: **Skim Coat** (4), **Locksmith** (4), **Autogate** (4), **Welding** (4), **Water Heater** (4), or any other real service from the 28-service catalogue. Never create standalone Air Conditioning content.
+- Locale problem routes remain blocked pending evidence-based consolidation of the 14 overlap groups. Business/translator QA remains owner-side.

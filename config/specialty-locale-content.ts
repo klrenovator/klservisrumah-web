@@ -4208,6 +4208,240 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
     },
   },
 
+  /* ── LIGHTING ─────────────────────────────────────────────────────────── */
+  "lighting/led-downlight-installation": {
+    ms: {
+      name: "Pemasangan Downlight LED",
+      tagline: "Pemotongan lubang siling tepat, pendawaian titik baharu dan pemasangan downlight LED COB dengan pemacu serta pelesapan haba yang betul. Dari RM 120 / titik.",
+      description:
+        "Downlight LED ialah asas kepada pencahayaan am rumah dan pejabat moden di Kuala Lumpur dan Selangor. KL Servis Rumah memasang titik downlight baharu daripada awal — merancang susun atur siling, memotong lubang tepat (biasanya 75mm hingga 90mm mengikut spesifikasi lekapan), menarik kabel melalui rongga siling gipsum atau plaster, dan menamatkan setiap sambungan di kotak simpang yang boleh diakses. Setiap titik dipasang oleh juruelektrik berlesen Suruhanjaya Tenaga (ST) menggunakan lekapan LED COB berkualiti daripada jenama seperti Philips, Osram, Tronic dan Eurolux. Kami memberi perhatian khusus kepada pelesapan haba: pemacu (driver) tidak sekali-kali ditanam dalam insulasi, dan jarak minimum antara lekapan dengan struktur kayu dipatuhi supaya lampu tidak berkelip atau mati awal. Untuk pemasangan penuh, kami menyediakan pengiraan lux dan cadangan sudut alur serta suhu warna terlebih dahulu, jadi anda tahu berapa titik yang benar-benar diperlukan sebelum kerja bermula.",
+      highlights: [
+        "Juruelektrik berlesen Suruhanjaya Tenaga (ST) untuk setiap sambungan dan pengumpulan suis",
+        "Pemotongan lubang tepat 75–90mm dengan hole saw pelbagai saiz, tanpa keretakan siling",
+        "Lekapan LED COB Philips, Osram, Tronic atau Eurolux dengan pemacu berkualiti",
+        "Pengiraan lux dan cadangan suhu warna 3000K/4000K mengikut fungsi bilik",
+        "Pengurusan haba pemacu yang betul supaya lampu tidak berkelip atau gagal awal",
+      ],
+      process: [
+        { step: "01", title: "Brief & Pengiraan Lux", desc: "Kami mengukur dimensi bilik, ketinggian siling dan warna cat, kemudian mengesyorkan bilangan titik, sudut alur dan suhu warna yang sesuai." },
+        { step: "02", title: "Penandaan Susun Atur Siling", desc: "Kedudukan setiap titik ditanda pada siling mengikut grid seimbang, mengelakkan rasuk, penyangkut siling dan laluan paip penghawa dingin." },
+        { step: "03", title: "Pemotongan & Penarikan Kabel", desc: "Lubang dipotong dengan hole saw bersaiz tepat, kemudian kabel ditarik melalui rongga siling dan disalurkan ke kotak simpang yang boleh diakses." },
+        { step: "04", title: "Penamatan & Pemasangan Lekapan", desc: "Setiap lekapan disambung, pemacu diletakkan pada kedudukan berventilasi, dan klip spring dipasang supaya bezel duduk rata dengan siling." },
+        { step: "05", title: "Pengujian & Kemasan", desc: "Kami menguji setiap litar dan pengumpulan suis, memeriksa sebarang kelipan, dan membersihkan habuk pemotongan sebelum serahan." },
+      ],
+      faqs: [
+        { q: "Berapa banyak downlight diperlukan untuk satu bilik?", a: "Untuk bilik tipikal 12 meter persegi dengan siling 2.7m, kami mengesyorkan 6 hingga 9 downlight LED COB 3W–5W untuk pencahayaan am. Bagi dapur atau bilik belajar, kami menambah 2 hingga 4 lampu sorot di atas permukaan kerja. Pengiraan lux disediakan percuma bersama pelan susun atur." },
+        { q: "Apakah saiz lubang potong yang diperlukan?", a: "Kebanyakan downlight rumah memerlukan lubang 75mm hingga 90mm, bergantung pada model lekapan. Kami membawa hole saw pelbagai saiz ke tapak dan mengesahkan saiz sebenar daripada spesifikasi pengeluar sebelum memotong siling anda." },
+        { q: "Bolehkah downlight dipasang pada siling konkrit tanpa rongga?", a: "Untuk siling konkrit tanpa rongga, downlight terbenam tidak boleh dipasang tanpa membina kotak gipsum, L-box atau menurunkan sebahagian siling. Alternatifnya kami mengesyorkan downlight jenis surface-mounted atau lampu track yang tidak memerlukan kedalaman rongga." },
+        { q: "Suhu warna manakah yang sesuai untuk rumah di Malaysia?", a: "Untuk ruang tamu dan bilik tidur, 3000K (putih hangat) memberikan suasana yang selesa. Untuk dapur, bilik mandi dan bilik belajar, 4000K (putih neutral) memudahkan kerja. Kami biasanya mengelakkan 6500K di ruang kediaman kerana ia terasa terlalu klinikal." },
+      ],
+      metaTitle: "Pemasangan Downlight LED KL & Selangor | Dari RM120/titik",
+      metaDesc: "Pasang titik downlight LED baharu di KL & Selangor. Juruelektrik berlesen ST, pemotongan tepat 75–90mm, lekapan COB Philips/Osram & pengiraan lux percuma. Dari RM120/titik.",
+    },
+    zh: {
+      name: "LED 筒灯安装",
+      tagline: "精准天花开孔、新增点位布线，安装带优质驱动器与良好散热的 COB LED 筒灯。从 RM 120 / 点位起。",
+      description:
+        "LED 筒灯是吉隆坡与雪兰莪现代住宅与办公空间基础照明的主力。KL Servis Rumah 提供从零开始的新增筒灯点位安装：先规划天花布点，再用对应尺寸开孔器精准开孔（通常 75mm 至 90mm，依灯具规格而定），电缆经石膏板或批荡吊顶空腔走线，并统一端接至可检修的接线盒。每一个点位均由 ST 持牌电工施工，采用 Philips、Osram、Tronic、Eurolux 等品牌的优质 COB LED 灯具。我们尤其重视散热处理：驱动器绝不埋入隔热棉内，灯具与木龙骨之间保持规范间距，避免日后频闪或提前损坏。整屋安装时，我们会先出具照度（Lux）计算与光束角、色温建议，让您在动工前就清楚究竟需要多少个点位。",
+      highlights: [
+        "全部接线与开关分组均由 ST 持牌电工规范施工",
+        "使用多规格开孔器精准开孔 75–90mm，不崩边、不裂天花",
+        "选用 Philips、Osram、Tronic、Eurolux 品牌 COB LED 灯具与优质驱动器",
+        "提供照度计算与 3000K / 4000K 色温分区建议",
+        "驱动器散热位置规范布置，杜绝频闪与提前失效",
+      ],
+      process: [
+        { step: "01", title: "需求沟通与照度计算", desc: "测量房间尺寸、层高与墙面颜色，据此推荐点位数量、光束角与色温组合。" },
+        { step: "02", title: "天花布点放线", desc: "按均衡网格在天花标记每个开孔位置，避开主梁、吊顶龙骨与空调冷媒管走向。" },
+        { step: "03", title: "精准开孔与穿线", desc: "使用对应尺寸开孔器精准开孔，电缆经吊顶空腔敷设并汇入可检修接线盒。" },
+        { step: "04", title: "端接与灯具安装", desc: "逐一接驳灯具，将驱动器安放在通风位置，装入弹簧卡扣使面圈与天花平齐服帖。" },
+        { step: "05", title: "通电测试与清洁", desc: "逐回路测试开关分组，检查有无频闪，清理开孔粉尘后交付验收。" },
+      ],
+      faqs: [
+        { q: "一个房间需要装多少个筒灯？", a: "层高 2.7m、面积约 12 平方米的房间，建议安装 6 至 9 个 3W–5W COB LED 筒灯作为基础照明。厨房或书房这类需要重点照明的空间，会在操作台面上方加装 2 至 4 个射灯。我们随布局方案免费提供照度计算。" },
+        { q: "筒灯开孔尺寸一般是多少？", a: "家用筒灯的开孔多为 75mm 至 90mm，具体取决于灯具型号。师傅会携带多种规格的开孔器上门，并在开孔前先核对厂家规格书确认实际尺寸，避免开错孔。" },
+        { q: "没有吊顶空腔的混凝土天花能装嵌入式筒灯吗？", a: "混凝土楼板无吊顶空腔时无法直接嵌装筒灯，需要另做石膏灯槽、L 型灯箱或局部降低吊顶。若不想动吊顶，我们建议改用明装式筒灯或轨道射灯，无需预留安装深度。" },
+        { q: "马来西亚家居适合选什么色温？", a: "客厅与卧室建议使用 3000K 暖白光，营造温馨放松的氛围；厨房、浴室与书房建议 4000K 中性白光，作业视野更清晰。住宅空间一般不推荐 6500K 冷白光，观感偏冷硬。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪 LED 筒灯安装 | RM120/点位起",
+      metaDesc: "吉隆坡与雪兰莪新增 LED 筒灯点位安装。ST 持牌电工、75–90mm 精准开孔、Philips/Osram COB 灯具与免费照度计算。从RM120/点位起。",
+    },
+  },
+  "lighting/pendant-and-chandelier-install": {
+    ms: {
+      name: "Pemasangan Pendant & Chandelier",
+      tagline: "Pemasangan lampu pendant dan chandelier berat pada cangkuk siling diperkuat, lengkap dengan kabel keselamatan dan penyelarasan ketinggian. Dari RM 180.",
+      description:
+        "Lampu pendant di atas meja makan dan chandelier di ruang tamu berkembar (double volume) ialah titik fokus visual sesebuah rumah — tetapi ia juga lekapan paling berat dan paling berisiko jatuh jika dipasang sembarangan. KL Servis Rumah memasang pendant tunggal, kluster pendant dan chandelier kristal berat dengan penambatan yang betul: kami mengesan struktur sebenar di sebalik siling terlebih dahulu, kemudian menambat pada papak konkrit menggunakan dynabolt atau memasang penguat kayu/rangka GI di dalam siling gipsum. Plasterboard sahaja tidak sekali-kali dijadikan penanggung beban. Setiap lekapan berat disertakan kabel keselamatan keluli sebagai perlindungan sekunder. Untuk ruang berkembar dan void tangga, pasukan kami membawa tangga tinggi atau perancah, dan kami menyelaraskan ketinggian gantungan mengikut piawaian praktikal — biasanya 75cm hingga 90cm di atas permukaan meja makan supaya cahaya jatuh tepat tanpa menyilaukan mata.",
+      highlights: [
+        "Pengesanan struktur siling sebenar sebelum sebarang penambatan dilakukan",
+        "Penambatan dynabolt pada papak konkrit atau penguat kayu/rangka GI dalam siling gipsum",
+        "Kabel keselamatan keluli sebagai perlindungan sekunder untuk lekapan berat",
+        "Pemasangan kluster pendant dan chandelier kristal untuk ruang berkembar (double volume)",
+        "Penyelarasan ketinggian gantungan 75–90cm di atas meja makan untuk cahaya optimum",
+      ],
+      process: [
+        { step: "01", title: "Semakan Berat & Struktur", desc: "Kami menimbang atau menyemak spesifikasi berat lekapan, kemudian mengesan papak konkrit, rasuk atau rangka di sebalik siling untuk menentukan kaedah penambatan." },
+        { step: "02", title: "Pemasangan Titik Penambatan", desc: "Dynabolt ditanam pada konkrit, atau penguat kayu/GI dipasang di dalam rongga siling gipsum supaya beban tidak sekali-kali ditanggung plasterboard." },
+        { step: "03", title: "Pendawaian & Kabel Keselamatan", desc: "Kabel disambung di kotak simpang bertebat dan kabel keselamatan keluli diikat pada titik struktur sebagai perlindungan sekunder." },
+        { step: "04", title: "Pemasangan & Penyelarasan Ketinggian", desc: "Lekapan digantung, panjang rod atau kabel dilaraskan, dan kedudukan diselaraskan supaya betul-betul di tengah meja atau ruang." },
+        { step: "05", title: "Pemasangan Kristal & Pengujian", desc: "Untuk chandelier, kristal dipasang satu demi satu selepas rangka stabil, kemudian keseluruhan lekapan diuji dan digoncang perlahan untuk mengesahkan kekukuhan." },
+      ],
+      faqs: [
+        { q: "Berapa berat pendant yang boleh digantung pada siling gipsum?", a: "Plasterboard sahaja tidak boleh menanggung sebarang lekapan berat. Untuk pendant melebihi 3kg pada siling gipsum, kami membuka akses dan memasang penguat kayu atau rangka GI yang bersambung terus ke papak konkrit di atas, jadi beban dipindahkan ke struktur sebenar." },
+        { q: "Berapa tinggi pendant perlu digantung di atas meja makan?", a: "Kedudukan praktikal ialah 75cm hingga 90cm dari permukaan meja ke bahagian bawah lekapan. Ini memberi taburan cahaya yang baik di atas meja tanpa menghalang pandangan atau menyilaukan mata orang yang duduk." },
+        { q: "Bolehkah anda memasang chandelier di ruang tamu berkembar (double volume)?", a: "Boleh. Untuk void berkembar dan void tangga, kami membawa tangga tinggi atau perancah bersama peralatan keselamatan bekerja di tempat tinggi. Chandelier besar dipasang secara berperingkat — rangka dahulu, kristal kemudian — untuk keselamatan dan kemasan." },
+        { q: "Adakah kabel keselamatan benar-benar diperlukan?", a: "Untuk lekapan berat, ya. Kabel keselamatan keluli ialah perlindungan sekunder yang menahan lekapan sekiranya sambungan utama longgar atau gagal. Kami memasangnya sebagai amalan standard untuk semua chandelier dan pendant berat." },
+      ],
+      metaTitle: "Pemasangan Pendant & Chandelier KL & Selangor | Dari RM180",
+      metaDesc: "Pasang lampu pendant dan chandelier berat di KL & Selangor. Penambatan dynabolt/penguat GI, kabel keselamatan keluli & pemasangan ruang berkembar. Dari RM180.",
+    },
+    zh: {
+      name: "吊灯与枝形吊灯安装",
+      tagline: "在加固受力吊点上安装重型吊灯与水晶枝形吊灯，配防坠安全钢丝绳并精调悬挂高度。从 RM 180 起。",
+      description:
+        "餐桌上方的吊灯与挑空客厅的水晶枝形吊灯往往是整屋的视觉焦点，但它们同时也是最重、安装不当最容易坠落的灯具。KL Servis Rumah 专业安装单头吊灯、多头吊灯组与重型水晶吊灯：施工前先探测天花板内部真实结构，再依情况在混凝土楼板打入膨胀螺栓（Dynabolt），或在石膏板吊顶内加装木方 / 镀锌方通龙骨承力。我们绝不允许由石膏板本身承重。所有重型灯具均加装钢丝防坠绳作为二次保护。针对挑空客厅与楼梯井，施工队会自备高梯或移动脚手架，并按实用标准调校悬挂高度——餐桌上方通常控制在台面以上 75cm 至 90cm，确保光线聚焦于餐桌又不刺眼。",
+      highlights: [
+        "施工前探测天花板真实受力结构，杜绝盲目打孔安装",
+        "混凝土楼板膨胀螺栓锚固，或石膏吊顶内加装木方 / 镀锌方通承重",
+        "重型灯具一律加装钢丝防坠安全绳作二次保护",
+        "承接挑空客厅、楼梯井的大型水晶枝形吊灯高空安装",
+        "餐桌吊灯悬挂高度精调至台面以上 75–90cm，照度舒适不刺眼",
+      ],
+      process: [
+        { step: "01", title: "灯具重量与结构勘察", desc: "核对灯具规格重量，探测天花板内的混凝土楼板、横梁或龙骨位置，确定合适的锚固方式。" },
+        { step: "02", title: "受力吊点加固施工", desc: "在混凝土楼板打入膨胀螺栓，或在石膏吊顶内加装木方与镀锌方通，将荷载传递至真实结构。" },
+        { step: "03", title: "接线与防坠绳锁定", desc: "在绝缘接线盒内规范接驳电源，并将钢丝防坠安全绳锁扣固定于结构受力点。" },
+        { step: "04", title: "悬挂安装与高度调校", desc: "吊装灯体后调整吊杆或吊线长度，使灯具精准居中于餐桌或空间中轴线。" },
+        { step: "05", title: "水晶挂装与稳固测试", desc: "水晶吊灯待主体稳固后逐颗挂装晶体，最后通电测试并轻晃检验整体牢固度。" },
+      ],
+      faqs: [
+        { q: "石膏板吊顶最多能吊多重的吊灯？", a: "石膏板本身不具备承重能力。重量超过 3 公斤的吊灯，我们会开检修口在吊顶内加装木方或镀锌方通龙骨，并使其与上方混凝土楼板可靠连接，把荷载完全转移到真实结构上。" },
+        { q: "餐桌上方的吊灯应该挂多高？", a: "实用高度是灯具底部距餐桌台面 75cm 至 90cm。这个高度能让光线均匀覆盖餐桌，又不会遮挡对面视线或直射入座者眼睛造成眩光。" },
+        { q: "挑空客厅的大型水晶吊灯你们能安装吗？", a: "可以。针对挑空客厅与楼梯井，我们会自备高梯或移动脚手架并配戴高空作业安全带。大型水晶灯采取分步安装——先固定灯体主架，稳固后再逐颗挂装水晶，兼顾安全与成品效果。" },
+        { q: "防坠钢丝绳是否真的有必要？", a: "对重型灯具而言非常必要。防坠钢丝绳属于二次保护，一旦主吊点松动或失效，仍能拉住灯体防止坠落伤人。我们将其列为所有枝形吊灯与重型吊灯的标准施工工序。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪吊灯与水晶吊灯安装 | RM180起",
+      metaDesc: "吉隆坡与雪兰莪重型吊灯与水晶枝形吊灯安装。膨胀螺栓 / 方通加固、钢丝防坠绳与挑空高空作业。从RM180起。",
+    },
+  },
+  "lighting/cove-and-strip-led-installation": {
+    ms: {
+      name: "Pemasangan LED Cove & Jalur",
+      tagline: "Jalur LED tersembunyi dalam cove dan L-box dengan profil aluminium, pemacu tersembunyi dan pilihan pemalap. Dari RM 22 / kaki.",
+      description:
+        "Pencahayaan cove ialah kunci kepada rupa siling berlapis yang moden — cahaya tidak langsung yang memantul dari siling, tanpa lekapan yang kelihatan. KL Servis Rumah memasang jalur LED di dalam cove, L-box dan trough tersembunyi merentasi rumah teres, kondominium dan lot kedai di KL serta Selangor. Kami menggunakan jalur LED SMD berkualiti dengan profil aluminium (heatsink) supaya haba dilesapkan dengan betul dan jalur tidak menjadi malap atau bertukar warna selepas setahun dua. Pemacu (driver) diletakkan pada kedudukan boleh diakses melalui panel servis, bukan ditanam kekal dalam siling — ini bermakna kegagalan pemacu pada masa depan boleh dibaiki tanpa memecahkan plaster. Kami mengira beban wattan setiap larian dengan betul, menggunakan suntikan kuasa (power injection) untuk larian panjang supaya hujung jalur tidak menjadi malap, dan menyediakan pilihan pemalap (dimmer) atau jalur dwi-warna yang boleh ditukar antara cahaya hangat dan neutral.",
+      highlights: [
+        "Jalur LED SMD berkualiti dengan profil aluminium heatsink untuk hayat panjang",
+        "Pemacu diletakkan pada kedudukan boleh diservis, bukan ditanam kekal dalam siling",
+        "Pengiraan beban wattan dan suntikan kuasa untuk larian panjang tanpa hujung malap",
+        "Pilihan jalur dwi-warna (hangat/neutral) dan kawalan pemalap (dimmer)",
+        "Sambungan penyolder atau penyambung mampatan, bukan pita gam sementara",
+      ],
+      process: [
+        { step: "01", title: "Ukuran Larian & Pengiraan Beban", desc: "Kami mengukur jumlah panjang larian cove, mengira beban wattan sebenar dan menentukan saiz pemacu serta titik suntikan kuasa yang diperlukan." },
+        { step: "02", title: "Pemasangan Profil Aluminium", desc: "Profil aluminium dipasang di dalam cove atau L-box sebagai heatsink dan permukaan lekatan yang lurus untuk jalur LED." },
+        { step: "03", title: "Pemasangan Jalur & Penyambungan", desc: "Jalur LED dilekatkan dalam profil dan setiap sambungan dibuat dengan penyoldering atau penyambung mampatan berkualiti supaya tidak tercabut." },
+        { step: "04", title: "Kedudukan Pemacu & Pendawaian", desc: "Pemacu diletakkan berhampiran panel servis atau ruang boleh akses, disambung ke suis atau modul pemalap mengikut pengumpulan yang dipersetujui." },
+        { step: "05", title: "Pengujian & Pemeriksaan Kesekataan", desc: "Litar diuji, kesekataan warna sepanjang larian diperiksa, dan sebarang titik gelap atau bayang di bibir cove diperbetulkan sebelum serahan." },
+      ],
+      faqs: [
+        { q: "Mengapa jalur LED cove saya menjadi malap di hujung larian?", a: "Ini biasanya berlaku kerana penurunan voltan pada larian yang terlalu panjang untuk satu suapan kuasa. Kami menyelesaikannya dengan suntikan kuasa (power injection) di titik pertengahan atau membahagikan larian kepada beberapa litar dengan pemacu bersaiz betul." },
+        { q: "Adakah profil aluminium benar-benar perlu?", a: "Ya, untuk pemasangan yang tahan lama. Profil aluminium bertindak sebagai heatsink yang melesapkan haba jalur LED. Tanpanya, haba terperangkap dalam cove plaster dan jalur akan menjadi malap atau bertukar warna jauh lebih awal daripada jangka hayat yang dinyatakan." },
+        { q: "Bagaimana jika pemacu rosak selepas siling siap dicat?", a: "Kami sentiasa meletakkan pemacu di kedudukan yang boleh diakses melalui panel servis atau hujung cove yang terbuka. Ini bermakna pemacu boleh diganti pada masa depan tanpa memecahkan atau mengecat semula siling anda." },
+        { q: "Bolehkah cove LED dipasang dengan pemalap atau tukar warna?", a: "Boleh. Kami memasang jalur dwi-warna yang boleh ditukar antara cahaya hangat 3000K dan neutral 4000K, serta modul pemalap yang serasi. Untuk kediaman premium, kami juga menyokong kawalan pintar melalui Tuya atau protokol DALI." },
+      ],
+      metaTitle: "Pemasangan LED Cove & Jalur KL & Selangor | Dari RM22/kaki",
+      metaDesc: "Pasang jalur LED cove & L-box tersembunyi di KL & Selangor. Profil aluminium heatsink, pemacu boleh diservis, suntikan kuasa & pilihan pemalap. Dari RM22/kaki.",
+    },
+    zh: {
+      name: "灯槽与 LED 灯带安装",
+      tagline: "在灯槽与 L 型灯箱内隐藏铺设 LED 灯带，配铝合金型材散热、可检修驱动器与调光方案。从 RM 22 / 英尺起。",
+      description:
+        "灯槽间接照明是现代分层吊顶效果的关键——光线经天花板反射柔和洒下，完全看不到灯具本体。KL Servis Rumah 为吉隆坡与雪兰莪的排屋、公寓与店铺安装灯槽、L 型灯箱与暗藏灯带工程。我们采用优质 SMD LED 灯带并全程铺设铝合金型材作为散热器，避免热量积聚导致灯带一两年内衰减发暗或色温偏移。驱动电源一律安装在可通过检修口触及的位置，绝不永久封死在吊顶内——日后驱动器损坏可直接更换，无需砸开批荡重做。我们会精确核算每条回路的功率负载，长距离灯带采用中段补电（Power Injection）避免末端亮度衰减，并可提供调光模块或双色温灯带方案，在暖光与中性白光之间自由切换。",
+      highlights: [
+        "选用优质 SMD LED 灯带并全程加装铝合金型材散热，显著延长寿命",
+        "驱动电源安装于可检修位置，杜绝永久封死在吊顶内",
+        "精确核算回路功率负载，长距离采用中段补电避免末端发暗",
+        "可选双色温灯带（暖光 / 中性白）与调光模块控制",
+        "接头一律焊接或使用压接连接器，不使用临时胶带缠绕",
+      ],
+      process: [
+        { step: "01", title: "灯槽测量与负载核算", desc: "测量灯槽总长度，核算实际功率负载，据此确定驱动器规格与补电点位置。" },
+        { step: "02", title: "铝合金型材铺装", desc: "在灯槽或 L 型灯箱内固定铝型材，兼作散热器与灯带平直粘贴基面。" },
+        { step: "03", title: "灯带铺贴与接头处理", desc: "将 LED 灯带压入型材内，所有接头采用焊接或优质压接连接器处理，确保长期不脱落。" },
+        { step: "04", title: "驱动器定位与布线", desc: "驱动器安置于检修口附近的可触及空间，按约定的开关分组接入调光模块或普通开关回路。" },
+        { step: "05", title: "通电测试与均匀度检查", desc: "逐回路通电测试，检查全程色温一致性，修正灯槽边沿的暗区或阴影后交付。" },
+      ],
+      faqs: [
+        { q: "为什么我家灯槽 LED 灯带末端会明显变暗？", a: "这通常是单点供电下线路过长造成的压降。解决办法是在灯带中段增加补电点（Power Injection），或将长回路拆分为多段并配置规格匹配的驱动器，使全程亮度均匀一致。" },
+        { q: "灯带一定要装铝型材吗？", a: "想要长寿命就必须装。铝型材充当散热器，将 LED 灯带工作热量导出。若直接贴在石膏灯槽内，热量积聚会使灯带远早于标称寿命出现光衰、发暗甚至色温漂移。" },
+        { q: "吊顶封好上漆后驱动器坏了怎么办？", a: "我们始终把驱动器安装在检修口或灯槽开口端等可触及位置，日后更换驱动器无需破坏天花板批荡，也不必重新刷漆，维护成本极低。" },
+        { q: "灯槽灯带可以做调光或切换色温吗？", a: "可以。我们可安装暖光 3000K 与中性白 4000K 双色温灯带并配套调光模块。高端住宅还支持接入涂鸦 Tuya 智能系统或 DALI 专业调光协议进行场景控制。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪灯槽 LED 灯带安装 | RM22/英尺起",
+      metaDesc: "吉隆坡与雪兰莪灯槽与 L 型灯箱暗藏 LED 灯带安装。铝型材散热、驱动器可检修、中段补电与调光方案。从RM22/英尺起。",
+    },
+  },
+  "lighting/smart-lighting-and-dimmer-retrofit": {
+    ms: {
+      name: "Retrofit Pencahayaan Pintar & Malap",
+      tagline: "Naik taraf suis sedia ada kepada suis pintar Wi-Fi, Zigbee atau DALI dan pemalap serasi Google Home, Alexa serta Apple Home. Dari RM 250 / titik.",
+      description:
+        "Kebanyakan pemilik rumah di KL dan Selangor mahukan kawalan pintar tanpa perlu memecah dinding atau mendawai semula seluruh rumah. KL Servis Rumah melakukan retrofit pencahayaan pintar terus ke dalam kotak suis sedia ada anda. Langkah pertama sentiasa sama: kami membuka suis dan memeriksa sama ada wayar neutral tersedia di belakangnya, kerana kebanyakan suis pintar moden (seperti Aqara, Sonoff dan Schneider Wiser) memerlukan neutral untuk beroperasi dengan stabil. Jika neutral tiada, kami mencadangkan pilihan tanpa neutral atau modul relay tersembunyi di dalam siling. Untuk pemalapan, kami mengesahkan keserasian antara pemalap dan pemacu LED anda terlebih dahulu — memasang pemalap fasa yang tidak serasi ialah punca paling biasa lampu berkelip, berdengung atau tidak boleh dimalapkan hingga sifar. Semua kerja dilakukan oleh juruelektrik berlesen ST, dan kami menyiapkan pemasangan dengan memadankan peranti ke rangkaian Wi-Fi 2.4GHz anda serta menguji arahan suara pada platform pilihan anda.",
+      highlights: [
+        "Retrofit terus ke dalam kotak suis sedia ada tanpa memecah dinding",
+        "Semakan kehadiran wayar neutral dan cadangan pilihan tanpa neutral jika perlu",
+        "Pengesahan keserasian pemalap dengan pemacu LED sebelum pemasangan",
+        "Pilihan protokol Wi-Fi, Zigbee, DALI atau 0–10V mengikut skala projek",
+        "Pemadanan aplikasi dan ujian arahan suara Google Home, Alexa atau Apple Home",
+      ],
+      process: [
+        { step: "01", title: "Audit Suis & Semakan Neutral", desc: "Kami mengasingkan kuasa, membuka setiap kotak suis dan mengesahkan kehadiran wayar neutral serta ruang kedalaman kotak yang mencukupi." },
+        { step: "02", title: "Semakan Keserasian Beban", desc: "Jenis pemacu LED, jumlah beban dan kaedah pemalapan disemak supaya pemalap yang dipilih benar-benar serasi dan tidak menyebabkan kelipan." },
+        { step: "03", title: "Pemasangan Suis atau Modul Relay", desc: "Suis pintar dipasang ke dalam kotak sedia ada, atau modul relay tersembunyi dipasang di dalam siling bagi lekapan yang tidak boleh diubah suisnya." },
+        { step: "04", title: "Pemadanan Rangkaian & Bilik", desc: "Setiap peranti dipadankan ke rangkaian Wi-Fi 2.4GHz atau hab Zigbee, dinamakan mengikut bilik dan dikumpulkan dalam aplikasi." },
+        { step: "05", title: "Pengujian Adegan & Suara", desc: "Kami menguji lengkung pemalapan, adegan (scene) dan arahan suara pada Google Home, Alexa atau Apple Home sebelum menyerahkan sistem." },
+      ],
+      faqs: [
+        { q: "Adakah rumah saya perlu didawai semula untuk pencahayaan pintar?", a: "Dalam kebanyakan kes tidak perlu. Suis pintar direka untuk dipasang ke dalam kotak suis sedia ada. Kerja pendawaian semula hanya diperlukan jika kotak suis terlalu cetek atau jika wayar neutral tiada dan anda memilih penyelesaian berasaskan neutral." },
+        { q: "Apa yang berlaku jika tiada wayar neutral di belakang suis saya?", a: "Rumah lama di Malaysia selalunya tidak mempunyai neutral di suis. Kami boleh memasang suis pintar jenis tanpa neutral (no-neutral) yang serasi dengan beban minimum, atau memasang modul relay pintar tersembunyi di dalam siling berhampiran lekapan lampu." },
+        { q: "Mengapa lampu LED saya berkelip atau berdengung apabila dimalapkan?", a: "Ini hampir selalunya masalah keserasian antara pemalap dan pemacu LED. Kami mengesahkan jenis pemalap fasa yang betul (leading-edge atau trailing-edge) dan memastikan jumlah beban berada dalam julat minimum-maksimum pemalap tersebut." },
+        { q: "Platform rumah pintar manakah yang anda sokong?", a: "Kami memasang dan memadankan peranti untuk Google Home, Amazon Alexa, Apple Home dan aplikasi Tuya atau Smart Life. Untuk kediaman premium dan projek komersial, kami juga mengendalikan pemalapan DALI, 0–10V dan KNX." },
+      ],
+      metaTitle: "Retrofit Pencahayaan Pintar & Malap KL | Dari RM250/titik",
+      metaDesc: "Pasang suis pintar & pemalap di KL & Selangor tanpa memecah dinding. Semakan wayar neutral, keserasian pemacu LED & pemadanan Google Home/Alexa. Dari RM250/titik.",
+    },
+    zh: {
+      name: "智能照明与调光改造",
+      tagline: "在现有开关底盒内改装 Wi-Fi、Zigbee 或 DALI 智能开关与调光器，兼容 Google Home、Alexa 与 Apple Home。从 RM 250 / 点位起。",
+      description:
+        "吉隆坡与雪兰莪的大多数业主都希望实现智能灯控，却不愿开墙凿线、全屋重新布线。KL Servis Rumah 提供直接在现有开关底盒内完成的智能照明改造。第一步永远是拆开面板检查底盒内是否引入了零线（Neutral），因为主流智能开关（如 Aqara、Sonoff、Schneider Wiser）都需要零线才能稳定供电运行。若确实没有零线，我们会推荐免零线（No-Neutral）型号或改用隐藏式智能继电器模块安装在灯具端吊顶内。调光方面，我们会先核对调光器与 LED 驱动器的匹配性——调光相位不兼容正是灯光频闪、变压器嗡鸣和无法调至低亮度的最常见原因。所有作业均由 ST 持牌电工完成，收工前会协助完成 2.4GHz Wi-Fi 配网、房间分组命名与语音指令测试。",
+      highlights: [
+        "在现有开关底盒内直接改装，无需开墙凿线重新布线",
+        "开工前检查零线（Neutral）是否到位并提供免零线替代方案",
+        "预先核对调光器与 LED 驱动器相位匹配性，杜绝频闪嗡鸣",
+        "支持 Wi-Fi、Zigbee、DALI 与 0–10V 多种协议按项目规模选型",
+        "协助完成 App 配网、房间分组与 Google Home / Alexa / Apple Home 语音测试",
+      ],
+      process: [
+        { step: "01", title: "开关排查与零线检测", desc: "断电后逐一拆开开关面板，确认底盒内是否引入零线，并检查底盒深度是否足够容纳智能模块。" },
+        { step: "02", title: "负载与调光兼容核对", desc: "核对 LED 驱动器类型、回路总功率与调光方式，确保所选调光器完全兼容且不会引起频闪。" },
+        { step: "03", title: "智能开关或继电器安装", desc: "将智能开关装入现有底盒；对于不便改开关的灯具，改在吊顶内灯具端加装隐藏式智能继电器模块。" },
+        { step: "04", title: "配网与房间分组", desc: "逐台设备接入 2.4GHz Wi-Fi 或 Zigbee 网关，按房间命名并在 App 内完成分组归类。" },
+        { step: "05", title: "场景与语音联动测试", desc: "测试调光曲线、情景模式与 Google Home、Alexa、Apple Home 语音指令响应，确认无误后交付。" },
+      ],
+      faqs: [
+        { q: "做智能照明需要全屋重新布线吗？", a: "绝大多数情况下不需要。智能开关就是为装入现有开关底盒而设计的。只有当底盒过浅装不下模块，或底盒无零线而您坚持选用需零线的型号时，才需要局部改线。" },
+        { q: "如果开关底盒里没有零线怎么办？", a: "马来西亚的老房子开关位普遍没有零线。我们可以改用免零线（No-Neutral）智能开关（需满足最低负载要求），或在灯具端吊顶内加装隐藏式智能继电器模块，同样实现 App 与语音控制。" },
+        { q: "为什么 LED 灯调光时会频闪或有嗡嗡声？", a: "这几乎都是调光器与 LED 驱动器不匹配所致。我们会确认应使用前沿（Leading-Edge）还是后沿（Trailing-Edge）调光器，并核算回路负载是否落在调光器的最小与最大功率区间内。" },
+        { q: "你们支持哪些智能家居平台？", a: "我们支持 Google Home、Amazon Alexa、Apple Home 以及涂鸦 Tuya / Smart Life App 的安装与配对。针对高端住宅与商业项目，我们同时承接 DALI、0–10V 与 KNX 专业调光系统。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪智能照明与调光改造 | RM250/点位起",
+      metaDesc: "吉隆坡与雪兰莪智能开关与调光器改造，无需开墙布线。零线检测、LED 驱动兼容核对与 Google Home/Alexa 配对。从RM250/点位起。",
+    },
+  },
+
 };
 
 /**
