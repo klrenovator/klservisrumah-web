@@ -134,6 +134,10 @@ const PRIORITY_KEYS = [
   "locksmith/mortice-deadbolt-lock-replacement",
   "locksmith/key-cutting-and-re-keying",
   "locksmith/emergency-lockout-landed-house",
+  "autogate/single-swing-autogate",
+  "autogate/double-swing-autogate",
+  "autogate/sliding-autogate",
+  "autogate/autogate-motor-replacement-and-service",
 ];
 
 function checkBlock(key: string, locale: "ms" | "zh", b: SpecialtyLocaleBlock, issues: Issue[]) {

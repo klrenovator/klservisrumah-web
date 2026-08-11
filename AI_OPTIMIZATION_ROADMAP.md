@@ -1131,9 +1131,33 @@ Continued exactly from the final **Next Session — START HERE** section and sel
 ### Files
 - Modified: `config/specialty-locale-content.ts`, `scripts/validate-specialty-locale.ts`, `docs/seo-audit-report.md`, `public/llms-full.txt`, `public/site-summary.json`, `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
 
+### ✅ Session 2026-08-11 (part 21) — Autogate locale-specialty tranche
+
+**Status:** ✅ COMPLETED
+
+Continued exactly from the final **Next Session — START HERE** section and selected the listed candidate, **Autogate**. No standalone Air Conditioning content was created.
+
+- Added genuine native Bahasa Malaysia + Simplified Chinese content for all four Autogate specialties in `config/specialty-locale-content.ts`:
+  1. `autogate/single-swing-autogate` — Autogate Hayun Tunggal / 单开平开电动门 (from RM2,200)
+  2. `autogate/double-swing-autogate` — Autogate Hayun Berkembar / 双开平开电动门 (from RM3,200)
+  3. `autogate/sliding-autogate` — Autogate Gelangsar / 推拉电动门 (from RM3,800)
+  4. `autogate/autogate-motor-replacement-and-service` — Penggantian & Servis Motor Autogate / 电动门电机更换与保养 (from RM950)
+- Every locale block has an authored native name, tagline, substantive description, five highlights, five process steps, four FAQs, meta title and meta description. Content remains grounded in the published Autogate service record: swing, sliding and folding configurations; Autogate 2000, BFT, CAME, NICE, FAAC, Celmer, and DC Moto motors; site survey, driveway slope and motor sizing; concrete pad foundation and level ground track; IP-rated weather-resistant conduit wiring and isolator switches; control board programming and open/close delay synchronization; 2–4 paired remotes and infrared safety beam anti-crush sensors; mechanical manual release keys for power outages; optional 12V/24V battery backup installation (RM350–500); 6-month preventive maintenance servicing (RM180); and automation of existing manual gates. No thin or spun pages.
+- Added all four Autogate keys to `PRIORITY_KEYS` in `scripts/validate-specialty-locale.ts`, retaining the non-thin build gate (now enforcing all 88 completed specialties).
+- Reused the shared `LocaleSpecialtyPage` architecture: eight MS/ZH routes now publish; all four EN Autogate specialty pages emit real EN/MS/ZH/x-default hreflang clusters; typed related problems (`autogate-not-closing`, `autogate-remote-not-working`) and the `auto-gate-installation-guide-malaysia` blog relationship render through the existing topical map; localized service links and true 404s are preserved.
+- Sitemap and generated AI context increased **3,464 → 3,472 indexable URLs** (+8 localized specialty pages).
+
+#### Verification
+- PASS: lint (0 errors/warnings), type-check, topical map (28/28 services; 112 typed specialty relationships), locale gate (**88 specialties × MS/ZH = 176 native blocks**), i18n parity (1,074 × 3), estimator suite (263,293 assertions) and `npm audit` (0 vulnerabilities).
+- PASS: production build (**4,519 static pages generated**), full-corpus HTML audit (**4,511 pages**, 0 fatal / 0 warnings), technical SEO head audit (3,472 self-canonical indexable pages; 0 warnings) and metadata consistency SEO audit.
+- Production smoke: native MS `single-swing-autogate`, native ZH `sliding-autogate` and EN `double-swing-autogate` pages return 200 with the correct `<html lang>`, native titles/H1s, self-canonicals and full EN/MS/ZH/x-default hreflang clusters with in-language OfferCatalog, FAQPage and HowTo JSON-LD; MS + ZH Autogate indexes link all 4 localized specialties; unknown MS Autogate specialty returns a real 404; sitemap contains all 8 new Autogate URLs.
+
+### Files
+- Modified: `config/specialty-locale-content.ts`, `scripts/validate-specialty-locale.ts`, `docs/seo-audit-report.md`, `docs/seo-metadata-inventory.csv`, `docs/seo-metadata-summary.json`, `public/llms-full.txt`, `public/site-summary.json`, `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
+
 ## Next Session — START HERE
 
-1. Continue the locale-specialty tranche service-by-service. Completed: Painting + Ceiling (8), Plaster Ceiling (4), Waterproofing (4), Plumbing (4), Handyman (4), Electrical (4), Tiling (4), Flooring (4), Kitchen Cabinet (4), Carpentry (4), Epoxy Flooring (4), CCTV (4), Window Repair (4), Glass & Aluminium (4), Door (4), Roofing (4), Ceiling Fan (4), Lighting (4), Skim Coat (4), and **Locksmith (4)** = **84 specialties × MS + ZH (168 localized pages)**. Pick the next coherent four-specialty tranche from the remaining real high-value services—next candidates: **Autogate** (4), **Welding** (4), **Water Heater** (4), or any other real service from the 28-service catalogue. Reuse `specialty-locale-content.ts` + `LocaleSpecialtyPage` and author genuine native MS/ZH content. **Do not create Air Conditioning pages or content** (owner confirmed not offered).
+1. Continue the locale-specialty tranche service-by-service. Completed: Painting + Ceiling (8), Plaster Ceiling (4), Waterproofing (4), Plumbing (4), Handyman (4), Electrical (4), Tiling (4), Flooring (4), Kitchen Cabinet (4), Carpentry (4), Epoxy Flooring (4), CCTV (4), Window Repair (4), Glass & Aluminium (4), Door (4), Roofing (4), Ceiling Fan (4), Lighting (4), Skim Coat (4), Locksmith (4), and **Autogate (4)** = **88 specialties × MS + ZH (176 localized pages)**. Pick the next coherent four-specialty tranche from the remaining real high-value services—next candidates: **Welding** (4), **Water Heater** (4), or any other real service from the 28-service catalogue. Reuse `specialty-locale-content.ts` + `LocaleSpecialtyPage` and author genuine native MS/ZH content. **Do not create Air Conditioning pages or content** (owner confirmed not offered).
 2. Add real locale problem routes (154) only after the 14 problem-overlap groups are consolidated with evidence; then localize `RelatedProblems` links on localized specialty pages (they currently point to EN problem pages—documented and still blocked).
-3. Obtain business/translator QA for the completed localized specialty pages (168 so far) before measuring GSC indexation; this requires an owner/translator and cannot be completed from repository code alone.
+3. Obtain business/translator QA for the completed localized specialty pages (176 so far) before measuring GSC indexation; this requires an owner/translator and cannot be completed from repository code alone.
 4. Do not create thin or spun pages; rerun lint, type-check, build, topical-map, specialty-locale, i18n, HTML and SEO audits after every tranche.

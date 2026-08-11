@@ -4909,6 +4909,243 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       metaDesc: "吉隆坡与雪兰莪有地住宅非破坏性紧急开锁。核实房屋权限，当天支援视供应情况而定，并提供后续维修选择。RM180起。",
     },
   },
+
+  /* ── AUTOGATE ───────────────────────────────────────────────────────── */
+  "autogate/single-swing-autogate": {
+    ms: {
+      name: "Autogate Hayun Tunggal",
+      tagline: "Pemasangan motor autogate hayun satu daun berkualiti tinggi untuk rumah teres dan kediaman landed di KL & Selangor. Dari RM 2,200.",
+      description:
+        "Sistem autogate hayun tunggal direka khas untuk pagar satu daun yang paling biasa digunakan pada rumah teres dan kediaman landed di Lembah Klang. Kami membekalkan dan memasang sistem motor lengan tahan lasak (seperti Autogate 2000, BFT, CAME, NICE dan jenama tempatan terpilih) lengkap dengan kurungan pelekap tiang konkrit kukuh, panel kawalan kalis cuaca dengan perlindungan kilat, sensor keselamatan inframerah anti-himpit dan 2 hingga 4 alat kawalan jauh. Setiap pemasangan disertakan kunci pelepas manual untuk membuka pintu semasa ketiadaan elektrik, serta pilihan bateri sandar sandaran. Pemasangan dilakukan dengan pendawaian konduit luaran berkadar IP dan disokong jaminan motor serta kerja selama 12 bulan.",
+      highlights: [
+        "Sistem motor lengan tahan karat untuk pagar hayun satu daun rumah teres",
+        "Jenama dipercayai termasuk Autogate 2000, BFT, CAME, NICE dan jenama tempatan berkualiti",
+        "Termasuk sensor keselamatan inframerah untuk menghentikan pagar apabila mengesan halangan",
+        "Lengkap dengan 2–4 alat kawalan jauh (remote) dan kunci pelepas manual kecemasan",
+        "Pendawaian tahan cuaca berkadar IP dan jaminan motor serta pemasangan 12 bulan",
+      ],
+      process: [
+        { step: "01", title: "Tinjauan & Ukuran", desc: "Kami memeriksa saiz pagar, berat daun, cerun laluan kereta dan kekuatan tiang konkrit untuk menentukan kapasiti motor yang sesuai." },
+        { step: "02", title: "Pelekap & Motor", desc: "Kurungan keluli tugas berat dipasang kukuh pada tiang dan daun pagar, diikuti pemasangan unit motor lengan autogate." },
+        { step: "03", title: "Pendawaian & Panel", desc: "Pendawaian luaran disalurkan dalam konduit tahan cuaca, disambungkan ke isolator elektrik dan kotak kawalan kalis air." },
+        { step: "04", title: "Sensor & Remote", desc: "Sensor keselamatan inframerah dipasang pada paras sesuai, papan litar diprogramkan dan alat kawalan jauh dipadankan." },
+        { step: "05", title: "Ujian & Serahan", desc: "Kami menguji kitaran buka, tutup, henti kecemasan, fungsi kunci manual serta menyerahkan dokumen jaminan rasmi." },
+      ],
+      faqs: [
+        { q: "Berapakah harga pemasangan autogate hayun tunggal?", a: "Pemasangan sistem autogate hayun tunggal bermula dari RM 2,200, merangkumi unit motor lengan, kotak panel kawalan, sensor keselamatan, 2 unit alat kawalan jauh dan kerja pemasangan asas." },
+        { q: "Bolehkah autogate dipasang pada pagar manual sedia ada?", a: "Ya. Kebanyakan pagar manual dalam keadaan baik boleh diautomasikan. Kami akan memeriksa engsel, kelurusan dan keteguhan struktur tiang sebelum memulakan pemasangan motor." },
+        { q: "Bagaimana cara membuka pagar jika bekalan elektrik terputus?", a: "Setiap motor autogate dilengkapi kunci pelepas manual mekanikal supaya anda boleh membuka pagar secara manual dari dalam rumah. Anda juga boleh memilih pakej dengan bateri sandar tambahan." },
+        { q: "Apakah tempoh jaminan untuk pemasangan autogate?", a: "Semua pemasangan autogate didatangkan dengan jaminan bertulis 12 bulan merangkumi motor, papan kawalan dan mutu kerja pemasangan oleh juruteknik kami." },
+      ],
+      metaTitle: "Pemasangan Autogate Hayun Tunggal KL | Dari RM 2,200",
+      metaDesc: "Pemasangan autogate hayun satu daun di KL & Selangor. Autogate 2000, BFT, CAME, sensor keselamatan, 2-4 remote, kunci manual & jaminan 12 bulan. Dari RM2,200.",
+    },
+    zh: {
+      name: "单开平开电动门",
+      tagline: "为吉隆坡与雪兰莪排屋及有地住宅提供专业单扇平开电动门安装与供应，电机稳定耐用，从 RM 2,200 起。",
+      description:
+        "单开平开电动门是吉隆坡与雪兰莪排屋及独立/半独立式住宅最常见的电动门类型之一。我们供应并安装高品质臂式平开电机系统（如 Autogate 2000、BFT、CAME、NICE 及本地优质电机），配备坚固的柱体安装支架、防雨防雷控制箱、防夹红外安全传感器以及 2 至 4 个遥控器。每套系统均包含停电时可由内侧手动解锁的机械离合钥匙，亦可选配备用电池。户外电线均穿入 IP 防护等级防水线管敷设，享有 12 个月电机与施工质保。",
+      highlights: [
+        "适用于排屋与有地住宅单扇平开大门的高性能臂式电机",
+        "严选 Autogate 2000、BFT、CAME、NICE 及本地优质耐用电机品牌",
+        "配备红外线对射防夹安全传感器，遇阻自动停止运行",
+        "标配 2–4 个无线遥控器及停电应急手动离合钥匙",
+        "全套 IP 等级户外防水电线走管，享有 12 个月电机与安装保修",
+      ],
+      process: [
+        { step: "01", title: "现场勘测与选型", desc: "测量门扇尺寸、重量、车道坡度与砖柱承重，计算并选定最匹配的电机推力与臂长。" },
+        { step: "02", title: "支架与电机固定", desc: "在水泥门柱及大门门扇上安装重型加固支架，牢固挂载平开电机臂并校准水平。" },
+        { step: "03", title: "防水布线与控制箱", desc: "户外电线穿入防紫外线线管，配置独立隔离开关并安装密封防水防雷控制主板箱。" },
+        { step: "04", title: "安全光电与遥控对码", desc: "安装立柱红外线防夹传感器，设定电机行程限位，并对所有无线遥控器进行配对。" },
+        { step: "05", title: "循环测试与交付", desc: "反复测试开门、关门、遇阻反弹与停电手动释放功能，交付钥匙并提供质保单。" },
+      ],
+      faqs: [
+        { q: "单开平开电动门安装费用是多少？", a: "单开平开电动门系统起价为 RM 2,200，包含单臂电动门电机、控制箱、红外安全传感器、2个遥控器及标准现场安装服务。" },
+        { q: "现有的手动铁门可以改装成电动门吗？", a: "绝大多数情况下可以。只要现有门体结构完好、无严重变形或严重锈蚀，且门柱铰链牢固，我们即可加装电机支架改装为电动门。" },
+        { q: "停电时电动门如何开启？", a: "所有电机均配备专用手动离合钥匙，停电时只需在电机上旋开离合即可手动推开大门；您也可以选配 12V/24V 备用蓄电池以便停电时持续供电。" },
+        { q: "电动门安装提供多久保修？", a: "我们提供 12 个月的电机与安装工艺书面保修期。保修期内如发生非人为故障，技师将上门检修与更换部件。" },
+      ],
+      metaTitle: "吉隆坡单开平开电动门安装 | RM2,200起",
+      metaDesc: "吉隆坡与雪兰莪单开平开电动门供应与安装。Autogate 2000、BFT、CAME耐用电机，红外防夹传感器，遥控器与停电手动释放，12个月保修。RM2,200起。",
+    },
+  },
+
+  "autogate/double-swing-autogate": {
+    ms: {
+      name: "Autogate Hayun Berkembar",
+      tagline: "Pemasangan sistem autogate dwi-motor untuk pintu pagar dua daun di KL & Selangor. Operasi lancar, selamat dan segerak dari RM 3,200.",
+      description:
+        "Sistem autogate hayun berkembar merupakan penyelesaian ideal untuk kediaman dengan laluan masuk lebar seperti rumah teres dua lot kereta, semi-D dan banglo di sekitar Kuala Lumpur serta Selangor. Sistem ini menggunakan sepasang motor lengan elektrik yang diselaraskan melalui papan kawalan pintar dengan fungsi selang masa (delay) boleh laras bagi memastikan kedua-dua daun pagar membuka dan menutup mengikut urutan yang betul tanpa berlanggar. Pakej lengkap merangkumi dua unit motor lengan, kotak kawalan kalis air dengan perlindungan kilat, dua set sensor keselamatan inframerah, hentian lantai tengah, 2 hingga 4 alat kawalan jauh serta kunci manual untuk setiap motor. Disokong jaminan motor dan pemasangan selama 12 bulan.",
+      highlights: [
+        "Sistem dwi-motor segerak dengan kawalan selang masa pintar untuk pagar dua daun",
+        "Sesuai untuk laluan masuk lebar rumah teres 2 lot, semi-D dan banglo",
+        "Dilengkapi dua set sensor inframerah anti-himpit dan hentian tengah yang kukuh",
+        "Papan kawalan terlindung kilat dengan sokongan kunci pelepas manual kecemasan",
+        "Termasuk 2–4 unit remote dan jaminan penuh motor serta pemasangan selama 12 bulan",
+      ],
+      process: [
+        { step: "01", title: "Pemeriksaan Geometri Pagar", desc: "Kami mengukur kedua-dua daun pagar, menilai jurang pertengahan, engsel dan tahap kerataan lantai laluan masuk." },
+        { step: "02", title: "Pemasangan Dwi-Motor", desc: "Sepasang motor lengan dipasang pada kedua-dua belah tiang dan daun pagar menggunakan kurungan teguh." },
+        { step: "03", title: "Pendawaian & Kotak Kawalan", desc: "Kabel kedua-dua motor disambung ke papan kawalan utama dalam kotak kalis cuaca dengan isolator keselamatan." },
+        { step: "04", title: "Penyegerakan & Sensor", desc: "Masa buka/tutup diselaraskan bagi mengelakkan pertembungan daun pagar, dan sensor inframerah dipasang." },
+        { step: "05", title: "Pengujian Kitaran Penuh", desc: "Ujian berulang bagi kelancaran buka, tutup, hentian kecemasan dan fungsi manual sebelum serahan dilakukan." },
+      ],
+      faqs: [
+        { q: "Berapakah kos pemasangan autogate hayun berkembar?", a: "Pemasangan autogate hayun berkembar bermula dari RM 3,200. Harga ini termasuk dua unit motor lengan, kotak kawalan penyegerakan, sensor inframerah, 2 alat kawalan jauh dan pemasangan standard." },
+        { q: "Bagaimanakah sistem menghalang daun pagar daripada bertembung semasa menutup?", a: "Papan kawalan kami mempunyai fungsi selang masa (delay timer) pintar. Satu daun pagar (biasanya yang mempunyai penutup tengah) akan mula bergerak beberapa saat sebelum atau selepas daun satu lagi untuk memastikan penutupan kemas." },
+        { q: "Bolehkah saya membuka satu daun sahaja jika menunggang motosikal?", a: "Ya. Kebanyakan sistem papan kawalan kami menyokong fungsi 'pedestrian mode' atau buka satu daun melalui butang berasingan pada alat kawalan jauh anda." },
+        { q: "Apakah penyelenggaraan yang perlu dilakukan untuk autogate berkembar?", a: "Kami mengesyorkan pelinciran engsel dan sendi motor setiap 6 bulan serta memastikan tiada tumbuhan atau halangan menyekat sensor keselamatan dan hentian lantai." },
+      ],
+      metaTitle: "Pemasangan Autogate Hayun Berkembar KL | Dari RM 3,200",
+      metaDesc: "Sistem autogate hayun dua daun dwi-motor di KL & Selangor. Papan pintar segerak, sensor keselamatan, 2-4 remote, kunci manual & jaminan 12 bulan. Dari RM3,200.",
+    },
+    zh: {
+      name: "双开平开电动门",
+      tagline: "为吉隆坡与雪兰莪双车位排屋、半独立及独立洋房安装双电机同步平开电动门，平稳静音，从 RM 3,200 起。",
+      description:
+        "双开平开电动门是宽门洞住宅（如双车位排屋、半独立式洋房和独栋别墅）的理想自动化方案。系统采用双臂电动电机，由智能微电脑控制板统一协调驱动，具备可调延时开合功能，确保带压条或天地锁的左右门扇按正确顺序先后闭合，避免相互碰撞或卡门。标准配置包含两套重型平开电机臂、防雨防雷主控箱、双侧红外线防夹感应光电探头、地面中位止动器、2 至 4 个无线遥控器以及双侧应急手动释放钥匙。施工由专业技师严格遵循电气安全标准完成，享有 12 个月全套质保。",
+      highlights: [
+        "双电机智能微电脑协同驱动，开闭延时可调，门扇闭合平整不撞门",
+        "适合双车位排屋、半独立式及独栋有地住宅宽车道入口",
+        "配备双侧对射红外防夹传感器及高强度中位地面限位止挡",
+        "支持单扇行人/摩托车开启模式（Pedestrian Mode）灵活通行",
+        "标配 2–4 个遥控器、停电手动钥匙及 12 个月电机与安装质保",
+      ],
+      process: [
+        { step: "01", title: "双门几何与铰链测量", desc: "检查两侧门扇水平度、门缝搭接宽度、左右柱位承载力及车道坡度，规划双臂开度。" },
+        { step: "02", title: "双臂电机坚固固定", desc: "在左右两侧门柱与门扇分别安装定制加厚钢构支架，装上双平开电机并校正行程。" },
+        { step: "03", title: "主控箱与防雷布线", desc: "将双路电机信号线与电源线引入防水控制箱，安装浪涌防雷保护器及独立隔离开关。" },
+        { step: "04", title: "微电脑编程与延时设定", desc: "调节左右门扇开关延时差值，校准红外防夹电眼，配对遥控器并启用单扇开启模式。" },
+        { step: "05", title: "全循环调试与交付", desc: "进行多轮连续开关、阻挡回弹、停电离合测试，确认运行顺畅静音后向业主交付质保凭证。" },
+      ],
+      faqs: [
+        { q: "双开平开电动门全套安装需要多少钱？", a: "双开平开电动门系统套餐起价为 RM 3,200，包含两台平开电机、智能同步主控箱、红外防夹传感器、2个遥控器及标准上门安装服务。" },
+        { q: "双开门怎样避免两扇门关门时互相卡住？", a: "控制主板内置智能微电脑延时程序，可以让带重叠封边的母门比子门晚几秒闭合、早几秒开启，确保每次关门都能精准扣合。" },
+        { q: "骑摩托车或步行时可以只开一边门吗？", a: "可以。我们的控制板均支持单扇通行模式（Pedestrian Mode），遥控器上的副按键可单独操控单侧门扇开启，无需每次全开。" },
+        { q: "双开电动门需要怎样的日常维护？", a: "建议每半年为门铰链和电机关节加注润滑油，并定期清理地面中间止动挡块及红外传感器表面的灰尘树叶，保持感应灵敏。" },
+      ],
+      metaTitle: "吉隆坡双开平开电动门安装 | RM3,200起",
+      metaDesc: "吉隆坡与雪兰莪双开平开电动门系统安装。双电机智能同步、延时防撞、红外防夹、遥控器与停电手动离合，12个月保修。RM3,200起。",
+    },
+  },
+
+  "autogate/sliding-autogate": {
+    ms: {
+      name: "Autogate Gelangsar",
+      tagline: "Pemasangan sistem autogate gelangsar (sliding) dengan motor gear rack-and-pinion berkuasa tinggi di KL & Selangor. Dari RM 3,800.",
+      description:
+        "Sistem autogate gelangsar merupakan pilihan terbaik untuk kediaman dengan laluan kereta sempit, cerun curam atau kawasan di mana pagar hayun akan memakan ruang meletak kereta. Kami memasang motor gelangsar tugas berat berasaskan transmisi gear rak dan pinan keluli bergalvani (seperti Autogate 2000, BFT, CAME, NICE dan jenama tempatan terbukti) yang mampu menggerakkan pagar seberat 400kg hingga 1,500kg dengan lancar. Pemasangan merangkumi asas tapak konkrit motor, rel trek tanah beraras rapi, roda keluli bawah, roda pemandu atas nilon, suis had magnetik/mekanikal, sensor keselamatan inframerah anti-himpit dan 2 hingga 4 alat kawalan jauh. Semua unit dilengkapi kunci pelepas klac manual untuk kegunaan semasa tiada elektrik serta jaminan rasmi 12 bulan.",
+      highlights: [
+        "Motor transmisi gear rack-and-pinion berkuasa tinggi untuk pagar gelangsar 400kg–1500kg",
+        "Penyelesaian terbaik untuk laluan kereta sempit dan laluan bercerun tanpa memakan ruang parkir",
+        "Asas tapak konkrit kukuh dengan rel trek tanah keluli rata dan roda galas tahan karat",
+        "Dilengkapi suis had tepat, sensor keselamatan inframerah dan fungsi undur automatik",
+        "Termasuk 2–4 alat kawalan jauh, kunci pelepas gear manual dan jaminan motor 12 bulan",
+      ],
+      process: [
+        { step: "01", title: "Pemeriksaan Trek & Ruang Gelangsar", desc: "Kami mengukur panjang pagar, ruang laluan sisi, kerataan trek tanah dan beban berat keseluruhan pintu pagar." },
+        { step: "02", title: "Asas Konkrit & Tapak Motor", desc: "Tapak konkrit bertetulang dibina untuk memegang plat dasar motor autogate dengan kukuh dan stabil." },
+        { step: "03", title: "Pemasangan Gear Rak & Motor", desc: "Gear rak keluli bergalvani dipasang pada sepanjang pagar dan dipadankan dengan gear pinan motor." },
+        { step: "04", title: "Pendawaian, Suis Had & Sensor", desc: "Pendawaian kuasa dan kotak kawalan disambung, suis had kedudukan dipasang serta sensor inframerah diuji." },
+        { step: "05", title: "Ujian Beban & Serahan", desc: "Pengujian kelancaran pergerakan, pengesanan halangan, fungsi kunci klac manual dan serahan kad jaminan." },
+      ],
+      faqs: [
+        { q: "Berapakah harga pemasangan sistem autogate gelangsar?", a: "Pemasangan autogate gelangsar bermula dari RM 3,800. Pakej merangkumi motor gear gelangsar, rak gear keluli sehingga 4 meter, kotak kawalan, 2 alat kawalan jauh, sensor keselamatan dan kerja pemasangan asas." },
+        { q: "Mengapa memilih autogate gelangsar berbanding autogate hayun?", a: "Pagar gelangsar bergerak selari dengan pagar tepi, jadi ia tidak mengambil sebarang ruang di dalam tempat letak kereta. Ia amat sesuai jika anda mempunyai laluan masuk pendek atau curam di mana pagar hayun tidak dapat dibuka." },
+        { q: "Bolehkah autogate gelangsar berfungsi jika terdapat pasir atau batu di atas trek?", a: "Trek tanah perlu sentiasa bersih daripada batu kerikil atau daun tebal agar roda tidak tersangkut. Kami menggunakan roda bearing keluli beralur dan mengesyorkan pembersihan berkala pada trek pagar." },
+        { q: "Bagaimana cara membuka pagar gelangsar jika tiada elektrik?", a: "Setiap motor gelangsar mempunyai kunci klac manual (manual release key). Anda hanya perlu memusingkan kunci tersebut pada badan motor untuk melepaskan gear dan menolak pagar dengan tangan." },
+      ],
+      metaTitle: "Pemasangan Autogate Gelangsar KL | Dari RM 3,800",
+      metaDesc: "Pemasangan sistem autogate gelangsar (sliding) di KL & Selangor. Motor gear rack-and-pinion Autogate 2000, BFT, CAME, sensor keselamatan & jaminan 12 bulan. Dari RM3,800.",
+    },
+    zh: {
+      name: "推拉电动门",
+      tagline: "为吉隆坡与雪兰莪排屋及厂房提供齿轮齿条驱动重型推拉电动门安装，节省车道空间，从 RM 3,800 起。",
+      description:
+        "推拉电动门（Sliding Autogate）是车位纵深较浅、车道带有坡度或平开门会占用停车空间时的最佳解决方案。大门沿围墙侧边轨道平移滑行，完全不侵占停车区域。我们供应并安装高负荷齿轮齿条驱动推拉电机（如 Autogate 2000、BFT、CAME、NICE 及本地知名重型电机），单机承重可达 400kg 至 1,500kg。服务包含加固水泥电机地基浇筑、镀锌钢齿条精密固定、水平地轨调校、上部尼龙导向轮加固、磁感应/机械限位开关校准、对射红外防夹探头以及 2 至 4 个无线遥控器。每台电机均配备停电齿轮脱扣钥匙，享受 12 个月整机与工程质保。",
+      highlights: [
+        "大扭矩齿轮齿条传动电机，支持 400kg–1500kg 重型推拉铁门与铝合金门",
+        "门体沿墙体侧向滑移，完全不占用车位纵深空间，尤其适合陡坡与狭窄车道",
+        "现浇加固混凝土电机底座，配合镀锌耐磨钢齿条与防跳槽精密地轨",
+        "配置精准磁感应限位开关、红外线防夹感应光电及遇阻反向安全保护",
+        "标配 2–4 个无线遥控器、停电手动离合脱扣钥匙及 12 个月电机质保",
+      ],
+      process: [
+        { step: "01", title: "轨道与侧向净空勘测", desc: "检查地面平整度、地轨直线度、侧向滑行收纳空间以及大门总重量与滑动阻力。" },
+        { step: "02", title: "现浇混凝土基座", desc: "根据电机重量开挖并浇筑专用加固混凝土台座，埋设镀锌地脚螺栓保证电机永不松动。" },
+        { step: "03", title: "钢齿条与电机对位", desc: "沿门身水平焊接或螺栓固定镀锌钢齿条，调准电机齿轮咬合间隙，确保传动平稳无杂音。" },
+        { step: "04", title: "限位磁铁与安全探头", desc: "安装开启与关闭限位磁铁装置，固定两侧红外对射防夹电眼并敷设防水电源线管。" },
+        { step: "05", title: "负荷运行调试与交付", desc: "进行满负荷平滑推拉测试、安全防夹停止测试及停电脱扣离合钥匙演练，交付质保凭证。" },
+      ],
+      faqs: [
+        { q: "推拉电动门全套安装价格是多少？", a: "推拉电动门系统起步价为 RM 3,800，包含高扭矩推拉电机主机、最长4米镀锌钢齿条、主控箱、红外防夹电眼、2个遥控器及标准水泥基座与安装服务。" },
+        { q: "为什么推拉电动门比平开电动门更适合狭窄车道？", a: "因为推拉门是横向平移贴着围墙收纳，完全不会像平开门那样向内或向外甩动扇面，因此不会刮蹭停在门后的车辆，也不会受车道上下坡度影响。" },
+        { q: "地轨上有沙石或杂物会不会导致电动门卡住？", a: "较大的碎石可能会阻挡滚轮。我们使用带防脱凹槽的重型轴承钢轮，并建议业主定期用扫帚或高压水枪清理地轨槽内的泥沙杂草，保持滑道畅通。" },
+        { q: "停电时推拉电动门怎么手动推开？", a: "推拉电机机身侧面设有专用机械离合锁孔。插入专用钥匙旋转半圈即可脱开传动齿轮，随后即可用手轻松推动大门。" },
+      ],
+      metaTitle: "吉隆坡推拉电动门安装 | RM3,800起",
+      metaDesc: "吉隆坡与雪兰莪齿轮齿条推拉电动门安装。Autogate 2000、BFT、CAME重型电机，水泥基座，红外防夹，遥控器与停电手动释放，12个月保修。RM3,800起。",
+    },
+  },
+
+  "autogate/autogate-motor-replacement-and-service": {
+    ms: {
+      name: "Penggantian & Servis Motor Autogate",
+      tagline: "Servis pembaikan, penggantian motor rosak, papan kawalan dan bateri sandar untuk autogate di KL & Selangor. Dari RM 950.",
+      description:
+        "Sekiranya autogate anda mengeluarkan bunyi bising, bergerak perlahan, tidak dapat ditutup rapat, atau motor langsung tidak bertindak balas terhadap remote, juruteknik kami menyediakan perkhidmatan diagnosis dan pembaikan komprehensif di seluruh KL dan Selangor. Kami membaiki dan menggantikan pelbagai jenis motor autogate termasuk sistem hayun (arm & underground), gelangsar (sliding) dan lipat daripada jenama seperti Autogate 2000, BFT, CAME, NICE, FAAC, Celmer, DC Moto dan jenama tempatan. Perkhidmatan merangkumi penggantian unit motor baharu, penukaran papan litar elektronik (PCB), penggantian kapasitor, pengaturcaraan penerima remote baharu, penjajaran trek dan engsel, pemasangan bateri sandar (RM350–500) serta servis pencegahan berkala 6 bulan (RM180). Semua penggantian motor baharu disokong jaminan 12 bulan.",
+      highlights: [
+        "Penggantian motor autogate rosak untuk jenis hayun, gelangsar dan lipat dari RM950",
+        "Diagnosis tepat di tapak untuk papan litar (PCB), kapasitor, transformer dan sensor",
+        "Menyokong pelbagai jenama utama: Autogate 2000, BFT, CAME, NICE, FAAC, Celmer & DC Moto",
+        "Pemasangan bateri sandar sokongan gangguan elektrik dan servis berkala 6 bulan",
+        "Jaminan bertulis 12 bulan untuk unit motor baharu dan komponen yang diganti",
+      ],
+      process: [
+        { step: "01", title: "Diagnosis Komprehensif", desc: "Juruteknik memeriksa bekalan kuasa, papan kawalan, kapasitor, keadaan mekanikal motor dan penjajaran pagar." },
+        { step: "02", title: "Sebut Harga Telus", desc: "Kami menerangkan punca kerosakan dan memberikan pilihan pembaikan komponen atau penggantian motor baharu dengan kos jelas." },
+        { step: "03", title: "Penggantian atau Pembaikan", desc: "Komponen rosak seperti motor, kapasitor atau papan litar digantikan dengan alat ganti tulen yang serasi." },
+        { step: "04", title: "Pelinciran & Penjajaran", desc: "Engsel, roda atau gear rak dilincirkan dan suis had dilaraskan semula untuk pergerakan lancar." },
+        { step: "05", title: "Ujian Sensor & Jaminan", desc: "Fungsi buka/tutup, sensor anti-himpit dan alat kawalan jauh diuji sebelum pengesahan jaminan diserahkan." },
+      ],
+      faqs: [
+        { q: "Berapakah kos penggantian atau servis motor autogate?", a: "Penggantian motor autogate rosak bermula dari RM 950 bergantung pada jenis motor (lengan atau gelangsar) dan spesifikasi pintu. Lawatan servis penyelenggaraan berkala bermula dari RM 180." },
+        { q: "Bolehkah saya menggantikan motor sahaja tanpa menukar seluruh sistem pintu pagar?", a: "Ya. Jika pintu pagar, tiang dan struktur pendawaian masih elok, kami hanya menggantikan unit motor atau papan kawalan yang rosak agar kos kekal menjimatkan." },
+        { q: "Apakah punca autogate tiba-tiba tidak boleh dibuka atau ditutup?", a: "Punca biasa termasuk kapasitor motor terbakar, papan litar rosak akibat sambaran kilat atau serangga, bateri remote lemah, atau sensor keselamatan inframerah terhalang/terputus." },
+        { q: "Adakah anda menyediakan bateri sandar untuk gangguan elektrik?", a: "Ya. Kami membekal dan memasang set bateri sandar (biasanya RM 350–500) yang membolehkan autogate anda terus beroperasi selama 8 hingga 24 jam semasa bekalan elektrik terputus." },
+      ],
+      metaTitle: "Servis & Ganti Motor Autogate KL | Dari RM 950",
+      metaDesc: "Pembaikan dan penggantian motor autogate di KL & Selangor. Autogate 2000, BFT, CAME, gantian papan PCB, bateri sandar & servis penyelenggaraan. Dari RM950.",
+    },
+    zh: {
+      name: "电动门电机更换与保养",
+      tagline: "吉隆坡与雪兰莪电动门故障排查、损坏电机更换、控制主板维修与备用电池安装，从 RM 950 起。",
+      description:
+        "当您的电动门出现异响、运转无力、无法完全关紧、遥控失灵或电机完全不运转时，我们的专业技师团队在吉隆坡与雪兰莪提供迅速上门诊断与维修服务。我们熟悉市场上各类平开（臂式与地埋式）、推拉（Sliding）及折叠式电动门，支持 Autogate 2000、BFT、CAME、NICE、FAAC、Celmer、DC Moto 等主流及本地品牌。服务涵盖故障电机整体更换、微电脑主板（PCB）维修更换、启动电容更换、遥控接收模块配对、轨道与铰链调校润滑、停电备用电池加装（RM350–500）以及半年定期预防性维护（RM180）。所有新更换的电机均享有 12 个月官方保修。",
+      highlights: [
+        "平开、推拉与折叠电动门故障电机更换，起价仅需 RM950",
+        "精准排查控制主板、启动电容、防雷变压器、红外电眼及遥控接收故障",
+        "支持 Autogate 2000、BFT、CAME、NICE、FAAC、Celmer 及 DC Moto 等主流品牌",
+        "提供停电应急备用电池（Battery Backup）加装及每 6 个月定期保养巡检",
+        "新更换电机及核心零部件均附带 12 个月书面品质保修",
+      ],
+      process: [
+        { step: "01", title: "现场故障诊断", desc: "测试电源输入、主板电路、启动电容阻值、电机绕组及机械传动部件，准确找出故障根源。" },
+        { step: "02", title: "透明方案与报价", desc: "向业主如实说明问题所在，提供单件维修或整机更换方案，确认清晰明码标价后再行动工。" },
+        { step: "03", title: "原厂匹配件更换", desc: "拆卸损坏电机或烧毁主板，安装全新适配的正品电机或主控模块并严格固定。" },
+        { step: "04", title: "铰链润滑与限位校正", desc: "对门铰链、滑轮与齿条进行专业黄油润滑，重新校准开关门行程限位与感应光电。" },
+        { step: "05", title: "遥控测试与保修交付", desc: "测试所有遥控器操作、遇阻保护及防雨密封性，开具 12 个月部件保修单据。" },
+      ],
+      faqs: [
+        { q: "更换电动门电机的费用是多少？", a: "故障电机更换起步价为 RM 950（视平开臂式或推拉齿轮电机的功率和型号而定）。日常上门全面保养巡检服务为 RM 180。" },
+        { q: "可以只换坏掉的电机而不换整扇大门吗？", a: "完全可以。只要大门金属结构和门柱依然坚固，我们只需更换损坏的电机或电路板即可恢复正常使用，帮您大幅节省开支。" },
+        { q: "电动门突然完全没有反应通常是什么原因？", a: "常见原因包括雷击导致主板保险丝或芯片烧毁、电机启动电容击穿老化、红外传感器线路被壁虎或蚂蚁短路、或者遥控器电池耗尽。技师上门后可迅速测出原因。" },
+        { q: "你们可以加装停电备用电池吗？", a: "可以。我们提供专用的 12V/24V 备用蓄电池安装服务（通常费用为 RM 350–500），在外部停电时可保障电动门继续正常开关 8 到 24 小时。" },
+      ],
+      metaTitle: "吉隆坡电动门电机更换与保养 | RM950起",
+      metaDesc: "吉隆坡与雪兰莪电动门维修与电机更换。Autogate 2000、BFT、CAME主板电容维修、备用电池加装与保养，12个月保修。RM950起。",
+    },
+  },
 };
 
 /**
