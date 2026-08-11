@@ -1917,3 +1917,41 @@ Continued exactly from the final **Next Session — START HERE** section of `AI_
 ### Next session
 - Continue the locale-specialty tranche with **Autogate** (4), **Welding** (4), **Water Heater** (4), or another real service from the 28-service catalogue. Never create standalone Air Conditioning content.
 - Locale problem routes remain blocked pending evidence-based consolidation of the 14 overlap groups. Business/translator QA remains owner-side.
+
+---
+
+## Session 2026-08-11 (part 21) — Autogate locale-specialty tranche
+
+**Branch:** `arena/019ff038-klservisrumah-web`
+**Status:** ✅ COMPLETED
+
+Continued exactly from the final **Next Session — START HERE** section of `AI_OPTIMIZATION_ROADMAP.md`. Selected **Autogate**, the listed candidate service. No Air Conditioning content was created.
+
+### Completed
+- Authored genuine native Bahasa Malaysia + Simplified Chinese content for all four Autogate specialties in `config/specialty-locale-content.ts`:
+  - `autogate/single-swing-autogate` — Autogate Hayun Tunggal / 单开平开电动门 (from RM2,200)
+  - `autogate/double-swing-autogate` — Autogate Hayun Berkembar / 双开平开电动门 (from RM3,200)
+  - `autogate/sliding-autogate` — Autogate Gelangsar / 推拉电动门 (from RM3,800)
+  - `autogate/autogate-motor-replacement-and-service` — Penggantian & Servis Motor Autogate / 电动门电机更换与保养 (from RM950)
+- Each locale block contains an authored name, tagline, substantive description, 5 highlights, 5 process steps, 4 FAQs, `metaTitle` and `metaDesc`. The content is grounded in the published Autogate service record: swing, sliding and folding configurations; Autogate 2000, BFT, CAME, NICE, FAAC, Celmer, and DC Moto motors; site survey, driveway slope and motor sizing; concrete pad foundation and level ground track; IP-rated weather-resistant conduit wiring and isolator switches; control board programming and open/close delay synchronization; 2–4 paired remotes and infrared safety beam anti-crush sensors; mechanical manual release keys for power outages; optional 12V/24V battery backup installation (RM350–500); 6-month preventive maintenance servicing (RM180); and automation of existing manual gates.
+- Added all four Autogate keys to the non-thin `PRIORITY_KEYS` build gate in `scripts/validate-specialty-locale.ts`; it now enforces all 88 completed specialties.
+- Reused the shared locale-specialty architecture: eight MS/ZH routes publish, all four EN Autogate specialty pages emit real EN/MS/ZH/x-default clusters, typed related problems (`autogate-not-closing`, `autogate-remote-not-working`) and the `auto-gate-installation-guide-malaysia` blog relationship render through the existing topical map, and unknown localized specialty slugs remain true 404s.
+- Sitemap and generated AI context now contain **3,472 indexable URLs** (+8 localized specialty URLs).
+
+### Verification
+- PASS: lint (0 errors/warnings), type-check, topical-map (28/28 services; 112 typed relationships), specialty locale gate (**88 specialties × MS/ZH = 176 native blocks**), i18n parity (1,074 keys × 3 locales), estimator suite (263,293 assertions), production build (**4,519 static pages generated**), full-corpus HTML audit (**4,511 pages**, 0 fatal / 0 warnings), technical SEO head audit (3,472 self-canonical indexable pages; 0 warnings), metadata consistency SEO audit, and `npm audit` (0 vulnerabilities).
+- Production smoke PASS: native MS `single-swing-autogate`, native ZH `sliding-autogate` and EN `double-swing-autogate` pages return 200 with correct language, native titles/H1s, self-canonicals and full EN/MS/ZH/x-default clusters; localized pages emit in-language OfferCatalog, FAQPage and HowTo JSON-LD; MS + ZH Autogate indexes link all four specialties; unknown MS specialty returns 404; all eight localized URLs appear in the 3,472-URL sitemap.
+
+### Files changed
+- `config/specialty-locale-content.ts`
+- `scripts/validate-specialty-locale.ts`
+- `docs/seo-audit-report.md`
+- `docs/seo-metadata-inventory.csv`
+- `docs/seo-metadata-summary.json`
+- `public/llms-full.txt`, `public/site-summary.json`
+- `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`
+
+### Next session
+- Continue the locale-specialty tranche with **Welding** (4), **Water Heater** (4), or another real service from the 28-service catalogue. Never create standalone Air Conditioning content.
+- Locale problem routes remain blocked pending evidence-based consolidation of the 14 overlap groups. Business/translator QA remains owner-side.
+
