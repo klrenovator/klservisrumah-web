@@ -142,6 +142,10 @@ const PRIORITY_KEYS = [
   "welding/main-gate-fabrication",
   "welding/on-site-welding-repair",
   "welding/staircase-stringer-fabrication",
+  "water-heater/instant-water-heater-installation",
+  "water-heater/storage-tank-heater-installation",
+  "water-heater/water-heater-repair-and-descaling",
+  "water-heater/heat-pump-water-heater-install",
 ];
 
 function checkBlock(key: string, locale: "ms" | "zh", b: SpecialtyLocaleBlock, issues: Issue[]) {

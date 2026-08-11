@@ -1993,3 +1993,37 @@ Continued exactly from the final **Next Session — START HERE** section of `AI_
 - Locale problem routes remain blocked pending evidence-based consolidation of the 14 overlap groups. Business/translator QA remains owner-side.
 
 
+## Session 2026-08-11 (part 23) — Water Heater locale-specialty tranche
+
+**Branch:** `arena/019ff217-klservisrumah-web`
+**Status:** ✅ COMPLETED
+
+Continued exactly from the final **Next Session — START HERE** section of `AI_OPTIMIZATION_ROADMAP.md`. Selected **Water Heater**, the listed candidate service. No Air Conditioning content was created.
+
+### Completed
+- Authored genuine native Bahasa Malaysia + Simplified Chinese content for all four Water Heater specialties in `config/specialty-locale-content.ts`:
+  - `water-heater/instant-water-heater-installation` — Pemasangan Pemanas Air Segera / 即热式热水器安装 (from RM 250)
+  - `water-heater/storage-tank-heater-installation` — Pemasangan Pemanas Tangki Simpanan / 储水式热水器安装 (from RM 420)
+  - `water-heater/water-heater-repair-and-descaling` — Pembaikan & Nyahkerak Pemanas Air / 热水器维修与除垢 (from RM 180)
+  - `water-heater/heat-pump-water-heater-install` — Pemasangan Pemanas Air Pam Haba / 热泵热水器安装 (from RM 2,200)
+- Each locale block contains an authored name, tagline, substantive description, 5 highlights, 5 process steps, 4 FAQs, `metaTitle` and `metaDesc`. The content is grounded in the published Water Heater service record: single-point instant heaters (Alpha, Faber, Rinnai, Joven, Panasonic, Midea) with >0.5 bar inlet pressure and 3.5–8.5kW kW rating guidance; multi-point storage tanks 15L–50L (Joven, Rheem, Rinnai) with wall mounting on solid brick/concrete, pressure/temperature relief valve, copper pipework and anode-rod check; repair & descaling of leaks, RCCB trips, slow heating and knocking noises using insulation resistance testers, with descaling every 12–18 months in hard-water areas (Klang, Shah Alam); ST (Suruhanjaya Tenaga) wiring rules and SIRIM plumbing, dedicated 20A–32A circuits with double-pole isolators, anti-splash/water-proof mounting, earth-loop testing, condo management submissions and Certificate of Completion; and energy-efficient heat-pump systems (Mitsubishi Electric, Daikin) for landed properties with outdoor condenser mounting cutting electricity up to 70%.
+- Added all four Water Heater keys to the non-thin `PRIORITY_KEYS` build gate in `scripts/validate-specialty-locale.ts`; it now enforces all 96 completed specialties.
+- Reused the shared locale-specialty architecture: eight MS/ZH routes publish, all four EN Water Heater specialty pages emit real EN/MS/ZH/x-default clusters, typed related problems (`water-heater-not-heating`, `water-heater-cold`) render through the existing topical map, and unknown localized specialty slugs remain true 404s.
+- Sitemap and generated AI context now contain **3,488 indexable URLs** (+8 localized specialty URLs).
+
+### Verification
+- PASS: lint (0 errors/warnings), type-check, topical-map (28/28 services; 112 typed relationships), specialty locale gate (**96 specialties × MS/ZH = 192 native blocks**), i18n parity (1,074 keys × 3 locales), estimator suite (263,293 assertions), production build (**4,535 static pages generated**), full-corpus HTML audit (**4,527 pages**, 0 fatal / 0 warnings), technical SEO head audit (3,488 self-canonical indexable pages; 0 warnings), metadata consistency SEO audit, and `npm audit` (0 vulnerabilities).
+- Production smoke PASS: native MS `instant-water-heater-installation`, native ZH `heat-pump-water-heater-install` and EN `storage-tank-heater-installation` pages return 200 with correct language, native titles/H1s, self-canonicals and full EN/MS/ZH/x-default clusters; localized pages emit in-language OfferCatalog, FAQPage and HowTo JSON-LD; MS + ZH Water Heater indexes link all four specialties; unknown MS specialty returns 404; all eight localized URLs appear in the 3,488-URL sitemap.
+
+### Files changed
+- `config/specialty-locale-content.ts`
+- `scripts/validate-specialty-locale.ts`
+- `docs/seo-audit-report.md`
+- `docs/seo-metadata-inventory.csv`
+- `docs/seo-metadata-summary.json`
+- `public/llms-full.txt`, `public/site-summary.json`
+- `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`
+
+### Next session
+- Continue the locale-specialty tranche with **House Renovation** (4), **Cleaning** (4), **Deep Cleaning** (4), **Post-Renovation Cleaning** (4), or another real service from the 28-service catalogue. Never create standalone Air Conditioning content.
+- Locale problem routes remain blocked pending evidence-based consolidation of the 14 overlap groups. Business/translator QA remains owner-side.
