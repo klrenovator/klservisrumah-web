@@ -122,6 +122,10 @@ const PRIORITY_KEYS = [
   "ceiling-fan/ceiling-fan-replacement",
   "ceiling-fan/dc-motor-smart-fan-install",
   "ceiling-fan/industrial-shoplot-fan-install",
+  "lighting/led-downlight-installation",
+  "lighting/pendant-and-chandelier-install",
+  "lighting/cove-and-strip-led-installation",
+  "lighting/smart-lighting-and-dimmer-retrofit",
 ];
 
 function checkBlock(key: string, locale: "ms" | "zh", b: SpecialtyLocaleBlock, issues: Issue[]) {
