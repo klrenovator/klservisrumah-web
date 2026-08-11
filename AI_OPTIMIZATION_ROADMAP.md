@@ -1106,3 +1106,34 @@ Continued exactly from the final **Next Session — START HERE** section and sel
 2. Add real locale problem routes (154) only after the 14 problem-overlap groups are consolidated with evidence; then localize `RelatedProblems` links on localized specialty pages (they currently point to EN problem pages—documented and still blocked).
 3. Obtain business/translator QA for the completed localized specialty pages (160 so far) before measuring GSC indexation; this requires an owner/translator and cannot be completed from repository code alone.
 4. Do not create thin or spun pages; rerun lint, type-check, build, topical-map, specialty-locale, i18n, HTML and SEO audits after every tranche.
+
+### ✅ Session 2026-08-11 (part 20) — Locksmith locale-specialty tranche
+
+**Status:** ✅ COMPLETED
+
+Continued exactly from the final **Next Session — START HERE** section and selected the next listed real high-value service, **Locksmith**. No standalone Air Conditioning content was created.
+
+- Added genuine native Bahasa Malaysia + Simplified Chinese content for all four Locksmith specialties in `config/specialty-locale-content.ts`:
+  1. `locksmith/smart-lock-installation` — Pemasangan Kunci Pintar / 智能锁安装 (from RM420)
+  2. `locksmith/mortice-deadbolt-lock-replacement` — Penggantian Kunci Mortice / Deadbolt / 插芯锁与死锁更换 (from RM220)
+  3. `locksmith/key-cutting-and-re-keying` — Pemotongan Kunci & Re-Key / 配钥匙与锁芯重配 (from RM30)
+  4. `locksmith/emergency-lockout-landed-house` — Kecemasan Pintu Terkunci Rumah Landed / 有地住宅紧急开锁 (from RM180)
+- Every locale block has an authored native name, tagline, substantive description, five highlights, five process steps, four FAQs, meta title and meta description. Content remains grounded in the published Locksmith service record: Samsung, Yale, Igloohome, Solity, Hafele, Kaiser and Philips smart-lock options; keypad, RFID, Bluetooth, Wi-Fi and biometric access; door-material and mortice-fit checks; app pairing and PIN/fingerprint/user registration; Yale, Imperial or Hafele mortice/deadbolt replacement with three keys; key cutting and re-keying so old keys stop working; and non-destructive landed-house lockout entry with proof of ownership, same-day availability subject to technician capacity, and condominium-management coordination. No thin or spun pages.
+- Added all four Locksmith keys to `PRIORITY_KEYS` in `scripts/validate-specialty-locale.ts`, retaining the non-thin build gate (now enforcing all 84 completed specialties).
+- Reused the shared `LocaleSpecialtyPage` architecture: eight MS/ZH routes now publish; all four EN Locksmith specialty pages emit real EN/MS/ZH/x-default hreflang clusters; typed related problems (`smart-lock-not-working`, `locked-out-of-house`) and the `smart-lock-buying-guide-malaysia-2026` blog relationship render through the existing topical map; localized service links and true 404s are preserved.
+- Sitemap and generated AI context increased **3,456 → 3,464 indexable URLs** (+8 localized specialty pages).
+
+#### Verification
+- PASS: lint (0 errors/warnings), type-check, topical map (28/28 services; 112 typed specialty relationships), locale gate (**84 specialties × MS/ZH = 168 native blocks**), i18n parity (1,074 × 3), estimator suite (263,293 assertions) and `npm audit` (0 vulnerabilities).
+- PASS: production build (**4,511 static pages generated**), full-corpus HTML audit (**4,503 pages**, 0 fatal / 0 warnings), technical SEO head audit (3,464 self-canonical indexable pages; 0 warnings) and metadata consistency SEO audit.
+- Production smoke: native MS `smart-lock-installation`, native ZH `mortice-deadbolt-lock-replacement` and EN `key-cutting-and-re-keying` pages return 200 with the correct `<html lang>`, native titles/H1s, self-canonicals and full EN/MS/ZH/x-default hreflang clusters with in-language OfferCatalog, FAQPage and HowTo JSON-LD; MS + ZH Locksmith indexes link all 4 localized specialties; unknown MS Locksmith specialty returns a real 404; sitemap contains all 8 new Locksmith URLs.
+
+### Files
+- Modified: `config/specialty-locale-content.ts`, `scripts/validate-specialty-locale.ts`, `docs/seo-audit-report.md`, `public/llms-full.txt`, `public/site-summary.json`, `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
+
+## Next Session — START HERE
+
+1. Continue the locale-specialty tranche service-by-service. Completed: Painting + Ceiling (8), Plaster Ceiling (4), Waterproofing (4), Plumbing (4), Handyman (4), Electrical (4), Tiling (4), Flooring (4), Kitchen Cabinet (4), Carpentry (4), Epoxy Flooring (4), CCTV (4), Window Repair (4), Glass & Aluminium (4), Door (4), Roofing (4), Ceiling Fan (4), Lighting (4), Skim Coat (4), and **Locksmith (4)** = **84 specialties × MS + ZH (168 localized pages)**. Pick the next coherent four-specialty tranche from the remaining real high-value services—next candidates: **Autogate** (4), **Welding** (4), **Water Heater** (4), or any other real service from the 28-service catalogue. Reuse `specialty-locale-content.ts` + `LocaleSpecialtyPage` and author genuine native MS/ZH content. **Do not create Air Conditioning pages or content** (owner confirmed not offered).
+2. Add real locale problem routes (154) only after the 14 problem-overlap groups are consolidated with evidence; then localize `RelatedProblems` links on localized specialty pages (they currently point to EN problem pages—documented and still blocked).
+3. Obtain business/translator QA for the completed localized specialty pages (168 so far) before measuring GSC indexation; this requires an owner/translator and cannot be completed from repository code alone.
+4. Do not create thin or spun pages; rerun lint, type-check, build, topical-map, specialty-locale, i18n, HTML and SEO audits after every tranche.

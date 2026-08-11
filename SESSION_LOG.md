@@ -1882,3 +1882,38 @@ Continued exactly from the final **Next Session — START HERE** section of `AI_
 ### Next session
 - Continue the locale-specialty tranche with **Locksmith** (4), **Autogate** (4), **Welding** (4), **Water Heater** (4), or another real service from the 28-service catalogue. Never create standalone Air Conditioning content.
 - Locale problem routes remain blocked pending evidence-based consolidation of the 14 overlap groups. Business/translator QA remains owner-side.
+
+---
+
+## Session 2026-08-11 (part 20) — Locksmith locale-specialty tranche
+
+**Branch:** `arena/019ff016-klservisrumah-web`
+**Status:** ✅ COMPLETED
+
+Continued exactly from the final **Next Session — START HERE** section of `AI_OPTIMIZATION_ROADMAP.md`. Selected **Locksmith**, the next listed real high-value service. No Air Conditioning content was created.
+
+### Completed
+- Authored genuine native Bahasa Malaysia + Simplified Chinese content for all four Locksmith specialties in `config/specialty-locale-content.ts`:
+  - `locksmith/smart-lock-installation` — Pemasangan Kunci Pintar / 智能锁安装 (from RM420)
+  - `locksmith/mortice-deadbolt-lock-replacement` — Penggantian Kunci Mortice / Deadbolt / 插芯锁与死锁更换 (from RM220)
+  - `locksmith/key-cutting-and-re-keying` — Pemotongan Kunci & Re-Key / 配钥匙与锁芯重配 (from RM30)
+  - `locksmith/emergency-lockout-landed-house` — Kecemasan Pintu Terkunci Rumah Landed / 有地住宅紧急开锁 (from RM180)
+- Each locale block contains an authored name, tagline, substantive description, 5 highlights, 5 process steps, 4 FAQs, `metaTitle` and `metaDesc`. The content is grounded in the published Locksmith record: Samsung, Yale, Igloohome, Solity, Hafele, Kaiser and Philips smart-lock options; keypad, RFID, Bluetooth, Wi-Fi and biometric access; door-material and mortice-fit checks; app pairing and PIN/fingerprint/user registration; Yale, Imperial or Hafele mortice/deadbolt replacement with three keys; key cutting and re-keying so old keys stop working; and non-destructive landed-house lockout entry with proof of ownership, same-day availability subject to technician capacity, and condominium-management coordination.
+- Added all four Locksmith keys to the non-thin `PRIORITY_KEYS` build gate; it now enforces all 84 completed specialties.
+- Reused the shared locale-specialty architecture: eight MS/ZH routes publish, all four EN Locksmith specialty pages emit real EN/MS/ZH/x-default clusters, typed related problems (`smart-lock-not-working`, `locked-out-of-house`) and the `smart-lock-buying-guide-malaysia-2026` blog relationship render, and unknown localized specialty slugs remain true 404s.
+- Sitemap and generated AI context now contain **3,464 indexable URLs** (+8 localized specialty URLs).
+
+### Verification
+- PASS: lint (0 errors/warnings), type-check, topical-map (28/28 services; 112 typed relationships), specialty locale gate (**84 specialties × MS/ZH = 168 native blocks**), i18n parity (1,074 keys × 3 locales), estimator suite (263,293 assertions), production build (**4,511 static pages generated**), full-corpus HTML audit (**4,503 pages**, 0 fatal / 0 warnings), technical SEO head audit, metadata consistency SEO audit, and `npm audit` (0 vulnerabilities).
+- Production smoke PASS: native MS `smart-lock-installation`, native ZH `mortice-deadbolt-lock-replacement` and EN `key-cutting-and-re-keying` pages return 200 with correct language, native titles/H1s, self-canonicals and full EN/MS/ZH/x-default clusters; localized pages emit in-language OfferCatalog, FAQPage and HowTo JSON-LD; MS + ZH Locksmith indexes link all four specialties; unknown MS specialty returns 404; all eight localized URLs appear in the 3,464-URL sitemap.
+
+### Files changed
+- `config/specialty-locale-content.ts`
+- `scripts/validate-specialty-locale.ts`
+- `docs/seo-audit-report.md`
+- `public/llms-full.txt`, `public/site-summary.json`
+- `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`
+
+### Next session
+- Continue the locale-specialty tranche with **Autogate** (4), **Welding** (4), **Water Heater** (4), or another real service from the 28-service catalogue. Never create standalone Air Conditioning content.
+- Locale problem routes remain blocked pending evidence-based consolidation of the 14 overlap groups. Business/translator QA remains owner-side.

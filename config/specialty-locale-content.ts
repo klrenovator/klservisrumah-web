@@ -4676,6 +4676,239 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
     },
   },
 
+  /* ── LOCKSMITH ─────────────────────────────────────────────────────────── */
+  "locksmith/smart-lock-installation": {
+    ms: {
+      name: "Pemasangan Kunci Pintar",
+      tagline: "Pemasangan kunci pintar digital untuk rumah dan kondominium, lengkap dengan penilaian pintu, pemasangan kemas, tetapan aplikasi dan pendaftaran pengguna.",
+      description:
+        "Kami membekalkan dan memasang kunci pintar keypad digital, RFID, Bluetooth, Wi-Fi atau cap jari biometrik untuk rumah kediaman dan premis komersial ringan di Kuala Lumpur serta Selangor. Sebelum memilih model, pasukan kami memeriksa bahan pintu, ketebalan, ukuran mortice dan keadaan bingkai supaya kunci baharu dipasang dengan selamat tanpa mengganggu operasi pintu. Pilihan termasuk Samsung, Yale, Igloohome, Solity, Hafele, Kaiser dan Philips. Setiap pemasangan merangkumi penjajaran, ujian buka-tutup, pemasangan aplikasi serta pendaftaran PIN, cap jari atau pengguna mengikut model, kemudian nombor siri dan kad jaminan diserahkan kepada pemilik.",
+      highlights: [
+        "Pilihan Samsung, Yale, Igloohome, Solity, Hafele, Kaiser dan Philips",
+        "Sokongan keypad digital, RFID, Bluetooth, Wi-Fi dan cap jari biometrik",
+        "Pemeriksaan bahan, ketebalan dan potongan pintu sebelum model dipilih",
+        "Pemasangan, penjajaran, ujian operasi dan pasangan aplikasi yang lengkap",
+        "Pendaftaran PIN, cap jari serta pengguna dan serahan kad jaminan",
+      ],
+      process: [
+        { step: "01", title: "Semak Pintu & Keperluan", desc: "Kami memeriksa bahan pintu, ukuran mortice, bingkai dan cara akses yang diperlukan sebelum mencadangkan model kunci yang sesuai." },
+        { step: "02", title: "Sebut Harga Terperinci", desc: "Sebut harga menyenaraikan kunci, aksesori, buruh pemasangan dan sebarang pengubahsuaian pintu yang mungkin diperlukan." },
+        { step: "03", title: "Tanggalkan Kunci Lama", desc: "Kunci lama ditanggalkan dengan cermat, kawasan pemasangan dibersihkan dan potongan pintu disediakan untuk perkakasan baharu." },
+        { step: "04", title: "Pasang & Konfigurasi", desc: "Kunci dipasang dan dijajarkan, kemudian aplikasi dipasangkan serta PIN, cap jari atau kad pengguna didaftarkan." },
+        { step: "05", title: "Ujian & Serahan", desc: "Kami menguji semua kaedah akses, menerangkan penggunaan harian dan menyerahkan nombor siri serta kad jaminan." },
+      ],
+      faqs: [
+        { q: "Adakah semua jenis pintu boleh dipasang kunci pintar?", a: "Kebanyakan pintu kayu padu, pintu teras berongga dan pintu logam boleh dipadankan, tetapi ukuran mortice, ketebalan daun pintu dan ruang bingkai perlu diperiksa dahulu. Kami akan mencadangkan model atau pengubahsuaian yang sesuai selepas semakan tapak." },
+        { q: "Jenama kunci pintar apakah yang anda bekalkan?", a: "Kami biasa memasang Samsung, Yale, Igloohome, Solity, Hafele, Kaiser dan Philips. Pilihan akhir bergantung pada jenis pintu, kaedah akses, bajet serta keperluan aplikasi pemilik." },
+        { q: "Berapa lama pemasangan kunci pintar mengambil masa?", a: "Penggantian pada potongan pintu yang sepadan biasanya mengambil 30 hingga 60 minit. Pemasangan baharu yang memerlukan potongan mortice mengambil kira-kira 1.5 hingga 2 jam termasuk ujian dan pendaftaran pengguna." },
+        { q: "Adakah tetapan aplikasi dan cap jari termasuk dalam pemasangan?", a: "Ya. Kami memasangkan aplikasi yang serasi, mendaftarkan PIN, cap jari atau pengguna mengikut model, menguji akses dan menerangkan cara menambah atau membuang pengguna semasa serahan." },
+      ],
+      metaTitle: "Pemasangan Kunci Pintar KL & Selangor | Dari RM420",
+      metaDesc: "Pemasangan kunci pintar Samsung, Yale, Igloohome, Solity, Hafele dan Philips di KL & Selangor. Penilaian pintu, aplikasi, PIN/cap jari dan jaminan. Dari RM420.",
+    },
+    zh: {
+      name: "智能锁安装",
+      tagline: "为住宅与公寓安装数字智能锁，包含门体检查、稳固安装、应用配对和用户权限登记。",
+      description:
+        "我们在吉隆坡与雪兰莪为住宅及轻型商业场所供应和安装数字密码、RFID、蓝牙、Wi-Fi或生物指纹智能锁。选择型号前，团队会检查门的材质、厚度、锁体尺寸和门框状况，确保新锁稳固安装并维持门的正常开合。可选品牌包括 Samsung、Yale、Igloohome、Solity、Hafele、Kaiser 与 Philips。每次安装均包含校准、开关测试、应用配对，以及按型号登记密码、指纹或用户，最后交付序列号和保修卡。",
+      highlights: [
+        "可选 Samsung、Yale、Igloohome、Solity、Hafele、Kaiser 与 Philips",
+        "支持数字密码、RFID、蓝牙、Wi-Fi 与生物指纹功能",
+        "先检查门体材质、厚度和原有开孔，再选择合适型号",
+        "包含安装、校准、操作测试与智能应用配对",
+        "登记密码、指纹与用户，并交付序列号和保修卡",
+      ],
+      process: [
+        { step: "01", title: "检查门体与需求", desc: "检查门的材质、锁体尺寸、门框和所需开门方式，再建议合适的智能锁型号。" },
+        { step: "02", title: "列明报价", desc: "报价清楚列出锁具、配件、安装人工以及让新锁正确安装所需的门体修改。" },
+        { step: "03", title: "拆除旧锁", desc: "小心拆下旧锁，清洁安装位置，并为新的锁体和面板准备门上的开孔。" },
+        { step: "04", title: "安装与设置", desc: "安装并校准锁具，配对兼容应用，再登记密码、指纹或门卡用户。" },
+        { step: "05", title: "测试与交接", desc: "测试所有开门方式，说明日常使用方法，并交付序列号与保修卡。" },
+      ],
+      faqs: [
+        { q: "所有类型的门都可以安装智能锁吗？", a: "多数实木门、空心门和金属门都可以配装，但必须先检查锁体尺寸、门扇厚度与门框空间。现场检查后，我们会建议合适型号或所需的门体修改。" },
+        { q: "你们供应哪些智能锁品牌？", a: "我们常安装 Samsung、Yale、Igloohome、Solity、Hafele、Kaiser 与 Philips。最终选择会按照门的类型、开门方式、预算和业主的应用需求决定。" },
+        { q: "安装智能锁需要多长时间？", a: "如果新锁与现有开孔相同，通常需要30至60分钟。若是全新安装并需重新开锁体孔，大约需要1.5至2小时，包含测试和用户登记。" },
+        { q: "应用配对和指纹登记包括在安装内吗？", a: "包括。我们会配对兼容应用，按型号登记密码、指纹或用户，测试权限，并在交接时说明如何添加或删除用户。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪智能锁安装 | RM420起",
+      metaDesc: "吉隆坡与雪兰莪安装 Samsung、Yale、Igloohome、Solity、Hafele 与 Philips 智能锁。检查门体、应用配对、密码/指纹登记与保修。RM420起。",
+    },
+  },
+  "locksmith/mortice-deadbolt-lock-replacement": {
+    ms: {
+      name: "Penggantian Kunci Mortice / Deadbolt",
+      tagline: "Gantikan kunci mortice atau deadbolt yang longgar, rosak atau tidak lagi selamat dengan pemasangan tepat, tiga kunci baharu dan pengukuhan plat strike.",
+      description:
+        "Perkhidmatan ini sesuai apabila kunci mortice atau deadbolt lama sudah longgar, sukar dipusing, rosak atau perlu ditukar selepas berpindah rumah. Kami menilai jenis pintu, backset, ukuran potongan dan keadaan bingkai sebelum memilih pengganti daripada Yale, Imperial atau Hafele. Kunci lama ditanggalkan tanpa merosakkan permukaan pintu secara tidak perlu, kunci baharu dijajarkan supaya latch dan deadbolt masuk penuh ke strike plate, dan tiga kunci diserahkan. Jika bingkai memerlukan perlindungan tambahan, kami boleh memasang skru keselamatan 3 inci serta plat strike yang diperkuat sebagai sebahagian daripada cadangan keselamatan.",
+      highlights: [
+        "Pengganti Yale, Imperial atau Hafele mengikut ukuran pintu",
+        "Sesuai untuk kunci mortice dan deadbolt yang longgar atau haus",
+        "Semakan backset, potongan, latch dan strike plate sebelum pemasangan",
+        "Tiga kunci baharu diserahkan selepas pemasangan dan ujian",
+        "Cadangan skru keselamatan 3 inci dan plat strike diperkuat",
+      ],
+      process: [
+        { step: "01", title: "Ukur Pintu & Kunci", desc: "Kami mengukur backset, ketebalan pintu, potongan mortice dan kedudukan strike supaya kunci pengganti benar-benar serasi." },
+        { step: "02", title: "Pilih Model", desc: "Kami menerangkan pilihan Yale, Imperial atau Hafele serta aksesori keselamatan berdasarkan keadaan pintu dan keperluan anda." },
+        { step: "03", title: "Tanggalkan Kunci Lama", desc: "Kunci lama, silinder dan plat berkaitan ditanggalkan, kemudian kawasan pintu dibersihkan dan diperiksa untuk kerosakan." },
+        { step: "04", title: "Pasang & Jajarkan", desc: "Kunci baharu dipasang, latch dan deadbolt dijajarkan dengan strike plate, serta skru keselamatan ditambah jika diperlukan." },
+        { step: "05", title: "Uji & Serah Tiga Kunci", desc: "Kami menguji putaran dari kedua-dua sisi, memastikan pintu tertutup rapat dan menyerahkan tiga kunci selepas pemeriksaan akhir." },
+      ],
+      faqs: [
+        { q: "Bilakah kunci mortice atau deadbolt patut diganti?", a: "Gantikan apabila kunci tersekat, pemegang longgar, silinder haus, kunci hilang atau anda tidak pasti siapa yang masih memiliki salinan kunci selepas berpindah rumah." },
+        { q: "Adakah kunci baharu akan muat pada potongan pintu sedia ada?", a: "Banyak penggantian boleh menggunakan ukuran standard, tetapi backset, ketebalan pintu dan kedudukan strike perlu diukur. Jika potongan berbeza, kami akan menerangkan kerja pelarasan sebelum pemasangan." },
+        { q: "Berapa kunci yang disertakan?", a: "Pakej penggantian mortice atau deadbolt yang diterbitkan termasuk tiga kunci baharu. Bilangan tambahan atau sistem kunci lain boleh dibincangkan dalam sebut harga." },
+        { q: "Bolehkah bingkai pintu dibuat lebih tahan pecah masuk?", a: "Ya. Selepas menilai keadaan bingkai, kami boleh mencadangkan skru keselamatan 3 inci dan plat strike yang diperkuat supaya daya kunci dipindahkan dengan lebih baik ke bingkai." },
+      ],
+      metaTitle: "Penggantian Kunci Mortice & Deadbolt KL | Dari RM220",
+      metaDesc: "Ganti kunci mortice atau deadbolt di KL & Selangor dengan Yale, Imperial atau Hafele. Ukur pintu, 3 kunci baharu, ujian jajaran dan pengukuhan strike. Dari RM220.",
+    },
+    zh: {
+      name: "插芯锁与死锁更换",
+      tagline: "为松动、损坏或需要提升安全性的插芯锁和死锁更换合适新锁，含精准校准与三把新钥匙。",
+      description:
+        "当旧插芯锁或死锁松动、难以转动、损坏，或搬入新家后想重新确保门锁安全时，可以安排这项更换服务。我们会先检查门的材质、锁距、开孔尺寸和门框，再从 Yale、Imperial 或 Hafele 中选择合适的替换锁。拆下旧锁后会清理门面，新锁安装时校准锁舌与门框扣板，确保完全进入且门扇顺畅关闭，并交付三把新钥匙。如果门框需要加强，也可建议使用3英寸安全螺丝和加固扣板提升抗撬能力。",
+      highlights: [
+        "按门体尺寸选配 Yale、Imperial 或 Hafele 替换锁",
+        "适用于松动、磨损或操作不顺的插芯锁与死锁",
+        "安装前检查锁距、开孔、锁舌与门框扣板位置",
+        "安装测试后交付三把新钥匙",
+        "可建议3英寸安全螺丝与加固门框扣板",
+      ],
+      process: [
+        { step: "01", title: "测量门锁", desc: "测量锁距、门扇厚度、插芯孔和扣板位置，确保替换锁真正适配现有门体。" },
+        { step: "02", title: "选择型号", desc: "根据门体状况和您的安全需求，说明 Yale、Imperial 或 Hafele 型号及相应配件。" },
+        { step: "03", title: "拆除旧锁", desc: "拆下旧锁、锁芯和相关扣板，清洁安装位置并检查门体是否已有损坏。" },
+        { step: "04", title: "安装与校准", desc: "安装新锁，校准锁舌、死锁和扣板；如有需要，再加装安全螺丝与加固扣板。" },
+        { step: "05", title: "测试与交接", desc: "从门内外测试转动，确认门扇平稳闭合，并在最终检查后交付三把钥匙。" },
+      ],
+      faqs: [
+        { q: "什么时候应该更换插芯锁或死锁？", a: "如果锁具卡住、把手松动、锁芯磨损、钥匙遗失，或搬入新家后不确定谁还持有旧钥匙，就应考虑更换。" },
+        { q: "新锁一定可以使用原有门孔吗？", a: "许多更换可以沿用标准开孔，但仍要测量锁距、门扇厚度与扣板位置。如果尺寸不同，我们会在施工前说明所需的门体调整。" },
+        { q: "更换配套包括几把钥匙？", a: "已公布的插芯锁或死锁更换配套包括三把新钥匙。若需要更多钥匙或其他钥匙系统，可以在报价时另外讨论。" },
+        { q: "可以加强门框的防撬能力吗？", a: "可以。检查门框后，我们可建议使用3英寸安全螺丝和加固扣板，让锁具受力更好地传递到门框结构。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪插芯锁死锁更换 | RM220起",
+      metaDesc: "吉隆坡与雪兰莪更换 Yale、Imperial 或 Hafele 插芯锁与死锁。测量门体、三把新钥匙、校准测试及门框加固建议。RM220起。",
+    },
+  },
+  "locksmith/key-cutting-and-re-keying": {
+    ms: {
+      name: "Pemotongan Kunci & Re-Key",
+      tagline: "Potong kunci baharu atau tukar susunan silinder kepada kunci baharu supaya kunci lama tidak lagi berfungsi, bermula dari RM30.",
+      description:
+        "Kami membantu pemilik rumah yang memerlukan salinan kunci tambahan, kehilangan kunci, atau mahu menukar akses selepas berpindah masuk. Jika silinder masih berada dalam keadaan baik, kunci baharu boleh dipotong mengikut kunci atau kunci asal tanpa menggantikan seluruh set kunci. Untuk keselamatan yang lebih tinggi, kami juga boleh melakukan re-key: silinder disusun semula supaya kunci baharu berfungsi dan semua kunci lama berhenti berfungsi. Pasukan kami akan mengenal pasti jenis silinder, mengesahkan keperluan pemilik dan menguji setiap kunci pada pintu sebelum serahan.",
+      highlights: [
+        "Kunci tambahan untuk pintu rumah, bilik, stor atau pejabat kecil",
+        "Re-key menamatkan fungsi semua kunci lama tanpa tukar seluruh kunci",
+        "Sesuai selepas berpindah rumah, kehilangan kunci atau pertukaran penyewa",
+        "Pemeriksaan silinder sebelum pemotongan atau susunan semula",
+        "Setiap kunci diuji pada pintu dan diserahkan selepas operasi lancar",
+      ],
+      process: [
+        { step: "01", title: "Sahkan Jenis Kunci", desc: "Kami mengenal pasti jenis silinder dan menentukan sama ada anda memerlukan salinan kunci atau re-key keseluruhan." },
+        { step: "02", title: "Periksa Keadaan Silinder", desc: "Silinder diuji untuk memastikan ia masih sesuai dipotong atau disusun semula; kerosakan dalaman akan diterangkan dahulu." },
+        { step: "03", title: "Potong atau Re-Key", desc: "Kunci tambahan dipotong dengan ukuran yang tepat, atau silinder disusun semula untuk menerima kunci baharu." },
+        { step: "04", title: "Uji Semua Akses", desc: "Kami menguji kunci baharu dari sisi dalam dan luar, serta memastikan kunci lama tidak lagi mengendalikan silinder selepas re-key." },
+        { step: "05", title: "Serahan & Nasihat", desc: "Kunci diserahkan bersama penerangan jumlah salinan dan nasihat penyimpanan supaya akses rumah kekal terkawal." },
+      ],
+      faqs: [
+        { q: "Bolehkah saya potong kunci tanpa menggantikan lockset?", a: "Ya, jika silinder masih baik dan boleh dibaca, kami boleh memotong kunci baharu tanpa menukar seluruh set kunci. Kami akan menguji hasilnya pada pintu sebelum serahan." },
+        { q: "Apakah beza pemotongan kunci dengan re-key?", a: "Pemotongan hanya menghasilkan kunci tambahan yang berfungsi pada silinder sedia ada. Re-key menyusun semula silinder supaya kunci baharu berfungsi dan kunci lama tidak lagi boleh membuka pintu." },
+        { q: "Adakah re-key sesuai selepas berpindah ke rumah baharu?", a: "Ya. Re-key ialah pilihan praktikal apabila anda mahu menghentikan akses pemegang kunci lama tanpa membayar penggantian seluruh lockset, selagi silinder masih boleh digunakan." },
+        { q: "Berapakah harga pemotongan kunci dan re-key?", a: "Harga diterbitkan bermula RM30 untuk kerja pemotongan atau re-key asas. Sebut harga sebenar bergantung pada jenis silinder, bilangan kunci dan keadaan perkakasan di tapak." },
+      ],
+      metaTitle: "Pemotongan Kunci & Re-Key KL | Dari RM30",
+      metaDesc: "Potong kunci tambahan atau re-key silinder di KL & Selangor supaya kunci lama tidak berfungsi. Sesuai selepas pindah rumah atau hilang kunci. Dari RM30.",
+    },
+    zh: {
+      name: "配钥匙与锁芯重配",
+      tagline: "为现有门锁配制新钥匙，或重新排列锁芯让新钥匙生效、旧钥匙失效，适合搬家与钥匙遗失情况。",
+      description:
+        "如果需要备用钥匙、钥匙遗失，或搬入新家后想重新控制门锁，我们可以提供配钥匙与锁芯重配服务。只要锁芯状况良好，通常无需更换整套门锁，就能按照原钥匙或现有锁芯配制新钥匙。若需要更高的安全性，也可以进行 re-key（锁芯重配）：重新排列锁芯，让新钥匙可以开门，同时让所有旧钥匙失效。施工前会确认锁芯类型与业主需求，完成后在门上测试每一把钥匙再交付。",
+      highlights: [
+        "为住宅、房间、储藏室或小型办公室配制备用钥匙",
+        "锁芯重配可让所有旧钥匙失效，不必更换整套门锁",
+        "适合搬家、钥匙遗失或租户更换后的安全处理",
+        "配制或重配前先检查锁芯是否仍然适用",
+        "每把新钥匙都会在门上测试后再交付",
+      ],
+      process: [
+        { step: "01", title: "确认钥匙类型", desc: "确认锁芯类型，并判断您需要复制钥匙还是重新排列整个锁芯。" },
+        { step: "02", title: "检查锁芯状况", desc: "测试锁芯是否适合配制或重配；若内部已损坏，会先说明更换选项。" },
+        { step: "03", title: "配制或重配", desc: "按照准确尺寸配制备用钥匙，或重新排列锁芯以配合新的钥匙组合。" },
+        { step: "04", title: "测试所有权限", desc: "从门内外测试新钥匙，并确认完成重配后旧钥匙无法继续操作锁芯。" },
+        { step: "05", title: "交付与建议", desc: "交付钥匙并说明复制数量和保管方式，帮助您继续控制家中的开门权限。" },
+      ],
+      faqs: [
+        { q: "可以不更换整套门锁而配新钥匙吗？", a: "可以，只要锁芯仍然良好且能够读取，我们可以配制新钥匙而不更换整套锁具。交付前会在门上测试新钥匙。" },
+        { q: "配钥匙和锁芯重配有什么区别？", a: "配钥匙只是增加能操作现有锁芯的钥匙。锁芯重配则重新排列内部组合，让新钥匙可以开门，同时让旧钥匙无法继续开门。" },
+        { q: "搬进新家后适合做锁芯重配吗？", a: "适合。如果不希望旧钥匙持有人继续开门，且现有锁芯仍可使用，重配通常比更换整套门锁更经济实用。" },
+        { q: "配钥匙和锁芯重配的价格是多少？", a: "已公布的基础配钥匙或重配服务起价为RM30。实际报价会按锁芯类型、钥匙数量和现场五金状况确定。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪配钥匙锁芯重配 | RM30起",
+      metaDesc: "吉隆坡与雪兰莪配制备用钥匙或重新排列锁芯，让旧钥匙失效。适合搬家与钥匙遗失，无需更换整套门锁。RM30起。",
+    },
+  },
+  "locksmith/emergency-lockout-landed-house": {
+    ms: {
+      name: "Kecemasan Pintu Terkunci Rumah Landed",
+      tagline: "Kemasukan kecemasan tanpa merosakkan untuk rumah landed yang terkunci di luar, dengan pengesahan pemilikan dan bantuan hari sama tertakluk kepada ketersediaan.",
+      description:
+        "Apabila anda terkunci di luar rumah landed kerana kunci tertinggal, silinder rosak atau pintu tertutup tanpa sengaja, pasukan kami menyediakan kemasukan kecemasan tanpa merosakkan sebagai pilihan pertama di KL dan Selangor. Juruteknik akan mengesahkan pemilikan atau kebenaran anda sebelum membuka pintu; IC, bil utiliti atau ID bergambar yang sepadan dengan alamat boleh diminta. Selepas pintu dibuka, kami memeriksa kunci dan strike, menerangkan sebarang kerosakan serta menawarkan pembaikan atau penggantian jika perlu. Perkhidmatan hari sama bergantung pada lokasi dan ketersediaan juruteknik. Untuk kondominium, kami boleh menyelaras dengan pejabat pengurusan yang memegang kunci induk.",
+      highlights: [
+        "Kemasukan tanpa merosakkan untuk rumah landed di KL & Selangor",
+        "Pengesahan pemilikan atau kebenaran sebelum pintu dibuka",
+        "Bantuan hari sama tertakluk kepada lokasi dan ketersediaan juruteknik",
+        "Pemeriksaan kunci selepas pintu dibuka sebelum cadangan diberikan",
+        "Koordinasi dengan pengurusan kondominium apabila kunci induk tersedia",
+      ],
+      process: [
+        { step: "01", title: "Terima Butiran Kecemasan", desc: "Kami merekod lokasi, jenis pintu dan keadaan terkunci supaya juruteknik membawa alat serta bantuan yang sesuai." },
+        { step: "02", title: "Sahkan Pemilikan", desc: "Sebelum kerja bermula, kami meminta IC, bil utiliti atau ID bergambar yang sepadan dengan alamat sebagai perlindungan pemilik." },
+        { step: "03", title: "Kemasukan Tanpa Rosak", desc: "Juruteknik mencuba kaedah bukan merosakkan yang sesuai untuk membuka pintu tanpa memecahkan kunci atau merosakkan pintu." },
+        { step: "04", title: "Periksa Punca Masalah", desc: "Selepas kemasukan, kunci, silinder dan strike diperiksa untuk menentukan sama ada pelarasan, re-key atau penggantian diperlukan." },
+        { step: "05", title: "Pulihkan Keselamatan", desc: "Kami menerangkan pilihan kos, menjalankan pembaikan yang diluluskan dan memastikan pintu boleh dikunci semula sebelum beredar." },
+      ],
+      faqs: [
+        { q: "Bukti apakah yang diperlukan untuk membuka rumah saya?", a: "Kami memerlukan bukti pemilikan atau kebenaran seperti IC, bil utiliti atau ID bergambar yang sepadan dengan alamat. Prosedur ini melindungi pemilik rumah dan mengelakkan kemasukan tanpa kebenaran." },
+        { q: "Adakah anda menyediakan perkhidmatan hari sama?", a: "Untuk rumah landed di KL dan Selangor, bantuan hari sama tersedia tertakluk kepada lokasi, waktu panggilan dan ketersediaan juruteknik. Kami akan mengesahkan masa ketibaan sebelum bergerak." },
+        { q: "Bolehkah anda membantu jika saya tinggal di kondominium?", a: "Ya, tetapi pejabat pengurusan biasanya mempunyai kunci induk atau prosedur akses sendiri. Kami boleh menyelaras dengan pengurusan; jika perlu, kami akan membantu selepas akses rasmi diberikan." },
+        { q: "Apa berlaku jika kunci rosak selepas pintu dibuka?", a: "Kami akan memeriksa punca dan menerangkan pilihan pelarasan, re-key atau penggantian sebelum kerja tambahan dibuat. Kos akhir disahkan selepas keadaan kunci dan pintu diketahui." },
+      ],
+      metaTitle: "Kecemasan Pintu Terkunci KL & Selangor | Dari RM180",
+      metaDesc: "Kemasukan kecemasan tanpa merosakkan untuk rumah landed di KL & Selangor. Pengesahan pemilikan, bantuan hari sama tertakluk ketersediaan dan pilihan pembaikan. Dari RM180.",
+    },
+    zh: {
+      name: "有地住宅紧急开锁",
+      tagline: "为被锁在门外的有地住宅提供非破坏性紧急开门，先核实业主身份，并视技师安排提供当天支援。",
+      description:
+        "如果您因忘带钥匙、锁芯损坏或门意外关上而被锁在有地住宅外，我们在吉隆坡与雪兰莪提供紧急开锁服务，并以非破坏性开门作为首选。技师开门前会确认您的房屋所有权或授权；可能需要出示与地址相符的身份证、公共事业账单或照片证件。开门后，我们会检查锁具和门框扣板，说明损坏情况，并在需要时提供维修或更换选择。当天服务须视地点和技师供应情况而定。若是公寓，也可以先与通常持有总钥匙的管理处协调。",
+      highlights: [
+        "为吉隆坡与雪兰莪有地住宅提供非破坏性开门",
+        "开门前核实房屋所有权或住户授权",
+        "当天支援视地点、来电时间与技师供应情况而定",
+        "开门后检查锁芯与扣板，再说明处理方案",
+        "公寓可在管理处提供正式通行后协助处理",
+      ],
+      process: [
+        { step: "01", title: "记录紧急情况", desc: "记录地点、门的类型和被锁情况，让技师准备适合的工具与支援。" },
+        { step: "02", title: "核实房屋权限", desc: "开工前要求提供与地址相符的身份证、公共事业账单或照片证件，保护业主安全。" },
+        { step: "03", title: "非破坏性开门", desc: "技师会先采用合适的非破坏性方法开门，避免敲坏锁具或损伤门体。" },
+        { step: "04", title: "检查问题来源", desc: "开门后检查锁具、锁芯和门框扣板，判断需要调校、重配锁芯还是更换。" },
+        { step: "05", title: "恢复门锁安全", desc: "说明处理费用，完成获批准的维修，并在离开前确认门可以重新上锁。" },
+      ],
+      faqs: [
+        { q: "开门前需要提供什么证明？", a: "需要提供能证明房屋所有权或授权的资料，例如与地址相符的身份证、公共事业账单或照片证件。这是为了保护业主，避免未经许可进入住宅。" },
+        { q: "可以提供当天紧急开锁吗？", a: "吉隆坡与雪兰莪的有地住宅可视地点、来电时间和技师安排提供当天支援。出发前我们会先确认预计抵达时间。" },
+        { q: "公寓被锁在门外也可以协助吗？", a: "可以，但公寓管理处通常有总钥匙或自己的开门流程。我们可以先与管理处协调，并在获得正式通行后继续提供协助。" },
+        { q: "如果开门后发现锁已经损坏怎么办？", a: "我们会检查原因，并在进行额外工作前说明调校、锁芯重配或更换选项。最终费用会在确认门锁和门体状况后再确定。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪紧急开锁 | RM180起",
+      metaDesc: "吉隆坡与雪兰莪有地住宅非破坏性紧急开锁。核实房屋权限，当天支援视供应情况而定，并提供后续维修选择。RM180起。",
+    },
+  },
 };
 
 /**
