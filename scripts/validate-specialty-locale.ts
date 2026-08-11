@@ -130,6 +130,10 @@ const PRIORITY_KEYS = [
   "skim-coat/ceiling-skim-coating",
   "skim-coat/crack-and-joint-repair",
   "skim-coat/full-condo-re-skim-package",
+  "locksmith/smart-lock-installation",
+  "locksmith/mortice-deadbolt-lock-replacement",
+  "locksmith/key-cutting-and-re-keying",
+  "locksmith/emergency-lockout-landed-house",
 ];
 
 function checkBlock(key: string, locale: "ms" | "zh", b: SpecialtyLocaleBlock, issues: Issue[]) {
