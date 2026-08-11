@@ -4442,6 +4442,240 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
     },
   },
 
+  /* ── SKIM COAT ────────────────────────────────────────────────────────── */
+  "skim-coat/wall-skim-coating": {
+    ms: {
+      name: "Skim Coat Dinding",
+      tagline: "Perataan penuh dinding berplaster atau bercat lama dengan dua lapisan skim coat untuk kemasan licin kaca yang sedia dicat. Dari RM 5 / kaki persegi.",
+      description:
+        "Skim coat dinding bukan sekadar menampal lubang secara setempat. Kami memeriksa seluruh permukaan, mengikis cat atau plaster yang longgar dan menyapu primer pengikat sebelum meratakan dinding dengan dua hingga tiga lapisan nipis sebatian diubah suai polimer daripada Knauf, Gyproc atau Mapei. Setiap lapisan diratakan dengan trowel dan diamplas selepas kering supaya alur plaster, tampalan lama, lubang jarum dan kilauan tidak sekata tidak kelihatan melalui cat. Pemeriksaan lampu sisi terakhir memastikan dinding benar-benar rata dan sedia menerima primer serta cat Nippon, Dulux, Jotun atau sistem cat premium lain.",
+      highlights: [
+        "Dua hingga tiga lapisan nipis untuk meratakan seluruh dinding, bukan tampalan setempat sahaja",
+        "Primer pengikat pada cat lama atau substrat berliang untuk lekatan yang kukuh",
+        "Sebatian skim diubah suai polimer Knauf, Gyproc atau Mapei",
+        "Pengamplasan antara lapisan dan pemeriksaan lampu sisi untuk mengesan alur halus",
+        "Kemasan sedia dicat untuk cat matt, satin, warna gelap atau dinding ciri",
+      ],
+      process: [
+        { step: "01", title: "Pemeriksaan Permukaan", desc: "Kami memeriksa kerataan, keteguhan cat lama, kawasan berongga, retak, kulat dan effloresens sebelum menetapkan kaedah persediaan." },
+        { step: "02", title: "Kikis & Ikat Substrat", desc: "Bahan longgar dikikis, permukaan dibersihkan daripada habuk dan primer pengikat disapu supaya lapisan baharu tidak mengelupas." },
+        { step: "03", title: "Lapisan Skim Pertama", desc: "Sebatian polimer ditrowel nipis merentasi seluruh dinding untuk mengisi alur dan menyamakan kawasan tinggi serta rendah." },
+        { step: "04", title: "Lapisan Kedua & Amplas", desc: "Selepas lapisan pertama kering 4 hingga 6 jam, dinding diamplas, disapu lapisan kedua dan diamplas semula hingga licin." },
+        { step: "05", title: "Pemeriksaan Lampu Sisi", desc: "Lampu disapu selari dengan dinding untuk mendedahkan alur atau lubang jarum; kecacatan terakhir ditampal dan diamplas sebelum serahan." },
+      ],
+      faqs: [
+        { q: "Adakah dinding yang baru diplaster masih memerlukan skim coat?", a: "Biasanya ya jika anda mahukan kemasan cat premium. Plaster simen selalunya meninggalkan alur trowel dan tekstur kasar; sekurang-kurangnya satu lapisan diperlukan, manakala cat satin, gloss atau warna gelap lazimnya memerlukan dua lapisan." },
+        { q: "Bolehkah skim coat disapu terus di atas cat lama?", a: "Boleh hanya selepas cat diuji kukuh, dibersihkan dan diberi primer pengikat. Cat yang berkapur, menggelembung atau longgar mesti dikikis dahulu; menutupnya terus akan menyebabkan lapisan skim baharu tertanggal bersama cat lama." },
+        { q: "Berapa tebal lapisan skim coat dinding?", a: "Ketebalan biasa ialah kira-kira 1 hingga 3 mm secara keseluruhan. Dinding yang sangat senget atau mempunyai rongga dalam memerlukan kerja plaster pembetulan dahulu kerana skim coat tidak direka untuk membina lapisan tebal." },
+        { q: "Bilakah dinding boleh dicat selepas skim coat?", a: "Setiap lapisan biasanya memerlukan 4 hingga 6 jam sebelum kerja seterusnya, dan lapisan akhir perlu dibiarkan sekurang-kurangnya 24 jam sebelum primer serta cat dalam keadaan kelembapan Malaysia yang biasa." },
+      ],
+      metaTitle: "Skim Coat Dinding KL & Selangor | Dari RM5/kaki²",
+      metaDesc: "Skim coat dinding dua lapisan di KL & Selangor. Primer pengikat, sebatian Knauf/Gyproc/Mapei, pengamplasan penuh dan kemasan licin sedia dicat. Dari RM5/kaki².",
+    },
+    zh: {
+      name: "墙面批灰找平",
+      tagline: "为新抹灰或旧漆墙面进行两道全墙批灰找平，交付玻璃般平滑、可直接进入底漆与油漆工序的基层。从 RM 5 / 平方英尺起。",
+      description:
+        "墙面批灰（skim coat）并不是只把钉孔局部补平。我们会先检查整面墙，铲除松动旧漆和粉化灰层，再涂界面剂增强粘结，然后使用 Knauf、Gyproc 或 Mapei 聚合物改性腻子薄批两至三道。每一道干燥后以长杆砂磨修平，让原有抹刀纹、旧补丁、针孔和高低差不会透过新漆显现。最后用侧光逐面检查平整度，确认墙面适合立邦、多乐士、佐敦以及其他高端油漆系统。",
+      highlights: [
+        "整墙薄批两至三道，不是只做零星补洞",
+        "旧漆面与多孔基层先上界面剂，强化新旧层粘结",
+        "采用 Knauf、Gyproc 或 Mapei 聚合物改性材料",
+        "层间砂磨并以侧光检查细小刀痕与针孔",
+        "适合哑光、丝光、深色漆与高要求主题墙饰面",
+      ],
+      process: [
+        { step: "01", title: "基层检查", desc: "检查墙面平整度、旧漆强度、空鼓、裂缝、霉菌与盐析，按实际基层确定处理方法。" },
+        { step: "02", title: "铲除与界面处理", desc: "铲掉松动层，除净粉尘后涂刷界面剂，避免新批灰层随旧漆一起脱落。" },
+        { step: "03", title: "第一道批灰", desc: "将聚合物改性腻子薄而均匀地批满整墙，填平抹刀纹以及轻微高低差。" },
+        { step: "04", title: "第二道与砂磨", desc: "第一道干燥 4 至 6 小时后砂磨修平，再批第二道并复磨至细腻平整。" },
+        { step: "05", title: "侧光验收", desc: "让灯光贴着墙面扫照，找出残留刀痕和针孔，逐点修补砂磨后交付油漆工序。" },
+      ],
+      faqs: [
+        { q: "新抹灰的墙还需要批灰吗？", a: "如果要做高品质漆面，通常需要。水泥抹灰容易留下砂粒感和抹刀纹；一般至少薄批一道，使用丝光、高光或深色漆时则建议做足两道。" },
+        { q: "可以直接在旧漆上批灰吗？", a: "只有旧漆经测试仍牢固、清洁并涂了界面剂后才可以。起粉、鼓泡或松动漆层必须先铲除，否则新批灰会连同旧漆一起脱落。" },
+        { q: "墙面批灰通常有多厚？", a: "完成后的总厚度通常约 1 至 3 毫米。墙体明显倾斜或有很深凹坑时，应先做抹灰修正；批灰材料不适合一次堆得过厚。" },
+        { q: "批灰后多久才能上漆？", a: "每一道在马来西亚一般湿度下通常要干燥 4 至 6 小时才能继续施工，最后一道完成后至少等待 24 小时，再上底漆和面漆。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪墙面批灰找平 | RM5/平方英尺起",
+      metaDesc: "吉隆坡与雪兰莪两道墙面批灰。界面剂、Knauf/Gyproc/Mapei 聚合物材料、全墙砂磨与侧光验收，交付平滑可上漆基层。RM5/平方英尺起。",
+    },
+  },
+  "skim-coat/ceiling-skim-coating": {
+    ms: {
+      name: "Skim Coat Siling",
+      tagline: "Skim semula siling plaster yang berusia, beralun atau penuh tampalan untuk menghasilkan permukaan sekata sebelum cat baharu. Dari RM 6 / kaki persegi.",
+      description:
+        "Skim coat siling menyegarkan siling plaster sedia ada yang menunjukkan sambungan lama, tampalan, alur trowel atau kilauan cat tidak sekata. Sebelum menutup permukaan, kami memeriksa sama ada terdapat kebocoran aktif, papan lembik, kawasan menggelembung atau kulat; punca air dan papan yang rosak mesti dibaiki dahulu. Lantai dan perabot ditutup, bahan longgar dikikis, primer pengikat disapu, kemudian sebatian skim polimer diratakan dalam dua lapisan dan diamplas menggunakan pole sander. Pemeriksaan lampu sisi di seluruh siling menghasilkan kemasan rata yang sedia untuk primer dan pengecatan semula.",
+      highlights: [
+        "Khusus untuk menyamakan sambungan, tampalan dan gelombang halus pada siling lama",
+        "Pemeriksaan kebocoran, kelembapan dan papan lembik sebelum sebarang lapisan ditutup",
+        "Perlindungan penuh lantai, lampu, kipas dan perabot semasa kerja atas kepala",
+        "Dua lapisan sebatian skim polimer dengan pengamplasan pole sander",
+        "Pemeriksaan lampu sisi supaya bayang alur tidak muncul selepas lampu dipasang",
+      ],
+      process: [
+        { step: "01", title: "Semakan Siling & Punca Air", desc: "Kami menandakan sambungan, tampalan, kawasan berongga dan kesan air serta memastikan sebarang kebocoran aktif diselesaikan sebelum skim bermula." },
+        { step: "02", title: "Perlindungan & Persediaan", desc: "Lantai dan perabot ditutup, aksesori lampu dilindungi, bahan longgar dikikis dan habuk dibersihkan daripada seluruh permukaan." },
+        { step: "03", title: "Primer & Lapisan Pertama", desc: "Primer pengikat disapu pada cat lama sebelum lapisan skim pertama ditrowel untuk menyamakan sambungan dan tampalan." },
+        { step: "04", title: "Skim Kedua & Pengamplasan", desc: "Lapisan kedua yang lebih halus disapu selepas kering, kemudian seluruh siling diamplas dengan pole sander hingga rata." },
+        { step: "05", title: "Pemeriksaan & Pembersihan", desc: "Kami memeriksa siling dengan lampu sisi, membaiki lubang jarum terakhir dan menyedut habuk sebelum permukaan diserahkan untuk dicat." },
+      ],
+      faqs: [
+        { q: "Bolehkah kesan air pada siling terus ditutup dengan skim coat?", a: "Tidak. Kebocoran daripada bumbung, paip atau bilik air di atas mesti dihentikan dan siling dikeringkan dahulu. Papan gipsum yang lembik atau kendur perlu diganti; skim coat hanya meratakan permukaan yang masih kukuh." },
+        { q: "Adakah skim semula boleh menyembunyikan sambungan siling plaster?", a: "Ya, jika rangka dan papan stabil. Sambungan bermasalah dibuka dan diperkuat dengan mesh gentian kaca sebelum dua lapisan skim diratakan; pergerakan rangka yang berterusan perlu dibaiki dahulu." },
+        { q: "Adakah kerja skim coat siling menghasilkan banyak habuk?", a: "Pengamplasan tetap menghasilkan habuk halus, jadi kami menutup lantai dan perabot, mengasingkan kawasan kerja serta menggunakan pole sander dan penyedut vakum sebelum pembersihan akhir." },
+        { q: "Berapa lama masa untuk skim semula siling sebuah bilik?", a: "Kebanyakan bilik standard memerlukan satu hingga dua hari termasuk masa kering antara lapisan. Siling luas atau yang mempunyai banyak sambungan dan tampalan mungkin mengambil masa lebih lama." },
+      ],
+      metaTitle: "Skim Coat Siling KL & Selangor | Dari RM6/kaki²",
+      metaDesc: "Skim semula siling plaster di KL & Selangor. Semakan kebocoran, primer pengikat, dua lapisan polimer, pole sanding dan pemeriksaan lampu sisi. Dari RM6/kaki².",
+    },
+    zh: {
+      name: "天花批灰找平",
+      tagline: "为老化、波浪不平或补丁明显的石膏天花重新批灰，消除接缝阴影并交付可重新上漆的平整表面。从 RM 6 / 平方英尺起。",
+      description:
+        "天花重新批灰适合处理旧石膏天花上显眼的接缝、补丁、抹刀纹以及漆面反光不均。覆盖之前，我们会先检查是否仍在漏水、板材是否发软下垂、灰层是否鼓起以及有没有霉菌；漏水源和损坏板材必须先修好。施工时全面遮盖地板、家具和灯具，铲净松动材料并涂界面剂，再薄批两道聚合物改性腻子，以长杆砂磨整平。最后用侧光检查整幅天花，确保交付的是可上底漆和新面漆的均匀基层。",
+      highlights: [
+        "针对旧天花接缝、补丁和轻微波浪作整面找平",
+        "覆盖前先排查漏水、潮湿与板材发软下垂",
+        "地板、灯具、吊扇与家具均作完整防尘保护",
+        "两道聚合物改性材料，配合长杆砂磨整平",
+        "侧光验收，避免开灯后出现接缝阴影和刀痕",
+      ],
+      process: [
+        { step: "01", title: "天花与水源检查", desc: "标出接缝、补丁、空鼓和水渍，并确认正在发生的屋顶、管道或楼上渗漏已经解决。" },
+        { step: "02", title: "遮盖与基层处理", desc: "遮盖地板家具，保护灯具，铲除松动灰层并将整面天花的粉尘清理干净。" },
+        { step: "03", title: "界面剂与首道批灰", desc: "旧漆面先涂界面剂，再批第一道腻子，初步消除接缝和旧补丁的高低差。" },
+        { step: "04", title: "第二道与砂磨", desc: "待首道干燥后薄批更细的第二道，再以长杆砂磨整幅天花至平顺。" },
+        { step: "05", title: "侧光检查与清洁", desc: "用侧光寻找针孔和残留刀痕，点补复磨后吸走施工粉尘，交付油漆工序。" },
+      ],
+      faqs: [
+        { q: "天花水渍可以直接批灰盖住吗？", a: "不可以。屋顶、管道或楼上卫生间的漏水必须先止住并让基层干燥。已经发软或下垂的石膏板要更换；批灰只能找平仍然牢固的表面。" },
+        { q: "重新批灰能遮住石膏天花接缝吗？", a: "龙骨与板材稳定时可以。问题接缝先开出并贴玻纤网格加固，再做两道批灰；若龙骨仍在活动，则必须先处理结构位移。" },
+        { q: "天花批灰会产生很多灰尘吗？", a: "砂磨必然会产生细粉尘，因此我们会遮盖地板和家具、隔离施工区，并使用长杆砂磨工具；完工后再用吸尘设备全面清理。" },
+        { q: "一间房的天花重新批灰要多久？", a: "标准房间一般需要一至两天，包括两道之间的干燥时间。面积较大，或接缝和旧补丁很多的天花，施工时间会相应增加。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪天花批灰找平 | RM6/平方英尺起",
+      metaDesc: "吉隆坡与雪兰莪旧石膏天花重新批灰。先查漏水，再做界面剂、两道聚合物批灰、长杆砂磨与侧光验收。RM6/平方英尺起。",
+    },
+  },
+  "skim-coat/crack-and-joint-repair": {
+    ms: {
+      name: "Pembaikan Retak & Sendi",
+      tagline: "Pembaikan retak halus, retak mendapan dan sendi papan dengan alur-V, pengisi akrilik fleksibel serta mesh gentian kaca. Dari RM 22 / kaki linear.",
+      description:
+        "Menyapu skim coat terus di atas retak hanya menyembunyikannya sementara. Untuk pembaikan yang tahan lama, kami mengenal pasti sama ada garisan itu retak plaster, pergerakan sendi papan atau tanda pergerakan struktur; retak aktif atau lebih lebar perlu dinilai sebelum kerja kosmetik. Retak yang sesuai dibaiki dibuka menjadi alur-V, dibersihkan, diisi dengan pengisi akrilik fleksibel dan diperkuat menggunakan mesh gentian kaca. Dua lapisan skim nipis kemudian dibaur ke kawasan sekeliling, diamplas dan diperiksa dengan lampu sisi supaya pembaikan sedia diprimer serta dicat semula.",
+      highlights: [
+        "Diagnosis awal membezakan retak kosmetik, sendi papan dan pergerakan yang masih aktif",
+        "Alur-V meningkatkan ruang lekatan berbanding menutup garisan retak dari permukaan sahaja",
+        "Pengisi akrilik fleksibel membantu menerima pergerakan kecil akibat suhu dan mendapan",
+        "Mesh gentian kaca mengagihkan tegasan merentasi retak atau sendi yang dibaiki",
+        "Dua lapisan skim dibaur dan diamplas supaya tepi tampalan tidak timbul selepas dicat",
+      ],
+      process: [
+        { step: "01", title: "Kenal Pasti Jenis Retak", desc: "Kami mengukur lebar, memeriksa pola dan mencari kelembapan atau pergerakan; retak aktif atau disyaki struktur dirujuk untuk penilaian lanjut." },
+        { step: "02", title: "Buka Alur & Bersihkan", desc: "Retak kosmetik yang sesuai dibuka terkawal menjadi alur-V, kemudian serpihan dan habuk dikeluarkan untuk menyediakan permukaan ikatan." },
+        { step: "03", title: "Isi dengan Bahan Fleksibel", desc: "Alur diisi penuh menggunakan pengisi akrilik fleksibel dan dibiarkan mengeras mengikut keadaan tapak." },
+        { step: "04", title: "Tetulang Mesh & Skim", desc: "Mesh gentian kaca ditanam merentasi garisan pembaikan sebelum dua lapisan skim nipis dibaur ke permukaan sekeliling." },
+        { step: "05", title: "Amplas & Periksa", desc: "Kawasan dibaiki diamplas rata dan diperiksa dengan lampu sisi sebelum diserahkan untuk primer serta padanan cat." },
+      ],
+      faqs: [
+        { q: "Mengapa retak muncul semula selepas hanya ditampal dengan skim coat?", a: "Skim coat ialah bahan kemasan, bukan jambatan pergerakan. Jika retak tidak dibuka, diisi dengan bahan fleksibel dan diperkuat mesh, tegasan yang sama akan memecahkan lapisan nipis baharu pada garisan asal." },
+        { q: "Adakah semua retak dinding boleh dibaiki secara kosmetik?", a: "Tidak. Retak yang semakin lebar, melebihi kira-kira 1 mm, berulang pada banyak lokasi atau disertai pintu tersekat dan kesan air perlu dinilai puncanya terlebih dahulu. Kami tidak menutup tanda pergerakan aktif tanpa diagnosis." },
+        { q: "Adakah warna cat akan terus sepadan selepas pembaikan retak?", a: "Primer dan cat diperlukan selepas skim mengering. Padanan setempat boleh dibuat jika kod dan keadaan cat lama sesuai, tetapi cat yang telah pudar mungkin memerlukan pengecatan semula seluruh bidang dinding untuk hasil sekata." },
+        { q: "Berapa lama pembaikan retak perlu kering sebelum dicat?", a: "Masa bergantung pada kedalaman pengisi dan kelembapan, tetapi lapisan skim akhir biasanya perlu sekurang-kurangnya 24 jam sebelum primer. Kami hanya menyerahkan permukaan selepas bahan kukuh dan kering." },
+      ],
+      metaTitle: "Pembaikan Retak & Sendi KL | Dari RM22/kaki linear",
+      metaDesc: "Pembaikan retak dinding dan sendi siling di KL & Selangor. Diagnosis, alur-V, pengisi akrilik fleksibel, mesh gentian kaca dan skim rata. Dari RM22/kaki linear.",
+    },
+    zh: {
+      name: "裂缝与接缝修补",
+      tagline: "以 V 形开槽、弹性丙烯酸填料和玻纤网格处理细裂缝、沉降纹及石膏板接缝，不做只盖表面的临时修补。从 RM 22 / 延尺起。",
+      description:
+        "直接在裂缝上薄批一道腻子，只能暂时把线纹遮住。施工前我们会分辨它是表层抹灰开裂、石膏板接缝位移，还是仍在发展的结构活动；持续变宽或较大的裂缝必须先查明原因。适合修补的裂缝会切成 V 形槽，除尘后灌填弹性丙烯酸填料，并横跨裂缝埋入玻纤网格分散应力。随后以两道薄批灰向四周收顺、砂磨并做侧光检查，交付可上底漆和补漆的平整表面。",
+      highlights: [
+        "先分辨表面裂纹、板缝位移与仍在发展的结构活动",
+        "V 形开槽扩大粘结面，不只是从表面把裂缝盖住",
+        "弹性丙烯酸填料承受温差和轻微沉降造成的小位移",
+        "玻纤网格跨缝加固并把应力分散到更宽范围",
+        "两道薄批灰向外收边砂磨，补漆后不留凸起补丁边",
+      ],
+      process: [
+        { step: "01", title: "裂缝判断", desc: "测量宽度、观察走向并排查潮湿与位移；持续活动或疑似结构裂缝会建议进一步检查。" },
+        { step: "02", title: "开槽除尘", desc: "将适合修补的表面裂缝受控切成 V 形槽，清走松散碎屑与粉尘，露出牢固粘结面。" },
+        { step: "03", title: "弹性填缝", desc: "用弹性丙烯酸填料将槽内填实，并按现场深度和湿度留足固化时间。" },
+        { step: "04", title: "网格加固与批灰", desc: "横跨修补线埋入玻纤网格，再薄批两道腻子向周边墙面平顺过渡。" },
+        { step: "05", title: "砂磨验收", desc: "把修补区域砂磨至与原墙齐平，以侧光验收后交付底漆和油漆配色工序。" },
+      ],
+      faqs: [
+        { q: "为什么只用腻子补过的裂缝很快又出现？", a: "腻子是饰面找平料，并不能承受接缝活动。若没有开槽、弹性填充和玻纤网格加固，原来的应力会沿同一条线再次拉裂新批的薄层。" },
+        { q: "所有墙面裂缝都能直接做表面修补吗？", a: "不能。仍在变宽、超过约 1 毫米、同时间多处出现，或伴随门窗卡住和水渍的裂缝，必须先判断结构或渗漏原因；我们不会直接遮盖活动性问题。" },
+        { q: "裂缝修补后油漆颜色会完全一样吗？", a: "批灰干透后仍需底漆和面漆。若有原色号且旧漆状态良好，可以局部配色；已经褪色的墙面通常要整幅重涂，颜色和光泽才会均匀。" },
+        { q: "裂缝修补后多久可以上漆？", a: "时间取决于填料深度和现场湿度，但最后一道批灰一般至少等待 24 小时才上底漆。材料未牢固干透前不会交付油漆工序。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪裂缝接缝修补 | RM22/延尺起",
+      metaDesc: "吉隆坡与雪兰莪墙面裂缝及天花接缝修补。先诊断，再做V形开槽、弹性丙烯酸填缝、玻纤网格加固与批灰找平。RM22/延尺起。",
+    },
+  },
+  "skim-coat/full-condo-re-skim-package": {
+    ms: {
+      name: "Pakej Skim Semula Kondominium Penuh",
+      tagline: "Perataan semula semua dinding unit kondominium 1,000 kaki persegi secara berzon, dengan perlindungan dalaman dan kemasan sedia dicat. Dari RM 4,200.",
+      description:
+        "Pakej skim semula kondominium penuh direka untuk unit lama yang mempunyai tekstur tidak sekata, banyak tampalan atau lapisan cat terdahulu yang menonjol di seluruh rumah. Harga rujukan bermula RM 4,200 untuk unit sekitar 1,000 kaki persegi, tertakluk pada keluasan permukaan sebenar, ketinggian, keadaan cat dan jumlah pembaikan retak. Kami melindungi lantai, kabinet dan kelengkapan, bekerja mengikut zon, mengikis bahan longgar serta menyapu primer pengikat sebelum dua lapisan skim polimer dan pengamplasan penuh. Krew biasa menyiapkan unit standard dalam 2 hingga 4 hari dan menyerahkan permukaan yang diperiksa dengan lampu sisi, sedia untuk primer serta pengecatan berasingan.",
+      highlights: [
+        "Harga permulaan RM 4,200 untuk unit kira-kira 1,000 kaki persegi berdasarkan keadaan tapak",
+        "Perlindungan lantai, kabinet, pintu, suis dan kelengkapan sebelum kerja bermula",
+        "Kerja berzon membantu mengawal habuk dan memastikan kemajuan setiap ruang dapat diperiksa",
+        "Dua lapisan skim polimer, pengamplasan penuh dan pemeriksaan lampu sisi seluruh unit",
+        "Tempoh biasa 2 hingga 4 hari sebelum serahan permukaan sedia dicat",
+      ],
+      process: [
+        { step: "01", title: "Ukur & Audit Kecacatan", desc: "Kami mengukur dinding sebenar dan menandakan cat longgar, tampalan, retak, kelembapan serta kawasan yang memerlukan pembaikan tambahan." },
+        { step: "02", title: "Lindungi & Bahagikan Zon", desc: "Lantai, kabinet dan kelengkapan ditutup; unit dibahagikan kepada zon kerja supaya pengikisan, skim dan pembersihan bergerak secara terkawal." },
+        { step: "03", title: "Persediaan & Primer Pengikat", desc: "Bahan tidak kukuh dikikis, retak yang sesuai dibaiki dan primer pengikat disapu pada cat lama atau permukaan berliang." },
+        { step: "04", title: "Dua Lapisan & Amplas", desc: "Setiap zon menerima dua lapisan skim polimer dengan masa kering yang betul dan pengamplasan penuh antara serta selepas lapisan." },
+        { step: "05", title: "Pemeriksaan & Serahan", desc: "Seluruh unit diperiksa dengan lampu sisi, kecacatan kecil diperbetulkan dan habuk dibersihkan sebelum serahan permukaan sedia dicat." },
+      ],
+      faqs: [
+        { q: "Apakah yang termasuk dalam harga permulaan RM 4,200?", a: "Ia ialah harga rujukan untuk skim semula lengkap unit kondominium sekitar 1,000 kaki persegi dalam keadaan biasa. Sebut harga akhir mengambil kira luas dinding sebenar, ketinggian, cat longgar, retak dan kerja pembaikan substrat." },
+        { q: "Adakah cat baharu termasuk dalam pakej skim semula?", a: "Pakej ini menyerahkan permukaan licin yang sedia menerima primer dan cat. Sistem primer serta topcoat boleh ditambah sebagai skop pengecatan berasingan supaya jenama, warna dan tahap kemasan dinyatakan dengan jelas." },
+        { q: "Bolehkah penghuni tinggal di unit semasa kerja dijalankan?", a: "Boleh bagi sesetengah susun atur jika kerja dibuat mengikut zon, tetapi pengamplasan menghasilkan habuk halus dan bilik perlu dikosongkan bergilir. Untuk kerja paling cepat dan bersih, unit kosong sangat digalakkan." },
+        { q: "Mengapa tempoh pakej dinyatakan 2 hingga 4 hari?", a: "Tempoh itu ialah kebiasaan bagi unit standard dan memberi masa kering 4 hingga 6 jam antara lapisan. Kelembapan tinggi, permukaan rosak, akses JMB yang terhad atau pembaikan retak tambahan boleh memanjangkan jadual." },
+      ],
+      metaTitle: "Pakej Skim Semula Kondominium KL | Dari RM4,200",
+      metaDesc: "Skim semula semua dinding kondominium di KL & Selangor. Perlindungan dalaman, primer pengikat, dua lapisan, pengamplasan dan serahan sedia dicat. 1,000 kaki² dari RM4,200.",
+    },
+    zh: {
+      name: "全屋公寓重新批灰配套",
+      tagline: "为约 1,000 平方英尺公寓分区进行全屋墙面重新找平，含室内保护、两道批灰与可上漆交付。从 RM 4,200 起。",
+      description:
+        "全屋公寓重新批灰配套适合旧单位内墙纹理不均、补丁繁多或多层旧漆高低明显的情况。约 1,000 平方英尺单位的参考起价为 RM 4,200，最终报价会按实际墙面面积、楼高、旧漆状况与裂缝修补量核算。我们先遮盖地板、橱柜和固定设备，再分区铲除松动层、涂界面剂，并完成两道聚合物改性批灰和全墙砂磨。标准单位一般 2 至 4 天完成，最后以侧光逐墙验收并清理粉尘，交付可另行上底漆和面漆的平整基层。",
+      highlights: [
+        "约 1,000 平方英尺单位参考起价 RM 4,200，按现场状况核价",
+        "开工前完整保护地板、橱柜、门、开关与固定设备",
+        "分区施工控制粉尘，并让每个空间都可逐段检查",
+        "全屋两道聚合物批灰、充分砂磨与逐墙侧光验收",
+        "标准单位一般 2 至 4 天交付可上漆的平整基层",
+      ],
+      process: [
+        { step: "01", title: "测量与缺陷检查", desc: "测量实际墙面，并标出松动旧漆、补丁、裂缝、潮湿以及需要额外基层修复的区域。" },
+        { step: "02", title: "遮盖与划分施工区", desc: "保护地板、橱柜和固定设备，把单位划成施工区，让铲除、批灰和清洁有序推进。" },
+        { step: "03", title: "基层处理与界面剂", desc: "铲除不牢固材料，处理适合表面修复的裂缝，并在旧漆或多孔基层上涂界面剂。" },
+        { step: "04", title: "两道批灰与砂磨", desc: "每一区域薄批两道聚合物改性材料，保留正确干燥时间，并在层间及完成后充分砂磨。" },
+        { step: "05", title: "侧光验收与交付", desc: "用侧光检查全屋，修正细小瑕疵并吸走粉尘，交付平整、可进入油漆工序的基层。" },
+      ],
+      faqs: [
+        { q: "RM 4,200 的参考起价包括什么？", a: "这是约 1,000 平方英尺、基层状况普通的公寓全屋重新批灰参考价。最终报价按实际墙面面积、楼高、松动旧漆、裂缝和基层修复工作量确定。" },
+        { q: "重新批灰配套包含新油漆吗？", a: "这个配套交付平滑、可上底漆和面漆的基层。底漆与面漆可另列为油漆工程，让涂料品牌、颜色、涂刷道数和最终效果在报价中清楚注明。" },
+        { q: "施工期间还可以住在公寓里吗？", a: "部分户型可以分区轮流腾空，但砂磨会产生细粉尘，每个施工房间必须清空并隔离。若希望工期最短、清洁最彻底，仍建议在空置单位施工。" },
+        { q: "为什么标准工期是 2 至 4 天？", a: "这个时间适用于一般单位，也包含每道 4 至 6 小时的正常干燥时间。湿度高、基层损坏、JMB 限制作业时段或额外裂缝修复都会延长工期。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪公寓全屋重新批灰 | RM4,200起",
+      metaDesc: "吉隆坡与雪兰莪公寓全屋重新批灰。室内遮盖、界面剂、两道聚合物批灰、全墙砂磨及侧光验收。约1,000平方英尺单位从RM4,200起。",
+    },
+  },
+
 };
 
 /**

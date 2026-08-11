@@ -126,6 +126,10 @@ const PRIORITY_KEYS = [
   "lighting/pendant-and-chandelier-install",
   "lighting/cove-and-strip-led-installation",
   "lighting/smart-lighting-and-dimmer-retrofit",
+  "skim-coat/wall-skim-coating",
+  "skim-coat/ceiling-skim-coating",
+  "skim-coat/crack-and-joint-repair",
+  "skim-coat/full-condo-re-skim-package",
 ];
 
 function checkBlock(key: string, locale: "ms" | "zh", b: SpecialtyLocaleBlock, issues: Issue[]) {
