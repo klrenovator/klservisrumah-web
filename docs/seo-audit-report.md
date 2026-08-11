@@ -1,6 +1,6 @@
 # SEO Audit Report
 
-Generated: 2026-08-10T19:34:52.155Z
+Generated: 2026-08-11T00:26:13.219Z
 
 ## Route Inventory
 
@@ -202,7 +202,7 @@ Generated: 2026-08-10T19:34:52.155Z
 
 ## Metadata consistency (post-build full-corpus)
 
-- Pages checked: 4463
+- Pages checked: 4471
 - Pages with hreflang while canonicalised to a different URL: 0
 
 _No issues found — every page that canonicalises to a different URL correctly omits hreflang (Google: canonical overrides hreflang)._
