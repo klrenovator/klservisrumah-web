@@ -1751,6 +1751,38 @@ Continued exactly from the final **Next Session — START HERE** section of `AI_
 - Continue with **Roofing** (4) only — `roof-repair` (Roof Leak Diagnosis & Repair / Ridge Re-Bedding & Re-Pointing / Gutter Cleaning & Realignment / Full Torch-On Membrane Waterproofing); never create standalone Air Conditioning content.
 - Locale problem routes remain blocked pending evidence-based consolidation of the 14 overlap groups. Business/translator QA remains owner-side.
 
+## Session 2026-08-10 (part 17) — Ceiling Fan locale-specialty tranche
+
+Continued exactly from the final **Next Session — START HERE** section of `AI_OPTIMIZATION_ROADMAP.md`. Selected **Ceiling Fan**, the first listed candidate service. No Air Conditioning content was created.
+
+### Completed
+- Authored genuine native Bahasa Malaysia + Simplified Chinese content for all four Ceiling Fan specialties in `config/specialty-locale-content.ts`:
+  - `ceiling-fan/new-ceiling-fan-installation` — Pemasangan Kipas Siling Baharu / 新吊扇安装 (from RM220)
+  - `ceiling-fan/ceiling-fan-replacement` — Penggantian Kipas Siling / 吊扇更换 (from RM250)
+  - `ceiling-fan/dc-motor-smart-fan-install` — Pemasangan Kipas Pintar Motor DC / 直流电机智能吊扇安装 (from RM320)
+  - `ceiling-fan/industrial-shoplot-fan-install` — Pemasangan Kipas Industri / Lot Kedai / 工业 / 店铺吊扇安装 (from RM420)
+- Each locale block contains authored name, tagline, substantive description, 5 highlights, 5 process steps, 4 FAQs, meta title and meta description. Content is grounded in the published Ceiling Fan service record: concrete slab dynabolt anchoring, plaster ceiling timber/GI frame reinforcement (never plasterboard-only), mandatory steel safety wire (anti-drop protection), Suruhanjaya Tenaga (ST) compliant earthing and wiring, KDK, Panasonic, Fanco, Acorn, Alpha, Deka brand compatibility, DC inverter 60% energy savings, RF remote / Wi-Fi smart app integration (Tuya/Smart Life/Google Home), reverse airflow setup, 56–60+ inch industrial fans with I-beam clamps, modular scaffolding for high ceilings, GI conduit cabling, and 5-minute full speed swing test. No thin or spun pages.
+- Added all four Ceiling Fan keys (as well as ensuring plaster-ceiling and waterproofing keys are included) in `PRIORITY_KEYS` in `scripts/validate-specialty-locale.ts`, retaining the non-thin build gate (now enforcing all 72 completed specialties).
+- Reused the shared locale-specialty architecture: eight MS/ZH routes now publish, the four EN ceiling-fan specialty pages emit real EN/MS/ZH/x-default clusters, typed related problems (`ceiling-fan-wobbling`) render through the shared page, and unknown localized specialty slugs remain true 404s.
+- Sitemap and generated AI context now contain **3,440 indexable URLs** (+8 localized specialty URLs).
+
+### Verification
+- PASS: lint (0 errors/warnings), type-check, topical-map (28/28 services; 112 typed relationships), specialty locale gate (**72 specialties × MS/ZH = 144 native blocks**), and i18n parity (1,074 keys × 3 locales).
+- PASS: build (**4,487 routes**), prebuild estimator suite (263,293 assertions), HTML quality audit (**4,479 pages**, 0 fatal / 0 warnings), SEO audit, and `npm audit` (0 vulnerabilities).
+- Production smoke PASS: native MS new-ceiling-fan-installation, native ZH dc-motor-smart-fan-install and EN ceiling-fan-replacement pages return 200 with correct `<html lang>`, native titles/H1, self-canonicals and EN/MS/ZH/x-default clusters; in-language OfferCatalog; both localized service indexes link all 4 specialties; typed related problems render on localized pages; unknown localized specialty returns a real 404; all 8 new URLs are in the sitemap.
+
+### Files changed
+- `config/specialty-locale-content.ts`
+- `scripts/validate-specialty-locale.ts`
+- `docs/seo-audit-report.md`
+- `public/llms-full.txt`, `public/site-summary.json`
+- `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`
+
+### Next session
+- Continue the locale-specialty tranche with a remaining real high-value service: **Lighting** (4), **Skim Coat** (4), **Locksmith** (4), **Autogate** (4), **Welding** (4), **Water Heater** (4), or any other real service from the 28-service catalogue. Never create standalone Air Conditioning content.
+- Locale problem routes remain blocked pending evidence-based consolidation of the 14 overlap groups. Business/translator QA remains owner-side.
+
+
 ## Session 2026-08-10 (part 16) — Roofing locale-specialty tranche
 
 Continued exactly from the final **Next Session — START HERE** section of `AI_OPTIMIZATION_ROADMAP.md`. Selected **Roofing**, the last remaining of the originally-posted trio (Glass & Aluminium, Door, Roofing). No Air Conditioning content was created.
