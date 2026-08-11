@@ -559,7 +559,7 @@ Objectives: new-dimension deep audit after S011 (metadata quality, JSON-LD deep 
 - 🟡 **PHASE 2 — MULTILINGUAL URL ARCHITECTURE**
   - Existing prefix system selected for reuse: EN non-prefixed, MS `/ms`, ZH `/zh`.
   - Main services, blogs, FAQs, and tools already have real locale URLs.
-  - Added (2026-08-10): 64 real locale specialty URLs for the Painting + Ceiling, Plaster Ceiling, Waterproofing, Plumbing, Handyman, Electrical and Tiling tranches (32 specialties × MS + ZH) + sitemap/hreflang. Still missing: 160 locale specialty URLs, 154 locale problem URLs, localized cost/emergency routes, and other important supporting trees.
+  - Added (2026-08-10): 72 real locale specialty URLs for the Painting + Ceiling, Plaster Ceiling, Waterproofing, Plumbing, Handyman, Electrical, Tiling, Flooring, Kitchen Cabinet, Carpentry, Epoxy Flooring, CCTV, Window Repair, Glass & Aluminium, Door, Roofing, and Ceiling Fan tranches (72 specialties × MS + ZH = 144 localized pages) + sitemap/hreflang. Still missing: 80 locale specialty URLs (40 specialties × 2 locales), 154 locale problem URLs, localized cost/emergency routes, and other important supporting trees.
 - 🟡 **PHASE 3 — LANGUAGE CONTENT REQUIREMENTS**
   - Complete data exists for 28 main services and 18 blogs in all three languages.
   - Native problem translations exist for 43/77; 34 are missing.
@@ -597,19 +597,19 @@ Objectives: new-dimension deep audit after S011 (metadata quality, JSON-LD deep 
 - ✅ **PHASE 12 — PRIORITY LOCALE-SPECIALTY SEO ROLLOUT** *(updated 2026-08-10)*
   - Canonical keep/merge decision documented in `docs/canonical-painting-ceiling-decisions.md` (keep all; no deletions/redirects without GSC evidence).
   - Priority tranche implemented: all 8 Painting + Ceiling specialties now have real `/ms/services/<s>/<sub>` and `/zh/services/<s>/<sub>` pages with authored native MS/ZH content, three-way hreflang clusters, sitemap entries, and localized links from the MS/ZH service pages.
-  - Extended service-by-service through Plaster Ceiling, Waterproofing, Plumbing, Handyman, Electrical, Tiling, Flooring, Kitchen Cabinet, Carpentry, Epoxy Flooring, CCTV, Window Repair, Glass & Aluminium, Door, and Roofing: **68 specialties × MS + ZH = 136 real localized specialty pages**, all authored native and non-thin.
-  - Added `npm run audit:specialty-locale` (non-thin content gate for the locale store, wired into `prebuild`; `PRIORITY_KEYS` now requires all 52 completed specialties).
+  - Extended service-by-service through Plaster Ceiling, Waterproofing, Plumbing, Handyman, Electrical, Tiling, Flooring, Kitchen Cabinet, Carpentry, Epoxy Flooring, CCTV, Window Repair, Glass & Aluminium, Door, Roofing, and Ceiling Fan: **72 specialties × MS + ZH = 144 real localized specialty pages**, all authored native and non-thin.
+  - Added `npm run audit:specialty-locale` (non-thin content gate for the locale store, wired into `prebuild`; `PRIORITY_KEYS` now requires all 72 completed specialties).
   - Localized specialty pages now render typed **related guides + problems** from the validated topical map (blog links use localized routes where a translation exists).
   - JSON-LD OfferCatalog on localized specialty pages is in-language (passes `subServices: localized.subServices` to `getServiceSchema` — same pattern as the main localized service pages).
 - 🟡 **PHASE 13 — SEO METADATA**
   - Automated corpus checks found no missing title, description, H1, canonical, or invalid JSON-LD.
   - 16 short titles and 88 short descriptions need manual review; specialty body uniqueness remains weak despite unique metadata.
 - 🟡 **PHASE 14 — SITEMAP**
-  - Existing sitemap: **3,432 unique URLs after the Roofing tranche**, including all 136 real MS/ZH specialty pages, with 0 duplicate `<loc>` values.
+  - Existing sitemap: **3,440 unique URLs after the Ceiling Fan tranche**, including all 144 real MS/ZH specialty pages, with 0 duplicate `<loc>` values.
   - Missing locale specialties/problems must be added only after real pages exist.
 - 🟡 **PHASE 15 — HREFLANG**
   - Real clusters work for main services, blogs, FAQs, and tools.
-  - Specialty routes: **64 authored specialties** now use real three-URL clusters (EN + MS + ZH) in both metadata and sitemap (2026-08-10). The remaining 48 specialties plus problems/supporting routes are not presented as translated equivalents.
+  - Specialty routes: **72 authored specialties** now use real three-URL clusters (EN + MS + ZH) in both metadata and sitemap (2026-08-10). The remaining 40 specialties plus problems/supporting routes are not presented as translated equivalents.
 - 🟡 **PHASE 16 — THIN/DUPLICATE CONTROL**
   - 112 templated specialty pages, 192 generic pages, 15 overlapping clusters, 14 problem-overlap groups, and the large location estate documented.
   - No deletion/redirect was made without evidence.
@@ -617,7 +617,7 @@ Objectives: new-dimension deep audit after S011 (metadata quality, JSON-LD deep 
   - Reuse established `/ms` and `/zh` prefix trees; stable service slugs remain the lowest-risk service pattern.
 - 🟡 **PHASE 18 — NEXT.JS IMPLEMENTATION**
   - Reusable dynamic routes/shared data architecture exists.
-  - Extended (2026-08-10) with locale-aware specialty routes for **64 specialties**: shared `LocaleSpecialtyPage` server component + `specialty-locale-content.ts` authored native store, driven by `app/(ms)/ms/services/[slug]/[subservice]` and `app/(zh)/zh/services/[slug]/[subservice]`. The remaining 48 specialties still need the same non-duplicated treatment; problem routes remain evidence-gated.
+  - Extended (2026-08-10) with locale-aware specialty routes for **72 specialties**: shared `LocaleSpecialtyPage` server component + `specialty-locale-content.ts` authored native store, driven by `app/(ms)/ms/services/[slug]/[subservice]` and `app/(zh)/zh/services/[slug]/[subservice]`. The remaining 40 specialties still need the same non-duplicated treatment; problem routes remain evidence-gated.
 - ✅ **PHASE 19 — DO NOT CHANGE BUSINESS INFORMATION (AUDIT SESSION)**
   - No prices, claims, addresses, phone numbers, ratings, warranties, brands, or service areas were changed.
 - ✅ **PHASE 20 — QUALITY CONTROL** *(2026-08-10)*
@@ -1020,9 +1020,34 @@ Continued exactly from the final **Next Session — START HERE** section and sel
 ### Files
 - Modified: `config/specialty-locale-content.ts`, `scripts/validate-specialty-locale.ts`, `docs/seo-audit-report.md`, `public/llms-full.txt`, `public/site-summary.json`, `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
 
+### ✅ Session 2026-08-10 (part 17) — Ceiling Fan locale-specialty tranche
+
+**Status:** ✅ COMPLETED
+
+Continued exactly from the final **Next Session — START HERE** section and selected the listed **Ceiling Fan** tranche. No standalone Air Conditioning content was created.
+
+- Added genuine native Bahasa Malaysia + Simplified Chinese content for all four Ceiling Fan specialties in `config/specialty-locale-content.ts`:
+  1. `ceiling-fan/new-ceiling-fan-installation` — Pemasangan Kipas Siling Baharu / 新吊扇安装 (from RM220)
+  2. `ceiling-fan/ceiling-fan-replacement` — Penggantian Kipas Siling / 吊扇更换 (from RM250)
+  3. `ceiling-fan/dc-motor-smart-fan-install` — Pemasangan Kipas Pintar Motor DC / 直流电机智能吊扇安装 (from RM320)
+  4. `ceiling-fan/industrial-shoplot-fan-install` — Pemasangan Kipas Industri / Lot Kedai / 工业 / 店铺吊扇安装 (from RM420)
+- Every block has an authored native name, tagline, substantive description, five highlights, five process steps, four FAQs, meta title and meta description. Source facts remain grounded in the published Ceiling Fan service record: concrete slab dynabolt anchoring, plaster ceiling timber/GI frame reinforcement (never plasterboard-only), mandatory steel safety wire (anti-drop protection), Suruhanjaya Tenaga (ST) compliant earthing and wiring, KDK, Panasonic, Fanco, Acorn, Alpha, Deka brand compatibility, DC inverter 60% energy savings, RF remote / Wi-Fi smart app integration (Tuya/Smart Life/Google Home), reverse airflow setup, 56–60+ inch industrial fans with I-beam clamps, modular scaffolding for high ceilings, GI conduit cabling, and 5-minute full speed swing test. No thin or spun pages.
+- Added all four Ceiling Fan keys (as well as ensuring plaster-ceiling and waterproofing keys are included) in `PRIORITY_KEYS` in `scripts/validate-specialty-locale.ts`, retaining the non-thin build gate (now enforcing all 72 completed specialties).
+- The shared `LocaleSpecialtyPage` architecture publishes the eight localized routes, upgrades all four EN ceiling-fan specialty hreflang clusters to EN/MS/ZH/x-default, preserves typed related-problem sections (`ceiling-fan-wobbling`), localized service links and real 404s.
+- Generated AI context and sitemap now report **3,440 indexable URLs** (+8).
+
+#### Verification
+- PASS: lint (0 errors/warnings), type-check, topical map (28/28; 112 typed specialty relationships), locale gate (**72 specialties × MS/ZH = 144 native blocks**), i18n parity (1,074 × 3), and estimator suite (263,293 assertions).
+- PASS: production build (**4,487 routes**), HTML audit (**4,479 pages**, 0 fatal / 0 warnings), SEO audit and `npm audit` (0 vulnerabilities).
+- Production smoke: native MS new-ceiling-fan-installation, native ZH dc-motor-smart-fan-install and EN ceiling-fan-replacement pages return 200 with correct `<html lang>`, native titles, self-canonicals and full EN/MS/ZH/x-default hreflang clusters with in-language OfferCatalog; MS + ZH Ceiling Fan indexes link all 4 localized specialties; unknown MS Ceiling Fan specialty returns a real 404; sitemap contains all 8 new Ceiling Fan URLs.
+
+### Files
+- Modified: `config/specialty-locale-content.ts`, `scripts/validate-specialty-locale.ts`, `docs/seo-audit-report.md`, `public/llms-full.txt`, `public/site-summary.json`, `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
+
 ## Next Session — START HERE
 
-1. Continue the locale-specialty tranche service-by-service. Completed: Painting + Ceiling (8), Plaster Ceiling (4), Waterproofing (4), Plumbing (4), Handyman (4), Electrical (4), Tiling (4), Flooring (4), Kitchen Cabinet (4), Carpentry (4), Epoxy Flooring (4), CCTV (4), Window Repair (4), Glass & Aluminium (4), Door (4), and **Roofing (4)** = **68 specialties × MS + ZH (136 localized pages)**. The roofing tranche completes the original three-candidate list (Glass & Aluminium, Door, Roofing) after the main priority pipeline. Pick the next coherent four-specialty tranche from the remaining real high-value services—next candidates: **Ceiling Fan** (4), **Lighting** (4), **Skim Coat** (4), **Locksmith** (4), **Autogate** (4), **Welding** (4), or any other real service with 4 specialties from the 28-service catalogue. Reuse `specialty-locale-content.ts` + `LocaleSpecialtyPage` and author genuine native MS/ZH content. **Do not create Air Conditioning pages or content** (owner confirmed not offered).
+1. Continue the locale-specialty tranche service-by-service. Completed: Painting + Ceiling (8), Plaster Ceiling (4), Waterproofing (4), Plumbing (4), Handyman (4), Electrical (4), Tiling (4), Flooring (4), Kitchen Cabinet (4), Carpentry (4), Epoxy Flooring (4), CCTV (4), Window Repair (4), Glass & Aluminium (4), Door (4), Roofing (4), and **Ceiling Fan (4)** = **72 specialties × MS + ZH (144 localized pages)**. Pick the next coherent four-specialty tranche from the remaining real high-value services—next candidates: **Lighting** (4), **Skim Coat** (4), **Locksmith** (4), **Autogate** (4), **Welding** (4), **Water Heater** (4), or any other real service from the 28-service catalogue. Reuse `specialty-locale-content.ts` + `LocaleSpecialtyPage` and author genuine native MS/ZH content. **Do not create Air Conditioning pages or content** (owner confirmed not offered).
 2. Add real locale problem routes (154) only after the 14 problem-overlap groups are consolidated with evidence; then localize `RelatedProblems` links on localized specialty pages (they currently point to EN problem pages—documented and still blocked).
-3. Obtain business/translator QA for the completed localized specialty pages (136 so far) before measuring GSC indexation; this requires an owner/translator and cannot be completed from repository code alone.
+3. Obtain business/translator QA for the completed localized specialty pages (144 so far) before measuring GSC indexation; this requires an owner/translator and cannot be completed from repository code alone.
 4. Do not create thin or spun pages; rerun lint, type-check, build, topical-map, specialty-locale, i18n, HTML and SEO audits after every tranche.
+

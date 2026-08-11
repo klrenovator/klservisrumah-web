@@ -58,6 +58,14 @@ const PRIORITY_KEYS = [
   "ceiling/plaster-ceiling-installation",
   "ceiling/gypsum-board-partition-wall",
   "ceiling/cornice-and-l-box-concealed-light-trough",
+  "plaster-ceiling/flat-plaster-ceiling",
+  "plaster-ceiling/tiered-and-l-box-ceiling",
+  "plaster-ceiling/cove-and-curved-ceiling",
+  "plaster-ceiling/ceiling-repair-and-re-skim",
+  "waterproofing/pu-high-pressure-injection-grouting",
+  "waterproofing/bathroom-and-wet-area-waterproofing",
+  "waterproofing/roof-and-concrete-slab-waterproofing",
+  "waterproofing/wall-dampness-and-efflorescence-repair",
   "plumbing/water-leakage-diagnosis-and-repair",
   "plumbing/toilet-tap-and-sink-installation",
   "plumbing/drain-unclogging-and-cleaning",
@@ -110,6 +118,10 @@ const PRIORITY_KEYS = [
   "roof-repair/ridge-re-bedding-and-re-pointing",
   "roof-repair/gutter-cleaning-and-realignment",
   "roof-repair/full-torch-on-membrane-waterproofing",
+  "ceiling-fan/new-ceiling-fan-installation",
+  "ceiling-fan/ceiling-fan-replacement",
+  "ceiling-fan/dc-motor-smart-fan-install",
+  "ceiling-fan/industrial-shoplot-fan-install",
 ];
 
 function checkBlock(key: string, locale: "ms" | "zh", b: SpecialtyLocaleBlock, issues: Issue[]) {
