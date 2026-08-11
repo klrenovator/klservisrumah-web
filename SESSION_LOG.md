@@ -2027,3 +2027,50 @@ Continued exactly from the final **Next Session — START HERE** section of `AI_
 ### Next session
 - Continue the locale-specialty tranche with **House Renovation** (4), **Cleaning** (4), **Deep Cleaning** (4), **Post-Renovation Cleaning** (4), or another real service from the 28-service catalogue. Never create standalone Air Conditioning content.
 - Locale problem routes remain blocked pending evidence-based consolidation of the 14 overlap groups. Business/translator QA remains owner-side.
+
+---
+
+## Session 2026-08-11 (part 24) — House Renovation + Cleaning + Deep Cleaning + Post-Renovation Cleaning locale-specialty tranches (FINAL 16 — ALL 112 SPECIALTIES COMPLETE)
+
+Continued exactly from the final **Next Session — START HERE** section of `AI_OPTIMIZATION_ROADMAP.md` and implemented the last four remaining services in the 28-service catalogue. No standalone Air Conditioning content was created.
+
+### Completed
+- Authored genuine native Bahasa Malaysia + Simplified Chinese content for all 16 remaining specialties (4 services × 4) in `config/specialty-locale-content.ts`:
+  - `house-renovation/full-house-renovation-package` — Pakej Pengubahsuaian Rumah Penuh / 全屋翻新套餐 (from RM 22,000)
+  - `house-renovation/kitchen-and-bathroom-makeover` — Makeover Dapur & Bilik Mandi / 厨房与浴室翻新 (from RM 10,000)
+  - `house-renovation/condo-interior-refurbishment` — Pemulihan Interior Kondominium / 公寓室内翻新 (from RM 30,000)
+  - `house-renovation/commercial-shoplot-renovation` — Pengubahsuaian Shoplot Komersial / 商铺商业装修 (On Quote)
+  - `cleaning/weekly-condo-cleaning-1-000-sqft` — Pembersihan Kondominium Mingguan / 每周公寓清洁 (from RM 180 / visit)
+  - `cleaning/bi-weekly-terrace-house-cleaning` — Pembersihan Rumah Teres Dua Minggu Sekali / 每两周排屋清洁 (from RM 250 / visit)
+  - `cleaning/office-cleaning-small-office-1-500-sqft` — Pembersihan Pejabat Kecil / 小型办公室清洁 (from RM 320 / visit)
+  - `cleaning/one-off-spring-clean` — Cucian Musim Sekali Sahaja / 单次大扫除 (from RM 420)
+  - `deep-cleaning/condo-move-out-deep-clean-1-000-sqft` — Cucian Pindah Keluar Kondominium / 公寓退租深度清洁 (from RM 420)
+  - `deep-cleaning/terrace-house-deep-clean-2-000-sqft` — Cucian Menyeluruh Rumah Teres / 排屋深度清洁 (from RM 650)
+  - `deep-cleaning/post-illness-disinfection-clean` — Cucian Disinfeksi Selepas Sakit / 病后消毒清洁 (from RM 500)
+  - `deep-cleaning/allergy-season-refresh` — Penyegaran Musim Alahan / 过敏季焕新清洁 (from RM 480)
+  - `post-renovation-cleaning/condo-post-renovation-clean-1-000-sqft` — Cucian Selepas Pengubahsuaian Kondominium / 公寓装修后清洁 (from RM 650)
+  - `post-renovation-cleaning/terrace-house-post-renovation-clean-2-000-sqft` — Cucian Selepas Pengubahsuaian Rumah Teres / 排屋装修后清洁 (from RM 1,400)
+  - `post-renovation-cleaning/new-tiles-grout-haze-removal` — Penyingkiran Kabut Grout Jubin Baharu / 新瓷砖砖缝浮灰清除 (from RM 10 / sq ft)
+  - `post-renovation-cleaning/construction-debris-removal` — Penyingkiran Serpihan Pembinaan / 建筑垃圾清运 (from RM 320)
+- Every locale block contains an authored name, tagline, substantive description, 5 highlights, 5 process steps, 4 FAQs, `metaTitle` and `metaDesc`. Content is grounded in the published service records: House Renovation (turnkey single-contract renovation, milestone payments 10/20/30/30/10, DBKL/MBSA + condo-management compliance, Gantt timeline, 12-month structural warranty, wet-area tanking and Häfele/Blum soft-close hardware in kitchen/bathroom makeovers, 6–8 week 1,000 sqft condo programme, retail/F&B shoplot fit-out with grease-trap/exhaust and TNB load); Cleaning (background-checked in-house cleaners, eco pet-safe products, custom checklists, monthly supervisor spot-checks, 24-hour re-clean guarantee, after-hours office service); Deep Cleaning (top-to-bottom coverage incl. oven/fridge/fans/window tracks, HEPA-filtered vacuums, hospital-grade post-illness disinfection, dust-mite allergy-season treatment, move-out written completion receipt); Post-Renovation Cleaning (construction-residue removal with specialist solvents, plastic/metal scrapers, wet-vacuum extraction and floor buffing, pH-balanced grout-haze removal never on natural stone, 3–7 day cure window, skip-bin coordination RM 350–500, 7-day spot-check guarantee). No thin or spun pages.
+- Added all 16 keys to the non-thin `PRIORITY_KEYS` build gate in `scripts/validate-specialty-locale.ts`; it now enforces **all 112 completed specialties** — the full catalogue.
+- Reused the shared `LocaleSpecialtyPage` architecture: 32 MS/ZH routes now publish; all 16 EN specialty pages emit real EN/MS/ZH/x-default hreflang clusters; typed related problems render through the existing topical map (`mold-in-bathroom-after-cleaning`, `stubborn-bathroom-limescale`, `move-out-condo-deep-clean`, `stubborn-grout-stains-after-deep-clean`, `construction-dust-returning`, `cement-splatter-tile-clean`, `old-condo-full-refurbishment`); localized service links and true 404s are preserved.
+- Sitemap and generated AI context now contain **3,520 indexable URLs** (+32 localized specialty pages).
+
+### Verification
+- PASS: lint (0 errors/warnings), type-check, topical-map (28/28 services; 112 typed relationships), specialty locale gate (**112 specialties × MS/ZH = 224 native blocks**), i18n parity (1,074 keys × 3 locales), estimator suite (263,293 assertions), production build (**4,567 static pages generated**), full-corpus HTML audit (**4,559 pages**, 0 fatal / 0 warnings), technical SEO head audit (3,520 self-canonical indexable pages; 0 warnings), metadata consistency SEO audit, SEO inventory (4,559 pages) and `npm audit` (0 vulnerabilities).
+- Production smoke PASS: native MS `full-house-renovation-package`, `weekly-condo-cleaning-1-000-sqft`, `condo-move-out-deep-clean-1-000-sqft`, `new-tiles-grout-haze-removal`; native ZH `kitchen-and-bathroom-makeover`, `one-off-spring-clean`, `post-illness-disinfection-clean`, `construction-debris-removal`; and EN `weekly-condo-cleaning-1-000-sqft` all return 200 with correct `<html lang>`, native titles/H1s, self-canonicals and full EN/MS/ZH/x-default clusters; localized pages emit in-language OfferCatalog, FAQPage and HowTo JSON-LD; MS + ZH indexes for all four services link all 4 localized specialties; unknown MS specialty returns 404; sitemap has exactly 3,520 URLs with 0 duplicates.
+
+### Files changed
+- `config/specialty-locale-content.ts`
+- `scripts/validate-specialty-locale.ts`
+- `docs/seo-audit-report.md`
+- `docs/seo-metadata-inventory.csv`
+- `docs/seo-metadata-summary.json`
+- `public/llms-full.txt`, `public/site-summary.json`
+- `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`
+
+### Next session
+- **The locale-specialty tranche is COMPLETE — all 112 specialties × MS + ZH (224 localized pages).** No tranches remain. Next in-repo milestone is real locale problem routes (154), still blocked pending evidence-based consolidation of the 14 problem-overlap groups (GSC data).
+- Business/translator QA of all 224 localized specialty pages remains owner-side; after QA + deploy, re-measure GSC/Bing coverage of the localized trees and MS/ZH pilot conversions before the owner-only H3 full-rollout decision.
+- Never create standalone Air Conditioning content.

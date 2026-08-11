@@ -556,10 +556,10 @@ Objectives: new-dimension deep audit after S011 (metadata quality, JSON-LD deep 
   - Audited codebase and representative live routes before page generation.
   - Verified 28 top-level service records, 112 specialties, 15 service-cluster pages, 18 blogs × 3 languages, 3 FAQ hubs, 77 problem pages, 1,022 FAQ-directory entries, language routing, middleware, metadata, canonicals, hreflang, sitemap, robots, indexability, internal links, duplicate intent, thin content, and missing content.
   - Full report: `docs/service-architecture-multilingual-audit-2026-08-09.md`.
-- 🟡 **PHASE 2 — MULTILINGUAL URL ARCHITECTURE**
+- ✅ **PHASE 2 — MULTILINGUAL URL ARCHITECTURE**
   - Existing prefix system selected for reuse: EN non-prefixed, MS `/ms`, ZH `/zh`.
   - Main services, blogs, FAQs, and tools already have real locale URLs.
-  - Added (2026-08-10): 72 real locale specialty URLs for the Painting + Ceiling, Plaster Ceiling, Waterproofing, Plumbing, Handyman, Electrical, Tiling, Flooring, Kitchen Cabinet, Carpentry, Epoxy Flooring, CCTV, Window Repair, Glass & Aluminium, Door, Roofing, and Ceiling Fan tranches (72 specialties × MS + ZH = 144 localized pages) + sitemap/hreflang. Still missing: 80 locale specialty URLs (40 specialties × 2 locales), 154 locale problem URLs, localized cost/emergency routes, and other important supporting trees.
+  - Added (2026-08-10 → 2026-08-11): real locale specialty URLs for **all 112 specialties** — Painting + Ceiling, Plaster Ceiling, Waterproofing, Plumbing, Handyman, Electrical, Tiling, Flooring, Kitchen Cabinet, Carpentry, Epoxy Flooring, CCTV, Window Repair, Glass & Aluminium, Door, Roofing, Ceiling Fan, Lighting, Skim Coat, Locksmith, Autogate, Welding, Water Heater, House Renovation, Cleaning, Deep Cleaning, and Post-Renovation Cleaning (112 specialties × MS + ZH = **224 localized pages**) + sitemap/hreflang. Still missing: 154 locale problem URLs, localized cost/emergency routes, and other supporting trees.
 - 🟡 **PHASE 3 — LANGUAGE CONTENT REQUIREMENTS**
   - Complete data exists for 28 main services and 18 blogs in all three languages.
   - Native problem translations exist for 43/77; 34 are missing.
@@ -572,8 +572,8 @@ Objectives: new-dimension deep audit after S011 (metadata quality, JSON-LD deep 
   - 28/28 have EN/MS/ZH pages and 4 localized FAQs.
   - 14/28 have a clearly topical blog.
   - Main → specialty and service ↔ blog contextual links are missing.
-- 🟡 **PHASE 6 — EVERY SUB-SERVICE**
-  - 112 EN URLs exist; 224 MS/ZH URLs are missing.
+- ✅ **PHASE 6 — EVERY SUB-SERVICE**
+  - 112 EN URLs exist; **224 MS/ZH URLs now exist** (all 112 specialties, completed 2026-08-11).
   - Existing six-FAQ sets are repeated templates, not specialty-authored sets.
   - 0/112 specialties have an explicit end-to-end blog/problem/FAQ relationship.
 - 🟡 **PHASE 7 — PROBLEM-BASED SEO**
@@ -594,30 +594,30 @@ Objectives: new-dimension deep audit after S011 (metadata quality, JSON-LD deep 
   - Home → service, problem → service, service ↔ location, and specialty → parent/siblings exist.
   - Now added: main → specialty links (all 28 EN service pages link their 4 specialties; MS/ZH link the priority localized specialties), service ↔ blog links (`RelatedBlogs` on all 28 EN service pages, driven by the validated map), and localized FAQ → localized service links (FAQ hubs + sitewide footer now point to `/ms/services/*` / `/zh/services/*` on localized trees).
   - `topicalAuthorityMap` now complete for all 28 services + 112 typed specialty → problem/blog relationships, with zero Handyman fallback and a validation gate (`npm run audit:topical-map`, wired into `prebuild`).
-- ✅ **PHASE 12 — PRIORITY LOCALE-SPECIALTY SEO ROLLOUT** *(updated 2026-08-10)*
+- ✅ **PHASE 12 — PRIORITY LOCALE-SPECIALTY SEO ROLLOUT** *(updated 2026-08-11 — ALL 112 SPECIALTIES COMPLETE)*
   - Canonical keep/merge decision documented in `docs/canonical-painting-ceiling-decisions.md` (keep all; no deletions/redirects without GSC evidence).
   - Priority tranche implemented: all 8 Painting + Ceiling specialties now have real `/ms/services/<s>/<sub>` and `/zh/services/<s>/<sub>` pages with authored native MS/ZH content, three-way hreflang clusters, sitemap entries, and localized links from the MS/ZH service pages.
-  - Extended service-by-service through Plaster Ceiling, Waterproofing, Plumbing, Handyman, Electrical, Tiling, Flooring, Kitchen Cabinet, Carpentry, Epoxy Flooring, CCTV, Window Repair, Glass & Aluminium, Door, Roofing, and Ceiling Fan: **72 specialties × MS + ZH = 144 real localized specialty pages**, all authored native and non-thin.
-  - Added `npm run audit:specialty-locale` (non-thin content gate for the locale store, wired into `prebuild`; `PRIORITY_KEYS` now requires all 72 completed specialties).
+  - Extended service-by-service through Plaster Ceiling, Waterproofing, Plumbing, Handyman, Electrical, Tiling, Flooring, Kitchen Cabinet, Carpentry, Epoxy Flooring, CCTV, Window Repair, Glass & Aluminium, Door, Roofing, Ceiling Fan, Lighting, Skim Coat, Locksmith, Autogate, Welding, Water Heater, House Renovation, Cleaning, Deep Cleaning, and Post-Renovation Cleaning: **112 specialties × MS + ZH = 224 real localized specialty pages**, all authored native and non-thin (completed 2026-08-11, part 24).
+  - Added `npm run audit:specialty-locale` (non-thin content gate for the locale store, wired into `prebuild`; `PRIORITY_KEYS` now requires all 112 completed specialties).
   - Localized specialty pages now render typed **related guides + problems** from the validated topical map (blog links use localized routes where a translation exists).
   - JSON-LD OfferCatalog on localized specialty pages is in-language (passes `subServices: localized.subServices` to `getServiceSchema` — same pattern as the main localized service pages).
 - 🟡 **PHASE 13 — SEO METADATA**
   - Automated corpus checks found no missing title, description, H1, canonical, or invalid JSON-LD.
   - 16 short titles and 88 short descriptions need manual review; specialty body uniqueness remains weak despite unique metadata.
-- 🟡 **PHASE 14 — SITEMAP**
-  - Existing sitemap: **3,440 unique URLs after the Ceiling Fan tranche**, including all 144 real MS/ZH specialty pages, with 0 duplicate `<loc>` values.
-  - Missing locale specialties/problems must be added only after real pages exist.
-- 🟡 **PHASE 15 — HREFLANG**
+- ✅ **PHASE 14 — SITEMAP** *(updated 2026-08-11)*
+  - Existing sitemap: **3,520 unique URLs after the Post-Renovation Cleaning tranche**, including all 224 real MS/ZH specialty pages, with 0 duplicate `<loc>` values.
+  - Missing locale problems must be added only after real pages exist.
+- ✅ **PHASE 15 — HREFLANG** *(updated 2026-08-11)*
   - Real clusters work for main services, blogs, FAQs, and tools.
-  - Specialty routes: **72 authored specialties** now use real three-URL clusters (EN + MS + ZH) in both metadata and sitemap (2026-08-10). The remaining 40 specialties plus problems/supporting routes are not presented as translated equivalents.
+  - Specialty routes: **all 112 authored specialties** now use real three-URL clusters (EN + MS + ZH + x-default) in both metadata and sitemap (completed 2026-08-11). Problems/supporting routes are not presented as translated equivalents.
 - 🟡 **PHASE 16 — THIN/DUPLICATE CONTROL**
   - 112 templated specialty pages, 192 generic pages, 15 overlapping clusters, 14 problem-overlap groups, and the large location estate documented.
   - No deletion/redirect was made without evidence.
 - ✅ **PHASE 17 — LANGUAGE URL STRUCTURE DECISION**
   - Reuse established `/ms` and `/zh` prefix trees; stable service slugs remain the lowest-risk service pattern.
-- 🟡 **PHASE 18 — NEXT.JS IMPLEMENTATION**
+- ✅ **PHASE 18 — NEXT.JS IMPLEMENTATION** *(updated 2026-08-11)*
   - Reusable dynamic routes/shared data architecture exists.
-  - Extended (2026-08-10) with locale-aware specialty routes for **72 specialties**: shared `LocaleSpecialtyPage` server component + `specialty-locale-content.ts` authored native store, driven by `app/(ms)/ms/services/[slug]/[subservice]` and `app/(zh)/zh/services/[slug]/[subservice]`. The remaining 40 specialties still need the same non-duplicated treatment; problem routes remain evidence-gated.
+  - Extended (2026-08-10 → 2026-08-11) with locale-aware specialty routes for **all 112 specialties**: shared `LocaleSpecialtyPage` server component + `specialty-locale-content.ts` authored native store, driven by `app/(ms)/ms/services/[slug]/[subservice]` and `app/(zh)/zh/services/[slug]/[subservice]`. Problem routes remain evidence-gated.
 - ✅ **PHASE 19 — DO NOT CHANGE BUSINESS INFORMATION (AUDIT SESSION)**
   - No prices, claims, addresses, phone numbers, ratings, warranties, brands, or service areas were changed.
 - ✅ **PHASE 20 — QUALITY CONTROL** *(2026-08-10)*
@@ -632,12 +632,12 @@ Objectives: new-dimension deep audit after S011 (metadata quality, JSON-LD deep 
 - **Sub-services/specialties:** 112
 - **Explicit additional/standalone classification:** 0
 - **EN service-tree URLs:** 212 (index + 28 main + 56 cost/emergency + 112 specialties + 15 clusters)
-- **MS service-tree URLs:** 85 (index + 28 main + 56 authored specialties)
-- **ZH service-tree URLs:** 85 (index + 28 main + 56 authored specialties)
+- **MS service-tree URLs:** 141 (index + 28 main + 112 authored specialties)
+- **ZH service-tree URLs:** 141 (index + 28 main + 112 authored specialties)
 - **Blogs:** 18 EN + 18 MS + 18 ZH
 - **FAQ hubs:** 1 EN + 1 MS + 1 ZH
 - **Problem pages:** 77 EN + 0 MS + 0 ZH
-- **Missing localized specialty URLs:** 88 (44 specialties × 2 locales)
+- **Missing localized specialty URLs:** 0 (all 112 specialties localized — completed 2026-08-11)
 - **Missing localized problem URLs:** 154
 
 ### This session completed
@@ -662,7 +662,7 @@ Objectives: new-dimension deep audit after S011 (metadata quality, JSON-LD deep 
 - ✅ 4. Internal-link foundations corrected: main → specialty links, service ↔ blog (`RelatedBlogs`), localized FAQ → localized service links (FAQ hub + sitewide footer).
 - ✅ 5. Locale-specialty rollout implemented through Door / Roofing (68 specialties × MS + ZH with authored native content, hreflang and sitemap entries).
 - ⏳ 6. Real locale problem routes (154) still pending; locale cost/emergency routes pending.
-- ⏳ 7. Continue service-by-service (remaining 48 specialties) without creating thin or spun pages; standalone Air Conditioning is explicitly out of scope per the owner.
+- ✅ 7. Continue service-by-service without creating thin or spun pages — **COMPLETED 2026-08-11: all 112 specialties now have authored native MS/ZH locale pages (224 localized pages)**; standalone Air Conditioning stays explicitly out of scope per the owner.
 
 ## Session 2026-08-10 — Implementation: relationship architecture + Painting/Ceiling locale-specialty tranche
 
@@ -1203,9 +1203,54 @@ Continued exactly from the final **Next Session — START HERE** section and sel
 ### Files
 - Modified: `config/specialty-locale-content.ts`, `scripts/validate-specialty-locale.ts`, `docs/seo-audit-report.md`, `docs/seo-metadata-inventory.csv`, `docs/seo-metadata-summary.json`, `public/llms-full.txt`, `public/site-summary.json`, `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
 
+### ✅ Session 2026-08-11 (part 24) — House Renovation + Cleaning + Deep Cleaning + Post-Renovation Cleaning locale-specialty tranches (final 16 specialties — ALL 112 COMPLETE)
+
+**Status:** ✅ COMPLETED
+
+Continued exactly from the final **Next Session — START HERE** section and implemented the last four remaining services in the catalogue. No standalone Air Conditioning content was created.
+
+- Added genuine native Bahasa Malaysia + Simplified Chinese content for all **16 remaining specialties** (4 services × 4) in `config/specialty-locale-content.ts`:
+
+  **House Renovation** (4):
+  1. `house-renovation/full-house-renovation-package` — Pakej Pengubahsuaian Rumah Penuh / 全屋翻新套餐 (from RM 22,000)
+  2. `house-renovation/kitchen-and-bathroom-makeover` — Makeover Dapur & Bilik Mandi / 厨房与浴室翻新 (from RM 10,000)
+  3. `house-renovation/condo-interior-refurbishment` — Pemulihan Interior Kondominium / 公寓室内翻新 (from RM 30,000)
+  4. `house-renovation/commercial-shoplot-renovation` — Pengubahsuaian Shoplot Komersial / 商铺商业装修 (On Quote)
+
+  **Cleaning** (4):
+  5. `cleaning/weekly-condo-cleaning-1-000-sqft` — Pembersihan Kondominium Mingguan / 每周公寓清洁 (from RM 180 / visit)
+  6. `cleaning/bi-weekly-terrace-house-cleaning` — Pembersihan Rumah Teres Dua Minggu Sekali / 每两周排屋清洁 (from RM 250 / visit)
+  7. `cleaning/office-cleaning-small-office-1-500-sqft` — Pembersihan Pejabat Kecil / 小型办公室清洁 (from RM 320 / visit)
+  8. `cleaning/one-off-spring-clean` — Cucian Musim Sekali Sahaja / 单次大扫除 (from RM 420)
+
+  **Deep Cleaning** (4):
+  9. `deep-cleaning/condo-move-out-deep-clean-1-000-sqft` — Cucian Pindah Keluar Kondominium / 公寓退租深度清洁 (from RM 420)
+  10. `deep-cleaning/terrace-house-deep-clean-2-000-sqft` — Cucian Menyeluruh Rumah Teres / 排屋深度清洁 (from RM 650)
+  11. `deep-cleaning/post-illness-disinfection-clean` — Cucian Disinfeksi Selepas Sakit / 病后消毒清洁 (from RM 500)
+  12. `deep-cleaning/allergy-season-refresh` — Penyegaran Musim Alahan / 过敏季焕新清洁 (from RM 480)
+
+  **Post-Renovation Cleaning** (4):
+  13. `post-renovation-cleaning/condo-post-renovation-clean-1-000-sqft` — Cucian Selepas Pengubahsuaian Kondominium / 公寓装修后清洁 (from RM 650)
+  14. `post-renovation-cleaning/terrace-house-post-renovation-clean-2-000-sqft` — Cucian Selepas Pengubahsuaian Rumah Teres / 排屋装修后清洁 (from RM 1,400)
+  15. `post-renovation-cleaning/new-tiles-grout-haze-removal` — Penyingkiran Kabut Grout Jubin Baharu / 新瓷砖砖缝浮灰清除 (from RM 10 / sq ft)
+  16. `post-renovation-cleaning/construction-debris-removal` — Penyingkiran Serpihan Pembinaan / 建筑垃圾清运 (from RM 320)
+
+- Every locale block has an authored native name, tagline, substantive description, five highlights, five process steps, four FAQs, meta title and meta description. Content remains grounded in the published service records: House Renovation (turnkey single-contract renovation, milestone payments 10/20/30/30/10, DBKL/MBSA + condo-management compliance, Gantt timeline, 12-month structural warranty, kitchen/bathroom makeover with wet-area tanking and Häfele/Blum soft-close hardware, 6–8 week 1,000 sqft condo programme, retail/F&B shoplot fit-out with grease-trap/exhaust and TNB load); Cleaning (background-checked in-house cleaners, eco pet-safe products, custom checklists, monthly supervisor spot-checks, 24-hour re-clean guarantee, after-hours office service); Deep Cleaning (top-to-bottom coverage incl. oven/fridge/fans/window tracks, HEPA-filtered vacuums, hospital-grade post-illness disinfection, dust-mite allergy-season treatment, move-out written completion receipt); Post-Renovation Cleaning (construction-residue removal with specialist solvents, plastic/metal scrapers, wet-vacuum extraction and floor buffing, pH-balanced grout-haze removal never on natural stone, 3–7 day cure window, skip-bin coordination RM 350–500, 7-day spot-check guarantee). No thin or spun pages.
+- Added all 16 keys to `PRIORITY_KEYS` in `scripts/validate-specialty-locale.ts`, retaining the non-thin build gate (now enforcing **all 112 completed specialties** — the full catalogue).
+- Reused the shared `LocaleSpecialtyPage` architecture: 32 MS/ZH routes now publish; all 16 EN specialty pages emit real EN/MS/ZH/x-default hreflang clusters; typed related problems (e.g. `mold-in-bathroom-after-cleaning`, `stubborn-bathroom-limescale`, `move-out-condo-deep-clean`, `stubborn-grout-stains-after-deep-clean`, `construction-dust-returning`, `cement-splatter-tile-clean`, `old-condo-full-refurbishment`) render through the existing topical map; localized service links and true 404s are preserved.
+- Sitemap and generated AI context increased **3,488 → 3,520 indexable URLs** (+32 localized specialty pages).
+
+#### Verification
+- PASS: lint (0 errors/warnings), type-check, topical map (28/28 services; 112 typed specialty relationships), locale gate (**112 specialties × MS/ZH = 224 native blocks** — the full catalogue), i18n parity (1,074 × 3), estimator suite (263,293 assertions) and `npm audit` (0 vulnerabilities).
+- PASS: production build (**4,567 static pages generated**), full-corpus HTML audit (**4,559 pages**, 0 fatal / 0 warnings), technical SEO head audit (3,520 self-canonical indexable pages; 0 warnings), metadata consistency SEO audit, and SEO inventory (4,559 pages, 0 warnings).
+- Production smoke: native MS `full-house-renovation-package` / `weekly-condo-cleaning-1-000-sqft` / `condo-move-out-deep-clean-1-000-sqft` / `new-tiles-grout-haze-removal`, native ZH `kitchen-and-bathroom-makeover` / `one-off-spring-clean` / `post-illness-disinfection-clean` / `construction-debris-removal` and EN `weekly-condo-cleaning-1-000-sqft` pages return 200 with the correct `<html lang>`, native titles/H1s, self-canonicals and full EN/MS/ZH/x-default hreflang clusters with in-language OfferCatalog, FAQPage and HowTo JSON-LD; MS + ZH House Renovation / Cleaning / Deep Cleaning / Post-Renovation Cleaning indexes link all 4 localized specialties each; unknown MS specialty returns a real 404; sitemap contains exactly 3,520 URLs with 0 duplicates.
+
+### Files
+- Modified: `config/specialty-locale-content.ts` (+16 entries), `scripts/validate-specialty-locale.ts` (PRIORITY_KEYS +16), `docs/seo-audit-report.md`, `docs/seo-metadata-inventory.csv`, `docs/seo-metadata-summary.json`, `public/llms-full.txt`, `public/site-summary.json`, `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
+
 ## Next Session — START HERE
 
-1. Continue the locale-specialty tranche service-by-service. Completed: Painting + Ceiling (8), Plaster Ceiling (4), Waterproofing (4), Plumbing (4), Handyman (4), Electrical (4), Tiling (4), Flooring (4), Kitchen Cabinet (4), Carpentry (4), Epoxy Flooring (4), CCTV (4), Window Repair (4), Glass & Aluminium (4), Door (4), Roofing (4), Ceiling Fan (4), Lighting (4), Skim Coat (4), Locksmith (4), Autogate (4), Welding (4), and **Water Heater (4)** = **96 specialties × MS + ZH (192 localized pages)**. Pick the next coherent four-specialty tranche from the remaining 4 real services—next candidates: **House Renovation** (4), **Cleaning** (4), **Deep Cleaning** (4), **Post-Renovation Cleaning** (4). Reuse `specialty-locale-content.ts` + `LocaleSpecialtyPage` and author genuine native MS/ZH content. **Do not create Air Conditioning pages or content** (owner confirmed not offered).
+1. **Locale-specialty tranche is COMPLETE: all 112 specialties × MS + ZH = 224 localized pages** (Painting + Ceiling, Plaster Ceiling, Waterproofing, Plumbing, Handyman, Electrical, Tiling, Flooring, Kitchen Cabinet, Carpentry, Epoxy Flooring, CCTV, Window Repair, Glass & Aluminium, Door, Roofing, Ceiling Fan, Lighting, Skim Coat, Locksmith, Autogate, Welding, Water Heater, House Renovation, Cleaning, Deep Cleaning, Post-Renovation Cleaning). No more tranches remain. The next in-repo milestone is **real locale problem routes (154)** — still blocked pending evidence-based consolidation of the 14 problem-overlap groups (GSC data); do not force it. Until then, prefer the non-blocked backlog: verify the `RelatedProblems`/`RelatedBlogs` links render correctly across the newly localized cleaning/renovation tranches, and consider translating the 34 remaining problem-page bodies (`config/problem-data-extra.ts`) natively.
 2. Add real locale problem routes (154) only after the 14 problem-overlap groups are consolidated with evidence; then localize `RelatedProblems` links on localized specialty pages (they currently point to EN problem pages—documented and still blocked).
-3. Obtain business/translator QA for the completed localized specialty pages (184 so far) before measuring GSC indexation; this requires an owner/translator and cannot be completed from repository code alone.
-4. Do not create thin or spun pages; rerun lint, type-check, build, topical-map, specialty-locale, i18n, HTML and SEO audits after every tranche.
+3. Obtain business/translator QA for the completed localized specialty pages (**224 so far — the full catalogue**) before measuring GSC indexation; this requires an owner/translator and cannot be completed from repository code alone. After QA + deploy, re-measure GSC/Bing coverage of the localized trees and the MS/ZH pilot conversions before the owner-only H3 full-rollout decision.
+4. Do not create thin or spun pages; rerun lint, type-check, build, topical-map, specialty-locale, i18n, HTML and SEO audits after any future change.
