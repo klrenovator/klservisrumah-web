@@ -1848,3 +1848,37 @@ Continued exactly from the final **Next Session — START HERE** section of `AI_
 ### Next session
 - Continue the locale-specialty tranche with a remaining real high-value service: **Skim Coat** (4), **Locksmith** (4), **Autogate** (4), **Welding** (4), **Water Heater** (4), or any other real service from the 28-service catalogue. Never create standalone Air Conditioning content.
 - Locale problem routes remain blocked pending evidence-based consolidation of the 14 overlap groups. Business/translator QA remains owner-side.
+
+
+## Session 2026-08-11 (part 19) — Skim Coat locale-specialty tranche
+
+**Branch:** `arena/019fefd3-klservisrumah-web`
+**Status:** ✅ COMPLETED
+
+Continued exactly from the final **Next Session — START HERE** section of `AI_OPTIMIZATION_ROADMAP.md`. Selected **Skim Coat**, the first listed candidate service. No Air Conditioning content was created.
+
+### Completed
+- Authored genuine native Bahasa Malaysia + Simplified Chinese content for all four Skim Coat specialties in `config/specialty-locale-content.ts`:
+  - `skim-coat/wall-skim-coating` — Skim Coat Dinding / 墙面批灰找平 (from RM5/sq ft)
+  - `skim-coat/ceiling-skim-coating` — Skim Coat Siling / 天花批灰找平 (from RM6/sq ft)
+  - `skim-coat/crack-and-joint-repair` — Pembaikan Retak & Sendi / 裂缝与接缝修补 (from RM22/linear ft)
+  - `skim-coat/full-condo-re-skim-package` — Pakej Skim Semula Kondominium Penuh / 全屋公寓重新批灰配套 (from RM4,200 for an approximately 1,000 sq ft unit)
+- Each locale block contains an authored name, tagline, substantive description, 5 highlights, 5 process steps, 4 FAQs, meta title and meta description. The content is grounded in the published service data: substrate inspection; loose-paint, mould and efflorescence preparation; bonding primer; two to three thin coats of Knauf, Gyproc or Mapei polymer-modified compound; 4–6 hour intercoat drying; pole sanding and side-light inspection; 24 hours before paint; 1–3mm typical total thickness; leak/soft-board checks before ceiling skim; V-groove routing with flexible acrylic filler and fiberglass mesh for suitable cracks; and a typical 2–4 day full-condo programme. Active or potentially structural cracks are identified for diagnosis instead of being cosmetically covered.
+- Added all four Skim Coat keys to `PRIORITY_KEYS` in `scripts/validate-specialty-locale.ts`; the build gate now enforces all 80 completed specialties.
+- Reused the shared locale-specialty architecture: eight MS/ZH routes publish, all four EN Skim Coat specialties gain real EN/MS/ZH/x-default clusters, typed related problems (`uneven-wall-surface-skim`, `peeling-skim-coat`, `paint-cracking-hairline-walls`) and blogs render from the topical map, and unknown localized slugs remain true 404s.
+- Sitemap and generated AI context now contain **3,456 indexable URLs** (+8 localized specialty URLs).
+
+### Verification
+- PASS: lint (0 errors/warnings), type-check, topical-map (28/28 services; 112 typed relationships), specialty locale gate (**80 specialties × MS/ZH = 160 native blocks**), i18n parity (1,074 keys × 3 locales), estimator suite (263,293 assertions), production build (**4,503 static pages generated**), full-corpus HTML audit (**4,495 pages**, 0 fatal / 0 warnings), SEO audit and `npm audit` (0 vulnerabilities).
+- Production smoke PASS: native MS wall skim-coating, native ZH crack-and-joint repair and EN full-condo pages return 200 with correct language, titles, self-canonicals and EN/MS/ZH/x-default clusters; localized pages emit in-language OfferCatalog, FAQPage and HowTo JSON-LD; MS + ZH service indexes link all four specialties; unknown MS specialty returns 404; all eight localized URLs appear in the 3,456-URL sitemap.
+
+### Files changed
+- `config/specialty-locale-content.ts`
+- `scripts/validate-specialty-locale.ts`
+- `docs/seo-audit-report.md`
+- `public/llms-full.txt`, `public/site-summary.json`
+- `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`
+
+### Next session
+- Continue the locale-specialty tranche with **Locksmith** (4), **Autogate** (4), **Welding** (4), **Water Heater** (4), or another real service from the 28-service catalogue. Never create standalone Air Conditioning content.
+- Locale problem routes remain blocked pending evidence-based consolidation of the 14 overlap groups. Business/translator QA remains owner-side.
