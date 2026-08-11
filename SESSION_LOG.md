@@ -1750,3 +1750,34 @@ Continued exactly from the final **Next Session — START HERE** section of `AI_
 ### Next session
 - Continue with **Roofing** (4) only — `roof-repair` (Roof Leak Diagnosis & Repair / Ridge Re-Bedding & Re-Pointing / Gutter Cleaning & Realignment / Full Torch-On Membrane Waterproofing); never create standalone Air Conditioning content.
 - Locale problem routes remain blocked pending evidence-based consolidation of the 14 overlap groups. Business/translator QA remains owner-side.
+
+## Session 2026-08-10 (part 16) — Roofing locale-specialty tranche
+
+Continued exactly from the final **Next Session — START HERE** section of `AI_OPTIMIZATION_ROADMAP.md`. Selected **Roofing**, the last remaining of the originally-posted trio (Glass & Aluminium, Door, Roofing). No Air Conditioning content was created.
+
+### Completed
+- Authored genuine native Bahasa Malaysia + Simplified Chinese content for all four Roofing specialties in `config/specialty-locale-content.ts`:
+  - `roof-repair/roof-leak-diagnosis-and-repair` — Diagnosis & Pembaikan Bocor Bumbung / 屋顶漏水诊断与修复 (from RM380)
+  - `roof-repair/ridge-re-bedding-and-re-pointing` — Re-Bedding & Re-Pointing Rabung / 屋脊重新垫底与勾缝 (from RM22/linier ft)
+  - `roof-repair/gutter-cleaning-and-realignment` — Pembersihan & Penjajaran Semula Longkang / 檐沟清理与重新调校 (from RM320)
+  - `roof-repair/full-torch-on-membrane-waterproofing` — Kalis Air Membran Torch-On Penuh / 满铺热熔防水卷材 (from RM26/sq ft)
+- Each locale block contains authored name, tagline, substantive description, 5 highlights, 5 process steps, 4 FAQs, meta title and meta description. Content is grounded in the published Roof Repair service record: thermal imaging leak detection, concrete/clay/metal roof types, flexible polymer mortar (re-bedding + re-pointing on ridges), zincalume/colour-bond flashing fabrication, manual gutter cleaning with gradient realignment (min 1:200 fall), APP/SBS two-layer torch-on membrane (3mm + 4mm with mineral/aluminium cap), 15-year material warranty + 10-year workmanship warranty, 48-hour ponding test, and insured work-at-height team with full edge protection and crawl boards.
+- Added all four Roofing keys to `PRIORITY_KEYS` in `scripts/validate-specialty-locale.ts`, retaining the non-thin build gate.
+- Reused the shared locale-specialty architecture: eight MS/ZH routes now publish, the four EN roofing specialty pages emit real EN/MS/ZH/x-default clusters, typed related problems (`clogged-gutter-leaking`, `cracked-roof-tiles`, `roof-leak-rainy-season`, `concrete-slab-crack-leak`) and related blogs (`how-to-fix-a-leaking-roof-in-kl`, `pu-grouting-vs-full-membrane-waterproofing`) render through the shared page, and unknown localized specialty slugs remain true 404s.
+- Sitemap and generated AI context now contain **3,432 indexable URLs** (+8 localized specialty URLs).
+
+### Verification
+- PASS: lint (0 errors/warnings), type-check, topical-map (28/28 services; 112 typed relationships), specialty locale gate (**68 specialties × MS/ZH = 136 native blocks**), and i18n parity (1,074 keys × 3 locales).
+- PASS: build (**4,479 routes**), prebuild estimator suite (263,293 assertions), HTML quality audit (4,447 pages; 0 fatal/0 warnings), SEO audit, and `npm audit` (0 vulnerabilities).
+- Production smoke PASS: native MS leak-diagnosis, native ZH ridge re-bedding and EN gutter-cleaning pages return 200 with correct `<html lang>`, native titles/H1, self-canonicals and EN/MS/ZH/x-default clusters; in-language OfferCatalog; both localized service indexes link all 4 specialties; typed related problems and blogs render on localized pages; unknown localized specialty returns a real 404; all 8 new URLs are in the sitemap.
+
+### Files changed
+- `config/specialty-locale-content.ts`
+- `scripts/validate-specialty-locale.ts`
+- `docs/seo-audit-report.md`
+- `public/llms-full.txt`, `public/site-summary.json`
+- `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`
+
+### Next session
+- Continue the locale-specialty tranche with a remaining real high-value service: **Ceiling Fan** (4), **Lighting** (4), **Skim Coat** (4), **Locksmith** (4), **Autogate** (4), **Welding** (4), or any other real service from the 28-service catalogue. Never create standalone Air Conditioning content.
+- Locale problem routes remain blocked pending evidence-based consolidation of the 14 overlap groups. Business/translator QA remains owner-side.
