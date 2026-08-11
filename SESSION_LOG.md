@@ -1955,3 +1955,41 @@ Continued exactly from the final **Next Session — START HERE** section of `AI_
 - Continue the locale-specialty tranche with **Welding** (4), **Water Heater** (4), or another real service from the 28-service catalogue. Never create standalone Air Conditioning content.
 - Locale problem routes remain blocked pending evidence-based consolidation of the 14 overlap groups. Business/translator QA remains owner-side.
 
+---
+
+## Session 2026-08-11 (part 22) — Welding locale-specialty tranche
+
+**Branch:** `arena/019ff1ee-klservisrumah-web`
+**Status:** ✅ COMPLETED
+
+Continued exactly from the final **Next Session — START HERE** section of `AI_OPTIMIZATION_ROADMAP.md`. Selected **Welding**, the listed candidate service. No Air Conditioning content was created.
+
+### Completed
+- Authored genuine native Bahasa Malaysia + Simplified Chinese content for all four Welding specialties in `config/specialty-locale-content.ts`:
+  - `welding/custom-window-grille` — Grille Tingkap Kustom / 定制窗户防护格栅 (from RM42/sq ft)
+  - `welding/main-gate-fabrication` — Fabrikasi Pagar Utama / 大门定制制作 (from RM2,800)
+  - `welding/on-site-welding-repair` — Pembaikan Kimpalan Di Tapak / 现场焊接与紧急维修 (from RM280)
+  - `welding/staircase-stringer-fabrication` — Fabrikasi Stringer Tangga / 钢结构楼梯龙骨制作 (from RM420/linear ft)
+- Each locale block contains an authored name, tagline, substantive description, 5 highlights, 5 process steps, 4 FAQs, `metaTitle` and `metaDesc`. The content is grounded in the published Welding service record: mild steel, stainless steel 304, wrought iron; anti-rust zinc phosphate / zinc-rich primer; 200°C factory oven powder coating; hot-dip galvanising for 20-year outdoor rust protection; emergency escape hatches with padlock/latch; trackless folding, swing, sliding and bi-fold gates; bearing hinges and autogate motor compatibility (DC Moto, Autogate 2000, BFT); on-site emergency welding with portable inverter MIG/TIG/MMA machines for snapped hinges, broken grilles, sagging gates and loose railings; custom mono central stringers, double channel and floating cantilever staircases with chemical anchor base plates; 12-month welding & fabrication warranty.
+- Added all four Welding keys to the non-thin `PRIORITY_KEYS` build gate in `scripts/validate-specialty-locale.ts`; it now enforces all 92 completed specialties.
+- Reused the shared locale-specialty architecture: eight MS/ZH routes publish, all four EN Welding specialty pages emit real EN/MS/ZH/x-default clusters, typed related problems (`rusting-window-grille`, `loose-metal-gate-hinges`) render through the existing topical map, and unknown localized specialty slugs remain true 404s.
+- Sitemap and generated AI context now contain **3,480 indexable URLs** (+8 localized specialty URLs).
+
+### Verification
+- PASS: lint (0 errors/warnings), type-check, topical-map (28/28 services; 112 typed relationships), specialty locale gate (**92 specialties × MS/ZH = 184 native blocks**), i18n parity (1,074 keys × 3 locales), estimator suite (263,293 assertions), production build (**4,527 static pages generated**), full-corpus HTML audit (**4,519 pages**, 0 fatal / 0 warnings), technical SEO head audit (3,480 self-canonical indexable pages; 0 warnings), metadata consistency SEO audit, and `npm audit` (0 vulnerabilities).
+- Production smoke PASS: native MS `custom-window-grille`, native ZH `main-gate-fabrication` and EN `on-site-welding-repair` pages return 200 with correct language, native titles/H1s, self-canonicals and full EN/MS/ZH/x-default clusters; localized pages emit in-language OfferCatalog, FAQPage and HowTo JSON-LD; MS + ZH Welding indexes link all four specialties; unknown MS specialty returns 404; all eight localized URLs appear in the 3,480-URL sitemap.
+
+### Files changed
+- `config/specialty-locale-content.ts`
+- `scripts/validate-specialty-locale.ts`
+- `docs/seo-audit-report.md`
+- `docs/seo-metadata-inventory.csv`
+- `docs/seo-metadata-summary.json`
+- `public/llms-full.txt`, `public/site-summary.json`
+- `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`
+
+### Next session
+- Continue the locale-specialty tranche with **Water Heater** (4), **House Renovation** (4), **Cleaning** (4), **Deep Cleaning** (4), **Post-Renovation Cleaning** (4), or another real service from the 28-service catalogue. Never create standalone Air Conditioning content.
+- Locale problem routes remain blocked pending evidence-based consolidation of the 14 overlap groups. Business/translator QA remains owner-side.
+
+

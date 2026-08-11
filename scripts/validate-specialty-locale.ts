@@ -138,6 +138,10 @@ const PRIORITY_KEYS = [
   "autogate/double-swing-autogate",
   "autogate/sliding-autogate",
   "autogate/autogate-motor-replacement-and-service",
+  "welding/custom-window-grille",
+  "welding/main-gate-fabrication",
+  "welding/on-site-welding-repair",
+  "welding/staircase-stringer-fabrication",
 ];
 
 function checkBlock(key: string, locale: "ms" | "zh", b: SpecialtyLocaleBlock, issues: Issue[]) {

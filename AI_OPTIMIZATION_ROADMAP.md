@@ -1155,9 +1155,33 @@ Continued exactly from the final **Next Session — START HERE** section and sel
 ### Files
 - Modified: `config/specialty-locale-content.ts`, `scripts/validate-specialty-locale.ts`, `docs/seo-audit-report.md`, `docs/seo-metadata-inventory.csv`, `docs/seo-metadata-summary.json`, `public/llms-full.txt`, `public/site-summary.json`, `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
 
+### ✅ Session 2026-08-11 (part 22) — Welding locale-specialty tranche
+
+**Status:** ✅ COMPLETED
+
+Continued exactly from the final **Next Session — START HERE** section and selected the listed candidate, **Welding**. No standalone Air Conditioning content was created.
+
+- Added genuine native Bahasa Malaysia + Simplified Chinese content for all four Welding specialties in `config/specialty-locale-content.ts`:
+  1. `welding/custom-window-grille` — Grille Tingkap Kustom / 定制窗户防护格栅 (from RM42/sq ft)
+  2. `welding/main-gate-fabrication` — Fabrikasi Pagar Utama / 大门定制制作 (from RM2,800)
+  3. `welding/on-site-welding-repair` — Pembaikan Kimpalan Di Tapak / 现场焊接与紧急维修 (from RM280)
+  4. `welding/staircase-stringer-fabrication` — Fabrikasi Stringer Tangga / 钢结构楼梯龙骨制作 (from RM420/linear ft)
+- Every locale block has an authored native name, tagline, substantive description, five highlights, five process steps, four FAQs, meta title and meta description. Content remains grounded in the published Welding service record: mild steel, stainless steel 304, wrought iron; anti-rust zinc phosphate / zinc-rich primer; 200°C factory oven powder coating; hot-dip galvanising for 20-year outdoor rust protection; emergency escape hatches with padlock/latch; trackless folding, swing, sliding and bi-fold gates; bearing hinges and autogate motor compatibility (DC Moto, Autogate 2000, BFT); on-site emergency welding with portable inverter MIG/TIG/MMA machines for snapped hinges, broken grilles, sagging gates and loose railings; custom mono central stringers, double channel and floating cantilever staircases with chemical anchor base plates; 12-month welding & fabrication warranty. No thin or spun pages.
+- Added all four Welding keys to `PRIORITY_KEYS` in `scripts/validate-specialty-locale.ts`, retaining the non-thin build gate (now enforcing all 92 completed specialties).
+- Reused the shared `LocaleSpecialtyPage` architecture: eight MS/ZH routes now publish; all four EN Welding specialty pages emit real EN/MS/ZH/x-default hreflang clusters; typed related problems (`rusting-window-grille`, `loose-metal-gate-hinges`) render through the existing topical map; localized service links and true 404s are preserved.
+- Sitemap and generated AI context increased **3,472 → 3,480 indexable URLs** (+8 localized specialty pages).
+
+#### Verification
+- PASS: lint (0 errors/warnings), type-check, topical map (28/28 services; 112 typed specialty relationships), locale gate (**92 specialties × MS/ZH = 184 native blocks**), i18n parity (1,074 × 3), estimator suite (263,293 assertions) and `npm audit` (0 vulnerabilities).
+- PASS: production build (**4,527 static pages generated**), full-corpus HTML audit (**4,519 pages**, 0 fatal / 0 warnings), technical SEO head audit (3,480 self-canonical indexable pages; 0 warnings) and metadata consistency SEO audit.
+- Production smoke: native MS `custom-window-grille`, native ZH `main-gate-fabrication` and EN `on-site-welding-repair` pages return 200 with the correct `<html lang>`, native titles/H1s, self-canonicals and full EN/MS/ZH/x-default hreflang clusters with in-language OfferCatalog, FAQPage and HowTo JSON-LD; MS + ZH Welding indexes link all 4 localized specialties; unknown MS Welding specialty returns a real 404; sitemap contains all 8 new Welding URLs.
+
+### Files
+- Modified: `config/specialty-locale-content.ts`, `scripts/validate-specialty-locale.ts`, `docs/seo-audit-report.md`, `docs/seo-metadata-inventory.csv`, `docs/seo-metadata-summary.json`, `public/llms-full.txt`, `public/site-summary.json`, `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
+
 ## Next Session — START HERE
 
-1. Continue the locale-specialty tranche service-by-service. Completed: Painting + Ceiling (8), Plaster Ceiling (4), Waterproofing (4), Plumbing (4), Handyman (4), Electrical (4), Tiling (4), Flooring (4), Kitchen Cabinet (4), Carpentry (4), Epoxy Flooring (4), CCTV (4), Window Repair (4), Glass & Aluminium (4), Door (4), Roofing (4), Ceiling Fan (4), Lighting (4), Skim Coat (4), Locksmith (4), and **Autogate (4)** = **88 specialties × MS + ZH (176 localized pages)**. Pick the next coherent four-specialty tranche from the remaining real high-value services—next candidates: **Welding** (4), **Water Heater** (4), or any other real service from the 28-service catalogue. Reuse `specialty-locale-content.ts` + `LocaleSpecialtyPage` and author genuine native MS/ZH content. **Do not create Air Conditioning pages or content** (owner confirmed not offered).
+1. Continue the locale-specialty tranche service-by-service. Completed: Painting + Ceiling (8), Plaster Ceiling (4), Waterproofing (4), Plumbing (4), Handyman (4), Electrical (4), Tiling (4), Flooring (4), Kitchen Cabinet (4), Carpentry (4), Epoxy Flooring (4), CCTV (4), Window Repair (4), Glass & Aluminium (4), Door (4), Roofing (4), Ceiling Fan (4), Lighting (4), Skim Coat (4), Locksmith (4), Autogate (4), and **Welding (4)** = **92 specialties × MS + ZH (184 localized pages)**. Pick the next coherent four-specialty tranche from the remaining 5 real services—next candidates: **Water Heater** (4), **House Renovation** (4), **Cleaning** (4), **Deep Cleaning** (4), **Post-Renovation Cleaning** (4). Reuse `specialty-locale-content.ts` + `LocaleSpecialtyPage` and author genuine native MS/ZH content. **Do not create Air Conditioning pages or content** (owner confirmed not offered).
 2. Add real locale problem routes (154) only after the 14 problem-overlap groups are consolidated with evidence; then localize `RelatedProblems` links on localized specialty pages (they currently point to EN problem pages—documented and still blocked).
-3. Obtain business/translator QA for the completed localized specialty pages (176 so far) before measuring GSC indexation; this requires an owner/translator and cannot be completed from repository code alone.
+3. Obtain business/translator QA for the completed localized specialty pages (184 so far) before measuring GSC indexation; this requires an owner/translator and cannot be completed from repository code alone.
 4. Do not create thin or spun pages; rerun lint, type-check, build, topical-map, specialty-locale, i18n, HTML and SEO audits after every tranche.

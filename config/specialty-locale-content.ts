@@ -5146,6 +5146,242 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       metaDesc: "吉隆坡与雪兰莪电动门维修与电机更换。Autogate 2000、BFT、CAME主板电容维修、备用电池加装与保养，12个月保修。RM950起。",
     },
   },
+
+  "welding/custom-window-grille": {
+    ms: {
+      name: "Grille Tingkap Kustom",
+      tagline: "Fabrikasi dan pemasangan grille tingkap besi keselamatan kustom di KL & Selangor, kemasan powder-coated tahan karat, dari RM 42/kaki persegi.",
+      description:
+        "Grille tingkap bukan sahaja berfungsi sebagai benteng keselamatan utama daripada pencerobohan, malah menambah nilai estetik fasad dan ruang dalaman kediaman anda. KL Servis Rumah menyediakan perkhidmatan fabrikasi dan pemasangan grille tingkap kustom untuk rumah teres, banglo, semi-D serta unit komersial di sekitar Lembah Klang. Kami menggunakan keluli lembut (mild steel) berkualiti tinggi, besi tempa (wrought iron) atau keluli tahan karat (stainless steel 304). Setiap unit direka mengikut ukuran tepat tingkap anda, disalut dengan primer anti-karat zink fosfat dan dibakar dalam ketuhar powder coating 200°C untuk ketahanan cuaca melebihi 10 tahun tanpa karat. Pelbagai pilihan reka bentuk disediakan daripada gaya geometri moden, minimalis bergaris lurus, hingga motif klasik besi tempa, lengkap dengan pintu kecemasan berengsel untuk laluan keluar kebakaran.",
+      highlights: [
+        "Fabrikasi grille tingkap kustom keluli lembut, besi tempa dan keluli tahan karat 304 dari RM42/kaki persegi",
+        "Salutan ketuhar powder-coat kilang 200°C dengan primer zink anti-karat untuk rintangan cuaca 10+ tahun",
+        "Pilihan reka bentuk geometri moden, minimalis bergaris lurus, klasik mewah atau corak kustom",
+        "Dilengkapi pintu kecemasan berengsel (emergency escape hatch) dengan kunci mangga tersembunyi",
+        "Pemasangan selamat dengan bolt sauh besi terus ke dinding konkrit tanpa merosakkan bingkai tingkap",
+      ],
+      process: [
+        { step: "01", title: "Lawatan & Ukuran Tepat", desc: "Tukang pakar kami hadir ke kediaman anda untuk mengukur dimensi bingkai tingkap dan membincangkan konsep reka bentuk serta pilihan warna." },
+        { step: "02", title: "Fabrikasi Bengkel & Kimpalan", desc: "Besi dipotong, dibengkok dan dikimpal dengan teknik MIG/TIG berkualiti tinggi di bengkel kami untuk sambungan yang kukuh dan kemas." },
+        { step: "03", title: "Rawatan Anti-Karat & Powder Coating", desc: "Grille dibersihkan melalui rawatan kimia zink, dilapisi primer anti-karat dan disembur serbuk powder coat sebelum dibakar pada suhu 200°C." },
+        { step: "04", title: "Pemasangan Sauh di Tapak", desc: "Grille dipasang kukuh pada struktur dinding menggunakan skru keselamatan atau bolt dinding konkrit berketahanan tinggi." },
+        { step: "05", title: "Ujian Kunci & Pemeriksaan Akhir", desc: "Memeriksa kestabilan struktur, menguji kelancaran engsel pintu kecemasan, membersihkan sisa debu dan menyerahkan jaminan 12 bulan." },
+      ],
+      faqs: [
+        { q: "Berapakah anggaran harga pemasangan grille tingkap kustom?", a: "Harga bermula dari RM 42 setiap kaki persegi untuk grille keluli lembut dengan kemasan powder coating kilang. Harga sebenar bergantung pada ketebalan besi, kerumitan corak dan pilihan bahan seperti wrought iron atau stainless steel." },
+        { q: "Mengapa disyorkan kemasan powder coating berbanding cat biasa?", a: "Powder coating disembur dalam bentuk serbuk dan dibakar pada suhu 200°C di kilang, menghasilkan lapisan pelindung tebal yang kalis calar, kalis UV dan tidak mudah mengelupas atau berkarat selama lebih 10 tahun berbanding cat enamel biasa." },
+        { q: "Bolehkah grille tingkap dipasang pintu kecemasan untuk laluan kebakaran?", a: "Ya, sangat digalakkan terutama untuk bilik tidur tingkat atas. Kami menyediakan pilihan 'emergency escape hatch' berengsel yang boleh dikunci menggunakan mangga atau selak keselamatan dari dalam rumah." },
+        { q: "Adakah warna grille boleh dipadankan dengan bingkai tingkap aluminium?", a: "Ya. Kami menawarkan pelbagai pilihan warna powder coat standard seperti hitam matte, kelabu gelap, putih, gangsa atau perak anodised untuk dipadankan secara harmoni dengan bingkai tingkap anda." },
+      ],
+      metaTitle: "Pemasangan Grille Tingkap Kustom KL | Dari RM 42/kps",
+      metaDesc: "Fabrikasi dan pemasangan grille tingkap keselamatan kustom di KL & Selangor. Keluli lembut & wrought iron, kemasan powder-coated tahan karat, jaminan 12 bulan. Dari RM42/kps.",
+    },
+    zh: {
+      name: "定制窗户防护格栅",
+      tagline: "吉隆坡与雪兰莪定制防盗窗花制作与安装，高温粉末喷涂防锈耐候，从 RM 42/平方英尺起。",
+      description:
+        "窗户防盗花格（Window Grilles）是马来西亚有地住宅与低楼层公寓保障居家安全的第一道防线。KL Servis Rumah 为吉隆坡与雪兰莪业主提供高品质定制窗花制作与安装服务。我们选用国标加厚低碳钢管（Mild Steel）、艺术锻铁（Wrought Iron）及 304 不锈钢材质，按窗洞实际尺寸毫米级精确下料。所有铁艺构件均经过酸洗磷化除锈打底，再进入 200°C 高温烤炉进行静电粉末喷涂（Powder Coating），具备长达 10 年以上的抗紫外线、耐酸雨和防生锈性能。提供现代极简几何格栅、细条横竖防盗条、欧式经典铁艺等多种流行款式，并可按消防安全规范加装带暗锁的逃生应急小门。",
+      highlights: [
+        "定制加厚低碳钢、艺术锻铁与 304 不锈钢防盗窗花，每平方英尺 RM42 起",
+        "200°C 工厂高温静电粉末喷涂与环氧富锌防锈底漆，抗紫外线防锈 10 年以上",
+        "涵盖现代极简横竖条、几何对称图形、经典欧式花纹及定制艺术图样",
+        "可选配隐蔽带锁消防应急逃生小门（Emergency Hatch），保障逃生安全",
+        "重型膨胀螺栓牢固锚固入水泥墙体，不破坏原有铝合金窗框与防水胶缝",
+      ],
+      process: [
+        { step: "01", title: "上门精确测量", desc: "专业技术人员上门测量每个窗洞的精准净尺寸，根据房屋朝向与装修风格推荐铁料规格、款式与色卡。" },
+        { step: "02", title: "车间精密焊接", desc: "在吉隆坡钣金加工厂进行精准激光切料、数控弯管并采用 MIG/TIG 二保焊满焊成型，焊点平整坚固。" },
+        { step: "03", title: "除锈喷砂与烤漆", desc: "窗花构件进行酸洗除锈并喷涂富锌防锈底漆，进入静电喷粉线并经 200°C 高温恒温烘烤固化。" },
+        { step: "04", title: "现场安全锚固", desc: "将成品运抵现场，使用高强度水泥膨胀螺栓或防盗螺丝将窗花牢固锚固于混凝土窗台与墙体内。" },
+        { step: "05", title: "逃生门测试与验收", desc: "测试应急小门开合与锁芯顺畅度，检查漆面完整性，清理现场钻孔粉尘并交付 12 个月品质保修单。" },
+      ],
+      faqs: [
+        { q: "定制防盗窗花的费用一般如何计算？", a: "窗花按制作面积计算，标准加厚低碳钢烤漆窗花起步价为每平方英尺 RM 42。最终价格取决于所选材料厚度、花纹复杂度以及是否需要加装逃生小门。" },
+        { q: "粉末喷涂（Powder Coat）比传统手刷油漆好在哪里？", a: "粉末喷涂是在无尘车间通过静电吸附粉末并经 200°C 高温烘烤熔融成膜，涂层厚实坚韧、不易刮花脱落，在马来西亚高温多雨环境下防锈寿命长达 10 年以上。" },
+        { q: "楼上卧室窗花可以做逃生门吗？", a: "非常建议加装。我们可在窗花内侧设计带合页铰链和隐蔽挂锁耳的消防应急逃生门，平时上锁防盗，紧急情况下屋内人员可迅速开锁逃生。" },
+        { q: "窗花颜色能和家里的铝合金窗框保持一致吗？", a: "可以。我们提供丰富的常用色卡选择，包括哑光黑、深灰色（Dark Grey）、雪花白、古铜色及香槟色等，可与绝大多数铝合金门窗完美配色。" },
+      ],
+      metaTitle: "吉隆坡定制防盗窗花安装 | RM42/方尺起",
+      metaDesc: "吉隆坡与雪兰莪定制低碳钢与锻铁防盗窗花制作与安装。高温粉末喷涂防锈、逃生应急门配置、12个月保修。从RM42/平方英尺起。",
+    },
+  },
+
+  "welding/main-gate-fabrication": {
+    ms: {
+      name: "Fabrikasi Pagar Utama",
+      tagline: "Fabrikasi pagar utama rumah kustom di KL & Selangor, keluli bergalvanis celup panas & powder coat, sedia untuk autogate, dari RM 2,800.",
+      description:
+        "Pagar utama kediaman anda mencerminkan identiti serta keselamatan pintu masuk rumah. KL Servis Rumah pakar dalam fabrikasi dan pemasangan pintu pagar utama kustom (main gate) untuk rumah teres, semi-D dan banglo di seluruh Kuala Lumpur dan Selangor. Kami membina pelbagai jenis struktur pagar termasuk pagar hayun (swing gate), pagar lipat bi-fold (folding gate), pagar gelangsar bertrek (sliding gate) dan sistem pagar lipat tanpa trek (trackless folding gate). Struktur utama dibina daripada tiub keluli berongga tebal tahan lasak atau keluli bergalvanis celup panas (hot-dip galvanised) yang kalis karat, disalut dengan kemasan powder coating gred seni bina. Pilihan kemasan isian merangkumi plat potongan laser moden (laser-cut steel), bilah aluminium corak kayu, panel komposit kayu plastik (WPC) atau kisi-kisi besi minimalis, siap serasi dengan motor autogate automatik.",
+      highlights: [
+        "Fabrikasi pagar utama kustom untuk jenis hayun, lipat bi-fold, sliding dan lipat tanpa trek dari RM2,800",
+        "Struktur keluli bergalvanis celup panas (hot-dip galvanised) kalis karat walaupun terdedah kepada hujan lebat",
+        "Pilihan kemasan elegan: panel potongan laser moden, bilah kayu komposit WPC atau kisi keluli minimalis",
+        "Kemasan ketuhar powder coating tahan cuaca dengan pilihan warna matte, satin atau berkilat",
+        "Reka bentuk struktur dioptimumkan sepenuhnya untuk integrasi lancar dengan sistem motor autogate",
+      ],
+      process: [
+        { step: "01", title: "Ukur Tapak & Ukur Aras Laluan", desc: "Mengukur kelebaran laluan masuk, memeriksa kecerunan lantai 'driveway' dan mengesyorkan konfigurasi pintu pagar terbaik (lipat, hayun atau sliding)." },
+        { step: "02", title: "Reka Bentuk CAD & Pengesahan", desc: "Menyediakan lakaran atau lukisan reka bentuk dengan dimensi tepat dan pilihan bahan kemasan untuk kelulusan pemilik rumah." },
+        { step: "03", title: "Fabrikasi Keluli & Kimpalan MIG", desc: "Memotong rangka keluli, mengimpal struktur dengan teknik penembusan penuh, menggilap sambungan dan menghantar untuk proses galvanis celup panas." },
+        { step: "04", title: "Salutan Powder Coating Kilang", desc: "Pagar dilapisi primer khas dan serbuk powder coat seni bina sebelum dibakar pada suhu 200°C di kilang bagi ketahanan maksimum." },
+        { step: "05", title: "Pemasangan & Penjajaran di Tapak", desc: "Memasang engsel bearing berat pada tiang konkrit, menguji imbangan pagar, melaraskan kunci selak dan menguji fungsi autogate." },
+      ],
+      faqs: [
+        { q: "Berapakah kos membuat dan memasang pintu pagar utama baharu?", a: "Harga pagar utama kustom bermula dari RM 2,800 untuk pagar standard keluli lembut bergalvanis. Pagar bersaiz besar (14–18 kaki) dengan panel laser-cut atau bilah kayu WPC biasanya berharga antara RM 4,500 hingga RM 8,500." },
+        { q: "Apakah kelebihan pagar lipat tanpa trek (trackless folding gate)?", a: "Pagar lipat tanpa trek tidak memerlukan rel di atas lantai konkrit. Ini mengelakkan masalah roda tersangkut pada pasir atau batu kerikil dan mengekalkan lantai laluan masuk yang bersih dan rata." },
+        { q: "Mengapa proses galvanis celup panas (hot-dip galvanising) sangat disyorkan?", a: "Di iklim tropika Malaysia yang lembap dan kerap hujan, galvanis celup panas melindungi besi dari dalam dan luar dengan lapisan zink lebur, menghalang karat sehingga 20 tahun." },
+        { q: "Bolehkah pintu pagar baharu ini dipadankan terus dengan motor autogate?", a: "Ya. Kami mereka bentuk rangka pagar dengan pengukuhan plat tapak dan engsel bearing khas agar serasi dengan pelbagai jenis motor autogate seperti jenama DC Moto, Autogate 2000 atau BFT." },
+      ],
+      metaTitle: "Fabrikasi Pagar Utama Rumah KL | Dari RM 2,800",
+      metaDesc: "Fabrikasi dan pemasangan pintu pagar utama kustom di KL & Selangor. Pagar hayun, lipat tanpa trek & sliding, galvanis kalis karat, jaminan 12 bulan. Dari RM2,800.",
+    },
+    zh: {
+      name: "大门定制制作",
+      tagline: "吉隆坡与雪兰莪排屋及别墅定制电动铁艺大门，热浸镀锌防腐与高温烤漆，从 RM 2,800 起。",
+      description:
+        "庭院大门是住宅建筑的外观焦点与安全屏障。KL Servis Rumah 专注于为吉隆坡与雪兰莪的排屋、半独立洋房（Semi-D）及独立式别墅定制各类高品质铁艺大门（Main Gate）。我们熟练制作各类大门结构形式，包括双平开门（Swing Gate）、双折叠门（Bi-fold Gate）、侧推推拉门（Sliding Gate）以及当下最受欢迎的无轨折叠大门（Trackless Folding Gate）。大门主骨架采用国标加厚镀锌方钢，可做整体验收级热浸镀锌（Hot-Dip Galvanising）防腐处理，外层附着 200°C 建筑级静电粉末喷涂（Powder Coating）。面板可搭配精密激光切割艺术钢板、高分子木塑格栅（WPC）、木纹铝合金条或现代极简钢条，结构预埋电动门电机加强件，确保长久平顺运行。",
+      highlights: [
+        "定制平开门、双折叠门、推拉门及无轨折叠门（Trackless Gate），从 RM2,800 起",
+        "可选热浸镀锌（Hot-Dip Galvanising）工艺，彻底隔绝湿气雨水，耐腐蚀达 20 年",
+        "多样化装饰面板：数控激光雕刻镂空钢板、耐候仿木 WPC 塑木条及极简竖条格栅",
+        "工厂 200°C 烘烤建筑级静电粉末喷涂，防刮耐磨、抗紫外线日晒不褪色",
+        "门体结构预留加固板与重型轴承铰链，完美适配各类平开及折叠电动门电机",
+      ],
+      process: [
+        { step: "01", title: "车道测量与地形勘测", desc: "现场测量门洞净宽与立柱承重，测量车道纵向坡度，推荐最合适的开启方式（无轨折叠、平开或推拉）。" },
+        { step: "02", title: "CAD 深化设计与确认", desc: "出具精准比例图纸，确认型材壁厚、激光花型、颜色方案及门锁把手配件位置。" },
+        { step: "03", title: "车间切割与满焊组装", desc: "采用数控下料与全熔透气体保护焊（MIG）拼接主框架，打磨平整焊渣并送浸热镀锌锌池。" },
+        { step: "04", title: "高温静电喷粉固化", desc: "在喷涂车间完成表面抛丸、防锈打底，静电喷涂户外级粉末并在 200°C 高温炉中均匀烘烤成膜。" },
+        { step: "05", title: "上门吊装调平与交付", desc: "安装重型不锈钢轴承合页或悬臂无轨连杆机构，调试开启阻尼与平整度，交付 12 个月保修。" },
+      ],
+      faqs: [
+        { q: "定制一扇庭院大门大概需要多少费用？", a: "普通镀锌钢标准双开大门起步价为 RM 2,800。若是 14 至 18 尺宽的排屋大门，搭配激光雕刻板或 WPC 仿木格栅的无轨折叠门，价格通常在 RM 4,500 至 RM 8,500 之间。" },
+        { q: "无轨折叠门（Trackless Folding Gate）有什么突出优点？", a: "无轨大门地面无需预埋钢轨，避免了传统地轨被泥沙杂草卡住轮子的烦恼，雨天泥水不会淤积在轨道内，车道地面平整美观，车辆进出更加平顺静音。" },
+        { q: "为什么做户外大门一定要做热浸镀锌（Hot-Dip Galvanising）？", a: "马来西亚常年高温多雨，空气湿度大。热浸镀锌是将钢材浸入 450°C 熔融锌液中，使钢材表面形成一层致密的锌铁合金保护层，即便经历数十年风吹雨淋也不会从内部锈蚀。" },
+        { q: "新大门可以配合现有的电动门电机使用吗？", a: "可以。我们在制作大门时会根据您现有的或计划安装的电动马达型号（如 DC Moto、Autogate 2000 等）预留好电机拉臂安装点和加固受力板，确保电机受力均匀顺畅。" },
+      ],
+      metaTitle: "吉隆坡庭院铁艺大门定制 | RM2,800起",
+      metaDesc: "吉隆坡与雪兰莪排屋与别墅定制电动大门。无轨折叠门、平开门、激光雕刻板、热浸镀锌防锈、12个月保修。从RM2,800起。",
+    },
+  },
+
+  "welding/on-site-welding-repair": {
+    ms: {
+      name: "Pembaikan Kimpalan Di Tapak",
+      tagline: "Servis kimpalan kecemasan dan berjadual di tapak di KL & Selangor, membaiki engsel patah, pagar runtuh dan struktur besi, dari RM 280.",
+      description:
+        "Kerosakan pada struktur logam seperti engsel pintu pagar yang patah, palang grille yang tercabut, railing balkoni yang longgar atau pendakap bumbung yang retak memerlukan tindakan pembaikan pantas demi keselamatan penghuni rumah. KL Servis Rumah menyediakan perkhidmatan kimpalan di tapak (on-site welding) dan pembaikan kecemasan di seluruh Kuala Lumpur dan Selangor. Juruteknik kimpal bertauliah kami membawa peralatan kimpalan mudah alih (mesin inverter MIG / MMA / TIG) terus ke premis kediaman, lot kedai atau bangunan industri anda. Kami membaiki besi lembut, keluli tahan karat dan aluminium, mengisar kawasan kimpalan lama yang berkarat, mengimpal semula dengan kekuatan penuh, memasang plat pengukuh tambahan sekiranya perlu, serta menyapu primer anti-karat zink dan cat sentuhan sepadan sebelum kerja diserahkan.",
+      highlights: [
+        "Servis kimpalan kecemasan di tapak untuk rumah landed, premis perniagaan dan lot kedai dari RM280",
+        "Tukang kimpal berpengalaman dengan mesin inverter mudah alih MIG, TIG dan elektrod arka",
+        "Membaiki engsel pagar patah, palang grille tercabut, railing tangga bergoyang dan pendakap besi",
+        "Pembaikan pengukuhan struktur logam, penggantian bahagian berkarat dan plat pengukuh beban berat",
+        "Kimpalan digilap kemas dan disapu primer anti-karat zink serta cat perlindungan sebelum siap",
+      ],
+      process: [
+        { step: "01", title: "Diagnosis & Penilaian Kerosakan", desc: "Pemeriksaan keadaan logam yang patah atau longgar di lokasi, menilai tahap kakisan dan menentukan kaedah kimpalan paling kukuh." },
+        { step: "02", title: "Penyediaan Permukaan & Mengisar Karat", desc: "Mengisar sisa karat, cat lama dan kesan patah menggunakan mesin pengisar agar logam bersih untuk penyambungan kimpalan tulen." },
+        { step: "03", title: "Penjajaran & Kimpalan Berkekuatan Tinggi", desc: "Menjajarkan komponen pada kedudukan tepat dengan pengapit dan menjalankan kimpalan penembusan penuh yang tahan beban." },
+        { step: "04", title: "Pengukuhan Plat Tambahan (Jika Perlu)", desc: "Memasang plat keluli gusset atau pendakap tambahan pada sambungan kritikal untuk mengelakkan kerosakan berulang." },
+        { step: "05", title: "Kemasan Anti-Karat & Ujian Beban", desc: "Membersihkan sanga kimpalan, menyapu primer zink tahan karat, menyembur cat kemasan dan menguji ketahanan beban struktur." },
+      ],
+      faqs: [
+        { q: "Berapakah kos untuk servis kimpalan pembaikan di tapak?", a: "Kos pembaikan kimpalan di tapak bermula dari RM 280 untuk kerja kecil seperti mengimpal semula engsel pagar tunggal atau membaiki selak pintu. Kos sebenar bergantung pada skop kerosakan, masa yang diperlukan dan keperluan plat pengukuh." },
+        { q: "Berapa pantas juruteknik boleh hadir untuk pembaikan kecemasan?", a: "Untuk kes kecemasan seperti pagar utama yang terjatuh atau engsel tercabut yang menghalang laluan kenderaan, kami menawarkan servis pada hari yang sama di kawasan utama KL dan Selangor tertakluk pada jadual semasa." },
+        { q: "Adakah saya perlu menyediakan punca elektrik khas untuk mesin kimpalan?", a: "Mesin kimpalan inverter mudah alih kami beroperasi menggunakan punca kuasa soket 13A atau 15A standard di rumah anda. Sekiranya tiada bekalan elektrik, sila maklumkan awal untuk kami menyediakan penjana kuasa mudah alih." },
+        { q: "Bolehkah kimpalan di tapak membaiki bahagian besi yang sudah berkarat teruk?", a: "Sekiranya bahagian besi telah reput dimakan karat, kimpalan terus tidak akan kukuh. Juruteknik kami akan memotong bahagian reput tersebut dan mengimpal kepingan besi baharu sebagai pengganti sebelum menyapu lapisan anti-karat." },
+      ],
+      metaTitle: "Servis Kimpalan Di Tapak KL & Selangor | Dari RM 280",
+      metaDesc: "Pembaikan kimpalan kecemasan & berjadual di tapak di KL & Selangor. Baiki engsel pagar patah, grille, railing & struktur besi, jaminan 12 bulan. Dari RM280.",
+    },
+    zh: {
+      name: "现场焊接与紧急维修",
+      tagline: "吉隆坡与雪兰莪上门紧急与预约焊接维修，修复断裂铰链、倒塌大门及松动护栏，从 RM 280 起。",
+      description:
+        "庭院大门合页断裂脱落、防盗窗栅横条松动、阳台楼梯扶手摇晃、遮雨棚铁架焊缝开裂或车辆意外撞损大门等问题，不仅影响日常生活，更潜藏严重安全隐患。KL Servis Rumah 为吉隆坡与雪兰莪的有地住宅、店铺及厂房提供快速上门现场焊接维修服务（On-Site Welding Repair）。我们的专业持证焊工携带便携式逆变焊接机（MIG、TIG 及手工电弧焊设备）直达现场。服务涵盖低碳钢、不锈钢及铝合金材料修复，现场切除锈烂金属截面、打磨焊接坡口、满焊熔透并根据承重需求加焊加强筋板。修补完成后彻底打磨焊渣，补涂环氧富锌防锈底漆与同色面漆，迅速恢复金属结构的坚固与美观。",
+      highlights: [
+        "吉隆坡与雪兰莪排屋、店铺与厂房上门紧急焊接抢修，起价仅需 RM280",
+        "便携式高性能逆变焊机，支持低碳钢、不锈钢及铝合金现场高强度熔接",
+        "专业修复大门脱落合页、窗花防盗条断裂、楼梯栏杆松动及车棚支架开裂",
+        "提供锈蚀局部截断补强、加装重型受力角码与承重加固钢板（Gusset Plate）",
+        "焊缝现场磨平去渣，涂刷环氧富锌防锈底漆与匹配颜色面漆，附 12 个月保修",
+      ],
+      process: [
+        { step: "01", title: "现场勘查与安全评估", desc: "检查损坏部位开裂程度与金属壁厚，评估金属锈蚀状况，确定最佳受力加固焊接方案。" },
+        { step: "02", title: "机械打磨与除锈除漆", desc: "使用角磨机清理焊接区域的旧漆层、氧化皮与锈迹，打磨出干净平整的金属坡口以保证熔深。" },
+        { step: "03", title: "高强度对位满焊", desc: "采用强力夹具精确定位，使用高品质焊条或气体保护焊丝进行多层多道满焊，确保结构抗拉强度。" },
+        { step: "04", title: "加装补强三角板", desc: "对受力集中的大门铰链或转角承重点，加焊加厚钢板或角钢加强筋，彻底防止再次撕裂。" },
+        { step: "05", title: "焊缝打磨与防锈喷漆", desc: "打磨平整焊疤焊渣，涂刷两道富锌防锈漆并喷涂同色防护面漆，进行受力摇晃测试后交付保修单。" },
+      ],
+      faqs: [
+        { q: "上门现场焊接维修的起步费用是多少？", a: "现场基础焊接维修服务起步价为 RM 280（适用于单一门铰链断裂复位或小型窗栅加固）。实际费用视损坏范围、作业难度以及是否需要额外加装钢板材料而定。" },
+        { q: "大门倒塌或铰链断开有当天紧急抢修服务吗？", a: "有的。针对大门脱落悬挂、无法闭合影响车辆进出与房屋防盗的紧急状况，我们在吉隆坡和雪兰莪主要区域提供当天加急上门焊接抢修（视技师档期）。" },
+        { q: "现场焊接需要家里提供特殊的工业电源吗？", a: "不需要。我们使用的便携式逆变焊机完全兼容马来西亚标准的家用 13A 或 15A 单相电源插座，施工安全不跳闸。若现场完全无电，请提前告知我们携带发电机。" },
+        { q: "如果大门铁料已经锈穿烂掉了还能焊得住吗？", a: "直接在锈烂薄铁皮上焊接容易烧穿。技师会先用角磨机切除完全氧化酥脆的烂铁部分，补焊上一段同等规格的全新镀锌钢材，再进行整体牢固焊接并刷防锈漆。" },
+      ],
+      metaTitle: "吉隆坡上门现场焊接维修 | RM280起",
+      metaDesc: "吉隆坡与雪兰莪上门现场焊接与紧急抢修。修复断裂大门合页、窗花、栏杆扶手与钢架，富锌防锈漆，12个月保修。从RM280起。",
+    },
+  },
+
+  "welding/staircase-stringer-fabrication": {
+    ms: {
+      name: "Fabrikasi Stringer Tangga",
+      tagline: "Fabrikasi struktur stringer tangga besi kustom di KL & Selangor, reka bentuk moden, kukuh & kemas, dari RM 420/kaki linier.",
+      description:
+        "Struktur tangga besi (steel staircase stringer) memberikan sentuhan seni bina moden kontemporari, industri atau minimalis yang sangat kukuh dan tahan lama untuk kediaman dua tingkat, unit mezanin, lot kedai mahupun pejabat komersial. KL Servis Rumah pakar dalam mereka bentuk, memfabrikasi dan memasang struktur stringer tangga keluli kustom di seluruh Kuala Lumpur dan Selangor. Kami membina pelbagai konfigurasi stringer termasuk sistem tulang belakang tunggal (mono central stringer), saluran keluli berkembar (double channel stringer), tangga terapung julur (cantilever floating stairs) dan tangga lingkaran (spiral stairs). Setiap rangka dibina menggunakan rasuk keluli berkualiti tinggi (C-channel, I-beam atau RHS tebal), dikimpal secara kukuh di bengkel kami, disalut primer anti-karat zink dan dipasang dengan bolt sauh kimia berketahanan tinggi pada papak konkrit. Kami turut menyediakan plat tapak untuk dipadankan dengan anak tangga kayu keras solid, kaca terbaja atau plat besi berpetak.",
+      highlights: [
+        "Fabrikasi struktur stringer tangga keluli kustom untuk rumah, mezanin dan lot kedai dari RM420/kaki linier",
+        "Pilihan struktur moden: stringer tulang belakang tunggal (mono stringer), tangga terapung julur dan tangga spiral",
+        "Bahan keluli struktur tebal gred industri (I-Beam, C-Channel, RHS) dengan pengiraan beban kejuruteraan yang tepat",
+        "Pemasangan selamat dengan bolt sauh kimia (chemical anchor) berketahanan tinggi terus ke rasuk dan papak konkrit",
+        "Pilihan kemasan powder coating kilang atau cat enamel poliuretana dengan plat tapak sedia untuk kayu, kaca atau besi",
+      ],
+      process: [
+        { step: "01", title: "Ukuran Laser & Pengiraan Sudut Tangga", desc: "Mengukur ketinggian dari lantai ke lantai dengan alat laser, mengira sudut condong, nisbah 'rise & run' anak tangga demi keselesaan langkah." },
+        { step: "02", title: "Lukisan Struktur CAD & Fabrikasi Bengkel", desc: "Menyediakan lukisan terperinci untuk kelulusan pelanggan dan memulakan pemotongan CNC serta kimpalan MIG penuh di bengkel." },
+        { step: "03", title: "Rawatan Anti-Karat & Kemasan Cat", desc: "Menghapuskan kesan sanga, menggilap sambungan kimpalan, menyapu primer zink epoksi dan menyembur cat kemasan poliuretana atau powder coat." },
+        { step: "04", title: "Pemasangan Sauh Kimia di Tapak", desc: "Mendirikan struktur stringer di lokasi dan mengikat plat dasar menggunakan rod berulir sauh kimia (chemical anchor) berketahanan tinggi." },
+        { step: "05", title: "Pemasangan Plat Tapak & Pemeriksaan Kestabilan", desc: "Memasang plat sokongan anak tangga, memeriksa ketepatan aras mendatar dengan penimbang air dan menguji kekukuhan bebas getaran." },
+      ],
+      faqs: [
+        { q: "Berapakah kos fabrikasi dan pemasangan struktur stringer tangga besi?", a: "Harga struktur stringer tangga bermula dari RM 420 setiap kaki linier untuk reka bentuk saluran keluli berkembar standard. Tangga jenis mono stringer atau tangga terapung berharga antara RM 550 hingga RM 950 setiap kaki linier bergantung pada saiz rasuk dan kerumitan struktur." },
+        { q: "Adakah tangga struktur besi akan bergetar atau bergoyang apabila dinaiki?", a: "Tidak sekiranya direka dan dipasang dengan betul. Kami menggunakan rasuk keluli tebal berdinding tebal dan bolt sauh kimia berketahanan tinggi yang diikat kukuh pada struktur konkrit bangunan untuk menghapuskan sebarang gegaran." },
+        { q: "Apakah jenis bahan anak tangga yang boleh dipadankan dengan rangka keluli ini?", a: "Rangka keluli kami direka fleksibel untuk dipadankan dengan pelbagai kemasan anak tangga seperti kayu keras solid (Merbau, Teak, Nyatoh), konkrit pratuang, kaca terbaja berlapis (laminated tempered glass), atau plat besi berpetak (chequered plate)." },
+        { q: "Berapa lamakah masa yang diambil untuk menyiapkan projek tangga besi kustom?", a: "Proses fabrikasi di bengkel kami mengambil masa kira-kira 10 hingga 14 hari bekerja selepas ukuran tapak disahkan. Pemasangan di tapak rumah anda biasanya hanya memerlukan 1 hingga 2 hari bekerja." },
+      ],
+      metaTitle: "Fabrikasi Stringer Tangga Besi KL | Dari RM 420/kaki",
+      metaDesc: "Fabrikasi struktur stringer tangga keluli kustom di KL & Selangor. Mono stringer, tangga terapung, bolt kimia kukuh, jaminan 12 bulan. Dari RM420/kaki linier.",
+    },
+    zh: {
+      name: "钢结构楼梯龙骨制作",
+      tagline: "吉隆坡与雪兰莪定制钢结构楼梯龙骨制作与安装，现代极简单梁与悬挑悬浮楼梯，从 RM 420/延英尺起。",
+      description:
+        "钢结构楼梯（Steel Staircase Stringer）凭借轻盈通透的线条感、极强的承重稳定性以及现代极简工业风美学，广泛应用于复式公寓、阁楼夹层（Mezzanine）、排屋挑空区及商业展厅。KL Servis Rumah 专注于在吉隆坡与雪兰莪提供高精度钢结构楼梯龙骨设计、车间制作与现场安装服务。我们擅长打造各类主流钢梯结构，包括单脊中梁楼梯（Mono Stringer）、双侧槽钢楼梯（Double Channel Stringer）、无立柱悬挑悬浮楼梯（Floating Cantilever Staircase）以及弧形旋转钢梯（Spiral Stairs）。主梁选用国标重型工字钢、槽钢或大截面加厚矩形管（RHS），在车间经过精密数控下料与满焊加工，现场采用重型高强度化学锚栓（Chemical Anchor）与建筑混凝土梁板实现刚性锚固，并可按需配套实木踏板托板、钢化夹胶玻璃护栏或钢丝绳立柱。",
+      highlights: [
+        "定制现代钢结构楼梯主梁龙骨，适用于住宅挑空、夹层及商业空间，每延英尺 RM420 起",
+        "支持单脊中梁（Mono Stringer）、双侧梁、悬挑隐形悬浮梯及旋转钢梯等多种造型",
+        "精选国标重型工字钢、槽钢及加厚矩管，经过力学受力核算，脚感扎实不晃动",
+        "采用德国慧鱼/喜利得高强化学植筋胶与地脚锚栓刚性固定于混凝土主梁与楼板",
+        "工厂高温粉末喷涂或重防腐聚氨酯烤漆，踏步支架完美适配实木、钢化玻璃或花纹钢板",
+      ],
+      process: [
+        { step: "01", title: "红外激光精准测绘", desc: "使用高精度激光测距仪测定层高与楼梯开洞尺寸，精准计算踏步高度（Rise）与踏面深度（Run）的人体工程学黄金比例。" },
+        { step: "02", title: "CAD 深化设计与受力验算", desc: "绘制三维节点详图，核算主梁刚度与挠度变形，与业主确认踏步形式、栏杆连接点及颜色方案。" },
+        { step: "03", title: "车间数控切料与全熔透焊接", desc: "在工厂进行主梁高精切割、踏步托板激光打孔及气体保护满焊，打磨焊缝并涂刷环氧富锌防锈底漆。" },
+        { step: "04", title: "现场高强化学锚栓生根固定", desc: "将钢主梁运抵现场，使用大吨位重型化学锚栓将底座与上口法兰板刚性锚固于建筑混凝土结构中。" },
+        { step: "05", title: "水平激光校准与动荷载测试", desc: "使用激光水平仪精细调平每一级踏步托板，进行满负荷踩踏防震刚性测试，清理现场并交付 12 个月工程质保。" },
+      ],
+      faqs: [
+        { q: "钢结构楼梯龙骨的定制造价大概是多少？", a: "双侧槽钢标准楼梯龙骨起步价为每延英尺 RM 420。单脊中梁（Mono Stringer）或隐形悬挑悬浮梯结构由于需要更厚的钢材截面与复杂的悬臂焊接工艺，费用通常在每延英尺 RM 550 至 RM 950 之间。" },
+        { q: "钢结构楼梯走上去会不会产生震动或晃动感？", a: "合格的钢梯绝对不会晃动。我们选用厚壁结构级钢梁，并在上下固定端全部采用高等级化学锚栓与房屋混凝土梁进行刚性锚固，经专业力学验算，踩踏脚感扎实稳固无杂音。" },
+        { q: "钢龙骨上可以搭配哪些材质的楼梯踏板？", a: "踏步托板预留标准安装孔位，可完美搭配各类实木踏板（如 Merbau 菠萝格、Teak 柚木、Nyatoh 橡木）、超白钢化夹胶玻璃、预制水磨石板或防滑花纹钢板。" },
+        { q: "从下单到现场安装完成一般需要多长时间？", a: "现场精准复尺确认图纸后，工厂车间下料制作通常需要 10 至 14 个工作日。运抵现场后的吊装与固定作业通常仅需 1 至 2 个工作日即可高效完工。" },
+      ],
+      metaTitle: "吉隆坡钢结构楼梯龙骨制作 | RM420/英尺起",
+      metaDesc: "吉隆坡与雪兰莪定制钢结构楼梯龙骨制作与安装。单脊中梁、悬挑悬浮楼梯、化学锚栓加固、12个月保修。从RM420/延英尺起。",
+    },
+  },
 };
 
 /**
