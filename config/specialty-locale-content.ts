@@ -4049,7 +4049,7 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
         "Pemeriksaan ketahanan dan pengetatan cangkuk penambat siling sedia ada",
         "Pengujian pendawaian elektrik, kapasitor, dan sambungan bumi (earthing test)",
         "Pemasangan kipas baharu pilihan anda berserta alat kawalan atau regulator baharu",
-        "Termasuk khidmat pembersihan kawasan dan pelupusan kipas lama secara percuma",
+        "Pemasangan kipas baharu dan kerja pendawaian dilindungi waranti selama 12 bulan",
       ],
       process: [
         { step: "01", title: "Pengasingan Kuasa & Penanggalan", desc: "Bekalan elektrik di papan DB diasingkan dengan selamat sebelum bilah, motor, dan rod kipas lama ditanggalkan daripada siling." },

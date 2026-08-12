@@ -124,10 +124,10 @@ function buildDirectory(locale: Locale = "en"): FaqCategory[] {
     "Common symptoms Malaysian homeowners search for — causes, fixes and when to call a professional.",
     problemPages.filter((problem) => !isRedirectedProblemSlug(problem.slug)).flatMap((problem) => {
       const localized = localize ? getLocalizedProblem(problem, locale) : problem;
-      // 34 problems carry no full native override in problemI18n; for those,
-      // the translated fallback templates must not interpolate the raw ENGLISH
-      // title into the localized hubs. problemFaqI18n supplies a native
-      // display title (source label) and a grammar-correct topic phrase.
+      // All current problems have native MS/ZH content. Keep the original
+      // 34-record FAQ map as a defensive fallback: if a localized FAQ ever
+      // matches its English source, use a native display title and a
+      // grammar-correct topic phrase rather than leaking English into the hub.
       const faqOverride = localize ? problemFaqI18n[problem.slug]?.[locale as "ms" | "zh"] : undefined;
       const sourceLabel = faqOverride?.title ?? localized.title;
       const faqs = localize && localized.faqs.every((faq, index) => faq.q === problem.faqs[index]?.q && faq.a === problem.faqs[index]?.a)

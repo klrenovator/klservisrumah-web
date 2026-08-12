@@ -2246,3 +2246,30 @@ Continued from the final "Next Session — START HERE" section of AI_OPTIMIZATIO
 - Locale problem content-QA is now a wired-in build gate; do not add more problem URL multiplication.
 - Translator/business QA + deploy + GSC re-measure of the 12 301s and new MS/ZH problem URLs remains owner-side, as do production `NEXT_PUBLIC_GA_ID`, `ADMIN_PASSWORD`, GBP/IndexNow/Bing pings.
 - Never create standalone Air Conditioning content.
+
+# Session 2026-08-12 (part 6) — 354-page trilingual content-QA closeout
+
+## What was done
+Continued exactly from the final `Next Session — START HERE` section of `AI_OPTIMIZATION_ROADMAP.md` and applied the supplied trilingual report as content QA only. No URLs were added or restored, the 12 problem redirects remain intact, and no standalone Air Conditioning content was created.
+
+1. **Closed and recorded the 354-page QA review.** Added `docs/TRILINGUAL_CONTENT_QA_2026-08-12.md` for 224 localized specialty pages plus 130 canonical localized problem pages. It preserves the supplied conclusions: zero RM price inconsistencies, zero genuine duplicate pages, zero real English-sentence leakage, and matching MS/ZH content counts page by page. It also records the remaining evidence boundaries: native-speaker final review and exhaustive live crawling are owner/deployment follow-ups.
+2. **Aligned the ceiling-fan replacement warranty.** `ceiling-fan/ceiling-fan-replacement` had a ZH 12-month installation/wiring warranty highlight but no corresponding MS highlight. The canonical parent record in `config/services-data.ts` confirms the warranty in EN/MS/ZH, so the MS specialty highlight now states equivalent 12-month coverage. Cleanup/disposal information remains elsewhere in the page copy.
+3. **Removed obsolete localization architecture claims.** Updated comments in `config/problem-faq-i18n.ts` and `lib/faq-directory.ts` to state that all 77 problems now have complete native MS/ZH coverage. The 34-record map stays as a defensive grammar-correct FAQ fallback; runtime behavior and the 65 keep-URL + 12 redirect policy are unchanged.
+4. **Corrected translator QA guidance and hardened the gate.** `docs/TRANSLATOR_QA_PROMPT.md` no longer describes every specialty as exactly 5 highlights, 4 process steps and 4 FAQs. `scripts/validate-specialty-locale.ts` now enforces same-page MS/ZH count parity for those three structures while retaining variable structures and the existing content minimums.
+5. **Refreshed tracked SEO outputs.** Rebuilt and regenerated `docs/seo-audit-report.md`, `docs/seo-metadata-inventory.csv` and `docs/seo-metadata-summary.json`; the files now include the 130 localized problem routes from the previously merged part-4 work and reflect 4,677 audited pages / 3,638 indexable pages.
+
+## Verification
+- PASS: `npm run lint`, `npm run type-check`, `audit:topical-map` (28/28, 112 relationships), `audit:specialty-locale` (112 × MS/ZH plus list-count parity), `audit:i18n` (1,077 × 3), `audit:problem-i18n` (65 × MS/ZH, 12 redirects excluded).
+- PASS: `npm run build`; prebuild estimator suite completed 263,301 assertions with 0 failures; Next generated 4,685 route entries.
+- PASS: `audit:html` (4,677 pages, 0 fatal / 0 warnings), `seo:audit`, `audit:meta` (0 missing titles/descriptions, duplicate-title groups, JSON-LD parse failures or breadcrumb mismatches), `audit:seo-inventory` (4,677 pages, 0 metadata/H1 changes), and `audit:seo-head` (3,638 self-canonical indexable and sitemap URLs, 0 duplicate titles/descriptions, 0 warnings).
+- Environment note: the first lint/type-check attempt ran before dependencies were installed and returned command-not-found for ESLint/TypeScript. `npm ci` installed the lockfile dependencies with 0 vulnerabilities; both gates then passed. A parallel `audit:seo-head` attempt was killed under memory pressure; its immediate serial rerun passed. The nonexistent script names `audit:seo`, `audit:seo:ms` and `audit:seo:zh` were corrected to the repository's real SEO scripts above.
+
+## Files changed
+- Added: `docs/TRILINGUAL_CONTENT_QA_2026-08-12.md`.
+- Modified: `config/specialty-locale-content.ts`, `config/problem-faq-i18n.ts`, `lib/faq-directory.ts`, `docs/TRANSLATOR_QA_PROMPT.md`, `scripts/validate-specialty-locale.ts`, `docs/seo-audit-report.md`, `docs/seo-metadata-inventory.csv`, `docs/seo-metadata-summary.json`, `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
+
+## Next session
+- Trilingual report corrections are complete. Keep problem URL generation closed and preserve all 12 redirects.
+- Owner/deployment-side: native Malay + Simplified Chinese final skim, exhaustive live URL crawl, deployment, then GSC/Bing re-measurement of the 301s and new locale problem URLs.
+- Owner-only: production `NEXT_PUBLIC_GA_ID`, `ADMIN_PASSWORD`, GBP/IndexNow/Bing pings.
+- Never create standalone Air Conditioning content; do not re-open closed link-equity work without fresh crawl evidence.

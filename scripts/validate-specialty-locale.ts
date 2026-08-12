@@ -206,6 +206,21 @@ for (const [key, entry] of Object.entries(specialtyLocaleContent)) {
   if (!entry.zh) issues.push({ key, locale: "zh", field: "block", message: "missing zh block" });
   if (entry.ms) checkBlock(key, "ms", entry.ms, issues);
   if (entry.zh) checkBlock(key, "zh", entry.zh, issues);
+
+  // Page structures intentionally vary by specialty, but a page's MS and ZH
+  // variants must expose the same number of customer-facing list items.
+  if (entry.ms && entry.zh) {
+    for (const field of ["highlights", "process", "faqs"] as const) {
+      if (entry.ms[field].length !== entry.zh[field].length) {
+        issues.push({
+          key,
+          locale: "ms/zh",
+          field,
+          message: `locale count mismatch (${entry.ms[field].length} MS vs ${entry.zh[field].length} ZH)`,
+        });
+      }
+    }
+  }
 }
 
 // The priority tranche must always be present and fully native.
@@ -224,4 +239,7 @@ if (issues.length > 0) {
 }
 
 const blockCount = Object.keys(specialtyLocaleContent).length * 2;
-console.log(`Specialty locale content OK: ${Object.keys(specialtyLocaleContent).length} specialties × ms/zh (${blockCount} native blocks) above the non-thin threshold.`);
+console.log(
+  `Specialty locale content OK: ${Object.keys(specialtyLocaleContent).length} specialties × ms/zh ` +
+    `(${blockCount} native blocks) above the non-thin threshold with per-page list-count parity.`,
+);

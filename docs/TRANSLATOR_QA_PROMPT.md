@@ -18,7 +18,9 @@ Abhi ke liye sirf **2 cheezein** check karni hain (yeh nayi translate ki gayi ha
 - Example MS: `/ms/services/painting/interior-house-painting`
 - Example ZH: `/zh/services/painting/interior-house-painting`
 
-Har page par yeh fields hain: **name (naam), tagline (chhota tagline), description (tawseel), 5 highlights, 4 process steps, 4 FAQs, metaTitle, metaDesc**.
+Har page par yeh fields hain: **name (naam), tagline (chhota tagline), description (tawseel), highlights, process steps, FAQs, metaTitle, metaDesc**.
+
+> **Count note:** Published specialty pages jaan-boojh kar exact ek jaise counts use nahi karte. Har locale mein usi page ke counts match hone chahiye, lekin service ke mutabiq highlights, process steps aur FAQs ki tadaad badal sakti hai. QA mein content ki completeness aur MS/ZH parity check karein — fixed `5 / 4 / 4` count ko requirement na samjhein.
 
 ### B. 65 problem pages × 2 languages (MS + ZH) = 130 pages
 - URL pattern:

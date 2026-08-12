@@ -1,15 +1,15 @@
 import type { Locale } from "@/lib/i18n";
 
 /**
- * PROBLEM FAQ i18n — title + topic overrides for the localized FAQ hubs.
+ * PROBLEM FAQ i18n — grammar-specific title + topic forms for localized FAQ
+ * hub fallback templates.
  *
- * 34 problem pages do not carry a full native override in
- * `config/problem-data.ts#problemI18n` (their page bodies intentionally stay
- * English under client-side language switching — the H3 scope decision).
- * Before this file existed, the localized FAQ hubs (/ms/soalan-lazim,
- * /zh/chang-jian-wen-ti) interpolated those problems' RAW ENGLISH titles into
- * the translated fallback FAQ templates and used them as source labels, which
- * mixed English into the two indexable localized hubs.
+ * This map originally protected 34 problems that lacked complete native
+ * overrides. All 77 defined problems now have native MS/ZH metadata, body and
+ * FAQ coverage through `problemI18n` and `problem-body-i18n`. The map remains
+ * as a defensive fallback for those original records: if a localized FAQ list
+ * ever falls back to its English source, the hub can still use a native source
+ * label and a grammatically correct topic phrase instead of leaking English.
  *
  * Two forms per locale because the grammar differs by position:
  *  - `title` — display form, used for the "Baca lagi di {title}" /

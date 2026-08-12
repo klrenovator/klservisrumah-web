@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-12T03:29:58.565Z",
-  "pagesAudited": 4559,
+  "generatedAt": "2026-08-12T07:50:05.150Z",
+  "pagesAudited": 4677,
   "pagesUpdated": 0,
   "titlesUpdated": 0,
   "descriptionsUpdated": 0,
@@ -33,7 +33,7 @@
     "pagesFixed": 0
   },
   "status": {
-    "indexable": 3520,
+    "indexable": 3638,
     "canonicalized": 1036,
     "noindex": 3
   }
