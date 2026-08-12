@@ -1286,6 +1286,35 @@ Continued exactly from the final **Next Session — START HERE** section and com
 ### Files
 - Modified: `config/problem-data.ts` (+34 MS + 34 ZH override entries; partial-override type), `lib/problem-i18n.ts` (Partial override type), `components/sections/related-problems.tsx` (client-side localization), `messages/en.json`, `messages/ms.json`, `messages/zh.json` (+`internalLinks.problemsIntro`), `docs/seo-audit-report.md`, `docs/seo-metadata-summary.json`, `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
 
+### ✅ Session 2026-08-12 (part 2) — Low-inbound link-equity tier: localized specialty pages, cost guides, suburb pages, maintenance hub
+
+**Status:** ✅ COMPLETED
+
+Continued from the roadmap's "Recommended Next Task" tier (low-inbound ≤2 clusters noted in S009) after re-measuring the build with a full-corpus inbound audit. No standalone Air Conditioning content was created.
+
+- **Baseline measurement (production build, full-corpus crawl of 4,559 pages):** 901 pages had ≤2 inbound internal links. Breakdown: **648 `/suburbs/*` pages** (1 inbound each), **224 localized specialty pages** (`/ms/services/*/…` + `/zh/services/*/…` — exactly 1 inbound each, only from their service index), **24 `/services/*/cost` pages** (2 each), plus `/guides/maintenance` (1) and the non-indexable `/ms`, `/zh`, `/_not-found`, `/index` artifacts.
+- **Fix 1 — localized specialty pages 1 → 4 inbound (224 pages).** `LocaleSpecialtyPage` now renders a server-rendered "related specialties" section linking the sibling localized specialties of the same service (all 4-specialty services; circular rotation so every page links its 3 siblings). Uses `getSpecialtyLocaleContent()` for native names/taglines and the existing trilingual `serviceDetail.otherServicesHeading/Sub` keys — zero new translation debt.
+- **Fix 2 — cost guides 2 → 8–11 inbound (28 pages).** `app/(en)/services/[slug]/cost/page.tsx` now builds circular next-6 sibling cost-guide bundles (`buildServiceLinks`) and `LocaleServiceCostView` renders them client-localized — the same pattern the emergency pages already used.
+- **Fix 3 — suburb × service pages ≤2 → 13+ inbound (1,456 pages).** `app/(en)/suburbs/[slug]/[serviceSlug]/page.tsx` now builds circular next-12 sibling-service bundles in the same suburb and `LocaleSuburbServiceView` renders an "Other services near you in {suburb}" block (reusing the trilingual `location.nearMeRelatedHeading/Sub` keys with the suburb name). These pages canonicalise to their `/areas` twin where one exists, so the extra equity flows to the stronger canonical URL too.
+- **Fix 4 — `/guides/maintenance` hub 1 → 2 inbound.** The `/guides` index now surfaces the maintenance sub-hub as an explicit card (it was previously only linked from `/seasonal`).
+- **Result:** low-inbound (≤2) pages **901 → 4** — only the non-indexable `/_not-found`, `/index` and the noindex `/ms`/`/zh` redirect stubs remain; total internal links **288,425 → 306,738 (+18,313)**; site-wide average 63.26 → 67.28.
+
+#### Verification
+- PASS: lint (0 errors/warnings), type-check (0 errors), topical map (28/28 services; 112 typed specialty relationships), locale gate (112 specialties × MS/ZH = 224 native blocks), i18n parity (1,075 × 3), estimator suite (263,293 assertions), `npm audit` (0 vulnerabilities).
+- PASS: production build (**4,567 static pages generated** — unchanged route count), full-corpus HTML audit (**4,559 pages**, 0 fatal / 0 warnings), technical SEO head audit (3,520 self-canonical indexable pages; 0 warnings), metadata consistency SEO audit.
+- Inbound audit PASS: `ms-services-specialty` 112 pages and `zh-services-specialty` 112 pages each 1 → **4**; cost pages 2 → **8–11**; suburbs 1 → **13–23**; `/guides/maintenance` 1 → **2**.
+- Production smoke: MS `interior-house-painting`, ZH `main-gate-fabrication` (sibling specialty links in-language), `/services/painting/cost` (6 related cost guides), `/suburbs/bandar-puteri/autogate` (12 same-suburb service links), `/guides` (maintenance card) and `/guides/maintenance` all 200.
+
+### Files
+- Modified: `components/sections/locale-specialty-page.tsx` (related-specialties section), `app/(en)/services/[slug]/cost/page.tsx` + `components/sections/locale-service-cost-view.tsx` (related cost guides), `app/(en)/suburbs/[slug]/[serviceSlug]/page.tsx` + `components/sections/locale-suburb-service-view.tsx` (other services in suburb), `app/(en)/guides/page.tsx` (maintenance hub card), `docs/seo-audit-report.md` (regenerated), `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
+
+## Next Session — START HERE
+
+1. **The low-inbound tier is CLOSED: 901 → 4 pages with ≤2 inbound links** (only non-indexable artifacts remain). The remaining in-repo milestone is still **real locale problem routes (154)** — still blocked pending evidence-based consolidation of the 14 problem-overlap groups (GSC data); do not force it.
+2. Add real locale problem routes (154) only after the 14 problem-overlap groups are consolidated with evidence; then localize `RelatedProblems`/problem links on localized trees to `/ms/problems/…` and `/zh/problems/…` (they currently point to EN problem pages — documented and still blocked).
+3. Optional next in-repo tier (if continuing link equity): the `/estimate/*` share pages (22 pages, ≤3 inbound each) and `/ms/blog/*` + `/zh/bo-ke/*` articles (18 each, avg ~2–16) can be lifted with the same circular-sibling pattern; `/near-me/*` hubs (28 pages, max 8) could go from next-6 to next-12. Confirm current counts with a fresh full-corpus inbound crawl before acting.
+4. Obtain business/translator QA for the completed localized specialty pages (224 — the full catalogue) and problem pages (77 × MS + ZH titles/bodies/FAQs) before measuring GSC indexation; this requires an owner/translator and cannot be completed from repository code alone. After QA + deploy, re-measure GSC/Bing coverage of the localized trees and the MS/ZH pilot conversions before the owner-only H3 full-rollout decision.
+5. Do not create thin or spun pages; rerun lint, type-check, build, topical-map, specialty-locale, i18n, HTML and SEO audits after any future change. Never create standalone Air Conditioning content.
 ## Next Session — START HERE
 
 1. **The `problemI18n` gap is CLOSED: all 77 problems now carry native MS + ZH titles, cost ranges and FAQs** (43 original full overrides + 34 new shorter overrides), layered on the complete 77 × MS/ZH body translations. The `RelatedProblems` client component is also localized for MS/ZH mode, and both localized FAQ hubs render native content for every problem. The remaining in-repo milestone is still **real locale problem routes (154)** — still blocked pending evidence-based consolidation of the 14 problem-overlap groups (GSC data); do not force it.

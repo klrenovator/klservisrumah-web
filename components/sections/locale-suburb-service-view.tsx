@@ -5,7 +5,7 @@ import Link from "next/link";
 import { MapPin, MessageCircle } from "lucide-react";
 import { useLang } from "@/context/lang-context";
 import { useTranslations } from "@/hooks/use-translations";
-import type { LocaleMap, ServiceBundleEntry, SuburbBundleEntry } from "@/lib/location-bundles";
+import type { LocaleMap, ServiceBundleEntry, ServiceLinkEntry, SuburbBundleEntry } from "@/lib/location-bundles";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 
@@ -25,7 +25,8 @@ export function LocaleSuburbServiceView({
   landmarks,
   nearby,
   suburbBundle,
-  serviceBundle
+  serviceBundle,
+  otherServices = []
 }: {
   suburbSlug: string;
   suburbName: string;
@@ -35,6 +36,7 @@ export function LocaleSuburbServiceView({
   nearby: NearbySuburbLink[];
   suburbBundle: LocaleMap<SuburbBundleEntry>;
   serviceBundle: LocaleMap<ServiceBundleEntry>;
+  otherServices?: ServiceLinkEntry[];
 }) {
   const { lang } = useLang();
   const t = useTranslations();
@@ -121,6 +123,31 @@ export function LocaleSuburbServiceView({
                 ))}
               </div>
             </div>
+
+            {otherServices.length > 0 && (
+              <div className="rounded-3xl border border-slate-100 bg-white p-6 shadow-xs sm:p-8">
+                <h2 className="text-2xl font-extrabold text-[#075985]">
+                  {t("location.nearMeRelatedHeading", { area: suburbName })}
+                </h2>
+                <p className="mt-2 text-sm font-semibold leading-relaxed text-[#475569]">
+                  {t("location.nearMeRelatedSub", { area: suburbName })}
+                </p>
+                <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                  {otherServices.map((entry) => {
+                    const title = entry.titles[lang] ?? entry.titles.en;
+                    return (
+                      <Link
+                        key={entry.href}
+                        href={entry.href}
+                        className="rounded-2xl bg-slate-50 p-4 text-sm font-extrabold text-[#075985] hover:bg-[#E0F2FE]"
+                      >
+                        {title}
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
 
             <div className="rounded-3xl border border-slate-100 bg-white p-6 shadow-xs sm:p-8">
               <h2 className="mb-5 text-2xl font-extrabold text-[#075985]">{t("location.faqs")}</h2>

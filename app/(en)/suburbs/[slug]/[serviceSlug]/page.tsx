@@ -5,7 +5,7 @@ import { suburbPages } from "@/config/suburb-data";
 import { areaPages } from "@/config/area-data";
 import { servicesData } from "@/config/services-data";
 import { getFAQSchema, getLocalBusinessServiceSchema } from "@/lib/seo";
-import { buildServiceBundle, buildSuburbBundle } from "@/lib/location-bundles";
+import { buildServiceBundle, buildServiceLinks, buildSuburbBundle } from "@/lib/location-bundles";
 import { LocaleSuburbServiceView } from "@/components/sections/locale-suburb-service-view";
 
 // Every valid param is enumerated in `generateStaticParams()`, so anything
@@ -73,7 +73,19 @@ export default async function SuburbServicePage(props: { params: Promise<{ slug:
         }))}
         suburbBundle={buildSuburbBundle(suburb)}
         serviceBundle={buildServiceBundle(service)}
+        otherServices={buildOtherServiceBundles(service.slug, suburb.slug)}
       />
     </>
   );
+}
+
+
+/** Circular selection gives every suburb × service page the same twelve sibling inlinks. */
+function buildOtherServiceBundles(serviceSlug: string, suburbSlug: string) {
+  const allServices = Object.values(servicesData);
+  const currentIndex = allServices.findIndex((service) => service.slug === serviceSlug);
+  const relatedServices = Array.from({ length: Math.min(12, allServices.length - 1) }, (_, offset) => (
+    allServices[(currentIndex + offset + 1) % allServices.length]
+  ));
+  return buildServiceLinks(relatedServices, (service) => `/suburbs/${suburbSlug}/${service.slug}`);
 }

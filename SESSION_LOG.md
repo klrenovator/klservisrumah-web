@@ -2134,3 +2134,37 @@ Continued exactly from the final "Next Session — START HERE" section of AI_OPT
 - Next in-repo milestone: real locale problem routes (154) — still blocked pending evidence-based consolidation of the 14 problem-overlap groups (GSC data).
 - Business/translator QA of all 224 localized specialty pages + 77 × MS/ZH problem pages remains owner-side.
 - Never create standalone Air Conditioning content.
+
+# Session 2026-08-12 (part 2) — Low-inbound link-equity tier: localized specialty pages, cost guides, suburb pages, maintenance hub
+
+## What was done
+Continued the roadmap's low-inbound (≤2) optimisation tier after a fresh full-corpus inbound crawl of the production build (901 pages had ≤2 inbound links). No standalone Air Conditioning content was created.
+
+1. **Localized specialty pages 1 → 4 inbound (224 pages).** `LocaleSpecialtyPage` gained a server-rendered "related specialties" section linking the sibling localized specialties of the same service (circular rotation; every 4-specialty service links its 3 siblings) with native names/taglines from `getSpecialtyLocaleContent()` and the existing trilingual `serviceDetail.otherServicesHeading/Sub` keys.
+2. **Cost guides 2 → 8–11 inbound (28 pages).** `/services/[slug]/cost` now builds circular next-6 sibling cost-guide bundles; `LocaleServiceCostView` renders them client-localized (same pattern as emergency pages).
+3. **Suburb × service pages ≤2 → 13+ inbound (1,456 pages).** `/suburbs/[slug]/[serviceSlug]` builds circular next-12 sibling-service bundles in the same suburb; `LocaleSuburbServiceView` renders an "Other services near you in {suburb}" block reusing `location.nearMeRelatedHeading/Sub`. Extra equity flows to the `/areas` canonical twin where one exists.
+4. **`/guides/maintenance` hub 1 → 2 inbound.** The `/guides` index now surfaces the maintenance sub-hub as an explicit card.
+
+## Result
+- Low inbound (≤2): **901 → 4** (only non-indexable `/_not-found`, `/index` and noindex `/ms`/`/zh` redirect stubs remain).
+- Total internal links: **288,425 → 306,738 (+18,313)**; average 63.26 → 67.28.
+- Spot-checks: MS/ZH specialty pages 4 each; cost pages 8–11; suburbs 13–23; `/guides/maintenance` 2.
+
+## Verification
+- PASS: lint (0 errors/warnings), type-check (0 errors), topical map (28/28; 112 relationships), specialty locale gate (224 native blocks), i18n parity (1,075 × 3), estimator suite (263,293 assertions), npm audit (0 vulnerabilities).
+- PASS: production build (4,567 static pages — unchanged), HTML audit (4,559 pages, 0 fatal / 0 warnings), SEO head audit (3,520 indexable; 0 warnings), metadata consistency audit.
+- Production smoke: MS/ZH specialty sibling links in-language, cost-page related guides, suburb same-suburb links, guides maintenance card — all 200.
+
+## Files changed
+- `components/sections/locale-specialty-page.tsx`
+- `app/(en)/services/[slug]/cost/page.tsx`, `components/sections/locale-service-cost-view.tsx`
+- `app/(en)/suburbs/[slug]/[serviceSlug]/page.tsx`, `components/sections/locale-suburb-service-view.tsx`
+- `app/(en)/guides/page.tsx`
+- `docs/seo-audit-report.md` (regenerated)
+- `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`
+
+## Next session
+- Low-inbound tier closed (901 → 4 non-indexable artifacts). Next in-repo milestone: real locale problem routes (154) — still blocked pending GSC-evidenced consolidation of the 14 problem-overlap groups.
+- Optional: `/estimate/*` share pages (22 × ≤3 inbound), `/ms/blog/*` + `/zh/bo-ke/*` (18 each), `/near-me/*` hubs (28 × max 8) can be lifted with the same circular-sibling pattern after a fresh crawl.
+- Business/translator QA of 224 localized specialty pages + 77 × MS/ZH problem pages remains owner-side.
+- Never create standalone Air Conditioning content.
