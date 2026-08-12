@@ -1382,3 +1382,32 @@ Continued from the final **Next Session — START HERE** section, item 1's direc
 2. Obtain business/translator QA for the 224 localized specialty pages and 65 × MS/ZH problem pages. After QA + deploy, re-measure GSC/Bing (especially the 12 301s and the new MS/ZH problem URLs) before the owner-only H3 full-rollout of remaining trees.
 3. Owner-only: production `NEXT_PUBLIC_GA_ID`, `ADMIN_PASSWORD`, GBP / IndexNow / Bing pings. Do not invent a measurement ID.
 4. Do not create thin or spun pages. Rerun lint, type-check, build, topical-map, specialty-locale, i18n, problem-i18n, HTML and SEO audits after any future change. Never create standalone Air Conditioning content. Do not re-open the closed ≤3 inbound link-equity tier without a fresh crawl that shows a starved group.
+
+### ✅ Session 2026-08-12 (part 6) — 354-page trilingual content-QA closeout
+
+**Status:** ✅ COMPLETED
+
+Continued exactly from the final **Next Session — START HERE** content-QA directive. Applied the supplied EN/MS/ZH QA report as content governance only; no URLs were added, restored or multiplied. No standalone Air Conditioning content was created.
+
+- **Recorded the 354-page review** in `docs/TRILINGUAL_CONTENT_QA_2026-08-12.md`: 112 specialties × MS/ZH (224 pages) plus 65 canonical problem pages × MS/ZH (130 pages). Conclusions retained: **0 RM price inconsistencies, 0 genuine duplicate pages, 0 real English-sentence leaks, and page-by-page MS/ZH content-count parity throughout**.
+- **Resolved the one semantic mismatch** on `ceiling-fan/ceiling-fan-replacement`: the ZH specialty advertised the canonical 12-month installation/wiring warranty while the corresponding MS highlight did not. The parent ceiling-fan record already publishes that warranty in EN/MS/ZH, so the MS specialty now states the same 12-month coverage. Cleanup/old-fan handling remains described in the specialty description, process and FAQs.
+- **Corrected stale problem-localization comments.** `config/problem-faq-i18n.ts` and `lib/faq-directory.ts` now reflect that all 77 defined problems have native MS/ZH content. The original 34-record FAQ map remains only as a defensive, grammar-specific fallback; the 65 canonical localized problem URLs + 12 redirects policy is unchanged.
+- **Corrected translator guidance.** `docs/TRANSLATOR_QA_PROMPT.md` no longer promises one exact `5 / 4 / 4` specialty structure. Completeness, validator minimums and same-page MS/ZH parity are the requirements; list counts can vary by specialty.
+- **Made count parity durable.** `audit:specialty-locale` now rejects MS/ZH highlight, process-step or FAQ count drift on a page without imposing a universal exact count.
+- Regenerated the tracked SEO audit/inventory artifacts after the 130 locale problem routes added in part 4; they now reflect the current 4,677-page audit corpus and 3,638 indexable URLs.
+
+#### Verification
+- PASS: lint (0 errors/warnings), type-check, topical map (28/28; 112 relationships), specialty locale gate (112 × MS/ZH plus list-count parity), i18n parity (1,077 × 3), problem-i18n (65 × MS/ZH; 12 redirects excluded), estimator suite (263,301 assertions).
+- PASS: production build (4,685 generated route entries), HTML audit (4,677 pages; 0 fatal / 0 warnings), metadata consistency, metadata/schema audit (0 missing titles/descriptions, duplicate-title groups or JSON-LD parse failures), SEO inventory (4,677 pages; 0 title/description/H1 changes), SEO head audit (3,638 self-canonical indexable + sitemap URLs; 0 duplicate titles/descriptions; 0 warnings).
+
+### Files
+- Added: `docs/TRILINGUAL_CONTENT_QA_2026-08-12.md`.
+- Modified: `config/specialty-locale-content.ts`, `config/problem-faq-i18n.ts`, `lib/faq-directory.ts`, `docs/TRANSLATOR_QA_PROMPT.md`, `scripts/validate-specialty-locale.ts`, `docs/seo-audit-report.md`, `docs/seo-metadata-inventory.csv`, `docs/seo-metadata-summary.json`, `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
+
+## Next Session — START HERE
+
+1. **The supplied 354-page trilingual content-QA report is applied and recorded.** Do not add more problem URL multiplication and do not recreate the 12 redirected problem slugs. Future specialty/problem work is content QA on top of the wired gates.
+2. Owner/deployment follow-up still required: a final native Malay + Simplified Chinese speaker skim and an exhaustive live crawl of all canonical localized URLs. The completed repository review is static content QA, not a native-speaker certification or live production crawl.
+3. After deployment, re-measure GSC/Bing coverage and performance, especially the 12 problem 301s and the 130 MS/ZH problem URLs, before the owner-only H3 expansion decision.
+4. Owner-only: production `NEXT_PUBLIC_GA_ID`, `ADMIN_PASSWORD`, GBP / IndexNow / Bing pings. Do not invent credentials or a measurement ID.
+5. Keep all existing quality gates green after future changes. Never create standalone Air Conditioning content. Do not re-open the closed ≤3 inbound link-equity tier without a fresh crawl proving a starved indexable group.
