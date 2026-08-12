@@ -170,7 +170,8 @@ If your plaster ceiling is showing damp spots, don't wait for it to collapse and
 // Extra long-form blog posts (kept in a separate file for readability).
 // Appended to `blogPosts` so downstream imports remain a single source of truth.
 import { extraBlogPosts } from "@/config/blog-data-extra";
-(blogPosts as BlogPost[]).push(...extraBlogPosts);
+import { batch4BlogPosts } from "@/config/blog-data-batch4";
+(blogPosts as BlogPost[]).push(...extraBlogPosts, ...batch4BlogPosts);
 
 export const blogCategories = [
   "All",

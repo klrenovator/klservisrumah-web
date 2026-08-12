@@ -429,7 +429,7 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Loose or Sagging Metal Gate Hinges — https://www.klservisrumah.my/problems/loose-metal-gate-hinges
 - Sliding Window Stuck or Jamming — https://www.klservisrumah.my/problems/stuck-sliding-window
 
-## Guides & Articles (18)
+## Guides & Articles (33)
 - 5 Tips For Choosing Modern Home Paint Colors in Malaysia — https://www.klservisrumah.my/blog/5-tips-choosing-paint-colors-malaysia
 - How To Fix A Leaking Bathroom Ceiling Without Hacking Tiles — https://www.klservisrumah.my/blog/how-to-fix-leaking-ceiling-without-tile-hacking
 - When to Repaint Your House in Malaysia (Signs, Frequency & Budget) — https://www.klservisrumah.my/blog/when-to-repaint-your-house-malaysia
@@ -448,6 +448,21 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Auto Gate Installation Guide for Malaysian Homes — https://www.klservisrumah.my/blog/auto-gate-installation-guide-malaysia
 - Condo Repaint vs Landed Terrace House Repaint: What's Different? — https://www.klservisrumah.my/blog/when-to-repaint-condo-vs-repaint-terrace-house
 - How to Hire an Honest Home Contractor in Malaysia (Red Flag Guide) — https://www.klservisrumah.my/blog/how-to-hire-honest-contractor-malaysia
+- Plaster Ceiling Design & Build in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/plaster-ceiling-design-build-kl
+- Flat Plaster Ceiling Installation in KL & Selangor — https://www.klservisrumah.my/blog/flat-plaster-ceiling-kl
+- Tiered & L-Box Ceiling Installation in KL & Selangor — https://www.klservisrumah.my/blog/tiered-l-box-ceiling-kl
+- Wall & Ceiling Skim Coat in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/wall-ceiling-skim-coat-kl
+- Wall Skim Coating in KL & Selangor — https://www.klservisrumah.my/blog/wall-skim-coating-kl
+- Ceiling Skim Coating in KL & Selangor — https://www.klservisrumah.my/blog/ceiling-skim-coating-kl
+- Vinyl, SPC & Laminate Flooring in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/vinyl-spc-laminate-flooring-kl
+- SPC Click-Lock Flooring Installation in KL & Selangor — https://www.klservisrumah.my/blog/spc-click-lock-flooring-kl
+- Laminate Flooring Installation in KL & Selangor — https://www.klservisrumah.my/blog/laminate-flooring-kl
+- Epoxy & Polyurethane Flooring in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/epoxy-polyurethane-flooring-kl
+- Self-Levelling Epoxy Floor in KL & Selangor — https://www.klservisrumah.my/blog/self-levelling-epoxy-floor-kl
+- Flake / Quartz Broadcast Epoxy in KL & Selangor — https://www.klservisrumah.my/blog/flake-quartz-broadcast-epoxy-kl
+- Roof Repair & Waterproofing in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/roof-repair-waterproofing-kl
+- Roof Leak Diagnosis & Repair in KL & Selangor — https://www.klservisrumah.my/blog/roof-leak-diagnosis-repair-kl
+- Ridge Re-Bedding & Re-Pointing in KL & Selangor — https://www.klservisrumah.my/blog/ridge-re-bedding-re-pointing-kl
 
 ## Free Estimator Tools
 Trilingual, single-page estimators priced from the published rate list.
@@ -524,5 +539,5 @@ KL Servis Rumah publishes fair, upfront pricing benchmarked against the Klang Va
 
 ## Scale
 - 28 services · 112 sub-services
-- 37 area pages · 77 problem pages · 18 articles
-- 3,638 indexable pages listed in the sitemap
+- 37 area pages · 77 problem pages · 33 articles
+- 3,683 indexable pages listed in the sitemap
