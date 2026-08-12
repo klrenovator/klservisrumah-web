@@ -34,6 +34,7 @@ import { getSpecialtySilo } from "@/config/topical-authority-map";
 import { blogPosts } from "@/config/blog-data";
 import { blogI18n, localizedBlogPath } from "@/config/blog-i18n";
 import { problemPages } from "@/config/problem-data";
+import { getLocalizedProblem } from "@/lib/problem-i18n";
 
 /**
  * Fully-localised, indexable specialty page (`/ms/services/<s>/<sub>`,
@@ -347,7 +348,12 @@ function RelatedSpecialtyContent({
     .filter(Boolean);
 
   const relatedProblems = problemSlugs
-    .map((slug) => problemPages.find((p) => p.slug === slug))
+    .map((slug) => {
+      const problem = problemPages.find((p) => p.slug === slug);
+      if (!problem) return null;
+      const localized = getLocalizedProblem(problem, locale);
+      return { slug, title: localized.title, symptom: localized.symptom };
+    })
     .filter(Boolean)
     .slice(0, 4);
 

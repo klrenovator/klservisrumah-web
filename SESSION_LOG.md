@@ -2075,3 +2075,31 @@ Continued exactly from the final **Next Session — START HERE** section of `AI_
 - Business/translator QA of all 224 localized specialty pages remains owner-side; after QA + deploy, re-measure GSC/Bing coverage of the localized trees and MS/ZH pilot conversions before the owner-only H3 full-rollout decision.
 - Never create standalone Air Conditioning content.
 # Epoxy Flooring tranche complete
+
+# Problem-page translations + RelatedProblems locale rendering
+
+## What was done
+Continued from the final "Next Session — START HERE" section of AI_OPTIMIZATION_ROADMAP.md.
+
+1. **Translated 34 problem-page bodies** from `config/problem-data-extra.ts` into native MS and ZH in `config/problem-body-i18n.ts` (43 → 77 entries per locale). Covers: Painting, Plumbing, Ceiling, Waterproofing, Handyman, Electrical, Tiling, Flooring, Skim Coat, Roofing, Carpentry, Locksmith, Lighting, Ceiling Fan, Epoxy, Window Repair, Cleaning, Deep Cleaning, Post-Renovation Cleaning, CCTV, Autogate, and Welding problem slugs.
+
+2. **Improved RelatedProblems rendering on MS/ZH specialty pages** — `RelatedSpecialtyContent` now calls `getLocalizedProblem()` for each linked problem, showing localized titles and symptoms instead of English.
+
+3. **Verified all RelatedProblems/RelatedBlogs links** across all 112 specialty tranches: 77 problem slugs and 17 blog slugs all resolve correctly (0 missing).
+
+## Verification
+- PASS: lint (0 errors/warnings), type-check, topical map (28/28 services; 112 typed relationships), specialty locale gate (112 × MS/ZH = 224 native blocks), i18n parity (1,074 × 3), estimator suite (263,293 assertions), npm audit (0 vulnerabilities).
+- PASS: production build (4,567 static pages), HTML audit (4,559 pages, 0 fatal / 0 warnings), SEO head audit (3,520 indexable pages; 0 warnings), metadata consistency SEO audit.
+
+## Files changed
+- `config/problem-body-i18n.ts` (+34 MS + 34 ZH entries)
+- `components/sections/locale-specialty-page.tsx` (localized RelatedProblems rendering)
+- `docs/seo-audit-report.md`
+- `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`
+
+## Next session
+- Problem-page body translations are COMPLETE (77 × MS + ZH = 154 translated bodies).
+- Next in-repo milestone: real locale problem routes (154) — still blocked pending GSC data consolidation.
+- Non-blocked backlog: translate remaining `problemI18n` overrides in `config/problem-data.ts`, improve the `RelatedProblems` client component for MS/ZH mode.
+- Business/translator QA of all 224 localized specialty pages + 154 problem bodies remains owner-side.
+- Never create standalone Air Conditioning content.

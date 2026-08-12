@@ -445,6 +445,347 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
       q: "Berapa lama pagar tingkap biasanya tahan sebelum berkarat?",
       a: "Dengan rawatan anti-karat yang betul, pagar boleh tahan 5–10 tahun. Tanpa rawatan, karat boleh muncul dalam masa 1–2 tahun."
     }
+  },
+  // ── Extra problem pages (from problem-data-extra.ts) ──────────────────
+  "yellowing-white-walls": {
+    symptom: "Dinding putih bertukar krim, kuning atau kotor selepas 12–36 bulan walaupun tidak disentuh.",
+    causes: ["Cat emulsi murah dengan kestabilan UV yang rendah", "Asap rokok atau deposit gris dapur", "Pendedahan matahari pada dinding menghadap barat", "Sealer kuning meresap melalui lapisan atas"],
+    solutions: ["Bersihkan dinding dengan detergen lembut untuk membuang lapisan permukaan", "Sapukan primer penyekat kotoran sebelum mengecat semula", "Cat semula dengan akrilik premium stabil-UV dan VOC rendah", "Tambah pengudaraan di dapur dan kawasan merokok"],
+    whenToCall: ["Kuning kembali dalam masa 12 bulan selepas mengecat", "Pembersihan tidak memulihkan putih asal", "Hanya dinding tertentu (berhampiran dapur atau tingkap) terjejas"],
+    localFaq: {
+      q: "Mengapa dinding putih saya cepat bertukar kuning?",
+      a: "Biasanya gabungan cat murah (kestabilan UV rendah), gris dapur di udara, asap rokok dan pendedahan matahari. Cat akrilik premium lebih tahan putih."
+    }
+  },
+  "paint-cracking-hairline-walls": {
+    symptom: "Retak halus seperti labah-labah muncul pada dinding yang dicat, sering di sekitar bingkai tingkap, pintu atau persimpangan siling-dinding.",
+    causes: ["Penetapan bangunan biasa (teruk dalam 2–5 tahun pertama)", "Skim-coat terlalu tebal atau terlalu cepat", "Pergerakan suhu dan kelembapan", "Pengecutan plaster di bawah"],
+    solutions: ["Lebarkan retak sedikit dan isi dengan pengisi akrilik fleksibel", "Sapukan pita gentian kaca untuk retak lebih besar", "Skim atas pembaikan dengan lapisan plaster nipis", "Primer dan cat semula dengan cat atas akrilik fleksibel"],
+    whenToCall: ["Retak lebih lebar dari rambut (1 mm+)", "Retak yang sama terbuka semula selepas dicat", "Retak berjalan secara pepenjuru merentasi kawasan besar"],
+    localFaq: {
+      q: "Adakah retak halus bermakna rumah saya rosak struktur?",
+      a: "Hampir tidak pernah. Retak kosmetik adalah penetapan biasa dan pergerakan cat — retak struktur sebenar biasanya lebih lebar (5 mm+), pepenjuru dan semakin teruk."
+    }
+  },
+  "leaking-bathroom": {
+    symptom: "Lantai di bawah bilik mandi tingkat atas basah atau lembap, atau dinding bersebelahan menunjukkan kesan perang dan cat berbuih.",
+    causes: ["Membran kalis air lantai bilik mandi retak", "Silikon gagal di sekitar skrin mandi atau tab mandi", "Paip tersembunyi bocor di dalam dinding", "Grout jubin rosak membenarkan air masuk ke papak"],
+    solutions: ["Ujian tekanan paip untuk kenal pasti kebocoran paip atau papak", "Grout PU papak konkrit dari bawah (tanpa pecah jubin)", "Silikon semula skrin mandi dan sendi tab mandi", "Membran semula penuh dengan pecah jubin (kes teruk)"],
+    whenToCall: ["Siling di bawah bilik mandi menitis", "Cat dinding bersebelahan bilik mandi berbuih", "Tompok basah semakin besar minggu demi minggu"],
+    localFaq: {
+      q: "Adakah saya perlu pecahkan jubin untuk membaiki kebocoran bilik mandi?",
+      a: "Biasanya tidak. Dalam kebanyakan kes kami boleh mengedap kebocoran dari bawah menggunakan grouting PU bertekanan tinggi — tanpa kerosakan jubin."
+    }
+  },
+  "low-water-pressure": {
+    symptom: "Aliran shower lemah, paip menitis, atau pemanas air sukar berfungsi kerana tekanan air masuk terlalu rendah.",
+    causes: ["Penapis inlet tersumbat pada pemanas air atau kepala shower", "Paip galvanis berkarat mengecilkan diameter aliran", "Pam penggalak atau tangki tekanan gagal", "Masalah bekalan utama SYABAS (jarang tetapi mungkin)"],
+    solutions: ["Bersihkan atau ganti kepala shower dan penapis inlet", "Nyahskala pemanas air", "Gantikan paip berkarat dengan PPR/PEX", "Pasang atau ganti pam penggalak tekanan"],
+    whenToCall: ["Hanya satu paip terjejas (mungkin tersumbat tempatan)", "Seluruh rumah terjejas (mungkin pam atau utama)", "Tekanan turun mendadak selepas kerja berdekatan"],
+    localFaq: {
+      q: "Perlukah saya pasang pam penggalak?",
+      a: "Jika rumah anda 2+ tingkat atau tekanan rendah di tingkat atas, pam penggalak biasanya penyelesaian yang tepat. Pemasangan biasa: RM 900 hingga RM 2,200."
+    }
+  },
+  "clogged-drain": {
+    symptom: "Air mengalir perlahan, bertakung di singki atau tab mandi, atau naik semula apabila menggunakan beberapa paip serentak.",
+    causes: ["Pembinaan gris dapur di P-trap dan paip mendatar", "Pengkumpulan rambut di perangkap longkang bilik mandi", "Objek asing (tisu basah, produk sanitasi) dalam paip tandas", "Paip rosak atau tenggelam menyebabkan sampah terkumpul"],
+    solutions: ["Snake / rod manual perangkap dan paip", "Rawatan longkang berasaskan enzim (selamat untuk paip)", "Jet air bertekanan tinggi (untuk dapur degil)", "Inspeksi kamera + pembaikan paip untuk kerosakan struktur"],
+    whenToCall: ["Beberapa longkang naik serentak", "Air naik dari longkang lain apabila flush", "Bau kumbahan di dalam rumah"],
+    localFaq: {
+      q: "Adakah bahan kimia pembuka longkang selamat untuk paip saya?",
+      a: "Bahan kaustik kuat boleh merosakkan sendi PVC lama dan tidak selamat untuk ruang tertutup. Kami cadangkan pembersihan mekanikal ditambah rawatan enzim — lebih selamat dan tahan lama."
+    }
+  },
+  "toilet-not-flushing": {
+    symptom: "Tandas flush lemah, tidak mengosongkan mangkuk dalam satu tekan, atau air terus mengalir selepas flush.",
+    causes: ["Injap flapper atau mekanisme flush haus", "Rim jet tersumbat di tepi mangkuk", "Sumbatan separa di S-trap atau paip sisa", "Injap isi rosak (pemasangan apung)"],
+    solutions: ["Ganti flapper, injap isi atau kartrij dual-flush", "Nyahskala rim jet dengan cuka atau CLR", "Snake S-trap dan paip sisa", "Kit bina semula tangki penuh untuk tandas lama"],
+    whenToCall: ["Sudah ganti flapper tetapi masih mengalir", "Aliran air ke mangkuk lemah dari semua arah", "Perlu beberapa flush untuk mengosongkan"],
+    localFaq: {
+      q: "Bolehkah saya membaiki mekanisme flush sendiri?",
+      a: "Mengganti flapper mudah dan boleh dibuat sendiri. Masalah injap isi atau S-trap biasanya memerlukan tukang paip."
+    }
+  },
+  "sagging-ceiling": {
+    symptom: "Papan siling nampak kendur, bergelombang atau terasa lembut apabila ditekan.",
+    causes: ["Kebocoran air berpanjangan dari atas", "Kelembapan melemahkan papan plaster", "Framing kayu rosak atau reput", "Papan dipasang tidak betul (jarak joist terlalu jauh)"],
+    solutions: ["Hentikan punca air terlebih dahulu", "Buang papan rosak dan keringkan kawasan", "Ganti papan plaster baru dan skim sendi", "Primer dan cat semula selepas kering"],
+    whenToCall: ["Siling terasa lembut atau span apabila disentuh", "Kenduran semakin ketara", "Kesan air masih aktif"],
+    localFaq: {
+      q: "Bolehkah siling kendur runtuh?",
+      a: "Siling yang sangat lembap dan berat boleh runtuh jika dibiarkan. Jika papan terasa lembut atau air menitis, hubungi tukang segera."
+    }
+  },
+  "ceiling-cornice-crack": {
+    symptom: "Retak muncul di antara siling dan dinding, di sepanjang cornice atau L-box.",
+    causes: ["Penetapan bangunan menyebabkan pergerakan sendi", "Compound sendi kering dan mengecut", "Pemasangan cornice tidak betul", "Perubahan suhu dan kelembapan bermusim"],
+    solutions: ["Buka compound lama di sendi", "Sapukan compound sendi fleksibel baru", "Pasang pita gentian kaca untuk kekuatan", "Cat semula selepas kering"],
+    whenToCall: ["Retak terbuka semula setiap kali dicat", "Retak lebih dari 2 mm lebar", "Cornice mula longgar dari dinding"],
+    localFaq: {
+      q: "Mengapa retak cornice selalu kembali?",
+      a: "Kerana pergerakan bangunan semula jadi. Penyelesaian tahan lama memerlukan compound fleksibel dan pita gentian kaca, bukan hanya filler biasa."
+    }
+  },
+  "balcony-leak-condo": {
+    symptom: "Air menitis ke unit di bawah dari balkoni, atau dinding dalaman berhampiran balkoni menunjukkan kesan air.",
+    causes: ["Membran kalis air balkoni gagal", "Retak pada screed balkoni", "Pintu gelangsar balkoni bocor di ambang", "Saliran balkoni tersumbat"],
+    solutions: ["Ujian banjir untuk kenal pasti titik kebocoran", "PU grouting dari bawah jika boleh", "Sapukan membran kalis air baru di atas screed", "Tukar atau baiki sealant pintu gelangsar"],
+    whenToCall: ["Jiran di bawah mengadu air menitis", "Dinding dalaman mula berbuih", "Balkoni sentiasa basah selepas hujan"],
+    localFaq: {
+      q: "Siapa bertanggungjawab untuk kebocoran balkoni kondo?",
+      a: "Biasanya pemilik unit (ruang persendirian). Untuk kebocoran dari kawasan bersama, JMB/MC mungkin bertanggungjawab. Semak strata title."
+    }
+  },
+  "concrete-slab-crack-leak": {
+    symptom: "Retak pada papak konkrit menyebabkan air hujan atau air guna masuk ke tingkat bawah.",
+    causes: ["Konkrit retak kerana pergerakan struktur", "Waterproofing atas papak telah luput", "Tiada membran kalis air yang mencukupi", "Beban berat di atas papak"],
+    solutions: ["Isi retak dengan epoxy injection", "PU grouting bertekanan tinggi dari bawah", "Sapukan membran kalis air baru di atas", "Tambah lapisan screed pelindung"],
+    whenToCall: ["Retak boleh dilihat pada papak", "Kebocoran berulang selepas hujan lebat", "Waterproofing lama sudah lebih 5 tahun"],
+    localFaq: {
+      q: "Bolehkah retak konkrit dibaiki secara kekal?",
+      a: "Retak struktur boleh distabilkan dengan epoxy injection. Untuk kebocoran aktif, PU grouting adalah kaedah paling berkesan di Malaysia."
+    }
+  },
+  "curtain-track-falling": {
+    symptom: "Rel tirai longgar dari siling atau dinding, bracket jatuh, atau tirai terjatuh.",
+    causes: ["Skrup ditarik keluar dari drywall", "Bracket dipasang hanya pada plasterboard tanpa anchor", "Beban tirai terlalu berat untuk bracket", "Plaster siling rapuh atau rosak"],
+    solutions: ["Tanggalkan bracket lama dan tampal lubang", "Pasang anchor berat atau toggle bolt baru", "Kalihkan bracket ke kedudukan joist atau rasuk", "Pasang semula tirai dengan bracket yang diperkuat"],
+    whenToCall: ["Bracket jatuh berulang kali", "Siling terasa rapuh di kawasan pemasangan", "Tirai terlalu berat untuk sistem semasa"],
+    localFaq: {
+      q: "Berapa kos untuk memasang semula rel tirai?",
+      a: "Biasanya RM 150 hingga RM 350 termasuk bracket baru dan anchor, bergantung pada bilangan tingkap dan jenis siling."
+    }
+  },
+  "door-hinge-sagging": {
+    symptom: "Pintu tergantung rendah, menggeser lantai, atau engsel nampak longgar atau berkarat.",
+    causes: ["Skrup engsel longgar dari penggunaan", "Kayu pintu mengembang kerana kelembapan", "Engsel tidak selari selepas pemasangan", "Bingkai pintu bergerak"],
+    solutions: ["Ketatkan atau ganti skrup engsel", "Bersihkan dan minyak engsel", "Ratakan pintu jika menggeser lantai", "Pasang shim pada engsel untuk melaraskan"],
+    whenToCall: ["Pintu menggeser lantai dengan kuat", "Engsel berbunyi atau tersangkut", "Pintu tidak boleh ditutup dengan rapat"],
+    localFaq: {
+      q: "Bolehkah saya betulkan pintu yang tergantung sendiri?",
+      a: "Mengkencangkan skrup dan meminyak engsel boleh dilakukan sendiri. Untuk pelarasan bingkai atau shim, lebih baik hubungi handyman."
+    }
+  },
+  "old-condo-full-refurbishment": {
+    symptom: "Kondominium lama (15+ tahun) memerlukan pengubahsuaian penuh — lantai, dinding, paip, elektrik dan perabot semuanya telah usang.",
+    causes: ["Bahan asal sudah mencapai had jangka hayat", "Reka bentuk lama tidak sesuai dengan gaya hidup semasa", "Paip dan pendawaian elektrik lama tidak selamat", "Jubin, cat dan perabot sudah rosak teruk"],
+    solutions: ["Rangka pelan pengubahsuaian menyeluruh", "Ganti paip dan pendawaian elektrik", "Renovasi dapur dan bilik mandi penuh", "Pasang lantai baru, cat dan perabot"],
+    whenToCall: ["Unit berusia lebih 15 tahun", "Anda baru membeli kondominium second-hand", "Paip berkarat atau pendawaian lama masih digunakan"],
+    localFaq: {
+      q: "Berapa kos pengubahsuaian penuh kondominium di KL?",
+      a: "Biasanya RM 60,000 hingga RM 150,000+ untuk unit 1,000–1,200 kaki persegi, bergantung pada skop dan kualiti bahan."
+    }
+  },
+  "power-tripping-frequently": {
+    symptom: "Elektrik terputus kerap, MCCB/RCCB trip setiap kali menggunakan peralatan tertentu.",
+    causes: ["Litar berlebihan (terlalu banyak peralatan pada satu litar)", "Kebocoran arus ke tanah (earth leakage)", "Pendawaian lama atau longgar", "Peralatan rosak menyebabkan litar pintas"],
+    solutions: ["Kenal pasti peralatan yang menyebabkan trip", "Imbang beban merentasi litar yang berbeza", "Ganti MCCB/RCCB jika rosak", "Periksa dan baiki pendawaian lama"],
+    whenToCall: ["Trip berlaku setiap hari", "Hanya berlaku apabila peralatan tertentu dihidupkan", "Unit lama dengan pendawaian asal"],
+    localFaq: {
+      q: "Adakah berbahaya jika elektrik selalu trip?",
+      a: "Trip adalah mekanisme keselamatan. Jika kerap berlaku, ia menunjukkan masalah yang perlu diperiksa oleh elektrik bertauliah sebelum ia menjadi bahaya."
+    }
+  },
+  "water-heater-cold": {
+    symptom: "Pemanas air tidak memanaskan air — air keluar sejuk walaupun sudah menunggu beberapa minit.",
+    causes: ["Elemen pemanas rosak atau terbakar", "Termostat gagal atau tidak dikalibrasi", "MCB pemanas air trip", "Pendawaian longgar atau terbakar"],
+    solutions: ["Uji elemen pemanas dengan multimeter", "Ganti termostat jika perlu", "Reset atau ganti MCB", "Periksa pendawaian dan sambungan"],
+    whenToCall: ["Air sejuk sepenuhnya", "Pemanas berbunyi pelik", "MCB trip setiap kali pemanas dihidupkan"],
+    localFaq: {
+      q: "Berapa lama pemanas air biasa tahan?",
+      a: "Pemanas air penyimpanan biasa tahan 5–8 tahun di Malaysia. Pemanas serta-merta (tankless) tahan 8–12 tahun dengan penyelenggaraan biasa."
+    }
+  },
+  "loose-hollow-tiles": {
+    symptom: "Jubin lantai berbunyi berongga apabila diketuk, longgar atau mula terangkat di tepi.",
+    causes: ["Perekat jubin tidak melekat dengan baik semasa pemasangan", "Kelembapan di bawah jubin melemahkan pelekat", "Papakan tidak rata menyebabkan ruang kosong", "Beban berat atau hentakan pada jubin"],
+    solutions: ["Korek jubin dengan hati-hati", "Bersihkan permukaan dan sapukan pelekat jubin baru", "Pasang semula jubin dan biarkan kering", "Grout semula sendi selepas pelekat kering"],
+    whenToCall: ["Jubin berongga di beberapa kawasan", "Jubin mula terangkat", "Bunyi berongga jelas apabila berjalan di atasnya"],
+    localFaq: {
+      q: "Bolehkah jubin berongga dibaiki tanpa buang semua?",
+      a: "Jika hanya beberapa jubin, ya — jubin individu boleh dikeluarkan dan dipasang semula. Tetapi jika lebih 20% berongga, pemasangan semula penuh mungkin diperlukan."
+    }
+  },
+  "cracked-tile-grout": {
+    symptom: "Grout di antara jubin retak, hancur atau hilang, meninggalkan celah terbuka.",
+    causes: ["Pergerakan struktur atau penetapan bangunan", "Grout berkualiti rendah atau pemasangan buruk", "Kelembapan dan kelembapan melemahkan grout", "Pembersihan dengan bahan kimia keras"],
+    solutions: ["Buang grout lama dengan alat grout saw", "Bersihkan celah dan biarkan kering", "Sapukan grout baru yang sesuai", "Tutup dengan pengedap grout selepas kering"],
+    whenToCall: ["Grout hilang di beberapa sendi", "Air masuk melalui grout retak", "Grout berubah warna walaupun dibersihkan"],
+    localFaq: {
+      q: "Bolehkah saya ganti grout sendiri?",
+      a: "Untuk kawasan kecil, ya — alat grout saw dan grout baru tersedia di kedai hardware. Untuk keseluruhan bilik mandi, lebih baik serahkan kepada profesional."
+    }
+  },
+  "plaster-ceiling-hairline-crack": {
+    symptom: "Retak halus di permukaan siling plaster, sering di sekitar lampu atau di tengah siling.",
+    causes: ["Penetapan bangunan biasa dalam 2–5 tahun pertama", "Compound sendi tidak mencukupi atau kering", "Pemasangan pita sendi yang tidak betul", "Pergerakan haba dan kelembapan"],
+    solutions: ["Buka compound lama di sepanjang retak", "Sapukan compound baru dengan pita gentian kaca", "Skim dan pasir sehingga rata", "Cat semula selepas kering"],
+    whenToCall: ["Retak kelihatan jelas dari bawah", "Retak terbuka semula selepas setiap kali dicat", "Beberapa retak muncul di kawasan berbeza"],
+    localFaq: {
+      q: "Adakah retak halus siling berbahaya?",
+      a: "Retak halus pada plaster biasanya kosmetik dan tidak berbahaya. Ia berlaku secara semula jadi akibat pergerakan bangunan. Retak lebar (5mm+) perlu diperiksa."
+    }
+  },
+  "uneven-wall-surface-skim": {
+    symptom: "Dinding nampak bergelombang, tidak rata apabila cahaya jatuh merentasi permukaan, atau terasa tidak licin.",
+    causes: ["Plaster asal tidak rata", "Skim-coat lama telah pudar atau rosak", "Pembaikan tampal yang tidak dicampur dengan baik", "Penyusutan tidak sekata pada lapisan plaster"],
+    solutions: ["Kikis permukaan lama yang longgar", "Sapukan skim-coat baru dalam lapisan nipis", "Pasir sehingga rata selepas kering", "Primer dan cat semula"],
+    whenToCall: ["Cahaya mendedahkan ketidakrataan dinding", "Dinding terasa kasar atau bergelombang", "Cat baru tidak kelihatan rata"],
+    localFaq: {
+      q: "Berapa kos skim-coat satu bilik?",
+      a: "Biasanya RM 400 hingga RM 1,200 untuk satu bilik, bergantung pada luas dinding dan tahap ketidakrataan."
+    }
+  },
+  "vinyl-flooring-lifting-edges": {
+    symptom: "Tepi vinyl flooring terangkat, melengkung atau tidak lagi melekat pada lantai.",
+    causes: ["Pelekat gagal kerana kelembapan atau haba", "Subfloor tidak rata sebelum pemasangan", "Kelembapan naik dari papak konkrit", "Pemasangan tanpa expansion gap yang mencukupi"],
+    solutions: ["Bersihkan kawasan terangkat dan keringkan", "Sapukan pelekat vinyl baru di bawah tepi", "Tekan dengan berat sehingga pelekat kering", "Ganti helaian yang rosak teruk"],
+    whenToCall: ["Beberapa tepi mula terangkat", "Vinyl berbunyi 'klik' apabila diinjak", "Kelembapan kelihatan di bawah vinyl"],
+    localFaq: {
+      q: "Mengapa vinyl flooring terangkat di Malaysia?",
+      a: "Kelembapan tinggi dan suhu tropika menyebabkan pelekat gagal lebih cepat berbanding negara beriklim sejuk. Pastikan subfloor kering sebelum pemasangan."
+    }
+  },
+  "cracked-roof-tiles": {
+    symptom: "Jubin bumbung retak, pecah atau hilang, membenarkan air hujan masuk ke siling atau dinding.",
+    causes: ["Bahan bumbung telah mencapai had jangka hayat", "Hentaman objek (dahan pokok, batu)", "Pergerakan struktur bumbung", "Penambahan beban (pasang panel solar, dll)"],
+    solutions: ["Ganti jubin retak dengan yang baru", "Periksa dan baiki underlayment jika rosak", "Tukar flashing di sekitar cerobong atau vent", "Bersihkan dan periksa bumbung secara berkala"],
+    whenToCall: ["Kebocoran aktif semasa hujan", "Jubin boleh dilihat retak dari bawah", "Bumbung berusia lebih 15 tahun"],
+    localFaq: {
+      q: "Berapa kos untuk ganti jubin bumbung?",
+      a: "Biasanya RM 250 hingga RM 800 untuk pembaikan kecil. Bumbung penuh memerlukan pemeriksaan terlebih dahulu — kos berbeza mengikut jenis bumbung."
+    }
+  },
+  "cabinet-door-sagging": {
+    symptom: "Pintu kabinet tergantung rendah, tidak selari atau engsel longgar menyebabkan pintu tidak ditutup rapat.",
+    causes: ["Skrup engsel longgar dari penggunaan biasa", "Pintu kabinet terlalu berat untuk engsel asal", "Kelembapan menyebabkan pintu mengembang", "Pemasangan asal tidak betul"],
+    solutions: ["Ketatkan atau ganti skrup engsel", "Laraskan engsel untuk penjajaran semula", "Tambah engsel ketiga untuk pintu berat", "Ganti engsel dengan gred lebih berat jika perlu"],
+    whenToCall: ["Pintu tidak boleh ditutup rapat walaupun dilaras", "Engsel berbunyi atau terasa longgar", "Pintu kelihatan condong"],
+    localFaq: {
+      q: "Bolehkah pintu kabinet dibaiki tanpa ganti keseluruhan?",
+      a: "Ya, dalam kebanyakan kes. Mengencangkan engsel, menambah engpel sokongan atau melaraskan biasanya mencukupi tanpa perlu ganti keseluruhan pintu."
+    }
+  },
+  "wardrobe-door-jamming": {
+    symptom: "Pintu almari tersangkut, bergerak dengan susah atau keluar dari rel.",
+    causes: ["Rel kotor atau berkarat", "Roda nylon haus atau pecah", "Pintu mengembang kerana kelembapan", "Bingkai almari tidak tegak"],
+    solutions: ["Bersihkan dan licinkan rel", "Ganti roda nylon yang rosak", "Ratakan pintu jika mengembang", "Laraskan bracket untuk penjajaran"],
+    whenToCall: ["Pintu keluar dari rel berulang kali", "Bunyi menggeser yang kuat", "Pintu tidak boleh dibuka sepenuhnya"],
+    localFaq: {
+      q: "Berapa kos untuk baiki pintu almari tersangkut?",
+      a: "Biasanya RM 200 hingga RM 500 termasuk penggantian roda dan pelarasan, bergantung pada jenis almari."
+    }
+  },
+  "digital-smart-lock-installation": {
+    symptom: "Kunci pintar tidak berfungsi, bateri cepat habis, WiFi/Bluetooth tidak stabil atau kunci tidak boleh dikunci/dibuka.",
+    causes: ["Bateri lemah atau habis", "Sambungan WiFi/Bluetooth lemah", "Software perlu dikemas kini", "Pemasangan tidak betul pada pintu"],
+    solutions: ["Ganti bateri dengan yang baru", "Periksa dan kukuhkan sambungan rangkaian", "Kemas kini firmware melalui aplikasi pengeluar", "Pasang semula dan kalibrasi kunci"],
+    whenToCall: ["Kunci langsung tidak berfungsi", "Bateri habis dalam masa kurang 1 bulan", "Kunci tidak mengesan jari/kad dengan betul"],
+    localFaq: {
+      q: "Adakah kunci pintar selamat untuk rumah di Malaysia?",
+      a: "Ya, kunci pintar gred rumah (Yale, Samsung, Xiaomi, Philips) selamat untuk kegunaan harian. Pastikan pilih model yang sesuai dengan ketebalan pintu anda."
+    }
+  },
+  "locked-out-of-house": {
+    symptom: "Tidak boleh masuk ke rumah kerana kunci hilang, patah dalam lubang kunci, atau kunci rosak.",
+    causes: ["Kunci hilang atau dicuri", "Kunci patah di dalam silinder", "Mekanisme kunci rosak", "Pintu terkunci automatik tanpa kunci"],
+    solutions: ["Hubungi tukang kunci bertauliah", "Gunakan teknik kunci tanpa kerosakan (jika mungkin)", "Ganti silinder kunci jika perlu", "Pasang kunci baru selepas masuk"],
+    whenToCall: ["Kunci hilang sepenuhnya", "Kunci patah dalam lubang kunci", "Kunci rosak selepas cubaan pecah masuk"],
+    localFaq: {
+      q: "Berapa kos untuk panggil tukang kunci kecemasan?",
+      a: "Khosmestik biasa: RM 150 hingga RM 350 untuk rumah. Harga berbeza mengikut masa (lebih mahal pada waktu malam/hujung minggu) dan jenis kunci."
+    }
+  },
+  "downlight-flickering": {
+    symptom: "Downlight berkelip-kelip, menyala dan padam, atau tidak menyala dengan terang.",
+    causes: ["Driver LED rosak atau tidak serasi", "Sambungan wayar longgar di terminal", "Dimmer tidak serasi dengan lampu LED", "Lampu LED hampir habis jangka hayat"],
+    solutions: ["Ganti driver LED dengan yang serasi", "Periksa dan ketatkan semua sambungan wayar", "Tukar dimmer kepada model LED-compatible", "Gantikan lampu LED yang rosak"],
+    whenToCall: ["Kelip berlaku setiap hari", "Beberapa lampu berkelip serentak", "Lampu terasa panas luar biasa"],
+    localFaq: {
+      q: "Adakah lampu berkelip berbahaya?",
+      a: "Kelip biasanya menunjukkan sambungan longgar atau driver rosak. Sambungan longgar boleh menyebabkan panas dan risiko kebakaran — sila diperiksa segera."
+    }
+  },
+  "shower-screen-water-leak": {
+    symptom: "Air bocor dari bawah atau tepi skrin mandi (shower screen), membasahkan lantai bilik mandi.",
+    causes: ["Silikon di tepi skrin telah gagal", "Kaca retak atau bengkok", "Rel tidak rata", "Longkang lantai tersumbat"],
+    solutions: ["Buang silikon lama dan sapukan baru", "Ganti kaca jika retak", "Laraskan rel supaya rata", "Bersihkan longkang lantai"],
+    whenToCall: ["Air bocor setiap kali mandi", "Kaca retak kelihatan", "Beberapa skrin mempunyai masalah yang sama"],
+    localFaq: {
+      q: "Bolehkah skrin mandi dibaiki tanpa ganti keseluruhan?",
+      a: "Ya. Dalam kebanyakan kes, hanya perlu tukar silikon dan laraskan rel. Penggantian penuh hanya diperlukan jika kaca rosak."
+    }
+  },
+  "stubborn-bathroom-limescale": {
+    symptom: "Limescale keras pada paip, kepala shower, skrin kaca atau jubin yang tidak boleh dibersihkan dengan pencuci biasa.",
+    causes: ["Air keras (high mineral content) di kawasan anda", "Pembinaan mineral berpanjangan tanpa pembersihan", "Permukaan krom atau kaca berpori", "Produk pembersihan salah yang tidak berkesan"],
+    solutions: ["Bersihkan mendalam dengan penyahskala berasid ringan", "Steam clean grout dan jubin", "Polish krom dan kaca dengan compound khas", "Cadangkan water softener untuk pencegahan jangka panjang"],
+    whenToCall: ["Pembersihan biasa tidak lagi berkesan", "Bersedia untuk pameran/jualan hartanah", "Mahukan pembersihan profesional sebelum Hari Raya / CNY"],
+    localFaq: {
+      q: "Bagaimana mencegah limescale kembali?",
+      a: "Lap kaca shower selepas setiap penggunaan, bersihkan paip setiap minggu, dan pertimbangkan water softener untuk perlindungan jangka panjang."
+    }
+  },
+  "move-out-condo-deep-clean": {
+    symptom: "Anda berpindah keluar dan perlu kondominium dibersihkan ke standard yang diterima oleh pemilik/ejen untuk pemulangan deposit.",
+    causes: ["Kesan penggunaan penyewa biasa", "Pembinaan gris di dapur", "Pembinaan limescale di bilik mandi", "Kesan pada dinding dari perabot dan cangkuk"],
+    solutions: ["Pembersihan mendalam bilik demi bilik", "Pembersihan tompok dinding untuk kesan calar", "Nyahgris dapur termasuk dapur dan hood", "Pembersihan mendalam bilik mandi dengan penyahskala", "Jalan akhir dengan pemilik/ejen"],
+    whenToCall: ["Kurang dari seminggu sebelum serahan kunci", "Mahukan pemulangan deposit maksimum", "Unit bersaiz 800+ kaki persegi"],
+    localFaq: {
+      q: "Adakah anda juga menguruskan sentuhan dinding?",
+      a: "Pembuangan kesan calar asas termasuk. Pengecatan semula dikutip secara berasingan jika kerosakan dinding melebihi pembersihan."
+    }
+  },
+  "cement-splatter-tile-clean": {
+    symptom: "Renovasi siap tetapi percikan simen/cat, sisa silikon dan habuk pembinaan ada di mana-mana.",
+    causes: ["Sisa pembinaan biasa", "Titis silikon dan pelekat", "Percikan simen pada tingkap/jubin", "Habuk halus di seluruh unit"],
+    solutions: ["Vakum HEPA penuh setiap permukaan", "Buang kesan simen dari jubin dan kaca", "Kikis sisa silikon dan bersihkan dengan pelarut", "Mop basah dan lap terperinci penuh", "Pembersihan udara dengan unit penapis HEPA"],
+    whenToCall: ["Renovasi baru sahaja siap", "Perlu masuk dalam masa seminggu", "Pembersihan kontraktor tidak mencukupi"],
+    localFaq: {
+      q: "Adakah pembersihan kontraktor sudah cukup?",
+      a: "Jarang. Pembersihan kontraktor biasanya hanya pembuangan sisa asas. Pembersihan mendalam pasca-renovasi menjadikan unit anda benar-benar sedia untuk masuk."
+    }
+  },
+  "cctv-not-recording-storage-full": {
+    symptom: "Kamera CCTV tidak menunjukkan siaran langsung, tersangkut pada imej statik, atau DVR/NVR tidak memainkan rakaman.",
+    causes: ["Hard disk penuh atau gagal", "Bekalan kuasa gagal ke DVR/NVR", "Kabel rangkaian terputus", "Isu firmware kamera IP"],
+    solutions: ["Uji hard disk dan ganti jika gagal", "Ganti bekalan kuasa DVR/NVR", "Uji dan tamatkan semula kabel rangkaian", "Kemas kini firmware melalui aplikasi pengeluar"],
+    whenToCall: ["Perlu CCTV untuk laporan insurans/insiden", "Siaran telah mati lebih 24 jam", "Syak gangguan sengaja"],
+    localFaq: {
+      q: "Berapa lama hard disk CCTV bertahan?",
+      a: "Hard disk CCTV gred khas (WD Purple, Seagate SkyHawk) biasanya bertahan 4–7 tahun dengan operasi 24/7."
+    }
+  },
+  "autogate-remote-not-working": {
+    symptom: "Remot pagar automatik tidak lagi membuka pagar, atau hanya berfungsi secara sekejap-sekejap dari jarak sangat dekat.",
+    causes: ["Bateri remot lemah", "Antena penerima berkarat", "Kod remot tidak sepadan selepas reset motor", "Papan kawalan motor gagal"],
+    solutions: ["Ganti bateri remot (CR2032 biasa)", "Bersihkan atau ganti antena penerima", "Program semula remot ke motor", "Ganti papan kawalan jika perlu"],
+    whenToCall: ["Remot hilang dan perlukan yang baru dipadankan", "Beberapa remot berhenti berfungsi serentak", "Pagar terbuka sendiri secara sekejap-sekejap"],
+    localFaq: {
+      q: "Bolehkah mana-mana remot dipadankan ke pagar saya?",
+      a: "Hanya remot yang sepadan dengan jenama motor anda (SEIP, DEA, AutoGate, DASPI, dll). Kami menyimpan kod biasa Malaysia."
+    }
+  },
+  "loose-metal-gate-hinges": {
+    symptom: "Pagar logam anda tergantung rendah, menyeret lantai, atau engsel nampak longgar atau berkarat.",
+    causes: ["Kimpalan engsel asal gagal", "Karat menghakis pin engsel", "Berat pagar melebihi spesifikasi asal", "Pergerakan tiang konkrit"],
+    solutions: ["Kisar kimpalan lama dan bersihkan permukaan", "Kimpal engsel ganti heavy-duty", "Primer dan cat kawasan berkimpal", "Tambah sokongan tengah-span jika pagar sangat lebar"],
+    whenToCall: ["Pagar menyeret lantai", "Serpihan karat kelihatan di engsel", "Pagar hampir terlepas dari tiang"],
+    localFaq: {
+      q: "Bolehkah anda mengimpal di tapak?",
+      a: "Ya. Kami membawa kimpal arc/MIG mudah alih dan boleh menyelesaikan kebanyakan pembaikan engsel pagar dalam 2–4 jam di tapak."
+    }
+  },
+  "stuck-sliding-window": {
+    symptom: "Tingkap slaid aluminium tidak boleh digeser, memerlukan daya berlebihan, atau keluar dari rel apabila digerakkan.",
+    causes: ["Habuk dan kotoran di dalam rel", "Roda roller haus atau pecah", "Karat bingkai dari kelembapan pantai", "Berat kaca memesongkan bingkai"],
+    solutions: ["Vakum dan licinkan rel", "Ganti roda nylon yang haus", "Luruskan bingkai yang terpesong dengan pelarasan berhati-hati", "Pasang salutan anti-karat"],
+    whenToCall: ["Tingkap berusia lebih 10 tahun", "Roda nampak retak atau hilang", "Bingkai berkarat sampai mengelupas"],
+    localFaq: {
+      q: "Bolehkah saya baiki tingkap slaid tersangkut sendiri?",
+      a: "Pembersihan dan pelinciran rel boleh dibuat sendiri. Penggantian roller biasanya memerlukan mengangkat sash tingkap — lebih baik dilakukan secara profesional."
+    }
   }
 };
 
@@ -877,6 +1218,347 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "窗户铁栅通常能使用多久才开始生锈？",
       a: "经过正确防锈处理，铁栅可使用 5–10 年。如果没有处理，1–2 年内可能出现铁锈。"
+    }
+  },
+  // ── Extra problem pages (from problem-data-extra.ts) ──────────────────
+  "yellowing-white-walls": {
+    symptom: "白色墙面在 12–36 个月后变为奶油色、黄色或脏污，即使未触碰。",
+    causes: ["使用紫外线稳定性差的廉价乳胶漆", "香烟烟雾或厨房油烟沉积", "西向墙面阳光照射", "底漆发黄渗透面漆"],
+    solutions: ["用温和清洁剂清洗墙面去除表面膜", "重新涂刷前使用防污底漆", "使用抗紫外线、低 VOC 的优质乳胶漆重新涂刷", "改善厨房和吸烟区通风"],
+    whenToCall: ["涂刷后 12 个月内发黄复发", "清洁无法恢复原白", "仅特定墙面（靠近厨房或窗户）受影响"],
+    localFaq: {
+      q: "为什么白墙变黄这么快？",
+      a: "通常是廉价漆（低紫外线稳定性）、厨房油烟、香烟烟雾和阳光照射的组合。优质乳胶漆保持白色更久。"
+    }
+  },
+  "paint-cracking-hairline-walls": {
+    symptom: "漆面出现细密的蛛网状裂缝，通常在窗框、门框或天花板与墙壁交接处。",
+    causes: ["建筑正常沉降（前 2–5 年最严重）", "腻子层涂太厚或太快", "温度和湿度变化", "底层灰浆收缩"],
+    solutions: ["稍微扩大裂缝并用柔性丙烯酸填缝剂填充", "较大裂缝使用玻璃纤维网格带", "用薄层腻子覆盖修补区域", "使用柔性丙烯酸面漆底漆并重涂"],
+    whenToCall: ["裂缝宽度超过 1 毫米", "同一裂缝重涂后再次开裂", "大面积出现对角线裂缝"],
+    localFaq: {
+      q: "墙面有细小裂缝意味着房屋有结构问题吗？",
+      a: "几乎不会。美容性细裂缝是正常的建筑沉降和漆膜移动——真正的结构裂缝通常更宽（5 毫米以上）、呈对角线且持续恶化。"
+    }
+  },
+  "leaking-bathroom": {
+    symptom: "楼上浴室下方地板潮湿或渗水，或浴室旁墙面出现棕色水渍和漆面起泡。",
+    causes: ["浴室地面防水膜开裂", "淋浴屏风或浴缸周围硅胶老化", "墙内暗管漏水", "瓷砖缝隙破损导致水渗入楼板"],
+    solutions: ["进行水压测试隔离管道或楼板漏水", "从下方进行 PU 注浆（无需砸砖）", "重新密封淋浴屏风和浴缸接缝", "砸砖重做防水膜（最坏情况）"],
+    whenToCall: ["浴室下方天花板滴水", "浴室旁墙面漆起泡", "湿斑每周扩大"],
+    localFaq: {
+      q: "修复浴室漏水需要砸砖吗？",
+      a: "通常不需要。大多数情况下可以从下方使用高压 PU 注浆密封漏水——无需损坏瓷砖。"
+    }
+  },
+  "low-water-pressure": {
+    symptom: "花洒出水弱、水龙头流水细、热水器因进水压力不足难以启动。",
+    causes: ["热水器或花洒入口滤网堵塞", "镀锌管内部锈蚀缩小流通直径", "增压泵或压力罐故障", "供水主管问题（罕见但可能）"],
+    solutions: ["清洁或更换花洒和入口滤网", "清除热水器水垢", "用 PPR/PEX 管更换锈蚀管道", "安装或更换增压泵"],
+    whenToCall: ["只有一个水龙头受影响（可能局部堵塞）", "整间房子受影响（可能泵或主管问题）", "附近施工后压力突然下降"],
+    localFaq: {
+      q: "需要安装增压泵吗？",
+      a: "如果房屋有 2 层以上或顶楼水压低，增压泵通常是正确解决方案。典型安装费用：RM 900 至 RM 2,200。"
+    }
+  },
+  "clogged-drain": {
+    symptom: "排水缓慢、水槽或淋浴盆积水、使用多个水龙头时水倒灌。",
+    causes: ["厨房油脂在 P 形弯管和水平管道中积聚", "浴室排水口毛发堆积", "异物（湿巾、卫生用品）进入马桶管道", "管道破损或下沉导致杂物积聚"],
+    solutions: ["手动疏通弯管和管道", "使用酶基排水处理剂（对管道安全）", "高压水射流清洗（针对顽固厨房管道）", "摄像头检查 + 管道修复（结构性故障）"],
+    whenToCall: ["多个排水口同时堵塞", "冲水时其他排水口冒水", "室内有下水道气味"],
+    localFaq: {
+      q: "化学疏通剂对管道安全吗？",
+      a: "强碱性化学品可能损坏老旧 PVC 接头，在密闭空间也不安全。我们推荐机械疏通加酶处理——更安全且效果更持久。"
+    }
+  },
+  "toilet-not-flushing": {
+    symptom: "马桶冲水无力、一次冲不干净、或冲水后持续流水。",
+    causes: ["挡板阀或冲水机构磨损", "马桶边缘喷水孔堵塞", "S 形弯管或排污管部分堵塞", "进水阀（浮球组件）故障"],
+    solutions: ["更换挡板、进水阀或双冲水阀芯", "用醋或除垢剂清洁喷水孔", "疏通 S 形弯管和排污管", "老旧马桶更换整套水箱配件"],
+    whenToCall: ["换了挡板后仍然流水", "所有方向出水都很弱", "需要多次冲水才能冲干净"],
+    localFaq: {
+      q: "能自己修马桶冲水问题吗？",
+      a: "更换挡板很简单，可以自己操作。进水阀或 S 弯管问题通常需要水管工。"
+    }
+  },
+  "sagging-ceiling": {
+    symptom: "天花板面板看起来下垂、波浪形或按压时感觉柔软。",
+    causes: ["长期漏水从上方渗入", "湿气削弱石膏板", "木框架腐烂或损坏", "安装不正确（龙骨间距过大）"],
+    solutions: ["先止住水源", "拆除受损面板并干燥区域", "更换新石膏板并处理接缝", "干燥后底漆和重涂"],
+    whenToCall: ["天花板摸起来柔软或有弹性", "下垂越来越明显", "水渍仍在活跃扩大"],
+    localFaq: {
+      q: "下垂的天花板会塌下来吗？",
+      a: "非常潮湿和沉重的天花板可能塌落。如果面板感觉柔软或水在滴落，请立即联系工人。"
+    }
+  },
+  "ceiling-cornice-crack": {
+    symptom: "天花板和墙壁之间、沿着装饰线或 L 型槽出现裂缝。",
+    causes: ["建筑沉降导致接缝移动", "接缝腻子干燥收缩", "装饰线安装不当", "季节性温湿度变化"],
+    solutions: ["铲除接缝处旧腻子", "涂抹新的柔性接缝腻子", "安装玻璃纤维网格带增强", "干燥后重涂"],
+    whenToCall: ["每次涂刷后裂缝重新出现", "裂缝宽度超过 2 毫米", "装饰线开始从墙面脱落"],
+    localFaq: {
+      q: "为什么装饰线裂缝总是复发？",
+      a: "因为建筑自然移动。持久的解决方案需要柔性腻子和玻璃纤维网格带，而不仅仅是普通填充物。"
+    }
+  },
+  "balcony-leak-condo": {
+    symptom: "水从阳台滴到楼下单元，或室内阳台附近的墙面出现水渍。",
+    causes: ["阳台防水膜失效", "阳台水泥砂浆开裂", "阳台推拉门门槛处漏水", "阳台排水口堵塞"],
+    solutions: ["进行蓄水测试定位漏水点", "如可能从下方进行 PU 注浆", "在水泥砂浆上涂抹新防水膜", "更换或修复推拉门密封胶"],
+    whenToCall: ["楼下邻居投诉滴水", "室内墙面开始起泡", "阳台雨后总是潮湿"],
+    localFaq: {
+      q: "公寓阳台漏水谁负责？",
+      a: "通常是单元业主（私人空间）。如果是公共区域漏水，JMB/MC 可能负责。请查看分层地契。"
+    }
+  },
+  "concrete-slab-crack-leak": {
+    symptom: "混凝土楼板裂缝导致雨水或使用水渗入楼下。",
+    causes: ["结构移动导致混凝土开裂", "楼板上方防水层已过期", "防水膜不足", "楼板上方负载过重"],
+    solutions: ["用环氧树脂注入填充裂缝", "从下方进行高压 PU 注浆", "在上方涂抹新防水膜", "添加保护性水泥砂浆层"],
+    whenToCall: ["楼板上可见裂缝", "大雨后反复漏水", "旧防水层已超过 5 年"],
+    localFaq: {
+      q: "混凝土裂缝能永久修复吗？",
+      a: "结构裂缝可通过环氧注入稳定。对于活跃漏水，PU 注浆是马来西亚最有效的方法。"
+    }
+  },
+  "curtain-track-falling": {
+    symptom: "窗帘轨道从天花板或墙壁松动、支架脱落、或窗帘掉落。",
+    causes: ["螺丝从干墙中被拉出", "支架仅安装在石膏板上未使用锚栓", "窗帘重量超过支架承重", "天花板灰泥脆弱或受损"],
+    solutions: ["拆下旧支架并修补孔洞", "安装新的重型锚栓或弹簧螺栓", "将支架转移到龙骨或梁的位置", "用加固支架重新安装窗帘"],
+    whenToCall: ["支架反复脱落", "安装区域天花板感觉脆弱", "窗帘太重现有系统无法承受"],
+    localFaq: {
+      q: "重新安装窗帘轨道多少钱？",
+      a: "通常 RM 150 至 RM 350，包括新支架和锚栓，取决于窗户数量和天花板类型。"
+    }
+  },
+  "door-hinge-sagging": {
+    symptom: "门下垂、刮地板、铰链明显松动或生锈。",
+    causes: ["铰链螺丝因使用松动", "木门因湿气膨胀", "安装后铰链不对齐", "门框移位"],
+    solutions: ["拧紧或更换铰链螺丝", "清洁并润滑铰链", "如果刮地板则刨平门底", "在铰链处加垫片调整"],
+    whenToCall: ["门严重刮地板", "铰链发出噪音或卡住", "门无法紧密关闭"],
+    localFaq: {
+      q: "能自己修下垂的门吗？",
+      a: "拧紧螺丝和润滑铰链可以自己做。框架调整或加垫片最好请杂工。"
+    }
+  },
+  "old-condo-full-refurbishment": {
+    symptom: "老旧公寓（15 年以上）需要全面翻新——地板、墙壁、管道、电线和家具全部老化。",
+    causes: ["原始材料已达到使用寿命", "旧设计不适合当前生活方式", "老旧管道和电线不安全", "瓷砖、油漆和家具严重损坏"],
+    solutions: ["制定全面翻新计划", "更换管道和电线", "全面翻新厨房和浴室", "安装新地板、油漆和家具"],
+    whenToCall: ["单元超过 15 年", "刚购买二手公寓", "管道生锈或仍使用旧电线"],
+    localFaq: {
+      q: "吉隆坡公寓全面翻新多少钱？",
+      a: "通常 1,000–1,200 平方英尺的单元 RM 60,000 至 RM 150,000+，取决于范围和材料质量。"
+    }
+  },
+  "power-tripping-frequently": {
+    symptom: "电力频繁跳闸，使用某些设备时 MCCB/RCCB 总是跳闸。",
+    causes: ["电路过载（一个电路上设备太多）", "漏电（接地泄漏）", "老旧或松动的电线", "损坏设备导致短路"],
+    solutions: ["找出导致跳闸的设备", "在不同电路间平衡负载", "如损坏更换 MCCB/RCCB", "检查并修复老旧电线"],
+    whenToCall: ["每天都跳闸", "只在开启特定设备时跳闸", "老单元仍使用原始电线"],
+    localFaq: {
+      q: "电力经常跳闸危险吗？",
+      a: "跳闸是安全机制。如果频繁发生，说明有需要持证电工检查的问题，否则可能变成危险。"
+    }
+  },
+  "water-heater-cold": {
+    symptom: "热水器不加热——等了几分钟水仍然是冷的。",
+    causes: ["加热元件损坏或烧毁", "恒温器故障或未校准", "热水器 MCB 跳闸", "电线松动或烧焦"],
+    solutions: ["用万用表测试加热元件", "必要时更换恒温器", "重置或更换 MCB", "检查电线和连接"],
+    whenToCall: ["水完全冷", "热水器发出奇怪声音", "每次开启热水器 MCB 就跳闸"],
+    localFaq: {
+      q: "热水器通常能用多久？",
+      a: "普通储水式热水器在马来西亚可用 5–8 年。即热式热水器定期维护可用 8–12 年。"
+    }
+  },
+  "loose-hollow-tiles": {
+    symptom: "地砖敲击时发出空心声、松动或边缘开始翘起。",
+    causes: ["安装时瓷砖胶粘合不良", "瓷砖下方湿气削弱粘合剂", "基层不平导致空隙", "重压或撞击瓷砖"],
+    solutions: ["小心撬起瓷砖", "清洁表面涂抹新瓷砖胶", "重新铺放瓷砖并等待干燥", "粘合剂干燥后重新勾缝"],
+    whenToCall: ["多个区域瓷砖空心", "瓷砖开始翘起", "走过时空心声明显"],
+    localFaq: {
+      q: "能只修几块空心瓷砖而不全部重铺吗？",
+      a: "如果只有几块，可以——单块瓷砖可以取出重装。但如果超过 20% 空心，可能需要全部重铺。"
+    }
+  },
+  "cracked-tile-grout": {
+    symptom: "瓷砖之间的勾缝开裂、粉碎或消失，留下开放缝隙。",
+    causes: ["建筑结构移动或沉降", "劣质勾缝剂或施工不良", "湿气和潮气削弱勾缝", "用强化学清洁剂清洗"],
+    solutions: ["用勾缝锯清除旧勾缝", "清洁缝隙并干燥", "涂抹合适的新勾缝剂", "干燥后用勾缝密封剂封闭"],
+    whenToCall: ["多处勾缝消失", "水通过裂缝渗入", "勾缝清洁后仍然变色"],
+    localFaq: {
+      q: "能自己更换勾缝吗？",
+      a: "小面积可以——勾缝锯和新勾缝剂在五金店有售。整个浴室最好交给专业人士。"
+    }
+  },
+  "plaster-ceiling-hairline-crack": {
+    symptom: "石膏天花板表面出现细裂缝，通常在灯具周围或天花板中央。",
+    causes: ["建筑正常沉降（前 2–5 年）", "接缝腻子不足或干燥", "接缝带安装不当", "热胀冷缩和湿度变化"],
+    solutions: ["沿裂缝清除旧腻子", "用玻璃纤维网格带涂抹新腻子", "干燥后打磨平整", "重涂"],
+    whenToCall: ["裂缝从下方清晰可见", "每次涂刷后裂缝重新出现", "不同区域出现多条裂缝"],
+    localFaq: {
+      q: "天花板细裂缝危险吗？",
+      a: "石膏细裂缝通常是美容性的，不危险。这是建筑移动的自然结果。宽裂缝（5毫米以上）需要检查。"
+    }
+  },
+  "uneven-wall-surface-skim": {
+    symptom: "墙面看起来不平、光线照射时表面不均匀、或摸起来不光滑。",
+    causes: ["原始灰泥不平", "旧腻子层已退化或损坏", "补丁修补混合不好", "灰泥层不均匀收缩"],
+    solutions: ["刮除松动的旧表面", "涂抹新的薄层腻子", "干燥后打磨平整", "底漆和重涂"],
+    whenToCall: ["光线暴露墙面不均匀", "墙面摸起来粗糙或不平", "新漆看起来不均匀"],
+    localFaq: {
+      q: "一间房批腻子多少钱？",
+      a: "通常 RM 400 至 RM 1,200 一间房，取决于墙面面积和不平整程度。"
+    }
+  },
+  "vinyl-flooring-lifting-edges": {
+    symptom: "乙烯基地板边缘翘起、卷曲或不再粘附地面。",
+    causes: ["湿气或热量导致粘合剂失效", "安装前基层不平", "混凝土楼板上返湿气", "安装时未留足够伸缩缝"],
+    solutions: ["清洁翘起区域并干燥", "在边缘下方涂抹新 vinyl 胶", "用重物压至粘合剂干燥", "更换严重损坏的板材"],
+    whenToCall: ["多个边缘开始翘起", "踩踏时 vinyl 发出咔嗒声", "vinyl 下方可见湿气"],
+    localFaq: {
+      q: "为什么马来西亚的 vinyl 地板会翘起？",
+      a: "高湿度和热带温度使粘合剂比温带国家更快失效。安装前确保基层干燥。"
+    }
+  },
+  "cracked-roof-tiles": {
+    symptom: "屋顶瓦片开裂、破碎或缺失，导致雨水渗入天花板或墙壁。",
+    causes: ["屋顶材料已达使用寿命", "物体撞击（树枝、石头）", "屋顶结构移动", "增加负载（安装太阳能板等）"],
+    solutions: ["用新瓦片替换破裂的", "检查并在损坏时修复底层", "更换烟囱或通风口周围的泛水板", "定期清洁和检查屋顶"],
+    whenToCall: ["下雨时正在漏水", "从下方可见瓦片破裂", "屋顶超过 15 年"],
+    localFaq: {
+      q: "更换屋顶瓦片多少钱？",
+      a: "小修补通常 RM 250 至 RM 800。全屋顶需要先检查——费用因屋顶类型而异。"
+    }
+  },
+  "cabinet-door-sagging": {
+    symptom: "柜门下垂、不对齐或铰链松动导致门无法紧密关闭。",
+    causes: ["正常使用导致铰链螺丝松动", "柜门太重超出原始铰链承重", "湿气导致门膨胀", "原始安装不正确"],
+    solutions: ["拧紧或更换铰链螺丝", "调整铰链重新对齐", "为重门添加第三个铰链", "必要时更换为重型铰链"],
+    whenToCall: ["调整后门仍无法紧密关闭", "铰链发出噪音或感觉松动", "门明显倾斜"],
+    localFaq: {
+      q: "能只修柜门而不换整个柜吗？",
+      a: "可以，大多数情况下可以。拧紧铰链、添加支撑铰链或调整通常就够了，不需要换整个门。"
+    }
+  },
+  "wardrobe-door-jamming": {
+    symptom: "衣柜门卡住、移动困难或脱轨。",
+    causes: ["轨道脏或生锈", "尼龙轮磨损或破裂", "门因湿气膨胀", "衣柜框架不直"],
+    solutions: ["清洁并润滑轨道", "更换损坏的尼龙轮", "如门膨胀则找平", "调整支架对齐"],
+    whenToCall: ["门反复脱轨", "发出强烈的摩擦声", "门无法完全打开"],
+    localFaq: {
+      q: "修衣柜门卡住多少钱？",
+      a: "通常 RM 200 至 RM 500，包括更换轮子和调整，取决于衣柜类型。"
+    }
+  },
+  "digital-smart-lock-installation": {
+    symptom: "智能锁不工作、电池快速耗尽、WiFi/蓝牙不稳定或无法上锁/开锁。",
+    causes: ["电池弱或耗尽", "WiFi/蓝牙连接弱", "软件需要更新", "门上安装不正确"],
+    solutions: ["更换新电池", "检查并加强网络连接", "通过制造商应用更新固件", "重新安装并校准锁"],
+    whenToCall: ["锁完全不工作", "电池不到 1 个月耗尽", "锁无法正确识别指纹/卡"],
+    localFaq: {
+      q: "智能锁在马来西亚安全吗？",
+      a: "是的，家用级智能锁（Yale、Samsung、Xiaomi、Philips）日常使用安全。确保选择适合您门厚度的型号。"
+    }
+  },
+  "locked-out-of-house": {
+    symptom: "因钥匙丢失、断在锁孔内或锁损坏而无法进入房屋。",
+    causes: ["钥匙丢失或被盗", "钥匙断在锁芯内", "锁机构损坏", "门自动锁上但没带钥匙"],
+    solutions: ["联系持证锁匠", "使用无损开锁技术（如可能）", "必要时更换锁芯", "进入后安装新锁"],
+    whenToCall: ["钥匙完全丢失", "钥匙断在锁孔内", " attempted break-in 后锁损坏"],
+    localFaq: {
+      q: "紧急叫锁匠多少钱？",
+      a: "房屋通常 RM 150 至 RM 350。价格因时间（夜间/周末更贵）和锁类型而异。"
+    }
+  },
+  "downlight-flickering": {
+    symptom: "筒灯闪烁、反复亮灭或亮度不足。",
+    causes: ["LED 驱动器损坏或不兼容", "接线端子松动", "调光器与 LED 灯不兼容", "LED 灯接近使用寿命"],
+    solutions: ["更换兼容的 LED 驱动器", "检查并拧紧所有接线", "将调光器更换为 LED 兼容型号", "更换损坏的 LED 灯"],
+    whenToCall: ["闪烁每天发生", "多盏灯同时闪烁", "灯感觉异常热"],
+    localFaq: {
+      q: "灯闪烁危险吗？",
+      a: "闪烁通常表示连接松动或驱动器损坏。松动连接可能导致过热和火灾风险——请立即检查。"
+    }
+  },
+  "shower-screen-water-leak": {
+    symptom: "水从淋浴屏风底部或侧面泄漏，弄湿浴室地板。",
+    causes: ["屏风边缘硅胶失效", "玻璃破裂或弯曲", "轨道不平", "地漏堵塞"],
+    solutions: ["清除旧硅胶并涂抹新的", "如破裂更换玻璃", "调整轨道使其水平", "清洁地漏"],
+    whenToCall: ["每次洗澡都漏水", "可见玻璃破裂", "多个屏风有同样问题"],
+    localFaq: {
+      q: "能只修淋浴屏风而不换整个吗？",
+      a: "可以。大多数情况下只需更换硅胶并调整轨道。只有玻璃损坏才需要全部更换。"
+    }
+  },
+  "stubborn-bathroom-limescale": {
+    symptom: "水龙头、花洒、玻璃屏风或瓷砖上有普通清洁剂无法去除的坚硬水垢。",
+    causes: ["您所在地区水质硬（高矿物质含量）", "矿物质长期积累未清洁", "镀铬或玻璃表面多孔", "使用了无效的清洁产品"],
+    solutions: ["用温和酸性除垢剂深度清洁", "蒸汽清洁瓷砖缝隙和瓷砖", "用专用化合物抛光镀铬和玻璃", "建议安装软水器长期预防"],
+    whenToCall: ["常规清洁不再有效", "准备房产展示/出售", "想在Hari Raya/CNY前专业深度清洁"],
+    localFaq: {
+      q: "如何防止水垢复发？",
+      a: "每次淋浴后刮擦玻璃、每周擦拭水龙头，并考虑安装全屋软水器长期保护。"
+    }
+  },
+  "move-out-condo-deep-clean": {
+    symptom: "您需要搬出，需要将公寓清洁到房东/中介接受的标准以退还押金。",
+    causes: ["租客正常使用痕迹", "厨房油脂积累", "浴室水垢积累", "家具和挂钩在墙上留下痕迹"],
+    solutions: ["逐房间深度清洁", "擦拭墙面污痕", "厨房去油包括灶台和抽油烟机", "浴室深度清洁使用除垢剂", "与房东/中介最终检查"],
+    whenToCall: ["距离交钥匙不到一周", "希望最大程度退还押金", "单元 800 平方英尺以上"],
+    localFaq: {
+      q: "你们也处理墙面修补吗？",
+      a: "基本污痕去除包含在内。如果墙面损坏超出清洁范围，重新涂刷另行报价。"
+    }
+  },
+  "cement-splatter-tile-clean": {
+    symptom: "翻新完成但到处都是水泥/油漆溅点、硅胶残留和建筑灰尘。",
+    causes: ["正常翻新垃圾", "硅胶和粘合剂滴落", "水泥溅到窗户/瓷砖上", "整个单元的细灰尘"],
+    solutions: ["每个表面全面 HEPA 吸尘", "清除瓷砖和玻璃上的水泥痕迹", "刮除硅胶残留并用溶剂清洁", "全面湿拖和细节擦拭", "用 HEPA 过滤单元清洁空气"],
+    whenToCall: ["翻新刚完成", "需要在一周内搬入", "承包商清洁不够彻底"],
+    localFaq: {
+      q: "承包商的清洁算翻新后清洁吗？",
+      a: "通常不算。承包商清洁通常只是基本垃圾清除。翻新后深度清洁才真正让单元可以入住。"
+    }
+  },
+  "cctv-not-recording-storage-full": {
+    symptom: "CCTV 摄像头无实时画面、卡在静态图像、或 DVR/NVR 无法回放录像。",
+    causes: ["硬盘已满或故障", "DVR/NVR 电源故障", "网线断开", "IP 摄像头固件问题"],
+    solutions: ["测试硬盘并在故障时更换", "更换 DVR/NVR 电源", "测试并重新端接网线", "通过制造商应用更新固件"],
+    whenToCall: ["需要 CCTV 用于保险/事故报告", "画面已中断超过 24 小时", "怀疑有人故意破坏"],
+    localFaq: {
+      q: "CCTV 硬盘能用多久？",
+      a: "专用 CCTV 硬盘（WD Purple、Seagate SkyHawk）24/7 运行通常可使用 4–7 年。"
+    }
+  },
+  "autogate-remote-not-working": {
+    symptom: "自动门遥控器不再开门、或只能在非常短的距离内间歇性工作。",
+    causes: ["遥控器电池弱", "接收天线腐蚀", "电机重置后遥控码不匹配", "电机控制板故障"],
+    solutions: ["更换遥控器电池（通常 CR2032）", "清洁或更换接收天线", "重新编程遥控器到电机", "必要时更换控制板"],
+    whenToCall: ["遥控器丢失需要配对新的", "多个遥控器同时停止工作", "门间歇性自行打开"],
+    localFaq: {
+      q: "任何遥控器都能配对到我的门吗？",
+      a: "只有匹配您电机品牌的遥控器（SEIP、DEA、AutoGate、DASPI 等）。我们备有马来西亚常用型号。"
+    }
+  },
+  "loose-metal-gate-hinges": {
+    symptom: "金属门下垂、拖地、或铰链明显松动或腐蚀。",
+    causes: ["原始铰链焊接失效", "锈蚀腐蚀铰链销", "门重量超出原始规格", "混凝土柱移动"],
+    solutions: ["磨掉旧焊并清洁表面", "焊接重型替换铰链", "给焊接区域上底漆和涂漆", "如果门特别宽添加中部支撑"],
+    whenToCall: ["门拖地", "铰链处可见锈屑", "门几乎要从柱上脱落"],
+    localFaq: {
+      q: "能现场焊接吗？",
+      a: "可以。我们携带便携式电弧/MIG 焊机，可在现场 2–4 小时内完成大多数门铰维修。"
+    }
+  },
+  "stuck-sliding-window": {
+    symptom: "铝制推拉窗无法滑动、需要过大力量、或移动时脱轨。",
+    causes: ["轨道内有灰尘和污垢", "滚轮磨损或破裂", "沿海湿气导致框架腐蚀", "玻璃重量使框架变形"],
+    solutions: ["吸尘并润滑轨道", "更换磨损的尼龙滚轮", "小心调整拉直变形框架", "涂防锈涂层"],
+    whenToCall: ["窗户超过 10 年", "滚轮明显破裂或缺失", "框架腐蚀到剥落程度"],
+    localFaq: {
+      q: "能自己修卡住的推拉窗吗？",
+      a: "轨道清洁和润滑可以自己操作。更换滚轮通常需要抬起窗扇——最好请专业人士。"
     }
   }
 };
