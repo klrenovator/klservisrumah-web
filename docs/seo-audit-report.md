@@ -1,6 +1,6 @@
 # SEO Audit Report
 
-Generated: 2026-08-12T08:14:22.315Z
+Generated: 2026-08-12T22:12:41.613Z
 
 ## Route Inventory
 
@@ -190,19 +190,34 @@ Generated: 2026-08-12T08:14:22.315Z
 - /blog/auto-gate-installation-guide-malaysia
 - /blog/when-to-repaint-condo-vs-repaint-terrace-house
 - /blog/how-to-hire-honest-contractor-malaysia
+- /blog/plaster-ceiling-design-build-kl
+- /blog/flat-plaster-ceiling-kl
+- /blog/tiered-l-box-ceiling-kl
+- /blog/wall-ceiling-skim-coat-kl
+- /blog/wall-skim-coating-kl
+- /blog/ceiling-skim-coating-kl
+- /blog/vinyl-spc-laminate-flooring-kl
+- /blog/spc-click-lock-flooring-kl
+- /blog/laminate-flooring-kl
+- /blog/epoxy-polyurethane-flooring-kl
+- /blog/self-levelling-epoxy-floor-kl
+- /blog/flake-quartz-broadcast-epoxy-kl
+- /blog/roof-repair-waterproofing-kl
+- /blog/roof-leak-diagnosis-repair-kl
+- /blog/ridge-re-bedding-re-pointing-kl
 
 ## Checks
 
-- Total representative routes: 186
+- Total representative routes: 201
 - Service pages: 28
 - Area pages: 37
 - Suburb records: 52
 - Problem pages: 77
-- Blog posts: 18
+- Blog posts: 33
 
 ## Metadata consistency (post-build full-corpus)
 
-- Pages checked: 4677
+- Pages checked: 4722
 - Pages with hreflang while canonicalised to a different URL: 0
 
 _No issues found — every page that canonicalises to a different URL correctly omits hreflang (Google: canonical overrides hreflang)._

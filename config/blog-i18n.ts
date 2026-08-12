@@ -2091,6 +2091,956 @@ Sedia mengupah seseorang yang memenuhi semua ini? WhatsApp kami dan kami akan ba
 
 准备好找到符合所有条件的人？WhatsApp我们，营业时间内60分钟回复。`
     }
+  },
+
+  /* ──────────────────────────────────────────────────────────────────────
+   * Batch 4 — plaster ceiling, skim coat, flooring, epoxy flooring, roof repair
+   * ────────────────────────────────────────────────────────────────────── */
+  "plaster-ceiling-design-build-kl": {
+    ms: {
+      slug: "reka-bina-siling-plaster-kl",
+      title: "Reka Bentuk & Bina Siling Plaster di Kuala Lumpur & Selangor", category: "Siling",
+      excerpt: "Siling plaster rata, bertingkat, L-box, cekung dan melengkung dengan lampu tersembunyi, direka dan dibina di seluruh KL & Selangor dari RM 10 / kaki persegi.",
+      metaTitle: "Reka Bentuk & Bina Siling Plaster di KL & Selangor",
+      metaDesc: "Reka bentuk & bina siling plaster di KL & Selangor — rata, bertingkat, L-box, cekung dan melengkung dengan lampu tersembunyi. Dari RM 10 / kaki persegi.",
+      content: `Siling plaster mengubah bilik biasa menjadi ruang moden yang kemas — dan ia ialah salah satu naik taraf rumah paling popular di Kuala Lumpur dan Selangor. KL Servis Rumah menyediakan reka bentuk dan bina siling plaster di seluruh Lembah Klang, daripada siling rata ringkas hingga reka bentuk L-box bertingkat dengan lampu tersembunyi.
+
+## Pilihan siling plaster
+
+- **Siling plaster rata** — siling licin dan bersih untuk rupa minimalis dan moden.
+- **Siling bertingkat & L-box** — reka bentuk bertingkat yang menambah kedalaman, selalunya dengan ceruk lampu tersembunyi.
+- **Siling cekung & melengkung** — peralihan melengkung lembut untuk rasa premium.
+- **Pembaikan & re-skim siling** — permukaan semula siling sedia ada yang retak atau haus.
+
+## Mengapa memasang siling plaster?
+
+- **Menyembunyikan pendawaian dan paip** — menyembunyikan kabel, saluran, dan paip di atas siling.
+- **Rupa moden** — reka bentuk rata dan L-box memberikan bilik rasa bersih dan kontemporari.
+- **Menambah nilai** — siling yang siap baik meningkatkan penampilan keseluruhan rumah.
+- **Lampu tersembunyi** — reka bentuk L-box dan cekung membolehkan pencahayaan tidak langsung.
+
+## Berapa kos siling plaster?
+
+| Jenis siling | Harga permulaan |
+|---|---|
+| Siling plaster rata | Dari RM 10 / kaki persegi |
+| Siling bertingkat & L-box | Dari RM 14 / kaki persegi |
+| Siling cekung & melengkung | Dari RM 22 / kaki persegi |
+| Pembaikan & re-skim siling | Dari RM 8 / kaki persegi |
+
+## Dapatkan sebut harga siling plaster
+
+KL Servis Rumah menyediakan reka bentuk dan bina siling plaster profesional di seluruh Kuala Lumpur dan Selangor. WhatsApp kami untuk sebut harga percuma.`
+    },
+    zh: {
+      slug: "ji-long-po-xue-lang-e-shi-gao-tian-hua-ban-fu-wu",
+      title: "吉隆坡与雪兰莪石膏板天花板设计与施工", category: "天花板工程",
+      excerpt: "在吉隆坡与雪兰莪设计并施工平面、阶梯式、L形、凹圆和弧形石膏板天花板，带隐藏式照明，每平方英尺RM 10起。",
+      metaTitle: "吉隆坡与雪兰莪石膏板天花板设计与施工",
+      metaDesc: "吉隆坡与雪兰莪石膏板天花板设计与施工——平面、阶梯式、L形、凹圆和弧形，带隐藏式照明。每平方英尺RM 10起。",
+      content: `石膏板天花板能将普通的房间变成一个精致、现代的空间——它是吉隆坡和雪兰莪最受欢迎的住宅升级项目之一。KL Servis Rumah 在巴生谷提供石膏板天花板设计与施工服务，从简单的平面吊顶到带隐藏式照明的阶梯式L形设计。
+
+## 石膏板天花板选项
+
+- **平面石膏板天花板** — 适合极简现代风格的干净平滑天花板。
+- **阶梯式与L形吊顶** — 增加层次感的分层设计，通常带隐藏式灯槽。
+- **凹圆与弧形天花板** — 柔和的弧形过渡，营造高端质感。
+- **天花板修复与重新批灰** — 翻新开裂或磨损的现有天花板。
+
+## 为什么安装石膏板天花板？
+
+- **隐藏电线和管道** — 隐藏天花板上方的线缆、管道和管线。
+- **现代外观** — 平面和L形设计为房间带来干净、现代的感觉。
+- **增加价值** — 完工良好的天花板提升住宅整体外观。
+- **隐藏式照明** — L形和凹圆设计实现优雅的间接照明。
+
+## 石膏板天花板费用多少？
+
+| 天花板类型 | 起步价 |
+|---|---|
+| 平面石膏板天花板 | 每平方英尺 RM 10 起 |
+| 阶梯式与L形吊顶 | 每平方英尺 RM 14 起 |
+| 凹圆与弧形天花板 | 每平方英尺 RM 22 起 |
+| 天花板修复与重新批灰 | 每平方英尺 RM 8 起 |
+
+## 获取石膏板天花板报价
+
+KL Servis Rumah 在吉隆坡和雪兰莪全境提供专业的石膏板天花板设计与施工服务。WhatsApp联系我们获取免费报价。`
+    }
+  },
+  "flat-plaster-ceiling-kl": {
+    ms: {
+      slug: "siling-plaster-rata",
+      title: "Pemasangan Siling Plaster Rata di KL & Selangor", category: "Siling",
+      excerpt: "Siling plaster rata yang licin dan bersih di seluruh KL & Selangor — menyembunyikan pendawaian, meratakan permukaan dan memberikan rupa moden, dari RM 10 / kaki persegi.",
+      metaTitle: "Pemasangan Siling Plaster Rata di KL & Selangor",
+      metaDesc: "Pasang siling plaster rata yang licin dan bersih di KL & Selangor — menyembunyikan pendawaian, meratakan permukaan dan memberikan rupa moden. Dari RM 10 / kaki persegi.",
+      content: `Siling plaster rata ialah pilihan siling bersih dan ringkas yang digunakan kebanyakan rumah Malaysia. Ia menyembunyikan pendawaian dan permukaan tidak rata, meratakan siling lama, dan memberikan sebarang bilik kemasan licin dan moden. KL Servis Rumah menyediakan pemasangan siling plaster rata di seluruh Kuala Lumpur dan Selangor, dari RM 10 / kaki persegi.
+
+## Apa itu siling plaster rata?
+
+Ia ialah siling satu aras yang dibina dengan gypsum board pada rangka logam, dikemas dengan skim coat licin sedia cat. Tiada aras bertingkat atau alur — hanya permukaan bersih dan sekata.
+
+## Mengapa pilih siling rata?
+
+- **Rupa bersih dan moden** — licin dan sekata, padan dengan kebanyakan gaya dalaman moden.
+- **Menyembunyikan kecacatan** — menutup retak, kesan, dan siling lama yang tidak rata.
+- **Menyembunyikan pendawaian** — menyembunyikan kabel lampu dan elektrik di atas.
+- **Ringkas dan menjimatkan** — pilihan siling plaster paling berpatutan.
+
+## Berapa kos siling rata?
+
+Siling plaster rata bermula dari RM 10 / kaki persegi. Kos akhir bergantung pada luas siling, keadaan permukaan, dan akses.
+
+## Dapatkan sebut harga siling plaster rata
+
+Untuk siling bersih dan moden yang menyembunyikan kecacatan dan pendawaian, siling plaster rata ialah pilihan yang sangat baik. WhatsApp kami untuk sebut harga percuma.`
+    },
+    zh: {
+      slug: "ping-mian-shi-gao-tian-hua-ban",
+      title: "吉隆坡与雪兰莪平面石膏板天花板安装", category: "天花板工程",
+      excerpt: "在吉隆坡与雪兰莪安装干净平滑的平面石膏板天花板——隐藏电线、平整表面并让房间呈现现代感，每平方英尺RM 10起。",
+      metaTitle: "吉隆坡与雪兰莪平面石膏板天花板安装",
+      metaDesc: "在吉隆坡与雪兰莪安装干净平滑的平面石膏板天花板——隐藏电线、平整表面并让房间呈现现代感。每平方英尺RM 10起。",
+      content: `平面石膏板天花板是大多数马来西亚家庭使用的干净、简洁的天花板选择。它隐藏电线和不平整的表面，平整旧天花板，并让任何房间呈现平滑、现代的外观。KL Servis Rumah 在吉隆坡和雪兰莪全境提供平面石膏板天花板安装服务，每平方英尺RM 10起。
+
+## 什么是平面石膏板天花板？
+
+它是一种单层天花板，由石膏板安装在金属框架上，再用平滑的批灰饰面完成，准备上漆。没有阶梯层次或凹槽——只有干净、均匀的表面。
+
+## 为什么选择平面天花板？
+
+- **干净现代的外观** — 平滑均匀，匹配大多数现代室内风格。
+- **隐藏瑕疵** — 覆盖裂缝、污渍和不平整的旧天花板。
+- **隐藏电线** — 隐藏上方的照明和电气线缆。
+- **简单且经济实惠** — 最实惠的石膏板天花板选项。
+
+## 平面天花板费用多少？
+
+平面石膏板天花板每平方英尺RM 10起。最终费用取决于天花板面积、现有表面状况和施工条件。
+
+## 获取平面石膏板天花板报价
+
+想要隐藏瑕疵和电线的干净现代天花板，平面石膏板天花板是绝佳选择。WhatsApp联系我们获取免费报价。`
+    }
+  },
+  "tiered-l-box-ceiling-kl": {
+    ms: {
+      slug: "siling-bertingkat-dan-l-box",
+      title: "Pemasangan Siling Bertingkat & L-Box di KL & Selangor", category: "Siling",
+      excerpt: "Tambahkan kedalaman dan keanggunan pada bilik dengan siling bertingkat atau L-box dan lampu tersembunyi di seluruh KL & Selangor, dari RM 14 / kaki persegi.",
+      metaTitle: "Pemasangan Siling Bertingkat & L-Box di KL & Selangor",
+      metaDesc: "Tambahkan kedalaman dan keanggunan dengan siling bertingkat atau L-box dan lampu tersembunyi di KL & Selangor. Pemasangan profesional dari RM 14 / kaki persegi.",
+      content: `Siling bertingkat atau L-box ialah salah satu cara paling popular untuk memberikan ruang tamu atau bilik utama rupa premium dan moden. Reka bentuk bertingkat menambah kedalaman dan dimensi, dan apabila digabungkan dengan ceruk lampu tersembunyi, ia mencipta pencahayaan tidak langsung yang lembut dan elegan. KL Servis Rumah menyediakan pemasangan siling bertingkat dan L-box di seluruh Kuala Lumpur dan Selangor, dari RM 14 / kaki persegi.
+
+## Apa itu siling L-box / bertingkat?
+
+- **Siling L-box** — reka bentuk bertingkat di mana bahagian berpetak lebih rendah berjalan di sekeliling perimeter, biasanya dengan ceruk untuk lampu jalur LED.
+- **Siling bertingkat** — pelbagai aras bertingkat yang menambah kedalaman dan memecahkan siling rata yang besar.
+- **Ceruk lampu tersembunyi** — satu tanjakan ceruk yang menyembunyikan lampu jalur LED.
+
+## Mengapa pilih siling bertingkat / L-box?
+
+- **Menambah kedalaman** — aras bertingkat menjadikan bilik biasa terasa lebih dirancang dan premium.
+- **Lampu tersembunyi** — cahaya tidak langsung lembut mencipta suasana santai dan moden.
+- **Menentukan ruang** — L-box boleh memisahkan secara visual kawasan makan dari ruang tamu.
+
+## Berapa kos siling L-box?
+
+Siling bertingkat & L-box bermula dari RM 14 / kaki persegi. Kos akhir bergantung pada luas siling, kerumitan reka bentuk, dan sama ada lampu tersembunyi termasuk.
+
+## Dapatkan sebut harga siling bertingkat / L-box
+
+Tambahkan kedalaman, keanggunan, dan lampu tersembunyi lembut pada rumah anda. WhatsApp kami untuk sebut harga percuma.`
+    },
+    zh: {
+      slug: "ti-ceng-l-xing-tian-hua-ban",
+      title: "吉隆坡与雪兰莪阶梯式与L形吊顶安装", category: "天花板工程",
+      excerpt: "用阶梯式或L形吊顶配合隐藏式照明，为房间增添层次感和优雅气质，每平方英尺RM 14起。",
+      metaTitle: "吉隆坡与雪兰莪阶梯式与L形吊顶安装",
+      metaDesc: "用阶梯式或L形吊顶配合隐藏式照明，为房间增添层次感和优雅气质。专业安装，每平方英尺RM 14起。",
+      content: `阶梯式或L形吊顶是让客厅或主卧呈现高端现代感的最受欢迎方式之一。分层设计增加层次感和立体感，配合隐藏式灯槽，营造柔和、优雅的间接照明。KL Servis Rumah 在吉隆坡和雪兰莪全境提供阶梯式和L形吊顶安装服务，每平方英尺RM 14起。
+
+## 什么是L形/阶梯式吊顶？
+
+- **L形吊顶** — 一种分层设计，其中较低的部分沿周边环绕，通常带隐藏式LED灯带槽。
+- **阶梯式吊顶** — 多个阶梯层次，增加深度并打破大面积的平面天花板。
+- **隐藏式灯槽** — 一个凹陷的搁板，隐藏LED灯带以进行间接照明。
+
+## 为什么选择阶梯式/L形吊顶？
+
+- **增加层次感** — 阶梯层次让普通的房间感觉更有设计感和高级感。
+- **隐藏式照明** — 柔和的间接光营造放松、现代的氛围。
+- **界定空间** — L形吊顶可以在视觉上分隔用餐区和客厅。
+
+## L形吊顶费用多少？
+
+阶梯式与L形吊顶每平方英尺RM 14起。最终费用取决于天花板面积、设计复杂度和是否包含隐藏式照明。
+
+## 获取阶梯式/L形吊顶报价
+
+用阶梯式或L形吊顶配合柔和的隐藏式照明，为您的家增添层次感。WhatsApp联系我们获取免费报价。`
+    }
+  },
+  "wall-ceiling-skim-coat-kl": {
+    ms: {
+      slug: "perkhidmatan-skim-coat-kl",
+      title: "Skim Coat Dinding & Siling di Kuala Lumpur & Selangor", category: "Skim Coat",
+      excerpt: "Dinding dan siling licin serta sekata dengan skim coating profesional di seluruh KL & Selangor — skim coat dinding dan siling, pembaikan retak dan re-skim kondominium penuh, dari RM 5 / kaki persegi.",
+      metaTitle: "Skim Coat Dinding & Siling di KL & Selangor",
+      metaDesc: "Dinding dan siling licin serta sekata dengan skim coating profesional di KL & Selangor — skim coat dinding & siling, pembaikan retak dan re-skim kondominium penuh. Dari RM 5 / kaki persegi.",
+      content: `Jika dinding anda kasar, berombak, atau bertompok akibat cat lama, kesan, atau pembaikan sebelumnya, skim coat memberikan kemasan licin dan sekata. KL Servis Rumah menyediakan skim coating dinding dan siling profesional di seluruh Kuala Lumpur dan Selangor, dari RM 5 / kaki persegi.
+
+## Perkhidmatan skim coating
+
+- **Skim coating dinding** — kemasan licin dan sekata di atas dinding kasar, bernoda, atau bertampal.
+- **Skim coating siling** — meratakan dan melicinkan siling sebelum mengecat.
+- **Pembaikan retak & sambungan** — membaiki retak dan sambungan sebelum skim.
+- **Pakej re-skim kondominium penuh** — permukaan semula lengkap untuk kondominium.
+
+## Apa itu skim coating?
+
+Skim coating ialah aplikasi lapisan nipis plaster atau sebatian sendi ke seluruh permukaan dinding atau siling. Ia meratakan kecacatan kecil, mengisi retak kecil dan tampalan, dan mencipta kemasan licin sedia cat.
+
+## Berapa kos skim coating?
+
+| Perkhidmatan | Harga permulaan |
+|---|---|
+| Skim coating dinding | Dari RM 5 / kaki persegi |
+| Skim coating siling | Dari RM 6 / kaki persegi |
+| Pembaikan retak & sambungan | Dari RM 22 / kaki linier |
+| Pakej re-skim kondominium penuh | Dari RM 4,200 |
+
+## Dapatkan sebut harga skim coat
+
+Beri dinding dan siling anda kemasan licin dan sempurna. WhatsApp kami untuk penilaian percuma.`
+    },
+    zh: {
+      slug: "ji-long-po-xue-lang-e-gua-sha-fu-wu",
+      title: "吉隆坡与雪兰莪墙面与天花板批灰", category: "批灰工程",
+      excerpt: "在吉隆坡与雪兰莪通过专业批灰获得平滑均匀的墙面与天花板——墙面和天花板批灰、裂缝修补和全公寓重新批灰，每平方英尺RM 5起。",
+      metaTitle: "吉隆坡与雪兰莪墙面与天花板批灰",
+      metaDesc: "在吉隆坡与雪兰莪通过专业批灰获得平滑均匀的墙面与天花板——墙面与天花板批灰、裂缝修补和全公寓重新批灰。每平方英尺RM 5起。",
+      content: `如果您的墙面因旧漆、污渍或先前修补而粗糙、起伏或斑驳，批灰能带来平滑均匀的饰面。KL Servis Rumah 在吉隆坡和雪兰莪全境提供专业墙面与天花板批灰服务，每平方英尺RM 5起。
+
+## 我们提供的批灰服务
+
+- **墙面批灰** — 在粗糙、污渍或斑驳的墙面上实现平滑均匀的饰面。
+- **天花板批灰** — 上漆前找平和抚平天花板。
+- **裂缝与接缝修补** — 批灰前修复裂缝和接缝。
+- **全公寓重新批灰套餐** — 为共管公寓提供完整的表面重做。
+
+## 什么是批灰？
+
+批灰是将一层薄薄的石膏或接缝剂涂覆在整个墙面或天花板表面。它抚平细小的瑕疵，填补小裂缝和修补处，并形成平滑、可上漆的饰面。
+
+## 批灰费用多少？
+
+| 服务 | 起步价 |
+|---|---|
+| 墙面批灰 | 每平方英尺 RM 5 起 |
+| 天花板批灰 | 每平方英尺 RM 6 起 |
+| 裂缝与接缝修补 | 每直线英尺 RM 22 起 |
+| 全公寓重新批灰套餐 | RM 4,200 起 |
+
+## 获取批灰报价
+
+让您的墙面和天花板拥有平滑、完美的饰面。WhatsApp联系我们获取免费评估。`
+    }
+  },
+  "wall-skim-coating-kl": {
+    ms: {
+      slug: "skim-coat-dinding",
+      title: "Skim Coat Dinding di KL & Selangor", category: "Skim Coat",
+      excerpt: "Dinding licin dan sekata dengan skim coating dinding profesional di seluruh KL & Selangor — meratakan permukaan kasar atau bertompok, dari RM 5 / kaki persegi.",
+      metaTitle: "Skim Coat Dinding di KL & Selangor",
+      metaDesc: "Dinding licin dan sekata dengan skim coating dinding profesional di KL & Selangor — meratakan permukaan kasar atau bertompok. Dari RM 5 / kaki persegi.",
+      content: `Dinding kasar, berombak, atau bertompok merosakkan kerja cat yang sebaliknya baik. Skim coating dinding meratakan permukaan supaya kemasan cat akhir kelihatan licin dan profesional. KL Servis Rumah menyediakan skim coating dinding profesional di seluruh Kuala Lumpur dan Selangor, dari RM 5 / kaki persegi.
+
+## Apa itu skim coating dinding?
+
+Ia ialah aplikasi lapisan nipis plaster atau sebatian sendi ke seluruh permukaan dinding. Ia mengisi kecacatan kecil, melicinkan tampalan, dan mencipta asas sekata untuk pengecatan.
+
+## Bila anda perlu skim coating dinding?
+
+- Dinding anda kasar atau berombak dan kecacatan kelihatan di bawah cat.
+- Pembaikan atau tampalan sebelumnya kelihatan sebagai tekstur berbeza.
+- Kertas dinding lama ditanggalkan, meninggalkan pelekat dan plaster rosak.
+- Anda mahukan kemasan cat premium yang sempurna.
+
+## Berapa kos skim coating dinding?
+
+Skim coating dinding bermula dari RM 5 / kaki persegi. Kos akhir bergantung pada luas dinding dan keadaannya.
+
+## Dapatkan sebut harga skim coat dinding
+
+Untuk dinding licin dan sekata serta kemasan cat yang sempurna, skim coating dinding ialah jawapannya. WhatsApp kami untuk sebut harga percuma.`
+    },
+    zh: {
+      slug: "qiang-mian-pi-hui",
+      title: "吉隆坡与雪兰莪墙面批灰", category: "批灰工程",
+      excerpt: "在吉隆坡与雪兰莪通过专业墙面批灰获得平滑均匀的墙面——抚平粗糙或斑驳的表面，打造完美可上漆的饰面，每平方英尺RM 5起。",
+      metaTitle: "吉隆坡与雪兰莪墙面批灰",
+      metaDesc: "在吉隆坡与雪兰莪通过专业墙面批灰获得平滑均匀的墙面——抚平粗糙或斑驳的表面，打造完美可上漆的饰面。每平方英尺RM 5起。",
+      content: `粗糙、起伏或斑驳的墙面会毁掉本来不错的油漆工程。墙面批灰能抚平表面，使最终的油漆饰面看起来平滑专业。KL Servis Rumah 在吉隆坡和雪兰莪全境提供专业墙面批灰服务，每平方英尺RM 5起。
+
+## 什么是墙面批灰？
+
+它是在整个墙面上涂覆一层薄薄的石膏或接缝剂。它填补细小的瑕疵、抚平修补处，并形成均匀的涂漆基础。
+
+## 何时需要墙面批灰？
+
+- 您的墙面粗糙或起伏，瑕疵在油漆下显现。
+- 先前的修补或补丁以不同纹理显现。
+- 旧墙纸被拆除，留下胶粘剂和损坏的石膏。
+- 您想要完美、高级的油漆饰面。
+
+## 墙面批灰费用多少？
+
+墙面批灰每平方英尺RM 5起。最终费用取决于墙面面积及其状况。
+
+## 获取墙面批灰报价
+
+想要平滑均匀的墙面和完美的油漆饰面，墙面批灰就是答案。WhatsApp联系我们获取免费报价。`
+    }
+  },
+  "ceiling-skim-coating-kl": {
+    ms: {
+      slug: "skim-coat-siling",
+      title: "Skim Coat Siling di KL & Selangor", category: "Skim Coat",
+      excerpt: "Ratakan dan licinkan siling anda dengan skim coating siling profesional di seluruh KL & Selangor — meratakan sambungan, retak dan permukaan tidak rata, dari RM 6 / kaki persegi.",
+      metaTitle: "Skim Coat Siling di KL & Selangor",
+      metaDesc: "Ratakan dan licinkan siling anda dengan skim coating siling profesional di KL & Selangor — meratakan sambungan, retak dan permukaan tidak rata. Dari RM 6 / kaki persegi.",
+      content: `Siling yang tidak rata atau retak sangat kelihatan dan menjejaskan keseluruhan bilik. Skim coating siling meratakan permukaan, meratakan sambungan dan retak kecil, serta memberikan siling bersih dan licin sedia cat. KL Servis Rumah menyediakan skim coating siling profesional di seluruh Kuala Lumpur dan Selangor, dari RM 6 / kaki persegi.
+
+## Bila anda perlu skim coating siling?
+
+- Siling anda menunjukkan sambungan atau jahitan panel.
+- Permukaan siling tidak rata atau berombak.
+- Terdapat retak kecil atau retak rambut.
+- Anda mahukan siling licin dan bersih sebelum mengecat semula.
+
+## Proses
+
+1. **Penilaian** — kami memeriksa siling dan mengenal pasti kawasan bermasalah.
+2. **Persediaan** — bahan longgar dibuang dan sebarang retak dibaiki.
+3. **Aplikasi skim coat** — lapisan nipis dan sekata disapu merentasi siling.
+4. **Pengamplasan** — siling diamplas licin setelah kering.
+
+## Berapa kos skim coating siling?
+
+Skim coating siling bermula dari RM 6 / kaki persegi. Kos akhir bergantung pada luas siling dan keadaannya.
+
+## Dapatkan sebut harga skim coat siling
+
+Beri siling anda kemasan bersih dan licin. WhatsApp kami untuk sebut harga percuma.`
+    },
+    zh: {
+      slug: "tian-hua-ban-pi-hui",
+      title: "吉隆坡与雪兰莪天花板批灰", category: "批灰工程",
+      excerpt: "在吉隆坡与雪兰莪通过专业天花板批灰找平和抚平您的天花板——抚平接缝、裂缝和不平整表面，每平方英尺RM 6起。",
+      metaTitle: "吉隆坡与雪兰莪天花板批灰",
+      metaDesc: "在吉隆坡与雪兰莪通过专业天花板批灰找平和抚平您的天花板——抚平接缝、裂缝和不平整表面。每平方英尺RM 6起。",
+      content: `不平整或开裂的天花板非常显眼，会破坏整个房间的效果。天花板批灰能找平表面、抚平接缝和小裂缝，并带来干净、平滑、可上漆的天花板。KL Servis Rumah 在吉隆坡和雪兰莪全境提供专业天花板批灰服务，每平方英尺RM 6起。
+
+## 何时需要天花板批灰？
+
+- 您的天花板显示面板接缝或接缝线。
+- 天花板表面不平整或起伏。
+- 有小裂缝或发丝裂纹。
+- 重涂前您想要平滑干净的天花板。
+
+## 流程
+
+1. **评估** — 我们检查天花板并确定问题区域。
+2. **准备** — 清除松动的材料并修复任何裂缝。
+3. **涂刷批灰** — 在整个天花板涂覆一层薄薄、均匀的批灰。
+4. **打磨** — 干后天花板被打磨平滑。
+
+## 天花板批灰费用多少？
+
+天花板批灰每平方英尺RM 6起。最终费用取决于天花板面积及其状况。
+
+## 获取天花板批灰报价
+
+让您的天花板拥有干净、平滑的饰面。WhatsApp联系我们获取免费报价。`
+    }
+  },
+  "vinyl-spc-laminate-flooring-kl": {
+    ms: {
+      slug: "perkhidmatan-lantai-kl",
+      title: "Lantai Vinil, SPC & Laminate di Kuala Lumpur & Selangor", category: "Lantai",
+      excerpt: "Pemasangan lantai profesional di seluruh KL & Selangor — lantai SPC click-lock, laminate dan luxury vinyl plank serta skirting & peralihan, dari RM 14 / kaki persegi.",
+      metaTitle: "Lantai Vinil, SPC & Laminate di KL & Selangor",
+      metaDesc: "Pemasangan lantai profesional di KL & Selangor — SPC click-lock, laminate dan luxury vinyl plank serta skirting & peralihan. Dari RM 14 / kaki persegi.",
+      content: `Lantai vinil, SPC, dan laminate telah menjadi pilihan lantai paling popular untuk rumah Malaysia — ia kelihatan hebat, tahan kelembapan, dan jauh lebih murah daripada kayu pepejal. KL Servis Rumah menyediakan pemasangan lantai profesional di seluruh Kuala Lumpur dan Selangor, dari RM 14 / kaki persegi.
+
+## Jenis lantai yang kami pasang
+
+- **Lantai SPC click-lock** — lantai komposit plastik-batu yang tahan lama dan kalis air.
+- **Lantai laminate** — pilihan rupa kayu yang menjimatkan.
+- **Luxury vinyl plank (LVP)** — papan vinil fleksibel dan kalis air.
+- **Skirting & jalur peralihan** — mengemas tepi dan peralihan dengan kemas.
+
+## Berapa kos lantai?
+
+| Jenis lantai | Harga permulaan |
+|---|---|
+| Pemasangan lantai SPC click-lock | Dari RM 14 / kaki persegi |
+| Pemasangan lantai laminate | Dari RM 11 / kaki persegi |
+| Pemasangan luxury vinyl plank (LVP) | Dari RM 16 / kaki persegi |
+| Pemasangan skirting & jalur peralihan | Dari RM 8 / kaki linier |
+
+## Dapatkan sebut harga lantai
+
+Sama ada anda lebih suka SPC, laminate, atau papan vinil, KL Servis Rumah menyediakan pemasangan lantai profesional di seluruh Kuala Lumpur dan Selangor. WhatsApp kami untuk sebut harga percuma.`
+    },
+    zh: {
+      slug: "ji-long-po-xue-lang-e-di-ban-fu-wu",
+      title: "吉隆坡与雪兰莪SPC、复合与强化地板", category: "地板工程",
+      excerpt: "在吉隆坡与雪兰莪提供专业地板安装——SPC卡扣地板、强化地板和石塑锁扣地板以及踢脚线和过渡条安装，每平方英尺RM 14起。",
+      metaTitle: "吉隆坡与雪兰莪SPC、复合与强化地板",
+      metaDesc: "吉隆坡与雪兰莪专业地板安装——SPC卡扣、强化和石塑锁扣地板以及踢脚线与过渡条安装。每平方英尺RM 14起。",
+      content: `SPC、强化和石塑地板已成为马来西亚家庭最受欢迎的地板选择——它们外观出色、耐潮，且比实木便宜得多。KL Servis Rumah 在吉隆坡和雪兰莪全境提供专业地板安装服务，每平方英尺RM 14起。
+
+## 我们安装的地板类型
+
+- **SPC卡扣地板** — 耐用、防水的石塑复合地板。
+- **强化地板** — 经济实惠的木纹选择。
+- **石塑锁扣地板（LVP）** — 柔韧、防水的石塑板。
+- **踢脚线与过渡条安装** — 整齐地完成边缘和过渡。
+
+## 地板费用多少？
+
+| 地板类型 | 起步价 |
+|---|---|
+| SPC卡扣地板安装 | 每平方英尺 RM 14 起 |
+| 强化地板安装 | 每平方英尺 RM 11 起 |
+| 石塑锁扣地板（LVP）安装 | 每平方英尺 RM 16 起 |
+| 踢脚线与过渡条安装 | 每直线英尺 RM 8 起 |
+
+## 获取地板报价
+
+无论您喜欢SPC、强化还是石塑锁扣地板，KL Servis Rumah 都能在吉隆坡和雪兰莪全境提供专业地板安装服务。WhatsApp联系我们获取免费报价。`
+    }
+  },
+  "spc-click-lock-flooring-kl": {
+    ms: {
+      slug: "pemasangan-lantai-spc-click-lock",
+      title: "Pemasangan Lantai SPC Click-Lock di KL & Selangor", category: "Lantai",
+      excerpt: "Lantai SPC click-lock yang tahan lama dan kalis air dipasang di seluruh KL & Selangor — sesuai untuk dapur dan kawasan basah, dari RM 14 / kaki persegi.",
+      metaTitle: "Pemasangan Lantai SPC Click-Lock di KL & Selangor",
+      metaDesc: "Lantai SPC click-lock yang tahan lama dan kalis air dipasang di KL & Selangor — sesuai untuk dapur dan kawasan basah. Dari RM 14 / kaki persegi.",
+      content: `Lantai SPC (komposit plastik-batu) click-lock ialah salah satu pilihan lantai paling popular di rumah Malaysia kerana ia tahan lama, kalis air, dan kelihatan seperti kayu sebenar. KL Servis Rumah menyediakan pemasangan lantai SPC click-lock profesional di seluruh Kuala Lumpur dan Selangor, dari RM 14 / kaki persegi.
+
+## Mengapa pilih lantai SPC?
+
+- **Kalis air** — tahan lembapan, sesuai untuk dapur dan kawasan basah.
+- **Tahan lama** — teras tegar tahan penyok dan haus.
+- **Mudah diselenggara** — mudah dibersihkan dan dijaga.
+- **Rupa realistik** — tersedia dalam banyak kemasan kayu dan batu.
+
+## Proses pemasangan
+
+1. **Ukuran** — kami mengukur kawasan dan mengira lantai yang diperlukan.
+2. **Persediaan lantai bawah** — lantai dibersihkan, diratakan, dan dikeringkan.
+3. **Aklimatisasi** — lantai dibiarkan menyesuaikan diri dengan keadaan bilik.
+4. **Pemasangan** — papan diletakkan dan diklik bersama dengan jurang pengembangan yang betul.
+
+## Berapa kos lantai SPC?
+
+Pemasangan lantai SPC click-lock bermula dari RM 14 / kaki persegi. Kos akhir bergantung pada kawasan, produk SPC, dan keadaan lantai bawah.
+
+## Dapatkan sebut harga lantai SPC
+
+Nikmati lantai tahan lama dan kalis air dengan rupa kayu yang realistik. WhatsApp kami untuk sebut harga percuma.`
+    },
+    zh: {
+      slug: "spc-ka-kou-di-ban-an-zhuang",
+      title: "吉隆坡与雪兰莪SPC卡扣地板安装", category: "地板工程",
+      excerpt: "在吉隆坡与雪兰莪安装耐用防水的SPC卡扣地板——非常适合厨房和湿区，每平方英尺RM 14起。",
+      metaTitle: "吉隆坡与雪兰莪SPC卡扣地板安装",
+      metaDesc: "在吉隆坡与雪兰莪安装耐用防水的SPC卡扣地板——非常适合厨房和湿区。每平方英尺RM 14起。",
+      content: `SPC（石塑复合）卡扣地板是马来西亚家庭最受欢迎的地板选择之一，因为它耐用、防水且外观像真实木材。KL Servis Rumah 在吉隆坡和雪兰莪全境提供专业SPC卡扣地板安装服务，每平方英尺RM 14起。
+
+## 为什么选择SPC地板？
+
+- **防水** — 耐潮，适合厨房和湿区。
+- **耐用** — 刚性核心耐凹陷和磨损。
+- **易于维护** — 易于清洁和保养。
+- **外观逼真** — 提供多种木纹和石纹饰面。
+
+## 安装流程
+
+1. **测量** — 我们测量面积并计算所需地板。
+2. **基层准备** — 清洁、找平并干燥地面。
+3. **适应环境** — 让地板适应房间温度和湿度。
+4. **安装** — 板材以正确的膨胀间隙铺设并卡合。
+
+## SPC地板费用多少？
+
+SPC卡扣地板安装每平方英尺RM 14起。最终费用取决于面积、所选产品、基层状况。
+
+## 获取SPC地板报价
+
+享受耐用防水、外观逼真的地板。WhatsApp联系我们获取免费报价。`
+    }
+  },
+  "laminate-flooring-kl": {
+    ms: {
+      slug: "pemasangan-lantai-laminate",
+      title: "Pemasangan Lantai Laminate di KL & Selangor", category: "Lantai",
+      excerpt: "Lantai laminate rupa kayu yang menjimatkan dipasang di seluruh KL & Selangor — sesuai untuk bilik tidur dan ruang tamu, dari RM 11 / kaki persegi.",
+      metaTitle: "Pemasangan Lantai Laminate di KL & Selangor",
+      metaDesc: "Lantai laminate rupa kayu yang menjimatkan dipasang di KL & Selangor — sesuai untuk bilik tidur dan ruang tamu. Dari RM 11 / kaki persegi.",
+      content: `Lantai laminate memberikan rumah anda rupa kayu yang hangat dengan kos yang jauh lebih rendah. Ia ialah pilihan popular dan berpatutan untuk bilik tidur dan ruang tamu di seluruh Kuala Lumpur dan Selangor. KL Servis Rumah menyediakan pemasangan lantai laminate profesional, dari RM 11 / kaki persegi.
+
+## Mengapa pilih lantai laminate?
+
+- **Berpatutan** — rupa kayu pada kos lebih rendah.
+- **Tahan lama** — permukaan keras yang tahan calar dan haus harian.
+- **Mudah diselenggara** — mudah dibersihkan dan dijaga.
+- **Pilihan luas** — banyak warna dan kemasan tersedia.
+
+## Proses pemasangan
+
+1. **Ukuran** — kami mengukur kawasan dan mengira lantai yang diperlukan.
+2. **Persediaan lantai bawah** — lantai dibersihkan, diratakan, dan underlay sesuai diletakkan.
+3. **Aklimatisasi** — lantai menyesuaikan diri dengan keadaan bilik.
+4. **Pemasangan** — papan diletakkan dengan jarak dan penguncian yang betul.
+
+## Berapa kos lantai laminate?
+
+Pemasangan lantai laminate bermula dari RM 11 / kaki persegi. Kos akhir bergantung pada kawasan, produk, dan keadaan lantai bawah.
+
+## Dapatkan sebut harga lantai laminate
+
+Tambahkan rupa kayu yang hangat pada harga yang berpatutan. WhatsApp kami untuk sebut harga percuma.`
+    },
+    zh: {
+      slug: "fu-he-di-ban-an-zhuang",
+      title: "吉隆坡与雪兰莪强化地板安装", category: "地板工程",
+      excerpt: "在吉隆坡与雪兰莪安装经济实惠的木纹强化地板——非常适合卧室和客厅，每平方英尺RM 11起。",
+      metaTitle: "吉隆坡与雪兰莪强化地板安装",
+      metaDesc: "在吉隆坡与雪兰莪安装经济实惠的木纹强化地板——非常适合卧室和客厅。每平方英尺RM 11起。",
+      content: `强化地板以实木价格的一小部分为您的家带来温暖的木纹外观。它是吉隆坡和雪兰莪全境卧室和客厅的热门实惠选择。KL Servis Rumah 提供专业强化地板安装服务，每平方英尺RM 11起。
+
+## 为什么选择强化地板？
+
+- **经济实惠** — 以更低成本获得木纹外观。
+- **耐用** — 坚硬的表面耐刮擦和日常磨损。
+- **易于维护** — 易于清洁和保养。
+- **选择广泛** — 提供多种颜色和饰面。
+
+## 安装流程
+
+1. **测量** — 我们测量面积并计算所需地板。
+2. **基层准备** — 清洁、找平地面并铺设合适的衬垫。
+3. **适应环境** — 让地板适应房间条件。
+4. **安装** — 板材以正确的间距和锁定方式铺设。
+
+## 强化地板费用多少？
+
+强化地板安装每平方英尺RM 11起。最终费用取决于面积、产品和基层状况。
+
+## 获取强化地板报价
+
+以实惠的价格增添温暖的木纹外观。WhatsApp联系我们获取免费报价。`
+    }
+  },
+  "epoxy-polyurethane-flooring-kl": {
+    ms: {
+      slug: "perkhidmatan-lantai-epoksi-kl",
+      title: "Lantai Epoksi & Poliuretana di Kuala Lumpur & Selangor", category: "Lantai",
+      excerpt: "Lantai epoksi dan poliuretana profesional di seluruh KL & Selangor — self-levelling, flake/kuarza broadcast dan mortar screed tugas berat serta pembaikan, dari RM 22 / kaki persegi.",
+      metaTitle: "Lantai Epoksi & Poliuretana di KL & Selangor",
+      metaDesc: "Lantai epoksi & poliuretana profesional di KL & Selangor — self-levelling, flake/kuarza broadcast dan mortar screed tugas berat serta pembaikan. Dari RM 22 / kaki persegi.",
+      content: `Lantai epoksi ialah pilihan utama untuk garaj, balkoni, car porch, pejabat, dan ruang industri kerana ia kukuh, tanpa sambungan, dan mudah dibersihkan. KL Servis Rumah menyediakan lantai epoksi dan poliuretana profesional di seluruh Kuala Lumpur dan Selangor, dari RM 22 / kaki persegi.
+
+## Jenis lantai epoksi
+
+- **Lantai epoksi self-levelling** — kemasan licin, tanpa sambungan, dan tahan lama.
+- **Epoksi broadcast flake / kuarza** — permukaan hiasan dan tahan licin.
+- **Mortar screed tugas berat** — sistem tebal dan kukuh untuk kawasan lalu lintas tinggi.
+- **Pembaikan & salutan semula lantai epoksi** — memulihkan lantai epoksi haus atau rosak.
+
+## Mengapa pilih lantai epoksi?
+
+- **Tahan lama** — tahan haus, hentaman, dan bahan kimia.
+- **Tanpa sambungan** — tiada sambungan untuk kotoran dan air berkumpul.
+- **Mudah dibersihkan** — permukaan licin yang mudah dilap.
+- **Tahan air** — melindungi konkrit di bawahnya.
+
+## Berapa kos lantai epoksi?
+
+| Jenis lantai | Harga permulaan |
+|---|---|
+| Lantai epoksi self-levelling | Dari RM 22 / kaki persegi |
+| Epoksi broadcast flake / kuarza | Dari RM 26 / kaki persegi |
+| Mortar screed tugas berat | Dari RM 38 / kaki persegi |
+| Pembaikan & salutan semula lantai epoksi | Dari RM 14 / kaki persegi |
+
+## Dapatkan sebut harga lantai epoksi
+
+Beri garaj, balkoni, atau ruang komersial anda lantai yang kukuh, tanpa sambungan, dan mudah dibersihkan. WhatsApp kami untuk sebut harga percuma.`
+    },
+    zh: {
+      slug: "ji-long-po-xue-lang-e-huan-yang-di-ban-fu-wu",
+      title: "吉隆坡与雪兰莪环氧与聚氨酯地板", category: "地板工程",
+      excerpt: "在吉隆坡与雪兰莪提供专业环氧与聚氨酯地板——自流平、薄片/石英撒播和重载砂浆找平以及修补，每平方英尺RM 22起。",
+      metaTitle: "吉隆坡与雪兰莪环氧与聚氨酯地板",
+      metaDesc: "吉隆坡与雪兰莪专业环氧与聚氨酯地板——自流平、薄片/石英撒播和重载砂浆找平以及修补。每平方英尺RM 22起。",
+      content: `环氧地板是车库、阳台、停车棚、办公室和工业空间的首选，因为它坚固、无缝且易于清洁。KL Servis Rumah 在吉隆坡和雪兰莪全境提供专业环氧与聚氨酯地板服务，每平方英尺RM 22起。
+
+## 我们提供的环氧地板类型
+
+- **自流平环氧地板** — 平滑、无缝、耐用的饰面。
+- **薄片/石英撒播环氧** — 装饰性、防滑的表面。
+- **重载砂浆找平** — 适用于高人流量区域的坚固厚实系统。
+- **环氧地板修补与重涂** — 修复磨损或损坏的环氧地板。
+
+## 为什么选择环氧地板？
+
+- **耐用** — 耐磨损、冲击和化学品。
+- **无缝** — 无接缝可积聚污垢和水。
+- **易于清洁** — 易于擦拭的平滑表面。
+- **耐水** — 保护下方的混凝土。
+
+## 环氧地板费用多少？
+
+| 地板类型 | 起步价 |
+|---|---|
+| 自流平环氧地板 | 每平方英尺 RM 22 起 |
+| 薄片/石英撒播环氧 | 每平方英尺 RM 26 起 |
+| 重载砂浆找平 | 每平方英尺 RM 38 起 |
+| 环氧地板修补与重涂 | 每平方英尺 RM 14 起 |
+
+## 获取环氧地板报价
+
+让您的车库、阳台或商业空间拥有坚固、无缝、易清洁的地板。WhatsApp联系我们获取免费报价。`
+    }
+  },
+  "self-levelling-epoxy-floor-kl": {
+    ms: {
+      slug: "lantai-epoksi-self-levelling",
+      title: "Lantai Epoksi Self-Levelling di KL & Selangor", category: "Lantai",
+      excerpt: "Lantai epoksi self-levelling yang licin, tanpa sambungan dipasang di seluruh KL & Selangor — sesuai untuk garaj, pejabat, balkoni dan ruang pameran, dari RM 22 / kaki persegi.",
+      metaTitle: "Lantai Epoksi Self-Levelling di KL & Selangor",
+      metaDesc: "Lantai epoksi self-levelling yang licin dan tanpa sambungan dipasang di KL & Selangor — sesuai untuk garaj, pejabat, balkoni dan ruang pameran. Dari RM 22 / kaki persegi.",
+      content: `Lantai epoksi self-levelling ialah sistem lantai licin, tanpa sambungan, dan tahan lama yang merebak untuk mencipta permukaan rata dan sekata. Ia ialah pilihan popular untuk garaj, car porch, pejabat, balkoni, dan ruang pameran di seluruh Kuala Lumpur dan Selangor. KL Servis Rumah menyediakan lantai epoksi self-levelling profesional, dari RM 22 / kaki persegi.
+
+## Mengapa pilih epoksi self-levelling?
+
+- **Licin, tanpa sambungan** — tiada sambungan untuk kotoran atau air berkumpul.
+- **Tahan lama** — tahan haus, hentaman, dan kesan.
+- **Mudah dibersihkan** — mudah dilap.
+- **Rupa moden** — kemasan bersih dan profesional.
+
+## Proses pemasangan
+
+1. **Persediaan permukaan** — konkrit dibersihkan, dikisar, dan sebarang retak dibaiki.
+2. **Primer** — primer disapu untuk membantu epoksi melekat.
+3. **Aplikasi dituang** — epoksi self-levelling dituang dan disebar sekata.
+4. **Perataan** — epoksi meratakan sendiri untuk mencipta permukaan licin.
+
+## Berapa kos lantai epoksi self-levelling?
+
+Lantai epoksi self-levelling bermula dari RM 22 / kaki persegi. Kos akhir bergantung pada kawasan, keadaan permukaan, dan kemasan.
+
+## Dapatkan sebut harga lantai epoksi self-levelling
+
+Beri garaj, pejabat, atau balkoni anda lantai licin, tanpa sambungan, dan tahan lama. WhatsApp kami untuk sebut harga percuma.`
+    },
+    zh: {
+      slug: "zi-liu-ping-huan-yang-di-ban",
+      title: "吉隆坡与雪兰莪自流平环氧地板", category: "地板工程",
+      excerpt: "在吉隆坡与雪兰莪安装平滑无缝的自流平环氧地板——非常适合车库、办公室、阳台和展厅，每平方英尺RM 22起。",
+      metaTitle: "吉隆坡与雪兰莪自流平环氧地板",
+      metaDesc: "在吉隆坡与雪兰莪安装平滑无缝的自流平环氧地板——非常适合车库、办公室、阳台和展厅。每平方英尺RM 22起。",
+      content: `自流平环氧地板是一种平滑、无缝、耐用的地面系统，会摊开形成平坦均匀的表面。它是吉隆坡和雪兰莪全境车库、停车棚、办公室、阳台和展厅的热门选择。KL Servis Rumah 提供专业自流平环氧地板服务，每平方英尺RM 22起。
+
+## 为什么选择自流平环氧地板？
+
+- **平滑无缝** — 无接缝可积聚污垢或水。
+- **耐用** — 耐磨损、冲击和污渍。
+- **易于清洁** — 易于擦拭。
+- **现代外观** — 干净、专业的饰面。
+
+## 安装流程
+
+1. **表面准备** — 清洁、打磨混凝土并修复任何裂缝。
+2. **底漆** — 涂刷底漆以帮助环氧粘合。
+3. **浇注施工** — 浇注自流平环氧并均匀摊开。
+4. **找平** — 环氧自行找平，形成平滑表面。
+
+## 自流平环氧地板费用多少？
+
+自流平环氧地板每平方英尺RM 22起。最终费用取决于面积、表面状况和饰面。
+
+## 获取自流平环氧地板报价
+
+让您的车库、办公室或阳台拥有平滑、无缝、耐用的地板。WhatsApp联系我们获取免费报价。`
+    }
+  },
+  "flake-quartz-broadcast-epoxy-kl": {
+    ms: {
+      slug: "epoksi-broadcast-flake-kuarza",
+      title: "Epoksi Broadcast Flake / Kuarza di KL & Selangor", category: "Lantai",
+      excerpt: "Lantai epoksi broadcast flake atau kuarza yang hiasan dan tahan licin dipasang di seluruh KL & Selangor — sesuai untuk garaj, balkoni dan kawasan lalu lintas tinggi, dari RM 26 / kaki persegi.",
+      metaTitle: "Epoksi Broadcast Flake / Kuarza di KL & Selangor",
+      metaDesc: "Lantai epoksi broadcast flake atau kuarza yang hiasan dan tahan licin dipasang di KL & Selangor — sesuai untuk garaj, balkoni dan kawasan lalu lintas tinggi. Dari RM 26 / kaki persegi.",
+      content: `Lantai epoksi broadcast flake atau kuarza menggabungkan ketahanan dengan kemasan hiasan dan tahan licin. Ia ialah pilihan sangat baik untuk garaj, car porch, balkoni, dan kawasan lalu lintas tinggi di seluruh Kuala Lumpur dan Selangor. KL Servis Rumah menyediakan lantai epoksi broadcast flake dan kuarza profesional, dari RM 26 / kaki persegi.
+
+## Mengapa pilih epoksi broadcast?
+
+- **Tahan licin** — permukaan bertekstur memberikan cengkaman lebih baik daripada epoksi licin.
+- **Hiasan** — tersedia dalam banyak campuran warna untuk rupa tersuai.
+- **Tahan lama** — tahan haus, hentaman, dan kesan.
+- **Menyembunyikan kecacatan** — tekstur menyamar kesan permukaan kecil.
+
+## Proses pemasangan
+
+1. **Persediaan permukaan** — konkrit dibersihkan, dikisar, dan sebarang retak dibaiki.
+2. **Primer dan lapisan asas** — primer dan lapisan asas epoksi berwarna disapu.
+3. **Broadcast** — flake atau kuarza disebar ke atas asas basah.
+4. **Topcoat** — topcoat pelindung telus menyekat permukaan.
+
+## Berapa kos epoksi broadcast?
+
+Epoksi broadcast flake / kuarza bermula dari RM 26 / kaki persegi. Kos akhir bergantung pada kawasan, warna, dan keadaan permukaan.
+
+## Dapatkan sebut harga epoksi broadcast
+
+Gabungkan ketahanan dengan kemasan hiasan dan tahan licin. WhatsApp kami untuk sebut harga percuma.`
+    },
+    zh: {
+      slug: "bao-pian-shi-ying-sa-bo-huan-yang",
+      title: "吉隆坡与雪兰莪薄片/石英撒播环氧地板", category: "地板工程",
+      excerpt: "在吉隆坡与雪兰莪安装装饰性、防滑的薄片或石英撒播环氧地板——非常适合车库、阳台和高人流区域，每平方英尺RM 26起。",
+      metaTitle: "吉隆坡与雪兰莪薄片/石英撒播环氧地板",
+      metaDesc: "在吉隆坡与雪兰莪安装装饰性、防滑的薄片或石英撒播环氧地板——非常适合车库、阳台和高人流区域。每平方英尺RM 26起。",
+      content: `薄片或石英撒播环氧地板结合了耐用性与装饰性、防滑的饰面。它是吉隆坡和雪兰莪全境车库、停车棚、阳台和高人流区域的绝佳选择。KL Servis Rumah 提供专业薄片和石英撒播环氧地板服务，每平方英尺RM 26起。
+
+## 为什么选择撒播环氧地板？
+
+- **防滑** — 纹理表面比光滑环氧提供更好的抓握力。
+- **装饰性** — 提供多种颜色混合，实现定制外观。
+- **耐用** — 耐磨损、冲击和污渍。
+- **隐藏瑕疵** — 纹理遮盖细小的表面痕迹。
+
+## 安装流程
+
+1. **表面准备** — 清洁、打磨混凝土并修复任何裂缝。
+2. **底漆和底涂层** — 涂刷底漆和彩色环氧底涂层。
+3. **撒播** — 将薄片或石英撒在湿的基底上。
+4. **面漆** — 透明保护面漆密封表面。
+
+## 撒播环氧费用多少？
+
+薄片/石英撒播环氧每平方英尺RM 26起。最终费用取决于面积、颜色和表面状况。
+
+## 获取撒播环氧报价
+
+将耐用性与装饰性、防滑的饰面相结合。WhatsApp联系我们获取免费报价。`
+    }
+  },
+  "roof-repair-waterproofing-kl": {
+    ms: {
+      slug: "perkhidmatan-pembaikan-bumbung-kl",
+      title: "Pembaikan Bumbung & Kalis Air di Kuala Lumpur & Selangor", category: "Pembaikan Bumbung",
+      excerpt: "Pembaikan bumbung dan kalis air profesional di seluruh KL & Selangor — diagnosis dan pembaikan bocor bumbung, re-bedding permatang, pembersihan longkang dan kalis air membran torch-on.",
+      metaTitle: "Pembaikan Bumbung & Kalis Air di KL & Selangor",
+      metaDesc: "Pembaikan bumbung & kalis air profesional di KL & Selangor — diagnosis dan pembaikan bocor bumbung, re-bedding permatang, pembersihan longkang dan kalis air membran torch-on.",
+      content: `Bumbung bocor atau rosak boleh menyebabkan kerosakan serius pada rumah anda — siling bernoda, dinding lembap, dan juga masalah struktur dari masa ke masa. KL Servis Rumah menyediakan perkhidmatan pembaikan bumbung dan kalis air profesional di seluruh Kuala Lumpur dan Selangor.
+
+## Perkhidmatan bumbung
+
+- **Diagnosis & pembaikan bocor bumbung** — mencari dan membaiki punca bocor bumbung.
+- **Re-bedding & re-pointing permatang** — menyegel semula jubin permatang bumbung.
+- **Pembersihan & penjajaran semula longkang** — membersihkan dan menjajarkan semula longkang.
+- **Kalis air membran torch-on penuh** — lapisan kalis air tahan lama untuk bumbung rata.
+
+## Bila menghubungi profesional pembaikan bumbung
+
+- Kesan air muncul di siling selepas hujan.
+- Anda boleh melihat jubin bumbung rosak, retak, atau hilang.
+- Longkang melimpah atau bocor.
+
+## Berapa kos pembaikan bumbung?
+
+| Perkhidmatan | Harga permulaan |
+|---|---|
+| Diagnosis & pembaikan bocor bumbung | Dari RM 380 |
+| Re-bedding & re-pointing permatang | Dari RM 22 / kaki linier |
+| Pembersihan & penjajaran semula longkang | Dari RM 320 |
+| Kalis air membran torch-on penuh | Dari RM 26 / kaki persegi |
+
+## Dapatkan sebut harga pembaikan bumbung
+
+Lindungi rumah anda daripada kerosakan bumbung dengan pembaikan dan kalis air profesional. WhatsApp kami untuk pemeriksaan percuma.`
+    },
+    zh: {
+      slug: "ji-long-po-xue-lang-e-wu-ding-xiu-fu-fu-wu",
+      title: "吉隆坡与雪兰莪屋顶维修与防水", category: "屋顶维修",
+      excerpt: "在吉隆坡与雪兰莪提供专业屋顶维修与防水——屋顶漏水诊断与维修、屋脊重铺、排水沟清洁以及热熔卷材防水，附固定报价。",
+      metaTitle: "吉隆坡与雪兰莪屋顶维修与防水",
+      metaDesc: "吉隆坡与雪兰莪专业屋顶维修与防水——屋顶漏水诊断与维修、屋脊重铺、排水沟清洁及热熔卷材防水，附固定报价。",
+      content: `漏水或损坏的屋顶会对您的家造成严重损坏——天花板污渍、墙壁潮湿，甚至随时间出现结构问题。KL Servis Rumah 在吉隆坡和雪兰莪全境提供专业屋顶维修与防水服务。
+
+## 我们提供的屋顶服务
+
+- **屋顶漏水诊断与维修** — 找到并修复屋顶漏水的来源。
+- **屋脊重铺与勾缝** — 重新密封屋脊瓦以防止漏水。
+- **排水沟清洁与校正** — 清理和校正堵塞或损坏的排水沟。
+- **全热熔卷材防水** — 为平屋顶提供耐用的防水层。
+
+## 何时应请屋顶维修专业人士
+
+- 雨后天花板出现水渍。
+- 您能看到损坏、开裂或缺失的屋顶瓦片。
+- 排水沟溢出或漏水。
+
+## 屋顶维修费用多少？
+
+| 服务 | 起步价 |
+|---|---|
+| 屋顶漏水诊断与维修 | RM 380 起 |
+| 屋脊重铺与勾缝 | 每直线英尺 RM 22 起 |
+| 排水沟清洁与校正 | RM 320 起 |
+| 全热熔卷材防水 | 每平方英尺 RM 26 起 |
+
+## 获取屋顶维修报价
+
+通过专业维修和防水保护您的家免受屋顶损坏。WhatsApp联系我们获取免费检查。`
+    }
+  },
+  "roof-leak-diagnosis-repair-kl": {
+    ms: {
+      slug: "diagnosis-dan-pembaikan-bocor-bumbung",
+      title: "Diagnosis & Pembaikan Bocor Bumbung di KL & Selangor", category: "Pembaikan Bumbung",
+      excerpt: "Cari dan baiki punca bocor bumbung anda di seluruh KL & Selangor — diagnosis profesional jubin, permatang, flashing dan longkang, dengan pembaikan bersasar dari RM 380.",
+      metaTitle: "Diagnosis & Pembaikan Bocor Bumbung di KL & Selangor",
+      metaDesc: "Cari dan baiki punca bocor bumbung anda di KL & Selangor — diagnosis profesional jubin, permatang, flashing dan longkang, dengan pembaikan bersasar. Dari RM 380.",
+      content: `Bumbung bocor merosakkan siling, dinding, penebat, dan juga struktur dari masa ke masa. KL Servis Rumah menyediakan diagnosis dan pembaikan bocor bumbung profesional di seluruh Kuala Lumpur dan Selangor, dari RM 380.
+
+## Mengapa bocor bumbung sukar ditemui
+
+- **Air mengalir** — air mengalir di sepanjang kasau dan rasuk, muncul jauh dari titik bocor.
+- **Titik kemasukan tersembunyi** — kerosakan mungkin di bawah jubin atau di permatang.
+- **Pelbagai punca** — bumbung tua mungkin bocor di lebih daripada satu tempat.
+
+## Cara kami mendiagnosis bocor bumbung
+
+1. **Periksa bumbung** — kami memeriksa jubin, permatang, flashing, lembah, dan longkang.
+2. **Periksa bahagian dalam** — kami mengesan laluan air dari kesan siling.
+3. **Kenal pasti punca** — kami menunjukkan titik tepat kemasukan air.
+
+## Berapa kos pembaikan bocor bumbung?
+
+Diagnosis dan pembaikan bocor bumbung bermula dari RM 380. Kos akhir bergantung pada punca bocor, tahap kerosakan, dan akses.
+
+## Dapatkan bantuan dengan bocor bumbung
+
+Jika bumbung anda bocor, diagnosis yang betul mencari punca dan pembaikan bersasar membaikinya secara kekal. WhatsApp kami untuk pemeriksaan percuma.`
+    },
+    zh: {
+      slug: "wu-ding-lou-shui-jian-ce-yu-xiu-fu",
+      title: "吉隆坡与雪兰莪屋顶漏水诊断与维修", category: "屋顶维修",
+      excerpt: "在吉隆坡与雪兰莪找到并修复屋顶漏水来源——对瓦片、屋脊、防水板和排水沟进行专业诊断，针对性维修RM 380起。",
+      metaTitle: "吉隆坡与雪兰莪屋顶漏水诊断与维修",
+      metaDesc: "在吉隆坡与雪兰莪找到并修复屋顶漏水来源——对瓦片、屋脊、防水板和排水沟进行专业诊断，针对性维修。RM 380起。",
+      content: `屋顶漏水会随时间损坏天花板、墙壁、保温层甚至结构。KL Servis Rumah 在吉隆坡和雪兰莪全境提供专业屋顶漏水诊断与维修服务，RM 380起。
+
+## 为什么屋顶漏水难以发现
+
+- **水会流动** — 水沿着椽子和大梁流动，出现在远离漏水点的地方。
+- **隐藏的入口点** — 损坏可能在瓦片下方或屋脊处。
+- **多个来源** — 老旧屋顶可能在不止一处漏水。
+
+## 我们如何诊断屋顶漏水
+
+1. **检查屋顶** — 我们检查瓦片、屋脊、防水板、山谷和排水沟。
+2. **检查内部** — 我们从天花板污渍追踪水流路径。
+3. **确定来源** — 我们精确定位进水点。
+
+## 屋顶漏水维修费用多少？
+
+屋顶漏水诊断与维修RM 380起。最终费用取决于漏水来源、损坏程度和施工条件。
+
+## 获取屋顶漏水的帮助
+
+如果您的屋顶正在漏水，正确的诊断能找到来源，针对性维修能彻底修复。WhatsApp联系我们获取免费检查。`
+    }
+  },
+  "ridge-re-bedding-re-pointing-kl": {
+    ms: {
+      slug: "re-bedding-dan-re-pointing-permatang",
+      title: "Re-Bedding & Re-Pointing Permatang di KL & Selangor", category: "Pembaikan Bumbung",
+      excerpt: "Segel semula jubin permatang bumbung yang retak atau longgar untuk menghentikan bocor di seluruh KL & Selangor — re-bedding dan re-pointing permatang profesional, dari RM 22 / kaki linier.",
+      metaTitle: "Re-Bedding & Re-Pointing Permatang di KL & Selangor",
+      metaDesc: "Segel semula jubin permatang bumbung yang retak atau longgar untuk menghentikan bocor di KL & Selangor — re-bedding dan re-pointing permatang profesional. Dari RM 22 / kaki linier.",
+      content: `Permatang ialah titik tertinggi bumbung anda — dan salah satu tempat paling biasa bocor bermula. Apabila mortar antara jubin permatang retak atau hanyut, air boleh masuk. Re-bedding dan re-pointing permatang menyegel semula permatang untuk menghentikan bocor. KL Servis Rumah menyediakan perkhidmatan ini di seluruh Kuala Lumpur dan Selangor, dari RM 22 / kaki linier.
+
+## Apa itu re-bedding & re-pointing permatang?
+
+- **Re-bedding** — membuang lapisan mortar lama dan meletakkan semula jubin permatang di atas mortar katil baharu.
+- **Re-pointing** — membaiki dan mengisi semula sambungan antara jubin permatang dengan mortar baharu.
+
+## Bila re-bedding permatang diperlukan?
+
+- **Mortar retak atau hilang** antara jubin permatang.
+- **Jubin permatang longgar atau beralih**.
+- **Kesan air di siling berhampiran permatang**.
+
+## Proses
+
+1. **Pemeriksaan** — kami menilai keadaan jubin permatang dan mortar.
+2. **Penyingkiran** — jubin permatang longgar dan mortar lama dibuang.
+3. **Re-bedding** — jubin permatang diletakkan semula pada mortar katil baharu.
+4. **Re-pointing** — sambungan diisi dan dikemas dengan mortar baharu.
+
+## Berapa kos re-bedding permatang?
+
+Re-bedding & re-pointing permatang bermula dari RM 22 / kaki linier. Kos akhir bergantung pada panjang permatang dan keadaan jubin.
+
+## Dapatkan sebut harga re-bedding permatang
+
+Hentikan bocor bumbung di punca dengan re-bedding dan re-pointing permatang profesional. WhatsApp kami untuk pemeriksaan percuma.`
+    },
+    zh: {
+      slug: "wu-ji-zhong-pu-yu-gou-feng",
+      title: "吉隆坡与雪兰莪屋脊重铺与勾缝", category: "屋顶维修",
+      excerpt: "重新密封开裂或松动的屋顶屋脊瓦以阻止漏水——在吉隆坡与雪兰莪提供专业屋脊重铺与勾缝，每直线英尺RM 22起。",
+      metaTitle: "吉隆坡与雪兰莪屋脊重铺与勾缝",
+      metaDesc: "重新密封开裂或松动的屋顶屋脊瓦以阻止漏水——专业屋脊重铺与勾缝，每直线英尺RM 22起。",
+      content: `屋脊是您屋顶的最高点——也是最常见的漏水起始点之一。当屋脊瓦之间的灰浆开裂或被冲走时，水就会进入。屋脊重铺与勾缝可重新密封屋脊以阻止漏水。KL Servis Rumah 在吉隆坡和雪兰莪全境提供此项服务，每直线英尺RM 22起。
+
+## 什么是屋脊重铺与勾缝？
+
+- **重铺** — 移除旧的灰浆垫层，用新鲜的铺置灰浆重新铺设屋脊瓦。
+- **勾缝** — 用新鲜灰浆修复并重新填充屋脊瓦之间的接缝。
+
+## 何时需要屋脊重铺？
+
+- **屋脊瓦之间的灰浆开裂或缺失**。
+- **屋脊瓦松动或移位**。
+- **屋脊附近的天花板出现水渍**。
+
+## 流程
+
+1. **检查** — 我们评估屋脊瓦和灰浆的状况。
+2. **移除** — 移除松动的屋脊瓦和旧灰浆。
+3. **重铺** — 用新鲜的铺置灰浆重新铺设屋脊瓦。
+4. **勾缝** — 用新鲜灰浆填充并完成接缝。
+
+## 屋脊重铺费用多少？
+
+屋脊重铺与勾缝每直线英尺RM 22起。最终费用取决于屋脊长度和瓦片状况。
+
+## 获取屋脊重铺报价
+
+通过专业的屋脊重铺与勾缝从源头阻止屋顶漏水。WhatsApp联系我们获取免费检查。`
+    }
   }
 };
 
