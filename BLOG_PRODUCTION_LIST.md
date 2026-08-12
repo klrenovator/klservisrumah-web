@@ -1,5 +1,5 @@
 # Blog Production Master List — KL Servis Rumah
-Updated: 2026-08-13
+Updated: 2026-08-12
 
 REQUIREMENT: Every Main Service + Sub-Service + Problem must have 1 blog.
 LANGUAGES: English (EN), Malay (MS), Chinese (ZH) — 3 per item.
@@ -12,10 +12,10 @@ LANGUAGES: English (EN), Malay (MS), Chinese (ZH) — 3 per item.
 - Problems: 43
 - TOTAL BLOG POSTS NEEDED: (28 + 112 + 43) × 3 = ~549
 
-## LIVE / PROGRESS STATUS (as of Batch 4)
-- Blog items fully written (markdown, all 3 languages): 48 items × 3 = 144 files (Batches 1–4)
+## LIVE / PROGRESS STATUS (as of Batch 5)
+- Blog items fully written (markdown, all 3 languages): 63 items × 3 = 189 files (Batches 1–5)
 - Live site blog wiring: Batch 4 topics (15 items) wired into config (blog-data-batch4.ts + blog-i18n.ts) and publishing on /blog, /ms/blog, /zh/bo-ke
-- Batches 1–3: markdown production records (not wired to live site, per existing convention)
+- Batches 1–3 and Batch 5: markdown production records (not wired to live site, per existing Batch 1–3 convention)
 
 ---
 
@@ -77,6 +77,27 @@ Batch total: 45 blogs
 Progress: 144 / 549 (26.2%)
 Services done: 16/28 | Sub-services done: 31/112 | Problems done: 1/43
 Remaining: 405
+
+## BATCH 5 COMPLETED (2026-08-12)
+- Services: kitchen-cabinet, carpentry, door, window-repair, locksmith (main + 2 sub each)
+- 15 items × 3 languages = 45 blogs
+- Files (EN → blogs/en/): kitchen-cabinet, modular-kitchen-cabinet, custom-plywood-kitchen, carpentry, built-in-wardrobe, tv-console-and-feature-wall, door, solid-timber-door-installation, laminate-door-installation, window-repair, glass-replacement, window-seal-replacement, locksmith, smart-lock-installation, mortice-deadbolt-lock-replacement
+  - MS → blogs/ms/ (same filenames, localised slugs, e.g. perkhidmatan-kabinet-dapur-kl, almari-pakaian-tanam-kl)
+  - ZH → blogs/zh/ (same filenames, pinyin slugs, e.g. ji-long-po-xue-lang-e-chu-fang-chu-gui-fu-wu, ru-qiang-yi-gui-an-zhuang-kl)
+Batch total: 45 blogs
+Progress: 189 / 549 (34.4%)
+Services done: 21/28 | Sub-services done: 41/112 | Problems done: 1/43
+Remaining: 360
+
+## BATCH 5 NOTES / ISSUES
+- Frontmatter: all 45 files carry full YAML frontmatter (slug, title, excerpt, category, date, readTime, author, coverImage, metaTitle, metaDesc) + tracking fields (language, service, subService for sub-services, status, batch).
+- Internal links: 283 in-article links verified against real routes (services, sub-services, problems, live editorial blogs — EN/MS/ZH). No invented URLs.
+- Prices quoted are the company's published starting prices (from config/services-data.ts); no pricing invented.
+- Cover images point to existing assets: /hero/home-services-kitchen-cabinet-kl.jpg, /hero-carpentry.svg, /hero-door.svg, /hero-window.svg, /hero-locksmith.svg.
+- Live wiring: Batch 5 is markdown-only (same convention as Batches 1–3). Not added to blog-data-batch4.ts / blog-i18n.ts.
+- Cannibalisation watch (flagged, not skipped): kitchen-cabinet service blog overlaps live editorial kitchen-cabinet-material-guide-malaysia. Service articles stay process/quote focused and link to the material guide. Smart-lock-installation overlaps live editorial smart-lock-buying-guide-malaysia-2026; install article stays fit/process focused and links to the buying guide.
+- ZH wording: laminate bedroom doors are written as 防火板门 (Malaysian HPL/laminate), with an explicit note that this is not a certified 防火门 (fire-rated door).
+- Validation: frontmatter complete, no duplicate slugs/titles in the batch, internal link prefixes valid, problem slugs exist in problem-data.ts. `npm run type-check` could not run in this environment (`tsc` not on PATH / node_modules not installed). Markdown-only change should not affect the Next.js build.
 
 ## BATCH 4 NOTES / ISSUES
 - Frontmatter: all 45 files carry full YAML frontmatter (slug, title, excerpt, category, date, readTime, author, coverImage, metaTitle, metaDesc) + tracking fields (language, service, subService for sub-services, status, batch).
