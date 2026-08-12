@@ -2205,3 +2205,22 @@ Continued exactly from the final **Next Session — START HERE** section of `AI_
 - Next in-repo milestone: real locale problem routes (154) — still blocked pending GSC-evidenced consolidation of the 14 problem-overlap groups.
 - Business/translator QA of 224 localized specialty pages + 77 × MS/ZH problem pages remains owner-side; production `NEXT_PUBLIC_GA_ID` remains owner-only.
 - Never create standalone Air Conditioning content.
+---
+
+# Session 2026-08-12 (part 4) — GSC problem-overlap consolidation + locale problem routes
+
+Continued from the final **Next Session — START HERE**. The owner provided the GSC /problems/ analysis that unblocked item 2.
+
+## What was done
+- Documented 14-group verdicts in `docs/problem-overlap-gsc-decisions-2026-08-12.md`.
+- 12 evidence-based 301s via `config/problem-canonical.ts` + middleware (EN/MS/ZH).
+- 65 keep URLs remain indexable; redirected slugs stay in data but are not SSG'd or sitemap-listed.
+- Real locale pages `/ms/problems/[slug]` and `/zh/problems/[slug]` (130 pages), three-way hreflang, RelatedProblems / specialty / FAQ hub links now use locale paths.
+- Topical map updated to keep slugs only.
+
+## Verification
+- lint 0/0, type-check PASS, topical-map PASS, build SUCCESS (4,685 routes; 3,638 indexable pages in AI context).
+
+## Next
+- Translator/business QA + deploy + GSC re-measure of 301s and new MS/ZH problem URLs.
+- Never create standalone Air Conditioning content.

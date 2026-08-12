@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { problemPages } from "@/config/problem-data";
+import { isRedirectedProblemSlug, problemPath } from "@/config/problem-canonical";
 import { ArrowRight, AlertTriangle } from "lucide-react";
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
@@ -30,7 +31,7 @@ export function RelatedProblems({ serviceSlug, maxItems = 4 }: RelatedProblemsPr
   const { lang } = useLang();
 
   const related = problemPages
-    .filter((p) => p.serviceSlug === serviceSlug)
+    .filter((p) => p.serviceSlug === serviceSlug && !isRedirectedProblemSlug(p.slug))
     .slice(0, maxItems)
     .map((problem) => getLocalizedProblem(problem, lang));
 
@@ -55,7 +56,7 @@ export function RelatedProblems({ serviceSlug, maxItems = 4 }: RelatedProblemsPr
           {related.map((problem) => (
             <Link
               key={problem.slug}
-              href={`/problems/${problem.slug}`}
+              href={problemPath(problem.slug, lang)}
               className="bg-amber-50/40 rounded-2xl p-5 border border-amber-100 hover:border-amber-300 hover:shadow-md transition-all duration-300 group"
             >
               <div className="flex items-start gap-3">

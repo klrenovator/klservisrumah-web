@@ -40,7 +40,7 @@ const TOP_PROBLEMS = [
   "leaking-bathroom",
   "low-water-pressure",
   "clogged-drain",
-  "sagging-ceiling",
+  "sagging-plaster-ceiling",
   "toilet-not-flushing"
 ];
 
