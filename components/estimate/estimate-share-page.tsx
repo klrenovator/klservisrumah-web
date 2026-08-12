@@ -6,7 +6,7 @@ import { ArrowRight, BadgeCheck, Calculator, Phone, ShieldCheck, Sparkles } from
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
 import { buildServiceEstimator } from "@/lib/estimator/service-estimator";
-import { estimatePath } from "@/config/estimate-links";
+import { estimatePath, relatedEstimateLinks } from "@/config/estimate-links";
 import { servicesData } from "@/config/services-data";
 import { getLocalizedService } from "@/lib/service-i18n";
 import { siteConfig } from "@/config/site";
@@ -46,6 +46,17 @@ export function EstimateSharePage({
   const spec = useMemo(
     () => buildServiceEstimator({ slug, title: localizedTitle, warranty, t }),
     [slug, localizedTitle, warranty, t]
+  );
+
+  // Sibling estimators, localized like the rest of the page. See
+  // `relatedEstimateLinks` for why these exist.
+  const relatedEstimators = useMemo(
+    () =>
+      relatedEstimateLinks(slug).map((link) => ({
+        ...link,
+        title: getLocalizedService(servicesData[link.slug], lang).title
+      })),
+    [slug, lang]
   );
 
   return (
@@ -111,6 +122,39 @@ export function EstimateSharePage({
             </span>
           </div>
         </section>
+
+        {/* ── Other estimators ────────────────────────────────────────── */}
+        {relatedEstimators.length > 0 && (
+          <section className="mt-6 rounded-3xl border border-slate-200 bg-white p-6 sm:p-7">
+            <h2 className="text-lg font-black text-[#075985]">{t("estimateShare.relatedHeading")}</h2>
+            <p className="mt-2 text-sm font-semibold leading-relaxed text-slate-600">
+              {t("estimateShare.relatedSub")}
+            </p>
+            <ul className="mt-5 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
+              {relatedEstimators.map((estimator) => (
+                <li key={estimator.slug}>
+                  <Link
+                    href={estimator.href}
+                    className="group flex items-center justify-between gap-2 rounded-2xl border border-slate-100 bg-slate-50/60 px-4 py-3 transition hover:border-sky-200 hover:bg-sky-50"
+                  >
+                    <span className="min-w-0">
+                      <span className="block truncate text-sm font-bold text-slate-700 group-hover:text-[#075985]">
+                        {estimator.title}
+                      </span>
+                      <span className="mt-0.5 block text-xs font-semibold text-slate-500">
+                        {t("estimateShare.from", { price: estimator.startPrice })}
+                      </span>
+                    </span>
+                    <ArrowRight
+                      className="h-3.5 w-3.5 shrink-0 text-[#0EA5E9] transition-transform group-hover:translate-x-1"
+                      aria-hidden="true"
+                    />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
         {/* ── Next steps ──────────────────────────────────────────────── */}
         <section className="mt-6 flex flex-col gap-3 sm:flex-row">

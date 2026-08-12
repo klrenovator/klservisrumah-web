@@ -60,7 +60,7 @@ export function ToolPage({
   const shell = toolShellCopy[locale];
   const waLink = getWhatsAppLink({ service: content.name, lang: locale });
   const urls = localeUrls ?? toolLocaleUrls(content.slug);
-  const related = content.relatedTools
+  const related = relatedToolSlugs(content.slug)
     .map((slug) => {
       const tool = localizedToolContent(slug, locale);
       return toolsContent[slug] ? { name: tool.name, slug, firstStat: tool.stats[0].value } : null;
@@ -381,6 +381,57 @@ export function ToolPage({
       </section>
     </>
   );
+}
+
+/**
+ * How many sibling estimators each tool page links in "Try another estimator".
+ * Six keeps the card the same visual size it already was on the busiest tools
+ * while guaranteeing every tool in the catalogue receives inbound links.
+ */
+const RELATED_TOOL_COUNT = 6;
+
+/**
+ * The tools each tool page links to.
+ *
+ * The hand-curated `relatedTools` list in `config/tools-data.ts` is an
+ * *editorial* signal — "the estimator a visitor on this page most likely wants
+ * next" — and it stays first, because those pairings are genuinely useful
+ * (painting → wall area, leak triage → plumbing diagnostic).
+ *
+ * On its own, though, it is a star topology: it points at seven popular tools
+ * (painting-calculator alone received 34 of the sibling links) and leaves the
+ * other 30 estimators with zero inbound links from any sibling. Those pages
+ * were reachable only from the tools index and their two locale twins — three
+ * inbound links each, the whole 90-page EN/MS/ZH tool corpus stuck at the
+ * bottom of the internal link graph.
+ *
+ * So the curated picks are topped up to `RELATED_TOOL_COUNT` from a circular
+ * walk of the registry (the same next-N pattern used by the cost guides,
+ * near-me hubs, suburb pages and localized specialty pages). Circular
+ * selection is what makes the distribution even: every tool is the "next"
+ * neighbour of exactly `RELATED_TOOL_COUNT` others, so every tool receives the
+ * same number of sibling links no matter how popular it is. The links are the
+ * localized `toolPath()` of the current locale, so MS/ZH pages link MS/ZH
+ * siblings and the equity stays inside each language tree.
+ */
+function relatedToolSlugs(slug: string): string[] {
+  const curated = (toolsContent[slug]?.relatedTools ?? []).filter(
+    (candidate) => candidate !== slug && Boolean(toolsContent[candidate])
+  );
+
+  const picked = [...new Set(curated)].slice(0, RELATED_TOOL_COUNT);
+
+  const allSlugs = Object.keys(toolsContent);
+  const currentIndex = allSlugs.indexOf(slug);
+
+  // `currentIndex` is -1 only if a caller passes content that is not in the
+  // registry; starting the walk at 0 still yields valid sibling slugs.
+  for (let offset = 1; picked.length < RELATED_TOOL_COUNT && offset < allSlugs.length; offset++) {
+    const candidate = allSlugs[(Math.max(currentIndex, 0) + offset) % allSlugs.length];
+    if (candidate !== slug && !picked.includes(candidate)) picked.push(candidate);
+  }
+
+  return picked;
 }
 
 /**

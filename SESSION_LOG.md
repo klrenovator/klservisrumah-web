@@ -2168,3 +2168,40 @@ Continued the roadmap's low-inbound (≤2) optimisation tier after a fresh full-
 - Optional: `/estimate/*` share pages (22 × ≤3 inbound), `/ms/blog/*` + `/zh/bo-ke/*` (18 each), `/near-me/*` hubs (28 × max 8) can be lifted with the same circular-sibling pattern after a fresh crawl.
 - Business/translator QA of 224 localized specialty pages + 77 × MS/ZH problem pages remains owner-side.
 - Never create standalone Air Conditioning content.
+
+# Session 2026-08-12 (part 3) — Link-equity tier 2: tool pages, estimator share pages, maintenance sub-hub
+
+## What was done
+Continued exactly from the final **Next Session — START HERE** section of `AI_OPTIMIZATION_ROADMAP.md`, item 3 (the optional link-equity tier), beginning with the fresh full-corpus inbound crawl that item required. The crawl corrected two stale assumptions in the roadmap and surfaced a larger tier it had not listed. No standalone Air Conditioning content was created.
+
+**Baseline (production build, 4,559 crawled pages):** 116 pages had ≤3 inbound internal links — **90 of them tool pages** (`/tools/*`, `/ms/alatan/*`, `/zh/gongju/*`) at exactly 3, plus the 22 `/estimate/*` share pages at exactly 3 and `/guides/maintenance` at 2. Contrary to the roadmap's note, `/ms/blog/*` + `/zh/bo-ke/*` measured avg **11.2** (min 8) and `/near-me/*` measured a flat **7** — both already healthy, so neither was touched.
+
+1. **Tool pages 3 → 6–48 inbound (90 pages).** Root cause: the curated `relatedTools` lists in `config/tools-data.ts` form a **star topology** — `painting-calculator` received 34 of the 111 sibling links while **30 of 37 estimators received zero**, leaving them reachable only from the tools index and their two locale twins. `ToolPage` now resolves its "Try another estimator" card via a new `relatedToolSlugs()` helper: curated editorial pairings stay **first**, then the list is topped up to six from a circular walk of the registry (the next-N pattern already used by cost guides, near-me hubs, suburb pages and localized specialty pages). Circular selection is what evens the distribution — every tool is the "next" neighbour of exactly six others. Links use the current locale's `toolPath()`, keeping equity inside each language tree. No new translation keys.
+2. **`/estimate/*` share pages 3 → 4–9 inbound (22 pages).** They linked no siblings at all. Added `relatedEstimateLinks()` to `config/estimate-links.ts` (already the single source of truth for this mapping) with the same circular next-6 walk, plus a localized "Try another instant estimator" section in `EstimateSharePage`. Dedicated-tool services link their `resolvedPath` (`/tools/<slug>`), so **0 of 168 generated links walk a 301**. Two new trilingual keys (`estimateShare.relatedHeading`/`relatedSub`).
+3. **`/guides/maintenance` 2 → 12 inbound.** Its own ten detail pages never linked back up. `GenericContentPageView` now appends a category-hub backlink to the sibling grid, restricted to hubs not already in the global chrome (`/guides/maintenance` is the only one), so the link is added where it carries equity instead of duplicating sitewide nav on 2,700 pages. Reuses the existing `common.viewAll` key.
+
+## Result
+- Pages with ≤3 inbound: **116 → 3**; ≤2 tier holds at **3**. The only remaining pages are the non-indexable `/_not-found` and the noindex `/ms`/`/zh` redirect stubs — **every indexable page now has ≥4 inbound internal links**.
+- Total internal links **242,603 → 243,099 (+496)** — achieved by redistributing existing link slots, not by bloating pages.
+- Group spot-checks: EN tools avg 10.5, MS tools avg 9.0, ZH tools avg 9.0, `/estimate/*` avg 7.8, `/guides/maintenance` 12.
+
+## Verification
+- PASS: lint (0 errors/warnings), type-check (0 errors), topical map (28/28; 112 typed relationships), specialty locale gate (112 × MS/ZH = 224 native blocks), i18n parity (**1,077 keys × 3 locales**, +2), estimator suite (263,293 assertions), npm audit (0 vulnerabilities).
+- PASS: production build (**4,567 static pages** — route count unchanged), HTML audit (4,559 pages, 0 fatal / 0 warnings), SEO head audit (3,520 indexable, 3,520 sitemap URLs, 0 duplicate titles/descriptions, 0 warnings), metadata consistency audit, SEO inventory (4,559 pages; 0 titles/descriptions/H1s changed).
+- Redirect gate PASS: 168 related-estimator links, 0 pointing at a 301 slug.
+- Production smoke (`next start`): `/tools/roof-area-calculator`, `/tools/socket-quantity-calculator`, `/ms/alatan/kos-handyman`, `/zh/gongju/屋顶面积计算器`, `/estimate/carpentry`, `/estimate/electrical`, `/guides/maintenance`, `/guides/maintenance/condo-maintenance-checklist`, `/tools`, `/estimate` — all 200. MS pages link only `/ms/alatan/*` siblings, ZH pages only `/zh/gongju/*` siblings, both with native names; maintenance detail pages render the "Maintenance Guide — View all" backlink.
+
+## Files changed
+- `components/tools/tool-page.tsx` (`relatedToolSlugs()` — curated picks + circular ring)
+- `config/estimate-links.ts` (`relatedEstimateLinks()`)
+- `components/estimate/estimate-share-page.tsx` (related-estimator section)
+- `components/content/generic-content-page.tsx` (category-hub backlink)
+- `messages/en.json`, `messages/ms.json`, `messages/zh.json` (+`estimateShare.relatedHeading`/`relatedSub`)
+- `docs/seo-audit-report.md`, `docs/seo-metadata-summary.json` (regenerated)
+- `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`
+
+## Next session
+- Link-equity work is closed at the ≤3 tier (116 → 3 non-indexable artifacts). Do not re-open it by adding more sibling rings — further link blocks would be padding.
+- Next in-repo milestone: real locale problem routes (154) — still blocked pending GSC-evidenced consolidation of the 14 problem-overlap groups.
+- Business/translator QA of 224 localized specialty pages + 77 × MS/ZH problem pages remains owner-side; production `NEXT_PUBLIC_GA_ID` remains owner-only.
+- Never create standalone Air Conditioning content.

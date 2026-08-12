@@ -83,6 +83,60 @@ export function buildEstimateLinks(): EstimateLinkEntry[] {
   });
 }
 
+/** How many sibling estimators each `/estimate/<slug>` page links. */
+const RELATED_ESTIMATE_COUNT = 6;
+
+export type RelatedEstimateLink = {
+  /** Service slug of the sibling estimator. */
+  slug: string;
+  /** Published English title — callers localize it for display. */
+  title: string;
+  /** Published starting price, as shown on the service page. */
+  startPrice: string;
+  /**
+   * Where the card links. Dedicated-tool services link straight to their
+   * `/tools/<slug>` page (their `resolvedPath`), so an internal link never
+   * walks the 301 the short share URL would.
+   */
+  href: string;
+};
+
+/**
+ * Sibling estimators shown on a `/estimate/<slug>` share page.
+ *
+ * These pages had exactly three inbound links each — the hub, plus the MS and
+ * ZH service pages that reference the estimator — and linked no siblings at
+ * all, so the whole 22-page share tier sat at the bottom of the internal link
+ * graph. Circular next-N selection (the pattern already used by the cost
+ * guides, near-me hubs and suburb pages) gives every estimator exactly
+ * `RELATED_ESTIMATE_COUNT` sibling inbound links rather than concentrating
+ * them on whichever services happen to be listed first.
+ *
+ * The walk covers the full catalogue, but only entries that actually resolve
+ * to an estimator are returned, so a share page never links a dead end.
+ */
+export function relatedEstimateLinks(slug: string): RelatedEstimateLink[] {
+  const links = buildEstimateLinks();
+  const currentIndex = links.findIndex((link) => link.slug === slug);
+  const related: RelatedEstimateLink[] = [];
+
+  for (let offset = 1; related.length < RELATED_ESTIMATE_COUNT && offset < links.length; offset++) {
+    const candidate = links[(Math.max(currentIndex, 0) + offset) % links.length];
+    if (candidate.slug === slug) continue;
+    // A generic entry is only reachable if the engine can build its estimator;
+    // dedicated entries always resolve to their hand-built tool page.
+    if (candidate.kind === "generic" && !hasServiceEstimator(candidate.slug)) continue;
+    related.push({
+      slug: candidate.slug,
+      title: candidate.title,
+      startPrice: candidate.startPrice,
+      href: candidate.resolvedPath
+    });
+  }
+
+  return related;
+}
+
 /**
  * Slugs that render the generic estimator directly on `/estimate/<slug>` —
  * i.e. every service except the ones whose link redirects to a deep tool.
