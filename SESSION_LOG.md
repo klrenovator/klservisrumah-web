@@ -2103,3 +2103,34 @@ Continued from the final "Next Session — START HERE" section of AI_OPTIMIZATIO
 - Non-blocked backlog: translate remaining `problemI18n` overrides in `config/problem-data.ts`, improve the `RelatedProblems` client component for MS/ZH mode.
 - Business/translator QA of all 224 localized specialty pages + 154 problem bodies remains owner-side.
 - Never create standalone Air Conditioning content.
+
+# Session 2026-08-12 — problemI18n gap completion (all 77 problems) + RelatedProblems client localization
+
+## What was done
+Continued exactly from the final "Next Session — START HERE" section of AI_OPTIMIZATION_ROADMAP.md and completed the two non-blocked backlog items. No standalone Air Conditioning content was created.
+
+1. **Closed the `problemI18n` gap — all 77 problems now carry native MS + ZH metadata.** The 34 problems from `config/problem-data-extra.ts` had body translations (symptom/causes/solutions/whenToCall via `config/problem-body-i18n.ts`) but their titles, cost ranges and FAQs stayed English in MS/ZH mode. Added authored native overrides for all 34 in `config/problem-data.ts` (`yellowing-white-walls`, `paint-cracking-hairline-walls`, `leaking-bathroom`, `low-water-pressure`, `clogged-drain`, `toilet-not-flushing`, `sagging-ceiling`, `ceiling-cornice-crack`, `balcony-leak-condo`, `concrete-slab-crack-leak`, `curtain-track-falling`, `door-hinge-sagging`, `old-condo-full-refurbishment`, `power-tripping-frequently`, `water-heater-cold`, `loose-hollow-tiles`, `cracked-tile-grout`, `plaster-ceiling-hairline-crack`, `uneven-wall-surface-skim`, `vinyl-flooring-lifting-edges`, `cracked-roof-tiles`, `cabinet-door-sagging`, `wardrobe-door-jamming`, `digital-smart-lock-installation`, `locked-out-of-house`, `downlight-flickering`, `shower-screen-water-leak`, `stubborn-bathroom-limescale`, `move-out-condo-deep-clean`, `cement-splatter-tile-clean`, `cctv-not-recording-storage-full`, `autogate-remote-not-working`, `loose-metal-gate-hinges`, `stuck-sliding-window`): native title (reusing the hand-written titles from `config/problem-faq-i18n.ts`), translated costRange, and all base FAQs translated into natural MS/ZH — phrased distinctly from each body `localFaq` so no duplicate questions render. The override type was widened to `Partial<LocalizedProblemContent>` since the merge applies `problem-body-i18n` after the override (duplicating those fields would be dead data).
+
+2. **Localized the `RelatedProblems` client component** (`components/sections/related-problems.tsx`, used by service detail pages). It now maps each related problem through `getLocalizedProblem(problem, lang)` via `useLang()`, so MS/ZH visitors see native titles, symptoms and cost ranges. The hardcoded English intro paragraph was replaced with the new trilingual `internalLinks.problemsIntro` message key (added to `messages/en.json`, `messages/ms.json`, `messages/zh.json`). Links still point to the EN `/problems/[slug]` route where `LocaleProblemView` renders the locale-appropriate full page.
+
+3. **Localized FAQ hubs now serve native content for all 77 problems.** `/ms/soalan-lazim` and `/zh/chang-jian-wen-ti` previously used translated fallback templates for the 34 (`problemFaqI18n` path in `lib/faq-directory.ts`); they now emit the real translated FAQs with native source labels.
+
+## Verification
+- Data gate PASS: `problemI18n` covers 77/77 slugs × ms+zh; 0 title/costRange gaps, 0 English FAQ leaks, 0 duplicate FAQ questions in either locale.
+- PASS: lint (0 errors/warnings), type-check (0 errors), topical map (28/28 services; 112 typed relationships), specialty locale gate (112 × MS/ZH = 224 native blocks), i18n parity (1,075 keys × 3 locales), estimator suite (263,293 assertions), npm audit (0 vulnerabilities).
+- PASS: production build (4,567 static pages — route count unchanged), HTML audit (4,559 pages, 0 fatal / 0 warnings), SEO head audit (3,520 indexable pages; 0 warnings), metadata consistency SEO audit, SEO inventory (4,559 pages).
+- Production smoke: `/problems/yellowing-white-walls`, `/problems/autogate-remote-not-working`, `/problems/loose-metal-gate-hinges`, `/problems/stuck-sliding-window`, `/problems/peeling-paint-malaysia`, `/ms/soalan-lazim`, `/zh/chang-jian-wen-ti`, `/faq` all 200; MS hub shows native titles ("Dinding Putih Bertukar Kuning / Krim", "Engsel Pagar Besi Longgar atau Kendor"); ZH hub shows the authored native FAQ text (e.g. "通常是廉价油漆（抗紫外线性能差）、厨房油烟、香烟烟雾和日晒共同作用的结果…") alongside distinct body localFaq questions.
+
+## Files changed
+- `config/problem-data.ts` (+34 MS + 34 ZH override entries; partial-override type + docs)
+- `lib/problem-i18n.ts` (Partial override type)
+- `components/sections/related-problems.tsx` (client-side localization)
+- `messages/en.json`, `messages/ms.json`, `messages/zh.json` (+`internalLinks.problemsIntro`)
+- `docs/seo-audit-report.md`, `docs/seo-metadata-summary.json`
+- `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`
+
+## Next session
+- `problemI18n` gap is CLOSED: all 77 problems have native MS + ZH titles, cost ranges and FAQs; `RelatedProblems` client component is localized; both localized FAQ hubs render native content for every problem.
+- Next in-repo milestone: real locale problem routes (154) — still blocked pending evidence-based consolidation of the 14 problem-overlap groups (GSC data).
+- Business/translator QA of all 224 localized specialty pages + 77 × MS/ZH problem pages remains owner-side.
+- Never create standalone Air Conditioning content.
