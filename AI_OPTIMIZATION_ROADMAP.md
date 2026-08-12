@@ -1357,9 +1357,28 @@ Continued exactly from the final **Next Session — START HERE** section, item 3
 
 Owner supplied the GSC Pages/Queries analysis that had been blocking locale problem URLs. Applied the 14-group verdicts (12 301s, KEEP BOTH for B/G/H/I/L and door-scraping-floor). Published **65 indexable EN problem pages** and **130 real `/ms/problems/*` + `/zh/problems/*` pages** with three-way hreflang. Sitemap 3,520 → **3,638**. Build **4,685** routes. Decisions: `docs/problem-overlap-gsc-decisions-2026-08-12.md`.
 
+### ✅ Session 2026-08-12 (part 5) — Locale problem routes content-QA gate
+
+**Status:** ✅ COMPLETED
+
+Continued from the final **Next Session — START HERE** section, item 1's directive: "Further problem-page work is content QA, not more URL multiplication." Published a durable, non-thin content-QA gate for the now-live locale problem routes so no MS/ZH problem page can silently fall back to English, ship duplicate FAQs, or break a redirect. No standalone Air Conditioning content was created.
+
+- **Added `scripts/validate-problem-i18n.ts` (`audit:problem-i18n`, wired into `prebuild`).** For every indexable keep-URL (65) × locale (ms, zh) it enforces: native title (problemI18n override, differs from English), native costRange, native body (`problem-body-i18n` block present with symptom/causes/solutions/whenToCall all differing from the English record), no duplicate FAQ questions, and no English FAQ-question leakage into the localized FAQ list — plus minimal placeholder floors calibrated so dense-CJK copy (e.g. a 14-char complete Chinese symptom) is never false-flagged. It also guards canonical integrity: every indexable slug resolves to itself, every redirect key is a real problem slug, every redirect target exists, is indexable, and is not itself redirected (no chains/cycles), and every `problemPages` record is accounted for (indexable or redirected).
+- **Verified the 65 indexable problem pages × 3 locales.** 65 EN + 65 MS + 65 ZH static pages generated; the 12 redirected near-duplicates are not SSG'd and 301 (EN/MS/ZH) at runtime. Production smoke (`next start`) returned 200 for `/problems/yellowing-white-walls`, `/ms/problems/yellowing-white-walls`, `/ms/problems/autogate-remote-not-working`, `/zh/problems/peeling-paint-malaysia`, `/zh/problems/loose-hollow-tiles` and `/zh/problems/推拉窗卡住或滑动不畅`, with native `<html lang="ms-MY|zh-MY">`, native H1s (e.g. "Dinding Putih Bertukar Kuning / Krim", "马来西亚房屋油漆剥落"), full `hrefLang="en-MY/ms-MY/zh-MY/x-default"` clusters, and 0 English-text leaks on the rendered pages.
+
+#### Verification
+- PASS: `audit:problem-i18n` — 65 indexable keep-URLs × ms/zh, 12 redirected near-duplicates excluded, 0 native-content gaps / 0 English leaks / 0 duplicate FAQs.
+- PASS: lint (0 errors/warnings), type-check (0 errors), topical map (28/28; 112 typed relationships), specialty locale gate (112 × MS/ZH = 224 native blocks), i18n parity (**1,077 keys × 3 locales**), estimator suite (**263,301 assertions**), `npm audit` (0 vulnerabilities).
+- PASS: production build (**4,677 static pages**), full-corpus HTML audit (**4,677 pages, 0 fatal / 0 warnings**), technical SEO head audit (**3,638 self-canonical indexable**, 3,638 sitemap URLs, 0 duplicate titles/descriptions, 0 warnings).
+- Production smoke: locale problem pages 200 with native content + three-way hreflang; redirected near-duplicates return 301 (not SSG'd).
+
+### Files
+- Added: `scripts/validate-problem-i18n.ts`
+- Modified: `package.json` (+`audit:problem-i18n`, added to `prebuild`), `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`
+
 ## Next Session — START HERE
 
-1. **Locale problem routes are LIVE** after GSC-evidenced consolidation (12 301s; 65 keep URLs × EN/MS/ZH). Do not recreate the redirected slugs. Further problem-page work is content QA, not more URL multiplication.
+1. **Locale problem content-QA is now a wired-in build gate** (`audit:problem-i18n`): all 65 indexable keep-URLs × ms/zh verified native (0 English leaks, 0 duplicate FAQs) and the 12 redirected near-duplicates excluded. Do not recreate the redirected slugs. Do not add more problem URL multiplication — further problem-page work is content QA on top of the gate.
 2. Obtain business/translator QA for the 224 localized specialty pages and 65 × MS/ZH problem pages. After QA + deploy, re-measure GSC/Bing (especially the 12 301s and the new MS/ZH problem URLs) before the owner-only H3 full-rollout of remaining trees.
 3. Owner-only: production `NEXT_PUBLIC_GA_ID`, `ADMIN_PASSWORD`, GBP / IndexNow / Bing pings. Do not invent a measurement ID.
-4. Do not create thin or spun pages. Never create standalone Air Conditioning content. Do not re-open the closed ≤3 inbound link-equity tier without a fresh crawl that shows a starved group.
+4. Do not create thin or spun pages. Rerun lint, type-check, build, topical-map, specialty-locale, i18n, problem-i18n, HTML and SEO audits after any future change. Never create standalone Air Conditioning content. Do not re-open the closed ≤3 inbound link-equity tier without a fresh crawl that shows a starved group.

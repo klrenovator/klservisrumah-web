@@ -2224,3 +2224,25 @@ Continued from the final **Next Session — START HERE**. The owner provided the
 ## Next
 - Translator/business QA + deploy + GSC re-measure of 301s and new MS/ZH problem URLs.
 - Never create standalone Air Conditioning content.
+
+# Session 2026-08-12 (part 5) — Locale problem routes content-QA gate
+
+Continued from the final "Next Session — START HERE" section of AI_OPTIMIZATION_ROADMAP.md, item 1's directive ("Further problem-page work is content QA, not more URL multiplication"). No standalone Air Conditioning content was created.
+
+## What was done
+1. **Added `scripts/validate-problem-i18n.ts`** (wired as `audit:problem-i18n`, added to `prebuild`). For every indexable problem keep-URL (65) × locale (ms, zh) it enforces: native title (problemI18n override differing from English), native costRange, native body (problem-body-i18n block present, symptom/causes/solutions/whenToCall all differing from the English record), no duplicate FAQ questions, and no English FAQ-question leakage — plus minimal placeholder floors calibrated so dense-CJK copy is never false-flagged (the same CJK-density reasoning as the specialty gate). It also guards canonical integrity: indexable slugs resolve to themselves; every redirect key is a real slug; every redirect target exists, is indexable, and is not itself redirected (no chains/cycles); every problemPages record is accounted for (indexable or redirected).
+2. **Verified the 65 indexable problem pages × 3 locales.** 65 EN + 65 MS + 65 ZH static pages generated; the 12 redirected near-duplicates are not SSG'd and 301 (EN/MS/ZH). Production smoke (`next start`, port 3011) returned 200 for `/problems/yellowing-white-walls`, `/ms/problems/yellowing-white-walls`, `/ms/problems/autogate-remote-not-working`, `/zh/problems/peeling-paint-malaysia`, `/zh/problems/loose-hollow-tiles`, `/zh/problems/推拉窗卡住或滑动不畅` with native `<html lang="ms-MY|zh-MY">`, native H1s, full `hrefLang="en-MY/ms-MY/zh-MY/x-default"` clusters, and 0 English-text leaks; redirected slugs `/problems/water-heater-cold`, `/ms/problems/water-heater-cold`, `/zh/problems/water-heater-cold`, `/problems/stuck-sliding-window` all return 301.
+
+## Verification
+- `audit:problem-i18n` PASS — 65 indexable keep-URLs × ms/zh, 12 redirected near-duplicates excluded, 0 native-content gaps / 0 English leaks / 0 duplicate FAQs.
+- lint 0/0, type-check PASS, topical map PASS, specialty locale gate PASS (224 native blocks), i18n parity 1,077 × 3 PASS, estimator suite 263,301 assertions PASS, npm audit 0 vulnerabilities.
+- Production build PASS (4,677 static pages), HTML audit PASS (4,677 pages, 0 fatal/0 warnings), SEO head audit PASS (3,638 self-canonical indexable, 0 duplicate titles/descriptions, 0 warnings).
+
+## Files changed
+- Added: `scripts/validate-problem-i18n.ts`
+- Modified: `package.json` (+`audit:problem-i18n`, added to `prebuild`), `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`
+
+## Next session
+- Locale problem content-QA is now a wired-in build gate; do not add more problem URL multiplication.
+- Translator/business QA + deploy + GSC re-measure of the 12 301s and new MS/ZH problem URLs remains owner-side, as do production `NEXT_PUBLIC_GA_ID`, `ADMIN_PASSWORD`, GBP/IndexNow/Bing pings.
+- Never create standalone Air Conditioning content.
