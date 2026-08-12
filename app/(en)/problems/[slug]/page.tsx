@@ -2,6 +2,7 @@ import React from "react";
 import { buildMetadata } from "@/lib/seo-meta";
 import { notFound } from "next/navigation";
 import { problemPages } from "@/config/problem-data";
+import { indexableProblemPages, isRedirectedProblemSlug, problemLocaleUrls } from "@/config/problem-canonical";
 import { servicesData } from "@/config/services-data";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { getArticleSchema, getFAQSchema, getHowToSchema, getSpeakableSchema } from "@/lib/seo";
@@ -51,11 +52,12 @@ function lowerFirst(value: string): string {
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return problemPages.map((problem) => ({ slug: problem.slug }));
+  return indexableProblemPages().map((problem) => ({ slug: problem.slug }));
 }
 
 export async function generateMetadata(props: { params: Promise<{ slug: string }> }) {
   const { slug } = await props.params;
+  if (isRedirectedProblemSlug(slug)) return {};
   const problem = problemPages.find((item) => item.slug === slug);
   if (!problem) return {};
 
@@ -63,6 +65,7 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
     title: `${problem.title}: Causes, Fixes & Cost`,
     description: buildProblemDescription(problem),
     path: `/problems/${problem.slug}`,
+    languageUrls: problemLocaleUrls(problem.slug),
     type: "article",
     keywords: [
       problem.title,

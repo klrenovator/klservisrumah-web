@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { DEDICATED_TOOL_BY_SERVICE } from "@/lib/estimator/service-estimator";
 import { verifyAdminTokenEdge } from "@/lib/admin-auth-edge";
+import { PROBLEM_CANONICAL_REDIRECTS } from "@/config/problem-canonical";
 
 const SUPPORTED_LOCALES = ["ms", "zh"] as const;
 
@@ -40,8 +41,18 @@ const REAL_LOCALE_TREES = [
   "/ms/soalan-lazim",
   "/zh/chang-jian-wen-ti",
   "/ms/services",
-  "/zh/services"
+  "/zh/services",
+  "/ms/problems",
+  "/zh/problems",
 ] as const;
+
+const PROBLEM_REDIRECTS: Record<string, string> = Object.fromEntries(
+  Object.entries(PROBLEM_CANONICAL_REDIRECTS).flatMap(([from, to]) => [
+    [`/problems/${from}`, `/problems/${to}`],
+    [`/ms/problems/${from}`, `/ms/problems/${to}`],
+    [`/zh/problems/${from}`, `/zh/problems/${to}`],
+  ]),
+);
 
 /**
  * Middleware for locale-prefixed URL handling.
@@ -83,6 +94,13 @@ export async function middleware(request: NextRequest) {
       }
     }
     return NextResponse.next();
+  }
+
+  const problemTarget = PROBLEM_REDIRECTS[pathname];
+  if (problemTarget) {
+    const targetUrl = request.nextUrl.clone();
+    targetUrl.pathname = problemTarget;
+    return NextResponse.redirect(targetUrl, 301);
   }
 
   // Shareable estimator link for a service that owns a deep tool → 301 to it.

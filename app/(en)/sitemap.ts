@@ -8,7 +8,7 @@ import { areaPages } from "@/config/area-data";
 import { blogPosts } from "@/config/blog-data";
 import { blogI18n, localizedBlogPath } from "@/config/blog-i18n";
 import { suburbPages } from "@/config/suburb-data";
-import { problemPages } from "@/config/problem-data";
+import { indexableProblemPages, problemLocaleUrls } from "@/config/problem-canonical";
 import { allGenericPages, clusterPages, maintenancePages } from "@/config/content-data";
 import { toolsList } from "@/config/tools-data";
 import { TOOLS_INDEX_PATH, toolLocaleUrls } from "@/config/tools-i18n";
@@ -189,7 +189,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const suburbRoutes: Entry[] = suburbPages
     .filter((suburb) => !areaSlugs.has(suburb.slug))
     .flatMap((suburb) => Object.keys(servicesData).map((serviceSlug) => ({ path: `/suburbs/${suburb.slug}/${serviceSlug}`, priority: 0.85 })));
-  const problemRoutes: Entry[] = problemPages.map((problem) => ({ path: `/problems/${problem.slug}`, priority: 0.8 }));
+  const problemRoutes: Entry[] = indexableProblemPages().flatMap((problem) => {
+    const languages = problemLocaleUrls(problem.slug);
+    return [
+      { path: languages.en, priority: 0.8, languages },
+      { path: languages.ms, priority: 0.76, languages },
+      { path: languages.zh, priority: 0.76, languages },
+    ];
+  });
   const blogRoutes: Entry[] = blogPosts.map((post) => ({ path: `/blog/${post.slug}`, priority: 0.7, changeFrequency: "monthly" }));
 
   // Locale blog and FAQ routes — only include posts that have full translations

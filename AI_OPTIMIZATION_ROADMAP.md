@@ -1353,10 +1353,13 @@ Continued exactly from the final **Next Session — START HERE** section, item 3
 ### Files
 - Modified: `components/tools/tool-page.tsx` (`relatedToolSlugs()` curated + circular ring), `config/estimate-links.ts` (`relatedEstimateLinks()`), `components/estimate/estimate-share-page.tsx` (related-estimator section), `components/content/generic-content-page.tsx` (category-hub backlink), `messages/en.json`, `messages/ms.json`, `messages/zh.json` (+`estimateShare.relatedHeading`/`relatedSub`), `docs/seo-audit-report.md`, `docs/seo-metadata-summary.json`, `AI_OPTIMIZATION_ROADMAP.md`, `SESSION_LOG.md`.
 
+### ✅ Session 2026-08-12 (part 4) — GSC problem-overlap consolidation + real locale problem routes
+
+Owner supplied the GSC Pages/Queries analysis that had been blocking locale problem URLs. Applied the 14-group verdicts (12 301s, KEEP BOTH for B/G/H/I/L and door-scraping-floor). Published **65 indexable EN problem pages** and **130 real `/ms/problems/*` + `/zh/problems/*` pages** with three-way hreflang. Sitemap 3,520 → **3,638**. Build **4,685** routes. Decisions: `docs/problem-overlap-gsc-decisions-2026-08-12.md`.
+
 ## Next Session — START HERE
 
-1. **The low-inbound link-equity work is now CLOSED at the ≤3 tier: 116 → 3 pages** (only the non-indexable `/_not-found` and the noindex `/ms`/`/zh` redirect stubs remain). Every indexable page has ≥4 inbound internal links. Do **not** re-open this tier by adding more sibling rings — the remaining distribution is even, and further link blocks would be padding. If link equity is revisited at all, re-measure with a fresh full-corpus crawl first and only act on a group that is genuinely starved.
-2. The remaining in-repo milestone is still **real locale problem routes (154)** — still blocked pending evidence-based consolidation of the 14 problem-overlap groups (GSC data); do not force it. Add them only after that consolidation, then localize `RelatedProblems`/problem links on the localized trees to `/ms/problems/…` and `/zh/problems/…` (they currently point to EN problem pages — documented and still blocked).
-3. Obtain business/translator QA for the completed localized specialty pages (224 — the full catalogue) and problem pages (77 × MS + ZH titles/bodies/FAQs) before measuring GSC indexation; this requires an owner/translator and cannot be completed from repository code alone. After QA + deploy, re-measure GSC/Bing coverage of the localized trees and the MS/ZH pilot conversions before the owner-only H3 full-rollout decision.
-4. `[!]` Still needs deployment configuration (owner-only): a valid production `NEXT_PUBLIC_GA_ID`, after which the `smart_finder_*` events can be observed in GA4 DebugView/Realtime. Do not invent or commit a measurement ID.
-5. Do not create thin or spun pages; rerun lint, type-check, build, topical-map, specialty-locale, i18n, HTML and SEO audits after any future change. Never create standalone Air Conditioning content.
+1. **Locale problem routes are LIVE** after GSC-evidenced consolidation (12 301s; 65 keep URLs × EN/MS/ZH). Do not recreate the redirected slugs. Further problem-page work is content QA, not more URL multiplication.
+2. Obtain business/translator QA for the 224 localized specialty pages and 65 × MS/ZH problem pages. After QA + deploy, re-measure GSC/Bing (especially the 12 301s and the new MS/ZH problem URLs) before the owner-only H3 full-rollout of remaining trees.
+3. Owner-only: production `NEXT_PUBLIC_GA_ID`, `ADMIN_PASSWORD`, GBP / IndexNow / Bing pings. Do not invent a measurement ID.
+4. Do not create thin or spun pages. Never create standalone Air Conditioning content. Do not re-open the closed ≤3 inbound link-equity tier without a fresh crawl that shows a starved group.

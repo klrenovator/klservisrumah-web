@@ -35,6 +35,7 @@ import { blogPosts } from "@/config/blog-data";
 import { blogI18n, localizedBlogPath } from "@/config/blog-i18n";
 import { problemPages } from "@/config/problem-data";
 import { getLocalizedProblem } from "@/lib/problem-i18n";
+import { problemPath, resolveProblemSlug } from "@/config/problem-canonical";
 
 /**
  * Fully-localised, indexable specialty page (`/ms/services/<s>/<sub>`,
@@ -404,7 +405,7 @@ function RelatedSpecialtyContent({
     })
     .filter(Boolean);
 
-  const relatedProblems = problemSlugs
+  const relatedProblems = [...new Set(problemSlugs.map(resolveProblemSlug))]
     .map((slug) => {
       const problem = problemPages.find((p) => p.slug === slug);
       if (!problem) return null;
@@ -459,7 +460,7 @@ function RelatedSpecialtyContent({
                 {relatedProblems.map((p) => (
                   <li key={p!.slug}>
                     <Link
-                      href={`/problems/${p!.slug}`}
+                      href={problemPath(p!.slug, locale)}
                       className="flex flex-col gap-1 rounded-2xl border border-slate-100 bg-amber-50/40 p-4 hover:border-amber-300 hover:shadow-md transition-all group"
                     >
                       <span className="text-sm font-extrabold text-[#075985] group-hover:text-amber-600 transition-colors leading-snug">{p!.title}</span>

@@ -1,7 +1,7 @@
 import React from "react";
 import { buildMetadata } from "@/lib/seo-meta";
 import Link from "next/link";
-import { problemPages } from "@/config/problem-data";
+import { indexableProblemPages } from "@/config/problem-canonical";
 import { servicesData } from "@/config/services-data";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
@@ -75,7 +75,7 @@ export default function ProblemsIndexPage() {
             </h2>
           </div>
           <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {problemPages.map((problem) => {
+            {indexableProblemPages().map((problem) => {
               const service = servicesData[problem.serviceSlug];
               return (
                 <Link key={problem.slug} href={`/problems/${problem.slug}`} className="rounded-3xl border border-slate-100 bg-white p-5 shadow-xs transition hover:-translate-y-0.5 hover:shadow-md group">
