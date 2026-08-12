@@ -152,8 +152,8 @@ export const config = {
      * - logo, icons, hero SVGs
      * - manifest.json, sw.js
      * - BingSiteAuth.xml (Bing Webmaster verification file)
-     * - IndexNow key file e7492c...txt
+     * - IndexNow key file 2427f8...txt
      */
-    "/((?!_next/static|_next/image|favicon|sitemap|robots|logo|icons|hero-|manifest|sw\\.js|site-summary|llms|aeo|BingSiteAuth|e7492c81).*)",
+    "/((?!_next/static|_next/image|favicon|sitemap|robots|logo|icons|hero-|manifest|sw\\.js|site-summary|llms|aeo|BingSiteAuth|2427f86a83154e488745beb379b3eec8).*)",
   ],
 };

@@ -15,7 +15,7 @@ import { TOOLS_INDEX_PATH, toolLocaleUrls } from "@/config/tools-i18n";
 export const dynamic = "force-dynamic";
 
 const HOST = "www.klservisrumah.my";
-const INDEXNOW_KEY = "e7492c813de342fca1deeb6b05df8445";
+const INDEXNOW_KEY = "2427f86a83154e488745beb379b3eec8";
 
 /**
  * The URL set to ping. Derived from the real registries (not a hand-maintained
