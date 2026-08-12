@@ -800,7 +800,11 @@ export type LocalizedProblemContent = {
   faqs: { q: string; a: string }[];
 };
 
-export const problemI18n: Partial<Record<string, Partial<Record<"ms" | "zh", LocalizedProblemContent>>>> = {
+// Overrides may be partial: the original 43 carry the full content block,
+// while the 34 later problems supply only the fields not already covered by
+// `config/problem-body-i18n.ts` (title, costRange and faqs). `getLocalizedProblem`
+// falls back field-by-field to the English record, so partial overrides are safe.
+export const problemI18n: Partial<Record<string, Partial<Record<"ms" | "zh", Partial<LocalizedProblemContent>>>>> = {
   "rccb-tripping-kl": {
     ms: {
       title: "RCCB / ELCB Kerap Trip di Rumah KL",
@@ -2008,6 +2012,686 @@ export const problemI18n: Partial<Record<string, Partial<Record<"ms" | "zh", Loc
       faqs: [
         { q: "你们能重新粉刷现有的护栏吗？", a: "可以——我们进行喷砂、除锈处理，并涂抹正确的底漆+面漆系统。" },
         { q: "喷粉是否比油漆更好？", a: "是的——喷粉更耐用，推荐用于沿海或高湿度地区。" }
+      ]
+    }
+  },
+  "yellowing-white-walls": {
+    ms: {
+      title: "Dinding Putih Bertukar Kuning / Krim",
+      costRange: "RM 400–RM 3,500+ bergantung kepada bilangan bilik dan punca",
+      faqs: [
+        { q: "Kenapa dinding putih saya menjadi kuning begitu cepat?", a: "Biasanya gabungan cat murah (kestabilan UV rendah), gris dapur bawaan udara, asap rokok dan pendedahan matahari. Cat akrilik premium mengekalkan warna putih lebih lama." },
+        { q: "Bolehkah saya terus mengecat di atas tompok kuning?", a: "Hanya jika anda sapukan primer penghalang noda dahulu — jika tidak, noda akan menembusi topcoat baharu dalam beberapa minggu." },
+        { q: "Cat mana yang paling lama kekal putih di Malaysia?", a: "Cari akrilik dalaman premium dengan kestabilan UV dan VOC rendah — jenama seperti Nippon Odour-less, Dulux EasyClean dan Jotun Fenomastic adalah pilihan biasa kami." }
+      ]
+    },
+    zh: {
+      title: "白墙发黄 / 变黄",
+      costRange: "RM 400–RM 3,500+，视房间数量和原因而定",
+      faqs: [
+        { q: "我的白墙为什么会这么快变黄？", a: "通常是廉价油漆（抗紫外线性能差）、厨房油烟、香烟烟雾和日晒共同作用的结果。优质丙烯酸漆能保持白色更久。" },
+        { q: "可以直接在发黄的斑块上重新刷漆吗？", a: "必须先涂防污底漆——否则污渍会在几周内渗透到新面漆上。" },
+        { q: "在马来西亚哪种漆保持白色最久？", a: "选择具有抗紫外线和低 VOC 的优质室内丙烯酸漆——如 Nippon Odour-less、Dulux EasyClean 和 Jotun Fenomastic 是我们常用的选择。" }
+      ]
+    }
+  },
+  "paint-cracking-hairline-walls": {
+    ms: {
+      title: "Retak Rambut pada Dinding Bercat",
+      costRange: "RM 300–RM 2,200+ bergantung kepada panjang retakan dan skop pengecatan semula",
+      faqs: [
+        { q: "Adakah retak rambut tanda kerosakan struktur rumah?", a: "Hampir tidak pernah. Retak rambut kosmetik adalah normal akibat enapan dan pergerakan filem cat — retak struktur sebenar biasanya jauh lebih lebar (5 mm+), menyerong dan progresif." },
+        { q: "Bolehkah saya hanya mengisi retak rambut dengan putty biasa?", a: "Tidak untuk hasil tahan lama. Putty tegar akan pecah keluar dalam beberapa bulan. Kami gunakan pengisi akrilik fleksibel + pita mesh supaya retakan kekal tertutup walaupun dinding bergerak." },
+        { q: "Berapa kos membaiki retak rambut di seluruh bilik?", a: "Pembaikan retak + skim + primer + cat semula peringkat bilik biasanya RM 500 hingga RM 1,200 bergantung kepada luas dinding dan gred cat." }
+      ]
+    },
+    zh: {
+      title: "涂漆墙面出现发丝裂纹",
+      costRange: "RM 300–RM 2,200+，视裂纹长度和重涂范围而定",
+      faqs: [
+        { q: "发丝裂纹是否意味着房屋有结构损坏？", a: "几乎不会。表面的发丝裂纹是正常的沉降和漆膜伸缩所致——真正的结构裂缝通常宽得多（5 毫米以上）、呈斜向且不断扩展。" },
+        { q: "可以用普通腻子填补发丝裂纹吗？", a: "无法持久。刚性腻子几个月内就会崩裂。我们使用柔性丙烯酸填缝剂+网格胶带，即使墙体移动裂缝也能保持密封。" },
+        { q: "整间房修复发丝裂纹要多少钱？", a: "整间房的裂缝修补+批灰+底漆+重涂通常在 RM 500 至 RM 1,200，视墙面面积和油漆等级而定。" }
+      ]
+    }
+  },
+  "leaking-bathroom": {
+    ms: {
+      title: "Bilik Air Bocor (Lantai Basah, Dinding Lembap)",
+      costRange: "RM 350–RM 4,500+ bergantung kepada punca kebocoran",
+      faqs: [
+        { q: "Perlukah jubin dipecahkan untuk membaiki kebocoran bilik air?", a: "Biasanya tidak. Dalam kebanyakan kes kami boleh menutup kebocoran dari bawah menggunakan grouting PU tekanan tinggi — tanpa merosakkan jubin. Pengecuhan penuh hanya diperlukan apabila membran telah gagal sepenuhnya." },
+        { q: "Berapa kos pembaikan kebocoran bilik air di KL?", a: "Grouting PU dari bawah: RM 350 hingga RM 1,500. Semula silikon: RM 180 hingga RM 350. Ganti membran penuh: RM 3,500 hingga RM 8,500 untuk bilik air standard." },
+        { q: "Berapa cepat anda boleh hadir untuk kebocoran bilik air yang aktif?", a: "Untuk kebocoran aktif di Lembah Klang kami hantar pada hari yang sama, biasanya tiba dalam 45 hingga 90 minit." }
+      ]
+    },
+    zh: {
+      title: "浴室漏水（楼下地面潮湿、墙壁渗水）",
+      costRange: "RM 350–RM 4,500+，视漏水原因而定",
+      faqs: [
+        { q: "修复浴室漏水一定要砸掉瓷砖吗？", a: "通常不需要。大多数情况下我们可以通过高压 PU 注浆从楼下封堵漏水——不损坏瓷砖。只有防水膜完全失效时才需要全面砸砖。" },
+        { q: "在吉隆坡修复浴室漏水要多少钱？", a: "从楼下 PU 注浆：RM 350 至 RM 1,500。重新打硅胶：RM 180 至 RM 350。标准浴室防水膜重做：RM 3,500 至 RM 8,500。" },
+        { q: "活跃的浴室漏水多久能上门处理？", a: "巴生谷地区的活跃漏水我们当天派遣，通常在 45 至 90 分钟内到达。" }
+      ]
+    }
+  },
+  "low-water-pressure": {
+    ms: {
+      title: "Tekanan Air Rendah di Rumah",
+      costRange: "RM 200–RM 3,500+ bergantung kepada punca dan bilangan paip",
+      faqs: [
+        { q: "Adakah saya perlu memasang pam penggalak?", a: "Jika rumah anda 2+ tingkat atau anda mengalami tekanan rendah di tingkat atas, pam penggalak biasanya penyelesaian yang tepat. Pemasangan biasa: RM 900 hingga RM 2,200 bergantung kepada gred pam." },
+        { q: "Bolehkah paip bergalvani lama menyebabkan tekanan rendah?", a: "Ya — karat dalaman menyempitkan diameter paip selepas 20+ tahun. Penukaran penuh kepada paip PPR/PEX memulihkan aliran dan mengelakkan kebocoran karat pada masa hadapan." },
+        { q: "Bagaimana saya tahu jika penapis pemanas air tersumbat?", a: "Matikan pemanas, tutup injap masuk, buka skru penapis masuk dan periksa. Jika ia perang/berskala, bilas atau ganti — mengambil masa 10 minit." }
+      ]
+    },
+    zh: {
+      title: "家中水压过低",
+      costRange: "RM 200–RM 3,500+，视原因和水龙头数量而定",
+      faqs: [
+        { q: "我应该安装增压泵吗？", a: "如果您的房屋有 2 层以上或顶层水压偏低，增压泵通常是正确的解决方案。典型安装费：RM 900 至 RM 2,200，视泵的等级而定。" },
+        { q: "老旧的镀锌管会导致水压过低吗？", a: "会——20 多年后内部锈蚀会使管径变窄。全面更换为 PPR/PEX 管道可恢复水流并防止未来锈蚀漏水。" },
+        { q: "如何判断热水器滤网是否堵塞？", a: "关闭热水器，关闭进水阀，拧下进水滤网检查。如果发黄/结垢，冲洗或更换——只需 10 分钟。" }
+      ]
+    }
+  },
+  "clogged-drain": {
+    ms: {
+      title: "Saluran Dapur atau Bilik Air Tersumbat",
+      costRange: "RM 150–RM 700+ bergantung kepada tahap penyumbatan",
+      faqs: [
+        { q: "Adakah cecair kimia pembuka longkang selamat untuk paip?", a: "Bahan kimia kaustik kuat boleh merosakkan sambungan PVC lama dan tidak selamat untuk ruang tertutup. Kami cadangkan pembersihan mekanikal serta rawatan enzim — lebih selamat dan tahan lebih lama." },
+        { q: "Berapa kos untuk membuka longkang dapur?", a: "Ular paip manual: RM 150 hingga RM 250. Jetting tekanan tinggi: RM 350 hingga RM 700 untuk saluran dapur penuh." },
+        { q: "Bagaimana saya boleh mengelakkan penyumbatan dapur pada masa hadapan?", a: "Jangan buang gris masakan ke dalam sinki; gunakan penapis mesh; dan jalankan air panas + rawatan enzim bulanan untuk memastikan saluran bersih." }
+      ]
+    },
+    zh: {
+      title: "厨房或浴室下水道堵塞",
+      costRange: "RM 150–RM 700+，视堵塞程度而定",
+      faqs: [
+        { q: "化学管道疏通剂对管道安全吗？", a: "强腐蚀性化学品会损坏老旧的 PVC 接头，在封闭空间也不安全。我们建议机械疏通加酶处理——更安全、效果更持久。" },
+        { q: "疏通厨房下水道要多少钱？", a: "手动管道疏通：RM 150 至 RM 250。高压水射流：整条厨房管道 RM 350 至 RM 700。" },
+        { q: "如何预防日后厨房堵塞？", a: "切勿将厨房油脂倒入水槽；使用滤网；并每月用热水加酶处理保持管道清洁。" }
+      ]
+    }
+  },
+  "toilet-not-flushing": {
+    ms: {
+      title: "Tandas Tidak Berfungsi dengan Baik",
+      costRange: "RM 150–RM 850+ bergantung kepada penggantian bahagian",
+      faqs: [
+        { q: "Patutkah saya membaiki atau mengganti tandas lama?", a: "Jika seramik retak, atau anda telah mengganti bahagian berkali-kali dalam 2 tahun terakhir, mengganti keseluruhan set (RM 550 hingga RM 1,800 termasuk pemasangan) biasanya lebih menjimatkan." },
+        { q: "Mengapa tandas saya sentiasa mengalir?", a: "Hampir selalu injap flapper haus atau pengedap injap pengisian. Kedua-duanya pembaikan cepat — RM 150 hingga RM 250 termasuk bahagian." },
+        { q: "Berapa kos pemasangan tandas baru di KL?", a: "Bekalan + pemasangan set flush dwi standard biasanya RM 850 hingga RM 1,800 termasuk menanggalkan unit lama dan pelupusannya." }
+      ]
+    },
+    zh: {
+      title: "马桶冲水不畅",
+      costRange: "RM 150–RM 850+，视更换部件而定",
+      faqs: [
+        { q: "老马桶应该维修还是更换？", a: "如果陶瓷开裂，或过去 2 年内多次更换零件，更换整套马桶（含安装 RM 550 至 RM 1,800）通常更划算。" },
+        { q: "为什么马桶一直流水？", a: "几乎都是排水阀垫片或进水阀密封圈磨损。两者都是快速修复——含零件 RM 150 至 RM 250。" },
+        { q: "在吉隆坡安装新马桶要多少钱？", a: "优质双冲水马桶的供应+安装通常在 RM 850 至 RM 1,800，包括拆除旧马桶并处理。" }
+      ]
+    }
+  },
+  "sagging-ceiling": {
+    ms: {
+      title: "Siling Plaster Melendut atau Melengkung",
+      costRange: "RM 380–RM 2,800+ bergantung kepada keluasan papan yang diganti",
+      faqs: [
+        { q: "Adakah siling kendur boleh runtuh?", a: "Ya, terutamanya selepas kerosakan air yang berpanjangan. Jika ia lembut apabila disentuh atau menitis, jauhkan orang dan hubungi kami dengan segera — kami hantar pada hari yang sama untuk isu siling kritikal keselamatan." },
+        { q: "Adakah anda perlu mengganti keseluruhan siling?", a: "Tidak. Kami keluarkan dan ganti hanya bahagian yang terjejas, kemudian sebati skim dan cat supaya pembaikan tidak kelihatan." },
+        { q: "Papan siling mana yang perlu saya gunakan untuk mengelakkan kendur pada masa hadapan?", a: "Di kawasan mudah lembap (berhampiran bilik air, dapur) gunakan papan gypsum kalis lembapan (MR). Di kawasan kering papan plaster 9mm standard sudah memadai." }
+      ]
+    },
+    zh: {
+      title: "石膏天花板下垂或变形",
+      costRange: "RM 380–RM 2,800+，视需更换的天花板面积而定",
+      faqs: [
+        { q: "天花板下垂会倒塌吗？", a: "会，尤其是在长期受水损坏之后。如果按压柔软或滴水，请让人远离并立即联系我们——对于涉及安全的天花板问题我们当天派遣。" },
+        { q: "需要更换整个天花板吗？", a: "不需要。我们只拆除并更换受影响的部分，然后批灰和上漆使修复看不出痕迹。" },
+        { q: "用哪种天花板板材防止日后下垂？", a: "在潮湿区域（浴室、厨房附近）使用防潮（MR）石膏板。干燥区域使用标准 9 毫米石膏板即可。" }
+      ]
+    }
+  },
+  "ceiling-cornice-crack": {
+    ms: {
+      title: "Retak Kornis Antara Dinding dan Siling",
+      costRange: "RM 200–RM 900+ bergantung kepada bilangan bilik",
+      faqs: [
+        { q: "Bolehkah saya membaiki retak kornis dengan polyfilla biasa?", a: "Ia akan bertahan 3–6 bulan. Pengisi akrilik fleksibel + pita mesh bertahan 5+ tahun walaupun dengan pergerakan haba." },
+        { q: "Adakah saya perlu mengganti keseluruhan kornis?", a: "Hanya jika ia tercabut sepenuhnya atau rosak teruk akibat air. Kebanyakan retak hanya memerlukan pembaikan permukaan." },
+        { q: "Berapa kos setiap bilik untuk membaiki retak kornis?", a: "Pembaikan kornis bilik tidur biasa (isi + skim + cat semula): RM 200 hingga RM 380. Ruang tamu atau kawasan lebih besar: RM 450 hingga RM 900." }
+      ]
+    },
+    zh: {
+      title: "墙面与天花板之间石膏线开裂",
+      costRange: "RM 200–RM 900+，视房间数量而定",
+      faqs: [
+        { q: "能用普通腻子修补石膏线裂缝吗？", a: "只能维持 3–6 个月。柔性丙烯酸填缝剂+网格胶带即使有热胀冷缩也能保持 5 年以上。" },
+        { q: "需要更换整条石膏线吗？", a: "只有在完全脱落或严重水损时才需要。大多数裂缝只需表面修复。" },
+        { q: "每间房修补石膏线裂缝多少钱？", a: "典型卧室石膏线修复（填缝+批灰+重涂）：RM 200 至 RM 380。客厅或更大区域：RM 450 至 RM 900。" }
+      ]
+    }
+  },
+  "balcony-leak-condo": {
+    ms: {
+      title: "Balkoni Bocor ke Unit Bawah (Kondominium)",
+      costRange: "RM 800–RM 6,500+ bergantung kepada keadaan membran",
+      faqs: [
+        { q: "Adakah saya bertanggungjawab atas kerosakan unit bawah?", a: "Di bawah kebanyakan peraturan JMB Malaysia, ya — pemilik unit strata bertanggungjawab ke atas kalis air unit sendiri. Baiki segera dan dokumentasikan pembaikan untuk tuntutan masa hadapan." },
+        { q: "Bolehkah anda grouting PU dari unit bawah tanpa memecahkan jubin balkoni saya?", a: "Selalunya boleh — dengan kebenaran pemilik unit bawah, kami grouting papak dari bawah dan elak menyentuh jubin anda. Kadar kejayaan tinggi untuk retak halus." },
+        { q: "Berapa lama masa untuk membran balkoni baru?", a: "Pengecuhan jubin penuh + membran baru + jubin semula biasanya 3 hingga 5 hari bekerja untuk balkoni standard." }
+      ]
+    },
+    zh: {
+      title: "公寓阳台漏水渗到楼下单位",
+      costRange: "RM 800–RM 6,500+，视防水膜状况而定",
+      faqs: [
+        { q: "楼下单位的损失我要负责吗？", a: "根据马来西亚大多数 JMB 规定，是的——分层单位业主负责自己单位的防水。请尽快修复并记录维修过程以备日后索赔。" },
+        { q: "可以在不砸我家阳台瓷砖的情况下从楼下做 PU 注浆吗？", a: "通常可以——征得楼下业主同意后，我们从下方注浆楼板，不触碰您的瓷砖。对发丝裂缝成功率很高。" },
+        { q: "阳台重新做防水膜要多久？", a: "标准阳台的全面砸砖+新防水膜+重新铺砖通常需要 3 至 5 个工作日。" }
+      ]
+    }
+  },
+  "concrete-slab-crack-leak": {
+    ms: {
+      title: "Retak Papak Konkrit Bocor Semasa Hujan Lebat",
+      costRange: "RM 650–RM 3,800+ bergantung kepada panjang retakan",
+      faqs: [
+        { q: "Adakah grouting PU pembaikan kekal untuk retak papak?", a: "Busa PU fleksibel dan biasanya bertahan 8 hingga 15 tahun — ia lentur bersama papak supaya tidak retak semula. Kami berikan waranti bertulis sehingga 5 tahun." },
+        { q: "Bolehkah anda grouting tanpa akses ke bahagian atas papak?", a: "Ya. Suntikan dilakukan dari bawah, sebab itu grouting PU popular untuk kebocoran antara lantai unit kondominium." },
+        { q: "Berapa lama masa grouting PU?", a: "Kebanyakan projek retak papak konkrit siap dalam 2 hingga 4 jam — pada hari yang sama, tanpa kotoran, pengawetan segera." }
+      ]
+    },
+    zh: {
+      title: "混凝土楼板裂缝在暴雨时渗水",
+      costRange: "RM 650–RM 3,800+，视裂缝长度而定",
+      faqs: [
+        { q: "PU 注浆是楼板裂缝的永久修复吗？", a: "PU 泡沫具有柔性，通常可使用 8 至 15 年——它随楼板伸缩，因此不会再次开裂。我们提供长达 5 年的书面保修。" },
+        { q: "不接触楼板顶部也能注浆吗？", a: "可以。注浆从下方进行，因此 PU 注浆非常适合公寓楼层间的渗漏。" },
+        { q: "PU 注浆需要多长时间？", a: "大多数混凝土楼板裂缝工程在 2 至 4 小时内完成——当天搞定、无尘、即时固化。" }
+      ]
+    }
+  },
+  "curtain-track-falling": {
+    ms: {
+      title: "Trek Langsir Tercabut daripada Siling",
+      costRange: "RM 120–RM 380+ setiap tingkap",
+      faqs: [
+        { q: "Bagaimana anda memasang trek langsir pada papan plaster?", a: "Kami guna bolt toggle tugas berat atau sauh spring yang dinilai sekurang-kurangnya 4× berat langsir. Untuk langsir gelap kami tambah kurungan dinding perantara." },
+        { q: "Bolehkah anda memasang trek langsir pada siling konkrit?", a: "Ya — kami gerudi dengan tukul dan guna sauh konkrit bersalut untuk pemasangan kekal. Ambil masa kira-kira 30 minit setiap tingkap." },
+        { q: "Bagaimana jika siling saya sudah rosak?", a: "Kami tampal plaster, primer dan biarkan ia kering, kemudian pasang trek baru — biasanya kerja sehari dengan tempoh kering cat 24 jam antara langkah." }
+      ]
+    },
+    zh: {
+      title: "窗帘轨道从天花板松脱",
+      costRange: "每个窗户 RM 120–RM 380+",
+      faqs: [
+        { q: "如何在石膏板上安装窗帘轨道？", a: "我们使用承重至少为窗帘重量 4 倍的重型蝶形螺栓或弹簧锚栓。对于遮光窗帘，我们还会增加中间墙支架。" },
+        { q: "能在混凝土天花板上安装窗帘轨道吗？", a: "可以——我们使用冲击钻和镀层混凝土锚栓进行永久固定。每个窗户约需 30 分钟。" },
+        { q: "如果天花板已经损坏怎么办？", a: "我们修补石膏、涂底漆并等待固化，然后安装新轨道——通常当天完成，步骤之间留 24 小时油漆固化时间。" }
+      ]
+    }
+  },
+  "door-hinge-sagging": {
+    ms: {
+      title: "Pintu Kendor atau Berbunyi",
+      costRange: "RM 150–RM 550+ setiap pintu",
+      faqs: [
+        { q: "Bolehkah anda membaiki pintu kendor tanpa menggantinya?", a: "Dalam 90% kes ya — engsel baru + skru lebih panjang + pengetaman ringan biasanya memulihkan pintu sepenuhnya. Penggantian penuh hanya untuk pintu retak atau meleding teruk." },
+        { q: "Mengapa pintu kayu mengembang di Malaysia?", a: "Kelembapan tropika menyebabkan pembengkakan kitaran — paling teruk sebelum/semasa monsun. Kami ketam pintu dengan ruang kecil supaya ia berfungsi sepanjang tahun." },
+        { q: "Berapa kos servis pintu penuh (pengetaman + engsel baru + cat semula)?", a: "Yuran biasa RM 220 hingga RM 380 setiap pintu bergantung kepada tahap pengetaman dan sentuhan cat yang diperlukan." }
+      ]
+    },
+    zh: {
+      title: "门扇下垂或吱吱作响",
+      costRange: "每扇门 RM 150–RM 550+",
+      faqs: [
+        { q: "不换门能修好下垂的门吗？", a: "90% 的情况可以——新铰链+加长螺丝+轻微刨削通常能完全修复。只有开裂或严重变形的门才需要整扇更换。" },
+        { q: "为什么马来西亚的木门会膨胀？", a: "热带湿度导致周期性膨胀——在季风前/期间最严重。我们刨削门扇时预留少量间隙，使其全年顺畅。" },
+        { q: "全套门维修（刨削+新铰链+重漆）多少钱？", a: "每扇门通常 RM 220 至 RM 380，视刨削范围和补漆需求而定。" }
+      ]
+    }
+  },
+  "old-condo-full-refurbishment": {
+    ms: {
+      title: "Kondominium Lama Yang Perlu Diubahsuai Sepenuhnya",
+      costRange: "RM 22,000–RM 180,000+ bergantung kepada saiz unit dan skop",
+      faqs: [
+        { q: "Berapa lama pengubahsuaian penuh kondominium 3 bilik?", a: "Jadual biasa 6 hingga 10 minggu bergantung kepada skop: 1 minggu pecah dinding + kalis air, 3 minggu jubin + paip + elektrik, 2 minggu dapur + pertukangan, 1 minggu cat + serahan." },
+        { q: "Adakah anda memberikan harga tetap untuk pengubahsuaian penuh?", a: "Ya. Selepas lawatan tapak kami keluarkan sebut harga terperinci dengan setiap baris skop harga berasingan — anda luluskan baris mana yang diteruskan." },
+        { q: "Bolehkah anda bekerja dengan peraturan JMB kondominium?", a: "Ya. Kami uruskan deposit JMB, permit, peraturan waktu senyap, perlindungan lif dan pelupusan sampah sebagai standard." }
+      ]
+    },
+    zh: {
+      title: "需要全面翻新的老公寓",
+      costRange: "RM 22,000–RM 180,000+，视单位面积和工程范围而定",
+      faqs: [
+        { q: "三房公寓全面翻新需要多久？", a: "视工程范围通常为 6 至 10 周：1 周拆墙+防水，3 周铺砖+水电，2 周厨房+木工，1 周油漆+交付。" },
+        { q: "全面翻新提供固定价格吗？", a: "提供。现场勘察后我们会出具详细分项报价，每项工程单独定价——由您决定执行哪些项目。" },
+        { q: "能配合公寓 JMB 的管理规定吗？", a: "可以。我们标准处理 JMB 押金、许可证、静音时段规定、电梯保护和垃圾清运。" }
+      ]
+    }
+  },
+  "power-tripping-frequently": {
+    ms: {
+      title: "Elektrik Kerap Trip di Rumah",
+      costRange: "RM 180–RM 1,800+ bergantung kepada punca",
+      faqs: [
+        { q: "Adakah RCD yang kerap trip berbahaya?", a: "RCD melindungi anda — jangan sekali-kali pintas. Ia trip kerana kebocoran bumi atau litar pintas sebenar. Dapatkan diagnosis dalam 24 jam." },
+        { q: "Bolehkah saya naik taraf kotak DB tanpa pendawaian semula seluruh rumah?", a: "Ya. Kami boleh naik taraf kotak DB, pemutus dan RCD dalam satu hari tanpa pendawaian semula, memberikan perlindungan moden." },
+        { q: "Berapa kos naik taraf kotak DB penuh di KL?", a: "Naik taraf kotak DB biasa dengan pemutus 6 hingga 12 hala, RCD dan pelabelan kemas: RM 850 hingga RM 1,800 dipasang oleh juruelektrik berlesen ST." }
+      ]
+    },
+    zh: {
+      title: "家中频繁跳闸",
+      costRange: "RM 180–RM 1,800+，视原因而定",
+      faqs: [
+        { q: "频繁跳闸的 RCD 危险吗？", a: "RCD 是在保护您——切勿绕过它。跳闸是因为存在真实的漏电或短路。请在 24 小时内安排检测。" },
+        { q: "不重新布线全屋能升级 DB 电箱吗？", a: "可以。我们能在一天内升级电箱、断路器和 RCD 而无需重新布线，提供现代化保护。" },
+        { q: "在吉隆坡全面升级电箱要多少钱？", a: "典型电箱升级（6 至 12 路断路器、RCD、整齐标识）：由 ST 持牌电工安装 RM 850 至 RM 1,800。" }
+      ]
+    }
+  },
+  "water-heater-cold": {
+    ms: {
+      title: "Pemanas Air Tidak Panas (Air Sejuk Sahaja)",
+      costRange: "RM 180–RM 850+ bergantung kepada kerosakan",
+      faqs: [
+        { q: "Bolehkah saya mengganti elemen pemanas sendiri?", a: "Hanya orang berkelayakan sahaja — elemen berada pada bekalan 230V voltan tinggi. Kami mengganti kebanyakan elemen dalam 20 hingga 40 minit." },
+        { q: "Adakah pemanas saya berbaloi dibaiki atau perlu diganti?", a: "Bawah 5 tahun: biasanya berbaloi dibaiki. Lebih 8 tahun: selalunya lebih baik diganti untuk kebolehpercayaan, kecekapan tenaga dan waranti." },
+        { q: "Berapa kos pemanas air segera baru dipasang?", a: "Bekalan + pemasangan pemanas segera julat pertengahan: RM 550 hingga RM 1,200. Bekalan + pemasangan pemanas tangki: RM 850 hingga RM 1,900." }
+      ]
+    },
+    zh: {
+      title: "热水器不加热（只有冷水）",
+      costRange: "RM 180–RM 850+，视故障而定",
+      faqs: [
+        { q: "可以自己更换加热元件吗？", a: "只能由合格人员操作——加热元件连接 230V 高压电源。我们更换大多数元件只需 20 至 40 分钟。" },
+        { q: "热水器值得维修还是更换？", a: "5 年以下：通常值得维修。8 年以上：为可靠性和能效考虑，更换通常更好。" },
+        { q: "安装新即热式热水器多少钱？", a: "中档即热式热水器供应+安装：RM 550 至 RM 1,200。储水式热水器供应+安装：RM 850 至 RM 1,900。" }
+      ]
+    }
+  },
+  "loose-hollow-tiles": {
+    ms: {
+      title: "Jubin Lantai Longgar atau Berbunyi Kosong",
+      costRange: "RM 350–RM 2,800+ bergantung kepada bilangan jubin dan akses",
+      faqs: [
+        { q: "Bolehkah jubin longgar digam semula dari atas?", a: "Hanya sementara untuk angkat tepi kecil. Pembaikan yang betul memerlukan mengangkat jubin dan meletakkan semula dengan pelekat thin-set yang sesuai." },
+        { q: "Berapa kos untuk meletakkan semula satu jubin longgar?", a: "Relay satu jubin: RM 150 hingga RM 280 termasuk grout padan. Relay pelbagai jubin disebut harga mengikut kawasan." },
+        { q: "Bolehkah anda padankan warna jubin lama saya?", a: "Kami simpan stok grout jubin Malaysia yang biasa. Jika jubin anda reka bentuk jarang, kami minta anda bawa jubin ganti atau kami cari padanan terdekat." }
+      ]
+    },
+    zh: {
+      title: "地砖松动或敲击有空鼓声",
+      costRange: "RM 350–RM 2,800+，视瓷砖数量和施工条件而定",
+      faqs: [
+        { q: "松动的瓷砖能从表面重新粘合吗？", a: "对于小面积边缘翘起只能临时处理。正确修复需要撬起瓷砖并用合适的薄浆粘合剂重新铺设。" },
+        { q: "重新铺设一块松动瓷砖多少钱？", a: "单块重铺：RM 150 至 RM 280，含配色填缝。多块重铺按面积报价。" },
+        { q: "能匹配我旧瓷砖的颜色吗？", a: "我们备有马来西亚常见瓷砖填缝剂库存。如果您的瓷砖是稀有款式，请提供备用瓷砖或我们寻找最接近的匹配。" }
+      ]
+    }
+  },
+  "cracked-tile-grout": {
+    ms: {
+      title: "Grout Jubin Retak atau Berubah Warna",
+      costRange: "RM 250–RM 1,800+ bergantung kepada saiz bilik",
+      faqs: [
+        { q: "Adakah grout epoksi berbaloi dengan kos tambahan?", a: "Untuk bilik air dan dapur ya — grout epoksi kalis air, tahan kulat, dan tahan 15+ tahun berbanding 5-8 tahun untuk grout simen." },
+        { q: "Bolehkah saya hanya mengecat di atas grout lama?", a: "Cat grout bertahan 6-12 bulan tetapi tidak membaiki grout retak atau hilang. Regrouting yang betul adalah penyelesaian jangka panjang yang tepat." },
+        { q: "Berapa kos regrout bilik air standard?", a: "Regrouting bilik air biasa: RM 650 hingga RM 1,400 termasuk penyingkiran grout, pembersihan, grout epoksi dan pengedap." }
+      ]
+    },
+    zh: {
+      title: "瓷砖填缝剂开裂或变色",
+      costRange: "RM 250–RM 1,800+，视房间大小而定",
+      faqs: [
+        { q: "环氧填缝剂值得额外花费吗？", a: "浴室和厨房值得——环氧填缝剂防水、防霉，使用寿命 15 年以上，而水泥填缝剂只有 5-8 年。" },
+        { q: "可以直接在旧填缝剂上涂漆吗？", a: "填缝剂漆只能维持 6-12 个月，且不能修复开裂或缺失的填缝剂。正确的重新填缝才是长久之计。" },
+        { q: "标准浴室重新填缝多少钱？", a: "典型浴室重新填缝：RM 650 至 RM 1,400，包括清除旧填缝剂、清洁、环氧填缝和密封。" }
+      ]
+    }
+  },
+  "plaster-ceiling-hairline-crack": {
+    ms: {
+      title: "Retak Rambut pada Siling Plaster",
+      costRange: "RM 300–RM 1,800+ bergantung kepada keluasan siling",
+      faqs: [
+        { q: "Adakah retak rambut bermakna siling akan jatuh?", a: "Retak rambut kosmetik jarang bersifat struktur. Ia biasanya bermakna lapisan skim mengalami kitaran tekanan — mudah dibaiki." },
+        { q: "Bolehkah saya mengisi retak rambut sendiri?", a: "Kerja pengisi kecil mungkin boleh tetapi sering terbuka semula. Pembaikan profesional menggunakan pita mesh + skim fleksibel untuk hasil tahan lama." },
+        { q: "Berapa kos membaiki retak rambut di dalam bilik?", a: "Pembaikan peringkat bilik (tampalan + skim + primer + cat semula): RM 380 hingga RM 850 bergantung kepada saiz siling." }
+      ]
+    },
+    zh: {
+      title: "石膏天花板出现发丝裂纹",
+      costRange: "RM 300–RM 1,800+，视天花板面积而定",
+      faqs: [
+        { q: "发丝裂纹意味着天花板会掉下来吗？", a: "表面的发丝裂纹很少涉及结构问题。通常只是批灰层在热胀冷缩——很容易修复。" },
+        { q: "可以自己填补发丝裂纹吗？", a: "小面积填补或许可行，但往往会再次开裂。专业修复使用网格胶带+柔性批灰以获得持久效果。" },
+        { q: "修复房间内的发丝裂纹多少钱？", a: "整房修复（修补+批灰+底漆+重涂）：RM 380 至 RM 850，视天花板尺寸而定。" }
+      ]
+    }
+  },
+  "uneven-wall-surface-skim": {
+    ms: {
+      title: "Permukaan Dinding Tidak Rata atau Beralun",
+      costRange: "RM 5–RM 12 setiap kaki persegi (skim coat)",
+      faqs: [
+        { q: "Adakah skim coat berbeza daripada filler?", a: "Ya. Filler untuk pembaikan tompok. Skim coat ialah lapisan plaster nipis seluruh dinding yang memberikan kemasan premium licin sempurna." },
+        { q: "Berapa tebal skim coat?", a: "Skim coat standard 2 hingga 3 mm tebal. Dinding sangat tidak rata mungkin perlukan beberapa lapisan." },
+        { q: "Bolehkah saya langkau skim coat jika saya mengecat semula?", a: "Boleh, tetapi cat sahaja tidak menyembunyikan benjolan. Kemasan premium sentiasa bermula dengan skim yang betul." }
+      ]
+    },
+    zh: {
+      title: "墙面不平整或凹凸不平",
+      costRange: "每平方英尺 RM 5–RM 12（批灰）",
+      faqs: [
+        { q: "批灰和补墙膏有什么区别？", a: "有区别。补墙膏用于局部修补。批灰是覆盖整面墙的薄层石膏，带来完美光滑的优质饰面。" },
+        { q: "批灰有多厚？", a: "标准批灰厚度为 2 至 3 毫米。非常不平整的墙面可能需要多层。" },
+        { q: "反正要重新刷漆，可以跳过批灰吗？", a: "可以，但油漆本身无法遮盖凹凸。优质饰面始终从正确批灰开始。" }
+      ]
+    }
+  },
+  "vinyl-flooring-lifting-edges": {
+    ms: {
+      title: "Lantai Vinyl atau SPC Terangkat di Tepi",
+      costRange: "RM 250–RM 1,800+ bergantung kepada bilangan plank",
+      faqs: [
+        { q: "Bolehkah vinyl yang terangkat digunakan semula?", a: "Biasanya ya jika tidak rosak akibat haba. Kami angkat, keringkan, potong jurang pengembangan dan klik semula plank yang sama." },
+        { q: "Adakah saya perlu mengganti keseluruhan lantai?", a: "Hanya jika plank meleding akibat haba atau tepu air. Kebanyakan kes hanya angkat tepi — boleh dibaiki dalam 2-4 jam." },
+        { q: "Bagaimana mengelakkan angkat tepi pada masa hadapan?", a: "Pastikan jurang pengembangan 10 mm di dinding, elak cahaya matahari barat terus, dan guna permaidani di pintu masuk mudah lembap." }
+      ]
+    },
+    zh: {
+      title: "乙烯基或 SPC 地板边缘翘起",
+      costRange: "RM 250–RM 1,800+，视地板板块数量而定",
+      faqs: [
+        { q: "翘起的乙烯基地板还能重复使用吗？", a: "如果没有热损坏通常可以。我们撬起、干燥、修整伸缩缝并重新卡扣相同的板块。" },
+        { q: "需要更换整个地板吗？", a: "只有在板块热变形或浸水的情况下才需要。大多数情况只是边缘翘起——2-4 小时内可修复。" },
+        { q: "如何防止日后再次翘起？", a: "确保墙边留有 10 毫米伸缩缝、避免西晒直射，并在易潮湿的入口处使用地垫。" }
+      ]
+    }
+  },
+  "cracked-roof-tiles": {
+    ms: {
+      title: "Jubin Bumbung Retak atau Teralih",
+      costRange: "RM 380–RM 1,800+ bergantung kepada bilangan jubin dan akses",
+      faqs: [
+        { q: "Bolehkah anda padankan warna jubin bumbung lama saya?", a: "Ya — kami sumber dari Monier, Malaysian Mosaics dan jenama Malaysia biasa lain. Jubin sangat lama mungkin perlukan padanan hampir berbanding padanan tepat." },
+        { q: "Perlukah saya mengganti keseluruhan bumbung?", a: "Hanya jika 30%+ jubin rosak, atau lapisan bawah terjejas. Kebanyakan rumah hanya perlukan pembaikan tompok + rebed rabung." },
+        { q: "Berapa kos pemeriksaan bumbung penuh?", a: "Pemeriksaan bumbung standard (drone + tinjauan tanah + laporan bertulis): RM 250 hingga RM 450 bergantung kepada akses dan saiz bumbung." }
+      ]
+    },
+    zh: {
+      title: "屋顶瓦片开裂或移位",
+      costRange: "RM 380–RM 1,800+，视瓦片数量和施工条件而定",
+      faqs: [
+        { q: "能匹配我旧屋顶瓦片的颜色吗？", a: "可以——我们从 Monier、Malaysian Mosaics 等马来西亚常见品牌采购。非常旧的瓦片可能需要近似匹配而非完全一致。" },
+        { q: "需要更换整个屋顶吗？", a: "只有超过 30% 瓦片损坏或防水垫层受损时才需要。大多数房屋只需局部修补+屋脊重铺。" },
+        { q: "全面屋顶检查多少钱？", a: "标准屋顶检查（无人机+地面勘察+书面报告）：RM 250 至 RM 450，视屋顶通道和大小而定。" }
+      ]
+    }
+  },
+  "cabinet-door-sagging": {
+    ms: {
+      title: "Pintu Kabinet Dapur Kendor atau Senget",
+      costRange: "RM 150–RM 850+ bergantung kepada bilangan pintu",
+      faqs: [
+        { q: "Perlukah saya mengganti semua engsel sekaligus?", a: "Jika kabinet anda berumur 5+ tahun dan satu engsel gagal, jangkakan yang lain menyusul. Naik taraf penuh ke soft-close biasanya RM 30 hingga RM 60 setiap pintu termasuk pemasangan." },
+        { q: "Bolehkah anda padankan jenama engsel sedia ada saya?", a: "Ya. Blum dan Hafele adalah dua jenama paling biasa di Malaysia dan mudah didapati dalam varian standard dan soft-close." },
+        { q: "Berapa kos naik taraf engsel dapur penuh?", a: "Dapur 8-10 pintu biasa: RM 350 hingga RM 620 untuk penukaran soft-close lengkap." }
+      ]
+    },
+    zh: {
+      title: "厨房柜门下垂或错位",
+      costRange: "RM 150–RM 850+，视门板数量而定",
+      faqs: [
+        { q: "需要一次更换所有铰链吗？", a: "如果柜体已使用 5 年以上且一个铰链损坏，其他通常也会陆续损坏。全套升级为缓冲铰链通常每扇门含安装 RM 30 至 RM 60。" },
+        { q: "能匹配我现有的铰链品牌吗？", a: "可以。Blum 和 Häfele 是马来西亚最常见的两个品牌，标准和缓冲版本都有现货。" },
+        { q: "全套厨房铰链升级多少钱？", a: "典型 8-10 门厨房：完整缓冲铰链改装 RM 350 至 RM 620。" }
+      ]
+    }
+  },
+  "wardrobe-door-jamming": {
+    ms: {
+      title: "Pintu Almari Tersangkut atau Tidak Tertutup",
+      costRange: "RM 180–RM 650+ bergantung kepada jenis pintu",
+      faqs: [
+        { q: "Bolehkah saya membaiki pintu almari gelangsar sendiri?", a: "Membersih trek dan melaraskan roller boleh DIY. Penggantian roller biasanya memerlukan juruteknik untuk penjajaran yang betul." },
+        { q: "Berapa kos pembaikan pintu almari?", a: "Penjajaran semula pintu gelangsar standard + pembersihan trek: RM 180 hingga RM 320. Penggantian roller: RM 250 hingga RM 450 setiap pintu." },
+        { q: "Patutkah saya mengganti daripada membaiki?", a: "Untuk almari binaan berumur 8+ tahun dengan panel meleding atau alat ganti tiada, penggantian selalunya lebih menjimatkan." }
+      ]
+    },
+    zh: {
+      title: "衣柜门卡住或关不上",
+      costRange: "RM 180–RM 650+，视门型而定",
+      faqs: [
+        { q: "可以自己修衣柜推拉门吗？", a: "清洁轨道和调整滚轮可以 DIY。更换滚轮通常需要技术人员进行正确对准。" },
+        { q: "衣柜门维修多少钱？", a: "标准推拉门重新对准+轨道清洁：RM 180 至 RM 320。更换滚轮：每扇门 RM 250 至 RM 450。" },
+        { q: "应该更换而不是维修吗？", a: "对于使用 8 年以上、面板变形或缺备件的入墙衣柜，更换通常更经济。" }
+      ]
+    }
+  },
+  "digital-smart-lock-installation": {
+    ms: {
+      title: "Pemasangan Kunci Digital / Pintar pada Pintu Sedia Ada",
+      costRange: "RM 250–RM 550+ setiap pintu",
+      faqs: [
+        { q: "Bolehkah mana-mana kunci pintar muat pintu saya?", a: "Tidak semestinya. Ketebalan pintu (biasa 35-55 mm), jenis mortise/tubular dan bahan semuanya penting. Kami periksa sebelum pemasangan." },
+        { q: "Berapa lama pemasangan kunci pintar?", a: "Pintu standard: 45 hingga 90 minit. Pintu logam atau tahan api: 90 hingga 150 minit." },
+        { q: "Adakah anda bantu sediakan aplikasi mudah alih?", a: "Ya — kami lengkapkan pemadanan dengan telefon anda, bantu sediakan kod pengguna dan pendaftaran cap jari." }
+      ]
+    },
+    zh: {
+      title: "在现有门上安装电子 / 智能门锁",
+      costRange: "每扇门 RM 250–RM 550+",
+      faqs: [
+        { q: "任何智能锁都能装在我的门上吗？", a: "不一定。门厚（通常 35-55 毫米）、锁体类型（防盗锁体/圆柱锁体）和门材质都很重要。安装前我们会检查。" },
+        { q: "智能锁安装需要多久？", a: "标准门：45 至 90 分钟。金属门或防火门：90 至 150 分钟。" },
+        { q: "你们帮忙设置手机应用吗？", a: "会——我们完成与您手机的配对，协助设置用户密码和指纹录入。" }
+      ]
+    }
+  },
+  "locked-out-of-house": {
+    ms: {
+      title: "Terkunci di Luar Rumah",
+      costRange: "RM 180–RM 550+ bergantung kepada jenis kunci dan masa",
+      faqs: [
+        { q: "Berapa cepat anda tiba untuk kes terkunci?", a: "Masa tindak balas biasa dalam KL/Selangor 30 hingga 75 minit. Panggilan lewat malam selepas waktu kerja: 60 hingga 90 minit." },
+        { q: "Adakah anda akan merosakkan pintu saya?", a: "Untuk 90% kunci silinder standard, kami guna pick tanpa merosakkan. Hanya kunci keselamatan tinggi atau rosak mungkin perlu digerudi silinder." },
+        { q: "Berapa kos terkunci selepas waktu kerja?", a: "Kunci standard: RM 180 hingga RM 380. Selepas waktu kerja (10 malam - 6 pagi): RM 350 hingga RM 650. Caj kecemasan dijelaskan sebelum kami tiba." }
+      ]
+    },
+    zh: {
+      title: "被反锁在家门外",
+      costRange: "RM 180–RM 550+，视锁型和时段而定",
+      faqs: [
+        { q: "被锁门外后你们多久能到？", a: "吉隆坡/雪兰莪的典型响应时间为 30 至 75 分钟。深夜非工作时间呼叫：60 至 90 分钟。" },
+        { q: "会损坏我的门吗？", a: "90% 的标准圆柱锁我们使用无损开锁技术。只有高安保或损坏的锁才可能需要钻开锁芯。" },
+        { q: "非工作时间开锁多少钱？", a: "标准开锁：RM 180 至 RM 380。非工作时间（晚上 10 点至早上 6 点）：RM 350 至 RM 650。紧急附加费会在到达前说明。" }
+      ]
+    }
+  },
+  "downlight-flickering": {
+    ms: {
+      title: "Downlight LED Berkelip atau Cepat Rosak",
+      costRange: "RM 80–RM 320 setiap lampu",
+      faqs: [
+        { q: "Adakah semua downlight LED sama?", a: "Tidak. LED tanpa jenama murah rosak dalam 6-18 bulan. Jenama terkenal (Philips, Osram, Panasonic) tahan 8-15 tahun dengan waranti." },
+        { q: "Berapa kos retrofit downlight LED premium?", a: "Bekalan + pemasangan downlight LED jenama: RM 120 hingga RM 220 setiap titik termasuk juruelektrik berlesen ST." },
+        { q: "Bolehkah saya mengganti mentol sendiri?", a: "Untuk mentol plug-in ya. Downlight LED ceruk adalah pendawaian keras dan perlu diganti oleh juruelektrik berlesen." }
+      ]
+    },
+    zh: {
+      title: "LED 筒灯闪烁或过早损坏",
+      costRange: "每个灯 RM 80–RM 320",
+      faqs: [
+        { q: "所有 LED 筒灯都一样吗？", a: "不一样。廉价无品牌 LED 6-18 个月就损坏。品牌产品（飞利浦、欧司朗、松下）使用寿命 8-15 年且有保修。" },
+        { q: "升级为优质 LED 筒灯多少钱？", a: "品牌 LED 筒灯供应+安装：每个点位 RM 120 至 RM 220，含 ST 持牌电工。" },
+        { q: "可以自己更换灯泡吗？", a: "插拔式灯泡可以。嵌入式 LED 筒灯为硬接线，应由持牌电工更换。" }
+      ]
+    }
+  },
+  "shower-screen-water-leak": {
+    ms: {
+      title: "Skrin Mandian Bocor ke Lantai",
+      costRange: "RM 180–RM 850+ bergantung kepada saiz skrin",
+      faqs: [
+        { q: "Bolehkah saya re-silikon skrin mandian sendiri?", a: "Untuk sentuhan kecil ya. Untuk reseal penuh, pembersihan profesional + masa pengawetan membuat perbezaan besar pada jangka hayat." },
+        { q: "Berapa kos mengganti pengedap skrin mandian?", a: "Penggantian jalur pengedap magnet: RM 120 hingga RM 250. Reseal silikon penuh: RM 180 hingga RM 380 termasuk masa pengeringan." },
+        { q: "Bila perlu mengganti keseluruhan skrin mandian?", a: "Jika kaca retak, bingkai terhakis, atau engsel longgar kelihatan, penggantian (RM 850 hingga RM 2,400) lebih selamat daripada pembaikan." }
+      ]
+    },
+    zh: {
+      title: "淋浴隔断漏水到地板",
+      costRange: "RM 180–RM 850+，视隔断尺寸而定",
+      faqs: [
+        { q: "可以自己重新打硅胶修淋浴隔断吗？", a: "小面积修补可以。完整重新密封时，专业清洁+固化时间对寿命影响很大。" },
+        { q: "更换淋浴隔断密封条多少钱？", a: "磁性密封条更换：RM 120 至 RM 250。全面重新打硅胶：RM 180 至 RM 380，含干燥时间。" },
+        { q: "什么时候应该更换整个淋浴隔断？", a: "如果玻璃开裂、框架腐蚀或铰链明显松动，更换（RM 850 至 RM 2,400）比维修更安全。" }
+      ]
+    }
+  },
+  "stubborn-bathroom-limescale": {
+    ms: {
+      title: "Karat Kapur dan Kesan Air Degil di Bilik Air",
+      costRange: "RM 180–RM 550+ setiap bilik air",
+      faqs: [
+        { q: "Adakah bahan kimia pembersih bilik air anda selamat untuk keluarga?", a: "Ya. Kami guna penyahkerak mesra alam dan sentiasa mengudarakan bilik air sepenuhnya. Sisa kimia dibilas sepenuhnya sebelum kami pergi." },
+        { q: "Berapa lama pembersihan mendalam bilik air?", a: "Pembersihan mendalam bilik air standard: 2 hingga 4 jam setiap bilik air bergantung kepada keterukan skala." },
+        { q: "Bagaimana untuk mengelakkan limescale daripada kembali?", a: "Lap kaca mandi dengan squeegee selepas setiap penggunaan, lap paip setiap minggu, dan pertimbangkan pelembut air seluruh rumah untuk perlindungan jangka panjang." }
+      ]
+    },
+    zh: {
+      title: "浴室顽固水垢和水渍",
+      costRange: "每间浴室 RM 180–RM 550+",
+      faqs: [
+        { q: "你们浴室清洁化学品对家人安全吗？", a: "安全。我们使用环保除垢剂，并始终让浴室充分通风。离开前会彻底冲洗掉化学残留。" },
+        { q: "浴室深度清洁需要多久？", a: "标准浴室深度清洁：每间 2 至 4 小时，视水垢严重程度而定。" },
+        { q: "怎样预防水垢再次形成？", a: "每次使用后用刮水器刮干淋浴玻璃、每周擦拭水龙头，并考虑安装全屋软水机以获得长期防护。" }
+      ]
+    }
+  },
+  "move-out-condo-deep-clean": {
+    ms: {
+      title: "Pembersihan Mendalam Kondominium Sebelum Berpindah",
+      costRange: "RM 420–RM 1,800+ bergantung kepada saiz unit",
+      faqs: [
+        { q: "Termasukkah kerja sentuhan dinding?", a: "Penyingkiran calar asas termasuk. Pengecatan semula sebenar disebut harga berasingan jika kerosakan dinding melebihi pembersihan." },
+        { q: "Berapa kos pembersihan pindah keluar kondominium 3 bilik?", a: "Kondominium 900-1200 kaki persegi biasa: RM 850 hingga RM 1,400 untuk pembersihan mendalam penuh termasuk dapur dan 2 bilik air." },
+        { q: "Adakah anda berikan resit untuk tuan tanah?", a: "Ya — invois terperinci penuh dengan maklumat syarikat, sesuai untuk rundingan bayaran balik deposit." }
+      ]
+    },
+    zh: {
+      title: "公寓退租深度清洁",
+      costRange: "RM 420–RM 1,800+，视单位面积而定",
+      faqs: [
+        { q: "墙面修补也在服务范围内吗？", a: "基本污痕清除已包含。如果墙面损坏超出清洁范围，实际重新刷漆将单独报价。" },
+        { q: "三房公寓退租清洁多少钱？", a: "典型 900-1200 平方英尺公寓：全面深度清洁（含厨房和 2 间浴室）RM 850 至 RM 1,400。" },
+        { q: "能给房东提供收据吗？", a: "可以——提供含公司信息的完整明细发票，适合用于押金退还协商。" }
+      ]
+    }
+  },
+  "cement-splatter-tile-clean": {
+    ms: {
+      title: "Percikan Simen dan Debu Selepas Pengubahsuaian",
+      costRange: "RM 650–RM 3,200+ bergantung kepada saiz unit",
+      faqs: [
+        { q: "Adakah pembersihan kontraktor dikira sebagai pembersihan selepas pengubahsuaian?", a: "Jarang. Pembersihan kontraktor standard hanyalah penyingkiran serpihan asas. Pembersihan mendalam selepas pengubahsuaian menjadikan unit anda benar-benar siap huni." },
+        { q: "Berapa lama pembersihan selepas pengubahsuaian?", a: "Kondominium 3 bilik standard: 6-10 jam dengan pasukan 2-3 pembersih. Unit lebih besar atau pengubahsuaian berat: 1-2 hari penuh." },
+        { q: "Berapa kos membuang simen dari jubin bilik air?", a: "Termasuk dalam skop pembersihan mendalam. Penyingkiran simen berasingan (jika perlu sebagai susulan): RM 250 hingga RM 550 setiap bilik air." }
+      ]
+    },
+    zh: {
+      title: "装修后的水泥溅渍和粉尘",
+      costRange: "RM 650–RM 3,200+，视单位面积而定",
+      faqs: [
+        { q: "承包商的简单清理算是装修后清洁吗？", a: "很少算。标准承包商清理只是基本垃圾清除。装修后深度清洁才能让您的单位真正达到入住标准。" },
+        { q: "装修后清洁需要多长时间？", a: "标准三房公寓：2-3 人团队 6-10 小时。更大单位或重度装修：1-2 整天。" },
+        { q: "清除浴室瓷砖上的水泥多少钱？", a: "已包含在深度清洁范围。单独清除水泥（如需后续处理）：每间浴室 RM 250 至 RM 550。" }
+      ]
+    }
+  },
+  "cctv-not-recording-storage-full": {
+    ms: {
+      title: "CCTV Tidak Merakam atau Paparan Kosong",
+      costRange: "RM 180–RM 850+ bergantung kepada kerosakan sistem",
+      faqs: [
+        { q: "Berapa lama cakera keras CCTV tahan?", a: "Cakera keras CCTV khusus (WD Purple, Seagate SkyHawk) biasanya tahan 4-7 tahun dengan operasi 24/7." },
+        { q: "Berapa kos mengganti sistem DVR 8 saluran penuh?", a: "DVR 8 saluran penuh + cakera keras + pemasangan: RM 850 hingga RM 1,800 tidak termasuk kamera." },
+        { q: "Bolehkah anda pulihkan rakaman dari DVR yang gagal?", a: "Untuk kegagalan cakera keras, pemulihan data profesional boleh mendapatkan semula kebanyakan rakaman — RM 350 hingga RM 1,200 bergantung kepada kerosakan." }
+      ]
+    },
+    zh: {
+      title: "CCTV 无法录像或画面空白",
+      costRange: "RM 180–RM 850+，视系统故障而定",
+      faqs: [
+        { q: "CCTV 专用硬盘的寿命有多长？", a: "专用 CCTV 硬盘（西数紫盘、希捷 SkyHawk）在 24/7 运行下通常可使用 4-7 年。" },
+        { q: "更换整套 8 路 DVR 系统多少钱？", a: "完整 8 路 DVR+硬盘+安装：RM 850 至 RM 1,800，不含摄像头。" },
+        { q: "能从故障 DVR 中恢复录像吗？", a: "对于硬盘故障，专业数据恢复可以找回大部分录像——RM 350 至 RM 1,200，视损坏程度而定。" }
+      ]
+    }
+  },
+  "autogate-remote-not-working": {
+    ms: {
+      title: "Alat Kawalan Jauh Pagar Auto Tidak Berfungsi",
+      costRange: "RM 120–RM 550+ bergantung kepada punca",
+      faqs: [
+        { q: "Adakah sebarang remot boleh dipadankan dengan pagar auto saya?", a: "Hanya remot yang sepadan dengan jenama motor anda (SEIP, DEA, AutoGate, DASPI, dll.). Kami simpan stok kod Malaysia yang biasa." },
+        { q: "Berapa kos alat kawalan jauh autogate baru?", a: "Alat kawalan standard + program: RM 120 hingga RM 250. Alat kawalan kod gelongsor: RM 250 hingga RM 380." },
+        { q: "Patutkah saya naik taraf ke kawalan pagar telefon pintar?", a: "Pengawal pagar Wi-Fi adalah RM 350 hingga RM 650 termasuk pemasangan dan membolehkan anda membuka pagar dari mana-mana menggunakan aplikasi." }
+      ]
+    },
+    zh: {
+      title: "自动门遥控器失灵",
+      costRange: "RM 120–RM 550+，视原因而定",
+      faqs: [
+        { q: "能否把任意遥控器配对到我的自动门？", a: "只有与您电机品牌匹配的遥控器（SEIP、DEA、AutoGate、DASPI 等）。我们备有马来西亚常用型号。" },
+        { q: "新的自动门遥控器多少钱？", a: "标准遥控器+编程：RM 120 至 RM 250。滚动码遥控器：RM 250 至 RM 380。" },
+        { q: "应该升级为手机控制自动门吗？", a: "Wi-Fi 门控器含安装 RM 350 至 RM 650，可让您通过应用随时随地开门。" }
+      ]
+    }
+  },
+  "loose-metal-gate-hinges": {
+    ms: {
+      title: "Engsel Pagar Besi Longgar atau Kendor",
+      costRange: "RM 250–RM 1,200+ bergantung kepada saiz pagar",
+      faqs: [
+        { q: "Adakah anda boleh menjalankan kerja kimpalan di tapak?", a: "Ya. Kami bawa pengimpal arka/MIG mudah alih dan boleh menyiapkan kebanyakan pembaikan engsel pagar dalam 2-4 jam di tapak." },
+        { q: "Adakah kawasan kimpalan akan berkarat semula?", a: "Tidak jika disiapkan dengan primer perencat karat + 2 lapisan cat enamel — waranti biasa 12-24 bulan." },
+        { q: "Perlukah saya mengganti keseluruhan pagar?", a: "Hanya jika bingkai berkarat teruk. Pembaikan engsel sahaja (RM 350 hingga RM 850) biasanya memulihkan pagar untuk 10-15 tahun lagi." }
+      ]
+    },
+    zh: {
+      title: "金属大门铰链松动或下垂",
+      costRange: "RM 250–RM 1,200+，视大门尺寸而定",
+      faqs: [
+        { q: "你们能在现场进行焊接吗？", a: "可以。我们携带便携式电弧/MIG 焊机，大多数大门铰链维修可在现场 2-4 小时内完成。" },
+        { q: "焊接区域会再次生锈吗？", a: "如果正确涂上防锈底漆+2 层磁漆就不会——典型保修期 12-24 个月。" },
+        { q: "需要更换整扇大门吗？", a: "只有在框架严重锈蚀时才需要。仅铰链维修（RM 350 至 RM 850）通常可让大门再使用 10-15 年。" }
+      ]
+    }
+  },
+  "stuck-sliding-window": {
+    ms: {
+      title: "Tingkap Gelangsar Tersangkut atau Seret",
+      costRange: "RM 180–RM 550+ setiap tingkap",
+      faqs: [
+        { q: "Bolehkah tingkap gelangsar yang tersangkut dibaiki sendiri?", a: "Pembersihan dan pelinciran trek boleh DIY. Penggantian roller biasanya memerlukan mengangkat panel tingkap — lebih baik dilakukan oleh profesional." },
+        { q: "Berapa kos mengganti roller tingkap gelangsar?", a: "Penggantian standard: RM 180 hingga RM 320 setiap tingkap termasuk roller baru dan pelinciran trek." },
+        { q: "Patutkah saya naik taraf ke tingkap casement?", a: "Tingkap casement (engkol) menutup lebih ketat dan lebih selamat. Penukaran penuh: RM 850 hingga RM 1,800 setiap tingkap." }
+      ]
+    },
+    zh: {
+      title: "推拉窗卡住或滑动不畅",
+      costRange: "每扇窗 RM 180–RM 550+",
+      faqs: [
+        { q: "推拉窗卡住了能自己动手修吗？", a: "轨道清洁和润滑可以 DIY。更换滚轮通常需要抬起窗扇——最好由专业人员操作。" },
+        { q: "更换推拉窗滚轮多少钱？", a: "标准更换：每扇窗 RM 180 至 RM 320，含新滚轮和轨道润滑。" },
+        { q: "应该升级为平开窗吗？", a: "平开（摇杆式）窗密封性更好、更安全。全面改造：每扇窗 RM 850 至 RM 1,800。" }
       ]
     }
   }

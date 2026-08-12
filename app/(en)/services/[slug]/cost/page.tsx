@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { servicesData } from "@/config/services-data";
 import { getMarketRatesForService, type MarketRateItem } from "@/config/market-rates";
 import { getArticleSchema, getFAQSchema, getOfferCatalogSchema } from "@/lib/seo";
-import { buildServiceBundle } from "@/lib/location-bundles";
+import { buildServiceBundle, buildServiceLinks } from "@/lib/location-bundles";
 import { LocaleServiceCostView } from "@/components/sections/locale-service-cost-view";
 
 // Every valid param is enumerated in `generateStaticParams()`, so anything
@@ -46,7 +46,28 @@ export default async function CostPage(props: { params: Promise<{ slug: string }
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getOfferCatalogSchema(service.subServices)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getArticleSchema({ title: `${service.title} Cost in KL & Selangor`, slug: `${slug}/cost`, excerpt: service.metaDesc, path: `/services/${slug}/cost`, category: "Pricing" })) }} />
 
-      <LocaleServiceCostView slug={slug} bundle={buildServiceBundle(service)} rates={rates} />
+      <LocaleServiceCostView
+        slug={slug}
+        bundle={buildServiceBundle(service)}
+        rates={rates}
+        relatedCostGuides={buildRelatedCostBundles(service.slug)}
+      />
     </>
   );
+}
+
+/**
+ * Circular selection gives every cost guide the same six sibling inlinks —
+ * the same pattern the emergency pages use. Each page links the next six
+ * `/services/<slug>/cost` guides so no cost page depends on one neighbour.
+ */
+function buildRelatedCostBundles(serviceSlug: string) {
+  const allServices = Object.values(servicesData);
+  const currentIndex = allServices.findIndex((service) => service.slug === serviceSlug);
+
+  const relatedServices = Array.from({ length: Math.min(6, allServices.length - 1) }, (_, offset) => (
+    allServices[(currentIndex + offset + 1) % allServices.length]
+  ));
+
+  return buildServiceLinks(relatedServices, (service) => `/services/${service.slug}/cost`);
 }

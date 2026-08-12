@@ -274,6 +274,63 @@ export function LocaleSpecialtyPage({
         </div>
       </section>
 
+      {/* ── Related specialties (sibling sub-services, same service) ── */}
+      {(() => {
+        const siblings = service.subServices
+          .map((item) => slugify(item.name))
+          .filter((itemSlug) => itemSlug !== subservice && hasSpecialtyLocaleContent(slug, itemSlug, locale));
+        if (siblings.length === 0) return null;
+        const currentIdx = service.subServices.findIndex((item) => slugify(item.name) === subservice);
+        // Circular order keeps every page equal: the current specialty is
+        // removed and the remaining siblings rotate so each page links the
+        // same 3 neighbours regardless of list order.
+        const ordered = service.subServices
+          .map((item) => slugify(item.name))
+          .filter((itemSlug) => itemSlug !== subservice)
+          .map((itemSlug, idx) => ({ itemSlug, rank: (idx - (currentIdx % siblings.length) + siblings.length) % siblings.length }))
+          .sort((a, b) => a.rank - b.rank)
+          .map((entry) => entry.itemSlug);
+        const visible = ordered.slice(0, Math.min(3, ordered.length));
+        return (
+          <section className="section-tight bg-slate-50 border-t border-slate-100" aria-labelledby="related-specialties-heading">
+            <div className="container-narrow">
+              <div className="text-center mb-8">
+                <span className="eyebrow">{t("serviceDetail.otherServicesHeading")}</span>
+                <h2 id="related-specialties-heading" className="text-2xl sm:text-3xl font-extrabold text-[#075985] tracking-tight mt-3">
+                  {t("serviceDetail.otherServicesHeading")}
+                </h2>
+                <p className="mt-3 text-base text-[#475569] leading-relaxed font-medium max-w-2xl mx-auto">
+                  {t("serviceDetail.otherServicesSub")}
+                </p>
+              </div>
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {visible.map((itemSlug) => {
+                  const sibling = getSpecialtyLocaleContent(slug, itemSlug, locale);
+                  if (!sibling) return null;
+                  return (
+                    <Link
+                      key={itemSlug}
+                      href={locale === "ms" ? `/ms/services/${slug}/${itemSlug}` : `/zh/services/${slug}/${itemSlug}`}
+                      className="group rounded-2xl border border-slate-200 bg-white p-5 transition-all hover:border-[#0EA5E9] hover:shadow-md flex flex-col gap-2"
+                    >
+                      <span className="text-sm font-extrabold text-[#075985] group-hover:text-[#0284C7] leading-tight">
+                        {sibling.name}
+                      </span>
+                      <span className="text-xs font-semibold leading-relaxed text-[#475569] line-clamp-2">
+                        {sibling.tagline}
+                      </span>
+                      <span className="mt-auto inline-flex items-center gap-1 text-[11px] font-extrabold text-[#0EA5E9]">
+                        {t("common.viewDetails")}
+                      </span>
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+          </section>
+        );
+      })()}
+
       {/* ── Related guides + problems (typed topical relationships) ──── */}
       <RelatedSpecialtyContent locale={locale} serviceSlug={slug} specialtySlug={subservice} t={t} />
 

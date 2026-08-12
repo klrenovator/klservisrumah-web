@@ -5,6 +5,8 @@ import Link from "next/link";
 import { problemPages } from "@/config/problem-data";
 import { ArrowRight, AlertTriangle } from "lucide-react";
 import { useTranslations } from "@/hooks/use-translations";
+import { useLang } from "@/context/lang-context";
+import { getLocalizedProblem } from "@/lib/problem-i18n";
 
 type RelatedProblemsProps = {
   serviceSlug: string;
@@ -16,13 +18,21 @@ type RelatedProblemsProps = {
  * Implements the same problem-page internal-linking pattern as KLRenovator
  * (e.g. "Common Aircond Problems" linking from service pages to problem pages).
  * This builds strong topical authority and provides users with diagnostic pathways.
+ *
+ * Titles, symptoms and cost ranges are localized client-side via
+ * `getLocalizedProblem()` (MS/ZH when the user's active language is set), so
+ * visitors browsing in Bahasa Malaysia or Chinese see native content instead
+ * of English. The links still resolve to the EN `/problems/[slug]` route,
+ * where `LocaleProblemView` renders the locale-appropriate full page.
  */
 export function RelatedProblems({ serviceSlug, maxItems = 4 }: RelatedProblemsProps) {
   const t = useTranslations();
+  const { lang } = useLang();
 
   const related = problemPages
     .filter((p) => p.serviceSlug === serviceSlug)
-    .slice(0, maxItems);
+    .slice(0, maxItems)
+    .map((problem) => getLocalizedProblem(problem, lang));
 
   if (related.length === 0) return null;
 
@@ -37,7 +47,7 @@ export function RelatedProblems({ serviceSlug, maxItems = 4 }: RelatedProblemsPr
             {t("internalLinks.commonProblems")}
           </h2>
           <p className="text-sm text-[#475569] max-w-2xl leading-relaxed">
-            Diagnose and solve common home issues before booking. Our problem guides help you understand what is happening and what to expect for repairs.
+            {t("internalLinks.problemsIntro")}
           </p>
         </div>
 

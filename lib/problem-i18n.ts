@@ -12,7 +12,7 @@ export function getLocalizedProblem(problem: ProblemDetail, locale: Locale): Pro
   let localizedProblem = problem;
 
   if (locale !== "en") {
-    const override: LocalizedProblemContent | undefined = problemI18n[problem.slug]?.[locale];
+    const override: Partial<LocalizedProblemContent> | undefined = problemI18n[problem.slug]?.[locale];
     if (override) {
       localizedProblem = {
         ...problem,

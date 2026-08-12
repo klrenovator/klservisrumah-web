@@ -5,7 +5,7 @@ import Link from "next/link";
 import { CheckCircle2, MessageSquare, Siren } from "lucide-react";
 import type { MarketRateItem } from "@/config/market-rates";
 import type { Locale } from "@/lib/i18n";
-import type { LocaleMap, ServiceBundleEntry } from "@/lib/location-bundles";
+import type { LocaleMap, ServiceBundleEntry, ServiceLinkEntry } from "@/lib/location-bundles";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { useLang } from "@/context/lang-context";
 import { useTranslations } from "@/hooks/use-translations";
@@ -15,6 +15,7 @@ type LocaleServiceCostViewProps = {
   slug: string;
   bundle: LocaleMap<ServiceBundleEntry>;
   rates: MarketRateItem[];
+  relatedCostGuides?: ServiceLinkEntry[];
 };
 
 type CostTableRow = {
@@ -33,7 +34,7 @@ const factorKeys = [1, 2, 3, 4, 5, 6] as const;
  * this compact client view swaps the visible copy, breadcrumbs, service name,
  * fallback sub-service rows and CTA chrome for EN / BM / 中文.
  */
-export function LocaleServiceCostView({ slug, bundle, rates }: LocaleServiceCostViewProps) {
+export function LocaleServiceCostView({ slug, bundle, rates, relatedCostGuides = [] }: LocaleServiceCostViewProps) {
   const { lang } = useLang();
   const t = useTranslations();
   const locale = lang as Locale;
@@ -150,6 +151,32 @@ export function LocaleServiceCostView({ slug, bundle, rates }: LocaleServiceCost
               {t("emergencyPage.badge")}
             </Link>
           </div>
+
+          {relatedCostGuides.length > 0 && (
+            <section className="mt-10" aria-labelledby="related-cost-guides-heading">
+              <h2 id="related-cost-guides-heading" className="text-2xl font-extrabold text-[#075985]">
+                {t("serviceDetail.otherServicesHeading")}
+              </h2>
+              <p className="mt-2 max-w-3xl text-sm font-semibold leading-relaxed text-[#475569]">
+                {t("serviceDetail.otherServicesSub")}
+              </p>
+              <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {relatedCostGuides.map((guide) => {
+                  const title = guide.titles[locale] ?? guide.titles.en;
+                  return (
+                    <Link
+                      key={guide.href}
+                      href={guide.href}
+                      className="rounded-2xl border border-slate-100 bg-white p-5 shadow-xs transition hover:-translate-y-0.5 hover:border-[#0EA5E9]/30 hover:shadow-md"
+                    >
+                      <h3 className="font-extrabold text-[#075985]">{title}</h3>
+                      <span className="mt-2 inline-flex text-sm font-bold text-[#0EA5E9]">{t("common.viewDetails")}</span>
+                    </Link>
+                  );
+                })}
+              </div>
+            </section>
+          )}
         </div>
       </section>
     </>
