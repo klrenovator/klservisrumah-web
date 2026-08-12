@@ -129,10 +129,7 @@ export function GenericContentPageView({ page }: { page: GenericContentPage }) {
           // Fallback: if circular didn't yield (e.g., single page), use filter
           const finalSiblings = siblings.length ? siblings : allInCategory.filter((p) => p.slug !== page.slug).slice(0, 6);
           if (!finalSiblings.length) return null;
-          const getHref = (s: GenericContentPage) => {
-            if (s.category === "Service Cluster" && s.relatedServiceSlug) {
-              return `/services/${s.relatedServiceSlug}/${s.slug}`;
-            }
+          const hubFor = (category: string) => {
             const map: Record<string, string> = {
               "AI Answer Guide": "/answers",
               "Brand Guide": "/brands",
@@ -149,18 +146,41 @@ export function GenericContentPageView({ page }: { page: GenericContentPage }) {
               Ceiling: "/guides",
               Handyman: "/guides",
             };
-            const prefix = map[s.category] || "/guides";
-            return `${prefix}/${s.slug}`;
+            return map[category] || "/guides";
           };
+          const getHref = (s: GenericContentPage) => {
+            if (s.category === "Service Cluster" && s.relatedServiceSlug) {
+              return `/services/${s.relatedServiceSlug}/${s.slug}`;
+            }
+            return `${hubFor(s.category)}/${s.slug}`;
+          };
+          // Link back up to the category's own hub. Sub-hubs that are not in
+          // the global navigation — `/guides/maintenance` is the only one —
+          // were otherwise reachable from just two pages sitewide, even though
+          // ten detail pages sit under them. The parent hub is skipped for
+          // categories whose hub is already linked from every page's chrome,
+          // so this adds a link only where it actually carries equity.
+          const categoryHub = hubFor(page.category);
+          const hubLink =
+            page.category !== "Service Cluster" && categoryHub === "/guides/maintenance"
+              ? [{
+                  title: `${page.category} — ${t("common.viewAll")}`,
+                  href: categoryHub,
+                  desc: allInCategory.length > 1 ? `${allInCategory.length} guides in this category` : undefined
+                }]
+              : [];
           return (
             <InternalLinkGrid
               title={t("content.relatedReading") || "Related reading"}
               subtitle={`${page.category} — ${finalSiblings.length} more guides`}
-              links={finalSiblings.map((s) => ({
-                title: s.title,
-                href: getHref(s),
-                desc: s.intro.slice(0, 120)
-              }))}
+              links={[
+                ...finalSiblings.map((s) => ({
+                  title: s.title,
+                  href: getHref(s),
+                  desc: s.intro.slice(0, 120)
+                })),
+                ...hubLink
+              ]}
             />
           );
         })()}

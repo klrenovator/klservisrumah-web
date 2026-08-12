@@ -1270,7 +1270,9 @@
     "dedicatedBadge": "Pengira terperinci",
     "openEstimator": "Buka pengira",
     "allServices": "Semua {count} perkhidmatan — satu pautan boleh kongsi setiap satu",
-    "from": "Dari {price}"
+    "from": "Dari {price}",
+    "relatedHeading": "Cuba pengira segera yang lain",
+    "relatedSub": "Kadar 2026 yang sama diterbitkan, satu pautan boleh kongsi bagi setiap perkhidmatan — pilih kerja yang anda perlukan seterusnya."
   },
   "subserviceHero": {
     "subserviceLabel": "Sub-perkhidmatan {service}",

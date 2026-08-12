@@ -1270,7 +1270,9 @@
     "dedicatedBadge": "详细估价器",
     "openEstimator": "打开估价器",
     "allServices": "全部 {count} 项服务 —— 每项一个可分享链接",
-    "from": "{price} 起"
+    "from": "{price} 起",
+    "relatedHeading": "试试其他即时估价器",
+    "relatedSub": "同样采用公布的 2026 年价目，每项服务一个可分享链接 —— 选择您接下来需要的工种。"
   },
   "subserviceHero": {
     "subserviceLabel": "{service}子服务",

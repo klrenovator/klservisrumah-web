@@ -1270,7 +1270,9 @@
     "dedicatedBadge": "Detailed estimator",
     "openEstimator": "Open estimator",
     "allServices": "All {count} services — one shareable link each",
-    "from": "From {price}"
+    "from": "From {price}",
+    "relatedHeading": "Try another instant estimator",
+    "relatedSub": "Same published 2026 rates, one shareable link per service — pick the trade you need next."
   },
   "subserviceHero": {
     "subserviceLabel": "{service} sub-service",
