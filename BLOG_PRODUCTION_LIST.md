@@ -9,13 +9,13 @@ LANGUAGES: English (EN), Malay (MS), Chinese (ZH) — 3 per item.
 ## CURRENT COUNTS
 - Main Services: 28
 - Sub-Services: ~112 (28 services × avg 4 sub-services)
-- Problems: 43
+- Problems: 43 (historic `problem-data.ts` denominator) / 65 live indexable slugs
 - TOTAL BLOG POSTS NEEDED: (28 + 112 + 43) × 3 = ~549
 
-## LIVE / PROGRESS STATUS (as of Batch 9)
-- Blog items fully written (markdown, all 3 languages): 123 items × 3 = 369 files (Batches 1–9)
+## LIVE / PROGRESS STATUS (as of Batch 10)
+- Blog items fully written (markdown, all 3 languages): 138 items × 3 = 414 files (Batches 1–10)
 - Live site blog wiring: Batch 4 topics (15 items) wired into config (blog-data-batch4.ts + blog-i18n.ts) and publishing on /blog, /ms/blog, /zh/bo-ke
-- Batches 1–3, 5, 6, 7, 8 and 9: markdown production records (not wired to live site, per existing convention)
+- Batches 1–3, 5, 6, 7, 8, 9 and 10: markdown production records (not wired to live site, per existing convention)
 - Main services milestone: 28/28 (100% of all main service pillars complete!)
 - Validation tooling: `node scripts/validate-blog-markdown.mjs` now validates the whole /blogs corpus (frontmatter, single H1, duplicate slugs/titles, coverImage on disk, meta lengths, and every in-article link against the real route universe). Run it after each batch.
 
@@ -220,6 +220,53 @@ Remaining: 315
 - Prices quoted are the company's published starting prices (from config/services-data.ts); no pricing invented. Glass & aluminium RM 320, cleaning RM 180, deep cleaning RM 420, post-renovation cleaning RM 650, CCTV RM 420, plus the published sub-service prices.
 - Cover images point to existing assets: /hero-glass-aluminium.svg, /hero-cleaning.svg, /hero-deep-cleaning.svg, /hero-post-renovation-cleaning.svg, /hero/home-services-cctv-kl.jpg (all verified present in public/).
 - ⚠️ New categories introduced: "CCTV" (EN and MS) and "安防监控" (ZH). Category sets are now 19 per language. If a category filter/index is ever generated from the markdown, these need to be registered.
+- ⚠️ Cannibalisation watch (flagged, not skipped): the new cctv service blog overlaps the live editorial blog cctv-installation-buying-guide-kl (MS panduan-beli-pasang-cctv-kl, ZH ji-long-cctv-an-zhuang-gou-mai-zhi-nan), which covers camera types, HD/4K, IP vs analog, PoE vs Wi-Fi and cloud vs local. The Batch 6 cctv article is deliberately scoped to installation scope, process and pricing, and links out to the buying guide from all three languages. Monitor in GSC.
+- ⚠️ Overlap watch within the batch: cleaning / deep-cleaning / post-renovation-cleaning are adjacent intents. Each main article opens with an explicit "which one do you need" comparison and cross-links the other two, so the differentiation is on the page rather than left to Google.
+- ZH wording: cleaning verticals use 定期保洁 (recurring), 深度清洁 (deep clean) and 装修后清洁 (post-renovation) as distinct terms; CCTV uses 监控 / CCTV interchangeably as Malaysian Chinese readers search both.
+- CCTV content is limited to verifiable domain facts (PoE vs Wi-Fi behaviour, camera counts by property type, condo management approval for common areas, handover documentation). No certifications, licences, brand partnerships or performance claims asserted.
+- Live wiring: Batch 6 is markdown-only (same convention as Batches 1–3 and 5). Not added to blog-data-batch4.ts / blog-i18n.ts.
+- Validation: script-verified frontmatter completeness, single H1 per article, no duplicate slugs across all 234 markdown files, coverImage assets exist on disk, WhatsApp CTA present in every file, EN/MS metaTitle 41–53 chars and metaDesc 130–170 chars, ZH metaTitle 12–27 and metaDesc 51–70 characters (in line with the ZH convention set in Batches 1–5). `npm run lint` / `type-check` / `build` still cannot run in this environment (node_modules not installed); markdown-only change does not affect the Next.js build.
+- Future opportunity (missing link targets noted, none invented): no CCTV cost calculator under /tools, /ms/alatan or /zh/gongju; no problem pages for "cloudy/hazy tempered glass after cleaning" or "aluminium window condensation", which would be natural link targets for the glass & aluminium cluster.
+- Services remaining after Batch 6: autogate, welding (2/28).
+
+## BATCH 5 NOTES / ISSUES
+- Frontmatter: all 45 files carry full YAML frontmatter (slug, title, excerpt, category, date, readTime, author, coverImage, metaTitle, metaDesc) + tracking fields (language, service, subService for sub-services, status, batch).
+- Internal links: 283 in-article links verified against real routes (services, sub-services, problems, live editorial blogs — EN/MS/ZH). No invented URLs.
+- Prices quoted are the company's published starting prices (from config/services-data.ts); no pricing invented.
+- Cover images point to existing assets: /hero/home-services-kitchen-cabinet-kl.jpg, /hero-carpentry.svg, /hero-door.svg, /hero-window.svg, /hero-locksmith.svg.
+- Live wiring: Batch 5 is markdown-only (same convention as Batches 1–3). Not added to blog-data-batch4.ts / blog-i18n.ts.
+- Cannibalisation watch (flagged, not skipped): kitchen-cabinet service blog overlaps live editorial kitchen-cabinet-material-guide-malaysia. Service articles stay process/quote focused and link to the material guide. Smart-lock-installation overlaps live editorial smart-lock-buying-guide-malaysia-2026; install article stays fit/process focused and links to the buying guide.
+- ZH wording: laminate bedroom doors are written as 防火板门 (Malaysian HPL/laminate), with an explicit note that this is not a certified 防火门 (fire-rated door).
+- Validation: frontmatter complete, no duplicate slugs/titles in the batch, internal link prefixes valid, problem slugs exist in problem-data.ts. `npm run type-check` could not run in this environment (`tsc` not on PATH / node_modules not installed). Markdown-only change should not affect the Next.js build.
+
+## BATCH 4 NOTES / ISSUES
+- Frontmatter: all 45 files carry full YAML frontmatter (slug, title, excerpt, category, date, readTime, author, coverImage, metaTitle, metaDesc) + tracking fields (language, service, subService for sub-services, status, batch).
+- Internal links: all in-article links verified against real routes (services, sub-services, problems, blog — EN/MS/ZH). No invented URLs.
+- Live wiring: batch-4 topics also added to the live blog system — English content in new `config/blog-data-batch4.ts` (pushed into `blogPosts` in `config/blog-data.ts`) and MS/ZH translations in `config/blog-i18n.ts`. Verified these publish on /blog (EN), /ms/blog (MS), /zh/bo-ke (ZH) via `next build`.
+- Prices quoted are the company's published starting prices (from config/services-data.ts); no pricing invented.
+- Cover images point to existing assets: /hero/home-services-plaster-ceiling-kl.jpg, /hero/home-services-skim-coat-kl.jpg, /hero/home-services-flooring-kl.jpg, /hero-epoxy-flooring.svg, /hero-roof-repair.svg (verified present in public/).
+- ⚠️ Note: batch-4 English blog slugs in the live config (`plaster-ceiling-design-build-kl`, etc.) differ from the markdown file slugs (`plaster-ceiling.md`). This matches how batch-3 was handled (markdown filename ≠ live slug) and is intentional — markdown files are the production record, config drives the live blog.
+
+## BATCH 1 & 2 NOTES / ISSUES (rewrite)
+- These batches were originally created as plain stub markdown (e.g. `# plumbing Services — Blog (EN)`). They did NOT match the prompt format. Both have now been rewritten to the same full frontmatter + article format used in Batch 3.
+- Sub-service stub files were renamed from Batch-2 style `-sub-a`/`-sub-b` and Batch-1 `painting-sub-interior` to descriptive slugs matching the real site sub-service route slugs. Old stub filenames removed.
+- Internal links: all links verified against real routes (services, sub-services, problems, blog — EN/MS/ZH). No invented URLs.
+- ⚠️ Batch 1/2 are markdown-only production records; they are NOT wired into the live site config (matching the pre-existing batch-3 convention). Live wiring was applied to Batch 4 only.
+
+## BATCH 3 NOTES / ISSUES
+- Frontmatter: all 45 files carry YAML frontmatter mirroring the site's BlogPost schema (slug, title, excerpt, category, date, readTime, author, coverImage, metaTitle, metaDesc) + tracking fields (language, service, status, batch). Previous batches used plain stub markdown; this batch enriches the format to satisfy SEO metadata requirements while preserving the tracking fields.
+- Sub-service file naming: descriptive slugs used (e.g. new-power-point-and-switch-installation) instead of Batch-2 style `-sub-a`/`-sub-b`, matching Batch-1 precedent (painting-sub-interior) and the real site sub-service route slugs.
+- Internal links: all 63 in-article links verified against real routes (services, sub-services, problems, blog — EN/MS/ZH). No invented URLs.
+- ⚠️ Topical map mismatch (pre-existing, not caused by this batch): config/topical-authority-map.ts references problem slugs that do not exist in config/problem-data.ts — electrical→power-tripping-frequently/downlight-flickering, lighting→downlight-flickering, tiling→loose-hollow-tiles/cracked-tile-grout. Real slugs are rccb-tripping-kl, flickering-downlights, hollow-tiles-floor. Blogs link to the REAL problem pages. Recommend updating the topical map for review.
+- ⚠️ Cannibalisation watch: new db-box-upgrade-and-rewiring blog overlaps the existing live editorial blog safe-electrical-wiring-upgrade-old-house (old-house rewiring guide). The service blog is sub-service focused with interlinks both ways; monitor for keyword overlap, review if GSC shows cannibalisation.
+- Prices quoted are the company's published starting prices (from config/services-data.ts); no pricing invented.
+- Cover images point to existing assets: /hero-electrical.svg, /hero/home-services-*-kl.jpg (verified present in public/).
+
+---
+
+## SESSION PROMPT FILE
+- klservisrumah-web/SESSION_PROMPT.md — upload this prompt in next session to continue
+N and MS) and "安防监控" (ZH). Category sets are now 19 per language. If a category filter/index is ever generated from the markdown, these need to be registered.
 - ⚠️ Cannibalisation watch (flagged, not skipped): the new cctv service blog overlaps the live editorial blog cctv-installation-buying-guide-kl (MS panduan-beli-pasang-cctv-kl, ZH ji-long-cctv-an-zhuang-gou-mai-zhi-nan), which covers camera types, HD/4K, IP vs analog, PoE vs Wi-Fi and cloud vs local. The Batch 6 cctv article is deliberately scoped to installation scope, process and pricing, and links out to the buying guide from all three languages. Monitor in GSC.
 - ⚠️ Overlap watch within the batch: cleaning / deep-cleaning / post-renovation-cleaning are adjacent intents. Each main article opens with an explicit "which one do you need" comparison and cross-links the other two, so the differentiation is on the page rather than left to Google.
 - ZH wording: cleaning verticals use 定期保洁 (recurring), 深度清洁 (deep clean) and 装修后清洁 (post-renovation) as distinct terms; CCTV uses 监控 / CCTV interchangeably as Malaysian Chinese readers search both.
