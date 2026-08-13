@@ -1,5 +1,5 @@
 # Blog Production Master List — KL Servis Rumah
-Updated: 2026-08-12
+Updated: 2026-08-13
 
 REQUIREMENT: Every Main Service + Sub-Service + Problem must have 1 blog.
 LANGUAGES: English (EN), Malay (MS), Chinese (ZH) — 3 per item.
@@ -12,10 +12,11 @@ LANGUAGES: English (EN), Malay (MS), Chinese (ZH) — 3 per item.
 - Problems: 43
 - TOTAL BLOG POSTS NEEDED: (28 + 112 + 43) × 3 = ~549
 
-## LIVE / PROGRESS STATUS (as of Batch 6)
-- Blog items fully written (markdown, all 3 languages): 78 items × 3 = 234 files (Batches 1–6)
+## LIVE / PROGRESS STATUS (as of Batch 7)
+- Blog items fully written (markdown, all 3 languages): 93 items × 3 = 279 files (Batches 1–7)
 - Live site blog wiring: Batch 4 topics (15 items) wired into config (blog-data-batch4.ts + blog-i18n.ts) and publishing on /blog, /ms/blog, /zh/bo-ke
-- Batches 1–3, 5 and 6: markdown production records (not wired to live site, per existing Batch 1–3 convention)
+- Batches 1–3, 5, 6 and 7: markdown production records (not wired to live site, per existing convention)
+- Main services milestone: 28/28 (100% of all main service pillars complete!)
 
 ---
 
@@ -29,6 +30,32 @@ Services done: X/28
 Sub-services done: X/112
 Remaining: 549 - Y
 ```
+
+---
+
+## BATCH 7 COMPLETED (2026-08-13)
+- Services completed (2/2 remaining): autogate (main + 2 sub), welding (main + 2 sub) — ALL 28 MAIN SERVICES COMPLETED!
+- Problems completed (9/42 remaining): faded-exterior-paint-malaysia, damp-walls-paint-bubbling, ceiling-mold-stains, burst-pipe-emergency, low-water-pressure-kl, blocked-drain-toilet, water-heater-not-working, sagging-plaster-ceiling, ceiling-leak-after-rain
+- 15 items × 3 languages = 45 blogs
+- Files (EN → blogs/en/):
+  - Services/Sub-services: autogate.md, single-swing-autogate.md, sliding-autogate.md, welding.md, custom-window-grille.md, main-gate-fabrication.md
+  - Problems: problem-faded-exterior-paint-malaysia.md, problem-damp-walls-paint-bubbling.md, problem-ceiling-mold-stains.md, problem-burst-pipe-emergency.md, problem-low-water-pressure-kl.md, problem-blocked-drain-toilet.md, problem-water-heater-not-working.md, problem-sagging-plaster-ceiling.md, problem-ceiling-leak-after-rain.md
+  - MS → blogs/ms/ (same filenames, localised slugs, e.g. pemasangan-pembaikan-autogate-kl, perkhidmatan-kimpalan-besi-kl, paip-pecah-kecemasan-kl)
+  - ZH → blogs/zh/ (same filenames, pinyin slugs, e.g. zi-dong-men-an-zhuang-wei-xiu-kl, han-jie-yu-tie-gong-fu-wu-kl, shui-guan-bao-lie-jin-ji-chu-li)
+Batch total: 45 blogs
+Progress: 279 / 549 (50.8%)
+Services done: 28/28 (100%) | Sub-services done: 55/112 | Problems done: 10/43
+Remaining: 270
+
+## BATCH 7 NOTES / ISSUES
+- Main Services milestone reached: all 28 main service pillars now have dedicated, comprehensive blog posts in EN, MS, and ZH (28/28).
+- Frontmatter: all 45 files carry full YAML frontmatter (slug, title, excerpt, category, language, date, readTime, author, coverImage, metaTitle, metaDesc) + tracking fields (service, subService for sub-services, status, batch). Filenames identical across EN/MS/ZH; slugs localised per language.
+- Internal links: 196 distinct in-article links validated by script against real routes parsed from config/services-data.ts (28 services + 112 sub-service slugs via lib/utils slugify), config/problem-data.ts + problem-data-extra.ts, app router tool directories (EN/MS/ZH) and wired blog slugs. Zero broken links.
+- Tool links included: /tools/painting-calculator, /tools/paint-quantity-estimator, /tools/waterproofing-cost-calculator, /tools/leak-triage, /tools/ceiling-replacement-cost, /tools/ceiling-calculator, /tools/pipe-leak-estimator, /tools/pipe-replacement-cost, /tools/water-pressure-troubleshooter, /tools/plumbing-diagnostic, /tools/roof-repair-estimator, and their MS (/ms/alatan/...) and ZH (/zh/gongju/...) equivalents.
+- Real published pricing used: Single swing autogate from RM 2,200, Double swing autogate from RM 3,200, Sliding autogate from RM 3,800, Autogate motor replacement from RM 950; On-site welding repair from RM 280, Custom window grilles from RM 42/sqft, Main gate fabrication from RM 2,800; Problem repairs from published diagnostic & repair rates. Zero invented pricing.
+- Cover images point to existing disk assets: /hero-autogate.svg, /hero-welding.svg, /hero/home-services-painters-kl.jpg, /hero-waterproofing.svg, /hero/home-services-ceiling-kl.jpg, /hero/home-services-plumbing-kl.jpg, /hero/home-services-water-heater-kl.jpg (all verified present in public/).
+- Categories introduced/used: EN: "Auto Gate", "Welding", "Painting", "Waterproofing", "Ceiling", "Plumbing", "Electrical"; MS: "Autogate", "Kimpalan", "Pengecatan", "Kalis Air", "Siling", "Paip", "Elektrikal"; ZH: "自动门", "焊接铁艺", "油漆工程", "防水工程", "天花板工程", "水管工程", "电气工程".
+- Next Priority: remaining Problems (11–43) from config/problem-data.ts (33 problems remaining).
 
 ---
 
