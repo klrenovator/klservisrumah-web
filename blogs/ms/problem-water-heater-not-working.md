@@ -35,7 +35,7 @@ Tiada bekalan elektrik sampai ke unit water heater. Masalah ini kerap berpunca d
 Penebat pada elemen pemanas telah retak, menyebabkan arus elektrik 230V bocor terus ke dalam aliran air dan memicu pemutus litar ELCB 10mA atau pemutus litar keselamatan rumah.
 
 ### 4. Suhu Air Kejap Panas Kejap Sejuk
-Berpunca daripada tekanan air masuk yang terlalu perlahan atau turun naik, menyebabkan suis penderia aliran air (flow switch) di dalam unit mati dan hidup secara berulang. Rujuk panduan [tekanan air rendah di KL](/ms/problems/low-water-pressure-kl).
+Berpunca daripada tekanan air masuk yang terlalu perlahan atau turun naik, menyebabkan suis penderia aliran air (flow switch) di dalam unit mati dan hidup secara berulang. Rujuk panduan [tekanan air rendah di KL](/ms/problems/low-water-pressure).
 
 ## Jadual Tindakan Keselamatan
 

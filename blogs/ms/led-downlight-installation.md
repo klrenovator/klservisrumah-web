@@ -48,7 +48,7 @@ Untuk siling gypsum dan plaster, potongan dibuat kemas; untuk siling konkrit, ko
 - **Pemacu murah** — pemacu adalah bahagian paling mungkin gagal. Pemacu berkualiti dan pemasangan betul mengurangkan kegagalan awal.
 - **Litar terlebih beban** — menambah banyak downlight ke litar sedia ada boleh melebihi kapasiti; pemasang menyemak beban.
 
-Jika lampu sedia ada anda berkelip, panduan kami tentang [downlight berkelip](/ms/problems/flickering-downlights) menerangkan punca — daripada isu pemacu hingga sambungan longgar.
+Jika lampu sedia ada anda berkelip, panduan kami tentang [downlight berkelip](/ms/problems/downlight-flickering) menerangkan punca — daripada isu pemacu hingga sambungan longgar.
 
 ## Kos Pemasangan Downlight LED
 

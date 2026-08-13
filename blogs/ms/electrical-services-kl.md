@@ -50,7 +50,7 @@ Setiap sebut harga diperincikan sebelum kerja bermula, supaya anda tahu dengan j
 Beberapa tanda amaran tidak boleh diabaikan:
 
 - **Kerap trip** — jika RCCB atau MCB anda trip apabila menghidupkan perkakas biasa, litar mungkin terlebih beban atau bocor. Lihat panduan kami tentang [RCCB yang kerap trip di rumah KL](/ms/problems/rccb-tripping-kl).
-- **Lampu berkelip atau malap** — ini boleh menandakan sambungan longgar atau litar terlebih beban, bukan sekadar mentol rosak. Baca tentang [downlight berkelip](/ms/problems/flickering-downlights).
+- **Lampu berkelip atau malap** — ini boleh menandakan sambungan longgar atau litar terlebih beban, bukan sekadar mentol rosak. Baca tentang [downlight berkelip](/ms/problems/downlight-flickering).
 - **Suis atau soket panas** — haba di belakang suis adalah tanda amaran serius pendawaian longgar atau bersaiz kecil.
 - **Kotak fius lama** — fius wayar tidak menawarkan perlindungan daripada kebocoran bumi; kotak DB moden dengan RCCB adalah penyelesaian standard.
 - **Soket dua pin tanpa bumi** — biasa di rumah teres lama di Petaling Jaya, Klang, dan Cheras. Pembumian melindungi anda dan perkakas.

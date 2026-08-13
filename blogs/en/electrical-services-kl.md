@@ -50,7 +50,7 @@ Every quote is itemised before work begins, so you know exactly what cables, bre
 Some warning signs should not be ignored:
 
 - **Frequent tripping** — if your RCCB or MCB trips when you switch on a normal appliance, the circuit may be overloaded or leaking. See our guide on [RCCB tripping in KL homes](/problems/rccb-tripping-kl).
-- **Flickering or dimming lights** — this can indicate loose connections or an overloaded circuit, not just a bad bulb. Read about [flickering downlights](/problems/flickering-downlights).
+- **Flickering or dimming lights** — this can indicate loose connections or an overloaded circuit, not just a bad bulb. Read about [flickering downlights](/problems/downlight-flickering).
 - **Warm switch plates or sockets** — heat behind a switch is a serious warning sign of loose or undersized wiring.
 - **Old fuse boxes** — fuse wire and rewireable fuses offer no protection against earth leakage; a modern DB box with RCCB is the standard fix.
 - **Two-pin sockets without earthing** — common in older terrace houses in Petaling Jaya, Klang, and Cheras. Grounding protects you and your appliances.

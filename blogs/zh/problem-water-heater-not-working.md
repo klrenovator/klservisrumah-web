@@ -35,7 +35,7 @@ batch: 7
 发热管外层绝缘镁粉受潮击穿，230V 强电直接泄漏入洗澡水中，机身内置的 10mA 漏电断路器或全屋的 [RCCB 漏电总闸](/zh/problems/rccb-tripping-kl)为保护人身安全瞬间动作跳闸。
 
 ### 4. 水温忽冷忽热极不稳定
-市政进水水压过低，水流传感器磁芯频繁断开接通。详情请参考[水压过低排查指南](/zh/problems/low-water-pressure-kl)。
+市政进水水压过低，水流传感器磁芯频繁断开接通。详情请参考[水压过低排查指南](/zh/problems/low-water-pressure)。
 
 ## 故障排查与应急处置表
 
@@ -75,8 +75,3 @@ batch: 7
 为全家人保障安全畅快的恒温热水淋浴。KL Servis Rumah 为吉隆坡、八打灵再也、梳邦、莎阿南、蒲种、蕉赖、安邦等雪隆全境提供专业的[热水器维修安装](/zh/services/water-heater)及[电工服务](/zh/services/electrical)。
 
 欢迎通过 WhatsApp 发送热水器照片 — [联系专业电工水工](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah!%20My%20water%20heater%20is%20faulty.).
-"""
-
-write_article("en", "problem-water-heater-not-working.md", heater_en)
-write_article("ms", "problem-water-heater-not-working.md", heater_ms)
-write_article("zh", "problem-water-heater-not-working.md", heater_zh)

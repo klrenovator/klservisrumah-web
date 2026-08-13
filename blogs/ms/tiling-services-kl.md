@@ -37,7 +37,7 @@ Slab 600×1200mm dan lebih besar, dipasang dengan underlayment meratakan sendiri
 
 ### Pembaikan jubin & grout semula
 
-Menanggalkan jubin berongga atau retak, memasang semula, dan grout semula dengan grout tahan kulat. Jika anda mendengar bunyi berongga apabila mengetuk jubin lantai, baca panduan kami tentang [jubin lantai berongga](/ms/problems/hollow-tiles-floor).
+Menanggalkan jubin berongga atau retak, memasang semula, dan grout semula dengan grout tahan kulat. Jika anda mendengar bunyi berongga apabila mengetuk jubin lantai, baca panduan kami tentang [jubin lantai berongga](/ms/problems/loose-hollow-tiles).
 
 ## Cara Kerja Jubin Profesional Dilakukan
 

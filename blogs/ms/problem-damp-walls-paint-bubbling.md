@@ -26,7 +26,7 @@ Di Kuala Lumpur dan Selangor, masalah dinding lembap adalah aduan yang sangat ke
 ## 4 Punca Utama Dinding Lembap di Rumah Malaysia
 
 ### 1. Rembesan Bilik Air Tingkat Atas
-Punca paling kerap. Lapisan kalis air atau simen celah jubin (grout) di bilik air tingkat atas telah rosak, menyebabkan air basuhan meresap ke dalam lantai konkrit dan mengalir turun ke dinding bilik di bawah. Rujuk perkhidmatan [kalis air bilik mandi](/ms/services/waterproofing/bathroom-wet-area-waterproofing).
+Punca paling kerap. Lapisan kalis air atau simen celah jubin (grout) di bilik air tingkat atas telah rosak, menyebabkan air basuhan meresap ke dalam lantai konkrit dan mengalir turun ke dinding bilik di bawah. Rujuk perkhidmatan [kalis air bilik mandi](/ms/services/waterproofing/bathroom-and-wet-area-waterproofing).
 
 ### 2. Paip Bocor di Dalam Dinding
 Paip air tersembunyi mengalami kebocoran halus (pinhole leak) atau sambungan gam paip tercabut. Dinding akan sentiasa basah sepanjang masa dan bil air melonjak tinggi.

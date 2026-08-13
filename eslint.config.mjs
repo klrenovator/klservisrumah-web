@@ -14,6 +14,10 @@ export default [
       // Node-only build tooling: runs under `node --experimental-strip-types`,
       // not through the Next.js/browser lint profile.
       "scripts/ts-resolver.mjs",
+      // Node-only content validator for the /blogs markdown production record.
+      // Runs under plain `node`, so it uses Node globals the browser profile
+      // does not declare.
+      "scripts/validate-blog-markdown.mjs",
       "lib/estimator/rate-book.generated.ts"
     ]
   },

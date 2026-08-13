@@ -79,8 +79,3 @@ batch: 7
 彻底告别洗澡水流细小的烦恼。KL Servis Rumah 为吉隆坡、八打灵再也、梳邦、莎阿南、蒲种、蕉赖、白沙罗及巴生全境提供专业的[水管水工服务](/zh/services/plumbing)。
 
 欢迎通过 WhatsApp 预约水压检测 — [联系专业水工团队](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah!%20I%20have%20low%20water%20pressure%20at%20home.).
-"""
-
-write_article("en", "problem-low-water-pressure-kl.md", pressure_en)
-write_article("ms", "problem-low-water-pressure-kl.md", pressure_ms)
-write_article("zh", "problem-low-water-pressure-kl.md", pressure_zh)

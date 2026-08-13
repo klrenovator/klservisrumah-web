@@ -35,7 +35,7 @@ Mineral sediments, sand particles, and pipe rust get trapped in the mesh filters
 After recent roadwork, meter replacement, or renovation, the main incoming brass stopcock near the water meter may only be half open.
 
 ### 4. Hidden Underground or Slab Pipe Leak
-A ruptured pipe beneath your car porch slab relieves water pressure into the ground. If your pressure drops suddenly and your water bill doubles, check for [hidden pipe leaks](/services/plumbing/water-leakage-diagnosis-repair).
+A ruptured pipe beneath your car porch slab relieves water pressure into the ground. If your pressure drops suddenly and your water bill doubles, check for [hidden pipe leaks](/services/plumbing/water-leakage-diagnosis-and-repair).
 
 ### 5. Gravity Inadequacy on Upper Floors
 In double-storey and 3-storey terrace homes, water from the roof storage tank flows downward purely by gravity. Because the upper-floor bathrooms are positioned just a few feet below the roof tank, the natural head pressure is extremely weak (often below 0.5 bar).

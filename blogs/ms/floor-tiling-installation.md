@@ -78,7 +78,7 @@ Kadang-kadang, tetapi biasanya tidak disyorkan. Menjubin di atas jubin lama mena
 
 ### Mengapa sesetengah jubin lantai menjadi berongga?
 
-Jubin berongga biasanya bermakna liputan pelekat tidak mencukupi atau tapak bergerak. Mengetuk jubin yang berbunyi berongga adalah tanda ikatan telah gagal. Lihat panduan kami tentang [jubin lantai berongga](/ms/problems/hollow-tiles-floor) untuk apa yang perlu dilakukan.
+Jubin berongga biasanya bermakna liputan pelekat tidak mencukupi atau tapak bergerak. Mengetuk jubin yang berbunyi berongga adalah tanda ikatan telah gagal. Lihat panduan kami tentang [jubin lantai berongga](/ms/problems/loose-hollow-tiles) untuk apa yang perlu dilakukan.
 
 ### Adakah anda mengendalikan bekalan jubin dan pemasangan?
 

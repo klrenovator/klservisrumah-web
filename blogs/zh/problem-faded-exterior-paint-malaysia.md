@@ -73,8 +73,3 @@ batch: 7
 KL Servis Rumah 提供专业的[全屋油漆工程服务](/zh/services/painting)，涵盖吉隆坡、八打灵再也、梳邦、莎阿南、蒲种、蕉赖、白沙罗等地区。
 
 欢迎通过 WhatsApp 发送房屋外观照片获取即时估价 — [联系我们的油漆技术顾问](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah!%20I%20need%20exterior%20painting%20advice.)。
-"""
-
-write_article("en", "problem-faded-exterior-paint-malaysia.md", faded_en)
-write_article("ms", "problem-faded-exterior-paint-malaysia.md", faded_ms)
-write_article("zh", "problem-faded-exterior-paint-malaysia.md", faded_zh)

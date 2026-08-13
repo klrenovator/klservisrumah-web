@@ -72,8 +72,3 @@ batch: 7
 切勿等到天花板塌落造成人员伤害才处理。KL Servis Rumah 为吉隆坡、八打灵再也、梳邦、莎阿南、蒲种、蕉赖、白沙罗及巴生全境提供专业的[石膏天花板工程服务](/zh/services/plaster-ceiling)。
 
 欢迎通过 WhatsApp 发送下垂天花板照片 — [联系天花板加固专家](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah!%20My%20plaster%20ceiling%20is%20sagging.).
-"""
-
-write_article("en", "problem-sagging-plaster-ceiling.md", sagging_en)
-write_article("ms", "problem-sagging-plaster-ceiling.md", sagging_ms)
-write_article("zh", "problem-sagging-plaster-ceiling.md", sagging_zh)

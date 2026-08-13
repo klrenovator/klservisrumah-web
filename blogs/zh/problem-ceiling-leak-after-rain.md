@@ -45,7 +45,7 @@ batch: 7
 | 漏水特征 | 潜在破损位置 | 推荐处理工法 |
 |---|---|---|
 | 仅在特大暴雨时顺着天沟下方滴水 | 金属天沟堵塞或锈蚀烂孔 | 清理杂物；换装不锈钢防腐天沟 |
-| 天花板正中央屋脊线正下方渗水 | 屋脊瓦水泥砂浆开裂 | [屋脊重新定点坐浆与填缝](/zh/services/roof-repair/ridge-re-bedding-re-pointing) |
+| 天花板正中央屋脊线正下方渗水 | 屋脊瓦水泥砂浆开裂 | [屋脊重新定点坐浆与填缝](/zh/services/roof-repair/ridge-re-bedding-and-re-pointing) |
 | 正好在二楼露台或车库混凝土平顶正下方 | 混凝土防水膜龟裂失效 | 重新涂刷 3 遍抗紫外线弹性聚氨酯防水涂层 |
 | 靠近外墙窗框顶部边缘渗水滴水 | 女儿墙裂纹或泛水板封边胶脱落 | 高空修补裂缝并打入耐候 PU 密封胶 |
 
@@ -69,15 +69,10 @@ batch: 7
 绝对不行。在室内天花板上打胶只会把雨水强行封死在天花板夹层内。积聚的雨水会迅速腐烂木龙骨、锈蚀轻钢骨架，甚至漫延到其他房间从电线管滴出。防水必须在屋顶迎水面彻底解决。
 
 ### 屋顶维修有防水保修吗？
-有。KL Servis Rumah 为所有屋顶瓦片维修与防水工程提供 **12 至 24 个月的书面防漏保修**。
+有。屋顶维修工程适用 KL Servis Rumah 公布的 10 年防水膜与工艺保修；防水工程适用最长 5 年书面防漏保证。您这份工程的实际保修范围会在开工前写入报价单。
 
 ## 预约吉隆坡屋顶防漏与天花板维修
 
 告别每当下雨就拿水桶接水的焦虑。KL Servis Rumah 为吉隆坡、八打灵再也、梳邦、莎阿南、蒲种、蕉赖、白沙罗及巴生全境提供专业的[屋顶维修服务](/zh/services/roof-repair)与[防水工程](/zh/services/waterproofing)。
 
 欢迎通过 WhatsApp 发送天花板滴水或屋顶照片 — [联系屋顶防水专家](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah!%20My%20ceiling%20leaks%20when%20it%20rains.).
-"""
-
-write_article("en", "problem-ceiling-leak-after-rain.md", rain_en)
-write_article("ms", "problem-ceiling-leak-after-rain.md", rain_ms)
-write_article("zh", "problem-ceiling-leak-after-rain.md", rain_zh)

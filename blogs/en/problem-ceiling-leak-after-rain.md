@@ -45,7 +45,7 @@ Cracks on exterior masonry parapet walls or dried-out silicone flashing seals al
 | Leak Characteristic | Probable Defect Location | Recommended Repair Method |
 |---|---|---|
 | Drips below roof valley only during torrential downpours | Valley gutter clogged or corroded | Clear debris; replace with stainless valley tray |
-| Water stains along the center peak of the ceiling | Cracked ridge cap mortar bedding | [Ridge re-bedding & re-pointing](/services/roof-repair/ridge-re-bedding-re-pointing) |
+| Water stains along the center peak of the ceiling | Cracked ridge cap mortar bedding | [Ridge re-bedding & re-pointing](/services/roof-repair/ridge-re-bedding-and-re-pointing) |
 | Water dripping directly beneath flat roof porch/balcony | Membrane breakdown / ponding water | Apply 3-coat UV elastomeric polyurethane membrane |
 | Water drips near exterior wall and window heads | Parapet cracks / flashing gap | Seal cracks with elastomeric PU sealant |
 
@@ -72,7 +72,7 @@ No. Sealing from the inside traps rainwater inside your ceiling void. The water 
 We offer priority roof leak inspections across KL and Selangor, especially during monsoon rainy seasons.
 
 ### Do your roof repairs include a warranty against rain leaks?
-Yes, all our roof repairs and membrane waterproofing installations come with a written **12 to 24-month leak-free warranty**.
+Yes. Roof repair work carries KL Servis Rumah's published 10-Year Membrane & Workmanship Warranty, and waterproofing scopes carry an Up to 5-Year Written Leak-Free Guarantee. The exact coverage for your job is stated on your quotation before work starts.
 
 ## Fix Your Rain Leak Permanently in KL & Selangor
 

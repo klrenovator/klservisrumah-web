@@ -26,7 +26,7 @@ Across Kuala Lumpur and Selangor, damp wall issues are among the most common str
 ## The 4 Main Sources of Damp Walls in KL Homes
 
 ### 1. Upper-Floor Bathroom or Wet Area Seepage
-The most frequent cause. Failed floor tile grout or degraded waterproof membranes in an upstairs bathroom allow shower water to penetrate the concrete slab, which then creeps down adjoining bedroom and hallway walls. Learn more about [bathroom and wet area waterproofing](/services/waterproofing/bathroom-wet-area-waterproofing).
+The most frequent cause. Failed floor tile grout or degraded waterproof membranes in an upstairs bathroom allow shower water to penetrate the concrete slab, which then creeps down adjoining bedroom and hallway walls. Learn more about [bathroom and wet area waterproofing](/services/waterproofing/bathroom-and-wet-area-waterproofing).
 
 ### 2. Concealed Pipe Leaks Inside Brickwork
 PPR, PVC, or corroded copper water supply pipes embedded in walls develop pinhole leaks or joint fractures. This creates localized soggy wall patches, high water bills, and continuous paint bubbling.

@@ -12,11 +12,12 @@ LANGUAGES: English (EN), Malay (MS), Chinese (ZH) — 3 per item.
 - Problems: 43
 - TOTAL BLOG POSTS NEEDED: (28 + 112 + 43) × 3 = ~549
 
-## LIVE / PROGRESS STATUS (as of Batch 7)
-- Blog items fully written (markdown, all 3 languages): 93 items × 3 = 279 files (Batches 1–7)
+## LIVE / PROGRESS STATUS (as of Batch 8)
+- Blog items fully written (markdown, all 3 languages): 108 items × 3 = 324 files (Batches 1–8)
 - Live site blog wiring: Batch 4 topics (15 items) wired into config (blog-data-batch4.ts + blog-i18n.ts) and publishing on /blog, /ms/blog, /zh/bo-ke
-- Batches 1–3, 5, 6 and 7: markdown production records (not wired to live site, per existing convention)
+- Batches 1–3, 5, 6, 7 and 8: markdown production records (not wired to live site, per existing convention)
 - Main services milestone: 28/28 (100% of all main service pillars complete!)
+- Validation tooling: `node scripts/validate-blog-markdown.mjs` now validates the whole /blogs corpus (frontmatter, single H1, duplicate slugs/titles, coverImage on disk, meta lengths, and every in-article link against the real route universe). Run it after each batch.
 
 ---
 
@@ -30,6 +31,55 @@ Services done: X/28
 Sub-services done: X/112
 Remaining: 549 - Y
 ```
+
+---
+
+## BATCH 8 COMPLETED (2026-08-13)
+- Priority applied: Services 28/28 already complete, so this batch continues **Problems** (items 11–26 of the `config/problem-data.ts` order), skipping slugs that are 301-redirected in `config/problem-canonical.ts` (see notes).
+- Problems completed (15): cracked-ceiling-joints, condensation-ceiling-mold, bathroom-leak-upper-floor, roof-leak-rainy-season, wall-dampness-rising, swimming-pool-leak-balcony, loose-door-hinge, tv-fell-off-wall, stuck-window-lock, ikea-furniture-assembly-help, rccb-tripping-kl, ceiling-fan-wobbling, downlight-flickering, loose-hollow-tiles, spc-flooring-peeling-edges
+- 15 items × 3 languages = 45 blogs
+- Files (EN → blogs/en/): problem-cracked-ceiling-joints.md, problem-condensation-ceiling-mold.md, problem-bathroom-leak-upper-floor.md, problem-roof-leak-rainy-season.md, problem-wall-dampness-rising.md, problem-swimming-pool-leak-balcony.md, problem-loose-door-hinge.md, problem-tv-fell-off-wall.md, problem-stuck-window-lock.md, problem-ikea-furniture-assembly-help.md, problem-rccb-tripping-kl.md, problem-ceiling-fan-wobbling.md, problem-downlight-flickering.md, problem-loose-hollow-tiles.md, problem-spc-flooring-peeling-edges.md
+  - MS → blogs/ms/ (same filenames, localised slugs, e.g. retak-sambungan-siling-plaster, bocor-bilik-air-tingkat-atas, rccb-kerap-trip, jubin-lantai-berongga-longgar)
+  - ZH → blogs/zh/ (same filenames, pinyin slugs, e.g. shi-gao-tian-hua-ban-jie-feng-kai-lie, lou-shang-yu-shi-shen-lou, rccb-pin-fan-tiao-zha, di-zhuan-kong-gu-song-dong)
+Batch total: 45 blogs
+Progress: 324 / 549 (59.0%)
+Services done: 28/28 (100%) | Sub-services done: 55/112 | Problems done: 25/43 (tracker denominator) — see note below on the real problem universe
+Remaining: 225
+
+### Problem-universe reconciliation (accurate counts, 2026-08-13)
+The historic `43` denominator counts only `config/problem-data.ts`. The real indexable universe is **65 live problem slugs** (problem-data.ts + problem-data-extra.ts, minus the 12 slugs 301-redirected by problem-canonical.ts).
+- Problem articles written to date: 25 (Batch 7 = 10, Batch 8 = 15)
+- Of those, 23 map to a live canonical problem slug; 2 (Batch 7) were written against redirected slugs — see manual-review flag below.
+- **Live problem slugs still unwritten: 42.**
+
+## BATCH 8 NOTES / ISSUES
+- **Topic order & deliberate skips (per §24 duplicate/cannibalisation rule):** the raw `problem-data.ts` order at positions 11–26 contains four slugs that `config/problem-canonical.ts` 301-redirects to a canonical page — `flickering-lights-kl` → downlight-flickering, `water-heater-not-heating` (already covered by Batch 7's `water-heater-not-working` article), `hollow-tiles-floor` → loose-hollow-tiles, `plaster-ceiling-cracking-joints` → cracked-ceiling-joints. Writing those as separate articles would have created four near-duplicate pages pointing at redirected URLs. Instead the batch wrote the **canonical keep-URL** version of each (downlight-flickering, loose-hollow-tiles, cracked-ceiling-joints) and pulled forward the next live problems in list order. No topic was invented; nothing indexable was skipped.
+- ⚠️ **MANUAL REVIEW — two Batch 7 articles use redirected slugs.** Both were written against slugs that `problem-canonical.ts` 301-redirects, so their frontmatter `slug` does not correspond to an indexable URL:
+  - `blogs/*/problem-water-heater-not-working.md` → canonical slug is `water-heater-not-heating`
+  - `blogs/*/problem-low-water-pressure-kl.md` → canonical slug is `low-water-pressure`
+  The article content covers the canonical intent correctly in both cases, so Batch 8 did **not** write duplicates for those two topics. Recommended fix: re-slug the frontmatter (and optionally rename the files) to the canonical slugs. Their in-article links were already repointed to the canonical URLs during this batch's validation pass.
+- Frontmatter: all 45 files carry full YAML frontmatter (slug, title, excerpt, category, language, date, readTime, author, coverImage, metaTitle, metaDesc) + tracking fields (service, status, batch). Filenames identical across EN/MS/ZH; slugs localised per language.
+- Internal links: **533 distinct in-article link targets across the whole corpus, script-validated, zero broken.** Validation parses real routes from config/services-data.ts (28 services + 112 sub-service slugs via lib/utils slugify), problem-data.ts + problem-data-extra.ts minus the 12 redirected slugs, tools-i18n.ts TOOL_SLUG_I18N (EN/MS/ZH tool paths), and wired blog slugs in blog-data*.ts / blog-i18n.ts. Cross-locale links are also rejected (an /ms article can only link /ms paths).
+- **Pre-existing defects found and fixed while validating** (not caused by this batch):
+  - 9 ZH Batch-7 problem files ended with leftover Python generator scaffolding (`"""` + `write_article(...)` lines) rendered as article body. Trimmed.
+  - 22 files across Batches 3 and 7 contained 6 distinct broken link targets: `/problems/flickering-downlights` and `/problems/hollow-tiles-floor` (redirected slugs), `/problems/low-water-pressure-kl` (redirected), and three malformed sub-service paths missing the `and` segment (`ridge-re-bedding-re-pointing`, `bathroom-wet-area-waterproofing`, `water-leakage-diagnosis-repair`). All repointed to real canonical routes in EN/MS/ZH.
+  - Batch 7's ceiling-leak article asserted an unpublished "12 to 24-month leak-free warranty". Replaced in all 3 languages with the actual published terms (roof-repair = 10-Year Membrane & Workmanship Warranty; waterproofing = Up to 5-Year Written Leak-Free Guarantee).
+- Pricing: every ringgit figure traces to published data — `costRange` from the matching problem record, `startPrice`/sub-service prices from services-data.ts, or published per-point figures already in problem-data-extra.ts (LED downlight RM 120–220/point, DB upgrade RM 850–1,800, single-tile relay RM 150–280). Zero invented pricing.
+- Warranties: only the published per-service warranty strings from services-data.ts are quoted (ceiling 90-Day, waterproofing Up to 5-Year, roof-repair 10-Year, electrical 12-Month, lighting 12-Month, ceiling-fan 12-Month, tiling 12-Month, flooring 5-Year, handyman 30-Day, window-repair 12-Month). No invented guarantees, certifications, awards or company history.
+- E-E-A-T: the only credential asserted is ST (Suruhanjaya Tenaga) registered wiremen, which is an existing published claim in services-data.ts and problem-data.ts. External references are limited to non-linked, verifiable context (Malaysian Meteorological Department monsoon seasons, Ministry of Health indoor air quality guidance, ~30 mA domestic RCCB trip threshold, IKEA-supplied anti-tip hardware).
+- Cover images (all verified present in public/): /hero/home-services-ceiling-kl.jpg, /hero/home-services-waterproofing-kl.jpg, /hero-waterproofing.svg, /hero-roof-repair.svg, /hero/home-services-handyman-kl.jpg, /hero-window.svg, /hero-electrical.svg, /hero/home-services-ceiling-fan-kl.jpg, /hero/home-services-lighting-kl.jpg, /hero/home-services-tiling-kl.jpg, /hero/home-services-flooring-kl.jpg.
+- Categories: no new categories introduced. Reused existing sets (EN Ceiling / Waterproofing / Roof Repair / Handyman / Electrical / Tiling / Flooring; MS Siling / Kalis Air / Pembaikan Bumbung / Handyman / Elektrikal / Jubin / Lantai; ZH 天花板工程 / 防水工程 / 屋顶维修 / 杂工服务 / 电气工程 / 瓷砖工程 / 地板工程).
+- Cannibalisation control inside the batch (adjacent water-ingress intents deliberately scoped apart):
+  - `roof-leak-rainy-season` is scoped to **seasonal/emergency behaviour** (what to do during the storm, monsoon mechanics, pre-monsoon checklist) and cross-links to Batch 7's `ceiling-leak-after-rain`, which owns the **entry-point diagnostic** intent.
+  - `condensation-ceiling-mold` is scoped to **no-leak condensation** and opens with a leak-vs-condensation comparison table pointing to `ceiling-mold-stains` (Batch 7) for leak-driven staining.
+  - `bathroom-leak-upper-floor` (method selection: PU vs no-hack vs full hack) vs `swimming-pool-leak-balcony` (open-deck UV/ponding failure) are differentiated on the page and cross-link.
+  - `wall-dampness-rising` (level-topped base-of-wall band, ground-borne) explicitly distinguishes itself from `damp-walls-paint-bubbling` (leak-driven patches).
+  - `loose-hollow-tiles` vs `spc-flooring-peeling-edges` cross-link as the tiled vs floating-floor versions of the same "floor is lifting" query.
+- Word counts: EN 1,149–1,389 words, MS 1,046–1,306 words, ZH ~6.5k–8.0k bytes — sized to the problem-article intent band (1,200–1,800), no filler.
+- Validation run: `node scripts/validate-blog-markdown.mjs` → 324 files scanned, 0 errors, 0 warnings on any Batch 8 file. `npm run type-check` → clean. `npm run lint` → clean (eslint.config.mjs ignore list extended for the new Node-only script, matching the existing `scripts/ts-resolver.mjs` precedent). `npm run build` → **success**, including all prebuild audits (topical-map, specialty-locale, i18n parity, problem-i18n, estimators).
+- Pre-existing warnings NOT fixed (out of scope, Batches 1–6 meta lengths): 59 metaTitle/metaDesc length warnings remain on older files. Listed by the validator; flagged for a future clean-up pass.
+- Live wiring: Batch 8 is markdown-only (same convention as Batches 1–3, 5, 6, 7). Not added to blog-data-batch4.ts / blog-i18n.ts.
+- **Next Priority (Batch 9)** — continue Problems in `problem-data.ts` order, next 15 live slugs: clogged-gutter-leaking, kitchen-cabinet-door-misaligned, peeling-skim-coat, epoxy-floor-yellowing, wardrobe-door-not-closing, door-scraping-floor, sliding-window-stuck, smart-lock-not-working, shower-screen-leaking, mold-in-bathroom-after-cleaning, stubborn-grout-stains-after-deep-clean, construction-dust-returning, cctv-not-recording, autogate-not-closing, rusting-window-grille. (After that: the 27 problem-data-extra.ts slugs, then the remaining 57 sub-services.)
 
 ---
 
