@@ -1,5 +1,5 @@
 ---
-slug: "low-water-pressure-kl"
+slug: "low-water-pressure"
 title: "Low Water Pressure in KL Homes: Causes & How to Fix It"
 excerpt: "Weak shower or slow tap water in Kuala Lumpur? Discover common causes: corroded GI pipes, blocked aerators, valve issues & booster pumps from RM 120."
 category: "Plumbing"

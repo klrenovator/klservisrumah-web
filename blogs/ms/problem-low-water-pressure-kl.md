@@ -1,5 +1,5 @@
 ---
-slug: "tekanan-air-rendah-kl"
+slug: "tekanan-air-rendah"
 title: "Tekanan Air Rendah di Rumah KL & Selangor: Punca & Solusi"
 excerpt: "Pancuran air perlahan atau pili air menitik di KL? Ketahui punca paip karat, injap tersumbat atau pam air booster yang sesuai dari RM 120."
 category: "Paip"
