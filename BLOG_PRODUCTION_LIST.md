@@ -12,10 +12,10 @@ LANGUAGES: English (EN), Malay (MS), Chinese (ZH) — 3 per item.
 - Problems: 43
 - TOTAL BLOG POSTS NEEDED: (28 + 112 + 43) × 3 = ~549
 
-## LIVE / PROGRESS STATUS (as of Batch 8)
-- Blog items fully written (markdown, all 3 languages): 108 items × 3 = 324 files (Batches 1–8)
+## LIVE / PROGRESS STATUS (as of Batch 9)
+- Blog items fully written (markdown, all 3 languages): 123 items × 3 = 369 files (Batches 1–9)
 - Live site blog wiring: Batch 4 topics (15 items) wired into config (blog-data-batch4.ts + blog-i18n.ts) and publishing on /blog, /ms/blog, /zh/bo-ke
-- Batches 1–3, 5, 6, 7 and 8: markdown production records (not wired to live site, per existing convention)
+- Batches 1–3, 5, 6, 7, 8 and 9: markdown production records (not wired to live site, per existing convention)
 - Main services milestone: 28/28 (100% of all main service pillars complete!)
 - Validation tooling: `node scripts/validate-blog-markdown.mjs` now validates the whole /blogs corpus (frontmatter, single H1, duplicate slugs/titles, coverImage on disk, meta lengths, and every in-article link against the real route universe). Run it after each batch.
 
@@ -80,6 +80,42 @@ The historic `43` denominator counts only `config/problem-data.ts`. The real ind
 - Pre-existing warnings NOT fixed (out of scope, Batches 1–6 meta lengths): 59 metaTitle/metaDesc length warnings remain on older files. Listed by the validator; flagged for a future clean-up pass.
 - Live wiring: Batch 8 is markdown-only (same convention as Batches 1–3, 5, 6, 7). Not added to blog-data-batch4.ts / blog-i18n.ts.
 - **Next Priority (Batch 9)** — continue Problems in `problem-data.ts` order, next 15 live slugs: clogged-gutter-leaking, kitchen-cabinet-door-misaligned, peeling-skim-coat, epoxy-floor-yellowing, wardrobe-door-not-closing, door-scraping-floor, sliding-window-stuck, smart-lock-not-working, shower-screen-leaking, mold-in-bathroom-after-cleaning, stubborn-grout-stains-after-deep-clean, construction-dust-returning, cctv-not-recording, autogate-not-closing, rusting-window-grille. (After that: the 27 problem-data-extra.ts slugs, then the remaining 57 sub-services.)
+
+---
+
+## BATCH 9 COMPLETED (2026-08-13)
+- Priority applied: Services 28/28 already complete, so this batch continues **Problems** (items 27–43 of `config/problem-data.ts` order), skipping the two slugs that `config/problem-canonical.ts` 301-redirects and that are already covered by canonical articles — `flickering-downlights` → downlight-flickering (Batch 8), `plaster-ceiling-cracking-joints` → cracked-ceiling-joints (Batch 8). No topic invented; nothing indexable skipped.
+- Problems completed (15): clogged-gutter-leaking, kitchen-cabinet-door-misaligned, peeling-skim-coat, epoxy-floor-yellowing, wardrobe-door-not-closing, door-scraping-floor, sliding-window-stuck, smart-lock-not-working, shower-screen-leaking, mold-in-bathroom-after-cleaning, stubborn-grout-stains-after-deep-clean, construction-dust-returning, cctv-not-recording, autogate-not-closing, rusting-window-grille
+- 15 items × 3 languages = 45 blogs
+- Files (EN → blogs/en/): problem-clogged-gutter-leaking.md, problem-kitchen-cabinet-door-misaligned.md, problem-peeling-skim-coat.md, problem-epoxy-floor-yellowing.md, problem-wardrobe-door-not-closing.md, problem-door-scraping-floor.md, problem-sliding-window-stuck.md, problem-smart-lock-not-working.md, problem-shower-screen-leaking.md, problem-mold-in-bathroom-after-cleaning.md, problem-stubborn-grout-stains-after-deep-clean.md, problem-construction-dust-returning.md, problem-cctv-not-recording.md, problem-autogate-not-closing.md, problem-rusting-window-grille.md
+  - MS → blogs/ms/ (same filenames, localised slugs, e.g. longkang-tersumbat-bocor, pintu-kabinet-dapur-tidak-sejajar, lantai-epoksi-kekuningan, cctv-tidak-rakam, grille-tingkap-berkarat)
+  - ZH → blogs/zh/ (same filenames, pinyin slugs, e.g. tian-gou-du-se-lou-shui, chu-gui-men-guan-bu-long, huan-yang-di-ban-fa-huang, cctv-bu-lu-xiang, tie-hua-sheng-xiu)
+Batch total: 45 blogs
+Progress: 369 / 549 (67.2%)
+Services done: 28/28 (100%) | Sub-services done: 55/112 | Problems done: 40/43 (tracker denominator) — see reconciliation note below
+Remaining: 180
+
+### Problem-universe reconciliation (accurate counts, updated 2026-08-13)
+- **ALL 43 `config/problem-data.ts` slugs now have coverage** (a direct article, or the canonical keep-URL article that the redirected slug folds into). Batch 9 closed out the remaining 15 live problem-data.ts slugs.
+- Problem articles written to date: 40 (Batch 1 = 1, Batch 7 = 9, Batch 8 = 15, Batch 9 = 15).
+- Of those, 38 map to a live canonical problem slug; 2 (Batch 7) still use redirected slugs (see manual-review flag below).
+- **Live problem slugs still unwritten: 27** (all in `config/problem-data-extra.ts`): yellowing-white-walls, paint-cracking-hairline-walls, leaking-bathroom, low-water-pressure, clogged-drain, toilet-not-flushing, ceiling-cornice-crack, balcony-leak-condo, concrete-slab-crack-leak, curtain-track-falling, old-condo-full-refurbishment, power-tripping-frequently, cracked-tile-grout, uneven-wall-surface-skim, vinyl-flooring-lifting-edges, cracked-roof-tiles, cabinet-door-sagging, wardrobe-door-jamming, digital-smart-lock-installation, locked-out-of-house, stubborn-bathroom-limescale, move-out-condo-deep-clean, cement-splatter-tile-clean, cctv-not-recording-storage-full, autogate-remote-not-working, loose-metal-gate-hinges, plus the canonical `low-water-pressure` (the Batch 7 article was written under the redirected `low-water-pressure-kl` slug).
+
+## BATCH 9 NOTES / ISSUES
+- **Topic order & deliberate skips (per §24 duplicate/cannibalisation rule):** positions 29–30 of `problem-data.ts` (`flickering-downlights`, `plaster-ceiling-cracking-joints`) both 301-redirect to canonical pages already covered by Batch 8 (`downlight-flickering`, `cracked-ceiling-joints`). Writing them would have created duplicate pages pointing at redirected URLs, so the batch continued with the next 15 live slugs. Nothing indexable was skipped.
+- ⚠️ **MANUAL REVIEW — two Batch 7 articles still use redirected slugs** (carried forward; not resolved this batch): `problem-water-heater-not-working.md` → canonical `water-heater-not-heating`, and `problem-low-water-pressure-kl.md` → canonical `low-water-pressure`. Content covers the canonical intent correctly, so no duplicates were written. Recommended fix remains: re-slug frontmatter (and optionally rename files) to the canonical slugs.
+- ⚠️ **Cannibalisation watch (flagged, not skipped):** `cctv-not-recording` (this batch, scoped to "live view works but no recording / footage missing") overlaps `cctv-not-recording-storage-full` (problem-data-extra, scoped to "no live feed / blank screen / won't play back"). Both are live, non-redirected slugs. The Batch 9 article is deliberately scoped to the recording-side fault (HDD health, schedule, retention, network drop) and cross-links the storage-full page for the live-feed-down intent. Monitor in GSC; consider consolidating if queries show cannibalisation.
+- Frontmatter: all 45 files carry full YAML frontmatter (slug, title, excerpt, category, language, date, readTime, author, coverImage, metaTitle, metaDesc) + tracking fields (service, status, batch). Filenames identical across EN/MS/ZH; slugs localised per language.
+- Internal links: **593 distinct in-article link targets across the whole corpus, script-validated, zero broken.** Every Batch 9 link resolves to a real route (service, sub-service, live problem, tool, or wired blog) in the correct locale.
+- Pricing: every ringgit figure traces to published data — `costRange` from the matching problem record, or `startPrice`/sub-service prices from `config/services-data.ts`. Zero invented pricing. (The epoxy article quotes both the problem-data.ts band RM 280–1,800+ and the problem-data-extra topcoat-refresh figure RM 12–28/sq ft, both published.)
+- Warranties: only published per-service warranty strings quoted (roof-repair 10-Year, kitchen-cabinet 5-Year, skim-coat 12-Month, epoxy-flooring 5-Year, carpentry 5-Year, door 12-Month, window-repair 12-Month, locksmith 12-Month, glass-aluminium 12-Month, cleaning/deep-cleaning 24-Hour, post-renovation-cleaning 7-Day, cctv 12-Month, autogate 12-Month, welding 12-Month). No invented guarantees, certifications, awards, history or service areas.
+- E-E-A-T: no fabricated credentials. Brand references (Hikvision/Dahua/Ezviz/Tuya for CCTV, Autogate 2000/Nice/FAAC, Yale/Samsung/Tuya for locks) are limited to the published statements already in the problem data ("experienced with", "install and configure"), phrased as capability, not partnership.
+- Categories: no new categories introduced. Reused existing sets (EN Roof Repair / Kitchen Cabinet / Skim Coat / Flooring / Carpentry / Door / Window Repair / Locksmith / Glass & Aluminium / Cleaning / CCTV / Auto Gate / Welding; MS Pembaikan Bumbung / Kabinet Dapur / Skim Coat / Lantai / Pertukangan / Pintu / Pembaikan Tingkap / Tukang Kunci / Kaca & Aluminium / Pembersihan / CCTV / Autogate / Kimpalan; ZH 屋顶维修 / 厨房橱柜 / 批灰工程 / 地板工程 / 木工 / 门 / 窗户维修 / 锁匠 / 玻璃与铝业 / 清洁服务 / 安防监控 / 自动门 / 焊接铁艺).
+- Word counts: EN 691–1,026 words, MS and ZH in proportion (ZH ~4.5k–6.5k bytes) — sized to each narrow problem intent, no filler, per the "minimum content to comprehensively satisfy" directive.
+- Validation run: `node scripts/validate-blog-markdown.mjs` → 369 files scanned, **0 errors, 0 warnings on any Batch 9 file**. The 59 pre-existing meta-length warnings remain on Batches 1–6 files only (out of scope, flagged for a future clean-up pass).
+- Live wiring: Batch 9 is markdown-only (same convention as Batches 1–3, 5, 6, 7, 8). Not added to blog-data-batch4.ts / blog-i18n.ts.
+- Build/lint/type-check: not run — `node_modules` is not installed in this environment (same limitation as Batches 5–8). Markdown-only change does not affect the Next.js build.
+- **Next Priority (Batch 10)** — finish the remaining 27 live problem slugs in `problem-data-extra.ts` order (see reconciliation list above), then proceed to the remaining 57 sub-services. When reaching `low-water-pressure`, re-slug/consolidate the Batch 7 `low-water-pressure-kl` article instead of writing a duplicate.
 
 ---
 
