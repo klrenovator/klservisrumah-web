@@ -1,85 +1,85 @@
 ---
 slug: "shower-screen-leaking"
-title: "Frameless Shower Screen Leaking at the Bottom"
-excerpt: "Water escaping under a frameless shower screen is usually the bottom seal, the slope, or the silicone. Learn how to tell them apart and fix each."
-category: "Glass & Aluminium"
+title: "Shower Screen Leaking Water onto the Floor: Causes and Fix"
+excerpt: "A leaking shower screen usually means failed silicone, blocked drainage gaps, misaligned glass, worn seals or an incorrectly installed screen. Reseal early before water damages tiles and walls."
+category: "Waterproofing"
 language: "en"
 date: "2026-08-13"
 readTime: "7 min read"
 author: "KL Servis Rumah Editorial Team"
 coverImage: "/hero-glass-aluminium.svg"
-metaTitle: "Shower Screen Leaking in KL: Causes & Repair"
-metaDesc: "Frameless shower screen leaking at the bottom? Learn the seal, slope and silicone causes, how to fix them, and what it costs in KL & Selangor."
-service: "glass-aluminium"
+metaTitle: "Shower Screen Leaking? Causes and Repair"
+metaDesc: "Shower screen leaking onto the bathroom floor in KL/Selangor? Silicone, seals, drainage and alignment causes with published repair costs."
+service: "waterproofing"
 status: "Done"
-batch: 9
+batch: 11
 ---
 
-# Frameless Shower Screen Leaking at the Bottom
+# Shower Screen Leaking Water onto the Floor: Causes and Fix
 
-**Question:** Water leaks out from under my frameless shower screen onto the bathroom floor every time I shower. Can it be fixed, or do I need a new screen?
+**Question:** Why is water escaping from the shower screen onto the bathroom floor?
 
-**Answer:** A bottom leak on a frameless shower screen is almost always repairable, and it rarely means the glass is at fault. Water escapes for one of three reasons: the flexible wipe seal at the bottom is worn or missing, the floor slope does not direct water back into the shower, or the silicone at the joints has failed. The fix is to replace the bottom seal, re-silicone the joints, and check the slope — and only where the glass itself is cracked or the frame is badly corroded would a replacement be the right call.
+**Answer:** A shower screen leaks most often because the silicone seal has failed, the glass or frame is out of alignment, the bottom track is blocked, the rubber sweep seal is worn, or the screen was installed without enough fall toward the floor trap. Resealing is usually enough; persistent leaks may need realignment, track repair or waterproofing inspection.
 
-## Why a Shower Screen Leaks at the Bottom
+This is about **shower screen water leaks**, not a general [leaking bathroom](/problems/leaking-bathroom) where water comes through the ceiling below. If the unit downstairs is wet, treat it as a slab or membrane problem first.
 
-### 1. Worn Bottom Seal
-The clear or magnetic wipe strip along the bottom edge flexes against the floor and wears over years. Once it hardens, splits or falls off, water runs straight underneath.
+## Common Causes
 
-### 2. Incorrect Floor Slope
-Shower floors are meant to fall gently toward the drain. If the fall is wrong or the floor has settled, water pools near the screen and creeps out.
+| Cause | What you see | Usual fix |
+|---|---|---|
+| Old/mouldy silicone | Water seeps along the wall or floor joint | Remove and re-silicone |
+| Worn bottom seal | Water runs under the door | Replace sweep seal |
+| Blocked track drain | Water spills over the track | Clean track and drainage holes |
+| Misaligned door/panel | Gap opens when the door closes | Adjust rollers/hinges |
+| No fall to trap | Water pools instead of draining | Correct floor/tile fall |
+| Failed waterproofing | Water reaches ceiling below | Waterproofing inspection |
 
-### 3. Frame or Panel Not Level
-If the screen was installed slightly out of level, the bottom seal does not meet the floor evenly, leaving a gap at one end.
+## Silicone Failure
+Silicone around a shower screen flexes daily as the bathroom heats and cools. After years it can peel, crack or grow black mould. A poor seal lets water follow the glass edge into the wall–floor joint. A proper reseal means cutting out old silicone, cleaning mould, drying the joint, then applying a bathroom-grade neutral-cure silicone.
 
-### 4. Failed Silicone
-Silicone at the wall joints and floor junction degrades and pulls away over time, letting water seep around the edges rather than under the door.
+## Bottom Seals and Tracks
+Framed sliding screens use a bottom track and weep holes. Soap scum and hair can block those holes, so the track fills and spills. Frameless hinged screens rely on a rubber or vinyl sweep seal under the door; when it hardens or tears, water runs underneath.
 
-## Reading the Symptoms
+## Alignment and Installation
+A door that has dropped can leave a gap at the bottom. Hinged screens may need hinge adjustment; sliding screens may need roller adjustment. If the screen was installed too close to a flat floor area with no fall, water will escape even with a good seal.
 
-| Symptom | Most likely cause |
-|---|---|
-| Water runs under the glass in one spot | Worn or split bottom seal |
-| Leaks at the wall corner | Failed silicone joint |
-| Water pools just outside the screen | Floor slope directing water out |
-| Seal looks intact but water still escapes | Panel out of level, or seal hardened |
-| Leak gets worse over time | Combined seal and silicone ageing |
+## Could It Be a Waterproofing Problem?
+Water on the bathroom floor during a shower is usually a screen issue. Water on the **ceiling below** is different — it may mean a cracked membrane, failed grout, leaking pipe or slab crack. Read [balcony leak in a condo](/problems/balcony-leak-condo) and [concrete slab crack leak](/problems/concrete-slab-crack-leak) if water travels to a lower floor.
 
-## What a Proper Repair Involves
+## What Professional Repair Involves
 
-1. **Inspect the bottom seal** and replace it with the correct wipe or magnetic profile.
-2. **Check the panel is level** and adjust the hinges or brackets if it has dropped.
-3. **Re-silicone the joints** using a suitable sanitary silicone, allowing proper curing before use.
-4. **Check the floor fall** — where the slope is the problem, a threshold strip can redirect water back into the shower.
-5. **Replace the glass** only if it is cracked, or the frame is corroded beyond a clean repair.
+1. Identify the exact escape path while water is running.
+2. Clean the glass, frame, track and weep holes.
+3. Replace damaged sweep seals or gaskets.
+4. Adjust hinges or rollers so the door closes square.
+5. Remove old silicone and reseal joints correctly.
+6. Test by running the shower for several minutes.
 
-## Costs in KL and Selangor
+KL Servis Rumah publishes [glass and aluminium fabrication](/services/glass-aluminium) from **RM 320**, [frameless shower screen installation](/services/glass-aluminium/frameless-shower-screen) and [window and glass seal replacement](/services/window-repair/window-seal-replacement). The problem price range is **RM 180 to RM 850+** depending on screen size and whether realignment or parts are needed. If waterproofing is involved, [waterproofing and leak repair](/services/waterproofing) starts at **RM 300**.
 
-Published guidance for this problem is **RM 180 to RM 750+**, depending on seal replacement and any re-siliconing. KL Servis Rumah publishes [frameless shower screen](/services/glass-aluminium/frameless-shower-screen) supply and installation from **RM 420 per panel**, and glass and aluminium work from **RM 320**. Glass-and-aluminium work carries the published 12-Month Leak-Free & Hardware Warranty.
+## When to Call
 
-## Related Problems
+Call when:
 
-- [Bathroom leaking](/problems/leaking-bathroom) — when the water is coming through the structure rather than over the screen.
+- Water continues after re-silicone.
+- The door has dropped or will not close.
+- The track is cracked or corroded.
+- Mould returns quickly.
+- The ceiling below shows stains.
 
 ## Frequently Asked Questions
 
-### Can you replace only the seal?
-Yes. Most bottom leaks are fixed by replacing the bottom wipe or magnetic seal and re-siliconing the joints.
+### Can I just apply new silicone over old silicone?
+Not for a lasting repair. Old silicone must be cut out and the joint cleaned and dried; new silicone will not adhere well to contaminated old sealant.
 
-### Do you install frameless shower screens?
-Yes. We supply and install tempered-glass frameless systems, published from RM 420 per panel.
+### How long should shower silicone last?
+A good bathroom silicone application typically lasts several years, but harsh cleaners, mould and movement can shorten its life.
 
-### How do I know if it's the seal or the slope?
-Pour a little water at the base and watch where it goes. If it runs straight under the glass at one point, it is usually the seal; if it pools outside and flows back, the slope is the issue.
+### Is a leaking shower screen always a screen problem?
+No. If water appears below the bathroom, the waterproof membrane, grout or pipes may be involved and should be inspected.
 
-### Can I re-silicone it myself?
-Small touch-ups are DIY-friendly, but a full reseal needs clean, dry surfaces and proper curing time to last — which is where a professional finish makes the difference.
+## Stop the Leak Before It Damages Tiles
 
-### When should the whole screen be replaced?
-If the glass is cracked, the frame is corroded, or the hinges have visible play, replacement is safer than repeated repair.
+A small shower screen leak can become a mould or waterproofing problem if left. KL Servis Rumah repairs shower screens, seals and related glass work across Kuala Lumpur and Selangor.
 
-## Stop the Water at the Source
-
-The useful first step is knowing whether the seal, the slope or the silicone is at fault. KL Servis Rumah provides [glass and aluminium services](/services/glass-aluminium) across Kuala Lumpur, Petaling Jaya, Subang Jaya, Shah Alam, Puchong, Cheras and Klang.
-
-Send a photo of where the water escapes and tell us whether it pools or runs — [WhatsApp our glass team](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah!%20My%20shower%20screen%20is%20leaking.).
+Send a photo showing where water pools while the shower runs — [WhatsApp the glass team](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah%2C%20my%20shower%20screen%20is%20leaking%20water%20onto%20the%20floor.).
