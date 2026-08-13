@@ -48,7 +48,7 @@ For gypsum and plaster ceilings, cut-outs are made cleanly; for concrete ceiling
 - **Cheap drivers** — the driver is the most likely part to fail. Quality drivers and proper installation reduce early failures.
 - **Overloaded circuits** — adding many downlights to an existing circuit can exceed its capacity; the installer checks the load.
 
-If your existing lights flicker, our guide on [flickering downlights](/problems/flickering-downlights) explains the causes — from driver issues to loose connections.
+If your existing lights flicker, our guide on [flickering downlights](/problems/downlight-flickering) explains the causes — from driver issues to loose connections.
 
 ## Cost of LED Downlight Installation
 

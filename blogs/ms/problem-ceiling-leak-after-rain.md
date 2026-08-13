@@ -45,7 +45,7 @@ Air hujan meresap masuk melalui rekahan pada dinding bata parapet luar dan menga
 | Ciri-ciri Kebocoran | Kemungkinan Bahagian Rosak | Kaedah Rawatan Disyorkan |
 |---|---|---|
 | Menitis di bahagian bawah palung bumbung waktu hujan lebat | Palung zink bumbung sumbat / berkarat | Bersihkan sampah; ganti palung stainless steel |
-| Tompok air di bahagian tengah puncak siling | Simen perabung retak | [Ikat semula & simen perabung bumbung](/ms/services/roof-repair/ridge-re-bedding-re-pointing) |
+| Tompok air di bahagian tengah puncak siling | Simen perabung retak | [Ikat semula & simen perabung bumbung](/ms/services/roof-repair/ridge-re-bedding-and-re-pointing) |
 | Menitis tepat di bawah bumbung konkrit rata / balkoni | Membran kalis air konkrit reput | Sapu 3 lapisan membran kalis air poliuretana UV |
 | Air menitis berhampiran dinding luar dan kepala tingkap | Rekahan parapet / sambungan flashing | Tampal rekahan dengan sealant PU fleksibel |
 
@@ -69,7 +69,7 @@ Pembaikan genting berganjak dan sealant flashing bermula dari **RM 250 hingga RM
 Tidak boleh. Menampal dari bahagian dalam hanya akan memerangkap air hujan di dalam ruang siling. Air akan terus bertakung sehingga mereputkan kayu kekuda bumbung atau mencari laluan keluar di bilik lain. Kebocoran mesti dihentikan dari permukaan atas bumbung.
 
 ### Adakah pembaikan bumbung dilindungi waranti?
-Ya, semua kerja pembaikan bumbung dan kalis air oleh KL Servis Rumah dilindungi **waranti kalis bocor bertulis selama 12 hingga 24 bulan**.
+Ya. Kerja pembaikan bumbung dilindungi Waranti Membran & Kerja 10 Tahun yang diterbitkan KL Servis Rumah, manakala skop kalis air dilindungi Jaminan Bebas Bocor Bertulis Sehingga 5 Tahun. Liputan sebenar untuk kerja anda dinyatakan dalam sebut harga sebelum kerja bermula.
 
 ## Selesaikan Masalah Siling Bocor di KL & Selangor
 

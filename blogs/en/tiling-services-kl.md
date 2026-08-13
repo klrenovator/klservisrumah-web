@@ -37,7 +37,7 @@ Kitchen splashbacks, bathroom walls, feature walls, and commercial cladding. See
 
 ### Tile repair & re-grouting
 
-Removing hollow or cracked tiles, re-fixing, and re-grouting with mould-resistant grout. If you hear a hollow sound when you tap a floor tile, read our guide on [hollow floor tiles](/problems/hollow-tiles-floor).
+Removing hollow or cracked tiles, re-fixing, and re-grouting with mould-resistant grout. If you hear a hollow sound when you tap a floor tile, read our guide on [hollow floor tiles](/problems/loose-hollow-tiles).
 
 ## How a Professional Tiling Job Is Done
 

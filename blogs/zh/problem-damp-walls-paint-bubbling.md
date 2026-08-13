@@ -26,7 +26,7 @@ batch: 7
 ## 马来西亚住宅墙体发潮的四大主要源头
 
 ### 1. 楼上或隔壁卫生间防水层失效
-最常见的元凶。楼上浴室地砖填缝剂（Grout）老化或原防水膜破损，洗澡水渗入混凝土楼板并沿着微裂缝游走，最终渗透到楼下或隔壁房间的墙壁上。详情可参考[浴室与湿区防水工程](/zh/services/waterproofing/bathroom-wet-area-waterproofing)。
+最常见的元凶。楼上浴室地砖填缝剂（Grout）老化或原防水膜破损，洗澡水渗入混凝土楼板并沿着微裂缝游走，最终渗透到楼下或隔壁房间的墙壁上。详情可参考[浴室与湿区防水工程](/zh/services/waterproofing/bathroom-and-wet-area-waterproofing)。
 
 ### 2. 墙内暗埋给水管砂眼或接头渗漏
 暗埋在砖墙内的冷热水管因老化腐蚀、受压破裂或接头脱胶，导致持续微量渗水。这种情况下墙体常年潮湿，水表在不用水时仍会微转。
@@ -72,8 +72,3 @@ batch: 7
 KL Servis Rumah 为吉隆坡、八打灵再也、梳邦、莎阿南、蒲种、蕉赖、安邦等雪隆全境提供专业的[防水工程服务](/zh/services/waterproofing)。
 
 欢迎通过 WhatsApp 发送墙壁起泡照片获取专家诊断 — [联系防水技术专家](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah!%20I%20have%20damp%20walls%20and%20bubbling%20paint%20problems.).
-"""
-
-write_article("en", "problem-damp-walls-paint-bubbling.md", damp_en)
-write_article("ms", "problem-damp-walls-paint-bubbling.md", damp_ms)
-write_article("zh", "problem-damp-walls-paint-bubbling.md", damp_zh)

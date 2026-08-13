@@ -70,8 +70,3 @@ KL Servis Rumah 资深水工提供规范高效的管道修复：
 面临水管爆裂或家中突发浸水？KL Servis Rumah 为吉隆坡、八打灵再也、梳邦、莎阿南、蒲种、蕉赖、白沙罗及巴生全境提供快速响应的[水管水工服务](/zh/services/plumbing)。
 
 欢迎立即通过 WhatsApp 发送定位与漏水视频 — [紧急水工热线](https://wa.me/601116627349?text=EMERGENCY!%20My%20water%20pipe%20burst%20and%20I%20need%20a%20plumber%20immediately.).
-"""
-
-write_article("en", "problem-burst-pipe-emergency.md", burst_en)
-write_article("ms", "problem-burst-pipe-emergency.md", burst_ms)
-write_article("zh", "problem-burst-pipe-emergency.md", burst_zh)

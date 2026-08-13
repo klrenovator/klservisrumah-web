@@ -81,8 +81,3 @@ batch: 7
 KL Servis Rumah 为吉隆坡、八打灵再也、梳邦、莎阿南、蒲种、蕉赖、白沙罗及巴生全境提供快速响应的[水管水工服务](/zh/services/plumbing)。
 
 欢迎立即通过 WhatsApp 联系我们进行快速通渠 — [联系通渠专家](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah!%20My%20toilet%20or%20drain%20is%20blocked.).
-"""
-
-write_article("en", "problem-blocked-drain-toilet.md", drain_en)
-write_article("ms", "problem-blocked-drain-toilet.md", drain_ms)
-write_article("zh", "problem-blocked-drain-toilet.md", drain_zh)

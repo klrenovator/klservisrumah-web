@@ -35,7 +35,7 @@ No electrical supply is reaching the heater unit. This is frequently traced to a
 The heating element insulation has cracked, allowing live 230V current to leak directly into the shower water, instantly triggering the unit's built-in 10mA ELCB or the main house 30mA residual current device.
 
 ### 4. Water Temperature Fluctuates from Scalding to Icy Cold
-Caused by low municipal water pressure triggering the internal reed flow switch on and off. Check our guide on [low water pressure in KL](/problems/low-water-pressure-kl).
+Caused by low municipal water pressure triggering the internal reed flow switch on and off. Check our guide on [low water pressure in KL](/problems/low-water-pressure).
 
 ## Troubleshooting Flowchart
 

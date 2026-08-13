@@ -72,8 +72,3 @@ batch: 7
 KL Servis Rumah 为吉隆坡、八打灵再也、梳邦、莎阿南、蒲种、蕉赖、安邦等雪隆全境提供专业的[石膏天花板维修与安装服务](/zh/services/ceiling)。
 
 欢迎通过 WhatsApp 发送天花板水渍照片获取专业诊断 — [联系天花板工程专家](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah!%20I%20have%20ceiling%20mold%20and%20water%20stains.).
-"""
-
-write_article("en", "problem-ceiling-mold-stains.md", ceiling_mold_en)
-write_article("ms", "problem-ceiling-mold-stains.md", ceiling_mold_ms)
-write_article("zh", "problem-ceiling-mold-stains.md", ceiling_mold_zh)

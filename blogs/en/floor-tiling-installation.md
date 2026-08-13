@@ -78,7 +78,7 @@ Sometimes, but it is usually not recommended. Tiling over old tiles raises the f
 
 ### Why do some floor tiles go hollow?
 
-Hollow tiles usually mean insufficient adhesive coverage or a base that moved. Tapping a hollow-sounding tile is a sign the bond has failed. See our guide on [hollow floor tiles](/problems/hollow-tiles-floor) for what to do.
+Hollow tiles usually mean insufficient adhesive coverage or a base that moved. Tapping a hollow-sounding tile is a sign the bond has failed. See our guide on [hollow floor tiles](/problems/loose-hollow-tiles) for what to do.
 
 ### Do you handle both tile supply and installation?
 
