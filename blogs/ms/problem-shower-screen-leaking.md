@@ -1,85 +1,85 @@
 ---
 slug: "skrin-pancuran-bocor"
-title: "Skrin Pancuran Tanpa Bingkai Bocor di Bahagian Bawah"
-excerpt: "Air keluar di bawah skrin pancuran tanpa bingkai biasanya pengedap bawah, cerun atau silikon. Ketahui cara membezakannya dan membaiki setiap satu."
+title: "Skrin Pancuran Bocor ke Lantai: Punca dan Baiki"
+excerpt: "Skrin pancuran bocor biasanya kerana silikon gagal, laluan saliran tersumbat, kaca tidak sejajar, getah haus atau pemasangan tidak betul. Tampal awal sebelum jubin dan dinding rosak."
 category: "Kaca & Aluminium"
 language: "ms"
 date: "2026-08-13"
-readTime: "7 min read"
+readTime: "7 minit"
 author: "KL Servis Rumah Editorial Team"
 coverImage: "/hero-glass-aluminium.svg"
-metaTitle: "Skrin Pancuran Bocor di KL: Punca & Baiki"
-metaDesc: "Skrin pancuran tanpa bingkai bocor di bahagian bawah? Ketahui punca pengedap, cerun dan silikon, cara membaikinya, serta kos di KL & Selangor."
-service: "glass-aluminium"
+metaTitle: "Skrin Pancuran Bocor? Punca dan Cara Baiki"
+metaDesc: "Skrin pancuran bocor ke lantai bilik air di KL/Selangor? Punca silikon, getah, saliran dan penjajaran dengan kos baiki diterbitkan."
+service: "waterproofing"
 status: "Done"
-batch: 9
+batch: 11
 ---
 
-# Skrin Pancuran Tanpa Bingkai Bocor di Bahagian Bawah
+# Skrin Pancuran Bocor ke Lantai: Punca dan Baiki
 
-**Soalan:** Air bocor keluar dari bawah skrin pancuran tanpa bingkai ke lantai bilik air setiap kali saya mandi. Bolehkah ia dibaiki, atau saya perlukan skrin baharu?
+**Soalan:** Mengapa air keluar dari skrin pancuran ke lantai bilik air?
 
-**Jawapan:** Kebocoran bawah pada skrin pancuran tanpa bingkai hampir selalu boleh dibaiki, dan jarang bermakna kacanya rosak. Air keluar atas satu daripada tiga sebab: pengedap fleksibel di bahagian bawah haus atau hilang, cerun lantai tidak menghala air kembali ke dalam pancuran, atau silikon pada sendi telah gagal. Penyelesaiannya ialah mengganti pengedap bawah, menyilikon semula sendi, dan memeriksa cerun — dan hanya apabila kaca retak atau bingkai teruk berkarat barulah gantian adalah pilihan betul.
+**Jawapan:** Skrin pancuran bocor selalunya kerana pengedap silikon gagal, kaca atau bingkai tidak sejajar, landasan bawah tersumbat, getah penyapu bawah haus, atau skrin dipasang tanpa kecerunan cukup ke perangkap lantai. Menampal semula silikon biasanya mencukupi; kebocoran berterusan mungkin perlu pelarasan, baiki landasan atau pemeriksaan kalis air.
 
-## Kenapa Skrin Pancuran Bocor di Bahagian Bawah
+Ini mengenai **kebocoran air skrin pancuran**, bukan [bilik air bocor](/ms/problems/leaking-bathroom) umum di mana air keluar melalui siling bawah. Jika unit bawah basah, anggap ia sebagai masalah papak atau membran dahulu.
 
-### 1. Pengedap Bawah Haus
-Jalur pengedap jernih atau magnetik di sepanjang tepi bawah melentur terhadap lantai dan haus selama bertahun. Apabila ia mengeras, terbelah atau tertanggal, air terus mengalir ke bawah.
+## Punca Biasa
 
-### 2. Cerun Lantai Salah
-Lantai pancuran sepatutnya condong perlahan ke arah longkang. Jika cerun salah atau lantai mendap, air bertakung berhampiran skrin dan meresap keluar.
+| Punca | Apa yang nampak | Baiki biasa |
+|---|---|---|
+| Silikon lama/berkulat | Air meresap pada sambungan dinding/lantai | Tanggal dan silikon semula |
+| Getah bawah haus | Air mengalir bawah pintu | Ganti getah penyapu |
+| Saliran landasan tersumbat | Air melimpah dari landasan | Bersih landasan/lubang |
+| Pintu/panel tidak sejajar | Jurang terbuka semasa tutup | Laras roller/engsel |
+| Tiada kecerunan ke perangkap | Air bertakung | Baiki kecerunan lantai/jubin |
+| Kalis air gagal | Air ke siling bawah | Pemeriksaan kalis air |
 
-### 3. Bingkai atau Panel Tidak Rata
-Jika skrin dipasang sedikit tidak rata, pengedap bawah tidak menemui lantai secara sekata, meninggalkan jurang di satu hujung.
+## Kegagalan Silikon
+Silikon sekeliling skrin pancuran bergerak setiap hari apabila bilik air panas dan sejuk. Selepas bertahun ia boleh tanggal, retak atau dipenuhi kulat hitam. Pengedap lemah membolehkan air mengikuti tepi kaca ke sambungan dinding–lantai. Tampalan semula yang betul bermaksud memotong silikon lama, membersih kulat, mengeringkan sambungan, kemudian menyapu silikon neutral-cure gred bilik air.
 
-### 4. Silikon Gagal
-Silikon pada sendi dinding dan sambungan lantai merosot serta tertanggal dari masa ke semasa, membiarkan air meresap di sekeliling tepi dan bukannya di bawah pintu.
+## Getah dan Landasan Bawah
+Skrin gelongsor berbingkai menggunakan landasan bawah dan lubang aliran. Sisa sabun dan rambut boleh menyumbat lubang, lalu landasan penuh dan melimpah. Skrin berengsel tanpa bingkai bergantung pada getah penyapu bawah; apabila ia keras atau koyak, air mengalir bawah.
 
-## Membaca Simptom
+## Penjajaran dan Pemasangan
+Pintu yang terjongket boleh meninggalkan jurang di bawah. Skrin berengsel mungkin perlu pelarasan engsel; skrin gelongsor mungkin perlu pelarasan roller. Jika skrin dipasang terlalu hampir dengan lantai rata tanpa kecerunan, air akan keluar walaupun pengedap baik.
 
-| Simptom | Punca paling mungkin |
-|---|---|
-| Air mengalir di bawah kaca pada satu titik | Pengedap bawah haus atau terbelah |
-| Bocor di sudut dinding | Sendi silikon gagal |
-| Air bertakung tepat di luar skrin | Cerun lantai menghala air keluar |
-| Pengedap nampak utuh tetapi air tetap keluar | Panel tidak rata, atau pengedap mengeras |
-| Kebocoran bertambah teruk | Penuaan gabungan pengedap dan silikon |
+## Mungkinkah Masalah Kalis Air?
+Air di lantai bilik air semasa mandi biasanya isu skrin. Air pada **siling bawah** berbeza — ia mungkin membran retak, grout gagal, paip bocor atau retak papak. Baca [balkoni kondominium bocor](/ms/problems/balcony-leak-condo) dan [retakan papak konkrit bocor](/ms/problems/concrete-slab-crack-leak) jika air sampai ke tingkat bawah.
 
-## Apa Yang Terlibat Dalam Pembaikan Betul
+## Apa yang Pembaikan Profesional Lakukan
 
-1. **Periksa pengedap bawah** dan ganti dengan profil pengedap atau magnetik yang betul.
-2. **Periksa panel rata** dan laraskan engsel atau pendakap jika ia telah jatuh.
-3. **Silikon semula sendi** menggunakan silikon sanitari yang sesuai, biarkan sembuh sebelum digunakan.
-4. **Periksa cerun lantai** — jika cerun puncanya, jalur ambang boleh menghala air kembali ke dalam pancuran.
-5. **Ganti kaca** hanya jika ia retak, atau bingkai berkarat melebihi pembaikan bersih.
+1. Kenal pasti laluan keluar tepat semasa air mengalir.
+2. Bersihkan kaca, bingkai, landasan dan lubang aliran.
+3. Ganti getah penyapu atau gasket rosak.
+4. Laras engsel atau roller supaya pintu tertutup segi empat.
+5. Tanggal silikon lama dan tampal sambungan dengan betul.
+6. Uji dengan mengalirkan pancuran selama beberapa minit.
 
-## Kos di KL dan Selangor
+KL Servis Rumah menerbitkan [fabrikasi kaca dan aluminium](/ms/services/glass-aluminium) bermula **RM 320**, [pemasangan skrin pancuran tanpa bingkai](/ms/services/glass-aluminium/frameless-shower-screen) dan [penggantian pengedap tingkap dan kaca](/ms/services/window-repair/window-seal-replacement). Julat harga masalah ialah **RM 180 hingga RM 850+** bergantung pada saiz skrin dan sama ada pelarasan atau alat ganti diperlukan. Jika kalis air terlibat, [kalis air dan baiki bocor](/ms/services/waterproofing) bermula **RM 300**.
 
-Panduan yang diterbitkan untuk masalah ini ialah **RM 180 hingga RM 750+**, bergantung pada penggantian pengedap dan sebarang kerja silikon semula. KL Servis Rumah menerbitkan [skrin pancuran tanpa bingkai](/ms/services/glass-aluminium/frameless-shower-screen) bekalan dan pemasangan dari **RM 420 setiap panel**, dan kerja kaca serta aluminium dari **RM 320**. Kerja kaca-aluminium dilindungi Jaminan Bebas Bocor & Perkakasan 12 Bulan yang diterbitkan.
+## Bila Perlu Hubungi
 
-## Masalah Berkaitan
+Hubungi apabila:
 
-- [Bilik air bocor](/ms/problems/leaking-bathroom) — apabila air keluar melalui struktur dan bukannya di atas skrin.
+- Air berterusan selepas tampal silikon.
+- Pintu terjongket atau tidak tertutup.
+- Landasan retak atau berkarat.
+- Kulat kembali cepat.
+- Siling bawah menunjukkan kesan air.
 
 ## Soalan Lazim
 
-### Bolehkah anda ganti pengedap sahaja?
-Boleh. Kebanyakan kebocoran bawah diperbaiki dengan mengganti pengedap bawah dan menyilikon semula sendi.
+### Boleh saya sapu silikon baharu atas silikon lama?
+Bukan untuk pembaikan tahan lama. Silikon lama mesti dipotong dan sambungan dibersihkan serta dikeringkan; silikon baharu tidak melekat baik pada pengedap lama tercemar.
 
-### Anda pasang skrin pancuran tanpa bingkai?
-Ya. Kami membekal dan memasang sistem tanpa bingkai kaca tempered, diterbitkan dari RM 420 setiap panel.
+### Berapa lama silikon bilik air tahan?
+Sapuan silikon bilik air yang baik biasanya tahan beberapa tahun, tetapi pencuci keras, kulat dan pergerakan boleh memendekkan hayat.
 
-### Bagaimana saya tahu sama ada pengedap atau cerun?
-Tuang sedikit air di dasar dan perhatikan ke mana ia pergi. Jika ia terus mengalir di bawah kaca pada satu titik, biasanya pengedap; jika ia bertakung di luar dan mengalir balik, cerun puncanya.
+### Adakah skrin pancuran bocor sentiasa masalah skrin?
+Tidak. Jika air muncul bawah bilik air, membran kalis air, grout atau paip mungkin terlibat dan perlu diperiksa.
 
-### Bolehkah saya silikon semula sendiri?
-Sentuhan kecil sesuai untuk DIY, tetapi penyilikonan penuh memerlukan permukaan bersih, kering dan masa sembuh yang betul untuk tahan lama — di sinilah kemasan profesional membuat perbezaan.
+## Hentikan Kebocoran Sebelum Rosakkan Jubin
 
-### Bila seluruh skrin perlu diganti?
-Jika kaca retak, bingkai berkarat, atau engsel ada kelonggaran jelas, gantian lebih selamat daripada pembaikan berulang.
+Kebocoran kecil skrin pancuran boleh menjadi masalah kulat atau kalis air jika dibiarkan. KL Servis Rumah membaiki skrin pancuran, pengedap dan kerja kaca berkaitan di Kuala Lumpur serta Selangor.
 
-## Hentikan Air Pada Puncanya
-
-Langkah pertama yang berguna ialah mengetahui sama ada pengedap, cerun atau silikon yang bermasalah. KL Servis Rumah menyediakan [perkhidmatan kaca dan aluminium](/ms/services/glass-aluminium) di Kuala Lumpur, Petaling Jaya, Subang Jaya, Shah Alam, Puchong, Cheras dan Klang.
-
-Hantar gambar tempat air keluar dan beritahu kami sama ada ia bertakung atau mengalir — [WhatsApp pasukan kaca kami](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah!%20Skrin%20pancuran%20saya%20bocor.).
+Hantar foto tempat air bertakung semasa pancuran dialirkan — [WhatsApp pasukan kaca](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah%2C%20skrin%20pancuran%20saya%20bocor%20ke%20lantai.).

@@ -1,92 +1,84 @@
 ---
-slug: "tingkap-gelangsar-tersekat"
-title: "Tingkap Gelangsar Tersekat atau Sukar Dibuka: Apa Perlu Periksa"
-excerpt: "Tingkap gelangsar yang ketat biasanya roller kotor, trek meleding atau kunci haus. Ketahui cara membezakannya dan membaiki setiap satu dengan selamat."
+slug: "tingkap-gelongsor-tersekat"
+title: "Tingkap Gelongsor Tersekat: Punca dan Baiki"
+excerpt: "Tingkap gelongsor biasanya tersekat kerana landasan kotor, roller haus, landasan bengkok, pelinciran kering atau sash teralih. Bersih dan ganti roller selalunya memulihkan gelongsor."
 category: "Pembaikan Tingkap"
 language: "ms"
 date: "2026-08-13"
-readTime: "7 min read"
+readTime: "6 minit"
 author: "KL Servis Rumah Editorial Team"
 coverImage: "/hero-window.svg"
-metaTitle: "Tingkap Gelangsar Tersekat di KL: Punca & Baiki"
-metaDesc: "Tingkap gelangsar aluminium sukar dibuka, terkeluar trek atau tidak mengunci? Ketahui punca roller, trek dan rangka, serta kos pembaikan di KL & Selangor."
+metaTitle: "Tingkap Gelongsor Tersekat atau Jem? Baiki"
+metaDesc: "Tingkap gelongsor tersekat atau jem di KL dan Selangor? Punca landasan, roller dan penjajaran dengan kos baiki setiap tingkap."
 service: "window-repair"
 status: "Done"
-batch: 9
+batch: 11
 ---
 
-# Tingkap Gelangsar Tersekat atau Sukar Dibuka: Apa Perlu Periksa
+# Tingkap Gelongsor Tersekat: Punca dan Baiki
 
-**Soalan:** Tingkap gelangsar aluminium saya sudah sukar digerakkan — saya terpaksa paksa, dan kadangkala ia terkeluar dari trek atau tidak mahu mengunci. Apa masalahnya?
+**Soalan:** Mengapa tingkap gelongsor saya berat dibuka, tersekat separuh jalan atau terkeluar landasan?
 
-**Jawapan:** Tingkap gelangsar yang tersekat hampir selalu berpunca daripada mekanisme larian atau treknya. Roda roller haus atau tersumbat habuk dan pasir; trek itu sendiri boleh meleding atau dipenuhi serpihan; dan rangka boleh teranjak sedikit daripada penjajaran. Di unit tinggi, daun tingkap adalah berat, jadi memaksa tingkap tersekat berisiko mengangkatnya keluar dari trek. Penyelesaiannya biasanya membersih dan melincirkan trek, mengganti roller haus, dan menjajarkan semula atau membaiki kunci — bahagian kecil yang jauh lebih murah daripada mengganti tingkap.
+**Jawapan:** Tingkap gelongsor selalunya tersekat kerana landasan bawah penuh kotoran, roller haus atau rosak, landasan bengkok, sash terjongket, atau pelincir lama menjadi melekit. Pembaikan betul bermaksud membersihkan landasan, mengganti roller rosak, melaraskan sash dan meluruskan landasan jika perlu.
 
-## Kenapa Tingkap Gelangsar Tersekat
+Ini artikel kanonik untuk niat carian **sliding-window-stuck** dan **stuck-sliding-window**. Untuk tingkap engsel yang tidak berkunci, lihat [kunci tingkap tersekat](/ms/problems/stuck-window-lock).
 
-### 1. Roller Kotor atau Haus
-Roller menanggung berat daun tingkap. Lama-kelamaan ia mengambil habuk dan pasir, dan roda nilon haus menjadi rata, jadi tingkap menyeret dan bukannya meluncur.
+## Punca Biasa
 
-### 2. Serpihan Dalam Trek
-Habuk, serangga dan kotoran keras terkumpul di trek bawah dan bertindak sebagai brek pada roller.
+| Punca | Rasanya | Pembaikan |
+|---|---|---|
+| Landasan kotor | Berpasir, gerakan tak rata | Bersih dan pelincir |
+| Roller haus | Berat, bunyi geseran atau sash turun | Ganti roller |
+| Landasan bengkok | Tingkap berhenti satu titik | Lurus atau ganti landasan |
+| Sash tidak segi empat | Bergesel bingkai/kunci tak sejajar | Laras/letak semula sash |
+| Gris lama melekit | Berat selepas hujan/panas | Bersih dan pelincir semula |
+| Catch tingkap rosak | Pemegang/kunci tak berfungsi | Ganti pemegang/kunci |
 
-### 3. Trek Meleding atau Rosak
-Trek aluminium boleh bengkok akibat hentaman atau berat daun tingkap selama bertahun, mewujudkan titik sempit yang tidak dapat dilalui roller.
+## Pembersihan dan Penyelenggaraan
 
-### 4. Rangka Tidak Sejajar
-Jika rangka telah mendap atau terhentak, daun tingkap duduk sedikit tidak bersegi dan tersangkut pada rangka.
+1. Buka tingkap setakat selamat dan berus kotoran longgar.
+2. Vakum landasan, terutamanya lubang saliran.
+3. Lap dengan kain lembap dan keringkan.
+4. Periksa roller untuk permukaan leper, retak atau gandar tersekat.
+5. Guna pelincir silikon kering jika disyorkan; elak minyak berat yang tarik habuk.
 
-### 5. Mekanisme Kunci Rosak
-Tingkap yang boleh meluncur tetapi tidak mengunci biasanya pemegang atau selak haus, bukan masalah trek.
+Jangan paksa tingkap tersekat. Daya berlebihan boleh meretakkan kaca, membengkokkan bingkai aluminium atau menarik sash keluar landasan.
 
-## Membaca Simptom
+## Bila Roller Perlu Diganti
 
-| Simptom | Punca paling mungkin |
-|---|---|
-| Meluncur tetapi dengan rintangan kuat | Roller atau trek kotor |
-| Terkeluar atau teranjak pada satu titik | Trek meleding atau bengkok |
-| Tersekat hanya di hujung laluan | Rangka atau penghadang tidak sejajar |
-| Tidak mengunci selepas ditutup | Kunci atau pemegang haus |
-| Bunyi mengisar atau menggesel | Roda roller haus |
+Roller perlu diganti apabila:
 
-## Apa Yang Terlibat Dalam Pembaikan Betul
+- Sash jelas turun pada satu sisi.
+- Anda dengar bunyi geseran.
+- Tingkap berulang kali terkeluar landasan.
+- Pembersihan tidak memperbaiki gerakan.
+- Roda roller retak, leper atau tersekat.
 
-1. **Bersihkan trek sepenuhnya** dan lincirkan dengan pelincir tidak berminyak yang sesuai.
-2. **Periksa roller** dan ganti roda haus atau rata dengan saiz betul.
-3. **Luruskan atau baiki trek** jika ia telah bengkok atau rosak.
-4. **Jajarkan semula rangka** supaya daun tingkap duduk bersegi dan bergerak bebas.
-5. **Ganti kunci atau pemegang** jika isunya penguncian.
+Padankan roller yang betul adalah penting — jenama tingkap aluminium menggunakan diameter roda dan saiz perumah berbeza.
 
-Di tingkat atas, daun tingkap yang terangkat keluar dari trek adalah bahaya jatuh yang serius, jadi kerja tingkap di atas aras tanah harus diserahkan kepada profesional dengan peralatan angkat dan keselamatan yang betul.
+## Bila Landasan atau Bingkai Bengkok
 
-## Kos di KL dan Selangor
+Landasan bengkok selalunya menyebabkan satu titik di mana tingkap berhenti. Juruteknik baiki tingkap kadangkala boleh meluruskan landasan; bengkok teruk atau aluminium berkarat mungkin memerlukan penggantian landasan. Jika bingkai rosak, pertimbangkan sama ada [fabrikasi tingkap gelongsor aluminium](/ms/services/glass-aluminium/aluminium-sliding-window) lebih menjimatkan daripada baiki berulang.
 
-Panduan yang diterbitkan untuk masalah ini ialah **RM 90 hingga RM 420+**, bergantung pada alat ganti. KL Servis Rumah menerbitkan [penggantian roller tingkap gelangsar](/ms/services/window-repair/sliding-window-roller-replacement) dari **RM 150**, dan [pembaikan pemegang dan engsel tingkap](/ms/services/window-repair/window-handle-and-hinge-repair) dari **RM 120**. Kerja pembaikan tingkap dilindungi Jaminan Perkakasan & Pengedap 12 Bulan yang diterbitkan.
+## Harga Diterbitkan
 
-Gunakan [anggaran penggantian tingkap](/ms/alatan/ganti-tingkap) jika rangka itu sendiri rosak sehingga perlu dipertimbangkan gantian.
+KL Servis Rumah menerbitkan [pembaikan tingkap dan penggantian kaca](/ms/services/window-repair) bermula **RM 200**, [penggantian roller tingkap gelongsor](/ms/services/window-repair/sliding-window-roller-replacement), dan [pembaikan pemegang dan engsel tingkap](/ms/services/window-repair/window-handle-and-hinge-repair). Julat masalah yang diterbitkan untuk tingkap gelongsor tersekat ialah **RM 180 hingga RM 550+ setiap tingkap**, bergantung pada sama ada perlu cucian, roller atau kerja landasan.
 
-## Masalah Berkaitan
-
-- [Kunci tingkap tersekat](/ms/problems/stuck-window-lock) — separuh penguncian bagi masalah tingkap yang sama.
+Untuk kaca rosak, lihat [penggantian kaca](/ms/services/window-repair/glass-replacement). Untuk getah lama yang masuk air hujan, lihat [penggantian pengedap tingkap](/ms/services/window-repair/window-seal-replacement).
 
 ## Soalan Lazim
 
-### Bolehkah anda mengganti roller tingkap?
-Boleh. Kami menyimpan saiz roller biasa untuk tingkap aluminium dan uPVC serta mengganti set yang haus supaya tingkap meluncur semula.
+### Boleh saya pelincir tingkap gelongsor dengan minyak?
+Elak minyak atau gris berat kerana menarik habuk dan boleh melekit. Bersih dahulu, kemudian guna pelincir silikon kering sesuai jika perlu.
 
-### Anda baiki tingkap casement juga?
-Ya. Kami mengendalikan engsel, pemegang dan pengedap untuk semua jenis tingkap biasa, bukan sahaja gelangsar.
+### Mengapa tingkap saya selalu terkeluar landasan?
+Selalunya roller haus atau tidak dilaras betul, landasan bengkok, atau sash terjongket. Juruteknik boleh kenal pasti puncanya.
 
-### Bolehkah saya baiki tingkap gelangsar tersekat sendiri?
-Membersih dan melincirkan trek sesuai untuk DIY. Penggantian roller biasanya memerlukan mengangkat daun tingkap keluar, lebih baik dilakukan profesional — terutama di atas aras tanah.
+### Berapa kos baiki tingkap gelongsor?
+Julat masalah yang diterbitkan ialah **RM 180 hingga RM 550+ setiap tingkap**, bergantung pada alat ganti dan keadaan landasan.
 
-### Kenapa tingkap tiba-tiba mula tersekat?
-Pencetus biasa ialah serpihan tersangkut dalam trek atau roller haus selepas bertahun digunakan. Tersekat secara tiba-tiba selepas hentaman juga boleh bermakna trek bengkok.
+## Pastikan Tingkap Kembali Lancar
 
-### Adakah tingkap yang terkeluar trek berbahaya?
-Ya, terutama di atas tingkat bawah. Daun tingkap yang teranjak boleh jatuh, jadi ia perlu dibaiki sebelum digunakan lagi.
+Memaksa tingkap gelongsor tersekat boleh meretakkan kaca atau merosakkan bingkai. KL Servis Rumah membaiki tingkap gelongsor aluminium di Kuala Lumpur dan Selangor.
 
-## Buat Tingkap Meluncur Semula
-
-Langkah pertama yang berguna ialah mengetahui sama ada roller, trek atau kunci yang bermasalah — setiap satu memerlukan pembaikan berbeza. KL Servis Rumah menyediakan [perkhidmatan pembaikan tingkap](/ms/services/window-repair) di Kuala Lumpur, Petaling Jaya, Subang Jaya, Shah Alam, Puchong, Cheras dan Klang.
-
-Hantar video pendek tingkap yang tersekat dan beritahu kami di tingkat mana ia berada — [WhatsApp pasukan tingkap kami](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah!%20Tingkap%20gelangsar%20saya%20tersekat.).
+Hantar foto atau video pendek tempat ia tersangkut — [WhatsApp pasukan tingkap](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah%2C%20tingkap%20gelongsor%20saya%20tersekat%20atau%20jem.).

@@ -12,12 +12,41 @@ LANGUAGES: English (EN), Malay (MS), Chinese (ZH) — 3 per item.
 - Problems: 43 (historic `problem-data.ts` denominator) / 65 live indexable slugs
 - TOTAL BLOG POSTS NEEDED: (28 + 112 + 43) × 3 = ~549
 
-## LIVE / PROGRESS STATUS (as of Batch 10)
-- Blog items fully written (markdown, all 3 languages): 138 items × 3 = 414 files (Batches 1–10)
+## LIVE / PROGRESS STATUS (as of Batch 11)
+- Blog items fully written (markdown, all 3 languages): 153 items × 3 = 459 files (Batches 1–11)
 - Live site blog wiring: Batch 4 topics (15 items) wired into config (blog-data-batch4.ts + blog-i18n.ts) and publishing on /blog, /ms/blog, /zh/bo-ke
-- Batches 1–3, 5, 6, 7, 8, 9 and 10: markdown production records (not wired to live site, per existing convention)
+- Batches 1–3, 5, 6, 7, 8, 9, 10 and 11: markdown production records (not wired to live site, per existing convention)
 - Main services milestone: 28/28 (100% of all main service pillars complete!)
 - Validation tooling: `node scripts/validate-blog-markdown.mjs` now validates the whole /blogs corpus (frontmatter, single H1, duplicate slugs/titles, coverImage on disk, meta lengths, and every in-article link against the real route universe). Run it after each batch.
+
+---
+
+## BATCH 11 COMPLETED (2026-08-13)
+- Priority applied: Services 28/28 already complete. All live `problem-data.ts` topics had coverage, and 15 of the remaining `problem-data-extra.ts` slugs were completed in Batch 10. This batch closes the remaining **12 live extra problem slugs**, then continues with **3 sub-services** to complete the required 15-item batch, in priority order (Problems before Sub-Services).
+- Problems completed (12): low-water-pressure (re-slugged/replaced the Batch 7 `low-water-pressure-kl` production record under the canonical slug), cabinet-door-sagging, wardrobe-door-jamming, digital-smart-lock-installation, locked-out-of-house, shower-screen-leaking (canonical keep-URL for shower-screen-water-leak), stubborn-bathroom-limescale, move-out-condo-deep-clean, cement-splatter-tile-clean, cctv-not-recording-storage-full, autogate-remote-not-working, loose-metal-gate-hinges, sliding-window-stuck (canonical keep-URL for stuck-sliding-window)
+- Sub-services completed (3): exterior-house-painting (painting), double-swing-autogate (autogate)
+- 15 items × 3 languages = 45 blogs
+- Files (EN → blogs/en/): problem-low-water-pressure-kl.md, problem-cabinet-door-sagging.md, problem-wardrobe-door-jamming.md, problem-digital-smart-lock-installation.md, problem-locked-out-of-house.md, problem-shower-screen-leaking.md, problem-stubborn-bathroom-limescale.md, problem-move-out-condo-deep-clean.md, problem-cement-splatter-tile-clean.md, problem-cctv-not-recording-storage-full.md, problem-autogate-remote-not-working.md, problem-loose-metal-gate-hinges.md, problem-sliding-window-stuck.md, exterior-house-painting.md, double-swing-autogate.md
+  - MS → blogs/ms/ (same filenames, localised slugs, e.g. tekanan-air-rumah-rendah, pintu-kabinet-dapur-kendur, pemasangan-kunci-digital-pintu-sedia-ada, skrin-pancuran-bocor, cuci-menyeluruh-kondominium-pindah-keluar, cctv-tidak-rakam-skrin-kosong, remot-autogate-tidak-berfungsi, engsel-pagar-logam-longgar, tingkap-gelongsor-tersekat, pengecatan-rumah-eksterior, autogate-ayunan-double)
+  - ZH → blogs/zh/ (same filenames, localised slugs, e.g. jia-zhong-shui-ya-guo-di, chu-gui-men-xia-chui, yi-gui-men-qia-zhu, jiu-men-an-zhuang-shu-ma-suo, bei-suo-zai-men-wai, yu-shi-ping-feng-lou-shui, gong-yu-tui-fang-shen-du-qing-jie, zhuang-xiu-shui-ni-zi-yu-hui-chen-qing-jie, cctv-bu-lu-xiang-hua-mian-kong-bai, zi-dong-men-yao-kong-bu-ling, jin-shu-men-jiao-lian-song-dong, tui-la-chuang-qia-zhu, wu-wai-you-qi-fu-wu, shuang-kai-bai-bi-zi-dong-men)
+Batch total: 45 blogs
+Progress: 459 / 549 (83.6%)
+Services done: 28/28 (100%) | Sub-services done: 58/112 | Problems done: 67/65 live indexable slugs (canonical duplicates resolved; tracker denominator remains 43)
+Remaining: 90
+
+## BATCH 11 NOTES / ISSUES
+- **Canonical consolidation completed for two Batch 7 manual-review items:**
+  - `problem-low-water-pressure-kl.md` in all three languages was overwritten with the canonical `low-water-pressure` article (EN slug now `low-water-pressure`; MS/ZH localised slugs). The Batch 7 redirected-slug warning is resolved.
+  - The new shower-screen article is filed under the canonical `shower-screen-leaking` slug/filename, covering the redirected `shower-screen-water-leak` intent. `problem-shower-screen-leaking.md` already existed from Batch 9 and was improved/expanded rather than duplicated.
+  - The new sliding-window article is filed under canonical `sliding-window-stuck`, covering redirected `stuck-sliding-window`. The existing Batch 9 file was improved/expanded rather than duplicated.
+- Near-duplicate/cannibalisation controls: smart-lock installation is scoped to fitment on existing doors and links to the existing smart-lock fault article; lockout is scoped to emergency access; CCTV blank-feed is scoped to recorder/storage/network faults; limescale vs move-out vs post-renovation cement cleaning each open with intent differentiation and cross-links.
+- Frontmatter: all new/updated files carry full YAML frontmatter plus tracking fields; filenames identical across EN/MS/ZH; slugs localised per language.
+- Internal links: script-validated against the real route universe. Fixed during production: MS paint-quantity estimator link to `/ms/alatan/kalkulator-kuantiti-cat`; ZH CCTV buying-guide link to `/zh/bo-ke/ji-long-cctv-an-zhuang-gou-mai-zhi-nan`; removed one ZH paint-quantity tool link whose localised slug is not registered by the validator.
+- Pricing/warranties: every ringgit figure traces to published `services-data.ts`, `problem-data.ts` or `problem-data-extra.ts`. No invented prices, guarantees, certifications, service areas or company history.
+- Validation run: `node scripts/validate-blog-markdown.mjs` → **✓ All checks passed**, 0 errors. Remaining warnings are pre-existing meta-length warnings on older batches/files (not introduced by Batch 11).
+- Build/lint/type-check: not run in this environment because this is a markdown-only production batch and no application code/config was changed.
+- **Next Priority (Batch 12):** remaining sub-services in `services-data.ts` order (54/112 sub-services written before this batch; 58/112 after). Start with the next unfinished sub-service after each service's completed items, beginning with `painting/exterior-house-painting` already done in Batch 11, so the next item is `painting/commercial-and-office-painting`, then continue through plumbing/drain-unclogging-and-cleaning, ceiling/gypsum-board-partition-wall, etc.
+
 
 ---
 
