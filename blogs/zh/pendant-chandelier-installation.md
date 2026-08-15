@@ -11,7 +11,7 @@ coverImage: "/hero/home-services-lighting-kl.jpg"
 metaTitle: "吉隆坡与雪兰莪吊灯与水晶灯安装费用"
 metaDesc: "吉隆坡与雪兰莪吊灯与水晶灯安装RM 180起——加固吊钩、安全绳与整洁布线，胜任重型装饰灯具。"
 service: "lighting"
-subService: "Pendant & Chandelier Installation"
+subService: "pendant-and-chandelier-install"
 status: "Done"
 batch: 3
 ---

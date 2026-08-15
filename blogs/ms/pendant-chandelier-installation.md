@@ -11,7 +11,7 @@ coverImage: "/hero/home-services-lighting-kl.jpg"
 metaTitle: "Kos Pemasangan Lampu Gantung & Candelier di KL & Selangor"
 metaDesc: "Pemasangan lampu gantung & candelier di KL & Selangor dari RM 180 — cangkuk diperkukuh, kabel keselamatan dan pendawaian kemas untuk kelengkapan hiasan berat."
 service: "lighting"
-subService: "Pendant & Chandelier Installation"
+subService: "pendant-and-chandelier-install"
 status: "Done"
 batch: 3
 ---
