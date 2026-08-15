@@ -12,13 +12,40 @@ LANGUAGES: English (EN), Malay (MS), Chinese (ZH) — 3 per item.
 - Problems: 43 (historic `problem-data.ts` denominator) / 65 live indexable slugs
 - TOTAL BLOG POSTS NEEDED: (28 + 112 + 43) × 3 = ~549
 
-## LIVE / PROGRESS STATUS (as of Batch 13)
-- Blog items completed through production (all 3 languages): 183 topic records × 3; current unique markdown corpus is 180 per language = 540 files (three earlier records were consolidated/overwritten under canonical topics in Batches 11–12)
+## LIVE / PROGRESS STATUS (as of Batch 14)
+- Blog items completed through production (all 3 languages): 198 topic records × 3; current unique markdown corpus is 195 per language = 585 files (three earlier records were consolidated/overwritten under canonical topics in Batches 11–12)
 - Live site blog wiring: Batch 4 topics (15 items) wired into config (blog-data-batch4.ts + blog-i18n.ts) and publishing on /blog, /ms/blog, /zh/bo-ke
-- Batches 1–3 and 5–13: markdown production records (not wired to live site, per existing convention)
+- Batches 1–3 and 5–14: markdown production records (not wired to live site, per existing convention)
 - Main services milestone: 28/28 (100% of all main service pillars complete!)
 - Problems milestone: every live indexable problem slug has article coverage (Batch 11)
 - Validation tooling: `node scripts/validate-blog-markdown.mjs` now validates the whole /blogs corpus (frontmatter, single H1, duplicate slugs/titles, coverImage on disk, meta lengths, and every in-article link against the real route universe). Run it after each batch.
+
+---
+
+## BATCH 14 COMPLETED (2026-08-15)
+- Priority applied: all 28 main services and every live indexable problem slug already have coverage, so this batch continues **Sub-Services** in the exact order recorded by the Batch 13 next-priority note. No topics were skipped, reordered, duplicated or invented.
+- Sub-services completed (15): gutter-cleaning-and-realignment (roof-repair), full-torch-on-membrane-waterproofing (roof-repair), modular-kitchen-cabinet-10ft-l-shape (kitchen-cabinet), quartz-granite-countertop (kitchen-cabinet), kitchen-makeover-doors-and-hardware-only (kitchen-cabinet), study-desk-and-home-office (carpentry), shoe-cabinet-and-entry-storage (carpentry), door-planing-and-adjustment (door), fire-rated-door-installation (door), window-handle-and-hinge-repair (window-repair), sliding-window-roller-replacement (window-repair), key-cutting-and-re-keying (locksmith), emergency-lockout-landed-house (locksmith), glass-office-partition (glass-aluminium), wall-mirror-installation (glass-aluminium)
+- 15 items × 3 languages = 45 blogs
+- Files (EN → `blogs/en/`): gutter-cleaning-and-realignment.md, full-torch-on-membrane-waterproofing.md, modular-kitchen-cabinet-10ft-l-shape.md, quartz-granite-countertop.md, kitchen-makeover-doors-and-hardware-only.md, study-desk-and-home-office.md, shoe-cabinet-and-entry-storage.md, door-planing-and-adjustment.md, fire-rated-door-installation.md, window-handle-and-hinge-repair.md, sliding-window-roller-replacement.md, key-cutting-and-re-keying.md, emergency-lockout-landed-house.md, glass-office-partition.md, wall-mirror-installation.md
+  - MS → `blogs/ms/`: same filenames; independently localised Malay titles, metadata, body copy, FAQs, CTAs and Malay slugs.
+  - ZH → `blogs/zh/`: same filenames; independently localised Simplified Chinese content for Malaysian readers and pinyin slugs.
+Batch total: 45 blogs
+Production progress: 198 topic records × 3 languages; current unique corpus: 585 markdown files (195 EN / 195 MS / 195 ZH)
+Services done: 28/28 (100%) | Sub-services done: 103/112 | Problems: every live indexable slug covered
+Remaining required coverage under the existing tracker denominator: 9 sub-services
+
+## BATCH 14 NOTES / ISSUES
+- Frontmatter: all 45 files follow the existing YAML schema and include route-canonical `service` and `subService`, `status: Done`, `batch: 14`, verified cover assets and language-specific public slugs.
+- Search intent and cannibalisation: every article is scoped to the exact sub-service. Gutter cleaning distinguishes debris removal from fall correction and corroded-section replacement; torch-on waterproofing does not claim to correct ponding or structural movement; cabinet refacing requires sound carcasses; door planing requires hinge/frame diagnosis first; fire-rated doors are treated as documented door-sets; window hardware articles separate operating hardware from seals and frame defects; re-keying is distinguished from duplication and replacement; glass partitions address safety, access and acoustic interfaces; mirror installation addresses backing compatibility and substrate support.
+- Pricing and warranties: published starting rates and parent-service warranty labels were copied from `config/services-data.ts`. Warranty wording is explicitly subject to the published scope and terms. No additional pricing, service coverage, certifications, awards, response times, guarantees or business history were invented.
+- Technical and safety boundaries: roof-height and open-flame controls, fire-door assembly compatibility, safe support for glazed sashes and mirrors, proof of authority for locksmith work, and emergency-services escalation for life safety are stated directly. No DIY instructions are provided for hazardous work.
+- Internal links: every article links only to its verified parent service and exact sub-service route in the matching locale. The corpus validator found zero broken or cross-locale links; the corpus now has 747 distinct internal targets.
+- Content sizing: English articles are approximately 798–829 words, with Malay and Chinese versions sized naturally for their languages. Each narrow intent uses a direct answer, suitability criteria, site checks, option comparison, work sequence, mistakes, quotation factors, safety/maintenance guidance, FAQs and a contextual CTA without adding unrelated sections.
+- Validation: `node scripts/validate-blog-markdown.mjs` scanned **585 files** (195 per language) and passed with **0 errors**. All Batch 14 metadata is within the validator's language-specific ranges; warnings shown by the whole-corpus run belong to older batches.
+- `git diff --check`: passed with no whitespace errors.
+- Build/lint/type-check: not run because `node_modules` is not installed in this environment. Batch 14 changes markdown production records and this tracker only; live blog wiring remains unchanged under the established production convention.
+- Manual review: none required for the 15 Batch 14 topics. The historical tracker denominator should still be reconciled against route-canonical frontmatter before the final sub-service batch because several older files use descriptive or legacy `subService` values even though their article intent already covers the live route.
+- **Next Priority (Batch 15):** continue the remaining unwritten sub-services in `services-data.ts` order after wall-mirror-installation. Reconcile older canonical coverage in the tracker first so only genuinely unwritten routes are selected and no duplicate article is created.
 
 ---
 
