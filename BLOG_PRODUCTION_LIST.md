@@ -12,13 +12,42 @@ LANGUAGES: English (EN), Malay (MS), Chinese (ZH) — 3 per item.
 - Problems: 43 (historic `problem-data.ts` denominator) / 65 live indexable slugs
 - TOTAL BLOG POSTS NEEDED: (28 + 112 + 43) × 3 = ~549
 
-## LIVE / PROGRESS STATUS (as of Batch 14)
-- Blog items completed through production (all 3 languages): 198 topic records × 3; current unique markdown corpus is 195 per language = 585 files (three earlier records were consolidated/overwritten under canonical topics in Batches 11–12)
+## LIVE / PROGRESS STATUS (as of Batch 15)
+- ✅ **PRODUCTION LIST COMPLETE:** 28/28 main services, 65/65 live indexable problem slugs, 112/112 route-canonical sub-services (verified by script reconciliation in Batch 15).
+- Blog items completed through production (all 3 languages): 209 topic records × 3; current unique markdown corpus is 206 per language = 618 files (three earlier records were consolidated/overwritten under canonical topics in Batches 11–12)
 - Live site blog wiring: Batch 4 topics (15 items) wired into config (blog-data-batch4.ts + blog-i18n.ts) and publishing on /blog, /ms/blog, /zh/bo-ke
-- Batches 1–3 and 5–14: markdown production records (not wired to live site, per existing convention)
+- Batches 1–3 and 5–15: markdown production records (not wired to live site, per existing convention)
 - Main services milestone: 28/28 (100% of all main service pillars complete!)
 - Problems milestone: every live indexable problem slug has article coverage (Batch 11)
 - Validation tooling: `node scripts/validate-blog-markdown.mjs` now validates the whole /blogs corpus (frontmatter, single H1, duplicate slugs/titles, coverImage on disk, meta lengths, and every in-article link against the real route universe). Run it after each batch.
+
+---
+
+## BATCH 15 COMPLETED (2026-08-15)
+- Priority applied: all 28 main services and every live indexable problem slug already had coverage, so this batch completes the remaining **Sub-Services**. Per the Batch 14 next-priority instruction, route-canonical reconciliation of every `subService` frontmatter value (legacy values slugify-normalised against `services-data.ts` routes) was executed first; it identified exactly **11 genuinely unwritten sub-service routes**, which were written in `services-data.ts` order after wall-mirror-installation. No topics were skipped, reordered, duplicated or invented.
+- **Frontmatter reconciliation performed (no duplicate articles created):** `painting/interior-house-painting` was covered by Batch 1's `interior-house-painting.md` but had no `subService` field — the canonical value was added in EN/MS/ZH. `lighting/pendant-and-chandelier-install` was covered by Batch 3's `pendant-chandelier-installation.md` under the descriptive legacy value `"Pendant & Chandelier Installation"` — normalised to the route slug in EN/MS/ZH. Both articles' published slugs, titles and content are unchanged.
+- **Batch size is 11 topics (33 files), deliberately not 15 (45 files):** the production list denominator is now exhausted — all services, all live problems and all sub-services have coverage. Writing four more topics would have required inventing topics or duplicating existing intents, both prohibited by the production rules. This closes the list exactly.
+- Sub-services completed (11): office-cleaning-small-office-1-500-sqft (cleaning), one-off-spring-clean (cleaning), post-illness-disinfection-clean (deep-cleaning), allergy-season-refresh (deep-cleaning), new-tiles-grout-haze-removal (post-renovation-cleaning), construction-debris-removal (post-renovation-cleaning), single-camera-add-on (cctv), cctv-system-health-check-and-relocation (cctv), autogate-motor-replacement-and-service (autogate), on-site-welding-repair (welding), staircase-stringer-fabrication (welding)
+- 11 items × 3 languages = 33 blogs
+- Files (EN → `blogs/en/`): office-cleaning-small-office.md, one-off-spring-clean.md, post-illness-disinfection-clean.md, allergy-season-refresh.md, new-tiles-grout-haze-removal.md, construction-debris-removal.md, single-camera-add-on.md, cctv-system-health-check-and-relocation.md, autogate-motor-replacement-and-service.md, on-site-welding-repair.md, staircase-stringer-fabrication.md
+  - MS → `blogs/ms/`: same filenames; independently localised Malay titles, metadata, body copy, FAQs, CTAs and Malay slugs.
+  - ZH → `blogs/zh/`: same filenames; independently localised Simplified Chinese content for Malaysian readers and pinyin slugs.
+Batch total: 33 blogs
+Production progress: 209 topic records × 3 languages; current unique corpus: 618 markdown files (206 EN / 206 MS / 206 ZH)
+Services done: 28/28 (100%) | Sub-services done: 112/112 (100%) | Problems: every live indexable slug covered
+Remaining required coverage under the existing tracker denominator: **0 — production list complete**
+
+## BATCH 15 NOTES / ISSUES
+- Frontmatter: all 33 files follow the existing YAML schema and include route-canonical `service` and `subService`, `status: Done`, `batch: 15`, verified cover assets (/hero-cleaning.svg, /hero-deep-cleaning.svg, /hero-post-renovation-cleaning.svg, /hero/home-services-cctv-kl.jpg, /hero-autogate.svg, /hero-welding.svg) and language-specific public slugs.
+- Search intent and cannibalisation scoping (each article opens with explicit differentiation and cross-links): office cleaning is recurring commercial maintenance vs one-off spring clean (single reset) vs deep clean (build-up/move-out); post-illness disinfection (germs) vs allergy refresh (dust mites/allergens) vs standard deep clean; grout haze (film on tile face) vs cement splatter (thick deposits) vs stained grout lines vs efflorescence (moisture symptom); debris removal (bulky waste out first) vs post-renovation clean (fine dust) vs construction-dust-returning problem page; single camera add-on vs health check vs new packages; autogate motor failure vs remote fault vs track/hinge obstruction; on-site weld repair vs replacement fabrication; mono vs double stringers.
+- Pricing and warranties: published starting rates and parent-service warranty labels copied from `config/services-data.ts` — office cleaning RM 320/visit, spring clean RM 420, disinfection RM 500, allergy refresh RM 480, grout haze RM 10/sq ft, debris RM 320, camera add-on RM 420, CCTV health check RM 220, autogate motor RM 950, on-site welding RM 280, staircase stringer RM 420/linear ft. Warranty strings quoted exactly (24-Hour Re-Clean, 7-Day Spot-Check, 12-Month Camera & Installation, 12-Month Motor & Installation, 12-Month Welding & Fabrication), explicitly subject to stated scope and terms. No pricing, certifications, awards, guarantees, response times, service areas or company history invented.
+- E-E-A-T safety boundaries: disinfection/allergy articles make no medical efficacy claims (household hygiene framing, doctor/MOH referral); grout haze article flags acid-on-natural-stone etching risk; debris article requires declaration of paint/solvents and lawful disposal; CCTV articles handle retention impact, privacy angles and inherited-system password security; autogate article insists on sensor re-test and diagnosis-before-parts; welding articles cover hot-work fire controls and the structural/engineer boundary for staircase stringers.
+- Internal links: every article links to its verified parent service and exact sub-service route in the matching locale, plus adjacent sub-service/problem routes; wired blogs linked where relevant (how-to-hire-honest-contractor-malaysia, cctv-installation-buying-guide-kl, auto-gate-installation-guide-malaysia with MS/ZH localised slugs) and the deep-cleaning cost estimator tool (EN/MS/ZH slugs). The corpus validator found zero broken or cross-locale links; the corpus now has 759 distinct internal targets.
+- Content sizing: EN articles 870–980 words; MS 817–989 words; ZH 2,098–2,379 body characters — within the narrow sub-service intent convention set by Batches 13–14, no filler. Every article uses direct answer, suitability criteria, pre-work checks, option comparison, work sequence, common mistakes, quotation factors, safety/maintenance, 3 FAQs and contextual CTA.
+- Validation: `node scripts/validate-blog-markdown.mjs` scanned **618 files** (206 per language) and passed with **0 errors**; no Batch 15 file carries a meta-length warning (script-verified). `git diff --check` passed.
+- Build/lint/type-check: dependencies installed this session (`npm ci`), enabling full checks this batch — `npm run type-check`, `npm run lint` and `npm run build` all passed (prebuild audits included). Markdown batch; no application code changed.
+- Manual review: none required. Historical denominator reconciled: the earlier "9 remaining" estimate pre-dated the route-canonical reconciliation; the true count was 11 unwritten routes + 2 legacy-frontmatter reconciliations.
+- **Next Priority: none — production list complete.** Future optional work: consider wiring later batches to the live blog config, monitor GSC for the flagged cannibalisation-watch pairs, and clean up the pre-existing Batches 1–6 meta-length warnings.
 
 ---
 

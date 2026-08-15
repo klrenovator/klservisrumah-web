@@ -11,6 +11,7 @@ coverImage: "/hero/home-services-painters-kl.jpg"
 metaTitle: "Interior House Painting in KL & Selangor"
 metaDesc: "Interior wall & ceiling painting across KL & Selangor using low-odour washable paint. Full masking, surface prep, two topcoats and clean handover. From RM 450/room."
 service: "painting"
+subService: "interior-house-painting"
 status: "Done"
 batch: 1
 ---

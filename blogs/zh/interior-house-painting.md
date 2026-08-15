@@ -11,6 +11,7 @@ coverImage: "/hero/home-services-painters-kl.jpg"
 metaTitle: "吉隆坡与雪兰莪室内房屋油漆"
 metaDesc: "在吉隆坡与雪兰莪使用低气味可水洗涂料进行室内墙面和天花板油漆。完整遮蔽、表面处理、两遍面漆、干净交付。每房RM 450起。"
 service: "painting"
+subService: "interior-house-painting"
 status: "Done"
 batch: 1
 ---

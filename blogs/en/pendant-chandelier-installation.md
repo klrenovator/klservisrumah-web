@@ -11,7 +11,7 @@ coverImage: "/hero/home-services-lighting-kl.jpg"
 metaTitle: "Pendant & Chandelier Installation Cost in KL & Selangor"
 metaDesc: "Pendant & chandelier installation in KL & Selangor from RM 180 — reinforced hooks, safety cables and clean wiring for heavy decorative fixtures."
 service: "lighting"
-subService: "Pendant & Chandelier Installation"
+subService: "pendant-and-chandelier-install"
 status: "Done"
 batch: 3
 ---

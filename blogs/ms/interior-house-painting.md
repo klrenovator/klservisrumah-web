@@ -11,6 +11,7 @@ coverImage: "/hero/home-services-painters-kl.jpg"
 metaTitle: "Pengecatan Dalaman Rumah di KL & Selangor"
 metaDesc: "Pengecatan dinding & siling dalaman di seluruh KL & Selangor menggunakan cat boleh cuci berbau rendah. Penyamaran penuh, persediaan permukaan, dua topcoat. Dari RM 450/bilik."
 service: "painting"
+subService: "interior-house-painting"
 status: "Done"
 batch: 1
 ---
