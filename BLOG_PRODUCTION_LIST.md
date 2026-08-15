@@ -1,5 +1,5 @@
 # Blog Production Master List — KL Servis Rumah
-Updated: 2026-08-14
+Updated: 2026-08-15
 
 REQUIREMENT: Every Main Service + Sub-Service + Problem must have 1 blog.
 LANGUAGES: English (EN), Malay (MS), Chinese (ZH) — 3 per item.
@@ -12,13 +12,39 @@ LANGUAGES: English (EN), Malay (MS), Chinese (ZH) — 3 per item.
 - Problems: 43 (historic `problem-data.ts` denominator) / 65 live indexable slugs
 - TOTAL BLOG POSTS NEEDED: (28 + 112 + 43) × 3 = ~549
 
-## LIVE / PROGRESS STATUS (as of Batch 12)
-- Blog items fully written (markdown, all 3 languages): 168 items × 3 = 504 files (Batches 1–12)
+## LIVE / PROGRESS STATUS (as of Batch 13)
+- Blog items completed through production (all 3 languages): 183 topic records × 3; current unique markdown corpus is 180 per language = 540 files (three earlier records were consolidated/overwritten under canonical topics in Batches 11–12)
 - Live site blog wiring: Batch 4 topics (15 items) wired into config (blog-data-batch4.ts + blog-i18n.ts) and publishing on /blog, /ms/blog, /zh/bo-ke
-- Batches 1–3, 5, 6, 7, 8, 9, 10, 11 and 12: markdown production records (not wired to live site, per existing convention)
+- Batches 1–3 and 5–13: markdown production records (not wired to live site, per existing convention)
 - Main services milestone: 28/28 (100% of all main service pillars complete!)
 - Problems milestone: every live indexable problem slug has article coverage (Batch 11)
 - Validation tooling: `node scripts/validate-blog-markdown.mjs` now validates the whole /blogs corpus (frontmatter, single H1, duplicate slugs/titles, coverImage on disk, meta lengths, and every in-article link against the real route universe). Run it after each batch.
+
+---
+
+## BATCH 13 COMPLETED (2026-08-15)
+- Priority applied: all 28 main services and all live problem slugs already have coverage, so this batch continues **Sub-Services** in the exact `services-data.ts` order stated by the Batch 12 next-priority note. No topics were skipped, reordered, duplicated or invented.
+- Sub-services completed (15): heat-pump-water-heater-install (water-heater), dc-motor-smart-fan-install (ceiling-fan), industrial-shoplot-fan-install (ceiling-fan), cove-and-strip-led-installation (lighting), smart-lighting-and-dimmer-retrofit (lighting), large-format-slab-tiling (tiling), tile-repair-and-re-grouting (tiling), cove-and-curved-ceiling (plaster-ceiling), ceiling-repair-and-re-skim (plaster-ceiling), crack-and-joint-repair (skim-coat), full-condo-re-skim-package (skim-coat), luxury-vinyl-plank-lvp-install (flooring), skirting-and-transition-strip-fitting (flooring), heavy-duty-mortar-screed (epoxy-flooring), epoxy-floor-repair-and-recoating (epoxy-flooring)
+- 15 items × 3 languages = 45 blogs
+- Files (EN → `blogs/en/`): heat-pump-water-heater-install.md, dc-motor-smart-fan-install.md, industrial-shoplot-fan-install.md, cove-and-strip-led-installation.md, smart-lighting-and-dimmer-retrofit.md, large-format-slab-tiling.md, tile-repair-and-re-grouting.md, cove-and-curved-ceiling.md, ceiling-repair-and-re-skim.md, crack-and-joint-repair.md, full-condo-re-skim-package.md, luxury-vinyl-plank-lvp-install.md, skirting-and-transition-strip-fitting.md, heavy-duty-mortar-screed.md, epoxy-floor-repair-and-recoating.md
+  - MS → `blogs/ms/`: same filenames; independent Malay titles, descriptions, body copy, FAQs, CTA and descriptive Malay slugs.
+  - ZH → `blogs/zh/`: same filenames; independent Simplified Chinese content for Malaysian readers and pinyin slugs.
+Batch total: 45 blogs
+Production progress: 183 topic records × 3 languages; current unique corpus: 540 markdown files (180 EN / 180 MS / 180 ZH)
+Services done: 28/28 (100%) | Sub-services done: 88/112 | Problems: every live indexable slug covered
+Remaining required coverage: 24 sub-services
+
+## BATCH 13 NOTES / ISSUES
+- Frontmatter: all 45 files use the existing YAML schema and carry `service`, route-canonical `subService`, `status: Done` and `batch: 13`. Filenames match across locales while public slugs are independently localised.
+- Search intent/cannibalisation: each article is scoped to its exact sub-service. Examples: heat-pump installation is separated from instant/storage heater intent; lighting-point wiring is separated from LED strip design and smart-control compatibility; tile re-grouting does not claim to solve waterproofing leaks; ceiling re-skimming explicitly requires an active leak or unsafe board to be repaired first; epoxy recoating requires delaminated/contaminated material and moisture causes to be addressed.
+- Pricing and warranties: all rates and warranty labels are copied from the corresponding published `services-data.ts` service/sub-service records. No extra prices, certifications, awards, history, response times, guarantees or service areas were invented.
+- Internal links: every article links only to the real parent and sub-service route in its own locale. Validator found zero broken or cross-locale links; route corpus now contains 735 distinct internal targets.
+- Cover images: only existing verified service assets were used: water-heater, ceiling-fan, lighting, tiling, plaster-ceiling, skim-coat, flooring and epoxy-flooring hero images.
+- Content sizing: EN articles are approximately 758–944 words; MS 687–825 words; Chinese 1,985–2,280 body characters. Narrow sub-service intent is answered directly, then supported with site checks, planning, workflow, comparisons, common mistakes, cost factors, safety boundaries, FAQs and a contextual CTA without padding.
+- Validation: `node scripts/validate-blog-markdown.mjs` scanned **540 files** and passed with **0 errors**. Batch 13 introduces no final metadata warning; older batches retain their previously recorded meta-length warnings.
+- Build/lint/type-check: not run because `node_modules` is not installed in this environment. The available markdown validator and `git diff --check` both pass; Batch 13 changes markdown and this tracker only, and live blog wiring remains unchanged under the established production convention.
+- Tracker reconciliation: the historical 549 estimate uses 43 problems, while production covered 65 live slugs and some canonical topics replaced older files. Therefore “549 produced records” does not mean all 112 sub-services are done; 24 sub-services still require coverage. The actual filesystem count is the validator-confirmed 540 unique files.
+- **Next Priority (Batch 14):** continue the next 15 unwritten sub-services in `services-data.ts` order: roof-repair/gutter-cleaning-and-realignment, roof-repair/full-torch-on-membrane-waterproofing, kitchen-cabinet/modular-kitchen-cabinet-10ft-l-shape, kitchen-cabinet/quartz-granite-countertop, kitchen-cabinet/kitchen-makeover-doors-and-hardware-only, carpentry/study-desk-and-home-office, carpentry/shoe-cabinet-and-entry-storage, door/door-planing-and-adjustment, door/fire-rated-door-installation, window-repair/window-handle-and-hinge-repair, window-repair/sliding-window-roller-replacement, locksmith/key-cutting-and-re-keying, locksmith/emergency-lockout-landed-house, glass-aluminium/glass-office-partition, glass-aluminium/wall-mirror-installation.
 
 ---
 
