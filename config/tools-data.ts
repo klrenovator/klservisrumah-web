@@ -2191,4 +2191,48 @@ export const toolsContent: Record<string, ToolContent> = {
 };
 
 
+// Intent-specific search descriptions for the compact calculator suite. These
+// replace the former one-line placeholders (for example, “Free door
+// installation cost calculator”) with the actual inputs and outputs each page
+// offers. The five deep diagnostic tools above already carry equivalent copy.
+const TOOL_META_DESCRIPTION_OVERRIDES: Record<string, string> = {
+  "paint-quantity-estimator": "Calculate paint litres for Malaysian rooms from wall dimensions, openings, number of coats and coverage. Includes a practical allowance before you buy.",
+  "wall-area-calculator": "Calculate wall area in square feet from room length, width and height, with doors and windows deducted. Useful for paint, skim coat and wallpaper planning.",
+  "ceiling-area-calculator": "Calculate ceiling area in square feet from room dimensions, then use the result to plan plaster ceiling, skim coat, painting or replacement quantities.",
+  "ceiling-replacement-cost": "Estimate ceiling replacement cost in KL & Selangor by area, board type, damage and access. Compare labour, materials and likely project range instantly.",
+  "pipe-leak-estimator": "Estimate pipe-leak repair cost from the leak location, severity, pipe access and affected fixtures. See likely urgency and a KL & Selangor price range.",
+  "water-pressure-troubleshooter": "Troubleshoot low or unstable water pressure by symptom, affected outlets, property type and water source. Get likely causes and the next practical check.",
+  "pipe-replacement-cost": "Estimate water-pipe replacement cost from pipe length, material, route and access. Review labour, materials and a practical KL & Selangor budget range.",
+  "waterproofing-cost-calculator": "Estimate waterproofing cost for a roof, bathroom, balcony or wall from area, system and condition. Compare scope and price range before requesting a quote.",
+  "roof-area-calculator": "Calculate approximate roof surface area from building length, width, roof type and slope factor. Use the result for coating, tile and repair planning.",
+  "bathroom-waterproofing-estimator": "Estimate bathroom waterproofing cost from floor area, leak symptoms and repair method. Compare no-hack treatment with full removal and reinstatement.",
+  "balcony-waterproofing-estimator": "Estimate balcony waterproofing cost from deck area, existing finish, leak signs and selected system. Includes likely preparation and reinstatement range.",
+  "electrical-installation-cost": "Estimate electrical installation cost by socket, lighting, appliance point and wiring quantity. Review point counts and a KL & Selangor budget range.",
+  "socket-quantity-calculator": "Plan how many power sockets a room may need from its use, size and appliance load. Organise general and dedicated points before discussing wiring work.",
+  "lighting-installation-calculator": "Estimate lighting installation quantity and cost from room size, fitting type and number of points. Compare downlights and other common lighting layouts.",
+  "ceiling-fan-installation-estimator": "Estimate ceiling-fan installation cost from fan quantity, ceiling type, point readiness and access. Identify when a new point or support may be needed.",
+  "handyman-cost-estimator": "Estimate handyman labour for mounting, repairs and odd jobs from task type, quantity, complexity and access. Build a clearer multi-task request before booking.",
+  "furniture-assembly-estimator": "Estimate furniture assembly cost by item type, size and quantity, including common flat-pack wardrobes, beds, desks and cabinets in KL & Selangor.",
+  "curtain-installation-calculator": "Estimate curtain track or rod installation from opening width, track type, quantity and wall or ceiling fixing. Plan fittings and labour before installation.",
+  "door-installation-cost": "Estimate door installation cost from door type, frame condition, hardware and quantity. Compare labour and material allowances for KL & Selangor homes.",
+  "window-replacement-estimator": "Estimate window replacement cost by opening size, frame system, glass choice and panel quantity. Review a practical supply-and-install budget range.",
+  "glass-replacement-calculator": "Estimate replacement glass area and cost from pane dimensions, glass type, thickness and quantity. Useful for windows, doors and fixed panels.",
+  "flooring-area-calculator": "Calculate floor area and material quantity from room dimensions, with an adjustable waste allowance for vinyl, SPC, laminate, tile or other flooring.",
+  "tile-quantity-calculator": "Calculate how many floor or wall tiles to buy from surface and tile dimensions, grout layout and waste allowance. Returns pieces, boxes and total area.",
+  "vinyl-flooring-cost-estimator": "Estimate vinyl or SPC flooring cost from floor area, material choice, substrate condition and skirting. See quantity, labour and budget range instantly.",
+  "roof-repair-estimator": "Estimate roof-repair cost from roof type, leak symptoms, affected area and access. Compare likely tile, flashing, ridge, gutter or coating scopes.",
+  "roof-replacement-cost": "Estimate full roof replacement cost from roof area, covering type, removal needs and access. Review material and labour allowances before a site assessment.",
+  "renovation-budget-calculator": "Plan a home-renovation budget from property size, room scope and finish level. See category allowances and a practical total range for KL & Selangor.",
+  "room-renovation-estimator": "Estimate a bedroom or living-room renovation from room size and selected painting, ceiling, flooring, electrical and carpentry work.",
+  "kitchen-renovation-estimator": "Estimate kitchen renovation cost from layout, cabinet length, worktop, fittings, electrical and plumbing scope. Build a clearer budget before design work.",
+  "bathroom-renovation-estimator": "Estimate bathroom renovation cost from size, demolition, waterproofing, tiles, sanitary fittings and plumbing. Compare selected scope and budget range.",
+  "deep-cleaning-cost-estimator": "Estimate deep-cleaning cost from property type, built-up area, condition and add-ons. Suitable for occupied homes needing a one-off detailed clean.",
+  "move-in-out-cleaning-calculator": "Estimate move-in or move-out cleaning from property size, furnishing, condition and add-ons. Plan a handover clean for KL & Selangor properties."
+};
+
+for (const [slug, description] of Object.entries(TOOL_META_DESCRIPTION_OVERRIDES)) {
+  if (!toolsContent[slug]) throw new Error(`Unknown tool metadata override: ${slug}`);
+  toolsContent[slug].metaDesc = description;
+}
+
 export const toolsList = Object.values(toolsContent);

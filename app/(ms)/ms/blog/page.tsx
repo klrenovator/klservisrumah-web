@@ -27,7 +27,8 @@ export default function MalayBlogHub() {
     .filter((x): x is TranslatedPost => x !== null);
 
   const featured = translatedPosts[0];
-  const rest = translatedPosts.slice(1);
+  const rest = translatedPosts.slice(1, 49);
+  const archive = translatedPosts.slice(49);
 
   return (
     <>
@@ -121,6 +122,18 @@ export default function MalayBlogHub() {
               </Link>
             ))}
           </div>
+
+          {archive.length > 0 && (
+            <section className="mx-auto mt-16 max-w-5xl rounded-3xl border border-slate-200 bg-slate-50 p-6 sm:p-8" aria-labelledby="arkib-artikel">
+              <h2 id="arkib-artikel" className="text-2xl font-extrabold text-[#075985]">Arkib artikel lengkap</h2>
+              <p className="mt-2 text-sm font-medium text-[#475569]">Layari semua panduan lain yang telah diterbitkan melalui senarai ringan ini.</p>
+              <div className="mt-6 grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-2">
+                {archive.map(({ original, ms }) => (
+                  <Link key={original.slug} href={`/ms/blog/${ms.slug}`} className="text-sm font-bold leading-6 text-[#075985] hover:text-[#0284C7]">{ms.title}</Link>
+                ))}
+              </div>
+            </section>
+          )}
         </div>
       </section>
 

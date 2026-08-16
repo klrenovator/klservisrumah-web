@@ -3044,5 +3044,16 @@ Hentikan bocor bumbung di punca dengan re-bedding dan re-pointing permatang prof
   }
 };
 
+// Append the independently authored Malay and Simplified Chinese copies from
+// the production article store. Keeping full bodies here is safe because every
+// browser-side consumer uses the lightweight generated blog index instead.
+import productionBlogRecords from "@/config/blog-production.generated.json" with { type: "json" };
+for (const record of productionBlogRecords) {
+  blogI18n[record.en.slug] = {
+    ms: record.ms as LocalizedBlogPost,
+    zh: record.zh as LocalizedBlogPost
+  };
+}
+
 export function getLocalizedBlogPost(englishSlug: string, locale: BlogLocale) { return blogI18n[englishSlug]?.[locale]; }
 export function localizedBlogPath(locale: BlogLocale, slug: string) { return locale === "ms" ? `/ms/blog/${slug}` : `/zh/bo-ke/${slug}`; }

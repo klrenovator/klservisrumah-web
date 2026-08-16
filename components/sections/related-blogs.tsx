@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { blogPosts } from "@/config/blog-data";
+import { relatedBlogIndex } from "@/config/blog-related-index";
 import { getRelatedBlogs } from "@/config/topical-authority-map";
 import { BookOpen, ArrowRight } from "lucide-react";
 import { useTranslations } from "@/hooks/use-translations";
@@ -22,7 +22,7 @@ export function RelatedBlogs({ serviceSlug, maxItems = 3 }: RelatedBlogsProps) {
   const t = useTranslations();
 
   const related = getRelatedBlogs(serviceSlug)
-    .map((slug) => blogPosts.find((p) => p.slug === slug))
+    .map((slug) => relatedBlogIndex.find((post) => post.slug === slug))
     .filter(Boolean)
     .slice(0, maxItems);
 

@@ -24,8 +24,8 @@ const DIRECTORY_COPY: Record<SupportedLang, {
 }> = {
   en: {
     eyebrow: "Complete FAQ Directory",
-    title: (count) => `Every question, answered — ${count.toLocaleString()}+ FAQs in one place`,
-    body: "We pulled every FAQ from every service, problem guide, coverage area, suburb, comparison and buying guide on this site into one searchable directory. Tap any question to expand it, or follow the link to read the full page it belongs to.",
+    title: (count) => `A fast directory to ${count.toLocaleString()}+ answers across the site`,
+    body: "Browse a concise selection from each topic, then follow the source link for the complete answer, local context, pricing tables and related booking guidance. Keeping the hub selective makes it much faster on mobile while every answer remains available on its relevant page.",
     questions: (n) => `${n} question${n === 1 ? "" : "s"}`,
     readMore: "Read more on",
     noMatches: "No matches in this topic.",
@@ -33,8 +33,8 @@ const DIRECTORY_COPY: Record<SupportedLang, {
   },
   ms: {
     eyebrow: "Direktori Soalan Lazim Lengkap",
-    title: (count) => `Setiap soalan, dijawab — ${count.toLocaleString()}+ soalan lazim di satu tempat`,
-    body: "Kami mengumpulkan setiap soalan lazim daripada setiap perkhidmatan, panduan masalah, kawasan liputan, pinggir bandar, perbandingan dan panduan pembelian di tapak ini ke dalam satu direktori yang boleh dicari. Ketik mana-mana soalan untuk mengembangkannya, atau ikuti pautan untuk membaca halaman penuh yang berkaitan.",
+    title: (count) => `Direktori pantas kepada ${count.toLocaleString()}+ jawapan di seluruh laman`,
+    body: "Lihat pilihan ringkas bagi setiap topik, kemudian ikuti pautan sumber untuk jawapan lengkap, konteks setempat, jadual harga dan panduan tempahan. Direktori terpilih ini lebih pantas pada telefon, manakala semua jawapan kekal pada halaman berkaitan.",
     questions: (n) => `${n} soalan`,
     readMore: "Baca lagi di",
     noMatches: "Tiada padanan dalam topik ini.",
@@ -42,8 +42,8 @@ const DIRECTORY_COPY: Record<SupportedLang, {
   },
   zh: {
     eyebrow: "完整常见问题目录",
-    title: (count) => `所有问题，逐一解答 — ${count.toLocaleString()}+ 个常见问题汇集一处`,
-    body: "我们将本站每个服务、问题指南、服务范围、郊区、对比和选购指南中的所有常见问题汇总到一个可搜索的目录中。点击任何问题即可展开，或点击链接前往其所属的完整页面。",
+    title: (count) => `快速查找全站 ${count.toLocaleString()}+ 个答案`,
+    body: "每个主题展示精简问题；点击来源链接可查看完整答案、本地背景、价格表和预约说明。精选目录可大幅加快手机加载速度，而所有答案仍保留在各自相关页面。",
     questions: (n) => `${n} 个问题`,
     readMore: "阅读更多：",
     noMatches: "该主题下没有匹配项。",
@@ -142,6 +142,7 @@ export function FaqDirectoryView({ categories, totalCount, lang = "en" }: { cate
         <div className="mt-14 flex flex-col gap-16">
           {categories.map((category) => {
             const localCat = catCopy[category.id];
+            const previewItems = category.items.slice(0, 8);
             return (
             <div key={category.id} id={`faq-${category.id}`} data-faq-category className="scroll-mt-24">
               <div className="mb-6 flex flex-col gap-2 border-b border-slate-100 pb-5">
@@ -158,7 +159,7 @@ export function FaqDirectoryView({ categories, totalCount, lang = "en" }: { cate
               </div>
 
               <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
-                {category.items.map((item, idx) => (
+                {previewItems.map((item, idx) => (
                   <details
                     key={`${category.id}-${idx}`}
                     data-faq-item

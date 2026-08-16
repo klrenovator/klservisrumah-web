@@ -3,45 +3,29 @@
 import { useEffect } from "react";
 import { useLang } from "@/context/lang-context";
 import { usePathname, useRouter } from "next/navigation";
-import { blogI18n, localizedBlogPath } from "@/config/blog-i18n";
+import { lightweightLocalizedBlogPath } from "@/lib/blog-paths";
 
 /**
- * Reverse-lookup map: English slug → blogI18n entry.
- * Built once at module scope so every render just does a fast object lookup.
+ * Redirects an English article to its localized URL when the visitor changes
+ * language. Slugs arrive from the server route, so article bodies and the full
+ * translation registry never enter this browser bundle.
  */
-const I18N_BY_EN_SLUG: Record<string, (typeof blogI18n)[string]> = {};
-for (const [enSlug, entry] of Object.entries(blogI18n)) {
-  I18N_BY_EN_SLUG[enSlug] = entry;
-}
-
-/**
- * When a visitor lands on the English blog post page (`/blog/<slug>`) but
- * their preferred language is Malay or Chinese, silently redirect them to
- * the fully-translated article at `/ms/blog/<ms-slug>` or `/zh/bo-ke/<zh-slug>`.
- *
- * Each article has a locale-specific slug, so we look it up from the
- * `blogI18n` registry. If no translation exists for the post, the visitor
- * stays on the English page (no-op).
- */
-export function BlogPostLocaleRedirect({ englishSlug }: { englishSlug: string }) {
+export function BlogPostLocaleRedirect({
+  localizedSlugs
+}: {
+  localizedSlugs: { ms?: string; zh?: string };
+}) {
   const { lang } = useLang();
   const pathname = usePathname();
   const router = useRouter();
 
   useEffect(() => {
     if (lang === "en") return;
-
-    const i18n = I18N_BY_EN_SLUG[englishSlug];
-    if (!i18n) return;
-
-    const localeEntry = i18n[lang as "ms" | "zh"];
-    if (!localeEntry) return;
-
-    const destination = localizedBlogPath(lang as "ms" | "zh", localeEntry.slug);
-    if (destination && destination !== pathname) {
-      router.replace(destination);
-    }
-  }, [lang, pathname, router, englishSlug]);
+    const slug = localizedSlugs[lang];
+    if (!slug) return;
+    const destination = lightweightLocalizedBlogPath(lang, slug);
+    if (destination !== pathname) router.replace(destination);
+  }, [lang, localizedSlugs, pathname, router]);
 
   return null;
 }

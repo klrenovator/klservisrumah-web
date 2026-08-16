@@ -10,6 +10,7 @@ import Link from "next/link";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { blogI18n, localizedBlogPath } from "@/config/blog-i18n";
 import { BlogPostLocaleRedirect } from "@/components/ui/blog-post-locale-redirect";
+import { BlogArticleBody } from "@/components/blog/blog-article-body";
 
 // Every valid param is enumerated in `generateStaticParams()`, so anything
 // else must 404 rather than be rendered on demand and cached as a 200
@@ -73,7 +74,10 @@ export default async function BlogPostSlugPage(props: { params: Promise<{ slug: 
     <>
       {/* Auto-redirect to the localised article URL when the visitor's
           preferred language is Malay or Chinese. */}
-      <BlogPostLocaleRedirect englishSlug={post.slug} />
+      <BlogPostLocaleRedirect localizedSlugs={{
+        ms: blogI18n[post.slug]?.ms?.slug,
+        zh: blogI18n[post.slug]?.zh?.slug
+      }} />
 
       <Breadcrumbs items={[
         { label: "Blog", href: "/blog" },
@@ -120,8 +124,8 @@ export default async function BlogPostSlugPage(props: { params: Promise<{ slug: 
               </div>
             </div>
 
-            <article className="prose max-w-none text-[#475569] leading-relaxed text-sm sm:text-base flex flex-col gap-6 font-medium whitespace-pre-line border-b border-slate-100 pb-12">
-              {post.content}
+            <article className="prose max-w-none text-[#475569] text-sm sm:text-base font-medium border-b border-slate-100 pb-12">
+              <BlogArticleBody content={post.content} />
             </article>
 
             <div className="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-100/80 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left mt-4">

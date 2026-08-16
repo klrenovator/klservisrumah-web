@@ -29,7 +29,10 @@ export default function BlogPage() {
 
   // Featured article (first post)
   const featuredPost = blogPosts[0];
-  const otherPosts = blogPosts.slice(1);
+  // Keep the visual grid focused and fast; older articles remain directly
+  // browsable in the compact archive below instead of rendering 223 large cards.
+  const otherPosts = blogPosts.slice(1, 49);
+  const archivePosts = blogPosts.slice(49);
 
   return (
     <>
@@ -184,6 +187,20 @@ export default function BlogPage() {
               </div>
             ))}
           </div>
+
+          {archivePosts.length > 0 && (
+            <section className="mx-auto mt-16 max-w-5xl rounded-3xl border border-slate-200 bg-slate-50 p-6 sm:p-8" aria-labelledby="article-archive">
+              <h2 id="article-archive" className="text-2xl font-extrabold text-[#075985]">Complete article archive</h2>
+              <p className="mt-2 text-sm font-medium text-[#475569]">Browse every remaining published guide in a lightweight list.</p>
+              <div className="mt-6 grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-2">
+                {archivePosts.map((post) => (
+                  <Link key={post.slug} href={`/blog/${post.slug}`} className="text-sm font-bold leading-6 text-[#075985] hover:text-[#0284C7]">
+                    {post.title}
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
 
         </div>
       </section>

@@ -5,7 +5,7 @@ import { suburbPages } from "@/config/suburb-data";
 import { areaPages } from "@/config/area-data";
 import { servicesData } from "@/config/services-data";
 import { getFAQSchema, getLocalBusinessServiceSchema } from "@/lib/seo";
-import { buildServiceBundle, buildServiceLinks, buildSuburbBundle } from "@/lib/location-bundles";
+import { buildServiceBundle, buildServiceLinks, buildSuburbBundle, buildSuburbServicePairBundle } from "@/lib/location-bundles";
 import { LocaleSuburbServiceView } from "@/components/sections/locale-suburb-service-view";
 
 // Every valid param is enumerated in `generateStaticParams()`, so anything
@@ -73,6 +73,7 @@ export default async function SuburbServicePage(props: { params: Promise<{ slug:
         }))}
         suburbBundle={buildSuburbBundle(suburb)}
         serviceBundle={buildServiceBundle(service)}
+        pairBundle={buildSuburbServicePairBundle(suburb, service)}
         otherServices={buildOtherServiceBundles(service.slug, suburb.slug)}
       />
     </>

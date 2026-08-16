@@ -1,10 +1,9 @@
 import { buildMetadata } from "@/lib/seo-meta";
 import { FAQAccordion } from "@/components/sections/faq-accordion";
 import { FaqHeroHeading } from "@/components/sections/faq-hero-heading";
-import { FaqSearchFilter } from "@/components/sections/faq-search-filter";
 import { FaqDirectoryView } from "@/components/sections/faq-directory-view";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { getSpeakableSchema, getFAQSchema } from "@/lib/seo";
+import { getSpeakableSchema } from "@/lib/seo";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
 import { Phone, MessageSquare } from "lucide-react";
@@ -50,17 +49,9 @@ export default function MalayFaqPage() {
 
       <FAQAccordion />
 
-      <section className="bg-slate-50 border-t border-slate-100 py-12 sm:py-14">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <FaqSearchFilter />
-        </div>
-      </section>
 
       <FaqDirectoryView categories={faqDirectory} totalCount={faqDirectoryTotalCount} lang="ms" />
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{
-        __html: JSON.stringify(getFAQSchema(faqDirectory.flatMap((c) => c.items.map((i) => ({ q: i.q, a: i.a })))))
-      }} />
 
       {/* Crawl path from this tree to the other three localized trees. */}
       <LocaleTreeLinks locale="ms" current="faq" />

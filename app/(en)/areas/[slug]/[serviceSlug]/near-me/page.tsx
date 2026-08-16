@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { areaPages } from "@/config/area-data";
 import { servicesData } from "@/config/services-data";
 import { getFAQSchema, getLocalBusinessServiceSchema } from "@/lib/seo";
-import { buildAreaBundle, buildServiceBundle } from "@/lib/location-bundles";
+import { buildAreaBundle, buildNearMePairBundle, buildServiceBundle } from "@/lib/location-bundles";
 import { LocaleNearMeView } from "@/components/sections/locale-near-me-view";
 
 // Every valid param is enumerated in `generateStaticParams()`, so anything
@@ -89,6 +89,7 @@ export default async function NearMePage(props: { params: Promise<{ slug: string
         landmarks={area.landmarks}
         areaBundle={buildAreaBundle(area)}
         serviceBundle={buildServiceBundle(service)}
+        pairBundle={buildNearMePairBundle(area, service)}
         relatedNearMe={relatedNearMe}
       />
     </>

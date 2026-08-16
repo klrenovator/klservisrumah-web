@@ -17,11 +17,14 @@
     "audit:topical-map": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/validate-topical-map.ts",
     "audit:specialty-locale": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/validate-specialty-locale.ts",
     "audit:problem-i18n": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/validate-problem-i18n.ts",
+    "audit:location-similarity": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types scripts/location-similarity-audit.ts",
     "gen:rates": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/generate-rate-book.ts",
     "gen:ai-context": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/generate-ai-context.ts",
     "gen:service-summary": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/generate-service-summary.ts",
-    "prebuild": "npm run gen:rates && npm run gen:ai-context && npm run gen:service-summary && npm run audit:topical-map && npm run audit:specialty-locale && npm run audit:i18n && npm run audit:problem-i18n && npm run test:estimators",
-    "predev": "npm run gen:rates && npm run gen:ai-context && npm run gen:service-summary",
+    "gen:blog-index": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/generate-blog-index.ts",
+    "validate:blogs": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/validate-blog-production.ts",
+    "prebuild": "npm run gen:rates && npm run gen:ai-context && npm run gen:service-summary && npm run gen:blog-index && npm run validate:blogs && npm run audit:topical-map && npm run audit:specialty-locale && npm run audit:i18n && npm run audit:problem-i18n && npm run test:estimators",
+    "predev": "npm run gen:rates && npm run gen:ai-context && npm run gen:service-summary && npm run gen:blog-index",
     "test:estimators": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/test-estimators.ts"
   },
   "dependencies": {

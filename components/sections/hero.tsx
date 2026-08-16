@@ -3,9 +3,8 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { siteConfig } from "@/config/site";
-import { serviceSummaryBySlug, serviceSummaryList } from "@/config/service-summary.generated";
+import { getLocalizedServiceNav, serviceNavBySlug, serviceNavList } from "@/config/service-nav.generated";
 import { ArrowRight, ShieldCheck, MessageSquare, Phone, Star } from "lucide-react";
-import { getLocalizedServiceSummary } from "@/lib/service-summary-i18n";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
@@ -79,13 +78,14 @@ function QuoteBox({
         </h2>
       </div>
 
-      <form onSubmit={onSubmit} className="flex flex-col gap-5">
+      <form onSubmit={onSubmit} data-lead-form={`hero-${variant}`} className="flex flex-col gap-5">
         <div className="flex flex-col gap-2">
           <label htmlFor={`${variant}-service`} className="text-xs font-extrabold text-[#075985] uppercase tracking-wider">
             {t("hero.serviceLabel")}
           </label>
           <select
             id={`${variant}-service`}
+            name="service"
             value={selectedService}
             onChange={(e) => onServiceChange(e.target.value)}
             required
@@ -94,8 +94,8 @@ function QuoteBox({
             <option value="" disabled className="text-[#475569]">
               {t("hero.selectService")}
             </option>
-            {serviceSummaryList.map((sourceService) => {
-              const service = getLocalizedServiceSummary(sourceService, lang);
+            {serviceNavList.map((sourceService) => {
+              const service = getLocalizedServiceNav(sourceService, lang);
               return (
                 <option key={service.slug} value={service.slug}>
                   {service.title} ({t("common.fromLabel")} {service.startPrice})
@@ -111,6 +111,7 @@ function QuoteBox({
           </label>
           <select
             id={`${variant}-area`}
+            name="area"
             value={selectedArea}
             onChange={(e) => onAreaChange(e.target.value)}
             required
@@ -153,8 +154,8 @@ export function Hero() {
   const handleBook = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const localizedSelectedService = selectedService
-      ? serviceSummaryBySlug[selectedService]
-        ? getLocalizedServiceSummary(serviceSummaryBySlug[selectedService], lang).title
+      ? serviceNavBySlug[selectedService]
+        ? getLocalizedServiceNav(serviceNavBySlug[selectedService], lang).title
         : t("common.bookService")
       : t("common.bookService");
     const waLink = getWhatsAppLink({ service: localizedSelectedService, location: selectedArea, lang });

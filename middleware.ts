@@ -44,6 +44,10 @@ const REAL_LOCALE_TREES = [
   "/zh/services",
   "/ms/problems",
   "/zh/problems",
+  "/ms/notis-privasi",
+  "/ms/terma",
+  "/zh/yin-si-sheng-ming",
+  "/zh/tiao-kuan",
 ] as const;
 
 const PROBLEM_REDIRECTS: Record<string, string> = Object.fromEntries(

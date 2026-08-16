@@ -27,7 +27,8 @@ export default function ChineseBlogHub() {
     .filter((x): x is TranslatedPost => x !== null);
 
   const featured = translatedPosts[0];
-  const rest = translatedPosts.slice(1);
+  const rest = translatedPosts.slice(1, 49);
+  const archive = translatedPosts.slice(49);
 
   return (
     <>
@@ -121,6 +122,18 @@ export default function ChineseBlogHub() {
               </Link>
             ))}
           </div>
+
+          {archive.length > 0 && (
+            <section className="mx-auto mt-16 max-w-5xl rounded-3xl border border-slate-200 bg-slate-50 p-6 sm:p-8" aria-labelledby="article-archive">
+              <h2 id="article-archive" className="text-2xl font-extrabold text-[#075985]">完整文章目录</h2>
+              <p className="mt-2 text-sm font-medium text-[#475569]">通过轻量列表浏览其余所有已发布指南。</p>
+              <div className="mt-6 grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-2">
+                {archive.map(({ original, zh }) => (
+                  <Link key={original.slug} href={`/zh/bo-ke/${zh.slug}`} className="text-sm font-bold leading-6 text-[#075985] hover:text-[#0284C7]">{zh.title}</Link>
+                ))}
+              </div>
+            </section>
+          )}
         </div>
       </section>
 

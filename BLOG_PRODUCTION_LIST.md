@@ -1,5 +1,5 @@
 # Blog Production Master List — KL Servis Rumah
-Updated: 2026-08-15
+Updated: 2026-08-16
 
 REQUIREMENT: Every Main Service + Sub-Service + Problem must have 1 blog.
 LANGUAGES: English (EN), Malay (MS), Chinese (ZH) — 3 per item.
@@ -15,11 +15,30 @@ LANGUAGES: English (EN), Malay (MS), Chinese (ZH) — 3 per item.
 ## LIVE / PROGRESS STATUS (as of Batch 15)
 - ✅ **PRODUCTION LIST COMPLETE:** 28/28 main services, 65/65 live indexable problem slugs, 112/112 route-canonical sub-services (verified by script reconciliation in Batch 15).
 - Blog items completed through production (all 3 languages): 209 topic records × 3; current unique markdown corpus is 206 per language = 618 files (three earlier records were consolidated/overwritten under canonical topics in Batches 11–12)
-- Live site blog wiring: Batch 4 topics (15 items) wired into config (blog-data-batch4.ts + blog-i18n.ts) and publishing on /blog, /ms/blog, /zh/bo-ke
-- Batches 1–3 and 5–15: markdown production records (not wired to live site, per existing convention)
+- ✅ Live site publication: all 224 configured topics now publish in independent EN/MS/ZH versions on `/blog`, `/ms/blog` and `/zh/bo-ke` (672 localized article routes). This includes every completed Batch 1–15 topic plus the original editorial set.
+- ✅ Source migration complete (2026-08-16): the 191 previously unwired topics were migrated into `config/blog-production.generated.json`; the 618 repository Markdown records were removed only after slug/locale parity, route generation, production validation and a full build passed.
 - Main services milestone: 28/28 (100% of all main service pillars complete!)
 - Problems milestone: every live indexable problem slug has article coverage (Batch 11)
-- Validation tooling: `node scripts/validate-blog-markdown.mjs` now validates the whole /blogs corpus (frontmatter, single H1, duplicate slugs/titles, coverImage on disk, meta lengths, and every in-article link against the real route universe). Run it after each batch.
+- Validation tooling: `npm run validate:blogs` validates the live 224-topic production registry (672 localized articles), uniqueness, required fields, heading safety, cover assets, metadata conventions and all internal article links against the real route universe.
+
+---
+
+## POST-PRODUCTION METADATA MAINTENANCE & SITE AUDIT (2026-08-16)
+- Corrected all **59 legacy metadata-length warnings** across **54 markdown files**: 16 EN, 27 MS and 11 ZH files. Only the affected `metaTitle` / `metaDesc` fields were changed; article slugs, H1s and body content were preserved.
+- `node scripts/validate-blog-markdown.mjs` now scans all **618 files** with **0 errors and 0 warnings**.
+- Resolved three additional duplicate live-site title pairs between Batch 4 blog records and their corresponding sub-service pages by giving the blog pages informational-guide titles. Public URLs remain unchanged.
+- Updated the transitive `nanoid` dependency from 3.3.17 to 3.3.18; `npm audit --omit=dev` now reports 0 vulnerabilities.
+- Full production build and rendered-corpus audit completed: 4,730 static pages generated; 4,722 rendered HTML pages checked; 3,683 self-canonical indexable URLs; 0 duplicate indexable titles/descriptions; 0 missing metadata; canonical, hreflang, robots, sitemap, JSON-LD parsing, internal HTML accessibility and link checks passed.
+- Full prioritized website audit and customer-acquisition recommendations recorded in `docs/FULL_WEBSITE_AUDIT_2026-08-16.md`.
+- Remaining blog production coverage: **0 topics**. Publication is also complete: the former 191-topic wiring gap is closed, all locale routes are included in production generation and sitemap output, and full article bodies remain outside browser bundles through lightweight generated slug/card indexes.
+
+## PUBLICATION MIGRATION RECORD (2026-08-16)
+- Published **191 additional topics × 3 locales = 573 new article routes**, bringing the live registry to **224 topics / 672 localized articles**.
+- Preserved native EN, Malaysian Malay and Simplified Chinese bodies, localized slugs, metadata, categories, dates, read times, authors and verified cover assets in the production data path.
+- Added a semantic, injection-free Markdown renderer for headings, lists, tables, links, emphasis and code; article bodies are server-rendered and excluded from browser-side indexes.
+- Added compact generated indexes: all 224 slugs for route validation and only 17 curated card records for client-side related-article sections.
+- Replaced the retired Markdown validator with `scripts/validate-blog-production.ts`; final validation reports 224 topics, 672 localized articles, 756 distinct internal targets and zero errors/warnings.
+- Confirmed all 206 source slugs per locale were represented by a live route or, for the 15 legacy Batch 4 English records, their already-published canonical article counterpart; then removed all 618 Markdown source files.
 
 ---
 

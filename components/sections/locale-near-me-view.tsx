@@ -5,9 +5,10 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { useLang } from "@/context/lang-context";
 import { useTranslations } from "@/hooks/use-translations";
-import type { AreaBundleEntry, LocaleMap, ServiceBundleEntry } from "@/lib/location-bundles";
+import type { AreaBundleEntry, LocaleMap, LocationPairBundleEntry, ServiceBundleEntry } from "@/lib/location-bundles";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
+import { LocationPairContent } from "@/components/sections/location-pair-content";
 
 type RelatedNearMe = {
   slug: string;
@@ -32,6 +33,7 @@ export function LocaleNearMeView({
   landmarks,
   areaBundle,
   serviceBundle,
+  pairBundle,
   relatedNearMe = []
 }: {
   areaSlug: string;
@@ -40,12 +42,14 @@ export function LocaleNearMeView({
   landmarks: string[];
   areaBundle: LocaleMap<AreaBundleEntry>;
   serviceBundle: LocaleMap<ServiceBundleEntry>;
+  pairBundle: LocaleMap<LocationPairBundleEntry>;
   relatedNearMe?: RelatedNearMe[];
 }) {
   const { lang } = useLang();
   const t = useTranslations();
   const area = areaBundle[lang] ?? areaBundle.en;
   const service = serviceBundle[lang] ?? serviceBundle.en;
+  const pairCopy = pairBundle[lang] ?? pairBundle.en;
 
   const heading = t("location.nearMeH1", {
     service: service.title,
@@ -103,6 +107,8 @@ export function LocaleNearMeView({
               {t("location.coverageAreas")}
             </Link>
           </div>
+
+          <LocationPairContent copy={pairCopy} />
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             {service.subServices.map((sub) => (

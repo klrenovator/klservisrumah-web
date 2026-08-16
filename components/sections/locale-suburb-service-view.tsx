@@ -5,9 +5,10 @@ import Link from "next/link";
 import { MapPin, MessageCircle } from "lucide-react";
 import { useLang } from "@/context/lang-context";
 import { useTranslations } from "@/hooks/use-translations";
-import type { LocaleMap, ServiceBundleEntry, ServiceLinkEntry, SuburbBundleEntry } from "@/lib/location-bundles";
+import type { LocaleMap, LocationPairBundleEntry, ServiceBundleEntry, ServiceLinkEntry, SuburbBundleEntry } from "@/lib/location-bundles";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
+import { LocationPairContent } from "@/components/sections/location-pair-content";
 
 export type NearbySuburbLink = { slug: string; name: string };
 
@@ -26,6 +27,7 @@ export function LocaleSuburbServiceView({
   nearby,
   suburbBundle,
   serviceBundle,
+  pairBundle,
   otherServices = []
 }: {
   suburbSlug: string;
@@ -36,12 +38,14 @@ export function LocaleSuburbServiceView({
   nearby: NearbySuburbLink[];
   suburbBundle: LocaleMap<SuburbBundleEntry>;
   serviceBundle: LocaleMap<ServiceBundleEntry>;
+  pairBundle: LocaleMap<LocationPairBundleEntry>;
   otherServices?: ServiceLinkEntry[];
 }) {
   const { lang } = useLang();
   const t = useTranslations();
   const suburb = suburbBundle[lang] ?? suburbBundle.en;
   const service = serviceBundle[lang] ?? serviceBundle.en;
+  const pairCopy = pairBundle[lang] ?? pairBundle.en;
 
   const faqs = [
     ...suburb.faqs.slice(0, 2),
@@ -95,6 +99,8 @@ export function LocaleSuburbServiceView({
                 ))}
               </div>
             </div>
+
+            <LocationPairContent copy={pairCopy} />
 
             <div className="rounded-3xl border border-slate-100 bg-white p-6 shadow-xs sm:p-8">
               <h2 className="text-2xl font-extrabold text-[#075985]">{t("location.pricingGuide")}</h2>
