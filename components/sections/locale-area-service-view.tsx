@@ -9,11 +9,13 @@ import type {
   AreaBundleEntry,
   LocaleMap,
   ServiceBundleEntry,
-  ServiceLinkEntry
+  ServiceLinkEntry,
+  LocationPairBundleEntry
 } from "@/lib/location-bundles";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { InternalLinkGrid } from "@/components/internal-link-grid";
+import { LocationPairContent } from "@/components/sections/location-pair-content";
 
 /**
  * LocaleAreaServiceView — client wrapper for `/areas/[slug]/[serviceSlug]`.
@@ -28,6 +30,7 @@ export function LocaleAreaServiceView({
   landmarks,
   areaBundle,
   serviceBundle,
+  pairBundle,
   relatedLinks
 }: {
   areaSlug: string;
@@ -36,12 +39,14 @@ export function LocaleAreaServiceView({
   landmarks: string[];
   areaBundle: LocaleMap<AreaBundleEntry>;
   serviceBundle: LocaleMap<ServiceBundleEntry>;
+  pairBundle: LocaleMap<LocationPairBundleEntry>;
   relatedLinks: ServiceLinkEntry[];
 }) {
   const { lang } = useLang();
   const t = useTranslations();
   const area = areaBundle[lang] ?? areaBundle.en;
   const service = serviceBundle[lang] ?? serviceBundle.en;
+  const pairCopy = pairBundle[lang] ?? pairBundle.en;
 
   const faqs = [
     {
@@ -121,6 +126,8 @@ export function LocaleAreaServiceView({
                 ))}
               </div>
             </div>
+
+            <LocationPairContent copy={pairCopy} />
 
             <div className="rounded-3xl border border-slate-100 bg-white p-6 shadow-xs sm:p-8">
               <h2 className="text-2xl font-extrabold text-[#075985]">

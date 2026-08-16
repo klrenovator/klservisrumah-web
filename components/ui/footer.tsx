@@ -3,14 +3,14 @@
 import React from "react";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
-import { serviceSummaryBySlug, serviceSummaryList } from "@/config/service-summary.generated";
+import { getLocalizedServiceNav, serviceNavBySlug, serviceNavList } from "@/config/service-nav.generated";
 import { Phone, Mail, MapPin, Clock, ShieldCheck, CheckCircle } from "lucide-react";
 import { Logo } from "@/components/ui/logo";
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
-import { getLocalizedServiceSummary } from "@/lib/service-summary-i18n";
 import { getLocalizedArea } from "@/lib/location-i18n";
 import { areaPages } from "@/config/area-data";
+import { OPEN_CONSENT_SETTINGS_EVENT } from "@/lib/consent";
 
 /**
  * Sitewide "Explore" links.
@@ -67,11 +67,18 @@ export function Footer() {
     lang === "ms" ? `/ms/services/${slug}` : lang === "zh" ? `/zh/services/${slug}` : `/services/${slug}`;
   const localizedServicesIndex =
     lang === "ms" ? "/ms/services" : lang === "zh" ? "/zh/services" : "/services";
+  const privacyPath = lang === "ms" ? "/ms/notis-privasi" : lang === "zh" ? "/zh/yin-si-sheng-ming" : "/privacy";
+  const termsPath = lang === "ms" ? "/ms/terma" : lang === "zh" ? "/zh/tiao-kuan" : "/terms";
+  const legalLabels = lang === "ms"
+    ? { privacy: "Notis Privasi", terms: "Terma", cookies: "Tetapan kuki" }
+    : lang === "zh"
+      ? { privacy: "隐私声明", terms: "使用条款", cookies: "Cookie 设置" }
+      : { privacy: "Privacy Notice", terms: "Terms", cookies: "Cookie settings" };
 
   // Top services for footer (limited to 8 for cleaner layout)
-  const topServices = serviceSummaryList
+  const topServices = serviceNavList
     .slice(0, 8)
-    .map((source) => getLocalizedServiceSummary(source, lang));
+    .map((source) => getLocalizedServiceNav(source, lang));
 
   // Curated top areas for footer — mirrors KLRenovator area-linking density
   // and pushes internal-link equity from every page to the most valuable
@@ -160,9 +167,9 @@ export function Footer() {
             <p className="text-[10px] font-black uppercase tracking-widest text-sky-600 mb-2">{t("nav.pricing")}</p>
             <ul className="space-y-1.5">
               <li><Link href="/pricing" className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("pricing.pageTitle")}</Link></li>
-              <li><Link href={localizedServicePath("painting")} className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("footer.priceGuide", { service: getLocalizedServiceSummary(serviceSummaryBySlug.painting, lang).title })}</Link></li>
-              <li><Link href={localizedServicePath("plumbing")} className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("footer.priceGuide", { service: getLocalizedServiceSummary(serviceSummaryBySlug.plumbing, lang).title })}</Link></li>
-              <li><Link href={localizedServicePath("waterproofing")} className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("footer.priceGuide", { service: getLocalizedServiceSummary(serviceSummaryBySlug.waterproofing, lang).title })}</Link></li>
+              <li><Link href={localizedServicePath("painting")} className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("footer.priceGuide", { service: getLocalizedServiceNav(serviceNavBySlug.painting, lang).title })}</Link></li>
+              <li><Link href={localizedServicePath("plumbing")} className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("footer.priceGuide", { service: getLocalizedServiceNav(serviceNavBySlug.plumbing, lang).title })}</Link></li>
+              <li><Link href={localizedServicePath("waterproofing")} className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("footer.priceGuide", { service: getLocalizedServiceNav(serviceNavBySlug.waterproofing, lang).title })}</Link></li>
             </ul>
           </div>
 
@@ -219,11 +226,18 @@ export function Footer() {
         <p className="text-xs text-slate-500">
           {t("footer.copyright", { year })}
         </p>
-        <div className="flex gap-6 text-xs text-slate-500">
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-slate-500">
           <Link href="/about" className="hover:text-sky-600 transition-colors font-medium">{t("nav.about")}</Link>
           <Link href="/contact" className="hover:text-sky-600 transition-colors font-medium">{t("common.bookService")}</Link>
-          <Link href="/faq" className="hover:text-sky-600 transition-colors font-medium">{t("nav.faq")}</Link>
-          <Link href="/pricing" className="hover:text-sky-600 transition-colors font-medium">{t("nav.pricing")}</Link>
+          <Link href={privacyPath} className="hover:text-sky-600 transition-colors font-medium">{legalLabels.privacy}</Link>
+          <Link href={termsPath} className="hover:text-sky-600 transition-colors font-medium">{legalLabels.terms}</Link>
+          <button
+            type="button"
+            onClick={() => window.dispatchEvent(new Event(OPEN_CONSENT_SETTINGS_EVENT))}
+            className="font-medium hover:text-sky-600 transition-colors"
+          >
+            {legalLabels.cookies}
+          </button>
         </div>
       </div>
     </footer>

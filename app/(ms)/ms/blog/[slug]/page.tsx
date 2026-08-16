@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Calendar, User, Clock, MessageSquare, ArrowLeft } from "lucide-react";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { LocaleTreeLinks } from "@/components/sections/locale-tree-links";
+import { BlogArticleBody } from "@/components/blog/blog-article-body";
 
 export const dynamicParams = false;
 export async function generateStaticParams() {
@@ -53,26 +54,6 @@ export default async function MalayArticle({ params }: { params: Promise<{ slug:
     localizedPosts[(currentIndex + offset + 1) % localizedPosts.length]
   ));
 
-  // Render markdown-like content
-  const contentHtml = post.content
-    .split("\n\n")
-    .map((block) => {
-      const trimmed = block.trim();
-      if (!trimmed) return "";
-      // `###` is the only heading level used anywhere in the localized article
-      // bodies (verified: zero `##` and zero `####` markers in blog-i18n.ts), so
-      // these ARE the article's top-level sections. Emitting them as <h3> put an
-      // h1 -> h3 skip in every one of the 36 MS/ZH articles, which breaks the
-      // WCAG 1.3.1 heading hierarchy and weakens section extraction for AI
-      // answer engines. Rendering them as <h2> is the semantically correct
-      // level; the visual size is unchanged.
-      if (trimmed.startsWith("### ")) return `<h2 class="text-xl font-extrabold text-[#075985] mt-8 mb-3">${trimmed.slice(4)}</h2>`;
-      if (trimmed.startsWith("---")) return `<hr class="border-slate-200 my-8" />`;
-      if (trimmed.startsWith("* ")) return `<ul class="list-disc pl-6 space-y-1 my-3">${trimmed.split("\n").map(l => `<li class="text-slate-600">${l.slice(2).replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\*(.*?)\*/g, '<em>$1</em>')}</li>`).join("")}</ul>`;
-      return `<p class="text-base text-slate-600 leading-relaxed my-3">${trimmed.replace(/\*\*(.*?)\*\*/g, '<strong class="text-[#075985]">$1</strong>').replace(/\*(.*?)\*/g, '<em>$1</em>')}</p>`;
-    })
-    .join("\n");
-
   return (
     <>
       <nav aria-label="Laluan navigasi" className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-8 text-sm">
@@ -105,7 +86,7 @@ export default async function MalayArticle({ params }: { params: Promise<{ slug:
             <div className="flex items-center gap-1"><Calendar className="w-4 h-4 text-[#0EA5E9]" /><span>{original.date}</span></div>
             <div className="flex items-center gap-1"><Clock className="w-4 h-4 text-[#0EA5E9]" /><span>{original.readTime}</span></div>
           </div>
-          <div className="mt-8 prose-article" dangerouslySetInnerHTML={{ __html: contentHtml }} />
+          <div className="mt-8 prose-article"><BlogArticleBody content={post.content} /></div>
           <section className="mt-12" aria-labelledby="related-articles">
             <h2 id="related-articles" className="text-2xl font-extrabold text-[#075985]">Artikel lain untuk anda</h2>
             <p className="mt-2 text-sm font-semibold text-[#475569]">Terokai lebih banyak panduan rumah daripada pasukan KL Servis Rumah.</p>

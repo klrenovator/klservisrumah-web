@@ -1,3 +1,5 @@
+import { ANALYTICS_CONSENT_KEY } from "@/lib/consent";
+
 type AnalyticsEvent = {
   action: string;
   category?: string;
@@ -13,12 +15,39 @@ declare global {
   }
 }
 
+const recentEvents = new Map<string, number>();
+
 export function trackEvent({ action, category = "engagement", label, value, params = {} }: AnalyticsEvent) {
   if (typeof window === "undefined") return;
+  try {
+    if (window.localStorage.getItem(ANALYTICS_CONSENT_KEY) !== "granted") return;
+  } catch {
+    // Hardened browsers may block localStorage. Fail closed: no analytics.
+    return;
+  }
+
+  // Delegated tracking and a component's explicit handler can observe the same
+  // click. Suppress the second signal so one lead action is counted once.
+  const signature = `${action}:${window.location.pathname}`;
+  const now = Date.now();
+  const previous = recentEvents.get(signature) ?? 0;
+  if (now - previous < 750) return;
+  recentEvents.set(signature, now);
+  for (const [key, timestamp] of recentEvents) {
+    if (now - timestamp > 10_000) recentEvents.delete(key);
+  }
+
+  const eventParams = Object.fromEntries(
+    Object.entries({ event_category: category, event_label: label, value, ...params })
+      .filter(([, eventValue]) => eventValue !== undefined)
+  );
   window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({ event: action, event_category: category, event_label: label, value, ...params });
   if (typeof window.gtag === "function") {
-    window.gtag("event", action, { event_category: category, event_label: label, value, ...params });
+    window.gtag("event", action, eventParams);
+  } else {
+    // Consent is already granted but gtag may still be loading. Queue the
+    // command in the same dataLayer consumed by gtag.js once ready.
+    window.dataLayer.push(["event", action, eventParams]);
   }
 }
 
@@ -31,7 +60,30 @@ export function trackPhoneCall(context?: Record<string, string | undefined>) {
 }
 
 export function trackFormSubmit(context?: Record<string, string | undefined>) {
-  trackEvent({ action: "form_submit", category: "lead", label: context?.service || "booking", params: context });
+  trackEvent({ action: "form_submit", category: "lead", label: context?.service || context?.page || "booking", params: context });
+}
+
+export function trackEmailClick(context?: Record<string, string | undefined>) {
+  trackEvent({ action: "email_click", category: "lead", label: context?.page || "general", params: context });
+}
+
+export function trackSocialClick(context?: Record<string, string | undefined>) {
+  trackEvent({ action: "social_click", category: "outbound", label: context?.network || "social", params: context });
+}
+
+export function trackWebVitalMetric(metric: { name: string; value: number; rating: string; id: string }) {
+  trackEvent({
+    action: "web_vital",
+    category: "performance",
+    label: metric.name,
+    value: Math.round(metric.name === "CLS" ? metric.value * 1000 : metric.value),
+    params: {
+      metric_id: metric.id,
+      metric_name: metric.name,
+      metric_rating: metric.rating,
+      metric_value: metric.value
+    }
+  });
 }
 
 // ── Smart Service Finder Analytics ────────────────────────────────────────────

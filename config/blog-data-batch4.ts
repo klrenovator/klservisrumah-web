@@ -528,11 +528,11 @@ Give your garage, balcony, or commercial space a tough, seamless, easy-to-clean 
   }),
   post({
     slug: "self-levelling-epoxy-floor-kl",
-    title: "Self-Levelling Epoxy Floor in KL & Selangor",
+    title: "How Self-Levelling Epoxy Floors Work in KL Homes",
     excerpt: "A smooth, seamless, self-levelling epoxy floor installed across KL & Selangor — ideal for garages, offices, balconies and showrooms, from RM 22 per sq ft.",
     category: "Flooring",
     coverImage: "/hero-epoxy-flooring.svg",
-    metaTitle: "Self-Levelling Epoxy Floor in KL & Selangor",
+    metaTitle: "Self-Levelling Epoxy Flooring Guide for KL Homes",
     metaDesc: "A smooth, seamless, self-levelling epoxy floor installed in KL & Selangor — ideal for garages, offices, balconies and showrooms. From RM 22 per sq ft.",
     content: `
 A self-levelling epoxy floor is a smooth, seamless, and durable flooring system that spreads to create a flat, even surface. It is a popular choice for garages, car porches, offices, balconies, and showrooms across Kuala Lumpur and Selangor. KL Servis Rumah provides professional self-levelling epoxy flooring, from RM 22 per sq ft.
@@ -574,11 +574,11 @@ Give your garage, office, or balcony a smooth, seamless, durable floor. WhatsApp
   }),
   post({
     slug: "flake-quartz-broadcast-epoxy-kl",
-    title: "Flake / Quartz Broadcast Epoxy in KL & Selangor",
+    title: "Flake vs Quartz Broadcast Epoxy: Which Finish Fits?",
     excerpt: "A decorative, slip-resistant flake or quartz broadcast epoxy floor installed across KL & Selangor — ideal for garages, balconies and high-traffic areas, from RM 26 per sq ft.",
     category: "Flooring",
     coverImage: "/hero-epoxy-flooring.svg",
-    metaTitle: "Flake / Quartz Broadcast Epoxy in KL & Selangor",
+    metaTitle: "Flake vs Quartz Epoxy Flooring Guide for KL Homes",
     metaDesc: "A decorative, slip-resistant flake or quartz broadcast epoxy floor installed in KL & Selangor — ideal for garages, balconies and high-traffic areas. From RM 26 per sq ft.",
     content: `
 A flake or quartz broadcast epoxy floor combines durability with a decorative, slip-resistant finish. It is an excellent choice for garages, car porches, balconies, and high-traffic areas across Kuala Lumpur and Selangor. KL Servis Rumah provides professional flake and quartz broadcast epoxy flooring, from RM 26 per sq ft.
@@ -726,11 +726,11 @@ If your roof is leaking, a proper diagnosis finds the source and a targeted repa
   }),
   post({
     slug: "ridge-re-bedding-re-pointing-kl",
-    title: "Ridge Re-Bedding & Re-Pointing in KL & Selangor",
+    title: "When Does a Roof Ridge Need Re-Bedding or Re-Pointing?",
     excerpt: "Reseal cracked or loose roof ridge tiles to stop leaks across KL & Selangor — professional ridge re-bedding and re-pointing, from RM 22 per linier ft.",
     category: "Roof Repair",
     coverImage: "/hero-roof-repair.svg",
-    metaTitle: "Ridge Re-Bedding & Re-Pointing in KL & Selangor",
+    metaTitle: "Roof Ridge Re-Bedding Guide for KL & Selangor",
     metaDesc: "Reseal cracked or loose roof ridge tiles to stop leaks in KL & Selangor — professional ridge re-bedding and re-pointing. From RM 22 per linier ft.",
     content: `
 The ridge is the highest point of your roof — and one of the most common places for leaks to start. When the mortar between ridge tiles cracks or washes away, water can enter. Ridge re-bedding and re-pointing reseals the ridge to stop leaks. KL Servis Rumah provides this service across Kuala Lumpur and Selangor, from RM 22 per linier ft.

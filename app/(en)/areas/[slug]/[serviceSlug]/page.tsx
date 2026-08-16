@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { areaPages } from "@/config/area-data";
 import { servicesData } from "@/config/services-data";
 import { getFAQSchema, getLocalBusinessServiceSchema } from "@/lib/seo";
-import { buildAreaBundle, buildServiceBundle, buildServiceLinks } from "@/lib/location-bundles";
+import { buildAreaBundle, buildAreaServicePairBundle, buildServiceBundle, buildServiceLinks } from "@/lib/location-bundles";
 import { LocaleAreaServiceView } from "@/components/sections/locale-area-service-view";
 
 // Every valid param is enumerated in `generateStaticParams()`, so anything
@@ -57,6 +57,7 @@ export default async function AreaServicePage(props: { params: Promise<{ slug: s
         landmarks={area.landmarks}
         areaBundle={buildAreaBundle(area)}
         serviceBundle={buildServiceBundle(service)}
+        pairBundle={buildAreaServicePairBundle(area, service)}
         relatedLinks={buildServiceLinks(
           Object.values(servicesData).filter((item) => item.slug !== service.slug),
           (item) => `/areas/${area.slug}/${item.slug}`

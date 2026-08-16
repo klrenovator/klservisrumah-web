@@ -24,7 +24,7 @@
 
 import { servicesData } from "@/config/services-data";
 import { problemPages } from "@/config/problem-data";
-import { blogPosts } from "@/config/blog-data";
+import publishedBlogSlugs from "@/config/blog-slugs.generated.json" with { type: "json" };
 import { slugify } from "@/lib/utils";
 
 export type SpecialtySilo = {
@@ -641,7 +641,7 @@ export function getSpecialtySilo(slug: string, specialtySlug: string): Specialty
 
 const VALID_SERVICES = new Set(Object.keys(servicesData));
 const VALID_PROBLEMS = new Set(problemPages.map((p) => p.slug));
-const VALID_BLOGS = new Set(blogPosts.map((b) => b.slug));
+const VALID_BLOGS = new Set(publishedBlogSlugs);
 
 /** Valid specialty slugs per service, keyed by service slug. */
 const VALID_SPECIALTIES: Record<string, Set<string>> = Object.fromEntries(

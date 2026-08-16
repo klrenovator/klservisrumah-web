@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronDown, Phone } from "lucide-react";
 import { siteConfig } from "@/config/site";
-import { serviceSummaryList } from "@/config/service-summary.generated";
+import { getLocalizedServiceNav, serviceNavList } from "@/config/service-nav.generated";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { trackWhatsAppClick } from "@/lib/analytics";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
@@ -13,7 +13,6 @@ import { AllPagesMenu } from "@/components/ui/all-pages-menu";
 import { Logo } from "@/components/ui/logo";
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
-import { getLocalizedServiceSummary } from "@/lib/service-summary-i18n";
 
 const PRIMARY_LINKS = [
   { href: "/", key: "nav.home" },
@@ -113,7 +112,7 @@ export function Navbar() {
           <button type="button" onClick={() => setServicesOpen(value => !value)} className={`relative inline-flex items-center gap-1 px-3 py-2 text-xs font-black uppercase tracking-widest transition-colors ${isServices ? "text-[#0284C7]" : "text-slate-900 hover:text-[#0284C7]"}`} aria-expanded={servicesOpen}>{t("nav.services")}<ChevronDown className={`h-3.5 w-3.5 transition-transform ${servicesOpen ? "rotate-180" : ""}`} />{isServices && <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#0284C7]" />}</button>
           {servicesOpen && <div className="absolute left-0 top-full mt-2 w-[620px] rounded-2xl border border-slate-100 bg-white p-3 shadow-[0_18px_50px_rgba(2,31,68,0.15)] animate-in fade-in zoom-in-95 duration-150 transform-gpu">
             <div className="mb-2 flex items-center justify-between px-2"><span className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-400">{t("menu.services")}</span><Link href="/services" className="text-xs font-bold text-[#0284C7] hover:text-[#075985]">{t("common.viewAll")}</Link></div>
-            <div className="grid grid-cols-2 gap-1">{serviceSummaryList.map(source => { const service = getLocalizedServiceSummary(source, lang); return <Link key={service.slug} href={`/services/${service.slug}`} className="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-sky-50 hover:text-[#0284C7]">{service.title}</Link>; })}</div>
+            <div className="grid grid-cols-2 gap-1">{serviceNavList.map(source => { const service = getLocalizedServiceNav(source, lang); return <Link key={service.slug} href={`/services/${service.slug}`} className="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-sky-50 hover:text-[#0284C7]">{service.title}</Link>; })}</div>
           </div>}
         </div>
         {PRIMARY_LINKS.slice(1).map(item => <NavLink key={item.href} href={item.href} active={pathname === item.href || pathname.startsWith(`${item.href}/`)} label={t(item.key)} />)}

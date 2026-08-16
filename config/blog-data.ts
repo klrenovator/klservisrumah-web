@@ -167,11 +167,17 @@ If your plaster ceiling is showing damp spots, don't wait for it to collapse and
   }
 ];
 
-// Extra long-form blog posts (kept in a separate file for readability).
-// Appended to `blogPosts` so downstream imports remain a single source of truth.
+// Extra long-form blog posts (kept in separate files for readability).
+// The generated production store safely preserves the 191 completed topics
+// migrated from the retired Markdown authoring directory on 2026-08-16.
 import { extraBlogPosts } from "@/config/blog-data-extra";
 import { batch4BlogPosts } from "@/config/blog-data-batch4";
-(blogPosts as BlogPost[]).push(...extraBlogPosts, ...batch4BlogPosts);
+import productionBlogRecords from "@/config/blog-production.generated.json" with { type: "json" };
+(blogPosts as BlogPost[]).push(
+  ...extraBlogPosts,
+  ...batch4BlogPosts,
+  ...(productionBlogRecords.map((record) => record.en) as BlogPost[])
+);
 
 export const blogCategories = [
   "All",

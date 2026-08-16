@@ -9,6 +9,8 @@ import { WebVitalsReporter } from "@/components/web-vitals-reporter";
 import { ErrorReporter } from "@/components/error-reporter";
 import { ServiceWorkerRegister } from "@/components/service-worker-register";
 import { GoogleAnalytics } from "@/components/analytics/google-analytics";
+import { ConversionTracker } from "@/components/analytics/conversion-tracker";
+import { CookieConsent } from "@/components/analytics/cookie-consent";
 import { DeferredWidgets } from "@/components/deferred-widgets";
 import { SkipToContentLink } from "@/components/ui/skip-to-content";
 
@@ -38,6 +40,7 @@ export function SiteChrome({
     <>
       <Providers initialLang={initialLang} initialMessages={initialMessages}>
         <GoogleAnalytics />
+        <ConversionTracker />
         <WebVitalsReporter />
         <ErrorReporter />
         <ServiceWorkerRegister />
@@ -49,6 +52,7 @@ export function SiteChrome({
         <Footer />
         <WhatsAppButton />
         <StickyMobileWhatsAppBar />
+        <CookieConsent />
         <DeferredWidgets />
       </Providers>
     </>

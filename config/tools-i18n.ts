@@ -4337,7 +4337,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
     breadcrumbLabel: "Free Tools",
     metaTitle: "Free Home Service Estimators KL & Selangor",
     metaDesc:
-      "Five free interactive estimators for painting, leak triage, ceiling repair, plumbing and TV mounting. Instant costs from our published 2026 KL & Selangor rates.",
+      "Use 37 free home-service calculators for painting, leaks, ceilings, plumbing, electrical, roofing, flooring, renovation and cleaning across KL & Selangor.",
     keywords: [
       "home service cost calculator Malaysia",
       "painting cost calculator KL",
@@ -4372,7 +4372,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
     hubFaqs: [
       {
         q: "Are these estimators really free?",
-        a: "Yes. All five estimators are free, need no sign-up and no email address. You only share your details if you decide to book on WhatsApp at the end."
+        a: "Yes. All 37 estimators are free, need no sign-up and no email address. You only share your details if you decide to book on WhatsApp at the end."
       },
       {
         q: "Where do the prices come from?",
@@ -4403,7 +4403,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
     minutesBadge: (minutes) => `${minutes} min`,
     graphCollectionName: "Free Home Service Estimators — KL & Selangor",
     graphCollectionDescription:
-      "Five free interactive cost estimators for painting, water leak triage, ceiling repair, plumbing diagnostics and TV mounting in Kuala Lumpur and Selangor.",
+      "A collection of 37 free calculators for home-service quantities, diagnosis and cost planning across Kuala Lumpur and Selangor.",
     graphItemListName: "Free home service estimators",
     homeLabel: "Home",
     navAriaLabel: "Breadcrumb",
@@ -4415,7 +4415,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
     breadcrumbLabel: "Alat Percuma",
     metaTitle: "Alat Anggaran Rumah Percuma KL & Selangor",
     metaDesc:
-      "Lima alat anggaran interaktif percuma untuk mengecat, trias kebocoran, baik pulih siling, paip dan pemasangan TV. Kos serta-merta daripada kadar 2026 KL & Selangor kami yang diterbitkan.",
+      "Gunakan 37 kalkulator perkhidmatan rumah percuma untuk cat, bocor, siling, paip, elektrik, bumbung, lantai, renovasi dan pembersihan di KL & Selangor.",
     keywords: [
       "kalkulator kos perkhidmatan rumah Malaysia",
       "kalkulator kos mengecat KL",
@@ -4435,7 +4435,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
     directEyebrow: "Jawapan Ringkas · Direct Answer · 直接答案",
     directQuestion: "Apa yang boleh saya anggarkan secara percuma di halaman ini?",
     directAnswer:
-      "KL Servis Rumah menerbitkan lima alat anggaran interaktif percuma untuk Kuala Lumpur dan Selangor: kalkulator kos mengecat merangkumi skop dalaman, luaran, kerja kayu dan seluruh hartanah; alat trias kebocoran air yang mendiagnosis punca dan kecemasan yang mungkin; alat anggaran baik pulih dan pemasangan siling; diagnostik paip yang memadankan gejala dengan punca; dan penasihat pemasangan TV yang mencadangkan braket dan anchor yang betul untuk dinding anda. Setiap satu mengembalikan kos anggaran, julat anggaran, masa diperlukan, perkhidmatan disyorkan dan tambahan dicadangkan — semuanya dikira daripada kadar 2026 yang diterbitkan di laman web ini.",
+      "KL Servis Rumah menerbitkan 37 alat percuma untuk perancangan cat, kebocoran, siling, paip, kalis air, elektrik, bumbung, handyman, pintu dan tingkap, lantai, renovasi serta pembersihan di Kuala Lumpur dan Selangor. Ada alat yang mengira keluasan atau kuantiti, ada yang menyusun gejala, dan ada yang menganggarkan kos daripada kadar diterbitkan. Keputusan ialah panduan perancangan; sebut harga akhir memerlukan pengesahan skop dan keadaan tapak.",
     disclaimer: msDisclaimer,
     whyEyebrow: "Kenapa anggar dahulu",
     whyTitle: "Dibina untuk menjimatkan panggilan telefon anda",
@@ -4450,7 +4450,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
     hubFaqs: [
       {
         q: "Adakah alat anggaran ini benar-benar percuma?",
-        a: "Ya. Kesemua lima alat anggaran adalah percuma, tidak perlu pendaftaran dan tiada alamat e-mel. Anda hanya berkongsi butiran jika memutuskan untuk menempah di WhatsApp pada akhirnya."
+        a: "Ya. Kesemua 37 alat anggaran adalah percuma, tidak perlu pendaftaran dan tiada alamat e-mel. Anda hanya berkongsi butiran jika memutuskan untuk menempah di WhatsApp pada akhirnya."
       },
       {
         q: "Dari manakah harga ini diperoleh?",
@@ -4481,7 +4481,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
     minutesBadge: (minutes) => `${minutes} min`,
     graphCollectionName: "Alat Anggaran Perkhidmatan Rumah Percuma — KL & Selangor",
     graphCollectionDescription:
-      "Lima alat anggaran kos interaktif percuma untuk mengecat, trias kebocoran air, baik pulih siling, diagnostik paip dan pemasangan TV di Kuala Lumpur dan Selangor.",
+      "Koleksi 37 kalkulator percuma untuk kuantiti, diagnosis dan perancangan kos perkhidmatan rumah di Kuala Lumpur dan Selangor.",
     graphItemListName: "Alat anggaran perkhidmatan rumah percuma",
     homeLabel: "Utama",
     navAriaLabel: "Laluan navigasi",
@@ -4493,7 +4493,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
     breadcrumbLabel: "免费工具",
     metaTitle: "吉隆坡与雪兰莪免费估价工具",
     metaDesc:
-      "五个免费互动估价工具：油漆、漏水检测、天花维修、水管诊断与电视挂装。按本网站公开的 2026 年吉隆坡与雪兰莪价格即时估价。",
+      "37 个免费家居服务计算工具，涵盖油漆、漏水、天花、水管、电气、屋顶、地板、装修与清洁，适用于吉隆坡和雪兰莪。",
     keywords: [
       "家庭服务费用计算器 马来西亚",
       "油漆费用计算器 吉隆坡",
@@ -4513,7 +4513,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
     directEyebrow: "直接答案 · Direct Answer · Jawapan Ringkas",
     directQuestion: "这个页面可以免费估价什么？",
     directAnswer:
-      "KL Servis Rumah 为吉隆坡与雪兰莪发布五个免费互动估价工具：覆盖室内、外墙、木工与整屋范围的油漆费用计算器；诊断可能原因与紧急程度的漏水分诊工具；天花维修与安装估价器；按症状匹配原因的水管诊断工具；以及为您的墙体推荐正确支架与锚栓的电视挂装顾问。每个工具都会返回预估费用、价格区间、所需时间、推荐服务与建议附加项目——全部按本网站公开的 2026 年价格计算。",
+      "KL Servis Rumah 为吉隆坡与雪兰莪提供 37 个免费工具，涵盖油漆、漏水、天花、水管、防水、电气、屋顶、杂工、门窗、地板、装修及清洁。有些工具计算面积或用量，有些整理故障症状，另一些按公开费率估算费用。计算结果只供规划；最终报价仍须确认工程范围及现场状况。",
     disclaimer: zhDisclaimer,
     whyEyebrow: "为什么先估价",
     whyTitle: "为您省下一通电话",
@@ -4528,7 +4528,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
     hubFaqs: [
       {
         q: "这些估价工具真的免费吗？",
-        a: "是的。五个估价工具全部免费，无需注册，无需邮箱。只有最后决定在 WhatsApp 预约时才需要提供联系方式。"
+        a: "是的。37 个工具全部免费，无需注册或电邮。只有您最后决定通过 WhatsApp 预约时，才需要主动提供联系资料。"
       },
       {
         q: "价格从哪里来？",
@@ -4558,7 +4558,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
     minutesBadge: (minutes) => `${minutes} 分钟`,
     graphCollectionName: "免费家庭服务估价工具——吉隆坡与雪兰莪",
     graphCollectionDescription:
-      "五个免费互动费用估价工具：吉隆坡与雪兰莪的油漆、漏水分诊、天花维修、水管诊断与电视挂装。",
+      "37 个免费工具，用于吉隆坡与雪兰莪家居服务的用量计算、问题诊断及费用规划。",
     graphItemListName: "免费家庭服务估价工具",
     homeLabel: "首页",
     navAriaLabel: "面包屑导航",
