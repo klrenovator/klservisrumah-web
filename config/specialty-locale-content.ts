@@ -6556,6 +6556,439 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       metaDesc: "吉隆坡与雪兰莪装修后建筑垃圾清运。回收分类、直接装运或吊运箱。从RM320起。完工即净。",
     },
   },
+  /* ── AIRCON ──────────────────────────────────────────────────────────── */
+  "aircon/basic-servicing": {
+    ms: {
+      name: "Servis Asas Aircond",
+      tagline: "Pembersihan penapis dan gegelung, pemeriksaan saliran, tekanan gas dan ujian penyejukan untuk unit dinding dari RM 129.",
+      description:
+        "Servis asas aircond membersihkan penapis udara, gegelung evaporator dan dulang saliran, kemudian memeriksa tekanan gas dan menjalankan ujian penyejukan. Ia ialah penyelenggaraan rutin yang memastikan unit anda sejuk, cekap dan bebas daripada bau serta titisan air. Untuk unit dinding, servis asas bermula dari RM 129 untuk 1.0–1.5 HP, RM 156 untuk 2.0–2.5 HP, dan RM 195 untuk 3.0–3.5 HP. Ini adalah harga permulaan minimum; kos sebenar bergantung pada keadaan unit dan disahkan oleh pasukan teknikal kami selepas pemeriksaan.",
+      highlights: [
+        "Pembersihan penapis udara, gegelung dan dulang saliran",
+        "Pemeriksaan tekanan gas dan paras bahan pendingin",
+        "Ujian penyejukan dan pemeriksaan kebocoran air",
+        "Jaminan kerja 1 bulan untuk setiap lawatan servis",
+      ],
+      process: [
+        { step: "01", title: "Pemeriksaan Awal", desc: "Kami memeriksa keadaan unit, aliran udara dan prestasi penyejukan sebelum sebarang kerja dimulakan." },
+        { step: "02", title: "Pembersihan Penapis & Gegelung", desc: "Penapis udara dan gegelung evaporator dicuci dan dibersihkan daripada habuk serta kotoran terkumpul." },
+        { step: "03", title: "Semakan Saliran & Gas", desc: "Paip saliran diperiksa untuk memastikan tiada sumbatan, dan tekanan gas disahkan pada paras yang betul." },
+        { step: "04", title: "Ujian Penyejukan & Serahan", desc: "Kami menjalankan ujian penyejukan penuh dan menyerahkan unit dalam keadaan sejuk serta bersih." },
+      ],
+      faqs: [
+        { q: "Berapa kerap aircond perlu servis asas?", a: "Kami syorkan servis asas setiap 3–6 bulan untuk rumah yang menggunakan aircond setiap malam, supaya unit kekal sejuk dan cekap sepanjang tahun." },
+        { q: "Apakah perbezaan servis asas dan cucian kimia?", a: "Servis asas membersihkan penapis dan gegelung secara permukaan, manakala cucian kimia menggunakan larutan kimia untuk mencuci gegelung dan blower dengan lebih mendalam." },
+        { q: "Adakah servis asas menghilangkan bau aircond?", a: "Ia membantu untuk bau ringan, tetapi bau kulat yang kuat biasanya memerlukan cucian kimia tekanan untuk membersihkan gegelung dan blower sepenuhnya." },
+        { q: "Berapa lama servis asas mengambil masa?", a: "Sebuah unit dinding standard biasanya mengambil masa 30 hingga 45 minit, bergantung pada keadaan dan lokasi unit." },
+      ],
+      metaTitle: "Servis Asas Aircond KL & Selangor — Dari RM 129",
+      metaDesc: "Servis asas aircond profesional di KL & Selangor. Pembersihan penapis, gegelung, semakan gas dan ujian penyejukan dari RM 129. Jaminan 1 bulan.",
+    },
+    zh: {
+      name: "空调基本保养",
+      tagline: "滤网与蒸发器清洁、排水检查、雪种压力与制冷测试，挂壁机从 RM 129 起。",
+      description:
+        "空调基本保养会清洁滤网、蒸发器和接水盘，然后检查雪种压力并做制冷测试。这是让机器保持制冷、高效、无异味且不滴水的日常维护。挂壁机基本保养从 RM 129 起（1.0–1.5 HP）、RM 156（2.0–2.5 HP）、RM 195（3.0–3.5 HP）。以上为最低起价，实际费用视机器状况而定，由技术团队现场检查后确认。",
+      highlights: [
+        "清洁滤网、蒸发器和接水盘",
+        "检查雪种压力与制冷剂液位",
+        "制冷测试与漏水检查",
+        "每次上门保养享 1 个月工艺保修",
+      ],
+      process: [
+        { step: "01", title: "初步检查", desc: "在开工前检查机器状况、风量与制冷表现。" },
+        { step: "02", title: "清洁滤网与蒸发器", desc: "清洗滤网和蒸发器，清除积尘与污垢。" },
+        { step: "03", title: "检查排水与雪种", desc: "检查排水管是否堵塞，并确认雪种压力正常。" },
+        { step: "04", title: "制冷测试与交付", desc: "做完整制冷测试，交付时机器已恢复制冷且干净。" },
+      ],
+      faqs: [
+        { q: "空调多久做一次基本保养？", a: "每晚都开空调的家庭建议每 3–6 个月做一次基本保养，让机器全年保持制冷高效。" },
+        { q: "基本保养和化学清洗有什么区别？", a: "基本保养只做表面清洁，化学清洗则用药水更深层地清洗蒸发器和风轮。" },
+        { q: "基本保养能去除异味吗？", a: "对轻微异味有帮助，但严重霉味通常需要高压化学清洗彻底清洁蒸发器和风轮。" },
+        { q: "基本保养要多久？", a: "标准挂壁机通常 30–45 分钟，视机器状况和安装位置而定。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪空调基本保养 — 从 RM 129 起",
+      metaDesc: "吉隆坡与雪兰莪专业空调基本保养。滤网、蒸发器清洁、雪种检查与制冷测试从 RM 129 起。1 个月保修。",
+    },
+  },
+  "aircon/chemical-wash": {
+    ms: {
+      name: "Cucian Kimia Aircond",
+      tagline: "Cucian kimia tekanan untuk gegelung dan blower tanpa pembongkaran penuh, dari RM 156 untuk unit dinding.",
+      description:
+        "Cucian kimia menggunakan larutan alkali atau anti-mikrob bertekanan untuk mencuci gegelung evaporator, roda blower dan saliran tanpa menanggalkan unit sepenuhnya dari dinding. Ia ialah penyelesaian standard untuk bau apak, titisan air ringan dan penyejukan berkurang selepas 6–12 bulan penggunaan. Harga bermula dari RM 156 untuk unit dinding 1.0–1.5 HP, RM 195 untuk 2.0–2.5 HP, RM 234 untuk 3.0 HP, dan RM 260 untuk 4.0–5.0 HP; unit tingkap bermula dari RM 169. Ini adalah harga permulaan minimum dan disahkan selepas pemeriksaan.",
+      highlights: [
+        "Larutan kimia anti-mikrob untuk gegelung dan blower",
+        "Tiada pembongkaran penuh unit diperlukan",
+        "Menghilangkan bau kulat dan kotoran degil",
+        "Harga berperingkat mengikut HP unit dinding",
+      ],
+      process: [
+        { step: "01", title: "Perlindungan Kawasan", desc: "Kami menutup dinding dan lantai dengan beg cucian untuk mengelakkan percikan kimia dan air." },
+        { step: "02", title: "Semburan Larutan Kimia", desc: "Larutan kimia bertekanan disembur ke gegelung evaporator, blower dan dulang saliran untuk melarutkan kotoran." },
+        { step: "03", title: "Bilas & Pembersihan", desc: "Kotoran yang telah larut dibilas bersih, dan penapis serta saliran dicuci semula." },
+        { step: "04", title: "Ujian & Serahan", desc: "Kami menjalankan ujian penyejukan dan memastikan tiada titisan air sebelum menyerahkan unit." },
+      ],
+      faqs: [
+        { q: "Apakah yang dimaksudkan dengan cucian kimia aircond?", a: "Cucian kimia menyembur larutan kimia khas ke gegelung dan blower untuk membuang kotoran, kulat dan bau tanpa menanggalkan keseluruhan unit dari dinding." },
+        { q: "Berapa lama cucian kimia mengambil masa?", a: "Sebuah unit dinding standard biasanya mengambil masa 45 hingga 60 minit, bergantung pada tahap kekotoran unit." },
+        { q: "Adakah cucian kimia selamat untuk unit saya?", a: "Ya, apabila dilakukan oleh juruteknik terlatih dengan larutan kimia yang sesuai. Kami melindungi kawasan sekitar untuk mengelakkan percikan." },
+        { q: "Bolehkah cucian kimia menghentikan kebocoran air?", a: "Jika puncanya ialah gegelung kotor atau saliran tersumbat, ya. Kebocoran kronik yang serius mungkin memerlukan overhaul kimia." },
+      ],
+      metaTitle: "Cucian Kimia Aircond KL & Selangor — Dari RM 156",
+      metaDesc: "Cucian kimia aircond tekanan di KL & Selangor. Bersihkan gegelung dan blower tanpa membuka unit dari RM 156. Hilangkan bau dan kotoran degil.",
+    },
+    zh: {
+      name: "空调化学清洗",
+      tagline: "高压化学清洗蒸发器与风轮，无需整机拆下，挂壁机从 RM 156 起。",
+      description:
+        "化学清洗使用高压碱性或抗菌药水清洁蒸发器、风轮和排水，无需把整机从墙上拆下。它是解决霉味、轻微滴水和制冷下降的标准方案，适合使用 6–12 个月后的机器。挂壁机从 RM 156 起（1.0–1.5 HP）、RM 195（2.0–2.5 HP）、RM 234（3.0 HP）、RM 260（4.0–5.0 HP）；窗式机从 RM 169 起。以上为最低起价，现场检查后确认。",
+      highlights: [
+        "蒸发器和风轮使用抗菌药水",
+        "无需整机拆下",
+        "去除霉味和顽固污垢",
+        "挂壁机按匹数分级定价",
+      ],
+      process: [
+        { step: "01", title: "保护现场", desc: "用清洗袋遮住墙面和地板，避免药水和污水飞溅。" },
+        { step: "02", title: "喷药水", desc: "将高压药水喷到蒸发器、风轮和接水盘上溶解污垢。" },
+        { step: "03", title: "冲洗与清洁", desc: "冲净溶解的污垢，并再次清洗滤网和排水。" },
+        { step: "04", title: "测试与交付", desc: "做制冷测试并确认无滴水后交付机器。" },
+      ],
+      faqs: [
+        { q: "什么是空调化学清洗？", a: "化学清洗是把专用药水喷到蒸发器和风轮上，去除污垢、霉菌和异味，而无需把整机从墙上拆下。" },
+        { q: "化学清洗要多久？", a: "标准挂壁机通常 45–60 分钟，视机器脏污程度而定。" },
+        { q: "化学清洗对机器安全吗？", a: "由受过培训的技术员使用合适药水操作是安全的。我们会保护周围区域防止飞溅。" },
+        { q: "化学清洗能止住漏水吗？", a: "如果原因是蒸发器脏或排水堵塞，可以。严重的慢性漏水可能需要化学大修。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪空调化学清洗 — 从 RM 156 起",
+      metaDesc: "吉隆坡与雪兰莪高压空调化学清洗。无需拆机即可清洁蒸发器和风轮，从 RM 156 起。去除异味和顽固污垢。",
+    },
+  },
+  "aircon/chemical-overhaul": {
+    ms: {
+      name: "Overhaul Kimia Aircond",
+      tagline: "Pembongkaran penuh dan cucian mendalam setiap bahagian unit untuk membaiki kebocoran air kronik, dari RM 286.",
+      description:
+        "Overhaul kimia menanggalkan keseluruhan unit dari dinding, membukanya dan mencuci setiap bahagian secara mendalam — gegelung, blower, sarung kipas dan dulang saliran. Ia ialah penyelesaian muktamad untuk kebocoran air kronik dan unit yang sangat tersumbat yang tidak dapat dipulihkan oleh cucian kimia biasa. Harga bermula dari RM 286 untuk unit dinding 1.0–1.5 HP, RM 364 untuk 2.0–2.5 HP dan RM 455 untuk 3.0–3.5 HP. Ini adalah harga permulaan minimum; kos akhir disahkan oleh pasukan teknikal kami selepas pemeriksaan.",
+      highlights: [
+        "Unit ditanggalkan sepenuhnya dari dinding",
+        "Setiap bahagian dicuci secara berasingan",
+        "Penyelesaian muktamad untuk kebocoran air kronik",
+        "Sesuai untuk unit yang bertahun-tahun tidak diservis",
+      ],
+      process: [
+        { step: "01", title: "Pembongkaran Unit", desc: "Unit ditanggalkan dari dinding dan dibuka dengan berhati-hati untuk mengakses setiap komponen dalaman." },
+        { step: "02", title: "Cucian Mendalam", desc: "Gegelung, blower, sarung kipas dan dulang saliran dicuci secara berasingan dengan larutan kimia." },
+        { step: "03", title: "Pemeriksaan Komponen", desc: "Setiap bahagian diperiksa untuk kerosakan atau kehausan, dan diganti jika perlu." },
+        { step: "04", title: "Pemasangan Semula & Ujian", desc: "Unit dipasang semula, diuji penyejukan, dan disahkan tiada kebocoran air sebelum serahan." },
+      ],
+      faqs: [
+        { q: "Apakah perbezaan overhaul kimia dan cucian kimia?", a: "Cucian kimia membersihkan unit tanpa membukanya, manakala overhaul menanggalkan dan membuka keseluruhan unit untuk mencuci setiap bahagian secara berasingan." },
+        { q: "Berapa lama overhaul kimia mengambil masa?", a: "Sebuah unit dinding standard biasanya mengambil masa 2 hingga 3 jam kerana unit perlu dibuka sepenuhnya." },
+        { q: "Bilakah saya perlu overhaul kimia?", a: "Apabila unit sentiasa bocor air, tidak diservis bertahun-tahun, atau cucian kimia biasa gagal memulihkan penyejukan." },
+        { q: "Adakah overhaul lebih mahal daripada cucian kimia?", a: "Ya, kerana ia memerlukan lebih banyak masa dan tenaga kerja untuk membuka dan mencuci setiap bahagian unit secara mendalam." },
+      ],
+      metaTitle: "Overhaul Kimia Aircond KL & Selangor — Dari RM 286",
+      metaDesc: "Overhaul kimia aircond di KL & Selangor. Unit dibuka sepenuhnya dan dicuci mendalam dari RM 286. Penyelesaian muktamad untuk kebocoran air.",
+    },
+    zh: {
+      name: "空调化学大修",
+      tagline: "整机拆下、逐件深度清洗，根治顽固漏水，从 RM 286 起。",
+      description:
+        "化学大修会把整机从墙上拆下、打开，并逐件深度清洁——蒸发器、风轮、风扇外壳和接水盘。它是根治慢性漏水和严重堵塞机器的方案，普通化学清洗无法解决时可选择大修。挂壁机从 RM 286 起（1.0–1.5 HP）、RM 364（2.0–2.5 HP）、RM 455（3.0–3.5 HP）。以上为最低起价，最终费用由技术团队现场检查后确认。",
+      highlights: [
+        "整机从墙上拆下",
+        "每个部件单独清洗",
+        "根治慢性漏水的最终方案",
+        "适合多年未保养的机器",
+      ],
+      process: [
+        { step: "01", title: "拆机", desc: "小心地把机器从墙上拆下并打开，以便处理每个内部部件。" },
+        { step: "02", title: "深度清洗", desc: "用药水分别清洗蒸发器、风轮、风扇外壳和接水盘。" },
+        { step: "03", title: "检查部件", desc: "检查每个部件是否损坏或磨损，必要时更换。" },
+        { step: "04", title: "装回与测试", desc: "装回机器、做制冷测试，并确认无漏水后交付。" },
+      ],
+      faqs: [
+        { q: "化学大修和化学清洗有什么区别？", a: "化学清洗无需拆机，大修则把整机拆下打开，逐件深度清洗。" },
+        { q: "化学大修要多久？", a: "标准挂壁机通常 2–3 小时，因为需要整机拆解。" },
+        { q: "什么时候需要化学大修？", a: "当机器持续漏水、多年未保养，或普通化学清洗无法恢复制冷时。" },
+        { q: "大修比化学清洗贵吗？", a: "是的，因为需要更多时间和人工来拆解并逐件深度清洗。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪空调化学大修 — 从 RM 286 起",
+      metaDesc: "吉隆坡与雪兰莪空调化学大修。整机拆下深度清洗，从 RM 286 起。根治漏水的最终方案。",
+    },
+  },
+  "aircon/gas-top-up": {
+    ms: {
+      name: "Top-Up Gas Aircond",
+      tagline: "R22 RM 2.50/PSI, R410A dan R32 RM 3.00/PSI, dengan pemeriksaan kebocoran struktur dari RM 114.",
+      description:
+        "Top-up gas aircond menambah bahan pendingin ke paras PSI yang betul selepas juruteknik memeriksa unit di tapak. R22 ialah RM 2.50 setiap PSI, manakala R410A dan R32 ialah RM 3.00 setiap PSI. Kami hanya mengisi jumlah yang diperlukan dan pemeriksaan kebocoran struktur bermula dari RM 114 serta disertakan. Ini penting kerana gas tidak 'habis' dengan sendirinya — jika unit kurang gas, hampir pasti terdapat kebocoran yang perlu dikesan dan ditutup terlebih dahulu.",
+      highlights: [
+        "R22 RM 2.50/PSI, R410A dan R32 RM 3.00/PSI",
+        "Dikenakan pada PSI sebenar selepas pemeriksaan",
+        "Pemeriksaan kebocoran struktur disertakan",
+        "Tiada cas tersembunyi atau top-up berlebihan",
+      ],
+      process: [
+        { step: "01", title: "Semakan Tekanan", desc: "Kami mengukur tekanan gas semasa dan memeriksa prestasi penyejukan unit." },
+        { step: "02", title: "Pemeriksaan Kebocoran", desc: "Sistem diperiksa untuk sebarang kebocoran pada gegelung, sambungan dan paip." },
+        { step: "03", title: "Top-Up Gas", desc: "Bahan pendingin ditambah ke paras PSI yang betul mengikut jenis gas unit anda." },
+        { step: "04", title: "Ujian Penyejukan", desc: "Kami menjalankan ujian penyejukan penuh dan mengesahkan unit sejuk seperti sepatutnya." },
+      ],
+      faqs: [
+        { q: "Berapa kos top-up gas aircond?", a: "R22 ialah RM 2.50 setiap PSI, manakala R410A dan R32 ialah RM 3.00 setiap PSI. Jumlah akhir bergantung pada PSI sebenar yang diperlukan selepas pemeriksaan." },
+        { q: "Bagaimana saya tahu jenis gas aircond saya?", a: "Jenis gas biasanya dicetak pada plat nama unit luar. Juruteknik kami juga boleh mengesahkannya semasa lawatan." },
+        { q: "Mengapa gas aircond saya sentiasa kurang?", a: "Jika gas kerap berkurang, terdapat kebocoran dalam sistem. Kebocoran mesti dikesan dan ditutup, jika tidak gas akan hilang semula." },
+        { q: "Adakah pemeriksaan kebocoran dikenakan caj berasingan?", a: "Pemeriksaan kebocoran struktur bermula dari RM 114 dan disertakan sebagai sebahagian daripada perkhidmatan top-up gas kami." },
+      ],
+      metaTitle: "Top-Up Gas Aircond KL & Selangor — RM 2.50/PSI",
+      metaDesc: "Top-up gas aircond di KL & Selangor. R22 RM 2.50/PSI, R410A dan R32 RM 3.00/PSI. Pemeriksaan kebocoran disertakan. Harga telus tanpa cas tersembunyi.",
+    },
+    zh: {
+      name: "空调加雪种",
+      tagline: "R22 每 PSI RM 2.50，R410A 与 R32 每 PSI RM 3.00，结构性检漏从 RM 114 起。",
+      description:
+        "空调加雪种会在技术员现场检查后把制冷剂补充到正确的 PSI。R22 为每 PSI RM 2.50，R410A 与 R32 为每 PSI RM 3.00。我们只加所需用量，结构性检漏从 RM 114 起并已包含。这很重要，因为雪种不会自己用完——如果机器雪种不足，几乎一定存在需要先找到并封堵的泄漏点。",
+      highlights: [
+        "R22 每 PSI RM 2.50，R410A 与 R32 每 PSI RM 3.00",
+        "按现场检查后实际所需 PSI 计费",
+        "包含结构性检漏",
+        "无隐藏收费，不多加雪种",
+      ],
+      process: [
+        { step: "01", title: "检查压力", desc: "测量当前雪种压力并检查机器制冷表现。" },
+        { step: "02", title: "检漏", desc: "检查蒸发器、连接处和管道是否有泄漏。" },
+        { step: "03", title: "加雪种", desc: "按机器雪种类型补充到正确的 PSI。" },
+        { step: "04", title: "制冷测试", desc: "做完整制冷测试，确认机器恢复正常制冷。" },
+      ],
+      faqs: [
+        { q: "空调加雪种多少钱？", a: "R22 每 PSI RM 2.50，R410A 与 R32 每 PSI RM 3.00。最终金额取决于现场检查后实际所需的 PSI。" },
+        { q: "怎么知道我的空调用什么雪种？", a: "雪种类型通常印在室外机铭牌上。我们的技术员上门时也能确认。" },
+        { q: "为什么我的空调雪种总是少？", a: "如果雪种频繁减少，说明系统有泄漏。必须先找到并封堵泄漏，否则雪种会再次流失。" },
+        { q: "检漏另收费吗？", a: "结构性检漏从 RM 114 起，已包含在我们的加雪种服务中。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪空调加雪种 — 每 PSI RM 2.50",
+      metaDesc: "吉隆坡与雪兰莪空调加雪种。R22 每 PSI RM 2.50，R410A 与 R32 每 PSI RM 3.00。含检漏，价格透明无隐藏收费。",
+    },
+  },
+  "aircon/installation": {
+    ms: {
+      name: "Pemasangan Aircond",
+      tagline: "Pemasangan unit dinding, kaset siling dan tingkap dari RM 259 — pemasangan sahaja, unit tidak termasuk.",
+      description:
+        "Pemasangan aircond kami adalah untuk pemasangan sahaja — unit aircond tidak termasuk, dan anda membekalkan unit sendiri. Setiap pemasangan termasuk paip tembaga 7 kaki, penebat, pendawaian elektrik, paip saliran, braket, pentauliahan pam vakum dan ujian penyejukan. Harga bermula dari RM 259 untuk unit dinding 1.0–1.5 HP, sehingga RM 584 untuk 5.0 HP; kaset siling dari RM 377 dan unit tingkap dari RM 259. Tembaga tambahan melebihi 7 kaki dikenakan caj setiap kaki. Ini adalah harga permulaan minimum dan disahkan selepas pemeriksaan tapak.",
+      highlights: [
+        "Pemasangan sahaja — unit dibekalkan pelanggan",
+        "Paip tembaga 7 kaki, penebat dan pendawaian disertakan",
+        "Pentauliahan pam vakum dan ujian penyejukan",
+        "Harga berperingkat mengikut HP dan jenis unit",
+      ],
+      process: [
+        { step: "01", title: "Tinjauan Tapak", desc: "Kami menilai lokasi pemasangan, titik kuasa dan laluan paip sebelum memberi sebut harga." },
+        { step: "02", title: "Pemasangan Unit Dalaman", desc: "Unit dalaman dipasang pada dinding dengan braket dan aras yang betul, dengan saliran condong ke bawah." },
+        { step: "03", title: "Pemasangan Unit Luaran", desc: "Unit luaran diletakkan pada kedudukan stabil dan disambungkan dengan paip tembaga serta pendawaian." },
+        { step: "04", title: "Vakum, Gas & Ujian", desc: "Sistem divakum, gas disahkan, dan ujian penyejukan dijalankan sebelum serahan." },
+      ],
+      faqs: [
+        { q: "Adakah unit aircond termasuk dalam harga pemasangan?", a: "Tidak. Harga pemasangan kami meliputi pemasangan sahaja — unit aircond tidak termasuk, dan anda membekalkan unit sendiri." },
+        { q: "Berapa panjang paip tembaga yang disertakan?", a: "Setiap pemasangan termasuk paip tembaga 7 kaki. Tembaga tambahan melebihi 7 kaki dikenakan caj setiap kaki." },
+        { q: "Apa yang termasuk dalam pemasangan?", a: "Paip tembaga 7 kaki, penebat, pendawaian elektrik, paip saliran, braket, pentauliahan pam vakum dan ujian penyejukan." },
+        { q: "Bolehkah anda pasang aircond di kondominium?", a: "Ya. Kami menyelaras dengan pengurusan kondominium untuk waktu kerja, tempahan lif dan pematuhan peraturan bangunan." },
+      ],
+      metaTitle: "Pemasangan Aircond KL & Selangor — Dari RM 259",
+      metaDesc: "Pemasangan aircond profesional di KL & Selangor. Unit dinding dari RM 259, kaset siling dari RM 377. Pemasangan sahaja, unit tidak termasuk.",
+    },
+    zh: {
+      name: "空调安装",
+      tagline: "挂壁、天花卡式与窗式机安装从 RM 259 起——仅含安装，不含主机。",
+      description:
+        "我们的空调安装仅含安装——空调主机不包含在内，主机由您自备。每次安装包含 7 英尺铜管、保温棉、电线、排水管、支架、真空泵调试与制冷运行测试。挂壁机从 RM 259 起（1.0–1.5 HP）至 RM 584（5.0 HP）；天花卡式从 RM 377 起，窗式机从 RM 259 起。超过 7 英尺的铜管按每英尺另计。以上为最低起价，现场勘查后确认。",
+      highlights: [
+        "仅含安装——主机由客户自备",
+        "含 7 英尺铜管、保温棉和电线",
+        "真空泵调试与制冷运行测试",
+        "按匹数和机型分级定价",
+      ],
+      process: [
+        { step: "01", title: "现场勘查", desc: "在报价前评估安装位置、电源点和管道走向。" },
+        { step: "02", title: "安装室内机", desc: "室内机用支架水平安装，排水管向下倾斜。" },
+        { step: "03", title: "安装室外机", desc: "室外机放在稳固位置，并用铜管和电线连接。" },
+        { step: "04", title: "抽真空、加雪种与测试", desc: "系统抽真空、确认雪种，并在交付前做制冷测试。" },
+      ],
+      faqs: [
+        { q: "安装价格包含空调主机吗？", a: "不包含。我们的安装价仅含安装——空调主机不包含在内，主机由您自备。" },
+        { q: "包含多长的铜管？", a: "每次安装包含 7 英尺铜管，超过 7 英尺按每英尺另计。" },
+        { q: "安装包含哪些内容？", a: "7 英尺铜管、保温棉、电线、排水管、支架、真空泵调试与制冷运行测试。" },
+        { q: "能在公寓安装空调吗？", a: "可以。我们会与公寓管理处协调作业时间、电梯预约并遵守大楼规定。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪空调安装 — 从 RM 259 起",
+      metaDesc: "吉隆坡与雪兰莪专业空调安装。挂壁机从 RM 259 起、天花卡式从 RM 377 起。仅含安装，不含主机。",
+    },
+  },
+  "aircon/repair": {
+    ms: {
+      name: "Pembaikan Aircond",
+      tagline: "Yuran diagnosis dari RM 114, diketepikan jika dibaiki lawatan sama, dengan alat ganti dari RM 195 hingga RM 1,040.",
+      description:
+        "Pembaikan aircond kami merangkumi diagnosis dari RM 114 — diketepikan jika kami membaiki unit pada lawatan yang sama — diikuti penggantian bahagian seperti kapasitor dari RM 195, motor kipas luar dari RM 390, motor kipas dalam dan pam saliran dari RM 455, papan kawalan PCB dari RM 455, sensor suhu dan kontaktor dari RM 195, serta pemampat dari RM 1,040. Semua alat ganti membawa jaminan 3 bulan, dan setiap pembaikan dilindungi jaminan kerja 1 bulan. Ini adalah harga permulaan minimum dan disahkan selepas diagnosis.",
+      highlights: [
+        "Yuran diagnosis diketepikan jika dibaiki lawatan sama",
+        "Alat ganti asli untuk semua jenama utama",
+        "Jaminan 3 bulan pada semua alat ganti",
+        "Jaminan kerja 1 bulan untuk setiap pembaikan",
+      ],
+      process: [
+        { step: "01", title: "Diagnosis", desc: "Kami mendiagnosis kerosakan dan mengenal pasti bahagian yang gagal sebelum memberi sebut harga." },
+        { step: "02", title: "Sebut Harga Telus", desc: "Anda menerima harga permulaan minimum yang jelas untuk bahagian dan tenaga kerja." },
+        { step: "03", title: "Penggantian Bahagian", desc: "Bahagian yang rosak digantikan dengan alat ganti asli atau padanan jenama yang sesuai." },
+        { step: "04", title: "Ujian & Jaminan", desc: "Kami menguji keseluruhan sistem dan mengesahkan terma jaminan sebelum serahan." },
+      ],
+      faqs: [
+        { q: "Berapa yuran diagnosis pembaikan aircond?", a: "Yuran diagnosis bermula dari RM 114 dan diketepikan jika kami membaiki unit semasa lawatan yang sama." },
+        { q: "Berapa kos menggantikan pemampat aircond?", a: "Penggantian pemampat bermula dari RM 1,040. Harga akhir bergantung pada jenama dan saiz pemampat." },
+        { q: "Adakah alat ganti anda bergaransi?", a: "Ya, semua alat ganti seperti kapasitor, motor dan papan PCB membawa jaminan 3 bulan." },
+        { q: "Bolehkah anda membaiki semua jenama aircond?", a: "Ya, kami membaiki semua 20 jenama utama dalam model inverter dan bukan inverter." },
+      ],
+      metaTitle: "Pembaikan Aircond KL & Selangor — Dari RM 114",
+      metaDesc: "Pembaikan aircond di KL & Selangor. Diagnosis dari RM 114, alat ganti dari RM 195 hingga RM 1,040. Jaminan 3 bulan alat ganti, 1 bulan kerja.",
+    },
+    zh: {
+      name: "空调维修",
+      tagline: "诊断费从 RM 114 起（当天维修免收），配件从 RM 195 至 RM 1,040。",
+      description:
+        "我们的空调维修包括从 RM 114 起的诊断费——当天维修则免收——以及部件更换，如电容从 RM 195 起、室外风扇电机从 RM 390 起、室内风扇电机与排水泵从 RM 455 起、PCB 控制板从 RM 455 起、温度传感器与接触器从 RM 195 起、压缩机从 RM 1,040 起。所有配件享有 3 个月保修，每次维修享有 1 个月工艺保修。以上为最低起价，诊断后确认。",
+      highlights: [
+        "当天维修免收诊断费",
+        "所有主流品牌使用正品配件",
+        "所有配件 3 个月保修",
+        "每次维修 1 个月工艺保修",
+      ],
+      process: [
+        { step: "01", title: "诊断", desc: "在报价前诊断故障并确定故障部件。" },
+        { step: "02", title: "透明报价", desc: "您会先拿到部件和人工的清晰最低起价。" },
+        { step: "03", title: "更换部件", desc: "用正品或品牌匹配的配件更换故障部件。" },
+        { step: "04", title: "测试与保修", desc: "测试整个系统并在交付前确认保修条款。" },
+      ],
+      faqs: [
+        { q: "空调维修诊断费多少？", a: "诊断费从 RM 114 起，当天维修则免收。" },
+        { q: "更换空调压缩机多少钱？", a: "压缩机更换从 RM 1,040 起，最终价格取决于品牌和压缩机规格。" },
+        { q: "你们的配件有保修吗？", a: "有，电容、电机、PCB 主板等配件均享有 3 个月保修。" },
+        { q: "所有品牌的空调都能修吗？", a: "能，我们维修全部 20 个主流品牌的变频与非变频机型。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪空调维修 — 从 RM 114 起",
+      metaDesc: "吉隆坡与雪兰莪空调维修。诊断从 RM 114 起，配件从 RM 195 至 RM 1,040。配件 3 个月保修、工艺 1 个月保修。",
+    },
+  },
+  "aircon/ceiling-cassette": {
+    ms: {
+      name: "Kaset Siling Aircond",
+      tagline: "Servis, cucian kimia, overhaul dan pemasangan kaset siling komersial dari RM 195, pemasangan 3.5–6.0 HP dari RM 520.",
+      description:
+        "Servis kaset siling merangkumi unit kaset komersial yang dipasang di siling untuk pejabat, kedai dan restoran. Servis asas bermula dari RM 195 untuk 1.0–1.5 HP, RM 260 untuk 2.0–3.0 HP dan RM 325 untuk 3.5–5.0 HP. Cucian kimia bermula dari RM 286, overhaul kimia dari RM 559, dan pemasangan dari RM 455 untuk 2.0–3.0 HP serta RM 520 untuk 3.5–6.0 HP. Ini adalah harga permulaan minimum dan disahkan oleh pasukan teknikal kami selepas pemeriksaan.",
+      highlights: [
+        "Khusus untuk unit kaset siling komersial",
+        "Servis, cucian, overhaul dan pemasangan",
+        "Pemeriksaan pam saliran dan apungan",
+        "Sesuai untuk pejabat, kedai dan restoran",
+      ],
+      process: [
+        { step: "01", title: "Pemeriksaan Kaset", desc: "Kami memeriksa gegelung, blower, pam saliran dan apungan unit kaset." },
+        { step: "02", title: "Servis atau Cucian", desc: "Unit diservis atau dicuci kimia mengikut tahap kekotoran dan keperluan." },
+        { step: "03", title: "Pemeriksaan Pam Saliran", desc: "Pam saliran dan apungan diperiksa untuk mengelakkan kebocoran air dari siling." },
+        { step: "04", title: "Ujian & Serahan", desc: "Kami menguji penyejukan dan saliran penuh sebelum menyerahkan unit." },
+      ],
+      faqs: [
+        { q: "Apakah itu aircond kaset siling?", a: "Kaset siling ialah unit penghawa dingin komersial yang dipasang rata dalam siling, dengan panel empat arah yang mengedarkan udara ke seluruh ruang besar." },
+        { q: "Berapa kos servis kaset siling?", a: "Servis asas bermula dari RM 195 untuk 1.0–1.5 HP. Cucian kimia dari RM 286 dan overhaul dari RM 559." },
+        { q: "Adakah anda servis kaset di pejabat dan kedai?", a: "Ya, kami servis kaset siling untuk pejabat, kedai runcit dan restoran, termasuk penjadualan selepas waktu kerja." },
+        { q: "Mengapa kaset saya bocor air dari siling?", a: "Selalunya kerana pam saliran gagal atau apungan tersumbat. Kami memeriksa dan membaiki pam saliran untuk menghentikan kebocoran." },
+      ],
+      metaTitle: "Servis Kaset Siling Aircond KL & Selangor — Dari RM 195",
+      metaDesc: "Servis kaset siling aircond komersial di KL & Selangor. Servis asas dari RM 195, cucian kimia dari RM 286, pemasangan dari RM 455.",
+    },
+    zh: {
+      name: "天花卡式空调",
+      tagline: "商用天花卡式机的保养、清洗、大修与安装从 RM 195 起，3.5–6.0 HP 安装从 RM 520 起。",
+      description:
+        "天花卡式保养针对安装在天花板内的商用卡式机，适用于办公室、商铺和餐厅。基本保养从 RM 195 起（1.0–1.5 HP）、RM 260（2.0–3.0 HP）、RM 325（3.5–5.0 HP）。化学清洗从 RM 286 起，化学大修从 RM 559 起，安装从 RM 455 起（2.0–3.0 HP）及 RM 520（3.5–6.0 HP）。以上为最低起价，技术团队现场检查后确认。",
+      highlights: [
+        "专用于商用天花卡式机",
+        "保养、清洗、大修与安装",
+        "检查排水泵与浮子开关",
+        "适合办公室、商铺和餐厅",
+      ],
+      process: [
+        { step: "01", title: "检查卡式机", desc: "检查卡式机的蒸发器、风轮、排水泵和浮子开关。" },
+        { step: "02", title: "保养或清洗", desc: "按脏污程度和需求做保养或化学清洗。" },
+        { step: "03", title: "检查排水泵", desc: "检查排水泵和浮子开关，防止天花板漏水。" },
+        { step: "04", title: "测试与交付", desc: "交付前测试完整制冷与排水。" },
+      ],
+      faqs: [
+        { q: "什么是天花卡式空调？", a: "天花卡式是平装在天花板内的商用空调，带四向出风面板，把冷气送到整个大空间。" },
+        { q: "天花卡式保养多少钱？", a: "基本保养从 RM 195 起（1.0–1.5 HP），化学清洗从 RM 286 起，大修从 RM 559 起。" },
+        { q: "你们保养办公室和商铺的卡式机吗？", a: "保养，我们为办公室、零售商铺和餐厅保养卡式机，包括下班后时段安排。" },
+        { q: "为什么我的卡式机从天花板漏水？", a: "通常是排水泵故障或浮子开关堵塞。我们检查并维修排水泵以止住漏水。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪天花卡式空调保养 — 从 RM 195 起",
+      metaDesc: "吉隆坡与雪兰莪商用天花卡式空调保养。基本保养从 RM 195 起、化学清洗从 RM 286 起、安装从 RM 455 起。",
+    },
+  },
+  "aircon/dismantling-and-relocation": {
+    ms: {
+      name: "Pembongkaran & Pindahan Aircond",
+      tagline: "Bongkar sahaja dari RM 117, bongkar + pasang semula berdekatan dari RM 325, dan pindahan lokasi berbeza dari RM 455.",
+      description:
+        "Pembongkaran dan pindahan aircond merangkumi menanggalkan unit dari dinding dan memasangnya semula di lokasi lain. Bongkar sahaja bermula dari RM 117. Bongkar + pasang semula berdekatan bermula dari RM 325 untuk unit 1.0–1.5 HP dan RM 377 untuk 2.0–2.5 HP. Pindahan ke lokasi berbeza bermula dari RM 455. Setiap pindahan termasuk pengumpulan gas, pembongkaran, pengangkutan dan pentauliahan semula dengan ujian penyejukan. Ini adalah harga permulaan minimum dan disahkan selepas pemeriksaan tapak.",
+      highlights: [
+        "Pengumpulan gas sebelum pembongkaran",
+        "Bongkar sahaja atau dengan pemasangan semula",
+        "Pengangkutan dan pentauliahan semula disertakan",
+        "Ujian penyejukan selepas pemasangan semula",
+      ],
+      process: [
+        { step: "01", title: "Pengumpulan Gas", desc: "Gas bahan pendingin dikumpul kembali ke dalam unit luar sebelum pembongkaran." },
+        { step: "02", title: "Pembongkaran Unit", desc: "Unit dalaman dan luaran ditanggalkan dengan berhati-hati tanpa merosakkan paip atau dinding." },
+        { step: "03", title: "Pengangkutan", desc: "Unit diangkut ke lokasi baharu dengan selamat dan penuh perlindungan." },
+        { step: "04", title: "Pemasangan Semula & Ujian", desc: "Unit dipasang semula, divakum, gas disahkan, dan ujian penyejukan dijalankan." },
+      ],
+      faqs: [
+        { q: "Bolehkah aircond saya dipindah ke rumah baharu?", a: "Ya. Kami menanggalkan, mengangkut dan memasang semula unit anda di lokasi baharu, dengan pengumpulan gas dan pentauliahan semula yang betul." },
+        { q: "Berapa kos pindah aircond?", a: "Bongkar sahaja dari RM 117, bongkar + pasang semula berdekatan dari RM 325, dan pindahan lokasi berbeza dari RM 455." },
+        { q: "Adakah paip tembaga baru diperlukan?", a: "Bergantung pada jarak lokasi baharu. Tembaga tambahan melebihi 7 kaki dikenakan caj setiap kaki." },
+        { q: "Berapa lama pindahan aircond mengambil masa?", a: "Pindahan berdekatan biasanya mengambil masa 2 hingga 3 jam, manakala pindahan lokasi berbeza bergantung pada jarak." },
+      ],
+      metaTitle: "Pindah Aircond KL & Selangor — Dari RM 117",
+      metaDesc: "Pembongkaran dan pindahan aircond di KL & Selangor. Bongkar sahaja dari RM 117, pindahan berdekatan dari RM 325, lokasi berbeza dari RM 455.",
+    },
+    zh: {
+      name: "空调拆除与搬迁",
+      tagline: "仅拆除从 RM 117 起、就近重装从 RM 325 起、异地搬迁从 RM 455 起。",
+      description:
+        "空调拆除与搬迁包括把机器从墙上拆下并装到新位置。仅拆除从 RM 117 起。拆除 + 就近重装从 RM 325 起（1.0–1.5 HP）、RM 377（2.0–2.5 HP）。异地搬迁从 RM 455 起。每次搬迁包含收雪种、拆机、运输和重新调试及制冷测试。以上为最低起价，现场勘查后确认。",
+      highlights: [
+        "拆机前先回收雪种",
+        "仅拆除或含重装",
+        "含运输与重新调试",
+        "重装后做制冷测试",
+      ],
+      process: [
+        { step: "01", title: "回收雪种", desc: "拆机前先把制冷剂回收到室外机。" },
+        { step: "02", title: "拆机", desc: "小心拆下室内机和室外机，不损伤管道或墙面。" },
+        { step: "03", title: "运输", desc: "把机器安全地运到新位置并做好防护。" },
+        { step: "04", title: "重装与测试", desc: "重新安装、抽真空、确认雪种并做制冷测试。" },
+      ],
+      faqs: [
+        { q: "空调能搬到新家吗？", a: "能。我们拆机、运输并在新位置重装，并正确回收雪种和重新调试。" },
+        { q: "空调搬迁多少钱？", a: "仅拆除从 RM 117 起、就近重装从 RM 325 起、异地搬迁从 RM 455 起。" },
+        { q: "需要新的铜管吗？", a: "视新位置的距离而定。超过 7 英尺的铜管按每英尺另计。" },
+        { q: "空调搬迁要多久？", a: "就近搬迁通常 2–3 小时，异地搬迁视距离而定。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪空调搬迁 — 从 RM 117 起",
+      metaDesc: "吉隆坡与雪兰莪空调拆除与搬迁。仅拆除从 RM 117 起、就近搬迁从 RM 325 起、异地从 RM 455 起。",
+    },
+  },
 };
 
 /**

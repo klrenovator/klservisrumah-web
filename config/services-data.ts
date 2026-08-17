@@ -787,7 +787,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     ],
     faqs: [
       { q: "Are your electricians ST-registered?", a: "Yes. Our wiremen hold valid Suruhanjaya Tenaga (ST) registrations and are competent to carry out residential and light commercial wiring up to 415V. For installations above 100A or three-phase commercial supplies we partner with a ST-registered Competent Electrical Engineer (CEE) for sign-off." },
-      { q: "How do I know if my old terrace house needs a full rewiring?", a: "Common signs include: rubber-insulated cables (black surface) older than 25 years, frequent tripping of the main breaker, scorch marks on sockets, a fuse-based DB box without RCCB, or two-pin outlets without earth. We offer an on-site inspection and written report with photographic evidence for RM 150." },
+      { q: "How do I know if my old terrace house needs a full rewiring?", a: "Common signs include: rubber-insulated cables (black surface) older than 25 years, frequent tripping of the main breaker, scorch marks on sockets, a fuse-based DB box without RCCB, or two-pin outlets without earth. We offer an on-site inspection and written report with photographic evidence from RM 150." },
       { q: "Can you install a Tesla or BYD EV charger at home?", a: "Yes. We install Level 2 AC chargers (7kW–22kW) for all major EV brands including Tesla, BYD, Hyundai, BMW, and Mercedes. The installation includes a dedicated 32A circuit, weatherproof isolator, RCCB type B protection where required, and a 3-meter cable run as standard. Longer cable runs are quoted on site." },
       { q: "Will my power be off the whole day during a DB box upgrade?", a: "Typically 4 to 8 hours depending on the scope. We coordinate with TNB for temporary disconnection if needed and restore power the same day. For critical loads (medical equipment, servers) we can arrange temporary generator support with advance notice." }
     ],
@@ -824,7 +824,7 @@ export const servicesData: Record<string, ServiceDetail> = {
         ],
         faqs: [
           { q: "Adakah juruelektrik anda berdaftar ST?", a: "Ya. Wiremen kami memegang pendaftaran Suruhanjaya Tenaga (ST) yang sah dan kompeten untuk menjalankan pendawaian kediaman dan komersial ringan sehingga 415V. Untuk pemasangan melebihi 100A atau bekalan komersial tiga fasa kami berganding dengan Jurutera Elektrik Kompeten (CEE) berdaftar ST untuk pengesahan." },
-          { q: "Bagaimana saya tahu jika rumah teres lama saya memerlukan pendawaian semula penuh?", a: "Tanda biasa termasuk: kabel getah berpenebat (permukaan hitam) yang lebih tua dari 25 tahun, tripping kerap breaker utama, tanda hangus pada soket, kotak fius DB tanpa RCCB, atau outlet dua pin tanpa bumi. Kami menawarkan pemeriksaan di tapak dan laporan bertulis dengan bukti fotografi untuk RM 150." },
+          { q: "Bagaimana saya tahu jika rumah teres lama saya memerlukan pendawaian semula penuh?", a: "Tanda biasa termasuk: kabel getah berpenebat (permukaan hitam) yang lebih tua dari 25 tahun, tripping kerap breaker utama, tanda hangus pada soket, kotak fius DB tanpa RCCB, atau outlet dua pin tanpa bumi. Kami menawarkan pemeriksaan di tapak dan laporan bertulis dengan bukti fotografi bermula dari RM 150." },
           { q: "Boleh anda pasang pengecas EV Tesla atau BYD di rumah?", a: "Ya. Kami pasang pengecas AC Level 2 (7kW–22kW) untuk semua jenama EV utama termasuk Tesla, BYD, Hyundai, BMW, dan Mercedes. Pemasangan termasuk litar 32A khas, isolator kalis cuaca, perlindungan RCCB jenis B jika diperlukan, dan laluan kabel 3-meter sebagai standard. Laluan kabel lebih panjang disebut harga di tapak." },
           { q: "Adakah kuasa saya akan terputus sepanjang hari semasa naik taraf DB box?", a: "Biasanya 4 hingga 8 jam bergantung kepada skop. Kami menyelaras dengan TNB untuk pemotongan sementara jika diperlukan dan memulihkan kuasa pada hari yang sama. Untuk beban kritikal (peralatan perubatan, pelayan) kami boleh mengatur sokongan generator sementara dengan notis awal." }
         ],
@@ -860,7 +860,7 @@ export const servicesData: Record<string, ServiceDetail> = {
         ],
         faqs: [
           { q: "你们的电工有 ST 注册吗？", a: "有的。我们的电工持有有效的能源委员会（ST）注册，有资格承接 415V 及以下的住宅与轻商业布线工程。超过 100A 或三相商业供电项目，我们与 ST 注册合资格电气工程师（CEE）合作进行签核。" },
-          { q: "如何判断我的老排屋是否需要全面重新布线？", a: "常见征兆包括：超过 25 年以上的橡胶绝缘电缆（表面发黑）、主断路器频繁跳闸、插座有烧焦痕迹、采用无 RCCB 的老式保险丝配电箱，或两脚插座无接地。我们提供 RM 150 的现场检查与带照片证据的书面报告。" },
+          { q: "如何判断我的老排屋是否需要全面重新布线？", a: "常见征兆包括：超过 25 年以上的橡胶绝缘电缆（表面发黑）、主断路器频繁跳闸、插座有烧焦痕迹、采用无 RCCB 的老式保险丝配电箱，或两脚插座无接地。我们提供从 RM 150 起的现场检查与带照片证据的书面报告。" },
           { q: "可以在家安装 Tesla 或 BYD 电动车充电桩吗？", a: "可以。我们为所有主流电动车品牌（Tesla、BYD、Hyundai、BMW、Mercedes 等）安装 Level 2 交流充电桩（7kW–22kW）。安装包括 32A 专用回路、户外防水隔离器、必要的 B 型 RCCB 保护，以及标准的 3 米线缆。超过 3 米的线缆按现场报价。" },
           { q: "配电箱升级期间会整天停电吗？", a: "通常 4 到 8 小时，取决于工程范围。我们与 TNB 协调必要时临时断电，当天恢复供电。对于关键负荷（医疗设备、服务器），我们可以提前安排临时发电机支援。" }
         ],
@@ -3129,7 +3129,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       { q: "How do I choose between swing, sliding, and folding autogate?", a: "Swing gates are the most common and affordable, but they need clearance for the gate to swing (about 90° opening). Sliding gates are best when the driveway is narrow or the gate would hit an obstruction when swung open. Folding gates are for very narrow entries where neither swing nor sliding fits. We always do a site survey before recommending — the choice depends on your driveway geometry, slope, and available space." },
       { q: "Will the gate work during a power outage?", a: "Standard autogates will not open during a power outage unless a battery backup is installed. We strongly recommend a battery backup (typically RM 350–500) which keeps the gate functional for 8–24 hours of typical use. Alternatively, all our motor installations include a manual release key so you can unlock the gate manually from the inside during an outage." },
       { q: "Can you automate my existing manual gate?", a: "Yes, in most cases. As long as the gate is in good condition (not warped, not heavily rusted) and the hinges are solid, we can add a motor. We may need to upgrade the hinges, add a centre stop, or replace a wooden gate with a steel frame for reliability. We do a site assessment and tell you upfront if the existing gate is suitable." },
-      { q: "What maintenance does an autogate need?", a: "We recommend a 6-monthly service: lubricate hinges and moving parts, check motor brushes (for brushed motors), test safety sensors, check battery backup if installed, and re-test the full open/close cycle. Our maintenance visit costs RM 180 and includes a written condition report. A well-maintained autogate typically lasts 8–12 years before the motor needs replacement." }
+      { q: "What maintenance does an autogate need?", a: "We recommend a 6-monthly service: lubricate hinges and moving parts, check motor brushes (for brushed motors), test safety sensors, check battery backup if installed, and re-test the full open/close cycle. Our maintenance visit starts from RM 180 and includes a written condition report. A well-maintained autogate typically lasts 8–12 years before the motor needs replacement." }
     ],
     heroImage: "/hero-autogate.svg",
     metaTitle: "Auto Gate Installation KL & Selangor",
@@ -3166,7 +3166,7 @@ export const servicesData: Record<string, ServiceDetail> = {
           { q: "Bagaimana saya memilih antara autogate hayun, gelangsar dan lipat?", a: "Pagar hayun paling biasa dan berpatutan, tetapi memerlukan ruang untuk hayunan pagar (bukaan kira-kira 90°). Pagar gelangsar terbaik apabila laluan kereta sempit atau pagar akan terkena halangan apabila dihayun terbuka. Pagar lipat untuk laluan masuk sangat sempit di mana hayun atau gelangsar tidak muat. Kami sentiasa menjalankan tinjauan tapak sebelum mengesyorkan — pilihan bergantung pada geometri laluan kereta, cerun dan ruang tersedia anda." },
           { q: "Adakah pagar berfungsi semasa gangguan kuasa?", a: "Autogate standard tidak akan terbuka semasa gangguan kuasa kecuali bateri sandar dipasang. Kami sangat mengesyorkan bateri sandar (biasanya RM 350–500) yang mengekalkan pagar berfungsi selama 8–24 jam penggunaan biasa. Sebagai alternatif, semua pemasangan motor kami termasuk kunci pelepas manual supaya anda boleh membuka pagar secara manual dari dalam semasa gangguan kuasa." },
           { q: "Boleh anda mengautomasi pagar manual sedia ada saya?", a: "Ya, dalam kebanyakan kes. Selagi pagar dalam keadaan baik (tidak melengkung, tidak teruk berkarat) dan engsel kukuh, kami boleh menambah motor. Kami mungkin perlu menaik taraf engsel, menambah hentian tengah atau menggantikan pagar kayu dengan rangka keluli untuk kebolehpercayaan. Kami menjalankan penilaian tapak dan memberitahu anda terlebih dahulu jika pagar sedia ada sesuai." },
-          { q: "Penyelenggaraan apa yang diperlukan autogate?", a: "Kami mengesyorkan servis 6 bulan sekali: melincirkan engsel dan bahagian bergerak, memeriksa berus motor (untuk motor berberus), menguji sensor keselamatan, memeriksa bateri sandar jika dipasang dan menguji semula kitaran buka/tutup penuh. Lawatan penyelenggaraan kami berharga RM 180 dan termasuk laporan keadaan bertulis. Autogate yang diselenggara dengan baik biasanya bertahan 8–12 tahun sebelum motor perlu diganti." }
+          { q: "Penyelenggaraan apa yang diperlukan autogate?", a: "Kami mengesyorkan servis 6 bulan sekali: melincirkan engsel dan bahagian bergerak, memeriksa berus motor (untuk motor berberus), menguji sensor keselamatan, memeriksa bateri sandar jika dipasang dan menguji semula kitaran buka/tutup penuh. Lawatan penyelenggaraan kami bermula dari RM 180 dan termasuk laporan keadaan bertulis. Autogate yang diselenggara dengan baik biasanya bertahan 8–12 tahun sebelum motor perlu diganti." }
         ],
         metaTitle: "Pemasangan Autogate KL & Selangor",
         metaDesc: "Autogate hayun, gelangsar, lipat di KL & Selangor. Autogate 2000, BFT, CAME, NICE. Dari RM1800. Penggantian motor, sensor keselamatan, bateri sandar. Jaminan 12 bulan.",
@@ -3202,7 +3202,7 @@ export const servicesData: Record<string, ServiceDetail> = {
           { q: "平开、推拉、折叠电动门怎么选？", a: "平开门最常见也最经济，但需要门扇摆动的空间（约 90° 开启）。车道狭窄或开门会撞到障碍物时，推拉门最合适。折叠门用于极窄、平开推拉都不合适的入口。我们总是先现场勘察再推荐——取决于您的车道几何、坡度与可用空间。" },
           { q: "停电时门还能用吗？", a: "标准电动门停电时无法开启，除非装有备用电池。我们强烈建议加装备用电池（通常 RM 350–500），一般使用强度下可维持 8–24 小时。另外，我们所有电机安装都配手动释放钥匙，停电时可从内侧手动解锁开门。" },
           { q: "可以把我现有的手动门改成电动吗？", a: "大多数情况下可以。只要门状况良好（不变形、无严重锈蚀）且铰链牢固，就可以加装电机。可能需要升级铰链、加装中间限位，或把木门换成钢框以保证可靠性。我们现场评估后会如实告知现有门是否适合。" },
-          { q: "电动门需要什么保养？", a: "我们建议每 6 个月保养一次：润滑铰链与活动部件、检查电机碳刷（有刷电机）、测试安全传感器、检查备用电池（如已安装）、重测完整开/关循环。我们的保养上门服务 RM 180，含书面状况报告。保养良好的电动门电机通常可用 8–12 年才需要更换。" }
+          { q: "电动门需要什么保养？", a: "我们建议每 6 个月保养一次：润滑铰链与活动部件、检查电机碳刷（有刷电机）、测试安全传感器、检查备用电池（如已安装）、重测完整开/关循环。我们的保养上门服务从 RM 180 起，含书面状况报告。保养良好的电动门电机通常可用 8–12 年才需要更换。" }
         ],
         metaTitle: "吉隆坡与雪兰莪电动门安装",
         metaDesc: "吉隆坡与雪兰莪平开、推拉、折叠电动门。Autogate 2000、BFT、CAME、NICE。从 RM1800 起。电机更换、安全传感器、备用电池。12 个月保修。",
@@ -3325,6 +3325,140 @@ export const servicesData: Record<string, ServiceDetail> = {
         metaDesc: "吉隆坡与雪兰莪定制格栅、大门、结构钢、楼梯制作、现场焊接维修。MIG/TIG 焊工，低碳钢/不锈钢/铝材。从 RM280 起。",
         aioSummary: "KL Servis Rumah 在吉隆坡与雪兰莪提供焊接与金属加工。定制格栅、大门、楼梯、栏杆、结构钢。持证焊工（MIG、TIG、电弧）加工低碳钢、不锈钢、铝材。防锈底漆 + 粉末喷涂或磁漆饰面。可提供现场紧急维修。",
         warranty: "12 个月焊接与加工保修"
+      }
+    }
+  },
+
+  // ── 29. AIRCON SERVICES ──────────────────────────────────────────────
+  "aircon": {
+    slug: "aircon",
+    title: "Aircon Service, Repair & Installation",
+    tagline: "Air-conditioner basic servicing, chemical wash, chemical overhaul, gas top-up, repair, new installation and dismantling for homes and offices across KL & Selangor. From RM 129.",
+    description:
+      "KL Servis Rumah provides complete air-conditioner servicing, repair and installation across Kuala Lumpur and Selangor, covering every major brand — Daikin, Panasonic, Mitsubishi Electric, York, Acson, Carrier, Midea, Haier, Toshiba, Hitachi, Samsung, LG, Sharp, Fujitsu, Gree, National, Hisense, Aux, TCL and Isonic, in both inverter and non-inverter models. Our technicians handle wall-mounted split units, window units and commercial ceiling cassettes. Every service starts from a transparent minimum price: basic servicing from RM 129, pressure chemical wash from RM 156, full chemical overhaul from RM 286, gas top-up from RM 2.50 per PSI, repair diagnosis from RM 114 and new installation from RM 259. These are minimum starting prices — the actual cost depends on the nature and scope of your job, and our technical team confirms the final price after a site visit or after reviewing your photos. Prices include labour and standard/basic materials; premium brands or higher-grade materials are charged extra and quoted separately. Every service and repair is covered by a 1-month workmanship warranty, with a 3-month warranty on spare parts.",
+    startPrice: "RM 129",
+    icon: "snowflake",
+    highlights: [
+      "All 20 major aircon brands serviced — inverter and non-inverter, wall, window and cassette",
+      "Transparent minimum starting prices with the final quote confirmed after inspection or photo review",
+      "1-month workmanship warranty on service and repair, 3-month warranty on spare parts",
+      "Full chemical overhaul that fully dismantles and deep-cleans the unit to fix chronic water leaks",
+      "New installation includes 7 ft copper pipe, insulation, wiring, drain pipe, bracket, vacuum commissioning and a run/cooling test",
+      "Brand-agnostic repair with genuine spare parts, from capacitors and fan motors to compressors and PCB boards"
+    ],
+    subServices: [
+      { name: "Basic Servicing", price: "From RM 129", desc: "Filter and coil cleaning, drainage check, gas pressure and cooling test for wall-mounted units from RM 129." },
+      { name: "Chemical Wash", price: "From RM 156", desc: "Pressure chemical wash of coils and blower without full dismantling, from RM 156." },
+      { name: "Chemical Overhaul", price: "From RM 286", desc: "Full dismantle-and-wash overhaul that deep-cleans every part and fixes chronic water leaks, from RM 286." },
+      { name: "Gas Top-Up", price: "RM 2.50–3.00 / PSI", desc: "R22, R410A and R32 refill charged per PSI, with a structural leak check included from RM 114." },
+      { name: "Installation", price: "From RM 259", desc: "Wall-mounted, cassette and window installation from RM 259 — installation only, unit not included." },
+      { name: "Repair", price: "From RM 114", desc: "Diagnostic fee from RM 114 (waived if repaired same visit) plus spare parts from RM 195 to RM 1,040." },
+      { name: "Ceiling Cassette", price: "From RM 195", desc: "Commercial ceiling cassette servicing, chemical wash, overhaul and installation from RM 195." },
+      { name: "Dismantling & Relocation", price: "From RM 117", desc: "Dismantle only from RM 117, nearby reinstall from RM 325, and different-location relocation from RM 455." }
+    ],
+    process: [
+      { step: "01", title: "Inspection & Diagnosis", desc: "We inspect the unit, check airflow, gas pressure, drainage and cooling performance, and confirm the exact scope and price before starting." },
+      { step: "02", title: "Transparent Quote", desc: "You receive a clear minimum starting price up front, with the final figure confirmed after the technician reviews the unit or your photos." },
+      { step: "03", title: "Servicing or Repair", desc: "For servicing we clean the filters, coils and blower; for repair we replace the faulty part and re-test the whole system." },
+      { step: "04", title: "Gas, Leak & Cooling Test", desc: "We top up refrigerant to the correct PSI, run a leak check, and verify the unit cools properly and drains without leaking." },
+      { step: "05", title: "Handover & Warranty", desc: "We walk you through what was done, confirm the warranty terms, and leave the area clean with the unit running at full cooling capacity." }
+    ],
+    faqs: [
+      { q: "Are your aircon prices fixed or starting prices?", a: "Every price on this page is a minimum starting price, not a fixed figure. The actual cost depends on the nature and scope of your job, and our technical team confirms the final price after a site visit or after reviewing your photos." },
+      { q: "Is the aircon unit included in your installation price?", a: "No. Our installation price covers installation only — the aircon unit is not included, and you supply your own unit. Installation includes 7 ft of copper pipe, insulation, electrical wiring, drain pipe, bracket, vacuum pump commissioning and a run/cooling test. Extra copper beyond 7 ft is charged per foot." },
+      { q: "How is gas top-up charged?", a: "Gas top-up is charged on the actual PSI required after the technician inspects on site. R22 is RM 2.50/PSI while R410A and R32 are RM 3.00/PSI. We only refill the amount needed, and a leak check is included." },
+      { q: "What warranty do you provide on aircon work?", a: "Every aircon service and repair carries a 1-month workmanship warranty, and spare parts such as capacitors, motors and PCB boards carry a 3-month warranty. If the same issue returns within the warranty period, we return to fix it free of charge." },
+      { q: "Which aircon brands do you service?", a: "We service all 20 major brands in inverter and non-inverter models: Daikin, Panasonic, Mitsubishi Electric, York, Acson, Carrier, Midea, Haier, Toshiba, Hitachi, Samsung, LG, Sharp, Fujitsu, Gree, National, Hisense, Aux, TCL and Isonic — across wall-mounted, window and ceiling cassette units." }
+    ],
+    heroImage: "/hero-aircon.svg",
+    metaTitle: "Aircon Service, Repair & Installation KL & Selangor",
+    metaDesc: "Aircon servicing, chemical wash, overhaul, gas top-up, repair and installation in KL & Selangor. From RM 129. 20 brands, 1-month workmanship warranty. Request a quote.",
+    aioSummary: "KL Servis Rumah provides aircon servicing, chemical wash, chemical overhaul, gas top-up, repair and installation across KL & Selangor. Basic servicing from RM 129, chemical wash from RM 156, overhaul from RM 286, installation from RM 259. 20 brands, inverter and non-inverter. 1-month workmanship warranty, 3-month parts warranty.",
+    warranty: "1-Month Workmanship Warranty (3-Month Parts Warranty)",
+    i18n: {
+      ms: {
+        title: "Servis, Baiki & Pemasangan Aircond",
+        tagline: "Servis asas, cucian kimia, overhaul kimia, top-up gas, pembaikan, pemasangan baharu dan pembongkaran penghawa dingin untuk rumah dan pejabat di seluruh KL & Selangor. Dari RM 129.",
+        description:
+          "KL Servis Rumah menyediakan servis, pembaikan dan pemasangan penghawa dingin yang lengkap di seluruh Kuala Lumpur dan Selangor, meliputi setiap jenama utama — Daikin, Panasonic, Mitsubishi Electric, York, Acson, Carrier, Midea, Haier, Toshiba, Hitachi, Samsung, LG, Sharp, Fujitsu, Gree, National, Hisense, Aux, TCL dan Isonic, untuk model inverter dan bukan inverter. Juruteknik kami mengendalikan unit split dinding, unit tingkap dan kaset siling komersial. Setiap servis bermula dari harga minimum yang telus: servis asas dari RM 129, cucian kimia tekanan dari RM 156, overhaul kimia penuh dari RM 286, top-up gas dari RM 2.50 setiap PSI, diagnosis pembaikan dari RM 114 dan pemasangan baharu dari RM 259. Ini adalah harga permulaan minimum — kos sebenar bergantung pada sifat dan skop kerja anda, dan pasukan teknikal kami mengesahkan harga akhir selepas lawatan tapak atau selepas menyemak foto anda. Harga termasuk tenaga kerja dan bahan standard/asas; jenama premium atau bahan gred lebih tinggi dikenakan caj tambahan dan disebut harga berasingan. Setiap servis dan pembaikan dilindungi jaminan kerja 1 bulan, dengan jaminan 3 bulan pada alat ganti.",
+        highlights: [
+          "Semua 20 jenama aircond utama diservis — inverter dan bukan inverter, dinding, tingkap dan kaset",
+          "Harga permulaan minimum yang telus dengan sebut harga akhir disahkan selepas pemeriksaan atau semakan foto",
+          "Jaminan kerja 1 bulan untuk servis dan pembaikan, jaminan 3 bulan pada alat ganti",
+          "Overhaul kimia penuh yang membuka dan mencuci unit secara menyeluruh untuk membaiki kebocoran air kronik",
+          "Pemasangan baharu termasuk paip tembaga 7 kaki, penebat, pendawaian, paip saliran, braket, pentauliahan pam vakum dan ujian penyejukan",
+          "Pembaikan tanpa mengira jenama dengan alat ganti asli, dari kapasitor dan motor kipas hingga pemampat dan papan PCB"
+        ],
+        subServices: [
+          { name: "Servis Asas", price: "Dari RM 129", desc: "Pembersihan penapis dan gegelung, pemeriksaan saliran, tekanan gas dan ujian penyejukan untuk unit dinding dari RM 129." },
+          { name: "Cucian Kimia", price: "Dari RM 156", desc: "Cucian kimia tekanan gegelung dan blower tanpa pembongkaran penuh, dari RM 156." },
+          { name: "Overhaul Kimia", price: "Dari RM 286", desc: "Overhaul buka-dan-cuci penuh yang membersihkan setiap bahagian dan membaiki kebocoran air kronik, dari RM 286." },
+          { name: "Top-Up Gas", price: "RM 2.50–3.00 / PSI", desc: "Isian R22, R410A dan R32 dikenakan setiap PSI, dengan pemeriksaan kebocoran struktur disertakan dari RM 114." },
+          { name: "Pemasangan", price: "Dari RM 259", desc: "Pemasangan unit dinding, kaset dan tingkap dari RM 259 — pemasangan sahaja, unit tidak termasuk." },
+          { name: "Pembaikan", price: "Dari RM 114", desc: "Yuran diagnosis dari RM 114 (diketepikan jika dibaiki lawatan sama) serta alat ganti dari RM 195 hingga RM 1,040." },
+          { name: "Kaset Siling", price: "Dari RM 195", desc: "Servis, cucian kimia, overhaul dan pemasangan kaset siling komersial dari RM 195." },
+          { name: "Pembongkaran & Pindahan", price: "Dari RM 117", desc: "Bongkar sahaja dari RM 117, pasang semula berdekatan dari RM 325, dan pindahan lokasi berbeza dari RM 455." }
+        ],
+        process: [
+          { step: "01", title: "Pemeriksaan & Diagnosis", desc: "Kami memeriksa unit, menyemak aliran udara, tekanan gas, saliran dan prestasi penyejukan, lalu mengesahkan skop dan harga yang tepat sebelum bermula." },
+          { step: "02", title: "Sebut Harga Telus", desc: "Anda menerima harga permulaan minimum yang jelas, dengan angka akhir disahkan selepas juruteknik menyemak unit atau foto anda." },
+          { step: "03", title: "Servis atau Pembaikan", desc: "Untuk servis kami membersihkan penapis, gegelung dan blower; untuk pembaikan kami menggantikan bahagian rosak dan menguji semula keseluruhan sistem." },
+          { step: "04", title: "Ujian Gas, Kebocoran & Penyejukan", desc: "Kami menambah bahan pendingin ke PSI yang betul, menjalankan pemeriksaan kebocoran, dan mengesahkan unit menyejuk dengan betul serta mengalir tanpa bocor." },
+          { step: "05", title: "Serahan & Jaminan", desc: "Kami menerangkan apa yang telah dilakukan, mengesahkan terma jaminan, dan meninggalkan kawasan bersih dengan unit beroperasi pada kapasiti penyejukan penuh." }
+        ],
+        faqs: [
+          { q: "Adakah harga aircond anda tetap atau harga permulaan?", a: "Setiap harga di halaman ini adalah harga permulaan minimum, bukan angka tetap. Kos sebenar bergantung pada sifat dan skop kerja anda, dan pasukan teknikal kami mengesahkan harga akhir selepas lawatan tapak atau selepas menyemak foto anda." },
+          { q: "Adakah unit aircond termasuk dalam harga pemasangan anda?", a: "Tidak. Harga pemasangan kami meliputi pemasangan sahaja — unit aircond tidak termasuk, dan anda membekalkan unit sendiri. Pemasangan termasuk paip tembaga 7 kaki, penebat, pendawaian elektrik, paip saliran, braket, pentauliahan pam vakum dan ujian penyejukan. Tembaga tambahan melebihi 7 kaki dikenakan caj setiap kaki." },
+          { q: "Bagaimana top-up gas dikenakan caj?", a: "Top-up gas dikenakan pada PSI sebenar yang diperlukan selepas juruteknik memeriksa di tapak. R22 ialah RM 2.50/PSI manakala R410A dan R32 ialah RM 3.00/PSI. Kami hanya mengisi jumlah yang diperlukan, dan pemeriksaan kebocoran disertakan." },
+          { q: "Apakah jaminan yang anda berikan untuk kerja aircond?", a: "Setiap servis dan pembaikan aircond membawa jaminan kerja 1 bulan, dan alat ganti seperti kapasitor, motor dan papan PCB membawa jaminan 3 bulan. Jika masalah sama berulang dalam tempoh jaminan, kami kembali untuk membaikinya secara percuma." },
+          { q: "Jenama aircond apa yang anda servis?", a: "Kami menyervis kesemua 20 jenama utama dalam model inverter dan bukan inverter: Daikin, Panasonic, Mitsubishi Electric, York, Acson, Carrier, Midea, Haier, Toshiba, Hitachi, Samsung, LG, Sharp, Fujitsu, Gree, National, Hisense, Aux, TCL dan Isonic — merangkumi unit dinding, tingkap dan kaset siling." }
+        ],
+        metaTitle: "Servis, Baiki & Pemasangan Aircond KL & Selangor",
+        metaDesc: "Servis aircond, cucian kimia, overhaul, top-up gas, pembaikan dan pemasangan di KL & Selangor. Dari RM 129. 20 jenama, jaminan kerja 1 bulan. Minta sebut harga.",
+        aioSummary: "KL Servis Rumah menyediakan servis aircond, cucian kimia, overhaul kimia, top-up gas, pembaikan dan pemasangan di seluruh KL & Selangor. Servis asas dari RM 129, cucian kimia dari RM 156, overhaul dari RM 286, pemasangan dari RM 259. 20 jenama, inverter dan bukan inverter. Jaminan kerja 1 bulan, jaminan alat ganti 3 bulan.",
+        warranty: "Jaminan Kerja 1 Bulan (Jaminan Alat Ganti 3 Bulan)"
+      },
+      zh: {
+        title: "空调保养、维修与安装",
+        tagline: "为吉隆坡与雪兰莪的住宅和办公室提供空调基本保养、化学清洗、全面大修、加雪种、维修、新安装与拆除。从 RM 129 起。",
+        description:
+          "KL Servis Rumah 在吉隆坡与雪兰莪全境提供完整的空调保养、维修与安装服务，覆盖所有主流品牌——Daikin、Panasonic、Mitsubishi Electric、York、Acson、Carrier、Midea、Haier、Toshiba、Hitachi、Samsung、LG、Sharp、Fujitsu、Gree、National、Hisense、Aux、TCL 与 Isonic，并支持变频与非变频机型。我们的技术员可处理挂壁式分体机、窗式机与商用天花卡式机。每项服务都从透明的最低起价开始：基本保养从 RM 129 起，高压化学清洗从 RM 156 起，全面化学大修从 RM 286 起，加雪种从每 PSI RM 2.50 起，维修诊断从 RM 114 起，新安装从 RM 259 起。这些都是最低起价——实际费用取决于您工程的性质与范围，我们的技术团队会在现场勘查或查看您的照片后确认最终价格。价格包含人工与标准/基础材料；优质品牌或更高等级的材料需另计并单独报价。每项保养与维修均享有 1 个月工艺保修，配件享有 3 个月保修。",
+        highlights: [
+          "保养全部 20 个主流空调品牌——变频与非变频，挂壁、窗式与天花卡式",
+          "透明的最低起价，最终报价在现场勘查或照片审核后确认",
+          "保养与维修享有 1 个月工艺保修，配件享有 3 个月保修",
+          "全面化学大修，整机拆下深度清洗，根治顽固漏水问题",
+          "新安装含 7 英尺铜管、保温棉、电线、排水管、支架、真空泵调试与制冷运行测试",
+          "不限品牌的维修，使用正品配件，从电容、风扇电机到压缩机与 PCB 主板"
+        ],
+        subServices: [
+          { name: "基本保养", price: "从 RM 129 起", desc: "挂壁机滤网与蒸发器清洗、排水检查、雪种压力与制冷测试，从 RM 129 起。" },
+          { name: "化学清洗", price: "从 RM 156 起", desc: "无需整机拆下的蒸发器与风轮高压化学清洗，从 RM 156 起。" },
+          { name: "化学大修", price: "从 RM 286 起", desc: "整机拆下逐件深度清洗、根治慢性漏水的大修，从 RM 286 起。" },
+          { name: "加雪种", price: "RM 2.50–3.00 / PSI", desc: "R22、R410A 与 R32 按每 PSI 计费，结构性检漏从 RM 114 起并已包含。" },
+          { name: "安装", price: "从 RM 259 起", desc: "挂壁、卡式与窗式机安装从 RM 259 起——仅含安装，不含主机。" },
+          { name: "维修", price: "从 RM 114 起", desc: "诊断费从 RM 114 起（当天维修免收），配件从 RM 195 至 RM 1,040。" },
+          { name: "天花卡式机", price: "从 RM 195 起", desc: "商用天花卡式机的保养、化学清洗、大修与安装从 RM 195 起。" },
+          { name: "拆除与搬迁", price: "从 RM 117 起", desc: "仅拆除从 RM 117 起，就近重装从 RM 325 起，异地搬迁从 RM 455 起。" }
+        ],
+        process: [
+          { step: "01", title: "检查与诊断", desc: "我们检查主机，检测风量、雪种压力、排水与制冷性能，并在开工前确认准确范围与价格。" },
+          { step: "02", title: "透明报价", desc: "您会先拿到清晰的最低起价，最终金额在技术员检查主机或查看您的照片后确认。" },
+          { step: "03", title: "保养或维修", desc: "保养时我们清洗滤网、蒸发器与风轮；维修时更换故障部件并重新测试整个系统。" },
+          { step: "04", title: "雪种、检漏与制冷测试", desc: "我们将制冷剂加至正确 PSI，进行检漏，并确认机器正常制冷、排水无渗漏。" },
+          { step: "05", title: "交付与保修", desc: "我们向您说明所做工作、确认保修条款，并清理现场，让机器以满负荷制冷状态运行。" }
+        ],
+        faqs: [
+          { q: "你们的空调价格是固定价还是起价？", a: "本页所有价格都是最低起价，而非固定价。实际费用取决于您工程的性质与范围，我们的技术团队会在现场勘查或查看您的照片后确认最终价格。" },
+          { q: "安装价格包含空调主机吗？", a: "不包含。我们的安装价仅含安装——空调主机不包含在内，主机由您自备。安装包含 7 英尺铜管、保温棉、电线、排水管、支架、真空泵调试与制冷运行测试。超过 7 英尺的铜管按每英尺另计。" },
+          { q: "加雪种如何收费？", a: "加雪种按技术员现场检测后实际所需的 PSI 计费。R22 为每 PSI RM 2.50，R410A 与 R32 为每 PSI RM 3.00。我们只加所需用量，并包含检漏。" },
+          { q: "你们的空调工程提供什么保修？", a: "每项空调保养与维修享有 1 个月工艺保修，电容、电机与 PCB 主板等配件享有 3 个月保修。若同一问题在保修期内复发，我们免费上门修复。" },
+          { q: "你们保养哪些空调品牌？", a: "我们保养全部 20 个主流品牌的变频与非变频机型：Daikin、Panasonic、Mitsubishi Electric、York、Acson、Carrier、Midea、Haier、Toshiba、Hitachi、Samsung、LG、Sharp、Fujitsu、Gree、National、Hisense、Aux、TCL 与 Isonic——覆盖挂壁、窗式与天花卡式机。" }
+        ],
+        metaTitle: "吉隆坡与雪兰莪空调保养、维修与安装",
+        metaDesc: "吉隆坡与雪兰莪空调保养、化学清洗、大修、加雪种、维修与安装。从 RM 129 起。20 个品牌，1 个月工艺保修。立即询价。",
+        aioSummary: "KL Servis Rumah 在吉隆坡与雪兰莪提供空调保养、化学清洗、化学大修、加雪种、维修与安装。基本保养从 RM 129 起，化学清洗从 RM 156 起，大修从 RM 286 起，安装从 RM 259 起。20 个品牌，变频与非变频。1 个月工艺保修，3 个月配件保修。",
+        warranty: "1 个月工艺保修（3 个月配件保修）"
       }
     }
   }

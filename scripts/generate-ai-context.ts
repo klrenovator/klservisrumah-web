@@ -290,7 +290,7 @@ function buildAeoFaq(): string {
         "waterproofing"
       )}, painting from ${priced("painting")} per room, electrical from ${priced(
         "electrical"
-      )}, and full-house renovation from ${priced(
+      )}, aircon servicing from ${priced("aircon")}, and full-house renovation from ${priced(
         "house-renovation"
       )}. Every price is confirmed in an itemised written quote before work begins — see ${url("/pricing")}.`
     ],

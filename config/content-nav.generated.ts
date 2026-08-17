@@ -120,6 +120,41 @@ export const contentNavList: ContentNavItem[] = [
     "relatedServiceSlug": "handyman"
   },
   {
+    "slug": "1hp-aircon-installation-kl",
+    "title": "1 HP Aircon Installation in KL",
+    "category": "Service Cluster",
+    "intro": "A focused hub for installing a 1 HP wall-mounted aircon across KL & Selangor, with pricing, what's included and what the",
+    "relatedServiceSlug": "aircon"
+  },
+  {
+    "slug": "1-5hp-aircon-installation-kl",
+    "title": "1.5 HP Aircon Installation in KL",
+    "category": "Service Cluster",
+    "intro": "A practical guide to installing a 1.5 HP wall-mounted aircon — the most common size for Malaysian bedrooms and small liv",
+    "relatedServiceSlug": "aircon"
+  },
+  {
+    "slug": "2hp-aircon-installation-kl",
+    "title": "2 HP Aircon Installation in KL",
+    "category": "Service Cluster",
+    "intro": "Guidance for installing a 2 HP wall-mounted aircon for larger rooms, including pricing and copper pipe allowances.",
+    "relatedServiceSlug": "aircon"
+  },
+  {
+    "slug": "ceiling-cassette-installation-kl",
+    "title": "Ceiling Cassette Installation in KL",
+    "category": "Service Cluster",
+    "intro": "A hub for commercial and high-ceiling ceiling cassette installation, covering 1.0–1.5 HP and larger cassette pricing.",
+    "relatedServiceSlug": "aircon"
+  },
+  {
+    "slug": "commercial-aircon-installation-kl",
+    "title": "Commercial Aircon Installation in KL",
+    "category": "Service Cluster",
+    "intro": "A guide to commercial aircon installation for offices, shops and restaurants, including ceiling cassettes and multi-unit",
+    "relatedServiceSlug": "aircon"
+  },
+  {
     "slug": "how-to-choose-house-painter-kl",
     "title": "How to Choose a House Painter in KL",
     "category": "Painting",
@@ -268,6 +303,24 @@ export const contentNavList: ContentNavItem[] = [
     "title": "Roof Coating vs Torch-On Membrane",
     "category": "Comparison",
     "intro": "Roof Coating vs Torch-On Membrane compares use cases, cost ranges, durability, disruption level, and suitability for KL "
+  },
+  {
+    "slug": "chemical-wash-vs-chemical-overhaul",
+    "title": "Chemical Wash vs Chemical Overhaul",
+    "category": "Comparison",
+    "intro": "Chemical Wash vs Chemical Overhaul compares use cases, cost ranges, durability, disruption level, and suitability for KL"
+  },
+  {
+    "slug": "inverter-vs-non-inverter-aircon",
+    "title": "Inverter vs Non-Inverter Aircon",
+    "category": "Comparison",
+    "intro": "Inverter vs Non-Inverter Aircon compares use cases, cost ranges, durability, disruption level, and suitability for KL an"
+  },
+  {
+    "slug": "wall-mounted-vs-ceiling-cassette-aircon",
+    "title": "Wall-Mounted vs Ceiling Cassette Aircon",
+    "category": "Comparison",
+    "intro": "Wall-Mounted vs Ceiling Cassette Aircon compares use cases, cost ranges, durability, disruption level, and suitability f"
   },
   {
     "slug": "painting-maintenance-schedule",
@@ -574,6 +627,13 @@ export const contentNavList: ContentNavItem[] = [
     "relatedServiceSlug": "welding"
   },
   {
+    "slug": "aircon-services-kl",
+    "title": "Commercial Aircon Service, Repair & Installation in KL",
+    "category": "Commercial",
+    "intro": "Commercial aircon service, repair & installation focuses on offices, retail lots, showrooms, warehouses, and strata faci",
+    "relatedServiceSlug": "aircon"
+  },
+  {
     "slug": "painting-services-kl",
     "title": "Residential House Painting Services in KL",
     "category": "Residential",
@@ -770,6 +830,13 @@ export const contentNavList: ContentNavItem[] = [
     "relatedServiceSlug": "welding"
   },
   {
+    "slug": "aircon-services-kl",
+    "title": "Residential Aircon Service, Repair & Installation in KL",
+    "category": "Residential",
+    "intro": "Residential aircon service, repair & installation supports condos, apartments, terrace homes, semi-Ds, bungalows, and re",
+    "relatedServiceSlug": "aircon"
+  },
+  {
     "slug": "nippon-paint-application-malaysia",
     "title": "Nippon Paint Application Malaysia",
     "category": "Brand Guide",
@@ -852,6 +919,146 @@ export const contentNavList: ContentNavItem[] = [
     "category": "Brand Guide",
     "intro": "Mapei Waterproofing Application explains when this brand or material category is suitable, how it should be applied, and",
     "relatedServiceSlug": "waterproofing"
+  },
+  {
+    "slug": "daikin-aircon-service-malaysia",
+    "title": "Daikin Aircon Service Malaysia",
+    "category": "Brand Guide",
+    "intro": "Daikin Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and installa",
+    "relatedServiceSlug": "aircon"
+  },
+  {
+    "slug": "panasonic-aircon-service-malaysia",
+    "title": "Panasonic Aircon Service Malaysia",
+    "category": "Brand Guide",
+    "intro": "Panasonic Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and insta",
+    "relatedServiceSlug": "aircon"
+  },
+  {
+    "slug": "mitsubishi-electric-aircon-service-malaysia",
+    "title": "Mitsubishi Electric Aircon Service Malaysia",
+    "category": "Brand Guide",
+    "intro": "Mitsubishi Electric Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair",
+    "relatedServiceSlug": "aircon"
+  },
+  {
+    "slug": "york-aircon-service-malaysia",
+    "title": "York Aircon Service Malaysia",
+    "category": "Brand Guide",
+    "intro": "York Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and installati",
+    "relatedServiceSlug": "aircon"
+  },
+  {
+    "slug": "acson-aircon-service-malaysia",
+    "title": "Acson Aircon Service Malaysia",
+    "category": "Brand Guide",
+    "intro": "Acson Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and installat",
+    "relatedServiceSlug": "aircon"
+  },
+  {
+    "slug": "carrier-aircon-service-malaysia",
+    "title": "Carrier Aircon Service Malaysia",
+    "category": "Brand Guide",
+    "intro": "Carrier Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and install",
+    "relatedServiceSlug": "aircon"
+  },
+  {
+    "slug": "midea-aircon-service-malaysia",
+    "title": "Midea Aircon Service Malaysia",
+    "category": "Brand Guide",
+    "intro": "Midea Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and installat",
+    "relatedServiceSlug": "aircon"
+  },
+  {
+    "slug": "haier-aircon-service-malaysia",
+    "title": "Haier Aircon Service Malaysia",
+    "category": "Brand Guide",
+    "intro": "Haier Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and installat",
+    "relatedServiceSlug": "aircon"
+  },
+  {
+    "slug": "toshiba-aircon-service-malaysia",
+    "title": "Toshiba Aircon Service Malaysia",
+    "category": "Brand Guide",
+    "intro": "Toshiba Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and install",
+    "relatedServiceSlug": "aircon"
+  },
+  {
+    "slug": "hitachi-aircon-service-malaysia",
+    "title": "Hitachi Aircon Service Malaysia",
+    "category": "Brand Guide",
+    "intro": "Hitachi Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and install",
+    "relatedServiceSlug": "aircon"
+  },
+  {
+    "slug": "samsung-aircon-service-malaysia",
+    "title": "Samsung Aircon Service Malaysia",
+    "category": "Brand Guide",
+    "intro": "Samsung Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and install",
+    "relatedServiceSlug": "aircon"
+  },
+  {
+    "slug": "lg-aircon-service-malaysia",
+    "title": "LG Aircon Service Malaysia",
+    "category": "Brand Guide",
+    "intro": "LG Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and installation",
+    "relatedServiceSlug": "aircon"
+  },
+  {
+    "slug": "sharp-aircon-service-malaysia",
+    "title": "Sharp Aircon Service Malaysia",
+    "category": "Brand Guide",
+    "intro": "Sharp Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and installat",
+    "relatedServiceSlug": "aircon"
+  },
+  {
+    "slug": "fujitsu-aircon-service-malaysia",
+    "title": "Fujitsu Aircon Service Malaysia",
+    "category": "Brand Guide",
+    "intro": "Fujitsu Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and install",
+    "relatedServiceSlug": "aircon"
+  },
+  {
+    "slug": "gree-aircon-service-malaysia",
+    "title": "Gree Aircon Service Malaysia",
+    "category": "Brand Guide",
+    "intro": "Gree Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and installati",
+    "relatedServiceSlug": "aircon"
+  },
+  {
+    "slug": "national-aircon-service-malaysia",
+    "title": "National Aircon Service Malaysia",
+    "category": "Brand Guide",
+    "intro": "National Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and instal",
+    "relatedServiceSlug": "aircon"
+  },
+  {
+    "slug": "hisense-aircon-service-malaysia",
+    "title": "Hisense Aircon Service Malaysia",
+    "category": "Brand Guide",
+    "intro": "Hisense Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and install",
+    "relatedServiceSlug": "aircon"
+  },
+  {
+    "slug": "aux-aircon-service-malaysia",
+    "title": "Aux Aircon Service Malaysia",
+    "category": "Brand Guide",
+    "intro": "Aux Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and installatio",
+    "relatedServiceSlug": "aircon"
+  },
+  {
+    "slug": "tcl-aircon-service-malaysia",
+    "title": "TCL Aircon Service Malaysia",
+    "category": "Brand Guide",
+    "intro": "TCL Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and installatio",
+    "relatedServiceSlug": "aircon"
+  },
+  {
+    "slug": "isonic-aircon-service-malaysia",
+    "title": "Isonic Aircon Service Malaysia",
+    "category": "Brand Guide",
+    "intro": "Isonic Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and installa",
+    "relatedServiceSlug": "aircon"
   },
   {
     "slug": "best-house-painters-kl-2026",
@@ -1110,6 +1317,13 @@ export const contentNavList: ContentNavItem[] = [
     "relatedServiceSlug": "welding"
   },
   {
+    "slug": "aircon-ultimate-guide",
+    "title": "Aircon Service, Repair & Installation Ultimate Guide for KL & Selangor",
+    "category": "AI Answer Guide",
+    "intro": "Aircon Service, Repair & Installation in KL and Selangor should be priced fairly and openly, scoped clearly, performed b",
+    "relatedServiceSlug": "aircon"
+  },
+  {
     "slug": "painting-process-kl",
     "title": "House Painting Services Process in KL",
     "category": "Process",
@@ -1304,6 +1518,13 @@ export const contentNavList: ContentNavItem[] = [
     "category": "Process",
     "intro": "A step-by-step process page for welding & metal fabrication, including preparation, execution, quality checks, and warra",
     "relatedServiceSlug": "welding"
+  },
+  {
+    "slug": "aircon-process-kl",
+    "title": "Aircon Service, Repair & Installation Process in KL",
+    "category": "Process",
+    "intro": "A step-by-step process page for aircon service, repair & installation, including preparation, execution, quality checks,",
+    "relatedServiceSlug": "aircon"
   }
 ];
 
@@ -1732,6 +1953,21 @@ export const contentRelatedServiceBySlug: Record<string, ContentRelatedServiceLi
       {
         "name": "Main Gate Fabrication",
         "desc": "Custom main gate with mild steel frame, infill design of your choice, and hot-dip galvanised + powder-coat finish."
+      }
+    ]
+  },
+  "aircon": {
+    "slug": "aircon",
+    "title": "Aircon Service, Repair & Installation",
+    "tagline": "Air-conditioner basic servicing, chemical wash, chemical overhaul, gas top-up, repair, new installation and dismantling for homes and offices across KL & Selangor. From RM 129.",
+    "subServices": [
+      {
+        "name": "Basic Servicing",
+        "desc": "Filter and coil cleaning, drainage check, gas pressure and cooling test for wall-mounted units from RM 129."
+      },
+      {
+        "name": "Chemical Wash",
+        "desc": "Pressure chemical wash of coils and blower without full dismantling, from RM 156."
       }
     ]
   }

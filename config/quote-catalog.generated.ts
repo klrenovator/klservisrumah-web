@@ -2402,6 +2402,151 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
         ]
       }
     }
+  },
+  "aircon": {
+    "slug": "aircon",
+    "title": "Aircon Service, Repair & Installation",
+    "startPrice": "RM 129",
+    "tagline": "Air-conditioner basic servicing, chemical wash, chemical overhaul, gas top-up, repair, new installation and dismantling for homes and offices across KL & Selangor. From RM 129.",
+    "warranty": "1-Month Workmanship Warranty (3-Month Parts Warranty)",
+    "subServices": [
+      {
+        "name": "Basic Servicing",
+        "price": "From RM 129",
+        "desc": "Filter and coil cleaning, drainage check, gas pressure and cooling test for wall-mounted units from RM 129."
+      },
+      {
+        "name": "Chemical Wash",
+        "price": "From RM 156",
+        "desc": "Pressure chemical wash of coils and blower without full dismantling, from RM 156."
+      },
+      {
+        "name": "Chemical Overhaul",
+        "price": "From RM 286",
+        "desc": "Full dismantle-and-wash overhaul that deep-cleans every part and fixes chronic water leaks, from RM 286."
+      },
+      {
+        "name": "Gas Top-Up",
+        "price": "RM 2.50–3.00 / PSI",
+        "desc": "R22, R410A and R32 refill charged per PSI, with a structural leak check included from RM 114."
+      },
+      {
+        "name": "Installation",
+        "price": "From RM 259",
+        "desc": "Wall-mounted, cassette and window installation from RM 259 — installation only, unit not included."
+      },
+      {
+        "name": "Repair",
+        "price": "From RM 114",
+        "desc": "Diagnostic fee from RM 114 (waived if repaired same visit) plus spare parts from RM 195 to RM 1,040."
+      },
+      {
+        "name": "Ceiling Cassette",
+        "price": "From RM 195",
+        "desc": "Commercial ceiling cassette servicing, chemical wash, overhaul and installation from RM 195."
+      },
+      {
+        "name": "Dismantling & Relocation",
+        "price": "From RM 117",
+        "desc": "Dismantle only from RM 117, nearby reinstall from RM 325, and different-location relocation from RM 455."
+      }
+    ],
+    "i18n": {
+      "ms": {
+        "title": "Servis, Baiki & Pemasangan Aircond",
+        "tagline": "Servis asas, cucian kimia, overhaul kimia, top-up gas, pembaikan, pemasangan baharu dan pembongkaran penghawa dingin untuk rumah dan pejabat di seluruh KL & Selangor. Dari RM 129.",
+        "warranty": "Jaminan Kerja 1 Bulan (Jaminan Alat Ganti 3 Bulan)",
+        "subServices": [
+          {
+            "name": "Servis Asas",
+            "price": "Dari RM 129",
+            "desc": "Pembersihan penapis dan gegelung, pemeriksaan saliran, tekanan gas dan ujian penyejukan untuk unit dinding dari RM 129."
+          },
+          {
+            "name": "Cucian Kimia",
+            "price": "Dari RM 156",
+            "desc": "Cucian kimia tekanan gegelung dan blower tanpa pembongkaran penuh, dari RM 156."
+          },
+          {
+            "name": "Overhaul Kimia",
+            "price": "Dari RM 286",
+            "desc": "Overhaul buka-dan-cuci penuh yang membersihkan setiap bahagian dan membaiki kebocoran air kronik, dari RM 286."
+          },
+          {
+            "name": "Top-Up Gas",
+            "price": "RM 2.50–3.00 / PSI",
+            "desc": "Isian R22, R410A dan R32 dikenakan setiap PSI, dengan pemeriksaan kebocoran struktur disertakan dari RM 114."
+          },
+          {
+            "name": "Pemasangan",
+            "price": "Dari RM 259",
+            "desc": "Pemasangan unit dinding, kaset dan tingkap dari RM 259 — pemasangan sahaja, unit tidak termasuk."
+          },
+          {
+            "name": "Pembaikan",
+            "price": "Dari RM 114",
+            "desc": "Yuran diagnosis dari RM 114 (diketepikan jika dibaiki lawatan sama) serta alat ganti dari RM 195 hingga RM 1,040."
+          },
+          {
+            "name": "Kaset Siling",
+            "price": "Dari RM 195",
+            "desc": "Servis, cucian kimia, overhaul dan pemasangan kaset siling komersial dari RM 195."
+          },
+          {
+            "name": "Pembongkaran & Pindahan",
+            "price": "Dari RM 117",
+            "desc": "Bongkar sahaja dari RM 117, pasang semula berdekatan dari RM 325, dan pindahan lokasi berbeza dari RM 455."
+          }
+        ]
+      },
+      "zh": {
+        "title": "空调保养、维修与安装",
+        "tagline": "为吉隆坡与雪兰莪的住宅和办公室提供空调基本保养、化学清洗、全面大修、加雪种、维修、新安装与拆除。从 RM 129 起。",
+        "warranty": "1 个月工艺保修（3 个月配件保修）",
+        "subServices": [
+          {
+            "name": "基本保养",
+            "price": "从 RM 129 起",
+            "desc": "挂壁机滤网与蒸发器清洗、排水检查、雪种压力与制冷测试，从 RM 129 起。"
+          },
+          {
+            "name": "化学清洗",
+            "price": "从 RM 156 起",
+            "desc": "无需整机拆下的蒸发器与风轮高压化学清洗，从 RM 156 起。"
+          },
+          {
+            "name": "化学大修",
+            "price": "从 RM 286 起",
+            "desc": "整机拆下逐件深度清洗、根治慢性漏水的大修，从 RM 286 起。"
+          },
+          {
+            "name": "加雪种",
+            "price": "RM 2.50–3.00 / PSI",
+            "desc": "R22、R410A 与 R32 按每 PSI 计费，结构性检漏从 RM 114 起并已包含。"
+          },
+          {
+            "name": "安装",
+            "price": "从 RM 259 起",
+            "desc": "挂壁、卡式与窗式机安装从 RM 259 起——仅含安装，不含主机。"
+          },
+          {
+            "name": "维修",
+            "price": "从 RM 114 起",
+            "desc": "诊断费从 RM 114 起（当天维修免收），配件从 RM 195 至 RM 1,040。"
+          },
+          {
+            "name": "天花卡式机",
+            "price": "从 RM 195 起",
+            "desc": "商用天花卡式机的保养、化学清洗、大修与安装从 RM 195 起。"
+          },
+          {
+            "name": "拆除与搬迁",
+            "price": "从 RM 117 起",
+            "desc": "仅拆除从 RM 117 起，就近重装从 RM 325 起，异地搬迁从 RM 455 起。"
+          }
+        ]
+      }
+    }
   }
 };
 

@@ -1753,6 +1753,104 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
         "warranty": "12 个月焊接与加工保修"
       }
     }
+  },
+  "aircon": {
+    "slug": "aircon",
+    "title": "Aircon Service, Repair & Installation",
+    "startPrice": "RM 129",
+    "icon": "snowflake",
+    "tagline": "Air-conditioner basic servicing, chemical wash, chemical overhaul, gas top-up, repair, new installation and dismantling for homes and offices across KL & Selangor. From RM 129.",
+    "subServices": [
+      {
+        "name": "Basic Servicing"
+      },
+      {
+        "name": "Chemical Wash"
+      },
+      {
+        "name": "Chemical Overhaul"
+      },
+      {
+        "name": "Gas Top-Up"
+      },
+      {
+        "name": "Installation"
+      },
+      {
+        "name": "Repair"
+      },
+      {
+        "name": "Ceiling Cassette"
+      },
+      {
+        "name": "Dismantling & Relocation"
+      }
+    ],
+    "warranty": "1-Month Workmanship Warranty (3-Month Parts Warranty)",
+    "i18n": {
+      "ms": {
+        "title": "Servis, Baiki & Pemasangan Aircond",
+        "tagline": "Servis asas, cucian kimia, overhaul kimia, top-up gas, pembaikan, pemasangan baharu dan pembongkaran penghawa dingin untuk rumah dan pejabat di seluruh KL & Selangor. Dari RM 129.",
+        "subServices": [
+          {
+            "name": "Servis Asas"
+          },
+          {
+            "name": "Cucian Kimia"
+          },
+          {
+            "name": "Overhaul Kimia"
+          },
+          {
+            "name": "Top-Up Gas"
+          },
+          {
+            "name": "Pemasangan"
+          },
+          {
+            "name": "Pembaikan"
+          },
+          {
+            "name": "Kaset Siling"
+          },
+          {
+            "name": "Pembongkaran & Pindahan"
+          }
+        ],
+        "warranty": "Jaminan Kerja 1 Bulan (Jaminan Alat Ganti 3 Bulan)"
+      },
+      "zh": {
+        "title": "空调保养、维修与安装",
+        "tagline": "为吉隆坡与雪兰莪的住宅和办公室提供空调基本保养、化学清洗、全面大修、加雪种、维修、新安装与拆除。从 RM 129 起。",
+        "subServices": [
+          {
+            "name": "基本保养"
+          },
+          {
+            "name": "化学清洗"
+          },
+          {
+            "name": "化学大修"
+          },
+          {
+            "name": "加雪种"
+          },
+          {
+            "name": "安装"
+          },
+          {
+            "name": "维修"
+          },
+          {
+            "name": "天花卡式机"
+          },
+          {
+            "name": "拆除与搬迁"
+          }
+        ],
+        "warranty": "1 个月工艺保修（3 个月配件保修）"
+      }
+    }
   }
 };
 

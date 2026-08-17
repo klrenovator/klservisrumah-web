@@ -1,5 +1,5 @@
 export type MarketRateItem = {
-  serviceSlug: "painting" | "plumbing" | "ceiling" | "waterproofing" | "handyman";
+  serviceSlug: "painting" | "plumbing" | "ceiling" | "waterproofing" | "handyman" | "aircon";
   label: string;
   publishedRate: string;
   marketRange: string;
@@ -98,6 +98,69 @@ export const marketRateBaseline: MarketRateItem[] = [
     pricingUnit: "task",
     validationNote: "Quote adjusts for TV size, bracket type, wall material, cable trunking, and anchor requirements.",
     lastReviewed: "2026-07-25"
+  },
+  {
+    serviceSlug: "aircon",
+    label: "Wall-mounted basic servicing",
+    publishedRate: "From RM 129",
+    marketRange: "RM 99–RM 195 depending on HP (1.0–3.5 HP)",
+    pricingUnit: "unit",
+    validationNote: "Minimum starting price; final cost depends on unit HP, condition and access, confirmed after inspection.",
+    lastReviewed: "2026-08-17"
+  },
+  {
+    serviceSlug: "aircon",
+    label: "Pressure chemical wash",
+    publishedRate: "From RM 156",
+    marketRange: "RM 120–RM 260 depending on HP and unit type",
+    pricingUnit: "unit",
+    validationNote: "Wall, window and ceiling cassette units priced by HP; premium chemical brands quoted separately.",
+    lastReviewed: "2026-08-17"
+  },
+  {
+    serviceSlug: "aircon",
+    label: "Chemical overhaul",
+    publishedRate: "From RM 286",
+    marketRange: "RM 220–RM 650 depending on HP and unit type",
+    pricingUnit: "unit",
+    validationNote: "Full dismantle-and-wash overhaul; the definitive fix for chronic water leaks.",
+    lastReviewed: "2026-08-17"
+  },
+  {
+    serviceSlug: "aircon",
+    label: "Gas top-up (R22 / R410A / R32)",
+    publishedRate: "RM 2.50–3.00 / PSI",
+    marketRange: "RM 2.50–RM 3.00 per PSI depending on refrigerant type",
+    pricingUnit: "PSI",
+    validationNote: "Charged on the actual PSI required after on-site inspection; leak check included.",
+    lastReviewed: "2026-08-17"
+  },
+  {
+    serviceSlug: "aircon",
+    label: "New wall-mounted installation",
+    publishedRate: "From RM 259",
+    marketRange: "RM 199–RM 584 depending on HP",
+    pricingUnit: "unit",
+    validationNote: "Installation only — the unit is not included. Includes 7 ft copper pipe, insulation, wiring and commissioning.",
+    lastReviewed: "2026-08-17"
+  },
+  {
+    serviceSlug: "aircon",
+    label: "Repair diagnosis & spare parts",
+    publishedRate: "From RM 114",
+    marketRange: "RM 88–RM 1,040 depending on the faulty part",
+    pricingUnit: "task",
+    validationNote: "Diagnostic fee waived if repaired the same visit; spare parts carry a 3-month warranty.",
+    lastReviewed: "2026-08-17"
+  },
+  {
+    serviceSlug: "aircon",
+    label: "Dismantling & relocation",
+    publishedRate: "From RM 117",
+    marketRange: "RM 90–RM 455 depending on scope and location",
+    pricingUnit: "task",
+    validationNote: "Dismantle only, nearby reinstall, or different-location relocation, priced by HP and distance.",
+    lastReviewed: "2026-08-17"
   }
 ];
 

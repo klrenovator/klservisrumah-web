@@ -32,6 +32,13 @@ import { kitchenRenovationEstimatorSpec } from "./kitchen-renovation-estimator";
 import { bathroomRenovationEstimatorSpec } from "./bathroom-renovation-estimator";
 import { deepCleaningCostEstimatorSpec } from "./deep-cleaning-cost-estimator";
 import { moveInOutCleaningCalculatorSpec } from "./move-in-out-cleaning-calculator";
+import { airconInstallationCostSpec } from "./aircon-installation-cost";
+import { airconGasTopupCostSpec } from "./aircon-gas-topup-cost";
+import { airconSizeCalculatorSpec } from "./aircon-size-calculator";
+import { airconBtuCalculatorSpec } from "./aircon-btu-calculator";
+import { airconElectricityCostSpec } from "./aircon-electricity-cost";
+import { airconSavingsCalculatorSpec } from "./aircon-savings-calculator";
+import { airconServicePickerSpec } from "./aircon-service-picker";
 import { leakSpec } from "./leak";
 import { ceilingSpec } from "./ceiling";
 import { plumbingSpec } from "./plumbing";
@@ -75,6 +82,13 @@ export const estimatorSpecs: Record<string, EstimatorSpec> = {
   "bathroom-renovation-estimator": bathroomRenovationEstimatorSpec,
   "deep-cleaning-cost-estimator": deepCleaningCostEstimatorSpec,
   "move-in-out-cleaning-calculator": moveInOutCleaningCalculatorSpec,
+  "aircon-installation-cost": airconInstallationCostSpec,
+  "aircon-gas-topup-cost": airconGasTopupCostSpec,
+  "aircon-size-calculator": airconSizeCalculatorSpec,
+  "aircon-btu-calculator": airconBtuCalculatorSpec,
+  "aircon-electricity-cost": airconElectricityCostSpec,
+  "aircon-savings-calculator": airconSavingsCalculatorSpec,
+  "aircon-service-picker": airconServicePickerSpec,
 };
 
 export { paintingSpec, leakSpec, ceilingSpec, plumbingSpec, tvMountSpec, paintQuantityEstimatorSpec, wallAreaCalculatorSpec, ceilingAreaCalculatorSpec, ceilingReplacementCostSpec, pipeLeakEstimatorSpec, waterPressureTroubleshooterSpec, pipeReplacementCostSpec, waterproofingCostCalculatorSpec, roofAreaCalculatorSpec, bathroomWaterproofingEstimatorSpec, balconyWaterproofingEstimatorSpec, electricalInstallationCostSpec, socketQuantityCalculatorSpec, lightingInstallationCalculatorSpec, ceilingFanInstallationEstimatorSpec, handymanCostEstimatorSpec, furnitureAssemblyEstimatorSpec, curtainInstallationCalculatorSpec, doorInstallationCostSpec, windowReplacementEstimatorSpec, glassReplacementCalculatorSpec, flooringAreaCalculatorSpec, tileQuantityCalculatorSpec, vinylFlooringCostEstimatorSpec, roofRepairEstimatorSpec, roofReplacementCostSpec, renovationBudgetCalculatorSpec, roomRenovationEstimatorSpec, kitchenRenovationEstimatorSpec, bathroomRenovationEstimatorSpec, deepCleaningCostEstimatorSpec, moveInOutCleaningCalculatorSpec };

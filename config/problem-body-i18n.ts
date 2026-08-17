@@ -786,6 +786,92 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
       q: "Bolehkah saya baiki tingkap slaid tersangkut sendiri?",
       a: "Pembersihan dan pelinciran rel boleh dibuat sendiri. Penggantian roller biasanya memerlukan mengangkat sash tingkap — lebih baik dilakukan secara profesional."
     }
+  },
+  "aircon-not-cold": {
+    symptom: "Aircond berjalan tetapi menghembus udara panas atau hanya sedikit sejuk, jadi bilik tidak pernah mencapai suhu yang ditetapkan.",
+    causes: ["Gas bahan pendingin rendah atau bocor", "Gegelung evaporator tersumbat habuk", "Penapis udara kotor menyekat aliran", "Pemampat atau sensor suhu rosak"],
+    solutions: ["Bersihkan penapis udara dan gegelung evaporator", "Jalankan pemeriksaan kebocoran dan top-up bahan pendingin ke PSI yang betul", "Ganti sensor suhu atau termistor yang rosak", "Baiki atau ganti pemampat jika ia telah gagal"],
+    whenToCall: ["Unit berjalan sepanjang hari tanpa menyejuk", "Gas baru di-top-up tetapi udara masih panas", "Ada bunyi desisan atau fros terbentuk pada paip"],
+    localFaq: {
+      q: "Kenapa aircond saya panas walaupun tetapan sejuk?",
+      a: "Selalunya gas kurang, gegelung kotor, atau pemampat mula gagal — semuanya boleh didiagnosis dalam satu lawatan servis."
+    }
+  },
+  "aircon-water-leaking": {
+    symptom: "Air menitis dari unit dalaman atau mengalir ke dinding, biasanya daripada saliran tersumbat atau unit senget.",
+    causes: ["Paip saliran tersumbat atau kotor", "Penapis udara tersumbat menyebabkan ais terbentuk lalu mencair", "Pam saliran gagal (unit kaset)", "Unit senget atau pemasangan kurang baik"],
+    solutions: ["Bersihkan dan bilas paip saliran", "Bersihkan penapis dan gegelung untuk menghentikan ais", "Ganti pam saliran yang gagal", "Aras semula unit dalaman dan periksa pemasangan"],
+    whenToCall: ["Air menitis ke perabot atau lantai", "Dinding menunjukkan kesan air di bawah unit", "Air bocor walaupun selepas diservis"],
+    localFaq: {
+      q: "Berbahayakah kebocoran air aircond?",
+      a: "Ia boleh merosakkan dinding dan lantai serta menggalakkan kulat — sebaiknya dibaiki segera."
+    }
+  },
+  "aircon-making-noise": {
+    symptom: "Unit dalaman atau luaran mengeluarkan bunyi bergetar, berdengung, berdesing atau mengisar semasa beroperasi.",
+    causes: ["Panel, skru atau braket longgar", "Serpihan atau ais pada kipas blower", "Galas motor kipas haus", "Pemampat atau kontaktor gagal"],
+    solutions: ["Ketatkan panel dan pelekap yang longgar", "Bersihkan serpihan dari kipas dan gegelung", "Ganti motor kipas yang haus", "Ganti kontaktor atau pemampat yang gagal"],
+    whenToCall: ["Bunyi semakin kuat dari masa ke semasa", "Ada bunyi mengisar atau bunyi logam", "Unit luaran bergetar berlebihan"],
+    localFaq: {
+      q: "Bolehkah bunyi bising merosakkan unit?",
+      a: "Ya — motor yang mengisar atau pemampat yang gagal akan menjadi lebih teruk dan lebih mahal untuk dibaiki jika dibiarkan."
+    }
+  },
+  "aircon-bad-smell": {
+    symptom: "Aircond menghembus bau apak, berkulat atau masam ke dalam bilik, terutamanya apabila mula dihidupkan.",
+    causes: ["Kulat dan bakteria pada gegelung evaporator", "Air bertakung dalam dulang saliran", "Roda blower kotor", "Habuk dan serpihan terperangkap dalam penapis"],
+    solutions: ["Bersihkan dan sanitasi gegelung dan blower", "Bilas dulang dan paip saliran", "Sapukan rawatan anti-mikrob", "Cucian kimia atau overhaul untuk pembersihan mendalam"],
+    whenToCall: ["Bau berterusan selepas membersihkan penapis", "Kulat kelihatan pada bolong", "Bau mencetuskan alahan atau gangguan pernafasan"],
+    localFaq: {
+      q: "Bagaimana untuk elak bau aircond berulang?",
+      a: "Servis setiap 3–6 bulan, pastikan penapis bersih, dan jalankan mod kipas beberapa minit sebelum menutup unit."
+    }
+  },
+  "aircon-weak-airflow": {
+    symptom: "Aircond menyejuk tetapi aliran udara lemah, jadi bilik kekal panas walaupun kelajuan kipas maksimum.",
+    causes: ["Penapis udara tersumbat", "Gegelung evaporator kotor atau berais", "Motor blower dalaman gagal", "Dukt tersumbat atau bersaiz kecil"],
+    solutions: ["Bersihkan atau ganti penapis udara", "Basuh gegelung evaporator untuk memulihkan aliran", "Ganti motor blower yang lemah", "Periksa dan bersihkan dukt atau bolong"],
+    whenToCall: ["Aliran menurun walaupun pada kelajuan kipas maksimum", "Unit bising sambil berhembus lemah", "Sesetengah bilik tidak mencapai suhu"],
+    localFaq: {
+      q: "Berapa kerap penapis perlu dibersihkan?",
+      a: "Setiap 2–4 minggu untuk penggunaan berat, kerana penapis tersumbat menyekat aliran udara."
+    }
+  },
+  "aircon-not-turning-on": {
+    symptom: "Aircond tidak bertindak balas kepada remote atau butang kuasa, atau ia menutup sendiri sejurus selepas dihidupkan.",
+    causes: ["Breaker terputus atau fius terbakar", "Remote atau papan penerima rosak", "Kapasitor atau kontaktor gagal", "Papan kawalan PCB rosak"],
+    solutions: ["Periksa breaker dan bekalan kuasa", "Uji dan ganti remote atau penerima", "Ganti kapasitor atau kontaktor yang gagal", "Baiki atau ganti papan kawalan PCB"],
+    whenToCall: ["Unit mati sepenuhnya", "Ia menutup sendiri berulang kali", "Ada bau hangus atau breaker trip"],
+    localFaq: {
+      q: "Adakah lonjakan kuasa boleh merosakkan aircond?",
+      a: "Ya — lonjakan sering merosakkan papan PCB atau kapasitor, jadi pelindung lonjakan disyorkan."
+    }
+  },
+  "aircon-tripping-mcb": {
+    symptom: "Aircond menyebabkan MCB atau RCCB trip setiap kali ia dihidupkan, memutuskan bekalan ke bilik.",
+    causes: ["Pemampat gagal menarik arus berlebihan", "Kapasitor atau pendawaian terpintas", "Breaker bersaiz kecil atau litar dikongsi", "Kelembapan masuk ke dalam unit luaran"],
+    solutions: ["Uji tarikan arus pemampat", "Ganti kapasitor yang terpintas", "Pasang breaker khas bersaiz betul", "Keringkan dan kedap sambungan elektrik luaran"],
+    whenToCall: ["Breaker trip setiap kali aircond dihidupkan", "Perkakas lain pada litar sama terjejas", "Ada bau hangus berhampiran unit"],
+    localFaq: {
+      q: "Selamatkah terus reset breaker?",
+      a: "Tidak — trip berulang bermakna ada kerosakan elektrik sebenar dan berisiko memanaskan pendawaian."
+    }
+  },
+  "ice-forming-on-aircon": {
+    symptom: "Fros atau ais terbentuk pada gegelung evaporator atau paip tembaga, dan unit berhenti menyejuk dengan betul.",
+    causes: ["Gas bahan pendingin rendah", "Penapis kotor atau gegelung tersumbat", "Kipas blower berjalan terlalu perlahan", "Termostat atau sensor rosak"],
+    solutions: ["Nyahbekukan unit dan bersihkan gegelung", "Top-up bahan pendingin selepas pemeriksaan kebocoran", "Ganti motor blower yang gagal", "Ganti sensor suhu yang rosak"],
+    whenToCall: ["Ais kelihatan pada paip atau gegelung", "Unit mencair dan membeku semula berulang kali", "Air menitis semasa ais mencair"],
+    localFaq: {
+      q: "Perlukah saya matikan unit yang beku?",
+      a: "Ya — tukar ke mod kipas atau matikan untuk nyahbeku, kemudian tempah servis untuk mencari punca."
+    }
+  },
+  "aircon-remote-display-issue": {
+    symptom: "Remote control tidak bertindak balas, atau paparan unit menunjukkan kod ralat, berkelip atau menjadi kosong.",
+    causes: ["Bateri remote lemah atau berkarat", "Sensor remote atau papan penerima rosak", "Pendawaian paparan longgar", "Papan PCB utama rosak"],
+    solutions: ["Ganti bateri remote", "Uji dan ganti remote atau penerima", "Pasang semula penyambung paparan", "Baiki atau ganti papan kawalan PCB"],
+    whenToCall: ["Remote hanya berfungsi pada jarak sangat dekat", "Paparan menunjukkan kod ralat", "Paparan berkelip atau kekal kosong"]
   }
 };
 
@@ -1560,6 +1646,76 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
       q: "能自己修卡住的推拉窗吗？",
       a: "轨道清洁和润滑可以自己操作。更换滚轮通常需要抬起窗扇——最好请专业人士。"
     }
+  },
+  "aircon-not-cold": {
+    symptom: "空调在运行，但吹出的是暖风或只有微弱凉风，房间始终达不到设定温度。",
+    causes: ["雪种不足或泄漏", "蒸发器被灰尘堵塞", "滤网太脏阻挡气流", "压缩机或温度传感器故障"],
+    solutions: ["清洁滤网和蒸发器", "检漏并按正确 PSI 补充雪种", "更换故障的温度传感器或热敏电阻", "压缩机损坏则维修或更换"],
+    whenToCall: ["机器开一整天都不凉", "刚加过雪种却还是吹暖风", "管道有嘶嘶声或结霜"],
+    localFaq: {
+      q: "为什么空调设了冷气还是吹热风？",
+      a: "通常是雪种不足、蒸发器脏或压缩机开始失效——一次上门保养就能诊断。"
+    }
+  },
+  "aircon-water-leaking": {
+    symptom: "室内机滴水或水沿墙流下，通常是排水管堵塞或机器倾斜所致。",
+    causes: ["排水管堵塞或脏污", "滤网堵塞导致结冰融化", "排水泵故障（卡式机）", "机器倾斜或安装不当"],
+    solutions: ["疏通冲洗排水管", "清洁滤网和蒸发器以停止结冰", "更换故障排水泵", "重新调平室内机并检查安装"],
+    whenToCall: ["水滴到家具或地板上", "机器下方墙面出现水渍", "刚保养完仍漏水"]
+  },
+  "aircon-making-noise": {
+    symptom: "室内机或室外机在运行时发出咔嗒、嗡嗡、嘶嘶或摩擦声。",
+    causes: ["面板、螺丝或支架松动", "风轮上有异物或结冰", "风扇电机轴承磨损", "压缩机或接触器故障"],
+    solutions: ["拧紧松动的面板和支架", "清理风扇和蒸发器上的异物", "更换磨损的风扇电机", "更换故障的接触器或压缩机"],
+    whenToCall: ["噪音越来越大", "出现摩擦或金属声", "室外机震动过大"],
+    localFaq: {
+      q: "噪音会损坏机器吗？",
+      a: "会——摩擦的电机或故障的压缩机拖延不修会越来越严重，维修也更贵。"
+    }
+  },
+  "aircon-bad-smell": {
+    symptom: "空调向房间吹出霉味、发酸味，尤其在刚开机时最明显。",
+    causes: ["蒸发器上滋生霉菌和细菌", "接水盘积水", "风轮脏污", "滤网内积灰"],
+    solutions: ["清洗并消毒蒸发器和风轮", "冲洗接水盘和排水管", "做抗菌处理", "化学清洗或大修进行深度清洁"],
+    whenToCall: ["清洁滤网后仍有异味", "出风口可见霉斑", "异味引发过敏或呼吸不适"],
+    localFaq: {
+      q: "如何防止空调异味复发？",
+      a: "每 3–6 个月保养一次、保持滤网清洁，并在关机前先开送风模式吹几分钟。"
+    }
+  },
+  "aircon-weak-airflow": {
+    symptom: "空调制冷正常但风量很弱，即使开到最高风速房间也凉不下来。",
+    causes: ["滤网堵塞", "蒸发器脏污或结冰", "室内风轮电机老化", "风道堵塞或规格偏小"],
+    solutions: ["清洁或更换滤网", "清洗蒸发器以恢复风量", "更换老化的风轮电机", "检查并疏通风道或出风口"],
+    whenToCall: ["最高风速下风量仍小", "机器出风无力还伴有噪音", "个别房间始终不凉"],
+    localFaq: {
+      q: "滤网多久清洗一次？",
+      a: "频繁使用建议每 2–4 周一次，堵塞的滤网会阻挡气流。"
+    }
+  },
+  "aircon-not-turning-on": {
+    symptom: "空调对遥控器或电源键无反应，或开机后不久自动关机。",
+    causes: ["断路器跳闸或保险丝烧断", "遥控器或接收板故障", "电容或接触器失效", "PCB 控制板故障"],
+    solutions: ["检查断路器和电源", "检测并更换遥控器或接收器", "更换失效的电容或接触器", "维修或更换 PCB 控制板"],
+    whenToCall: ["机器完全无反应", "反复自动关机", "有焦味或断路器跳闸"]
+  },
+  "aircon-tripping-mcb": {
+    symptom: "空调一启动就导致漏电开关或断路器跳闸，切断房间电源。",
+    causes: ["压缩机故障导致电流过大", "电容或线路短路", "断路器规格偏小或回路共享", "室外机受潮进水"],
+    solutions: ["检测压缩机电流", "更换短路的电容", "安装规格正确的专用断路器", "干燥并密封室外电气连接"],
+    whenToCall: ["每次开机都跳闸", "同一回路上的其他电器也受影响", "机器附近有焦味"]
+  },
+  "ice-forming-on-aircon": {
+    symptom: "蒸发器或铜管上结霜结冰，机器制冷效果变差。",
+    causes: ["雪种不足", "滤网脏或蒸发器堵塞", "风轮转速过慢", "温控或传感器故障"],
+    solutions: ["化霜并清洁蒸发器", "检漏后补充雪种", "更换故障风轮电机", "更换故障温度传感器"],
+    whenToCall: ["管道或蒸发器可见结冰", "机器反复化霜又结冰", "化霜时往下滴水"]
+  },
+  "aircon-remote-display-issue": {
+    symptom: "遥控器无反应，或机器显示屏出现故障代码、闪烁或黑屏。",
+    causes: ["遥控器电池没电或腐蚀", "遥控传感器或接收板故障", "显示屏接线松动", "主板 PCB 故障"],
+    solutions: ["更换遥控器电池", "检测并更换遥控器或接收器", "重新插紧显示屏连接线", "维修或更换 PCB 控制板"],
+    whenToCall: ["遥控器只有凑很近才有反应", "显示屏出现故障代码", "显示屏闪烁或一直黑屏"]
   }
 };
 

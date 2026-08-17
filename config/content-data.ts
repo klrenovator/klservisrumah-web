@@ -50,7 +50,12 @@ export const clusterPages: GenericContentPage[] = [
   ["waterproofing", "pu-grouting-kl", "PU Grouting in KL", "An in-depth hub on polyurethane injection for active concrete cracks and inter-floor leaks without unnecessary tile hacking.", ["Injection packers", "High-pressure pump", "Flexible PU foam", "Leak verification"]],
   ["handyman", "tv-mounting-kl", "TV Mounting in KL", "A safety-first guide to mounting TVs on brick, concrete, and gypsum walls with the correct anchor system.", ["Wall type identification", "Stud scanning", "Bracket choice", "Weight testing"]],
   ["handyman", "door-lock-kl", "Door and Lock Repair in KL", "A practical guide for sagging doors, hinges, latch alignment, lockset replacement, and digital lock preparation.", ["Hinge checks", "Door planing", "Latch alignment", "Lockset installation"]],
-  ["handyman", "furniture-assembly-kl", "Furniture Assembly in KL", "A flat-pack assembly hub covering wardrobes, beds, desks, shelving, safety anchoring, and adjustment.", ["Part sorting", "Level assembly", "Wall anchoring", "Drawer and hinge tuning"]]
+  ["handyman", "furniture-assembly-kl", "Furniture Assembly in KL", "A flat-pack assembly hub covering wardrobes, beds, desks, shelving, safety anchoring, and adjustment.", ["Part sorting", "Level assembly", "Wall anchoring", "Drawer and hinge tuning"]],
+  ["aircon", "1hp-aircon-installation-kl", "1 HP Aircon Installation in KL", "A focused hub for installing a 1 HP wall-mounted aircon across KL & Selangor, with pricing, what's included and what the customer supplies.", ["From RM 259 installation", "7 ft copper pipe included", "Unit supplied by customer", "Vacuum commissioning & cooling test"]],
+  ["aircon", "1-5hp-aircon-installation-kl", "1.5 HP Aircon Installation in KL", "A practical guide to installing a 1.5 HP wall-mounted aircon — the most common size for Malaysian bedrooms and small living rooms.", ["From RM 259 installation", "1.5 HP sizing guidance", "7 ft copper pipe included", "Cooling test before handover"]],
+  ["aircon", "2hp-aircon-installation-kl", "2 HP Aircon Installation in KL", "Guidance for installing a 2 HP wall-mounted aircon for larger rooms, including pricing and copper pipe allowances.", ["From RM 324 installation", "2.0 HP sizing guidance", "Extra copper per foot", "Run/cooling test included"]],
+  ["aircon", "ceiling-cassette-installation-kl", "Ceiling Cassette Installation in KL", "A hub for commercial and high-ceiling ceiling cassette installation, covering 1.0–1.5 HP and larger cassette pricing.", ["From RM 377 installation", "1.0–1.5 HP cassette", "Commercial spaces", "Unit supplied by customer"]],
+  ["aircon", "commercial-aircon-installation-kl", "Commercial Aircon Installation in KL", "A guide to commercial aircon installation for offices, shops and restaurants, including ceiling cassettes and multi-unit scheduling.", ["Ceiling cassette & wall units", "After-hours scheduling", "Multi-unit pricing", "Strata / management compliance"]]
 ].map(([serviceSlug, slug, title, intro, bullets]) => ({ slug: slug as string, title: title as string, category: "Service Cluster", intro: intro as string, bullets: bullets as string[], faqs: faq(title as string), faqTopic: title as string, relatedServiceSlug: serviceSlug as keyof typeof servicesData }));
 
 export const guidePages: GenericContentPage[] = [
@@ -81,7 +86,10 @@ export const comparisonPages: GenericContentPage[] = [
   ["pu-injection-vs-surface-waterproofing", "PU Injection vs Surface Waterproofing"],
   ["fixed-quote-vs-hourly-handyman", "Fixed Quote vs Hourly Handyman"],
   ["drywall-partition-vs-glass-partition", "Drywall Partition vs Glass Partition"],
-  ["roof-coating-vs-torch-on-membrane", "Roof Coating vs Torch-On Membrane"]
+  ["roof-coating-vs-torch-on-membrane", "Roof Coating vs Torch-On Membrane"],
+  ["chemical-wash-vs-chemical-overhaul", "Chemical Wash vs Chemical Overhaul"],
+  ["inverter-vs-non-inverter-aircon", "Inverter vs Non-Inverter Aircon"],
+  ["wall-mounted-vs-ceiling-cassette-aircon", "Wall-Mounted vs Ceiling Cassette Aircon"]
 ].map(([slug, title]) => ({ slug, title, category: "Comparison", intro: `${title} compares use cases, cost ranges, durability, disruption level, and suitability for KL and Selangor properties.`, bullets: ["Best-use scenarios", "Cost and disruption comparison", "Durability considerations", "When to call a professional"], faqs: faq(title), faqTopic: title }));
 
 export const maintenancePages: GenericContentPage[] = [
@@ -166,6 +174,52 @@ export const brandPages: GenericContentPage[] = [
   ["bostik-waterproofing-application", "Bostik Waterproofing Application", "waterproofing"],
   ["mapei-waterproofing-application", "Mapei Waterproofing Application", "waterproofing"]
 ].map(([slug, title, relatedServiceSlug]) => ({ slug, title, category: "Brand Guide", intro: `${title} explains when this brand or material category is suitable, how it should be applied, and what homeowners should check before approving a quote.`, bullets: ["Compatibility with the surface", "Correct preparation method", "Warranty and care considerations", "No claim of exclusive partnership unless documented"], faqs: faq(title), faqTopic: title, relatedServiceSlug: relatedServiceSlug as keyof typeof servicesData }));
+
+// Aircon brand pages — 20 brands, same content model as klrenovator.com/brands/*.
+// Each lists brand-specific service scope, the common faults we see on that
+// brand, and the starting prices for each fix.
+const airconBrands: [string, string][] = [
+  ["daikin-aircon-service-malaysia", "Daikin Aircon Service Malaysia"],
+  ["panasonic-aircon-service-malaysia", "Panasonic Aircon Service Malaysia"],
+  ["mitsubishi-electric-aircon-service-malaysia", "Mitsubishi Electric Aircon Service Malaysia"],
+  ["york-aircon-service-malaysia", "York Aircon Service Malaysia"],
+  ["acson-aircon-service-malaysia", "Acson Aircon Service Malaysia"],
+  ["carrier-aircon-service-malaysia", "Carrier Aircon Service Malaysia"],
+  ["midea-aircon-service-malaysia", "Midea Aircon Service Malaysia"],
+  ["haier-aircon-service-malaysia", "Haier Aircon Service Malaysia"],
+  ["toshiba-aircon-service-malaysia", "Toshiba Aircon Service Malaysia"],
+  ["hitachi-aircon-service-malaysia", "Hitachi Aircon Service Malaysia"],
+  ["samsung-aircon-service-malaysia", "Samsung Aircon Service Malaysia"],
+  ["lg-aircon-service-malaysia", "LG Aircon Service Malaysia"],
+  ["sharp-aircon-service-malaysia", "Sharp Aircon Service Malaysia"],
+  ["fujitsu-aircon-service-malaysia", "Fujitsu Aircon Service Malaysia"],
+  ["gree-aircon-service-malaysia", "Gree Aircon Service Malaysia"],
+  ["national-aircon-service-malaysia", "National Aircon Service Malaysia"],
+  ["hisense-aircon-service-malaysia", "Hisense Aircon Service Malaysia"],
+  ["aux-aircon-service-malaysia", "Aux Aircon Service Malaysia"],
+  ["tcl-aircon-service-malaysia", "TCL Aircon Service Malaysia"],
+  ["isonic-aircon-service-malaysia", "Isonic Aircon Service Malaysia"]
+];
+(brandPages as GenericContentPage[]).push(
+  ...airconBrands.map(([slug, title]) => {
+    const brand = title.replace(" Aircon Service Malaysia", "");
+    return {
+      slug,
+      title,
+      category: "Brand Guide",
+      intro: `${title} covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and installation for ${brand} air-conditioners across KL & Selangor — including the common faults we see on this brand, and the starting prices for each fix. From RM 129 with a 1-month workmanship warranty.`,
+      bullets: [
+        "Compatibility with the surface",
+        "Correct preparation method",
+        "Warranty and care considerations",
+        "No claim of exclusive partnership unless documented"
+      ],
+      faqs: faq(title),
+      faqTopic: title,
+      relatedServiceSlug: "aircon" as keyof typeof servicesData
+    };
+  })
+);
 
 export const topPages: GenericContentPage[] = [
   ["best-house-painters-kl-2026", "How to Compare House Painters in KL (2026)"],

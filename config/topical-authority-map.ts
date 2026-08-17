@@ -122,6 +122,7 @@ const PROB: Record<string, string[]> = {
   cctv: ["cctv-not-recording", "cctv-not-recording-storage-full"],
   autogate: ["autogate-not-closing", "autogate-remote-not-working"],
   welding: ["rusting-window-grille", "loose-metal-gate-hinges"],
+  aircon: ["aircon-not-cold", "aircon-water-leaking", "aircon-making-noise", "aircon-bad-smell", "aircon-weak-airflow", "aircon-not-turning-on", "aircon-tripping-mcb", "ice-forming-on-aircon", "aircon-remote-display-issue"],
 };
 
 const BLOG: Record<string, string[]> = {
@@ -153,6 +154,7 @@ const BLOG: Record<string, string[]> = {
   cctv: ["cctv-installation-buying-guide-kl"],
   autogate: ["auto-gate-installation-guide-malaysia"],
   welding: [],
+  aircon: ["aircon-service-price-malaysia-2026", "chemical-wash-vs-chemical-overhaul-aircon", "aircon-gas-topup-guide-malaysia", "aircon-installation-cost-malaysia", "how-often-to-service-aircon-malaysia"],
 };
 
 /* ──────────────────────────────────────────────────────────────────────────
@@ -578,6 +580,25 @@ export const topicalAuthorityMap: Record<string, TopicalSilo> = {
       { specialtySlug: "main-gate-fabrication", relatedProblems: ["loose-metal-gate-hinges", "rusting-window-grille"], relatedBlogs: [] },
       { specialtySlug: "on-site-welding-repair", relatedProblems: ["loose-metal-gate-hinges", "rusting-window-grille"], relatedBlogs: [] },
       { specialtySlug: "staircase-stringer-fabrication", relatedProblems: ["loose-metal-gate-hinges"], relatedBlogs: [] },
+    ],
+  },
+  aircon: {
+    serviceSlug: "aircon",
+    relatedServices: ["electrical", "ceiling", "house-renovation", "handyman"],
+    relatedProblems: PROB.aircon,
+    topAreas: KL_SELANGOR_AREAS,
+    faqSlugs: ["aircon-faq"],
+    relatedBlogs: BLOG.aircon,
+    targetQueries: ["aircon service KL", "aircond service price Malaysia", "aircon chemical wash Selangor", "aircon installation cost KL", "aircon gas top up Malaysia"],
+    specialties: [
+      { specialtySlug: "basic-servicing", relatedProblems: ["aircon-not-cold", "aircon-weak-airflow", "aircon-bad-smell"], relatedBlogs: ["how-often-to-service-aircon-malaysia", "aircon-service-price-malaysia-2026"] },
+      { specialtySlug: "chemical-wash", relatedProblems: ["aircon-bad-smell", "aircon-water-leaking", "aircon-not-cold"], relatedBlogs: ["chemical-wash-vs-chemical-overhaul-aircon"] },
+      { specialtySlug: "chemical-overhaul", relatedProblems: ["aircon-water-leaking", "aircon-bad-smell", "aircon-not-cold"], relatedBlogs: ["chemical-wash-vs-chemical-overhaul-aircon"] },
+      { specialtySlug: "gas-top-up", relatedProblems: ["aircon-not-cold", "ice-forming-on-aircon"], relatedBlogs: ["aircon-gas-topup-guide-malaysia"] },
+      { specialtySlug: "installation", relatedProblems: ["aircon-water-leaking", "aircon-not-cold"], relatedBlogs: ["aircon-installation-cost-malaysia"] },
+      { specialtySlug: "repair", relatedProblems: ["aircon-not-turning-on", "aircon-tripping-mcb", "aircon-making-noise", "aircon-remote-display-issue"], relatedBlogs: ["aircon-service-price-malaysia-2026"] },
+      { specialtySlug: "ceiling-cassette", relatedProblems: ["aircon-water-leaking", "aircon-not-cold"], relatedBlogs: ["aircon-installation-cost-malaysia"] },
+      { specialtySlug: "dismantling-and-relocation", relatedProblems: ["aircon-water-leaking"], relatedBlogs: ["aircon-installation-cost-malaysia"] },
     ],
   },
 };

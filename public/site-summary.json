@@ -212,6 +212,13 @@
       "startPrice": "RM 280",
       "warranty": "12-Month Welding & Fabrication Warranty",
       "path": "/services/welding"
+    },
+    {
+      "slug": "aircon",
+      "title": "Aircon Service, Repair & Installation",
+      "startPrice": "RM 129",
+      "warranty": "1-Month Workmanship Warranty (3-Month Parts Warranty)",
+      "path": "/services/aircon"
     }
   ],
   "primaryHubs": [
@@ -560,15 +567,78 @@
         "ms": "/ms/alatan/cuci-pindah-masuk-keluar",
         "zh": "/zh/gongju/搬家清洁计算器"
       }
+    },
+    {
+      "slug": "aircon-installation-cost",
+      "heading": "Aircon Installation Cost Calculator for KL & Selangor",
+      "urls": {
+        "en": "/tools/aircon-installation-cost",
+        "ms": "/ms/alatan/kalkulator-kos-pemasangan-aircond",
+        "zh": "/zh/gongju/空调安装费用计算器"
+      }
+    },
+    {
+      "slug": "aircon-gas-topup-cost",
+      "heading": "Aircon Gas Top-Up Cost Calculator for KL & Selangor",
+      "urls": {
+        "en": "/tools/aircon-gas-topup-cost",
+        "ms": "/ms/alatan/kalkulator-kos-topup-gas-aircond",
+        "zh": "/zh/gongju/空调加雪种费用计算器"
+      }
+    },
+    {
+      "slug": "aircon-size-calculator",
+      "heading": "Aircon Size Calculator — What HP Do You Need?",
+      "urls": {
+        "en": "/tools/aircon-size-calculator",
+        "ms": "/ms/alatan/kalkulator-saiz-aircond",
+        "zh": "/zh/gongju/空调匹数计算器"
+      }
+    },
+    {
+      "slug": "aircon-btu-calculator",
+      "heading": "Aircon BTU Calculator for Malaysian Rooms",
+      "urls": {
+        "en": "/tools/aircon-btu-calculator",
+        "ms": "/ms/alatan/kalkulator-btu-aircond",
+        "zh": "/zh/gongju/空调BTU计算器"
+      }
+    },
+    {
+      "slug": "aircon-electricity-cost",
+      "heading": "Aircon Electricity Cost Calculator for Malaysia",
+      "urls": {
+        "en": "/tools/aircon-electricity-cost",
+        "ms": "/ms/alatan/kalkulator-kos-elektrik-aircond",
+        "zh": "/zh/gongju/空调电费计算器"
+      }
+    },
+    {
+      "slug": "aircon-savings-calculator",
+      "heading": "Inverter Aircon Savings Calculator for Malaysia",
+      "urls": {
+        "en": "/tools/aircon-savings-calculator",
+        "ms": "/ms/alatan/kalkulator-penjimatan-aircond-inverter",
+        "zh": "/zh/gongju/变频空调省电计算器"
+      }
+    },
+    {
+      "slug": "aircon-service-picker",
+      "heading": "Which Aircon Service Do I Need? — Diagnostic",
+      "urls": {
+        "en": "/tools/aircon-service-picker",
+        "ms": "/ms/alatan/diagnostik-servis-aircond",
+        "zh": "/zh/gongju/空调服务诊断"
+      }
     }
   ],
   "counts": {
-    "services": 28,
-    "subServices": 112,
+    "services": 29,
+    "subServices": 120,
     "areaPages": 37,
-    "problemPages": 77,
-    "blogPosts": 224,
-    "indexablePages": 4264
+    "problemPages": 86,
+    "blogPosts": 229,
+    "indexablePages": 4479
   },
   "pricingPrinciple": "fair standard Malaysian pricing, itemised and confirmed in writing before work begins",
   "hours": "Mon–Sun · 9:00 AM – 6:00 PM (Everyday Open)",

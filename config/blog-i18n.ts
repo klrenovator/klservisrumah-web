@@ -3041,6 +3041,314 @@ Hentikan bocor bumbung di punca dengan re-bedding dan re-pointing permatang prof
 
 通过专业的屋脊重铺与勾缝从源头阻止屋顶漏水。WhatsApp联系我们获取免费检查。`
     }
+  },
+
+  /* ── AIRCON ARTICLES ────────────────────────────────────────────────── */
+  "aircon-service-price-malaysia-2026": {
+    ms: {
+      slug: "harga-servis-aircond-malaysia-2026",
+      title: "Harga Servis Aircond Malaysia 2026: Panduan Harga Lengkap",
+      category: "Aircond",
+      excerpt: "Servis asas dari RM 129, cucian kimia dari RM 156, overhaul dari RM 286 dan pemasangan dari RM 259 — senarai harga aircond KL & Selangor yang lengkap, beserta apa yang disertakan setiap servis.",
+      metaTitle: "Harga Servis Aircond Malaysia 2026 — Panduan Harga Lengkap",
+      metaDesc: "Senarai harga servis aircond 2026 yang lengkap untuk KL & Selangor. Servis asas dari RM 129, cucian kimia dari RM 156, overhaul dari RM 286, pemasangan dari RM 259.",
+      content: `Setiap harga aircond di bawah adalah harga permulaan minimum, bukan angka tetap. Kos sebenar bergantung pada sifat dan skop kerja anda, dan pasukan teknikal kami mengesahkan harga akhir selepas lawatan tapak atau selepas menyemak foto anda.
+
+## Pembersihan — Unit Dinding
+
+| Servis | HP | Harga |
+|---|---|---|
+| Servis Asas | 1.0–1.5 HP | Dari RM 129 |
+| Servis Asas | 2.0–2.5 HP | Dari RM 156 |
+| Servis Asas | 3.0–3.5 HP | Dari RM 195 |
+| Cucian Kimia Tekanan | 1.0–1.5 HP | Dari RM 156 |
+| Cucian Kimia Tekanan | 2.0–2.5 HP | Dari RM 195 |
+| Cucian Kimia Tekanan | 3.0 HP | Dari RM 234 |
+| Overhaul Kimia | 1.0–1.5 HP | Dari RM 286 |
+| Overhaul Kimia | 2.0–2.5 HP | Dari RM 364 |
+| Overhaul Kimia | 3.0–3.5 HP | Dari RM 455 |
+
+## Top-Up Gas (Setiap PSI)
+
+Top-up gas dikenakan pada PSI sebenar yang diperlukan selepas juruteknik memeriksa di tapak. R22 ialah RM 2.50 setiap PSI, manakala R410A dan R32 ialah RM 3.00 setiap PSI. Pemeriksaan kebocoran struktur bermula dari RM 114 dan disertakan.
+
+## Pemasangan Baharu (Unit Tidak Termasuk)
+
+Pemasangan unit dinding bermula dari RM 259 (1.0–1.5 HP) sehingga RM 584 (5.0 HP). Pemasangan kaset siling bermula dari RM 377 dan unit tingkap dari RM 259. Harga adalah untuk pemasangan sahaja — unit aircond tidak termasuk.
+
+## Pembaikan & Alat Ganti
+
+Yuran diagnosis bermula dari RM 114 dan diketepikan jika dibaiki pada lawatan sama. Penggantian kapasitor bermula dari RM 195, motor kipas dari RM 390, dan pemampat dari RM 1,040. Semua alat ganti membawa jaminan 3 bulan.
+
+Lihat [halaman servis aircond](/ms/services/aircon) kami untuk pecahan penuh dan tempah sebut harga di WhatsApp.`
+    },
+    zh: {
+      slug: "aircon-service-price-malaysia-2026",
+      title: "马来西亚空调保养价格 2026：完整价格指南",
+      category: "空调",
+      excerpt: "基本保养从 RM 129 起、化学清洗从 RM 156 起、大修从 RM 286 起、安装从 RM 259 起——吉隆坡与雪兰莪完整空调价格表，附每项服务内容。",
+      metaTitle: "马来西亚空调保养价格 2026 — 完整价格指南",
+      metaDesc: "吉隆坡与雪兰莪 2026 完整空调保养价格表。基本保养从 RM 129 起、化学清洗从 RM 156 起、大修从 RM 286 起、安装从 RM 259 起。",
+      content: `以下所有空调价格都是最低起价，而非固定价。实际费用取决于您工程的性质与范围，我们的技术团队会在现场勘查或查看您的照片后确认最终价格。
+
+## 清洁 — 挂壁机
+
+| 服务 | 匹数 | 价格 |
+|---|---|---|
+| 基本保养 | 1.0–1.5 HP | 从 RM 129 起 |
+| 基本保养 | 2.0–2.5 HP | 从 RM 156 起 |
+| 基本保养 | 3.0–3.5 HP | 从 RM 195 起 |
+| 高压化学清洗 | 1.0–1.5 HP | 从 RM 156 起 |
+| 高压化学清洗 | 2.0–2.5 HP | 从 RM 195 起 |
+| 高压化学清洗 | 3.0 HP | 从 RM 234 起 |
+| 化学大修 | 1.0–1.5 HP | 从 RM 286 起 |
+| 化学大修 | 2.0–2.5 HP | 从 RM 364 起 |
+| 化学大修 | 3.0–3.5 HP | 从 RM 455 起 |
+
+## 加雪种（按 PSI）
+
+加雪种按技术员现场检测后实际所需的 PSI 计费。R22 为每 PSI RM 2.50，R410A 与 R32 为每 PSI RM 3.00。结构性检漏从 RM 114 起并已包含。
+
+## 新安装（不含主机）
+
+挂壁机安装从 RM 259 起（1.0–1.5 HP）至 RM 584（5.0 HP）。天花卡式安装从 RM 377 起，窗式机从 RM 259 起。价格仅含安装——空调主机不包含在内。
+
+## 维修与配件
+
+诊断费从 RM 114 起，当天维修则免收。电容更换从 RM 195 起，风扇电机从 RM 390 起，压缩机从 RM 1,040 起。所有配件享有 3 个月保修。
+
+查看我们的[空调服务页面](/zh/services/aircon)获取完整明细并在 WhatsApp 预约报价。`
+    }
+  },
+  "chemical-wash-vs-chemical-overhaul-aircon": {
+    ms: {
+      slug: "cucian-kimia-vs-overhaul-kimia-aircond",
+      title: "Cucian Kimia vs Overhaul Kimia: Servis Aircond Mana Yang Anda Perlukan?",
+      category: "Aircond",
+      excerpt: "Cucian kimia membersihkan gegelung dan blower tanpa menanggalkan unit; overhaul membuka unit sepenuhnya. Beginilah cara memilih yang sesuai untuk aircond dan bajet anda.",
+      metaTitle: "Cucian Kimia vs Overhaul Kimia — Servis Aircond Mana?",
+      metaDesc: "Cucian kimia vs overhaul kimia untuk aircond anda di KL & Selangor. Bandingkan kos, proses dan bila setiap satu adalah penyelesaian yang betul. Cucian kimia dari RM 156, overhaul dari RM 286.",
+      content: `Memilih antara cucian kimia dan overhaul kimia bergantung kepada sejauh mana masalahnya.
+
+## Apa yang Cucian Kimia Lakukan
+
+Cucian kimia tekanan menggunakan larutan alkali atau anti-mikrob untuk membersihkan gegelung evaporator, roda blower dan saliran tanpa menanggalkan unit sepenuhnya dari dinding. Ia adalah penyelesaian standard untuk bau apak, titisan air ringan dan penyejukan berkurang selepas 6–12 bulan penggunaan.
+
+Cucian kimia unit dinding bermula dari RM 156 untuk unit 1.0–1.5 HP.
+
+## Apa yang Overhaul Kimia Lakukan
+
+Overhaul menanggalkan keseluruhan unit dari dinding, membukanya, dan membersihkan setiap bahagian secara mendalam — gegelung, blower, sarung kipas dan dulang saliran. Ia adalah penyelesaian muktamad untuk kebocoran air kronik dan unit yang sangat tersumbat.
+
+Overhaul kimia bermula dari RM 286 untuk unit 1.0–1.5 HP.
+
+## Cara Memilih
+
+- Pilih **cucian kimia** apabila unit menyejuk tetapi berbau sedikit, menitis sekali-sekala, atau terlalu lama tidak dicuci.
+- Pilih **overhaul kimia** apabila unit sentiasa bocor air, tidak diservis bertahun-tahun, atau cucian kimia gagal membaikinya.
+
+Kedua-duanya dilindungi jaminan kerja 1 bulan kami. Bandingkan harga penuh di [halaman servis aircond](/ms/services/aircon) kami.`
+    },
+    zh: {
+      slug: "chemical-wash-vs-chemical-overhaul-aircon",
+      title: "化学清洗 vs 化学大修：您需要哪种空调保养？",
+      category: "空调",
+      excerpt: "化学清洗无需拆机即可清洁蒸发器和风轮；大修则整机拆下。以下是如何为您的空调和预算选择正确方案。",
+      metaTitle: "化学清洗 vs 化学大修 — 选哪种空调保养？",
+      metaDesc: "吉隆坡与雪兰莪空调的化学清洗 vs 化学大修。对比费用、流程以及各自适用的场景。化学清洗从 RM 156 起，大修从 RM 286 起。",
+      content: `选择化学清洗还是化学大修，取决于问题的严重程度。
+
+## 化学清洗做什么
+
+高压化学清洗使用碱性或抗菌溶液清洁蒸发器、风轮和排水，无需把整机从墙上拆下。它是霉味、轻微滴水以及使用 6–12 个月后制冷下降的标准解决方案。
+
+挂壁机化学清洗从 RM 156 起（1.0–1.5 HP）。
+
+## 化学大修做什么
+
+大修把整机从墙上拆下、逐件分解，深度清洁每个部件——蒸发器、风轮、风扇外壳和接水盘。它是顽固漏水和严重堵塞机器的根治方案。
+
+化学大修从 RM 286 起（1.0–1.5 HP）。
+
+## 如何选择
+
+- 如果机器制冷正常但有点异味、偶尔滴水，或太久没洗，选**化学清洗**。
+- 如果机器持续漏水、多年未保养，或化学清洗未能解决，选**化学大修**。
+
+两者均享有我们 1 个月工艺保修。在[空调服务页面](/zh/services/aircon)对比完整价格。`
+    }
+  },
+  "aircon-gas-topup-guide-malaysia": {
+    ms: {
+      slug: "panduan-topup-gas-aircond-malaysia",
+      title: "Panduan Top-Up Gas Aircond: Harga R22, R410A & R32 di Malaysia",
+      category: "Aircond",
+      excerpt: "R22 ialah RM 2.50 setiap PSI, R410A dan R32 ialah RM 3.00 setiap PSI. Ketahui cara top-up gas dikenakan, mengapa pemeriksaan kebocoran penting, dan bila top-up bukan penyelesaian sebenar.",
+      metaTitle: "Panduan Top-Up Gas Aircond — Harga R22, R410A & R32",
+      metaDesc: "Harga top-up gas aircond di Malaysia: R22 RM 2.50/PSI, R410A RM 3.00/PSI, R32 RM 3.00/PSI. Cara caj dikira dan mengapa pemeriksaan kebocoran sentiasa disertakan.",
+      content: `Top-up gas ialah salah satu servis aircond yang paling kerap disalahfahami, jadi beginilah cara ia berfungsi.
+
+## Harga Gas Setiap PSI
+
+- Bahan pendingin R22: RM 2.50 setiap PSI
+- Bahan pendingin R410A: RM 3.00 setiap PSI
+- Bahan pendingin R32: RM 3.00 setiap PSI
+
+Top-up gas dikenakan pada PSI sebenar yang diperlukan selepas juruteknik memeriksa di tapak. Kami hanya mengisi jumlah yang diperlukan, dan pemeriksaan kebocoran struktur (dari RM 114) disertakan.
+
+## Mengapa Pemeriksaan Kebocoran Penting
+
+Bahan pendingin tidak akan "habis" dengan sendirinya. Jika unit anda kurang gas, hampir pasti terdapat kebocoran di suatu tempat dalam sistem. Top-up tanpa mencari kebocoran bermakna gas akan hilang semula — selalunya dalam beberapa minggu.
+
+## Bila Top-Up Gas Bukan Penyelesaian
+
+Jika unit tidak sejuk kerana gegelung kotor atau pemampat gagal, menambah gas tidak akan membantu dan mungkin membazirkan wang anda. Diagnosis yang betul dahulu akan memberitahu sama ada anda perlukan gas, cucian kimia, atau penggantian bahagian.
+
+Tempah top-up gas atau diagnosis di [halaman servis aircond](/ms/services/aircon) kami.`
+    },
+    zh: {
+      slug: "aircon-gas-topup-guide-malaysia",
+      title: "空调加雪种指南：马来西亚 R22、R410A 与 R32 价格",
+      category: "空调",
+      excerpt: "R22 为每 PSI RM 2.50，R410A 与 R32 为每 PSI RM 3.00。了解加雪种如何收费、为何检漏很重要，以及何时加雪种并非真正的解决方案。",
+      metaTitle: "空调加雪种指南 — R22、R410A 与 R32 价格",
+      metaDesc: "马来西亚空调加雪种价格：R22 每 PSI RM 2.50、R410A 每 PSI RM 3.00、R32 每 PSI RM 3.00。计费方式及为何始终包含检漏。",
+      content: `加雪种是最常被误解的空调服务之一，以下是它的真实运作方式。
+
+## 每 PSI 雪种价格
+
+- R22 制冷剂：每 PSI RM 2.50
+- R410A 制冷剂：每 PSI RM 3.00
+- R32 制冷剂：每 PSI RM 3.00
+
+加雪种按技术员现场检测后实际所需的 PSI 计费。我们只加所需用量，并包含结构性检漏（从 RM 114 起）。
+
+## 为什么检漏很重要
+
+制冷剂不会自己"用完"。如果机器雪种不足，系统中几乎一定存在泄漏。不检漏就加雪种，意味着雪种会再次泄漏——往往几周内就发生。
+
+## 什么时候加雪种不是正解
+
+如果机器不冷是因为蒸发器脏或压缩机故障，加雪种无济于事，甚至浪费钱。先做正确诊断，才能判断需要加雪种、化学清洗还是更换配件。
+
+在[空调服务页面](/zh/services/aircon)预约加雪种或诊断。`
+    }
+  },
+  "aircon-installation-cost-malaysia": {
+    ms: {
+      slug: "kos-pemasangan-aircond-malaysia",
+      title: "Kos Pemasangan Aircond di Malaysia 2026: Apa Yang Disertakan",
+      category: "Aircond",
+      excerpt: "Pemasangan unit dinding dari RM 259, kaset siling dari RM 377. Beginilah apa yang disertakan — dan mengapa unit aircond itu sendiri bukan sebahagian daripada harga.",
+      metaTitle: "Kos Pemasangan Aircond Malaysia 2026 — Apa Yang Disertakan",
+      metaDesc: "Kos pemasangan aircond di KL & Selangor: unit dinding dari RM 259, kaset siling dari RM 377. Pemasangan sahaja — unit tidak termasuk. Paip tembaga 7 kaki disertakan.",
+      content: `Harga pemasangan yang anda lihat adalah untuk pemasangan sahaja — unit aircond tidak termasuk, dan anda membekalkan unit sendiri.
+
+## Harga Pemasangan
+
+| Jenis unit | HP | Harga |
+|---|---|---|
+| Unit Dinding | 1.0–1.5 HP | Dari RM 259 |
+| Unit Dinding | 2.0 HP | Dari RM 324 |
+| Unit Dinding | 2.5 HP | Dari RM 363 |
+| Unit Dinding | 3.0 HP | Dari RM 428 |
+| Unit Dinding | 4.0 HP | Dari RM 519 |
+| Unit Dinding | 5.0 HP | Dari RM 584 |
+| Kaset Siling | 1.0–1.5 HP | Dari RM 377 |
+| Unit Tingkap | 1.0–1.5 HP | Dari RM 259 |
+
+## Apa Yang Disertakan
+
+Setiap pemasangan termasuk paip tembaga 7 kaki, penebat, pendawaian elektrik, paip saliran, braket, pentauliahan pam vakum dan ujian penyejukan. Tembaga tambahan melebihi 7 kaki dikenakan caj setiap kaki.
+
+## Mengapa Unit Tidak Termasuk
+
+Kami memasang aircond yang anda miliki atau beli secara berasingan. Ini menjadikan harga telus — anda memilih jenama dan model, dan kami mengenakan kadar pemasangan yang jelas.
+
+Lihat pecahan penuh di [halaman servis aircond](/ms/services/aircon) kami.`
+    },
+    zh: {
+      slug: "aircon-installation-cost-malaysia",
+      title: "马来西亚空调安装费用 2026：包含哪些内容",
+      category: "空调",
+      excerpt: "挂壁机安装从 RM 259 起、天花卡式从 RM 377 起。以下是具体包含内容——以及为何空调主机本身不计入价格。",
+      metaTitle: "马来西亚空调安装费用 2026 — 包含哪些内容",
+      metaDesc: "吉隆坡与雪兰莪空调安装费用：挂壁机从 RM 259 起、天花卡式从 RM 377 起。仅含安装——不含主机。含 7 英尺铜管。",
+      content: `您看到的价格仅为安装费——空调主机不包含在内，主机由您自备。
+
+## 安装价格
+
+| 机型 | 匹数 | 价格 |
+|---|---|---|
+| 挂壁机 | 1.0–1.5 HP | 从 RM 259 起 |
+| 挂壁机 | 2.0 HP | 从 RM 324 起 |
+| 挂壁机 | 2.5 HP | 从 RM 363 起 |
+| 挂壁机 | 3.0 HP | 从 RM 428 起 |
+| 挂壁机 | 4.0 HP | 从 RM 519 起 |
+| 挂壁机 | 5.0 HP | 从 RM 584 起 |
+| 天花卡式 | 1.0–1.5 HP | 从 RM 377 起 |
+| 窗式机 | 1.0–1.5 HP | 从 RM 259 起 |
+
+## 包含哪些内容
+
+每次安装包含 7 英尺铜管、保温棉、电线、排水管、支架、真空泵调试与制冷运行测试。超过 7 英尺的铜管按每英尺另计。
+
+## 为什么不含主机
+
+我们安装您已拥有或另行购买的空调。这让价格透明——您选择品牌和型号，我们收取清晰的安装费。
+
+在[空调服务页面](/zh/services/aircon)查看完整明细。`
+    }
+  },
+  "how-often-to-service-aircon-malaysia": {
+    ms: {
+      slug: "berapa-kerap-servis-aircond-malaysia",
+      title: "Berapa Kerap Anda Perlu Servis Aircond di Malaysia?",
+      category: "Aircond",
+      excerpt: "Kebanyakan rumah Malaysia perlu servis aircond setiap 3–6 bulan, dengan cucian kimia setahun sekali. Beginilah jadual yang memastikan unit anda sejuk, bersih dan cekap.",
+      metaTitle: "Berapa Kerap Servis Aircond di Malaysia — Panduan 3–6 Bulan",
+      metaDesc: "Berapa kerap anda perlu servis aircond di Malaysia? Kami syorkan servis asas setiap 3–6 bulan dan cucian kimia setahun sekali. Jadual penyelenggaraan lengkap di dalam.",
+      content: `Panas dan kelembapan Malaysia bermakna aircond anda bekerja lebih keras daripada hampir mana-mana tempat lain — jadi ia memerlukan penjagaan lebih kerap.
+
+## Kekerapan Servis Disyorkan
+
+- **Setiap 3–6 bulan**: servis asas (pembersihan penapis dan gegelung, pemeriksaan saliran dan gas). Sesuai untuk rumah yang menghidupkan aircond setiap malam.
+- **Setahun sekali**: cucian kimia tekanan untuk membuang kotoran, kulat dan bau dari gegelung dan blower.
+- **Setiap 3–5 tahun**: overhaul kimia penuh jika unit bocor air atau tidak dibersihkan dengan betul.
+
+## Tanda Anda Perlu Servis Lebih Awal
+
+- Udara tidak sejuk seperti dahulu
+- Unit menitis air atau berbau apak
+- Ada ais pada paip atau bunyi bergetar
+- Bil elektrik anda meningkat
+
+Servis berkala memastikan unit cekap, mencegah kerosakan dan memanjangkan jangka hayatnya. Tempah servis seterusnya di [halaman servis aircond](/ms/services/aircon) kami.`
+    },
+    zh: {
+      slug: "how-often-to-service-aircon-malaysia",
+      title: "马来西亚空调多久保养一次？",
+      category: "空调",
+      excerpt: "大多数马来西亚家庭应每 3–6 个月保养一次空调，每年做一次化学清洗。以下时间表可让您的机器保持制冷、清洁和高效。",
+      metaTitle: "马来西亚空调多久保养一次 — 3–6 个月指南",
+      metaDesc: "马来西亚空调多久保养一次？我们建议每 3–6 个月做一次基本保养，每年一次化学清洗。完整保养时间表见内文。",
+      content: `马来西亚的高温高湿意味着您的空调比几乎任何地方都更辛苦——因此需要更频繁的保养。
+
+## 建议保养频率
+
+- **每 3–6 个月**：基本保养（滤网和蒸发器清洁、排水和雪种检查）。适合每晚都开空调的家庭。
+- **每年一次**：高压化学清洗，清除蒸发器和风轮上的深层污垢、霉菌和异味。
+- **每 3–5 年**：如果机器漏水或长期未彻底清洁，做一次完整化学大修。
+
+## 需要提前保养的信号
+
+- 出风不如以前冷
+- 机器滴水或有霉味
+- 管道结冰或出现咔嗒噪音
+- 电费悄悄上涨
+
+定期保养能保持机器高效、预防故障并延长寿命。在[空调服务页面](/zh/services/aircon)预约下一次保养。`
+    }
   }
 };
 

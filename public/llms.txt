@@ -18,7 +18,7 @@ KL Servis Rumah provides professional home maintenance services across Kuala Lum
 - Professional Tiling & Tile Repair: from RM 14 — Floor Tiling Installation, Wall Tiling Installation, Large-Format Slab Tiling
 - Plaster Ceiling Design & Build: from RM 10 — Flat Plaster Ceiling, Tiered & L-Box Ceiling, Cove & Curved Ceiling
 
-Full directory of all 28 services: https://www.klservisrumah.my/services
+Full directory of all 29 services: https://www.klservisrumah.my/services
 
 ## Service Areas
 Kuala Lumpur, Cheras, Ampang, Setapak, Wangsa Maju, Kepong, Sri Petaling, Bukit Jalil, Mont Kiara, Bangsar, Desa ParkCity, Taman Melawati, Hulu Kelang, Petaling Jaya, Subang Jaya, Shah Alam, Puchong, Damansara, Kota Damansara, Ara Damansara, Sunway, USJ, Bandar Utama, SS2, Klang, Port Klang, Bukit Tinggi, Setia Alam, Meru, Kota Kemuning, Bukit Jelutong, Glenmarie, Batu Caves, Selayang, Rawang, Kundang, Sungai Buloh, Kajang, Semenyih, Balakong, Seri Kembangan, Pandan Indah, Bandar Puteri, Putrajaya, Cyberjaya, Dengkil, Selangor, Sentul, Bandar Botanic.
@@ -86,6 +86,13 @@ Free single-page estimators priced from the published rate list — available in
 - Bathroom Renovation Estimator: https://www.klservisrumah.my/tools/bathroom-renovation-estimator · BM https://www.klservisrumah.my/ms/alatan/renovasi-bilik-air · 中文 https://www.klservisrumah.my/zh/gongju/浴室装修估价
 - Deep Cleaning Cost Estimator: https://www.klservisrumah.my/tools/deep-cleaning-cost-estimator · BM https://www.klservisrumah.my/ms/alatan/kos-cuci-menyeluruh · 中文 https://www.klservisrumah.my/zh/gongju/深度清洁费用
 - Move-In / Move-Out Cleaning Calculator: https://www.klservisrumah.my/tools/move-in-out-cleaning-calculator · BM https://www.klservisrumah.my/ms/alatan/cuci-pindah-masuk-keluar · 中文 https://www.klservisrumah.my/zh/gongju/搬家清洁计算器
+- Aircon Installation Cost Calculator for KL & Selangor: https://www.klservisrumah.my/tools/aircon-installation-cost · BM https://www.klservisrumah.my/ms/alatan/kalkulator-kos-pemasangan-aircond · 中文 https://www.klservisrumah.my/zh/gongju/空调安装费用计算器
+- Aircon Gas Top-Up Cost Calculator for KL & Selangor: https://www.klservisrumah.my/tools/aircon-gas-topup-cost · BM https://www.klservisrumah.my/ms/alatan/kalkulator-kos-topup-gas-aircond · 中文 https://www.klservisrumah.my/zh/gongju/空调加雪种费用计算器
+- Aircon Size Calculator — What HP Do You Need?: https://www.klservisrumah.my/tools/aircon-size-calculator · BM https://www.klservisrumah.my/ms/alatan/kalkulator-saiz-aircond · 中文 https://www.klservisrumah.my/zh/gongju/空调匹数计算器
+- Aircon BTU Calculator for Malaysian Rooms: https://www.klservisrumah.my/tools/aircon-btu-calculator · BM https://www.klservisrumah.my/ms/alatan/kalkulator-btu-aircond · 中文 https://www.klservisrumah.my/zh/gongju/空调BTU计算器
+- Aircon Electricity Cost Calculator for Malaysia: https://www.klservisrumah.my/tools/aircon-electricity-cost · BM https://www.klservisrumah.my/ms/alatan/kalkulator-kos-elektrik-aircond · 中文 https://www.klservisrumah.my/zh/gongju/空调电费计算器
+- Inverter Aircon Savings Calculator for Malaysia: https://www.klservisrumah.my/tools/aircon-savings-calculator · BM https://www.klservisrumah.my/ms/alatan/kalkulator-penjimatan-aircond-inverter · 中文 https://www.klservisrumah.my/zh/gongju/变频空调省电计算器
+- Which Aircon Service Do I Need? — Diagnostic: https://www.klservisrumah.my/tools/aircon-service-picker · BM https://www.klservisrumah.my/ms/alatan/diagnostik-servis-aircond · 中文 https://www.klservisrumah.my/zh/gongju/空调服务诊断
 
 ## Shareable Per-Service Estimators
 One short, stable link per service (https://www.klservisrumah.my/estimate/<service>) that opens just the cost estimator, designed to be sent to a customer over WhatsApp so they can work out a ballpark price (labour + materials, from the published rates) on their own phone. Services with a dedicated deep tool redirect to it.
@@ -112,6 +119,7 @@ One short, stable link per service (https://www.klservisrumah.my/estimate/<servi
 - CCTV & Security Camera Installation (from RM 420): https://www.klservisrumah.my/estimate/cctv
 - Auto Gate & Motorised Gate (from RM 2,200): https://www.klservisrumah.my/estimate/autogate
 - Welding & Metal Fabrication (from RM 280): https://www.klservisrumah.my/estimate/welding
+- Aircon Service, Repair & Installation (from RM 129): https://www.klservisrumah.my/estimate/aircon
 
 ## Business Details
 - Legal Name: Multicore Dynamics Resources

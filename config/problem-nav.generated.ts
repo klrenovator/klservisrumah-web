@@ -1477,6 +1477,177 @@ export const problemNavList: ProblemNavItem[] = [
         "costRange": "每扇窗 RM 180–RM 550+"
       }
     }
+  },
+  {
+    "slug": "aircon-not-cold",
+    "serviceSlug": "aircon",
+    "title": "Aircon Not Cold (Warm Air Blowing)",
+    "symptom": "The aircon runs but blows warm or only slightly cool air, so the room never reaches the set temperature.",
+    "costRange": "RM 129–RM 455 depending on the cause",
+    "i18n": {
+      "ms": {
+        "title": "Aircond Tidak Sejuk (Hembusan Udara Panas)",
+        "symptom": "The aircon runs but blows warm or only slightly cool air, so the room never reaches the set temperature.",
+        "costRange": "RM 129–RM 455 bergantung kepada punca"
+      },
+      "zh": {
+        "title": "空调不冷（吹出热风）",
+        "symptom": "The aircon runs but blows warm or only slightly cool air, so the room never reaches the set temperature.",
+        "costRange": "RM 129–RM 455，视原因而定"
+      }
+    }
+  },
+  {
+    "slug": "aircon-water-leaking",
+    "serviceSlug": "aircon",
+    "title": "Aircon Water Leaking (Indoor Unit Dripping)",
+    "symptom": "Water drips from the indoor unit or runs down the wall, usually from a blocked drain or a tilted unit.",
+    "costRange": "RM 129–RM 455 depending on the cause",
+    "i18n": {
+      "ms": {
+        "title": "Aircond Bocor Air (Unit Dalaman Menitis)",
+        "symptom": "Water drips from the indoor unit or runs down the wall, usually from a blocked drain or a tilted unit.",
+        "costRange": "RM 129–RM 455 bergantung kepada punca"
+      },
+      "zh": {
+        "title": "空调漏水（室内机滴水）",
+        "symptom": "Water drips from the indoor unit or runs down the wall, usually from a blocked drain or a tilted unit.",
+        "costRange": "RM 129–RM 455，视原因而定"
+      }
+    }
+  },
+  {
+    "slug": "aircon-making-noise",
+    "serviceSlug": "aircon",
+    "title": "Aircon Making Noise (Rattling, Buzzing, Grinding)",
+    "symptom": "The indoor or outdoor unit makes rattling, buzzing, humming or grinding noises during operation.",
+    "costRange": "RM 195–RM 455 depending on the faulty part",
+    "i18n": {
+      "ms": {
+        "title": "Aircond Berbunyi Bising (Bergetar, Berdengung, Mengisar)",
+        "symptom": "The indoor or outdoor unit makes rattling, buzzing, humming or grinding noises during operation.",
+        "costRange": "RM 195–RM 455 bergantung kepada bahagian rosak"
+      },
+      "zh": {
+        "title": "空调有噪音（咔嗒、嗡嗡、摩擦声）",
+        "symptom": "The indoor or outdoor unit makes rattling, buzzing, humming or grinding noises during operation.",
+        "costRange": "RM 195–RM 455，视故障部件而定"
+      }
+    }
+  },
+  {
+    "slug": "aircon-bad-smell",
+    "serviceSlug": "aircon",
+    "title": "Aircon Bad Smell (Mouldy or Musty Odour)",
+    "symptom": "The aircon blows a musty, mouldy or sour smell into the room, especially when it first starts.",
+    "costRange": "RM 156–RM 455 depending on the treatment",
+    "i18n": {
+      "ms": {
+        "title": "Aircond Berbau Busuk (Bau Kulat atau Apak)",
+        "symptom": "The aircon blows a musty, mouldy or sour smell into the room, especially when it first starts.",
+        "costRange": "RM 156–RM 455 bergantung kepada rawatan"
+      },
+      "zh": {
+        "title": "空调有异味（霉味或发酸味）",
+        "symptom": "The aircon blows a musty, mouldy or sour smell into the room, especially when it first starts.",
+        "costRange": "RM 156–RM 455，视处理方式而定"
+      }
+    }
+  },
+  {
+    "slug": "aircon-weak-airflow",
+    "serviceSlug": "aircon",
+    "title": "Aircon Weak Airflow (Not Blowing Strong Enough)",
+    "symptom": "The aircon cools but the airflow is weak, so the room stays warm even at the highest fan speed.",
+    "costRange": "RM 129–RM 455 depending on the cause",
+    "i18n": {
+      "ms": {
+        "title": "Aliran Udara Aircond Lemah (Tidak Hembus Kuat)",
+        "symptom": "The aircon cools but the airflow is weak, so the room stays warm even at the highest fan speed.",
+        "costRange": "RM 129–RM 455 bergantung kepada punca"
+      },
+      "zh": {
+        "title": "空调风量小（出风无力）",
+        "symptom": "The aircon cools but the airflow is weak, so the room stays warm even at the highest fan speed.",
+        "costRange": "RM 129–RM 455，视原因而定"
+      }
+    }
+  },
+  {
+    "slug": "aircon-not-turning-on",
+    "serviceSlug": "aircon",
+    "title": "Aircon Not Turning On",
+    "symptom": "The aircon does not respond to the remote or the power button, or it switches off by itself shortly after starting.",
+    "costRange": "RM 114–RM 455 depending on the fault",
+    "i18n": {
+      "ms": {
+        "title": "Aircond Tidak Boleh Dihidupkan",
+        "symptom": "The aircon does not respond to the remote or the power button, or it switches off by itself shortly after starting.",
+        "costRange": "RM 114–RM 455 bergantung kepada kerosakan"
+      },
+      "zh": {
+        "title": "空调无法开机",
+        "symptom": "The aircon does not respond to the remote or the power button, or it switches off by itself shortly after starting.",
+        "costRange": "RM 114–RM 455，视故障而定"
+      }
+    }
+  },
+  {
+    "slug": "aircon-tripping-mcb",
+    "serviceSlug": "aircon",
+    "title": "Aircon Tripping MCB / Circuit Breaker",
+    "symptom": "The aircon trips the MCB or RCCB circuit breaker whenever it starts, cutting power to the room.",
+    "costRange": "RM 195–RM 1,040 depending on the fault",
+    "i18n": {
+      "ms": {
+        "title": "Aircond Menyebabkan MCB / Breaker Trip",
+        "symptom": "The aircon trips the MCB or RCCB circuit breaker whenever it starts, cutting power to the room.",
+        "costRange": "RM 195–RM 1,040 bergantung kepada kerosakan"
+      },
+      "zh": {
+        "title": "空调导致漏电开关 / 断路器跳闸",
+        "symptom": "The aircon trips the MCB or RCCB circuit breaker whenever it starts, cutting power to the room.",
+        "costRange": "RM 195–RM 1,040，视故障而定"
+      }
+    }
+  },
+  {
+    "slug": "ice-forming-on-aircon",
+    "serviceSlug": "aircon",
+    "title": "Ice Forming on Aircon (Frozen Coil or Pipes)",
+    "symptom": "Frost or ice builds up on the evaporator coil or the copper pipes, and the unit stops cooling properly.",
+    "costRange": "RM 129–RM 455 depending on the cause",
+    "i18n": {
+      "ms": {
+        "title": "Ais Terbentuk pada Aircond (Gegelung atau Paip Beku)",
+        "symptom": "Frost or ice builds up on the evaporator coil or the copper pipes, and the unit stops cooling properly.",
+        "costRange": "RM 129–RM 455 bergantung kepada punca"
+      },
+      "zh": {
+        "title": "空调结冰（蒸发器或管道结霜）",
+        "symptom": "Frost or ice builds up on the evaporator coil or the copper pipes, and the unit stops cooling properly.",
+        "costRange": "RM 129–RM 455，视原因而定"
+      }
+    }
+  },
+  {
+    "slug": "aircon-remote-display-issue",
+    "serviceSlug": "aircon",
+    "title": "Aircon Remote or Display Not Working",
+    "symptom": "The remote control does not respond, or the unit's display shows error codes, flickers or goes blank.",
+    "costRange": "RM 114–RM 455 depending on the fault",
+    "i18n": {
+      "ms": {
+        "title": "Remote atau Paparan Aircond Tidak Berfungsi",
+        "symptom": "The remote control does not respond, or the unit's display shows error codes, flickers or goes blank.",
+        "costRange": "RM 114–RM 455 bergantung kepada kerosakan"
+      },
+      "zh": {
+        "title": "空调遥控器或显示屏不工作",
+        "symptom": "The remote control does not respond, or the unit's display shows error codes, flickers or goes blank.",
+        "costRange": "RM 114–RM 455，视故障而定"
+      }
+    }
   }
 ];
 

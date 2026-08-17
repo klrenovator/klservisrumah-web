@@ -41,7 +41,8 @@ const trilingualSublines: Record<string, { ms: string; zh: string }> = {
   "deep-cleaning":             { ms: "Cucian mendalam", zh: "深度清洁" },
   "post-renovation-cleaning": { ms: "Cucian selepas renovasi", zh: "装修后清洁" },
   "cctv":                      { ms: "Pemasangan CCTV", zh: "监控摄像头安装" },
-  "autogate":                  { ms: "Pintu pagar automatik", zh: "自动门安装" }
+  "autogate":                  { ms: "Pintu pagar automatik", zh: "自动门安装" },
+  "aircon":                    { ms: "Servis & pemasangan aircond", zh: "空调保养与安装" }
 };
 
 /**
