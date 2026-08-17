@@ -9,7 +9,6 @@
  * deleted, but they must never be SSG'd or listed in the sitemap.
  */
 
-import { problemPages, type ProblemDetail } from "@/config/problem-data";
 
 export const PROBLEM_CANONICAL_REDIRECTS: Record<string, string> = {
   // A — geo-suffix duplicate
@@ -57,7 +56,13 @@ export function problemPath(slug: string, locale: "en" | "ms" | "zh" = "en"): st
   return urls[locale];
 }
 
-/** Live, indexable problem records (redirected near-duplicates excluded). */
-export function indexableProblemPages(): ProblemDetail[] {
-  return problemPages.filter((problem) => !isRedirectedProblemSlug(problem.slug));
-}
+/*
+ * PERFORMANCE NOTE
+ * ----------------
+ * Keep this module free of `config/problem-data` imports. It is pulled in by
+ * client components (`related-problems.tsx`) purely for slug/URL helpers, and
+ * importing the problem registry here shipped ~207 KB of causes, solutions and
+ * FAQs to the browser on every service and sub-service page. The one helper
+ * that genuinely needs the records — `indexableProblemPages()` — lives in the
+ * server-only `config/problem-index.ts`.
+ */

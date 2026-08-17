@@ -2,12 +2,11 @@
 
 import React from "react";
 import Link from "next/link";
-import { problemPages } from "@/config/problem-data";
+import { getLocalizedProblemNav, problemNavList } from "@/config/problem-nav.generated";
 import { isRedirectedProblemSlug, problemPath } from "@/config/problem-canonical";
 import { ArrowRight, AlertTriangle } from "lucide-react";
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
-import { getLocalizedProblem } from "@/lib/problem-i18n";
 
 type RelatedProblemsProps = {
   serviceSlug: string;
@@ -30,10 +29,10 @@ export function RelatedProblems({ serviceSlug, maxItems = 4 }: RelatedProblemsPr
   const t = useTranslations();
   const { lang } = useLang();
 
-  const related = problemPages
+  const related = problemNavList
     .filter((p) => p.serviceSlug === serviceSlug && !isRedirectedProblemSlug(p.slug))
     .slice(0, maxItems)
-    .map((problem) => getLocalizedProblem(problem, lang));
+    .map((problem) => getLocalizedProblemNav(problem, lang));
 
   if (related.length === 0) return null;
 

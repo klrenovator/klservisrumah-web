@@ -2,10 +2,10 @@
 
 import React from "react";
 import Link from "next/link";
-import { servicesData } from "@/config/services-data";
+import { serviceSummaryList } from "@/config/service-summary.generated";
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
-import { getLocalizedService } from "@/lib/service-i18n";
+import { getLocalizedServiceSummary } from "@/lib/service-summary-i18n";
 
 const defaultResponseTimes: Record<string, string> = {
   painting: "Scheduled / same-week",
@@ -82,8 +82,8 @@ export function ServiceComparisonTable() {
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
-              {Object.values(servicesData).map((sourceService) => {
-                const service = getLocalizedService(sourceService, lang);
+              {serviceSummaryList.map((sourceService) => {
+                const service = getLocalizedServiceSummary(sourceService, lang);
                 return (
                   <tr key={service.slug} className="align-top">
                     <td className="px-5 py-4 font-extrabold text-[#075985]">{service.title}</td>

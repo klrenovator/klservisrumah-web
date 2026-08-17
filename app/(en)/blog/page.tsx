@@ -111,7 +111,7 @@ export default function BlogPage() {
                     <div className="flex items-center gap-4 text-xs font-bold text-[#475569]">
                       <div className="flex items-center gap-1">
                         <User className="w-4 h-4 text-[#0EA5E9]" />
-                        <span>By {featuredPost.author.split(" ")[0]}</span>
+                        <span>By {featuredPost.author}</span>
                       </div>
                       <div className="flex items-center gap-1">
                         <Clock className="w-4 h-4 text-[#0EA5E9]" />
@@ -166,7 +166,7 @@ export default function BlogPage() {
                   <div className="flex items-center gap-4 text-xs font-bold text-[#475569] mt-2">
                     <div className="flex items-center gap-1">
                       <User className="w-4 h-4 text-[#0EA5E9]" />
-                      <span>By {post.author.split(" ")[0]}</span>
+                      <span>By {post.author}</span>
                     </div>
                     <div className="flex items-center gap-1">
                       <Clock className="w-4 h-4 text-[#0EA5E9]" />

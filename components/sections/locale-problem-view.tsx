@@ -4,15 +4,19 @@ import React from "react";
 import Link from "next/link";
 import { AlertTriangle, CheckCircle2, MessageCircle } from "lucide-react";
 import { useLang } from "@/context/lang-context";
+import type { Locale } from "@/lib/i18n";
 import type { ProblemDetail } from "@/config/problem-data";
-import type { ServiceDetail } from "@/config/services-data";
-import { getLocalizedProblem } from "@/lib/problem-i18n";
-import { getLocalizedService } from "@/lib/service-i18n";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 
+/**
+ * The three locale variants are resolved on the server and handed down as
+ * props. Resolving them here instead would mean importing `lib/problem-i18n`,
+ * and through it the whole ~207 KB `config/problem-data` registry, into the
+ * browser bundle of every problem page — for one record out of 77.
+ */
 type LocaleProblemViewProps = {
-  problem: ProblemDetail;
-  service: ServiceDetail;
+  problem: Record<Locale, ProblemDetail>;
+  service: { slug: string; title: Record<Locale, string> };
 };
 
 const copy = {
@@ -23,8 +27,8 @@ const copy = {
 
 export function LocaleProblemView({ problem, service }: LocaleProblemViewProps) {
   const { lang } = useLang();
-  const localizedProblem = getLocalizedProblem(problem, lang);
-  const localizedService = getLocalizedService(service, lang);
+  const localizedProblem = problem[lang] ?? problem.en;
+  const localizedServiceTitle = service.title[lang] || service.title.en;
   const t = copy[lang];
 
   return (
@@ -52,8 +56,8 @@ export function LocaleProblemView({ problem, service }: LocaleProblemViewProps) 
 
           <div className="rounded-3xl border border-slate-100 bg-white p-6 shadow-xs sm:p-8">
             <h2 className="text-2xl font-extrabold text-[#075985]">{t.related}</h2>
-            <p className="mt-2 text-sm font-semibold leading-relaxed text-[#475569]">{t.relatedBody(localizedService.title)}</p>
-            <Link href={`/services/${service.slug}`} className="mt-5 inline-flex rounded-xl bg-[#0284C7] px-5 py-3 text-sm font-extrabold text-white">{t.view} {localizedService.title}</Link>
+            <p className="mt-2 text-sm font-semibold leading-relaxed text-[#475569]">{t.relatedBody(localizedServiceTitle)}</p>
+            <Link href={`/services/${service.slug}`} className="mt-5 inline-flex rounded-xl bg-[#0284C7] px-5 py-3 text-sm font-extrabold text-white">{t.view} {localizedServiceTitle}</Link>
           </div>
 
           <div className="rounded-3xl border border-slate-100 bg-white p-6 shadow-xs sm:p-8">

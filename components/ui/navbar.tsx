@@ -7,7 +7,7 @@ import { ChevronDown, Phone } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { getLocalizedServiceNav, serviceNavList } from "@/config/service-nav.generated";
 import { getWhatsAppLink } from "@/lib/whatsapp";
-import { trackWhatsAppClick } from "@/lib/analytics";
+
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { AllPagesMenu } from "@/components/ui/all-pages-menu";
 import { Logo } from "@/components/ui/logo";
@@ -47,7 +47,7 @@ function HeaderWhatsAppActions({ compact = false }: { compact?: boolean }) {
       href={waLink}
       target="_blank"
       rel="nofollow noopener noreferrer"
-      onClick={() => trackWhatsAppClick({ page: "header_whatsapp_button" })}
+      data-analytics-page="header_whatsapp_button"
       aria-label={t("common.whatsapp")}
       className={
         compact
@@ -105,7 +105,7 @@ export function Navbar() {
       </div>
     </div>
     <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-1 min-[430px]:gap-3 px-2 min-[430px]:px-3 sm:px-6 lg:px-8">
-      <Link href="/" className="shrink-0" aria-label="KL Servis Rumah homepage"><span className="min-[430px]:hidden"><Logo size="xs" priority /></span><span className="hidden min-[430px]:inline sm:hidden"><Logo size="sm" priority /></span><span className="hidden sm:inline"><Logo size="md" priority /></span></Link>
+      <Link href="/" className="shrink-0" aria-label="KL Servis Rumah homepage"><Logo size="md" priority heightClassName="h-[34px] min-[430px]:h-[40px] sm:h-[52px]" /></Link>
       <div className="hidden items-center gap-1 lg:flex">
         {PRIMARY_LINKS.slice(0, 1).map(item => <NavLink key={item.href} href={item.href} active={pathname === item.href} label={t(item.key)} />)}
         <div className="relative" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>

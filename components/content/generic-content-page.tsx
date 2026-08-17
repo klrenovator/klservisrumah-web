@@ -4,8 +4,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { CheckCircle2, MessageCircle } from "lucide-react";
 import type { GenericContentPage } from "@/config/content-data";
-import { allGenericPages } from "@/config/content-data";
-import { servicesData } from "@/config/services-data";
+import { contentNavList, contentRelatedServiceBySlug, type ContentNavItem } from "@/config/content-nav.generated";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { InternalLinkGrid } from "@/components/internal-link-grid";
 import { useTranslations } from "@/hooks/use-translations";
@@ -17,7 +16,7 @@ type GenericContentBody = { bullets: string[]; faqs: { q: string; a: string }[] 
 export function GenericContentPageView({ page }: { page: GenericContentPage }) {
   const t = useTranslations();
   const { lang } = useLang();
-  const relatedService = page.relatedServiceSlug ? servicesData[page.relatedServiceSlug] : undefined;
+  const relatedService = page.relatedServiceSlug ? contentRelatedServiceBySlug[page.relatedServiceSlug] : undefined;
   const [remoteI18n, setRemoteI18n] = useState<GenericContentI18nLookup>(null);
   const [remoteBody, setRemoteBody] = useState<GenericContentBody>(null);
 
@@ -117,9 +116,9 @@ export function GenericContentPageView({ page }: { page: GenericContentPage }) {
         {/* Related pages in same category — improves inbound for thin hubs like /answers, /process etc.
             Uses circular next-6 selection so each page gets ~6 inbound from siblings instead of only the first 6. */}
         {(() => {
-          const allInCategory = allGenericPages.filter((p) => p.category === page.category);
+          const allInCategory = contentNavList.filter((p) => p.category === page.category);
           const currentIdx = allInCategory.findIndex((p) => p.slug === page.slug);
-          const siblings: GenericContentPage[] = [];
+          const siblings: ContentNavItem[] = [];
           for (let i = 1; i <= 6; i++) {
             if (allInCategory.length <= 1) break;
             const idx = (currentIdx + i) % allInCategory.length;
@@ -148,7 +147,7 @@ export function GenericContentPageView({ page }: { page: GenericContentPage }) {
             };
             return map[category] || "/guides";
           };
-          const getHref = (s: GenericContentPage) => {
+          const getHref = (s: ContentNavItem) => {
             if (s.category === "Service Cluster" && s.relatedServiceSlug) {
               return `/services/${s.relatedServiceSlug}/${s.slug}`;
             }

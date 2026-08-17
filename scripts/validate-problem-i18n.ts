@@ -30,12 +30,8 @@
 import { problemPages, problemI18n } from "@/config/problem-data";
 import { getLocalizedProblem } from "@/lib/problem-i18n";
 import { getLocalizedProblemBody } from "@/config/problem-body-i18n";
-import {
-  indexableProblemPages,
-  isRedirectedProblemSlug,
-  PROBLEM_CANONICAL_REDIRECTS,
-  resolveProblemSlug,
-} from "@/config/problem-canonical";
+import { isRedirectedProblemSlug, PROBLEM_CANONICAL_REDIRECTS, resolveProblemSlug } from "@/config/problem-canonical";
+import { indexableProblemPages } from "@/config/problem-index";
 
 type Issue = { key: string; locale: string; field: string; message: string };
 

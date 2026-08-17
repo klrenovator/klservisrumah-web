@@ -203,14 +203,40 @@ The project is pre-optimized for continuous zero-downtime integration on Vercel:
 ## 🔧 Development Scripts
 
 ```bash
-npm run dev             # Start development server with Turbopack
-npm run build           # Build for production
+npm run dev             # Start development server
+npm run build           # Build for production (runs the full prebuild gate first)
 npm start               # Start production server
 npm run lint            # Run ESLint
-npm run seo:audit       # Run SEO audit script
+npm run type-check      # tsc --noEmit
 npm run test:estimators # Estimator + pricing + i18n + AI-context regression suite
 npm run gen:rates       # Regenerate the estimator rate book from published pricing
 npm run gen:ai-context  # Regenerate the AI-context files from published data
+```
+
+#### Pre-build gates (run automatically by `npm run build`)
+
+| Script | Guards against |
+|---|---|
+| `gen:*` | Generated data drifting from `config/*` |
+| `validate:blogs` | Broken/missing production articles |
+| `audit:topical-map` | Internal-link silos referencing unknown slugs |
+| `audit:specialty-locale` | Thin or unbalanced MS/ZH specialty content |
+| `audit:i18n` | Missing/extra/malformed translation keys |
+| `audit:problem-i18n` | English leaking into MS/ZH problem pages |
+| `audit:client-bundle` | Heavy content registries leaking into browser bundles |
+| `test:estimators` | Pricing, estimator and AI-context regressions |
+
+#### Post-build audits (run after `npm run build`)
+
+These need the rendered `.next/server/app` output, so they are not part of
+`prebuild`. Run them in CI after the build:
+
+```bash
+npm run audit:html      # alt text, dead links, duplicate ids, one <main>, one <h1>, page weight
+npm run audit:links     # every internal href resolves to a real page/asset/redirect
+npm run audit:seo-head  # canonical, hreflang, robots, social tags, sitemap parity
+npm run audit:meta      # title/description/JSON-LD/anchor-text inventory
+npm run seo:audit       # metadata consistency report → docs/seo-audit-report.md
 ```
 
 ### Generated files — do not hand-edit
@@ -222,6 +248,8 @@ Two sets of files are **derived** from `config/*` and rewritten on every build
 |---|---|---|
 | `lib/estimator/rate-book.generated.ts` | `gen:rates` | `config/services-data.ts`, `config/market-rates.ts` |
 | `public/llms.txt`, `public/llms-full.txt`, `public/aeo-faq.txt`, `public/site-summary.json` | `gen:ai-context` | `config/site.ts`, `services-data.ts`, `area-data.ts`, `problem-data.ts`, `blog-data.ts`, `app/sitemap.ts` |
+| `config/service-summary.generated.ts`, `config/service-nav.generated.ts`, `config/quote-catalog.generated.ts`, `config/problem-nav.generated.ts`, `config/content-nav.generated.ts`, `config/dedicated-tool-cards.generated.ts`, `config/area-nav.generated.ts` | `gen:service-summary` | `config/services-data.ts`, `problem-data.ts`, `content-data.ts`, `tools-data.ts`, `area-data.ts` |
+| `config/blog-slugs.generated.json`, `config/blog-related.generated.json`, `config/blog-production.generated.json` | `gen:blog-index` | `config/blog-data*.ts` |
 
 The `public/*` files are what answer engines (ChatGPT, Perplexity, Claude,
 Gemini) read instead of the rendered pages. They previously drifted — quoting
@@ -229,6 +257,36 @@ prices years out of date and linking to a different brand's social profiles —
 so they are now generated, and `npm run test:estimators` fails the build if a
 committed copy no longer matches the published data. To change a price, a
 warranty or a social link, edit the config and rebuild.
+
+### Client bundles — never import a content registry from a client component
+
+`config/services-data.ts` (~470 KB), `problem-data.ts`, `tools-data.ts`,
+`tools-i18n.ts` and `content-data.ts` are **server-side registries**. Importing
+any of them from a `"use client"` module — directly *or through a helper* —
+inlines the whole file into the browser bundle of every route that renders the
+component. That is exactly how the homepage once reached 514 kB of first-load
+JavaScript against a 102 kB shared baseline.
+
+Client components must instead use the compact generated catalogs:
+
+| Need | Import |
+|---|---|
+| Service slug, title, starting price | `config/service-nav.generated.ts` |
+| …plus tagline, icon, warranty, sub-service names | `config/service-summary.generated.ts` |
+| …plus sub-service price and blurb | `config/quote-catalog.generated.ts` |
+| Problem link cards (title, symptom, cost range) | `config/problem-nav.generated.ts` |
+| Generic content-page siblings | `config/content-nav.generated.ts` |
+| The six hand-built calculator cards | `config/dedicated-tool-cards.generated.ts` |
+| Area slug, state, trilingual name | `config/area-nav.generated.ts` |
+
+Anything larger should be passed down as props from a server component, or
+loaded on demand with a dynamic `import()` — see `lib/smart-finder-loader.ts`,
+which keeps the ~1.1 MB Smart Service Finder engine out of the initial bundle
+until a visitor actually searches.
+
+`npm run audit:client-bundle` walks the static import graph from every client
+module and **fails the build** if any of them can reach a registry. `import type`
+is erased at compile time and is always allowed.
 
 ---
 

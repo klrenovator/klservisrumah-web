@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { areaPages } from "@/config/area-data";
+import { areaNavList } from "@/config/area-nav.generated";
 import { MapPin, ArrowRight } from "lucide-react";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { useTranslations } from "@/hooks/use-translations";
@@ -30,7 +30,7 @@ export function ServiceAreas() {
 
         {/* Suburbs Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {areaPages.map((area) => (
+          {areaNavList.map((area) => (
             <div
               key={area.slug}
               className="bg-slate-50 hover:bg-white border border-slate-100/60 hover:border-[#0EA5E9]/30 rounded-2xl p-5 shadow-3xs hover:shadow-sm transition-all duration-300 flex items-center justify-between group cursor-pointer"

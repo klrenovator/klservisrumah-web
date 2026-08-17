@@ -4,7 +4,7 @@ import React from "react";
 import { MessageCircle, Phone } from "lucide-react";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
-import { trackPhoneCall, trackWhatsAppClick } from "@/lib/analytics";
+
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
 
@@ -19,7 +19,7 @@ export function StickyMobileWhatsAppBar() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={t("common.bookWhatsAppAria")}
-          onClick={() => trackWhatsAppClick({ page: "sticky_mobile_bar" })}
+          data-analytics-page="sticky_mobile_bar"
           className="flex items-center justify-center gap-2 min-[430px]:gap-2.5 rounded-xl bg-[#25D366] px-3 min-[430px]:px-4 py-4 text-sm min-[430px]:text-base font-extrabold text-white shadow-[0_8px_20px_rgba(37,211,102,0.28)]"
         >
           <MessageCircle className="h-4 w-4 min-[430px]:h-5 min-[430px]:w-5" /> {t("common.bookWhatsApp")}
@@ -27,7 +27,7 @@ export function StickyMobileWhatsAppBar() {
         <a
           href={`tel:${siteConfig.phone}`}
           aria-label={t("common.callUsAria", { phone: siteConfig.phoneDisplay })}
-          onClick={() => trackPhoneCall({ page: "sticky_mobile_bar" })}
+          data-analytics-page="sticky_mobile_bar"
           className="flex items-center justify-center gap-2 min-[430px]:gap-2.5 rounded-xl bg-[#0284C7] px-3 min-[430px]:px-4 py-4 text-sm min-[430px]:text-base font-extrabold text-white shadow-[0_8px_20px_rgba(2,132,199,0.28)]"
         >
           <Phone className="h-4 w-4 min-[430px]:h-5 min-[430px]:w-5" /> {t("common.callUs")}

@@ -3,8 +3,10 @@ import { notFound } from "next/navigation";
 import { problemPages } from "@/config/problem-data";
 import { buildMetadata } from "@/lib/seo-meta";
 import { getLocalizedProblem } from "@/lib/problem-i18n";
-import { indexableProblemPages, isRedirectedProblemSlug, problemLocaleUrls } from "@/config/problem-canonical";
+import { isRedirectedProblemSlug, problemLocaleUrls } from "@/config/problem-canonical";
+import { indexableProblemPages } from "@/config/problem-index";
 import { LocaleProblemPage } from "@/components/sections/locale-problem-page";
+import { buildProblemDescription } from "@/lib/problem-meta";
 
 export const dynamicParams = false;
 
@@ -20,7 +22,7 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   const localized = getLocalizedProblem(problem, "ms");
   return buildMetadata({
     title: `${localized.title}: Punca, Baiki & Kos`,
-    description: localized.symptom,
+    description: buildProblemDescription(localized, "ms"),
     path: `/ms/problems/${problem.slug}`,
     type: "article",
     languageUrls: problemLocaleUrls(problem.slug),

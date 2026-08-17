@@ -6,8 +6,7 @@ import { ArrowRight, Check, Copy, MessageSquare, Share2, Sparkles } from "lucide
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
 import { trackEvent } from "@/lib/analytics";
-import { servicesData } from "@/config/services-data";
-import { getLocalizedService } from "@/lib/service-i18n";
+import { getLocalizedServiceNav, serviceNavBySlug } from "@/config/service-nav.generated";
 import { siteConfig } from "@/config/site";
 import { SITE_URL } from "@/lib/seo-meta";
 import type { EstimateLinkEntry } from "@/config/estimate-links";
@@ -31,7 +30,7 @@ export function EstimateHub({ links }: { links: EstimateLinkEntry[] }) {
   // Cards and the pre-written WhatsApp forward message embed the service name,
   // so it must follow the language pill like the rest of the hub copy.
   const localizedTitle = (entry: EstimateLinkEntry): string =>
-    getLocalizedService(servicesData[entry.slug], lang).title || entry.title;
+    getLocalizedServiceNav(serviceNavBySlug[entry.slug], lang).title || entry.title;
 
   const copyLink = async (entry: EstimateLinkEntry) => {
     const url = `${SITE_URL}${entry.path}`;

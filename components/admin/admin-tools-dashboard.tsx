@@ -12,8 +12,6 @@ import {
   Wrench,
   ShieldCheck
 } from "lucide-react";
-import { servicesData } from "@/config/services-data";
-import { toolsContent } from "@/config/tools-data";
 
 /**
  * Owner dashboard for the estimators/tools directory.
@@ -23,7 +21,21 @@ import { toolsContent } from "@/config/tools-data";
  * auth material and no client-side auth state, so there is nothing in the
  * browser bundle to extract or spoof.
  */
-export function AdminToolsDashboard() {
+/**
+ * The tool and service lists are resolved by the server page and passed down.
+ * Importing `config/tools-data` / `config/services-data` here would ship ~600 KB
+ * of copy decks and service records into the dashboard's browser bundle.
+ */
+export type AdminToolCard = { slug: string; name: string; intro: string; stats: { label: string; value: string }[] };
+export type AdminServiceCard = { slug: string; title: string; startPrice: string };
+
+export function AdminToolsDashboard({
+  tools,
+  services
+}: {
+  tools: AdminToolCard[];
+  services: AdminServiceCard[];
+}) {
   const router = useRouter();
 
   const handleLogout = async () => {
@@ -69,7 +81,7 @@ export function AdminToolsDashboard() {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Intro Banner */}
         <div className="mb-8 rounded-3xl border border-violet-200 bg-gradient-to-r from-violet-50 to-purple-50 p-6">
           <div className="flex items-start gap-4">
@@ -89,10 +101,10 @@ export function AdminToolsDashboard() {
         <section className="mb-10">
           <h3 className="mb-4 text-lg font-black text-[#075985]">📊 Detailed Estimators</h3>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {Object.entries(toolsContent).map(([slug, tool]) => (
+            {tools.map((tool) => (
               <Link
-                key={slug}
-                href={`/tools/${slug}`}
+                key={tool.slug}
+                href={`/tools/${tool.slug}`}
                 className="group rounded-2xl border border-slate-200 bg-white p-5 transition hover:border-violet-300 hover:shadow-lg"
               >
                 <div className="flex items-center justify-between">
@@ -119,7 +131,7 @@ export function AdminToolsDashboard() {
         <section className="mb-10">
           <h3 className="mb-4 text-lg font-black text-[#075985]">🔧 All Service Calculators</h3>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {Object.values(servicesData).map((service) => (
+            {services.map((service) => (
               <Link
                 key={service.slug}
                 href={`/services/${service.slug}`}
@@ -182,7 +194,7 @@ export function AdminToolsDashboard() {
             Server-verified session • Expires automatically after 8 hours
           </p>
         </div>
-      </main>
+      </div>
     </div>
   );
 }

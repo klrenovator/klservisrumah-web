@@ -8,7 +8,8 @@ import { areaPages } from "@/config/area-data";
 import { blogPosts } from "@/config/blog-data";
 import { blogI18n, localizedBlogPath } from "@/config/blog-i18n";
 import { suburbPages } from "@/config/suburb-data";
-import { indexableProblemPages, problemLocaleUrls } from "@/config/problem-canonical";
+import { problemLocaleUrls } from "@/config/problem-canonical";
+import { indexableProblemPages } from "@/config/problem-index";
 import { allGenericPages, clusterPages, maintenancePages } from "@/config/content-data";
 import { toolsList } from "@/config/tools-data";
 import { TOOLS_INDEX_PATH, toolLocaleUrls } from "@/config/tools-i18n";
@@ -89,7 +90,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/ms/terma", priority: 0.3, changeFrequency: "yearly", languages: { en: "/terms", ms: "/ms/terma", zh: "/zh/tiao-kuan" } },
     { path: "/zh/tiao-kuan", priority: 0.3, changeFrequency: "yearly", languages: { en: "/terms", ms: "/ms/terma", zh: "/zh/tiao-kuan" } },
     { path: "/projects", priority: 0.7 },
-    { path: "/problems", priority: 0.75 },
+    { path: "/problems", priority: 0.75, languages: { en: "/problems", ms: "/ms/problems", zh: "/zh/problems" } },
     { path: "/near-me", priority: 0.78 },
     { path: "/guides", priority: 0.74 },
     { path: "/guides/maintenance", priority: 0.7 },
@@ -222,6 +223,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // their full hreflang clusters).
     { path: "/ms/services", priority: 0.78, languages: { en: "/services", ms: "/ms/services", zh: "/zh/services" } },
     { path: "/zh/services", priority: 0.78, languages: { en: "/services", ms: "/ms/services", zh: "/zh/services" } },
+    // Localized problem hubs. Every MS/ZH problem page breadcrumbs up to these,
+    // and before they existed those crumbs pointed at a 404 (/ms/problems) and
+    // a soft-404 (/zh/problems, served by the Chinese catch-all).
+    { path: "/ms/problems", priority: 0.7, languages: { en: "/problems", ms: "/ms/problems", zh: "/zh/problems" } },
+    { path: "/zh/problems", priority: 0.7, languages: { en: "/problems", ms: "/ms/problems", zh: "/zh/problems" } },
   ];
 
   const genericRoutes: Entry[] = allGenericPages

@@ -7,10 +7,8 @@ import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
 import { buildServiceEstimator } from "@/lib/estimator/service-estimator";
 import { estimatePath, relatedEstimateLinks } from "@/config/estimate-links";
-import { servicesData } from "@/config/services-data";
-import { getLocalizedService } from "@/lib/service-i18n";
+import { getLocalizedServiceNav, serviceNavBySlug } from "@/config/service-nav.generated";
 import { siteConfig } from "@/config/site";
-import { trackPhoneCall } from "@/lib/analytics";
 import { EstimatorForm } from "@/components/tools/estimator/estimator-form";
 import { EstimatorShareBar } from "@/components/tools/estimator-share-bar";
 
@@ -41,7 +39,7 @@ export function EstimateSharePage({
 
   // The page-level copy is translated ("Pengira kos {service}" in MS), so the
   // service name embedded in those sentences must follow the language pill too.
-  const localizedTitle = getLocalizedService(servicesData[slug], lang).title;
+  const localizedTitle = getLocalizedServiceNav(serviceNavBySlug[slug], lang).title;
 
   const spec = useMemo(
     () => buildServiceEstimator({ slug, title: localizedTitle, warranty, t }),
@@ -54,7 +52,7 @@ export function EstimateSharePage({
     () =>
       relatedEstimateLinks(slug).map((link) => ({
         ...link,
-        title: getLocalizedService(servicesData[link.slug], lang).title
+        title: getLocalizedServiceNav(serviceNavBySlug[link.slug], lang).title
       })),
     [slug, lang]
   );
@@ -166,7 +164,7 @@ export function EstimateSharePage({
           </Link>
           <a
             href={`tel:${siteConfig.phone}`}
-            onClick={() => trackPhoneCall({ page: `estimate_${slug}` })}
+            data-analytics-page={`estimate_${slug}`}
             className="inline-flex min-h-13 flex-1 items-center justify-center gap-2 rounded-2xl border-2 border-slate-200 bg-white px-6 py-3.5 text-sm font-black text-[#075985] transition hover:border-sky-300 hover:bg-sky-50"
           >
             <Phone className="h-4 w-4 text-[#0EA5E9]" aria-hidden="true" /> {siteConfig.phoneDisplay}
