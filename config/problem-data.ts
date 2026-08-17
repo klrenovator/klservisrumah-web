@@ -6,7 +6,7 @@ export type ProblemDetail = {
     | "tiling" | "plaster-ceiling" | "skim-coat" | "flooring" | "epoxy-flooring"
     | "roof-repair" | "kitchen-cabinet" | "carpentry" | "door" | "window-repair"
     | "locksmith" | "glass-aluminium" | "cleaning" | "deep-cleaning" | "post-renovation-cleaning"
-    | "cctv" | "autogate" | "welding";
+    | "cctv" | "autogate" | "welding" | "aircon";
   title: string;
   symptom: string;
   costRange: string;
@@ -2692,6 +2692,204 @@ export const problemI18n: Partial<Record<string, Partial<Record<"ms" | "zh", Par
         { q: "推拉窗卡住了能自己动手修吗？", a: "轨道清洁和润滑可以 DIY。更换滚轮通常需要抬起窗扇——最好由专业人员操作。" },
         { q: "更换推拉窗滚轮多少钱？", a: "标准更换：每扇窗 RM 180 至 RM 320，含新滚轮和轨道润滑。" },
         { q: "应该升级为平开窗吗？", a: "平开（摇杆式）窗密封性更好、更安全。全面改造：每扇窗 RM 850 至 RM 1,800。" }
+      ]
+    }
+  },
+  "aircon-not-cold": {
+    ms: {
+      title: "Aircond Tidak Sejuk (Hembusan Udara Panas)",
+      costRange: "RM 129–RM 455 bergantung kepada punca",
+      faqs: [
+        { q: "Kenapa aircond saya menghembus udara panas?", a: "Punca paling biasa ialah bahan pendingin rendah, gegelung atau penapis tersumbat, atau pemampat yang gagal. Juruteknik boleh mendiagnosisnya di tapak dalam 30–60 minit." },
+        { q: "Adakah top-up gas sentiasa penyelesaiannya?", a: "Tidak selalu. Jika terdapat kebocoran, top-up sahaja hanyalah sementara — kebocoran mesti dikesan dan ditutup dahulu." },
+        { q: "Berapa kos untuk membaiki aircond yang tidak sejuk?", a: "Servis asas bermula dari RM 129, top-up gas dari RM 2.50 setiap PSI, dan pembaikan pemampat dari RM 1,040. Harga akhir bergantung kepada punca sebenar." },
+        { q: "Bolehkah saya terus menggunakan aircond yang tidak sejuk?", a: "Lebih baik berhenti dan periksa. Menggunakan unit yang kurang gas atau gegelung tersumbat membazir elektrik dan boleh merosakkan pemampat." }
+      ]
+    },
+    zh: {
+      title: "空调不冷（吹出热风）",
+      costRange: "RM 129–RM 455，视原因而定",
+      faqs: [
+        { q: "为什么我的空调吹出热风？", a: "最常见的原因是雪种不足、蒸发器或滤网堵塞，或压缩机故障。技术员可在现场 30–60 分钟内诊断。" },
+        { q: "加雪种一定能解决吗？", a: "不一定。如果有泄漏，单纯加雪种只是暂时的——必须先找到并封堵泄漏点。" },
+        { q: "修不冷的空调要多少钱？", a: "基本保养从 RM 129 起，加雪种从每 PSI RM 2.50 起，压缩机维修从 RM 1,040 起。最终价格取决于实际原因。" },
+        { q: "空调不冷还能继续用吗？", a: "最好停机检查。雪种不足或蒸发器堵塞的机器继续运行会浪费电并可能损坏压缩机。" }
+      ]
+    }
+  },
+  "aircon-water-leaking": {
+    ms: {
+      title: "Aircond Bocor Air (Unit Dalaman Menitis)",
+      costRange: "RM 129–RM 455 bergantung kepada punca",
+      faqs: [
+        { q: "Kenapa air menitis dari aircond saya?", a: "Biasanya disebabkan paip saliran tersumbat atau penapis kotor yang menyebabkan ais terbentuk lalu mencair dan melimpah. Cucian kimia atau overhaul akan membersihkannya." },
+        { q: "Adakah kebocoran air aircond berbahaya?", a: "Ia boleh merosakkan dinding, lantai dan perabot, serta menggalakkan kulat. Perlu dibaiki sebelum kerosakan merebak." },
+        { q: "Adakah cucian kimia akan menghentikan kebocoran?", a: "Selalunya ya, jika puncanya ialah gegelung kotor dan saliran tersumbat. Jika pam saliran atau pemasangan rosak, itu memerlukan pembaikan berasingan." },
+        { q: "Berapa cepat anda boleh membaiki aircond yang bocor?", a: "Kebanyakan punca kebocoran dibaiki dalam satu lawatan. Sumbatan teruk atau pam saliran yang gagal mungkin memerlukan penggantian bahagian lanjutan." }
+      ]
+    },
+    zh: {
+      title: "空调漏水（室内机滴水）",
+      costRange: "RM 129–RM 455，视原因而定",
+      faqs: [
+        { q: "为什么我的空调会滴水？", a: "通常是排水管堵塞，或滤网太脏导致结冰融化后溢出接水盘。化学清洗或大修可以解决。" },
+        { q: "空调漏水危险吗？", a: "会损坏墙面、地板和家具，并滋生霉菌。应在损坏扩大前尽快维修。" },
+        { q: "化学清洗能止住漏水吗？", a: "如果原因是蒸发器脏和排水堵塞，通常可以。如果是排水泵或安装问题，则需要单独维修。" },
+        { q: "修漏水的空调要多久？", a: "大多数漏水原因一次上门即可解决。严重堵塞或排水泵故障可能需要后续更换配件。" }
+      ]
+    }
+  },
+  "aircon-making-noise": {
+    ms: {
+      title: "Aircond Berbunyi Bising (Bergetar, Berdengung, Mengisar)",
+      costRange: "RM 195–RM 455 bergantung kepada bahagian rosak",
+      faqs: [
+        { q: "Adakah aircond yang bising berbahaya?", a: "Tidak berbahaya serta-merta, tetapi motor kipas yang mengisar atau pemampat yang gagal akan menjadi lebih teruk dan lebih mahal untuk dibaiki jika dibiarkan." },
+        { q: "Apakah maksud bunyi mengisar?", a: "Bunyi mengisar biasanya menunjukkan galas motor kipas haus atau serpihan tersangkut pada blower. Perlu diperiksa sebelum motor tersekat." },
+        { q: "Berapa kos untuk membaiki aircond yang bising?", a: "Pengetatan dan pembersihan bermula dari RM 129. Penggantian motor kipas bermula dari RM 390, dan pemampat dari RM 1,040." },
+        { q: "Bolehkah servis meredakan unit yang bising?", a: "Ya, jika bunyi berpunca daripada kotoran atau bahagian longgar. Cucian kimia atau servis asas selalunya menyelesaikan getaran." }
+      ]
+    },
+    zh: {
+      title: "空调有噪音（咔嗒、嗡嗡、摩擦声）",
+      costRange: "RM 195–RM 455，视故障部件而定",
+      faqs: [
+        { q: "空调噪音大危险吗？", a: "不会立即有危险，但摩擦的风扇电机或故障的压缩机会越来越严重，拖延不修只会更贵。" },
+        { q: "摩擦声代表什么？", a: "摩擦声通常表示风扇电机轴承磨损或有异物卡在风轮里。应在电机卡死前检查。" },
+        { q: "修有噪音的空调要多少钱？", a: "紧固和清洁从 RM 129 起。风扇电机更换从 RM 390 起，压缩机从 RM 1,040 起。" },
+        { q: "保养能让机器安静下来吗？", a: "如果噪音来自灰尘或松动部件，可以。化学清洗或基本保养通常能解决咔嗒和震动。" }
+      ]
+    }
+  },
+  "aircon-bad-smell": {
+    ms: {
+      title: "Aircond Berbau Busuk (Bau Kulat atau Apak)",
+      costRange: "RM 156–RM 455 bergantung kepada rawatan",
+      faqs: [
+        { q: "Kenapa aircond saya berbau busuk?", a: "Kulat dan bakteria tumbuh pada gegelung dan blower yang lembap, lalu dihembus ke dalam bilik. Cucian kimia membuang puncanya." },
+        { q: "Adakah bau itu berbahaya untuk keluarga saya?", a: "Udara berkulat boleh merengsakan alahan dan pernafasan. Membersihkan gegelung dan saliran membuang bau serta menambah baik kualiti udara." },
+        { q: "Adakah servis asas akan membuang bau?", a: "Kadangkala, tetapi cucian kimia tekanan atau overhaul kimia biasanya diperlukan untuk mensanitasi gegelung dan blower sepenuhnya." },
+        { q: "Bagaimana saya menghentikan bau daripada berulang?", a: "Servis unit setiap 3–6 bulan, pastikan penapis bersih, dan jalankan mod kipas selama beberapa minit sebelum menutup unit." }
+      ]
+    },
+    zh: {
+      title: "空调有异味（霉味或发酸味）",
+      costRange: "RM 156–RM 455，视处理方式而定",
+      faqs: [
+        { q: "为什么我的空调有异味？", a: "霉菌和细菌在潮湿的蒸发器和风轮上滋生，再吹进房间。化学清洗可以根除异味源。" },
+        { q: "这味道对家人有害吗？", a: "发霉的空气可能刺激过敏和呼吸道。清洗蒸发器和排水可以去除异味并改善空气质量。" },
+        { q: "基本保养能去除异味吗？", a: "有时可以，但通常需要高压化学清洗或化学大修才能彻底消毒蒸发器和风轮。" },
+        { q: "如何防止异味复发？", a: "每 3–6 个月保养一次，保持滤网清洁，关机前先开风扇模式吹几分钟。" }
+      ]
+    }
+  },
+  "aircon-weak-airflow": {
+    ms: {
+      title: "Aliran Udara Aircond Lemah (Tidak Hembus Kuat)",
+      costRange: "RM 129–RM 455 bergantung kepada punca",
+      faqs: [
+        { q: "Kenapa aliran udara aircond saya begitu lemah?", a: "Penapis tersumbat atau gegelung kotor adalah punca paling biasa, diikuti motor blower yang lemah. Pembersihan biasanya memulihkannya." },
+        { q: "Berapa kerap saya perlu membersihkan penapis?", a: "Setiap 2–4 minggu untuk penggunaan berat. Penapis tersumbat menyekat udara dan memaksa unit bekerja lebih keras." },
+        { q: "Adakah aliran udara lemah bermakna saya perlukan aircond baharu?", a: "Tidak semestinya. Kebanyakan kes dibaiki dengan pembersihan atau penggantian motor blower. Hanya unit yang sangat lama mungkin tidak berbaloi dibaiki." },
+        { q: "Berapa kos untuk membaiki aliran udara lemah?", a: "Servis asas bermula dari RM 129. Jika motor blower perlu diganti, ia bermula dari RM 455." }
+      ]
+    },
+    zh: {
+      title: "空调风量小（出风无力）",
+      costRange: "RM 129–RM 455，视原因而定",
+      faqs: [
+        { q: "为什么我的空调风量这么小？", a: "滤网堵塞或蒸发器脏是最常见的原因，其次是风轮电机老化。清洁通常可以恢复。" },
+        { q: "滤网应该多久清洗一次？", a: "频繁使用的话每 2–4 周一次。堵塞的滤网会阻挡气流，让机器更吃力。" },
+        { q: "风量小是不是要换新空调？", a: "不一定。大多数情况靠清洁或更换风轮电机就能解决。只有很老的机器才可能不值得修。" },
+        { q: "修风量小要多少钱？", a: "基本保养从 RM 129 起。如需更换风轮电机，从 RM 455 起。" }
+      ]
+    }
+  },
+  "aircon-not-turning-on": {
+    ms: {
+      title: "Aircond Tidak Boleh Dihidupkan",
+      costRange: "RM 114–RM 455 bergantung kepada kerosakan",
+      faqs: [
+        { q: "Kenapa aircond saya tidak boleh dihidupkan?", a: "Ia boleh jadi breaker terputus, remote mati, kapasitor gagal atau PCB rosak. Lawatan diagnosis dari RM 114 akan mengenal pastinya." },
+        { q: "Adakah yuran diagnosis dikembalikan?", a: "Yuran diagnosis diketepikan jika kami membaiki unit semasa lawatan yang sama." },
+        { q: "Bolehkah lonjakan kuasa merosakkan aircond?", a: "Ya. Lonjakan selalunya merosakkan papan PCB atau kapasitor. Pelindung lonjakan pada litar khas membantu mencegahnya." },
+        { q: "Berapa kos untuk membaiki aircond yang tidak boleh dihidupkan?", a: "Penggantian kapasitor bermula dari RM 195 dan pembaikan PCB dari RM 455. Harga akhir bergantung kepada bahagian yang gagal." }
+      ]
+    },
+    zh: {
+      title: "空调无法开机",
+      costRange: "RM 114–RM 455，视故障而定",
+      faqs: [
+        { q: "为什么我的空调开不了机？", a: "可能是断路器跳闸、遥控器没电、电容失效或 PCB 故障。从 RM 114 起的诊断上门可确定原因。" },
+        { q: "诊断费会退吗？", a: "如果当天上门就修好，诊断费会免收。" },
+        { q: "电涌会烧坏空调吗？", a: "会。电涌常损坏 PCB 主板或电容。在专用回路上加装电涌保护器可预防。" },
+        { q: "修开不了机的空调要多少钱？", a: "电容更换从 RM 195 起，PCB 维修从 RM 455 起。最终价格取决于故障部件。" }
+      ]
+    }
+  },
+  "aircon-tripping-mcb": {
+    ms: {
+      title: "Aircond Menyebabkan MCB / Breaker Trip",
+      costRange: "RM 195–RM 1,040 bergantung kepada kerosakan",
+      faqs: [
+        { q: "Kenapa aircond saya menyebabkan breaker trip?", a: "Biasanya pemampat yang gagal, kapasitor terpintas, atau litar bersaiz tidak mencukupi. Perlu diperiksa oleh juruteknik untuk mengelakkan risiko kebakaran." },
+        { q: "Adakah selamat untuk terus reset breaker?", a: "Tidak. Trip berulang bermakna ada kerosakan elektrik sebenar. Terus reset berisiko memanaskan pendawaian." },
+        { q: "Perlukah saya panggil juruelektrik atau juruteknik aircond?", a: "Juruteknik aircond mendiagnosis bahagian unit manakala juruelektrik memeriksa litar. Kami menyelaras kedua-duanya jika perlu." },
+        { q: "Berapa kos untuk membaiki aircond yang menyebabkan trip?", a: "Penggantian kapasitor bermula dari RM 195, manakala penggantian pemampat bermula dari RM 1,040." }
+      ]
+    },
+    zh: {
+      title: "空调导致漏电开关 / 断路器跳闸",
+      costRange: "RM 195–RM 1,040，视故障而定",
+      faqs: [
+        { q: "为什么我的空调会导致断路器跳闸？", a: "通常是压缩机故障、电容短路或回路规格不足。应由技术员检查，以免引发火灾风险。" },
+        { q: "一直重置断路器安全吗？", a: "不安全。反复跳闸意味着存在真实电气故障，持续重置有过热起火风险。" },
+        { q: "我该找电工还是空调师傅？", a: "空调师傅诊断主机侧，电工检查回路。需要时我们两边协调。" },
+        { q: "修导致跳闸的空调要多少钱？", a: "电容更换从 RM 195 起，压缩机更换从 RM 1,040 起。" }
+      ]
+    }
+  },
+  "ice-forming-on-aircon": {
+    ms: {
+      title: "Ais Terbentuk pada Aircond (Gegelung atau Paip Beku)",
+      costRange: "RM 129–RM 455 bergantung kepada punca",
+      faqs: [
+        { q: "Kenapa ada ais pada aircond saya?", a: "Ais terbentuk apabila gegelung terlalu sejuk — biasanya daripada gas rendah, gegelung tersumbat, atau aliran udara lemah di atas gegelung." },
+        { q: "Perlukah saya menutup unit jika ia beku?", a: "Ya. Tukar ke mod kipas atau matikan untuk membiarkan ia nyahbeku, kemudian tempah servis untuk mencari dan membaiki puncanya." },
+        { q: "Adakah ais merosakkan aircond?", a: "Lama-kelamaan ais boleh merosakkan gegelung dan pemampat. Ia juga bermakna unit tidak menyejuk dengan cekap." },
+        { q: "Berapa kos untuk membaiki aircond yang beku?", a: "Pembersihan bermula dari RM 129, dan top-up gas dari RM 2.50 setiap PSI. Cucian kimia penuh bermula dari RM 156." }
+      ]
+    },
+    zh: {
+      title: "空调结冰（蒸发器或管道结霜）",
+      costRange: "RM 129–RM 455，视原因而定",
+      faqs: [
+        { q: "为什么我的空调会结冰？", a: "蒸发器过冷时就会结冰——通常是雪种不足、蒸发器堵塞或出风不畅导致。" },
+        { q: "结冰了要关机吗？", a: "要。切到送风或关机让其化霜，然后预约保养查找并修复原因。" },
+        { q: "结冰会损坏空调吗？", a: "长期结冰会损坏蒸发器和压缩机，也说明机器制冷效率差。" },
+        { q: "修结冰的空调要多少钱？", a: "清洁从 RM 129 起，加雪种从每 PSI RM 2.50 起。完整化学清洗从 RM 156 起。" }
+      ]
+    }
+  },
+  "aircon-remote-display-issue": {
+    ms: {
+      title: "Remote atau Paparan Aircond Tidak Berfungsi",
+      costRange: "RM 114–RM 455 bergantung kepada kerosakan",
+      faqs: [
+        { q: "Kenapa remote aircond saya tidak berfungsi?", a: "Mulakan dengan bateri baharu. Jika masih gagal, sensor inframerah remote atau papan penerima unit berkemungkinan rosak." },
+        { q: "Apakah maksud kod ralat aircond?", a: "Setiap jenama mempunyai kod tersendiri, tetapi kebanyakannya menunjukkan kerosakan sensor, gas atau PCB. Juruteknik boleh membaca dan menyelesaikannya." },
+        { q: "Bolehkah anda menggantikan remote sahaja?", a: "Ya. Remote universal atau padanan jenama tersedia, dan kami boleh memprogramkannya kepada unit anda." },
+        { q: "Berapa kos untuk membaiki masalah remote atau paparan?", a: "Diagnosis bermula dari RM 114, remote gantian adalah murah, dan pembaikan PCB bermula dari RM 455." }
+      ]
+    },
+    zh: {
+      title: "空调遥控器或显示屏不工作",
+      costRange: "RM 114–RM 455，视故障而定",
+      faqs: [
+        { q: "为什么我的空调遥控器不工作？", a: "先换新电池。如果仍然失灵，遥控器的红外传感器或室内机的接收板很可能损坏。" },
+        { q: "空调故障代码是什么意思？", a: "每个品牌代码不同，但大多指向传感器、雪种或 PCB 故障。技术员可以读取并解决。" },
+        { q: "可以只换遥控器吗？", a: "可以。有万能或品牌匹配的遥控器，我们可以为您的机器编程配对。" },
+        { q: "修遥控器或显示屏问题要多少钱？", a: "诊断从 RM 114 起，换遥控器很便宜，PCB 维修从 RM 455 起。" }
       ]
     }
   }

@@ -140,7 +140,25 @@ export const bulletsMs: Dict = {
   "Workmanship warranty": "Jaminan mutu kerja",
   "Material quality": "Kualiti bahan",
   "Clean site handover": "Serahan tapak yang bersih",
-  "Relevant local experience": "Pengalaman tempatan yang relevan"
+  "Relevant local experience": "Pengalaman tempatan yang relevan",
+  // Aircon cluster pages
+  "From RM 259 installation": "Pemasangan dari RM 259",
+  "7 ft copper pipe included": "Paip tembaga 7 kaki disertakan",
+  "Unit supplied by customer": "Unit dibekalkan pelanggan",
+  "Vacuum commissioning & cooling test": "Pentauliahan vakum & ujian penyejukan",
+  "1.5 HP sizing guidance": "Panduan saiz 1.5 HP",
+  "Cooling test before handover": "Ujian penyejukan sebelum serahan",
+  "From RM 324 installation": "Pemasangan dari RM 324",
+  "2.0 HP sizing guidance": "Panduan saiz 2.0 HP",
+  "Extra copper per foot": "Tembaga tambahan setiap kaki",
+  "Run/cooling test included": "Ujian operasi/penyejukan disertakan",
+  "From RM 377 installation": "Pemasangan dari RM 377",
+  "1.0–1.5 HP cassette": "Kaset 1.0–1.5 HP",
+  "Commercial spaces": "Ruang komersial",
+  "Ceiling cassette & wall units": "Unit kaset siling & dinding",
+  "Multi-unit pricing": "Harga pelbagai unit",
+  "Strata / management compliance": "Pematuhan strata / pengurusan",
+  "After-hours scheduling": "Penjadualan selepas waktu kerja"
 };
 
 /** The same 93 bullet phrases in Simplified Chinese. */
@@ -237,7 +255,24 @@ export const bulletsZh: Dict = {
   "Workmanship warranty": "工艺保修",
   "Material quality": "材料品质",
   "Clean site handover": "清洁交场",
-  "Relevant local experience": "相关的本地经验"
+  "Relevant local experience": "相关的本地经验",
+  "From RM 259 installation": "安装从 RM 259 起",
+  "7 ft copper pipe included": "含 7 英尺铜管",
+  "Unit supplied by customer": "主机由客户自备",
+  "Vacuum commissioning & cooling test": "真空调试与制冷测试",
+  "1.5 HP sizing guidance": "1.5 HP 匹数建议",
+  "Cooling test before handover": "交付前制冷测试",
+  "From RM 324 installation": "安装从 RM 324 起",
+  "2.0 HP sizing guidance": "2.0 HP 匹数建议",
+  "Extra copper per foot": "额外铜管按每英尺",
+  "Run/cooling test included": "含运行/制冷测试",
+  "From RM 377 installation": "安装从 RM 377 起",
+  "1.0–1.5 HP cassette": "1.0–1.5 HP 卡式机",
+  "Commercial spaces": "商业空间",
+  "Ceiling cassette & wall units": "天花卡式与挂壁机",
+  "Multi-unit pricing": "多台计价",
+  "Strata / management compliance": "分层物业 / 管理处合规",
+  "After-hours scheduling": "非办公时间排期"
 };
 
 /**

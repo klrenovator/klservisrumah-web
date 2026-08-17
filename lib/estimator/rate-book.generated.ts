@@ -164,7 +164,7 @@ export type ServiceScopeBook = {
 };
 
 /**
- * Published sub-service pricing for all 28 services, powering the generic
+ * Published sub-service pricing for all 29 services, powering the generic
  * per-service estimator at `/services/[slug]` and `/tools/[slug]-calculator`.
  */
 export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
@@ -1108,6 +1108,68 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
         "unit": "linearft",
         "published": "From RM 420 / linier ft",
         "desc": "Custom mild steel staircase stringer fabricated to your measurements, primed and painted for indoor or outdoor use."
+      }
+    ],
+    "quoteOnly": []
+  },
+  "aircon": {
+    "startPrice": 129,
+    "scopes": [
+      {
+        "name": "Basic Servicing",
+        "amount": 129,
+        "unit": "job",
+        "published": "From RM 129",
+        "desc": "Filter and coil cleaning, drainage check, gas pressure and cooling test for wall-mounted units from RM 129."
+      },
+      {
+        "name": "Chemical Wash",
+        "amount": 156,
+        "unit": "job",
+        "published": "From RM 156",
+        "desc": "Pressure chemical wash of coils and blower without full dismantling, from RM 156."
+      },
+      {
+        "name": "Chemical Overhaul",
+        "amount": 286,
+        "unit": "job",
+        "published": "From RM 286",
+        "desc": "Full dismantle-and-wash overhaul that deep-cleans every part and fixes chronic water leaks, from RM 286."
+      },
+      {
+        "name": "Gas Top-Up",
+        "amount": 2.5,
+        "unit": "job",
+        "published": "RM 2.50–3.00 / PSI",
+        "desc": "R22, R410A and R32 refill charged per PSI, with a structural leak check included from RM 114."
+      },
+      {
+        "name": "Installation",
+        "amount": 259,
+        "unit": "job",
+        "published": "From RM 259",
+        "desc": "Wall-mounted, cassette and window installation from RM 259 — installation only, unit not included."
+      },
+      {
+        "name": "Repair",
+        "amount": 114,
+        "unit": "job",
+        "published": "From RM 114",
+        "desc": "Diagnostic fee from RM 114 (waived if repaired same visit) plus spare parts from RM 195 to RM 1,040."
+      },
+      {
+        "name": "Ceiling Cassette",
+        "amount": 195,
+        "unit": "job",
+        "published": "From RM 195",
+        "desc": "Commercial ceiling cassette servicing, chemical wash, overhaul and installation from RM 195."
+      },
+      {
+        "name": "Dismantling & Relocation",
+        "amount": 117,
+        "unit": "job",
+        "published": "From RM 117",
+        "desc": "Dismantle only from RM 117, nearby reinstall from RM 325, and different-location relocation from RM 455."
       }
     ],
     "quoteOnly": []

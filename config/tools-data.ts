@@ -2187,6 +2187,338 @@ export const toolsContent: Record<string, ToolContent> = {
       { label: "Pricing Guide", href: "/pricing" }
     ],
     estimatedMinutes: 2
+  },
+
+  /* ── AIRCON TOOLS ───────────────────────────────────────────────────── */
+  "aircon-installation-cost": {
+    slug: "aircon-installation-cost",
+    name: "Aircon Installation Cost Calculator",
+    heading: "Aircon Installation Cost Calculator for KL & Selangor",
+    metaTitle: "Aircon Installation Cost Calculator KL",
+    metaDesc: "Free aircon installation cost calculator for KL & Selangor. Wall-mounted from RM 259, cassette from RM 377. Installation only — unit not included.",
+    keywords: ["aircon installation cost Malaysia", "aircond installation price KL", "aircon install Selangor"],
+    eyebrow: "Free instant estimator",
+    intro: "One page, no next buttons. Pick the unit type and horsepower, add extra copper if needed — the installation price appears instantly from our published KL & Selangor rates.",
+    directQuestion: "How much does aircon installation cost in KL and Selangor?",
+    directAnswer: "Aircon installation in KL & Selangor starts from RM 259 for a 1.0–1.5 HP wall-mounted unit, up to RM 584 for a 5.0 HP unit. Ceiling cassette installation starts from RM 377 and window units from RM 259. The price is installation only — the aircon unit is not included. Every installation includes 7 ft of copper pipe, insulation, electrical wiring, drain pipe, bracket, vacuum pump commissioning and a run/cooling test.",
+    trilingualMs: "Kalkulator kos pemasangan aircond untuk KL & Selangor — pilih jenis unit dan HP untuk anggaran segera.",
+    trilingualZh: "空调安装费用计算器，适用于吉隆坡与雪兰莪——选择机型与匹数即可获得即时估价。",
+    heroImage: "/hero-aircon.svg",
+    heroAlt: "Aircon installation cost calculator for KL and Selangor homes",
+    stats: [
+      { label: "Wall-mount, from", value: "RM 259" },
+      { label: "Cassette, from", value: "RM 377" },
+      { label: "Time to finish", value: "Under 1 minute" }
+    ],
+    howTo: [
+      { title: "Pick the unit type and horsepower", desc: "Choose wall-mounted (1.0–5.0 HP), ceiling cassette or window unit. The price updates live on every tap." },
+      { title: "Add extra copper if needed", desc: "Installation includes 7 ft of copper. Slide the extra copper to add pipe beyond 7 ft at the published per-foot rate." },
+      { title: "Read your estimate and book", desc: "The estimated installation cost, range and breakdown appear instantly. Book on WhatsApp or request a site survey." }
+    ],
+    priceTable: [
+      { scope: "Wall-Mounted 1.0–1.5 HP", rate: "From RM 259", note: "7 ft copper pipe included" },
+      { scope: "Wall-Mounted 2.0 HP", rate: "From RM 324", note: "Installation only" },
+      { scope: "Wall-Mounted 5.0 HP", rate: "From RM 584", note: "Largest wall unit" },
+      { scope: "Ceiling Cassette 1.0–1.5 HP", rate: "From RM 377", note: "Commercial" },
+      { scope: "Window Unit 1.0–1.5 HP", rate: "From RM 259", note: "Installation only" }
+    ],
+    priceTableNote: "These are minimum starting prices. Installation only — the unit is not included. Extra copper beyond 7 ft is charged per foot.",
+    faqs: [
+      { q: "Is the aircon unit included in the installation price?", a: "No. The price is installation only — the aircon unit is not included, and you supply your own unit." },
+      { q: "What does the installation price include?", a: "Every installation includes 7 ft of copper pipe, insulation, electrical wiring, drain pipe, bracket, vacuum pump commissioning and a run/cooling test." },
+      { q: "How much is extra copper pipe?", a: "Extra copper beyond the included 7 ft is charged per foot. The calculator adds this to your estimate." },
+      { q: "Is the calculator result a final quote?", a: "No. It is an estimate — the final quotation follows an on-site inspection of your wall type, distance and access." }
+    ],
+    covers: ["Wall-mounted split units", "Ceiling cassette units", "Window units", "Extra copper pipe"],
+    relatedTools: ["aircon-gas-topup-cost", "aircon-size-calculator", "aircon-btu-calculator"],
+    relatedServices: [
+      { label: "Aircon Service, Repair & Installation", href: "/services/aircon" },
+      { label: "Aircon Installation", href: "/services/aircon/installation" },
+      { label: "Aircon Pricing Guide", href: "/pricing" }
+    ],
+    estimatedMinutes: 1
+  },
+  "aircon-gas-topup-cost": {
+    slug: "aircon-gas-topup-cost",
+    name: "Aircon Gas Top-Up Cost Calculator",
+    heading: "Aircon Gas Top-Up Cost Calculator for KL & Selangor",
+    metaTitle: "Aircon Gas Top-Up Cost Calculator KL",
+    metaDesc: "Free aircon gas top-up calculator. R22 RM 2.50/PSI, R410A and R32 RM 3.00/PSI. Leak check included. Charged on actual PSI required.",
+    keywords: ["aircon gas top up price Malaysia", "aircond gas refill KL", "R32 gas price Selangor"],
+    eyebrow: "Free instant estimator",
+    intro: "Pick your refrigerant, enter the PSI required and include the leak check — the gas top-up cost appears instantly.",
+    directQuestion: "How much does aircon gas top-up cost in Malaysia?",
+    directAnswer: "Aircon gas top-up is charged per PSI: R22 is RM 2.50/PSI, while R410A and R32 are RM 3.00/PSI. A structural leak check starts from RM 114 and is included. Gas top-up is charged on the actual PSI required after the technician inspects on site.",
+    trilingualMs: "Kalkulator kos top-up gas aircond — R22 RM 2.50/PSI, R410A dan R32 RM 3.00/PSI.",
+    trilingualZh: "空调加雪种费用计算器——R22 每 PSI RM 2.50，R410A 与 R32 每 PSI RM 3.00。",
+    heroImage: "/hero-aircon.svg",
+    heroAlt: "Aircon gas top-up cost calculator for KL and Selangor",
+    stats: [
+      { label: "R22", value: "RM 2.50 / PSI" },
+      { label: "R410A / R32", value: "RM 3.00 / PSI" },
+      { label: "Leak check", value: "From RM 114" }
+    ],
+    howTo: [
+      { title: "Pick your refrigerant", desc: "R22, R410A or R32 — check the nameplate on your outdoor unit if unsure." },
+      { title: "Enter the PSI required", desc: "Slide to the PSI the technician measured. Gas is charged on the actual PSI required." },
+      { title: "Include the leak check", desc: "Toggle the structural leak check (from RM 114) — always recommended, since gas rarely runs out without a leak." }
+    ],
+    priceTable: [
+      { scope: "R22 Gas Refill", rate: "RM 2.50 / PSI", note: "Older systems" },
+      { scope: "R410A Gas Refill", rate: "RM 3.00 / PSI", note: "Common inverter" },
+      { scope: "R32 Gas Refill", rate: "RM 3.00 / PSI", note: "Newer systems" },
+      { scope: "Structural Leak Check", rate: "From RM 114", note: "Included" }
+    ],
+    priceTableNote: "Gas top-up is charged on the actual PSI required after the technician inspects on site. Leak check included.",
+    faqs: [
+      { q: "How is gas top-up charged?", a: "Gas top-up is charged on the actual PSI required after the technician inspects on site. R22 is RM 2.50/PSI, while R410A and R32 are RM 3.00/PSI." },
+      { q: "Why does my aircon keep losing gas?", a: "If gas keeps dropping, there is a leak in the system. The leak must be found and sealed, or the gas will escape again." },
+      { q: "Is the leak check included?", a: "Yes, a structural leak check from RM 114 is included with the gas top-up service." },
+      { q: "Is the calculator result a final quote?", a: "No. It is an estimate — the final price depends on the actual PSI required after inspection." }
+    ],
+    covers: ["R22 refrigerant", "R410A refrigerant", "R32 refrigerant", "Structural leak check"],
+    relatedTools: ["aircon-installation-cost", "aircon-service-picker", "aircon-size-calculator"],
+    relatedServices: [
+      { label: "Aircon Service, Repair & Installation", href: "/services/aircon" },
+      { label: "Aircon Gas Top-Up", href: "/services/aircon/gas-top-up" },
+      { label: "Aircon Pricing Guide", href: "/pricing" }
+    ],
+    estimatedMinutes: 1
+  },
+  "aircon-size-calculator": {
+    slug: "aircon-size-calculator",
+    name: "Aircon Size Calculator",
+    heading: "Aircon Size Calculator — What HP Do You Need?",
+    metaTitle: "Aircon Size Calculator — HP by Room Size",
+    metaDesc: "Free aircon size calculator. Enter room area, ceiling height and sun exposure to find the right BTU and horsepower for your KL & Selangor room.",
+    keywords: ["aircon size calculator Malaysia", "aircond HP calculator", "BTU per sq ft Malaysia"],
+    eyebrow: "Free instant estimator",
+    intro: "Enter your room area, ceiling height and sun exposure — we recommend the right BTU and horsepower.",
+    directQuestion: "What size aircon do I need for my room?",
+    directAnswer: "As a rule of thumb, Malaysian rooms need roughly 60 BTU per square foot. A 150 sq ft bedroom needs about 9,000 BTU (1.0–1.5 HP), while a 250 sq ft living room needs about 15,000 BTU (2.0 HP). High ceilings and west-facing sun add 15–20%.",
+    trilingualMs: "Kalkulator saiz aircond — masukkan keluasan bilik untuk cadangan BTU dan HP yang sesuai.",
+    trilingualZh: "空调匹数计算器——输入房间面积，获得适合的 BTU 与匹数建议。",
+    heroImage: "/hero-aircon.svg",
+    heroAlt: "Aircon size calculator for KL and Selangor rooms",
+    stats: [
+      { label: "Rule of thumb", value: "60 BTU / sq ft" },
+      { label: "Typical bedroom", value: "1.0–1.5 HP" },
+      { label: "Time to finish", value: "Under 1 minute" }
+    ],
+    howTo: [
+      { title: "Enter your room area", desc: "Slide to your room size in square feet — from a small 60 sq ft room to a large 1,200 sq ft space." },
+      { title: "Set ceiling and sun exposure", desc: "High ceilings and west-facing sun raise the cooling load, so the recommendation adjusts automatically." },
+      { title: "Read your HP recommendation", desc: "The calculator shows the recommended BTU and horsepower, plus the starting price for servicing that unit size." }
+    ],
+    priceTable: [
+      { scope: "1.0–1.5 HP (up to 150 sq ft)", rate: "From RM 129", note: "Bedrooms" },
+      { scope: "2.0 HP (up to 250 sq ft)", rate: "From RM 156", note: "Living rooms" },
+      { scope: "2.5 HP (up to 350 sq ft)", rate: "From RM 195", note: "Large rooms" },
+      { scope: "3.0 HP+ (350 sq ft+)", rate: "From RM 259", note: "Open areas" }
+    ],
+    priceTableNote: "Minimum starting prices for servicing each unit size. Final cost depends on the unit and is confirmed after inspection.",
+    faqs: [
+      { q: "How many BTU per square foot does Malaysia need?", a: "Around 60 BTU per square foot as a baseline, plus 15–20% for high ceilings or strong sun exposure." },
+      { q: "Is bigger always better for aircon?", a: "No. An oversized unit cools too quickly and short-cycles, leaving the room humid. Right-sizing matters." },
+      { q: "What HP is best for a bedroom?", a: "A typical 120–150 sq ft Malaysian bedroom is best served by a 1.0–1.5 HP unit." },
+      { q: "Is the calculator result final?", a: "No, it is a sizing estimate — a technician confirms the right unit after reviewing the room." }
+    ],
+    covers: ["Room area to BTU", "BTU to horsepower", "Ceiling height adjustment", "Sun exposure adjustment"],
+    relatedTools: ["aircon-btu-calculator", "aircon-electricity-cost", "aircon-installation-cost"],
+    relatedServices: [
+      { label: "Aircon Service, Repair & Installation", href: "/services/aircon" },
+      { label: "Aircon Installation", href: "/services/aircon/installation" },
+      { label: "Aircon Pricing Guide", href: "/pricing" }
+    ],
+    estimatedMinutes: 1
+  },
+  "aircon-btu-calculator": {
+    slug: "aircon-btu-calculator",
+    name: "Aircon BTU Calculator",
+    heading: "Aircon BTU Calculator for Malaysian Rooms",
+    metaTitle: "Aircon BTU Calculator — Cooling Capacity",
+    metaDesc: "Free aircon BTU calculator. Enter room length, width and occupancy to work out the cooling capacity your KL & Selangor room needs.",
+    keywords: ["aircon BTU calculator Malaysia", "BTU cooling capacity", "aircond BTU KL"],
+    eyebrow: "Free instant estimator",
+    intro: "Enter your room length, width and how many people use it — the required BTU appears instantly.",
+    directQuestion: "How many BTU does my room need?",
+    directAnswer: "A rough estimate is 25 BTU per square foot plus 600 BTU for each additional person beyond two. A 12×12 ft room with two people needs about 3,600 BTU per hour of base cooling before sun and ceiling adjustments.",
+    trilingualMs: "Kalkulator BTU aircond — masukkan panjang dan lebar bilik untuk kapasiti penyejukan yang sesuai.",
+    trilingualZh: "空调 BTU 计算器——输入房间长宽，计算所需制冷量。",
+    heroImage: "/hero-aircon.svg",
+    heroAlt: "Aircon BTU calculator for KL and Selangor rooms",
+    stats: [
+      { label: "Base", value: "25 BTU / sq ft" },
+      { label: "Per extra person", value: "+600 BTU" },
+      { label: "Time to finish", value: "Under 1 minute" }
+    ],
+    howTo: [
+      { title: "Enter length and width", desc: "Enter the room dimensions in feet to get the floor area." },
+      { title: "Set the occupancy", desc: "Add how many people regularly use the room — each extra person adds cooling load." },
+      { title: "Read the BTU", desc: "The required BTU appears instantly, with a link to the matching aircon service page." }
+    ],
+    priceTable: [
+      { scope: "Up to 9,000 BTU", rate: "From RM 129", note: "Small rooms" },
+      { scope: "9,000–12,000 BTU", rate: "From RM 129", note: "Bedrooms" },
+      { scope: "12,000–18,000 BTU", rate: "From RM 156", note: "Living rooms" },
+      { scope: "18,000+ BTU", rate: "From RM 195", note: "Large spaces" }
+    ],
+    priceTableNote: "Minimum starting prices for servicing each cooling capacity. Final cost is confirmed after inspection.",
+    faqs: [
+      { q: "What is a BTU?", a: "A BTU (British Thermal Unit) measures cooling capacity. Higher BTU means the aircon can cool a larger or hotter space." },
+      { q: "How do I convert BTU to horsepower?", a: "Roughly 9,000–12,000 BTU equals 1 HP. The size calculator converts between the two for you." },
+      { q: "Does room occupancy affect BTU?", a: "Yes. Each person adds body heat, so busy rooms need more cooling capacity." },
+      { q: "Is the BTU result final?", a: "No, it is an estimate. Sun, ceiling height and insulation also affect the real requirement." }
+    ],
+    covers: ["Room area to BTU", "Occupancy adjustment", "BTU to HP conversion", "Cooling capacity planning"],
+    relatedTools: ["aircon-size-calculator", "aircon-electricity-cost", "aircon-savings-calculator"],
+    relatedServices: [
+      { label: "Aircon Service, Repair & Installation", href: "/services/aircon" },
+      { label: "Aircon Installation", href: "/services/aircon/installation" },
+      { label: "Aircon Pricing Guide", href: "/pricing" }
+    ],
+    estimatedMinutes: 1
+  },
+  "aircon-electricity-cost": {
+    slug: "aircon-electricity-cost",
+    name: "Aircon Electricity Cost Calculator",
+    heading: "Aircon Electricity Cost Calculator for Malaysia",
+    metaTitle: "Aircon Electricity Cost Calculator Malaysia",
+    metaDesc: "Free aircon electricity cost calculator. Enter horsepower and daily hours to estimate your monthly aircon running cost at RM 0.50/kWh.",
+    keywords: ["aircon electricity cost Malaysia", "aircond running cost KL", "aircon monthly bill"],
+    eyebrow: "Free instant estimator",
+    intro: "Enter your aircon horsepower and daily hours — see the estimated monthly electricity cost instantly.",
+    directQuestion: "How much does it cost to run an aircon in Malaysia?",
+    directAnswer: "A 1.5 HP aircon draws about 1.1 kW. Running it 8 hours a day at RM 0.50/kWh costs roughly RM 132 per month. Larger units and longer run times scale the figure up.",
+    trilingualMs: "Kalkulator kos elektrik aircond — anggaran bil bulanan berdasarkan HP dan jam penggunaan.",
+    trilingualZh: "空调电费计算器——按匹数与每日小时数估算每月电费。",
+    heroImage: "/hero-aircon.svg",
+    heroAlt: "Aircon electricity cost calculator for Malaysia",
+    stats: [
+      { label: "1.5 HP draw", value: "≈ 1.1 kW" },
+      { label: "Tariff", value: "RM 0.50/kWh" },
+      { label: "Time to finish", value: "Under 1 minute" }
+    ],
+    howTo: [
+      { title: "Pick your horsepower", desc: "Choose 1.0–2.5 HP — higher HP draws more power." },
+      { title: "Set daily hours", desc: "Slide to how many hours a day the unit runs on average." },
+      { title: "Read the monthly cost", desc: "The estimated monthly cost appears instantly, at the standard RM 0.50/kWh tariff." }
+    ],
+    priceTable: [
+      { scope: "1.0 HP (≈ 0.8 kW)", rate: "From RM 129", note: "Service price" },
+      { scope: "1.5 HP (≈ 1.1 kW)", rate: "From RM 129", note: "Service price" },
+      { scope: "2.0 HP (≈ 1.6 kW)", rate: "From RM 156", note: "Service price" },
+      { scope: "2.5 HP (≈ 2.0 kW)", rate: "From RM 195", note: "Service price" }
+    ],
+    priceTableNote: "These are minimum starting service prices. Running cost is estimated at RM 0.50/kWh — an estimate only.",
+    faqs: [
+      { q: "How much does an aircon add to my electricity bill?", a: "A 1.5 HP unit run 8 hours daily adds roughly RM 132 per month at RM 0.50/kWh. Inverter units cost less to run." },
+      { q: "Do inverter aircons really save electricity?", a: "Yes, an inverter can cut running cost by around 35% compared to a non-inverter of the same size." },
+      { q: "Does a dirty aircon use more electricity?", a: "Yes. A clogged coil or filter forces the compressor to run longer, raising the bill. Regular servicing keeps it efficient." },
+      { q: "Is the cost result final?", a: "No, it is an estimate based on average usage and tariff." }
+    ],
+    covers: ["Horsepower to kW", "Daily usage", "Monthly running cost", "Inverter comparison"],
+    relatedTools: ["aircon-savings-calculator", "aircon-size-calculator", "aircon-btu-calculator"],
+    relatedServices: [
+      { label: "Aircon Service, Repair & Installation", href: "/services/aircon" },
+      { label: "Aircon Basic Servicing", href: "/services/aircon/basic-servicing" },
+      { label: "Aircon Pricing Guide", href: "/pricing" }
+    ],
+    estimatedMinutes: 1
+  },
+  "aircon-savings-calculator": {
+    slug: "aircon-savings-calculator",
+    name: "Inverter Aircon Savings Calculator",
+    heading: "Inverter Aircon Savings Calculator for Malaysia",
+    metaTitle: "Inverter Aircon Savings Calculator Malaysia",
+    metaDesc: "Free inverter aircon savings calculator. See how much an inverter unit could save you versus a non-inverter at RM 0.50/kWh.",
+    keywords: ["inverter aircon savings Malaysia", "inverter vs non inverter cost", "aircond savings calculator"],
+    eyebrow: "Free instant estimator",
+    intro: "Enter your horsepower and daily hours — see the estimated monthly saving an inverter unit delivers.",
+    directQuestion: "How much can an inverter aircon save me?",
+    directAnswer: "An inverter aircon typically uses around 35% less electricity than a non-inverter of the same size. A 1.5 HP unit run 8 hours daily could save roughly RM 46 per month at RM 0.50/kWh.",
+    trilingualMs: "Kalkulator penjimatan aircond inverter — anggaran penjimatan bulanan berbanding bukan inverter.",
+    trilingualZh: "变频空调省电计算器——估算变频相对定频的每月省电金额。",
+    heroImage: "/hero-aircon.svg",
+    heroAlt: "Inverter aircon savings calculator for Malaysia",
+    stats: [
+      { label: "Inverter saving", value: "≈ 35%" },
+      { label: "Tariff", value: "RM 0.50/kWh" },
+      { label: "Time to finish", value: "Under 1 minute" }
+    ],
+    howTo: [
+      { title: "Pick your horsepower", desc: "Choose the unit size you are comparing." },
+      { title: "Set daily hours", desc: "Slide to the hours the unit runs each day." },
+      { title: "Read the saving", desc: "The estimated monthly saving of an inverter unit appears instantly." }
+    ],
+    priceTable: [
+      { scope: "Inverter vs non-inverter", rate: "From RM 129", note: "Service price" },
+      { scope: "Typical saving", rate: "≈ 35%", note: "Electricity" },
+      { scope: "Payback", rate: "On quote", note: "Depends on usage" }
+    ],
+    priceTableNote: "Savings are estimated at RM 0.50/kWh. Service prices are minimum starting prices.",
+    faqs: [
+      { q: "Is an inverter aircon worth it?", a: "For units run many hours daily, yes — the 35% running-cost saving usually pays back the higher price over a few years." },
+      { q: "How much less does an inverter use?", a: "An inverter typically uses around 35% less electricity than a non-inverter of the same size." },
+      { q: "Does the calculator include installation?", a: "No. It estimates running-cost savings only. See the installation calculator for install pricing." },
+      { q: "Is the saving result final?", a: "No, it is an estimate based on average usage and tariff." }
+    ],
+    covers: ["Inverter vs non-inverter", "Monthly saving", "Running cost", "Payback planning"],
+    relatedTools: ["aircon-electricity-cost", "aircon-installation-cost", "aircon-btu-calculator"],
+    relatedServices: [
+      { label: "Aircon Service, Repair & Installation", href: "/services/aircon" },
+      { label: "Aircon Installation", href: "/services/aircon/installation" },
+      { label: "Aircon Pricing Guide", href: "/pricing" }
+    ],
+    estimatedMinutes: 1
+  },
+  "aircon-service-picker": {
+    slug: "aircon-service-picker",
+    name: "Which Aircon Service Do I Need?",
+    heading: "Which Aircon Service Do I Need? — Diagnostic",
+    metaTitle: "Which Aircon Service Do I Need? — Quiz",
+    metaDesc: "Free aircon diagnostic. Pick your symptoms to find the right service — basic servicing, chemical wash, overhaul, gas top-up or repair.",
+    keywords: ["which aircon service", "aircond diagnostic tool", "aircon service finder Malaysia"],
+    eyebrow: "Free guided diagnostic",
+    intro: "Select the symptoms you are seeing — we recommend the right aircon service and starting price.",
+    directQuestion: "Which aircon service do I need?",
+    directAnswer: "Not cold? You likely need gas top-up from RM 2.50/PSI. Water leaking or a musty smell? A chemical wash from RM 156 or an overhaul from RM 286. A unit that won't turn on or makes noise? Repair diagnosis from RM 114. Select your symptoms and we map them to the right service.",
+    trilingualMs: "Diagnostik aircond percuma — pilih gejala anda untuk cadangan servis yang sesuai.",
+    trilingualZh: "免费空调诊断——选择您的症状，获得合适的服务建议。",
+    heroImage: "/hero-aircon.svg",
+    heroAlt: "Which aircon service do I need diagnostic tool",
+    stats: [
+      { label: "Chemical wash", value: "From RM 156" },
+      { label: "Overhaul", value: "From RM 286" },
+      { label: "Repair diagnosis", value: "From RM 114" }
+    ],
+    howTo: [
+      { title: "Select your symptoms", desc: "Tick everything you see — not cold, leaking, noise, smell, weak airflow, won't turn on, or ice." },
+      { title: "Read the recommendation", desc: "We map your symptoms to the matching service and its minimum starting price." },
+      { title: "Book on WhatsApp", desc: "Send the result to our dispatch desk and we confirm the final price after inspection." }
+    ],
+    priceTable: [
+      { scope: "Basic Servicing", rate: "From RM 129", note: "Routine clean" },
+      { scope: "Chemical Wash", rate: "From RM 156", note: "Smell / leaking" },
+      { scope: "Chemical Overhaul", rate: "From RM 286", note: "Chronic leaks" },
+      { scope: "Gas Top-Up", rate: "RM 2.50–3.00 / PSI", note: "Not cold" },
+      { scope: "Repair Diagnosis", rate: "From RM 114", note: "Won't turn on" }
+    ],
+    priceTableNote: "Minimum starting prices. The final price depends on the nature and scope of your job and is confirmed after a site visit or photo review.",
+    faqs: [
+      { q: "How do I know which aircon service I need?", a: "Match your symptoms: not cold usually means gas, leaking or smell means chemical wash or overhaul, and not turning on means repair." },
+      { q: "What if I have several symptoms?", a: "Select them all — the diagnostic picks the most appropriate single service and explains the recommendation." },
+      { q: "Are the prices in the diagnostic final?", a: "No. They are minimum starting prices. The final price is confirmed after a site visit or photo review." },
+      { q: "Can I book straight from the result?", a: "Yes. Send the recommended service to our WhatsApp desk and we confirm availability and price." }
+    ],
+    covers: ["Symptom matching", "Service recommendation", "Starting prices", "WhatsApp booking"],
+    relatedTools: ["aircon-gas-topup-cost", "aircon-installation-cost", "aircon-size-calculator"],
+    relatedServices: [
+      { label: "Aircon Service, Repair & Installation", href: "/services/aircon" },
+      { label: "Aircon Repair", href: "/services/aircon/repair" },
+      { label: "Aircon Pricing Guide", href: "/pricing" }
+    ],
+    estimatedMinutes: 1
   }
 };
 

@@ -366,6 +366,19 @@ export const serviceNavBySlug: Record<string, ServiceNavItem> = {
         "title": "焊接与金属加工"
       }
     }
+  },
+  "aircon": {
+    "slug": "aircon",
+    "title": "Aircon Service, Repair & Installation",
+    "startPrice": "RM 129",
+    "i18n": {
+      "ms": {
+        "title": "Servis, Baiki & Pemasangan Aircond"
+      },
+      "zh": {
+        "title": "空调保养、维修与安装"
+      }
+    }
   }
 };
 export const serviceNavList = Object.values(serviceNavBySlug);

@@ -546,6 +546,33 @@ function WeldingIcon({ className }: { className?: string }) {
   );
 }
 
+function SnowflakeIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 48 48" className={className} fill="none">
+      <rect x="8" y="8" width="32" height="32" rx="8" fill="#E0F2FE" />
+      <g stroke="#0284C7" strokeWidth="2" strokeLinecap="round">
+        <line x1="24" y1="13" x2="24" y2="35" />
+        <line x1="14.5" y1="18.5" x2="33.5" y2="29.5" />
+        <line x1="33.5" y1="18.5" x2="14.5" y2="29.5" />
+      </g>
+      <g stroke="#0EA5E9" strokeWidth="1.5" strokeLinecap="round">
+        <line x1="24" y1="13" x2="20.5" y2="17.5" />
+        <line x1="24" y1="13" x2="27.5" y2="17.5" />
+        <line x1="24" y1="35" x2="20.5" y2="30.5" />
+        <line x1="24" y1="35" x2="27.5" y2="30.5" />
+        <line x1="14.5" y1="18.5" x2="18" y2="20.5" />
+        <line x1="14.5" y1="18.5" x2="17.5" y2="15.5" />
+        <line x1="33.5" y1="18.5" x2="30" y2="20.5" />
+        <line x1="33.5" y1="18.5" x2="30.5" y2="15.5" />
+        <line x1="14.5" y1="29.5" x2="18" y2="27.5" />
+        <line x1="14.5" y1="29.5" x2="17.5" y2="32.5" />
+        <line x1="33.5" y1="29.5" x2="30" y2="27.5" />
+        <line x1="33.5" y1="29.5" x2="30.5" y2="32.5" />
+      </g>
+    </svg>
+  );
+}
+
 export function ServiceIcon({ name, className = "w-6 h-6" }: ServiceIconProps) {
   switch (name) {
     case "paint-brush":
@@ -604,6 +631,8 @@ export function ServiceIcon({ name, className = "w-6 h-6" }: ServiceIconProps) {
       return <AutogateIcon className={className} />;
     case "welding-spark":
       return <WeldingIcon className={className} />;
+    case "snowflake":
+      return <SnowflakeIcon className={className} />;
     default:
       return <HandymanIcon className={className} />;
   }

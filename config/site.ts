@@ -80,7 +80,9 @@ export const siteConfig = {
     "Nippon Paint", "Dulux", "Jotun", "Kansai Paint", "ICI Paints",
     "Kohler", "American Standard", "Grohe", "Ruba", "Johnson Suisse",
     "Simmons", "Panasonic", "Matsushita", "Rubine", "Midea",
-    "LG", "Samsung", "Sharp", "Toshiba", "Daikin"
+    "LG", "Samsung", "Sharp", "Toshiba", "Daikin",
+    "Mitsubishi Electric", "York", "Acson", "Carrier", "Haier",
+    "Hitachi", "Fujitsu", "Gree", "National", "Hisense", "Aux", "TCL", "Isonic"
   ],
 
   // Service type categories
@@ -98,7 +100,8 @@ export const siteConfig = {
     "Door & Lock Repair",
     "CCTV & Auto Gate Installation",
     "Roof Repair & Maintenance",
-    "Full House Renovation"
+    "Full House Renovation",
+    "Aircon Servicing & Installation"
   ],
 
   knowsAbout: [
@@ -123,7 +126,13 @@ export const siteConfig = {
     "Vinyl/SPC Flooring",
     "Roof Leak Repair",
     "Kitchen Cabinet Installation",
-    "Full House Renovation"
+    "Full House Renovation",
+    "Aircon Basic Servicing",
+    "Aircon Chemical Wash",
+    "Aircon Chemical Overhaul",
+    "Aircon Gas Top-Up",
+    "Aircon Installation",
+    "Aircon Repair"
   ],
 
   areaPages: [],

@@ -1147,5 +1147,285 @@ export const extraProblemPages: ProblemDetail[] = [
       { q: "How much to replace sliding window rollers?", a: "Standard replacement: RM 180 to RM 320 per window including new rollers and track lubrication." },
       { q: "Should I upgrade to casement windows instead?", a: "Casement (crank) windows seal better and are more secure. Full conversion: RM 850 to RM 1,800 per window." }
     ]
+  },
+  // ── AIRCON problems ─────────────────────────────────────────────────────
+  {
+    slug: "aircon-not-cold",
+    serviceSlug: "aircon",
+    title: "Aircon Not Cold (Warm Air Blowing)",
+    symptom: "The aircon runs but blows warm or only slightly cool air, so the room never reaches the set temperature.",
+    costRange: "RM 129–RM 455 depending on the cause",
+    urgency: "Medium",
+    causes: [
+      "Refrigerant gas low or leaking",
+      "Evaporator coil blocked with dust",
+      "Dirty air filter restricting airflow",
+      "Faulty compressor or temperature sensor"
+    ],
+    solutions: [
+      "Clean the air filter and evaporator coil",
+      "Run a leak check and top up refrigerant to the correct PSI",
+      "Replace a faulty temperature sensor or thermistor",
+      "Repair or replace the compressor if it has failed"
+    ],
+    whenToCall: [
+      "The unit runs all day without cooling",
+      "Gas was topped up recently but the air is still warm",
+      "There is hissing or frost forming on the pipes"
+    ],
+    faqs: [
+      { q: "Why is my aircon blowing warm air?", a: "The most common causes are low refrigerant, a blocked coil or filter, or a failing compressor. A technician can diagnose it on site within 30–60 minutes." },
+      { q: "Is topping up gas always the fix?", a: "Not always. If there is a leak, topping up alone is temporary — the leak must be found and sealed first." },
+      { q: "How much does fixing a not-cold aircon cost?", a: "Basic servicing starts from RM 129, gas top-up from RM 2.50 per PSI, and compressor repair from RM 1,040. The final price depends on the actual cause." },
+      { q: "Can I keep using a warm aircon?", a: "It is better to stop and get it checked. Running a unit that is low on gas or has a blocked coil wastes electricity and can damage the compressor." }
+    ]
+  },
+  {
+    slug: "aircon-water-leaking",
+    serviceSlug: "aircon",
+    title: "Aircon Water Leaking (Indoor Unit Dripping)",
+    symptom: "Water drips from the indoor unit or runs down the wall, usually from a blocked drain or a tilted unit.",
+    costRange: "RM 129–RM 455 depending on the cause",
+    urgency: "Medium",
+    causes: [
+      "Blocked or dirty drain pipe",
+      "Clogged air filter causing ice to form and melt",
+      "Drain pump failure (cassette units)",
+      "Unit tilted the wrong way or poorly installed"
+    ],
+    solutions: [
+      "Clear and flush the drain pipe",
+      "Clean the filter and coil to stop icing",
+      "Replace a failed drain pump",
+      "Re-level the indoor unit and check the installation"
+    ],
+    whenToCall: [
+      "Water is dripping onto furniture or flooring",
+      "The wall shows water stains below the unit",
+      "Water leaks even right after servicing"
+    ],
+    faqs: [
+      { q: "Why does water drip from my aircon?", a: "It is usually a blocked drain pipe or a dirty filter causing ice that melts and overflows the tray. A chemical wash or overhaul clears it." },
+      { q: "Is aircon water leakage dangerous?", a: "It can damage walls, flooring and furniture, and promote mould. It should be fixed before the damage spreads." },
+      { q: "Will a chemical wash stop the leak?", a: "Often yes, if the cause is a dirty coil and blocked drain. If the drain pump or installation is faulty, that needs a separate repair." },
+      { q: "How fast can you fix a leaking aircon?", a: "Most leak causes are fixed in a single visit. Severe blockages or a failed drain pump may need a follow-up part replacement." }
+    ]
+  },
+  {
+    slug: "aircon-making-noise",
+    serviceSlug: "aircon",
+    title: "Aircon Making Noise (Rattling, Buzzing, Grinding)",
+    symptom: "The indoor or outdoor unit makes rattling, buzzing, humming or grinding noises during operation.",
+    costRange: "RM 195–RM 455 depending on the faulty part",
+    urgency: "Medium",
+    causes: [
+      "Loose panels, screws or brackets",
+      "Debris or ice on the blower fan",
+      "Worn fan motor bearings",
+      "Failing compressor or contactor"
+    ],
+    solutions: [
+      "Tighten loose panels and mounts",
+      "Clean debris from the fan and coil",
+      "Replace a worn fan motor",
+      "Replace a failing contactor or compressor"
+    ],
+    whenToCall: [
+      "The noise is getting louder over time",
+      "There is a grinding or metallic sound",
+      "The outdoor unit vibrates excessively"
+    ],
+    faqs: [
+      { q: "Is a noisy aircon dangerous?", a: "It is not immediately dangerous, but a grinding fan motor or failing compressor will get worse and cost more to fix if ignored." },
+      { q: "What does a grinding noise mean?", a: "Grinding usually points to worn fan motor bearings or debris caught in the blower. It should be checked before the motor seizes." },
+      { q: "How much to fix a noisy aircon?", a: "Tightening and cleaning starts from RM 129. Fan motor replacement starts from RM 390, and a compressor from RM 1,040." },
+      { q: "Can a service quiet a noisy unit?", a: "Yes, if the noise is from dirt or loose parts. A chemical wash or basic service often resolves rattling and vibration." }
+    ]
+  },
+  {
+    slug: "aircon-bad-smell",
+    serviceSlug: "aircon",
+    title: "Aircon Bad Smell (Mouldy or Musty Odour)",
+    symptom: "The aircon blows a musty, mouldy or sour smell into the room, especially when it first starts.",
+    costRange: "RM 156–RM 455 depending on the treatment",
+    urgency: "Low",
+    causes: [
+      "Mould and bacteria on the evaporator coil",
+      "Stagnant water in the drain tray",
+      "Dirty blower wheel",
+      "Dust and debris trapped in the filter"
+    ],
+    solutions: [
+      "Clean and sanitise the coil and blower",
+      "Flush the drain tray and pipe",
+      "Apply an anti-microbial treatment",
+      "Deep-clean with a chemical wash or overhaul"
+    ],
+    whenToCall: [
+      "The smell persists after cleaning the filter",
+      "Mould is visible on the vents",
+      "The smell triggers allergies or breathing irritation"
+    ],
+    faqs: [
+      { q: "Why does my aircon smell bad?", a: "Mould and bacteria grow on the damp coil and blower, then blow into the room. A chemical wash removes the source." },
+      { q: "Is the smell dangerous for my family?", a: "Mouldy air can irritate allergies and breathing. Cleaning the coil and drain removes the odour and improves air quality." },
+      { q: "Will a basic service remove the smell?", a: "Sometimes, but a pressure chemical wash or chemical overhaul is usually needed to fully sanitise the coil and blower." },
+      { q: "How do I stop the smell coming back?", a: "Service the unit every 3–6 months, keep the filter clean, and run the fan-only mode for a few minutes before switching off." }
+    ]
+  },
+  {
+    slug: "aircon-weak-airflow",
+    serviceSlug: "aircon",
+    title: "Aircon Weak Airflow (Not Blowing Strong Enough)",
+    symptom: "The aircon cools but the airflow is weak, so the room stays warm even at the highest fan speed.",
+    costRange: "RM 129–RM 455 depending on the cause",
+    urgency: "Medium",
+    causes: [
+      "Clogged air filter",
+      "Dirty or iced evaporator coil",
+      "Failing indoor blower motor",
+      "Blocked or undersized ducting"
+    ],
+    solutions: [
+      "Clean or replace the air filter",
+      "Wash the evaporator coil to restore airflow",
+      "Replace a weak blower motor",
+      "Check and clear the ducting or vents"
+    ],
+    whenToCall: [
+      "Airflow drops even at maximum fan speed",
+      "The unit is noisy while blowing weakly",
+      "Some rooms never reach temperature"
+    ],
+    faqs: [
+      { q: "Why is my aircon airflow so weak?", a: "A clogged filter or dirty coil is the most common cause, followed by a weakening blower motor. Cleaning usually restores it." },
+      { q: "How often should I clean the filter?", a: "Every 2–4 weeks for heavy use. A clogged filter starves the coil of air and forces the unit to work harder." },
+      { q: "Does weak airflow mean I need a new aircon?", a: "Not usually. Most cases are fixed with cleaning or a blower motor replacement. Only very old units may not be worth repairing." },
+      { q: "How much to fix weak airflow?", a: "Basic servicing starts from RM 129. If the blower motor needs replacing, it starts from RM 455." }
+    ]
+  },
+  {
+    slug: "aircon-not-turning-on",
+    serviceSlug: "aircon",
+    title: "Aircon Not Turning On",
+    symptom: "The aircon does not respond to the remote or the power button, or it switches off by itself shortly after starting.",
+    costRange: "RM 114–RM 455 depending on the fault",
+    urgency: "High",
+    causes: [
+      "Tripped breaker or blown fuse",
+      "Faulty remote or receiver board",
+      "Failed capacitor or contactor",
+      "Faulty PCB control board"
+    ],
+    solutions: [
+      "Check the breaker and power supply",
+      "Test and replace the remote or receiver",
+      "Replace a failed capacitor or contactor",
+      "Repair or replace the PCB control board"
+    ],
+    whenToCall: [
+      "The unit is completely dead",
+      "It turns off by itself repeatedly",
+      "There is a burning smell or tripping breaker"
+    ],
+    faqs: [
+      { q: "Why won't my aircon turn on?", a: "It could be a tripped breaker, a dead remote, a failed capacitor or a faulty PCB. A diagnostic visit from RM 114 pinpoints it." },
+      { q: "Is the diagnostic fee refundable?", a: "The diagnostic fee is waived if we repair the unit during the same visit." },
+      { q: "Can a power surge kill an aircon?", a: "Yes. Surges often damage the PCB control board or capacitor. A surge protector on the dedicated circuit helps prevent it." },
+      { q: "How much to fix an aircon that won't turn on?", a: "Capacitor replacement starts from RM 195 and PCB repair from RM 455. The final price depends on the part that failed." }
+    ]
+  },
+  {
+    slug: "aircon-tripping-mcb",
+    serviceSlug: "aircon",
+    title: "Aircon Tripping MCB / Circuit Breaker",
+    symptom: "The aircon trips the MCB or RCCB circuit breaker whenever it starts, cutting power to the room.",
+    costRange: "RM 195–RM 1,040 depending on the fault",
+    urgency: "High",
+    causes: [
+      "Failing compressor drawing excess current",
+      "Shorted capacitor or wiring",
+      "Undersized breaker or shared circuit",
+      "Moisture ingress into the outdoor unit"
+    ],
+    solutions: [
+      "Test the compressor current draw",
+      "Replace a shorted capacitor",
+      "Install a correctly sized dedicated breaker",
+      "Dry and seal the outdoor electrical connections"
+    ],
+    whenToCall: [
+      "The breaker trips every time the aircon starts",
+      "Other appliances on the same circuit are affected",
+      "There is a burning smell near the unit"
+    ],
+    faqs: [
+      { q: "Why does my aircon trip the breaker?", a: "Usually a failing compressor, a shorted capacitor, or an undersized circuit. It should be checked by a technician to avoid a fire risk." },
+      { q: "Is it safe to keep resetting the breaker?", a: "No. Repeated tripping means a real electrical fault. Keep resetting it and you risk overheating the wiring." },
+      { q: "Do I need an electrician or an aircon tech?", a: "An aircon technician diagnoses the unit side while an electrician checks the circuit. We coordinate both when needed." },
+      { q: "How much to fix a tripping aircon?", a: "A capacitor replacement starts from RM 195, while a compressor replacement starts from RM 1,040." }
+    ]
+  },
+  {
+    slug: "ice-forming-on-aircon",
+    serviceSlug: "aircon",
+    title: "Ice Forming on Aircon (Frozen Coil or Pipes)",
+    symptom: "Frost or ice builds up on the evaporator coil or the copper pipes, and the unit stops cooling properly.",
+    costRange: "RM 129–RM 455 depending on the cause",
+    urgency: "Medium",
+    causes: [
+      "Low refrigerant gas",
+      "Dirty filter or blocked coil",
+      "Blower fan running too slowly",
+      "Thermostat or sensor fault"
+    ],
+    solutions: [
+      "Defrost the unit and clean the coil",
+      "Top up refrigerant after a leak check",
+      "Replace a failing blower motor",
+      "Replace a faulty temperature sensor"
+    ],
+    whenToCall: [
+      "Ice is visible on the pipes or coil",
+      "The unit thaws and re-freezes repeatedly",
+      "Water drips as the ice melts"
+    ],
+    faqs: [
+      { q: "Why is there ice on my aircon?", a: "Ice forms when the coil gets too cold — usually from low gas, a blocked coil, or poor airflow over the coil." },
+      { q: "Should I turn the unit off if it's frozen?", a: "Yes. Switch to fan-only or off to let it defrost, then book a service to find and fix the cause." },
+      { q: "Does ice damage the aircon?", a: "Over time ice can damage the coil and compressor. It also means the unit is not cooling efficiently." },
+      { q: "How much to fix a frozen aircon?", a: "Cleaning starts from RM 129, and gas top-up from RM 2.50 per PSI. A full chemical wash starts from RM 156." }
+    ]
+  },
+  {
+    slug: "aircon-remote-display-issue",
+    serviceSlug: "aircon",
+    title: "Aircon Remote or Display Not Working",
+    symptom: "The remote control does not respond, or the unit's display shows error codes, flickers or goes blank.",
+    costRange: "RM 114–RM 455 depending on the fault",
+    urgency: "Low",
+    causes: [
+      "Flat or corroded remote batteries",
+      "Faulty remote sensor or receiver board",
+      "Loose display wiring or connector",
+      "Faulty main PCB"
+    ],
+    solutions: [
+      "Replace the remote batteries",
+      "Test and replace the remote or receiver",
+      "Reseat the display connector",
+      "Repair or replace the PCB control board"
+    ],
+    whenToCall: [
+      "The remote works only at very close range",
+      "The display shows an error code",
+      "The display flickers or stays blank"
+    ],
+    faqs: [
+      { q: "Why is my aircon remote not working?", a: "Start with fresh batteries. If it still fails, the remote's infrared sensor or the unit's receiver board is likely faulty." },
+      { q: "What do aircon error codes mean?", a: "Each brand has its own codes, but most point to sensor, gas, or PCB faults. A technician can read and resolve them." },
+      { q: "Can you replace just the remote?", a: "Yes. Universal or brand-matched remotes are available, and we can program them to your unit." },
+      { q: "How much to fix a remote or display issue?", a: "Diagnosis starts from RM 114, a replacement remote is inexpensive, and PCB repair starts from RM 455." }
+    ]
   }
 ];

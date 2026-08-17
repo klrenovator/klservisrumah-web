@@ -1364,5 +1364,170 @@ Every job we take on comes with:
 
 Ready to hire someone who ticks all these boxes? WhatsApp us and we'll respond within 60 minutes during business hours.
 `
+  }),
+
+  // ── AIRCON ARTICLES ─────────────────────────────────────────────────────
+  post({
+    slug: "aircon-service-price-malaysia-2026",
+    title: "Aircon Service Price Malaysia 2026: Full Price Guide",
+    excerpt: "Basic servicing from RM 129, chemical wash from RM 156, overhaul from RM 286 and installation from RM 259 — the complete KL & Selangor aircon price list, with what each service includes.",
+    category: "Aircon",
+    coverImage: "/hero-aircon.svg",
+    metaTitle: "Aircon Service Price Malaysia 2026 — Full Price Guide",
+    metaDesc: "Complete 2026 aircon service price list for KL & Selangor. Basic servicing from RM 129, chemical wash from RM 156, overhaul from RM 286, installation from RM 259.",
+    content: `
+Every aircon price below is a minimum starting price, not a fixed figure. The actual cost depends on the nature and scope of your job, and our technical team confirms the final price after a site visit or after reviewing your photos.
+
+## Cleaning — Wall-Mounted Units
+
+| Service | HP | Price |
+|---|---|---|
+| Basic Servicing | 1.0–1.5 HP | From RM 129 |
+| Basic Servicing | 2.0–2.5 HP | From RM 156 |
+| Basic Servicing | 3.0–3.5 HP | From RM 195 |
+| Pressure Chemical Wash | 1.0–1.5 HP | From RM 156 |
+| Pressure Chemical Wash | 2.0–2.5 HP | From RM 195 |
+| Pressure Chemical Wash | 3.0 HP | From RM 234 |
+| Chemical Overhaul | 1.0–1.5 HP | From RM 286 |
+| Chemical Overhaul | 2.0–2.5 HP | From RM 364 |
+| Chemical Overhaul | 3.0–3.5 HP | From RM 455 |
+
+## Gas Top-Up (Per PSI)
+
+Gas top-up is charged on the actual PSI required after the technician inspects on site. R22 is RM 2.50 per PSI, while R410A and R32 are RM 3.00 per PSI. A structural leak check starts from RM 114 and is included.
+
+## New Installation (Unit Not Included)
+
+Wall-mounted installation starts from RM 259 (1.0–1.5 HP) up to RM 584 (5.0 HP). Ceiling cassette installation starts from RM 377 and window units from RM 259. The price is installation only — the aircon unit is not included.
+
+## Repairs & Spare Parts
+
+Diagnostic fee starts from RM 114 and is waived if repaired the same visit. Capacitor replacement starts from RM 195, fan motors from RM 390, and compressor replacement from RM 1,040. All spare parts carry a 3-month warranty.
+
+See our [aircon service page](/services/aircon) for the full breakdown and book a quote on WhatsApp.
+`
+  }),
+  post({
+    slug: "chemical-wash-vs-chemical-overhaul-aircon",
+    title: "Chemical Wash vs Chemical Overhaul: Which Aircon Service Do You Need?",
+    excerpt: "A chemical wash cleans the coil and blower without removing the unit; an overhaul fully dismantles it. Here's how to choose the right one for your aircon and budget.",
+    category: "Aircon",
+    coverImage: "/hero-aircon.svg",
+    metaTitle: "Chemical Wash vs Chemical Overhaul — Which Aircon Service?",
+    metaDesc: "Chemical wash vs chemical overhaul for your aircon in KL & Selangor. Compare cost, process and when each is the right fix. Chemical wash from RM 156, overhaul from RM 286.",
+    content: `
+Choosing between a chemical wash and a chemical overhaul comes down to how deep the problem goes.
+
+## What a Chemical Wash Does
+
+A pressure chemical wash uses an alkaline or anti-microbial solution to clean the evaporator coil, blower wheel and drain without fully removing the unit from the wall. It is the standard fix for a musty smell, mild water dripping and reduced cooling after 6–12 months of use.
+
+Wall-mounted chemical wash starts from RM 156 for a 1.0–1.5 HP unit.
+
+## What a Chemical Overhaul Does
+
+An overhaul removes the entire unit from the wall, dismantles it, and deep-cleans every part individually — coil, blower, fan casing and drain pan. It is the definitive fix for chronic water leaks and heavily clogged units.
+
+Chemical overhaul starts from RM 286 for a 1.0–1.5 HP unit.
+
+## How to Choose
+
+- Choose a **chemical wash** when the unit cools but smells slightly, drips occasionally, or has simply gone too long without a clean.
+- Choose a **chemical overhaul** when the unit leaks water constantly, has not been serviced for years, or a chemical wash failed to fix it.
+
+Both are covered by our 1-month workmanship warranty. Compare the full prices on our [aircon service page](/services/aircon).
+`
+  }),
+  post({
+    slug: "aircon-gas-topup-guide-malaysia",
+    title: "Aircon Gas Top-Up Guide: R22, R410A & R32 Prices in Malaysia",
+    excerpt: "R22 is RM 2.50 per PSI, R410A and R32 are RM 3.00 per PSI. Learn how gas top-up is charged, why a leak check matters, and when topping up isn't the real fix.",
+    category: "Aircon",
+    coverImage: "/hero-aircon.svg",
+    metaTitle: "Aircon Gas Top-Up Guide — R22, R410A & R32 Prices",
+    metaDesc: "Aircon gas top-up prices in Malaysia: R22 RM 2.50/PSI, R410A RM 3.00/PSI, R32 RM 3.00/PSI. How charging works and why a leak check is always included.",
+    content: `
+Gas top-up is one of the most misunderstood aircon services, so here is exactly how it works.
+
+## Gas Prices Per PSI
+
+- R22 refrigerant: RM 2.50 per PSI
+- R410A refrigerant: RM 3.00 per PSI
+- R32 refrigerant: RM 3.00 per PSI
+
+Gas top-up is charged on the actual PSI required after the technician inspects on site. We only refill the amount needed, and a structural leak check (from RM 114) is included.
+
+## Why a Leak Check Matters
+
+Refrigerant does not simply "run out". If your unit is low on gas, there is almost always a leak somewhere in the system. Topping up without finding the leak means the gas will escape again — often within weeks.
+
+## When Gas Top-Up Isn't the Fix
+
+If the unit is not cold because of a dirty coil or failing compressor, adding gas will not help and may waste your money. A proper diagnosis first tells you whether you need gas, a chemical wash, or a part replacement.
+
+Book a gas top-up or diagnosis on our [aircon service page](/services/aircon).
+`
+  }),
+  post({
+    slug: "aircon-installation-cost-malaysia",
+    title: "Aircon Installation Cost in Malaysia 2026: What's Included",
+    excerpt: "Wall-mounted installation from RM 259, ceiling cassette from RM 377. Here's exactly what's included — and why the aircon unit itself is not part of the price.",
+    category: "Aircon",
+    coverImage: "/hero-aircon.svg",
+    metaTitle: "Aircon Installation Cost Malaysia 2026 — What's Included",
+    metaDesc: "Aircon installation cost in KL & Selangor: wall-mounted from RM 259, ceiling cassette from RM 377. Installation only — unit not included. 7 ft copper pipe included.",
+    content: `
+The installation price you see is for installation only — the aircon unit is not included, and you supply your own unit.
+
+## Installation Prices
+
+| Unit type | HP | Price |
+|---|---|---|
+| Wall-Mounted | 1.0–1.5 HP | From RM 259 |
+| Wall-Mounted | 2.0 HP | From RM 324 |
+| Wall-Mounted | 2.5 HP | From RM 363 |
+| Wall-Mounted | 3.0 HP | From RM 428 |
+| Wall-Mounted | 4.0 HP | From RM 519 |
+| Wall-Mounted | 5.0 HP | From RM 584 |
+| Ceiling Cassette | 1.0–1.5 HP | From RM 377 |
+| Window Unit | 1.0–1.5 HP | From RM 259 |
+
+## What's Included
+
+Every installation includes 7 ft of copper pipe, insulation, electrical wiring, drain pipe, bracket, vacuum pump commissioning and a run/cooling test. Extra copper beyond 7 ft is charged per foot.
+
+## Why the Unit Isn't Included
+
+We install the aircon you already own or buy separately. This keeps the price transparent — you choose the brand and model, and we charge a clear installation rate.
+
+See the full breakdown on our [aircon service page](/services/aircon).
+`
+  }),
+  post({
+    slug: "how-often-to-service-aircon-malaysia",
+    title: "How Often Should You Service Your Aircon in Malaysia?",
+    excerpt: "Most Malaysian homes should service their aircon every 3–6 months, with a chemical wash annually. Here's the schedule that keeps your unit cold, clean and efficient.",
+    category: "Aircon",
+    coverImage: "/hero-aircon.svg",
+    metaTitle: "How Often to Service Aircon in Malaysia — 3–6 Month Guide",
+    metaDesc: "How often should you service your aircon in Malaysia? We recommend basic servicing every 3–6 months and a chemical wash once a year. Full maintenance schedule inside.",
+    content: `
+Malaysia's heat and humidity mean your aircon works harder than almost anywhere else — so it needs more regular care.
+
+## Recommended Service Frequency
+
+- **Every 3–6 months**: basic servicing (filter and coil cleaning, drainage and gas check). Ideal for homes that run the aircon nightly.
+- **Once a year**: a pressure chemical wash to remove deep grime, mould and odour from the coil and blower.
+- **Every 3–5 years**: a full chemical overhaul if the unit leaks water or has not been cleaned properly.
+
+## Signs You Need Service Sooner
+
+- The air is not as cold as before
+- The unit drips water or smells musty
+- There is ice on the pipes or a rattling noise
+- Your electricity bill has crept up
+
+Regular servicing keeps the unit efficient, prevents breakdowns and extends its lifespan. Book your next service on our [aircon service page](/services/aircon).
+`
   })
 ];

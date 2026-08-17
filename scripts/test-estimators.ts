@@ -218,6 +218,18 @@ import { waterPressureTroubleshooterMsDict } from "../lib/estimator/i18n/tools/w
 import { waterPressureTroubleshooterZhDict } from "../lib/estimator/i18n/tools/water-pressure-troubleshooter-zh.ts";
 import { estimatorSpecs } from "../lib/estimator/index.ts";
 import {
+  buildAirconInstallationCostSpec,
+  buildAirconGasTopupCostSpec,
+  buildAirconSizeCalculatorSpec,
+  buildAirconBtuCalculatorSpec,
+  buildAirconElectricityCostSpec,
+  buildAirconSavingsCalculatorSpec,
+  buildAirconServicePickerSpec
+} from "../lib/estimator/builders/aircon.ts";
+import { airconToolsEnDict } from "../lib/estimator/i18n/tools/aircon-tools-en.ts";
+import { airconToolsMsDict } from "../lib/estimator/i18n/tools/aircon-tools-ms.ts";
+import { airconToolsZhDict } from "../lib/estimator/i18n/tools/aircon-tools-zh.ts";
+import {
   TOOLS_INDEX_PATH,
   TOOL_SLUG_I18N,
   canonicalToolSlug,
@@ -1129,6 +1141,48 @@ const toolI18n: ToolI18n[] = [
     build: buildWaterPressureTroubleshooterSpec,
     dicts: { en: waterPressureTroubleshooterEnDict, ms: waterPressureTroubleshooterMsDict, zh: waterPressureTroubleshooterZhDict },
     samples: samplingSweep(estimatorSpecs["water-pressure-troubleshooter"], { severity: ["minor", "severe"], location: ["kitchen", "bathroom", "outdoor"], urgency: ["standard", "emergency"] })
+  },
+  {
+    slug: "aircon-installation-cost",
+    build: buildAirconInstallationCostSpec,
+    dicts: { en: airconToolsEnDict, ms: airconToolsMsDict, zh: airconToolsZhDict },
+    samples: samplingSweep(estimatorSpecs["aircon-installation-cost"], { unit: ["wall-1-0", "wall-5-0", "cassette-1-0", "window-1-0"], extraCopper: [0, 30], access: ["easy", "difficult"] })
+  },
+  {
+    slug: "aircon-gas-topup-cost",
+    build: buildAirconGasTopupCostSpec,
+    dicts: { en: airconToolsEnDict, ms: airconToolsMsDict, zh: airconToolsZhDict },
+    samples: samplingSweep(estimatorSpecs["aircon-gas-topup-cost"], { gas: ["r22", "r410a", "r32"], psi: [5, 100], leakCheck: [true, false] })
+  },
+  {
+    slug: "aircon-size-calculator",
+    build: buildAirconSizeCalculatorSpec,
+    dicts: { en: airconToolsEnDict, ms: airconToolsMsDict, zh: airconToolsZhDict },
+    samples: samplingSweep(estimatorSpecs["aircon-size-calculator"], { area: [60, 150, 1200], ceiling: ["standard", "high"], exposure: ["low", "high"] })
+  },
+  {
+    slug: "aircon-btu-calculator",
+    build: buildAirconBtuCalculatorSpec,
+    dicts: { en: airconToolsEnDict, ms: airconToolsMsDict, zh: airconToolsZhDict },
+    samples: samplingSweep(estimatorSpecs["aircon-btu-calculator"], { length: [10, 20], width: [12, 25], occupancy: [1, 10] })
+  },
+  {
+    slug: "aircon-electricity-cost",
+    build: buildAirconElectricityCostSpec,
+    dicts: { en: airconToolsEnDict, ms: airconToolsMsDict, zh: airconToolsZhDict },
+    samples: samplingSweep(estimatorSpecs["aircon-electricity-cost"], { hp: ["1-0", "1-5", "2-0", "2-5"], hours: [1, 24] })
+  },
+  {
+    slug: "aircon-savings-calculator",
+    build: buildAirconSavingsCalculatorSpec,
+    dicts: { en: airconToolsEnDict, ms: airconToolsMsDict, zh: airconToolsZhDict },
+    samples: samplingSweep(estimatorSpecs["aircon-savings-calculator"], { hp: ["1-0", "1-5", "2-0", "2-5"], hours: [1, 24] })
+  },
+  {
+    slug: "aircon-service-picker",
+    build: buildAirconServicePickerSpec,
+    dicts: { en: airconToolsEnDict, ms: airconToolsMsDict, zh: airconToolsZhDict },
+    samples: samplingSweep(estimatorSpecs["aircon-service-picker"], { symptoms: [["not-cold"], ["leaking", "smell"], ["not-on"], ["ice"], ["weak"]] })
   }
 ];
 

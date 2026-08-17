@@ -25,7 +25,7 @@ permanent handoff rule "SSM NOT TO BE SHOWN PUBLICALLY ON WEBSITE"._
 - **Office**: Jalan Kiara, Mont Kiara, 50480 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia
 - **Hours**: Mon–Sun · 9:00 AM – 6:00 PM (Everyday Open)
 
-## Service Offerings (28 service categories)
+## Service Offerings (29 service categories)
 All prices are the published starting prices shown on the live service pages. Final pricing is confirmed in an itemised written quote before work begins.
 
 ### House Painting Services
@@ -308,6 +308,20 @@ All prices are the published starting prices shown on the live service pages. Fi
 - Staircase Stringer Fabrication — From RM 420 / linier ft
 - Cost guide: https://www.klservisrumah.my/services/welding/cost
 
+### Aircon Service, Repair & Installation
+- Page: https://www.klservisrumah.my/services/aircon
+- Starting price: RM 129
+- Warranty: 1-Month Workmanship Warranty (3-Month Parts Warranty)
+- Basic Servicing — From RM 129
+- Chemical Wash — From RM 156
+- Chemical Overhaul — From RM 286
+- Gas Top-Up — RM 2.50–3.00 / PSI
+- Installation — From RM 259
+- Repair — From RM 114
+- Ceiling Cassette — From RM 195
+- Dismantling & Relocation — From RM 117
+- Cost guide: https://www.klservisrumah.my/services/aircon/cost
+
 ## Coverage Areas (37 dedicated area pages)
 - Kuala Lumpur (Kuala Lumpur) — https://www.klservisrumah.my/areas/kuala-lumpur
 - Petaling Jaya (Selangor) — https://www.klservisrumah.my/areas/petaling-jaya
@@ -349,7 +363,7 @@ All prices are the published starting prices shown on the live service pages. Fi
 
 Broader coverage list: Kuala Lumpur, Cheras, Ampang, Setapak, Wangsa Maju, Kepong, Sri Petaling, Bukit Jalil, Mont Kiara, Bangsar, Desa ParkCity, Taman Melawati, Hulu Kelang, Petaling Jaya, Subang Jaya, Shah Alam, Puchong, Damansara, Kota Damansara, Ara Damansara, Sunway, USJ, Bandar Utama, SS2, Klang, Port Klang, Bukit Tinggi, Setia Alam, Meru, Kota Kemuning, Bukit Jelutong, Glenmarie, Batu Caves, Selayang, Rawang, Kundang, Sungai Buloh, Kajang, Semenyih, Balakong, Seri Kembangan, Pandan Indah, Bandar Puteri, Putrajaya, Cyberjaya, Dengkil, Selangor, Sentul, Bandar Botanic.
 
-## Diagnostic Problem Pages (77)
+## Diagnostic Problem Pages (86)
 Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Peeling Paint in Malaysian Homes — https://www.klservisrumah.my/problems/peeling-paint-malaysia
 - Faded Exterior Paint After Malaysian Sun and Rain — https://www.klservisrumah.my/problems/faded-exterior-paint-malaysia
@@ -428,8 +442,17 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Auto Gate Remote Not Working — https://www.klservisrumah.my/problems/autogate-remote-not-working
 - Loose or Sagging Metal Gate Hinges — https://www.klservisrumah.my/problems/loose-metal-gate-hinges
 - Sliding Window Stuck or Jamming — https://www.klservisrumah.my/problems/stuck-sliding-window
+- Aircon Not Cold (Warm Air Blowing) — https://www.klservisrumah.my/problems/aircon-not-cold
+- Aircon Water Leaking (Indoor Unit Dripping) — https://www.klservisrumah.my/problems/aircon-water-leaking
+- Aircon Making Noise (Rattling, Buzzing, Grinding) — https://www.klservisrumah.my/problems/aircon-making-noise
+- Aircon Bad Smell (Mouldy or Musty Odour) — https://www.klservisrumah.my/problems/aircon-bad-smell
+- Aircon Weak Airflow (Not Blowing Strong Enough) — https://www.klservisrumah.my/problems/aircon-weak-airflow
+- Aircon Not Turning On — https://www.klservisrumah.my/problems/aircon-not-turning-on
+- Aircon Tripping MCB / Circuit Breaker — https://www.klservisrumah.my/problems/aircon-tripping-mcb
+- Ice Forming on Aircon (Frozen Coil or Pipes) — https://www.klservisrumah.my/problems/ice-forming-on-aircon
+- Aircon Remote or Display Not Working — https://www.klservisrumah.my/problems/aircon-remote-display-issue
 
-## Guides & Articles (224)
+## Guides & Articles (229)
 - 5 Tips For Choosing Modern Home Paint Colors in Malaysia — https://www.klservisrumah.my/blog/5-tips-choosing-paint-colors-malaysia
 - How To Fix A Leaking Bathroom Ceiling Without Hacking Tiles — https://www.klservisrumah.my/blog/how-to-fix-leaking-ceiling-without-tile-hacking
 - When to Repaint Your House in Malaysia (Signs, Frequency & Budget) — https://www.klservisrumah.my/blog/when-to-repaint-your-house-malaysia
@@ -448,6 +471,11 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Auto Gate Installation Guide for Malaysian Homes — https://www.klservisrumah.my/blog/auto-gate-installation-guide-malaysia
 - Condo Repaint vs Landed Terrace House Repaint: What's Different? — https://www.klservisrumah.my/blog/when-to-repaint-condo-vs-repaint-terrace-house
 - How to Hire an Honest Home Contractor in Malaysia (Red Flag Guide) — https://www.klservisrumah.my/blog/how-to-hire-honest-contractor-malaysia
+- Aircon Service Price Malaysia 2026: Full Price Guide — https://www.klservisrumah.my/blog/aircon-service-price-malaysia-2026
+- Chemical Wash vs Chemical Overhaul: Which Aircon Service Do You Need? — https://www.klservisrumah.my/blog/chemical-wash-vs-chemical-overhaul-aircon
+- Aircon Gas Top-Up Guide: R22, R410A & R32 Prices in Malaysia — https://www.klservisrumah.my/blog/aircon-gas-topup-guide-malaysia
+- Aircon Installation Cost in Malaysia 2026: What's Included — https://www.klservisrumah.my/blog/aircon-installation-cost-malaysia
+- How Often Should You Service Your Aircon in Malaysia? — https://www.klservisrumah.my/blog/how-often-to-service-aircon-malaysia
 - Plaster Ceiling Design & Build in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/plaster-ceiling-design-build-kl
 - Flat Plaster Ceiling Installation in KL & Selangor — https://www.klservisrumah.my/blog/flat-plaster-ceiling-kl
 - Tiered & L-Box Ceiling Installation in KL & Selangor — https://www.klservisrumah.my/blog/tiered-l-box-ceiling-kl
@@ -695,6 +723,13 @@ Trilingual, single-page estimators priced from the published rate list.
 - Bathroom Renovation Estimator — EN https://www.klservisrumah.my/tools/bathroom-renovation-estimator · BM https://www.klservisrumah.my/ms/alatan/renovasi-bilik-air · 中文 https://www.klservisrumah.my/zh/gongju/浴室装修估价
 - Deep Cleaning Cost Estimator — EN https://www.klservisrumah.my/tools/deep-cleaning-cost-estimator · BM https://www.klservisrumah.my/ms/alatan/kos-cuci-menyeluruh · 中文 https://www.klservisrumah.my/zh/gongju/深度清洁费用
 - Move-In / Move-Out Cleaning Calculator — EN https://www.klservisrumah.my/tools/move-in-out-cleaning-calculator · BM https://www.klservisrumah.my/ms/alatan/cuci-pindah-masuk-keluar · 中文 https://www.klservisrumah.my/zh/gongju/搬家清洁计算器
+- Aircon Installation Cost Calculator for KL & Selangor — EN https://www.klservisrumah.my/tools/aircon-installation-cost · BM https://www.klservisrumah.my/ms/alatan/kalkulator-kos-pemasangan-aircond · 中文 https://www.klservisrumah.my/zh/gongju/空调安装费用计算器
+- Aircon Gas Top-Up Cost Calculator for KL & Selangor — EN https://www.klservisrumah.my/tools/aircon-gas-topup-cost · BM https://www.klservisrumah.my/ms/alatan/kalkulator-kos-topup-gas-aircond · 中文 https://www.klservisrumah.my/zh/gongju/空调加雪种费用计算器
+- Aircon Size Calculator — What HP Do You Need? — EN https://www.klservisrumah.my/tools/aircon-size-calculator · BM https://www.klservisrumah.my/ms/alatan/kalkulator-saiz-aircond · 中文 https://www.klservisrumah.my/zh/gongju/空调匹数计算器
+- Aircon BTU Calculator for Malaysian Rooms — EN https://www.klservisrumah.my/tools/aircon-btu-calculator · BM https://www.klservisrumah.my/ms/alatan/kalkulator-btu-aircond · 中文 https://www.klservisrumah.my/zh/gongju/空调BTU计算器
+- Aircon Electricity Cost Calculator for Malaysia — EN https://www.klservisrumah.my/tools/aircon-electricity-cost · BM https://www.klservisrumah.my/ms/alatan/kalkulator-kos-elektrik-aircond · 中文 https://www.klservisrumah.my/zh/gongju/空调电费计算器
+- Inverter Aircon Savings Calculator for Malaysia — EN https://www.klservisrumah.my/tools/aircon-savings-calculator · BM https://www.klservisrumah.my/ms/alatan/kalkulator-penjimatan-aircond-inverter · 中文 https://www.klservisrumah.my/zh/gongju/变频空调省电计算器
+- Which Aircon Service Do I Need? — Diagnostic — EN https://www.klservisrumah.my/tools/aircon-service-picker · BM https://www.klservisrumah.my/ms/alatan/diagnostik-servis-aircond · 中文 https://www.klservisrumah.my/zh/gongju/空调服务诊断
 - Shareable per-service estimators: https://www.klservisrumah.my/estimate
 
 ## Key Differentiators
@@ -729,6 +764,6 @@ KL Servis Rumah publishes fair, upfront pricing benchmarked against the Klang Va
 - Sitemap: https://www.klservisrumah.my/sitemap.xml
 
 ## Scale
-- 28 services · 112 sub-services
-- 37 area pages · 77 problem pages · 224 articles
-- 4,264 indexable pages listed in the sitemap
+- 29 services · 120 sub-services
+- 37 area pages · 86 problem pages · 229 articles
+- 4,479 indexable pages listed in the sitemap

@@ -78,7 +78,14 @@ export const TOOL_SLUG_I18N: Record<ToolLocale, Record<string, string>> = {
     "kitchen-renovation-estimator": "renovasi-dapur",
     "bathroom-renovation-estimator": "renovasi-bilik-air",
     "deep-cleaning-cost-estimator": "kos-cuci-menyeluruh",
-    "move-in-out-cleaning-calculator": "cuci-pindah-masuk-keluar"
+    "move-in-out-cleaning-calculator": "cuci-pindah-masuk-keluar",
+    "aircon-installation-cost": "kalkulator-kos-pemasangan-aircond",
+    "aircon-gas-topup-cost": "kalkulator-kos-topup-gas-aircond",
+    "aircon-size-calculator": "kalkulator-saiz-aircond",
+    "aircon-btu-calculator": "kalkulator-btu-aircond",
+    "aircon-electricity-cost": "kalkulator-kos-elektrik-aircond",
+    "aircon-savings-calculator": "kalkulator-penjimatan-aircond-inverter",
+    "aircon-service-picker": "diagnostik-servis-aircond"
   },
   zh: {
     "painting-calculator": "油漆计算器",
@@ -117,7 +124,14 @@ export const TOOL_SLUG_I18N: Record<ToolLocale, Record<string, string>> = {
     "kitchen-renovation-estimator": "厨房装修估价",
     "bathroom-renovation-estimator": "浴室装修估价",
     "deep-cleaning-cost-estimator": "深度清洁费用",
-    "move-in-out-cleaning-calculator": "搬家清洁计算器"
+    "move-in-out-cleaning-calculator": "搬家清洁计算器",
+    "aircon-installation-cost": "空调安装费用计算器",
+    "aircon-gas-topup-cost": "空调加雪种费用计算器",
+    "aircon-size-calculator": "空调匹数计算器",
+    "aircon-btu-calculator": "空调BTU计算器",
+    "aircon-electricity-cost": "空调电费计算器",
+    "aircon-savings-calculator": "变频空调省电计算器",
+    "aircon-service-picker": "空调服务诊断"
   }
 };
 
@@ -2163,6 +2177,296 @@ export const toolsContentI18n: Record<ToolLocale, Record<string, ToolContentI18n
         { label: "Panduan Harga", href: "/pricing" }
       ]
     },
+
+    /* ── Aircond ─────────────────────────────────────────────────────────── */
+    "aircon-installation-cost": {
+      name: "Kalkulator Kos Pemasangan Aircond",
+      heading: "Kalkulator Kos Pemasangan Aircond untuk KL & Selangor",
+      metaTitle: "Kalkulator Kos Pemasangan Aircond KL",
+      metaDesc: "Kalkulator kos pemasangan aircond percuma untuk KL & Selangor. Unit dinding dari RM 259, kaset dari RM 377. Pemasangan sahaja — unit tidak termasuk.",
+      keywords: ["kos pemasangan aircond Malaysia", "harga pasang aircond KL", "pasang aircond Selangor"],
+      eyebrow: "Anggaran percuma serta-merta",
+      intro: "Satu halaman, tiada butang seterusnya. Pilih jenis unit dan kuasa kuda — harga pemasangan muncul serta-merta daripada kadar KL & Selangor kami yang diterbitkan.",
+      directQuestion: "Berapa kos pemasangan aircond di KL dan Selangor?",
+      directAnswer: "Pemasangan aircond di KL & Selangor bermula dari RM 259 untuk unit dinding 1.0–1.5 HP, sehingga RM 584 untuk unit 5.0 HP. Pemasangan kaset siling bermula dari RM 377 dan unit tingkap dari RM 259. Harga adalah pemasangan sahaja — unit aircond tidak termasuk. Setiap pemasangan termasuk paip tembaga 7 kaki, penebat, pendawaian elektrik, paip saliran, braket, pentauliahan pam vakum dan ujian penyejukan.",
+      heroAlt: "Kalkulator kos pemasangan aircond untuk rumah di KL dan Selangor",
+      stats: [
+        { label: "Unit dinding, dari", value: "RM 259" },
+        { label: "Kaset, dari", value: "RM 377" },
+        { label: "Masa untuk siap", value: "Bawah 1 minit" }
+      ],
+      howTo: [
+        { title: "Pilih jenis unit dan kuasa kuda", desc: "Pilih unit dinding (1.0–5.0 HP), kaset siling atau unit tingkap. Harga dikemas kini pada setiap ketikan." },
+        { title: "Tambah tembaga tambahan jika perlu", desc: "Pemasangan termasuk tembaga 7 kaki. Laraskan tembaga tambahan melebihi 7 kaki pada kadar setiap kaki yang diterbitkan." },
+        { title: "Baca anggaran anda dan tempah", desc: "Kos pemasangan, julat dan pecahan muncul serta-merta. Tempah melalui WhatsApp atau minta tinjauan tapak." }
+      ],
+      priceTable: [
+        { scope: "Unit Dinding 1.0–1.5 HP", note: "Paip tembaga 7 kaki disertakan" },
+        { scope: "Unit Dinding 2.0 HP", note: "Pemasangan sahaja" },
+        { scope: "Unit Dinding 5.0 HP", note: "Unit dinding terbesar" },
+        { scope: "Kaset Siling 1.0–1.5 HP", note: "Komersial" },
+        { scope: "Unit Tingkap 1.0–1.5 HP", note: "Pemasangan sahaja" }
+      ],
+      priceTableNote: "Ini adalah harga permulaan minimum. Pemasangan sahaja — unit tidak termasuk. Tembaga tambahan melebihi 7 kaki dikenakan caj setiap kaki.",
+      faqs: [
+        { q: "Adakah unit aircond termasuk dalam harga pemasangan?", a: "Tidak. Harga adalah pemasangan sahaja — unit aircond tidak termasuk, dan anda membekalkan unit sendiri." },
+        { q: "Apa yang termasuk dalam harga pemasangan?", a: "Setiap pemasangan termasuk paip tembaga 7 kaki, penebat, pendawaian elektrik, paip saliran, braket, pentauliahan pam vakum dan ujian penyejukan." },
+        { q: "Berapa kos paip tembaga tambahan?", a: "Tembaga tambahan melebihi 7 kaki dikenakan caj setiap kaki. Kalkulator menambah ini pada anggaran anda." },
+        { q: "Adakah hasil kalkulator sebut harga muktamad?", a: "Tidak. Ia adalah anggaran — sebut harga muktamad menyusul selepas pemeriksaan jenis dinding, jarak dan akses di tapak." }
+      ],
+      covers: ["Unit split dinding", "Unit kaset siling", "Unit tingkap", "Paip tembaga tambahan"],
+      relatedServices: [
+        { label: "Servis, Baiki & Pemasangan Aircond", href: "/services/aircon" },
+        { label: "Pemasangan Aircond", href: "/services/aircon/installation" },
+        { label: "Panduan Harga Aircond", href: "/pricing" }
+      ]
+    },
+    "aircon-gas-topup-cost": {
+      name: "Kalkulator Kos Top-Up Gas Aircond",
+      heading: "Kalkulator Kos Top-Up Gas Aircond untuk KL & Selangor",
+      metaTitle: "Kalkulator Kos Top-Up Gas Aircond KL",
+      metaDesc: "Kalkulator top-up gas aircond percuma. R22 RM 2.50/PSI, R410A dan R32 RM 3.00/PSI. Pemeriksaan kebocoran disertakan. Dikenakan pada PSI sebenar.",
+      keywords: ["harga top up gas aircond Malaysia", "isi gas aircond KL", "harga gas R32 Selangor"],
+      eyebrow: "Anggaran percuma serta-merta",
+      intro: "Pilih bahan pendingin, masukkan PSI diperlukan dan sertakan pemeriksaan kebocoran — kos top-up gas muncul serta-merta.",
+      directQuestion: "Berapa kos top-up gas aircond di Malaysia?",
+      directAnswer: "Top-up gas aircond dikenakan setiap PSI: R22 ialah RM 2.50/PSI, manakala R410A dan R32 ialah RM 3.00/PSI. Pemeriksaan kebocoran struktur bermula dari RM 114 dan disertakan. Top-up gas dikenakan pada PSI sebenar yang diperlukan selepas juruteknik memeriksa di tapak.",
+      heroAlt: "Kalkulator kos top-up gas aircond untuk KL dan Selangor",
+      stats: [
+        { label: "R22", value: "RM 2.50 / PSI" },
+        { label: "R410A / R32", value: "RM 3.00 / PSI" },
+        { label: "Pemeriksaan kebocoran", value: "Dari RM 114" }
+      ],
+      howTo: [
+        { title: "Pilih bahan pendingin anda", desc: "R22, R410A atau R32 — semak plat nama pada unit luar jika tidak pasti." },
+        { title: "Masukkan PSI diperlukan", desc: "Laraskan ke PSI yang diukur juruteknik. Gas dikenakan pada PSI sebenar yang diperlukan." },
+        { title: "Sertakan pemeriksaan kebocoran", desc: "Togol pemeriksaan kebocoran struktur (dari RM 114) — sentiasa disyorkan, kerana gas jarang habis tanpa kebocoran." }
+      ],
+      priceTable: [
+        { scope: "Isian Gas R22", note: "Sistem lama" },
+        { scope: "Isian Gas R410A", note: "Inverter biasa" },
+        { scope: "Isian Gas R32", note: "Sistem baharu" },
+        { scope: "Pemeriksaan Kebocoran Struktur", note: "Disertakan" }
+      ],
+      priceTableNote: "Top-up gas dikenakan pada PSI sebenar yang diperlukan selepas juruteknik memeriksa di tapak. Pemeriksaan kebocoran disertakan.",
+      faqs: [
+        { q: "Bagaimana top-up gas dikenakan caj?", a: "Top-up gas dikenakan pada PSI sebenar yang diperlukan selepas juruteknik memeriksa di tapak. R22 ialah RM 2.50/PSI, manakala R410A dan R32 ialah RM 3.00/PSI." },
+        { q: "Kenapa aircond saya sentiasa kehilangan gas?", a: "Jika gas sentiasa berkurang, terdapat kebocoran dalam sistem. Kebocoran mesti dikesan dan ditutup, jika tidak gas akan hilang semula." },
+        { q: "Adakah pemeriksaan kebocoran disertakan?", a: "Ya, pemeriksaan kebocoran struktur dari RM 114 disertakan dengan perkhidmatan top-up gas." },
+        { q: "Adakah hasil kalkulator sebut harga muktamad?", a: "Tidak. Ia adalah anggaran — harga akhir bergantung pada PSI sebenar yang diperlukan selepas pemeriksaan." }
+      ],
+      covers: ["Bahan pendingin R22", "Bahan pendingin R410A", "Bahan pendingin R32", "Pemeriksaan kebocoran struktur"],
+      relatedServices: [
+        { label: "Servis, Baiki & Pemasangan Aircond", href: "/services/aircon" },
+        { label: "Top-Up Gas Aircond", href: "/services/aircon/gas-top-up" },
+        { label: "Panduan Harga Aircond", href: "/pricing" }
+      ]
+    },
+    "aircon-size-calculator": {
+      name: "Kalkulator Saiz Aircond",
+      heading: "Kalkulator Saiz Aircond — HP Apa Yang Anda Perlukan?",
+      metaTitle: "Kalkulator Saiz Aircond — HP Mengikut Bilik",
+      metaDesc: "Kalkulator saiz aircond percuma. Masukkan keluasan bilik, ketinggian siling dan pendedahan matahari untuk BTU serta kuasa kuda yang sesuai.",
+      keywords: ["kalkulator saiz aircond Malaysia", "kalkulator HP aircond", "BTU per kaki persegi Malaysia"],
+      eyebrow: "Anggaran percuma serta-merta",
+      intro: "Masukkan keluasan bilik, ketinggian siling dan pendedahan matahari — kami cadangkan BTU dan kuasa kuda yang sesuai.",
+      directQuestion: "Saiz aircond apa yang saya perlukan untuk bilik saya?",
+      directAnswer: "Sebagai peraturan mudah, bilik Malaysia memerlukan kira-kira 60 BTU setiap kaki persegi. Bilik tidur 150 kaki persegi memerlukan kira-kira 9,000 BTU (1.0–1.5 HP), manakala ruang tamu 250 kaki persegi memerlukan kira-kira 15,000 BTU (2.0 HP). Siling tinggi dan matahari menghadap barat menambah 15–20%.",
+      heroAlt: "Kalkulator saiz aircond untuk bilik di KL dan Selangor",
+      stats: [
+        { label: "Peraturan mudah", value: "60 BTU / kps" },
+        { label: "Bilik tidur biasa", value: "1.0–1.5 HP" },
+        { label: "Masa untuk siap", value: "Bawah 1 minit" }
+      ],
+      howTo: [
+        { title: "Masukkan keluasan bilik anda", desc: "Laraskan ke saiz bilik dalam kaki persegi — dari bilik kecil 60 kps hingga ruang besar 1,200 kps." },
+        { title: "Tetapkan siling dan pendedahan matahari", desc: "Siling tinggi dan matahari menghadap barat menaikkan beban penyejukan, jadi cadangan dilaras secara automatik." },
+        { title: "Baca cadangan HP anda", desc: "Kalkulator menunjukkan BTU dan kuasa kuda yang disyorkan, serta harga permulaan untuk servis saiz unit itu." }
+      ],
+      priceTable: [
+        { scope: "1.0–1.5 HP (sehingga 150 kps)", note: "Bilik tidur" },
+        { scope: "2.0 HP (sehingga 250 kps)", note: "Ruang tamu" },
+        { scope: "2.5 HP (sehingga 350 kps)", note: "Bilik besar" },
+        { scope: "3.0 HP+ (350 kps+)", note: "Kawasan terbuka" }
+      ],
+      priceTableNote: "Harga permulaan minimum untuk servis setiap saiz unit. Kos akhir bergantung pada unit dan disahkan selepas pemeriksaan.",
+      faqs: [
+        { q: "Berapa BTU setiap kaki persegi yang Malaysia perlukan?", a: "Kira-kira 60 BTU setiap kaki persegi sebagai garis asas, tambah 15–20% untuk siling tinggi atau pendedahan matahari kuat." },
+        { q: "Adakah lebih besar sentiasa lebih baik untuk aircond?", a: "Tidak. Unit yang terlalu besar menyejuk terlalu cepat dan berkitar singkat, menjadikan bilik lembap. Saiz yang tepat penting." },
+        { q: "HP apa yang terbaik untuk bilik tidur?", a: "Bilik tidur Malaysia biasa 120–150 kaki persegi paling sesuai dengan unit 1.0–1.5 HP." },
+        { q: "Adakah hasil kalkulator muktamad?", a: "Tidak, ia adalah anggaran saiz — juruteknik mengesahkan unit yang betul selepas meninjau bilik." }
+      ],
+      covers: ["Keluasan bilik ke BTU", "BTU ke kuasa kuda", "Pelarasan ketinggian siling", "Pelarasan pendedahan matahari"],
+      relatedServices: [
+        { label: "Servis, Baiki & Pemasangan Aircond", href: "/services/aircon" },
+        { label: "Pemasangan Aircond", href: "/services/aircon/installation" },
+        { label: "Panduan Harga Aircond", href: "/pricing" }
+      ]
+    },
+    "aircon-btu-calculator": {
+      name: "Kalkulator BTU Aircond",
+      heading: "Kalkulator BTU Aircond untuk Bilik Malaysia",
+      metaTitle: "Kalkulator BTU Aircond — Kapasiti Penyejukan",
+      metaDesc: "Kalkulator BTU aircond percuma. Masukkan panjang, lebar dan penghuni bilik untuk kapasiti penyejukan yang diperlukan bagi bilik KL & Selangor.",
+      keywords: ["kalkulator BTU aircond Malaysia", "kapasiti penyejukan BTU", "BTU aircond KL"],
+      eyebrow: "Anggaran percuma serta-merta",
+      intro: "Masukkan panjang, lebar dan bilangan penghuni bilik — BTU yang diperlukan muncul serta-merta.",
+      directQuestion: "Berapa BTU yang bilik saya perlukan?",
+      directAnswer: "Anggaran kasar ialah 25 BTU setiap kaki persegi tambah 600 BTU untuk setiap orang tambahan melebihi dua. Bilik 12×12 kaki dengan dua orang memerlukan kira-kira 3,600 BTU sejam penyejukan asas sebelum pelarasan matahari dan siling.",
+      heroAlt: "Kalkulator BTU aircond untuk bilik di KL dan Selangor",
+      stats: [
+        { label: "Asas", value: "25 BTU / kps" },
+        { label: "Setiap orang tambahan", value: "+600 BTU" },
+        { label: "Masa untuk siap", value: "Bawah 1 minit" }
+      ],
+      howTo: [
+        { title: "Masukkan panjang dan lebar", desc: "Masukkan dimensi bilik dalam kaki untuk mendapatkan keluasan lantai." },
+        { title: "Tetapkan penghuni", desc: "Tambah bilangan orang yang kerap menggunakan bilik — setiap orang tambahan menambah beban penyejukan." },
+        { title: "Baca BTU", desc: "BTU yang diperlukan muncul serta-merta, dengan pautan ke halaman servis aircond yang sepadan." }
+      ],
+      priceTable: [
+        { scope: "Sehingga 9,000 BTU", note: "Bilik kecil" },
+        { scope: "9,000–12,000 BTU", note: "Bilik tidur" },
+        { scope: "12,000–18,000 BTU", note: "Ruang tamu" },
+        { scope: "18,000+ BTU", note: "Ruang besar" }
+      ],
+      priceTableNote: "Harga permulaan minimum untuk servis setiap kapasiti penyejukan. Kos akhir disahkan selepas pemeriksaan.",
+      faqs: [
+        { q: "Apa itu BTU?", a: "BTU (British Thermal Unit) mengukur kapasiti penyejukan. BTU lebih tinggi bermakna aircond boleh menyejuk ruang yang lebih besar atau lebih panas." },
+        { q: "Bagaimana menukar BTU ke kuasa kuda?", a: "Kira-kira 9,000–12,000 BTU bersamaan 1 HP. Kalkulator saiz menukar antara kedua-duanya untuk anda." },
+        { q: "Adakah penghuni bilik mempengaruhi BTU?", a: "Ya. Setiap orang menambah haba badan, jadi bilik sibuk memerlukan kapasiti penyejukan lebih tinggi." },
+        { q: "Adakah hasil BTU muktamad?", a: "Tidak, ia adalah anggaran. Matahari, ketinggian siling dan penebat turut mempengaruhi keperluan sebenar." }
+      ],
+      covers: ["Keluasan bilik ke BTU", "Pelarasan penghuni", "Penukaran BTU ke HP", "Perancangan kapasiti penyejukan"],
+      relatedServices: [
+        { label: "Servis, Baiki & Pemasangan Aircond", href: "/services/aircon" },
+        { label: "Pemasangan Aircond", href: "/services/aircon/installation" },
+        { label: "Panduan Harga Aircond", href: "/pricing" }
+      ]
+    },
+    "aircon-electricity-cost": {
+      name: "Kalkulator Kos Elektrik Aircond",
+      heading: "Kalkulator Kos Elektrik Aircond untuk Malaysia",
+      metaTitle: "Kalkulator Kos Elektrik Aircond Malaysia",
+      metaDesc: "Kalkulator kos elektrik aircond percuma. Masukkan kuasa kuda dan jam harian untuk anggaran kos bulanan pada RM 0.50/kWj.",
+      keywords: ["kos elektrik aircond Malaysia", "kos operasi aircond KL", "bil bulanan aircond"],
+      eyebrow: "Anggaran percuma serta-merta",
+      intro: "Masukkan kuasa kuda dan jam harian aircond anda — lihat anggaran kos elektrik bulanan serta-merta.",
+      directQuestion: "Berapa kos untuk menjalankan aircond di Malaysia?",
+      directAnswer: "Aircond 1.5 HP menarik kira-kira 1.1 kW. Menjalankannya 8 jam sehari pada RM 0.50/kWj berharga kira-kira RM 132 sebulan. Unit lebih besar dan masa operasi lebih lama menaikkan angka itu.",
+      heroAlt: "Kalkulator kos elektrik aircond untuk Malaysia",
+      stats: [
+        { label: "Tarik 1.5 HP", value: "≈ 1.1 kW" },
+        { label: "Tarif", value: "RM 0.50/kWj" },
+        { label: "Masa untuk siap", value: "Bawah 1 minit" }
+      ],
+      howTo: [
+        { title: "Pilih kuasa kuda anda", desc: "Pilih 1.0–2.5 HP — HP lebih tinggi menarik lebih banyak kuasa." },
+        { title: "Tetapkan jam harian", desc: "Laraskan ke berapa jam sehari unit beroperasi secara purata." },
+        { title: "Baca kos bulanan", desc: "Anggaran kos bulanan muncul serta-merta, pada tarif standard RM 0.50/kWj." }
+      ],
+      priceTable: [
+        { scope: "1.0 HP (≈ 0.8 kW)", note: "Harga servis" },
+        { scope: "1.5 HP (≈ 1.1 kW)", note: "Harga servis" },
+        { scope: "2.0 HP (≈ 1.6 kW)", note: "Harga servis" },
+        { scope: "2.5 HP (≈ 2.0 kW)", note: "Harga servis" }
+      ],
+      priceTableNote: "Ini adalah harga servis permulaan minimum. Kos operasi dianggarkan pada RM 0.50/kWj — anggaran sahaja.",
+      faqs: [
+        { q: "Berapa banyak aircond menambah bil elektrik saya?", a: "Unit 1.5 HP yang beroperasi 8 jam sehari menambah kira-kira RM 132 sebulan pada RM 0.50/kWj. Unit inverter lebih murah untuk dijalankan." },
+        { q: "Adakah aircond inverter benar-benar menjimatkan elektrik?", a: "Ya, inverter boleh mengurangkan kos operasi kira-kira 35% berbanding bukan inverter dengan saiz sama." },
+        { q: "Adakah aircond kotor menggunakan lebih elektrik?", a: "Ya. Gegelung atau penapis tersumbat memaksa pemampat berjalan lebih lama, menaikkan bil. Servis berkala mengekalkan kecekapan." },
+        { q: "Adakah hasil kos muktamad?", a: "Tidak, ia adalah anggaran berdasarkan purata penggunaan dan tarif." }
+      ],
+      covers: ["Kuasa kuda ke kW", "Penggunaan harian", "Kos operasi bulanan", "Perbandingan inverter"],
+      relatedServices: [
+        { label: "Servis, Baiki & Pemasangan Aircond", href: "/services/aircon" },
+        { label: "Servis Asas Aircond", href: "/services/aircon/basic-servicing" },
+        { label: "Panduan Harga Aircond", href: "/pricing" }
+      ]
+    },
+    "aircon-savings-calculator": {
+      name: "Kalkulator Penjimatan Aircond Inverter",
+      heading: "Kalkulator Penjimatan Aircond Inverter untuk Malaysia",
+      metaTitle: "Kalkulator Penjimatan Aircond Inverter Malaysia",
+      metaDesc: "Kalkulator penjimatan aircond inverter percuma. Lihat berapa banyak unit inverter boleh jimat berbanding bukan inverter pada RM 0.50/kWj.",
+      keywords: ["penjimatan aircond inverter Malaysia", "kos inverter vs bukan inverter", "kalkulator penjimatan aircond"],
+      eyebrow: "Anggaran percuma serta-merta",
+      intro: "Masukkan kuasa kuda dan jam harian — lihat anggaran penjimatan bulanan yang dihasilkan unit inverter.",
+      directQuestion: "Berapa banyak aircond inverter boleh jimat untuk saya?",
+      directAnswer: "Aircond inverter biasanya menggunakan kira-kira 35% kurang elektrik berbanding bukan inverter dengan saiz sama. Unit 1.5 HP yang beroperasi 8 jam sehari boleh jimat kira-kira RM 46 sebulan pada RM 0.50/kWj.",
+      heroAlt: "Kalkulator penjimatan aircond inverter untuk Malaysia",
+      stats: [
+        { label: "Penjimatan inverter", value: "≈ 35%" },
+        { label: "Tarif", value: "RM 0.50/kWj" },
+        { label: "Masa untuk siap", value: "Bawah 1 minit" }
+      ],
+      howTo: [
+        { title: "Pilih kuasa kuda anda", desc: "Pilih saiz unit yang anda bandingkan." },
+        { title: "Tetapkan jam harian", desc: "Laraskan ke jam unit beroperasi setiap hari." },
+        { title: "Baca penjimatan", desc: "Anggaran penjimatan bulanan unit inverter muncul serta-merta." }
+      ],
+      priceTable: [
+        { scope: "Inverter vs bukan inverter", note: "Harga servis" },
+        { scope: "Penjimatan biasa", note: "Elektrik" },
+        { scope: "Pulangan modal", note: "Bergantung pada penggunaan" }
+      ],
+      priceTableNote: "Penjimatan dianggarkan pada RM 0.50/kWj. Harga servis adalah harga permulaan minimum.",
+      faqs: [
+        { q: "Adakah aircond inverter berbaloi?", a: "Untuk unit yang beroperasi berjam-jam setiap hari, ya — penjimatan kos operasi 35% biasanya membayar balik harga lebih tinggi dalam beberapa tahun." },
+        { q: "Berapa kurang elektrik yang inverter gunakan?", a: "Inverter biasanya menggunakan kira-kira 35% kurang elektrik berbanding bukan inverter dengan saiz sama." },
+        { q: "Adakah kalkulator termasuk pemasangan?", a: "Tidak. Ia hanya menganggarkan penjimatan kos operasi. Lihat kalkulator pemasangan untuk harga pemasangan." },
+        { q: "Adakah hasil penjimatan muktamad?", a: "Tidak, ia adalah anggaran berdasarkan purata penggunaan dan tarif." }
+      ],
+      covers: ["Inverter vs bukan inverter", "Penjimatan bulanan", "Kos operasi", "Perancangan pulangan modal"],
+      relatedServices: [
+        { label: "Servis, Baiki & Pemasangan Aircond", href: "/services/aircon" },
+        { label: "Pemasangan Aircond", href: "/services/aircon/installation" },
+        { label: "Panduan Harga Aircond", href: "/pricing" }
+      ]
+    },
+    "aircon-service-picker": {
+      name: "Servis Aircond Mana Yang Saya Perlukan?",
+      heading: "Servis Aircond Mana Yang Saya Perlukan? — Diagnostik",
+      metaTitle: "Servis Aircond Mana Yang Saya Perlukan?",
+      metaDesc: "Diagnostik aircond percuma. Pilih gejala anda untuk mencari servis yang sesuai — servis asas, cucian kimia, overhaul, top-up gas atau pembaikan.",
+      keywords: ["servis aircond apa yang diperlukan", "alat diagnostik aircond", "pencari servis aircond Malaysia"],
+      eyebrow: "Diagnostik berpandu percuma",
+      intro: "Pilih gejala yang anda lihat — kami cadangkan servis aircond dan harga permulaan yang sesuai.",
+      directQuestion: "Servis aircond mana yang saya perlukan?",
+      directAnswer: "Tidak sejuk? Anda mungkin perlukan top-up gas dari RM 2.50/PSI. Air bocor atau bau apak? Cucian kimia dari RM 156 atau overhaul dari RM 286. Unit yang tidak boleh dihidupkan atau berbunyi? Diagnosis pembaikan dari RM 114. Pilih gejala anda dan kami padankan dengan servis yang betul.",
+      heroAlt: "Alat diagnostik servis aircond mana yang saya perlukan",
+      stats: [
+        { label: "Cucian kimia", value: "Dari RM 156" },
+        { label: "Overhaul", value: "Dari RM 286" },
+        { label: "Diagnosis pembaikan", value: "Dari RM 114" }
+      ],
+      howTo: [
+        { title: "Pilih gejala anda", desc: "Tandakan semua yang anda lihat — tidak sejuk, bocor, bising, bau, aliran lemah, tidak boleh dihidupkan, atau ais." },
+        { title: "Baca cadangan", desc: "Kami padankan gejala anda dengan servis yang sepadan dan harga permulaan minimumnya." },
+        { title: "Tempah di WhatsApp", desc: "Hantar hasil kepada meja dispatch kami dan kami sahkan harga akhir selepas pemeriksaan." }
+      ],
+      priceTable: [
+        { scope: "Servis Asas", note: "Cucian rutin" },
+        { scope: "Cucian Kimia", note: "Bau / bocor" },
+        { scope: "Overhaul Kimia", note: "Kebocoran kronik" },
+        { scope: "Top-Up Gas", note: "Tidak sejuk" },
+        { scope: "Diagnosis Pembaikan", note: "Tidak boleh dihidupkan" }
+      ],
+      priceTableNote: "Harga permulaan minimum. Harga akhir bergantung pada sifat dan skop kerja anda dan disahkan selepas lawatan tapak atau semakan foto.",
+      faqs: [
+        { q: "Bagaimana saya tahu servis aircond mana yang saya perlukan?", a: "Padankan gejala anda: tidak sejuk biasanya bermakna gas, bocor atau bau bermakna cucian kimia atau overhaul, dan tidak boleh dihidupkan bermakna pembaikan." },
+        { q: "Bagaimana jika saya ada beberapa gejala?", a: "Pilih semuanya — diagnostik memilih satu servis paling sesuai dan menerangkan cadangannya." },
+        { q: "Adakah harga dalam diagnostik muktamad?", a: "Tidak. Ia adalah harga permulaan minimum. Harga akhir disahkan selepas lawatan tapak atau semakan foto." },
+        { q: "Bolehkah saya tempah terus daripada hasil?", a: "Ya. Hantar servis yang disyorkan ke meja WhatsApp kami dan kami sahkan ketersediaan serta harga." }
+      ],
+      covers: ["Padanan gejala", "Cadangan servis", "Harga permulaan", "Tempahan WhatsApp"],
+      relatedServices: [
+        { label: "Servis, Baiki & Pemasangan Aircond", href: "/services/aircon" },
+        { label: "Pembaikan Aircond", href: "/services/aircon/repair" },
+        { label: "Panduan Harga Aircond", href: "/pricing" }
+      ]
+    },
   },
   zh: {
     /* ── 油漆费用计算器 ──────────────────────────────────────────────── */
@@ -4068,6 +4372,296 @@ export const toolsContentI18n: Record<ToolLocale, Record<string, ToolContentI18n
       relatedServices: [
         { label: "深度清洁服务", href: "/services/deep-cleaning" },
         { label: "价格指南", href: "/pricing" }
+      ]
+    },
+
+    /* ── 空调 ─────────────────────────────────────────────────────────── */
+    "aircon-installation-cost": {
+      name: "空调安装费用计算器",
+      heading: "吉隆坡与雪兰莪空调安装费用计算器",
+      metaTitle: "空调安装费用计算器",
+      metaDesc: "吉隆坡与雪兰莪免费空调安装费用计算器。挂壁机从 RM 259 起、卡式从 RM 377 起。仅含安装，不含主机。",
+      keywords: ["马来西亚空调安装费用", "吉隆坡空调安装价格", "雪兰莪装空调"],
+      eyebrow: "免费即时估价",
+      intro: "一个页面，无需下一步。选择机型和匹数——安装价格即刻按我们已发布的吉隆坡与雪兰莪费率显示。",
+      directQuestion: "吉隆坡与雪兰莪装空调要多少钱？",
+      directAnswer: "吉隆坡与雪兰莪空调安装从 RM 259 起（1.0–1.5 HP 挂壁机）至 RM 584（5.0 HP）。天花卡式安装从 RM 377 起，窗式机从 RM 259 起。价格仅含安装——空调主机不包含在内。每次安装包含 7 英尺铜管、保温棉、电线、排水管、支架、真空泵调试与制冷运行测试。",
+      heroAlt: "吉隆坡与雪兰莪空调安装费用计算器",
+      stats: [
+        { label: "挂壁机起", value: "RM 259" },
+        { label: "卡式起", value: "RM 377" },
+        { label: "完成用时", value: "不到 1 分钟" }
+      ],
+      howTo: [
+        { title: "选择机型和匹数", desc: "选择挂壁机（1.0–5.0 HP）、天花卡式或窗式机，价格随每次点击实时更新。" },
+        { title: "需要时添加额外铜管", desc: "安装含 7 英尺铜管。滑动添加超过 7 英尺的铜管，按已公布的每英尺费率计算。" },
+        { title: "查看估价并预约", desc: "安装估价、区间与明细即刻显示。通过 WhatsApp 预约或请求现场勘查。" }
+      ],
+      priceTable: [
+        { scope: "挂壁机 1.0–1.5 HP", note: "含 7 英尺铜管" },
+        { scope: "挂壁机 2.0 HP", note: "仅含安装" },
+        { scope: "挂壁机 5.0 HP", note: "最大挂壁机" },
+        { scope: "天花卡式 1.0–1.5 HP", note: "商用" },
+        { scope: "窗式机 1.0–1.5 HP", note: "仅含安装" }
+      ],
+      priceTableNote: "以上为最低起价。仅含安装——不含主机。超过 7 英尺的铜管按每英尺另计。",
+      faqs: [
+        { q: "安装价格包含空调主机吗？", a: "不包含。价格仅含安装——空调主机不包含在内，主机由您自备。" },
+        { q: "安装价格包含哪些内容？", a: "每次安装包含 7 英尺铜管、保温棉、电线、排水管、支架、真空泵调试与制冷运行测试。" },
+        { q: "额外铜管多少钱？", a: "超过 7 英尺的铜管按每英尺另计。计算器会把这部分计入您的估价。" },
+        { q: "计算结果就是最终报价吗？", a: "不是。这仅是估算——最终报价需现场勘查墙体类型、距离和接近条件后确认。" }
+      ],
+      covers: ["挂壁分体机", "天花卡式机", "窗式机", "额外铜管"],
+      relatedServices: [
+        { label: "空调保养、维修与安装", href: "/services/aircon" },
+        { label: "空调安装", href: "/services/aircon/installation" },
+        { label: "空调价格指南", href: "/pricing" }
+      ]
+    },
+    "aircon-gas-topup-cost": {
+      name: "空调加雪种费用计算器",
+      heading: "吉隆坡与雪兰莪空调加雪种费用计算器",
+      metaTitle: "空调加雪种费用计算器",
+      metaDesc: "免费空调加雪种计算器。R22 每 PSI RM 2.50，R410A 与 R32 每 PSI RM 3.00。含检漏，按实际 PSI 计费。",
+      keywords: ["马来西亚空调加雪种价格", "吉隆坡空调加雪种", "雪兰莪 R32 价格"],
+      eyebrow: "免费即时估价",
+      intro: "选择制冷剂、输入所需 PSI 并包含检漏——加雪种费用即刻显示。",
+      directQuestion: "马来西亚空调加雪种要多少钱？",
+      directAnswer: "空调加雪种按每 PSI 计费：R22 为 RM 2.50/PSI，R410A 与 R32 为 RM 3.00/PSI。结构性检漏从 RM 114 起并已包含。加雪种按技术员现场检测后实际所需的 PSI 计费。",
+      heroAlt: "吉隆坡与雪兰莪空调加雪种费用计算器",
+      stats: [
+        { label: "R22", value: "RM 2.50 / PSI" },
+        { label: "R410A / R32", value: "RM 3.00 / PSI" },
+        { label: "检漏", value: "从 RM 114 起" }
+      ],
+      howTo: [
+        { title: "选择制冷剂", desc: "R22、R410A 或 R32——不确定的话查看室外机铭牌。" },
+        { title: "输入所需 PSI", desc: "滑动到技术员测得的 PSI。雪种按实际所需 PSI 计费。" },
+        { title: "包含检漏", desc: "开启结构性检漏（从 RM 114 起）——始终建议，因为雪种很少无泄漏流失。" }
+      ],
+      priceTable: [
+        { scope: "R22 加雪种", note: "老系统" },
+        { scope: "R410A 加雪种", note: "常见变频" },
+        { scope: "R32 加雪种", note: "新系统" },
+        { scope: "结构性检漏", note: "已包含" }
+      ],
+      priceTableNote: "加雪种按技术员现场检测后实际所需的 PSI 计费。检漏已包含。",
+      faqs: [
+        { q: "加雪种如何收费？", a: "加雪种按技术员现场检测后实际所需的 PSI 计费。R22 为每 PSI RM 2.50，R410A 与 R32 为每 PSI RM 3.00。" },
+        { q: "为什么我的空调总是缺雪种？", a: "如果雪种不断下降，说明系统有泄漏。必须先找到并封堵泄漏，否则雪种会再次流失。" },
+        { q: "检漏包含在内吗？", a: "包含，从 RM 114 起的结构性检漏已含在加雪种服务中。" },
+        { q: "计算结果就是最终报价吗？", a: "不是。这仅是估算——最终价格取决于检查后实际所需的 PSI。" }
+      ],
+      covers: ["R22 制冷剂", "R410A 制冷剂", "R32 制冷剂", "结构性检漏"],
+      relatedServices: [
+        { label: "空调保养、维修与安装", href: "/services/aircon" },
+        { label: "空调加雪种", href: "/services/aircon/gas-top-up" },
+        { label: "空调价格指南", href: "/pricing" }
+      ]
+    },
+    "aircon-size-calculator": {
+      name: "空调匹数计算器",
+      heading: "空调匹数计算器——您需要多大匹数？",
+      metaTitle: "空调匹数计算器",
+      metaDesc: "免费空调匹数计算器。输入房间面积、层高与日照，为您的吉隆坡与雪兰莪房间推荐合适的 BTU 与匹数。",
+      keywords: ["马来西亚空调匹数计算器", "空调 HP 计算器", "马来西亚每平方英尺 BTU"],
+      eyebrow: "免费即时估价",
+      intro: "输入房间面积、层高与日照——我们推荐合适的 BTU 与匹数。",
+      directQuestion: "我的房间需要多大匹数的空调？",
+      directAnswer: "经验法则上，马来西亚房间约需每平方英尺 60 BTU。150 平方英尺卧室约需 9,000 BTU（1.0–1.5 HP），250 平方英尺客厅约需 15,000 BTU（2.0 HP）。高挑层与西晒需再加 15–20%。",
+      heroAlt: "吉隆坡与雪兰莪空调匹数计算器",
+      stats: [
+        { label: "经验法则", value: "60 BTU / 平方英尺" },
+        { label: "典型卧室", value: "1.0–1.5 HP" },
+        { label: "完成用时", value: "不到 1 分钟" }
+      ],
+      howTo: [
+        { title: "输入房间面积", desc: "滑动到您房间的平方英尺——从小型 60 平方英尺房间到大型 1,200 平方英尺空间。" },
+        { title: "设置层高与日照", desc: "高挑层与西晒会提高制冷负荷，推荐会自动调整。" },
+        { title: "查看匹数推荐", desc: "计算器显示推荐的 BTU 与匹数，以及该机型保养的起价。" }
+      ],
+      priceTable: [
+        { scope: "1.0–1.5 HP（至 150 平方英尺）", note: "卧室" },
+        { scope: "2.0 HP（至 250 平方英尺）", note: "客厅" },
+        { scope: "2.5 HP（至 350 平方英尺）", note: "大房间" },
+        { scope: "3.0 HP+（350 平方英尺以上）", note: "开放空间" }
+      ],
+      priceTableNote: "各机型保养的最低起价。最终费用视机器而定，检查后确认。",
+      faqs: [
+        { q: "马来西亚每平方英尺需要多少 BTU？", a: "基线约每平方英尺 60 BTU，高挑层或强日照再加 15–20%。" },
+        { q: "空调越大越好吗？", a: "不是。过大的机器制冷过快、频繁启停，房间反而潮湿。合适的匹数很重要。" },
+        { q: "卧室用多大匹数最好？", a: "典型 120–150 平方英尺的马来西亚卧室最适合 1.0–1.5 HP。" },
+        { q: "计算结果是最终的吗？", a: "不是，这只是匹数估算——技术员查看房间后确认合适机型。" }
+      ],
+      covers: ["面积换算 BTU", "BTU 换算匹数", "层高调整", "日照调整"],
+      relatedServices: [
+        { label: "空调保养、维修与安装", href: "/services/aircon" },
+        { label: "空调安装", href: "/services/aircon/installation" },
+        { label: "空调价格指南", href: "/pricing" }
+      ]
+    },
+    "aircon-btu-calculator": {
+      name: "空调 BTU 计算器",
+      heading: "马来西亚房间空调 BTU 计算器",
+      metaTitle: "空调 BTU 计算器",
+      metaDesc: "免费空调 BTU 计算器。输入房间长、宽与人数，计算您的吉隆坡与雪兰莪房间所需制冷量。",
+      keywords: ["马来西亚空调 BTU 计算器", "制冷量 BTU", "吉隆坡空调 BTU"],
+      eyebrow: "免费即时估价",
+      intro: "输入房间长、宽与使用人数——所需 BTU 即刻显示。",
+      directQuestion: "我的房间需要多少 BTU？",
+      directAnswer: "粗略估算为每平方英尺 25 BTU，超过两人每多一人加 600 BTU。12×12 英尺、两人的房间约需每小时 3,600 BTU 的基础制冷，再按日照与层高调整。",
+      heroAlt: "吉隆坡与雪兰莪空调 BTU 计算器",
+      stats: [
+        { label: "基础", value: "25 BTU / 平方英尺" },
+        { label: "每多一人", value: "+600 BTU" },
+        { label: "完成用时", value: "不到 1 分钟" }
+      ],
+      howTo: [
+        { title: "输入长和宽", desc: "以英尺输入房间尺寸，得到地面面积。" },
+        { title: "设置人数", desc: "添加经常使用该房间的人数——每多一人增加制冷负荷。" },
+        { title: "查看 BTU", desc: "所需 BTU 即刻显示，并附对应空调服务页面链接。" }
+      ],
+      priceTable: [
+        { scope: "至 9,000 BTU", note: "小房间" },
+        { scope: "9,000–12,000 BTU", note: "卧室" },
+        { scope: "12,000–18,000 BTU", note: "客厅" },
+        { scope: "18,000 BTU 以上", note: "大空间" }
+      ],
+      priceTableNote: "各制冷量保养的最低起价。最终费用检查后确认。",
+      faqs: [
+        { q: "什么是 BTU？", a: "BTU（英国热量单位）衡量制冷能力。BTU 越高，空调能制冷的空间越大或越热。" },
+        { q: "BTU 怎么换算匹数？", a: "约 9,000–12,000 BTU 等于 1 HP。匹数计算器可为您换算。" },
+        { q: "房间人数影响 BTU 吗？", a: "影响。每人都会散热，人多的房间需要更大制冷量。" },
+        { q: "BTU 结果是最终的吗？", a: "不是，这只是估算。日照、层高和隔热也影响真实需求。" }
+      ],
+      covers: ["面积换算 BTU", "人数调整", "BTU 换算匹数", "制冷量规划"],
+      relatedServices: [
+        { label: "空调保养、维修与安装", href: "/services/aircon" },
+        { label: "空调安装", href: "/services/aircon/installation" },
+        { label: "空调价格指南", href: "/pricing" }
+      ]
+    },
+    "aircon-electricity-cost": {
+      name: "空调电费计算器",
+      heading: "马来西亚空调电费计算器",
+      metaTitle: "马来西亚空调电费计算器",
+      metaDesc: "免费空调电费计算器。输入匹数与每日小时数，按 RM 0.50/度估算每月空调运行费用。",
+      keywords: ["马来西亚空调电费", "吉隆坡空调运行成本", "空调月电费"],
+      eyebrow: "免费即时估价",
+      intro: "输入空调匹数与每日小时数——即刻查看估算的每月电费。",
+      directQuestion: "在马来西亚开空调要花多少钱？",
+      directAnswer: "1.5 HP 空调约耗电 1.1 kW。按 RM 0.50/度每天开 8 小时，每月约 RM 132。更大机器和更长运行时间会相应增加。",
+      heroAlt: "马来西亚空调电费计算器",
+      stats: [
+        { label: "1.5 HP 耗电", value: "≈ 1.1 kW" },
+        { label: "电价", value: "RM 0.50/度" },
+        { label: "完成用时", value: "不到 1 分钟" }
+      ],
+      howTo: [
+        { title: "选择匹数", desc: "选择 1.0–2.5 HP——匹数越高耗电越多。" },
+        { title: "设置每日小时数", desc: "滑动到机器平均每天运行的小时数。" },
+        { title: "查看每月费用", desc: "按标准 RM 0.50/度 电价即刻显示估算的每月费用。" }
+      ],
+      priceTable: [
+        { scope: "1.0 HP（≈ 0.8 kW）", note: "服务价" },
+        { scope: "1.5 HP（≈ 1.1 kW）", note: "服务价" },
+        { scope: "2.0 HP（≈ 1.6 kW）", note: "服务价" },
+        { scope: "2.5 HP（≈ 2.0 kW）", note: "服务价" }
+      ],
+      priceTableNote: "以上为最低服务起价。运行费用按 RM 0.50/度 估算——仅为估算。",
+      faqs: [
+        { q: "空调每月给我的电费加多少？", a: "1.5 HP 机器每天开 8 小时，按 RM 0.50/度 每月约加 RM 132。变频机器运行更省。" },
+        { q: "变频空调真的省电吗？", a: "是的，变频比同尺寸定频约省 35% 的运行费用。" },
+        { q: "脏空调更耗电吗？", a: "会。蒸发器或滤网堵塞会让压缩机更久运转，推高电费。定期保养保持效率。" },
+        { q: "费用结果是最终的吗？", a: "不是，这是基于平均使用量与电价的估算。" }
+      ],
+      covers: ["匹数换算 kW", "每日用电", "每月运行费用", "变频对比"],
+      relatedServices: [
+        { label: "空调保养、维修与安装", href: "/services/aircon" },
+        { label: "空调基本保养", href: "/services/aircon/basic-servicing" },
+        { label: "空调价格指南", href: "/pricing" }
+      ]
+    },
+    "aircon-savings-calculator": {
+      name: "变频空调省电计算器",
+      heading: "马来西亚变频空调省电计算器",
+      metaTitle: "马来西亚变频空调省电计算器",
+      metaDesc: "免费变频空调省电计算器。查看变频相对定频按 RM 0.50/度 能省下多少。",
+      keywords: ["马来西亚变频空调省电", "变频 vs 定频成本", "空调省电计算器"],
+      eyebrow: "免费即时估价",
+      intro: "输入匹数与每日小时数——查看变频机每月可省下的估算金额。",
+      directQuestion: "变频空调能为我省多少钱？",
+      directAnswer: "变频空调通常比同尺寸定频约省 35% 的电。1.5 HP 每天开 8 小时，按 RM 0.50/度 每月约省 RM 46。",
+      heroAlt: "马来西亚变频空调省电计算器",
+      stats: [
+        { label: "变频省电", value: "≈ 35%" },
+        { label: "电价", value: "RM 0.50/度" },
+        { label: "完成用时", value: "不到 1 分钟" }
+      ],
+      howTo: [
+        { title: "选择匹数", desc: "选择您要对比的机型大小。" },
+        { title: "设置每日小时数", desc: "滑动到机器每天运行的小时数。" },
+        { title: "查看省电金额", desc: "变频机每月估算省电金额即刻显示。" }
+      ],
+      priceTable: [
+        { scope: "变频 vs 定频", note: "服务价" },
+        { scope: "典型省电", note: "电费" },
+        { scope: "回本", note: "视使用而定" }
+      ],
+      priceTableNote: "省电按 RM 0.50/度 估算。服务价为最低起价。",
+      faqs: [
+        { q: "变频空调值得买吗？", a: "对于每天开多个小时的机器，值得——约 35% 的运行省电通常几年内回本。" },
+        { q: "变频比定频省多少电？", a: "变频通常比同尺寸定频约省 35% 的电。" },
+        { q: "计算器包含安装吗？", a: "不包含。它只估算运行省电。安装价格请看安装计算器。" },
+        { q: "省电结果是最终的吗？", a: "不是，这是基于平均使用量与电价的估算。" }
+      ],
+      covers: ["变频 vs 定频", "每月省电", "运行费用", "回本规划"],
+      relatedServices: [
+        { label: "空调保养、维修与安装", href: "/services/aircon" },
+        { label: "空调安装", href: "/services/aircon/installation" },
+        { label: "空调价格指南", href: "/pricing" }
+      ]
+    },
+    "aircon-service-picker": {
+      name: "我需要哪种空调服务？",
+      heading: "我需要哪种空调服务？——诊断",
+      metaTitle: "我需要哪种空调服务？",
+      metaDesc: "免费空调诊断。选择症状，找到合适的服务——基本保养、化学清洗、大修、加雪种或维修。",
+      keywords: ["需要什么空调服务", "空调诊断工具", "马来西亚空调服务查找"],
+      eyebrow: "免费引导式诊断",
+      intro: "选择您看到的症状——我们推荐合适的空调服务和起价。",
+      directQuestion: "我需要哪种空调服务？",
+      directAnswer: "不冷？可能需要从每 PSI RM 2.50 起的加雪种。漏水或有霉味？从 RM 156 起的化学清洗或从 RM 286 起的大修。无法开机或有噪音？从 RM 114 起的维修诊断。选择症状，我们为您匹配正确服务。",
+      heroAlt: "我需要哪种空调服务诊断工具",
+      stats: [
+        { label: "化学清洗", value: "从 RM 156 起" },
+        { label: "大修", value: "从 RM 286 起" },
+        { label: "维修诊断", value: "从 RM 114 起" }
+      ],
+      howTo: [
+        { title: "选择症状", desc: "勾选所有您看到的情况——不冷、漏水、噪音、异味、风量小、无法开机或结冰。" },
+        { title: "查看推荐", desc: "我们把您的症状匹配到相应服务及其最低起价。" },
+        { title: "在 WhatsApp 预约", desc: "把结果发给调度台，我们在检查后确认最终价格。" }
+      ],
+      priceTable: [
+        { scope: "基本保养", note: "日常清洁" },
+        { scope: "化学清洗", note: "异味 / 漏水" },
+        { scope: "化学大修", note: "慢性漏水" },
+        { scope: "加雪种", note: "不冷" },
+        { scope: "维修诊断", note: "无法开机" }
+      ],
+      priceTableNote: "最低起价。最终价格取决于您工程的性质与范围，现场勘查或照片审核后确认。",
+      faqs: [
+        { q: "我怎么知道需要哪种空调服务？", a: "对照症状：不冷通常是雪种问题，漏水或异味是化学清洗或大修，无法开机是维修。" },
+        { q: "有多个症状怎么办？", a: "全选——诊断会挑出最合适的一项服务并说明推荐理由。" },
+        { q: "诊断里的价格是最终的吗？", a: "不是。这是最低起价，最终价格在现场勘查或照片审核后确认。" },
+        { q: "能直接从结果预约吗？", a: "可以。把推荐服务发给我们的 WhatsApp 调度台，我们确认档期和价格。" }
+      ],
+      covers: ["症状匹配", "服务推荐", "起价", "WhatsApp 预约"],
+      relatedServices: [
+        { label: "空调保养、维修与安装", href: "/services/aircon" },
+        { label: "空调维修", href: "/services/aircon/repair" },
+        { label: "空调价格指南", href: "/pricing" }
       ]
     },
   }
