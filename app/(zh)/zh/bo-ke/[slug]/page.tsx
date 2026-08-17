@@ -71,7 +71,7 @@ export default async function ChineseArticle({ params }: { params: Promise<{ slu
         </div>
       </nav>
 
-      <main className="bg-white py-8 sm:py-12">
+      <div className="bg-white py-8 sm:py-12">
         <article className="mx-auto max-w-4xl px-4 sm:px-6">
           <Link href="/zh/bo-ke" className="inline-flex items-center gap-1.5 text-sm font-bold text-[#0EA5E9] hover:text-[#075985] transition-colors w-fit mb-8">
             <ArrowLeft className="w-4 h-4" />
@@ -111,7 +111,7 @@ export default async function ChineseArticle({ params }: { params: Promise<{ slu
 
         {/* Crawl path from this tree to the other three localized trees. */}
         <LocaleTreeLinks locale="zh" current="blog" />
-      </main>
+      </div>
     </>
   );
 }

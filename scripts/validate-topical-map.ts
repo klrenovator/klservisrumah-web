@@ -1,4 +1,5 @@
-import { validateTopicalAuthorityMap, topicalAuthorityMap } from "@/config/topical-authority-map";
+import { validateTopicalAuthorityMap } from "@/config/topical-authority-validate";
+import { topicalAuthorityMap } from "@/config/topical-authority-map";
 import { servicesData } from "@/config/services-data";
 
 const issues = validateTopicalAuthorityMap();

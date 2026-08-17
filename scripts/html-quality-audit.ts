@@ -16,6 +16,9 @@
  *   8. Every `<script type="application/ld+json">` must parse as valid JSON.
  *   9. Page size report (raw bytes + gzip estimate) — keeps the H2 page-size
  *      decision data-gated instead of estimated.
+ *  10. Exactly one `<main>` landmark per document (duplicate landmarks break
+ *      the skip link and the screen-reader landmark list).
+ *  11. Exactly one `<h1>` per document.
  *
  * Exits non-zero if any FATAL finding exists, so it can be wired into CI or
  * `prebuild` like `seo-audit.ts`. Warnings are reported but do not fail.
@@ -195,6 +198,29 @@ function audit(file: string) {
     } catch {
       report(url, "jsonld-invalid", truncate(raw));
     }
+  }
+
+  // 10. Exactly one `main` landmark.
+  //
+  //     `SiteChrome` already wraps every route in `<main id="main-content">`,
+  //     which is also the skip-link target. Pages and shared components that
+  //     opened their own `<main>` produced two `main` landmarks in one
+  //     document: invalid HTML, and a screen reader announces two "main"
+  //     regions with the skip link jumping to the outer one. This caught the
+  //     legal pages (/privacy, /terms and their ms/zh twins), the MS/ZH blog
+  //     article pages and the admin dashboard.
+  const mainCount = (html.match(/<main\b/gi) || []).length;
+  if (mainCount !== 1) {
+    report(url, mainCount === 0 ? "no-main-landmark" : "duplicate-main-landmark", `${mainCount} <main> elements`);
+  }
+
+  // 11. Exactly one `h1`.
+  //
+  //     Zero h1s leaves the document without a programmatic title; more than
+  //     one splits the document outline and dilutes the primary keyword signal.
+  const h1Count = (html.match(/<h1\b/gi) || []).length;
+  if (h1Count !== 1) {
+    report(url, h1Count === 0 ? "no-h1" : "multiple-h1", `${h1Count} <h1> elements`);
   }
 }
 

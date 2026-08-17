@@ -18,10 +18,17 @@ import {
   ChevronDown,
   ChevronUp
 } from "lucide-react";
-import { searchSmartServices, type SmartSearchResult } from "@/lib/smart-finder-search";
+import type { SmartSearchResult } from "@/lib/smart-finder-search";
+import {
+  getLoadedSmartSearch,
+  loadSmartSearch,
+  pendingSmartSearchResponse,
+  prefetchSmartSearch,
+  type SmartSearchEngine,
+} from "@/lib/smart-finder-loader";
 import { useLang } from "@/context/lang-context";
 import { getWhatsAppLink } from "@/lib/whatsapp";
-import { trackWhatsAppClick, trackSmartFinderSearch, trackSmartFinderCardExpand, trackSmartFinderCalculatorClick, trackSmartFinderQuoteClick, trackSmartFinderNoResults, trackSmartFinderPopularTag, trackSmartFinderRelatedClick } from "@/lib/analytics";
+import { trackSmartFinderSearch, trackSmartFinderCardExpand, trackSmartFinderCalculatorClick, trackSmartFinderQuoteClick, trackSmartFinderNoResults, trackSmartFinderPopularTag, trackSmartFinderRelatedClick } from "@/lib/analytics";
 
 type TabType = "included" | "materials" | "process" | "faqs";
 
@@ -43,6 +50,7 @@ const FINDER_COPY = {
       "Clogged Pipe"
     ],
     resultsTitle: "Recommended Services for Your Search",
+    searching: "Matching your request to the right service…",
     multiServiceBadge: "Multi-Service Match — Several Services Found",
     noResultsHeading: "Didn't find exactly what you're looking for?",
     noResultsSubheading: "Don't worry! We offer custom home repairs and specialist solutions across Kuala Lumpur and Selangor. Speak directly with our master technician on WhatsApp.",
@@ -79,6 +87,7 @@ const FINDER_COPY = {
       "Paip Tersumbat"
     ],
     resultsTitle: "Perkhidmatan Disyorkan Untuk Carian Anda",
+    searching: "Memadankan permintaan anda dengan servis yang betul…",
     multiServiceBadge: "Padanan Pelbagai Servis — Beberapa Servis Ditemui",
     noResultsHeading: "Tidak menjumpai servis yang anda cari?",
     noResultsSubheading: "Jangan risau! Kami menyediakan pembaikan kustom dan penyelesaian pakar di seluruh KL & Selangor. Hubungi terus juruteknik master kami di WhatsApp.",
@@ -115,6 +124,7 @@ const FINDER_COPY = {
       "水管堵塞疏通"
     ],
     resultsTitle: "为您精选的对应专业服务",
+    searching: "正在为您匹配合适的专业服务…",
     multiServiceBadge: "多项服务匹配 — 找到多项相关工项",
     noResultsHeading: "找不到您完全符合的需求？",
     noResultsSubheading: "别担心！在吉隆坡与雪兰莪，我们提供全方位定制化修缮与专业检修服务。点击通过 WhatsApp 直接向首席师傅咨询。",
@@ -392,7 +402,8 @@ function ResultCard({ result, copy, onSelectRelated }: ResultCardProps) {
           href={`${service.ctaUrl}${encodeURIComponent("\n\n[From: Smart Service Finder]")}`}
           target="_blank"
           rel="nofollow noopener noreferrer"
-          onClick={() => trackWhatsAppClick({ page: "smart_service_finder_card", service: service.title })}
+          data-analytics-page="smart_service_finder_card"
+          data-analytics-service={service.title}
           className="btn-whatsapp flex-1 justify-center text-sm py-3.5"
         >
           <MessageSquare className="h-4 w-4 fill-white text-[#25D366]" />
@@ -431,10 +442,37 @@ export function SmartServiceFinder({ initialQuery = "" }: { initialQuery?: strin
   const copy = FINDER_COPY[lang] || FINDER_COPY.en;
   const lastTrackedQuery = useRef<string>("");
   const searchSource = useRef<"input" | "popular_tag" | "related_service">("input");
+  const inputRef = useRef<HTMLInputElement | null>(null);
+  const resultsRef = useRef<HTMLDivElement | null>(null);
+
+  // The search engine (and the ~1.1 MB of content registries it pulls in) is
+  // code-split — see lib/smart-finder-loader.ts. It is fetched on the first
+  // sign of search intent instead of during initial page load.
+  const [engine, setEngine] = useState<SmartSearchEngine | null>(() => getLoadedSmartSearch());
+
+  const trimmedQuery = query.trim();
+
+  useEffect(() => {
+    if (engine || !trimmedQuery) return;
+    let cancelled = false;
+    loadSmartSearch()
+      .then((mod) => {
+        if (!cancelled) setEngine(() => mod);
+      })
+      .catch(() => {
+        /* Retried on the next keystroke. */
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [engine, trimmedQuery]);
 
   const searchResponse = useMemo(() => {
-    return searchSmartServices(query, lang);
-  }, [query, lang]);
+    if (!engine) return pendingSmartSearchResponse(query, lang);
+    return engine.searchSmartServices(query, lang);
+  }, [engine, query, lang]);
+
+  const isSearching = trimmedQuery.length > 0 && !engine;
 
   // ── Debounced search analytics ───────────────────────────────────────
   // Track search queries after a short debounce so we don't fire on every
@@ -442,6 +480,9 @@ export function SmartServiceFinder({ initialQuery = "" }: { initialQuery?: strin
   useEffect(() => {
     const trimmed = query.trim();
     if (!trimmed || trimmed === lastTrackedQuery.current) return;
+    // Wait until the engine has actually scored the query, otherwise every
+    // search would be reported as a zero-result search while the chunk loads.
+    if (!engine) return;
     const timer = setTimeout(() => {
       lastTrackedQuery.current = trimmed;
       trackSmartFinderSearch({
@@ -458,7 +499,7 @@ export function SmartServiceFinder({ initialQuery = "" }: { initialQuery?: strin
       }
     }, 600);
     return () => clearTimeout(timer);
-  }, [query, searchResponse.results.length, lang]);
+  }, [query, searchResponse.results.length, lang, engine]);
 
   const handleSelectTag = useCallback((tag: string) => {
     searchSource.current = "popular_tag";
@@ -471,7 +512,19 @@ export function SmartServiceFinder({ initialQuery = "" }: { initialQuery?: strin
     setQuery(title);
   }, []);
 
-  const hasSearch = query.trim().length > 0;
+  // The primary button previously had an empty `onClick`, so it looked
+  // actionable but did nothing. Results are live-rendered as the visitor types,
+  // so the button now does the only useful thing left: send an empty search
+  // back to the input, and jump focus to the results once there are some.
+  const handleSearchButton = useCallback(() => {
+    if (!trimmedQuery) {
+      inputRef.current?.focus();
+      return;
+    }
+    resultsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [trimmedQuery]);
+
+  const hasSearch = trimmedQuery.length > 0;
   const hasResults = searchResponse.results.length > 0;
 
   return (
@@ -493,15 +546,22 @@ export function SmartServiceFinder({ initialQuery = "" }: { initialQuery?: strin
 
         {/* Primary Search Bar */}
         <div className="mt-8 sm:mt-10 max-w-3xl mx-auto">
-          <div className="relative flex items-center rounded-2xl border border-white/20 bg-white/10 p-2 shadow-2xl backdrop-blur-xl focus-within:border-sky-400 focus-within:bg-white/15 transition-all">
-            <Search className="h-6 w-6 text-sky-400 ml-3 shrink-0" />
+          <div
+            className="relative flex items-center rounded-2xl border border-white/20 bg-white/10 p-2 shadow-2xl backdrop-blur-xl focus-within:border-sky-400 focus-within:bg-white/15 transition-all"
+            onPointerEnter={prefetchSmartSearch}
+          >
+            <Search className="h-6 w-6 text-sky-400 ml-3 shrink-0" aria-hidden="true" />
             <input
-              type="text"
+              ref={inputRef}
+              type="search"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
+              onFocus={prefetchSmartSearch}
               placeholder={copy.placeholder}
-              className="w-full bg-transparent px-4 py-3 text-sm sm:text-base font-semibold text-white placeholder:text-slate-400 outline-none"
+              className="w-full bg-transparent px-4 py-3 text-sm sm:text-base font-semibold text-white placeholder:text-slate-400 outline-none [&::-webkit-search-cancel-button]:hidden"
               aria-label={copy.eyebrow}
+              autoComplete="off"
+              enterKeyHint="search"
             />
             {query && (
               <button
@@ -510,12 +570,12 @@ export function SmartServiceFinder({ initialQuery = "" }: { initialQuery?: strin
                 className="p-2 text-slate-400 hover:text-white transition-colors"
                 aria-label={copy.clear}
               >
-                <X className="h-5 w-5" />
+                <X className="h-5 w-5" aria-hidden="true" />
               </button>
             )}
             <button
               type="button"
-              onClick={() => {}}
+              onClick={handleSearchButton}
               className="btn-primary shrink-0 px-6 py-3 text-sm font-black uppercase tracking-wider"
             >
               <span>{copy.searchBtn}</span>
@@ -542,16 +602,34 @@ export function SmartServiceFinder({ initialQuery = "" }: { initialQuery?: strin
 
         {/* Live Search Results Section */}
         {hasSearch && (
-          <div className="mt-12 sm:mt-14 space-y-6">
-            {/* Multi-Service Query Notification Badge */}
-            {searchResponse.isMultiServiceQuery && (
-              <div className="flex items-center justify-center gap-2 rounded-2xl bg-sky-500/20 border border-sky-400/40 p-4 text-xs sm:text-sm font-extrabold text-sky-200">
-                <Sparkles className="h-5 w-5 text-sky-400 shrink-0" />
-                <span>{copy.multiServiceBadge}</span>
+          <div
+            ref={resultsRef}
+            className="mt-12 sm:mt-14 space-y-6"
+            aria-live="polite"
+            aria-busy={isSearching}
+          >
+            {isSearching ? (
+              /* Engine chunk still in flight — never flash the "no results"
+                 panel at a visitor whose query has not been scored yet. */
+              <div className="rounded-3xl border border-slate-800 bg-slate-900/80 p-8 sm:p-10">
+                <p className="text-center text-sm font-bold text-slate-300">{copy.searching}</p>
+                <div className="mt-6 space-y-4" aria-hidden="true">
+                  <div className="h-24 rounded-2xl bg-slate-800/80 animate-pulse" />
+                  <div className="h-24 rounded-2xl bg-slate-800/60 animate-pulse" />
+                </div>
               </div>
-            )}
+            ) : (
+              <>
+                {/* Multi-Service Query Notification Badge */}
+                {searchResponse.isMultiServiceQuery && (
+                  <div className="flex items-center justify-center gap-2 rounded-2xl bg-sky-500/20 border border-sky-400/40 p-4 text-xs sm:text-sm font-extrabold text-sky-200">
+                    <Sparkles className="h-5 w-5 text-sky-400 shrink-0" aria-hidden="true" />
+                    <span>{copy.multiServiceBadge}</span>
+                  </div>
+                )}
 
-            {hasResults ? (
+                {hasResults ? (
+
               <>
                 <div className="flex items-center justify-between border-b border-slate-800 pb-3">
                   <h3 className="text-base sm:text-lg font-black text-white uppercase tracking-wider">
@@ -589,7 +667,7 @@ export function SmartServiceFinder({ initialQuery = "" }: { initialQuery?: strin
                     href={getWhatsAppLink({ lang })}
                     target="_blank"
                     rel="nofollow noopener noreferrer"
-                    onClick={() => trackWhatsAppClick({ page: "smart_finder_no_results" })}
+                    data-analytics-page="smart_finder_no_results"
                     className="btn-whatsapp text-sm px-6 py-3.5"
                   >
                     <MessageSquare className="h-4 w-4 fill-white text-[#25D366]" />
@@ -630,6 +708,8 @@ export function SmartServiceFinder({ initialQuery = "" }: { initialQuery?: strin
                   </div>
                 </div>
               </div>
+                )}
+              </>
             )}
           </div>
         )}

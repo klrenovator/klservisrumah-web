@@ -3,13 +3,12 @@
 import React from "react";
 import Link from "next/link";
 import { ArrowRight, BadgeCheck, Calculator, MessageCircle, ShieldCheck, WalletCards } from "lucide-react";
-import { servicesData } from "@/config/services-data";
+import { getLocalizedQuoteEntry, quoteCatalogList } from "@/config/quote-catalog.generated";
 import { getMarketRatesForService, type MarketRateItem } from "@/config/market-rates";
 import { siteConfig } from "@/config/site";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
-import { getLocalizedService } from "@/lib/service-i18n";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   marketRate: WalletCards,
@@ -71,8 +70,8 @@ export function LocalePricingContent() {
           </div>
 
           <div className="grid gap-6 lg:grid-cols-2">
-            {Object.values(servicesData).map((sourceService) => {
-              const service = getLocalizedService(sourceService, lang);
+            {quoteCatalogList.map((sourceService) => {
+              const service = getLocalizedQuoteEntry(sourceService, lang);
               const rates = getMarketRatesForService(service.slug as MarketRateItem["serviceSlug"]);
               const visibleRates = rates.length
                 ? rates.map((rate, index) => localizeRateRow(t, sourceService.slug, index, rate))
@@ -120,7 +119,7 @@ export function LocalePricingContent() {
 
                   <div className="mt-6 rounded-2xl border border-dashed border-sky-200 bg-sky-50/60 p-4 text-sm font-semibold leading-relaxed text-[#475569]">
                     <span className="font-extrabold text-[#075985]">{t("pricingPage.pricingNote")}:</span>{" "}
-                    {visibleRates[0]?.validationNote ?? service.description}
+                    {visibleRates[0]?.validationNote ?? service.tagline}
                   </div>
 
                   <div className="mt-6 flex flex-col gap-3 sm:flex-row">

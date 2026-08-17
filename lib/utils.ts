@@ -60,7 +60,7 @@ export function warrantyLead(warranty: string): string {
  * touched, which erodes the trust signals schema dates are meant to provide.
  * Update this when a real content release ships (see SESSION_LOG.md).
  */
-export const DEFAULT_CONTENT_DATE = "2026-08-07";
+export const DEFAULT_CONTENT_DATE = "2026-08-16";
 
 /**
  * Normalise a human-readable date ("July 20, 2026") into ISO-8601 ("2026-07-20").

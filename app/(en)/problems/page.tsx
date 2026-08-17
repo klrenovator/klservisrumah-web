@@ -1,19 +1,21 @@
 import React from "react";
 import { buildMetadata } from "@/lib/seo-meta";
 import Link from "next/link";
-import { indexableProblemPages } from "@/config/problem-canonical";
+import { indexableProblemPages } from "@/config/problem-index";
 import { servicesData } from "@/config/services-data";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
 import { Phone, MessageSquare, AlertCircle } from "lucide-react";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { getSpeakableSchema } from "@/lib/seo";
+import { localizedProblemsIndexLanguageUrls } from "@/components/sections/locale-problems-index";
 
 export const metadata = buildMetadata({
   title: "Home Problem Guides — Diagnose & Fix KL Homes",
   description:
     "Diagnose common painting, plumbing, ceiling, waterproofing and handyman problems in Malaysian homes, then see the realistic repair cost and next step.",
   path: "/problems",
+  languageUrls: localizedProblemsIndexLanguageUrls(),
   keywords: [
     "home problems Malaysia",
     "ceiling leak diagnosis KL",

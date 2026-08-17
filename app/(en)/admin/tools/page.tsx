@@ -3,6 +3,8 @@ import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { ADMIN_SESSION_COOKIE, verifyAdminToken } from "@/lib/admin-auth";
 import { AdminToolsDashboard } from "@/components/admin/admin-tools-dashboard";
+import { toolsContent } from "@/config/tools-data";
+import { servicesData } from "@/config/services-data";
 
 /**
  * Owner tools directory.
@@ -29,5 +31,18 @@ export default async function AdminToolsPage() {
   if (!verifyAdminToken(cookieStore.get(ADMIN_SESSION_COOKIE)?.value)) {
     redirect("/admin/login");
   }
-  return <AdminToolsDashboard />;
+  // Resolved server-side so the registries never reach the browser bundle.
+  const tools = Object.entries(toolsContent).map(([slug, tool]) => ({
+    slug,
+    name: tool.name,
+    intro: tool.intro,
+    stats: tool.stats.map(({ label, value }) => ({ label, value }))
+  }));
+  const services = Object.values(servicesData).map((service) => ({
+    slug: service.slug,
+    title: service.title,
+    startPrice: service.startPrice
+  }));
+
+  return <AdminToolsDashboard tools={tools} services={services} />;
 }

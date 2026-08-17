@@ -8,8 +8,7 @@ import { Phone, Mail, MapPin, Clock, ShieldCheck, CheckCircle } from "lucide-rea
 import { Logo } from "@/components/ui/logo";
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
-import { getLocalizedArea } from "@/lib/location-i18n";
-import { areaPages } from "@/config/area-data";
+import { areaNavBySlug, getLocalizedAreaName } from "@/config/area-nav.generated";
 import { OPEN_CONSENT_SETTINGS_EVENT } from "@/lib/consent";
 
 /**
@@ -93,11 +92,11 @@ export function Footer() {
     "cheras",
     "ampang"
   ]
-    .map((slug) => areaPages.find((a) => a.slug === slug))
+    .map((slug) => areaNavBySlug[slug])
     .filter((a): a is NonNullable<typeof a> => Boolean(a))
     .map((area) => ({
       slug: area.slug,
-      label: getLocalizedArea(area, lang).name
+      label: getLocalizedAreaName(area, lang)
     }));
 
   return (

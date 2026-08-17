@@ -23,7 +23,7 @@ import {
   Wrench
 } from "lucide-react";
 import { siteConfig } from "@/config/site";
-import { trackEvent, trackPhoneCall, trackWhatsAppClick } from "@/lib/analytics";
+import { trackEvent } from "@/lib/analytics";
 import { englishEstimatorT } from "@/lib/estimator/chrome-i18n";
 import { formatMYR } from "@/lib/estimator/format";
 import type { EstimateResult, Severity } from "@/lib/estimator/types";
@@ -271,8 +271,10 @@ export function EstimateResultPanel({
               href={whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
+              data-analytics-page={toolName}
+              data-analytics-service={result.recommendedService}
               onClick={() => {
-                trackWhatsAppClick({ service: result.recommendedService, page: toolName });
+                // The whatsapp_click itself is emitted once by ConversionTracker.
                 trackEvent({ action: "estimator_book_now", category: "lead", label: toolName, value: grandTotal });
               }}
               className="inline-flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-5 py-3.5 text-sm font-black text-white shadow-lg shadow-[#25D366]/25 transition hover:bg-[#128C7E]"
@@ -283,7 +285,8 @@ export function EstimateResultPanel({
               href={whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => trackWhatsAppClick({ service: result.recommendedService, page: `${toolName}_whatsapp` })}
+              data-analytics-page={`${toolName}_whatsapp`}
+              data-analytics-service={result.recommendedService}
               className="inline-flex min-h-14 items-center justify-center gap-2 rounded-2xl border-2 border-emerald-200 bg-white px-5 py-3.5 text-sm font-black text-emerald-700 transition hover:border-emerald-400 hover:bg-emerald-50"
             >
               <MessageSquare className="h-4 w-4" /> {t("estimator.result.sendWhatsapp")}
@@ -302,7 +305,7 @@ export function EstimateResultPanel({
           <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-3">
             <a
               href={`tel:${siteConfig.phone}`}
-              onClick={() => trackPhoneCall({ page: toolName })}
+              data-analytics-page={toolName}
               className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-bold text-[#075985] transition hover:border-sky-300 hover:bg-sky-50"
             >
               <Phone className="h-4 w-4 text-[#0EA5E9]" /> {t("estimator.result.callLabel", { phone: siteConfig.phoneDisplay })}

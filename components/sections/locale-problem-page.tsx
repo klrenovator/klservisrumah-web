@@ -10,7 +10,8 @@ import { getServerTranslator } from "@/lib/i18n-server";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { getArticleSchema, getFAQSchema, getHowToSchema, getSpeakableSchema } from "@/lib/seo";
-import { indexableProblemPages, isRedirectedProblemSlug, problemLocaleUrls } from "@/config/problem-canonical";
+import { isRedirectedProblemSlug, problemLocaleUrls } from "@/config/problem-canonical";
+import { indexableProblemPages } from "@/config/problem-index";
 import { LocaleTreeLinks } from "@/components/sections/locale-tree-links";
 import type { Locale } from "@/lib/i18n";
 

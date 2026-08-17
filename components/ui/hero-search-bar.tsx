@@ -3,7 +3,8 @@
 import React, { useState, useCallback, useRef, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Search, X } from "lucide-react";
-import { searchSmartServices, type SmartSearchResult } from "@/lib/smart-finder-search";
+import type { SmartSearchResult } from "@/lib/smart-finder-search";
+import { loadSmartSearch, prefetchSmartSearch } from "@/lib/smart-finder-loader";
 import { useLang } from "@/context/lang-context";
 
 const SEARCH_PLACEHOLDERS = {
@@ -29,6 +30,7 @@ export function HeroSearchBar({ onSearch }: HeroSearchBarProps) {
   const [isFocused, setIsFocused] = useState(false);
   const [searchResults, setSearchResults] = useState<SmartSearchResult[]>([]);
   const searchTimeout = useRef<NodeJS.Timeout | null>(null);
+  const latestQuery = useRef<string>("");
 
   const placeholder = SEARCH_PLACEHOLDERS[lang] || SEARCH_PLACEHOLDERS.en;
   const popularSearches = POPULAR_SEARCHES[lang] || POPULAR_SEARCHES.en;
@@ -39,14 +41,27 @@ export function HeroSearchBar({ onSearch }: HeroSearchBarProps) {
       clearTimeout(searchTimeout.current);
     }
 
+    latestQuery.current = searchQuery;
+
     if (searchQuery.trim() === "") {
       setSearchResults([]);
       return;
     }
 
     searchTimeout.current = setTimeout(() => {
-      const results = searchSmartServices(searchQuery, lang);
-      setSearchResults(results.results.slice(0, 5));
+      // The scoring engine is code-split (lib/smart-finder-loader.ts) so the
+      // hero does not ship the whole content registry on first load.
+      const requestedQuery = searchQuery;
+      void loadSmartSearch()
+        .then(({ searchSmartServices }) => {
+          // Ignore a resolution that a newer keystroke has already superseded.
+          if (latestQuery.current !== requestedQuery) return;
+          const results = searchSmartServices(requestedQuery, lang);
+          setSearchResults(results.results.slice(0, 5));
+        })
+        .catch(() => {
+          /* Retried on the next keystroke. */
+        });
     }, 300);
   }, [lang]);
 
@@ -111,7 +126,10 @@ export function HeroSearchBar({ onSearch }: HeroSearchBarProps) {
             type="text"
             value={query}
             onChange={handleInputChange}
-            onFocus={() => setIsFocused(true)}
+            onFocus={() => {
+              setIsFocused(true);
+              prefetchSmartSearch();
+            }}
             onBlur={handleBlur}
             placeholder={placeholder}
             className="w-full bg-transparent px-4 py-4 text-base font-medium text-white placeholder:text-white/40 outline-none transition-colors"

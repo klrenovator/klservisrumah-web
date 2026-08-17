@@ -1,6 +1,6 @@
 # SEO Audit Report
 
-Generated: 2026-08-12T22:12:41.613Z
+Generated: 2026-08-16T17:13:21.869Z
 
 ## Route Inventory
 
@@ -205,19 +205,210 @@ Generated: 2026-08-12T22:12:41.613Z
 - /blog/roof-repair-waterproofing-kl
 - /blog/roof-leak-diagnosis-repair-kl
 - /blog/ridge-re-bedding-re-pointing-kl
+- /blog/aircond-water-heater-and-oven-point
+- /blog/allergy-season-refresh-clean-kl
+- /blog/aluminium-sliding-window-kl
+- /blog/autogate-motor-replacement-service-kl
+- /blog/autogate-services-kl
+- /blog/bathroom-and-wet-area-waterproofing
+- /blog/bi-weekly-terrace-house-cleaning-kl
+- /blog/built-in-wardrobe-kl
+- /blog/custom-carpentry-joinery-kl
+- /blog/cctv-health-check-and-relocation-kl
+- /blog/cctv-installation-kl
+- /blog/ceiling-fan-installation-replacement
+- /blog/ceiling-fan-replacement
+- /blog/ceiling-repair-reskim-kl
+- /blog/ceiling-services-kl
+- /blog/house-cleaning-services-kl
+- /blog/commercial-and-office-painting
+- /blog/commercial-shoplot-renovation
+- /blog/condo-interior-refurbishment
+- /blog/condo-move-out-deep-clean-kl
+- /blog/condo-post-renovation-clean-kl
+- /blog/condo-wifi-cctv-package-kl
+- /blog/construction-debris-removal-kl
+- /blog/cornice-and-l-box-concealed-light-trough
+- /blog/cove-curved-plaster-ceiling-kl
+- /blog/cove-led-strip-installation-kl
+- /blog/wall-crack-joint-repair-kl
+- /blog/curtains-blinds-and-shelves-hanging
+- /blog/custom-plywood-kitchen-kl
+- /blog/custom-window-grille-installation-kl
+- /blog/db-box-upgrade-and-rewiring
+- /blog/dc-motor-smart-fan-installation-kl
+- /blog/deep-cleaning-services-kl
+- /blog/door-hinge-and-lockset-repair
+- /blog/door-planing-adjustment-kl
+- /blog/door-repair-installation-kl
+- /blog/double-swing-autogate
+- /blog/drain-unclogging-and-cleaning
+- /blog/electrical-services-kl
+- /blog/emergency-lockout-landed-house-kl
+- /blog/epoxy-floor-repair-recoating-kl
+- /blog/exterior-house-painting
+- /blog/fire-rated-door-installation-kl
+- /blog/floor-tiling-installation
+- /blog/frameless-shower-screen-kl
+- /blog/full-condo-reskim-package-kl
+- /blog/full-house-renovation-package
+- /blog/torch-on-membrane-waterproofing-kl
+- /blog/furniture-assembly-ikea-taobao
+- /blog/glass-aluminium-fabrication-kl
+- /blog/glass-office-partition-kl
+- /blog/window-glass-replacement-kl
+- /blog/gutter-cleaning-realignment-kl
+- /blog/gypsum-board-partition-wall
+- /blog/handyman-services-kl
+- /blog/heat-pump-water-heater-installation-kl
+- /blog/heavy-duty-epoxy-mortar-screed-kl
+- /blog/heavy-tv-wall-mounting
+- /blog/house-renovation-services-kl
+- /blog/industrial-shoplot-fan-installation-kl
+- /blog/instant-water-heater-installation
+- /blog/interior-house-painting
+- /blog/key-cutting-lock-rekeying-kl
+- /blog/kitchen-and-bathroom-makeover
+- /blog/kitchen-cabinet-services-kl
+- /blog/kitchen-door-hardware-makeover-kl
+- /blog/laminate-door-installation-kl
+- /blog/landed-house-poe-cctv-kl
+- /blog/large-format-slab-tiling-kl
+- /blog/led-downlight-installation
+- /blog/lighting-design-installation
+- /blog/lighting-point-and-downlight-installation
+- /blog/locksmith-smart-lock-services-kl
+- /blog/luxury-vinyl-plank-installation-kl
+- /blog/main-gate-fabrication-installation-kl
+- /blog/10ft-l-shape-modular-kitchen-kl
+- /blog/modular-kitchen-cabinet-kl
+- /blog/mortice-deadbolt-lock-replacement-kl
+- /blog/new-ceiling-fan-installation
+- /blog/new-power-point-and-switch-installation
+- /blog/new-tiles-grout-haze-removal-kl
+- /blog/office-cleaning-small-office-kl
+- /blog/on-site-welding-repair-kl
+- /blog/one-off-spring-clean-kl
+- /blog/house-painting-services-kl
+- /blog/pendant-chandelier-installation
+- /blog/plaster-ceiling-installation
+- /blog/plumbing-services-kl
+- /blog/post-illness-disinfection-clean-kl
+- /blog/post-renovation-cleaning-kl
+- /blog/autogate-not-closing
+- /blog/autogate-remote-not-working
+- /blog/balcony-leak-condo
+- /blog/bathroom-leak-upper-floor
+- /blog/blocked-drain-toilet
+- /blog/burst-pipe-emergency
+- /blog/cabinet-door-sagging
+- /blog/cctv-not-recording-storage-full
+- /blog/cctv-not-recording
+- /blog/ceiling-cornice-crack
+- /blog/ceiling-fan-wobbling
+- /blog/ceiling-leak-after-rain
+- /blog/ceiling-mold-stains
+- /blog/cement-splatter-tile-clean
+- /blog/clogged-drain
+- /blog/clogged-gutter-leaking
+- /blog/concrete-slab-crack-leak
+- /blog/condensation-ceiling-mold
+- /blog/construction-dust-returning
+- /blog/cracked-ceiling-joints
+- /blog/cracked-roof-tiles
+- /blog/cracked-tile-grout
+- /blog/curtain-track-falling
+- /blog/damp-walls-paint-bubbling
+- /blog/digital-smart-lock-installation
+- /blog/door-scraping-floor
+- /blog/downlight-flickering
+- /blog/epoxy-floor-yellowing
+- /blog/faded-exterior-paint-malaysia
+- /blog/ikea-furniture-assembly-help
+- /blog/kitchen-cabinet-door-misaligned
+- /blog/leaking-bathroom
+- /blog/locked-out-of-house
+- /blog/loose-door-hinge
+- /blog/loose-hollow-tiles
+- /blog/loose-metal-gate-hinges
+- /blog/low-water-pressure
+- /blog/mold-in-bathroom-after-cleaning
+- /blog/move-out-condo-deep-clean
+- /blog/old-condo-full-refurbishment
+- /blog/paint-cracking-hairline-walls
+- /blog/peeling-paint-malaysia
+- /blog/peeling-skim-coat
+- /blog/power-tripping-frequently
+- /blog/rccb-tripping-kl
+- /blog/roof-leak-rainy-season
+- /blog/rusting-window-grille
+- /blog/sagging-plaster-ceiling
+- /blog/shower-screen-leaking
+- /blog/sliding-window-stuck
+- /blog/smart-lock-not-working
+- /blog/spc-flooring-peeling-edges
+- /blog/stubborn-bathroom-limescale
+- /blog/stubborn-grout-stains-after-deep-clean
+- /blog/stuck-window-lock
+- /blog/swimming-pool-leak-balcony
+- /blog/toilet-not-flushing
+- /blog/tv-fell-off-wall
+- /blog/uneven-wall-surface-skim
+- /blog/vinyl-flooring-lifting-edges
+- /blog/wall-dampness-rising
+- /blog/wardrobe-door-jamming
+- /blog/wardrobe-door-not-closing
+- /blog/water-heater-not-working
+- /blog/yellowing-white-walls
+- /blog/pu-high-pressure-injection-grouting
+- /blog/quartz-granite-countertop-kl
+- /blog/roof-and-concrete-slab-waterproofing
+- /blog/shoe-cabinet-entry-storage-kl
+- /blog/single-camera-add-on-kl
+- /blog/single-swing-autogate-kl
+- /blog/skirting-transition-strip-fitting-kl
+- /blog/sliding-autogate-installation-kl
+- /blog/sliding-window-roller-replacement-kl
+- /blog/smart-lighting-dimmer-retrofit-kl
+- /blog/smart-lock-installation-kl
+- /blog/solid-timber-door-installation-kl
+- /blog/staircase-stringer-fabrication-kl
+- /blog/storage-water-heater-installation
+- /blog/built-in-study-desk-home-office-kl
+- /blog/terrace-house-deep-clean-kl
+- /blog/terrace-house-post-renovation-clean-kl
+- /blog/tile-repair-regrouting-kl
+- /blog/tiling-services-kl
+- /blog/toilet-tap-and-sink-installation
+- /blog/tv-console-feature-wall-kl
+- /blog/wall-crack-and-moisture-repair
+- /blog/wall-dampness-and-efflorescence-repair
+- /blog/wall-mirror-installation-kl
+- /blog/wall-tiling-installation
+- /blog/water-damaged-ceiling-repair
+- /blog/water-heater-and-pump-installation
+- /blog/water-heater-installation-repair
+- /blog/water-heater-repair-and-descaling
+- /blog/water-leakage-diagnosis-and-repair
+- /blog/waterproofing-services-kl
+- /blog/weekly-condo-cleaning-kl
+- /blog/welding-metal-fabrication-kl
+- /blog/window-handle-hinge-repair-kl
+- /blog/window-repair-glass-replacement-kl
+- /blog/window-seal-replacement-kl
 
 ## Checks
 
-- Total representative routes: 201
+- Total representative routes: 392
 - Service pages: 28
 - Area pages: 37
 - Suburb records: 52
 - Problem pages: 77
-- Blog posts: 33
+- Blog posts: 224
 
 ## Metadata consistency (post-build full-corpus)
 
-- Pages checked: 4722
+- Pages checked: 5303
 - Pages with hreflang while canonicalised to a different URL: 0
 
 _No issues found — every page that canonicalises to a different URL correctly omits hreflang (Google: canonical overrides hreflang)._

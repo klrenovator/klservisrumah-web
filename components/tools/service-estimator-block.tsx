@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowRight, Info, Sparkles } from "lucide-react";
 import { useTranslations } from "@/hooks/use-translations";
 import { buildServiceEstimator, DEDICATED_TOOL_BY_SERVICE, hasServiceEstimator } from "@/lib/estimator/service-estimator";
-import { toolsContent } from "@/config/tools-data";
+import { dedicatedToolCardBySlug } from "@/config/dedicated-tool-cards.generated";
 import { estimatePath } from "@/config/estimate-links";
 import dynamic from "next/dynamic";
 import { EstimatorShareBar } from "./estimator-share-bar";
@@ -47,7 +47,7 @@ export function ServiceEstimatorBlock({
 }) {
   const t = useTranslations();
   const dedicatedSlug = DEDICATED_TOOL_BY_SERVICE[slug];
-  const dedicated = dedicatedSlug ? toolsContent[dedicatedSlug] : undefined;
+  const dedicated = dedicatedSlug ? dedicatedToolCardBySlug[dedicatedSlug] : undefined;
 
   // The spec is rebuilt whenever the locale changes (t is memoised on lang),
   // so every question, modifier and breakdown label follows the language pill.

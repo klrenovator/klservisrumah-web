@@ -2,11 +2,11 @@
 
 import React from "react";
 import Link from "next/link";
-import { servicesData } from "@/config/services-data";
+import { serviceSummaryBySlug } from "@/config/service-summary.generated";
 import { ArrowRight, PaintBucket, Droplets, Layout, ShieldCheck, Wrench, Zap } from "lucide-react";
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
-import { getLocalizedService } from "@/lib/service-i18n";
+import { getLocalizedServiceSummary } from "@/lib/service-summary-i18n";
 
 import { getRelatedServices } from "@/config/topical-authority-map";
 
@@ -37,7 +37,7 @@ export function RelatedServices({ currentSlug, maxItems = 6 }: RelatedServicesPr
   // Use Topical Authority Map for smart relatedness
   const relatedSlugs = getRelatedServices(currentSlug);
   const related = relatedSlugs
-    .map((slug) => servicesData[slug])
+    .map((slug) => serviceSummaryBySlug[slug])
     .filter(Boolean)
     .slice(0, maxItems);
 
@@ -60,7 +60,7 @@ export function RelatedServices({ currentSlug, maxItems = 6 }: RelatedServicesPr
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {related.map((service) => {
-            const localized = getLocalizedService(service, lang);
+            const localized = getLocalizedServiceSummary(service, lang);
             const icon = SERVICE_ICONS[service.slug] || <Wrench className="w-5 h-5" />;
             return (
               <Link

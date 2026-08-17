@@ -1,15 +1,14 @@
 "use client";
 
 import React, { useMemo, useState } from "react";
-import { servicesData } from "@/config/services-data";
+import { getLocalizedQuoteEntry, quoteCatalogBySlug, quoteCatalogList } from "@/config/quote-catalog.generated";
 import { suburbPages } from "@/config/suburb-data";
 import { siteConfig } from "@/config/site";
 import { trackFormSubmit, trackWhatsAppClick } from "@/lib/analytics";
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
-import { getLocalizedService } from "@/lib/service-i18n";
 
-const serviceOptions = Object.values(servicesData);
+const serviceOptions = quoteCatalogList;
 const propertyTypeKeys = ["landed", "condo", "commercial", "shoplot", "other"] as const;
 const timeWindowKeys = ["morning", "afternoon", "late", "flexible"] as const;
 
@@ -56,7 +55,7 @@ export function MultiStepBookingForm() {
   // form chrome AND the data match the visitor's language — previously the
   // step-1/step-2 options and the WhatsApp handoff always used English titles
   // even when the rest of the form was translated.
-  const selectedService = form.service ? getLocalizedService(servicesData[form.service], lang) : null;
+  const selectedService = form.service ? getLocalizedQuoteEntry(quoteCatalogBySlug[form.service], lang) : null;
   const subServices = selectedService?.subServices ?? [];
 
   const canContinue = useMemo(() => {
@@ -126,7 +125,7 @@ export function MultiStepBookingForm() {
           <StepShell title={t("contact.fields.service")}>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
               {serviceOptions.map((service) => {
-                const localized = getLocalizedService(service, lang);
+                const localized = getLocalizedQuoteEntry(service, lang);
                 return (
                   <button key={service.slug} onClick={() => update("service", service.slug)} className={`rounded-2xl border p-4 text-left transition ${form.service === service.slug ? "border-[#0284C7] bg-[#E0F2FE]" : "border-slate-100 bg-slate-50 hover:bg-white"}`}>
                     <span className="text-sm font-extrabold text-[#075985]">{localized.title}</span>

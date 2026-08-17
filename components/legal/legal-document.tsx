@@ -19,7 +19,7 @@ export function LegalDocument({
           <li><Link href={currentPath} aria-current="page" className="text-[#075985]">{document.title}</Link></li>
         </ol>
       </nav>
-      <main className="bg-white py-10 sm:py-16">
+      <div className="bg-white py-10 sm:py-16">
         <article className="mx-auto max-w-4xl px-4 sm:px-6">
           <header className="border-b border-slate-200 pb-8">
             <span className="text-xs font-extrabold uppercase tracking-widest text-[#0284C7]">{document.eyebrow}</span>
@@ -43,7 +43,7 @@ export function LegalDocument({
             ))}
           </div>
         </article>
-      </main>
+      </div>
     </>
   );
 }

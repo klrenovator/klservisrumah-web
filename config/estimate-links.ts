@@ -27,7 +27,13 @@
  * This module is the single source of truth for that mapping, used by the
  * routes, the sitemap, the share bar, the hub page and the test harness.
  */
-import { servicesData } from "./services-data";
+// NOTE: this module is imported by client components (the estimator block on
+// every service page, and the share page). It therefore reads the compact
+// generated nav catalog — slug, title and startPrice are all it ever needs —
+// rather than `./services-data`, which would drag the full ~470 KB service
+// registry into the browser bundle of all 28 service pages, all 112
+// sub-service pages and all 22 estimator share pages.
+import { serviceNavList } from "./service-nav.generated";
 import { DEDICATED_TOOL_BY_SERVICE, hasServiceEstimator } from "@/lib/estimator/service-estimator";
 
 export const ESTIMATE_INDEX_PATH = "/estimate";
@@ -68,7 +74,7 @@ export function estimatePath(slug: string): string {
  * order the services page lists them).
  */
 export function buildEstimateLinks(): EstimateLinkEntry[] {
-  return Object.values(servicesData).map((service) => {
+  return serviceNavList.map((service) => {
     const toolSlug = DEDICATED_TOOL_BY_SERVICE[service.slug];
     const path = estimatePath(service.slug);
     return {
@@ -144,7 +150,7 @@ export function relatedEstimateLinks(slug: string): RelatedEstimateLink[] {
  * the sitemap (redirect targets must never be listed).
  */
 export function genericEstimateSlugs(): string[] {
-  return Object.values(servicesData)
+  return serviceNavList
     .map((service) => service.slug)
     .filter((slug) => !DEDICATED_TOOL_BY_SERVICE[slug] && hasServiceEstimator(slug));
 }
