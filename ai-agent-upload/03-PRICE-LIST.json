@@ -1,0 +1,724 @@
+{
+  "business": {
+    "name": "KL Servis Rumah",
+    "legalName": "Multicore Dynamics Resources",
+    "ssm": "202503227236 (003765188-T)",
+    "phone": "+60 11-1662 7349",
+    "whatsapp": "601116627349",
+    "email": "info@klservisrumah.my",
+    "website": "https://www.klservisrumah.my",
+    "hours": "Mon-Sun 9:00 AM - 6:00 PM, including public holidays",
+    "rating": {
+      "value": 4.9,
+      "reviews": 120
+    },
+    "since": 2014
+  },
+  "pricingRules": {
+    "allPricesAreStartingPrices": true,
+    "arithmeticForbidden": true,
+    "mandatoryQualifier": "The final price is confirmed in an itemised written quote after we see photos or do a free site visit.",
+    "fixedPrices": [
+      {
+        "item": "On-site electrical inspection + written photo report",
+        "price": "RM 150"
+      },
+      {
+        "item": "Autogate 6-monthly maintenance visit + condition report",
+        "price": "RM 180"
+      }
+    ],
+    "noPriceCategories": [
+      "renovation",
+      "commercial",
+      "multi-trade",
+      "unknown leak cause",
+      "structural",
+      "exterior/scaffold",
+      "aircon servicing",
+      "On Quote items"
+    ]
+  },
+  "aircon": {
+    "serviced": false,
+    "onlyOffering": {
+      "item": "Aircond, Water Heater & Oven Point (electrical supply point only)",
+      "price": "From RM 220 / point"
+    },
+    "action": "decline honestly, give no price, give no diagnosis, hand over to supervisor"
+  },
+  "services": [
+    {
+      "slug": "painting",
+      "title": "House Painting Services",
+      "startPrice": "RM 450",
+      "warranty": "1-Year Paint Peeling & Craftsmanship Guarantee",
+      "subServices": [
+        {
+          "name": "Interior House Painting",
+          "price": "From RM 450 / room"
+        },
+        {
+          "name": "Exterior House Painting",
+          "price": "From RM 2,200"
+        },
+        {
+          "name": "Commercial & Office Painting",
+          "price": "On Quote"
+        },
+        {
+          "name": "Wall Crack & Moisture Repair",
+          "price": "From RM 180"
+        }
+      ]
+    },
+    {
+      "slug": "plumbing",
+      "title": "Plumbing & Leak Repair Services",
+      "startPrice": "RM 150",
+      "warranty": "30-Day Joint Seal & Workmanship Warranty",
+      "subServices": [
+        {
+          "name": "Water Leakage Diagnosis & Repair",
+          "price": "From RM 220"
+        },
+        {
+          "name": "Toilet, Tap & Sink Installation",
+          "price": "From RM 150"
+        },
+        {
+          "name": "Drain Unclogging & Cleaning",
+          "price": "From RM 180"
+        },
+        {
+          "name": "Water Heater & Pump Installation",
+          "price": "From RM 180"
+        }
+      ]
+    },
+    {
+      "slug": "ceiling",
+      "title": "Ceiling & Partition Services",
+      "startPrice": "RM 220",
+      "warranty": "90-Day Structural Sagging & Crack-Free Warranty",
+      "subServices": [
+        {
+          "name": "Water-Damaged Ceiling Repair",
+          "price": "From RM 220"
+        },
+        {
+          "name": "Plaster Ceiling Installation",
+          "price": "From RM 10 / sq ft"
+        },
+        {
+          "name": "Gypsum Board Partition Wall",
+          "price": "From RM 11 / sq ft"
+        },
+        {
+          "name": "Cornice & L-Box Concealed Light Trough",
+          "price": "On Quote"
+        }
+      ]
+    },
+    {
+      "slug": "waterproofing",
+      "title": "Waterproofing & Leak Repair Services",
+      "startPrice": "RM 300",
+      "warranty": "Up to 5-Year Written Leak-Free Guarantee",
+      "subServices": [
+        {
+          "name": "PU High-Pressure Injection Grouting",
+          "price": "From RM 300 / point"
+        },
+        {
+          "name": "Bathroom & Wet Area Waterproofing",
+          "price": "From RM 1,000"
+        },
+        {
+          "name": "Roof & Concrete Slab Waterproofing",
+          "price": "On Quote"
+        },
+        {
+          "name": "Wall Dampness & Efflorescence Repair",
+          "price": "From RM 350"
+        }
+      ]
+    },
+    {
+      "slug": "handyman",
+      "title": "Handyman Services",
+      "startPrice": "RM 100",
+      "warranty": "30-Day Workmanship Safety Warranty",
+      "subServices": [
+        {
+          "name": "Heavy TV Wall Mounting",
+          "price": "From RM 150"
+        },
+        {
+          "name": "Door, Hinge & Lockset Repair",
+          "price": "From RM 120"
+        },
+        {
+          "name": "Furniture Assembly (IKEA/Taobao)",
+          "price": "From RM 120"
+        },
+        {
+          "name": "Curtains, Blinds & Shelves Hanging",
+          "price": "From RM 100"
+        }
+      ]
+    },
+    {
+      "slug": "house-renovation",
+      "title": "Complete House Renovation",
+      "startPrice": "RM 22,000",
+      "warranty": "12-Month Structural & Workmanship Warranty",
+      "subServices": [
+        {
+          "name": "Full House Renovation Package",
+          "price": "From RM 22,000"
+        },
+        {
+          "name": "Kitchen & Bathroom Makeover",
+          "price": "From RM 10,000"
+        },
+        {
+          "name": "Condo Interior Refurbishment",
+          "price": "From RM 30,000"
+        },
+        {
+          "name": "Commercial Shoplot Renovation",
+          "price": "On Quote"
+        }
+      ]
+    },
+    {
+      "slug": "electrical",
+      "title": "Licensed Electrical Services",
+      "startPrice": "RM 150",
+      "warranty": "12-Month Electrical Workmanship Warranty",
+      "subServices": [
+        {
+          "name": "New Power Point & Switch Installation",
+          "price": "From RM 150 / point"
+        },
+        {
+          "name": "DB Box Upgrade & Rewiring",
+          "price": "From RM 2,200"
+        },
+        {
+          "name": "Lighting Point & Downlight Installation",
+          "price": "From RM 120 / point"
+        },
+        {
+          "name": "Aircond, Water Heater & Oven Point",
+          "price": "From RM 220 / point"
+        }
+      ]
+    },
+    {
+      "slug": "water-heater",
+      "title": "Water Heater Installation & Repair",
+      "startPrice": "RM 180",
+      "warranty": "12-Month Installation Workmanship Warranty",
+      "subServices": [
+        {
+          "name": "Instant Water Heater Installation",
+          "price": "From RM 250"
+        },
+        {
+          "name": "Storage Tank Heater Installation",
+          "price": "From RM 420"
+        },
+        {
+          "name": "Water Heater Repair & Descaling",
+          "price": "From RM 180"
+        },
+        {
+          "name": "Heat Pump Water Heater Install",
+          "price": "From RM 2,200"
+        }
+      ]
+    },
+    {
+      "slug": "ceiling-fan",
+      "title": "Ceiling Fan Installation & Replacement",
+      "startPrice": "RM 150",
+      "warranty": "12-Month Mounting & Wiring Warranty",
+      "subServices": [
+        {
+          "name": "New Ceiling Fan Installation",
+          "price": "From RM 220"
+        },
+        {
+          "name": "Ceiling Fan Replacement",
+          "price": "From RM 250"
+        },
+        {
+          "name": "DC Motor Smart Fan Install",
+          "price": "From RM 320"
+        },
+        {
+          "name": "Industrial / Shoplot Fan Install",
+          "price": "From RM 420"
+        }
+      ]
+    },
+    {
+      "slug": "lighting",
+      "title": "Lighting Design & Installation",
+      "startPrice": "RM 120",
+      "warranty": "12-Month Lighting Installation Warranty",
+      "subServices": [
+        {
+          "name": "LED Downlight Installation",
+          "price": "From RM 120 / point"
+        },
+        {
+          "name": "Pendant & Chandelier Install",
+          "price": "From RM 180"
+        },
+        {
+          "name": "Cove & Strip LED Installation",
+          "price": "From RM 22 / ft"
+        },
+        {
+          "name": "Smart Lighting & Dimmer Retrofit",
+          "price": "From RM 250 / point"
+        }
+      ]
+    },
+    {
+      "slug": "tiling",
+      "title": "Professional Tiling & Tile Repair",
+      "startPrice": "RM 14",
+      "warranty": "12-Month Tile Adhesion & Grout Warranty",
+      "subServices": [
+        {
+          "name": "Floor Tiling Installation",
+          "price": "From RM 14 / sq ft"
+        },
+        {
+          "name": "Wall Tiling Installation",
+          "price": "From RM 16 / sq ft"
+        },
+        {
+          "name": "Large-Format Slab Tiling",
+          "price": "From RM 26 / sq ft"
+        },
+        {
+          "name": "Tile Repair & Re-Grouting",
+          "price": "From RM 22 / sq ft"
+        }
+      ]
+    },
+    {
+      "slug": "plaster-ceiling",
+      "title": "Plaster Ceiling Design & Build",
+      "startPrice": "RM 10",
+      "warranty": "10-Year Sag-Free & Crack-Free Warranty",
+      "subServices": [
+        {
+          "name": "Flat Plaster Ceiling",
+          "price": "From RM 10 / sq ft"
+        },
+        {
+          "name": "Tiered & L-Box Ceiling",
+          "price": "From RM 14 / sq ft"
+        },
+        {
+          "name": "Cove & Curved Ceiling",
+          "price": "From RM 22 / sq ft"
+        },
+        {
+          "name": "Ceiling Repair & Re-Skim",
+          "price": "From RM 8 / sq ft"
+        }
+      ]
+    },
+    {
+      "slug": "skim-coat",
+      "title": "Wall & Ceiling Skim Coat",
+      "startPrice": "RM 5",
+      "warranty": "12-Month Smoothness & Adhesion Warranty",
+      "subServices": [
+        {
+          "name": "Wall Skim Coating",
+          "price": "From RM 5 / sq ft"
+        },
+        {
+          "name": "Ceiling Skim Coating",
+          "price": "From RM 6 / sq ft"
+        },
+        {
+          "name": "Crack & Joint Repair",
+          "price": "From RM 22 / linier ft"
+        },
+        {
+          "name": "Full Condo Re-Skim Package",
+          "price": "From RM 4,200"
+        }
+      ]
+    },
+    {
+      "slug": "flooring",
+      "title": "Vinyl, SPC & Laminate Flooring",
+      "startPrice": "RM 14",
+      "warranty": "5-Year Installation Workmanship Warranty",
+      "subServices": [
+        {
+          "name": "SPC Click-Lock Flooring Install",
+          "price": "From RM 14 / sq ft"
+        },
+        {
+          "name": "Laminate Flooring Install",
+          "price": "From RM 11 / sq ft"
+        },
+        {
+          "name": "Luxury Vinyl Plank (LVP) Install",
+          "price": "From RM 16 / sq ft"
+        },
+        {
+          "name": "Skirting & Transition Strip Fitting",
+          "price": "From RM 8 / linier ft"
+        }
+      ]
+    },
+    {
+      "slug": "epoxy-flooring",
+      "title": "Epoxy & Polyurethane Flooring",
+      "startPrice": "RM 22",
+      "warranty": "5-Year Delamination & Yellowing Warranty",
+      "subServices": [
+        {
+          "name": "Self-Levelling Epoxy Floor",
+          "price": "From RM 22 / sq ft"
+        },
+        {
+          "name": "Flake / Quartz Broadcast Epoxy",
+          "price": "From RM 26 / sq ft"
+        },
+        {
+          "name": "Heavy-Duty Mortar Screed",
+          "price": "From RM 38 / sq ft"
+        },
+        {
+          "name": "Epoxy Floor Repair & Recoating",
+          "price": "From RM 14 / sq ft"
+        }
+      ]
+    },
+    {
+      "slug": "roof-repair",
+      "title": "Roof Repair & Waterproofing",
+      "startPrice": "RM 380",
+      "warranty": "10-Year Membrane & Workmanship Warranty",
+      "subServices": [
+        {
+          "name": "Roof Leak Diagnosis & Repair",
+          "price": "From RM 380"
+        },
+        {
+          "name": "Ridge Re-Bedding & Re-Pointing",
+          "price": "From RM 22 / linier ft"
+        },
+        {
+          "name": "Gutter Cleaning & Realignment",
+          "price": "From RM 320"
+        },
+        {
+          "name": "Full Torch-On Membrane Waterproofing",
+          "price": "From RM 26 / sq ft"
+        }
+      ]
+    },
+    {
+      "slug": "kitchen-cabinet",
+      "title": "Kitchen Cabinet & Countertop",
+      "startPrice": "RM 7,500",
+      "warranty": "5-Year Cabinet Structure Warranty",
+      "subServices": [
+        {
+          "name": "Modular Kitchen Cabinet (10ft L-shape)",
+          "price": "From RM 7,500"
+        },
+        {
+          "name": "Custom Plywood Kitchen",
+          "price": "From RM 11,000"
+        },
+        {
+          "name": "Quartz / Granite Countertop",
+          "price": "From RM 220 / linier ft"
+        },
+        {
+          "name": "Kitchen Makeover (Doors & Hardware Only)",
+          "price": "From RM 4,200"
+        }
+      ]
+    },
+    {
+      "slug": "carpentry",
+      "title": "Custom Carpentry & Joinery",
+      "startPrice": "RM 300",
+      "warranty": "5-Year Cabinet Structure Warranty",
+      "subServices": [
+        {
+          "name": "Built-in Wardrobe",
+          "price": "From RM 320 / linier ft"
+        },
+        {
+          "name": "TV Console & Feature Wall",
+          "price": "From RM 1,500"
+        },
+        {
+          "name": "Study Desk & Home Office",
+          "price": "From RM 1,100"
+        },
+        {
+          "name": "Shoe Cabinet & Entry Storage",
+          "price": "From RM 1,800"
+        }
+      ]
+    },
+    {
+      "slug": "door",
+      "title": "Door Repair & Installation",
+      "startPrice": "RM 250",
+      "warranty": "12-Month Door Hanging & Hardware Warranty",
+      "subServices": [
+        {
+          "name": "Solid Timber Door Installation",
+          "price": "From RM 550"
+        },
+        {
+          "name": "Laminate Door Installation",
+          "price": "From RM 250"
+        },
+        {
+          "name": "Door Planing & Adjustment",
+          "price": "From RM 120"
+        },
+        {
+          "name": "Fire-Rated Door Installation",
+          "price": "From RM 950"
+        }
+      ]
+    },
+    {
+      "slug": "window-repair",
+      "title": "Window Repair & Glass Replacement",
+      "startPrice": "RM 200",
+      "warranty": "12-Month Hardware & Seal Warranty",
+      "subServices": [
+        {
+          "name": "Glass Replacement",
+          "price": "From RM 200"
+        },
+        {
+          "name": "Window Seal Replacement",
+          "price": "From RM 30 / linier ft"
+        },
+        {
+          "name": "Window Handle & Hinge Repair",
+          "price": "From RM 120"
+        },
+        {
+          "name": "Sliding Window Roller Replacement",
+          "price": "From RM 150"
+        }
+      ]
+    },
+    {
+      "slug": "locksmith",
+      "title": "Locksmith & Smart Lock Services",
+      "startPrice": "RM 180",
+      "warranty": "12-Month Lock Installation & Hardware Warranty",
+      "subServices": [
+        {
+          "name": "Smart Lock Installation",
+          "price": "From RM 420"
+        },
+        {
+          "name": "Mortice / Deadbolt Lock Replacement",
+          "price": "From RM 220"
+        },
+        {
+          "name": "Key Cutting & Re-Keying",
+          "price": "From RM 30"
+        },
+        {
+          "name": "Emergency Lockout (Landed House)",
+          "price": "From RM 180"
+        }
+      ]
+    },
+    {
+      "slug": "glass-aluminium",
+      "title": "Glass & Aluminium Fabrication",
+      "startPrice": "RM 320",
+      "warranty": "12-Month Leak-Free & Hardware Warranty",
+      "subServices": [
+        {
+          "name": "Frameless Shower Screen",
+          "price": "From RM 420 / panel"
+        },
+        {
+          "name": "Aluminium Sliding Window",
+          "price": "From RM 320 / sq ft"
+        },
+        {
+          "name": "Glass Office Partition",
+          "price": "From RM 220 / sq ft"
+        },
+        {
+          "name": "Wall Mirror Installation",
+          "price": "From RM 320"
+        }
+      ]
+    },
+    {
+      "slug": "cleaning",
+      "title": "Residential & Office Cleaning",
+      "startPrice": "RM 180",
+      "warranty": "24-Hour Re-Clean Satisfaction Guarantee",
+      "subServices": [
+        {
+          "name": "Weekly Condo Cleaning (1,000 sqft)",
+          "price": "From RM 180 / visit"
+        },
+        {
+          "name": "Bi-Weekly Terrace House Cleaning",
+          "price": "From RM 250 / visit"
+        },
+        {
+          "name": "Office Cleaning (Small Office, 1,500 sqft)",
+          "price": "From RM 320 / visit"
+        },
+        {
+          "name": "One-Off Spring Clean",
+          "price": "From RM 420"
+        }
+      ]
+    },
+    {
+      "slug": "deep-cleaning",
+      "title": "Deep Cleaning & Move-In/Out",
+      "startPrice": "RM 420",
+      "warranty": "24-Hour Re-Clean Satisfaction Guarantee",
+      "subServices": [
+        {
+          "name": "Condo Move-Out Deep Clean (1,000 sqft)",
+          "price": "From RM 420"
+        },
+        {
+          "name": "Terrace House Deep Clean (2,000 sqft)",
+          "price": "From RM 650"
+        },
+        {
+          "name": "Post-Illness Disinfection Clean",
+          "price": "From RM 500"
+        },
+        {
+          "name": "Allergy Season Refresh",
+          "price": "From RM 480"
+        }
+      ]
+    },
+    {
+      "slug": "post-renovation-cleaning",
+      "title": "Post-Renovation Cleaning",
+      "startPrice": "RM 650",
+      "warranty": "7-Day Spot-Check Free Re-Clean Guarantee",
+      "subServices": [
+        {
+          "name": "Condo Post-Renovation Clean (1,000 sqft)",
+          "price": "From RM 650"
+        },
+        {
+          "name": "Terrace House Post-Renovation Clean (2,000 sqft)",
+          "price": "From RM 1,400"
+        },
+        {
+          "name": "New Tiles Grout Haze Removal",
+          "price": "From RM 10 / sq ft"
+        },
+        {
+          "name": "Construction Debris Removal",
+          "price": "From RM 320"
+        }
+      ]
+    },
+    {
+      "slug": "cctv",
+      "title": "CCTV & Security Camera Installation",
+      "startPrice": "RM 420",
+      "warranty": "12-Month Camera & Installation Warranty",
+      "subServices": [
+        {
+          "name": "Condo Wi-Fi CCTV Package (4 cameras)",
+          "price": "From RM 2,200"
+        },
+        {
+          "name": "Landed House PoE CCTV (8 cameras)",
+          "price": "From RM 4,200"
+        },
+        {
+          "name": "Single Camera Add-On",
+          "price": "From RM 420"
+        },
+        {
+          "name": "CCTV System Health Check & Relocation",
+          "price": "From RM 220"
+        }
+      ]
+    },
+    {
+      "slug": "autogate",
+      "title": "Auto Gate & Motorised Gate",
+      "startPrice": "RM 2,200",
+      "warranty": "12-Month Motor & Installation Warranty",
+      "subServices": [
+        {
+          "name": "Single Swing Autogate",
+          "price": "From RM 2,200"
+        },
+        {
+          "name": "Double Swing Autogate",
+          "price": "From RM 3,200"
+        },
+        {
+          "name": "Sliding Autogate",
+          "price": "From RM 3,800"
+        },
+        {
+          "name": "Autogate Motor Replacement & Service",
+          "price": "From RM 950"
+        }
+      ]
+    },
+    {
+      "slug": "welding",
+      "title": "Welding & Metal Fabrication",
+      "startPrice": "RM 280",
+      "warranty": "12-Month Welding & Fabrication Warranty",
+      "subServices": [
+        {
+          "name": "Custom Window Grille",
+          "price": "From RM 42 / sq ft"
+        },
+        {
+          "name": "Main Gate Fabrication",
+          "price": "From RM 2,800"
+        },
+        {
+          "name": "On-Site Welding Repair",
+          "price": "From RM 280"
+        },
+        {
+          "name": "Staircase Stringer Fabrication",
+          "price": "From RM 420 / linier ft"
+        }
+      ]
+    }
+  ]
+}
