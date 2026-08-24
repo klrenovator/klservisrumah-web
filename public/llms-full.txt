@@ -87,7 +87,7 @@ All prices are the published starting prices shown on the live service pages. Fi
 - Terrace House Renovation — From RM 22,000
 - Semi-D Renovation — From RM 35,000
 - Bungalow Renovation — From RM 60,000
-- Condo Renovation — From RM 30,000
+- Condo Interior Refurbishment — From RM 30,000
 - Apartment Renovation — From RM 18,000
 - Kitchen & Bathroom Makeover — From RM 10,000
 - House Extension — On Quote
@@ -144,11 +144,11 @@ All prices are the published starting prices shown on the live service pages. Fi
 - Floor Tile Replacement & Tile Hacking — From RM 18 / sq ft
 - Porcelain Tiles Installation — From RM 16 / sq ft
 - Ceramic Tiles Installation — From RM 14 / sq ft
-- Large Format Tiles — From RM 26 / sq ft
+- Large-Format Slab Tiling — From RM 26 / sq ft
 - Mosaic Tiles Installation — From RM 22 / sq ft
 - Bathroom Tiling & Waterproofing — From RM 18 / sq ft
 - Kitchen Backsplash Tiling — From RM 18 / sq ft
-- Tile Repair, Hollow Tile & Re-Grouting — From RM 22 / sq ft
+- Tile Repair & Re-Grouting — From RM 22 / sq ft
 - Floor Leveling & Self-Leveling — From RM 8 / sq ft
 - Cost guide: https://www.klservisrumah.my/services/tiling/cost
 
@@ -188,7 +188,7 @@ All prices are the published starting prices shown on the live service pages. Fi
 - Luxury Vinyl Plank (LVP) Install — From RM 16 / sq ft
 - Vinyl Flooring Installation — From RM 12 / sq ft
 - Floor Tile Installation — From RM 14 / sq ft
-- Floor Tile Replacement & Tile Hacking — From RM 18 / sq ft
+- Floor Tile Replacement & Subfloor Hacking — From RM 18 / sq ft
 - Porcelain & Ceramic Tiles — From RM 16 / sq ft
 - Large Format & Mosaic Tiles — From RM 22 / sq ft
 - Floor Leveling & Screeding — From RM 8 / sq ft
@@ -357,7 +357,7 @@ All prices are the published starting prices shown on the live service pages. Fi
 - Full Kitchen Renovation — From RM 8,000
 - Kitchen Cabinet Installation — From RM 4,500
 - Kitchen Countertop Replacement — From RM 1,800
-- Kitchen Backsplash Tiling — From RM 18 / sq ft
+- Kitchen Backsplash Tile Installation — From RM 18 / sq ft
 - Kitchen Island & Peninsula — From RM 2,200
 - Wet Kitchen Renovation — From RM 6,500
 - Dry Kitchen Renovation — From RM 5,500
@@ -827,4 +827,4 @@ KL Servis Rumah publishes fair, upfront pricing benchmarked against the Klang Va
 ## Scale
 - 31 services · 169 sub-services
 - 37 area pages · 86 problem pages · 229 articles
-- 4,734 indexable pages listed in the sitemap
+- 4,738 indexable pages listed in the sitemap

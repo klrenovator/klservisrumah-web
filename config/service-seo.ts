@@ -135,7 +135,7 @@ export const serviceSeo: Record<string, LocalizedServiceSeo> = {
     zh: {
       title: "吉隆坡与雪兰莪厨房翻新承包商",
       description:
-        "吉隆坡与雪兰莪全套厨房翻新：拆除、贴砖、防水、定制橱柜、石英石台面、水电。固定报价，3D布局。WhatsApp报价。"
+        "吉隆坡与雪兰莪厨房翻新承包商，涵盖整体拆建、定制橱柜、石英石台面、水电改造与防油烟排风。透明固定总价与施工保修。"
     }
   },
   "bathroom-renovation": {
@@ -152,7 +152,7 @@ export const serviceSeo: Record<string, LocalizedServiceSeo> = {
     zh: {
       title: "吉隆坡与雪兰莪卫生间翻新承包商",
       description:
-        "吉隆坡与雪兰莪全套卫生间翻新：拆除、防水与蓄水测试、贴砖、水管、洁具、天花。防漏、防滑、防霉。固定报价。WhatsApp报价。"
+        "吉隆坡与雪兰莪专业卫生间与厕所翻新服务，提供拆除、多层防水膜蓄水测试、防滑地砖与洁具安装。透明固定总价与防漏保修。"
     }
   },
   electrical: {

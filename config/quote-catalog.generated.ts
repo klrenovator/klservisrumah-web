@@ -481,7 +481,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
         "desc": "Bungalow full refurbishment including façade, roofing, outdoor, interior and M&E upgrades."
       },
       {
-        "name": "Condo Renovation",
+        "name": "Condo Interior Refurbishment",
         "price": "From RM 30,000",
         "desc": "Full condo interior rebuild including management work-hour compliance, lift protection and debris handling."
       },
@@ -543,7 +543,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "desc": "Pemulihan penuh banglo termasuk fasad, bumbung, luar, interior dan naik taraf M&E."
           },
           {
-            "name": "Pengubahsuaian Kondominium",
+            "name": "Pemulihan Interior Kondominium",
             "price": "Dari RM 30,000",
             "desc": "Pembinaan semula interior kondominium penuh termasuk pematuhan waktu kerja pengurusan, perlindungan lif dan pengendalian serpihan."
           },
@@ -1011,7 +1011,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
         "desc": "Ceramic wall and floor tiles for bathrooms, kitchens and balconies with colour-matched grout."
       },
       {
-        "name": "Large Format Tiles",
+        "name": "Large-Format Slab Tiling",
         "price": "From RM 26 / sq ft",
         "desc": "600x1200mm, 800x800mm, 1200x2400mm slabs with self-levelling, suction-cup lifters, and lippage tuning."
       },
@@ -1031,7 +1031,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
         "desc": "Kitchen backsplash tiling with subway, mosaic or large format tiles and anti-mould silicone sealing."
       },
       {
-        "name": "Tile Repair, Hollow Tile & Re-Grouting",
+        "name": "Tile Repair & Re-Grouting",
         "price": "From RM 22 / sq ft",
         "desc": "Removing hollow, cracked or broken tiles, surface prep, replacement, epoxy grout and silicone sealing."
       },
@@ -1073,7 +1073,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "desc": "Jubin seramik dinding dan lantai untuk bilik mandi, dapur dan balkoni dengan grout sepadan warna."
           },
           {
-            "name": "Jubin Format Besar",
+            "name": "Pemasangan Slab Format Besar",
             "price": "Dari RM 26 / sq ft",
             "desc": "Slab 600x1200mm, 800x800mm, 1200x2400mm dengan self-levelling, cawan sedutan, dan lippage tuning."
           },
@@ -1093,7 +1093,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "desc": "Jubin backsplash dapur dengan jubin subway, mozek atau format besar dan seal silikon anti-kulat."
           },
           {
-            "name": "Pembaikan Jubin, Jubin Berongga & Grout Semula",
+            "name": "Pembaikan Jubin & Grout Semula",
             "price": "Dari RM 22 / sq ft",
             "desc": "Menanggalkan jubin berongga, retak atau pecah, penyediaan permukaan, penggantian, grout epoxy dan sealing silikon."
           },
@@ -1135,7 +1135,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "desc": "浴室、厨房与阳台墙地陶瓷砖，配色美缝。"
           },
           {
-            "name": "大板瓷砖",
+            "name": "超大板铺贴",
             "price": "从 RM 26 / sq ft 起",
             "desc": "600x1200mm、800x800mm、1200x2400mm 大板，自流平、吸盘与找平器配套。"
           },
@@ -1155,7 +1155,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "desc": "厨房挡水板贴砖，面包砖、马赛克或大板，防霉硅胶收口。"
           },
           {
-            "name": "瓷砖维修、空鼓与重新美缝",
+            "name": "瓷砖修补与重新勾缝",
             "price": "从 RM 22 / sq ft 起",
             "desc": "拆除空鼓、开裂或破损瓷砖、基层处理、更换、环氧美缝与硅胶密封。"
           },
@@ -1406,9 +1406,9 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
         "desc": "Porcelain, ceramic, large format and mosaic tile installation for new builds and renovations."
       },
       {
-        "name": "Floor Tile Replacement & Tile Hacking",
+        "name": "Floor Tile Replacement & Subfloor Hacking",
         "price": "From RM 18 / sq ft",
-        "desc": "Hacking old tiles, screeding, waterproofing and new tile installation with debris disposal."
+        "desc": "Hacking old tiles, subfloor leveling, waterproofing and new tile installation with debris disposal."
       },
       {
         "name": "Porcelain & Ceramic Tiles",
@@ -1468,9 +1468,9 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "desc": "Pemasangan jubin porselin, seramik, format besar dan mozek untuk binaan baru dan pengubahsuaian."
           },
           {
-            "name": "Penggantian Jubin & Pemecahan Jubin",
+            "name": "Penggantian Jubin Lantai & Pemecahan Subfloor",
             "price": "Dari RM 18 / kaki persegi",
-            "desc": "Pemecahan jubin lama, screed, kalis air dan pemasangan jubin baru dengan pelupusan serpihan."
+            "desc": "Pemecahan jubin lama, perataan subfloor, kalis air dan pemasangan jubin baru dengan pelupusan serpihan."
           },
           {
             "name": "Jubin Porselin & Seramik",
@@ -1530,9 +1530,9 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "desc": "瓷砖、陶瓷、大板与马赛克地面安装，适用于新建与翻新。"
           },
           {
-            "name": "地面瓷砖更换与拆除",
+            "name": "地面瓷砖更换与基层拆除",
             "price": "从 RM 18 / 平方英尺起",
-            "desc": "拆除旧砖、找平、防水与新砖安装，含垃圾清运。"
+            "desc": "拆除旧砖、基层找平、防水与新砖安装，含垃圾清运。"
           },
           {
             "name": "抛光砖与陶瓷砖",
@@ -2921,7 +2921,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
         "desc": "Quartz, granite or sintered stone countertop supply and install with sink cut-out and edge profile."
       },
       {
-        "name": "Kitchen Backsplash Tiling",
+        "name": "Kitchen Backsplash Tile Installation",
         "price": "From RM 18 / sq ft",
         "desc": "Porcelain, ceramic, mosaic or subway backsplash tiling with grout colour matching and anti-mould seal."
       },
@@ -2973,7 +2973,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "desc": "Bekalan dan pemasangan countertop quartz, granit atau sintered stone dengan potongan singki dan profil tepi."
           },
           {
-            "name": "Jubin Backsplash Dapur",
+            "name": "Pemasangan Jubin Backsplash Dapur",
             "price": "Dari RM 18 / kaki persegi",
             "desc": "Jubin backsplash porselin, seramik, mozek atau subway dengan pemadanan warna grout dan seal anti-kulat."
           },
@@ -3025,7 +3025,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "desc": "石英石、花岗岩或岩板台面供应与安装，含水槽开孔与边型处理。"
           },
           {
-            "name": "厨房挡水板贴砖",
+            "name": "厨房防溅墙瓷砖安装",
             "price": "从 RM 18 / 平方英尺起",
             "desc": "瓷砖、陶瓷、马赛克或面包砖挡水板贴砖，含美缝配色与防霉密封。"
           },

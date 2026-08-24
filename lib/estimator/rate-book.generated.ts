@@ -371,7 +371,7 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
         "desc": "Bungalow full refurbishment including façade, roofing, outdoor, interior and M&E upgrades."
       },
       {
-        "name": "Condo Renovation",
+        "name": "Condo Interior Refurbishment",
         "amount": 30000,
         "unit": "job",
         "published": "From RM 30,000",
@@ -582,7 +582,7 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
         "desc": "Ceramic wall and floor tiles for bathrooms, kitchens and balconies with colour-matched grout."
       },
       {
-        "name": "Large Format Tiles",
+        "name": "Large-Format Slab Tiling",
         "amount": 26,
         "unit": "sqft",
         "published": "From RM 26 / sq ft",
@@ -610,7 +610,7 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
         "desc": "Kitchen backsplash tiling with subway, mosaic or large format tiles and anti-mould silicone sealing."
       },
       {
-        "name": "Tile Repair, Hollow Tile & Re-Grouting",
+        "name": "Tile Repair & Re-Grouting",
         "amount": 22,
         "unit": "sqft",
         "published": "From RM 22 / sq ft",
@@ -782,11 +782,11 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
         "desc": "Porcelain, ceramic, large format and mosaic tile installation for new builds and renovations."
       },
       {
-        "name": "Floor Tile Replacement & Tile Hacking",
+        "name": "Floor Tile Replacement & Subfloor Hacking",
         "amount": 18,
         "unit": "sqft",
         "published": "From RM 18 / sq ft",
-        "desc": "Hacking old tiles, screeding, waterproofing and new tile installation with debris disposal."
+        "desc": "Hacking old tiles, subfloor leveling, waterproofing and new tile installation with debris disposal."
       },
       {
         "name": "Porcelain & Ceramic Tiles",
@@ -1389,7 +1389,7 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
         "desc": "Quartz, granite or sintered stone countertop supply and install with sink cut-out and edge profile."
       },
       {
-        "name": "Kitchen Backsplash Tiling",
+        "name": "Kitchen Backsplash Tile Installation",
         "amount": 18,
         "unit": "sqft",
         "published": "From RM 18 / sq ft",
