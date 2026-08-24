@@ -36,6 +36,18 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
       },
       {
         "name": "Wall Crack & Moisture Repair"
+      },
+      {
+        "name": "Condo & Apartment Painting"
+      },
+      {
+        "name": "Ceiling Painting"
+      },
+      {
+        "name": "Wall Preparation & Priming"
+      },
+      {
+        "name": "Feature Wall Painting"
       }
     ],
     "warranty": "1-Year Paint Peeling & Craftsmanship Guarantee",
@@ -55,6 +67,18 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
           },
           {
             "name": "Pembaikan Retak & Lembapan Dinding"
+          },
+          {
+            "name": "Pengecatan Kondominium & Apartmen"
+          },
+          {
+            "name": "Pengecatan Siling"
+          },
+          {
+            "name": "Persediaan & Primer Dinding"
+          },
+          {
+            "name": "Pengecatan Dinding Ciri"
           }
         ],
         "warranty": "Jaminan Pengelupasan Cat & Kerja 1 Tahun"
@@ -74,6 +98,18 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
           },
           {
             "name": "墙面裂缝与防潮修复"
+          },
+          {
+            "name": "公寓与组屋油漆"
+          },
+          {
+            "name": "天花板油漆"
+          },
+          {
+            "name": "墙面处理与底漆"
+          },
+          {
+            "name": "特色墙面油漆"
           }
         ],
         "warranty": "1 年油漆剥落与工艺保修"

@@ -18,7 +18,7 @@
 - Malay (ms)
 - Chinese (zh)
 
-**Session:** Initial audit + foundation implementation
+**Session:** Initial audit + foundation (Session 1) · Connected-trades expansion (Session 2)
 
 ---
 
@@ -585,13 +585,14 @@
 | Interior Painting | ✅ | ✅ | ✅ | Exists as part of painting service |
 | Exterior Painting | ✅ | ✅ | ✅ | Exists |
 | House Painting | ✅ | ✅ | ✅ | Exists |
-| Condo Painting | ⏳ | ⏳ | ⏳ | New |
-| Office Painting | ⏳ | ⏳ | ⏳ | New |
-| Commercial Painting | ⏳ | ⏳ | ⏳ | New |
-| Ceiling Painting | ⏳ | ⏳ | ⏳ | New |
-| Wall Preparation | ⏳ | ⏳ | ⏳ | New |
+| Condo Painting | ✅ | ✅ | ✅ | Condo & Apartment Painting subservice + specialty - COMPLETED S2 |
+| Office Painting | ✅ | ✅ | ✅ | Covered by Commercial & Office Painting - exists |
+| Commercial Painting | ✅ | ✅ | ✅ | Covered by Commercial & Office Painting - exists |
+| Ceiling Painting | ✅ | ✅ | ✅ | Ceiling Painting subservice + specialty - COMPLETED S2 |
+| Wall Preparation | ✅ | ✅ | ✅ | Wall Preparation & Priming subservice + specialty - COMPLETED S2 |
+| Feature Wall Painting | ✅ | ✅ | ✅ | Feature Wall Painting subservice + specialty - COMPLETED S2 |
 | Skim Coat | ✅ | ✅ | ✅ | Exists |
-| Crack Repair | ⏳ | ⏳ | ⏳ | New |
+| Crack Repair | ✅ | ✅ | ✅ | Covered by Wall Crack & Moisture Repair - exists |
 | **Waterproofing** | | | | |
 | Bathroom Waterproofing | ✅ (tool) | ✅ | ✅ | Enhance |
 | Toilet Waterproofing | ⏳ | ⏳ | ⏳ | New |
@@ -910,9 +911,22 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 - [x] ✅ Regenerated generated files: service-nav.generated.ts, service-summary.generated.ts, quote-catalog.generated.ts, area-nav.generated.ts, rate-book.generated.ts, site-summary.json (31 services), llms.txt, llms-full.txt, aeo-faq.txt — all counts match
 - [x] ✅ TypeScript PASS (0 errors), ESLint PASS (0 warnings)
 
+**Session 2 (this session):**
+
+- [x] ✅ Enhanced painting service: 4→8 subservices (added Condo & Apartment Painting, Ceiling Painting, Wall Preparation & Priming, Feature Wall Painting) with full EN/MS/ZH
+- [x] ✅ Added 4 new painting specialty-locale entries with real native MS/ZH content (condo-and-apartment-painting, ceiling-painting, wall-preparation-and-priming, feature-wall-painting) — total 130 specialties × 2 = 260 blocks, audit:specialty-locale PASS
+- [x] ✅ Registered 4 new painting specialties in topical-authority-map (typing, relatedProblems, relatedBlogs) — audit:topical-map PASS 173 typed relationships
+- [x] ✅ Regenerated generated files via prebuild: quote-catalog.generated.ts, service-summary.generated.ts, rate-book.generated.ts, llms-full.txt, site-summary.json (31 services)
+- [x] ✅ QA: full `next build` PASS (~5,900 rendered pages), TypeScript 0 errors, ESLint 0 warnings, prebuild (i18n + estimator tests 332,771 assertions) PASS, audit:links 0 broken targets (446,386 links), audit:html + seo:audit PASS
+- [x] ✅ No invented prices used — new painting subservices priced at "On Quote" or the verified "From RM 450 / room" interior-room rate from market-rates.ts
+
 ## In Progress This Session
 
-- [ ] 🔄 Enhance remaining connected trades subServices (painting with condo/office/commercial, waterproofing with roof/concrete, electrical with rewiring/DB box, carpentry with wardrobes etc) — IN PROGRESS, existing services already cover base but can be further expanded next session
+- [ ] 🔄 Enhance remaining connected trades subServices (waterproofing with roof/concrete/repair/leakage, electrical with rewiring/DB box, plumbing with renovation-specific, carpentry with wardrobes etc) — IN PROGRESS, painting tranche completed this session, remaining trades next
+- [ ] 🔄 Problem-based renovation content — PENDING (43 existing problems audited, renovation-related problems like hollow tiles, cracked tiles, water-damaged ceiling can be added as thin-page avoidance)
+- [ ] 🔄 Location SEO renovation enhancement — PENDING (49+ areas exist, need localized renovation content without thin duplication)
+- [ ] 🔄 Commercial renovation cluster expansion — PENDING (shoplot exists, office/retail/F&B can be added as subservices)
+- [ ] 🔄 Post-renovation cleaning cluster expansion — PENDING (post-renovation-cleaning exists, construction cleaning etc can be added)
 - [ ] 🔄 Problem-based renovation content — PENDING (43 existing problems audited, renovation-related problems like hollow tiles, cracked tiles, water-damaged ceiling can be added as thin-page avoidance)
 - [ ] 🔄 Location SEO renovation enhancement — PENDING (49+ areas exist, need localized renovation content without thin duplication)
 - [ ] 🔄 Commercial renovation cluster expansion — PENDING (shoplot exists, office/retail/F&B can be added as subservices)
@@ -920,8 +934,8 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 
 ## Pending Next
 
-- Enhance painting service with Condo Painting, Office Painting, Commercial Painting, Ceiling Painting, Wall Preparation, Crack Repair subservices (EN/MS/ZH)
-- Enhance waterproofing service with Toilet, Roof, Concrete, Waterproofing Repair, Water Leakage, Ceiling Water Damage, Wall Water Leakage subservices
+- ~~Enhance painting service with Condo Painting, Office Painting, Commercial Painting, Ceiling Painting, Wall Preparation, Crack Repair subservices (EN/MS/ZH)~~ ✅ COMPLETED (Session 2 — added Condo & Apartment Painting, Ceiling Painting, Wall Preparation & Priming, Feature Wall Painting; Commercial & Office Painting and Wall Crack & Moisture Repair already existed)
+- Enhance waterproofing service with Toilet, Roof, Concrete, Waterproofing Repair, Water Leakage, Ceiling Water Damage, Wall Water Leakage subservices (EN/MS/ZH)
 - Enhance electrical service with House Rewiring, Additional Power Points, Switch Installation, Downlight, DB Box Work, Kitchen/Bathroom Electrical subservices
 - Enhance plumbing service with Bathroom Plumbing, Kitchen Plumbing, Pipe Replacement, Water Supply Pipe, Drainage, Sink/Toilet/Tap/Shower Installation subservices
 - Enhance carpentry service with Built-in Wardrobe, Walk-in Wardrobe, TV Cabinet, TV Feature Wall, Shoe Cabinet, Storage Cabinet, Vanity Cabinet, Study Table subservices
@@ -932,11 +946,12 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 - Enhance location pages with renovation-specific localized content for KL, PJ, Subang Jaya, Shah Alam, Puchong, Klang, Cheras, Ampang, Setia Alam, Kajang, Cyberjaya, Putrajaya — EN/MS/ZH, avoid doorway/thin duplication, require uniqueness gate
 - Create cost content guides: House Renovation Cost, Kitchen Renovation Cost, Bathroom Renovation Cost, Condo Renovation Cost, Flooring/Tiling/Plaster Ceiling/Painting/Waterproofing/Wall Hacking Cost, Cost Per Sq Ft — only verified pricing, neutral wording otherwise
 - Full SEO/AEO/GEO final polish: direct answers, definitions, comparison tables, process, FAQs, problem/solution, entity-rich, internal linking across 3 langs
-- QA: full build (4,734 pages), sitemap validation, robots.txt, schema validation, mobile usability, accessibility (semantic HTML, keyboard, alt text, contrast), performance (Core Web Vitals, image optimization, lazy loading, bundle guard), cleanup unused
+- QA: full build (~5,900 pages), sitemap validation, robots.txt, schema validation, mobile usability, accessibility (semantic HTML, keyboard, alt text, contrast), performance (Core Web Vitals, image optimization, lazy loading, bundle guard), cleanup unused
 
 ## Blocked
 
-- None yet - awaiting business verification for any new pricing claims
+- None - no new pricing/claims introduced this session. New painting subservices use "On Quote" or the verified interior-room rate, so no business verification pending.
+- (Env note) node_modules was not present in the sandbox at session start; reinstalled via `npm install` to run audits/build.
 
 ## Files Changed This Session
 
@@ -950,9 +965,20 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 - Generated files: config/service-nav.generated.ts, config/service-summary.generated.ts, config/quote-catalog.generated.ts, config/content-nav.generated.ts, config/problem-nav.generated.ts, config/area-nav.generated.ts, config/dedicated-tool-cards.generated.ts, lib/estimator/rate-book.generated.ts, public/llms.txt, public/llms-full.txt, public/aeo-faq.txt, public/site-summary.json (31 services)
 - RENOVATION_EXPANSION_PLAN.md (updated with completed tasks, 3-language tracking, QA status)
 
+**Session 2 (this session):**
+
+- config/services-data.ts (enhanced painting service 4→8 subservices: added Condo & Apartment Painting, Ceiling Painting, Wall Preparation & Priming, Feature Wall Painting — EN/MS/ZH)
+- config/specialty-locale-content.ts (added 4 new painting specialty entries with real native MS/ZH content — total 130 specialties × 2 = 260 blocks)
+- config/topical-authority-map.ts (registered 4 new painting specialties with relatedProblems + relatedBlogs)
+- Generated files (regenerated via prebuild): config/quote-catalog.generated.ts, config/service-summary.generated.ts, lib/estimator/rate-book.generated.ts, public/llms-full.txt, public/site-summary.json
+- docs/seo-audit-report.md (regenerated by seo:audit)
+- RENOVATION_EXPANSION_PLAN.md (Session 2 progress + QA)
+
 ## Files Created This Session
 
 - RENOVATION_EXPANSION_PLAN.md (initial creation + updates)
+
+_Note (Session 2): No new tracked files created — all work was additive edits to existing config + regenerated generated files. node_modules was freshly installed in the sandbox to run audits/build (not tracked). docs/seo-audit-report.md is tracked and was regenerated by the seo:audit script._
 
 ## Files Deleted This Session
 
@@ -960,14 +986,15 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 
 ## QA Status
 
-- Build: ✅ PASS (gen:rates, gen:service-summary, gen:ai-context PASS, 4,734 indexable pages generated)
-- TypeScript: ✅ PASS (0 errors via ./node_modules/.bin/tsc --noEmit)
+- Build: ✅ PASS (prebuild + full `next build` — ~5,900 rendered pages incl. 8 EN/8 MS/8 ZH painting subservice pages)
+- TypeScript: ✅ PASS (0 errors via `npm run type-check` / tsc --noEmit)
 - ESLint: ✅ PASS (0 warnings via npm run lint)
-- Routes: ✅ PASS (31 services, 126 specialties with MS/ZH twins, 46 tools × 3 locales, sitemap includes 31 services with hreflang clusters)
-- SEO: ✅ PASS (service-seo for new services, buildMetadata with languageUrls, optimizeTitle/Description, canonical, Open Graph, hreflang real clusters)
-- Sitemap: ✅ PASS (sitemap.ts auto-includes 31 services + 126 specialty twins + 46 tools × 3 locales = 4,734 pages, site-summary.json verified)
+- Routes: ✅ PASS (31 services, 130 specialties with MS/ZH twins, 46 tools × 3 locales, sitemap includes 31 services with hreflang clusters)
+- SEO: ✅ PASS (seo:audit PASS → docs/seo-audit-report.md regenerated; buildMetadata with languageUrls, optimizeTitle/Description, canonical, Open Graph, hreflang real clusters for new painting specialties)
+- Sitemap: ✅ PASS (sitemap.ts auto-includes 31 services + 130 specialty twins + 46 tools × 3 locales, site-summary.json verified via prebuild)
 - Schema: ✅ PASS (Service schema with OfferCatalog, FAQPage, BreadcrumbList, HowTo, Speakable, Organization, LocalBusiness, WebSite — no fake reviews/ratings)
-- Multilingual: ✅ PASS (audit:i18n 1085 keys × 3 locales PASS, audit:specialty-locale 126×2 PASS, audit:problem-i18n 74×2 PASS, test:estimators 177 keys × 3 locales for renovation-budget-calculator PASS)
+- Multilingual: ✅ PASS (audit:i18n 1085 keys × 3 locales PASS, audit:specialty-locale 130×2 = 260 blocks PASS, audit:problem-i18n PASS, test:estimators 332,771 assertions PASS, audit:topical-map 173 typed relationships PASS)
+- Internal Links: ✅ PASS (audit:links — 5,900 pages, 446,386 links, 0 broken targets)
 - Mobile: ✅ PASS (navbar mobile cluster compact, lg:flex mega-menu, no backdrop-blur WebKit bug)
 - Accessibility: ⏳ PENDING (semantic HTML, keyboard, labels, alt text, contrast, mobile usability — existing system uses semantic HTML, needs full check next session)
 - Performance: ✅ PASS (client bundle guard: service-nav.generated used instead of registry, no heavy content registry in client, 0 vulnerabilities)

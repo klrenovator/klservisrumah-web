@@ -61,7 +61,11 @@ export const servicesData: Record<string, ServiceDetail> = {
       { name: "Interior House Painting", price: "From RM 450 / room", desc: "Premium interior wall painting with low-odor, low-VOC washable paint." },
       { name: "Exterior House Painting", price: "From RM 2,200", desc: "Weatherproof, anti-fungal, and UV-resistant exterior coatings for ultimate protection." },
       { name: "Commercial & Office Painting", price: "On Quote", desc: "Corporate office layouts, shopfronts, and retail spaces painted on tight schedules with minimal business disruption." },
-      { name: "Wall Crack & Moisture Repair", price: "From RM 180", desc: "Sanding, skimming, structural crack filling, and applying premium moisture sealer primers." }
+      { name: "Wall Crack & Moisture Repair", price: "From RM 180", desc: "Sanding, skimming, structural crack filling, and applying premium moisture sealer primers." },
+      { name: "Condo & Apartment Painting", price: "From RM 450 / room", desc: "Full interior painting for condominiums and apartments, including walls, ceilings, and feature areas, with lift access planning and furniture protection." },
+      { name: "Ceiling Painting", price: "On Quote", desc: "Repainting interior ceilings with stain-blocking primers, mould treatment, and washable ceiling paint for a clean, bright finish." },
+      { name: "Wall Preparation & Priming", price: "On Quote", desc: "Professional surface preparation — cleaning, crack filling, sanding, sealing and priming — so topcoat paint adheres evenly and lasts longer." },
+      { name: "Feature Wall Painting", price: "On Quote", desc: "Designer feature wall finishes — accent colours, two-tone effects, textured and faux finishes — for living rooms, bedrooms, and accent areas." }
     ],
     process: [
       { step: "01", title: "Protect & Mask", desc: "We cover all furniture, floors, and electrical outlets with heavy-duty drop sheets and high-quality masking tape." },
@@ -99,7 +103,11 @@ export const servicesData: Record<string, ServiceDetail> = {
           { name: "Pengecatan Rumah Interior", price: "Dari RM 450 / bilik", desc: "Pengecatan dinding interior premium dengan cat boleh dicuci berbau rendah, VOC rendah." },
           { name: "Pengecatan Rumah Eksterior", price: "Dari RM 2,200", desc: "Salutan eksterior tahan cuaca, anti-kulat, dan tahan UV untuk perlindungan optimum." },
           { name: "Pengecatan Komersial & Pejabat", price: "Atas Sebut Harga", desc: "Susun atur pejabat korporat, kedai depan, dan ruang runcit dicat mengikut jadual ketat dengan gangguan perniagaan minimum." },
-          { name: "Pembaikan Retak & Lembapan Dinding", price: "Dari RM 180", desc: "Pengamplasan, pengapan, pengisian retak struktur, dan penyapuan primer penyekat lembapan premium." }
+          { name: "Pembaikan Retak & Lembapan Dinding", price: "Dari RM 180", desc: "Pengamplasan, pengapan, pengisian retak struktur, dan penyapuan primer penyekat lembapan premium." },
+          { name: "Pengecatan Kondominium & Apartmen", price: "Dari RM 450 / bilik", desc: "Pengecatan dalaman penuh untuk kondominium dan apartmen, termasuk dinding, siling dan kawasan ciri, dengan perancangan akses lif serta perlindungan perabot." },
+          { name: "Pengecatan Siling", price: "Atas Sebut Harga", desc: "Mengecat semula siling dalaman dengan primer penyekat kesan air, rawatan kulat dan cat siling boleh basuh untuk kemasan yang bersih dan cerah." },
+          { name: "Persediaan & Primer Dinding", price: "Atas Sebut Harga", desc: "Persediaan permukaan profesional—membersihkan, mengisi retakan, mengamplas, menyekat dan menyapu primer—supaya cat topcoat melekat sekata dan tahan lama." },
+          { name: "Pengecatan Dinding Ciri", price: "Atas Sebut Harga", desc: "Kemasan dinding ciri berpereka—warna aksen, kesan dua nada, tekstur dan kemasan tiruan—untuk ruang tamu, bilik tidur dan kawasan aksen." }
         ],
         process: [
           { step: "01", title: "Lindung & Tampal", desc: "Kami menutup semua perabot, lantai, dan salur keluar elektrik dengan kain penutup berat dan pita pelekat berkualiti tinggi." },
@@ -136,7 +144,11 @@ export const servicesData: Record<string, ServiceDetail> = {
           { name: "室内房屋油漆", price: "从 RM 450 / 房间起", desc: "使用低气味、低 VOC 可水洗涂料进行优质室内墙面油漆。" },
           { name: "室外房屋油漆", price: "从 RM 2,200 起", desc: "防风雨、防霉菌、抗紫外线的外墙涂层，提供终极保护。" },
           { name: "商业与办公室油漆", price: "依报价", desc: "在紧凑的时间表内为企业办公室布局、店面和零售空间上漆，将业务干扰降至最低。" },
-          { name: "墙面裂缝与防潮修复", price: "从 RM 180 起", desc: "打磨、批灰、结构性裂缝填补，以及涂抹优质防潮密封底漆。" }
+          { name: "墙面裂缝与防潮修复", price: "从 RM 180 起", desc: "打磨、批灰、结构性裂缝填补，以及涂抹优质防潮密封底漆。" },
+          { name: "公寓与组屋油漆", price: "从 RM 450 / 房间起", desc: "为公寓与组屋提供完整的室内油漆服务，包括墙面、天花板与特色区域，规划电梯通行并保护家具。" },
+          { name: "天花板油漆", price: "依报价", desc: "重新粉刷室内天花板，使用防污封闭底漆、霉菌处理与可擦洗天花板涂料，带来干净明亮的效果。" },
+          { name: "墙面处理与底漆", price: "依报价", desc: "专业表面处理——清洁、填补裂缝、打磨、封闭并涂刷底漆——让面漆附着均匀且更持久。" },
+          { name: "特色墙面油漆", price: "依报价", desc: "设计师特色墙面饰面——强调色、双色效果、质感与仿真饰面——适用于客厅、卧室与重点区域。" }
         ],
         process: [
           { step: "01", title: "保护与遮蔽", desc: "我们用重型防护布和优质遮蔽胶带覆盖所有家具、地板与电源插座。" },

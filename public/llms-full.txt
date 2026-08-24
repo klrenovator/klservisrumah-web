@@ -36,6 +36,10 @@ All prices are the published starting prices shown on the live service pages. Fi
 - Exterior House Painting — From RM 2,200
 - Commercial & Office Painting — On Quote
 - Wall Crack & Moisture Repair — From RM 180
+- Condo & Apartment Painting — From RM 450 / room
+- Ceiling Painting — On Quote
+- Wall Preparation & Priming — On Quote
+- Feature Wall Painting — On Quote
 - Cost guide: https://www.klservisrumah.my/services/painting/cost
 
 ### Plumbing & Leak Repair Services
@@ -825,6 +829,6 @@ KL Servis Rumah publishes fair, upfront pricing benchmarked against the Klang Va
 - Sitemap: https://www.klservisrumah.my/sitemap.xml
 
 ## Scale
-- 31 services · 169 sub-services
+- 31 services · 173 sub-services
 - 37 area pages · 86 problem pages · 229 articles
-- 4,738 indexable pages listed in the sitemap
+- 4,750 indexable pages listed in the sitemap

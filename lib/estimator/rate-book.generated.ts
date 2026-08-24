@@ -191,12 +191,31 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
         "unit": "job",
         "published": "From RM 180",
         "desc": "Sanding, skimming, structural crack filling, and applying premium moisture sealer primers."
+      },
+      {
+        "name": "Condo & Apartment Painting",
+        "amount": 450,
+        "unit": "room",
+        "published": "From RM 450 / room",
+        "desc": "Full interior painting for condominiums and apartments, including walls, ceilings, and feature areas, with lift access planning and furniture protection."
       }
     ],
     "quoteOnly": [
       {
         "name": "Commercial & Office Painting",
         "desc": "Corporate office layouts, shopfronts, and retail spaces painted on tight schedules with minimal business disruption."
+      },
+      {
+        "name": "Ceiling Painting",
+        "desc": "Repainting interior ceilings with stain-blocking primers, mould treatment, and washable ceiling paint for a clean, bright finish."
+      },
+      {
+        "name": "Wall Preparation & Priming",
+        "desc": "Professional surface preparation — cleaning, crack filling, sanding, sealing and priming — so topcoat paint adheres evenly and lasts longer."
+      },
+      {
+        "name": "Feature Wall Painting",
+        "desc": "Designer feature wall finishes — accent colours, two-tone effects, textured and faux finishes — for living rooms, bedrooms, and accent areas."
       }
     ]
   },
