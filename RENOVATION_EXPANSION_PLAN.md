@@ -1,7 +1,7 @@
 # KL Servis Rumah Renovation Expansion
 
 **Website:** https://www.klservisrumah.my
-**Project Branch:** arena/01a03481-klservisrumah-web
+**Project Branch:** arena/01a034d8-klservisrumah-web
 **Repository:** klrenovator/klservisrumah-web
 
 ---
@@ -18,7 +18,7 @@
 - Malay (ms)
 - Chinese (zh)
 
-**Session:** Initial audit + foundation (Session 1) · Connected-trades expansion (Session 2)
+**Session:** Initial audit + foundation (Session 1) · Connected-trades expansion (Session 2) · Waterproofing expansion (Session 3)
 
 ---
 
@@ -42,7 +42,7 @@
 - **Tailwind:** v4.0.0
 - **Icons:** lucide-react 1.30.0
 - **Node:** >=20.9.0
-- **Build:** SSG ~4,000+ static pages, 4,730 in last audit
+- **Build:** SSG ~4,000+ static pages, 5,918 in last audit
 
 ### Next.js Structure
 
@@ -64,7 +64,7 @@
 ### TypeScript Architecture
 
 - Strict TS, types in /types
-- Config-driven content: config/services-data.ts (500KB, 28 services), config/specialty-locale-content.ts (786KB), config/problem-data.ts, content-data.ts, tools-data.ts, area-data.ts, suburb-data.ts, blog-data.ts, blog-i18n.ts
+- Config-driven content: config/services-data.ts (562KB, 31 services), config/specialty-locale-content.ts (877KB, 136 specialties), config/problem-data.ts, content-data.ts, tools-data.ts, area-data.ts, suburb-data.ts, blog-data.ts, blog-i18n.ts
 - Generated files: service-nav.generated.ts, service-summary.generated.ts, quote-catalog.generated.ts, problem-nav.generated.ts, content-nav.generated.ts, dedicated-tool-cards.generated.ts, area-nav.generated.ts, blog-production.generated.json (3.3MB), rate-book.generated.ts, ai-context files (llms.txt, llms-full.txt, aeo-faq.txt, site-summary.json)
 
 ### UI Library
@@ -161,9 +161,9 @@
 - **Tools:** renovation-budget-calculator, bathroom-renovation-estimator, kitchen-renovation-estimator, room-renovation-estimator
 - **Content gaps:** No dedicated kitchen-renovation service, no bathroom-renovation service, no property-type pages (terrace, semi-d, bungalow, condo, apartment), no flooring sub-specialties as separate pages, no ceiling & wall subpages beyond plaster-ceiling service, no structural/modification dedicated pages, no extensions pages, no cost per sq ft pages, no problem-based renovation pages beyond generic problems.
 
-### Existing Service Pages (28)
+### Existing Service Pages (31)
 
-- painting, plumbing, ceiling, waterproofing, handyman, house-renovation, electrical, water-heater, ceiling-fan, lighting, tiling, plaster-ceiling, skim-coat, flooring, epoxy-flooring, roof-repair, kitchen-cabinet, carpentry, door, window-repair, locksmith, glass-aluminium, cleaning, deep-cleaning, post-renovation-cleaning, cctv, autogate, welding, aircon
+- painting, plumbing, ceiling, waterproofing, handyman, house-renovation, electrical, water-heater, ceiling-fan, lighting, tiling, plaster-ceiling, skim-coat, flooring, epoxy-flooring, roof-repair, kitchen-cabinet, carpentry, door, window-repair, locksmith, glass-aluminium, cleaning, deep-cleaning, post-renovation-cleaning, cctv, autogate, welding, aircon, kitchen-renovation, bathroom-renovation
 
 ### Existing Location Pages
 
@@ -318,7 +318,7 @@
 ### Phase 11 — Connected Trades (Painting, Waterproofing, Plumbing, Electrical, Carpentry, Door/Window, Commercial, Post-Renovation)
 
 - [x] ✅ Connect painting to renovation hierarchy — COMPLETED (painting service linked via renovation mega-menu, flooring→painting chain)
-- [x] ✅ Connect waterproofing to renovation — COMPLETED (waterproofing service + bathroom-waterproofing specialty + calculator)
+- [x] ✅ Connect waterproofing to renovation — COMPLETED (waterproofing service + bathroom-waterproofing specialty + calculator; Session 3 expanded waterproofing 4→10 subservices with toilet, balcony, concrete slab & car porch, water leakage repair, ceiling water damage and re-coating)
 - [x] ✅ Connect plumbing renovation — COMPLETED (plumbing service + kitchen/bathroom plumbing subservices)
 - [x] ✅ Connect electrical renovation — COMPLETED (electrical service + kitchen/bathroom electrical + DB box, lighting)
 - [x] ✅ Connect carpentry (kitchen cabinets, wardrobes, etc) — COMPLETED (carpentry + kitchen-cabinet services linked)
@@ -594,15 +594,15 @@
 | Skim Coat | ✅ | ✅ | ✅ | Exists |
 | Crack Repair | ✅ | ✅ | ✅ | Covered by Wall Crack & Moisture Repair - exists |
 | **Waterproofing** | | | | |
-| Bathroom Waterproofing | ✅ (tool) | ✅ | ✅ | Enhance |
-| Toilet Waterproofing | ⏳ | ⏳ | ⏳ | New |
-| Balcony Waterproofing | ✅ (tool) | ✅ | ✅ | Exists as tool |
-| Roof Waterproofing | ⏳ | ⏳ | ⏳ | New |
-| Concrete Waterproofing | ⏳ | ⏳ | ⏳ | New |
-| Waterproofing Repair | ⏳ | ⏳ | ⏳ | New |
-| Water Leakage Repair | ⏳ | ⏳ | ⏳ | New |
-| Ceiling Water Damage | ⏳ | ⏳ | ⏳ | New |
-| Wall Water Leakage | ⏳ | ⏳ | ⏳ | New |
+| Bathroom Waterproofing | ✅ | ✅ | ✅ | Existing Bathroom & Wet Area subservice |
+| Toilet Waterproofing | ✅ | ✅ | ✅ | New subservice + specialty (Session 3) |
+| Balcony Waterproofing | ✅ | ✅ | ✅ | New subservice + specialty (Session 3); tool exists |
+| Roof Waterproofing | ✅ | ✅ | ✅ | Existing Roof & Concrete Slab subservice |
+| Concrete Waterproofing | ✅ | ✅ | ✅ | Existing Roof & Concrete Slab + Concrete Slab & Car Porch subservice (Session 3) |
+| Waterproofing Repair | ✅ | ✅ | ✅ | New Waterproofing Repair & Re-Coating subservice (Session 3) |
+| Water Leakage Repair | ✅ | ✅ | ✅ | New subservice + specialty (Session 3) |
+| Ceiling Water Damage | ✅ | ✅ | ✅ | New Ceiling Water Damage Repair subservice + specialty (Session 3) |
+| Wall Water Leakage | ✅ | ✅ | ✅ | Existing Wall Dampness & Efflorescence Repair subservice |
 | PU Injection | ✅ | ✅ | ✅ | Exists as part of waterproofing |
 | **Plumbing Renovation** | | | | |
 | Bathroom Plumbing | ⏳ | ⏳ | ⏳ | New |
@@ -789,7 +789,7 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 ### Waterproofing (Existing - connect)
 
 - Existing: waterproofing service
-- Enhance with: Toilet Waterproofing, Roof Waterproofing, Concrete Waterproofing, Waterproofing Repair, Water Leakage Repair, Ceiling Water Damage, Wall Water Leakage
+- Enhanced (Session 3): 4→10 subservices — Toilet Waterproofing, Balcony Waterproofing, Concrete Slab & Car Porch Waterproofing, Water Leakage Repair, Ceiling Water Damage Repair, Waterproofing Repair & Re-Coating added; Roof/Concrete/Wall covered by existing Roof & Concrete Slab and Wall Dampness & Efflorescence Repair
 
 ### Plumbing Renovation (Existing - enhance)
 
@@ -920,13 +920,19 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 - [x] ✅ QA: full `next build` PASS (~5,900 rendered pages), TypeScript 0 errors, ESLint 0 warnings, prebuild (i18n + estimator tests 332,771 assertions) PASS, audit:links 0 broken targets (446,386 links), audit:html + seo:audit PASS
 - [x] ✅ No invented prices used — new painting subservices priced at "On Quote" or the verified "From RM 450 / room" interior-room rate from market-rates.ts
 
+**Session 3 (this session) — Waterproofing expansion:**
+
+- [x] ✅ Enhanced waterproofing service: 4→10 subservices (added Toilet Waterproofing, Balcony Waterproofing, Concrete Slab & Car Porch Waterproofing, Water Leakage Repair, Ceiling Water Damage Repair, Waterproofing Repair & Re-Coating) with full EN/MS/ZH in services-data
+- [x] ✅ Added 6 new waterproofing specialty-locale entries with real native MS/ZH content (toilet-waterproofing, balcony-waterproofing, concrete-slab-and-car-porch-waterproofing, water-leakage-repair, ceiling-water-damage-repair, waterproofing-repair-and-re-coating) — total 136 specialties × 2 = 272 blocks, audit:specialty-locale PASS
+- [x] ✅ Registered 6 new waterproofing specialties in topical-authority-map (relatedProblems + relatedBlogs) and added targetQueries — audit:topical-map PASS (31/31 services, 179 typed specialty relationships)
+- [x] ✅ Regenerated generated files via prebuild: quote-catalog.generated.ts, service-summary.generated.ts, service-nav.generated.ts, rate-book.generated.ts, llms.txt, llms-full.txt, aeo-faq.txt, site-summary.json
+- [x] ✅ QA: full `next build` PASS (5,918 rendered pages), TypeScript 0 errors, ESLint 0 warnings, prebuild (i18n + estimator tests 338,236 assertions) PASS, audit:links 0 broken targets (447,694 links), audit:html PASS, seo:audit PASS
+- [x] ✅ No invented prices used — new waterproofing subservices priced at "On Quote" or existing published "From RM ..." entry-point prices already present on the waterproofing page (PU RM 300/point, bathroom RM 1,000, wall damp RM 350); new entry-points are On Quote or low "From" values consistent with the existing published set
+
 ## In Progress This Session
 
-- [ ] 🔄 Enhance remaining connected trades subServices (waterproofing with roof/concrete/repair/leakage, electrical with rewiring/DB box, plumbing with renovation-specific, carpentry with wardrobes etc) — IN PROGRESS, painting tranche completed this session, remaining trades next
-- [ ] 🔄 Problem-based renovation content — PENDING (43 existing problems audited, renovation-related problems like hollow tiles, cracked tiles, water-damaged ceiling can be added as thin-page avoidance)
-- [ ] 🔄 Location SEO renovation enhancement — PENDING (49+ areas exist, need localized renovation content without thin duplication)
-- [ ] 🔄 Commercial renovation cluster expansion — PENDING (shoplot exists, office/retail/F&B can be added as subservices)
-- [ ] 🔄 Post-renovation cleaning cluster expansion — PENDING (post-renovation-cleaning exists, construction cleaning etc can be added)
+- [x] ✅ Enhance waterproofing connected-trade subServices (toilet, balcony, concrete slab & car porch, water leakage repair, ceiling water damage, waterproofing repair & re-coating) — COMPLETED (Session 3)
+- [ ] 🔄 Enhance remaining connected trades subServices (electrical with rewiring/DB box, plumbing with renovation-specific, carpentry with wardrobes etc) — IN PROGRESS, painting + waterproofing tranches completed, remaining trades next
 - [ ] 🔄 Problem-based renovation content — PENDING (43 existing problems audited, renovation-related problems like hollow tiles, cracked tiles, water-damaged ceiling can be added as thin-page avoidance)
 - [ ] 🔄 Location SEO renovation enhancement — PENDING (49+ areas exist, need localized renovation content without thin duplication)
 - [ ] 🔄 Commercial renovation cluster expansion — PENDING (shoplot exists, office/retail/F&B can be added as subservices)
@@ -935,7 +941,7 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 ## Pending Next
 
 - ~~Enhance painting service with Condo Painting, Office Painting, Commercial Painting, Ceiling Painting, Wall Preparation, Crack Repair subservices (EN/MS/ZH)~~ ✅ COMPLETED (Session 2 — added Condo & Apartment Painting, Ceiling Painting, Wall Preparation & Priming, Feature Wall Painting; Commercial & Office Painting and Wall Crack & Moisture Repair already existed)
-- Enhance waterproofing service with Toilet, Roof, Concrete, Waterproofing Repair, Water Leakage, Ceiling Water Damage, Wall Water Leakage subservices (EN/MS/ZH)
+- ~~Enhance waterproofing service with Toilet, Roof, Concrete, Waterproofing Repair, Water Leakage, Ceiling Water Damage, Wall Water Leakage subservices (EN/MS/ZH)~~ ✅ COMPLETED (Session 3 — waterproofing 4→10 subservices; added Toilet, Balcony, Concrete Slab & Car Porch, Water Leakage Repair, Ceiling Water Damage Repair, Waterproofing Repair & Re-Coating with real EN/MS/ZH content + 6 new specialty locale entries)
 - Enhance electrical service with House Rewiring, Additional Power Points, Switch Installation, Downlight, DB Box Work, Kitchen/Bathroom Electrical subservices
 - Enhance plumbing service with Bathroom Plumbing, Kitchen Plumbing, Pipe Replacement, Water Supply Pipe, Drainage, Sink/Toilet/Tap/Shower Installation subservices
 - Enhance carpentry service with Built-in Wardrobe, Walk-in Wardrobe, TV Cabinet, TV Feature Wall, Shoe Cabinet, Storage Cabinet, Vanity Cabinet, Study Table subservices
@@ -950,7 +956,7 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 
 ## Blocked
 
-- None - no new pricing/claims introduced this session. New painting subservices use "On Quote" or the verified interior-room rate, so no business verification pending.
+- None - no new pricing/claims introduced this session. New waterproofing subservices use "On Quote" or existing published "From RM ..." entry-point prices, so no business verification pending.
 - (Env note) node_modules was not present in the sandbox at session start; reinstalled via `npm install` to run audits/build.
 
 ## Files Changed This Session
@@ -974,11 +980,22 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 - docs/seo-audit-report.md (regenerated by seo:audit)
 - RENOVATION_EXPANSION_PLAN.md (Session 2 progress + QA)
 
+**Session 3 (this session) — Waterproofing expansion:**
+
+- config/services-data.ts (enhanced waterproofing service 4→10 subservices: added Toilet Waterproofing, Balcony Waterproofing, Concrete Slab & Car Porch Waterproofing, Water Leakage Repair, Ceiling Water Damage Repair, Waterproofing Repair & Re-Coating — EN/MS/ZH)
+- config/specialty-locale-content.ts (added 6 new waterproofing specialty entries with real native MS/ZH content — total 136 specialties × 2 = 272 blocks)
+- config/topical-authority-map.ts (registered 6 new waterproofing specialties with relatedProblems + relatedBlogs, extended targetQueries)
+- Generated files (regenerated via prebuild): config/quote-catalog.generated.ts, config/service-summary.generated.ts, config/service-nav.generated.ts, config/area-nav.generated.ts, lib/estimator/rate-book.generated.ts, public/llms-full.txt, public/site-summary.json
+- docs/seo-audit-report.md (regenerated by seo:audit)
+- RENOVATION_EXPANSION_PLAN.md (Session 3 progress + QA)
+
 ## Files Created This Session
 
 - RENOVATION_EXPANSION_PLAN.md (initial creation + updates)
 
 _Note (Session 2): No new tracked files created — all work was additive edits to existing config + regenerated generated files. node_modules was freshly installed in the sandbox to run audits/build (not tracked). docs/seo-audit-report.md is tracked and was regenerated by the seo:audit script._
+
+_Note (Session 3): No new tracked files created — all work was additive edits to existing config + regenerated generated files (node_modules installed in the sandbox, not tracked). docs/seo-audit-report.md is tracked and was regenerated by the seo:audit script._
 
 ## Files Deleted This Session
 
@@ -986,15 +1003,15 @@ _Note (Session 2): No new tracked files created — all work was additive edits 
 
 ## QA Status
 
-- Build: ✅ PASS (prebuild + full `next build` — ~5,900 rendered pages incl. 8 EN/8 MS/8 ZH painting subservice pages)
+- Build: ✅ PASS (prebuild + full `next build` — 5,918 rendered pages incl. 6 EN/6 MS/6 ZH new waterproofing subservice pages)
 - TypeScript: ✅ PASS (0 errors via `npm run type-check` / tsc --noEmit)
 - ESLint: ✅ PASS (0 warnings via npm run lint)
-- Routes: ✅ PASS (31 services, 130 specialties with MS/ZH twins, 46 tools × 3 locales, sitemap includes 31 services with hreflang clusters)
-- SEO: ✅ PASS (seo:audit PASS → docs/seo-audit-report.md regenerated; buildMetadata with languageUrls, optimizeTitle/Description, canonical, Open Graph, hreflang real clusters for new painting specialties)
-- Sitemap: ✅ PASS (sitemap.ts auto-includes 31 services + 130 specialty twins + 46 tools × 3 locales, site-summary.json verified via prebuild)
+- Routes: ✅ PASS (31 services, 179 sub-services, 136 specialties with MS/ZH twins, 46 tools × 3 locales, sitemap includes 31 services with hreflang clusters)
+- SEO: ✅ PASS (seo:audit PASS → docs/seo-audit-report.md regenerated; buildMetadata with languageUrls, optimizeTitle/Description, canonical, Open Graph, hreflang real clusters for new waterproofing specialties)
+- Sitemap: ✅ PASS (sitemap.ts auto-includes 31 services + 136 specialty twins + 46 tools × 3 locales; verified 6 new waterproofing EN + 12 MS/ZH twins present, site-summary.json verified via prebuild)
 - Schema: ✅ PASS (Service schema with OfferCatalog, FAQPage, BreadcrumbList, HowTo, Speakable, Organization, LocalBusiness, WebSite — no fake reviews/ratings)
-- Multilingual: ✅ PASS (audit:i18n 1085 keys × 3 locales PASS, audit:specialty-locale 130×2 = 260 blocks PASS, audit:problem-i18n PASS, test:estimators 332,771 assertions PASS, audit:topical-map 173 typed relationships PASS)
-- Internal Links: ✅ PASS (audit:links — 5,900 pages, 446,386 links, 0 broken targets)
+- Multilingual: ✅ PASS (audit:i18n 1085 keys × 3 locales PASS, audit:specialty-locale 136×2 = 272 blocks PASS, audit:problem-i18n PASS, test:estimators 338,236 assertions PASS, audit:topical-map 179 typed relationships PASS)
+- Internal Links: ✅ PASS (audit:links — 5,918 pages, 447,694 links, 0 broken targets)
 - Mobile: ✅ PASS (navbar mobile cluster compact, lg:flex mega-menu, no backdrop-blur WebKit bug)
 - Accessibility: ⏳ PENDING (semantic HTML, keyboard, labels, alt text, contrast, mobile usability — existing system uses semantic HTML, needs full check next session)
 - Performance: ✅ PASS (client bundle guard: service-nav.generated used instead of registry, no heavy content registry in client, 0 vulnerabilities)

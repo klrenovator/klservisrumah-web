@@ -258,6 +258,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
       },
       {
         "name": "Wall Dampness & Efflorescence Repair"
+      },
+      {
+        "name": "Toilet Waterproofing"
+      },
+      {
+        "name": "Balcony Waterproofing"
+      },
+      {
+        "name": "Concrete Slab & Car Porch Waterproofing"
+      },
+      {
+        "name": "Water Leakage Repair"
+      },
+      {
+        "name": "Ceiling Water Damage Repair"
+      },
+      {
+        "name": "Waterproofing Repair & Re-Coating"
       }
     ],
     "warranty": "Up to 5-Year Written Leak-Free Guarantee",
@@ -277,6 +295,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
           },
           {
             "name": "Pembaikan Lembapan Dinding & Kesan Garam"
+          },
+          {
+            "name": "Kalis Air Tandas"
+          },
+          {
+            "name": "Kalis Air Balkoni"
+          },
+          {
+            "name": "Kalis Air Slab Konkrit & Porch Kereta"
+          },
+          {
+            "name": "Pembaikan Kebocoran Air"
+          },
+          {
+            "name": "Pembaikan Siling Rosak Air"
+          },
+          {
+            "name": "Pembaikan & Sapu Semula Kalis Air"
           }
         ],
         "warranty": "Jaminan Bebas Bocor Bertulis Sehingga 5 Tahun"
@@ -296,6 +332,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
           },
           {
             "name": "墙面潮湿与盐析修复"
+          },
+          {
+            "name": "马桶防水"
+          },
+          {
+            "name": "阳台防水"
+          },
+          {
+            "name": "混凝土板与车棚防水"
+          },
+          {
+            "name": "漏水修复"
+          },
+          {
+            "name": "天花板水损修复"
+          },
+          {
+            "name": "防水层维修与重涂"
           }
         ],
         "warranty": "长达 5 年书面防漏保证"
