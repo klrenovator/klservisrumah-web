@@ -561,6 +561,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
       },
       {
         "name": "Aircond, Water Heater & Oven Point"
+      },
+      {
+        "name": "House Rewiring"
+      },
+      {
+        "name": "Additional Power Points"
+      },
+      {
+        "name": "Switch Installation"
+      },
+      {
+        "name": "Kitchen Electrical"
+      },
+      {
+        "name": "Bathroom Electrical"
+      },
+      {
+        "name": "Renovation Electrical Work"
       }
     ],
     "warranty": "12-Month Electrical Workmanship Warranty",
@@ -580,6 +598,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
           },
           {
             "name": "Titik Aircond, Pemanas Air & Ketuhar"
+          },
+          {
+            "name": "Pendawaian Semula Rumah"
+          },
+          {
+            "name": "Power Point Tambahan"
+          },
+          {
+            "name": "Pemasangan Suis"
+          },
+          {
+            "name": "Elektrik Dapur"
+          },
+          {
+            "name": "Elektrik Bilik Mandi"
+          },
+          {
+            "name": "Kerja Elektrik Pengubahsuaian"
           }
         ],
         "warranty": "Jaminan Kerja Elektrik 12 Bulan"
@@ -599,6 +635,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
           },
           {
             "name": "空调、热水器与烤箱点位"
+          },
+          {
+            "name": "全屋重新布线"
+          },
+          {
+            "name": "新增电源插座"
+          },
+          {
+            "name": "开关安装"
+          },
+          {
+            "name": "厨房电路"
+          },
+          {
+            "name": "卫生间电路"
+          },
+          {
+            "name": "装修电气工程"
           }
         ],
         "warranty": "12 个月电工工艺保修"

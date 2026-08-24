@@ -814,6 +814,36 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
         "name": "Aircond, Water Heater & Oven Point",
         "price": "From RM 220 / point",
         "desc": "Heavy-load 20A–32A dedicated points with proper isolator and cable sizing per appliance."
+      },
+      {
+        "name": "House Rewiring",
+        "price": "From RM 2,200",
+        "desc": "Full or partial house rewiring for old terrace, condo and bungalow homes, with insulation and earth-loop testing."
+      },
+      {
+        "name": "Additional Power Points",
+        "price": "From RM 150 / point",
+        "desc": "Extra 13A sockets during renovation — living, bedroom, study and kitchen island points on existing or new circuits."
+      },
+      {
+        "name": "Switch Installation",
+        "price": "From RM 150 / point",
+        "desc": "New or replacement switches, two-way switching, dimmers and smart-switch retrofit on existing lighting circuits."
+      },
+      {
+        "name": "Kitchen Electrical",
+        "price": "From RM 220 / point",
+        "desc": "Oven, hob, hood, dishwasher and extra 13A/15A kitchen points coordinated with cabinet and countertop layout."
+      },
+      {
+        "name": "Bathroom Electrical",
+        "price": "From RM 220 / point",
+        "desc": "Water heater, exhaust fan, lighting and shaver-point wiring for wet areas, with isolator and IP-rated accessories."
+      },
+      {
+        "name": "Renovation Electrical Work",
+        "price": "On Quote",
+        "desc": "Rough-in and first-fix electrical for house, kitchen and bathroom renovation — new circuits, DB planning and testing."
       }
     ],
     "i18n": {
@@ -841,6 +871,36 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "name": "Titik Aircond, Pemanas Air & Ketuhar",
             "price": "Dari RM 220 / point",
             "desc": "Titik beban berat 20A–32A khusus dengan isolator dan saiz kabel yang betul setiap perkakas."
+          },
+          {
+            "name": "Pendawaian Semula Rumah",
+            "price": "Dari RM 2,200",
+            "desc": "Pendawaian semula penuh atau separa untuk rumah teres, kondominium dan banglo lama, dengan ujian penebat dan gelung bumi."
+          },
+          {
+            "name": "Power Point Tambahan",
+            "price": "Dari RM 150 / point",
+            "desc": "Soket 13A tambahan semasa pengubahsuaian — ruang tamu, bilik tidur, bilik belajar dan island dapur pada litar sedia ada atau baru."
+          },
+          {
+            "name": "Pemasangan Suis",
+            "price": "Dari RM 150 / point",
+            "desc": "Suis baharu atau gantian, suis dua hala, dimmer dan retrofit suis pintar pada litar lampu sedia ada."
+          },
+          {
+            "name": "Elektrik Dapur",
+            "price": "Dari RM 220 / point",
+            "desc": "Titik ketuhar, hob, hood, dishwasher dan tambahan 13A/15A dapur diselaraskan dengan susun atur kabinet dan countertop."
+          },
+          {
+            "name": "Elektrik Bilik Mandi",
+            "price": "Dari RM 220 / point",
+            "desc": "Pendawaian pemanas air, kipas ekzos, pencahayaan dan titik pencukur untuk kawasan basah, dengan isolator dan aksesori berkadar IP."
+          },
+          {
+            "name": "Kerja Elektrik Pengubahsuaian",
+            "price": "Atas Sebut Harga",
+            "desc": "Rough-in dan first-fix elektrik untuk pengubahsuaian rumah, dapur dan bilik mandi — litar baharu, perancangan DB dan ujian."
           }
         ]
       },
@@ -868,6 +928,36 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "name": "空调、热水器与烤箱点位",
             "price": "从 RM 220 / 位起",
             "desc": "20A–32A 专用大功率点位，配备合适的隔离器与电缆规格。"
+          },
+          {
+            "name": "全屋重新布线",
+            "price": "从 RM 2,200 起",
+            "desc": "为老旧排屋、公寓与洋房进行全屋或局部重新布线，并做绝缘与接地回路测试。"
+          },
+          {
+            "name": "新增电源插座",
+            "price": "从 RM 150 / 位起",
+            "desc": "装修期间加装 13A 插座——客厅、卧室、书房与厨房中岛点位，接现有或新回路。"
+          },
+          {
+            "name": "开关安装",
+            "price": "从 RM 150 / 位起",
+            "desc": "新装或更换开关、双控、调光器与智能开关改造，接现有照明回路。"
+          },
+          {
+            "name": "厨房电路",
+            "price": "从 RM 220 / 位起",
+            "desc": "烤箱、灶具、油烟机、洗碗机与厨房额外 13A/15A 点位，配合橱柜与台面布局。"
+          },
+          {
+            "name": "卫生间电路",
+            "price": "从 RM 220 / 位起",
+            "desc": "湿区热水器、排气扇、照明与剃须插座布线，配隔离开关与 IP 等级配件。"
+          },
+          {
+            "name": "装修电气工程",
+            "price": "依报价",
+            "desc": "房屋、厨房与卫生间翻新的隐蔽与一次电气工程——新回路、配电规划与测试。"
           }
         ]
       }

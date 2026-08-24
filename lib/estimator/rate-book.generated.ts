@@ -495,9 +495,49 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
         "unit": "point",
         "published": "From RM 220 / point",
         "desc": "Heavy-load 20A–32A dedicated points with proper isolator and cable sizing per appliance."
+      },
+      {
+        "name": "House Rewiring",
+        "amount": 2200,
+        "unit": "job",
+        "published": "From RM 2,200",
+        "desc": "Full or partial house rewiring for old terrace, condo and bungalow homes, with insulation and earth-loop testing."
+      },
+      {
+        "name": "Additional Power Points",
+        "amount": 150,
+        "unit": "point",
+        "published": "From RM 150 / point",
+        "desc": "Extra 13A sockets during renovation — living, bedroom, study and kitchen island points on existing or new circuits."
+      },
+      {
+        "name": "Switch Installation",
+        "amount": 150,
+        "unit": "point",
+        "published": "From RM 150 / point",
+        "desc": "New or replacement switches, two-way switching, dimmers and smart-switch retrofit on existing lighting circuits."
+      },
+      {
+        "name": "Kitchen Electrical",
+        "amount": 220,
+        "unit": "point",
+        "published": "From RM 220 / point",
+        "desc": "Oven, hob, hood, dishwasher and extra 13A/15A kitchen points coordinated with cabinet and countertop layout."
+      },
+      {
+        "name": "Bathroom Electrical",
+        "amount": 220,
+        "unit": "point",
+        "published": "From RM 220 / point",
+        "desc": "Water heater, exhaust fan, lighting and shaver-point wiring for wet areas, with isolator and IP-rated accessories."
       }
     ],
-    "quoteOnly": []
+    "quoteOnly": [
+      {
+        "name": "Renovation Electrical Work",
+        "desc": "Rough-in and first-fix electrical for house, kitchen and bathroom renovation — new circuits, DB planning and testing."
+      }
+    ]
   },
   "water-heater": {
     "startPrice": 180,

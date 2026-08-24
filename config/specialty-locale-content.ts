@@ -2201,6 +2201,342 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       metaDesc: "吉隆坡与雪兰莪20A–32A空调、热水器、烤箱和EV充电桩专用点位。配置合适电缆、隔离开关并完成负载测试。",
     },
   },
+  "electrical/house-rewiring": {
+    ms: {
+      name: "Pendawaian Semula Rumah",
+      tagline: "Pendawaian semula penuh atau separa untuk rumah teres, kondominium dan banglo lama, dengan ujian penebat dan gelung bumi.",
+      description:
+        "Pendawaian semula rumah merawat kabel getah lama, soket tanpa bumi dan litar yang kerap trip. Juruelektrik berdaftar ST kami memeriksa jenis kabel, DB box dan beban sebenar, kemudian merancang pendawaian semula penuh atau separa mengikut keadaan rumah. Kerja merangkumi penarikan kabel baharu, penamatan aksesori piawai MS, pelabelan litar, serta ujian rintangan penebat, kekutuban, kesinambungan bumi dan masa trip RCD. Untuk kondominium, kami menyelaraskan waktu kerja dan perlindungan kawasan umum. Skop dan sebarang tempoh pemotongan bekalan diterangkan sebelum kerja bermula.",
+      highlights: [
+        "Pendawaian semula penuh atau separa mengikut keadaan rumah",
+        "Gantian kabel usang dan soket tanpa bumi",
+        "Ujian rintangan penebat, kekutuban, bumi dan RCD",
+        "Pelabelan litar untuk penyelenggaraan masa depan",
+        "Penyelarasan TNB atau pengurusan bangunan jika pemotongan diperlukan",
+      ],
+      process: [
+        { step: "01", title: "Audit Pendawaian", desc: "Kami memeriksa jenis kabel, DB box, soket, pembumian dan tanda panas atau trip yang berulang." },
+        { step: "02", title: "Cadangan Skop", desc: "Anda menerima cadangan pendawaian semula penuh atau separa, laluan kabel dan anggaran gangguan bekalan." },
+        { step: "03", title: "Penarikan Kabel", desc: "Kabel usang diganti melalui konduit, trunking atau dinding chased, dan setiap litar ditamatkan dengan kemas." },
+        { step: "04", title: "Ujian & Rekod", desc: "Kami menjalankan ujian elektrik, melabel litar, dan menyerahkan rekod ujian asas untuk simpanan anda." },
+      ],
+      faqs: [
+        { q: "Bilakah rumah perlu pendawaian semula penuh?", a: "Tanda biasa termasuk kabel getah lebih tua daripada 25 tahun, kotak fius tanpa RCCB, soket dua pin tanpa bumi, kerap trip, atau kesan hangus pada soket dan suis." },
+        { q: "Berapa harga pendawaian semula rumah?", a: "Harga bermula dari RM 2,200 untuk skop yang sepadan dengan naik taraf DB dan pendawaian semula yang diterbitkan. Sebut harga akhir bergantung pada saiz rumah, akses dan sama ada kerja penuh atau separa." },
+        { q: "Adakah kuasa akan terputus sepanjang kerja?", a: "Akan ada tempoh pemotongan ketika sambungan akhir. Kami memaklumkan jadualnya dan boleh menyelaraskan dengan TNB atau pengurusan bangunan jika perlu." },
+        { q: "Adakah anda memberikan rekod ujian?", a: "Ya. Kami menunjukkan keputusan ujian asas seperti rintangan penebat, kekutuban, pembumian dan trip RCD selepas siap." },
+      ],
+      metaTitle: "Pendawaian Semula Rumah KL & Selangor | Dari RM2,200",
+      metaDesc: "Pendawaian semula rumah teres, kondominium dan banglo lama di KL & Selangor. Ujian penebat, gelung bumi dan rekod ujian. Sebut harga telus.",
+    },
+    zh: {
+      name: "全屋重新布线",
+      tagline: "为老旧排屋、公寓与洋房进行全屋或局部重新布线，并做绝缘与接地回路测试。",
+      description:
+        "全屋重新布线用于处理老化橡胶电线、无接地插座以及频繁跳闸的回路。我们的 ST 注册电工会检查电线类型、配电箱与实际负荷，再按房屋状况规划全屋或局部重新布线。工程包括敷设新电缆、接入 MS 标准配件、回路贴标，以及绝缘电阻、极性、接地连续性与 RCD 跳闸时间测试。公寓项目会协调施工时段与公共区域保护。开工前会说明范围与任何停电时段。",
+      highlights: [
+        "按房屋状况进行全屋或局部重新布线",
+        "更换老化电线与无接地插座",
+        "绝缘电阻、极性、接地与 RCD 测试",
+        "回路贴标签，方便日后维修",
+        "必要时协调 TNB 或管理处停电",
+      ],
+      process: [
+        { step: "01", title: "布线审计", desc: "检查电线类型、配电箱、插座、接地以及过热或反复跳闸迹象。" },
+        { step: "02", title: "范围建议", desc: "您会收到全屋或局部重新布线建议、走线路径与预计停电时间。" },
+        { step: "03", title: "电缆敷设", desc: "经线管、线槽或墙体开槽更换老化电缆，并将各回路整齐终端。" },
+        { step: "04", title: "测试与记录", desc: "完成电气测试、贴上回路标签，并提供基本测试记录供您保存。" },
+      ],
+      faqs: [
+        { q: "什么情况下需要全屋重新布线？", a: "常见征兆包括超过 25 年的橡胶绝缘电缆、无 RCCB 的保险丝盒、两脚无接地插座、频繁跳闸，或插座开关有烧焦痕迹。" },
+        { q: "全屋重新布线多少钱？", a: "与已公布的配电箱升级及重新布线一致，从 RM 2,200 起。最终报价取决于房屋面积、施工入口以及全屋或局部范围。" },
+        { q: "施工期间会整天停电吗？", a: "最终接线阶段会停电。我们会提前告知时间，并在需要时与 TNB 或管理处协调。" },
+        { q: "会提供测试记录吗？", a: "会。完工后我们会说明绝缘电阻、极性、接地和 RCD 跳闸等基本测试结果。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪全屋重新布线 | RM2,200起",
+      metaDesc: "吉隆坡与雪兰莪老旧排屋、公寓与洋房重新布线。绝缘测试、接地回路测试与基本测试记录。透明报价。",
+    },
+  },
+  "electrical/additional-power-points": {
+    ms: {
+      name: "Power Point Tambahan",
+      tagline: "Soket 13A tambahan semasa pengubahsuaian — ruang tamu, bilik tidur, bilik belajar dan island dapur pada litar sedia ada atau baru.",
+      description:
+        "Pengubahsuaian sering mendedahkan rumah kekurangan soket di belakang TV, di island dapur, di sisi katil atau di bilik kerja. Kami menambah power point 13A pada kedudukan yang dipersetujui, menyemak beban litar sedia ada, dan menarik kabel melalui konduit, trunking atau dinding chased. Setiap soket diuji kekutuban, pembumian dan trip RCD sebelum serahan. Jika litar sedia ada hampir had, kami akan cadangkan litar baharu supaya penggunaan selamat. Kerja ini sesuai digabung dengan pengubahsuaian dapur, ruang tamu atau bilik tidur.",
+      highlights: [
+        "Soket 13A tambahan untuk ruang tamu, bilik tidur, belajar dan dapur",
+        "Semakan beban litar sebelum menambah outlet",
+        "Pendawaian dalam konduit, trunking atau dinding chased",
+        "Ujian kekutuban, pembumian dan trip RCD",
+        "Boleh digabung dengan pengubahsuaian bilik atau dapur",
+      ],
+      process: [
+        { step: "01", title: "Penandaan Kedudukan", desc: "Kami menanda kedudukan soket mengikut perabot, island dan keperluan pengecasan anda." },
+        { step: "02", title: "Semakan Litar", desc: "Beban litar sedia ada dinilai untuk menentukan sama ada outlet baharu boleh dikongsi atau perlukan litar baru." },
+        { step: "03", title: "Pendawaian & Pemasangan", desc: "Kabel ditarik dengan kemas, kotak dan plat soket dipasang rata, dan sambungan diketatkan." },
+        { step: "04", title: "Ujian & Serahan", desc: "Setiap soket diuji, litar dilabel jika perlu, dan kawasan kerja dibersihkan." },
+      ],
+      faqs: [
+        { q: "Berapa harga satu power point tambahan?", a: "Harga bermula dari RM 150 setiap point untuk pemasangan standard. Sebut harga akhir bergantung pada jarak pendawaian, jenis aksesori dan sama ada litar baharu diperlukan." },
+        { q: "Bolehkah soket ditambah semasa pengubahsuaian dapur?", a: "Ya. Kami selaras kedudukan dengan kabinet, countertop dan island supaya soket tidak terhalang dan selamat dari air." },
+        { q: "Perlukah litar baharu untuk beberapa soket tambahan?", a: "Ia bergantung pada beban sedia ada. Jika litar hampir had, kami cadangkan litar baharu supaya penggunaan lebih selamat." },
+        { q: "Adakah kerja ini sesuai untuk kondominium?", a: "Ya. Kami biasa menambah soket di kondominium dan boleh menyelaraskan permit, waktu kerja serta perlindungan lif jika diperlukan." },
+      ],
+      metaTitle: "Power Point Tambahan KL & Selangor | Dari RM150",
+      metaDesc: "Tambah soket 13A semasa pengubahsuaian di KL & Selangor. Semakan beban litar, pendawaian kemas dan ujian RCD. Sebut harga telus.",
+    },
+    zh: {
+      name: "新增电源插座",
+      tagline: "装修期间加装 13A 插座——客厅、卧室、书房与厨房中岛点位，接现有或新回路。",
+      description:
+        "装修时常发现电视后方、厨房中岛、床头或书房插座不足。我们在约定位置加装 13A 插座，检查现有回路负荷，并通过线管、线槽或墙体开槽敷设电缆。每个插座交付前都会进行极性、接地与 RCD 跳闸测试。若现有回路接近上限，我们会建议增设新回路以确保安全。这项服务适合与厨房、客厅或卧室翻新一并安排。",
+      highlights: [
+        "为客厅、卧室、书房与厨房加装 13A 插座",
+        "加装前检查现有回路负荷",
+        "经线管、线槽或墙体开槽布线",
+        "极性、接地与 RCD 跳闸测试",
+        "可与房间或厨房翻新同步进行",
+      ],
+      process: [
+        { step: "01", title: "点位标记", desc: "按家具、中岛与充电需求标记插座位置。" },
+        { step: "02", title: "回路检查", desc: "评估现有回路负荷，判断新插座可并入现有回路还是需要新回路。" },
+        { step: "03", title: "布线与安装", desc: "整齐敷设电缆，平装底盒与面板，并按规范紧固接线。" },
+        { step: "04", title: "测试与交付", desc: "逐个测试插座，必要时贴回路标签，并清理施工现场。" },
+      ],
+      faqs: [
+        { q: "加一个插座多少钱？", a: "标准安装从 RM 150 / 位起。最终报价取决于走线距离、配件款式，以及是否需要新增回路。" },
+        { q: "厨房翻新时可以加插座吗？", a: "可以。我们会与橱柜、台面和中岛位置配合，确保插座不被挡住并远离水源。" },
+        { q: "多加几个插座需要新回路吗？", a: "要看现有负荷。如果原回路已接近上限，为了安全我们会建议增设新回路。" },
+        { q: "公寓可以施工吗？", a: "可以。我们熟悉公寓电工流程，可配合办理施工许可、施工时段和电梯保护。" },
+      ],
+      metaTitle: "吉隆坡新增电源插座 | RM150起",
+      metaDesc: "吉隆坡与雪兰莪装修加装 13A 插座。检查回路负荷，走线整齐，完成 RCD 测试并透明报价。",
+    },
+  },
+  "electrical/switch-installation": {
+    ms: {
+      name: "Pemasangan Suis",
+      tagline: "Suis baharu atau gantian, suis dua hala, dimmer dan retrofit suis pintar pada litar lampu sedia ada.",
+      description:
+        "Pemasangan suis merangkumi gantian suis rosak, suis dua hala untuk tangga atau koridor, dimmer untuk downlight, dan retrofit suis pintar pada litar lampu sedia ada. Kami menyemak kedalaman kotak, jenis kabel dan sama ada litar sesuai untuk dimmer atau suis pintar sebelum kerja. Setiap suis dipasang rata, diketatkan dengan selamat, dan diuji operasi serta trip RCD. Untuk kondominium, kami menyelaraskan waktu kerja jika penggerudian atau akses kawasan umum diperlukan.",
+      highlights: [
+        "Suis baharu, gantian, dua hala dan dimmer",
+        "Retrofit suis pintar pada litar lampu sedia ada",
+        "Semakan kedalaman kotak dan keserasian litar",
+        "Ujian operasi suis dan perlindungan RCD",
+        "Kemasan plat yang rata dan pelabelan jika perlu",
+      ],
+      process: [
+        { step: "01", title: "Semakan Litar", desc: "Kami menyemak jenis suis, kedalaman kotak, kabel sedia ada dan keserasian dimmer atau suis pintar." },
+        { step: "02", title: "Pengasingan Kuasa", desc: "Litar dilock-out, voltan disahkan sifar, dan kawasan kerja dilindungi sebelum pembukaan plat." },
+        { step: "03", title: "Pemasangan Suis", desc: "Suis baharu ditamatkan, diketatkan dan dipasang rata dengan plat yang sepadan." },
+        { step: "04", title: "Ujian & Serahan", desc: "Setiap suis, dimmer atau dua hala diuji, kemudian kawasan kerja dibersihkan." },
+      ],
+      faqs: [
+        { q: "Berapa harga pemasangan satu suis?", a: "Harga bermula dari RM 150 setiap point untuk pemasangan standard. Sebut harga akhir bergantung pada jenis suis, kedalaman kotak dan sama ada pendawaian tambahan diperlukan." },
+        { q: "Bolehkah suis sedia ada ditukar kepada dimmer?", a: "Ya, jika litar dan jenis lampu sesuai. Kami akan semak beban dan sama ada pemandu LED serasi dengan dimmer." },
+        { q: "Adakah anda memasang suis pintar?", a: "Ya. Kami boleh memasang suis pintar pada litar lampu sedia ada, tertakluk pada keserasian wayar neutral dan rangkaian rumah anda." },
+        { q: "Apa itu suis dua hala?", a: "Suis dua hala membolehkan satu kumpulan lampu dikawal dari dua lokasi, biasanya di tangga, koridor atau bilik tidur dengan dua pintu." },
+      ],
+      metaTitle: "Pemasangan Suis KL & Selangor | Dari RM150",
+      metaDesc: "Pemasangan suis, dimmer, suis dua hala dan suis pintar di KL & Selangor. Semakan litar, ujian RCD dan sebut harga telus.",
+    },
+    zh: {
+      name: "开关安装",
+      tagline: "新装或更换开关、双控、调光器与智能开关改造，接现有照明回路。",
+      description:
+        "开关安装包括更换损坏开关、楼梯或走廊双控、筒灯调光，以及在现有照明回路上改造智能开关。开工前我们会检查底盒深度、电线类型，以及回路是否适合调光器或智能开关。每个开关都会平装、牢固接线，并测试操作与 RCD 跳闸。公寓项目如需钻孔或进入公共区域，我们会协调施工时段。",
+      highlights: [
+        "新装、更换、双控与调光开关",
+        "在现有照明回路上改造智能开关",
+        "检查底盒深度与回路兼容性",
+        "测试开关操作与 RCD 保护",
+        "面板平装，必要时贴标签",
+      ],
+      process: [
+        { step: "01", title: "回路检查", desc: "检查开关类型、底盒深度、现有电线，以及调光器或智能开关是否兼容。" },
+        { step: "02", title: "安全断电", desc: "回路上锁隔离，确认零电压，并在打开面板前保护施工区域。" },
+        { step: "03", title: "安装开关", desc: "新开关接线紧固，并配上匹配面板平装。" },
+        { step: "04", title: "测试与交付", desc: "测试每个开关、调光器或双控，然后清理施工现场。" },
+      ],
+      faqs: [
+        { q: "装一个开关多少钱？", a: "标准安装从 RM 150 / 位起。最终报价取决于开关类型、底盒深度以及是否需要额外布线。" },
+        { q: "现有开关可以改成调光器吗？", a: "可以，前提是回路和灯具类型合适。我们会检查负荷以及 LED 驱动是否兼容调光。" },
+        { q: "你们安装智能开关吗？", a: "安装。我们可在现有照明回路上安装智能开关，但需确认中性线与家庭网络是否兼容。" },
+        { q: "什么是双控开关？", a: "双控开关可在两个位置控制同一组灯，常见于楼梯、走廊或有两扇门的卧室。" },
+      ],
+      metaTitle: "吉隆坡开关安装 | RM150起",
+      metaDesc: "吉隆坡与雪兰莪开关、调光器、双控与智能开关安装。检查回路、完成 RCD 测试并透明报价。",
+    },
+  },
+  "electrical/kitchen-electrical": {
+    ms: {
+      name: "Elektrik Dapur",
+      tagline: "Titik ketuhar, hob, hood, dishwasher dan tambahan 13A/15A dapur diselaraskan dengan susun atur kabinet dan countertop.",
+      description:
+        "Elektrik dapur merancang titik beban untuk ketuhar, hob, hood, dishwasher, penapis air dan soket 13A/15A tambahan mengikut susun atur kabinet. Kami menyemak jarak ke DB box, saiz kabel dan sama ada litar khusus diperlukan untuk perkakas beban tinggi. Pendawaian diselaraskan dengan pasukan kabinet dan countertop supaya soket tidak terhalang dan selamat dari air. Setiap titik diuji voltan, kekutuban, pembumian dan operasi isolator sebelum perkakas disambungkan.",
+      highlights: [
+        "Titik ketuhar, hob, hood, dishwasher dan soket dapur",
+        "Penyelarasan dengan susun atur kabinet dan countertop",
+        "Litar khusus untuk perkakas beban tinggi jika diperlukan",
+        "Isolator dan saiz kabel mengikut spesifikasi perkakas",
+        "Ujian voltan, kekutuban, bumi dan isolator",
+      ],
+      process: [
+        { step: "01", title: "Semakan Perkakas", desc: "Kami menyemak senarai perkakas, kW, kedudukan kabinet dan jarak dari DB box." },
+        { step: "02", title: "Perancangan Titik", desc: "Kedudukan soket, isolator dan litar khusus ditanda supaya sepadan dengan kabinet dan countertop." },
+        { step: "03", title: "Pendawaian Dapur", desc: "Kabel ditarik ke setiap titik, pemutus dipasang, dan sambungan diketatkan mengikut standard." },
+        { step: "04", title: "Ujian & Serahan", desc: "Setiap titik diuji, isolator ditunjukkan cara guna, dan kawasan kerja dibersihkan." },
+      ],
+      faqs: [
+        { q: "Berapa harga elektrik dapur?", a: "Titik beban tinggi bermula dari RM 220 setiap point. Sebut harga akhir bergantung pada bilangan titik, jarak kabel dan sama ada litar khusus atau naik taraf DB diperlukan." },
+        { q: "Adakah ketuhar dan hob perlukan litar berasingan?", a: "Kebanyakan ketuhar dan hob memerlukan litar khusus dengan saiz kabel dan pemutus yang betul. Kami akan semak spesifikasi perkakas terlebih dahulu." },
+        { q: "Bolehkah kerja ini digabung dengan pengubahsuaian dapur?", a: "Ya. Kami selaras rough-in elektrik dengan hacking, kabinet dan countertop supaya titik tidak perlu dipindah semula." },
+        { q: "Adakah hood perlukan titik khas?", a: "Hood biasanya menggunakan titik 13A, tetapi kedudukan mesti sepadan dengan kabinet atas dan saluran ekzos. Kami menanda titik sebelum kabinet dipasang." },
+      ],
+      metaTitle: "Elektrik Dapur KL & Selangor | Dari RM220",
+      metaDesc: "Pendawaian dapur di KL & Selangor: ketuhar, hob, hood, dishwasher dan soket tambahan. Diselaras dengan kabinet. Sebut harga telus.",
+    },
+    zh: {
+      name: "厨房电路",
+      tagline: "烤箱、灶具、油烟机、洗碗机与厨房额外 13A/15A 点位，配合橱柜与台面布局。",
+      description:
+        "厨房电路按橱柜布局规划烤箱、灶具、油烟机、洗碗机、净水器以及额外 13A/15A 插座。我们会检查到配电箱的距离、电缆规格，以及大功率电器是否需要专用回路。布线与橱柜、台面团队配合，避免插座被挡住并远离水源。每个点位在接通电器前都会测试电压、极性、接地与隔离开关操作。",
+      highlights: [
+        "烤箱、灶具、油烟机、洗碗机与厨房插座点位",
+        "配合橱柜与台面布局",
+        "大功率电器必要时设专用回路",
+        "按电器规格配置隔离开关与电缆",
+        "电压、极性、接地与隔离开关测试",
+      ],
+      process: [
+        { step: "01", title: "电器核对", desc: "核对电器清单、功率、橱柜位置以及到配电箱的距离。" },
+        { step: "02", title: "点位规划", desc: "标记插座、隔离开关与专用回路位置，使其与橱柜和台面匹配。" },
+        { step: "03", title: "厨房布线", desc: "将电缆敷设至各点位，安装断路器，并按规范紧固接线。" },
+        { step: "04", title: "测试与交付", desc: "测试每个点位，说明隔离开关用法，并清理施工现场。" },
+      ],
+      faqs: [
+        { q: "厨房电路多少钱？", a: "大功率点位从 RM 220 / 位起。最终报价取决于点位数量、走线距离，以及是否需要专用回路或配电箱升级。" },
+        { q: "烤箱和灶具需要独立回路吗？", a: "多数烤箱和灶具需要专用回路，并匹配正确的电缆与断路器。我们会先核对电器规格。" },
+        { q: "可以和厨房翻新一起做吗？", a: "可以。我们会把电气隐蔽工程与拆除、橱柜和台面配合，避免点位事后再改。" },
+        { q: "油烟机需要专用点位吗？", a: "油烟机通常用 13A 点位，但位置必须与吊柜和排风管对齐。我们会在装柜前标点。" },
+      ],
+      metaTitle: "吉隆坡厨房电路 | RM220起",
+      metaDesc: "吉隆坡与雪兰莪厨房布线：烤箱、灶具、油烟机、洗碗机与额外插座。配合橱柜布局。透明报价。",
+    },
+  },
+  "electrical/bathroom-electrical": {
+    ms: {
+      name: "Elektrik Bilik Mandi",
+      tagline: "Pendawaian pemanas air, kipas ekzos, pencahayaan dan titik pencukur untuk kawasan basah, dengan isolator dan aksesori berkadar IP.",
+      description:
+        "Elektrik bilik mandi merangkumi titik pemanas air, kipas ekzos, lampu LED dan titik pencukur untuk kawasan basah. Kami memilih aksesori berkadar IP yang sesuai, merancang isolator di luar zon basah, dan menyemak saiz kabel serta pemutus untuk pemanas air. Pendawaian diselaraskan dengan kalis air, jubin dan siling tahan lembapan supaya tiada kotak terbuka dalam zon pancuran. Setiap titik diuji voltan, kekutuban, pembumian dan trip RCD sebelum serahan.",
+      highlights: [
+        "Titik pemanas air, kipas ekzos, lampu dan pencukur",
+        "Aksesori berkadar IP untuk kawasan basah",
+        "Isolator di luar zon pancuran",
+        "Penyelarasan dengan kalis air, jubin dan siling",
+        "Ujian voltan, bumi dan trip RCD",
+      ],
+      process: [
+        { step: "01", title: "Semakan Zon Basah", desc: "Kami menyemak zon pancuran, kedudukan pemanas air, kipas ekzos dan keperluan pengurusan bangunan." },
+        { step: "02", title: "Perancangan Titik", desc: "Kedudukan isolator, lampu, kipas dan titik pencukur ditanda supaya selamat dari air." },
+        { step: "03", title: "Pendawaian Basah", desc: "Kabel ditarik, aksesori IP dipasang, dan sambungan ditebat mengikut standard kawasan basah." },
+        { step: "04", title: "Ujian & Serahan", desc: "Setiap titik dan RCD diuji, kemudian kawasan kerja dibersihkan untuk kerja jubin atau siling seterusnya." },
+      ],
+      faqs: [
+        { q: "Berapa harga elektrik bilik mandi?", a: "Titik beban seperti pemanas air bermula dari RM 220 setiap point. Sebut harga akhir bergantung pada bilangan titik, jarak kabel dan keperluan aksesori IP." },
+        { q: "Mengapa isolator tidak boleh dalam zon pancuran?", a: "Zon pancuran basah dan berisiko sentuhan air. Isolator diletakkan di luar zon basah supaya boleh diputuskan dengan selamat." },
+        { q: "Adakah kipas ekzos termasuk dalam kerja ini?", a: "Ya, kami boleh memasang titik dan pendawaian kipas ekzos, termasuk penyelarasan dengan siling tahan lembapan." },
+        { q: "Bolehkah kerja ini digabung dengan pengubahsuaian bilik mandi?", a: "Ya. Rough-in elektrik dilakukan selepas pecah dan sebelum kalis air serta jubin, supaya paip dan kabel tidak diganggu semula." },
+      ],
+      metaTitle: "Elektrik Bilik Mandi KL & Selangor | Dari RM220",
+      metaDesc: "Pendawaian bilik mandi di KL & Selangor: pemanas air, kipas ekzos, lampu dan titik pencukur. Aksesori IP, isolator dan ujian RCD.",
+    },
+    zh: {
+      name: "卫生间电路",
+      tagline: "湿区热水器、排气扇、照明与剃须插座布线，配隔离开关与 IP 等级配件。",
+      description:
+        "卫生间电路包括热水器点位、排气扇、LED 灯与湿区剃须插座。我们选用合适的 IP 等级配件，把隔离开关规划在湿区以外，并核对热水器的电缆规格与断路器。布线与防水、贴砖和防潮天花配合，淋浴区内不留敞开底盒。每个点位交付前都会测试电压、极性、接地与 RCD 跳闸。",
+      highlights: [
+        "热水器、排气扇、照明与剃须点位",
+        "湿区使用 IP 等级配件",
+        "隔离开关设在淋浴区外",
+        "与防水、贴砖和天花配合",
+        "电压、接地与 RCD 跳闸测试",
+      ],
+      process: [
+        { step: "01", title: "湿区检查", desc: "检查淋浴区、热水器位置、排气扇以及管理处要求。" },
+        { step: "02", title: "点位规划", desc: "标记隔离开关、灯具、排气扇与剃须插座位置，确保远离水源。" },
+        { step: "03", title: "湿区布线", desc: "敷设电缆，安装 IP 配件，并按湿区规范做好绝缘。" },
+        { step: "04", title: "测试与交付", desc: "测试每个点位和 RCD，然后清理现场，以便后续贴砖或天花施工。" },
+      ],
+      faqs: [
+        { q: "卫生间电路多少钱？", a: "热水器等大功率点位从 RM 220 / 位起。最终报价取决于点位数量、走线距离和 IP 配件要求。" },
+        { q: "为什么隔离开关不能装在淋浴区内？", a: "淋浴区潮湿，有触水风险。隔离开关装在湿区外，才能安全断电。" },
+        { q: "排气扇包含在这项服务里吗？", a: "包含。我们可以安装排气扇点位与布线，并与防潮天花配合。" },
+        { q: "可以和卫生间翻新一起做吗？", a: "可以。电气隐蔽工程在拆除之后、防水与贴砖之前进行，避免水管和电缆事后再改。" },
+      ],
+      metaTitle: "吉隆坡卫生间电路 | RM220起",
+      metaDesc: "吉隆坡与雪兰莪卫生间布线：热水器、排气扇、照明与剃须插座。IP 配件、隔离开关与 RCD 测试。",
+    },
+  },
+  "electrical/renovation-electrical-work": {
+    ms: {
+      name: "Kerja Elektrik Pengubahsuaian",
+      tagline: "Rough-in dan first-fix elektrik untuk pengubahsuaian rumah, dapur dan bilik mandi — litar baharu, perancangan DB dan ujian.",
+      description:
+        "Kerja elektrik pengubahsuaian merancang first-fix semasa pecah dan rough-in, kemudian second-fix selepas siling, jubin dan kabinet siap. Kami mengira beban untuk dapur, bilik mandi, pencahayaan dan soket tambahan, merancang ruang DB, dan menarik litar baharu sebelum kemasan ditutup. Setiap kerja diuji rintangan penebat, kekutuban, pembumian dan trip RCD. Untuk rumah landed kami boleh menyelaraskan dengan TNB jika naik taraf bekalan diperlukan; untuk kondominium kami mengikut waktu kerja pengurusan. Sebut harga diberikan selepas tinjauan tapak kerana skop berbeza mengikut rumah.",
+      highlights: [
+        "First-fix dan second-fix diselaras dengan pengubahsuaian",
+        "Perancangan DB, litar baharu dan pelabelan",
+        "Penyelarasan dengan siling, jubin, kabinet dan kalis air",
+        "Ujian penebat, bumi dan RCD sebelum serahan",
+        "Sebut harga selepas tinjauan — skop berbeza mengikut rumah",
+      ],
+      process: [
+        { step: "01", title: "Tinjauan & Pelan Beban", desc: "Kami mengukur rumah, menyemak DB sedia ada, dan merancang litar untuk dapur, bilik mandi, lampu dan soket." },
+        { step: "02", title: "First-Fix", desc: "Kabel ditarik semasa pecah dan sebelum kemasan ditutup, dengan kedudukan kotak dan isolator ditanda." },
+        { step: "03", title: "Second-Fix", desc: "Selepas siling, jubin dan kabinet siap, suis, soket dan perkakas ditamatkan." },
+        { step: "04", title: "Ujian & Serahan", desc: "Kami menjalankan ujian elektrik penuh, melabel DB, dan menyerahkan rekod ujian asas." },
+      ],
+      faqs: [
+        { q: "Mengapa kerja elektrik pengubahsuaian disebut harga atas tapak?", a: "Skop bergantung pada saiz rumah, bilangan litar baharu, keadaan DB dan akses dinding atau siling. Kami memberi sebut harga tetap selepas tinjauan, tanpa harga pakej yang direka-reka." },
+        { q: "Bilakah first-fix perlu dilakukan?", a: "First-fix dilakukan selepas pecah dan sebelum kalis air, jubin, siling atau kabinet ditutup, supaya kabel tidak perlu ditarik semula." },
+        { q: "Adakah naik taraf DB termasuk?", a: "Jika DB sedia ada tidak mencukupi ruang atau perlindungan RCCB, naik taraf akan dicadangkan. Harga DB yang diterbitkan bermula dari RM 2,200 jika skop itu diperlukan." },
+        { q: "Bolehkah anda bekerja dengan kontraktor pengubahsuaian lain?", a: "Ya. Kami boleh menyelaraskan jadual first-fix dan second-fix dengan kontraktor anda supaya elektrik tidak menghalang kerja lain." },
+      ],
+      metaTitle: "Kerja Elektrik Pengubahsuaian KL | Atas Sebut Harga",
+      metaDesc: "First-fix dan second-fix elektrik untuk pengubahsuaian rumah, dapur dan bilik mandi di KL & Selangor. Perancangan DB, ujian dan sebut harga tapak.",
+    },
+    zh: {
+      name: "装修电气工程",
+      tagline: "房屋、厨房与卫生间翻新的隐蔽与一次电气工程——新回路、配电规划与测试。",
+      description:
+        "装修电气工程在拆除与隐蔽阶段做一次布线，待天花、瓷砖和橱柜完成后做二次接线。我们会计算厨房、卫生间、照明与额外插座负荷，规划配电箱空间，并在饰面封闭前敷设新回路。每项工程都进行绝缘电阻、极性、接地与 RCD 跳闸测试。有地住宅如需升级供电可协调 TNB；公寓则遵守管理处工时。因每户范围不同，报价在现场勘查后提供。",
+      highlights: [
+        "一次与二次电气与翻新工序配合",
+        "配电规划、新回路与贴标",
+        "与天花、贴砖、橱柜和防水协调",
+        "交付前做绝缘、接地与 RCD 测试",
+        "现场勘查后报价——范围因房屋而异",
+      ],
+      process: [
+        { step: "01", title: "勘查与负荷规划", desc: "测量房屋、检查现有配电箱，并规划厨房、卫生间、照明与插座回路。" },
+        { step: "02", title: "一次布线", desc: "在拆除后、饰面封闭前敷设电缆，并标记底盒与隔离开关位置。" },
+        { step: "03", title: "二次接线", desc: "天花、瓷砖和橱柜完成后，安装开关、插座并接通电器。" },
+        { step: "04", title: "测试与交付", desc: "进行完整电气测试，给配电箱贴标，并提供基本测试记录。" },
+      ],
+      faqs: [
+        { q: "为什么装修电气要现场报价？", a: "范围取决于房屋面积、新回路数量、配电箱状况以及墙面或天花入口。我们在勘查后提供固定报价，不编造套餐价。" },
+        { q: "一次布线应在什么时候做？", a: "一次布线在拆除之后、防水、贴砖、天花或橱柜封闭之前进行，避免事后再拉线。" },
+        { q: "配电箱升级包含吗？", a: "如果现有配电箱空间不足或缺少 RCCB 保护，我们会建议升级。如需该项，已公布的配电箱价格从 RM 2,200 起。" },
+        { q: "可以和其他装修承包商配合吗？", a: "可以。我们可以与您的承包商协调一次与二次电气工期，避免电气耽误其他工种。" },
+      ],
+      metaTitle: "吉隆坡装修电气工程 | 依报价",
+      metaDesc: "吉隆坡与雪兰莪房屋、厨房与卫生间翻新的一次与二次电气。配电规划、测试与现场报价。",
+    },
+  },
 
 
   "handyman/heavy-tv-wall-mounting": {
