@@ -21,7 +21,13 @@
     "whatsapp": "WhatsApp",
     "messageOnWhatsApp": "Message on WhatsApp",
     "whatsappOnline": "WhatsApp Online",
-    "openWhatsappMenu": "Open WhatsApp contact options"
+    "openWhatsappMenu": "Open WhatsApp contact options",
+    "getRenovationQuote": "Get a Renovation Quote",
+    "requestSiteVisit": "Request Site Visit",
+    "renovationCalculator": "Renovation Calculator",
+    "houseRenovation": "House Renovation",
+    "kitchenRenovation": "Kitchen Renovation",
+    "bathroomRenovation": "Bathroom Renovation"
   },
   "nav": {
     "home": "Home",
@@ -33,7 +39,8 @@
     "contact": "Contact Us",
     "areas": "Service Areas",
     "problems": "Problems",
-    "topbar": "Same-Day Home Services Across KL & Selangor — From RM 5"
+    "topbar": "Same-Day Home Services Across KL & Selangor — From RM 5",
+    "renovation": "Renovation"
   },
   "footer": {
     "tagline": "Professional home services in KL & Selangor",
@@ -371,7 +378,8 @@
       "commercial": "Commercial",
       "residential": "Residential",
       "seasonal": "Seasonal"
-    }
+    },
+    "renovation": "Renovation"
   },
   "whatsappDesk": {
     "title": "WhatsApp Dispatch Desk",

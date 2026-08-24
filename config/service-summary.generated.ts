@@ -339,13 +339,34 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
         "name": "Full House Renovation Package"
       },
       {
+        "name": "Partial House Renovation"
+      },
+      {
+        "name": "Terrace House Renovation"
+      },
+      {
+        "name": "Semi-D Renovation"
+      },
+      {
+        "name": "Bungalow Renovation"
+      },
+      {
+        "name": "Condo Renovation"
+      },
+      {
+        "name": "Apartment Renovation"
+      },
+      {
         "name": "Kitchen & Bathroom Makeover"
       },
       {
-        "name": "Condo Interior Refurbishment"
+        "name": "House Extension"
       },
       {
         "name": "Commercial Shoplot Renovation"
+      },
+      {
+        "name": "Renovation Contractor Services"
       }
     ],
     "warranty": "12-Month Structural & Workmanship Warranty",
@@ -358,13 +379,34 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
             "name": "Pakej Pengubahsuaian Rumah Penuh"
           },
           {
+            "name": "Pengubahsuaian Separa Rumah"
+          },
+          {
+            "name": "Pengubahsuaian Rumah Teres"
+          },
+          {
+            "name": "Pengubahsuaian Semi-D"
+          },
+          {
+            "name": "Pengubahsuaian Banglo"
+          },
+          {
+            "name": "Pengubahsuaian Kondominium"
+          },
+          {
+            "name": "Pengubahsuaian Apartmen"
+          },
+          {
             "name": "Makeover Dapur & Bilik Mandi"
           },
           {
-            "name": "Pemulihan Interior Kondominium"
+            "name": "Sambungan Rumah"
           },
           {
             "name": "Pengubahsuaian Shoplot Komersial"
+          },
+          {
+            "name": "Perkhidmatan Kontraktor Pengubahsuaian"
           }
         ],
         "warranty": "Jaminan Struktur & Kerja 12 Bulan"
@@ -377,13 +419,34 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
             "name": "全屋翻新配套"
           },
           {
-            "name": "厨房与卫生间翻新"
+            "name": "局部房屋翻新"
+          },
+          {
+            "name": "排屋翻新"
+          },
+          {
+            "name": "半独立式翻新"
+          },
+          {
+            "name": "独栋洋房翻新"
           },
           {
             "name": "公寓室内翻新"
           },
           {
+            "name": "公寓单元翻新"
+          },
+          {
+            "name": "厨房与卫生间翻新"
+          },
+          {
+            "name": "房屋扩建"
+          },
+          {
             "name": "商业店铺翻新"
+          },
+          {
+            "name": "翻新承包商服务"
           }
         ],
         "warranty": "12 个月结构与工艺保修"
@@ -652,10 +715,31 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
         "name": "Wall Tiling Installation"
       },
       {
-        "name": "Large-Format Slab Tiling"
+        "name": "Floor Tile Replacement & Tile Hacking"
       },
       {
-        "name": "Tile Repair & Re-Grouting"
+        "name": "Porcelain Tiles Installation"
+      },
+      {
+        "name": "Ceramic Tiles Installation"
+      },
+      {
+        "name": "Large Format Tiles"
+      },
+      {
+        "name": "Mosaic Tiles Installation"
+      },
+      {
+        "name": "Bathroom Tiling & Waterproofing"
+      },
+      {
+        "name": "Kitchen Backsplash Tiling"
+      },
+      {
+        "name": "Tile Repair, Hollow Tile & Re-Grouting"
+      },
+      {
+        "name": "Floor Leveling & Self-Leveling"
       }
     ],
     "warranty": "12-Month Tile Adhesion & Grout Warranty",
@@ -671,10 +755,31 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
             "name": "Pemasangan Jubin Dinding"
           },
           {
-            "name": "Slab Format Besar"
+            "name": "Penggantian Jubin & Pemecahan Jubin"
           },
           {
-            "name": "Pembaikan & Grout Semula"
+            "name": "Pemasangan Jubin Porselin"
+          },
+          {
+            "name": "Pemasangan Jubin Seramik"
+          },
+          {
+            "name": "Jubin Format Besar"
+          },
+          {
+            "name": "Pemasangan Jubin Mozek"
+          },
+          {
+            "name": "Jubin Bilik Mandi & Kalis Air"
+          },
+          {
+            "name": "Jubin Backsplash Dapur"
+          },
+          {
+            "name": "Pembaikan Jubin, Jubin Berongga & Grout Semula"
+          },
+          {
+            "name": "Pemerataan Lantai & Self-Leveling"
           }
         ],
         "warranty": "Jaminan Lekatan Jubin & Grout 12 Bulan"
@@ -690,10 +795,31 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
             "name": "墙面瓷砖铺贴"
           },
           {
-            "name": "超大板铺贴"
+            "name": "地面瓷砖更换与拆除"
           },
           {
-            "name": "瓷砖修补与重新勾缝"
+            "name": "抛光砖铺贴"
+          },
+          {
+            "name": "陶瓷砖铺贴"
+          },
+          {
+            "name": "大板瓷砖"
+          },
+          {
+            "name": "马赛克瓷砖铺贴"
+          },
+          {
+            "name": "卫生间贴砖与防水"
+          },
+          {
+            "name": "厨房挡水板贴砖"
+          },
+          {
+            "name": "瓷砖维修、空鼓与重新美缝"
+          },
+          {
+            "name": "地面找平与自流平"
           }
         ],
         "warranty": "12 个月瓷砖粘结与勾缝保修"
@@ -711,10 +837,31 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
         "name": "Flat Plaster Ceiling"
       },
       {
+        "name": "False Ceiling Installation"
+      },
+      {
+        "name": "Gypsum Ceiling"
+      },
+      {
         "name": "Tiered & L-Box Ceiling"
       },
       {
         "name": "Cove & Curved Ceiling"
+      },
+      {
+        "name": "Gypsum Partition & Office Partition"
+      },
+      {
+        "name": "Room Partition"
+      },
+      {
+        "name": "Feature Wall & Wall Panel"
+      },
+      {
+        "name": "Skim Coat & Wall Plastering"
+      },
+      {
+        "name": "Wall Crack Repair & Repainting"
       },
       {
         "name": "Ceiling Repair & Re-Skim"
@@ -841,6 +988,27 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
         "name": "Luxury Vinyl Plank (LVP) Install"
       },
       {
+        "name": "Vinyl Flooring Installation"
+      },
+      {
+        "name": "Floor Tile Installation"
+      },
+      {
+        "name": "Floor Tile Replacement & Tile Hacking"
+      },
+      {
+        "name": "Porcelain & Ceramic Tiles"
+      },
+      {
+        "name": "Large Format & Mosaic Tiles"
+      },
+      {
+        "name": "Floor Leveling & Screeding"
+      },
+      {
+        "name": "Hollow Tile & Uneven Floor Repair"
+      },
+      {
         "name": "Skirting & Transition Strip Fitting"
       }
     ],
@@ -860,6 +1028,27 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
             "name": "Pemasangan Papan Vinyl Mewah (LVP)"
           },
           {
+            "name": "Pemasangan Lantai Vinyl"
+          },
+          {
+            "name": "Pemasangan Jubin Lantai"
+          },
+          {
+            "name": "Penggantian Jubin & Pemecahan Jubin"
+          },
+          {
+            "name": "Jubin Porselin & Seramik"
+          },
+          {
+            "name": "Jubin Format Besar & Mozek"
+          },
+          {
+            "name": "Pemerataan Lantai & Screed"
+          },
+          {
+            "name": "Pembaikan Jubin Berongga & Lantai Tidak Rata"
+          },
+          {
             "name": "Pemasangan Skirting & Jalur Peralihan"
           }
         ],
@@ -877,6 +1066,27 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
           },
           {
             "name": "豪华乙烯基地板 (LVP) 安装"
+          },
+          {
+            "name": "乙烯基地板安装"
+          },
+          {
+            "name": "地面瓷砖安装"
+          },
+          {
+            "name": "地面瓷砖更换与拆除"
+          },
+          {
+            "name": "抛光砖与陶瓷砖"
+          },
+          {
+            "name": "大板与马赛克瓷砖"
+          },
+          {
+            "name": "地面找平与地台"
+          },
+          {
+            "name": "空鼓砖与不平地面维修"
           },
           {
             "name": "踢脚线与收边条安装"
@@ -1849,6 +2059,247 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
           }
         ],
         "warranty": "1 个月工艺保修（3 个月配件保修）"
+      }
+    }
+  },
+  "kitchen-renovation": {
+    "slug": "kitchen-renovation",
+    "title": "Kitchen Renovation",
+    "startPrice": "RM 8,000",
+    "icon": "cooking-pot",
+    "tagline": "Complete kitchen makeover: hacking, tiling, waterproofing, cabinetry, countertop, plumbing, electrical and lighting across KL & Selangor. From RM 8,000.",
+    "subServices": [
+      {
+        "name": "Full Kitchen Renovation"
+      },
+      {
+        "name": "Kitchen Cabinet Installation"
+      },
+      {
+        "name": "Kitchen Countertop Replacement"
+      },
+      {
+        "name": "Kitchen Backsplash Tiling"
+      },
+      {
+        "name": "Kitchen Island & Peninsula"
+      },
+      {
+        "name": "Wet Kitchen Renovation"
+      },
+      {
+        "name": "Dry Kitchen Renovation"
+      },
+      {
+        "name": "Kitchen Extension"
+      },
+      {
+        "name": "Kitchen Plumbing & Electrical"
+      }
+    ],
+    "warranty": "12-Month Workmanship Warranty",
+    "i18n": {
+      "ms": {
+        "title": "Pengubahsuaian Dapur",
+        "tagline": "Makeover dapur lengkap: pecah, jubin, kalis air, kabinet, countertop, paip, elektrik dan pencahayaan di KL & Selangor. Dari RM 8,000.",
+        "subServices": [
+          {
+            "name": "Pengubahsuaian Dapur Penuh"
+          },
+          {
+            "name": "Pemasangan Kabinet Dapur"
+          },
+          {
+            "name": "Penggantian Countertop Dapur"
+          },
+          {
+            "name": "Jubin Backsplash Dapur"
+          },
+          {
+            "name": "Island & Peninsula Dapur"
+          },
+          {
+            "name": "Pengubahsuaian Dapur Basah"
+          },
+          {
+            "name": "Pengubahsuaian Dapur Kering"
+          },
+          {
+            "name": "Sambungan Dapur"
+          },
+          {
+            "name": "Paip & Elektrik Dapur"
+          }
+        ],
+        "warranty": "Jaminan Kerja 12 Bulan"
+      },
+      "zh": {
+        "title": "厨房翻新",
+        "tagline": "吉隆坡与雪兰莪全套厨房改造：拆除、贴砖、防水、橱柜、台面、水电与照明。从 RM 8,000 起。",
+        "subServices": [
+          {
+            "name": "全套厨房翻新"
+          },
+          {
+            "name": "厨房橱柜安装"
+          },
+          {
+            "name": "厨房台面更换"
+          },
+          {
+            "name": "厨房挡水板贴砖"
+          },
+          {
+            "name": "厨房中岛与半岛"
+          },
+          {
+            "name": "湿厨房翻新"
+          },
+          {
+            "name": "干厨房翻新"
+          },
+          {
+            "name": "厨房扩建"
+          },
+          {
+            "name": "厨房水电"
+          }
+        ],
+        "warranty": "12 个月工艺保修"
+      }
+    }
+  },
+  "bathroom-renovation": {
+    "slug": "bathroom-renovation",
+    "title": "Bathroom Renovation",
+    "startPrice": "RM 6,000",
+    "icon": "bath",
+    "tagline": "Full bathroom and toilet makeover: hacking, waterproofing, tiling, plumbing, sanitary, electrical and ventilation in KL & Selangor. From RM 6,000.",
+    "subServices": [
+      {
+        "name": "Full Bathroom Renovation"
+      },
+      {
+        "name": "Toilet Renovation"
+      },
+      {
+        "name": "Bathroom Makeover"
+      },
+      {
+        "name": "Shower Area Renovation"
+      },
+      {
+        "name": "Bathroom Tiling"
+      },
+      {
+        "name": "Bathroom Waterproofing"
+      },
+      {
+        "name": "Bathroom Plumbing"
+      },
+      {
+        "name": "Sanitary Installation"
+      },
+      {
+        "name": "Bathroom Floor Replacement"
+      },
+      {
+        "name": "Bathroom Wall Tile Replacement"
+      },
+      {
+        "name": "Bathroom Ceiling Repair"
+      },
+      {
+        "name": "Bathroom Leak Repair"
+      }
+    ],
+    "warranty": "12-Month Workmanship + Up to 5-Year Waterproofing Warranty",
+    "i18n": {
+      "ms": {
+        "title": "Pengubahsuaian Bilik Mandi",
+        "tagline": "Makeover bilik mandi dan tandas penuh: pecah, kalis air, jubin, paip, sanitari, elektrik dan pengudaraan di KL & Selangor. Dari RM 6,000.",
+        "subServices": [
+          {
+            "name": "Pengubahsuaian Bilik Mandi Penuh"
+          },
+          {
+            "name": "Pengubahsuaian Tandas"
+          },
+          {
+            "name": "Makeover Bilik Mandi"
+          },
+          {
+            "name": "Pengubahsuaian Kawasan Pancuran"
+          },
+          {
+            "name": "Jubin Bilik Mandi"
+          },
+          {
+            "name": "Kalis Air Bilik Mandi"
+          },
+          {
+            "name": "Paip Bilik Mandi"
+          },
+          {
+            "name": "Pemasangan Sanitari"
+          },
+          {
+            "name": "Penggantian Lantai Bilik Mandi"
+          },
+          {
+            "name": "Penggantian Jubin Dinding Bilik Mandi"
+          },
+          {
+            "name": "Pembaikan Siling Bilik Mandi"
+          },
+          {
+            "name": "Pembaikan Bocor Bilik Mandi"
+          }
+        ],
+        "warranty": "Jaminan Kerja 12 Bulan + Jaminan Kalis Air Sehingga 5 Tahun"
+      },
+      "zh": {
+        "title": "卫生间翻新",
+        "tagline": "吉隆坡与雪兰莪全套卫生间与厕所改造：拆除、防水、贴砖、水管、洁具、电与通风。从 RM 6,000 起。",
+        "subServices": [
+          {
+            "name": "全套卫生间翻新"
+          },
+          {
+            "name": "厕所翻新"
+          },
+          {
+            "name": "卫生间改造"
+          },
+          {
+            "name": "淋浴区翻新"
+          },
+          {
+            "name": "卫生间贴砖"
+          },
+          {
+            "name": "卫生间防水"
+          },
+          {
+            "name": "卫生间水管"
+          },
+          {
+            "name": "洁具安装"
+          },
+          {
+            "name": "卫生间地面更换"
+          },
+          {
+            "name": "卫生间墙砖更换"
+          },
+          {
+            "name": "卫生间天花维修"
+          },
+          {
+            "name": "卫生间漏水维修"
+          }
+        ],
+        "warranty": "12 个月工艺保修 + 最长 5 年防水保修"
       }
     }
   }

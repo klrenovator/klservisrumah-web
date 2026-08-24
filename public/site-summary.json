@@ -219,6 +219,20 @@
       "startPrice": "RM 129",
       "warranty": "1-Month Workmanship Warranty (3-Month Parts Warranty)",
       "path": "/services/aircon"
+    },
+    {
+      "slug": "kitchen-renovation",
+      "title": "Kitchen Renovation",
+      "startPrice": "RM 8,000",
+      "warranty": "12-Month Workmanship Warranty",
+      "path": "/services/kitchen-renovation"
+    },
+    {
+      "slug": "bathroom-renovation",
+      "title": "Bathroom Renovation",
+      "startPrice": "RM 6,000",
+      "warranty": "12-Month Workmanship + Up to 5-Year Waterproofing Warranty",
+      "path": "/services/bathroom-renovation"
     }
   ],
   "primaryHubs": [
@@ -633,12 +647,12 @@
     }
   ],
   "counts": {
-    "services": 29,
-    "subServices": 120,
+    "services": 31,
+    "subServices": 169,
     "areaPages": 37,
     "problemPages": 86,
     "blogPosts": 229,
-    "indexablePages": 4479
+    "indexablePages": 4734
   },
   "pricingPrinciple": "fair standard Malaysian pricing, itemised and confirmed in writing before work begins",
   "hours": "Mon–Sun · 9:00 AM – 6:00 PM (Everyday Open)",

@@ -21,7 +21,13 @@
     "whatsapp": "WhatsApp",
     "messageOnWhatsApp": "通过 WhatsApp 发消息",
     "whatsappOnline": "WhatsApp 在线",
-    "openWhatsappMenu": "打开 WhatsApp 联系方式选项"
+    "openWhatsappMenu": "打开 WhatsApp 联系方式选项",
+    "getRenovationQuote": "获取翻新报价",
+    "requestSiteVisit": "预约现场勘查",
+    "renovationCalculator": "翻新费用计算器",
+    "houseRenovation": "房屋翻新",
+    "kitchenRenovation": "厨房翻新",
+    "bathroomRenovation": "卫生间翻新"
   },
   "nav": {
     "home": "首页",
@@ -33,7 +39,8 @@
     "contact": "联系我们",
     "areas": "服务区域",
     "problems": "问题",
-    "topbar": "吉隆坡与雪兰莪当日家居服务 — 从 RM 5 起"
+    "topbar": "吉隆坡与雪兰莪当日家居服务 — 从 RM 5 起",
+    "renovation": "翻新"
   },
   "footer": {
     "tagline": "吉隆坡与雪兰莪的专业家居服务",
@@ -371,7 +378,8 @@
       "commercial": "商业服务",
       "residential": "住宅服务",
       "seasonal": "季节保养"
-    }
+    },
+    "renovation": "翻新服务"
   },
   "whatsappDesk": {
     "title": "WhatsApp 调度台",

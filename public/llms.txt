@@ -10,15 +10,15 @@ KL Servis Rumah provides professional home maintenance services across Kuala Lum
 - Ceiling & Partition Services: from RM 220 — Water-Damaged Ceiling Repair, Plaster Ceiling Installation, Gypsum Board Partition Wall
 - Waterproofing & Leak Repair Services: from RM 300 — PU High-Pressure Injection Grouting, Bathroom & Wet Area Waterproofing, Roof & Concrete Slab Waterproofing
 - Handyman Services: from RM 100 — Heavy TV Wall Mounting, Door, Hinge & Lockset Repair, Furniture Assembly (IKEA/Taobao)
-- Complete House Renovation: from RM 22,000 — Full House Renovation Package, Kitchen & Bathroom Makeover, Condo Interior Refurbishment
+- Complete House Renovation: from RM 22,000 — Full House Renovation Package, Partial House Renovation, Terrace House Renovation
 - Licensed Electrical Services: from RM 150 — New Power Point & Switch Installation, DB Box Upgrade & Rewiring, Lighting Point & Downlight Installation
 - Water Heater Installation & Repair: from RM 180 — Instant Water Heater Installation, Storage Tank Heater Installation, Water Heater Repair & Descaling
 - Ceiling Fan Installation & Replacement: from RM 150 — New Ceiling Fan Installation, Ceiling Fan Replacement, DC Motor Smart Fan Install
 - Lighting Design & Installation: from RM 120 — LED Downlight Installation, Pendant & Chandelier Install, Cove & Strip LED Installation
-- Professional Tiling & Tile Repair: from RM 14 — Floor Tiling Installation, Wall Tiling Installation, Large-Format Slab Tiling
-- Plaster Ceiling Design & Build: from RM 10 — Flat Plaster Ceiling, Tiered & L-Box Ceiling, Cove & Curved Ceiling
+- Professional Tiling & Tile Repair: from RM 14 — Floor Tiling Installation, Wall Tiling Installation, Floor Tile Replacement & Tile Hacking
+- Plaster Ceiling Design & Build: from RM 10 — Flat Plaster Ceiling, False Ceiling Installation, Gypsum Ceiling
 
-Full directory of all 29 services: https://www.klservisrumah.my/services
+Full directory of all 31 services: https://www.klservisrumah.my/services
 
 ## Service Areas
 Kuala Lumpur, Cheras, Ampang, Setapak, Wangsa Maju, Kepong, Sri Petaling, Bukit Jalil, Mont Kiara, Bangsar, Desa ParkCity, Taman Melawati, Hulu Kelang, Petaling Jaya, Subang Jaya, Shah Alam, Puchong, Damansara, Kota Damansara, Ara Damansara, Sunway, USJ, Bandar Utama, SS2, Klang, Port Klang, Bukit Tinggi, Setia Alam, Meru, Kota Kemuning, Bukit Jelutong, Glenmarie, Batu Caves, Selayang, Rawang, Kundang, Sungai Buloh, Kajang, Semenyih, Balakong, Seri Kembangan, Pandan Indah, Bandar Puteri, Putrajaya, Cyberjaya, Dengkil, Selangor, Sentul, Bandar Botanic.
@@ -120,6 +120,8 @@ One short, stable link per service (https://www.klservisrumah.my/estimate/<servi
 - Auto Gate & Motorised Gate (from RM 2,200): https://www.klservisrumah.my/estimate/autogate
 - Welding & Metal Fabrication (from RM 280): https://www.klservisrumah.my/estimate/welding
 - Aircon Service, Repair & Installation (from RM 129): https://www.klservisrumah.my/estimate/aircon
+- Kitchen Renovation (from RM 8,000): https://www.klservisrumah.my/estimate/kitchen-renovation
+- Bathroom Renovation (from RM 6,000): https://www.klservisrumah.my/estimate/bathroom-renovation
 
 ## Business Details
 - Legal Name: Multicore Dynamics Resources

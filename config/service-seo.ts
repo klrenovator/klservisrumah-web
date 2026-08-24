@@ -109,6 +109,50 @@ export const serviceSeo: Record<string, LocalizedServiceSeo> = {
       title: "House Renovation Services KL & Selangor",
       description:
         "House, condo, kitchen, bathroom and shoplot renovation across KL & Selangor with a defined scope and coordinated trades. Request a site discussion."
+    },
+    ms: {
+      title: "Servis Pengubahsuaian Rumah KL & Selangor",
+      description:
+        "Pengubahsuaian rumah, kondominium, dapur, bilik mandi dan shoplot di KL & Selangor dengan skop jelas dan kerja diselaraskan. Minta perbincangan tapak."
+    },
+    zh: {
+      title: "吉隆坡与雪兰莪房屋翻新服务",
+      description:
+        "吉隆坡与雪兰莪住宅、公寓、厨房、卫生间与店铺翻新，范围明确、多工种协调。预约现场沟通。"
+    }
+  },
+  "kitchen-renovation": {
+    en: {
+      title: "Kitchen Renovation Contractor KL & Selangor",
+      description:
+        "Full kitchen renovation in KL & Selangor: hacking, tiling, waterproofing, custom cabinets, quartz countertop, plumbing and electrical. Fixed price, 3D layout. WhatsApp quote."
+    },
+    ms: {
+      title: "Kontraktor Pengubahsuaian Dapur KL & Selangor",
+      description:
+        "Pengubahsuaian dapur penuh di KL & Selangor: pecah, jubin, kalis air, kabinet custom, countertop quartz, paip, elektrik. Harga tetap, susun atur 3D. Sebut harga WhatsApp."
+    },
+    zh: {
+      title: "吉隆坡与雪兰莪厨房翻新承包商",
+      description:
+        "吉隆坡与雪兰莪全套厨房翻新：拆除、贴砖、防水、定制橱柜、石英石台面、水电。固定报价，3D布局。WhatsApp报价。"
+    }
+  },
+  "bathroom-renovation": {
+    en: {
+      title: "Bathroom Renovation Contractor KL & Selangor",
+      description:
+        "Full bathroom renovation in KL & Selangor: hacking, waterproofing with ponding test, tiling, plumbing, sanitary and ceiling. Anti-leak, anti-slip. Fixed price. WhatsApp quote."
+    },
+    ms: {
+      title: "Kontraktor Pengubahsuaian Bilik Mandi KL & Selangor",
+      description:
+        "Pengubahsuaian bilik mandi penuh di KL & Selangor: pecah, kalis air dengan ujian kolam, jubin, paip, sanitari dan siling. Anti-bocor, anti-gelincir. Harga tetap. Sebut harga WhatsApp."
+    },
+    zh: {
+      title: "吉隆坡与雪兰莪卫生间翻新承包商",
+      description:
+        "吉隆坡与雪兰莪全套卫生间翻新：拆除、防水与蓄水测试、贴砖、水管、洁具、天花。防漏、防滑、防霉。固定报价。WhatsApp报价。"
     }
   },
   electrical: {
