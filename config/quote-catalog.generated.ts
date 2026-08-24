@@ -49,6 +49,26 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
         "name": "Wall Crack & Moisture Repair",
         "price": "From RM 180",
         "desc": "Sanding, skimming, structural crack filling, and applying premium moisture sealer primers."
+      },
+      {
+        "name": "Condo & Apartment Painting",
+        "price": "From RM 450 / room",
+        "desc": "Full interior painting for condominiums and apartments, including walls, ceilings, and feature areas, with lift access planning and furniture protection."
+      },
+      {
+        "name": "Ceiling Painting",
+        "price": "On Quote",
+        "desc": "Repainting interior ceilings with stain-blocking primers, mould treatment, and washable ceiling paint for a clean, bright finish."
+      },
+      {
+        "name": "Wall Preparation & Priming",
+        "price": "On Quote",
+        "desc": "Professional surface preparation — cleaning, crack filling, sanding, sealing and priming — so topcoat paint adheres evenly and lasts longer."
+      },
+      {
+        "name": "Feature Wall Painting",
+        "price": "On Quote",
+        "desc": "Designer feature wall finishes — accent colours, two-tone effects, textured and faux finishes — for living rooms, bedrooms, and accent areas."
       }
     ],
     "i18n": {
@@ -76,6 +96,26 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "name": "Pembaikan Retak & Lembapan Dinding",
             "price": "Dari RM 180",
             "desc": "Pengamplasan, pengapan, pengisian retak struktur, dan penyapuan primer penyekat lembapan premium."
+          },
+          {
+            "name": "Pengecatan Kondominium & Apartmen",
+            "price": "Dari RM 450 / bilik",
+            "desc": "Pengecatan dalaman penuh untuk kondominium dan apartmen, termasuk dinding, siling dan kawasan ciri, dengan perancangan akses lif serta perlindungan perabot."
+          },
+          {
+            "name": "Pengecatan Siling",
+            "price": "Atas Sebut Harga",
+            "desc": "Mengecat semula siling dalaman dengan primer penyekat kesan air, rawatan kulat dan cat siling boleh basuh untuk kemasan yang bersih dan cerah."
+          },
+          {
+            "name": "Persediaan & Primer Dinding",
+            "price": "Atas Sebut Harga",
+            "desc": "Persediaan permukaan profesional—membersihkan, mengisi retakan, mengamplas, menyekat dan menyapu primer—supaya cat topcoat melekat sekata dan tahan lama."
+          },
+          {
+            "name": "Pengecatan Dinding Ciri",
+            "price": "Atas Sebut Harga",
+            "desc": "Kemasan dinding ciri berpereka—warna aksen, kesan dua nada, tekstur dan kemasan tiruan—untuk ruang tamu, bilik tidur dan kawasan aksen."
           }
         ]
       },
@@ -103,6 +143,26 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "name": "墙面裂缝与防潮修复",
             "price": "从 RM 180 起",
             "desc": "打磨、批灰、结构性裂缝填补，以及涂抹优质防潮密封底漆。"
+          },
+          {
+            "name": "公寓与组屋油漆",
+            "price": "从 RM 450 / 房间起",
+            "desc": "为公寓与组屋提供完整的室内油漆服务，包括墙面、天花板与特色区域，规划电梯通行并保护家具。"
+          },
+          {
+            "name": "天花板油漆",
+            "price": "依报价",
+            "desc": "重新粉刷室内天花板，使用防污封闭底漆、霉菌处理与可擦洗天花板涂料，带来干净明亮的效果。"
+          },
+          {
+            "name": "墙面处理与底漆",
+            "price": "依报价",
+            "desc": "专业表面处理——清洁、填补裂缝、打磨、封闭并涂刷底漆——让面漆附着均匀且更持久。"
+          },
+          {
+            "name": "特色墙面油漆",
+            "price": "依报价",
+            "desc": "设计师特色墙面饰面——强调色、双色效果、质感与仿真饰面——适用于客厅、卧室与重点区域。"
           }
         ]
       }

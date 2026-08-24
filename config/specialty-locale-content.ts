@@ -258,6 +258,230 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       metaDesc: "吉隆坡与雪兰莪油漆前墙面裂缝填补、潮气处理与表面准备。防止剥落与水痕。免费报价。",
     },
   },
+  "painting/condo-and-apartment-painting": {
+    ms: {
+      name: "Pengecatan Kondominium & Apartmen",
+      tagline: "Pengecatan dalaman penuh untuk kondominium dan apartmen di KL & Selangor, dengan perancangan akses lif dan perlindungan perabot penuh.",
+      description:
+        "Pengecatan dalaman untuk kondominium dan apartmen di seluruh KL & Selangor. Kami menguruskan akses lif dan koridor, melindungi lantai dan perabot, serta mengecat dinding, siling dan kawasan ciri dengan cat premium boleh basuh. Kerja dirancang supaya gangguan kepada jiran adalah minimum, dan setiap unit dibersihkan sepenuhnya sebelum serahan. Sesuai untuk penyewa baharu, pemilik yang ingin menukar imej sebelum dijual atau disewa, dan pasangan yang membaik pulih unit. Harga dinilai per bilik, dengan sebut harga penuh selepas pemeriksaan tapak.",
+      highlights: [
+        "Pengecatan dalaman lengkap untuk kondominium & apartmen",
+        "Perancangan akses lif, koridor dan pengurusan sisa bangunan",
+        "Cat boleh basuh berbau rendah yang sesuai untuk unit berhawa dingin",
+        "Perlindungan lantai & perabot penuh dengan pembersihan tanpa kekotoran",
+        "Sebut harga per bilik dengan jaminan bertulis",
+      ],
+      process: [
+        { step: "01", title: "Perancangan & Akses", desc: "Kami menyelaraskan akses lif dan koridor, masa kerja serta pengurusan sisa dengan pihak pengurusan bangunan." },
+        { step: "02", title: "Perlindungan & Persediaan", desc: "Lantai, perabot dan suis dilindungi; dinding dibersihkan, retakan diisi dan permukaan diamplas." },
+        { step: "03", title: "Pengecatan", desc: "Primer dan dua lapisan cat premium disapu pada dinding dan siling untuk liputan yang sekata." },
+        { step: "04", title: "Pemeriksaan & Serahan", desc: "Kawasan dibersihkan, semakan bersama dijalankan dan unit diserahkan dalam keadaan bersih." },
+      ],
+      faqs: [
+        { q: "Berapa harga untuk mengecat kondominium saya?", a: "Kami menilai harga per bilik bermula dari RM 450, bergantung pada saiz, keadaan dinding, ketinggian siling dan jenis cat. Sebut harga penuh diberikan selepas pemeriksaan tapak atau konsultasi WhatsApp." },
+        { q: "Bolehkah anda menguruskan akses lif untuk bangunan bertingkat?", a: "Ya, kami menyelaras akses lif dan koridor dengan pihak pengurusan bangunan serta menguruskan sisa kerja mengikut peraturan bangunan strata." },
+        { q: "Apakah jenis cat yang sesuai untuk apartmen?", a: "Kami mengesyorkan cat boleh basuh berbau rendah daripada jenama premium, yang sesuai untuk unit berhawa dingin dan rumah yang ada anak kecil." },
+        { q: "Berapa lama masa untuk mengecat unit 1,000 kaki persegi?", a: "Unit sekitar 1,000 kaki persegi biasanya mengambil 2 hingga 3 hari, termasuk persediaan, pengeringan antara lapisan dan pembersihan akhir." },
+      ],
+      metaTitle: "Pengecatan Kondominium & Apartmen KL | Sebut Harga Percuma",
+      metaDesc: "Pengecatan dalaman kondominium & apartmen di KL & Selangor. Perancangan akses lif, perlindungan perabot penuh, cat boleh basuh & jaminan bertulis. Sebut harga percuma di WhatsApp.",
+    },
+    zh: {
+      name: "公寓与组屋油漆",
+      tagline: "为吉隆坡与雪兰莪的公寓与组屋提供完整室内油漆，含电梯通道规划与全面家具保护。",
+      description:
+        "为吉隆坡与雪兰莪的公寓与组屋提供完整的室内油漆服务。我们协调电梯与走廊通道，保护地板与家具，并使用优质可擦洗涂料粉刷墙面、天花板与特色区域。工作安排将住户干扰降至最低，每个单元在交接前都全面清洁。适合新住户、出售或出租前焕新房屋的业主，以及翻新单元的屋主。价格按房间评估，现场勘查后提供完整报价。",
+      highlights: [
+        "公寓与组屋完整室内油漆",
+        "电梯、走廊通道及建筑垃圾处理规划",
+        "适合空调单元的低气味可擦洗涂料",
+        "地板与家具全面保护，无尘交接",
+        "按房间报价，附书面保修",
+      ],
+      process: [
+        { step: "01", title: "规划与通行", desc: "我们与物业协调电梯和走廊通行、工作时间与垃圾清运。" },
+        { step: "02", title: "保护与准备", desc: "保护地板、家具与开关；清洁墙面、填补裂缝并打磨表面。" },
+        { step: "03", title: "粉刷", desc: "在墙面与天花板涂刷底漆及两层面漆，色泽均匀。" },
+        { step: "04", title: "检查与交接", desc: "清洁场地、进行联合检查并以整洁状态交付单元。" },
+      ],
+      faqs: [
+        { q: "粉刷我的公寓要多少钱？", a: "我们按房间评估，从 RM 450 起，具体视面积、墙面状况、层高与涂料类型而定。现场勘查或 WhatsApp 咨询后提供完整报价。" },
+        { q: "你们能协调高层建筑的电梯通行吗？", a: "可以，我们与物业管理协调电梯和走廊通行，并按照分层管理规定处理施工垃圾。" },
+        { q: "适合公寓使用什么涂料？", a: "我们推荐优质品牌的可擦洗低气味涂料，适合空调单元与有孩子的家庭。" },
+        { q: "粉刷约 1,000 平方英尺的单元需要多长时间？", a: "约 1,000 平方英尺的单元通常需要 2 至 3 天，包括准备工作、层间干燥时间与最终清洁。" },
+      ],
+      metaTitle: "吉隆坡公寓与组屋油漆 | 免费报价",
+      metaDesc: "吉隆坡与雪兰莪公寓与组屋室内油漆。电梯通道规划、全面家具保护、可擦洗涂料与书面保修。WhatsApp 免费报价。",
+    },
+  },
+  "painting/ceiling-painting": {
+    ms: {
+      name: "Pengecatan Siling",
+      tagline: "Mengecat semula siling dalaman dengan primer penyekat, rawatan kulat dan cat siling boleh basuh di KL & Selangor.",
+      description:
+        "Pengecatan siling dalaman untuk rumah, pejabat dan kedai di KL & Selangor. Kami merawat kesan air, kulat dan noda terlebih dahulu, menyapu primer penyekat, kemudian dua lapisan cat siling boleh basuh untuk permukaan yang bersih dan cerah. Kami melindungi lantai dan perabot dengan kain penutup, dan membersihkan sepenuhnya selepas kerja. Siling yang dicat semula dengan baik memantulkan cahaya lebih baik dan mencerahkan keseluruhan bilik tanpa perlu menukar lekapan lampu.",
+      highlights: [
+        "Rawatan kesan air, kulat & noda sebelum mengecat",
+        "Primer penyekat untuk mengelak noda tembus semula",
+        "Cat siling boleh basuh dengan kemasan matte",
+        "Perlindungan lantai & perabot penuh",
+        "Kemasan licin yang mencerahkan keseluruhan bilik",
+      ],
+      process: [
+        { step: "01", title: "Pemeriksaan Siling", desc: "Kami memeriksa kesan air, kulat, retakan dan lekatan cat sedia ada sebelum menentukan kaedah." },
+        { step: "02", title: "Rawatan & Persediaan", desc: "Kesan air dan kulat dirawat, retakan diisi dan permukaan dibersihkan serta diamplas." },
+        { step: "03", title: "Primer & Cat", desc: "Primer penyekat dan dua lapisan cat siling disapu untuk liputan yang sekata." },
+        { step: "04", title: "Pembersihan & Pemeriksaan", desc: "Kami membersihkan lantai dan menjalankan pemeriksaan bersama untuk kemasan yang bersih." },
+      ],
+      faqs: [
+        { q: "Berapa harga untuk mengecat siling?", a: "Harga bergantung pada keluasan, keadaan siling dan jenis cat. Kami menyediakan sebut harga selepas pemeriksaan; hubungi kami untuk penilaian tapak percuma." },
+        { q: "Bolehkah anda mengecat siling tanpa mengosongkan bilik?", a: "Ya, kami melindungi perabot dan lantai dengan kain penutup berat, dan pemilik hanya perlu mengalihkan barang yang mudah digerakkan." },
+        { q: "Bagaimana anda merawat kesan air pada siling?", a: "Kami mengenal pasti punca, mengeringkan kawasan, merawat noda dan menyapu primer penyekat supaya noda tidak tembus semula." },
+        { q: "Adakah anda mengecat siling lama yang mengelupas?", a: "Ya, kami mengikis cat yang mengelupas, mengamplas dan menyediakan permukaan sebelum mengecat semula untuk lekatan yang baik." },
+      ],
+      metaTitle: "Pengecatan Siling KL & Selangor | Sebut Harga Percuma",
+      metaDesc: "Pengecatan siling dalaman di KL & Selangor. Rawatan kesan air & kulat, primer penyekat & cat siling boleh basuh. Jaminan bertulis. Sebut harga percuma di WhatsApp.",
+    },
+    zh: {
+      name: "天花板油漆",
+      tagline: "在吉隆坡与雪兰莪提供天花板重刷服务，含封闭底漆、霉菌处理与可擦洗天花板涂料。",
+      description:
+        "为吉隆坡与雪兰莪的住宅、办公室与商店提供室内天花板油漆服务。我们首先处理水渍、霉菌与污渍，涂刷封闭底漆，再涂两层面漆，打造洁净明亮的表面。我们用防护布保护地板与家具，施工后全面清洁。刷好的天花板能更好地反射光线，让整个房间显得更亮，而无需更换灯具。",
+      highlights: [
+        "粉刷前处理水渍、霉菌与污渍",
+        "封闭底漆防止污渍回渗",
+        "哑光可擦洗天花板涂料",
+        "地板与家具全面保护",
+        "光滑饰面让整个房间更明亮",
+      ],
+      process: [
+        { step: "01", title: "天花板检查", desc: "检查水渍、霉菌、裂缝与现有涂层的附着力，以确定施工方法。" },
+        { step: "02", title: "处理与准备", desc: "处理水渍与霉菌、填补裂缝，并清洁、打磨表面。" },
+        { step: "03", title: "底漆与面漆", desc: "涂刷封闭底漆与两层面漆，色泽均匀。" },
+        { step: "04", title: "清洁与检查", desc: "清洁地板并进行联合检查，确保饰面整洁。" },
+      ],
+      faqs: [
+        { q: "粉刷天花板要多少钱？", a: "价格视面积、天花板状况与涂料类型而定。我们在勘查后提供报价；欢迎联系安排免费现场评估。" },
+        { q: "不清空房间能粉刷天花板吗？", a: "可以，我们用厚重保护布遮盖家具与地板，业主只需移开便于搬动的物品。" },
+        { q: "如何处理天花板上的水渍？", a: "我们找出水渍来源、干燥区域、处理污渍并涂刷封闭底漆，防止污渍再次浮现。" },
+        { q: "你们能处理剥落的旧天花板涂层吗？", a: "可以，我们刮除剥落涂层、打磨并处理表面后再重刷，确保良好附着力。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪天花板油漆 | 免费报价",
+      metaDesc: "吉隆坡与雪兰莪室内天花板油漆。水渍与霉菌处理、封闭底漆、可擦洗天花板涂料。书面保修。WhatsApp 免费报价。",
+    },
+  },
+  "painting/wall-preparation-and-priming": {
+    ms: {
+      name: "Persediaan & Primer Dinding",
+      tagline: "Persediaan permukaan profesional untuk dinding—membersihkan, mengisi retakan, mengamplas, menyekat dan menyapu primer—sebelum mengecat.",
+      description:
+        "Persediaan dinding yang betul menentukan ketahanan dan kemasan cat. Kami membersihkan dinding, mengisi retakan dan lubang paku, mengamplas permukaan kasar, menyekat kawasan lembapan dan menyapu primer yang sesuai sebelum topcoat disapu. Layanan ini amat penting untuk dinding baharu, dinding selepas pengikisan cat lama, dan kawasan yang sebelum ini ditampal. Ia memastikan cat melekat sekata, mengurangkan penggunaan cat, dan memanjangkan jangka hayat kemasan. Sesuai sebagai persediaan sebelum mengecat penuh atau sebelum pemasangan kertas dinding.",
+      highlights: [
+        "Mengisi retakan, lubang paku & lekuk dengan plaster",
+        "Mengamplas permukaan ke tahap licin yang betul",
+        "Menyekat kawasan lembapan dengan primer penyekat",
+        "Primer yang sesuai untuk lekatan topcoat maksimum",
+        "Persediaan untuk dinding baharu, tampalan & kertas dinding",
+      ],
+      process: [
+        { step: "01", title: "Pembersihan Permukaan", desc: "Dinding dibersihkan daripada habuk, gris dan cat longgar supaya tampalan melekat dengan baik." },
+        { step: "02", title: "Mengisi & Menampal", desc: "Retakan, lubang paku dan lekuk diisi dengan plaster dan diamplas rata." },
+        { step: "03", title: "Mengamplas & Menyekat", desc: "Permukaan diamplas licin dan kawasan lembapan disekat dengan primer penyekat." },
+        { step: "04", title: "Sapu Primer", desc: "Primer yang sesuai disapu untuk memastikan topcoat melekat sekata dan tahan lama." },
+      ],
+      faqs: [
+        { q: "Apakah persediaan dinding?", a: "Persediaan dinding ialah membersihkan, mengisi retakan, mengamplas dan menyapu primer supaya cat melekat sekata, tahan lama dan kelihatan kemas." },
+        { q: "Adakah saya perlu menyediakan dinding sebelum mengecat semula?", a: "Ya, dinding perlu dibersihkan dan sebarang tampalan serta kawasan lembapan disediakan supaya cat baharu melekat dengan baik dan tahan lebih lama." },
+        { q: "Berapa lama masa untuk menyediakan sebuah bilik?", a: "Sebuah bilik biasa biasanya mengambil masa beberapa jam hingga sehari untuk persediaan penuh, bergantung pada keadaan dinding." },
+        { q: "Adakah persediaan termasuk dalam pakej pengecatan anda?", a: "Persediaan asas seperti menampal retakan halus dan menyapu primer termasuk dalam pakej pengecatan standard kami." },
+      ],
+      metaTitle: "Persediaan & Primer Dinding KL | Sebut Harga",
+      metaDesc: "Persediaan dinding profesional di KL & Selangor—mengisi retakan, mengamplas, menyekat lembapan & menyapu primer. Untuk kemasan cat yang sekata dan tahan lama. Sebut harga percuma.",
+    },
+    zh: {
+      name: "墙面处理与底漆",
+      tagline: "专业的墙面表面处理——清洁、填补裂缝、打磨、封闭并涂刷底漆——为刷漆做好准备。",
+      description:
+        "正确的墙面处理决定了涂料的耐久性与饰面效果。我们清洁墙面、填补裂缝与钉孔、打磨粗糙表面、封闭潮气区域，并在涂刷面漆前涂刷合适的底漆。这对于新墙面、刮除旧漆后的墙面以及曾修补过的区域尤为重要。它确保涂料均匀附着、节省涂料用量，并延长饰面寿命。适合作为全面粉刷或贴壁纸前的准备工作。",
+      highlights: [
+        "用石膏填补裂缝、钉孔与凹陷",
+        "打磨表面至合适的平滑度",
+        "用封闭底漆封闭潮气区域",
+        "合适的底漆确保面漆最大附着力",
+        "适用于新墙、修补区与壁纸前的准备",
+      ],
+      process: [
+        { step: "01", title: "清洁表面", desc: "清洁墙面灰尘、油污与松散漆皮，确保修补材料良好附着。" },
+        { step: "02", title: "填补与批灰", desc: "用石膏填补裂缝、钉孔与凹陷，并打磨平整。" },
+        { step: "03", title: "打磨与封闭", desc: "打磨表面至光滑，并用封闭底漆封闭潮气区域。" },
+        { step: "04", title: "涂刷底漆", desc: "涂刷合适底漆，确保面漆均匀附着且持久。" },
+      ],
+      faqs: [
+        { q: "什么是墙面处理？", a: "墙面处理包括清洁、填补裂缝、打磨与涂刷底漆，确保涂料均匀附着、持久耐用且外观整洁。" },
+        { q: "重刷前需要处理墙面吗？", a: "需要，墙面应清洁，并处理任何修补区与潮气区域，使新涂料良好附着并更持久。" },
+        { q: "处理一个房间需要多长时间？", a: "一个普通房间通常需要数小时至一天进行完整处理，视墙面状况而定。" },
+        { q: "墙面处理包含在你们的刷漆套餐中吗？", a: "基本处理如填补细裂缝与涂刷底漆包含在我们的标准刷漆套餐中。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪墙面处理与底漆 | 报价",
+      metaDesc: "吉隆坡与雪兰莪专业墙面处理——填补裂缝、打磨、封闭潮气并涂刷底漆。实现均匀持久的面漆。免费报价。",
+    },
+  },
+  "painting/feature-wall-painting": {
+    ms: {
+      name: "Pengecatan Dinding Ciri",
+      tagline: "Kemasan dinding ciri berpereka—warna aksen, kesan dua nada, tekstur dan kemasan tiruan—untuk ruang tamu dan bilik tidur.",
+      description:
+        "Dinding ciri ialah titik fokus ruang anda. Kami menawarkan pengecatan aksen dengan warna berani, kesan dua nada yang bersih, kemasan tekstur, dan kesan tiruan seperti konkrit, kertas dinding palsu dan marmar. Setiap kemasan dirancang mengikut gaya dan pencahayaan ruang anda. Kami melindungi kawasan sekeliling dengan pita dan kain penutup yang tepat untuk garisan yang tajam, dan membersihkan sepenuhnya selepas kerja. Sesuai untuk ruang tamu, ruang makan, bilik tidur utama dan kawasan aksen di rumah serta pejabat.",
+      highlights: [
+        "Warna aksen & kesan dua nada dengan garisan tajam",
+        "Kemasan tekstur dan kesan tiruan (konkrit, kertas dinding palsu, marmar)",
+        "Perancangan warna mengikut pencahayaan ruang",
+        "Pita & perlindungan tepat untuk garisan yang kemas",
+        "Sesuai untuk ruang tamu, ruang makan & bilik tidur",
+      ],
+      process: [
+        { step: "01", title: "Konsultasi Reka Bentuk", desc: "Kami membincangkan gaya, warna dan kemasan yang sesuai dengan ruang serta pencahayaan anda." },
+        { step: "02", title: "Persediaan Permukaan", desc: "Dinding dibersihkan, retakan diisi dan permukaan diamplas untuk kemasan yang licin." },
+        { step: "03", title: "Kemasan Aksen", desc: "Warna aksen atau kesan kemasan disapu mengikut reka bentuk yang dipilih dengan garisan yang kemas." },
+        { step: "04", title: "Pemeriksaan & Pembersihan", desc: "Kami memeriksa garisan dan kemasan, membersihkan kawasan dan memastikan hasil yang kemas." },
+      ],
+      faqs: [
+        { q: "Apakah itu dinding ciri?", a: "Dinding ciri ialah satu dinding dalam bilik yang dicat atau disiapkan dengan warna atau kemasan berbeza untuk mencipta titik fokus." },
+        { q: "Kemasan apa yang anda tawarkan untuk dinding ciri?", a: "Kami menawarkan warna aksen, kesan dua nada, kemasan tekstur dan kesan tiruan seperti konkrit serta kertas dinding palsu." },
+        { q: "Berapa harga untuk dinding ciri?", a: "Harga bergantung pada saiz dinding dan kerumitan kemasan. Kami menyediakan sebut harga selepas pemeriksaan." },
+        { q: "Bolehkah saya menukar dinding ciri kemudian?", a: "Ya, dinding ciri boleh dicat semula bila-bila masa. Warna aksen biasanya mudah diganti dengan pengecatan semula standard." },
+      ],
+      metaTitle: "Pengecatan Dinding Ciri KL & Selangor | Sebut Harga",
+      metaDesc: "Kemasan dinding ciri berpereka di KL & Selangor—warna aksen, kesan dua nada, tekstur & kemasan tiruan. Konsultasi warna & jaminan bertulis. Sebut harga percuma di WhatsApp.",
+    },
+    zh: {
+      name: "特色墙面油漆",
+      tagline: "设计师特色墙面饰面——强调色、双色效果、质感与仿真饰面——适用于客厅与卧室。",
+      description:
+        "特色墙是您空间的视觉焦点。我们提供大胆色彩的强调色涂刷、干净的双色效果、质感饰面，以及混凝土、仿壁纸与仿大理石等仿真效果。每种饰面都根据您空间风格与光线量身设计。我们用精确的胶带与防护布保护周边区域，确保线条利落，施工后全面清洁。适合住宅与办公室的客厅、餐厅、主卧室与重点区域。",
+      highlights: [
+        "强调色与双色效果，线条利落",
+        "质感饰面与仿真效果（混凝土、仿壁纸、仿大理石）",
+        "根据空间光线进行配色规划",
+        "精确胶带与保护，边缘整洁",
+        "适用于客厅、餐厅与卧室",
+      ],
+      process: [
+        { step: "01", title: "设计咨询", desc: "讨论适合您空间与光线的风格、颜色与饰面。" },
+        { step: "02", title: "表面准备", desc: "清洁墙面、填补裂缝并打磨表面，确保饰面平滑。" },
+        { step: "03", title: "强调饰面", desc: "按所选设计涂刷强调色或饰面效果，边缘利落。" },
+        { step: "04", title: "检查与清洁", desc: "检查线条与饰面，清洁场地，确保效果整洁。" },
+      ],
+      faqs: [
+        { q: "什么是特色墙？", a: "特色墙是房间中一面用不同颜色或饰面粉刷的墙壁，用于营造视觉焦点。" },
+        { q: "你们提供哪些特色墙饰面？", a: "我们提供强调色、双色效果、质感饰面以及混凝土、仿壁纸等仿真效果。" },
+        { q: "特色墙多少钱？", a: "价格视墙面大小与饰面复杂度而定，勘查后提供报价。" },
+        { q: "以后能更改特色墙吗？", a: "可以，特色墙随时可以重新粉刷。强调色通常可通过标准重刷轻松更换。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪特色墙面油漆 | 报价",
+      metaDesc: "吉隆坡与雪兰莪设计师特色墙饰面——强调色、双色效果、质感与仿真饰面。配色咨询与书面保修。WhatsApp 免费报价。",
+    },
+  },
 
   /* ── CEILING & PARTITION ──────────────────────────────────────────────── */
   "ceiling/water-damaged-ceiling-repair": {

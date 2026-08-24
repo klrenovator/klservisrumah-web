@@ -179,6 +179,10 @@ export const topicalAuthorityMap: Record<string, TopicalSilo> = {
       { specialtySlug: "exterior-house-painting", relatedProblems: ["faded-exterior-paint-malaysia", "peeling-paint-malaysia"], relatedBlogs: ["when-to-repaint-your-house-malaysia", "when-to-repaint-condo-vs-repaint-terrace-house"] },
       { specialtySlug: "commercial-and-office-painting", relatedProblems: ["peeling-paint-malaysia", "paint-cracking-hairline-walls"], relatedBlogs: ["5-tips-choosing-paint-colors-malaysia"] },
       { specialtySlug: "wall-crack-and-moisture-repair", relatedProblems: ["damp-walls-paint-bubbling", "peeling-paint-malaysia", "paint-cracking-hairline-walls"], relatedBlogs: ["when-to-repaint-your-house-malaysia"] },
+      { specialtySlug: "condo-and-apartment-painting", relatedProblems: ["peeling-paint-malaysia", "yellowing-white-walls"], relatedBlogs: ["when-to-repaint-condo-vs-repaint-terrace-house"] },
+      { specialtySlug: "ceiling-painting", relatedProblems: ["peeling-paint-malaysia"], relatedBlogs: ["when-to-repaint-your-house-malaysia"] },
+      { specialtySlug: "wall-preparation-and-priming", relatedProblems: ["paint-cracking-hairline-walls", "peeling-paint-malaysia"], relatedBlogs: ["5-tips-choosing-paint-colors-malaysia"] },
+      { specialtySlug: "feature-wall-painting", relatedProblems: ["yellowing-white-walls"], relatedBlogs: ["5-tips-choosing-paint-colors-malaysia"] },
     ],
   },
   plumbing: {
