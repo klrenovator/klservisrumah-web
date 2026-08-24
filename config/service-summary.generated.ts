@@ -351,7 +351,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
         "name": "Bungalow Renovation"
       },
       {
-        "name": "Condo Renovation"
+        "name": "Condo Interior Refurbishment"
       },
       {
         "name": "Apartment Renovation"
@@ -391,7 +391,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
             "name": "Pengubahsuaian Banglo"
           },
           {
-            "name": "Pengubahsuaian Kondominium"
+            "name": "Pemulihan Interior Kondominium"
           },
           {
             "name": "Pengubahsuaian Apartmen"
@@ -724,7 +724,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
         "name": "Ceramic Tiles Installation"
       },
       {
-        "name": "Large Format Tiles"
+        "name": "Large-Format Slab Tiling"
       },
       {
         "name": "Mosaic Tiles Installation"
@@ -736,7 +736,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
         "name": "Kitchen Backsplash Tiling"
       },
       {
-        "name": "Tile Repair, Hollow Tile & Re-Grouting"
+        "name": "Tile Repair & Re-Grouting"
       },
       {
         "name": "Floor Leveling & Self-Leveling"
@@ -764,7 +764,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
             "name": "Pemasangan Jubin Seramik"
           },
           {
-            "name": "Jubin Format Besar"
+            "name": "Pemasangan Slab Format Besar"
           },
           {
             "name": "Pemasangan Jubin Mozek"
@@ -776,7 +776,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
             "name": "Jubin Backsplash Dapur"
           },
           {
-            "name": "Pembaikan Jubin, Jubin Berongga & Grout Semula"
+            "name": "Pembaikan Jubin & Grout Semula"
           },
           {
             "name": "Pemerataan Lantai & Self-Leveling"
@@ -804,7 +804,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
             "name": "陶瓷砖铺贴"
           },
           {
-            "name": "大板瓷砖"
+            "name": "超大板铺贴"
           },
           {
             "name": "马赛克瓷砖铺贴"
@@ -816,7 +816,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
             "name": "厨房挡水板贴砖"
           },
           {
-            "name": "瓷砖维修、空鼓与重新美缝"
+            "name": "瓷砖修补与重新勾缝"
           },
           {
             "name": "地面找平与自流平"
@@ -994,7 +994,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
         "name": "Floor Tile Installation"
       },
       {
-        "name": "Floor Tile Replacement & Tile Hacking"
+        "name": "Floor Tile Replacement & Subfloor Hacking"
       },
       {
         "name": "Porcelain & Ceramic Tiles"
@@ -1034,7 +1034,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
             "name": "Pemasangan Jubin Lantai"
           },
           {
-            "name": "Penggantian Jubin & Pemecahan Jubin"
+            "name": "Penggantian Jubin Lantai & Pemecahan Subfloor"
           },
           {
             "name": "Jubin Porselin & Seramik"
@@ -1074,7 +1074,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
             "name": "地面瓷砖安装"
           },
           {
-            "name": "地面瓷砖更换与拆除"
+            "name": "地面瓷砖更换与基层拆除"
           },
           {
             "name": "抛光砖与陶瓷砖"
@@ -2079,7 +2079,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
         "name": "Kitchen Countertop Replacement"
       },
       {
-        "name": "Kitchen Backsplash Tiling"
+        "name": "Kitchen Backsplash Tile Installation"
       },
       {
         "name": "Kitchen Island & Peninsula"
@@ -2113,7 +2113,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
             "name": "Penggantian Countertop Dapur"
           },
           {
-            "name": "Jubin Backsplash Dapur"
+            "name": "Pemasangan Jubin Backsplash Dapur"
           },
           {
             "name": "Island & Peninsula Dapur"
@@ -2147,7 +2147,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
             "name": "厨房台面更换"
           },
           {
-            "name": "厨房挡水板贴砖"
+            "name": "厨房防溅墙瓷砖安装"
           },
           {
             "name": "厨房中岛与半岛"

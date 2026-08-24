@@ -1,6 +1,6 @@
 # SEO Audit Report
 
-Generated: 2026-08-17T03:43:25.854Z
+Generated: 2026-08-24T17:12:09.652Z
 
 ## Route Inventory
 
@@ -38,6 +38,9 @@ Generated: 2026-08-17T03:43:25.854Z
 - /services/cctv
 - /services/autogate
 - /services/welding
+- /services/aircon
+- /services/kitchen-renovation
+- /services/bathroom-renovation
 - /areas/kuala-lumpur
 - /areas/petaling-jaya
 - /areas/subang-jaya
@@ -172,6 +175,15 @@ Generated: 2026-08-17T03:43:25.854Z
 - /problems/autogate-remote-not-working
 - /problems/loose-metal-gate-hinges
 - /problems/stuck-sliding-window
+- /problems/aircon-not-cold
+- /problems/aircon-water-leaking
+- /problems/aircon-making-noise
+- /problems/aircon-bad-smell
+- /problems/aircon-weak-airflow
+- /problems/aircon-not-turning-on
+- /problems/aircon-tripping-mcb
+- /problems/ice-forming-on-aircon
+- /problems/aircon-remote-display-issue
 - /blog/5-tips-choosing-paint-colors-malaysia
 - /blog/how-to-fix-leaking-ceiling-without-tile-hacking
 - /blog/when-to-repaint-your-house-malaysia
@@ -190,6 +202,11 @@ Generated: 2026-08-17T03:43:25.854Z
 - /blog/auto-gate-installation-guide-malaysia
 - /blog/when-to-repaint-condo-vs-repaint-terrace-house
 - /blog/how-to-hire-honest-contractor-malaysia
+- /blog/aircon-service-price-malaysia-2026
+- /blog/chemical-wash-vs-chemical-overhaul-aircon
+- /blog/aircon-gas-topup-guide-malaysia
+- /blog/aircon-installation-cost-malaysia
+- /blog/how-often-to-service-aircon-malaysia
 - /blog/plaster-ceiling-design-build-kl
 - /blog/flat-plaster-ceiling-kl
 - /blog/tiered-l-box-ceiling-kl
@@ -399,16 +416,16 @@ Generated: 2026-08-17T03:43:25.854Z
 
 ## Checks
 
-- Total representative routes: 392
-- Service pages: 28
+- Total representative routes: 409
+- Service pages: 31
 - Area pages: 37
 - Suburb records: 52
-- Problem pages: 77
-- Blog posts: 224
+- Problem pages: 86
+- Blog posts: 229
 
 ## Metadata consistency (post-build full-corpus)
 
-- Pages checked: 5303
+- Pages checked: 5888
 - Pages with hreflang while canonicalised to a different URL: 0
 
 _No issues found — every page that canonicalises to a different URL correctly omits hreflang (Google: canonical overrides hreflang)._
