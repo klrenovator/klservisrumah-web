@@ -113,6 +113,12 @@ All prices are the published starting prices shown on the live service pages. Fi
 - DB Box Upgrade & Rewiring — From RM 2,200
 - Lighting Point & Downlight Installation — From RM 120 / point
 - Aircond, Water Heater & Oven Point — From RM 220 / point
+- House Rewiring — From RM 2,200
+- Additional Power Points — From RM 150 / point
+- Switch Installation — From RM 150 / point
+- Kitchen Electrical — From RM 220 / point
+- Bathroom Electrical — From RM 220 / point
+- Renovation Electrical Work — On Quote
 - Cost guide: https://www.klservisrumah.my/services/electrical/cost
 
 ### Water Heater Installation & Repair
@@ -835,6 +841,6 @@ KL Servis Rumah publishes fair, upfront pricing benchmarked against the Klang Va
 - Sitemap: https://www.klservisrumah.my/sitemap.xml
 
 ## Scale
-- 31 services · 179 sub-services
+- 31 services · 185 sub-services
 - 37 area pages · 86 problem pages · 229 articles
-- 4,768 indexable pages listed in the sitemap
+- 4,786 indexable pages listed in the sitemap
