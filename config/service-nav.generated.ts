@@ -379,6 +379,32 @@ export const serviceNavBySlug: Record<string, ServiceNavItem> = {
         "title": "空调保养、维修与安装"
       }
     }
+  },
+  "kitchen-renovation": {
+    "slug": "kitchen-renovation",
+    "title": "Kitchen Renovation",
+    "startPrice": "RM 8,000",
+    "i18n": {
+      "ms": {
+        "title": "Pengubahsuaian Dapur"
+      },
+      "zh": {
+        "title": "厨房翻新"
+      }
+    }
+  },
+  "bathroom-renovation": {
+    "slug": "bathroom-renovation",
+    "title": "Bathroom Renovation",
+    "startPrice": "RM 6,000",
+    "i18n": {
+      "ms": {
+        "title": "Pengubahsuaian Bilik Mandi"
+      },
+      "zh": {
+        "title": "卫生间翻新"
+      }
+    }
   }
 };
 export const serviceNavList = Object.values(serviceNavBySlug);

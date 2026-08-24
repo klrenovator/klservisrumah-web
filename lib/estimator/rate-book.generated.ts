@@ -164,7 +164,7 @@ export type ServiceScopeBook = {
 };
 
 /**
- * Published sub-service pricing for all 29 services, powering the generic
+ * Published sub-service pricing for all 31 services, powering the generic
  * per-service estimator at `/services/[slug]` and `/tools/[slug]-calculator`.
  */
 export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
@@ -343,24 +343,67 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
         "desc": "Hacking, structural, ceiling, tiling, electrical, plumbing, painting, and final cleaning."
       },
       {
+        "name": "Partial House Renovation",
+        "amount": 12000,
+        "unit": "job",
+        "published": "From RM 12,000",
+        "desc": "Targeted renovation for specific areas — kitchen, bathroom, living or bedrooms — with isolated work zones."
+      },
+      {
+        "name": "Terrace House Renovation",
+        "amount": 22000,
+        "unit": "job",
+        "published": "From RM 22,000",
+        "desc": "End-to-end terrace house makeover: extension, kitchen, bathroom, flooring, ceiling, electrical and plumbing."
+      },
+      {
+        "name": "Semi-D Renovation",
+        "amount": 35000,
+        "unit": "job",
+        "published": "From RM 35,000",
+        "desc": "Semi-D house renovation with structural modifications, car porch, kitchen extension and interior finishes."
+      },
+      {
+        "name": "Bungalow Renovation",
+        "amount": 60000,
+        "unit": "job",
+        "published": "From RM 60,000",
+        "desc": "Bungalow full refurbishment including façade, roofing, outdoor, interior and M&E upgrades."
+      },
+      {
+        "name": "Condo Renovation",
+        "amount": 30000,
+        "unit": "job",
+        "published": "From RM 30,000",
+        "desc": "Full condo interior rebuild including management work-hour compliance, lift protection and debris handling."
+      },
+      {
+        "name": "Apartment Renovation",
+        "amount": 18000,
+        "unit": "job",
+        "published": "From RM 18,000",
+        "desc": "Apartment interior renovation with JMB compliance, waterproofing, tiling and painting."
+      },
+      {
         "name": "Kitchen & Bathroom Makeover",
         "amount": 10000,
         "unit": "job",
         "published": "From RM 10,000",
         "desc": "Demolition, retiling, waterproofing, new cabinetry, plumbing rerouting, and finishing."
-      },
-      {
-        "name": "Condo Interior Refurbishment",
-        "amount": 30000,
-        "unit": "job",
-        "published": "From RM 30,000",
-        "desc": "Full condo interior rebuild including management work-hour compliance and lift protection."
       }
     ],
     "quoteOnly": [
       {
+        "name": "House Extension",
+        "desc": "Kitchen, car porch, balcony or rear extension with brickwork, roofing and authority submission guidance."
+      },
+      {
         "name": "Commercial Shoplot Renovation",
         "desc": "Retail and F&B shop fit-outs with electrical upgrades, signage readiness, and fast-track delivery."
+      },
+      {
+        "name": "Renovation Contractor Services",
+        "desc": "Licensed contractor for design, hacking, structural, M&E, carpentry, painting and handover."
       }
     ]
   },
@@ -518,18 +561,67 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
         "desc": "Kitchen splashback, bathroom wall, and feature wall tiling with straight or brick-bond patterns."
       },
       {
-        "name": "Large-Format Slab Tiling",
+        "name": "Floor Tile Replacement & Tile Hacking",
+        "amount": 18,
+        "unit": "sqft",
+        "published": "From RM 18 / sq ft",
+        "desc": "Hacking old tiles, screeding, waterproofing and new tile installation with debris disposal."
+      },
+      {
+        "name": "Porcelain Tiles Installation",
+        "amount": 16,
+        "unit": "sqft",
+        "published": "From RM 16 / sq ft",
+        "desc": "Homogeneous porcelain tiles in matte, glossy, wood-look and stone-look finishes with rectified edges."
+      },
+      {
+        "name": "Ceramic Tiles Installation",
+        "amount": 14,
+        "unit": "sqft",
+        "published": "From RM 14 / sq ft",
+        "desc": "Ceramic wall and floor tiles for bathrooms, kitchens and balconies with colour-matched grout."
+      },
+      {
+        "name": "Large Format Tiles",
         "amount": 26,
         "unit": "sqft",
         "published": "From RM 26 / sq ft",
-        "desc": "600x1200mm, 800x1800mm, 1200x2400mm slabs with self-levelling, suction-cup lifters, and lippage tuning."
+        "desc": "600x1200mm, 800x800mm, 1200x2400mm slabs with self-levelling, suction-cup lifters, and lippage tuning."
       },
       {
-        "name": "Tile Repair & Re-Grouting",
+        "name": "Mosaic Tiles Installation",
         "amount": 22,
         "unit": "sqft",
         "published": "From RM 22 / sq ft",
-        "desc": "Removing hollow or cracked tiles, surface prep, replacement, and re-grouting with mould-resistant grout."
+        "desc": "Glass, porcelain and stone mosaic for backsplash, shower niche and feature walls with mesh backing."
+      },
+      {
+        "name": "Bathroom Tiling & Waterproofing",
+        "amount": 18,
+        "unit": "sqft",
+        "published": "From RM 18 / sq ft",
+        "desc": "Bathroom floor and wall tiling with 3-coat waterproofing membrane and 24-hour ponding test."
+      },
+      {
+        "name": "Kitchen Backsplash Tiling",
+        "amount": 18,
+        "unit": "sqft",
+        "published": "From RM 18 / sq ft",
+        "desc": "Kitchen backsplash tiling with subway, mosaic or large format tiles and anti-mould silicone sealing."
+      },
+      {
+        "name": "Tile Repair, Hollow Tile & Re-Grouting",
+        "amount": 22,
+        "unit": "sqft",
+        "published": "From RM 22 / sq ft",
+        "desc": "Removing hollow, cracked or broken tiles, surface prep, replacement, epoxy grout and silicone sealing."
+      },
+      {
+        "name": "Floor Leveling & Self-Leveling",
+        "amount": 8,
+        "unit": "sqft",
+        "published": "From RM 8 / sq ft",
+        "desc": "Cement screeding and self-leveling compound to correct uneven floors before tiling."
       }
     ],
     "quoteOnly": []
@@ -545,6 +637,20 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
         "desc": "Clean, single-level flat ceiling with skim coat finish — ideal for minimalist modern interiors."
       },
       {
+        "name": "False Ceiling Installation",
+        "amount": 10,
+        "unit": "sqft",
+        "published": "From RM 10 / sq ft",
+        "desc": "General false ceiling for homes and offices with GI frame and moisture-resistant boards."
+      },
+      {
+        "name": "Gypsum Ceiling",
+        "amount": 10,
+        "unit": "sqft",
+        "published": "From RM 10 / sq ft",
+        "desc": "Gypsum board ceiling with fire-rated and moisture-resistant options from Knauf, BNBM, Gyproc."
+      },
+      {
         "name": "Tiered & L-Box Ceiling",
         "amount": 14,
         "unit": "sqft",
@@ -557,6 +663,41 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
         "unit": "sqft",
         "published": "From RM 22 / sq ft",
         "desc": "Custom curved, cove, or barrel ceiling with flexible GI framing for ambient indirect lighting."
+      },
+      {
+        "name": "Gypsum Partition & Office Partition",
+        "amount": 11,
+        "unit": "sqft",
+        "published": "From RM 11 / sq ft",
+        "desc": "Gypsum board partition for room division, office cubicles and meeting rooms with sound insulation option."
+      },
+      {
+        "name": "Room Partition",
+        "amount": 11,
+        "unit": "sqft",
+        "published": "From RM 11 / sq ft",
+        "desc": "Bedroom, study or storage room partition with door opening and electrical point provisions."
+      },
+      {
+        "name": "Feature Wall & Wall Panel",
+        "amount": 18,
+        "unit": "sqft",
+        "published": "From RM 18 / sq ft",
+        "desc": "TV feature wall, fluted panel, wainscoting and decorative wall panel with concealed LED."
+      },
+      {
+        "name": "Skim Coat & Wall Plastering",
+        "amount": 5,
+        "unit": "sqft",
+        "published": "From RM 5 / sq ft",
+        "desc": "Glass-smooth skim coating and wall plastering for paint-ready finish and crack repair."
+      },
+      {
+        "name": "Wall Crack Repair & Repainting",
+        "amount": 180,
+        "unit": "job",
+        "published": "From RM 180",
+        "desc": "Hairline and structural crack filling, sanding, sealer and premium repainting for flawless finish."
       },
       {
         "name": "Ceiling Repair & Re-Skim",
@@ -625,6 +766,55 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
         "unit": "sqft",
         "published": "From RM 16 / sq ft",
         "desc": "100% waterproof LVP with realistic wood grain, perfect for wet kitchens, bathrooms, and basement."
+      },
+      {
+        "name": "Vinyl Flooring Installation",
+        "amount": 12,
+        "unit": "sqft",
+        "published": "From RM 12 / sq ft",
+        "desc": "Sheet or plank vinyl flooring for wet areas, kitchens and commercial spaces with welded seams."
+      },
+      {
+        "name": "Floor Tile Installation",
+        "amount": 14,
+        "unit": "sqft",
+        "published": "From RM 14 / sq ft",
+        "desc": "Porcelain, ceramic, large format and mosaic tile installation for new builds and renovations."
+      },
+      {
+        "name": "Floor Tile Replacement & Tile Hacking",
+        "amount": 18,
+        "unit": "sqft",
+        "published": "From RM 18 / sq ft",
+        "desc": "Hacking old tiles, screeding, waterproofing and new tile installation with debris disposal."
+      },
+      {
+        "name": "Porcelain & Ceramic Tiles",
+        "amount": 16,
+        "unit": "sqft",
+        "published": "From RM 16 / sq ft",
+        "desc": "Supply and install homogeneous porcelain and ceramic tiles in matte, glossy or wood-look finishes."
+      },
+      {
+        "name": "Large Format & Mosaic Tiles",
+        "amount": 22,
+        "unit": "sqft",
+        "published": "From RM 22 / sq ft",
+        "desc": "Large slab 600x1200mm, 800x800mm and mosaic pattern installation with levelling clips."
+      },
+      {
+        "name": "Floor Leveling & Screeding",
+        "amount": 8,
+        "unit": "sqft",
+        "published": "From RM 8 / sq ft",
+        "desc": "Self-leveling compound and cement screeding to correct uneven floors before flooring installation."
+      },
+      {
+        "name": "Hollow Tile & Uneven Floor Repair",
+        "amount": 250,
+        "unit": "job",
+        "published": "From RM 250",
+        "desc": "Tap-test hollow tile detection, removal and re-bedding, plus uneven floor grinding and leveling."
       },
       {
         "name": "Skirting & Transition Strip Fitting",
@@ -1170,6 +1360,163 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
         "unit": "job",
         "published": "From RM 117",
         "desc": "Dismantle only from RM 117, nearby reinstall from RM 325, and different-location relocation from RM 455."
+      }
+    ],
+    "quoteOnly": []
+  },
+  "kitchen-renovation": {
+    "startPrice": 8000,
+    "scopes": [
+      {
+        "name": "Full Kitchen Renovation",
+        "amount": 8000,
+        "unit": "job",
+        "published": "From RM 8,000",
+        "desc": "Complete kitchen rebuild: hacking, waterproofing, tiling, cabinets, countertop, plumbing, electrical and painting."
+      },
+      {
+        "name": "Kitchen Cabinet Installation",
+        "amount": 4500,
+        "unit": "job",
+        "published": "From RM 4,500",
+        "desc": "Custom base, wall and tall cabinets with soft-close hinges, drawer systems and pantry pull-outs."
+      },
+      {
+        "name": "Kitchen Countertop Replacement",
+        "amount": 1800,
+        "unit": "job",
+        "published": "From RM 1,800",
+        "desc": "Quartz, granite or sintered stone countertop supply and install with sink cut-out and edge profile."
+      },
+      {
+        "name": "Kitchen Backsplash Tiling",
+        "amount": 18,
+        "unit": "sqft",
+        "published": "From RM 18 / sq ft",
+        "desc": "Porcelain, ceramic, mosaic or subway backsplash tiling with grout colour matching and anti-mould seal."
+      },
+      {
+        "name": "Kitchen Island & Peninsula",
+        "amount": 2200,
+        "unit": "job",
+        "published": "From RM 2,200",
+        "desc": "Custom island or peninsula with storage, breakfast bar, power points and waterfall edge option."
+      },
+      {
+        "name": "Wet Kitchen Renovation",
+        "amount": 6500,
+        "unit": "job",
+        "published": "From RM 6,500",
+        "desc": "Heavy-duty wet kitchen for wok cooking: floor trap, stainless steel sink, wall tiles to ceiling, strong ventilation."
+      },
+      {
+        "name": "Dry Kitchen Renovation",
+        "amount": 5500,
+        "unit": "job",
+        "published": "From RM 5,500",
+        "desc": "Modern dry kitchen with island, display cabinets, wine rack and ambient lighting for entertaining."
+      },
+      {
+        "name": "Kitchen Plumbing & Electrical",
+        "amount": 950,
+        "unit": "job",
+        "published": "From RM 950",
+        "desc": "Sink, dishwasher, water filter point, oven, hob, hood, extra 13A/15A power points and LED lighting."
+      }
+    ],
+    "quoteOnly": [
+      {
+        "name": "Kitchen Extension",
+        "desc": "Rear or side kitchen extension with brickwork, roofing, waterproofing and DBKL/MBSA guidance where required."
+      }
+    ]
+  },
+  "bathroom-renovation": {
+    "startPrice": 6000,
+    "scopes": [
+      {
+        "name": "Full Bathroom Renovation",
+        "amount": 6000,
+        "unit": "job",
+        "published": "From RM 6,000",
+        "desc": "Complete bathroom rebuild: hacking, waterproofing with ponding test, tiling, plumbing, sanitary and electrical."
+      },
+      {
+        "name": "Toilet Renovation",
+        "amount": 4500,
+        "unit": "job",
+        "published": "From RM 4,500",
+        "desc": "Small toilet/WC renovation: WC replacement, wall and floor tiling, plumbing and ventilation."
+      },
+      {
+        "name": "Bathroom Makeover",
+        "amount": 5500,
+        "unit": "job",
+        "published": "From RM 5,500",
+        "desc": "Cosmetic makeover without major hacking: retiling, new vanity, shower and lighting upgrade."
+      },
+      {
+        "name": "Shower Area Renovation",
+        "amount": 2800,
+        "unit": "job",
+        "published": "From RM 2,800",
+        "desc": "Shower area rebuild: waterproofing, anti-slip floor tiles, rain shower, glass screen and niche."
+      },
+      {
+        "name": "Bathroom Tiling",
+        "amount": 16,
+        "unit": "sqft",
+        "published": "From RM 16 / sq ft",
+        "desc": "Bathroom wall and floor tiling with straight, brick-bond or herringbone patterns, epoxy grout."
+      },
+      {
+        "name": "Bathroom Waterproofing",
+        "amount": 1200,
+        "unit": "job",
+        "published": "From RM 1,200",
+        "desc": "Cementitious membrane, 3 coats, with 24–48 hour ponding test and warranty. No-hack PU injection also available."
+      },
+      {
+        "name": "Bathroom Plumbing",
+        "amount": 850,
+        "unit": "job",
+        "published": "From RM 850",
+        "desc": "Hot and cold pipe reroute, floor trap replacement, drainage correction and pressure test."
+      },
+      {
+        "name": "Sanitary Installation",
+        "amount": 650,
+        "unit": "job",
+        "published": "From RM 650",
+        "desc": "WC, basin, vanity cabinet, shower set, rain shower, bathtub and accessories installation."
+      },
+      {
+        "name": "Bathroom Floor Replacement",
+        "amount": 1800,
+        "unit": "job",
+        "published": "From RM 1,800",
+        "desc": "Hacking old floor, rescreed with slope, waterproofing, new anti-slip floor tiles."
+      },
+      {
+        "name": "Bathroom Wall Tile Replacement",
+        "amount": 2200,
+        "unit": "job",
+        "published": "From RM 2,200",
+        "desc": "Hacking old wall tiles, replaster, waterproofing and new wall tiles with trim and silicone."
+      },
+      {
+        "name": "Bathroom Ceiling Repair",
+        "amount": 450,
+        "unit": "job",
+        "published": "From RM 450",
+        "desc": "Moisture-resistant gypsum or aluminium ceiling replacement with exhaust fan point and LED lighting."
+      },
+      {
+        "name": "Bathroom Leak Repair",
+        "amount": 350,
+        "unit": "job",
+        "published": "From RM 350",
+        "desc": "Leak diagnosis with thermal imaging, PU injection or membrane repair, and ceiling restoration below."
       }
     ],
     "quoteOnly": []

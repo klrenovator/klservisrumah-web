@@ -634,6 +634,20 @@ export const contentNavList: ContentNavItem[] = [
     "relatedServiceSlug": "aircon"
   },
   {
+    "slug": "kitchen-renovation-services-kl",
+    "title": "Commercial Kitchen Renovation in KL",
+    "category": "Commercial",
+    "intro": "Commercial kitchen renovation focuses on offices, retail lots, showrooms, warehouses, and strata facilities that need ti",
+    "relatedServiceSlug": "kitchen-renovation"
+  },
+  {
+    "slug": "bathroom-renovation-services-kl",
+    "title": "Commercial Bathroom Renovation in KL",
+    "category": "Commercial",
+    "intro": "Commercial bathroom renovation focuses on offices, retail lots, showrooms, warehouses, and strata facilities that need t",
+    "relatedServiceSlug": "bathroom-renovation"
+  },
+  {
     "slug": "painting-services-kl",
     "title": "Residential House Painting Services in KL",
     "category": "Residential",
@@ -835,6 +849,20 @@ export const contentNavList: ContentNavItem[] = [
     "category": "Residential",
     "intro": "Residential aircon service, repair & installation supports condos, apartments, terrace homes, semi-Ds, bungalows, and re",
     "relatedServiceSlug": "aircon"
+  },
+  {
+    "slug": "kitchen-renovation-services-kl",
+    "title": "Residential Kitchen Renovation in KL",
+    "category": "Residential",
+    "intro": "Residential kitchen renovation supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental units across K",
+    "relatedServiceSlug": "kitchen-renovation"
+  },
+  {
+    "slug": "bathroom-renovation-services-kl",
+    "title": "Residential Bathroom Renovation in KL",
+    "category": "Residential",
+    "intro": "Residential bathroom renovation supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental units across ",
+    "relatedServiceSlug": "bathroom-renovation"
   },
   {
     "slug": "nippon-paint-application-malaysia",
@@ -1324,6 +1352,20 @@ export const contentNavList: ContentNavItem[] = [
     "relatedServiceSlug": "aircon"
   },
   {
+    "slug": "kitchen-renovation-ultimate-guide",
+    "title": "Kitchen Renovation Ultimate Guide for KL & Selangor",
+    "category": "AI Answer Guide",
+    "intro": "Kitchen Renovation in KL and Selangor should be priced fairly and openly, scoped clearly, performed by insured and backg",
+    "relatedServiceSlug": "kitchen-renovation"
+  },
+  {
+    "slug": "bathroom-renovation-ultimate-guide",
+    "title": "Bathroom Renovation Ultimate Guide for KL & Selangor",
+    "category": "AI Answer Guide",
+    "intro": "Bathroom Renovation in KL and Selangor should be priced fairly and openly, scoped clearly, performed by insured and back",
+    "relatedServiceSlug": "bathroom-renovation"
+  },
+  {
     "slug": "painting-process-kl",
     "title": "House Painting Services Process in KL",
     "category": "Process",
@@ -1525,6 +1567,20 @@ export const contentNavList: ContentNavItem[] = [
     "category": "Process",
     "intro": "A step-by-step process page for aircon service, repair & installation, including preparation, execution, quality checks,",
     "relatedServiceSlug": "aircon"
+  },
+  {
+    "slug": "kitchen-renovation-process-kl",
+    "title": "Kitchen Renovation Process in KL",
+    "category": "Process",
+    "intro": "A step-by-step process page for kitchen renovation, including preparation, execution, quality checks, and warranty hando",
+    "relatedServiceSlug": "kitchen-renovation"
+  },
+  {
+    "slug": "bathroom-renovation-process-kl",
+    "title": "Bathroom Renovation Process in KL",
+    "category": "Process",
+    "intro": "A step-by-step process page for bathroom renovation, including preparation, execution, quality checks, and warranty hand",
+    "relatedServiceSlug": "bathroom-renovation"
   }
 ];
 
@@ -1621,8 +1677,8 @@ export const contentRelatedServiceBySlug: Record<string, ContentRelatedServiceLi
         "desc": "Hacking, structural, ceiling, tiling, electrical, plumbing, painting, and final cleaning."
       },
       {
-        "name": "Kitchen & Bathroom Makeover",
-        "desc": "Demolition, retiling, waterproofing, new cabinetry, plumbing rerouting, and finishing."
+        "name": "Partial House Renovation",
+        "desc": "Targeted renovation for specific areas — kitchen, bathroom, living or bedrooms — with isolated work zones."
       }
     ]
   },
@@ -1711,8 +1767,8 @@ export const contentRelatedServiceBySlug: Record<string, ContentRelatedServiceLi
         "desc": "Clean, single-level flat ceiling with skim coat finish — ideal for minimalist modern interiors."
       },
       {
-        "name": "Tiered & L-Box Ceiling",
-        "desc": "Two or three-tier ceiling with concealed LED trough, L-box profile, and integrated downlight cutouts."
+        "name": "False Ceiling Installation",
+        "desc": "General false ceiling for homes and offices with GI frame and moisture-resistant boards."
       }
     ]
   },
@@ -1968,6 +2024,36 @@ export const contentRelatedServiceBySlug: Record<string, ContentRelatedServiceLi
       {
         "name": "Chemical Wash",
         "desc": "Pressure chemical wash of coils and blower without full dismantling, from RM 156."
+      }
+    ]
+  },
+  "kitchen-renovation": {
+    "slug": "kitchen-renovation",
+    "title": "Kitchen Renovation",
+    "tagline": "Complete kitchen makeover: hacking, tiling, waterproofing, cabinetry, countertop, plumbing, electrical and lighting across KL & Selangor. From RM 8,000.",
+    "subServices": [
+      {
+        "name": "Full Kitchen Renovation",
+        "desc": "Complete kitchen rebuild: hacking, waterproofing, tiling, cabinets, countertop, plumbing, electrical and painting."
+      },
+      {
+        "name": "Kitchen Cabinet Installation",
+        "desc": "Custom base, wall and tall cabinets with soft-close hinges, drawer systems and pantry pull-outs."
+      }
+    ]
+  },
+  "bathroom-renovation": {
+    "slug": "bathroom-renovation",
+    "title": "Bathroom Renovation",
+    "tagline": "Full bathroom and toilet makeover: hacking, waterproofing, tiling, plumbing, sanitary, electrical and ventilation in KL & Selangor. From RM 6,000.",
+    "subServices": [
+      {
+        "name": "Full Bathroom Renovation",
+        "desc": "Complete bathroom rebuild: hacking, waterproofing with ponding test, tiling, plumbing, sanitary and electrical."
+      },
+      {
+        "name": "Toilet Renovation",
+        "desc": "Small toilet/WC renovation: WC replacement, wall and floor tiling, plumbing and ventilation."
       }
     ]
   }

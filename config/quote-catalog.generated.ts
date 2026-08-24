@@ -461,19 +461,54 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
         "desc": "Hacking, structural, ceiling, tiling, electrical, plumbing, painting, and final cleaning."
       },
       {
+        "name": "Partial House Renovation",
+        "price": "From RM 12,000",
+        "desc": "Targeted renovation for specific areas — kitchen, bathroom, living or bedrooms — with isolated work zones."
+      },
+      {
+        "name": "Terrace House Renovation",
+        "price": "From RM 22,000",
+        "desc": "End-to-end terrace house makeover: extension, kitchen, bathroom, flooring, ceiling, electrical and plumbing."
+      },
+      {
+        "name": "Semi-D Renovation",
+        "price": "From RM 35,000",
+        "desc": "Semi-D house renovation with structural modifications, car porch, kitchen extension and interior finishes."
+      },
+      {
+        "name": "Bungalow Renovation",
+        "price": "From RM 60,000",
+        "desc": "Bungalow full refurbishment including façade, roofing, outdoor, interior and M&E upgrades."
+      },
+      {
+        "name": "Condo Renovation",
+        "price": "From RM 30,000",
+        "desc": "Full condo interior rebuild including management work-hour compliance, lift protection and debris handling."
+      },
+      {
+        "name": "Apartment Renovation",
+        "price": "From RM 18,000",
+        "desc": "Apartment interior renovation with JMB compliance, waterproofing, tiling and painting."
+      },
+      {
         "name": "Kitchen & Bathroom Makeover",
         "price": "From RM 10,000",
         "desc": "Demolition, retiling, waterproofing, new cabinetry, plumbing rerouting, and finishing."
       },
       {
-        "name": "Condo Interior Refurbishment",
-        "price": "From RM 30,000",
-        "desc": "Full condo interior rebuild including management work-hour compliance and lift protection."
+        "name": "House Extension",
+        "price": "On Quote",
+        "desc": "Kitchen, car porch, balcony or rear extension with brickwork, roofing and authority submission guidance."
       },
       {
         "name": "Commercial Shoplot Renovation",
         "price": "On Quote",
         "desc": "Retail and F&B shop fit-outs with electrical upgrades, signage readiness, and fast-track delivery."
+      },
+      {
+        "name": "Renovation Contractor Services",
+        "price": "On Quote",
+        "desc": "Licensed contractor for design, hacking, structural, M&E, carpentry, painting and handover."
       }
     ],
     "i18n": {
@@ -488,19 +523,54 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "desc": "Perobohan, struktur, siling, jubin, elektrik, paip, pengecatan, dan cucian akhir."
           },
           {
+            "name": "Pengubahsuaian Separa Rumah",
+            "price": "Dari RM 12,000",
+            "desc": "Pengubahsuaian bertumpu untuk kawasan tertentu — dapur, bilik mandi, ruang tamu atau bilik tidur — dengan zon kerja berasingan."
+          },
+          {
+            "name": "Pengubahsuaian Rumah Teres",
+            "price": "Dari RM 22,000",
+            "desc": "Makeover rumah teres hujung-ke-hujung: sambungan, dapur, bilik mandi, lantai, siling, elektrik dan paip."
+          },
+          {
+            "name": "Pengubahsuaian Semi-D",
+            "price": "Dari RM 35,000",
+            "desc": "Pengubahsuaian rumah Semi-D dengan modifikasi struktur, porch kereta, sambungan dapur dan kemasan interior."
+          },
+          {
+            "name": "Pengubahsuaian Banglo",
+            "price": "Dari RM 60,000",
+            "desc": "Pemulihan penuh banglo termasuk fasad, bumbung, luar, interior dan naik taraf M&E."
+          },
+          {
+            "name": "Pengubahsuaian Kondominium",
+            "price": "Dari RM 30,000",
+            "desc": "Pembinaan semula interior kondominium penuh termasuk pematuhan waktu kerja pengurusan, perlindungan lif dan pengendalian serpihan."
+          },
+          {
+            "name": "Pengubahsuaian Apartmen",
+            "price": "Dari RM 18,000",
+            "desc": "Pengubahsuaian interior apartmen dengan pematuhan JMB, kalis air, jubin dan pengecatan."
+          },
+          {
             "name": "Makeover Dapur & Bilik Mandi",
             "price": "Dari RM 10,000",
             "desc": "Perobohan, jubin semula, kalis air, kabinet baru, ubah hala paip, dan kemasan."
           },
           {
-            "name": "Pemulihan Interior Kondominium",
-            "price": "Dari RM 30,000",
-            "desc": "Pemulihan interior kondominium penuh termasuk pematuhan waktu kerja pengurusan dan perlindungan lif."
+            "name": "Sambungan Rumah",
+            "price": "Atas Sebut Harga",
+            "desc": "Sambungan dapur, porch kereta, balkoni atau belakang dengan kerja bata, bumbung dan panduan penyerahan pihak berkuasa."
           },
           {
             "name": "Pengubahsuaian Shoplot Komersial",
             "price": "Atas Sebut Harga",
             "desc": "Fit-out runcit dan F&B dengan peningkatan elektrik, kesediaan papan tanda, dan penghantaran pantas."
+          },
+          {
+            "name": "Perkhidmatan Kontraktor Pengubahsuaian",
+            "price": "Atas Sebut Harga",
+            "desc": "Kontraktor berlesen untuk reka bentuk, perobohan, struktur, M&E, pertukangan, pengecatan dan serahan."
           }
         ]
       },
@@ -515,9 +585,24 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "desc": "拆除、结构、天花板、瓷砖、水电、油漆与最终清洁。"
           },
           {
-            "name": "厨房与卫生间翻新",
-            "price": "从 RM 10,000 起",
-            "desc": "拆除、重新铺砖、防水、新橱柜、水管改道与完工。"
+            "name": "局部房屋翻新",
+            "price": "从 RM 12,000 起",
+            "desc": "针对特定区域的翻新——厨房、卫生间、客厅或卧室——带独立施工隔离区。"
+          },
+          {
+            "name": "排屋翻新",
+            "price": "从 RM 22,000 起",
+            "desc": "排屋端到端改造：扩建、厨房、卫生间、地板、天花、水电。"
+          },
+          {
+            "name": "半独立式翻新",
+            "price": "从 RM 35,000 起",
+            "desc": "半独立式住宅翻新，含结构改动、车棚、厨房扩建与室内饰面。"
+          },
+          {
+            "name": "独栋洋房翻新",
+            "price": "从 RM 60,000 起",
+            "desc": "洋房全面翻新，含外立面、屋顶、户外、室内与机电升级。"
           },
           {
             "name": "公寓室内翻新",
@@ -525,9 +610,29 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "desc": "全公寓室内重建，包括管理处工时合规与电梯保护。"
           },
           {
+            "name": "公寓单元翻新",
+            "price": "从 RM 18,000 起",
+            "desc": "公寓室内翻新，含 JMB 合规、防水、贴砖与油漆。"
+          },
+          {
+            "name": "厨房与卫生间翻新",
+            "price": "从 RM 10,000 起",
+            "desc": "拆除、重新铺砖、防水、新橱柜、水管改道与完工。"
+          },
+          {
+            "name": "房屋扩建",
+            "price": "依报价",
+            "desc": "厨房、车棚、阳台或后部扩建，含砌砖、屋顶与报批指引。"
+          },
+          {
             "name": "商业店铺翻新",
             "price": "依报价",
             "desc": "零售与餐饮店铺装修，电路升级、招牌就位与快速交付。"
+          },
+          {
+            "name": "翻新承包商服务",
+            "price": "依报价",
+            "desc": "持牌承包商负责设计、拆除、结构、机电、木工、油漆与交付。"
           }
         ]
       }
@@ -891,14 +996,49 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
         "desc": "Kitchen splashback, bathroom wall, and feature wall tiling with straight or brick-bond patterns."
       },
       {
-        "name": "Large-Format Slab Tiling",
-        "price": "From RM 26 / sq ft",
-        "desc": "600x1200mm, 800x1800mm, 1200x2400mm slabs with self-levelling, suction-cup lifters, and lippage tuning."
+        "name": "Floor Tile Replacement & Tile Hacking",
+        "price": "From RM 18 / sq ft",
+        "desc": "Hacking old tiles, screeding, waterproofing and new tile installation with debris disposal."
       },
       {
-        "name": "Tile Repair & Re-Grouting",
+        "name": "Porcelain Tiles Installation",
+        "price": "From RM 16 / sq ft",
+        "desc": "Homogeneous porcelain tiles in matte, glossy, wood-look and stone-look finishes with rectified edges."
+      },
+      {
+        "name": "Ceramic Tiles Installation",
+        "price": "From RM 14 / sq ft",
+        "desc": "Ceramic wall and floor tiles for bathrooms, kitchens and balconies with colour-matched grout."
+      },
+      {
+        "name": "Large Format Tiles",
+        "price": "From RM 26 / sq ft",
+        "desc": "600x1200mm, 800x800mm, 1200x2400mm slabs with self-levelling, suction-cup lifters, and lippage tuning."
+      },
+      {
+        "name": "Mosaic Tiles Installation",
         "price": "From RM 22 / sq ft",
-        "desc": "Removing hollow or cracked tiles, surface prep, replacement, and re-grouting with mould-resistant grout."
+        "desc": "Glass, porcelain and stone mosaic for backsplash, shower niche and feature walls with mesh backing."
+      },
+      {
+        "name": "Bathroom Tiling & Waterproofing",
+        "price": "From RM 18 / sq ft",
+        "desc": "Bathroom floor and wall tiling with 3-coat waterproofing membrane and 24-hour ponding test."
+      },
+      {
+        "name": "Kitchen Backsplash Tiling",
+        "price": "From RM 18 / sq ft",
+        "desc": "Kitchen backsplash tiling with subway, mosaic or large format tiles and anti-mould silicone sealing."
+      },
+      {
+        "name": "Tile Repair, Hollow Tile & Re-Grouting",
+        "price": "From RM 22 / sq ft",
+        "desc": "Removing hollow, cracked or broken tiles, surface prep, replacement, epoxy grout and silicone sealing."
+      },
+      {
+        "name": "Floor Leveling & Self-Leveling",
+        "price": "From RM 8 / sq ft",
+        "desc": "Cement screeding and self-leveling compound to correct uneven floors before tiling."
       }
     ],
     "i18n": {
@@ -918,14 +1058,49 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "desc": "Splashback dapur, dinding bilik mandi, dan jubin dinding ciri dengan corak lurus atau bata."
           },
           {
-            "name": "Slab Format Besar",
-            "price": "Dari RM 26 / sq ft",
-            "desc": "Slab 600x1200mm, 800x1800mm, 1200x2400mm dengan self-levelling, cawan sedutan, dan lippage tuning."
+            "name": "Penggantian Jubin & Pemecahan Jubin",
+            "price": "Dari RM 18 / sq ft",
+            "desc": "Pemecahan jubin lama, screed, kalis air dan pemasangan jubin baru dengan pelupusan serpihan."
           },
           {
-            "name": "Pembaikan & Grout Semula",
+            "name": "Pemasangan Jubin Porselin",
+            "price": "Dari RM 16 / sq ft",
+            "desc": "Jubin porselin homogen dalam kemasan matte, berkilat, rupa kayu dan rupa batu dengan tepi rectified."
+          },
+          {
+            "name": "Pemasangan Jubin Seramik",
+            "price": "Dari RM 14 / sq ft",
+            "desc": "Jubin seramik dinding dan lantai untuk bilik mandi, dapur dan balkoni dengan grout sepadan warna."
+          },
+          {
+            "name": "Jubin Format Besar",
+            "price": "Dari RM 26 / sq ft",
+            "desc": "Slab 600x1200mm, 800x800mm, 1200x2400mm dengan self-levelling, cawan sedutan, dan lippage tuning."
+          },
+          {
+            "name": "Pemasangan Jubin Mozek",
             "price": "Dari RM 22 / sq ft",
-            "desc": "Menyingkirkan jubin berongga atau retak, penyediaan permukaan, penggantian, dan grout semula dengan grout tahan kulat."
+            "desc": "Mozek kaca, porselin dan batu untuk backsplash, niche pancuran dan dinding ciri dengan backing mesh."
+          },
+          {
+            "name": "Jubin Bilik Mandi & Kalis Air",
+            "price": "Dari RM 18 / sq ft",
+            "desc": "Jubin lantai dan dinding bilik mandi dengan membran kalis air 3 lapisan dan ujian kolam 24 jam."
+          },
+          {
+            "name": "Jubin Backsplash Dapur",
+            "price": "Dari RM 18 / sq ft",
+            "desc": "Jubin backsplash dapur dengan jubin subway, mozek atau format besar dan seal silikon anti-kulat."
+          },
+          {
+            "name": "Pembaikan Jubin, Jubin Berongga & Grout Semula",
+            "price": "Dari RM 22 / sq ft",
+            "desc": "Menanggalkan jubin berongga, retak atau pecah, penyediaan permukaan, penggantian, grout epoxy dan sealing silikon."
+          },
+          {
+            "name": "Pemerataan Lantai & Self-Leveling",
+            "price": "Dari RM 8 / sq ft",
+            "desc": "Screed simen dan sebatian self-leveling untuk membetulkan lantai tidak rata sebelum jubin."
           }
         ]
       },
@@ -945,14 +1120,49 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "desc": "厨房防溅墙、卫生间墙面、主题墙铺贴，可选直拼或工字拼。"
           },
           {
-            "name": "超大板铺贴",
-            "price": "从 RM 26 / sq ft 起",
-            "desc": "600x1200mm、800x1800mm、1200x2400mm 超大板，自流平、吸盘与找平器配套。"
+            "name": "地面瓷砖更换与拆除",
+            "price": "从 RM 18 / sq ft 起",
+            "desc": "拆除旧砖、找平、防水与新砖安装，含垃圾清运。"
           },
           {
-            "name": "瓷砖修补与重新勾缝",
+            "name": "抛光砖铺贴",
+            "price": "从 RM 16 / sq ft 起",
+            "desc": "通体抛光砖，哑光、亮光、木纹与石纹饰面，倒角处理。"
+          },
+          {
+            "name": "陶瓷砖铺贴",
+            "price": "从 RM 14 / sq ft 起",
+            "desc": "浴室、厨房与阳台墙地陶瓷砖，配色美缝。"
+          },
+          {
+            "name": "大板瓷砖",
+            "price": "从 RM 26 / sq ft 起",
+            "desc": "600x1200mm、800x800mm、1200x2400mm 大板，自流平、吸盘与找平器配套。"
+          },
+          {
+            "name": "马赛克瓷砖铺贴",
             "price": "从 RM 22 / sq ft 起",
-            "desc": "拆除空鼓或开裂瓷砖、基层处理、换新与防霉勾缝剂重新勾缝。"
+            "desc": "玻璃、陶瓷与石材马赛克，用于挡水板、淋浴壁龛与背景墙，带网背。"
+          },
+          {
+            "name": "卫生间贴砖与防水",
+            "price": "从 RM 18 / sq ft 起",
+            "desc": "卫生间地面与墙面贴砖，含3层防水膜与24小时蓄水测试。"
+          },
+          {
+            "name": "厨房挡水板贴砖",
+            "price": "从 RM 18 / sq ft 起",
+            "desc": "厨房挡水板贴砖，面包砖、马赛克或大板，防霉硅胶收口。"
+          },
+          {
+            "name": "瓷砖维修、空鼓与重新美缝",
+            "price": "从 RM 22 / sq ft 起",
+            "desc": "拆除空鼓、开裂或破损瓷砖、基层处理、更换、环氧美缝与硅胶密封。"
+          },
+          {
+            "name": "地面找平与自流平",
+            "price": "从 RM 8 / sq ft 起",
+            "desc": "水泥砂浆找平与自流平，纠正不平地面后再贴砖。"
           }
         ]
       }
@@ -971,6 +1181,16 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
         "desc": "Clean, single-level flat ceiling with skim coat finish — ideal for minimalist modern interiors."
       },
       {
+        "name": "False Ceiling Installation",
+        "price": "From RM 10 / sq ft",
+        "desc": "General false ceiling for homes and offices with GI frame and moisture-resistant boards."
+      },
+      {
+        "name": "Gypsum Ceiling",
+        "price": "From RM 10 / sq ft",
+        "desc": "Gypsum board ceiling with fire-rated and moisture-resistant options from Knauf, BNBM, Gyproc."
+      },
+      {
         "name": "Tiered & L-Box Ceiling",
         "price": "From RM 14 / sq ft",
         "desc": "Two or three-tier ceiling with concealed LED trough, L-box profile, and integrated downlight cutouts."
@@ -979,6 +1199,31 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
         "name": "Cove & Curved Ceiling",
         "price": "From RM 22 / sq ft",
         "desc": "Custom curved, cove, or barrel ceiling with flexible GI framing for ambient indirect lighting."
+      },
+      {
+        "name": "Gypsum Partition & Office Partition",
+        "price": "From RM 11 / sq ft",
+        "desc": "Gypsum board partition for room division, office cubicles and meeting rooms with sound insulation option."
+      },
+      {
+        "name": "Room Partition",
+        "price": "From RM 11 / sq ft",
+        "desc": "Bedroom, study or storage room partition with door opening and electrical point provisions."
+      },
+      {
+        "name": "Feature Wall & Wall Panel",
+        "price": "From RM 18 / sq ft",
+        "desc": "TV feature wall, fluted panel, wainscoting and decorative wall panel with concealed LED."
+      },
+      {
+        "name": "Skim Coat & Wall Plastering",
+        "price": "From RM 5 / sq ft",
+        "desc": "Glass-smooth skim coating and wall plastering for paint-ready finish and crack repair."
+      },
+      {
+        "name": "Wall Crack Repair & Repainting",
+        "price": "From RM 180",
+        "desc": "Hairline and structural crack filling, sanding, sealer and premium repainting for flawless finish."
       },
       {
         "name": "Ceiling Repair & Re-Skim",
@@ -1151,6 +1396,41 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
         "desc": "100% waterproof LVP with realistic wood grain, perfect for wet kitchens, bathrooms, and basement."
       },
       {
+        "name": "Vinyl Flooring Installation",
+        "price": "From RM 12 / sq ft",
+        "desc": "Sheet or plank vinyl flooring for wet areas, kitchens and commercial spaces with welded seams."
+      },
+      {
+        "name": "Floor Tile Installation",
+        "price": "From RM 14 / sq ft",
+        "desc": "Porcelain, ceramic, large format and mosaic tile installation for new builds and renovations."
+      },
+      {
+        "name": "Floor Tile Replacement & Tile Hacking",
+        "price": "From RM 18 / sq ft",
+        "desc": "Hacking old tiles, screeding, waterproofing and new tile installation with debris disposal."
+      },
+      {
+        "name": "Porcelain & Ceramic Tiles",
+        "price": "From RM 16 / sq ft",
+        "desc": "Supply and install homogeneous porcelain and ceramic tiles in matte, glossy or wood-look finishes."
+      },
+      {
+        "name": "Large Format & Mosaic Tiles",
+        "price": "From RM 22 / sq ft",
+        "desc": "Large slab 600x1200mm, 800x800mm and mosaic pattern installation with levelling clips."
+      },
+      {
+        "name": "Floor Leveling & Screeding",
+        "price": "From RM 8 / sq ft",
+        "desc": "Self-leveling compound and cement screeding to correct uneven floors before flooring installation."
+      },
+      {
+        "name": "Hollow Tile & Uneven Floor Repair",
+        "price": "From RM 250",
+        "desc": "Tap-test hollow tile detection, removal and re-bedding, plus uneven floor grinding and leveling."
+      },
+      {
         "name": "Skirting & Transition Strip Fitting",
         "price": "From RM 8 / linier ft",
         "desc": "PVC, MDF, or aluminium skirting plus T-mould and reducer transitions for a clean room-to-room finish."
@@ -1178,6 +1458,41 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "desc": "LVP 100% kalis air dengan urat kayu realistik, sesuai untuk dapur basah, bilik mandi dan besmen."
           },
           {
+            "name": "Pemasangan Lantai Vinyl",
+            "price": "Dari RM 12 / kaki persegi",
+            "desc": "Lantai vinyl kepingan atau papan untuk kawasan basah, dapur dan ruang komersial dengan sambungan dikimpal."
+          },
+          {
+            "name": "Pemasangan Jubin Lantai",
+            "price": "Dari RM 14 / kaki persegi",
+            "desc": "Pemasangan jubin porselin, seramik, format besar dan mozek untuk binaan baru dan pengubahsuaian."
+          },
+          {
+            "name": "Penggantian Jubin & Pemecahan Jubin",
+            "price": "Dari RM 18 / kaki persegi",
+            "desc": "Pemecahan jubin lama, screed, kalis air dan pemasangan jubin baru dengan pelupusan serpihan."
+          },
+          {
+            "name": "Jubin Porselin & Seramik",
+            "price": "Dari RM 16 / kaki persegi",
+            "desc": "Bekalan dan pemasangan jubin porselin dan seramik homogen dalam kemasan matte, berkilat atau rupa kayu."
+          },
+          {
+            "name": "Jubin Format Besar & Mozek",
+            "price": "Dari RM 22 / kaki persegi",
+            "desc": "Pemasangan slab besar 600x1200mm, 800x800mm dan corak mozek dengan klip perata."
+          },
+          {
+            "name": "Pemerataan Lantai & Screed",
+            "price": "Dari RM 8 / kaki persegi",
+            "desc": "Sebatian rata-sendiri dan screed simen untuk membetulkan lantai tidak rata sebelum pemasangan lantai."
+          },
+          {
+            "name": "Pembaikan Jubin Berongga & Lantai Tidak Rata",
+            "price": "Dari RM 250",
+            "desc": "Pengesanan jubin berongga tap-test, penanggalan dan pemasangan semula, serta pengisaran dan pemerataan lantai tidak rata."
+          },
+          {
             "name": "Pemasangan Skirting & Jalur Peralihan",
             "price": "Dari RM 8 / kaki linier",
             "desc": "Skirting PVC, MDF atau aluminium serta peralihan T-mould dan reducer untuk kemasan bilik-ke-bilik yang kemas."
@@ -1203,6 +1518,41 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "name": "豪华乙烯基地板 (LVP) 安装",
             "price": "从 RM 16 / 平方英尺起",
             "desc": "100% 防水 LVP，木纹逼真，适合湿厨房、浴室与地下室。"
+          },
+          {
+            "name": "乙烯基地板安装",
+            "price": "从 RM 12 / 平方英尺起",
+            "desc": "卷材或片材乙烯基地板，用于潮湿区、厨房与商业空间，接缝焊接。"
+          },
+          {
+            "name": "地面瓷砖安装",
+            "price": "从 RM 14 / 平方英尺起",
+            "desc": "瓷砖、陶瓷、大板与马赛克地面安装，适用于新建与翻新。"
+          },
+          {
+            "name": "地面瓷砖更换与拆除",
+            "price": "从 RM 18 / 平方英尺起",
+            "desc": "拆除旧砖、找平、防水与新砖安装，含垃圾清运。"
+          },
+          {
+            "name": "抛光砖与陶瓷砖",
+            "price": "从 RM 16 / 平方英尺起",
+            "desc": "供应并安装通体抛光砖与陶瓷砖，哑光、亮光或木纹饰面可选。"
+          },
+          {
+            "name": "大板与马赛克瓷砖",
+            "price": "从 RM 22 / 平方英尺起",
+            "desc": "600x1200mm、800x800mm 大板与马赛克图案安装，配找平器。"
+          },
+          {
+            "name": "地面找平与地台",
+            "price": "从 RM 8 / 平方英尺起",
+            "desc": "自流平与水泥砂浆找平，纠正不平地面后再安装地板。"
+          },
+          {
+            "name": "空鼓砖与不平地面维修",
+            "price": "从 RM 250 起",
+            "desc": "敲击检测空鼓砖，拆除重铺，以及不平地面打磨找平。"
           },
           {
             "name": "踢脚线与收边条安装",
@@ -2543,6 +2893,371 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "name": "拆除与搬迁",
             "price": "从 RM 117 起",
             "desc": "仅拆除从 RM 117 起，就近重装从 RM 325 起，异地搬迁从 RM 455 起。"
+          }
+        ]
+      }
+    }
+  },
+  "kitchen-renovation": {
+    "slug": "kitchen-renovation",
+    "title": "Kitchen Renovation",
+    "startPrice": "RM 8,000",
+    "tagline": "Complete kitchen makeover: hacking, tiling, waterproofing, cabinetry, countertop, plumbing, electrical and lighting across KL & Selangor. From RM 8,000.",
+    "warranty": "12-Month Workmanship Warranty",
+    "subServices": [
+      {
+        "name": "Full Kitchen Renovation",
+        "price": "From RM 8,000",
+        "desc": "Complete kitchen rebuild: hacking, waterproofing, tiling, cabinets, countertop, plumbing, electrical and painting."
+      },
+      {
+        "name": "Kitchen Cabinet Installation",
+        "price": "From RM 4,500",
+        "desc": "Custom base, wall and tall cabinets with soft-close hinges, drawer systems and pantry pull-outs."
+      },
+      {
+        "name": "Kitchen Countertop Replacement",
+        "price": "From RM 1,800",
+        "desc": "Quartz, granite or sintered stone countertop supply and install with sink cut-out and edge profile."
+      },
+      {
+        "name": "Kitchen Backsplash Tiling",
+        "price": "From RM 18 / sq ft",
+        "desc": "Porcelain, ceramic, mosaic or subway backsplash tiling with grout colour matching and anti-mould seal."
+      },
+      {
+        "name": "Kitchen Island & Peninsula",
+        "price": "From RM 2,200",
+        "desc": "Custom island or peninsula with storage, breakfast bar, power points and waterfall edge option."
+      },
+      {
+        "name": "Wet Kitchen Renovation",
+        "price": "From RM 6,500",
+        "desc": "Heavy-duty wet kitchen for wok cooking: floor trap, stainless steel sink, wall tiles to ceiling, strong ventilation."
+      },
+      {
+        "name": "Dry Kitchen Renovation",
+        "price": "From RM 5,500",
+        "desc": "Modern dry kitchen with island, display cabinets, wine rack and ambient lighting for entertaining."
+      },
+      {
+        "name": "Kitchen Extension",
+        "price": "On Quote",
+        "desc": "Rear or side kitchen extension with brickwork, roofing, waterproofing and DBKL/MBSA guidance where required."
+      },
+      {
+        "name": "Kitchen Plumbing & Electrical",
+        "price": "From RM 950",
+        "desc": "Sink, dishwasher, water filter point, oven, hob, hood, extra 13A/15A power points and LED lighting."
+      }
+    ],
+    "i18n": {
+      "ms": {
+        "title": "Pengubahsuaian Dapur",
+        "tagline": "Makeover dapur lengkap: pecah, jubin, kalis air, kabinet, countertop, paip, elektrik dan pencahayaan di KL & Selangor. Dari RM 8,000.",
+        "warranty": "Jaminan Kerja 12 Bulan",
+        "subServices": [
+          {
+            "name": "Pengubahsuaian Dapur Penuh",
+            "price": "Dari RM 8,000",
+            "desc": "Binaan semula dapur lengkap: pecah, kalis air, jubin, kabinet, countertop, paip, elektrik dan pengecatan."
+          },
+          {
+            "name": "Pemasangan Kabinet Dapur",
+            "price": "Dari RM 4,500",
+            "desc": "Kabinet bawah, dinding dan tinggi custom dengan engsel soft-close, sistem laci dan pull-out pantry."
+          },
+          {
+            "name": "Penggantian Countertop Dapur",
+            "price": "Dari RM 1,800",
+            "desc": "Bekalan dan pemasangan countertop quartz, granit atau sintered stone dengan potongan singki dan profil tepi."
+          },
+          {
+            "name": "Jubin Backsplash Dapur",
+            "price": "Dari RM 18 / kaki persegi",
+            "desc": "Jubin backsplash porselin, seramik, mozek atau subway dengan pemadanan warna grout dan seal anti-kulat."
+          },
+          {
+            "name": "Island & Peninsula Dapur",
+            "price": "Dari RM 2,200",
+            "desc": "Island atau peninsula custom dengan storan, bar sarapan, power point dan pilihan waterfall edge."
+          },
+          {
+            "name": "Pengubahsuaian Dapur Basah",
+            "price": "Dari RM 6,500",
+            "desc": "Dapur basah tugas berat untuk masakan kuali: floor trap, singki keluli tahan karat, jubin dinding sampai siling, pengudaraan kuat."
+          },
+          {
+            "name": "Pengubahsuaian Dapur Kering",
+            "price": "Dari RM 5,500",
+            "desc": "Dapur kering moden dengan island, kabinet paparan, rak wain dan pencahayaan ambien untuk hiburan."
+          },
+          {
+            "name": "Sambungan Dapur",
+            "price": "Atas Sebut Harga",
+            "desc": "Sambungan dapur belakang atau sisi dengan kerja bata, bumbung, kalis air dan panduan DBKL/MBSA jika diperlukan."
+          },
+          {
+            "name": "Paip & Elektrik Dapur",
+            "price": "Dari RM 950",
+            "desc": "Titik singki, dishwasher, penapis air, oven, hob, hood, tambahan power point 13A/15A dan pencahayaan LED."
+          }
+        ]
+      },
+      "zh": {
+        "title": "厨房翻新",
+        "tagline": "吉隆坡与雪兰莪全套厨房改造：拆除、贴砖、防水、橱柜、台面、水电与照明。从 RM 8,000 起。",
+        "warranty": "12 个月工艺保修",
+        "subServices": [
+          {
+            "name": "全套厨房翻新",
+            "price": "从 RM 8,000 起",
+            "desc": "厨房全面重建：拆除、防水、贴砖、橱柜、台面、水管、电与油漆。"
+          },
+          {
+            "name": "厨房橱柜安装",
+            "price": "从 RM 4,500 起",
+            "desc": "定制地柜、吊柜与高柜，配阻尼铰链、抽屉系统与储藏拉篮。"
+          },
+          {
+            "name": "厨房台面更换",
+            "price": "从 RM 1,800 起",
+            "desc": "石英石、花岗岩或岩板台面供应与安装，含水槽开孔与边型处理。"
+          },
+          {
+            "name": "厨房挡水板贴砖",
+            "price": "从 RM 18 / 平方英尺起",
+            "desc": "瓷砖、陶瓷、马赛克或面包砖挡水板贴砖，含美缝配色与防霉密封。"
+          },
+          {
+            "name": "厨房中岛与半岛",
+            "price": "从 RM 2,200 起",
+            "desc": "定制中岛或半岛，带储物、早餐吧、插座与瀑布边选项。"
+          },
+          {
+            "name": "湿厨房翻新",
+            "price": "从 RM 6,500 起",
+            "desc": "适合爆炒的重型湿厨房：地漏、不锈钢水槽、墙砖贴至天花、强力通风。"
+          },
+          {
+            "name": "干厨房翻新",
+            "price": "从 RM 5,500 起",
+            "desc": "带中岛、展示柜、酒架与氛围灯的现代干厨房，适合招待聚会。"
+          },
+          {
+            "name": "厨房扩建",
+            "price": "依报价",
+            "desc": "后部或侧面厨房扩建，含砌砖、屋顶、防水与 DBKL/MBSA 报批指引（如需）。"
+          },
+          {
+            "name": "厨房水电",
+            "price": "从 RM 950 起",
+            "desc": "水槽、洗碗机、净水器点位、烤箱、灶具、油烟机、新增 13A/15A 插座与 LED 照明。"
+          }
+        ]
+      }
+    }
+  },
+  "bathroom-renovation": {
+    "slug": "bathroom-renovation",
+    "title": "Bathroom Renovation",
+    "startPrice": "RM 6,000",
+    "tagline": "Full bathroom and toilet makeover: hacking, waterproofing, tiling, plumbing, sanitary, electrical and ventilation in KL & Selangor. From RM 6,000.",
+    "warranty": "12-Month Workmanship + Up to 5-Year Waterproofing Warranty",
+    "subServices": [
+      {
+        "name": "Full Bathroom Renovation",
+        "price": "From RM 6,000",
+        "desc": "Complete bathroom rebuild: hacking, waterproofing with ponding test, tiling, plumbing, sanitary and electrical."
+      },
+      {
+        "name": "Toilet Renovation",
+        "price": "From RM 4,500",
+        "desc": "Small toilet/WC renovation: WC replacement, wall and floor tiling, plumbing and ventilation."
+      },
+      {
+        "name": "Bathroom Makeover",
+        "price": "From RM 5,500",
+        "desc": "Cosmetic makeover without major hacking: retiling, new vanity, shower and lighting upgrade."
+      },
+      {
+        "name": "Shower Area Renovation",
+        "price": "From RM 2,800",
+        "desc": "Shower area rebuild: waterproofing, anti-slip floor tiles, rain shower, glass screen and niche."
+      },
+      {
+        "name": "Bathroom Tiling",
+        "price": "From RM 16 / sq ft",
+        "desc": "Bathroom wall and floor tiling with straight, brick-bond or herringbone patterns, epoxy grout."
+      },
+      {
+        "name": "Bathroom Waterproofing",
+        "price": "From RM 1,200",
+        "desc": "Cementitious membrane, 3 coats, with 24–48 hour ponding test and warranty. No-hack PU injection also available."
+      },
+      {
+        "name": "Bathroom Plumbing",
+        "price": "From RM 850",
+        "desc": "Hot and cold pipe reroute, floor trap replacement, drainage correction and pressure test."
+      },
+      {
+        "name": "Sanitary Installation",
+        "price": "From RM 650",
+        "desc": "WC, basin, vanity cabinet, shower set, rain shower, bathtub and accessories installation."
+      },
+      {
+        "name": "Bathroom Floor Replacement",
+        "price": "From RM 1,800",
+        "desc": "Hacking old floor, rescreed with slope, waterproofing, new anti-slip floor tiles."
+      },
+      {
+        "name": "Bathroom Wall Tile Replacement",
+        "price": "From RM 2,200",
+        "desc": "Hacking old wall tiles, replaster, waterproofing and new wall tiles with trim and silicone."
+      },
+      {
+        "name": "Bathroom Ceiling Repair",
+        "price": "From RM 450",
+        "desc": "Moisture-resistant gypsum or aluminium ceiling replacement with exhaust fan point and LED lighting."
+      },
+      {
+        "name": "Bathroom Leak Repair",
+        "price": "From RM 350",
+        "desc": "Leak diagnosis with thermal imaging, PU injection or membrane repair, and ceiling restoration below."
+      }
+    ],
+    "i18n": {
+      "ms": {
+        "title": "Pengubahsuaian Bilik Mandi",
+        "tagline": "Makeover bilik mandi dan tandas penuh: pecah, kalis air, jubin, paip, sanitari, elektrik dan pengudaraan di KL & Selangor. Dari RM 6,000.",
+        "warranty": "Jaminan Kerja 12 Bulan + Jaminan Kalis Air Sehingga 5 Tahun",
+        "subServices": [
+          {
+            "name": "Pengubahsuaian Bilik Mandi Penuh",
+            "price": "Dari RM 6,000",
+            "desc": "Binaan semula bilik mandi lengkap: pecah, kalis air dengan ujian kolam, jubin, paip, sanitari dan elektrik."
+          },
+          {
+            "name": "Pengubahsuaian Tandas",
+            "price": "Dari RM 4,500",
+            "desc": "Pengubahsuaian tandas/WC kecil: penggantian WC, jubin dinding dan lantai, paip dan pengudaraan."
+          },
+          {
+            "name": "Makeover Bilik Mandi",
+            "price": "Dari RM 5,500",
+            "desc": "Makeover kosmetik tanpa pemecahan besar: jubin semula, vaniti baru, pancuran dan naik taraf pencahayaan."
+          },
+          {
+            "name": "Pengubahsuaian Kawasan Pancuran",
+            "price": "Dari RM 2,800",
+            "desc": "Binaan semula kawasan pancuran: kalis air, jubin lantai anti-gelincir, pancuran hujan, skrin kaca dan niche."
+          },
+          {
+            "name": "Jubin Bilik Mandi",
+            "price": "Dari RM 16 / kaki persegi",
+            "desc": "Jubin dinding dan lantai bilik mandi dengan corak lurus, brick-bond atau herringbone, grout epoxy."
+          },
+          {
+            "name": "Kalis Air Bilik Mandi",
+            "price": "Dari RM 1,200",
+            "desc": "Membran simen, 3 lapisan, dengan ujian kolam 24–48 jam dan jaminan. Suntikan PU tanpa pecah juga tersedia."
+          },
+          {
+            "name": "Paip Bilik Mandi",
+            "price": "Dari RM 850",
+            "desc": "Ubah hala paip panas dan sejuk, penggantian floor trap, pembetulan saliran dan ujian tekanan."
+          },
+          {
+            "name": "Pemasangan Sanitari",
+            "price": "Dari RM 650",
+            "desc": "Pemasangan WC, besen, kabinet vaniti, set pancuran, pancuran hujan, tab mandi dan aksesori."
+          },
+          {
+            "name": "Penggantian Lantai Bilik Mandi",
+            "price": "Dari RM 1,800",
+            "desc": "Pecah lantai lama, screed semula dengan cerun, kalis air, jubin lantai anti-gelincir baru."
+          },
+          {
+            "name": "Penggantian Jubin Dinding Bilik Mandi",
+            "price": "Dari RM 2,200",
+            "desc": "Pecah jubin dinding lama, plaster semula, kalis air dan jubin dinding baru dengan trim dan silikon."
+          },
+          {
+            "name": "Pembaikan Siling Bilik Mandi",
+            "price": "Dari RM 450",
+            "desc": "Penggantian siling gypsum tahan lembapan atau aluminium dengan titik kipas ekzos dan pencahayaan LED."
+          },
+          {
+            "name": "Pembaikan Bocor Bilik Mandi",
+            "price": "Dari RM 350",
+            "desc": "Diagnosis bocor dengan pengimejan terma, suntikan PU atau pembaikan membran, dan pemulihan siling di bawah."
+          }
+        ]
+      },
+      "zh": {
+        "title": "卫生间翻新",
+        "tagline": "吉隆坡与雪兰莪全套卫生间与厕所改造：拆除、防水、贴砖、水管、洁具、电与通风。从 RM 6,000 起。",
+        "warranty": "12 个月工艺保修 + 最长 5 年防水保修",
+        "subServices": [
+          {
+            "name": "全套卫生间翻新",
+            "price": "从 RM 6,000 起",
+            "desc": "卫生间全面重建：拆除、防水与蓄水测试、贴砖、水管、洁具与电。"
+          },
+          {
+            "name": "厕所翻新",
+            "price": "从 RM 4,500 起",
+            "desc": "小型厕所/WC 翻新：马桶更换、墙地贴砖、水管与通风。"
+          },
+          {
+            "name": "卫生间改造",
+            "price": "从 RM 5,500 起",
+            "desc": "不大拆的表面改造：重新贴砖、新浴室柜、花洒与照明升级。"
+          },
+          {
+            "name": "淋浴区翻新",
+            "price": "从 RM 2,800 起",
+            "desc": "淋浴区重建：防水、防滑地砖、雨淋花洒、玻璃屏与壁龛。"
+          },
+          {
+            "name": "卫生间贴砖",
+            "price": "从 RM 16 / 平方英尺起",
+            "desc": "卫生间墙地贴砖，直铺、工字或人字拼，环氧美缝。"
+          },
+          {
+            "name": "卫生间防水",
+            "price": "从 RM 1,200 起",
+            "desc": "水泥基防水膜，3 遍，配 24–48 小时蓄水测试与保修。也提供免砸砖 PU 注浆。"
+          },
+          {
+            "name": "卫生间水管",
+            "price": "从 RM 850 起",
+            "desc": "冷热水管改道、地漏更换、排水修正与打压测试。"
+          },
+          {
+            "name": "洁具安装",
+            "price": "从 RM 650 起",
+            "desc": "马桶、台盆、浴室柜、花洒套装、雨淋、浴缸与配件安装。"
+          },
+          {
+            "name": "卫生间地面更换",
+            "price": "从 RM 1,800 起",
+            "desc": "拆除旧地面，重新找平带坡度、防水、新防滑地砖。"
+          },
+          {
+            "name": "卫生间墙砖更换",
+            "price": "从 RM 2,200 起",
+            "desc": "拆除旧墙砖，重新抹灰、防水与新墙砖，含收边与硅胶。"
+          },
+          {
+            "name": "卫生间天花维修",
+            "price": "从 RM 450 起",
+            "desc": "防潮石膏板或铝扣板天花更换，含排气扇点位与 LED 照明。"
+          },
+          {
+            "name": "卫生间漏水维修",
+            "price": "从 RM 350 起",
+            "desc": "热成像漏水诊断、PU 注浆或防水膜维修，以及下方天花修复。"
           }
         ]
       }

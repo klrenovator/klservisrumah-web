@@ -654,9 +654,16 @@ export const servicesData: Record<string, ServiceDetail> = {
     ],
     subServices: [
       { name: "Full House Renovation Package", price: "From RM 22,000", desc: "Hacking, structural, ceiling, tiling, electrical, plumbing, painting, and final cleaning." },
+      { name: "Partial House Renovation", price: "From RM 12,000", desc: "Targeted renovation for specific areas — kitchen, bathroom, living or bedrooms — with isolated work zones." },
+      { name: "Terrace House Renovation", price: "From RM 22,000", desc: "End-to-end terrace house makeover: extension, kitchen, bathroom, flooring, ceiling, electrical and plumbing." },
+      { name: "Semi-D Renovation", price: "From RM 35,000", desc: "Semi-D house renovation with structural modifications, car porch, kitchen extension and interior finishes." },
+      { name: "Bungalow Renovation", price: "From RM 60,000", desc: "Bungalow full refurbishment including façade, roofing, outdoor, interior and M&E upgrades." },
+      { name: "Condo Renovation", price: "From RM 30,000", desc: "Full condo interior rebuild including management work-hour compliance, lift protection and debris handling." },
+      { name: "Apartment Renovation", price: "From RM 18,000", desc: "Apartment interior renovation with JMB compliance, waterproofing, tiling and painting." },
       { name: "Kitchen & Bathroom Makeover", price: "From RM 10,000", desc: "Demolition, retiling, waterproofing, new cabinetry, plumbing rerouting, and finishing." },
-      { name: "Condo Interior Refurbishment", price: "From RM 30,000", desc: "Full condo interior rebuild including management work-hour compliance and lift protection." },
-      { name: "Commercial Shoplot Renovation", price: "On Quote", desc: "Retail and F&B shop fit-outs with electrical upgrades, signage readiness, and fast-track delivery." }
+      { name: "House Extension", price: "On Quote", desc: "Kitchen, car porch, balcony or rear extension with brickwork, roofing and authority submission guidance." },
+      { name: "Commercial Shoplot Renovation", price: "On Quote", desc: "Retail and F&B shop fit-outs with electrical upgrades, signage readiness, and fast-track delivery." },
+      { name: "Renovation Contractor Services", price: "On Quote", desc: "Licensed contractor for design, hacking, structural, M&E, carpentry, painting and handover." }
     ],
     process: [
       { step: "01", title: "Site Survey & Design Brief", desc: "We visit your property, take measurements, photograph every wall and fixture, and capture your design brief, budget, and timeline." },
@@ -692,9 +699,16 @@ export const servicesData: Record<string, ServiceDetail> = {
         ],
         subServices: [
           { name: "Pakej Pengubahsuaian Rumah Penuh", price: "Dari RM 22,000", desc: "Perobohan, struktur, siling, jubin, elektrik, paip, pengecatan, dan cucian akhir." },
+          { name: "Pengubahsuaian Separa Rumah", price: "Dari RM 12,000", desc: "Pengubahsuaian bertumpu untuk kawasan tertentu — dapur, bilik mandi, ruang tamu atau bilik tidur — dengan zon kerja berasingan." },
+          { name: "Pengubahsuaian Rumah Teres", price: "Dari RM 22,000", desc: "Makeover rumah teres hujung-ke-hujung: sambungan, dapur, bilik mandi, lantai, siling, elektrik dan paip." },
+          { name: "Pengubahsuaian Semi-D", price: "Dari RM 35,000", desc: "Pengubahsuaian rumah Semi-D dengan modifikasi struktur, porch kereta, sambungan dapur dan kemasan interior." },
+          { name: "Pengubahsuaian Banglo", price: "Dari RM 60,000", desc: "Pemulihan penuh banglo termasuk fasad, bumbung, luar, interior dan naik taraf M&E." },
+          { name: "Pengubahsuaian Kondominium", price: "Dari RM 30,000", desc: "Pembinaan semula interior kondominium penuh termasuk pematuhan waktu kerja pengurusan, perlindungan lif dan pengendalian serpihan." },
+          { name: "Pengubahsuaian Apartmen", price: "Dari RM 18,000", desc: "Pengubahsuaian interior apartmen dengan pematuhan JMB, kalis air, jubin dan pengecatan." },
           { name: "Makeover Dapur & Bilik Mandi", price: "Dari RM 10,000", desc: "Perobohan, jubin semula, kalis air, kabinet baru, ubah hala paip, dan kemasan." },
-          { name: "Pemulihan Interior Kondominium", price: "Dari RM 30,000", desc: "Pemulihan interior kondominium penuh termasuk pematuhan waktu kerja pengurusan dan perlindungan lif." },
-          { name: "Pengubahsuaian Shoplot Komersial", price: "Atas Sebut Harga", desc: "Fit-out runcit dan F&B dengan peningkatan elektrik, kesediaan papan tanda, dan penghantaran pantas." }
+          { name: "Sambungan Rumah", price: "Atas Sebut Harga", desc: "Sambungan dapur, porch kereta, balkoni atau belakang dengan kerja bata, bumbung dan panduan penyerahan pihak berkuasa." },
+          { name: "Pengubahsuaian Shoplot Komersial", price: "Atas Sebut Harga", desc: "Fit-out runcit dan F&B dengan peningkatan elektrik, kesediaan papan tanda, dan penghantaran pantas." },
+          { name: "Perkhidmatan Kontraktor Pengubahsuaian", price: "Atas Sebut Harga", desc: "Kontraktor berlesen untuk reka bentuk, perobohan, struktur, M&E, pertukangan, pengecatan dan serahan." }
         ],
         process: [
           { step: "01", title: "Tinjauan Tapak & Brief Reka Bentuk", desc: "Kami melawat hartanah anda, mengambil ukuran, memfoto setiap dinding dan lekapan, dan menangkap brief reka bentuk, bajet, dan garis masa anda." },
@@ -729,9 +743,16 @@ export const servicesData: Record<string, ServiceDetail> = {
         ],
         subServices: [
           { name: "全屋翻新配套", price: "从 RM 22,000 起", desc: "拆除、结构、天花板、瓷砖、水电、油漆与最终清洁。" },
-          { name: "厨房与卫生间翻新", price: "从 RM 10,000 起", desc: "拆除、重新铺砖、防水、新橱柜、水管改道与完工。" },
+          { name: "局部房屋翻新", price: "从 RM 12,000 起", desc: "针对特定区域的翻新——厨房、卫生间、客厅或卧室——带独立施工隔离区。" },
+          { name: "排屋翻新", price: "从 RM 22,000 起", desc: "排屋端到端改造：扩建、厨房、卫生间、地板、天花、水电。" },
+          { name: "半独立式翻新", price: "从 RM 35,000 起", desc: "半独立式住宅翻新，含结构改动、车棚、厨房扩建与室内饰面。" },
+          { name: "独栋洋房翻新", price: "从 RM 60,000 起", desc: "洋房全面翻新，含外立面、屋顶、户外、室内与机电升级。" },
           { name: "公寓室内翻新", price: "从 RM 30,000 起", desc: "全公寓室内重建，包括管理处工时合规与电梯保护。" },
-          { name: "商业店铺翻新", price: "依报价", desc: "零售与餐饮店铺装修，电路升级、招牌就位与快速交付。" }
+          { name: "公寓单元翻新", price: "从 RM 18,000 起", desc: "公寓室内翻新，含 JMB 合规、防水、贴砖与油漆。" },
+          { name: "厨房与卫生间翻新", price: "从 RM 10,000 起", desc: "拆除、重新铺砖、防水、新橱柜、水管改道与完工。" },
+          { name: "房屋扩建", price: "依报价", desc: "厨房、车棚、阳台或后部扩建，含砌砖、屋顶与报批指引。" },
+          { name: "商业店铺翻新", price: "依报价", desc: "零售与餐饮店铺装修，电路升级、招牌就位与快速交付。" },
+          { name: "翻新承包商服务", price: "依报价", desc: "持牌承包商负责设计、拆除、结构、机电、木工、油漆与交付。" }
         ],
         process: [
           { step: "01", title: "现场勘察与设计简报", desc: "我们到访您的物业，量度尺寸，拍摄每面墙与每个装置，并记录您的设计需求、预算与时间表。" },
@@ -1243,8 +1264,15 @@ export const servicesData: Record<string, ServiceDetail> = {
     subServices: [
       { name: "Floor Tiling Installation", price: "From RM 14 / sq ft", desc: "Standard 300x300mm to 600x600mm floor tile installation with cement-sand screed and tile adhesive." },
       { name: "Wall Tiling Installation", price: "From RM 16 / sq ft", desc: "Kitchen splashback, bathroom wall, and feature wall tiling with straight or brick-bond patterns." },
-      { name: "Large-Format Slab Tiling", price: "From RM 26 / sq ft", desc: "600x1200mm, 800x1800mm, 1200x2400mm slabs with self-levelling, suction-cup lifters, and lippage tuning." },
-      { name: "Tile Repair & Re-Grouting", price: "From RM 22 / sq ft", desc: "Removing hollow or cracked tiles, surface prep, replacement, and re-grouting with mould-resistant grout." }
+      { name: "Floor Tile Replacement & Tile Hacking", price: "From RM 18 / sq ft", desc: "Hacking old tiles, screeding, waterproofing and new tile installation with debris disposal." },
+      { name: "Porcelain Tiles Installation", price: "From RM 16 / sq ft", desc: "Homogeneous porcelain tiles in matte, glossy, wood-look and stone-look finishes with rectified edges." },
+      { name: "Ceramic Tiles Installation", price: "From RM 14 / sq ft", desc: "Ceramic wall and floor tiles for bathrooms, kitchens and balconies with colour-matched grout." },
+      { name: "Large Format Tiles", price: "From RM 26 / sq ft", desc: "600x1200mm, 800x800mm, 1200x2400mm slabs with self-levelling, suction-cup lifters, and lippage tuning." },
+      { name: "Mosaic Tiles Installation", price: "From RM 22 / sq ft", desc: "Glass, porcelain and stone mosaic for backsplash, shower niche and feature walls with mesh backing." },
+      { name: "Bathroom Tiling & Waterproofing", price: "From RM 18 / sq ft", desc: "Bathroom floor and wall tiling with 3-coat waterproofing membrane and 24-hour ponding test." },
+      { name: "Kitchen Backsplash Tiling", price: "From RM 18 / sq ft", desc: "Kitchen backsplash tiling with subway, mosaic or large format tiles and anti-mould silicone sealing." },
+      { name: "Tile Repair, Hollow Tile & Re-Grouting", price: "From RM 22 / sq ft", desc: "Removing hollow, cracked or broken tiles, surface prep, replacement, epoxy grout and silicone sealing." },
+      { name: "Floor Leveling & Self-Leveling", price: "From RM 8 / sq ft", desc: "Cement screeding and self-leveling compound to correct uneven floors before tiling." }
     ],
     process: [
       { step: "01", title: "Substrate Inspection", desc: "We check substrate levelness, structural movement, moisture content, and suitability. We flag any plumbing or waterproofing work needed before tiling begins." },
@@ -1280,8 +1308,15 @@ export const servicesData: Record<string, ServiceDetail> = {
         subServices: [
           { name: "Pemasangan Jubin Lantai", price: "Dari RM 14 / sq ft", desc: "Pemasangan jubin lantai standard 300x300mm hingga 600x600mm dengan screed simen-pasir dan pelekat jubin." },
           { name: "Pemasangan Jubin Dinding", price: "Dari RM 16 / sq ft", desc: "Splashback dapur, dinding bilik mandi, dan jubin dinding ciri dengan corak lurus atau bata." },
-          { name: "Slab Format Besar", price: "Dari RM 26 / sq ft", desc: "Slab 600x1200mm, 800x1800mm, 1200x2400mm dengan self-levelling, cawan sedutan, dan lippage tuning." },
-          { name: "Pembaikan & Grout Semula", price: "Dari RM 22 / sq ft", desc: "Menyingkirkan jubin berongga atau retak, penyediaan permukaan, penggantian, dan grout semula dengan grout tahan kulat." }
+          { name: "Penggantian Jubin & Pemecahan Jubin", price: "Dari RM 18 / sq ft", desc: "Pemecahan jubin lama, screed, kalis air dan pemasangan jubin baru dengan pelupusan serpihan." },
+          { name: "Pemasangan Jubin Porselin", price: "Dari RM 16 / sq ft", desc: "Jubin porselin homogen dalam kemasan matte, berkilat, rupa kayu dan rupa batu dengan tepi rectified." },
+          { name: "Pemasangan Jubin Seramik", price: "Dari RM 14 / sq ft", desc: "Jubin seramik dinding dan lantai untuk bilik mandi, dapur dan balkoni dengan grout sepadan warna." },
+          { name: "Jubin Format Besar", price: "Dari RM 26 / sq ft", desc: "Slab 600x1200mm, 800x800mm, 1200x2400mm dengan self-levelling, cawan sedutan, dan lippage tuning." },
+          { name: "Pemasangan Jubin Mozek", price: "Dari RM 22 / sq ft", desc: "Mozek kaca, porselin dan batu untuk backsplash, niche pancuran dan dinding ciri dengan backing mesh." },
+          { name: "Jubin Bilik Mandi & Kalis Air", price: "Dari RM 18 / sq ft", desc: "Jubin lantai dan dinding bilik mandi dengan membran kalis air 3 lapisan dan ujian kolam 24 jam." },
+          { name: "Jubin Backsplash Dapur", price: "Dari RM 18 / sq ft", desc: "Jubin backsplash dapur dengan jubin subway, mozek atau format besar dan seal silikon anti-kulat." },
+          { name: "Pembaikan Jubin, Jubin Berongga & Grout Semula", price: "Dari RM 22 / sq ft", desc: "Menanggalkan jubin berongga, retak atau pecah, penyediaan permukaan, penggantian, grout epoxy dan sealing silikon." },
+          { name: "Pemerataan Lantai & Self-Leveling", price: "Dari RM 8 / sq ft", desc: "Screed simen dan sebatian self-leveling untuk membetulkan lantai tidak rata sebelum jubin." }
         ],
         process: [
           { step: "01", title: "Pemeriksaan Substrat", desc: "Kami periksa kerataan substrat, pergerakan struktur, kandungan lembapan, dan kesesuaian. Kami menandakan sebarang kerja paip atau kalis air yang diperlukan sebelum jubin dimulakan." },
@@ -1316,8 +1351,15 @@ export const servicesData: Record<string, ServiceDetail> = {
         subServices: [
           { name: "地面瓷砖铺贴", price: "从 RM 14 / sq ft 起", desc: "标准 300x300mm 至 600x600mm 地面瓷砖铺贴，使用水泥砂浆找平层与瓷砖胶。" },
           { name: "墙面瓷砖铺贴", price: "从 RM 16 / sq ft 起", desc: "厨房防溅墙、卫生间墙面、主题墙铺贴，可选直拼或工字拼。" },
-          { name: "超大板铺贴", price: "从 RM 26 / sq ft 起", desc: "600x1200mm、800x1800mm、1200x2400mm 超大板，自流平、吸盘与找平器配套。" },
-          { name: "瓷砖修补与重新勾缝", price: "从 RM 22 / sq ft 起", desc: "拆除空鼓或开裂瓷砖、基层处理、换新与防霉勾缝剂重新勾缝。" }
+          { name: "地面瓷砖更换与拆除", price: "从 RM 18 / sq ft 起", desc: "拆除旧砖、找平、防水与新砖安装，含垃圾清运。" },
+          { name: "抛光砖铺贴", price: "从 RM 16 / sq ft 起", desc: "通体抛光砖，哑光、亮光、木纹与石纹饰面，倒角处理。" },
+          { name: "陶瓷砖铺贴", price: "从 RM 14 / sq ft 起", desc: "浴室、厨房与阳台墙地陶瓷砖，配色美缝。" },
+          { name: "大板瓷砖", price: "从 RM 26 / sq ft 起", desc: "600x1200mm、800x800mm、1200x2400mm 大板，自流平、吸盘与找平器配套。" },
+          { name: "马赛克瓷砖铺贴", price: "从 RM 22 / sq ft 起", desc: "玻璃、陶瓷与石材马赛克，用于挡水板、淋浴壁龛与背景墙，带网背。" },
+          { name: "卫生间贴砖与防水", price: "从 RM 18 / sq ft 起", desc: "卫生间地面与墙面贴砖，含3层防水膜与24小时蓄水测试。" },
+          { name: "厨房挡水板贴砖", price: "从 RM 18 / sq ft 起", desc: "厨房挡水板贴砖，面包砖、马赛克或大板，防霉硅胶收口。" },
+          { name: "瓷砖维修、空鼓与重新美缝", price: "从 RM 22 / sq ft 起", desc: "拆除空鼓、开裂或破损瓷砖、基层处理、更换、环氧美缝与硅胶密封。" },
+          { name: "地面找平与自流平", price: "从 RM 8 / sq ft 起", desc: "水泥砂浆找平与自流平，纠正不平地面后再贴砖。" }
         ],
         process: [
           { step: "01", title: "基层检查", desc: "我们检查基层平整度、结构位移、含水率与适配性。标记铺贴前需要的水电与防水工程。" },
@@ -1359,8 +1401,15 @@ export const servicesData: Record<string, ServiceDetail> = {
     ],
     subServices: [
       { name: "Flat Plaster Ceiling", price: "From RM 10 / sq ft", desc: "Clean, single-level flat ceiling with skim coat finish — ideal for minimalist modern interiors." },
+      { name: "False Ceiling Installation", price: "From RM 10 / sq ft", desc: "General false ceiling for homes and offices with GI frame and moisture-resistant boards." },
+      { name: "Gypsum Ceiling", price: "From RM 10 / sq ft", desc: "Gypsum board ceiling with fire-rated and moisture-resistant options from Knauf, BNBM, Gyproc." },
       { name: "Tiered & L-Box Ceiling", price: "From RM 14 / sq ft", desc: "Two or three-tier ceiling with concealed LED trough, L-box profile, and integrated downlight cutouts." },
       { name: "Cove & Curved Ceiling", price: "From RM 22 / sq ft", desc: "Custom curved, cove, or barrel ceiling with flexible GI framing for ambient indirect lighting." },
+      { name: "Gypsum Partition & Office Partition", price: "From RM 11 / sq ft", desc: "Gypsum board partition for room division, office cubicles and meeting rooms with sound insulation option." },
+      { name: "Room Partition", price: "From RM 11 / sq ft", desc: "Bedroom, study or storage room partition with door opening and electrical point provisions." },
+      { name: "Feature Wall & Wall Panel", price: "From RM 18 / sq ft", desc: "TV feature wall, fluted panel, wainscoting and decorative wall panel with concealed LED." },
+      { name: "Skim Coat & Wall Plastering", price: "From RM 5 / sq ft", desc: "Glass-smooth skim coating and wall plastering for paint-ready finish and crack repair." },
+      { name: "Wall Crack Repair & Repainting", price: "From RM 180", desc: "Hairline and structural crack filling, sanding, sealer and premium repainting for flawless finish." },
       { name: "Ceiling Repair & Re-Skim", price: "From RM 8 / sq ft", desc: "Removing water-damaged boards, structural reinforcement, and re-skim coating existing ceilings." }
     ],
     process: [
@@ -1595,6 +1644,13 @@ export const servicesData: Record<string, ServiceDetail> = {
       { name: "SPC Click-Lock Flooring Install", price: "From RM 14 / sq ft", desc: "Waterproof stone polymer composite planks with built-in underlay, ideal for whole-home installation." },
       { name: "Laminate Flooring Install", price: "From RM 11 / sq ft", desc: "Budget-friendly HDF laminate with wood-look finish, AC4–AC5 wear rating for residential traffic." },
       { name: "Luxury Vinyl Plank (LVP) Install", price: "From RM 16 / sq ft", desc: "100% waterproof LVP with realistic wood grain, perfect for wet kitchens, bathrooms, and basement." },
+      { name: "Vinyl Flooring Installation", price: "From RM 12 / sq ft", desc: "Sheet or plank vinyl flooring for wet areas, kitchens and commercial spaces with welded seams." },
+      { name: "Floor Tile Installation", price: "From RM 14 / sq ft", desc: "Porcelain, ceramic, large format and mosaic tile installation for new builds and renovations." },
+      { name: "Floor Tile Replacement & Tile Hacking", price: "From RM 18 / sq ft", desc: "Hacking old tiles, screeding, waterproofing and new tile installation with debris disposal." },
+      { name: "Porcelain & Ceramic Tiles", price: "From RM 16 / sq ft", desc: "Supply and install homogeneous porcelain and ceramic tiles in matte, glossy or wood-look finishes." },
+      { name: "Large Format & Mosaic Tiles", price: "From RM 22 / sq ft", desc: "Large slab 600x1200mm, 800x800mm and mosaic pattern installation with levelling clips." },
+      { name: "Floor Leveling & Screeding", price: "From RM 8 / sq ft", desc: "Self-leveling compound and cement screeding to correct uneven floors before flooring installation." },
+      { name: "Hollow Tile & Uneven Floor Repair", price: "From RM 250", desc: "Tap-test hollow tile detection, removal and re-bedding, plus uneven floor grinding and leveling." },
       { name: "Skirting & Transition Strip Fitting", price: "From RM 8 / linier ft", desc: "PVC, MDF, or aluminium skirting plus T-mould and reducer transitions for a clean room-to-room finish." }
     ],
     process: [
@@ -1632,6 +1688,13 @@ export const servicesData: Record<string, ServiceDetail> = {
           { name: "Pemasangan Lantai SPC Click-Lock", price: "Dari RM 14 / kaki persegi", desc: "Papan komposit polimer batu kalis air dengan underlay terbina dalam, sesuai untuk pemasangan seluruh rumah." },
           { name: "Pemasangan Lantai Laminate", price: "Dari RM 11 / kaki persegi", desc: "Laminate HDF mesra bajet dengan kemasan rupa kayu, penarafan haus AC4–AC5 untuk trafik kediaman." },
           { name: "Pemasangan Papan Vinyl Mewah (LVP)", price: "Dari RM 16 / kaki persegi", desc: "LVP 100% kalis air dengan urat kayu realistik, sesuai untuk dapur basah, bilik mandi dan besmen." },
+          { name: "Pemasangan Lantai Vinyl", price: "Dari RM 12 / kaki persegi", desc: "Lantai vinyl kepingan atau papan untuk kawasan basah, dapur dan ruang komersial dengan sambungan dikimpal." },
+          { name: "Pemasangan Jubin Lantai", price: "Dari RM 14 / kaki persegi", desc: "Pemasangan jubin porselin, seramik, format besar dan mozek untuk binaan baru dan pengubahsuaian." },
+          { name: "Penggantian Jubin & Pemecahan Jubin", price: "Dari RM 18 / kaki persegi", desc: "Pemecahan jubin lama, screed, kalis air dan pemasangan jubin baru dengan pelupusan serpihan." },
+          { name: "Jubin Porselin & Seramik", price: "Dari RM 16 / kaki persegi", desc: "Bekalan dan pemasangan jubin porselin dan seramik homogen dalam kemasan matte, berkilat atau rupa kayu." },
+          { name: "Jubin Format Besar & Mozek", price: "Dari RM 22 / kaki persegi", desc: "Pemasangan slab besar 600x1200mm, 800x800mm dan corak mozek dengan klip perata." },
+          { name: "Pemerataan Lantai & Screed", price: "Dari RM 8 / kaki persegi", desc: "Sebatian rata-sendiri dan screed simen untuk membetulkan lantai tidak rata sebelum pemasangan lantai." },
+          { name: "Pembaikan Jubin Berongga & Lantai Tidak Rata", price: "Dari RM 250", desc: "Pengesanan jubin berongga tap-test, penanggalan dan pemasangan semula, serta pengisaran dan pemerataan lantai tidak rata." },
           { name: "Pemasangan Skirting & Jalur Peralihan", price: "Dari RM 8 / kaki linier", desc: "Skirting PVC, MDF atau aluminium serta peralihan T-mould dan reducer untuk kemasan bilik-ke-bilik yang kemas." }
         ],
         process: [
@@ -1668,6 +1731,13 @@ export const servicesData: Record<string, ServiceDetail> = {
           { name: "SPC 锁扣地板安装", price: "从 RM 14 / 平方英尺起", desc: "带内置垫层的防水石塑复合地板，非常适合全屋铺装。" },
           { name: "复合地板安装", price: "从 RM 11 / 平方英尺起", desc: "经济实惠的 HDF 复合地板，仿木纹表面处理，AC4–AC5 耐磨等级适合家用。" },
           { name: "豪华乙烯基地板 (LVP) 安装", price: "从 RM 16 / 平方英尺起", desc: "100% 防水 LVP，木纹逼真，适合湿厨房、浴室与地下室。" },
+          { name: "乙烯基地板安装", price: "从 RM 12 / 平方英尺起", desc: "卷材或片材乙烯基地板，用于潮湿区、厨房与商业空间，接缝焊接。" },
+          { name: "地面瓷砖安装", price: "从 RM 14 / 平方英尺起", desc: "瓷砖、陶瓷、大板与马赛克地面安装，适用于新建与翻新。" },
+          { name: "地面瓷砖更换与拆除", price: "从 RM 18 / 平方英尺起", desc: "拆除旧砖、找平、防水与新砖安装，含垃圾清运。" },
+          { name: "抛光砖与陶瓷砖", price: "从 RM 16 / 平方英尺起", desc: "供应并安装通体抛光砖与陶瓷砖，哑光、亮光或木纹饰面可选。" },
+          { name: "大板与马赛克瓷砖", price: "从 RM 22 / 平方英尺起", desc: "600x1200mm、800x800mm 大板与马赛克图案安装，配找平器。" },
+          { name: "地面找平与地台", price: "从 RM 8 / 平方英尺起", desc: "自流平与水泥砂浆找平，纠正不平地面后再安装地板。" },
+          { name: "空鼓砖与不平地面维修", price: "从 RM 250 起", desc: "敲击检测空鼓砖，拆除重铺，以及不平地面打磨找平。" },
           { name: "踢脚线与收边条安装", price: "从 RM 8 / 延英尺起", desc: "PVC、MDF 或铝合金踢脚线，配 T 型条与高低扣，房间之间收口干净利落。" }
         ],
         process: [
@@ -3459,6 +3529,279 @@ export const servicesData: Record<string, ServiceDetail> = {
         metaDesc: "吉隆坡与雪兰莪空调保养、化学清洗、大修、加雪种、维修与安装。从 RM 129 起。20 个品牌，1 个月工艺保修。立即询价。",
         aioSummary: "KL Servis Rumah 在吉隆坡与雪兰莪提供空调保养、化学清洗、化学大修、加雪种、维修与安装。基本保养从 RM 129 起，化学清洗从 RM 156 起，大修从 RM 286 起，安装从 RM 259 起。20 个品牌，变频与非变频。1 个月工艺保修，3 个月配件保修。",
         warranty: "1 个月工艺保修（3 个月配件保修）"
+      }
+    }
+  },
+
+  // ── 30. KITCHEN RENOVATION ────────────────────────────────────────
+  "kitchen-renovation": {
+    slug: "kitchen-renovation",
+    title: "Kitchen Renovation",
+    tagline: "Complete kitchen makeover: hacking, tiling, waterproofing, cabinetry, countertop, plumbing, electrical and lighting across KL & Selangor. From RM 8,000.",
+    description:
+      "KL Servis Rumah delivers full kitchen renovation services across Kuala Lumpur and Selangor for terrace, semi-D, bungalow, condo and apartment homes. We handle every trade in one team: old kitchen hacking and debris disposal, floor and wall retiling, cement screeding and waterproofing, custom kitchen cabinets (base, wall, tall units), quartz or granite countertop, backsplash tiling, kitchen island or peninsula, wet and dry kitchen separation, plumbing reroute for sink and dishwasher, electrical rewiring for oven, hob, hood and extra power points, and LED lighting installation. Each kitchen is designed around Malaysian cooking habits — heavy wok cooking, high heat, oil splatter and frequent washing — with durable, low-maintenance materials and proper ventilation for cooker hood. We provide a single fixed-price quotation, 3D cabinet layout, Gantt timeline and daily WhatsApp progress photos, coordinated by one project manager.",
+    startPrice: "RM 8,000",
+    icon: "cooking-pot",
+    highlights: [
+      "One team for hacking, tiling, waterproofing, carpentry, countertop, plumbing, electrical and lighting",
+      "Custom kitchen cabinets: base, wall, tall units, pantry, island — built to your kitchen size",
+      "Quartz, granite or sintered stone countertop with backsplash options: porcelain, mosaic, subway",
+      "Designed for Malaysian cooking: heat-resistant, oil-proof, easy-clean finishes and strong hood ventilation",
+      "Wet and dry kitchen separation with proper drainage slope and floor trap positioning",
+      "Fixed-price quote with 3D cabinet view, milestone payments and 12-month workmanship warranty"
+    ],
+    subServices: [
+      { name: "Full Kitchen Renovation", price: "From RM 8,000", desc: "Complete kitchen rebuild: hacking, waterproofing, tiling, cabinets, countertop, plumbing, electrical and painting." },
+      { name: "Kitchen Cabinet Installation", price: "From RM 4,500", desc: "Custom base, wall and tall cabinets with soft-close hinges, drawer systems and pantry pull-outs." },
+      { name: "Kitchen Countertop Replacement", price: "From RM 1,800", desc: "Quartz, granite or sintered stone countertop supply and install with sink cut-out and edge profile." },
+      { name: "Kitchen Backsplash Tiling", price: "From RM 18 / sq ft", desc: "Porcelain, ceramic, mosaic or subway backsplash tiling with grout colour matching and anti-mould seal." },
+      { name: "Kitchen Island & Peninsula", price: "From RM 2,200", desc: "Custom island or peninsula with storage, breakfast bar, power points and waterfall edge option." },
+      { name: "Wet Kitchen Renovation", price: "From RM 6,500", desc: "Heavy-duty wet kitchen for wok cooking: floor trap, stainless steel sink, wall tiles to ceiling, strong ventilation." },
+      { name: "Dry Kitchen Renovation", price: "From RM 5,500", desc: "Modern dry kitchen with island, display cabinets, wine rack and ambient lighting for entertaining." },
+      { name: "Kitchen Extension", price: "On Quote", desc: "Rear or side kitchen extension with brickwork, roofing, waterproofing and DBKL/MBSA guidance where required." },
+      { name: "Kitchen Plumbing & Electrical", price: "From RM 950", desc: "Sink, dishwasher, water filter point, oven, hob, hood, extra 13A/15A power points and LED lighting." }
+    ],
+    process: [
+      { step: "01", title: "Site Measure & Design Brief", desc: "We measure your kitchen, check existing plumbing and electrical, discuss cooking habits, storage needs, appliance list and budget." },
+      { step: "02", title: "3D Layout & Fixed Quote", desc: "You receive a 3D cabinet layout, countertop sample, tile options and an itemized fixed-price quote covering all trades." },
+      { step: "03", title: "Hacking & Rough-In", desc: "Old tiles, cabinets and countertop are hacked, debris removed, new plumbing and electrical points are rerouted, waterproofing and screeding done." },
+      { step: "04", title: "Tiling, Carpentry & Countertop", desc: "Floor and wall tiles installed, custom cabinets fabricated and installed, countertop templated, cut and mounted with sink and hob cut-outs." },
+      { step: "05", title: "Appliances, Lighting & Handover", desc: "Hood, hob, oven, sink, tap, dishwasher and lights are fitted, tested, sealed and the kitchen is cleaned for handover." }
+    ],
+    faqs: [
+      { q: "How long does a full kitchen renovation take in KL?", a: "A standard 10x12 ft kitchen in a terrace or condo typically takes 2 to 3 weeks: 2–3 days hacking, 3–4 days plumbing/electrical and waterproofing, 4–5 days tiling, 5–7 days cabinet fabrication (off-site) plus 2–3 days installation, then countertop and appliances. Larger kitchens or extensions take 4 to 6 weeks." },
+      { q: "What is the difference between wet kitchen and dry kitchen renovation?", a: "Wet kitchen is designed for heavy Malaysian cooking — wok frying, high heat, oil and water. It needs full-height wall tiles, floor trap with proper slope, stainless steel sink, strong hood ventilation and heat-resistant countertop. Dry kitchen is for light prep, entertaining and display — it focuses on island, pantry, display cabinets, wine rack and ambient lighting. Many terrace and semi-D homes in KL have both." },
+      { q: "Do you provide kitchen cabinets and countertop?", a: "Yes. We supply and install custom kitchen cabinets in melamine, plywood with laminate, or aluminium carcass options, with soft-close hinges and drawer systems. Countertop options: quartz (most popular, low maintenance), granite (heat-resistant) or sintered stone (premium, scratch and heat-proof). We template on site for exact fit and handle sink and hob cut-outs." },
+      { q: "Can I stay at home during kitchen renovation?", a: "For condo kitchens you can usually stay — we seal the kitchen with plastic containment to limit dust. For landed homes with full hacking you may want to set up a temporary cooking area. We schedule noisy hacking within management-approved hours and clean daily." }
+    ],
+    heroImage: "/hero/home-services-kitchen-cabinet-kl.jpg",
+    metaTitle: "Kitchen Renovation Contractor KL & Selangor | From RM8,000",
+    metaDesc: "Full kitchen renovation in KL & Selangor: hacking, tiling, waterproofing, custom cabinets, quartz countertop, plumbing, electrical. Fixed price, 3D layout. Get quote on WhatsApp.",
+    aioSummary: "KL Servis Rumah provides kitchen renovation across KL & Selangor: hacking, retiling, waterproofing, custom cabinets, quartz/granite countertop, backsplash, island, wet/dry kitchen, plumbing and electrical. Designed for Malaysian wok cooking, fixed price, 3D layout, milestone payments.",
+    warranty: "12-Month Workmanship Warranty",
+    i18n: {
+      ms: {
+        title: "Pengubahsuaian Dapur",
+        tagline: "Makeover dapur lengkap: pecah, jubin, kalis air, kabinet, countertop, paip, elektrik dan pencahayaan di KL & Selangor. Dari RM 8,000.",
+        description: "KL Servis Rumah menyediakan perkhidmatan pengubahsuaian dapur penuh di seluruh Kuala Lumpur dan Selangor untuk rumah teres, semi-D, banglo, kondominium dan apartmen. Kami mengendalikan setiap kerja dalam satu pasukan: pemecahan dapur lama dan pelupusan serpihan, jubin semula lantai dan dinding, screed simen dan kalis air, kabinet dapur custom (unit bawah, atas, tinggi), countertop quartz atau granit, jubin backsplash, island atau peninsula dapur, pemisahan dapur basah dan kering, ubah hala paip untuk singki dan dishwasher, pendawaian elektrik untuk oven, hob, hood dan tambahan power point, serta pemasangan lampu LED. Setiap dapur direka mengikut tabiat memasak Malaysia — masakan kuali berat, haba tinggi, percikan minyak dan kerap mencuci — dengan bahan tahan lasak, penyelenggaraan rendah dan pengudaraan yang betul untuk hood dapur. Kami menyediakan satu sebut harga harga tetap, susun atur kabinet 3D, garis masa Gantt dan foto kemajuan harian WhatsApp, diselaraskan oleh satu pengurus projek.",
+        highlights: [
+          "Satu pasukan untuk pecah, jubin, kalis air, pertukangan, countertop, paip, elektrik dan pencahayaan",
+          "Kabinet dapur custom: unit bawah, dinding, tinggi, pantry, island — dibina mengikut saiz dapur anda",
+          "Countertop quartz, granit atau sintered stone dengan pilihan backsplash: porselin, mozek, subway",
+          "Direka untuk masakan Malaysia: kemasan tahan haba, kalis minyak, mudah bersih dan pengudaraan hood yang kuat",
+          "Pemisahan dapur basah dan kering dengan cerun saliran dan kedudukan floor trap yang betul",
+          "Sebut harga harga tetap dengan pandangan kabinet 3D, pembayaran pencapaian dan jaminan kerja 12 bulan"
+        ],
+        subServices: [
+          { name: "Pengubahsuaian Dapur Penuh", price: "Dari RM 8,000", desc: "Binaan semula dapur lengkap: pecah, kalis air, jubin, kabinet, countertop, paip, elektrik dan pengecatan." },
+          { name: "Pemasangan Kabinet Dapur", price: "Dari RM 4,500", desc: "Kabinet bawah, dinding dan tinggi custom dengan engsel soft-close, sistem laci dan pull-out pantry." },
+          { name: "Penggantian Countertop Dapur", price: "Dari RM 1,800", desc: "Bekalan dan pemasangan countertop quartz, granit atau sintered stone dengan potongan singki dan profil tepi." },
+          { name: "Jubin Backsplash Dapur", price: "Dari RM 18 / kaki persegi", desc: "Jubin backsplash porselin, seramik, mozek atau subway dengan pemadanan warna grout dan seal anti-kulat." },
+          { name: "Island & Peninsula Dapur", price: "Dari RM 2,200", desc: "Island atau peninsula custom dengan storan, bar sarapan, power point dan pilihan waterfall edge." },
+          { name: "Pengubahsuaian Dapur Basah", price: "Dari RM 6,500", desc: "Dapur basah tugas berat untuk masakan kuali: floor trap, singki keluli tahan karat, jubin dinding sampai siling, pengudaraan kuat." },
+          { name: "Pengubahsuaian Dapur Kering", price: "Dari RM 5,500", desc: "Dapur kering moden dengan island, kabinet paparan, rak wain dan pencahayaan ambien untuk hiburan." },
+          { name: "Sambungan Dapur", price: "Atas Sebut Harga", desc: "Sambungan dapur belakang atau sisi dengan kerja bata, bumbung, kalis air dan panduan DBKL/MBSA jika diperlukan." },
+          { name: "Paip & Elektrik Dapur", price: "Dari RM 950", desc: "Titik singki, dishwasher, penapis air, oven, hob, hood, tambahan power point 13A/15A dan pencahayaan LED." }
+        ],
+        process: [
+          { step: "01", title: "Ukur Tapak & Brief Reka Bentuk", desc: "Kami mengukur dapur anda, memeriksa paip dan elektrik sedia ada, membincangkan tabiat memasak, keperluan storan, senarai perkakas dan bajet." },
+          { step: "02", title: "Susun Atur 3D & Sebut Harga Tetap", desc: "Anda menerima susun atur kabinet 3D, sampel countertop, pilihan jubin dan sebut harga tetap terperinci merangkumi semua kerja." },
+          { step: "03", title: "Pecah & Rough-In", desc: "Jubin, kabinet dan countertop lama dipecah, serpihan disingkirkan, titik paip dan elektrik baru dihalakan semula, kalis air dan screed dilakukan." },
+          { step: "04", title: "Jubin, Pertukangan & Countertop", desc: "Jubin lantai dan dinding dipasang, kabinet custom difabrikasi dan dipasang, countertop diukur, dipotong dan dipasang dengan potongan singki dan hob." },
+          { step: "05", title: "Perkakas, Pencahayaan & Serahan", desc: "Hood, hob, oven, singki, paip, dishwasher dan lampu dipasang, diuji, di-seal dan dapur dibersihkan untuk serahan." }
+        ],
+        faqs: [
+          { q: "Berapa lama masa pengubahsuaian dapur penuh di KL?", a: "Dapur standard 10x12 kaki di rumah teres atau kondominium biasanya mengambil 2 hingga 3 minggu: 2–3 hari pecah, 3–4 hari paip/elektrik dan kalis air, 4–5 hari jubin, 5–7 hari fabrikasi kabinet (luar tapak) ditambah 2–3 hari pemasangan, kemudian countertop dan perkakas. Dapur lebih besar atau sambungan mengambil 4 hingga 6 minggu." },
+          { q: "Apakah perbezaan antara dapur basah dan dapur kering?", a: "Dapur basah direka untuk masakan berat Malaysia — goreng kuali, haba tinggi, minyak dan air. Ia memerlukan jubin dinding penuh, floor trap dengan cerun betul, singki keluli tahan karat, pengudaraan hood kuat dan countertop tahan haba. Dapur kering untuk penyediaan ringan, hiburan dan paparan — fokus pada island, pantry, kabinet paparan, rak wain dan pencahayaan ambien. Banyak rumah teres dan semi-D di KL mempunyai kedua-duanya." },
+          { q: "Adakah anda menyediakan kabinet dapur dan countertop?", a: "Ya. Kami membekal dan memasang kabinet dapur custom dalam pilihan melamine, plywood dengan laminate atau karkas aluminium, dengan engsel soft-close dan sistem laci. Pilihan countertop: quartz (paling popular, penyelenggaraan rendah), granit (tahan haba) atau sintered stone (premium, kalis calar dan haba). Kami mengukur di tapak untuk kesesuaian tepat dan mengendalikan potongan singki dan hob." },
+          { q: "Boleh saya tinggal di rumah semasa pengubahsuaian dapur?", a: "Untuk dapur kondominium anda biasanya boleh tinggal — kami menutup dapur dengan kepungan plastik untuk mengehadkan habuk. Untuk rumah landed dengan pemecahan penuh anda mungkin mahu menyediakan kawasan memasak sementara. Kami menjadualkan kerja bising dalam waktu diluluskan pengurusan dan membersihkan setiap hari." }
+        ],
+        metaTitle: "Kontraktor Pengubahsuaian Dapur KL & Selangor | Dari RM8,000",
+        metaDesc: "Pengubahsuaian dapur penuh di KL & Selangor: pecah, jubin, kalis air, kabinet custom, countertop quartz, paip, elektrik. Harga tetap, susun atur 3D. Dapatkan sebut harga di WhatsApp.",
+        aioSummary: "KL Servis Rumah menyediakan pengubahsuaian dapur di KL & Selangor: pecah, jubin semula, kalis air, kabinet custom, countertop quartz/granit, backsplash, island, dapur basah/kering, paip dan elektrik. Direka untuk masakan kuali Malaysia, harga tetap, susun atur 3D, pembayaran pencapaian.",
+        warranty: "Jaminan Kerja 12 Bulan"
+      },
+      zh: {
+        title: "厨房翻新",
+        tagline: "吉隆坡与雪兰莪全套厨房改造：拆除、贴砖、防水、橱柜、台面、水电与照明。从 RM 8,000 起。",
+        description: "KL Servis Rumah 在吉隆坡与雪兰莪为排屋、半独立、独栋、公寓与公寓单元提供全套厨房翻新服务。我们一站式处理所有工种：旧厨房拆除与垃圾清运、地面与墙面重新贴砖、水泥找平与防水、定制厨房橱柜（地柜、吊柜、高柜）、石英石或花岗岩台面、挡水板贴砖、厨房中岛或半岛、干湿厨房分离、水槽与洗碗机水管改道、烤箱、灶具、油烟机的电路重布与新增插座，以及 LED 照明安装。每间厨房都围绕马来西亚烹饪习惯设计——重油爆炒、高温、油渍飞溅与频繁冲洗——采用耐用、低维护材料并为油烟机提供充足通风。我们提供单一固定报价、3D 橱柜布局、甘特图工期与每日 WhatsApp 进度照片，由一位项目经理全程协调。",
+        highlights: [
+          "一个团队完成拆除、贴砖、防水、木工、台面、水管、电与照明",
+          "定制厨房橱柜：地柜、吊柜、高柜、储藏柜、中岛——按您厨房尺寸量身制作",
+          "石英石、花岗岩或岩板台面，挡水板可选瓷砖、马赛克、面包砖",
+          "为马来西亚烹饪设计：耐高温、防油、易清洁饰面与强力油烟机通风",
+          "干湿厨房分离，合理的排水坡度与地漏定位",
+          "固定报价配 3D 橱柜视图、里程碑付款与 12 个月工艺保修"
+        ],
+        subServices: [
+          { name: "全套厨房翻新", price: "从 RM 8,000 起", desc: "厨房全面重建：拆除、防水、贴砖、橱柜、台面、水管、电与油漆。" },
+          { name: "厨房橱柜安装", price: "从 RM 4,500 起", desc: "定制地柜、吊柜与高柜，配阻尼铰链、抽屉系统与储藏拉篮。" },
+          { name: "厨房台面更换", price: "从 RM 1,800 起", desc: "石英石、花岗岩或岩板台面供应与安装，含水槽开孔与边型处理。" },
+          { name: "厨房挡水板贴砖", price: "从 RM 18 / 平方英尺起", desc: "瓷砖、陶瓷、马赛克或面包砖挡水板贴砖，含美缝配色与防霉密封。" },
+          { name: "厨房中岛与半岛", price: "从 RM 2,200 起", desc: "定制中岛或半岛，带储物、早餐吧、插座与瀑布边选项。" },
+          { name: "湿厨房翻新", price: "从 RM 6,500 起", desc: "适合爆炒的重型湿厨房：地漏、不锈钢水槽、墙砖贴至天花、强力通风。" },
+          { name: "干厨房翻新", price: "从 RM 5,500 起", desc: "带中岛、展示柜、酒架与氛围灯的现代干厨房，适合招待聚会。" },
+          { name: "厨房扩建", price: "依报价", desc: "后部或侧面厨房扩建，含砌砖、屋顶、防水与 DBKL/MBSA 报批指引（如需）。" },
+          { name: "厨房水电", price: "从 RM 950 起", desc: "水槽、洗碗机、净水器点位、烤箱、灶具、油烟机、新增 13A/15A 插座与 LED 照明。" }
+        ],
+        process: [
+          { step: "01", title: "现场测量与设计简报", desc: "我们测量您的厨房，检查现有水电，讨论烹饪习惯、储物需求、电器清单与预算。" },
+          { step: "02", title: "3D 布局与固定报价", desc: "您将收到 3D 橱柜布局、台面样板、瓷砖选项与涵盖所有工种的分项固定报价。" },
+          { step: "03", title: "拆除与隐蔽工程", desc: "拆除旧瓷砖、橱柜与台面，清运垃圾，重新布置新水电点位，做防水与找平。" },
+          { step: "04", title: "贴砖、木工与台面", desc: "安装地面与墙面瓷砖，定制橱柜厂内制作并现场安装，台面现场量尺、切割并安装水槽与灶具开孔。" },
+          { step: "05", title: "电器、照明与交付", desc: "安装油烟机、灶具、烤箱、水槽、龙头、洗碗机与灯具，测试、打胶，厨房清洁后交付。" }
+        ],
+        faqs: [
+          { q: "在吉隆坡全套厨房翻新需要多久？", a: "标准的 10x12 英尺排屋或公寓厨房通常需要 2 到 3 周：拆除 2–3 天，水电与防水 3–4 天，贴砖 4–5 天，橱柜厂内制作 5–7 天加现场安装 2–3 天，然后是台面与电器。更大的厨房或扩建需要 4 到 6 周。" },
+          { q: "湿厨房和干厨房翻新有什么区别？", a: "湿厨房为重油烹饪设计——爆炒、高温、油水。需要墙砖贴到顶、带合理坡度的地漏、不锈钢水槽、强力油烟机通风与耐高温台面。干厨房用于轻度备餐、招待与展示——重点是中岛、储藏柜、展示柜、酒架与氛围灯。吉隆坡许多排屋与半独立式住宅两者都有。" },
+          { q: "你们提供厨房橱柜和台面吗？", a: "提供。我们供应并安装定制厨房橱柜，材质可选三聚氰胺板、贴面多层板或铝制柜体，配阻尼铰链与抽屉系统。台面选项：石英石（最受欢迎，低维护）、花岗岩（耐高温）或岩板（高端，防刮耐高温）。我们现场量尺确保精确贴合，并处理水槽与灶具开孔。" },
+          { q: "厨房翻新期间可以住在家里吗？", a: "公寓厨房通常可以住——我们用塑料围挡封闭厨房以限制粉尘。有地住宅全面拆除时您可能需要设置临时烹饪区。我们将 noisy 拆除安排在管理处批准时段内，并每日清洁。" }
+        ],
+        metaTitle: "吉隆坡与雪兰莪厨房翻新承包商 | 从 RM8,000 起",
+        metaDesc: "吉隆坡与雪兰莪全套厨房翻新：拆除、贴砖、防水、定制橱柜、石英石台面、水电。固定报价，3D 布局。通过 WhatsApp 获取报价。",
+        aioSummary: "KL Servis Rumah 在吉隆坡与雪兰莪提供厨房翻新：拆除、重新贴砖、防水、定制橱柜、石英石/花岗岩台面、挡水板、中岛、干湿厨房、水电。为马来西亚爆炒烹饪设计，固定报价，3D 布局，里程碑付款。",
+        warranty: "12 个月工艺保修"
+      }
+    }
+  },
+
+  // ── 31. BATHROOM RENOVATION ───────────────────────────────────────
+  "bathroom-renovation": {
+    slug: "bathroom-renovation",
+    title: "Bathroom Renovation",
+    tagline: "Full bathroom and toilet makeover: hacking, waterproofing, tiling, plumbing, sanitary, electrical and ventilation in KL & Selangor. From RM 6,000.",
+    description:
+      "KL Servis Rumah provides complete bathroom and toilet renovation across Kuala Lumpur and Selangor for landed houses, condos, apartments and commercial shoplots. We manage every trade: old tile and sanitary hacking, concrete screed and slope correction, multi-layer waterproofing membrane with ponding test, wall and floor tiling (porcelain, ceramic, mosaic, large format), sanitary installation (WC, basin, vanity, shower, rain shower, bathtub), bathroom plumbing reroute (hot and cold, floor trap, drainage), electrical for water heater, lighting, exhaust fan and shaver point, and ceiling repair or replacement (moisture-resistant gypsum or aluminium). All bathrooms are built to prevent the most common Malaysian failures: leaking to downstairs, hollow tiles, mouldy grout and poor drainage. We provide fixed-price quotation, tile layout plan, waterproofing warranty and daily WhatsApp updates.",
+    startPrice: "RM 6,000",
+    icon: "bath",
+    highlights: [
+      "One team for hacking, screeding, waterproofing, tiling, plumbing, sanitary, electrical and ceiling",
+      "Multi-layer waterproofing with 24–48 hour ponding test to prevent downstairs leakage",
+      "Wall and floor tiling: porcelain, ceramic, mosaic, large format with epoxy grout and anti-mould silicone",
+      "Sanitary: WC, basin, vanity cabinet, shower, rain shower, bathtub, glass shower screen",
+      "Proper slope to floor trap, anti-ponding floor, concealed plumbing and ventilation fan",
+      "Fixed-price quote, tile layout plan, waterproofing warranty and 12-month workmanship warranty"
+    ],
+    subServices: [
+      { name: "Full Bathroom Renovation", price: "From RM 6,000", desc: "Complete bathroom rebuild: hacking, waterproofing with ponding test, tiling, plumbing, sanitary and electrical." },
+      { name: "Toilet Renovation", price: "From RM 4,500", desc: "Small toilet/WC renovation: WC replacement, wall and floor tiling, plumbing and ventilation." },
+      { name: "Bathroom Makeover", price: "From RM 5,500", desc: "Cosmetic makeover without major hacking: retiling, new vanity, shower and lighting upgrade." },
+      { name: "Shower Area Renovation", price: "From RM 2,800", desc: "Shower area rebuild: waterproofing, anti-slip floor tiles, rain shower, glass screen and niche." },
+      { name: "Bathroom Tiling", price: "From RM 16 / sq ft", desc: "Bathroom wall and floor tiling with straight, brick-bond or herringbone patterns, epoxy grout." },
+      { name: "Bathroom Waterproofing", price: "From RM 1,200", desc: "Cementitious membrane, 3 coats, with 24–48 hour ponding test and warranty. No-hack PU injection also available." },
+      { name: "Bathroom Plumbing", price: "From RM 850", desc: "Hot and cold pipe reroute, floor trap replacement, drainage correction and pressure test." },
+      { name: "Sanitary Installation", price: "From RM 650", desc: "WC, basin, vanity cabinet, shower set, rain shower, bathtub and accessories installation." },
+      { name: "Bathroom Floor Replacement", price: "From RM 1,800", desc: "Hacking old floor, rescreed with slope, waterproofing, new anti-slip floor tiles." },
+      { name: "Bathroom Wall Tile Replacement", price: "From RM 2,200", desc: "Hacking old wall tiles, replaster, waterproofing and new wall tiles with trim and silicone." },
+      { name: "Bathroom Ceiling Repair", price: "From RM 450", desc: "Moisture-resistant gypsum or aluminium ceiling replacement with exhaust fan point and LED lighting." },
+      { name: "Bathroom Leak Repair", price: "From RM 350", desc: "Leak diagnosis with thermal imaging, PU injection or membrane repair, and ceiling restoration below." }
+    ],
+    process: [
+      { step: "01", title: "Site Survey & Tile Selection", desc: "We measure, check existing waterproofing failure, drainage slope, plumbing and electrical, and help you select anti-slip floor and wall tiles." },
+      { step: "02", title: "Fixed Quote & Layout Plan", desc: "You receive a tile layout plan, sanitary list and itemized fixed-price quote covering hacking, waterproofing, tiling, plumbing and electrical." },
+      { step: "03", title: "Hacking & Waterproofing", desc: "Old tiles and sanitary are hacked, debris removed, floor rescreeded with slope to trap, 3-coat waterproofing membrane applied and ponding tested 24–48 hours." },
+      { step: "04", title: "Tiling, Plumbing & Sanitary", desc: "Wall and floor tiles installed with proper spacers and epoxy grout, concealed plumbing rerouted and pressure tested, WC, basin, shower and vanity installed." },
+      { step: "05", title: "Ceiling, Electrical & Handover", desc: "Moisture-resistant ceiling, LED lights, exhaust fan and water heater point installed, silicone sealed, grout cleaned and bathroom handed over ready to use." }
+    ],
+    faqs: [
+      { q: "How long does a full bathroom renovation take?", a: "A standard 5x8 ft bathroom in KL typically takes 7 to 10 working days: 1 day hacking, 1–2 days screeding and waterproofing with 24–48 hour ponding test (can overlap with other prep), 2–3 days tiling, 1–2 days sanitary and plumbing, 1 day ceiling, electrical and final sealing. For condos, add 1–2 days for management compliance and lift booking. Larger bathrooms or those with bathtub take 10–14 days." },
+      { q: "How do you prevent bathroom leaking to downstairs?", a: "Three steps: (1) Proper screed with slope to floor trap so water doesn't pond, (2) 3 coats of cementitious waterproofing membrane with reinforcement at corners and pipe penetrations, (3) 24–48 hour ponding test where we flood the floor with 2 inches of water and check the ceiling below for zero moisture transfer. We also use PU injection as a no-hack option for active leaks. Full hacking jobs carry up to 5-year written waterproofing warranty." },
+      { q: "What tiles are best for Malaysian bathrooms?", a: "Floor: anti-slip porcelain (R10–R11) 300x300mm or 600x600mm, light grey or beige to hide water marks. Wall: 300x600mm ceramic or porcelain, glossy for easy cleaning. Shower area: mosaic or small format for extra grip. We avoid polished large format on bathroom floors as they are slippery when wet. Epoxy grout is recommended for mould resistance." },
+      { q: "Can you renovate my condo bathroom without hacking the whole floor?", a: "For leak repairs, yes — we offer no-hack PU injection grouting that seals leaks from below without tile hacking. For full makeover where tiles are old, hollow or you want new sanitary positions, hacking is necessary. Condo hacking requires management approval, deposit and work-hour compliance — we handle the submission, lift protection and debris disposal." }
+    ],
+    heroImage: "/hero/home-services-waterproofing-kl.jpg",
+    metaTitle: "Bathroom Renovation Contractor KL & Selangor | From RM6,000",
+    metaDesc: "Full bathroom renovation in KL & Selangor: hacking, waterproofing with ponding test, tiling, plumbing, sanitary, ceiling. Anti-leak, anti-slip, mould-proof. Fixed price. WhatsApp quote.",
+    aioSummary: "KL Servis Rumah provides bathroom renovation across KL & Selangor: hacking, screeding, multi-layer waterproofing with ponding test, wall and floor tiling, sanitary, plumbing reroute, electrical and moisture-resistant ceiling. Prevents downstairs leakage, hollow tiles and mould. Fixed price, tile layout plan, waterproofing warranty.",
+    warranty: "12-Month Workmanship + Up to 5-Year Waterproofing Warranty",
+    i18n: {
+      ms: {
+        title: "Pengubahsuaian Bilik Mandi",
+        tagline: "Makeover bilik mandi dan tandas penuh: pecah, kalis air, jubin, paip, sanitari, elektrik dan pengudaraan di KL & Selangor. Dari RM 6,000.",
+        description: "KL Servis Rumah menyediakan pengubahsuaian bilik mandi dan tandas lengkap di seluruh Kuala Lumpur dan Selangor untuk rumah landed, kondominium, apartmen dan shoplot komersial. Kami mengurus setiap kerja: pemecahan jubin dan sanitari lama, screed konkrit dan pembetulan cerun, membran kalis air berbilang lapisan dengan ujian kolam, jubin dinding dan lantai (porselin, seramik, mozek, format besar), pemasangan sanitari (WC, besen, vaniti, pancuran, hujan, tab mandi), ubah hala paip bilik mandi (panas dan sejuk, floor trap, saliran), elektrik untuk pemanas air, pencahayaan, kipas ekzos dan titik pencukur, serta pembaikan atau penggantian siling (gypsum tahan lembapan atau aluminium). Semua bilik mandi dibina untuk mengelakkan kegagalan paling biasa di Malaysia: bocor ke tingkat bawah, jubin berongga, grout berkulat dan saliran lemah. Kami menyediakan sebut harga harga tetap, pelan susun atur jubin, jaminan kalis air dan kemas kini WhatsApp harian.",
+        highlights: [
+          "Satu pasukan untuk pecah, screed, kalis air, jubin, paip, sanitari, elektrik dan siling",
+          "Kalis air berbilang lapisan dengan ujian kolam 24–48 jam untuk mengelakkan kebocoran tingkat bawah",
+          "Jubin dinding dan lantai: porselin, seramik, mozek, format besar dengan grout epoxy dan silikon anti-kulat",
+          "Sanitari: WC, besen, kabinet vaniti, pancuran, hujan, tab mandi, skrin pancuran kaca",
+          "Cerun betul ke floor trap, lantai anti-bertakung, paip tersembunyi dan kipas pengudaraan",
+          "Sebut harga harga tetap, pelan susun atur jubin, jaminan kalis air dan jaminan kerja 12 bulan"
+        ],
+        subServices: [
+          { name: "Pengubahsuaian Bilik Mandi Penuh", price: "Dari RM 6,000", desc: "Binaan semula bilik mandi lengkap: pecah, kalis air dengan ujian kolam, jubin, paip, sanitari dan elektrik." },
+          { name: "Pengubahsuaian Tandas", price: "Dari RM 4,500", desc: "Pengubahsuaian tandas/WC kecil: penggantian WC, jubin dinding dan lantai, paip dan pengudaraan." },
+          { name: "Makeover Bilik Mandi", price: "Dari RM 5,500", desc: "Makeover kosmetik tanpa pemecahan besar: jubin semula, vaniti baru, pancuran dan naik taraf pencahayaan." },
+          { name: "Pengubahsuaian Kawasan Pancuran", price: "Dari RM 2,800", desc: "Binaan semula kawasan pancuran: kalis air, jubin lantai anti-gelincir, pancuran hujan, skrin kaca dan niche." },
+          { name: "Jubin Bilik Mandi", price: "Dari RM 16 / kaki persegi", desc: "Jubin dinding dan lantai bilik mandi dengan corak lurus, brick-bond atau herringbone, grout epoxy." },
+          { name: "Kalis Air Bilik Mandi", price: "Dari RM 1,200", desc: "Membran simen, 3 lapisan, dengan ujian kolam 24–48 jam dan jaminan. Suntikan PU tanpa pecah juga tersedia." },
+          { name: "Paip Bilik Mandi", price: "Dari RM 850", desc: "Ubah hala paip panas dan sejuk, penggantian floor trap, pembetulan saliran dan ujian tekanan." },
+          { name: "Pemasangan Sanitari", price: "Dari RM 650", desc: "Pemasangan WC, besen, kabinet vaniti, set pancuran, pancuran hujan, tab mandi dan aksesori." },
+          { name: "Penggantian Lantai Bilik Mandi", price: "Dari RM 1,800", desc: "Pecah lantai lama, screed semula dengan cerun, kalis air, jubin lantai anti-gelincir baru." },
+          { name: "Penggantian Jubin Dinding Bilik Mandi", price: "Dari RM 2,200", desc: "Pecah jubin dinding lama, plaster semula, kalis air dan jubin dinding baru dengan trim dan silikon." },
+          { name: "Pembaikan Siling Bilik Mandi", price: "Dari RM 450", desc: "Penggantian siling gypsum tahan lembapan atau aluminium dengan titik kipas ekzos dan pencahayaan LED." },
+          { name: "Pembaikan Bocor Bilik Mandi", price: "Dari RM 350", desc: "Diagnosis bocor dengan pengimejan terma, suntikan PU atau pembaikan membran, dan pemulihan siling di bawah." }
+        ],
+        process: [
+          { step: "01", title: "Tinjauan Tapak & Pemilihan Jubin", desc: "Kami mengukur, memeriksa kegagalan kalis air sedia ada, cerun saliran, paip dan elektrik, dan membantu anda memilih jubin anti-gelincir lantai dan dinding." },
+          { step: "02", title: "Sebut Harga Tetap & Pelan Susun Atur", desc: "Anda menerima pelan susun atur jubin, senarai sanitari dan sebut harga tetap terperinci merangkumi pecah, kalis air, jubin, paip dan elektrik." },
+          { step: "03", title: "Pecah & Kalis Air", desc: "Jubin dan sanitari lama dipecah, serpihan disingkirkan, lantai di-screed semula dengan cerun ke trap, membran kalis air 3 lapisan disapu dan ujian kolam 24–48 jam." },
+          { step: "04", title: "Jubin, Paip & Sanitari", desc: "Jubin dinding dan lantai dipasang dengan spacer betul dan grout epoxy, paip tersembunyi dihalakan semula dan diuji tekanan, WC, besen, pancuran dan vaniti dipasang." },
+          { step: "05", title: "Siling, Elektrik & Serahan", desc: "Siling tahan lembapan, lampu LED, kipas ekzos dan titik pemanas air dipasang, di-seal silikon, grout dibersihkan dan bilik mandi diserahkan sedia digunakan." }
+        ],
+        faqs: [
+          { q: "Berapa lama masa pengubahsuaian bilik mandi penuh?", a: "Bilik mandi standard 5x8 kaki di KL biasanya mengambil 7 hingga 10 hari bekerja: 1 hari pecah, 1–2 hari screed dan kalis air dengan ujian kolam 24–48 jam (boleh bertindih dengan persediaan lain), 2–3 hari jubin, 1–2 hari sanitari dan paip, 1 hari siling, elektrik dan sealing akhir. Untuk kondominium, tambah 1–2 hari untuk pematuhan pengurusan dan tempahan lif. Bilik mandi lebih besar atau dengan tab mandi mengambil 10–14 hari." },
+          { q: "Bagaimana anda mengelakkan bilik mandi bocor ke tingkat bawah?", a: "Tiga langkah: (1) Screed betul dengan cerun ke floor trap supaya air tidak bertakung, (2) 3 lapisan membran kalis air simen dengan tetulang di sudut dan penembusan paip, (3) Ujian kolam 24–48 jam di mana kami membanjiri lantai dengan air 2 inci dan memeriksa siling di bawah untuk pemindahan lembapan sifar. Kami juga menggunakan suntikan PU sebagai pilihan tanpa pecah untuk kebocoran aktif. Kerja pecah penuh membawa jaminan kalis air bertulis sehingga 5 tahun." },
+          { q: "Jubin apa terbaik untuk bilik mandi Malaysia?", a: "Lantai: porselin anti-gelincir (R10–R11) 300x300mm atau 600x600mm, kelabu cerah atau beige untuk menyembunyikan kesan air. Dinding: seramik atau porselin 300x600mm, berkilat untuk mudah dibersihkan. Kawasan pancuran: mozek atau format kecil untuk cengkaman tambahan. Kami mengelakkan format besar digilap pada lantai bilik mandi kerana licin apabila basah. Grout epoxy disyorkan untuk rintangan kulat." },
+          { q: "Boleh anda mengubah suai bilik mandi kondominium tanpa memecah seluruh lantai?", a: "Untuk pembaikan bocor, ya — kami menawarkan grouting suntikan PU tanpa pecah yang mengedap kebocoran dari bawah tanpa pemecahan jubin. Untuk makeover penuh di mana jubin lama, berongga atau anda mahu kedudukan sanitari baru, pemecahan diperlukan. Pemecahan kondominium memerlukan kelulusan pengurusan, deposit dan pematuhan waktu kerja — kami mengendalikan penyerahan, perlindungan lif dan pelupusan serpihan." }
+        ],
+        metaTitle: "Kontraktor Pengubahsuaian Bilik Mandi KL & Selangor | Dari RM6,000",
+        metaDesc: "Pengubahsuaian bilik mandi penuh di KL & Selangor: pecah, kalis air dengan ujian kolam, jubin, paip, sanitari, siling. Anti-bocor, anti-gelincir, anti-kulat. Harga tetap. Sebut harga WhatsApp.",
+        aioSummary: "KL Servis Rumah menyediakan pengubahsuaian bilik mandi di KL & Selangor: pecah, screed, kalis air berbilang lapisan dengan ujian kolam, jubin dinding dan lantai, sanitari, ubah hala paip, elektrik dan siling tahan lembapan. Mengelakkan kebocoran tingkat bawah, jubin berongga dan kulat. Harga tetap, pelan susun atur jubin, jaminan kalis air.",
+        warranty: "Jaminan Kerja 12 Bulan + Jaminan Kalis Air Sehingga 5 Tahun"
+      },
+      zh: {
+        title: "卫生间翻新",
+        tagline: "吉隆坡与雪兰莪全套卫生间与厕所改造：拆除、防水、贴砖、水管、洁具、电与通风。从 RM 6,000 起。",
+        description: "KL Servis Rumah 在吉隆坡与雪兰莪为有地住宅、公寓、公寓单元与商业店铺提供全套卫生间与厕所翻新。我们负责所有工种：旧瓷砖与洁具拆除、混凝土找平与坡度修正、多层防水膜与蓄水测试、墙地贴砖（瓷砖、陶瓷、马赛克、大板）、洁具安装（马桶、台盆、浴室柜、花洒、雨淋、浴缸）、卫生间水管改道（冷热水、地漏、排水）、热水器、照明、排气扇与剃须插座的电路，以及天花维修或更换（防潮石膏板或铝扣板）。所有卫生间均按防止马来西亚最常见故障建造：漏水到楼下、空鼓砖、发霉美缝与排水不畅。我们提供固定报价、贴砖布局图、防水保修与每日 WhatsApp 更新。",
+        highlights: [
+          "一个团队完成拆除、找平、防水、贴砖、水管、洁具、电与天花",
+          "多层防水配 24–48 小时蓄水测试，防止漏水到楼下",
+          "墙地贴砖：瓷砖、陶瓷、马赛克、大板，配环氧美缝与防霉硅胶",
+          "洁具：马桶、台盆、浴室柜、花洒、雨淋、浴缸、玻璃淋浴屏",
+          "合理的地漏坡度、防积水地面、隐蔽水管与通风扇",
+          "固定报价、贴砖布局图、防水保修与 12 个月工艺保修"
+        ],
+        subServices: [
+          { name: "全套卫生间翻新", price: "从 RM 6,000 起", desc: "卫生间全面重建：拆除、防水与蓄水测试、贴砖、水管、洁具与电。" },
+          { name: "厕所翻新", price: "从 RM 4,500 起", desc: "小型厕所/WC 翻新：马桶更换、墙地贴砖、水管与通风。" },
+          { name: "卫生间改造", price: "从 RM 5,500 起", desc: "不大拆的表面改造：重新贴砖、新浴室柜、花洒与照明升级。" },
+          { name: "淋浴区翻新", price: "从 RM 2,800 起", desc: "淋浴区重建：防水、防滑地砖、雨淋花洒、玻璃屏与壁龛。" },
+          { name: "卫生间贴砖", price: "从 RM 16 / 平方英尺起", desc: "卫生间墙地贴砖，直铺、工字或人字拼，环氧美缝。" },
+          { name: "卫生间防水", price: "从 RM 1,200 起", desc: "水泥基防水膜，3 遍，配 24–48 小时蓄水测试与保修。也提供免砸砖 PU 注浆。" },
+          { name: "卫生间水管", price: "从 RM 850 起", desc: "冷热水管改道、地漏更换、排水修正与打压测试。" },
+          { name: "洁具安装", price: "从 RM 650 起", desc: "马桶、台盆、浴室柜、花洒套装、雨淋、浴缸与配件安装。" },
+          { name: "卫生间地面更换", price: "从 RM 1,800 起", desc: "拆除旧地面，重新找平带坡度、防水、新防滑地砖。" },
+          { name: "卫生间墙砖更换", price: "从 RM 2,200 起", desc: "拆除旧墙砖，重新抹灰、防水与新墙砖，含收边与硅胶。" },
+          { name: "卫生间天花维修", price: "从 RM 450 起", desc: "防潮石膏板或铝扣板天花更换，含排气扇点位与 LED 照明。" },
+          { name: "卫生间漏水维修", price: "从 RM 350 起", desc: "热成像漏水诊断、PU 注浆或防水膜维修，以及下方天花修复。" }
+        ],
+        process: [
+          { step: "01", title: "现场勘察与瓷砖挑选", desc: "我们测量、检查现有防水失效、排水坡度、水电，并协助您挑选防滑地砖与墙砖。" },
+          { step: "02", title: "固定报价与布局图", desc: "您将收到贴砖布局图、洁具清单与涵盖拆除、防水、贴砖、水电的分项固定报价。" },
+          { step: "03", title: "拆除与防水", desc: "拆除旧瓷砖与洁具，清运垃圾，地面重新找平带坡度至地漏，涂刷 3 遍防水膜并进行 24–48 小时蓄水测试。" },
+          { step: "04", title: "贴砖、水管与洁具", desc: "墙地砖按规范留缝与环氧美缝安装，隐蔽水管改道并打压测试，安装马桶、台盆、花洒与浴室柜。" },
+          { step: "05", title: "天花、电路与交付", desc: "安装防潮天花、LED 灯、排气扇与热水器点位，打硅胶密封，美缝清洁，卫生间即可使用交付。" }
+        ],
+        faqs: [
+          { q: "全套卫生间翻新需要多久？", a: "吉隆坡标准 5x8 英尺卫生间通常需要 7 到 10 个工作日：拆除 1 天，找平与防水 1–2 天配 24–48 小时蓄水测试（可与其他准备重叠），贴砖 2–3 天，洁具与水管 1–2 天，天花、电路与最终密封 1 天。公寓需额外 1–2 天用于管理处合规与电梯预约。更大卫生间或带浴缸的需 10–14 天。" },
+          { q: "如何防止卫生间漏水到楼下？", a: "三步：（1）合理找平带坡度至地漏防止积水，（2）3 遍水泥基防水膜，阴阳角与管道穿透处加强，（3）24–48 小时蓄水测试，地面蓄 2 英寸水并检查下方天花零水分渗透。我们也提供免砸砖 PU 注浆用于活动漏水。全拆项目享有最长 5 年书面防水保修。" },
+          { q: "马来西亚卫生间用什么瓷砖最好？", a: "地面：防滑瓷砖（R10–R11）300x300mm 或 600x600mm，浅灰或米色可隐藏水渍。墙面：300x600mm 陶瓷或瓷砖，亮面易清洁。淋浴区：马赛克或小规格增加摩擦力。卫生间地面避免使用抛光大板，遇水打滑。推荐环氧美缝防霉。" },
+          { q: "公寓卫生间可以不大拆地面就翻新吗？", a: "漏水维修可以——我们提供免砸砖 PU 注浆从下方密封漏水无需拆除瓷砖。全面改造若瓷砖老旧、空鼓或想改洁具位置则需拆除。公寓拆除需管理处批准、押金与工时合规——我们负责呈报、电梯保护与垃圾清运。" }
+        ],
+        metaTitle: "吉隆坡与雪兰莪卫生间翻新承包商 | 从 RM6,000 起",
+        metaDesc: "吉隆坡与雪兰莪全套卫生间翻新：拆除、防水与蓄水测试、贴砖、水管、洁具、天花。防漏、防滑、防霉。固定报价。WhatsApp 报价。",
+        aioSummary: "KL Servis Rumah 在吉隆坡与雪兰莪提供卫生间翻新：拆除、找平、多层防水与蓄水测试、墙地贴砖、洁具、水管改道、电路与防潮天花。防止漏水到楼下、空鼓砖与发霉。固定报价、贴砖布局图、防水保修。",
+        warranty: "12 个月工艺保修 + 最长 5 年防水保修"
       }
     }
   }

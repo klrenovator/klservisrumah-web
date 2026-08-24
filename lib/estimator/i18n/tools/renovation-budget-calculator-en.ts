@@ -2,10 +2,22 @@ import type { MessageDictionary } from "../../../i18n";
 export const renovationBudgetCalculatorEnDict: MessageDictionary = {
   "meta": {
     "name": "Renovation Budget Calculator",
-    "resultLabel": "Estimated cost",
-    "service": "Renovation Budget Calculator"
+    "resultLabel": "Estimated renovation cost",
+    "service": "House Renovation"
   },
   "steps": {
+    "property": {
+      "title": "Property details",
+      "subtitle": "Type and built-up size"
+    },
+    "scope": {
+      "title": "Renovation scope",
+      "subtitle": "Kitchen, bathroom, flooring, painting, ceiling"
+    },
+    "trades": {
+      "title": "Trades",
+      "subtitle": "Electrical, plumbing, carpentry, waterproofing, demolition"
+    },
     "dimensions": {
       "title": "Dimensions",
       "subtitle": "Enter length and width"
@@ -24,7 +36,7 @@ export const renovationBudgetCalculatorEnDict: MessageDictionary = {
     },
     "options": {
       "title": "Material & condition",
-      "subtitle": "Pick material grade"
+      "subtitle": "Pick material grade and current condition"
     },
     "condition": {
       "title": "Condition",
@@ -32,7 +44,7 @@ export const renovationBudgetCalculatorEnDict: MessageDictionary = {
     },
     "access": {
       "title": "Access & timing",
-      "subtitle": "Site access"
+      "subtitle": "Site access and urgency"
     },
     "symptoms": {
       "title": "What do you see?",
@@ -44,6 +56,42 @@ export const renovationBudgetCalculatorEnDict: MessageDictionary = {
     }
   },
   "fields": {
+    "propertyType": {
+      "label": "Property type"
+    },
+    "propertySize": {
+      "label": "Built-up size"
+    },
+    "kitchen": {
+      "label": "Kitchen renovation"
+    },
+    "bathroomCount": {
+      "label": "Number of bathrooms"
+    },
+    "flooring": {
+      "label": "Flooring"
+    },
+    "painting": {
+      "label": "Painting"
+    },
+    "ceiling": {
+      "label": "Plaster ceiling"
+    },
+    "electrical": {
+      "label": "Electrical"
+    },
+    "plumbing": {
+      "label": "Plumbing"
+    },
+    "carpentry": {
+      "label": "Carpentry"
+    },
+    "waterproofing": {
+      "label": "Waterproofing"
+    },
+    "demolition": {
+      "label": "Demolition & hacking"
+    },
     "length": {
       "label": "Length"
     },
@@ -93,6 +141,78 @@ export const renovationBudgetCalculatorEnDict: MessageDictionary = {
       "label": "Location"
     }
   },
+  "propertyTypes": {
+    "terrace": {
+      "label": "Terrace house",
+      "hint": "1,200–2,500 sq ft"
+    },
+    "semiD": {
+      "label": "Semi-D",
+      "hint": "1,800–3,500 sq ft"
+    },
+    "bungalow": {
+      "label": "Bungalow",
+      "hint": "2,500–6,000 sq ft"
+    },
+    "condo": {
+      "label": "Condo",
+      "hint": "800–1,500 sq ft"
+    },
+    "apartment": {
+      "label": "Apartment",
+      "hint": "700–1,200 sq ft"
+    },
+    "shoplot": {
+      "label": "Shoplot / office",
+      "hint": "Commercial"
+    }
+  },
+  "flooringTypes": {
+    "spc": {
+      "label": "SPC flooring",
+      "hint": "Waterproof, most popular"
+    },
+    "vinyl": {
+      "label": "Vinyl",
+      "hint": "Waterproof, soft"
+    },
+    "laminate": {
+      "label": "Laminate",
+      "hint": "Budget wood-look"
+    },
+    "tile": {
+      "label": "Porcelain / ceramic tiles",
+      "hint": "Durable"
+    },
+    "epoxy": {
+      "label": "Epoxy",
+      "hint": "Industrial"
+    }
+  },
+  "options": {
+    "yes": {
+      "label": "Yes"
+    },
+    "no": {
+      "label": "No"
+    },
+    "none": {
+      "label": "None"
+    },
+    "full": {
+      "label": "Full"
+    },
+    "standard": {
+      "label": "Standard"
+    },
+    "rewiring": {
+      "label": "Full rewiring"
+    }
+  },
+  "units": {
+    "bathroom": "bathroom",
+    "bathrooms": "bathrooms"
+  },
   "slope": {
     "flat": {
       "label": "Flat (no slope)",
@@ -126,31 +246,31 @@ export const renovationBudgetCalculatorEnDict: MessageDictionary = {
     },
     "worn": {
       "label": "Worn",
-      "hint": ""
+      "hint": "Needs repair"
     },
     "damaged": {
       "label": "Damaged",
-      "hint": ""
+      "hint": "Major repair"
     }
   },
   "access": {
     "easy": {
       "label": "Easy access",
-      "hint": ""
+      "hint": "Landed, lift accessible"
     },
     "difficult": {
       "label": "Difficult access",
-      "hint": ""
+      "hint": "High floor, no lift"
     }
   },
   "urgency": {
     "standard": {
       "label": "Standard",
-      "hint": ""
+      "hint": "1–2 weeks lead"
     },
     "urgent": {
       "label": "Urgent",
-      "hint": ""
+      "hint": "Faster scheduling"
     }
   },
   "severity": {
@@ -170,7 +290,7 @@ export const renovationBudgetCalculatorEnDict: MessageDictionary = {
   "materials": {
     "economy": {
       "label": "Economy",
-      "hint": "Budget"
+      "hint": "Budget materials"
     },
     "standard": {
       "label": "Standard",
@@ -230,7 +350,7 @@ export const renovationBudgetCalculatorEnDict: MessageDictionary = {
     "area": "Area",
     "quantity": "Quantity needed",
     "qty": "Quantity",
-    "material": "Material",
+    "material": "Material grade",
     "totalArea": "Total area",
     "estimated": "Estimated from inputs",
     "severity": "Severity",
@@ -250,25 +370,37 @@ export const renovationBudgetCalculatorEnDict: MessageDictionary = {
     "fourFiveDays": "4–5 working days",
     "oneWeek": "About 1 week",
     "oneTwoWeeks": "1–2 weeks",
+    "twoThreeWeeks": "2–3 weeks",
+    "fourToSixWeeks": "4–6 weeks",
+    "sixToTwelveWeeks": "6–12 weeks",
     "weeks": "About {n} weeks"
   },
   "related": {
+    "kitchen": {
+      "label": "Kitchen Renovation",
+      "desc": "Kitchen makeover with cabinets and countertop"
+    },
+    "bathroom": {
+      "label": "Bathroom Renovation",
+      "desc": "Bathroom with waterproofing and tiling"
+    },
     "service": {
-      "label": "Related Service",
-      "desc": "See service page"
+      "label": "House Renovation Service",
+      "desc": "See full renovation scope and pricing"
     },
     "allTools": {
       "label": "All Free Tools",
-      "desc": "Browse all calculators"
+      "desc": "Browse all calculators and estimators"
     }
   },
   "assumptions": {
-    "measured": "Based on measurements you entered. Final price confirmed on site.",
-    "inspection": "Diagnosis based on symptoms. Site inspection confirms final scope."
+    "measured": "Based on measurements and scope you entered. Final price confirmed after site visit.",
+    "inspection": "Diagnosis based on symptoms. Site inspection confirms final scope.",
+    "renovationNote": "Estimate includes labour and standard materials. Premium brands, imported tiles, solid wood carpentry and authority submissions quoted separately. JMB/MC/DBKL/MBSA approval may be required for structural or extension work — approval not guaranteed."
   },
   "findings": {
     "generic": "Possible related issue",
     "inspectionTitle": "Inspection recommended",
-    "inspectionDetail": "We recommend on-site inspection."
+    "inspectionDetail": "We recommend on-site inspection for accurate quotation."
   }
 };

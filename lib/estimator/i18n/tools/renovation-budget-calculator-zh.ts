@@ -2,10 +2,22 @@ import type { MessageDictionary } from "../../../i18n";
 export const renovationBudgetCalculatorZhDict: MessageDictionary = {
   "meta": {
     "name": "装修预算计算器",
-    "resultLabel": "预估费用",
-    "service": "装修预算计算器"
+    "resultLabel": "预估翻新费用",
+    "service": "全屋翻新"
   },
   "steps": {
+    "property": {
+      "title": "物业信息",
+      "subtitle": "类型与建筑面积"
+    },
+    "scope": {
+      "title": "翻新范围",
+      "subtitle": "厨房、卫生间、地板、油漆、天花"
+    },
+    "trades": {
+      "title": "工种",
+      "subtitle": "水电、木工、防水、拆除"
+    },
     "dimensions": {
       "title": "尺寸",
       "subtitle": "输入长和宽"
@@ -24,7 +36,7 @@ export const renovationBudgetCalculatorZhDict: MessageDictionary = {
     },
     "options": {
       "title": "材料与状况",
-      "subtitle": "选择材料等级"
+      "subtitle": "选择材料等级与现状"
     },
     "condition": {
       "title": "状况",
@@ -32,7 +44,7 @@ export const renovationBudgetCalculatorZhDict: MessageDictionary = {
     },
     "access": {
       "title": "施工条件与时间",
-      "subtitle": "现场条件"
+      "subtitle": "现场条件与工期"
     },
     "symptoms": {
       "title": "您看到了什么?",
@@ -44,6 +56,42 @@ export const renovationBudgetCalculatorZhDict: MessageDictionary = {
     }
   },
   "fields": {
+    "propertyType": {
+      "label": "物业类型"
+    },
+    "propertySize": {
+      "label": "建筑面积"
+    },
+    "kitchen": {
+      "label": "厨房翻新"
+    },
+    "bathroomCount": {
+      "label": "卫生间数量"
+    },
+    "flooring": {
+      "label": "地板"
+    },
+    "painting": {
+      "label": "油漆"
+    },
+    "ceiling": {
+      "label": "石膏天花"
+    },
+    "electrical": {
+      "label": "电路"
+    },
+    "plumbing": {
+      "label": "水管"
+    },
+    "carpentry": {
+      "label": "木工"
+    },
+    "waterproofing": {
+      "label": "防水"
+    },
+    "demolition": {
+      "label": "拆除与凿除"
+    },
     "length": {
       "label": "长度"
     },
@@ -93,6 +141,78 @@ export const renovationBudgetCalculatorZhDict: MessageDictionary = {
       "label": "位置"
     }
   },
+  "propertyTypes": {
+    "terrace": {
+      "label": "排屋",
+      "hint": "1,200–2,500 平方英尺"
+    },
+    "semiD": {
+      "label": "半独立式",
+      "hint": "1,800–3,500 平方英尺"
+    },
+    "bungalow": {
+      "label": "独栋洋房",
+      "hint": "2,500–6,000 平方英尺"
+    },
+    "condo": {
+      "label": "公寓",
+      "hint": "800–1,500 平方英尺"
+    },
+    "apartment": {
+      "label": "公寓单元",
+      "hint": "700–1,200 平方英尺"
+    },
+    "shoplot": {
+      "label": "店铺/办公室",
+      "hint": "商业"
+    }
+  },
+  "flooringTypes": {
+    "spc": {
+      "label": "SPC 石塑地板",
+      "hint": "防水，最受欢迎"
+    },
+    "vinyl": {
+      "label": "乙烯基地板",
+      "hint": "防水，脚感软"
+    },
+    "laminate": {
+      "label": "复合地板",
+      "hint": "经济仿木纹"
+    },
+    "tile": {
+      "label": "瓷砖",
+      "hint": "耐用"
+    },
+    "epoxy": {
+      "label": "环氧地坪",
+      "hint": "工业级"
+    }
+  },
+  "options": {
+    "yes": {
+      "label": "需要"
+    },
+    "no": {
+      "label": "不需要"
+    },
+    "none": {
+      "label": "不需要"
+    },
+    "full": {
+      "label": "全屋"
+    },
+    "standard": {
+      "label": "标准"
+    },
+    "rewiring": {
+      "label": "全屋重新布线"
+    }
+  },
+  "units": {
+    "bathroom": "间卫生间",
+    "bathrooms": "间卫生间"
+  },
   "slope": {
     "flat": {
       "label": "平屋顶",
@@ -114,43 +234,43 @@ export const renovationBudgetCalculatorZhDict: MessageDictionary = {
   "conditions": {
     "excellent": {
       "label": "极好",
-      "hint": "No prep"
+      "hint": "无需准备"
     },
     "good": {
       "label": "良好",
-      "hint": "Minor prep"
+      "hint": "轻微准备"
     },
     "poor": {
       "label": "较差",
-      "hint": "Heavy prep"
+      "hint": "大量准备"
     },
     "worn": {
       "label": "磨损",
-      "hint": ""
+      "hint": "需要维修"
     },
     "damaged": {
       "label": "损坏",
-      "hint": ""
+      "hint": "大修"
     }
   },
   "access": {
     "easy": {
       "label": "容易",
-      "hint": ""
+      "hint": "有地，电梯可达"
     },
     "difficult": {
       "label": "困难",
-      "hint": ""
+      "hint": "高层，无电梯"
     }
   },
   "urgency": {
     "standard": {
       "label": "标准",
-      "hint": ""
+      "hint": "1–2周排期"
     },
     "urgent": {
       "label": "加急",
-      "hint": ""
+      "hint": "更快排期"
     }
   },
   "severity": {
@@ -170,33 +290,33 @@ export const renovationBudgetCalculatorZhDict: MessageDictionary = {
   "materials": {
     "economy": {
       "label": "经济型",
-      "hint": "Budget"
+      "hint": "经济材料"
     },
     "standard": {
       "label": "标准型",
-      "hint": "Most popular"
+      "hint": "最受欢迎"
     },
     "premium": {
       "label": "高级型",
-      "hint": "Best quality"
+      "hint": "最好质量"
     }
   },
   "symptoms": {
     "leak": {
       "label": "可见漏水",
-      "hint": "Water dripping"
+      "hint": "滴水"
     },
     "lowPressure": {
       "label": "水压低",
-      "hint": "Weak flow"
+      "hint": "水流弱"
     },
     "noise": {
       "label": "水管异响",
-      "hint": "Banging"
+      "hint": "砰砰声"
     },
     "stain": {
       "label": "水渍",
-      "hint": "Brown mark"
+      "hint": "褐色痕迹"
     },
     "mould": {
       "label": "发霉"
@@ -230,7 +350,7 @@ export const renovationBudgetCalculatorZhDict: MessageDictionary = {
     "area": "面积",
     "quantity": "所需数量",
     "qty": "数量",
-    "material": "材料",
+    "material": "材料等级",
     "totalArea": "总面积",
     "estimated": "根据输入估算",
     "severity": "严重程度",
@@ -250,25 +370,37 @@ export const renovationBudgetCalculatorZhDict: MessageDictionary = {
     "fourFiveDays": "4-5天",
     "oneWeek": "约1周",
     "oneTwoWeeks": "1-2周",
+    "twoThreeWeeks": "2-3周",
+    "fourToSixWeeks": "4-6周",
+    "sixToTwelveWeeks": "6-12周",
     "weeks": "约{n}周"
   },
   "related": {
+    "kitchen": {
+      "label": "厨房翻新",
+      "desc": "含橱柜与台面的厨房改造"
+    },
+    "bathroom": {
+      "label": "卫生间翻新",
+      "desc": "含防水与贴砖的卫生间"
+    },
     "service": {
-      "label": "相关服务",
-      "desc": "See service page"
+      "label": "全屋翻新服务",
+      "desc": "查看完整翻新范围与报价"
     },
     "allTools": {
       "label": "全部免费工具",
-      "desc": "Browse all calculators"
+      "desc": "浏览全部计算器与估价工具"
     }
   },
   "assumptions": {
-    "measured": "基于您输入的尺寸。最终价格现场确认。",
-    "inspection": "基于症状的诊断。现场勘查确认最终范围。"
+    "measured": "基于您输入的尺寸与范围。最终价格现场确认。",
+    "inspection": "基于症状的诊断。现场勘查确认最终范围。",
+    "renovationNote": "预估包含人工与标准材料。优质品牌、进口瓷砖、实木木作与报批另行报价。结构或扩建工程可能需要JMB/MC/DBKL/MBSA批准——不保证获批。"
   },
   "findings": {
     "generic": "可能相关问题",
     "inspectionTitle": "建议现场检查",
-    "inspectionDetail": "建议现场检查。"
+    "inspectionDetail": "建议现场检查以获得准确报价。"
   }
 };

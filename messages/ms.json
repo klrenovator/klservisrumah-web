@@ -21,7 +21,13 @@
     "whatsapp": "WhatsApp",
     "messageOnWhatsApp": "Hantar mesej di WhatsApp",
     "whatsappOnline": "WhatsApp Dalam Talian",
-    "openWhatsappMenu": "Buka pilihan hubungan WhatsApp"
+    "openWhatsappMenu": "Buka pilihan hubungan WhatsApp",
+    "getRenovationQuote": "Dapatkan Sebut Harga Pengubahsuaian",
+    "requestSiteVisit": "Minta Lawatan Tapak",
+    "renovationCalculator": "Kalkulator Pengubahsuaian",
+    "houseRenovation": "Pengubahsuaian Rumah",
+    "kitchenRenovation": "Pengubahsuaian Dapur",
+    "bathroomRenovation": "Pengubahsuaian Bilik Mandi"
   },
   "nav": {
     "home": "Utama",
@@ -33,7 +39,8 @@
     "contact": "Hubungi Kami",
     "areas": "Kawasan Servis",
     "problems": "Masalah",
-    "topbar": "Perkhidmatan Rumah Hari Sama di KL & Selangor — Dari RM 5"
+    "topbar": "Perkhidmatan Rumah Hari Sama di KL & Selangor — Dari RM 5",
+    "renovation": "Pengubahsuaian"
   },
   "footer": {
     "tagline": "Perkhidmatan rumah profesional di KL & Selangor",
@@ -371,7 +378,8 @@
       "commercial": "Komersial",
       "residential": "Kediaman",
       "seasonal": "Bermusim"
-    }
+    },
+    "renovation": "Pengubahsuaian"
   },
   "whatsappDesk": {
     "title": "Meja Dispatch WhatsApp",

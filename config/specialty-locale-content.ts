@@ -5855,8 +5855,277 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
     },
   },
 
+  /* ── HOUSE RENOVATION - NEW PROPERTY TYPES & PARTIAL ──────────────── */
+  "house-renovation/partial-house-renovation": {
+    ms: {
+      name: "Pengubahsuaian Separa Rumah",
+      tagline: "Pengubahsuaian bertumpu untuk dapur, bilik mandi, ruang tamu atau bilik tidur — zon kerja diasingkan supaya anda boleh terus tinggal. Dari RM 12,000.",
+      description: "Pengubahsuaian separa sesuai untuk pemilik yang hanya mahu menaik taraf dapur, bilik mandi atau ruang tamu tanpa mengosongkan seluruh rumah. Kami mengasingkan kawasan kerja dengan kepungan plastik, menyelaraskan kerja bising dalam waktu dibenarkan pengurusan, dan membersihkan setiap hari. Skop biasa termasuk pemecahan terhad, jubin semula, kalis air kawasan basah, pendawaian elektrik tambahan, paip dan pengecatan. Anda menerima sebut harga tetap dengan pelan lantai dan garis masa yang jelas.",
+      highlights: ["Zon kerja diasingkan dengan kepungan plastik — anda boleh terus tinggal", "Skop bertumpu: dapur, bilik mandi, ruang tamu atau bilik tidur", "Perobohan terhad, jubin semula, kalis air, elektrik dan paip", "Sebut harga tetap dengan pelan lantai dan garis masa", "Pembersihan harian dan pematuhan waktu kerja pengurusan"],
+      process: [
+        { step: "01", title: "Tinjauan & Skop Separa", desc: "Kami menilai kawasan yang mahu diubah suai, memeriksa paip dan elektrik sedia ada, dan menetapkan skop separa yang jelas." },
+        { step: "02", title: "Pelan & Sebut Harga", desc: "Anda menerima pelan lantai, pilihan jubin dan sebut harga tetap yang merangkumi semua kerja separa." },
+        { step: "03", title: "Pengasingan & Perobohan", desc: "Kawasan kerja diasingkan dengan plastik, perobohan terhad dijalankan dalam waktu dibenarkan." },
+        { step: "04", title: "Bina & Kemasan", desc: "Jubin, kalis air, paip, elektrik dan pengecatan disiapkan dalam jujukan yang diselaraskan." },
+        { step: "05", title: "Pembersihan & Serahan", desc: "Kawasan dibersihkan, pemeriksaan bersama dijalankan dan jaminan kerja diaktifkan." }
+      ],
+      faqs: [
+        { q: "Bolehkah saya tinggal di rumah semasa pengubahsuaian separa?", a: "Ya, untuk dapur atau bilik mandi sahaja kami boleh mengasingkan kawasan kerja dengan plastik supaya habuk terhad. Kami membersihkan setiap hari dan menyelaraskan kerja bising dalam waktu dibenarkan." },
+        { q: "Berapa lama pengubahsuaian separa mengambil masa?", a: "Dapur sahaja 2–3 minggu, bilik mandi 7–10 hari, ruang tamu 1–2 minggu bergantung pada skop jubin dan pertukangan." },
+        { q: "Adakah skop separa lebih murah daripada penuh?", a: "Ya, kerana hanya kawasan tertentu terlibat. Anda membayar hanya untuk kawasan yang diubah suai, dengan sebut harga tetap tanpa variasi tersembunyi." },
+        { q: "Boleh anda buat dapur dan bilik mandi sahaja?", a: "Boleh. Ini skop paling popular — dapur dan bilik mandi makeover dari RM 10,000, dengan kalis air, jubin, kabinet dan paip termasuk." }
+      ],
+      metaTitle: "Pengubahsuaian Separa Rumah KL | Dapur & Bilik Mandi | Dari RM12k",
+      metaDesc: "Pengubahsuaian separa di KL & Selangor: dapur, bilik mandi, ruang tamu. Zon kerja diasingkan, pembersihan harian. Harga tetap, jaminan 12 bulan. Sebut harga WhatsApp."
+    },
+    zh: {
+      name: "局部房屋翻新",
+      tagline: "针对厨房、卫生间、客厅或卧室的局部翻新——施工区隔离，您可继续居住。从 RM 12,000 起。",
+      description: "局部翻新适合只想升级厨房、卫生间或客厅而无需搬空整屋的业主。我们用塑料围挡隔离施工区，将噪音作业安排在管理处允许时段，并每日清洁。常见范围包括有限拆除、重新贴砖、湿区防水、新增电路、水管与油漆。您将获得带平面图与清晰工期的固定报价。",
+      highlights: ["施工区塑料围挡隔离——您可继续居住", "针对性范围：厨房、卫生间、客厅或卧室", "有限拆除、重新贴砖、防水、水电与油漆", "固定报价配平面图与工期", "每日清洁与管理处工时合规"],
+      process: [
+        { step: "01", title: "勘察与局部范围", desc: "我们评估您想改造的区域，检查现有水电，明确局部翻新范围。" },
+        { step: "02", title: "方案与报价", desc: "您将收到平面图、瓷砖选项与涵盖全部局部工程的分项固定报价。" },
+        { step: "03", title: "隔离与拆除", desc: "施工区用塑料隔离，有限拆除在允许时段内进行。" },
+        { step: "04", title: "施工与收尾", desc: "按协调顺序完成贴砖、防水、水电与油漆。" },
+        { step: "05", title: "清洁与交付", desc: "清洁区域，联合验收并激活工艺保修。" }
+      ],
+      faqs: [
+        { q: "局部翻新期间可以住在家里吗？", a: "可以，仅厨房或卫生间时我们用塑料围挡隔离限制粉尘，每日清洁并将噪音作业安排在允许时段。" },
+        { q: "局部翻新需要多久？", a: "仅厨房 2–3 周，卫生间 7–10 天，客厅 1–2 周，取决于贴砖与木作范围。" },
+        { q: "局部比全屋便宜吗？", a: "是的，因为只涉及特定区域，您只需为改造区域付费，固定报价无隐藏增项。" },
+        { q: "可以只做厨房和卫生间吗？", a: "可以，这是最热门的范围——厨卫改造从 RM 10,000 起，含防水、贴砖、橱柜与水管。" }
+      ],
+      metaTitle: "吉隆坡局部房屋翻新 | 厨房与卫生间 | 从RM12k起",
+      metaDesc: "吉隆坡与雪兰莪局部翻新：厨房、卫生间、客厅。施工区隔离，每日清洁。固定报价，12个月保修。WhatsApp报价。"
+    }
+  },
+  "house-renovation/terrace-house-renovation": {
+    ms: {
+      name: "Pengubahsuaian Rumah Teres",
+      tagline: "Makeover rumah teres hujung-ke-hujung: sambungan dapur, bilik mandi, lantai, siling, elektrik dan paip di KL & Selangor. Dari RM 22,000.",
+      description: "Rumah teres adalah jenis hartanah paling biasa di KL & Selangor. Pengubahsuaian rumah teres kami merangkumi sambungan belakang atau sisi dapur, makeover dapur basah dan kering, pengubahsuaian bilik mandi dengan kalis air dan ujian kolam, penggantian lantai jubin atau SPC, siling plaster dengan L-box dan lampu tersembunyi, pendawaian elektrik semula dengan tambahan power point, dan pengecatan premium. Kami membantu panduan penyerahan pelan DBKL/MBSA untuk kerja sambungan dan menyediakan garis masa Gantt dengan foto kemajuan harian.",
+      highlights: ["Pakej hujung-ke-hujung untuk rumah teres setingkat hingga dua setingkat", "Sambungan dapur belakang/sisi dengan panduan pelan DBKL/MBSA", "Dapur basah tugas berat untuk masakan kuali dengan floor trap dan pengudaraan kuat", "Bilik mandi dengan kalis air 3 lapisan dan ujian kolam 24–48 jam", "Lantai jubin atau SPC, siling plaster L-box, elektrik semula dan cat premium"],
+      process: [
+        { step: "01", title: "Ukur & Brief", desc: "Kami melawat rumah teres anda, mengambil ukuran, memeriksa struktur, paip dan elektrik sedia ada." },
+        { step: "02", title: "Pelan & Sebut Harga", desc: "Anda menerima pelan lantai, pilihan jubin dan sebut harga tetap terperinci." },
+        { step: "03", title: "Sambungan & Struktur", desc: "Kerja sambungan, bata, bumbung dan struktur dijalankan dengan panduan kelulusan." },
+        { step: "04", title: "Interior & M&E", desc: "Jubin, siling, kalis air, paip, elektrik dan kabinet disiapkan dalam jujukan." },
+        { step: "05", title: "Cat & Serahan", desc: "Pengecatan premium, cucian akhir dan serahan dengan jaminan." }
+      ],
+      faqs: [
+        { q: "Berapa kos ubah suai rumah teres di KL?", a: "Rumah teres standard 1,500–2,000 kaki persegi biasanya dari RM 22,000 untuk makeover asas hingga RM 80,000+ untuk sambungan penuh dan kemasan premium. Sebut harga bergantung pada skop sambungan, jubin dan kabinet." },
+        { q: "Adakah sambungan dapur memerlukan kelulusan DBKL/MBSA?", a: "Ya, sambungan belakang atau sisi yang melibatkan struktur atau bumbung memerlukan penyerahan pelan. Kami memberi panduan dokumen dan proses, tetapi kelulusan tertakluk kepada pihak berkuasa tempatan — kami tidak menjanjikan kelulusan." },
+        { q: "Berapa lama pengubahsuaian rumah teres?", a: "Makeover tanpa sambungan 6–8 minggu, dengan sambungan 8–12 minggu, bergantung pada skop dan bekalan bahan." },
+        { q: "Boleh saya tinggal semasa ubah suai?", a: "Untuk ubah suai penuh kami syorkan mengosongkan rumah untuk keselamatan dan kawalan habuk. Untuk separa, kami boleh asingkan zon kerja." }
+      ],
+      metaTitle: "Pengubahsuaian Rumah Teres KL & Selangor | Dari RM22k",
+      metaDesc: "Pengubahsuaian rumah teres di KL & Selangor: sambungan dapur, bilik mandi, lantai, siling, elektrik. Panduan DBKL/MBSA, harga tetap, jaminan. Sebut harga WhatsApp.",
+    },
+    zh: {
+      name: "排屋翻新",
+      tagline: "吉隆坡与雪兰莪排屋端到端改造：厨房扩建、卫生间、地板、天花、水电。从 RM 22,000 起。",
+      description: "排屋是吉隆坡与雪兰莪最常见的房型。我们的排屋翻新涵盖后部或侧面厨房扩建、干湿厨房改造、带防水与蓄水测试的卫生间改造、瓷砖或SPC地板更换、带L-box与隐藏灯的石膏天花、重新布线与新增插座，以及优质油漆。我们为扩建工程提供DBKL/MBSA报批指引，并提供甘特图工期与每日进度照片。",
+      highlights: ["单层至双层排屋的端到端套餐", "后/侧厨房扩建，含DBKL/MBSA报批指引", "适合爆炒的重型湿厨房，带地漏与强力通风", "卫生间3层防水与24–48小时蓄水测试", "瓷砖或SPC地板、L-box石膏天花、重新布线与优质油漆"],
+      process: [
+        { step: "01", title: "测量与简报", desc: "我们到访您的排屋，测量尺寸，检查结构与现有水电。" },
+        { step: "02", title: "方案与报价", desc: "您将收到平面图、瓷砖选项与详细固定报价。" },
+        { step: "03", title: "扩建与结构", desc: "扩建、砌砖、屋顶与结构工程按报批指引进行。" },
+        { step: "04", title: "室内与机电", desc: "按顺序完成贴砖、天花、防水、水电与橱柜。" },
+        { step: "05", title: "油漆与交付", desc: "优质油漆、最终清洁与带保修交付。" }
+      ],
+      faqs: [
+        { q: "吉隆坡排屋翻新费用多少？", a: "标准1,500–2,000平方英尺排屋基础改造从RM22,000起，含扩建与高端饰面的全面改造RM80,000+，具体取决于扩建范围、瓷砖与橱柜。" },
+        { q: "厨房扩建需要DBKL/MBSA批准吗？", a: "是的，涉及结构或屋顶的后部或侧面扩建需要图纸报批。我们提供文件与流程指引，但批准取决于地方政府——我们不承诺获批。" },
+        { q: "排屋翻新需要多久？", a: "不含扩建的改造6–8周，含扩建8–12周，取决于范围与材料供应。" },
+        { q: "翻新期间可以住在家里吗？", a: "全屋翻新我们建议搬出以确保安全与控尘。局部翻新可隔离施工区。" }
+      ],
+      metaTitle: "吉隆坡与雪兰莪排屋翻新 | 从RM22k起",
+      metaDesc: "吉隆坡与雪兰莪排屋翻新：厨房扩建、卫生间、地板、天花、水电。DBKL/MBSA指引，固定报价，保修。WhatsApp报价。",
+    }
+  },
+  "house-renovation/condo-renovation": {
+    ms: {
+      name: "Pengubahsuaian Kondominium",
+      tagline: "Pengubahsuaian kondominium penuh di KL & Selangor dengan pematuhan JMB, perlindungan lif dan pelupusan serpihan. Dari RM 30,000.",
+      description: "Pengubahsuaian kondominium memerlukan pematuhan peraturan pengurusan bangunan: borang kebenaran, deposit, waktu kerja 9 pagi–6 petang Isnin–Sabtu, perlindungan lif dan koridor, serta pelupusan serpihan mengikut laluan ditetapkan. Kami mengendalikan semua penyerahan, menyediakan pelan lantai, jubin, siling plaster, kalis air bilik mandi dengan ujian kolam, kabinet dapur, elektrik dan pengecatan. Sesuai untuk kondominium di Mont Kiara, KLCC, Bangsar, Cheras, Puchong dan Subang Jaya.",
+      highlights: ["Pematuhan JMB/MC penuh: borang, deposit, lif, waktu kerja", "Perlindungan koridor dan lif dengan pelapik dan plastik", "Bilik mandi dengan kalis air dan ujian kolam untuk elak bocor ke bawah", "Dapur dengan kabinet custom dan countertop quartz", "Garis masa jelas dengan foto kemajuan harian WhatsApp"],
+      process: [
+        { step: "01", title: "Tinjauan & Peraturan JMB", desc: "Kami mengukur unit anda dan menyemak peraturan pengubahsuaian bangunan anda." },
+        { step: "02", title: "Penyerahan Pengurusan", desc: "Kami menyediakan borang, pelan ringkas, sijil insurans dan deposit untuk kelulusan." },
+        { step: "03", title: "Perlindungan & Perobohan", desc: "Lif dan koridor dilindungi, perobohan dijalankan dalam waktu dibenarkan dengan pelupusan serpihan berjadual." },
+        { step: "04", title: "Bina Interior", desc: "Siling, jubin, kalis air, paip, elektrik, kabinet dan pengecatan disiapkan." },
+        { step: "05", title: "Serahan Akhir", desc: "Cucian akhir, pemeriksaan bersama dan serahan dengan jaminan." }
+      ],
+      faqs: [
+        { q: "Adakah anda menguruskan kelulusan JMB kondominium?", a: "Ya, kami menguruskan semua borang, deposit dan perlindungan lif. Anda hanya perlu memberikan surat kebenaran pemilik jika anda penyewa." },
+        { q: "Berapa lama pengubahsuaian kondominium?", a: "Kondominium 1,000 kaki persegi biasanya 6–8 minggu, bergantung pada waktu kerja dibenarkan dan skop kabinet." },
+        { q: "Boleh buat tanpa pecah jubin?", a: "Untuk baiki bocor, ya — suntikan PU tanpa pecah. Untuk makeover penuh, pecah diperlukan untuk jubin baru dan ubah kedudukan paip." },
+        { q: "Bagaimana dengan bunyi bising kepada jiran?", a: "Kami hanya menjalankan kerja bising dalam waktu dibenarkan pengurusan dan memberi notis kepada jiran melalui pengurusan jika diperlukan." }
+      ],
+      metaTitle: "Pengubahsuaian Kondominium KL & Selangor | Dari RM30k",
+      metaDesc: "Pengubahsuaian kondominium di KL & Selangor: JMB/MC compliance, kalis air, jubin, kabinet dapur, elektrik. Harga tetap, jaminan. Sebut harga WhatsApp.",
+    },
+    zh: {
+      name: "公寓翻新",
+      tagline: "吉隆坡与雪兰莪公寓全屋翻新，含JMB合规、电梯保护与垃圾清运。从 RM 30,000 起。",
+      description: "公寓翻新需遵守管理处规定：装修申请表、押金、周一至周六9点至6点施工时段、电梯与走廊保护，以及按指定路线清运垃圾。我们负责全部呈报，提供平面图、瓷砖、石膏天花、带蓄水测试的卫生间防水、厨房橱柜、电路与油漆。适合Mont Kiara、KLCC、Bangsar、Cheras、Puchong与Subang Jaya的公寓。",
+      highlights: ["完整JMB/MC合规：表格、押金、电梯、工时", "走廊与电梯用防护垫与塑料保护", "卫生间防水与蓄水测试防止漏水到楼下", "厨房定制橱柜与石英石台面", "清晰工期配每日WhatsApp进度照片"],
+      process: [
+        { step: "01", title: "勘察与JMB规定", desc: "我们测量您的单位并查阅大楼装修指引。" },
+        { step: "02", title: "管理处呈报", desc: "我们准备表格、简要图纸、保险证书与押金等待批准。" },
+        { step: "03", title: "保护与拆除", desc: "保护电梯与走廊，在允许时段内拆除并按计划清运垃圾。" },
+        { step: "04", title: "室内施工", desc: "完成天花、瓷砖、防水、水电、橱柜与油漆。" },
+        { step: "05", title: "最终交付", desc: "最终清洁、联合验收与带保修交付。" }
+      ],
+      faqs: [
+        { q: "你们负责公寓JMB批准吗？", a: "是的，我们负责所有表格、押金与电梯保护。您只需提供业主授权书（如您是租客）。" },
+        { q: "公寓翻新需要多久？", a: "1,000平方英尺公寓通常6–8周，取决于允许工时与橱柜范围。" },
+        { q: "可以不砸砖翻新吗？", a: "漏水维修可以——免砸砖PU注浆。全屋改造需拆除以铺新砖并改水管位置。" },
+        { q: "噪音会影响邻居吗？", a: "我们仅在管理处允许时段内进行噪音作业，必要时通过管理处向邻居发出通知。" }
+      ],
+      metaTitle: "吉隆坡与雪兰莪公寓翻新 | 从RM30k起",
+      metaDesc: "吉隆坡与雪兰莪公寓翻新：JMB/MC合规、防水、瓷砖、厨房橱柜、电路。固定报价，保修。WhatsApp报价。",
+    }
+  },
+
+  /* ── KITCHEN RENOVATION ─────────────────────────────────────────────── */
+  "kitchen-renovation/full-kitchen-renovation": {
+    ms: {
+      name: "Pengubahsuaian Dapur Penuh",
+      tagline: "Binaan semula dapur lengkap: pecah, kalis air, jubin, kabinet, countertop, paip, elektrik dan pengecatan. Dari RM 8,000.",
+      description: "Pengubahsuaian dapur penuh menggantikan dapur lama yang uzur dengan ruang moden yang tahan lasak untuk masakan Malaysia. Skop termasuk pemecahan jubin dan kabinet lama, screed dan kalis air kawasan basah, jubin lantai anti-gelincir dan dinding penuh, kabinet bawah, atas dan tinggi custom dengan engsel soft-close, countertop quartz atau granit dengan potongan singki dan hob, backsplash porselin atau mozek, serta ubah hala paip untuk singki, dishwasher dan penapis air, dan elektrik untuk oven, hob, hood dan lampu LED. Direka untuk masakan kuali berat dengan pengudaraan hood yang kuat.",
+      highlights: ["Satu pasukan untuk pecah, jubin, kalis air, kabinet, countertop, paip dan elektrik", "Kabinet custom dengan soft-close dan sistem laci", "Countertop quartz, granit atau sintered stone dengan potongan tepat", "Backsplash anti-minyak mudah bersih", "Direka untuk masakan kuali Malaysia dengan pengudaraan kuat"],
+      process: [
+        { step: "01", title: "Ukur & Reka Bentuk", desc: "Kami mengukur dapur, memeriksa paip dan elektrik, membincangkan tabiat memasak dan storan." },
+        { step: "02", title: "Sebut Harga & 3D", desc: "Anda menerima susun atur 3D, sampel countertop dan sebut harga tetap." },
+        { step: "03", title: "Pecah & Rough-In", desc: "Jubin dan kabinet lama dipecah, paip dan elektrik dihalakan semula, kalis air dan screed dilakukan." },
+        { step: "04", title: "Jubin & Kabinet", desc: "Jubin dipasang, kabinet difabrikasi dan dipasang, countertop dipotong dan dipasang." },
+        { step: "05", title: "Perkakas & Serahan", desc: "Hood, hob, oven, singki dan lampu dipasang, diuji dan dapur dibersihkan untuk serahan." }
+      ],
+      faqs: [
+        { q: "Berapa lama pengubahsuaian dapur penuh?", a: "Dapur 10x12 kaki biasanya 2–3 minggu: 2–3 hari pecah, 3–4 hari paip/elektrik dan kalis air, 4–5 hari jubin, 5–7 hari fabrikasi kabinet luar tapak plus 2–3 hari pemasangan." },
+        { q: "Apakah jenis countertop terbaik?", a: "Quartz paling popular kerana penyelenggaraan rendah dan tahan kotoran. Granit tahan haba. Sintered stone premium tahan calar dan haba." },
+        { q: "Boleh saya terus tinggal di rumah?", a: "Ya, untuk kondominium kami asingkan dapur dengan plastik. Untuk rumah landed dengan pecah penuh, sediakan kawasan memasak sementara." },
+        { q: "Adakah anda menyediakan kabinet dan countertop?", a: "Ya, kami bekal dan pasang kabinet custom dan countertop quartz/granit/sintered stone dengan ukuran tapak tepat." }
+      ],
+      metaTitle: "Pengubahsuaian Dapur Penuh KL & Selangor | Dari RM8k",
+      metaDesc: "Dapur penuh di KL & Selangor: pecah, jubin, kalis air, kabinet custom, countertop quartz, paip, elektrik. Harga tetap, 3D layout. WhatsApp sebut harga.",
+    },
+    zh: {
+      name: "全套厨房翻新",
+      tagline: "厨房全面重建：拆除、防水、贴砖、橱柜、台面、水电与油漆。从 RM 8,000 起。",
+      description: "全套厨房翻新将老旧厨房替换为适合马来西亚烹饪的现代耐用空间。范围包括拆除旧瓷砖与橱柜、湿区找平与防水、防滑地砖与墙砖通铺、定制地柜、吊柜与高柜配阻尼铰链、石英石或花岗岩台面配水槽与灶具开孔、瓷砖或马赛克挡水板，以及水槽、洗碗机与净水器水管改道，烤箱、灶具、油烟机与LED灯的电路。为重油爆炒设计，配强力油烟机通风。",
+      highlights: ["一个团队完成拆除、贴砖、防水、橱柜、台面、水电", "定制橱柜配阻尼与抽屉系统", "石英石、花岗岩或岩板台面精确切割", "挡水板防油易清洁", "为马来西亚爆炒设计，强力通风"],
+      process: [
+        { step: "01", title: "测量与设计", desc: "我们测量厨房，检查水电，讨论烹饪习惯与储物需求。" },
+        { step: "02", title: "报价与3D", desc: "您将收到3D布局、台面样板与固定报价。" },
+        { step: "03", title: "拆除与隐蔽", desc: "拆除旧砖与橱柜，重新布置水电，做防水与找平。" },
+        { step: "04", title: "贴砖与橱柜", desc: "贴砖，橱柜厂内制作并安装，台面切割安装。" },
+        { step: "05", title: "电器与交付", desc: "安装油烟机、灶具、烤箱、水槽与灯具，测试后清洁交付。" }
+      ],
+      faqs: [
+        { q: "全套厨房翻新需要多久？", a: "10x12英尺厨房通常2–3周：拆除2–3天，水电与防水3–4天，贴砖4–5天，橱柜厂内5–7天加安装2–3天。" },
+        { q: "什么台面最好？", a: "石英石最受欢迎，低维护耐脏。花岗岩耐高温。岩板高端防刮耐高温。" },
+        { q: "翻新期间可以住在家里吗？", a: "可以，公寓厨房我们用塑料隔离。有地住宅全面拆除时需设临时烹饪区。" },
+        { q: "你们提供橱柜和台面吗？", a: "提供，我们供应并安装定制橱柜与石英石/花岗岩/岩板台面，现场量尺精确贴合。" }
+      ],
+      metaTitle: "吉隆坡全套厨房翻新 | 从RM8k起",
+      metaDesc: "吉隆坡与雪兰莪全套厨房翻新：拆除、贴砖、防水、定制橱柜、石英石台面、水电。固定报价，3D布局。WhatsApp报价。",
+    }
+  },
+
+  /* ── BATHROOM RENOVATION ────────────────────────────────────────────── */
+  "bathroom-renovation/full-bathroom-renovation": {
+    ms: {
+      name: "Pengubahsuaian Bilik Mandi Penuh",
+      tagline: "Binaan semula bilik mandi lengkap: pecah, kalis air dengan ujian kolam, jubin, paip, sanitari dan siling. Dari RM 6,000.",
+      description: "Pengubahsuaian bilik mandi penuh membina semula bilik mandi lama kepada ruang kalis bocor, anti-gelincir dan anti-kulat. Skop termasuk pemecahan jubin dan sanitari lama, screed semula dengan cerun betul ke floor trap, membran kalis air 3 lapisan dengan tetulang sudut dan ujian kolam 24–48 jam, jubin dinding dan lantai porselin atau seramik dengan grout epoxy, ubah hala paip panas dan sejuk, pemasangan WC, besen, vaniti, pancuran dan kaca, serta siling tahan lembapan dengan lampu LED dan kipas ekzos. Direka untuk mengelakkan kebocoran ke bawah, jubin berongga dan kulat.",
+      highlights: ["Satu pasukan untuk pecah, screed, kalis air, jubin, paip, sanitari dan siling", "Kalis air 3 lapisan dengan ujian kolam 24–48 jam", "Jubin porselin/seramik dengan grout epoxy anti-kulat", "Cerun betul ke floor trap, paip tersembunyi", "Jaminan kalis air sehingga 5 tahun dan kerja 12 bulan"],
+      process: [
+        { step: "01", title: "Tinjauan & Pemilihan Jubin", desc: "Kami mengukur, memeriksa kegagalan kalis air sedia ada, cerun saliran dan membantu pilih jubin anti-gelincir." },
+        { step: "02", title: "Sebut Harga & Pelan", desc: "Anda menerima pelan susun atur jubin, senarai sanitari dan sebut harga tetap." },
+        { step: "03", title: "Pecah & Kalis Air", desc: "Jubin lama dipecah, lantai di-screed dengan cerun, membran 3 lapisan disapu dan ujian kolam 24–48 jam." },
+        { step: "04", title: "Jubin & Sanitari", desc: "Jubin dipasang dengan epoxy grout, paip dihalakan semula dan diuji, WC, besen dan pancuran dipasang." },
+        { step: "05", title: "Siling & Serahan", desc: "Siling tahan lembapan, lampu LED, kipas ekzos dipasang, silicone sealed dan diserahkan." }
+      ],
+      faqs: [
+        { q: "Berapa lama pengubahsuaian bilik mandi penuh?", a: "Bilik mandi 5x8 kaki biasanya 7–10 hari bekerja: 1 hari pecah, 1–2 hari screed dan kalis air dengan ujian kolam 24–48 jam, 2–3 hari jubin, 1–2 hari sanitari dan paip, 1 hari siling dan elektrik." },
+        { q: "Bagaimana elak bocor ke tingkat bawah?", a: "Tiga langkah: screed dengan cerun betul, 3 lapisan membran kalis air dengan tetulang sudut, dan ujian kolam 24–48 jam dengan banjir 2 inci air dan periksa siling bawah sifar lembapan." },
+        { q: "Jubin apa terbaik untuk bilik mandi?", a: "Lantai: porselin anti-gelincir R10–R11 300x300mm. Dinding: seramik 300x600mm berkilat mudah bersih. Kawasan pancuran: mozek untuk cengkaman tambahan. Grout epoxy untuk anti-kulat." },
+        { q: "Boleh buat tanpa pecah seluruh lantai?", a: "Untuk baiki bocor, ya — suntikan PU tanpa pecah. Untuk makeover penuh, pecah diperlukan untuk jubin baru." }
+      ],
+      metaTitle: "Pengubahsuaian Bilik Mandi Penuh KL | Dari RM6k | Kalis Bocor",
+      metaDesc: "Bilik mandi penuh di KL & Selangor: pecah, kalis air dengan ujian kolam, jubin, paip, sanitari. Anti-bocor, anti-gelincir, anti-kulat. Harga tetap, WhatsApp.",
+    },
+    zh: {
+      name: "全套卫生间翻新",
+      tagline: "卫生间全面重建：拆除、防水与蓄水测试、贴砖、水管、洁具与天花。从 RM 6,000 起。",
+      description: "全套卫生间翻新将老旧卫生间重建为防漏、防滑、防霉的空间。范围包括拆除旧砖与洁具、重新找平带正确坡度至地漏、3层防水膜含阴阳角加强与24–48小时蓄水测试、瓷砖墙地铺贴配环氧美缝、冷热水管改道、马桶、台盆、浴室柜、花洒与玻璃安装，以及防潮天花配LED灯与排气扇。专为防止漏水到楼下、空鼓砖与发霉设计。",
+      highlights: ["一个团队完成拆除、找平、防水、贴砖、水管、洁具与天花", "3层防水配24–48小时蓄水测试", "瓷砖配环氧防霉美缝", "正确坡度至地漏，隐蔽水管", "防水保修最长5年，工艺12个月"],
+      process: [
+        { step: "01", title: "勘察与选砖", desc: "我们测量、检查现有防水失效与排水坡度，协助挑选防滑瓷砖。" },
+        { step: "02", title: "报价与布局", desc: "您将收到贴砖布局图、洁具清单与固定报价。" },
+        { step: "03", title: "拆除与防水", desc: "拆除旧砖，地面重新找平带坡度，涂刷3层防水膜并进行24–48小时蓄水测试。" },
+        { step: "04", title: "贴砖与洁具", desc: "墙地砖环氧美缝安装，水管改道打压测试，安装马桶、台盆与花洒。" },
+        { step: "05", title: "天花与交付", desc: "安装防潮天花、LED灯与排气扇，打胶密封后交付。" }
+      ],
+      faqs: [
+        { q: "全套卫生间翻新需要多久？", a: "标准5x8英尺卫生间通常7–10个工作日：拆除1天，找平与防水1–2天配24–48小时蓄水测试，贴砖2–3天，洁具与水管1–2天，天花与电路1天。" },
+        { q: "如何防止漏水到楼下？", a: "三步：正确找平带坡度至地漏，3层防水膜阴阳角加强，24–48小时蓄水测试地面蓄2英寸水并检查下方天花零渗透。" },
+        { q: "卫生间用什么瓷砖最好？", a: "地面：防滑瓷砖R10–R11 300x300mm。墙面：300x600mm亮面陶瓷易清洁。淋浴区：马赛克增加摩擦力。环氧美缝防霉。" },
+        { q: "可以不砸砖翻新吗？", a: "漏水维修可以——免砸砖PU注浆。全面改造需拆除以铺新砖。" }
+      ],
+      metaTitle: "吉隆坡全套卫生间翻新 | 从RM6k起 | 防漏",
+      metaDesc: "吉隆坡与雪兰莪全套卫生间翻新：拆除、防水与蓄水测试、贴砖、水管、洁具、天花。防漏、防滑、防霉。固定报价。WhatsApp报价。",
+    }
+  },
+  "bathroom-renovation/bathroom-waterproofing": {
+    ms: {
+      name: "Kalis Air Bilik Mandi",
+      tagline: "Membran simen 3 lapisan dengan ujian kolam 24–48 jam dan jaminan untuk mengelakkan bocor ke tingkat bawah. Dari RM 1,200.",
+      description: "Kalis air bilik mandi adalah langkah paling kritikal dalam pengubahsuaian bilik mandi. Kami menyediakan sistem kalis air menyeluruh: penanggalan jubin lama hingga konkrit mentah, pembaikan retak dan fillet sudut, aplikasi membran simen 3 lapisan dengan tetulang di sudut dan penembusan paip, dan ujian kolam 24–48 jam sebelum jubin baru dipasang. Untuk kebocoran aktif tanpa mahu pecah jubin, kami menawarkan suntikan PU tekanan tinggi dari bawah slab. Semua kerja kalis air penuh membawa jaminan bertulis sehingga 5 tahun.",
+      highlights: ["Membran simen 3 lapisan dengan tetulang sudut", "Ujian kolam 24–48 jam dengan banjir 2 inci air", "Pilihan tanpa pecah: suntikan PU tekanan tinggi", "Rawatan retak dan fillet sudut untuk elak titik lemah", "Jaminan bertulis sehingga 5 tahun terhadap bocor"],
+      process: [
+        { step: "01", title: "Penanggalan & Persediaan", desc: "Jubin lama ditanggalkan hingga konkrit mentah dan permukaan dibersihkan." },
+        { step: "02", title: "Pembaikan & Fillet", desc: "Retakan diisi, sudut dibuat fillet bulat untuk elak membran retak." },
+        { step: "03", title: "Aplikasi Membran", desc: "Tiga lapisan membran kalis air disapu dengan setiap lapisan kering sepenuhnya." },
+        { step: "04", title: "Ujian Kolam & Jubin", desc: "Banjir lantai 2 inci air 24–48 jam, periksa siling bawah, kemudian jubin baru dipasang." }
+      ],
+      faqs: [
+        { q: "Berapa lama kalis air bilik mandi bertahan?", a: "Membran profesional yang betul boleh bertahan 10–15 tahun. Kami beri jaminan sehingga 5 tahun untuk kerja penuh." },
+        { q: "Adakah jubin perlu dipecahkan?", a: "Untuk kalis air semula kekal, ya — membran mesti disapu terus pada konkrit. Untuk baiki bocor sementara, suntikan PU tanpa pecah boleh digunakan." },
+        { q: "Apa itu ujian kolam?", a: "Kami tutup saliran, banjir lantai dengan air 2 inci selama 24–48 jam dan periksa siling di bawah untuk mengesahkan tiada pemindahan lembapan." },
+        { q: "Bolehkah bocor dirawat tanpa pecah jubin?", a: "Ya, untuk kebocoran aktif kami tawarkan suntikan PU tekanan tinggi yang mengedap retakan dari bawah slab tanpa pecah jubin mewah." }
+      ],
+      metaTitle: "Kalis Air Bilik Mandi KL & Selangor | Ujian Kolam | Dari RM1,200",
+      metaDesc: "Kalis air bilik mandi di KL & Selangor: membran 3 lapisan, ujian kolam 24–48 jam, jaminan 5 tahun. Pilihan tanpa pecah suntikan PU. Sebut harga percuma.",
+    },
+    zh: {
+      name: "卫生间防水",
+      tagline: "3层水泥基防水膜配24–48小时蓄水测试与保修，防止漏水到楼下。从 RM 1,200 起。",
+      description: "卫生间防水是卫生间翻新最关键的一步。我们提供全面防水系统：拆除旧砖至裸露混凝土、裂缝修补与阴阳角圆角处理、3层水泥基防水膜含角部与管道穿透处加强，以及铺新砖前24–48小时蓄水测试。对于不想砸砖的活动漏水，我们提供从板下方进行的高压PU注浆。所有全面防水工程享有最长5年书面保修。",
+      highlights: ["3层水泥基防水膜含角部加强", "24–48小时蓄水测试，地面蓄2英寸水", "免砸砖选项：高压PU注浆", "裂缝修补与圆角处理防止薄弱点", "最长5年书面防漏保修"],
+      process: [
+        { step: "01", title: "拆除与准备", desc: "拆除旧砖至裸露混凝土并清洁表面。" },
+        { step: "02", title: "修补与圆角", desc: "填补裂缝，阴阳角做圆角防止防水膜开裂。" },
+        { step: "03", title: "涂刷防水膜", desc: "涂刷3层防水膜，每层完全干燥后再涂下一层。" },
+        { step: "04", title: "蓄水测试与贴砖", desc: "地面蓄2英寸水24–48小时，检查下方天花，然后铺新砖。" }
+      ],
+      faqs: [
+        { q: "卫生间防水能用多久？", a: "正确施工的优质防水膜可用10–15年。我们为全面工程提供最长5年保修。" },
+        { q: "需要砸掉瓷砖吗？", a: "要做永久防水重做，是的——防水膜必须直接涂在混凝土上。临时漏水维修可用免砸砖PU注浆。" },
+        { q: "什么是蓄水测试？", a: "我们堵住排水口，地面蓄2英寸水24–48小时并检查下方天花确认无任何水分渗透。" },
+        { q: "可以不砸砖修漏水吗？", a: "可以，对于活动漏水我们提供高压PU注浆，从板下方密封裂缝无需砸掉高级瓷砖。" }
+      ],
+      metaTitle: "吉隆坡卫生间防水 | 蓄水测试 | 从RM1,200起",
+      metaDesc: "吉隆坡与雪兰莪卫生间防水：3层防水膜，24–48小时蓄水测试，5年保修。免砸砖PU注浆可选。免费报价。",
+    }
+  },
+
   /* ── CLEANING ────────────────────────────────────────────────────────── */
   "cleaning/weekly-condo-cleaning-1-000-sqft": {
+
     ms: {
       name: "Pembersihan Kondominium Mingguan",
       tagline: "Pembersihan mingguan untuk kondominium atau apartmen 3 bilik bersaiz sehingga 1,000 kaki persegi — dapur, bilik mandi dan kawasan bersama dengan pembersih yang sama setiap kali. Dari RM 180 / lawatan.",
