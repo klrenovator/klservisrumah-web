@@ -70,6 +70,12 @@ All prices are the published starting prices shown on the live service pages. Fi
 - Bathroom & Wet Area Waterproofing — From RM 1,000
 - Roof & Concrete Slab Waterproofing — On Quote
 - Wall Dampness & Efflorescence Repair — From RM 350
+- Toilet Waterproofing — From RM 900
+- Balcony Waterproofing — From RM 1,200
+- Concrete Slab & Car Porch Waterproofing — On Quote
+- Water Leakage Repair — From RM 350
+- Ceiling Water Damage Repair — From RM 420
+- Waterproofing Repair & Re-Coating — From RM 500
 - Cost guide: https://www.klservisrumah.my/services/waterproofing/cost
 
 ### Handyman Services
@@ -829,6 +835,6 @@ KL Servis Rumah publishes fair, upfront pricing benchmarked against the Klang Va
 - Sitemap: https://www.klservisrumah.my/sitemap.xml
 
 ## Scale
-- 31 services · 173 sub-services
+- 31 services · 179 sub-services
 - 37 area pages · 86 problem pages · 229 articles
-- 4,750 indexable pages listed in the sitemap
+- 4,768 indexable pages listed in the sitemap

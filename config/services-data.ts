@@ -430,7 +430,13 @@ export const servicesData: Record<string, ServiceDetail> = {
       { name: "PU High-Pressure Injection Grouting", price: "From RM 300 / point", desc: "Smart non-destructive polyurethane injection to seal inter-floor concrete slab leaks." },
       { name: "Bathroom & Wet Area Waterproofing", price: "From RM 1,000", desc: "Chemical waterproofing membrane application for showers, toilets, and wet commercial washrooms." },
       { name: "Roof & Concrete Slab Waterproofing", price: "On Quote", desc: "Heavy-duty elastomeric UV-resistant acrylic or torch-on bituminous membranes for roof slabs and balconies." },
-      { name: "Wall Dampness & Efflorescence Repair", price: "From RM 350", desc: "Sanding off salt scaling, sanitizing mold, and applying commercial moisture-blocking barriers." }
+      { name: "Wall Dampness & Efflorescence Repair", price: "From RM 350", desc: "Sanding off salt scaling, sanitizing mold, and applying commercial moisture-blocking barriers." },
+      { name: "Toilet Waterproofing", price: "From RM 900", desc: "Toilet and WC floor and wall waterproofing with slope correction, corner reinforcement and 48-hour ponding test." },
+      { name: "Balcony Waterproofing", price: "From RM 1,200", desc: "Open balcony, planter box and roof terrace waterproofing with UV-resistant membrane and drainage check." },
+      { name: "Concrete Slab & Car Porch Waterproofing", price: "On Quote", desc: "Car porch, driveway and exposed slab waterproofing with crack sealing, membrane and protective topcoat." },
+      { name: "Water Leakage Repair", price: "From RM 350", desc: "Thermal-imaging leak diagnosis and targeted repair for active wall, floor, pipe or slab leaks." },
+      { name: "Ceiling Water Damage Repair", price: "From RM 420", desc: "Damp-stained or soft ceiling repair: leak source treatment, plasterboard replacement and re-finishing." },
+      { name: "Waterproofing Repair & Re-Coating", price: "From RM 500", desc: "Restoring failed or aged waterproofing: clean, prime, re-coat membrane and run a fresh ponding test." }
     ],
     process: [
       { step: "01", title: "Thermal Mapping", desc: "We track the water dampness spread to its highest moisture concentration point using thermal imaging meters." },
@@ -468,7 +474,13 @@ export const servicesData: Record<string, ServiceDetail> = {
           { name: "Grouting Suntikan Tekanan Tinggi PU", price: "Dari RM 300 / titik", desc: "Suntikan poliuretana pintar yang tidak merosakkan untuk mengedap kebocoran slab konkrit antara tingkat." },
           { name: "Kalis Air Bilik Air & Kawasan Basah", price: "Dari RM 1,000", desc: "Aplikasi membran kalis air kimia untuk pancuran, tandas, dan bilik mandi komersial basah." },
           { name: "Kalis Air Bumbung & Slab Konkrit", price: "Atas Sebut Harga", desc: "Membran akrilik tahan UV elastomerik tugas berat atau bituminus torch-on untuk slab bumbung dan balkoni." },
-          { name: "Pembaikan Lembapan Dinding & Kesan Garam", price: "Dari RM 350", desc: "Mengamplas kerak garam, mensanitasi kulat, dan menyapu penghadang penyekat lembapan komersial." }
+          { name: "Pembaikan Lembapan Dinding & Kesan Garam", price: "Dari RM 350", desc: "Mengamplas kerak garam, mensanitasi kulat, dan menyapu penghadang penyekat lembapan komersial." },
+          { name: "Kalis Air Tandas", price: "Dari RM 900", desc: "Kalis air lantai dan dinding tandas/WC dengan pembetulan cerun, pengukuhan sudut dan ujian kolam 48 jam." },
+          { name: "Kalis Air Balkoni", price: "Dari RM 1,200", desc: "Kalis air balkoni terbuka, kotak penanam dan teres bumbung dengan membran tahan UV dan semakan saliran." },
+          { name: "Kalis Air Slab Konkrit & Porch Kereta", price: "Atas Sebut Harga", desc: "Kalis air porch kereta, laluan dan slab terdedah dengan pengedapan retak, membran dan topcoat pelindung." },
+          { name: "Pembaikan Kebocoran Air", price: "Dari RM 350", desc: "Diagnosis kebocoran dengan pengimejan terma dan pembaikan berfokus untuk kebocoran dinding, lantai, paip atau slab." },
+          { name: "Pembaikan Siling Rosak Air", price: "Dari RM 420", desc: "Pembaikan siling bernoda atau lembut rosak air: rawatan punca kebocoran, penggantian papan plaster dan kemasan semula." },
+          { name: "Pembaikan & Sapu Semula Kalis Air", price: "Dari RM 500", desc: "Memulihkan kalis air gagal atau lama: pembersihan, primer, sapu semula membran dan ujian kolam baharu." }
         ],
         process: [
           { step: "01", title: "Pemetaan Terma", desc: "Kami mengesan penyebaran lembapan air ke titik kepekatan lembapan tertinggi menggunakan meter pengimejan terma." },
@@ -505,7 +517,13 @@ export const servicesData: Record<string, ServiceDetail> = {
           { name: "PU 高压灌浆注射", price: "从 RM 300 / 点起", desc: "智能非破坏性聚氨酯注射，密封楼层间混凝土板漏水。" },
           { name: "浴室与湿区防水", price: "从 RM 1,000 起", desc: "为淋浴间、卫生间与商业湿区洗手间涂抹化学防水层。" },
           { name: "屋顶与混凝土板防水", price: "依报价", desc: "为屋顶板与阳台提供重型抗紫外线弹性丙烯酸或热熔沥青防水层。" },
-          { name: "墙面潮湿与盐析修复", price: "从 RM 350 起", desc: "打磨盐结晶、消毒霉菌，并涂抹商用防潮屏障。" }
+          { name: "墙面潮湿与盐析修复", price: "从 RM 350 起", desc: "打磨盐结晶、消毒霉菌，并涂抹商用防潮屏障。" },
+          { name: "马桶防水", price: "从 RM 900 起", desc: "马桶/WC 地面与墙面防水，含坡度修正、阴阳角加强与 48 小时蓄水测试。" },
+          { name: "阳台防水", price: "从 RM 1,200 起", desc: "开放阳台、花池与屋顶露台防水，采用抗紫外线防水层并检查排水。" },
+          { name: "混凝土板与车棚防水", price: "依报价", desc: "车棚、车道与暴露混凝土板防水，含裂缝密封、防水层与保护面层。" },
+          { name: "漏水修复", price: "从 RM 350 起", desc: "用热成像诊断漏水并进行针对性修复，适用于墙面、地面、管道或混凝土板漏水。" },
+          { name: "天花板水损修复", price: "从 RM 420 起", desc: "修复水渍或软化的天花板：处理漏水源头、更换石膏板并重新饰面。" },
+          { name: "防水层维修与重涂", price: "从 RM 500 起", desc: "恢复失效或老化防水层：清洁、涂底漆、重涂防水层并重新蓄水测试。" }
         ],
         process: [
           { step: "01", title: "热成像测绘", desc: "我们使用热成像仪追踪水分扩散至最高含水浓度点。" },

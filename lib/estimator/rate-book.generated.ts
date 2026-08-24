@@ -308,12 +308,51 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
         "unit": "job",
         "published": "From RM 350",
         "desc": "Sanding off salt scaling, sanitizing mold, and applying commercial moisture-blocking barriers."
+      },
+      {
+        "name": "Toilet Waterproofing",
+        "amount": 900,
+        "unit": "job",
+        "published": "From RM 900",
+        "desc": "Toilet and WC floor and wall waterproofing with slope correction, corner reinforcement and 48-hour ponding test."
+      },
+      {
+        "name": "Balcony Waterproofing",
+        "amount": 1200,
+        "unit": "job",
+        "published": "From RM 1,200",
+        "desc": "Open balcony, planter box and roof terrace waterproofing with UV-resistant membrane and drainage check."
+      },
+      {
+        "name": "Water Leakage Repair",
+        "amount": 350,
+        "unit": "job",
+        "published": "From RM 350",
+        "desc": "Thermal-imaging leak diagnosis and targeted repair for active wall, floor, pipe or slab leaks."
+      },
+      {
+        "name": "Ceiling Water Damage Repair",
+        "amount": 420,
+        "unit": "job",
+        "published": "From RM 420",
+        "desc": "Damp-stained or soft ceiling repair: leak source treatment, plasterboard replacement and re-finishing."
+      },
+      {
+        "name": "Waterproofing Repair & Re-Coating",
+        "amount": 500,
+        "unit": "job",
+        "published": "From RM 500",
+        "desc": "Restoring failed or aged waterproofing: clean, prime, re-coat membrane and run a fresh ponding test."
       }
     ],
     "quoteOnly": [
       {
         "name": "Roof & Concrete Slab Waterproofing",
         "desc": "Heavy-duty elastomeric UV-resistant acrylic or torch-on bituminous membranes for roof slabs and balconies."
+      },
+      {
+        "name": "Concrete Slab & Car Porch Waterproofing",
+        "desc": "Car porch, driveway and exposed slab waterproofing with crack sealing, membrane and protective topcoat."
       }
     ]
   },
