@@ -2334,7 +2334,13 @@ export const servicesData: Record<string, ServiceDetail> = {
       { name: "Solid Timber Door Installation", price: "From RM 550", desc: "Solid meranti or chengal door with meranti frame, 3 SS304 hinges, architrave, and basic mortice lockset." },
       { name: "Laminate Door Installation", price: "From RM 250", desc: "HDF-skin engineered door with smooth laminate finish, ideal for budget-friendly modern interiors." },
       { name: "Door Planing & Adjustment", price: "From RM 120", desc: "Trimming a door that is scraping the floor or frame, rehanging on existing hinges, and adjusting the lockset." },
-      { name: "Fire-Rated Door Installation", price: "From RM 950", desc: "1-hour or 2-hour certified fire door with intumescent seals, suitable for kitchen, staircase, or fire-escape access." }
+      { name: "Fire-Rated Door Installation", price: "From RM 950", desc: "1-hour or 2-hour certified fire door with intumescent seals, suitable for kitchen, staircase, or fire-escape access." },
+      { name: "Door Replacement", price: "On Quote", desc: "Like-for-like replacement of an existing door leaf on a sound frame — new door supplied, hinges renewed, lockset refitted, and gaps re-set." },
+      { name: "Door Frame Repair & Replacement", price: "On Quote", desc: "Repairing rotted, cracked, or out-of-square timber frames, or supplying a new meranti or PVC frame with architrave when the old one is beyond repair." },
+      { name: "Bathroom & Kitchen PVC Door Replacement", price: "On Quote", desc: "Moisture-proof PVC or aluminium door and frame sets for wet areas, sized to the existing opening and sealed against splash and humidity." },
+      { name: "Sliding & Bi-Fold Door Installation", price: "On Quote", desc: "Top-hung sliding, pocket, and bi-fold door sets with tracks, floor guides, and soft-close hardware for bedrooms, wardrobes, and study rooms." },
+      { name: "Main Entrance Door Installation", price: "On Quote", desc: "Heavier main entrance door sets with reinforced hinges, security lockset preparation, and weather-sealed threshold detailing." },
+      { name: "Door Closer & Hardware Installation", price: "On Quote", desc: "Supply and fitting of door closers, floor springs, stoppers, seals, and drop-down thresholds on existing or newly installed doors." }
     ],
     process: [
       { step: "01", title: "Site Measurement & Selection", desc: "We measure the existing door opening (height, width, depth of frame), check the swing direction, and recommend the right door type and size." },
@@ -2371,7 +2377,13 @@ export const servicesData: Record<string, ServiceDetail> = {
           { name: "Pemasangan Pintu Kayu Pepejal", price: "Dari RM 550", desc: "Pintu meranti atau chengal pepejal dengan bingkai meranti, 3 engsel SS304, architrave dan set kunci mortice asas." },
           { name: "Pemasangan Pintu Laminate", price: "Dari RM 250", desc: "Pintu engineered kulit HDF dengan kemasan laminate licin, sesuai untuk dalaman moden mesra bajet." },
           { name: "Ketam & Pelarasan Pintu", price: "Dari RM 120", desc: "Memotong pintu yang menggesel lantai atau bingkai, menggantung semula pada engsel sedia ada dan melaraskan set kunci." },
-          { name: "Pemasangan Pintu Tahan Api", price: "Dari RM 950", desc: "Pintu api bertauliah 1 jam atau 2 jam dengan pengedap intumescent, sesuai untuk dapur, tangga atau akses laluan kecemasan." }
+          { name: "Pemasangan Pintu Tahan Api", price: "Dari RM 950", desc: "Pintu api bertauliah 1 jam atau 2 jam dengan pengedap intumescent, sesuai untuk dapur, tangga atau akses laluan kecemasan." },
+          { name: "Penggantian Pintu", price: "Atas Sebut Harga", desc: "Penggantian daun pintu sedia ada pada bingkai yang masih kukuh — pintu baharu dibekalkan, engsel diperbaharui, set kunci dipasang semula dan jurang dilaras semula." },
+          { name: "Pembaikan & Penggantian Bingkai Pintu", price: "Atas Sebut Harga", desc: "Membaiki bingkai kayu reput, retak atau tidak segi empat, atau membekalkan bingkai meranti atau PVC baharu dengan architrave apabila bingkai lama tidak boleh dibaiki." },
+          { name: "Penggantian Pintu PVC Bilik Mandi & Dapur", price: "Atas Sebut Harga", desc: "Set pintu dan bingkai PVC atau aluminium kalis lembapan untuk kawasan basah, dibuat mengikut bukaan sedia ada dan dikedap daripada percikan serta kelembapan." },
+          { name: "Pemasangan Pintu Gelangsar & Bi-Fold", price: "Atas Sebut Harga", desc: "Set pintu gelangsar top-hung, pocket dan bi-fold dengan trek, pemandu lantai dan perkakasan tutup lembut untuk bilik tidur, wardrobe dan bilik belajar." },
+          { name: "Pemasangan Pintu Utama", price: "Atas Sebut Harga", desc: "Set pintu utama yang lebih berat dengan engsel diperkukuh, persediaan set kunci keselamatan dan kemasan ambang kalis cuaca." },
+          { name: "Pemasangan Door Closer & Perkakasan", price: "Atas Sebut Harga", desc: "Bekalan dan pemasangan door closer, floor spring, penahan pintu, pengedap dan ambang drop-down pada pintu sedia ada atau pintu baharu." }
         ],
         process: [
           { step: "01", title: "Ukuran Tapak & Pemilihan", desc: "Kami mengukur bukaan pintu sedia ada (tinggi, lebar, kedalaman bingkai), memeriksa arah ayunan dan mengesyorkan jenis dan saiz pintu yang betul." },
@@ -2407,7 +2419,13 @@ export const servicesData: Record<string, ServiceDetail> = {
           { name: "实木门安装", price: "从 RM 550 起", desc: "meranti 或 chengal 实木门，配 meranti 门框、3 个 SS304 铰链、门套与基础执手锁。" },
           { name: "防火板门安装", price: "从 RM 250 起", desc: "HDF 贴面工程门，防火板饰面光滑，适合经济型现代室内。" },
           { name: "门刨修与调校", price: "从 RM 120 起", desc: "刨修刮地或刮框的门，在现有铰链上重新挂门并调试锁具。" },
-          { name: "防火门安装", price: "从 RM 950 起", desc: "1 小时或 2 小时认证防火门，配膨胀密封条，适合厨房、楼梯间或消防疏散通道。" }
+          { name: "防火门安装", price: "从 RM 950 起", desc: "1 小时或 2 小时认证防火门，配膨胀密封条，适合厨房、楼梯间或消防疏散通道。" },
+          { name: "门扇更换", price: "依报价", desc: "在门框仍然稳固的情况下同规格更换门扇——供应新门、更换铰链、重装锁具并重新调匀缝隙。" },
+          { name: "门框维修与更换", price: "依报价", desc: "修复腐朽、开裂或不方正的木门框；若旧框无法修复，则供应新的 meranti 或 PVC 门框及门套。" },
+          { name: "厨卫 PVC 门更换", price: "依报价", desc: "适用于潮湿区域的防潮 PVC 或铝合金门与门框成套，按现有门洞定制并做好防溅防潮密封。" },
+          { name: "推拉门与折叠门安装", price: "依报价", desc: "吊轨推拉门、隐藏式推拉门与折叠门成套，含轨道、地导与缓冲五金，适合卧室、衣帽间与书房。" },
+          { name: "入户大门安装", price: "依报价", desc: "较重的入户门成套安装，配加固铰链、安全锁具开孔准备与防风雨门槛收口。" },
+          { name: "闭门器与五金安装", price: "依报价", desc: "为现有门或新装门供应并安装闭门器、地弹簧、门吸、密封条与自动升降门底封。" }
         ],
         process: [
           { step: "01", title: "现场测量与选门", desc: "我们测量现有门洞（高、宽、框深），确认开门方向，并推荐合适的门型与尺寸。" },
@@ -2451,7 +2469,13 @@ export const servicesData: Record<string, ServiceDetail> = {
       { name: "Glass Replacement", price: "From RM 200", desc: "Removing broken or cracked glass and installing new clear, tinted, frosted, or tempered glass to the same size and thickness." },
       { name: "Window Seal Replacement", price: "From RM 30 / linier ft", desc: "Replacing worn or hardened EPDM rubber seals to stop water ingress and improve insulation." },
       { name: "Window Handle & Hinge Repair", price: "From RM 120", desc: "Replacing broken, stiff, or corroded handles, hinges, stays, and locking mechanisms on casement or top-hung windows." },
-      { name: "Sliding Window Roller Replacement", price: "From RM 150", desc: "Replacing worn nylon or steel rollers and cleaning tracks for smooth sliding operation." }
+      { name: "Sliding Window Roller Replacement", price: "From RM 150", desc: "Replacing worn nylon or steel rollers and cleaning tracks for smooth sliding operation." },
+      { name: "Window Installation", price: "On Quote", desc: "New aluminium casement, sliding, top-hung, or fixed windows measured and installed into an existing or newly formed opening." },
+      { name: "Window Replacement", price: "On Quote", desc: "Removing an ageing window and frame in full and installing a new like-for-like or upgraded unit, with reinstatement around the opening." },
+      { name: "Window Grille Installation", price: "On Quote", desc: "Supply and fitting of security grilles or child-safety grilles onto existing window frames, sized on site and finished against rust." },
+      { name: "Window Frame Repair & Realignment", price: "On Quote", desc: "Straightening, re-anchoring, and resealing aluminium frames that have dropped out of square so sashes close and lock properly again." },
+      { name: "Louvre & Top-Hung Window Repair", price: "On Quote", desc: "Replacing louvre blades, clips, stays, and operators on louvre and awning windows, including stiff or seized winding mechanisms." },
+      { name: "Window Waterproofing & Resealing", price: "On Quote", desc: "Raking out failed perimeter silicone, cleaning the joint, and resealing frame-to-wall junctions to stop rain ingress in wind-driven storms." }
     ],
     process: [
       { step: "01", title: "Window Inspection", desc: "We identify the window type, frame material, glass thickness, hardware condition, and the exact issue (glass, seal, hardware, or alignment)." },
@@ -2488,7 +2512,13 @@ export const servicesData: Record<string, ServiceDetail> = {
           { name: "Penggantian Kaca", price: "Dari RM 200", desc: "Menanggalkan kaca pecah atau retak dan memasang kaca jernih, tinted, frosted atau tempered baharu mengikut saiz dan ketebalan sama." },
           { name: "Penggantian Pengedap Tingkap", price: "Dari RM 30 / kaki linier", desc: "Menggantikan pengedap getah EPDM haus atau mengeras untuk menghentikan kemasukan air dan menambah baik penebatan." },
           { name: "Pembaikan Pemegang & Engsel Tingkap", price: "Dari RM 120", desc: "Menggantikan pemegang, engsel, stay dan mekanisme kunci rosak, keras atau berkarat pada tingkap casement atau top-hung." },
-          { name: "Penggantian Roller Tingkap Gelangsar", price: "Dari RM 150", desc: "Menggantikan roller nilon atau keluli haus dan membersihkan trek untuk operasi gelongsor lancar." }
+          { name: "Penggantian Roller Tingkap Gelangsar", price: "Dari RM 150", desc: "Menggantikan roller nilon atau keluli haus dan membersihkan trek untuk operasi gelongsor lancar." },
+          { name: "Pemasangan Tingkap", price: "Atas Sebut Harga", desc: "Tingkap aluminium casement, gelangsar, top-hung atau tetap baharu yang diukur dan dipasang pada bukaan sedia ada atau bukaan yang baru dibentuk." },
+          { name: "Penggantian Tingkap", price: "Atas Sebut Harga", desc: "Menanggalkan tingkap dan bingkai lama sepenuhnya serta memasang unit baharu setara atau dinaik taraf, termasuk pemulihan sekitar bukaan." },
+          { name: "Pemasangan Grill Tingkap", price: "Atas Sebut Harga", desc: "Bekalan dan pemasangan grill keselamatan atau grill keselamatan kanak-kanak pada bingkai tingkap sedia ada, diukur di tapak dan dikemas kalis karat." },
+          { name: "Pembaikan & Penjajaran Bingkai Tingkap", price: "Atas Sebut Harga", desc: "Meluruskan, menyauh semula dan mengedap semula bingkai aluminium yang tidak lagi segi empat supaya daun tingkap boleh ditutup dan dikunci dengan betul." },
+          { name: "Pembaikan Tingkap Louvre & Top-Hung", price: "Atas Sebut Harga", desc: "Menggantikan bilah louvre, klip, stay dan operator pada tingkap louvre serta awning, termasuk mekanisme putar yang keras atau tersekat." },
+          { name: "Kalis Air & Pengedapan Semula Tingkap", price: "Atas Sebut Harga", desc: "Mengorek silikon perimeter yang gagal, membersihkan sambungan dan mengedap semula pertemuan bingkai-dinding untuk menghentikan kemasukan air hujan berangin." }
         ],
         process: [
           { step: "01", title: "Pemeriksaan Tingkap", desc: "Kami mengenal pasti jenis tingkap, bahan bingkai, ketebalan kaca, keadaan perkakasan dan isu tepat (kaca, pengedap, perkakasan atau penjajaran)." },
@@ -2524,7 +2554,13 @@ export const servicesData: Record<string, ServiceDetail> = {
           { name: "玻璃更换", price: "从 RM 200 起", desc: "拆除碎裂或开裂玻璃，安装相同尺寸厚度的新白玻、茶色玻、磨砂玻或钢化玻璃。" },
           { name: "窗户密封条更换", price: "从 RM 30 / 延英尺起", desc: "更换老化变硬的 EPDM 橡胶密封条，阻止渗水并改善保温。" },
           { name: "窗户执手与铰链维修", price: "从 RM 120 起", desc: "更换平开窗或上悬窗上损坏、卡涩或腐蚀的执手、铰链、撑挡与锁闭机构。" },
-          { name: "推拉窗滑轮更换", price: "从 RM 150 起", desc: "更换磨损的尼龙或钢滑轮并清洁轨道，恢复顺滑推拉。" }
+          { name: "推拉窗滑轮更换", price: "从 RM 150 起", desc: "更换磨损的尼龙或钢滑轮并清洁轨道，恢复顺滑推拉。" },
+          { name: "窗户安装", price: "依报价", desc: "全新铝合金平开窗、推拉窗、上悬窗或固定窗，按现有洞口或新开洞口测量并安装。" },
+          { name: "窗户更换", price: "依报价", desc: "整体拆除老旧窗扇与窗框，安装同规格或升级款新窗，并修复洞口周边收口。" },
+          { name: "窗户防盗网安装", price: "依报价", desc: "在现有窗框上供应并安装防盗格栅或儿童防坠格栅，现场量尺并做防锈处理。" },
+          { name: "窗框维修与校正", price: "依报价", desc: "对变形不方正的铝框进行校直、重新固定与打胶，使窗扇重新正常关闭与锁闭。" },
+          { name: "百叶窗与上悬窗维修", price: "依报价", desc: "更换百叶窗与上悬窗的叶片、卡扣、撑挡与摇启器，包括卡涩或锁死的摇柄机构。" },
+          { name: "窗户防水与重新打胶", price: "依报价", desc: "铲除失效的周边硅胶、清洁缝隙并重新密封窗框与墙体交界，阻止风雨天渗水。" }
         ],
         process: [
           { step: "01", title: "窗户检查", desc: "我们确认窗型、框料、玻璃厚度、五金状况与确切问题（玻璃、密封、五金或错位）。" },
@@ -2685,7 +2721,13 @@ export const servicesData: Record<string, ServiceDetail> = {
       { name: "Frameless Shower Screen", price: "From RM 420 / panel", desc: "10–12mm tempered glass with concealed hinges and anti-leak seals. Custom cut to your bathroom layout." },
       { name: "Aluminium Sliding Window", price: "From RM 320 / sq ft", desc: "Locally fabricated aluminium sliding window with 5mm clear or tinted glass, nylon rollers, and weatherstrip." },
       { name: "Glass Office Partition", price: "From RM 220 / sq ft", desc: "10–12mm tempered glass partition with aluminium or frameless channel, including door and hardware." },
-      { name: "Wall Mirror Installation", price: "From RM 320", desc: "5–6mm silver-backed mirror with concealed aluminium channel fixings, suitable for bathrooms, gyms, and dressing rooms." }
+      { name: "Wall Mirror Installation", price: "From RM 320", desc: "5–6mm silver-backed mirror with concealed aluminium channel fixings, suitable for bathrooms, gyms, and dressing rooms." },
+      { name: "Glass Partition", price: "On Quote", desc: "Full-height or half-height tempered glass partitions for homes and shoplots, with aluminium U-channel or frameless fixing and optional frosted film." },
+      { name: "Sliding Glass Door", price: "On Quote", desc: "Aluminium-framed or frameless sliding glass door sets with tempered glass, quality rollers, and weatherstrip for patios, balconies, and dividers." },
+      { name: "Aluminium Casement Window", price: "On Quote", desc: "Side-hung aluminium casement windows fabricated to opening size, with friction stays, multipoint locking, and clear or tinted glass." },
+      { name: "Glass Railing & Balustrade", price: "On Quote", desc: "Tempered or laminated glass railings for staircases, balconies, and mezzanines with stainless spigots, standoffs, or channel fixing." },
+      { name: "Aluminium Composite Panel Cladding", price: "On Quote", desc: "ACP cladding for facades, shopfronts, and feature walls with routed folds, aluminium framing, and weatherproof joint sealing." },
+      { name: "Glass Repair & Reglazing", price: "On Quote", desc: "Replacing cracked or shattered panes in existing frames, doors, and partitions, with temporary board-up when custom glass is on order." }
     ],
     process: [
       { step: "01", title: "Site Measurement & Design", desc: "We measure the opening, capture layout constraints (slopes, plumbing, drainage), and recommend the right glass thickness, frame, and hardware." },
@@ -2722,7 +2764,13 @@ export const servicesData: Record<string, ServiceDetail> = {
           { name: "Skrin Pancuran Tanpa Bingkai", price: "Dari RM 420 / panel", desc: "Kaca tempered 10–12mm dengan engsel tersembunyi dan pengedap anti-bocor. Potongan kustom mengikut susun atur bilik mandi anda." },
           { name: "Tingkap Gelangsar Aluminium", price: "Dari RM 320 / kaki persegi", desc: "Tingkap gelangsar aluminium fabrikasi tempatan dengan kaca jernih atau tinted 5mm, roller nilon dan weatherstrip." },
           { name: "Partition Pejabat Kaca", price: "Dari RM 220 / kaki persegi", desc: "Partition kaca tempered 10–12mm dengan saluran aluminium atau tanpa bingkai, termasuk pintu dan perkakasan." },
-          { name: "Pemasangan Cermin Dinding", price: "Dari RM 320", desc: "Cermin silver-backed 5–6mm dengan pengikat saluran aluminium tersembunyi, sesuai untuk bilik mandi, gim dan bilik persalinan." }
+          { name: "Pemasangan Cermin Dinding", price: "Dari RM 320", desc: "Cermin silver-backed 5–6mm dengan pengikat saluran aluminium tersembunyi, sesuai untuk bilik mandi, gim dan bilik persalinan." },
+          { name: "Partition Kaca", price: "Atas Sebut Harga", desc: "Partition kaca tempered ketinggian penuh atau separuh untuk rumah dan kedai, dengan saluran-U aluminium atau pemasangan tanpa bingkai serta pilihan filem frosted." },
+          { name: "Pintu Kaca Gelangsar", price: "Atas Sebut Harga", desc: "Set pintu kaca gelangsar berbingkai aluminium atau tanpa bingkai dengan kaca tempered, roller berkualiti dan weatherstrip untuk patio, balkoni dan pembahagi ruang." },
+          { name: "Tingkap Casement Aluminium", price: "Atas Sebut Harga", desc: "Tingkap casement aluminium bukaan sisi difabrikasi mengikut saiz bukaan, dengan friction stay, kunci multipoint dan kaca jernih atau tinted." },
+          { name: "Railing & Balustrade Kaca", price: "Atas Sebut Harga", desc: "Railing kaca tempered atau laminated untuk tangga, balkoni dan mezanin dengan spigot keluli tahan karat, standoff atau pemasangan saluran." },
+          { name: "Cladding Panel Komposit Aluminium", price: "Atas Sebut Harga", desc: "Cladding ACP untuk fasad, kedai depan dan dinding ciri dengan lipatan router, rangka aluminium dan pengedapan sambungan kalis cuaca." },
+          { name: "Pembaikan Kaca & Reglazing", price: "Atas Sebut Harga", desc: "Menggantikan kaca retak atau pecah pada bingkai, pintu dan partition sedia ada, dengan penutupan sementara sekiranya kaca kustom masih ditempah." }
         ],
         process: [
           { step: "01", title: "Ukuran Tapak & Reka Bentuk", desc: "Kami mengukur bukaan, menangkap kekangan susun atur (cerun, paip, saliran) dan mengesyorkan ketebalan kaca, bingkai dan perkakasan yang betul." },
@@ -2758,7 +2806,13 @@ export const servicesData: Record<string, ServiceDetail> = {
           { name: "无框淋浴屏", price: "从 RM 420 / 扇起", desc: "10–12mm 钢化玻璃配暗藏铰链与防漏密封。按您的浴室布局定制裁切。" },
           { name: "铝合金推拉窗", price: "从 RM 320 / 平方英尺起", desc: "本地制作的铝合金推拉窗，配 5mm 白玻或茶色玻、尼龙滑轮与密封毛条。" },
           { name: "玻璃办公隔断", price: "从 RM 220 / 平方英尺起", desc: "10–12mm 钢化玻璃隔断，配铝合金或无框地槽，含门与五金。" },
-          { name: "墙镜安装", price: "从 RM 320 起", desc: "5–6mm 镀银镜，配暗藏铝槽固定件，适合浴室、健身房与更衣室。" }
+          { name: "墙镜安装", price: "从 RM 320 起", desc: "5–6mm 镀银镜，配暗藏铝槽固定件，适合浴室、健身房与更衣室。" },
+          { name: "玻璃隔断", price: "依报价", desc: "适用于住宅与商铺的通高或半高钢化玻璃隔断，可选铝合金 U 型槽或无框固定，并可加贴磨砂膜。" },
+          { name: "推拉玻璃门", price: "依报价", desc: "铝框或无框推拉玻璃门成套，配钢化玻璃、优质滑轮与密封毛条，适合露台、阳台与空间分隔。" },
+          { name: "铝合金平开窗", price: "依报价", desc: "按洞口尺寸定制的侧开铝合金平开窗，配摩擦撑挡、多点锁闭与白玻或茶色玻璃。" },
+          { name: "玻璃栏杆与护栏", price: "依报价", desc: "楼梯、阳台与夹层用钢化或夹层玻璃栏杆，可选不锈钢驳接爪、支撑件或槽式固定。" },
+          { name: "铝塑板幕墙饰面", price: "依报价", desc: "外立面、店面与造型墙的 ACP 铝塑板饰面，含开槽折边、铝骨架与防水打胶收口。" },
+          { name: "玻璃维修与换玻", price: "依报价", desc: "更换现有窗框、门扇与隔断上开裂或破碎的玻璃；定制玻璃在订时可先做临时封板。" }
         ],
         process: [
           { step: "01", title: "现场测量与设计", desc: "我们测量洞口，记录布局限制（坡度、管道、排水），并推荐合适的玻璃厚度、框架与五金。" },
@@ -3387,7 +3441,13 @@ export const servicesData: Record<string, ServiceDetail> = {
       { name: "Custom Window Grille", price: "From RM 42 / sq ft", desc: "Powder-coated mild steel window grille in your chosen design (geometric, classic, or modern). Includes anti-rust primer." },
       { name: "Main Gate Fabrication", price: "From RM 2,800", desc: "Custom main gate with mild steel frame, infill design of your choice, and hot-dip galvanised + powder-coat finish." },
       { name: "On-Site Welding Repair", price: "From RM 280", desc: "Emergency or scheduled welding repair at your location — broken hinges, gate, grille, railing, or structural steel." },
-      { name: "Staircase Stringer Fabrication", price: "From RM 420 / linier ft", desc: "Custom mild steel staircase stringer fabricated to your measurements, primed and painted for indoor or outdoor use." }
+      { name: "Staircase Stringer Fabrication", price: "From RM 420 / linier ft", desc: "Custom mild steel staircase stringer fabricated to your measurements, primed and painted for indoor or outdoor use." },
+      { name: "Iron Works", price: "On Quote", desc: "General wrought iron and mild steel works — decorative panels, brackets, frames, trellises, and bespoke metal pieces fabricated to your drawing." },
+      { name: "Metal Grille Installation", price: "On Quote", desc: "Installing fabricated window, door, balcony, or air-well grilles onto existing openings, with anti-rust treatment and matching finish." },
+      { name: "Metal Gate Repair", price: "On Quote", desc: "Repairing sagging, rusted, or broken gates — hinge renewal, frame straightening, weld repair, and rust treatment with repaint." },
+      { name: "Stainless Steel Railing Fabrication", price: "On Quote", desc: "Stainless steel handrails and balustrades for staircases, balconies, and ramps, welded and polished for indoor or outdoor exposure." },
+      { name: "Steel Structure & Awning Fabrication", price: "On Quote", desc: "Mild steel awning, canopy, drying-yard, and carport frames fabricated and installed with primer and weather-resistant finish." },
+      { name: "Anti-Rust Treatment & Repainting", price: "On Quote", desc: "Wire-brushing, rust conversion, priming, and repainting of existing grilles, gates, railings, and structural steel to extend service life." }
     ],
     process: [
       { step: "01", title: "Site Visit & Design", desc: "We measure, take photographs, capture the design intent (or sketch from a reference), and recommend the right material and finish for the project." },
@@ -3424,7 +3484,13 @@ export const servicesData: Record<string, ServiceDetail> = {
           { name: "Grille Tingkap Kustom", price: "Dari RM 42 / kaki persegi", desc: "Grille tingkap keluli lembut powder-coated dalam reka bentuk pilihan anda (geometri, klasik atau moden). Termasuk primer anti-karat." },
           { name: "Fabrikasi Pagar Utama", price: "Dari RM 2,800", desc: "Pagar utama kustom dengan rangka keluli lembut, reka bentuk isian pilihan anda dan kemasan galvanis celup panas + powder-coat." },
           { name: "Pembaikan Kimpalan Di Tapak", price: "Dari RM 280", desc: "Pembaikan kimpalan kecemasan atau berjadual di lokasi anda — engsel, pagar, grille, railing atau keluli struktur patah." },
-          { name: "Fabrikasi Stringer Tangga", price: "Dari RM 420 / kaki linier", desc: "Stringer tangga keluli lembut kustom difabrikasi mengikut ukuran anda, di-primer dan dicat untuk kegunaan dalaman atau luaran." }
+          { name: "Fabrikasi Stringer Tangga", price: "Dari RM 420 / kaki linier", desc: "Stringer tangga keluli lembut kustom difabrikasi mengikut ukuran anda, di-primer dan dicat untuk kegunaan dalaman atau luaran." },
+          { name: "Kerja Besi", price: "Atas Sebut Harga", desc: "Kerja besi tempa dan keluli lembut am — panel hiasan, braket, rangka, trellis dan komponen logam tersuai difabrikasi mengikut lukisan anda." },
+          { name: "Pemasangan Grill Logam", price: "Atas Sebut Harga", desc: "Memasang grill tingkap, pintu, balkoni atau air-well yang telah difabrikasi pada bukaan sedia ada, dengan rawatan kalis karat dan kemasan sepadan." },
+          { name: "Pembaikan Pagar Logam", price: "Atas Sebut Harga", desc: "Membaiki pagar yang melendut, berkarat atau patah — pembaharuan engsel, meluruskan rangka, kimpalan semula dan rawatan karat dengan cat semula." },
+          { name: "Fabrikasi Railing Keluli Tahan Karat", price: "Atas Sebut Harga", desc: "Pemegang tangan dan balustrade keluli tahan karat untuk tangga, balkoni dan ramp, dikimpal serta digilap untuk kegunaan dalaman atau luaran." },
+          { name: "Fabrikasi Struktur Keluli & Awning", price: "Atas Sebut Harga", desc: "Rangka awning, kanopi, ruang jemuran dan carport keluli lembut difabrikasi dan dipasang dengan primer serta kemasan kalis cuaca." },
+          { name: "Rawatan Kalis Karat & Cat Semula", price: "Atas Sebut Harga", desc: "Berus dawai, penukaran karat, primer dan cat semula pada grill, pagar, railing dan keluli struktur sedia ada untuk memanjangkan jangka hayat." }
         ],
         process: [
           { step: "01", title: "Lawatan Tapak & Reka Bentuk", desc: "Kami mengukur, mengambil gambar, menangkap niat reka bentuk (atau lakaran daripada rujukan) dan mengesyorkan bahan dan kemasan yang betul untuk projek." },
@@ -3460,7 +3526,13 @@ export const servicesData: Record<string, ServiceDetail> = {
           { name: "定制窗户防护格栅", price: "从 RM 42 / 平方英尺起", desc: "粉末喷涂低碳钢窗栅，款式任选（几何、经典或现代）。含防锈底漆。" },
           { name: "大门定制", price: "从 RM 2,800 起", desc: "定制大门，低碳钢框架，任选填充设计，热镀锌 + 粉末喷涂饰面。" },
           { name: "现场焊接维修", price: "从 RM 280 起", desc: "上门紧急或预约焊接维修——铰链、大门、格栅、栏杆或结构钢断裂。" },
-          { name: "楼梯龙骨制作", price: "从 RM 420 / 延英尺起", desc: "按您尺寸定制的低碳钢楼梯龙骨，底漆加面漆，室内外皆可。" }
+          { name: "楼梯龙骨制作", price: "从 RM 420 / 延英尺起", desc: "按您尺寸定制的低碳钢楼梯龙骨，底漆加面漆，室内外皆可。" },
+          { name: "铁艺工程", price: "依报价", desc: "各类铁艺与低碳钢制作——装饰花板、支架、框架、花架及按图定制的金属构件。" },
+          { name: "金属格栅安装", price: "依报价", desc: "将制作完成的窗栅、门栅、阳台或天井格栅安装到现有洞口，并做防锈处理与配套饰面。" },
+          { name: "金属大门维修", price: "依报价", desc: "维修下垂、生锈或断裂的大门——更换铰链、校正框架、补焊，并做除锈与重新喷漆。" },
+          { name: "不锈钢栏杆制作", price: "依报价", desc: "楼梯、阳台与坡道用不锈钢扶手与护栏，焊接抛光处理，适用于室内外环境。" },
+          { name: "钢结构与雨棚制作", price: "依报价", desc: "低碳钢雨棚、遮阳篷、晒衣架与车棚骨架的制作与安装，含底漆及耐候面漆。" },
+          { name: "除锈处理与重新喷漆", price: "依报价", desc: "对现有格栅、大门、栏杆与结构钢进行钢刷除锈、锈转化、底漆与重新喷漆，延长使用寿命。" }
         ],
         process: [
           { step: "01", title: "上门测量与设计", desc: "我们测量、拍照、记录设计意图（或按参考图绘制草图），并为项目推荐合适的材料与饰面。" },

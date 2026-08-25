@@ -1614,6 +1614,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
       },
       {
         "name": "Fire-Rated Door Installation"
+      },
+      {
+        "name": "Door Replacement"
+      },
+      {
+        "name": "Door Frame Repair & Replacement"
+      },
+      {
+        "name": "Bathroom & Kitchen PVC Door Replacement"
+      },
+      {
+        "name": "Sliding & Bi-Fold Door Installation"
+      },
+      {
+        "name": "Main Entrance Door Installation"
+      },
+      {
+        "name": "Door Closer & Hardware Installation"
       }
     ],
     "warranty": "12-Month Door Hanging & Hardware Warranty",
@@ -1633,6 +1651,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
           },
           {
             "name": "Pemasangan Pintu Tahan Api"
+          },
+          {
+            "name": "Penggantian Pintu"
+          },
+          {
+            "name": "Pembaikan & Penggantian Bingkai Pintu"
+          },
+          {
+            "name": "Penggantian Pintu PVC Bilik Mandi & Dapur"
+          },
+          {
+            "name": "Pemasangan Pintu Gelangsar & Bi-Fold"
+          },
+          {
+            "name": "Pemasangan Pintu Utama"
+          },
+          {
+            "name": "Pemasangan Door Closer & Perkakasan"
           }
         ],
         "warranty": "Jaminan Gantungan Pintu & Perkakasan 12 Bulan"
@@ -1652,6 +1688,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
           },
           {
             "name": "防火门安装"
+          },
+          {
+            "name": "门扇更换"
+          },
+          {
+            "name": "门框维修与更换"
+          },
+          {
+            "name": "厨卫 PVC 门更换"
+          },
+          {
+            "name": "推拉门与折叠门安装"
+          },
+          {
+            "name": "入户大门安装"
+          },
+          {
+            "name": "闭门器与五金安装"
           }
         ],
         "warranty": "12 个月门扇安装与五金保修"
@@ -1676,6 +1730,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
       },
       {
         "name": "Sliding Window Roller Replacement"
+      },
+      {
+        "name": "Window Installation"
+      },
+      {
+        "name": "Window Replacement"
+      },
+      {
+        "name": "Window Grille Installation"
+      },
+      {
+        "name": "Window Frame Repair & Realignment"
+      },
+      {
+        "name": "Louvre & Top-Hung Window Repair"
+      },
+      {
+        "name": "Window Waterproofing & Resealing"
       }
     ],
     "warranty": "12-Month Hardware & Seal Warranty",
@@ -1695,6 +1767,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
           },
           {
             "name": "Penggantian Roller Tingkap Gelangsar"
+          },
+          {
+            "name": "Pemasangan Tingkap"
+          },
+          {
+            "name": "Penggantian Tingkap"
+          },
+          {
+            "name": "Pemasangan Grill Tingkap"
+          },
+          {
+            "name": "Pembaikan & Penjajaran Bingkai Tingkap"
+          },
+          {
+            "name": "Pembaikan Tingkap Louvre & Top-Hung"
+          },
+          {
+            "name": "Kalis Air & Pengedapan Semula Tingkap"
           }
         ],
         "warranty": "Jaminan Perkakasan & Pengedap 12 Bulan"
@@ -1714,6 +1804,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
           },
           {
             "name": "推拉窗滑轮更换"
+          },
+          {
+            "name": "窗户安装"
+          },
+          {
+            "name": "窗户更换"
+          },
+          {
+            "name": "窗户防盗网安装"
+          },
+          {
+            "name": "窗框维修与校正"
+          },
+          {
+            "name": "百叶窗与上悬窗维修"
+          },
+          {
+            "name": "窗户防水与重新打胶"
           }
         ],
         "warranty": "12 个月五金与密封保修"
@@ -1800,6 +1908,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
       },
       {
         "name": "Wall Mirror Installation"
+      },
+      {
+        "name": "Glass Partition"
+      },
+      {
+        "name": "Sliding Glass Door"
+      },
+      {
+        "name": "Aluminium Casement Window"
+      },
+      {
+        "name": "Glass Railing & Balustrade"
+      },
+      {
+        "name": "Aluminium Composite Panel Cladding"
+      },
+      {
+        "name": "Glass Repair & Reglazing"
       }
     ],
     "warranty": "12-Month Leak-Free & Hardware Warranty",
@@ -1819,6 +1945,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
           },
           {
             "name": "Pemasangan Cermin Dinding"
+          },
+          {
+            "name": "Partition Kaca"
+          },
+          {
+            "name": "Pintu Kaca Gelangsar"
+          },
+          {
+            "name": "Tingkap Casement Aluminium"
+          },
+          {
+            "name": "Railing & Balustrade Kaca"
+          },
+          {
+            "name": "Cladding Panel Komposit Aluminium"
+          },
+          {
+            "name": "Pembaikan Kaca & Reglazing"
           }
         ],
         "warranty": "Jaminan Bebas Bocor & Perkakasan 12 Bulan"
@@ -1838,6 +1982,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
           },
           {
             "name": "墙镜安装"
+          },
+          {
+            "name": "玻璃隔断"
+          },
+          {
+            "name": "推拉玻璃门"
+          },
+          {
+            "name": "铝合金平开窗"
+          },
+          {
+            "name": "玻璃栏杆与护栏"
+          },
+          {
+            "name": "铝塑板幕墙饰面"
+          },
+          {
+            "name": "玻璃维修与换玻"
           }
         ],
         "warranty": "12 个月防漏与五金保修"
@@ -2172,6 +2334,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
       },
       {
         "name": "Staircase Stringer Fabrication"
+      },
+      {
+        "name": "Iron Works"
+      },
+      {
+        "name": "Metal Grille Installation"
+      },
+      {
+        "name": "Metal Gate Repair"
+      },
+      {
+        "name": "Stainless Steel Railing Fabrication"
+      },
+      {
+        "name": "Steel Structure & Awning Fabrication"
+      },
+      {
+        "name": "Anti-Rust Treatment & Repainting"
       }
     ],
     "warranty": "12-Month Welding & Fabrication Warranty",
@@ -2191,6 +2371,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
           },
           {
             "name": "Fabrikasi Stringer Tangga"
+          },
+          {
+            "name": "Kerja Besi"
+          },
+          {
+            "name": "Pemasangan Grill Logam"
+          },
+          {
+            "name": "Pembaikan Pagar Logam"
+          },
+          {
+            "name": "Fabrikasi Railing Keluli Tahan Karat"
+          },
+          {
+            "name": "Fabrikasi Struktur Keluli & Awning"
+          },
+          {
+            "name": "Rawatan Kalis Karat & Cat Semula"
           }
         ],
         "warranty": "Jaminan Kimpalan & Fabrikasi 12 Bulan"
@@ -2210,6 +2408,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
           },
           {
             "name": "楼梯龙骨制作"
+          },
+          {
+            "name": "铁艺工程"
+          },
+          {
+            "name": "金属格栅安装"
+          },
+          {
+            "name": "金属大门维修"
+          },
+          {
+            "name": "不锈钢栏杆制作"
+          },
+          {
+            "name": "钢结构与雨棚制作"
+          },
+          {
+            "name": "除锈处理与重新喷漆"
           }
         ],
         "warranty": "12 个月焊接与加工保修"

@@ -272,6 +272,12 @@ All prices are the published starting prices shown on the live service pages. Fi
 - Laminate Door Installation — From RM 250
 - Door Planing & Adjustment — From RM 120
 - Fire-Rated Door Installation — From RM 950
+- Door Replacement — On Quote
+- Door Frame Repair & Replacement — On Quote
+- Bathroom & Kitchen PVC Door Replacement — On Quote
+- Sliding & Bi-Fold Door Installation — On Quote
+- Main Entrance Door Installation — On Quote
+- Door Closer & Hardware Installation — On Quote
 - Cost guide: https://www.klservisrumah.my/services/door/cost
 
 ### Window Repair & Glass Replacement
@@ -282,6 +288,12 @@ All prices are the published starting prices shown on the live service pages. Fi
 - Window Seal Replacement — From RM 30 / linier ft
 - Window Handle & Hinge Repair — From RM 120
 - Sliding Window Roller Replacement — From RM 150
+- Window Installation — On Quote
+- Window Replacement — On Quote
+- Window Grille Installation — On Quote
+- Window Frame Repair & Realignment — On Quote
+- Louvre & Top-Hung Window Repair — On Quote
+- Window Waterproofing & Resealing — On Quote
 - Cost guide: https://www.klservisrumah.my/services/window-repair/cost
 
 ### Locksmith & Smart Lock Services
@@ -302,6 +314,12 @@ All prices are the published starting prices shown on the live service pages. Fi
 - Aluminium Sliding Window — From RM 320 / sq ft
 - Glass Office Partition — From RM 220 / sq ft
 - Wall Mirror Installation — From RM 320
+- Glass Partition — On Quote
+- Sliding Glass Door — On Quote
+- Aluminium Casement Window — On Quote
+- Glass Railing & Balustrade — On Quote
+- Aluminium Composite Panel Cladding — On Quote
+- Glass Repair & Reglazing — On Quote
 - Cost guide: https://www.klservisrumah.my/services/glass-aluminium/cost
 
 ### Residential & Office Cleaning
@@ -362,6 +380,12 @@ All prices are the published starting prices shown on the live service pages. Fi
 - Main Gate Fabrication — From RM 2,800
 - On-Site Welding Repair — From RM 280
 - Staircase Stringer Fabrication — From RM 420 / linier ft
+- Iron Works — On Quote
+- Metal Grille Installation — On Quote
+- Metal Gate Repair — On Quote
+- Stainless Steel Railing Fabrication — On Quote
+- Steel Structure & Awning Fabrication — On Quote
+- Anti-Rust Treatment & Repainting — On Quote
 - Cost guide: https://www.klservisrumah.my/services/welding/cost
 
 ### Aircon Service, Repair & Installation
@@ -853,6 +877,6 @@ KL Servis Rumah publishes fair, upfront pricing benchmarked against the Klang Va
 - Sitemap: https://www.klservisrumah.my/sitemap.xml
 
 ## Scale
-- 31 services · 197 sub-services
+- 31 services · 221 sub-services
 - 37 area pages · 86 problem pages · 229 articles
-- 4,822 indexable pages listed in the sitemap
+- 4,894 indexable pages listed in the sitemap
