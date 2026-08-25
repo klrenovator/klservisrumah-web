@@ -2148,6 +2148,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
       },
       {
         "name": "Construction Debris Removal"
+      },
+      {
+        "name": "Construction Rough Cleaning & Site Clearance"
+      },
+      {
+        "name": "Fine Dust Extraction & Air Purifying"
+      },
+      {
+        "name": "Paint Splatter & Silicone Smear Removal"
+      },
+      {
+        "name": "Window Glass & Aluminium Track Detailing"
+      },
+      {
+        "name": "Floor Machine Scrubbing & Buffing"
+      },
+      {
+        "name": "Move-In & Handover Final Cleaning"
       }
     ],
     "warranty": "7-Day Spot-Check Free Re-Clean Guarantee",
@@ -2167,6 +2185,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
           },
           {
             "name": "Penyingkiran Serpihan Pembinaan"
+          },
+          {
+            "name": "Pembersihan Kasar Pembinaan & Pembersihan Tapak"
+          },
+          {
+            "name": "Penyedutan Habuk Halus & Pembersihan Udara"
+          },
+          {
+            "name": "Penyingkiran Percikan Cat & Sisa Silikon"
+          },
+          {
+            "name": "Pembersihan Terperinci Kaca Tingkap & Rel Aluminium"
+          },
+          {
+            "name": "Penyentalan & Penggilapan Mesin Lantai"
+          },
+          {
+            "name": "Pembersihan Akhir Penyerahan & Masuk Rumah"
           }
         ],
         "warranty": "Jaminan Cuci Semula Percuma Pemeriksaan Rawak 7 Hari"
@@ -2186,6 +2222,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
           },
           {
             "name": "建筑垃圾清运"
+          },
+          {
+            "name": "施工现场粗保洁与清场服务"
+          },
+          {
+            "name": "细粉尘深层清除与空气净化"
+          },
+          {
+            "name": "油漆飞溅与硅胶残留清除"
+          },
+          {
+            "name": "窗户玻璃与铝合金滑轨深度精洁"
+          },
+          {
+            "name": "地板机械深度洗地与抛光护理"
+          },
+          {
+            "name": "交付入住前最终全面精细保洁"
           }
         ],
         "warranty": "7 天免费抽查返工保证"

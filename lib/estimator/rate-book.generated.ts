@@ -1424,7 +1424,32 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
         "desc": "Bagging and disposal of leftover construction materials, packaging, and debris. Skip bin coordination if needed."
       }
     ],
-    "quoteOnly": []
+    "quoteOnly": [
+      {
+        "name": "Construction Rough Cleaning & Site Clearance",
+        "desc": "Heavy site cleanup, debris bagging, timber and scrap removal between trades to clear floors for next-phase installations."
+      },
+      {
+        "name": "Fine Dust Extraction & Air Purifying",
+        "desc": "Multi-pass HEPA vacuuming and electrostatic wiping to capture microscopic cement, gypsum, and plaster dust from ceilings and vents."
+      },
+      {
+        "name": "Paint Splatter & Silicone Smear Removal",
+        "desc": "Safe solvent treatment and specialized scraping of dried emulsion drips, enamel overspray, silicone residue, and masking adhesive."
+      },
+      {
+        "name": "Window Glass & Aluminium Track Detailing",
+        "desc": "Protective film peeling, cement spot removal from glass, and deep vacuuming and degreasing of sliding aluminium window tracks."
+      },
+      {
+        "name": "Floor Machine Scrubbing & Buffing",
+        "desc": "Single-disc rotary machine scrubbing with neutral detergents for tiles, SPC, vinyl, and epoxy to restore factory sheen without acid dulling."
+      },
+      {
+        "name": "Move-In & Handover Final Cleaning",
+        "desc": "White-glove sanitization of built-in cabinets, wardrobes, kitchen counters, sanitary ware, and door hardware ready for immediate occupancy."
+      }
+    ]
   },
   "cctv": {
     "startPrice": 420,

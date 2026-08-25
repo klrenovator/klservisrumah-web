@@ -3090,7 +3090,13 @@ export const servicesData: Record<string, ServiceDetail> = {
       { name: "Condo Post-Renovation Clean (1,000 sqft)", price: "From RM 650", desc: "Full post-renovation clean for a 3-bed condo after a typical kitchen + bathroom renovation." },
       { name: "Terrace House Post-Renovation Clean (2,000 sqft)", price: "From RM 1,400", desc: "Whole-house post-renovation clean including outdoor areas, garage, and windows." },
       { name: "New Tiles Grout Haze Removal", price: "From RM 10 / sq ft", desc: "Specialist grout haze removal on newly laid porcelain or ceramic tiles using pH-balanced acidic cleaner." },
-      { name: "Construction Debris Removal", price: "From RM 320", desc: "Bagging and disposal of leftover construction materials, packaging, and debris. Skip bin coordination if needed." }
+      { name: "Construction Debris Removal", price: "From RM 320", desc: "Bagging and disposal of leftover construction materials, packaging, and debris. Skip bin coordination if needed." },
+      { name: "Construction Rough Cleaning & Site Clearance", price: "On Quote", desc: "Heavy site cleanup, debris bagging, timber and scrap removal between trades to clear floors for next-phase installations." },
+      { name: "Fine Dust Extraction & Air Purifying", price: "On Quote", desc: "Multi-pass HEPA vacuuming and electrostatic wiping to capture microscopic cement, gypsum, and plaster dust from ceilings and vents." },
+      { name: "Paint Splatter & Silicone Smear Removal", price: "On Quote", desc: "Safe solvent treatment and specialized scraping of dried emulsion drips, enamel overspray, silicone residue, and masking adhesive." },
+      { name: "Window Glass & Aluminium Track Detailing", price: "On Quote", desc: "Protective film peeling, cement spot removal from glass, and deep vacuuming and degreasing of sliding aluminium window tracks." },
+      { name: "Floor Machine Scrubbing & Buffing", price: "On Quote", desc: "Single-disc rotary machine scrubbing with neutral detergents for tiles, SPC, vinyl, and epoxy to restore factory sheen without acid dulling." },
+      { name: "Move-In & Handover Final Cleaning", price: "On Quote", desc: "White-glove sanitization of built-in cabinets, wardrobes, kitchen counters, sanitary ware, and door hardware ready for immediate occupancy." }
     ],
     process: [
       { step: "01", title: "Scope Assessment", desc: "We assess the renovation scope (paint, tile, plaster, carpentry, etc.), the type of finishes, and the level of construction residue. For very heavy soiling we do a site visit before quoting." },
@@ -3127,7 +3133,13 @@ export const servicesData: Record<string, ServiceDetail> = {
           { name: "Cucian Selepas Pengubahsuaian Kondominium (1,000 kaki persegi)", price: "Dari RM 650", desc: "Cucian selepas pengubahsuaian penuh untuk kondominium 3 bilik selepas pengubahsuaian dapur + bilik mandi biasa." },
           { name: "Cucian Selepas Pengubahsuaian Rumah Teres (2,000 kaki persegi)", price: "Dari RM 1,400", desc: "Cucian selepas pengubahsuaian seluruh rumah termasuk kawasan luar, garaj dan tingkap." },
           { name: "Penyingkiran Kabut Grout Jubin Baharu", price: "Dari RM 10 / kaki persegi", desc: "Penyingkiran kabut grout pakar pada jubin porselin atau seramik baru dipasang menggunakan pencuci berasid seimbang pH." },
-          { name: "Penyingkiran Serpihan Pembinaan", price: "Dari RM 320", desc: "Pembungkusan dan pelupusan bahan pembinaan, pembungkusan dan serpihan tertinggal. Penyelarasan tong skip jika perlu." }
+          { name: "Penyingkiran Serpihan Pembinaan", price: "Dari RM 320", desc: "Pembungkusan dan pelupusan bahan pembinaan, pembungkusan dan serpihan tertinggal. Penyelarasan tong skip jika perlu." },
+          { name: "Pembersihan Kasar Pembinaan & Pembersihan Tapak", price: "Atas Sebut Harga", desc: "Pembersihan berat tapak binaan, pembungkusan serpihan dan penyingkiran sisa kayu antara fasa kerja untuk laluan kemasan seterusnya." },
+          { name: "Penyedutan Habuk Halus & Pembersihan Udara", price: "Atas Sebut Harga", desc: "Vakum HEPA pelbagai pusingan dan lap elektrostatik untuk menangkap habuk simen, gypsum dan plaster mikroskopik dari siling dan corong udara." },
+          { name: "Penyingkiran Percikan Cat & Sisa Silikon", price: "Atas Sebut Harga", desc: "Rawatan pelarut selamat dan pengikisan khusus untuk titisan cat emulsi, percikan semburan cat, kesan silikon dan pelekat masking tape." },
+          { name: "Pembersihan Terperinci Kaca Tingkap & Rel Aluminium", price: "Atas Sebut Harga", desc: "Mengupas filem pelindung kilang, mengikis bintik simen dari kaca, serta menyedut habuk dan membasuh rel gelongsor aluminium." },
+          { name: "Penyentalan & Penggilapan Mesin Lantai", price: "Atas Sebut Harga", desc: "Penyentalan mesin rotary cakera tunggal dengan detergen neutral untuk jubin, SPC, vinil dan epoxy bagi mengembalikan kilauan asal tanpa kusam." },
+          { name: "Pembersihan Akhir Penyerahan & Masuk Rumah", price: "Atas Sebut Harga", desc: "Pembersihan sanitasi terperinci untuk kabinet terbina dalam, almari pakaian, kaunter dapur, perkakasan sanitari dan pemegang pintu sedia didiami." }
         ],
         process: [
           { step: "01", title: "Penilaian Skop", desc: "Kami menilai skop pengubahsuaian (cat, jubin, plaster, pertukangan, dll.), jenis kemasan dan tahap sisa pembinaan. Untuk kekotoran sangat teruk kami melawat tapak sebelum memberi sebut harga." },
@@ -3163,7 +3175,13 @@ export const servicesData: Record<string, ServiceDetail> = {
           { name: "公寓装修后开荒（1,000 平方英尺）", price: "从 RM 650 起", desc: "三房公寓在典型厨卫装修后的全屋开荒保洁。" },
           { name: "排屋装修后开荒（2,000 平方英尺）", price: "从 RM 1,400 起", desc: "整栋房屋装修后开荒，含室外区域、车库与窗户。" },
           { name: "新瓷砖砖缝浮灰清除", price: "从 RM 10 / 平方英尺起", desc: "使用 pH 平衡酸性清洁剂，专业清除新铺抛光砖或瓷砖上的砖缝浮灰。" },
-          { name: "建筑垃圾清运", price: "从 RM 320 起", desc: "剩余建筑材料、包装与废料的装袋清运。需要时可协调租用垃圾桶。" }
+          { name: "建筑垃圾清运", price: "从 RM 320 起", desc: "剩余建筑材料、包装与废料的装袋清运。需要时可协调租用垃圾桶。" },
+          { name: "施工现场粗保洁与清场服务", price: "依报价", desc: "重度施工垃圾清运、废料装袋、木料与杂物清理，打通各工序作业面，为下一阶段安装铺平基础。" },
+          { name: "细粉尘深层清除与空气净化", price: "依报价", desc: "工业级 HEPA 多重吸尘与静电除尘抹拭，深度吸除吊顶暗槽、空调风口及墙角残留的极细石膏与水泥粉尘。" },
+          { name: "油漆飞溅与硅胶残留清除", price: "依报价", desc: "采用安全环保溶剂与专用塑料刮刀，温和软化并彻底去除地砖、开关插座与框条上的乳胶漆滴、硅胶胶渍及保护胶带残胶。" },
+          { name: "窗户玻璃与铝合金滑轨深度精洁", price: "依报价", desc: "撕除门窗出厂保护膜、无刮痕刮除玻璃水泥点与标签残胶，并对铝合金推拉滑轨进行深层除砂、吸尘与脱脂清洗。" },
+          { name: "地板机械深度洗地与抛光护理", price: "依报价", desc: "使用单盘旋转重型洗地机配合中性清洁剂，对新铺瓷砖、SPC石塑、乙烯基及环氧地坪进行深层去污与机械抛光，恢复原厂光泽。" },
+          { name: "交付入住前最终全面精细保洁", price: "依报价", desc: "对定制橱柜内膛、衣柜格层、厨房料理台、全套卫浴洁具及门窗五金进行全方位消毒与无尘擦拭，达到即刻拎包入住的高标准。" }
         ],
         process: [
           { step: "01", title: "范围评估", desc: "我们评估装修范围（油漆、贴砖、抹灰、木工等）、饰面类型与建筑残留程度。特别脏的我们报价前先上门查看。" },
