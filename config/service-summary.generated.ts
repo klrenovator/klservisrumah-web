@@ -1498,6 +1498,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
       },
       {
         "name": "Shoe Cabinet & Entry Storage"
+      },
+      {
+        "name": "Walk-in Wardrobe & Closet System"
+      },
+      {
+        "name": "Vanity Cabinet & Dressing Table"
+      },
+      {
+        "name": "Storage Cabinet & Display Shelving"
+      },
+      {
+        "name": "Feature Wall & Wall Panelling"
+      },
+      {
+        "name": "Dining Bench & Banquette Seating"
+      },
+      {
+        "name": "Wardrobe & Cabinet Repair"
       }
     ],
     "warranty": "5-Year Cabinet Structure Warranty",
@@ -1517,6 +1535,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
           },
           {
             "name": "Kabinet Kasut & Storan Pintu Masuk"
+          },
+          {
+            "name": "Walk-in Wardrobe & Sistem Closet"
+          },
+          {
+            "name": "Kabinet Vanity & Meja Solek"
+          },
+          {
+            "name": "Kabinet Storan & Rak Pameran"
+          },
+          {
+            "name": "Dinding Feature & Panel Dinding"
+          },
+          {
+            "name": "Bangku Makan & Tempat Duduk Banquette"
+          },
+          {
+            "name": "Pembaikan Almari & Kabinet"
           }
         ],
         "warranty": "Jaminan Struktur Kabinet 5 Tahun"
@@ -1536,6 +1572,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
           },
           {
             "name": "鞋柜与玄关收纳"
+          },
+          {
+            "name": "步入式衣帽间与衣橱系统"
+          },
+          {
+            "name": "浴室柜与梳妆台"
+          },
+          {
+            "name": "储物柜与展示架"
+          },
+          {
+            "name": "背景墙与护墙板"
+          },
+          {
+            "name": "餐椅长凳与卡座"
+          },
+          {
+            "name": "衣柜与柜体维修"
           }
         ],
         "warranty": "5 年柜体结构保修"

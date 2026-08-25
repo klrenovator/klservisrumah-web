@@ -1086,7 +1086,32 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
         "desc": "Slim depth shoe cabinet with tilt-out drawers, sitting bench, mirror, and integrated lighting."
       }
     ],
-    "quoteOnly": []
+    "quoteOnly": [
+      {
+        "name": "Walk-in Wardrobe & Closet System",
+        "desc": "Floor-to-ceiling walk-in wardrobe system with hanging zones, drawers, island units and internal lighting options."
+      },
+      {
+        "name": "Vanity Cabinet & Dressing Table",
+        "desc": "Custom vanity cabinet with sink top, drawers, mirror and lighting, or a bedroom dressing table with storage."
+      },
+      {
+        "name": "Storage Cabinet & Display Shelving",
+        "desc": "Floor-to-ceiling storage cabinets, display shelving and feature storage walls for living rooms, hallways and home offices."
+      },
+      {
+        "name": "Feature Wall & Wall Panelling",
+        "desc": "Fluted, slat and laminate wall panelling with integrated shelving and lighting for living rooms, bedrooms and TV walls."
+      },
+      {
+        "name": "Dining Bench & Banquette Seating",
+        "desc": "Custom dining benches, banquette seating and window seats with built-in storage, upholstered or timber-finished."
+      },
+      {
+        "name": "Wardrobe & Cabinet Repair",
+        "desc": "Door realignment, hinge and runner replacement, sagging shelf repair and cabinet refacing to restore existing built-ins."
+      }
+    ]
   },
   "door": {
     "startPrice": 250,
