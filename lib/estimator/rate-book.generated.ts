@@ -1145,7 +1145,32 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
         "desc": "1-hour or 2-hour certified fire door with intumescent seals, suitable for kitchen, staircase, or fire-escape access."
       }
     ],
-    "quoteOnly": []
+    "quoteOnly": [
+      {
+        "name": "Door Replacement",
+        "desc": "Like-for-like replacement of an existing door leaf on a sound frame — new door supplied, hinges renewed, lockset refitted, and gaps re-set."
+      },
+      {
+        "name": "Door Frame Repair & Replacement",
+        "desc": "Repairing rotted, cracked, or out-of-square timber frames, or supplying a new meranti or PVC frame with architrave when the old one is beyond repair."
+      },
+      {
+        "name": "Bathroom & Kitchen PVC Door Replacement",
+        "desc": "Moisture-proof PVC or aluminium door and frame sets for wet areas, sized to the existing opening and sealed against splash and humidity."
+      },
+      {
+        "name": "Sliding & Bi-Fold Door Installation",
+        "desc": "Top-hung sliding, pocket, and bi-fold door sets with tracks, floor guides, and soft-close hardware for bedrooms, wardrobes, and study rooms."
+      },
+      {
+        "name": "Main Entrance Door Installation",
+        "desc": "Heavier main entrance door sets with reinforced hinges, security lockset preparation, and weather-sealed threshold detailing."
+      },
+      {
+        "name": "Door Closer & Hardware Installation",
+        "desc": "Supply and fitting of door closers, floor springs, stoppers, seals, and drop-down thresholds on existing or newly installed doors."
+      }
+    ]
   },
   "window-repair": {
     "startPrice": 200,
@@ -1179,7 +1204,32 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
         "desc": "Replacing worn nylon or steel rollers and cleaning tracks for smooth sliding operation."
       }
     ],
-    "quoteOnly": []
+    "quoteOnly": [
+      {
+        "name": "Window Installation",
+        "desc": "New aluminium casement, sliding, top-hung, or fixed windows measured and installed into an existing or newly formed opening."
+      },
+      {
+        "name": "Window Replacement",
+        "desc": "Removing an ageing window and frame in full and installing a new like-for-like or upgraded unit, with reinstatement around the opening."
+      },
+      {
+        "name": "Window Grille Installation",
+        "desc": "Supply and fitting of security grilles or child-safety grilles onto existing window frames, sized on site and finished against rust."
+      },
+      {
+        "name": "Window Frame Repair & Realignment",
+        "desc": "Straightening, re-anchoring, and resealing aluminium frames that have dropped out of square so sashes close and lock properly again."
+      },
+      {
+        "name": "Louvre & Top-Hung Window Repair",
+        "desc": "Replacing louvre blades, clips, stays, and operators on louvre and awning windows, including stiff or seized winding mechanisms."
+      },
+      {
+        "name": "Window Waterproofing & Resealing",
+        "desc": "Raking out failed perimeter silicone, cleaning the joint, and resealing frame-to-wall junctions to stop rain ingress in wind-driven storms."
+      }
+    ]
   },
   "locksmith": {
     "startPrice": 180,
@@ -1247,7 +1297,32 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
         "desc": "5–6mm silver-backed mirror with concealed aluminium channel fixings, suitable for bathrooms, gyms, and dressing rooms."
       }
     ],
-    "quoteOnly": []
+    "quoteOnly": [
+      {
+        "name": "Glass Partition",
+        "desc": "Full-height or half-height tempered glass partitions for homes and shoplots, with aluminium U-channel or frameless fixing and optional frosted film."
+      },
+      {
+        "name": "Sliding Glass Door",
+        "desc": "Aluminium-framed or frameless sliding glass door sets with tempered glass, quality rollers, and weatherstrip for patios, balconies, and dividers."
+      },
+      {
+        "name": "Aluminium Casement Window",
+        "desc": "Side-hung aluminium casement windows fabricated to opening size, with friction stays, multipoint locking, and clear or tinted glass."
+      },
+      {
+        "name": "Glass Railing & Balustrade",
+        "desc": "Tempered or laminated glass railings for staircases, balconies, and mezzanines with stainless spigots, standoffs, or channel fixing."
+      },
+      {
+        "name": "Aluminium Composite Panel Cladding",
+        "desc": "ACP cladding for facades, shopfronts, and feature walls with routed folds, aluminium framing, and weatherproof joint sealing."
+      },
+      {
+        "name": "Glass Repair & Reglazing",
+        "desc": "Replacing cracked or shattered panes in existing frames, doors, and partitions, with temporary board-up when custom glass is on order."
+      }
+    ]
   },
   "cleaning": {
     "startPrice": 180,
@@ -1451,7 +1526,32 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
         "desc": "Custom mild steel staircase stringer fabricated to your measurements, primed and painted for indoor or outdoor use."
       }
     ],
-    "quoteOnly": []
+    "quoteOnly": [
+      {
+        "name": "Iron Works",
+        "desc": "General wrought iron and mild steel works — decorative panels, brackets, frames, trellises, and bespoke metal pieces fabricated to your drawing."
+      },
+      {
+        "name": "Metal Grille Installation",
+        "desc": "Installing fabricated window, door, balcony, or air-well grilles onto existing openings, with anti-rust treatment and matching finish."
+      },
+      {
+        "name": "Metal Gate Repair",
+        "desc": "Repairing sagging, rusted, or broken gates — hinge renewal, frame straightening, weld repair, and rust treatment with repaint."
+      },
+      {
+        "name": "Stainless Steel Railing Fabrication",
+        "desc": "Stainless steel handrails and balustrades for staircases, balconies, and ramps, welded and polished for indoor or outdoor exposure."
+      },
+      {
+        "name": "Steel Structure & Awning Fabrication",
+        "desc": "Mild steel awning, canopy, drying-yard, and carport frames fabricated and installed with primer and weather-resistant finish."
+      },
+      {
+        "name": "Anti-Rust Treatment & Repainting",
+        "desc": "Wire-brushing, rust conversion, priming, and repainting of existing grilles, gates, railings, and structural steel to extend service life."
+      }
+    ]
   },
   "aircon": {
     "startPrice": 129,

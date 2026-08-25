@@ -322,7 +322,7 @@
 - [x] ✅ Connect plumbing renovation — COMPLETED (plumbing service + kitchen/bathroom plumbing subservices; Session 5 expanded plumbing 4→10 subservices with bathroom/kitchen plumbing renovation, pipe replacement & rerouting, drainage & floor trap upgrade, shower & rain shower installation and renovation plumbing work)
 - [x] ✅ Connect electrical renovation — COMPLETED (electrical service + kitchen/bathroom electrical + DB box, lighting; Session 4 expanded electrical 4→10 subservices with house rewiring, additional power points, switch installation, kitchen/bathroom electrical and renovation electrical work)
 - [x] ✅ Connect carpentry (kitchen cabinets, wardrobes, etc) — COMPLETED (carpentry + kitchen-cabinet services linked; Session 6 expanded carpentry 4→10 subservices with walk-in wardrobe, vanity cabinet, storage cabinet, feature wall & wall panelling, dining bench & banquette, wardrobe & cabinet repair)
-- [x] ✅ Connect door/window/glass/metal — COMPLETED (door, window-repair, glass-aluminium, welding linked)
+- [x] ✅ Connect door/window/glass/metal — COMPLETED (Session 7 expanded all four services 4→10 subservices: door +6, window-repair +6, glass-aluminium +6, welding +6, each with native EN/MS/ZH specialty pages and topical-map silos)
 - [x] ✅ Create commercial renovation cluster (office, shoplot, retail, F&B) — COMPLETED (Commercial Shoplot Renovation existing + shoplot type in calculator)
 - [x] ✅ Create post-renovation cleaning cluster — COMPLETED (post-renovation-cleaning service + debris removal specialty)
 
@@ -641,15 +641,32 @@
 | Custom Carpentry | ✅ (carpentry service) | ✅ | ✅ | Exists |
 | **Door/Window/Glass/Metal** | | | | |
 | Door Installation | ✅ (part of door) | ✅ | ✅ | Enhance |
-| Door Replacement | ⏳ | ⏳ | ⏳ | New |
-| Door Frame | ⏳ | ⏳ | ⏳ | New |
-| Window Installation | ⏳ | ⏳ | ⏳ | New |
-| Window Replacement | ⏳ | ⏳ | ⏳ | New |
+| Door Replacement | ✅ | ✅ | ✅ | New subservice + specialty (Session 7) |
+| Door Frame Repair & Replacement | ✅ | ✅ | ✅ | New subservice + specialty (Session 7) |
+| Bathroom & Kitchen PVC Door Replacement | ✅ | ✅ | ✅ | New subservice + specialty (Session 7) |
+| Sliding & Bi-Fold Door Installation | ✅ | ✅ | ✅ | New subservice + specialty (Session 7) |
+| Main Entrance Door Installation | ✅ | ✅ | ✅ | New subservice + specialty (Session 7) |
+| Door Closer & Hardware Installation | ✅ | ✅ | ✅ | New subservice + specialty (Session 7) |
+| Window Installation | ✅ | ✅ | ✅ | New subservice + specialty (Session 7) |
+| Window Replacement | ✅ | ✅ | ✅ | New subservice + specialty (Session 7) |
+| Window Grille Installation | ✅ | ✅ | ✅ | New subservice + specialty (Session 7) |
+| Window Frame Repair & Realignment | ✅ | ✅ | ✅ | New subservice + specialty (Session 7) |
+| Louvre & Top-Hung Window Repair | ✅ | ✅ | ✅ | New subservice + specialty (Session 7) |
+| Window Waterproofing & Resealing | ✅ | ✅ | ✅ | New subservice + specialty (Session 7) |
 | Aluminium Works | ✅ (glass-aluminium) | ✅ | ✅ | Exists |
-| Glass Partition | ⏳ | ⏳ | ⏳ | New |
-| Grille Installation | ⏳ | ⏳ | ⏳ | New |
+| Glass Partition | ✅ | ✅ | ✅ | New subservice + specialty (Session 7) |
+| Sliding Glass Door | ✅ | ✅ | ✅ | New subservice + specialty (Session 7) |
+| Aluminium Casement Window | ✅ | ✅ | ✅ | New subservice + specialty (Session 7) |
+| Glass Railing & Balustrade | ✅ | ✅ | ✅ | New subservice + specialty (Session 7) |
+| Aluminium Composite Panel Cladding | ✅ | ✅ | ✅ | New subservice + specialty (Session 7) |
+| Glass Repair & Reglazing | ✅ | ✅ | ✅ | New subservice + specialty (Session 7) |
+| Grille Installation | ✅ | ✅ | ✅ | New subservice + specialty ×2 — window-grille + metal-grille (Session 7) |
 | Metal Works | ✅ (welding) | ✅ | ✅ | Exists |
-| Iron Works | ⏳ | ⏳ | ⏳ | New |
+| Iron Works | ✅ | ✅ | ✅ | New subservice + specialty (Session 7) |
+| Metal Gate Repair | ✅ | ✅ | ✅ | New subservice + specialty (Session 7) |
+| Stainless Steel Railing Fabrication | ✅ | ✅ | ✅ | New subservice + specialty (Session 7) |
+| Steel Structure & Awning Fabrication | ✅ | ✅ | ✅ | New subservice + specialty (Session 7) |
+| Anti-Rust Treatment & Repainting | ✅ | ✅ | ✅ | New subservice + specialty (Session 7) |
 | **Commercial Renovation** | | | | |
 | Office Renovation | ⏳ | ⏳ | ⏳ | New |
 | Shoplot Renovation | ✅ (subservice) | ✅ | ✅ | Exists as subservice |
@@ -808,10 +825,15 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 - Existing: carpentry, kitchen-cabinet
 - Enhance with built-in wardrobe, walk-in wardrobe, TV cabinet, feature wall, etc.
 
-### Door / Window / Glass / Metal (Existing - enhance)
+### Door / Window / Glass / Metal (Existing - enhance) — ✅ COMPLETED (Session 7)
 
 - Existing: door, window-repair, glass-aluminium, welding
-- Enhance
+- ✅ door expanded 4 → 10 subservices: Door Replacement, Door Frame Repair & Replacement, Bathroom & Kitchen PVC Door Replacement, Sliding & Bi-Fold Door Installation, Main Entrance Door Installation, Door Closer & Hardware Installation
+- ✅ window-repair expanded 4 → 10 subservices: Window Installation, Window Replacement, Window Grille Installation, Window Frame Repair & Realignment, Louvre & Top-Hung Window Repair, Window Waterproofing & Resealing
+- ✅ glass-aluminium expanded 4 → 10 subservices: Glass Partition, Sliding Glass Door, Aluminium Casement Window, Glass Railing & Balustrade, Aluminium Composite Panel Cladding, Glass Repair & Reglazing
+- ✅ welding expanded 4 → 10 subservices: Iron Works, Metal Grille Installation, Metal Gate Repair, Stainless Steel Railing Fabrication, Steel Structure & Awning Fabrication, Anti-Rust Treatment & Repainting
+- ✅ All 24 new subservices carry native MS + ZH specialty locale content and typed topical-authority silos
+- ✅ All 24 priced "On Quote" / "Atas Sebut Harga" / "依报价" — no invented prices
 
 ### Commercial Renovation (Existing subservice - expand to service or cluster)
 
@@ -958,12 +980,24 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 - [x] ✅ QA: full `next build` PASS (5,980 rendered HTML pages incl. 6 EN + 6 MS + 6 ZH new carpentry specialty pages), TypeScript 0 errors, ESLint 0 warnings, prebuild (i18n + estimator tests 344,800 assertions) PASS, audit:links 0 broken targets (451,544 links, 5,972 pages), audit:html PASS (no fatal findings/warnings), seo:audit PASS
 - [x] ✅ No invented prices used — all 6 new carpentry subservices priced "On Quote" (existing published carpentry entry prices RM 300/linier ft, RM 320/linier ft, RM 1,500, RM 1,100, RM 1,800 untouched; no new price claims introduced)
 
+**Session 7 (this session) — Door / Window / Glass-Aluminium / Welding expansion:**
+
+- [x] ✅ Enhanced **door** service: 4→10 subservices (added Door Replacement, Door Frame Repair & Replacement, Bathroom & Kitchen PVC Door Replacement, Sliding & Bi-Fold Door Installation, Main Entrance Door Installation, Door Closer & Hardware Installation) with full EN/MS/ZH in services-data
+- [x] ✅ Enhanced **window-repair** service: 4→10 subservices (added Window Installation, Window Replacement, Window Grille Installation, Window Frame Repair & Realignment, Louvre & Top-Hung Window Repair, Window Waterproofing & Resealing) with full EN/MS/ZH
+- [x] ✅ Enhanced **glass-aluminium** service: 4→10 subservices (added Glass Partition, Sliding Glass Door, Aluminium Casement Window, Glass Railing & Balustrade, Aluminium Composite Panel Cladding, Glass Repair & Reglazing) with full EN/MS/ZH
+- [x] ✅ Enhanced **welding** service: 4→10 subservices (added Iron Works, Metal Grille Installation, Metal Gate Repair, Stainless Steel Railing Fabrication, Steel Structure & Awning Fabrication, Anti-Rust Treatment & Repainting) with full EN/MS/ZH
+- [x] ✅ Added **24 new specialty-locale entries** with real native MS/ZH content (6 door + 6 window-repair + 6 glass-aluminium + 6 welding) — total **178 specialties × 2 = 356 native blocks**, audit:specialty-locale PASS with per-page list-count parity
+- [x] ✅ Registered all 24 new specialties in topical-authority-map with relatedProblems + relatedBlogs, and widened the door / window-repair / glass-aluminium / welding service-level PROB and BLOG pools — audit:topical-map PASS (**31/31 services, 221 typed specialty relationships** = 100% of all 221 subservices now typed)
+- [x] ✅ Regenerated generated files via prebuild: quote-catalog.generated.ts, service-summary.generated.ts, rate-book.generated.ts, llms-full.txt, site-summary.json (sitemap auto-includes the 24 new EN specialties + 48 MS/ZH twins via hasSpecialtyLocaleContent)
+- [x] ✅ QA: full `next build` PASS (**6,052 rendered pages**, +72 = 24 EN + 24 MS + 24 ZH new specialty pages), TypeScript 0 errors, ESLint 0 warnings, prebuild (i18n 1085 keys × 3 + estimator tests 344,800 assertions) PASS, audit:links 0 broken targets (456,657 links across 6,044 pages), audit:html PASS (0 fatal, 0 warnings), seo:audit PASS
+- [x] ✅ **No invented prices used** — all 24 new subservices priced "On Quote" / "Atas Sebut Harga" / "依报价"; existing published entry prices on these four services (glass-aluminium from RM 320, welding from RM 280, etc.) left untouched and no new price, warranty, review or licence claim was introduced
+
 ## In Progress This Session
 
 - [x] ✅ Enhance waterproofing connected-trade subServices (toilet, balcony, concrete slab & car porch, water leakage repair, ceiling water damage, waterproofing repair & re-coating) — COMPLETED (Session 3)
 - [x] ✅ Enhance electrical connected-trade subServices (house rewiring, additional power points, switch installation, kitchen/bathroom electrical, renovation electrical work) — COMPLETED (Session 4)
 - [x] ✅ Enhance plumbing connected-trade subServices (bathroom/kitchen plumbing renovation, pipe replacement & rerouting, drainage & floor trap, shower & rain shower, renovation plumbing work) — COMPLETED (Session 5)
-- [ ] 🔄 Enhance remaining connected trades subServices (carpentry with wardrobes etc, door/window/glass/metal) — IN PROGRESS, painting + waterproofing + electrical + plumbing + carpentry tranches completed (Sessions 2–6), door/window/glass/metal tranche next
+- [x] ✅ Enhance remaining connected trades subServices (carpentry with wardrobes etc, door/window/glass/metal) — COMPLETED, all tranches done: painting (S2), waterproofing (S3), electrical (S4), plumbing (S5), carpentry (S6), door + window-repair + glass-aluminium + welding (S7). **Phase 11 connected-trade subservice expansion is now fully closed.**
 - [ ] 🔄 Problem-based renovation content — PENDING (43 existing problems audited, renovation-related problems like hollow tiles, cracked tiles, water-damaged ceiling can be added as thin-page avoidance)
 - [ ] 🔄 Location SEO renovation enhancement — PENDING (49+ areas exist, need localized renovation content without thin duplication)
 - [ ] 🔄 Commercial renovation cluster expansion — PENDING (shoplot exists, office/retail/F&B can be added as subservices)
@@ -976,7 +1010,7 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 - ~~Enhance electrical service with House Rewiring, Additional Power Points, Switch Installation, Downlight, DB Box Work, Kitchen/Bathroom Electrical subservices~~ ✅ COMPLETED (Session 4 — electrical 4→10 subservices; added House Rewiring, Additional Power Points, Switch Installation, Kitchen Electrical, Bathroom Electrical, Renovation Electrical Work with real EN/MS/ZH content + 6 new specialty locale entries; Downlight and DB Box already existed)
 - ~~Enhance plumbing service with Bathroom Plumbing, Kitchen Plumbing, Pipe Replacement, Water Supply Pipe, Drainage, Sink/Toilet/Tap/Shower Installation subservices~~ ✅ COMPLETED (Session 5 — plumbing 4→10 subservices; added Bathroom Plumbing Renovation, Kitchen Plumbing Renovation, Pipe Replacement & Rerouting, Drainage & Floor Trap Upgrade, Shower & Rain Shower Installation, Renovation Plumbing Work with real EN/MS/ZH content + 6 new specialty locale entries; sink/toilet/tap installation already existed)
 - ~~Enhance carpentry service with Built-in Wardrobe, Walk-in Wardrobe, TV Cabinet, TV Feature Wall, Shoe Cabinet, Storage Cabinet, Vanity Cabinet, Study Table subservices~~ ✅ COMPLETED (Session 6 — carpentry 4→10 subservices; added Walk-in Wardrobe & Closet System, Vanity Cabinet & Dressing Table, Storage Cabinet & Display Shelving, Feature Wall & Wall Panelling, Dining Bench & Banquette Seating, Wardrobe & Cabinet Repair with real EN/MS/ZH content + 6 new specialty locale entries; Built-in Wardrobe, TV Console & Feature Wall, Study Desk & Home Office and Shoe Cabinet & Entry Storage already existed)
-- Enhance door/window/glass/metal with Door Replacement, Door Frame, Window Installation/Replacement, Glass Partition, Grille, Iron Works subservices
+- ~~Enhance door/window/glass/metal services with Door Replacement, Door Frame, Window Installation/Replacement, Glass Partition, Grille, Iron Works subservices~~ ✅ COMPLETED (Session 7 — door 4→10, window-repair 4→10, glass-aluminium 4→10, welding 4→10; 24 new subservices with real EN/MS/ZH content + 24 new specialty locale entries + 24 topical-map silos. **Phase 11 connected-trade expansion fully closed.**)
 - Create commercial renovation cluster expansion: Office Renovation, Retail Renovation, Commercial Renovation, Office Partition, Shop Renovation, Restaurant/F&B Renovation as subservices under house-renovation or new service
 - Create post-renovation cleaning expansion: Construction Cleaning, Debris Removal, Grout Cleaning, Dust Removal, Final Cleaning, Handover Cleaning subservices
 - Create problem-based renovation pages only where genuine intent: Hollow Tiles, Cracked Tiles, Broken Tiles, Uneven Floor, Peeling Paint, Wall Cracks, Ceiling Cracks, Water-Damaged Ceiling, Bathroom Leakage, Roof Leakage, Damp Wall, Mould, Damaged Plaster Ceiling, Old Bathroom/Kitchen, Damaged Flooring, Broken Partition, Water Seepage — ensure unique value, not thin
@@ -987,7 +1021,8 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 
 ## Blocked
 
-- None - no new pricing/claims introduced in Session 6. All 6 new carpentry subservices are priced "On Quote" (no new price claims), so no business verification pending.
+- None - no new pricing/claims introduced in Session 7. All 24 new door / window-repair / glass-aluminium / welding subservices are priced "On Quote" / "Atas Sebut Harga" / "依报价", so no business verification is pending.
+- (Prior) None for Session 6 either — all 6 new carpentry subservices were priced "On Quote".
 - (Env note) node_modules was not present in the sandbox at session start; reinstalled via `npm install` to run audits/build.
 
 ## Files Changed This Session
@@ -1046,6 +1081,15 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 - docs/seo-audit-report.md (regenerated by seo:audit)
 - RENOVATION_EXPANSION_PLAN.md (Session 6 progress + QA)
 
+**Session 7 (this session) — Door / Window / Glass-Aluminium / Welding expansion:**
+
+- config/services-data.ts (enhanced 4 services 4→10 subservices each — door, window-repair, glass-aluminium, welding — 24 new subservices with full EN/MS/ZH name, description, process and FAQ content)
+- config/specialty-locale-content.ts (added 24 new specialty entries with real native MS/ZH content — total 178 specialties × 2 = 356 native blocks)
+- config/topical-authority-map.ts (registered 24 new specialties with relatedProblems + relatedBlogs; widened the door / window-repair / glass-aluminium / welding service-level PROB and BLOG pools — 221 typed specialty relationships, i.e. every subservice on the site is now typed)
+- Generated files (regenerated via prebuild): config/quote-catalog.generated.ts, config/service-summary.generated.ts, lib/estimator/rate-book.generated.ts, public/llms-full.txt, public/site-summary.json
+- docs/seo-audit-report.md (regenerated by seo:audit)
+- RENOVATION_EXPANSION_PLAN.md (Session 7 progress + QA)
+
 ## Files Created This Session
 
 - RENOVATION_EXPANSION_PLAN.md (initial creation + updates)
@@ -1053,6 +1097,8 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 _Note (Session 2): No new tracked files created — all work was additive edits to existing config + regenerated generated files. node_modules was freshly installed in the sandbox to run audits/build (not tracked). docs/seo-audit-report.md is tracked and was regenerated by the seo:audit script._
 
 _Note (Session 3): No new tracked files created — all work was additive edits to existing config + regenerated generated files (node_modules installed in the sandbox, not tracked). docs/seo-audit-report.md is tracked and was regenerated by the seo:audit script._
+
+_Note (Session 7): No new tracked files created — all work was additive edits to existing config + regenerated generated files (node_modules installed in the sandbox, not tracked). docs/seo-audit-report.md is tracked and was regenerated by the seo:audit script._
 
 _Note (Session 6): No new tracked files created — all work was additive edits to existing config + regenerated generated files (node_modules installed in the sandbox, not tracked). docs/seo-audit-report.md is tracked and was regenerated by the seo:audit script._
 
@@ -1062,19 +1108,39 @@ _Note (Session 6): No new tracked files created — all work was additive edits 
 
 ## QA Status
 
-- Build: ✅ PASS (prebuild + full `next build` — 5,980 rendered HTML pages incl. 6 EN/6 MS/6 ZH new carpentry specialty pages)
+- Build: ✅ PASS (prebuild + full `next build` — **6,052 rendered HTML pages**, +72 vs Session 6: 24 EN + 24 MS + 24 ZH new door/window/glass/welding specialty pages)
 - TypeScript: ✅ PASS (0 errors via `npm run type-check` / tsc --noEmit)
-- ESLint: ✅ PASS (0 warnings via npm run lint)
-- Routes: ✅ PASS (31 services, 191 sub-services, 154 specialties with MS/ZH twins, 46 tools × 3 locales, sitemap includes 31 services with hreflang clusters)
-- SEO: ✅ PASS (seo:audit PASS → docs/seo-audit-report.md regenerated; buildMetadata with languageUrls, optimizeTitle/Description, canonical, Open Graph; new carpentry specialty pages emit real 3-way hreflang clusters EN/MS/ZH + x-default, self-canonical consistent with Sessions 4–5 specialty pages)
-- Sitemap: ✅ PASS (sitemap.ts auto-includes 31 services + 154 specialty twins via hasSpecialtyLocaleContent + 46 tools × 3 locales; site-summary.json verified via prebuild)
+- ESLint: ✅ PASS (0 warnings via `npm run lint --max-warnings=0`)
+- Routes: ✅ PASS (31 services, **221 sub-services**, **178 specialties** with MS/ZH twins, 46 tools × 3 locales, sitemap includes 31 services with hreflang clusters)
+- SEO: ✅ PASS (seo:audit PASS → docs/seo-audit-report.md regenerated; the 24 new specialty pages emit real 3-way hreflang clusters EN/MS/ZH + x-default with self-canonical, and carry native MS/ZH metaTitle/metaDesc — verified in built HTML for door-replacement, glass-partition, window-waterproofing-and-resealing and anti-rust-treatment-and-repainting)
+- Sitemap: ✅ PASS (sitemap.ts auto-includes 31 services + 178 specialty twins via hasSpecialtyLocaleContent + 46 tools × 3 locales; site-summary.json verified via prebuild)
 - Schema: ✅ PASS (Service schema with OfferCatalog, FAQPage, BreadcrumbList, HowTo, Speakable, Organization, LocalBusiness, WebSite — no fake reviews/ratings)
-- Multilingual: ✅ PASS (audit:i18n 1085 keys × 3 locales PASS, audit:specialty-locale 154×2 = 308 blocks PASS, audit:problem-i18n PASS, test:estimators 344,800 assertions PASS, audit:topical-map 197 typed relationships PASS)
-- Internal Links: ✅ PASS (audit:links — 5,972 pages, 451,544 links, 0 broken targets; new MS/ZH specialty pages render related problems + localized blog links from topical map)
+- Multilingual: ✅ PASS (audit:i18n 1085 keys × 3 locales PASS, **audit:specialty-locale 178 × 2 = 356 native blocks PASS** with per-page list-count parity, audit:problem-i18n PASS 74 keep-URLs × ms/zh, test:estimators 344,800 assertions PASS, **audit:topical-map 31/31 services, 221 typed relationships PASS**)
+- Internal Links: ✅ PASS (audit:links — **6,044 pages, 456,657 links, 0 broken targets**; new MS/ZH specialty pages render related problems + localized blog links from the topical map)
+- HTML quality: ✅ PASS (audit:html — 6,044 pages, 0 fatal findings, 0 warnings)
 - Mobile: ✅ PASS (navbar mobile cluster compact, lg:flex mega-menu, no backdrop-blur WebKit bug)
-- Accessibility: ⏳ PENDING (semantic HTML, keyboard, labels, alt text, contrast, mobile usability — existing system uses semantic HTML, needs full check next session)
-- Performance: ✅ PASS (client bundle guard: service-nav.generated used instead of registry, no heavy content registry in client, 0 vulnerabilities)
+- Accessibility: ⏳ PENDING (Phase 21 — semantic HTML, keyboard nav, labels, alt text, contrast, mobile usability; existing system uses semantic HTML, needs a full dedicated pass)
+- Performance: ✅ PASS (client bundle guard PASS; service-nav.generated used instead of registry, no heavy content registry in client)
 - CRO: ✅ PASS (WhatsAppButton, StickyMobileWhatsAppBar, StickyBookButton, HeaderWhatsAppActions, getRenovationQuote CTA in 3 langs)
+- Business-claim safety: ✅ PASS (0 new prices, warranties, reviews, licences or guarantees introduced — all 24 new subservices are On Quote in all three languages)
+
+---
+
+### Start Here — Next Session (Session 8)
+
+Phase 11 (connected-trade subservice expansion) is **fully closed** as of Session 7. Every one of the 31 services now has its subservice set built out, all 221 subservices are typed in the topical-authority map, and 178 specialties carry native MS/ZH pages.
+
+Recommended order for Session 8, highest priority first:
+
+1. **Commercial renovation cluster** — Office Renovation, Retail Renovation, Office Partition, Shop Renovation, Restaurant/F&B Renovation. Decide subservices-under-house-renovation vs. a new `commercial-renovation` service (a new service means new service-seo + navbar entries). Follow the Session 2–7 pattern.
+2. **Post-renovation cleaning expansion** — Construction Cleaning, Debris Removal, Grout Cleaning, Dust Removal, Final/Handover Cleaning under the existing `post-renovation-cleaning` service.
+3. **Phase 12 — problem content** (18 renovation problems). Note the existing problem corpus already covers many of these; audit for overlap first and only add where intent is genuinely distinct, to avoid thin/duplicate pages.
+4. **Phase 21 — accessibility pass** (the only ⏳ item left in QA Status).
+5. **Phase 13 location SEO**, cost guides, Phase 22 performance, Phase 23 sitemap/robots/final QA.
+
+Known non-blocking backlog (pre-existing, not introduced by Sessions 2–7): 44 subservices still have no MS/ZH specialty-locale block — house-renovation, tiling, plaster-ceiling, flooring, kitchen-renovation and bathroom-renovation are the biggest gaps. The locale specialty routes are data-gated on `getSpecialtyLocaleContent`, so these simply do not render MS/ZH twins yet; nothing is broken. Closing this backlog is a good standalone tranche if a session has spare capacity.
+
+Per-session working pattern that has held for six sessions: `config/services-data.ts` (EN + i18n.ms + i18n.zh) → `config/specialty-locale-content.ts` (native MS/ZH, must clear `scripts/validate-specialty-locale.ts` thresholds and MS/ZH list-count parity) → `config/topical-authority-map.ts` silos → `npm run prebuild` → `npm run build` → `type-check`, `lint`, `audit:links`, `audit:html`, `seo:audit` → update this file.
 
 ---
 
