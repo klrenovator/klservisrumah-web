@@ -350,6 +350,12 @@ All prices are the published starting prices shown on the live service pages. Fi
 - Terrace House Post-Renovation Clean (2,000 sqft) — From RM 1,400
 - New Tiles Grout Haze Removal — From RM 10 / sq ft
 - Construction Debris Removal — From RM 320
+- Construction Rough Cleaning & Site Clearance — On Quote
+- Fine Dust Extraction & Air Purifying — On Quote
+- Paint Splatter & Silicone Smear Removal — On Quote
+- Window Glass & Aluminium Track Detailing — On Quote
+- Floor Machine Scrubbing & Buffing — On Quote
+- Move-In & Handover Final Cleaning — On Quote
 - Cost guide: https://www.klservisrumah.my/services/post-renovation-cleaning/cost
 
 ### CCTV & Security Camera Installation
@@ -877,6 +883,6 @@ KL Servis Rumah publishes fair, upfront pricing benchmarked against the Klang Va
 - Sitemap: https://www.klservisrumah.my/sitemap.xml
 
 ## Scale
-- 31 services · 221 sub-services
+- 31 services · 227 sub-services
 - 37 area pages · 86 problem pages · 229 articles
-- 4,894 indexable pages listed in the sitemap
+- 4,912 indexable pages listed in the sitemap

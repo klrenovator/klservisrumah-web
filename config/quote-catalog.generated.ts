@@ -3129,6 +3129,36 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
         "name": "Construction Debris Removal",
         "price": "From RM 320",
         "desc": "Bagging and disposal of leftover construction materials, packaging, and debris. Skip bin coordination if needed."
+      },
+      {
+        "name": "Construction Rough Cleaning & Site Clearance",
+        "price": "On Quote",
+        "desc": "Heavy site cleanup, debris bagging, timber and scrap removal between trades to clear floors for next-phase installations."
+      },
+      {
+        "name": "Fine Dust Extraction & Air Purifying",
+        "price": "On Quote",
+        "desc": "Multi-pass HEPA vacuuming and electrostatic wiping to capture microscopic cement, gypsum, and plaster dust from ceilings and vents."
+      },
+      {
+        "name": "Paint Splatter & Silicone Smear Removal",
+        "price": "On Quote",
+        "desc": "Safe solvent treatment and specialized scraping of dried emulsion drips, enamel overspray, silicone residue, and masking adhesive."
+      },
+      {
+        "name": "Window Glass & Aluminium Track Detailing",
+        "price": "On Quote",
+        "desc": "Protective film peeling, cement spot removal from glass, and deep vacuuming and degreasing of sliding aluminium window tracks."
+      },
+      {
+        "name": "Floor Machine Scrubbing & Buffing",
+        "price": "On Quote",
+        "desc": "Single-disc rotary machine scrubbing with neutral detergents for tiles, SPC, vinyl, and epoxy to restore factory sheen without acid dulling."
+      },
+      {
+        "name": "Move-In & Handover Final Cleaning",
+        "price": "On Quote",
+        "desc": "White-glove sanitization of built-in cabinets, wardrobes, kitchen counters, sanitary ware, and door hardware ready for immediate occupancy."
       }
     ],
     "i18n": {
@@ -3156,6 +3186,36 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "name": "Penyingkiran Serpihan Pembinaan",
             "price": "Dari RM 320",
             "desc": "Pembungkusan dan pelupusan bahan pembinaan, pembungkusan dan serpihan tertinggal. Penyelarasan tong skip jika perlu."
+          },
+          {
+            "name": "Pembersihan Kasar Pembinaan & Pembersihan Tapak",
+            "price": "Atas Sebut Harga",
+            "desc": "Pembersihan berat tapak binaan, pembungkusan serpihan dan penyingkiran sisa kayu antara fasa kerja untuk laluan kemasan seterusnya."
+          },
+          {
+            "name": "Penyedutan Habuk Halus & Pembersihan Udara",
+            "price": "Atas Sebut Harga",
+            "desc": "Vakum HEPA pelbagai pusingan dan lap elektrostatik untuk menangkap habuk simen, gypsum dan plaster mikroskopik dari siling dan corong udara."
+          },
+          {
+            "name": "Penyingkiran Percikan Cat & Sisa Silikon",
+            "price": "Atas Sebut Harga",
+            "desc": "Rawatan pelarut selamat dan pengikisan khusus untuk titisan cat emulsi, percikan semburan cat, kesan silikon dan pelekat masking tape."
+          },
+          {
+            "name": "Pembersihan Terperinci Kaca Tingkap & Rel Aluminium",
+            "price": "Atas Sebut Harga",
+            "desc": "Mengupas filem pelindung kilang, mengikis bintik simen dari kaca, serta menyedut habuk dan membasuh rel gelongsor aluminium."
+          },
+          {
+            "name": "Penyentalan & Penggilapan Mesin Lantai",
+            "price": "Atas Sebut Harga",
+            "desc": "Penyentalan mesin rotary cakera tunggal dengan detergen neutral untuk jubin, SPC, vinil dan epoxy bagi mengembalikan kilauan asal tanpa kusam."
+          },
+          {
+            "name": "Pembersihan Akhir Penyerahan & Masuk Rumah",
+            "price": "Atas Sebut Harga",
+            "desc": "Pembersihan sanitasi terperinci untuk kabinet terbina dalam, almari pakaian, kaunter dapur, perkakasan sanitari dan pemegang pintu sedia didiami."
           }
         ]
       },
@@ -3183,6 +3243,36 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "name": "建筑垃圾清运",
             "price": "从 RM 320 起",
             "desc": "剩余建筑材料、包装与废料的装袋清运。需要时可协调租用垃圾桶。"
+          },
+          {
+            "name": "施工现场粗保洁与清场服务",
+            "price": "依报价",
+            "desc": "重度施工垃圾清运、废料装袋、木料与杂物清理，打通各工序作业面，为下一阶段安装铺平基础。"
+          },
+          {
+            "name": "细粉尘深层清除与空气净化",
+            "price": "依报价",
+            "desc": "工业级 HEPA 多重吸尘与静电除尘抹拭，深度吸除吊顶暗槽、空调风口及墙角残留的极细石膏与水泥粉尘。"
+          },
+          {
+            "name": "油漆飞溅与硅胶残留清除",
+            "price": "依报价",
+            "desc": "采用安全环保溶剂与专用塑料刮刀，温和软化并彻底去除地砖、开关插座与框条上的乳胶漆滴、硅胶胶渍及保护胶带残胶。"
+          },
+          {
+            "name": "窗户玻璃与铝合金滑轨深度精洁",
+            "price": "依报价",
+            "desc": "撕除门窗出厂保护膜、无刮痕刮除玻璃水泥点与标签残胶，并对铝合金推拉滑轨进行深层除砂、吸尘与脱脂清洗。"
+          },
+          {
+            "name": "地板机械深度洗地与抛光护理",
+            "price": "依报价",
+            "desc": "使用单盘旋转重型洗地机配合中性清洁剂，对新铺瓷砖、SPC石塑、乙烯基及环氧地坪进行深层去污与机械抛光，恢复原厂光泽。"
+          },
+          {
+            "name": "交付入住前最终全面精细保洁",
+            "price": "依报价",
+            "desc": "对定制橱柜内膛、衣柜格层、厨房料理台、全套卫浴洁具及门窗五金进行全方位消毒与无尘擦拭，达到即刻拎包入住的高标准。"
           }
         ]
       }
