@@ -194,6 +194,36 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
         "name": "Water Heater & Pump Installation",
         "price": "From RM 180",
         "desc": "Setting up modern instant/storage water heaters and home water pressure booster pumps."
+      },
+      {
+        "name": "Bathroom Plumbing Renovation",
+        "price": "On Quote",
+        "desc": "Full water supply and drain rerouting for bathroom renovations — new pipe layouts, concealed piping and fixture positioning per the new design."
+      },
+      {
+        "name": "Kitchen Plumbing Renovation",
+        "price": "On Quote",
+        "desc": "Sink relocation, wet-kitchen pipework and new water/drain points coordinated with cabinet, countertop and appliance layouts."
+      },
+      {
+        "name": "Pipe Replacement & Rerouting",
+        "price": "On Quote",
+        "desc": "Replacing ageing or leaking supply pipes and rerouting water lines for renovations, with pressure testing after installation."
+      },
+      {
+        "name": "Drainage & Floor Trap Upgrade",
+        "price": "On Quote",
+        "desc": "New floor traps, drain rerouting and additional drainage points for renovated bathrooms, kitchens and balconies."
+      },
+      {
+        "name": "Shower & Rain Shower Installation",
+        "price": "From RM 150",
+        "desc": "Installing shower sets, rain showers, hand bidets and mixers with proper sealing, alignment and flow testing."
+      },
+      {
+        "name": "Renovation Plumbing Work",
+        "price": "On Quote",
+        "desc": "Rough-in and first-fix plumbing for house, kitchen and bathroom renovations — new water points, drainage planning and testing."
       }
     ],
     "i18n": {
@@ -221,6 +251,36 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "name": "Pemasangan Pemanas Air & Pam",
             "price": "Dari RM 180",
             "desc": "Menyediakan pemanas air segera/simpanan moden dan pam penambah tekanan air rumah."
+          },
+          {
+            "name": "Kerja Paip Pengubahsuaian Bilik Mandi",
+            "price": "Atas Sebut Harga",
+            "desc": "Penyusunan semula penuh bekalan air dan saliran untuk pengubahsuaian bilik mandi — susun atur paip baharu, paip tersembunyi dan kedudukan lekapan mengikut reka bentuk baharu."
+          },
+          {
+            "name": "Kerja Paip Pengubahsuaian Dapur",
+            "price": "Atas Sebut Harga",
+            "desc": "Pemindahan singki, kerja paip dapur basah dan titik air/saliran baharu diselaraskan dengan susun atur kabinet, countertop dan perkakas."
+          },
+          {
+            "name": "Penggantian & Penyusunan Semula Paip",
+            "price": "Atas Sebut Harga",
+            "desc": "Menggantikan paip bekalan yang sudah tua atau bocor dan menyusun semula saluran air untuk pengubahsuaian, dengan ujian tekanan selepas pemasangan."
+          },
+          {
+            "name": "Naik Taraf Saliran & Perangkap Lantai",
+            "price": "Atas Sebut Harga",
+            "desc": "Perangkap lantai baharu, penyusunan semula saliran dan titik saliran tambahan untuk bilik mandi, dapur dan balkoni yang diubah suai."
+          },
+          {
+            "name": "Pemasangan Pancuran & Rain Shower",
+            "price": "Dari RM 150",
+            "desc": "Memasang set pancuran, rain shower, bidet tangan dan pengadun dengan pengedap yang betul, penjajaran dan ujian aliran."
+          },
+          {
+            "name": "Kerja Paip Pengubahsuaian",
+            "price": "Atas Sebut Harga",
+            "desc": "Rough-in dan first-fix paip untuk pengubahsuaian rumah, dapur dan bilik mandi — titik air baharu, perancangan saliran dan ujian."
           }
         ]
       },
@@ -248,6 +308,36 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "name": "热水器与水泵安装",
             "price": "从 RM 180 起",
             "desc": "安装现代即热式/储水式热水器与家用增压泵。"
+          },
+          {
+            "name": "卫生间水管翻新",
+            "price": "依报价",
+            "desc": "卫生间翻新时全面重新布置供水与排水管——按新设计规划新管路、暗管与洁具位置。"
+          },
+          {
+            "name": "厨房水管翻新",
+            "price": "依报价",
+            "desc": "水槽移位、湿区厨房管道，以及配合橱柜、台面与电器布局新增供水/排水点位。"
+          },
+          {
+            "name": "水管更换与改管",
+            "price": "依报价",
+            "desc": "更换老化或漏水的供水管，并为翻新工程改走水路，安装后进行压力测试。"
+          },
+          {
+            "name": "排水与地漏升级",
+            "price": "依报价",
+            "desc": "为翻新后的卫生间、厨房与阳台新增地漏、改走排水管并增设排水点位。"
+          },
+          {
+            "name": "花洒与顶喷安装",
+            "price": "从 RM 150 起",
+            "desc": "安装花洒套装、顶喷、手持妇洗器与混水阀，做好密封、校正并进行出水测试。"
+          },
+          {
+            "name": "装修水管工程",
+            "price": "依报价",
+            "desc": "房屋、厨房与卫生间翻新的预埋与一次配管——新增供水点位、排水规划与测试。"
           }
         ]
       }

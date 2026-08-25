@@ -134,6 +134,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
       },
       {
         "name": "Water Heater & Pump Installation"
+      },
+      {
+        "name": "Bathroom Plumbing Renovation"
+      },
+      {
+        "name": "Kitchen Plumbing Renovation"
+      },
+      {
+        "name": "Pipe Replacement & Rerouting"
+      },
+      {
+        "name": "Drainage & Floor Trap Upgrade"
+      },
+      {
+        "name": "Shower & Rain Shower Installation"
+      },
+      {
+        "name": "Renovation Plumbing Work"
       }
     ],
     "warranty": "30-Day Joint Seal & Workmanship Warranty",
@@ -153,6 +171,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
           },
           {
             "name": "Pemasangan Pemanas Air & Pam"
+          },
+          {
+            "name": "Kerja Paip Pengubahsuaian Bilik Mandi"
+          },
+          {
+            "name": "Kerja Paip Pengubahsuaian Dapur"
+          },
+          {
+            "name": "Penggantian & Penyusunan Semula Paip"
+          },
+          {
+            "name": "Naik Taraf Saliran & Perangkap Lantai"
+          },
+          {
+            "name": "Pemasangan Pancuran & Rain Shower"
+          },
+          {
+            "name": "Kerja Paip Pengubahsuaian"
           }
         ],
         "warranty": "Jaminan Pengedap Sendi & Kerja 30 Hari"
@@ -172,6 +208,24 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
           },
           {
             "name": "热水器与水泵安装"
+          },
+          {
+            "name": "卫生间水管翻新"
+          },
+          {
+            "name": "厨房水管翻新"
+          },
+          {
+            "name": "水管更换与改管"
+          },
+          {
+            "name": "排水与地漏升级"
+          },
+          {
+            "name": "花洒与顶喷安装"
+          },
+          {
+            "name": "装修水管工程"
           }
         ],
         "warranty": "30 天接头密封与工艺保修"

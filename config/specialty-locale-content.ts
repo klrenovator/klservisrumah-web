@@ -1976,6 +1976,343 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
     },
   },
 
+  "plumbing/bathroom-plumbing-renovation": {
+    ms: {
+      name: "Kerja Paip Pengubahsuaian Bilik Mandi",
+      tagline: "Penyusunan semula penuh bekalan air dan saliran untuk pengubahsuaian bilik mandi — susun atur paip baharu, paip tersembunyi dan kedudukan lekapan mengikut reka bentuk baharu.",
+      description:
+        "Pengubahsuaian bilik air sering memerlukan kedudukan mangkuk tandas, pancuran atau besen dipindahkan, dan ini bermakna titik bekalan air serta saliran lama tidak lagi sepadan dengan susun atur baharu. Pasukan paip kami merancang laluan paip baharu mengikut reka bentuk, memasang paip tersembunyi dalam dinding atau lantai, menggantikan paip usang jika perlu, dan menjalankan ujian tekanan serta ujian aliran saliran sebelum jubin dipasang. Kerja ini diselaraskan dengan kerja kalis air dan pen jubin untuk mengelakkan kerja semula. Untuk kondominium, kami menyelaraskan waktu kerja dan perlindungan kawasan umum mengikut peraturan pengurusan bangunan.",
+      highlights: [
+        "Susun atur titik air dan saliran baharu mengikut reka bentuk bilik mandi",
+        "Paip tersembunyi dalam dinding atau lantai dengan kemasan kemas",
+        "Ujian tekanan bekalan air dan ujian aliran saliran sebelum pen jubin",
+        "Penyelarasan dengan kerja kalis air dan pen jubin untuk elak kerja semula",
+        "Pematuhan waktu kerja dan perlindungan lantai untuk kondominium",
+      ],
+      process: [
+        { step: "01", title: "Pemeriksaan Tapak", desc: "Kami memeriksa susun atur paip sedia ada dan kedudukan lekapan sanitari mengikut reka bentuk baharu." },
+        { step: "02", title: "Perancangan & Sebut Harga", desc: "Laluan paip baharu dan bahan dicadangkan, dengan sebut harga yang jelas sebelum kerja bermula." },
+        { step: "03", title: "Pemasangan Kasar", desc: "Paip bekalan dan saliran dipasang mengikut pelan, termasuk paip tersembunyi dan penembusan lantai jika perlu." },
+        { step: "04", title: "Ujian & Serahan", desc: "Ujian tekanan dan aliran saliran dijalankan, dan kedudukan paip direkodkan sebelum kerja pen jubin bermula." },
+      ],
+      faqs: [
+        { q: "Bilakah kerja paip pengubahsuaian bilik mandi diperlukan?", a: "Apabila kedudukan tandas, pancuran atau besen ditukar, paip lama perlu diganti, atau titik baharu seperti tab mandi atau bidet ditambah. Jika kedudukan tidak berubah, biasanya hanya penggantian lekapan diperlukan." },
+        { q: "Berapa kos kerja paip pengubahsuaian bilik mandi?", a: "Kos bergantung pada bilangan titik yang dipindahkan, jenis paip dan akses dinding atau lantai. Sebut harga terperinci diberikan selepas pemeriksaan tapak, dan skop ini dinilai atas sebut harga." },
+        { q: "Berapa lama kerja paip mengambil masa?", a: "Pemasangan kasar untuk satu bilik mandi biasanya mengambil masa beberapa hari bergantung pada skop, diikuti kerja kalis air dan pen jubin." },
+        { q: "Adakah anda mengendalikan kondominium?", a: "Ya. Kami biasa bekerja di kondominium dan boleh menyelaraskan permit kerja, waktu kerja serta perlindungan lif mengikut peraturan pengurusan bangunan." },
+      ],
+      metaTitle: "Kerja Paip Pengubahsuaian Bilik Mandi KL & Selangor",
+      metaDesc: "Penyusunan semula bekalan air dan saliran untuk pengubahsuaian bilik mandi di KL & Selangor. Paip tersembunyi, ujian tekanan dan sebut harga telus.",
+    },
+    zh: {
+      name: "卫生间水管翻新",
+      tagline: "卫生间翻新时全面重新布置供水与排水管——按新设计规划新管路、暗管与洁具位置。",
+      description:
+        "卫生间翻新时，马桶、花洒或洗手盆的位置经常需要移动，旧的供水与排水点位就不再符合新布局。我们的水管团队会按设计规划新管路，在墙内或地面敷设暗管，必要时更换老化管道，并在贴砖前完成水压与排水流量测试。施工会与防水和贴砖工序紧密协调，避免返工。公寓项目会配合管理处规定安排施工时段与公共区域保护。",
+      highlights: [
+        "按新设计重新布置供水与排水点位",
+        "墙面或地面暗管敷设，收口整齐",
+        "贴砖前完成水压与排水流量测试",
+        "与防水和贴砖工序协调，避免返工",
+        "公寓施工可配合管理处时间与保护要求",
+      ],
+      process: [
+        { step: "01", title: "现场勘查", desc: "检查现有管路布局，并按新设计确认洁具位置。" },
+        { step: "02", title: "方案与报价", desc: "提出新管线路径与材料方案，并在开工前给出清晰报价。" },
+        { step: "03", title: "预埋配管", desc: "按方案敷设供水与排水管，包括暗管与必要的楼板穿孔。" },
+        { step: "04", title: "测试与交付", desc: "进行水压与排水流量测试，记录管路位置，再交给贴砖工序。" },
+      ],
+      faqs: [
+        { q: "什么时候需要卫生间水管翻新？", a: "当马桶、花洒或洗手盆移位，需要更换老化管道，或新增浴缸、坐浴盆等洁具时。若位置不变，通常只需更换洁具。" },
+        { q: "卫生间水管翻新多少钱？", a: "费用取决于移位的点位数量、管道类型以及墙面和地面的施工条件。现场勘查后提供详细报价，按报价计算。" },
+        { q: "水管工程需要多久？", a: "一间卫生间的预埋配管通常需要几天，视范围而定，之后再进行防水与贴砖。" },
+        { q: "公寓可以施工吗？", a: "可以。我们熟悉公寓施工流程，可协助办理施工许可、安排施工时段并做好电梯保护。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪卫生间水管翻新",
+      metaDesc: "吉隆坡与雪兰莪卫生间翻新供水与排水改管。暗管敷设、水压测试、透明报价，配合防水与贴砖工序。",
+    },
+  },
+  "plumbing/kitchen-plumbing-renovation": {
+    ms: {
+      name: "Kerja Paip Pengubahsuaian Dapur",
+      tagline: "Pemindahan singki, kerja paip dapur basah dan titik air/saliran baharu diselaraskan dengan susun atur kabinet, countertop dan perkakas.",
+      description:
+        "Pengubahsuaian dapur sering melibatkan pemindahan singki, penambahan mesin basuh pinggan atau penapis air, atau penukaran dapur kering kepada dapur basah. Jurupaip kami menyusun semula bekalan air dan saliran supaya sepadan dengan susun atur kabinet dan countertop baharu, memasang injap penutup di setiap titik untuk memudahkan penyelenggaraan, dan memastikan kecerunan saliran yang betul supaya air tidak bertakung atau berbau. Kedudukan titik diselaraskan dengan pasukan perabot supaya pemasangan kabinet kemas. Skop dan sebut harga disahkan sebelum kerja bermula.",
+      highlights: [
+        "Penyusunan semula titik air dan saliran mengikut susun atur kabinet baharu",
+        "Injap penutup di setiap titik untuk penyelenggaraan mudah",
+        "Kecerunan saliran yang betul untuk elak air bertakung dan bau",
+        "Penyelarasan dengan kerja kabinet dan countertop",
+        "Sesuai untuk dapur basah, dapur kering dan island dapur",
+      ],
+      process: [
+        { step: "01", title: "Semakan Susun Atur", desc: "Kami menyemak kedudukan singki, penapis air, mesin basuh pinggan dan perkakas mengikut reka bentuk dapur." },
+        { step: "02", title: "Pelan Penyusunan Semula", desc: "Laluan bekalan air dan saliran dicadangkan, bersama sebut harga sebelum kerja bermula." },
+        { step: "03", title: "Pemasangan", desc: "Paip disusun semula, injap dan sifon dipasang, dan penembusan ditutup rapi." },
+        { step: "04", title: "Ujian & Serahan", desc: "Ujian aliran air dan kebocoran saliran dijalankan, dan tekanan air disemak sebelum serahan." },
+      ],
+      faqs: [
+        { q: "Bolehkah kedudukan singki dipindahkan ke mana sahaja?", a: "Boleh dipindahkan, tetapi ia bergantung pada laluan saliran dan kecerunan. Kami menyemak kebolehlaksanaan terlebih dahulu dan mencadangkan kedudukan yang paling selamat." },
+        { q: "Adakah anda memasang penapis air dan mesin basuh pinggan?", a: "Ya, kami menambah titik bekalan dan paip untuk penapis air atau mesin basuh pinggan, diselaraskan dengan susun atur kabinet." },
+        { q: "Apakah perbezaan kerja paip dapur basah dan dapur kering?", a: "Dapur basah memerlukan lebih banyak titik saliran, perangkap lantai dan kalis air. Kami merancang paip mengikut penggunaan sebenar dapur." },
+        { q: "Adakah sebut harga diberikan sebelum kerja bermula?", a: "Ya. Skop dan sebut harga disahkan sebelum kerja bermula dan tidak berubah tanpa persetujuan anda." },
+      ],
+      metaTitle: "Kerja Paip Pengubahsuaian Dapur KL & Selangor",
+      metaDesc: "Pemindahan singki dan kerja paip dapur basah atau kering di KL & Selangor, diselaraskan dengan kabinet dan countertop. Sebut harga telus sebelum kerja.",
+    },
+    zh: {
+      name: "厨房水管翻新",
+      tagline: "水槽移位、湿区厨房管道，以及配合橱柜、台面与电器布局新增供水/排水点位。",
+      description:
+        "厨房翻新常涉及水槽移位、加装洗碗机或净水器，或把干区厨房改为湿区厨房。我们的水管工会按新的橱柜与台面布局重新布置供水与排水管，在每个点位安装截止阀方便日后维修，并确保排水坡度正确，避免积水或异味。点位位置会与橱柜团队协调，确保安装收口整齐。范围与报价在开工前确认。",
+      highlights: [
+        "按新橱柜布局重新布置供水与排水点位",
+        "每个点位配置截止阀，方便日后维修",
+        "确保排水坡度，避免积水与异味",
+        "与橱柜及台面工程协调点位位置",
+        "适用于湿区厨房、干区厨房与中岛",
+      ],
+      process: [
+        { step: "01", title: "布局确认", desc: "按厨房设计确认水槽、净水器、洗碗机与电器位置。" },
+        { step: "02", title: "改管方案", desc: "提出供水与排水路径方案，并在开工前给出报价。" },
+        { step: "03", title: "安装施工", desc: "重新布管，安装阀门、地漏与虹吸管，穿孔处密封整齐。" },
+        { step: "04", title: "测试与交付", desc: "进行通水与排水漏水测试，并检查水压后交付。" },
+      ],
+      faqs: [
+        { q: "水槽可以移到任何位置吗？", a: "可以移位，但取决于排水路径与坡度。我们会先评估可行性，再给出最安全的方案。" },
+        { q: "可以顺便安装净水器与洗碗机吗？", a: "可以。我们会为净水器或洗碗机预留供水点位与管道，并配合橱柜布局。" },
+        { q: "湿区厨房与干区厨房的水管有何不同？", a: "湿区厨房需要更多排水点位、地漏与防水。我们会按实际使用规划管路。" },
+        { q: "开工前会提供报价吗？", a: "会。范围与报价在开工前确认，任何变更都会先征得您的同意。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪厨房水管翻新工程",
+      metaDesc: "吉隆坡与雪兰莪水槽移位与湿区/干区厨房水管工程，配合橱柜与台面布局，施工前透明报价。",
+    },
+  },
+  "plumbing/pipe-replacement-and-rerouting": {
+    ms: {
+      name: "Penggantian & Penyusunan Semula Paip",
+      tagline: "Menggantikan paip bekalan yang sudah tua atau bocor dan menyusun semula saluran air untuk pengubahsuaian, dengan ujian tekanan selepas pemasangan.",
+      description:
+        "Paip besi bergalvani lama atau paip PVC yang rosak boleh menyebabkan tekanan air rendah, air keruh dan kebocoran tersembunyi di dalam dinding. Kami memeriksa paip sedia ada, mengenal pasti bahagian yang rosak, dan menggantikannya dengan paip PVC, ABS, tembaga atau keluli tahan karat bertauliah SIRIM mengikut keperluan. Semasa pengubahsuaian, kami juga menyusun semula saluran air supaya sepadan dengan susun atur baharu. Setiap sambungan dikedap dan diuji dengan tekanan air sebelum ditutup semula. Skop kerja diterangkan dan dipersetujui sebelum bermula.",
+      highlights: [
+        "Penggantian paip besi bergalvani lama atau paip PVC yang rosak",
+        "Paip gantian bertauliah SIRIM: PVC, ABS, tembaga atau keluli tahan karat",
+        "Penyusunan semula saluran air mengikut susun atur pengubahsuaian",
+        "Ujian tekanan sebelum dinding atau lantai ditutup semula",
+        "Kawasan kerja dibersihkan selepas siap",
+      ],
+      process: [
+        { step: "01", title: "Pemeriksaan", desc: "Kami mengenal pasti jenis paip, bahagian yang rosak dan injap yang terlibat." },
+        { step: "02", title: "Cadangan Penggantian", desc: "Skop, bahan paip dan sebut harga dicadangkan sebelum kerja bermula." },
+        { step: "03", title: "Penggantian & Penyusunan Semula", desc: "Bekalan air ditutup semasa kerja, paip lama diganti dan saluran disusun semula mengikut pelan." },
+        { step: "04", title: "Ujian Tekanan", desc: "Ujian tekanan dan semakan aliran dijalankan sebelum kemasan dinding atau lantai dipulihkan." },
+      ],
+      faqs: [
+        { q: "Apakah tanda paip perlu diganti?", a: "Tanda biasa termasuk air keruh, tekanan air semakin rendah, kebocoran berulang, atau paip besi bergalvani yang sangat lama. Kami memeriksa dan mengesahkan terlebih dahulu." },
+        { q: "Apakah jenis paip yang digunakan?", a: "Kami menggunakan paip PVC, ABS, tembaga atau keluli tahan karat bertauliah SIRIM mengikut keperluan saluran dan bajet." },
+        { q: "Adakah bekalan air akan terputus semasa kerja?", a: "Ya, semasa bahagian paip diganti. Kami memaklumkan jadual pemotongan terlebih dahulu." },
+        { q: "Perlukah dinding dipecahkan?", a: "Hanya pada bahagian paip yang rosak. Kami mengesan titik kebocoran dahulu untuk mengelakkan pemecahan yang tidak perlu." },
+      ],
+      metaTitle: "Penggantian & Penyusunan Semula Paip KL & Selangor",
+      metaDesc: "Ganti paip lama atau bocor dan susun semula saluran air untuk pengubahsuaian di KL & Selangor. Paip bertauliah SIRIM, ujian tekanan, sebut harga telus.",
+    },
+    zh: {
+      name: "水管更换与改管",
+      tagline: "更换老化或漏水的供水管，并为翻新工程改走水路，安装后进行压力测试。",
+      description:
+        "老化的镀锌铁管或破损的 PVC 水管会导致水压变低、水质浑浊以及墙内暗漏。我们会检查现有管路，确认受损部位，并按需要更换为 SIRIM 认证的 PVC、ABS、铜管或不锈钢管。翻新时也可以重新改走水路，以配合新的布局。每个接头都会密封并在封闭前完成压力测试。范围会在开工前说明并确认。",
+      highlights: [
+        "更换老化镀锌铁管或破损 PVC 水管",
+        "采用 SIRIM 认证 PVC、ABS、铜管或不锈钢管",
+        "按翻新布局重新改走供水线路",
+        "封槽前完成压力测试",
+        "完工后清理施工区域",
+      ],
+      process: [
+        { step: "01", title: "检查", desc: "确认水管类型、受损部位与相关阀门。" },
+        { step: "02", title: "更换方案", desc: "提出施工范围、管材与报价，并在开工前确认。" },
+        { step: "03", title: "更换与改管", desc: "施工期间关闭供水，更换旧管并按方案改走线路。" },
+        { step: "04", title: "压力测试", desc: "进行压力测试并检查水流，再恢复墙面或地面。" },
+      ],
+      faqs: [
+        { q: "什么情况下需要更换水管？", a: "常见迹象包括水质浑浊、水压持续下降、反复漏水，或年代很久的镀锌铁管。我们会先检查确认。" },
+        { q: "你们使用什么水管？", a: "按水路需求与预算，使用 SIRIM 认证的 PVC、ABS、铜管或不锈钢管。" },
+        { q: "施工时会停水吗？", a: "更换管段时需要停水。我们会提前告知停水时间安排。" },
+        { q: "需要砸墙吗？", a: "只在受损管段所在位置局部打开。我们会先定位漏点，避免不必要的拆除。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪水管更换与改管",
+      metaDesc: "吉隆坡与雪兰莪更换老化或漏水水管，并为翻新改走水路。SIRIM 认证管材，压力测试，透明报价。",
+    },
+  },
+  "plumbing/drainage-and-floor-trap-upgrade": {
+    ms: {
+      name: "Naik Taraf Saliran & Perangkap Lantai",
+      tagline: "Perangkap lantai baharu, penyusunan semula saliran dan titik saliran tambahan untuk bilik mandi, dapur dan balkoni yang diubah suai.",
+      description:
+        "Semasa pengubahsuaian, sistem saliran perlu disesuaikan dengan susun atur lantai baharu: kedudukan perangkap lantai, kecerunan dan titik tambahan untuk balkoni atau dapur. Kami memasang atau menggantikan perangkap lantai dengan kedap air yang betul untuk mencegah bau, menyusun semula paip saliran dengan kecerunan yang tepat, dan menambah titik saliran baharu jika diperlukan. Semua saluran saliran diuji aliran dan kebocoran sebelum kemasan lantai dipasang. Sesuai untuk bilik mandi, dapur, balkoni dan kawasan bumbung.",
+      highlights: [
+        "Pemasangan atau penggantian perangkap lantai dengan kedap air yang betul",
+        "Kecerunan saliran yang betul untuk aliran lancar",
+        "Titik saliran tambahan untuk balkoni, dapur dan bilik mandi",
+        "Ujian aliran dan kebocoran sebelum kemasan lantai",
+        "Penyelarasan dengan kerja kalis air dan pen jubin",
+      ],
+      process: [
+        { step: "01", title: "Pemeriksaan", desc: "Kami memeriksa kedudukan perangkap lantai sedia ada, laluan saliran dan kecerunan lantai baharu." },
+        { step: "02", title: "Pelan & Sebut Harga", desc: "Titik saliran dan laluan baharu dicadangkan bersama sebut harga." },
+        { step: "03", title: "Pemasangan", desc: "Perangkap lantai dipasang, saliran disusun semula dan penembusan ditutup rapi." },
+        { step: "04", title: "Ujian Aliran", desc: "Ujian aliran dan kebocoran dijalankan sebelum kerja pen jubin bermula." },
+      ],
+      faqs: [
+        { q: "Mengapa bilik mandi berbau dari saliran?", a: "Bau biasanya berpunca daripada kedap air perangkap lantai yang kering atau rosak. Kami memeriksa perangkap lantai dan menggantikannya dengan model kedap air yang betul jika perlu." },
+        { q: "Bolehkah titik saliran ditambah semasa pengubahsuaian?", a: "Ya, kami boleh menambah titik baharu untuk balkoni, dapur atau bilik mandi bergantung pada kebolehlaksanaan laluan saliran." },
+        { q: "Bagaimana anda memastikan saliran tidak perlahan?", a: "Kami menetapkan kecerunan yang betul dan menjalankan ujian aliran sebelum menyerahkan kerja kepada proses seterusnya." },
+        { q: "Adakah kerja ini berasingan daripada kalis air?", a: "Ya, saliran dan kalis air adalah skop berasingan tetapi boleh dijadualkan bersama. Sebut harga menyatakan skop dengan jelas." },
+      ],
+      metaTitle: "Naik Taraf Saliran & Perangkap Lantai KL & Selangor",
+      metaDesc: "Pasang atau ganti perangkap lantai dan susun semula saliran untuk bilik mandi, dapur dan balkoni di KL & Selangor. Ujian aliran, sebut harga telus.",
+    },
+    zh: {
+      name: "排水与地漏升级",
+      tagline: "为翻新后的卫生间、厨房与阳台新增地漏、改走排水管并增设排水点位。",
+      description:
+        "翻新时，排水系统需要配合新的地面布局调整：新的地漏位置、排水坡度，以及阳台或厨房的额外点位。我们会安装或更换地漏，确保水封防臭，按正确坡度重新布置排水管，并按需新增排水点位。所有排水管线会在地面完成前进行通水与漏水测试。适用于卫生间、厨房、阳台与屋面区域。",
+      highlights: [
+        "安装或更换地漏，确保水封防臭",
+        "正确排水坡度，保证排水顺畅",
+        "为阳台、厨房与卫生间增设排水点位",
+        "地面完成前进行通水与漏水测试",
+        "与防水及贴砖工序协调",
+      ],
+      process: [
+        { step: "01", title: "检查", desc: "检查现有地漏位置、排水路径与新地面坡度。" },
+        { step: "02", title: "方案与报价", desc: "提出新增排水点位与路径方案，并给出报价。" },
+        { step: "03", title: "安装", desc: "安装地漏、改走排水管，并将穿孔处密封整齐。" },
+        { step: "04", title: "通水测试", desc: "进行通水与漏水测试后，再交给贴砖工序。" },
+      ],
+      faqs: [
+        { q: "为什么卫生间总有异味？", a: "异味常来自地漏水封干涸或损坏。我们会检查地漏，必要时更换为合格水封款式。" },
+        { q: "翻新时可以新增排水点吗？", a: "可以。我们会根据排水路径的可行性，为阳台、厨房或卫生间新增点位。" },
+        { q: "如何保证排水不慢？", a: "我们会设置正确坡度，并在交付下一工序前做通水测试。" },
+        { q: "排水工程和防水分开报价吗？", a: "是的，排水与防水是不同范围，但可以安排同步施工，报价会逐项列明。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪排水与地漏升级",
+      metaDesc: "吉隆坡与雪兰莪翻新卫生间、厨房与阳台的地漏安装与排水改管。通水测试、防臭水封、透明报价。",
+    },
+  },
+  "plumbing/shower-and-rain-shower-installation": {
+    ms: {
+      name: "Pemasangan Pancuran & Rain Shower",
+      tagline: "Memasang set pancuran, rain shower, bidet tangan dan pengadun dengan pengedap yang betul, penjajaran dan ujian aliran.",
+      description:
+        "Kami memasang set pancuran, rain shower siling atau dinding, bidet tangan dan pengadun mandi untuk bilik mandi baharu atau kerja penggantian. Pemasangan termasuk semakan titik bekalan air dan tekanan air, pemasangan penyambung dinding yang kukuh, pengedap yang betul untuk mencegah kebocoran ke dalam dinding, penjajaran, dan ujian aliran. Jika tekanan air rendah, kami menasihati penyelesaian yang sesuai. Lekapan yang dibeli sendiri oleh pelanggan juga boleh dipasang. Perkhidmatan ini menggunakan harga pemasangan lekapan sedia ada bermula dari RM 150, dengan harga akhir bergantung pada jenis lekapan dan keadaan paip.",
+      highlights: [
+        "Pemasangan set pancuran, rain shower siling dan dinding",
+        "Bidet tangan dan pengadun mandi dipasang kemas",
+        "Pengedap yang betul untuk elak kebocoran dalam dinding",
+        "Semakan tekanan air dan ujian aliran sebelum serahan",
+        "Boleh pasang lekapan yang dibeli sendiri oleh pelanggan",
+      ],
+      process: [
+        { step: "01", title: "Pemeriksaan", desc: "Kami memeriksa kedudukan titik bekalan air, tekanan air dan jenis lekapan yang akan dipasang." },
+        { step: "02", title: "Sebut Harga", desc: "Harga mengikut jenis lekapan dan keadaan paip diberikan sebelum pemasangan." },
+        { step: "03", title: "Pemasangan", desc: "Penyambung dipasang kukuh, paip disambung dan pengedap disapu dengan betul." },
+        { step: "04", title: "Ujian", desc: "Ujian aliran dan kebocoran dijalankan, dan kawasan kerja dibersihkan." },
+      ],
+      faqs: [
+        { q: "Berapa kos pemasangan pancuran?", a: "Harga bermula dari RM 150 selaras dengan pemasangan lekapan lain yang diterbitkan. Harga akhir bergantung pada jenis lekapan dan keadaan paip." },
+        { q: "Bolehkah anda pasang set rain shower yang saya beli sendiri?", a: "Ya, kami boleh memasang lekapan yang dibeli pelanggan selagi kelengkapan lengkap dan sesuai dengan paip sedia ada." },
+        { q: "Adakah rain shower siling sesuai untuk bilik mandi saya?", a: "Kami menyemak ketinggian siling, tekanan air dan titik bekalan terlebih dahulu sebelum mencadangkan model yang sesuai." },
+        { q: "Berapa lama pemasangan mengambil masa?", a: "Pemasangan standard biasanya siap dalam hari yang sama, bergantung pada skop kerja." },
+      ],
+      metaTitle: "Pemasangan Pancuran & Rain Shower KL & Selangor | Dari RM150",
+      metaDesc: "Pasang set pancuran, rain shower dan bidet di KL & Selangor. Pengedap betul, ujian aliran, harga pemasangan lekapan dari RM 150.",
+    },
+    zh: {
+      name: "花洒与顶喷安装",
+      tagline: "安装花洒套装、顶喷、手持妇洗器与混水阀，做好密封、校正并进行出水测试。",
+      description:
+        "我们为新卫生间或翻新更换工程安装花洒套装、天花板或墙装顶喷、手持妇洗器与浴缸混水阀。安装包括检查供水点位与水压、牢固安装墙面固定件、妥善密封避免渗入墙体、校正位置，并进行出水测试。若水压偏低，我们会给出合适的建议。客户自购的洁具也可以安装。此服务与其他洁具安装共用从 RM 150 起的起步价，最终价格视洁具类型与水管状况而定。",
+      highlights: [
+        "安装花洒套装、天花板与墙装顶喷",
+        "手持妇洗器与浴缸混水阀整齐安装",
+        "妥善密封，避免墙体渗水",
+        "交付前检查水压并进行出水测试",
+        "可安装客户自购洁具",
+      ],
+      process: [
+        { step: "01", title: "检查", desc: "检查供水点位位置、水压与待安装洁具类型。" },
+        { step: "02", title: "报价", desc: "按洁具类型与水管状况在安装前给出报价。" },
+        { step: "03", title: "安装", desc: "固定件安装牢固，接管并完成密封。" },
+        { step: "04", title: "测试", desc: "进行出水与漏水测试，并清理施工区域。" },
+      ],
+      faqs: [
+        { q: "花洒安装多少钱？", a: "从 RM 150 起，与其他已公布的洁具安装一致；最终价格视洁具类型与水管状况而定。" },
+        { q: "我自己买的顶喷套装可以安装吗？", a: "可以。只要配件齐全并与现有水管匹配，我们可安装客户自购洁具。" },
+        { q: "我的卫生间适合装天花板顶喷吗？", a: "我们会先检查天花高度、水压与供水点位，再推荐合适的款式。" },
+        { q: "安装需要多长时间？", a: "标准安装通常当天完成，具体视施工范围而定。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪花洒与顶喷安装 | RM150起",
+      metaDesc: "吉隆坡与雪兰莪安装花洒、顶喷与妇洗器。密封防漏、出水测试，洁具安装从 RM 150 起。",
+    },
+  },
+  "plumbing/renovation-plumbing-work": {
+    ms: {
+      name: "Kerja Paip Pengubahsuaian",
+      tagline: "Rough-in dan first-fix paip untuk pengubahsuaian rumah, dapur dan bilik mandi — titik air baharu, perancangan saliran dan ujian.",
+      description:
+        "Untuk projek pengubahsuaian rumah penuh, dapur atau bilik mandi, kerja paip perlu disiapkan pada peringkat awal rough-in: merancang titik air baharu, laluan saliran dan kedudukan pemanas air atau pam. Pasukan kami berkoordinasi dengan pengurus projek pengubahsuaian dan tukang lain seperti elektrik, kalis air dan jubin supaya paip dipasang mengikut pelan dan diuji sebelum siling serta dinding ditutup. Ini mengelakkan pemecahan semula dan kerja berulang pada masa depan. Skop termasuk ujian tekanan, ujian aliran saliran dan rekod kedudukan paip untuk penyelenggaraan akan datang. Skop ini dinilai atas sebut harga selepas pemeriksaan tapak.",
+      highlights: [
+        "Rough-in paip air dan saliran mengikut jadual pengubahsuaian",
+        "Penyelarasan dengan pasukan elektrik, kalis air dan jubin",
+        "Ujian tekanan dan aliran sebelum siling atau dinding ditutup",
+        "Rekod kedudukan paip untuk penyelenggaraan masa depan",
+        "Sesuai untuk pengubahsuaian rumah, dapur dan bilik mandi",
+      ],
+      process: [
+        { step: "01", title: "Penyelarasan", desc: "Kami menyertai penyelarasan tapak dengan pasukan pengubahsuaian dan mengesahkan skop paip." },
+        { step: "02", title: "Pemasangan Kasar", desc: "Paip bekalan dan saliran dipasang mengikut lukisan dan kedudukan yang dipersetujui." },
+        { step: "03", title: "Ujian", desc: "Ujian tekanan dan aliran saliran dijalankan sebelum kerja penutupan." },
+        { step: "04", title: "Serahan", desc: "Rekod kedudukan paip diserahkan untuk kerja peringkat seterusnya." },
+      ],
+      faqs: [
+        { q: "Pada peringkat manakah kerja paip pengubahsuaian bermula?", a: "Pada peringkat awal rough-in, selepas kerja hacking dan sebelum kerja pendawaian elektrik, kalis air dan pen jubin." },
+        { q: "Adakah anda berkoordinasi dengan kontraktor pengubahsuaian utama?", a: "Ya, kami boleh bekerja terus dengan kontraktor utama atau pemilik rumah dan menyertai penyelarasan tapak." },
+        { q: "Adakah anda menyediakan rekod kedudukan paip?", a: "Ya, kami menyediakan rekod asas kedudukan paip dan keputusan ujian untuk penyelenggaraan masa depan." },
+        { q: "Bagaimana skop ini dinilai?", a: "Skop ini dinilai atas sebut harga selepas pemeriksaan tapak dan pengesahan skop paip." },
+      ],
+      metaTitle: "Kerja Paip Pengubahsuaian Rumah KL & Selangor",
+      metaDesc: "Rough-in dan first-fix paip untuk pengubahsuaian rumah, dapur dan bilik mandi di KL & Selangor. Ujian tekanan, koordinasi tapak, sebut harga telus.",
+    },
+    zh: {
+      name: "装修水管工程",
+      tagline: "房屋、厨房与卫生间翻新的预埋与一次配管——新增供水点位、排水规划与测试。",
+      description:
+        "全屋、厨房或卫生间翻新项目中，水管工程必须在早期预埋阶段完成：规划新的供水点位、排水路径，以及热水器与水泵的位置。我们的团队会与装修项目经理及其他工种（电工、防水、贴砖）协调，确保管路按计划安装并在封板前完成测试，避免日后凿墙与返工。范围包括水压测试、排水通水测试，以及管路位置记录，方便日后维修。此范围在现场勘查后按报价计算。",
+      highlights: [
+        "按翻新进度进行供水与排水预埋",
+        "与电工、防水与贴砖团队协调",
+        "封板前完成水压与通水测试",
+        "提供管路位置记录，方便日后维修",
+        "适用于房屋、厨房与卫生间翻新",
+      ],
+      process: [
+        { step: "01", title: "协调", desc: "与装修团队现场协调，确认水管施工范围。" },
+        { step: "02", title: "预埋配管", desc: "按图纸与约定位置敷设供水与排水管。" },
+        { step: "03", title: "测试", desc: "封闭前进行水压与排水通水测试。" },
+        { step: "04", title: "交付", desc: "移交管路位置记录，供下一阶段施工使用。" },
+      ],
+      faqs: [
+        { q: "装修水管工程应在哪个阶段开始？", a: "在早期预埋阶段，即拆改之后、电路布线、防水与贴砖之前。" },
+        { q: "可以与装修总包协调吗？", a: "可以。我们能直接与总包或业主对接，并参与工地协调。" },
+        { q: "会提供管路位置记录吗？", a: "会。我们提供基本的管路位置与测试记录，方便日后维修。" },
+        { q: "这个范围如何计价？", a: "我们会在现场勘查并确认水管施工范围后，按报价计算费用。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪装修水管工程服务",
+      metaDesc: "吉隆坡与雪兰莪房屋、厨房与卫生间翻新的预埋配管与一次配管。水压测试、工地协调、透明报价。",
+    },
+  },
+
   /* ── ELECTRICAL ───────────────────────────────────────────────────────── */
   "electrical/new-power-point-and-switch-installation": {
     ms: {
