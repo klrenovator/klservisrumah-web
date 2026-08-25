@@ -256,6 +256,12 @@ All prices are the published starting prices shown on the live service pages. Fi
 - TV Console & Feature Wall — From RM 1,500
 - Study Desk & Home Office — From RM 1,100
 - Shoe Cabinet & Entry Storage — From RM 1,800
+- Walk-in Wardrobe & Closet System — On Quote
+- Vanity Cabinet & Dressing Table — On Quote
+- Storage Cabinet & Display Shelving — On Quote
+- Feature Wall & Wall Panelling — On Quote
+- Dining Bench & Banquette Seating — On Quote
+- Wardrobe & Cabinet Repair — On Quote
 - Cost guide: https://www.klservisrumah.my/services/carpentry/cost
 
 ### Door Repair & Installation
@@ -847,6 +853,6 @@ KL Servis Rumah publishes fair, upfront pricing benchmarked against the Klang Va
 - Sitemap: https://www.klservisrumah.my/sitemap.xml
 
 ## Scale
-- 31 services · 191 sub-services
+- 31 services · 197 sub-services
 - 37 area pages · 86 problem pages · 229 articles
-- 4,804 indexable pages listed in the sitemap
+- 4,822 indexable pages listed in the sitemap

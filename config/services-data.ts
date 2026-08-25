@@ -2199,7 +2199,13 @@ export const servicesData: Record<string, ServiceDetail> = {
       { name: "Built-in Wardrobe", price: "From RM 320 / linier ft", desc: "Floor-to-ceiling wardrobe with internal drawers, shelves, hanging rails, and mirror or laminate doors." },
       { name: "TV Console & Feature Wall", price: "From RM 1,500", desc: "Custom TV console with storage drawers, floating shelves, cable management, and matching feature wall panelling." },
       { name: "Study Desk & Home Office", price: "From RM 1,100", desc: "Built-in study desk with cable management, drawers, overhead cabinets, and matching shelving." },
-      { name: "Shoe Cabinet & Entry Storage", price: "From RM 1,800", desc: "Slim depth shoe cabinet with tilt-out drawers, sitting bench, mirror, and integrated lighting." }
+      { name: "Shoe Cabinet & Entry Storage", price: "From RM 1,800", desc: "Slim depth shoe cabinet with tilt-out drawers, sitting bench, mirror, and integrated lighting." },
+      { name: "Walk-in Wardrobe & Closet System", price: "On Quote", desc: "Floor-to-ceiling walk-in wardrobe system with hanging zones, drawers, island units and internal lighting options." },
+      { name: "Vanity Cabinet & Dressing Table", price: "On Quote", desc: "Custom vanity cabinet with sink top, drawers, mirror and lighting, or a bedroom dressing table with storage." },
+      { name: "Storage Cabinet & Display Shelving", price: "On Quote", desc: "Floor-to-ceiling storage cabinets, display shelving and feature storage walls for living rooms, hallways and home offices." },
+      { name: "Feature Wall & Wall Panelling", price: "On Quote", desc: "Fluted, slat and laminate wall panelling with integrated shelving and lighting for living rooms, bedrooms and TV walls." },
+      { name: "Dining Bench & Banquette Seating", price: "On Quote", desc: "Custom dining benches, banquette seating and window seats with built-in storage, upholstered or timber-finished." },
+      { name: "Wardrobe & Cabinet Repair", price: "On Quote", desc: "Door realignment, hinge and runner replacement, sagging shelf repair and cabinet refacing to restore existing built-ins." }
     ],
     process: [
       { step: "01", title: "Site Visit & Measurement", desc: "We visit your home, take laser measurements, photograph the space, and capture your storage needs, style preferences, and budget." },
@@ -2217,7 +2223,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     heroImage: "/hero-carpentry.svg",
     metaTitle: "Custom Carpentry & Built-in Furniture KL & Selangor",
     metaDesc: "Custom built-in wardrobes, TV consoles, study desks, feature walls in KL & Selangor. In-house workshop, Häfele/Blum hardware. From RM300/linierft. 3D design included.",
-    aioSummary: "KL Servis Rumah designs and builds custom carpentry across KL & Selangor. Built-in wardrobes, TV consoles, study desks, feature walls, shoe cabinets, display shelving. 18mm plywood carcasses, Häfele/Blum hardware, premium finishes. In-house workshop, 3D design render, itemized quotation.",
+    aioSummary: "KL Servis Rumah designs and builds custom carpentry across KL & Selangor. Built-in and walk-in wardrobes, TV consoles, vanity cabinets, feature walls and wall panelling, dining benches, shoe cabinets, display shelving and cabinet repair. 18mm plywood carcasses, Häfele/Blum hardware, premium finishes. In-house workshop, 3D design render, itemized quotation.",
     warranty: "5-Year Cabinet Structure Warranty",
     i18n: {
       ms: {
@@ -2236,7 +2242,13 @@ export const servicesData: Record<string, ServiceDetail> = {
           { name: "Almari Pakaian Tanam", price: "Dari RM 320 / kaki linier", desc: "Almari pakaian lantai-ke-siling dengan laci dalaman, para, rel gantungan dan pintu cermin atau laminate." },
           { name: "Konsol TV & Dinding Feature", price: "Dari RM 1,500", desc: "Konsol TV kustom dengan laci storan, para terapung, pengurusan kabel dan panel dinding feature sepadan." },
           { name: "Meja Belajar & Pejabat Rumah", price: "Dari RM 1,100", desc: "Meja belajar tanam dengan pengurusan kabel, laci, kabinet atas dan rak sepadan." },
-          { name: "Kabinet Kasut & Storan Pintu Masuk", price: "Dari RM 1,800", desc: "Kabinet kasut kedalaman nipis dengan laci tilt-out, bangku duduk, cermin dan pencahayaan bersepadu." }
+          { name: "Kabinet Kasut & Storan Pintu Masuk", price: "Dari RM 1,800", desc: "Kabinet kasut kedalaman nipis dengan laci tilt-out, bangku duduk, cermin dan pencahayaan bersepadu." },
+          { name: "Walk-in Wardrobe & Sistem Closet", price: "Atas Sebut Harga", desc: "Sistem walk-in wardrobe lantai-ke-siling dengan zon gantungan, laci, unit pulau dan pilihan pencahayaan dalaman." },
+          { name: "Kabinet Vanity & Meja Solek", price: "Atas Sebut Harga", desc: "Kabinet vanity kustom dengan bahagian atas sinki, laci, cermin dan pencahayaan untuk bilik mandi, atau meja solek bilik tidur dengan storan." },
+          { name: "Kabinet Storan & Rak Pameran", price: "Atas Sebut Harga", desc: "Kabinet storan lantai-ke-siling, rak pameran dan dinding storan feature untuk ruang tamu, laluan dan pejabat rumah." },
+          { name: "Dinding Feature & Panel Dinding", price: "Atas Sebut Harga", desc: "Panel dinding fluted, slat dan laminate dengan rak serta pencahayaan bersepadu untuk ruang tamu, bilik tidur dan dinding TV." },
+          { name: "Bangku Makan & Tempat Duduk Banquette", price: "Atas Sebut Harga", desc: "Bangku makan kustom, tempat duduk banquette dan bangku tingkap dengan storan terbina, kemasan upholsteri atau kayu." },
+          { name: "Pembaikan Almari & Kabinet", price: "Atas Sebut Harga", desc: "Penjajaran semula pintu, penggantian engsel dan rel, pembaikan para melendut dan refacing kabinet untuk memulihkan binaan tanam sedia ada." }
         ],
         process: [
           { step: "01", title: "Lawatan Tapak & Ukuran", desc: "Kami melawat rumah anda, mengambil ukuran laser, memfoto ruang dan menangkap keperluan storan, keutamaan gaya dan bajet anda." },
@@ -2253,7 +2265,7 @@ export const servicesData: Record<string, ServiceDetail> = {
         ],
         metaTitle: "Pertukangan Kustom & Perabot Tanam KL & Selangor",
         metaDesc: "Almari pakaian tanam, konsol TV, meja belajar, dinding feature kustom di KL & Selangor. Bengkel dalaman, perkakasan Häfele/Blum. Dari RM300/kaki linier. Reka bentuk 3D termasuk.",
-        aioSummary: "KL Servis Rumah mereka bentuk dan membina pertukangan kustom di seluruh KL & Selangor. Almari pakaian tanam, konsol TV, meja belajar, dinding feature, kabinet kasut, rak pameran. Rangka papan lapis 18mm, perkakasan Häfele/Blum, kemasan premium. Bengkel dalaman, render reka bentuk 3D, sebut harga terperinci.",
+        aioSummary: "KL Servis Rumah mereka bentuk dan membina pertukangan kustom di seluruh KL & Selangor. Almari pakaian tanam dan walk-in, konsol TV, kabinet vanity, dinding feature dan panel dinding, bangku makan, kabinet kasut, rak pameran serta pembaikan kabinet. Rangka papan lapis 18mm, perkakasan Häfele/Blum, kemasan premium. Bengkel dalaman, render reka bentuk 3D, sebut harga terperinci.",
         warranty: "Jaminan Struktur Kabinet 5 Tahun"
       },
       zh: {
@@ -2272,7 +2284,13 @@ export const servicesData: Record<string, ServiceDetail> = {
           { name: "入墙衣柜", price: "从 RM 320 / 延英尺起", desc: "顶天立地衣柜，配内置抽屉、层板、挂衣杆与镜面或防火板门。" },
           { name: "电视柜与背景墙", price: "从 RM 1,500 起", desc: "定制电视柜，配收纳抽屉、悬浮层板、走线管理与配套背景墙板。" },
           { name: "书桌与家庭办公", price: "从 RM 1,100 起", desc: "入墙式书桌，配走线管理、抽屉、吊柜与配套层架。" },
-          { name: "鞋柜与玄关收纳", price: "从 RM 1,800 起", desc: "薄进深鞋柜，配翻斗抽屉、换鞋凳、镜子与内嵌灯光。" }
+          { name: "鞋柜与玄关收纳", price: "从 RM 1,800 起", desc: "薄进深鞋柜，配翻斗抽屉、换鞋凳、镜子与内嵌灯光。" },
+          { name: "步入式衣帽间与衣橱系统", price: "依报价", desc: "顶天立地步入式衣帽间系统，含挂衣区、抽屉、岛台与内嵌灯光选项。" },
+          { name: "浴室柜与梳妆台", price: "依报价", desc: "定制浴室柜，配台盆、抽屉、镜子与灯光；或带收纳的卧室梳妆台。" },
+          { name: "储物柜与展示架", price: "依报价", desc: "顶天立地储物柜、展示层架与客厅收纳背景墙，适用于客厅、过道与家庭办公室。" },
+          { name: "背景墙与护墙板", price: "依报价", desc: "格栅、竖条与防火板墙面护墙板，集成层架与灯光，适用于客厅、卧室与电视墙。" },
+          { name: "餐椅长凳与卡座", price: "依报价", desc: "定制餐椅长凳、卡座与窗边座位，底部带收纳，可选布艺软包或木饰面。" },
+          { name: "衣柜与柜体维修", price: "依报价", desc: "柜门调校、铰链与滑轨更换、层板下弯修复与柜体翻新，恢复现有入墙家具。" }
         ],
         process: [
           { step: "01", title: "上门测量", desc: "我们上门激光测量、拍摄空间，并记录您的收纳需求、风格偏好与预算。" },
@@ -2289,7 +2307,7 @@ export const servicesData: Record<string, ServiceDetail> = {
         ],
         metaTitle: "吉隆坡与雪兰莪定制木工与入墙家具",
         metaDesc: "吉隆坡与雪兰莪定制入墙衣柜、电视柜、书桌、背景墙。自有工厂，Häfele/Blum 五金。从 RM300/延英尺起。含 3D 设计。",
-        aioSummary: "KL Servis Rumah 在吉隆坡与雪兰莪设计并打造定制木工。入墙衣柜、电视柜、书桌、背景墙、鞋柜、展示层架。18mm 胶合板柜体，Häfele/Blum 五金，优质饰面。自有工厂、3D 设计效果图、逐项报价。",
+        aioSummary: "KL Servis Rumah 在吉隆坡与雪兰莪设计并打造定制木工。入墙衣柜与步入式衣帽间、电视柜、浴室柜、背景墙与护墙板、餐椅长凳、鞋柜、展示层架及柜体维修。18mm 胶合板柜体，Häfele/Blum 五金，优质饰面。自有工厂、3D 设计效果图、逐项报价。",
         warranty: "5 年柜体结构保修"
       }
     }

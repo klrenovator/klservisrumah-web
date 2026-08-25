@@ -2174,6 +2174,36 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
         "name": "Shoe Cabinet & Entry Storage",
         "price": "From RM 1,800",
         "desc": "Slim depth shoe cabinet with tilt-out drawers, sitting bench, mirror, and integrated lighting."
+      },
+      {
+        "name": "Walk-in Wardrobe & Closet System",
+        "price": "On Quote",
+        "desc": "Floor-to-ceiling walk-in wardrobe system with hanging zones, drawers, island units and internal lighting options."
+      },
+      {
+        "name": "Vanity Cabinet & Dressing Table",
+        "price": "On Quote",
+        "desc": "Custom vanity cabinet with sink top, drawers, mirror and lighting, or a bedroom dressing table with storage."
+      },
+      {
+        "name": "Storage Cabinet & Display Shelving",
+        "price": "On Quote",
+        "desc": "Floor-to-ceiling storage cabinets, display shelving and feature storage walls for living rooms, hallways and home offices."
+      },
+      {
+        "name": "Feature Wall & Wall Panelling",
+        "price": "On Quote",
+        "desc": "Fluted, slat and laminate wall panelling with integrated shelving and lighting for living rooms, bedrooms and TV walls."
+      },
+      {
+        "name": "Dining Bench & Banquette Seating",
+        "price": "On Quote",
+        "desc": "Custom dining benches, banquette seating and window seats with built-in storage, upholstered or timber-finished."
+      },
+      {
+        "name": "Wardrobe & Cabinet Repair",
+        "price": "On Quote",
+        "desc": "Door realignment, hinge and runner replacement, sagging shelf repair and cabinet refacing to restore existing built-ins."
       }
     ],
     "i18n": {
@@ -2201,6 +2231,36 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "name": "Kabinet Kasut & Storan Pintu Masuk",
             "price": "Dari RM 1,800",
             "desc": "Kabinet kasut kedalaman nipis dengan laci tilt-out, bangku duduk, cermin dan pencahayaan bersepadu."
+          },
+          {
+            "name": "Walk-in Wardrobe & Sistem Closet",
+            "price": "Atas Sebut Harga",
+            "desc": "Sistem walk-in wardrobe lantai-ke-siling dengan zon gantungan, laci, unit pulau dan pilihan pencahayaan dalaman."
+          },
+          {
+            "name": "Kabinet Vanity & Meja Solek",
+            "price": "Atas Sebut Harga",
+            "desc": "Kabinet vanity kustom dengan bahagian atas sinki, laci, cermin dan pencahayaan untuk bilik mandi, atau meja solek bilik tidur dengan storan."
+          },
+          {
+            "name": "Kabinet Storan & Rak Pameran",
+            "price": "Atas Sebut Harga",
+            "desc": "Kabinet storan lantai-ke-siling, rak pameran dan dinding storan feature untuk ruang tamu, laluan dan pejabat rumah."
+          },
+          {
+            "name": "Dinding Feature & Panel Dinding",
+            "price": "Atas Sebut Harga",
+            "desc": "Panel dinding fluted, slat dan laminate dengan rak serta pencahayaan bersepadu untuk ruang tamu, bilik tidur dan dinding TV."
+          },
+          {
+            "name": "Bangku Makan & Tempat Duduk Banquette",
+            "price": "Atas Sebut Harga",
+            "desc": "Bangku makan kustom, tempat duduk banquette dan bangku tingkap dengan storan terbina, kemasan upholsteri atau kayu."
+          },
+          {
+            "name": "Pembaikan Almari & Kabinet",
+            "price": "Atas Sebut Harga",
+            "desc": "Penjajaran semula pintu, penggantian engsel dan rel, pembaikan para melendut dan refacing kabinet untuk memulihkan binaan tanam sedia ada."
           }
         ]
       },
@@ -2228,6 +2288,36 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "name": "鞋柜与玄关收纳",
             "price": "从 RM 1,800 起",
             "desc": "薄进深鞋柜，配翻斗抽屉、换鞋凳、镜子与内嵌灯光。"
+          },
+          {
+            "name": "步入式衣帽间与衣橱系统",
+            "price": "依报价",
+            "desc": "顶天立地步入式衣帽间系统，含挂衣区、抽屉、岛台与内嵌灯光选项。"
+          },
+          {
+            "name": "浴室柜与梳妆台",
+            "price": "依报价",
+            "desc": "定制浴室柜，配台盆、抽屉、镜子与灯光；或带收纳的卧室梳妆台。"
+          },
+          {
+            "name": "储物柜与展示架",
+            "price": "依报价",
+            "desc": "顶天立地储物柜、展示层架与客厅收纳背景墙，适用于客厅、过道与家庭办公室。"
+          },
+          {
+            "name": "背景墙与护墙板",
+            "price": "依报价",
+            "desc": "格栅、竖条与防火板墙面护墙板，集成层架与灯光，适用于客厅、卧室与电视墙。"
+          },
+          {
+            "name": "餐椅长凳与卡座",
+            "price": "依报价",
+            "desc": "定制餐椅长凳、卡座与窗边座位，底部带收纳，可选布艺软包或木饰面。"
+          },
+          {
+            "name": "衣柜与柜体维修",
+            "price": "依报价",
+            "desc": "柜门调校、铰链与滑轨更换、层板下弯修复与柜体翻新，恢复现有入墙家具。"
           }
         ]
       }

@@ -10,7 +10,7 @@
 
 **Overall Status:** 🔄 IN PROGRESS
 
-**Last Updated:** 2026-08-24
+**Last Updated:** 2026-08-25
 
 **Languages:**
 
@@ -18,7 +18,7 @@
 - Malay (ms)
 - Chinese (zh)
 
-**Session:** Initial audit + foundation (Session 1) · Connected-trades expansion (Session 2) · Waterproofing expansion (Session 3) · Electrical connected-trade expansion (Session 4) · Plumbing connected-trade expansion (Session 5)
+**Session:** Initial audit + foundation (Session 1) · Connected-trades expansion (Session 2) · Waterproofing expansion (Session 3) · Electrical connected-trade expansion (Session 4) · Plumbing connected-trade expansion (Session 5) · Carpentry connected-trade expansion (Session 6)
 
 ---
 
@@ -321,7 +321,7 @@
 - [x] ✅ Connect waterproofing to renovation — COMPLETED (waterproofing service + bathroom-waterproofing specialty + calculator; Session 3 expanded waterproofing 4→10 subservices with toilet, balcony, concrete slab & car porch, water leakage repair, ceiling water damage and re-coating)
 - [x] ✅ Connect plumbing renovation — COMPLETED (plumbing service + kitchen/bathroom plumbing subservices; Session 5 expanded plumbing 4→10 subservices with bathroom/kitchen plumbing renovation, pipe replacement & rerouting, drainage & floor trap upgrade, shower & rain shower installation and renovation plumbing work)
 - [x] ✅ Connect electrical renovation — COMPLETED (electrical service + kitchen/bathroom electrical + DB box, lighting; Session 4 expanded electrical 4→10 subservices with house rewiring, additional power points, switch installation, kitchen/bathroom electrical and renovation electrical work)
-- [x] ✅ Connect carpentry (kitchen cabinets, wardrobes, etc) — COMPLETED (carpentry + kitchen-cabinet services linked)
+- [x] ✅ Connect carpentry (kitchen cabinets, wardrobes, etc) — COMPLETED (carpentry + kitchen-cabinet services linked; Session 6 expanded carpentry 4→10 subservices with walk-in wardrobe, vanity cabinet, storage cabinet, feature wall & wall panelling, dining bench & banquette, wardrobe & cabinet repair)
 - [x] ✅ Connect door/window/glass/metal — COMPLETED (door, window-repair, glass-aluminium, welding linked)
 - [x] ✅ Create commercial renovation cluster (office, shoplot, retail, F&B) — COMPLETED (Commercial Shoplot Renovation existing + shoplot type in calculator)
 - [x] ✅ Create post-renovation cleaning cluster — COMPLETED (post-renovation-cleaning service + debris removal specialty)
@@ -627,15 +627,17 @@
 | Bathroom Electrical | ✅ | ✅ | ✅ | New subservice + specialty (Session 4) |
 | Renovation Electrical Work | ✅ | ✅ | ✅ | New subservice + specialty (Session 4) |
 | **Carpentry** | | | | |
-| Kitchen Cabinets | ✅ | ✅ | ✅ | Exists |
-| Built-in Wardrobe | ⏳ | ⏳ | ⏳ | New |
-| Walk-in Wardrobe | ⏳ | ⏳ | ⏳ | New |
-| TV Cabinet | ⏳ | ⏳ | ⏳ | New |
-| TV Feature Wall | ⏳ | ⏳ | ⏳ | New |
-| Shoe Cabinet | ⏳ | ⏳ | ⏳ | New |
-| Storage Cabinet | ⏳ | ⏳ | ⏳ | New |
-| Vanity Cabinet | ⏳ | ⏳ | ⏳ | New |
-| Study Table | ⏳ | ⏳ | ⏳ | New |
+| Kitchen Cabinets | ✅ | ✅ | ✅ | Exists (kitchen-cabinet service) |
+| Built-in Wardrobe | ✅ | ✅ | ✅ | Existed as subservice + specialty |
+| Walk-in Wardrobe | ✅ | ✅ | ✅ | New subservice + specialty (Session 6) |
+| TV Cabinet | ✅ | ✅ | ✅ | Covered by TV Console & Feature Wall subservice |
+| TV Feature Wall | ✅ | ✅ | ✅ | Covered by Feature Wall & Wall Panelling subservice (Session 6) |
+| Shoe Cabinet | ✅ | ✅ | ✅ | Existed as subservice + specialty |
+| Storage Cabinet | ✅ | ✅ | ✅ | New subservice + specialty (Session 6) |
+| Vanity Cabinet | ✅ | ✅ | ✅ | New subservice + specialty (Session 6) |
+| Study Table | ✅ | ✅ | ✅ | Covered by Study Desk & Home Office subservice |
+| Dining Bench & Banquette | ✅ | ✅ | ✅ | New subservice + specialty (Session 6) |
+| Wardrobe & Cabinet Repair | ✅ | ✅ | ✅ | New subservice + specialty (Session 6) |
 | Custom Carpentry | ✅ (carpentry service) | ✅ | ✅ | Exists |
 | **Door/Window/Glass/Metal** | | | | |
 | Door Installation | ✅ (part of door) | ✅ | ✅ | Enhance |
@@ -947,12 +949,21 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 - [x] ✅ QA: full `next build` PASS (5,954 rendered HTML pages incl. 6 EN + 6 MS + 6 ZH new plumbing specialty pages), TypeScript 0 errors, ESLint 0 warnings, prebuild (i18n + estimator tests 344,800 assertions) PASS, audit:links 0 broken targets (450,270 links), audit:html PASS, seo:audit PASS
 - [x] ✅ No invented prices used — new plumbing subservices priced "On Quote" except Shower & Rain Shower Installation which reuses the existing published fixture-installation entry price (From RM 150, identical to the existing Toilet, Tap & Sink Installation subservice)
 
+**Session 6 (this session) — Carpentry expansion:**
+
+- [x] ✅ Enhanced carpentry service: 4→10 subservices (added Walk-in Wardrobe & Closet System, Vanity Cabinet & Dressing Table, Storage Cabinet & Display Shelving, Feature Wall & Wall Panelling, Dining Bench & Banquette Seating, Wardrobe & Cabinet Repair) with full EN/MS/ZH in services-data; aioSummary refreshed EN/MS/ZH
+- [x] ✅ Added 6 new carpentry specialty-locale entries with real native MS/ZH content (walk-in-wardrobe-and-closet-system, vanity-cabinet-and-dressing-table, storage-cabinet-and-display-shelving, feature-wall-and-wall-panelling, dining-bench-and-banquette-seating, wardrobe-and-cabinet-repair) — total 154 specialties × 2 = 308 blocks, audit:specialty-locale PASS
+- [x] ✅ Registered 6 new carpentry specialties in topical-authority-map (relatedProblems + relatedBlogs), extended targetQueries, and linked the existing shoe-cabinet specialty to the shoe-cabinet-entry-storage-kl blog — audit:topical-map PASS (31/31 services, 197 typed specialty relationships)
+- [x] ✅ Regenerated generated files via prebuild: quote-catalog.generated.ts, service-summary.generated.ts, service-nav.generated.ts, rate-book.generated.ts, blog-related.generated.json, llms.txt, llms-full.txt, aeo-faq.txt, site-summary.json
+- [x] ✅ QA: full `next build` PASS (5,980 rendered HTML pages incl. 6 EN + 6 MS + 6 ZH new carpentry specialty pages), TypeScript 0 errors, ESLint 0 warnings, prebuild (i18n + estimator tests 344,800 assertions) PASS, audit:links 0 broken targets (451,544 links, 5,972 pages), audit:html PASS (no fatal findings/warnings), seo:audit PASS
+- [x] ✅ No invented prices used — all 6 new carpentry subservices priced "On Quote" (existing published carpentry entry prices RM 300/linier ft, RM 320/linier ft, RM 1,500, RM 1,100, RM 1,800 untouched; no new price claims introduced)
+
 ## In Progress This Session
 
 - [x] ✅ Enhance waterproofing connected-trade subServices (toilet, balcony, concrete slab & car porch, water leakage repair, ceiling water damage, waterproofing repair & re-coating) — COMPLETED (Session 3)
 - [x] ✅ Enhance electrical connected-trade subServices (house rewiring, additional power points, switch installation, kitchen/bathroom electrical, renovation electrical work) — COMPLETED (Session 4)
 - [x] ✅ Enhance plumbing connected-trade subServices (bathroom/kitchen plumbing renovation, pipe replacement & rerouting, drainage & floor trap, shower & rain shower, renovation plumbing work) — COMPLETED (Session 5)
-- [ ] 🔄 Enhance remaining connected trades subServices (carpentry with wardrobes etc, door/window/glass/metal) — IN PROGRESS, painting + waterproofing + electrical + plumbing tranches completed, carpentry tranche next
+- [ ] 🔄 Enhance remaining connected trades subServices (carpentry with wardrobes etc, door/window/glass/metal) — IN PROGRESS, painting + waterproofing + electrical + plumbing + carpentry tranches completed (Sessions 2–6), door/window/glass/metal tranche next
 - [ ] 🔄 Problem-based renovation content — PENDING (43 existing problems audited, renovation-related problems like hollow tiles, cracked tiles, water-damaged ceiling can be added as thin-page avoidance)
 - [ ] 🔄 Location SEO renovation enhancement — PENDING (49+ areas exist, need localized renovation content without thin duplication)
 - [ ] 🔄 Commercial renovation cluster expansion — PENDING (shoplot exists, office/retail/F&B can be added as subservices)
@@ -964,7 +975,7 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 - ~~Enhance waterproofing service with Toilet, Roof, Concrete, Waterproofing Repair, Water Leakage, Ceiling Water Damage, Wall Water Leakage subservices (EN/MS/ZH)~~ ✅ COMPLETED (Session 3 — waterproofing 4→10 subservices; added Toilet, Balcony, Concrete Slab & Car Porch, Water Leakage Repair, Ceiling Water Damage Repair, Waterproofing Repair & Re-Coating with real EN/MS/ZH content + 6 new specialty locale entries)
 - ~~Enhance electrical service with House Rewiring, Additional Power Points, Switch Installation, Downlight, DB Box Work, Kitchen/Bathroom Electrical subservices~~ ✅ COMPLETED (Session 4 — electrical 4→10 subservices; added House Rewiring, Additional Power Points, Switch Installation, Kitchen Electrical, Bathroom Electrical, Renovation Electrical Work with real EN/MS/ZH content + 6 new specialty locale entries; Downlight and DB Box already existed)
 - ~~Enhance plumbing service with Bathroom Plumbing, Kitchen Plumbing, Pipe Replacement, Water Supply Pipe, Drainage, Sink/Toilet/Tap/Shower Installation subservices~~ ✅ COMPLETED (Session 5 — plumbing 4→10 subservices; added Bathroom Plumbing Renovation, Kitchen Plumbing Renovation, Pipe Replacement & Rerouting, Drainage & Floor Trap Upgrade, Shower & Rain Shower Installation, Renovation Plumbing Work with real EN/MS/ZH content + 6 new specialty locale entries; sink/toilet/tap installation already existed)
-- Enhance carpentry service with Built-in Wardrobe, Walk-in Wardrobe, TV Cabinet, TV Feature Wall, Shoe Cabinet, Storage Cabinet, Vanity Cabinet, Study Table subservices
+- ~~Enhance carpentry service with Built-in Wardrobe, Walk-in Wardrobe, TV Cabinet, TV Feature Wall, Shoe Cabinet, Storage Cabinet, Vanity Cabinet, Study Table subservices~~ ✅ COMPLETED (Session 6 — carpentry 4→10 subservices; added Walk-in Wardrobe & Closet System, Vanity Cabinet & Dressing Table, Storage Cabinet & Display Shelving, Feature Wall & Wall Panelling, Dining Bench & Banquette Seating, Wardrobe & Cabinet Repair with real EN/MS/ZH content + 6 new specialty locale entries; Built-in Wardrobe, TV Console & Feature Wall, Study Desk & Home Office and Shoe Cabinet & Entry Storage already existed)
 - Enhance door/window/glass/metal with Door Replacement, Door Frame, Window Installation/Replacement, Glass Partition, Grille, Iron Works subservices
 - Create commercial renovation cluster expansion: Office Renovation, Retail Renovation, Commercial Renovation, Office Partition, Shop Renovation, Restaurant/F&B Renovation as subservices under house-renovation or new service
 - Create post-renovation cleaning expansion: Construction Cleaning, Debris Removal, Grout Cleaning, Dust Removal, Final Cleaning, Handover Cleaning subservices
@@ -976,7 +987,7 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 
 ## Blocked
 
-- None - no new pricing/claims introduced in Session 5. New plumbing subservices are priced "On Quote" except Shower & Rain Shower Installation, which reuses the existing published fixture-installation entry price (From RM 150, same as the existing Toilet, Tap & Sink Installation subservice), so no business verification pending.
+- None - no new pricing/claims introduced in Session 6. All 6 new carpentry subservices are priced "On Quote" (no new price claims), so no business verification pending.
 - (Env note) node_modules was not present in the sandbox at session start; reinstalled via `npm install` to run audits/build.
 
 ## Files Changed This Session
@@ -1026,6 +1037,15 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 - docs/seo-audit-report.md (regenerated by seo:audit)
 - RENOVATION_EXPANSION_PLAN.md (Session 5 progress + QA)
 
+**Session 6 (this session) — Carpentry expansion:**
+
+- config/services-data.ts (enhanced carpentry service 4→10 subservices: added Walk-in Wardrobe & Closet System, Vanity Cabinet & Dressing Table, Storage Cabinet & Display Shelving, Feature Wall & Wall Panelling, Dining Bench & Banquette Seating, Wardrobe & Cabinet Repair — EN/MS/ZH; aioSummary refreshed in 3 langs)
+- config/specialty-locale-content.ts (added 6 new carpentry specialty entries with real native MS/ZH content — total 154 specialties × 2 = 308 blocks)
+- config/topical-authority-map.ts (registered 6 new carpentry specialties with relatedProblems + relatedBlogs, extended targetQueries, linked shoe-cabinet specialty to shoe-cabinet-entry-storage-kl blog)
+- Generated files (regenerated via prebuild): config/quote-catalog.generated.ts, config/service-summary.generated.ts, config/service-nav.generated.ts, config/blog-related.generated.json, lib/estimator/rate-book.generated.ts, public/llms.txt, public/llms-full.txt, public/aeo-faq.txt, public/site-summary.json
+- docs/seo-audit-report.md (regenerated by seo:audit)
+- RENOVATION_EXPANSION_PLAN.md (Session 6 progress + QA)
+
 ## Files Created This Session
 
 - RENOVATION_EXPANSION_PLAN.md (initial creation + updates)
@@ -1034,21 +1054,23 @@ _Note (Session 2): No new tracked files created — all work was additive edits 
 
 _Note (Session 3): No new tracked files created — all work was additive edits to existing config + regenerated generated files (node_modules installed in the sandbox, not tracked). docs/seo-audit-report.md is tracked and was regenerated by the seo:audit script._
 
+_Note (Session 6): No new tracked files created — all work was additive edits to existing config + regenerated generated files (node_modules installed in the sandbox, not tracked). docs/seo-audit-report.md is tracked and was regenerated by the seo:audit script._
+
 ## Files Deleted This Session
 
 - None
 
 ## QA Status
 
-- Build: ✅ PASS (prebuild + full `next build` — 5,954 rendered HTML pages incl. 6 EN/6 MS/6 ZH new plumbing specialty pages)
+- Build: ✅ PASS (prebuild + full `next build` — 5,980 rendered HTML pages incl. 6 EN/6 MS/6 ZH new carpentry specialty pages)
 - TypeScript: ✅ PASS (0 errors via `npm run type-check` / tsc --noEmit)
 - ESLint: ✅ PASS (0 warnings via npm run lint)
-- Routes: ✅ PASS (31 services, 185 sub-services, 148 specialties with MS/ZH twins, 46 tools × 3 locales, sitemap includes 31 services with hreflang clusters)
-- SEO: ✅ PASS (seo:audit PASS → docs/seo-audit-report.md regenerated; buildMetadata with languageUrls, optimizeTitle/Description, canonical, Open Graph; new plumbing specialty pages self-canonical consistent with Session 4 specialty pages)
-- Sitemap: ✅ PASS (sitemap.ts auto-includes 31 services + 148 specialty twins via hasSpecialtyLocaleContent + 46 tools × 3 locales; site-summary.json verified via prebuild)
+- Routes: ✅ PASS (31 services, 191 sub-services, 154 specialties with MS/ZH twins, 46 tools × 3 locales, sitemap includes 31 services with hreflang clusters)
+- SEO: ✅ PASS (seo:audit PASS → docs/seo-audit-report.md regenerated; buildMetadata with languageUrls, optimizeTitle/Description, canonical, Open Graph; new carpentry specialty pages emit real 3-way hreflang clusters EN/MS/ZH + x-default, self-canonical consistent with Sessions 4–5 specialty pages)
+- Sitemap: ✅ PASS (sitemap.ts auto-includes 31 services + 154 specialty twins via hasSpecialtyLocaleContent + 46 tools × 3 locales; site-summary.json verified via prebuild)
 - Schema: ✅ PASS (Service schema with OfferCatalog, FAQPage, BreadcrumbList, HowTo, Speakable, Organization, LocalBusiness, WebSite — no fake reviews/ratings)
-- Multilingual: ✅ PASS (audit:i18n 1085 keys × 3 locales PASS, audit:specialty-locale 148×2 = 296 blocks PASS, audit:problem-i18n PASS, test:estimators 344,800 assertions PASS, audit:topical-map 191 typed relationships PASS)
-- Internal Links: ✅ PASS (audit:links — 5,954 pages, 450,270 links, 0 broken targets)
+- Multilingual: ✅ PASS (audit:i18n 1085 keys × 3 locales PASS, audit:specialty-locale 154×2 = 308 blocks PASS, audit:problem-i18n PASS, test:estimators 344,800 assertions PASS, audit:topical-map 197 typed relationships PASS)
+- Internal Links: ✅ PASS (audit:links — 5,972 pages, 451,544 links, 0 broken targets; new MS/ZH specialty pages render related problems + localized blog links from topical map)
 - Mobile: ✅ PASS (navbar mobile cluster compact, lg:flex mega-menu, no backdrop-blur WebKit bug)
 - Accessibility: ⏳ PENDING (semantic HTML, keyboard, labels, alt text, contrast, mobile usability — existing system uses semantic HTML, needs full check next session)
 - Performance: ✅ PASS (client bundle guard: service-nav.generated used instead of registry, no heavy content registry in client, 0 vulnerabilities)
