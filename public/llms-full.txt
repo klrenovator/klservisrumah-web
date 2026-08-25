@@ -50,6 +50,12 @@ All prices are the published starting prices shown on the live service pages. Fi
 - Toilet, Tap & Sink Installation — From RM 150
 - Drain Unclogging & Cleaning — From RM 180
 - Water Heater & Pump Installation — From RM 180
+- Bathroom Plumbing Renovation — On Quote
+- Kitchen Plumbing Renovation — On Quote
+- Pipe Replacement & Rerouting — On Quote
+- Drainage & Floor Trap Upgrade — On Quote
+- Shower & Rain Shower Installation — From RM 150
+- Renovation Plumbing Work — On Quote
 - Cost guide: https://www.klservisrumah.my/services/plumbing/cost
 
 ### Ceiling & Partition Services
@@ -841,6 +847,6 @@ KL Servis Rumah publishes fair, upfront pricing benchmarked against the Klang Va
 - Sitemap: https://www.klservisrumah.my/sitemap.xml
 
 ## Scale
-- 31 services · 185 sub-services
+- 31 services · 191 sub-services
 - 37 area pages · 86 problem pages · 229 articles
-- 4,786 indexable pages listed in the sitemap
+- 4,804 indexable pages listed in the sitemap

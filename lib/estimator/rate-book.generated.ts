@@ -249,9 +249,37 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
         "unit": "job",
         "published": "From RM 180",
         "desc": "Setting up modern instant/storage water heaters and home water pressure booster pumps."
+      },
+      {
+        "name": "Shower & Rain Shower Installation",
+        "amount": 150,
+        "unit": "job",
+        "published": "From RM 150",
+        "desc": "Installing shower sets, rain showers, hand bidets and mixers with proper sealing, alignment and flow testing."
       }
     ],
-    "quoteOnly": []
+    "quoteOnly": [
+      {
+        "name": "Bathroom Plumbing Renovation",
+        "desc": "Full water supply and drain rerouting for bathroom renovations — new pipe layouts, concealed piping and fixture positioning per the new design."
+      },
+      {
+        "name": "Kitchen Plumbing Renovation",
+        "desc": "Sink relocation, wet-kitchen pipework and new water/drain points coordinated with cabinet, countertop and appliance layouts."
+      },
+      {
+        "name": "Pipe Replacement & Rerouting",
+        "desc": "Replacing ageing or leaking supply pipes and rerouting water lines for renovations, with pressure testing after installation."
+      },
+      {
+        "name": "Drainage & Floor Trap Upgrade",
+        "desc": "New floor traps, drain rerouting and additional drainage points for renovated bathrooms, kitchens and balconies."
+      },
+      {
+        "name": "Renovation Plumbing Work",
+        "desc": "Rough-in and first-fix plumbing for house, kitchen and bathroom renovations — new water points, drainage planning and testing."
+      }
+    ]
   },
   "ceiling": {
     "startPrice": 220,

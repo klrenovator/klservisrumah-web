@@ -192,7 +192,13 @@ export const servicesData: Record<string, ServiceDetail> = {
       { name: "Water Leakage Diagnosis & Repair", price: "From RM 220", desc: "Detection of hidden pipe leaks behind walls or underground, followed by precise repair." },
       { name: "Toilet, Tap & Sink Installation", price: "From RM 150", desc: "Fitting new toilet bowls, modern kitchen faucets, basins, and heavy-duty sink plumbing." },
       { name: "Drain Unclogging & Cleaning", price: "From RM 180", desc: "Clearing stubborn hair, grease, and debris blockages in kitchen drains, floor traps, and toilets." },
-      { name: "Water Heater & Pump Installation", price: "From RM 180", desc: "Setting up modern instant/storage water heaters and home water pressure booster pumps." }
+      { name: "Water Heater & Pump Installation", price: "From RM 180", desc: "Setting up modern instant/storage water heaters and home water pressure booster pumps." },
+      { name: "Bathroom Plumbing Renovation", price: "On Quote", desc: "Full water supply and drain rerouting for bathroom renovations — new pipe layouts, concealed piping and fixture positioning per the new design." },
+      { name: "Kitchen Plumbing Renovation", price: "On Quote", desc: "Sink relocation, wet-kitchen pipework and new water/drain points coordinated with cabinet, countertop and appliance layouts." },
+      { name: "Pipe Replacement & Rerouting", price: "On Quote", desc: "Replacing ageing or leaking supply pipes and rerouting water lines for renovations, with pressure testing after installation." },
+      { name: "Drainage & Floor Trap Upgrade", price: "On Quote", desc: "New floor traps, drain rerouting and additional drainage points for renovated bathrooms, kitchens and balconies." },
+      { name: "Shower & Rain Shower Installation", price: "From RM 150", desc: "Installing shower sets, rain showers, hand bidets and mixers with proper sealing, alignment and flow testing." },
+      { name: "Renovation Plumbing Work", price: "On Quote", desc: "Rough-in and first-fix plumbing for house, kitchen and bathroom renovations — new water points, drainage planning and testing." }
     ],
     process: [
       { step: "01", title: "Source Diagnosis", desc: "We turn off the main water valve if necessary and locate the leakage point or fixture blockage using diagnostic tools." },
@@ -230,7 +236,13 @@ export const servicesData: Record<string, ServiceDetail> = {
           { name: "Diagnosis & Pembaikan Kebocoran Air", price: "Dari RM 220", desc: "Pengesanan kebocoran paip tersembunyi di sebalik dinding atau bawah tanah, diikuti pembaikan tepat." },
           { name: "Pemasangan Tandas, Paip Air & Singki", price: "Dari RM 150", desc: "Memasang mangkuk tandas baru, paip air dapur moden, besen, dan paip singki tugas berat." },
           { name: "Penyahsumbatan & Pembersihan Saliran", price: "Dari RM 180", desc: "Membersihkan sumbatan rambut, minyak, dan serpihan yang degil di saliran dapur, perangkap lantai, dan tandas." },
-          { name: "Pemasangan Pemanas Air & Pam", price: "Dari RM 180", desc: "Menyediakan pemanas air segera/simpanan moden dan pam penambah tekanan air rumah." }
+          { name: "Pemasangan Pemanas Air & Pam", price: "Dari RM 180", desc: "Menyediakan pemanas air segera/simpanan moden dan pam penambah tekanan air rumah." },
+          { name: "Kerja Paip Pengubahsuaian Bilik Mandi", price: "Atas Sebut Harga", desc: "Penyusunan semula penuh bekalan air dan saliran untuk pengubahsuaian bilik mandi — susun atur paip baharu, paip tersembunyi dan kedudukan lekapan mengikut reka bentuk baharu." },
+          { name: "Kerja Paip Pengubahsuaian Dapur", price: "Atas Sebut Harga", desc: "Pemindahan singki, kerja paip dapur basah dan titik air/saliran baharu diselaraskan dengan susun atur kabinet, countertop dan perkakas." },
+          { name: "Penggantian & Penyusunan Semula Paip", price: "Atas Sebut Harga", desc: "Menggantikan paip bekalan yang sudah tua atau bocor dan menyusun semula saluran air untuk pengubahsuaian, dengan ujian tekanan selepas pemasangan." },
+          { name: "Naik Taraf Saliran & Perangkap Lantai", price: "Atas Sebut Harga", desc: "Perangkap lantai baharu, penyusunan semula saliran dan titik saliran tambahan untuk bilik mandi, dapur dan balkoni yang diubah suai." },
+          { name: "Pemasangan Pancuran & Rain Shower", price: "Dari RM 150", desc: "Memasang set pancuran, rain shower, bidet tangan dan pengadun dengan pengedap yang betul, penjajaran dan ujian aliran." },
+          { name: "Kerja Paip Pengubahsuaian", price: "Atas Sebut Harga", desc: "Rough-in dan first-fix paip untuk pengubahsuaian rumah, dapur dan bilik mandi — titik air baharu, perancangan saliran dan ujian." }
         ],
         process: [
           { step: "01", title: "Diagnosis Punca", desc: "Kami menutup injap air utama jika perlu dan mengesan titik kebocoran atau sumbatan lekapan menggunakan alat diagnostik." },
@@ -267,7 +279,13 @@ export const servicesData: Record<string, ServiceDetail> = {
           { name: "漏水诊断与修复", price: "从 RM 220 起", desc: "检测墙内或地下隐藏的管道漏水，随后进行精确修复。" },
           { name: "马桶、水龙头与水槽安装", price: "从 RM 150 起", desc: "安装新马桶、现代厨房水龙头、洗手盆与重型水槽管道。" },
           { name: "疏通与清洁排水管", price: "从 RM 180 起", desc: "清除厨房排水管、地漏与马桶中顽固的毛发、油脂与杂物堵塞。" },
-          { name: "热水器与水泵安装", price: "从 RM 180 起", desc: "安装现代即热式/储水式热水器与家用增压泵。" }
+          { name: "热水器与水泵安装", price: "从 RM 180 起", desc: "安装现代即热式/储水式热水器与家用增压泵。" },
+          { name: "卫生间水管翻新", price: "依报价", desc: "卫生间翻新时全面重新布置供水与排水管——按新设计规划新管路、暗管与洁具位置。" },
+          { name: "厨房水管翻新", price: "依报价", desc: "水槽移位、湿区厨房管道，以及配合橱柜、台面与电器布局新增供水/排水点位。" },
+          { name: "水管更换与改管", price: "依报价", desc: "更换老化或漏水的供水管，并为翻新工程改走水路，安装后进行压力测试。" },
+          { name: "排水与地漏升级", price: "依报价", desc: "为翻新后的卫生间、厨房与阳台新增地漏、改走排水管并增设排水点位。" },
+          { name: "花洒与顶喷安装", price: "从 RM 150 起", desc: "安装花洒套装、顶喷、手持妇洗器与混水阀，做好密封、校正并进行出水测试。" },
+          { name: "装修水管工程", price: "依报价", desc: "房屋、厨房与卫生间翻新的预埋与一次配管——新增供水点位、排水规划与测试。" }
         ],
         process: [
           { step: "01", title: "源头诊断", desc: "必要时我们关闭主水阀，并使用诊断工具定位漏水点或洁具堵塞位置。" },
