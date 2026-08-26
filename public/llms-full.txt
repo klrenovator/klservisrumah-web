@@ -108,6 +108,10 @@ All prices are the published starting prices shown on the live service pages. Fi
 - Kitchen & Bathroom Makeover — From RM 10,000
 - House Extension — On Quote
 - Commercial Shoplot Renovation — On Quote
+- Office Renovation & Fit-Out — On Quote
+- Retail Shop Renovation — On Quote
+- Restaurant & F&B Renovation — On Quote
+- Office Partition & Workspace Build — On Quote
 - Renovation Contractor Services — On Quote
 - Cost guide: https://www.klservisrumah.my/services/house-renovation/cost
 
@@ -883,6 +887,6 @@ KL Servis Rumah publishes fair, upfront pricing benchmarked against the Klang Va
 - Sitemap: https://www.klservisrumah.my/sitemap.xml
 
 ## Scale
-- 31 services · 227 sub-services
+- 31 services · 231 sub-services
 - 37 area pages · 86 problem pages · 229 articles
-- 4,912 indexable pages listed in the sitemap
+- 4,924 indexable pages listed in the sitemap

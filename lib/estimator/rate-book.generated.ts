@@ -488,6 +488,22 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
         "desc": "Retail and F&B shop fit-outs with electrical upgrades, signage readiness, and fast-track delivery."
       },
       {
+        "name": "Office Renovation & Fit-Out",
+        "desc": "Complete office fit-out: space planning, partition walls, workstations, meeting rooms, flooring, ceiling, electrical, lighting and air-con points for new or refurbished offices."
+      },
+      {
+        "name": "Retail Shop Renovation",
+        "desc": "Retail boutique, shoplot and showroom fit-out: storefront, display shelving, lighting, tiling, electrical upgrades and signage readiness."
+      },
+      {
+        "name": "Restaurant & F&B Renovation",
+        "desc": "Restaurant, cafe and F&B outlet fit-out: commercial kitchen, exhaust hood, grease trap, gas and drainage compliance, dining hall, tiling and flooring."
+      },
+      {
+        "name": "Office Partition & Workspace Build",
+        "desc": "Glass and gypsum partitions, meeting room pods, workstation clusters and sound-insulated office partitions for commercial spaces, with door and glazing integration."
+      },
+      {
         "name": "Renovation Contractor Services",
         "desc": "Licensed contractor for design, hacking, structural, M&E, carpentry, painting and handover."
       }

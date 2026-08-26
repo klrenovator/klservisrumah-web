@@ -510,6 +510,18 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
         "name": "Commercial Shoplot Renovation"
       },
       {
+        "name": "Office Renovation & Fit-Out"
+      },
+      {
+        "name": "Retail Shop Renovation"
+      },
+      {
+        "name": "Restaurant & F&B Renovation"
+      },
+      {
+        "name": "Office Partition & Workspace Build"
+      },
+      {
         "name": "Renovation Contractor Services"
       }
     ],
@@ -550,6 +562,18 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
             "name": "Pengubahsuaian Shoplot Komersial"
           },
           {
+            "name": "Pengubahsuaian & Fit-Out Pejabat"
+          },
+          {
+            "name": "Pengubahsuaian Kedai Runcit"
+          },
+          {
+            "name": "Pengubahsuaian Restoran & F&B"
+          },
+          {
+            "name": "Partisi Pejabat & Pembinaan Ruang Kerja"
+          },
+          {
             "name": "Perkhidmatan Kontraktor Pengubahsuaian"
           }
         ],
@@ -588,6 +612,18 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
           },
           {
             "name": "商业店铺翻新"
+          },
+          {
+            "name": "办公室装修与整备"
+          },
+          {
+            "name": "零售店面装修"
+          },
+          {
+            "name": "餐厅与餐饮门店装修"
+          },
+          {
+            "name": "办公室隔断与工位搭建"
           },
           {
             "name": "翻新承包商服务"

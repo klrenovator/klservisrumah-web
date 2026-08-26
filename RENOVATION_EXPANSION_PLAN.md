@@ -1,7 +1,7 @@
 # KL Servis Rumah Renovation Expansion
 
 **Website:** https://www.klservisrumah.my
-**Project Branch:** arena/01a034fa-klservisrumah-web (current session; previous sessions on arena/01a034d8-klservisrumah-web)
+**Project Branch:** arena/01a03b4d-klservisrumah-web (current session)
 **Repository:** klrenovator/klservisrumah-web
 
 ---
@@ -18,7 +18,7 @@
 - Malay (ms)
 - Chinese (zh)
 
-**Session:** Initial audit + foundation (Session 1) · Connected-trades expansion (Session 2) · Waterproofing expansion (Session 3) · Electrical connected-trade expansion (Session 4) · Plumbing connected-trade expansion (Session 5) · Carpentry connected-trade expansion (Session 6) · Door, window, glass & welding expansion (Session 7) · Post-renovation cleaning expansion (Session 8)
+**Session:** Initial audit + foundation (Session 1) · Connected-trades expansion (Session 2) · Waterproofing expansion (Session 3) · Electrical connected-trade expansion (Session 4) · Plumbing connected-trade expansion (Session 5) · Carpentry connected-trade expansion (Session 6) · Door, window, glass & welding expansion (Session 7) · Post-renovation cleaning expansion (Session 8) · Commercial renovation cluster expansion (Session 9)
 
 ---
 
@@ -323,7 +323,7 @@
 - [x] ✅ Connect electrical renovation — COMPLETED (electrical service + kitchen/bathroom electrical + DB box, lighting; Session 4 expanded electrical 4→10 subservices with house rewiring, additional power points, switch installation, kitchen/bathroom electrical and renovation electrical work)
 - [x] ✅ Connect carpentry (kitchen cabinets, wardrobes, etc) — COMPLETED (carpentry + kitchen-cabinet services linked; Session 6 expanded carpentry 4→10 subservices with walk-in wardrobe, vanity cabinet, storage cabinet, feature wall & wall panelling, dining bench & banquette, wardrobe & cabinet repair)
 - [x] ✅ Connect door/window/glass/metal — COMPLETED (Session 7 expanded all four services 4→10 subservices: door +6, window-repair +6, glass-aluminium +6, welding +6, each with native EN/MS/ZH specialty pages and topical-map silos)
-- [x] ✅ Create commercial renovation cluster (office, shoplot, retail, F&B) — COMPLETED (Commercial Shoplot Renovation existing + shoplot type in calculator)
+- [x] ✅ Create commercial renovation cluster (office, shoplot, retail, F&B) — COMPLETED (Session 9 expanded house-renovation 11→15 with Office Renovation & Fit-Out, Retail Shop Renovation, Restaurant & F&B Renovation, Office Partition & Workspace Build; Commercial Shoplot Renovation existing + shoplot type in calculator)
 - [x] ✅ Create post-renovation cleaning cluster — COMPLETED (post-renovation-cleaning service expanded 4→10 subservices in Session 8: Construction Rough Cleaning & Site Clearance, Fine Dust Extraction & Air Purifying, Paint Splatter & Silicone Smear Removal, Window Glass & Aluminium Track Detailing, Floor Machine Scrubbing & Buffing, Move-In & Handover Final Cleaning, each with native EN/MS/ZH specialty pages and topical authority silos)
 
 ### Phase 12 — Problem-Based Content
@@ -838,10 +838,10 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 - ✅ All 24 new subservices carry native MS + ZH specialty locale content and typed topical-authority silos
 - ✅ All 24 priced "On Quote" / "Atas Sebut Harga" / "依报价" — no invented prices
 
-### Commercial Renovation (Existing subservice - expand to service or cluster)
+### Commercial Renovation (Existing subservice - expand to service or cluster) — ✅ COMPLETED (Session 9)
 
 - Existing: house-renovation/commercial-shoplot-renovation
-- Expand to: Office Renovation, Shoplot Renovation, Retail Renovation, Commercial Renovation, Office Partition, Shop Renovation, Restaurant/F&B Renovation
+- ✅ Expanded (Session 9) to: Office Renovation & Fit-Out, Retail Shop Renovation, Restaurant & F&B Renovation, Office Partition & Workspace Build (4 new subservices under house-renovation, 11→15). "Commercial Renovation" and "Shop Renovation" intentionally omitted — they duplicate the existing Commercial Shoplot Renovation subservice; the existing shoplot entry remains the umbrella commercial entry.
 
 ### Post-Renovation (Existing - enhance)
 
@@ -1004,10 +1004,20 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 - [x] ✅ QA: full `next build` PASS (**6,070 rendered pages**, +18 = 6 EN + 6 MS + 6 ZH new specialty pages), TypeScript 0 errors, ESLint 0 warnings, prebuild (i18n 1085 keys × 3 + estimator tests 344,800 assertions) PASS, audit:links 0 broken targets (457,958 links across 6,062 pages), audit:html PASS (0 fatal, 0 warnings), seo:audit PASS
 - [x] ✅ **No invented prices used** — all 6 new subservices priced "On Quote" / "Atas Sebut Harga" / "依报价"; existing published entry prices (RM 650, RM 1,400, RM 10/sq ft, RM 320) left untouched and no new price, warranty, review or licence claim was introduced
 
+**Session 9 (this session) — Commercial renovation cluster expansion:**
+
+- [x] ✅ Expanded **house-renovation** service: 11→15 subservices (added Office Renovation & Fit-Out, Retail Shop Renovation, Restaurant & F&B Renovation, Office Partition & Workspace Build) with full EN/MS/ZH name, price and description in services-data (main + i18n.ms + i18n.zh). **"Commercial Renovation" and "Shop Renovation" were intentionally not added separately** — they would duplicate the existing Commercial Shoplot Renovation subservice (retail/F&B shop fit-outs) and Renovation Contractor Services, creating thin/duplicate pages.
+- [x] ✅ Added **4 new house-renovation commercial specialty entries** with real native MS/ZH content (office-renovation-and-fit-out, retail-shop-renovation, restaurant-and-f-and-b-renovation, office-partition-and-workspace-build) — total **188 specialties × 2 = 376 native blocks**, audit:specialty-locale PASS with per-page list-count parity
+- [x] ✅ Registered all 4 new specialties in topical-authority-map with relatedProblems + relatedBlogs — audit:topical-map PASS (**31/31 services, 231 typed specialty relationships** = 100% coverage)
+- [x] ✅ Corrected the service-directory eyebrow label in messages (en/ms/zh) from "28" to "31" Services/Perkhidmatan/项服务 (was stale; the site actually has 31 services)
+- [x] ✅ Regenerated generated files via prebuild: quote-catalog.generated.ts, service-summary.generated.ts, rate-book.generated.ts, llms-full.txt, site-summary.json (subServices count 227 → 231; sitemap auto-includes the 4 new EN specialties + 8 MS/ZH twins via hasSpecialtyLocaleContent)
+- [x] ✅ QA: full `next build` PASS (**6,074 rendered pages**, +12 = 4 EN + 4 MS + 4 ZH new commercial specialty pages), TypeScript 0 errors, ESLint 0 warnings, prebuild (i18n 1085 keys × 3 + estimator tests 344,800 assertions) PASS, audit:links 0 broken targets (458,858 links across 6,074 pages), audit:html PASS (0 fatal, 0 warnings), seo:audit PASS, audit:meta PASS (0 missing titles/descriptions, 0 JSON-LD parse failures, 0 NAP issues; run with larger Node heap)
+- [x] ✅ **No invented prices used** — all 4 new subservices priced "On Quote" / "Atas Sebut Harga" / "依报价"; no new price, warranty, review or licence claim was introduced
+
 ## In Progress This Session
 
 - [x] ✅ Enhance post-renovation cleaning connected-trade subServices (construction rough cleaning & site clearance, fine dust extraction & air purifying, paint splatter & silicone smear removal, window glass & aluminium track detailing, floor machine scrubbing & buffing, move-in & handover final cleaning) — COMPLETED (Session 8)
-- [ ] 🔄 Commercial renovation cluster expansion — PENDING (shoplot exists, office/retail/F&B can be added as subservices)
+- [x] ✅ Commercial renovation cluster expansion (office, retail, restaurant/F&B, office partition & workspace as subservices under house-renovation) — COMPLETED (Session 9; 4 new subservices, 4 specialty-entries, 4 topical-map silos)
 - [ ] 🔄 Problem-based renovation content — PENDING (43 existing problems audited, renovation-related problems like hollow tiles, cracked tiles, water-damaged ceiling can be added as thin-page avoidance)
 - [ ] 🔄 Location SEO renovation enhancement — PENDING (49+ areas exist, need localized renovation content without thin duplication)
 
@@ -1020,7 +1030,7 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 - ~~Enhance carpentry service with Built-in Wardrobe, Walk-in Wardrobe, TV Cabinet, TV Feature Wall, Shoe Cabinet, Storage Cabinet, Vanity Cabinet, Study Table subservices~~ ✅ COMPLETED (Session 6 — carpentry 4→10 subservices; added Walk-in Wardrobe & Closet System, Vanity Cabinet & Dressing Table, Storage Cabinet & Display Shelving, Feature Wall & Wall Panelling, Dining Bench & Banquette Seating, Wardrobe & Cabinet Repair with real EN/MS/ZH content + 6 new specialty locale entries; Built-in Wardrobe, TV Console & Feature Wall, Study Desk & Home Office and Shoe Cabinet & Entry Storage already existed)
 - ~~Enhance door/window/glass/metal services with Door Replacement, Door Frame, Window Installation/Replacement, Glass Partition, Grille, Iron Works subservices~~ ✅ COMPLETED (Session 7 — door 4→10, window-repair 4→10, glass-aluminium 4→10, welding 4→10; 24 new subservices with real EN/MS/ZH content + 24 new specialty locale entries + 24 topical-map silos. **Phase 11 connected-trade expansion fully closed.**)
 - ~~Create post-renovation cleaning expansion: Construction Cleaning, Debris Removal, Grout Cleaning, Dust Removal, Final Cleaning, Handover Cleaning subservices~~ ✅ COMPLETED (Session 8 — post-renovation-cleaning 4→10 subservices; 6 new subservices with real EN/MS/ZH content + 6 new specialty locale entries + 6 topical-map silos)
-- Create commercial renovation cluster expansion: Office Renovation, Retail Renovation, Commercial Renovation, Office Partition, Shop Renovation, Restaurant/F&B Renovation as subservices under house-renovation or new service
+- ~~Create commercial renovation cluster expansion: Office Renovation, Retail Renovation, Office Partition, Restaurant/F&B Renovation as subservices under house-renovation~~ ✅ COMPLETED (Session 9 — house-renovation 11→15 subservices; added Office Renovation & Fit-Out, Retail Shop Renovation, Restaurant & F&B Renovation, Office Partition & Workspace Build with real EN/MS/ZH content + 4 new specialty locale entries + 4 topical-map silos. **Not added separately:** "Commercial Renovation" and "Shop Renovation" were intentionally omitted — they duplicate the existing Commercial Shoplot Renovation subservice (retail/F&B shop fit-outs) and the Renovation Contractor Services subservice, so adding them would create thin/duplicate pages. The existing Commercial Shoplot Renovation remains as the umbrella commercial entry under house-renovation.)
 - Create problem-based renovation pages only where genuine intent: Hollow Tiles, Cracked Tiles, Broken Tiles, Uneven Floor, Peeling Paint, Wall Cracks, Ceiling Cracks, Water-Damaged Ceiling, Bathroom Leakage, Roof Leakage, Damp Wall, Mould, Damaged Plaster Ceiling, Old Bathroom/Kitchen, Damaged Flooring, Broken Partition, Water Seepage — ensure unique value, not thin
 - Enhance location pages with renovation-specific localized content for KL, PJ, Subang Jaya, Shah Alam, Puchong, Klang, Cheras, Ampang, Setia Alam, Kajang, Cyberjaya, Putrajaya — EN/MS/ZH, avoid doorway/thin duplication, require uniqueness gate
 - Create cost content guides: House Renovation Cost, Kitchen Renovation Cost, Bathroom Renovation Cost, Condo Renovation Cost, Flooring/Tiling/Plaster Ceiling/Painting/Waterproofing/Wall Hacking Cost, Cost Per Sq Ft — only verified pricing, neutral wording otherwise
@@ -1029,18 +1039,20 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 
 ## Blocked
 
-- None - no new pricing/claims introduced in Session 8. All 6 new post-renovation-cleaning subservices are priced "On Quote" / "Atas Sebut Harga" / "依报价", so no business verification is pending.
+- None - no new pricing/claims introduced in Session 9. All 4 new commercial subservices are priced "On Quote" / "Atas Sebut Harga" / "依报价", so no business verification is pending.
+- (Prior) None for Session 8 — all 6 new post-renovation-cleaning subservices were priced "On Quote" / "Atas Sebut Harga" / "依报价".
 - (Prior) None for Session 7 either — all 24 new door / window-repair / glass-aluminium / welding subservices were priced "On Quote".
 - (Prior) None for Session 6 either — all 6 new carpentry subservices were priced "On Quote".
 
 ## Files Changed This Session
 
-- config/services-data.ts (enhanced post-renovation-cleaning 4→10 subservices: added Construction Rough Cleaning & Site Clearance, Fine Dust Extraction & Air Purifying, Paint Splatter & Silicone Smear Removal, Window Glass & Aluminium Track Detailing, Floor Machine Scrubbing & Buffing, Move-In & Handover Final Cleaning — EN/MS/ZH)
-- config/specialty-locale-content.ts (added 6 new post-renovation-cleaning specialty entries with real native MS/ZH content — total 184 specialties × 2 = 368 native blocks)
-- config/topical-authority-map.ts (registered 6 new post-renovation-cleaning specialties with relatedProblems + relatedBlogs, expanded PROB and BLOG pools for post-renovation-cleaning — 227 typed specialty relationships)
-- Generated files (regenerated via prebuild): config/blog-related.generated.json, config/quote-catalog.generated.ts, config/service-summary.generated.ts, lib/estimator/rate-book.generated.ts, public/llms-full.txt, public/site-summary.json
+- config/services-data.ts (expanded house-renovation 11→15 subservices — added Office Renovation & Fit-Out, Retail Shop Renovation, Restaurant & F&B Renovation, Office Partition & Workspace Build — full EN/MS/ZH in the main + i18n.ms + i18n.zh blocks)
+- config/specialty-locale-content.ts (added 4 new house-renovation commercial specialty entries with real native MS/ZH content — total 188 specialties × 2 = 376 native blocks)
+- config/topical-authority-map.ts (registered 4 new house-renovation commercial specialties with relatedProblems + relatedBlogs — 231 typed specialty relationships)
+- messages/en.json, messages/ms.json, messages/zh.json (corrected the service-directory eyebrow count from "28" to "31" Services/Perkhidmatan/项服务 across the 3 languages)
+- Generated files (regenerated via prebuild): config/quote-catalog.generated.ts, config/service-summary.generated.ts, lib/estimator/rate-book.generated.ts, public/llms-full.txt, public/site-summary.json (subServices count 227 → 231)
 - docs/seo-audit-report.md (regenerated by seo:audit)
-- RENOVATION_EXPANSION_PLAN.md (Session 8 progress + QA)
+- RENOVATION_EXPANSION_PLAN.md (Session 9 progress + QA)
 
 ## Files Created This Session
 
@@ -1052,38 +1064,40 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 
 ## QA Status
 
-- Build: ✅ PASS (prebuild + full `next build` — **6,070 rendered HTML pages**, +18 vs Session 7: 6 EN + 6 MS + 6 ZH new post-renovation-cleaning specialty pages)
+- Build: ✅ PASS (prebuild + full `next build` — **6,074 rendered HTML pages**, +12 vs Session 8: 4 EN + 4 MS + 4 ZH new commercial specialty pages)
 - TypeScript: ✅ PASS (0 errors via `npm run type-check` / tsc --noEmit)
 - ESLint: ✅ PASS (0 warnings via `npm run lint --max-warnings=0`)
-- Routes: ✅ PASS (31 services, **227 sub-services**, **184 specialties** with MS/ZH twins, 46 tools × 3 locales, sitemap includes 31 services with hreflang clusters)
-- SEO: ✅ PASS (seo:audit PASS → docs/seo-audit-report.md regenerated; the 6 new specialty pages emit real 3-way hreflang clusters EN/MS/ZH + x-default with self-canonical, and carry native MS/ZH metaTitle/metaDesc — verified in built HTML for construction-rough-cleaning-and-site-clearance, fine-dust-extraction-and-air-purifying, paint-splatter-and-silicone-smear-removal, window-glass-and-aluminium-track-detailing, floor-machine-scrubbing-and-buffing, move-in-and-handover-final-cleaning)
-- Sitemap: ✅ PASS (sitemap.ts auto-includes 31 services + 184 specialty twins via hasSpecialtyLocaleContent + 46 tools × 3 locales; site-summary.json verified via prebuild)
+- Routes: ✅ PASS (31 services, **231 sub-services**, **188 specialties** with MS/ZH twins, 46 tools × 3 locales, sitemap includes 31 services with hreflang clusters)
+- SEO: ✅ PASS (seo:audit PASS → docs/seo-audit-report.md regenerated; the 4 new specialty pages emit real 3-way hreflang clusters EN/MS/ZH + x-default with self-canonical, and carry native MS/ZH metaTitle/metaDesc — verified in built HTML for office-renovation-and-fit-out, retail-shop-renovation, restaurant-and-f-and-b-renovation, office-partition-and-workspace-build)
+- Sitemap: ✅ PASS (sitemap.ts auto-includes 31 services + 188 specialty twins via hasSpecialtyLocaleContent + 46 tools × 3 locales; site-summary.json verified via prebuild)
 - Schema: ✅ PASS (Service schema with OfferCatalog, FAQPage, BreadcrumbList, HowTo, Speakable, Organization, LocalBusiness, WebSite — no fake reviews/ratings)
-- Multilingual: ✅ PASS (audit:i18n 1085 keys × 3 locales PASS, **audit:specialty-locale 184 × 2 = 368 native blocks PASS** with per-page list-count parity, audit:problem-i18n PASS 74 keep-URLs × ms/zh, test:estimators 344,800 assertions PASS, **audit:topical-map 31/31 services, 227 typed relationships PASS**)
-- Internal Links: ✅ PASS (audit:links — **6,062 pages, 457,958 links, 0 broken targets**; new MS/ZH specialty pages render related problems + localized blog links from the topical map)
-- HTML quality: ✅ PASS (audit:html — 6,062 pages, 0 fatal findings, 0 warnings)
+- Multilingual: ✅ PASS (audit:i18n 1085 keys × 3 locales PASS — including the corrected service-directory eyebrow count, **audit:specialty-locale 188 × 2 = 376 native blocks PASS** with per-page list-count parity, audit:problem-i18n PASS 74 keep-URLs × ms/zh, test:estimators 344,800 assertions PASS, **audit:topical-map 31/31 services, 231 typed relationships PASS**)
+- Internal Links: ✅ PASS (audit:links — **6,074 pages, 458,858 links, 0 broken targets**; new MS/ZH specialty pages render related problems + localized blog links from the topical map)
+- HTML quality: ✅ PASS (audit:html — 6,074 pages, 0 fatal findings, 0 warnings)
+- Metadata: ✅ PASS (audit:meta — 0 missing titles, 0 missing descriptions, 0 JSON-LD parse failures, 0 NAP issues; note: the sandbox must run audit:meta with a larger Node heap — `NODE_OPTIONS=--max-old-space-size=6096` — as the default heap OOMs on this large inventory)
 - Mobile: ✅ PASS (navbar mobile cluster compact, lg:flex mega-menu, no backdrop-blur WebKit bug)
 - Accessibility: ⏳ PENDING (Phase 21 — semantic HTML, keyboard nav, labels, alt text, contrast, mobile usability; existing system uses semantic HTML, needs a full dedicated pass)
 - Performance: ✅ PASS (client bundle guard PASS; service-nav.generated used instead of registry, no heavy content registry in client)
 - CRO: ✅ PASS (WhatsAppButton, StickyMobileWhatsAppBar, StickyBookButton, HeaderWhatsAppActions, getRenovationQuote CTA in 3 langs)
-- Business-claim safety: ✅ PASS (0 new prices, warranties, reviews, licences or guarantees introduced — all 6 new subservices are On Quote in all three languages)
+- Business-claim safety: ✅ PASS (0 new prices, warranties, reviews, licences or guarantees introduced — all 4 new subservices are On Quote / Atas Sebut Harga / 依报价 in all three languages)
 
 ---
 
-### Start Here — Next Session (Session 9)
+### Start Here — Next Session (Session 10)
 
-Phase 11 (connected-trade subservice expansion) and the Post-Renovation Cleaning cluster are now **both fully completed**. All 31 services have their connected-trade subservices expanded (painting 8, all others 10–12), all 227 subservices are typed in the topical-authority map, and 184 specialties carry native MS/ZH pages.
+Phase 11 (connected-trade subservice expansion), the Post-Renovation Cleaning cluster, and the Commercial Renovation cluster are now **all fully completed**. All 31 services have their connected-trade subservices expanded (painting 8, all others 10–15), all **231 subservices** are typed in the topical-authority map, and **188 specialties** carry native MS/ZH pages.
 
-Recommended order for Session 9, highest priority first:
+Recommended order for Session 10, highest priority first:
 
-1. **Commercial renovation cluster** — Office Renovation, Retail Renovation, Office Partition, Shop Renovation, Restaurant/F&B Renovation. Add as subservices under `house-renovation` (which already covers residential and commercial renovation and holds "Commercial Shoplot Renovation") or evaluate standalone service. Follow the Session 2–8 pattern (services-data EN/MS/ZH → specialtyLocaleContent native MS/ZH → topical-authority-map).
+1. **Phase 21 — accessibility pass** (the only ⏳ item left in QA Status: check semantic HTML, keyboard navigation, accessible forms, labels, alt text, contrast, mobile usability). This is now the highest-priority open item since all content clusters are complete.
 2. **Phase 12 — problem content** (audit 43 existing problems for renovation overlap; add unique ones like hollow tiles, cracked tiles, water-damaged ceiling, damp wall without thin/duplicate pages).
-3. **Phase 21 — accessibility pass** (the only ⏳ item left in QA Status: check semantic HTML, keyboard navigation, accessible forms, labels, alt text, contrast, mobile usability).
-4. **Phase 13 location SEO**, cost guides, Phase 22 performance, Phase 23 sitemap/robots/final QA.
+3. **Phase 13 location SEO** — enhance location pages with renovation-specific localized content for KL, PJ, Subang Jaya, Shah Alam, Puchong, Klang, Cheras, Ampang, Setia Alam, Kajang, Cyberjaya, Putrajaya — EN/MS/ZH, avoid doorway/thin duplication, require uniqueness gate.
+4. **Cost content guides** — House Renovation Cost, Kitchen Renovation Cost, Bathroom Renovation Cost, Condo Renovation Cost, Cost Per Sq Ft — only verified pricing, neutral wording otherwise.
+5. **Phase 22 performance** and **Phase 23 sitemap/robots/final QA** polish.
 
-Known non-blocking backlog (pre-existing, not introduced by Sessions 2–8): 43 subservices still have no MS/ZH specialty-locale block — house-renovation, tiling, plaster-ceiling, flooring, kitchen-renovation and bathroom-renovation are the biggest gaps. The locale specialty routes are data-gated on `getSpecialtyLocaleContent`, so these simply do not render MS/ZH twins yet; nothing is broken. Closing this backlog is a good standalone tranche if a session has spare capacity.
+Known non-blocking backlog (pre-existing, not introduced by Sessions 2–9): some subservices still have no MS/ZH specialty-locale block — tiling, plaster-ceiling, flooring, kitchen-renovation and bathroom-renovation are the biggest gaps (house-renovation now has 4 new commercial twins added in Session 9). The locale specialty routes are data-gated on `getSpecialtyLocaleContent`, so these simply do not render MS/ZH twins yet; nothing is broken. Closing this backlog is a good standalone tranche if a session has spare capacity.
 
-Per-session working pattern that has held for seven sessions: `config/services-data.ts` (EN + i18n.ms + i18n.zh) → `config/specialty-locale-content.ts` (native MS/ZH, must clear `scripts/validate-specialty-locale.ts` thresholds and MS/ZH list-count parity) → `config/topical-authority-map.ts` silos → `npm run prebuild` → `npm run build` → `type-check`, `lint`, `audit:links`, `audit:html`, `seo:audit` → update this file.
+Per-session working pattern that has held for eight sessions: `config/services-data.ts` (EN + i18n.ms + i18n.zh) → `config/specialty-locale-content.ts` (native MS/ZH, must clear `scripts/validate-specialty-locale.ts` thresholds and MS/ZH list-count parity) → `config/topical-authority-map.ts` silos → `npm run prebuild` → `npm run build` → `type-check`, `lint`, `audit:links`, `audit:html`, `seo:audit` → update this file.
 
 ---
 
