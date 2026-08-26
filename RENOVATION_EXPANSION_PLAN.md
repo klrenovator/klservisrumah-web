@@ -8,9 +8,9 @@
 
 ## Project Status
 
-**Overall Status:** ✅ Content roadmap COMPLETED (All Phases 1–23 complete & verified · 231/231 subservices with native Malay & Chinese pages) · ⚠️ One engineering task awaits owner action: CI activation — `workflows` permission gap re-confirmed a 4th time in Session 15 after GitHub disconnect/reconnect (git push still rejected, see Blocked)
+**Overall Status:** ✅ Content roadmap COMPLETED (All Phases 1–23 complete & verified · 231/231 subservices with native Malay & Chinese pages) · ✅ CI activation COMPLETED via merged PR #161; GitHub Actions run on main passed.
 
-**Last Updated:** 2026-08-26 (Session 15)
+**Last Updated:** 2026-08-26 (Session 15 — CI activation verified after PR #161 merge)
 
 **Languages:**
 
@@ -18,7 +18,7 @@
 - Malay (ms)
 - Chinese (zh)
 
-**Session:** Initial audit + foundation (Session 1) · Connected-trades expansion (Session 2) · Waterproofing expansion (Session 3) · Electrical connected-trade expansion (Session 4) · Plumbing connected-trade expansion (Session 5) · Carpentry connected-trade expansion (Session 6) · Door, window, glass & welding expansion (Session 7) · Post-renovation cleaning expansion (Session 8) · Commercial renovation cluster expansion (Session 9) · Accessibility pass (Session 10) · Problem content expansion, Location SEO, Performance & Full QA (Session 11) · Full MS/ZH specialty-coverage expansion + i18n defect fixes (Session 12) · CI activation attempt: workflow recreated, fully re-verified, push re-blocked, durable tracked copy added (Session 13) · CI activation re-attempt #3: permission gap re-confirmed, repo state re-verified green, session record pushed as its own doc-only PR (Session 14) · CI activation re-attempt #4 after owner reconnect: permission gap still present, workflow push rejected, gated file removed from session branch (Session 15)
+**Session:** Initial audit + foundation (Session 1) · Connected-trades expansion (Session 2) · Waterproofing expansion (Session 3) · Electrical connected-trade expansion (Session 4) · Plumbing connected-trade expansion (Session 5) · Carpentry connected-trade expansion (Session 6) · Door, window, glass & welding expansion (Session 7) · Post-renovation cleaning expansion (Session 8) · Commercial renovation cluster expansion (Session 9) · Accessibility pass (Session 10) · Problem content expansion, Location SEO, Performance & Full QA (Session 11) · Full MS/ZH specialty-coverage expansion + i18n defect fixes (Session 12) · CI activation attempt: workflow recreated, fully re-verified, push re-blocked, durable tracked copy added (Session 13) · CI activation re-attempt #3: permission gap re-confirmed, repo state re-verified green, session record pushed as its own doc-only PR (Session 14) · CI activation re-attempt #4 after owner reconnect: permission gap still present, workflow push rejected, gated file removed from session branch (Session 15) · CI activated manually by owner via GitHub and merged in PR #161; main run passed (Session 15)
 
 ---
 
@@ -1082,23 +1082,23 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 
 ## In Progress This Session
 
-- None in the sandbox. CI activation is **⚠️ BLOCKED** on the GitHub App’s missing `workflows` permission after the reconnect.
+- None. CI activation has been completed and verified on `main`.
 
 ## Pending Next
 
-1. **FIRST TASK — Activate CI once permission is actually available:** copy `docs/ci-workflow.yml` to `.github/workflows/ci.yml`, commit, push this session branch, open a PR, and confirm the `pull_request` CI run passes.
-2. If the owner already granted Workflows access, reconnect again and verify the integration permission specifically includes **Workflows: Read & Write** for `klrenovator/klservisrumah-web`; the push error proves the grant is not effective for this token.
-3. Monitor production Search Console indexation, rankings, and conversions once deployed (outside sandbox scope).
+1. ✅ CI activation is complete; continue monitoring future PR/push CI runs.
+2. Monitor production Search Console indexation, rankings, and conversions once deployed (outside sandbox scope).
 4. Optional maintenance only; no content roadmap work remains. Do not add services, subservices, prices, reviews, warranties, licences, guarantees, or other claims without verified business data.
 
 ## Blocked
 
-- ⚠️ **CI workflow activation — 4th confirmation, awaiting effective owner/integration permission.** The complete workflow is ready and locally verified; the durable byte-identical source is `docs/ci-workflow.yml`. After this session’s disconnect/reconnect, GitHub still rejected `git push` for `.github/workflows/ci.yml` with the missing `workflows` permission. The owner must reconnect the Arena GitHub integration with **Workflows: Read & Write** enabled for the `klrenovator` account/org. If the UI does not expose that permission, Arena support must enable it.
+- None for the renovation roadmap or CI activation. The Vercel `Account is blocked` check on PR #161 is a separate deployment/integration issue and does not block the merged GitHub Actions CI workflow.
 
 ## Completed This Session
 
-- [x] CI activation attempted after GitHub reconnect; push failure documented with the exact GitHub error.
-- [x] Branch cleaned so no permission-gated workflow commit remains locally.
+- [x] CI activation completed manually by the owner through GitHub PR #161 after the Arena App workflow permission remained unavailable.
+- [x] PR #161 merged into `main`; `.github/workflows/ci.yml` is present on `main`.
+- [x] GitHub Actions `CI` push run on `main` passed successfully (run 32960872289).
 - [x] Durable CI source retained at `docs/ci-workflow.yml`.
 - [x] No website changes; all EN/MS/ZH content preserved.
 
@@ -1117,7 +1117,7 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 ## QA Status (Session 15)
 
 - Repository state: ✅ clean after removing the rejected workflow commit; branch remains `arena/01a03da3-klservisrumah-web`.
-- CI activation: ⚠️ BLOCKED — GitHub push rejected for missing `workflows` permission even after reconnect.
+- CI activation: ✅ COMPLETED — PR #161 merged; workflow exists on `main`; GitHub Actions push run passed.
 - Website QA: ✅ no website/content changes were made; prior full QA remains valid per Sessions 13–14.
 
 ## Files Changed This Session (Session 13) — historical record
