@@ -1061,6 +1061,7 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 - [x] ✅ **Made the workflow durable & recoverable across sessions**: added a byte-identical tracked copy at `docs/ci-workflow.yml` (tracked paths outside `.github/workflows/` are NOT permission-gated, so this copy pushes normally). Next session: `cp docs/ci-workflow.yml .github/workflows/ci.yml` after the owner reconnects GitHub with workflows permission, commit, push — no re-authoring needed. Lesson added to Session Continuity Notes: never rely on untracked files or prose descriptions for artifact durability — use tracked copies.
 - [x] ✅ Updated this plan (header status, Session 13 record, Blocked, Start-Here, continuity notes).
 - [x] ✅ **No website/content changes** — no new services, subservices, prices, warranties, reviews, licences or claims; EN/MS/ZH content untouched and re-verified green by the full audit suite.
+- [x] ✅ **PR #156 merged into main** (user-requested merge, 2026-08-26, merge commit 39639e9) — the durable CI copy `docs/ci-workflow.yml` and the Session 13 plan record are now on main, so the activation steps survive even a fresh sandbox checkout.
 
 ## In Progress This Session
 
@@ -1080,7 +1081,7 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
   - Push routes exhausted twice (Session 12 + Session 13): `git push` → "refusing to allow a GitHub App to create or update workflow `.github/workflows/ci.yml` without `workflows` permission"; Contents API PUT → 403 "Resource not accessible by integration". The Arena GitHub App token (`arena-ai-coding-agent[bot]`) does not carry the `workflows` permission.
   - A byte-identical **tracked copy now lives at `docs/ci-workflow.yml`** (pushable — outside the permission-gated path), so no re-authoring is ever needed again.
   - **What the owner must do (exact steps):** in Arena.ai, open Settings → Connections (Integrations) → GitHub, disconnect/reconnect the GitHub integration and ensure the connection is granted the **Workflows: Read & Write** permission for the `klrenovator` account/org. If Arena's GitHub connection UI does not offer a Workflows grant, contact Arena support to enable it for the integration. Once reconnected, tell the agent to "activate CI" — the next session copies `docs/ci-workflow.yml` into place, pushes, opens the PR and confirms the run.
-  - Everything else from Sessions 12–13 (2 new audit gates, link-audit source scan, all content) is pushed and merged via PR #155.
+  - Everything else from Sessions 12–13 (2 new audit gates, link-audit source scan, all content) is pushed and merged via PR #155; the durable CI copy + Session 13 plan record are merged via PR #156 (39639e9).
 - None other — Session 12 introduced no new pricing, warranties, reviews or licences. All 44 new specialty blocks reuse only prices already published on the corresponding EN subservice pages (or "On Quote" / "Atas Sebut Harga" / "依报价"), warranty claims translated from the existing per-service warranty fields in services-data.ts, and authority-approval disclaimers (DBKL/MBSA/JMB — "approval not guaranteed") already used across the site.
 
 ## Files Changed This Session (Session 13)
