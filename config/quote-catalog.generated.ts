@@ -1633,6 +1633,16 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "desc": "Siling aras tunggal yang bersih dengan kemasan skim — sesuai untuk interior moden minimalis."
           },
           {
+            "name": "Pemasangan Siling Palsu",
+            "price": "Dari RM 10 / sq ft",
+            "desc": "Siling palsu umum untuk rumah dan pejabat dengan rangka GI dan papan tahan lembapan."
+          },
+          {
+            "name": "Siling Gipsum",
+            "price": "Dari RM 10 / sq ft",
+            "desc": "Siling papan gipsum dengan pilihan tahan api dan tahan lembapan daripada Knauf, BNBM, Gyproc."
+          },
+          {
             "name": "Siling Bertingkat & L-Box",
             "price": "Dari RM 14 / sq ft",
             "desc": "Siling dua atau tiga aras dengan alur LED tersembunyi, profil L-box, dan potongan downlight bersepadu."
@@ -1641,6 +1651,31 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "name": "Siling Cove & Melengkung",
             "price": "Dari RM 22 / sq ft",
             "desc": "Siling cove, melengkung, atau tong yang direka khas dengan rangka GI fleksibel untuk pencahayaan tidak langsung ambien."
+          },
+          {
+            "name": "Partisi Gipsum & Partisi Pejabat",
+            "price": "Dari RM 11 / sq ft",
+            "desc": "Partisi papan gipsum untuk pembahagian bilik, kabin pejabat dan bilik mesyuarat dengan pilihan penebat bunyi."
+          },
+          {
+            "name": "Partisi Bilik",
+            "price": "Dari RM 11 / sq ft",
+            "desc": "Partisi bilik tidur, belajar atau stor dengan bukaan pintu dan bekalan titik elektrik."
+          },
+          {
+            "name": "Dinding Ciri & Panel Dinding",
+            "price": "Dari RM 18 / sq ft",
+            "desc": "Dinding ciri TV, panel fluted, wainscoting dan panel dinding hiasan dengan LED tersembunyi."
+          },
+          {
+            "name": "Skim Coat & Melepa Dinding",
+            "price": "Dari RM 5 / sq ft",
+            "desc": "Salutan skim licin seperti kaca dan kerja melepa dinding untuk kemasan siap-cat dan pembaikan retak."
+          },
+          {
+            "name": "Pembaikan Retak Dinding & Mengecat Semula",
+            "price": "Dari RM 180",
+            "desc": "Pengisian retak halus dan struktur, pengamplasan, sealer dan pengecatan semula premium untuk kemasan sempurna."
           },
           {
             "name": "Pembaikan & Skim Semula Siling",
@@ -1660,6 +1695,16 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "desc": "整洁的单层平顶，刮腻子收光，适合极简现代的室内风格。"
           },
           {
+            "name": "假天花安装",
+            "price": "从 RM 10 / sq ft 起",
+            "desc": "适用于住宅与办公室的通用假天花，采用 GI 龙骨与防潮板材。"
+          },
+          {
+            "name": "石膏板天花",
+            "price": "从 RM 10 / sq ft 起",
+            "desc": "石膏板天花，可选 Knauf、BNBM、Gyproc 防火与防潮板材。"
+          },
+          {
             "name": "错层与 L 盒天花",
             "price": "从 RM 14 / sq ft 起",
             "desc": "两层或三层错层，含隐藏式 LED 灯槽、L 盒造型与筒灯开孔。"
@@ -1668,6 +1713,31 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "name": "灯带与弧形天花",
             "price": "从 RM 22 / sq ft 起",
             "desc": "定制弧形、灯带或桶形天花，使用柔性 GI 骨架，营造间接氛围照明。"
+          },
+          {
+            "name": "石膏隔断与办公室隔断",
+            "price": "从 RM 11 / sq ft 起",
+            "desc": "石膏板隔断，用于房间分隔、办公卡位与会议室，可选隔音。"
+          },
+          {
+            "name": "房间隔断",
+            "price": "从 RM 11 / sq ft 起",
+            "desc": "卧室、书房或储物间隔断，预留门洞与电源点位。"
+          },
+          {
+            "name": "背景墙与墙板",
+            "price": "从 RM 18 / sq ft 起",
+            "desc": "电视背景墙、格栅板、护墙板与装饰墙板，含隐藏式 LED。"
+          },
+          {
+            "name": "刮腻子与墙面抹灰",
+            "price": "从 RM 5 / sq ft 起",
+            "desc": "镜面光滑刮腻子与墙面抹灰，即可上漆，并修补裂缝。"
+          },
+          {
+            "name": "墙面裂缝修补与重漆",
+            "price": "从 RM 180 起",
+            "desc": "填补发丝裂缝与结构裂缝、打磨、底漆与优质重漆，效果完美。"
           },
           {
             "name": "天花修补与重新找平",

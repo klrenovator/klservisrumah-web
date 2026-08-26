@@ -1111,10 +1111,31 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
             "name": "Siling Plaster Rata"
           },
           {
+            "name": "Pemasangan Siling Palsu"
+          },
+          {
+            "name": "Siling Gipsum"
+          },
+          {
             "name": "Siling Bertingkat & L-Box"
           },
           {
             "name": "Siling Cove & Melengkung"
+          },
+          {
+            "name": "Partisi Gipsum & Partisi Pejabat"
+          },
+          {
+            "name": "Partisi Bilik"
+          },
+          {
+            "name": "Dinding Ciri & Panel Dinding"
+          },
+          {
+            "name": "Skim Coat & Melepa Dinding"
+          },
+          {
+            "name": "Pembaikan Retak Dinding & Mengecat Semula"
           },
           {
             "name": "Pembaikan & Skim Semula Siling"
@@ -1130,10 +1151,31 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
             "name": "平顶石膏天花"
           },
           {
+            "name": "假天花安装"
+          },
+          {
+            "name": "石膏板天花"
+          },
+          {
             "name": "错层与 L 盒天花"
           },
           {
             "name": "灯带与弧形天花"
+          },
+          {
+            "name": "石膏隔断与办公室隔断"
+          },
+          {
+            "name": "房间隔断"
+          },
+          {
+            "name": "背景墙与墙板"
+          },
+          {
+            "name": "刮腻子与墙面抹灰"
+          },
+          {
+            "name": "墙面裂缝修补与重漆"
           },
           {
             "name": "天花修补与重新找平"
