@@ -1,0 +1,80 @@
+# ── KL Servis Rumah — CI ────────────────────────────────────────────────────
+# Runs the complete local QA suite on every PR and push to main, mirroring the
+# exact sequence verified locally (Session 12, plan §"Task 3 — CI pipeline"):
+#
+#   npm ci → prebuild (all content & i18n gates) → type-check → lint
+#         → full SSG build → audit:links → audit:html → seo:audit → audit:meta
+#
+# Gates inside `prebuild`:
+#   gen:rates · gen:ai-context · gen:service-summary · gen:blog-index
+#   validate:blogs · audit:topical-map · audit:specialty-locale
+#   audit:specialty-coverage · audit:service-i18n · audit:i18n
+#   audit:problem-i18n · audit:client-bundle · test:estimators
+#
+# Post-build audits read `.next/server/app` (static SSG output), so the build
+# step must complete before they run. audit:meta needs a large Node heap
+# (~6,200 rendered pages); ubuntu-latest runners have 16 GB RAM, so 8 GB is a
+# safe ceiling. No secrets are required: every protected endpoint fails closed
+# without env vars and NEXT_PUBLIC_GA_ID is optional.
+# ─────────────────────────────────────────────────────────────────────────────
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Superseded runs of the same branch/PR are cancelled to save runner minutes.
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  qa:
+    name: QA — gates, types, lint, SSG build, audits
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      NODE_OPTIONS: --max-old-space-size=8192
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node 22 (engines >=20.9.0, matches verified local env)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Prebuild — content generation + 13 validation gates
+        run: npm run prebuild
+
+      - name: TypeScript — tsc --noEmit
+        run: npm run type-check
+
+      - name: ESLint — zero warnings policy
+        run: npm run lint
+
+      - name: SSG build — ~6,200 static pages
+        run: npm run build
+
+      - name: Internal link audit — rendered pages + source scan
+        run: npm run audit:links
+
+      - name: HTML quality audit
+        run: npm run audit:html
+
+      - name: SEO audit
+        run: npm run seo:audit
+
+      - name: Metadata & JSON-LD schema audit
+        run: npm run audit:meta
+        
