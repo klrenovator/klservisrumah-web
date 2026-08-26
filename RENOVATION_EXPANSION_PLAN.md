@@ -1,16 +1,16 @@
 # KL Servis Rumah Renovation Expansion
 
 **Website:** https://www.klservisrumah.my
-**Project Branch:** arena/01a03c92-klservisrumah-web (current session)
+**Project Branch:** arena/01a03d1b-klservisrumah-web (current session)
 **Repository:** klrenovator/klservisrumah-web
 
 ---
 
 ## Project Status
 
-**Overall Status:** ✅ COMPLETED (All Phases 1–23 complete & verified · Session 12 closed the final MS/ZH specialty-coverage gap — 231/231 subservices now have native Malay & Chinese pages)
+**Overall Status:** ✅ Content roadmap COMPLETED (All Phases 1–23 complete & verified · 231/231 subservices with native Malay & Chinese pages) · ⚠️ One engineering task awaits owner action: CI activation (token permission, see Blocked)
 
-**Last Updated:** 2026-08-26 (Session 12)
+**Last Updated:** 2026-08-26 (Session 13)
 
 **Languages:**
 
@@ -18,7 +18,7 @@
 - Malay (ms)
 - Chinese (zh)
 
-**Session:** Initial audit + foundation (Session 1) · Connected-trades expansion (Session 2) · Waterproofing expansion (Session 3) · Electrical connected-trade expansion (Session 4) · Plumbing connected-trade expansion (Session 5) · Carpentry connected-trade expansion (Session 6) · Door, window, glass & welding expansion (Session 7) · Post-renovation cleaning expansion (Session 8) · Commercial renovation cluster expansion (Session 9) · Accessibility pass (Session 10) · Problem content expansion, Location SEO, Performance & Full QA (Session 11) · Full MS/ZH specialty-coverage expansion + i18n defect fixes (Session 12)
+**Session:** Initial audit + foundation (Session 1) · Connected-trades expansion (Session 2) · Waterproofing expansion (Session 3) · Electrical connected-trade expansion (Session 4) · Plumbing connected-trade expansion (Session 5) · Carpentry connected-trade expansion (Session 6) · Door, window, glass & welding expansion (Session 7) · Post-renovation cleaning expansion (Session 8) · Commercial renovation cluster expansion (Session 9) · Accessibility pass (Session 10) · Problem content expansion, Location SEO, Performance & Full QA (Session 11) · Full MS/ZH specialty-coverage expansion + i18n defect fixes (Session 12) · CI activation attempt: workflow recreated, fully re-verified, push re-blocked, durable tracked copy added (Session 13)
 
 ---
 
@@ -1048,49 +1048,62 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 
 - [x] ✅ **Task 1 — `audit:service-i18n` gate** (`scripts/validate-service-i18n.ts`, wired into prebuild): fails the build whenever a service's `i18n.ms`/`i18n.zh` `subServices` override array exists but doesn't match the EN array length (the exact plaster-ceiling invisible-subservices bug class — `getLocalizedService()` replaces the array wholesale), or carries empty name/price/desc entries. Negative-tested: removing one MS entry correctly fails with a per-service message. 31/31 services PASS.
 - [x] ✅ **Task 2 — link-audit blind-spot closed** (`scripts/internal-link-audit.ts` extended): phase 2 scans `app/` + `components/` source for fully-static internal link targets (`href="…"`, `href={'…'}`, `` href={`…`} `` without interpolation, `router.push('…')`) and resolves them against the build manifest — client-only UI (mega-menus, drawers, modals) never appears in static HTML, which is exactly how the navbar condo-404 hid for months. Negative-tested: re-introducing the original `condo-renovation` link fails with `components/ui/navbar.tsx:182`. Also models middleware semantics precisely: `/ms/X`/`/zh/X` are valid iff `/X` resolves (deep-locale 301) or X is a REAL_LOCALE_TREES page; `/admin*` is middleware-gated; `/_next/` assets skipped. Caught and correctly classified 2 previously-unseen links (`/ms/areas`, `/zh/areas` — valid via middleware redirect). Current: 466,199 rendered links + 58 source links, 0 broken.
-- [x] ✅ **Task 3 — CI pipeline** (`.github/workflows/ci.yml`): authored to run the complete local QA suite on every PR and push to main — npm ci → prebuild (all 14 gates incl. the 2 new ones) → type-check → lint → full SSG build → audit:links (rendered + source) → audit:html → seo:audit → audit:meta. The identical command sequence passes locally (all green). ⚠️ **Activation blocked**: this session's GitHub App token lacks the `workflows` permission, so the file could not be pushed (git push and Contents API both 403) — see Blocked.
+- [x] ✅ **Task 3 — CI pipeline** (`.github/workflows/ci.yml`): authored to run the complete local QA suite on every PR and push to main — npm ci → prebuild (all 14 gates incl. the 2 new ones) → type-check → lint → full SSG build → audit:links (rendered + source) → audit:html → seo:audit → audit:meta. The identical command sequence passes locally (all green). ⚠️ **Activation blocked**: this session's GitHub App token lacks the `workflows` permission, so the file could not be pushed (git push and Contents API both 403) — see Blocked. *(Correction, Session 13: "preserved in the working tree (untracked) and in this plan" below was false at the next session boundary — the untracked file was lost and the plan never contained the YAML. Session 13 recreated it and added the durable tracked copy `docs/ci-workflow.yml`.)*
 - [x] ✅ **PR #155 merged into main** (user-requested merge, 2026-08-26) — all Session 12 content, defect fixes and the two new build gates are now on main.
 - [x] ✅ **Sandbox-recovery incident (documented for future sessions):** a turn-boundary snapshot reset reverted the Git history/remote (Session 12's commit disappeared; working tree survived) and `node_modules`/`.next` were wiped. Recovered by re-applying the services-data plaster-ceiling MS/ZH arrays from the plan/transcript and re-running the full QA suite. Lesson added to Session Continuity Notes.
 
+**Session 13 (this session) — CI activation attempt: workflow recreated, fully re-verified, push re-blocked, durable tracked copy added:**
+
+- [x] ✅ Verified Session 12 state on main (PR #155 merged at 9b5bab5): 231/231 specialty coverage, both new build gates (`audit:specialty-coverage`, `audit:service-i18n`), two-phase link audit — all present and green. No completed work repeated; content roadmap confirmed 100% done.
+- [x] ✅ **Recovered the lost `.github/workflows/ci.yml`**: Session 12's claim that the file was "preserved in the working tree (untracked)" proved FALSE at session start — the untracked file was lost at the session boundary (the exact snapshot-loss incident class in the continuity notes), and it was never actually embedded "in this plan" either. Recreated it faithfully from the plan's Task 3 description + `package.json` script chain (same command sequence, Node 22, heap bump for the ~6,200-page audits, `contents: read` only, concurrency-cancel, 60-min timeout, `push: main` + `pull_request` + `workflow_dispatch` triggers).
+- [x] ✅ **Re-verified the complete CI sequence locally before pushing** (all green): `npm ci` → `prebuild` (13 gates, 344,800 estimator assertions, **zero drift** in regenerated files) → `type-check` (0 errors) → `lint` (0 warnings) → `build` (6,180 HTML pages in `.next/server/app`) → `audit:links` (466,199 rendered + 58 source links, 0 broken — identical to Session 12's numbers) → `audit:html` (0 fatal, 0 warnings) → `seo:audit` (PASS, report regenerated) → `audit:meta` (0 parse failures / 0 missing titles / 0 NAP issues).
+- [x] ❌ **Push re-blocked by the same permission gap**: `git push` rejected with "refusing to allow a GitHub App to create or update workflow … without `workflows` permission"; GitHub Contents API PUT re-tested → 403 "Resource not accessible by integration". Both routes exhausted — this session's token (`arena-ai-coding-agent[bot]`) still lacks the `workflows` permission. **Owner action required (see Blocked).**
+- [x] ✅ **Made the workflow durable & recoverable across sessions**: added a byte-identical tracked copy at `docs/ci-workflow.yml` (tracked paths outside `.github/workflows/` are NOT permission-gated, so this copy pushes normally). Next session: `cp docs/ci-workflow.yml .github/workflows/ci.yml` after the owner reconnects GitHub with workflows permission, commit, push — no re-authoring needed. Lesson added to Session Continuity Notes: never rely on untracked files or prose descriptions for artifact durability — use tracked copies.
+- [x] ✅ Updated this plan (header status, Session 13 record, Blocked, Start-Here, continuity notes).
+- [x] ✅ **No website/content changes** — no new services, subservices, prices, warranties, reviews, licences or claims; EN/MS/ZH content untouched and re-verified green by the full audit suite.
+
 ## In Progress This Session
 
-- None — Session 12 closed the final MS/ZH specialty-coverage gap. All 231 subservices across 31 services now have native Malay and Chinese specialty pages.
+- None — Session 13 had a single assigned task (CI activation). All preparation, verification and durability work is done; the only remaining step (the push) is blocked on owner action outside the sandbox.
 
 ## Pending Next
 
-- Monitor production Search Console indexation, GSC query rankings, and user conversions once deployed (outside sandbox scope).
-- Optional future content ideas (non-blocking, require business verification before any claims): none identified — all roadmap clusters are complete; do not add new services/subservices without new verified business data.
+1. **FIRST TASK (blocked on owner action) — Activate CI**: copy `docs/ci-workflow.yml` → `.github/workflows/ci.yml` on the session branch, commit, push, open PR, confirm the workflow runs and all steps pass. Only possible after the owner reconnects GitHub in Arena with the `workflows` permission (see Blocked for exact steps).
+2. Monitor production Search Console indexation, GSC query rankings, and user conversions once deployed (outside sandbox scope).
+3. Optional maintenance: when a subservice is ever renamed, the `audit:specialty-coverage` gate fails the build until its specialty entry (and any hardcoded links) are updated in the same change — keep the gates green.
+4. No content work pending — all roadmap clusters are complete; do not add new services/subservices without new verified business data.
 
 ## Blocked
 
-- ⚠️ **CI workflow activation** — `.github/workflows/ci.yml` is fully authored and locally verified but could not be pushed: the session's GitHub App token (`arena-ai-coding-agent[bot]`) lacks the `workflows` permission (git push rejected with "refusing to allow a GitHub App to create or update workflow", Contents API 403). The file is preserved in the working tree (untracked) and in this plan. **User decision (2026-08-26): the owner cannot add the file manually — the agent will handle activation as the FIRST task of the next session** (retry push; if the token still lacks `workflows` permission, the only remaining path is for the owner to reconnect GitHub in Arena with workflows permission — explain this clearly to them at that point). Everything else from this session (2 new audit gates, link-audit source scan, all content) is pushed and merged via PR #155.
+- ⚠️ **CI workflow activation — awaiting owner action (owner cannot add the file manually; agent handles activation once unblocked).** Status after Session 13:
+  - `.github/workflows/ci.yml` is fully authored and the **entire pipeline sequence re-verified green locally this session** (all gates, types, lint, 6,180-page build, 4 audits).
+  - Push routes exhausted twice (Session 12 + Session 13): `git push` → "refusing to allow a GitHub App to create or update workflow `.github/workflows/ci.yml` without `workflows` permission"; Contents API PUT → 403 "Resource not accessible by integration". The Arena GitHub App token (`arena-ai-coding-agent[bot]`) does not carry the `workflows` permission.
+  - A byte-identical **tracked copy now lives at `docs/ci-workflow.yml`** (pushable — outside the permission-gated path), so no re-authoring is ever needed again.
+  - **What the owner must do (exact steps):** in Arena.ai, open Settings → Connections (Integrations) → GitHub, disconnect/reconnect the GitHub integration and ensure the connection is granted the **Workflows: Read & Write** permission for the `klrenovator` account/org. If Arena's GitHub connection UI does not offer a Workflows grant, contact Arena support to enable it for the integration. Once reconnected, tell the agent to "activate CI" — the next session copies `docs/ci-workflow.yml` into place, pushes, opens the PR and confirms the run.
+  - Everything else from Sessions 12–13 (2 new audit gates, link-audit source scan, all content) is pushed and merged via PR #155.
 - None other — Session 12 introduced no new pricing, warranties, reviews or licences. All 44 new specialty blocks reuse only prices already published on the corresponding EN subservice pages (or "On Quote" / "Atas Sebut Harga" / "依报价"), warranty claims translated from the existing per-service warranty fields in services-data.ts, and authority-approval disclaimers (DBKL/MBSA/JMB — "approval not guaranteed") already used across the site.
 
-## Files Changed This Session (Session 12)
+## Files Changed This Session (Session 13)
 
-- `config/specialty-locale-content.ts` (+44 new specialty entries with fully native MS & ZH blocks = 88 new native content blocks; removed 1 dead orphan key `house-renovation/condo-renovation` that no longer matched any subservice after the "Condo Renovation" → "Condo Interior Refurbishment" rename; registry now 188 → 231 entries / 376 → 462 native blocks)
-- `config/services-data.ts` (plaster-ceiling MS & ZH `subServices` arrays expanded 4 → 11 entries in EN order — the 7 Session-1 subservices (False Ceiling, Gypsum Ceiling, Gypsum Partition & Office Partition, Room Partition, Feature Wall & Wall Panel, Skim Coat & Wall Plastering, Wall Crack Repair & Repainting) were previously invisible on `/ms/services/plaster-ceiling` and `/zh/services/plaster-ceiling`)
-- `components/ui/navbar.tsx` (fixed broken mega-menu "Condo Renovation" shortcut: `/services/house-renovation/condo-renovation` (404 — page never existed) → `/services/house-renovation/condo-interior-refurbishment`)
-- `scripts/internal-link-audit.ts` (added phase-2 source scan for client-only static links + precise middleware/locale/admin resolution modelling — the navbar condo-404 defect class can no longer hide)
-- `package.json` (`audit:service-i18n` script added and chained into prebuild; earlier in session: `audit:specialty-coverage` added)
-- `config/quote-catalog.generated.ts`, `config/service-summary.generated.ts`, `public/llms-full.txt`, `public/site-summary.json` (regenerated by prebuild)
-- `docs/seo-audit-report.md` (regenerated by seo:audit)
-- `RENOVATION_EXPANSION_PLAN.md` (Session 12 progress; reconciled 30 stale ⏳ tracking-table rows with the Phase 4/9/10 completion decisions already documented in the master checklist)
+- `RENOVATION_EXPANSION_PLAN.md` (Session 13 record: header status, CI activation attempt, Blocked escalation with exact owner steps, durable-copy strategy, Start-Here for Session 14, continuity-note lesson)
 
 ## Files Created This Session
 
-- `scripts/validate-specialty-coverage.ts` (permanent build gate: every subservice must have a native MS/ZH specialty entry, and no orphan specialty keys may exist — locks in the coverage defect class found and fixed this session)
-- `scripts/validate-service-i18n.ts` (permanent build gate: locale `subServices` override arrays must match the EN count with non-empty name/price/desc — locks in the plaster-ceiling invisible-subservices defect class)
-- `.github/workflows/ci.yml` (CI pipeline: full QA suite on every PR / push to main — ⚠️ authored + locally verified but NOT pushed: token lacks workflows permission; file preserved in working tree, see Blocked)
+- `docs/ci-workflow.yml` (tracked, byte-identical copy of the pending `.github/workflows/ci.yml` — pushes normally because it lives outside the permission-gated `.github/workflows/` path; next session copies it into place to activate CI)
+- `.github/workflows/ci.yml` (authored on disk **and committed in local session git history**, but NOT pushed — push rejected: token lacks `workflows` permission, see Blocked. Exists in the sandbox working tree only; treat `docs/ci-workflow.yml` as the canonical durable copy)
 
 ## Files Deleted This Session
 
-- None (1 dead data key removed from `specialty-locale-content.ts`; no files deleted)
+- None
 
 ## QA Status
 
+- Full CI-equivalent sequence re-run locally this session: ✅ ALL GREEN — `npm ci` → `prebuild` (13 gates; i18n 1103 keys × 3; specialty-locale 231 × 2 = 462 blocks; specialty-coverage 231/231 + 0 orphans; service-i18n 31/31; estimators 344,800 assertions; zero drift in regenerated files) → `type-check` 0 errors → `lint` 0 warnings → `build` 6,180 HTML pages → `audit:links` 466,199 rendered + 58 source links, 0 broken → `audit:html` 0 fatal / 0 warnings → `seo:audit` PASS → `audit:meta` 0 issues. Website content, URLs and EN/MS/ZH pages untouched (no content changes this session).
+- CI activation: ⚠️ BLOCKED on owner action (workflows permission) — see Blocked.
+
+### QA Status (Session 12) — historical record
+
 - Build: ✅ PASS (prebuild incl. new coverage gate + full `next build` — **6,188 rendered pages**, +88 vs Session 11 = exactly 44 new MS + 44 new ZH specialty pages; EN hreflang twins already existed)
-- TypeScript: ✅ PASS (0 errors via `npm run type-check`)
 - ESLint: ✅ PASS (0 warnings via `npm run lint --max-warnings=0`)
 - Specialty locale: ✅ PASS (audit:specialty-locale — **231 specialties × ms/zh = 462 native blocks**, all above the non-thin threshold with per-page MS/ZH list-count parity)
 - Specialty coverage: ✅ PASS (new audit:specialty-coverage — **all 231 subservices across 31 services have native MS/ZH specialty pages; 0 orphan keys**)
@@ -1108,7 +1121,7 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 
 ---
 
-### Start Here — Next Session (Session 13)
+### Start Here — Next Session (Session 14)
 
 All 23 master roadmap phases of the KL Servis Rumah Renovation Expansion project are **100% completed, integrated, and verified**, and as of Session 12 the localized specialty tree is at **100% coverage: every one of the 231 subservices across all 31 services has a fully native Malay and Chinese specialty page** (462 authored native blocks), enforced by a new build-time coverage gate (`npm run audit:specialty-coverage`).
 
@@ -1126,7 +1139,7 @@ Remaining work for future sessions:
 1. **Nothing on the content roadmap** — every cluster, phase and coverage gap tracked in this plan is ✅ COMPLETED. Do not add new services, subservices or claims without new verified business data.
 2. Monitor production Search Console indexation, GSC query rankings, and conversions once deployed (outside sandbox scope).
 3. Optional maintenance: when a subservice is ever renamed, the new `audit:specialty-coverage` gate will fail the build if its specialty entry (or any hardcoded link) is not updated in the same change — keep that gate green.
-4. **FIRST TASK — Activate CI** (user-assigned): `.github/workflows/ci.yml` is preserved in the working tree (untracked). Commit and push it from the next session; the previous session's token lacked the `workflows` permission (403). If the push is rejected again, the owner must reconnect GitHub in Arena with workflows permission — the owner has confirmed they cannot add the file manually, so escalate politely with exact steps. After the file lands, confirm the workflow runs (e.g. on the next PR or a manual `workflow_dispatch`) and that all steps pass.
+4. **FIRST TASK — Activate CI** (owner-assigned; blocked on owner action): Session 13 re-verified the entire pipeline green and left a byte-identical tracked copy at **`docs/ci-workflow.yml`** (`.github/workflows/ci.yml` itself cannot be pushed — the Arena GitHub App token lacks the `workflows` permission; git push and Contents API both rejected, twice, Sessions 12 & 13). Activation steps once the owner has reconnected GitHub in Arena with the **Workflows: Read & Write** permission: `mkdir -p .github/workflows && cp docs/ci-workflow.yml .github/workflows/ci.yml`, commit, push the session branch, open a PR — the `on: pull_request` trigger runs the workflow on that PR; confirm all steps pass (or use `workflow_dispatch` after merge). If the push is still rejected, the permission was not granted — escalate to the owner again with the exact steps in the Blocked section.
 
 ---
 
@@ -1134,6 +1147,8 @@ Remaining work for future sessions:
 
 - This file is the source of truth. At start of every session, read this file, review ✅ 🔄 ⏳ ⚠️ statuses, inspect git changes, continue from first logical pending task.
 - **Verify Git state at session start (learned Session 12):** a turn-boundary snapshot reset once reverted the Git history and remote branch while the working tree survived — a session's commit can silently disappear. At session start run `git log --oneline -3` + `git status` and compare with this plan's last "Files Changed" list; if a commit is missing but the working tree still holds the changes, re-commit them. Never run `git checkout -- <file>` to "clean" a modified file before confirming the modification isn't the only copy of uncommitted session work.
+- **Never rely on untracked files or prose for artifact durability (learned Session 13):** Session 12 believed `.github/workflows/ci.yml` was "preserved in the working tree (untracked) and in this plan" — both claims proved false at the Session 13 boundary (the untracked file vanished; the plan never actually contained the YAML). Any artifact that must survive sessions belongs in git (tracked file) — that is why the durable CI copy lives at `docs/ci-workflow.yml`.
+- **Workflow files are permission-gated (learned Sessions 12–13):** the Arena GitHub App token cannot create/update anything under `.github/workflows/` (git push + Contents API both 403) unless the owner reconnects GitHub in Arena with the Workflows permission. Track paths elsewhere (e.g. `docs/`) are unaffected.
 - After `npm ci` may be needed at session start (`node_modules` is not persisted between sessions).
 - Do NOT repeat completed work unless audit shows defective.
 - After every completed task, update this file immediately.
