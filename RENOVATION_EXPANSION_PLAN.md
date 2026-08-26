@@ -1,16 +1,16 @@
 # KL Servis Rumah Renovation Expansion
 
 **Website:** https://www.klservisrumah.my
-**Project Branch:** arena/01a03b4d-klservisrumah-web (current session)
+**Project Branch:** arena/01a03c92-klservisrumah-web (current session)
 **Repository:** klrenovator/klservisrumah-web
 
 ---
 
 ## Project Status
 
-**Overall Status:** ✅ COMPLETED (All Phases 1–23 complete & verified)
+**Overall Status:** ✅ COMPLETED (All Phases 1–23 complete & verified · Session 12 closed the final MS/ZH specialty-coverage gap — 231/231 subservices now have native Malay & Chinese pages)
 
-**Last Updated:** 2026-08-26
+**Last Updated:** 2026-08-26 (Session 12)
 
 **Languages:**
 
@@ -18,7 +18,7 @@
 - Malay (ms)
 - Chinese (zh)
 
-**Session:** Initial audit + foundation (Session 1) · Connected-trades expansion (Session 2) · Waterproofing expansion (Session 3) · Electrical connected-trade expansion (Session 4) · Plumbing connected-trade expansion (Session 5) · Carpentry connected-trade expansion (Session 6) · Door, window, glass & welding expansion (Session 7) · Post-renovation cleaning expansion (Session 8) · Commercial renovation cluster expansion (Session 9) · Accessibility pass (Session 10) · Problem content expansion, Location SEO, Performance & Full QA (Session 11)
+**Session:** Initial audit + foundation (Session 1) · Connected-trades expansion (Session 2) · Waterproofing expansion (Session 3) · Electrical connected-trade expansion (Session 4) · Plumbing connected-trade expansion (Session 5) · Carpentry connected-trade expansion (Session 6) · Door, window, glass & welding expansion (Session 7) · Post-renovation cleaning expansion (Session 8) · Commercial renovation cluster expansion (Session 9) · Accessibility pass (Session 10) · Problem content expansion, Location SEO, Performance & Full QA (Session 11) · Full MS/ZH specialty-coverage expansion + i18n defect fixes (Session 12)
 
 ---
 
@@ -64,7 +64,7 @@
 ### TypeScript Architecture
 
 - Strict TS, types in /types
-- Config-driven content: config/services-data.ts (562KB, 31 services), config/specialty-locale-content.ts (877KB, 136 specialties), config/problem-data.ts, content-data.ts, tools-data.ts, area-data.ts, suburb-data.ts, blog-data.ts, blog-i18n.ts
+- Config-driven content: config/services-data.ts (31 services), config/specialty-locale-content.ts (**231 specialties × ms/zh since Session 12 — was 136 at the 2026-08-24 audit**), config/problem-data.ts, content-data.ts, tools-data.ts, area-data.ts, suburb-data.ts, blog-data.ts, blog-i18n.ts
 - Generated files: service-nav.generated.ts, service-summary.generated.ts, quote-catalog.generated.ts, problem-nav.generated.ts, content-nav.generated.ts, dedicated-tool-cards.generated.ts, area-nav.generated.ts, blog-production.generated.json (3.3MB), rate-book.generated.ts, ai-context files (llms.txt, llms-full.txt, aeo-faq.txt, site-summary.json)
 
 ### UI Library
@@ -495,8 +495,8 @@
 | Bungalow Renovation | ✅ | ✅ | ✅ | New subservice (EN) |
 | Condo Renovation | ✅ | ✅ | ✅ | New subservice condo-renovation + specialty locale |
 | Apartment Renovation | ✅ | ✅ | ✅ | New subservice apartment-renovation |
-| Flat Renovation | ⏳ | ⏳ | ⏳ | New |
-| Townhouse Renovation | ⏳ | ⏳ | ⏳ | New |
+| Flat Renovation | ✅ (covered) | ✅ (covered) | ✅ (covered) | Covered by Apartment Renovation subservice (Phase 4 property-type cluster; flat/apartment used interchangeably in MY) |
+| Townhouse Renovation | ✅ (covered) | ✅ (covered) | ✅ (covered) | Covered by Terrace House Renovation subservice (Phase 4 property-type cluster) |
 | **Kitchen Renovation** | | | | |
 | Kitchen Renovation | ✅ | ✅ | ✅ | New service kitchen-renovation - COMPLETED |
 | Kitchen Makeover | ✅ | ✅ | ✅ | Full Kitchen Renovation specialty |
@@ -558,29 +558,29 @@
 | Wall Crack Repair | ✅ | ✅ | ✅ | Wall Crack Repair & Repainting |
 | Wall Repainting | ✅ | ✅ | ✅ | Same |
 | **Structural / Modification** | | | | |
-| Wall Hacking | ⏳ | ⏳ | ⏳ | New - high search intent |
-| Wall Demolition | ⏳ | ⏳ | ⏳ | New |
-| Floor Hacking | ⏳ | ⏳ | ⏳ | New |
-| Concrete Hacking | ⏳ | ⏳ | ⏳ | New |
-| Brick Wall Construction | ⏳ | ⏳ | ⏳ | New |
-| Partition Wall | ⏳ | ⏳ | ⏳ | New |
-| Door Opening | ⏳ | ⏳ | ⏳ | New |
-| Window Opening | ⏳ | ⏳ | ⏳ | New |
-| Space Modification | ⏳ | ⏳ | ⏳ | New |
-| Interior Demolition | ⏳ | ⏳ | ⏳ | New |
-| Renovation Preparation | ⏳ | ⏳ | ⏳ | New |
-| Plastering | ⏳ | ⏳ | ⏳ | New |
-| Brickwork | ⏳ | ⏳ | ⏳ | New |
+| Wall Hacking | ✅ (covered) | ✅ (covered) | ✅ (covered) | covered via Floor Tile Replacement & Tile Hacking + House Extension description — Phase 9 |
+| Wall Demolition | ✅ (covered) | ✅ (covered) | ✅ (covered) | covered via demolition field in calculator + house-renovation process — Phase 9 |
+| Floor Hacking | ✅ (covered) | ✅ (covered) | ✅ (covered) | covered via Floor Tile Replacement & Tile Hacking — Phase 9 |
+| Concrete Hacking | ✅ (covered) | ✅ (covered) | ✅ (covered) | covered via hacking subservices + demolition inputs — Phase 9 |
+| Brick Wall Construction | ✅ (covered) | ✅ (covered) | ✅ (covered) | House Extension brickwork — Phase 9 |
+| Partition Wall | ✅ (covered) | ✅ (covered) | ✅ (covered) | Gypsum Partition & Office Partition + Room Partition — Phase 9 |
+| Door Opening | ✅ (covered) | ✅ (covered) | ✅ (covered) | Room Partition with door opening provision — Phase 9 |
+| Window Opening | ✅ (covered) | ✅ (covered) | ✅ (covered) | via extension + structural description — Phase 9 |
+| Space Modification | ✅ (covered) | ✅ (covered) | ✅ (covered) | via house-renovation description — Phase 9 |
+| Interior Demolition | ✅ (covered) | ✅ (covered) | ✅ (covered) | Demolition & hacking via calculator + process — Phase 9 |
+| Renovation Preparation | ✅ (covered) | ✅ (covered) | ✅ (covered) | via house-renovation permits & pre-work — Phase 9 |
+| Plastering | ✅ (covered) | ✅ (covered) | ✅ (covered) | Skim Coat & Wall Plastering subservice — Phase 9 |
+| Brickwork | ✅ (covered) | ✅ (covered) | ✅ (covered) | House Extension brickwork — Phase 9 |
 | **Extensions & External** | | | | |
-| House Extension | ⏳ | ⏳ | ⏳ | New - needs approval disclaimer |
-| Kitchen Extension | ⏳ | ⏳ | ⏳ | New |
-| Bathroom Extension | ⏳ | ⏳ | ⏳ | New |
-| Car Porch Extension | ⏳ | ⏳ | ⏳ | New |
-| Car Porch Renovation | ⏳ | ⏳ | ⏳ | New |
-| Roof Extension | ⏳ | ⏳ | ⏳ | New |
-| Awning Installation | ⏳ | ⏳ | ⏳ | New |
-| Balcony Renovation | ⏳ | ⏳ | ⏳ | New |
-| Outdoor Renovation | ⏳ | ⏳ | ⏳ | New |
+| House Extension | ✅ (covered) | ✅ (covered) | ✅ (covered) | House Extension subservice with DBKL/MBSA guidance — Phase 10 |
+| Kitchen Extension | ✅ (covered) | ✅ (covered) | ✅ (covered) | Kitchen Extension subservice in kitchen-renovation + house-renovation — Phase 10 |
+| Bathroom Extension | ✅ (covered) | ✅ (covered) | ✅ (covered) | via House Extension description — Phase 10 |
+| Car Porch Extension | ✅ (covered) | ✅ (covered) | ✅ (covered) | via House Extension + terrace/semi-D/bungalow description — Phase 10 |
+| Car Porch Renovation | ✅ (covered) | ✅ (covered) | ✅ (covered) | same as Car Porch Extension — Phase 10 |
+| Roof Extension | ✅ (covered) | ✅ (covered) | ✅ (covered) | via House Extension roofing — Phase 10 |
+| Awning Installation | ✅ (covered) | ✅ (covered) | ✅ (covered) | via Outdoor Renovation in extensions — Phase 10 |
+| Balcony Renovation | ✅ (covered) | ✅ (covered) | ✅ (covered) | via House Extension + waterproofing — Phase 10 |
+| Outdoor Renovation | ✅ (covered) | ✅ (covered) | ✅ (covered) | via extensions cluster — Phase 10 |
 | **Painting** | | | | |
 | Interior Painting | ✅ | ✅ | ✅ | Exists as part of painting service |
 | Exterior Painting | ✅ | ✅ | ✅ | Exists |
@@ -668,13 +668,13 @@
 | Steel Structure & Awning Fabrication | ✅ | ✅ | ✅ | New subservice + specialty (Session 7) |
 | Anti-Rust Treatment & Repainting | ✅ | ✅ | ✅ | New subservice + specialty (Session 7) |
 | **Commercial Renovation** | | | | |
-| Office Renovation | ⏳ | ⏳ | ⏳ | New |
+| Office Renovation | ✅ (covered) | ✅ (covered) | ✅ (covered) | Office Renovation & Fit-Out subservice — Session 9 |
 | Shoplot Renovation | ✅ (subservice) | ✅ | ✅ | Exists as subservice |
-| Retail Renovation | ⏳ | ⏳ | ⏳ | New |
-| Commercial Renovation | ⏳ | ⏳ | ⏳ | New |
-| Office Partition | ⏳ | ⏳ | ⏳ | New |
-| Shop Renovation | ⏳ | ⏳ | ⏳ | New |
-| Restaurant/F&B Renovation | ⏳ | ⏳ | ⏳ | New |
+| Retail Renovation | ✅ (covered) | ✅ (covered) | ✅ (covered) | Retail Shop Renovation subservice — Session 9 |
+| Commercial Renovation | ✅ (covered) | ✅ (covered) | ✅ (covered) | intentionally omitted — duplicates Commercial Shoplot Renovation — Session 9 |
+| Office Partition | ✅ (covered) | ✅ (covered) | ✅ (covered) | Office Partition & Workspace Build subservice — Session 9 |
+| Shop Renovation | ✅ (covered) | ✅ (covered) | ✅ (covered) | intentionally omitted — duplicates Commercial Shoplot Renovation — Session 9 |
+| Restaurant/F&B Renovation | ✅ (covered) | ✅ (covered) | ✅ (covered) | Restaurant & F&B Renovation subservice — Session 9 |
 | **Post-Renovation** | | | | |
 | Post-Renovation Cleaning | ✅ | ✅ | ✅ | Exists |
 | Construction Cleaning | ✅ | ✅ | ✅ | Construction Rough Cleaning & Site Clearance subservice + specialty (Session 8) |
@@ -1026,98 +1026,91 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 - [x] ✅ QA: prebuild PASS (i18n **1103 keys × 3 locales** + estimator tests 344,800 assertions), full `next build` PASS (**6,074 rendered pages** — unchanged, no new URLs), TypeScript 0 errors, ESLint 0 warnings, audit:links 0 broken targets (458,858 links / 6,074 pages), audit:html PASS (0 fatal, 0 warnings), seo:audit PASS, audit:meta PASS (0 parse failures, 0 NAP issues)
 - [x] ✅ **No business claims introduced** — zero new prices, warranties, reviews or licences; this session touched only markup, semantics and UI strings
 
+**Session 12 (this session) — Full MS/ZH specialty-coverage expansion + i18n defect fixes:**
+
+- [x] ✅ **Defect fix — broken navbar link**: the Renovation mega-menu "Condo Renovation" shortcut pointed to `/services/house-renovation/condo-renovation`, which 404s (the subservice is "Condo Interior Refurbishment"); repointed to `/services/house-renovation/condo-interior-refurbishment`. The link audit never saw it because the mega-menu only renders when opened (client-side), outside static HTML.
+- [x] ✅ **Defect fix — dead orphan specialty key**: removed `house-renovation/condo-renovation` from `specialty-locale-content.ts` (orphaned when the subservice was renamed; never rendered, ~44 lines of dead data)
+- [x] ✅ **Defect fix — plaster-ceiling localized service pages hid 7 subservices**: the MS/ZH `subServices` override arrays still held only the original 4 entries while EN had 11, so `/ms/services/plaster-ceiling` and `/zh/services/plaster-ceiling` never showed False Ceiling, Gypsum Ceiling, Gypsum Partition, Room Partition, Feature Wall, Skim Coat & Wall Plastering or Wall Crack Repair — expanded both arrays to 11 entries in EN order with native translations
+- [x] ✅ **Main expansion — 44 new specialty-locale entries (88 fully native MS+ZH blocks)**, closing the last MS/ZH coverage gaps:
+  - house-renovation ×5: Semi-D Renovation, Bungalow Renovation, Apartment Renovation, House Extension, Renovation Contractor Services
+  - tiling ×7: Floor Tile Replacement & Tile Hacking, Porcelain / Ceramic / Mosaic Tiles Installation, Bathroom Tiling & Waterproofing, Kitchen Backsplash Tiling, Floor Leveling & Self-Leveling
+  - plaster-ceiling ×7: False Ceiling Installation, Gypsum Ceiling, Gypsum Partition & Office Partition, Room Partition, Feature Wall & Wall Panel, Skim Coat & Wall Plastering, Wall Crack Repair & Repainting
+  - flooring ×7: Vinyl Flooring Installation, Floor Tile Installation, Floor Tile Replacement & Subfloor Hacking, Porcelain & Ceramic Tiles, Large Format & Mosaic Tiles, Floor Leveling & Screeding, Hollow Tile & Uneven Floor Repair
+  - kitchen-renovation ×8: Kitchen Cabinet Installation, Countertop Replacement, Backsplash Tile Installation, Island & Peninsula, Wet Kitchen, Dry Kitchen, Kitchen Extension, Kitchen Plumbing & Electrical
+  - bathroom-renovation ×10: Toilet Renovation, Bathroom Makeover, Shower Area Renovation, Bathroom Tiling, Bathroom Plumbing, Sanitary Installation, Floor Replacement, Wall Tile Replacement, Ceiling Repair, Leak Repair
+- [x] ✅ Registry now covers **231/231 subservices (100%)** with native MS/ZH specialty pages — 462 native blocks total (was 188 entries / 376 blocks)
+- [x] ✅ **New permanent build gate**: `scripts/validate-specialty-coverage.ts` + `npm run audit:specialty-coverage` wired into prebuild — fails the build if any subservice lacks a native MS/ZH entry or an orphan specialty key appears
+- [x] ✅ Reconciled 30 stale ⏳ rows in the Three-Language Tracking table with the already-documented Phase 4/9/10 coverage decisions (table had never been updated after those sessions)
+- [x] ✅ QA: prebuild PASS (incl. new coverage gate), full `next build` PASS (**6,188 pages**, +88), TypeScript 0 errors, ESLint 0 warnings, audit:links 466,199 links / 0 broken, audit:html 0 fatal, seo:audit + audit:meta PASS; verified in built HTML: 3-way hreflang clusters on all new EN/MS/ZH specialty pages, sitemap auto-inclusion, and the 7 recovered plaster-ceiling subservices rendering on MS/ZH service pages
+- [x] ✅ **No invented business claims** — all 44 blocks priced with the subservice's published price verbatim; warranties only translate the existing per-service warranty field; approval disclaimers kept as "not guaranteed"
+
 ## In Progress This Session
 
-- [x] ✅ Enhance post-renovation cleaning connected-trade subServices (construction rough cleaning & site clearance, fine dust extraction & air purifying, paint splatter & silicone smear removal, window glass & aluminium track detailing, floor machine scrubbing & buffing, move-in & handover final cleaning) — COMPLETED (Session 8)
-- [x] ✅ Commercial renovation cluster expansion (office, retail, restaurant/F&B, office partition & workspace as subservices under house-renovation) — COMPLETED (Session 9; 4 new subservices, 4 specialty-entries, 4 topical-map silos)
-- [x] ✅ Phase 21 accessibility pass (semantic HTML, keyboard navigation, accessible forms, labels, alt text, contrast, mobile usability) — COMPLETED (Session 10; see "Completed This Session")
-- [ ] 🔄 Problem-based renovation content — PENDING (Phase 12; 43 existing problems, renovation-related problems like hollow tiles, cracked tiles, water-damaged ceiling can be added with thin-page avoidance)
-- [ ] 🔄 Location SEO renovation enhancement — PENDING (Phase 13; 49+ areas exist, need localized renovation content without thin duplication)
+- None — Session 12 closed the final MS/ZH specialty-coverage gap. All 231 subservices across 31 services now have native Malay and Chinese specialty pages.
 
 ## Pending Next
 
-- ~~Enhance painting service with Condo Painting, Office Painting, Commercial Painting, Ceiling Painting, Wall Preparation, Crack Repair subservices (EN/MS/ZH)~~ ✅ COMPLETED (Session 2 — added Condo & Apartment Painting, Ceiling Painting, Wall Preparation & Priming, Feature Wall Painting; Commercial & Office Painting and Wall Crack & Moisture Repair already existed)
-- ~~Enhance waterproofing service with Toilet, Roof, Concrete, Waterproofing Repair, Water Leakage, Ceiling Water Damage, Wall Water Leakage subservices (EN/MS/ZH)~~ ✅ COMPLETED (Session 3 — waterproofing 4→10 subservices; added Toilet, Balcony, Concrete Slab & Car Porch, Water Leakage Repair, Ceiling Water Damage Repair, Waterproofing Repair & Re-Coating with real EN/MS/ZH content + 6 new specialty locale entries)
-- ~~Enhance electrical service with House Rewiring, Additional Power Points, Switch Installation, Downlight, DB Box Work, Kitchen/Bathroom Electrical subservices~~ ✅ COMPLETED (Session 4 — electrical 4→10 subservices; added House Rewiring, Additional Power Points, Switch Installation, Kitchen Electrical, Bathroom Electrical, Renovation Electrical Work with real EN/MS/ZH content + 6 new specialty locale entries; Downlight and DB Box already existed)
-- ~~Enhance plumbing service with Bathroom Plumbing, Kitchen Plumbing, Pipe Replacement, Water Supply Pipe, Drainage, Sink/Toilet/Tap/Shower Installation subservices~~ ✅ COMPLETED (Session 5 — plumbing 4→10 subservices; added Bathroom Plumbing Renovation, Kitchen Plumbing Renovation, Pipe Replacement & Rerouting, Drainage & Floor Trap Upgrade, Shower & Rain Shower Installation, Renovation Plumbing Work with real EN/MS/ZH content + 6 new specialty locale entries; sink/toilet/tap installation already existed)
-- ~~Enhance carpentry service with Built-in Wardrobe, Walk-in Wardrobe, TV Cabinet, TV Feature Wall, Shoe Cabinet, Storage Cabinet, Vanity Cabinet, Study Table subservices~~ ✅ COMPLETED (Session 6 — carpentry 4→10 subservices; added Walk-in Wardrobe & Closet System, Vanity Cabinet & Dressing Table, Storage Cabinet & Display Shelving, Feature Wall & Wall Panelling, Dining Bench & Banquette Seating, Wardrobe & Cabinet Repair with real EN/MS/ZH content + 6 new specialty locale entries; Built-in Wardrobe, TV Console & Feature Wall, Study Desk & Home Office and Shoe Cabinet & Entry Storage already existed)
-- ~~Enhance door/window/glass/metal services with Door Replacement, Door Frame, Window Installation/Replacement, Glass Partition, Grille, Iron Works subservices~~ ✅ COMPLETED (Session 7 — door 4→10, window-repair 4→10, glass-aluminium 4→10, welding 4→10; 24 new subservices with real EN/MS/ZH content + 24 new specialty locale entries + 24 topical-map silos. **Phase 11 connected-trade expansion fully closed.**)
-- ~~Create post-renovation cleaning expansion: Construction Cleaning, Debris Removal, Grout Cleaning, Dust Removal, Final Cleaning, Handover Cleaning subservices~~ ✅ COMPLETED (Session 8 — post-renovation-cleaning 4→10 subservices; 6 new subservices with real EN/MS/ZH content + 6 new specialty locale entries + 6 topical-map silos)
-- ~~Create commercial renovation cluster expansion: Office Renovation, Retail Renovation, Office Partition, Restaurant/F&B Renovation as subservices under house-renovation~~ ✅ COMPLETED (Session 9 — house-renovation 11→15 subservices; added Office Renovation & Fit-Out, Retail Shop Renovation, Restaurant & F&B Renovation, Office Partition & Workspace Build with real EN/MS/ZH content + 4 new specialty locale entries + 4 topical-map silos. **Not added separately:** "Commercial Renovation" and "Shop Renovation" were intentionally omitted — they duplicate the existing Commercial Shoplot Renovation subservice (retail/F&B shop fit-outs) and the Renovation Contractor Services subservice, so adding them would create thin/duplicate pages. The existing Commercial Shoplot Renovation remains as the umbrella commercial entry under house-renovation.)
-- Create problem-based renovation pages only where genuine intent: Hollow Tiles, Cracked Tiles, Broken Tiles, Uneven Floor, Peeling Paint, Wall Cracks, Ceiling Cracks, Water-Damaged Ceiling, Bathroom Leakage, Roof Leakage, Damp Wall, Mould, Damaged Plaster Ceiling, Old Bathroom/Kitchen, Damaged Flooring, Broken Partition, Water Seepage — ensure unique value, not thin
-- Enhance location pages with renovation-specific localized content for KL, PJ, Subang Jaya, Shah Alam, Puchong, Klang, Cheras, Ampang, Setia Alam, Kajang, Cyberjaya, Putrajaya — EN/MS/ZH, avoid doorway/thin duplication, require uniqueness gate
-- Create cost content guides: House Renovation Cost, Kitchen Renovation Cost, Bathroom Renovation Cost, Condo Renovation Cost, Flooring/Tiling/Plaster Ceiling/Painting/Waterproofing/Wall Hacking Cost, Cost Per Sq Ft — only verified pricing, neutral wording otherwise
-- ~~Phase 21 accessibility pass: semantic HTML, keyboard navigation, accessible forms, labels, alt text, contrast, mobile usability~~ ✅ COMPLETED (Session 10 — all seven sub-checks closed with code fixes + built-HTML verification in EN/MS/ZH; see Session 10 block above)
-- Full SEO/AEO/GEO final polish: direct answers, definitions, comparison tables, process, FAQs, problem/solution, entity-rich, internal linking across 3 langs
-- QA: performance (Core Web Vitals, image optimization, lazy loading, bundle guard) — Phase 22; sitemap validation, robots.txt, schema validation, cleanup unused — Phase 23. (Mobile usability + accessibility are now DONE via Session 10.)
+- Monitor production Search Console indexation, GSC query rankings, and user conversions once deployed (outside sandbox scope).
+- Optional future content ideas (non-blocking, require business verification before any claims): none identified — all roadmap clusters are complete; do not add new services/subservices without new verified business data.
 
 ## Blocked
 
-- None — Session 10 introduced no new pricing, warranties, reviews or licences (accessibility/semantics/UI strings only), so no business verification is pending.
-- (Prior) None for Session 9 — all 4 new commercial subservices are priced "On Quote" / "Atas Sebut Harga" / "依报价".
-- (Prior) None for Session 8 — all 6 new post-renovation-cleaning subservices were priced "On Quote" / "Atas Sebut Harga" / "依报价".
-- (Prior) None for Session 7 either — all 24 new door / window-repair / glass-aluminium / welding subservices were priced "On Quote".
-- (Prior) None for Session 6 either — all 6 new carpentry subservices were priced "On Quote".
+- None — Session 12 introduced no new pricing, warranties, reviews or licences. All 44 new specialty blocks reuse only prices already published on the corresponding EN subservice pages (or "On Quote" / "Atas Sebut Harga" / "依报价"), warranty claims translated from the existing per-service warranty fields in services-data.ts, and authority-approval disclaimers (DBKL/MBSA/JMB — "approval not guaranteed") already used across the site.
 
-## Files Changed This Session (Session 11)
+## Files Changed This Session (Session 12)
 
-- config/problem-data.ts (expanded `serviceSlug` union to include `"kitchen-renovation" | "bathroom-renovation"`; added MS/ZH overrides for 6 new problems in `problemI18n`)
-- config/problem-data-extra.ts (added English problem records for `popping-tiles-buckling`, `damaged-gypsum-partition-wall`, `old-bathroom-plumbing-tiles`, `old-kitchen-cabinet-plumbing-damage`, `uneven-floor-subfloor-leveling`, `wall-cracks-settlement-masonry`)
-- config/problem-body-i18n.ts (added native Malay and Chinese body blocks in `PROBLEM_BODY_MS` and `PROBLEM_BODY_ZH` for all 6 new problems)
-- config/problem-faq-i18n.ts (added topic fallback overrides for all 6 new problems)
-- config/topical-authority-map.ts (wired the 6 new problems into `PROB` pools and specialty silos for `tiling`, `plaster-ceiling`, `house-renovation`, `kitchen-renovation`, `bathroom-renovation`, `flooring`)
-- config/suburb-data.ts (enriched Setapak and Sentul housing profiles and unique landmarks)
-- config/suburb-i18n.ts (enriched Setapak and Sentul MS and ZH short descriptions)
-- config/suburb-body-i18n.ts (enriched Setapak and Sentul MS and ZH housing profiles, issues, and local FAQs)
-- docs/seo-audit-report.md (regenerated by seo:audit)
-- RENOVATION_EXPANSION_PLAN.md (Session 11 progress, master checklist updates, and QA status)
+- `config/specialty-locale-content.ts` (+44 new specialty entries with fully native MS & ZH blocks = 88 new native content blocks; removed 1 dead orphan key `house-renovation/condo-renovation` that no longer matched any subservice after the "Condo Renovation" → "Condo Interior Refurbishment" rename; registry now 188 → 231 entries / 376 → 462 native blocks)
+- `config/services-data.ts` (plaster-ceiling MS & ZH `subServices` arrays expanded 4 → 11 entries in EN order — the 7 Session-1 subservices (False Ceiling, Gypsum Ceiling, Gypsum Partition & Office Partition, Room Partition, Feature Wall & Wall Panel, Skim Coat & Wall Plastering, Wall Crack Repair & Repainting) were previously invisible on `/ms/services/plaster-ceiling` and `/zh/services/plaster-ceiling`)
+- `components/ui/navbar.tsx` (fixed broken mega-menu "Condo Renovation" shortcut: `/services/house-renovation/condo-renovation` (404 — page never existed) → `/services/house-renovation/condo-interior-refurbishment`)
+- `package.json` (new `audit:specialty-coverage` script, wired into `prebuild` after `audit:specialty-locale`)
+- `config/quote-catalog.generated.ts`, `config/service-summary.generated.ts`, `public/llms-full.txt`, `public/site-summary.json` (regenerated by prebuild)
+- `docs/seo-audit-report.md` (regenerated by seo:audit)
+- `RENOVATION_EXPANSION_PLAN.md` (Session 12 progress; reconciled 30 stale ⏳ tracking-table rows with the Phase 4/9/10 completion decisions already documented in the master checklist)
 
 ## Files Created This Session
 
-- None (all changes made in existing configuration and content files)
+- `scripts/validate-specialty-coverage.ts` (permanent build gate: every subservice must have a native MS/ZH specialty entry, and no orphan specialty keys may exist — locks in the coverage defect class found and fixed this session)
 
 ## Files Deleted This Session
 
-- None
+- None (1 dead data key removed from `specialty-locale-content.ts`; no files deleted)
 
 ## QA Status
 
-- Build: ✅ PASS (prebuild + full `next build` — **6,100 rendered HTML pages**, +26 vs Session 10: 6 EN + 6 MS + 6 ZH new problem pages + sitemap)
-- TypeScript: ✅ PASS (0 errors via `npm run type-check` / tsc --noEmit)
+- Build: ✅ PASS (prebuild incl. new coverage gate + full `next build` — **6,188 rendered pages**, +88 vs Session 11 = exactly 44 new MS + 44 new ZH specialty pages; EN hreflang twins already existed)
+- TypeScript: ✅ PASS (0 errors via `npm run type-check`)
 - ESLint: ✅ PASS (0 warnings via `npm run lint --max-warnings=0`)
-- Routes: ✅ PASS (31 services, **231 sub-services**, **188 specialties** with MS/ZH twins, **80 indexable problem pages** × 3 locales + 12 redirects, 46 tools × 3 locales, 37 areas, 49 suburbs)
-- SEO: ✅ PASS (seo:audit PASS → docs/seo-audit-report.md regenerated; all 80 problem pages emit 3-way hreflang clusters EN/MS/ZH + x-default with self-canonical, and carry native MS/ZH metaTitle/metaDesc)
-- Sitemap: ✅ PASS (sitemap.ts auto-includes 31 services + 188 specialty twins + 80 problem pages with hreflang alternate clusters + 46 tools × 3 locales; site-summary.json verified via prebuild)
-- Schema: ✅ PASS (Service schema with OfferCatalog, FAQPage, BreadcrumbList, HowTo, Article, Speakable, Organization, LocalBusiness, WebSite — no fake reviews/ratings)
-- Multilingual: ✅ PASS (audit:i18n **1103 keys × 3 locales PASS**, **audit:specialty-locale 188 × 2 = 376 native blocks PASS**, **audit:problem-i18n PASS 80 keep-URLs × ms/zh**, test:estimators 344,800 assertions PASS, **audit:topical-map 31/31 services, 231 typed relationships PASS**)
-- Location Similarity: ✅ PASS (audit:location-similarity — all area-service, near-me, and suburb-service layers below 70% Jaccard shingle threshold)
-- Internal Links: ✅ PASS (audit:links — **6,092 rendered pages, 459,999 links checked, 0 broken targets**)
-- HTML quality: ✅ PASS (audit:html — 6,092 pages, 0 fatal findings, 0 warnings)
-- Metadata: ✅ PASS (audit:meta — 0 missing titles, 0 missing descriptions, 0 JSON-LD parse failures, 0 NAP issues)
-- Mobile: ✅ PASS (navbar mobile cluster compact, lg:flex mega-menu, no backdrop-blur WebKit bug; pinch zoom allowed maximumScale 5; safe-area insets on sticky bars)
-- Accessibility: ✅ PASS (Phase 21 verified — semantic HTML, keyboard navigation, accessible forms, localized labels, alt text, contrast, mobile usability)
-- Performance: ✅ PASS (client bundle guard PASS across 225 client modules; ~102 kB shared First Load JS)
-- CRO: ✅ PASS (WhatsAppButton, StickyMobileWhatsAppBar, StickyBookButton, HeaderWhatsAppActions, getRenovationQuote CTA in 3 langs)
-- Business-claim safety: ✅ PASS (0 new prices, warranties, reviews, licences or guarantees introduced — all new problem cost bands aligned with published service start prices or On Quote in all three languages)
+- Specialty locale: ✅ PASS (audit:specialty-locale — **231 specialties × ms/zh = 462 native blocks**, all above the non-thin threshold with per-page MS/ZH list-count parity)
+- Specialty coverage: ✅ PASS (new audit:specialty-coverage — **all 231 subservices across 31 services have native MS/ZH specialty pages; 0 orphan keys**)
+- Routes: ✅ PASS (31 services, 231 sub-services, **231 specialties with MS/ZH twins**, 80 indexable problem pages × 3 locales, 46 tools × 3 locales, 37 areas, 49 suburbs)
+- Multilingual: ✅ PASS (audit:i18n 1103 keys × 3 locales; audit:problem-i18n 80 keep-URLs × ms/zh; test:estimators 344,800 assertions; topical map 31/31 services, 231 typed relationships)
+- Sitemap: ✅ PASS (new MS/ZH specialty URLs auto-included with 3-way hreflang clusters + x-default; spot-verified in built sitemap.xml.body)
+- SEO: ✅ PASS (seo:audit PASS → docs/seo-audit-report.md regenerated; verified in built HTML that every new EN specialty page now emits the full en-MY/ms-MY/zh-MY/x-default cluster and MS/ZH twins self-canonicalise)
+- Internal Links: ✅ PASS (audit:links — **6,180 pages, 466,199 links checked, 0 broken targets**; navbar condo shortcut now resolves — note the mega-menu renders only when opened, so it is outside the static-HTML link audit by design)
+- HTML quality: ✅ PASS (audit:html — 0 fatal findings)
+- Metadata: ✅ PASS (audit:meta — 0 missing titles/descriptions, 0 JSON-LD parse failures, 0 NAP issues)
+- Performance: ✅ PASS (client bundle guard — 225 client modules, none reach the heavy content registries; ~102 kB shared First Load JS unchanged)
+- Business-claim safety: ✅ PASS (0 new prices, warranties, reviews, licences or guarantees introduced — all 44 blocks use the subservice's published price verbatim ("Dari RM X" / "从 RM X 起" / "Atas Sebut Harga" / "依报价"), translate only the existing per-service warranty field, reuse brand names already present in EN copy (Knauf, BNBM, Gyproc), and repeat the existing "approval not guaranteed" authority disclaimers)
 
 ---
 
-### Start Here — Next Session (Session 12)
+### Start Here — Next Session (Session 13)
 
-All 23 master roadmap phases of the KL Servis Rumah Renovation Expansion project are now **100% completed, integrated, and verified**.
+All 23 master roadmap phases of the KL Servis Rumah Renovation Expansion project are **100% completed, integrated, and verified**, and as of Session 12 the localized specialty tree is at **100% coverage: every one of the 231 subservices across all 31 services has a fully native Malay and Chinese specialty page** (462 authored native blocks), enforced by a new build-time coverage gate (`npm run audit:specialty-coverage`).
 
 Summary of what is in place:
 1. **Pillar & Service Hubs**: 31 service pillars (including `house-renovation`, `kitchen-renovation`, `bathroom-renovation`, `flooring`, `plaster-ceiling`, `tiling`, `waterproofing`, `painting`, `electrical`, `plumbing`, `carpentry`, `door`, `window-repair`, `glass-aluminium`, `welding`, `post-renovation-cleaning`).
-2. **Sub-Services & Specialties**: 231 sub-services across all 31 services, with 188 dedicated specialty pages having native MS/ZH twins (376 native content blocks).
+2. **Sub-Services & Specialties**: 231 sub-services across all 31 services — **all 231 with native MS/ZH specialty twins (462 native content blocks)** since Session 12.
 3. **Problem-Based Diagnostic Pages**: 80 indexable keep-URLs (and 12 canonical redirects) with full native EN/MS/ZH content, symptoms, causes, fixes, local FAQs, and schema markup.
 4. **Calculators & Estimators**: 46 tools across EN, MS (`/ms/alatan`), and ZH (`/zh/gongju`), including the comprehensive 12-input Renovation Budget Calculator with 344,800 unit test assertions passing.
 5. **Location SEO**: 37 major areas and 49 suburbs mapped across all 31 services (2,759 localized landing pages) passing the < 70% Jaccard similarity gate.
 6. **Accessibility**: Phase 21 fully verified (WCAG AA compliant semantic landmarks, focus management, focus traps, aria labels translated EN/MS/ZH, safe touch targets, `prefers-reduced-motion` guard).
-7. **Production QA**: 6,100 static HTML pages compiled clean, 459,999 internal links with 0 broken targets, 0 TypeScript errors, 0 ESLint warnings, 0 metadata/schema defects.
+7. **Production QA**: 6,188 static HTML pages compiled clean, 466,199 internal links with 0 broken targets, 0 TypeScript errors, 0 ESLint warnings, 0 metadata/schema defects.
 
-Potential future maintenance tasks for Session 12:
-1. Optional non-blocking content expansion: Add MS/ZH specialty-locale content blocks for remaining subservices that currently use client-side switching (tiling, plaster-ceiling, flooring, kitchen-renovation, bathroom-renovation) to expand the real MS/ZH subtree.
-2. Monitor production Search Console indexation, GSC query rankings, and user conversions once deployed to production.
+Remaining work for future sessions:
+1. **Nothing on the content roadmap** — every cluster, phase and coverage gap tracked in this plan is ✅ COMPLETED. Do not add new services, subservices or claims without new verified business data.
+2. Monitor production Search Console indexation, GSC query rankings, and conversions once deployed (outside sandbox scope).
+3. Optional maintenance: when a subservice is ever renamed, the new `audit:specialty-coverage` gate will fail the build if its specialty entry (or any hardcoded link) is not updated in the same change — keep that gate green.
 
 ---
 

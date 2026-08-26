@@ -179,7 +179,7 @@ export function Navbar() {
             <div className="mt-3 grid grid-cols-3 gap-2 border-t border-slate-100 pt-3">
               <Link href="/tools/renovation-budget-calculator" className="rounded-xl bg-slate-50 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-sky-50 hover:text-[#0284C7]">{t("common.renovationCalculator")}</Link>
               <Link href="/services/house-renovation/terrace-house-renovation" className="rounded-xl bg-slate-50 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-sky-50 hover:text-[#0284C7]">{t("menu.terraceRenovation")}</Link>
-              <Link href="/services/house-renovation/condo-renovation" className="rounded-xl bg-slate-50 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-sky-50 hover:text-[#0284C7]">{t("menu.condoRenovation")}</Link>
+              <Link href="/services/house-renovation/condo-interior-refurbishment" className="rounded-xl bg-slate-50 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-sky-50 hover:text-[#0284C7]">{t("menu.condoRenovation")}</Link>
             </div>
           </div>}
         </div>

@@ -8929,50 +8929,6 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       metaDesc: "吉隆坡与雪兰莪排屋翻新：厨房扩建、卫生间、地板、天花、水电。DBKL/MBSA指引，固定报价，保修。WhatsApp报价。",
     }
   },
-  "house-renovation/condo-renovation": {
-    ms: {
-      name: "Pengubahsuaian Kondominium",
-      tagline: "Pengubahsuaian kondominium penuh di KL & Selangor dengan pematuhan JMB, perlindungan lif dan pelupusan serpihan. Dari RM 30,000.",
-      description: "Pengubahsuaian kondominium memerlukan pematuhan peraturan pengurusan bangunan: borang kebenaran, deposit, waktu kerja 9 pagi–6 petang Isnin–Sabtu, perlindungan lif dan koridor, serta pelupusan serpihan mengikut laluan ditetapkan. Kami mengendalikan semua penyerahan, menyediakan pelan lantai, jubin, siling plaster, kalis air bilik mandi dengan ujian kolam, kabinet dapur, elektrik dan pengecatan. Sesuai untuk kondominium di Mont Kiara, KLCC, Bangsar, Cheras, Puchong dan Subang Jaya.",
-      highlights: ["Pematuhan JMB/MC penuh: borang, deposit, lif, waktu kerja", "Perlindungan koridor dan lif dengan pelapik dan plastik", "Bilik mandi dengan kalis air dan ujian kolam untuk elak bocor ke bawah", "Dapur dengan kabinet custom dan countertop quartz", "Garis masa jelas dengan foto kemajuan harian WhatsApp"],
-      process: [
-        { step: "01", title: "Tinjauan & Peraturan JMB", desc: "Kami mengukur unit anda dan menyemak peraturan pengubahsuaian bangunan anda." },
-        { step: "02", title: "Penyerahan Pengurusan", desc: "Kami menyediakan borang, pelan ringkas, sijil insurans dan deposit untuk kelulusan." },
-        { step: "03", title: "Perlindungan & Perobohan", desc: "Lif dan koridor dilindungi, perobohan dijalankan dalam waktu dibenarkan dengan pelupusan serpihan berjadual." },
-        { step: "04", title: "Bina Interior", desc: "Siling, jubin, kalis air, paip, elektrik, kabinet dan pengecatan disiapkan." },
-        { step: "05", title: "Serahan Akhir", desc: "Cucian akhir, pemeriksaan bersama dan serahan dengan jaminan." }
-      ],
-      faqs: [
-        { q: "Adakah anda menguruskan kelulusan JMB kondominium?", a: "Ya, kami menguruskan semua borang, deposit dan perlindungan lif. Anda hanya perlu memberikan surat kebenaran pemilik jika anda penyewa." },
-        { q: "Berapa lama pengubahsuaian kondominium?", a: "Kondominium 1,000 kaki persegi biasanya 6–8 minggu, bergantung pada waktu kerja dibenarkan dan skop kabinet." },
-        { q: "Boleh buat tanpa pecah jubin?", a: "Untuk baiki bocor, ya — suntikan PU tanpa pecah. Untuk makeover penuh, pecah diperlukan untuk jubin baru dan ubah kedudukan paip." },
-        { q: "Bagaimana dengan bunyi bising kepada jiran?", a: "Kami hanya menjalankan kerja bising dalam waktu dibenarkan pengurusan dan memberi notis kepada jiran melalui pengurusan jika diperlukan." }
-      ],
-      metaTitle: "Pengubahsuaian Kondominium KL & Selangor | Dari RM30k",
-      metaDesc: "Pengubahsuaian kondominium di KL & Selangor: JMB/MC compliance, kalis air, jubin, kabinet dapur, elektrik. Harga tetap, jaminan. Sebut harga WhatsApp.",
-    },
-    zh: {
-      name: "公寓翻新",
-      tagline: "吉隆坡与雪兰莪公寓全屋翻新，含JMB合规、电梯保护与垃圾清运。从 RM 30,000 起。",
-      description: "公寓翻新需遵守管理处规定：装修申请表、押金、周一至周六9点至6点施工时段、电梯与走廊保护，以及按指定路线清运垃圾。我们负责全部呈报，提供平面图、瓷砖、石膏天花、带蓄水测试的卫生间防水、厨房橱柜、电路与油漆。适合Mont Kiara、KLCC、Bangsar、Cheras、Puchong与Subang Jaya的公寓。",
-      highlights: ["完整JMB/MC合规：表格、押金、电梯、工时", "走廊与电梯用防护垫与塑料保护", "卫生间防水与蓄水测试防止漏水到楼下", "厨房定制橱柜与石英石台面", "清晰工期配每日WhatsApp进度照片"],
-      process: [
-        { step: "01", title: "勘察与JMB规定", desc: "我们测量您的单位并查阅大楼装修指引。" },
-        { step: "02", title: "管理处呈报", desc: "我们准备表格、简要图纸、保险证书与押金等待批准。" },
-        { step: "03", title: "保护与拆除", desc: "保护电梯与走廊，在允许时段内拆除并按计划清运垃圾。" },
-        { step: "04", title: "室内施工", desc: "完成天花、瓷砖、防水、水电、橱柜与油漆。" },
-        { step: "05", title: "最终交付", desc: "最终清洁、联合验收与带保修交付。" }
-      ],
-      faqs: [
-        { q: "你们负责公寓JMB批准吗？", a: "是的，我们负责所有表格、押金与电梯保护。您只需提供业主授权书（如您是租客）。" },
-        { q: "公寓翻新需要多久？", a: "1,000平方英尺公寓通常6–8周，取决于允许工时与橱柜范围。" },
-        { q: "可以不砸砖翻新吗？", a: "漏水维修可以——免砸砖PU注浆。全屋改造需拆除以铺新砖并改水管位置。" },
-        { q: "噪音会影响邻居吗？", a: "我们仅在管理处允许时段内进行噪音作业，必要时通过管理处向邻居发出通知。" }
-      ],
-      metaTitle: "吉隆坡与雪兰莪公寓翻新 | 从RM30k起",
-      metaDesc: "吉隆坡与雪兰莪公寓翻新：JMB/MC合规、防水、瓷砖、厨房橱柜、电路。固定报价，保修。WhatsApp报价。",
-    }
-  },
 
   "house-renovation/office-renovation-and-fit-out": {
     ms: {
@@ -10807,6 +10763,2532 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       metaTitle: "吉隆坡与雪兰莪空调搬迁 — 从 RM 117 起",
       metaDesc: "吉隆坡与雪兰莪空调拆除与搬迁。仅拆除从 RM 117 起、就近搬迁从 RM 325 起、异地从 RM 455 起。",
     },
+  },
+
+  /* ── HOUSE RENOVATION — property types & contractor (Session 12) ─────── */
+  "house-renovation/semi-d-renovation": {
+    ms: {
+      name: "Pengubahsuaian Rumah Semi-D",
+      tagline: "Pengubahsuaian Semi-D dengan modifikasi struktur, porch kereta, sambungan dapur dan kemasan interior menyeluruh di KL & Selangor. Dari RM 35,000.",
+      description:
+        "Rumah Semi-D menawarkan ruang sisi dan belakang yang boleh dimanfaatkan sepenuhnya. Pakej pengubahsuaian Semi-D kami merangkumi modifikasi struktur seperti pembukaan dinding dan penyusunan semula ruang, pembinaan porch kereta, sambungan dapur belakang, serta kemasan interior penuh — jubin, siling plaster, kabinet dapur, kabinet bilik tidur, elektrik, paip dan pengecatan. Projek dikendalikan sebagai satu kontrak dengan jadual jelas, penyelarasan antara pasukan struktur, elektrik dan pertukangan, serta pemeriksaan bersama di setiap peringkat. Harga bermula dari RM 35,000 mengikut skop sebenar selepas tinjauan tapak.",
+      highlights: [
+        "Modifikasi struktur dan pembahagian semula ruang mengikut pelan baru",
+        "Porch kereta, sambungan dapur dan kerja bata sepenuhnya",
+        "Kemasan interior penuh: jubin, siling, kabinet dan pengecatan",
+        "Penyelarasan elektrik, paip dan M&E dalam satu kontrak",
+        "Jaminan struktur dan mutu kerja 12 bulan",
+      ],
+      process: [
+        { step: "01", title: "Tinjauan & Pelan Reka Bentuk", desc: "Kami mengukur rumah, membincang keperluan keluarga anda dan menyediakan pelan pengubahsuaian dengan anggaran terperinci." },
+        { step: "02", title: "Persediaan & Panduan Kelulusan", desc: "Kerja struktur dan sambungan mungkin memerlukan kelulusan pihak berkuasa tempatan; kami menyediakan panduan penyerahan yang diperlukan." },
+        { step: "03", title: "Kerja Struktur & Sambungan", desc: "Perobohan terkawal, kerja bata, porch kereta dan sambungan dapur dibina mengikut pelan yang diluluskan." },
+        { step: "04", title: "M&E & Kemasan Interior", desc: "Elektrik, paip, jubin, siling, kabinet dan pengecatan disiapkan mengikut jadual berperingkat." },
+        { step: "05", title: "Pemeriksaan & Serahan", desc: "Pemeriksaan bersama di setiap peringkat, pembersihan akhir dan serahan dengan jaminan bertulis." },
+      ],
+      faqs: [
+        { q: "Berapa kos mengubah suai rumah Semi-D?", a: "Harga bermula dari RM 35,000 untuk skop asas. Kos sebenar bergantung pada keluasan rumah, tahap kerja struktur, pilihan bahan dan kemasan — anggaran tepat diberikan selepas tinjauan tapak." },
+        { q: "Adakah modifikasi struktur memerlukan kelulusan?", a: "Ya, kerja struktur dan sambungan biasanya memerlukan kelulusan pihak berkuasa tempatan seperti DBKL atau majlis perbandaran. Kami menyediakan panduan penyerahan, tetapi kelulusan tertakluk kepada keputusan pihak berkuasa." },
+        { q: "Bolehkah kami terus tinggal di rumah semasa kerja?", a: "Boleh untuk fasa kemasan, tetapi fasa perobohan dan struktur lebih sesuai dilakukan semasa rumah kosong kerana habuk dan bunyi bising. Kami boleh menyusun jadual berperingkat untuk memudahkan urusan anda." },
+        { q: "Berapa lama projek pengubahsuaian Semi-D mengambil masa?", a: "Tempoh bergantung pada skop — projek dengan sambungan dan kerja struktur mengambil masa lebih lama daripada pengubahsuaian kemasan sahaja. Jadual terperinci diberikan bersama sebut harga." },
+      ],
+      metaTitle: "Pengubahsuaian Rumah Semi-D KL & Selangor | Dari RM35k",
+      metaDesc: "Pengubahsuaian Semi-D di KL & Selangor: modifikasi struktur, porch kereta, sambungan dapur dan kemasan interior penuh. Dari RM 35,000. Sebut harga selepas tinjauan.",
+    },
+    zh: {
+      name: "半独立式住宅翻新",
+      tagline: "吉隆坡与雪兰莪半独立式（Semi-D）住宅翻新：结构改动、车棚、厨房扩建与全面室内饰面。从 RM 35,000 起。",
+      description:
+        "半独立式住宅拥有可充分利用的侧面与后方空间。我们的Semi-D翻新方案涵盖结构改动（如开墙与空间重组）、车棚建造、后厨房扩建，以及全面室内饰面——瓷砖、石膏天花、厨柜、衣柜、水电与油漆。项目以单一合同管理，工期清晰，结构、机电与木工团队统一协调，并在每个阶段进行联合验收。价格从 RM 35,000 起，实地勘察后按实际工程量精确报价。",
+      highlights: [
+        "按新平面图进行结构改动与空间重组",
+        "车棚、厨房扩建与砌砖工程一站完成",
+        "全面室内饰面：瓷砖、天花、橱柜与油漆",
+        "水电与机电统一协调，单一合同",
+        "12个月结构与工艺保修",
+      ],
+      process: [
+        { step: "01", title: "勘察与设计规划", desc: "我们测量房屋、了解您的家庭需求，并提供翻新平面图与详细预算。" },
+        { step: "02", title: "准备与报批指引", desc: "结构与扩建工程可能需要地方当局批准；我们提供所需的报批文件指引。" },
+        { step: "03", title: "结构与扩建施工", desc: "按图进行受控拆除、砌砖、车棚与厨房扩建。" },
+        { step: "04", title: "机电与室内饰面", desc: "按分阶段进度完成水电、瓷砖、天花、橱柜与油漆。" },
+        { step: "05", title: "验收与交付", desc: "每阶段联合验收，最终清洁后带书面保修交付。" },
+      ],
+      faqs: [
+        { q: "半独立式住宅翻新要多少钱？", a: "基础工程从 RM 35,000 起。实际费用取决于房屋面积、结构工程量、材料与饰面选择——实地勘察后提供精确报价。" },
+        { q: "结构改动需要审批吗？", a: "需要。结构与扩建工程通常需DBKL或地方市议会批准。我们提供报批文件指引，但批准与否由当局决定。" },
+        { q: "施工期间可以继续住在里面吗？", a: "饰面阶段可以，但拆除与结构阶段因粉尘与噪音，较适合在空房状态下进行。我们可安排分阶段施工以减少影响。" },
+        { q: "Semi-D翻新工期需要多久？", a: "视工程范围而定——含扩建与结构工程的项目比纯饰面翻新耗时更长。详细工期表会随报价一并提供。" },
+      ],
+      metaTitle: "吉隆坡半独立式住宅翻新 | 从RM35k起",
+      metaDesc: "吉隆坡与雪兰莪Semi-D住宅翻新：结构改动、车棚、厨房扩建、全面室内饰面。从 RM 35,000 起。勘察后报价，WhatsApp咨询。",
+    }
+  },
+
+  "house-renovation/bungalow-renovation": {
+    ms: {
+      name: "Pengubahsuaian Banglo",
+      tagline: "Pemulihan penuh banglo di KL & Selangor merangkumi fasad, bumbung, ruang luar, interior dan naik taraf M&E. Dari RM 60,000.",
+      description:
+        "Banglo memerlukan pendekatan pengubahsuaian menyeluruh kerana skopnya meliputi keseluruhan bangunan dan kawasan luar. Pakej pemulihan banglo kami merangkumi penjanaan semula fasad, kerja bumbung, pembangunan ruang luar seperti porch dan kawasan perkerasan, pengubahsuaian interior penuh untuk semua tingkat, serta naik taraf sistem M&E termasuk pendawaian, paip dan pencahayaan. Projek besar seperti ini dikendalikan dengan pelan induk berperingkat, kawalan bajet yang ketat dan laporan kemajuan berterusan supaya setiap fasa disiapkan mengikut jadual. Harga bermula dari RM 60,000 mengikut keluasan dan skop sebenar.",
+      highlights: [
+        "Penjanaan semula fasad dan kerja bumbung menyeluruh",
+        "Pembangunan porch dan ruang luar dengan perkerasan yang kemas",
+        "Pengubahsuaian interior penuh untuk semua tingkat",
+        "Naik taraf M&E: pendawaian, paip dan pencahayaan",
+        "Pelan induk berperingkat dengan laporan kemajuan berterusan",
+      ],
+      process: [
+        { step: "01", title: "Kajian Bangunan & Pelan Induk", desc: "Kami meninjau keadaan banglo sedia ada, mengenal pasti keperluan struktur dan menyediakan pelan induk berperingkat." },
+        { step: "02", title: "Kerja Fasad & Bumbung", desc: "Fasad dikemas kini dan kerja bumbung dilaksanakan terlebih dahulu untuk melindungi bangunan daripada cuaca." },
+        { step: "03", title: "Struktur & Ruang Luar", desc: "Kerja struktur, porch dan perkerasan ruang luar dibina mengikut pelan yang diluluskan." },
+        { step: "04", title: "M&E & Interior", desc: "Sistem elektrik dan paip dinaik taraf, diikuti kemasan interior penuh setiap tingkat." },
+        { step: "05", title: "Serahan Berperingkat", desc: "Setiap fasa diserahkan dengan pemeriksaan bersama, pembersihan akhir dan jaminan bertulis." },
+      ],
+      faqs: [
+        { q: "Berapa kos memulihkan sebuah banglo?", a: "Harga bermula dari RM 60,000 untuk skop asas. Banglo mempunyai keluasan dan kerja luar yang besar, jadi kos sebenar sangat bergantung pada skop, bahan dan tahap naik taraf M&E — anggaran tepat diberikan selepas kajian tapak." },
+        { q: "Adakah kerja bumbung perlu dilakukan dahulu?", a: "Kami mengutamakan kerja fasad dan bumbung pada peringkat awal supaya bangunan terlindung daripada hujan semasa kerja interior dijalankan. Ini mengelakkan kerosakan air pada kemasan baru." },
+        { q: "Bolehkah projek dibahagi kepada fasa?", a: "Ya, banglo biasanya diubah suai secara berperingkat — contohnya fasad dan bumbung dahulu, diikuti tingkat bawah kemudian tingkat atas. Fasa menjadikan bajet lebih terkawal dan rumah boleh dihuni sebahagiannya." },
+        { q: "Adakah naik taraf M&E termasuk dalam pakej?", a: "Ya, naik taraf pendawaian, paip dan pencahayaan boleh dimasukkan dalam pelan induk. Untuk banglo lama, kami mengesyorkan penilaian sistem sedia ada sebelum kerja kemasan bermula." },
+      ],
+      metaTitle: "Pengubahsuaian Banglo KL & Selangor | Dari RM60k",
+      metaDesc: "Pemulihan penuh banglo di KL & Selangor: fasad, bumbung, ruang luar, interior dan naik taraf M&E. Dari RM 60,000. Pelan berperingkat. Sebut harga percuma.",
+    },
+    zh: {
+      name: "独栋洋房翻新",
+      tagline: "吉隆坡与雪兰莪独栋洋房（Banglo）全面翻新：外立面、屋顶、户外空间、室内与机电升级。从 RM 60,000 起。",
+      description:
+        "独栋洋房的翻新范围覆盖整栋建筑与户外区域，需要整体性的方案。我们的洋房翻新方案包括外立面改造、屋顶工程、 porch 车棚与铺装等户外空间打造、全楼层室内翻新，以及电线、水管与照明等机电系统升级。此类大型项目以分阶段总控计划管理，预算严格把控，并持续汇报进度，确保每个阶段按期完成。价格从 RM 60,000 起，视实际面积与工程范围而定。",
+      highlights: [
+        "外立面整体改造与屋顶工程",
+        "车棚与户外空间铺装整洁到位",
+        "全楼层室内翻新一次到位",
+        "机电升级：电线、水管与照明",
+        "分阶段总控计划，持续汇报进度",
+      ],
+      process: [
+        { step: "01", title: "房屋勘察与总控规划", desc: "勘察洋房现状，评估结构需求，制定分阶段总控计划。" },
+        { step: "02", title: "立面与屋顶工程", desc: "优先更新立面与屋顶，保护建筑在后续施工中免受风雨影响。" },
+        { step: "03", title: "结构与户外空间", desc: "按批准图纸进行结构、车棚与户外铺装施工。" },
+        { step: "04", title: "机电与室内", desc: "升级电路与水管系统，随后完成各楼层室内饰面。" },
+        { step: "05", title: "分阶段交付", desc: "每个阶段联合验收，最终清洁后带书面保修交付。" },
+      ],
+      faqs: [
+        { q: "独栋洋房翻新要多少钱？", a: "基础工程从 RM 60,000 起。洋房面积大且户外工程多，实际费用很大程度取决于范围、材料与机电升级程度——现场勘察后提供精确报价。" },
+        { q: "屋顶工程要先做吗？", a: "是的。我们优先处理立面与屋顶，让建筑在室内施工期间得到保护，避免新饰面被雨水损坏。" },
+        { q: "项目可以分期进行吗？", a: "可以。洋房翻新通常分期实施——例如先做立面与屋顶，再楼下后楼上。分期让预算更可控，房屋也可部分居住。" },
+        { q: "机电升级包含在方案内吗？", a: "可以纳入总控计划。对于老旧洋房，我们建议在饰面开工前先评估现有系统。" },
+      ],
+      metaTitle: "吉隆坡独栋洋房翻新 | 从RM60k起",
+      metaDesc: "吉隆坡与雪兰莪洋房全面翻新：外立面、屋顶、户外、室内与机电升级。从 RM 60,000 起。分阶段施工，免费报价。",
+    }
+  },
+
+  "house-renovation/apartment-renovation": {
+    ms: {
+      name: "Pengubahsuaian Apartmen",
+      tagline: "Pengubahsuaian interior apartmen dengan pematuhan JMB, kalis air, jubin dan pengecatan di KL & Selangor. Dari RM 18,000.",
+      description:
+        "Mengubah suai unit apartmen memerlukan pematuhan kepada peraturan pengurusan bangunan (JMB/MC) — borang kebenaran, deposit, waktu kerja dan laluan pelupusan serpihan. Pakej pengubahsuaian apartmen kami merangkumi pengurusan penyerahan kepada pengurusan, perlindungan lif dan koridor, kalis air bilik mandi sebelum kerja jubin, pemasangan jubin dan siling, kabinet dapur, kerja elektrik dan paip, serta pengecatan penuh. Semua kerja dijadualkan mengikut waktu yang dibenarkan pengurusan supaya jiran tidak terganggu. Harga bermula dari RM 18,000 mengikut keluasan unit dan skop yang dipilih.",
+      highlights: [
+        "Pengurusan penyerahan JMB/MC: borang, deposit dan waktu kerja",
+        "Perlindungan lif dan koridor sepanjang projek",
+        "Kalis air bilik mandi sebelum kerja jubin dimulakan",
+        "Jubin, siling, kabinet, elektrik dan pengecatan dalam satu pakej",
+        "Pelupusan serpihan mengikut laluan ditetapkan pengurusan",
+      ],
+      process: [
+        { step: "01", title: "Tinjauan Unit & Peraturan", desc: "Kami meninjau unit anda dan menyemak peraturan pengubahsuaian bangunan untuk merancang skop yang dibenarkan." },
+        { step: "02", title: "Penyerahan kepada Pengurusan", desc: "Borang kebenaran, deposit dan dokumen insurans disediakan dan dihantar kepada pengurusan untuk kelulusan." },
+        { step: "03", title: "Perlindungan & Perobohan", desc: "Lif dan koridor dilindungi, kerja perobohan dijalankan dalam waktu dibenarkan dengan pelupusan serpihan terancang." },
+        { step: "04", title: "Kalis Air & Kemasan", desc: "Kalis air bilik mandi, jubin, siling, kabinet, elektrik dan pengecatan disiapkan mengikut jadual." },
+        { step: "05", title: "Pembersihan & Serahan", desc: "Kawasan kerja dibersihkan, unit diserahkan dengan pemeriksaan bersama dan jaminan bertulis." },
+      ],
+      faqs: [
+        { q: "Berapa kos mengubah suai unit apartmen?", a: "Harga bermula dari RM 18,000 untuk skop asas seperti bilik mandi, dapur, lantai dan pengecatan. Kos sebenar bergantung pada keluasan unit dan skop yang dipilih selepas tinjauan." },
+        { q: "Siapa urus kelulusan pengurusan bangunan?", a: "Kami menyediakan dan menghantar borang kebenaran, deposit dan dokumen insurans kepada pengurusan (JMB/MC). Kelulusan tertakluk kepada terma peraturan bangunan anda." },
+        { q: "Adakah semua kerja bising boleh dilakukan?", a: "Kerja perobohan dan bising hanya dijalankan dalam waktu yang dibenarkan oleh pengurusan, biasanya hari bekerja. Kami merancang jadual mengikut had ini supaya projek tetap lancar." },
+        { q: "Bolehkah susun atur paip bilik mandi diubah?", a: "Perubahan kedudukan paip boleh dilakukan bergantung pada struktur slab dan peraturan bangunan. Kami menilai kemungkinan semasa tinjauan sebelum memasukkannya dalam sebut harga." },
+      ],
+      metaTitle: "Pengubahsuaian Apartmen KL & Selangor | Dari RM18k",
+      metaDesc: "Pengubahsuaian apartmen di KL & Selangor: pematuhan JMB, kalis air, jubin, kabinet dan pengecatan. Dari RM 18,000. Sebut harga percuma di WhatsApp.",
+    },
+    zh: {
+      name: "公寓单元翻新",
+      tagline: "吉隆坡与雪兰莪公寓单元室内翻新：JMB合规、防水、贴砖与油漆。从 RM 18,000 起。",
+      description:
+        "公寓单元翻新必须遵守管理处（JMB/MC）规定——装修申请表、押金、施工时段与垃圾清运路线。我们的公寓翻新方案涵盖向管理处呈报审批、电梯与走廊保护、贴砖前的卫生间防水、瓷砖与天花安装、厨柜、水电工程以及全面油漆。所有工序按管理处允许的时段安排，避免打扰邻居。价格从 RM 18,000 起，视单元面积与所选范围而定。",
+      highlights: [
+        "JMB/MC呈报管理：表格、押金与施工时段",
+        "全工程电梯与走廊保护",
+        "贴砖前先做卫生间防水",
+        "瓷砖、天花、橱柜、水电与油漆一价全包",
+        "按管理处指定路线清运垃圾",
+      ],
+      process: [
+        { step: "01", title: "单元勘察与规定核查", desc: "勘察您的单元并查阅大楼装修规定，规划允许的工程范围。" },
+        { step: "02", title: "向管理处呈报", desc: "准备并提交装修申请表、押金与保险文件，等待管理处批准。" },
+        { step: "03", title: "保护与拆除", desc: "保护电梯与走廊，在允许时段内拆除，并有计划地清运垃圾。" },
+        { step: "04", title: "防水与饰面", desc: "按进度完成卫生间防水、瓷砖、天花、橱柜、水电与油漆。" },
+        { step: "05", title: "清洁与交付", desc: "清理施工区域，联合验收后带书面保修交付。" },
+      ],
+      faqs: [
+        { q: "公寓单元翻新要多少钱？", a: "涵盖卫生间、厨房、地板与油漆的基础工程从 RM 18,000 起。实际费用取决于单元面积与勘察后选定的工程范围。" },
+        { q: "管理处审批由谁负责？", a: "我们负责准备并向管理处（JMB/MC）提交申请表、押金与保险文件。批准与否受大楼规定约束。" },
+        { q: "所有噪音工程都能做吗？", a: "拆除与噪音工程仅在管理处允许的时段进行（通常为工作日）。我们会按此限制编排进度，确保项目顺利。" },
+        { q: "卫生间水管位置可以改吗？", a: "视楼板结构与管理处规定而定。勘察时我们会先评估可行性，再将其纳入报价。" },
+      ],
+      metaTitle: "吉隆坡公寓翻新 | 从RM18k起",
+      metaDesc: "吉隆坡与雪兰莪公寓单元翻新：JMB合规、防水、贴砖、橱柜与油漆。从 RM 18,000 起。WhatsApp免费报价。",
+    }
+  },
+
+  "house-renovation/house-extension": {
+    ms: {
+      name: "Sambungan Rumah",
+      tagline: "Sambungan dapur, porch kereta, balkoni atau bahagian belakang dengan kerja bata, bumbung dan panduan penyerahan pihak berkuasa. Atas sebut harga.",
+      description:
+        "Sambungan rumah menambah ruang berguna untuk dapur yang lebih besar, porch kereta, balkoni atau ruang belakang. Kerja sambungan melibatkan kerja bata dan konkrit, rangka dan penutup bumbung, sambungan elektrik dan paip, serta kalis air di kawasan terdedah. Kerja sambungan hampir selalu memerlukan kelulusan pihak berkuasa tempatan seperti DBKL atau majlis perbandaran — kami menyediakan panduan penyerahan dan dokumen yang biasanya diperlukan, tetapi kelulusan tertakluk kepada keputusan pihak berkuasa dan tidak dijamin. Semua sambungan ditawarkan atas sebut harga selepas tinjauan tapak dan kajian pelan.",
+      highlights: [
+        "Sambungan dapur, porch kereta, balkoni dan ruang belakang",
+        "Kerja bata, konkrit dan rangka bumbung yang kukuh",
+        "Sambungan elektrik dan paik ke ruang baharu",
+        "Kalis air untuk kawasan terdedah kepada hujan",
+        "Panduan penyerahan DBKL/majlis disediakan sebelum kerja",
+      ],
+      process: [
+        { step: "01", title: "Tinjauan & Kajian Pelan", desc: "Kaji pelan rumah dan tapak untuk menentukan sempadan, struktur sedia ada dan pilihan reka bentuk sambungan." },
+        { step: "02", title: "Sebut Harga & Panduan Kelulusan", desc: "Sebut harga terperinci disediakan bersama panduan penyerahan kepada pihak berkuasa tempatan yang berkenaan." },
+        { step: "03", title: "Kerja Struktur & Bata", desc: "Asas, kerja bata dan struktur konkrit dibina mengikut pelan, diikuti rangka dan penutup bumbung." },
+        { step: "04", title: "M&E & Kalis Air", desc: "Bekalan elektrik dan paip disambungkan, dan kawasan terdedah dilapisi sistem kalis air yang sesuai." },
+        { step: "05", title: "Kemasan & Serahan", desc: "Lantai, dinding dan kemasan luar disiapkan sebelum pemeriksaan bersama dan serahan." },
+      ],
+      faqs: [
+        { q: "Berapa kos sambungan rumah?", a: "Kos sambungan bergantung pada saiz, struktur, bahan bumbung dan kerja M&E yang terlibat, jadi semua sambungan ditawarkan atas sebut harga selepas tinjauan tapak. Hubungi kami untuk anggaran khusus untuk rumah anda." },
+        { q: "Adakah sambungan rumah memerlukan kelulusan?", a: "Ya, hampir semua kerja sambungan memerlukan kelulusan pihak berkuasa tempatan seperti DBKL atau majlis perbandaran. Kami menyediakan panduan penyerahan dan dokumen lazimnya diperlukan, tetapi kelulusan tidak dijamin dan tertakluk kepada pihak berkuasa." },
+        { q: "Berapa lama kerja sambungan mengambil masa?", a: "Tempoh bergantung pada saiz sambungan dan keperluan kelulusan. Jadual kerja hanya disusun selepas kelulusan diperoleh dan bahan tiba di tapak." },
+        { q: "Bolehkah sambungan dibina untuk rumah teres?", a: "Ya, sambungan belakang dan porch kereta adalah pilihan biasa untuk rumah teres di Malaysia, tertakluk pada garis sempadan (setback) dan peraturan pihak berkuasa tempatan. Kami semak kemungkinan semasa tinjauan." },
+      ],
+      metaTitle: "Sambungan Rumah KL & Selangor | Kontraktor Sambungan",
+      metaDesc: "Sambungan dapur, porch kereta, balkoni dan ruang belakang di KL & Selangor: kerja bata, bumbung, kalis air dan panduan penyerahan. Atas sebut harga.",
+    },
+    zh: {
+      name: "房屋扩建",
+      tagline: "厨房、车棚、阳台或后部扩建，含砌砖、屋顶与报批指引。依报价。",
+      description:
+        "房屋扩建为更大的厨房、车棚、阳台或后部空间增添实用面积。扩建工程涉及砌砖与混凝土工程、屋顶结构与封顶、水电接驳，以及外露区域的防水。扩建几乎总需要DBKL或地方市议会等地方当局的批准——我们提供报批指引与常用文件，但批准与否由当局决定，不予保证。所有扩建工程在实地勘察与图纸研究后按报价施工。",
+      highlights: [
+        "厨房、车棚、阳台与后部空间扩建",
+        "砌砖、混凝土与屋顶结构牢固施工",
+        "水电接驳至新空间",
+        "外露区域防水处理",
+        "开工前提供DBKL/市议会报批指引",
+      ],
+      process: [
+        { step: "01", title: "勘察与图纸研究", desc: "研究房屋图纸与现场，确定边界、现有结构与扩建方案。" },
+        { step: "02", title: "报价与报批指引", desc: "提供详细报价，以及向相关地方当局报批的指引。" },
+        { step: "03", title: "结构与砌砖", desc: "按图施工基础、砌砖与混凝土结构，随后进行屋架与封顶。" },
+        { step: "04", title: "机电与防水", desc: "接驳水电线路，并为外露区域涂刷合适的防水系统。" },
+        { step: "05", title: "饰面与交付", desc: "完成地面、墙面与外部饰面后联合验收交付。" },
+      ],
+      faqs: [
+        { q: "房屋扩建要多少钱？", a: "扩建费用取决于面积、结构、屋顶材料与机电工程量，因此所有扩建均需实地勘察后按报价施工。欢迎联系我们获取针对您房屋的估价。" },
+        { q: "房屋扩建需要审批吗？", a: "需要。几乎所有扩建工程都需DBKL或地方市议会等当局批准。我们提供报批指引与常用文件，但批准不予保证，最终由当局决定。" },
+        { q: "扩建工期需要多久？", a: "视扩建规模与审批要求而定。施工进度表会在获得批准且材料到场后才排定。" },
+        { q: "排屋可以做扩建吗？", a: "可以。后部扩建与车棚是马来西亚排屋的常见选择，但受退线规定与地方当局规则约束。勘察时我们会核实可行性。" },
+      ],
+      metaTitle: "吉隆坡房屋扩建 | 厨房/车棚/后部扩建",
+      metaDesc: "吉隆坡与雪兰莪房屋扩建：厨房、车棚、阳台与后部空间，含砌砖、屋顶、防水与报批指引。依报价，WhatsApp咨询。",
+    }
+  },
+
+  "house-renovation/renovation-contractor-services": {
+    ms: {
+      name: "Perkhidmatan Kontraktor Pengubahsuaian",
+      tagline: "Kontraktor berdaftar untuk reka bentuk, perobohan, struktur, M&E, pertukangan, pengecatan dan serahan projek di KL & Selangor. Atas sebut harga.",
+      description:
+        "Sebagai kontraktor pengubahsuaian berdaftar, KL Servis Rumah menguruskan projek hujung-ke-hujung — reka bentuk dan perancangan, perobohan dan kerja struktur, pendawaian dan paip (M&E), pertukangan dan kabinet, pengecatan, sehingga pembersihan dan serahan akhir. Satu kontrak bermakna satu pihak bertanggungjawab ke atas jadual, kualiti dan keselamatan tapak, dengan laporan kemajuan dan penyelarasan semua pasukan perdagangan. Sesuai untuk pemilik rumah yang mahu pengubahsuaian terancang tanpa mengurus banyak kontraktor berasingan. Semua projek ditawarkan atas sebut harga selepas tinjauan dan perbincangan skop.",
+      highlights: [
+        "Pengurusan projek hujung-ke-hujung dalam satu kontrak",
+        "Reka bentuk, perobohan, struktur, M&E dan pertukangan diselaraskan",
+        "Satu pihak bertanggungjawab ke atas jadual dan kualiti",
+        "Laporan kemajuan berterusan sepanjang projek",
+        "Pembersihan dan serahan akhir yang tersusun",
+      ],
+      process: [
+        { step: "01", title: "Perundingan & Skop", desc: "Perbincangan keperluan, bajet dan keutamaan anda, diikuti tinjauan tapak dan cadangan skop kerja." },
+        { step: "02", title: "Reka Bentuk & Sebut Harga", desc: "Pelan kerja, jadual dan sebut harga terperinci disediakan untuk persetujuan sebelum kerja bermula." },
+        { step: "03", title: "Pelaksanaan Berperingkat", desc: "Perobohan, struktur, M&E dan pertukangan dilaksanakan mengikut jadual dengan kawalan mutu di tapak." },
+        { step: "04", title: "Kemasan & Pengecatan", desc: "Kemasan interior, kabinet dan pengecatan disiapkan dengan pemeriksaan bersama di setiap peringkat." },
+        { step: "05", title: "Serahan & Jaminan", desc: "Pembersihan akhir, senarai semak serahan dan jaminan mutu kerja diserahkan kepada anda." },
+      ],
+      faqs: [
+        { q: "Apakah faedah menggunakan satu kontraktor pengubahsuaian?", a: "Satu kontraktur menguruskan jadual, kualiti dan keselamatan tapak secara berpusat, mengurangkan risiko pertindihan kerja antara perdagangan yang berasingan. Anda juga mempunyai satu saluran komunikasi dan satu akauntabiliti untuk sepanjang projek." },
+        { q: "Bagaimana proses sebut harga dijalankan?", a: "Selepas perbincangan skop dan tinjauan tapak, kami sediakan sebut harga terperinci mengikut item kerja. Harga berdasarkan skop sebenar rumah anda, bukan anggaran generik." },
+        { q: "Adakah anda menguruskan semua perdagangan termasuk elektrik dan paip?", a: "Ya, skop kontraktor kami merangkumi koordinasi perobohan, struktur, M&E (elektrik dan paip), pertukangan, pengecatan sehingga serahan, supaya anda tidak perlu mengupah kontraktor berasingan." },
+        { q: "Bolehkah projek bermula tanpa reka bentuk penuh?", a: "Untuk pengubahsuaian kecil, pelan kerja ringkas memadai. Untuk projek besar dengan kerja struktur, pelan yang lebih terperinci disyorkan supaya kos dan jadual lebih tepat." },
+      ],
+      metaTitle: "Kontraktor Pengubahsuaian KL & Selangor | KL Servis Rumah",
+      metaDesc: "Kontraktor pengubahsuaian berdaftar di KL & Selangor: reka bentuk, perobohan, struktur, M&E, pertukangan, pengecatan dan serahan. Atas sebut harga.",
+    },
+    zh: {
+      name: "翻新承包商服务",
+      tagline: "注册承包商负责设计、拆除、结构、机电、木工、油漆与项目交付，服务吉隆坡与雪兰莪。依报价。",
+      description:
+        "作为注册翻新承包商，KL Servis Rumah 提供端到端项目管理——设计与规划、拆除与结构工程、水电（机电）、木工与橱柜、油漆，直至清场与最终交付。单一合同意味着工期、质量与工地安全由单一责任方负责，全程汇报进度并协调所有工种。适合希望装修有条不紊、又不想分别管理多个承包商的业主。所有项目在勘察并确认范围后按报价执行。",
+      highlights: [
+        "单一合同，端到端项目管理",
+        "设计、拆除、结构、机电与木工统一协调",
+        "工期与质量由单一责任方负责",
+        "全程持续汇报项目进度",
+        "收尾清洁与交付流程完善",
+      ],
+      process: [
+        { step: "01", title: "咨询与范围", desc: "沟通需求、预算与优先事项，随后现场勘察并提出工程范围建议。" },
+        { step: "02", title: "设计与报价", desc: "开工前提供施工图、工期表与详细报价供您确认。" },
+        { step: "03", title: "分阶段施工", desc: "拆除、结构、机电与木工按进度执行，现场全程质量管控。" },
+        { step: "04", title: "饰面与油漆", desc: "完成室内饰面、橱柜与油漆，每个阶段联合验收。" },
+        { step: "05", title: "交付与保修", desc: "最终清洁、交付清单与工艺保修一并移交。" },
+      ],
+      faqs: [
+        { q: "请一个翻新承包商有什么好处？", a: "单一承包商集中管理工期、质量与工地安全，降低不同工种之间衔接出错的风险。整个项目您只有一个沟通渠道与一个责任主体。" },
+        { q: "报价流程是怎样的？", a: "范围沟通与现场勘察后，我们按工程项目提供详细报价。价格基于您房屋的实际工程量，而非泛泛估算。" },
+        { q: "你们也管水电工程吗？", a: "是的。我们的承包范围涵盖拆除、结构、机电（水电）、木工、油漆直至交付的全程协调，您无需再另请承包商。" },
+        { q: "没有完整设计图也能开工吗？", a: "小型翻新用简图即可。涉及结构工程的大型项目，建议准备较详细的图纸，让费用与工期更准确。" },
+      ],
+      metaTitle: "吉隆坡翻新承包商 | KL Servis Rumah",
+      metaDesc: "吉隆坡与雪兰莪注册翻新承包商：设计、拆除、结构、机电、木工、油漆与交付。依报价，WhatsApp免费咨询。",
+    }
+  },
+
+  /* ── TILING — Session 12 native specialty rollout ────────────────────── */
+  "tiling/floor-tile-replacement-and-tile-hacking": {
+    ms: {
+      name: "Penggantian Jubin & Pemecahan Jubin",
+      tagline: "Pemecahan jubin lama, screed semula, kalis air kawasan basah dan pemasangan jubin baru dengan pelupusan serpihan. Dari RM 18 / sq ft.",
+      description:
+        "Menggantikan jubin lama memerlukan lebih daripada sekadar mengoyak permukaan — pemecahan mahu dikawal supaya slab konkrit tidak rosak, habuk dikawal dengan pelindung, dan serpihan dilupuskan dengan betul. Proses kami merangkumi pemecahan jubin dan lapisan simen lama hingga subfloor yang kukuh, pemeriksaan dan pembaikan retak slab, screed semula untuk aras yang rata, kalis air untuk kawasan basah seperti bilik mandi dan dapur, kemudian pemasangan jubin baru dengan grout dan seal silikon yang kemas. Semua serpihan dikumpul dan dilupuskan supaya rumah anda kembali bersih pada akhir projek. Harga bermula dari RM 18 / sq ft.",
+      highlights: [
+        "Pemecahan terkawal yang menjaga slab konkrit asal",
+        "Kawalan habuk dengan pelindung sepanjang kerja pemecahan",
+        "Screed semula untuk aras rata sebelum jubin baru",
+        "Kalis air untuk bilik mandi, dapur dan kawasan basah",
+        "Pelupusan serpihan jubin termasuk dalam sebut harga",
+      ],
+      process: [
+        { step: "01", title: "Pemeriksaan & Perlindungan", desc: "Kami periksa keadaan jubin sedia ada, lindungi kawasan bersebelahan dan rancang kaedah pemecahan yang sesuai." },
+        { step: "02", title: "Pemecahan & Pelupusan", desc: "Jubin lama dan lapisan simen dipecahkan hingga subfloor yang kukuh, dengan serpihan dikumpul setiap hari." },
+        { step: "03", title: "Pembaikan & Screed", desc: "Retak slab diperbaiki dan screed disapu untuk aras rata dengan cerun yang betul di kawasan basah." },
+        { step: "04", title: "Kalis Air (Kawasan Basah)", desc: "Untuk bilik mandi dan dapur, sistem kalis air disapu sebelum pemasangan jubin baru." },
+        { step: "05", title: "Pemasangan Jubin Baru", desc: "Jubin baru dipasang dengan jarak seragam, grout dan seal silikon dikemas untuk kemasan tahan lama." },
+      ],
+      faqs: [
+        { q: "Berapa kos menggantikan jubin lama?", a: "Harga bermula dari RM 18 / sq ft merangkumi pemecahan, screed dan pemasangan jubin baru. Kos sebenar bergantung pada keluasan, jenis jubin dan sama ada kalis air diperlukan." },
+        { q: "Adakah pemecahan jubin merosakkan slab rumah?", a: "Pemecahan terkawal menggunakan alat dan teknik yang sesuai mengeluarkan jubin tanpa mencederakan slab konkrit. Sekiranya slab didapati rosak semasa kerja, kami laporkan dan baiki sebelum jubin baru dipasang." },
+        { q: "Berapa lama proses penggantian jubin mengambil masa?", a: "Bagi bilik mandi atau dapur standard, kerja biasanya mengambil beberapa hari bekerja termasuk pemecahan, screed, kalis air dan pemasangan. Keluasan lebih besar memerlukan tempoh lebih panjang." },
+        { q: "Adakah serpihan jubin dilupuskan oleh anda?", a: "Ya, pelupusan serpihan termasuk dalam sebut harga. Serpihan dikumpul setiap hari dan dibawa keluar mengikut kaedah pelupusan yang betul supaya rumah kekal selamat dan bersih." },
+      ],
+      metaTitle: "Penggantian Jubin & Pemecahan Jubin KL | Dari RM18/sqft",
+      metaDesc: "Ganti jubin lama di KL & Selangor: pemecahan terkawal, screed, kalis air, jubin baru dan pelupusan serpihan. Dari RM 18/sq ft. Sebut harga percuma.",
+    },
+    zh: {
+      name: "地面瓷砖更换与拆除",
+      tagline: "拆除旧砖、重新找平、湿区防水与新砖安装，含垃圾清运。从 RM 18 / sq ft 起。",
+      description:
+        "更换旧瓷砖不只是把表面撬掉——拆除必须受控，避免损伤混凝土楼板；施工要控尘防护，碎料要妥善清运。我们的流程包括拆除旧砖与旧水泥层至坚实基层、检查并修补楼板裂缝、重新找平至平整标高、为卫生间与厨房等湿区做防水，然后铺贴新砖并细致美缝与硅胶收口。所有碎料统一收集清运，完工时还您一个干净的家。价格从 RM 18 / sq ft 起。",
+      highlights: [
+        "受控拆除，保护原有混凝土楼板",
+        "拆除全程设置防尘保护",
+        "铺新砖前重新找平至平整标高",
+        "卫生间、厨房等湿区防水处理",
+        "报价含瓷砖碎料清运",
+      ],
+      process: [
+        { step: "01", title: "检查与防护", desc: "检查现有瓷砖状况，保护周边区域，规划合适的拆除方式。" },
+        { step: "02", title: "拆除与清运", desc: "拆除旧砖与水泥层至坚实基层，碎料每日集中收集。" },
+        { step: "03", title: "修补与找平", desc: "修补楼板裂缝，重新做找平层，湿区做好排水坡度。" },
+        { step: "04", title: "湿区防水", desc: "卫生间与厨房在铺新砖前涂刷防水系统。" },
+        { step: "05", title: "铺贴新砖", desc: "均匀留缝铺贴新砖，美缝与硅胶收口，饰面持久耐用。" },
+      ],
+      faqs: [
+        { q: "更换旧瓷砖要多少钱？", a: "价格从 RM 18 / sq ft 起，含拆除、找平与新砖铺贴。实际费用取决于面积、瓷砖类型以及是否需要防水。" },
+        { q: "拆砖会损坏楼板吗？", a: "受控拆除使用合适的工具与工艺，在不伤害混凝土楼板的前提下取出瓷砖。若施工中发现楼板受损，我们会先报告并修补再铺新砖。" },
+        { q: "换砖工期需要多久？", a: "标准卫生间或厨房通常需要几个工作日，包括拆除、找平、防水与铺贴。面积更大工期相应延长。" },
+        { q: "瓷砖碎料由你们清运吗？", a: "是的，碎料清运已包含在报价内。碎料每日收集并按规定方式运出，保持家中安全整洁。" },
+      ],
+      metaTitle: "吉隆坡换砖拆砖 | 从RM18/sqft起",
+      metaDesc: "吉隆坡与雪兰莪旧砖更换：受控拆除、找平、防水、新砖铺贴与碎料清运。从 RM 18/sq ft 起。免费报价。",
+    }
+  },
+
+  "tiling/porcelain-tiles-installation": {
+    ms: {
+      name: "Pemasangan Jubin Porselin",
+      tagline: "Jubin porselin homogen matte, berkilat, rupa kayu dan rupa batu dengan tepi rectified untuk jarak jisim halus. Dari RM 16 / sq ft.",
+      description:
+        "Jubin porselin homogen adalah pilihan popular untuk rumah Malaysia kerana tahap penyerapan air yang rendah dan ketahanan yang tinggi. Kami memasang jubin porselin dalam pelbagai kemasan — matte yang tidak licin, berkilat yang mewah, rupa kayu untuk suasana hangat dan rupa batu untuk kesan semula jadi. Jubin bertepi rectified membolehkan jarak jisim halus dan seragam untuk paparan moden yang kemas. Pemasangan merangkumi penyediaan permukaan, pemadanan corak antara keping, klip perata untuk jubin besar, serta grout warna sepadan. Harga bermula dari RM 16 / sq ft.",
+      highlights: [
+        "Jubin porselin homogen dengan penyerapan air rendah",
+        "Kemasan matte, berkilat, rupa kayu dan rupa batu",
+        "Tepi rectified untuk jarak jisim halus dan seragam",
+        "Pemadanan corak antara keping untuk kesinambungan",
+        "Klip perata untuk jubin format besar",
+      ],
+      process: [
+        { step: "01", title: "Pengukuran & Susun Atur", desc: "Kami mengukur ruang dan merancang susun atur supaya potongan minimum dan corak berterusan di kawasan utama." },
+        { step: "02", title: "Penyediaan Permukaan", desc: "Subfloor dibersihkan, diperiksa dan diratakan supaya jubin melekat sepenuhnya tanpa ruang kosong." },
+        { step: "03", title: "Pemasangan & Perataan", desc: "Jubin dipasang dengan pelekat sesuai untuk porselin, dengan klip perata mengekalkan permukaan rata antara keping." },
+        { step: "04", title: "Grout & Pembersihan", desc: "Grout warna sepadan disapu selepas pelekat kering, diikuti pembersihan sisa dan pemeriksaan bersama." },
+      ],
+      faqs: [
+        { q: "Apakah beza jubin porselin dan seramik?", a: "Jubin porselin dibakar pada suhu lebih tinggi menjadikannya lebih padat dengan penyerapan air lebih rendah — sesuai untuk kawasan basah dan lalu lintas tinggi. Jubin seramik lebih nipis dan sesuai untuk dinding serta kawasan kering." },
+        { q: "Berapa kos pemasangan jubin porselin?", a: "Harga pemasangan bermula dari RM 16 / sq ft. Harga jubin itu sendiri berbeza mengikut jenama dan kemasan yang anda pilih — kami boleh nasihatkan pilihan mengikut bajet." },
+        { q: "Adakah jubin rupa kayu sesuai untuk bilik mandi?", a: "Jubin porselin rupa kayu dengan kemasan matte sesuai untuk bilik mandi kerana teksturnya memberikan cengkaman lebih baik berbanding permukaan berkilat. Kami cadangkan grout epoxy untuk kawasan basah." },
+        { q: "Adakah jarak jisim halus mungkin dengan semua jubin?", a: "Jarak 1.5–2mm hanya sesuai untuk jubin bertepi rectified kerana tepinya lurus dan seragam. Jubin tepi biasa memerlukan jarak lebih lebar untuk menampung variasi saiz." },
+      ],
+      metaTitle: "Pemasangan Jubin Porselin KL & Selangor | Dari RM16/sqft",
+      metaDesc: "Pasang jubin porselin homogen di KL & Selangor: matte, berkilat, rupa kayu, rupa batu, tepi rectified. Dari RM 16/sq ft. Sebut harga percuma.",
+    },
+    zh: {
+      name: "抛光砖铺贴",
+      tagline: "通体抛光砖，哑光、亮光、木纹与石纹饰面，倒角边可做窄缝铺贴。从 RM 16 / sq ft 起。",
+      description:
+        "通体抛光砖因吸水率低、耐用性高，是马来西亚家庭的热门选择。我们铺贴多种饰面的抛光砖——防滑的哑光、气派的亮光、温馨的木纹以及自然的石纹。倒角边（rectified）瓷砖可实现细窄均匀的留缝，呈现整洁的现代效果。铺贴服务包括基层处理、逐片对纹、大规格瓷砖找平器使用，以及配色美缝。价格从 RM 16 / sq ft 起。",
+      highlights: [
+        "通体抛光砖，吸水率低",
+        "哑光、亮光、木纹与石纹饰面可选",
+        "倒角边实现细窄均匀留缝",
+        "逐片对纹，保证图案连贯",
+        "大规格瓷砖配找平器铺贴",
+      ],
+      process: [
+        { step: "01", title: "测量与排砖", desc: "测量空间并规划排砖方案，主要区域切割最少、图案连贯。" },
+        { step: "02", title: "基层处理", desc: "清洁、检查并找平基层，确保瓷砖满浆粘贴不空鼓。" },
+        { step: "03", title: "铺贴与找平", desc: "使用适合抛光砖的粘结剂铺贴，找平器保持片间平整。" },
+        { step: "04", title: "美缝与清洁", desc: "粘结剂干透后做配色美缝，随后清理残渣并联合验收。" },
+      ],
+      faqs: [
+        { q: "抛光砖和陶瓷砖有什么区别？", a: "抛光砖烧制温度更高，更致密、吸水率更低——适合湿区与高人流区域。陶瓷砖较薄，适合墙面与干燥区域。" },
+        { q: "抛光砖铺贴要多少钱？", a: "铺贴价格从 RM 16 / sq ft 起。瓷砖本身的价格视品牌与饰面而定——我们可以按预算给出建议。" },
+        { q: "木纹砖适合卫生间吗？", a: "哑光木纹抛光砖适合卫生间，比亮光面抓地力更好。湿区我们建议搭配环氧美缝。" },
+        { q: "所有瓷砖都能窄缝铺贴吗？", a: "1.5–2mm 窄缝只适合倒角边瓷砖，因其边缘平直均匀。普通边瓷砖需留较宽缝以容忍尺寸误差。" },
+      ],
+      metaTitle: "吉隆坡抛光砖铺贴 | 从RM16/sqft起",
+      metaDesc: "吉隆坡与雪兰莪通体抛光砖铺贴：哑光、亮光、木纹、石纹，倒角窄缝。从 RM 16/sq ft 起。免费报价。",
+    }
+  },
+
+  "tiling/ceramic-tiles-installation": {
+    ms: {
+      name: "Pemasangan Jubin Seramik",
+      tagline: "Jubin seramik dinding dan lantai untuk bilik mandi, dapur dan balkoni dengan grout sepadan warna. Dari RM 14 / sq ft.",
+      description:
+        "Jubin seramik kekal sebagai pilihan ekonomi dan serba boleh untuk dinding dan lantai rumah Malaysia. Kami memasang jubin seramik untuk bilik mandi, dapur, balkoni dan ruang basah lain dengan pemilihan pelekat dan grout yang sesuai — grout warna sepadan untuk paparan kemas, atau grout epoxy di kawasan yang kerap basah untuk ketahanan kotoran lebih baik. Pemasangan merangkumi penyediaan permukaan, aras dan cerun yang betul untuk saliran, pemotongan kemas di penjuru dan paip, serta silikon anti-kulat di sendi basah. Harga bermula dari RM 14 / sq ft.",
+      highlights: [
+        "Jubin seramik dinding dan lantai yang ekonomi dan serba boleh",
+        "Grout sepadan warna atau grout epoxy untuk kawasan basah",
+        "Aras dan cerun saliran yang betul di ruang basah",
+        "Pemotongan kemas di penjuru, paip dan longkang",
+        "Silikon anti-kulat pada sendi yang kerap terkena air",
+      ],
+      process: [
+        { step: "01", title: "Perancangan Susun Atur", desc: "Susun atur dirancang supaya potongan jatuh di kawasan kurang ketara dan corak sepadan di dinding utama." },
+        { step: "02", title: "Penyediaan Permukaan", desc: "Dinding dan lantai dibersihkan dan diratakan; lantai bilik mandi diberi cerun ke arah longkang." },
+        { step: "03", title: "Pemasangan Jubin", desc: "Jubin dipasang dengan pelekat sesuai, dimulakan dari aras rujukan untuk barisan yang lurus." },
+        { step: "04", title: "Grout & Penamat", desc: "Grout disapu selepas pemendekan, diikuti silikon anti-kulat pada sendi basah dan pembersihan akhir." },
+      ],
+      faqs: [
+        { q: "Berapa kos pemasangan jubin seramik?", a: "Harga bermula dari RM 14 / sq ft untuk pemasangan. Kos keseluruhan bergantung pada keluasan, saiz jubin dan jenis grout yang dipilih." },
+        { q: "Adakah jubin seramik sesuai untuk lantai bilik mandi?", a: "Ya, dengan pemilihan kemasan bertekstur atau matte yang tidak licin apabila basah. Kami juga memastikan cerun lantai ke longkang cukup supaya air tidak bertakung." },
+        { q: "Grout biasa atau epoxy lebih baik?", a: "Grout biasa ekonomi dan sesuai untuk kawasan kering. Grout epoxy lebih tahan kotoran dan air, jadi kami mengesyorkannya untuk bilik mandi dan dapur yang kerap basah." },
+        { q: "Bolehkah jubin seramik dipasang di atas jubin lama?", a: "Pemasangan atas jubin lama kadangkala boleh dilakukan jika jubin lama masih melekat kukuh, tetapi ia menaikkan aras lantai. Pemecahan jubin lama memberikan hasil lebih kemas dan tahan lama." },
+      ],
+      metaTitle: "Pemasangan Jubin Seramik KL & Selangor | Dari RM14/sqft",
+      metaDesc: "Pasang jubin seramik dinding dan lantai di KL & Selangor untuk bilik mandi, dapur dan balkoni. Dari RM 14/sq ft. Grout sepadan warna. Sebut harga percuma.",
+    },
+    zh: {
+      name: "陶瓷砖铺贴",
+      tagline: "浴室、厨房与阳台墙地陶瓷砖铺贴，配色美缝。从 RM 14 / sq ft 起。",
+      description:
+        "陶瓷砖一直是马来西亚家庭墙面与地面经济实用的选择。我们为卫生间、厨房、阳台及其他湿区铺贴陶瓷砖，选用合适的粘结剂与美缝剂——配色美缝呈现整洁效果，常湿区域可用环氧美缝增强抗污性。铺贴包括基层处理、地面找平与排水坡度、转角与管道处的精细切割，以及湿缝处的防霉硅胶收口。价格从 RM 14 / sq ft 起。",
+      highlights: [
+        "经济实用的墙地陶瓷砖",
+        "配色美缝，湿区可选环氧美缝",
+        "湿区地面找平并做出排水坡度",
+        "转角、管道与地漏处精细切割",
+        "常湿接缝使用防霉硅胶",
+      ],
+      process: [
+        { step: "01", title: "排砖规划", desc: "规划排砖让切割落在不显眼处，主墙面图案对齐。" },
+        { step: "02", title: "基层处理", desc: "清洁并找平墙地面；卫生间地面向地漏找坡。" },
+        { step: "03", title: "铺贴瓷砖", desc: "从基准线开始，用合适的粘结剂铺贴，保证行线笔直。" },
+        { step: "04", title: "美缝与收口", desc: "初凝后做美缝，湿缝打防霉硅胶，最后清理现场。" },
+      ],
+      faqs: [
+        { q: "陶瓷砖铺贴要多少钱？", a: "铺贴价格从 RM 14 / sq ft 起。总费用取决于面积、瓷砖尺寸与所选美缝类型。" },
+        { q: "陶瓷砖适合卫生间地面吗？", a: "适合，选哑光或带纹理饰面，湿水不滑。我们同时确保地面坡度足够，水不积存。" },
+        { q: "普通美缝和环氧美缝哪个好？", a: "普通美缝经济，适合干燥区域。环氧美缝更抗污防水，卫生间与厨房等常湿区域我们建议用环氧。" },
+        { q: "可以直接在旧砖上铺贴吗？", a: "旧砖粘结牢固时有时可行，但会抬高地面标高。拆除旧砖铺贴效果更平整持久。" },
+      ],
+      metaTitle: "吉隆坡陶瓷砖铺贴 | 从RM14/sqft起",
+      metaDesc: "吉隆坡与雪兰莪浴室、厨房、阳台墙地陶瓷砖铺贴，配色美缝。从 RM 14/sq ft 起。WhatsApp免费报价。",
+    }
+  },
+
+  "tiling/mosaic-tiles-installation": {
+    ms: {
+      name: "Pemasangan Jubin Mozek",
+      tagline: "Mozek kaca, porselin dan batu untuk backsplash, niche pancuran dan dinding ciri dengan backing mesh. Dari RM 22 / sq ft.",
+      description:
+        "Mozek memberikan kesan hiasan yang suka dicapai jubin besar — sama ada backsplash dapur, niche pancuran bilik mandi atau dinding ciri ruang tamu. Kami memasang mozek kaca, porselin dan batu yang datang dengan backing mesh untuk pengendalian lebih mudah dan jarak seragam. Kerja mozek memerlukan perhatian khusus: pelekat putih untuk mozek kaca supaya warna tidak kabur, pemadanan sheet demi sheet untuk corak berterusan, dan grout yang betul untuk menonjolkan tekstur. Harga bermula dari RM 22 / sq ft kerana pemasangan mozek lebih terperinci berbanding jubin besar.",
+      highlights: [
+        "Mozek kaca, porselin dan batu dengan backing mesh",
+        "Pelekat putih untuk mozek kaca mengekalkan kejelasan warna",
+        "Pemadanan sheet demi sheet untuk corak berterusan",
+        "Pemilihan grout yang menonjolkan tekstur mozek",
+        "Kemasan kemas di niche, penjuru dan tepi trim",
+      ],
+      process: [
+        { step: "01", title: "Pemilihan & Susun Atur", desc: "Kami membantu memilih jenis mozek dan merancang susun atur kawasan hiasan anda." },
+        { step: "02", title: "Penyediaan Dinding", desc: "Dinding diratakan dan diprimer supaya setiap keping mozek melekat rata tanpa gelombang." },
+        { step: "03", title: "Pemasangan Sheet Mozek", desc: "Sheet mozek dipasang satu demi satu dengan jarak seragam dan pemadanan corak antara sheet." },
+        { step: "04", title: "Grout & Penamat", desc: "Grout dipilih untuk menonjolkan atau menyatukan warna mozek, diikuti pembersihan dan seal yang kemas." },
+      ],
+      faqs: [
+        { q: "Berapa kos pemasangan mozek?", a: "Harga bermula dari RM 22 / sq ft kerana pemasangan mozek lebih terperinci — setiap sheet perlu dipadankan dan disejajarkan. Keluasan mozek biasanya kecil jadi jumlah kos kekal berpatutan." },
+        { q: "Adakah mozek sesuai untuk backsplash dapur?", a: "Sangat sesuai — mozek mudah dibersihkan dan melindungi dinding daripada percikan minyak. Mozek kaca popular untuk kesan moden dan cerah di kawasan memasak." },
+        { q: "Bagaimana mozek dipasang dengan rata?", a: "Mozek datang dalam sheet dengan backing mesh yang mengekalkan jarak antara keping. Dinding yang rata, pelekat yang betul dan pemadanan sheet demi sheet memastikan hasil akhir rata tanpa gelombang." },
+        { q: "Bolehkah mozek digunakan di bilik mandi yang basah?", a: "Boleh — mozek kaca dan porselin tidak menyerap air. Untuk kawasan pancuran, kami pastikan grout dan silikon digunakan dengan teliti supaya air tidak menembusi sendi." },
+      ],
+      metaTitle: "Pemasangan Jubin Mozek KL & Selangor | Dari RM22/sqft",
+      metaDesc: "Pasang mozek kaca, porselin dan batu di KL & Selangor untuk backsplash, niche pancuran dan dinding ciri. Dari RM 22/sq ft. Sebut harga percuma.",
+    },
+    zh: {
+      name: "马赛克瓷砖铺贴",
+      tagline: "玻璃、陶瓷与石材马赛克，用于挡水板、淋浴壁龛与背景墙，带网背。从 RM 22 / sq ft 起。",
+      description:
+        "马赛克能呈现大规格瓷砖难以达到的装饰效果——无论是厨房挡水板、卫生间淋浴壁龛，还是客厅背景墙。我们铺贴带网背的玻璃、陶瓷与石材马赛克，易于施工且间距均匀。马赛克施工需要格外细致：玻璃马赛克使用白水泥基粘结剂避免颜色发浊，逐张对纹保证图案连贯，并选用合适的美缝突出质感。马赛克比大砖施工更精细，价格从 RM 22 / sq ft 起。",
+      highlights: [
+        "带网背的玻璃、陶瓷与石材马赛克",
+        "玻璃马赛克用白色粘结剂保持色彩通透",
+        "逐张对纹，图案连贯",
+        "选用能突出马赛克质感的美缝",
+        "壁龛、转角与收边条处精细收口",
+      ],
+      process: [
+        { step: "01", title: "选材与排布", desc: "协助挑选马赛克类型，规划装饰区域的排布方案。" },
+        { step: "02", title: "墙面处理", desc: "墙面找平并上底浆，确保每片马赛克平整粘贴无波浪。" },
+        { step: "03", title: "马赛克铺贴", desc: "逐张铺贴马赛克，间距均匀并在张与张之间对纹。" },
+        { step: "04", title: "美缝与收口", desc: "选择突出或融合马赛克颜色的美缝，随后清洁并细致密封。" },
+      ],
+      faqs: [
+        { q: "马赛克铺贴要多少钱？", a: "价格从 RM 22 / sq ft 起，因马赛克施工更精细——每张都需对纹找平。马赛克面积通常不大，总价仍属合理。" },
+        { q: "马赛克适合厨房挡水板吗？", a: "非常适合——马赛克易清洁，能保护墙面免受油渍溅污。玻璃马赛克在烹饪区很受欢迎，效果现代明亮。" },
+        { q: "马赛克怎样铺才平整？", a: "马赛克以网背成张出厂，颗粒间距固定。墙面平整、粘结剂合适加上逐张对纹，才能保证成品无波浪。" },
+        { q: "马赛克能用在湿区卫生间吗？", a: "可以——玻璃与陶瓷马赛克不吸水。淋浴区我们会细致处理美缝与硅胶，确保水不从缝隙渗入。" },
+      ],
+      metaTitle: "吉隆坡马赛克铺贴 | 从RM22/sqft起",
+      metaDesc: "吉隆坡与雪兰莪玻璃、陶瓷、石材马赛克铺贴：挡水板、淋浴壁龛、背景墙。从 RM 22/sq ft 起。免费报价。",
+    }
+  },
+
+  "tiling/bathroom-tiling-and-waterproofing": {
+    ms: {
+      name: "Jubin Bilik Mandi & Kalis Air",
+      tagline: "Jubin lantai dan dinding bilik mandi dengan membran kalis air 3 lapisan dan ujian kolam 24 jam sebelum jubin dipasang. Dari RM 18 / sq ft.",
+      description:
+        "Bilik mandi yang kemas bermula dengan sistem kalis air yang betul — jubin yang cantik di atas membran yang gagal tetap akan bocor. Proses kami menggabungkan kalis air dan penjubinan dalam satu kerja: penyediaan permukaan, membran kalis air 3 lapisan dengan tetulang di sudut dan penembusan paip, ujian kolam 24 jam untuk mengesahkan tiada kebocoran, kemudian pemasangan jubin dinding dan lantai dengan cerun yang betul ke arah longkang. Grout dan silikon anti-kulat digunakan di semua sendi basah. Harga bermula dari RM 18 / sq ft.",
+      highlights: [
+        "Membran kalis air 3 lapisan dengan tetulang sudut",
+        "Ujian kolam 24 jam sebelum jubin dipasang",
+        "Cerun lantai yang betul ke arah longkang",
+        "Grout dan silikon anti-kulat di semua sendi basah",
+        "Kalis air dan penjubinan dalam satu pasukan",
+      ],
+      process: [
+        { step: "01", title: "Penyediaan Permukaan", desc: "Permukaan dibersihkan dan diratakan; sudut dan penembusan paip diberi tetulang kalis air." },
+        { step: "02", title: "Membran 3 Lapisan", desc: "Tiga lapisan membran kalis air disapu dengan masa pengeringan antara lapisan untuk perlindungan penuh." },
+        { step: "03", title: "Ujian Kolam 24 Jam", desc: "Lantai ditakung air selama 24 jam untuk mengesahkan sistem kalis air kedap sebelum kerja jubin." },
+        { step: "04", title: "Pemasangan Jubin", desc: "Jubin dinding dan lantai dipasang dengan cerun betul, diikuti grout dan silikon anti-kulat." },
+      ],
+      faqs: [
+        { q: "Mengapa ujian kolam perlu dilakukan?", a: "Ujian kolam menakung lantai bilik mandi dengan air selama 24 jam untuk mengesan kebocoran sebelum jubin dipasang. Lebih mudah dan murah membaiki membran pada peringkat ini berbanding mengoyak jubin baharu selepas bocor." },
+        { q: "Berapa kos jubin bilik mandi dengan kalis air?", a: "Harga bermula dari RM 18 / sq ft merangkumi kalis air dan pemasangan jubin. Kos sebenar bergantung pada saiz bilik mandi, jubin pilihan dan tahap kerja penyediaan." },
+        { q: "Adakah kalis air diperlukan untuk dinding juga?", a: "Ya, kawasan pancuran dinding perlu dilapisi membran kerana air meresap melalui sendi jubin dan grout, bukan hanya lantai. Tinggi liputan bergantung pada reka bentuk bilik mandi anda." },
+        { q: "Berapa lama kerja jubin dan kalis air bilik mandi?", a: "Termasuk masa pengeringan membran dan ujian kolam, sebuah bilik mandi standard biasanya mengambil kira-kira seminggu kerja. Kerja pecah jubin lama memanjangkan tempoh ini." },
+      ],
+      metaTitle: "Jubin Bilik Mandi & Kalis Air KL | Dari RM18/sqft",
+      metaDesc: "Jubin bilik mandi dengan kalis air di KL & Selangor: membran 3 lapisan, ujian kolam 24 jam, cerun betul. Dari RM 18/sq ft. Sebut harga percuma.",
+    },
+    zh: {
+      name: "卫生间贴砖与防水",
+      tagline: "卫生间墙地贴砖，含3层防水膜与铺砖前24小时蓄水测试。从 RM 18 / sq ft 起。",
+      description:
+        "卫生间要做到位，先要有正确的防水系统——防水膜失效，再漂亮的瓷砖也终会渗漏。我们把防水与贴砖合并为一项工程：基层处理、涂刷3层防水膜并在转角与管道穿透处加强、进行24小时蓄水测试确认无渗漏，然后按正确坡度向地漏铺贴墙地砖。所有湿缝使用防霉美缝与硅胶。价格从 RM 18 / sq ft 起。",
+      highlights: [
+        "3层防水膜含转角加强处理",
+        "铺砖前进行24小时蓄水测试",
+        "地面按正确坡度排向地漏",
+        "所有湿缝使用防霉美缝与硅胶",
+        "防水与贴砖由同一团队完成",
+      ],
+      process: [
+        { step: "01", title: "基层处理", desc: "清洁并找平基层；转角与管道穿透处做防水加强。" },
+        { step: "02", title: "3层防水膜", desc: "涂刷三层防水膜，层间留足干燥时间，实现全面防护。" },
+        { step: "03", title: "24小时蓄水测试", desc: "地面蓄水24小时，确认防水系统密闭无渗后再贴砖。" },
+        { step: "04", title: "铺贴瓷砖", desc: "按正确坡度铺贴墙地砖，随后做防霉美缝与硅胶。" },
+      ],
+      faqs: [
+        { q: "为什么要做蓄水测试？", a: "蓄水测试让卫生间地面蓄水24小时，在贴砖前发现渗漏。此阶段修补防水膜，远比漏水后砸掉新砖便宜省事。" },
+        { q: "卫生间贴砖加防水要多少钱？", a: "价格从 RM 18 / sq ft 起，含防水与贴砖。实际费用取决于卫生间大小、瓷砖选择与基层处理量。" },
+        { q: "墙面也需要防水吗？", a: "需要。淋浴区墙面必须涂刷防水膜，因为水会透过砖缝与美缝渗入，不只是地面。覆盖高度视卫生间设计而定。" },
+        { q: "卫生间防水贴砖工期多久？", a: "含防水膜干燥与蓄水测试，标准卫生间大约需一周。如需拆除旧砖，工期相应延长。" },
+      ],
+      metaTitle: "吉隆坡卫生间贴砖防水 | 从RM18/sqft起",
+      metaDesc: "吉隆坡与雪兰莪卫生间贴砖防水：3层防水膜、24小时蓄水测试、正确坡度。从 RM 18/sq ft 起。免费报价。",
+    }
+  },
+
+  "tiling/kitchen-backsplash-tiling": {
+    ms: {
+      name: "Jubin Backsplash Dapur",
+      tagline: "Backsplash dapur dengan jubin subway, mozek atau format besar dan seal silikon anti-kulat di semua sendi basah. Dari RM 18 / sq ft.",
+      description:
+        "Backsplash melindungi dinding dapur daripada percikan minyak, sos dan air sambil memberikan identiti visual kepada ruang memasak. Kami memasang backsplash daripada jubin subway yang klasik, mozek yang ber tekstur atau jubin format besar yang minimum, dengan grout sepadan warna dan silikon anti-kulat di sendi yang kerap terkena air — di belakang singki dan berhampiran dapur. Pemasangan merangkumi pemotongan kemas di soket elektrik, penjuru dan tepi atas, serta pembersihan penuh selepas kerja. Harga bermula dari RM 18 / sq ft.",
+      highlights: [
+        "Jubin subway, mozek atau format besar mengikut gaya dapur",
+        "Grout sepadan warna untuk paparan yang kemas",
+        "Silikon anti-kulat di belakang singki dan kawasan basah",
+        "Pemotongan kemas di soket elektrik dan penjuru",
+        "Perlindungan dinding daripada percikan minyak dan air",
+      ],
+      process: [
+        { step: "01", title: "Pemilihan Jubin & Susun Atur", desc: "Kami membantu memilih jubin yang sesuai dengan gaya dapur dan merancang ketinggian backsplash." },
+        { step: "02", title: "Penyediaan Dinding", desc: "Dinding dibersihkan daripada gris dan cat longgar supaya pelekat melekat sepenuhnya." },
+        { step: "03", title: "Pemasangan & Pemotongan", desc: "Jubin dipasang dari aras rujukan dengan potongan kemas di soket, penjuru dan tepi atas." },
+        { step: "04", title: "Grout, Silikon & Pembersihan", desc: "Grout disapu, silikon anti-kulat dipasang di sendi basah, dan dinding dibersihkan bersih." },
+      ],
+      faqs: [
+        { q: "Berapa kos pemasangan backsplash dapur?", a: "Harga bermula dari RM 18 / sq ft. Keluasan backsplash biasanya kecil — antara 10 hingga 30 kaki persegi — jadi jumlah kos sering berpatutan untuk kesan visual yang besar." },
+        { q: "Jubin berapa tinggi backsplash perlu?", a: "Ketinggian lazim adalah antara 60cm hingga 1.2m di kawasan memasak, atau mengikut ketinggian kabinet atas. Kami membincang pilihan ini semasa perancangan supaya hasilnya sepadan dengan dapur anda." },
+        { q: "Apakah jubin paling mudah dibersihkan untuk backsplash?", a: "Jubin kaca dan jubin glossy dengan grout epoxy paling mudah disapu bersih daripada gris. Jubin matte dan bertekstur lebih sukar dibersihkan tetapi memberikan kesan yang berbeza." },
+        { q: "Bolehkah backsplash dipasang tanpa merosakkan kabinet?", a: "Ya, kerja dilakukan dengan berhati-hati di sekeliling kabinet dan topeng pelindung digunakan. Jika kabinet belum dipasang, susunan kerja yang betul adalah backsplash dahulu atau selepas kabinet bawah mengikut kes." },
+      ],
+      metaTitle: "Jubin Backsplash Dapur KL & Selangor | Dari RM18/sqft",
+      metaDesc: "Backsplash dapur di KL & Selangor: jubin subway, mozek atau format besar dengan grout sepadan dan silikon anti-kulat. Dari RM 18/sq ft. Sebut harga percuma.",
+    },
+    zh: {
+      name: "厨房挡水板贴砖",
+      tagline: "面包砖、马赛克或大板厨房挡水板，湿缝防霉硅胶收口。从 RM 18 / sq ft 起。",
+      description:
+        "挡水板保护厨房墙面免受油渍、酱汁与水花溅污，同时为烹饪区赋予视觉个性。我们铺贴经典面包砖、质感马赛克或极简大板挡水板，配色美缝，并在水槽后方与灶台附近等常湿接缝使用防霉硅胶。铺贴包括插座、转角与上边缘的精细切割，完工后全面清洁。价格从 RM 18 / sq ft 起。",
+      highlights: [
+        "面包砖、马赛克或大板，配合厨房风格",
+        "配色美缝，效果整洁",
+        "水槽后方与湿区使用防霉硅胶",
+        "插座、转角处精细切割",
+        "保护墙面免受油水溅污",
+      ],
+      process: [
+        { step: "01", title: "选砖与排布", desc: "协助挑选适合厨房风格的瓷砖，规划挡水板高度。" },
+        { step: "02", title: "墙面处理", desc: "清除墙面油污与疏松旧漆，确保粘结剂充分附着。" },
+        { step: "03", title: "铺贴与切割", desc: "从基准线铺贴，插座、转角与上边缘精细切割。" },
+        { step: "04", title: "美缝、硅胶与清洁", desc: "做美缝，湿缝打防霉硅胶，最后清洁墙面。" },
+      ],
+      faqs: [
+        { q: "厨房挡水板贴砖要多少钱？", a: "价格从 RM 18 / sq ft 起。挡水板面积通常不大——约10至30平方英尺——总价往往不高，视觉提升却很明显。" },
+        { q: "挡水板要做多高？", a: "烹饪区常见高度为60cm至1.2米，或与吊柜齐平。规划时我们会与您讨论，确保与厨房协调。" },
+        { q: "哪种挡水板砖最好清洁？", a: "亮光玻璃砖配环氧美缝最容易擦净油污。哑光与纹理砖较难清洁，但效果别有风味。" },
+        { q: "贴挡水板会弄坏橱柜吗？", a: "不会，我们在橱柜周边小心施工并加保护膜。橱柜尚未安装时，正确的顺序是先贴挡水板或在地柜之后，视情况而定。" },
+      ],
+      metaTitle: "吉隆坡厨房挡水板贴砖 | 从RM18/sqft起",
+      metaDesc: "吉隆坡与雪兰莪厨房挡水板贴砖：面包砖、马赛克或大板，配色美缝与防霉硅胶。从 RM 18/sq ft 起。免费报价。",
+    }
+  },
+
+  "tiling/floor-leveling-and-self-leveling": {
+    ms: {
+      name: "Pemerataan Lantai & Self-Leveling",
+      tagline: "Screed simen dan sebatian self-leveling untuk membetulkan lantai tidak rata sebelum pemasangan jubin atau lantai. Dari RM 8 / sq ft.",
+      description:
+        "Lantai yang tidak rata menyebabkan jubin berongga, vinyl berbunyi dan perabot goyang — masalah yang mahal untuk dibetulkan selepas pemasangan. Kami membetulkan lantai dengan dua kaedah: screed simen untuk membetulkan aras besar dan membentuk cerun, atau sebatian self-leveling yang mengalir dan meratakan diri untuk permukaan akhir yang sangat rata. Pilihan kaedah bergantung pada tahap ketidakrataan, jenis lantai yang akan dipasang kemudian dan masa projek anda. Harga bermula dari RM 8 / sq ft.",
+      highlights: [
+        "Screed simen untuk pembetulan aras besar",
+        "Sebatian self-leveling untuk kerataan permukaan tinggi",
+        "Mengelakkan jubin berongga dan vinyl berbunyi",
+        "Pemeriksaan aras laser sebelum dan selepas kerja",
+        "Tapak dibersihkan dan dilindungi sepanjang kerja",
+      ],
+      process: [
+        { step: "01", title: "Pemeriksaan Aras", desc: "Aras lantai diperiksa dengan laser untuk mengukur tahap ketidakrataan dan menentukan kaedah terbaik." },
+        { step: "02", title: "Penyediaan & Primer", desc: "Permukaan dibersihkan, retak diperbaiki dan primer disapu supaya lapisan baru melekat kuat." },
+        { step: "03", title: "Screed atau Self-Leveling", desc: "Screed disapu untuk pembetulan aras besar, atau sebatian self-leveling dituang untuk kerataan maksimum." },
+        { step: "04", title: "Pengeringan & Semakan Akhir", desc: "Lapisan dibiarkan kering mengikut tempoh yang betul sebelum semakan aras akhir dan pemasangan lantai." },
+      ],
+      faqs: [
+        { q: "Bagaimana saya tahu lantai saya tidak rata?", a: "Tanda-tanda termasuk jubin yang berongga apabila diketuk, vinyl yang berbunyi bila dipijak atau perabot yang goyang. Kami mengesahkan dengan pemeriksaan aras laser semasa tinjauan percuma." },
+        { q: "Berapa kos meratakan lantai?", a: "Harga bermula dari RM 8 / sq ft. Kos sebenar bergantung pada tahap ketidakrataan dan kaedah yang diperlukan — screed simen untuk pembetulan besar atau self-leveling untuk kerataan halus." },
+        { q: "Berapa lama screed mengering sebelum jubin?", a: "Screed simen tradisional memerlukan masa pengeringan sebelum pemasangan jubin, manakala sebatian self-leveling mengering lebih cepat. Jadual sebenar diberikan mengikut produk yang digunakan dan kelembapan tapak." },
+        { q: "Adakah self-leveling sesuai untuk semua lantai?", a: "Self-leveling sesuai untuk perbezaan aras kecil hingga sederhana dan sebagai persediaan untuk vinyl, SPC dan jubin. Untuk perbezaan besar atau cerun saliran, screed simen adalah pilihan yang tepat." },
+      ],
+      metaTitle: "Pemerataan Lantai & Self-Leveling KL | Dari RM8/sqft",
+      metaDesc: "Ratakan lantai tidak rata di KL & Selangor: screed simen dan sebatian self-leveling sebelum jubin atau vinyl. Dari RM 8/sq ft. Sebut harga percuma.",
+    },
+    zh: {
+      name: "地面找平与自流平",
+      tagline: "水泥砂浆找平与自流平，纠正不平地面，为贴砖或铺地板打好基础。从 RM 8 / sq ft 起。",
+      description:
+        "地面不平会导致瓷砖空鼓、地板异响、家具晃动——铺装之后再返工代价很高。我们用两种方式处理：水泥砂浆找平用于大幅校正标高与做出坡度；自流平材料自动流淌摊平，获得极高平整度。选择哪种方式取决于不平程度、后续铺设的地板类型与工期。价格从 RM 8 / sq ft 起。",
+      highlights: [
+        "水泥砂浆找平，大幅校正标高",
+        "自流平实现高精度表面平整",
+        "避免瓷砖空鼓与地板异响",
+        "施工前后激光水平检测",
+        "全程现场保护与清洁",
+      ],
+      process: [
+        { step: "01", title: "水平检测", desc: "激光检测地面标高，量化不平程度并确定最佳方案。" },
+        { step: "02", title: "基层与底涂", desc: "清洁地面、修补裂缝并涂刷界面剂，确保新层粘结牢固。" },
+        { step: "03", title: "找平或自流平", desc: "大幅校正用砂浆找平；精细平整则浇筑自流平材料。" },
+        { step: "04", title: "干燥与复测", desc: "按产品要求的时间养护干燥，最终复测标高后再铺地面。" },
+      ],
+      faqs: [
+        { q: "怎么知道地面不平？", a: "常见迹象：敲击瓷砖有空鼓声、踩踏地板有异响、家具放不稳。免费勘察时我们会用激光水平仪确认。" },
+        { q: "地面找平要多少钱？", a: "价格从 RM 8 / sq ft 起。实际费用取决于不平程度与所需工艺——大幅校正用水泥砂浆，精细找平用自流平。" },
+        { q: "找平层要干多久才能贴砖？", a: "传统水泥砂浆需养护干燥后才可铺砖，自流平干得更快。具体时间视所用产品与现场湿度而定，我们会给出明确工期。" },
+        { q: "自流平适用于所有地面吗？", a: "自流平适合小到中等的高差校正，常作为 vinyl、SPC 与瓷砖的基层。高差大或需排水坡度时，水泥砂浆找平更合适。" },
+      ],
+      metaTitle: "吉隆坡地面找平自流平 | 从RM8/sqft起",
+      metaDesc: "吉隆坡与雪兰莪地面找平：水泥砂浆找平与自流平，贴砖铺地板前的理想基层。从 RM 8/sq ft 起。免费报价。",
+    }
+  },
+
+  /* ── PLASTER CEILING — Session 12 native specialty rollout ───────────── */
+  "plaster-ceiling/false-ceiling-installation": {
+    ms: {
+      name: "Pemasangan Siling Palsu",
+      tagline: "Siling palsu untuk rumah dan pejabat dengan rangka GI tahan karat dan papan tahan lembapan. Dari RM 10 / sq ft.",
+      description:
+        "Siling palsu menyembunyikan pendawaian, paip dan saluran penghawa dingin di atas siling asal sambil menurunkan ketinggian visual ruang untuk keselesaan dan susun atur pencahayaan yang lebih baik. Kami memasang siling palsu untuk rumah dan pejabat menggunakan rangka besi tergalvani (GI) yang tahan karat dengan jarak penggantung yang betul untuk mengelakkan lenturan, serta papan gipsum tahan lembapan yang sesuai dengan iklim Malaysia. Bukaan downlight, kaset penghawa dingin dan cangkuk kipas dipotong bersepadu, dan panel akses dipasang untuk penyelenggaraan masa depan. Harga bermula dari RM 10 / sq ft.",
+      highlights: [
+        "Rangka GI tahan karat dengan jarak penggantung betul",
+        "Papan gipsum tahan lembapan sesuai iklim Malaysia",
+        "Bukaan downlight, kaset AC dan cangkuk kipas bersepadu",
+        "Panel akses untuk penyelenggaraan masa depan",
+        "Penyembunyian pendawaian dan saluran M&E yang kemas",
+      ],
+      process: [
+        { step: "01", title: "Pengukuran & Aras", desc: "Aras siling dan titik lampu ditentukan bersama anda sebelum rangka bermula." },
+        { step: "02", title: "Rangka GI", desc: "Penggantung dan rangka besi tergalvani dipasang dengan aras laser untuk kekuatan tanpa lentur." },
+        { step: "03", title: "Pemasangan Papan", desc: "Papan gipsum tahan lembapan diskru pada rangka dengan sendi berperingkat dan sudut diperkuat." },
+        { step: "04", title: "Skim & Serahan", desc: "Sendi ditutup dengan pita mesh dan sebatian, diamplas licin dan diprimer siap untuk cat." },
+      ],
+      faqs: [
+        { q: "Berapa kos pemasangan siling palsu?", a: "Harga bermula dari RM 10 / sq ft untuk siling palsu asas. Reka bentuk bertingkat, alur LED dan lengkung dihargai berasingan mengikut kerumitan." },
+        { q: "Adakah siling palsu sesuai untuk iklim Malaysia?", a: "Ya, dengan papan dan sistem yang betul. Kami menggunakan papan gipsum tahan lembapan dan rangka GI tahan karat supaya siling kekal rata walaupun dalam kelembapan tropika." },
+        { q: "Bolehkah pendawaian dan saluran AC disembunyikan?", a: "Boleh — itulah kelebihan utama siling palsu. Pendawaian, paip dan saluran penghawa dingin dialirkan di atas siling, dengan panel akses di titik penting untuk penyelenggaraan." },
+        { q: "Berapa lama pemasangan siling palsu mengambil masa?", a: "Untuk ruang tamu atau bilik standard, kerja rangka hingga siap skim biasanya mengambil beberapa hari bekerja. Keluasan besar atau reka bentuk bertingkat memerlukan masa lebih lanjut." },
+      ],
+      metaTitle: "Pemasangan Siling Palsu KL & Selangor | Dari RM10/sqft",
+      metaDesc: "Siling palsu untuk rumah dan pejabat di KL & Selangor: rangka GI, papan tahan lembapan, bukaan lampu bersepadu. Dari RM 10/sq ft. Sebut harga percuma.",
+    },
+    zh: {
+      name: "假天花安装",
+      tagline: "住宅与办公室假天花，防锈 GI 龙骨配防潮板材。从 RM 10 / sq ft 起。",
+      description:
+        "假天花在原天花下方隐藏电线、水管与空调管线，同时降低视觉层高，让空间更舒适、照明布置更灵活。我们为住宅与办公室安装假天花，采用防锈镀锌铁（GI）龙骨，吊杆间距正确，杜绝下垂；板材选用适合马来西亚气候的防潮石膏板。筒灯、空调出风口与吊扇点位一体化开孔，并预留检修口方便日后维护。价格从 RM 10 / sq ft 起。",
+      highlights: [
+        "防锈 GI 龙骨，吊杆间距正确",
+        "适合马来西亚气候的防潮石膏板",
+        "筒灯、空调风口与吊扇点位一体开孔",
+        "预留检修口，方便日后维护",
+        "电线与机电管线隐藏整洁",
+      ],
+      process: [
+        { step: "01", title: "测量与放线", desc: "开工前与您确定天花标高与灯位。" },
+        { step: "02", title: "GI 龙骨", desc: "激光水平安装镀锌铁吊杆与龙骨，坚固不下垂。" },
+        { step: "03", title: "板材安装", desc: "防潮石膏板上墙，板缝错缝、转角加固。" },
+        { step: "04", title: "腻子与交付", desc: "网格带嵌缝、打磨光滑并刷底漆，即可上漆。" },
+      ],
+      faqs: [
+        { q: "假天花安装要多少钱？", a: "基础假天花从 RM 10 / sq ft 起。错层、LED 灯槽与弧形造型按复杂度另行计价。" },
+        { q: "假天花适合马来西亚气候吗？", a: "适合，前提是选对板材与系统。我们使用防潮石膏板与防锈 GI 龙骨，即使在热带潮湿环境下也能保持天花平整。" },
+        { q: "电线和空调管能藏进去吗？", a: "可以——这正是假天花的最大优点。电线、水管与空调管线走天花上方，并在关键位置预留检修口。" },
+        { q: "假天花安装需要多久？", a: "客厅或标准房间从龙骨到腻子完成通常需几个工作日。大面积或错层设计耗时更长。" },
+      ],
+      metaTitle: "吉隆坡假天花安装 | 从RM10/sqft起",
+      metaDesc: "吉隆坡与雪兰莪住宅办公室假天花：GI 龙骨、防潮板材、一体化灯孔。从 RM 10/sq ft 起。免费报价。",
+    }
+  },
+
+  "plaster-ceiling/gypsum-ceiling": {
+    ms: {
+      name: "Siling Gipsum",
+      tagline: "Siling papan gipsum dengan pilihan tahan api dan tahan lembapan daripada Knauf, BNBM dan Gyproc. Dari RM 10 / sq ft.",
+      description:
+        "Siling gipsum adalah piawaian untuk kemasan dalaman moden di Malaysia — licin, siap cat dan serasi dengan semua gaya reka bentuk. Kami memasang siling papan gipsum menggunakan papan daripada jenama yang dipercayai iaitu Knauf, BNBM dan Gyproc, dengan pilihan tahan api untuk keselamatan dan tahan lembapan untuk bilik mandi, dapur dan kawasan basah. Sistem rangka GI dengan sendi berperingkat, pita mesh gentian kaca dan dua lapisan sebatian sendi memastikan siling kekal rata dan bebas retak. Harga bermula dari RM 10 / sq ft.",
+      highlights: [
+        "Papan gipsum Knauf, BNBM dan Gyproc",
+        "Pilihan tahan api untuk keselamatan keluarga",
+        "Pilihan tahan lembapan untuk bilik mandi dan dapur",
+        "Sendi berperingkat dengan pita mesh gentian kaca",
+        "Kemasan licin siap cat untuk semua gaya reka bentuk",
+      ],
+      process: [
+        { step: "01", title: "Pemilihan Papan", desc: "Jenis papan dipilih mengikut lokasi — tahan lembapan untuk kawasan basah, tahan api untuk ruang utama." },
+        { step: "02", title: "Rangka & Pemasangan", desc: "Rangka GI dipasang dengan aras laser dan papan gipsum diskru dengan sendi berperingkat." },
+        { step: "03", title: "Sistem Sendi", desc: "Pita mesh gentian kaca dan dua lapisan sebatian sendi digunakan untuk sendi yang tidak retak." },
+        { step: "04", title: "Skim & Primer", desc: "Permukaan diamplas licin dan diprimer untuk kemasan cat yang sekata." },
+      ],
+      faqs: [
+        { q: "Apakah beza papan gipsum biasa dan tahan lembapan?", a: "Papan tahan lembapan mempunyai teras dengan additive kalis air dan salutan hijau, sesuai untuk bilik mandi, dapur dan kawasan basah. Papan biasa digunakan untuk ruang kering seperti ruang tamu dan bilik tidur." },
+        { q: "Adakah papan gipsum tahan api benar-benar membantu?", a: "Papan tahan api mempunyai teras gentian yang melambatkan penyebaran api, memberikan masa tambahan untuk pemindahan. Ia adalah pilihan yang bijak untuk dapur dan ruang utama rumah." },
+        { q: "Berapa kos siling gipsum?", a: "Harga bermula dari RM 10 / sq ft. Kos sebenar bergantung pada keluasan, jenis papan yang dipilih dan kerumitan reka bentuk seperti tingkat atau lengkung." },
+        { q: "Bagaimana siling gipsum dihalang daripada retak?", a: "Kuncinya pada sistem sendi: rangka GI tanpa kayu, pita mesh gentian kaca pada setiap sendi, dan dua lapisan penuh sebatian sendi. Kami mengikut sistem ini untuk setiap pemasangan." },
+      ],
+      metaTitle: "Siling Gipsum KL & Selangor | Knauf, Gyproc | Dari RM10",
+      metaDesc: "Siling papan gipsum di KL & Selangor: pilihan tahan api dan tahan lembapan Knauf, BNBM, Gyproc dengan rangka GI. Dari RM 10/sq ft. Sebut harga percuma.",
+    },
+    zh: {
+      name: "石膏板天花",
+      tagline: "石膏板天花，可选 Knauf、BNBM、Gyproc 防火与防潮板材。从 RM 10 / sq ft 起。",
+      description:
+        "石膏板天花是马来西亚现代室内装修的主流——表面光滑、即可上漆，适配各种设计风格。我们使用值得信赖的品牌板材（Knauf、BNBM、Gyproc）安装石膏板天花，防火板材提升安全性，防潮板材适合卫生间、厨房与湿区。GI 龙骨系统配合错缝拼装、玻纤网格带与两层嵌缝料，确保天花持久平整不开裂。价格从 RM 10 / sq ft 起。",
+      highlights: [
+        "Knauf、BNBM、Gyproc 品牌石膏板",
+        "防火板材守护家人安全",
+        "防潮板材适合卫生间与厨房",
+        "错缝拼装配玻纤网格带",
+        "光滑即可上漆，适配各种风格",
+      ],
+      process: [
+        { step: "01", title: "选板", desc: "按位置选板——湿区用防潮板，主要空间用防火板。" },
+        { step: "02", title: "龙骨与安装", desc: "激光水平安装 GI 龙骨，石膏板错缝上墙。" },
+        { step: "03", title: "嵌缝系统", desc: "玻纤网格带加两层嵌缝料，接缝不开裂。" },
+        { step: "04", title: "腻子与底漆", desc: "打磨光滑并刷底漆，上漆效果均匀。" },
+      ],
+      faqs: [
+        { q: "普通石膏板和防潮板有什么区别？", a: "防潮板芯材含防水添加剂，表面呈绿色，适合卫生间、厨房与湿区。普通板用于客厅、卧室等干燥空间。" },
+        { q: "防火石膏板真的有用吗？", a: "防火板芯含玻璃纤维，能延缓火势蔓延，为撤离争取时间。厨房与主要生活区选它很明智。" },
+        { q: "石膏板天花要多少钱？", a: "价格从 RM 10 / sq ft 起。实际费用取决于面积、板材类型以及错层或弧形等设计复杂度。" },
+        { q: "怎样防止石膏板天花开裂？", a: "关键在嵌缝系统：不用木材只用 GI 龙骨、每道缝贴玻纤网格带、嵌缝料做满两层。我们每次安装都严格执行这套工艺。" },
+      ],
+      metaTitle: "吉隆坡石膏板天花 | Knauf/Gyproc | 从RM10起",
+      metaDesc: "吉隆坡与雪兰莪石膏板天花：Knauf、BNBM、Gyproc 防火防潮板材，GI 龙骨。从 RM 10/sq ft 起。免费报价。",
+    }
+  },
+
+  "plaster-ceiling/gypsum-partition-and-office-partition": {
+    ms: {
+      name: "Partisi Gipsum & Partisi Pejabat",
+      tagline: "Partisi papan gipsum untuk pembahagian bilik, kabin pejabat dan bilik mesyuarat dengan pilihan penebat bunyi. Dari RM 11 / sq ft.",
+      description:
+        "Partisi gipsum adalah cara paling pantas dan bersih untuk membahagikan ruang — sama ada membina bilik mesyuarat di pejabat, kabin kerja atau membahagikan bilik besar di rumah. Kami membina partisi papan gipsum pada rangka GI dengan dua lapisan papan pilihan untuk kekakuan lebih tinggi, pilihan padas penebat bunyi (rock wool) untuk bilik mesyuarat dan bilik tidur, serta pintu, bukaan kaca dan titik elektrik yang bersepadu. Untuk pejabat, kerja disusun supaya gangguan operasi minimum. Harga bermula dari RM 11 / sq ft.",
+      highlights: [
+        "Pembahagian bilik, kabin pejabat dan bilik mesyuarat",
+        "Pilihan penebat bunyi rock wool untuk privasi",
+        "Pilihan dua lapisan papan untuk kekakuan tinggi",
+        "Pintu, bukaan kaca dan titik elektrik bersepadu",
+        "Kerja bersih dengan gangguan operasi minimum",
+      ],
+      process: [
+        { step: "01", title: "Pelan Susun Atur", desc: "Susun atur partisi, pintu dan titik elektrik dirancang bersama anda atau pereka dalaman." },
+        { step: "02", title: "Rangka GI", desc: "Rangka galvani dipasang di lantai, dinding dan siling dengan aras yang tepat." },
+        { step: "03", title: "Papan & Penebat", desc: "Papan gipsum dipasang di kedua-dua sisi dengan penebat bunyi di dalam mengikut keperluan." },
+        { step: "04", title: "Sendi, Skim & Serahan", desc: "Sendi dirawat dengan pita mesh, diskim licin dan siap untuk cat atau kertas dinding." },
+      ],
+      faqs: [
+        { q: "Adakah partisi gipsum kukuh?", a: "Ya, dengan rangka GI dan pemasangan yang betul partisi gipsum kukuh untuk kegunaan harian. Untuk kawasan tumpuan berat, pilihan dua lapisan papan meningkatkan kekakuan dengan ketara." },
+        { q: "Seberapa baik partisi gipsum menghalang bunyi?", a: "Partisi asas sesuai untuk pembahagian umum. Untuk bilik mesyuarat atau bilik tidur, kami cadangkan penebat rock wool dalam rongga partisi yang mengurangkan pemindahan bunyi dengan berkesan." },
+        { q: "Berapa kos partisi gipsum?", a: "Harga bermula dari RM 11 / sq ft. Kos sebenar bergantung pada ketinggian, pilihan penebat bunyi, dua lapisan papan dan bukaan pintu atau kaca." },
+        { q: "Bolehkah partisi pejabat dibina semasa pejabat beroperasi?", a: "Boleh — kerja partisi agak bersih berbanding dinding bata. Kami menyusun jadual bekerja mengikut jam yang sesuai dan mengehadkan habuk serta bunyi bising kepada waktu yang dipersetujui." },
+      ],
+      metaTitle: "Partisi Gipsum & Pejabat KL & Selangor | Dari RM11/sqft",
+      metaDesc: "Partisi gipsum untuk pejabat dan rumah di KL & Selangor: pembahagian bilik, kabin, bilik mesyuarat, penebat bunyi. Dari RM 11/sq ft. Sebut harga percuma.",
+    },
+    zh: {
+      name: "石膏隔断与办公室隔断",
+      tagline: "石膏板隔断，用于房间分隔、办公卡位与会议室，可选隔音。从 RM 11 / sq ft 起。",
+      description:
+        "石膏隔断是分隔空间最快最干净的方式——无论是办公室建会议室、工作卡位，还是家中大房间分隔。我们在 GI 龙骨上建造石膏板隔断，可选双层板提高刚度，会议室与卧室可填入隔音棉（岩棉），并一体化安装门、玻璃开口与电源点位。办公室施工会合理安排工序，最大限度减少对运营的影响。价格从 RM 11 / sq ft 起。",
+      highlights: [
+        "房间分隔、办公卡位与会议室",
+        "可选岩棉隔音，保护隐私",
+        "可选双层板，刚度更高",
+        "门、玻璃开口与电源点位一体化",
+        "施工整洁，减少运营干扰",
+      ],
+      process: [
+        { step: "01", title: "布局规划", desc: "与您或设计师共同规划隔断、门与点位布局。" },
+        { step: "02", title: "GI 龙骨", desc: "地面、墙面与天花精确安装镀锌龙骨。" },
+        { step: "03", title: "板与隔音", desc: "两侧安装石膏板，按需在空腔内填隔音棉。" },
+        { step: "04", title: "嵌缝、腻子与交付", desc: "网格带处理接缝，刮腻子光滑，可上漆或贴墙纸。" },
+      ],
+      faqs: [
+        { q: "石膏隔断结实吗？", a: "结实。GI 龙骨加正确安装足以承受日常使用。受力集中区域可选双层板，刚度显著提升。" },
+        { q: "石膏隔断隔音效果如何？", a: "基础隔断适合一般分隔。会议室或卧室建议在空腔内填岩棉，能有效降低声音传递。" },
+        { q: "石膏隔断要多少钱？", a: "价格从 RM 11/sq ft 起。实际费用取决于高度、隔音选项、双层板以及门或玻璃开口。" },
+        { q: "办公室运营期间能施工吗？", a: "可以——隔断施工比砌砖干净得多。我们按协商时段安排工序，把粉尘与噪音控制在约定时间内。" },
+      ],
+      metaTitle: "吉隆坡石膏隔断/办公室隔断 | 从RM11/sqft起",
+      metaDesc: "吉隆坡与雪兰莪石膏板隔断：房间分隔、办公卡位、会议室，可选隔音。从 RM 11/sq ft 起。免费报价。",
+    }
+  },
+
+  "plaster-ceiling/room-partition": {
+    ms: {
+      name: "Partisi Bilik",
+      tagline: "Partisi bilik tidur, bilik belajar atau stor dengan bukaan pintu dan bekalan titik elektrik. Dari RM 11 / sq ft.",
+      description:
+        "Partisi bilik menukar ruang terbuka kepada bilik berfungsi tanpa kerja bata yang berat dan berhabuk. Kami membina partisi untuk bilik tidur tambahan, bilik belajar, bilik dobi atau stor menggunakan rangka GI dan papan gipsum, dengan bukaan pintu yang dirancang mengikut susun atur bilik, bekalan titik elektrik dan suis untuk lampi dan soket, serta penebat bunyi untuk bilik tidur. Partisi siap lebih cepat daripada dinding bata, menjadikannya pilihan popular untuk rumah yang membesar. Harga bermula dari RM 11 / sq ft.",
+      highlights: [
+        "Bilik tidur, bilik belajar, dobi atau stor tambahan",
+        "Bukaan pintu dirancang mengikut susun atur bilik",
+        "Titik elektrik, suis dan lampu bersepadu",
+        "Pilihan penebat bunyi untuk bilik tidur",
+        "Siap lebih cepat dan bersih daripada dinding bata",
+      ],
+      process: [
+        { step: "01", title: "Perancangan Bilik", desc: "Kedudukan partisi, pintu dan titik elektrik dirancang mengikut aliran bilik dan cahaya." },
+        { step: "02", title: "Rangka & Bukaan Pintu", desc: "Rangka GI dipasang dengan rangka pintu diperkuat pada bukaan yang dirancang." },
+        { step: "03", title: "Papan & Elektrik", desc: "Papan gipsum dipasang kedua-dua sisi dengan wayar lampi dan soket dialirkan sebelum penutupan." },
+        { step: "04", title: "Skim & Serahan", desc: "Sendi diskim licin, permukaan diprimer dan bilik baharu siap untuk cat dan perabot." },
+      ],
+      faqs: [
+        { q: "Berapa kos membina partisi bilik?", a: "Harga bermula dari RM 11 / sq ft merangkumi rangka, papan dan kemasan skim. Pintu, titik elektrik dan penebat bunyi dihargai mengikut pilihan anda." },
+        { q: "Adakah partisi bilik sesuai untuk bilik tidur?", a: "Ya. Untuk bilik tidur kami mengesyorkan penebat bunyi dalam rongga partisi supaya bunyi dari ruang sebelah berkurang. Papan tahan lembapa digunakan jika partisi menghala ke kawasan basah." },
+        { q: "Bolehkah titik elektrik ditambah pada partisi?", a: "Boleh — wayar lampi dan soket dialirkan dalam rongga partisi sebelum papan ditutup, jadi rancangan titik elektrik sebaiknya dibuat pada peringkat awal." },
+        { q: "Berapa lama partisi bilik siap?", a: "Sebuah bilik standard biasanya siap dalam beberapa hari bekerja termasuk pintu, elektrik dan kemasan skim — jauh lebih pantas daripada dinding bata yang memerlukan pengeringan." },
+      ],
+      metaTitle: "Partisi Bilik KL & Selangor | Dari RM11/sq ft",
+      metaDesc: "Partisi bilik tidur, belajar atau stor di KL & Selangor: rangka GI, pintu, titik elektrik dan penebat bunyi. Dari RM 11/sq ft. Sebut harga percuma.",
+    },
+    zh: {
+      name: "房间隔断",
+      tagline: "卧室、书房或储物间隔断，预留门洞与电源点位。从 RM 11 / sq ft 起。",
+      description:
+        "房间隔断把开放空间变成功能房间，无需沉重多尘的砌砖工程。我们使用 GI 龙骨与石膏板建造额外卧室、书房、洗衣房或储物间隔断，门洞位置按房间布局规划，灯具与插座点位一体化布线，卧室可选隔音处理。隔断比砖墙施工更快更干净，是家庭扩容的热门选择。价格从 RM 11/sq ft 起。",
+      highlights: [
+        "附加卧室、书房、洗衣房或储物间",
+        "门洞位置按房间布局规划",
+        "灯具、开关与插座点位一体化",
+        "卧室可选隔音处理",
+        "比砖墙更快更干净",
+      ],
+      process: [
+        { step: "01", title: "房间规划", desc: "按动线与采光规划隔断、门与点位位置。" },
+        { step: "02", title: "龙骨与门洞", desc: "安装 GI 龙骨，门洞位置加加固龙骨。" },
+        { step: "03", title: "板与电路", desc: "封板前在空腔内布好灯线与插座线。" },
+        { step: "04", title: "腻子与交付", desc: "接缝刮腻子光滑，刷底漆后即可上漆摆放家具。" },
+      ],
+      faqs: [
+        { q: "做一间隔断房要多少钱？", a: "价格从 RM 11/sq ft 起，含龙骨、板材与腻子饰面。门、电源点位与隔音按您的选择另计。" },
+        { q: "隔断适合做卧室吗？", a: "适合。卧室建议在隔断空腔内加隔音棉，减少隔壁声音。隔断面向湿区时使用防潮板。" },
+        { q: "隔断上能加插座吗？", a: "可以——灯线与插座线在封板前布进隔断空腔，所以点位规划最好在开工初期完成。" },
+        { q: "隔断工期要多久？", a: "标准房间含门、电路与腻子通常几个工作日完成——远快于需要养护的砖墙。" },
+      ],
+      metaTitle: "吉隆坡房间隔断 | 从RM11/sqft起",
+      metaDesc: "吉隆坡与雪兰莪卧室、书房、储物间隔断：GI 龙骨、门、电源点位与隔音。从 RM 11/sq ft 起。免费报价。",
+    }
+  },
+
+  "plaster-ceiling/feature-wall-and-wall-panel": {
+    ms: {
+      name: "Dinding Ciri & Panel Dinding",
+      tagline: "Dinding ciri TV, panel fluted, wainscoting dan panel hiasan dengan LED tersembunyi untuk ruang tamu yang menonjol. Dari RM 18 / sq ft.",
+      description:
+        "Dinding ciri ialah titik fokus visual rumah moden — dan panel dinding menjadikannya mudah dicapai. Kami membina dinding ciri TV, panel fluted, wainscoting dan panel hiasan dengan pelbagai kemasan warna dan bahan, lengkap dengan alur LED tersembunyi yang melembutkan suasana ruang. Setiap dinding direka mengikut dimensi ruang anda supaya perkadaran TV, kabinet dan bukaan rak seimbang. Kerja merangkumi rangka yang rata, pemotongan panel yang tepat, penyembunyian wayar TV dan titik elektrik dalam dinding. Harga bermula dari RM 18 / sq ft.",
+      highlights: [
+        "Dinding ciri TV, panel fluted dan wainscoting",
+        "Alur LED tersembunyi untuk suasana yang lembut",
+        "Reka bentuk mengikut dimensi ruang sebenar anda",
+        "Wayar TV dan titik elektrik disembunyikan kemas",
+        "Kemasan warna dan bahan pelbagai pilihan",
+      ],
+      process: [
+        { step: "01", title: "Reka Bentuk & Ukuran", desc: "Kedudukan TV, kabinet dan alur LED dirancang mengikut dimensi dinding dan ruang anda." },
+        { step: "02", title: "Rangka & Titik Elektrik", desc: "Rangka rata dipasang dan wayar TV serta soket dialirkan tersembunyi dalam dinding." },
+        { step: "03", title: "Pemasangan Panel", desc: "Panel fluted atau hiasan dipotong tepat dan dipasang dengan jidar dan trim yang kemas." },
+        { step: "04", title: "LED & Serahan", desc: "Alur LED dipasang dengan pemandu yang sesuai dan dinding diuji bersama sebelum serahan." },
+      ],
+      faqs: [
+        { q: "Berapa kos dinding ciri TV?", a: "Harga bermula dari RM 18 / sq ft bergantung pada bahan panel, keluasan dinding dan kerumitan alur LED. Kami sediakan anggaran terperinci selepas mengukur dinding anda." },
+        { q: "Adakah wayar TV boleh disembunyikan sepenuhnya?", a: "Ya — wayar TV, decoder dan soket dialirkan dalam rangka dinding supaya tiada wayar tergantung. Perancangan titik elektrik dibuat sebelum rangka ditutup." },
+        { q: "Panel fluted sesuai untuk rumah mana-mana gaya?", a: "Panel fluted memberikan tekstur menegak yang popular dalam gaya moden dan kontemporari. Untuk gaya klasik, wainscoting dan panel berkayu lebih sesuai — kami advise mengikut tema rumah anda." },
+        { q: "Bolehkah dinding ciri dipasang di dinding konkrit sedia ada?", a: "Boleh — rangka dilekat atau dikembangkan ke dinding sedia ada tanpa kerja pemecahan. Ini menjadikan dinding ciri sesuai untuk kedua-dua rumah baru dan sedia ada." },
+      ],
+      metaTitle: "Dinding Ciri & Panel Dinding KL | Dari RM18/sqft",
+      metaDesc: "Dinding ciri TV, panel fluted, wainscoting dengan LED tersembunyi di KL & Selangor. Dari RM 18/sq ft. Reka bentuk mengikut ruang anda. Sebut harga percuma.",
+    },
+    zh: {
+      name: "背景墙与墙板",
+      tagline: "电视背景墙、格栅板、护墙板与装饰墙板，含隐藏式 LED。从 RM 18 / sq ft 起。",
+      description:
+        "背景墙是现代家居的视觉焦点——墙板让这件事变得容易实现。我们建造电视背景墙、格栅板、护墙板与装饰墙板，颜色与材质多样，并配隐藏式 LED 灯槽柔化空间氛围。每面墙按您的实际空间尺寸设计，让电视、柜体与开放格比例协调。工程包括平整龙骨、精准切割板材、电视线与电源点位暗埋。价格从 RM 18/sq ft 起。",
+      highlights: [
+        "电视背景墙、格栅板与护墙板",
+        "隐藏式 LED 灯槽柔化氛围",
+        "按实际空间尺寸定制设计",
+        "电视线与电源点位暗藏整洁",
+        "颜色与材质多种可选",
+      ],
+      process: [
+        { step: "01", title: "设计与测量", desc: "按墙面与空间尺寸规划电视、柜体与灯槽位置。" },
+        { step: "02", title: "龙骨与点位", desc: "安装平整龙骨，电视线与插座暗埋墙内。" },
+        { step: "03", title: "安装墙板", desc: "格栅板或装饰板精准切割，收边条整洁收口。" },
+        { step: "04", title: "LED 与交付", desc: "安装匹配电源的 LED 灯带，验收后交付。" },
+      ],
+      faqs: [
+        { q: "电视背景墙要多少钱？", a: "价格从 RM 18/sq ft 起，视板材、墙面面积与灯槽复杂度而定。测量后我们提供详细报价。" },
+        { q: "电视线能完全藏起来吗？", a: "可以——电视线、机顶盒线与插座都走墙内龙骨，没有悬挂线缆。点位规划在封板前完成。" },
+        { q: "格栅板适合什么风格的房子？", a: "格栅板的竖向纹理在现代与轻奢风格中很受欢迎。古典风格更适合护墙板与木饰面板——我们按您家的主题给建议。" },
+        { q: "现有混凝土墙上能装背景墙吗？", a: "可以——龙骨直接固定在现有墙面上，无需拆打。因此新房与旧房都适用。" },
+      ],
+      metaTitle: "吉隆坡背景墙墙板 | 从RM18/sqft起",
+      metaDesc: "吉隆坡与雪兰莪电视背景墙、格栅板、护墙板，含隐藏式 LED。从 RM 18/sq ft 起。按空间定制，免费报价。",
+    }
+  },
+
+  "plaster-ceiling/skim-coat-and-wall-plastering": {
+    ms: {
+      name: "Skim Coat & Melepa Dinding",
+      tagline: "Salutan skim licin seperti kaca dan kerja melepa dinding untuk kemasan siap-cat dan pembaikan retakan. Dari RM 5 / sq ft.",
+      description:
+        "Kemasan cat yang cantik bermula dengan dinding yang rata. Skim coat ialah lapisan plaster halus terakhir yang menyembunyikan kesan trowel, retakan halus dan sendi tidak rata, menghasilkan permukaan licin seperti kaca yang sedia untuk cat. Kami melakukan skim coat dan melepa dinding untuk rumah baru yang belum dicat serta rumah lama yang hendak diperbaharui — termasuk mengisi retakan, merawat sendi dan meratakan permukaan beralun. Dua hingga tiga lapisan dilakukan dengan pengamplasan antara lapisan untuk hasil yang sekata. Harga bermula dari RM 5 / sq ft.",
+      highlights: [
+        "Permukaan licin seperti kaca sedia untuk cat",
+        "Mengisi retakan halus dan merawat sendi dinding",
+        "Meratakan permukaan beralun pada rumah lama",
+        "Dua hingga tiga lapisan dengan pengamplasan",
+        "Sesuai untuk rumah baru dan pengecatan semula",
+      ],
+      process: [
+        { step: "01", title: "Penyediaan Dinding", desc: "Dinding dibersihkan, cat longgar dikeluarkan dan retakan diisi sebelum kerja skim bermula." },
+        { step: "02", title: "Lapisan Pertama", desc: "Lapisan asas skim disapu untuk meratakan permukaan dan menampung ketidaksempurnaan." },
+        { step: "03", title: "Lapisan Kedua & Pengamplasan", desc: "Lapisan kedua membentuk kehalusan akhir, diikuti pengamplasan untuk permukaan yang seragam." },
+        { step: "04", title: "Pemeriksaan Cahaya & Serahan", desc: "Permukaan diperiksa dengan cahaya serong untuk mengesan ketidaksempurnaan sebelum serahan." },
+      ],
+      faqs: [
+        { q: "Bilakah skim coat diperlukan?", a: "Skim coat diperlukan untuk dinding rumah baru yang belum licin, dinding lama yang berkedut atau beralun selepas tanggalkan kertas dinding, atau sebelum cat gelap dan berkilat yang mendedahkan setiap kecacatan." },
+        { q: "Berapa kos skim coat dinding?", a: "Harga bermula dari RM 5 / sq ft. Kos sebenar bergantung pada keadaan dinding — dinding yang rosak teruk memerlukan lapisan dan kerja pembaikan lebih banyak." },
+        { q: "Berapa lama skim coat mengering?", a: "Setiap lapisan perlu kering sepenuhnya sebelum lapisan seterusnya, biasanya satu hari setiap lapisan bergantung pada pengudaraan dan kelembapan. Keseluruhan proses untuk satu bilik mengambil beberapa hari." },
+        { q: "Adakah skim coat menyelesaikan masalah retakan dinding?", a: "Retakan halus dirawat dan disembunyikan oleh skim coat. Retakan struktur yang berulang perlu dirawat punca asalnya dahulu — kami periksa dan beritahu anda jika retakan memerlukan rawatan khas." },
+      ],
+      metaTitle: "Skim Coat & Melepa Dinding KL & Selangor | Dari RM5/sqft",
+      metaDesc: "Skim coat dan melepa dinding di KL & Selangor untuk kemasan licin sedia cat. Dari RM 5/sq ft. Mengisi retakan, meratakan dinding. Sebut harga percuma.",
+    },
+    zh: {
+      name: "刮腻子与墙面抹灰",
+      tagline: "镜面光滑刮腻子与墙面抹灰，即可上漆，并修补裂缝。从 RM 5 / sq ft 起。",
+      description:
+        "油漆效果好看，前提是墙面平整。腻子（skim coat）是最后一层细腻子层，遮盖抹灰刀痕、发丝裂与不平接缝，形成可直接上漆的镜面般光滑表面。我们为尚未油漆的新房以及翻新中的旧房做刮腻子与墙面抹灰——包括填补裂缝、处理接缝、找平波浪墙面。两到三层施工，层间打磨，效果均匀。价格从 RM 5/sq ft 起。",
+      highlights: [
+        "镜面般光滑，即可上漆",
+        "填补发丝裂并处理墙面接缝",
+        "旧房波浪墙面找平",
+        "两到三层施工，层间打磨",
+        "新房与翻新重漆均适用",
+      ],
+      process: [
+        { step: "01", title: "墙面准备", desc: "清洁墙面、铲除松散旧漆并填补裂缝。" },
+        { step: "02", title: "第一层腻子", desc: "批刮底层腻子，初步找平并覆盖瑕疵。" },
+        { step: "03", title: "第二层与打磨", desc: "第二层塑造最终细腻度，随后打磨至均匀。" },
+        { step: "04", title: "灯光验收", desc: "侧光检查表面瑕疵，合格后交付。" },
+      ],
+      faqs: [
+        { q: "什么时候需要刮腻子？", a: "新房墙面不够光滑、旧墙撕墙纸后起皮起皱，或者要刷深色/亮光漆（会暴露任何瑕疵）时，都需要刮腻子。" },
+        { q: "刮腻子要多少钱？", a: "价格从 RM 5/sq ft 起。实际费用取决于墙面状况——损坏严重的墙需要更多层数与修补。" },
+        { q: "腻子要干多久？", a: "每层需完全干透后再批下一层，视通风与湿度通常每层约一天。单个房间整体需数天。" },
+        { q: "刮腻子能解决墙面裂缝吗？", a: "发丝裂可被处理和遮盖。反复出现的结构性裂缝需先治理根源——我们会检查并告知是否需要特殊处理。" },
+      ],
+      metaTitle: "吉隆坡刮腻子抹灰 | 从RM5/sqft起",
+      metaDesc: "吉隆坡与雪兰莪刮腻子与墙面抹灰：镜面光滑即可上漆，填补裂缝找平墙面。从 RM 5/sq ft 起。免费报价。",
+    }
+  },
+
+  "plaster-ceiling/wall-crack-repair-and-repainting": {
+    ms: {
+      name: "Pembaikan Retak Dinding & Mengecat Semula",
+      tagline: "Pengisian retak halus dan struktur, pengamplasan, sealer dan pengecatan semula premium untuk kemasan sempurna. Dari RM 180.",
+      description:
+        "Retakan dinding bukan sahaja menjatuhkan penampilan rumah — ia boleh menunjukkan masalah penyelesaian atau lembapan yang perlu dirawat. Kami membaiki retakan halus dan retakan besar dengan kaedah yang betul: pembukaan retakan berbentuk V, pengisian dengan sebatian atau mortar fleksibel, pita mesh untuk menghalang pengulangan, diikuti sealer penyekat dan pengecatan semula premium yang menyamarkan kawasan kerja sepenuhnya. Untuk retakan yang berulang, kami periksa punca — penyelesaian tanah, haba atau lembapan — supaya pembaikian bertahan lama. Harga bermula dari RM 180.",
+      highlights: [
+        "Pembukaan retakan berbentuk V dan pengisian yang betul",
+        "Pita mesh untuk menghalang retakan berulang",
+        "Sealer penyekat sebelum pengecatan semula",
+        "Pemeriksaan punca untuk retakan yang berulang",
+        "Kemasan cat yang menyamarkan kawasan kerja",
+      ],
+      process: [
+        { step: "01", title: "Pemeriksaan Retakan", desc: "Jenis dan punca retakan dikenal pasti untuk menentukan kaedah pembaikan yang sesuai." },
+        { step: "02", title: "Pembaikan & Pita Mesh", desc: "Retakan dibuka berbentuk V, diisi dan diperkuat dengan pita mesh supaya tidak berulang." },
+        { step: "03", title: "Skim & Sealer", desc: "Kawasan kerja diskim rata dengan dinding sekeliling dan sealer penyekat disapu." },
+        { step: "04", title: "Pengecatan Semula", desc: "Dinding dicat semula dengan cat premium sehingga kawasan kerja tidak dapat dibezakan." },
+      ],
+      faqs: [
+        { q: "Berapa kos membaiki retakan dinding?", a: "Harga bermula dari RM 180 untuk pembaikan setempat dengan pengecatan semula. Kos sebenar bergantung pada bilangan dan panjang retakan serta sama ada punca perlu dirawat." },
+        { q: "Mengapa retakan dinding berulang selepas dipbaiki?", a: "Retakan berulang biasanya kerana isian tidak sampai ke dasar retakan atau punca — penyelesaian tanah, getaran haba atau lembapan — tidak dirawat. Kami membuka retakan sepenuhnya dan merawat punca sebelum menutupnya." },
+        { q: "Retakan halus dan retakan struktur bagaimana bezanya?", a: "Retakan halus nipis dan cetek, selalunya pada lapisan skim — mudah dirawat. Retakan struktur lebih lebar, menegak atau bertemu di penjuru dan perlu diperiksa dengan teliti kerana ia melibatkan dinding itu sendiri." },
+        { q: "Bolehkah kawasan kerja disamarkan sepenuhnya?", a: "Ya — kawasan kerja diskim dan dicat semula. Untuk hasil terbaik kami cadangkan mengecat semula keseluruhan dinding berbanding tampalan setempat supaya warna dan tekstur seragam." },
+      ],
+      metaTitle: "Pembaikan Retak Dinding & Cat Semula KL | Dari RM180",
+      metaDesc: "Baiki retakan dinding di KL & Selangor: pengisian betul, pita mesh, sealer dan pengecatan semula premium. Dari RM 180. Sebut harga percuma.",
+    },
+    zh: {
+      name: "墙面裂缝修补与重漆",
+      tagline: "填补发丝裂与结构裂缝、打磨、底漆与优质重漆，效果完美。从 RM 180 起。",
+      description:
+        "墙面裂缝不只影响美观——它可能预示沉降或潮气问题，需要正确处理。我们用正确工艺修补发丝裂与大裂缝：开 V 型槽、用柔性修补料或砂浆填补、贴网格带防止复发，随后刷封闭底漆并做优质重漆，让施工区域完全隐形。对于反复出现的裂缝，我们会排查根源——地基沉降、温度应力或潮气——让修补经得起时间考验。价格从 RM 180 起。",
+      highlights: [
+        "V 型开槽与正确填补工艺",
+        "网格带防止裂缝复发",
+        "重漆前刷封闭底漆",
+        "反复裂缝先查根源",
+        "重漆后施工区域完全隐形",
+      ],
+      process: [
+        { step: "01", title: "裂缝检查", desc: "识别裂缝类型与成因，确定合适修法。" },
+        { step: "02", title: "修补与网格带", desc: "开 V 型槽填补，贴网格带加固防复发。" },
+        { step: "03", title: "腻子与底漆", desc: "施工区域与周边墙面找平，刷封闭底漆。" },
+        { step: "04", title: "重新油漆", desc: "用优质漆重刷墙面，看不出修补痕迹。" },
+      ],
+      faqs: [
+        { q: "修补墙面裂缝要多少钱？", a: "局部修补加重漆从 RM 180 起。实际费用取决于裂缝数量与长度，以及是否需要处理根源问题。" },
+        { q: "裂缝为什么会反复出现？", a: "通常是填补没到缝底，或根源——地基沉降、温度应力、潮气——没处理。我们会完全开槽并先治根再封闭。" },
+        { q: "发丝裂和结构裂缝怎么区分？", a: "发丝裂细而浅，通常只在腻子层，容易处理。结构裂缝较宽、竖向或出现在转角交汇处，涉及墙体本身，需仔细检查。" },
+        { q: "修补处能完全看不出吗？", a: "可以——修补区域刮腻子后重漆。为达到最佳效果，建议整面墙重漆而非局部补漆，颜色与质感更统一。" },
+      ],
+      metaTitle: "吉隆坡墙面裂缝修补重漆 | 从RM180起",
+      metaDesc: "吉隆坡与雪兰莪墙面裂缝修补：正确填补、网格带、底漆与优质重漆。从 RM 180 起。免费报价。",
+    }
+  },
+
+  /* ── FLOORING — Session 12 native specialty rollout ──────────────────── */
+  "flooring/vinyl-flooring-installation": {
+    ms: {
+      name: "Pemasangan Lantai Vinyl",
+      tagline: "Lantai vinyl kepingan (plank) atau kepingan besar untuk kawasan basah, dapur dan ruang komersial dengan sambungan dikimpal. Dari RM 12 / kaki persegi.",
+      description:
+        "Lantai vinyl memberikan keselesaan berjalan kaki yang hangat, rintangan air yang baik dan harga yang berpatutan — sebab ia menjadi pilihan utama untuk dapur, kawasan basah dan ruang komersial di Malaysia. Kami memasang lantai vinyl dalam bentuk papan (plank) dengan corak kayu atau kepingan besar dengan sambungan yang dikimpal untuk kawasan yang kerap basah. Untuk hasil yang tahan lama, persediaan subfloor adalah segalanya: lantai diratakan, dibersihkan dan diprimer sebelum pelekat dan vinyl dipasang. Harga bermula dari RM 12 / kaki persegi.",
+      highlights: [
+        "Vinyl papan corak kayu atau kepingan besar",
+        "Sambungan dikimpal untuk kawasan kerap basah",
+        "Rintangan air yang sesuai untuk dapur dan kawasan basah",
+        "Perataan dan primer subfloor sebelum pemasangan",
+        "Permukaan lembut dan senyap apabila dipijak",
+      ],
+      process: [
+        { step: "01", title: "Pemeriksaan Subfloor", desc: "Subfloor diperiksa dan diratakan — vinyl mendedahkan setiap ketidakrataan di bawahnya." },
+        { step: "02", title: "Pembersihan & Primer", desc: "Permukaan dibersihkan sepenuhnya dan primer disapu untuk lekatan pelekat yang maksimum." },
+        { step: "03", title: "Pemasangan Vinyl", desc: "Papan atau kepingan vinyl dipasang dengan pelekat sesuai, dipadankan corak antara keping." },
+        { step: "04", title: "Kimpalan & Pemeriksaan", desc: "Sambungan dikimpal untuk kawasan basah dan lantai diperiksa bersama sebelum serahan." },
+      ],
+      faqs: [
+        { q: "Adakah lantai vinyl sesuai untuk dapur Malaysia?", a: "Ya — vinyl tahan air dan senang dibersihkan daripada tumpahan minyak dan sos. Untuk kawasan yang kerap terkena air, kami mengesyorkan vinyl kepingan besar dengan sambungan dikimpal." },
+        { q: "Berapa kos pemasangan lantai vinyl?", a: "Harga bermula dari RM 12 / kaki persegi termasuk pemasangan. Kos sebenar bergantung pada jenis vinyl, keluasan dan kerja perataan subfloor yang diperlukan." },
+        { q: "Berapa lama lantai vinyl bertahan?", a: "Jangka hayat vinyl bergantung pada kualiti produk dan persediaan subfloor. Pemasangan yang betul di atas subfloor rata memanjangkan hayat lantai dengan ketara." },
+        { q: "Bolehkah vinyl dipasang atas jubin lama?", a: "Boleh jika jubin lama masih rata dan melekat kukuh — ini menjimatkan kos pemecahan. Jubin yang berongga atau tidak rata perlu dibuang atau diratakan dahulu." },
+      ],
+      metaTitle: "Pemasangan Lantai Vinyl KL & Selangor | Dari RM12/kaki²",
+      metaDesc: "Pasang lantai vinyl di KL & Selangor untuk dapur, kawasan basah dan ruang komersial. Sambungan dikimpal. Dari RM 12/kaki persegi. Sebut harga percuma.",
+    },
+    zh: {
+      name: "乙烯基地板安装",
+      tagline: "片材与大板乙烯基地板（vinyl），适合湿区、厨房与商业空间，接缝焊接。从 RM 12 / 平方英尺 起。",
+      description:
+        "乙烯基地板（vinyl）脚感温暖、防水性好、价格实惠——因此成为马来西亚厨房、湿区与商业空间的首选。我们安装木纹板式 vinyl 或大板片材，常湿区域接缝焊接处理。要经久耐用，基层处理是关键：铺装前地面需找平、清洁并刷界面剂。价格从 RM 12 / 平方英尺 起。",
+      highlights: [
+        "木纹板式或大板片材 vinyl",
+        "常湿区域接缝焊接处理",
+        "防水性好，适合厨房与湿区",
+        "铺装前基层找平与界面剂处理",
+        "脚感柔软，踩踏静音",
+      ],
+      process: [
+        { step: "01", title: "基层检查", desc: "检查并找平基层——vinyl 会暴露下方任何不平。" },
+        { step: "02", title: "清洁与底涂", desc: "彻底清洁地面，刷界面剂让粘结剂发挥最大效力。" },
+        { step: "03", title: "铺装 vinyl", desc: "用合适的粘结剂铺装板或片材，逐片对纹。" },
+        { step: "04", title: "焊接与验收", desc: "湿区接缝焊接，交付前联合检查。" },
+      ],
+      faqs: [
+        { q: "vinyl 地板适合马来西亚厨房吗？", a: "适合——vinyl 防水，油渍酱汁洒落易清洁。常接触水的区域建议用大板片材加接缝焊接。" },
+        { q: "vinyl 地板安装要多少钱？", a: "价格从 RM 12 / 平方英尺 起（含安装）。实际费用取决于 vinyl 类型、面积与基层找平工程量。" },
+        { q: "vinyl 地板能用多久？", a: "寿命取决于产品质量与基层处理。平整基层上的正确安装能显著延长地板寿命。" },
+        { q: "旧瓷砖上能直接铺 vinyl 吗？", a: "旧砖平整且粘结牢固时可以——省下拆除费用。空鼓或不平的瓷砖需先拆除或找平。" },
+      ],
+      metaTitle: "吉隆坡乙烯基地板安装 | 从RM12/尺²起",
+      metaDesc: "吉隆坡与雪兰莪 vinyl 地板安装：厨房、湿区与商业空间，接缝焊接。从 RM 12/平方英尺 起。免费报价。",
+    }
+  },
+
+  "flooring/floor-tile-installation": {
+    ms: {
+      name: "Pemasangan Jubin Lantai",
+      tagline: "Pemasangan jubin lantai porselin, seramik, format besar dan mozek untuk binaan baru dan pengubahsuaian. Dari RM 14 / kaki persegi.",
+      description:
+        "Lantai jubin yang baik ialah gabungan jubin yang sesuai dan pemasangan yang betul. Kami memasang semua jenis jubin lantai — porselin, seramik, format besar dan mozek — untuk rumah baru dan projek pengubahsuaian di seluruh KL dan Selangor. Perhatian diberikan kepada perkara yang menentukan hasil akhir: susun atur yang mengurangkan potongan buruk, aras yang seragam antara keping, cerun yang betul di kawasan basah, dan grout yang dipadankan dengan warna jubin. Pemasangan yang rapi menjadikan jubin biasa kelihatan mahal. Harga bermula dari RM 14 / kaki persegi.",
+      highlights: [
+        "Jubin porselin, seramik, format besar dan mozek",
+        "Susun atur dirancang untuk potongan minimum",
+        "Aras seragam antara keping tanpa lapisan tinggi",
+        "Cerun betul untuk kawasan basah dan balkoni",
+        "Grout dipadankan warna untuk kemasan kemas",
+      ],
+      process: [
+        { step: "01", title: "Perancangan Susun Atur", desc: "Susun atur dirancang dari dinding utama supaya potongan jatuh di tepi yang kurang ketara." },
+        { step: "02", title: "Persiapan Subfloor", desc: "Subfloor dibersihkan, diratakan dan diberi masa kering secukupnya sebelum pelekat disapu." },
+        { step: "03", title: "Pemasangan & Perataan", desc: "Jubin dipasang baris demi baris dengan semakan aras berterusan dan klip perata untuk jubin besar." },
+        { step: "04", title: "Grout & Pembersihan", desc: "Grout dipadankan warna disapu selepas pelekat mengeras, dan lantai dibersihkan untuk serahan." },
+      ],
+      faqs: [
+        { q: "Berapa kos pemasangan jubin lantai?", a: "Harga pemasangan bermula dari RM 14 / kaki persegi. Keluasan, saiz jubin dan kerja penyediaan subfloor menentukan kos keseluruhan projek anda." },
+        { q: "Jubin saiz apa paling sesuai untuk ruang tamu?", a: "Jubin besar seperti 600x600mm atau 800x800mm menjadikan ruang tamu kelihatan lebih luas dengan kurang garisan grout. Saiz akhir bergantung pada dimensi bilik dan bajet jubin anda." },
+        { q: "Berapa lama pemasangan jubin lantai mengambil masa?", a: "Untuk sebuah bilik standard, pemasangan mengambil beberapa hari termasuk masa pelekat mengeras sebelum grout. Keseluruhan rumah dijadualkan berperingkat supaya anda masih mempunyai akses." },
+        { q: "Bolehkah pemasangan dibuat tanpa merosakkan skirting sedia ada?", a: "Skirting biasanya perlu ditanggalkan dan dipasang semula atau diganti selepas lantai baharu. Kami menyelaraskan kerja skirting bersama lantai supaya hasilnya kemas dan seragam." },
+      ],
+      metaTitle: "Pemasangan Jubin Lantai KL & Selangor | Dari RM14/kaki²",
+      metaDesc: "Pasang jubin lantai di KL & Selangor: porselin, seramik, format besar, mozek. Susun atur terancang, aras rata. Dari RM 14/kaki persegi. Sebut harga percuma.",
+    },
+    zh: {
+      name: "地面瓷砖安装",
+      tagline: "抛光砖、陶瓷砖、大板与马赛克地面安装，适用于新建与翻新。从 RM 14 / 平方英尺 起。",
+      description:
+        "好的瓷砖地面 = 合适的瓷砖 + 正确的铺装。我们为吉隆坡与雪兰莪的新房与翻新项目铺装各类地砖——抛光砖、陶瓷砖、大板与马赛克。我们专注于决定最终效果的关键：排砖方案减少难看切割、片间标高一致、湿区坡度正确、美缝与砖色搭配。工整的铺装能让普通瓷砖呈现高级感。价格从 RM 14 / 平方英尺 起。",
+      highlights: [
+        "抛光砖、陶瓷砖、大板与马赛克",
+        "排砖方案让切割最少",
+        "片间标高一致无错台",
+        "湿区与阳台坡度正确",
+        "美缝配色，效果整洁",
+      ],
+      process: [
+        { step: "01", title: "排砖规划", desc: "从主墙起规划排砖，切割落在不显眼边缘。" },
+        { step: "02", title: "基层准备", desc: "清洁找平基层，养护干透后再刮粘结剂。" },
+        { step: "03", title: "铺装与找平", desc: "逐行铺装并持续复核标高，大砖使用找平器。" },
+        { step: "04", title: "美缝与清洁", desc: "粘结剂硬化后做配色美缝，清洁地面交付。" },
+      ],
+      faqs: [
+        { q: "地砖铺装要多少钱？", a: "铺装价格从 RM 14 / 平方英尺 起。面积、瓷砖尺寸与基层处理量决定项目总费用。" },
+        { q: "客厅铺多大尺寸的砖合适？", a: "600x600mm 或 800x800mm 大砖缝少显宽敞，能让客厅看起来更大。最终尺寸取决于房间尺寸与瓷砖预算。" },
+        { q: "铺地砖工期要多久？", a: "标准房间含粘结剂硬化到美缝需几天。全屋铺装会分阶段排期，保证您仍有活动空间。" },
+        { q: "铺砖会损坏现有踢脚线吗？", a: "踢脚线通常需拆下重装或更换。我们会把踢脚线与地面工程协调好，效果统一整洁。" },
+      ],
+      metaTitle: "吉隆坡地砖安装 | 从RM14/尺²起",
+      metaDesc: "吉隆坡与雪兰莪地砖安装：抛光砖、陶瓷砖、大板、马赛克。排砖合理、标高平整。从 RM 14/平方英尺 起。免费报价。",
+    }
+  },
+
+  "flooring/floor-tile-replacement-and-subfloor-hacking": {
+    ms: {
+      name: "Penggantian Jubin Lantai & Pemecahan Subfloor",
+      tagline: "Pemecahan jubin lama, perataan subfloor, kalis air dan pemasangan jubin baru dengan pelupusan serpihan. Dari RM 18 / kaki persegi.",
+      description:
+        "Menggantikan lantai rumah lama bermakna menanggalkan jubin, lapisan simen dan kadangkala screed asal sehingga subfloor yang kukuh. Kami mengendalikan pemecahan lantai penuh dengan pemisahan kawasan kerja untuk kawalan habuk, pemeriksaan slab untuk retak dan kelemahan, perataan semula screed, kalis air untuk kawasan basah, kemudian pemasangan jubin baharu mengikut susun atur yang dirancang. Serpihan dibawa keluar setiap hari supaya rumah kekal boleh dihuni seberapa boleh. Harga bermula dari RM 18 / kaki persegi termasuk kerja pemecahan.",
+      highlights: [
+        "Pemecahan jubin, simen dan screed lama sepenuhnya",
+        "Pemisahan kawasan kerja untuk kawalan habuk",
+        "Pemeriksaan slab dan pembaikan retak sebelum kerja baru",
+        "Screed semula dan kalis air kawasan basah",
+        "Serpihan dibawa keluar setiap hari",
+      ],
+      process: [
+        { step: "01", title: "Pemeriksaan & Pelan Kerja", desc: "Kami memeriksa lantai sedia ada, mengukur keluasan dan menyusun jadual pemecahan berperingkat." },
+        { step: "02", title: "Pemecahan Berperingkat", desc: "Pemecahan dijalankan kawasan demi kawasan dengan pelindung habuk dan laluan yang dikekalkan." },
+        { step: "03", title: "Subfloor & Kalis Air", desc: "Slab diperiksa, retak diperbaiki, screed semula disapu dan kalis air untuk kawasan basah." },
+        { step: "04", title: "Jubin Baru & Serahan", desc: "Jubin baharu dipasang mengikut susun atur dirancang dan lantai diserahkan bersih." },
+      ],
+      faqs: [
+        { q: "Adakah rumah boleh dihuni semasa pemecahan lantai?", a: "Untuk pemecahan penuh rumah, kami mengesyorkan pindah sementara kerana habuk dan bunyi bising. Untuk penggantian satu kawasan seperti dapur sahaja, kawasan lain kekal boleh digunakan dengan pemisahan kawasan kerja." },
+        { q: "Berapa kos penggantian jubin lantai dengan pemecahan?", a: "Harga bermula dari RM 18 / kaki persegi merangkumi pemecahan, perataan dan pemasangan jubin baru. Keluasan dan keadaan screed sedia ada menentukan kos akhir." },
+        { q: "Adakah screed lama perlu dipecahkan juga?", a: "Screed yang masih kukuh dan rata boleh dikekalkan, menjimatkan kos. Screed yang berongga, retak atau tidak rata perlu dibuang supaya lantai baharu tidak gagal." },
+        { q: "Berapa lama projek penggantian lantai penuh?", a: "Untuk sebuah rumah teres, pemecahan hingga pemasangan jubin baru biasanya mengambil beberapa minggu termasuk masa pengeringan screed. Jadual terperinci diberikan selepas tinjauan." },
+      ],
+      metaTitle: "Ganti Jubin Lantai & Pecah Subfloor KL | Dari RM18",
+      metaDesc: "Ganti jubin lantai di KL & Selangor: pemecahan penuh, perataan subfloor, kalis air dan jubin baru. Dari RM 18/kaki persegi. Sebut harga percuma.",
+    },
+    zh: {
+      name: "地面瓷砖更换与基层拆除",
+      tagline: "拆除旧砖、基层找平、防水与新砖安装，含碎料清运。从 RM 18 / 平方英尺 起。",
+      description:
+        "更换旧房地面意味着拆除瓷砖、水泥层，有时连原砂浆层一起拆到坚实基层。我们负责整体地面拆除：分区施工控制粉尘、检查楼板裂缝与薄弱点、重新做找平层、湿区防水，然后按规划排砖铺贴新砖。碎料每日清运，让房子尽量保持可住。价格从 RM 18 / 平方英尺 起（含拆除）。",
+      highlights: [
+        "整体拆除瓷砖、水泥与旧砂浆层",
+        "分区施工控制粉尘",
+        "新工程前先检查楼板修补裂缝",
+        "重新找平，湿区防水",
+        "碎料每日清运出场",
+      ],
+      process: [
+        { step: "01", title: "检查与施工计划", desc: "检查现有地面、测量面积并安排分阶段拆除。" },
+        { step: "02", title: "分区拆除", desc: "带防尘屏障分区拆除，保持通道可用。" },
+        { step: "03", title: "基层与防水", desc: "检查楼板、修补裂缝、重新找平，湿区做防水。" },
+        { step: "04", title: "铺新砖与交付", desc: "按规划排砖铺贴新砖，清洁交付。" },
+      ],
+      faqs: [
+        { q: "拆地面期间能住人吗？", a: "全屋拆除建议临时搬离，因粉尘与噪音较大。只拆厨房等单一区域时，做好分区隔离后其他区域仍可使用。" },
+        { q: "含拆除的换砖要多少钱？", a: "价格从 RM 18 / 平方英尺 起，含拆除、找平与新砖铺贴。面积与现有砂浆层状况决定最终费用。" },
+        { q: "旧砂浆层也要拆吗？", a: "牢固平整的砂浆层可保留，节省费用。空鼓、开裂或不平的砂浆层必须清除，否则新地面会出问题。" },
+        { q: "整体换地面工期多久？", a: "排屋从拆除到铺完新砖通常需数周，含砂浆养护时间。勘察后提供详细工期表。" },
+      ],
+      metaTitle: "吉隆坡换地砖拆基层 | 从RM18/尺²起",
+      metaDesc: "吉隆坡与雪兰莪地砖更换：整体拆除、基层找平、防水与新砖铺贴。从 RM 18/平方英尺 起。免费报价。",
+    }
+  },
+
+  "flooring/porcelain-and-ceramic-tiles": {
+    ms: {
+      name: "Jubin Porselin & Seramik",
+      tagline: "Bekalan dan pemasangan jubin porselin dan seramik homogen dalam kemasan matte, berkilat atau rupa kayu. Dari RM 16 / kaki persegi.",
+      description:
+        "Kami menyediakan perkhidmatan bekalan dan pasang jubin porselin dan seramik supaya anda tidak perlu menyelaraskan pembelian bahan dan tukang secara berasingan. Pilihan termasuk jubin porselin homogen untuk lantai dengan kemasan matte, berkilat atau rupa kayu, dan jubin seramik untuk dinding dan kawasan kering. Kami menyerahkan sampel fizikal untuk dipilih di rumah anda supaya warna dan tekstur dapat dinilai di bawah pencahayaan sebenar, kemudian mengira kuantiti dengan sisa minimum. Harga bermula dari RM 16 / kaki persegi.",
+      highlights: [
+        "Perkhidmatan bekalan dan pasang dalam satu sebut harga",
+        "Kemasan matte, berkilat dan rupa kayu untuk lantai",
+        "Sampel fizikal dihantar untuk dinilai di rumah anda",
+        "Pengiraan kuantiti dengan sisa minimum",
+        "Jubin seramik untuk dinding dan kawasan kering",
+      ],
+      process: [
+        { step: "01", title: "Pemilihan Sampel", desc: "Sampel jubin dibawa ke rumah anda supaya pilihan dibuat di bawah pencahayaan sebenar ruang." },
+        { step: "02", title: "Pengiraan & Pesanan", desc: "Kuantiti dikira mengikut susun atur dengan sisa munasabah untuk simpanan masa depan." },
+        { step: "03", title: "Pemasangan", desc: "Jubin dipasang oleh tukang berpengalaman dengan semakan aras dan pemadanan corak." },
+        { step: "04", title: "Grout & Serahan", desc: "Grout sepadan warna dan pembersihan akhir sebelum pemeriksaan bersama." },
+      ],
+      faqs: [
+        { q: "Adakah harga merangkumi jubin dan pemasangan?", a: "Ya, perkhidmatan bekalan dan pasang bermula dari RM 16 / kaki persegi termasuk jubin terpilih dalam julat itu dan kerja pemasangan. Jubin premium dihargai mengikut pilihan anda." },
+        { q: "Bagaimana memilih antara matte dan berkilat?", a: "Berkilat kelihatan mewah dan mudah dibersihkan tetapi licin apabila basah — sesuai untuk ruang tamu. Matte lebih selamat untuk bilik mandi dan balkoni. Rupa kayu memberi kehangatan dengan penyelenggaraan jubin." },
+        { q: "Bolehkah saya gunakan jubin yang saya beli sendiri?", a: "Boleh — kami juga menyediakan perkhidmatan pemasangan sahaja untuk jubin yang anda beli sendiri. Kami periksa jubin tersebut sebelum kerja untuk memastikan ia sesuai dengan kaedah pemasangan." },
+        { q: "Berapa lama bekalan jubin mengambil masa?", a: "Tempoh bekalan bergantung pada stok dan jenis jubin. Sampel yang dipilih dari stok sedia ada boleh diperoleh dengan pantas; jubin import khusus memerlukan masa tempahan yang lebih panjang." },
+      ],
+      metaTitle: "Jubin Porselin & Seramik KL: Bekal & Pasang | Dari RM16",
+      metaDesc: "Bekalan dan pemasangan jubin porselin dan seramik di KL & Selangor: matte, berkilat, rupa kayu. Dari RM 16/kaki persegi. Sebut harga percuma.",
+    },
+    zh: {
+      name: "抛光砖与陶瓷砖",
+      tagline: "供应并安装通体抛光砖与陶瓷砖，哑光、亮光或木纹饰面。从 RM 16 / 平方英尺 起。",
+      description:
+        "我们提供抛光砖与陶瓷砖的包工包料服务，您无需分别协调买料与工人。地面可选通体抛光砖——哑光、亮光或木纹饰面；墙面与干燥区域可选陶瓷砖。我们把实物样品送到您家中挑选，在真实光线下评估颜色与质感，然后按最少损耗计算用量。价格从 RM 16 / 平方英尺 起。",
+      highlights: [
+        "包工包料，一份报价搞定",
+        "地面可选哑光、亮光与木纹饰面",
+        "样品送到家中在真实光线下挑选",
+        "按排砖计算用量，损耗最少",
+        "陶瓷砖适合墙面与干燥区域",
+      ],
+      process: [
+        { step: "01", title: "选样", desc: "把瓷砖样品送到家中，在真实光线下做决定。" },
+        { step: "02", title: "算量与订货", desc: "按排砖方案算量，留合理余量备用。" },
+        { step: "03", title: "铺装", desc: "熟练工人铺装，复核标高并对纹。" },
+        { step: "04", title: "美缝与交付", desc: "配色美缝，最终清洁后联合验收。" },
+      ],
+      faqs: [
+        { q: "价格含瓷砖和安装吗？", a: "是的，包工包料从 RM 16 / 平方英尺 起，含该区间瓷砖与安装。高端瓷砖按选择另计。" },
+        { q: "哑光和亮光怎么选？", a: "亮光气派易清洁但湿水滑——适合客厅。哑光更适合卫生间与阳台。木纹砖既有温暖感又好打理。" },
+        { q: "可以只用自己买的砖吗？", a: "可以——我们也提供纯安装服务。开工前会检查您自购的瓷砖是否适合所选铺法。" },
+        { q: "瓷砖供货要等多久？", a: "看库存与类型。现货样品可快速到货；特殊进口砖需较长订货周期。" },
+      ],
+      metaTitle: "吉隆坡抛光砖陶瓷砖包工包料 | 从RM16起",
+      metaDesc: "吉隆坡与雪兰莪抛光砖与陶瓷砖供应安装：哑光、亮光、木纹。从 RM 16/平方英尺 起。免费报价。",
+    }
+  },
+
+  "flooring/large-format-and-mosaic-tiles": {
+    ms: {
+      name: "Jubin Format Besar & Mozek",
+      tagline: "Slab besar 600x1200mm, 800x800mm dan corak mozek dipasang dengan klip perata untuk permukaan rata sempurna. Dari RM 22 / kaki persegi.",
+      description:
+        "Jubin format besar dan slab memberikan kesan mewah dengan garisan grout yang minimum — tetapi ia juga paling mencabar untuk dipasang: berat, mudah pecah semasa pengendalian dan mendedahkan apa-apa ketidakrataan. Kami memasang slab 600x1200mm, 800x800mm dan jubin besar lain dengan klip perata profesional, pelebat bertetulang dan teknik pengendalian yang betul. Untuk kesan sebaliknya, corak mozek pula memberikan tekstur halus untuk dinding dan kawasan tertentu. Kedua-dua gaya memerlukan kemahiran berbeza — kami mempunyai pengalaman dengan kedua-duanya. Harga bermula dari RM 22 / kaki persegi.",
+      highlights: [
+        "Slab 600x1200mm dan 800x800mm dengan klip perata",
+        "Pengendalian berhati-hati untuk elak keretakan slab",
+        "Garisan grout minimum untuk kesan mewah",
+        "Mozek untuk tekstur halus dan aksen hiasan",
+        "Kemahiran khusus untuk kedua-dua gaya pemasangan",
+      ],
+      process: [
+        { step: "01", title: "Penyediaan Subfloor", desc: "Subfloor diratakan dengan teliti — jubin besar mendedahkan setiap ketidakrataan." },
+        { step: "02", title: "Pengendalian & Pemotongan", desc: "Slab diendalikan dengan penyokong dan dipotong dengan alat yang betul untuk tepi bersih." },
+        { step: "03", title: "Pemasangan Dengan Klip", desc: "Klip perata mengekalkan permukaan rata antara keping slab yang besar dan berat." },
+        { step: "04", title: "Grout Halus & Serahan", desc: "Grout berjarak halus disapu dan permukaan dibersihkan untuk kesan seamless." },
+      ],
+      faqs: [
+        { q: "Mengapa jubin besar lebih sukar dipasang?", a: "Jubin besar dan slab berat, mudah pecah semasa diangkat, dan apa-apa ketidakrataan subfloor menyebabkan lapisan tinggi atau keretakan. Klip perata dan subfloor yang rata adalah wajib untuk hasil yang sempurna." },
+        { q: "Berapa kos pemasangan slab besar?", a: "Harga bermula dari RM 22 / kaki persegi kerana pemasangan slab memerlukan alat khas, klip perata dan pengendalian berhati-hata. Keluasan dan jenis slab menentukan kos akhir." },
+        { q: "Adakah jubin besar sesuai untuk rumah kecil?", a: "Ya — sebenarnya jubin besar membuatkan ruang kecil kelihatan lebih luas kerana garisan grout yang kurang. Potongan yang kurang bermakna corak lebih berterusan." },
+        { q: "Bolehkah mozek digabungkan dengan jubin besar?", a: "Boleh dan sangat popular — contohnya lantai slab besar dengan dinding aksen mozek di bilik mandi atau backsplash dapur. Peralihan antara kedua-dua perlu dirancang dengan trim yang betul." },
+      ],
+      metaTitle: "Jubin Format Besar & Mozek KL | Dari RM22/kaki²",
+      metaDesc: "Pemasangan slab besar 600x1200mm, 800x800mm dan mozek di KL & Selangor dengan klip perata profesional. Dari RM 22/kaki persegi. Sebut harga percuma.",
+    },
+    zh: {
+      name: "大板与马赛克瓷砖",
+      tagline: "600x1200mm、800x800mm 大板与马赛克图案，配找平器铺贴，平整完美。从 RM 22 / 平方英尺 起。",
+      description:
+        "大规格瓷砖与岩板砖缝少、效果高级——但铺贴难度也最大：笨重、搬运易裂、还会放大任何基层不平。我们使用专业找平器、加固粘结剂与正确搬运工艺铺贴 600x1200mm、800x800mm 等大板。反过来，马赛克图案则为墙面与特定区域提供细腻质感。两种风格需要不同工艺——我们两者都在行。价格从 RM 22 / 平方英尺 起。",
+      highlights: [
+        "600x1200mm 与 800x800mm 大板配找平器",
+        "小心搬运避免板材开裂",
+        "砖缝最少，效果高级",
+        "马赛克提供细腻质感与点缀",
+        "两种铺贴工艺都经验丰富",
+      ],
+      process: [
+        { step: "01", title: "基层处理", desc: "精细找平基层——大板会放大任何不平。" },
+        { step: "02", title: "搬运与切割", desc: "用托架搬运大板，用正确工具切出干净边缘。" },
+        { step: "03", title: "找平器铺贴", desc: "找平器让又大又重的板材之间保持平整。" },
+        { step: "04", title: "细缝美缝与交付", desc: "窄缝美缝，清洁表面呈现无缝效果。" },
+      ],
+      faqs: [
+        { q: "大砖为什么更难铺？", a: "大板与岩板笨重、抬起时易裂，基层稍不平就会错台或开裂。要完美效果，找平器与平整基层缺一不可。" },
+        { q: "大板铺贴要多少钱？", a: "价格从 RM 22 / 平方英尺 起，因需要专用工具、找平器与小心搬运。面积与板材类型决定最终费用。" },
+        { q: "小房子适合用大砖吗？", a: "适合——大砖缝少，反而让小空间显得更宽敞。切割少也意味着图案更连贯。" },
+        { q: "大砖能配马赛克吗？", a: "可以而且很流行——比如大板地面配卫生间马赛克墙或厨房挡水板。两种材料之间需用合适的收边条过渡。" },
+      ],
+      metaTitle: "吉隆坡大板马赛克铺贴 | 从RM22/尺²起",
+      metaDesc: "吉隆坡与雪兰莪 600x1200mm、800x800mm 大板与马赛克铺贴，专业找平器。从 RM 22/平方英尺 起。免费报价。",
+    }
+  },
+
+  "flooring/floor-leveling-and-screeding": {
+    ms: {
+      name: "Pemerataan Lantai & Screed",
+      tagline: "Sebatian rata-sendiri (self-leveling) dan screed simen untuk membetulkan lantai tidak rata sebelum pemasangan lantai. Dari RM 8 / kaki persegi.",
+      description:
+        "Semua lantai baharu — jubin, vinyl, SPC atau laminate — bergantung pada lantai dasar yang rata. Kami menyediakan kerja screed simen untuk pembetulan aras besar dan pembentukan cerun, serta sebatian self-leveling yang dituang untuk mencapai kerataan tinggi yang diperlukan oleh lantai klik dan vinyl. Kerja dimulakan dengan pengukuran aras laser untuk mengenal pasti titik tinggi dan rendah, diikuti penyediaan permukaan dan primer yang betul supaya lapisan baru melekat secara kekal. Harga bermula dari RM 8 / kaki persegi.",
+      highlights: [
+        "Screed simen untuk pembetulan aras besar",
+        "Self-leveling untuk lantai klik dan vinyl",
+        "Pengukuran aras laser mengenal pasti masalah",
+        "Primer betul untuk lekatan kekal",
+        "Asas rata untuk semua jenis lantai baharu",
+      ],
+      process: [
+        { step: "01", title: "Ukur Aras Laser", desc: "Titik tinggi dan rendah lantai dipetakan dengan laser untuk menentukan ketebalan kerja." },
+        { step: "02", title: "Penyediaan & Primer", desc: "Permukaan dibersihkan, retak diperbaiki dan primer disapu untuk lekatan yang kuat." },
+        { step: "03", title: "Screed atau Tuangan", desc: "Screed disapu mengikut aras rujukan atau sebatian self-leveling dituang dan diagihkan rata." },
+        { step: "04", title: "Pengeringan & Verifikasi", desc: "Lapisan dikeringkan mengikut spesifikasi dan aras disemak semula sebelum lantai dipasang." },
+      ],
+      faqs: [
+        { q: "Kenapa lantai perlu rata sebelum pasang vinyl?", a: "Vinyl dan SPC mengikut bentuk lantai di bawahnya — lantai tidak rata menyebabkan bunyi kosong, tepi terangkat dan jahitan terbuka. Perataan awal melindungi pelaburan lantai baharu anda." },
+        { q: "Berapa kos kerja screed?", a: "Harga bermula dari RM 8 / kaki persegi. Kos bergantung pada perbezaan aras yang perlu dibetulkan dan kaedah yang digunakan — screed untuk pembetulan besar atau self-leveling untuk kerataan halus." },
+        { q: "Adakah screed lama perlu dibuang dahulu?", a: "Screed lama yang kukuh dan rata boleh dikekalkan sebagai asas. Screed berongga atau rosak perlu dibuang kerana lapisan baharu di atasnya akan gagal bersama-sama." },
+        { q: "Berapa lama screed perlu kering?", a: "Tempoh pengeringan bergantung pada ketebalan screed dan pengudaraan. Lantai tidak boleh dipasang sebelum kelembapan mencapai tahap yang selamat — kami mengukur dan memberitahu anda bila boleh diteruskan." },
+      ],
+      metaTitle: "Screed & Pemerataan Lantai KL & Selangor | Dari RM8",
+      metaDesc: "Screed simen dan self-leveling di KL & Selangor untuk lantai rata sepasang jubin, vinyl atau SPC. Dari RM 8/kaki persegi. Sebut harga percuma.",
+    },
+    zh: {
+      name: "地面找平与地台",
+      tagline: "自流平与水泥砂浆找平，铺地板前先纠正不平地面。从 RM 8 / 平方英尺 起。",
+      description:
+        "所有新地面——瓷砖、vinyl、SPC 或强化地板——都依赖平整的基层。我们提供水泥砂浆找平（大幅校正标高与做坡度），以及自流平浇筑（满足锁扣地板与 vinyl 的高平整度要求）。施工从激光测量开始，找出高低点，随后做基层处理与界面剂，让新层永久粘结。价格从 RM 8 / 平方英尺 起。",
+      highlights: [
+        "水泥砂浆找平，大幅校正标高",
+        "自流平适合锁扣地板与 vinyl",
+        "激光测量精准定位问题",
+        "正确界面剂确保永久粘结",
+        "为各类新地面打好基础",
+      ],
+      process: [
+        { step: "01", title: "激光测平", desc: "激光标出地面高低点，确定施工厚度。" },
+        { step: "02", title: "基层与底涂", desc: "清洁地面、修补裂缝、刷界面剂增强粘结。" },
+        { step: "03", title: "找平或浇筑", desc: "按基准标高做砂浆找平，或浇筑自流平并摊平。" },
+        { step: "04", title: "干燥与复核", desc: "按规范养护干燥，复测标高后再铺地板。" },
+      ],
+      faqs: [
+        { q: "铺 vinyl 前为什么必须找平？", a: "vinyl 和 SPC 会贴合基层形状——不平会导致空响、翘边与开缝。先找平是保护您新地面投资的关键。" },
+        { q: "找平要多少钱？", a: "价格从 RM 8 / 平方英尺 起。费用取决于需校正的高差与工艺——大幅校正用砂浆，精细找平用自流平。" },
+        { q: "旧砂浆层要先拆吗？", a: "牢固平整的旧砂浆层可保留作基层。空鼓破损的必须拆除，否则上面的新层会一起失效。" },
+        { q: "砂浆要干多久？", a: "取决于厚度与通风。湿度未达标不能铺地板——我们会实测并告知可施工时间。" },
+      ],
+      metaTitle: "吉隆坡地面找平砂浆自流平 | 从RM8/尺²起",
+      metaDesc: "吉隆坡与雪兰莪水泥砂浆找平与自流平：贴砖、vinyl、SPC 前的平整基层。从 RM 8/平方英尺 起。免费报价。",
+    }
+  },
+
+  "flooring/hollow-tile-and-uneven-floor-repair": {
+    ms: {
+      name: "Pembaikan Jubin Berongga & Lantai Tidak Rata",
+      tagline: "Pengesanan jubin berongga dengan tap-test, penanggalan dan pemasangan semula, serta pengisaran dan perataan lantai tidak rata. Dari RM 250.",
+      description:
+        "Jubin berongga — yang berbunyi kosong apabila diketuk — adalah masalah lantai yang lama-kelamaan menjadi retak, terangkat atau menakung air. Kami mengesan jubin berongga dengan tap-test sistematik merangkumi keseluruhan lantai, menanggalkan hanya keping yang bermasalah, membersihkan lapisan pelekat lama, dan memasang semula jubin dengan pelekat penuh di bahagian belakang untuk lekatan kukuh. Untuk lantai tidak rata yang menyebabkan trip hazard atau perabot goyang, kami melakukan pengisaran titik tinggi atau perataan setempat. Dari RM 250 untuk pembaikan setempat.",
+      highlights: [
+        "Tap-test sistematik mengesan semua jubin berongga",
+        "Penanggalan hanya keping bermasalah — lantai lain kekal",
+        "Pelekat penuh belakang jubin untuk lekatan kukuh",
+        "Pengisaran titik tinggi lantai tidak rata",
+        "Pembaikan setempat tanpa pecah keseluruhan lantai",
+      ],
+      process: [
+        { step: "01", title: "Tap-Test & Pemetaan", desc: "Setiap keping jubin diketuk dan dipetakan — keping berongga ditanda untuk pembaikan." },
+        { step: "02", title: "Penanggalan Keping Berongga", desc: "Hanya keping bermasalah ditanggalkan dengan berhati-hati supaya keping sihat tidak rosak." },
+        { step: "03", title: "Pemasangan Semula", desc: "Pelekat lama dibersihkan dan jubin dipasang semula dengan pelekat penuh belakang." },
+        { step: "04", title: "Grout & Pemeriksaan", desc: "Grout dipulihkan sepadan warna asal dan lantai diperiksa semula dengan tap-test." },
+      ],
+      faqs: [
+        { q: "Bagaimana saya tahu jubin saya berongga?", a: "Ketuk lantai dengan objek keras — jubin berongga berbunyi kosong berbanding bunyi padat jubin yang melekat baik. Bunyi kosong bermakna terdapat ruang antara jubin dan lantai yang akan bertambah buruk dari semasa ke semasa." },
+        { q: "Berapa kos membaiki jubin berongga?", a: "Pembaikan setempat bermula dari RM 250 bergantung pada bilangan keping yang terjejas. Jika kajian tap-test menunjukkan lebih 30–40% lantai berongga, penggantian penuh lebih berbaloi." },
+        { q: "Adakah jubin lama boleh digunakan semula?", a: "Jubin yang ditanggalkan dengan berhati-hati dan tidak pecah boleh dipasang semula. Walau bagaimanapun, sesetengah keping pecah semasa penanggalan — kami menyemak stok simpanan anda atau memadankan jubin ganti yang hampir." },
+        { q: "Mengapa jubin menjadi berongga?", a: "Sebab lazim termasuk pelekat yang disapu hanya di titik (bukan penuh), subfloor berhabuk semasa pemasangan, atau tiada ruang penyambungan pada jahitan. Membaiki tanpa mengubah sebab akan menyebabkan ia berulang." },
+      ],
+      metaTitle: "Pembaikan Jubin Berongga & Lantai Tidak Rata | Dari RM250",
+      metaDesc: "Baiki jubin berongga di KL & Selangor: tap-test, tanggalkan dan pasang semula dengan pelekat penuh. Pengisaran lantai tidak rata. Dari RM 250. Sebut harga percuma.",
+    },
+    zh: {
+      name: "空鼓砖与不平地面维修",
+      tagline: "敲击检测空鼓砖，拆除重铺，以及不平地面打磨找平。从 RM 250 起。",
+      description:
+        "空鼓砖——敲上去声音发空——会随时间发展成开裂、起翘或积水。我们用系统化敲击检测覆盖整个地面，只拆除有问题的砖，清理旧粘结层，并用满浆背胶工艺重新铺贴，粘结牢固。对于造成绊脚隐患或家具不稳的不平地面，我们做高点打磨或局部找平。局部维修从 RM 250 起。",
+      highlights: [
+        "系统化敲击检测找出所有空鼓砖",
+        "只拆问题砖——其余地面保留",
+        "瓷砖背面满浆粘贴，粘结牢固",
+        "不平地面高点打磨",
+        "局部维修，无需全屋翻拆",
+      ],
+      process: [
+        { step: "01", title: "敲击检测与标记", desc: "逐片敲击并绘制标记图——空鼓砖标出待修。" },
+        { step: "02", title: "拆除空鼓砖", desc: "小心拆除问题砖，不伤健康砖。" },
+        { step: "03", title: "重新铺贴", desc: "清理旧胶，瓷砖背面满浆重新铺贴。" },
+        { step: "04", title: "美缝与复检", desc: "按原色恢复美缝，再次敲击复检。" },
+      ],
+      faqs: [
+        { q: "怎么知道瓷砖空鼓？", a: "用硬物敲地面——空鼓砖声音发空，好砖声音实。空响说明砖下有间隙，问题会越来越严重。" },
+        { q: "修空鼓砖要多少钱？", a: "局部维修从 RM 250 起，视受损砖数而定。若检测显示超过30–40%地面空鼓，整体更换更划算。" },
+        { q: "旧砖可以重复使用吗？", a: "小心拆下且未破的砖可以重铺。但部分砖拆除时会破——我们会查看您的备用砖或匹配相近的替换砖。" },
+        { q: "瓷砖为什么会空鼓？", a: "常见原因：点贴而非满浆铺贴、铺贴时基层有灰、砖缝没留伸缩缝。不解决原因直接修补会复发。" },
+      ],
+      metaTitle: "吉隆坡空鼓砖维修 | 不平地面找平 | 从RM250起",
+      metaDesc: "吉隆坡与雪兰莪空鼓砖维修：敲击检测、拆除重铺满浆粘贴，不平地面打磨。从 RM 250 起。免费报价。",
+    }
+  },
+
+  /* ── KITCHEN RENOVATION — Session 12 native specialty rollout ────────── */
+  "kitchen-renovation/kitchen-cabinet-installation": {
+    ms: {
+      name: "Pemasangan Kabinet Dapur",
+      tagline: "Kabinet bawah, dinding dan tinggi custom dengan engsel soft-close, sistem laci dan pull-out pantry. Dari RM 4,500.",
+      description:
+        "Kabinet dapur ialah tulang belakang ruang memasak — dan kabinet yang direka betul menjadikan dapur kecil berfungsi seperti dapur besar. Kami memasang kabinet bawah, kabinet dinding dan kabinet tinggi yang direka mengikut dimensi dan aliran kerja dapur anda: zon basuh, zon penyediaan dan zon memasak. Pilihan termasuk engsel dan laci soft-close, pull-out pantry, laci sudut carousel, dan pelbagai kemasan pintu dari melamin ke solid surface. Semua kabinet diukur khusus untuk ruang anda — bukan saiz tetap yang dipaksa muat. Harga bermula dari RM 4,500.",
+      highlights: [
+        "Kabinet bawah, dinding dan tinggi diukur khusus",
+        "Engsel dan laci soft-close sebagai standard",
+        "Pull-out pantry dan laci sudut carousel",
+        "Zon basuh, penyediaan dan memasak dirancang",
+        "Pelbagai kemasan pintu mengikut bajet anda",
+      ],
+      process: [
+        { step: "01", title: "Ukuran & Reka Bentuk", desc: "Dapur diukur dan susun atur kabinet dirancang mengikut aliran kerja masakan anda." },
+        { step: "02", title: "Pemilihan Kemasan", desc: "Kemasan pintu, top table dan perkakasan dipilih bersama mengikut bajet dan gaya." },
+        { step: "03", title: "Pembuatan & Persiapan", desc: "Kabinet dibuat mengikut ukuran tapak manakala titik air dan elektrik diselaraskan." },
+        { step: "04", title: "Pemasangan & Serahan", desc: "Kabinet dipasang dengan aras yang tepat, pintu dan laci dilaras, dan dapur diserahkan bersih." },
+      ],
+      faqs: [
+        { q: "Berapa kos kabinet dapur custom?", a: "Harga bermula dari RM 4,500 untuk konfigurasi asas. Kos sebenar bergantung pada panjang kabinet, jenis kemasan pintu, aksesori dalaman dan binaan countertop." },
+        { q: "Berapa lama kabinet dapur siap?", a: "Selepas ukuran dan pemilihan kemasan disahkan, pembuatan dan pemasangan biasanya mengambil beberapa minggu. Kami memberikan tarikh serahan yang jelas dalam sebut harga." },
+        { q: "Apakah kemasan pintu yang tahan lama untuk iklim Malaysia?", a: "Melamin laminated tahan lembapan dan senang dijaga; pintu aluminium-framed dan acrylic memberi kemasan premium. Kami menerangkan pilihan mengikut bajet semasa perundingan." },
+        { q: "Bolehkah kabinet sedia ada ditukar pintu sahaja?", a: "Untuk kabinet yang struktur masih kukuh, tukar pintu dan perkakasan boleh membaharui penampilan dengan kos lebih rendah. Kami periksa keadaan kabinet sebelum mengesyorkan pilihan ini." },
+      ],
+      metaTitle: "Pemasangan Kabinet Dapur KL & Selangor | Dari RM4,500",
+      metaDesc: "Kabinet dapur custom di KL & Selangor: kabinet bawah, dinding dan tinggi dengan soft-close, pull-out pantry. Dari RM 4,500. Sebut harga percuma.",
+    },
+    zh: {
+      name: "厨房橱柜安装",
+      tagline: "定制地柜、吊柜与高柜，配阻尼铰链、抽屉系统与储藏拉篮。从 RM 4,500 起。",
+      description:
+        "橱柜是厨房的骨架——设计得当的橱柜能让小厨房发挥大厨房的功能。我们按您厨房的实际尺寸与动线（洗、切、烧三个区域）定制安装地柜、吊柜与高柜。可选阻尼铰链与阻尼抽屉、储藏拉篮、转角小拉篮，门板饰面从三聚氰胺到实心面材多种选择。所有柜体按您的空间量身定制——不是硬塞的固定尺寸。价格从 RM 4,500 起。",
+      highlights: [
+        "地柜、吊柜与高柜量身定制",
+        "标配阻尼铰链与阻尼抽屉",
+        "储藏拉篮与转角小拉篮",
+        "洗、切、烧动线合理规划",
+        "门板饰面按预算多种可选",
+      ],
+      process: [
+        { step: "01", title: "测量与设计", desc: "测量厨房，按烹饪动线规划橱柜布局。" },
+        { step: "02", title: "选择饰面", desc: "按预算与风格共同选定门板、台面与五金。" },
+        { step: "03", title: "生产与准备", desc: "按现场尺寸生产柜体，同步协调水电点位。" },
+        { step: "04", title: "安装与交付", desc: "精准水平安装柜体，调校门板抽屉，清洁交付。" },
+      ],
+      faqs: [
+        { q: "定制橱柜要多少钱？", a: "基础配置从 RM 4,500 起。实际费用取决于柜体长度、门板饰面、内部配件与台面。" },
+        { q: "橱柜工期要多久？", a: "尺寸与饰面确认后，生产加安装通常需几周。报价时会给出明确交付日期。" },
+        { q: "马来西亚气候用什么门板耐久？", a: "防潮三聚氰胺板耐用易打理；铝框亚克力门板更显高级。咨询时我们按预算详细介绍。" },
+        { q: "旧柜能只换门板吗？", a: "柜体结构牢固时，换门板与五金能用较低成本焕新外观。我们会先检查柜况再建议。" },
+      ],
+      metaTitle: "吉隆坡厨房橱柜安装 | 从RM4,500起",
+      metaDesc: "吉隆坡与雪兰莪定制橱柜：地柜、吊柜、高柜，阻尼铰链、储藏拉篮。从 RM 4,500 起。免费报价。",
+    }
+  },
+
+  "kitchen-renovation/kitchen-countertop-replacement": {
+    ms: {
+      name: "Penggantian Countertop Dapur",
+      tagline: "Bekalan dan pemasangan countertop quartz, granit atau sintered stone dengan potongan singki dan profil tepi. Dari RM 1,800.",
+      description:
+        "Countertop menukar wajah dapur serta-merta — dan pilihan bahan menentukan berapa lama ia kekal cantik. Kami membekal dan memasang countertop quartz, granit dan sintered stone dengan templat digital yang dibuat di tapak untuk potongan singki, hob dan paip yang tepat. Pilihan profil tepi, splash back dan jahitan yang kurang ketara diselaraskan dengan kabinet anda. Untuk dapur yang kerap dimasak, kami menerangkan perbezaan ketahanan haba dan calar setiap bahan supaya pilihan anda sepadan dengan gaya penggunaan sebenar. Harga bermula dari RM 1,800.",
+      highlights: [
+        "Quartz, granit dan sintered stone",
+        "Templat di tapak untuk potongan tepat",
+        "Potongan singki, hob dan paip yang kemas",
+        "Pilihan profil tepi dan splash back",
+        "Nasihat bahan mengikut gaya penggunaan anda",
+      ],
+      process: [
+        { step: "01", title: "Pemilihan Bahan", desc: "Sampel bahan dibawa ke dapur anda dan perbezaan ketahanan setiap bahan diterangkan." },
+        { step: "02", title: "Templat Tapak", desc: "Templat dibuat selepas kabinet dipasang untuk mengambil dimensi sebenar termasuk dinding tidak lurus." },
+        { step: "03", title: "Pembuatan & Potongan", desc: "Countertop dipotong mengikut templat dengan bukaan singki, hob dan titik paip yang tepat." },
+        { step: "04", title: "Pemasangan & Silikon", desc: "Countertop dipasang, jahitan dirawat dan silikon penyekat air disapu di sempadan singki." },
+      ],
+      faqs: [
+        { q: "Bahan countertop manakah paling tahan?", a: "Sintered stone paling tahan haba dan calar, diikuti quartz yang tidak berliang dan mudah dijaga. Granit tahan haba semula jadi tetapi perlu seal semula berkala. Kami membantu memilih mengikut cara anda memasak." },
+        { q: "Berapa kos menggantikan countertop?", a: "Harga bermula dari RM 1,800 bergantung pada bahan, panjang countertop dan kompleksiti potongan. Anggaran tepat diberikan selepas ukuran." },
+        { q: "Bolehkah countertop diganti tanpa tukar kabinet?", a: "Boleh, selagi struktur kabinet bawah masih kukuh untuk menampung berat countertop baharu. Ini adalah cara popular mengemas kini dapur dengan kos lebih rendah." },
+        { q: "Adakah jahitan countertop ketara?", a: "Jahitan wujud untuk countertop panjang tetapi dirawat dengan resin sepadan warna supaya kurang ketara. Perletakan jahitan dirancang di kawasan yang kurang dilihat." },
+      ],
+      metaTitle: "Penggantian Countertop Dapur KL | Dari RM1,800",
+      metaDesc: "Ganti countertop dapur di KL & Selangor: quartz, granit, sintered stone dengan potongan singki dan profil tepi. Dari RM 1,800. Sebut harga percuma.",
+    },
+    zh: {
+      name: "厨房台面更换",
+      tagline: "石英石、花岗岩或岩板台面供应与安装，含水槽开孔与边型。从 RM 1,800 起。",
+      description:
+        "台面能立刻改变厨房气质——而材质决定它美貌能维持多久。我们供应并安装石英石、花岗岩与岩板台面，现场数字化制模，水槽、灶具与管道开孔精准无误。边型、后挡水与拼缝处理与您的柜体协调。对于常开火的家庭，我们会讲清每种材料的耐热与抗刮差异，让选择匹配真实使用习惯。价格从 RM 1,800 起。",
+      highlights: [
+        "石英石、花岗岩与岩板可选",
+        "现场制模，开孔精准",
+        "水槽、灶具与管道开孔整洁",
+        "可选边型与后挡水",
+        "按使用习惯推荐材料",
+      ],
+      process: [
+        { step: "01", title: "选材", desc: "带样品上门，讲解每种材料的耐用性差异。" },
+        { step: "02", title: "现场制模", desc: "柜体安装后现场制模，采集含墙面误差的真实尺寸。" },
+        { step: "03", title: "生产与开孔", desc: "按模板切割台面，精准开出水槽、灶具与管口。" },
+        { step: "04", title: "安装与密封", desc: "安装台面，处理拼缝并在水槽边打防水硅胶。" },
+      ],
+      faqs: [
+        { q: "哪种台面材料最耐用？", a: "岩板最耐热抗刮；石英石无孔隙最好打理；花岗岩天然耐热但需定期做封闭。我们按您的烹饪习惯帮您选。" },
+        { q: "换台面要多少钱？", a: "价格从 RM 1,800 起，视材料、台面长度与开孔复杂度。测量后提供精确报价。" },
+        { q: "不换柜体能只换台面吗？", a: "可以，只要地柜结构牢固、能承重新台面重量。这是低成本更新厨房的流行做法。" },
+        { q: "台面拼缝明显吗？", a: "长台面会有拼缝，但用同色树脂处理后会很不显眼。拼缝位置会规划在视线较少的位置。" },
+      ],
+      metaTitle: "吉隆坡厨房台面更换 | 从RM1,800起",
+      metaDesc: "吉隆坡与雪兰莪台面更换：石英石、花岗岩、岩板，水槽开孔与边型。从 RM 1,800 起。免费报价。",
+    }
+  },
+
+  "kitchen-renovation/kitchen-backsplash-tile-installation": {
+    ms: {
+      name: "Pemasangan Jubin Backsplash Dapur",
+      tagline: "Backsplash porselin, seramik, mozek atau subway dengan pemadanan warna grout dan seal anti-kulat. Dari RM 18 / kaki persegi.",
+      description:
+        "Backsplash ialah kawasan paling kerap kena minyak dan air di dapur — dan kawasan yang paling menentukan gayanya. Kami memasang backsplash porselin, seramik, mozek dan subway dengan pemadanan warna grout untuk paparan kemas, atau grout epoxy yang menahan gris dan kotoran di belakang dapur. Seal silikon anti-kulat dipasang di semua sendi yang bertemu countertop dan singki. Pemotongan kemas dibuat di soket elektrik, pemijak dan penjuru supaya hasil akhir kelihatan seperti sebahagian daripada reka bentuk asal dapur. Harga bermula dari RM 18 / kaki persegi.",
+      highlights: [
+        "Porselin, seramik, mozek dan subway",
+        "Pemadanan warna grout atau grout epoxy",
+        "Seal silikon anti-kulat di sempadan basah",
+        "Pemotongan kemas di soket dan penjuru",
+        "Perlindungan minyak yang senang dibersihkan",
+      ],
+      process: [
+        { step: "01", title: "Pemilihan Jubin & Ketinggian", desc: "Jenis jubin dan ketinggian backsplash dipilih mengikut gaya dapur dan kabinet anda." },
+        { step: "02", title: "Penyediaan Dinding", desc: "Dinding dibersihkan daripada gris dan cat longgar supaya pelekat melekat sepenuhnya." },
+        { step: "03", title: "Pemasangan & Pemotongan", desc: "Jubin dipasang dari aras countertop dengan potongan kemas di soket dan penjuru." },
+        { step: "04", title: "Grout & Silikon", desc: "Grout dipadankan warna, silikon anti-kulat dipasang di sempadan countertop dan singki." },
+      ],
+      faqs: [
+        { q: "Backsplash perlu setinggi mana?", a: "Ketinggian lazim adalah antara 60cm hingga 1.2m dari countertop, atau sehingga kabinet atas. Kawasan di belakang dapur biasanya diberi liputan penuh kerana paling terdedah kepada percikan minyak." },
+        { q: "Berapa kos pemasangan backsplash?", a: "Harga bermula dari RM 18 / kaki persegi. Keluasan backsplash dapur standard adalah kecil, jadi jumlah kos biasanya berpatutan untuk kesan yang besar." },
+        { q: "Grout apa yang sesuai untuk belakang dapur?", a: "Grout epoxy adalah pilihan terbaik di belakang dapur kerana ia tahan gris dan tidak menyerap kotoran. Grout simen biasa boleh digunakan di kawasan lain dengan pemadanan warna yang kemas." },
+        { q: "Bolehkah backsplash dipasang atas permukaan sedia ada?", a: "Pemasangan atas jubin lama kadangkala mungkin tetapi memerlukan permukaan yang rata dan bersih. Pembuangan lapisan lama memberikan hasil yang lebih rata dan jangka hayat lebih panjang." },
+      ],
+      metaTitle: "Backsplash Dapur KL & Selangor | Dari RM18/kaki²",
+      metaDesc: "Pemasangan backsplash dapur di KL & Selangor: porselin, seramik, mozek, subway dengan grout epoxy dan seal anti-kulat. Dari RM 18/kaki persegi. Sebut harga percuma.",
+    },
+    zh: {
+      name: "厨房防溅墙瓷砖安装",
+      tagline: "瓷砖、陶瓷、马赛克或面包砖防溅墙，配色美缝与防霉密封。从 RM 18 / 平方英尺 起。",
+      description:
+        "防溅墙是厨房里最常沾油沾水的地方——也是最决定风格的地方。我们铺贴瓷砖、陶瓷、马赛克与面包砖防溅墙，配色美缝呈现整洁效果，灶后可用抗油污的环氧美缝。台面与水槽交界处打防霉硅胶。插座、转角处精细切割，让成品如同厨房原设计的一部分。价格从 RM 18 / 平方英尺 起。",
+      highlights: [
+        "瓷砖、陶瓷、马赛克与面包砖",
+        "配色美缝或环氧美缝",
+        "湿区交界打防霉硅胶",
+        "插座与转角精细切割",
+        "抗油易清洁的保护层",
+      ],
+      process: [
+        { step: "01", title: "选砖与高度", desc: "按厨房风格与橱柜选择砖种与防溅墙高度。" },
+        { step: "02", title: "墙面处理", desc: "清除油污与松散旧漆，保证粘结牢固。" },
+        { step: "03", title: "铺贴与切割", desc: "从台面标高起铺，插座与转角精细切割。" },
+        { step: "04", title: "美缝与硅胶", desc: "配色美缝，台面与水槽交界打防霉硅胶。" },
+      ],
+      faqs: [
+        { q: "防溅墙要做多高？", a: "常见高度为台面上方 60cm 至 1.2 米，或做到吊柜底部。灶后区域通常做满铺，因最易溅油。" },
+        { q: "防溅墙铺贴要多少钱？", a: "价格从 RM 18 / 平方英尺 起。标准厨房防溅墙面积不大，总价通常实惠而效果明显。" },
+        { q: "灶后用什么美缝合适？", a: "环氧美缝最合适，抗油污不吸脏。其他区域可用配色水泥美缝。" },
+        { q: "能在旧饰面上直接铺吗？", a: "旧砖平整洁净时有时可行，但清除旧层效果更平整、寿命更长。" },
+      ],
+      metaTitle: "吉隆坡厨房防溅墙贴砖 | 从RM18/尺²起",
+      metaDesc: "吉隆坡与雪兰莪厨房防溅墙：瓷砖、马赛克、面包砖，环氧美缝与防霉密封。从 RM 18/平方英尺 起。免费报价。",
+    }
+  },
+
+  "kitchen-renovation/kitchen-island-and-peninsula": {
+    ms: {
+      name: "Island & Peninsula Dapur",
+      tagline: "Island atau peninsula custom dengan storan, bar sarapan, power point dan pilihan waterfall edge. Dari RM 2,200.",
+      description:
+        "Island dan peninsula menukar dapur menjadi pusat aktiviti rumah — ruang penyediaan tambahan, storan besar, bar sarapan dan titik bergather keluarga. Kami membina island dan peninsula custom mengikut dimensi dapur anda: kabinet dengan pintu dan laci yang menyamai atau kontras dengan kabinet utama, countertop dengan pilihan waterfall edge, power point untuk perkakasan kecil, serta tapak untuk singki atau hob jika diperlukan. Untuk dapur terbuka (open concept), island juga menjadi pembatas semula jadi antara zon memasak dan ruang tamu. Harga bermula dari RM 2,200.",
+      highlights: [
+        "Ruang penyediaan dan storan tambahan yang besar",
+        "Bar sarapan untuk keluarga dan rakan",
+        "Power point untuk perkakasan kecil",
+        "Pilihan waterfall edge yang mewah",
+        "Pembatas semula jadi untuk dapur terbuka",
+      ],
+      process: [
+        { step: "01", title: "Reka Letak & Peruntukan", desc: "Saiz dan kedudukan island dirancang dengan laluan pergerakan yang selesa di sekelilingnya." },
+        { step: "02", title: "Titik Elektrik & Paip", desc: "Power point dan saluran paip (jika ada singki) dialirkan ke lokasi island sebelum lantai ditutup." },
+        { step: "03", title: "Binaan Kabinet", desc: "Kabinet island dibina mengikut reka bentuk dengan kemasan yang menyamai atau kontras." },
+        { step: "04", title: "Countertop & Serahan", desc: "Countertop dipasang dengan profil tepi pilihan anda dan island diserahkan siap guna." },
+      ],
+      faqs: [
+        { q: "Berapa besar island yang sesuai?", a: "Panduan umum: kekalkan laluan sekurang-kurangnya 90cm–1m di sekeliling island supaya pintu kabinet dan laci boleh dibuka dengan selesa. Dapur kecil mungkin lebih sesuai dengan peninsula yang melekat pada satu sisi." },
+        { q: "Berapa kos membina kitchen island?", a: "Harga bermula dari RM 2,200 untuk island asas dengan storan. Kos meningkat mengikut saiz, countertop, waterfall edge dan kerja paip atau elektrik ke island." },
+        { q: "Bolehkah singki dipasang di island?", a: "Boleh, tetapi ia memerlukan penyaluran paip dan saliran ke tengah dapur yang perlu dirancang awal. Ramai pemilik memilih island untuk zon penyediaan kering dan membiarkan singki di kabinet utama." },
+        { q: "Apakah waterfall edge?", a: "Waterfall edge ialah countertop yang memanjang menegak ke lantai di kedua-dua hujung island, memberikan kesan mewah dan melindungi sisi kabinet. Ia popular dengan quartz dan sintered stone." },
+      ],
+      metaTitle: "Kitchen Island & Peninsula KL & Selangor | Dari RM2,200",
+      metaDesc: "Bina kitchen island dan peninsula di KL & Selangor: storan, bar sarapan, power point, waterfall edge. Dari RM 2,200. Sebut harga percuma.",
+    },
+    zh: {
+      name: "厨房中岛与半岛",
+      tagline: "定制中岛或半岛，带储物、早餐吧、插座与瀑布边选项。从 RM 2,200 起。",
+      description:
+        "中岛与半岛让厨房成为家的活动中心——额外操作台面、大容量收纳、早餐吧，以及家人聚脚点。我们按厨房尺寸定制中岛与半岛：柜体门板可与主柜呼应或撞色，台面可选瀑布边，配小家电插座，需要时还可预留水槽或灶位。对开放式厨房来说，中岛也是烹饪区与客厅之间的自然分隔。价格从 RM 2,200 起。",
+      highlights: [
+        "大容量操作台面与收纳",
+        "家人朋友共享的早餐吧",
+        "小家电使用的插座",
+        "高级感瀑布边可选",
+        "开放式厨房的天然分隔",
+      ],
+      process: [
+        { step: "01", title: "布局与预留", desc: "规划中岛尺寸与位置，四周留出舒适通道。" },
+        { step: "02", title: "水电预留", desc: "封地前把插座与水管（如装水槽）引到中岛位置。" },
+        { step: "03", title: "柜体制作", desc: "按设计制作中岛柜体，饰面呼应或撞色。" },
+        { step: "04", title: "台面与交付", desc: "安装所选边型的台面，交付即可使用。" },
+      ],
+      faqs: [
+        { q: "中岛多大合适？", a: "通用原则：中岛四周至少留 90cm–1m 通道，保证柜门抽屉顺畅打开。小厨房可能更适合一侧靠墙的半岛。" },
+        { q: "做中岛要多少钱？", a: "基础带收纳的中岛从 RM 2,200 起。尺寸、台面、瀑布边以及水电引入会增加费用。" },
+        { q: "中岛上能装水槽吗？", a: "可以，但需把水管与排水引到厨房中央，必须早期规划。许多业主选择中岛做干区操作台，水槽留在主柜。" },
+        { q: "什么是瀑布边？", a: "瀑布边是台面在中岛两端垂直延伸到地面，效果高级并保护柜体侧面。石英石与岩板最常做。" },
+      ],
+      metaTitle: "吉隆坡厨房中岛建造 | 从RM2,200起",
+      metaDesc: "吉隆坡与雪兰莪定制中岛与半岛：储物、早餐吧、插座、瀑布边。从 RM 2,200 起。免费报价。",
+    }
+  },
+
+  "kitchen-renovation/wet-kitchen-renovation": {
+    ms: {
+      name: "Pengubahsuaian Dapur Basah",
+      tagline: "Dapur basah tugas berat untuk masakan kuali: floor trap, singki keluli tahan karat, jubin dinding penuh dan pengudaraan kuat. Dari RM 6,500.",
+      description:
+        "Masakan kuali Malaysia menghasilkan asap, wap dan minyak yang banyak — dapur basah yang direka betul menjadikan semua itu terkawal. Kami mengubah suai dapur basah tugas berat dengan floor trap yang menyalirkan dengan lancar, singki keluli tahan karat yang lasak, jubin dinding hingga siling yang senang dicuci, pengudaraan yang kuat dan pencahayaan task lighting di zon memasak. Bahan tahan haba dan lembapan digunakan di seluruh zon kerja, dan susun atur dirancang supaya aluran basuh-paring-masak tidak bersilang. Harga bermula dari RM 6,500.",
+      highlights: [
+        "Floor trap dengan saliran yang lancar",
+        "Singki keluli tahan karat yang lasak",
+        "Jubin dinding hingga siling yang senang dicuci",
+        "Pengudaraan kuat untuk asap dan wap kuali",
+        "Bahan tahan haba dan lembapan di zon kerja",
+      ],
+      process: [
+        { step: "01", title: "Perancangan Aliran Kerja", desc: "Zon basuh, paring dan memasak dirancang supaya aliran tidak bersilang walaupun ramai memasak." },
+        { step: "02", title: "Saliran & Paip", desc: "Floor trap dan saliran dipasang atau dinaik taraf untuk menampung basuhan berterusan." },
+        { step: "03", title: "Permukaan Lasak", desc: "Jubin dinding hingga siling, singki keluli dan bahan tahan haba dipasang di seluruh zon kerja." },
+        { step: "04", title: "Pengudaraan & Pencahayaan", desc: "Ekzos dan pengudaraan dikuatkan dengan pencahayaan tugas di atas zon memasak." },
+      ],
+      faqs: [
+        { q: "Apakah beza dapur basah dan kering?", a: "Dapur basah untuk memasak berat dengan api, wap dan minyak — memerlukan jubin penuh, saliran dan pengudaraan kuat. Dapur kering untuk penyediaan ringan, minum dan hiburan dengan kemasan yang lebih halus." },
+        { q: "Berapa kos mengubah suai dapur basah?", a: "Harga bermula dari RM 6,500 merangkumi kabinet lasak, jubin, saliran dan pengudaraan asas. Kos sebenar bergantung pada saiz dapur dan pilihan bahan." },
+        { q: "Mengapa floor trap penting di dapur basah?", a: "Pembasuhan dapur basah menghasilkan air sisa setiap hari. Floor trap yang betul menyalirkan air dengan cepat dan menghalang bau dari saluran kembali ke dapur — masalah lazim di dapur lama." },
+        { q: "Adakah jubin dinding penuh perlu sampai siling?", a: "Liputan penuh disyorkan untuk dapur basah kerana wap dan minyak naik sehingga siling. Jubin menjadikan pembersihan mudah berbanding dinding cat yang menyerap gris." },
+      ],
+      metaTitle: "Pengubahsuaian Dapur Basah KL & Selangor | Dari RM6,500",
+      metaDesc: "Dapur basah tugas berat di KL & Selangor: floor trap, singki keluli, jubin penuh, pengudaraan kuat. Dari RM 6,500. Sebut harga percuma.",
+    },
+    zh: {
+      name: "湿厨房翻新",
+      tagline: "适合爆炒的重型湿厨房：地漏、不锈钢水槽、墙砖贴至天花、强力通风。从 RM 6,500 起。",
+      description:
+        "马来西亚的爆炒烹饪油烟、蒸汽与油污量大——设计得当的湿厨房能把这一切控制住。我们翻新重型湿厨房：排水顺畅的地漏、皮实的不锈钢水槽、易擦洗的满铺墙砖、强力通风以及烹饪区的任务照明。整个操作区使用耐热防潮材料，并按洗-切-烧动线规划布局，避免交叉。价格从 RM 6,500 起。",
+      highlights: [
+        "排水顺畅的地漏",
+        "皮实耐用的不锈钢水槽",
+        "墙砖贴至天花，易擦洗",
+        "应对油烟蒸汽的强力通风",
+        "操作区耐热防潮材料",
+      ],
+      process: [
+        { step: "01", title: "动线规划", desc: "规划洗、切、烧区域，多人同时下厨也不交叉。" },
+        { step: "02", title: "排水与水管", desc: "安装或升级地漏与排水，应对持续冲洗。" },
+        { step: "03", title: "硬核饰面", desc: "满铺墙砖、不锈钢水槽与耐热材料覆盖整个操作区。" },
+        { step: "04", title: "通风与照明", desc: "加强排气通风，烹饪区上方加任务照明。" },
+      ],
+      faqs: [
+        { q: "湿厨房和干厨房有什么区别？", a: "湿厨房用于明火重油烹饪——需要满铺瓷砖、排水与强力通风。干厨房用于轻食准备、饮品与待客，饰面更精致。" },
+        { q: "湿厨房翻新要多少钱？", a: "价格从 RM 6,500 起，含耐用柜体、贴砖、排水与基础通风。实际费用取决于厨房大小与选材。" },
+        { q: "湿厨房为什么地漏很重要？", a: "湿厨房每天产生废水。正确的地漏快速排水并防止管道臭气回流——这是旧厨房的常见问题。" },
+        { q: "墙砖一定要贴到顶吗？", a: "建议满铺。蒸汽与油污会升到天花高度，瓷砖比吸油的乳胶漆墙面好清理得多。" },
+      ],
+      metaTitle: "吉隆坡湿厨房翻新 | 从RM6,500起",
+      metaDesc: "吉隆坡与雪兰莪湿厨房翻新：地漏、不锈钢水槽、满铺墙砖、强力通风。从 RM 6,500 起。免费报价。",
+    }
+  },
+
+  "kitchen-renovation/dry-kitchen-renovation": {
+    ms: {
+      name: "Pengubahsuaian Dapur Kering",
+      tagline: "Dapur kering moden dengan island, kabinet paparan, rak wain dan pencahayaan ambien untuk hiburan. Dari RM 5,500.",
+      description:
+        "Dapur kering ialah wajah sosial rumah moden — tempat menyediakan minuman, makanan ringan dan berbual dengan tetamu sambil memasak berat tertutup di dapur basah. Kami mengubah suai dapur kering dengan island atau bar, kabinet paparan berkaca, rak wain, coffee corner dan pencahayaan ambien yang hangat. Bahan kemasan yang halus — laminated premium, solid surface, kaca dan logam — digunakan kerana dapur kering tidak terdedah kepada minyak dan haba berat. Harga bermula dari RM 5,500.",
+      highlights: [
+        "Island atau bar untuk hiburan tetamu",
+        "Kabinet paparan berkaca dan rak wain",
+        "Pencahayaan ambien yang hangat",
+        "Bahan kemasan halus tanpa beban minyak",
+        "Pelengkap kepada dapur basah anda",
+      ],
+      process: [
+        { step: "01", title: "Konsep & Susun Atur", desc: "Fungsi dapur kering anda ditentukan — minuman, baking, hiburan — dan susun atur dirancang." },
+        { step: "02", title: "Kabinet & Kemasan", desc: "Kabinet, kabinet paparan dan kemasan halus dipilih mengikut gaya ruang tamu anda." },
+        { step: "03", title: "Elektrik & Pencahayaan", desc: "Titik elektrik untuk barista dan perkakasan kecil dipasang dengan pencahayaan ambien dan aksen." },
+        { step: "04", title: "Pemasangan & Serahan", desc: "Semua elemen dipasang, pencahayaan dilaras dan dapur kering diserahkan siap guna." },
+      ],
+      faqs: [
+        { q: "Adakah saya perlukan dapur kering jika sudah ada dapur basah?", a: "Dapur kering melengkapkan dapur basah — tempat menyediakan minuman dan makanan ringan tanpa mengotorkan zon memasak berat. Ia popular di rumah konsep terbuka kerana menjadi titik bergather dengan tetamu." },
+        { q: "Berapa kos mengubah suai dapur kering?", a: "Harga bermula dari RM 5,500 untuk kabinet dan kemasan asas. Island, kabinet berkaca, rak wain dan pencahayaan bertambah mengikut reka bentuk yang dipilih." },
+        { q: "Apakah bahan terbaik untuk countertop dapur kering?", a: "Tanpa beban haba berat, pilihan lebih luas — solid surface tanpa jahitan, quartz dan laminated premium semuanya sesuai. Pilihan dibuat mengikut gaya dan bajet anda." },
+        { q: "Bolehkah dapur kering ditambah pada ruang sedia ada?", a: "Boleh — dapur kering sering dibina di ruang makan, koridor lebar atau sebahagian ruang tamu. Keperluan utamanya ialah titik elektrik dan pengudaraan yang cukup untuk kegunaan ringan." },
+      ],
+      metaTitle: "Pengubahsuaian Dapur Kering KL & Selangor | Dari RM5,500",
+      metaDesc: "Dapur kering moden di KL & Selangor: island, kabinet paparan, rak wain, pencahayaan ambien. Dari RM 5,500. Sebut harga percuma.",
+    },
+    zh: {
+      name: "干厨房翻新",
+      tagline: "带中岛、展示柜、酒架与氛围灯的现代干厨房，适合招待聚会。从 RM 5,500 起。",
+      description:
+        "干厨房是现代家居的社交门面——准备饮品、轻食，与客人聊天，重油烹饪则留在湿厨房。我们翻新干厨房：中岛或吧台、玻璃门展示柜、酒架、咖啡角与温暖氛围灯。因为不受重油重热影响，可使用精致饰面——高端饰面板、实心面材、玻璃与金属。价格从 RM 5,500 起。",
+      highlights: [
+        "招待客人的中岛或吧台",
+        "玻璃门展示柜与酒架",
+        "温暖的氛围照明",
+        "无油污负担的精致饰面",
+        "与湿厨房完美互补",
+      ],
+      process: [
+        { step: "01", title: "概念与布局", desc: "确定干厨房功能——饮品、烘焙、待客——并规划布局。" },
+        { step: "02", title: "柜体与饰面", desc: "按客厅风格挑选柜体、展示柜与精致饰面。" },
+        { step: "03", title: "电路与照明", desc: "布置咖啡角与小家电插座，安装氛围与重点照明。" },
+        { step: "04", title: "安装与交付", desc: "安装全部元素，调校灯光后交付使用。" },
+      ],
+      faqs: [
+        { q: "已有湿厨房还需要干厨房吗？", a: "干厨房与湿厨房互补——准备饮品轻食不弄脏重油区。在开放式住宅中很流行，是与客人聚脚的地方。" },
+        { q: "干厨房翻新要多少钱？", a: "基础柜体与饰面从 RM 5,500 起。中岛、玻璃柜、酒架与照明按设计递增。" },
+        { q: "干厨房台面用什么材料好？", a: "没有重热负担时选择更广——无缝实心面材、石英石与高端饰面板都适合，按风格与预算定。" },
+        { q: "现有空间能加建干厨房吗？", a: "可以——干厨房常建在餐厅、宽走廊或客厅一角。主要需求是足够的插座与轻食使用的通风。" },
+      ],
+      metaTitle: "吉隆坡干厨房翻新 | 从RM5,500起",
+      metaDesc: "吉隆坡与雪兰莪现代干厨房：中岛、展示柜、酒架、氛围照明。从 RM 5,500 起。免费报价。",
+    }
+  },
+
+  "kitchen-renovation/kitchen-extension": {
+    ms: {
+      name: "Sambungan Dapur",
+      tagline: "Sambungan dapur belakang atau sisi dengan kerja bata, bumbung, kalis air dan panduan DBKL/MBSA jika diperlukan. Atas sebut harga.",
+      description:
+        "Dapur teres Malaysia sering terlalu kecil untuk keluarga besar — sambungan dapur ke ruang belakang atau sisi menambah kawasan yang benar-benar berguna. Kami mengendalikan sambungan dapur dari awal hingga akhir: kerja bata dan kolom, rangka dan penutup bumbung, lantai dan saliran, kalis air di kawasan terdedah, serta sambungan elektrik dan paip ke ruang baharu. Kerja sambungan biasanya memerlukan kelulusan pihak berkuasa tempatan — kami menyediakan panduan penyerahan DBKL/MBSA atau majlis yang berkenaan, tetapi kelulusan tertakluk kepada pihak berkuasa dan tidak dijamin. Semua sambungan dapur ditawarkan atas sebut harga selepas tinjauan tapak.",
+      highlights: [
+        "Sambungan dapur belakang atau sisi untuk rumah teres",
+        "Kerja bata, kolom dan bumbung sepenuhnya",
+        "Saliran lantai dan kalis air kawasan terdedah",
+        "Sambungan elektrik dan paip ke ruang baharu",
+        "Panduan penyerahan DBKL/MBSA disediakan",
+      ],
+      process: [
+        { step: "01", title: "Tinjauan & Kajian Kemungkinan", desc: "Kami mengkaji pelan rumah, sempadan dan ruang bersebelahan untuk menentukan pilihan sambungan." },
+        { step: "02", title: "Sebut Harga & Panduan Kelulusan", desc: "Sebut harga penuh disediakan bersama panduan penyerahan kepada pihak berkuasa tempatan yang berkenaan." },
+        { step: "03", title: "Kerja Struktur & Bumbung", desc: "Asas, kerja bata dan struktur dibina, diikuti rangka dan penutup bumbung yang sepadan dengan rumah." },
+        { step: "04", title: "M&E & Kemasan", desc: "Elektrik, paip, saliran, lantai dan kemasan disiapkan supaya dapur baharu siap digunakan." },
+      ],
+      faqs: [
+        { q: "Berapa kos sambungan dapur?", a: "Kos bergantung pada saiz, struktur, bumbung dan kerja M&E, jadi semua sambungan dapur ditawarkan atas sebut harga selepas tinjauan. Hubungi kami untuk anggaran khusus rumah anda." },
+        { q: "Adakah sambungan dapur memerlukan kelulusan?", a: "Ya, sambungan dapur biasanya memerlukan kelulusan pihak berkuasa tempatan seperti DBKL, MBSA atau majlis yang berkenaan. Kami menyediakan panduan penyerahan, tetapi kelulusan tidak dijamin dan tertakluk kepada keputusan pihak berkuasa." },
+        { q: "Berapa lama kerja sambungan dapur?", a: "Tempoh bergantung pada saiz sambungan, cuaca dan kelulusan. Kerja hanya bermula selepas semua kelulusan diperoleh, dan jadual terperinci disediakan dalam sebut harga." },
+        { q: "Bolehkah sambungan dapur untuk rumah berkongsi dinding?", a: "Rumah teres dan berkongsi dinding mempunyai pertimbangan sempadan dan jiran yang perlu dihormati. Kami mengkajar keperluan ini semasa tinjauan dan memastikan kerja mematuhi garis panduan yang berkenaan." },
+      ],
+      metaTitle: "Sambungan Dapur KL & Selangor | Atas Sebut Harga",
+      metaDesc: "Sambungan dapur belakang atau sisi di KL & Selangor: kerja bata, bumbung, saliran, kalis air dan panduan DBKL/MBSA. Atas sebut harga selepas tinjauan.",
+    },
+    zh: {
+      name: "厨房扩建",
+      tagline: "后部或侧面厨房扩建，含砌砖、屋顶、防水与 DBKL/MBSA 报批指引（如需）。依报价。",
+      description:
+        "马来西亚排屋的厨房常对大家庭来说太小——把厨房向后部或侧面扩建能增加真正实用的面积。我们全程负责厨房扩建：砌砖与柱梁、屋架与屋面、地面与排水、外露区域防水，以及水电接驳到新空间。扩建通常需地方当局批准——我们提供 DBKL/MBSA 或相关市议会的报批指引，但批准由当局决定，不予保证。所有厨房扩建在实地勘察后按报价施工。",
+      highlights: [
+        "排屋后部或侧面厨房扩建",
+        "砌砖、柱梁与屋顶完整施工",
+        "地面排水与外露区域防水",
+        "水电接驳至新空间",
+        "提供 DBKL/MBSA 报批指引",
+      ],
+      process: [
+        { step: "01", title: "勘察与可行性", desc: "研究房屋图纸、边界与相邻空间，确定扩建方案。" },
+        { step: "02", title: "报价与报批指引", desc: "提供完整报价以及向相关地方当局报批的指引。" },
+        { step: "03", title: "结构与屋顶", desc: "施工基础、砌砖与结构，随后搭建与房屋协调的屋架屋面。" },
+        { step: "04", title: "机电与饰面", desc: "完成水电、排水、地面与饰面，厨房即可使用。" },
+      ],
+      faqs: [
+        { q: "厨房扩建要多少钱？", a: "费用取决于规模、结构、屋顶与机电工程，因此所有厨房扩建均需勘察后按报价执行。欢迎联系我们获取专属估价。" },
+        { q: "厨房扩建需要审批吗？", a: "需要。厨房扩建通常需 DBKL、MBSA 或相关地方市议会批准。我们提供报批指引，但批准不予保证，由当局最终决定。" },
+        { q: "厨房扩建工期多久？", a: "视规模、天气与审批而定。所有批准取得后才开工，报价中附详细工期表。" },
+        { q: "共用墙排屋能扩建吗？", a: "排屋与共用墙住宅有边界与邻居因素需尊重。勘察时我们会研究这些要求，确保施工符合相关规范。" },
+      ],
+      metaTitle: "吉隆坡厨房扩建 | 排屋后厨房扩建",
+      metaDesc: "吉隆坡与雪兰莪厨房扩建：砌砖、屋顶、排水、防水与 DBKL/MBSA 报批指引。勘察后报价，WhatsApp咨询。",
+    }
+  },
+
+  "kitchen-renovation/kitchen-plumbing-and-electrical": {
+    ms: {
+      name: "Paip & Elektrik Dapur",
+      tagline: "Titik singki, dishwasher, penapis air, oven, hob, hood, power point 13A/15A tambahan dan pencahayaan LED. Dari RM 950.",
+      description:
+        "Dapur moden menggunakan lebih banyak air dan elektrik daripada dahulu — dishwasher, penapis air, oven, hob dan hood semuanya perlu titik masing-masing. Kami menyediakan kerja paip dan elektrik dapur secara menyeluruh: saluran air masuk dan keluar untuk singki dan dishwasher, titik penapis air, punca gas atau elektrik untuk hob, punca hood, power point 13A dan 15A untuk perkakasan berat, serta pencahayaan task dan ambient LED. Semua kerja dilakukan mengikut piawaian keselamatan dengan laluan wayar yang terancang di belakang kabinet. Harga bermula dari RM 950.",
+      highlights: [
+        "Titik air masuk dan keluar untuk singki dan dishwasher",
+        "Titik penapis air di lokasi yang mudah",
+        "Punca hob dan hood yang selamat",
+        "Power point 13A/15A untuk perkakasan berat",
+        "Pencahayaan task dan ambient LED dapur",
+      ],
+      process: [
+        { step: "01", title: "Pelancangan Titik", desc: "Kedudukan semua perkakasan dapur anda dirancang bersama susun atur kabinet." },
+        { step: "02", title: "Laluan & Bekalan", desc: "Laluan paip dan wayar dirancang di belakang kabinet untuk paparan yang bersih dan selamat." },
+        { step: "03", title: "Pemasangan Titik", desc: "Titik air, saluran dan punca elektrik dipasang mengikut piawaian keselamatan." },
+        { step: "04", title: "Ujian & Serahan", desc: "Semua titik diuji — tekanan air, saliran dan beban elektrik — sebelum dapur diserahkan." },
+      ],
+      faqs: [
+        { q: "Apakah perbezaan power point 13A dan 15A?", a: "13A sesuai untuk kebanyakan perkakasan dapur seperti blender dan microwave. Perkakasan berat seperti oven dan hob elektrik memerlukan punca 15A tersendiri kerana arus yang lebih tinggi — kami memasang mengikut keperluan perkakasan anda." },
+        { q: "Berapa kos kerja paip dan elektrik dapur?", a: "Harga bermula dari RM 950 untuk pakej asas. Kos bergantung pada bilangan titik air dan elektrik serta kerja laluan yang diperlukan di belakang kabinet." },
+        { q: "Bolehkah titik ditambah selepas kabinet dipasang?", a: "Penambahan selepas kabinet dipasang adalah mungkin tetapi lebih sukar dan mahal kerana laluan perlu dibuka. Perancangan titik bersama reka bentuk kabinet adalah jauh lebih efisien." },
+        { q: "Adakah dishwasher perlu titik khas?", a: "Dishwasher memerlukan saluran air masuk, saliran dan punca elektrik yang betul. Semasa pengubahsuaian dapur, kami mengalirkan ketiga-tiganya ke lokasi dishwasher yang dirancang." },
+      ],
+      metaTitle: "Paip & Elektrik Dapur KL & Selangor | Dari RM950",
+      metaDesc: "Kerja paip dan elektrik dapur di KL & Selangor: titik singki, dishwasher, penapis air, hob, hood, power point 13A/15A. Dari RM 950. Sebut harga percuma.",
+    },
+    zh: {
+      name: "厨房水电",
+      tagline: "水槽、洗碗机、净水器点位、烤箱、灶具、油烟机、新增 13A/15A 插座与 LED 照明。从 RM 950 起。",
+      description:
+        "现代厨房用水用电比以往更多——洗碗机、净水器、烤箱、灶具与油烟机都需要各自的点位。我们提供厨房水电整体施工：水槽与洗碗机的进排水、净水器点位、灶具的燃气或电源、油烟机电源、大功率电器的 13A/15A 插座，以及任务与氛围 LED 照明。所有工程按安全标准执行，线路走在柜后整齐规划。价格从 RM 950 起。",
+      highlights: [
+        "水槽与洗碗机进排水点位",
+        "净水器点位设在顺手位置",
+        "安全的灶具与油烟机电源",
+        "大功率电器的 13A/15A 插座",
+        "厨房任务与氛围 LED 照明",
+      ],
+      process: [
+        { step: "01", title: "点位规划", desc: "结合橱柜布局规划所有厨房电器的位置。" },
+        { step: "02", title: "路由与敷设", desc: "水管电线规划在柜后，安全又美观。" },
+        { step: "03", title: "点位安装", desc: "按安全标准安装水路、排水与电源点位。" },
+        { step: "04", title: "测试与交付", desc: "交付前测试水压、排水与电路负载。" },
+      ],
+      faqs: [
+        { q: "13A 和 15A 插座有什么区别？", a: "13A 适合搅拌机、微波炉等大多数厨房电器。烤箱与电灶等大功率电器需专用 15A 回路——我们按电器需求配置。" },
+        { q: "厨房水电要多少钱？", a: "基础套餐从 RM 950 起。费用取决于水电气点位数量与柜后敷设工程量。" },
+        { q: "装完橱柜还能加点位吗？", a: "可以但更难更贵，因为要开走线路径。与橱柜设计同步规划点位效率高得多。" },
+        { q: "洗碗机需要专用点位吗？", a: "需要。洗碗机要进水、排水与正确电源。厨房翻新时我们会把三项都引到规划位置。" },
+      ],
+      metaTitle: "吉隆坡厨房水电 | 从RM950起",
+      metaDesc: "吉隆坡与雪兰莪厨房水电：水槽、洗碗机、净水器、灶具、油烟机、13A/15A 插座与 LED。从 RM 950 起。免费报价。",
+    }
+  },
+
+  /* ── BATHROOM RENOVATION — Session 12 native specialty rollout ───────── */
+  "bathroom-renovation/toilet-renovation": {
+    ms: {
+      name: "Pengubahsuaian Tandas",
+      tagline: "Pengubahsuaian tandas dan WC kecil: penggantian WC, jubin dinding dan lantai, paip dan pengudaraan. Dari RM 4,500.",
+      description:
+        "Tandas kecil mempunyai keperluan berbeza daripada bilik mandi penuh — ruang terhad menjadikan setiap inci penting, dan pengudaraan yang lemah menyebabkan bau dan kulat. Kami mengubah suai tandas dan WC kecil dengan perancangan ruang yang bijak: penggantian WC dengan model jimat air, jubin dinding dan lantai yang cerah untuk rasa lebih luas, kemasan sanitari yang padat, serta peningkatan pengudaraan dengan ekzos yang betul. Semua kerja paip disemak dan diganti jika perlu semasa tandas dibuka. Harga bermula dari RM 4,500.",
+      highlights: [
+        "Penggantian WC dengan model jimat air",
+        "Jubin cerah yang menjadikan ruang kecil kelihatan luas",
+        "Perancangan ruang yang bijak untuk tandas kecil",
+        "Pengudaraan ekzos yang betul untuk halau bau",
+        "Paip lama disemak dan diganti semasa kerja",
+      ],
+      process: [
+        { step: "01", title: "Ukuran & Perancangan", desc: "Ukuran tepat diambil dan susun atur sanitari dirancang untuk ruang kecil." },
+        { step: "02", title: "Perobohan & Paip", desc: "Sanitari lama ditanggalkan, saluran paip disemak dan titik baharu disediakan." },
+        { step: "03", title: "Kalis Air & Jubin", desc: "Kalis air disapu di kawasan basah sebelum jubin dinding dan lantai dipasang." },
+        { step: "04", title: "Sanitari & Pengudaraan", desc: "WC baharu dipasang, ekzos dan aksesori dipasang, dan tandas diserahkan bersih." },
+      ],
+      faqs: [
+        { q: "Berapa kos mengubah suai tandas kecil?", a: "Harga bermula dari RM 4,500 untuk tandas/WC kecil termasuk penggantian WC, jubin dan kerja paip asas. Pilihan sanitari premium menaikkan kos mengikut model." },
+        { q: "Berapa lama pengubahsuaian tandas mengambil masa?", a: "Tandas kecil biasanya siap dalam kira-kira seminggu kerja termasuk kalis air dan masa jubin mengering. Rumah kekal boleh digunakan dengan tandas kedua atau alternatif sementara." },
+        { q: "Adakah WC jimat air berbaloi?", a: "WC dua-flush moden menggunakan air jauh lebih sedikit setiap flush berbanding model lama. Untuk keluarga, penjimatan air bermakna kos pengubahsuaian berbaloi dari semasa ke semasa." },
+        { q: "Tandas tanpa tingkap boleh di ventilasi bagaimana?", a: "Kipas ekzos yang bersaiz betul dan dipasang dengan saluran keluar yang betul menyelesaikan masalah bau dan lembapan. Kami memasang ekzos dengan timer atau suis berasingan supaya ia berjalan selepas guna." },
+      ],
+      metaTitle: "Pengubahsuaian Tandas KL & Selangor | Dari RM4,500",
+      metaDesc: "Ubah suai tandas kecil di KL & Selangor: ganti WC, jubin, paip dan pengudaraan. Dari RM 4,500. Ruang kecil dirancang bijak. Sebut harga percuma.",
+    },
+    zh: {
+      name: "厕所翻新",
+      tagline: "小型厕所/WC 翻新：马桶更换、墙地贴砖、水管与通风。从 RM 4,500 起。",
+      description:
+        "小厕所与完整卫生间的需求不同——空间有限，每寸都重要；通风不好则易有异味与霉菌。我们用巧妙的布局翻新小型厕所与 WC：换成节水马桶、用明亮瓷砖营造宽敞感、配置紧凑的洁具，并配正确的排气扇改善通风。施工期间同步检查并按需更换旧水管。价格从 RM 4,500 起。",
+      highlights: [
+        "更换节水型马桶",
+        "明亮瓷砖让小空间显大",
+        "小厕所的巧妙布局规划",
+        "正确的排气通风除异味",
+        "施工时同步检查更换旧水管",
+      ],
+      process: [
+        { step: "01", title: "测量与规划", desc: "精确测量，为小空间规划洁具布局。" },
+        { step: "02", title: "拆除与水管", desc: "拆除旧洁具，检查管路并布好新点位。" },
+        { step: "03", title: "防水与贴砖", desc: "湿区先做防水，再贴墙地砖。" },
+        { step: "04", title: "洁具与通风", desc: "安装新马桶、排气扇与配件，清洁交付。" },
+      ],
+      faqs: [
+        { q: "小厕所翻新要多少钱？", a: "小厕所/WC 从 RM 4,500 起，含马桶更换、贴砖与基础水路。高端洁具按型号加价。" },
+        { q: "厕所翻新工期要多久？", a: "小厕所含防水与贴砖养护通常约一周完工。家中有第二卫生间或临时替代方案时生活不受影响。" },
+        { q: "节水马桶值得吗？", a: "现代双冲水马桶每次冲水量远低于旧款。对家庭来说，节水让翻新成本随时间摊还。" },
+        { q: "无窗厕所怎么通风？", a: "尺寸正确、配规范排气管的排气扇能解决异味与潮湿。我们会加装带定时或独立开关的排气扇。" },
+      ],
+      metaTitle: "吉隆坡厕所翻新 | 从RM4,500起",
+      metaDesc: "吉隆坡与雪兰莪小厕所翻新：换马桶、贴砖、水管与通风。从 RM 4,500 起。小空间巧布局，免费报价。",
+    }
+  },
+
+  "bathroom-renovation/bathroom-makeover": {
+    ms: {
+      name: "Makeover Bilik Mandi",
+      tagline: "Makeover kosmetik tanpa pemecahan besar: jubin semula, vaniti baharu, pancuran dan naik taraf pencahayaan. Dari RM 5,500.",
+      description:
+        "Tidak semua bilik mandi perlu dirobohkan sepenuhnya — jika struktur dan paip masih baik, makeover kosmetik memberikan wajah baharu dengan kos dan gangguan yang jauh lebih rendah. Makeover kami merangkumi jubin semula di permukaan utama, vaniti dan besen baharu, set pancuran dan pemanas air yang dinaik taraf, cermin dan kabinet dinding, pencahayaan LED yang lebih terang, serta aksesori yang dipadankan. Kerja dijalankan tanpa pemecahan dinding besar supaya habuk dan tempoh kerja terkawal. Harga bermula dari RM 5,500.",
+      highlights: [
+        "Wajah baharu tanpa pemecahan besar",
+        "Vaniti, besen dan set pancuran baharu",
+        "Pencahayaan LED yang lebih terang",
+        "Cermin, kabinet dan aksesori dipadankan",
+        "Kos dan gangguan jauh lebih rendah",
+      ],
+      process: [
+        { step: "01", title: "Penilaian & Skop", desc: "Kami menilai keadaan sedia ada dan mengesahkan struktur dan paip sesuai untuk makeover tanpa pecah." },
+        { step: "02", title: "Pemilihan Kelengkapan", desc: "Vaniti, pancuran, cermin dan aksesori dipilih mengikut gaya dan bajet anda." },
+        { step: "03", title: "Kerja Kosmetik", desc: "Jubin semula dipasang, kelengkapan baharu dipasang dan pencahayaan dinaik taraf." },
+        { step: "04", title: "Penamat & Serahan", desc: "Silikon dan grout dikemas, aksesori dipasang dan bilik mandi diserahkan siap guna." },
+      ],
+      faqs: [
+        { q: "Bilakah makeover cukup berbanding pengubahsuaian penuh?", a: "Jika paip masih berfungsi baik, tiada kebocoran dan susun atur sedia ada boleh diterima, makeover kosmetik cukup. Jika ada kebocoran, paip lama atau anda mahu ubah kedudukan sanitari, pengubahsuaian penuh lebih berbaloi." },
+        { q: "Berapa kos makeover bilik mandi?", a: "Harga bermula dari RM 5,500 bergantung pada kelengkapan yang dipilih. Makeup kekal jauh lebih murah daripada pengubahsuaian penuh yang melibatkan pemecahan dan kerja paip besar." },
+        { q: "Berapa lama makeover bilik mandi mengambil masa?", a: "Tanpa pemecahan besar, makeover biasanya siap dalam beberapa hari hingga seminggu — jauh lebih pantas daripada pengubahsuaian penuh yang mengambil masa untuk kalis air dan screed." },
+        { q: "Bolehkah jubin dipasang atas jubin lama?", a: "Pemasangan jubin atas jubin lama mungkin jika jubin sedia ada masih melekat kukuh dan rata. Ia menjimatkan masa pemecahan tetapi menaikkan aras lantai sedikit — kami periksa kesesuaian semasa penilaian." },
+      ],
+      metaTitle: "Makeover Bilik Mandi KL & Selangor | Dari RM5,500",
+      metaDesc: "Makeover bilik mandi tanpa pemecahan besar di KL & Selangor: jubin semula, vaniti, pancuran dan pencahayaan. Dari RM 5,500. Sebut harga percuma.",
+    },
+    zh: {
+      name: "卫生间改造",
+      tagline: "不大拆的表面改造：重新贴砖、新浴室柜、花洒与照明升级。从 RM 5,500 起。",
+      description:
+        "不是每个卫生间都要全拆——结构与管道还好的话，表面改造能以低得多的成本与干扰换新颜。我们的改造涵盖主要面重新贴砖、新浴室柜与台盆、升级的花洒与热水器、镜柜、更明亮的 LED 照明，以及配套五金配件。施工无需大范围砸墙，粉尘与工期都可控。价格从 RM 5,500 起。",
+      highlights: [
+        "不大拆也能焕然一新",
+        "新浴室柜、台盆与花洒",
+        "更明亮的 LED 照明",
+        "镜柜与五金配套协调",
+        "成本与干扰大幅降低",
+      ],
+      process: [
+        { step: "01", title: "评估与范围", desc: "评估现状，确认结构与管道适合免砸改造。" },
+        { step: "02", title: "选择洁具", desc: "按风格与预算挑选浴室柜、花洒、镜子与配件。" },
+        { step: "03", title: "表面施工", desc: "重新贴砖、安装新洁具并升级照明。" },
+        { step: "04", title: "收口与交付", desc: "美缝硅胶收口，安装配件后交付使用。" },
+      ],
+      faqs: [
+        { q: "什么时候改造就够了，不用全翻？", a: "管道正常、无渗漏、布局可接受时，表面改造就够。若有渗漏、旧管或想改洁具位置，全面翻新更划算。" },
+        { q: "卫生间改造要多少钱？", a: "价格从 RM 5,500 起，视所选洁具而定。比涉及拆除与大水路工程的全翻便宜得多。" },
+        { q: "改造工期多久？", a: "不大拆的改造通常几天到一周完成——远快于需防水与砂浆养护的全翻。" },
+        { q: "旧砖上能直接贴新砖吗？", a: "旧砖牢固平整时可以。省去拆砖时间但地面标高略升——评估时我们会核实可行性。" },
+      ],
+      metaTitle: "吉隆坡卫生间改造 | 从RM5,500起",
+      metaDesc: "吉隆坡与雪兰莪卫生间表面改造：重新贴砖、浴室柜、花洒与照明升级。从 RM 5,500 起。免费报价。",
+    }
+  },
+
+  "bathroom-renovation/shower-area-renovation": {
+    ms: {
+      name: "Pengubahsuaian Kawasan Pancuran",
+      tagline: "Binaan semula kawasan pancuran: kalis air, jubin anti-gelincir, pancuran hujan, skrin kaca dan niche. Dari RM 2,800.",
+      description:
+        "Kawasan pancuran ialah zon paling basah di rumah — dan zon yang paling memerlukan kerja yang betul. Kami membina semula kawasan pancuran dengan sistem kalis air penuh, jubin lantai anti-gelincir dengan cerun yang tepat ke saluran, set pancuran hujan atau pancuran tangan, skrin kaca frameless atau semi-frameless, dan niche tersembunyi untuk syampu dan sabun. Saluran linear atau titik saliran dipilih mengikut reka bentuk, dan semua penembusan paip diberi tetulang kalis air tambahan. Harga bermula dari RM 2,800.",
+      highlights: [
+        "Sistem kalis air penuh untuk zon paling basah",
+        "Jubin anti-gelincir dengan cerun tepat",
+        "Pancuran hujan atau pancuran tangan",
+        "Skrin kaca frameless atau semi-frameless",
+        "Niche tersembunyi untuk simpanan syampu",
+      ],
+      process: [
+        { step: "01", title: "Reka Bentuk & Saliran", desc: "Kedudukan pancuran, saluran dan niche dirancang dengan cerun lantai yang betul." },
+        { step: "02", title: "Kalis Air Berlapis", desc: "Sistem kalis air penuh disapu dengan tetulang di penembusan paip dan sudut pancuran." },
+        { step: "03", title: "Jubin & Niche", desc: "Jubin anti-gelincir dipasang dengan niche terbina dalam dan trim yang kemas." },
+        { step: "04", title: "Pancuran & Skrin", desc: "Set pancuran dan skrin kaca dipasang dan diuji bersama anda sebelum serahan." },
+      ],
+      faqs: [
+        { q: "Berapa kos membina semula kawasan pancuran?", a: "Harga bermula dari RM 2,800 untuk pembinaan semula kawasan pancuran dengan kalis air, jubin dan set pancuran. Skrin kaca dan niche menambah kos mengikut saiz dan reka bentuk." },
+        { q: "Pancuran hujan perlukan tekanan air tinggi?", a: "Pancuran hujan besar memerlukan aliran air yang cukup untuk pengalaman yang selesa. Semasa tinjauan kami memeriksa tekanan dan aliran rumah anda dan mencadangkan saiz kepala pancuran yang sesuai." },
+        { q: "Saliran linear atau titik saliran lebih baik?", a: "Saliran linear kelihatan moden dan membolehkan jubin besar dengan cerun satu arah; titik saliran lebih ekonomi dan sesuai untuk bilik kecil. Kedua-duanya berkesan jika cerun dibuat betul." },
+        { q: "Adakah skrin kaca selamat untuk keluarga?", a: "Kami menggunakan kaca temperaed dengan ketebalan yang betul yang pecah kepada serpihan kecil jika rosak. Bagi keluarga dengan orang tua, combo pancuran + tab dengan bar pemegang boleh ditambah." },
+      ],
+      metaTitle: "Pengubahsuaian Kawasan Pancuran KL | Dari RM2,800",
+      metaDesc: "Bina semula kawasan pancuran di KL & Selangor: kalis air, jubin anti-gelincir, pancuran hujan, skrin kaca, niche. Dari RM 2,800. Sebut harga percuma.",
+    },
+    zh: {
+      name: "淋浴区翻新",
+      tagline: "淋浴区重建：防水、防滑地砖、雨淋花洒、玻璃屏与壁龛。从 RM 2,800 起。",
+      description:
+        "淋浴区是家里最湿的区域——也是最需要正确施工的地方。我们重建淋浴区：完整防水系统、坡度精准排水的防滑地砖、雨淋或手持花洒、无框或半框玻璃屏，以及隐藏式洗发用品壁龛。线性地漏或点式地漏按设计选择，所有管道穿透处额外加强防水。价格从 RM 2,800 起。",
+      highlights: [
+        "最湿区域的完整防水系统",
+        "坡度精准的防滑地砖",
+        "雨淋或手持花洒可选",
+        "无框或半框玻璃屏",
+        "隐藏式洗浴用品壁龛",
+      ],
+      process: [
+        { step: "01", title: "设计与排水", desc: "规划花洒、地漏与壁龛位置，做好地面坡度。" },
+        { step: "02", title: "多层防水", desc: "涂刷完整防水系统，管口与淋浴区转角加强。" },
+        { step: "03", title: "贴砖与壁龛", desc: "铺贴防滑砖，砌筑内置壁龛并细致收边。" },
+        { step: "04", title: "花洒与屏风", desc: "安装花洒与玻璃屏，与您一起测试后交付。" },
+      ],
+      faqs: [
+        { q: "淋浴区重建要多少钱？", a: "含防水、贴砖与花洒的淋浴区重建从 RM 2,800 起。玻璃屏与壁龛按尺寸与设计另计。" },
+        { q: "雨淋花洒需要高水压吗？", a: "大雨淋花洒需要足够流量才有舒适体验。勘察时我们会检查家里的水压水量，推荐合适的喷头尺寸。" },
+        { q: "线性地漏和点式地漏哪个好？", a: "线性地漏现代，可配大砖单向找坡；点式地漏经济，适合小卫生间。坡度做对，两种都好用。" },
+        { q: "玻璃屏对家庭安全吗？", a: "我们使用厚度达标的钢化玻璃，万一破损呈小颗粒状。家有老人可加装扶手组合。" },
+      ],
+      metaTitle: "吉隆坡淋浴区翻新 | 从RM2,800起",
+      metaDesc: "吉隆坡与雪兰莪淋浴区重建：防水、防滑砖、雨淋花洒、玻璃屏、壁龛。从 RM 2,800 起。免费报价。",
+    }
+  },
+
+  "bathroom-renovation/bathroom-tiling": {
+    ms: {
+      name: "Jubin Bilik Mandi",
+      tagline: "Jubin dinding dan lantai bilik mandi dengan corak lurus, brick-bond atau herringbone dan grout epoxy. Dari RM 16 / kaki persegi.",
+      description:
+        "Jubin menentukan watak bilik mandi — dan corak susunan memberikan perbezaan besar. Kami memasang jubin dinding dan lantai bilik mandi dalam corak lurus yang bersih, brick-bond yang klasik atau herringbone yang berstatement, dengan grout epoxy yang tahan kotoran dan kulat di kawasan kerap basah. Perhatian khusus diberikan kepada cerun lantai ke saluran, pemotongan kemas di penjuru dan longkang, serta trim dan silikon di semua pertemuan permukaan. Jubin anti-gelincir sentiasa digalakkan untuk lantai bilik mandi. Harga bermula dari RM 16 / kaki persegi.",
+      highlights: [
+        "Corak lurus, brick-bond dan herringbone",
+        "Grout epoxy tahan kotoran dan kulat",
+        "Cerun lantai yang betul ke arah saluran",
+        "Pemotongan kemas di penjuru dan longkang",
+        "Jubin anti-gelincir untuk lantai bilik mandi",
+      ],
+      process: [
+        { step: "01", title: "Pemilihan Corak", desc: "Corak susunan dan jubin dipilih bersama mengikut saiz dan gaya bilik mandi anda." },
+        { step: "02", title: "Penyediaan & Cerun", desc: "Permukaan disediakan dan lantai diberi cerun yang tepat ke arah saluran sebelum jubin." },
+        { step: "03", title: "Pemasangan", desc: "Jubin dipasang mengikut corak dipilih dengan semakan aras dan pemadanan yang berterusan." },
+        { step: "04", title: "Grout Epoxy & Silikon", desc: "Grout epoxy dipasang dengan silikon anti-kulat di pertemuan dinding-lantai dan penjuru." },
+      ],
+      faqs: [
+        { q: "Apakah corak paling sesuai untuk bilik mandi kecil?", a: "Corak lurus dengan jubin bersaiz sederhana membuatkan bilik kecil kelihatan lebih besar dan kurang potongan. Herringbone cantik tetapi menghasilkan lebih banyak potongan — lebih sesuai untuk dinding aksen." },
+        { q: "Berapa kos jubin bilik mandi?", a: "Harga bermula dari RM 16 / kaki persegi termasuk pemasangan. Corak herringbone dan jubin besar memerlukan lebih banyak kerja pemotongan dan dihargai berbeza." },
+        { q: "Mengapa grout epoxy disyorkan untuk bilik mandi?", a: "Grout epoxy tidak menyerap air dan menahan kulat dan kotoran — sangat penting di kawasan kerap basah. Ia lebih mahal daripada grout simen tetapi kekal bersih jauh lebih lama." },
+        { q: "Berapa tinggi jubin dinding patut dipasang?", a: "Untuk kawasan pancuran, liputan penuh hingga siling disyorkan. Untuk bahagian lain bilik mandi, ketinggian 1.2m hingga 2m adalah lazim bergantung pada reka bentuk dan kabinet vaniti." },
+      ],
+      metaTitle: "Jubin Bilik Mandi KL & Selangor | Dari RM16/kaki²",
+      metaDesc: "Jubin bilik mandi di KL & Selangor: corak lurus, brick-bond, herringbone dengan grout epoxy. Dari RM 16/kaki persegi. Sebut harga percuma.",
+    },
+    zh: {
+      name: "卫生间贴砖",
+      tagline: "卫生间墙地贴砖，直铺、工字或人字拼，环氧美缝。从 RM 16 / 平方英尺 起。",
+      description:
+        "瓷砖决定卫生间的气质——铺贴纹路更会带来大不同。我们铺贴卫生间墙地砖：整洁的直铺、经典的工字拼或个性的人字拼，常湿区域使用抗污防霉的环氧美缝。我们特别关注地面朝地漏的坡度、转角与地漏处的精细切割，以及所有交界面的收边条与硅胶。卫生间地面始终建议用防滑砖。价格从 RM 16 / 平方英尺 起。",
+      highlights: [
+        "直铺、工字拼与人字拼可选",
+        "抗污防霉的环氧美缝",
+        "地面按正确坡度排向地漏",
+        "转角与地漏处精细切割",
+        "卫生间地面建议防滑砖",
+      ],
+      process: [
+        { step: "01", title: "选纹路", desc: "按卫生间大小与风格共同选砖与铺法。" },
+        { step: "02", title: "基层与坡度", desc: "处理基层，贴砖前把地面坡度做准。" },
+        { step: "03", title: "铺贴", desc: "按选定的纹路铺贴，持续复核标高与对纹。" },
+        { step: "04", title: "环氧美缝与硅胶", desc: "做环氧美缝，墙地交界与转角打防霉硅胶。" },
+      ],
+      faqs: [
+        { q: "小卫生间适合什么铺法？", a: "中等尺寸的直铺让小空间显大、切割少。人字拼好看但切割多——更适合做点缀墙。" },
+        { q: "卫生间贴砖要多少钱？", a: "含安装从 RM 16 / 平方英尺 起。人字拼与大砖切割量大，计价不同。" },
+        { q: "卫生间为什么推荐环氧美缝？", a: "环氧美缝不吸水、抗霉菌污垢——常湿区域至关重要。比水泥美缝贵，但洁净持久得多。" },
+        { q: "墙面瓷砖要贴多高？", a: "淋浴区建议贴到顶。其他区域常见 1.2 米至 2 米，视设计与浴室柜位置而定。" },
+      ],
+      metaTitle: "吉隆坡卫生间贴砖 | 从RM16/尺²起",
+      metaDesc: "吉隆坡与雪兰莪卫生间贴砖：直铺、工字、人字拼，环氧美缝。从 RM 16/平方英尺 起。免费报价。",
+    }
+  },
+
+  "bathroom-renovation/bathroom-plumbing": {
+    ms: {
+      name: "Paip Bilik Mandi",
+      tagline: "Ubah hala paip panas dan sejuk, penggantian floor trap, pembetulan saliran dan ujian tekanan. Dari RM 850.",
+      description:
+        "Paip bilik mandi yang betul tidak kelihatan — tetapi kesannya dirasa setiap hari: tekanan pancuran yang konsisten, saliran yang laju dan tiada bau dari floor trap. Kami mengendalikan kerja paip bilik mandi sepenuhnya: ubah hala paip air panas dan sejuk semasa pengubahsuaian, penggantian floor trap yang bocor atau bau, pembetulan cerun saliran yang menyebabkan air bertakung, serta pemasangan paip baharu dengan ujian tekanan sebelum penutupan. Semua sambungan menggunakan bahan yang sesuai untuk air panas dan sejuk. Harga bermula dari RM 850.",
+      highlights: [
+        "Ubah hala paip air panas dan sejuk",
+        "Penggantian floor trap yang bocor atau bau",
+        "Pembetulan cerun saliran yang bertakung",
+        "Ujian tekanan sebelum penutupan",
+        "Bahan sesuai untuk paip air panas",
+      ],
+      process: [
+        { step: "01", title: "Diagnosis & Pelan", desc: "Sistem paip sedia ada diperiksa dan pelan ubah hala atau penggantian dirancang." },
+        { step: "02", title: "Kerja Paip", desc: "Paip baharu dialirkan di dinding atau lantai dengan sambungan yang betul untuk panas dan sejuk." },
+        { step: "03", title: "Floor Trap & Saliran", desc: "Floor trap diganti dan saliran diperiksa dengan ujian air untuk pembuangan yang laju." },
+        { step: "04", title: "Ujian Tekanan & Serahan", desc: "Ujian tekanan dijalankan pada semua saluran baharu sebelum dinding dan lantai ditutup." },
+      ],
+      faqs: [
+        { q: "Mengapa floor trap bilik mandi berbau?", a: "Floor trap lama kehilangan water seal-nya apabila retak atau apabila paip saluran tidak dimasukkan betul, membenarkan gas saluran naik ke bilik mandi. Penggantian dengan trap berkualiti dan sambungan yang betul menyelesaikan masalah ini." },
+        { q: "Berapa kos kerja paip bilik mandi?", a: "Harga bermula dari RM 850 untuk kerja paip asas seperti penggantian floor trap. Ubah hala paip penuh semasa pengubahsuaian dihargai mengikut bilangan titik dan kerja belakang dinding." },
+        { q: "Adakah paip air panas perlukan bahan berbeza?", a: "Ya — paip dan sambungan untuk air panas mesti diberi rating suhu yang sesuai. Penggunaan paip biasa pada saluran panas menyebabkan kebocoran awal dan kerosakan sambungan." },
+        { q: "Bilakah masa terbaik menukar paip bilik mandi?", a: "Semasa pengubahsuaian apabila dinding dan lantai dibuka — kos membuka dan menutup semula jauh lebih tinggi daripada kerja paip itu sendiri. Jika paip sudah bocor, jangan tunggu pengubahsuaian untuk membaikinya." },
+      ],
+      metaTitle: "Paip Bilik Mandi KL & Selangor | Dari RM850",
+      metaDesc: "Kerja paip bilik mandi di KL & Selangor: ubah hala paip panas/sejuk, ganti floor trap, pembetulan saliran, ujian tekanan. Dari RM 850. Sebut harga percuma.",
+    },
+    zh: {
+      name: "卫生间水管",
+      tagline: "冷热水管改道、地漏更换、排水修正与打压测试。从 RM 850 起。",
+      description:
+        "好的卫生间管道看不见——但效果天天感受得到：稳定的花洒水压、顺畅的排水、地漏不返味。我们全面负责卫生间水路：翻新时冷热水管改道、更换漏水或返味的地漏、修正积水的排水坡度，新管封墙前先做打压测试。所有接头使用适合冷热水的管材。价格从 RM 850 起。",
+      highlights: [
+        "冷热水管改道",
+        "更换漏水或返味的地漏",
+        "修正积水的排水坡度",
+        "封墙前打压测试",
+        "热水管使用耐温管材",
+      ],
+      process: [
+        { step: "01", title: "诊断与方案", desc: "检查现有管路，规划改道或更换方案。" },
+        { step: "02", title: "管道施工", desc: "新管沿墙面或地面敷设，冷热水接头正确选材。" },
+        { step: "03", title: "地漏与排水", desc: "更换地漏并做通水试验，确保排水顺畅。" },
+        { step: "04", title: "打压与交付", desc: "新管路在封墙封地前完成打压测试。" },
+      ],
+      faqs: [
+        { q: "地漏为什么会返味？", a: "旧地漏开裂或排水管接入不当时，水封失效，管道气体就会升上卫生间。更换优质地漏并正确接管即可解决。" },
+        { q: "卫生间水路要多少钱？", a: "换地漏等基础工程从 RM 850 起。翻新中的整管改道按点位数与墙体工程计价。" },
+        { q: "热水管要用不同材料吗？", a: "要——热水管与接头必须有相应耐温等级。普通管走热水会提前漏损、接头老化。" },
+        { q: "什么时候换管最合适？", a: "翻新打开墙地面时最合适——单为换管而开墙封墙的成本远超水管本身。但若已漏水，别等翻新，立即修。" },
+      ],
+      metaTitle: "吉隆坡卫生间水管 | 从RM850起",
+      metaDesc: "吉隆坡与雪兰莪卫生间水路：冷热水管改道、换地漏、排水修正、打压测试。从 RM 850 起。免费报价。",
+    }
+  },
+
+  "bathroom-renovation/sanitary-installation": {
+    ms: {
+      name: "Pemasangan Sanitari",
+      tagline: "Pemasangan WC, besen, kabinet vaniti, set pancuran, pancuran hujan, tab mandi dan aksesori. Dari RM 650.",
+      description:
+        "Pemasangan sanitari yang tepat menentukan seberapa lama ia berfungsi tanpa masalah — WC yang tidak dimeterai betul akan berdenyut, dan besen yang tidak disokong betul akan longgar. Kami memasang pelbagai sanitari: WC duduk atau squat, besen atas kaunter atau pedestal, kabinet vaniti dengan besen, set pancuran dan pancuran hujan, tab mandi serta aksesori seperti towel rail, paper holder dan mirror. Setiap pemasangan menggunakan perkakasan dan penebet yang betul untuk jenis dinding — konkrit, tile atau gypsum. Harga bermula dari RM 650.",
+      highlights: [
+        "WC, besen, vaniti, set pancuran dan tab mandi",
+        "Meterai dan sambungan yang betul dari hari pertama",
+        "Perkakasan sesuai untuk dinding konkrit, tile atau gypsum",
+        "Aksesori dipasang dengan aras yang konsisten",
+        "Ujian guna penuh selepas setiap pemasangan",
+      ],
+      process: [
+        { step: "01", title: "Semakan Titik", desc: "Titik air, saliran dan dinding disemak untuk memastikan sanitari baharu sesuai." },
+        { step: "02", title: "Pemasangan & Meterai", desc: "Sanitari dipasang dengan meterai dan sambungan yang betul untuk kebocoran sifar." },
+        { step: "03", title: "Aksesori & Larasan", desc: "Aksesori dipasang pada aras yang selesa dan konsisten mengikut pengguna bilik." },
+        { step: "04", title: "Ujian & Serahan", desc: "Setiap unit diuji — flush, tap, pancuran — sebelum serahan kepada anda." },
+      ],
+      faqs: [
+        { q: "Berapa kos pemasangan sanitari?", a: "Harga bermula dari RM 650 untuk pemasangan set asas. Set lengkap dengan vaniti, pancuran hujan dan aksesori dihargai mengikut bilangan item dan kerja dinding." },
+        { q: "Bolehkah saya beli sanitari sendiri dan anda pasang?", a: "Boleh — kami kerap memasang sanitari yang dibeli pelanggan sendiri. Kami semak spesifikasi item dengan titik air sedia ada supaya tiada kejutan semasa pemasangan." },
+        { q: "Adakah WC saya perlu ditukar jika hanya bocor sikit?", a: "Tidak semestinya — kebocoran di pangkal WC selalunya boleh dibaiki dengan meterai wax atau flapper baharu. Kami diagnosis dahulu dan hanya ganti jika badan WC sendiri sudah retak." },
+        { q: "Berapa lama pemasangan sanitari mengambil masa?", a: "Pemasangan satu atau dua item seperti WC dan besen siap dalam beberapa jam. Set bilik mandi penuh dengan vaniti, pancuran dan aksesori mengambil sehingga satu hari kerja." },
+      ],
+      metaTitle: "Pemasangan Sanitari KL & Selangor | Dari RM650",
+      metaDesc: "Pemasangan sanitari di KL & Selangor: WC, besen, vaniti, set pancuran, tab mandi dan aksesori. Dari RM 650. Sebut harga percuma.",
+    },
+    zh: {
+      name: "洁具安装",
+      tagline: "马桶、台盆、浴室柜、花洒套装、雨淋、浴缸与配件安装。从 RM 650 起。",
+      description:
+        "洁具装得对不对，决定它能无故障用多久——密封不到位的马桶会渗漏，支撑不当的台盆会松动。我们安装各类洁具：坐便或蹲便、台上/立柱盆、带盆浴室柜、花洒与雨淋套装、浴缸，以及毛巾架、纸架、镜子等配件。每种安装都根据墙体类型——混凝土、瓷砖或石膏板——使用正确的五金与紧固件。价格从 RM 650 起。",
+      highlights: [
+        "马桶、台盆、浴室柜、花洒与浴缸",
+        "第一天起就密封与接驳正确",
+        "五金适配混凝土、瓷砖或石膏板墙",
+        "配件安装高度一致舒适",
+        "每件安装后全面试用测试",
+      ],
+      process: [
+        { step: "01", title: "点位核查", desc: "核对水位、排水与墙体，确保新洁具适配。" },
+        { step: "02", title: "安装与密封", desc: "正确密封接驳安装洁具，杜绝渗漏。" },
+        { step: "03", title: "配件与调校", desc: "按使用者习惯把配件装在舒适一致的高度。" },
+        { step: "04", title: "测试与交付", desc: "每件洁具——冲水、龙头、花洒——测试后交付。" },
+      ],
+      faqs: [
+        { q: "洁具安装要多少钱？", a: "基础套装安装从 RM 650 起。含浴室柜、雨淋与配件的全套按件数与墙体工程计价。" },
+        { q: "可以自己买洁具让你们装吗？", a: "可以——我们常安装客户自购的洁具。装前会核对物品规格与现有点位，避免意外。" },
+        { q: "马桶轻微渗漏就要换吗？", a: "不一定——马桶底部的渗漏通常换蜡封或排水阀就能修。我们先诊断，只有缸体开裂才需更换。" },
+        { q: "洁具安装要多久？", a: "一两件如马桶与台盆几小时完成。含浴室柜、花洒与配件的全套最多一个工作日。" },
+      ],
+      metaTitle: "吉隆坡洁具安装 | 从RM650起",
+      metaDesc: "吉隆坡与雪兰莪洁具安装：马桶、台盆、浴室柜、花洒套装、浴缸与配件。从 RM 650 起。免费报价。",
+    }
+  },
+
+  "bathroom-renovation/bathroom-floor-replacement": {
+    ms: {
+      name: "Penggantian Lantai Bilik Mandi",
+      tagline: "Pecah lantai lama, screed semula dengan cerun, kalis air dan jubin lantai anti-gelincir baharu. Dari RM 1,800.",
+      description:
+        "Lantai bilik mandi lama selalunya menghidap tiga masalah: jubin licin, cerun yang tidak lagi berfungsi menyebabkan air bertakung, dan kalis air yang telah gagal di bawah. Penggantian lantai kami menyelesaikan ketiga-tiganya: jubin lama dan screed rosak dipecahkan sehingga slab, retak slab diperbaiki, screed baharu disapu dengan cerun yang tepat ke saluran, sistem kalis air penuh digunakan, kemudian jubin anti-gelincir baharu dipasang. Hasilnya lantai yang selamat, kering dan cantik. Harga bermula dari RM 1,800.",
+      highlights: [
+        "Pemecahan jubin dan screed lama sepenuhnya",
+        "Pembaikan retak slab sebelum kerja baru",
+        "Screed baharu dengan cerun tepat ke saluran",
+        "Sistem kalis air penuh di bawah jubin baru",
+        "Jubin anti-gelincir untuk keselamatan keluarga",
+      ],
+      process: [
+        { step: "01", title: "Pemecahan & Pemeriksaan", desc: "Lantai lama dipecahkan dan slab diperiksa untuk retak dan kelemahan." },
+        { step: "02", title: "Pembaikan & Kalis Air", desc: "Retak slab diperbaiki dan sistem kalis air penuh disapu di seluruh lantai." },
+        { step: "03", title: "Screed Bercerun", desc: "Screed baharu dibentuk dengan cerun yang tepat ke arah saluran atau floor trap." },
+        { step: "04", title: "Jubin & Grout", desc: "Jubin anti-gelincir dipasang dengan grout dan silikon yang sesuai untuk kawasan basah." },
+      ],
+      faqs: [
+        { q: "Berapa kos menggantikan lantai bilik mandi?", a: "Harga bermula dari RM 1,800 untuk lantai bilik mandi standard termasuk pemecahan, kalis air, screed dan jubin baru. Saiz bilik mandi dan jubin pilihan menentukan kos akhir." },
+        { q: "Berapa lama penggantian lantai bilik mandi?", a: "Termasuk pemecahan, kalis air, masa pengeringan screed dan pemasangan jubin, sebuah bilik mandi standard biasanya mengambil kira-kira seminggu. Bilik mandi tersebut tidak boleh digunakan sepanjang tempoh ini." },
+        { q: "Adakah dinding perlu diubah juga?", a: "Tidak semestinya — lantai boleh diganti secara berasingan jika dinding masih baik. Namun jika kalis air dinding juga sudah gagal atau jubin dinding akan ditukar tidak lama lagi, melakukan sekali gus lebih menjimatkan." },
+        { q: "Jubin anti-gelincir macam mana dipilih?", a: "Kami melihat tekstur permukaan dan penilaian rintangan gelincir jubin — jubin bertekstur atau matte dengan rating R10 ke atas sesuai untuk lantai bilik mandi. Kami menunjukkan pilihan yang selamat dan cantik dalam sampel fizikal." },
+      ],
+      metaTitle: "Ganti Lantai Bilik Mandi KL & Selangor | Dari RM1,800",
+      metaDesc: "Ganti lantai bilik mandi di KL & Selangor: pecah lama, screed cerun, kalis air penuh, jubin anti-gelincir. Dari RM 1,800. Sebut harga percuma.",
+    },
+    zh: {
+      name: "卫生间地面更换",
+      tagline: "拆除旧地面，重新找平带坡度、防水、新防滑地砖。从 RM 1,800 起。",
+      description:
+        "旧卫生间地面常有三大问题：地砖湿滑、坡度失效积水、以及砖下防水早已失效。我们的地面更换一并解决：拆除旧砖与破损砂浆层至楼板、修补楼板裂缝、重新做带正确坡度的找平层朝地漏排水、满做防水系统，然后铺贴新的防滑地砖。换来一个安全、干爽又好看地面。价格从 RM 1,800 起。",
+      highlights: [
+        "整体拆除旧砖与旧砂浆层",
+        "新工程前先修补楼板裂缝",
+        "新找平层按正确坡度朝地漏",
+        "新砖下满做防水系统",
+        "防滑地砖守护家人安全",
+      ],
+      process: [
+        { step: "01", title: "拆除与检查", desc: "拆除旧地面并检查楼板裂缝与薄弱点。" },
+        { step: "02", title: "修补与防水", desc: "修补楼板裂缝，整个地面满做防水。" },
+        { step: "03", title: "带坡找平", desc: "新找平层按正确坡度朝地漏或排水口成型。" },
+        { step: "04", title: "贴砖与美缝", desc: "铺贴防滑砖，做适合湿区的美缝与硅胶。" },
+      ],
+      faqs: [
+        { q: "卫生间换地面要多少钱？", a: "标准卫生间含拆除、防水、找平与新砖从 RM 1,800 起。卫生间大小与选砖决定最终费用。" },
+        { q: "换地面工期多久？", a: "含拆除、防水、找平养护与贴砖，标准卫生间约需一周。期间该卫生间不能使用。" },
+        { q: "墙面也要一起做吗？", a: "不一定——墙面状况好时可单独换地面。但若墙面防水也失效、或墙砖也快换，一起做更划算。" },
+        { q: "防滑砖怎么选？", a: "看表面纹理与防滑等级——带纹理的哑光砖 R10 级以上适合卫生间地面。我们会用实物样品展示既安全又好看的选项。" },
+      ],
+      metaTitle: "吉隆坡卫生间换地面 | 从RM1,800起",
+      metaDesc: "吉隆坡与雪兰莪卫生间地面更换：拆除、找平带坡、满做防水、防滑地砖。从 RM 1,800 起。免费报价。",
+    }
+  },
+
+  "bathroom-renovation/bathroom-wall-tile-replacement": {
+    ms: {
+      name: "Penggantian Jubin Dinding Bilik Mandi",
+      tagline: "Pecah jubin dinding lama, plaster semula, kalis air dan jubin dinding baharu dengan trim dan silikon. Dari RM 2,200.",
+      description:
+        "Jubin dinding bilik mandi lama selalunya tanggal di kawasan basah, berubah warna di belakang paip, atau sudah tidak lagi mencerminkan gaya yang anda mahu. Kami menggantikan jubin dinding dengan proses yang betul: pemecahan jubin dan plaster lama, pemeriksaan dan rawatan dinding di belakang, plaster semula yang rata, lapisan kalis air di kawasan pancuran, kemudian jubin dinding baharu dengan trim penjuru dan silikon anti-kulat di semua pertemuan. Liputan kawasan pancuran hingga siling disyorkan. Harga bermula dari RM 2,200.",
+      highlights: [
+        "Pemecahan jubin dan plaster lama sepenuhnya",
+        "Rawatan dinding di belakang sebelum plaster baru",
+        "Kalis air untuk kawasan pancuran",
+        "Trim penjuru dan silikon anti-kulat",
+        "Liputan pancuran hingga siling disyorkan",
+      ],
+      process: [
+        { step: "01", title: "Pemecahan Dinding", desc: "Jubin dan plaster lama dipecahkan dengan perlindungan kepada sanitari dan lantai." },
+        { step: "02", title: "Pemeriksaan & Plaster", desc: "Dinding diperiksa untuk lembapan dan retak, kemudian dilapisi plaster yang rata." },
+        { step: "03", title: "Kalis Air & Jubin", desc: "Kawasan pancuran diberi kalis air sebelum jubin dinding baharu dipasang." },
+        { step: "04", title: "Trim & Silikon", desc: "Trim penjuru dipasang dan silikon anti-kulat dipasang di pertemuan dinding-lantai." },
+      ],
+      faqs: [
+        { q: "Berapa kos menggantikan jubin dinding bilik mandi?", a: "Harga bermula dari RM 2,200 untuk dinding bilik mandi standard. Keluasan dinding, ketinggian liputan dan jubin pilihan menentukan kos akhir projek." },
+        { q: "Bolehkah hanya sebahagian dinding diganti?", a: "Boleh — contohnya zon pancuran sahaja atau bahagian bawah sahaja. Namun peralihan antara jubin lama dan baharu sukar disembunyikan; ramai pemilih memilih mengganti semua dinding untuk hasil seragam." },
+        { q: "Berapa lama penggantian jubin dinding?", a: "Untuk bilik mandi standard, kerja pemecahan hingga jubin baharu siap mengambil beberapa hari termasuk masa plaster dan kalis air mengering." },
+        { q: "Adakah jubin dinding lama perlu dipecahkan sepenuhnya?", a: "Pemecahan penuh disyorkan kerana ia mendedahkan keadaan dinding sebenar dan membolehkan kalis air baharu dipasang. Pemasangan atas jubin lama mungkin tetapi menambah beban dinding dan menyembunyikan masalah di belakang." },
+      ],
+      metaTitle: "Ganti Jubin Dinding Bilik Mandi KL | Dari RM2,200",
+      metaDesc: "Ganti jubin dinding bilik mandi di KL & Selangor: pecah lama, plaster semula, kalis air, jubin baharu dengan trim. Dari RM 2,200. Sebut harga percuma.",
+    },
+    zh: {
+      name: "卫生间墙砖更换",
+      tagline: "拆除旧墙砖，重新抹灰、防水与新墙砖，含收边与硅胶。从 RM 2,200 起。",
+      description:
+        "旧卫生间墙砖常见问题：湿区脱落、管道后变色，或风格早已过时。我们按正确流程更换墙砖：拆除旧砖与旧灰层、检查并处理背后墙体、重新抹灰找平、淋浴区做防水，然后铺贴新墙砖并在所有交界处做收边条与防霉硅胶。淋浴区建议贴到天花。价格从 RM 2,200 起。",
+      highlights: [
+        "整体拆除旧砖与旧灰层",
+        "新抹灰前先处理背后墙体",
+        "淋浴区防水处理",
+        "转角收边条与防霉硅胶",
+        "淋浴区建议贴到天花",
+      ],
+      process: [
+        { step: "01", title: "墙面拆除", desc: "拆除旧砖与灰层，保护好洁具与地面。" },
+        { step: "02", title: "检查与抹灰", desc: "检查墙体潮气与裂缝后抹灰找平。" },
+        { step: "03", title: "防水与贴砖", desc: "淋浴区先做防水，再铺贴新墙砖。" },
+        { step: "04", title: "收边与硅胶", desc: "安装转角收边条，墙地交界打防霉硅胶。" },
+      ],
+      faqs: [
+        { q: "卫生间换墙砖要多少钱？", a: "标准卫生间墙砖从 RM 2,200 起。墙面面积、铺贴高度与选砖决定最终费用。" },
+        { q: "可以只换部分墙面吗？", a: "可以——比如只做淋浴区或下半墙。但新旧砖交接处很难处理隐形，很多人为效果统一选择全换。" },
+        { q: "换墙砖工期多久？", a: "标准卫生间从拆除到贴完新砖需几天，含抹灰与防水养护时间。" },
+        { q: "旧墙砖一定要全拆吗？", a: "建议全拆，能看清墙体真实状况并做新防水。旧砖上直接贴虽可行，但增加墙体负担还掩盖背后问题。" },
+      ],
+      metaTitle: "吉隆坡卫生间墙砖更换 | 从RM2,200起",
+      metaDesc: "吉隆坡与雪兰莪卫生间墙砖更换：拆除、重新抹灰、防水、新墙砖与收边。从 RM 2,200 起。免费报价。",
+    }
+  },
+
+  "bathroom-renovation/bathroom-ceiling-repair": {
+    ms: {
+      name: "Pembaikan Siling Bilik Mandi",
+      tagline: "Ganti siling gypsum tahan lembapan atau aluminium dengan titik kipas ekzos dan pencahayaan LED. Dari RM 450.",
+      description:
+        "Siling bilik mandi berdepan dengan lembapan berterusan — siling gypsum biasa melengkung, berkulat dan akhirnya runtuh dalam keadaan ini. Kami menggantikan siling bilik mandi dengan papan gypsum tahan lembapan (hijau) atau panel aluminium yang tahan wap sepenuhnya, termasuk titik kipas ekzos dengan saluran keluar yang betul dan pencahayaan LED yang sesuai untuk ruang basah. Punca kebocoran dari atas — jika ada — dikenal pasti dahulu supaya siling baharu tidak rosak semula. Harga bermula dari RM 450.",
+      highlights: [
+        "Papan gypsum tahan lembapan atau panel aluminium",
+        "Titik kipas ekzos dengan saluran keluar betul",
+        "Pencahayaan LED untuk ruang basah",
+        "Punca kebocoran dari atas dikenal pasti dahulu",
+        "Pemeriksaan rangka semasa siling dibuka",
+      ],
+      process: [
+        { step: "01", title: "Pemeriksaan Punca", desc: "Kebocoran atau wap dari atas dikenal pasti dan dirawat sebelum siling baharu dipasang." },
+        { step: "02", title: "Penanggalan & Rangka", desc: "Siling rosak ditanggalkan dan rangka diperiksa serta diperkuat jika perlu." },
+        { step: "03", title: "Pemasangan Siling", desc: "Panel gypsum tahan lembapan atau aluminium dipasang dengan kemasan yang rata." },
+        { step: "04", title: "Ekzos & LED", desc: "Kipas ekzos dan lampu LED dipasang dengan penebat sesuai untuk ruang basah." },
+      ],
+      faqs: [
+        { q: "Siling bilik mandi saya melengkung — patut ganti atau baiki?", a: "Melengkung menandakan papan telah menyerap lembapan dan kekuatannya sudah hilang — pemasangan semula dengan papan tahan lembapan atau aluminium adalah penyelesaian kekal. Patching hanya menunda masalah." },
+        { q: "Berapa kos menggantikan siling bilik mandi?", a: "Harga bermula dari RM 450 untuk siling bilik mandi standard termasuk panel dan pemasangan. Saiz bilik, pilihan panel dan kerja ekzos menentukan kos akhir." },
+        { q: "Gypsum atau aluminium lebih baik untuk siling bilik mandi?", a: "Aluminium tahan wap sepenuhnya dan sesuai untuk bilik mandi yang sangat lembap. Gypsum tahan lembapan memberikan kemasan yang lebih licin untuk cat dan sesuai jika pengudaraan baik. Kami membantu memilih mengikut keadaan bilik anda." },
+        { q: "Adakah kipas ekzos wajib dalam bilik mandi?", a: "Pengudaraan adalah penting untuk menghalang kulat dan merosakkan siling. Jika bilik mandi tiada tingkap, kipas ekzos dengan saluran keluar yang betul amat disyorkan bersama siling baharu." },
+      ],
+      metaTitle: "Pembaikan Siling Bilik Mandi KL | Dari RM450",
+      metaDesc: "Ganti siling bilik mandi di KL & Selangor: gypsum tahan lembapan atau aluminium, titik ekzos dan LED. Dari RM 450. Sebut harga percuma.",
+    },
+    zh: {
+      name: "卫生间天花维修",
+      tagline: "更换防潮石膏板或铝扣板天花，含排气扇点位与 LED 照明。从 RM 450 起。",
+      description:
+        "卫生间天花长期受潮——普通石膏板在这种环境会弯曲、发霉直至脱落。我们为卫生间更换防潮（绿色）石膏板或完全耐水汽的铝扣板天花，包括带规范排气管的排气扇点位与适合湿区的 LED 照明。若上方有渗漏源头，会先查清再装新天花，避免再次损坏。价格从 RM 450 起。",
+      highlights: [
+        "防潮石膏板或铝扣板可选",
+        "带规范排气管的排气扇点位",
+        "适合湿区的 LED 照明",
+        "先查清上方渗漏源头",
+        "开天花时同步检查龙骨",
+      ],
+      process: [
+        { step: "01", title: "源头检查", desc: "先查清并处理上方渗漏或水汽，再装新天花。" },
+        { step: "02", title: "拆除与龙骨", desc: "拆除破损天花，检查并按需加固龙骨。" },
+        { step: "03", title: "天花安装", desc: "安装防潮石膏板或铝板，饰面平整。" },
+        { step: "04", title: "排气与 LED", desc: "安装排气扇与 LED 灯，湿区做好绝缘。" },
+      ],
+      faqs: [
+        { q: "卫生间天花鼓了——修还是换？", a: "鼓起说明板材已吸潮失去强度——换成防潮板或铝板才是长久之计。局部修补只是拖延问题。" },
+        { q: "卫生间换天花要多少钱？", a: "标准卫生间含板材与安装从 RM 450 起。面积、板材选择与排气工程决定最终费用。" },
+        { q: "石膏板和铝板哪个好？", a: "铝板完全耐水汽，适合特别潮湿的卫生间。防潮石膏板漆面更细腻，通风良好时也适用。我们按您的卫生间状况推荐。" },
+        { q: "卫生间一定要装排气扇吗？", a: "通风对防霉与保护天花至关重要。无窗卫生间强烈建议配规范排气管的排气扇，与新天花一起装。" },
+      ],
+      metaTitle: "吉隆坡卫生间天花维修 | 从RM450起",
+      metaDesc: "吉隆坡与雪兰莪卫生间天花更换：防潮石膏板或铝扣板，排气扇点位与 LED。从 RM 450 起。免费报价。",
+    }
+  },
+
+  "bathroom-renovation/bathroom-leak-repair": {
+    ms: {
+      name: "Pembaikan Bocor Bilik Mandi",
+      tagline: "Diagnosis bocor dengan pengimejan terma, suntikan PU atau pembaikan membran, dan pemulihan siling di bawah. Dari RM 350.",
+      description:
+        "Kebocoran bilik mandi merosakkan dua rumah pada satu masa — bilik mandi anda dan siling jiran di bawah. Kami bermula dengan diagnosis yang betul: ujian air dan pengimejan terma untuk mengesan laluan air yang sebenar, kerana titik lembap di siling bukan selalunya di bawah punca bocor. Bergantung pada diagnosis, kerja termasuk suntikan PU tekanan tinggi untuk retakan slab tanpa pecah jubin, pembaikan membran kalis air setempat, atau penggantian grout dan silikon yang telah gagal. Siling yang rosak di bawah dipulihkan selepas kebocoran dihentikan. Harga bermula dari RM 350.",
+      highlights: [
+        "Diagnosis dengan ujian air dan pengimejan terma",
+        "Suntikan PU tanpa pecah jubin untuk retakan slab",
+        "Pembaikan membran setempat di kawasan gagal",
+        "Penggantian grout dan silikon yang bocor",
+        "Pemulihan siling di bawah selepas bocor dihentikan",
+      ],
+      process: [
+        { step: "01", title: "Diagnosis Bocor", desc: "Ujian air dan pengimejan terma mengesan laluan air sebenar dan punca kebocoran." },
+        { step: "02", title: "Pilihan Pembaikan", desc: "Kaedah dipilih mengikut punca — suntikan PU, pembaikan membran atau penggantian grout." },
+        { step: "03", title: "Kerja Pembaikan", desc: "Kebocoran dibaiki dengan kaedah yang ditentukan dan diuji semula untuk pengesahan." },
+        { step: "04", title: "Pemulihan Siling", desc: "Siling rosak di bawah dibaiki dan dicat semula selepas kawasan kering sepenuhnya." },
+      ],
+      faqs: [
+        { q: "Bagaimana saya tahu bilik mandi saya bocor ke bawah?", a: "Tanda-tanda termasuk kesan air atau bintik coklat di siling bawah, cat yang buih, dan bau lembap berterusan. Ujian mudah: perhatikan siling bawah selepas menggunakan pancuran — jika bertambah teruk, kebocoran dijangka." },
+        { q: "Berapa kos membaiki bilik mandi bocor?", a: "Harga bermula dari RM 350 untuk pembaikan setempat. Kos sebenar bergantung pada kaedah — suntikan PU lebih ekonomis, manakala kebocoran meluas yang memerlukan kalis air semula penuh dihargai mengikut keluasan." },
+        { q: "Adakah suntikan PU benar-benar berkesan?", a: "Suntikan PU tekanan tinggi sangat berkesan untuk retakan slab yang jelas — resin mengembang dan mengedap laluan air. Ia sesuai apabila diagnosis mengesahkan punca berada di retakan yang boleh dicapai tanpa pecah jubin." },
+        { q: "Bolehkah siling bawah dibaiki sebelum bocor dihentikan?", a: "Tidak — membaiki siling sebelum kebocoran dihentikan bermakna kerosakan akan berulang. Kami menghentikan bocor dahulu, memastikan kawasan kering, kemudian memulihkan siling." },
+      ],
+      metaTitle: "Pembaikan Bocor Bilik Mandi KL & Selangor | Dari RM350",
+      metaDesc: "Baiki bilik mandi bocor di KL & Selangor: diagnosis terma, suntikan PU tanpa pecah jubin, pembaikan membran dan siling. Dari RM 350. Sebut harga percuma.",
+    },
+    zh: {
+      name: "卫生间漏水维修",
+      tagline: "热成像漏水诊断、PU 注浆或防水膜维修，以及下方天花修复。从 RM 350 起。",
+      description:
+        "卫生间漏水同时损害两户人家——您的卫生间和楼下邻居的天花。我们先行正确诊断：通水试验与热成像追踪真实水路——因为天花湿点不一定在漏点正下方。根据诊断结果选择工艺：板底裂缝免砸砖高压 PU 注浆、局部防水膜修补，或更换失效的美缝与硅胶。止漏后再修复下方受损天花。价格从 RM 350 起。",
+      highlights: [
+        "通水试验与热成像诊断",
+        "板底裂缝免砸砖 PU 注浆",
+        "失效区域局部防水膜修补",
+        "更换漏水的美缝与硅胶",
+        "止漏后修复下方天花",
+      ],
+      process: [
+        { step: "01", title: "漏水诊断", desc: "通水试验与热成像定位真实水路与漏点。" },
+        { step: "02", title: "方案选择", desc: "按漏因选择——PU 注浆、防水膜修补或换美缝。" },
+        { step: "03", title: "维修施工", desc: "按确定工艺止漏，并复测确认。" },
+        { step: "04", title: "天花修复", desc: "区域完全干透后修补并重漆受损天花。" },
+      ],
+      faqs: [
+        { q: "怎么知道卫生间往下漏？", a: "迹象包括楼下天花板水渍或黄斑、油漆起泡、持续霉味。简单测试：淋浴后观察楼下天花板——若加重即基本可判断漏水。" },
+        { q: "卫生间漏水维修要多少钱？", a: "局部维修从 RM 350 起。实际费用看工艺——PU 注浆较经济；大面积失效需整体重做防水时按面积计价。" },
+        { q: "PU 注浆真的有效吗？", a: "对明确的板底裂缝非常有效——树脂膨胀封堵水路。当诊断确认漏点在可达裂缝且无需砸砖时，它是理想方案。" },
+        { q: "止漏前能先修楼下天花吗？", a: "不能——止漏前修天花，损坏会重演。我们先止漏、确保干透，再修复天花。" },
+      ],
+      metaTitle: "吉隆坡卫生间漏水维修 | 从RM350起",
+      metaDesc: "吉隆坡与雪兰莪卫生间漏水维修：热成像诊断、免砸砖 PU 注浆、防水膜与天花修复。从 RM 350 起。免费报价。",
+    }
   },
 };
 
