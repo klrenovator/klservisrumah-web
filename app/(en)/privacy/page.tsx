@@ -10,5 +10,5 @@ export const metadata = buildMetadata({
 });
 
 export default function PrivacyPage() {
-  return <LegalDocument document={privacyContent.en} homeLabel="Home" currentPath="/privacy" />;
+  return <LegalDocument document={privacyContent.en} homeLabel="Home" currentPath="/privacy" ariaLabel="Breadcrumb" />;
 }

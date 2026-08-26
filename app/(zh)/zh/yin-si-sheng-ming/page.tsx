@@ -10,5 +10,5 @@ export const metadata = buildMetadata({
 });
 
 export default function ChinesePrivacyPage() {
-  return <LegalDocument document={privacyContent.zh} homeLabel="首页" currentPath="/zh/yin-si-sheng-ming" />;
+  return <LegalDocument document={privacyContent.zh} homeLabel="首页" currentPath="/zh/yin-si-sheng-ming" ariaLabel="面包屑导航" />;
 }

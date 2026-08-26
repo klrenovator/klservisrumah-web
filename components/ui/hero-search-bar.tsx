@@ -6,12 +6,7 @@ import { Search, X } from "lucide-react";
 import type { SmartSearchResult } from "@/lib/smart-finder-search";
 import { loadSmartSearch, prefetchSmartSearch } from "@/lib/smart-finder-loader";
 import { useLang } from "@/context/lang-context";
-
-const SEARCH_PLACEHOLDERS = {
-  en: "Find any service...",
-  ms: "Cari mana-mana servis...",
-  zh: "寻找任何服务..."
-};
+import { useTranslations } from "@/hooks/use-translations";
 
 const POPULAR_SEARCHES = {
   en: ["Painting", "Ceiling", "Plaster Ceiling", "Partition", "Plumbing", "Waterproofing", "Handyman", "CCTV", "Repair"],
@@ -26,13 +21,14 @@ interface HeroSearchBarProps {
 export function HeroSearchBar({ onSearch }: HeroSearchBarProps) {
   const router = useRouter();
   const { lang } = useLang();
+  const t = useTranslations();
   const [query, setQuery] = useState("");
   const [isFocused, setIsFocused] = useState(false);
   const [searchResults, setSearchResults] = useState<SmartSearchResult[]>([]);
   const searchTimeout = useRef<NodeJS.Timeout | null>(null);
   const latestQuery = useRef<string>("");
+  const containerRef = useRef<HTMLDivElement>(null);
 
-  const placeholder = SEARCH_PLACEHOLDERS[lang] || SEARCH_PLACEHOLDERS.en;
   const popularSearches = POPULAR_SEARCHES[lang] || POPULAR_SEARCHES.en;
 
   // Debounced search
@@ -109,17 +105,22 @@ export function HeroSearchBar({ onSearch }: HeroSearchBarProps) {
     setSearchResults([]);
   };
 
-  const handleBlur = () => {
-    // Small delay to allow click on results before hiding
+  const handleBlur = (event: React.FocusEvent) => {
+    // Keep the dropdown open while focus stays inside the component — a
+    // keyboard user tabbing from the input into the result buttons must not
+    // have the panel close mid-navigation. Only once focus leaves the whole
+    // widget do we hide it (small delay so pointer clicks still land).
+    const next = event.relatedTarget as Node | null;
+    if (next && containerRef.current?.contains(next)) return;
     setTimeout(() => {
       setIsFocused(false);
     }, 200);
   };
 
   return (
-    <div className="relative w-full max-w-3xl">
+    <div ref={containerRef} onBlur={handleBlur} className="relative w-full max-w-3xl">
       {/* Search Bar */}
-      <form onSubmit={handleSubmit} className="relative">
+      <form role="search" onSubmit={handleSubmit} className="relative">
         <div className="relative flex items-center rounded-2xl border-2 border-white/30 bg-white/10 p-1.5 shadow-lg backdrop-blur-xl transition-all focus-within:border-sky-400 focus-within:bg-white/15 hover:border-white/40">
           <Search className="h-5 w-5 text-sky-300 ml-3 shrink-0" aria-hidden="true" />
           <input
@@ -130,28 +131,28 @@ export function HeroSearchBar({ onSearch }: HeroSearchBarProps) {
               setIsFocused(true);
               prefetchSmartSearch();
             }}
-            onBlur={handleBlur}
-            placeholder={placeholder}
-            className="w-full bg-transparent px-4 py-4 text-base font-medium text-white placeholder:text-white/40 outline-none transition-colors"
-            aria-label="Search for home services"
+            placeholder={t("heroSearch.placeholder")}
+            className="w-full bg-transparent px-4 py-4 text-base font-medium text-white placeholder:text-white/70 outline-none transition-colors"
+            aria-label={t("heroSearch.inputAria")}
             autoComplete="off"
+            enterKeyHint="search"
           />
           {query && (
             <button
               type="button"
               onClick={handleClear}
-              className="p-2 text-white/60 hover:text-white transition-colors rounded-full hover:bg-white/10"
-              aria-label="Clear search"
+              className="p-2 text-white/80 hover:text-white transition-colors rounded-full hover:bg-white/10"
+              aria-label={t("heroSearch.clearAria")}
             >
-              <X className="h-4 w-4" />
+              <X className="h-4 w-4" aria-hidden="true" />
             </button>
           )}
           <button
             type="submit"
             className="btn-primary shrink-0 px-6 py-4 text-sm font-bold uppercase tracking-wider ml-2"
           >
-            <span className="hidden sm:inline">Search</span>
-            <Search className="h-4 w-4 sm:hidden" />
+            <span className="hidden sm:inline">{t("heroSearch.submit")}</span>
+            <Search className="h-4 w-4 sm:hidden" aria-hidden="true" />
           </button>
         </div>
       </form>
@@ -160,10 +161,11 @@ export function HeroSearchBar({ onSearch }: HeroSearchBarProps) {
       {isFocused && (query || searchResults.length > 0) && (
         <div className="absolute top-full left-0 right-0 mt-2 z-50 rounded-2xl border border-slate-200 bg-white p-4 shadow-2xl animate-in fade-in slide-in-from-top-2 duration-200">
           {searchResults.length > 0 ? (
-            <div className="space-y-1">
+            <div className="space-y-1" role="group" aria-label={t("heroSearch.inputAria")}>
               {searchResults.map((result) => (
                 <button
                   key={result.service.serviceSlug}
+                  type="button"
                   onClick={() => handleSelectResult(result)}
                   className="w-full flex flex-col items-start gap-1 rounded-xl p-3 text-left hover:bg-sky-50 transition-colors"
                 >
@@ -180,12 +182,12 @@ export function HeroSearchBar({ onSearch }: HeroSearchBarProps) {
               ))}
             </div>
           ) : query ? (
-            <div className="text-center py-6">
-              <p className="text-sm text-slate-500">
-                {lang === "ms" ? "Tiada hasil dijumpai" : lang === "zh" ? "没有找到结果" : "No results found"}
+            <div className="text-center py-6" role="status">
+              <p className="text-sm text-slate-600">
+                {t("heroSearch.noResults")}
               </p>
-              <p className="text-xs text-slate-400 mt-1">
-                {lang === "ms" ? "Cuba cari dengan perkataan lain" : lang === "zh" ? "尝试其他搜索词" : "Try different keywords"}
+              <p className="text-xs text-slate-500 mt-1">
+                {t("heroSearch.tryDifferent")}
               </p>
             </div>
           ) : null}
@@ -194,12 +196,13 @@ export function HeroSearchBar({ onSearch }: HeroSearchBarProps) {
           {query === "" && (
             <div className="mt-4 pt-4 border-t border-slate-100">
               <p className="text-[10px] font-bold uppercase tracking-wider text-[#0EA5E9] mb-2">
-                {lang === "ms" ? "Carian Popular" : lang === "zh" ? "热门搜索" : "Popular Searches"}
+                {t("heroSearch.popular")}
               </p>
               <div className="flex flex-wrap gap-1.5">
                 {popularSearches.map((search) => (
                   <button
                     key={search}
+                    type="button"
                     onClick={() => handleSelectPopular(search)}
                     className="rounded-lg border border-slate-200 px-3 py-1.5 text-xs font-semibold text-[#075985] hover:bg-sky-50 hover:border-sky-200 transition-colors"
                   >

@@ -23,8 +23,16 @@ export function WhatsAppButton() {
 
   return (
     <div className="fixed bottom-6 right-6 z-40 hidden md:flex flex-col items-end gap-3">
+      {/*
+        `inert` (not just `aria-hidden`) while collapsed: the card contains a
+        real link and a close button, which stayed in the keyboard tab order
+        even when visually hidden — screen-reader/keyboard users hit controls
+        they could not see. `inert` removes them from focus and the a11y tree
+        until the desk is opened.
+      */}
       <div
         aria-hidden={!open}
+        inert={!open}
         className={`bg-white rounded-2xl p-4 shadow-[0_10px_40px_rgba(2,31,68,0.10)] border border-slate-100 flex flex-col gap-2.5 max-w-[280px] transform-gpu transition-all duration-200 ease-out origin-bottom-right ${
           open
             ? "opacity-100 scale-100 translate-y-0 pointer-events-auto"

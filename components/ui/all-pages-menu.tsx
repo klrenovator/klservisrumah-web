@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { Menu, X, ChevronRight } from "lucide-react";
 import { useTranslations } from "@/hooks/use-translations";
@@ -26,10 +26,44 @@ const MAIN_PAGES = [
 export function AllPagesMenu() {
   const [open, setOpen] = useState(false);
   const t = useTranslations();
+  const triggerRef = useRef<HTMLButtonElement>(null);
+  const drawerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!open) return;
-    const onKey = (event: KeyboardEvent) => event.key === "Escape" && setOpen(false);
+    const drawer = drawerRef.current;
+    const trigger = triggerRef.current;
+    const previouslyFocused =
+      document.activeElement instanceof HTMLElement ? document.activeElement : null;
+
+    // Move focus into the drawer (close button first) and keep Tab cycling
+    // inside it — an aria-modal dialog must not let keyboard focus escape to
+    // the page hidden underneath.
+    drawer?.querySelector<HTMLElement>("[data-autofocus]")?.focus();
+
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setOpen(false);
+        return;
+      }
+      if (event.key !== "Tab" || !drawer) return;
+      const focusables = Array.from(
+        drawer.querySelectorAll<HTMLElement>(
+          'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
+        )
+      ).filter((element) => element.offsetParent !== null);
+      if (focusables.length === 0) return;
+      const first = focusables[0];
+      const last = focusables[focusables.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    };
+
     const previousOverflow = document.body.style.overflow;
     document.addEventListener("keydown", onKey);
     // Defer overflow locking to requestAnimationFrame so the drawer paints
@@ -41,20 +75,23 @@ export function AllPagesMenu() {
       cancelAnimationFrame(rafId);
       document.removeEventListener("keydown", onKey);
       document.body.style.overflow = previousOverflow;
+      // Restore focus to the hamburger trigger (or whatever had focus before
+      // the drawer opened) so keyboard users land back where they started.
+      (trigger ?? previouslyFocused)?.focus();
     };
   }, [open]);
 
   return <>
-    <button type="button" onClick={() => setOpen(true)} aria-label={t("menu.aria")} aria-expanded={open}
+    <button ref={triggerRef} type="button" onClick={() => setOpen(true)} aria-label={t("menu.aria")} aria-expanded={open} aria-haspopup="dialog"
       className="inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-[#075985] bg-[#075985] text-white shadow-[0_8px_22px_rgba(7,89,133,0.28)] ring-1 ring-sky-200/60 transition hover:bg-[#0369A1] hover:shadow-[0_10px_26px_rgba(7,89,133,0.34)] focus-visible:outline-[#0EA5E9]">
-      <Menu className="h-6 w-6 stroke-[2.75]" />
+      <Menu className="h-6 w-6 stroke-[2.75]" aria-hidden="true" />
     </button>
     {open && <div className="fixed inset-0 z-[80]" role="dialog" aria-modal="true" aria-label={t("menu.main")}>
-      <button className="absolute inset-0 cursor-default bg-slate-950/50 transition-opacity duration-200" onClick={() => setOpen(false)} aria-label={t("menu.close")} />
-      <aside className="absolute inset-y-0 right-0 flex w-[min(22rem,88vw)] flex-col bg-white shadow-2xl transform-gpu will-change-transform animate-in slide-in-from-right duration-250 ease-out">
+      <button type="button" className="absolute inset-0 cursor-default bg-slate-950/50 transition-opacity duration-200" onClick={() => setOpen(false)} aria-label={t("menu.close")} tabIndex={-1} />
+      <aside ref={drawerRef} className="absolute inset-y-0 right-0 flex w-[min(22rem,88vw)] flex-col bg-white shadow-2xl transform-gpu will-change-transform animate-in slide-in-from-right duration-250 ease-out">
         <div className="flex items-center justify-between border-b border-slate-100 px-6 py-5">
           <div><p className="text-base font-extrabold text-[#075985]">{t("menu.button")}</p><p className="mt-0.5 text-xs text-slate-500">{t("common.siteName")}</p></div>
-          <button type="button" onClick={() => setOpen(false)} aria-label={t("menu.close")} className="rounded-xl border border-slate-200 p-2 text-slate-600 transition hover:bg-slate-50"><X className="h-5 w-5" /></button>
+          <button type="button" data-autofocus onClick={() => setOpen(false)} aria-label={t("menu.close")} className="rounded-xl border border-slate-200 p-2 text-slate-600 transition hover:bg-slate-50"><X className="h-5 w-5" aria-hidden="true" /></button>
         </div>
         <nav className="flex-1 px-4 py-5" aria-label={t("menu.main")}>
           <p className="px-3 pb-2 text-[10px] font-black uppercase tracking-[0.16em] text-slate-400">{t("menu.main")}</p>

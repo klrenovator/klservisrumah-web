@@ -32,7 +32,7 @@ export function RecentJobsTicker() {
   const job = recentJobs[0];
 
   return (
-    <section className="py-8" aria-label="Popular Local Requests">
+    <section className="py-8" aria-label={t("ticker.ariaLabel")}>
       <div className="container-default">
         <div className="pointer-events-none flex justify-center px-4">
           <div role="status" className="pointer-events-auto relative flex w-full max-w-md items-start gap-3 rounded-2xl border border-[#0EA5E9]/20 bg-white/95 p-3.5 pr-10 shadow-[0_16px_45px_rgba(2,31,68,0.12)] backdrop-blur-sm">

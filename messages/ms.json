@@ -379,7 +379,10 @@
       "residential": "Kediaman",
       "seasonal": "Bermusim"
     },
-    "renovation": "Pengubahsuaian"
+    "renovation": "Pengubahsuaian",
+    "otherServices": "Perkhidmatan Lain",
+    "terraceRenovation": "Pengubahsuaian Rumah Teres",
+    "condoRenovation": "Pengubahsuaian Kondo"
   },
   "whatsappDesk": {
     "title": "Meja Dispatch WhatsApp",
@@ -1465,7 +1468,8 @@
   },
   "ticker": {
     "hideAria": "Sembunyikan pemberitahuan aktiviti terkini",
-    "liveDemand": "Permintaan tempatan langsung — tiada nama pelanggan dipaparkan"
+    "liveDemand": "Permintaan tempatan langsung — tiada nama pelanggan dipaparkan",
+    "ariaLabel": "Permintaan tempatan yang popular"
   },
   "siteSearch": {
     "placeholder": "Cari perkhidmatan...",
@@ -1483,9 +1487,29 @@
   },
   "a11y": {
     "skipToContent": "Langkau ke kandungan utama",
-    "mainContent": "Kandungan utama"
+    "mainContent": "Kandungan utama",
+    "logoLink": "Laman utama KL Servis Rumah",
+    "heroSection": "Gambaran keseluruhan perkhidmatan rumah"
   },
   "servicesIndex": {
     "whatsappService": "perkhidmatan rumah"
+  },
+  "heroSearch": {
+    "placeholder": "Cari mana-mana servis...",
+    "inputAria": "Cari perkhidmatan rumah",
+    "clearAria": "Kosongkan carian",
+    "submit": "Cari",
+    "noResults": "Tiada hasil dijumpai",
+    "tryDifferent": "Cuba cari dengan perkataan lain",
+    "popular": "Carian Popular"
+  },
+  "areaSelector": {
+    "title": "Cari perkhidmatan ini berhampiran kawasan anda",
+    "selectLabel": "Kawasan Pinggir Bandar",
+    "placeholder": "Pilih kawasan...",
+    "viewLocal": "Lihat halaman tempatan"
+  },
+  "smartFinder": {
+    "closeAria": "Tutup carian"
   }
 }

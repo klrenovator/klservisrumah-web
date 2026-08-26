@@ -127,7 +127,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-5">
         {/* Brand Block */}
         <div className="space-y-4">
-          <Link href="/" className="inline-block" aria-label="KL Servis Rumah homepage">
+          <Link href="/" className="inline-block" aria-label={t("a11y.logoLink")}>
             <Logo size="sm" />
           </Link>
           <p className="text-xs leading-relaxed text-slate-500">{t("footer.tagline")}</p>
@@ -140,7 +140,7 @@ export function Footer() {
         </div>
 
         {/* Services List */}
-        <div className="space-y-4">
+        <nav aria-label={t("nav.services")} className="space-y-4">
           <p className="text-xs font-black uppercase tracking-wider text-slate-900">{t("nav.services")}</p>
           <ul className="space-y-2">
             {topServices.map((service) => (
@@ -156,10 +156,10 @@ export function Footer() {
               </Link>
             </li>
           </ul>
-        </div>
+        </nav>
 
         {/* Quick Links + Price Guides */}
-        <div className="space-y-4">
+        <nav aria-label={t("footer.explore")} className="space-y-4">
           <p className="text-xs font-black uppercase tracking-wider text-slate-900">{t("footer.explore")}</p>
 
           <div>
@@ -184,10 +184,10 @@ export function Footer() {
               ))}
             </ul>
           </div>
-        </div>
+        </nav>
 
         {/* Areas Block — pushes location silos and boosts local SEO signals */}
-        <div className="space-y-4">
+        <nav aria-label={t("nav.areas")} className="space-y-4">
           <p className="text-xs font-black uppercase tracking-wider text-slate-900">{t("nav.areas")}</p>
           <ul className="space-y-2">
             {topAreas.map((a) => (
@@ -206,7 +206,7 @@ export function Footer() {
               </Link>
             </li>
           </ul>
-        </div>
+        </nav>
 
         {/* Contact Block */}
         <div className="space-y-4">

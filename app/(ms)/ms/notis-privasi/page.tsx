@@ -10,5 +10,5 @@ export const metadata = buildMetadata({
 });
 
 export default function MalayPrivacyPage() {
-  return <LegalDocument document={privacyContent.ms} homeLabel="Utama" currentPath="/ms/notis-privasi" />;
+  return <LegalDocument document={privacyContent.ms} homeLabel="Utama" currentPath="/ms/notis-privasi" ariaLabel="Laluan navigasi" />;
 }

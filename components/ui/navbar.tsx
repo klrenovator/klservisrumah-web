@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronDown, Phone } from "lucide-react";
@@ -83,6 +83,8 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [renovationOpen, setRenovationOpen] = useState(false);
+  const renovationRef = useRef<HTMLDivElement>(null);
+  const servicesRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
   const t = useTranslations();
   const { lang } = useLang();
@@ -108,6 +110,37 @@ export function Navbar() {
   }, []);
   useEffect(() => { setServicesOpen(false); setRenovationOpen(false); }, [pathname]);
 
+  // Keyboard + pointer dismissal for the two desktop disclosure menus.
+  // Escape closes whichever menu is open and returns focus to its trigger
+  // button; clicking/tapping anywhere outside the menu closes it. Without
+  // this, a keyboard user who tabbed away left an invisible-but-open panel
+  // behind, and pointer users had no way to dismiss it short of navigation.
+  useEffect(() => {
+    if (!servicesOpen && !renovationOpen) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key !== "Escape") return;
+      if (renovationOpen) {
+        setRenovationOpen(false);
+        renovationRef.current?.querySelector<HTMLButtonElement>("button")?.focus();
+      }
+      if (servicesOpen) {
+        setServicesOpen(false);
+        servicesRef.current?.querySelector<HTMLButtonElement>("button")?.focus();
+      }
+    };
+    const onPointerDown = (event: PointerEvent) => {
+      const target = event.target as Node;
+      if (renovationOpen && renovationRef.current && !renovationRef.current.contains(target)) setRenovationOpen(false);
+      if (servicesOpen && servicesRef.current && !servicesRef.current.contains(target)) setServicesOpen(false);
+    };
+    document.addEventListener("keydown", onKeyDown);
+    document.addEventListener("pointerdown", onPointerDown);
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.removeEventListener("pointerdown", onPointerDown);
+    };
+  }, [servicesOpen, renovationOpen]);
+
   const isServices = pathname === "/services" || pathname.startsWith("/services/");
   const isRenovation = pathname.startsWith("/services/house-renovation") || pathname.startsWith("/services/kitchen-renovation") || pathname.startsWith("/services/bathroom-renovation");
   const renovationNav = serviceNavList.filter(s => RENOVATION_SLUGS.includes(s.slug));
@@ -127,36 +160,36 @@ export function Navbar() {
       </div>
     </div>
     <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-1 min-[430px]:gap-3 px-2 min-[430px]:px-3 sm:px-6 lg:px-8">
-      <Link href="/" className="shrink-0" aria-label="KL Servis Rumah homepage"><Logo size="md" priority heightClassName="h-[34px] min-[430px]:h-[40px] sm:h-[52px]" /></Link>
+      <Link href="/" className="shrink-0" aria-label={t("a11y.logoLink")}><Logo size="md" priority heightClassName="h-[34px] min-[430px]:h-[40px] sm:h-[52px]" /></Link>
       <div className="hidden items-center gap-1 lg:flex">
         {PRIMARY_LINKS.slice(0, 1).map(item => <NavLink key={item.href} href={item.href} active={pathname === item.href} label={t(item.key)} />)}
-        <div className="relative" onMouseEnter={() => setRenovationOpen(true)} onMouseLeave={() => setRenovationOpen(false)}>
-          <button type="button" onClick={() => setRenovationOpen(v => !v)} className={`relative inline-flex items-center gap-1 px-3 py-2 text-xs font-black uppercase tracking-widest transition-colors ${isRenovation ? "text-[#0284C7]" : "text-slate-900 hover:text-[#0284C7]"}`} aria-expanded={renovationOpen}>{t("nav.renovation")}<ChevronDown className={`h-3.5 w-3.5 transition-transform ${renovationOpen ? "rotate-180" : ""}`} />{isRenovation && <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#0284C7]" />}</button>
+        <div ref={renovationRef} className="relative" onMouseEnter={() => setRenovationOpen(true)} onMouseLeave={() => setRenovationOpen(false)}>
+          <button type="button" onClick={() => setRenovationOpen(v => !v)} className={`relative inline-flex items-center gap-1 px-3 py-2 text-xs font-black uppercase tracking-widest transition-colors ${isRenovation ? "text-[#0284C7]" : "text-slate-900 hover:text-[#0284C7]"}`} aria-expanded={renovationOpen} aria-haspopup="true">{t("nav.renovation")}<ChevronDown className={`h-3.5 w-3.5 transition-transform ${renovationOpen ? "rotate-180" : ""}`} aria-hidden="true" />{isRenovation && <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#0284C7]" />}</button>
           {renovationOpen && <div className="absolute left-0 top-full mt-2 w-[720px] rounded-2xl border border-slate-100 bg-white p-4 shadow-[0_18px_50px_rgba(2,31,68,0.15)] animate-in fade-in zoom-in-95 duration-150 transform-gpu">
-            <div className="mb-3 flex items-center justify-between px-2"><span className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-400">{t("menu.renovation")}</span><Link href="/services/house-renovation" className="text-xs font-bold text-[#0284C7] hover:text-[#075985]">{t("common.viewAll")}</Link></div>
+            <div className="mb-3 flex items-center justify-between px-2"><span className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-500">{t("menu.renovation")}</span><Link href="/services/house-renovation" className="text-xs font-bold text-[#0284C7] hover:text-[#075985]">{t("common.viewAll")}</Link></div>
             <div className="grid grid-cols-2 gap-1">
               {renovationNav.map(source => {
                 const service = getLocalizedServiceNav(source, lang);
                 return <Link key={service.slug} href={`/services/${service.slug}`} className="rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-sky-50 hover:text-[#0284C7]">
                   <span className="block">{service.title}</span>
-                  <span className="block text-[11px] font-medium text-slate-400">{service.startPrice}</span>
+                  <span className="block text-[11px] font-medium text-slate-500">{service.startPrice}</span>
                 </Link>;
               })}
             </div>
             <div className="mt-3 grid grid-cols-3 gap-2 border-t border-slate-100 pt-3">
               <Link href="/tools/renovation-budget-calculator" className="rounded-xl bg-slate-50 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-sky-50 hover:text-[#0284C7]">{t("common.renovationCalculator")}</Link>
-              <Link href="/services/house-renovation/terrace-house-renovation" className="rounded-xl bg-slate-50 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-sky-50 hover:text-[#0284C7]">Terrace Renovation</Link>
-              <Link href="/services/house-renovation/condo-renovation" className="rounded-xl bg-slate-50 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-sky-50 hover:text-[#0284C7]">Condo Renovation</Link>
+              <Link href="/services/house-renovation/terrace-house-renovation" className="rounded-xl bg-slate-50 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-sky-50 hover:text-[#0284C7]">{t("menu.terraceRenovation")}</Link>
+              <Link href="/services/house-renovation/condo-renovation" className="rounded-xl bg-slate-50 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-sky-50 hover:text-[#0284C7]">{t("menu.condoRenovation")}</Link>
             </div>
           </div>}
         </div>
-        <div className="relative" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
-          <button type="button" onClick={() => setServicesOpen(value => !value)} className={`relative inline-flex items-center gap-1 px-3 py-2 text-xs font-black uppercase tracking-widest transition-colors ${isServices && !isRenovation ? "text-[#0284C7]" : "text-slate-900 hover:text-[#0284C7]"}`} aria-expanded={servicesOpen}>{t("nav.services")}<ChevronDown className={`h-3.5 w-3.5 transition-transform ${servicesOpen ? "rotate-180" : ""}`} />{isServices && !isRenovation && <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#0284C7]" />}</button>
+        <div ref={servicesRef} className="relative" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
+          <button type="button" onClick={() => setServicesOpen(value => !value)} className={`relative inline-flex items-center gap-1 px-3 py-2 text-xs font-black uppercase tracking-widest transition-colors ${isServices && !isRenovation ? "text-[#0284C7]" : "text-slate-900 hover:text-[#0284C7]"}`} aria-expanded={servicesOpen} aria-haspopup="true">{t("nav.services")}<ChevronDown className={`h-3.5 w-3.5 transition-transform ${servicesOpen ? "rotate-180" : ""}`} aria-hidden="true" />{isServices && !isRenovation && <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#0284C7]" />}</button>
           {servicesOpen && <div className="absolute left-0 top-full mt-2 w-[620px] rounded-2xl border border-slate-100 bg-white p-3 shadow-[0_18px_50px_rgba(2,31,68,0.15)] animate-in fade-in zoom-in-95 duration-150 transform-gpu">
-            <div className="mb-2 flex items-center justify-between px-2"><span className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-400">{t("menu.services")}</span><Link href="/services" className="text-xs font-bold text-[#0284C7] hover:text-[#075985]">{t("common.viewAll")}</Link></div>
-            <div className="mb-2 text-[10px] font-black uppercase tracking-[0.15em] text-slate-400 px-2">{t("menu.renovation")}</div>
+            <div className="mb-2 flex items-center justify-between px-2"><span className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-500">{t("menu.services")}</span><Link href="/services" className="text-xs font-bold text-[#0284C7] hover:text-[#075985]">{t("common.viewAll")}</Link></div>
+            <div className="mb-2 text-[10px] font-black uppercase tracking-[0.15em] text-slate-500 px-2">{t("menu.renovation")}</div>
             <div className="grid grid-cols-2 gap-1 mb-3">{renovationNav.slice(0,6).map(source => { const service = getLocalizedServiceNav(source, lang); return <Link key={service.slug} href={`/services/${service.slug}`} className="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-sky-50 hover:text-[#0284C7]">{service.title}</Link>; })}</div>
-            <div className="mb-2 text-[10px] font-black uppercase tracking-[0.15em] text-slate-400 px-2">Other Services</div>
+            <div className="mb-2 text-[10px] font-black uppercase tracking-[0.15em] text-slate-500 px-2">{t("menu.otherServices")}</div>
             <div className="grid grid-cols-2 gap-1">{otherNav.map(source => { const service = getLocalizedServiceNav(source, lang); return <Link key={service.slug} href={`/services/${service.slug}`} className="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-sky-50 hover:text-[#0284C7]">{service.title}</Link>; })}</div>
           </div>}
         </div>

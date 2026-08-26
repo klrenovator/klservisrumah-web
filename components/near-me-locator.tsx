@@ -28,7 +28,7 @@ export function NearMeLocator() {
   return (
     <div className="rounded-3xl border border-slate-100 bg-white p-6 shadow-xs">
       <h2 className="text-xl font-extrabold text-[#075985]">{t("location.locatorHeading")}</h2>
-      <p className="mt-2 text-sm font-semibold leading-relaxed text-[#475569]">
+      <p aria-live="polite" role="status" className="mt-2 text-sm font-semibold leading-relaxed text-[#475569]">
         {status ?? t("location.locatorIntro")}
       </p>
       <button

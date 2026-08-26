@@ -130,7 +130,7 @@ export function FAQAccordion() {
                     aria-expanded={isOpen}
                     aria-controls={panelId}
                     id={`faq-trigger-${idx}`}
-                    className="w-full text-left p-5 sm:p-6 flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-[#075985] hover:text-[#0EA5E9] transition-colors focus:outline-none"
+                    className="w-full text-left p-5 sm:p-6 flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-[#075985] hover:text-[#0EA5E9] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0EA5E9] focus-visible:rounded-xl"
                   >
                     <div className="flex items-center gap-3.5">
                       <HelpCircle className="w-5 h-5 text-[#0EA5E9] shrink-0" aria-hidden="true" />

@@ -379,7 +379,10 @@
       "residential": "住宅服务",
       "seasonal": "季节保养"
     },
-    "renovation": "翻新服务"
+    "renovation": "翻新服务",
+    "otherServices": "其他服务",
+    "terraceRenovation": "排屋翻新",
+    "condoRenovation": "公寓翻新"
   },
   "whatsappDesk": {
     "title": "WhatsApp 调度台",
@@ -1465,7 +1468,8 @@
   },
   "ticker": {
     "hideAria": "隐藏最新动向通知",
-    "liveDemand": "本地实时服务需求 — 不显示客户名称"
+    "liveDemand": "本地实时服务需求 — 不显示客户名称",
+    "ariaLabel": "热门本地需求"
   },
   "siteSearch": {
     "placeholder": "搜索服务...",
@@ -1483,9 +1487,29 @@
   },
   "a11y": {
     "skipToContent": "跳至主要内容",
-    "mainContent": "主要内容"
+    "mainContent": "主要内容",
+    "logoLink": "KL Servis Rumah 主页",
+    "heroSection": "家居服务概览"
   },
   "servicesIndex": {
     "whatsappService": "家居服务"
+  },
+  "heroSearch": {
+    "placeholder": "寻找任何服务...",
+    "inputAria": "搜索家居服务",
+    "clearAria": "清除搜索",
+    "submit": "搜索",
+    "noResults": "没有找到结果",
+    "tryDifferent": "尝试其他搜索词",
+    "popular": "热门搜索"
+  },
+  "areaSelector": {
+    "title": "查找您附近地区的这项服务",
+    "selectLabel": "地区",
+    "placeholder": "选择地区…",
+    "viewLocal": "查看本地页面"
+  },
+  "smartFinder": {
+    "closeAria": "关闭搜索"
   }
 }
