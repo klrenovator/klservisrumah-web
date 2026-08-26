@@ -746,6 +746,26 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
         "desc": "Retail and F&B shop fit-outs with electrical upgrades, signage readiness, and fast-track delivery."
       },
       {
+        "name": "Office Renovation & Fit-Out",
+        "price": "On Quote",
+        "desc": "Complete office fit-out: space planning, partition walls, workstations, meeting rooms, flooring, ceiling, electrical, lighting and air-con points for new or refurbished offices."
+      },
+      {
+        "name": "Retail Shop Renovation",
+        "price": "On Quote",
+        "desc": "Retail boutique, shoplot and showroom fit-out: storefront, display shelving, lighting, tiling, electrical upgrades and signage readiness."
+      },
+      {
+        "name": "Restaurant & F&B Renovation",
+        "price": "On Quote",
+        "desc": "Restaurant, cafe and F&B outlet fit-out: commercial kitchen, exhaust hood, grease trap, gas and drainage compliance, dining hall, tiling and flooring."
+      },
+      {
+        "name": "Office Partition & Workspace Build",
+        "price": "On Quote",
+        "desc": "Glass and gypsum partitions, meeting room pods, workstation clusters and sound-insulated office partitions for commercial spaces, with door and glazing integration."
+      },
+      {
         "name": "Renovation Contractor Services",
         "price": "On Quote",
         "desc": "Licensed contractor for design, hacking, structural, M&E, carpentry, painting and handover."
@@ -808,6 +828,26 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "desc": "Fit-out runcit dan F&B dengan peningkatan elektrik, kesediaan papan tanda, dan penghantaran pantas."
           },
           {
+            "name": "Pengubahsuaian & Fit-Out Pejabat",
+            "price": "Atas Sebut Harga",
+            "desc": "Fit-out pejabat lengkap: perancangan ruang, dinding partisi, stesen kerja, bilik mesyuarat, lantai, siling, elektrik, pencahayaan dan titik penghawa dingin untuk pejabat baharu atau diubah suai."
+          },
+          {
+            "name": "Pengubahsuaian Kedai Runcit",
+            "price": "Atas Sebut Harga",
+            "desc": "Fit-out butik, kedai dan ruang pameran runcit: bahagian hadapan kedai, rak paparan, pencahayaan, jubin, peningkatan elektrik dan kesediaan papan tanda."
+          },
+          {
+            "name": "Pengubahsuaian Restoran & F&B",
+            "price": "Atas Sebut Harga",
+            "desc": "Fit-out restoran, kafe dan premis F&B: dapur komersial, hud ekzos, perangkap gris, pematuhan gas dan saliran, dewan makan, jubin dan lantai."
+          },
+          {
+            "name": "Partisi Pejabat & Pembinaan Ruang Kerja",
+            "price": "Atas Sebut Harga",
+            "desc": "Partisi kaca dan gypsum, bilik mesyuarat, kluster stesen kerja dan partisi pejabat berpenebat bunyi untuk ruang komersial, termasuk integrasi pintu dan kaca."
+          },
+          {
             "name": "Perkhidmatan Kontraktor Pengubahsuaian",
             "price": "Atas Sebut Harga",
             "desc": "Kontraktor berlesen untuk reka bentuk, perobohan, struktur, M&E, pertukangan, pengecatan dan serahan."
@@ -868,6 +908,26 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "name": "商业店铺翻新",
             "price": "依报价",
             "desc": "零售与餐饮店铺装修，电路升级、招牌就位与快速交付。"
+          },
+          {
+            "name": "办公室装修与整备",
+            "price": "依报价",
+            "desc": "完整办公室装修：空间规划、隔墙、工作站、会议室、地面、天花、水电、照明与空调点位，适用于新装或翻新办公室。"
+          },
+          {
+            "name": "零售店面装修",
+            "price": "依报价",
+            "desc": "零售精品店、商铺与展示厅装修：门头、展示货架、灯光、贴砖、电路升级与招牌安装准备。"
+          },
+          {
+            "name": "餐厅与餐饮门店装修",
+            "price": "依报价",
+            "desc": "餐厅、咖啡厅与餐饮门店装修：商用厨房、排油烟罩、隔油池、燃气与排水合规、用餐区、贴砖与地面。"
+          },
+          {
+            "name": "办公室隔断与工位搭建",
+            "price": "依报价",
+            "desc": "玻璃与石膏板隔断、会议室舱位、工位组团与办公空间隔音，含门与玻璃集成，适合作商业空间。"
           },
           {
             "name": "翻新承包商服务",
