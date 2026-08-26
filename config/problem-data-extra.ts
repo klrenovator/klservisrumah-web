@@ -1427,5 +1427,192 @@ export const extraProblemPages: ProblemDetail[] = [
       { q: "Can you replace just the remote?", a: "Yes. Universal or brand-matched remotes are available, and we can program them to your unit." },
       { q: "How much to fix a remote or display issue?", a: "Diagnosis starts from RM 114, a replacement remote is inexpensive, and PCB repair starts from RM 455." }
     ]
+  },
+  // ── RENOVATION & CONNECTED-TRADE DIAGNOSTIC extras ─────────────────────
+  {
+    slug: "popping-tiles-buckling",
+    serviceSlug: "tiling",
+    title: "Popping or Buckling Floor Tiles (Jubin Meletup)",
+    symptom: "Floor tiles suddenly lift, tent upwards in an inverted V-shape, or pop with loud cracking sounds due to thermal expansion, trapped moisture, or screed debonding.",
+    costRange: "RM 350–RM 2,800+ depending on affected tile count, subfloor condition, and replacement scope",
+    urgency: "High",
+    causes: [
+      "Thermal expansion without adequate expansion joints or perimeter buffer gaps",
+      "Moisture trapped beneath tile screed causing vapor pressure debonding",
+      "Subfloor concrete slab movement, structural settlement, or poor adhesive coverage",
+      "Tiles installed using dry-pack mortar without proper bonding slurry or latex additive"
+    ],
+    solutions: [
+      "Safely remove buckled tiles and relieve perimeter pressure immediately",
+      "Hack away old hollow screed down to the solid concrete subfloor",
+      "Re-screed with high-bond polymer-modified mortar and proper perimeter movement joints",
+      "Re-lay replacement porcelain or ceramic tiles with full back-buttering adhesive coverage"
+    ],
+    whenToCall: [
+      "Multiple tiles have popped up, creating a sharp tripping and cutting hazard",
+      "Loud popping sounds are heard as tiles continue to tent across the living room or hallway",
+      "Tiles are hollow around the buckled area and at risk of sudden explosive lifting"
+    ],
+    faqs: [
+      { q: "Why do floor tiles pop or buckle suddenly in Malaysia?", a: "Malaysia's tropical heat and humidity cause tile expansion. Without expansion joints, thermal movement creates compressive stress that forces tiles upward away from debonded screed." },
+      { q: "Can popped tiles be glued back directly without hacking?", a: "No. The underlying cement bed is usually hollow or crumbled. Re-gluing without hacking the failed screed will cause the new tiles to pop again quickly." },
+      { q: "How do you prevent popping tiles during a renovation?", a: "Ensure perimeter expansion gaps (5–8mm) along walls hidden under skirting, use flexible polymer-modified tile adhesive, and back-butter each tile for 100% adhesive contact." },
+      { q: "How much does it cost to repair popped tiles in KL and Selangor?", a: "Localized repairs for a small patch start from around RM 350 to RM 600, while re-hacking and re-tiling larger living halls range from RM 1,200 to RM 2,800+ depending on tile size." }
+    ]
+  },
+  {
+    slug: "damaged-gypsum-partition-wall",
+    serviceSlug: "plaster-ceiling",
+    title: "Damaged Gypsum Partition Wall or Holes",
+    symptom: "Gypsum drywalls or office partition walls show impact holes, dented corners, sagging stud framing, or moisture-softened board sections.",
+    costRange: "RM 180–RM 1,200+ depending on hole size, stud frame damage, and repainting scope",
+    urgency: "Medium",
+    causes: [
+      "Direct physical impact from furniture moves, door handles, or heavy items",
+      "Moisture exposure from floor washing or hidden pipe drips softening gypsum core",
+      "Inadequate galvanized stud framing spacing or loose self-drilling screws",
+      "Heavy wall-mounted fixtures (cabinets, TVs) installed without backing timber or heavy-duty anchors"
+    ],
+    solutions: [
+      "Cut damaged drywall cleanly to adjacent stud centers for rectangular backing support",
+      "Reinforce or replace deformed C-stud and U-track metal framing",
+      "Install replacement moisture-resistant or standard gypsum board patch with self-adhesive mesh tape",
+      "Apply multi-layer skim coat plastering, feather edges, sand smooth, and prime before painting"
+    ],
+    whenToCall: [
+      "Hole exceeds 15cm (6 inches) across or extends across metal framing studs",
+      "Partition wall wobbles, flexes noticeably, or feels loose when pushed",
+      "Gypsum board has softened, crumbled, or grown mold from water seepage"
+    ],
+    faqs: [
+      { q: "Can a hole in a gypsum partition wall be repaired invisibly?", a: "Yes. Professional drywall repair uses timber backing, bevelled gypsum patches, fiber joint tape, and multi-layer feathered skim coating to create a completely seamless finish after painting." },
+      { q: "What causes gypsum partition walls to soften or crumble at the base?", a: "Regular floor mopping without baseboard skirting or water seepage from nearby bathrooms allows water to wick into the gypsum core, breaking down the plaster structure." },
+      { q: "Can I hang a TV or heavy shelf on a repaired gypsum partition?", a: "Heavy items should be anchored directly into the metal C-studs or reinforced with plywood backing installed behind the drywall during repair, not into hollow plasterboard." },
+      { q: "How much does gypsum partition wall repair cost in KL & Selangor?", a: "Small patch repairs (doorknob holes) start from RM 180–RM 300, while larger board replacements with stud reinforcement and repainting range from RM 450 to RM 1,200." }
+    ]
+  },
+  {
+    slug: "old-bathroom-plumbing-tiles",
+    serviceSlug: "bathroom-renovation",
+    title: "Aging Bathroom with Deteriorated Pipes & Tiles",
+    symptom: "Outdated 15–25 year old bathroom suffers from rusty water, concealed pipe drips, porous worn tiles, stubborn lime stains, foul drain odors, and failing waterproofing.",
+    costRange: "RM 800–RM 8,500+ depending on minor overhaul vs complete hacking and waterproofing re-build",
+    urgency: "Medium",
+    causes: [
+      "Old galvanized iron (GI) pipes corroded internally, causing rust deposits and pinhole leaks",
+      "Degraded waterproofing membrane beneath bathroom floor tiles allowing inter-floor seepage",
+      "Porous, dated ceramic tiles with eroded grout lines harboring mold and dirty water",
+      "Outdated sanitary fixtures and faulty P-trap floor drains allowing sewer gas backflow"
+    ],
+    solutions: [
+      "Conduct pressure diagnostic and acoustic leak inspection on concealed supply lines",
+      "Replace corroded GI pipes with corrosion-proof PPR or stainless-steel piping",
+      "Complete bathroom hacking, subfloor leveling, and application of 3-layer elastomeric waterproofing membrane",
+      "Re-tile with modern non-slip porcelain tiles and install water-efficient sanitaryware with anti-odor floor traps"
+    ],
+    whenToCall: [
+      "Water pressure from shower and taps has dropped significantly with yellowish tint",
+      "Lower-floor neighbour complains of damp stains or water dripping from ceiling slab",
+      "Persistent sewer odor, loose floor tiles, or chronic mold despite frequent deep cleaning"
+    ],
+    faqs: [
+      { q: "Is it better to repair an old bathroom piecemeal or do a full renovation overhaul?", a: "For bathrooms over 15–20 years old with concealed GI pipes and failing waterproofing, piecemeal repairs often lead to repeat leaks. A complete hack-and-replace renovation resolves piping, waterproofing, and aesthetics in one go." },
+      { q: "How long does a full bathroom renovation overhaul take in KL?", a: "A standard condo or terrace bathroom renovation typically takes 7 to 12 working days, including hacking, pipe re-routing, 3-day waterproofing flood test, tiling, and sanitary installation." },
+      { q: "Can bathroom renovation be done without hacking tiles?", a: "Overlaying tiles and chemical waterproofing can work for minor cosmetic upgrades, but if concealed pipes are leaking or the subfloor membrane is failed, hacking to the bare slab is necessary." },
+      { q: "What is the typical cost to overhaul an old bathroom in KL & Selangor?", a: "Targeted pipe and fixture replacement starts from RM 800–RM 2,000, while a complete hack-down bathroom overhaul with new waterproofing, tiling, and sanitaryware ranges from RM 4,500 to RM 8,500+." }
+    ]
+  },
+  {
+    slug: "old-kitchen-cabinet-plumbing-damage",
+    serviceSlug: "kitchen-renovation",
+    title: "Water-Damaged Sink Cabinet & Aging Kitchen Layout",
+    symptom: "Kitchen under-sink cabinet base is swollen, rotted, or termite-infested from chronic sink trap drips, while outdated electrical points and poor layout hinder cooking.",
+    costRange: "RM 450–RM 8,000+ depending on sink base cabinet replacement vs comprehensive kitchen remodeling",
+    urgency: "Medium",
+    causes: [
+      "Slow drips from sink bottle trap, flexible hose, or mixer tap base soaking chipboard or MDF",
+      "Non-waterproof melamine or particle board base cabinets in wet kitchen environments",
+      "Old grease-choked PVC waste pipes causing frequent kitchen sink backups",
+      "Insufficient 13A/15A socket outlets and outdated DB circuits unable to support modern ovens and induction hobs"
+    ],
+    solutions: [
+      "Replace rotted timber/MDF sink base with waterproof aluminium or solid plywood carcass with aluminium foil lining",
+      "Re-plumb kitchen sink drainage with heavy-duty PVC piping, cleanout access, and leak-free brass bottle trap",
+      "Upgrade kitchen electrical wiring with dedicated circuits for high-wattage appliances",
+      "Reconfigure layout into efficient wet and dry kitchen zones with durable quartz or granite countertops"
+    ],
+    whenToCall: [
+      "Under-sink cabinet bottom has collapsed or smells strongly of mold and rot",
+      "Sink leaks repeatedly into the cabinet despite tightening DIY fittings",
+      "Circuit breaker trips whenever multiple kitchen appliances (oven, air fryer, microwave) run together"
+    ],
+    faqs: [
+      { q: "What is the best material for under-sink kitchen cabinets to prevent water damage?", a: "Aluminium carcasses or high-grade marine plywood with waterproof laminate and internal aluminium foil liners provide the best resistance against future plumbing drips." },
+      { q: "Can I replace just the water-damaged sink base cabinet without redoing the entire kitchen?", a: "Yes. KL Servis Rumah can modularly dismantle and replace the damaged sink carcass while preserving your existing solid countertop and surrounding cabinets." },
+      { q: "Do kitchen renovations require upgrading electrical points and wiring?", a: "Yes. Older kitchens often lack dedicated 15A/20A circuits for induction hobs, built-in ovens, and dishwashers. Upgrading wiring prevents dangerous MCB tripping." },
+      { q: "How much does it cost to fix a water-damaged sink cabinet in KL?", a: "Sink plumbing leak repair and base reinforcement start from RM 450–RM 900, while custom waterproof aluminium sink cabinet replacement ranges from RM 1,200 to RM 2,800." }
+    ]
+  },
+  {
+    slug: "uneven-floor-subfloor-leveling",
+    serviceSlug: "flooring",
+    title: "Uneven Concrete Subfloor Before Flooring Installation",
+    symptom: "Existing bare concrete slab or hacked subfloor has bumps, hollow dips, wave patterns, or height discrepancies exceeding 3mm, causing new tiles, SPC, or vinyl to bounce and click.",
+    costRange: "RM 3.50–RM 12.00 / sq ft depending on leveling thickness and self-leveling compound required",
+    urgency: "Medium",
+    causes: [
+      "Poor initial concrete slab casting or unlevel rough cement screeding",
+      "Uneven tile hacking leaving chisel marks, mortar ridges, and hollow depressions",
+      "Floor settlement over time causing sloped or concave subfloor sections",
+      "Expansion joint ridges or improper floor transitions between rooms"
+    ],
+    solutions: [
+      "Grind down high concrete ridges and bumps using diamond cup floor grinder",
+      "Vacuum dust thoroughly and apply high-penetration acrylic bonding primer",
+      "Pour polymer-modified self-leveling underlayment compound to achieve a flat, laser-level surface",
+      "Verify flatness with a 2-meter straightedge (tolerance under 2mm over 2 meters) before installing SPC or tiles"
+    ],
+    whenToCall: [
+      "Newly laid SPC click-lock or vinyl planks feel bouncy, hollow, or make clicking noises when walked on",
+      "Subfloor height difference exceeds 3mm over a 1-meter span before flooring installation",
+      "Water puddles in low spots during mopping or floor preparation"
+    ],
+    faqs: [
+      { q: "Why must concrete subfloors be leveled before laying SPC or vinyl flooring?", a: "SPC click-lock and vinyl flooring are semi-rigid. If installed over dips or ridges, the locking tongue-and-groove joints experience cyclic stress, breaking and causing seams to separate." },
+      { q: "What is self-leveling cement compound and how does it work?", a: "Self-leveling compound is a polymer-modified, free-flowing cementitious slurry that flows into low spots under gravity, curing into a dense, glassy-flat surface ready for flooring within 24 hours." },
+      { q: "Can self-leveling compound be applied over old tiles?", a: "Yes, provided the existing tiles are solid, non-hollow, degreased, and treated with an epoxy or polymer bonding primer for mechanical adhesion." },
+      { q: "How much does floor leveling and screeding cost in KL & Selangor?", a: "Minor cement patch leveling starts from RM 3.50–RM 5.50 per sq ft, while premium self-leveling underlayment ranges from RM 6.50 to RM 12.00 per sq ft depending on required thickness." }
+    ]
+  },
+  {
+    slug: "wall-cracks-settlement-masonry",
+    serviceSlug: "house-renovation",
+    title: "Masonry Wall Settlement Cracks & Extension Separation",
+    symptom: "Diagonal stepped cracks appear across brick walls, vertical gap forms at the junction where a kitchen extension meets the main house, or window/door frames show diagonal shear cracks.",
+    costRange: "RM 600–RM 4,500+ depending on non-structural settlement stitching vs structural underpinning inspection",
+    urgency: "High",
+    causes: [
+      "Differential soil settlement beneath house extension footings or terrace foundations",
+      "Lack of proper steel starter bars (dowel bars) tying extension brickwork to the original structural column",
+      "Thermal expansion and contraction cycles between dissimilar building materials",
+      "Vibration from nearby heavy road traffic or major construction piling"
+    ],
+    solutions: [
+      "Conduct structural assessment to distinguish non-progressive settlement from active foundation failure",
+      "Install helical stainless-steel crack stitches or rebar stitching across masonry joint lines",
+      "Inject structural epoxy or non-shrink cementitious grout into deep brickwork cracks",
+      "Apply flexible elastomeric sealant at extension expansion joints followed by mesh reinforcement and skim plaster"
+    ],
+    whenToCall: [
+      "Crack width exceeds 3mm (coin thickness) or shows horizontal displacement or stepped brick pattern",
+      "Separation gap between kitchen/porch extension and main house widens over time",
+      "Doors or windows in the affected wall stick, jam, or cannot latch properly"
+    ],
+    faqs: [
+      { q: "How do I know if a wall crack is cosmetic or structural?", a: "Cosmetic hairline cracks are usually under 1mm and stay within the plaster layer. Structural settlement cracks are wider (>3mm), step along brick mortar joints, go through the wall, or cause doors to stick." },
+      { q: "Why do kitchen extensions often crack along the joint with the main house?", a: "New extensions settle at a different rate than the original decades-old house foundation. If starter rebar was omitted, thermal movement and soil settlement create a visible separation line." },
+      { q: "Can a cracked brick wall be repaired permanently without rebuilding?", a: "Yes. Once settlement has stabilized, helical rebar stitching embedded in polymer resin locks the masonry together, followed by flexible joint sealing and skim coat repainting." },
+      { q: "How much does masonry wall crack repair cost in KL & Selangor?", a: "Localized crack stitching and skim replastering start from RM 600–RM 1,200 per crack line, while extensive structural joint reinforcement and stabilization range from RM 2,200 to RM 4,500+." }
+    ]
   }
 ];

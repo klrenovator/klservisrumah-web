@@ -1648,6 +1648,120 @@ export const problemNavList: ProblemNavItem[] = [
         "costRange": "RM 114–RM 455，视故障而定"
       }
     }
+  },
+  {
+    "slug": "popping-tiles-buckling",
+    "serviceSlug": "tiling",
+    "title": "Popping or Buckling Floor Tiles (Jubin Meletup)",
+    "symptom": "Floor tiles suddenly lift, tent upwards in an inverted V-shape, or pop with loud cracking sounds due to thermal expansion, trapped moisture, or screed debonding.",
+    "costRange": "RM 350–RM 2,800+ depending on affected tile count, subfloor condition, and replacement scope",
+    "i18n": {
+      "ms": {
+        "title": "Jubin Lantai Meletup atau Meleding (Jubin Naik)",
+        "symptom": "Floor tiles suddenly lift, tent upwards in an inverted V-shape, or pop with loud cracking sounds due to thermal expansion, trapped moisture, or screed debonding.",
+        "costRange": "RM 350–RM 2,800+ bergantung kepada skop dan bilangan jubin"
+      },
+      "zh": {
+        "title": "地砖起拱爆裂（地砖爆炸凸起）",
+        "symptom": "Floor tiles suddenly lift, tent upwards in an inverted V-shape, or pop with loud cracking sounds due to thermal expansion, trapped moisture, or screed debonding.",
+        "costRange": "RM 350–RM 2,800+，视瓷砖数量与基层而定"
+      }
+    }
+  },
+  {
+    "slug": "damaged-gypsum-partition-wall",
+    "serviceSlug": "plaster-ceiling",
+    "title": "Damaged Gypsum Partition Wall or Holes",
+    "symptom": "Gypsum drywalls or office partition walls show impact holes, dented corners, sagging stud framing, or moisture-softened board sections.",
+    "costRange": "RM 180–RM 1,200+ depending on hole size, stud frame damage, and repainting scope",
+    "i18n": {
+      "ms": {
+        "title": "Dinding Pemisah Gipsum Berlubang atau Rosak",
+        "symptom": "Gypsum drywalls or office partition walls show impact holes, dented corners, sagging stud framing, or moisture-softened board sections.",
+        "costRange": "RM 180–RM 1,200+ bergantung kepada saiz lubang dan struktur rangka"
+      },
+      "zh": {
+        "title": "石膏隔断墙损坏破洞（轻钢龙骨隔墙修复）",
+        "symptom": "Gypsum drywalls or office partition walls show impact holes, dented corners, sagging stud framing, or moisture-softened board sections.",
+        "costRange": "RM 180–RM 1,200+，视破洞大小与龙骨加固而定"
+      }
+    }
+  },
+  {
+    "slug": "old-bathroom-plumbing-tiles",
+    "serviceSlug": "bathroom-renovation",
+    "title": "Aging Bathroom with Deteriorated Pipes & Tiles",
+    "symptom": "Outdated 15–25 year old bathroom suffers from rusty water, concealed pipe drips, porous worn tiles, stubborn lime stains, foul drain odors, and failing waterproofing.",
+    "costRange": "RM 800–RM 8,500+ depending on minor overhaul vs complete hacking and waterproofing re-build",
+    "i18n": {
+      "ms": {
+        "title": "Masalah Bilik Mandi Usang, Paip Berkarat & Jubin Lusuh",
+        "symptom": "Outdated 15–25 year old bathroom suffers from rusty water, concealed pipe drips, porous worn tiles, stubborn lime stains, foul drain odors, and failing waterproofing.",
+        "costRange": "RM 800–RM 8,500+ bergantung kepada pembaikan paip vs ubah suai penuh"
+      },
+      "zh": {
+        "title": "老旧浴室暗管老化、水压偏小与瓷砖渗水",
+        "symptom": "Outdated 15–25 year old bathroom suffers from rusty water, concealed pipe drips, porous worn tiles, stubborn lime stains, foul drain odors, and failing waterproofing.",
+        "costRange": "RM 800–RM 8,500+，视局部换管还是全拆重装而定"
+      }
+    }
+  },
+  {
+    "slug": "old-kitchen-cabinet-plumbing-damage",
+    "serviceSlug": "kitchen-renovation",
+    "title": "Water-Damaged Sink Cabinet & Aging Kitchen Layout",
+    "symptom": "Kitchen under-sink cabinet base is swollen, rotted, or termite-infested from chronic sink trap drips, while outdated electrical points and poor layout hinder cooking.",
+    "costRange": "RM 450–RM 8,000+ depending on sink base cabinet replacement vs comprehensive kitchen remodeling",
+    "i18n": {
+      "ms": {
+        "title": "Kerosakan Kabinet Sinki Dapur Akibat Paip Bocor",
+        "symptom": "Kitchen under-sink cabinet base is swollen, rotted, or termite-infested from chronic sink trap drips, while outdated electrical points and poor layout hinder cooking.",
+        "costRange": "RM 450–RM 8,000+ bergantung kepada gantian dasar sinki vs ubah suai dapur"
+      },
+      "zh": {
+        "title": "厨房水槽柜受潮腐烂、水管渗漏与老旧翻新",
+        "symptom": "Kitchen under-sink cabinet base is swollen, rotted, or termite-infested from chronic sink trap drips, while outdated electrical points and poor layout hinder cooking.",
+        "costRange": "RM 450–RM 8,000+，视单换水槽底柜还是整体厨房翻新而定"
+      }
+    }
+  },
+  {
+    "slug": "uneven-floor-subfloor-leveling",
+    "serviceSlug": "flooring",
+    "title": "Uneven Concrete Subfloor Before Flooring Installation",
+    "symptom": "Existing bare concrete slab or hacked subfloor has bumps, hollow dips, wave patterns, or height discrepancies exceeding 3mm, causing new tiles, SPC, or vinyl to bounce and click.",
+    "costRange": "RM 3.50–RM 12.00 / sq ft depending on leveling thickness and self-leveling compound required",
+    "i18n": {
+      "ms": {
+        "title": "Lantai Konkrit Tidak Rata Sebelum Pasang Jubin atau Lantai SPC",
+        "symptom": "Existing bare concrete slab or hacked subfloor has bumps, hollow dips, wave patterns, or height discrepancies exceeding 3mm, causing new tiles, SPC, or vinyl to bounce and click.",
+        "costRange": "RM 3.50–RM 12.00 / kaki persegi bergantung kepada ketebalan self-leveling"
+      },
+      "zh": {
+        "title": "铺贴 SPC 地板或瓷砖前地面不平整与自流平找平",
+        "symptom": "Existing bare concrete slab or hacked subfloor has bumps, hollow dips, wave patterns, or height discrepancies exceeding 3mm, causing new tiles, SPC, or vinyl to bounce and click.",
+        "costRange": "每平方英尺 RM 3.50–RM 12.00，视找平厚度与自流平材料而定"
+      }
+    }
+  },
+  {
+    "slug": "wall-cracks-settlement-masonry",
+    "serviceSlug": "house-renovation",
+    "title": "Masonry Wall Settlement Cracks & Extension Separation",
+    "symptom": "Diagonal stepped cracks appear across brick walls, vertical gap forms at the junction where a kitchen extension meets the main house, or window/door frames show diagonal shear cracks.",
+    "costRange": "RM 600–RM 4,500+ depending on non-structural settlement stitching vs structural underpinning inspection",
+    "i18n": {
+      "ms": {
+        "title": "Retak Struktur Dinding Bata & Sambungan Tambahan Rumah",
+        "symptom": "Diagonal stepped cracks appear across brick walls, vertical gap forms at the junction where a kitchen extension meets the main house, or window/door frames show diagonal shear cracks.",
+        "costRange": "RM 600–RM 4,500+ bergantung kepada kaedah jahitan keluli vs pengukuhan"
+      },
+      "zh": {
+        "title": "房屋沉降砖墙阶梯裂缝与扩建接缝分离开裂",
+        "symptom": "Diagonal stepped cracks appear across brick walls, vertical gap forms at the junction where a kitchen extension meets the main house, or window/door frames show diagonal shear cracks.",
+        "costRange": "RM 600–RM 4,500+，视裂缝缝合加固与结构勘测范围而定"
+      }
+    }
   }
 ];
 

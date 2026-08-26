@@ -872,6 +872,150 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     causes: ["Bateri remote lemah atau berkarat", "Sensor remote atau papan penerima rosak", "Pendawaian paparan longgar", "Papan PCB utama rosak"],
     solutions: ["Ganti bateri remote", "Uji dan ganti remote atau penerima", "Pasang semula penyambung paparan", "Baiki atau ganti papan kawalan PCB"],
     whenToCall: ["Remote hanya berfungsi pada jarak sangat dekat", "Paparan menunjukkan kod ralat", "Paparan berkelip atau kekal kosong"]
+  },
+  "popping-tiles-buckling": {
+    symptom: "Jubin lantai tiba-tiba terangkat, meleding membentuk huruf V terbalik, atau meletup dengan bunyi retakan kuat akibat pengembangan haba, kelembapan terperangkap, atau lepaan simen lekang.",
+    causes: [
+      "Pengembangan haba tanpa jurang pengembangan atau ruang penimbal di perimeter dinding",
+      "Kelembapan terperangkap di bawah lepaan jubin menghasilkan tekanan wap",
+      "Pergerakan papak konkrit asas, enapan struktur, atau liputan simen pelekat tidak rata",
+      "Pemasangan menggunakan kaedah lepaan kering tanpa bancuhan simen pelekat atau lateks yang mencukupi"
+    ],
+    solutions: [
+      "Keluarkan jubin yang meleding dengan selamat serta-merta untuk melegakan tekanan",
+      "Pecahkan lepaan simen lama yang berongga sehingga sampai ke papak konkrit kukuh",
+      "Lepa semula dengan mortar polimer berdaya lekatan tinggi dan sediakan jurang pergerakan perimeter",
+      "Pasang semula jubin porselin atau seramik gantian dengan liputan pelekat 100% penuh"
+    ],
+    whenToCall: [
+      "Banyak kepingan jubin terangkat secara mendadak dan membahayakan keselamatan penghuni",
+      "Bunyi meletup berterusan kedengaran dan jubin terus meleding merentasi ruang tamu",
+      "Jubin di sekeliling kawasan terangkat berbunyi kosong dan berisiko meletup bila-bila masa"
+    ],
+    localFaq: {
+      q: "Bolehkah jubin meletup ditampal semula menggunakan gam tanpa pecahkan simen lama?",
+      a: "Tidak disyorkan. Lapisan simen di bawah biasanya sudah lekang dan hancur. Gam baru tidak akan tahan lama dan jubin akan meletup semula."
+    }
+  },
+  "damaged-gypsum-partition-wall": {
+    symptom: "Dinding sekatan gipsum atau pemisah pejabat berlubang akibat hentaman, bucu kemek, rangka besi melendut, atau papan gipsum menjadi lembut akibat kelembapan.",
+    causes: [
+      "Hentaman fizikal daripada pemindahan perabot berat atau hentakan tombol pintu",
+      "Pendedahan air basuhan lantai atau kebocoran paip tersembunyi yang melembutkan teras gipsum",
+      "Jarak rangka besi stud C terlalu luas atau skru pengikat telah longgar",
+      "Pemasangan perabot gantung berat tanpa papan sokongan kayu di belakang dinding"
+    ],
+    solutions: [
+      "Potong bahagian gipsum yang rosak dengan kemas sehingga ke tengah rangka stud terdekat",
+      "Kukuhkan atau ganti rangka stud C dan trek U logam yang telah bengkok",
+      "Pasang tampalan papan gipsum baharu dengan pita gentian jaring pelekat sendiri",
+      "Lakukan kerja lepaan skim coat berlapis, ratakan tepi, gosok licin, dan sapu primer sebelum mengecat"
+    ],
+    whenToCall: [
+      "Lubang melebihi saiz 15cm atau merentasi rangka besi dinding",
+      "Dinding pemisah bergoyang atau terasa longgar apabila ditolak dengan tangan",
+      "Papan gipsum telah lembik, berlumut, atau mereput akibat resapan air"
+    ],
+    localFaq: {
+      q: "Bolehkah lubang pada dinding pemisah gipsum dibaiki tanpa meninggalkan kesan?",
+      a: "Ya. Juruteknik kami menggunakan tampalan berpemotong serong, pita jaring gentian, dan skim coat bertingkat yang digosok rata sehingga permukaan kembali sempurna selepas dicat."
+    }
+  },
+  "old-bathroom-plumbing-tiles": {
+    symptom: "Bilik mandi berusia 15–25 tahun mengalami air berkarat, kebocoran paip tersembunyi, jubin lusuh dan licin, karat kapur degil, bau longkang, dan kalis air yang gagal.",
+    causes: [
+      "Paip besi galvani lama berkarat di bahagian dalam, menyebabkan karat dan kebocoran halus",
+      "Lapisan membran kalis air di bawah lantai sudah reput dan meresap ke tingkat bawah",
+      "Jubin seramik lama dengan garisan grout terkikis memerangkap kotoran dan bakteria",
+      "Peralatan sanitari usang dan perangkap lantai tidak kedap membenarkan bau pembetung naik"
+    ],
+    solutions: [
+      "Lakukan ujian tekanan dan pengesanan akustik untuk kenal pasti paip bocor tersembunyi",
+      "Ganti paip besi berkarat dengan paip PPR atau keluli tahan karat kalis kakisan",
+      "Pecahkan jubin lama, ratakan lantai, dan sapukan 3 lapisan membran kalis air elastometrik",
+      "Pasang semula jubin porselin antikarat dan pasang mangkuk tandas serta perangkap lantai antibau"
+    ],
+    whenToCall: [
+      "Tekanan air pancuran mandian dan pili semakin perlahan serta berwarna kekuningan",
+      "Jiran tingkat bawah mengadu kesan tompok air atau titisan dari siling konkrit",
+      "Bau longkang berlarutan, jubin lantai longgar, atau kulat kronik sukar dibersihkan"
+    ],
+    localFaq: {
+      q: "Adakah lebih baik baiki sedikit demi sedikit atau buat ubah suai penuh bilik mandi lama?",
+      a: "Bagi bilik mandi melebihi 15 tahun dengan paip besi lama, membaiki secara bertampal sering menyebabkan kebocoran berulang. Ubah suai penuh menyelesaikan paip, kalis air, dan reka bentuk secara kekal."
+    }
+  },
+  "old-kitchen-cabinet-plumbing-damage": {
+    symptom: "Bahagian bawah kabinet sinki kembang, mereput atau diserang anai-anai akibat titisan paip sinki yang berterusan, sementara susun atur dan soket elektrik usang mengehadkan penggunaan dapur.",
+    causes: [
+      "Titisan perlahan daripada perangkap botol sinki, hos fleksibel, atau sambungan paip membasahi kayu cipboard",
+      "Penggunaan bahan melamin atau particle board yang tidak kalis air di kawasan dapur basah",
+      "Paip buangan PVC lama yang tersumbat dengan sisa lemak menyebabkan air bertakung kerap melimpah",
+      "Kekurangan punca soket 13A/15A dan litar DB lama yang tidak dapat menampung perkakas elektrik moden"
+    ],
+    solutions: [
+      "Ganti bangkai bawah kabinet sinki yang reput dengan bahan aluminium kalis air atau papan lapis marin berlapik aluminium",
+      "Pasang semula paip buangan sinki PVC tahan lasak dengan injap cuci dan perangkap tembaga kedap",
+      "Naik taraf pendawaian elektrik dapur dengan litar khusus untuk ketuhar dan dapur induksi",
+      "Susun semula reka letak zon dapur basah dan kering dengan permukaan meja kuarza atau granit tahan lasak"
+    ],
+    whenToCall: [
+      "Lantai dasar kabinet bawah sinki telah runtuh atau berbau reput dan berkulat kuat",
+      "Air sinki kerap bocor ke dalam kabinet walaupun sambungan DIY telah diketatkan",
+      "Pemutus litar elektrik kerap trip apabila menggunakan perkakas memasak secara serentak"
+    ],
+    localFaq: {
+      q: "Bolehkah saya menukar bahagian bawah kabinet sinki sahaja tanpa menukar keseluruhan kabinet dapur?",
+      a: "Ya. KL Servis Rumah boleh merombak dan menggantikan bangkai bawah sinki yang rosak secara modular menggunakan aluminium kalis air tanpa menjejaskan table top sedia ada."
+    }
+  },
+  "uneven-floor-subfloor-leveling": {
+    symptom: "Papak konkrit asal atau lantai selepas dipecahkan bergelombang, berlubang, atau mempunyai perbezaan ketinggian melebihi 3mm sehingga menyebabkan jubin, SPC atau vinil berketuk dan melantun.",
+    causes: [
+      "Kerja penuangan papak konkrit asal atau lepaan simen kasar yang tidak rata",
+      "Kerja memecahkan jubin lama meninggalkan kesan pahat, bonggol simen, dan lekukan berongga",
+      "Mendapan lantai dari masa ke masa yang menghasilkan permukaan condong atau melengkung",
+      "Bonggol pada garisan sambungan pengembangan antara bilik yang tidak diratakan"
+    ],
+    solutions: [
+      "Ratakan bonggol dan rabung konkrit tinggi menggunakan mesin pencanai lantai berlian",
+      "Sedut habuk halus sehingga bersih dan sapukan primer akrilik berdaya serapan tinggi",
+      "Tuangkan bancuhan simen self-leveling polimer untuk menghasilkan permukaan rata berketepatan laser",
+      "Periksa kerataan dengan pembaris lurus 2 meter sebelum memasang kemasan lantai"
+    ],
+    whenToCall: [
+      "Lantai SPC click-lock atau vinil yang baru dipasang berbunyi klik dan terasa melantun apabila dipijak",
+      "Perbezaan ketinggian lantai melebihi 3mm dalam jarak 1 meter sebelum pemasangan lantai bermula",
+      "Air bertakung di kawasan lekuk semasa lantai dimop atau dibersihkan"
+    ],
+    localFaq: {
+      q: "Mengapakah lantai konkrit mesti diratakan dengan self-leveling sebelum memasang lantai SPC?",
+      a: "Papan SPC bersifat separa tegar. Jika dipasang di atas permukaan tidak rata, sambungan kunci (click-lock) akan menerima tekanan lenturan berulang lalu patah dan renggang."
+    }
+  },
+  "wall-cracks-settlement-masonry": {
+    symptom: "Retak pepenjuru bertingkat muncul pada dinding bata, celah menegak terbentuk di sambungan bahagian tambahan rumah, atau bingkai pintu dan tingkap menunjukkan retak ricih.",
+    causes: [
+      "Enapan tanah yang berbeza di bawah tapak tambahan rumah atau asas rumah teres",
+      "Ketiadaan besi penghubung mengikat dinding bata tambahan kepada tiang struktur asal",
+      "Kitaran pengembangan dan pengecutan haba antara bahan binaan yang berbeza",
+      "Gegaran daripada lalu lintas kenderaan berat berdekatan atau kerja penanaman cerucuk projek sekitar"
+    ],
+    solutions: [
+      "Lakukan pemeriksaan penilaian struktur bagi membezakan retak enapan biasa dengan kegagalan asas aktif",
+      "Pasang jahitan bar keluli tahan karat heliks merentasi garisan retakan bata",
+      "Suntik bahan epoksi struktur atau grouting simen tidak mengecut ke dalam celah retakan dalam",
+      "Sapukan pengedap elastometrik fleksibel pada sambungan pengembangan disusuli jaring pengukuh dan lepaan skim coat"
+    ],
+    whenToCall: [
+      "Lebar retakan melebihi 3mm atau menunjukkan corak retak bertingkat pada dinding bata",
+      "Celah pemisah antara bahagian dapur atau anjung tambahan dan rumah utama semakin membesar",
+      "Pintu atau tingkap pada dinding yang terjejas menjadi ketat, tersangkut, atau tidak dapat dikunci"
+    ],
+    localFaq: {
+      q: "Bagaimanakah saya tahu sama ada retak dinding itu retak kosmetik atau retak struktur?",
+      a: "Retak kosmetik halus biasanya di bawah 1mm dan hanya pada lapisan cat/plaster. Retak struktur pula lebih lebar (>3mm), mengikut garisan mortar bata, tembus ke sebelah dinding, atau menyebabkan pintu sangkut."
+    }
   }
 };
 
@@ -1716,6 +1860,150 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     causes: ["遥控器电池没电或腐蚀", "遥控传感器或接收板故障", "显示屏接线松动", "主板 PCB 故障"],
     solutions: ["更换遥控器电池", "检测并更换遥控器或接收器", "重新插紧显示屏连接线", "维修或更换 PCB 控制板"],
     whenToCall: ["遥控器只有凑很近才有反应", "显示屏出现故障代码", "显示屏闪烁或一直黑屏"]
+  },
+  "popping-tiles-buckling": {
+    symptom: "地砖突然凸起拱起呈倒 V 字形，或伴随巨大碎裂爆响破裂弹出，主要由热胀冷缩、水泥砂浆空鼓脱层或潮气膨胀引起。",
+    causes: [
+      "地砖热胀冷缩且四周未留足伸缩缝或踢脚线缓冲缝隙",
+      "地砖下方砂浆层潮气受热蒸发产生气压导致粘结脱离",
+      "水泥地基结构微沉降、收缩或铺贴时水泥砂浆涂抹不均匀",
+      "采用干浆铺贴但未涂抹足量纯水泥浆或聚合物界面剂"
+    ],
+    solutions: [
+      "立即安全撬起拱起地砖释放四周挤压应力，防止伤人",
+      "彻底凿除松散空鼓的原有水泥砂浆层直至坚硬混凝土楼板",
+      "使用高粘结聚合物砂浆重新找平并规范预留周边伸缩缝",
+      "采用瓷砖胶进行双面满刮涂抹，重新铺贴全瓷或陶瓷地砖"
+    ],
+    whenToCall: [
+      "多块地砖突然大面积起拱爆裂，形成尖锐绊倒与划伤隐患",
+      "地面持续传出咔咔爆裂声且拱起范围向客厅走廊扩散",
+      "爆裂区域周边地砖敲击声音明显空鼓，存在二次起拱风险"
+    ],
+    localFaq: {
+      q: "地砖起拱后可以直接用胶水粘回去而不打掉旧水泥吗？",
+      a: "不建议。起拱地砖下方的原有水泥砂浆通常已粉化空鼓，直接贴胶无法承重，短时间内会再次脱落起拱。"
+    }
+  },
+  "damaged-gypsum-partition-wall": {
+    symptom: "石膏板隔断墙或办公室轻钢龙骨隔墙出现撞击穿孔、凹陷破损、龙骨松动变形或底部受潮软化粉化。",
+    causes: [
+      "搬运重型家具、门把手猛烈撞击或硬物外力冲击",
+      "拖地积水或暗管渗水使水分顺着踢脚线渗入软化石膏板芯材",
+      "轻钢龙骨间距过大或自攻螺丝固定松动导致墙体不稳",
+      "在未经加固的空心石膏板上悬挂重型电视柜或置物架"
+    ],
+    solutions: [
+      "将破损区域规整切割至临近龙骨中心，安装背面木质支撑垫板",
+      "校正或加固变形的 C 型轻钢竖向龙骨与 U 型天地龙骨",
+      "裁切匹配的防潮或标准石膏板修补块并贴覆自粘玻璃纤维接缝网带",
+      "分层批刮多道填缝石膏与面层批灰，羽状打磨平整后涂刷底漆面漆"
+    ],
+    whenToCall: [
+      "墙面破洞直径超过 15 厘米或跨越龙骨支架",
+      "隔断墙用手推按时明显摇晃、变形或连接处脱落",
+      "石膏板因渗水发霉、发黑、软化捏碎"
+    ],
+    localFaq: {
+      q: "石膏板隔断墙上的破洞修补后能做到看不出痕迹吗？",
+      a: "可以。专业师傅会加装背板支撑、嵌入匹配石膏板、贴网格带并进行多道渐变羽化批灰打磨，重新涂漆后完全恢复平整无痕。"
+    }
+  },
+  "old-bathroom-plumbing-tiles": {
+    symptom: "房龄 15–25 年的老旧浴室面临暗管锈蚀漏水、水压偏小发黄、瓷砖磨损渗色、水垢顽固难除、地漏返味及防水层老化失效等综合问题。",
+    causes: [
+      "老旧镀锌铁管内壁严重生锈结垢，导致水质发黄及隐蔽沙眼漏水",
+      "地砖下方原装防水卷材或沥青层老化开裂，导致楼下天花板渗水",
+      "老式陶瓷地砖吸水率高且填缝剂脱落，积聚污垢并渗入楼板",
+      "老旧卫浴洁具密封圈老化且地漏存水弯干涸，导致下水道异味返涌"
+    ],
+    solutions: [
+      "使用管路打压与声波探测排查暗敷水管渗漏点",
+      "全面剔除老旧铁管，改装耐腐蚀 PPR 热熔管或不锈钢水管",
+      "彻底凿除旧地砖与老旧找平层，重做三道高分子弹性防水涂层与蓄水试验",
+      "重新铺设防滑防渗全瓷地砖并安装防臭防返溢地漏与现代节水洁具"
+    ],
+    whenToCall: [
+      "花洒和水龙头出水明显变小且偶尔带有黄褐色铁锈水",
+      "楼下邻居反映卫生间对应位置天花板出现水渍、掉皮或滴水",
+      "卫生间长期散发下水道异味，地砖松动空鼓，瓷砖缝隙长霉洗不掉"
+    ],
+    localFaq: {
+      q: "老旧浴室是局部小修划算还是整体翻新重做更好？",
+      a: "对超过 15 年且水管埋在墙内地下的老浴室，局部修补往往修了这头漏那头。整体拆旧重做管线与防水能从根本上杜绝漏水并全面升级空间。"
+    }
+  },
+  "old-kitchen-cabinet-plumbing-damage": {
+    symptom: "厨房水槽下方橱柜底板受潮发胀、木板腐烂发霉甚至滋生白蚁，伴随老旧电路不足和动线不合理影响日常烹饪。",
+    causes: [
+      "水槽下水器下水管、角阀软管或龙头底部长期隐蔽微漏浸湿刨花板",
+      "在潮湿的水槽柜区域使用了不防潮的普通颗粒板或高密度板",
+      "老旧 PVC 排水管油脂挂壁严重导致排水不畅并频繁溢水",
+      "插座回路过少且未设大功率专用回路，无法满足烤箱、洗碗机等现代电器"
+    ],
+    solutions: [
+      "拆除腐烂底板，换装全防水全铝合金柜体或加贴防水铝箔的高密度海洋板",
+      "重做加厚 PVC 厨房排水管并加装防臭存水弯与检修清理口",
+      "升级厨房电气配电回路，为烤箱、电磁炉增设独立 15A/20A 插座",
+      "合理重新规划干湿分区与烹饪动线，换装耐污石英石或岩板台面"
+    ],
+    whenToCall: [
+      "水槽下方橱柜底板塌陷、变软发黑或散发浓重霉烂气味",
+      "排水管或龙头接口多次自行包扎仍持续渗水漏入橱柜",
+      "同时使用烤箱、空气炸锅或微波炉时电箱频繁跳闸"
+    ],
+    localFaq: {
+      q: "可以只单独更换水槽下方受潮发胀的底柜而不拆掉整套橱柜吗？",
+      a: "可以。KL Servis Rumah 支持模块化局部改造，在完整保留原有石英石台面和侧面柜体的前提下，单独拆换水槽下方全铝合金防水地柜。"
+    }
+  },
+  "uneven-floor-subfloor-leveling": {
+    symptom: "原有混凝土地面或敲砖后基层凹凸不平、起砂波浪或高低落差超过 3 毫米，导致新铺贴的 SPC 石塑地板或地砖踩踏晃动、异响空鼓。",
+    causes: [
+      "原建筑楼板混凝土浇筑平整度差或水泥砂浆粗找平工艺不平",
+      "旧瓷砖敲除后留有大量顽固水泥块、凿痕坑洼与空鼓深坑",
+      "房屋长期地基沉降导致地面形成倾斜面或局部凹陷",
+      "不同房间之间交接处的伸缩缝隆起或地面高低过渡不顺"
+    ],
+    solutions: [
+      "使用金刚石地坪研磨机打磨去除突出水泥高点与硬块",
+      "工业吸尘器彻底除尘后涂刷高渗透界面剂封闭基层",
+      "浇注高强聚合物自流平水泥砂浆，利用流动性重力自动流平找平",
+      "使用 2 米靠尺检测平整度（误差控制在 2 毫米以内）后再铺装地板"
+    ],
+    whenToCall: [
+      "新铺设的 SPC 锁扣地板踩上去有明显上下浮动感或发出咔咔异响",
+      "在铺地板前使用靠尺测量发现 1 米范围内高低落差超过 3 毫米",
+      "拖地或清扫时发现地面局部严重积水低洼"
+    ],
+    localFaq: {
+      q: "为什么铺装 SPC 石塑地板前地面必须做自流平找平？",
+      a: "SPC 锁扣地板属于半刚性材料。如果基层有凹凸，人踩踏时锁扣处会反复受力形变，短时间内会导致公母锁扣断裂、地板接缝翘起开裂。"
+    }
+  },
+  "wall-cracks-settlement-masonry": {
+    symptom: "砖墙表面出现斜向阶梯状裂缝，厨房或车库扩建部分与主屋接缝处出现贯通纵向裂隙，或门窗框角部出现斜向剪切开裂。",
+    causes: [
+      "房屋扩建地基与主楼原基础之间存在不均匀沉降差",
+      "扩建施工时未在主楼混凝土结构柱植入足量拉结筋",
+      "不同建筑材料与厚度在热胀冷缩循环下的差异应力变形",
+      "临近主干道重型车辆持续震动或周边工地打桩施工震动影响"
+    ],
+    solutions: [
+      "进行裂缝稳定性与沉降评估，区分非活动性沉降与活动性结构危险",
+      "沿砖缝横向开槽植入不锈钢螺旋加固筋",
+      "使用高压注浆机向深层砖缝注入无收缩结构灌浆料或结构环氧树脂",
+      "在扩建交接处规范设置伸缩填缝密封胶并加贴抗裂玻纤网批灰"
+    ],
+    whenToCall: [
+      "裂缝宽度超过 3 毫米或呈明显沿砖缝阶梯状开裂",
+      "扩建部分与主屋之间的分离缝隙随着时间推移明显变宽",
+      "开裂墙体上的门窗框变形受挤压，出现卡死无法顺畅开合"
+    ],
+    localFaq: {
+      q: "如何辨别墙面裂缝是表面油漆开裂还是砖墙结构沉降裂缝？",
+      a: "表面油漆裂缝通常细如发丝（小于 1mm）且仅停留在批灰层。结构沉降裂缝较宽（>3mm）、呈斜向阶梯状沿砖缝延伸、甚至贯穿墙体导致门窗卡死。"
+    }
   }
 };
 

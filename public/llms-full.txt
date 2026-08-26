@@ -486,7 +486,7 @@ All prices are the published starting prices shown on the live service pages. Fi
 
 Broader coverage list: Kuala Lumpur, Cheras, Ampang, Setapak, Wangsa Maju, Kepong, Sri Petaling, Bukit Jalil, Mont Kiara, Bangsar, Desa ParkCity, Taman Melawati, Hulu Kelang, Petaling Jaya, Subang Jaya, Shah Alam, Puchong, Damansara, Kota Damansara, Ara Damansara, Sunway, USJ, Bandar Utama, SS2, Klang, Port Klang, Bukit Tinggi, Setia Alam, Meru, Kota Kemuning, Bukit Jelutong, Glenmarie, Batu Caves, Selayang, Rawang, Kundang, Sungai Buloh, Kajang, Semenyih, Balakong, Seri Kembangan, Pandan Indah, Bandar Puteri, Putrajaya, Cyberjaya, Dengkil, Selangor, Sentul, Bandar Botanic.
 
-## Diagnostic Problem Pages (86)
+## Diagnostic Problem Pages (92)
 Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Peeling Paint in Malaysian Homes — https://www.klservisrumah.my/problems/peeling-paint-malaysia
 - Faded Exterior Paint After Malaysian Sun and Rain — https://www.klservisrumah.my/problems/faded-exterior-paint-malaysia
@@ -574,6 +574,12 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Aircon Tripping MCB / Circuit Breaker — https://www.klservisrumah.my/problems/aircon-tripping-mcb
 - Ice Forming on Aircon (Frozen Coil or Pipes) — https://www.klservisrumah.my/problems/ice-forming-on-aircon
 - Aircon Remote or Display Not Working — https://www.klservisrumah.my/problems/aircon-remote-display-issue
+- Popping or Buckling Floor Tiles (Jubin Meletup) — https://www.klservisrumah.my/problems/popping-tiles-buckling
+- Damaged Gypsum Partition Wall or Holes — https://www.klservisrumah.my/problems/damaged-gypsum-partition-wall
+- Aging Bathroom with Deteriorated Pipes & Tiles — https://www.klservisrumah.my/problems/old-bathroom-plumbing-tiles
+- Water-Damaged Sink Cabinet & Aging Kitchen Layout — https://www.klservisrumah.my/problems/old-kitchen-cabinet-plumbing-damage
+- Uneven Concrete Subfloor Before Flooring Installation — https://www.klservisrumah.my/problems/uneven-floor-subfloor-leveling
+- Masonry Wall Settlement Cracks & Extension Separation — https://www.klservisrumah.my/problems/wall-cracks-settlement-masonry
 
 ## Guides & Articles (229)
 - 5 Tips For Choosing Modern Home Paint Colors in Malaysia — https://www.klservisrumah.my/blog/5-tips-choosing-paint-colors-malaysia
@@ -888,5 +894,5 @@ KL Servis Rumah publishes fair, upfront pricing benchmarked against the Klang Va
 
 ## Scale
 - 31 services · 231 sub-services
-- 37 area pages · 86 problem pages · 229 articles
-- 4,924 indexable pages listed in the sitemap
+- 37 area pages · 92 problem pages · 229 articles
+- 4,942 indexable pages listed in the sitemap
