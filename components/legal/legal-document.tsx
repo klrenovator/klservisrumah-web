@@ -4,15 +4,18 @@ import type { LegalDocument as LegalDocumentCopy } from "@/config/legal-content"
 export function LegalDocument({
   document,
   homeLabel,
-  currentPath
+  currentPath,
+  ariaLabel = "Breadcrumb"
 }: {
   document: LegalDocumentCopy;
   homeLabel: string;
   currentPath: string;
+  /** Accessible name of the breadcrumb landmark — pass the localized word. */
+  ariaLabel?: string;
 }) {
   return (
     <>
-      <nav className="mx-auto max-w-4xl px-4 pt-8 text-sm sm:px-6" aria-label="Breadcrumb">
+      <nav className="mx-auto max-w-4xl px-4 pt-8 text-sm sm:px-6" aria-label={ariaLabel}>
         <ol className="flex items-center gap-2 text-slate-500">
           <li><Link href="/" className="font-bold hover:text-[#0284C7]">{homeLabel}</Link></li>
           <li aria-hidden="true">/</li>

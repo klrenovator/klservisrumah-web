@@ -10,5 +10,5 @@ export const metadata = buildMetadata({
 });
 
 export default function TermsPage() {
-  return <LegalDocument document={termsContent.en} homeLabel="Home" currentPath="/terms" />;
+  return <LegalDocument document={termsContent.en} homeLabel="Home" currentPath="/terms" ariaLabel="Breadcrumb" />;
 }

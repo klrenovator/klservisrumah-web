@@ -304,6 +304,20 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .estimator-step { animation: none; }
+
+  /* Site-wide guard: collapse decorative animation/transition durations and
+     disable smooth scrolling for visitors who opt out of motion (WCAG 2.3.3).
+     Functional state changes (open/closed) still apply — only the movement
+     is removed. The <Reveal> component additionally skips its own observer
+     under this preference. */
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* ── Scrollbar ────────────────────────────────────────────── */

@@ -10,5 +10,5 @@ export const metadata = buildMetadata({
 });
 
 export default function ChineseTermsPage() {
-  return <LegalDocument document={termsContent.zh} homeLabel="首页" currentPath="/zh/tiao-kuan" />;
+  return <LegalDocument document={termsContent.zh} homeLabel="首页" currentPath="/zh/tiao-kuan" ariaLabel="面包屑导航" />;
 }

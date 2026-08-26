@@ -10,7 +10,7 @@
 
 **Overall Status:** 🔄 IN PROGRESS
 
-**Last Updated:** 2026-08-25
+**Last Updated:** 2026-08-26
 
 **Languages:**
 
@@ -18,7 +18,7 @@
 - Malay (ms)
 - Chinese (zh)
 
-**Session:** Initial audit + foundation (Session 1) · Connected-trades expansion (Session 2) · Waterproofing expansion (Session 3) · Electrical connected-trade expansion (Session 4) · Plumbing connected-trade expansion (Session 5) · Carpentry connected-trade expansion (Session 6) · Door, window, glass & welding expansion (Session 7) · Post-renovation cleaning expansion (Session 8) · Commercial renovation cluster expansion (Session 9)
+**Session:** Initial audit + foundation (Session 1) · Connected-trades expansion (Session 2) · Waterproofing expansion (Session 3) · Electrical connected-trade expansion (Session 4) · Plumbing connected-trade expansion (Session 5) · Carpentry connected-trade expansion (Session 6) · Door, window, glass & welding expansion (Session 7) · Post-renovation cleaning expansion (Session 8) · Commercial renovation cluster expansion (Session 9) · Accessibility pass (Session 10)
 
 ---
 
@@ -442,13 +442,13 @@
 
 ### Phase 21 — Accessibility
 
-- [ ] ⏳ Check semantic HTML — PENDING
-- [ ] ⏳ Check keyboard navigation — PENDING
-- [ ] ⏳ Check accessible forms — PENDING
-- [ ] ⏳ Check labels — PENDING
-- [ ] ⏳ Check alt text — PENDING
-- [ ] ⏳ Check contrast — PENDING
-- [ ] ⏳ Check mobile usability — PENDING
+- [x] ✅ Check semantic HTML — COMPLETED (Session 10: skip link + focusable `<main id="main-content">` verified; footer Services/Explore/Areas columns wrapped in labelled `<nav>` landmarks EN/MS/ZH; legal breadcrumbs get localized landmark labels; hero quote form wrapped in `role="search"`; no non-interactive clickable divs found; single-h1 templates verified)
+- [x] ✅ Check keyboard navigation — COMPLETED (Session 10: navbar mega-menus get Escape-to-close + outside-click dismiss + focus return + `aria-haspopup`; mobile drawer gets full focus trap + initial focus + focus restore + `aria-haspopup="dialog"`; smart finder modal gets `role="dialog"`/`aria-modal` + focus in/out; hero search results no longer close while tabbing into them (container-level blur with relatedTarget); FAQ accordion trigger gets visible focus-visible ring; WhatsApp desk card gets `inert` when collapsed so hidden controls leave the tab order)
+- [x] ✅ Check accessible forms — COMPLETED (Session 10: all forms audited — booking form labelled + `aria-pressed` selection state + `type="button"`; estimator tools already use fieldset/legend, radiogroup arrow-key nav, role=checkbox/switch, labelled sliders (verified, unchanged); hero + contact selects labelled; ServiceAreaSelector select now properly labelled)
+- [x] ✅ Check labels — COMPLETED (Session 10: all hardcoded English aria-labels in client widgets translated via 18 new message keys × 3 locales — navbar mega-menu "Other Services"/"Terrace Renovation"/"Condo Renovation", hero search input/clear/submit/no-results/popular, area selector, smart finder close, ticker section, hero section, logo links EN/MS/ZH; audit:i18n PASS 1103 keys × 3)
+- [x] ✅ Check alt text — COMPLETED (Session 10 audit: 0 raw `<img>` tags; every next/image has meaningful alt incl. hero slideshow, service banners, tool cards, project gallery, logo)
+- [x] ✅ Check contrast — COMPLETED (Session 10 targeted fixes: navbar mega-menu eyebrow/price text slate-400→slate-500 (2.8:1→4.7:1), hero search placeholder white/40→white/70 + clear button white/60→white/80, search-result slate-400→500/600 text; site-wide `:focus-visible` ring already global in globals.css)
+- [x] ✅ Check mobile usability — COMPLETED (Session 10: viewport allows pinch zoom (maximumScale 5); sticky CTA bars use safe-area insets; primary touch targets ≥44–48px; global `prefers-reduced-motion` guard added to globals.css collapsing all decorative animation/transition; `<Reveal>` already respects reduced motion)
 
 ### Phase 22 — Performance
 
@@ -1014,12 +1014,25 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 - [x] ✅ QA: full `next build` PASS (**6,074 rendered pages**, +12 = 4 EN + 4 MS + 4 ZH new commercial specialty pages), TypeScript 0 errors, ESLint 0 warnings, prebuild (i18n 1085 keys × 3 + estimator tests 344,800 assertions) PASS, audit:links 0 broken targets (458,858 links across 6,074 pages), audit:html PASS (0 fatal, 0 warnings), seo:audit PASS, audit:meta PASS (0 missing titles/descriptions, 0 JSON-LD parse failures, 0 NAP issues; run with larger Node heap)
 - [x] ✅ **No invented prices used** — all 4 new subservices priced "On Quote" / "Atas Sebut Harga" / "依报价"; no new price, warranty, review or licence claim was introduced
 
+**Session 10 (this session) — Accessibility pass (Phase 21):**
+
+- [x] ✅ **Semantic HTML** — verified existing skip link + focusable `<main id="main-content">`; wrapped footer Services/Explore/Areas link columns in labelled `<nav>` landmarks (labels auto-translate EN/MS/ZH); legal-document breadcrumbs get a localized `ariaLabel` prop ("Breadcrumb" / "Laluan navigasi" / "面包屑导航") passed from all 6 privacy/terms pages; hero quote widget form marked `role="search"`; repo-wide scan found 0 non-interactive clickable divs/spans and clean single-h1 templates
+- [x] ✅ **Keyboard navigation** — navbar Renovation & Services mega-menus: Escape closes + returns focus to trigger, outside-pointer-click dismisses, `aria-haspopup` added; AllPagesMenu mobile drawer: full Tab focus trap, initial focus on close button, focus restored to hamburger on dismiss, backdrop removed from tab order, `aria-haspopup="dialog"`; SmartFinderModal: `role="dialog"` + `aria-modal` + focus into panel on open / back to trigger on close + localized close label; hero search results dropdown no longer closes while a keyboard user tabs into it (container-level blur with relatedTarget check); FAQ accordion trigger's `focus:outline-none` replaced with visible focus-visible ring; WhatsApp desk card now `inert` while collapsed so its hidden link/button leave the tab order and a11y tree
+- [x] ✅ **Accessible forms** — full audit: estimator tools already exemplar (fieldset/legend, radiogroup arrow-key navigation, role=checkbox/switch/slider, labelled steppers — verified, untouched); multi-step booking form gets `aria-pressed` selection state on service/sub-service cards + explicit `type="button"`; hero/contact selects verified labelled; ServiceAreaSelector's previously-unlabeled select now has a proper label association + `aria-label`
+- [x] ✅ **Labels (3-language)** — 18 new message keys × 3 locales (1085 → 1103): navbar mega-menu "Other Services"/"Terrace Renovation"/"Condo Renovation", hero search placeholder/input/clear/submit/no-results/try-different/popular, area selector title/select/placeholder/button, smart finder close, ticker section label, hero section label, logo link label (navbar + footer). **Every hardcoded English aria-label in client widgets removed**; verified in built HTML that MS and ZH pages render localized labels (e.g. "Cari perkhidmatan ini berhampiran kawasan anda", "查找您附近地区的这项服务", "服务", "服务区域", "探索")
+- [x] ✅ **Alt text** — audit: 0 raw `<img>` tags site-wide; every `next/image` (hero slideshow, service banners, tool cards, project gallery, logo) carries meaningful alt; nothing to fix
+- [x] ✅ **Contrast** — targeted fixes on chrome components: navbar mega-menu eyebrow + price text slate-400→slate-500 (≈2.8:1→≈4.7:1, clears WCAG AA for small text), hero search placeholder white/40→white/70 and clear button white/60→white/80, no-results text slate-400→slate-500/600; global `:focus-visible` sky ring already present in globals.css and preserved
+- [x] ✅ **Mobile usability** — viewport permits pinch zoom (maximumScale: 5); sticky WhatsApp/Call bar and cookie consent use `env(safe-area-inset-bottom)`; primary touch targets 44–52px; **site-wide `prefers-reduced-motion` guard** added to globals.css (collapses all decorative animation/transition durations + disables smooth scrolling); `<Reveal>` already skips its observer under reduced motion
+- [x] ✅ QA: prebuild PASS (i18n **1103 keys × 3 locales** + estimator tests 344,800 assertions), full `next build` PASS (**6,074 rendered pages** — unchanged, no new URLs), TypeScript 0 errors, ESLint 0 warnings, audit:links 0 broken targets (458,858 links / 6,074 pages), audit:html PASS (0 fatal, 0 warnings), seo:audit PASS, audit:meta PASS (0 parse failures, 0 NAP issues)
+- [x] ✅ **No business claims introduced** — zero new prices, warranties, reviews or licences; this session touched only markup, semantics and UI strings
+
 ## In Progress This Session
 
 - [x] ✅ Enhance post-renovation cleaning connected-trade subServices (construction rough cleaning & site clearance, fine dust extraction & air purifying, paint splatter & silicone smear removal, window glass & aluminium track detailing, floor machine scrubbing & buffing, move-in & handover final cleaning) — COMPLETED (Session 8)
 - [x] ✅ Commercial renovation cluster expansion (office, retail, restaurant/F&B, office partition & workspace as subservices under house-renovation) — COMPLETED (Session 9; 4 new subservices, 4 specialty-entries, 4 topical-map silos)
-- [ ] 🔄 Problem-based renovation content — PENDING (43 existing problems audited, renovation-related problems like hollow tiles, cracked tiles, water-damaged ceiling can be added as thin-page avoidance)
-- [ ] 🔄 Location SEO renovation enhancement — PENDING (49+ areas exist, need localized renovation content without thin duplication)
+- [x] ✅ Phase 21 accessibility pass (semantic HTML, keyboard navigation, accessible forms, labels, alt text, contrast, mobile usability) — COMPLETED (Session 10; see "Completed This Session")
+- [ ] 🔄 Problem-based renovation content — PENDING (Phase 12; 43 existing problems, renovation-related problems like hollow tiles, cracked tiles, water-damaged ceiling can be added with thin-page avoidance)
+- [ ] 🔄 Location SEO renovation enhancement — PENDING (Phase 13; 49+ areas exist, need localized renovation content without thin duplication)
 
 ## Pending Next
 
@@ -1034,29 +1047,43 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 - Create problem-based renovation pages only where genuine intent: Hollow Tiles, Cracked Tiles, Broken Tiles, Uneven Floor, Peeling Paint, Wall Cracks, Ceiling Cracks, Water-Damaged Ceiling, Bathroom Leakage, Roof Leakage, Damp Wall, Mould, Damaged Plaster Ceiling, Old Bathroom/Kitchen, Damaged Flooring, Broken Partition, Water Seepage — ensure unique value, not thin
 - Enhance location pages with renovation-specific localized content for KL, PJ, Subang Jaya, Shah Alam, Puchong, Klang, Cheras, Ampang, Setia Alam, Kajang, Cyberjaya, Putrajaya — EN/MS/ZH, avoid doorway/thin duplication, require uniqueness gate
 - Create cost content guides: House Renovation Cost, Kitchen Renovation Cost, Bathroom Renovation Cost, Condo Renovation Cost, Flooring/Tiling/Plaster Ceiling/Painting/Waterproofing/Wall Hacking Cost, Cost Per Sq Ft — only verified pricing, neutral wording otherwise
+- ~~Phase 21 accessibility pass: semantic HTML, keyboard navigation, accessible forms, labels, alt text, contrast, mobile usability~~ ✅ COMPLETED (Session 10 — all seven sub-checks closed with code fixes + built-HTML verification in EN/MS/ZH; see Session 10 block above)
 - Full SEO/AEO/GEO final polish: direct answers, definitions, comparison tables, process, FAQs, problem/solution, entity-rich, internal linking across 3 langs
-- QA: full build, sitemap validation, robots.txt, schema validation, mobile usability, accessibility (semantic HTML, keyboard, alt text, contrast), performance (Core Web Vitals, image optimization, lazy loading, bundle guard), cleanup unused
+- QA: performance (Core Web Vitals, image optimization, lazy loading, bundle guard) — Phase 22; sitemap validation, robots.txt, schema validation, cleanup unused — Phase 23. (Mobile usability + accessibility are now DONE via Session 10.)
 
 ## Blocked
 
-- None - no new pricing/claims introduced in Session 9. All 4 new commercial subservices are priced "On Quote" / "Atas Sebut Harga" / "依报价", so no business verification is pending.
+- None — Session 10 introduced no new pricing, warranties, reviews or licences (accessibility/semantics/UI strings only), so no business verification is pending.
+- (Prior) None for Session 9 — all 4 new commercial subservices are priced "On Quote" / "Atas Sebut Harga" / "依报价".
 - (Prior) None for Session 8 — all 6 new post-renovation-cleaning subservices were priced "On Quote" / "Atas Sebut Harga" / "依报价".
 - (Prior) None for Session 7 either — all 24 new door / window-repair / glass-aluminium / welding subservices were priced "On Quote".
 - (Prior) None for Session 6 either — all 6 new carpentry subservices were priced "On Quote".
 
-## Files Changed This Session
+## Files Changed This Session (Session 10)
 
-- config/services-data.ts (expanded house-renovation 11→15 subservices — added Office Renovation & Fit-Out, Retail Shop Renovation, Restaurant & F&B Renovation, Office Partition & Workspace Build — full EN/MS/ZH in the main + i18n.ms + i18n.zh blocks)
-- config/specialty-locale-content.ts (added 4 new house-renovation commercial specialty entries with real native MS/ZH content — total 188 specialties × 2 = 376 native blocks)
-- config/topical-authority-map.ts (registered 4 new house-renovation commercial specialties with relatedProblems + relatedBlogs — 231 typed specialty relationships)
-- messages/en.json, messages/ms.json, messages/zh.json (corrected the service-directory eyebrow count from "28" to "31" Services/Perkhidmatan/项服务 across the 3 languages)
-- Generated files (regenerated via prebuild): config/quote-catalog.generated.ts, config/service-summary.generated.ts, lib/estimator/rate-book.generated.ts, public/llms-full.txt, public/site-summary.json (subServices count 227 → 231)
+- messages/en.json, messages/ms.json, messages/zh.json (added 18 accessibility/UI keys × 3 locales — 1085 → 1103 keys: a11y.logoLink, a11y.heroSection, menu.otherServices/terraceRenovation/condoRenovation, heroSearch.* ×7, areaSelector.* ×4, smartFinder.closeAria, ticker.ariaLabel)
+- components/ui/navbar.tsx (localized mega-menu strings; Escape + outside-click dismiss + focus return; aria-haspopup; logo label; contrast slate-400→500)
+- components/ui/all-pages-menu.tsx (full focus trap, initial focus, focus restore on close, backdrop out of tab order, aria-haspopup="dialog")
+- components/ui/smart-finder-modal.tsx (role="dialog" + aria-modal, focus in/out, localized close label)
+- components/ui/hero-search-bar.tsx (all strings localized via messages, role="search", keyboard-reachable results via container blur logic, contrast fixes, type="button" on result/popular buttons, aria-live no-results)
+- components/ui/whatsapp-button.tsx (inert on collapsed card — hidden controls removed from tab order/a11y tree)
+- components/ui/footer.tsx (Services/Explore/Areas columns wrapped in labelled <nav> landmarks; localized logo aria-label)
+- components/ui/skip-to-content.tsx (unchanged — verified working)
+- components/sections/faq-accordion.tsx (focus-visible ring replaces focus:outline-none)
+- components/sections/hero.tsx (localized section aria-label)
+- components/near-me-locator.tsx (aria-live="polite" + role="status" on geolocation result)
+- components/recent-jobs-ticker.tsx (localized section aria-label)
+- components/service-area-selector.tsx (labelled select, localized strings EN/MS/ZH)
+- components/booking/multi-step-booking-form.tsx (aria-pressed selection state, type="button")
+- components/legal/legal-document.tsx (localized ariaLabel prop for breadcrumb landmark)
+- app/(en)/privacy/page.tsx, app/(en)/terms/page.tsx, app/(ms)/ms/notis-privasi/page.tsx, app/(ms)/ms/terma/page.tsx, app/(zh)/zh/yin-si-sheng-ming/page.tsx, app/(zh)/zh/tiao-kuan/page.tsx (pass localized breadcrumb aria-label)
+- styles/globals.css (site-wide prefers-reduced-motion guard)
 - docs/seo-audit-report.md (regenerated by seo:audit)
-- RENOVATION_EXPANSION_PLAN.md (Session 9 progress + QA)
+- RENOVATION_EXPANSION_PLAN.md (Session 10 progress + QA)
 
 ## Files Created This Session
 
-- None (all work was additive edits to existing config + regenerated generated files; node_modules installed in the sandbox, not tracked)
+- None (all work was edits to existing components/config; node_modules installed in the sandbox, not tracked)
 
 ## Files Deleted This Session
 
@@ -1071,33 +1098,32 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 - SEO: ✅ PASS (seo:audit PASS → docs/seo-audit-report.md regenerated; the 4 new specialty pages emit real 3-way hreflang clusters EN/MS/ZH + x-default with self-canonical, and carry native MS/ZH metaTitle/metaDesc — verified in built HTML for office-renovation-and-fit-out, retail-shop-renovation, restaurant-and-f-and-b-renovation, office-partition-and-workspace-build)
 - Sitemap: ✅ PASS (sitemap.ts auto-includes 31 services + 188 specialty twins via hasSpecialtyLocaleContent + 46 tools × 3 locales; site-summary.json verified via prebuild)
 - Schema: ✅ PASS (Service schema with OfferCatalog, FAQPage, BreadcrumbList, HowTo, Speakable, Organization, LocalBusiness, WebSite — no fake reviews/ratings)
-- Multilingual: ✅ PASS (audit:i18n 1085 keys × 3 locales PASS — including the corrected service-directory eyebrow count, **audit:specialty-locale 188 × 2 = 376 native blocks PASS** with per-page list-count parity, audit:problem-i18n PASS 74 keep-URLs × ms/zh, test:estimators 344,800 assertions PASS, **audit:topical-map 31/31 services, 231 typed relationships PASS**)
+- Multilingual: ✅ PASS (audit:i18n **1103 keys × 3 locales PASS** — includes the 18 new Session-10 accessibility/UI keys, placeholder-perfect; **audit:specialty-locale 188 × 2 = 376 native blocks PASS** with per-page list-count parity, audit:problem-i18n PASS 74 keep-URLs × ms/zh, test:estimators 344,800 assertions PASS, **audit:topical-map 31/31 services, 231 typed relationships PASS**)
 - Internal Links: ✅ PASS (audit:links — **6,074 pages, 458,858 links, 0 broken targets**; new MS/ZH specialty pages render related problems + localized blog links from the topical map)
 - HTML quality: ✅ PASS (audit:html — 6,074 pages, 0 fatal findings, 0 warnings)
 - Metadata: ✅ PASS (audit:meta — 0 missing titles, 0 missing descriptions, 0 JSON-LD parse failures, 0 NAP issues; note: the sandbox must run audit:meta with a larger Node heap — `NODE_OPTIONS=--max-old-space-size=6096` — as the default heap OOMs on this large inventory)
-- Mobile: ✅ PASS (navbar mobile cluster compact, lg:flex mega-menu, no backdrop-blur WebKit bug)
-- Accessibility: ⏳ PENDING (Phase 21 — semantic HTML, keyboard nav, labels, alt text, contrast, mobile usability; existing system uses semantic HTML, needs a full dedicated pass)
+- Mobile: ✅ PASS (navbar mobile cluster compact, lg:flex mega-menu, no backdrop-blur WebKit bug; pinch zoom allowed maximumScale 5; safe-area insets on sticky bars)
+- Accessibility: ✅ PASS (Phase 21 COMPLETED Session 10 — semantic HTML (labelled nav landmarks, role="search", single h1, no clickable divs), keyboard navigation (skip link, focus traps, Escape/outside dismiss, focus restore, inert hidden controls), accessible forms (labels + aria-pressed + estimator fieldset/radiogroup patterns verified), all client-widget aria-labels localized EN/MS/ZH, 100% image alt coverage, targeted contrast fixes + global :focus-visible ring, mobile usability + prefers-reduced-motion guard — all verified in built EN/MS/ZH HTML)
 - Performance: ✅ PASS (client bundle guard PASS; service-nav.generated used instead of registry, no heavy content registry in client)
 - CRO: ✅ PASS (WhatsAppButton, StickyMobileWhatsAppBar, StickyBookButton, HeaderWhatsAppActions, getRenovationQuote CTA in 3 langs)
 - Business-claim safety: ✅ PASS (0 new prices, warranties, reviews, licences or guarantees introduced — all 4 new subservices are On Quote / Atas Sebut Harga / 依报价 in all three languages)
 
 ---
 
-### Start Here — Next Session (Session 10)
+### Start Here — Next Session (Session 11)
 
-Phase 11 (connected-trade subservice expansion), the Post-Renovation Cleaning cluster, and the Commercial Renovation cluster are now **all fully completed**. All 31 services have their connected-trade subservices expanded (painting 8, all others 10–15), all **231 subservices** are typed in the topical-authority map, and **188 specialties** carry native MS/ZH pages.
+Phase 11 (connected-trade subservice expansion), the Post-Renovation Cleaning cluster, the Commercial Renovation cluster, **and Phase 21 (accessibility)** are now **all fully completed**. All 31 services have their connected-trade subservices expanded (painting 8, all others 10–15), all **231 subservices** are typed in the topical-authority map, **188 specialties** carry native MS/ZH pages, and every WCAG-relevant QA sub-check (semantic HTML, keyboard nav, forms, labels, alt, contrast, mobile) is closed and verified in built EN/MS/ZH HTML.
 
-Recommended order for Session 10, highest priority first:
+Recommended order for Session 11, highest priority first:
 
-1. **Phase 21 — accessibility pass** (the only ⏳ item left in QA Status: check semantic HTML, keyboard navigation, accessible forms, labels, alt text, contrast, mobile usability). This is now the highest-priority open item since all content clusters are complete.
-2. **Phase 12 — problem content** (audit 43 existing problems for renovation overlap; add unique ones like hollow tiles, cracked tiles, water-damaged ceiling, damp wall without thin/duplicate pages).
-3. **Phase 13 location SEO** — enhance location pages with renovation-specific localized content for KL, PJ, Subang Jaya, Shah Alam, Puchong, Klang, Cheras, Ampang, Setia Alam, Kajang, Cyberjaya, Putrajaya — EN/MS/ZH, avoid doorway/thin duplication, require uniqueness gate.
-4. **Cost content guides** — House Renovation Cost, Kitchen Renovation Cost, Bathroom Renovation Cost, Condo Renovation Cost, Cost Per Sq Ft — only verified pricing, neutral wording otherwise.
-5. **Phase 22 performance** and **Phase 23 sitemap/robots/final QA** polish.
+1. **Phase 12 — problem content** (the highest-priority open item): audit the 43 existing problems for renovation overlap, then add unique renovation problems — Hollow Tiles, Cracked Tiles, Broken Tiles, Uneven Floor, Wall Cracks, Ceiling Cracks, Water-Damaged Ceiling, Bathroom Leakage, Roof Leakage, Damp Wall, Mould, Damaged Plaster Ceiling, Old Bathroom, Old Kitchen, Damaged Flooring, Broken Partition, Water Seepage — each must carry genuine unique value (EN/MS/ZH via problem-data + problem-i18n + problem-faq-i18n), NOT thin duplicates of existing service/specialty pages. Follow `audit:problem-i18n` keep-URL conventions.
+2. **Phase 13 location SEO** — enhance location pages with renovation-specific localized content for KL, PJ, Subang Jaya, Shah Alam, Puchong, Klang, Cheras, Ampang, Setia Alam, Kajang, Cyberjaya, Putrajaya — EN/MS/ZH, avoid doorway/thin duplication, require uniqueness gate (`audit:location-similarity` exists for this).
+3. **Cost content guides** — House Renovation Cost, Kitchen Renovation Cost, Bathroom Renovation Cost, Condo Renovation Cost, Cost Per Sq Ft — only verified pricing (market-rates.ts + published startPrices), neutral "contact for quotation" wording otherwise.
+4. **Phase 22 performance** (Core Web Vitals, image optimization, lazy loading, bundle guard) and **Phase 23 sitemap/robots/final QA** polish.
 
-Known non-blocking backlog (pre-existing, not introduced by Sessions 2–9): some subservices still have no MS/ZH specialty-locale block — tiling, plaster-ceiling, flooring, kitchen-renovation and bathroom-renovation are the biggest gaps (house-renovation now has 4 new commercial twins added in Session 9). The locale specialty routes are data-gated on `getSpecialtyLocaleContent`, so these simply do not render MS/ZH twins yet; nothing is broken. Closing this backlog is a good standalone tranche if a session has spare capacity.
+Known non-blocking backlog (pre-existing, not introduced by Sessions 2–10): some subservices still have no MS/ZH specialty-locale block — tiling, plaster-ceiling, flooring, kitchen-renovation and bathroom-renovation are the biggest gaps. The locale specialty routes are data-gated on `getSpecialtyLocaleContent`, so these simply do not render MS/ZH twins yet; nothing is broken. Closing this backlog is a good standalone tranche if a session has spare capacity.
 
-Per-session working pattern that has held for eight sessions: `config/services-data.ts` (EN + i18n.ms + i18n.zh) → `config/specialty-locale-content.ts` (native MS/ZH, must clear `scripts/validate-specialty-locale.ts` thresholds and MS/ZH list-count parity) → `config/topical-authority-map.ts` silos → `npm run prebuild` → `npm run build` → `type-check`, `lint`, `audit:links`, `audit:html`, `seo:audit` → update this file.
+Per-session working pattern that has held for nine sessions: `config/services-data.ts` (EN + i18n.ms + i18n.zh) → `config/specialty-locale-content.ts` (native MS/ZH, must clear `scripts/validate-specialty-locale.ts` thresholds and MS/ZH list-count parity) → `config/topical-authority-map.ts` silos → `npm run prebuild` → `npm run build` → `type-check`, `lint`, `audit:links`, `audit:html`, `seo:audit` → update this file. For message-key work: keep audit:i18n parity (all 3 files same key count — currently 1103).
 
 ---
 

@@ -379,7 +379,10 @@
       "residential": "Residential",
       "seasonal": "Seasonal"
     },
-    "renovation": "Renovation"
+    "renovation": "Renovation",
+    "otherServices": "Other Services",
+    "terraceRenovation": "Terrace Renovation",
+    "condoRenovation": "Condo Renovation"
   },
   "whatsappDesk": {
     "title": "WhatsApp Dispatch Desk",
@@ -1465,7 +1468,8 @@
   },
   "ticker": {
     "hideAria": "Hide recent activity notifications",
-    "liveDemand": "Live local demand — no customer names shown"
+    "liveDemand": "Live local demand — no customer names shown",
+    "ariaLabel": "Popular local requests"
   },
   "siteSearch": {
     "placeholder": "Search service...",
@@ -1483,9 +1487,29 @@
   },
   "a11y": {
     "skipToContent": "Skip to main content",
-    "mainContent": "Main content"
+    "mainContent": "Main content",
+    "logoLink": "KL Servis Rumah homepage",
+    "heroSection": "Home services overview"
   },
   "servicesIndex": {
     "whatsappService": "home services"
+  },
+  "heroSearch": {
+    "placeholder": "Find any service...",
+    "inputAria": "Search for home services",
+    "clearAria": "Clear search",
+    "submit": "Search",
+    "noResults": "No results found",
+    "tryDifferent": "Try different keywords",
+    "popular": "Popular Searches"
+  },
+  "areaSelector": {
+    "title": "Find this service near your suburb",
+    "selectLabel": "Suburb",
+    "placeholder": "Select suburb...",
+    "viewLocal": "View local page"
+  },
+  "smartFinder": {
+    "closeAria": "Close search"
   }
 }

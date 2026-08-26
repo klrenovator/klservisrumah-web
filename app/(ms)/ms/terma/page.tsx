@@ -10,5 +10,5 @@ export const metadata = buildMetadata({
 });
 
 export default function MalayTermsPage() {
-  return <LegalDocument document={termsContent.ms} homeLabel="Utama" currentPath="/ms/terma" />;
+  return <LegalDocument document={termsContent.ms} homeLabel="Utama" currentPath="/ms/terma" ariaLabel="Laluan navigasi" />;
 }

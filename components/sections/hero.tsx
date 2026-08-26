@@ -220,7 +220,7 @@ export function Hero() {
     <>
       <section
         className="relative flex min-h-[calc(100svh-5rem)] w-full items-center overflow-hidden bg-slate-950 sm:min-h-[calc(100svh-7rem)]"
-        aria-label="KL Servis Rumah hero"
+        aria-label={t("a11y.heroSection")}
       >
         {/* Background slideshow — only current + previous frames stay mounted.
             This preserves the cross-fade while preventing every hero asset from

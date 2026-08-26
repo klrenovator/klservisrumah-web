@@ -103,7 +103,7 @@ export function MultiStepBookingForm() {
         <p className="mt-3 text-sm font-semibold leading-relaxed text-[#475569]">
           {t("contact.bookingCompiledDesc")}
         </p>
-        <button onClick={submit} className="mt-6 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white">
+        <button type="button" onClick={submit} className="mt-6 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white">
           {t("contact.openWhatsApp")}
         </button>
       </div>
@@ -127,7 +127,7 @@ export function MultiStepBookingForm() {
               {serviceOptions.map((service) => {
                 const localized = getLocalizedQuoteEntry(service, lang);
                 return (
-                  <button key={service.slug} onClick={() => update("service", service.slug)} className={`rounded-2xl border p-4 text-left transition ${form.service === service.slug ? "border-[#0284C7] bg-[#E0F2FE]" : "border-slate-100 bg-slate-50 hover:bg-white"}`}>
+                  <button key={service.slug} type="button" aria-pressed={form.service === service.slug} onClick={() => update("service", service.slug)} className={`rounded-2xl border p-4 text-left transition ${form.service === service.slug ? "border-[#0284C7] bg-[#E0F2FE]" : "border-slate-100 bg-slate-50 hover:bg-white"}`}>
                     <span className="text-sm font-extrabold text-[#075985]">{localized.title}</span>
                     <span className="mt-1 block text-xs font-bold text-[#0EA5E9]">{t("common.fromLabel")} {service.startPrice}</span>
                   </button>
@@ -141,7 +141,7 @@ export function MultiStepBookingForm() {
           <StepShell title={t("contact.fields.subService")}>
             <div className="grid grid-cols-1 gap-3">
               {subServices.map((sub) => (
-                <button key={sub.name} onClick={() => update("subService", sub.name)} className={`rounded-2xl border p-4 text-left transition ${form.subService === sub.name ? "border-[#0284C7] bg-[#E0F2FE]" : "border-slate-100 bg-slate-50 hover:bg-white"}`}>
+                <button key={sub.name} type="button" aria-pressed={form.subService === sub.name} onClick={() => update("subService", sub.name)} className={`rounded-2xl border p-4 text-left transition ${form.subService === sub.name ? "border-[#0284C7] bg-[#E0F2FE]" : "border-slate-100 bg-slate-50 hover:bg-white"}`}>
                   <span className="text-sm font-extrabold text-[#075985]">{sub.name}</span>
                   <span className="mt-1 block text-xs font-bold text-[#0EA5E9]">{sub.price}</span>
                   <span className="mt-1 block text-xs font-semibold text-[#475569]">{sub.desc}</span>
