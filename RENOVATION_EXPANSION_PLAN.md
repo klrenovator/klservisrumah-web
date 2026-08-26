@@ -8,9 +8,9 @@
 
 ## Project Status
 
-**Overall Status:** ✅ Content roadmap COMPLETED (All Phases 1–23 complete & verified · 231/231 subservices with native Malay & Chinese pages) · ✅ CI activation COMPLETED via merged PR #161; GitHub Actions run on main passed.
+**Overall Status:** ✅ Content roadmap COMPLETED (All Phases 1–23 complete & verified · 231/231 subservices with native Malay & Chinese pages) · ✅ CI activation COMPLETED via merged PR #161; GitHub Actions runs on main passing (latest: run 32993417280, 3m56s).
 
-**Last Updated:** 2026-08-26 (Session 15 — CI activation verified after PR #161 merge)
+**Last Updated:** 2026-08-26 (Session 16 — full QA re-verified on fresh checkout; CI confirmed green on GitHub Actions)
 
 **Languages:**
 
@@ -18,7 +18,7 @@
 - Malay (ms)
 - Chinese (zh)
 
-**Session:** Initial audit + foundation (Session 1) · Connected-trades expansion (Session 2) · Waterproofing expansion (Session 3) · Electrical connected-trade expansion (Session 4) · Plumbing connected-trade expansion (Session 5) · Carpentry connected-trade expansion (Session 6) · Door, window, glass & welding expansion (Session 7) · Post-renovation cleaning expansion (Session 8) · Commercial renovation cluster expansion (Session 9) · Accessibility pass (Session 10) · Problem content expansion, Location SEO, Performance & Full QA (Session 11) · Full MS/ZH specialty-coverage expansion + i18n defect fixes (Session 12) · CI activation attempt: workflow recreated, fully re-verified, push re-blocked, durable tracked copy added (Session 13) · CI activation re-attempt #3: permission gap re-confirmed, repo state re-verified green, session record pushed as its own doc-only PR (Session 14) · CI activation re-attempt #4 after owner reconnect: permission gap still present, workflow push rejected, gated file removed from session branch (Session 15) · CI activated manually by owner via GitHub and merged in PR #161; main run passed (Session 15)
+**Session:** Initial audit + foundation (Session 1) · Connected-trades expansion (Session 2) · Waterproofing expansion (Session 3) · Electrical connected-trade expansion (Session 4) · Plumbing connected-trade expansion (Session 5) · Carpentry connected-trade expansion (Session 6) · Door, window, glass & welding expansion (Session 7) · Post-renovation cleaning expansion (Session 8) · Commercial renovation cluster expansion (Session 9) · Accessibility pass (Session 10) · Problem content expansion, Location SEO, Performance & Full QA (Session 11) · Full MS/ZH specialty-coverage expansion + i18n defect fixes (Session 12) · CI activation attempt (Session 13) · CI activation re-attempt #3 (Session 14) · CI activation re-attempt #4 (Session 15) · CI activated manually by owner via PR #161; full QA re-verified on fresh checkout (Session 16)
 
 ---
 
@@ -1080,45 +1080,55 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 - [x] ✅ Removed the unpushable workflow commit/file from the session branch after the failed push, leaving the branch clean and preserving the byte-identical tracked source at `docs/ci-workflow.yml`. This prevents the gated commit from blocking future plan updates.
 - [x] ✅ No website/content changes; English, Malay and Chinese content remains untouched.
 
+## Session 16 (2026-08-26) — Full QA re-verification on fresh checkout; CI confirmed green
+
+- [x] ✅ Read the persistent plan and verified the repository at the session branch tip (`398469b` = PR #160 merge, clean working tree on `arena/01a03f21-klservisrumah-web`); durable workflow source `docs/ci-workflow.yml` present.
+- [x] ✅ **CI status verified on GitHub Actions**: `.github/workflows/ci.yml` present on `main` (confirmed via `git show main:.github/workflows/ci.yml`). Latest 5 GitHub Actions runs all `completed` + `success`:
+  - `Merge pull request #160` push run on main — success (3m56s, run 32993417280)
+  - PR #160 pull_request run — success (4m20s)
+  - `Merge pull request #161` (CI activation) push run on main — success (4m13s)
+  - PR #161 pull_request run — success (3m37s)
+- [x] ✅ **Full QA suite re-run locally** (after `npm ci`): `prebuild` all gates PASS (13+ gates; i18n 1103 keys × 3; specialty-locale 231 × 2 = 462 blocks; specialty-coverage 231/231 + 0 orphans; service-i18n 31/31; problem-i18n; client-bundle 225 modules; **344,800 estimator assertions, 0 failures**; zero drift in generated files) → `type-check` 0 errors → `lint` 0 warnings → `build` **6,180 HTML pages** → `audit:links` **466,199 rendered + 58 source links, 0 broken** → `audit:html` 0 fatal / 0 warnings → `seo:audit` PASS → `audit:meta` 0 missing titles / 0 parse failures / 0 NAP issues.
+- [x] ✅ **No website/content changes** — no new services, subservices, prices, warranties, reviews, licences or claims; EN/MS/ZH content untouched and re-verified green by the full audit suite.
+- [x] ✅ Updated this plan (Session 16 record, header status, Start-Here section).
+
 ## In Progress This Session
 
-- None. CI activation has been completed and verified on `main`.
+- None. All roadmap phases and CI are complete.
 
 ## Pending Next
 
-1. ✅ CI activation is complete; continue monitoring future PR/push CI runs.
-2. Monitor production Search Console indexation, rankings, and conversions once deployed (outside sandbox scope).
-4. Optional maintenance only; no content roadmap work remains. Do not add services, subservices, prices, reviews, warranties, licences, guarantees, or other claims without verified business data.
+1. Monitor production Search Console indexation, GSC query rankings, and conversions once deployed (outside sandbox scope).
+2. Optional maintenance only; no content roadmap work remains. Do not add services, subservices, prices, reviews, warranties, licences, guarantees, or other claims without verified business data.
+3. When a subservice is ever renamed, the `audit:specialty-coverage` gate will fail the build if its specialty entry is not updated in the same change — keep that gate green.
 
 ## Blocked
 
-- None for the renovation roadmap or CI activation. The Vercel `Account is blocked` check on PR #161 is a separate deployment/integration issue and does not block the merged GitHub Actions CI workflow.
+- None. The renovation roadmap is fully complete and the CI pipeline is activated and passing on GitHub Actions.
 
-## Completed This Session
+## Completed This Session (Session 16)
 
-- [x] CI activation completed manually by the owner through GitHub PR #161 after the Arena App workflow permission remained unavailable.
-- [x] PR #161 merged into `main`; `.github/workflows/ci.yml` is present on `main`.
-- [x] GitHub Actions `CI` push run on `main` passed successfully (run 32960872289).
-- [x] Durable CI source retained at `docs/ci-workflow.yml`.
-- [x] No website changes; all EN/MS/ZH content preserved.
+- [x] Full QA re-verification on fresh checkout: all 16+ build gates PASS, 6,180 pages compiled, 466,199 links / 0 broken, 0 TypeScript errors, 0 ESLint warnings, 0 metadata defects.
+- [x] CI confirmed green on GitHub Actions: latest push run on `main` passed (run 32993417280, 3m56s).
+- [x] No website/content changes; all EN/MS/ZH content preserved and re-verified.
 
-## Files Changed This Session (Session 15)
+## Files Changed This Session (Session 16)
 
-- `RENOVATION_EXPANSION_PLAN.md` (Session 15 status, activation attempt, blocked reason, next steps, file and QA record)
+- `RENOVATION_EXPANSION_PLAN.md` (Session 16 record: header status, full QA re-verification, CI confirmation, Start-Here update)
 
-## Files Created This Session (Session 15)
+## Files Created This Session (Session 16)
 
-- None (the temporary `.github/workflows/ci.yml` was removed after the push was rejected; durable source remains `docs/ci-workflow.yml`).
+- None
 
-## Files Deleted This Session (Session 15)
+## Files Deleted This Session (Session 16)
 
-- None committed. Temporary unpushed `.github/workflows/ci.yml` removed to keep the branch pushable.
+- None
 
-## QA Status (Session 15)
+## QA Status (Session 16)
 
-- Repository state: ✅ clean after removing the rejected workflow commit; branch remains `arena/01a03da3-klservisrumah-web`.
-- CI activation: ✅ COMPLETED — PR #161 merged; workflow exists on `main`; GitHub Actions push run passed.
-- Website QA: ✅ no website/content changes were made; prior full QA remains valid per Sessions 13–14.
+- Full CI-equivalent sequence re-run locally: ✅ ALL GREEN — `npm ci` → `prebuild` (13+ gates; i18n 1103 keys × 3; specialty-locale 231 × 2 = 462 blocks; specialty-coverage 231/231 + 0 orphans; service-i18n 31/31; estimators 344,800 assertions; zero drift) → `type-check` 0 errors → `lint` 0 warnings → `build` 6,180 HTML pages → `audit:links` 466,199 rendered + 58 source links, 0 broken → `audit:html` 0 fatal / 0 warnings → `seo:audit` PASS → `audit:meta` 0 issues.
+- CI on GitHub Actions: ✅ PASSING — latest 5 runs all `completed` + `success` on both `main` push and `pull_request` triggers.
+- Website content: ✅ untouched (no new services, subservices, prices, warranties, reviews, licences or claims).
 
 ## Files Changed This Session (Session 13) — historical record
 
@@ -1158,25 +1168,27 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 
 ---
 
-### Start Here — Next Session (Session 16)
+### Start Here — Next Session (Session 17)
 
-All 23 master roadmap phases of the KL Servis Rumah Renovation Expansion project are **100% completed, integrated, and verified**, and as of Session 12 the localized specialty tree is at **100% coverage: every one of the 231 subservices across all 31 services has a fully native Malay and Chinese specialty page** (462 authored native blocks), enforced by a new build-time coverage gate (`npm run audit:specialty-coverage`).
+All 23 master roadmap phases of the KL Servis Rumah Renovation Expansion project are **100% completed, integrated, and verified**, and the localized specialty tree is at **100% coverage: every one of the 231 subservices across all 31 services has a fully native Malay and Chinese specialty page** (462 authored native blocks), enforced by a build-time coverage gate (`npm run audit:specialty-coverage`).
+
+**CI is activated and passing on GitHub Actions** — `.github/workflows/ci.yml` is on `main` (PR #161 merged), and the latest push and pull_request runs are all `completed` + `success`.
 
 Summary of what is in place:
 1. **Pillar & Service Hubs**: 31 service pillars (including `house-renovation`, `kitchen-renovation`, `bathroom-renovation`, `flooring`, `plaster-ceiling`, `tiling`, `waterproofing`, `painting`, `electrical`, `plumbing`, `carpentry`, `door`, `window-repair`, `glass-aluminium`, `welding`, `post-renovation-cleaning`).
-2. **Sub-Services & Specialties**: 231 sub-services across all 31 services — **all 231 with native MS/ZH specialty twins (462 native content blocks)** since Session 12.
-3. **Problem-Based Diagnostic Pages**: 80 indexable keep-URLs (and 12 canonical redirects) with full native EN/MS/ZH content, symptoms, causes, fixes, local FAQs, and schema markup.
+2. **Sub-Services & Specialties**: 231 sub-services across all 31 services — **all 231 with native MS/ZH specialty twins (462 native content blocks)**.
+3. **Problem-Based Diagnostic Pages**: 80 indexable keep-URLs (and 12 canonical redirects) with full native EN/MS/ZH content.
 4. **Calculators & Estimators**: 46 tools across EN, MS (`/ms/alatan`), and ZH (`/zh/gongju`), including the comprehensive 12-input Renovation Budget Calculator with 344,800 unit test assertions passing.
-5. **Location SEO**: 37 major areas and 49 suburbs mapped across all 31 services (2,759 localized landing pages) passing the < 70% Jaccard similarity gate.
-6. **Accessibility**: Phase 21 fully verified (WCAG AA compliant semantic landmarks, focus management, focus traps, aria labels translated EN/MS/ZH, safe touch targets, `prefers-reduced-motion` guard).
-7. **Production QA**: 6,188 static HTML pages compiled clean, 466,199 internal links with 0 broken targets, 0 TypeScript errors, 0 ESLint warnings, 0 metadata/schema defects.
-8. **Self-defending pipeline (Session 12)**: 16 build gates run in `prebuild` + post-build audits, and the whole suite now runs automatically in CI (`.github/workflows/ci.yml`) on every PR and push to main — defect classes fixed this session (invisible localized subservices, orphan specialty keys, client-only broken links) each have a dedicated gate that fails the build if they ever return.
+5. **Location SEO**: 37 major areas and 49 suburbs mapped across all 31 services (2,759 localized landing pages).
+6. **Accessibility**: WCAG AA compliant semantic landmarks, focus management, focus traps, aria labels translated EN/MS/ZH, safe touch targets, `prefers-reduced-motion` guard.
+7. **Production QA**: 6,180 static HTML pages compiled clean, 466,199 internal links with 0 broken targets, 0 TypeScript errors, 0 ESLint warnings, 0 metadata/schema defects.
+8. **CI pipeline**: 16+ build gates run in `prebuild` + post-build audits, running automatically on every PR and push to main — defect classes (invisible localized subservices, orphan specialty keys, client-only broken links) each have a dedicated gate that fails the build if they ever return.
 
 Remaining work for future sessions:
 1. **Nothing on the content roadmap** — every cluster, phase and coverage gap tracked in this plan is ✅ COMPLETED. Do not add new services, subservices or claims without new verified business data.
 2. Monitor production Search Console indexation, GSC query rankings, and conversions once deployed (outside sandbox scope).
 3. Optional maintenance: when a subservice is ever renamed, the new `audit:specialty-coverage` gate will fail the build if its specialty entry (or any hardcoded link) is not updated in the same change — keep that gate green.
-4. **FIRST TASK — Activate CI** (owner-assigned; blocked — now 4th confirmation, Sessions 12/13/14/15): the pipeline is re-verified green (Session 13 end-to-end incl. 6,180-page build + 4 audits; Session 14 prebuild + types + lint on the identical tree) and the byte-identical tracked copy is at **`docs/ci-workflow.yml`** on main. `.github/workflows/ci.yml` itself cannot be pushed — the Arena GitHub App token lacks the `workflows` permission (git push and Contents API both rejected three times). Session 15 removed the rejected local workflow commit to keep this branch pushable; do not depend on a local gated commit. Activation steps once the owner has reconnected GitHub in Arena with the **Workflows: Read & Write** permission: `mkdir -p .github/workflows && cp docs/ci-workflow.yml .github/workflows/ci.yml`, commit, push the session branch, open a PR — the `on: pull_request` trigger runs the workflow on that PR; confirm all steps pass (or use `workflow_dispatch` after merge). If the push is still rejected, the permission was not granted — escalate to the owner again with the exact steps in the Blocked section.
+
 
 ---
 
