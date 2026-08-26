@@ -8,9 +8,9 @@
 
 ## Project Status
 
-**Overall Status:** ✅ Content roadmap COMPLETED (All Phases 1–23 complete & verified · 231/231 subservices with native Malay & Chinese pages) · ⚠️ One engineering task awaits owner action: CI activation — `workflows` permission gap re-confirmed a 3rd time in Session 14 (git push + Contents API, see Blocked)
+**Overall Status:** ✅ Content roadmap COMPLETED (All Phases 1–23 complete & verified · 231/231 subservices with native Malay & Chinese pages) · ⚠️ One engineering task awaits owner action: CI activation — `workflows` permission gap re-confirmed a 4th time in Session 15 after GitHub disconnect/reconnect (git push still rejected, see Blocked)
 
-**Last Updated:** 2026-08-26 (Session 14)
+**Last Updated:** 2026-08-26 (Session 15)
 
 **Languages:**
 
@@ -18,7 +18,7 @@
 - Malay (ms)
 - Chinese (zh)
 
-**Session:** Initial audit + foundation (Session 1) · Connected-trades expansion (Session 2) · Waterproofing expansion (Session 3) · Electrical connected-trade expansion (Session 4) · Plumbing connected-trade expansion (Session 5) · Carpentry connected-trade expansion (Session 6) · Door, window, glass & welding expansion (Session 7) · Post-renovation cleaning expansion (Session 8) · Commercial renovation cluster expansion (Session 9) · Accessibility pass (Session 10) · Problem content expansion, Location SEO, Performance & Full QA (Session 11) · Full MS/ZH specialty-coverage expansion + i18n defect fixes (Session 12) · CI activation attempt: workflow recreated, fully re-verified, push re-blocked, durable tracked copy added (Session 13) · CI activation re-attempt #3: permission gap re-confirmed, repo state re-verified green, session record pushed as its own doc-only PR (Session 14)
+**Session:** Initial audit + foundation (Session 1) · Connected-trades expansion (Session 2) · Waterproofing expansion (Session 3) · Electrical connected-trade expansion (Session 4) · Plumbing connected-trade expansion (Session 5) · Carpentry connected-trade expansion (Session 6) · Door, window, glass & welding expansion (Session 7) · Post-renovation cleaning expansion (Session 8) · Commercial renovation cluster expansion (Session 9) · Accessibility pass (Session 10) · Problem content expansion, Location SEO, Performance & Full QA (Session 11) · Full MS/ZH specialty-coverage expansion + i18n defect fixes (Session 12) · CI activation attempt: workflow recreated, fully re-verified, push re-blocked, durable tracked copy added (Session 13) · CI activation re-attempt #3: permission gap re-confirmed, repo state re-verified green, session record pushed as its own doc-only PR (Session 14) · CI activation re-attempt #4 after owner reconnect: permission gap still present, workflow push rejected, gated file removed from session branch (Session 15)
 
 ---
 
@@ -1072,45 +1072,53 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 - [x] ✅ Updated this plan (Session 14 record) and pushed it as a standalone doc-only PR (see Files/PR section below).
 - [x] ✅ **No website/content changes** — no new services, subservices, prices, warranties, reviews, licences or claims; EN/MS/ZH content untouched.
 
+## Session 15 (2026-08-26) — CI activation after GitHub reconnect
+
+- [x] ✅ Read the persistent plan and verified the repository at the session branch tip (`92203ab`, clean working tree); durable workflow source `docs/ci-workflow.yml` is present.
+- [x] ✅ Re-attempted CI activation exactly as planned: copied `docs/ci-workflow.yml` to `.github/workflows/ci.yml`, committed `ci: activate renovation QA workflow`, and attempted to push to `arena/01a03da3-klservisrumah-web`.
+- [x] ✅ **Push re-tested after the owner’s GitHub disconnect/reconnect, but remains blocked**: GitHub rejected the push with `refusing to allow a GitHub App to create or update workflow .github/workflows/ci.yml without workflows permission`. `gh auth status` confirms the connected Arena GitHub App identity, while the repository API still reports no push permission.
+- [x] ✅ Removed the unpushable workflow commit/file from the session branch after the failed push, leaving the branch clean and preserving the byte-identical tracked source at `docs/ci-workflow.yml`. This prevents the gated commit from blocking future plan updates.
+- [x] ✅ No website/content changes; English, Malay and Chinese content remains untouched.
+
 ## In Progress This Session
 
-- None — Session 14 re-attempted the single remaining task (CI activation) and it is blocked again on the same external dependency (owner must grant the `workflows` permission). No in-sandbox work remains in progress.
+- None in the sandbox. CI activation is **⚠️ BLOCKED** on the GitHub App’s missing `workflows` permission after the reconnect.
 
 ## Pending Next
 
-1. **FIRST TASK (blocked on owner action — 3rd confirmation) — Activate CI**: copy `docs/ci-workflow.yml` → `.github/workflows/ci.yml` on the session branch, commit, push, open PR, confirm the workflow runs and all steps pass. Session 14 re-verified the pipeline green and re-tested both push routes (git push + Contents API) — both still rejected; the owner has not yet granted the `workflows` permission (see Blocked for exact steps). A ready commit sits on local branch `ci-ready`, but the canonical source is `docs/ci-workflow.yml` on main — just re-copy if the local ref was lost to a session-boundary reset.
-2. Monitor production Search Console indexation, GSC query rankings, and user conversions once deployed (outside sandbox scope).
-3. Optional maintenance: when a subservice is ever renamed, the `audit:specialty-coverage` gate fails the build until its specialty entry (and any hardcoded links) are updated in the same change — keep the gates green.
-4. No content work pending — all roadmap clusters are complete; do not add new services/subservices without new verified business data.
+1. **FIRST TASK — Activate CI once permission is actually available:** copy `docs/ci-workflow.yml` to `.github/workflows/ci.yml`, commit, push this session branch, open a PR, and confirm the `pull_request` CI run passes.
+2. If the owner already granted Workflows access, reconnect again and verify the integration permission specifically includes **Workflows: Read & Write** for `klrenovator/klservisrumah-web`; the push error proves the grant is not effective for this token.
+3. Monitor production Search Console indexation, rankings, and conversions once deployed (outside sandbox scope).
+4. Optional maintenance only; no content roadmap work remains. Do not add services, subservices, prices, reviews, warranties, licences, guarantees, or other claims without verified business data.
 
 ## Blocked
 
-- ⚠️ **CI workflow activation — awaiting owner action (owner cannot add the file manually; agent handles activation once unblocked).** Status after Session 14:
-  - `.github/workflows/ci.yml` is fully authored and the **entire pipeline sequence re-verified green locally twice** (Session 13: all gates, types, lint, 6,180-page build, 4 audits; Session 14: prebuild 13 gates + types + lint on the identical tree).
-  - Push routes exhausted three times (Sessions 12, 13, 14): `git push` → "refusing to allow a GitHub App to create or update workflow `.github/workflows/ci.yml` without `workflows` permission"; Contents API PUT → 403 "Resource not accessible by integration". The Arena GitHub App token (`arena-ai-coding-agent[bot]`) still does not carry the `workflows` permission — **the owner has not yet reconnected with the Workflows grant**.
-  - Session 14 side effect, handled: because a ref push is rejected if ANY commit in it touches a gated path, the ready workflow commit was parked on local branch `ci-ready` so doc-only updates (this session's plan record) could still be pushed.
-  - A byte-identical **tracked copy now lives at `docs/ci-workflow.yml`** (pushable — outside the permission-gated path), so no re-authoring is ever needed again.
-  - **What the owner must do (exact steps):** in Arena.ai, open Settings → Connections (Integrations) → GitHub, disconnect/reconnect the GitHub integration and ensure the connection is granted the **Workflows: Read & Write** permission for the `klrenovator` account/org. If Arena's GitHub connection UI does not offer a Workflows grant, contact Arena support to enable it for the integration. Once reconnected, tell the agent to "activate CI" — the next session copies `docs/ci-workflow.yml` into place, pushes, opens the PR and confirms the run.
-  - Everything else from Sessions 12–13 (2 new audit gates, link-audit source scan, all content) is pushed and merged via PR #155; the durable CI copy + Session 13 plan record are merged via PR #156 (39639e9); PR #157 (f91925b) recorded that merge; the Session 14 plan record is pushed as its own doc-only PR.
-- None other — Session 12 introduced no new pricing, warranties, reviews or licences. All 44 new specialty blocks reuse only prices already published on the corresponding EN subservice pages (or "On Quote" / "Atas Sebut Harga" / "依报价"), warranty claims translated from the existing per-service warranty fields in services-data.ts, and authority-approval disclaimers (DBKL/MBSA/JMB — "approval not guaranteed") already used across the site.
+- ⚠️ **CI workflow activation — 4th confirmation, awaiting effective owner/integration permission.** The complete workflow is ready and locally verified; the durable byte-identical source is `docs/ci-workflow.yml`. After this session’s disconnect/reconnect, GitHub still rejected `git push` for `.github/workflows/ci.yml` with the missing `workflows` permission. The owner must reconnect the Arena GitHub integration with **Workflows: Read & Write** enabled for the `klrenovator` account/org. If the UI does not expose that permission, Arena support must enable it.
 
-## Files Changed This Session (Session 14)
+## Completed This Session
 
-- `RENOVATION_EXPANSION_PLAN.md` (Session 14 record: header status, 3rd CI block confirmation, commit-restructuring note, state re-verification, Start-Here for Session 15, continuity-note lesson)
+- [x] CI activation attempted after GitHub reconnect; push failure documented with the exact GitHub error.
+- [x] Branch cleaned so no permission-gated workflow commit remains locally.
+- [x] Durable CI source retained at `docs/ci-workflow.yml`.
+- [x] No website changes; all EN/MS/ZH content preserved.
 
-## Files Created This Session (Session 14)
+## Files Changed This Session (Session 15)
 
-- `.github/workflows/ci.yml` (re-created on disk byte-identical from `docs/ci-workflow.yml`; committed as "ci: activate QA pipeline" and parked on local branch `ci-ready` (`2fa87b5`) — NOT pushed: identical token `workflows` permission rejection. The canonical durable copy remains `docs/ci-workflow.yml` on main)
+- `RENOVATION_EXPANSION_PLAN.md` (Session 15 status, activation attempt, blocked reason, next steps, file and QA record)
 
-## Files Deleted This Session (Session 14)
+## Files Created This Session (Session 15)
 
-- None
+- None (the temporary `.github/workflows/ci.yml` was removed after the push was rejected; durable source remains `docs/ci-workflow.yml`).
 
-## QA Status (Session 14)
+## Files Deleted This Session (Session 15)
 
-- State re-verified on `f91925b` (tip of main — byte-identical to Session 13's fully green-verified tree): `npm ci` → `prebuild` **all 13 gates ✅** (i18n 1103 keys × 3, specialty-locale 231 × 2 = 462 blocks, specialty-coverage 231/231 + 0 orphans, service-i18n 31/31, problem-i18n, client-bundle 225 modules, **344,800 estimator assertions, 0 failures**) with **zero drift** in generated files → `type-check` **0 errors** → `lint` **0 warnings**. Full SSG build + post-build audits skipped as redundant (tree unchanged since Session 13's end-to-end green run: 6,180 pages, 466,199 links / 0 broken, audit:html/seo/meta PASS).
-- CI activation: ⚠️ BLOCKED on owner action — **3rd confirmation** (Session 14): `git push` rejected ("…without `workflows` permission") and Contents API PUT → 403. See Blocked.
-- No website/content changes — no new services, subservices, prices, warranties, reviews, licences or claims; EN/MS/ZH content untouched.
+- None committed. Temporary unpushed `.github/workflows/ci.yml` removed to keep the branch pushable.
+
+## QA Status (Session 15)
+
+- Repository state: ✅ clean after removing the rejected workflow commit; branch remains `arena/01a03da3-klservisrumah-web`.
+- CI activation: ⚠️ BLOCKED — GitHub push rejected for missing `workflows` permission even after reconnect.
+- Website QA: ✅ no website/content changes were made; prior full QA remains valid per Sessions 13–14.
 
 ## Files Changed This Session (Session 13) — historical record
 
@@ -1150,7 +1158,7 @@ Implementation: Add as subservices to house-renovation service with full MS/ZH i
 
 ---
 
-### Start Here — Next Session (Session 15)
+### Start Here — Next Session (Session 16)
 
 All 23 master roadmap phases of the KL Servis Rumah Renovation Expansion project are **100% completed, integrated, and verified**, and as of Session 12 the localized specialty tree is at **100% coverage: every one of the 231 subservices across all 31 services has a fully native Malay and Chinese specialty page** (462 authored native blocks), enforced by a new build-time coverage gate (`npm run audit:specialty-coverage`).
 
@@ -1168,7 +1176,7 @@ Remaining work for future sessions:
 1. **Nothing on the content roadmap** — every cluster, phase and coverage gap tracked in this plan is ✅ COMPLETED. Do not add new services, subservices or claims without new verified business data.
 2. Monitor production Search Console indexation, GSC query rankings, and conversions once deployed (outside sandbox scope).
 3. Optional maintenance: when a subservice is ever renamed, the new `audit:specialty-coverage` gate will fail the build if its specialty entry (or any hardcoded link) is not updated in the same change — keep that gate green.
-4. **FIRST TASK — Activate CI** (owner-assigned; blocked — now 3rd confirmation, Sessions 12/13/14): the pipeline is re-verified green (Session 13 end-to-end incl. 6,180-page build + 4 audits; Session 14 prebuild + types + lint on the identical tree) and the byte-identical tracked copy is at **`docs/ci-workflow.yml`** on main. `.github/workflows/ci.yml` itself cannot be pushed — the Arena GitHub App token lacks the `workflows` permission (git push and Contents API both rejected three times). Session 14 parked a ready commit on local branch `ci-ready`, but it may not survive a session boundary — do not depend on it. Activation steps once the owner has reconnected GitHub in Arena with the **Workflows: Read & Write** permission: `mkdir -p .github/workflows && cp docs/ci-workflow.yml .github/workflows/ci.yml`, commit, push the session branch, open a PR — the `on: pull_request` trigger runs the workflow on that PR; confirm all steps pass (or use `workflow_dispatch` after merge). If the push is still rejected, the permission was not granted — escalate to the owner again with the exact steps in the Blocked section.
+4. **FIRST TASK — Activate CI** (owner-assigned; blocked — now 4th confirmation, Sessions 12/13/14/15): the pipeline is re-verified green (Session 13 end-to-end incl. 6,180-page build + 4 audits; Session 14 prebuild + types + lint on the identical tree) and the byte-identical tracked copy is at **`docs/ci-workflow.yml`** on main. `.github/workflows/ci.yml` itself cannot be pushed — the Arena GitHub App token lacks the `workflows` permission (git push and Contents API both rejected three times). Session 15 removed the rejected local workflow commit to keep this branch pushable; do not depend on a local gated commit. Activation steps once the owner has reconnected GitHub in Arena with the **Workflows: Read & Write** permission: `mkdir -p .github/workflows && cp docs/ci-workflow.yml .github/workflows/ci.yml`, commit, push the session branch, open a PR — the `on: pull_request` trigger runs the workflow on that PR; confirm all steps pass (or use `workflow_dispatch` after merge). If the push is still rejected, the permission was not granted — escalate to the owner again with the exact steps in the Blocked section.
 
 ---
 
