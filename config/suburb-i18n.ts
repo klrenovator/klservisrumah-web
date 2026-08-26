@@ -31,8 +31,8 @@ export const suburbHousingProfileI18n: Record<
     zh: "有地住宅、公寓与山坡房产，经常需要防水、外墙粉刷和杂工维护。"
   },
   setapak: {
-    ms: "Campuran perumahan pelajar, pangsapuri, dan lot kedai dengan permintaan berulang untuk penyelenggaraan paip, kunci, dan cat.",
-    zh: "学生宿舍、公寓与店屋混合区，水管、锁具和油漆维护需求持续。"
+    ms: "Kawasan tumpuan pelajar dan kondominium siri PV di Jalan Genting Klang serta teres Danau Kota yang kerap memerlukan pembaikan tampalan gipsum, cat sewaan, dan sekatan bilik.",
+    zh: "围绕拉曼大学管理学院（TAR UMT）与云顶吉冷路 PV 系列高密度学生公寓及 Danau Kota 排屋，退租修补、石膏板补洞、出租房粉刷与房间隔断需求频繁。"
   },
   "wangsa-maju": {
     ms: "Kondominium dan rumah teres yang memerlukan kaedah kerja mesra kondo, pembaikan tanpa kotoran, dan slot perkhidmatan hari sama.",
@@ -207,8 +207,8 @@ export const suburbHousingProfileI18n: Record<
     zh: "覆盖全州的服务范围，包括成熟市镇、新兴城镇、商业单位与有地住宅。"
   },
   sentul: {
-    ms: "Pangsapuri lama, rumah teres, dan kondominium baharu dengan kerja paip, mengecat, dan kerja tangan yang kerap.",
-    zh: "老式公寓、排屋与新建公寓，水管、粉刷和杂工作业需求频繁。"
+    ms: "Hab kereta api bersejarah dengan kondominium moden Sentul West/East, rumah kedai lama dan flat matang yang kerap memerlukan pemulihan siling plaster, sekatan akustik, dan kalis lembapan.",
+    zh: "历史悠久的铁路枢纽，涵盖 Sentul West 与 Sentul East 现代高档公寓、战前老旧店屋及成熟组屋，对石膏天花板修复、隔音隔断及防潮批灰需求集中。"
   },
   "bandar-botanic": {
     ms: "Rumah bertanah moden dan unit komersial yang memerlukan cat dalaman kemas, kunci pintu, dan pembaikan paip.",

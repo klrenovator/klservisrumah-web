@@ -39,11 +39,11 @@ const SUBURB_BODY_MS: Record<string, LocalizedSuburbBody> = {
     }
   },
   "setapak": {
-    housingProfile: "Setapak mempunyai perumahan pelajar, pangsapuri dan lot kedai dengan permintaan berulang untuk kerja paip, kunci dan pengecatan.",
-    commonIssues: ["Paip tersumbat", "Kunci rosak", "Cat mengelupas", "Kebocoran siling"],
+    housingProfile: "Setapak dipenuhi kondominium siri PV berkepadatan tinggi, penempatan pelajar sekitar TAR UMT, dan teres Danau Kota yang memerlukan kerja pembaikan pantas antara pertukaran penyewa.",
+    commonIssues: ["Tampalan lubang dinding gipsum", "Mengecat semula unit sewaan", "Paip sinki tersumbat", "Pemasangan tombol pintu"],
     localFaq: {
-      q: "Bolehkah anda baiki paip yang tersumbat di pangsapuri pelajar?",
-      a: "Boleh. Kami menggunakan jetting bertekanan tinggi dan boleh menyelesaikan kebanyakan kes dalam satu lawatan."
+      q: "Bolehkah anda siapkan kerja mengecat dan tampalan siling cepat untuk pertukaran penyewa di Setapak?",
+      a: "Boleh. Kami menyediakan slot pembaikan pantas untuk unit kondominium PV dan Danau Kota agar unit sedia disewakan semula tanpa kelewatan."
     }
   },
   "wangsa-maju": {
@@ -391,11 +391,11 @@ const SUBURB_BODY_MS: Record<string, LocalizedSuburbBody> = {
     }
   },
   "sentul": {
-    housingProfile: "Sentul mempunyai pangsapuri lama, teres dan kondominium baharu dengan kerja paip, pengecatan dan kerja tangan yang kerap.",
-    commonIssues: ["Paip bocor", "Cat dinding", "Pembaikan siling", "Pemasangan TV"],
+    housingProfile: "Sentul menggabungkan kediaman mewah moden di Sentul West/East dengan flat warisan kereta api dan rumah kedai matang, memerlukan kemahiran siling plaster kemas, kerja paip, dan cat tahan lama.",
+    commonIssues: ["Siling plaster rosak akibat kebocoran", "Paip air berkarat di unit lama", "Cat dinding lembap", "Sekatan gipsum bilik"],
     localFaq: {
-      q: "Bolehkah anda baiki paip di pangsapuri lama di Sentul?",
-      a: "Ya. Kami gantikan paip lama dengan PPR dan boleh menyelesaikan dalam 2–4 hari."
+      q: "Bolehkah anda baiki siling plaster dan paip di kondominium serta flat lama di Sentul?",
+      a: "Boleh. Kami mematuhi peraturan JMB di Sentul West/East dan berpengalaman menaik taraf paip serta siling flat matang dalam tempoh 1–3 hari."
     }
   },
   "bandar-botanic": {
@@ -434,11 +434,11 @@ const SUBURB_BODY_ZH: Record<string, LocalizedSuburbBody> = {
     }
   },
   "setapak": {
-    housingProfile: "文良港拥有学生住宿、公寓和店屋，对管道、锁具和粉刷有反复需求。",
-    commonIssues: ["排水管堵塞", "锁具损坏", "油漆剥落", "天花板漏水"],
+    housingProfile: "文良港（Setapak）以拉曼大学管理学院周边密集学生公寓、PV 系列高楼住宅及 Danau Kota 成熟排屋为主，租客退租翻新与快速维修需求极为旺盛。",
+    commonIssues: ["石膏隔墙破洞与门把手撞击修复", "退租出租房整屋快速刷漆", "厨房水槽下水堵塞", "门锁与门铰链更换"],
     localFaq: {
-      q: "你们能维修学生公寓的堵塞管道吗？",
-      a: "可以。我们使用高压水射技术，大多数情况可一次上门解决。"
+      q: "文良港（Setapak）学生公寓退租，能安排当日或快速修补天花板与刷漆吗？",
+      a: "可以。我们常年服务文良港 Danau Kota 与 PV 系列公寓，支持灵活预约，高效完成天花板补洞、批灰刷漆与水喉疏通。"
     }
   },
   "wangsa-maju": {
@@ -786,11 +786,11 @@ const SUBURB_BODY_ZH: Record<string, LocalizedSuburbBody> = {
     }
   },
   "sentul": {
-    housingProfile: "沈都拥有老旧公寓、排屋和新公寓，管道、粉刷和杂工工作频繁。",
-    commonIssues: ["管道漏水", "墙面粉刷", "天花板维修", "电视安装"],
+    housingProfile: "沈都（Sentul）融合了 Sentul West/East 现代高档公寓、铁路历史遗址与成熟老式组屋，对高品质石膏天花板修补、暗管改造及整屋油漆有持续需求。",
+    commonIssues: ["楼上渗水导致石膏天花板发霉下垂", "老旧单元水管生锈漏水", "墙面受潮起泡", "房间轻钢龙骨隔断"],
     localFaq: {
-      q: "你们能维修沈都老旧公寓的管道吗？",
-      a: "可以。我们会更换老旧管道为 PPR，通常在 2–4 天内完成。"
+      q: "你们在沈都（Sentul）的高档公寓和老式组屋都有施工经验吗？",
+      a: "有的。我们熟悉 Sentul West/East 等公寓管理处的进场押金与施工时间规定，也擅长为成熟组屋与排屋提供快速水管及天花板翻新。"
     }
   },
   "bandar-botanic": {

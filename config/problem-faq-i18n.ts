@@ -164,5 +164,29 @@ export const problemFaqI18n: Partial<Record<string, Partial<Record<Exclude<Local
   "stuck-sliding-window": {
     ms: { title: "Tingkap Gelangsar Tersangkut atau Seret", topic: "tingkap gelangsar yang tersangkut atau seret" },
     zh: { title: "推拉窗卡住或滑动不畅", topic: "推拉窗卡住问题" }
+  },
+  "popping-tiles-buckling": {
+    ms: { title: "Jubin Lantai Meletup atau Meleding", topic: "jubin lantai yang meletup atau meleding" },
+    zh: { title: "地砖起拱爆裂", topic: "地砖起拱爆裂问题" }
+  },
+  "damaged-gypsum-partition-wall": {
+    ms: { title: "Dinding Pemisah Gipsum Berlubang atau Rosak", topic: "dinding pemisah gipsum yang berlubang atau rosak" },
+    zh: { title: "石膏隔断墙损坏破洞", topic: "石膏隔断墙损坏破洞问题" }
+  },
+  "old-bathroom-plumbing-tiles": {
+    ms: { title: "Masalah Bilik Mandi Usang & Paip Berkarat", topic: "bilik mandi usang dan paip berkarat" },
+    zh: { title: "老旧浴室暗管老化与瓷砖渗水", topic: "老旧浴室管道老化与瓷砖渗水问题" }
+  },
+  "old-kitchen-cabinet-plumbing-damage": {
+    ms: { title: "Kerosakan Kabinet Sinki Dapur Akibat Paip Bocor", topic: "kabinet sinki dapur yang rosak akibat paip bocor" },
+    zh: { title: "厨房水槽柜受潮发胀与水管渗漏", topic: "厨房水槽柜受潮与水管渗漏问题" }
+  },
+  "uneven-floor-subfloor-leveling": {
+    ms: { title: "Lantai Konkrit Tidak Rata Sebelum Pasang Jubin/SPC", topic: "lantai konkrit yang tidak rata sebelum pemasangan lantai" },
+    zh: { title: "地面不平整与自流平找平", topic: "铺贴地板前地面不平整找平问题" }
+  },
+  "wall-cracks-settlement-masonry": {
+    ms: { title: "Retak Struktur Dinding Bata & Sambungan Tambahan", topic: "retak struktur dinding bata dan sambungan tambahan rumah" },
+    zh: { title: "房屋沉降砖墙裂缝与扩建接缝开裂", topic: "房屋沉降砖墙阶梯裂缝与扩建接缝开裂问题" }
   }
 };

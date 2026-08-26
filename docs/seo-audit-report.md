@@ -1,6 +1,6 @@
 # SEO Audit Report
 
-Generated: 2026-08-26T04:12:15.178Z
+Generated: 2026-08-26T05:13:39.595Z
 
 ## Route Inventory
 
@@ -184,6 +184,12 @@ Generated: 2026-08-26T04:12:15.178Z
 - /problems/aircon-tripping-mcb
 - /problems/ice-forming-on-aircon
 - /problems/aircon-remote-display-issue
+- /problems/popping-tiles-buckling
+- /problems/damaged-gypsum-partition-wall
+- /problems/old-bathroom-plumbing-tiles
+- /problems/old-kitchen-cabinet-plumbing-damage
+- /problems/uneven-floor-subfloor-leveling
+- /problems/wall-cracks-settlement-masonry
 - /blog/5-tips-choosing-paint-colors-malaysia
 - /blog/how-to-fix-leaking-ceiling-without-tile-hacking
 - /blog/when-to-repaint-your-house-malaysia
@@ -416,16 +422,16 @@ Generated: 2026-08-26T04:12:15.178Z
 
 ## Checks
 
-- Total representative routes: 409
+- Total representative routes: 415
 - Service pages: 31
 - Area pages: 37
 - Suburb records: 52
-- Problem pages: 86
+- Problem pages: 92
 - Blog posts: 229
 
 ## Metadata consistency (post-build full-corpus)
 
-- Pages checked: 6074
+- Pages checked: 6092
 - Pages with hreflang while canonicalised to a different URL: 0
 
 _No issues found — every page that canonicalises to a different URL correctly omits hreflang (Google: canonical overrides hreflang)._

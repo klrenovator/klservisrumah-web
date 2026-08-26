@@ -6,7 +6,7 @@ export type ProblemDetail = {
     | "tiling" | "plaster-ceiling" | "skim-coat" | "flooring" | "epoxy-flooring"
     | "roof-repair" | "kitchen-cabinet" | "carpentry" | "door" | "window-repair"
     | "locksmith" | "glass-aluminium" | "cleaning" | "deep-cleaning" | "post-renovation-cleaning"
-    | "cctv" | "autogate" | "welding" | "aircon";
+    | "cctv" | "autogate" | "welding" | "aircon" | "kitchen-renovation" | "bathroom-renovation";
   title: string;
   symptom: string;
   costRange: string;
@@ -2890,6 +2890,138 @@ export const problemI18n: Partial<Record<string, Partial<Record<"ms" | "zh", Par
         { q: "空调故障代码是什么意思？", a: "每个品牌代码不同，但大多指向传感器、雪种或 PCB 故障。技术员可以读取并解决。" },
         { q: "可以只换遥控器吗？", a: "可以。有万能或品牌匹配的遥控器，我们可以为您的机器编程配对。" },
         { q: "修遥控器或显示屏问题要多少钱？", a: "诊断从 RM 114 起，换遥控器很便宜，PCB 维修从 RM 455 起。" }
+      ]
+    }
+  },
+  "popping-tiles-buckling": {
+    ms: {
+      title: "Jubin Lantai Meletup atau Meleding (Jubin Naik)",
+      costRange: "RM 350–RM 2,800+ bergantung kepada skop dan bilangan jubin",
+      faqs: [
+        { q: "Mengapakah jubin lantai tiba-tiba meletup atau meleding di Malaysia?", a: "Cuaca panas dan lembap di Malaysia menyebabkan jubin mengembang. Tanpa jurang pengembangan yang cukup di tepi dinding, tekanan haba menolak jubin ke atas menjauhi lepaan simen yang longgar." },
+        { q: "Bolehkah jubin yang meletup digam semula tanpa memecahkan simen lama?", a: "Tidak. Lapisan simen di bawah biasanya sudah lekang atau hancur. Menampal semula tanpa memecahkan lepaan rosak akan menyebabkan jubin meletup kembali." },
+        { q: "Bagaimanakah cara mengelakkan jubin meletup semasa kerja ubah suai?", a: "Pastikan ada jurang pengembangan (5–8mm) di sepanjang dinding bawah skirting, gunakan simen pelekat polimer fleksibel, dan sapu simen pelekat 100% penuh di belakang setiap jubin." },
+        { q: "Berapakah kos membaiki jubin meletup di KL dan Selangor?", a: "Pembaikan tompokan kecil bermula dari RM 350 hingga RM 600, manakala kerja memecahkan semula dan memasang jubin baharu untuk ruang tamu luas berkisar antara RM 1,200 hingga RM 2,800+." }
+      ]
+    },
+    zh: {
+      title: "地砖起拱爆裂（地砖爆炸凸起）",
+      costRange: "RM 350–RM 2,800+，视瓷砖数量与基层而定",
+      faqs: [
+        { q: "为什么马来西亚的房屋地砖会突然起拱爆裂？", a: "马来西亚气候炎热潮湿，地砖热胀冷缩。如果铺贴时四周未留足伸缩缝，膨胀应力无处释放就会将脱离基层的地砖向上顶起爆开。" },
+        { q: "起拱的地砖可以直接用胶水粘回去而不敲掉旧水泥吗？", a: "不能。地砖下方的原有水泥砂浆通常已粉化空鼓，直接贴胶无法承重，短时间内会再次脱落起拱。" },
+        { q: "在装修铺砖时如何防止地砖日后起拱？", a: "在墙边踢脚线下方预留 5–8mm 伸缩缝，使用高弹性聚合物瓷砖胶，并在每块砖背面满刮胶浆以保证 100% 满粘接触。" },
+        { q: "在吉隆坡和雪兰莪修补起拱爆裂地砖要多少钱？", a: "局部小范围修补从 RM 350 至 RM 600 起，若是大面积客厅凿除旧水泥重贴地砖则在 RM 1,200 至 RM 2,800+ 之间。" }
+      ]
+    }
+  },
+  "damaged-gypsum-partition-wall": {
+    ms: {
+      title: "Dinding Pemisah Gipsum Berlubang atau Rosak",
+      costRange: "RM 180–RM 1,200+ bergantung kepada saiz lubang dan struktur rangka",
+      faqs: [
+        { q: "Bolehkah lubang pada dinding pemisah gipsum dibaiki tanpa kesan tampalan?", a: "Boleh. Pembaikan profesional menggunakan sokongan kayu di belakang, tampalan gipsum berpemotong kemas, pita jaring gentian, dan skim coat bertingkat yang digosok rata sebelum mengecat semula." },
+        { q: "Apakah punca bahagian bawah dinding pemisah gipsum menjadi lembut atau reput?", a: "Mengecop lantai basah secara kerap tanpa skirting kalis air atau resapan air dari bilik mandi menyebabkan air meresap ke dalam teras gipsum dan melembutkannya." },
+        { q: "Bolehkah saya menggantung TV atau rak berat pada dinding pemisah gipsum?", a: "Barangan berat mesti diskru terus ke rangka stud besi C atau dipasang dengan papan lapis sokongan di belakang dinding gipsum, bukan diskru pada papan gipsum kosong." },
+        { q: "Berapakah kos membaiki dinding pemisah gipsum di KL & Selangor?", a: "Tampalan lubang kecil bermula dari RM 180–RM 300, manakala penggantian kepingan gipsum besar bersama pengukuhan rangka stud dan cat adalah sekitar RM 450 hingga RM 1,200." }
+      ]
+    },
+    zh: {
+      title: "石膏隔断墙损坏破洞（轻钢龙骨隔墙修复）",
+      costRange: "RM 180–RM 1,200+，视破洞大小与龙骨加固而定",
+      faqs: [
+        { q: "石膏板隔墙上的破洞修补后能做到完全看不出痕迹吗？", a: "可以。专业补洞会在内部加装木垫板支撑，嵌入匹配石膏板并贴抗裂网带，经过多道羽化批灰打磨和重新刷漆后完全与原墙融合无痕。" },
+        { q: "石膏隔断墙底部为什么会受潮发胀或软化？", a: "拖地积水从底部渗入或靠近卫生间受潮，由于石膏芯材吸水，水分会导致石膏板软化粉化发霉。" },
+        { q: "修复后的石膏隔墙上可以悬挂电视机或重型挂架吗？", a: "重型物品必须直接固定在金属竖向 C 型龙骨上，或在修补时于石膏板背后预埋多层夹板加固，不能直接挂在单层空心石膏板上。" },
+        { q: "在吉隆坡和雪兰莪修补石膏隔断墙需要多少钱？", a: "门把手撞击的小洞修补从 RM 180–RM 300 起，若涉及大面积换板、龙骨加固及整面墙重新批灰刷漆则在 RM 450 至 RM 1,200 之间。" }
+      ]
+    }
+  },
+  "old-bathroom-plumbing-tiles": {
+    ms: {
+      title: "Masalah Bilik Mandi Usang, Paip Berkarat & Jubin Lusuh",
+      costRange: "RM 800–RM 8,500+ bergantung kepada pembaikan paip vs ubah suai penuh",
+      faqs: [
+        { q: "Adakah lebih baik membaiki secara bertampal atau membuat ubah suai penuh bilik mandi lama?", a: "Bagi bilik mandi melebihi 15–20 tahun dengan paip besi lama dan kalis air usang, pembaikan setempat sering menyebabkan kebocoran baru. Ubah suai penuh menyelesaikan isu paip, kalis air, dan kebersihan secara tuntas." },
+        { q: "Berapa lamakah tempoh kerja ubah suai penuh bilik mandi di KL?", a: "Ubah suai bilik mandi standard biasanya mengambil masa 7 hingga 12 hari bekerja, merangkumi kerja memecah jubin, pendawaian semula paip, ujian banjir kalis air 3 hari, pemasangan jubin dan mangkuk tandas." },
+        { q: "Bolehkah ubah suai bilik mandi dibuat tanpa memecahkan jubin?", a: "Pemasangan jubin lapisan atas boleh dilakukan untuk naik taraf rupa, tetapi jika ada kebocoran paip tersembunyi atau membran kalis air bocor, jubin lama wajib dipecahkan hingga ke papak asal." },
+        { q: "Berapakah anggaran kos ubah suai bilik mandi lama di KL & Selangor?", a: "Penggantian paip dan peralatan sanitari terpilih bermula dari RM 800–RM 2,000, manakala ubah suai penuh dengan kalis air baru, jubin porselin, dan kelengkapan moden berkisar antara RM 4,500 hingga RM 8,500+." }
+      ]
+    },
+    zh: {
+      title: "老旧浴室暗管老化、水压偏小与瓷砖渗水",
+      costRange: "RM 800–RM 8,500+，视局部换管还是全拆重装而定",
+      faqs: [
+        { q: "老旧卫生间是局部补漏划算还是全拆整体翻新更彻底？", a: "房龄超过 15–20 年且使用镀锌铁管的老浴室，局部补漏往往治标不治本。全拆重做水管回路与三道防水，能彻底解决隐蔽漏水与卫生异味问题。" },
+        { q: "在吉隆坡进行全套卫生间翻新通常需要多长时间？", a: "一套标准的公寓或排屋卫生间翻新一般需要 7 至 12 个工作日，包括打拆旧砖、重排 PPR 水管、72小时闭水试验、重铺防滑地砖及安装洁具。" },
+        { q: "老浴室翻新可以不敲旧瓷砖直接覆盖铺贴吗？", a: "如果仅是表面美化且无任何漏水，可以采用微水泥或砖上贴砖；但若存在暗管漏水或防水层失效渗漏楼下，必须彻底敲除至水泥楼板基层重做。" },
+        { q: "吉隆坡与雪兰莪老旧卫生间翻新大概需要多少费用？", a: "局部更换暗管与洁具从 RM 800–RM 2,000 起，若包含全拆敲砖、全套重做防水、全铺地砖墙砖及换新卫浴洁具，整体在 RM 4,500 至 RM 8,500+ 之间。" }
+      ]
+    }
+  },
+  "old-kitchen-cabinet-plumbing-damage": {
+    ms: {
+      title: "Kerosakan Kabinet Sinki Dapur Akibat Paip Bocor",
+      costRange: "RM 450–RM 8,000+ bergantung kepada gantian dasar sinki vs ubah suai dapur",
+      faqs: [
+        { q: "Apakah bahan kabinet bawah sinki terbaik untuk mengelakkan kerosakan air?", a: "Bangkai kabinet aluminium sepenuhnya atau papan lapis gred marin dengan lapisan pelindung kerajang aluminium memberikan ketahanan terbaik terhadap titisan paip pada masa hadapan." },
+        { q: "Bolehkah saya menukar bahagian bawah kabinet sinki yang rosak tanpa merombak seluruh dapur?", a: "Boleh. KL Servis Rumah boleh menggantikan kabinet asas sinki secara modular menggunakan aluminium kalis air sambil mengekalkan permukaan table top dan kabinet lain sedia ada." },
+        { q: "Adakah kerja ubah suai dapur memerlukan penambahan punca elektrik dan litar pendawaian?", a: "Ya. Dapur lama sering kekurangan punca soket kuasa 15A/20A untuk ketuhar elektrik, periuk induksi, dan mesin basuh pinggan. Penambahan litar mengelakkan DB elektrik daripada kerap trip." },
+        { q: "Berapakah kos membaiki kabinet sinki rosak dan paip bocor di KL?", a: "Pembaikan kebocoran paip sinki dan pengukuhan dasar bermula dari RM 450–RM 900, manakala penggantian kabinet sinki aluminium kalis air berkisar antara RM 1,200 hingga RM 2,800." }
+      ]
+    },
+    zh: {
+      title: "厨房水槽柜受潮腐烂、水管渗漏与老旧翻新",
+      costRange: "RM 450–RM 8,000+，视单换水槽底柜还是整体厨房翻新而定",
+      faqs: [
+        { q: "厨房水槽下方地柜选用什么材质最防潮防水？", a: "全铝合金柜体或加贴防水铝箔的高密度海洋板是最佳选择，即使下水管产生冷凝水或轻微渗漏也不会吸水发胀腐烂发霉。" },
+        { q: "可以只单独更换水槽下方受潮发胀的底柜而不拆除整套橱柜吗？", a: "可以。KL Servis Rumah 支持局部模块化更换，在完整保留现有石英石台面和其余吊柜地柜的前提下，单独拆除换装全铝防水水槽地柜。" },
+        { q: "老旧厨房翻新是否需要重新布设大功率电器回路？", a: "是的。老旧厨房插座较少，现代嵌入式烤箱、电磁炉和洗碗机需要独立的 15A/20A 电气回路，重新布线能有效避免使用时频繁跳闸。" },
+        { q: "在吉隆坡修复水槽漏水及更换水槽底柜需要多少钱？", a: "单纯水槽下水管检修与底板加固从 RM 450–RM 900 起，定制安装全新全铝合金防水水槽底柜费用在 RM 1,200 至 RM 2,800 左右。" }
+      ]
+    }
+  },
+  "uneven-floor-subfloor-leveling": {
+    ms: {
+      title: "Lantai Konkrit Tidak Rata Sebelum Pasang Jubin atau Lantai SPC",
+      costRange: "RM 3.50–RM 12.00 / kaki persegi bergantung kepada ketebalan self-leveling",
+      faqs: [
+        { q: "Mengapakah lantai konkrit mesti diratakan sebelum memasang lantai SPC atau vinil?", a: "Lantai SPC dan vinil dipasang secara terapung. Jika lantai asal bergelombang atau berbonggol, sambungan klik akan menanggung beban lenturan berterusan lalu patah dan renggang." },
+        { q: "Apakah itu simen perata sendiri (self-leveling compound) dan bagaimana ia berfungsi?", a: "Simen self-leveling ialah bancuhan simen polimer cecair yang mengalir mengikut graviti ke kawasan rendah, menghasilkan permukaan kaca yang sangat rata dan sedia untuk pemasangan lantai dalam tempoh 24 jam." },
+        { q: "Bolehkah simen self-leveling disapu di atas jubin lama?", a: "Boleh, dengan syarat jubin sedia ada masih kukuh, tidak berongga, dibersihkan daripada gris, dan disapu dengan primer pelekat polimer khas terlebih dahulu." },
+        { q: "Berapakah kos kerja meratakan lantai konkrit di KL & Selangor?", a: "Kerja meratakan simen tampalan biasa bermula dari RM 3.50–RM 5.50 setiap kaki persegi, manakala lepaan self-leveling polimer premium adalah sekitar RM 6.50 hingga RM 12.00 setiap kaki persegi." }
+      ]
+    },
+    zh: {
+      title: "铺贴 SPC 地板或瓷砖前地面不平整与自流平找平",
+      costRange: "每平方英尺 RM 3.50–RM 12.00，视找平厚度与自流平材料而定",
+      faqs: [
+        { q: "为什么在安装 SPC 锁扣地板前必须先做地面自流平找平？", a: "SPC 锁扣地板属于半刚性悬浮铺装。如果基层地面存在凹坑或凸点，踩踏时锁扣接缝会反复承受拉折应力，导致锁扣崩裂开缝甚至地板翘边。" },
+        { q: "什么是自流平水泥？它是如何找平地面的？", a: "自流平水泥是一种高流动性聚合物特种砂浆，倒在地面上会借助重力自然流淌填平低洼处，24小时即可固化形成像镜面一样平整高强度的找平基层。" },
+        { q: "自流平水泥可以直接倒在旧瓷砖上面找平吗？", a: "可以，前提是原有瓷砖牢固不空鼓、彻底除油除尘，并提前滚涂一层专用环氧或聚合物界面剂以增强粘结附着力。" },
+        { q: "在吉隆坡和雪兰莪做地面找平与自流平施工大概多少钱？", a: "局部水泥薄层找平从每平方英尺 RM 3.50–RM 5.50 起，高品质工业级聚合物自流平施工通常在每平方英尺 RM 6.50 至 RM 12.00 之间。" }
+      ]
+    }
+  },
+  "wall-cracks-settlement-masonry": {
+    ms: {
+      title: "Retak Struktur Dinding Bata & Sambungan Tambahan Rumah",
+      costRange: "RM 600–RM 4,500+ bergantung kepada kaedah jahitan keluli vs pengukuhan",
+      faqs: [
+        { q: "Bagaimanakah cara mengenal pasti sama ada retak dinding itu retak biasa atau retak struktur?", a: "Retak kosmetik biasanya halus (<1mm) pada permukaan cat. Retak struktur pula lebih lebar (>3mm), membentuk corak tangga di sepanjang garisan bata, tembus ke belakang, atau menyebabkan pintu sukar dibuka." },
+        { q: "Mengapakah sambungan bahagian tambahan dapur sering retak dan berpisah daripada rumah asal?", a: "Bahagian tambahan mempunyai asas konkrit baru yang mengalami kadar enapan tanah berbeza daripada rumah asal. Tanpa besi dowel pengikat yang betul, pergerakan haba dan tanah akan membuka celah pemisah." },
+        { q: "Bolehkah dinding bata yang retak dibaiki secara kekal tanpa merobohkan semula?", a: "Boleh. Setelah mendapan tanah stabil, pemasangan bar jahitan keluli tahan karat bersama grouting simen tanpa kecut dapat mengunci struktur bata dengan kukuh sebelum kerja skim coat semula." },
+        { q: "Berapakah kos membaiki retak dinding bata di KL & Selangor?", a: "Kerja menjahit retakan setempat dan lepaan semula bermula dari RM 600–RM 1,200 setiap garisan retak, manakala pengukuhan struktur sambungan besar adalah sekitar RM 2,200 hingga RM 4,500+." }
+      ]
+    },
+    zh: {
+      title: "房屋沉降砖墙阶梯裂缝与扩建接缝分离开裂",
+      costRange: "RM 600–RM 4,500+，视裂缝缝合加固与结构勘测范围而定",
+      faqs: [
+        { q: "如何准确判断墙面裂缝是表面油漆开裂还是砖墙结构沉降裂缝？", a: "表面油漆裂缝细小（<1mm）且仅在批灰层；结构沉降裂缝通常较宽（>3mm）、沿砖缝呈阶梯状开裂、贯穿墙体甚至导致门窗框受挤压变形卡死。" },
+        { q: "为什么厨房或车库扩建部分与主屋接缝处极易出现开裂缝隙？", a: "扩建基础与原主屋地基存在沉降速率差异。若当初扩建施工时未在主楼混凝土柱中植入拉结钢筋，温度胀缩与土壤沉降就会在接缝处拉开贯穿缝隙。" },
+        { q: "砖墙开裂后可以彻底加固修复而不必拆墙重建吗？", a: "可以。在沉降稳定后，采用开槽植入不锈钢螺旋加固筋结合高压无收缩结构灌浆，能有效锁紧砖体结构并恢复墙体抗剪强度。" },
+        { q: "在吉隆坡和雪兰莪修复砖墙结构沉降裂缝大概要多少费用？", a: "局部单道裂缝不锈钢缝合与批灰刷漆从 RM 600–RM 1,200 起，若是大面积扩建接缝贯通开裂与结构加固则在 RM 2,200 至 RM 4,500+ 之间。" }
       ]
     }
   }
