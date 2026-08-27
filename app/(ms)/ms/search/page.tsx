@@ -43,8 +43,7 @@ const POPULAR_QUERIES = [
   { label: "Baiki bilik air bocor", href: "/ms/problems/leaking-bathroom" },
   { label: "Tukang paip same-day KL", href: "/ms/near-me/plumbing" },
   { label: "Pasang TV Petaling Jaya", href: "/ms/areas/petaling-jaya/handyman" },
-  { label: "Harga kabel elektrik", href: "/ms/services/electrical/cost" },
-  { label: "Deep cleaning Subang Jaya", href: "/ms/areas/subang-jaya/deep-cleaning" }
+  { label: "Harga kabel elektrik", href: "/ms/services/electrical/cost" }
 ];
 
 export default function MsSearchPage({ searchParams }: { searchParams: Promise<{ q?: string }> }) {

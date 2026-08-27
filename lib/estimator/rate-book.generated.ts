@@ -31,8 +31,7 @@ export const RATES = {
     "skimCeilingSqft": 6,
     "crackLinearFt": 22,
     "dampRemedial": 350,
-    "callOut": 100,
-    "cleaning": 180
+    "callOut": 280
   },
   "ceiling": {
     "flatSqft": 10,
@@ -55,7 +54,7 @@ export const RATES = {
     "ceilingPaintSqft": 6
   },
   "plumbing": {
-    "minorRepair": 150,
+    "minorRepair": 280,
     "minorBand": {
       "low": 80,
       "high": 500
@@ -94,7 +93,7 @@ export const RATES = {
     "ceilingRepair": 220
   },
   "handyman": {
-    "callOut": 100,
+    "callOut": 280,
     "tvMount": 150,
     "tvBand": {
       "low": 80,
@@ -164,7 +163,7 @@ export type ServiceScopeBook = {
 };
 
 /**
- * Published sub-service pricing for all 31 services, powering the generic
+ * Published sub-service pricing for all 28 services, powering the generic
  * per-service estimator at `/services/[slug]` and `/tools/[slug]-calculator`.
  */
 export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
@@ -220,7 +219,7 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
     ]
   },
   "plumbing": {
-    "startPrice": 150,
+    "startPrice": 280,
     "scopes": [
       {
         "name": "Water Leakage Diagnosis & Repair",
@@ -385,7 +384,7 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
     ]
   },
   "handyman": {
-    "startPrice": 100,
+    "startPrice": 280,
     "scopes": [
       {
         "name": "Heavy TV Wall Mounting",
@@ -510,7 +509,7 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
     ]
   },
   "electrical": {
-    "startPrice": 150,
+    "startPrice": 280,
     "scopes": [
       {
         "name": "New Power Point & Switch Installation",
@@ -1337,133 +1336,6 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
       {
         "name": "Glass Repair & Reglazing",
         "desc": "Replacing cracked or shattered panes in existing frames, doors, and partitions, with temporary board-up when custom glass is on order."
-      }
-    ]
-  },
-  "cleaning": {
-    "startPrice": 180,
-    "scopes": [
-      {
-        "name": "Weekly Condo Cleaning (1,000 sqft)",
-        "amount": 180,
-        "unit": "visit",
-        "published": "From RM 180 / visit",
-        "desc": "3-bed condo or apartment cleaned weekly, including kitchen, bathrooms, and common areas."
-      },
-      {
-        "name": "Bi-Weekly Terrace House Cleaning",
-        "amount": 250,
-        "unit": "visit",
-        "published": "From RM 250 / visit",
-        "desc": "Two-storey terrace house cleaned every fortnight, including ground floor, first floor, and outdoor areas."
-      },
-      {
-        "name": "Office Cleaning (Small Office, 1,500 sqft)",
-        "amount": 320,
-        "unit": "visit",
-        "published": "From RM 320 / visit",
-        "desc": "After-hours office cleaning including workstations, meeting rooms, pantry, and restrooms."
-      },
-      {
-        "name": "One-Off Spring Clean",
-        "amount": 420,
-        "unit": "job",
-        "published": "From RM 420",
-        "desc": "One-time deep clean including ceiling fans, light fixtures, behind furniture, and window interiors."
-      }
-    ],
-    "quoteOnly": []
-  },
-  "deep-cleaning": {
-    "startPrice": 420,
-    "scopes": [
-      {
-        "name": "Condo Move-Out Deep Clean (1,000 sqft)",
-        "amount": 420,
-        "unit": "job",
-        "published": "From RM 420",
-        "desc": "Full top-to-bottom clean including inside cabinets, oven, fridge, fans, and window tracks. Move-out ready."
-      },
-      {
-        "name": "Terrace House Deep Clean (2,000 sqft)",
-        "amount": 650,
-        "unit": "job",
-        "published": "From RM 650",
-        "desc": "Two-storey home including outdoor areas, garage, and staircases. Move-in or move-out ready."
-      },
-      {
-        "name": "Post-Illness Disinfection Clean",
-        "amount": 500,
-        "unit": "job",
-        "published": "From RM 500",
-        "desc": "Hospital-grade disinfection of all touchpoints, fabrics, and air spaces. Recommended after flu, COVID, or stomach bugs."
-      },
-      {
-        "name": "Allergy Season Refresh",
-        "amount": 480,
-        "unit": "job",
-        "published": "From RM 480",
-        "desc": "HEPA-vacuum deep clean with dust-mite treatment on mattresses, sofas, and curtains."
-      }
-    ],
-    "quoteOnly": []
-  },
-  "post-renovation-cleaning": {
-    "startPrice": 650,
-    "scopes": [
-      {
-        "name": "Condo Post-Renovation Clean (1,000 sqft)",
-        "amount": 650,
-        "unit": "job",
-        "published": "From RM 650",
-        "desc": "Full post-renovation clean for a 3-bed condo after a typical kitchen + bathroom renovation."
-      },
-      {
-        "name": "Terrace House Post-Renovation Clean (2,000 sqft)",
-        "amount": 1400,
-        "unit": "job",
-        "published": "From RM 1,400",
-        "desc": "Whole-house post-renovation clean including outdoor areas, garage, and windows."
-      },
-      {
-        "name": "New Tiles Grout Haze Removal",
-        "amount": 10,
-        "unit": "sqft",
-        "published": "From RM 10 / sq ft",
-        "desc": "Specialist grout haze removal on newly laid porcelain or ceramic tiles using pH-balanced acidic cleaner."
-      },
-      {
-        "name": "Construction Debris Removal",
-        "amount": 320,
-        "unit": "job",
-        "published": "From RM 320",
-        "desc": "Bagging and disposal of leftover construction materials, packaging, and debris. Skip bin coordination if needed."
-      }
-    ],
-    "quoteOnly": [
-      {
-        "name": "Construction Rough Cleaning & Site Clearance",
-        "desc": "Heavy site cleanup, debris bagging, timber and scrap removal between trades to clear floors for next-phase installations."
-      },
-      {
-        "name": "Fine Dust Extraction & Air Purifying",
-        "desc": "Multi-pass HEPA vacuuming and electrostatic wiping to capture microscopic cement, gypsum, and plaster dust from ceilings and vents."
-      },
-      {
-        "name": "Paint Splatter & Silicone Smear Removal",
-        "desc": "Safe solvent treatment and specialized scraping of dried emulsion drips, enamel overspray, silicone residue, and masking adhesive."
-      },
-      {
-        "name": "Window Glass & Aluminium Track Detailing",
-        "desc": "Protective film peeling, cement spot removal from glass, and deep vacuuming and degreasing of sliding aluminium window tracks."
-      },
-      {
-        "name": "Floor Machine Scrubbing & Buffing",
-        "desc": "Single-disc rotary machine scrubbing with neutral detergents for tiles, SPC, vinyl, and epoxy to restore factory sheen without acid dulling."
-      },
-      {
-        "name": "Move-In & Handover Final Cleaning",
-        "desc": "White-glove sanitization of built-in cabinets, wardrobes, kitchen counters, sanitary ware, and door hardware ready for immediate occupancy."
       }
     ]
   },

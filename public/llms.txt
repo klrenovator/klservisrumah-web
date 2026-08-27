@@ -6,19 +6,19 @@ KL Servis Rumah provides professional home maintenance services across Kuala Lum
 
 ## Key Services (published starting prices)
 - House Painting Services: from RM 450 — Interior House Painting, Exterior House Painting, Commercial & Office Painting
-- Plumbing & Leak Repair Services: from RM 150 — Water Leakage Diagnosis & Repair, Toilet, Tap & Sink Installation, Drain Unclogging & Cleaning
+- Plumbing & Leak Repair Services: from RM 280 — Water Leakage Diagnosis & Repair, Toilet, Tap & Sink Installation, Drain Unclogging & Cleaning
 - Ceiling & Partition Services: from RM 220 — Water-Damaged Ceiling Repair, Plaster Ceiling Installation, Gypsum Board Partition Wall
 - Waterproofing & Leak Repair Services: from RM 300 — PU High-Pressure Injection Grouting, Bathroom & Wet Area Waterproofing, Roof & Concrete Slab Waterproofing
-- Handyman Services: from RM 100 — Heavy TV Wall Mounting, Door, Hinge & Lockset Repair, Furniture Assembly (IKEA/Taobao)
+- Handyman Services: from RM 280 — Heavy TV Wall Mounting, Door, Hinge & Lockset Repair, Furniture Assembly (IKEA/Taobao)
 - Complete House Renovation: from RM 22,000 — Full House Renovation Package, Partial House Renovation, Terrace House Renovation
-- Licensed Electrical Services: from RM 150 — New Power Point & Switch Installation, DB Box Upgrade & Rewiring, Lighting Point & Downlight Installation
+- Licensed Electrical Services: from RM 280 — New Power Point & Switch Installation, DB Box Upgrade & Rewiring, Lighting Point & Downlight Installation
 - Water Heater Installation & Repair: from RM 180 — Instant Water Heater Installation, Storage Tank Heater Installation, Water Heater Repair & Descaling
 - Ceiling Fan Installation & Replacement: from RM 150 — New Ceiling Fan Installation, Ceiling Fan Replacement, DC Motor Smart Fan Install
 - Lighting Design & Installation: from RM 120 — LED Downlight Installation, Pendant & Chandelier Install, Cove & Strip LED Installation
 - Professional Tiling & Tile Repair: from RM 14 — Floor Tiling Installation, Wall Tiling Installation, Floor Tile Replacement & Tile Hacking
 - Plaster Ceiling Design & Build: from RM 10 — Flat Plaster Ceiling, False Ceiling Installation, Gypsum Ceiling
 
-Full directory of all 31 services: https://www.klservisrumah.my/services
+Full directory of all 28 services: https://www.klservisrumah.my/services
 
 ## Service Areas
 Kuala Lumpur, Cheras, Ampang, Setapak, Wangsa Maju, Kepong, Sri Petaling, Bukit Jalil, Mont Kiara, Bangsar, Desa ParkCity, Taman Melawati, Hulu Kelang, Petaling Jaya, Subang Jaya, Shah Alam, Puchong, Damansara, Kota Damansara, Ara Damansara, Sunway, USJ, Bandar Utama, SS2, Klang, Port Klang, Bukit Tinggi, Setia Alam, Meru, Kota Kemuning, Bukit Jelutong, Glenmarie, Batu Caves, Selayang, Rawang, Kundang, Sungai Buloh, Kajang, Semenyih, Balakong, Seri Kembangan, Pandan Indah, Bandar Puteri, Putrajaya, Cyberjaya, Dengkil, Selangor, Sentul, Bandar Botanic.
@@ -84,8 +84,6 @@ Free single-page estimators priced from the published rate list — available in
 - Room Renovation Estimator: https://www.klservisrumah.my/tools/room-renovation-estimator · BM https://www.klservisrumah.my/ms/alatan/renovasi-bilik · 中文 https://www.klservisrumah.my/zh/gongju/房间装修估价
 - Kitchen Renovation Estimator: https://www.klservisrumah.my/tools/kitchen-renovation-estimator · BM https://www.klservisrumah.my/ms/alatan/renovasi-dapur · 中文 https://www.klservisrumah.my/zh/gongju/厨房装修估价
 - Bathroom Renovation Estimator: https://www.klservisrumah.my/tools/bathroom-renovation-estimator · BM https://www.klservisrumah.my/ms/alatan/renovasi-bilik-air · 中文 https://www.klservisrumah.my/zh/gongju/浴室装修估价
-- Deep Cleaning Cost Estimator: https://www.klservisrumah.my/tools/deep-cleaning-cost-estimator · BM https://www.klservisrumah.my/ms/alatan/kos-cuci-menyeluruh · 中文 https://www.klservisrumah.my/zh/gongju/深度清洁费用
-- Move-In / Move-Out Cleaning Calculator: https://www.klservisrumah.my/tools/move-in-out-cleaning-calculator · BM https://www.klservisrumah.my/ms/alatan/cuci-pindah-masuk-keluar · 中文 https://www.klservisrumah.my/zh/gongju/搬家清洁计算器
 - Aircon Installation Cost Calculator for KL & Selangor: https://www.klservisrumah.my/tools/aircon-installation-cost · BM https://www.klservisrumah.my/ms/alatan/kalkulator-kos-pemasangan-aircond · 中文 https://www.klservisrumah.my/zh/gongju/空调安装费用计算器
 - Aircon Gas Top-Up Cost Calculator for KL & Selangor: https://www.klservisrumah.my/tools/aircon-gas-topup-cost · BM https://www.klservisrumah.my/ms/alatan/kalkulator-kos-topup-gas-aircond · 中文 https://www.klservisrumah.my/zh/gongju/空调加雪种费用计算器
 - Aircon Size Calculator — What HP Do You Need?: https://www.klservisrumah.my/tools/aircon-size-calculator · BM https://www.klservisrumah.my/ms/alatan/kalkulator-saiz-aircond · 中文 https://www.klservisrumah.my/zh/gongju/空调匹数计算器
@@ -98,7 +96,7 @@ Free single-page estimators priced from the published rate list — available in
 One short, stable link per service (https://www.klservisrumah.my/estimate/<service>) that opens just the cost estimator, designed to be sent to a customer over WhatsApp so they can work out a ballpark price (labour + materials, from the published rates) on their own phone. Services with a dedicated deep tool redirect to it.
 - All estimator links: https://www.klservisrumah.my/estimate
 - Complete House Renovation (from RM 22,000): https://www.klservisrumah.my/estimate/house-renovation
-- Licensed Electrical Services (from RM 150): https://www.klservisrumah.my/estimate/electrical
+- Licensed Electrical Services (from RM 280): https://www.klservisrumah.my/estimate/electrical
 - Water Heater Installation & Repair (from RM 180): https://www.klservisrumah.my/estimate/water-heater
 - Ceiling Fan Installation & Replacement (from RM 150): https://www.klservisrumah.my/estimate/ceiling-fan
 - Lighting Design & Installation (from RM 120): https://www.klservisrumah.my/estimate/lighting
@@ -113,9 +111,6 @@ One short, stable link per service (https://www.klservisrumah.my/estimate/<servi
 - Window Repair & Glass Replacement (from RM 200): https://www.klservisrumah.my/estimate/window-repair
 - Locksmith & Smart Lock Services (from RM 180): https://www.klservisrumah.my/estimate/locksmith
 - Glass & Aluminium Fabrication (from RM 320): https://www.klservisrumah.my/estimate/glass-aluminium
-- Residential & Office Cleaning (from RM 180): https://www.klservisrumah.my/estimate/cleaning
-- Deep Cleaning & Move-In/Out (from RM 420): https://www.klservisrumah.my/estimate/deep-cleaning
-- Post-Renovation Cleaning (from RM 650): https://www.klservisrumah.my/estimate/post-renovation-cleaning
 - CCTV & Security Camera Installation (from RM 420): https://www.klservisrumah.my/estimate/cctv
 - Auto Gate & Motorised Gate (from RM 2,200): https://www.klservisrumah.my/estimate/autogate
 - Welding & Metal Fabrication (from RM 280): https://www.klservisrumah.my/estimate/welding

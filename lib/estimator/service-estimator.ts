@@ -25,7 +25,7 @@
  */
 
 import type { Answers, EstimateResult, EstimatorSpec, Choice } from "./types";
-import { RATES, SERVICE_SCOPES, type PublishedScope, type ScopeUnit } from "./rate-book.generated";
+import { SERVICE_SCOPES, type PublishedScope, type ScopeUnit } from "./rate-book.generated";
 import { clamp, roundMoney } from "./pricing";
 import { formatMYR } from "./format";
 import type { Translator } from "../i18n";
@@ -318,12 +318,6 @@ export function buildServiceEstimator({ slug, title, warranty, t }: ServiceEstim
         label: t("estimator.addons.siteVisitLabel"),
         price: 0,
         note: optional(t, "estimator.addons.siteVisitNote")
-      },
-      {
-        id: "post-clean",
-        label: t("estimator.addons.postCleanLabel"),
-        price: roundMoney(RATES.painting.cleaning),
-        note: optional(t, "estimator.addons.postCleanNote")
       }
     ].filter((addOn) => addOn.price > 0);
 

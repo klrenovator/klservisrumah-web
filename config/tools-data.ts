@@ -2078,116 +2078,6 @@ export const toolsContent: Record<string, ToolContent> = {
     ],
     estimatedMinutes: 2
   },
-  "deep-cleaning-cost-estimator": {
-    slug: "deep-cleaning-cost-estimator",
-    name: "Deep Cleaning Cost Estimator",
-    heading: "Deep Cleaning Cost Estimator",
-    metaTitle: "Deep Cleaning Cost Estimator KL",
-    metaDesc: "Free deep cleaning cost estimator.",
-    keywords: ["deep cleaning cost Malaysia","move out cleaning price KL"],
-    eyebrow: "Free estimator",
-    intro: "Estimate deep cleaning cost per sq ft. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
-    directQuestion: "How much does deep cleaning cost estimator cost in KL and Selangor?",
-    directAnswer: "Estimate deep cleaning cost per sq ft. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
-    trilingualMs: "Deep Cleaning Cost Estimator — anggaran segera untuk KL & Selangor.",
-    trilingualZh: "Deep Cleaning Cost Estimator——吉隆坡与雪兰莪即时估价工具。",
-    heroImage: "/hero-deep-cleaning.svg",
-    heroAlt: "Deep cleaning",
-    stats: [
-      { label: "Instant", value: "Under 2 minutes" },
-      { label: "From", value: "RM 150" },
-      { label: "Coverage", value: "KL & Selangor" }
-    ],
-    howTo: [
-      { title: "Enter your room size and requirements", desc: "Everything is on one page. Enter length, width and height or choose a preset. The price updates live." },
-      { title: "Pick material and condition", desc: "Choose economy, standard or premium grade and current surface condition." },
-      { title: "Optional: access and urgency", desc: "Open optional section for height, access and timing. Skip for standard pricing." },
-      { title: "See estimate and book on WhatsApp", desc: "Total area, labour, materials, total, range and duration appear instantly. Book via WhatsApp." }
-    ],
-    priceTable: [
-      { scope: "Deep Cleaning Cost Estimator — Standard", rate: "From RM 150", note: "Standard scope" },
-      { scope: "Deep Cleaning Cost Estimator — Premium", rate: "From RM 350", note: "Premium scope with extras" },
-      { scope: "Deep Cleaning Cost Estimator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
-      { scope: "Deep Cleaning Cost Estimator — Labour", rate: "From RM 120", note: "Labour only" }
-    ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
-    faqs: [
-      { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
-      { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
-      { q: "What includes labour and material?", a: "Yes, estimate includes labour and material unless you select customer supply. Breakdown shows both." },
-      { q: "How long does the job take?", a: "Duration is estimated from total area and complexity — typically half day for small jobs, 1–2 days for rooms, 2–3 days for large areas." },
-      { q: "Do you cover my area?", a: "We cover all of KL & Selangor including Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang and surrounding." }
-    ],
-    covers: [
-      "Estimate deep cleaning cost per sq ft.",
-      "Instant live estimate",
-      "Labour vs materials split",
-      "Paintable area calculation",
-      "Duration estimate",
-      "WhatsApp booking"
-    ],
-    relatedTools: ["painting-calculator", "wall-area-calculator", "flooring-area-calculator"],
-    relatedServices: [
-      { label: "deep-cleaning Service", href: "/services/deep-cleaning" },
-      { label: "Pricing Guide", href: "/pricing" }
-    ],
-    estimatedMinutes: 2
-  },
-  "move-in-out-cleaning-calculator": {
-    slug: "move-in-out-cleaning-calculator",
-    name: "Move-In / Move-Out Cleaning Calculator",
-    heading: "Move-In / Move-Out Cleaning Calculator",
-    metaTitle: "Move-In Move-Out Cleaning Cost Calculator KL",
-    metaDesc: "Free move-in move-out cleaning cost calculator.",
-    keywords: ["move in cleaning cost Malaysia","move out cleaning KL"],
-    eyebrow: "Free estimator",
-    intro: "Estimate move-in/out cleaning cost. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
-    directQuestion: "How much does move-in / move-out cleaning calculator cost in KL and Selangor?",
-    directAnswer: "Estimate move-in/out cleaning cost. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
-    trilingualMs: "Move-In / Move-Out Cleaning Calculator — anggaran segera untuk KL & Selangor.",
-    trilingualZh: "Move-In / Move-Out Cleaning Calculator——吉隆坡与雪兰莪即时估价工具。",
-    heroImage: "/hero-deep-cleaning.svg",
-    heroAlt: "Move in out cleaning",
-    stats: [
-      { label: "Instant", value: "Under 2 minutes" },
-      { label: "From", value: "RM 150" },
-      { label: "Coverage", value: "KL & Selangor" }
-    ],
-    howTo: [
-      { title: "Enter your room size and requirements", desc: "Everything is on one page. Enter length, width and height or choose a preset. The price updates live." },
-      { title: "Pick material and condition", desc: "Choose economy, standard or premium grade and current surface condition." },
-      { title: "Optional: access and urgency", desc: "Open optional section for height, access and timing. Skip for standard pricing." },
-      { title: "See estimate and book on WhatsApp", desc: "Total area, labour, materials, total, range and duration appear instantly. Book via WhatsApp." }
-    ],
-    priceTable: [
-      { scope: "Move-In / Move-Out Cleaning Calculator — Standard", rate: "From RM 150", note: "Standard scope" },
-      { scope: "Move-In / Move-Out Cleaning Calculator — Premium", rate: "From RM 350", note: "Premium scope with extras" },
-      { scope: "Move-In / Move-Out Cleaning Calculator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
-      { scope: "Move-In / Move-Out Cleaning Calculator — Labour", rate: "From RM 120", note: "Labour only" }
-    ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
-    faqs: [
-      { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
-      { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
-      { q: "What includes labour and material?", a: "Yes, estimate includes labour and material unless you select customer supply. Breakdown shows both." },
-      { q: "How long does the job take?", a: "Duration is estimated from total area and complexity — typically half day for small jobs, 1–2 days for rooms, 2–3 days for large areas." },
-      { q: "Do you cover my area?", a: "We cover all of KL & Selangor including Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang and surrounding." }
-    ],
-    covers: [
-      "Estimate move-in/out cleaning cost.",
-      "Instant live estimate",
-      "Labour vs materials split",
-      "Paintable area calculation",
-      "Duration estimate",
-      "WhatsApp booking"
-    ],
-    relatedTools: ["painting-calculator", "wall-area-calculator", "flooring-area-calculator"],
-    relatedServices: [
-      { label: "deep-cleaning Service", href: "/services/deep-cleaning" },
-      { label: "Pricing Guide", href: "/pricing" }
-    ],
-    estimatedMinutes: 2
-  },
 
   /* ── AIRCON TOOLS ───────────────────────────────────────────────────── */
   "aircon-installation-cost": {
@@ -2557,9 +2447,7 @@ const TOOL_META_DESCRIPTION_OVERRIDES: Record<string, string> = {
   "renovation-budget-calculator": "Plan a home-renovation budget from property size, room scope and finish level. See category allowances and a practical total range for KL & Selangor.",
   "room-renovation-estimator": "Estimate a bedroom or living-room renovation from room size and selected painting, ceiling, flooring, electrical and carpentry work.",
   "kitchen-renovation-estimator": "Estimate kitchen renovation cost from layout, cabinet length, worktop, fittings, electrical and plumbing scope. Build a clearer budget before design work.",
-  "bathroom-renovation-estimator": "Estimate bathroom renovation cost from size, demolition, waterproofing, tiles, sanitary fittings and plumbing. Compare selected scope and budget range.",
-  "deep-cleaning-cost-estimator": "Estimate deep-cleaning cost from property type, built-up area, condition and add-ons. Suitable for occupied homes needing a one-off detailed clean.",
-  "move-in-out-cleaning-calculator": "Estimate move-in or move-out cleaning from property size, furnishing, condition and add-ons. Plan a handover clean for KL & Selangor properties."
+  "bathroom-renovation-estimator": "Estimate bathroom renovation cost from size, demolition, waterproofing, tiles, sanitary fittings and plumbing. Compare selected scope and budget range."
 };
 
 for (const [slug, description] of Object.entries(TOOL_META_DESCRIPTION_OVERRIDES)) {

@@ -119,9 +119,9 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
   "plumbing": {
     "slug": "plumbing",
     "title": "Plumbing & Leak Repair Services",
-    "startPrice": "RM 150",
+    "startPrice": "RM 280",
     "icon": "droplet",
-    "tagline": "Plumbing and leak repair for pipes, taps, toilets, drains, water heaters and pumps across KL & Selangor, with the scope confirmed before work. From RM 150.",
+    "tagline": "Plumbing and leak repair for pipes, taps, toilets, drains, water heaters and pumps across KL & Selangor, with the scope confirmed before work. From RM 280.",
     "subServices": [
       {
         "name": "Water Leakage Diagnosis & Repair"
@@ -158,7 +158,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
     "i18n": {
       "ms": {
         "title": "Perkhidmatan Paip & Baiki Kebocoran",
-        "tagline": "Pembaikan paip yang boleh dipercayai, pembaikan kebocoran air, dan pemasangan lekapan baru. Alat ganti bertauliah SIRIM, respons pantas. Dari RM 150.",
+        "tagline": "Pembaikan paip yang boleh dipercayai, pembaikan kebocoran air, dan pemasangan lekapan baru. Alat ganti bertauliah SIRIM, respons pantas. Dari RM 280.",
         "subServices": [
           {
             "name": "Diagnosis & Pembaikan Kebocoran Air"
@@ -195,7 +195,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
       },
       "zh": {
         "title": "水管与漏水维修服务",
-        "tagline": "可靠的水管维修、漏水修复与新洁具安装。SIRIM 认证配件，快速响应。从 RM 150 起。",
+        "tagline": "可靠的水管维修、漏水修复与新洁具安装。SIRIM 认证配件，快速响应。从 RM 280 起。",
         "subServices": [
           {
             "name": "漏水诊断与修复"
@@ -413,9 +413,9 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
   "handyman": {
     "slug": "handyman",
     "title": "Handyman Services",
-    "startPrice": "RM 100",
+    "startPrice": "RM 280",
     "icon": "wrench",
-    "tagline": "TV mounting, door and lock repair, furniture assembly, curtain and shelf installation, cabinet adjustments and general maintenance across KL & Selangor. From RM 100.",
+    "tagline": "TV mounting, door and lock repair, furniture assembly, curtain and shelf installation, cabinet adjustments and general maintenance across KL & Selangor. From RM 280.",
     "subServices": [
       {
         "name": "Heavy TV Wall Mounting"
@@ -434,7 +434,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
     "i18n": {
       "ms": {
         "title": "Perkhidmatan Handyman",
-        "tagline": "Pembaikan pintu & kunci profesional, pemasangan TV, pemasangan perabot, trek langsir, pelarasan kabinet, dan penyelenggaraan pejabat am. Dari RM 100.",
+        "tagline": "Pembaikan pintu & kunci profesional, pemasangan TV, pemasangan perabot, trek langsir, pelarasan kabinet, dan penyelenggaraan pejabat am. Dari RM 280.",
         "subServices": [
           {
             "name": "Pemasangan Dinding TV Berat"
@@ -453,7 +453,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
       },
       "zh": {
         "title": "家居杂工服务",
-        "tagline": "专业门锁维修、电视挂墙、家具组装、窗帘轨道、橱柜调整以及一般办公室维护。从 RM 100 起。",
+        "tagline": "专业门锁维修、电视挂墙、家具组装、窗帘轨道、橱柜调整以及一般办公室维护。从 RM 280 起。",
         "subServices": [
           {
             "name": "重型电视挂墙"
@@ -636,9 +636,9 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
   "electrical": {
     "slug": "electrical",
     "title": "Licensed Electrical Services",
-    "startPrice": "RM 150",
+    "startPrice": "RM 280",
     "icon": "zap",
-    "tagline": "Wiring, DB box upgrades, power point and switch installation, ceiling fan and lighting point setup by ST-licensed electricians. From RM 150.",
+    "tagline": "Wiring, DB box upgrades, power point and switch installation, ceiling fan and lighting point setup by ST-licensed electricians. From RM 280.",
     "subServices": [
       {
         "name": "New Power Point & Switch Installation"
@@ -675,7 +675,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
     "i18n": {
       "ms": {
         "title": "Perkhidmatan Elektrik Berlesen",
-        "tagline": "Pendawaian, naik taraf DB box, pemasangan power point dan suis, titik kipas siling dan pencahayaan oleh juruelektrik berdaftar ST. Dari RM 150.",
+        "tagline": "Pendawaian, naik taraf DB box, pemasangan power point dan suis, titik kipas siling dan pencahayaan oleh juruelektrik berdaftar ST. Dari RM 280.",
         "subServices": [
           {
             "name": "Pemasangan Power Point & Suis Baru"
@@ -712,7 +712,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
       },
       "zh": {
         "title": "持牌电工服务",
-        "tagline": "由 ST 注册电工承接的布线、配电箱升级、插座与开关安装、吊扇与照明点位。从 RM 150 起。",
+        "tagline": "由 ST 注册电工承接的布线、配电箱升级、插座与开关安装、吊扇与照明点位。从 RM 280 起。",
         "subServices": [
           {
             "name": "新增插座与开关安装"
@@ -2081,246 +2081,6 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
           }
         ],
         "warranty": "12 个月防漏与五金保修"
-      }
-    }
-  },
-  "cleaning": {
-    "slug": "cleaning",
-    "title": "Residential & Office Cleaning",
-    "startPrice": "RM 180",
-    "icon": "spray-can",
-    "tagline": "Weekly, fortnightly, or monthly cleaning for homes, condos, and small offices. Background-checked cleaners, eco products. From RM 180 / session.",
-    "subServices": [
-      {
-        "name": "Weekly Condo Cleaning (1,000 sqft)"
-      },
-      {
-        "name": "Bi-Weekly Terrace House Cleaning"
-      },
-      {
-        "name": "Office Cleaning (Small Office, 1,500 sqft)"
-      },
-      {
-        "name": "One-Off Spring Clean"
-      }
-    ],
-    "warranty": "24-Hour Re-Clean Satisfaction Guarantee",
-    "i18n": {
-      "ms": {
-        "title": "Pembersihan Kediaman & Pejabat",
-        "tagline": "Pembersihan mingguan, dua minggu sekali atau bulanan untuk rumah, kondominium dan pejabat kecil. Pembersih diperiksa latar belakang, produk mesra alam. Dari RM 180 / sesi.",
-        "subServices": [
-          {
-            "name": "Pembersihan Kondominium Mingguan (1,000 kaki persegi)"
-          },
-          {
-            "name": "Pembersihan Rumah Teres Dua Minggu Sekali"
-          },
-          {
-            "name": "Pembersihan Pejabat (Pejabat Kecil, 1,500 kaki persegi)"
-          },
-          {
-            "name": "Cucian Musim Sekali Sahaja"
-          }
-        ],
-        "warranty": "Jaminan Kepuasan Cuci Semula 24 Jam"
-      },
-      "zh": {
-        "title": "住宅与办公室清洁",
-        "tagline": "住宅、公寓与小型办公室的每周、每两周或每月清洁。背景审查的清洁员，环保清洁剂。从 RM 180 / 次起。",
-        "subServices": [
-          {
-            "name": "每周公寓清洁（1,000 平方英尺）"
-          },
-          {
-            "name": "每两周排屋清洁"
-          },
-          {
-            "name": "办公室清洁（小型办公室，1,500 平方英尺）"
-          },
-          {
-            "name": "单次大扫除"
-          }
-        ],
-        "warranty": "24 小时返工满意保证"
-      }
-    }
-  },
-  "deep-cleaning": {
-    "slug": "deep-cleaning",
-    "title": "Deep Cleaning & Move-In/Out",
-    "startPrice": "RM 420",
-    "icon": "brush",
-    "tagline": "Top-to-bottom deep cleaning for move-in, move-out, post-illness, or seasonal refresh. From RM 420.",
-    "subServices": [
-      {
-        "name": "Condo Move-Out Deep Clean (1,000 sqft)"
-      },
-      {
-        "name": "Terrace House Deep Clean (2,000 sqft)"
-      },
-      {
-        "name": "Post-Illness Disinfection Clean"
-      },
-      {
-        "name": "Allergy Season Refresh"
-      }
-    ],
-    "warranty": "24-Hour Re-Clean Satisfaction Guarantee",
-    "i18n": {
-      "ms": {
-        "title": "Cucian Menyeluruh & Pindah Masuk/Keluar",
-        "tagline": "Cucian menyeluruh atas-ke-bawah untuk pindah masuk, pindah keluar, selepas sakit atau penyegaran bermusim. Dari RM 420.",
-        "subServices": [
-          {
-            "name": "Cucian Menyeluruh Pindah Keluar Kondominium (1,000 kaki persegi)"
-          },
-          {
-            "name": "Cucian Menyeluruh Rumah Teres (2,000 kaki persegi)"
-          },
-          {
-            "name": "Cucian Disinfeksi Selepas Sakit"
-          },
-          {
-            "name": "Penyegaran Musim Alahan"
-          }
-        ],
-        "warranty": "Jaminan Kepuasan Cuci Semula 24 Jam"
-      },
-      "zh": {
-        "title": "深度清洁与搬家保洁",
-        "tagline": "入住、退租、病后消毒或季节性焕新的全屋自上而下深度清洁。从 RM 420 起。",
-        "subServices": [
-          {
-            "name": "公寓退租深度清洁（1,000 平方英尺）"
-          },
-          {
-            "name": "排屋深度清洁（2,000 平方英尺）"
-          },
-          {
-            "name": "病后消毒清洁"
-          },
-          {
-            "name": "过敏季焕新"
-          }
-        ],
-        "warranty": "24 小时返工满意保证"
-      }
-    }
-  },
-  "post-renovation-cleaning": {
-    "slug": "post-renovation-cleaning",
-    "title": "Post-Renovation Cleaning",
-    "startPrice": "RM 650",
-    "icon": "hammer",
-    "tagline": "Construction debris removal, paint dust, grout haze, and silicone cleanup after renovation. From RM 650.",
-    "subServices": [
-      {
-        "name": "Condo Post-Renovation Clean (1,000 sqft)"
-      },
-      {
-        "name": "Terrace House Post-Renovation Clean (2,000 sqft)"
-      },
-      {
-        "name": "New Tiles Grout Haze Removal"
-      },
-      {
-        "name": "Construction Debris Removal"
-      },
-      {
-        "name": "Construction Rough Cleaning & Site Clearance"
-      },
-      {
-        "name": "Fine Dust Extraction & Air Purifying"
-      },
-      {
-        "name": "Paint Splatter & Silicone Smear Removal"
-      },
-      {
-        "name": "Window Glass & Aluminium Track Detailing"
-      },
-      {
-        "name": "Floor Machine Scrubbing & Buffing"
-      },
-      {
-        "name": "Move-In & Handover Final Cleaning"
-      }
-    ],
-    "warranty": "7-Day Spot-Check Free Re-Clean Guarantee",
-    "i18n": {
-      "ms": {
-        "title": "Pembersihan Selepas Pengubahsuaian",
-        "tagline": "Penyingkiran serpihan pembinaan, habuk cat, kabut grout dan pembersihan silikon selepas pengubahsuaian. Dari RM 650.",
-        "subServices": [
-          {
-            "name": "Cucian Selepas Pengubahsuaian Kondominium (1,000 kaki persegi)"
-          },
-          {
-            "name": "Cucian Selepas Pengubahsuaian Rumah Teres (2,000 kaki persegi)"
-          },
-          {
-            "name": "Penyingkiran Kabut Grout Jubin Baharu"
-          },
-          {
-            "name": "Penyingkiran Serpihan Pembinaan"
-          },
-          {
-            "name": "Pembersihan Kasar Pembinaan & Pembersihan Tapak"
-          },
-          {
-            "name": "Penyedutan Habuk Halus & Pembersihan Udara"
-          },
-          {
-            "name": "Penyingkiran Percikan Cat & Sisa Silikon"
-          },
-          {
-            "name": "Pembersihan Terperinci Kaca Tingkap & Rel Aluminium"
-          },
-          {
-            "name": "Penyentalan & Penggilapan Mesin Lantai"
-          },
-          {
-            "name": "Pembersihan Akhir Penyerahan & Masuk Rumah"
-          }
-        ],
-        "warranty": "Jaminan Cuci Semula Percuma Pemeriksaan Rawak 7 Hari"
-      },
-      "zh": {
-        "title": "装修后开荒保洁",
-        "tagline": "装修后的建筑废料清运、涂料粉尘、砖缝浮灰与玻璃胶渍清洁。从 RM 650 起。",
-        "subServices": [
-          {
-            "name": "公寓装修后开荒（1,000 平方英尺）"
-          },
-          {
-            "name": "排屋装修后开荒（2,000 平方英尺）"
-          },
-          {
-            "name": "新瓷砖砖缝浮灰清除"
-          },
-          {
-            "name": "建筑垃圾清运"
-          },
-          {
-            "name": "施工现场粗保洁与清场服务"
-          },
-          {
-            "name": "细粉尘深层清除与空气净化"
-          },
-          {
-            "name": "油漆飞溅与硅胶残留清除"
-          },
-          {
-            "name": "窗户玻璃与铝合金滑轨深度精洁"
-          },
-          {
-            "name": "地板机械深度洗地与抛光护理"
-          },
-          {
-            "name": "交付入住前最终全面精细保洁"
-          }
-        ],
-        "warranty": "7 天免费抽查返工保证"
       }
     }
   },

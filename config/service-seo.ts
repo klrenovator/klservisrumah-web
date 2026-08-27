@@ -277,27 +277,6 @@ export const serviceSeo: Record<string, LocalizedServiceSeo> = {
         "Shower screens, aluminium windows, glass office partitions and wall mirrors made and installed across KL & Selangor. Discuss measurements and scope."
     }
   },
-  cleaning: {
-    en: {
-      title: "Home & Office Cleaning KL & Selangor",
-      description:
-        "Weekly, fortnightly, monthly and one-off cleaning for condos, landed homes and offices across KL & Selangor. Choose a schedule and request a quote."
-    }
-  },
-  "deep-cleaning": {
-    en: {
-      title: "Deep & Move-In Cleaning KL & Selangor",
-      description:
-        "Deep, move-in, move-out and post-illness cleaning for condos and landed homes across KL & Selangor. Share the property size for a clear quote."
-    }
-  },
-  "post-renovation-cleaning": {
-    en: {
-      title: "Post-Renovation Cleaning KL & Selangor",
-      description:
-        "Remove construction dust, paint splatter, grout haze, silicone residue and debris after renovation across KL & Selangor. Request a cleanup quote."
-    }
-  },
   cctv: {
     en: {
       title: "CCTV Installation Services KL & Selangor",

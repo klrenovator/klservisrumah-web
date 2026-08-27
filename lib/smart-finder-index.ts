@@ -33,7 +33,7 @@ export interface SmartServiceEntity {
 
 export interface ServiceTaxonomyEntry {
   serviceSlug: string;
-  category: "painting" | "plumbing" | "ceiling" | "waterproofing" | "handyman" | "renovation" | "electrical" | "flooring" | "carpentry" | "doors-windows" | "security" | "cleaning" | "metalwork";
+  category: "painting" | "plumbing" | "ceiling" | "waterproofing" | "handyman" | "renovation" | "electrical" | "flooring" | "carpentry" | "doors-windows" | "security" | "metalwork";
   synonyms: {
     en: string[];
     ms: string[];
@@ -405,54 +405,6 @@ export const SMART_SERVICE_TAXONOMY: Record<string, ServiceTaxonomyEntry> = {
       en: ["10mm SIRIM-Approved Clear/Frosted Tempered Glass", "Heavy-Duty Powder-Coated Aluminum Tracks", "Stainless Steel Glass Clamps & Pivot Hinges"],
       ms: ["Kaca Tempered Jernih/Frosted 10mm Diluluskan SIRIM", "Landasan Aluminium Bersepuh Serbuk Tugas Berat", "Pengapit Kaca & Engsel Pivot Keluli Tahan Karat"],
       zh: ["10毫米SIRIM国家检测无波纹透明/磨砂钢化玻璃", "特重型超抗压静电喷涂防静电铝合金轨", "304全精钢无缝拉丝镜面玻璃夹具与转轴合页"]
-    }
-  },
-  cleaning: {
-    serviceSlug: "cleaning",
-    category: "cleaning",
-    priceType: "Starting From",
-    calculatorSlugs: ["move-in-out-cleaning-calculator"],
-    synonyms: {
-      en: ["house cleaning", "office cleaning", "part time maid", "condo routine cleaning", "sofa cleaning", "carpet cleaning", "window scrubbing"],
-      ms: ["cucian rumah", "cucian pejabat", "pembantu rumah harian", "cuci kondo", "cuci sofa", "cuci karpet", "cuci cermin tingkap"],
-      zh: ["家庭日常保洁", "办公室清洁", "钟点工打扫", "公寓定点清洁", "布艺沙发干洗", "地毯清洁消毒", "窗户内外精细擦拭"]
-    },
-    materials: {
-      en: ["Eco-Friendly Eco-Safe Degreasers & Sanitizers", "Microfiber Scratch-Free Polishing Pads", "High-Suction Industrial HEPA Vacuums"],
-      ms: ["Penyahgris & Sanitizer Mesra Alam", "Pad Pengilap Mikro-Gentian Tanpa Calar", "Vakum HEPA Perindustrian Sedutan Tinggi"],
-      zh: ["通过环保认证中性低残留植物抑菌清洁液", "不伤建材高密度无痕细纤维静电擦布", "双引擎高效除尘过滤工业及HEPA干湿集尘车"]
-    }
-  },
-  "deep-cleaning": {
-    serviceSlug: "deep-cleaning",
-    category: "cleaning",
-    priceType: "Starting From",
-    calculatorSlugs: ["deep-cleaning-cost-estimator", "move-in-out-cleaning-calculator"],
-    synonyms: {
-      en: ["deep cleaning", "move in cleaning", "move out cleaning", "spring cleaning", "intensive bathroom scrubbing", "kitchen grease removal"],
-      ms: ["deep cleaning", "cuci rumah pindah masuk", "cuci rumah pindah keluar", "cuci besar", "sental bilik air kotor", "cuci minyak dapur"],
-      zh: ["深度大扫除", "入宅新居开荒清洁", "搬离退租彻底清扫", "全屋死角深度消毒", "卫生间除垢除霉精洗", "厨房重度油垢高压去油"]
-    },
-    materials: {
-      en: ["Heavy-Duty Alkalic Scale & Grease Removers", "High-Temperature Steam Vapor Cleaners", "Commercial Wet/Dry Floor Scrubbing Systems"],
-      ms: ["Penghilang Kerak & Minyak Alkali Tugas Berat", "Pembersih Wap Haba Tinggi", "Sistem Menyental Lantai Basah/Kering Komersial"],
-      zh: ["强效低锈蚀皂垢石灰质专用溶解去污剂", "140摄氏度高温高压纯蒸汽杀菌消毒仪", "商业级高速滚刷式洗地与自动除干机"]
-    }
-  },
-  "post-renovation-cleaning": {
-    serviceSlug: "post-renovation-cleaning",
-    category: "cleaning",
-    priceType: "Starting From",
-    calculatorSlugs: ["deep-cleaning-cost-estimator", "renovation-budget-calculator"],
-    synonyms: {
-      en: ["post renovation cleaning", "after renovation clean", "cement residue removal", "fine dust removal", "chemical washing floor", "paint splatter cleanup"],
-      ms: ["cuci lepas renovate", "cucian selepas ubah suai", "buang habuk simen", "cuci habuk tersembunyi", "chemical wash lantai", "buang kesan cat"],
-      zh: ["装修后开荒清洁", "工程竣工终检打扫", "全屋粉尘微粒彻底移除", "地砖水泥残渍特殊去渍", "玻璃门窗双面除油漆滴落", "酸碱平衡地面深度清洗"]
-    },
-    materials: {
-      en: ["Specialized Acid-Buffered Cement & Plaster Dissolvers", "Industrial Triple-Stage HEPA Fine-Dust Scrubbers", "Neutralizing Floor Conditioners"],
-      ms: ["Pelarut Simen & Plaster Khusus Berpenimbal Asid", "Scrubber Habuk Halus HEPA Tiga Peringkat Perindustrian", "Perapi Lantai Meneutral"],
-      zh: ["水泥砂浆硬化斑点专用低酸溶解去渍水", "三级真HEPA微尘净化高效双电机工业排吸器", "养护石材与全瓷质地的弱碱缓蚀中和剂"]
     }
   },
   cctv: {

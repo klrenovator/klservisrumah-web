@@ -320,7 +320,6 @@ export const paintingMsDict: MessageDictionary = {
     crackPackage: { label: "Pakej baiki retak & lembap dinding", note: "Kadar diterbitkan: {label}" },
     skimUpgrade: { label: "Naik taraf skim-coat penuh (kemasan sehalus cermin)", note: "Kadar diterbitkan: {label}" },
     waterproof: { label: "Rawatan kalis air dinding lembap", note: "Kadar diterbitkan: {label}" },
-    postClean: { label: "Pembersihan selepas mengecat", note: "Kadar diterbitkan: dari RM {price} setiap lawatan" },
     gateGrille: { label: "Cat anti-karat pagar & gril", note: "Rawatan karat tambah dua lapisan pelindung" }
   },
   related: {

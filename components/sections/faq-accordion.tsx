@@ -10,7 +10,7 @@ const faqsByLang: Record<"en" | "ms" | "zh", Faq[]> = {
   en: [
     {
       q: "What is your starting price for your home services?",
-      a: "Our minor handyman jobs start from RM 80, basic plumbing repairs from RM 120, plaster ceiling repair from RM 180, and single room painting from RM 450. Every quote we issue is fixed and itemized before any actual work is commenced, so there are absolutely no hidden fees."
+      a: "Our minor handyman jobs start from RM 280, basic plumbing repairs from RM 280, plaster ceiling repair from RM 180, and single room painting from RM 450. Every quote we issue is fixed and itemized before any actual work is commenced, so there are absolutely no hidden fees."
     },
     {
       q: "Are you an established local company in Malaysia?",
@@ -32,7 +32,7 @@ const faqsByLang: Record<"en" | "ms" | "zh", Faq[]> = {
   ms: [
     {
       q: "Apakah harga permulaan untuk perkhidmatan rumah anda?",
-      a: "Kerja tukang kecil kami bermula dari RM 80, pembaikan paip asas dari RM 120, pembaikan siling plaster dari RM 180, dan pengecatan satu bilik dari RM 450. Setiap sebut harga yang kami keluarkan adalah tetap dan terperinci sebelum sebarang kerja sebenar bermula, jadi tiada sebarang yuran tersembunyi."
+      a: "Kerja tukang kecil kami bermula dari RM 280, pembaikan paip asas dari RM 280, pembaikan siling plaster dari RM 180, dan pengecatan satu bilik dari RM 450. Setiap sebut harga yang kami keluarkan adalah tetap dan terperinci sebelum sebarang kerja sebenar bermula, jadi tiada sebarang yuran tersembunyi."
     },
     {
       q: "Adakah anda syarikat tempatan yang mantap di Malaysia?",
@@ -54,7 +54,7 @@ const faqsByLang: Record<"en" | "ms" | "zh", Faq[]> = {
   zh: [
     {
       q: "你们家庭服务的起价是多少？",
-      a: "我们的小型维修工作从 RM 80 起，基础水管维修从 RM 120 起，石膏天花板维修从 RM 180 起，单间房油漆从 RM 450 起。我们提供的每份报价在实际施工前都是固定且逐项列明的，因此绝无任何隐藏费用。"
+      a: "我们的小型维修工作从 RM 280 起，基础水管维修从 RM 280 起，石膏天花板维修从 RM 180 起，单间房油漆从 RM 450 起。我们提供的每份报价在实际施工前都是固定且逐项列明的，因此绝无任何隐藏费用。"
     },
     {
       q: "你们是马来西亚的正规本地公司吗？",

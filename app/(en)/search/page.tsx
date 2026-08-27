@@ -34,8 +34,7 @@ const POPULAR_QUERIES = [
   { label: "Leaking bathroom fix", href: "/problems/leaking-bathroom" },
   { label: "Same-day plumber KL", href: "/near-me/plumbing" },
   { label: "TV mounting Petaling Jaya", href: "/areas/petaling-jaya/handyman" },
-  { label: "Electrical wiring cost", href: "/services/electrical/cost" },
-  { label: "Deep cleaning Subang Jaya", href: "/areas/subang-jaya/deep-cleaning" }
+  { label: "Electrical wiring cost", href: "/services/electrical/cost" }
 ];
 
 export default function SearchPage({ searchParams }: { searchParams: Promise<{ q?: string }> }) {

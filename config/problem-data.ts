@@ -5,7 +5,7 @@ export type ProblemDetail = {
     | "house-renovation" | "electrical" | "water-heater" | "ceiling-fan" | "lighting"
     | "tiling" | "plaster-ceiling" | "skim-coat" | "flooring" | "epoxy-flooring"
     | "roof-repair" | "kitchen-cabinet" | "carpentry" | "door" | "window-repair"
-    | "locksmith" | "glass-aluminium" | "cleaning" | "deep-cleaning" | "post-renovation-cleaning"
+    | "locksmith" | "glass-aluminium"
     | "cctv" | "autogate" | "welding" | "aircon" | "kitchen-renovation" | "bathroom-renovation";
   title: string;
   symptom: string;
@@ -651,57 +651,6 @@ export const problemPages: ProblemDetail[] = [
     faqs: [
       { q: "Can you replace only the seal?", a: "Yes — most leaks are fixed by replacing the bottom wipe seal and re-siliconing." },
       { q: "Do you install frameless shower screens?", a: "Yes — we supply and install 10mm tempered glass frameless systems." }
-    ]
-  },
-
-  // CLEANING
-  {
-    slug: "mold-in-bathroom-after-cleaning",
-    serviceSlug: "cleaning",
-    title: "Mold Returning Quickly After Professional Cleaning",
-    symptom: "Black mold appears again in bathroom within 1–2 weeks after cleaning.",
-    costRange: "RM120–RM450+ depending on treatment",
-    urgency: "Medium",
-    causes: ["High humidity and poor ventilation", "Leaking grout or silicone", "Condensation on cold walls", "Inadequate anti-mold treatment"],
-    solutions: ["Deep clean with anti-mold solution", "Improve ventilation", "Re-seal grout and silicone", "Apply anti-mold coating"],
-    whenToCall: ["Mold is spreading fast", "Health concerns (allergies)", "Recurring after multiple cleans"],
-    faqs: [
-      { q: "Can cleaning alone stop mold?", a: "Cleaning removes mold but the moisture source must also be addressed for long-term results." },
-      { q: "Do you offer anti-mold treatment?", a: "Yes — we apply professional anti-mold coatings that last 6–12 months." }
-    ]
-  },
-
-  // DEEP CLEANING
-  {
-    slug: "stubborn-grout-stains-after-deep-clean",
-    serviceSlug: "deep-cleaning",
-    title: "Grout Still Stained After Deep Cleaning Service",
-    symptom: "Bathroom or kitchen grout remains discolored even after professional deep clean.",
-    costRange: "RM180–RM680+ depending on area and method",
-    urgency: "Low",
-    causes: ["Deep-set mold and mineral deposits", "Old or porous grout", "Hard water stains", "Previous poor sealing"],
-    solutions: ["Apply grout cleaner and steamer", "Re-grout affected areas", "Apply penetrating sealer", "Recommend color sealing"],
-    whenToCall: ["Stains are very dark or widespread", "Client wants color sealing", "Multiple bathrooms affected"],
-    faqs: [
-      { q: "Can you restore grout color without re-grouting?", a: "Often yes with professional cleaning + color sealing. Full re-grouting is only needed for severely damaged grout." },
-      { q: "How long does color sealing last?", a: "Typically 2–4 years depending on usage and cleaning products." }
-    ]
-  },
-
-  // POST RENOVATION CLEANING
-  {
-    slug: "construction-dust-returning",
-    serviceSlug: "post-renovation-cleaning",
-    title: "Fine Construction Dust Returning After Post-Reno Clean",
-    symptom: "Fine white or grey dust keeps appearing on surfaces days after post-renovation cleaning.",
-    costRange: "RM250–RM950+ depending on property size",
-    urgency: "Medium",
-    causes: ["Dust trapped in HVAC or false ceiling", "Incomplete vacuuming of porous surfaces", "No negative air machine used", "Ongoing minor works"],
-    solutions: ["Use HEPA vacuum and air scrubber", "Clean inside false ceiling and ducts", "Wipe all surfaces with microfiber", "Final air purification"],
-    whenToCall: ["Dust is very fine and persistent", "Client has respiratory issues", "Large renovation project"],
-    faqs: [
-      { q: "Why does dust keep coming back?", a: "Fine renovation dust settles in hidden areas and is disturbed by air movement." },
-      { q: "Do you use special equipment?", a: "Yes — we use HEPA vacuums, air scrubbers and negative air machines for post-renovation cleans." }
     ]
   },
 
@@ -1859,84 +1808,6 @@ export const problemI18n: Partial<Record<string, Partial<Record<"ms" | "zh", Par
       ]
     }
   },
-  "mold-in-bathroom-after-cleaning": {
-    ms: {
-      title: "Kulat Kembali Pesat Selepas Pembersihan Profesional",
-      symptom: "Kulat hitam muncul semula di bilik air dalam 1–2 minggu selepas pembersihan.",
-      costRange: "RM120–RM450+ bergantung kepada rawatan",
-      causes: ["Kelembapan tinggi dan pengudaraan lemah", "Grout atau silikon bocor", "Kondensasi pada dinding sejuk", "Rawatan anti-kulat tidak mencukupi"],
-      solutions: ["Cuci mendalam dengan larutan anti-kulat", "Perbaiki pengudaraan", "Kedap semula grout dan silikon", "Sapukan salutan anti-kulat"],
-      whenToCall: ["Kulat merebak pesat", "Kebimbangan kesihatan (alahan)", "Berulang selepas beberapa pembersihan"],
-      faqs: [
-        { q: "Bolehkah pembersihan sahaja menghentikan kulat?", a: "Pembersihan menanggalkan kulat tetapi punca lembapan juga mesti ditangani untuk hasil jangka panjang." },
-        { q: "Adakah anda menawarkan rawatan anti-kulat?", a: "Ya - kami menyapu salutan anti-kulat profesional yang tahan 6–12 bulan." }
-      ]
-    },
-    zh: {
-      title: "专业清洁后霉菌迅速再次出现",
-      symptom: "清洁后 1–2 周内浴室黑霉再次出现。",
-      costRange: "RM120–RM450+，视处理方式而定",
-      causes: ["高湿度与通风不良", "填缝或硅胶漏水", "冷墙表面结露", "防霉处理不充分"],
-      solutions: ["用防霉溶液深度清洁", "改善通风", "重新密封填缝与硅胶", "涂抹防霉涂层"],
-      whenToCall: ["霉菌迅速蔓延", "健康顾虑（过敏）", "多次清洁后反复出现"],
-      faqs: [
-        { q: "单靠清洁能阻止霉菌吗？", a: "清洁可以去除霉菌，但要获得长期效果还必须解决潮气来源。" },
-        { q: "你们提供防霉处理吗？", a: "会的——我们涂抹专业防霉涂层，可持续 6–12 个月。" }
-      ]
-    }
-  },
-  "stubborn-grout-stains-after-deep-clean": {
-    ms: {
-      title: "Grout Masih Berkesan Selepas Perkhidmatan Pembersihan Mendalam",
-      symptom: "Grout bilik air atau dapur kekal berubah warna walaupun selepas pembersihan mendalam profesional.",
-      costRange: "RM180–RM680+ bergantung kepada kawasan dan kaedah",
-      causes: ["Kulat dan mendapan mineral mendalam", "Grout lama atau berliang", "Kesan air keras", "Pengedapan lemah sebelumnya"],
-      solutions: ["Sapukan pencuci grout dan penstim", "Grout semula kawasan terjejas", "Sapukan pengedap penusukan", "Cadangkan pengedapan warna"],
-      whenToCall: ["Kesan sangat gelap atau meluas", "Klien mahukan pengedapan warna", "Beberapa bilik air terjejas"],
-      faqs: [
-        { q: "Bolehkah anda memulihkan warna grout tanpa grouting semula?", a: "Selalunya ya dengan pembersihan profesional + pengedapan warna. Grouting semula penuh hanya diperlukan untuk grout rosak teruk." },
-        { q: "Berapa lama pengedapan warna bertahan?", a: "Biasanya 2–4 tahun bergantung kepada penggunaan dan produk pembersihan." }
-      ]
-    },
-    zh: {
-      title: "深度清洁后瓷砖填缝仍有污渍",
-      symptom: "即使经过专业深度清洁，浴室或厨房的填缝仍然变色。",
-      costRange: "RM180–RM680+，视面积和方法而定",
-      causes: ["深层霉菌与矿物质沉积", "老旧或多孔的填缝", "硬水渍", "先前密封处理不佳"],
-      solutions: ["使用填缝清洁剂与蒸汽机", "对受影响区域重新填缝", "涂抹渗透型密封剂", "建议进行颜色密封"],
-      whenToCall: ["污渍非常深或范围广", "客户希望进行颜色密封", "多个浴室受影响"],
-      faqs: [
-        { q: "你们能不重新填缝就恢复填缝颜色吗？", a: "通常可以，通过专业清洁加颜色密封即可实现。只有严重受损的填缝才需要全面重新填缝。" },
-        { q: "颜色密封能持续多久？", a: "根据使用情况和清洁产品，通常为 2–4 年。" }
-      ]
-    }
-  },
-  "construction-dust-returning": {
-    ms: {
-      title: "Habuk Pembinaan Halus Kembali Selepas Pembersihan Selepas Renovasi",
-      symptom: "Habuk putih atau kelabu halus terus muncul pada permukaan beberapa hari selepas pembersihan pasca renovasi.",
-      costRange: "RM250–RM950+ bergantung kepada saiz hartanah",
-      causes: ["Habuk terperangkap dalam HVAC atau siling palsu", "Penyedutan tidak lengkap permukaan berliang", "Tiada mesin udara negatif digunakan", "Kerja kecil berterusan"],
-      solutions: ["Gunakan vacuum HEPA dan penggosok udara", "Bersihkan di dalam siling palsu dan saluran", "Lap semua permukaan dengan mikrofiber", "Penulenan udara akhir"],
-      whenToCall: ["Habuk sangat halus dan berterusan", "Klien mempunyai isu pernafasan", "Projek renovasi besar"],
-      faqs: [
-        { q: "Mengapa habuk terus kembali?", a: "Habuk renovasi halus mengendap di kawasan tersembunyi dan tergerak semula oleh pergerakan udara." },
-        { q: "Adakah anda menggunakan peralatan khas?", a: "Ya - kami menggunakan vacuum HEPA, penggosok udara dan mesin udara negatif untuk pembersihan pasca renovasi." }
-      ]
-    },
-    zh: {
-      title: "装修后清洁后细粉尘再次出现",
-      symptom: "装修后清洁数天后，细白色或灰色粉尘仍持续出现在表面。",
-      costRange: "RM250–RM950+，视物业大小而定",
-      causes: ["粉尘滞留在空调系统或吊顶内", "多孔表面吸尘不彻底", "未使用负压空气净化机", "仍有小型施工进行中"],
-      solutions: ["使用 HEPA 吸尘器与空气净化机", "清洁吊顶内部与风管", "用超细纤维布擦拭所有表面", "最终空气净化"],
-      whenToCall: ["粉尘非常细且持续存在", "客户有呼吸道问题", "大型装修项目"],
-      faqs: [
-        { q: "为什么粉尘一直出现？", a: "细小的装修粉尘会沉积在隐蔽区域，并因空气流动而再次扬起。" },
-        { q: "你们使用特殊设备吗？", a: "会的——我们在装修后清洁中使用 HEPA 吸尘器、空气净化机与负压机。" }
-      ]
-    }
-  },
   "cctv-not-recording": {
     ms: {
       title: "Kamera CCTV Tidak Merakam atau Rakaman Hilang",
@@ -2552,66 +2423,6 @@ export const problemI18n: Partial<Record<string, Partial<Record<"ms" | "zh", Par
         { q: "可以自己重新打硅胶修淋浴隔断吗？", a: "小面积修补可以。完整重新密封时，专业清洁+固化时间对寿命影响很大。" },
         { q: "更换淋浴隔断密封条多少钱？", a: "磁性密封条更换：RM 120 至 RM 250。全面重新打硅胶：RM 180 至 RM 380，含干燥时间。" },
         { q: "什么时候应该更换整个淋浴隔断？", a: "如果玻璃开裂、框架腐蚀或铰链明显松动，更换（RM 850 至 RM 2,400）比维修更安全。" }
-      ]
-    }
-  },
-  "stubborn-bathroom-limescale": {
-    ms: {
-      title: "Karat Kapur dan Kesan Air Degil di Bilik Air",
-      costRange: "RM 180–RM 550+ setiap bilik air",
-      faqs: [
-        { q: "Adakah bahan kimia pembersih bilik air anda selamat untuk keluarga?", a: "Ya. Kami guna penyahkerak mesra alam dan sentiasa mengudarakan bilik air sepenuhnya. Sisa kimia dibilas sepenuhnya sebelum kami pergi." },
-        { q: "Berapa lama pembersihan mendalam bilik air?", a: "Pembersihan mendalam bilik air standard: 2 hingga 4 jam setiap bilik air bergantung kepada keterukan skala." },
-        { q: "Bagaimana untuk mengelakkan limescale daripada kembali?", a: "Lap kaca mandi dengan squeegee selepas setiap penggunaan, lap paip setiap minggu, dan pertimbangkan pelembut air seluruh rumah untuk perlindungan jangka panjang." }
-      ]
-    },
-    zh: {
-      title: "浴室顽固水垢和水渍",
-      costRange: "每间浴室 RM 180–RM 550+",
-      faqs: [
-        { q: "你们浴室清洁化学品对家人安全吗？", a: "安全。我们使用环保除垢剂，并始终让浴室充分通风。离开前会彻底冲洗掉化学残留。" },
-        { q: "浴室深度清洁需要多久？", a: "标准浴室深度清洁：每间 2 至 4 小时，视水垢严重程度而定。" },
-        { q: "怎样预防水垢再次形成？", a: "每次使用后用刮水器刮干淋浴玻璃、每周擦拭水龙头，并考虑安装全屋软水机以获得长期防护。" }
-      ]
-    }
-  },
-  "move-out-condo-deep-clean": {
-    ms: {
-      title: "Pembersihan Mendalam Kondominium Sebelum Berpindah",
-      costRange: "RM 420–RM 1,800+ bergantung kepada saiz unit",
-      faqs: [
-        { q: "Termasukkah kerja sentuhan dinding?", a: "Penyingkiran calar asas termasuk. Pengecatan semula sebenar disebut harga berasingan jika kerosakan dinding melebihi pembersihan." },
-        { q: "Berapa kos pembersihan pindah keluar kondominium 3 bilik?", a: "Kondominium 900-1200 kaki persegi biasa: RM 850 hingga RM 1,400 untuk pembersihan mendalam penuh termasuk dapur dan 2 bilik air." },
-        { q: "Adakah anda berikan resit untuk tuan tanah?", a: "Ya — invois terperinci penuh dengan maklumat syarikat, sesuai untuk rundingan bayaran balik deposit." }
-      ]
-    },
-    zh: {
-      title: "公寓退租深度清洁",
-      costRange: "RM 420–RM 1,800+，视单位面积而定",
-      faqs: [
-        { q: "墙面修补也在服务范围内吗？", a: "基本污痕清除已包含。如果墙面损坏超出清洁范围，实际重新刷漆将单独报价。" },
-        { q: "三房公寓退租清洁多少钱？", a: "典型 900-1200 平方英尺公寓：全面深度清洁（含厨房和 2 间浴室）RM 850 至 RM 1,400。" },
-        { q: "能给房东提供收据吗？", a: "可以——提供含公司信息的完整明细发票，适合用于押金退还协商。" }
-      ]
-    }
-  },
-  "cement-splatter-tile-clean": {
-    ms: {
-      title: "Percikan Simen dan Debu Selepas Pengubahsuaian",
-      costRange: "RM 650–RM 3,200+ bergantung kepada saiz unit",
-      faqs: [
-        { q: "Adakah pembersihan kontraktor dikira sebagai pembersihan selepas pengubahsuaian?", a: "Jarang. Pembersihan kontraktor standard hanyalah penyingkiran serpihan asas. Pembersihan mendalam selepas pengubahsuaian menjadikan unit anda benar-benar siap huni." },
-        { q: "Berapa lama pembersihan selepas pengubahsuaian?", a: "Kondominium 3 bilik standard: 6-10 jam dengan pasukan 2-3 pembersih. Unit lebih besar atau pengubahsuaian berat: 1-2 hari penuh." },
-        { q: "Berapa kos membuang simen dari jubin bilik air?", a: "Termasuk dalam skop pembersihan mendalam. Penyingkiran simen berasingan (jika perlu sebagai susulan): RM 250 hingga RM 550 setiap bilik air." }
-      ]
-    },
-    zh: {
-      title: "装修后的水泥溅渍和粉尘",
-      costRange: "RM 650–RM 3,200+，视单位面积而定",
-      faqs: [
-        { q: "承包商的简单清理算是装修后清洁吗？", a: "很少算。标准承包商清理只是基本垃圾清除。装修后深度清洁才能让您的单位真正达到入住标准。" },
-        { q: "装修后清洁需要多长时间？", a: "标准三房公寓：2-3 人团队 6-10 小时。更大单位或重度装修：1-2 整天。" },
-        { q: "清除浴室瓷砖上的水泥多少钱？", a: "已包含在深度清洁范围。单独清除水泥（如需后续处理）：每间浴室 RM 250 至 RM 550。" }
       ]
     }
   },

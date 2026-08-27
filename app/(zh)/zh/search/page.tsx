@@ -43,8 +43,7 @@ const POPULAR_QUERIES = [
   { label: "维修厕所漏水", href: "/zh/problems/leaking-bathroom" },
   { label: "吉隆坡当日水管维修", href: "/zh/near-me/plumbing" },
   { label: "八打灵再也安装电视", href: "/zh/areas/petaling-jaya/handyman" },
-  { label: "电工布线价格", href: "/zh/services/electrical/cost" },
-  { label: "梳邦再也深度清洁", href: "/zh/areas/subang-jaya/deep-cleaning" }
+  { label: "电工布线价格", href: "/zh/services/electrical/cost" }
 ];
 
 export default function ZhSearchPage({ searchParams }: { searchParams: Promise<{ q?: string }> }) {

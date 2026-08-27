@@ -30,7 +30,7 @@ export const marketRateBaseline: MarketRateItem[] = [
   {
     serviceSlug: "plumbing",
     label: "Minor plumbing repair",
-    publishedRate: "From RM 150",
+    publishedRate: "From RM 280",
     marketRange: "RM 80–RM 500 depending on repair complexity",
     pricingUnit: "task",
     validationNote: "Within the usual local range for tap, valve, sink, minor pipe, and troubleshooting tasks.",
@@ -84,7 +84,7 @@ export const marketRateBaseline: MarketRateItem[] = [
   {
     serviceSlug: "handyman",
     label: "General handyman task",
-    publishedRate: "From RM 100",
+    publishedRate: "From RM 280",
     marketRange: "RM 40–RM 180 / hour or RM 60–RM 300 per common task",
     pricingUnit: "task",
     validationNote: "Fair entry point for small installation, curtain, shelf, or lock adjustment jobs.",

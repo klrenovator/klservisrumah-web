@@ -320,7 +320,6 @@ export const paintingZhDict: MessageDictionary = {
     crackPackage: { label: "墙体裂缝与潮湿修复配套", note: "公布价格:{label}" },
     skimUpgrade: { label: "全面批灰升级(镜面效果)", note: "公布价格:{label}" },
     waterproof: { label: "潮湿墙防水处理", note: "公布价格:{label}" },
-    postClean: { label: "油漆后清洁", note: "公布价格:每次上门 RM {price} 起" },
     gateGrille: { label: "大门铁花防锈油漆", note: "除锈处理加两层防护面漆" }
   },
   related: {

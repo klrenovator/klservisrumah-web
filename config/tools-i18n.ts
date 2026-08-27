@@ -1,6 +1,6 @@
 /**
  * tools-i18n.ts — Bahasa Malaysia + 中文 locale layer for the full tool cluster
- * (the five deep tools plus every calculator in the 37-tool suite).
+ * (the five deep tools plus every calculator in the 35-tool suite).
  *
  * WHY THIS EXISTS
  * ---------------
@@ -77,8 +77,6 @@ export const TOOL_SLUG_I18N: Record<ToolLocale, Record<string, string>> = {
     "room-renovation-estimator": "renovasi-bilik",
     "kitchen-renovation-estimator": "renovasi-dapur",
     "bathroom-renovation-estimator": "renovasi-bilik-air",
-    "deep-cleaning-cost-estimator": "kos-cuci-menyeluruh",
-    "move-in-out-cleaning-calculator": "cuci-pindah-masuk-keluar",
     "aircon-installation-cost": "kalkulator-kos-pemasangan-aircond",
     "aircon-gas-topup-cost": "kalkulator-kos-topup-gas-aircond",
     "aircon-size-calculator": "kalkulator-saiz-aircond",
@@ -123,8 +121,6 @@ export const TOOL_SLUG_I18N: Record<ToolLocale, Record<string, string>> = {
     "room-renovation-estimator": "房间装修估价",
     "kitchen-renovation-estimator": "厨房装修估价",
     "bathroom-renovation-estimator": "浴室装修估价",
-    "deep-cleaning-cost-estimator": "深度清洁费用",
-    "move-in-out-cleaning-calculator": "搬家清洁计算器",
     "aircon-installation-cost": "空调安装费用计算器",
     "aircon-gas-topup-cost": "空调加雪种费用计算器",
     "aircon-size-calculator": "空调匹数计算器",
@@ -239,10 +235,6 @@ export const TOOL_CROSS_LINES_EN: Record<string, string> = {
     "Free kitchen renovation cost estimator.",
   "bathroom-renovation-estimator":
     "Free bathroom renovation cost estimator.",
-  "deep-cleaning-cost-estimator":
-    "Free deep cleaning cost estimator per sq ft.",
-  "move-in-out-cleaning-calculator":
-    "Free move-in/out cleaning cost calculator.",
   "tv-mount-advisor":
     "Free TV mount advisor — get the right bracket, fixing method and an instant cost estimate."
 };
@@ -2076,104 +2068,6 @@ export const toolsContentI18n: Record<ToolLocale, Record<string, ToolContentI18n
       ],
       relatedServices: [
         { label: "Perkhidmatan Renovasi Rumah", href: "/services/house-renovation" },
-        { label: "Panduan Harga", href: "/pricing" }
-      ]
-    },
-    "deep-cleaning-cost-estimator": {
-      name: "Kalkulator Kos Cuci Menyeluruh",
-      heading: "Kalkulator Kos Cuci Menyeluruh",
-      metaTitle: "Kalkulator Kos Cuci Menyeluruh KL",
-      metaDesc: "Anggarkan kos pembersihan menyeluruh daripada jenis hartanah, keluasan binaan, keadaan dan perkhidmatan tambahan. Sesuai untuk rumah berpenghuni yang perlukan cucian terperinci.",
-      keywords: ["kos cuci menyeluruh Malaysia", "harga cuci pindah keluar KL"],
-      eyebrow: "Kalkulator percuma",
-      intro: "Anggarkan kos pembersihan menyeluruh per kaki persegi. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
-      directQuestion: "Berapa kos cuci menyeluruh di KL dan Selangor?",
-      directAnswer: "Anggarkan kos pembersihan menyeluruh per kaki persegi. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
-      heroAlt: "Pembersihan menyeluruh",
-      stats: [
-        { label: "Serta-merta", value: "Bawah 2 minit" },
-        { label: "Dari", value: "RM 150" },
-        { label: "Liputan", value: "KL & Selangor" }
-      ],
-      howTo: [
-        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
-        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
-        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
-        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
-      ],
-      priceTable: [
-        { scope: "Kalkulator Kos Cuci Menyeluruh — Standard", note: "Skop standard" },
-        { scope: "Kalkulator Kos Cuci Menyeluruh — Premium", note: "Skop premium dengan tambahan" },
-        { scope: "Kalkulator Kos Cuci Menyeluruh — Bahan", note: "Kos bahan" },
-        { scope: "Kalkulator Kos Cuci Menyeluruh — Upah", note: "Upah sahaja" },
-      ],
-      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
-      faqs: [
-        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
-        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
-        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
-        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
-        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
-      ],
-      covers: [
-        "Anggarkan kos pembersihan menyeluruh per kaki persegi.",
-        "Anggaran langsung serta-merta",
-        "Pecahan upah berbanding bahan",
-        "Pengiraan keluasan",
-        "Anggaran tempoh",
-        "Tempahan WhatsApp",
-      ],
-      relatedServices: [
-        { label: "Perkhidmatan Pembersihan Menyeluruh", href: "/services/deep-cleaning" },
-        { label: "Panduan Harga", href: "/pricing" }
-      ]
-    },
-    "move-in-out-cleaning-calculator": {
-      name: "Kalkulator Cuci Pindah Masuk/Keluar",
-      heading: "Kalkulator Cuci Pindah Masuk/Keluar",
-      metaTitle: "Kalkulator Kos Cuci Pindah Masuk/Keluar KL",
-      metaDesc: "Anggarkan kos pembersihan pindah masuk atau keluar daripada saiz hartanah, perabot, keadaan dan perkhidmatan tambahan. Rancang cucian serah kunci di KL & Selangor.",
-      keywords: ["kos cuci pindah masuk Malaysia", "cuci pindah keluar KL"],
-      eyebrow: "Kalkulator percuma",
-      intro: "Anggarkan kos pembersihan pindah masuk/keluar. Satu halaman, tiada butang seterusnya. Masukkan saiz anda dan dapatkan anggaran serta-merta daripada kadar KL & Selangor 2026 kami yang diterbitkan.",
-      directQuestion: "Berapa kos cuci pindah masuk/keluar di KL dan Selangor?",
-      directAnswer: "Anggarkan kos pembersihan pindah masuk/keluar. Kalkulator percuma ini memberikan anda anggaran serta-merta daripada kadar 2026 kami yang diterbitkan untuk KL & Selangor. Masukkan dimensi anda dan dapatkan jumlah keluasan, upah, bahan, jumlah anggaran, julat dan tempoh.",
-      heroAlt: "Pembersihan pindah masuk/keluar",
-      stats: [
-        { label: "Serta-merta", value: "Bawah 2 minit" },
-        { label: "Dari", value: "RM 150" },
-        { label: "Liputan", value: "KL & Selangor" }
-      ],
-      howTo: [
-        { title: "Masukkan saiz bilik dan keperluan anda", desc: "Semuanya dalam satu halaman. Masukkan panjang, lebar dan tinggi atau pilih pratetap. Harga dikemas kini secara langsung." },
-        { title: "Pilih bahan dan keadaan", desc: "Pilih gred ekonomi, standard atau premium serta keadaan permukaan semasa." },
-        { title: "Pilihan: akses dan kecemasan", desc: "Buka bahagian pilihan untuk ketinggian, akses dan masa. Langkau untuk harga standard." },
-        { title: "Lihat anggaran dan tempah melalui WhatsApp", desc: "Jumlah keluasan, upah, bahan, jumlah, julat dan tempoh muncul serta-merta. Tempah melalui WhatsApp." },
-      ],
-      priceTable: [
-        { scope: "Kalkulator Cuci Pindah Masuk/Keluar — Standard", note: "Skop standard" },
-        { scope: "Kalkulator Cuci Pindah Masuk/Keluar — Premium", note: "Skop premium dengan tambahan" },
-        { scope: "Kalkulator Cuci Pindah Masuk/Keluar — Bahan", note: "Kos bahan" },
-        { scope: "Kalkulator Cuci Pindah Masuk/Keluar — Upah", note: "Upah sahaja" },
-      ],
-      priceTableNote: "Kadar adalah daripada senarai harga 2026 kami yang diterbitkan dan digunakan terus oleh kalkulator ini.",
-      faqs: [
-        { q: "Bagaimana anggaran dikira?", a: "Kami menggunakan kadar diterbitkan: keluasan dinding = 2×(Panjang+Lebar)×Tinggi untuk dinding, keluasan siling = Panjang×Lebar, dan jumlah gabungan untuk dinding+siling. Upah dan bahan diasingkan daripada julat yang diterbitkan. Lihat pecahan untuk butiran." },
-        { q: "Adakah ini sebut harga muktamad?", a: "Tidak. Ini hanya harga anggaran. Sebut harga muktamad akan diberikan selepas pemeriksaan atau selepas butiran projek disahkan." },
-        { q: "Adakah anggaran termasuk upah dan bahan?", a: "Ya, anggaran termasuk upah dan bahan melainkan anda memilih bekalan sendiri. Pecahan menunjukkan kedua-duanya." },
-        { q: "Berapa lama masa kerja dijalankan?", a: "Tempoh dianggarkan daripada jumlah keluasan dan kerumitan — biasanya separuh hari untuk kerja kecil, 1–2 hari untuk bilik, 2–3 hari untuk kawasan besar." },
-        { q: "Adakah anda meliputi kawasan saya?", a: "Kami meliputi seluruh KL & Selangor termasuk Cheras, Ampang, Puchong, Subang, Petaling Jaya, Shah Alam, Klang dan kawasan sekitarnya." },
-      ],
-      covers: [
-        "Anggarkan kos pembersihan pindah masuk/keluar.",
-        "Anggaran langsung serta-merta",
-        "Pecahan upah berbanding bahan",
-        "Pengiraan keluasan",
-        "Anggaran tempoh",
-        "Tempahan WhatsApp",
-      ],
-      relatedServices: [
-        { label: "Perkhidmatan Pembersihan Menyeluruh", href: "/services/deep-cleaning" },
         { label: "Panduan Harga", href: "/pricing" }
       ]
     },
@@ -4276,105 +4170,6 @@ export const toolsContentI18n: Record<ToolLocale, Record<string, ToolContentI18n
         { label: "价格指南", href: "/pricing" }
       ]
     },
-    "deep-cleaning-cost-estimator": {
-      name: "深度清洁费用估价",
-      heading: "深度清洁费用估价",
-      metaTitle: "深度清洁费用估价 KL",
-      metaDesc: "根据房产类型、建筑面积、清洁状况与附加项目估算深度清洁费用，适合需要一次性精细清洁的在住房屋。",
-      keywords: ["马来西亚深度清洁费用", "吉隆坡退租清洁价格"],
-      eyebrow: "免费估价工具",
-      intro: "按每平方英尺估算深度清洁费用。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
-      directQuestion: "吉隆坡和雪兰莪深度清洁要多少钱？",
-      directAnswer: "按每平方英尺估算深度清洁费用。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
-      heroAlt: "深度清洁",
-      stats: [
-        { label: "即时", value: "2分钟内" },
-        { label: "起", value: "RM 150" },
-        { label: "覆盖区域", value: "KL & Selangor" }
-      ],
-      howTo: [
-        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
-        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
-        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
-        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
-      ],
-      priceTable: [
-        { scope: "深度清洁费用估价——标准", note: "标准范围" },
-        { scope: "深度清洁费用估价——高级", note: "高级范围含附加项" },
-        { scope: "深度清洁费用估价——材料", note: "材料费" },
-        { scope: "深度清洁费用估价——人工", note: "仅人工" },
-      ],
-      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
-      faqs: [
-        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
-        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
-        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
-        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
-        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
-      ],
-      covers: [
-        "按每平方英尺估算深度清洁费用。",
-        "即时在线估价",
-        "人工与材料拆分",
-        "面积计算",
-        "工期估算",
-        "WhatsApp 预订",
-      ],
-      relatedServices: [
-        { label: "深度清洁服务", href: "/services/deep-cleaning" },
-        { label: "价格指南", href: "/pricing" }
-      ]
-    },
-    "move-in-out-cleaning-calculator": {
-      name: "搬家清洁计算器",
-      heading: "搬家清洁计算器",
-      metaTitle: "搬家清洁费用计算器 KL",
-      metaDesc: "根据房产面积、家具状况、清洁状况与附加项目估算入伙或退租清洁费用，规划吉隆坡与雪兰莪的交屋清洁。",
-      keywords: ["马来西亚迁入清洁费用", "吉隆坡迁出清洁"],
-      eyebrow: "免费估价工具",
-      intro: "估算迁入/迁出清洁费用。 所有内容都在一个页面上，无需点击“下一步”。输入您的尺寸，即可根据我们已发布的 2026 吉隆坡与雪兰莪费率立即获得估算。",
-      directQuestion: "吉隆坡和雪兰莪搬家清洁要多少钱？",
-      directAnswer: "估算迁入/迁出清洁费用。 这款免费计算器根据我们已发布的 2026 吉隆坡与雪兰莪费率立即给出估算。输入您的尺寸，即可获得总面积、人工、材料、总估价、价格范围和工期。",
-      heroAlt: "搬家清洁",
-      stats: [
-        { label: "即时", value: "2分钟内" },
-        { label: "起", value: "RM 150" },
-        { label: "覆盖区域", value: "KL & Selangor" }
-      ],
-      howTo: [
-        { title: "输入房间尺寸和需求", desc: "所有内容都在一个页面上。输入长、宽、高或选择预设，价格实时更新。" },
-        { title: "选择材料和状况", desc: "选择经济、标准或高级等级以及当前表面状况。" },
-        { title: "可选：高度、通道与工期", desc: "打开可选部分设置高度、通道和时间。跳过则以标准价格计算。" },
-        { title: "查看估价并通过 WhatsApp 预订", desc: "总面积、人工、材料、总额、价格范围和工期立即显示。通过 WhatsApp 预订。" },
-      ],
-      priceTable: [
-        { scope: "搬家清洁计算器——标准", note: "标准范围" },
-        { scope: "搬家清洁计算器——高级", note: "高级范围含附加项" },
-        { scope: "搬家清洁计算器——材料", note: "材料费" },
-        { scope: "搬家清洁计算器——人工", note: "仅人工" },
-      ],
-      priceTableNote: "费率来自我们已发布的 2026 价格表，本计算器直接使用该费率。",
-      faqs: [
-        { q: "估价如何计算？", a: "我们使用已发布的费率：墙面面积 = 2×(长+宽)×高，天花面积 = 长×宽，墙面+天花为两者总和。人工和材料按已发布的区间拆分。详情请查看明细。" },
-        { q: "这是最终报价吗？", a: "不是。这仅是估算价格。最终报价将在现场检查或项目细节确认后提供。" },
-        { q: "估价包含人工和材料吗？", a: "是的，除非您选择自备材料，否则估价包含人工和材料。明细中会分别显示。" },
-        { q: "工程需要多长时间？", a: "工期根据总面积和复杂程度估算——小工程通常半天，房间 1–2 天，大面积 2–3 天。" },
-        { q: "你们覆盖我的地区吗？", a: "我们覆盖整个吉隆坡与雪兰莪，包括蕉赖、安邦、蒲种、梳邦、八打灵再也、莎阿南、巴生及周边地区。" },
-      ],
-      covers: [
-        "估算迁入/迁出清洁费用。",
-        "即时在线估价",
-        "人工与材料拆分",
-        "面积计算",
-        "工期估算",
-        "WhatsApp 预订",
-      ],
-      relatedServices: [
-        { label: "深度清洁服务", href: "/services/deep-cleaning" },
-        { label: "价格指南", href: "/pricing" }
-      ]
-    },
-
     /* ── 空调 ─────────────────────────────────────────────────────────── */
     "aircon-installation-cost": {
       name: "空调安装费用计算器",
@@ -4931,7 +4726,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
     breadcrumbLabel: "Free Tools",
     metaTitle: "Free Home Service Estimators KL & Selangor",
     metaDesc:
-      "Use 37 free home-service calculators for painting, leaks, ceilings, plumbing, electrical, roofing, flooring, renovation and cleaning across KL & Selangor.",
+      "Use 35 free home-service calculators for painting, leaks, ceilings, plumbing, electrical, roofing, flooring and renovation across KL & Selangor.",
     keywords: [
       "home service cost calculator Malaysia",
       "painting cost calculator KL",
@@ -4939,7 +4734,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
       "ceiling repair cost calculator",
       "free renovation estimate Malaysia"
     ],
-    heroEyebrow: "37 free instant estimators",
+    heroEyebrow: "35 free instant estimators",
     heroTitle: "Know Your Price Before You Book",
     heroIntro:
       "Every estimator is a single page — no next buttons, no multi-step form. Tap two or three answers and the cost, timeline and recommended service appear instantly, calculated from the same 2026 rates published on this website. No sign-up, no email, no waiting for a callback.",
@@ -4951,7 +4746,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
     directEyebrow: "Direct Answer · Jawapan Ringkas · 直接答案",
     directQuestion: "What can I estimate for free on this page?",
     directAnswer:
-      "KL Servis Rumah publishes 37 free interactive estimators for Kuala Lumpur and Selangor: painting cost and quantity, wall and ceiling area, ceiling replacement, pipe leak and pressure diagnostics, waterproofing and roof area, bathroom and balcony waterproofing, electrical and lighting installation, socket quantity, ceiling fan, handyman and furniture assembly, curtain, door and window replacement, glass, flooring and tile quantity, vinyl flooring, roof repair and replacement, full renovation and room/kitchen/bathroom renovation, deep cleaning and move-in/out cleaning, plus the original leak triage, ceiling repair, plumbing diagnostic and TV mount advisor. Each one returns an estimated cost, an estimated range, the time required, a recommended service and suggested add-ons — all calculated from the published 2026 rates on this website.",
+      "KL Servis Rumah publishes 35 free interactive estimators for Kuala Lumpur and Selangor: painting cost and quantity, wall and ceiling area, ceiling replacement, pipe leak and pressure diagnostics, waterproofing and roof area, bathroom and balcony waterproofing, electrical and lighting installation, socket quantity, ceiling fan, handyman and furniture assembly, curtain, door and window replacement, glass, flooring and tile quantity, vinyl flooring, roof repair and replacement, full renovation and room/kitchen/bathroom renovation, plus the original leak triage, ceiling repair, plumbing diagnostic and TV mount advisor. Each one returns an estimated cost, an estimated range, the time required, a recommended service and suggested add-ons — all calculated from the published 2026 rates on this website.",
     disclaimer: ESTIMATE_DISCLAIMER,
     whyEyebrow: "Why estimate first",
     whyTitle: "Built to save you a phone call",
@@ -4966,7 +4761,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
     hubFaqs: [
       {
         q: "Are these estimators really free?",
-        a: "Yes. All 37 estimators are free, need no sign-up and no email address. You only share your details if you decide to book on WhatsApp at the end."
+        a: "Yes. All 35 estimators are free, need no sign-up and no email address. You only share your details if you decide to book on WhatsApp at the end."
       },
       {
         q: "Where do the prices come from?",
@@ -4997,7 +4792,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
     minutesBadge: (minutes) => `${minutes} min`,
     graphCollectionName: "Free Home Service Estimators — KL & Selangor",
     graphCollectionDescription:
-      "A collection of 37 free calculators for home-service quantities, diagnosis and cost planning across Kuala Lumpur and Selangor.",
+      "A collection of 35 free calculators for home-service quantities, diagnosis and cost planning across Kuala Lumpur and Selangor.",
     graphItemListName: "Free home service estimators",
     homeLabel: "Home",
     navAriaLabel: "Breadcrumb",
@@ -5009,7 +4804,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
     breadcrumbLabel: "Alat Percuma",
     metaTitle: "Alat Anggaran Rumah Percuma KL & Selangor",
     metaDesc:
-      "Gunakan 37 kalkulator perkhidmatan rumah percuma untuk cat, bocor, siling, paip, elektrik, bumbung, lantai, renovasi dan pembersihan di KL & Selangor.",
+      "Gunakan 35 kalkulator perkhidmatan rumah percuma untuk cat, bocor, siling, paip, elektrik, bumbung, lantai dan renovasi di KL & Selangor.",
     keywords: [
       "kalkulator kos perkhidmatan rumah Malaysia",
       "kalkulator kos mengecat KL",
@@ -5017,7 +4812,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
       "kalkulator kos baik pulih siling",
       "anggaran ubah suai percuma Malaysia"
     ],
-    heroEyebrow: "37 alat anggaran percuma",
+    heroEyebrow: "35 alat anggaran percuma",
     heroTitle: "Ketahui Harga Anda Sebelum Menempah",
     heroIntro:
       "Setiap alat adalah satu halaman — tiada butang seterusnya, tiada borang berbilang langkah. Ketik dua atau tiga jawapan dan kos, tempoh masa serta perkhidmatan disyorkan muncul serta-merta, dikira daripada kadar 2026 yang sama diterbitkan di laman web ini. Tiada pendaftaran, tiada e-mel, tiada menunggu panggilan semula.",
@@ -5029,7 +4824,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
     directEyebrow: "Jawapan Ringkas · Direct Answer · 直接答案",
     directQuestion: "Apa yang boleh saya anggarkan secara percuma di halaman ini?",
     directAnswer:
-      "KL Servis Rumah menerbitkan 37 alat percuma untuk perancangan cat, kebocoran, siling, paip, kalis air, elektrik, bumbung, handyman, pintu dan tingkap, lantai, renovasi serta pembersihan di Kuala Lumpur dan Selangor. Ada alat yang mengira keluasan atau kuantiti, ada yang menyusun gejala, dan ada yang menganggarkan kos daripada kadar diterbitkan. Keputusan ialah panduan perancangan; sebut harga akhir memerlukan pengesahan skop dan keadaan tapak.",
+      "KL Servis Rumah menerbitkan 35 alat percuma untuk perancangan cat, kebocoran, siling, paip, kalis air, elektrik, bumbung, handyman, pintu dan tingkap, lantai dan renovasi di Kuala Lumpur dan Selangor. Ada alat yang mengira keluasan atau kuantiti, ada yang menyusun gejala, dan ada yang menganggarkan kos daripada kadar diterbitkan. Keputusan ialah panduan perancangan; sebut harga akhir memerlukan pengesahan skop dan keadaan tapak.",
     disclaimer: msDisclaimer,
     whyEyebrow: "Kenapa anggar dahulu",
     whyTitle: "Dibina untuk menjimatkan panggilan telefon anda",
@@ -5044,7 +4839,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
     hubFaqs: [
       {
         q: "Adakah alat anggaran ini benar-benar percuma?",
-        a: "Ya. Kesemua 37 alat anggaran adalah percuma, tidak perlu pendaftaran dan tiada alamat e-mel. Anda hanya berkongsi butiran jika memutuskan untuk menempah di WhatsApp pada akhirnya."
+        a: "Ya. Kesemua 35 alat anggaran adalah percuma, tidak perlu pendaftaran dan tiada alamat e-mel. Anda hanya berkongsi butiran jika memutuskan untuk menempah di WhatsApp pada akhirnya."
       },
       {
         q: "Dari manakah harga ini diperoleh?",
@@ -5075,7 +4870,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
     minutesBadge: (minutes) => `${minutes} min`,
     graphCollectionName: "Alat Anggaran Perkhidmatan Rumah Percuma — KL & Selangor",
     graphCollectionDescription:
-      "Koleksi 37 kalkulator percuma untuk kuantiti, diagnosis dan perancangan kos perkhidmatan rumah di Kuala Lumpur dan Selangor.",
+      "Koleksi 35 kalkulator percuma untuk kuantiti, diagnosis dan perancangan kos perkhidmatan rumah di Kuala Lumpur dan Selangor.",
     graphItemListName: "Alat anggaran perkhidmatan rumah percuma",
     homeLabel: "Utama",
     navAriaLabel: "Laluan navigasi",
@@ -5087,7 +4882,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
     breadcrumbLabel: "免费工具",
     metaTitle: "吉隆坡与雪兰莪免费估价工具",
     metaDesc:
-      "37 个免费家居服务计算工具，涵盖油漆、漏水、天花、水管、电气、屋顶、地板、装修与清洁，适用于吉隆坡和雪兰莪。",
+      "35 个免费家居服务计算工具，涵盖油漆、漏水、天花、水管、电气、屋顶、地板与装修，适用于吉隆坡和雪兰莪。",
     keywords: [
       "家庭服务费用计算器 马来西亚",
       "油漆费用计算器 吉隆坡",
@@ -5095,7 +4890,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
       "天花维修费用计算器",
       "免费装修估价 马来西亚"
     ],
-    heroEyebrow: "37 个免费即时估价工具",
+    heroEyebrow: "35 个免费即时估价工具",
     heroTitle: "预约前，先知道价格",
     heroIntro:
       "每个估价工具都是单页操作——没有下一步按钮，没有多步表单。点选两三个答案，费用、工期与推荐服务立即显示，全部按本网站公开的 2026 年价格计算。无需注册，无需邮箱，不用等回电。",
@@ -5107,7 +4902,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
     directEyebrow: "直接答案 · Direct Answer · Jawapan Ringkas",
     directQuestion: "这个页面可以免费估价什么？",
     directAnswer:
-      "KL Servis Rumah 为吉隆坡与雪兰莪提供 37 个免费工具，涵盖油漆、漏水、天花、水管、防水、电气、屋顶、杂工、门窗、地板、装修及清洁。有些工具计算面积或用量，有些整理故障症状，另一些按公开费率估算费用。计算结果只供规划；最终报价仍须确认工程范围及现场状况。",
+      "KL Servis Rumah 为吉隆坡与雪兰莪提供 35 个免费工具，涵盖油漆、漏水、天花、水管、防水、电气、屋顶、杂工、门窗、地板与装修。有些工具计算面积或用量，有些整理故障症状，另一些按公开费率估算费用。计算结果只供规划；最终报价仍须确认工程范围及现场状况。",
     disclaimer: zhDisclaimer,
     whyEyebrow: "为什么先估价",
     whyTitle: "为您省下一通电话",
@@ -5122,7 +4917,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
     hubFaqs: [
       {
         q: "这些估价工具真的免费吗？",
-        a: "是的。37 个工具全部免费，无需注册或电邮。只有您最后决定通过 WhatsApp 预约时，才需要主动提供联系资料。"
+        a: "是的。35 个工具全部免费，无需注册或电邮。只有您最后决定通过 WhatsApp 预约时，才需要主动提供联系资料。"
       },
       {
         q: "价格从哪里来？",
@@ -5152,7 +4947,7 @@ export const toolsIndexCopy: Record<SiteLocale, ToolsIndexCopy> = {
     minutesBadge: (minutes) => `${minutes} 分钟`,
     graphCollectionName: "免费家庭服务估价工具——吉隆坡与雪兰莪",
     graphCollectionDescription:
-      "37 个免费工具，用于吉隆坡与雪兰莪家居服务的用量计算、问题诊断及费用规划。",
+      "35 个免费工具，用于吉隆坡与雪兰莪家居服务的用量计算、问题诊断及费用规划。",
     graphItemListName: "免费家庭服务估价工具",
     homeLabel: "首页",
     navAriaLabel: "面包屑导航",

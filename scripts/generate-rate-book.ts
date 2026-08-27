@@ -119,8 +119,7 @@ const rates = {
     skimCeilingSqft: sub("skim-coat", "Ceiling Skim Coating").value,
     crackLinearFt: sub("skim-coat", "Crack & Joint Repair").value,
     dampRemedial: sub("waterproofing", "Wall Dampness & Efflorescence Repair").value,
-    callOut: servicePrice("handyman"),
-    cleaning: servicePrice("cleaning")
+    callOut: servicePrice("handyman")
   },
   ceiling: {
     flatSqft: sub("plaster-ceiling", "Flat Plaster Ceiling").value,

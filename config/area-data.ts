@@ -947,7 +947,7 @@ export const areaPages: AreaDetail[] = [
       },
       {
         q: "Can you refresh a rental unit in Bandar Utama?",
-        a: "Yes. We can bundle repainting, minor plumbing, door/lock adjustments, ceiling patching and deep cleaning.",
+        a: "Yes. We can bundle repainting, minor plumbing, door/lock adjustments and ceiling patching.",
       },
       {
         q: "Do you handle small handyman jobs?",
@@ -1271,7 +1271,7 @@ export const areaPages: AreaDetail[] = [
       },
       {
         q: "Can you refresh rental units in Seri Kembangan?",
-        a: "Yes. Repainting, plumbing fixes, lock replacement, furniture assembly and cleaning can be bundled for landlords.",
+        a: "Yes. Repainting, plumbing fixes, lock replacement and furniture assembly can be bundled for landlords.",
       },
       {
         q: "Do you provide transparent pricing?",

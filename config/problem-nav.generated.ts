@@ -719,63 +719,6 @@ export const problemNavList: ProblemNavItem[] = [
     }
   },
   {
-    "slug": "mold-in-bathroom-after-cleaning",
-    "serviceSlug": "cleaning",
-    "title": "Mold Returning Quickly After Professional Cleaning",
-    "symptom": "Black mold appears again in bathroom within 1–2 weeks after cleaning.",
-    "costRange": "RM120–RM450+ depending on treatment",
-    "i18n": {
-      "ms": {
-        "title": "Kulat Kembali Pesat Selepas Pembersihan Profesional",
-        "symptom": "Kulat hitam muncul semula di bilik air dalam 1–2 minggu selepas pembersihan.",
-        "costRange": "RM120–RM450+ bergantung kepada rawatan"
-      },
-      "zh": {
-        "title": "专业清洁后霉菌迅速再次出现",
-        "symptom": "清洁后 1–2 周内浴室黑霉再次出现。",
-        "costRange": "RM120–RM450+，视处理方式而定"
-      }
-    }
-  },
-  {
-    "slug": "stubborn-grout-stains-after-deep-clean",
-    "serviceSlug": "deep-cleaning",
-    "title": "Grout Still Stained After Deep Cleaning Service",
-    "symptom": "Bathroom or kitchen grout remains discolored even after professional deep clean.",
-    "costRange": "RM180–RM680+ depending on area and method",
-    "i18n": {
-      "ms": {
-        "title": "Grout Masih Berkesan Selepas Perkhidmatan Pembersihan Mendalam",
-        "symptom": "Grout bilik air atau dapur kekal berubah warna walaupun selepas pembersihan mendalam profesional.",
-        "costRange": "RM180–RM680+ bergantung kepada kawasan dan kaedah"
-      },
-      "zh": {
-        "title": "深度清洁后瓷砖填缝仍有污渍",
-        "symptom": "即使经过专业深度清洁，浴室或厨房的填缝仍然变色。",
-        "costRange": "RM180–RM680+，视面积和方法而定"
-      }
-    }
-  },
-  {
-    "slug": "construction-dust-returning",
-    "serviceSlug": "post-renovation-cleaning",
-    "title": "Fine Construction Dust Returning After Post-Reno Clean",
-    "symptom": "Fine white or grey dust keeps appearing on surfaces days after post-renovation cleaning.",
-    "costRange": "RM250–RM950+ depending on property size",
-    "i18n": {
-      "ms": {
-        "title": "Habuk Pembinaan Halus Kembali Selepas Pembersihan Selepas Renovasi",
-        "symptom": "Habuk putih atau kelabu halus terus muncul pada permukaan beberapa hari selepas pembersihan pasca renovasi.",
-        "costRange": "RM250–RM950+ bergantung kepada saiz hartanah"
-      },
-      "zh": {
-        "title": "装修后清洁后细粉尘再次出现",
-        "symptom": "装修后清洁数天后，细白色或灰色粉尘仍持续出现在表面。",
-        "costRange": "RM250–RM950+，视物业大小而定"
-      }
-    }
-  },
-  {
     "slug": "cctv-not-recording",
     "serviceSlug": "cctv",
     "title": "CCTV Camera Not Recording or Footage Missing",
@@ -1342,63 +1285,6 @@ export const problemNavList: ProblemNavItem[] = [
         "title": "淋浴隔断漏水到地板",
         "symptom": "Water pools outside the shower screen after every use — from either the corner joint, bottom seal, or hinge line.",
         "costRange": "RM 180–RM 850+，视隔断尺寸而定"
-      }
-    }
-  },
-  {
-    "slug": "stubborn-bathroom-limescale",
-    "serviceSlug": "cleaning",
-    "title": "Stubborn Bathroom Limescale and Water Stains",
-    "symptom": "White chalky deposits and hard-water stains build up on shower glass, taps and tiles that regular cleaning won't remove.",
-    "costRange": "RM 180–RM 550+ per bathroom",
-    "i18n": {
-      "ms": {
-        "title": "Karat Kapur dan Kesan Air Degil di Bilik Air",
-        "symptom": "White chalky deposits and hard-water stains build up on shower glass, taps and tiles that regular cleaning won't remove.",
-        "costRange": "RM 180–RM 550+ setiap bilik air"
-      },
-      "zh": {
-        "title": "浴室顽固水垢和水渍",
-        "symptom": "White chalky deposits and hard-water stains build up on shower glass, taps and tiles that regular cleaning won't remove.",
-        "costRange": "每间浴室 RM 180–RM 550+"
-      }
-    }
-  },
-  {
-    "slug": "move-out-condo-deep-clean",
-    "serviceSlug": "deep-cleaning",
-    "title": "Move-Out Condo Deep Cleaning",
-    "symptom": "You're moving out and need the condo cleaned to a standard the landlord/agent will accept for your deposit refund.",
-    "costRange": "RM 420–RM 1,800+ depending on unit size",
-    "i18n": {
-      "ms": {
-        "title": "Pembersihan Mendalam Kondominium Sebelum Berpindah",
-        "symptom": "You're moving out and need the condo cleaned to a standard the landlord/agent will accept for your deposit refund.",
-        "costRange": "RM 420–RM 1,800+ bergantung kepada saiz unit"
-      },
-      "zh": {
-        "title": "公寓退租深度清洁",
-        "symptom": "You're moving out and need the condo cleaned to a standard the landlord/agent will accept for your deposit refund.",
-        "costRange": "RM 420–RM 1,800+，视单位面积而定"
-      }
-    }
-  },
-  {
-    "slug": "cement-splatter-tile-clean",
-    "serviceSlug": "post-renovation-cleaning",
-    "title": "Cement Splatter and Dust After Renovation",
-    "symptom": "Renovation is complete but cement/paint splatter, silicone residue and construction dust are everywhere.",
-    "costRange": "RM 650–RM 3,200+ depending on unit size",
-    "i18n": {
-      "ms": {
-        "title": "Percikan Simen dan Debu Selepas Pengubahsuaian",
-        "symptom": "Renovation is complete but cement/paint splatter, silicone residue and construction dust are everywhere.",
-        "costRange": "RM 650–RM 3,200+ bergantung kepada saiz unit"
-      },
-      "zh": {
-        "title": "装修后的水泥溅渍和粉尘",
-        "symptom": "Renovation is complete but cement/paint splatter, silicone residue and construction dust are everywhere.",
-        "costRange": "RM 650–RM 3,200+，视单位面积而定"
       }
     }
   },

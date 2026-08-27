@@ -37,9 +37,6 @@ const trilingualSublines: Record<string, { ms: string; zh: string }> = {
   "window-repair":     { ms: "Pembaikan tingkap & kaca", zh: "窗户维修与玻璃更换" },
   "locksmith":         { ms: "Kunci & kunci pintar", zh: "锁与智能锁" },
   "glass-aluminium":          { ms: "Kaca & aluminium", zh: "玻璃与铝制品" },
-  "cleaning":                  { ms: "Cucian rumah & pejabat", zh: "家居与办公室清洁" },
-  "deep-cleaning":             { ms: "Cucian mendalam", zh: "深度清洁" },
-  "post-renovation-cleaning": { ms: "Cucian selepas renovasi", zh: "装修后清洁" },
   "cctv":                      { ms: "Pemasangan CCTV", zh: "监控摄像头安装" },
   "autogate":                  { ms: "Pintu pagar automatik", zh: "自动门安装" },
   "aircon":                    { ms: "Servis & pemasangan aircond", zh: "空调保养与安装" }
