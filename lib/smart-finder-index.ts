@@ -494,14 +494,14 @@ export const SMART_SERVICE_TAXONOMY: Record<string, ServiceTaxonomyEntry> = {
     priceType: "Quote On Request",
     calculatorSlugs: [],
     synonyms: {
-      en: ["awning", "awning installation", "awning contractor", "awning installer", "car porch awning", "polycarbonate awning", "metal awning", "metal deck awning", "ACP awning", "aluminium composite awning", "glass awning", "canvas awning", "fabric awning", "retractable awning", "awning roof", "awning replacement", "awning repair", "balcony awning", "patio awning", "window awning", "door awning", "entrance awning", "shopfront awning", "canopy", "awning leaking", "awning rust"],
-      ms: ["awning", "pemasangan awning", "kontraktor awning", "awning rumah", "awning car porch", "awning polikarbonat", "awning metal", "awning metal deck", "awning ACP", "awning kaca", "awning kanvas", "awning kain", "awning boleh tarik", "bumbung awning", "ganti awning", "baiki awning", "awning balkoni", "awning patio", "awning tingkap", "awangan kedai", "kanopi", "awning bocor", "awning karat"],
-      zh: ["雨棚", "雨棚安装", "雨棚承包商", "雨棚师傅", "车棚雨棚", "停车棚", "聚碳酸酯雨棚", "PC板雨棚", "金属雨棚", "金属瓦雨棚", "铝塑板雨棚", "ACP雨棚", "玻璃雨棚", "帆布雨棚", "布艺雨棚", "伸缩雨棚", "雨棚屋顶", "雨棚更换", "雨棚维修", "阳台雨棚", "露台雨棚", "窗户雨棚", "门头雨棚", "店面雨棚", "遮阳棚", "雨棚漏水", "雨棚生锈"]
+      en: ["awning", "awning installation", "awning contractor", "awning installer", "car porch awning", "polycarbonate awning", "metal awning", "metal deck awning", "ACP awning", "aluminium composite awning", "glass awning", "canvas awning", "fabric awning", "retractable awning", "awning roof", "awning replacement", "awning repair", "balcony awning", "patio awning", "window awning", "door awning", "entrance awning", "shopfront awning", "canopy", "roller blind", "outdoor roller blind", "zip blind", "motorised awning", "motorized awning", "awning leaking", "awning rust"],
+      ms: ["awning", "pemasangan awning", "kontraktor awning", "awning rumah", "awning car porch", "awning polikarbonat", "awning metal", "awning metal deck", "awning ACP", "awning kaca", "awning kanvas", "awning kain", "awning boleh tarik", "bumbung awning", "ganti awning", "baiki awning", "awning balkoni", "awning patio", "awning tingkap", "awangan kedai", "kanopi", "bidai luar", "roller blind luar", "zip blind", "awning bermotor", "awning bocor", "awning karat"],
+      zh: ["雨棚", "雨棚安装", "雨棚承包商", "雨棚师傅", "车棚雨棚", "停车棚", "聚碳酸酯雨棚", "PC板雨棚", "金属雨棚", "金属瓦雨棚", "铝塑板雨棚", "ACP雨棚", "玻璃雨棚", "帆布雨棚", "布艺雨棚", "伸缩雨棚", "雨棚屋顶", "雨棚更换", "雨棚维修", "阳台雨棚", "露台雨棚", "窗户雨棚", "门头雨棚", "店面雨棚", "遮阳棚", "户外卷帘", "拉链卷帘", "电动雨棚", "雨棚漏水", "雨棚生锈"]
     },
     materials: {
-      en: ["Polycarbonate Sheet Roofing (Clear/Tinted)", "Metal Deck / PU Insulated Roofing", "Aluminium Composite Panel (ACP)", "Tempered Safety Glass", "Canvas/Fabric Awning Systems", "Mild Steel & Aluminium Frames with Anti-Rust Finish"],
-      ms: ["Bumbung Kepingan Polikarbonat (Jernih/Tinted)", "Bumbung Metal Deck / PU Bertebat", "Panel Komposit Aluminium (ACP)", "Kaca Keselamatan Tempered", "Sistem Awning Kanvas/Fabrik", "Rangka Keluli Lembut & Aluminium dengan Kemasan Anti-Karat"],
-      zh: ["聚碳酸酯板屋面（透明/着色）", "金属瓦/PU隔热屋面", "铝塑复合板（ACP）", "钢化安全玻璃", "帆布/布艺雨棚系统", "低碳钢与铝材骨架配防锈饰面"]
+      en: ["Polycarbonate Sheet Roofing (Clear/Tinted)", "Metal Deck / PU Insulated Roofing", "Aluminium Composite Panel (ACP)", "Tempered Safety Glass", "Canvas/Fabric Awning Systems", "Manual & Motorised Retractable Systems", "Outdoor & Zip Roller Blinds", "Mild Steel & Aluminium Frames with Anti-Rust Finish"],
+      ms: ["Bumbung Kepingan Polikarbonat (Jernih/Tinted)", "Bumbung Metal Deck / PU Bertebat", "Panel Komposit Aluminium (ACP)", "Kaca Keselamatan Tempered", "Sistem Awning Kanvas/Fabrik", "Sistem Boleh-Tarik Manual & Bermotor", "Bidai Luar & Zip Roller Blind", "Rangka Keluli Lembut & Aluminium dengan Kemasan Anti-Karat"],
+      zh: ["聚碳酸酯板屋面（透明/着色）", "金属瓦/PU隔热屋面", "铝塑复合板（ACP）", "钢化安全玻璃", "帆布/布艺雨棚系统", "手动/电动伸缩系统", "户外与拉链卷帘", "低碳钢与铝材骨架配防锈饰面"]
     }
   },
 

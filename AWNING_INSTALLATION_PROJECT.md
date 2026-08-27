@@ -3,7 +3,7 @@
 **Project:** Dedicated Awning Installation service page for klservisrumah.my
 **Market:** Kuala Lumpur & Selangor (Klang Valley), Malaysia
 **Created:** 2026-08-27
-**Branch:** `arena/01a04273-klservisrumah-web` (current session — blog cluster posts 7–8, cluster complete) · `arena/01a04228-klservisrumah-web` (blog cluster posts 5–6) · `arena/01a040e8-klservisrumah-web` (pillar build) · `arena/01a04137-klservisrumah-web` (§9 testing closeout + blog cluster post 1, 2026-08-27) · `arena/01a041fd-klservisrumah-web` (blog cluster post 2 — decision guide, 2026-08-27)
+**Branch:** `arena/01a042ca-klservisrumah-web` (current session — owner action plan + owner round-1 confirmations implemented; admin area removed site-wide) · `arena/01a04273-klservisrumah-web` (blog cluster posts 7–8, cluster complete) · `arena/01a04228-klservisrumah-web` (blog cluster posts 5–6) · `arena/01a040e8-klservisrumah-web` (pillar build) · `arena/01a04137-klservisrumah-web` (§9 testing closeout + blog cluster post 1, 2026-08-27) · `arena/01a041fd-klservisrumah-web` (blog cluster post 2 — decision guide, 2026-08-27)
 
 ---
 
@@ -74,6 +74,12 @@ H1: Awning Installation in Kuala Lumpur & Selangor
 ## 4. Technical Tasks
 
 - [x] COMPLETED Inspect repository architecture (routing, i18n, templates, gates)
+- [x] COMPLETED **Owner round-1 implementation (2026-08-27, session
+      `arena/01a042ca-klservisrumah-web`)** — see §10 for the full list
+      (12-month warranty, Klang Valley coverage, free site visit, firm
+      motorised/retractable, 9th sub-service "Outdoor Roller Blinds",
+      permits content removal, published market-rate reference tables,
+      certifications unchanged). Admin area removed site-wide (owner B1).
 - [x] COMPLETED Add `"awning-installation"` to `config/services-data.ts` (EN + MS + ZH,
       8 quote-only sub-services, process, 15 FAQs, meta, AIO summary)
 - [x] COMPLETED Add `serviceSeo.awning-installation` (EN/MS/ZH title + description)
@@ -382,6 +388,17 @@ Blog/pillar posts (each links to `/services/awning-installation`):
   assertions), type-check, lint, production build (5,820 pages), 6-route
   smoke, sitemap inclusion (4,736 URLs), full-corpus audits (5,812 pages, 0
   fatal/0 warnings; 436,121 links, 0 broken) all pass (§8, §9).
+- Owner action plan + **owner round-1 confirmations implemented
+  (2026-08-27, session `arena/01a042ca-klservisrumah-web`)**: 12-month
+  workmanship warranty, Klang Valley coverage wording, free site visits/
+  quotations, firm manual+motorised retractable availability, new 9th
+  sub-service "Outdoor Roller Blinds" (EN/MS/ZH + taxonomy + topical node),
+  permits/council content removed from all awning surfaces, published
+  KL/Selangor market-rate reference table (EN/MS/ZH, labelled as market
+  ranges), certifications unchanged (none added), admin area removed
+  site-wide (owner B1). Specialties 221 → 222; build 5,823 pages; sitemap
+  4,739 URLs; all gates + audits green (§10). Only A8 photography remains
+  owner-side.
 
 ### PENDING
 - [x] COMPLETED Supporting blog cluster posts 7–8 (see §8) — full native trilingual
@@ -389,30 +406,80 @@ Blog/pillar posts (each links to `/services/awning-installation`):
   `validate:blog-production.ts` count bump (214 → 216), regenerated indexes,
   full gate re-run + production-build smoke + link audit. **The 8-post awning
   cluster is now complete; no awning content tasks remain in this tracker.**
-- [ ] PENDING Real project photography (business to supply — see business confirmation)
+- [x] COMPLETED Owner-side hand-off documentation (2026-08-27, session
+  `arena/01a042ca-klservisrumah-web`): authored **`OWNER_ACTION_PLAN.md`** —
+  a step-by-step, Roman-Urdu-annotated guide covering every remaining
+  owner-side item: the 9 business confirmations below + photography (A1–A10)
+  and the site-wide owner tasks consolidated from `CONTINUE_SESSION_PROMPT.md`
+  (B1 `ADMIN_PASSWORD`, B2 deploy, B3 GA4 `NEXT_PUBLIC_GA_ID`, B4 GSC/Bing
+  indexing, B5 IndexNow + GBP, B6 native-speaker QA, B7 H3 rollout decision),
+  plus a fill-in answer sheet (Part C) the owner can paste into the next AI
+  session. Docs only — no code/content changes; validated state of the last
+  merged commit is untouched.
+- [x] COMPLETED **Owner round-1 answers implemented (2026-08-27, same session —
+      see §10).** All content work the owner requested is done and verified;
+      the only awning item still open is real photography (A8, owner-side).
+- [ ] PENDING Real project photography (business to supply — OWNER_ACTION_PLAN.md
+      §A8 / Part C round-2 sheet; placeholder SVG cover stays until then)
 - [ ] PENDING (Site-wide, outside awning scope — discovered during §9 validation):
   MS/ZH blog article routes emit no BlogPosting/Article schema (all 216 topics;
   only EN does). Candidate follow-up for a dedicated session; do not bundle into
-  awning work.
+  awning work. NOT blocked on the owner.
 
-### NEEDS BUSINESS CONFIRMATION
-1. **Awning material scope** — page assumes mild-steel/polycarbonate/metal-deck/
-   ACP/glass/fabric awnings + awning replacement (consistent with welding line).
-   Confirm which are actually offered/installed; retractable/motorised systems
-   are presented as "available depending on scope/supplier" — confirm.
-2. **Pricing** — page is quote-only; confirm no published awning rates exist.
-   Business may later supply per-sqft or per-job starting prices.
-3. **Warranty** — page uses "workmanship warranty as stated in your quotation"
-   (welding line carries 12-month welding/fabrication warranty). Confirm the
-   exact awning warranty terms to state.
-4. **Motorised retractable awnings** — not verified as offered; page hedges.
-5. **Outdoor roller blinds** — not verified; omitted from services.
-6. **Permits/MBK/DBKL approvals** — page advises checking local authority / JMB /
-   MC rules; confirm whether the business assists with permit applications.
-7. **Site assessment policy** — page says photos/dimensions may suffice and a
-   site visit is arranged when needed; confirm actual workflow.
-8. **Photography** — supply real completed awning project photos for
-   hero/before-after (do not use stock as evidence of work).
-9. **Certifications** — welding claims certifiers (MIG/TIG/arc); confirm whether
-   any awning-specific CIDB/SIRIM/engineering sign-off can be claimed before
-   adding it.
+### NEEDS BUSINESS CONFIRMATION — resolved in round 1 (2026-08-27)
+
+> **Round-1 answers received and implemented** (details in §10 and
+> `OWNER_ACTION_PLAN.md` Part A). The list below is kept for the record.
+
+1. **Awning material scope** — ✅ RESOLVED: keep the full market-standard set
+   (polycarbonate, metal deck, ACP, tempered glass, canvas/fabric) — owner:
+   "Malaysia market ke hisaab se dekhen".
+2. **Pricing** — ✅ RESOLVED (market-aligned): published KL/Selangor
+   market-rate reference table added (RM ranges, labelled as market ranges —
+   not our quote); our own pricing stays project-quoted.
+3. **Warranty** — ✅ RESOLVED: **12-month workmanship warranty** on
+   fabrication & installation (aligned with the verified welding line and
+   typical KL contractor practice); material/fabric warranty follows
+   manufacturer/supplier terms.
+4. **Motorised retractable awnings** — ✅ RESOLVED: offered; conditional
+   "depending on scope and supplier" wording replaced with firm "manual and
+   motorised available" across all surfaces and locales.
+5. **Outdoor roller blinds** — ✅ RESOLVED: now offered — added as the 9th
+   sub-service (EN/MS/ZH) with guide entry, taxonomy and topical-map node.
+6. **Permits/MBK/DBKL approvals** — ✅ RESOLVED (owner: "permits ni show
+   krwany"): all permit/council/local-authority content removed from awning
+   surfaces (hub FAQ replaced with a roller-blinds FAQ; blogs rewritten to
+   neutral "check your management (JMB/MC) rules").
+7. **Site assessment policy** — ✅ RESOLVED: site visits and quotations are
+   **free** (photos/dimensions may still suffice for remote quotes).
+8. **Photography** — ⏳ STILL PENDING: owner will supply real photos later;
+   placeholder SVG remains (round-2 sheet in `OWNER_ACTION_PLAN.md` Part C).
+9. **Certifications** — ✅ RESOLVED (owner: "show ni krwany"): no
+   certification claims added; only the previously verified welding
+   capabilities remain as-is.
+
+### 10. Owner Round-1 Implementation Log (2026-08-27)
+
+Scope: `config/services-data.ts` (EN/MS/ZH hub: tagline, description,
+highlights, sub-services, process, 15 FAQs, priceTableNote, meta, AIO summary,
+warranty line, guide types/applications/quote factors/CTA),
+`config/specialty-locale-content.ts` (new outdoor-roller-blinds MS/ZH block;
+canvas/balcony hedge + strata wording updates; welding specialty permit FAQ
+reframed), `config/topical-authority-map.ts` (+1 specialty node → 222
+relationships), `lib/smart-finder-index.ts` (roller-blind/motorised synonyms
++ materials), `config/service-seo.ts` (free-quote wording),
+`config/blog-data-awning.ts` + `config/blog-i18n.ts` (all 8 posts × 3 locales:
+motorised firm-up, permits/council cleanup, post-4 market-rate reference
+table). Site-wide (owner B1): admin area removed — routes, API, components,
+auth libs, middleware gate, robots entry, `.env.example` var.
+
+Accuracy basis: owner round-1 answers + published KL/Selangor competitor
+pricing pages (market-reference framing with explicit "not our quotation"
+labelling; no fabricated own-price). Verification: prebuild gates
+(320,331 assertions, 0 failures; specialty counts 222/444; topical map 29/29),
+type-check, lint 0 warnings, production build 5,823 pages, production smoke
+(16 routes: admin → 404; new roller-blind routes ×3 → 200 with 4-entry
+hreflang; hubs show warranty/Klang Valley/free-visit strings; FAQPage 15 /
+HowTo 6 intact; no permits text), sitemap 4,739 URLs (15 roller-blind URLs),
+audit:html 5,815 pages 0 fatal/0 warnings, audit:seo-head PASS 0 warnings,
+audit:meta PASS, internal-link audit 436,341 links 0 broken.

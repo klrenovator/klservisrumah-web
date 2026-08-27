@@ -412,7 +412,7 @@ All prices are the published starting prices shown on the live service pages. Fi
 ### Awning Installation Services
 - Page: https://www.klservisrumah.my/services/awning-installation
 - Starting price: Project-quoted (request a project-specific quotation)
-- Warranty: Workmanship warranty as stated in your quotation
+- Warranty: 12-month workmanship warranty on fabrication & installation, as stated in your quotation
 - Car Porch Awning Installation — On Quote
 - Polycarbonate Awning — On Quote
 - Metal Deck Awning — On Quote
@@ -421,6 +421,7 @@ All prices are the published starting prices shown on the live service pages. Fi
 - Canvas & Fabric Awning — On Quote
 - Balcony, Patio & Window Awning — On Quote
 - Awning Replacement & Repair — On Quote
+- Outdoor Roller Blinds — On Quote
 - Request a quote: https://www.klservisrumah.my/contact
 
 ## Coverage Areas (37 dedicated area pages)
@@ -850,6 +851,6 @@ KL Servis Rumah publishes fair, upfront pricing benchmarked against the Klang Va
 - Sitemap: https://www.klservisrumah.my/sitemap.xml
 
 ## Scale
-- 29 services · 221 sub-services
+- 29 services · 222 sub-services
 - 37 area pages · 86 problem pages · 216 articles
-- 4,736 indexable pages listed in the sitemap
+- 4,739 indexable pages listed in the sitemap

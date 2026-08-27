@@ -1959,7 +1959,7 @@ export const contentRelatedServiceBySlug: Record<string, ContentRelatedServiceLi
   "awning-installation": {
     "slug": "awning-installation",
     "title": "Awning Installation Services",
-    "tagline": "Custom awnings and awning roofing for car porches, entrances, windows, balconies and yards across KL & Selangor — polycarbonate, metal deck, aluminium composite (ACP), glass and fabric systems, fabricated and installed to suit your site. Project-quoted.",
+    "tagline": "Custom awnings and awning roofing for car porches, entrances, windows, balconies and yards across the Klang Valley (KL & Selangor) — polycarbonate, metal deck, aluminium composite (ACP), glass and fabric systems, plus retractable awnings and outdoor roller blinds, fabricated and installed to suit your site. Project-quoted with a 12-month workmanship warranty.",
     "subServices": [
       {
         "name": "Car Porch Awning Installation",

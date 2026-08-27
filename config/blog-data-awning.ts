@@ -118,7 +118,7 @@ Awning work in Malaysia is priced per project, not at a fixed per-square-foot ra
 - Removal and disposal of an old awning, where required
 - Colour, custom design and any strata or local-authority specifications
 
-The most useful information to send for a quotation is your location, photos of the site and fixing points, approximate width and projection, your preferred material or look, whether an old awning needs removal, and any management or council rules that apply.
+The most useful information to send for a quotation is your location, photos of the site and fixing points, approximate width and projection, your preferred material or look, whether an old awning needs removal, and any management rules that apply.
 
 ## Frequently asked questions
 
@@ -195,7 +195,7 @@ The frame attaches to your wall, beam or slab — or stands on posts when the st
 
 ## Landed vs strata: check the rules first
 
-If you live in a condominium, apartment or gated community, the JMB/MC may have guidelines on awning projection, height, colour or design, and local council requirements can also apply. Check with your management office before committing to a design; we can provide the scope, dimensions and specifications to support an application, but the approvals that apply to your property should be confirmed with your management or the local authority.
+If you live in a condominium, apartment or gated community, the JMB/MC may have guidelines on awning projection, height, colour or design. Check with your management office before committing to a design; we can share the scope, dimensions and specifications for that discussion.
 
 ## What to send for a car porch awning quote
 
@@ -204,7 +204,7 @@ If you live in a condominium, apartment or gated community, the JMB/MC may have 
 - The tallest vehicle you regularly park (or its height)
 - The material or look you prefer — tinted polycarbonate, metal deck or ACP
 - Whether there is an old awning to remove
-- Any management or council rules that apply
+- Any management rules that apply
 
 With photos and dimensions, many quotations can be prepared remotely; a site assessment is arranged when the span, structure or drainage needs checking.
 
@@ -251,9 +251,24 @@ Awning prices in Malaysia are quoted per project because eight variables change 
 5. **Existing structure and reinforcement**
 6. **Drainage** — gutters, downpipes, flashings and sealants
 7. **Removal and disposal of an old awning**
-8. **Custom design and strata or local-authority specifications**
+8. **Custom design and any management specifications**
 
 A generic published rate cannot account for these — which is why we quote per project instead.
+
+## Published market rate ranges (for budgeting)
+
+Contractors and pricing guides in KL/Selangor commonly publish these indicative installed ranges:
+
+| System | Published market range |
+| --- | --- |
+| Metal deck / zinc | RM 15–45 per sq ft |
+| Polycarbonate | RM 25–80 per sq ft |
+| ACP | RM 28–120 per sq ft |
+| Canvas / fabric | RM 20–100 per sq ft |
+| Tempered glass | RM 60–250 per sq ft |
+| Motorised retractable | RM 150–400+ per sq ft |
+
+These are market reference ranges published by KL/Selangor awning contractors and pricing guides (2024–2026) — not our quotation. Two same-sized awnings can still differ widely by frame quality, sheet profile, access and drainage, which is why every KL Servis Rumah quotation remains project-specific and itemised.
 
 ## The eight cost factors explained
 
@@ -303,7 +318,7 @@ Send these on WhatsApp:
 - Photos of the site and the fixing points (wall, beam, slab)
 - The material or look you prefer, if any
 - Whether an old awning needs removal
-- Any strata, management or council rules that apply
+- Any management rules that apply
 
 For straightforward projects, photos and dimensions are often enough to quote. Where the span is large, fixing points are unclear, access is difficult or drainage needs planning, a site assessment is arranged before the design is finalised — so the quote matches what is actually built.
 
@@ -387,7 +402,7 @@ Side passages and walkways just need to keep a path dry. Polycarbonate and metal
 
 ### Shopfront and light commercial — signage and flexibility
 
-Shopfront awnings often double as signage and brand presence, so fabric and retractable systems are popular for their looks and their ability to retract at night; glass and ACP give a permanent, premium frontage. We fabricate to the shopfront measurements and any management or council specifications that apply.
+Shopfront awnings often double as signage and brand presence, so fabric and retractable systems are popular for their looks and their ability to retract at night; glass and ACP give a permanent, premium frontage. We fabricate to the shopfront measurements and any management specifications that apply.
 
 ## Then decide by what matters most
 
@@ -399,13 +414,13 @@ Once you know the application, rank these priorities — they usually pick the t
 - **Want the neatest, most premium look** (entrance, house front) → glass or ACP.
 - **Want the lowest upkeep** → ACP panels do not rust; steel parts on any awning still benefit from the anti-rust primer and powder-coat or weather-resistant finish our frames are fabricated with — see [welding & metal fabrication](/services/welding).
 - **Want a utility cover on a budget** (yard, walkway) → metal deck or polycarbonate.
-- **Want shade you can open and close** (balcony, patio, shopfront) → a retractable fabric system, discussed depending on scope and supplier.
+- **Want shade you can open and close** (balcony, patio, shopfront) → a retractable fabric system, manual or motorised.
 
 For the material-level trade-offs behind each of these, the [material comparison guide](/blog/polycarbonate-vs-metal-vs-acp-awning-malaysia) is the companion read.
 
 ## Fixed or retractable?
 
-Most homes use a **fixed** awning — it is permanent, lower-maintenance and ready for any sudden downpour. **Retractable** fabric awnings suit balconies, patios and shopfronts where you want the option of full sun or full shade; they use fabric and operating hardware rather than solid roofing, so they are not left extended in strong wind and the fabric is a wearing part that eventually needs attention. Motorised operation can be discussed depending on scope and supplier availability — we confirm what suits your site rather than promising it upfront.
+Most homes use a **fixed** awning — it is permanent, lower-maintenance and ready for any sudden downpour. **Retractable** fabric awnings suit balconies, patios and shopfronts where you want the option of full sun or full shade; they use fabric and operating hardware rather than solid roofing, so they are not left extended in strong wind and the fabric is a wearing part that eventually needs attention. Manual and motorised operation are both available — we confirm the model and controls that suit your site in the quotation.
 
 ## Built for Malaysian weather
 
@@ -419,11 +434,11 @@ Get these right and a polycarbonate, metal deck or ACP awning will give years of
 
 ## Landed or strata? Check before you commit
 
-For **landed homes**, you generally have a free hand on design and colour, subject to the local authority rules that apply. For **strata properties** — condominiums, apartments and gated communities — the JMB/MC may restrict projection, height, colour and even the awning type, and council requirements can also apply. Check with your management office before finalising; we can supply the scope, dimensions and specifications to support an application, but the approvals for your property should be confirmed with your management or the local authority.
+For **landed homes**, you generally have a free hand on design and colour. For **strata properties** — condominiums, apartments and gated communities — the JMB/MC may restrict projection, height, colour and even the awning type. Check with your management office before finalising; we can share the scope, dimensions and specifications for that discussion.
 
 ## What to send us
 
-To recommend the right type and prepare a quote, send on WhatsApp: your location/area, where the awning will go, rough width and projection, photos of the site and fixing points, the look or material you prefer, whether an old awning needs removal, and any strata or council rules. Photos and dimensions are often enough to quote; we arrange a site assessment when the span, structure or drainage needs checking. Every job is priced per project — the eight cost drivers are explained in our [awning pricing guide](/blog/how-awning-pricing-works-malaysia). We publish starting prices for repeatable services on our [pricing page](/pricing); awning work is always itemised and project-specific.
+To recommend the right type and prepare a quote, send on WhatsApp: your location/area, where the awning will go, rough width and projection, photos of the site and fixing points, the look or material you prefer, whether an old awning needs removal, and any management rules. Photos and dimensions are often enough to quote; we arrange a site assessment when the span, structure or drainage needs checking. Every job is priced per project — the eight cost drivers are explained in our [awning pricing guide](/blog/how-awning-pricing-works-malaysia). We publish starting prices for repeatable services on our [pricing page](/pricing); awning work is always itemised and project-specific.
 
 ## Frequently asked questions
 
@@ -437,7 +452,7 @@ Longevity depends more on frame gauge, anti-rust finishing, correct slope and dr
 
 ### Can you install an awning on a condominium balcony?
 
-Often yes, subject to your building's rules. Most JMB/MCs have guidelines on balcony awnings — projection, colour and sometimes the type allowed — and council requirements may also apply. Check with your management office first; we can provide the scope, dimensions and specifications to support your application.
+Often yes, subject to your building's rules. Most JMB/MCs have guidelines on balcony awnings — projection, colour and sometimes the type allowed. Check with your management office first; we can share the scope, dimensions and specifications with your management office.
 
 ## Get an awning recommendation for your home
 
@@ -596,7 +611,7 @@ The right choice is not simply the one that looks better. Consider how much rain
 - Choose **fixed** when you need a permanent roof-like cover that is ready whenever it rains — especially for car porches, entrances, utility areas, drying yards and walkways.
 - Consider **retractable** when you want shade on demand for a balcony, patio, terrace or shopfront, and can follow the system's operating and weather-care instructions.
 - A retractable fabric system is not automatically a substitute for a solid polycarbonate, metal deck, ACP or glass roof. The material, projection, fixing and drainage need to suit the site.
-- Manual or motorised operation can be discussed **depending on scope and supplier availability**; it should not be promised before the actual system is confirmed.
+- Manual and motorised operation are both available; we confirm the exact model, controls and quoted scope before work starts.
 
 ## What is a fixed awning?
 
@@ -622,7 +637,7 @@ The [canvas and fabric awning](/services/awning-installation/canvas-and-fabric-a
 | Wind care | Check frame, fixings, sheets and drainage after exposure | Retract as instructed in strong wind; do not assume a wind rating |
 | Light and openness | Permanently changes shade and daylight under the cover | Can open to admit sun and keep the area more open |
 | Maintenance | Covering, frame, sealants, gutters and downpipes | Fabric, arms, brackets, joints and operating hardware, plus any drainage provided |
-| Operation | No daily opening or closing | Manual or motorised operation may be discussed depending on scope and supplier |
+| Operation | No daily opening or closing | Manual or motorised operation available; model confirmed at quote |
 
 This is general selection guidance, not a specification for a particular product. The installed system, site exposure, fixing points and supplier instructions take priority.
 
@@ -642,7 +657,7 @@ Outdoor living areas often benefit from shade that can be adjusted. A retractabl
 
 ### Shopfront: appearance, signage and operating routine
 
-A shopfront may need cover during business hours and a more open frontage after closing. Fabric or retractable systems can be considered for this flexibility, while fixed ACP, glass or metal systems create a permanent frontage. The final choice depends on the shopfront structure, signage, access, management or council requirements and the supplier's system.
+A shopfront may need cover during business hours and a more open frontage after closing. Fabric or retractable systems can be considered for this flexibility, while fixed ACP, glass or metal systems create a permanent frontage. The final choice depends on the shopfront structure, signage, access, management requirements and the chosen system.
 
 ## Rain and wind: the important difference
 
@@ -670,7 +685,7 @@ Fabric is a wearing component rather than a permanent sheet. If it remains damp,
 
 A retractable awning is not automatically exempt from approvals. Condominiums, apartments, gated communities and commercial buildings may regulate projection, colour, visibility, fixing points, operating hardware or the hours when a system may be extended. A fixed awning may be regulated in the same way.
 
-Check with the JMB, MC, management office or relevant local authority before committing to a design. We can provide the proposed scope, dimensions and specifications to support a discussion, but the approvals that apply to your property must be confirmed with the responsible authority or management.
+Check with the JMB, MC or management office before committing to a design. We can share the proposed scope, dimensions and specifications to support that discussion.
 
 ## How pricing is quoted
 
@@ -695,7 +710,7 @@ Neither is universally better. Fixed awnings suit permanent cover and solid-roof
 
 ### Can a retractable awning be motorised?
 
-Motorised operation can be discussed depending on scope and supplier availability. It is not an automatic feature of every retractable awning, so confirm the actual model, controls, power requirements and quoted scope before assuming it is included.
+Manual and motorised options are available. Motorised operation is not an automatic feature of every retractable awning, so confirm the actual model, controls, power requirements and quoted scope before assuming it is included.
 
 ### Is a fixed awning best for a car porch?
 
@@ -711,7 +726,7 @@ They have different maintenance points rather than a universal answer. In additi
 
 ### What should I send for a fixed or retractable awning quote?
 
-Send your location, photos of the opening and fixing points, approximate width and projection, the times you want sun or shade, whether permanent rain cover is essential, your preferred material or fabric look, and any JMB, MC, management or council rules. The quotation can then compare the appropriate scope without assuming a motorised system or a particular supplier product.
+Send your location, photos of the opening and fixing points, approximate width and projection, the times you want sun or shade, whether permanent rain cover is essential, your preferred material or fabric look, and any JMB, MC or management rules. The quotation can then compare the appropriate scope without assuming a motorised system or a particular supplier product.
 
 ## Get advice on fixed or retractable awnings
 
@@ -731,7 +746,7 @@ A balcony, patio or terrace is the part of a Malaysian home where you want fresh
 
 ## Quick answer: what to decide first
 
-- **Check the rules before the catalogue.** For a condominium, apartment or gated community, the JMB, MC or management office may regulate projection, appearance and fixing points. For landed homes, council guidelines can still apply to structures that face the road or a boundary.
+- **Check the rules before the catalogue.** For a condominium, apartment or gated community, the JMB, MC or management office may regulate projection, appearance and fixing points.
 - **Decide the main goal** — rain cover, glare and heat control, privacy or appearance — because it drives the material choice.
 - **Match material to light preference.** Polycarbonate keeps the space bright; ACP and metal deck give full opaque shade; tempered glass is bright and premium; canvas or fabric gives a softer look.
 - **Plan the water path.** Slope, gutter and downpipe must discharge into your own drainage — never onto the unit below or a common walkway.
@@ -745,7 +760,7 @@ Balconies on managed properties are usually compact, with a slab edge, wall or r
 
 ### Landed patio, terrace or courtyard
 
-Landed homes generally have more freedom in projection and style, but guidelines from the local council (for example DBKL, MBPJ or MBSA) can still apply to structures that face the road or sit close to a neighbour's boundary. Patios and terraces usually allow a larger covered area, so span, frame and drainage design matter more.
+Landed homes generally have more freedom in projection and style. Patios and terraces usually allow a larger covered area, so span, frame and drainage design matter more.
 
 ### Windows and doors
 
@@ -765,9 +780,9 @@ This is the step most often skipped — and the one that decides whether an inst
 - **Drainage** — where rainwater may discharge; dripping onto a lower unit's balcony or a common walkway is a frequent complaint.
 - **Works conditions** — contractor documentation, insurance, working hours and debris handling.
 
-Before committing to a design, ask your JMB, MC or management office in writing what applies to your unit. We can prepare the proposed scope, dimensions and material specifications to support that discussion, but the approval requirements for your property must be confirmed with your management or the relevant local authority — we do not decide or guarantee approvals on the building's behalf.
+Before committing to a design, ask your JMB, MC or management office in writing what applies to your unit. We can prepare the proposed scope, dimensions and material specifications to support that discussion — the rules are set by your management.
 
-Landed homeowners should likewise check council requirements for front-facing structures before fabrication starts. A design confirmed with the relevant parties first is far cheaper than a removal order later.
+A design confirmed with all relevant parties first is far cheaper than a removal order later.
 
 ## Material options for a balcony or patio
 
@@ -797,7 +812,7 @@ On wind: no responsible contractor should claim a generic awning is windproof. P
 
 ## Fixed or retractable-style for your balcony?
 
-A fixed polycarbonate, glass or ACP canopy is always ready when rain arrives and suits owners who want set-and-forget cover. A retractable-style fabric system suits those who want to choose between shade and open sky, at the cost of an operating routine and fabric care. Motorised operation can be discussed depending on scope and supplier availability — it should not be assumed to be included. Our [retractable vs fixed comparison](/blog/retractable-vs-fixed-awning-malaysia) and the [canvas and fabric awning](/services/awning-installation/canvas-and-fabric-awning) scope cover this choice in detail.
+A fixed polycarbonate, glass or ACP canopy is always ready when rain arrives and suits owners who want set-and-forget cover. A retractable-style fabric system suits those who want to choose between shade and open sky, at the cost of an operating routine and fabric care. Manual and motorised options are available — the exact system is confirmed in the quotation rather than assumed. Our [retractable vs fixed comparison](/blog/retractable-vs-fixed-awning-malaysia) and the [canvas and fabric awning](/services/awning-installation/canvas-and-fabric-awning) scope cover this choice in detail.
 
 ## What to send for a balcony or patio awning quote
 
@@ -808,7 +823,7 @@ The more complete your first message, the more accurate the quotation:
 - Approximate width and how far you want the cover to project.
 - The main goal: rain cover, glare control, privacy or appearance.
 - Any preferred material or look — or ask for options with trade-offs explained.
-- The management or council rules you have been given, if any.
+- The management rules you have been given, if any.
 - Whether an old cover or existing structure must be removed first.
 
 With clear photos and dimensions, many balcony and patio quotations can be prepared remotely; a site assessment is arranged when the fixing points, access or drainage need checking in person. Our [home awning selection guide](/blog/how-to-choose-right-awning-malaysia) can help you frame the decision before you send anything.
@@ -918,7 +933,7 @@ On timing, a straightforward replacement can often be completed within a day onc
 - What the current roof is made of, and any preference for the replacement material.
 - The leak or damage history — when it started, what has been tried.
 - Whether removal and disposal must be included (usually yes).
-- Any management or council rules that apply.
+- Any management rules that apply.
 
 Our [awning pricing guide](/blog/how-awning-pricing-works-malaysia) explains how these inputs translate into an itemised, project-specific quotation, and why we do not quote a generic rate sight unseen.
 

@@ -8273,7 +8273,7 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       ],
       faqs: [
         { q: "Polycarbonate atau metal deck yang lebih baik?", a: "Polycarbonate membenarkan cahaya semula jadi masuk, sesuai untuk laluan sisi dan ruang jemuran. Metal deck mengurangkan haba dan bunyi hujan dengan lebih baik, sesuai untuk car porch dan ruang duduk luar. Pilihan bergantung pada keutamaan cahaya berbanding kesejukan." },
-        { q: "Perlukah kelulusan untuk memasang awning?", a: "Sesetengah pihak berkuasa tempatan dan pengurusan taman perumahan mempunyai garis panduan mengenai struktur tambahan, termasuk jarak dari sempadan. Kami menasihatkan pelanggan menyemak keperluan setempat, dan kami membina mengikut spesifikasi yang diluluskan." },
+        { q: "Adakah awning perlu mematuhi peraturan tertentu?", a: "Untuk hartanah strata seperti kondominium dan komuniti berpagar, garis panduan JMB/MC atau pengurusan mengenai unjuran dan rupa perlu dipatuhi. Semak dengan pejabat pengurusan anda; kami membina mengikut spesifikasi yang dipersetujui." },
         { q: "Adakah awning boleh dipasang pada dinding sedia ada?", a: "Boleh, jika dinding cukup kukuh untuk memikul beban. Kami memeriksa jenis dinding dan struktur di belakangnya, dan menambah tiang sokongan apabila dinding tidak sesuai memikul keseluruhan beban rangka." },
         { q: "Berapakah kos awning atau car porch?", a: "Kos disebut harga selepas lawatan kerana ia bergantung pada keluasan, bentang, saiz profil, jenis penutup, keperluan tiang dan tapak konkrit, serta akses ke lokasi pemasangan." },
       ],
@@ -12543,7 +12543,7 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       name: "Awning Kanvas & Fabrik",
       tagline: "Awning kanvas dan fabrik tetap atau boleh-tarik untuk balkoni, patio, teres dan kedai — teduhan yang cantik dengan rupa yang lembut, di KL & Selangor.",
       description:
-        "Awning kanvas dan fabrik memberikan teduhan yang menarik untuk balkoni, patio, teres, halaman dan muka kedai. Sistem fabrik tetap memberi rupa kanopi yang lembut, manakala sistem boleh-tarik (retractable) boleh dibuka apabila mahu teduh dan ditarik balik untuk matahari atau pemandangan. Sistem ini tertumpu pada teduhan, bukan bumbung hujan kekal — fabrik patut dilindung atau ditarik balik ketika ribut, dan fabrik perlu dicuci serta akhirnya diganti sepanjang hayatnya. Ketersediaan sistem manual atau bermotor bergantung pada pembekal; kami sahkan pilihan untuk tapak anda. Atas sebut harga projek.",
+        "Awning kanvas dan fabrik memberikan teduhan yang menarik untuk balkoni, patio, teres, halaman dan muka kedai. Sistem fabrik tetap memberi rupa kanopi yang lembut, manakala sistem boleh-tarik (retractable) boleh dibuka apabila mahu teduh dan ditarik balik untuk matahari atau pemandangan. Sistem ini tertumpu pada teduhan, bukan bumbung hujan kekal — fabrik patut dilindung atau ditarik balik ketika ribut, dan fabrik perlu dicuci serta akhirnya diganti sepanjang hayatnya. Pilihan manual dan bermotor tersedia untuk sistem boleh-tarik; kami sahkan pilihan yang sesuai untuk tapak anda. Atas sebut harga projek.",
       highlights: [
         "Teduhan yang cantik untuk balkoni, patio dan muka kedai",
         "Sistem tetap atau boleh-tarik (retractable) mengikut keperluan",
@@ -12561,7 +12561,7 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       faqs: [
         { q: "Bolehkah awning fabrik dibiarkan semasa hujan lebat?", a: "Awning fabrik direka untuk teduhan dan hujan ringan, tetapi bukan bumbung kekal. Semasa ribut atau angin kencang, sistem boleh-tarik patut ditarik balik untuk elak kerosakan." },
         { q: "Berapa lama fabrik tahan?", a: "Jangka hayat fabrik bergantung pada pendedahan matahari dan penjagaan; fabrik yang pudar atau koyak boleh diganti tanpa menggantikan keseluruhan rangka." },
-        { q: "Adakah anda membekalkan sistem bermotor?", a: "Sistem retractable manual dan, tertakluk pada ketersediaan pembekal, bermotor boleh dibincangkan. Sahkan dengan kami pilihan yang sesuai untuk bukaan anda." },
+        { q: "Adakah anda membekalkan sistem bermotor?", a: "Ya — sistem retractable manual dan bermotor tersedia. Motor sesuai untuk bidai besar atau kedudukan tinggi; kami sahkan model, kawalan dan pendawaian yang sesuai untuk bukaan anda dalam sebut harga." },
         { q: "Adakah sesuai untuk car porch?", a: "Tidak sebagai perlindungan tetap — untuk car porch yang mahu perlindungan hujan kekal, sistem bumbung tetap seperti polikarbonat, metal deck atau ACP lebih sesuai." },
       ],
       metaTitle: "Awning Kanvas & Fabrik KL & Selangor | Balkoni & Patio",
@@ -12571,7 +12571,7 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       name: "帆布与布艺雨棚",
       tagline: "用于吉隆坡与雪兰莪阳台、露台、天台和店面的固定或伸缩式帆布布艺雨棚——遮阳美观、线条柔和。",
       description:
-        "帆布布艺雨棚为阳台、露台、天台、庭院和店面提供美观遮阳。固定布艺系统带来柔和的雨篷外观，伸缩式系统则可在需要遮阳时打开、要阳光或景观时收回。这类系统以遮阳为主，不是永久防雨屋顶——风暴时应收起或收回布艺，布料也需要清洗并在使用寿命内更换。手动或电动系统的供应取决于供应商；我们会为您的现场确认可选方案。价格按项目报价。",
+        "帆布布艺雨棚为阳台、露台、天台、庭院和店面提供美观遮阳。固定布艺系统带来柔和的雨篷外观，伸缩式系统则可在需要遮阳时打开、要阳光或景观时收回。这类系统以遮阳为主，不是永久防雨屋顶——风暴时应收起或收回布艺，布料也需要清洗并在使用寿命内更换。提供手动与电动伸缩系统；我们会为您的现场确认合适方案。价格按项目报价。",
       highlights: [
         "为阳台、露台和店面提供美观遮阳",
         "按需选择固定或伸缩式系统",
@@ -12589,7 +12589,7 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       faqs: [
         { q: "大雨时布艺雨棚可以一直开着吗？", a: "布艺雨棚主要用于遮阳和小雨，不是永久屋顶。风暴或强风时，伸缩系统应收回以防损坏。" },
         { q: "布能用多久？", a: "布料寿命取决于日晒和保养；褪色或破损的布料可以更换，无需连骨架一起换。" },
-        { q: "有电动系统吗？", a: "手动伸缩系统以及（取决于供应商供应的）电动系统都可以讨论。请与我们确认适合您洞口的方案。" },
+        { q: "有电动系统吗？", a: "有——手动与电动伸缩系统都提供。电动适合大型卷帘或较高位置；我们会在报价中确认适合您洞口的型号、控制方式与布线。" },
         { q: "适合车棚吗？", a: "作为固定防护并不合适——想要永久挡雨的车棚，聚碳酸酯、金属瓦或 ACP 等固定屋面系统更适合。" },
       ],
       metaTitle: "吉隆坡与雪兰莪帆布布艺雨棚 | 阳台与露台",
@@ -12602,12 +12602,12 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       name: "Awning Balkoni, Patio & Tingkap",
       tagline: "Awning bersaiz khas untuk balkoni, patio, teres, tingkap dan pintu di KL & Selangor — teduhan dan perlindungan hujan tanpa menutup ruang anda.",
       description:
-        "Awning untuk balkoni, patio, teres, tingkap dan pintu direka mengikut bukaan anda supaya ruang luar lebih selesa digunakan untuk berehat, menjemur atau berkebun. Bahan yang biasa dipilih termasuk polikarbonat untuk cahaya, ACP untuk naungan yang kemas, dan fabrik boleh-tarik untuk fleksibiliti. Untuk hartanah strata seperti kondominium dan pangsapuri, garis panduan JMB/MC mengenai reka bentuk dan unjuran perlu dipatuhi — kami menyediakan ukuran dan spesifikasi untuk sokongan anda. Atas sebut harga projek mengikut saiz, bahan dan akses.",
+        "Awning untuk balkoni, patio, teres, tingkap dan pintu direka mengikut bukaan anda supaya ruang luar lebih selesa digunakan untuk berehat, menjemur atau berkebun. Bahan yang biasa dipilih termasuk polikarbonat untuk cahaya, ACP untuk naungan yang kemas, dan fabrik boleh-tarik untuk fleksibiliti. Untuk hartanah strata seperti kondominium dan pangsapuri, garis panduan JMB/MC mengenai reka bentuk dan unjuran perlu dipatuhi — kami menyediakan ukuran dan spesifikasi untuk perbincangan anda dengan pengurusan. Atas sebut harga projek mengikut saiz, bahan dan akses.",
       highlights: [
         "Disesuaikan dengan bukaan balkoni, patio, tingkap atau pintu anda",
         "Pilihan polikarbonat, ACP atau fabrik mengikut cahaya yang diingini",
         "Membantu mengurangkan hujan pada tingkap dan silau matahari",
-        "Spesifikasi disediakan untuk keperluan kelulusan strata/JMB",
+        "Ukuran dan spesifikasi disediakan untuk perbincangan dengan pengurusan",
         "Pemasangan mematuhi akses keselamatan bangunan",
       ],
       process: [
@@ -12624,18 +12624,18 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
         { q: "Bagaimana jika akses pemasangan sukar?", a: "Untuk tingkat atas atau ruang terhad, kami semak keperluan akses dan peralatan semasa penilaian; kos akses dimasukkan dalam sebut harga." },
       ],
       metaTitle: "Awning Balkoni, Patio & Tingkap KL & Selangor",
-      metaDesc: "Awning tersuai untuk balkoni, patio, teres dan tingkap di KL & Selangor — polikarbonat, ACP atau fabrik, sokongan untuk keperluan strata. Minta sebut harga di WhatsApp.",
+      metaDesc: "Awning tersuai untuk balkoni, patio, teres dan tingkap di KL & Selangor — polikarbonat, ACP atau fabrik. Minta sebut harga di WhatsApp.",
     },
     zh: {
       name: "阳台、露台与窗户雨棚",
       tagline: "为吉隆坡与雪兰莪的阳台、露台、天台、窗户和门量身定制的雨棚——遮阳挡雨又不封闭空间。",
       description:
-        "阳台、露台、天台、窗户和门的雨棚按您的开口定制，让户外空间更适合休憩、晾晒或种植。常见选材包括用于透光的聚碳酸酯、整洁遮阳的 ACP，以及灵活的伸缩布艺。对于共管公寓和分层房产，须遵守 JMB/MC 关于设计和伸出长度的规定——我们可提供尺寸和规格以协助您申请。价格按项目报价，取决于尺寸、材料和施工通道。",
+        "阳台、露台、天台、窗户和门的雨棚按您的开口定制，让户外空间更适合休憩、晾晒或种植。常见选材包括用于透光的聚碳酸酯、整洁遮阳的 ACP，以及灵活的伸缩布艺。对于共管公寓和分层房产，须遵守 JMB/MC 关于设计和伸出长度的规定——我们可提供尺寸和规格，供您与管理处沟通。价格按项目报价，取决于尺寸、材料和施工通道。",
       highlights: [
         "按您的阳台、露台、窗户或门口尺寸定制",
         "按光线需求可选聚碳酸酯、ACP 或布艺",
         "有助于减少雨水打在窗户上和阳光直射",
-        "可为分层地契/JMB 审批提供规格资料",
+        "可为与管理处沟通提供尺寸与规格资料",
         "安装遵守楼宇安全通道规定",
       ],
       process: [
@@ -12652,7 +12652,7 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
         { q: "施工通道困难怎么办？", a: "对于高楼层或空间受限的情况，评估时会核对通道和设备需求；相关费用会纳入报价。" },
       ],
       metaTitle: "吉隆坡与雪兰莪阳台、露台与窗户雨棚",
-      metaDesc: "为阳台、露台、天台和窗户定制的雨棚——聚碳酸酯、ACP 或布艺，可协助分层审批资料，吉隆坡与雪兰莪供应。WhatsApp 获取报价。",
+      metaDesc: "为阳台、露台、天台和窗户定制的雨棚——聚碳酸酯、ACP 或布艺，吉隆坡与雪兰莪供应。WhatsApp 获取报价。",
     },
   },
 
@@ -12712,6 +12712,65 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       ],
       metaTitle: "吉隆坡与雪兰莪雨棚更换与维修 | 漏水、生锈",
       metaDesc: "维修与更换吉隆坡、雪兰莪老旧、漏水、生锈、积水或下垂的雨棚——评估清晰、按项目报价。欢迎通过 WhatsApp 联系。",
+    },
+  },
+
+  "awning-installation/outdoor-roller-blinds": {
+    ms: {
+      name: "Bidai Luar (Roller Blind)",
+      tagline: "Bidai luar dan zip roller blind untuk balkoni, patio, tingkap dan kedai di KL & Selangor — teduhan, privasi dan lindungan hujan yang boleh digulung apabila tidak digunakan.",
+      description:
+        "Bidai luar (roller blind) ialah pelengkap popular kepada awning untuk balkoni, patio, tingkap, pintu leret dan muka kedai. Fabrik menegak digulung ke atas apabila tidak digunakan, dan direndahkan untuk menapis matahari, pandangan dan gerimis. Pilihan manual (tali atau engkol) dan bermotor tersedia; sistem zip memegang fabrik kekal dalam rel supaya tidak kembang ketika berangin. Kami mengukur bukaan, membincangkan pilihan fabrik — daripada teduhan separa hingga gelap — dan menetapkan pengancing yang sesuai pada dinding, siling atau struktur sedia ada. Atas sebut harga projek mengikut saiz bukaan, pilihan fabrik dan sistem operasi.",
+      highlights: [
+        "Pilihan operasi manual (tali/engkol) atau bermotor",
+        "Sistem zip memegang fabrik kekal dalam rel ketika berangin",
+        "Pelbagai pilihan fabrik — teduhan separa hingga gelap",
+        "Sesuai untuk balkoni, patio, tingkap, pintu leret dan kedai",
+        "Lawatan tapak dan sebut harga percuma",
+      ],
+      process: [
+        { step: "01", title: "Pertanyaan & Ukuran", desc: "Hantar gambar bukaan dan ukuran anggaran di WhatsApp." },
+        { step: "02", title: "Cadangan Sistem", desc: "Kami cadangkan manual/bermotor, jenis fabrik dan sistem zip mengikut kegunaan." },
+        { step: "03", title: "Sebut Harga", desc: "Sebut harga memperincikan fabrik, sistem operasi, pengancing dan pemasangan." },
+        { step: "04", title: "Bekalan & Sedia", desc: "Bidai disediakan mengikut ukuran bukaan anda." },
+        { step: "05", title: "Pasang & Uji", desc: "Dipasang dengan penambat sesuai, diuji dan diserahkan dengan panduan penggunaan." },
+      ],
+      faqs: [
+        { q: "Adakah bidai luar tahan hujan?", a: "Fabrik bidai luar direka untuk kegunaan luar dan boleh menahan gerimis serta hujan berintai, terutama sistem zip yang mengekalkan fabrik dalam rel. Ia bukan ganti bumbung kekal — untuk perlindungan hujan penuh, awning polikarbonat atau ACP lebih sesuai." },
+        { q: "Manual atau bermotor lebih baik?", a: "Manual (tali atau engkol) lebih menjimatkan dan sesuai untuk bukaan kecil; bermotor sesuai untuk bidai besar atau kedudukan tinggi, dengan kawalan butang atau alat kawalan jauh. Kami bantu anda memilih mengikut saiz, bajet dan kekerapan penggunaan." },
+        { q: "Boleh dipasang di balkoni kondominium?", a: "Boleh, tetapi sahkan garis panduan pengurusan (JMB/MC) tentang warna dan kaedah pemasangan terlebih dahulu. Pemasangan pada dinding atau siling balkoni menggunakan penambat yang sesuai dengan struktur." },
+        { q: "Adakah bidai luar perlu penyelenggaraan?", a: "Basuh fabrik secara berkala dan semak mekanisme gulung serta, untuk sistem bermotor, pendawaian dan kawalan. Elakkan merendahkan bidai sepenuhnya semasa angin kencang atau ribut." },
+      ],
+      metaTitle: "Bidai Luar & Roller Blind KL & Selangor | Manual & Bermotor",
+      metaDesc: "Bidai luar dan zip roller blind untuk balkoni, patio, tingkap dan kedai di KL & Selangor — manual atau bermotor. Minta sebut harga di WhatsApp.",
+    },
+    zh: {
+      name: "户外卷帘",
+      tagline: "适用于吉隆坡与雪兰莪阳台、露台、窗户和店面的户外与拉链卷帘——可调遮阳、隐私与挡雨，不用时可收起。",
+      description:
+        "户外卷帘（roller blind）是雨棚的热门搭配，适用于阳台、露台、窗户、推拉门和店面。布帘不用时向上收起，需要时放下以遮挡阳光、视线和毛毛雨。提供手动（拉绳或摇柄）与电动操作；拉链（zip）系统将布料固定在导轨内，有风时不易鼓胀。我们会测量洞口，讨论布料选择——从半遮光到全遮光——并根据墙面、天花板或现有结构选定合适的固定方式。价格按项目报价，取决于洞口尺寸、布料选择与操作系统。",
+      highlights: [
+        "手动（拉绳/摇柄）或电动操作可选",
+        "拉链系统有风时保持布料贴合导轨",
+        "多种布料选择——半遮光到全遮光",
+        "适用于阳台、露台、窗户、推拉门和店面",
+        "上门评估与报价免费",
+      ],
+      process: [
+        { step: "01", title: "咨询与测量", desc: "通过 WhatsApp 发送洞口照片和大致尺寸。" },
+        { step: "02", title: "系统建议", desc: "根据用途推荐手动/电动、布料类型与拉链系统。" },
+        { step: "03", title: "报价", desc: "报价详列布料、操作系统、固定件与安装内容。" },
+        { step: "04", title: "备货", desc: "卷帘按您的洞口尺寸制作准备。" },
+        { step: "05", title: "安装与测试", desc: "以合适的固定件安装，测试后交付并提供使用说明。" },
+      ],
+      faqs: [
+        { q: "户外卷帘能挡雨吗？", a: "户外卷帘布料为户外使用而设计，能抵挡毛毛雨和斜飘雨，拉链系统尤其能保持布料贴合导轨。它不能替代永久屋顶——如需完整防雨，聚碳酸酯或 ACP 雨棚更合适。" },
+        { q: "手动还是电动更好？", a: "手动（拉绳/摇柄）更经济，适合较小洞口；电动适合大型卷帘或较高位置，可配按钮或遥控。我们根据尺寸、预算和使用频率帮您选择。" },
+        { q: "公寓阳台可以安装吗？", a: "可以，但请先确认管理处（JMB/MC）关于颜色和安装方式的规定。安装使用与墙体、天花板结构相匹配的紧固件。" },
+        { q: "户外卷帘需要维护吗？", a: "定期清洗布料，检查卷动机构；电动系统还需检查布线与控制器。大风或暴风雨时避免将卷帘完全放下。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪户外卷帘 | 手动与电动",
+      metaDesc: "阳台、露台、窗户和店面的户外/拉链卷帘——手动或电动，吉隆坡与雪兰莪安装。WhatsApp 获取报价。",
     },
   },
 

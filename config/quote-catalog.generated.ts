@@ -3922,8 +3922,8 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
     "slug": "awning-installation",
     "title": "Awning Installation Services",
     "startPrice": "On Quote",
-    "tagline": "Custom awnings and awning roofing for car porches, entrances, windows, balconies and yards across KL & Selangor — polycarbonate, metal deck, aluminium composite (ACP), glass and fabric systems, fabricated and installed to suit your site. Project-quoted.",
-    "warranty": "Workmanship warranty as stated in your quotation",
+    "tagline": "Custom awnings and awning roofing for car porches, entrances, windows, balconies and yards across the Klang Valley (KL & Selangor) — polycarbonate, metal deck, aluminium composite (ACP), glass and fabric systems, plus retractable awnings and outdoor roller blinds, fabricated and installed to suit your site. Project-quoted with a 12-month workmanship warranty.",
+    "warranty": "12-month workmanship warranty on fabrication & installation, as stated in your quotation",
     "subServices": [
       {
         "name": "Car Porch Awning Installation",
@@ -3953,7 +3953,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
       {
         "name": "Canvas & Fabric Awning",
         "price": "On Quote",
-        "desc": "Canvas/fabric fixed and retractable-style awnings for balconies, patios, terraces and shopfronts where shade and appearance are the priority."
+        "desc": "Fixed canvas/fabric awnings and retractable systems — manual or motorised — for balconies, patios, terraces and shopfronts where shade and appearance are the priority."
       },
       {
         "name": "Balcony, Patio & Window Awning",
@@ -3964,13 +3964,18 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
         "name": "Awning Replacement & Repair",
         "price": "On Quote",
         "desc": "Replacing old, leaking, rusted or sagging awnings — inspection of the existing frame, roofing, joints and drainage, with repair or full replacement options."
+      },
+      {
+        "name": "Outdoor Roller Blinds",
+        "price": "On Quote",
+        "desc": "Outdoor and zip roller blinds for balconies, patios, windows and shopfronts — manual or motorised shade, privacy and rain screening that rolls away when not needed."
       }
     ],
     "i18n": {
       "ms": {
         "title": "Perkhidmatan Pemasangan Awning",
-        "tagline": "Awning tersuai dan bumbung awning untuk car porch, pintu masuk, tingkap, balkoni dan halaman rumah di seluruh KL & Selangor — sistem polikarbonat, metal deck, panel komposit aluminium (ACP), kaca dan fabrik, difabrikasi dan dipasang mengikut tapak anda. Harga atas sebut harga projek.",
-        "warranty": "Waranti mutu kerja seperti yang dinyatakan dalam sebut harga anda",
+        "tagline": "Awning tersuai dan bumbung awning untuk car porch, pintu masuk, tingkap, balkoni dan halaman rumah di seluruh Lembah Klang (KL & Selangor) — sistem polikarbonat, metal deck, panel komposit aluminium (ACP), kaca dan fabrik, serta awning boleh-tarik dan bidai luar (roller blind), difabrikasi dan dipasang mengikut tapak anda. Harga atas sebut harga projek dengan waranti mutu kerja 12 bulan.",
+        "warranty": "Waranti mutu kerja 12 bulan untuk fabrikasi & pemasangan, seperti yang dinyatakan dalam sebut harga anda",
         "subServices": [
           {
             "name": "Pemasangan Awning Car Porch",
@@ -4000,7 +4005,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
           {
             "name": "Awning Kanvas & Fabrik",
             "price": "Atas Sebut Harga",
-            "desc": "Awning kanvas/fabrik tetap dan gaya boleh-tarik untuk balkoni, patio, teres dan kedai di mana teduhan dan rupa menjadi keutamaan."
+            "desc": "Awning kanvas/fabrik tetap dan sistem boleh-tarik — manual atau bermotor — untuk balkoni, patio, teres dan kedai di mana teduhan dan rupa menjadi keutamaan."
           },
           {
             "name": "Awning Balkoni, Patio & Tingkap",
@@ -4011,13 +4016,18 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "name": "Penggantian & Pembaikan Awning",
             "price": "Atas Sebut Harga",
             "desc": "Menggantikan awning lama, bocor, berkarat atau melendut — pemeriksaan rangka, bumbung, sambungan dan saliran sedia ada, dengan pilihan pembaikan atau penggantian penuh."
+          },
+          {
+            "name": "Bidai Luar (Roller Blind)",
+            "price": "Atas Sebut Harga",
+            "desc": "Bidai luar dan zip roller blind untuk balkoni, patio, tingkap dan kedai — teduhan, privasi dan lindungan hujan secara manual atau bermotor, boleh digulung apabila tidak digunakan."
           }
         ]
       },
       "zh": {
         "title": "雨棚安装服务",
-        "tagline": "为吉隆坡与雪兰莪的车棚、入口、窗户、阳台及庭院定制雨棚与雨棚屋顶——聚碳酸酯、金属瓦、铝塑板（ACP）、玻璃与布艺系统，按现场尺寸制作安装。价格按项目报价。",
-        "warranty": "按报价单载明的工艺保修",
+        "tagline": "为巴生谷（吉隆坡与雪兰莪）的车棚、入口、窗户、阳台及庭院定制雨棚与雨棚屋顶——聚碳酸酯、金属瓦、铝塑板（ACP）、玻璃与布艺系统，另有伸缩雨棚与户外卷帘，按现场尺寸制作安装。按项目报价，含12个月工艺保修。",
+        "warranty": "12 个月制作与安装工艺保修，以报价单为准",
         "subServices": [
           {
             "name": "车棚雨棚安装",
@@ -4047,7 +4057,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
           {
             "name": "帆布与布艺雨棚",
             "price": "依报价",
-            "desc": "适用于阳台、露台、天台和店面的固定帆布及伸缩式布艺雨棚，以遮阳与美观为优先。"
+            "desc": "适用于阳台、露台、天台和店面的固定帆布及伸缩式系统——手动或电动——以遮阳与美观为优先。"
           },
           {
             "name": "阳台、露台与窗户雨棚",
@@ -4058,6 +4068,11 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
             "name": "雨棚更换与维修",
             "price": "依报价",
             "desc": "更换老旧、漏水、生锈或下垂的雨棚——检查原有骨架、面板、接缝与排水，提供维修或整体更换方案。"
+          },
+          {
+            "name": "户外卷帘",
+            "price": "依报价",
+            "desc": "适用于阳台、露台、窗户和店面的户外与拉链卷帘——手动或电动遮阳、隐私与挡雨，不用时可收起。"
           }
         ]
       }

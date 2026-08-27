@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { DEDICATED_TOOL_BY_SERVICE } from "@/lib/estimator/service-estimator";
-import { verifyAdminTokenEdge } from "@/lib/admin-auth-edge";
 import { PROBLEM_CANONICAL_REDIRECTS } from "@/config/problem-canonical";
 
 const SUPPORTED_LOCALES = ["ms", "zh"] as const;
@@ -73,32 +72,15 @@ const PROBLEM_REDIRECTS: Record<string, string> = Object.fromEntries(
  * This ensures shared/bookmarked locale URLs always resolve to real content.
  */
 /**
- * Admin area gate.
+ * Admin area gate (REMOVED 2026-08-27 by owner decision).
  *
- * Every `/admin/*` URL except the login screen requires the signed, expiring,
- * httpOnly session cookie issued by `/api/admin/login`. Verification happens
- * here (edge) AND again in the server component that renders the dashboard —
- * defense in depth, and unauthenticated visitors never receive the dashboard
- * markup even if one layer is bypassed or misconfigured.
+ * The former `/admin/login` + `/admin/tools` owner dashboard (calculators
+ * directory), its `/api/admin/*` routes and `lib/admin-auth*` were removed —
+ * the owner confirmed the internal admin page is no longer needed. There is
+ * no `/admin` surface left to protect; `ADMIN_PASSWORD` is obsolete.
  */
-const ADMIN_LOGIN_PATH = "/admin/login";
-const ADMIN_PREFIX = "/admin";
-
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
-
-  if (pathname.startsWith(`${ADMIN_PREFIX}/`) || pathname === ADMIN_PREFIX) {
-    if (pathname !== ADMIN_LOGIN_PATH) {
-      const token = request.cookies.get("kl_admin_session")?.value;
-      if (!(await verifyAdminTokenEdge(token))) {
-        const loginUrl = request.nextUrl.clone();
-        loginUrl.pathname = ADMIN_LOGIN_PATH;
-        loginUrl.search = "";
-        return NextResponse.redirect(loginUrl, 307);
-      }
-    }
-    return NextResponse.next();
-  }
 
   const problemTarget = PROBLEM_REDIRECTS[pathname];
   if (problemTarget) {

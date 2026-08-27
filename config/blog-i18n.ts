@@ -3446,7 +3446,7 @@ Kerja awning di Malaysia disebut harga mengikut projek, bukan kadar tetap per ka
 - Struktur sedia ada dan keperluan pengukuhan
 - Keperluan saliran — longkang, paip turun, flashing dan pengedap
 - Pembongkaran dan pelupusan awning lama, jika perlu
-- Warna, reka bentuk tersuai dan sebarang spesifikasi strata atau pihak berkuasa tempatan
+- Warna, reka bentuk tersuai dan sebarang spesifikasi pengurusan
 
 Maklumat paling berguna untuk sebut harga ialah lokasi anda, foto tapak dan titik pengancing, lebar dan unjuran anggaran, bahan atau rupa yang anda mahu, sama ada awning lama perlu dibongkar, dan sebarang peraturan pengurusan atau pihak berkuasa setempat.
 
@@ -3560,9 +3560,9 @@ ACP 雨棚使用坚硬的铝面复合板，呈现干净、现代、不透光的�
 - 现有结构和是否需要加固
 - 排水需求——排水沟、落水管、泛水板和密封胶
 - 需要时的旧雨棚拆除与清运
-- 颜色、定制设计以及任何分层地契或地方当局规范
+- 颜色、定制设计以及任何物业管理规范
 
-索取报价时最有用的信息：您的位置、现场和固定点的照片、大致宽度和悬挑、偏好的材料或外观、是否需要拆除旧雨棚，以及适用的管理层或市政规定。
+索取报价时最有用的信息：您的位置、现场和固定点的照片、大致宽度和悬挑、偏好的材料或外观、是否需要拆除旧雨棚，以及适用的物业管理规定。
 
 ## 常见问题
 
@@ -3637,7 +3637,7 @@ Rangka dipasang pada dinding, rasuk atau slab anda — atau berdiri atas tiang a
 
 ## Rumah berasingan vs strata: semak peraturan dahulu
 
-Jika anda tinggal di kondominium, pangsapuri atau komuniti berpagar, JMB/MC mungkin mempunyai garis panduan mengenai unjuran, ketinggian, warna atau reka bentuk awning, dan keperluan pihak berkuasa tempatan juga boleh terpakai. Semak dengan pejabat pengurusan anda sebelum memuktamadkan reka bentuk; kami boleh memberikan skop, dimensi dan spesifikasi untuk menyokong permohonan, tetapi kelulusan yang terpakai untuk hartanah anda perlu disahkan dengan pengurusan atau pihak berkuasa tempatan.
+Jika anda tinggal di kondominium, pangsapuri atau komuniti berpagar, JMB/MC mungkin mempunyai garis panduan mengenai unjuran, ketinggian, warna atau reka bentuk awning. Semak dengan pejabat pengurusan anda sebelum memuktamadkan reka bentuk; kami boleh memberikan skop, dimensi dan spesifikasi untuk perbincangan dengan pejabat pengurusan anda.
 
 ## Apa yang perlu dihantar untuk sebut harga awning car porch
 
@@ -3721,7 +3721,7 @@ KL Servis Rumah 在吉隆坡与雪兰莪测量、加工并安装[车棚雨棚](/
 
 ## 有地住宅 vs 分层地契：先查规定
 
-如果您住在公寓、组屋或围篱社区，共管机构（JMB/MC）可能对雨棚悬挑、高度、颜色或设计有规范，地方政府的要求也可能适用。确定设计前先向管理处查询；我们可以提供工程范围、尺寸和规格以支持申请，但适用于您产业的审批应向管理层或地方当局确认。
+如果您住在公寓、组屋或围篱社区，共管机构（JMB/MC）可能对雨棚悬挑、高度、颜色或设计有规范。确定设计前先向管理处查询；我们可以提供工程范围、尺寸和规格，供您与管理处沟通。
 
 ## 车棚雨棚询价要准备什么
 
@@ -3730,7 +3730,7 @@ KL Servis Rumah 在吉隆坡与雪兰莪测量、加工并安装[车棚雨棚](/
 - 您日常停放的最高车辆（或其高度）
 - 偏好的材料或外观——有色聚碳酸酯、金属瓦或 ACP
 - 是否需要拆除旧雨棚
-- 适用的管理处或市政规定
+- 适用的物业管理规定
 
 有了照片和尺寸，很多报价可以远程完成；跨距、结构或排水需要核实时，我们会安排现场评估。
 
@@ -3775,9 +3775,24 @@ Harga awning di Malaysia disebut mengikut projek kerana lapan pemboleh ubah meng
 5. **Struktur sedia ada dan pengukuhan**
 6. **Saliran** — longkang, paip turun, flashing dan pengedap
 7. **Pembongkaran dan pelupusan awning lama**
-8. **Reka bentuk tersuai dan spesifikasi strata atau pihak berkuasa tempatan**
+8. **Reka bentuk tersuai dan sebarang spesifikasi pengurusan**
 
 Kadar umum yang diterbitkan tidak dapat mengambil kira semua ini — sebab itulah kami menyebut harga mengikut projek.
+
+## Julat kadar pasaran yang diterbitkan (untuk bajet)
+
+Kontraktor dan panduan harga di KL/Selangor lazimnya menerbitkan julat pemasangan anggaran seperti berikut:
+
+| Sistem | Julat pasaran diterbitkan |
+| --- | --- |
+| Metal deck / zink | RM 15–45 sekaki persegi |
+| Polikarbonat | RM 25–80 sekaki persegi |
+| ACP | RM 28–120 sekaki persegi |
+| Kanvas / fabrik | RM 20–100 sekaki persegi |
+| Kaca tempered | RM 60–250 sekaki persegi |
+| Retractable bermotor | RM 150–400+ sekaki persegi |
+
+Julat di atas ialah rujukan pasaran yang diterbitkan oleh kontraktor awning dan panduan harga KL/Selangor (2024–2026) — bukan sebut harga kami. Dua awning bersaiz sama masih boleh berbeza ketara mengikut kualiti rangka, profil kepingan, akses dan saliran; sebab itulah setiap sebut harga KL Servis Rumah kekal khusus projek dan diperincikan.
 
 ## Lapan faktor kos diterangkan
 
@@ -3870,9 +3885,24 @@ Hantar lokasi, foto dan dimensi anggaran anda di WhatsApp dan kami akan menyedia
 5. **现有结构与加固**
 6. **排水** — 排水沟、落水管、泛水板与密封胶
 7. **旧雨棚的拆除与清运**
-8. **定制设计与分层地契或地方当局规范**
+8. **定制设计与物业管理规范**
 
 公开的统一单价无法涵盖这些——所以我们按项目报价。
+
+## 公开市场价格区间（预算参考）
+
+吉隆坡/雪兰莪的承包商与价格指南通常公布以下安装参考区间：
+
+| 系统 | 公开市场区间 |
+| --- | --- |
+| 金属瓦 / 锌板 | 每平方尺 RM 15–45 |
+| 聚碳酸酯 | 每平方尺 RM 25–80 |
+| 铝塑板（ACP） | 每平方尺 RM 28–120 |
+| 帆布 / 布艺 | 每平方尺 RM 20–100 |
+| 钢化玻璃 | 每平方尺 RM 60–250 |
+| 电动伸缩雨棚 | 每平方尺 RM 150–400 起 |
+
+以上区间为吉隆坡/雪兰莪雨棚承包商与价格指南公开发布的行情参考（2024–2026）——并非我们的报价。同样尺寸的两个雨棚，仍会因骨架质量、板材型材、施工通道与排水而价格差异很大；因此 KL Servis Rumah 的每份报价始终保持按项目、分项列明。
 
 ## 八大成本因素详解
 
@@ -3922,7 +3952,7 @@ Hantar lokasi, foto dan dimensi anggaran anda di WhatsApp dan kami akan menyedia
 - 现场和固定点（墙体、横梁、楼板）的照片
 - 偏好的材料或外观（如有）
 - 是否需要拆除旧雨棚
-- 适用的分层地契、管理处或市政规定
+- 适用的物业管理规定
 
 简单项目通常凭照片和尺寸即可报价。跨距大、固定点不明确、进场困难或排水需要规划时，我们会在设计定案前安排现场评估——让报价与实际施工一致。
 
@@ -4009,7 +4039,7 @@ Laluan sisi hanya perlu memastikan laluan kering. Polikarbonat dan metal deck ia
 
 ### Hadapan kedai dan komersial ringan — papan tanda dan fleksibiliti
 
-Awning hadapan kedai selalunya berfungsi juga sebagai papan tanda dan identiti jenama, jadi sistem fabrik dan boleh ditarik popular kerana rupanya dan keupayaan menariknya pada waktu malam; kaca dan ACP memberikan muka hadapan premium yang kekal. Kami memfabrikasi mengikut ukuran hadapan kedai dan sebarang spesifikasi pengurusan atau majlis yang terpakai.
+Awning hadapan kedai selalunya berfungsi juga sebagai papan tanda dan identiti jenama, jadi sistem fabrik dan boleh ditarik popular kerana rupanya dan keupayaan menariknya pada waktu malam; kaca dan ACP memberikan muka hadapan premium yang kekal. Kami memfabrikasi mengikut ukuran hadapan kedai dan sebarang spesifikasi pengurusan yang terpakai.
 
 ## Kemudian tentukan mengikut keutamaan anda
 
@@ -4021,13 +4051,13 @@ Setelah anda tahu aplikasinya, susun keutamaan ini — ia biasanya memilih jenis
 - **Mahukan rupa paling kemas dan premium** (pintu masuk, hadapan rumah) → kaca atau ACP.
 - **Mahukan penyelenggaraan paling rendah** → panel ACP tidak berkarat; bahagian keluli pada mana-mana awning tetap mendapat manfaat daripada primer anti-karat dan kemasan serbuk atau tahan cuaca yang rangka kami difabrikasi — lihat [kimpalan & fabrikasi logam](/ms/services/welding).
 - **Mahukan lindungan utiliti pada bajet** (ruang, laluan) → metal deck atau polikarbonat.
-- **Mahu teduhan yang boleh dibuka dan ditutup** (balkoni, patio, hadapan kedai) → sistem fabrik boleh ditarik, dibincangkan bergantung pada skop dan pembekal.
+- **Mahu teduhan yang boleh dibuka dan ditutup** (balkoni, patio, hadapan kedai) → sistem fabrik boleh ditarik, manual atau bermotor.
 
 Untuk tolak-beli tahap bahan di sebalik setiap ini, [panduan perbandingan bahan](/ms/blog/perbandingan-awning-polikarbonat-metal-deck-acp) ialah bacaan pendamping.
 
 ## Tetap atau boleh ditarik?
 
-Kebanyakan rumah menggunakan awning **tetap** — ia kekal, penyelenggaraan lebih rendah dan sedia untuk sebarang hujan lebat yang tiba-tiba. Awning fabrik **boleh ditarik** sesuai untuk balkoni, patio dan hadapan kedai yang mahu pilihan matahari penuh atau teduhan penuh; ia menggunakan fabrik dan kelengkapan operasi berbanding bumbung pepejal, jadi ia tidak dibiarkan terunjur dalam angin kencang dan fabriknya ialah bahagian yang haus yang akhirnya memerlukan perhatian. Operasi bermotor boleh dibincangkan bergantung pada skop dan ketersediaan pembekal — kami mengesahkan apa yang sesuai untuk tapak anda daripada menjanjikannya di awal.
+Kebanyakan rumah menggunakan awning **tetap** — ia kekal, penyelenggaraan lebih rendah dan sedia untuk sebarang hujan lebat yang tiba-tiba. Awning fabrik **boleh ditarik** sesuai untuk balkoni, patio dan hadapan kedai yang mahu pilihan matahari penuh atau teduhan penuh; ia menggunakan fabrik dan kelengkapan operasi berbanding bumbung pepejal, jadi ia tidak dibiarkan terunjur dalam angin kencang dan fabriknya ialah bahagian yang haus yang akhirnya memerlukan perhatian. Operasi manual dan bermotor tersedia — kami mengesahkan model dan kawalan yang sesuai untuk tapak anda dalam sebut harga.
 
 ## Direka untuk cuaca Malaysia
 
@@ -4041,11 +4071,11 @@ Betulkan ketiga-tiganya dan awning polikarbonat, metal deck atau ACP akan member
 
 ## Landed atau strata? Semak sebelum komited
 
-Untuk **rumah landed**, anda umumnya bebas memilih reka bentuk dan warna, tertakluk pada peraturan pihak berkuasa tempatan yang terpakai. Untuk **hartanah strata** — kondominium, pangsapuri dan komuniti berpagar — JMB/MC mungkin mengehadkan unjuran, ketinggian, warna malah jenis awning, dan keperluan majlis juga boleh terpakai. Semak dengan pejabat pengurusan anda sebelum memuktamadkan; kami boleh membekalkan skop, dimensi dan spesifikasi untuk menyokong permohonan, tetapi kelulusan untuk hartanah anda hendaklah disahkan dengan pengurusan atau pihak berkuasa tempatan.
+Untuk **rumah landed**, anda umumnya bebas memilih reka bentuk dan warna. Untuk **hartanah strata** — kondominium, pangsapuri dan komuniti berpagar — JMB/MC mungkin mengehadkan unjuran, ketinggian, warna malah jenis awning. Semak dengan pejabat pengurusan anda sebelum memuktamadkan; kami boleh membekalkan skop, dimensi dan spesifikasi untuk perbincangan tersebut.
 
 ## Apa yang perlu dihantar kepada kami
 
-Untuk cadangan jenis yang sesuai dan penyediaan sebut harga, hantar di WhatsApp: lokasi/kawasan anda, di mana awning akan dipasang, lebar dan unjuran anggaran, foto tapak dan titik pengancing, rupa atau bahan yang anda mahu, sama ada awning lama perlu dibongkar, dan sebarang peraturan strata atau majlis. Foto dan dimensi selalunya cukup untuk sebut harga; penilaian tapak diatur apabila bentang, struktur atau saliran perlu diperiksa. Setiap kerja disebut harga mengikut projek — lapan pendorong kos dijelaskan dalam [panduan harga awning](/ms/blog/bagaimana-harga-awning-dikira-di-malaysia) kami. Kami menerbitkan harga permulaan untuk perkhidmatan yang berulang dalam [direktori perkhidmatan](/ms/services) kami; kerja awning sentiasa berperincian dan khusus projek.
+Untuk cadangan jenis yang sesuai dan penyediaan sebut harga, hantar di WhatsApp: lokasi/kawasan anda, di mana awning akan dipasang, lebar dan unjuran anggaran, foto tapak dan titik pengancing, rupa atau bahan yang anda mahu, sama ada awning lama perlu dibongkar, dan sebarang peraturan pengurusan. Foto dan dimensi selalunya cukup untuk sebut harga; penilaian tapak diatur apabila bentang, struktur atau saliran perlu diperiksa. Setiap kerja disebut harga mengikut projek — lapan pendorong kos dijelaskan dalam [panduan harga awning](/ms/blog/bagaimana-harga-awning-dikira-di-malaysia) kami. Kami menerbitkan harga permulaan untuk perkhidmatan yang berulang dalam [direktori perkhidmatan](/ms/services) kami; kerja awning sentiasa berperincian dan khusus projek.
 
 ## Soalan lazim
 
@@ -4059,7 +4089,7 @@ Ketahanan lebih bergantung pada saiz profil rangka, kemasan anti-karat, keceruna
 
 ### Boleh anda pasang awning di balkoni kondominium?
 
-Selalunya ya, tertakluk pada peraturan bangunan anda. Kebanyakan JMB/MC mempunyai garis panduan untuk awning balkoni — unjuran, warna dan kadangkala jenis yang dibenarkan — dan keperluan majlis mungkin juga terpakai. Semak dengan pejabat pengurusan anda dahulu; kami boleh membekalkan skop, dimensi dan spesifikasi untuk menyokong permohonan anda.
+Selalunya ya, tertakluk pada peraturan bangunan anda. Kebanyakan JMB/MC mempunyai garis panduan untuk awning balkoni — unjuran, warna dan kadangkala jenis yang dibenarkan . Semak dengan pejabat pengurusan anda dahulu; kami boleh membekalkan skop, dimensi dan spesifikasi untuk perbincangan anda dengan pengurusan.
 
 ## Dapatkan cadangan awning untuk rumah anda
 
@@ -4123,7 +4153,7 @@ KL Servis Rumah 在吉隆坡与雪兰莪设计、制作和安装[定制雨棚](/
 
 ### 店面与轻商业——招牌与灵活性
 
-店面雨棚往往同时充当招牌和品牌形象，所以布艺和伸缩系统因外观和夜间可收起而受欢迎；玻璃和 ACP 提供永久、高级的门面。我们按店面尺寸以及适用的管理处或市政规范制作。
+店面雨棚往往同时充当招牌和品牌形象，所以布艺和伸缩系统因外观和夜间可收起而受欢迎；玻璃和 ACP 提供永久、高级的门面。我们按店面尺寸以及适用的物业管理规范制作。
 
 ## 然后按最在意的事决定
 
@@ -4141,7 +4171,7 @@ KL Servis Rumah 在吉隆坡与雪兰莪设计、制作和安装[定制雨棚](/
 
 ## 固定还是伸缩？
 
-多数住家用**固定**雨棚——一劳永逸、维护较低，突降暴雨也随时可用。**伸缩**布艺雨棚适合想要全阳或全阴可选的阳台、露台和店面；它用布艺和操作机件而非实心屋面，所以强风时不收起、布料是易损件、日后需维护。电动操作可视范围和供应商供应情况商议——我们会确认适合您现场的方案，而不是事先承诺。
+多数住家用**固定**雨棚——一劳永逸、维护较低，突降暴雨也随时可用。**伸缩**布艺雨棚适合想要全阳或全阴可选的阳台、露台和店面；它用布艺和操作机件而非实心屋面，所以强风时不收起、布料是易损件、日后需维护。手动与电动操作均提供——我们会在报价中确认适合您现场的型号与控制方式。
 
 ## 为马来西亚天气而建
 
@@ -4155,11 +4185,11 @@ KL Servis Rumah 在吉隆坡与雪兰莪设计、制作和安装[定制雨棚](/
 
 ## 有地还是分层地契？决定前先查
 
-**有地住宅**一般可自由选择设计和颜色，但须遵守适用的地方当局规定。**分层地契产业**——公寓、组屋和围篱社区——JMB/MC 可能限制悬挑、高度、颜色甚至雨棚类型，市政要求也可能适用。定案前先向管理处查询；我们可提供范围、尺寸和规格以支持申请，但您产业适用的批准应向管理处或地方当局确认。
+**有地住宅**一般可自由选择设计和颜色，**分层地契产业**——公寓、组屋和围篱社区——JMB/MC 可能限制悬挑、高度、颜色甚至雨棚类型。定案前先向管理处查询；我们可提供范围、尺寸和规格，供您与管理处沟通。
 
 ## 需要发给我们什么
 
-要获得合适的类型建议和报价，请在 WhatsApp 发送：您的位置/区域、雨棚安装位置、大致宽度与悬挑、现场和固定点照片、偏好的外观或材料、是否需要拆除旧雨棚，以及任何分层地契或市政规定。凭照片和尺寸往往就能报价；跨距、结构或排水需要核查时，我们会安排现场评估。每项工程按项目计价——八大成本因素在我们的[雨棚价格指南](/zh/bo-ke/yu-peng-jia-ge-ru-he-ji-suan-ma-lai-xi-ya)中说明。我们在[服务目录](/zh/services)为可重复的服务公布起步价；雨棚工程始终列明细、按项目定价。
+要获得合适的类型建议和报价，请在 WhatsApp 发送：您的位置/区域、雨棚安装位置、大致宽度与悬挑、现场和固定点照片、偏好的外观或材料、是否需要拆除旧雨棚，以及任何物业管理规定。凭照片和尺寸往往就能报价；跨距、结构或排水需要核查时，我们会安排现场评估。每项工程按项目计价——八大成本因素在我们的[雨棚价格指南](/zh/bo-ke/yu-peng-jia-ge-ru-he-ji-suan-ma-lai-xi-ya)中说明。我们在[服务目录](/zh/services)为可重复的服务公布起步价；雨棚工程始终列明细、按项目定价。
 
 ## 常见问题
 
@@ -4173,7 +4203,7 @@ KL Servis Rumah 在吉隆坡与雪兰莪设计、制作和安装[定制雨棚](/
 
 ### 可以在公寓阳台上装雨棚吗？
 
-通常可以，但须遵守您大楼的规定。多数 JMB/MC 对阳台雨棚有指引——悬挑、颜色，有时还限定类型——市政要求也可能适用。请先向管理处查询；我们可提供范围、尺寸和规格以支持您的申请。
+通常可以，但须遵守您大楼的规定。多数 JMB/MC 对阳台雨棚有指引——悬挑、颜色，有时还限定类型。请先向管理处查询；我们可提供范围、尺寸和规格，供您与管理处沟通。
 
 ## 获取适合您家的雨棚建议
 
@@ -4279,7 +4309,7 @@ Minta penilaian jika awning berada di atas pintu masuk atau kawasan yang digunak
 
 ## Maklumat untuk sebut harga pembaikan atau penggantian
 
-Hantar lokasi atau kawasan anda di KL & Selangor, foto dari beberapa sudut aras tanah, gambar dekat kebocoran atau karat, lebar dan unjuran anggaran, serta penerangan ringkas tentang apa yang berlaku ketika hujan. Sertakan foto titik pengancing pada dinding atau rasuk, longkang dan paip turun, dan beritahu sama ada anda mahu mengekalkan rangka sedia ada atau terbuka kepada penggantian. Jika awning berada di kondominium, komuniti berpagar atau hartanah komersial, sertakan sebarang syarat JMB, MC, pengurusan atau pihak berkuasa tempatan yang anda sudah tahu.
+Hantar lokasi atau kawasan anda di KL & Selangor, foto dari beberapa sudut aras tanah, gambar dekat kebocoran atau karat, lebar dan unjuran anggaran, serta penerangan ringkas tentang apa yang berlaku ketika hujan. Sertakan foto titik pengancing pada dinding atau rasuk, longkang dan paip turun, dan beritahu sama ada anda mahu mengekalkan rangka sedia ada atau terbuka kepada penggantian. Jika awning berada di kondominium, komuniti berpagar atau hartanah komersial, sertakan sebarang syarat JMB, MC atau pengurusan yang anda sudah tahu.
 
 Foto dan dimensi anggaran mungkin cukup untuk sebut harga projek awal. Jika rangka, akses, kecerunan atau saliran perlu diperiksa, penilaian tapak diatur sebelum skop dimuktamadkan. Lihat [panduan harga awning](/ms/blog/bagaimana-harga-awning-dikira-di-malaysia) untuk memahami mengapa sebut harga adalah berperincian, bukan angka generik per kaki persegi.
 
@@ -4411,7 +4441,7 @@ Hantar foto dan dimensi anggaran di WhatsApp serta terangkan kebocoran, karat at
 
 ## 维修或更换报价需要准备什么
 
-请发送您在吉隆坡与雪兰莪的位置或地区、从地面不同角度拍摄的照片、漏水或锈迹的近照、大约宽度和悬挑，以及下雨时发生什么的简短说明。也请附上墙体或横梁固定点、排水沟和落水管的照片，并说明您希望保留现有骨架，还是愿意考虑更换。如果是公寓、围篱社区或商业产业，请一并提供您已知的 JMB、MC、管理处或地方当局要求。
+请发送您在吉隆坡与雪兰莪的位置或地区、从地面不同角度拍摄的照片、漏水或锈迹的近照、大约宽度和悬挑，以及下雨时发生什么的简短说明。也请附上墙体或横梁固定点、排水沟和落水管的照片，并说明您希望保留现有骨架，还是愿意考虑更换。如果是公寓、围篱社区或商业产业，请一并提供您已知的 JMB、MC 或管理处要求。
 
 照片和大致尺寸有时足以准备初步项目报价；如果需要核实骨架、进场条件、坡度或排水，我们会在确定范围前安排现场评估。您也可以查看[雨棚价格指南](/zh/bo-ke/yu-peng-jia-ge-ru-he-ji-suan-ma-lai-xi-ya)，了解为什么报价会按项目列明细，而不是套用统一的每平方英尺数字。
 
@@ -4455,14 +4485,14 @@ Hantar foto dan dimensi anggaran di WhatsApp serta terangkan kebocoran, karat at
       metaDesc: "Bandingkan awning boleh tarik dan awning tetap untuk rumah Malaysia — lindungan hujan, penjagaan angin, cahaya, penyelenggaraan, strata dan faktor sebut harga.",
       content: `Awning tetap dan awning boleh tarik menyelesaikan keperluan yang berbeza. Sistem tetap memberikan lindungan kekal di atas car porch, pintu masuk, ruang jemuran atau laluan. Sistem boleh tarik pula memberikan teduhan apabila diperlukan dan membenarkan lebih banyak cahaya masuk apabila teduhan tidak diperlukan, sesuai untuk balkoni, patio atau hadapan kedai.
 
-Pilihan yang betul bukan sekadar yang nampak lebih cantik. Pertimbangkan jumlah lindungan hujan yang anda perlukan, sama ada kawasan perlu kekal terbuka atau teduh, cara sistem akan dikendalikan dan diselenggara, serta perkara yang dibenarkan oleh pengurusan bangunan. KL Servis Rumah membincangkan [pilihan awning dan sebut harga projek](/ms/services/awning-installation) di seluruh KL & Selangor; penyelesaian tetap, fabrik dan gaya boleh tarik tertakluk pada aplikasi, skop dan ketersediaan pembekal.
+Pilihan yang betul bukan sekadar yang nampak lebih cantik. Pertimbangkan jumlah lindungan hujan yang anda perlukan, sama ada kawasan perlu kekal terbuka atau teduh, cara sistem akan dikendalikan dan diselenggara, serta perkara yang dibenarkan oleh pengurusan bangunan. KL Servis Rumah membincangkan [pilihan awning dan sebut harga projek](/ms/services/awning-installation) di seluruh KL & Selangor; penyelesaian tetap serta fabrik dan gaya boleh tarik manual atau bermotor mengikut aplikasi dan skop.
 
 ## Jawapan ringkas: tetap atau boleh tarik?
 
 - Pilih **tetap** apabila anda memerlukan lindungan seperti bumbung yang sentiasa ada apabila hujan — khususnya untuk car porch, pintu masuk, kawasan utiliti, ruang jemuran dan laluan.
 - Pertimbangkan **boleh tarik** apabila anda mahu teduhan mengikut keperluan untuk balkoni, patio, teres atau hadapan kedai, dan boleh mematuhi arahan operasi serta penjagaan cuaca sistem tersebut.
 - Sistem fabrik boleh tarik tidak semestinya menggantikan bumbung pepejal polikarbonat, metal deck, ACP atau kaca. Bahan, unjuran, pengancing dan saliran perlu sesuai dengan tapak.
-- Operasi manual atau bermotor boleh dibincangkan **bergantung pada skop dan ketersediaan pembekal**; jangan anggap ia tersedia sebelum sistem sebenar disahkan.
+- Operasi manual dan bermotor tersedia; kami mengesahkan model, kawalan dan skop sebut harga yang tepat sebelum kerja bermula.
 
 ## Apa itu awning tetap?
 
@@ -4488,7 +4518,7 @@ Skop [awning kanvas dan fabrik](/ms/services/awning-installation/canvas-and-fabr
 | Penjagaan ketika angin | Periksa rangka, pengancing, lembaran dan saliran selepas terdedah | Tarik semula seperti diarahkan ketika angin kencang; jangan anggap ada kadar angin tertentu |
 | Cahaya dan keterbukaan | Teduhan dan cahaya di bawahnya berubah secara kekal | Boleh dibuka untuk membenarkan matahari dan ruang terbuka |
 | Penyelenggaraan | Penutup, rangka, pengedap, longkang dan paip turun | Fabrik, lengan, braket, sendi dan kelengkapan operasi, serta saliran jika ada |
-| Operasi | Tiada keperluan membuka atau menutup setiap hari | Operasi manual atau bermotor boleh dibincangkan bergantung pada skop dan pembekal |
+| Operasi | Tiada keperluan membuka atau menutup setiap hari | Operasi manual dan bermotor tersedia; model disahkan semasa sebut harga |
 
 Ini ialah panduan pemilihan umum, bukan spesifikasi produk tertentu. Sistem yang dipasang, pendedahan tapak, titik pengancing dan arahan pembekal perlu diutamakan.
 
@@ -4508,7 +4538,7 @@ Ruang luar untuk berehat selalunya mendapat manfaat daripada teduhan yang boleh 
 
 ### Hadapan kedai: rupa, papan tanda dan rutin operasi
 
-Hadapan kedai mungkin memerlukan lindungan ketika waktu perniagaan dan muka hadapan yang lebih terbuka selepas tutup. Sistem fabrik atau boleh tarik boleh dipertimbangkan untuk fleksibiliti ini, manakala sistem ACP, kaca atau metal deck tetap membentuk muka hadapan kekal. Pilihan akhir bergantung pada struktur kedai, papan tanda, akses, syarat pengurusan atau majlis dan sistem pembekal.
+Hadapan kedai mungkin memerlukan lindungan ketika waktu perniagaan dan muka hadapan yang lebih terbuka selepas tutup. Sistem fabrik atau boleh tarik boleh dipertimbangkan untuk fleksibiliti ini, manakala sistem ACP, kaca atau metal deck tetap membentuk muka hadapan kekal. Pilihan akhir bergantung pada struktur kedai, papan tanda, akses, syarat pengurusan dan sistem yang dipilih.
 
 ## Hujan dan angin: perbezaan yang penting
 
@@ -4534,9 +4564,9 @@ Fabrik ialah komponen yang haus, bukan lembaran kekal. Jika fabrik kekal lembap,
 
 ## Peraturan strata, JMB dan pengurusan
 
-Awning boleh tarik tidak automatik terkecuali daripada kelulusan. Kondominium, pangsapuri, komuniti berpagar dan bangunan komersial mungkin menetapkan had pada unjuran, warna, keterlihatan, titik pengancing, kelengkapan operasi atau waktu sistem boleh diunjurkan. Awning tetap juga boleh tertakluk pada peraturan yang sama.
+Awning boleh tarik juga tertakluk pada peraturan pengurusan bangunan. Kondominium, pangsapuri, komuniti berpagar dan bangunan komersial mungkin menetapkan had pada unjuran, warna, keterlihatan, titik pengancing, kelengkapan operasi atau waktu sistem boleh diunjurkan. Awning tetap juga boleh tertakluk pada peraturan yang sama.
 
-Semak dengan JMB, MC, pejabat pengurusan atau pihak berkuasa tempatan yang berkaitan sebelum membuat keputusan. Kami boleh menyediakan skop, dimensi dan spesifikasi cadangan untuk menyokong perbincangan, tetapi kelulusan hartanah anda mesti disahkan dengan pihak berkuasa atau pengurusan yang bertanggungjawab.
+Semak dengan JMB, MC atau pejabat pengurusan sebelum membuat keputusan. Kami boleh menyediakan skop, dimensi dan spesifikasi cadangan untuk menyokong perbincangan tersebut.
 
 ## Bagaimana harga disebut
 
@@ -4561,7 +4591,7 @@ Tiada satu yang terbaik untuk semua keadaan. Awning tetap sesuai untuk lindungan
 
 ### Bolehkah awning boleh tarik menggunakan motor?
 
-Operasi bermotor boleh dibincangkan bergantung pada skop dan ketersediaan pembekal. Ia bukan ciri automatik setiap awning boleh tarik, jadi sahkan model, kawalan, keperluan kuasa dan skop yang disebut harga sebelum menganggapnya termasuk.
+Operasi manual dan bermotor tersedia. Ciri bermotor bukan automatik pada setiap awning boleh tarik, jadi sahkan model, kawalan, keperluan kuasa dan skop yang disebut harga sebelum menganggapnya termasuk.
 
 ### Adakah awning tetap pilihan terbaik untuk car porch?
 
@@ -4577,7 +4607,7 @@ Ia mempunyai titik penyelenggaraan yang berbeza, bukan jawapan sejagat. Selain p
 
 ### Apakah yang perlu dihantar untuk sebut harga awning tetap atau boleh tarik?
 
-Hantar lokasi, foto bukaan dan titik pengancing, lebar serta unjuran anggaran, waktu anda mahu matahari atau teduhan, sama ada lindungan hujan kekal penting, rupa bahan atau fabrik yang disukai, dan sebarang peraturan JMB, MC, pengurusan atau majlis. Dengan itu, sebut harga boleh membandingkan skop yang sesuai tanpa menganggap sistem bermotor atau produk pembekal tertentu.
+Hantar lokasi, foto bukaan dan titik pengancing, lebar serta unjuran anggaran, waktu anda mahu matahari atau teduhan, sama ada lindungan hujan kekal penting, rupa bahan atau fabrik yang disukai, dan sebarang peraturan JMB, MC atau pengurusan. Dengan itu, sebut harga boleh membandingkan skop yang sesuai tanpa menganggap sistem bermotor atau produk pembekal tertentu.
 
 ## Dapatkan nasihat awning tetap atau boleh tarik
 
@@ -4598,7 +4628,7 @@ Beritahu kami di mana awning akan dipasang, bila anda memerlukan teduhan dan sam
 - 如果您需要下雨时随时都有类似屋顶的永久遮盖，尤其是车棚、入口、杂物区、晾衣院和走道，可先考虑**固定雨棚**。
 - 如果您想在阳台、露台、庭院或店面按需要遮阳，也能够遵守系统的操作与天气护理说明，可以考虑**伸缩雨棚**。
 - 伸缩布艺系统不一定能取代聚碳酸酯、金属瓦、ACP 或玻璃等坚固屋面。材料、悬挑、固定和排水都必须适合现场。
-- 手动或电动操作可以**视工程范围和供应商供应情况商议**；未确认具体系统前，不应先行承诺。
+- 手动与电动操作均提供；开工前会确认具体型号、控制方式与报价范围。
 
 ## 什么是固定雨棚？
 
@@ -4608,11 +4638,11 @@ Beritahu kami di mana awning akan dipasang, bila anda memerlukan teduhan dan sam
 
 ## 什么是伸缩雨棚？
 
-伸缩雨棚使用布艺或其他可以伸出和收回的系统，通常配有操作五金。它适合想在一天不同时间调整阳光和阴影，而不是一直保持坚固屋面的住户。手动和电动机制是不同产品；只有在工程范围和供应商能够提供时，才会讨论电动操作。
+伸缩雨棚使用布艺或其他可以伸出和收回的系统，通常配有操作五金。它适合想在一天不同时间调整阳光和阴影，而不是一直保持坚固屋面的住户。手动和电动机制是不同产品；两者均提供，我们会在报价中确认适合现场的型号。
 
 伸缩系统更需要注意操作方式。强风时，或产品说明要求时，应把雨棚收回；布料、伸缩臂、支架和操作五金也要检查有没有磨损或移动。不要假设所有伸缩雨棚的挡雨方式、悬挑或操作限制都一样。把它当作天气遮盖前，应先确认实际系统。
 
-[帆布与布艺雨棚](/zh/services/awning-installation/canvas-and-fabric-awning)服务页面，是这类用途最接近的参考。具体伸缩或电动型号是否供应，仍取决于项目和供应商。
+[帆布与布艺雨棚](/zh/services/awning-installation/canvas-and-fabric-awning)服务页面，是这类用途最接近的参考。伸缩与电动型号均有提供，具体型号在报价中确认。
 
 ## 并排比较
 
@@ -4624,7 +4654,7 @@ Beritahu kami di mana awning akan dipasang, bila anda memerlukan teduhan dan sam
 | 风天护理 | 暴露在风中后检查骨架、固定、板材和排水 | 强风时按说明收回；不要自行假设抗风等级 |
 | 采光与开放感 | 长期改变遮盖下的阴影和采光 | 收起后可恢复阳光与较开放的空间 |
 | 保养 | 覆盖物、骨架、密封胶、排水沟和落水管 | 布料、伸缩臂、支架、接缝和操作五金，以及配备的排水 |
-| 操作 | 不需要每天开合 | 手动或电动操作可视工程范围和供应情况商议 |
+| 操作 | 不需要每天开合 | 提供手动与电动操作；型号于报价时确认 |
 
 这是一般选择方向，不是具体产品规格。实际安装系统、现场暴露情况、固定点和供应商说明应优先考虑。
 
@@ -4644,7 +4674,7 @@ Beritahu kami di mana awning akan dipasang, bila anda memerlukan teduhan dan sam
 
 ### 店面：外观、招牌与营业时间
 
-店面可能只需要营业时遮盖，打烊后则想让门面更开放。布艺或伸缩系统可为这种灵活性提供选择；固定 ACP、玻璃或金属系统则形成永久门面。最终方案取决于店面结构、招牌、进场条件、管理处或市政要求，以及供应商系统。
+店面可能只需要营业时遮盖，打烊后则想让门面更开放。布艺或伸缩系统可为这种灵活性提供选择；固定 ACP、玻璃或金属系统则形成永久门面。最终方案取决于店面结构、招牌、进场条件、管理处要求，以及所选系统。
 
 ## 下雨与刮风：重要区别
 
@@ -4670,9 +4700,9 @@ Beritahu kami di mana awning akan dipasang, bila anda memerlukan teduhan dan sam
 
 ## 分层地契、JMB 与管理处规定
 
-伸缩雨棚并不自动免于审批。公寓、组屋、围篱社区和商业楼宇可能限制悬挑、颜色、外观、固定点、操作五金，甚至规定什么时间可以伸出。固定雨棚同样可能受管制。
+伸缩雨棚同样受物业管理规定约束。公寓、组屋、围篱社区和商业楼宇可能限制悬挑、颜色、外观、固定点、操作五金，甚至规定什么时间可以伸出。固定雨棚同样可能受管制。
 
-在确定设计前，先向 JMB、MC、管理处或相关地方当局查询。我们可以提供建议范围、尺寸和规格来协助沟通，但您物业需要的批准必须由负责的管理处或当局确认。
+在确定设计前，先向 JMB、MC 或管理处查询。我们可以提供建议范围、尺寸和规格来协助沟通。
 
 ## 报价如何计算
 
@@ -4697,7 +4727,7 @@ Beritahu kami di mana awning akan dipasang, bila anda memerlukan teduhan dan sam
 
 ### 伸缩雨棚可以加装电动吗？
 
-电动操作可以视工程范围和供应商供应情况商议。不是每一款伸缩雨棚都有电动功能，所以在假定包含之前，应确认型号、控制方式、电源要求和报价范围。
+手动与电动选项均提供。不是每一款伸缩雨棚都有电动功能，所以在假定包含之前，应确认型号、控制方式、电源要求和报价范围。
 
 ### 车棚适合用固定雨棚吗？
 
@@ -4713,7 +4743,7 @@ Beritahu kami di mana awning akan dipasang, bila anda memerlukan teduhan dan sam
 
 ### 询问固定或伸缩雨棚报价要发什么？
 
-请发送位置、开口和固定点照片、大约宽度与悬挑、想要阳光或阴影的时间、是否必须永久挡雨、偏好的材料或布艺外观，以及 JMB、MC、管理处或市政规定。这样可以在不预设电动系统或特定供应商产品的情况下比较合适的工程范围。
+请发送位置、开口和固定点照片、大约宽度与悬挑、想要阳光或阴影的时间、是否必须永久挡雨、偏好的材料或布艺外观，以及 JMB、MC 或管理处规定。这样可以在不预设电动系统或特定供应商产品的情况下比较合适的工程范围。
 
 ## 获取固定或伸缩雨棚建议
 
@@ -4732,7 +4762,7 @@ Beritahu kami di mana awning akan dipasang, bila anda memerlukan teduhan dan sam
 
 ## Jawapan ringkas: apa yang perlu diputuskan dahulu
 
-- **Semak peraturan sebelum katalog.** Untuk kondominium, pangsapuri atau komuniti berpagar, JMB, MC atau pejabat pengurusan mungkin menetapkan had unjuran, penampilan dan titik pengancing. Untuk rumah berkembar/teres, garis panduan majlis tetap mungkin terpakai untuk struktur yang menghadap jalan atau sempadan.
+- **Semak peraturan sebelum katalog.** Untuk kondominium, pangsapuri atau komuniti berpagar, JMB, MC atau pejabat pengurusan mungkin menetapkan had unjuran, penampilan dan titik pengancing.
 - **Tentukan matlamat utama** — lindungan hujan, kawalan silau dan haba, privasi atau penampilan — kerana ia menentukan pilihan bahan.
 - **Padankan bahan dengan keutamaan cahaya.** Polikarbonat mengekalkan kecerahan ruang; ACP dan metal deck memberikan teduhan legap sepenuhnya; kaca tempered terang dan premium; kanvas atau fabrik memberikan rupa lebih lembut.
 - **Rancangkan laluan air.** Kecerunan, longkang dan paip turun mesti disalurkan ke longkang anda sendiri — bukan ke unit bawah atau laluan awam.
@@ -4746,7 +4776,7 @@ Balkoni di hartanah terurus biasanya padat, dengan tepi slab, dinding atau pagar
 
 ### Patio, teres atau halaman rumah berkembar/teres
 
-Rumah berkembar/teres biasanya mempunyai lebih kebebasan dari segi unjuran dan gaya, tetapi garis panduan majlis tempatan (contohnya DBKL, MBPJ atau MBSA) tetap mungkin terpakai untuk struktur yang menghadap jalan atau hampir dengan sempadan jiran. Patio dan teres biasanya membenarkan kawasan teduh lebih besar, jadi reka bentuk bentang, rangka dan saliran lebih penting.
+Rumah berkembar/teres biasanya mempunyai lebih kebebasan dari segi unjuran dan gaya. Patio dan teres biasanya membenarkan kawasan teduh lebih besar, jadi reka bentuk bentang, rangka dan saliran lebih penting.
 
 ### Tingkap dan pintu
 
@@ -4766,9 +4796,9 @@ Inilah langkah yang paling kerap diketepikan — dan langkah yang menentukan sam
 - **Saliran** — ke mana air hujan boleh disalurkan; titisan ke balkoni unit bawah atau laluan awam ialah aduan yang kerap.
 - **Syarat kerja** — dokumen kontraktor, insurans, waktu bekerja dan pengendalian serpihan.
 
-Sebelum membuat keputusan reka bentuk, tanya JMB, MC atau pejabat pengurusan anda secara bertulis peraturan yang terpakai untuk unit anda. Kami boleh menyediakan skop, dimensi dan spesifikasi bahan cadangan untuk menyokong perbincangan tersebut, tetapi syarat kelulusan hartanah anda mesti disahkan dengan pengurusan atau pihak berkuasa tempatan yang berkaitan — kami tidak menentukan atau menjamin kelulusan pihak bangunan.
+Sebelum membuat keputusan reka bentuk, tanya JMB, MC atau pejabat pengurusan anda secara bertulis peraturan yang terpakai untuk unit anda. Kami boleh menyediakan skop, dimensi dan spesifikasi bahan cadangan untuk menyokong perbincangan tersebut — peraturan ditetapkan oleh pengurusan anda.
 
-Pemilik rumah berkembar/teres juga digalakkan menyemak keperluan majlis untuk struktur yang menghadap hadapan sebelum fabrikasi bermula. Reka bentuk yang disahkan lebih dahulu jauh lebih murah daripada arahan pembongkaran kemudian.
+Reka bentuk yang disahkan lebih dahulu jauh lebih murah daripada arahan pembongkaran kemudian.
 
 ## Pilihan bahan untuk balkoni atau patio
 
@@ -4798,7 +4828,7 @@ Bab angin: tiada kontraktor bertanggungjawab yang patut mendakwa awning generik 
 
 ## Tetap atau gaya boleh tarik untuk balkoni anda?
 
-Kanopi tetap polikarbonat, kaca atau ACP sentiasa sedia apabila hujan tiba dan sesuai untuk pemilik yang mahu lindungan tanpa perlu diurus. Sistem fabrik gaya boleh tarik sesuai untuk mereka yang mahu memilih antara teduhan dan langit terbuka, dengan tambahan rutin operasi dan penjagaan fabrik. Operasi bermotor boleh dibincangkan bergantung pada skop dan ketersediaan pembekal — jangan anggap ia termasuk secara automatik. [Perbandingan boleh tarik vs tetap](/ms/blog/awning-boleh-tarik-vs-tetap-malaysia) kami dan skop [awning kanvas dan fabrik](/ms/services/awning-installation/canvas-and-fabric-awning) membincangkan pilihan ini dengan lebih terperinci.
+Kanopi tetap polikarbonat, kaca atau ACP sentiasa sedia apabila hujan tiba dan sesuai untuk pemilik yang mahu lindungan tanpa perlu diurus. Sistem fabrik gaya boleh tarik sesuai untuk mereka yang mahu memilih antara teduhan dan langit terbuka, dengan tambahan rutin operasi dan penjagaan fabrik. Operasi manual dan bermotor tersedia — sistem sebenar disahkan dalam sebut harga, bukan diandaikan. [Perbandingan boleh tarik vs tetap](/ms/blog/awning-boleh-tarik-vs-tetap-malaysia) kami dan skop [awning kanvas dan fabrik](/ms/services/awning-installation/canvas-and-fabric-awning) membincangkan pilihan ini dengan lebih terperinci.
 
 ## Apa yang perlu dihantar untuk sebut harga awning balkoni atau patio
 
@@ -4809,7 +4839,7 @@ Semakin lengkap mesej pertama anda, semakin tepat sebut harganya:
 - Lebar anggaran dan sejauh mana lindungan yang anda mahu.
 - Matlamat utama: lindungan hujan, kawalan silau, privasi atau penampilan.
 - Bahan atau rupa pilihan anda — atau minta pilihan dengan pertukaran dijelaskan.
-- Peraturan pengurusan atau majlis yang anda terima, jika ada.
+- Peraturan pengurusan yang anda terima, jika ada.
 - Sama ada penutup lama atau struktur sedia ada perlu dibongkar dahulu.
 
 Dengan foto dan ukuran yang jelas, banyak sebut harga balkoni dan patio boleh disediakan dari jauh; penilaian tapak diatur apabila titik pengancing, akses atau saliran perlu diperiksa secara langsung. [Panduan pemilihan awning rumah](/ms/blog/cara-memilih-awning-yang-sesuai-rumah-malaysia) kami boleh membantu anda merangka keputusan sebelum menghantar apa-apa.
@@ -4855,7 +4885,7 @@ Beritahu kami jenis hartanah, ruang yang anda mahu tutup dan sebarang peraturan 
 
 ## 简要答案：先决定什么？
 
-- **先查规则，再看款式。**对于共管公寓、组屋或有围篱社区，JMB、MC或管理处可能对悬挑、外观和固定点有规定。有地住宅临路或贴近边界的构筑物，也可能受市政厅指引约束。
+- **先查规则，再看款式。**对于共管公寓、组屋或有围篱社区，JMB、MC或管理处可能对悬挑、外观和固定点有规定。
 - **确定主要目标**——挡雨、控制眩光与热度、私密还是美观——这决定材料选择。
 - **按采光偏好匹配材料。**聚碳酸酯保持明亮；ACP与金属瓦完全遮光；钢化玻璃明亮且高档；帆布或布艺观感更柔和。
 - **规划水的去向。**坡度、天沟与落水管必须排入自家排水——绝不能排到楼下单位或公共走道。
@@ -4869,7 +4899,7 @@ Beritahu kami jenis hartanah, ruang yang anda mahu tutup dan sebarang peraturan 
 
 ### 有地住宅的露台、平台或庭院
 
-有地住宅在悬挑与样式上一般更自由，但临路或贴近邻居边界的构筑物仍可能受市政厅（如DBKL、MBPJ或MBSA）指引约束。露台与平台通常可以覆盖更大面积，因此跨距、骨架与排水设计更加重要。
+有地住宅在悬挑与样式上一般更自由。露台与平台通常可以覆盖更大面积，因此跨距、骨架与排水设计更加重要。
 
 ### 窗户与门
 
@@ -4889,9 +4919,9 @@ Beritahu kami jenis hartanah, ruang yang anda mahu tutup dan sebarang peraturan 
 - **排水**——雨水允许排向何处；滴落到楼下单位阳台或公共走道是常见投诉。
 - **施工条件**——承包商文件、保险、施工时间与余泥处理。
 
-在确定设计之前，先以书面方式向JMB、MC或管理处询问适用于你单位的规则。我们可以准备拟议工程范围、尺寸与材料规格以支持沟通，但你房产的审批要求必须与管理处或相关地方当局确认——我们不能代替楼宇方决定或保证批准。
+在确定设计之前，先以书面方式向JMB、MC或管理处询问适用于你单位的规则。我们可以准备拟议工程范围、尺寸与材料规格以支持沟通——规则由您的管理处决定。
 
-有地住宅业主同样应在制作开始前查证临街构筑物的市政要求。提前与相关方确认的设计，远比之后被要求拆除便宜。
+提前与相关方确认的设计，远比之后被要求拆除便宜。
 
 ## 阳台与露台的材料选择
 
@@ -4921,7 +4951,7 @@ Beritahu kami jenis hartanah, ruang yang anda mahu tutup dan sebarang peraturan 
 
 ## 阳台选固定式还是伸缩式？
 
-固定式聚碳酸酯、玻璃或ACP篷在下雨时随时可用，适合想要"装好就不用管"的业主。伸缩式布艺系统适合想在遮阳与开放天空之间自由切换的人，代价是操作习惯与布艺保养。电动操作可视工程范围和供应商供应情况商议——不应假定一定包含。我们的[伸缩 vs 固定对比](/zh/bo-ke/shen-suo-yu-peng-vs-gu-ding-yu-peng)与[帆布布艺雨棚](/zh/services/awning-installation/canvas-and-fabric-awning)服务对此有详细说明。
+固定式聚碳酸酯、玻璃或ACP篷在下雨时随时可用，适合想要"装好就不用管"的业主。伸缩式布艺系统适合想在遮阳与开放天空之间自由切换的人，代价是操作习惯与布艺保养。手动与电动选项均提供——具体系统以报价单为准，不应假定包含。我们的[伸缩 vs 固定对比](/zh/bo-ke/shen-suo-yu-peng-vs-gu-ding-yu-peng)与[帆布布艺雨棚](/zh/services/awning-installation/canvas-and-fabric-awning)服务对此有详细说明。
 
 ## 阳台露台雨棚报价要提供什么
 
@@ -4932,7 +4962,7 @@ Beritahu kami jenis hartanah, ruang yang anda mahu tutup dan sebarang peraturan 
 - 大约宽度与想要的悬挑深度。
 - 主要目标：挡雨、控眩光、私密还是美观。
 - 偏好的材料或外观——或请我们列出各选项的取舍。
-- 已收到的管理处或市政规则（如有）。
+- 已收到的物业管理规则（如有）。
 - 是否需要先拆除旧覆盖物或现有结构。
 
 照片与尺寸清晰时，许多阳台露台报价可以远程准备；当固定点、出入条件或排水需要实地确认时，我们会安排现场评估。我们的[家居雨棚选择指南](/zh/bo-ke/ru-he-wei-ma-lai-xi-ya-zhu-jia-xuan-ze-he-shi-yu-peng)可以帮你在发送资料前理清思路。

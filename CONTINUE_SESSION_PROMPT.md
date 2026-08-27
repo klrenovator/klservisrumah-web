@@ -62,9 +62,14 @@
 
 ## What Remains — OWNER-SIDE TASKS (cannot be done from repo)
 
+> **Step-by-step guide:** all owner-side tasks (these six + the awning
+> business confirmations) are consolidated with exact numbered steps,
+> priorities and a fill-in answer sheet in **`OWNER_ACTION_PLAN.md`** —
+> that file is the current authoritative hand-off document.
+
 These require owner access to external services. I can guide but not execute.
 
-### 1. NEXT_PUBLIC_GA_ID in Vercel
+### 1. ~~NEXT_PUBLIC_GA_ID in Vercel~~ → moved to OWNER_ACTION_PLAN.md §B3 (deferred by owner 2026-08-27)
 **Status:** Blocked — needs owner Vercel access
 **What to do:**
 1. Go to https://analytics.google.com/ — create GA4 property for klservisrumah.my
@@ -76,15 +81,11 @@ These require owner access to external services. I can guide but not execute.
 **I cannot do:** Access Vercel or Google Analytics
 **Note:** The Smart Service Finder's 7 analytics events are already wired (lib/analytics.ts + smart-service-finder.tsx) — they dual-deliver to dataLayer (GTM) and gtag (GA4). They fire only when NEXT_PUBLIC_GA_ID is set.
 
-### 2. ADMIN_PASSWORD in Vercel
-**Status:** Blocked — needs owner Vercel access
-**What to do:**
-1. Generate a strong random passphrase (e.g., 20+ chars, mix of letters/numbers/symbols)
-2. Go to Vercel → project settings → Environment Variables
-3. Add: ADMIN_PASSWORD = your-strong-password
-4. The old KL2024Admin is BURNED (was shipped publicly) — NEVER reuse it
-5. Test: visit /admin/login, verify login works with new password
-**I cannot do:** Access Vercel or set env vars
+### 2. ~~ADMIN_PASSWORD in Vercel~~ — REMOVED (2026-08-27, owner decision)
+**Status:** Done differently — the entire admin area was deleted (routes, API,
+components, auth libs, middleware gate). No password env var is needed or used
+anymore. See OWNER_ACTION_PLAN.md §B1. Do NOT reintroduce an admin surface or
+resurrect the burned KL2024Admin password.
 
 ### 3. GBP / IndexNow / Bing post-deploy pings
 **Status:** Blocked — needs owner access to external services

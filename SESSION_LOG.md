@@ -2474,3 +2474,65 @@ Continued from `AWNING_INSTALLATION_PROJECT.md` and the previous session's next-
 - **The awning project's buildable scope is complete:** pillar + 8 native specialty pages + full 8-post trilingual cluster, all gates green. Remaining items are owner-side: business confirmations 1–9 and real project photography in the awning tracker.
 - Candidate dedicated session (site-wide, outside awning scope): BlogPosting/Article schema for MS/ZH blog routes (now 216 topics; only EN emits it).
 - Never create standalone Air Conditioning content.
+
+# Session 2026-08-27 (part 8) — Owner action plan (awning + site-wide hand-off)
+
+Continued from `AWNING_INSTALLATION_PROJECT.md`. Repo inspection confirmed the awning project's buildable scope is fully complete at the last merged commit (pillar + 8 specialties × 3 locales + 8-post trilingual cluster; 216 blog topics / 648 articles; 4,736 sitemap URLs; 5,820-page build; all gates/audits green; working tree clean). The next highest-priority item was therefore **not** content work — it was the owner-side hand-off: the user asked for a step-by-step explanation of the remaining owner-side tasks. No completed work was redone; no code or content files were touched (documentation-only session, so the heavy build/gate re-run was unnecessary — the validated commit is unchanged).
+
+## What was done
+1. **Authored `OWNER_ACTION_PLAN.md`** (repo root): a step-by-step, Roman-Urdu-annotated owner guide consolidating every remaining owner-side item:
+   - Part A (A1–A10): the awning tracker's 9 business confirmations + real project photography — each with why it matters, exact answer options, and which files/sections the next AI session will update once answered (materials scope, pricing quote-only vs real rates, warranty terms, motorised/retractable, roller blinds, permits help, site-assessment policy, photo shoot specs + privacy/rules of use, certifications, coverage).
+   - Part B (B1–B7): site-wide owner tasks consolidated from `CONTINUE_SESSION_PROMPT.md` — ADMIN_PASSWORD (P0, old password burned), deploy + live check, GA4 `NEXT_PUBLIC_GA_ID`, GSC/Bing sitemap + request indexing, INDEXNOW_SECRET + Google Business Profile, native-speaker skim, H3 rollout decision — each with numbered sub-steps.
+   - Part C: a copy-fill answer sheet template the owner can paste into the next AI session.
+   - Part D: priority-ordered checklist table (P0 security/measurement → P2 decisions).
+2. **Updated `AWNING_INSTALLATION_PROJECT.md`:** current branch recorded; PENDING now distinguishes the completed owner-hand-off documentation from the two remaining open items (real photography — owner-side; MS/ZH BlogPosting schema — repo-side but explicitly deferred, not owner-blocked); NEEDS BUSINESS CONFIRMATION header now points at the step-by-step plan and states nothing is assumed resolved without owner answers.
+3. **Updated `CONTINUE_SESSION_PROMPT.md`:** owner-tasks section now points at `OWNER_ACTION_PLAN.md` as the consolidated, step-by-step version.
+
+## Accuracy rules preserved
+No new business claim, price, warranty, rating or certification was introduced anywhere; the plan documents only already-verified facts and hedges. All pending confirmations remain owner-side and hedged on the live site.
+
+## Verification
+- Working tree was clean at `1f655c5` (merge of PR #168 — the fully validated awning cluster-complete state); this session changed documentation only (`.md` files), which cannot affect the build. Full gate/build re-run intentionally skipped per the tracker's "do not redo completed work" rule; the next content session must re-run the full gate suite as usual.
+
+## Files changed
+- Added: `OWNER_ACTION_PLAN.md`
+- Modified: `AWNING_INSTALLATION_PROJECT.md` (header branch line, PENDING, NEEDS BUSINESS CONFIRMATION header), `SESSION_LOG.md`, `CONTINUE_SESSION_PROMPT.md` (pointer only)
+
+## Next session
+- If the owner returns the Part C answer sheet: apply confirmed answers to the exact files listed per item in `OWNER_ACTION_PLAN.md` (materials, pricing, warranty, permits, site-assessment, coverage), then re-run the full gate suite + build + smoke.
+- If real photos arrive: integrate per §A8 (compress/WebP, trilingual alt text, replace `hero-awning.svg` placeholders where appropriate, add real awning entries to `config/projects-data.ts`, update schema).
+- Candidate dedicated session (site-wide, not awning): BlogPosting/Article schema for MS/ZH blog routes (216 topics; only EN emits it).
+- Never create standalone Air Conditioning content; never invent credentials or business claims.
+
+# Session 2026-08-27 (part 9) — Owner round-1 answers implemented + admin area removed
+
+The owner answered the OWNER_ACTION_PLAN round-1 items and asked for all remaining repo-side work to be finished. No completed work was redone; every change traces to an explicit owner answer ("do not invent" rule respected — the only new figures are published KL/Selangor market-rate ranges, always labelled as market references, never as our quotation).
+
+## What was done
+1. **B1 — admin area removed site-wide (owner decision):** deleted `/admin/login`, `/admin/tools`, `/api/admin/login`, `/api/admin/logout`, `components/admin/*`, `lib/admin-auth.ts`, `lib/admin-auth-edge.ts`; middleware admin gate, robots `/admin/` disallow, internal-link-audit special case and the `.env.example` `ADMIN_PASSWORD` block removed. `ADMIN_PASSWORD` is obsolete — no env var needed anymore. `/admin/*` now 404s.
+2. **A3/A7/A10 — warranty, free site visit, coverage:** awning hubs (EN/MS/ZH) now state a 12-month workmanship warranty (material/fabric warranty per manufacturer terms), free site visits and quotations, and "Klang Valley (Kuala Lumpur & Selangor)" coverage wording; highlights, process step 02, FAQs, guide CTA and AIO summaries updated to match.
+3. **A4 — motorised/retractable firmed:** all "depending on scope and supplier" hedges across the hub, canvas specialty and blog posts (EN/MS/ZH) replaced with "manual and motorised available; model confirmed at quote".
+4. **A5 — new 9th sub-service "Outdoor Roller Blinds"** (EN/MS/ZH): sub-service entry, guide type, full native MS/ZH specialty block, smart-finder synonyms/materials, topical-map node (+1 → 222 specialty relationships; 444 native blocks).
+5. **A6 — permits content removed:** permit/DBKL/council/local-authority wording removed from the awning hub (permits FAQ replaced with an outdoor-roller-blinds FAQ), all 8 blog posts × 3 locales, balcony/canvas specialties (strata reduced to neutral "check your management (JMB/MC) rules"), and the welding specialty's awning-approval FAQ reframed to management rules. The shared site-wide decision-tree's generic "if the work involves permits…" escalation line was left untouched (no awning-specific claim; flagged to owner in the plan).
+6. **A2 — market-rate reference table:** published KL/Selangor installed ranges (metal deck RM 15–45, polycarbonate RM 25–80, ACP RM 28–120, fabric RM 20–100, glass RM 60–250, motorised retractable RM 150–400+ per sq ft) added to the pricing-guide post (EN/MS/ZH) and summarised in the hub cost FAQ — always labelled market references from KL/Selangor contractors/pricing guides (2024–2026), not our quotation; service remains project-quoted.
+7. **A9 — certifications:** nothing added (owner: don't show). A1 materials unchanged. A8 photos remain pending (owner will supply later).
+8. **Docs:** OWNER_ACTION_PLAN.md rewritten (round-1 status table, round-2 answer sheet, updated B tasks); AWNING_INSTALLATION_PROJECT.md (§4, §10 implementation log, STATUS, confirmations resolved); AWNING_SEO_STRATEGY.md (§Q/§R); CONTINUE_SESSION_PROMPT.md (admin task marked done/removed).
+
+## Result
+- Awning: 8 → **9 sub-services × 3 locales** (27 → 30 awning sub-routes +roller-blind twins); specialty registry 221 → **222** (444 native MS/ZH blocks); production build **5,823 pages** (was 5,820); sitemap **4,739 URLs** (15 roller-blind URLs); admin surface gone.
+
+## Verification
+- PASS: `npm run prebuild` — all generators + validators + estimator suite (**320,331 assertions, 0 failures**); specialty-locale 222×2, specialty-coverage 222/222, topical-map 29/29 & 222 relationships.
+- PASS: `npm run type-check`; `npm run lint` (0 warnings).
+- PASS: `npm run build` (5,823 static pages) and production smoke on `next start`: `/admin`, `/admin/login`, `/admin/tools` → 404; 3 hub locales + new roller-blind sub-service ×3 + canvas + 6 article routes → 200 with single H1 and 4-entry hreflang clusters; EN hub shows 12-month warranty / Klang Valley / Outdoor Roller Blinds / free consultation, FAQPage=15, HowTo=6; pricing guide shows the market table in all 3 locales; zero "permit" text on the awning hub; no "depending on scope and supplier" hedges remain; robots.txt no longer disallows /admin/.
+- PASS: `audit:html` — 5,815 pages, 0 fatal / 0 warnings; `audit:seo-head` — 4,739 sitemap URLs, 0 duplicates, 0 warnings; `audit:meta` — 0 failures; `audit:links` — 436,341 rendered links, **0 broken targets**.
+
+## Files changed
+- Deleted: `app/(en)/admin/**`, `app/api/admin/**`, `components/admin/**`, `lib/admin-auth.ts`, `lib/admin-auth-edge.ts`
+- Modified: `middleware.ts`, `app/robots.ts`, `.env.example`, `scripts/internal-link-audit.ts`, `config/services-data.ts`, `config/specialty-locale-content.ts`, `config/topical-authority-map.ts`, `lib/smart-finder-index.ts`, `config/service-seo.ts`, `config/blog-data-awning.ts`, `config/blog-i18n.ts`, `OWNER_ACTION_PLAN.md`, `AWNING_INSTALLATION_PROJECT.md`, `AWNING_SEO_STRATEGY.md`, `CONTINUE_SESSION_PROMPT.md`, `SESSION_LOG.md`
+- Regenerated by build: rate-book, quote-catalog, service-summary, content-nav, `public/llms-full.txt`, `public/site-summary.json`
+
+## Next session
+- Owner round-2 (when answers/photos arrive): integrate real awning photography (§A8), apply GA4/GSC confirmations if given, optional decision-tree generic "permits" line rewording.
+- Candidate dedicated session (site-wide, not awning): BlogPosting/Article schema for MS/ZH blog routes (216 topics; only EN emits it).
+- Never create standalone Air Conditioning content; never invent credentials or business claims.

@@ -217,7 +217,7 @@
       "slug": "awning-installation",
       "title": "Awning Installation Services",
       "startPrice": "On Quote",
-      "warranty": "Workmanship warranty as stated in your quotation",
+      "warranty": "12-month workmanship warranty on fabrication & installation, as stated in your quotation",
       "path": "/services/awning-installation"
     }
   ],
@@ -616,11 +616,11 @@
   ],
   "counts": {
     "services": 29,
-    "subServices": 221,
+    "subServices": 222,
     "areaPages": 37,
     "problemPages": 86,
     "blogPosts": 216,
-    "indexablePages": 4736
+    "indexablePages": 4739
   },
   "pricingPrinciple": "fair standard Malaysian pricing, itemised and confirmed in writing before work begins",
   "hours": "Mon–Sun · 9:00 AM – 6:00 PM (Everyday Open)",

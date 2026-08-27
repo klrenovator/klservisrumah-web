@@ -118,8 +118,8 @@ function isKnown(raw: string): boolean {
       if (known.has(stripped) || known.has(decodeURIComponent(stripped))) return true;
     }
   }
-  // The admin area is gated by middleware (login redirect), not static HTML.
-  if (url === "/admin" || url.startsWith("/admin/")) return true;
+  // The admin area was removed (owner decision, 2026-08-27); any stale /admin
+  // link now 404s against the static route universe, so no special case remains.
   return false;
 }
 
