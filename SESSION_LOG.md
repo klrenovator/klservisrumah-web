@@ -2406,3 +2406,38 @@ Continued from `AWNING_INSTALLATION_PROJECT.md` and the previous session's next-
 - Business confirmations 1–9 in the awning tracker remain owner-side; real project photography is still pending.
 - Candidate dedicated session (site-wide, outside awning scope): BlogPosting/Article schema for MS/ZH blog routes.
 - Never create standalone Air Conditioning content.
+
+# Session 2026-08-27 (part 6) — Awning blog cluster post 6 (retractable vs fixed)
+
+Continued from `AWNING_INSTALLATION_PROJECT.md` and the previous session's next-priority list. The next highest-priority item was supporting-cluster post 6, so no completed pillar work was redone. No standalone Air Conditioning content was created; retractable and motorised awning wording remains conditional because business confirmation is still outstanding.
+
+## What was done
+1. **Post 6/8 — "Retractable vs Fixed Awnings: Which Fits Your Home?"** Added a full native trilingual article (EN + Malaysian Malay + Simplified Chinese), category "Awning", cover `/hero-awning.svg`. It compares permanent and retractable systems by application, rain and wind care, light/heat/openness, fabric and mechanism maintenance, strata/JMB rules, quotation factors and decision checklist.
+2. **Accuracy boundaries preserved.** The article does not claim a wind rating, stormproof performance, fixed price, warranty, fabric lifespan or universal product availability. Manual/motorised operation is explicitly stated as depending on scope and supplier availability; retractable systems are not presented as automatic substitutes for solid roofs.
+3. **Internal links and topical wiring.** Each locale links to its localized awning pillar, canvas/fabric specialty, balcony/patio/window specialty, car-porch context, selection guide, maintenance guide and pricing guide. Added the English slug to the awning BLOG pool and the canvas/fabric plus balcony/patio/window specialty `relatedBlogs` lists; all references validate against the live route universe.
+4. **Generated discovery artifacts.** Regenerated `config/blog-slugs.generated.json`, `config/blog-related.generated.json`, `public/llms-full.txt` and `public/site-summary.json`; the published blog registry is now 214 topics / 642 localized articles.
+5. **Tracker and strategy documentation.** Updated `AWNING_INSTALLATION_PROJECT.md` and `AWNING_SEO_STRATEGY.md`: post 6 is marked completed, posts 7–8 remain pending, current branch/status/counts are recorded, and the nine business confirmations remain unchanged.
+
+## Result
+- Blog registry: 213 → **214 topics / 642 localized articles**; 735 distinct article-link targets, 0 source-level blog validation errors.
+- Production build generated **5,814 static pages**; current sitemap contains **4,730 URLs**, including all three post-6 locale routes with four-entry hreflang clusters.
+
+## Verification
+- PASS: `npm run validate:blogs` (214 topics, 642 localized articles), `npm run audit:topical-map` (29/29 services, 221 typed specialty relationships), specialty locale/coverage, service-i18n, i18n parity, problem-i18n, client-bundle guard and estimator suite (**320,331 assertions, 0 failures**) via `npm run build` prebuild.
+- PASS: `npm run type-check` and `npm run lint -- --max-warnings=0`.
+- PASS: `npm run build` production build.
+- PASS: production smoke (`next start`): EN `/blog/retractable-vs-fixed-awning-malaysia`, MS `/ms/blog/awning-boleh-tarik-vs-tetap-malaysia` and ZH `/zh/bo-ke/shen-suo-yu-peng-vs-gu-ding-yu-peng` all return HTTP 200 with one H1, correct `en-MY`/`ms-MY`/`zh-MY` language, localized title/H1, all four hreflang alternates and localized canvas/fabric links; sitemap inclusion verified.
+- PASS: `audit:html` — 5,806 pages, 0 fatal findings / 0 warnings; `audit:seo-head` — 4,730 self-canonical indexable pages and sitemap URLs, 0 duplicate titles/descriptions, 0 warnings; `audit:meta` — 0 JSON-LD parse failures, breadcrumb mismatches or duplicate title groups. SEO head was rerun serially after a parallel sandbox process was killed for memory pressure.
+- PASS: rendered internal-link audit — 5,806 pages / **435,635 links**, 0 broken targets.
+
+## Files changed
+- Modified: `config/blog-data-awning.ts` (+1 EN post), `config/blog-i18n.ts` (+1 native MS/ZH pair), `config/topical-authority-map.ts` (awning BLOG pool + canvas/fabric and balcony/patio/window specialties), `scripts/validate-blog-production.ts` (213 → 214), `AWNING_INSTALLATION_PROJECT.md`, `AWNING_SEO_STRATEGY.md`, `SESSION_LOG.md`.
+- Regenerated: `config/blog-slugs.generated.json`, `config/blog-related.generated.json`, `public/llms-full.txt`, `public/site-summary.json`.
+
+## Next session
+- Awning blog cluster posts 7–8 remain pending:
+  - 7 choosing an awning for balcony/patio/yard → balcony-patio-and-window-awning; keep the strata/JMB focus;
+  - 8 replacing an old/leaking awning → awning-replacement-and-repair; cover frame reuse, sheet condition, drainage and removal.
+- Business confirmations 1–9 in the awning tracker remain owner-side; real project photography is still pending.
+- Candidate dedicated session (site-wide, outside awning scope): BlogPosting/Article schema for MS/ZH blog routes.
+- Never create standalone Air Conditioning content.

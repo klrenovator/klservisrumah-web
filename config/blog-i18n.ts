@@ -4445,6 +4445,280 @@ Hantar foto dan dimensi anggaran di WhatsApp serta terangkan kebocoran, karat at
 
 在 WhatsApp 发送照片和大致尺寸，并说明您看到的漏水、生锈或积水情况。KL Servis Rumah 可以先了解应用，再为合适的雨棚工程准备针对项目的分项报价。[与我们的团队聊聊](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah%EF%BC%8C%E6%88%91%E9%9C%80%E8%A6%81%E5%B8%AE%E5%BF%99%E5%A4%84%E7%90%86%E6%BC%8F%E6%B0%B4%E3%80%81%E7%94%9F%E9%94%88%E6%88%96%E7%A7%AF%E6%B0%B4%E7%9A%84%E9%9B%A8%E6%A3%9A%E3%80%82)`
     }
+  },
+  "retractable-vs-fixed-awning-malaysia": {
+    ms: {
+      slug: "awning-boleh-tarik-vs-tetap-malaysia",
+      title: "Awning Boleh Tarik vs Awning Tetap: Mana Sesuai untuk Rumah Anda?", category: "Awning",
+      excerpt: "Patut pilih awning kekal atau teduhan yang boleh dibuka dan ditutup? Bandingkan lindungan hujan, penjagaan ketika angin, cahaya, penyelenggaraan, peraturan strata dan aplikasi untuk rumah Malaysia.",
+      metaTitle: "Awning Boleh Tarik vs Tetap di Malaysia | Panduan",
+      metaDesc: "Bandingkan awning boleh tarik dan awning tetap untuk rumah Malaysia — lindungan hujan, penjagaan angin, cahaya, penyelenggaraan, strata dan faktor sebut harga.",
+      content: `Awning tetap dan awning boleh tarik menyelesaikan keperluan yang berbeza. Sistem tetap memberikan lindungan kekal di atas car porch, pintu masuk, ruang jemuran atau laluan. Sistem boleh tarik pula memberikan teduhan apabila diperlukan dan membenarkan lebih banyak cahaya masuk apabila teduhan tidak diperlukan, sesuai untuk balkoni, patio atau hadapan kedai.
+
+Pilihan yang betul bukan sekadar yang nampak lebih cantik. Pertimbangkan jumlah lindungan hujan yang anda perlukan, sama ada kawasan perlu kekal terbuka atau teduh, cara sistem akan dikendalikan dan diselenggara, serta perkara yang dibenarkan oleh pengurusan bangunan. KL Servis Rumah membincangkan [pilihan awning dan sebut harga projek](/ms/services/awning-installation) di seluruh KL & Selangor; penyelesaian tetap, fabrik dan gaya boleh tarik tertakluk pada aplikasi, skop dan ketersediaan pembekal.
+
+## Jawapan ringkas: tetap atau boleh tarik?
+
+- Pilih **tetap** apabila anda memerlukan lindungan seperti bumbung yang sentiasa ada apabila hujan — khususnya untuk car porch, pintu masuk, kawasan utiliti, ruang jemuran dan laluan.
+- Pertimbangkan **boleh tarik** apabila anda mahu teduhan mengikut keperluan untuk balkoni, patio, teres atau hadapan kedai, dan boleh mematuhi arahan operasi serta penjagaan cuaca sistem tersebut.
+- Sistem fabrik boleh tarik tidak semestinya menggantikan bumbung pepejal polikarbonat, metal deck, ACP atau kaca. Bahan, unjuran, pengancing dan saliran perlu sesuai dengan tapak.
+- Operasi manual atau bermotor boleh dibincangkan **bergantung pada skop dan ketersediaan pembekal**; jangan anggap ia tersedia sebelum sistem sebenar disahkan.
+
+## Apa itu awning tetap?
+
+Awning tetap dipasang pada dinding, rasuk atau struktur sokongan lain, atau disokong oleh tiang, dan kekal pada kedudukannya. Penutupnya boleh berupa polikarbonat, metal deck, ACP, kaca tempered atau kanvas/fabrik tetap, bergantung pada aplikasi dan sebut harga. Reka bentuknya biasanya mengambil kira bentang, unjuran, rangka, kecerunan, pengedap dan tempat air hujan akan disalurkan.
+
+Kelebihan utamanya ialah sentiasa tersedia. Awning tetap tidak perlu dibuka apabila cuaca berubah, jadi ia praktikal di atas car porch atau pintu belakang apabila hujan turun ketika tiada sesiapa di rumah. Pertukarannya, lindungan itu kekal: kawasan tersebut tidak boleh dibuka sepenuhnya apabila anda mahu cahaya matahari terus, dan penutup, rangka serta saliran perlu diperiksa secara berkala. Panduan [awning car porch](/ms/services/awning-installation/car-porch-awning-installation) kami menerangkan mengapa ketinggian kenderaan, kecerunan dan saliran penting untuk lindungan kekal.
+
+## Apa itu awning boleh tarik?
+
+Awning boleh tarik menggunakan fabrik atau sistem lain yang boleh diunjur dan ditarik semula, biasanya dengan kelengkapan operasi. Ia berguna apabila pemilik mahu mengubah jumlah matahari dan teduhan sepanjang hari, bukannya mengekalkan bumbung pepejal sepanjang masa. Mekanisme manual dan bermotor ialah produk yang berbeza; operasi bermotor hanya dibincangkan apabila skop dan pembekal dapat menyokongnya.
+
+Sistem boleh tarik memerlukan lebih banyak perhatian terhadap cara ia digunakan. Ia patut ditarik semula ketika angin kencang atau apabila arahan produk memerlukannya, manakala fabrik, lengan, braket dan kelengkapan operasi perlu diperiksa untuk haus atau pergerakan. Jangan anggap semua awning boleh tarik mempunyai cara mengendalikan hujan, unjuran atau had operasi yang sama. Sahkan sistem sebenar sebelum menganggapnya sebagai lindungan cuaca.
+
+Skop [awning kanvas dan fabrik](/ms/services/awning-installation/canvas-and-fabric-awning) ialah rujukan perkhidmatan paling hampir untuk aplikasi ini. Ketersediaan model boleh tarik atau bermotor tertentu tetap bergantung pada projek dan pembekal.
+
+## Perbandingan sebaris
+
+| Pertimbangan | Awning tetap | Awning boleh tarik |
+|---|---|---|
+| Konsep utama | Lindungan kekal yang sentiasa berada di tempatnya | Teduhan yang boleh diunjur atau ditarik semula |
+| Aplikasi sesuai | Car porch, pintu masuk, ruang jemuran, laluan dan lindungan utiliti kekal | Balkoni, patio, teres atau hadapan kedai yang memerlukan teduhan mengikut masa |
+| Ketika hujan | Sedia digunakan, dengan kecerunan dan saliran yang dirancang | Pengendalian dan prestasi hujan bergantung pada sistem fabrik sebenar; ikut arahannya |
+| Penjagaan ketika angin | Periksa rangka, pengancing, lembaran dan saliran selepas terdedah | Tarik semula seperti diarahkan ketika angin kencang; jangan anggap ada kadar angin tertentu |
+| Cahaya dan keterbukaan | Teduhan dan cahaya di bawahnya berubah secara kekal | Boleh dibuka untuk membenarkan matahari dan ruang terbuka |
+| Penyelenggaraan | Penutup, rangka, pengedap, longkang dan paip turun | Fabrik, lengan, braket, sendi dan kelengkapan operasi, serta saliran jika ada |
+| Operasi | Tiada keperluan membuka atau menutup setiap hari | Operasi manual atau bermotor boleh dibincangkan bergantung pada skop dan pembekal |
+
+Ini ialah panduan pemilihan umum, bukan spesifikasi produk tertentu. Sistem yang dipasang, pendedahan tapak, titik pengancing dan arahan pembekal perlu diutamakan.
+
+## Jenis yang sesuai untuk bahagian rumah di Malaysia
+
+### Car porch: lindungan kekal biasanya paling penting
+
+Car porch memerlukan lindungan hujan dan matahari walaupun penghuni tiada di rumah. Sistem tetap polikarbonat, ACP atau metal deck biasanya dipertimbangkan kerana ia boleh direka mengikut ketinggian kenderaan, bentang, rangka dan saliran. Sistem boleh tarik boleh dibincangkan untuk reka bentuk tertentu, tetapi jangan anggap ia memberikan susunan sepanjang cuaca yang sama seperti bumbung tetap. Nyatakan kenderaan tertinggi, susunan tempat letak kereta dan tempat air boleh dialirkan ketika meminta sebut harga.
+
+### Pintu masuk dan tingkap: seimbangkan cahaya dengan perlindungan
+
+Di pintu masuk atau tingkap, pilihan bergantung pada sama ada anda mahu teduhan kekal, cahaya yang berubah atau penampilan tertentu. Awning kaca atau polikarbonat tetap mengekalkan lindungan di tempatnya; sistem fabrik boleh tarik mungkin sesuai jika anda mahu mengubah teduhan sepanjang hari, selagi ruang bukaan, pengancing dan kawasan operasi mengizinkan. Perkhidmatan [awning balkoni, patio dan tingkap](/ms/services/awning-installation/balcony-patio-and-window-awning) merangkumi aplikasi khusus tapak ini.
+
+### Balkoni, patio dan teres: fleksibiliti boleh membantu
+
+Ruang luar untuk berehat selalunya mendapat manfaat daripada teduhan yang boleh diubah. Awning fabrik boleh tarik membenarkan pemandangan dan langit terbuka apabila ditarik, manakala penutup polikarbonat, kaca atau fabrik tetap memberikan kawasan teduh yang lebih konsisten. Dalam kedua-dua keadaan, semak peraturan bangunan sebelum memilih unjuran, warna, rangka atau mekanisme operasi.
+
+### Hadapan kedai: rupa, papan tanda dan rutin operasi
+
+Hadapan kedai mungkin memerlukan lindungan ketika waktu perniagaan dan muka hadapan yang lebih terbuka selepas tutup. Sistem fabrik atau boleh tarik boleh dipertimbangkan untuk fleksibiliti ini, manakala sistem ACP, kaca atau metal deck tetap membentuk muka hadapan kekal. Pilihan akhir bergantung pada struktur kedai, papan tanda, akses, syarat pengurusan atau majlis dan sistem pembekal.
+
+## Hujan dan angin: perbezaan yang penting
+
+Awning tetap sentiasa berada di tempatnya, tetapi ia bukan bebas penyelenggaraan. Hujan lebat tetap menguji kecerunan, pertindihan, flashing dinding, pengedap, longkang dan paip turun. Awning boleh tarik mengurangkan struktur kekal, tetapi menambah keputusan operasi: seseorang perlu menariknya semula mengikut arahan sistem apabila keadaan berubah.
+
+Tiada satu label pun bermaksud awning itu automatik kalis angin atau kalis ribut. Jangan bergantung pada dakwaan umum bahawa awning boleh menahan semua keadaan cuaca. Tanya apakah sistem yang dicadangkan direka untuk dilakukan, bagaimana kedudukannya ketika angin kencang atau hujan lebat, dan bahagian mana yang termasuk dalam sebut harga. Jika tapak memerlukan lindungan pepejal tanpa henti, reka bentuk tetap mungkin titik mula yang lebih mudah.
+
+## Cahaya, haba dan privasi
+
+Bumbung tetap mengubah jumlah cahaya di bawah awning sepanjang masa. Polikarbonat jernih atau tinted boleh mengekalkan kawasan lebih cerah, manakala ACP dan metal deck memberikan teduhan lebih legap; kaca mengekalkan penampilan yang terang tetapi tetap memerlukan pengancing dan saliran yang sesuai. Lihat [panduan memilih awning](/ms/blog/cara-memilih-awning-yang-sesuai-rumah-malaysia) kami untuk keputusan bahan mengikut aplikasi.
+
+Sistem boleh tarik membolehkan pengguna memilih masa kawasan itu teduh, tetapi kedudukan terbuka juga mendedahkan ruang kepada matahari dan hujan. Warna fabrik, tenunan, unjuran, arah dan dinding sekeliling mempengaruhi hasilnya. Jangan nyatakan bahawa mana-mana awning menjamin pengurangan suhu dalaman atau tahap privasi tertentu tanpa penilaian tapak.
+
+## Penyelenggaraan dan penjagaan harian
+
+Sistem tetap dan boleh tarik kedua-duanya perlu diperiksa, tetapi titik semak berbeza:
+
+- **Sistem tetap:** lihat penutup, pertindihan lembaran, sendi, tepi dinding, pengikat, kemasan rangka, longkang dan paip turun. Bersihkan serpihan yang boleh dicapai dengan selamat dan perhatikan takungan, kebocoran, karat atau lendutan.
+- **Sistem boleh tarik:** periksa fabrik, lengan, braket, sendi dan mekanisme operasi untuk kotoran, kerosakan, kelonggaran atau pergerakan luar biasa. Ikut arahan produk untuk pembersihan, menarik semula dan penyimpanan; jangan paksa mekanisme.
+- **Semua sistem:** jangan panjat awning, melonggarkan pengikat struktur dari kedudukan tidak selamat atau mereka bentuk lubang saliran sendiri. [Panduan penyelenggaraan awning](/ms/blog/penyelenggaraan-awning-bocor-karat-air-bertakung) kami menerangkan pemeriksaan selamat dan tanda amaran dengan lebih lanjut.
+
+Fabrik ialah komponen yang haus, bukan lembaran kekal. Jika fabrik kekal lembap, kotor, koyak atau sukar dikendalikan, catat keadaannya dan minta skop pembaikan atau penggantian sebenar daripada menganggap motor baharu atau lapisan pengedap tambahan akan menyelesaikan masalah.
+
+## Peraturan strata, JMB dan pengurusan
+
+Awning boleh tarik tidak automatik terkecuali daripada kelulusan. Kondominium, pangsapuri, komuniti berpagar dan bangunan komersial mungkin menetapkan had pada unjuran, warna, keterlihatan, titik pengancing, kelengkapan operasi atau waktu sistem boleh diunjurkan. Awning tetap juga boleh tertakluk pada peraturan yang sama.
+
+Semak dengan JMB, MC, pejabat pengurusan atau pihak berkuasa tempatan yang berkaitan sebelum membuat keputusan. Kami boleh menyediakan skop, dimensi dan spesifikasi cadangan untuk menyokong perbincangan, tetapi kelulusan hartanah anda mesti disahkan dengan pihak berkuasa atau pengurusan yang bertanggungjawab.
+
+## Bagaimana harga disebut
+
+Tiada harga generik yang boleh dipercayai untuk membandingkan awning tetap dan boleh tarik. Sebut harga boleh berubah mengikut lebar dan unjuran, sistem bumbung atau fabrik, rangka, braket, kelengkapan operasi, ketinggian dan akses, struktur sedia ada, saliran, kemasan tersuai, pembongkaran serta spesifikasi strata. Sistem bermotor juga mempunyai keperluan peralatan dan pemasangan yang berbeza daripada sistem manual, jika tersedia untuk projek tersebut.
+
+Hantar lokasi, foto bukaan dan titik pengancing, lebar serta unjuran anggaran, waktu anda mahu teduhan, sama ada lindungan hujan kekal penting, dan sebarang peraturan pengurusan. [Panduan harga awning](/ms/blog/bagaimana-harga-awning-dikira-di-malaysia) kami menerangkan mengapa sebut harga khusus projek dan berperincian, bukan kadar tetap yang diterbitkan.
+
+## Senarai semak keputusan mudah
+
+- Perlu kawasan terlindung setiap kali hujan, termasuk ketika tiada sesiapa di rumah? Mulakan dengan pilihan tetap.
+- Mahu membuka kawasan kepada matahari atau langit pada waktu tertentu? Pertimbangkan boleh tarik, tertakluk pada sistem dan pembekal.
+- Menutup car porch, ruang jemuran atau laluan? Utamakan bentang, ketinggian, kecerunan, saliran dan lindungan cuaca kekal.
+- Menutup balkoni, patio atau hadapan kedai? Utamakan ruang operasi, rupa, cahaya, rutin penjagaan angin dan peraturan pengurusan.
+- Mahu operasi bermotor? Tanya sama ada model itu benar-benar tersedia untuk skop anda; jangan anggap ia termasuk secara automatik.
+- Masih tidak pasti? Hantar foto dan ukuran, kemudian bandingkan skop tetap dan boleh tarik yang dicadangkan baris demi baris.
+
+## Soalan lazim
+
+### Adakah awning boleh tarik lebih baik daripada awning tetap?
+
+Tiada satu yang terbaik untuk semua keadaan. Awning tetap sesuai untuk lindungan kekal dan aplikasi bumbung pepejal; sistem boleh tarik sesuai untuk kawasan yang teduhnya perlu diubah. Keputusan bergantung pada lindungan hujan, keterbukaan, operasi, penyelenggaraan, titik pengancing dan peraturan tapak.
+
+### Bolehkah awning boleh tarik menggunakan motor?
+
+Operasi bermotor boleh dibincangkan bergantung pada skop dan ketersediaan pembekal. Ia bukan ciri automatik setiap awning boleh tarik, jadi sahkan model, kawalan, keperluan kuasa dan skop yang disebut harga sebelum menganggapnya termasuk.
+
+### Adakah awning tetap pilihan terbaik untuk car porch?
+
+Sistem tetap biasanya titik mula yang lebih terus apabila kereta memerlukan teduhan dan lindungan hujan yang kekal. Reka bentuk akhir masih bergantung pada ketinggian kenderaan, bentang, titik pengancing, bahan, kecerunan dan saliran. Penyelesaian boleh tarik hanya patut dipertimbangkan selepas kesesuaiannya untuk pendedahan dan rutin penggunaan disahkan.
+
+### Bolehkah awning boleh tarik dibiarkan terbuka ketika hujan atau angin?
+
+Ikut arahan produk dan pembekal. Tarik semula ketika angin kencang atau apabila sistem memerlukannya, dan jangan anggap awning boleh tarik generik mempunyai kadar angin tertentu atau boleh kekal terunjur dalam semua hujan. Minta panduan operasi untuk sistem yang dicadangkan.
+
+### Adakah awning boleh tarik memerlukan lebih banyak penyelenggaraan?
+
+Ia mempunyai titik penyelenggaraan yang berbeza, bukan jawapan sejagat. Selain penutup dan rangka, periksa fabrik, lengan, braket, sendi dan kelengkapan operasi. Awning tetap juga memerlukan pemeriksaan penutup bumbung, pengedap, rangka dan saliran. Pendedahan tapak dan arahan produk menentukan rutin sebenar.
+
+### Apakah yang perlu dihantar untuk sebut harga awning tetap atau boleh tarik?
+
+Hantar lokasi, foto bukaan dan titik pengancing, lebar serta unjuran anggaran, waktu anda mahu matahari atau teduhan, sama ada lindungan hujan kekal penting, rupa bahan atau fabrik yang disukai, dan sebarang peraturan JMB, MC, pengurusan atau majlis. Dengan itu, sebut harga boleh membandingkan skop yang sesuai tanpa menganggap sistem bermotor atau produk pembekal tertentu.
+
+## Dapatkan nasihat awning tetap atau boleh tarik
+
+Beritahu kami di mana awning akan dipasang, bila anda memerlukan teduhan dan sama ada lindungan hujan kekal penting. Hantar foto serta dimensi anggaran di WhatsApp dan KL Servis Rumah boleh membincangkan skop tetap atau gaya boleh tarik yang sesuai serta menyediakan sebut harga berperincian khusus projek. [Chat dengan pasukan kami](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah!%20Saya%20ingin%20membandingkan%20awning%20tetap%20dan%20boleh%20tarik%20untuk%20rumah%20saya.)`
+    },
+    zh: {
+      slug: "shen-suo-yu-peng-vs-gu-ding-yu-peng",
+      title: "伸缩雨棚 vs 固定雨棚：哪一种适合您的家？", category: "雨棚",
+      excerpt: "应该选择永久固定的雨棚，还是可以开合的遮阳？比较马来西亚住家的挡雨、风天护理、采光、保养、分层地契规定和适用位置。",
+      metaTitle: "伸缩雨棚还是固定雨棚？马来西亚住家选择指南",
+      metaDesc: "比较马来西亚住家的伸缩与固定雨棚：挡雨、风天护理、采光、保养、分层地契规定、适用位置和报价因素。",
+      content: `固定雨棚和伸缩雨棚解决的是不同需求。固定系统在车棚、入口、晾衣院或走道上方提供永久遮盖；伸缩系统则在需要时提供遮阳，不需要时收起让更多阳光进入，适合阳台、露台或店面。
+
+正确的选择不只是看外观。还要考虑需要多少挡雨、空间是否要保持开放、系统如何操作和保养，以及建筑管理处允许什么做法。KL Servis Rumah 在吉隆坡与雪兰莪提供[雨棚方案和项目报价](/zh/services/awning-installation)；固定、布艺和伸缩式方案都要视用途、工程范围及供应商供应情况而定。
+
+## 简短结论：固定还是伸缩？
+
+- 如果您需要下雨时随时都有类似屋顶的永久遮盖，尤其是车棚、入口、杂物区、晾衣院和走道，可先考虑**固定雨棚**。
+- 如果您想在阳台、露台、庭院或店面按需要遮阳，也能够遵守系统的操作与天气护理说明，可以考虑**伸缩雨棚**。
+- 伸缩布艺系统不一定能取代聚碳酸酯、金属瓦、ACP 或玻璃等坚固屋面。材料、悬挑、固定和排水都必须适合现场。
+- 手动或电动操作可以**视工程范围和供应商供应情况商议**；未确认具体系统前，不应先行承诺。
+
+## 什么是固定雨棚？
+
+固定雨棚安装在墙体、横梁或其他支撑结构上，也可以由立柱承托，并长期保持在原位。覆盖物可按用途和报价选择聚碳酸酯、金属瓦、ACP、钢化玻璃或固定帆布/布艺。设计通常要考虑跨距、悬挑、骨架、坡度、密封，以及雨水要排到哪里。
+
+最大的好处是随时可用。固定雨棚不需要天气转变时才展开，所以适合车棚或后门——即使家里没人，突然下雨时仍有遮盖。代价是遮盖永久存在：想要阳光直射时不能完全打开空间，而且屋面、骨架和排水仍需要定期检查。我们的[车棚雨棚](/zh/services/awning-installation/car-porch-awning-installation)指南说明了车辆净高、坡度和排水为何重要。
+
+## 什么是伸缩雨棚？
+
+伸缩雨棚使用布艺或其他可以伸出和收回的系统，通常配有操作五金。它适合想在一天不同时间调整阳光和阴影，而不是一直保持坚固屋面的住户。手动和电动机制是不同产品；只有在工程范围和供应商能够提供时，才会讨论电动操作。
+
+伸缩系统更需要注意操作方式。强风时，或产品说明要求时，应把雨棚收回；布料、伸缩臂、支架和操作五金也要检查有没有磨损或移动。不要假设所有伸缩雨棚的挡雨方式、悬挑或操作限制都一样。把它当作天气遮盖前，应先确认实际系统。
+
+[帆布与布艺雨棚](/zh/services/awning-installation/canvas-and-fabric-awning)服务页面，是这类用途最接近的参考。具体伸缩或电动型号是否供应，仍取决于项目和供应商。
+
+## 并排比较
+
+| 考虑事项 | 固定雨棚 | 伸缩雨棚 |
+|---|---|---|
+| 核心概念 | 长期留在原位的永久遮盖 | 可以伸出或收回的遮阳 |
+| 适用位置 | 车棚、入口、晾衣院、走道、永久杂物区 | 阳台、露台、庭院或需要按时遮阳的店面 |
+| 下雨时 | 有规划坡度和排水，随时可用 | 挡雨方式和表现取决于实际布艺系统；须遵守说明 |
+| 风天护理 | 暴露在风中后检查骨架、固定、板材和排水 | 强风时按说明收回；不要自行假设抗风等级 |
+| 采光与开放感 | 长期改变遮盖下的阴影和采光 | 收起后可恢复阳光与较开放的空间 |
+| 保养 | 覆盖物、骨架、密封胶、排水沟和落水管 | 布料、伸缩臂、支架、接缝和操作五金，以及配备的排水 |
+| 操作 | 不需要每天开合 | 手动或电动操作可视工程范围和供应情况商议 |
+
+这是一般选择方向，不是具体产品规格。实际安装系统、现场暴露情况、固定点和供应商说明应优先考虑。
+
+## 适合马来西亚住家的哪些位置？
+
+### 车棚：永久遮盖通常更重要
+
+车棚需要在家里没人时也能挡雨遮阳。固定聚碳酸酯、ACP 或金属瓦系统通常会被考虑，因为可以按车辆净高、跨距、骨架和排水来设计。特定设计也可以商议伸缩系统，但不能假设它提供和固定屋面一样的全天候安排。询价时请说明最高车辆、停车布局，以及雨水可以排到哪里。
+
+### 入口与窗户：在采光和保护之间取舍
+
+入口或窗户的选择，取决于您要永久遮阳、可变采光，还是特定外观。固定玻璃或聚碳酸酯雨棚一直提供遮盖；如果开口、固定点和操作空间允许，伸缩布艺系统可以让您按时间调整遮阳。我们的[阳台、露台与窗户雨棚](/zh/services/awning-installation/balcony-patio-and-window-awning)服务涵盖这些按现场定制的用途。
+
+### 阳台、露台与庭院：灵活性可能很有用
+
+户外休闲空间通常需要可以调整的阴影。伸缩布艺雨棚收起后能保留天空和视野；固定聚碳酸酯、玻璃或布艺则提供更一致的遮阴。在两种情况下，选择悬挑、颜色、骨架或操作机构前，都要先查询建筑规定。
+
+### 店面：外观、招牌与营业时间
+
+店面可能只需要营业时遮盖，打烊后则想让门面更开放。布艺或伸缩系统可为这种灵活性提供选择；固定 ACP、玻璃或金属系统则形成永久门面。最终方案取决于店面结构、招牌、进场条件、管理处或市政要求，以及供应商系统。
+
+## 下雨与刮风：重要区别
+
+固定雨棚一直在原位，但并不代表不需要保养。暴雨仍会考验坡度、搭接、墙面泛水板、密封胶、排水沟和落水管。伸缩雨棚减少了永久结构，却多了一个操作决定：天气变化时，需要有人依照系统说明将它收回。
+
+“固定”或“伸缩”都不自动等于防风或防暴雨。不要相信笼统的“任何天气都能承受”说法。应询问拟用系统的用途、强风或暴雨时应如何摆放，以及报价包含哪些部分。如果现场需要持续的坚固遮盖，固定设计可能是更直接的起点。
+
+## 采光、隔热与隐私
+
+固定屋面会长期改变雨棚下方的采光。透明或有色聚碳酸酯可以让空间保持明亮；ACP 和金属瓦提供较不透光的阴影；玻璃保留明亮外观，但同样需要正确固定和排水。可参考我们的[住家雨棚选择指南](/zh/bo-ke/ru-he-wei-ma-lai-xi-ya-zhu-jia-xuan-ze-he-shi-yu-peng)，按用途选择材料。
+
+伸缩系统让使用者选择什么时候遮阴，但收起时空间也会暴露在阳光和雨水下。布料颜色、织法、悬挑、朝向和周围墙体都会影响效果。没有现场评估，不应承诺特定的室内降温或隐私程度。
+
+## 保养与日常护理
+
+固定和伸缩系统都要检查，但重点不同：
+
+- **固定系统：**检查覆盖物、板材搭接、接缝、墙边、固定件、骨架饰面、排水沟和落水管。安全清理可触及的杂物，并留意积水、漏水、生锈或下垂。
+- **伸缩系统：**检查布料、伸缩臂、支架、接缝和操作机构有没有污垢、损坏、松动或异常移动。清洁、收回和存放要依照产品说明，不要强行操作。
+- **所有系统：**不要爬上雨棚，不要在不安全的位置松开结构固定件，也不要自行另开排水孔。我们的[雨棚保养指南](/zh/bo-ke/yu-peng-bao-yang-lou-shui-sheng-xiu-ji-shui)进一步说明安全检查和警讯。
+
+布料是会磨损的部件，不是永久板材。如果布料一直潮湿、肮脏、破裂或难以操作，应记录情况并询问实际维修或更换范围，不要假设换一个马达或再打一层密封胶就能解决。
+
+## 分层地契、JMB 与管理处规定
+
+伸缩雨棚并不自动免于审批。公寓、组屋、围篱社区和商业楼宇可能限制悬挑、颜色、外观、固定点、操作五金，甚至规定什么时间可以伸出。固定雨棚同样可能受管制。
+
+在确定设计前，先向 JMB、MC、管理处或相关地方当局查询。我们可以提供建议范围、尺寸和规格来协助沟通，但您物业需要的批准必须由负责的管理处或当局确认。
+
+## 报价如何计算
+
+固定和伸缩雨棚没有可靠的统一价格可以直接比较。报价会受覆盖宽度和悬挑、屋面或布艺系统、骨架、支架、操作五金、高度与进场、现有结构、排水、定制饰面、拆除和分层地契规格影响。如果项目可用，电动系统的设备和安装要求也不同于手动系统。
+
+请发送位置、开口和固定点照片、大约宽度与悬挑、希望遮阴的时间、是否必须永久挡雨，以及任何管理处规定。我们的[雨棚价格指南](/zh/bo-ke/yu-peng-jia-ge-ru-he-ji-suan-ma-lai-xi-ya)说明为什么报价按项目列明细，而不是套用统一公开单价。
+
+## 简单选择清单
+
+- 希望每次下雨都有遮盖，即使家里没人？先看固定方案。
+- 希望在不同时间打开天空或让阳光进入？考虑伸缩方案，但要确认系统和供应商。
+- 覆盖车棚、晾衣院或走道？优先考虑跨距、净高、坡度、排水和永久挡雨。
+- 覆盖阳台、露台或店面？优先考虑操作空间、外观、采光、风天护理和管理处规定。
+- 想要电动操作？先问该型号是否确实适合您的工程范围，不要默认包含。
+- 还不确定？发送照片和尺寸，再逐项比较固定与伸缩方案的报价范围。
+
+## 常见问题
+
+### 伸缩雨棚是不是比固定雨棚好？
+
+没有一种适合所有情况。固定雨棚适合永久遮盖和坚固屋面；伸缩系统适合需要改变遮阳的空间。决定因素包括挡雨需求、开放感、操作方式、保养、固定点和现场规定。
+
+### 伸缩雨棚可以加装电动吗？
+
+电动操作可以视工程范围和供应商供应情况商议。不是每一款伸缩雨棚都有电动功能，所以在假定包含之前，应确认型号、控制方式、电源要求和报价范围。
+
+### 车棚适合用固定雨棚吗？
+
+如果车辆需要长期遮阳挡雨，固定系统通常是较直接的起点。但最终设计仍取决于车辆净高、跨距、固定点、材料、坡度和排水。只有确认伸缩系统适合现场暴露情况和使用习惯后，才应考虑伸缩方案。
+
+### 伸缩雨棚下雨或刮风时可以保持打开吗？
+
+请遵守产品和供应商说明。强风时或系统要求时应收回，不要假定普通伸缩雨棚有某一个抗风等级，或每场雨都可以保持伸出。应向供应商索取具体系统的操作指南。
+
+### 伸缩雨棚需要更多保养吗？
+
+它只是有不同的保养重点，不能一概而论。除了覆盖物和骨架，还要检查布料、伸缩臂、支架、接缝和操作五金。固定雨棚也要检查屋面、密封胶、骨架和排水。实际保养取决于现场暴露和产品说明。
+
+### 询问固定或伸缩雨棚报价要发什么？
+
+请发送位置、开口和固定点照片、大约宽度与悬挑、想要阳光或阴影的时间、是否必须永久挡雨、偏好的材料或布艺外观，以及 JMB、MC、管理处或市政规定。这样可以在不预设电动系统或特定供应商产品的情况下比较合适的工程范围。
+
+## 获取固定或伸缩雨棚建议
+
+告诉我们雨棚要装在哪里、什么时候需要遮阴，以及是否必须永久挡雨。在 WhatsApp 发送照片和大致尺寸，KL Servis Rumah 可以讨论适合的固定或伸缩式范围，并准备针对项目的分项报价。[与我们的团队聊聊](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah%EF%BC%8C%E6%88%91%E6%83%B3%E6%AF%94%E8%BE%83%E4%BD%8F%E5%AE%B6%E7%9A%84%E5%9B%BA%E5%AE%9A%E4%B8%8E%E4%BC%B8%E7%BC%A9%E9%9B%A8%E6%A3%9A%E3%80%82)`
+    }
   }
 };
 

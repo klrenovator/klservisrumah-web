@@ -3,7 +3,7 @@
 **Project:** Dedicated Awning Installation service page for klservisrumah.my
 **Market:** Kuala Lumpur & Selangor (Klang Valley), Malaysia
 **Created:** 2026-08-27
-**Branch:** `arena/01a04228-klservisrumah-web` (current session — blog cluster post 5) · `arena/01a040e8-klservisrumah-web` (pillar build) · `arena/01a04137-klservisrumah-web` (§9 testing closeout + blog cluster post 1, 2026-08-27) · `arena/01a041fd-klservisrumah-web` (blog cluster post 2 — decision guide, 2026-08-27)
+**Branch:** `arena/01a04228-klservisrumah-web` (current session — blog cluster post 6) · `arena/01a040e8-klservisrumah-web` (pillar build) · `arena/01a04137-klservisrumah-web` (§9 testing closeout + blog cluster post 1, 2026-08-27) · `arena/01a041fd-klservisrumah-web` (blog cluster post 2 — decision guide, 2026-08-27)
 
 ---
 
@@ -125,11 +125,11 @@ H1: Awning Installation in Kuala Lumpur & Selangor
 - [x] COMPLETED Sub-service internal links: welding ("Steel Structure & Awning
       Fabrication") and glass-aluminium remain related via topical map
 - [x] COMPLETED Area links auto-render via ServiceAreaLinks (data-driven)
-- [x] COMPLETED (Cluster rollout in progress) blog posts 1–5 now published and link to
+- [x] COMPLETED (Cluster rollout in progress) blog posts 1–6 now published and link to
       this page (see §8); the EN hub's related-guides block lists the decision
-      guide (post 2) first, followed by posts 1 and 3; post 5 is wired to the
-      replacement specialty and rust/gutter problem nodes; MS/ZH specialty
-      pages link their localized twins; remaining 3 cluster posts (6–8) are pending
+      guide (post 2) first, followed by posts 1 and 3; post 6 is wired to the
+      canvas/fabric and balcony/patio/window specialties; MS/ZH specialty pages
+      link their localized twins; remaining 2 cluster posts (7–8) are pending
 
 ## 6. Schema Tasks
 
@@ -151,7 +151,7 @@ H1: Awning Installation in Kuala Lumpur & Selangor
 - [x] COMPLETED MS/ZH localized service twin routes already exist (/ms/services/*,
       /zh/services/*) — auto-render via existing architecture
 
-## 8. Supporting Content Cluster (3 of 8 pending; posts 1–5 published)
+## 8. Supporting Content Cluster (2 of 8 pending; posts 1–6 published)
 
 Blog/pillar posts (each links to `/services/awning-installation`):
 1. [x] COMPLETED **Polycarbonate vs Metal vs ACP Awning in Malaysia — PUBLISHED**
@@ -208,7 +208,16 @@ Blog/pillar posts (each links to `/services/awning-installation`):
       replacement-and-repair sub-service, welding, clogged-gutter and rusting-
       metal-grille problem nodes, plus the pricing guide; wired into the awning
       BLOG pool and replacement specialty relatedBlogs.
-6. [ ] PENDING Retractable vs Fixed Awning
+6. [x] COMPLETED **Retractable vs Fixed Awnings: Which Fits Your Home? — PUBLISHED 2026-08-27**
+      (`/blog/retractable-vs-fixed-awning-malaysia` + native MS
+      `/ms/blog/awning-boleh-tarik-vs-tetap-malaysia` + native ZH
+      `/zh/bo-ke/shen-suo-yu-peng-vs-gu-ding-yu-peng`). Application-first
+      comparison covering fixed versus retractable use cases, rain and wind
+      care, light/heat/openness, fabric and mechanism maintenance, strata/JMB
+      checks, quote factors and the verified conditional motorised-availability
+      wording. Quote-safe throughout (no fabricated wind ratings, prices,
+      warranties or supplier availability); wired into the awning BLOG pool,
+      canvas/fabric specialty and balcony/patio/window specialty.
 7. [ ] PENDING Choosing an Awning for Balcony / Patio / Yard
 8. [ ] PENDING Replacing an Old or Leaking Awning: What to Check
 
@@ -230,10 +239,10 @@ Blog/pillar posts (each links to `/services/awning-installation`):
       HowTo exactly 6 steps, BreadcrumbList, speakable. Sub-service spot-checks ×3 locales
       pass. Recorded in `docs/schema-validation-log.md` (2026-08-27 round).
 - [x] COMPLETED Verify sitemap includes new page (regenerated automatically) — sitemap.xml
-      (4,727 URLs) contains all 3 awning hubs, all sub-service locale twins (63
+      (4,730 URLs) contains all 3 awning hubs, all sub-service locale twins (63
       awning-installation URLs incl. cost/emergency/near-me twins) with full
-      en-MY/ms-MY/zh-MY/x-default hreflang alternates; all five awning cluster
-      posts' EN/MS/ZH URLs are listed, including post 5's three new URLs.
+      en-MY/ms-MY/zh-MY/x-default hreflang alternates; all six awning cluster
+      posts' EN/MS/ZH URLs are listed, including post 6's three new URLs.
 - [x] COMPLETED Post 5 production smoke (2026-08-27): EN/MS/ZH article routes
       return HTTP 200 with one H1, correct `en-MY`/`ms-MY`/`zh-MY` language,
       localized titles and complete four-entry hreflang sets; replacement,
@@ -245,6 +254,17 @@ Blog/pillar posts (each links to `/services/awning-installation`):
       4,727 self-canonical indexable pages, 4,727 sitemap URLs, 0 duplicate
       titles/descriptions and 0 warnings; `audit:meta` found 0 JSON-LD parse
       failures, 0 breadcrumb mismatches and 0 duplicate title groups.
+- [x] COMPLETED Post 6 production smoke (2026-08-27): EN/MS/ZH article routes
+      return HTTP 200 with one H1, correct `en-MY`/`ms-MY`/`zh-MY` language,
+      localized titles and complete four-entry hreflang sets; canvas/fabric,
+      balcony/patio/window and other localized awning links render correctly;
+      sitemap inclusion verified.
+- [x] COMPLETED Post 6 full-corpus HTML/SEO QA: `audit:html` checked 5,806
+      rendered pages with 0 fatal findings / 0 warnings; `audit:seo-head` found
+      4,730 self-canonical indexable pages, 4,730 sitemap URLs, 0 duplicate
+      titles/descriptions and 0 warnings; `audit:meta` found 0 JSON-LD parse
+      failures, 0 breadcrumb mismatches and 0 duplicate title groups. Rendered
+      internal-link audit: 5,806 pages / 435,635 links, 0 broken targets.
 
 ---
 
@@ -293,21 +313,29 @@ Blog/pillar posts (each links to `/services/awning-installation`):
   lint, production build, 3-route smoke (200/correct locale/H1/title/hreflang/
   localized links), sitemap inclusion and rendered-link audit (435,405 links,
   0 broken) all pass (§8).
+- Supporting content cluster post 6/8 (2026-08-27, current session):
+  "Retractable vs Fixed Awnings: Which Fits Your Home?" — full native EN/MS/ZH
+  comparison organized by application, rain/wind care, light/heat/openness,
+  maintenance, strata rules and quote factors. The motorised/retractable
+  availability wording stays conditional; no wind ratings, prices, warranties
+  or supplier availability were invented. Wired into the awning BLOG pool,
+  canvas/fabric specialty and balcony/patio/window specialty. Validator count
+  213 → 214; prebuild gates (320,331 assertions), type-check, lint, production
+  build, 3-route smoke, sitemap inclusion and rendered-link audit (435,635
+  links, 0 broken) all pass (§8).
 
 ### PENDING
-- [ ] PENDING Supporting blog cluster posts 6–8 (see §8) — same recipe: full native
+- [ ] PENDING Supporting blog cluster posts 7–8 (see §8) — same recipe: full native
   trilingual article, quote-safe content, topical-map BLOG pool entry,
   `validate:blog-production.ts` count bump, regenerated indexes, full gate
   re-run + production-build smoke + link audit.
-  - [ ] PENDING 6: Retractable vs Fixed Awning (→ canvas-and-fabric-awning;
-    keep the verified-safe hedge on motorised/retractable availability)
   - [ ] PENDING 7: Choosing an Awning for Balcony/Patio/Yard (→
     balcony-patio-and-window; strata/JMB focus)
   - [ ] PENDING 8: Replacing an Old or Leaking Awning: What to Check (→
     awning-replacement-and-repair; frame reuse, sheet life, drainage, removal)
 - [ ] PENDING Real project photography (business to supply — see business confirmation)
 - [ ] PENDING (Site-wide, outside awning scope — discovered during §9 validation):
-  MS/ZH blog article routes emit no BlogPosting/Article schema (all 213 topics;
+  MS/ZH blog article routes emit no BlogPosting/Article schema (all 214 topics;
   only EN does). Candidate follow-up for a dedicated session; do not bundle into
   awning work.
 
