@@ -3944,6 +3944,241 @@ Hantar lokasi, foto dan dimensi anggaran anda di WhatsApp dan kami akan menyedia
 
 在 WhatsApp 上发送位置、照片和大致尺寸，我们将为您准备针对项目的分项报价单——没有笼统数字，没有隐藏项目。[与我们的团队聊聊](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah%EF%BC%8C%E6%88%91%E6%83%B3%E8%8E%B7%E5%8F%96%E9%9B%A8%E6%A3%9A%E7%9A%84%E5%88%86%E9%A1%B9%E6%8A%A5%E4%BB%B7%E3%80%82)`
     }
+  },
+  /* ──────────────────────────────────────────────────────────────────────
+   * Awning Installation supporting cluster (strategy §J) — post 2,
+   * re-angled as an application-first decision guide (not a material
+   * re-comparison of post 1).
+   * ────────────────────────────────────────────────────────────────────── */
+  "how-to-choose-right-awning-malaysia": {
+    ms: {
+      slug: "cara-memilih-awning-yang-sesuai-rumah-malaysia",
+      title: "Cara Memilih Awning yang Sesuai untuk Rumah Anda di Malaysia", category: "Awning",
+      excerpt: "Tidak pasti jenis awning mana yang sesuai untuk rumah anda? Panduan keputusan ini memadankan awning yang anda perlukan dengan lokasinya — car porch, pintu masuk, tingkap, balkoni, ruang jemuran, laluan atau kedai — dan dengan keutamaan anda: cahaya, haba, bunyi hujan, rupa atau peraturan strata.",
+      metaTitle: "Cara Memilih Jenis Awning Sesuai untuk Rumah di Malaysia",
+      metaDesc: "Jenis awning mana yang sesuai untuk rumah Malaysia anda? Panduan keputusan mengikut aplikasi — car porch, pintu masuk, tingkap, balkoni, ruang jemuran, laluan, kedai — dan keperluan cahaya, haba, bunyi serta strata.",
+      content: `"Awning mana yang patut saya pilih?" ialah soalan pertama kebanyakan pemilik rumah di Kuala Lumpur dan Selangor — dan jawapan jujurnya, ia kurang bergantung pada nama bahan dan lebih pada lokasi awning serta apa yang anda mahu ia lakukan. Panduan ini mengikut cara anda sebenarnya membuat keputusan: mulakan dengan aplikasi, kemudian padankan jenis awning dengan perkara yang paling penting.
+
+KL Servis Rumah mereka bentuk, memfabrikasi dan memasang [awning tersuai di seluruh KL & Selangor](/ms/services/awning-installation), semuanya disebut harga mengikut projek setelah kami memahami tapak anda.
+
+## Jawapan ringkas: padankan awning dengan lokasinya
+
+| Lokasi awning | Jenis yang biasa digunakan | Apa yang paling penting di situ |
+|---|---|---|
+| Car porch | Polikarbonat tinted, metal deck berinsulasi, ACP | Haba di atas kereta, saliran, ketinggian kenderaan |
+| Pintu masuk / pintu utama | Kaca, polikarbonat, ACP | Rupa, sambutan yang cerah, lindungan hujan pada pintu |
+| Tingkap | Polikarbonat, kaca, ACP | Cahaya lawan silau, bunyi hujan di sebelah bilik tidur |
+| Balkoni / patio / teres | Kaca, polikarbonat, fabrik (tetap atau boleh ditarik) | Pemandangan, cahaya, peraturan strata |
+| Ruang jemuran / kawasan belakang | Metal deck, polikarbonat | Penjimatan, ketahanan, jemuran sepanjang cuaca |
+| Laluan / laluan sisi | Polikarbonat, metal deck | Mengekalkan laluan kering secara berpatutan |
+| Hadapan kedai / komersial | Fabrik, boleh ditarik, kaca, ACP | Papan tanda, rupa, fleksibiliti siang/malam |
+
+Ini padanan biasa, bukan peraturan tetap — arah bangunan, bentang dan rupa yang anda mahu boleh mengubah cadangan.
+
+## Jenis awning biasa di Malaysia
+
+Lima sistem tetap membentuk hampir setiap kerja kediaman: **polikarbonat** (lembaran lut sinar, kawasan kekal cerah), **metal deck** (lembaran keluli yang kuat dan menjimatkan, profil berinsulasi tersedia), **ACP** (panel komposit aluminium — legap, kemas, penyelenggaraan sangat rendah), **kaca tempered** (rupa premium yang terang untuk pintu masuk), dan **kanvas/fabrik** (teduhan lembut untuk balkoni dan kedai). Sistem fabrik boleh ditarik dan bermotor melengkapkan julat itu untuk balkoni, patio dan hadapan kedai yang mahu teduhan mengikut keperluan berbanding lindungan kekal.
+
+Daripada mengulangi perbandingan penuh di sini, [perbandingan polikarbonat lawan metal deck lawan ACP](/ms/blog/perbandingan-awning-polikarbonat-metal-deck-acp) kami membincangkan haba, cahaya, bunyi hujan dan penyelenggaraan bahan demi bahan.
+
+## Mulakan dengan aplikasi
+
+### Car porch — teduhkan kereta, rancang saliran
+
+Porch ialah kerja awning paling biasa dan ditentukan oleh empat fakta tapak: bentang, ketinggian kenderaan, titik pengancing dan saliran. Polikarbonat tinted, metal deck berinsulasi dan ACP ialah pilihan popular kerana ia mengurangkan pengumpulan haba di atas kenderaan. [Panduan awning car porch](/ms/blog/panduan-awning-car-porch-malaysia) penuh kami membincangkan kecerunan, longkang dan ketinggian secara terperinci; halaman [awning car porch](/ms/services/awning-installation/car-porch-awning-installation) merangkumi perkhidmatan itu sendiri.
+
+### Pintu masuk dan pintu utama — tanggapan pertama
+
+Awning pintu masuk dilihat dari dekat, jadi penampilan penting. Kaca tempered memberikan kanopi premium yang terang di atas pintu; polikarbonat kekal ringan dan berpatutan; ACP memberikan garis moden yang kemas. Ketiga-tiganya menghalang hujan daripada sesiapa yang berdiri di pintu. Lihat halaman [awning kaca](/ms/services/awning-installation/glass-awning) untuk pilihan premium.
+
+### Tingkap — teduhan tanpa menggelapkan bilik
+
+Awning tingkap mengurangkan silau dan hujan pada kaca sambil sebaiknya mengekalkan cahaya siang dan pemandangan. Polikarbonat dan kaca mengekalkan bilik cerah; ACP memberikan teduhan penuh jika tingkap menghadap barat menerima matahari petang yang terik. Jika bunyi hujan di sebelah bilik tidur penting, metal deck berinsulasi atau ACP lebih senyap daripada lembaran nipis. Perkhidmatan [awning balkoni, patio & tingkap](/ms/services/awning-installation/balcony-patio-and-window-awning) merangkumi aplikasi tingkap.
+
+### Balkoni, patio dan teres — pemandangan, cahaya dan peraturan strata
+
+Ruang hidup luar biasanya mahu teduhan yang tidak menutup kawasan itu. Kaca dan polikarbonat mengekalkan pemandangan dan cahaya; fabrik tetap atau boleh ditarik memberikan teduhan lembut dan boleh dibuka apabila anda mahu matahari. Jika anda tinggal di kondominium atau pangsapuri, JMB/MC hampir selalu mempunyai pendapat di sini — semak peraturan sebelum anda terpikat dengan reka bentuk (lebih lanjut di bawah). Halaman [awning kanvas & fabrik](/ms/services/awning-installation/canvas-and-fabric-awning) dan [awning balkoni/patio/tingkap](/ms/services/awning-installation/balcony-patio-and-window-awning) merangkumi ini.
+
+### Ruang jemuran dan belakang rumah — lindungan praktikal
+
+Ruang jemuran atau kawasan utiliti memerlukan lindungan sepanjang cuaca yang boleh dipercayai pada kos berpatutan, sebab itulah metal deck dan polikarbonat menjadi pilihan biasa. Ketahanan dan aliran air yang baik lebih penting daripada rupa. [Awning metal deck](/ms/services/awning-installation/metal-deck-awning) sesuai untuk bajet utamakan utiliti; [awning polikarbonat](/ms/services/awning-installation/polycarbonate-awning) mengekalkan ruang lebih cerah.
+
+### Laluan dan laluan sisi — pastikan laluan kering
+
+Laluan sisi hanya perlu memastikan laluan kering. Polikarbonat dan metal deck ialah pilihan yang menjimatkan dan cepat dipasang, disesuaikan dengan bentang yang sempit.
+
+### Hadapan kedai dan komersial ringan — papan tanda dan fleksibiliti
+
+Awning hadapan kedai selalunya berfungsi juga sebagai papan tanda dan identiti jenama, jadi sistem fabrik dan boleh ditarik popular kerana rupanya dan keupayaan menariknya pada waktu malam; kaca dan ACP memberikan muka hadapan premium yang kekal. Kami memfabrikasi mengikut ukuran hadapan kedai dan sebarang spesifikasi pengurusan atau majlis yang terpakai.
+
+## Kemudian tentukan mengikut keutamaan anda
+
+Setelah anda tahu aplikasinya, susun keutamaan ini — ia biasanya memilih jenis untuk anda:
+
+- **Mahukan kawasan cerah** (pintu masuk, tingkap, laluan) → polikarbonat atau kaca.
+- **Mahukan sekatan haba dan silau maksimum** (porch atau tingkap menghadap barat) → ACP atau metal deck berinsulasi.
+- **Mahukan lindungan paling senyap semasa hujan lebat** (di atas kawasan duduk atau di sebelah bilik tidur) → ACP atau metal deck berinsulasi berbanding lembaran biasa.
+- **Mahukan rupa paling kemas dan premium** (pintu masuk, hadapan rumah) → kaca atau ACP.
+- **Mahukan penyelenggaraan paling rendah** → panel ACP tidak berkarat; bahagian keluli pada mana-mana awning tetap mendapat manfaat daripada primer anti-karat dan kemasan serbuk atau tahan cuaca yang rangka kami difabrikasi — lihat [kimpalan & fabrikasi logam](/ms/services/welding).
+- **Mahukan lindungan utiliti pada bajet** (ruang, laluan) → metal deck atau polikarbonat.
+- **Mahu teduhan yang boleh dibuka dan ditutup** (balkoni, patio, hadapan kedai) → sistem fabrik boleh ditarik, dibincangkan bergantung pada skop dan pembekal.
+
+Untuk tolak-beli tahap bahan di sebalik setiap ini, [panduan perbandingan bahan](/ms/blog/perbandingan-awning-polikarbonat-metal-deck-acp) ialah bacaan pendamping.
+
+## Tetap atau boleh ditarik?
+
+Kebanyakan rumah menggunakan awning **tetap** — ia kekal, penyelenggaraan lebih rendah dan sedia untuk sebarang hujan lebat yang tiba-tiba. Awning fabrik **boleh ditarik** sesuai untuk balkoni, patio dan hadapan kedai yang mahu pilihan matahari penuh atau teduhan penuh; ia menggunakan fabrik dan kelengkapan operasi berbanding bumbung pepejal, jadi ia tidak dibiarkan terunjur dalam angin kencang dan fabriknya ialah bahagian yang haus yang akhirnya memerlukan perhatian. Operasi bermotor boleh dibincangkan bergantung pada skop dan ketersediaan pembekal — kami mengesahkan apa yang sesuai untuk tapak anda daripada menjanjikannya di awal.
+
+## Direka untuk cuaca Malaysia
+
+Tiga perkara menentukan sama ada awning tahan lama dalam haba dan hujan lebat Klang Valley, lebih daripada nama bahan:
+
+1. **Rangka dan kemasannya** — rangka bersaiz mengikut bentang, dengan primer anti-karat dan kemasan tahan cuaca atau serbuk.
+2. **Kecerunan dan saliran** — kecondongan yang mencukupi supaya air mengalir ke longkang atau paip turun dan bukannya bertakung; sendi dan flashing dinding yang dikedap.
+3. **Pengancing pada struktur yang kukuh** — braket dan tiang diikat pada dinding, rasuk atau slab yang boleh menampung beban, dengan pengukuhan ditambah jika tidak mampu.
+
+Betulkan ketiga-tiganya dan awning polikarbonat, metal deck atau ACP akan memberi perkhidmatan bertahun-tahun. Salah lakukannya dan panel premium pun boleh bocor atau melentuk.
+
+## Landed atau strata? Semak sebelum komited
+
+Untuk **rumah landed**, anda umumnya bebas memilih reka bentuk dan warna, tertakluk pada peraturan pihak berkuasa tempatan yang terpakai. Untuk **hartanah strata** — kondominium, pangsapuri dan komuniti berpagar — JMB/MC mungkin mengehadkan unjuran, ketinggian, warna malah jenis awning, dan keperluan majlis juga boleh terpakai. Semak dengan pejabat pengurusan anda sebelum memuktamadkan; kami boleh membekalkan skop, dimensi dan spesifikasi untuk menyokong permohonan, tetapi kelulusan untuk hartanah anda hendaklah disahkan dengan pengurusan atau pihak berkuasa tempatan.
+
+## Apa yang perlu dihantar kepada kami
+
+Untuk cadangan jenis yang sesuai dan penyediaan sebut harga, hantar di WhatsApp: lokasi/kawasan anda, di mana awning akan dipasang, lebar dan unjuran anggaran, foto tapak dan titik pengancing, rupa atau bahan yang anda mahu, sama ada awning lama perlu dibongkar, dan sebarang peraturan strata atau majlis. Foto dan dimensi selalunya cukup untuk sebut harga; penilaian tapak diatur apabila bentang, struktur atau saliran perlu diperiksa. Setiap kerja disebut harga mengikut projek — lapan pendorong kos dijelaskan dalam [panduan harga awning](/ms/blog/bagaimana-harga-awning-dikira-di-malaysia) kami. Kami menerbitkan harga permulaan untuk perkhidmatan yang berulang dalam [direktori perkhidmatan](/ms/services) kami; kerja awning sentiasa berperincian dan khusus projek.
+
+## Soalan lazim
+
+### Apakah jenis awning terbaik untuk rumah di Malaysia?
+
+Tiada jenis terbaik yang tunggal — ia bergantung pada lokasi awning dan apa yang paling penting. Car porch biasanya menggunakan polikarbonat tinted, metal deck berinsulasi atau ACP; pintu masuk sesuai dengan kaca, polikarbonat atau ACP; balkoni dan patio sesuai dengan kaca, polikarbonat atau fabrik; ruang utiliti dan laluan sesuai dengan metal deck atau polikarbonat. Beritahu kami aplikasinya dan keutamaan anda (cahaya, haba, bunyi, rupa) dan kami akan mencadangkan yang sesuai.
+
+### Awning mana paling tahan lama dalam cuaca Malaysia?
+
+Ketahanan lebih bergantung pada saiz profil rangka, kemasan anti-karat, kecerunan dan saliran yang betul, serta pengancing yang kukuh berbanding label bahan. Awning polikarbonat, metal deck atau ACP yang dipasang dengan betul akan memberi perkhidmatan bertahun-tahun; yang diikat atau disalir dengan buruk boleh bocor atau melentuk tanpa mengira kos panel.
+
+### Boleh anda pasang awning di balkoni kondominium?
+
+Selalunya ya, tertakluk pada peraturan bangunan anda. Kebanyakan JMB/MC mempunyai garis panduan untuk awning balkoni — unjuran, warna dan kadangkala jenis yang dibenarkan — dan keperluan majlis mungkin juga terpakai. Semak dengan pejabat pengurusan anda dahulu; kami boleh membekalkan skop, dimensi dan spesifikasi untuk menyokong permohonan anda.
+
+## Dapatkan cadangan awning untuk rumah anda
+
+Beritahu kami di mana anda perlukan teduhan dan apa yang paling mengganggu — haba, hujan, silau atau bunyi — dan kami akan mencadangkan jenis awning yang sesuai untuk tapak anda, dengan sebut harga berperincian khusus projek. [Chat dengan pasukan kami di WhatsApp](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah%2C%20saya%20mahu%20cadangan%20dan%20sebut%20harga%20untuk%20awning%20rumah.)`
+    },
+    zh: {
+      slug: "ru-he-wei-ma-lai-xi-ya-zhu-jia-xuan-ze-he-shi-yu-peng",
+      title: "如何为马来西亚的家选择合适的雨棚", category: "雨棚",
+      excerpt: "不确定哪种雨棚适合您的家？这份决策指南把您需要的雨棚按安装位置（车棚、大门、窗户、阳台、晾衣院、走道、店面）和最在意的事（采光、隔热、雨声、外观、分层地契规则）配对，帮您快速缩小选择。",
+      metaTitle: "马来西亚住家雨棚类型选择指南",
+      metaDesc: "哪种雨棚类型适合马来西亚的家？按用途决策的指南——车棚、大门、窗户、阳台、晾衣院、走道、店面——以及采光、隔热、噪音与分层地契需求。",
+      content: `"我该装哪种雨棚？"是吉隆坡和雪兰莪多数屋主的第一个问题——而诚实的答案是：与其看材料名称，不如看雨棚装在哪里、您要它解决什么。本指南按您实际的决策顺序展开：先从用途出发，再把雨棚类型和您最在意的事配对。
+
+KL Servis Rumah 在吉隆坡与雪兰莪设计、制作和安装[定制雨棚](/zh/services/awning-installation)，所有项目在了解现场后按项目报价。
+
+## 简短结论：把雨棚和位置配对
+
+| 雨棚位置 | 常用类型 | 该位置最在意什么 |
+|---|---|---|
+| 车棚 | 着色聚碳酸酯、保温金属瓦、ACP | 车上方的隔热、排水、车辆净高 |
+| 入口/大门 | 玻璃、聚碳酸酯、ACP | 外观、明亮的迎宾感、门口挡雨 |
+| 窗户 | 聚碳酸酯、玻璃、ACP | 采光与眩光、卧室旁的雨声 |
+| 阳台/露台/庭院 | 玻璃、聚碳酸酯、布艺（固定或伸缩） | 视野、采光、分层地契规则 |
+| 晾衣院/屋后 | 金属瓦、聚碳酸酯 | 经济、耐用、全天候晾衣 |
+| 走道/侧巷 | 聚碳酸酯、金属瓦 | 以实惠预算保持通道干爽 |
+| 店面/轻商业 | 布艺、伸缩、玻璃、ACP | 招牌、外观、昼夜灵活 |
+
+这些是常见搭配，不是硬性规定——朝向、跨距和您想要的外观都可能改变建议。
+
+## 马来西亚常见的雨棚类型
+
+几乎每项住宅工程都离不开五种固定系统：**聚碳酸酯**（半透明板材，下方保持明亮）、**金属瓦**（坚固经济的钢板，有保温型号）、**ACP**（铝塑复合板——不透光、整洁、维护极低）、**钢化玻璃**（高级、通透的入口观感），以及**帆布/布艺**（阳台和店面的柔和遮阳）。伸缩和电动布艺系统在此之上，适合想要按需遮阳而非永久遮盖的阳台、露台和店面。
+
+这里不重复逐项对比，我们的[聚碳酸酯与金属瓦与ACP比较](/zh/bo-ke/ju-tan-suan-zhi-jin-shu-wa-yu-acp-yu-peng-bi-jiao)一文按材料拆解了隔热、采光、雨声和维护。
+
+## 从用途出发
+
+### 车棚——为车遮阳，先规划排水
+
+车棚是最常见的雨棚工程，由四个现场事实决定：跨距、车辆净高、固定点和排水。着色聚碳酸酯、保温金属瓦和 ACP 是热门选择，因为它们能减少车辆上方的积热。我们完整的[车棚雨棚指南](/zh/bo-ke/che-peng-yu-peng-zhi-nan-ma-lai-xi-ya)详述坡度、排水沟和净高；[车棚雨棚安装](/zh/services/awning-installation/car-porch-awning-installation)页面介绍该服务本身。
+
+### 入口与大门——第一印象
+
+入口雨棚在近处可见，所以外观重要。钢化玻璃在门口上方营造高级、明亮的雨棚；聚碳酸酯轻盈经济；ACP 呈现干净的现代线条。三种都能让站在门口的人不淋雨。高级选择见[玻璃雨棚](/zh/services/awning-installation/glass-awning)页面。
+
+### 窗户——遮阳但不弄暗房间
+
+窗雨棚削减玻璃上的眩光和雨水，同时最好保留日光和视野。聚碳酸酯和玻璃让房间保持明亮；西晒强烈的窗户用 ACP 可获得完全遮阳。如果在意卧室旁的雨声，保温金属瓦或 ACP 比薄板安静。[阳台、露台与窗户雨棚](/zh/services/awning-installation/balcony-patio-and-window-awning)服务涵盖窗户应用。
+
+### 阳台、露台与庭院——视野、采光与分层地契规则
+
+户外生活空间通常想要不封闭空间的遮阳。玻璃和聚碳酸酯保留视野和光线；固定或伸缩布艺提供柔和遮阳，想要阳光时可收起。如果您住公寓或组屋，JMB/MC 在这里几乎总有规定——在您中意某个设计前先查规则（见下文）。[帆布布艺雨棚](/zh/services/awning-installation/canvas-and-fabric-awning)和[阳台/露台/窗户雨棚](/zh/services/awning-installation/balcony-patio-and-window-awning)页面涵盖这些。
+
+### 晾衣院与屋后——实用遮盖
+
+晾衣院或杂物区需要可靠的全天候遮盖且花费合理，所以金属瓦和聚碳酸酯是常见选择。耐用和顺畅排水比外观更重要。[金属瓦雨棚](/zh/services/awning-installation/metal-deck-awning)适合实用优先的预算；[聚碳酸酯雨棚](/zh/services/awning-installation/polycarbonate-awning)让院子更明亮。
+
+### 走道与侧巷——保持通道干爽
+
+侧巷走道只需要让一条路保持干爽。聚碳酸酯和金属瓦是经济、安装快速的选择，按窄跨距定制。
+
+### 店面与轻商业——招牌与灵活性
+
+店面雨棚往往同时充当招牌和品牌形象，所以布艺和伸缩系统因外观和夜间可收起而受欢迎；玻璃和 ACP 提供永久、高级的门面。我们按店面尺寸以及适用的管理处或市政规范制作。
+
+## 然后按最在意的事决定
+
+知道用途后，给这些优先级排序——它们通常会替您选出类型：
+
+- **想要下方明亮**（入口、窗户、走道）→ 聚碳酸酯或玻璃。
+- **想要最强隔热与防眩光**（西向车棚或窗户）→ ACP 或保温金属瓦。
+- **想要暴雨时最安静的遮盖**（座位区上方或卧室旁）→ ACP 或保温金属瓦，而非普通薄板。
+- **想要最整洁高级的外观**（入口、门面）→ 玻璃或 ACP。
+- **想要最少维护** → ACP 板不生锈；任何雨棚的钢件仍受益于我们骨架所做的防锈底漆加粉末喷涂或耐候饰面——见[焊接与金属制作](/zh/services/welding)。
+- **预算内的实用遮盖**（院子、走道）→ 金属瓦或聚碳酸酯。
+- **想要可开可合的遮阳**（阳台、露台、店面）→ 伸缩布艺系统，视范围和供应商可商议。
+
+每项选择背后的材料层面取舍，[材料比较指南](/zh/bo-ke/ju-tan-suan-zhi-jin-shu-wa-yu-acp-yu-peng-bi-jiao)是配套阅读。
+
+## 固定还是伸缩？
+
+多数住家用**固定**雨棚——一劳永逸、维护较低，突降暴雨也随时可用。**伸缩**布艺雨棚适合想要全阳或全阴可选的阳台、露台和店面；它用布艺和操作机件而非实心屋面，所以强风时不收起、布料是易损件、日后需维护。电动操作可视范围和供应商供应情况商议——我们会确认适合您现场的方案，而不是事先承诺。
+
+## 为马来西亚天气而建
+
+决定雨棚能否在巴生谷的高温和暴雨中持久的，有三件事，比材料名称更重要：
+
+1. **骨架与饰面**——按跨距选型的骨架，加防锈底漆和耐候或粉末喷涂饰面。
+2. **坡度与排水**——足够的落差让水流向排水沟或落水管而非积水；接缝和墙面泛水板密封。
+3. **固定在牢固结构上**——支架和立柱锚固在能承重的墙体、横梁或楼板上，不能承重处加固。
+
+这三点做好，聚碳酸酯、金属瓦或 ACP 雨棚都能用很多年；做不好，再高级的板材也会漏水或下垂。
+
+## 有地还是分层地契？决定前先查
+
+**有地住宅**一般可自由选择设计和颜色，但须遵守适用的地方当局规定。**分层地契产业**——公寓、组屋和围篱社区——JMB/MC 可能限制悬挑、高度、颜色甚至雨棚类型，市政要求也可能适用。定案前先向管理处查询；我们可提供范围、尺寸和规格以支持申请，但您产业适用的批准应向管理处或地方当局确认。
+
+## 需要发给我们什么
+
+要获得合适的类型建议和报价，请在 WhatsApp 发送：您的位置/区域、雨棚安装位置、大致宽度与悬挑、现场和固定点照片、偏好的外观或材料、是否需要拆除旧雨棚，以及任何分层地契或市政规定。凭照片和尺寸往往就能报价；跨距、结构或排水需要核查时，我们会安排现场评估。每项工程按项目计价——八大成本因素在我们的[雨棚价格指南](/zh/bo-ke/yu-peng-jia-ge-ru-he-ji-suan-ma-lai-xi-ya)中说明。我们在[服务目录](/zh/services)为可重复的服务公布起步价；雨棚工程始终列明细、按项目定价。
+
+## 常见问题
+
+### 马来西亚的家哪种雨棚最好？
+
+没有唯一最好的类型——取决于雨棚位置和最在意什么。车棚常用着色聚碳酸酯、保温金属瓦或 ACP；入口适合玻璃、聚碳酸酯或 ACP；阳台和露台适合玻璃、聚碳酸酯或布艺；杂物院和走道适合金属瓦或聚碳酸酯。告诉我们用途和您的优先级（采光、隔热、噪音、外观），我们会建议合适的方案。
+
+### 哪种雨棚在马来西亚天气下最耐用？
+
+耐用与否更取决于骨架规格、防锈饰面、正确的坡度与排水、牢固的固定，而不是材料标签。安装得当的聚碳酸酯、金属瓦或 ACP 雨棚都能用很多年；固定或排水不佳的话，板材再贵也会漏水或下垂。
+
+### 可以在公寓阳台上装雨棚吗？
+
+通常可以，但须遵守您大楼的规定。多数 JMB/MC 对阳台雨棚有指引——悬挑、颜色，有时还限定类型——市政要求也可能适用。请先向管理处查询；我们可提供范围、尺寸和规格以支持您的申请。
+
+## 获取适合您家的雨棚建议
+
+告诉我们您哪里需要遮阳、最困扰您的是什么——高温、雨水、眩光还是噪音——我们会建议适合现场的雨棚类型，并提供分项、按项目定价的报价单。[与我们的团队在 WhatsApp 聊聊](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah%EF%BC%8C%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A3%E9%9B%A8%E6%A3%9A%E5%BB%BA%E8%AE%AE%E5%92%8C%E6%8A%A5%E4%BB%B7%E3%80%82)`
+    }
   }
 };
 

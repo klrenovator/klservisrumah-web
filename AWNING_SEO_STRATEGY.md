@@ -185,12 +185,12 @@ All implemented via `config/topical-authority-map.ts` (validated at build time)
 and the data-driven related/problems/areas/blogs components — no hardcoded
 URLs invented.
 
-## J. Supporting Content Cluster (8+ recommended posts; posts 1, 3 and 4 published 2026-08-27)
+## J. Supporting Content Cluster (8+ recommended posts; posts 1–4 published 2026-08-27)
 
 | # | Topic | Intent | Primary KW | Secondary KWs | Suggested H1 | Key sections | Links to pillar |
 |---|---|---|---|---|---|---|
 | 1 | Polycarbonate vs Metal vs ACP Awning | commercial | polycarbonate vs metal awning Malaysia | ACP awning, awning material comparison | Polycarbonate vs Metal vs ACP Awnings in Malaysia | heat/noise/light/price trade-offs, use cases, decision checklist | awning-installation | ✅ **PUBLISHED** 2026-08-27 — `/blog/polycarbonate-vs-metal-vs-acp-awning-malaysia` + native MS/ZH twins; quote-safe (no fabricated prices); links to pillar + 4 sub-services + welding silo; wired into topical-map BLOG pool + 4 specialty relatedBlogs; category "Awning" |
-| 2 | Best Awning Types for Malaysian Homes | informational/commercial | best awning type for house Malaysia | car porch awning, awning rumah | The Best Awning Types for Malaysian Homes | climate, material map per application, maintenance | awning-installation + sub pages |
+| 2 | Best Awning Types for Malaysian Homes | informational/commercial | best awning type for house Malaysia | car porch awning, awning rumah | How to Choose the Right Awning for Your Malaysian Home | application→type map, priority selection (light/heat/noise/looks/retractable), strata, climate basics | awning-installation + sub pages | ✅ **PUBLISHED** 2026-08-27 — `/blog/how-to-choose-right-awning-malaysia` + native MS `/ms/blog/cara-memilih-awning-yang-sesuai-rumah-malaysia` + native ZH `/zh/bo-ke/ru-he-wei-ma-lai-xi-ya-zhu-jia-xuan-ze-he-shi-yu-peng`. Re-angled as an **application-first decision guide** (avoids duplicating post 1's material comparison); quote-safe; links to pillar + all 5 application sub-pages + welding + posts 1/3/4; wired into BLOG pool (position 1) + glass/canvas-fabric/balcony-patio specialty relatedBlogs; validator 211→212 |
 | 3 | Car Porch Awning Guide | transactional/info | car porch awning Malaysia | awning car porch KL, parking shade | Car Porch Awning Guide: Materials, Drainage & Cost Factors | span, heat-reducing sheets, slope/gutter, what to send for quote | car-porch sub-page + pillar | ✅ **PUBLISHED** 2026-08-27 — `/blog/car-porch-awning-guide-malaysia` + native MS/ZH twins |
 | 4 | Awning Cost in Malaysia (factors, no fabricated prices) | commercial | awning cost Malaysia | harga awning, awning price per sqft | How Awning Pricing Works in Malaysia | size, material, frame, access, removal; quote checklist | quote section | ✅ **PUBLISHED** 2026-08-27 — `/blog/how-awning-pricing-works-malaysia` + native MS/ZH twins |
 | 5 | Awning Maintenance: Leaks, Rust, Pooling | informational | awning leaking | awning repair, awning rust, water pooling | Awning Problems: Leaks, Rust and Water Pooling | causes, DIY checks, when to call, replacement signs | replacement sub-page |
@@ -338,7 +338,7 @@ content (mahligaiidaman, lemon8 contractor posts).
 - [x] HTTP 200 smoke test EN/MS/ZH hub + sub-service; title/meta/canonical/
       FAQPage(15)/HowTo(6)/Service schema verified; sitemap & services index
       include the page
-- [ ] Supporting blog cluster — 3 of 8 published (posts 1, 3, 4; §J); posts 2, 5–8 pending
+- [ ] Supporting blog cluster — 4 of 8 published (posts 1–4; §J); posts 5–8 pending
 - [ ] Real project photography — pending business supply, section L
 - [ ] Optional WhatsApp pre-filled quote-request message template
 
