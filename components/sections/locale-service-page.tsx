@@ -15,6 +15,7 @@ import {
 import type { Locale } from "@/lib/i18n";
 import { servicesData, isQuoteOnlyService } from "@/config/services-data";
 import { buildEstimateLinks } from "@/config/estimate-links";
+import { hasServiceEstimator, DEDICATED_TOOL_BY_SERVICE } from "@/lib/estimator/service-estimator";
 import { siteConfig } from "@/config/site";
 import { getLocalizedService } from "@/lib/service-i18n";
 import { getServerTranslator } from "@/lib/i18n-server";
@@ -108,6 +109,9 @@ export function LocaleServicePage({ locale, slug }: { locale: "ms" | "zh"; slug:
   // The estimator destination that does not redirect — see the CTA below.
   const estimateHref =
     buildEstimateLinks().find((link) => link.slug === slug)?.resolvedPath ?? `/estimate/${slug}`;
+  // Quote-only services have no estimator: their /estimate/<slug> route 404s,
+  // so the final CTA goes to WhatsApp instead of a dead calculator link.
+  const quoteOnly = !hasServiceEstimator(slug) && !DEDICATED_TOOL_BY_SERVICE[slug];
 
   const serviceSchema = getServiceSchema({
     title: localized.title,
@@ -506,18 +510,20 @@ export function LocaleServicePage({ locale, slug }: { locale: "ms" | "zh"; slug:
               a primary CTA. `resolvedPath` is the canonical destination the
               rest of the site (e.g. the /estimate hub) already links to.
             */}
-            <Link
-              href={estimateHref}
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#0284C7] px-6 py-3 text-sm font-extrabold text-white shadow-sm hover:bg-[#0369A1] transition-colors"
-            >
-              <Calculator className="w-4 h-4" />
-              {t("serviceContent.estimateCta")}
-            </Link>
+            {!quoteOnly && (
+              <Link
+                href={estimateHref}
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#0284C7] px-6 py-3 text-sm font-extrabold text-white shadow-sm hover:bg-[#0369A1] transition-colors"
+              >
+                <Calculator className="w-4 h-4" />
+                {t("serviceContent.estimateCta")}
+              </Link>
+            )}
             <a
               href={getWhatsAppLink({ service: localized.title, lang: locale })}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-whatsapp"
+              className={quoteOnly ? "btn-whatsapp text-base" : "btn-whatsapp"}
             >
               <MessageSquare className="w-4 h-4 fill-white text-[#25D366]" />
               {t("serviceDetail.bookWhatsApp")}

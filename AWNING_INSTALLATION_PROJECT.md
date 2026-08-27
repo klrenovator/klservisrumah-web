@@ -107,6 +107,10 @@ H1: Awning Installation in Kuala Lumpur & Selangor
 - [x] `npm run build` / type-check passes
 - [x] Dev-server smoke test of `/services/awning-installation` (+ MS/ZH twins
       + 8 sub-services) — all HTTP 200; title/meta/schema/FAQ/guide verified
+- [x] Internal link audit fix: `/estimate/awning-installation` is a dead route
+      for the quote-only service — removed from the /estimate hub list and the
+      MS/ZH final CTA (now WhatsApp-only for quote-only services). Rendered-HTML
+      link audit: 434,236 links, 0 broken targets.
 - [x] Quote-only / estimate-link handling: rate-book generator, estimator
       share-link test and AI-context generator updated so the awning service
       publishes no fake numbers and no dead `/estimate/awning-installation`
