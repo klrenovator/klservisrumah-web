@@ -30,8 +30,6 @@ import { renovationBudgetCalculatorSpec } from "./renovation-budget-calculator";
 import { roomRenovationEstimatorSpec } from "./room-renovation-estimator";
 import { kitchenRenovationEstimatorSpec } from "./kitchen-renovation-estimator";
 import { bathroomRenovationEstimatorSpec } from "./bathroom-renovation-estimator";
-import { deepCleaningCostEstimatorSpec } from "./deep-cleaning-cost-estimator";
-import { moveInOutCleaningCalculatorSpec } from "./move-in-out-cleaning-calculator";
 import { airconInstallationCostSpec } from "./aircon-installation-cost";
 import { airconGasTopupCostSpec } from "./aircon-gas-topup-cost";
 import { airconSizeCalculatorSpec } from "./aircon-size-calculator";
@@ -80,8 +78,6 @@ export const estimatorSpecs: Record<string, EstimatorSpec> = {
   "room-renovation-estimator": roomRenovationEstimatorSpec,
   "kitchen-renovation-estimator": kitchenRenovationEstimatorSpec,
   "bathroom-renovation-estimator": bathroomRenovationEstimatorSpec,
-  "deep-cleaning-cost-estimator": deepCleaningCostEstimatorSpec,
-  "move-in-out-cleaning-calculator": moveInOutCleaningCalculatorSpec,
   "aircon-installation-cost": airconInstallationCostSpec,
   "aircon-gas-topup-cost": airconGasTopupCostSpec,
   "aircon-size-calculator": airconSizeCalculatorSpec,
@@ -91,6 +87,6 @@ export const estimatorSpecs: Record<string, EstimatorSpec> = {
   "aircon-service-picker": airconServicePickerSpec,
 };
 
-export { paintingSpec, leakSpec, ceilingSpec, plumbingSpec, tvMountSpec, paintQuantityEstimatorSpec, wallAreaCalculatorSpec, ceilingAreaCalculatorSpec, ceilingReplacementCostSpec, pipeLeakEstimatorSpec, waterPressureTroubleshooterSpec, pipeReplacementCostSpec, waterproofingCostCalculatorSpec, roofAreaCalculatorSpec, bathroomWaterproofingEstimatorSpec, balconyWaterproofingEstimatorSpec, electricalInstallationCostSpec, socketQuantityCalculatorSpec, lightingInstallationCalculatorSpec, ceilingFanInstallationEstimatorSpec, handymanCostEstimatorSpec, furnitureAssemblyEstimatorSpec, curtainInstallationCalculatorSpec, doorInstallationCostSpec, windowReplacementEstimatorSpec, glassReplacementCalculatorSpec, flooringAreaCalculatorSpec, tileQuantityCalculatorSpec, vinylFlooringCostEstimatorSpec, roofRepairEstimatorSpec, roofReplacementCostSpec, renovationBudgetCalculatorSpec, roomRenovationEstimatorSpec, kitchenRenovationEstimatorSpec, bathroomRenovationEstimatorSpec, deepCleaningCostEstimatorSpec, moveInOutCleaningCalculatorSpec };
+export { paintingSpec, leakSpec, ceilingSpec, plumbingSpec, tvMountSpec, paintQuantityEstimatorSpec, wallAreaCalculatorSpec, ceilingAreaCalculatorSpec, ceilingReplacementCostSpec, pipeLeakEstimatorSpec, waterPressureTroubleshooterSpec, pipeReplacementCostSpec, waterproofingCostCalculatorSpec, roofAreaCalculatorSpec, bathroomWaterproofingEstimatorSpec, balconyWaterproofingEstimatorSpec, electricalInstallationCostSpec, socketQuantityCalculatorSpec, lightingInstallationCalculatorSpec, ceilingFanInstallationEstimatorSpec, handymanCostEstimatorSpec, furnitureAssemblyEstimatorSpec, curtainInstallationCalculatorSpec, doorInstallationCostSpec, windowReplacementEstimatorSpec, glassReplacementCalculatorSpec, flooringAreaCalculatorSpec, tileQuantityCalculatorSpec, vinylFlooringCostEstimatorSpec, roofRepairEstimatorSpec, roofReplacementCostSpec, renovationBudgetCalculatorSpec, roomRenovationEstimatorSpec, kitchenRenovationEstimatorSpec, bathroomRenovationEstimatorSpec };
 export * from "./types";
 export { formatMYR } from "./format";

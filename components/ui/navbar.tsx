@@ -76,7 +76,6 @@ const RENOVATION_SLUGS = [
   "carpentry",
   "kitchen-cabinet",
   "door",
-  "post-renovation-cleaning",
 ];
 
 export function Navbar() {

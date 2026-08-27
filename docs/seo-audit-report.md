@@ -1,6 +1,6 @@
 # SEO Audit Report
 
-Generated: 2026-08-26T07:26:53.437Z
+Generated: 2026-08-26T20:42:50.775Z
 
 ## Route Inventory
 
@@ -32,9 +32,6 @@ Generated: 2026-08-26T07:26:53.437Z
 - /services/window-repair
 - /services/locksmith
 - /services/glass-aluminium
-- /services/cleaning
-- /services/deep-cleaning
-- /services/post-renovation-cleaning
 - /services/cctv
 - /services/autogate
 - /services/welding
@@ -135,9 +132,6 @@ Generated: 2026-08-26T07:26:53.437Z
 - /problems/sliding-window-stuck
 - /problems/smart-lock-not-working
 - /problems/shower-screen-leaking
-- /problems/mold-in-bathroom-after-cleaning
-- /problems/stubborn-grout-stains-after-deep-clean
-- /problems/construction-dust-returning
 - /problems/cctv-not-recording
 - /problems/autogate-not-closing
 - /problems/rusting-window-grille
@@ -168,9 +162,6 @@ Generated: 2026-08-26T07:26:53.437Z
 - /problems/locked-out-of-house
 - /problems/downlight-flickering
 - /problems/shower-screen-water-leak
-- /problems/stubborn-bathroom-limescale
-- /problems/move-out-condo-deep-clean
-- /problems/cement-splatter-tile-clean
 - /problems/cctv-not-recording-storage-full
 - /problems/autogate-remote-not-working
 - /problems/loose-metal-gate-hinges
@@ -229,12 +220,10 @@ Generated: 2026-08-26T07:26:53.437Z
 - /blog/roof-leak-diagnosis-repair-kl
 - /blog/ridge-re-bedding-re-pointing-kl
 - /blog/aircond-water-heater-and-oven-point
-- /blog/allergy-season-refresh-clean-kl
 - /blog/aluminium-sliding-window-kl
 - /blog/autogate-motor-replacement-service-kl
 - /blog/autogate-services-kl
 - /blog/bathroom-and-wet-area-waterproofing
-- /blog/bi-weekly-terrace-house-cleaning-kl
 - /blog/built-in-wardrobe-kl
 - /blog/custom-carpentry-joinery-kl
 - /blog/cctv-health-check-and-relocation-kl
@@ -243,14 +232,10 @@ Generated: 2026-08-26T07:26:53.437Z
 - /blog/ceiling-fan-replacement
 - /blog/ceiling-repair-reskim-kl
 - /blog/ceiling-services-kl
-- /blog/house-cleaning-services-kl
 - /blog/commercial-and-office-painting
 - /blog/commercial-shoplot-renovation
 - /blog/condo-interior-refurbishment
-- /blog/condo-move-out-deep-clean-kl
-- /blog/condo-post-renovation-clean-kl
 - /blog/condo-wifi-cctv-package-kl
-- /blog/construction-debris-removal-kl
 - /blog/cornice-and-l-box-concealed-light-trough
 - /blog/cove-curved-plaster-ceiling-kl
 - /blog/cove-led-strip-installation-kl
@@ -260,7 +245,6 @@ Generated: 2026-08-26T07:26:53.437Z
 - /blog/custom-window-grille-installation-kl
 - /blog/db-box-upgrade-and-rewiring
 - /blog/dc-motor-smart-fan-installation-kl
-- /blog/deep-cleaning-services-kl
 - /blog/door-hinge-and-lockset-repair
 - /blog/door-planing-adjustment-kl
 - /blog/door-repair-installation-kl
@@ -308,16 +292,11 @@ Generated: 2026-08-26T07:26:53.437Z
 - /blog/mortice-deadbolt-lock-replacement-kl
 - /blog/new-ceiling-fan-installation
 - /blog/new-power-point-and-switch-installation
-- /blog/new-tiles-grout-haze-removal-kl
-- /blog/office-cleaning-small-office-kl
 - /blog/on-site-welding-repair-kl
-- /blog/one-off-spring-clean-kl
 - /blog/house-painting-services-kl
 - /blog/pendant-chandelier-installation
 - /blog/plaster-ceiling-installation
 - /blog/plumbing-services-kl
-- /blog/post-illness-disinfection-clean-kl
-- /blog/post-renovation-cleaning-kl
 - /blog/autogate-not-closing
 - /blog/autogate-remote-not-working
 - /blog/balcony-leak-condo
@@ -331,12 +310,10 @@ Generated: 2026-08-26T07:26:53.437Z
 - /blog/ceiling-fan-wobbling
 - /blog/ceiling-leak-after-rain
 - /blog/ceiling-mold-stains
-- /blog/cement-splatter-tile-clean
 - /blog/clogged-drain
 - /blog/clogged-gutter-leaking
 - /blog/concrete-slab-crack-leak
 - /blog/condensation-ceiling-mold
-- /blog/construction-dust-returning
 - /blog/cracked-ceiling-joints
 - /blog/cracked-roof-tiles
 - /blog/cracked-tile-grout
@@ -355,8 +332,6 @@ Generated: 2026-08-26T07:26:53.437Z
 - /blog/loose-hollow-tiles
 - /blog/loose-metal-gate-hinges
 - /blog/low-water-pressure
-- /blog/mold-in-bathroom-after-cleaning
-- /blog/move-out-condo-deep-clean
 - /blog/old-condo-full-refurbishment
 - /blog/paint-cracking-hairline-walls
 - /blog/peeling-paint-malaysia
@@ -370,8 +345,6 @@ Generated: 2026-08-26T07:26:53.437Z
 - /blog/sliding-window-stuck
 - /blog/smart-lock-not-working
 - /blog/spc-flooring-peeling-edges
-- /blog/stubborn-bathroom-limescale
-- /blog/stubborn-grout-stains-after-deep-clean
 - /blog/stuck-window-lock
 - /blog/swimming-pool-leak-balcony
 - /blog/toilet-not-flushing
@@ -398,8 +371,6 @@ Generated: 2026-08-26T07:26:53.437Z
 - /blog/staircase-stringer-fabrication-kl
 - /blog/storage-water-heater-installation
 - /blog/built-in-study-desk-home-office-kl
-- /blog/terrace-house-deep-clean-kl
-- /blog/terrace-house-post-renovation-clean-kl
 - /blog/tile-repair-regrouting-kl
 - /blog/tiling-services-kl
 - /blog/toilet-tap-and-sink-installation
@@ -414,7 +385,6 @@ Generated: 2026-08-26T07:26:53.437Z
 - /blog/water-heater-repair-and-descaling
 - /blog/water-leakage-diagnosis-and-repair
 - /blog/waterproofing-services-kl
-- /blog/weekly-condo-cleaning-kl
 - /blog/welding-metal-fabrication-kl
 - /blog/window-handle-hinge-repair-kl
 - /blog/window-repair-glass-replacement-kl
@@ -422,16 +392,16 @@ Generated: 2026-08-26T07:26:53.437Z
 
 ## Checks
 
-- Total representative routes: 415
-- Service pages: 31
+- Total representative routes: 385
+- Service pages: 28
 - Area pages: 37
 - Suburb records: 52
-- Problem pages: 92
-- Blog posts: 229
+- Problem pages: 86
+- Blog posts: 208
 
 ## Metadata consistency (post-build full-corpus)
 
-- Pages checked: 6180
+- Pages checked: 5628
 - Pages with hreflang while canonicalised to a different URL: 0
 
 _No issues found — every page that canonicalises to a different URL correctly omits hreflang (Google: canonical overrides hreflang)._

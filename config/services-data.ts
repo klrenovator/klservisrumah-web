@@ -175,10 +175,10 @@ export const servicesData: Record<string, ServiceDetail> = {
   "plumbing": {
     slug: "plumbing",
     title: "Plumbing & Leak Repair Services",
-    tagline: "Plumbing and leak repair for pipes, taps, toilets, drains, water heaters and pumps across KL & Selangor, with the scope confirmed before work. From RM 150.",
+    tagline: "Plumbing and leak repair for pipes, taps, toilets, drains, water heaters and pumps across KL & Selangor, with the scope confirmed before work. From RM 280.",
     description:
       "At KL Servis Rumah, we provide fast, licensed, and transparent plumbing services for residential and commercial properties across Kuala Lumpur and Selangor. From frustrating water leakage behind bathroom walls to blocked toilet drains and burst water pipes, our experienced plumbers diagnose and resolve issues with long-term, SIRIM-certified solutions. We utilize advanced electronic pipe-leak detectors to pinpoint hidden pipe damage beneath concrete slabs without unnecessary wall smashing. Whether you need a simple tap replacement, kitchen sink unclogging, water heater installation, or a heavy-duty booster pump setup, we guarantee professional craftsmanship, transparent upfront pricing, and clean, sanitary executions.",
-    startPrice: "RM 150",
+    startPrice: "RM 280",
     icon: "droplet",
     highlights: [
       "24/7 urgent dispatch for burst pipes, severe flooding, and critical leakage repair",
@@ -221,7 +221,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     i18n: {
       ms: {
         title: "Perkhidmatan Paip & Baiki Kebocoran",
-        tagline: "Pembaikan paip yang boleh dipercayai, pembaikan kebocoran air, dan pemasangan lekapan baru. Alat ganti bertauliah SIRIM, respons pantas. Dari RM 150.",
+        tagline: "Pembaikan paip yang boleh dipercayai, pembaikan kebocoran air, dan pemasangan lekapan baru. Alat ganti bertauliah SIRIM, respons pantas. Dari RM 280.",
         description:
           "Di KL Servis Rumah, kami menyediakan perkhidmatan paip yang pantas, berlesen, dan telus untuk hartanah kediaman dan komersial di seluruh Kuala Lumpur dan Selangor. Daripada kebocoran air yang membingungkan di sebalik dinding bilik air kepada saliran tandas tersumbat dan paip air pecah, jurutera paip berpengalaman kami mendiagnosis dan menyelesaikan masalah dengan penyelesaian jangka panjang bertauliah SIRIM. Kami menggunakan pengesan kebocoran paip elektronik canggih untuk mengesan kerosakan paip tersembunyi di bawah slab konkrit tanpa memecah dinding secara tidak perlu. Sama ada anda memerlukan penggantian paip air mudah, penyahsumbatan singki dapur, pemasangan pemanas air, atau persediaan pam penambah tugas berat, kami menjamin kemahiran profesional, harga telus terlebih dahulu, dan pelaksanaan bersih dan bersanitasi.",
         highlights: [
@@ -264,7 +264,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       },
       zh: {
         title: "水管与漏水维修服务",
-        tagline: "可靠的水管维修、漏水修复与新洁具安装。SIRIM 认证配件，快速响应。从 RM 150 起。",
+        tagline: "可靠的水管维修、漏水修复与新洁具安装。SIRIM 认证配件，快速响应。从 RM 280 起。",
         description:
           "在 KL Servis Rumah，我们为吉隆坡与雪兰莪的住宅及商业物业提供快速、持牌、透明的水管服务。从浴室墙内令人头疼的漏水，到厕所排水管堵塞与水管爆裂，我们经验丰富的水管工能诊断并以长期、SIRIM 认证的方案解决问题。我们使用先进的电子管道漏水探测器，精准定位混凝土板下隐藏的管道损坏，无需不必要地砸墙。无论您需要简单更换水龙头、疏通厨房水槽、安装热水器，还是设置重型增压泵，我们都保证专业工艺、透明的事先报价，以及干净卫生的施工。",
         highlights: [
@@ -568,10 +568,10 @@ export const servicesData: Record<string, ServiceDetail> = {
   "handyman": {
     slug: "handyman",
     title: "Handyman Services",
-    tagline: "TV mounting, door and lock repair, furniture assembly, curtain and shelf installation, cabinet adjustments and general maintenance across KL & Selangor. From RM 100.",
+    tagline: "TV mounting, door and lock repair, furniture assembly, curtain and shelf installation, cabinet adjustments and general maintenance across KL & Selangor. From RM 280.",
     description:
       "KL Servis Rumah provides elite, reliable, and prompt handyman services across Kuala Lumpur and Selangor. Skip the frustration of crooked shelves, loose door locks, or confusing flat-pack furniture manuals. Our multi-skilled tradesmen arrive equipped with professional tools, levels, studs detectors, and heavy-duty drywall anchors to handle all your odd jobs around the house or office. We specialize in safe wall mounting of heavy OLED TVs, secure lockset replacements, hanging heavy mirrors, custom shelving, custom blinds, wardrobe assembly (IKEA, Taobao, Harvey Norman), and scheduled corporate office maintenance. We treat your property with respect, work cleanly, and ensure every installation is perfectly level and structurally safe.",
-    startPrice: "RM 100",
+    startPrice: "RM 280",
     icon: "wrench",
     highlights: [
       "Experienced multi-disciplinary tradesmen who can handle multiple odd jobs in one visit",
@@ -608,7 +608,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     i18n: {
       ms: {
         title: "Perkhidmatan Handyman",
-        tagline: "Pembaikan pintu & kunci profesional, pemasangan TV, pemasangan perabot, trek langsir, pelarasan kabinet, dan penyelenggaraan pejabat am. Dari RM 100.",
+        tagline: "Pembaikan pintu & kunci profesional, pemasangan TV, pemasangan perabot, trek langsir, pelarasan kabinet, dan penyelenggaraan pejabat am. Dari RM 280.",
         description:
           "KL Servis Rumah menyediakan perkhidmatan tukang elit, boleh dipercayai, dan segera di seluruh Kuala Lumpur dan Selangor. Elakkan kekecewaan rak yang senget, kunci pintu longgar, atau manual perabot flat-pack yang mengelirukan. Tukang pelbagai kemahiran kami tiba dengan alatan profesional, aras, pengesan stud, dan sauh dinding kering tugas berat untuk mengendalikan semua kerja pelbagai anda di sekitar rumah atau pejabat. Kami pakar dalam pemasangan dinding selamat untuk TV OLED berat, penggantian kunci selamat, penggantungan cermin berat, rak khas, bidai khas, pemasangan almari (IKEA, Taobao, Harvey Norman), dan penyelenggaraan pejabat korporat berjadual. Kami melayan hartanah anda dengan hormat, bekerja secara bersih, dan memastikan setiap pemasangan rata sempurna dan selamat dari segi struktur.",
         highlights: [
@@ -645,7 +645,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       },
       zh: {
         title: "家居杂工服务",
-        tagline: "专业门锁维修、电视挂墙、家具组装、窗帘轨道、橱柜调整以及一般办公室维护。从 RM 100 起。",
+        tagline: "专业门锁维修、电视挂墙、家具组装、窗帘轨道、橱柜调整以及一般办公室维护。从 RM 280 起。",
         description:
           "KL Servis Rumah 在吉隆坡与雪兰莪全境提供顶级、可靠且迅速的维修师傅服务。摆脱歪斜置物架、松动门锁或令人困惑的平板包装家具说明书带来的烦恼。我们多技能的师傅携带专业工具、水平仪、龙骨探测器与重型石膏板锚固件，处理您家中或办公室的各类杂项工作。我们专精于重型 OLED 电视的安全挂墙、可靠的锁具更换、重型镜子悬挂、定制置物架、定制百叶窗、衣柜组装（IKEA、淘宝、Harvey Norman），以及排定的企业办公室维护。我们尊重您的物业，保持施工整洁，并确保每次安装都完全水平且结构安全。",
         highlights: [
@@ -840,10 +840,10 @@ export const servicesData: Record<string, ServiceDetail> = {
   "electrical": {
     slug: "electrical",
     title: "Licensed Electrical Services",
-    tagline: "Wiring, DB box upgrades, power point and switch installation, ceiling fan and lighting point setup by ST-licensed electricians. From RM 150.",
+    tagline: "Wiring, DB box upgrades, power point and switch installation, ceiling fan and lighting point setup by ST-licensed electricians. From RM 280.",
     description:
       "KL Servis Rumah provides certified residential and commercial electrical services across Kuala Lumpur and Selangor, delivered by experienced ST-registered wiremen and supported by qualified electrical engineers for design. Whether you need a single new power point installed, a complete DB box and rewiring for an old terrace house, smart switch upgrades, or dedicated circuits for air-conditioners, water heaters, and EV chargers, our electricians follow MS IEC 60364 wiring standards and local Suruhanjaya Tenaga requirements. Every job is tested with insulation resistance testers and earth loop impedance meters, and you receive a clear, itemized quote before any drilling or cabling begins. We also handle condo management work-hour compliance and lift protection for high-rise installations.",
-    startPrice: "RM 150",
+    startPrice: "RM 280",
     icon: "zap",
     highlights: [
       "ST-registered wiremen with full Suruhanjaya Tenaga compliance for residential and light commercial work",
@@ -874,7 +874,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     ],
     faqs: [
       { q: "Are your electricians ST-registered?", a: "Yes. Our wiremen hold valid Suruhanjaya Tenaga (ST) registrations and are competent to carry out residential and light commercial wiring up to 415V. For installations above 100A or three-phase commercial supplies we partner with a ST-registered Competent Electrical Engineer (CEE) for sign-off." },
-      { q: "How do I know if my old terrace house needs a full rewiring?", a: "Common signs include: rubber-insulated cables (black surface) older than 25 years, frequent tripping of the main breaker, scorch marks on sockets, a fuse-based DB box without RCCB, or two-pin outlets without earth. We offer an on-site inspection and written report with photographic evidence from RM 150." },
+      { q: "How do I know if my old terrace house needs a full rewiring?", a: "Common signs include: rubber-insulated cables (black surface) older than 25 years, frequent tripping of the main breaker, scorch marks on sockets, a fuse-based DB box without RCCB, or two pin outlets without earth. We offer an on-site inspection and written report with photographic evidence from RM 280." },
       { q: "Can you install a Tesla or BYD EV charger at home?", a: "Yes. We install Level 2 AC chargers (7kW–22kW) for all major EV brands including Tesla, BYD, Hyundai, BMW, and Mercedes. The installation includes a dedicated 32A circuit, weatherproof isolator, RCCB type B protection where required, and a 3-meter cable run as standard. Longer cable runs are quoted on site." },
       { q: "Will my power be off the whole day during a DB box upgrade?", a: "Typically 4 to 8 hours depending on the scope. We coordinate with TNB for temporary disconnection if needed and restore power the same day. For critical loads (medical equipment, servers) we can arrange temporary generator support with advance notice." }
     ],
@@ -886,7 +886,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     i18n: {
       ms: {
         title: "Perkhidmatan Elektrik Berlesen",
-        tagline: "Pendawaian, naik taraf DB box, pemasangan power point dan suis, titik kipas siling dan pencahayaan oleh juruelektrik berdaftar ST. Dari RM 150.",
+        tagline: "Pendawaian, naik taraf DB box, pemasangan power point dan suis, titik kipas siling dan pencahayaan oleh juruelektrik berdaftar ST. Dari RM 280.",
         description: "KL Servis Rumah menyediakan perkhidmatan elektrik kediaman dan komersial yang bertauliah di seluruh Kuala Lumpur dan Selangor, dihantar oleh wiremen berdaftar ST yang berpengalaman dan disokong oleh jurutera elektrik bertauliah untuk reka bentuk. Sama ada anda perlukan satu power point baru, DB box lengkap dan pendawaian semula untuk rumah teres lama, naik taraf suis pintar, atau litar khas untuk penghawa dingin, pemanas air, dan pengecas EV, juruelektrik kami mengikuti piawaian pendawaian MS IEC 60364 dan keperluan Suruhanjaya Tenaga tempatan. Setiap kerja diuji dengan penguji rintangan penebat dan meter impedans gelung bumi, dan anda menerima sebut harga terperinci yang jelas sebelum sebarang penggerudian atau pendawaian dimulakan. Kami juga mengendalikan pematuhan waktu kerja pengurusan kondominium dan perlindungan lif untuk pemasangan bertingkat tinggi.",
         highlights: [
           "Wiremen berdaftar ST dengan pematuhan penuh Suruhanjaya Tenaga untuk kerja kediaman dan komersial ringan",
@@ -917,7 +917,7 @@ export const servicesData: Record<string, ServiceDetail> = {
         ],
         faqs: [
           { q: "Adakah juruelektrik anda berdaftar ST?", a: "Ya. Wiremen kami memegang pendaftaran Suruhanjaya Tenaga (ST) yang sah dan kompeten untuk menjalankan pendawaian kediaman dan komersial ringan sehingga 415V. Untuk pemasangan melebihi 100A atau bekalan komersial tiga fasa kami berganding dengan Jurutera Elektrik Kompeten (CEE) berdaftar ST untuk pengesahan." },
-          { q: "Bagaimana saya tahu jika rumah teres lama saya memerlukan pendawaian semula penuh?", a: "Tanda biasa termasuk: kabel getah berpenebat (permukaan hitam) yang lebih tua dari 25 tahun, tripping kerap breaker utama, tanda hangus pada soket, kotak fius DB tanpa RCCB, atau outlet dua pin tanpa bumi. Kami menawarkan pemeriksaan di tapak dan laporan bertulis dengan bukti fotografi bermula dari RM 150." },
+          { q: "Bagaimana saya tahu jika rumah teres lama saya memerlukan pendawaian semula penuh?", a: "Tanda biasa termasuk: kabel getah berpenebat (permukaan hitam) yang lebih tua dari 25 tahun, tripping kerap breaker utama, tanda hangus pada soket, kotak fius DB tanpa RCCB, atau outlet dua pin tanpa bumi. Kami menawarkan pemeriksaan di tapak dan laporan bertulis dengan bukti fotografi bermula dari RM 280." },
           { q: "Boleh anda pasang pengecas EV Tesla atau BYD di rumah?", a: "Ya. Kami pasang pengecas AC Level 2 (7kW–22kW) untuk semua jenama EV utama termasuk Tesla, BYD, Hyundai, BMW, dan Mercedes. Pemasangan termasuk litar 32A khas, isolator kalis cuaca, perlindungan RCCB jenis B jika diperlukan, dan laluan kabel 3-meter sebagai standard. Laluan kabel lebih panjang disebut harga di tapak." },
           { q: "Adakah kuasa saya akan terputus sepanjang hari semasa naik taraf DB box?", a: "Biasanya 4 hingga 8 jam bergantung kepada skop. Kami menyelaras dengan TNB untuk pemotongan sementara jika diperlukan dan memulihkan kuasa pada hari yang sama. Untuk beban kritikal (peralatan perubatan, pelayan) kami boleh mengatur sokongan generator sementara dengan notis awal." }
         ],
@@ -928,7 +928,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       },
       zh: {
         title: "持牌电工服务",
-        tagline: "由 ST 注册电工承接的布线、配电箱升级、插座与开关安装、吊扇与照明点位。从 RM 150 起。",
+        tagline: "由 ST 注册电工承接的布线、配电箱升级、插座与开关安装、吊扇与照明点位。从 RM 280 起。",
         description: "KL Servis Rumah 在整个吉隆坡与雪兰莪提供经认证的住宅与商业电工服务，由经验丰富的 ST 注册电工执行，并由合资格电气工程师负责设计支持。无论是新增一个插座、为老旧排屋整套更换配电箱与重新布线、智能开关升级，还是为空调、热水器、电动车充电桩配置专用回路，我们的电工都遵循 MS IEC 60364 布线标准及本地能源委员会（Suruhanjaya Tenaga）规范。每项工程均使用绝缘电阻测试仪与接地回路阻抗表进行测试，钻孔与走线前您会收到清晰的分项报价。我们也负责公寓管理处的工时合规与电梯保护，确保高层项目顺利推进。",
         highlights: [
           "ST 注册电工，全面符合能源委员会对住宅与轻商业工程的要求",
@@ -959,7 +959,7 @@ export const servicesData: Record<string, ServiceDetail> = {
         ],
         faqs: [
           { q: "你们的电工有 ST 注册吗？", a: "有的。我们的电工持有有效的能源委员会（ST）注册，有资格承接 415V 及以下的住宅与轻商业布线工程。超过 100A 或三相商业供电项目，我们与 ST 注册合资格电气工程师（CEE）合作进行签核。" },
-          { q: "如何判断我的老排屋是否需要全面重新布线？", a: "常见征兆包括：超过 25 年以上的橡胶绝缘电缆（表面发黑）、主断路器频繁跳闸、插座有烧焦痕迹、采用无 RCCB 的老式保险丝配电箱，或两脚插座无接地。我们提供从 RM 150 起的现场检查与带照片证据的书面报告。" },
+          { q: "如何判断我的老排屋是否需要全面重新布线？", a: "常见征兆包括：超过 25 年以上的橡胶绝缘电缆（表面发黑）、主断路器频繁跳闸、插座有烧焦痕迹、采用无 RCCB 的老式保险丝配电箱，或两脚插座无接地。我们提供从 RM 280 起的现场检查与带照片证据的书面报告。" },
           { q: "可以在家安装 Tesla 或 BYD 电动车充电桩吗？", a: "可以。我们为所有主流电动车品牌（Tesla、BYD、Hyundai、BMW、Mercedes 等）安装 Level 2 交流充电桩（7kW–22kW）。安装包括 32A 专用回路、户外防水隔离器、必要的 B 型 RCCB 保护，以及标准的 3 米线缆。超过 3 米的线缆按现场报价。" },
           { q: "配电箱升级期间会整天停电吗？", a: "通常 4 到 8 小时，取决于工程范围。我们与 TNB 协调必要时临时断电，当天恢复供电。对于关键负荷（医疗设备、服务器），我们可以提前安排临时发电机支援。" }
         ],
@@ -2861,376 +2861,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     }
   },
 
-  // ── 23. CLEANING SERVICES ────────────────────────────────────────
-  "cleaning": {
-    slug: "cleaning",
-    title: "Residential & Office Cleaning",
-    tagline: "Weekly, fortnightly, or monthly cleaning for homes, condos, and small offices. Background-checked cleaners, eco products. From RM 180 / session.",
-    description:
-      "KL Servis Rumah provides reliable residential and small-office cleaning services across Kuala Lumpur and Selangor. We service condos, apartments, terrace houses, and small offices (under 3,000 sqft) with weekly, fortnightly, monthly, or one-off cleaning visits. Every cleaner is background-checked, fully trained, and equipped with eco-friendly, pet-safe cleaning products. Standard service includes dusting, vacuuming, mopping, kitchen and bathroom cleaning, surface wiping, trash removal, and bed-making. We can also customize a checklist for your home (e.g. specific floor type, allergy considerations, sensitive furniture). All recurring bookings are managed by a dedicated supervisor who performs a monthly quality spot-check and handles any service feedback.",
-    startPrice: "RM 180",
-    icon: "spray-can",
-    highlights: [
-      "Background-checked, in-house trained cleaners (no gig-economy contractors)",
-      "Eco-friendly, pet-safe, and child-safe cleaning products as standard",
-      "Flexible weekly, fortnightly, or monthly scheduling with a single WhatsApp point of contact",
-      "Custom cleaning checklist built around your home, floor type, and sensitivities",
-      "Monthly supervisor spot-check and quality report for every recurring booking",
-      "Locked pricing, no surprise fees, and same-day replacement if your regular cleaner is unavailable"
-    ],
-    subServices: [
-      { name: "Weekly Condo Cleaning (1,000 sqft)", price: "From RM 180 / visit", desc: "3-bed condo or apartment cleaned weekly, including kitchen, bathrooms, and common areas." },
-      { name: "Bi-Weekly Terrace House Cleaning", price: "From RM 250 / visit", desc: "Two-storey terrace house cleaned every fortnight, including ground floor, first floor, and outdoor areas." },
-      { name: "Office Cleaning (Small Office, 1,500 sqft)", price: "From RM 320 / visit", desc: "After-hours office cleaning including workstations, meeting rooms, pantry, and restrooms." },
-      { name: "One-Off Spring Clean", price: "From RM 420", desc: "One-time deep clean including ceiling fans, light fixtures, behind furniture, and window interiors." }
-    ],
-    process: [
-      { step: "01", title: "Booking & Onboarding", desc: "You submit your home size, location, and preferred frequency via WhatsApp. We confirm a quote and a start date within 24 hours." },
-      { step: "02", title: "Custom Cleaning Checklist", desc: "We build a custom checklist for your home covering floor type, sensitive surfaces, areas to skip, and any specific requests (e.g. pet beds, child-safe products)." },
-      { step: "03", title: "First Clean & Calibration", desc: "Your assigned cleaner performs the first visit. We follow up with you to confirm satisfaction and adjust the checklist if needed." },
-      { step: "04", title: "Recurring Service", desc: "Your cleaner arrives on the same day and time each visit. You receive a WhatsApp confirmation 30 minutes before arrival." },
-      { step: "05", title: "Monthly Quality Check", desc: "A supervisor performs a spot-check once a month and shares a quality report with you. Any feedback is implemented immediately." }
-    ],
-    faqs: [
-      { q: "Do I need to be home during the cleaning?", a: "No. Most of our recurring clients give us a spare key, door card, or building passcode so the cleaner can come and go independently. We keep a secure log of who has access, and all cleaners are background-checked and insured. You can also be home if you prefer — many clients choose to be home for the first few visits until they are comfortable." },
-      { q: "What cleaning products do you use?", a: "We use eco-friendly, biodegradable, pet-safe and child-safe products by default. For kitchen and bathroom we use a separate, stronger degreaser and descaler. If you have specific allergies or sensitivities (e.g. no essential oils, no fragrance), let us know at booking and we will customize. We can also use your own products if you prefer." },
-      { q: "Can I customize the cleaning checklist?", a: "Absolutely. The checklist is fully customizable. You can specify areas to prioritize, areas to skip, special instructions for delicate items, and any recurring tasks (e.g. \"always wipe down the kitchen cabinet fronts\"). We update the checklist in your client file and your cleaner reviews it before each visit." },
-      { q: "What if I am not happy with a clean?", a: "We offer a 24-hour re-clean guarantee. If anything in the clean does not meet your expectations, contact us within 24 hours and we will send the cleaner back to re-do the specific area, free of charge. For recurring clients, persistent issues are addressed by the supervisor on the next quality check." }
-    ],
-    heroImage: "/hero-cleaning.svg",
-    metaTitle: "Residential & Office Cleaning Services KL & Selangor",
-    metaDesc: "Weekly, fortnightly, or monthly cleaning in KL & Selangor. Background-checked cleaners, eco products, custom checklist. From RM180/session. Condo, terrace, office.",
-    aioSummary: "KL Servis Rumah provides residential and small-office cleaning across KL & Selangor. Weekly, fortnightly, monthly, or one-off. Background-checked cleaners, eco-friendly products, custom checklist per home. Monthly supervisor spot-check. Condos, apartments, terrace houses, small offices.",
-    warranty: "24-Hour Re-Clean Satisfaction Guarantee",
-    i18n: {
-      ms: {
-        title: "Pembersihan Kediaman & Pejabat",
-        tagline: "Pembersihan mingguan, dua minggu sekali atau bulanan untuk rumah, kondominium dan pejabat kecil. Pembersih diperiksa latar belakang, produk mesra alam. Dari RM 180 / sesi.",
-        description: "KL Servis Rumah menyediakan perkhidmatan pembersihan kediaman dan pejabat kecil yang boleh dipercayai di seluruh Kuala Lumpur dan Selangor. Kami memberi perkhidmatan kepada kondominium, apartmen, rumah teres dan pejabat kecil (bawah 3,000 kaki persegi) dengan lawatan pembersihan mingguan, dua minggu sekali, bulanan atau sekali sahaja. Setiap pembersih diperiksa latar belakang, terlatih sepenuhnya dan dilengkapi dengan produk pembersihan mesra alam dan selamat untuk haiwan peliharaan. Perkhidmatan standard termasuk mengelap habuk, vakum, mop, pembersihan dapur dan bilik mandi, mengelap permukaan, membuang sampah dan mengemas katil. Kami juga boleh menyesuaikan senarai semak untuk rumah anda (contohnya jenis lantai khusus, pertimbangan alahan, perabot sensitif). Semua tempahan berulang diuruskan oleh penyelia khas yang menjalankan pemeriksaan kualiti rawak bulanan dan mengendalikan sebarang maklum balas perkhidmatan.",
-        highlights: [
-          "Pembersih diperiksa latar belakang dan terlatih dalaman (bukan kontraktor gig-economy)",
-          "Produk pembersihan mesra alam, selamat untuk haiwan peliharaan dan kanak-kanak sebagai standard",
-          "Penjadualan mingguan, dua minggu sekali atau bulanan yang fleksibel dengan satu titik hubungan WhatsApp",
-          "Senarai semak pembersihan kustom dibina mengikut rumah, jenis lantai dan sensitiviti anda",
-          "Pemeriksaan rawak penyelia bulanan dan laporan kualiti untuk setiap tempahan berulang",
-          "Harga dikunci, tiada yuran mengejut dan pengganti hari sama jika pembersih tetap anda tidak hadir"
-        ],
-        subServices: [
-          { name: "Pembersihan Kondominium Mingguan (1,000 kaki persegi)", price: "Dari RM 180 / lawatan", desc: "Kondominium 3 bilik atau apartmen dibersihkan setiap minggu, termasuk dapur, bilik mandi dan kawasan bersama." },
-          { name: "Pembersihan Rumah Teres Dua Minggu Sekali", price: "Dari RM 250 / lawatan", desc: "Rumah teres dua tingkat dibersihkan setiap dua minggu, termasuk tingkat bawah, tingkat satu dan kawasan luar." },
-          { name: "Pembersihan Pejabat (Pejabat Kecil, 1,500 kaki persegi)", price: "Dari RM 320 / lawatan", desc: "Pembersihan pejabat selepas waktu kerja termasuk stesen kerja, bilik mesyuarat, pantry dan tandas." },
-          { name: "Cucian Musim Sekali Sahaja", price: "Dari RM 420", desc: "Pembersihan menyeluruh sekali termasuk kipas siling, lekapan lampu, belakang perabot dan bahagian dalam tingkap." }
-        ],
-        process: [
-          { step: "01", title: "Tempahan & Onboarding", desc: "Anda menghantar saiz rumah, lokasi dan kekerapan pilihan melalui WhatsApp. Kami mengesahkan sebut harga dan tarikh mula dalam 24 jam." },
-          { step: "02", title: "Senarai Semak Pembersihan Kustom", desc: "Kami membina senarai semak kustom untuk rumah anda merangkumi jenis lantai, permukaan sensitif, kawasan yang dilangkau dan sebarang permintaan khusus (contohnya katil haiwan, produk selamat kanak-kanak)." },
-          { step: "03", title: "Cucian Pertama & Penentukuran", desc: "Pembersih yang ditugaskan menjalankan lawatan pertama. Kami menghubungi anda untuk mengesahkan kepuasan dan melaraskan senarai semak jika perlu." },
-          { step: "04", title: "Perkhidmatan Berulang", desc: "Pembersih anda tiba pada hari dan masa yang sama setiap lawatan. Anda menerima pengesahan WhatsApp 30 minit sebelum ketibaan." },
-          { step: "05", title: "Pemeriksaan Kualiti Bulanan", desc: "Penyelia menjalankan pemeriksaan rawak sebulan sekali dan berkongsi laporan kualiti dengan anda. Sebarang maklum balas dilaksanakan serta-merta." }
-        ],
-        faqs: [
-          { q: "Perlu saya berada di rumah semasa pembersihan?", a: "Tidak. Kebanyakan pelanggan berulang kami memberikan kunci ganti, kad pintu atau kod laluan bangunan supaya pembersih boleh datang dan pergi secara bebas. Kami menyimpan log selamat siapa yang mempunyai akses, dan semua pembersih diperiksa latar belakang dan berinsurans. Anda juga boleh berada di rumah jika mahu — ramai pelanggan memilih berada di rumah untuk beberapa lawatan pertama sehingga selesa." },
-          { q: "Produk pembersihan apa yang anda gunakan?", a: "Kami menggunakan produk mesra alam, terbiodegradasi, selamat untuk haiwan peliharaan dan kanak-kanak secara lalai. Untuk dapur dan bilik mandi kami menggunakan pencuci gris dan nyahkerak berasingan yang lebih kuat. Jika anda mempunyai alahan atau sensitiviti khusus (contohnya tiada minyak pati, tiada pewangi), beritahu kami semasa tempahan dan kami akan menyesuaikan. Kami juga boleh menggunakan produk anda sendiri jika anda mahu." },
-          { q: "Boleh saya menyesuaikan senarai semak pembersihan?", a: "Sudah tentu. Senarai semak boleh disesuaikan sepenuhnya. Anda boleh menentukan kawasan keutamaan, kawasan dilangkau, arahan khas untuk barang halus dan sebarang tugas berulang (contohnya \"sentiasa lap muka kabinet dapur\"). Kami mengemas kini senarai semak dalam fail pelanggan anda dan pembersih anda menyemaknya sebelum setiap lawatan." },
-          { q: "Bagaimana jika saya tidak berpuas hati dengan sesuatu cucian?", a: "Kami menawarkan jaminan cuci semula 24 jam. Jika apa-apa dalam cucian tidak memenuhi jangkaan anda, hubungi kami dalam 24 jam dan kami akan menghantar pembersih kembali untuk mengulangi kawasan khusus, percuma. Untuk pelanggan berulang, isu berterusan ditangani oleh penyelia pada pemeriksaan kualiti seterusnya." }
-        ],
-        metaTitle: "Perkhidmatan Pembersihan Kediaman & Pejabat KL & Selangor",
-        metaDesc: "Pembersihan mingguan, dua minggu sekali atau bulanan di KL & Selangor. Pembersih diperiksa latar belakang, produk mesra alam, senarai semak kustom. Dari RM180/sesi. Kondo, teres, pejabat.",
-        aioSummary: "KL Servis Rumah menyediakan pembersihan kediaman dan pejabat kecil di seluruh KL & Selangor. Mingguan, dua minggu sekali, bulanan atau sekali sahaja. Pembersih diperiksa latar belakang, produk mesra alam, senarai semak kustom setiap rumah. Pemeriksaan rawak penyelia bulanan. Kondominium, apartmen, rumah teres, pejabat kecil.",
-        warranty: "Jaminan Kepuasan Cuci Semula 24 Jam"
-      },
-      zh: {
-        title: "住宅与办公室清洁",
-        tagline: "住宅、公寓与小型办公室的每周、每两周或每月清洁。背景审查的清洁员，环保清洁剂。从 RM 180 / 次起。",
-        description: "KL Servis Rumah 在吉隆坡与雪兰莪提供可靠的住宅与小型办公室清洁服务。我们为公寓、服务式住宅、排屋与小型办公室（3,000 平方英尺以下）提供每周、每两周、每月或单次清洁。每位清洁员都经过背景审查、全面培训，并配备环保、宠物安全的清洁产品。标准服务包括除尘、吸尘、拖地、厨卫清洁、台面擦拭、垃圾清理与整理床铺。我们还可以为您的家定制清洁清单（如特定地板类型、过敏考虑、娇贵家具）。所有包期客户都由专属督导管理，每月进行质量抽查并处理服务反馈。",
-        highlights: [
-          "背景审查、内部培训的清洁员（非零工平台外包）",
-          "标配环保、宠物与儿童安全的清洁产品",
-          "每周/每两周/每月灵活排期，单一 WhatsApp 联系人",
-          "按您的家居、地板类型与敏感需求定制清洁清单",
-          "每个包期客户享有每月督导抽查与质量报告",
-          "价格锁定、无隐藏收费，固定清洁员缺席时当日替补"
-        ],
-        subServices: [
-          { name: "每周公寓清洁（1,000 平方英尺）", price: "从 RM 180 / 次起", desc: "三房公寓每周清洁，包括厨房、浴室与公共区域。" },
-          { name: "每两周排屋清洁", price: "从 RM 250 / 次起", desc: "双层排屋每两周清洁，包括楼下、楼上与室外区域。" },
-          { name: "办公室清洁（小型办公室，1,500 平方英尺）", price: "从 RM 320 / 次起", desc: "下班后办公室清洁，包括工位、会议室、茶水间与洗手间。" },
-          { name: "单次大扫除", price: "从 RM 420 起", desc: "一次性深度清洁，包括吊扇、灯具、家具背后与窗户内侧。" }
-        ],
-        process: [
-          { step: "01", title: "预订与开通", desc: "您通过 WhatsApp 提交房屋面积、位置与期望频率。我们在 24 小时内确认报价与开始日期。" },
-          { step: "02", title: "定制清洁清单", desc: "我们为您的家定制清洁清单，涵盖地板类型、敏感表面、跳过区域与任何特殊要求（如宠物窝、儿童安全产品）。" },
-          { step: "03", title: "首次清洁与校准", desc: "指定清洁员执行首次服务。我们随后回访确认您的满意度，必要时调整清单。" },
-          { step: "04", title: "定期服务", desc: "您的清洁员每次同一时间上门。到达前 30 分钟您会收到 WhatsApp 确认。" },
-          { step: "05", title: "每月质量检查", desc: "督导每月抽查一次并与您分享质量报告。任何反馈立即落实。" }
-        ],
-        faqs: [
-          { q: "清洁期间我需要在家吗？", a: "不需要。大多数包期客户给我们备用钥匙、门卡或门禁密码，清洁员可独立进出。我们对持有门禁的人员留有安全记录，所有清洁员都经过背景审查并有保险。您也可以在家——许多客户前几次选择在家，直到放心为止。" },
-          { q: "你们用什么清洁产品？", a: "默认使用环保、可生物降解、宠物与儿童安全的产品。厨房和浴室另用更强的去油剂与除垢剂。如果您有特定过敏或敏感（如无精油、无香精），预订时告知我们即可定制。也可以使用您自己的产品。" },
-          { q: "可以自定义清洁清单吗？", a: "完全可以。清单完全可定制。您可以指定重点区域、跳过区域、娇贵物品的特别说明以及任何固定任务（如\"每次都要擦厨房柜门\"）。我们在客户档案中更新清单，清洁员每次上门前都会查阅。" },
-          { q: "对清洁不满意怎么办？", a: "我们提供 24 小时返工保证。如果清洁有任何地方不符合您的期望，24 小时内联系我们，我们将免费派清洁员返工重做指定区域。包期客户的持续问题由督导在下一次质量检查时处理。" }
-        ],
-        metaTitle: "吉隆坡与雪兰莪住宅与办公室清洁服务",
-        metaDesc: "吉隆坡与雪兰莪每周、每两周或每月清洁。背景审查清洁员、环保产品、定制清单。从 RM180/次起。公寓、排屋、办公室。",
-        aioSummary: "KL Servis Rumah 在吉隆坡与雪兰莪提供住宅与小型办公室清洁。每周、每两周、每月或单次。背景审查清洁员、环保产品、每户定制清单。每月督导抽查。公寓、服务式住宅、排屋、小型办公室。",
-        warranty: "24 小时返工满意保证"
-      }
-    }
-  },
-
-  // ── 24. DEEP CLEANING ────────────────────────────────────────
-  "deep-cleaning": {
-    slug: "deep-cleaning",
-    title: "Deep Cleaning & Move-In/Out",
-    tagline: "Top-to-bottom deep cleaning for move-in, move-out, post-illness, or seasonal refresh. From RM 420.",
-    description:
-      "KL Servis Rumah provides professional deep cleaning services across Kuala Lumpur and Selangor. Deep cleaning goes far beyond a regular weekly clean: it includes inside oven and refrigerator, ceiling fan blade degreasing, light fixture and switch plate wiping, behind and under furniture, window and track cleaning, grout scrubbing, hard water stain removal, mould treatment, curtain and blind vacuuming, and detailed bathroom descale. Our deep cleans are typically requested for: move-in (so you start fresh), move-out (to maximize your security deposit return), post-illness (cold, flu, COVID disinfection), allergy season (dust-mite reduction), or a quarterly seasonal refresh. We use hospital-grade disinfectant for post-illness cleans and HEPA-filtered vacuums throughout.",
-    startPrice: "RM 420",
-    icon: "brush",
-    highlights: [
-      "Top-to-bottom coverage including inside oven, fridge, ceiling fans, and light fixtures",
-      "HEPA-filtered vacuums for dust-mite and pet-dander reduction",
-      "Hospital-grade disinfection for post-illness or COVID cleans",
-      "Mould and mildew treatment with anti-fungal solution",
-      "Grout scrubbing and hard water stain removal in kitchens and bathrooms",
-      "Move-out cleans that meet landlord inspection standards — and pass security deposit return"
-    ],
-    subServices: [
-      { name: "Condo Move-Out Deep Clean (1,000 sqft)", price: "From RM 420", desc: "Full top-to-bottom clean including inside cabinets, oven, fridge, fans, and window tracks. Move-out ready." },
-      { name: "Terrace House Deep Clean (2,000 sqft)", price: "From RM 650", desc: "Two-storey home including outdoor areas, garage, and staircases. Move-in or move-out ready." },
-      { name: "Post-Illness Disinfection Clean", price: "From RM 500", desc: "Hospital-grade disinfection of all touchpoints, fabrics, and air spaces. Recommended after flu, COVID, or stomach bugs." },
-      { name: "Allergy Season Refresh", price: "From RM 480", desc: "HEPA-vacuum deep clean with dust-mite treatment on mattresses, sofas, and curtains." }
-    ],
-    process: [
-      { step: "01", title: "Scope Assessment", desc: "We confirm home size, focus areas, and any specific concerns (mould, post-illness, allergy, move-in/out). For move-out we ask for the landlord's checklist if available." },
-      { step: "02", title: "Transparent Quote", desc: "Itemized quote based on home size, scope, and number of cleaners needed (typically 2–3 cleaners for 4–6 hours)." },
-      { step: "03", title: "Top-Down Cleaning", desc: "We start from ceiling fans, light fixtures, and high surfaces, then work down to walls, furniture, and finally floors. This ensures debris falls downward and is captured." },
-      { step: "04", title: "Detail Cleaning", desc: "Inside cabinets, oven, fridge, behind furniture, window tracks, ceiling fan blades, bathroom grout, and other detail areas are scrubbed and disinfected." },
-      { step: "05", title: "Final Inspection & Touch-Ups", desc: "We do a final walkthrough with you (or your landlord) and address any missed spots. For move-out cleans, we provide a written completion receipt." }
-    ],
-    faqs: [
-      { q: "How long does a deep clean take?", a: "It depends on the size and condition of the home. A standard 1,000 sqft condo takes 4–6 hours with 2 cleaners. A 2,000 sqft terrace house takes 6–8 hours with 3 cleaners. Heavily soiled or post-renovation homes can take longer. We always quote a fixed price based on the assessment, so the duration does not affect the price." },
-      { q: "What is the difference between deep cleaning and post-renovation cleaning?", a: "Deep cleaning is for homes that are lived-in and need a thorough reset (move-in/out, post-illness, seasonal). Post-renovation cleaning is specifically for homes that have just been built or renovated and need construction debris, paint dust, and grout haze removed. Post-renovation cleaning requires more aggressive tools (scrapers, solvents) and is priced higher. If you have just renovated, book our post-renovation cleaning instead." },
-      { q: "Do you provide the cleaning products and equipment?", a: "Yes. We bring all cleaning products, microfiber cloths, mops, buckets, HEPA-filtered vacuums, and any specialty equipment (e.g. grout brushes, mould sprayers, extension poles for high fixtures). You do not need to provide anything except access to water and electricity." },
-      { q: "Can I combine deep cleaning with pest control or disinfection?", a: "Yes. We can coordinate with our pest control partners for a one-time service (typically RM 200–400 extra depending on property size). For post-illness or COVID, we include hospital-grade disinfection in our standard post-illness service at no extra charge. Just mention your needs at booking." }
-    ],
-    heroImage: "/hero-deep-cleaning.svg",
-    metaTitle: "Deep Cleaning & Move-In/Out Services KL & Selangor",
-    metaDesc: "Top-to-bottom deep cleaning in KL & Selangor. Move-in, move-out, post-illness disinfection. HEPA vacuums, hospital-grade products. From RM420. 24-hr guarantee.",
-    aioSummary: "KL Servis Rumah provides deep cleaning services across KL & Selangor. Move-in, move-out, post-illness disinfection, allergy season refresh, quarterly reset. Top-to-bottom coverage including inside oven, fridge, fans, window tracks, grout. HEPA vacuums, hospital-grade disinfection.",
-    warranty: "24-Hour Re-Clean Satisfaction Guarantee",
-    i18n: {
-      ms: {
-        title: "Cucian Menyeluruh & Pindah Masuk/Keluar",
-        tagline: "Cucian menyeluruh atas-ke-bawah untuk pindah masuk, pindah keluar, selepas sakit atau penyegaran bermusim. Dari RM 420.",
-        description: "KL Servis Rumah menyediakan perkhidmatan cucian menyeluruh profesional di seluruh Kuala Lumpur dan Selangor. Cucian menyeluruh jauh melampaui cucian mingguan biasa: ia termasuk bahagian dalam ketuhar dan peti sejuk, nyahgris bilah kipas siling, mengelap lekapan lampu dan plat suis, belakang dan bawah perabot, pembersihan tingkap dan trek, gosokan grout, penyingkiran kotoran air liat, rawatan kulat, vakum langsir dan bidai, serta nyahkerak bilik mandi terperinci. Cucian menyeluruh kami biasanya diminta untuk: pindah masuk (supaya anda bermula bersih), pindah keluar (untuk memaksimumkan pulangan deposit keselamatan), selepas sakit (selsema, selesema, disinfeksi COVID), musim alahan (pengurangan hama habuk) atau penyegaran bermusim suku tahunan. Kami menggunakan disinfektan gred hospital untuk cucian selepas sakit dan vakum berpenapis HEPA di seluruh rumah.",
-        highlights: [
-          "Perlindungan atas-ke-bawah termasuk bahagian dalam ketuhar, peti sejuk, kipas siling dan lekapan lampu",
-          "Vakum berpenapis HEPA untuk pengurangan hama habuk dan kelemumur haiwan",
-          "Disinfeksi gred hospital untuk cucian selepas sakit atau COVID",
-          "Rawatan kulat dan lumut dengan larutan anti-kulat",
-          "Gosokan grout dan penyingkiran kotoran air liat di dapur dan bilik mandi",
-          "Cucian pindah keluar yang memenuhi piawaian pemeriksaan tuan rumah — dan lulus pulangan deposit keselamatan"
-        ],
-        subServices: [
-          { name: "Cucian Menyeluruh Pindah Keluar Kondominium (1,000 kaki persegi)", price: "Dari RM 420", desc: "Cucian atas-ke-bawah penuh termasuk bahagian dalam kabinet, ketuhar, peti sejuk, kipas dan trek tingkap. Sedia pindah keluar." },
-          { name: "Cucian Menyeluruh Rumah Teres (2,000 kaki persegi)", price: "Dari RM 650", desc: "Rumah dua tingkat termasuk kawasan luar, garaj dan tangga. Sedia pindah masuk atau keluar." },
-          { name: "Cucian Disinfeksi Selepas Sakit", price: "Dari RM 500", desc: "Disinfeksi gred hospital semua titik sentuh, fabrik dan ruang udara. Disyorkan selepas selesema, COVID atau sakit perut." },
-          { name: "Penyegaran Musim Alahan", price: "Dari RM 480", desc: "Cucian menyeluruh vakum HEPA dengan rawatan hama habuk pada tilam, sofa dan langsir." }
-        ],
-        process: [
-          { step: "01", title: "Penilaian Skop", desc: "Kami mengesahkan saiz rumah, kawasan tumpuan dan sebarang kebimbangan khusus (kulat, selepas sakit, alahan, pindah masuk/keluar). Untuk pindah keluar kami meminta senarai semak tuan rumah jika ada." },
-          { step: "02", title: "Sebut Harga Telus", desc: "Sebut harga terperinci berdasarkan saiz rumah, skop dan bilangan pembersih diperlukan (biasanya 2–3 pembersih selama 4–6 jam)." },
-          { step: "03", title: "Pembersihan Atas-Ke-Bawah", desc: "Kami bermula dari kipas siling, lekapan lampu dan permukaan tinggi, kemudian turun ke dinding, perabot dan akhirnya lantai. Ini memastikan serpihan jatuh ke bawah dan ditangkap." },
-          { step: "04", title: "Pembersihan Terperinci", desc: "Bahagian dalam kabinet, ketuhar, peti sejuk, belakang perabot, trek tingkap, bilah kipas siling, grout bilik mandi dan kawasan terperinci lain digosok dan didisinfeksi." },
-          { step: "05", title: "Pemeriksaan Akhir & Sentuhan", desc: "Kami menjalankan walkthrough akhir dengan anda (atau tuan rumah anda) dan menangani sebarang tempat yang terlepas. Untuk cucian pindah keluar, kami menyediakan resit penyiapan bertulis." }
-        ],
-        faqs: [
-          { q: "Berapa lama cucian menyeluruh mengambil masa?", a: "Ia bergantung pada saiz dan keadaan rumah. Kondominium standard 1,000 kaki persegi mengambil 4–6 jam dengan 2 pembersih. Rumah teres 2,000 kaki persegi mengambil 6–8 jam dengan 3 pembersih. Rumah yang sangat kotor atau selepas pengubahsuaian mungkin mengambil masa lebih lama. Kami sentiasa memberikan harga tetap berdasarkan penilaian, jadi tempoh tidak menjejaskan harga." },
-          { q: "Apakah perbezaan antara cucian menyeluruh dan cucian selepas pengubahsuaian?", a: "Cucian menyeluruh ialah untuk rumah yang didiami dan memerlukan reset menyeluruh (pindah masuk/keluar, selepas sakit, bermusim). Cucian selepas pengubahsuaian khusus untuk rumah yang baru dibina atau diubah suai dan memerlukan serpihan pembinaan, habuk cat dan kabut grout disingkirkan. Cucian selepas pengubahsuaian memerlukan alat lebih agresif (pengikis, pelarut) dan berharga lebih tinggi. Jika anda baru sahaja mengubah suai, tempah cucian selepas pengubahsuaian kami sebaliknya." },
-          { q: "Adakah anda menyediakan produk dan peralatan pembersihan?", a: "Ya. Kami membawa semua produk pembersihan, kain mikrofiber, mop, baldi, vakum berpenapis HEPA dan sebarang peralatan khas (contohnya berus grout, penyembur kulat, batang sambungan untuk lekapan tinggi). Anda tidak perlu menyediakan apa-apa kecuali akses kepada air dan elektrik." },
-          { q: "Boleh saya gabungkan cucian menyeluruh dengan kawalan serangga atau disinfeksi?", a: "Ya. Kami boleh menyelaras dengan rakan kongsi kawalan serangga kami untuk perkhidmatan sekali (biasanya RM 200–400 tambahan bergantung pada saiz hartanah). Untuk selepas sakit atau COVID, kami menyertakan disinfeksi gred hospital dalam perkhidmatan selepas sakit standard kami tanpa caj tambahan. Nyatakan sahaja keperluan anda semasa tempahan." }
-        ],
-        metaTitle: "Cucian Menyeluruh & Perkhidmatan Pindah Masuk/Keluar KL & Selangor",
-        metaDesc: "Cucian menyeluruh atas-ke-bawah di KL & Selangor. Pindah masuk, pindah keluar, disinfeksi selepas sakit. Vakum HEPA, produk gred hospital. Dari RM420. Jaminan 24 jam.",
-        aioSummary: "KL Servis Rumah menyediakan perkhidmatan cucian menyeluruh di seluruh KL & Selangor. Pindah masuk, pindah keluar, disinfeksi selepas sakit, penyegaran musim alahan, reset suku tahunan. Perlindungan atas-ke-bawah termasuk bahagian dalam ketuhar, peti sejuk, kipas, trek tingkap, grout. Vakum HEPA, disinfeksi gred hospital.",
-        warranty: "Jaminan Kepuasan Cuci Semula 24 Jam"
-      },
-      zh: {
-        title: "深度清洁与搬家保洁",
-        tagline: "入住、退租、病后消毒或季节性焕新的全屋自上而下深度清洁。从 RM 420 起。",
-        description: "KL Servis Rumah 在吉隆坡与雪兰莪提供专业深度清洁服务。深度清洁远超普通的每周保洁：包括烤箱和冰箱内部、吊扇叶片去油、灯具与开关面板擦拭、家具背后与底部、窗户与轨道清洁、砖缝刷洗、硬水渍去除、霉菌处理、窗帘与百叶吸尘，以及浴室细致除垢。深度清洁通常用于：搬家入住（从干净开始）、退租（最大化押金返还）、病后（感冒、流感、新冠消毒）、过敏季（减少尘螨）或季度性焕新。病后清洁我们使用医用级消毒剂，全屋使用 HEPA 过滤吸尘器。",
-        highlights: [
-          "自上而下全覆盖，包括烤箱、冰箱、吊扇与灯具内部",
-          "HEPA 过滤吸尘器，减少尘螨与宠物皮屑",
-          "医用级消毒，用于病后或新冠清洁",
-          "抗真菌溶液处理霉菌与霉斑",
-          "厨房与浴室的砖缝刷洗与硬水渍去除",
-          "退租清洁达到房东验收标准——助您全额拿回押金"
-        ],
-        subServices: [
-          { name: "公寓退租深度清洁（1,000 平方英尺）", price: "从 RM 420 起", desc: "全屋自上而下清洁，包括柜内、烤箱、冰箱、吊扇与窗轨。达到退租标准。" },
-          { name: "排屋深度清洁（2,000 平方英尺）", price: "从 RM 650 起", desc: "双层住宅含室外区域、车库与楼梯。达到入住或退租标准。" },
-          { name: "病后消毒清洁", price: "从 RM 500 起", desc: "所有接触点、织物与空气的医用级消毒。建议流感、新冠或肠胃病后使用。" },
-          { name: "过敏季焕新", price: "从 RM 480 起", desc: "HEPA 吸尘深度清洁，床垫、沙发与窗帘的尘螨处理。" }
-        ],
-        process: [
-          { step: "01", title: "范围评估", desc: "我们确认房屋面积、重点区域与任何特殊顾虑（霉菌、病后、过敏、搬入/搬出）。退租清洁我们会索取房东的验收清单（如有）。" },
-          { step: "02", title: "透明报价", desc: "按房屋面积、范围与所需清洁员人数逐项报价（通常 2–3 名清洁员，4–6 小时）。" },
-          { step: "03", title: "自上而下清洁", desc: "从吊扇、灯具与高处表面开始，逐步向下到墙面、家具，最后是地板。确保灰尘向下掉落并被收走。" },
-          { step: "04", title: "细节清洁", desc: "柜内、烤箱、冰箱、家具背后、窗轨、吊扇叶片、浴室砖缝等细节区域逐一刷洗并消毒。" },
-          { step: "05", title: "最终检查与补漏", desc: "我们与您（或您的房东）一起最终走查，补齐任何遗漏。退租清洁我们提供书面完工收据。" }
-        ],
-        faqs: [
-          { q: "深度清洁需要多长时间？", a: "取决于房屋大小与状况。标准的 1,000 平方英尺公寓由 2 名清洁员需 4–6 小时。2,000 平方英尺排屋由 3 名清洁员需 6–8 小时。重度脏污或装修后的房屋可能更久。我们总是按评估报固定价格，时长不影响价格。" },
-          { q: "深度清洁和装修后清洁有什么区别？", a: "深度清洁针对正在居住、需要彻底重置的房屋（搬入/搬出、病后、季节性）。装修后清洁专门针对新建或刚装修完、需要清除建筑残渣、涂料粉尘与砖缝浮灰的房屋。装修后清洁需要更强力的工具（铲刀、溶剂），价格也更高。如果您刚装修完，请改订我们的装修后清洁。" },
-          { q: "你们自带清洁产品和设备吗？", a: "是的。我们自带所有清洁产品、超细纤维布、拖把、水桶、HEPA 过滤吸尘器及任何专用设备（如砖缝刷、霉菌喷雾、高处灯具用的伸缩杆）。您只需提供水电即可。" },
-          { q: "深度清洁可以搭配杀虫或消毒服务吗？", a: "可以。我们可以与合作的杀虫公司协调一次服务（视物业面积通常加收 RM 200–400）。病后或新冠消毒在我们标准的病后服务中已含医用级消毒，不另收费。预订时说明您的需求即可。" }
-        ],
-        metaTitle: "吉隆坡与雪兰莪深度清洁与搬家保洁服务",
-        metaDesc: "吉隆坡与雪兰莪全屋深度清洁。入住、退租、病后消毒。HEPA 吸尘器、医用级产品。从 RM420 起。24 小时保证。",
-        aioSummary: "KL Servis Rumah 在吉隆坡与雪兰莪提供深度清洁服务。入住、退租、病后消毒、过敏季焕新、季度重置。自上而下全覆盖，包括烤箱、冰箱、吊扇、窗轨、砖缝。HEPA 吸尘器、医用级消毒。",
-        warranty: "24 小时返工满意保证"
-      }
-    }
-  },
-
-  // ── 25. POST RENOVATION CLEANING ───────────────────────────────
-  "post-renovation-cleaning": {
-    slug: "post-renovation-cleaning",
-    title: "Post-Renovation Cleaning",
-    tagline: "Construction debris removal, paint dust, grout haze, and silicone cleanup after renovation. From RM 650.",
-    description:
-      "KL Servis Rumah provides specialist post-renovation cleaning services across Kuala Lumpur and Selangor. After renovation or new construction, your home will be covered in fine cement dust, paint splatter, silicone smears, grout haze on tiles, adhesive residue, and general construction debris. Standard cleaning products and even regular deep cleaning cannot handle these. Our post-renovation team uses specialist solvents, plastic and metal scrapers, wet-vacuum extraction, and floor buffing machines to safely remove construction residue without damaging new finishes. We service freshly painted interiors, new tiles, new aluminium windows, new glass, new epoxy floors, new kitchens, and new bathrooms. We can also coordinate with your contractor to align the clean with handover, so you receive a move-in-ready home.",
-    startPrice: "RM 650",
-    icon: "hammer",
-    highlights: [
-      "Specialist construction-residue removal — not just surface cleaning",
-      "Plastic and metal scrapers, wet-vacuum extraction, floor buffing machines",
-      "Paint splatter, silicone smears, grout haze, and adhesive residue removal",
-      "Safe on new tiles, glass, aluminium, epoxy, and freshly painted surfaces",
-      "Construction debris bagging and disposal included",
-      "Coordinate with your contractor for handover-aligned cleaning"
-    ],
-    subServices: [
-      { name: "Condo Post-Renovation Clean (1,000 sqft)", price: "From RM 650", desc: "Full post-renovation clean for a 3-bed condo after a typical kitchen + bathroom renovation." },
-      { name: "Terrace House Post-Renovation Clean (2,000 sqft)", price: "From RM 1,400", desc: "Whole-house post-renovation clean including outdoor areas, garage, and windows." },
-      { name: "New Tiles Grout Haze Removal", price: "From RM 10 / sq ft", desc: "Specialist grout haze removal on newly laid porcelain or ceramic tiles using pH-balanced acidic cleaner." },
-      { name: "Construction Debris Removal", price: "From RM 320", desc: "Bagging and disposal of leftover construction materials, packaging, and debris. Skip bin coordination if needed." },
-      { name: "Construction Rough Cleaning & Site Clearance", price: "On Quote", desc: "Heavy site cleanup, debris bagging, timber and scrap removal between trades to clear floors for next-phase installations." },
-      { name: "Fine Dust Extraction & Air Purifying", price: "On Quote", desc: "Multi-pass HEPA vacuuming and electrostatic wiping to capture microscopic cement, gypsum, and plaster dust from ceilings and vents." },
-      { name: "Paint Splatter & Silicone Smear Removal", price: "On Quote", desc: "Safe solvent treatment and specialized scraping of dried emulsion drips, enamel overspray, silicone residue, and masking adhesive." },
-      { name: "Window Glass & Aluminium Track Detailing", price: "On Quote", desc: "Protective film peeling, cement spot removal from glass, and deep vacuuming and degreasing of sliding aluminium window tracks." },
-      { name: "Floor Machine Scrubbing & Buffing", price: "On Quote", desc: "Single-disc rotary machine scrubbing with neutral detergents for tiles, SPC, vinyl, and epoxy to restore factory sheen without acid dulling." },
-      { name: "Move-In & Handover Final Cleaning", price: "On Quote", desc: "White-glove sanitization of built-in cabinets, wardrobes, kitchen counters, sanitary ware, and door hardware ready for immediate occupancy." }
-    ],
-    process: [
-      { step: "01", title: "Scope Assessment", desc: "We assess the renovation scope (paint, tile, plaster, carpentry, etc.), the type of finishes, and the level of construction residue. For very heavy soiling we do a site visit before quoting." },
-      { step: "02", title: "Multi-Stage Quotation", desc: "We quote based on home size, surface types, and the level of residue. Multi-stage cleans (e.g. rough clean + final polish) are quoted accordingly." },
-      { step: "03", title: "Rough Clean", desc: "Construction debris is bagged and removed. Loose dust is vacuumed with industrial HEPA vacuums. Surfaces are wiped with damp microfiber to capture fine dust." },
-      { step: "04", title: "Detail Cleaning", desc: "Paint splatter is removed with specialist solvent. Silicone smears are scraped and dissolved. Grout haze is treated with pH-balanced cleaner. Adhesive residue is removed with citrus-based solvent." },
-      { step: "05", title: "Final Polish & Handover", desc: "Floors are buffed, glass and aluminium are polished streak-free, light fixtures and switches are wiped, and the home is ready for move-in or listing photos." }
-    ],
-    faqs: [
-      { q: "How is post-renovation cleaning different from deep cleaning?", a: "Post-renovation cleaning is much more aggressive. It requires specialist solvents (paint stripper, silicone remover, grout haze remover), plastic and metal scrapers, wet-vacuum extraction, and floor buffers. Deep cleaning is for lived-in homes; post-renovation cleaning is for newly built or renovated spaces with construction residue. The cost is also higher because of the equipment, time, and risk involved." },
-      { q: "Can you clean without damaging new finishes like paint or new tiles?", a: "Yes, when done by experienced professionals. We use pH-balanced cleaners, plastic scrapers for paint, and soft microfiber cloths. We never use metal scrapers on glass or aluminium, and we never use acidic cleaners on natural stone (marble, travertine, limestone). We also test in an inconspicuous area first if the finish is unusual. If your finishes are under warranty, we coordinate with your contractor to use approved methods." },
-      { q: "How long after renovation should I book the clean?", a: "Book the clean 3–7 days after your contractor completes the work. This allows paint, silicone, and grout to fully cure. Booking too early risks damaging uncured finishes. Booking too late means construction dust settles deeper and becomes harder to remove. We can also coordinate directly with your contractor for a handover-aligned clean." },
-      { q: "Do you remove construction debris (sand, cement bags, leftover materials)?", a: "Yes. We bag and dispose of leftover construction debris as part of the standard post-renovation clean. For large volumes (e.g. after a full-house renovation), we can coordinate a skip bin rental (typically RM 350–500 for a 1-week bin in KL/Selangor) which is quoted separately. The bin is delivered before the clean and removed within 7 days." }
-    ],
-    heroImage: "/hero-post-renovation-cleaning.svg",
-    metaTitle: "Post-Renovation Cleaning Services KL & Selangor",
-    metaDesc: "Construction dust, paint splatter, grout haze, silicone cleanup in KL & Selangor. Specialist solvents, scrapers, wet-vacuum, floor buffer. From RM650. Contractor-aligned.",
-    aioSummary: "KL Servis Rumah provides specialist post-renovation cleaning across KL & Selangor. Construction debris removal, paint splatter, silicone smears, grout haze, adhesive residue. Plastic/metal scrapers, wet-vacuum extraction, floor buffing. Safe on new tiles, glass, aluminium, epoxy, paint. Contractor-aligned handover.",
-    warranty: "7-Day Spot-Check Free Re-Clean Guarantee",
-    i18n: {
-      ms: {
-        title: "Pembersihan Selepas Pengubahsuaian",
-        tagline: "Penyingkiran serpihan pembinaan, habuk cat, kabut grout dan pembersihan silikon selepas pengubahsuaian. Dari RM 650.",
-        description: "KL Servis Rumah menyediakan perkhidmatan pembersihan selepas pengubahsuaian pakar di seluruh Kuala Lumpur dan Selangor. Selepas pengubahsuaian atau pembinaan baharu, rumah anda akan diliputi habuk simen halus, percikan cat, calitan silikon, kabut grout pada jubin, sisa pelekat dan serpihan pembinaan am. Produk pembersihan standard dan juga cucian menyeluruh biasa tidak dapat mengendalikan ini. Pasukan selepas pengubahsuaian kami menggunakan pelarut pakar, pengikis plastik dan logam, sedutan vakum basah dan mesin pengilap lantai untuk menyelamatkan membuang sisa pembinaan tanpa merosakkan kemasan baharu. Kami memberi perkhidmatan kepada dalaman yang baru dicat, jubin baharu, tingkap aluminium baharu, kaca baharu, lantai epoxy baharu, dapur baharu dan bilik mandi baharu. Kami juga boleh menyelaras dengan kontraktor anda untuk menjajarkan cucian dengan serahan, supaya anda menerima rumah sedia untuk didiami.",
-        highlights: [
-          "Penyingkiran sisa pembinaan pakar — bukan sekadar pembersihan permukaan",
-          "Pengikis plastik dan logam, sedutan vakum basah, mesin pengilap lantai",
-          "Penyingkiran percikan cat, calitan silikon, kabut grout dan sisa pelekat",
-          "Selamat pada jubin baharu, kaca, aluminium, epoxy dan permukaan yang baru dicat",
-          "Pembungkusan dan pelupusan serpihan pembinaan termasuk",
-          "Penyelarasan dengan kontraktor anda untuk pembersihan sejajar serahan"
-        ],
-        subServices: [
-          { name: "Cucian Selepas Pengubahsuaian Kondominium (1,000 kaki persegi)", price: "Dari RM 650", desc: "Cucian selepas pengubahsuaian penuh untuk kondominium 3 bilik selepas pengubahsuaian dapur + bilik mandi biasa." },
-          { name: "Cucian Selepas Pengubahsuaian Rumah Teres (2,000 kaki persegi)", price: "Dari RM 1,400", desc: "Cucian selepas pengubahsuaian seluruh rumah termasuk kawasan luar, garaj dan tingkap." },
-          { name: "Penyingkiran Kabut Grout Jubin Baharu", price: "Dari RM 10 / kaki persegi", desc: "Penyingkiran kabut grout pakar pada jubin porselin atau seramik baru dipasang menggunakan pencuci berasid seimbang pH." },
-          { name: "Penyingkiran Serpihan Pembinaan", price: "Dari RM 320", desc: "Pembungkusan dan pelupusan bahan pembinaan, pembungkusan dan serpihan tertinggal. Penyelarasan tong skip jika perlu." },
-          { name: "Pembersihan Kasar Pembinaan & Pembersihan Tapak", price: "Atas Sebut Harga", desc: "Pembersihan berat tapak binaan, pembungkusan serpihan dan penyingkiran sisa kayu antara fasa kerja untuk laluan kemasan seterusnya." },
-          { name: "Penyedutan Habuk Halus & Pembersihan Udara", price: "Atas Sebut Harga", desc: "Vakum HEPA pelbagai pusingan dan lap elektrostatik untuk menangkap habuk simen, gypsum dan plaster mikroskopik dari siling dan corong udara." },
-          { name: "Penyingkiran Percikan Cat & Sisa Silikon", price: "Atas Sebut Harga", desc: "Rawatan pelarut selamat dan pengikisan khusus untuk titisan cat emulsi, percikan semburan cat, kesan silikon dan pelekat masking tape." },
-          { name: "Pembersihan Terperinci Kaca Tingkap & Rel Aluminium", price: "Atas Sebut Harga", desc: "Mengupas filem pelindung kilang, mengikis bintik simen dari kaca, serta menyedut habuk dan membasuh rel gelongsor aluminium." },
-          { name: "Penyentalan & Penggilapan Mesin Lantai", price: "Atas Sebut Harga", desc: "Penyentalan mesin rotary cakera tunggal dengan detergen neutral untuk jubin, SPC, vinil dan epoxy bagi mengembalikan kilauan asal tanpa kusam." },
-          { name: "Pembersihan Akhir Penyerahan & Masuk Rumah", price: "Atas Sebut Harga", desc: "Pembersihan sanitasi terperinci untuk kabinet terbina dalam, almari pakaian, kaunter dapur, perkakasan sanitari dan pemegang pintu sedia didiami." }
-        ],
-        process: [
-          { step: "01", title: "Penilaian Skop", desc: "Kami menilai skop pengubahsuaian (cat, jubin, plaster, pertukangan, dll.), jenis kemasan dan tahap sisa pembinaan. Untuk kekotoran sangat teruk kami melawat tapak sebelum memberi sebut harga." },
-          { step: "02", title: "Sebut Harga Berperingkat", desc: "Kami memberi sebut harga berdasarkan saiz rumah, jenis permukaan dan tahap sisa. Cucian berperingkat (contohnya cucian kasar + gilap akhir) disebut harga sewajarnya." },
-          { step: "03", title: "Cucian Kasar", desc: "Serpihan pembinaan dibungkus dan disingkirkan. Habuk longgar divakum dengan vakum HEPA industri. Permukaan dilap dengan mikrofiber lembap untuk menangkap habuk halus." },
-          { step: "04", title: "Pembersihan Terperinci", desc: "Percikan cat disingkirkan dengan pelarut pakar. Calitan silikon dikikis dan dilarutkan. Kabut grout dirawat dengan pencuci seimbang pH. Sisa pelekat disingkirkan dengan pelarut berasaskan sitrus." },
-          { step: "05", title: "Gilap Akhir & Serahan", desc: "Lantai digilap, kaca dan aluminium digilap bebas kesan, lekapan lampu dan suis dilap, dan rumah sedia untuk didiami atau gambar penyenaraian." }
-        ],
-        faqs: [
-          { q: "Bagaimana cucian selepas pengubahsuaian berbeza daripada cucian menyeluruh?", a: "Cucian selepas pengubahsuaian jauh lebih agresif. Ia memerlukan pelarut pakar (peluntur cat, penanggal silikon, penanggal kabut grout), pengikis plastik dan logam, sedutan vakum basah dan pengilap lantai. Cucian menyeluruh ialah untuk rumah yang didiami; cucian selepas pengubahsuaian ialah untuk ruang yang baru dibina atau diubah suai dengan sisa pembinaan. Kos juga lebih tinggi kerana peralatan, masa dan risiko yang terlibat." },
-          { q: "Boleh anda membersihkan tanpa merosakkan kemasan baharu seperti cat atau jubin baharu?", a: "Ya, apabila dilakukan oleh profesional berpengalaman. Kami menggunakan pencuci seimbang pH, pengikis plastik untuk cat dan kain mikrofiber lembut. Kami tidak pernah menggunakan pengikis logam pada kaca atau aluminium, dan tidak pernah menggunakan pencuci berasid pada batu semula jadi (marmar, travertine, batu kapur). Kami juga menguji di kawasan tidak ketara dahulu jika kemasan luar biasa. Jika kemasan anda di bawah jaminan, kami menyelaras dengan kontraktor anda untuk menggunakan kaedah yang diluluskan." },
-          { q: "Berapa lama selepas pengubahsuaian patut saya menempah cucian?", a: "Tempah cucian 3–7 hari selepas kontraktor anda menyiapkan kerja. Ini membolehkan cat, silikon dan grout kering sepenuhnya. Menempah terlalu awal berisiko merosakkan kemasan yang belum kering. Menempah terlalu lewat bermakna habuk pembinaan terenap lebih dalam dan menjadi lebih sukar disingkirkan. Kami juga boleh menyelaras terus dengan kontraktor anda untuk cucian sejajar serahan." },
-          { q: "Adakah anda menyingkirkan serpihan pembinaan (pasir, beg simen, bahan tertinggal)?", a: "Ya. Kami membungkus dan melupuskan serpihan pembinaan tertinggal sebagai sebahagian daripada cucian selepas pengubahsuaian standard. Untuk jumlah besar (contohnya selepas pengubahsuaian seluruh rumah), kami boleh menyelaras sewaan tong skip (biasanya RM 350–500 untuk tong 1 minggu di KL/Selangor) yang disebut harga secara berasingan. Tong dihantar sebelum cucian dan disingkirkan dalam 7 hari." }
-        ],
-        metaTitle: "Perkhidmatan Pembersihan Selepas Pengubahsuaian KL & Selangor",
-        metaDesc: "Habuk pembinaan, percikan cat, kabut grout, pembersihan silikon di KL & Selangor. Pelarut pakar, pengikis, vakum basah, pengilap lantai. Dari RM650. Sejajar kontraktor.",
-        aioSummary: "KL Servis Rumah menyediakan pembersihan selepas pengubahsuaian pakar di seluruh KL & Selangor. Penyingkiran serpihan pembinaan, percikan cat, calitan silikon, kabut grout, sisa pelekat. Pengikis plastik/logam, sedutan vakum basah, pengilapan lantai. Selamat pada jubin baharu, kaca, aluminium, epoxy, cat. Serahan sejajar kontraktor.",
-        warranty: "Jaminan Cuci Semula Percuma Pemeriksaan Rawak 7 Hari"
-      },
-      zh: {
-        title: "装修后开荒保洁",
-        tagline: "装修后的建筑废料清运、涂料粉尘、砖缝浮灰与玻璃胶渍清洁。从 RM 650 起。",
-        description: "KL Servis Rumah 在吉隆坡与雪兰莪提供专业的装修后开荒保洁服务。装修或新建完成后，您的家中会布满细小的水泥粉尘、涂料飞溅、玻璃胶污渍、瓷砖上的砖缝浮灰、残胶与各种建筑垃圾。普通清洁产品甚至常规深度清洁都无法应对。我们的开荒团队使用专业溶剂、塑料与金属铲刀、湿式吸尘与地板抛光机，在不损伤新饰面的前提下安全清除建筑残留。我们服务刚刷漆的室内、新铺瓷砖、新铝合金窗、新玻璃、新环氧地坪、新厨房与新浴室。我们还可以与您的装修承包商协调，把保洁与交付时间对齐，让您直接收房入住。",
-        highlights: [
-          "专业建筑残留清除——不只是表面清洁",
-          "塑料与金属铲刀、湿式吸尘、地板抛光机",
-          "涂料飞溅、玻璃胶污渍、砖缝浮灰与残胶清除",
-          "对新瓷砖、玻璃、铝合金、环氧与新漆面均安全",
-          "含建筑垃圾装袋与清运",
-          "与您的承包商协调，保洁与交付同步"
-        ],
-        subServices: [
-          { name: "公寓装修后开荒（1,000 平方英尺）", price: "从 RM 650 起", desc: "三房公寓在典型厨卫装修后的全屋开荒保洁。" },
-          { name: "排屋装修后开荒（2,000 平方英尺）", price: "从 RM 1,400 起", desc: "整栋房屋装修后开荒，含室外区域、车库与窗户。" },
-          { name: "新瓷砖砖缝浮灰清除", price: "从 RM 10 / 平方英尺起", desc: "使用 pH 平衡酸性清洁剂，专业清除新铺抛光砖或瓷砖上的砖缝浮灰。" },
-          { name: "建筑垃圾清运", price: "从 RM 320 起", desc: "剩余建筑材料、包装与废料的装袋清运。需要时可协调租用垃圾桶。" },
-          { name: "施工现场粗保洁与清场服务", price: "依报价", desc: "重度施工垃圾清运、废料装袋、木料与杂物清理，打通各工序作业面，为下一阶段安装铺平基础。" },
-          { name: "细粉尘深层清除与空气净化", price: "依报价", desc: "工业级 HEPA 多重吸尘与静电除尘抹拭，深度吸除吊顶暗槽、空调风口及墙角残留的极细石膏与水泥粉尘。" },
-          { name: "油漆飞溅与硅胶残留清除", price: "依报价", desc: "采用安全环保溶剂与专用塑料刮刀，温和软化并彻底去除地砖、开关插座与框条上的乳胶漆滴、硅胶胶渍及保护胶带残胶。" },
-          { name: "窗户玻璃与铝合金滑轨深度精洁", price: "依报价", desc: "撕除门窗出厂保护膜、无刮痕刮除玻璃水泥点与标签残胶，并对铝合金推拉滑轨进行深层除砂、吸尘与脱脂清洗。" },
-          { name: "地板机械深度洗地与抛光护理", price: "依报价", desc: "使用单盘旋转重型洗地机配合中性清洁剂，对新铺瓷砖、SPC石塑、乙烯基及环氧地坪进行深层去污与机械抛光，恢复原厂光泽。" },
-          { name: "交付入住前最终全面精细保洁", price: "依报价", desc: "对定制橱柜内膛、衣柜格层、厨房料理台、全套卫浴洁具及门窗五金进行全方位消毒与无尘擦拭，达到即刻拎包入住的高标准。" }
-        ],
-        process: [
-          { step: "01", title: "范围评估", desc: "我们评估装修范围（油漆、贴砖、抹灰、木工等）、饰面类型与建筑残留程度。特别脏的我们报价前先上门查看。" },
-          { step: "02", title: "分阶段报价", desc: "按房屋面积、表面类型与残留程度报价。分阶段清洁（如粗保洁 + 精保洁）相应计费。" },
-          { step: "03", title: "粗保洁", desc: "建筑垃圾装袋清运。浮灰用工业 HEPA 吸尘器吸除。表面用潮湿超细纤维布擦拭收细尘。" },
-          { step: "04", title: "精细清洁", desc: "涂料飞溅用专业溶剂清除。玻璃胶污渍铲除并溶除。砖缝浮灰用 pH 平衡清洁剂处理。残胶用柑橘基溶剂清除。" },
-          { step: "05", title: "最终抛光与交付", desc: "地板抛光，玻璃与铝材擦至无水痕，灯具与开关擦拭干净，房屋可入住或拍摄挂牌照片。" }
-        ],
-        faqs: [
-          { q: "装修后开荒和深度清洁有什么区别？", a: "开荒清洁强度大得多。它需要专业溶剂（除漆剂、除胶剂、砖缝浮灰清除剂）、塑料与金属铲刀、湿式吸尘与地板抛光机。深度清洁针对住人的房屋；开荒针对有建筑残留的新建或刚装修空间。由于设备、时间与风险，费用也更高。" },
-          { q: "清洁时会不会损伤新漆面或新瓷砖等新饰面？", a: "由经验丰富的专业人员操作就不会。我们使用 pH 平衡清洁剂、塑料铲刀处理漆面、柔软的超细纤维布。玻璃和铝合金上绝不用金属铲刀，天然石材（大理石、洞石、石灰石）上绝不用酸性清洁剂。特殊饰面我们会先在不显眼处测试。如果您的饰面在保修期内，我们会与承包商协调采用认可的方法。" },
-          { q: "装修完工后多久预约开荒比较合适？", a: "建议在承包商完工后 3–7 天预约。这样涂料、玻璃胶与砖缝剂能完全固化。太早预约有损伤未固化饰面的风险；太晚则建筑粉尘沉淀更深、更难清除。我们也可以直接与您的承包商协调，做与交付同步的保洁。" },
-          { q: "你们清运建筑垃圾吗（沙子、水泥袋、剩余材料）？", a: "清运。装袋并清运剩余建筑垃圾已包含在标准开荒服务中。量大时（如全屋装修后），我们可协调租用大型垃圾桶（吉隆坡/雪兰莪 1 周桶通常 RM 350–500），费用另计。垃圾桶在保洁前送达，7 天内移走。" }
-        ],
-        metaTitle: "吉隆坡与雪兰莪装修后开荒保洁服务",
-        metaDesc: "吉隆坡与雪兰莪建筑粉尘、涂料飞溅、砖缝浮灰、玻璃胶清洁。专业溶剂、铲刀、湿式吸尘、地板抛光。从 RM650 起。与承包商同步。",
-        aioSummary: "KL Servis Rumah 在吉隆坡与雪兰莪提供专业装修后开荒保洁。建筑垃圾清运、涂料飞溅、玻璃胶污渍、砖缝浮灰、残胶。塑料/金属铲刀、湿式吸尘、地板抛光。对新瓷砖、玻璃、铝合金、环氧、漆面安全。与承包商交付同步。",
-        warranty: "7 天免费抽查返工保证"
-      }
-    }
-  },
-
-  // ── 26. CCTV INSTALLATION ────────────────────────────────────────
+  // ── 23. CCTV INSTALLATION ────────────────────────────────────────
   "cctv": {
     slug: "cctv",
     title: "CCTV & Security Camera Installation",
@@ -3347,7 +2978,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     }
   },
 
-  // ── 27. AUTOGATE INSTALLATION ────────────────────────────────────────
+  // ── 24. AUTOGATE INSTALLATION ────────────────────────────────────────
   "autogate": {
     slug: "autogate",
     title: "Auto Gate & Motorised Gate",
@@ -3464,7 +3095,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     }
   },
 
-  // ── 28. WELDING & METAL WORKS ───────────────────────────────
+  // ── 25. WELDING & METAL WORKS ───────────────────────────────
   "welding": {
     slug: "welding",
     title: "Welding & Metal Fabrication",
@@ -3599,7 +3230,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     }
   },
 
-  // ── 29. AIRCON SERVICES ──────────────────────────────────────────────
+  // ── 26. AIRCON SERVICES ──────────────────────────────────────────────
   "aircon": {
     slug: "aircon",
     title: "Aircon Service, Repair & Installation",
@@ -3733,7 +3364,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     }
   },
 
-  // ── 30. KITCHEN RENOVATION ────────────────────────────────────────
+  // ── 27. KITCHEN RENOVATION ────────────────────────────────────────
   "kitchen-renovation": {
     slug: "kitchen-renovation",
     title: "Kitchen Renovation",
@@ -3865,7 +3496,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     }
   },
 
-  // ── 31. BATHROOM RENOVATION ───────────────────────────────────────
+  // ── 28. BATHROOM RENOVATION ───────────────────────────────────────
   "bathroom-renovation": {
     slug: "bathroom-renovation",
     title: "Bathroom Renovation",

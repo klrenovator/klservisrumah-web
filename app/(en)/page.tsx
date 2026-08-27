@@ -33,7 +33,7 @@ import {
 const HOMEPAGE_FAQS = [
   {
     q: "How much do home services cost in KL & Selangor?",
-    a: "KL Servis Rumah pricing is transparent and fixed upfront. Handyman jobs start at RM 80, plumbing repairs from RM 120, plaster ceiling repair from RM 180, single-room painting from RM 450, PU grouting waterproofing from RM 300 and full-house renovation from RM 22,000. Every quote is fixed and itemised before work begins — no hidden fees, no surprise charges."
+    a: "KL Servis Rumah pricing is transparent and fixed upfront. Handyman jobs start at RM 280, plumbing repairs from RM 280, plaster ceiling repair from RM 180, single-room painting from RM 450, PU grouting waterproofing from RM 300 and full-house renovation from RM 22,000. Every quote is fixed and itemised before work begins — no hidden fees, no surprise charges."
   },
   {
     q: "Do you offer same-day home service in Kuala Lumpur?",
@@ -41,7 +41,7 @@ const HOMEPAGE_FAQS = [
   },
   {
     q: "Which home services does KL Servis Rumah provide?",
-    a: "We provide 28+ residential and light-commercial services across Klang Valley: interior/exterior painting, plumbing leak repair, plaster ceiling & gypsum partitions, PU-grouting waterproofing, handyman work, electrical wiring, water-heater install, ceiling fans, downlights, tiling, vinyl/SPC flooring, epoxy flooring, roof repair, kitchen cabinet, carpentry, door & lock repair, glass & aluminium, cleaning, CCTV, auto gate, welding and full house renovation."
+    a: "We provide 28+ residential and light-commercial services across Klang Valley: interior/exterior painting, plumbing leak repair, plaster ceiling & gypsum partitions, PU-grouting waterproofing, handyman work, electrical wiring, water-heater install, ceiling fans, downlights, tiling, vinyl/SPC flooring, epoxy flooring, roof repair, kitchen cabinet, carpentry, door & lock repair, glass & aluminium, CCTV, auto gate, welding and full house renovation."
   },
   {
     q: "Are your tradesmen insured and background-verified?",

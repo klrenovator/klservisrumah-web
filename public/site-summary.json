@@ -27,7 +27,7 @@
     {
       "slug": "plumbing",
       "title": "Plumbing & Leak Repair Services",
-      "startPrice": "RM 150",
+      "startPrice": "RM 280",
       "warranty": "30-Day Joint Seal & Workmanship Warranty",
       "path": "/services/plumbing"
     },
@@ -48,7 +48,7 @@
     {
       "slug": "handyman",
       "title": "Handyman Services",
-      "startPrice": "RM 100",
+      "startPrice": "RM 280",
       "warranty": "30-Day Workmanship Safety Warranty",
       "path": "/services/handyman"
     },
@@ -62,7 +62,7 @@
     {
       "slug": "electrical",
       "title": "Licensed Electrical Services",
-      "startPrice": "RM 150",
+      "startPrice": "RM 280",
       "warranty": "12-Month Electrical Workmanship Warranty",
       "path": "/services/electrical"
     },
@@ -170,27 +170,6 @@
       "startPrice": "RM 320",
       "warranty": "12-Month Leak-Free & Hardware Warranty",
       "path": "/services/glass-aluminium"
-    },
-    {
-      "slug": "cleaning",
-      "title": "Residential & Office Cleaning",
-      "startPrice": "RM 180",
-      "warranty": "24-Hour Re-Clean Satisfaction Guarantee",
-      "path": "/services/cleaning"
-    },
-    {
-      "slug": "deep-cleaning",
-      "title": "Deep Cleaning & Move-In/Out",
-      "startPrice": "RM 420",
-      "warranty": "24-Hour Re-Clean Satisfaction Guarantee",
-      "path": "/services/deep-cleaning"
-    },
-    {
-      "slug": "post-renovation-cleaning",
-      "title": "Post-Renovation Cleaning",
-      "startPrice": "RM 650",
-      "warranty": "7-Day Spot-Check Free Re-Clean Guarantee",
-      "path": "/services/post-renovation-cleaning"
     },
     {
       "slug": "cctv",
@@ -565,24 +544,6 @@
       }
     },
     {
-      "slug": "deep-cleaning-cost-estimator",
-      "heading": "Deep Cleaning Cost Estimator",
-      "urls": {
-        "en": "/tools/deep-cleaning-cost-estimator",
-        "ms": "/ms/alatan/kos-cuci-menyeluruh",
-        "zh": "/zh/gongju/深度清洁费用"
-      }
-    },
-    {
-      "slug": "move-in-out-cleaning-calculator",
-      "heading": "Move-In / Move-Out Cleaning Calculator",
-      "urls": {
-        "en": "/tools/move-in-out-cleaning-calculator",
-        "ms": "/ms/alatan/cuci-pindah-masuk-keluar",
-        "zh": "/zh/gongju/搬家清洁计算器"
-      }
-    },
-    {
       "slug": "aircon-installation-cost",
       "heading": "Aircon Installation Cost Calculator for KL & Selangor",
       "urls": {
@@ -647,12 +608,12 @@
     }
   ],
   "counts": {
-    "services": 31,
-    "subServices": 231,
+    "services": 28,
+    "subServices": 213,
     "areaPages": 37,
-    "problemPages": 92,
-    "blogPosts": 229,
-    "indexablePages": 5030
+    "problemPages": 86,
+    "blogPosts": 208,
+    "indexablePages": 4589
   },
   "pricingPrinciple": "fair standard Malaysian pricing, itemised and confirmed in writing before work begins",
   "hours": "Mon–Sun · 9:00 AM – 6:00 PM (Everyday Open)",

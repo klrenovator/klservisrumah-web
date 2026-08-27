@@ -468,9 +468,6 @@
       "window-repair": "预约 / 本周内",
       "locksmith": "锁门外当日响应",
       "glass-aluminium": "测量 + 预约",
-      "cleaning": "本周预约",
-      "deep-cleaning": "预约安排",
-      "post-renovation-cleaning": "施工后预约",
       "cctv": "现场勘测 + 预约",
       "autogate": "现场勘测 + 预约",
       "welding": "现场勘测 + 预约",
@@ -1007,9 +1004,7 @@
     },
     "addons": {
       "siteVisitLabel": "预订前免费上门测量",
-      "siteVisitNote": "确认确切范围，使最终报价与工程相符。",
-      "postCleanLabel": "完工清洁",
-      "postCleanNote": "完工后全面清理与擦拭。"
+      "siteVisitNote": "确认确切范围，使最终报价与工程相符。"
     },
     "related": {
       "serviceDesc": "完整范围、流程与保修",
@@ -1345,7 +1340,7 @@
       "plumbing": {
         "0": {
           "label": "小型水管维修",
-          "publishedRate": "RM 150 起",
+          "publishedRate": "RM 280 起",
           "unit": "任务",
           "range": "RM 80–RM 500，视维修复杂度而定",
           "note": "适用于水龙头、阀门、洗手盆、小管道和常见排查任务。"
@@ -1393,7 +1388,7 @@
       "handyman": {
         "0": {
           "label": "一般杂工任务",
-          "publishedRate": "RM 100 起",
+          "publishedRate": "RM 280 起",
           "unit": "任务",
           "range": "RM 40–RM 180 / 小时，或常见任务 RM 60–RM 300",
           "note": "适用于小型安装、窗帘、层架或锁具调校的公道起点。"

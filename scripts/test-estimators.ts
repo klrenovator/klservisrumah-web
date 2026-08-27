@@ -172,14 +172,6 @@ import { buildBathroomRenovationEstimatorSpec } from "../lib/estimator/builders/
 import { bathroomRenovationEstimatorEnDict } from "../lib/estimator/i18n/tools/bathroom-renovation-estimator-en.ts";
 import { bathroomRenovationEstimatorMsDict } from "../lib/estimator/i18n/tools/bathroom-renovation-estimator-ms.ts";
 import { bathroomRenovationEstimatorZhDict } from "../lib/estimator/i18n/tools/bathroom-renovation-estimator-zh.ts";
-import { buildDeepCleaningCostEstimatorSpec } from "../lib/estimator/builders/deep-cleaning-cost-estimator.ts";
-import { deepCleaningCostEstimatorEnDict } from "../lib/estimator/i18n/tools/deep-cleaning-cost-estimator-en.ts";
-import { deepCleaningCostEstimatorMsDict } from "../lib/estimator/i18n/tools/deep-cleaning-cost-estimator-ms.ts";
-import { deepCleaningCostEstimatorZhDict } from "../lib/estimator/i18n/tools/deep-cleaning-cost-estimator-zh.ts";
-import { buildMoveInOutCleaningCalculatorSpec } from "../lib/estimator/builders/move-in-out-cleaning-calculator.ts";
-import { moveInOutCleaningCalculatorEnDict } from "../lib/estimator/i18n/tools/move-in-out-cleaning-calculator-en.ts";
-import { moveInOutCleaningCalculatorMsDict } from "../lib/estimator/i18n/tools/move-in-out-cleaning-calculator-ms.ts";
-import { moveInOutCleaningCalculatorZhDict } from "../lib/estimator/i18n/tools/move-in-out-cleaning-calculator-zh.ts";
 import { buildPaintQuantityEstimatorSpec } from "../lib/estimator/builders/paint-quantity-estimator.ts";
 import { paintQuantityEstimatorEnDict } from "../lib/estimator/i18n/tools/paint-quantity-estimator-en.ts";
 import { paintQuantityEstimatorMsDict } from "../lib/estimator/i18n/tools/paint-quantity-estimator-ms.ts";
@@ -1075,18 +1067,6 @@ const toolI18n: ToolI18n[] = [
     build: buildBathroomRenovationEstimatorSpec,
     dicts: { en: bathroomRenovationEstimatorEnDict, ms: bathroomRenovationEstimatorMsDict, zh: bathroomRenovationEstimatorZhDict },
     samples: samplingSweep(estimatorSpecs["bathroom-renovation-estimator"], { area: [120, 450, 1200], condition: ["good", "worn", "damaged"] })
-  },
-  {
-    slug: "deep-cleaning-cost-estimator",
-    build: buildDeepCleaningCostEstimatorSpec,
-    dicts: { en: deepCleaningCostEstimatorEnDict, ms: deepCleaningCostEstimatorMsDict, zh: deepCleaningCostEstimatorZhDict },
-    samples: samplingSweep(estimatorSpecs["deep-cleaning-cost-estimator"], { area: [120, 450, 1200], condition: ["good", "worn", "damaged"] })
-  },
-  {
-    slug: "move-in-out-cleaning-calculator",
-    build: buildMoveInOutCleaningCalculatorSpec,
-    dicts: { en: moveInOutCleaningCalculatorEnDict, ms: moveInOutCleaningCalculatorMsDict, zh: moveInOutCleaningCalculatorZhDict },
-    samples: samplingSweep(estimatorSpecs["move-in-out-cleaning-calculator"], { area: [120, 450, 1200], condition: ["good", "worn", "damaged"] })
   },
   {
     slug: "paint-quantity-estimator",

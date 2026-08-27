@@ -386,36 +386,6 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
       a: "Ya. Dalam kebanyakan kes kami hanya perlu menggantikan sealant dan melaraskan rel."
     }
   },
-  "mold-in-bathroom-after-cleaning": {
-    symptom: "Acuan muncul semula di bilik mandi walaupun telah dibersihkan.",
-    causes: ["Kelembapan tinggi", "Pengudaraan buruk", "Kulat di dalam grout atau silikon", "Tiada rawatan anti-kulat"],
-    solutions: ["Bersihkan dengan larutan anti-kulat", "Sapukan sealant anti-kulat", "Pastikan pengudaraan baik", "Kurangkan kelembapan"],
-    whenToCall: ["Acuan muncul semula dalam masa kurang dari 2 minggu", "Acuan merebak ke dinding", "Bau acuan kuat"],
-    localFaq: {
-      q: "Bagaimana untuk menghalang acuan di bilik mandi?",
-      a: "Gunakan kipas ekzos semasa dan selepas mandi, sapukan sealant anti-kulat, dan pastikan bilik mandi kering selepas digunakan."
-    }
-  },
-  "stubborn-grout-stains-after-deep-clean": {
-    symptom: "Kotoran grout sukar dibersihkan walaupun telah dibersihkan secara mendalam.",
-    causes: ["Kotoran tertanam dalam grout", "Grout rosak atau berliang", "Penggunaan bahan kimia yang salah", "Kulat di dalam grout"],
-    solutions: ["Gunakan pembersih grout khas", "Gosok dengan berus lembut", "Ganti grout jika rosak", "Sapukan sealant selepas dibersihkan"],
-    whenToCall: ["Kotoran tidak hilang selepas beberapa kali cuba", "Grout rosak teruk", "Masalah di seluruh bilik mandi"],
-    localFaq: {
-      q: "Bolehkah grout yang kotor diganti tanpa mengganti jubin?",
-      a: "Ya. Kami boleh mengeluarkan grout lama dan menyapu grout baharu tanpa mengganti jubin."
-    }
-  },
-  "construction-dust-returning": {
-    symptom: "Habuk pembinaan muncul semula walaupun telah dibersihkan.",
-    causes: ["Habuk masih tertinggal di celah-celah", "Sistem pengudaraan membawa habuk masuk", "Pembersihan tidak menyeluruh", "Aktiviti pembinaan berterusan"],
-    solutions: ["Bersihkan dengan pembersih vakum HEPA", "Tutup semua celah", "Bersihkan sistem pengudaraan", "Gunakan pembersih udara"],
-    whenToCall: ["Habuk muncul semula dalam masa kurang dari 1 minggu", "Habuk tebal di seluruh rumah", "Masalah berlaku selepas hujan"],
-    localFaq: {
-      q: "Bagaimana untuk menghilangkan habuk pembinaan sepenuhnya?",
-      a: "Kami gunakan pembersih vakum HEPA, bersihkan semua celah, dan sapukan sealant di kawasan yang sesuai."
-    }
-  },
   "cctv-not-recording": {
     symptom: "Kamera CCTV tidak merakam atau rakaman tidak disimpan.",
     causes: ["Kad SD penuh atau rosak", "Sambungan internet lemah", "Perisian perlu dikemas kini", "Kamera rosak"],
@@ -715,36 +685,6 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Bolehkah skrin mandi dibaiki tanpa ganti keseluruhan?",
       a: "Ya. Dalam kebanyakan kes, hanya perlu tukar silikon dan laraskan rel. Penggantian penuh hanya diperlukan jika kaca rosak."
-    }
-  },
-  "stubborn-bathroom-limescale": {
-    symptom: "Limescale keras pada paip, kepala shower, skrin kaca atau jubin yang tidak boleh dibersihkan dengan pencuci biasa.",
-    causes: ["Air keras (high mineral content) di kawasan anda", "Pembinaan mineral berpanjangan tanpa pembersihan", "Permukaan krom atau kaca berpori", "Produk pembersihan salah yang tidak berkesan"],
-    solutions: ["Bersihkan mendalam dengan penyahskala berasid ringan", "Steam clean grout dan jubin", "Polish krom dan kaca dengan compound khas", "Cadangkan water softener untuk pencegahan jangka panjang"],
-    whenToCall: ["Pembersihan biasa tidak lagi berkesan", "Bersedia untuk pameran/jualan hartanah", "Mahukan pembersihan profesional sebelum Hari Raya / CNY"],
-    localFaq: {
-      q: "Bagaimana mencegah limescale kembali?",
-      a: "Lap kaca shower selepas setiap penggunaan, bersihkan paip setiap minggu, dan pertimbangkan water softener untuk perlindungan jangka panjang."
-    }
-  },
-  "move-out-condo-deep-clean": {
-    symptom: "Anda berpindah keluar dan perlu kondominium dibersihkan ke standard yang diterima oleh pemilik/ejen untuk pemulangan deposit.",
-    causes: ["Kesan penggunaan penyewa biasa", "Pembinaan gris di dapur", "Pembinaan limescale di bilik mandi", "Kesan pada dinding dari perabot dan cangkuk"],
-    solutions: ["Pembersihan mendalam bilik demi bilik", "Pembersihan tompok dinding untuk kesan calar", "Nyahgris dapur termasuk dapur dan hood", "Pembersihan mendalam bilik mandi dengan penyahskala", "Jalan akhir dengan pemilik/ejen"],
-    whenToCall: ["Kurang dari seminggu sebelum serahan kunci", "Mahukan pemulangan deposit maksimum", "Unit bersaiz 800+ kaki persegi"],
-    localFaq: {
-      q: "Adakah anda juga menguruskan sentuhan dinding?",
-      a: "Pembuangan kesan calar asas termasuk. Pengecatan semula dikutip secara berasingan jika kerosakan dinding melebihi pembersihan."
-    }
-  },
-  "cement-splatter-tile-clean": {
-    symptom: "Renovasi siap tetapi percikan simen/cat, sisa silikon dan habuk pembinaan ada di mana-mana.",
-    causes: ["Sisa pembinaan biasa", "Titis silikon dan pelekat", "Percikan simen pada tingkap/jubin", "Habuk halus di seluruh unit"],
-    solutions: ["Vakum HEPA penuh setiap permukaan", "Buang kesan simen dari jubin dan kaca", "Kikis sisa silikon dan bersihkan dengan pelarut", "Mop basah dan lap terperinci penuh", "Pembersihan udara dengan unit penapis HEPA"],
-    whenToCall: ["Renovasi baru sahaja siap", "Perlu masuk dalam masa seminggu", "Pembersihan kontraktor tidak mencukupi"],
-    localFaq: {
-      q: "Adakah pembersihan kontraktor sudah cukup?",
-      a: "Jarang. Pembersihan kontraktor biasanya hanya pembuangan sisa asas. Pembersihan mendalam pasca-renovasi menjadikan unit anda benar-benar sedia untuk masuk."
     }
   },
   "cctv-not-recording-storage-full": {
@@ -1390,36 +1330,6 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
       a: "可以。在大多数情况下，我们只需更换密封胶并调整轨道。"
     }
   },
-  "mold-in-bathroom-after-cleaning": {
-    symptom: "即使已深度清洁，浴室霉菌仍反复出现。",
-    causes: ["湿度高", "通风不良", " grout 或硅胶内有霉菌", "未使用防霉处理"],
-    solutions: ["用防霉溶液清洁", "涂抹防霉密封胶", "确保通风良好", "降低湿度"],
-    whenToCall: ["霉菌在不到 2 周内再次出现", "霉菌蔓延到墙壁", "霉味强烈"],
-    localFaq: {
-      q: "如何防止浴室发霉？",
-      a: "洗澡时和之后使用排气扇，涂抹防霉密封胶，并确保浴室使用后保持干燥。"
-    }
-  },
-  "stubborn-grout-stains-after-deep-clean": {
-    symptom: "即使已深度清洁， grout 污渍仍难以去除。",
-    causes: ["污渍嵌入 grout 内", " grout 损坏或多孔", "使用了错误的化学清洁剂", " grout 内有霉菌"],
-    solutions: ["使用专用 grout 清洁剂", "用软刷轻轻刷洗", "如有需要更换 grout", "清洁后涂抹密封剂"],
-    whenToCall: ["多次尝试后污渍仍未去除", " grout 严重损坏", "整个浴室都有问题"],
-    localFaq: {
-      q: "污渍严重的 grout 可以在不更换瓷砖的情况下更换吗？",
-      a: "可以。我们可以移除旧 grout 并涂抹新 grout，而无需更换瓷砖。"
-    }
-  },
-  "construction-dust-returning": {
-    symptom: "即使已清洁，建筑灰尘仍反复出现。",
-    causes: ["灰尘仍留在缝隙中", "通风系统带入灰尘", "清洁不彻底", "建筑活动持续进行"],
-    solutions: ["使用 HEPA 吸尘器清洁", "封闭所有缝隙", "清洁通风系统", "使用空气净化器"],
-    whenToCall: ["不到 1 周灰尘再次出现", "整个房屋灰尘厚重", "雨后出现问题"],
-    localFaq: {
-      q: "如何彻底清除建筑灰尘？",
-      a: "我们使用 HEPA 吸尘器、清洁所有缝隙，并在合适区域涂抹密封剂。"
-    }
-  },
   "cctv-not-recording": {
     symptom: "CCTV 摄像头不录像或录像未保存。",
     causes: ["SD 卡已满或损坏", "互联网连接弱", "软件需要更新", "摄像头损坏"],
@@ -1719,36 +1629,6 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "能只修淋浴屏风而不换整个吗？",
       a: "可以。大多数情况下只需更换硅胶并调整轨道。只有玻璃损坏才需要全部更换。"
-    }
-  },
-  "stubborn-bathroom-limescale": {
-    symptom: "水龙头、花洒、玻璃屏风或瓷砖上有普通清洁剂无法去除的坚硬水垢。",
-    causes: ["您所在地区水质硬（高矿物质含量）", "矿物质长期积累未清洁", "镀铬或玻璃表面多孔", "使用了无效的清洁产品"],
-    solutions: ["用温和酸性除垢剂深度清洁", "蒸汽清洁瓷砖缝隙和瓷砖", "用专用化合物抛光镀铬和玻璃", "建议安装软水器长期预防"],
-    whenToCall: ["常规清洁不再有效", "准备房产展示/出售", "想在Hari Raya/CNY前专业深度清洁"],
-    localFaq: {
-      q: "如何防止水垢复发？",
-      a: "每次淋浴后刮擦玻璃、每周擦拭水龙头，并考虑安装全屋软水器长期保护。"
-    }
-  },
-  "move-out-condo-deep-clean": {
-    symptom: "您需要搬出，需要将公寓清洁到房东/中介接受的标准以退还押金。",
-    causes: ["租客正常使用痕迹", "厨房油脂积累", "浴室水垢积累", "家具和挂钩在墙上留下痕迹"],
-    solutions: ["逐房间深度清洁", "擦拭墙面污痕", "厨房去油包括灶台和抽油烟机", "浴室深度清洁使用除垢剂", "与房东/中介最终检查"],
-    whenToCall: ["距离交钥匙不到一周", "希望最大程度退还押金", "单元 800 平方英尺以上"],
-    localFaq: {
-      q: "你们也处理墙面修补吗？",
-      a: "基本污痕去除包含在内。如果墙面损坏超出清洁范围，重新涂刷另行报价。"
-    }
-  },
-  "cement-splatter-tile-clean": {
-    symptom: "翻新完成但到处都是水泥/油漆溅点、硅胶残留和建筑灰尘。",
-    causes: ["正常翻新垃圾", "硅胶和粘合剂滴落", "水泥溅到窗户/瓷砖上", "整个单元的细灰尘"],
-    solutions: ["每个表面全面 HEPA 吸尘", "清除瓷砖和玻璃上的水泥痕迹", "刮除硅胶残留并用溶剂清洁", "全面湿拖和细节擦拭", "用 HEPA 过滤单元清洁空气"],
-    whenToCall: ["翻新刚完成", "需要在一周内搬入", "承包商清洁不够彻底"],
-    localFaq: {
-      q: "承包商的清洁算翻新后清洁吗？",
-      a: "通常不算。承包商清洁通常只是基本垃圾清除。翻新后深度清洁才真正让单元可以入住。"
     }
   },
   "cctv-not-recording-storage-full": {

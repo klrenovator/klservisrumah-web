@@ -491,7 +491,7 @@ const SUBURB_BODY_ZH: Record<string, LocalizedSuburbBody> = {
   },
   "desa-parkcity": {
     housingProfile: "Desa ParkCity 拥有高端公寓和落地式住宅，需要整洁、有计划的团队和仔细的表面保护。",
-    commonIssues: ["室内粉刷", "电视安装", "锁具维修", "深度清洁"],
+    commonIssues: ["室内粉刷", "电视安装", "锁具维修", "灯具安装"],
     localFaq: {
       q: "你们能按照 Desa ParkCity 的社区指南施工吗？",
       a: "可以。我们会提前提交施工申请、遵守安静时段，并在每天收工前清理现场。"

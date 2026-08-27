@@ -468,9 +468,6 @@
       "window-repair": "Dijadualkan / minggu sama",
       "locksmith": "Hari sama untuk terkunci",
       "glass-aluminium": "Ukuran + dijadualkan",
-      "cleaning": "Tempahan minggu sama",
-      "deep-cleaning": "Tempahan dijadualkan",
-      "post-renovation-cleaning": "Tempahan selepas kerja",
       "cctv": "Tinjauan tapak + dijadualkan",
       "autogate": "Tinjauan tapak + dijadualkan",
       "welding": "Tinjauan tapak + dijadualkan",
@@ -1007,9 +1004,7 @@
     },
     "addons": {
       "siteVisitLabel": "Pengukuran di tapak percuma sebelum menempah",
-      "siteVisitNote": "Mengesahkan skop tepat supaya sebut harga akhir sepadan dengan kerja.",
-      "postCleanLabel": "Pembersihan selepas kerja",
-      "postCleanNote": "Pembersihan dan lap menyeluruh selepas kerja siap."
+      "siteVisitNote": "Mengesahkan skop tepat supaya sebut harga akhir sepadan dengan kerja."
     },
     "related": {
       "serviceDesc": "Skop, proses dan jaminan penuh",
@@ -1345,7 +1340,7 @@
       "plumbing": {
         "0": {
           "label": "Pembaikan paip kecil",
-          "publishedRate": "Dari RM 150",
+          "publishedRate": "Dari RM 280",
           "unit": "tugas",
           "range": "RM 80–RM 500 bergantung pada kerumitan pembaikan",
           "note": "Sesuai untuk kerja paip air, injap, singki, paip kecil dan pemeriksaan masalah biasa."
@@ -1393,7 +1388,7 @@
       "handyman": {
         "0": {
           "label": "Tugas kerja tangan umum",
-          "publishedRate": "Dari RM 100",
+          "publishedRate": "Dari RM 280",
           "unit": "tugas",
           "range": "RM 40–RM 180 / jam atau RM 60–RM 300 untuk tugas biasa",
           "note": "Titik permulaan yang adil untuk pemasangan kecil, langsir, rak atau pelarasan kunci."

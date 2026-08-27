@@ -150,18 +150,6 @@ const PRIORITY_KEYS = [
   "house-renovation/kitchen-and-bathroom-makeover",
   "house-renovation/condo-interior-refurbishment",
   "house-renovation/commercial-shoplot-renovation",
-  "cleaning/weekly-condo-cleaning-1-000-sqft",
-  "cleaning/bi-weekly-terrace-house-cleaning",
-  "cleaning/office-cleaning-small-office-1-500-sqft",
-  "cleaning/one-off-spring-clean",
-  "deep-cleaning/condo-move-out-deep-clean-1-000-sqft",
-  "deep-cleaning/terrace-house-deep-clean-2-000-sqft",
-  "deep-cleaning/post-illness-disinfection-clean",
-  "deep-cleaning/allergy-season-refresh",
-  "post-renovation-cleaning/condo-post-renovation-clean-1-000-sqft",
-  "post-renovation-cleaning/terrace-house-post-renovation-clean-2-000-sqft",
-  "post-renovation-cleaning/new-tiles-grout-haze-removal",
-  "post-renovation-cleaning/construction-debris-removal",
 ];
 
 function checkBlock(key: string, locale: "ms" | "zh", b: SpecialtyLocaleBlock, issues: Issue[]) {

@@ -585,27 +585,6 @@ export const contentNavList: ContentNavItem[] = [
     "relatedServiceSlug": "glass-aluminium"
   },
   {
-    "slug": "cleaning-services-kl",
-    "title": "Commercial Residential & Office Cleaning in KL",
-    "category": "Commercial",
-    "intro": "Commercial residential & office cleaning focuses on offices, retail lots, showrooms, warehouses, and strata facilities t",
-    "relatedServiceSlug": "cleaning"
-  },
-  {
-    "slug": "deep-cleaning-services-kl",
-    "title": "Commercial Deep Cleaning & Move-In/Out in KL",
-    "category": "Commercial",
-    "intro": "Commercial deep cleaning & move-in/out focuses on offices, retail lots, showrooms, warehouses, and strata facilities tha",
-    "relatedServiceSlug": "deep-cleaning"
-  },
-  {
-    "slug": "post-renovation-cleaning-services-kl",
-    "title": "Commercial Post-Renovation Cleaning in KL",
-    "category": "Commercial",
-    "intro": "Commercial post-renovation cleaning focuses on offices, retail lots, showrooms, warehouses, and strata facilities that n",
-    "relatedServiceSlug": "post-renovation-cleaning"
-  },
-  {
     "slug": "cctv-services-kl",
     "title": "Commercial CCTV & Security Camera Installation in KL",
     "category": "Commercial",
@@ -800,27 +779,6 @@ export const contentNavList: ContentNavItem[] = [
     "category": "Residential",
     "intro": "Residential glass & aluminium fabrication supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental uni",
     "relatedServiceSlug": "glass-aluminium"
-  },
-  {
-    "slug": "cleaning-services-kl",
-    "title": "Residential Residential & Office Cleaning in KL",
-    "category": "Residential",
-    "intro": "Residential residential & office cleaning supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental uni",
-    "relatedServiceSlug": "cleaning"
-  },
-  {
-    "slug": "deep-cleaning-services-kl",
-    "title": "Residential Deep Cleaning & Move-In/Out in KL",
-    "category": "Residential",
-    "intro": "Residential deep cleaning & move-in/out supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental units",
-    "relatedServiceSlug": "deep-cleaning"
-  },
-  {
-    "slug": "post-renovation-cleaning-services-kl",
-    "title": "Residential Post-Renovation Cleaning in KL",
-    "category": "Residential",
-    "intro": "Residential post-renovation cleaning supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental units ac",
-    "relatedServiceSlug": "post-renovation-cleaning"
   },
   {
     "slug": "cctv-services-kl",
@@ -1303,27 +1261,6 @@ export const contentNavList: ContentNavItem[] = [
     "relatedServiceSlug": "glass-aluminium"
   },
   {
-    "slug": "cleaning-ultimate-guide",
-    "title": "Residential & Office Cleaning Ultimate Guide for KL & Selangor",
-    "category": "AI Answer Guide",
-    "intro": "Residential & Office Cleaning in KL and Selangor should be priced fairly and openly, scoped clearly, performed by insure",
-    "relatedServiceSlug": "cleaning"
-  },
-  {
-    "slug": "deep-cleaning-ultimate-guide",
-    "title": "Deep Cleaning & Move-In/Out Ultimate Guide for KL & Selangor",
-    "category": "AI Answer Guide",
-    "intro": "Deep Cleaning & Move-In/Out in KL and Selangor should be priced fairly and openly, scoped clearly, performed by insured ",
-    "relatedServiceSlug": "deep-cleaning"
-  },
-  {
-    "slug": "post-renovation-cleaning-ultimate-guide",
-    "title": "Post-Renovation Cleaning Ultimate Guide for KL & Selangor",
-    "category": "AI Answer Guide",
-    "intro": "Post-Renovation Cleaning in KL and Selangor should be priced fairly and openly, scoped clearly, performed by insured and",
-    "relatedServiceSlug": "post-renovation-cleaning"
-  },
-  {
     "slug": "cctv-ultimate-guide",
     "title": "CCTV & Security Camera Installation Ultimate Guide for KL & Selangor",
     "category": "AI Answer Guide",
@@ -1520,27 +1457,6 @@ export const contentNavList: ContentNavItem[] = [
     "relatedServiceSlug": "glass-aluminium"
   },
   {
-    "slug": "cleaning-process-kl",
-    "title": "Residential & Office Cleaning Process in KL",
-    "category": "Process",
-    "intro": "A step-by-step process page for residential & office cleaning, including preparation, execution, quality checks, and war",
-    "relatedServiceSlug": "cleaning"
-  },
-  {
-    "slug": "deep-cleaning-process-kl",
-    "title": "Deep Cleaning & Move-In/Out Process in KL",
-    "category": "Process",
-    "intro": "A step-by-step process page for deep cleaning & move-in/out, including preparation, execution, quality checks, and warra",
-    "relatedServiceSlug": "deep-cleaning"
-  },
-  {
-    "slug": "post-renovation-cleaning-process-kl",
-    "title": "Post-Renovation Cleaning Process in KL",
-    "category": "Process",
-    "intro": "A step-by-step process page for post-renovation cleaning, including preparation, execution, quality checks, and warranty",
-    "relatedServiceSlug": "post-renovation-cleaning"
-  },
-  {
     "slug": "cctv-process-kl",
     "title": "CCTV & Security Camera Installation Process in KL",
     "category": "Process",
@@ -1610,7 +1526,7 @@ export const contentRelatedServiceBySlug: Record<string, ContentRelatedServiceLi
   "plumbing": {
     "slug": "plumbing",
     "title": "Plumbing & Leak Repair Services",
-    "tagline": "Plumbing and leak repair for pipes, taps, toilets, drains, water heaters and pumps across KL & Selangor, with the scope confirmed before work. From RM 150.",
+    "tagline": "Plumbing and leak repair for pipes, taps, toilets, drains, water heaters and pumps across KL & Selangor, with the scope confirmed before work. From RM 280.",
     "subServices": [
       {
         "name": "Water Leakage Diagnosis & Repair",
@@ -1655,7 +1571,7 @@ export const contentRelatedServiceBySlug: Record<string, ContentRelatedServiceLi
   "handyman": {
     "slug": "handyman",
     "title": "Handyman Services",
-    "tagline": "TV mounting, door and lock repair, furniture assembly, curtain and shelf installation, cabinet adjustments and general maintenance across KL & Selangor. From RM 100.",
+    "tagline": "TV mounting, door and lock repair, furniture assembly, curtain and shelf installation, cabinet adjustments and general maintenance across KL & Selangor. From RM 280.",
     "subServices": [
       {
         "name": "Heavy TV Wall Mounting",
@@ -1685,7 +1601,7 @@ export const contentRelatedServiceBySlug: Record<string, ContentRelatedServiceLi
   "electrical": {
     "slug": "electrical",
     "title": "Licensed Electrical Services",
-    "tagline": "Wiring, DB box upgrades, power point and switch installation, ceiling fan and lighting point setup by ST-licensed electricians. From RM 150.",
+    "tagline": "Wiring, DB box upgrades, power point and switch installation, ceiling fan and lighting point setup by ST-licensed electricians. From RM 280.",
     "subServices": [
       {
         "name": "New Power Point & Switch Installation",
@@ -1919,51 +1835,6 @@ export const contentRelatedServiceBySlug: Record<string, ContentRelatedServiceLi
       {
         "name": "Aluminium Sliding Window",
         "desc": "Locally fabricated aluminium sliding window with 5mm clear or tinted glass, nylon rollers, and weatherstrip."
-      }
-    ]
-  },
-  "cleaning": {
-    "slug": "cleaning",
-    "title": "Residential & Office Cleaning",
-    "tagline": "Weekly, fortnightly, or monthly cleaning for homes, condos, and small offices. Background-checked cleaners, eco products. From RM 180 / session.",
-    "subServices": [
-      {
-        "name": "Weekly Condo Cleaning (1,000 sqft)",
-        "desc": "3-bed condo or apartment cleaned weekly, including kitchen, bathrooms, and common areas."
-      },
-      {
-        "name": "Bi-Weekly Terrace House Cleaning",
-        "desc": "Two-storey terrace house cleaned every fortnight, including ground floor, first floor, and outdoor areas."
-      }
-    ]
-  },
-  "deep-cleaning": {
-    "slug": "deep-cleaning",
-    "title": "Deep Cleaning & Move-In/Out",
-    "tagline": "Top-to-bottom deep cleaning for move-in, move-out, post-illness, or seasonal refresh. From RM 420.",
-    "subServices": [
-      {
-        "name": "Condo Move-Out Deep Clean (1,000 sqft)",
-        "desc": "Full top-to-bottom clean including inside cabinets, oven, fridge, fans, and window tracks. Move-out ready."
-      },
-      {
-        "name": "Terrace House Deep Clean (2,000 sqft)",
-        "desc": "Two-storey home including outdoor areas, garage, and staircases. Move-in or move-out ready."
-      }
-    ]
-  },
-  "post-renovation-cleaning": {
-    "slug": "post-renovation-cleaning",
-    "title": "Post-Renovation Cleaning",
-    "tagline": "Construction debris removal, paint dust, grout haze, and silicone cleanup after renovation. From RM 650.",
-    "subServices": [
-      {
-        "name": "Condo Post-Renovation Clean (1,000 sqft)",
-        "desc": "Full post-renovation clean for a 3-bed condo after a typical kitchen + bathroom renovation."
-      },
-      {
-        "name": "Terrace House Post-Renovation Clean (2,000 sqft)",
-        "desc": "Whole-house post-renovation clean including outdoor areas, garage, and windows."
       }
     ]
   },

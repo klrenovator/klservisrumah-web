@@ -28,10 +28,7 @@ export const recentJobs: RecentJob[] = [
   { service: "Kitchen cabinet quote", location: "Subang", label: "Popular local request", timeLabel: "recent" },
   { service: "Door planing and hinge fix", location: "Cheras", label: "Popular local request", timeLabel: "recent" },
   { service: "Frameless shower screen install", location: "Mont Kiara", label: "Popular local request", timeLabel: "recent" },
-  { service: "Weekly condo cleaning", location: "Bangsar", label: "Popular local request", timeLabel: "recent" },
-  { service: "Move-out deep cleaning", location: "PJ", label: "Popular local request", timeLabel: "recent" },
   { service: "Hikvision CCTV install (4 cam)", location: "Setia Alam", label: "Popular local request", timeLabel: "recent" },
   { service: "Autogate motor replacement", location: "Klang", label: "Popular local request", timeLabel: "recent" },
-  { service: "Custom grille fabrication", location: "Seri Kembangan", label: "Popular local request", timeLabel: "recent" },
-  { service: "Post-renovation cleaning", location: "Damansara", label: "Popular local request", timeLabel: "recent" }
+  { service: "Custom grille fabrication", location: "Seri Kembangan", label: "Popular local request", timeLabel: "recent" }
 ];

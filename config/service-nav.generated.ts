@@ -19,7 +19,7 @@ export const serviceNavBySlug: Record<string, ServiceNavItem> = {
   "plumbing": {
     "slug": "plumbing",
     "title": "Plumbing & Leak Repair Services",
-    "startPrice": "RM 150",
+    "startPrice": "RM 280",
     "i18n": {
       "ms": {
         "title": "Perkhidmatan Paip & Baiki Kebocoran"
@@ -58,7 +58,7 @@ export const serviceNavBySlug: Record<string, ServiceNavItem> = {
   "handyman": {
     "slug": "handyman",
     "title": "Handyman Services",
-    "startPrice": "RM 100",
+    "startPrice": "RM 280",
     "i18n": {
       "ms": {
         "title": "Perkhidmatan Handyman"
@@ -84,7 +84,7 @@ export const serviceNavBySlug: Record<string, ServiceNavItem> = {
   "electrical": {
     "slug": "electrical",
     "title": "Licensed Electrical Services",
-    "startPrice": "RM 150",
+    "startPrice": "RM 280",
     "i18n": {
       "ms": {
         "title": "Perkhidmatan Elektrik Berlesen"
@@ -286,45 +286,6 @@ export const serviceNavBySlug: Record<string, ServiceNavItem> = {
       },
       "zh": {
         "title": "玻璃与铝业工程"
-      }
-    }
-  },
-  "cleaning": {
-    "slug": "cleaning",
-    "title": "Residential & Office Cleaning",
-    "startPrice": "RM 180",
-    "i18n": {
-      "ms": {
-        "title": "Pembersihan Kediaman & Pejabat"
-      },
-      "zh": {
-        "title": "住宅与办公室清洁"
-      }
-    }
-  },
-  "deep-cleaning": {
-    "slug": "deep-cleaning",
-    "title": "Deep Cleaning & Move-In/Out",
-    "startPrice": "RM 420",
-    "i18n": {
-      "ms": {
-        "title": "Cucian Menyeluruh & Pindah Masuk/Keluar"
-      },
-      "zh": {
-        "title": "深度清洁与搬家保洁"
-      }
-    }
-  },
-  "post-renovation-cleaning": {
-    "slug": "post-renovation-cleaning",
-    "title": "Post-Renovation Cleaning",
-    "startPrice": "RM 650",
-    "i18n": {
-      "ms": {
-        "title": "Pembersihan Selepas Pengubahsuaian"
-      },
-      "zh": {
-        "title": "装修后开荒保洁"
       }
     }
   },

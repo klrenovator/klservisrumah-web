@@ -320,7 +320,6 @@ export const paintingEnDict: MessageDictionary = {
     crackPackage: { label: "Wall crack & moisture repair package", note: "Published rate: {label}" },
     skimUpgrade: { label: "Full skim-coat upgrade (glass-smooth finish)", note: "Published rate: {label}" },
     waterproof: { label: "Damp wall waterproofing treatment", note: "Published rate: {label}" },
-    postClean: { label: "Post-painting cleaning", note: "Published rate: from RM {price} per visit" },
     gateGrille: { label: "Gate & grille anti-rust repaint", note: "Rust treatment plus two protective coats" }
   },
   related: {

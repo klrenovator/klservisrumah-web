@@ -25,7 +25,7 @@ permanent handoff rule "SSM NOT TO BE SHOWN PUBLICALLY ON WEBSITE"._
 - **Office**: Jalan Kiara, Mont Kiara, 50480 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia
 - **Hours**: Mon–Sun · 9:00 AM – 6:00 PM (Everyday Open)
 
-## Service Offerings (31 service categories)
+## Service Offerings (28 service categories)
 All prices are the published starting prices shown on the live service pages. Final pricing is confirmed in an itemised written quote before work begins.
 
 ### House Painting Services
@@ -44,7 +44,7 @@ All prices are the published starting prices shown on the live service pages. Fi
 
 ### Plumbing & Leak Repair Services
 - Page: https://www.klservisrumah.my/services/plumbing
-- Starting price: RM 150
+- Starting price: RM 280
 - Warranty: 30-Day Joint Seal & Workmanship Warranty
 - Water Leakage Diagnosis & Repair — From RM 220
 - Toilet, Tap & Sink Installation — From RM 150
@@ -86,7 +86,7 @@ All prices are the published starting prices shown on the live service pages. Fi
 
 ### Handyman Services
 - Page: https://www.klservisrumah.my/services/handyman
-- Starting price: RM 100
+- Starting price: RM 280
 - Warranty: 30-Day Workmanship Safety Warranty
 - Heavy TV Wall Mounting — From RM 150
 - Door, Hinge & Lockset Repair — From RM 120
@@ -117,7 +117,7 @@ All prices are the published starting prices shown on the live service pages. Fi
 
 ### Licensed Electrical Services
 - Page: https://www.klservisrumah.my/services/electrical
-- Starting price: RM 150
+- Starting price: RM 280
 - Warranty: 12-Month Electrical Workmanship Warranty
 - New Power Point & Switch Installation — From RM 150 / point
 - DB Box Upgrade & Rewiring — From RM 2,200
@@ -326,42 +326,6 @@ All prices are the published starting prices shown on the live service pages. Fi
 - Glass Repair & Reglazing — On Quote
 - Cost guide: https://www.klservisrumah.my/services/glass-aluminium/cost
 
-### Residential & Office Cleaning
-- Page: https://www.klservisrumah.my/services/cleaning
-- Starting price: RM 180
-- Warranty: 24-Hour Re-Clean Satisfaction Guarantee
-- Weekly Condo Cleaning (1,000 sqft) — From RM 180 / visit
-- Bi-Weekly Terrace House Cleaning — From RM 250 / visit
-- Office Cleaning (Small Office, 1,500 sqft) — From RM 320 / visit
-- One-Off Spring Clean — From RM 420
-- Cost guide: https://www.klservisrumah.my/services/cleaning/cost
-
-### Deep Cleaning & Move-In/Out
-- Page: https://www.klservisrumah.my/services/deep-cleaning
-- Starting price: RM 420
-- Warranty: 24-Hour Re-Clean Satisfaction Guarantee
-- Condo Move-Out Deep Clean (1,000 sqft) — From RM 420
-- Terrace House Deep Clean (2,000 sqft) — From RM 650
-- Post-Illness Disinfection Clean — From RM 500
-- Allergy Season Refresh — From RM 480
-- Cost guide: https://www.klservisrumah.my/services/deep-cleaning/cost
-
-### Post-Renovation Cleaning
-- Page: https://www.klservisrumah.my/services/post-renovation-cleaning
-- Starting price: RM 650
-- Warranty: 7-Day Spot-Check Free Re-Clean Guarantee
-- Condo Post-Renovation Clean (1,000 sqft) — From RM 650
-- Terrace House Post-Renovation Clean (2,000 sqft) — From RM 1,400
-- New Tiles Grout Haze Removal — From RM 10 / sq ft
-- Construction Debris Removal — From RM 320
-- Construction Rough Cleaning & Site Clearance — On Quote
-- Fine Dust Extraction & Air Purifying — On Quote
-- Paint Splatter & Silicone Smear Removal — On Quote
-- Window Glass & Aluminium Track Detailing — On Quote
-- Floor Machine Scrubbing & Buffing — On Quote
-- Move-In & Handover Final Cleaning — On Quote
-- Cost guide: https://www.klservisrumah.my/services/post-renovation-cleaning/cost
-
 ### CCTV & Security Camera Installation
 - Page: https://www.klservisrumah.my/services/cctv
 - Starting price: RM 420
@@ -486,7 +450,7 @@ All prices are the published starting prices shown on the live service pages. Fi
 
 Broader coverage list: Kuala Lumpur, Cheras, Ampang, Setapak, Wangsa Maju, Kepong, Sri Petaling, Bukit Jalil, Mont Kiara, Bangsar, Desa ParkCity, Taman Melawati, Hulu Kelang, Petaling Jaya, Subang Jaya, Shah Alam, Puchong, Damansara, Kota Damansara, Ara Damansara, Sunway, USJ, Bandar Utama, SS2, Klang, Port Klang, Bukit Tinggi, Setia Alam, Meru, Kota Kemuning, Bukit Jelutong, Glenmarie, Batu Caves, Selayang, Rawang, Kundang, Sungai Buloh, Kajang, Semenyih, Balakong, Seri Kembangan, Pandan Indah, Bandar Puteri, Putrajaya, Cyberjaya, Dengkil, Selangor, Sentul, Bandar Botanic.
 
-## Diagnostic Problem Pages (92)
+## Diagnostic Problem Pages (86)
 Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Peeling Paint in Malaysian Homes — https://www.klservisrumah.my/problems/peeling-paint-malaysia
 - Faded Exterior Paint After Malaysian Sun and Rain — https://www.klservisrumah.my/problems/faded-exterior-paint-malaysia
@@ -525,9 +489,6 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Sliding Window Stuck or Hard to Open — https://www.klservisrumah.my/problems/sliding-window-stuck
 - Smart Lock Not Responding or Battery Draining Fast — https://www.klservisrumah.my/problems/smart-lock-not-working
 - Frameless Shower Screen Leaking at Bottom — https://www.klservisrumah.my/problems/shower-screen-leaking
-- Mold Returning Quickly After Professional Cleaning — https://www.klservisrumah.my/problems/mold-in-bathroom-after-cleaning
-- Grout Still Stained After Deep Cleaning Service — https://www.klservisrumah.my/problems/stubborn-grout-stains-after-deep-clean
-- Fine Construction Dust Returning After Post-Reno Clean — https://www.klservisrumah.my/problems/construction-dust-returning
 - CCTV Camera Not Recording or Footage Missing — https://www.klservisrumah.my/problems/cctv-not-recording
 - Autogate Not Closing or Motor Running Continuously — https://www.klservisrumah.my/problems/autogate-not-closing
 - Window Grille or Gate Rusting Quickly — https://www.klservisrumah.my/problems/rusting-window-grille
@@ -558,9 +519,6 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Locked Out of Your House — https://www.klservisrumah.my/problems/locked-out-of-house
 - LED Downlight Flickering or Dying Early — https://www.klservisrumah.my/problems/downlight-flickering
 - Shower Screen Leaking Water onto the Floor — https://www.klservisrumah.my/problems/shower-screen-water-leak
-- Stubborn Bathroom Limescale and Water Stains — https://www.klservisrumah.my/problems/stubborn-bathroom-limescale
-- Move-Out Condo Deep Cleaning — https://www.klservisrumah.my/problems/move-out-condo-deep-clean
-- Cement Splatter and Dust After Renovation — https://www.klservisrumah.my/problems/cement-splatter-tile-clean
 - CCTV Not Recording or Showing Blank Feed — https://www.klservisrumah.my/problems/cctv-not-recording-storage-full
 - Auto Gate Remote Not Working — https://www.klservisrumah.my/problems/autogate-remote-not-working
 - Loose or Sagging Metal Gate Hinges — https://www.klservisrumah.my/problems/loose-metal-gate-hinges
@@ -581,7 +539,7 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Uneven Concrete Subfloor Before Flooring Installation — https://www.klservisrumah.my/problems/uneven-floor-subfloor-leveling
 - Masonry Wall Settlement Cracks & Extension Separation — https://www.klservisrumah.my/problems/wall-cracks-settlement-masonry
 
-## Guides & Articles (229)
+## Guides & Articles (208)
 - 5 Tips For Choosing Modern Home Paint Colors in Malaysia — https://www.klservisrumah.my/blog/5-tips-choosing-paint-colors-malaysia
 - How To Fix A Leaking Bathroom Ceiling Without Hacking Tiles — https://www.klservisrumah.my/blog/how-to-fix-leaking-ceiling-without-tile-hacking
 - When to Repaint Your House in Malaysia (Signs, Frequency & Budget) — https://www.klservisrumah.my/blog/when-to-repaint-your-house-malaysia
@@ -621,12 +579,10 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Roof Leak Diagnosis & Repair in KL & Selangor — https://www.klservisrumah.my/blog/roof-leak-diagnosis-repair-kl
 - When Does a Roof Ridge Need Re-Bedding or Re-Pointing? — https://www.klservisrumah.my/blog/ridge-re-bedding-re-pointing-kl
 - Aircond, Water Heater & Oven Points in KL and Selangor — https://www.klservisrumah.my/blog/aircond-water-heater-and-oven-point
-- Allergy Season Refresh Cleaning in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/allergy-season-refresh-clean-kl
 - Aluminium Sliding Window Installation in KL & Selangor — https://www.klservisrumah.my/blog/aluminium-sliding-window-kl
 - Autogate Motor Replacement & Service in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/autogate-motor-replacement-service-kl
 - Auto Gate Installation & Motor Repair in KL & Selangor — https://www.klservisrumah.my/blog/autogate-services-kl
 - Bathroom & Wet Area Waterproofing in KL & Selangor — https://www.klservisrumah.my/blog/bathroom-and-wet-area-waterproofing
-- Bi-Weekly Terrace House Cleaning in KL & Selangor — https://www.klservisrumah.my/blog/bi-weekly-terrace-house-cleaning-kl
 - Built-in Wardrobe Installation in KL & Selangor — https://www.klservisrumah.my/blog/built-in-wardrobe-kl
 - Custom Carpentry & Joinery in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/custom-carpentry-joinery-kl
 - CCTV System Health Check & Relocation in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/cctv-health-check-and-relocation-kl
@@ -635,14 +591,10 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Ceiling Fan Replacement in KL & Selangor — https://www.klservisrumah.my/blog/ceiling-fan-replacement
 - Ceiling Repair & Re-Skim in KL & Selangor — https://www.klservisrumah.my/blog/ceiling-repair-reskim-kl
 - Ceiling & Partition Services in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/ceiling-services-kl
-- House & Office Cleaning Services in KL & Selangor — https://www.klservisrumah.my/blog/house-cleaning-services-kl
 - Commercial & Office Painting in KL and Selangor — https://www.klservisrumah.my/blog/commercial-and-office-painting
 - Commercial Shoplot Renovation in KL and Selangor — https://www.klservisrumah.my/blog/commercial-shoplot-renovation
 - Condo Interior Refurbishment in KL and Selangor — https://www.klservisrumah.my/blog/condo-interior-refurbishment
-- Condo Move-Out Deep Clean in KL: RM 420 Checklist — https://www.klservisrumah.my/blog/condo-move-out-deep-clean-kl
-- Condo Post-Renovation Clean in KL (1,000 sqft) — https://www.klservisrumah.my/blog/condo-post-renovation-clean-kl
 - Condo Wi-Fi CCTV Package in KL (4 Cameras) — https://www.klservisrumah.my/blog/condo-wifi-cctv-package-kl
-- Construction Debris Removal in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/construction-debris-removal-kl
 - Cornice & L-Box Concealed Light Troughs in KL and Selangor — https://www.klservisrumah.my/blog/cornice-and-l-box-concealed-light-trough
 - Cove & Curved Plaster Ceiling in KL — https://www.klservisrumah.my/blog/cove-curved-plaster-ceiling-kl
 - Cove & LED Strip Installation in KL & Selangor — https://www.klservisrumah.my/blog/cove-led-strip-installation-kl
@@ -652,7 +604,6 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Custom Window Grille Installation in KL & Selangor — https://www.klservisrumah.my/blog/custom-window-grille-installation-kl
 - DB Box Upgrade & Rewiring in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/db-box-upgrade-and-rewiring
 - DC Motor Smart Fan Installation in KL & Selangor — https://www.klservisrumah.my/blog/dc-motor-smart-fan-installation-kl
-- Deep Cleaning & Move-In/Out Services in KL & Selangor — https://www.klservisrumah.my/blog/deep-cleaning-services-kl
 - Door, Hinge & Lockset Repair in KL & Selangor — https://www.klservisrumah.my/blog/door-hinge-and-lockset-repair
 - Door Planing and Adjustment in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/door-planing-adjustment-kl
 - Door Repair & Installation in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/door-repair-installation-kl
@@ -700,16 +651,11 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Mortice & Deadbolt Lock Replacement in KL & Selangor — https://www.klservisrumah.my/blog/mortice-deadbolt-lock-replacement-kl
 - New Ceiling Fan Installation in KL & Selangor — https://www.klservisrumah.my/blog/new-ceiling-fan-installation
 - New Power Point & Switch Installation in KL & Selangor — https://www.klservisrumah.my/blog/new-power-point-and-switch-installation
-- New Tiles Grout Haze Removal in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/new-tiles-grout-haze-removal-kl
-- Small Office Cleaning Services in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/office-cleaning-small-office-kl
 - On-Site Welding Repair in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/on-site-welding-repair-kl
-- One-Off Spring Clean for Homes in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/one-off-spring-clean-kl
 - House Painting Services in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/house-painting-services-kl
 - Pendant & Chandelier Installation in KL & Selangor — https://www.klservisrumah.my/blog/pendant-chandelier-installation
 - Plaster Ceiling Installation in KL & Selangor — https://www.klservisrumah.my/blog/plaster-ceiling-installation
 - Plumbing & Leak Repair Services in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/plumbing-services-kl
-- Post-Illness Disinfection Cleaning in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/post-illness-disinfection-clean-kl
-- Post-Renovation Cleaning in KL & Selangor: Complete Guide — https://www.klservisrumah.my/blog/post-renovation-cleaning-kl
 - Autogate Not Closing or Motor Running Continuously — https://www.klservisrumah.my/blog/autogate-not-closing
 - Auto Gate Remote Not Working? Quick Checks and Fixes — https://www.klservisrumah.my/blog/autogate-remote-not-working
 - Condo Balcony Leaking Into the Unit Below — https://www.klservisrumah.my/blog/balcony-leak-condo
@@ -723,12 +669,10 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Ceiling Fan Wobbling: Balancing, Mounting and When It Is Unsafe — https://www.klservisrumah.my/blog/ceiling-fan-wobbling
 - Ceiling Leak After Rain: Roof & Waterproofing Diagnosis — https://www.klservisrumah.my/blog/ceiling-leak-after-rain
 - Ceiling Mold and Water Stains: Causes & Complete Repair — https://www.klservisrumah.my/blog/ceiling-mold-stains
-- Cement Splatter and Dust After Renovation: Cleaning Safely — https://www.klservisrumah.my/blog/cement-splatter-tile-clean
 - Clogged Kitchen or Bathroom Drain: Slow Water and Backflow — https://www.klservisrumah.my/blog/clogged-drain
 - Clogged Gutter Causing Roof Leak or Overflow: What to Do — https://www.klservisrumah.my/blog/clogged-gutter-leaking
 - Concrete Slab Crack Leaking Only During Heavy Rain — https://www.klservisrumah.my/blog/concrete-slab-crack-leak
 - Black Mould on the Ceiling With No Leak: Condensation Explained — https://www.klservisrumah.my/blog/condensation-ceiling-mold
-- Fine Construction Dust Returning After a Post-Reno Clean — https://www.klservisrumah.my/blog/construction-dust-returning
 - Cracked Ceiling Joints: Why Straight-Line Cracks Keep Coming Back — https://www.klservisrumah.my/blog/cracked-ceiling-joints
 - Cracked or Displaced Roof Tiles After a Storm — https://www.klservisrumah.my/blog/cracked-roof-tiles
 - Cracked or Discoloured Tile Grout — https://www.klservisrumah.my/blog/cracked-tile-grout
@@ -747,8 +691,6 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Hollow-Sounding Floor Tiles: What the Sound Actually Means — https://www.klservisrumah.my/blog/loose-hollow-tiles
 - Loose or Sagging Metal Gate Hinges: Repair or Replace? — https://www.klservisrumah.my/blog/loose-metal-gate-hinges
 - Low Water Pressure at Home: Causes and Fixes in KL — https://www.klservisrumah.my/blog/low-water-pressure
-- Mold Returning Quickly After Professional Cleaning — https://www.klservisrumah.my/blog/mold-in-bathroom-after-cleaning
-- Move-Out Condo Deep Cleaning in KL: Handover Checklist — https://www.klservisrumah.my/blog/move-out-condo-deep-clean
 - Old Condo That Needs a Full Refurbishment — https://www.klservisrumah.my/blog/old-condo-full-refurbishment
 - Hairline Cracks on Painted Walls: Settlement or Something Worse? — https://www.klservisrumah.my/blog/paint-cracking-hairline-walls
 - Why Is My Paint Peeling in Malaysia? Causes & Fix — https://www.klservisrumah.my/blog/peeling-paint-malaysia
@@ -762,8 +704,6 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Sliding Window Stuck or Jamming: Causes and Repair — https://www.klservisrumah.my/blog/sliding-window-stuck
 - Smart Lock Not Responding or Battery Draining Fast — https://www.klservisrumah.my/blog/smart-lock-not-working
 - SPC or Vinyl Flooring Lifting at the Edges: Causes and Fixes — https://www.klservisrumah.my/blog/spc-flooring-peeling-edges
-- Stubborn Bathroom Limescale and Water Stains: What Works — https://www.klservisrumah.my/blog/stubborn-bathroom-limescale
-- Grout Still Stained After a Deep Clean: What Next — https://www.klservisrumah.my/blog/stubborn-grout-stains-after-deep-clean
 - Window Lock Jammed or Handle Not Catching: Causes and Repairs — https://www.klservisrumah.my/blog/stuck-window-lock
 - Balcony and Pool Deck Leaks: Why Open Areas Fail First — https://www.klservisrumah.my/blog/swimming-pool-leak-balcony
 - Toilet Not Flushing Properly: Weak Flush or Keeps Running — https://www.klservisrumah.my/blog/toilet-not-flushing
@@ -790,8 +730,6 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Staircase Stringer Fabrication in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/staircase-stringer-fabrication-kl
 - Storage Tank Water Heater Installation in KL & Selangor — https://www.klservisrumah.my/blog/storage-water-heater-installation
 - Built-In Study Desk and Home Office in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/built-in-study-desk-home-office-kl
-- Terrace House Deep Clean in KL & Selangor (2,000 sqft) — https://www.klservisrumah.my/blog/terrace-house-deep-clean-kl
-- Terrace House Post-Renovation Clean in KL (2,000 sqft) — https://www.klservisrumah.my/blog/terrace-house-post-renovation-clean-kl
 - Tile Repair & Re-Grouting in KL & Selangor — https://www.klservisrumah.my/blog/tile-repair-regrouting-kl
 - Professional Tiling & Tile Repair in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/tiling-services-kl
 - Toilet, Tap & Sink Installation in KL & Selangor — https://www.klservisrumah.my/blog/toilet-tap-and-sink-installation
@@ -806,7 +744,6 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Water Heater Repair & Descaling in KL and Selangor — https://www.klservisrumah.my/blog/water-heater-repair-and-descaling
 - Water Leakage Diagnosis & Repair in KL & Selangor — https://www.klservisrumah.my/blog/water-leakage-diagnosis-and-repair
 - Waterproofing & Leak Repair Services in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/waterproofing-services-kl
-- Weekly Condo Cleaning in KL: What RM 180 Covers — https://www.klservisrumah.my/blog/weekly-condo-cleaning-kl
 - Welding & Metal Fabrication Services in KL & Selangor — https://www.klservisrumah.my/blog/welding-metal-fabrication-kl
 - Window Handle and Hinge Repair in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/window-handle-hinge-repair-kl
 - Window Repair & Glass Replacement in KL & Selangor — https://www.klservisrumah.my/blog/window-repair-glass-replacement-kl
@@ -850,8 +787,6 @@ Trilingual, single-page estimators priced from the published rate list.
 - Room Renovation Estimator — EN https://www.klservisrumah.my/tools/room-renovation-estimator · BM https://www.klservisrumah.my/ms/alatan/renovasi-bilik · 中文 https://www.klservisrumah.my/zh/gongju/房间装修估价
 - Kitchen Renovation Estimator — EN https://www.klservisrumah.my/tools/kitchen-renovation-estimator · BM https://www.klservisrumah.my/ms/alatan/renovasi-dapur · 中文 https://www.klservisrumah.my/zh/gongju/厨房装修估价
 - Bathroom Renovation Estimator — EN https://www.klservisrumah.my/tools/bathroom-renovation-estimator · BM https://www.klservisrumah.my/ms/alatan/renovasi-bilik-air · 中文 https://www.klservisrumah.my/zh/gongju/浴室装修估价
-- Deep Cleaning Cost Estimator — EN https://www.klservisrumah.my/tools/deep-cleaning-cost-estimator · BM https://www.klservisrumah.my/ms/alatan/kos-cuci-menyeluruh · 中文 https://www.klservisrumah.my/zh/gongju/深度清洁费用
-- Move-In / Move-Out Cleaning Calculator — EN https://www.klservisrumah.my/tools/move-in-out-cleaning-calculator · BM https://www.klservisrumah.my/ms/alatan/cuci-pindah-masuk-keluar · 中文 https://www.klservisrumah.my/zh/gongju/搬家清洁计算器
 - Aircon Installation Cost Calculator for KL & Selangor — EN https://www.klservisrumah.my/tools/aircon-installation-cost · BM https://www.klservisrumah.my/ms/alatan/kalkulator-kos-pemasangan-aircond · 中文 https://www.klservisrumah.my/zh/gongju/空调安装费用计算器
 - Aircon Gas Top-Up Cost Calculator for KL & Selangor — EN https://www.klservisrumah.my/tools/aircon-gas-topup-cost · BM https://www.klservisrumah.my/ms/alatan/kalkulator-kos-topup-gas-aircond · 中文 https://www.klservisrumah.my/zh/gongju/空调加雪种费用计算器
 - Aircon Size Calculator — What HP Do You Need? — EN https://www.klservisrumah.my/tools/aircon-size-calculator · BM https://www.klservisrumah.my/ms/alatan/kalkulator-saiz-aircond · 中文 https://www.klservisrumah.my/zh/gongju/空调匹数计算器
@@ -893,6 +828,6 @@ KL Servis Rumah publishes fair, upfront pricing benchmarked against the Klang Va
 - Sitemap: https://www.klservisrumah.my/sitemap.xml
 
 ## Scale
-- 31 services · 231 sub-services
-- 37 area pages · 92 problem pages · 229 articles
-- 5,030 indexable pages listed in the sitemap
+- 28 services · 213 sub-services
+- 37 area pages · 86 problem pages · 208 articles
+- 4,589 indexable pages listed in the sitemap

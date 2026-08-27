@@ -494,13 +494,6 @@ export function computePainting(t: Translator, answers: Answers): EstimateResult
       note: t("addons.waterproof.note", { label: priceLabel("waterproofing.wallDamp") }),
       recommended: conditionRow.value === "water-damage" && !extraPrep.includes("waterproofing")
     });
-    addOns.push({
-      id: "post-clean",
-      label: t("addons.postClean.label"),
-      price: RATES.painting.cleaning,
-      note: t("addons.postClean.note", { price: RATES.painting.cleaning }),
-      recommended: area > 900
-    });
 
     const related = [
       { label: t("related.service.label"), href: "/services/painting", desc: t("related.service.desc") },
@@ -637,7 +630,6 @@ export function computePainting(t: Translator, answers: Answers): EstimateResult
   addOns.push({ id: "crack-package", label: t("addons.crackPackage.label"), price: RATES.painting.repairMinimum, note: t("addons.crackPackage.note", { label: priceLabel("painting.repair") }), recommended: ["minor-cracks", "heavy-cracks", "water-damage"].includes(conditionRow.value) });
   addOns.push({ id: "skim-upgrade", label: t("addons.skimUpgrade.label"), price: roundMoney(area * RATES.painting.skimWallSqft), note: t("addons.skimUpgrade.note", { label: priceLabel("skim.wall") }), recommended: conditionRow.value === "uneven" && !extraPrep.includes("skim-coat") });
   addOns.push({ id: "waterproof-addon", label: t("addons.waterproof.label"), price: RATES.painting.dampRemedial, note: t("addons.waterproof.note", { label: priceLabel("waterproofing.wallDamp") }), recommended: conditionRow.value === "water-damage" && !extraPrep.includes("waterproofing") });
-  addOns.push({ id: "post-clean", label: t("addons.postClean.label"), price: RATES.painting.cleaning, note: t("addons.postClean.note", { price: RATES.painting.cleaning }), recommended: area > 900 });
   if (target.band === "exterior" || target.value === "metal-fence" || target.value === "main-gate") {
     addOns.push({ id: "gate-grille", label: t("addons.gateGrille.label"), price: roundMoney(90 * withinBand(RATES.painting.exteriorSqft, 0.8) * 1.3), note: t("addons.gateGrille.note"), recommended: false });
   }

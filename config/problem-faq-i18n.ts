@@ -137,18 +137,6 @@ export const problemFaqI18n: Partial<Record<string, Partial<Record<Exclude<Local
     ms: { title: "Skrin Mandian Bocor ke Lantai", topic: "skrin mandian yang bocor ke lantai" },
     zh: { title: "淋浴隔断漏水到地板", topic: "淋浴隔断漏水问题" }
   },
-  "stubborn-bathroom-limescale": {
-    ms: { title: "Karat Kapur dan Kesan Air Degil di Bilik Air", topic: "karat kapur dan kesan air yang degil di bilik air" },
-    zh: { title: "浴室顽固水垢和水渍", topic: "浴室顽固水垢水渍问题" }
-  },
-  "move-out-condo-deep-clean": {
-    ms: { title: "Pembersihan Mendalam Kondominium Sebelum Berpindah", topic: "pembersihan mendalam kondominium sebelum berpindah" },
-    zh: { title: "公寓退租深度清洁", topic: "退租深度清洁工程" }
-  },
-  "cement-splatter-tile-clean": {
-    ms: { title: "Percikan Simen dan Debu Selepas Pengubahsuaian", topic: "percikan simen dan debu selepas pengubahsuaian" },
-    zh: { title: "装修后的水泥溅渍和粉尘", topic: "装修后水泥渍和粉尘问题" }
-  },
   "cctv-not-recording-storage-full": {
     ms: { title: "CCTV Tidak Merakam atau Paparan Kosong", topic: "CCTV yang tidak merakam atau menunjukkan paparan kosong" },
     zh: { title: "CCTV 无法录像或画面空白", topic: "CCTV 无法录像问题" }

@@ -31,7 +31,7 @@ export const dedicatedToolCardBySlug: Record<string, DedicatedToolCard> = {
     "stats": [
       {
         "label": "Minor repair from",
-        "value": "RM 150"
+        "value": "RM 280"
       },
       {
         "label": "Drain clearing from",
