@@ -3,7 +3,7 @@ import { MetadataRoute } from "next";
 /**
  * Explicit allow-list for every crawler that meaningfully drives traffic
  * or answer-engine surfaces (Google, Bing, Apple + all major LLM crawlers).
- * We keep /api, /_next and /admin blocked because they either serve
+ * We keep /api, /_next and /search blocked because they either serve
  * runtime-only endpoints or expose internal tooling.
  */
 export default function robots(): MetadataRoute.Robots {
@@ -39,7 +39,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: allowedBots.map((userAgent) => ({
       userAgent,
       allow: "/",
-      disallow: ["/api/", "/_next/", "/admin/", "/search"]
+      disallow: ["/api/", "/_next/", "/search"]
     })),
     sitemap: [
       "https://www.klservisrumah.my/sitemap.xml",

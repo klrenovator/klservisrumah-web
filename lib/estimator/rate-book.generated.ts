@@ -1711,7 +1711,7 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
       },
       {
         "name": "Canvas & Fabric Awning",
-        "desc": "Canvas/fabric fixed and retractable-style awnings for balconies, patios, terraces and shopfronts where shade and appearance are the priority."
+        "desc": "Fixed canvas/fabric awnings and retractable systems — manual or motorised — for balconies, patios, terraces and shopfronts where shade and appearance are the priority."
       },
       {
         "name": "Balcony, Patio & Window Awning",
@@ -1720,6 +1720,10 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
       {
         "name": "Awning Replacement & Repair",
         "desc": "Replacing old, leaking, rusted or sagging awnings — inspection of the existing frame, roofing, joints and drainage, with repair or full replacement options."
+      },
+      {
+        "name": "Outdoor Roller Blinds",
+        "desc": "Outdoor and zip roller blinds for balconies, patios, windows and shopfronts — manual or motorised shade, privacy and rain screening that rolls away when not needed."
       }
     ]
   }

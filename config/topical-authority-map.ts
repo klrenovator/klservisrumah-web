@@ -617,6 +617,7 @@ export const topicalAuthorityMap: Record<string, TopicalSilo> = {
       { specialtySlug: "canvas-and-fabric-awning", relatedProblems: ["roof-leak-rainy-season"], relatedBlogs: ["retractable-vs-fixed-awning-malaysia", "how-to-choose-right-awning-malaysia"] },
       { specialtySlug: "balcony-patio-and-window-awning", relatedProblems: ["balcony-leak-condo", "ceiling-leak-after-rain"], relatedBlogs: ["balcony-patio-awning-guide-malaysia", "retractable-vs-fixed-awning-malaysia", "how-to-choose-right-awning-malaysia", "how-to-fix-a-leaking-roof-in-kl"] },
       { specialtySlug: "awning-replacement-and-repair", relatedProblems: ["clogged-gutter-leaking", "roof-leak-rainy-season", "rusting-window-grille"], relatedBlogs: ["replacing-old-leaking-awning-malaysia", "awning-maintenance-leaks-rust-water-pooling", "how-awning-pricing-works-malaysia", "how-to-fix-a-leaking-roof-in-kl", "roof-leak-diagnosis-repair-kl"] },
+      { specialtySlug: "outdoor-roller-blinds", relatedProblems: ["balcony-leak-condo"], relatedBlogs: ["retractable-vs-fixed-awning-malaysia", "balcony-patio-awning-guide-malaysia", "how-to-choose-right-awning-malaysia"] },
     ],
   },
   welding: {

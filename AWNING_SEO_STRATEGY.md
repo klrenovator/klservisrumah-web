@@ -339,30 +339,32 @@ content (mahligaiidaman, lemon8 contractor posts).
       FAQPage(15)/HowTo(6)/Service schema verified; sitemap & services index
       include the page
 - [x] Supporting blog cluster — **8 of 8 published (posts 1–8; §J) — cluster complete 2026-08-27**
+- [x] Owner round-1 confirmations implemented (2026-08-27): 12-month workmanship
+      warranty, Klang Valley coverage, free site visits, firm manual+motorised
+      retractable, 9th sub-service "Outdoor Roller Blinds" (EN/MS/ZH), permits
+      content removed, published KL/Selangor market-rate reference table,
+      no certification claims added — see AWNING_INSTALLATION_PROJECT.md §10
 - [ ] Real project photography — pending business supply, section L
-- [ ] Optional WhatsApp pre-filled quote-request message template
 
-## R. Business Confirmation Required
+## R. Business Confirmation Required — RESOLVED 2026-08-27 (round 1)
 
-1. **Material scope** — confirm polycarbonate, metal deck, ACP, tempered glass,
-   canvas/fabric and awning replacement are all actually supplied/installed;
-   retractable/manual/motorised systems are currently phrased conditionally
-   ("depending on scope and supplier").
-2. **Pricing** — page is fully project-quoted; supply any real per-sqft/job
-   starting prices if they should be published (the estimator system can then
-   be activated for this service).
-3. **Warranty terms** — page states "workmanship warranty as stated in your
-   quotation" (the welding line carries a 12-month welding/fabrication warranty).
-   Confirm exact awning warranty wording/period.
-4. **Outdoor roller blinds** — not verified; omitted from services.
-5. **Site-assessment / quote policy** — confirm the "photos & dimensions may
-   suffice; site visit when required" workflow and whether quotations/site
-   visits carry any fee.
-6. **Permits** — page advises customers to verify DBKL/council and JMB/MC
-   requirements; confirm whether the business assists with permit applications.
-7. **Certifications** — only verified welding claims (MIG/TIG/arc welders,
-   anti-rust/powder-coat finishes, galvanising option) are implied; confirm
-   before adding any CIDB/SIRIM/engineering sign-off claim for awning work.
-8. **Photography** — supply real completed awning project photos (section L).
-9. **Coverage** — service inherits the site's KL & Selangor service-area
-   statements; confirm awning dispatch availability across all listed areas.
+1. **Material scope** — ✅ keep the full market-standard set (polycarbonate,
+   metal deck, ACP, tempered glass, canvas/fabric + replacement); owner asked
+   for Malaysia-market alignment.
+2. **Pricing** — ✅ published KL/Selangor market-rate reference table added
+   (RM ranges per system, EN/MS/ZH, explicitly labelled market references —
+   not our quotation); our pricing remains project-quoted.
+3. **Warranty terms** — ✅ 12-month workmanship warranty stated on
+   fabrication & installation; material/fabric warranty follows
+   manufacturer/supplier terms.
+4. **Outdoor roller blinds** — ✅ offered; added as the 9th sub-service
+   (EN/MS/ZH) with taxonomy and topical-map node.
+5. **Site-assessment / quote policy** — ✅ site visits and quotations are
+   free; photos/dimensions may still suffice for remote quotes.
+6. **Permits** — ✅ owner chose to show no permits content: permit/council/
+   local-authority references removed from all awning surfaces; only neutral
+   "check your management (JMB/MC) rules" remains.
+7. **Certifications** — ✅ owner chose to show none; nothing added.
+8. **Photography** — ⏳ owner will supply later (placeholder SVG remains).
+9. **Coverage** — ✅ Klang Valley (Kuala Lumpur & Selangor) wording adopted
+   on the awning hubs/AIO summaries.

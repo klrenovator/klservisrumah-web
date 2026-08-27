@@ -2668,7 +2668,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
     "title": "Awning Installation Services",
     "startPrice": "On Quote",
     "icon": "awning-canopy",
-    "tagline": "Custom awnings and awning roofing for car porches, entrances, windows, balconies and yards across KL & Selangor — polycarbonate, metal deck, aluminium composite (ACP), glass and fabric systems, fabricated and installed to suit your site. Project-quoted.",
+    "tagline": "Custom awnings and awning roofing for car porches, entrances, windows, balconies and yards across the Klang Valley (KL & Selangor) — polycarbonate, metal deck, aluminium composite (ACP), glass and fabric systems, plus retractable awnings and outdoor roller blinds, fabricated and installed to suit your site. Project-quoted with a 12-month workmanship warranty.",
     "subServices": [
       {
         "name": "Car Porch Awning Installation"
@@ -2693,13 +2693,16 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
       },
       {
         "name": "Awning Replacement & Repair"
+      },
+      {
+        "name": "Outdoor Roller Blinds"
       }
     ],
-    "warranty": "Workmanship warranty as stated in your quotation",
+    "warranty": "12-month workmanship warranty on fabrication & installation, as stated in your quotation",
     "i18n": {
       "ms": {
         "title": "Perkhidmatan Pemasangan Awning",
-        "tagline": "Awning tersuai dan bumbung awning untuk car porch, pintu masuk, tingkap, balkoni dan halaman rumah di seluruh KL & Selangor — sistem polikarbonat, metal deck, panel komposit aluminium (ACP), kaca dan fabrik, difabrikasi dan dipasang mengikut tapak anda. Harga atas sebut harga projek.",
+        "tagline": "Awning tersuai dan bumbung awning untuk car porch, pintu masuk, tingkap, balkoni dan halaman rumah di seluruh Lembah Klang (KL & Selangor) — sistem polikarbonat, metal deck, panel komposit aluminium (ACP), kaca dan fabrik, serta awning boleh-tarik dan bidai luar (roller blind), difabrikasi dan dipasang mengikut tapak anda. Harga atas sebut harga projek dengan waranti mutu kerja 12 bulan.",
         "subServices": [
           {
             "name": "Pemasangan Awning Car Porch"
@@ -2724,13 +2727,16 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
           },
           {
             "name": "Penggantian & Pembaikan Awning"
+          },
+          {
+            "name": "Bidai Luar (Roller Blind)"
           }
         ],
-        "warranty": "Waranti mutu kerja seperti yang dinyatakan dalam sebut harga anda"
+        "warranty": "Waranti mutu kerja 12 bulan untuk fabrikasi & pemasangan, seperti yang dinyatakan dalam sebut harga anda"
       },
       "zh": {
         "title": "雨棚安装服务",
-        "tagline": "为吉隆坡与雪兰莪的车棚、入口、窗户、阳台及庭院定制雨棚与雨棚屋顶——聚碳酸酯、金属瓦、铝塑板（ACP）、玻璃与布艺系统，按现场尺寸制作安装。价格按项目报价。",
+        "tagline": "为巴生谷（吉隆坡与雪兰莪）的车棚、入口、窗户、阳台及庭院定制雨棚与雨棚屋顶——聚碳酸酯、金属瓦、铝塑板（ACP）、玻璃与布艺系统，另有伸缩雨棚与户外卷帘，按现场尺寸制作安装。按项目报价，含12个月工艺保修。",
         "subServices": [
           {
             "name": "车棚雨棚安装"
@@ -2755,9 +2761,12 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
           },
           {
             "name": "雨棚更换与维修"
+          },
+          {
+            "name": "户外卷帘"
           }
         ],
-        "warranty": "按报价单载明的工艺保修"
+        "warranty": "12 个月制作与安装工艺保修，以报价单为准"
       }
     }
   }

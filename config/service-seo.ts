@@ -302,17 +302,17 @@ export const serviceSeo: Record<string, LocalizedServiceSeo> = {
     en: {
       title: "Awning Installation KL & Selangor | Car Porch & Polycarbonate",
       description:
-        "Custom awning installation across KL & Selangor: car porch, balcony, entrance and shopfront awnings in polycarbonate, metal deck, ACP, glass or fabric, plus awning replacement. Request a project quote on WhatsApp."
+        "Custom awning installation across KL & Selangor: car porch, balcony, entrance and shopfront awnings in polycarbonate, metal deck, ACP, glass or fabric, plus awning replacement and roller blinds. Free quote on WhatsApp."
     },
     ms: {
       title: "Pemasangan Awning KL & Selangor | Car Porch & Polikarbonat",
       description:
-        "Pemasangan awning tersuai di KL & Selangor: awning car porch, balkoni, pintu masuk dan kedai dalam polikarbonat, metal deck, ACP, kaca atau fabrik, serta penggantian awning. Minta sebut harga projek di WhatsApp."
+        "Pemasangan awning tersuai di KL & Selangor: awning car porch, balkoni, pintu masuk dan kedai dalam polikarbonat, metal deck, ACP, kaca atau fabrik, serta penggantian awning dan bidai luar. Sebut harga percuma di WhatsApp."
     },
     zh: {
       title: "吉隆坡与雪兰莪雨棚安装 | 车棚与聚碳酸酯雨棚",
       description:
-        "吉隆坡与雪兰莪定制雨棚安装：车棚、阳台、入口及店面雨棚，可选聚碳酸酯、金属瓦、ACP、玻璃或布艺，并提供雨棚更换。通过 WhatsApp 获取项目报价。"
+        "吉隆坡与雪兰莪定制雨棚安装：车棚、阳台、入口及店面雨棚，可选聚碳酸酯、金属瓦、ACP、玻璃或布艺，并提供雨棚更换与户外卷帘。WhatsApp 免费获取报价。"
     }
   }
 };
