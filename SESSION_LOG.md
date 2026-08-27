@@ -2273,3 +2273,65 @@ Continued exactly from the final `Next Session — START HERE` section of `AI_OP
 - Owner/deployment-side: native Malay + Simplified Chinese final skim, exhaustive live URL crawl, deployment, then GSC/Bing re-measurement of the 301s and new locale problem URLs.
 - Owner-only: production `NEXT_PUBLIC_GA_ID`, `ADMIN_PASSWORD`, GBP/IndexNow/Bing pings.
 - Never create standalone Air Conditioning content; do not re-open closed link-equity work without fresh crawl evidence.
+
+# Session 2026-08-27 (part 2) — Awning Installation: §9 testing closeout + blog cluster post 1
+
+Continued the Awning Installation project exactly from `AWNING_INSTALLATION_PROJECT.md` (the pillar page itself shipped earlier on 2026-08-27 as PR #164 — that session tracked its work in `AWNING_INSTALLATION_PROJECT.md` / `AWNING_SEO_STRATEGY.md` rather than this log). This session closed the tracker's two remaining in-repo items: the §9 testing tasks and the first post of the §8 supporting blog cluster. No standalone Air Conditioning content was created, and no awning facts were invented (project-quoted pricing throughout).
+
+## What was done
+
+1. **§9 testing closeout on a production build.** Baseline gates first (type-check, `validate:blogs` 208 topics, topical map 29/29 — all green on the committed state). Then authored and shipped the blog post below, ran the full prebuild chain + `next build` (5,799 static pages; 320,331 estimator assertions, 0 failures) and validated on `next start`:
+   - **Manual smoke:** all 27 awning routes HTTP 200 (EN/MS/ZH hubs + 8 sub-services × 3 locales) + the 3 new blog routes; `/estimate/awning-installation` 404s by design (quote-only). Single H1 per page, `<html lang>` en-MY/ms-MY/zh-MY, comparison table + Project-Quoted badge + WhatsApp CTAs render, no English FAQ leakage on MS/ZH hubs.
+   - **Schema validation (Rich Results-style, on served HTML):** Service (name/provider/areaServed; offers present with NO numeric price and `priceSpecification` "Project-specific quotation on request"; no fabricated aggregateRating), FAQPage exactly 15 valid Question/acceptedAnswer entries per hub locale, HowTo exactly 6 steps, BreadcrumbList, speakable, full en-MY/ms-MY/zh-MY/x-default hreflang clusters. Sub-service spot-checks ×3 locales pass (EN 6 quote-safe FAQs vs MS/ZH 4 native FAQs — established per-page-parity pattern). Recorded in `docs/schema-validation-log.md`.
+   - **Sitemap verification:** sitemap.xml (4,715 URLs) includes all awning hubs/sub-service twins (63 awning URLs incl. cost/emergency/near-me) and the 3 new blog URLs, each with full hreflang alternates.
+2. **Supporting blog cluster post 1/8 — "Polycarbonate vs Metal vs ACP Awnings in Malaysia."** Full native trilingual article (EN + Malaysian Malay + Simplified Chinese), category "Awning", cover `/hero-awning.svg`, date 2026-08-27. Content compares the three most common rigid awning materials on light/heat/rain-noise/maintenance/cost-factors using only verified service-guide facts (no fabricated prices, lifespans, UV figures or wind ratings). Links: pillar + polycarbonate/metal-deck/ACP/car-porch sub-services + welding silo (EN/MS/ZH locale-correct). Wired into: `config/blog-data-awning.ts` (new EN store), `config/blog-i18n.ts` (native MS/ZH), `blog-data.ts` aggregation, topical-map BLOG pool for awning-installation + 4 specialty relatedBlogs, `validate-blog-production.ts` expected count 208 → 209. Regenerated: blog slug/related indexes, AI-context files (llms-full.txt lists the post; awning service stays "Project-quoted").
+
+## New issues found
+- **Site-wide (pre-existing, not awning-specific):** MS/ZH blog article routes (all 209 topics × 2 locales) emit no BlogPosting/Article schema — only EN blog pages do. Deliberately left unchanged in this session (sweeping schema change outside the awning scope); recorded here and in the awning tracker as a candidate for a dedicated session.
+- `npm run audit:meta` OOM-crashes under default heap on this sandbox; serial rerun with `NODE_OPTIONS=--max-old-space-size=6144` passes (same environment note as the 2026-08-12 part-6 session).
+
+## Result
+- Blog registry: 208 → **209 topics / 627 localized articles**; 705 distinct internal article-link targets, 0 broken.
+- All gates PASS: lint, type-check, `validate:blogs`, topical map (29/29), specialty locale (221 × ms/zh = 442), specialty coverage, service i18n, i18n parity (1,108 keys × 3), problem i18n (74 keep-URLs × ms/zh), client-bundle guard, estimators (320,331 assertions).
+- Full audits PASS: HTML quality (0 fatal/0 warnings), seo:audit, audit:meta (0 missing/0 duplicates/0 NAP gaps), seo-inventory (5,791 pages, 0 unintended metadata changes), seo-head (4,715 self-canonical indexable, 0 duplicates, 0 warnings), internal links (434,467 rendered links, 0 broken targets).
+
+## Files changed
+- Added: `config/blog-data-awning.ts`
+- Modified: `config/blog-i18n.ts` (+1 native MS/ZH article pair), `config/blog-data.ts` (aggregate awning posts), `config/topical-authority-map.ts` (awning BLOG pool + 4 specialty relatedBlogs), `scripts/validate-blog-production.ts` (208 → 209), `docs/schema-validation-log.md` (2026-08-27 validation round), `AWNING_INSTALLATION_PROJECT.md` (§5/§8/§9 + STATUS), `AWNING_SEO_STRATEGY.md` (§J/§Q)
+- Regenerated by build: `config/blog-slugs.generated.json`, `config/blog-related.generated.json`, `public/llms.txt`, `public/llms-full.txt`, `public/site-summary.json`, `docs/seo-audit-report.md`, `docs/seo-metadata-inventory.csv`, `docs/seo-metadata-summary.json`
+
+## Next session
+- Awning blog cluster posts 2–8 (§8 of the awning tracker) — same recipe as post 1. Highest-value next: post 4 "How Awning Pricing Works in Malaysia" (trust differentiator) and post 3 "Car Porch Awning Guide" (top transactional intent).
+- Business confirmations in the awning tracker (material scope, warranty, photography, etc.) remain owner-side.
+- Candidate dedicated session: BlogPosting/Article schema for MS/ZH blog routes (site-wide).
+- Never create standalone Air Conditioning content.
+
+# Session 2026-08-27 (part 3) — Awning blog cluster posts 3 & 4 (car porch guide + pricing factors)
+
+Continued exactly from the awning tracker's PENDING list and this log's previous "next session" recommendation: supporting-cluster posts 2–8, starting with the two highest-value intents — post 3 (car porch, top transactional intent) and post 4 (pricing, the trust differentiator). No standalone Air Conditioning content was created; all awning commercial terms remain project-quoted (no fabricated prices, warranties, UV figures or wind ratings).
+
+## What was done
+1. **Post 3/8 — "Car Porch Awning Guide: Materials, Drainage & Cost Factors."** Full native trilingual article (EN + Malaysian Malay + Simplified Chinese), category "Awning", cover `/hero-awning.svg`. Sections: quick answer, material choices for a car porch (tinted polycarbonate / insulated metal deck / ACP), heat, vehicle clearance & span, drainage (slope/gutters/downpipes), fixing points & structure, landed-vs-strata rules, quote checklist, 3 FAQs. Internal links: car-porch sub-service, pillar, 3 material sub-services, post 1, replacement sub-service, the `clogged-gutter-leaking` problem node (EN/MS/ZH — verified live keep-URL) and the welding silo.
+2. **Post 4/8 — "How Awning Pricing Works in Malaysia."** Full native trilingual article. Sections: quick answer, the 8 verified cost factors (area, material/profile, frame gauge & finish, height/access, structure/reinforcement, drainage, removal, custom/strata specs), why-no-fixed-price-list honesty positioning (echoes the service page's verified FAQ), quote-input checklist, 3 FAQs. Links: pillar + 3 material sub-services + replacement sub-service + `/pricing` (EN; MS/ZH versions link their services directories because no localized `/ms/pricing` or `/zh/pricing` route exists).
+3. **Wiring:** both posts appended to `config/blog-data-awning.ts` (EN) and `config/blog-i18n.ts` (native MS/ZH); topical map BLOG pool for awning-installation now 6 posts; specialty `relatedBlogs` extended on car-porch (post 3), polycarbonate and awning-replacement (post 4); `validate-blog-production.ts` expected count 209 → 211; blog slug/related indexes regenerated (28 client-related cards).
+4. **Architecture note (verified, unchanged):** EN service hubs render the service-level BLOG pool (the awning hub now lists all three cluster posts); MS/ZH *specialty* pages render the per-specialty `relatedBlogs` (all link their localized twins); MS/ZH service hubs render no related-blogs section at all — pre-existing site-wide behaviour (spot-checked against roof-repair), not an awning regression.
+
+## Result
+- Blog registry: 209 → **211 topics / 633 localized articles**; 714 distinct internal article-link targets, 0 broken.
+- Build: **5,805 static pages** (+6 routes); sitemap 4,721 URLs including all 6 new blog URLs (EN/MS/ZH) with hreflang alternates.
+
+## Verification
+- PASS: lint (0/0), type-check, `validate:blogs` (211 topics), topical map (29/29), specialty locale (442 blocks) + coverage, service-i18n, i18n parity (1,108 × 3), problem-i18n, client-bundle guard, estimator suite (320,331 assertions, 0 failures), `npm run build`.
+- PASS: audit:html (0 fatal/0 warnings), seo:audit, audit:meta (0 missing/0 duplicate), seo-inventory (5,797 pages, 0 unintended metadata changes), seo-head (4,721 self-canonical indexable, 0 duplicates/warnings), audit:links (0 broken targets).
+- Production smoke (`next start`): all 6 new routes HTTP 200 with self-canonical, full en-MY/ms-MY/zh-MY/x-default hreflang clusters, single H1, correct locale titles and 5–8 awning-silo internal links each; MS/ZH specialty pages (car-porch, polycarbonate, replacement × ms/zh) link their localized twins; EN hub links all three cluster posts.
+- Metadata conventions met (EN 40–62/120–172; ZH 12–34/45–90; MS aligned with EN limits).
+
+## Files changed
+- Modified: `config/blog-data-awning.ts` (+2 EN posts), `config/blog-i18n.ts` (+2 native MS/ZH article pairs), `config/topical-authority-map.ts` (BLOG pool + 3 specialty relatedBlogs), `scripts/validate-blog-production.ts` (209 → 211), `AWNING_INSTALLATION_PROJECT.md` (§5/§8/STATUS), `AWNING_SEO_STRATEGY.md` (§J/§Q), `SESSION_LOG.md`
+- Regenerated by build: `config/blog-slugs.generated.json`, `config/blog-related.generated.json`, `public/llms-full.txt`, `public/site-summary.json`, `docs/seo-audit-report.md` (+ gitignored inventory artifacts)
+
+## Next session
+- Awning blog cluster posts 2, 5–8. Note: post 2 ("Best Awning Types for Malaysian Homes") overlaps post 1's material comparison — consider re-angling it as a per-application decision guide before writing. Posts 5 (maintenance) and 8 (replacement) pair naturally with the replacement sub-service.
+- Business confirmations 1–9 in the awning tracker remain owner-side; real project photography still pending.
+- Candidate dedicated session (site-wide, not awning): BlogPosting/Article schema for MS/ZH blog routes.
+- Never create standalone Air Conditioning content.

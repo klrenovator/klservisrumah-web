@@ -553,7 +553,7 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Uneven Concrete Subfloor Before Flooring Installation — https://www.klservisrumah.my/problems/uneven-floor-subfloor-leveling
 - Masonry Wall Settlement Cracks & Extension Separation — https://www.klservisrumah.my/problems/wall-cracks-settlement-masonry
 
-## Guides & Articles (208)
+## Guides & Articles (211)
 - 5 Tips For Choosing Modern Home Paint Colors in Malaysia — https://www.klservisrumah.my/blog/5-tips-choosing-paint-colors-malaysia
 - How To Fix A Leaking Bathroom Ceiling Without Hacking Tiles — https://www.klservisrumah.my/blog/how-to-fix-leaking-ceiling-without-tile-hacking
 - When to Repaint Your House in Malaysia (Signs, Frequency & Budget) — https://www.klservisrumah.my/blog/when-to-repaint-your-house-malaysia
@@ -592,6 +592,9 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Roof Repair & Waterproofing in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/roof-repair-waterproofing-kl
 - Roof Leak Diagnosis & Repair in KL & Selangor — https://www.klservisrumah.my/blog/roof-leak-diagnosis-repair-kl
 - When Does a Roof Ridge Need Re-Bedding or Re-Pointing? — https://www.klservisrumah.my/blog/ridge-re-bedding-re-pointing-kl
+- Polycarbonate vs Metal vs ACP Awnings in Malaysia — https://www.klservisrumah.my/blog/polycarbonate-vs-metal-vs-acp-awning-malaysia
+- Car Porch Awning Guide: Materials, Drainage & Cost Factors — https://www.klservisrumah.my/blog/car-porch-awning-guide-malaysia
+- How Awning Pricing Works in Malaysia — https://www.klservisrumah.my/blog/how-awning-pricing-works-malaysia
 - Aircond, Water Heater & Oven Points in KL and Selangor — https://www.klservisrumah.my/blog/aircond-water-heater-and-oven-point
 - Aluminium Sliding Window Installation in KL & Selangor — https://www.klservisrumah.my/blog/aluminium-sliding-window-kl
 - Autogate Motor Replacement & Service in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/autogate-motor-replacement-service-kl
@@ -843,5 +846,5 @@ KL Servis Rumah publishes fair, upfront pricing benchmarked against the Klang Va
 
 ## Scale
 - 29 services · 221 sub-services
-- 37 area pages · 86 problem pages · 208 articles
-- 4,712 indexable pages listed in the sitemap
+- 37 area pages · 86 problem pages · 211 articles
+- 4,721 indexable pages listed in the sitemap
