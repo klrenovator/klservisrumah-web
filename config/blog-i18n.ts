@@ -3349,6 +3349,239 @@ Servis berkala memastikan unit cekap, mencegah kerosakan dan memanjangkan jangka
 
 定期保养能保持机器高效、预防故障并延长寿命。在[空调服务页面](/zh/services/aircon)预约下一次保养。`
     }
+  },
+  /* ──────────────────────────────────────────────────────────────────────
+   * Awning Installation supporting cluster (strategy §J) — post 1.
+   * ────────────────────────────────────────────────────────────────────── */
+  "polycarbonate-vs-metal-vs-acp-awning-malaysia": {
+    ms: {
+      slug: "perbandingan-awning-polikarbonat-metal-deck-acp",
+      title: "Perbandingan Awning Polikarbonat, Metal Deck & ACP di Malaysia", category: "Awning",
+      excerpt: "Bandingkan tiga bahan awning paling biasa untuk rumah di Malaysia — polikarbonat, metal deck dan ACP — dari segi cahaya, haba, bunyi hujan, penyelenggaraan dan faktor kos sebelum meminta sebut harga.",
+      metaTitle: "Perbandingan Awning Polikarbonat, Metal Deck & ACP",
+      metaDesc: "Bandingkan awning polikarbonat, metal deck dan ACP untuk rumah di Malaysia — cahaya, haba, bunyi hujan, penyelenggaraan dan faktor kos, serta cara memilih bahan sesuai.",
+      content: `Jika anda merancang awning untuk car porch, ruang jemuran atau bahagian hadapan rumah di Kuala Lumpur atau Selangor, pilihan bahan biasanya tert kepada tiga: polikarbonat, metal deck atau panel komposit aluminium (ACP). Ketiga-tiganya banyak dipasang di rumah Malaysia, tetapi kelakuannya berbeza di bawah matahari tropika, hujan lebat dan kelembapan.
+
+Panduan ini membandingkan ketiga-tiganya secara jujur — cahaya, haba, bunyi hujan, penyelenggaraan dan faktor kos — supaya anda boleh menyenarai pendek bahan yang sesuai sebelum meminta sebut harga. KL Servis Rumah memasang [awning tersuai](/ms/services/awning-installation) di seluruh KL & Selangor dalam ketiga-tiga bahan ini, dan setiap projek diukur serta disebut harga secara individu.
+
+## Jawapan ringkas
+
+- **Polikarbonat** — lembaran lut sinar yang membenarkan cahaya semula jadi masuk. Pilihan biasa apabila anda mahu teduhan dan lindungan hujan tanpa menggelapkan kawasan: car porch, ruang jemuran dan laluan.
+- **Metal deck** — lembaran keluli berprofil yang kuat dan menjimatkan, dengan profil berinsulasi untuk mengurangkan haba dan bunyi hujan. Pilihan praktikal untuk kawasan utiliti dan porch yang boleh terlindung sepenuhnya.
+- **ACP** — panel tegar berpermukaan aluminium yang kemas, moden dan legap, dengan penyelenggaraan paling rendah antara ketiga-tiganya. Popular untuk car porch dan hadapan rumah yang mengutamakan penampilan.
+
+## Apa itu setiap bahan
+
+### Polikarbonat
+
+Polikarbonat ialah bumbung lembaran plastik lut sinar yang tersedia dalam profil jernih, tinted atau gangsa, termasuk pilihan twin-wall dan multi-wall. Ia ringan dan membenarkan cahaya masuk, sebab itulah ia antara bahan awning car porch paling biasa di Malaysia: kawasan bawahnya kekal cerah sementara hujan dan matahari terus ditahan daripada kenderaan. Profil tinted dan gangsa mengurangkan silau dan penyerapan haba; lembaran jernih paling cerah. Lihat halaman [awning polikarbonat](/ms/services/awning-installation/polycarbonate-awning) kami untuk butiran.
+
+### Metal deck
+
+Metal deck ialah bumbung lembaran logam berprofil, biasanya keluli. Ia kuat dan menjimatkan, sesuai untuk kawasan utiliti, ruang jemuran, porch dan bengkel. Profil berinsulasi dengan lapisan buih tersedia untuk mengurangkan haba dan bunyi hujan. Oleh sebab ia keluli, tepi lembaran, pengikat dan rangka perlu disapu primer anti-karat serta kemasan yang betul untuk bertahan dalam kelembapan kita. Butiran ada di halaman [awning metal deck](/ms/services/awning-installation/metal-deck-awning).
+
+### Panel komposit aluminium (ACP)
+
+Awning ACP menggunakan panel tegar berpermukaan aluminium yang memberikan kemasan legap, moden dan bersih. Panel ini menyekat silau dan haba dengan baik, lebih senyap semasa hujan berbanding lembaran logam nipis, dan tidak berkarat — jadi penyelenggaraannya sangat rendah. ACP popular untuk porch dan hadapan rumah yang mahu kelihatan kemas; panelnya tegar tetapi tetap memerlukan sokongan yang betul agar tidak melentuk pada bentang yang lebar. Lihat halaman [awning ACP](/ms/services/awning-installation/aluminium-composite-acp-awning).
+
+## Perbandingan sebaris
+
+| Aspek | Polikarbonat | Metal deck | ACP |
+|---|---|---|---|
+| Cahaya | Lut sinar — kawasan kekal cerah | Legap — kawasan terlindung sepenuhnya | Legap — kawasan terlindung sepenuhnya |
+| Haba | Profil tinted mengurangkan haba; jernih membenarkan lebih banyak | Lembaran biasa menyerap haba; profil berinsulasi mengurangkannya | Sekat silau dan haba dengan baik |
+| Bunyi hujan | Sederhana | Lembaran biasa boleh bising; profil berinsulasi lebih senyap | Lebih senyap daripada lembaran nipis |
+| Penyelenggaraan | Rendah — basuh berkala, pastikan lembaran dan longkang bebas serpihan | Sederhana — periksa dan rawat titik karat pada bahagian keluli | Sangat rendah — basuh sesekali; panel tidak berkarat |
+| Kegunaan biasa | Car porch, ruang jemuran, laluan, balkoni | Kawasan utiliti, ruang jemuran, porch, bengkel | Car porch, hadapan rumah, patio, halaman |
+
+Panduan umum untuk keadaan KL & Selangor — prestasi sebenar bergantung pada gred produk, kualiti pemasangan dan penyelenggaraan.
+
+## Haba dan cahaya: apa bezanya
+
+Perbezaan praktikal terbesar antara ketiga-tiga bahan ialah apa yang berlaku di bawah lembaran itu.
+
+**Polikarbonat** lut sinar. Profil jernih mengekalkan porch atau ruang jemuran hampir secerah udara terbuka — sebab itulah ramai pemilik rumah menyukainya di atas pintu masuk dan tingkap. Pertukarannya, lembaran jernih juga membenarkan lebih banyak haba dan cahaya masuk; jika haba menjadi kebimbangan utama, profil tinted atau gangsa lebih sesuai — ia mengurangkan silau dan penyerapan haba sambil masih membenarkan sedikit cahaya.
+
+**Metal deck dan ACP legap.** Di bawah lembaran metal deck biasa, kawasan terlindung sepenuhnya dan lebih gelap, dan lembaran biasa memindahkan haba ke bawah — perlu dipertimbangkan untuk car porch atau ruang jemuran yang anda berdiri di dalamnya. Profil metal deck berinsulasi menambah lapisan buih yang mengurangkan kedua-dua haba dan hentakan bunyi hujan lebat. Panel ACP menyekat silau dan haba dengan baik serta memberikan rupa yang kemas dari bawah mahupun dari jalan.
+
+Tiada bahan "paling sejuk" yang mutlak — arah rumah, pengudaraan, bentang dan profil lembaran semuanya mempengaruhi — tetapi secara amnya: teduhan penuh dan sekatan haba menunjuk kepada ACP atau metal deck berinsulasi, manakala kecerahan menunjuk kepada polikarbonat.
+
+## Bunyi hujan
+
+Bunyi hujan menentukan seberapa selesa porch atau ruang berbumbung semasa lebat di Klang Valley. Lembaran logam nipis biasa paling bising — hujan lebat menghentak bumbung satu lapisan dengan kuat sehingga mengganggu perbualan. Profil metal deck berinsulasi mengurangkannya dengan banyak. ACP lebih senyap berbanding lembaran nipis. Polikarbonat berada di antaranya; profil twin-wall juga membantu meredam bunyi.
+
+Jika awning berada di atas kawasan duduk dan bukannya tempat letak kereta, ambil kira bunyi dalam pilihan bahan, bukan harga sahaja.
+
+## Penyelenggaraan dalam cuaca Malaysia
+
+Ketiga-tiga bahan penyelenggaraannya rendah, tetapi bukan bebas penyelenggaraan:
+
+- **Polikarbonat** — basuh secara berkala dan pastikan daun dan serpihan tidak bertakung di atas lembaran dan longkang; elak menggosok kasar yang boleh mencalar permukaan.
+- **Metal deck** — lembarannya tahan lasak, tetapi bahagian keluli (tepi, skru, flashing dan rangka) perlu diperiksa untuk titik karat dan dirawat awal. Ini juga sebab rangka kami difabrikasi dengan primer anti-karat dan kemasan tahan cuaca atau serbuk — lihat perkhidmatan [kimpalan dan fabrikasi logam](/ms/services/welding) kami.
+- **ACP** — basuh sesekali sahaja yang diperlukan panel; ia tidak berkarat.
+
+Dalam semua kes, bahagian yang biasanya rosak dahulu bukan lembaran bumbung tetapi sendi, pengedap, pengikat dan saliran — jadi membersihkan longkang dan memastikan air masih mengalir bebas lebih penting daripada pilihan antara ketiga-tiga bahan ini.
+
+## Bahan awning mana yang patut dipilih?
+
+Gunakan senarai semak ini untuk menyenarai pendek sebelum meminta sebut harga:
+
+- **Mahu kawasan cerah** (pintu masuk, tingkap, laluan) → polikarbonat, jernih atau tinted.
+- **Mahu sekatan haba dan silau maksimum** (porch menghadap barat, panas petang) → ACP atau metal deck berinsulasi.
+- **Menutup kawasan utiliti atau jemuran yang kurang mementingkan penampilan** → metal deck.
+- **Mahu rupa moden paling kemas di hadapan rumah** → ACP.
+- **Kawasan sensitif bunyi** (ruang duduk, sebelah tingkap bilik tidur) → ACP atau metal deck berinsulasi berbanding lembaran biasa.
+- **Rangka perlu menampung bentang lebar** → bincang saiz profil dan sokongan dengan kami; rangka, bukan lembaran, biasanya menentukan had struktur.
+
+Khusus untuk car porch, polikarbonat tinted, ACP dan metal deck berinsulasi ialah tiga pilihan paling biasa kerana ia mengurangkan pengumpulan haba di atas kenderaan — halaman [awning car porch](/ms/services/awning-installation/car-porch-awning-installation) kami merangkumi butiran saliran dan ketinggian.
+
+## Apa yang menjejaskan harga awning
+
+Kerja awning di Malaysia disebut harga mengikut projek, bukan kadar tetap per kaki persegi, kerana setiap tapak berbeza. Faktor kos utama:
+
+- Lebar, unjuran dan jumlah kawasan yang dilindungi
+- Bahan bumbung dan profil lembaran atau panel (tint, twin-wall, berinsulasi)
+- Bahan dan saiz profil rangka (keluli lembut, aluminium atau stanles) serta kemasannya
+- Ketinggian, akses dan kerumitan pemasangan
+- Struktur sedia ada dan keperluan pengukuhan
+- Keperluan saliran — longkang, paip turun, flashing dan pengedap
+- Pembongkaran dan pelupusan awning lama, jika perlu
+- Warna, reka bentuk tersuai dan sebarang spesifikasi strata atau pihak berkuasa tempatan
+
+Maklumat paling berguna untuk sebut harga ialah lokasi anda, foto tapak dan titik pengancing, lebar dan unjuran anggaran, bahan atau rupa yang anda mahu, sama ada awning lama perlu dibongkar, dan sebarang peraturan pengurusan atau pihak berkuasa setempat.
+
+## Soalan lazim
+
+### Bahan awning mana yang paling murah?
+
+Tiada susunan tetap — kos awning bergantung pada kawasan yang dilindungi, profil lembaran atau panel, saiz profil rangka, akses dan saliran, bukan sekadar nama bahan. Sebut harga projek yang berperincian adalah cara paling dipercayai untuk membandingkan harga bagi tapak anda.
+
+### Bahan mana paling sesuai untuk car porch di Malaysia?
+
+Untuk car porch, polikarbonat tinted, ACP dan metal deck berinsulasi paling biasa dipilih kerana ia mengurangkan pengumpulan haba di atas kenderaan. Polikarbonat jernih paling cerah tetapi membenarkan lebih banyak haba; ACP memberikan rupa paling kemas dengan penyelenggaraan paling rendah.
+
+### Boleh dapat cadangan sebelum memilih bahan?
+
+Boleh. Hantar foto porch atau halaman anda bersama ukuran anggaran di WhatsApp. Untuk projek yang mudah, itu selalunya cukup untuk sebut harga; jika bentang, titik pengancing atau saliran perlu diperiksa, penilaian tapak akan diatur sebelum reka bentuk dimuktamadkan.
+
+## Dapatkan cadangan bahan dan sebut harga
+
+Beritahu kami di mana awning akan dipasang dan apa yang paling mengganggu anda — haba, hujan, cahaya atau bunyi — dan kami akan mencadangkan bahan yang sesuai dengan tapak anda serta menyediakan sebut harga berperincian khusus projek. [Chat dengan pasukan kami di WhatsApp](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah%2C%20saya%20ingin%20dapatkan%20cadangan%20dan%20sebut%20harga%20untuk%20awning.)`
+    },
+    zh: {
+      slug: "ju-tan-suan-zhi-jin-shu-wa-yu-acp-yu-peng-bi-jiao",
+      title: "马来西亚雨棚材料比较：聚碳酸酯、金属瓦与ACP", category: "雨棚",
+      excerpt: "比较聚碳酸酯、金属瓦与ACP三种马来西亚最常见的雨棚材料——采光、隔热、雨声、保养与价格因素，帮助您在询价前选出合适的材料。",
+      metaTitle: "聚碳酸酯、金属瓦与ACP雨棚比较",
+      metaDesc: "比较聚碳酸酯、金属瓦与ACP雨棚的采光、隔热、雨声、保养与价格因素，帮您在询价前选出适合马来西亚住家的雨棚材料。",
+      content: `在吉隆坡或雪兰莪为车棚、晾衣区或屋前规划雨棚时，材料选择通常归结为三种：聚碳酸酯（PC 板）、金属瓦（metal deck）或铝塑板（ACP）。三者都广泛用于马来西亚住宅，但在热带烈日、暴雨和潮湿环境下的表现各不相同。
+
+本文从采光、隔热、雨声、保养和价格因素五个方面如实比较这三种材料，让您在索取报价前先锁定合适的选择。KL Servis Rumah 在吉隆坡与雪兰莪安装定制[雨棚系统](/zh/services/awning-installation)，三种材料皆有提供，每个项目都单独测量和报价。
+
+## 简短结论
+
+- **聚碳酸酯** — 透光板材，让自然光透过。想要遮阳挡雨又不让空间变暗时的常见选择：车棚、晾衣区和走道。
+- **金属瓦** — 压型钢板，坚固经济，另有带保温层的型号可降低热度和雨声。适合可以完全遮光的实用区域和车棚。
+- **ACP（铝塑板）** — 坚硬的铝面复合板，外观干净现代、完全不透光，三者中保养最少。常用于注重外观的车棚和屋前。
+
+## 三种材料分别是什么
+
+### 聚碳酸酯
+
+聚碳酸酯是半透明塑料板材，有透明、有色（tinted）和古铜色等型号，也包括中空（twin-wall）和多层结构。它轻便透光，因此是马来西亚车棚雨棚最常用的材料之一：下方空间保持明亮，同时挡住雨水和直射阳光。有色和古铜型号可减少眩光与热辐射；透明板最亮。详情见我们的[聚碳酸酯雨棚](/zh/services/awning-installation/polycarbonate-awning)页面。
+
+### 金属瓦
+
+金属瓦是压型金属屋面板材，以钢板为主。它坚固经济，适合实用区、晾衣区、车棚和工作间。带保温层的型号可降低热度和雨声。由于是钢材，板材边缘、紧固件和骨架需要做好防锈底漆和饰面，才能应付本地的潮湿气候。详情见[金属瓦雨棚](/zh/services/awning-installation/metal-deck-awning)页面。
+
+### 铝塑板（ACP）
+
+ACP 雨棚使用坚硬的铝面复合板，呈现干净、现代、不透光的效果。面板能有效阻挡眩光和热气，下雨时比薄金属板安静，而且不会生锈，因此保养极低。ACP 常用于注重整洁外观的车棚和屋前；面板坚硬，但仍需正确支撑以避免大跨距下垂。见 [ACP 雨棚](/zh/services/awning-installation/aluminium-composite-acp-awning)页面。
+
+## 一览对比
+
+| 方面 | 聚碳酸酯 | 金属瓦 | ACP |
+|---|---|---|---|
+| 采光 | 半透明——空间明亮 | 不透光——完全遮光 | 不透光——完全遮光 |
+| 隔热 | 有色型号减少热辐射；透明板透热较多 | 普通板导热；保温型号可降低 | 阻挡眩光和热气效果好 |
+| 雨声 | 中等 | 普通板较响；保温型号更安静 | 比薄金属板安静 |
+| 保养 | 低——定期冲洗，清理板材和排水沟杂物 | 中——检查并处理钢件锈点 | 极低——偶尔冲洗；面板不生锈 |
+| 常见用途 | 车棚、晾衣区、走道、阳台 | 实用区、晾衣区、车棚、工作间 | 车棚、屋前、露台、庭院 |
+
+以上为吉隆坡与雪兰莪气候的一般参考——实际表现取决于产品等级、安装质量和保养。
+
+## 隔热与采光差异
+
+三种材料最实际的差别在于板材下方发生什么。
+
+**聚碳酸酯**半透明。透明型号让车棚或晾衣区几乎像露天一样明亮，因此许多屋主喜欢把它装在大门和窗户上方。代价是透明板透入的热量和光线也更多；如果您最在意热气，有色或古铜型号更合适——既减少眩光和热辐射，仍保留部分采光。
+
+**金属瓦和 ACP 不透光。**普通金属瓦下方完全遮光且明显变暗，而且普通板材会把热往下传——若车棚或晾衣区需要久站，这点值得留意。保温金属瓦增加一层泡棉，可同时降低热度和暴雨敲击声。ACP 面板阻挡眩光和热气的效果好，从下方和街上看起来都干净利落。
+
+并不存在绝对的"最凉"材料——朝向、通风、跨距和板材型号都有影响——但大致规律是：要全遮光和阻热选 ACP 或保温金属瓦，要明亮选聚碳酸酯。
+
+## 雨声
+
+雨声决定暴雨时（Klang Valley 的常态）雨棚下方有多舒适。普通薄金属板最响——暴雨敲在单层屋面上，声音足以盖过谈话。保温金属瓦能大幅降低。ACP 比薄板安静。聚碳酸酯居中；中空板也有助于降低噪音。
+
+如果雨棚覆盖的是座位区而非停车位，选材时应把噪音考虑在内，而不只是价格。
+
+## 马来西亚气候下的保养
+
+三种材料都算低保养，但并非免保养：
+
+- **聚碳酸酯** — 定期冲洗，保持板材和排水沟无落叶杂物；避免用力刮擦以免刮花表面。
+- **金属瓦** — 板材本身耐用，但钢件（边缘、螺丝、泛水板和骨架）应定期检查锈点并尽早处理。这也是我们的骨架一律做防锈底漆加耐候或粉末喷涂的原因——见我们的[焊接与金属加工](/zh/services/welding)服务。
+- **ACP** — 偶尔冲洗即可；面板不生锈。
+
+无论哪种材料，最先出问题的通常不是屋面板材，而是接缝、密封胶、紧固件和排水——因此清理排水沟、确认排水顺畅，比在三种材料之间挑选更重要。
+
+## 该选哪种雨棚材料？
+
+询价前可用这份清单初步筛选：
+
+- **想保持空间明亮**（大门、窗户、走道）→ 聚碳酸酯，透明或有色。
+- **想最大限度隔热挡眩光**（朝西车棚、午后西晒）→ ACP 或保温金属瓦。
+- **覆盖不太讲究外观的实用区或晾衣区** → 金属瓦。
+- **想要屋前最干净现代的外观** → ACP。
+- **对噪音敏感的位置**（座位区、卧室窗旁）→ 选 ACP 或保温金属瓦，避免普通板。
+- **骨架需承受较大跨距** → 与我们讨论骨架规格和支撑；决定结构上限的通常是骨架而非板材。
+
+就车棚而言，有色聚碳酸酯、ACP 和保温金属瓦是最常见的三种选择，因为它们能减少车辆上方的积热——我们的[车棚雨棚](/zh/services/awning-installation/car-porch-awning-installation)页面有排水与净空的细节。
+
+## 雨棚价格受什么影响
+
+马来西亚的雨棚按项目报价，没有固定的每平方英尺单价，因为每个现场都不同。主要成本因素包括：
+
+- 宽度、悬挑和总覆盖面积
+- 屋面材料和板材型号（有色、中空、保温）
+- 骨架材料与规格（低碳钢、铝或不锈钢）及饰面
+- 高度、进场条件和安装难度
+- 现有结构和是否需要加固
+- 排水需求——排水沟、落水管、泛水板和密封胶
+- 需要时的旧雨棚拆除与清运
+- 颜色、定制设计以及任何分层地契或地方当局规范
+
+索取报价时最有用的信息：您的位置、现场和固定点的照片、大致宽度和悬挑、偏好的材料或外观、是否需要拆除旧雨棚，以及适用的管理层或市政规定。
+
+## 常见问题
+
+### 哪种雨棚材料最便宜？
+
+没有固定排序——雨棚成本取决于覆盖面积、板材型号、骨架规格、进场条件和排水，而不只是材料名称。针对您的现场出具的分项报价单，才是比较价格的可靠方式。
+
+### 马来西亚车棚雨棚选哪种材料最好？
+
+车棚方面，有色聚碳酸酯、ACP 和保温金属瓦最常见，因为它们能减少车辆上方的积热。透明聚碳酸酯最亮但透热较多；ACP 外观最整洁、保养最少。
+
+### 可以先获得建议再决定材料吗？
+
+可以。在 WhatsApp 上发来车棚或庭院的照片和大致尺寸。简单项目通常足以报价；若跨距、固定点或排水需要核实，我们会在设计定案前安排现场评估。
+
+## 获取选材建议与报价
+
+告诉我们雨棚要装在哪里，以及最困扰您的是热、雨、光还是噪音，我们会推荐适合您现场的材料，并提供针对项目的分项报价单。[在 WhatsApp 与我们的团队聊聊](https://wa.me/601116627349?text=%E4%BD%A0%E5%A5%BD%20KL%20Servis%20Rumah%EF%BC%8C%E6%88%91%E6%83%B3%E4%B8%BA%E9%9B%A8%E6%A3%9A%E8%8E%B7%E5%8F%96%E9%80%89%E6%9D%90%E5%BB%BA%E8%AE%AE%E5%92%8C%E6%8A%A5%E4%BB%B7%E3%80%82)`
+    }
   }
 };
 

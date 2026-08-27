@@ -3,7 +3,7 @@
 **Project:** Dedicated Awning Installation service page for klservisrumah.my
 **Market:** Kuala Lumpur & Selangor (Klang Valley), Malaysia
 **Created:** 2026-08-27
-**Branch:** `arena/01a040e8-klservisrumah-web`
+**Branch:** `arena/01a040e8-klservisrumah-web` (pillar build) · `arena/01a04137-klservisrumah-web` (§9 testing closeout + blog cluster post 1, 2026-08-27)
 
 ---
 
@@ -125,7 +125,9 @@ H1: Awning Installation in Kuala Lumpur & Selangor
 - [x] Sub-service internal links: welding ("Steel Structure & Awning
       Fabrication") and glass-aluminium remain related via topical map
 - [x] Area links auto-render via ServiceAreaLinks (data-driven)
-- [ ] (Optional/future) blog cluster posts listed in §8 to link to this page
+- [x] (Cluster rollout started) blog post 1 — "Polycarbonate vs Metal vs
+      ACP Awning in Malaysia" — now published and links to this page (see §8);
+      remaining 7 cluster posts are pending
 
 ## 6. Schema Tasks
 
@@ -147,27 +149,46 @@ H1: Awning Installation in Kuala Lumpur & Selangor
 - [x] MS/ZH localized service twin routes already exist (/ms/services/*,
       /zh/services/*) — auto-render via existing architecture
 
-## 8. Supporting Content Cluster (recommended, NOT yet built)
+## 8. Supporting Content Cluster (7 of 8 pending; post 1 published 2026-08-27)
 
-Future blog/pillar posts (each to link to `/services/awning-installation`):
-1. Polycarbonate vs Metal vs ACP Awning in Malaysia
-2. Best Awning Types for Malaysian Homes (2026)
-3. Car Porch Awning Guide: Materials, Drainage & Cost Factors
-4. How Awning Pricing Works in Malaysia (cost factors, no fabricated prices)
-5. Awning Maintenance: Leaks, Rust & Water Pooling
-6. Retractable vs Fixed Awning
-7. Choosing an Awning for Balcony / Patio / Yard
-8. Replacing an Old or Leaking Awning: What to Check
+Blog/pillar posts (each links to `/services/awning-installation`):
+1. [x] **Polycarbonate vs Metal vs ACP Awning in Malaysia — PUBLISHED**
+      (`/blog/polycarbonate-vs-metal-vs-acp-awning-malaysia` + native MS
+      `/ms/blog/perbandingan-awning-polikarbonat-metal-deck-acp` + native ZH
+      `/zh/bo-ke/ju-tan-suan-zhi-jin-shu-wa-yu-acp-yu-peng-bi-jiao`).
+      Quote-safe (no fabricated prices/ratings), links to the pillar + 4
+      sub-service pages + welding silo; wired into the topical-map BLOG pool
+      and 4 specialty relatedBlogs; category "Awning"; cover `/hero-awning.svg`.
+2. [ ] Best Awning Types for Malaysian Homes (2026)
+3. [ ] Car Porch Awning Guide: Materials, Drainage & Cost Factors
+4. [ ] How Awning Pricing Works in Malaysia (cost factors, no fabricated prices)
+5. [ ] Awning Maintenance: Leaks, Rust & Water Pooling
+6. [ ] Retractable vs Fixed Awning
+7. [ ] Choosing an Awning for Balcony / Patio / Yard
+8. [ ] Replacing an Old or Leaking Awning: What to Check
 
 ## 9. Testing Tasks
 
 - [x] All prebuild validation gates pass
 - [x] TypeScript type-check passes
 - [x] Production build succeeds
-- [ ] Manual smoke: `/services/awning-installation` EN, `/ms/services/awning-installation`,
-      `/zh/services/awning-installation`, and 8 sub-service pages × locales
-- [ ] Verify FAQ schema + Service schema validate (Rich Results-style)
-- [ ] Verify sitemap includes new page (regenerated automatically)
+- [x] Manual smoke: `/services/awning-installation` EN, `/ms/services/awning-installation`,
+      `/zh/services/awning-installation`, and 8 sub-service pages × locales —
+      all 27 routes HTTP 200 on a production `next start` build; `/estimate/awning-installation`
+      returns 404 by design (quote-only). Single H1 per page, `<html lang>` correct per locale,
+      comparison table renders, Project-Quoted badge in hero, WhatsApp CTAs present, no
+      English FAQ leakage on MS/ZH.
+- [x] Verify FAQ schema + Service schema validate (Rich Results-style) — structural
+      validation on served HTML, all 3 hubs: Service (name/provider/areaServed, offers with
+      NO numeric price, priceSpecification "Project-specific quotation on request", no
+      fabricated aggregateRating), FAQPage exactly 15 valid Question/acceptedAnswer entries,
+      HowTo exactly 6 steps, BreadcrumbList, speakable. Sub-service spot-checks ×3 locales
+      pass. Recorded in `docs/schema-validation-log.md` (2026-08-27 round).
+- [x] Verify sitemap includes new page (regenerated automatically) — sitemap.xml
+      (4,715 URLs) contains all 3 awning hubs, all sub-service locale twins (63
+      awning-installation URLs incl. cost/emergency/near-me twins) with full
+      en-MY/ms-MY/zh-MY/x-default hreflang alternates; the 3 new blog-post URLs
+      (EN/MS/ZH) are also listed.
 
 ---
 
@@ -182,11 +203,23 @@ Future blog/pillar posts (each to link to `/services/awning-installation`):
 - 8 × MS/ZH native specialty blocks
 - Icon + hero artwork
 - All code gates + production build
+- §9 testing closeout (2026-08-27): production-build smoke of all 27 awning routes,
+  Rich Results-style schema validation (Service no-price / FAQPage 15 / HowTo 6 /
+  Breadcrumb / hreflang), sitemap inclusion — details in §9 and
+  `docs/schema-validation-log.md`
+- Supporting content cluster post 1/8: "Polycarbonate vs Metal vs ACP Awning in
+  Malaysia" — full native EN/MS/ZH article, quote-safe, wired into the topical map
+  (BLOG pool + 4 specialty relatedBlogs), blog indexes + AI-context regenerated,
+  validator count 208 → 209, all gates + build + smoke pass (§8)
 
 ### PENDING
-- Dev-server visual smoke test (page renders correctly on mobile/desktop)
-- Supporting blog cluster (8 posts) — content roadmap, not built this session
+- Supporting blog cluster posts 2–8 (see §8) — same recipe as post 1:
+  full native trilingual article, quote-safe content, topical-map BLOG pool entry,
+  `validate:blog-production.ts` count bump, regenerated indexes, full gate re-run
 - Real project photography (business to supply — see business confirmation)
+- (Site-wide, outside awning scope — discovered during §9 validation): MS/ZH blog
+  article routes emit no BlogPosting/Article schema (all 209 topics; only EN does).
+  Candidate follow-up for a dedicated session; do not bundle into awning work.
 
 ### NEEDS BUSINESS CONFIRMATION
 1. **Awning material scope** — page assumes mild-steel/polycarbonate/metal-deck/
