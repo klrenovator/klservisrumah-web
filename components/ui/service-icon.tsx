@@ -573,6 +573,29 @@ function SnowflakeIcon({ className }: { className?: string }) {
   );
 }
 
+function AwningCanopyIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 48 48" className={className} fill="none">
+      <rect x="8" y="8" width="32" height="32" rx="8" fill="#E0F2FE" />
+      {/* Wall mounting bar */}
+      <rect x="12" y="15" width="24" height="2.5" rx="1.2" fill="#075985" />
+      {/* Scalloped awning canopy */}
+      <path
+        d="M12 17.5 H36 L34 27.5 q-2.75 3 -5.5 0 q-2.75 -3 -5.5 0 q-2.75 3 -5.5 0 L14 27.5 Z"
+        fill="#0EA5E9"
+        opacity="0.85"
+      />
+      <path d="M18 17.5 L16.6 27 M24 17.5 V27.5 M30 17.5 L31.4 27" stroke="#fff" strokeWidth="1.6" />
+      {/* Support arms */}
+      <line x1="15" y1="27.5" x2="15" y2="35" stroke="#0284C7" strokeWidth="2" strokeLinecap="round" />
+      <line x1="33" y1="27.5" x2="33" y2="35" stroke="#0284C7" strokeWidth="2" strokeLinecap="round" />
+      {/* Rain shedding off the edge */}
+      <line x1="14" y1="30" x2="14" y2="34" stroke="#7DD3FC" strokeWidth="1.5" strokeLinecap="round" />
+      <line x1="34" y1="30" x2="34" y2="34" stroke="#7DD3FC" strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+  );
+}
+
 export function ServiceIcon({ name, className = "w-6 h-6" }: ServiceIconProps) {
   switch (name) {
     case "paint-brush":
@@ -631,6 +654,8 @@ export function ServiceIcon({ name, className = "w-6 h-6" }: ServiceIconProps) {
       return <AutogateIcon className={className} />;
     case "welding-spark":
       return <WeldingIcon className={className} />;
+    case "awning-canopy":
+      return <AwningCanopyIcon className={className} />;
     case "snowflake":
       return <SnowflakeIcon className={className} />;
     default:

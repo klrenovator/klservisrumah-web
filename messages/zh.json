@@ -649,7 +649,14 @@
     "verifiedBadge": "认证专家服务",
     "allCoverage": "覆盖整个吉隆坡与雪兰莪",
     "otherServicesHeading": "您可能需要的其他服务",
-    "otherServicesSub": "探索我们在吉隆坡与雪兰莪的其他家居服务——固定价格，当日可约。"
+    "otherServicesSub": "探索我们在吉隆坡与雪兰莪的其他家居服务——固定价格，当日可约。",
+    "projectQuoted": "按项目报价",
+    "quoteOnRequest": "项目报价",
+    "guideViewTypes": "查看雨棚类型",
+    "guideViewComparison": "比较材料",
+    "guideDiscussProject": "沟通您的雨棚需求",
+    "guideWhatsAppCta": "获取雨棚报价",
+    "guideFactorsNote": "价格说明"
   },
   "serviceContent": {
     "overviewEyebrow": "概述",
@@ -710,7 +717,10 @@
     "ctaSub": "获取固定报价、当日上门时段和书面保修——通过 WhatsApp 告诉我们您的需求，或先试用即时估价工具。",
     "estimateCta": "获取即时估价",
     "allServices": "所有服务",
-    "pricingLink": "价格指南"
+    "pricingLink": "价格指南",
+    "projectQuotedTrust": "按项目报价，范围书面确认",
+    "whatsappResponse": "WhatsApp 快速回复",
+    "quoteOnlyAnswer": "{title}适合需要{tagline}的客户。本服务按项目计价：KL Servis Rumah 在开工前以书面确认施工范围、材料与报价条款，并提供{warranty}。欢迎通过 WhatsApp 发送位置、照片和大致尺寸，获取项目专项报价。"
   },
   "subserviceContent": {
     "whatsIncluded": "包括",

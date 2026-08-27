@@ -270,19 +270,37 @@ export function getServiceSchema(service: { title: string; description: string; 
       address: postalAddress()
     },
     description: service.description,
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "MYR",
-      price: service.startPrice.replace(/[^0-9.]/g, ""),
-      priceValidUntil: "2027-12-31",
-      availability: "https://schema.org/InStock",
-      priceSpecification: {
-        "@type": "PriceSpecification",
-        price: service.startPrice.replace(/[^0-9.]/g, ""),
-        priceCurrency: "MYR",
-        description: `Starting from ${service.startPrice}`
+    // Quote-only services (e.g. awning installation) publish no numeric price —
+    // emit an availability-only Offer rather than an invalid/empty price, which
+    // would mislead structured-data consumers and contradict the visible page.
+    offers: (() => {
+      const numericPrice = service.startPrice.replace(/[^0-9.]/g, "");
+      if (!numericPrice) {
+        return {
+          "@type": "Offer",
+          priceCurrency: "MYR",
+          availability: "https://schema.org/InStock",
+          priceSpecification: {
+            "@type": "PriceSpecification",
+            priceCurrency: "MYR",
+            description: "Project-specific quotation on request"
+          }
+        };
       }
-    },
+      return {
+        "@type": "Offer",
+        priceCurrency: "MYR",
+        price: numericPrice,
+        priceValidUntil: "2027-12-31",
+        availability: "https://schema.org/InStock",
+        priceSpecification: {
+          "@type": "PriceSpecification",
+          price: numericPrice,
+          priceCurrency: "MYR",
+          description: `Starting from ${service.startPrice}`
+        }
+      };
+    })(),
     hasOfferCatalog: catalogSubServices ? getOfferCatalogSchema(catalogSubServices) : undefined,
     areaServed: [
       ...getServiceAreaSchema(),

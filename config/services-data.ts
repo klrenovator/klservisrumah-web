@@ -4,6 +4,61 @@ export type SubService = {
   desc: string;
 };
 
+/**
+ * Rich, pillar-page guide blocks for services that warrant long-form,
+ * AEO/GEO-style content beyond the standard template sections. Fully optional:
+ * when a service carries no `guide`, the service page renders exactly as before.
+ * The guide is rendered by ServiceDetailContent in the active locale (falls
+ * back to the English block when MS/ZH are absent).
+ */
+export type GuideTable = {
+  headers: string[];
+  rows: string[][];
+  caption?: string;
+};
+
+export type GuideCard = { title: string; desc: string };
+
+export type GuideFaq = { q: string; a: string };
+
+export type ServiceGuideContent = {
+  /** Anchor id + H2 eyebrow/heading for the whole guide. */
+  eyebrow: string;
+  heading: string;
+  intro: string;
+  /** Awning/system types — H3 cards. */
+  typesHeading: string;
+  typesIntro?: string;
+  types: GuideCard[];
+  /** Material / system comparison table. */
+  comparisonHeading: string;
+  comparisonIntro?: string;
+  comparison: GuideTable;
+  /** Where awnings are used — applications grid. */
+  applicationsHeading: string;
+  applicationsIntro?: string;
+  applications: GuideCard[];
+  /** Customer problems → how the service addresses them. */
+  problemsHeading: string;
+  problemsIntro?: string;
+  problems: GuideCard[];
+  /** Local-climate considerations. */
+  climateHeading: string;
+  climateIntro?: string;
+  climatePoints: string[];
+  /** What drives the quote / what info to send. */
+  quoteHeading: string;
+  quoteIntro?: string;
+  quoteFactors: string[];
+  quoteCta?: string;
+};
+
+export type ServiceGuide = {
+  en: ServiceGuideContent;
+  ms?: ServiceGuideContent;
+  zh?: ServiceGuideContent;
+};
+
 export type LocalizedServiceContent = {
   title: string;
   tagline: string;
@@ -35,9 +90,22 @@ export type ServiceDetail = {
   metaDesc: string;
   aioSummary: string; // SEO optimization block
   warranty: string;
+  /**
+   * Optional long-form pillar guide (types, comparison table, applications,
+   * problems→solutions, climate notes, quote factors). Rendered only when
+   * present; carries its own native MS/ZH blocks.
+   */
+  guide?: ServiceGuide;
   /** Trilingual content overrides. Falls back to English when a locale is missing. */
   i18n?: Partial<Record<"ms" | "zh", LocalizedServiceContent>>;
 };
+
+/** True when the service (and all its sub-services) are priced by quotation only. */
+export function isQuoteOnlyService(service: ServiceDetail): boolean {
+  const hasNumericPrice = (price: string) => /RM\s*\d/.test(price);
+  return !hasNumericPrice(service.startPrice) &&
+    service.subServices.every((sub) => !hasNumericPrice(sub.price));
+}
 
 export const servicesData: Record<string, ServiceDetail> = {
   // ── 1. PAINTING SERVICES ──────────────────────────────────────────────
@@ -3633,6 +3701,432 @@ export const servicesData: Record<string, ServiceDetail> = {
         metaDesc: "吉隆坡与雪兰莪全套卫生间翻新：拆除、防水与蓄水测试、贴砖、水管、洁具、天花。防漏、防滑、防霉。固定报价。WhatsApp 报价。",
         aioSummary: "KL Servis Rumah 在吉隆坡与雪兰莪提供卫生间翻新：拆除、找平、多层防水与蓄水测试、墙地贴砖、洁具、水管改道、电路与防潮天花。防止漏水到楼下、空鼓砖与发霉。固定报价、贴砖布局图、防水保修。",
         warranty: "12 个月工艺保修 + 最长 5 年防水保修"
+      }
+    }
+  },
+
+  // ── 29. AWNING INSTALLATION ───────────────────────────────────────────
+  "awning-installation": {
+    slug: "awning-installation",
+    title: "Awning Installation Services",
+    tagline:
+      "Custom awnings and awning roofing for car porches, entrances, windows, balconies and yards across KL & Selangor — polycarbonate, metal deck, aluminium composite (ACP), glass and fabric systems, fabricated and installed to suit your site. Project-quoted.",
+    description:
+      "KL Servis Rumah designs, fabricates and installs residential and light-commercial awnings across Kuala Lumpur and Selangor. Our awning work covers new fixed awnings and awning roofing for car porches, front and back entrances, doors, windows, balconies, patios, drying yards, walkways and shopfronts, plus replacement of old, leaking or damaged awnings. We work with the common Malaysian awning systems — polycarbonate sheet roofing, metal deck roofing, aluminium composite panel (ACP), tempered glass, and canvas/fabric options — framed in mild steel or aluminium with anti-rust primer and a powder-coat or weather-resistant finish. Each project starts from your application and site conditions: width, projection, exposure to rain and sun, fixing points, drainage and the look you want. We discuss material and design options, prepare a project-specific quotation with the scope clearly itemised, then fabricate and install with attention to fixing, slope and water flow. Drainage, sealing at joints and fasteners, and the right material for the exposure are all part of the design conversation, because awnings in Malaysia's tropical weather need to handle heavy rain, strong sun and humidity over many years. Warranty coverage depends on the selected materials, installation scope and agreed quotation terms. Contact KL Servis Rumah on WhatsApp with your location, photos and rough dimensions for a project-specific quotation.",
+    startPrice: "On Quote",
+    icon: "awning-canopy",
+    highlights: [
+      "Custom awnings for car porch, entrance, door, window, balcony, patio, yard, walkway and shopfront applications",
+      "Polycarbonate, metal deck, aluminium composite (ACP), tempered glass and canvas/fabric awning options discussed for your site",
+      "Mild-steel or aluminium frames with anti-rust primer and powder-coat or weather-resistant finish",
+      "Site-aware design: span, projection, fixing points, slope, drainage and sealing planned before fabrication",
+      "Replacement of old, leaking, rusted or sagging awnings, including removal of the existing structure where agreed",
+      "Project-specific, itemised quotation with scope and warranty terms confirmed before work begins"
+    ],
+    subServices: [
+      { name: "Car Porch Awning Installation", price: "On Quote", desc: "New car porch / carport awning to shade and protect vehicles from sun and rain, sized to your porch with suitable slope and drainage." },
+      { name: "Polycarbonate Awning", price: "On Quote", desc: "Polycarbonate sheet awning roofing in clear or tinted profiles — translucent, lightweight cover for porch, yard, walkway or balcony that lets natural light through." },
+      { name: "Metal Deck Awning", price: "On Quote", desc: "Metal deck / metal-sheet awning roofing for strong rain and sun protection over utility areas, drying yards and porches, with anti-rust frame treatment." },
+      { name: "Aluminium Composite (ACP) Awning", price: "On Quote", desc: "Aluminium composite panel awning — opaque, clean-lined and low-maintenance cover that reduces glare and rain noise for porches and yards." },
+      { name: "Glass Awning", price: "On Quote", desc: "Tempered glass awning for entrances, windows and feature areas where a premium, light-filled look is wanted, framed and fixed to suit the opening." },
+      { name: "Canvas & Fabric Awning", price: "On Quote", desc: "Canvas/fabric fixed and retractable-style awnings for balconies, patios, terraces and shopfronts where shade and appearance are the priority." },
+      { name: "Balcony, Patio & Window Awning", price: "On Quote", desc: "Awnings sized for balconies, patios, terraces, windows and doors — shade and rain protection without closing up the space." },
+      { name: "Awning Replacement & Repair", price: "On Quote", desc: "Replacing old, leaking, rusted or sagging awnings — inspection of the existing frame, roofing, joints and drainage, with repair or full replacement options." }
+    ],
+    process: [
+      { step: "01", title: "Enquiry & Application", desc: "You tell us where the awning goes — car porch, entrance, window, balcony, yard or shopfront — and share photos plus rough dimensions on WhatsApp." },
+      { step: "02", title: "Site Assessment", desc: "Where photos and dimensions are not enough, we arrange a site assessment to check span, fixing points, existing structure, access and drainage." },
+      { step: "03", title: "Material & Design Options", desc: "We discuss polycarbonate, metal deck, ACP, glass or fabric options, frame and finish, colour, projection and the slope needed for water runoff." },
+      { step: "04", title: "Quotation & Scope", desc: "You receive a project-specific, itemised quotation covering materials, fabrication, installation, any removal of the old awning and warranty terms." },
+      { step: "05", title: "Fabrication & Installation", desc: "Components are fabricated, then delivered and fixed on site with appropriate anchors, fasteners, sealants and flashings, with the area cleaned afterwards." },
+      { step: "06", title: "Checks & Handover", desc: "We check fixing, alignment, slope and water flow together with you, confirm the scope as completed and hand over with the agreed warranty terms." }
+    ],
+    faqs: [
+      { q: "How much does awning installation cost in Kuala Lumpur and Selangor?", a: "Awning work is priced per project, not at a fixed rate, because the cost depends on the span width, projection, total area, material (polycarbonate, metal deck, ACP, glass or fabric), frame and finish, height and access, drainage needs and whether an old awning must be removed. Send your location, photos and rough dimensions on WhatsApp and KL Servis Rumah will prepare a project-specific, itemised quotation. Published market figures vary widely by material and size, so we do not quote a generic price without seeing the application." },
+      { q: "What type of awning is best for a house in Malaysia?", a: "There is no single best material — the right choice depends on the application, exposure, desired light, appearance, budget and maintenance preference. Polycarbonate is a common, lightweight, translucent choice for porches and yards; metal deck is durable and economical for utility areas but can transmit heat and rain noise; aluminium composite panel (ACP) is opaque, clean and low-maintenance; tempered glass gives a premium, bright finish; and canvas/fabric suits balconies and shopfronts. We recommend the system for your specific site rather than a universal 'best'." },
+      { q: "Is polycarbonate suitable for Malaysian weather?", a: "Polycarbonate is widely used in Malaysia because it is lightweight, impact-resistant and available in clear or tinted profiles that let natural light through while shading rain. Clear sheets transmit more light and heat, while tinted or bronze profiles reduce glare and heat gain. Like any roofing material it needs correct slope, sealing and periodic cleaning; long-term performance depends on sheet quality, fixing and maintenance rather than the material alone." },
+      { q: "Which is better, polycarbonate or metal awning?", a: "Each has trade-offs. Polycarbonate is lighter and translucent, so it keeps the area brighter and puts less load on the structure, but cheaper sheets can discolour or crack over time and joints must be sealed well. Metal deck is strong, economical and fast to install, but it conducts more heat and can be noisy in heavy rain unless an insulated profile is used, and steel components need anti-rust treatment. For a car porch where heat matters, tinted polycarbonate, insulated metal deck or ACP are commonly considered; we advise based on your site." },
+      { q: "How long does awning installation take?", a: "A straightforward replacement or small porch awning can often be completed within a day once materials are ready, while larger or custom-fabricated awnings need fabrication lead time plus one or more installation days. The exact timing depends on size, material, access and whether the old awning is removed. We confirm the schedule with your quotation rather than promising a fixed timeframe upfront." },
+      { q: "Can an awning be installed over a car porch?", a: "Yes. A car porch is one of the most common awning applications in KL and Selangor. The porch span, wall and beam fixing points, vehicle clearance, drainage and heat exposure determine the frame gauge, projection and material — tinted polycarbonate, ACP or insulated metal deck are popular for parking areas because they reduce heat build-up over the car. We assess the porch before finalising the design." },
+      { q: "Can an old awning be replaced?", a: "Yes. We inspect the existing roofing, frame, joints, fasteners, sealants and drainage to see whether the structure is sound or should be replaced. Common reasons for replacement are cracked or yellowed polycarbonate, rusted frames, leaking joints, water pooling on a flat roof, and sagging from insufficient support. The quotation can include removal and disposal of the old awning where agreed." },
+      { q: "Does an awning need regular maintenance?", a: "Awnings are low-maintenance but not maintenance-free. Periodic clearing of leaves and debris from the roof surface and gutters, checking that water still runs off freely, washing dirt or algae off polycarbonate or glass, and touching up any rust spots on steel frames helps the awning last. Leaks usually come from damaged sheeting, ageing sealant, loose fasteners or blocked drainage rather than the material itself, and these should be attended to early." },
+      { q: "Can an awning reduce sunlight and heat?", a: "An awning provides direct shade over the area it covers and keeps rain and direct sun off doors, windows and walls, which can make the covered outdoor space more comfortable. Opaque materials (ACP, metal deck, tinted polycarbonate) block more glare and heat than clear sheets. We do not promise a specific indoor temperature reduction, since that depends on the material, orientation, ventilation and the building itself." },
+      { q: "What information is needed for an awning quotation?", a: "The most useful information is: your location/area, where the awning will go (porch, balcony, window, yard, shopfront), approximate width and projection, photos of the site and fixing points, the material or look you prefer, whether an old awning needs removal, and any strata or management rules that apply. With photos and dimensions many quotations can be prepared remotely; we arrange a site assessment when the project needs it." },
+      { q: "Does awning installation require a site visit?", a: "Not always. For straightforward replacements or standard applications, clear photos with dimensions may be enough to quote. A site assessment is arranged when the span is large, the fixing points or existing structure are unclear, access is difficult, drainage needs planning, or the design is custom. We will tell you whether a visit is needed for your project." },
+      { q: "Are permits or building approvals required for an awning?", a: "Requirements depend on the property type and local authority. Landed homes, strata properties (condominiums, apartments, gated communities), shoplots and commercial premises may each have different rules, and JMB/MC guidelines or local council (e.g. DBKL/MBSA/MBPJ) requirements can limit projection, height or appearance. We advise customers to verify the approvals that apply to their property; we can provide the scope, dimensions and specifications to support an application, but customers should confirm requirements with their management office or local authority." },
+      { q: "How is awning drainage handled?", a: "Drainage is planned in the design: the awning is given adequate slope so rainwater runs off to the intended side or gutter rather than pooling, joints and wall flashings are sealed, and gutters or downpipes can be added where the volume of water warrants it. Water pooling is usually a sign of insufficient slope or support, and is one of the things we check on old or leaking awnings." },
+      { q: "Can an awning be customised in colour and design?", a: "Yes. Frame colour, sheet tint, ACP colour, glass type and the overall profile can usually be chosen to match the house or shopfront, subject to material availability. Custom spans, projections and shapes are fabricated to the site measurements. We discuss options during the design step and quote any custom finishes accordingly." },
+      { q: "What awning options are available in KL and Selangor?", a: "Across Kuala Lumpur and Selangor the common installations are polycarbonate awnings (clear or tinted), metal deck awnings, aluminium composite panel (ACP) awnings, tempered glass awnings, and canvas/fabric awnings — applied to car porches, entrances, windows, balconies, patios, drying yards, walkways and shopfronts, plus replacements of existing awnings. Retractable and motorised systems can be discussed depending on scope and supplier availability; tell us your application and we will confirm which options suit it." }
+    ],
+    priceTableNote:
+      "Awning projects are quoted individually — pricing depends on size, material, frame, finish, access, drainage and any removal work. Request a project-specific quotation; no generic 'starting from' price is published for awning work.",
+    heroImage: "/hero-awning.svg",
+    metaTitle: "Awning Installation KL & Selangor | Car Porch & Polycarbonate Awnings",
+    metaDesc:
+      "Custom awning installation across KL & Selangor: car porch, polycarbonate, metal deck, ACP, glass and fabric awnings, plus awning replacement. Request a project quote on WhatsApp.",
+    aioSummary:
+      "KL Servis Rumah installs custom awnings and awning roofing across Kuala Lumpur & Selangor for car porches, entrances, windows, balconies, patios, yards, walkways and shopfronts, using polycarbonate, metal deck, aluminium composite (ACP), tempered glass or fabric on steel/aluminium frames with anti-rust finishing. Services include new fixed awnings and replacement of old/leaking/rusted awnings, with site-aware design for slope, drainage, fixing and sealing. All work is project-quoted with an itemised scope and warranty terms defined in the quotation.",
+    warranty: "Workmanship warranty as stated in your quotation",
+    guide: {
+      en: {
+        eyebrow: "Awning Guide · Panduan Awning · 雨棚指南",
+        heading: "Awning Types, Materials & What Works for Malaysian Homes",
+        intro:
+          "An awning is a roof-like cover fixed to a building or frame to shade an outdoor area and keep rain off doors, windows, walls and pathways. In Malaysia the main differences between awnings come down to the roofing material, the frame, and how the structure handles rain and sun. This guide explains the common systems, where each fits, and what affects your quotation — so you can choose with confidence for KL and Selangor weather.",
+        typesHeading: "Common Awning Types We Install",
+        typesIntro:
+          "The systems below are the ones most commonly requested for Malaysian homes and shoplots. Final suitability always depends on your site — span, exposure, fixing points and drainage.",
+        types: [
+          { title: "Polycarbonate awnings", desc: "Translucent plastic-sheet roofing, available in clear, tinted or bronze profiles and twin-wall/multi-wall options. Lightweight and light-letting, widely used for car porches, drying yards and walkways. Tinted sheets reduce glare and heat gain; clear sheets keep the area brightest." },
+          { title: "Metal deck awnings", desc: "Corrugated or profiled metal-sheet roofing, often steel, with insulated/PU-foam profiles available to cut heat and rain noise. Strong and economical for utility areas, drying yards and porches; steel parts need proper anti-rust primer and finishing." },
+          { title: "Aluminium composite panel (ACP)", desc: "Rigid aluminium-faced panels that give a clean, modern, opaque finish with low maintenance. Blocks glare well and is quieter in rain than thin sheet; popular for porches and house fronts where a neat look matters." },
+          { title: "Tempered glass awnings", desc: "Safety-glass panels on steel or stainless frames for a premium, bright entrance or window cover. Lets light through while shedding rain, with minimal maintenance beyond cleaning; needs appropriate framing and fixing for the span." },
+          { title: "Canvas & fabric awnings", desc: "Fixed fabric canopies and retractable-style fabric systems for balconies, patios, terraces and shopfronts. Shade and appearance are the priority; fabric needs cleaning and eventual replacement, and these systems are not intended as permanent rain roofs." },
+          { title: "Retractable awnings", desc: "Manual or motorised fold-away awnings that give shade on demand and retract when not needed. Best for balconies, patios and shopfronts rather than permanent car-porch cover. Availability depends on scope and supplier; ask us whether it suits your application." }
+        ],
+        comparisonHeading: "Awning Material Comparison",
+        comparisonIntro:
+          "A practical comparison of the common awning systems. There is no universally 'best' material — the right choice depends on location, span, exposure, desired appearance, budget, maintenance preference, drainage and structural requirements.",
+        comparison: {
+          headers: ["Awning type", "Main benefit", "Suitable for", "Maintenance", "Weather considerations"],
+          rows: [
+            ["Polycarbonate", "Lightweight; lets natural light through; good value", "Car porch, drying yard, walkway, balcony", "Low — wash periodically; clear debris from sheets and gutters", "Handles sun and rain well; tinted profiles reduce heat; joints/slope must be done correctly to avoid leaks"],
+            ["Metal deck", "Strong, durable and economical; insulated profiles available", "Utility area, drying yard, porch, workshop", "Medium — check and treat rust points on steel frames", "Insulated profiles reduce heat and rain noise; plain sheets conduct heat and can be loud in heavy rain"],
+            ["Aluminium composite (ACP)", "Opaque, clean modern look; very low maintenance", "Car porch, house front, patio, yard", "Very low — occasional wash; no rust on panels", "Blocks glare and heat well; quieter in rain; needs correct support to span without sag"],
+            ["Tempered glass", "Premium appearance; maximum light; easy to clean", "Entrance, door, window, feature areas", "Very low — clean like a window; check seals", "Strong safety glass; frame and fixings must match the span; heavier than sheet options"],
+            ["Canvas / fabric", "Attractive shade; can be retractable", "Balcony, patio, terrace, shopfront", "Medium — clean fabric; expect fabric replacement over its life", "Shade-first; not a permanent rain roof; retract in strong wind/storms"],
+            ["Retractable system", "Shade on demand; retracts to preserve views/light", "Balcony, patio, terrace, shopfront", "Medium — moving parts and fabric need servicing", "Convenient but not fixed cover; should be retracted in strong winds and heavy storms"]
+          ],
+          caption: "General guidance for KL & Selangor conditions. Material performance depends on product grade, installation quality and maintenance — your quotation will specify what is included."
+        },
+        applicationsHeading: "Where Awnings Are Used",
+        applicationsIntro:
+          "Awnings are installed wherever an outdoor space needs shade and rain protection. Common applications we quote:",
+        applications: [
+          { title: "Car porch / carport", desc: "Shields vehicles from direct sun, UV and rain, and keeps the porch usable for loading and unloading. Drainage and heat-reducing material are the main considerations." },
+          { title: "Front entrance & main door", desc: "Keeps rain off visitors and the door, protects entrance finishes, and adds a finished look to the house front or shop entrance." },
+          { title: "Windows", desc: "Small window awnings reduce rain streaking on glass and cut direct sun into rooms without blocking light." },
+          { title: "Balcony, patio & terrace", desc: "Creates usable shaded outdoor space for seating, drying or plants — often with polycarbonate, fabric or retractable systems." },
+          { title: "Back door & drying yard", desc: "Covers service areas, laundry drying and back entrances so they stay usable in rain, with economical metal or polycarbonate systems common." },
+          { title: "Walkway & side passage", desc: "Links doors, gates or parking to the house with a dry, lit path using translucent polycarbonate." },
+          { title: "Shopfront & commercial premises", desc: "Shades entrances, signage and walkways for shops, offices and light-commercial premises, subject to local authority and management rules." }
+        ],
+        problemsHeading: "Common Awning Problems — and How We Address Them",
+        problemsIntro:
+          "Most awning complaints trace back to design, fixing or maintenance rather than the material alone. Here is how each problem is typically approached:",
+        problems: [
+          { title: "Rain blowing in at the entrance", desc: "The projection, height and side profile of the awning determine how well it sheds driving rain. We size the cover to the doorway or porch and plan the slope so water runs away from the entrance rather than dripping at it." },
+          { title: "Too much sun and glare", desc: "Material choice controls light: tinted or bronze polycarbonate, ACP and metal deck block far more glare than clear sheets, while glass keeps things bright. We match the material to the orientation and what you do in the space." },
+          { title: "Hot covered areas", desc: "Awnings shade the area directly; opaque and tinted materials reduce heat build-up more than clear sheets. We recommend materials that suit the use (for example tinted polycarbonate or insulated panels over a parked car) without promising specific indoor cooling figures." },
+          { title: "Rusting frames", desc: "Steel frames are protected with anti-rust primer and a powder-coat or weather-resistant finish; galvanising can be discussed for exposed structural steel. Existing rust is treated before repainting, or the frame is replaced if it has weakened." },
+          { title: "Water pooling on the roof", desc: "Pooling usually means insufficient slope or support. Replacement or repair re-sets the pitch, adds intermediate support where needed and directs runoff to a gutter or the correct edge." },
+          { title: "Leaking awning", desc: "Leaks commonly come from cracked sheeting, ageing sealant at joints and wall flashings, loose fasteners, or blocked drainage. We inspect to find the source and repair or replace the affected parts rather than guessing." },
+          { title: "Sagging or unstable structure", desc: "A sagging awning can indicate undersized frame, weak fixing points or deterioration. The structure should be assessed before reuse; we recommend repair or replacement based on what the assessment shows, without presuming an engineering fix." },
+          { title: "Old, cracked or yellowed awning", desc: "Ageing polycarbonate, faded fabric or corroded frames are candidates for replacement. We assess what is reusable, quote the new roofing or full structure, and can remove the old awning as part of the job." }
+        ],
+        climateHeading: "Designed for Malaysia's Tropical Climate",
+        climateIntro:
+          "Kuala Lumpur and Selangor awnings face intense sun, UV exposure, high humidity, sudden heavy downpours and occasional strong winds. Practical consequences we design for:",
+        climatePoints: [
+          "Heavy rainfall — adequate slope, sound wall flashings and, where needed, gutters or downpipes so water clears quickly instead of backing up or dripping where it should not.",
+          "Strong sun and UV — UV-stable sheeting and powder-coated/finished frames resist fading; tinted and opaque materials reduce heat and glare under the cover.",
+          "Humidity, dirt, moss and algae — horizontal and translucent surfaces collect grime over time; periodic washing keeps polycarbonate and glass clear and stops organic build-up holding moisture against frames.",
+          "Corrosion — steel frames receive anti-rust primer and a weather-resistant finish; galvanising or stainless/aluminium components can be considered for the most exposed structural parts.",
+          "Occasional strong winds — proper fixing into sound structure, appropriate fasteners and retracting fabric systems in storms matter. We avoid 'windproof' or 'storm-proof' claims; proper fixing, support, material selection and drainage are the practical safeguards for tropical weather."
+        ],
+        quoteHeading: "How Awning Quotations Work",
+        quoteIntro:
+          "Because every awning is built to a specific site, we do not publish a generic 'starting from' price. Your project-specific quotation depends on:",
+        quoteFactors: [
+          "Width, projection and total covered area",
+          "Roofing material — polycarbonate, metal deck, ACP, glass or fabric — and the sheet/panel profile or tint",
+          "Frame material and gauge (mild steel, aluminium or stainless) and finish (powder-coat or weather-resistant coating)",
+          "Height, access and installation complexity (upper floors, condos, scaffold or equipment needs)",
+          "Existing structure and fixing points, and whether reinforcement is needed",
+          "Drainage requirements — gutters, downpipes, flashings and sealants",
+          "Removal and disposal of an old awning, where required",
+          "Colour, custom design and any strata/local-authority specifications"
+        ],
+        quoteCta:
+          "Send your area, photos and rough dimensions on WhatsApp and we will advise whether a remote quote or a site assessment suits your project, then provide an itemised quotation with the warranty terms clearly stated."
+      },
+      ms: {
+        eyebrow: "Panduan Awning · Awning Guide · 雨棚指南",
+        heading: "Jenis-Jenis Awning, Bahan & Apa Yang Sesuai untuk Rumah di Malaysia",
+        intro:
+          "Awning ialah penutup seperti bumbung yang dipasang pada bangunan atau rangka untuk meneduhkan ruang luar dan menghalang hujan daripada pintu, tingkap, dinding dan laluan. Di Malaysia, perbezaan utama antara awning terletak pada bahan bumbung, rangka, dan cara struktur mengendalikan hujan serta matahari. Panduan ini menerangkan sistem yang biasa digunakan, di mana setiap satu sesuai, dan apa yang mempengaruhi sebut harga anda — supaya anda boleh memilih dengan yakin untuk cuaca KL dan Selangor.",
+        typesHeading: "Jenis-Jenis Awning Yang Kami Pasang",
+        typesIntro:
+          "Sistem di bawah adalah yang paling kerap diminta untuk rumah dan lot kedai di Malaysia. Kesesuaian muktamad sentiasa bergantung pada tapak anda — rentang, pendedahan cuaca, titik pengancing dan saliran.",
+        types: [
+          { title: "Awning polikarbonat", desc: "Bumbung kepingan plastik lut cahaya, tersedia dalam profil jernih, tinted atau gangsa serta pilihan twin-wall/multi-wall. Ringan dan membenarkan cahaya masuk; banyak digunakan untuk car porch, ruang jemuran dan laluan. Kepingan tinted mengurangkan silau dan haba; kepingan jernih paling terang." },
+          { title: "Awning metal deck", desc: "Bumbung kepingan logam beralun atau berprofil, selalunya keluli, dengan profil bertebat/buih PU tersedia untuk mengurangkan haba dan bunyi hujan. Kuat dan menjimatkan untuk kawasan utiliti, ruang jemuran dan porch; bahagian keluli perlu primer anti-karat dan kemasan yang betul." },
+          { title: "Panel komposit aluminium (ACP)", desc: "Panel muka aluminium tegar yang memberi kemasan legap, moden dan kemas dengan penyelenggaraan rendah. Menyekat silau dengan baik dan lebih senyap dalam hujan berbanding kepingan nipis; popular untuk porch dan bahagian depan rumah yang mementingkan rupa kemas." },
+          { title: "Awning kaca tempered", desc: "Panel kaca keselamatan pada rangka keluli atau tahan karat untuk penutup pintu masuk atau tingkap yang premium dan terang. Membenarkan cahaya masuk sambil menumpahkan hujan, dengan penyelenggaraan minimum selain pembersihan; memerlukan rangka dan pengancing yang sesuai dengan rentang." },
+          { title: "Awning kanvas & fabrik", desc: "Kanopi fabrik tetap dan sistem fabrik gaya boleh-tarik untuk balkoni, patio, teres dan kedai. Teduhan dan rupa menjadi keutamaan; fabrik perlu dicuci dan akhirnya diganti, dan sistem ini bukan bumbung hujan kekal." },
+          { title: "Awning boleh-tarik (retractable)", desc: "Awning lipat manual atau bermotor yang memberi teduhan apabila diperlukan dan ditarik balik apabila tidak digunakan. Paling sesuai untuk balkoni, patio dan kedai berbanding penutup car porch kekal. Ketersediaan bergantung pada skop dan pembekal; tanya kami sama ada ia sesuai untuk kegunaan anda." }
+        ],
+        comparisonHeading: "Perbandingan Bahan Awning",
+        comparisonIntro:
+          "Perbandingan praktikal sistem awning yang biasa digunakan. Tiada bahan yang 'terbaik' untuk semua — pilihan yang sesuai bergantung pada lokasi, rentang, pendedahan cuaca, rupa yang diingini, bajet, pilihan penyelenggaraan, saliran dan keperluan struktur.",
+        comparison: {
+          headers: ["Jenis awning", "Kelebihan utama", "Sesuai untuk", "Penyelenggaraan", "Pertimbangan cuaca"],
+          rows: [
+            ["Polikarbonat", "Ringan; membenarkan cahaya semula jadi; nilai baik", "Car porch, ruang jemuran, laluan, balkoni", "Rendah — basuh berkala; bersihkan daun dari kepingan dan longkang", "Tahan matahari dan hujan; profil tinted kurangkan haba; sambungan/kecerunan mesti betul untuk elak bocor"],
+            ["Metal deck", "Kuat, tahan lama dan menjimatkan; profil bertebat tersedia", "Kawasan utiliti, ruang jemuran, porch, bengkel", "Sederhana — semak dan rawat tompok karat pada rangka keluli", "Profil bertebat kurangkan haba dan bunyi hujan; kepingan biasa mengalir haba dan boleh bising ketika hujan lebat"],
+            ["Panel komposit aluminium (ACP)", "Legap, rupa moden kemas; penyelenggaraan sangat rendah", "Car porch, depan rumah, patio, halaman", "Sangat rendah — basuh sekali-sekala; panel tidak berkarat", "Menyekat silau dan haba dengan baik; lebih senyap dalam hujan; perlu sokongan betul untuk rentang tanpa melendut"],
+            ["Kaca tempered", "Rupa premium; cahaya maksimum; mudah dibersihkan", "Pintu masuk, pintu, tingkap, kawasan ciri", "Sangat rendah — bersih seperti tingkap; semak pengedap", "Kaca keselamatan yang kuat; rangka dan pengancing mesti padan dengan rentang; lebih berat berbanding kepingan"],
+            ["Kanvas / fabrik", "Teduhan menarik; boleh jadi retractable", "Balkoni, patio, teres, kedai", "Sederhana — bersihkan fabrik; jangka penggantian fabrik sepanjang hayat", "Utamakan teduhan; bukan bumbung hujan kekal; tarik balik ketika angin kencang/ribut"],
+            ["Sistem retractable", "Teduhan bila perlu; ditarik balik untuk kekalkan pemandangan/cahaya", "Balkoni, patio, teres, kedai", "Sederhana — bahagian bergerak dan fabrik perlu diservis", "Mudah tetapi bukan penutup tetap; patut ditarik balik ketika angin kencang dan ribut"]
+          ],
+          caption: "Panduan umum untuk keadaan KL & Selangor. Prestasi bahan bergantung pada gred produk, kualiti pemasangan dan penyelenggaraan — sebut harga anda akan menyatakan apa yang termasuk."
+        },
+        applicationsHeading: "Di Mana Awning Digunakan",
+        applicationsIntro:
+          "Awning dipasang di mana-mana ruang luar yang memerlukan teduhan dan perlindungan hujan. Kegunaan biasa yang kami sebut hargakan:",
+        applications: [
+          { title: "Car porch / port kereta", desc: "Melindungi kenderaan daripada matahari terus, UV dan hujan, dan menjadikan porch boleh digunakan untuk memunggah barang. Saliran dan bahan pengurang haba menjadi pertimbangan utama." },
+          { title: "Pintu masuk depan & pintu utama", desc: "Menghalang hujan daripada tetamu dan pintu, melindungi kemasan pintu masuk, dan menambah rupa kemas pada depan rumah atau pintu kedai." },
+          { title: "Tingkap", desc: "Awning tingkap kecil mengurangkan kesan hujan pada kaca dan memotong matahari terus ke dalam bilik tanpa menyekat cahaya." },
+          { title: "Balkoni, patio & teres", desc: "Mewujudkan ruang luar yang teduh untuk berehat, menjemur atau tumbuhan — selalunya dengan sistem polikarbonat, fabrik atau retractable." },
+          { title: "Pintu belakang & ruang jemuran", desc: "Melindungi kawasan utiliti, jemuran dan pintu belakang supaya boleh digunakan ketika hujan, dengan sistem logam atau polikarbonat yang menjimatkan." },
+          { title: "Laluan & tepi rumah", desc: "Menghubungkan pintu, pagar atau tempat letak kereta ke rumah dengan laluan kering dan bercahaya menggunakan polikarbonat lut cahaya." },
+          { title: "Kedai & premis komersial", desc: "Meneduhkan pintu masuk, papan tanda dan laluan untuk kedai, pejabat dan premis komersial ringan, tertakluk pada peraturan pihak berkuasa tempatan dan pengurusan." }
+        ],
+        problemsHeading: "Masalah Awning Yang Biasa — & Cara Kami Menanganinya",
+        problemsIntro:
+          "Kebanyakan aduan awning berpunca daripada reka bentuk, pengancing atau penyelenggaraan, bukan bahan semata-mata. Berikut cara setiap masalah biasanya ditangani:",
+        problems: [
+          { title: "Hujan masuk di pintu masuk", desc: "Unjuran, ketinggian dan profil sisi awning menentukan sejauh mana ia menahan hujan yang bertiup. Kami saizkan penutup mengikut pintu atau porch dan rancang kecerunan supaya air mengalir jauh dari pintu masuk." },
+          { title: "Matahari dan silau berlebihan", desc: "Bahan mengawal cahaya: polikarbonat tinted/gangsa, ACP dan metal deck menyekat lebih banyak silau berbanding kepingan jernih, manakala kaca mengekalkan kecerahan. Kami padankan bahan dengan arah matahari dan kegunaan ruang." },
+          { title: "Kawasan berteduh yang panas", desc: "Awning meneduhkan kawasan terus; bahan legap dan tinted mengurangkan haba lebih daripada kepingan jernih. Kami mengesyorkan bahan yang sesuai (cth. polikarbonat tinted atau panel bertebat di atas kereta yang diletakkan) tanpa menjanjikan angka penyejukan dalaman tertentu." },
+          { title: "Rangka berkarat", desc: "Rangka keluli dilindungi dengan primer anti-karat dan kemasan powder-coat atau tahan cuaca; galvanis boleh dibincangkan untuk keluli struktur yang terdedah. Karat sedia ada dirawat sebelum dicat semula, atau rangka diganti jika sudah lemah." },
+          { title: "Air bertakung di atas bumbung", desc: "Takungan air biasanya bermaksud kecerunan atau sokongan tidak mencukupi. Pembaikan atau penggantian menetapkan semula kecerunan, menambah sokongan perantaraan jika perlu dan mengarahkan aliran air ke longkang atau tepi yang betul." },
+          { title: "Awning bocor", desc: "Bocor lazimnya berpunca daripada kepingan retak, pengedap lama pada sambungan dan flashing dinding, pengikat longgar, atau saliran tersumbat. Kami memeriksa untuk mencari punca dan membaiki atau mengganti bahagian terjejas, bukan meneka." },
+          { title: "Struktur melendut atau tidak stabil", desc: "Awning melendut boleh menandakan rangka terlalu kecil, titik pengancing lemah atau kemerosotan. Struktur patut dinilai sebelum digunakan semula; kami mengesyorkan pembaikan atau penggantian berdasarkan penilaian, tanpa menganggap penyelesaian kejuruteraan tertentu." },
+          { title: "Awning lama, retak atau kuning", desc: "Polikarbonat yang menua, fabrik pudar atau rangka berkarat adalah calon penggantian. Kami menilai apa yang boleh diguna semula, memberi sebut harga untuk bumbung baharu atau struktur penuh, dan boleh menanggalkan awning lama sebagai sebahagian kerja." }
+        ],
+        climateHeading: "Direka untuk Cuaca Tropika Malaysia",
+        climateIntro:
+          "Awning di Kuala Lumpur dan Selangor menghadapi matahari terik, pendedahan UV, kelembapan tinggi, hujan lebat yang tiba-tiba dan angin kencang sekali-sekala. Perkara praktikal yang kami ambil kira:",
+        climatePoints: [
+          "Hujan lebat — kecerunan mencukupi, flashing dinding yang kukuh dan, jika perlu, longkang atau paip bawah supaya air mengalir keluar dengan cepat daripada bertakung atau menitis di tempat yang salah.",
+          "Matahari terik dan UV — kepingan stabil UV dan rangka berkemasan powder-coat/tahan cuaca menahan pudar; bahan tinted dan legap mengurangkan haba serta silau di bawah penutup.",
+          "Kelembapan, kotoran, lumut dan alga — permukaan melintang dan lut cahaya mengumpul kotoran dari masa ke masa; pembasuhan berkala memastikan polikarbonat dan kaca jernih dan mengelak bahan organik menahan lembapan pada rangka.",
+          "Kakisan — rangka keluli menerima primer anti-karat dan kemasan tahan cuaca; galvanis atau komponen tahan karat/aluminium boleh dipertimbangkan untuk bahagian struktur paling terdedah.",
+          "Angin kencang sekali-sekala — pengancing yang betul pada struktur kukuh, pengikat yang sesuai dan menarik balik sistem fabrik ketika ribut adalah penting. Kami mengelak dakwaan 'kalis angin' atau 'kalis ribut'; pengancing, sokongan, pilihan bahan dan saliran yang betul ialah perlindungan praktikal untuk cuaca tropika."
+        ],
+        quoteHeading: "Bagaimana Sebut Harga Awning Berfungsi",
+        quoteIntro:
+          "Oleh kerana setiap awning dibina untuk tapak khusus, kami tidak menerbitkan harga 'bermula dari' generik. Sebut harga khusus projek anda bergantung pada:",
+        quoteFactors: [
+          "Lebar, unjuran dan jumlah kawasan bertutup",
+          "Bahan bumbung — polikarbonat, metal deck, ACP, kaca atau fabrik — serta profil kepingan/panel atau tinted",
+          "Bahan dan saiz rangka (keluli lembut, aluminium atau tahan karat) dan kemasan (powder-coat atau salutan tahan cuaca)",
+          "Ketinggian, akses dan kerumitan pemasangan (tingkat atas, kondominium, perancah atau peralatan)",
+          "Struktur sedia ada dan titik pengancing, dan sama ada tetulang diperlukan",
+          "Keperluan saliran — longkang, paip bawah, flashing dan pengedap",
+          "Penanggalkan dan pelupusan awning lama, jika diperlukan",
+          "Warna, reka bentuk tersuai dan sebarang spesifikasi strata/pihak berkuasa tempatan"
+        ],
+        quoteCta:
+          "Hantar kawasan, gambar dan anggaran ukuran anda di WhatsApp; kami akan menasihati sama ada sebut harga dari jauh atau penilaian tapak sesuai untuk projek anda, kemudian menyediakan sebut harga terperinci dengan terma waranti dinyatakan dengan jelas."
+      },
+      zh: {
+        eyebrow: "雨棚指南 · Awning Guide · Panduan Awning",
+        heading: "雨棚类型、材料与马来西亚住家的实用选择",
+        intro:
+          "雨棚（awning）是固定在建筑物或骨架上的屋顶状遮挡物，用来为户外空间遮阳，并让大门、窗户、墙面和走道免受雨淋。在马来西亚，雨棚之间的主要差别在于屋面材料、骨架，以及结构如何应对雨水和日晒。本指南说明常见的系统、各自适合的场所以及影响报价的因素，让您能针对吉隆坡与雪兰莪的天气做出合适的选择。",
+        typesHeading: "我们提供的常见雨棚类型",
+        typesIntro:
+          "以下是马来西亚住家和店铺最常要求的系统。最终是否合适始终取决于您的现场——跨度、风雨暴露、固定点和排水。",
+        types: [
+          { title: "聚碳酸酯雨棚", desc: "透光塑料板屋面，有透明、着色或古铜色型材，以及双层/多层中空板可选。轻质且透光，广泛用于车棚、晒衣区和走道；着色板可减少眩光与热量，透明板则最为明亮。" },
+          { title: "金属瓦雨棚", desc: "波纹或压型金属板屋面，通常为钢材，并有 PU 发泡隔热型材可选，以降低热量和雨声。坚固实惠，适用于工作区、晒衣区和车棚；钢制部件需要防锈底漆和正确饰面。" },
+          { title: "铝塑板（ACP）", desc: "硬质铝面板带来整洁、现代、不透明的外观，维护极少。遮光效果好，下雨时比薄板安静；常用于重视整洁外观的车棚和房屋正面。" },
+          { title: "钢化玻璃雨棚", desc: "以钢材或不锈钢骨架支撑的安全玻璃板，为入口或窗户提供高档、明亮的遮挡。透光又能挡雨，除清洁外几乎免维护；骨架与固定方式需与跨度匹配。" },
+          { title: "帆布与布艺雨棚", desc: "用于阳台、露台、天台和店面的固定布艺雨篷和伸缩式布艺系统。以遮阳和美观为优先；布艺需要清洗并最终更换，不适宜作为永久防雨屋顶。" },
+          { title: "伸缩式雨棚", desc: "手动或电动折叠雨棚，需要遮阳时打开、不用时收回。最适合阳台、露台和店面，而非车棚的永久遮蔽。是否提供取决于施工范围与供应商；欢迎询问是否适合您的用途。" }
+        ],
+        comparisonHeading: "雨棚材料对比",
+        comparisonIntro:
+          "常见雨棚系统的实用对比。没有一种材料“最好”——合适的选择取决于位置、跨度、暴露环境、期望外观、预算、维护偏好、排水和结构要求。",
+        comparison: {
+          headers: ["雨棚类型", "主要优点", "适合场所", "维护", "天气考量"],
+          rows: [
+            ["聚碳酸酯", "轻质；让自然光进入；性价比好", "车棚、晒衣区、走道、阳台", "低——定期冲洗；清理板面和天沟落叶", "能应对日晒雨淋；着色型材减少热量；接缝/坡度须做对以防漏"],
+            ["金属瓦", "坚固、耐用、实惠；有隔热型材", "工作区、晒衣区、车棚、作坊", "中——检查并处理钢架锈点", "隔热型材减少热量和雨声；普通薄板传热，大雨时可能较吵"],
+            ["铝塑板（ACP）", "不透明、外观现代整洁；维护极低", "车棚、房屋正面、露台、庭院", "极低——偶尔冲洗；板材不生锈", "遮光隔热效果好；雨天更安静；跨度需要适当支撑以防下垂"],
+            ["钢化玻璃", "外观高档；采光最佳；易清洁", "入口、大门、窗户、特色区域", "极低——像窗户一样清洁；检查密封", "坚固安全玻璃；骨架和固定须匹配跨度；比板材更重"],
+            ["帆布 / 布艺", "遮阳美观；可做成伸缩式", "阳台、露台、天台、店面", "中——清洗布艺；使用寿命内需更换布面", "以遮阳为先；非永久防雨屋顶；大风/风暴时应收起"],
+            ["伸缩式系统", "按需遮阳；收回后保留景观/光线", "阳台、露台、天台、店面", "中——活动部件和布艺需要保养", "方便但非固定遮蔽；大风和暴风雨时应收起"]
+          ],
+          caption: "适用于吉隆坡与雪兰莪环境的一般指引。材料表现取决于产品等级、安装质量与维护——您的报价单会明确列出所包含的内容。"
+        },
+        applicationsHeading: "雨棚的使用场所",
+        applicationsIntro:
+          "凡户外空间需要遮阳挡雨，都可以安装雨棚。常见的报价应用包括：",
+        applications: [
+          { title: "车棚 / 车位", desc: "保护车辆免受直晒、紫外线和雨水影响，并让上下车区域可使用。排水与隔热材料是主要考量。" },
+          { title: "前门入口与大门", desc: "为访客和大门挡雨，保护入口饰面，并为屋前或店门增添整洁外观。" },
+          { title: "窗户", desc: "小型窗户雨棚减少雨水打在玻璃上的痕迹，并阻挡直射阳光进入室内，又不遮蔽光线。" },
+          { title: "阳台、露台与天台", desc: "打造可使用的阴凉户外空间，用于休憩、晾晒或种植——常采用聚碳酸酯、布艺或伸缩式系统。" },
+          { title: "后门与晒衣区", desc: "覆盖工作区、晒衣区和后门入口，雨天也能使用，常见经济的金属或聚碳酸酯系统。" },
+          { title: "走道与屋侧通道", desc: "用透光聚碳酸酯把大门、栅栏或停车处与房屋连接成干爽、明亮的通道。" },
+          { title: "店面与商业场所", desc: "为商店、办公室和轻型商业场所的入口、招牌和走道遮阳，须遵守地方政府与物业管理规定。" }
+        ],
+        problemsHeading: "常见雨棚问题——以及我们的处理方式",
+        problemsIntro:
+          "大多数雨棚问题源于设计、固定或维护，而不仅仅是材料本身。以下是各类问题的典型处理方式：",
+        problems: [
+          { title: "入口被雨打进来", desc: "雨棚的伸出长度、高度和侧边造型决定挡雨效果。我们按门口或车棚尺寸设计覆盖范围，并规划坡度让雨水流向远离入口的一侧。" },
+          { title: "阳光和眩光太强", desc: "材料决定光线：着色/古铜色聚碳酸酯、ACP 和金属瓦比透明板阻挡更多眩光，玻璃则保持明亮。我们根据朝向和空间用途匹配合适材料。" },
+          { title: "覆盖区闷热", desc: "雨棚为正下方区域遮阳；不透明和着色材料比透明板更能减少热量。我们会推荐适合用途的材料（例如停车位上方用着色聚碳酸酯或隔热板），但不承诺具体的室内降温数字。" },
+          { title: "骨架生锈", desc: "钢架会施以防锈底漆和粉末喷涂或耐候饰面；外露结构钢可讨论热镀锌。既有锈迹在重新喷漆前先处理；若骨架已弱化则更换。" },
+          { title: "屋顶积水", desc: "积水通常表示坡度或支撑不足。维修或更换时会重新设定坡度，必要时增加中间支撑，并把水流导向天沟或正确的边缘。" },
+          { title: "雨棚漏水", desc: "漏水常见于面板开裂、接缝和墙面泛水板密封胶老化、紧固件松动或排水堵塞。我们先检查找出源头，再针对性维修或更换，而不是盲目猜测。" },
+          { title: "结构下垂或不稳", desc: "雨棚下垂可能意味着骨架规格不足、固定点薄弱或材料劣化。沿用前应评估结构；我们根据评估结果建议维修或更换，不预设特定工程处理方案。" },
+          { title: "雨棚老旧、开裂或发黄", desc: "老化的聚碳酸酯、褪色布艺或腐蚀骨架都适合更换。我们评估哪些部分可沿用，对新屋面或整体结构报价，并可把拆除旧雨棚纳入工程。" }
+        ],
+        climateHeading: "为马来西亚热带气候而设计",
+        climateIntro:
+          "吉隆坡与雪兰莪的雨棚要面对烈日、紫外线、高湿度、突如其来的大雨，以及偶尔的强风。我们在设计中考虑的实际要点：",
+        climatePoints: [
+          "暴雨——足够的坡度、牢固的墙面泛水板，必要时加装天沟或落水管，让雨水迅速排走，不积水、不错位滴漏。",
+          "烈日与紫外线——抗 UV 板材与粉末喷涂/耐候饰面骨架可抗褪色；着色和不透明材料减少覆盖区下方的热量与眩光。",
+          "湿度、污垢、苔藓和藻类——水平面和透光面日久会积垢；定期冲洗能保持聚碳酸酯和玻璃通透，并避免有机物长期附着吸湿腐蚀骨架。",
+          "腐蚀——钢架施以防锈底漆和耐候饰面；最暴露的结构部位可考虑热镀锌或不锈钢/铝构件。",
+          "偶发强风——牢固固定到可靠结构、合适的紧固件，以及风暴时收起布艺系统都很重要。我们不做“防风”“防风暴”之类的承诺；正确的固定、支撑、选材和排水才是热带天气下的实际保障。"
+        ],
+        quoteHeading: "雨棚报价如何运作",
+        quoteIntro:
+          "由于每个雨棚都按具体现场制作，我们不发布笼统的“起价”。您的项目专项报价取决于：",
+        quoteFactors: [
+          "宽度、伸出长度和总覆盖面积",
+          "屋面材料——聚碳酸酯、金属瓦、ACP、玻璃或布艺——以及板材/面板型材或色调",
+          "骨架材料与规格（低碳钢、铝或不锈钢）和饰面（粉末喷涂或耐候涂层）",
+          "高度、施工通道与安装难度（高楼层、公寓、脚手架或设备需求）",
+          "现有结构与固定点，以及是否需要加固",
+          "排水需求——天沟、落水管、泛水板和密封胶",
+          "是否需要拆除和清运旧雨棚",
+          "颜色、定制设计以及任何分层地契/地方政府的规格要求"
+        ],
+        quoteCta:
+          "请通过 WhatsApp 发送您的地区、照片和大致尺寸；我们会建议您的项目适合远程报价还是上门评估，随后提供明细报价并清楚载明保修条款。"
+      }
+    },
+    i18n: {
+      ms: {
+        title: "Perkhidmatan Pemasangan Awning",
+        tagline:
+          "Awning tersuai dan bumbung awning untuk car porch, pintu masuk, tingkap, balkoni dan halaman rumah di seluruh KL & Selangor — sistem polikarbonat, metal deck, panel komposit aluminium (ACP), kaca dan fabrik, difabrikasi dan dipasang mengikut tapak anda. Harga atas sebut harga projek.",
+        description:
+          "KL Servis Rumah mereka bentuk, memfabrikasi dan memasang awning kediaman serta komersial ringan di seluruh Kuala Lumpur dan Selangor. Kerja awning kami meliputi pemasangan awning tetap baharu dan bumbung awning untuk car porch, pintu masuk depan dan belakang, pintu, tingkap, balkoni, patio, ruang jemuran, laluan pejalan kaki dan kedai, serta penggantian awning lama yang bocor atau rosak. Kami bekerja dengan sistem awning yang biasa digunakan di Malaysia — bumbung kepingan polikarbonat, bumbung metal deck, panel komposit aluminium (ACP), kaca tempered dan pilihan kanvas/fabrik — dengan rangka keluli lembut atau aluminium yang diberi primer anti-karat serta kemasan powder-coat atau tahan cuaca. Setiap projek bermula daripada kegunaan dan keadaan tapak anda: lebar, unjuran, pendedahan kepada hujan dan matahari, titik pengancing, saliran dan rupa yang anda mahukan. Kami membincangkan pilihan bahan dan reka bentuk, menyediakan sebut harga khusus projek dengan skop yang diperincikan, kemudian memfabrikasi dan memasang dengan teliti dari segi pengancing, kecerunan dan aliran air. Saliran, pengedap pada sambungan dan pengikat, serta bahan yang sesuai dengan pendedahan cuaca adalah sebahagian daripada perbincangan reka bentuk, kerana awning dalam cuaca tropika Malaysia perlu menampung hujan lebat, matahari terik dan kelembapan selama bertahun-tahun. Perlindungan waranti bergantung kepada bahan yang dipilih, skop pemasangan dan terma sebut harga yang dipersetujui. Hubungi KL Servis Rumah di WhatsApp dengan lokasi, gambar dan anggaran ukuran anda untuk sebut harga khusus projek.",
+        highlights: [
+          "Awning tersuai untuk car porch, pintu masuk, pintu, tingkap, balkoni, patio, halaman, laluan pejalan kaki dan kedai",
+          "Pilihan awning polikarbonat, metal deck, panel komposit aluminium (ACP), kaca tempered dan kanvas/fabrik dibincangkan mengikut tapak anda",
+          "Rangka keluli lembut atau aluminium dengan primer anti-karat serta kemasan powder-coat atau tahan cuaca",
+          "Reka bentuk mengikut tapak: rentang, unjuran, titik pengancing, kecerunan, saliran dan pengedap dirancang sebelum fabrikasi",
+          "Penggantian awning lama, bocor, berkarat atau melendut, termasuk pembongkaran struktur sedia ada mengikut persetujuan",
+          "Sebut harga khusus projek yang diperincikan, dengan skop dan terma waranti disahkan sebelum kerja bermula"
+        ],
+        subServices: [
+          { name: "Pemasangan Awning Car Porch", price: "Atas Sebut Harga", desc: "Awning car porch/port kereta baharu untuk melindungi kenderaan daripada matahari dan hujan, bersaiz mengikut porch anda dengan kecerunan dan saliran yang sesuai." },
+          { name: "Awning Polikarbonat", price: "Atas Sebut Harga", desc: "Bumbung awning kepingan polikarbonat dalam profil jernih atau tinted — penutup lut cahaya dan ringan untuk porch, halaman, laluan atau balkoni." },
+          { name: "Awning Metal Deck", price: "Atas Sebut Harga", desc: "Bumbung awning metal deck/kepingan logam untuk perlindungan hujan dan matahari yang kuat di kawasan utiliti, ruang jemuran dan porch, dengan rangka dirawat anti-karat." },
+          { name: "Awning Panel Komposit Aluminium (ACP)", price: "Atas Sebut Harga", desc: "Awning panel komposit aluminium — penutup legap, kemas dan kurang penyelenggaraan yang mengurangkan silau dan bunyi hujan untuk porch dan halaman." },
+          { name: "Awning Kaca", price: "Atas Sebut Harga", desc: "Awning kaca tempered untuk pintu masuk, tingkap dan kawasan ciri yang mahukan penampilan premium dan terang, dengan rangka dan pengancing yang sesuai." },
+          { name: "Awning Kanvas & Fabrik", price: "Atas Sebut Harga", desc: "Awning kanvas/fabrik tetap dan gaya boleh-tarik untuk balkoni, patio, teres dan kedai di mana teduhan dan rupa menjadi keutamaan." },
+          { name: "Awning Balkoni, Patio & Tingkap", price: "Atas Sebut Harga", desc: "Awning bersaiz untuk balkoni, patio, teres, tingkap dan pintu — teduhan dan perlindungan hujan tanpa menutup ruang." },
+          { name: "Penggantian & Pembaikan Awning", price: "Atas Sebut Harga", desc: "Menggantikan awning lama, bocor, berkarat atau melendut — pemeriksaan rangka, bumbung, sambungan dan saliran sedia ada, dengan pilihan pembaikan atau penggantian penuh." }
+        ],
+        process: [
+          { step: "01", title: "Pertanyaan & Kegunaan", desc: "Anda beritahu kami di mana awning akan dipasang — car porch, pintu masuk, tingkap, balkoni, halaman atau kedai — dan hantar gambar serta anggaran ukuran di WhatsApp." },
+          { step: "02", title: "Penilaian Tapak", desc: "Jika gambar dan ukuran tidak mencukupi, kami aturkan penilaian tapak untuk menyemak rentang, titik pengancing, struktur sedia ada, akses dan saliran." },
+          { step: "03", title: "Pilihan Bahan & Reka Bentuk", desc: "Kami bincangkan pilihan polikarbonat, metal deck, ACP, kaca atau fabrik, rangka dan kemasan, warna, unjuran serta kecerunan untuk aliran air." },
+          { step: "04", title: "Sebut Harga & Skop", desc: "Anda menerima sebut harga khusus projek yang diperincikan meliputi bahan, fabrikasi, pemasangan, pembongkaran awning lama (jika ada) dan terma waranti." },
+          { step: "05", title: "Fabrikasi & Pemasangan", desc: "Komponen difabrikasi, kemudian dihantar dan dipasang di tapak dengan penambat, pengikat, pengedap dan flashing yang sesuai, dan kawasan dibersihkan selepasnya." },
+          { step: "06", title: "Pemeriksaan & Serahan", desc: "Kami semak pengancing, penjajaran, kecerunan dan aliran air bersama anda, sahkan skop selesai dan serahkan dengan terma waranti yang dipersetujui." }
+        ],
+        faqs: [
+          { q: "Berapa kos pemasangan awning di Kuala Lumpur dan Selangor?", a: "Kerja awning diberi harga mengikut projek, bukan kadar tetap, kerana kos bergantung pada lebar rentang, unjuran, jumlah kawasan, bahan (polikarbonat, metal deck, ACP, kaca atau fabrik), rangka dan kemasan, ketinggian dan akses, keperluan saliran dan sama ada awning lama perlu ditanggalkan. Hantar lokasi, gambar dan anggaran ukuran di WhatsApp dan KL Servis Rumah akan menyediakan sebut harga khusus projek yang diperincikan. Angka harga pasaran berbeza secara meluas mengikut bahan dan saiz, jadi kami tidak memberi harga generik tanpa melihat kegunaannya." },
+          { q: "Jenis awning apa yang paling sesuai untuk rumah di Malaysia?", a: "Tiada bahan yang paling sesuai untuk semua — pilihan bergantung pada kegunaan, pendedahan cuaca, cahaya yang diingini, rupa, bajet dan pilihan penyelenggaraan. Polikarbonat adalah pilihan biasa, ringan dan lut cahaya untuk porch dan halaman; metal deck tahan lama dan menjimatkan untuk kawasan utiliti tetapi boleh menghantar haba dan bunyi hujan; panel komposit aluminium (ACP) legap, kemas dan kurang penyelenggaraan; kaca tempered memberi kemasan premium dan terang; manakala kanvas/fabrik sesuai untuk balkoni dan kedai. Kami mengesyorkan sistem untuk tapak khusus anda, bukan 'terbaik' secara umum." },
+          { q: "Adakah polikarbonat sesuai untuk cuaca Malaysia?", a: "Polikarbonat digunakan secara meluas di Malaysia kerana ringan, tahan hentaman dan tersedia dalam profil jernih atau tinted yang membenarkan cahaya semula jadi masuk sambil meneduhkan hujan. Kepingan jernih menghantar lebih banyak cahaya dan haba, manakala profil tinted atau gangsa mengurangkan silau dan haba. Seperti bahan bumbung lain, ia memerlukan kecerunan, pengedap dan pembersihan berkala yang betul; prestasi jangka panjang bergantung pada kualiti kepingan, pengancing dan penyelenggaraan, bukan bahan sahaja." },
+          { q: "Mana lebih baik, awning polikarbonat atau logam?", a: "Setiap satu ada kelebihannya. Polikarbonat lebih ringan dan lut cahaya, jadi kawasan lebih terang dan beban struktur lebih rendah, tetapi kepingan yang lebih murah boleh pudar atau retak dari masa ke masa dan sambungan mesti diedap dengan baik. Metal deck kuat, menjimatkan dan cepat dipasang, tetapi ia mengalirkan lebih banyak haba dan boleh bising semasa hujan lebat kecuali profil bertebat digunakan; komponen keluli perlu rawatan anti-karat. Untuk car porch yang mengutamakan haba, polikarbonat tinted, metal deck bertebat atau ACP lazimnya dipertimbangkan; kami menasihati berdasarkan tapak anda." },
+          { q: "Berapa lama pemasangan awning mengambil masa?", a: "Penggantian yang mudah atau awning porch kecil selalunya boleh siap dalam satu hari selepas bahan tersedia, manakala awning lebih besar atau fabrikasi tersuai memerlukan masa tunggu fabrikasi serta satu atau lebih hari pemasangan. Masa tepat bergantung pada saiz, bahan, akses dan sama ada awning lama ditanggalkan. Kami mengesahkan jadual bersama sebut harga anda, bukan menjanjikan tempoh tetap terlebih dahulu." },
+          { q: "Bolehkah awning dipasang di car porch?", a: "Boleh. Car porch adalah salah satu kegunaan awning yang paling biasa di KL dan Selangor. Rentang porch, titik pengancing pada dinding dan rasuk, ruang kenderaan, saliran dan pendedahan haba menentukan saiz rangka, unjuran dan bahan — polikarbonat tinted, ACP atau metal deck bertebat popular untuk kawasan letak kereta kerana mengurangkan haba di atas kereta. Kami menilai porch sebelum memuktamadkan reka bentuk." },
+          { q: "Bolehkah awning lama diganti?", a: "Boleh. Kami memeriksa bumbung, rangka, sambungan, pengikat, pengedap dan saliran sedia ada untuk melihat sama ada struktur masih kukuh atau perlu diganti. Sebab biasa penggantian: polikarbonat retak atau kuning, rangka berkarat, sambungan bocor, air bertakung di bumbung rata, dan awning melendut kerana sokongan tidak mencukupi. Sebut harga boleh merangkumi pembongkaran dan pelupusan awning lama mengikut persetujuan." },
+          { q: "Adakah awning perlu diselenggara secara berkala?", a: "Awning rendah penyelenggaraan tetapi bukan tanpa penyelenggaraan. Membersihkan daun dan kotoran dari permukaan bumbung serta longkang secara berkala, memastikan air masih mengalir bebas, mencuci kotoran atau alga pada polikarbonat atau kaca, dan mengecat semula tompok karat pada rangka keluli membantu awning tahan lebih lama. Kebocoran biasanya berpunca daripada kepingan rosak, pengedap yang sudah tua, pengikat longgar atau saliran tersumbat, dan ini patut ditangani awal." },
+          { q: "Bolehkah awning mengurangkan cahaya matahari dan haba?", a: "Awning memberi teduhan terus di kawasan yang diliputi dan menghalang hujan serta matahari terus daripada pintu, tingkap dan dinding, yang menjadikan ruang luar lebih selesa. Bahan legap (ACP, metal deck, polikarbonat tinted) menyekat lebih banyak silau dan haba berbanding kepingan jernih. Kami tidak menjanjikan pengurangan suhu dalaman tertentu, kerana itu bergantung pada bahan, arah matahari, pengudaraan dan bangunan itu sendiri." },
+          { q: "Maklumat apa yang diperlukan untuk sebut harga awning?", a: "Maklumat paling berguna: lokasi/kawasan anda, di mana awning akan dipasang (porch, balkoni, tingkap, halaman, kedai), anggaran lebar dan unjuran, gambar tapak dan titik pengancing, bahan atau rupa yang anda suka, sama ada awning lama perlu ditanggalkan, dan sebarang peraturan strata atau pengurusan. Dengan gambar dan ukuran, banyak sebut harga boleh disediakan dari jauh; kami aturkan penilaian tapak apabila projek memerlukannya." },
+          { q: "Adakah pemasangan awning memerlukan lawatan tapak?", a: "Tidak semestinya. Untuk penggantian mudah atau kegunaan standard, gambar yang jelas dengan ukuran mungkin mencukupi untuk sebut harga. Penilaian tapak diatur apabila rentang besar, titik pengancing atau struktur sedia ada tidak jelas, akses sukar, saliran perlu dirancang, atau reka bentuk tersuai. Kami akan memaklumkan sama ada lawatan diperlukan untuk projek anda." },
+          { q: "Adakah permit atau kelulusan bangunan diperlukan untuk awning?", a: "Keperluan bergantung pada jenis hartanah dan pihak berkuasa tempatan. Rumah landed, hartanah strata (kondominium, pangsapuri, komuniti berpagar), lot kedai dan premis komersial mungkin mempunyai peraturan berbeza, dan garis panduan JMB/MC atau majlis tempatan (cth. DBKL/MBSA/MBPJ) boleh mengehadkan unjuran, ketinggian atau rupa. Kami menasihatkan pelanggan supaya mengesahkan kelulusan yang terpakai untuk hartanah mereka; kami boleh menyediakan skop, ukuran dan spesifikasi untuk menyokong permohonan, tetapi pelanggan patut mengesahkan keperluan dengan pejabat pengurusan atau majlis tempatan." },
+          { q: "Bagaimana saliran awning dikendalikan?", a: "Saliran dirancang dalam reka bentuk: awning diberi kecerunan mencukupi supaya air hujan mengalir ke sisi atau longkang yang dimaksudkan, bukannya bertakung; sambungan dan flashing dinding diedap, dan longkang atau paip bawah boleh ditambah di mana jumlah air memerlukannya. Air bertakung biasanya tanda kecerunan atau sokongan tidak mencukupi, dan ia antara perkara yang kami semak pada awning lama atau bocor." },
+          { q: "Bolehkah awning disesuaikan dari segi warna dan reka bentuk?", a: "Boleh. Warna rangka, tinted kepingan, warna ACP, jenis kaca dan profil keseluruhan biasanya boleh dipilih untuk dipadankan dengan rumah atau kedai, tertakluk pada ketersediaan bahan. Rentang, unjuran dan bentuk tersuai difabrikasi mengikut ukuran tapak. Kami bincangkan pilihan semasa langkah reka bentuk dan memberi sebut harga untuk kemasan tersuai." },
+          { q: "Apakah pilihan awning yang tersedia di KL dan Selangor?", a: "Di seluruh Kuala Lumpur dan Selangor, pemasangan yang biasa ialah awning polikarbonat (jernih atau tinted), awning metal deck, awning panel komposit aluminium (ACP), awning kaca tempered dan awning kanvas/fabrik — untuk car porch, pintu masuk, tingkap, balkoni, patio, ruang jemuran, laluan pejalan kaki dan kedai, serta penggantian awning sedia ada. Sistem boleh-tarik (retractable) dan bermotor boleh dibincangkan bergantung pada skop dan ketersediaan pembekal; beritahu kami kegunaan anda dan kami akan sahkan pilihan yang sesuai." }
+        ],
+        metaTitle: "Pemasangan Awning KL & Selangor | Awning Car Porch & Polikarbonat",
+        metaDesc:
+          "Pemasangan awning tersuai di KL & Selangor: car porch, polikarbonat, metal deck, ACP, kaca dan fabrik, serta penggantian awning. Minta sebut harga projek di WhatsApp.",
+        aioSummary:
+          "KL Servis Rumah memasang awning tersuai dan bumbung awning di seluruh Kuala Lumpur & Selangor untuk car porch, pintu masuk, tingkap, balkoni, patio, halaman, laluan pejalan kaki dan kedai, menggunakan polikarbonat, metal deck, panel komosit aluminium (ACP), kaca tempered atau fabrik pada rangka keluli/aluminium dengan kemasan anti-karat. Perkhidmatan termasuk awning tetap baharu dan penggantian awning lama/bocor/berkarat, dengan reka bentuk mengambil kira tapak untuk kecerunan, saliran, pengancing dan pengedap. Semua kerja diberi sebut harga projek dengan skop terperinci dan terma waranti yang dinyatakan dalam sebut harga.",
+        warranty: "Waranti mutu kerja seperti yang dinyatakan dalam sebut harga anda"
+      },
+      zh: {
+        title: "雨棚安装服务",
+        tagline:
+          "为吉隆坡与雪兰莪的车棚、入口、窗户、阳台及庭院定制雨棚与雨棚屋顶——聚碳酸酯、金属瓦、铝塑板（ACP）、玻璃与布艺系统，按现场尺寸制作安装。价格按项目报价。",
+        description:
+          "KL Servis Rumah 在吉隆坡与雪兰莪设计、制作并安装住宅与轻型商业雨棚。我们的雨棚工程涵盖车棚、前后入口、大门、窗户、阳台、露台、晒衣区、走道和店面的全新固定雨棚及雨棚屋顶，并可更换老旧、漏水或损坏的雨棚。我们采用马来西亚常见的雨棚系统——聚碳酸酯板、金属瓦（metal deck）、铝塑复合板（ACP）、钢化玻璃以及帆布/布艺选项，骨架为低碳钢或铝材，施以防锈底漆并配粉末喷涂或耐候面漆。每个项目都从您的用途和现场条件出发：宽度、伸出长度、风雨暴露程度、固定点、排水和您想要的外观。我们先与您讨论材料和设计方案，提供列明施工范围的项目专项报价，再进行制作与安装，并在固定、坡度和水流方向上加以把关。排水、接缝与紧固件的密封、以及材料与暴露环境的匹配，都是设计沟通的一部分，因为在马来西亚的热带气候下，雨棚需要长期承受大雨、烈日和高湿。保修范围取决于所选材料、安装范围及报价单中约定的条款。欢迎通过 WhatsApp 发送您的位置、照片和大致尺寸，向 KL Servis Rumah 获取项目专项报价。",
+        highlights: [
+          "适用于车棚、入口、大门、窗户、阳台、露台、庭院、走道及店面的定制雨棚",
+          "按现场情况提供聚碳酸酯、金属瓦、铝塑板（ACP）、钢化玻璃及帆布/布艺等选项",
+          "低碳钢或铝材骨架，配防锈底漆及粉末喷涂或耐候饰面",
+          "按现场设计：制作前规划跨度、伸出、固定点、坡度、排水与密封",
+          "更换老旧、漏水、生锈或下垂的雨棚，并可按约定拆除原有结构",
+          "开工前提供项目专项明细报价，确认施工范围与保修条款"
+        ],
+        subServices: [
+          { name: "车棚雨棚安装", price: "依报价", desc: "全新车棚（car porch）雨棚，为车辆遮阳挡雨，按您的车棚尺寸制作，配合适坡度与排水。" },
+          { name: "聚碳酸酯雨棚", price: "依报价", desc: "透明或着色聚碳酸酯板雨棚屋顶——透光、轻质，适用于车棚、庭院、走道或阳台。" },
+          { name: "金属瓦雨棚", price: "依报价", desc: "金属瓦/金属板雨棚屋顶，为工作区、晒衣区和车棚提供强力挡雨防晒，钢架经防锈处理。" },
+          { name: "铝塑板（ACP）雨棚", price: "依报价", desc: "铝塑复合板雨棚——不透明、线条简洁、维护少，可减少眩光与雨声，适用于车棚与庭院。" },
+          { name: "玻璃雨棚", price: "依报价", desc: "用于入口、窗户和特色区域的钢化玻璃雨棚，外观高档、采光好，骨架与固定方式按跨度匹配。" },
+          { name: "帆布与布艺雨棚", price: "依报价", desc: "适用于阳台、露台、天台和店面的固定帆布及伸缩式布艺雨棚，以遮阳与美观为优先。" },
+          { name: "阳台、露台与窗户雨棚", price: "依报价", desc: "为阳台、露台、天台、窗户和门量身定制的雨棚——遮阳挡雨又不封闭空间。" },
+          { name: "雨棚更换与维修", price: "依报价", desc: "更换老旧、漏水、生锈或下垂的雨棚——检查原有骨架、面板、接缝与排水，提供维修或整体更换方案。" }
+        ],
+        process: [
+          { step: "01", title: "咨询与用途", desc: "您告诉我们雨棚的位置——车棚、入口、窗户、阳台、庭院或店面——并通过 WhatsApp 发送照片和大致尺寸。" },
+          { step: "02", title: "现场评估", desc: "当照片和尺寸不足时，我们安排上门评估，检查跨度、固定点、现有结构、施工通道和排水。" },
+          { step: "03", title: "材料与设计方案", desc: "我们讨论聚碳酸酯、金属瓦、ACP、玻璃或布艺选项，以及骨架、饰面、颜色、伸出长度和排水所需坡度。" },
+          { step: "04", title: "报价与范围", desc: "您将收到项目专项明细报价，涵盖材料、制作、安装、旧雨棚拆除（如需）及保修条款。" },
+          { step: "05", title: "制作与安装", desc: "构件完成制作后运抵现场，以合适的锚栓、紧固件、密封胶和泛水板固定，完工后清理现场。" },
+          { step: "06", title: "检查与交付", desc: "我们与您一同检查固定、对齐、坡度与水流，确认施工范围完成，并按约定保修条款交付。" }
+        ],
+        faqs: [
+          { q: "在吉隆坡和雪兰莪安装雨棚要多少钱？", a: "雨棚按项目计价，没有固定收费，因为成本取决于跨度宽度、伸出长度、总面积、材料（聚碳酸酯、金属瓦、ACP、玻璃或布艺）、骨架与饰面、高度与施工通道、排水需求，以及是否需要拆除旧雨棚。请通过 WhatsApp 发送位置、照片和大致尺寸，KL Servis Rumah 会提供项目专项明细报价。市面上的价格因材料和尺寸差异很大，因此在未了解用途前我们不报笼统价格。" },
+          { q: "马来西亚的房子用哪种雨棚最好？", a: "没有一种材料适用于所有情况——正确选择取决于用途、暴露环境、想要的光线、外观、预算和维护偏好。聚碳酸酯常见、轻质且透光，适用于车棚和庭院；金属瓦耐用实惠，适合工作区，但会传导较多热量和雨声；铝塑板（ACP）不透明、外观整洁、维护少；钢化玻璃外观高档、通透明亮；帆布/布艺则适合阳台和店面。我们针对您的具体现场推荐合适系统，而不是说某一种“最好”。" },
+          { q: "聚碳酸酯适合马来西亚的天气吗？", a: "聚碳酸酯在马来西亚被广泛使用，因为它轻质、耐冲击，并有透明或着色型材可选，既能遮雨又可让自然光进入。透明板透入的光和热更多，着色或古铜色型材可减少眩光与热量。和任何屋面材料一样，它需要正确的坡度、密封和定期清洁；长期表现取决于板材质量、固定工艺和维护，而不仅仅是材料本身。" },
+          { q: "聚碳酸酯雨棚和金属雨棚哪个更好？", a: "两者各有取舍。聚碳酸酯更轻、透光，使区域更明亮、结构负荷更小，但较便宜的板材日久可能变色或开裂，接缝必须密封良好。金属瓦坚固、实惠、安装快，但传热较多，除非使用隔热型材，否则大雨时较吵；钢构件需要防锈处理。对于重视隔热的车棚，通常会考虑着色聚碳酸酯、隔热金属瓦或 ACP；我们会根据您的现场给出建议。" },
+          { q: "安装雨棚需要多长时间？", a: "简单的更换或小车棚雨棚在材料齐备后通常一天内可完成；较大或定制的雨棚则需要制作周期加上一天或多天安装。具体时间取决于尺寸、材料、通道以及是否拆除旧雨棚。我们会在报价时确认工期，而不是预先承诺固定天数。" },
+          { q: "车棚上可以装雨棚吗？", a: "可以。车棚是吉隆坡与雪兰莪最常见的雨棚用途之一。车棚跨度、墙体和横梁固定点、车辆净空、排水和日晒情况决定骨架规格、伸出长度和材料——着色聚碳酸酯、ACP 或隔热金属瓦在停车区很受欢迎，因为它们能减少车辆上方的热量积聚。我们会在定稿设计前评估车棚。" },
+          { q: "旧雨棚可以更换吗？", a: "可以。我们会检查现有面板、骨架、接缝、紧固件、密封胶和排水，判断结构是否还可沿用或需要更换。常见更换原因包括聚碳酸酯开裂或发黄、钢架生锈、接缝漏水、平顶积水，以及支撑不足导致的下垂。报价可按约定包含旧雨棚的拆除与清运。" },
+          { q: "雨棚需要定期维护吗？", a: "雨棚维护需求低，但并非免维护。定期清理屋面和天沟的落叶杂物、确认排水通畅、清洗聚碳酸酯或玻璃上的污垢藻类，并对钢架锈斑及时补漆，都有助于延长寿命。漏水通常源于面板破损、密封胶老化、紧固件松动或排水堵塞，而非材料本身，这类问题应尽早处理。" },
+          { q: "雨棚能减少阳光和热气吗？", a: "雨棚为覆盖区域提供直接遮蔽，阻挡雨水和直射阳光落在门、窗和墙面上，可让室外覆盖空间更舒适。不透明材料（ACP、金属瓦、着色聚碳酸酯）比透明板阻挡更多眩光和热量。我们不承诺具体的室内降温幅度，因为这取决于材料、朝向、通风和建筑本身。" },
+          { q: "雨棚报价需要哪些信息？", a: "最有用的信息包括：您所在地区、雨棚位置（车棚、阳台、窗户、庭院、店面）、大致宽度和伸出长度、现场及固定点照片、偏好的材料或外观、是否需要拆除旧雨棚，以及任何分层地契（strata）或物业管理规定。有了照片和尺寸，许多报价可以远程完成；项目需要时我们再安排上门评估。" },
+          { q: "安装雨棚一定要上门查看吗？", a: "不一定。对于简单的更换或标准用途，清晰的照片加尺寸可能就足够报价。当跨度较大、固定点或现有结构不明确、施工通道困难、需要规划排水，或是定制设计时，我们会安排上门评估。我们会告知您的项目是否需要上门。" },
+          { q: "安装雨棚需要申请准证或建筑批准吗？", a: "要求取决于房产类型和地方政府。有地住宅、分层房产（公寓、共管公寓、围篱社区）、店铺和商业场所各有不同规则，物业管理（JMB/MC）指南或地方议会（如 DBKL/MBSA/MBPJ）可能对伸出长度、高度或外观有所限制。我们建议客户向管理处或地方议会确认适用的审批要求；我们可提供施工范围、尺寸和规格以协助申请，但准证事宜应由客户与管理方核实。" },
+          { q: "雨棚排水怎么处理？", a: "排水在设计阶段就会规划：雨棚设有足够坡度，让雨水流向预定的一侧或天沟而非积水；接缝和墙面泛水板做好密封，水量大时可加天沟和落水管。积水通常是坡度或支撑不足的信号，也是我们检查老旧或漏水雨棚时的重点之一。" },
+          { q: "雨棚的颜色和设计可以定制吗？", a: "可以。骨架颜色、板材色调、ACP 颜色、玻璃类型和整体造型通常都可按房屋或店面风格选择，具体取决于材料供应。定制跨度、伸出长度和造型按现场尺寸制作。我们会在设计环节讨论选项，并对定制饰面相应报价。" },
+          { q: "在吉隆坡和雪兰莪有哪些雨棚选择？", a: "在吉隆坡与雪兰莪，常见安装包括聚碳酸酯雨棚（透明或着色）、金属瓦雨棚、铝塑板（ACP）雨棚、钢化玻璃雨棚和帆布/布艺雨棚——用于车棚、入口、窗户、阳台、露台、晒衣区、走道和店面，以及现有雨棚更换。伸缩式和电动系统可根据施工范围和供应商情况讨论；告诉我们您的用途，我们会确认适合的选项。" }
+        ],
+        metaTitle: "吉隆坡与雪兰莪雨棚安装 | 车棚与聚碳酸酯雨棚",
+        metaDesc:
+          "吉隆坡与雪兰莪定制雨棚安装：车棚、聚碳酸酯、金属瓦、ACP、玻璃与布艺雨棚，以及雨棚更换。通过 WhatsApp 获取项目报价。",
+        aioSummary:
+          "KL Servis Rumah 在吉隆坡与雪兰莪安装定制雨棚及雨棚屋顶，适用于车棚、入口、窗户、阳台、露台、庭院、走道和店面，采用聚碳酸酯、金属瓦、铝塑板（ACP）、钢化玻璃或布艺，配钢/铝骨架与防锈饰面。服务包括全新固定雨棚和老旧/漏水/生锈雨棚更换，设计按现场考虑坡度、排水、固定与密封。所有工程按项目报价，附明细范围与报价单载明的保修条款。",
+        warranty: "按报价单载明的工艺保修"
       }
     }
   }

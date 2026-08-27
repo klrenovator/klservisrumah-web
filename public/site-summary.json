@@ -212,6 +212,13 @@
       "startPrice": "RM 6,000",
       "warranty": "12-Month Workmanship + Up to 5-Year Waterproofing Warranty",
       "path": "/services/bathroom-renovation"
+    },
+    {
+      "slug": "awning-installation",
+      "title": "Awning Installation Services",
+      "startPrice": "On Quote",
+      "warranty": "Workmanship warranty as stated in your quotation",
+      "path": "/services/awning-installation"
     }
   ],
   "primaryHubs": [
@@ -608,12 +615,12 @@
     }
   ],
   "counts": {
-    "services": 28,
-    "subServices": 213,
+    "services": 29,
+    "subServices": 221,
     "areaPages": 37,
     "problemPages": 86,
     "blogPosts": 208,
-    "indexablePages": 4589
+    "indexablePages": 4712
   },
   "pricingPrinciple": "fair standard Malaysian pricing, itemised and confirmed in writing before work begins",
   "hours": "Mon–Sun · 9:00 AM – 6:00 PM (Everyday Open)",

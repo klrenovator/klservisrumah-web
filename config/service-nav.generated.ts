@@ -366,6 +366,19 @@ export const serviceNavBySlug: Record<string, ServiceNavItem> = {
         "title": "卫生间翻新"
       }
     }
+  },
+  "awning-installation": {
+    "slug": "awning-installation",
+    "title": "Awning Installation Services",
+    "startPrice": "On Quote",
+    "i18n": {
+      "ms": {
+        "title": "Perkhidmatan Pemasangan Awning"
+      },
+      "zh": {
+        "title": "雨棚安装服务"
+      }
+    }
   }
 };
 export const serviceNavList = Object.values(serviceNavBySlug);

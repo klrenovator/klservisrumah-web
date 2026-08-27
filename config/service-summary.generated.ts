@@ -2662,6 +2662,104 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
         "warranty": "12 个月工艺保修 + 最长 5 年防水保修"
       }
     }
+  },
+  "awning-installation": {
+    "slug": "awning-installation",
+    "title": "Awning Installation Services",
+    "startPrice": "On Quote",
+    "icon": "awning-canopy",
+    "tagline": "Custom awnings and awning roofing for car porches, entrances, windows, balconies and yards across KL & Selangor — polycarbonate, metal deck, aluminium composite (ACP), glass and fabric systems, fabricated and installed to suit your site. Project-quoted.",
+    "subServices": [
+      {
+        "name": "Car Porch Awning Installation"
+      },
+      {
+        "name": "Polycarbonate Awning"
+      },
+      {
+        "name": "Metal Deck Awning"
+      },
+      {
+        "name": "Aluminium Composite (ACP) Awning"
+      },
+      {
+        "name": "Glass Awning"
+      },
+      {
+        "name": "Canvas & Fabric Awning"
+      },
+      {
+        "name": "Balcony, Patio & Window Awning"
+      },
+      {
+        "name": "Awning Replacement & Repair"
+      }
+    ],
+    "warranty": "Workmanship warranty as stated in your quotation",
+    "i18n": {
+      "ms": {
+        "title": "Perkhidmatan Pemasangan Awning",
+        "tagline": "Awning tersuai dan bumbung awning untuk car porch, pintu masuk, tingkap, balkoni dan halaman rumah di seluruh KL & Selangor — sistem polikarbonat, metal deck, panel komposit aluminium (ACP), kaca dan fabrik, difabrikasi dan dipasang mengikut tapak anda. Harga atas sebut harga projek.",
+        "subServices": [
+          {
+            "name": "Pemasangan Awning Car Porch"
+          },
+          {
+            "name": "Awning Polikarbonat"
+          },
+          {
+            "name": "Awning Metal Deck"
+          },
+          {
+            "name": "Awning Panel Komposit Aluminium (ACP)"
+          },
+          {
+            "name": "Awning Kaca"
+          },
+          {
+            "name": "Awning Kanvas & Fabrik"
+          },
+          {
+            "name": "Awning Balkoni, Patio & Tingkap"
+          },
+          {
+            "name": "Penggantian & Pembaikan Awning"
+          }
+        ],
+        "warranty": "Waranti mutu kerja seperti yang dinyatakan dalam sebut harga anda"
+      },
+      "zh": {
+        "title": "雨棚安装服务",
+        "tagline": "为吉隆坡与雪兰莪的车棚、入口、窗户、阳台及庭院定制雨棚与雨棚屋顶——聚碳酸酯、金属瓦、铝塑板（ACP）、玻璃与布艺系统，按现场尺寸制作安装。价格按项目报价。",
+        "subServices": [
+          {
+            "name": "车棚雨棚安装"
+          },
+          {
+            "name": "聚碳酸酯雨棚"
+          },
+          {
+            "name": "金属瓦雨棚"
+          },
+          {
+            "name": "铝塑板（ACP）雨棚"
+          },
+          {
+            "name": "玻璃雨棚"
+          },
+          {
+            "name": "帆布与布艺雨棚"
+          },
+          {
+            "name": "阳台、露台与窗户雨棚"
+          },
+          {
+            "name": "雨棚更换与维修"
+          }
+        ],
+        "warranty": "按报价单载明的工艺保修"
+      }
+    }
   }
 };
 

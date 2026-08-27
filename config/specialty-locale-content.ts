@@ -12240,6 +12240,481 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       metaDesc: "吉隆坡与雪兰莪卫生间漏水维修：热成像诊断、免砸砖 PU 注浆、防水膜与天花修复。从 RM 350 起。免费报价。",
     }
   },
+
+  /* ── AWNING INSTALLATION ─────────────────────────────────────────────── */
+
+  "awning-installation/car-porch-awning-installation": {
+    ms: {
+      name: "Pemasangan Awning Car Porch",
+      tagline: "Awning car porch tersuai untuk melindungi kenderaan anda daripada matahari terik dan hujan lebat di seluruh KL & Selangor, dengan kecerunan, saliran dan bahan yang bersesuaian.",
+      description:
+        "Pemasangan awning car porch direka khas mengikut ukuran porch anda — lebar, unjuran, ketinggian ruang kenderaan, titik pengancing pada dinding atau tiang, serta aliran air hujan. Kami membantu anda memilih bahan yang sesuai untuk ruang letak kereta: polikarbonat tinted mengurangkan haba sambil mengekalkan cahaya, metal deck bertebat atau ACP memberi teduhan yang lebih padat, dan kesemuanya dipasang pada rangka keluli atau aluminium dengan primer anti-karat. Kerja merangkumi pengukuran, cadangan reka bentuk, fabrikasi, pemasangan, pengedap sambungan dan semakan aliran air. Harga adalah atas sebut harga projek kerana setiap porch berbeza dari segi saiz dan keadaan.",
+      highlights: [
+        "Reka bentuk mengikut ukuran car porch anda — rentang, unjuran dan ketinggian ruang kenderaan",
+        "Pilihan bahan mengikut keperluan haba: polikarbonat tinted, ACP atau metal deck bertebat",
+        "Rangka keluli/aluminium dengan primer anti-karat dan kemasan tahan cuaca",
+        "Kecerunan, pengedap dan saliran dirancang supaya air hujan tidak bertakung",
+        "Sebut harga projek terperinci dengan terma waranti dinyatakan dengan jelas",
+      ],
+      process: [
+        { step: "01", title: "Maklumat & Gambar", desc: "Hantar lokasi, gambar porch dan anggaran ukuran melalui WhatsApp untuk perbincangan awal." },
+        { step: "02", title: "Penilaian Tapak", desc: "Kami semak rentang, titik pengancing, struktur sedia ada dan laluan air, di tapak apabila diperlukan." },
+        { step: "03", title: "Bahan & Reka Bentuk", desc: "Kami cadangkan bahan, warna dan kemasan yang sesuai untuk pendedahan matahari dan bajet anda." },
+        { step: "04", title: "Sebut Harga", desc: "Anda terima sebut harga terperinci merangkumi bahan, fabrikasi, pemasangan dan terma waranti." },
+        { step: "05", title: "Pemasangan & Serahan", desc: "Awning dipasang dengan pengancing dan pengedap yang betul, lalu kami semak aliran air bersama anda." },
+      ],
+      faqs: [
+        { q: "Bahan apa yang paling sesuai untuk awning car porch?", a: "Bergantung pada keutamaan anda. Polikarbonat tinted popular kerana ringan, mengurangkan haba dan masih membenarkan cahaya; ACP memberikan teduhan paling padat dengan bunyi hujan yang lebih senyap; metal deck menjimatkan untuk gunaan utiliti. Kami menasihati berdasarkan rentang, hala matahari dan bajet porch anda." },
+        { q: "Berapa lama pemasangan awning car porch?", a: "Sebaik bahan siap, sebuah awning porch standard selalunya boleh dipasang dalam satu hari. Saiz besar atau fabrikasi tersuai mungkin mengambil masa lebih lama; tempoh disahkan dalam sebut harga." },
+        { q: "Adakah awning car porch perlu longkang?", a: "Tidak semestinya, tetapi kecerunan yang mencukupi adalah wajib supaya air mengalir keluar. Untuk porch yang besar atau kawasan hujan lebat, longkang/paip bawah boleh ditambah bagi mengarahkan aliran air." },
+        { q: "Bagaimana cara mendapatkan sebut harga?", a: "Hantar gambar car porch, lokasi dan anggaran ukuran di WhatsApp. Kami akan menasihati sama ada sebut harga boleh dibuat dari jauh atau penilaian tapak diperlukan." },
+      ],
+      metaTitle: "Pemasangan Awning Car Porch KL & Selangor | Sebut Harga Projek",
+      metaDesc: "Awning car porch tersuai di KL & Selangor — polikarbonat tinted, ACP atau metal deck bertebat, rangka anti-karat, saliran dirancang. Minta sebut harga projek di WhatsApp.",
+    },
+    zh: {
+      name: "车棚雨棚安装",
+      tagline: "按您的车棚定制雨棚，在吉隆坡与雪兰莪为车辆遮挡烈日与大雨，坡度、排水和材料都经过针对性设计。",
+      description:
+        "车棚雨棚按您的车棚尺寸定制——宽度、伸出长度、车辆净空、墙面或立柱固定点，以及雨水流向。我们协助您选择适合停车区的材料：着色聚碳酸酯在减少热量的同时保留光线，隔热金属瓦或 ACP 遮阳更彻底，并全部安装在施有防锈底漆的钢或铝骨架上。施工范围包括测量、设计建议、制作、安装、接缝密封和水流检查。价格按项目报价，因为每个车棚的尺寸和状况都不同。",
+      highlights: [
+        "按车棚尺寸设计——跨度、伸出长度与车辆净空",
+        "按隔热需求选材：着色聚碳酸酯、ACP 或隔热金属瓦",
+        "钢/铝骨架配防锈底漆与耐候饰面",
+        "规划坡度、密封与排水，避免雨水积聚",
+        "提供项目明细报价，并清楚载明保修条款",
+      ],
+      process: [
+        { step: "01", title: "资料与照片", desc: "通过 WhatsApp 发送车棚位置、照片和大致尺寸，先做初步沟通。" },
+        { step: "02", title: "现场评估", desc: "需要时我们上门检查跨度、固定点、现有结构和排水路径。" },
+        { step: "03", title: "材料与设计", desc: "根据日晒情况和预算，建议合适的材料、颜色和饰面。" },
+        { step: "04", title: "报价", desc: "您将收到涵盖材料、制作、安装与保修条款的明细报价。" },
+        { step: "05", title: "安装与交付", desc: "雨棚以正确的固定和密封安装，并与您一同检查水流情况。" },
+      ],
+      faqs: [
+        { q: "车棚雨棚用什么材料最合适？", a: "取决于您的偏好。着色聚碳酸酯因轻质、隔热又透光而受欢迎；ACP 遮阳最彻底、雨声更安静；金属瓦则更经济实惠。我们会根据车棚跨度、日照方向和预算给出建议。" },
+        { q: "车棚雨棚安装要多久？", a: "材料齐备后，标准车棚雨棚通常一天内可装好。尺寸较大或定制制作可能需要更久；工期会在报价中确认。" },
+        { q: "车棚雨棚需要天沟吗？", a: "不一定，但必须有足够坡度让雨水排出。对于大雨棚或大雨地区，可以加装天沟/落水管来引导水流。" },
+        { q: "怎么获取报价？", a: "通过 WhatsApp 发送车棚照片、位置和大致尺寸即可。我们会告知您可以远程报价还是需要上门评估。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪车棚雨棚安装 | 项目报价",
+      metaDesc: "吉隆坡与雪兰莪定制车棚雨棚——着色聚碳酸酯、ACP 或隔热金属瓦，防锈骨架，排水经过设计。通过 WhatsApp 获取项目报价。",
+    },
+  },
+
+  "awning-installation/polycarbonate-awning": {
+    ms: {
+      name: "Awning Polikarbonat",
+      tagline: "Bumbung awning polikarbonat jernih atau tinted yang ringan dan membenarkan cahaya semula jadi masuk, untuk porch, halaman, laluan dan balkoni di KL & Selangor.",
+      description:
+        "Awning polikarbonat menggunakan kepingan polikarbonat berkualiti pada rangka keluli atau aluminium. Kepingan tersedia dalam profil jernih, tinted atau gangsa, serta pilihan twin-wall untuk penebatan lebih baik. Jernih sesuai untuk laluan dan kawasan yang mahukan cahaya maksimum; tinted mengurangkan silau dan haba untuk car porch dan ruang duduk luar. Pemasangan yang betul menitikberatkan kecerunan, pengedap pada sambungan dinding, pengikat yang sesuai dan pembersihan berkala supaya kekal jernih. Atas sebut harga projek, bergantung pada luas, profil kepingan dan kemasan rangka.",
+      highlights: [
+        "Kepingan jernih, tinted atau gangsa, termasuk pilihan twin-wall",
+        "Ringan — kurang beban pada struktur berbanding kaca",
+        "Rangka anti-karat dengan kemasan powder-coat atau tahan cuaca",
+        "Pemasangan dengan kecerunan dan pengedap sambungan yang betul",
+        "Sesuai untuk car porch, ruang jemuran, laluan, balkoni dan patio",
+      ],
+      process: [
+        { step: "01", title: "Cadangan Awal", desc: "Bincangkan kegunaan dan pilihan profil (jernih/tinted) melalui gambar dan ukuran." },
+        { step: "02", title: "Ukuran & Tapak", desc: "Sahkan ukuran, titik pengancing dan keperluan saliran, di tapak jika perlu." },
+        { step: "03", title: "Sebut Harga", desc: "Sebut harga memperincikan profil kepingan, rangka, kemasan dan pemasangan." },
+        { step: "04", title: "Fabrikasi", desc: "Rangka dan kepingan disediakan mengikut ukuran tapak." },
+        { step: "05", title: "Pasang & Semak", desc: "Pemasangan dengan pengedap dan pengancing yang betul, lalu semak aliran air." },
+      ],
+      faqs: [
+        { q: "Polikarbonat jernih atau tinted lebih baik?", a: "Untuk car porch dan ruang yang anda mahu kekal sejuk, tinted atau gangsa lebih disyorkan kerana kurang haba dan silau. Untuk laluan atau kawasan yang mahukan cahaya sebanyak mungkin, profil jernih sesuai. Pilihan bergantung pada kegunaan dan hala matahari tapak anda." },
+        { q: "Adakah awning polikarbonat bocor?", a: "Kebocoran biasanya berpunca daripada pemasangan, bukan bahan — contohnya kecerunan tidak mencukupi, pengedap sambungan dinding yang usang atau pengikat longgar. Pemasangan yang betul dan pemeriksaan berkala mengelak masalah ini." },
+        { q: "Berapa lama polikarbonat tahan?", a: "Polikarbonat ialah bahan tahan hentaman yang direka untuk kegunaan luar, tetapi prestasinya bergantung pada kualiti kepingan (lapisan UV), pemasangan dan penyelenggaraan. Membasuh kotoran secara berkala membantu ia kekal jernih." },
+        { q: "Adakah polikarbonat bising ketika hujan?", a: "Kepingan nipis boleh kedengaran semasa hujan lebat. Profil twin-wall berketebalan lebih tinggi lebih senyap; jika bunyi menjadi kebimbangan, ACP adalah alternatif yang lebih senyap." },
+      ],
+      metaTitle: "Awning Polikarbonat KL & Selangor | Jernih & Tinted",
+      metaDesc: "Awning polikarbonat jernih/tinted untuk car porch, laluan dan balkoni di KL & Selangor — ringan, cahaya semula jadi, rangka anti-karat. Minta sebut harga di WhatsApp.",
+    },
+    zh: {
+      name: "聚碳酸酯雨棚",
+      tagline: "透明或着色聚碳酸酯雨棚屋顶，轻质且可引入自然光，适用于吉隆坡与雪兰莪的车棚、庭院、走道和阳台。",
+      description:
+        "聚碳酸酯雨棚采用优质聚碳酸酯板安装在钢或铝骨架上。板材有透明、着色或古铜色型材，以及隔热更佳的双层中空板可选。透明板适合走道和想要最多光线的区域；着色板可为车棚和户外休憩区减少眩光与热量。正确的安装重视坡度、墙面接缝密封、合适的紧固件和定期清洁以保持通透。价格按项目报价，取决于面积、板材型材和骨架饰面。",
+      highlights: [
+        "透明、着色或古铜色板材，含双层中空选项",
+        "轻质——对结构的负荷小于玻璃",
+        "防锈骨架配粉末喷涂或耐候饰面",
+        "安装时做好坡度与接缝密封",
+        "适用于车棚、晒衣区、走道、阳台和露台",
+      ],
+      process: [
+        { step: "01", title: "初步建议", desc: "通过照片和尺寸沟通用途与型材选择（透明/着色）。" },
+        { step: "02", title: "尺寸与现场", desc: "确认尺寸、固定点和排水需求，必要时上门。" },
+        { step: "03", title: "报价", desc: "报价详列板材型材、骨架、饰面和安装内容。" },
+        { step: "04", title: "制作", desc: "骨架与板材按现场尺寸准备。" },
+        { step: "05", title: "安装与检查", desc: "以正确的密封和固定方式安装，再检查水流。" },
+      ],
+      faqs: [
+        { q: "透明还是着色聚碳酸酯更好？", a: "对于车棚和希望保持凉爽的区域，更推荐着色或古铜色，因为热量和眩光更少；对于走道或想要尽可能多光线的区域，透明型材合适。选择取决于用途和现场日照方向。" },
+        { q: "聚碳酸酯雨棚会漏水吗？", a: "漏水通常源于安装而非材料本身——例如坡度不足、墙面接缝密封老化或紧固件松动。正确安装和定期检查可避免这类问题。" },
+        { q: "聚碳酸酯能用多久？", a: "聚碳酸酯是耐冲击的户外材料，但表现取决于板材质量（UV 涂层）、安装和维护。定期清洗污垢有助于保持通透。" },
+        { q: "聚碳酸酯下雨会很吵吗？", a: "薄板在大雨时可能有声音。较厚的双层中空型材更安静；如果介意噪音，ACP 是更安静的替代选择。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪聚碳酸酯雨棚 | 透明与着色",
+      metaDesc: "适用于车棚、走道和阳台的透明/着色聚碳酸酯雨棚——轻质、透光、防锈骨架，吉隆坡与雪兰莪提供安装。WhatsApp 获取报价。",
+    },
+  },
+
+  "awning-installation/metal-deck-awning": {
+    ms: {
+      name: "Awning Metal Deck",
+      tagline: "Bumbung metal deck yang kukuh dan menjimatkan untuk perlindungan hujan dan matahari di kawasan utiliti, ruang jemuran dan porch seluruh KL & Selangor.",
+      description:
+        "Awning metal deck menggunakan kepingan logam berprofil pada rangka keluli dengan primer anti-karat dan kemasan tahan cuaca. Ia adalah pilihan yang kukuh dan menjimatkan untuk ruang utiliti, ruang menjemur, porch samping dan kawasan kerja. Untuk mengurangkan haba dan bunyi hujan, profil bertebat (dengan lapisan busa PU) boleh dipilih berbanding kepingan biasa. Pasukan kami memastikan kecerunan yang mencukupi, pengancing pada struktur yang kukuh dan rawatan anti-karat pada rangka keluli. Harga adalah atas sebut harga projek mengikut luas, jenis profil dan keperluan kemasan.",
+      highlights: [
+        "Pilihan kukuh dan menjimatkan untuk gunaan utiliti",
+        "Profil bertebat PU tersedia untuk kurang haba dan bunyi hujan",
+        "Rangka keluli dengan primer anti-karat dan kemasan tahan cuaca",
+        "Kecerunan dan pengancing dirancang mengikut struktur tapak",
+        "Sesuai untuk ruang jemuran, porch, laluan dan kawasan kerja",
+      ],
+      process: [
+        { step: "01", title: "Keperluan & Gambar", desc: "Hantar gambar kawasan, ukuran dan tahap pendedahan melalui WhatsApp." },
+        { step: "02", title: "Penilaian Struktur", desc: "Kami semak titik pengancing, dinding/rasuk sedia ada dan laluan air." },
+        { step: "03", title: "Pilihan Profil", desc: "Kepingan biasa atau bertebat dibincangkan mengikut bajet dan keselesaan." },
+        { step: "04", title: "Sebut Harga", desc: "Sebut harga terperinci merangkumi kepingan, rangka, rawatan anti-karat dan pemasangan." },
+        { step: "05", title: "Pemasangan", desc: "Dipasang dengan pengancing, pengedap dan kecerunan yang betul, lalu semak air." },
+      ],
+      faqs: [
+        { q: "Adakah awning metal deck sangat panas?", a: "Kepingan logam biasa mengalirkan haba. Jika kawasan di bawahnya kerap digunakan, profil metal deck bertebat (PU foam) mengurangkan haba dan juga bunyi hujan dengan ketara." },
+        { q: "Adakah ia bising ketika hujan lebat?", a: "Kepingan nipis boleh bising. Profil bertebat lebih senyap; untuk kawasan yang mahu senyap sepenuhnya, ACP atau polikarbonat tebal boleh dipertimbangkan." },
+        { q: "Adakah rangka keluli akan berkarat?", a: "Rangka kami menerima primer anti-karat dan kemasan tahan cuaca (atau powder-coat); untuk bahagian struktur yang paling terdedah, galvanis boleh dibincangkan." },
+        { q: "Metal deck atau polikarbonat untuk ruang jemuran?", a: "Untuk ruang menjemur yang mahu cahaya tetapi tidak hujan, polikarbonat jernih/tinted sering dipilih; metal deck lebih sesuai jika naungan penuh dan bajet menjadi keutamaan." },
+      ],
+      metaTitle: "Awning Metal Deck KL & Selangor | Termasuk Profil Bertebat",
+      metaDesc: "Awning metal deck kukuh untuk ruang jemuran, porch dan kawasan utiliti di KL & Selangor — profil PU bertebat, rangka anti-karat. Minta sebut harga projek di WhatsApp.",
+    },
+    zh: {
+      name: "金属瓦雨棚",
+      tagline: "坚固实惠的金属瓦屋面，为吉隆坡与雪兰莪的工作区、晒衣区和车棚提供防雨防晒保护。",
+      description:
+        "金属瓦雨棚采用压型金属板安装在钢架上，钢架施以防锈底漆和耐候饰面。对工作区、晒衣区、侧车棚和作业区而言，它是坚固又经济的选择。为减少热量和雨声，可选用带 PU 发泡层的隔热型材而非普通板。我们的团队会确保足够坡度、固定在牢固结构上，并对钢架做防锈处理。价格按项目报价，取决于面积、型材类型和饰面需求。",
+      highlights: [
+        "坚固实惠，适合实用型用途",
+        "可选 PU 隔热型材，减少热量和雨声",
+        "钢架施防锈底漆与耐候饰面",
+        "按现场结构规划坡度与固定",
+        "适用于晒衣区、车棚、走道和作业区",
+      ],
+      process: [
+        { step: "01", title: "需求与照片", desc: "通过 WhatsApp 发送区域照片、尺寸和暴露程度。" },
+        { step: "02", title: "结构评估", desc: "检查固定点、现有墙体/横梁和排水路径。" },
+        { step: "03", title: "型材选择", desc: "根据预算与舒适度讨论普通板或隔热板。" },
+        { step: "04", title: "报价", desc: "明细报价涵盖板材、骨架、防锈处理和安装。" },
+        { step: "05", title: "安装", desc: "以正确的固定、密封和坡度安装，再检查排水。" },
+      ],
+      faqs: [
+        { q: "金属瓦雨棚会很热吗？", a: "普通金属板会传热。如果下方区域经常使用，隔热（PU 发泡）金属瓦型材可显著降低热量并减弱雨声。" },
+        { q: "大雨时会很吵吗？", a: "薄板可能有噪音。隔热型材更安静；若希望完全安静，可考虑 ACP 或厚聚碳酸酯。" },
+        { q: "钢架会生锈吗？", a: "我们的骨架都施防锈底漆和耐候饰面（或粉末喷涂）；对于最暴露的结构部位，可讨论热镀锌。" },
+        { q: "晒衣区用金属瓦还是聚碳酸酯？", a: "想要光线又要挡雨的晾晒区，常选透明/着色聚碳酸酯；若以全遮阳和预算为先，金属瓦更适合。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪金属瓦雨棚 | 含隔热型材",
+      metaDesc: "吉隆坡与雪兰莪坚固的金属瓦雨棚，适用于晒衣区、车棚和工作区——PU 隔热型材、防锈骨架。WhatsApp 获取项目报价。",
+    },
+  },
+
+  "awning-installation/aluminium-composite-acp-awning": {
+    ms: {
+      name: "Awning Panel Komposit Aluminium (ACP)",
+      tagline: "Awning ACP yang legap, kemas dan moden dengan penyelenggaraan rendah — sesuai untuk car porch, depan rumah dan patio di KL & Selangor.",
+      description:
+        "Awning panel komposit aluminium (ACP) menggunakan panel tegar bermuka aluminium pada rangka keluli atau aluminium. ACP legap, jadi ia memberi teduhan maksimum, mengurangkan silau dan haba, dan lebih senyap ketika hujan berbanding kepingan nipis. Penampilannya kemas dan moden, tahan lama serta mudah diselenggara — sekadar dicuci sekali-sekala dan panel tidak berkarat. Ia sesuai untuk car porch, bahagian depan rumah, patio dan halaman yang mengutamakan rupa. Dipasang mengikut ukuran tapak dengan kecerunan, pengancing dan pengedap yang betul. Atas sebut harga projek.",
+      highlights: [
+        "Penampilan moden kemas dengan warna yang boleh dipadankan",
+        "Legap — teduhan maksimum, kurang silau dan haba",
+        "Lebih senyap dalam hujan berbanding kepingan nipis",
+        "Panel tidak berkarat; penyelenggaraan sekadar mencuci",
+        "Sesuai untuk car porch, depan rumah, patio dan halaman",
+      ],
+      process: [
+        { step: "01", title: "Gambar & Ukuran", desc: "Hantar gambar tapak dan anggaran ukuran untuk cadangan reka bentuk." },
+        { step: "02", title: "Penilaian Tapak", desc: "Sahkan rentang, sokongan, titik pengancing dan keperluan saliran." },
+        { step: "03", title: "Warna & Kemasan", desc: "Pilih warna ACP dan kemasan rangka yang padan dengan rumah." },
+        { step: "04", title: "Sebut Harga", desc: "Sebut harga merangkumi panel, rangka, fabrikasi dan pemasangan." },
+        { step: "05", title: "Pasang & Semak", desc: "Panel dipasang dengan kemasan kemas, lalu semak kecerunan dan aliran air." },
+      ],
+      faqs: [
+        { q: "Adakah ACP menggelapkan ruang?", a: "ACP legap, jadi ia tidak membenarkan cahaya terus seperti polikarbonat. Jika anda mahu kawasan lebih terang, kombinasi ACP dengan jalur polikarbonat jernih boleh dibincangkan semasa reka bentuk." },
+        { q: "Adakah ACP lebih sejuk berbanding polikarbonat jernih?", a: "Dari segi teduhan, ACP menyekat lebih banyak cahaya dan silau terus. Polikarbonat tinted juga mengurangkan haba; pilihan bergantung pada keseimbangan cahaya, haba dan rupa yang anda mahukan." },
+        { q: "Bagaimana penyelenggaraan ACP?", a: "Sangat rendah — cuci permukaan sekali-sekala untuk buang habuk dan kesan air. Panel aluminium tidak berkarat; rangka di belakangnya menerima rawatan anti-karat." },
+        { q: "Bolehkah warna dipadankan dengan rumah?", a: "Boleh. ACP tersedia dalam pelbagai warna biasa; warna tersuai tertakluk pada ketersediaan pembekal dan mungkin mempengaruhi harga serta tempoh siap." },
+      ],
+      metaTitle: "Awning ACP KL & Selangor | Aluminium Composite Panel",
+      metaDesc: "Awning ACP moden, legap dan rendah penyelenggaraan untuk car porch dan patio di KL & Selangor — teduhan maksimum, senyap dalam hujan. Minta sebut harga projek.",
+    },
+    zh: {
+      name: "铝塑板（ACP）雨棚",
+      tagline: "不透明、整洁现代且维护极少的 ACP 雨棚——适合吉隆坡与雪兰莪的车棚、屋前和露台。",
+      description:
+        "铝塑复合板（ACP）雨棚采用刚性铝面面板安装在钢或铝骨架上。ACP 不透明，因此遮阳最彻底，能减少眩光和热量，且下雨时比薄板更安静。外观整洁现代，耐用且维护简单——偶尔清洗即可，板材不生锈。它适合重视外观的车棚、屋前、露台和庭院。按现场尺寸安装，并做好坡度、固定和密封。价格按项目报价。",
+      highlights: [
+        "整洁现代的外观，颜色可与房屋搭配",
+        "不透明——遮阳最彻底，眩光和热量更少",
+        "比薄板雨天更安静",
+        "板材不生锈；维护仅需偶尔清洗",
+        "适用于车棚、屋前、露台和庭院",
+      ],
+      process: [
+        { step: "01", title: "照片与尺寸", desc: "发送现场照片和大致尺寸，以便给出设计建议。" },
+        { step: "02", title: "现场评估", desc: "确认跨度、支撑、固定点和排水需求。" },
+        { step: "03", title: "颜色与饰面", desc: "选择与房屋搭配的 ACP 颜色和骨架饰面。" },
+        { step: "04", title: "报价", desc: "报价涵盖面板、骨架、制作和安装。" },
+        { step: "05", title: "安装与检查", desc: "面板以整洁饰面安装，再检查坡度与水流。" },
+      ],
+      faqs: [
+        { q: "ACP 会让空间变暗吗？", a: "ACP 不透明，无法像聚碳酸酯那样透光。如果希望区域更明亮，设计时可讨论 ACP 搭配透明聚碳酸酯采光带。" },
+        { q: "ACP 比透明聚碳酸酯更凉快吗？", a: "就遮阳而言，ACP 阻挡更多直射光和眩光；着色聚碳酸酯同样能减少热量。选择取决于您想要的光线、热量与外观平衡。" },
+        { q: "ACP 怎么维护？", a: "非常省心——偶尔冲洗表面去除灰尘和水渍即可。铝板不生锈，背后的骨架有防锈处理。" },
+        { q: "颜色可以和房子搭配吗？", a: "可以。ACP 有多种常见颜色；定制颜色取决于供应商供应情况，并可能影响价格和交期。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪 ACP 雨棚 | 铝塑复合板",
+      metaDesc: "适用于车棚和露台的现代、不透明、低维护 ACP 雨棚——遮阳彻底、雨天安静，吉隆坡与雪兰莪提供安装。获取项目报价。",
+    },
+  },
+
+  "awning-installation/glass-awning": {
+    ms: {
+      name: "Awning Kaca",
+      tagline: "Awning kaca tempered premium untuk pintu masuk, tingkap dan kawasan ciri yang mahukan penampilan cerah dan mewah di KL & Selangor.",
+      description:
+        "Awning kaca menggunakan panel kaca keselamatan tempered pada rangka keluli, keluli tahan karat atau aluminium. Ia memberi penutup hujan yang elegan sambil membenarkan cahaya maksimum masuk, sesuai untuk pintu masuk utama, pintu, tingkap dan laluan hiasan. Oleh kerana kaca lebih berat berbanding kepingan, rangka, pendakap dan pengancing mesti bersesuaian dengan rentang dan beban — ini adalah tumpuan utama pemasangan kami. Penyelenggaraan adalah minimum: kaca dicuci seperti tingkap dan pengedap diperiksa. Atas sebut harga projek mengikut luas, ketebalan kaca dan kemasan rangka.",
+      highlights: [
+        "Kaca keselamatan tempered untuk penampilan premium",
+        "Cahaya maksimum sambil menumpahkan hujan",
+        "Rangka keluli/tahan karat/aluminium bersesuaian dengan beban",
+        "Penyelenggaraan minimum — cuci seperti tingkap, semak pengedap",
+        "Sesuai untuk pintu masuk, pintu, tingkap dan laluan hiasan",
+      ],
+      process: [
+        { step: "01", title: "Perbincangan Tapak", desc: "Hantar gambar bukaan dan lokasi; kami semak jenis kaca dan gaya rangka yang sesuai." },
+        { step: "02", title: "Ukuran Terperinci", desc: "Rentang, ketinggian dan titik pengancing diukur kerana kaca memerlukan sokongan tepat." },
+        { step: "03", title: "Sebut Harga", desc: "Sebut harga merangkumi kaca tempered, rangka, pendakap, pengedap dan pemasangan." },
+        { step: "04", title: "Fabrikasi", desc: "Kaca dipotong mengikut saiz dan rangka disediakan untuk bukaan anda." },
+        { step: "05", title: "Pemasangan & Semak", desc: "Dipasang dengan pengancing berkadar beban, pengedap kemas dan pemeriksaan akhir." },
+      ],
+      faqs: [
+        { q: "Adakah kaca awning selamat?", a: "Kami menggunakan kaca keselamatan tempered yang, jika pecah, hancur menjadi ketulan kecil yang kurang tajam. Rangka dan pengancing dipadankan dengan rentang dan beban — ini adalah bahagian paling penting pemasangan kaca." },
+        { q: "Adakah awning kaca sangat panas?", a: "Kaca membenarkan banyak cahaya masuk. Untuk mengurangkan haba, kaca tinted atau berlamina boleh dipertimbangkan; berbincang dengan kami tentang orientasi matahari bukaan anda." },
+        { q: "Bagaimana penyelenggaraannya?", a: "Minimum — cuci kaca seperti tingkap biasa dan minta kami semak pengedap jika anda kesan kebocoran. Bingkai logam dibekalkan dengan kemasan anti-karat." },
+        { q: "Berapa tebal kaca yang digunakan?", a: "Ketebalan dan spesifikasi bergantung pada rentang, unjuran dan beban hujan/angin pada tapak anda; spesifikasi dinyatakan dalam sebut harga dan bukannya dijanjikan secara umum." },
+      ],
+      metaTitle: "Awning Kaca Tempered KL & Selangor | Pintu Masuk & Tingkap",
+      metaDesc: "Awning kaca tempered premium untuk pintu masuk dan tingkap di KL & Selangor — cahaya maksimum, rangka bersesuaian beban, penyelenggaraan minimum. Minta sebut harga.",
+    },
+    zh: {
+      name: "玻璃雨棚",
+      tagline: "用于吉隆坡与雪兰莪入口、窗户和特色区域的高档钢化玻璃雨棚，外观明亮、质感高级。",
+      description:
+        "玻璃雨棚采用钢化安全玻璃板，安装在钢、不锈钢或铝骨架上。它既能优雅挡雨，又能让最多光线进入，适合大门入口、门、窗和装饰走道。由于玻璃比板材重，骨架、支架和固定件必须匹配跨度和负荷——这是我们安装的重点。维护极少：玻璃像窗户一样清洁，并检查密封胶。价格按项目报价，取决于面积、玻璃厚度和骨架饰面。",
+      highlights: [
+        "钢化安全玻璃，外观高档",
+        "挡雨同时采光最佳",
+        "钢/不锈钢/铝骨架与负荷匹配",
+        "维护极少——像窗户一样清洁、检查密封",
+        "适用于入口、门、窗和装饰走道",
+      ],
+      process: [
+        { step: "01", title: "现场沟通", desc: "发送洞口和位置照片；我们核对合适的玻璃类型与骨架风格。" },
+        { step: "02", title: "详细测量", desc: "由于玻璃需要精确支撑，会测量跨度、高度和固定点。" },
+        { step: "03", title: "报价", desc: "报价涵盖钢化玻璃、骨架、支架、密封和安装。" },
+        { step: "04", title: "制作", desc: "玻璃按尺寸裁切，骨架按洞口准备。" },
+        { step: "05", title: "安装与检查", desc: "以匹配负荷的固定件、整洁密封安装，并做最终检查。" },
+      ],
+      faqs: [
+        { q: "玻璃雨棚安全吗？", a: "我们使用钢化安全玻璃，万一破碎会碎成较不锋利的小颗粒。骨架和固定件按跨度和负荷匹配——这是玻璃安装最重要的环节。" },
+        { q: "玻璃雨棚会很热吗？", a: "玻璃会让大量光线进入。为减少热量，可考虑着色或夹层玻璃；欢迎与我们讨论您洞口的日照方向。" },
+        { q: "玻璃雨棚平时如何维护？", a: "很少——像普通窗户一样清洁玻璃，若发现渗漏可请我们检查密封胶。金属框架配有防锈饰面。" },
+        { q: "用多厚的玻璃？", a: "厚度和规格取决于现场跨度、伸出长度和风雨负荷；规格会在报价中说明，而非笼统承诺。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪钢化玻璃雨棚 | 入口与窗户",
+      metaDesc: "用于入口和窗户的高档钢化玻璃雨棚——采光最佳、骨架按负荷匹配、维护极少，吉隆坡与雪兰莪提供安装。获取报价。",
+    },
+  },
+
+  "awning-installation/canvas-and-fabric-awning": {
+    ms: {
+      name: "Awning Kanvas & Fabrik",
+      tagline: "Awning kanvas dan fabrik tetap atau boleh-tarik untuk balkoni, patio, teres dan kedai — teduhan yang cantik dengan rupa yang lembut, di KL & Selangor.",
+      description:
+        "Awning kanvas dan fabrik memberikan teduhan yang menarik untuk balkoni, patio, teres, halaman dan muka kedai. Sistem fabrik tetap memberi rupa kanopi yang lembut, manakala sistem boleh-tarik (retractable) boleh dibuka apabila mahu teduh dan ditarik balik untuk matahari atau pemandangan. Sistem ini tertumpu pada teduhan, bukan bumbung hujan kekal — fabrik patut dilindung atau ditarik balik ketika ribut, dan fabrik perlu dicuci serta akhirnya diganti sepanjang hayatnya. Ketersediaan sistem manual atau bermotor bergantung pada pembekal; kami sahkan pilihan untuk tapak anda. Atas sebut harga projek.",
+      highlights: [
+        "Teduhan yang cantik untuk balkoni, patio dan muka kedai",
+        "Sistem tetap atau boleh-tarik (retractable) mengikut keperluan",
+        "Pilihan warna dan reka bentuk fabrik",
+        "Sesuai untuk ruang yang mahu pemandangan terbuka apabila tidak digunakan",
+        "Bimbingan penggunaan dan penjagaan fabrik",
+      ],
+      process: [
+        { step: "01", title: "Tujuan & Gaya", desc: "Beritahu kami lokasi dan sama ada anda mahu sistem tetap atau boleh-tarik." },
+        { step: "02", title: "Ukuran & Pilihan", desc: "Ukuran bukaan, pilihan fabrik dan jenis sistem disahkan; lawatan tapak jika perlu." },
+        { step: "03", title: "Sebut Harga", desc: "Sebut harga merangkumi fabrik, mekanisme (jika ada), rangka dan pemasangan." },
+        { step: "04", title: "Pemasangan", desc: "Sistem dipasang pada dinding/struktur yang kukuh dengan pengancing yang sesuai." },
+        { step: "05", title: "Panduan Penggunaan", desc: "Kami terangkan cara membuka, menarik balik dan menjaga fabrik semasa ribut." },
+      ],
+      faqs: [
+        { q: "Bolehkah awning fabrik dibiarkan semasa hujan lebat?", a: "Awning fabrik direka untuk teduhan dan hujan ringan, tetapi bukan bumbung kekal. Semasa ribut atau angin kencang, sistem boleh-tarik patut ditarik balik untuk elak kerosakan." },
+        { q: "Berapa lama fabrik tahan?", a: "Jangka hayat fabrik bergantung pada pendedahan matahari dan penjagaan; fabrik yang pudar atau koyak boleh diganti tanpa menggantikan keseluruhan rangka." },
+        { q: "Adakah anda membekalkan sistem bermotor?", a: "Sistem retractable manual dan, tertakluk pada ketersediaan pembekal, bermotor boleh dibincangkan. Sahkan dengan kami pilihan yang sesuai untuk bukaan anda." },
+        { q: "Adakah sesuai untuk car porch?", a: "Tidak sebagai perlindungan tetap — untuk car porch yang mahu perlindungan hujan kekal, sistem bumbung tetap seperti polikarbonat, metal deck atau ACP lebih sesuai." },
+      ],
+      metaTitle: "Awning Kanvas & Fabrik KL & Selangor | Balkoni & Patio",
+      metaDesc: "Awning kanvas/fabrik tetap dan boleh-tarik untuk balkoni, patio dan kedai di KL & Selangor — teduhan cantik, pilihan warna. Sahkan pilihan dan minta sebut harga di WhatsApp.",
+    },
+    zh: {
+      name: "帆布与布艺雨棚",
+      tagline: "用于吉隆坡与雪兰莪阳台、露台、天台和店面的固定或伸缩式帆布布艺雨棚——遮阳美观、线条柔和。",
+      description:
+        "帆布布艺雨棚为阳台、露台、天台、庭院和店面提供美观遮阳。固定布艺系统带来柔和的雨篷外观，伸缩式系统则可在需要遮阳时打开、要阳光或景观时收回。这类系统以遮阳为主，不是永久防雨屋顶——风暴时应收起或收回布艺，布料也需要清洗并在使用寿命内更换。手动或电动系统的供应取决于供应商；我们会为您的现场确认可选方案。价格按项目报价。",
+      highlights: [
+        "为阳台、露台和店面提供美观遮阳",
+        "按需选择固定或伸缩式系统",
+        "布料颜色和款式可选",
+        "适合不用时希望保持开阔视野的空间",
+        "提供使用与布艺保养指导",
+      ],
+      process: [
+        { step: "01", title: "用途与款式", desc: "告诉我们安装位置，以及您想要固定还是伸缩系统。" },
+        { step: "02", title: "尺寸与选择", desc: "确认洞口尺寸、布料选择和系统类型；必要时上门。" },
+        { step: "03", title: "报价", desc: "报价涵盖布料、机构（如有）、骨架和安装。" },
+        { step: "04", title: "安装", desc: "系统以合适的固定件安装到牢固的墙体/结构上。" },
+        { step: "05", title: "使用指导", desc: "说明如何打开、收回，以及风暴时如何保护布艺。" },
+      ],
+      faqs: [
+        { q: "大雨时布艺雨棚可以一直开着吗？", a: "布艺雨棚主要用于遮阳和小雨，不是永久屋顶。风暴或强风时，伸缩系统应收回以防损坏。" },
+        { q: "布能用多久？", a: "布料寿命取决于日晒和保养；褪色或破损的布料可以更换，无需连骨架一起换。" },
+        { q: "有电动系统吗？", a: "手动伸缩系统以及（取决于供应商供应的）电动系统都可以讨论。请与我们确认适合您洞口的方案。" },
+        { q: "适合车棚吗？", a: "作为固定防护并不合适——想要永久挡雨的车棚，聚碳酸酯、金属瓦或 ACP 等固定屋面系统更适合。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪帆布布艺雨棚 | 阳台与露台",
+      metaDesc: "用于阳台、露台和店面的固定及伸缩式帆布布艺雨棚——遮阳美观、颜色可选，吉隆坡与雪兰莪供应。确认方案并通过 WhatsApp 报价。",
+    },
+  },
+
+  "awning-installation/balcony-patio-and-window-awning": {
+    ms: {
+      name: "Awning Balkoni, Patio & Tingkap",
+      tagline: "Awning bersaiz khas untuk balkoni, patio, teres, tingkap dan pintu di KL & Selangor — teduhan dan perlindungan hujan tanpa menutup ruang anda.",
+      description:
+        "Awning untuk balkoni, patio, teres, tingkap dan pintu direka mengikut bukaan anda supaya ruang luar lebih selesa digunakan untuk berehat, menjemur atau berkebun. Bahan yang biasa dipilih termasuk polikarbonat untuk cahaya, ACP untuk naungan yang kemas, dan fabrik boleh-tarik untuk fleksibiliti. Untuk hartanah strata seperti kondominium dan pangsapuri, garis panduan JMB/MC mengenai reka bentuk dan unjuran perlu dipatuhi — kami menyediakan ukuran dan spesifikasi untuk sokongan anda. Atas sebut harga projek mengikut saiz, bahan dan akses.",
+      highlights: [
+        "Disesuaikan dengan bukaan balkoni, patio, tingkap atau pintu anda",
+        "Pilihan polikarbonat, ACP atau fabrik mengikut cahaya yang diingini",
+        "Membantu mengurangkan hujan pada tingkap dan silau matahari",
+        "Spesifikasi disediakan untuk keperluan kelulusan strata/JMB",
+        "Pemasangan mematuhi akses keselamatan bangunan",
+      ],
+      process: [
+        { step: "01", title: "Maklumat Lokasi", desc: "Hantar gambar bukaan, jenis bangunan (rumah/kondo) dan anggaran saiz." },
+        { step: "02", title: "Semak Keperluan", desc: "Kami sahkan keperluan pemasangan dan, untuk strata, maklumat untuk JMB/MC." },
+        { step: "03", title: "Pilihan Bahan", desc: "Cadangan bahan berdasarkan cahaya, rupa dan bajet anda." },
+        { step: "04", title: "Sebut Harga", desc: "Sebut harga merangkumi bahan, rangka, pengangkutan dan pemasangan." },
+        { step: "05", title: "Pemasangan", desc: "Dipasang mengikut prosedur akses bangunan, dengan pengedap dan kemasan kemas." },
+      ],
+      faqs: [
+        { q: "Bolehkah awning dipasang di balkoni kondominium?", a: "Boleh, tetapi tertakluk pada garis panduan JMB/MC atau pemaju, yang mungkin menetapkan reka bentuk, warna atau unjuran. Sahkan keperluan dengan pejabat pengurusan; kami boleh bantu dengan spesifikasi dan ukuran." },
+        { q: "Bahan apa yang bagus untuk balkoni?", a: "Polikarbonat tinted popular untuk keseimbangan cahaya dan haba; fabrik boleh-tarik baik jika anda mahu fleksibiliti; ACP memberi naungan paling lengkap untuk ruang yang kerap digunakan." },
+        { q: "Adakah awning tingkap kecil membantu?", a: "Ya — ia mengurangkan kesan air hujan pada kaca dan dinding serta memotong matahari terus ke dalam bilik, tanpa menghalang cahaya semula jadi." },
+        { q: "Bagaimana jika akses pemasangan sukar?", a: "Untuk tingkat atas atau ruang terhad, kami semak keperluan akses dan peralatan semasa penilaian; kos akses dimasukkan dalam sebut harga." },
+      ],
+      metaTitle: "Awning Balkoni, Patio & Tingkap KL & Selangor",
+      metaDesc: "Awning tersuai untuk balkoni, patio, teres dan tingkap di KL & Selangor — polikarbonat, ACP atau fabrik, sokongan untuk keperluan strata. Minta sebut harga di WhatsApp.",
+    },
+    zh: {
+      name: "阳台、露台与窗户雨棚",
+      tagline: "为吉隆坡与雪兰莪的阳台、露台、天台、窗户和门量身定制的雨棚——遮阳挡雨又不封闭空间。",
+      description:
+        "阳台、露台、天台、窗户和门的雨棚按您的开口定制，让户外空间更适合休憩、晾晒或种植。常见选材包括用于透光的聚碳酸酯、整洁遮阳的 ACP，以及灵活的伸缩布艺。对于共管公寓和分层房产，须遵守 JMB/MC 关于设计和伸出长度的规定——我们可提供尺寸和规格以协助您申请。价格按项目报价，取决于尺寸、材料和施工通道。",
+      highlights: [
+        "按您的阳台、露台、窗户或门口尺寸定制",
+        "按光线需求可选聚碳酸酯、ACP 或布艺",
+        "有助于减少雨水打在窗户上和阳光直射",
+        "可为分层地契/JMB 审批提供规格资料",
+        "安装遵守楼宇安全通道规定",
+      ],
+      process: [
+        { step: "01", title: "位置信息", desc: "发送开口照片、建筑类型（房屋/公寓）和大致尺寸。" },
+        { step: "02", title: "需求核对", desc: "确认安装要求；分层房产则核对提供给 JMB/MC 的资料。" },
+        { step: "03", title: "材料选择", desc: "根据光线、外观和预算提出材料建议。" },
+        { step: "04", title: "报价", desc: "报价涵盖材料、骨架、运输和安装。" },
+        { step: "05", title: "安装", desc: "按楼宇通道流程安装，密封和饰面整洁。" },
+      ],
+      faqs: [
+        { q: "公寓阳台可以装雨棚吗？", a: "可以，但须遵守 JMB/MC 或发展商的规定，可能会限定设计、颜色或伸出长度。请向管理处确认要求；我们可协助提供规格和尺寸。" },
+        { q: "阳台用什么材料好？", a: "着色聚碳酸酯在光线和热量之间很受欢迎；想要灵活可选伸缩布艺；ACP 则为高频使用的空间提供最完整的遮阳。" },
+        { q: "小窗户雨棚有用吗？", a: "有用——它可减少雨水打在玻璃和墙面的痕迹，并阻挡直射阳光进入房间，同时不遮挡自然光。" },
+        { q: "施工通道困难怎么办？", a: "对于高楼层或空间受限的情况，评估时会核对通道和设备需求；相关费用会纳入报价。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪阳台、露台与窗户雨棚",
+      metaDesc: "为阳台、露台、天台和窗户定制的雨棚——聚碳酸酯、ACP 或布艺，可协助分层审批资料，吉隆坡与雪兰莪供应。WhatsApp 获取报价。",
+    },
+  },
+
+  "awning-installation/awning-replacement-and-repair": {
+    ms: {
+      name: "Penggantian & Pembaikan Awning",
+      tagline: "Menilai, membaiki atau menggantikan awning lama yang bocor, berkarat, retak atau melendut di KL & Selangor — dengan pilihan yang jelas sebelum sebarang kerja.",
+      description:
+        "Perkhidmatan penggantian dan pembaikan awning bermula dengan penilaian struktur sedia ada: kepingan bumbung, rangka, sambungan, pengikat, pengedap dan saliran. Kebocoran lazimnya berpunca daripada kepingan retak, pengedap yang usang, pengikat longgar atau longkang tersumbat; air bertakung menandakan kecerunan atau sokongan tidak mencukupi; dan rangka yang berkarat atau melendut mungkin perlu diganti. Kami laporkan apa yang boleh dibaiki berbanding apa yang perlu diganti, sediakan sebut harga berasingan untuk pembongkaran dan pelupusan awning lama jika perlu, dan pastikan pemasangan baharu menumpukan pada kecerunan, pengedap dan aliran air. Atas sebut harga projek.",
+      highlights: [
+        "Penilaian punca bocor, takung air, karat dan lendutan",
+        "Pilihan pembaikan berbanding penggantian yang jelas",
+        "Penggantian kepingan (polikarbonat/logam), pengedap dan pengikat",
+        "Rawatan anti-karat rangka atau penggantian struktur yang lemah",
+        "Pembongkaran dan pelupusan awning lama boleh dimasukkan dalam sebut harga",
+      ],
+      process: [
+        { step: "01", title: "Laporan Masalah", desc: "Hantar gambar awning yang bocor/rosak dan perihalkan simptom serta lokasi." },
+        { step: "02", title: "Pemeriksaan", desc: "Kami semak bumbung, rangka, sambungan, pengedap dan saliran di tapak apabila perlu." },
+        { step: "03", title: "Pembaikan atau Penggantian", desc: "Kami jelaskan apa yang boleh dibaiki dan apa yang perlu diganti beserta sebabnya." },
+        { step: "04", title: "Sebut Harga", desc: "Sebut harga merangkumi pembaikan/penggantian, bahan baharu, pembongkaran lama dan kemasan." },
+        { step: "05", title: "Kerja & Semak", desc: "Pembaikan/penggantian disiapkan dengan kecerunan, pengedap dan ujian aliran air yang betul." },
+      ],
+      faqs: [
+        { q: "Awning saya bocor — perlu diganti atau boleh dibaiki?", a: "Tidak semestinya diganti. Kebocoran kecil daripada pengedap usang atau pengikat longgar selalunya boleh dibaiki; kepingan retak meluas atau rangka berkarat teruk mungkin lebih praktikal diganti. Kami menilai dahulu dan cadang mengikut keadaan." },
+        { q: "Mengapa air bertakung di atas awning saya?", a: "Biasanya kecerunan tidak mencukupi atau sokongan melendut. Kami boleh melaraskan semula kecerunan, menambah sokongan atau mengganti panel yang terlibat." },
+        { q: "Bolehkah anda menanggalkan awning lama?", a: "Boleh. Pembongkaran dan pelupusan awning lama boleh dimasukkan dalam skop sebut harga jika anda mahu." },
+        { q: "Adakah rangka sedia ada boleh digunakan semula?", a: "Jika rangka masih kukuh, tidak berkarat teruk dan saiznya bersesuaian, ia kadangkala boleh diguna semula dengan kepingan dan pengedap baharu. Strukturnya dinilai sebelum kami mengesyorkan ini." },
+      ],
+      metaTitle: "Penggantian & Pembaikan Awning KL & Selangor | Bocor, Karat",
+      metaDesc: "Membaiki dan menggantikan awning lama yang bocor, berkarat, bertakung atau melendut di KL & Selangor — penilaian jelas, sebut harga projek. Hubungi kami di WhatsApp.",
+    },
+    zh: {
+      name: "雨棚更换与维修",
+      tagline: "在吉隆坡与雪兰莪评估、维修或更换漏水、生锈、开裂或下垂的旧雨棚——动工前给您清晰的方案选择。",
+      description:
+        "雨棚维修与更换服务从评估现有结构开始：屋面板、骨架、接缝、紧固件、密封胶和排水。漏水通常源于板材开裂、密封胶老化、紧固件松动或天沟堵塞；积水表示坡度或支撑不足；生锈或下垂的骨架可能需要更换。我们会说明哪些可以修、哪些需要换，必要时为旧雨棚拆除与清运单独报价，并确保新安装在坡度、密封和水流出上都处理到位。价格按项目报价。",
+      highlights: [
+        "诊断漏水、积水、生锈和下垂的原因",
+        "维修与更换的选择清晰说明",
+        "更换面板（聚碳酸酯/金属）、密封胶和紧固件",
+        "骨架防锈处理，或更换已弱化的结构",
+        "旧雨棚拆除与清运可纳入报价",
+      ],
+      process: [
+        { step: "01", title: "问题报告", desc: "发送漏水/损坏雨棚的照片，说明症状和位置。" },
+        { step: "02", title: "检查", desc: "必要时上门检查屋面、骨架、接缝、密封和排水。" },
+        { step: "03", title: "维修或更换", desc: "说明哪些可以修、哪些需要换，以及原因。" },
+        { step: "04", title: "报价", desc: "报价涵盖维修/更换、新材料、旧件拆除和饰面。" },
+        { step: "05", title: "施工与检查", desc: "以正确的坡度、密封和水流测试完成维修/更换。" },
+      ],
+      faqs: [
+        { q: "雨棚漏水一定要换吗？", a: "不一定。密封胶老化或紧固件松动造成的小漏水通常可以维修；大面积面板开裂或骨架严重生锈时，更换往往更实际。我们会先评估再建议。" },
+        { q: "为什么雨棚上会积水？", a: "通常是坡度不足或支撑下垂。我们可以重新调整坡度、增加支撑，或更换相关面板。" },
+        { q: "你们会拆除旧雨棚吗？", a: "会。如您需要，旧雨棚的拆除和清运可以纳入报价范围。" },
+        { q: "现有骨架可以沿用吗？", a: "如果骨架仍牢固、没有严重生锈且尺寸合适，有时可以配合新面板和新密封继续使用。我们会先评估结构再作此建议。" },
+      ],
+      metaTitle: "吉隆坡与雪兰莪雨棚更换与维修 | 漏水、生锈",
+      metaDesc: "维修与更换吉隆坡、雪兰莪老旧、漏水、生锈、积水或下垂的雨棚——评估清晰、按项目报价。欢迎通过 WhatsApp 联系。",
+    },
+  },
+
 };
 
 /**

@@ -649,7 +649,14 @@
     "verifiedBadge": "Perkhidmatan Pakar Disahkan",
     "allCoverage": "Seluruh KL & Selangor",
     "otherServicesHeading": "Perkhidmatan lain yang mungkin anda perlukan",
-    "otherServicesSub": "Terokai perkhidmatan rumah lain kami di seluruh KL & Selangor — harga tetap dan slot hari sama tersedia."
+    "otherServicesSub": "Terokai perkhidmatan rumah lain kami di seluruh KL & Selangor — harga tetap dan slot hari sama tersedia.",
+    "projectQuoted": "Harga Ikut Sebut Harga",
+    "quoteOnRequest": "Sebut harga projek",
+    "guideViewTypes": "Lihat jenis awning",
+    "guideViewComparison": "Bandingkan bahan",
+    "guideDiscussProject": "Bincangkan Projek Awning Anda",
+    "guideWhatsAppCta": "Minta sebut harga awning",
+    "guideFactorsNote": "Nota harga"
   },
   "serviceContent": {
     "overviewEyebrow": "Gambaran keseluruhan",
@@ -710,7 +717,10 @@
     "ctaSub": "Dapatkan sebut harga tetap, slot hari yang sama dan jaminan bertulis — beritahu kami skop kerja anda di WhatsApp, atau cuba pengira anggaran segera dahulu.",
     "estimateCta": "Dapatkan anggaran segera",
     "allServices": "Semua perkhidmatan",
-    "pricingLink": "Panduan harga"
+    "pricingLink": "Panduan harga",
+    "projectQuotedTrust": "Harga Ikut Sebut Harga, Skop Disahkan Bertulis",
+    "whatsappResponse": "Respons WhatsApp Pantas",
+    "quoteOnlyAnswer": "{title} disyorkan apabila anda memerlukan {tagline} Perkhidmatan ini diberi harga mengikut projek: KL Servis Rumah mengesahkan skop, bahan dan terma sebut harga secara bertulis sebelum kerja bermula, dengan {warranty}. Hantar lokasi, gambar dan anggaran ukuran di WhatsApp untuk sebut harga khusus projek."
   },
   "subserviceContent": {
     "whatsIncluded": "Apa yang disertakan",

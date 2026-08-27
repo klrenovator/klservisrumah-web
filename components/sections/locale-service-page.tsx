@@ -13,7 +13,7 @@ import {
   CheckCircle
 } from "lucide-react";
 import type { Locale } from "@/lib/i18n";
-import { servicesData } from "@/config/services-data";
+import { servicesData, isQuoteOnlyService } from "@/config/services-data";
 import { buildEstimateLinks } from "@/config/estimate-links";
 import { siteConfig } from "@/config/site";
 import { getLocalizedService } from "@/lib/service-i18n";
@@ -32,6 +32,7 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { DirectAnswer } from "@/components/content/direct-answer";
 import { LocaleTreeLinks } from "@/components/sections/locale-tree-links";
 import { ProcessTimeline } from "@/components/content/process-timeline";
+import { ServiceGuideSection } from "@/components/sections/service-guide-section";
 
 /**
  * Fully-localised, indexable service page (`/ms/services/<slug>`,
@@ -181,10 +182,18 @@ export function LocaleServicePage({ locale, slug }: { locale: "ms" | "zh"; slug:
               )}
 
               <div className="flex flex-wrap items-center gap-3 mt-2">
-                <span className="inline-flex items-baseline gap-2 bg-[#F0F9FF] border-2 border-[#BAE6FD] rounded-2xl px-5 py-3">
-                  <span className="text-xs font-extrabold text-[#0EA5E9] uppercase tracking-wider">{t("common.fromLabel")}</span>
-                  <span className="text-3xl sm:text-4xl font-black text-[#075985] tracking-tight">{service.startPrice}</span>
-                </span>
+                {isQuoteOnlyService(service) ? (
+                  <span className="inline-flex items-center gap-2 bg-[#F0F9FF] border-2 border-[#BAE6FD] rounded-2xl px-5 py-3.5">
+                    <span className="text-sm sm:text-base font-black text-[#075985] tracking-tight">
+                      {t("serviceDetail.projectQuoted")}
+                    </span>
+                  </span>
+                ) : (
+                  <span className="inline-flex items-baseline gap-2 bg-[#F0F9FF] border-2 border-[#BAE6FD] rounded-2xl px-5 py-3">
+                    <span className="text-xs font-extrabold text-[#0EA5E9] uppercase tracking-wider">{t("common.fromLabel")}</span>
+                    <span className="text-3xl sm:text-4xl font-black text-[#075985] tracking-tight">{service.startPrice}</span>
+                  </span>
+                )}
                 <span className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 text-emerald-700 px-4 py-3 rounded-2xl text-sm font-bold">
                   <Award className="w-4 h-4" />
                   <span>{localized.warranty}</span>
@@ -291,21 +300,45 @@ export function LocaleServicePage({ locale, slug }: { locale: "ms" | "zh"; slug:
         <div className="container-narrow">
           <DirectAnswer
             question={t("serviceContent.isRightService", { name: localized.title })}
-            answer={`${localized.title} ${t("serviceContent.isRightAnswer", {
-              tagline: localized.tagline,
-              startPrice: service.startPrice,
-              warranty: localized.warranty,
-            })}`}
-            trustItems={[
-              t("serviceContent.priceConfirmed"),
-              t("serviceContent.warranty", { days: warrantyLead(localized.warranty) }),
-              t("serviceContent.insuredOps"),
-              t("serviceContent.sameDayAvail"),
-              t("serviceContent.ssmRegistered"),
-            ]}
+            answer={
+              isQuoteOnlyService(service)
+                ? t("serviceContent.quoteOnlyAnswer", {
+                    title: localized.title,
+                    tagline: localized.tagline,
+                    warranty: localized.warranty,
+                  })
+                : `${localized.title} ${t("serviceContent.isRightAnswer", {
+                    tagline: localized.tagline,
+                    startPrice: service.startPrice,
+                    warranty: localized.warranty,
+                  })}`
+            }
+            trustItems={
+              isQuoteOnlyService(service)
+                ? [
+                    t("serviceContent.projectQuotedTrust"),
+                    t("serviceContent.ssmRegistered"),
+                    t("serviceContent.insuredOps"),
+                    t("serviceContent.whatsappResponse"),
+                  ]
+                : [
+                    t("serviceContent.priceConfirmed"),
+                    t("serviceContent.warranty", { days: warrantyLead(localized.warranty) }),
+                    t("serviceContent.insuredOps"),
+                    t("serviceContent.sameDayAvail"),
+                    t("serviceContent.ssmRegistered"),
+                  ]
+            }
           />
         </div>
       </section>
+
+      {/* ── Long-form pillar guide (quote-only awning page etc.) ─────── */}
+      <ServiceGuideSection
+        guide={service.guide}
+        serviceTitle={localized.title}
+        localeOverride={locale}
+      />
 
       {/* ── Sub-services pricing ─────────────────────────────────────── */}
       <section className="section-tight bg-white">

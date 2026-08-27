@@ -163,7 +163,7 @@ export type ServiceScopeBook = {
 };
 
 /**
- * Published sub-service pricing for all 28 services, powering the generic
+ * Published sub-service pricing for all 29 services, powering the generic
  * per-service estimator at `/services/[slug]` and `/tools/[slug]-calculator`.
  */
 export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
@@ -1684,5 +1684,43 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
       }
     ],
     "quoteOnly": []
+  },
+  "awning-installation": {
+    "startPrice": 0,
+    "scopes": [],
+    "quoteOnly": [
+      {
+        "name": "Car Porch Awning Installation",
+        "desc": "New car porch / carport awning to shade and protect vehicles from sun and rain, sized to your porch with suitable slope and drainage."
+      },
+      {
+        "name": "Polycarbonate Awning",
+        "desc": "Polycarbonate sheet awning roofing in clear or tinted profiles — translucent, lightweight cover for porch, yard, walkway or balcony that lets natural light through."
+      },
+      {
+        "name": "Metal Deck Awning",
+        "desc": "Metal deck / metal-sheet awning roofing for strong rain and sun protection over utility areas, drying yards and porches, with anti-rust frame treatment."
+      },
+      {
+        "name": "Aluminium Composite (ACP) Awning",
+        "desc": "Aluminium composite panel awning — opaque, clean-lined and low-maintenance cover that reduces glare and rain noise for porches and yards."
+      },
+      {
+        "name": "Glass Awning",
+        "desc": "Tempered glass awning for entrances, windows and feature areas where a premium, light-filled look is wanted, framed and fixed to suit the opening."
+      },
+      {
+        "name": "Canvas & Fabric Awning",
+        "desc": "Canvas/fabric fixed and retractable-style awnings for balconies, patios, terraces and shopfronts where shade and appearance are the priority."
+      },
+      {
+        "name": "Balcony, Patio & Window Awning",
+        "desc": "Awnings sized for balconies, patios, terraces, windows and doors — shade and rain protection without closing up the space."
+      },
+      {
+        "name": "Awning Replacement & Repair",
+        "desc": "Replacing old, leaking, rusted or sagging awnings — inspection of the existing frame, roofing, joints and drainage, with repair or full replacement options."
+      }
+    ]
   }
 };
