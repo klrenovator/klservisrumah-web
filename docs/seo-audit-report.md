@@ -1,6 +1,6 @@
 # SEO Audit Report
 
-Generated: 2026-08-27T03:31:08.610Z
+Generated: 2026-08-27T04:43:18.619Z
 
 ## Route Inventory
 
@@ -221,6 +221,8 @@ Generated: 2026-08-27T03:31:08.610Z
 - /blog/roof-leak-diagnosis-repair-kl
 - /blog/ridge-re-bedding-re-pointing-kl
 - /blog/polycarbonate-vs-metal-vs-acp-awning-malaysia
+- /blog/car-porch-awning-guide-malaysia
+- /blog/how-awning-pricing-works-malaysia
 - /blog/aircond-water-heater-and-oven-point
 - /blog/aluminium-sliding-window-kl
 - /blog/autogate-motor-replacement-service-kl
@@ -394,16 +396,16 @@ Generated: 2026-08-27T03:31:08.610Z
 
 ## Checks
 
-- Total representative routes: 387
+- Total representative routes: 389
 - Service pages: 29
 - Area pages: 37
 - Suburb records: 52
 - Problem pages: 86
-- Blog posts: 209
+- Blog posts: 211
 
 ## Metadata consistency (post-build full-corpus)
 
-- Pages checked: 5791
+- Pages checked: 5797
 - Pages with hreflang while canonicalised to a different URL: 0
 
 _No issues found — every page that canonicalises to a different URL correctly omits hreflang (Google: canonical overrides hreflang)._

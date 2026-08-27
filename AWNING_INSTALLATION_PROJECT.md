@@ -125,9 +125,10 @@ H1: Awning Installation in Kuala Lumpur & Selangor
 - [x] Sub-service internal links: welding ("Steel Structure & Awning
       Fabrication") and glass-aluminium remain related via topical map
 - [x] Area links auto-render via ServiceAreaLinks (data-driven)
-- [x] (Cluster rollout started) blog post 1 — "Polycarbonate vs Metal vs
-      ACP Awning in Malaysia" — now published and links to this page (see §8);
-      remaining 7 cluster posts are pending
+- [x] (Cluster rollout in progress) blog posts 1, 3 and 4 now published and link
+      to this page (see §8); the EN hub's related-guides block lists all three;
+      MS/ZH specialty pages link their localized twins; remaining 5 cluster
+      posts are pending
 
 ## 6. Schema Tasks
 
@@ -149,7 +150,7 @@ H1: Awning Installation in Kuala Lumpur & Selangor
 - [x] MS/ZH localized service twin routes already exist (/ms/services/*,
       /zh/services/*) — auto-render via existing architecture
 
-## 8. Supporting Content Cluster (7 of 8 pending; post 1 published 2026-08-27)
+## 8. Supporting Content Cluster (5 of 8 pending; posts 1, 3, 4 published)
 
 Blog/pillar posts (each links to `/services/awning-installation`):
 1. [x] **Polycarbonate vs Metal vs ACP Awning in Malaysia — PUBLISHED**
@@ -160,8 +161,23 @@ Blog/pillar posts (each links to `/services/awning-installation`):
       sub-service pages + welding silo; wired into the topical-map BLOG pool
       and 4 specialty relatedBlogs; category "Awning"; cover `/hero-awning.svg`.
 2. [ ] Best Awning Types for Malaysian Homes (2026)
-3. [ ] Car Porch Awning Guide: Materials, Drainage & Cost Factors
-4. [ ] How Awning Pricing Works in Malaysia (cost factors, no fabricated prices)
+3. [x] **Car Porch Awning Guide: Materials, Drainage & Cost Factors — PUBLISHED
+      2026-08-27** (`/blog/car-porch-awning-guide-malaysia` + native MS
+      `/ms/blog/panduan-awning-car-porch-malaysia` + native ZH
+      `/zh/bo-ke/che-peng-yu-peng-zhi-nan-ma-lai-xi-ya`). Materials/heat/
+      clearance/drainage/structure/strata + quote checklist; links to car-porch
+      sub-service, pillar, material sub-pages, post 1, replacement sub-service,
+      the clogged-gutter problem node and welding; wired into BLOG pool +
+      car-porch specialty relatedBlogs.
+4. [x] **How Awning Pricing Works in Malaysia — PUBLISHED 2026-08-27**
+      (`/blog/how-awning-pricing-works-malaysia` + native MS
+      `/ms/blog/bagaimana-harga-awning-dikira-di-malaysia` + native ZH
+      `/zh/bo-ke/yu-peng-jia-ge-ru-he-ji-suan-ma-lai-xi-ya`). The 8 verified
+      cost factors + quote-input checklist + why-no-price-list honesty
+      positioning (no fabricated RM figures); links to pillar + 3 material
+      sub-pages + replacement sub-service + /pricing (EN only — MS/ZH link the
+      services directory instead); wired into BLOG pool + polycarbonate and
+      replacement specialty relatedBlogs.
 5. [ ] Awning Maintenance: Leaks, Rust & Water Pooling
 6. [ ] Retractable vs Fixed Awning
 7. [ ] Choosing an Awning for Balcony / Patio / Yard
@@ -211,11 +227,19 @@ Blog/pillar posts (each links to `/services/awning-installation`):
   Malaysia" — full native EN/MS/ZH article, quote-safe, wired into the topical map
   (BLOG pool + 4 specialty relatedBlogs), blog indexes + AI-context regenerated,
   validator count 208 → 209, all gates + build + smoke pass (§8)
+- Supporting content cluster posts 3/8 and 4/8 (2026-08-27, session 2):
+  "Car Porch Awning Guide: Materials, Drainage & Cost Factors" and "How Awning
+  Pricing Works in Malaysia" — full native EN/MS/ZH articles, quote-safe
+  (no fabricated prices), wired into the topical map (BLOG pool now 6 posts +
+  car-porch/polycarbonate/replacement specialty relatedBlogs), validator count
+  209 → 211, all gates + build + 6-route smoke + sitemap check pass (§8)
 
 ### PENDING
-- Supporting blog cluster posts 2–8 (see §8) — same recipe as post 1:
-  full native trilingual article, quote-safe content, topical-map BLOG pool entry,
-  `validate:blog-production.ts` count bump, regenerated indexes, full gate re-run
+- Supporting blog cluster posts 2, 5–8 (see §8) — same recipe: full native
+  trilingual article, quote-safe content, topical-map BLOG pool entry,
+  `validate:blog-production.ts` count bump, regenerated indexes, full gate re-run.
+  Post 2 ("Best Awning Types") overlaps post 1's material comparison — consider
+  re-angling it as a decision-guide before writing.
 - Real project photography (business to supply — see business confirmation)
 - (Site-wide, outside awning scope — discovered during §9 validation): MS/ZH blog
   article routes emit no BlogPosting/Article schema (all 209 topics; only EN does).
