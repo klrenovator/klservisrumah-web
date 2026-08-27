@@ -185,7 +185,7 @@ All implemented via `config/topical-authority-map.ts` (validated at build time)
 and the data-driven related/problems/areas/blogs components — no hardcoded
 URLs invented.
 
-## J. Supporting Content Cluster (8+ recommended posts; posts 1–4 published 2026-08-27)
+## J. Supporting Content Cluster (8+ recommended posts; posts 1–5 published 2026-08-27)
 
 | # | Topic | Intent | Primary KW | Secondary KWs | Suggested H1 | Key sections | Links to pillar |
 |---|---|---|---|---|---|---|
@@ -193,7 +193,7 @@ URLs invented.
 | 2 | Best Awning Types for Malaysian Homes | informational/commercial | best awning type for house Malaysia | car porch awning, awning rumah | How to Choose the Right Awning for Your Malaysian Home | application→type map, priority selection (light/heat/noise/looks/retractable), strata, climate basics | awning-installation + sub pages | ✅ **PUBLISHED** 2026-08-27 — `/blog/how-to-choose-right-awning-malaysia` + native MS `/ms/blog/cara-memilih-awning-yang-sesuai-rumah-malaysia` + native ZH `/zh/bo-ke/ru-he-wei-ma-lai-xi-ya-zhu-jia-xuan-ze-he-shi-yu-peng`. Re-angled as an **application-first decision guide** (avoids duplicating post 1's material comparison); quote-safe; links to pillar + all 5 application sub-pages + welding + posts 1/3/4; wired into BLOG pool (position 1) + glass/canvas-fabric/balcony-patio specialty relatedBlogs; validator 211→212 |
 | 3 | Car Porch Awning Guide | transactional/info | car porch awning Malaysia | awning car porch KL, parking shade | Car Porch Awning Guide: Materials, Drainage & Cost Factors | span, heat-reducing sheets, slope/gutter, what to send for quote | car-porch sub-page + pillar | ✅ **PUBLISHED** 2026-08-27 — `/blog/car-porch-awning-guide-malaysia` + native MS/ZH twins |
 | 4 | Awning Cost in Malaysia (factors, no fabricated prices) | commercial | awning cost Malaysia | harga awning, awning price per sqft | How Awning Pricing Works in Malaysia | size, material, frame, access, removal; quote checklist | quote section | ✅ **PUBLISHED** 2026-08-27 — `/blog/how-awning-pricing-works-malaysia` + native MS/ZH twins |
-| 5 | Awning Maintenance: Leaks, Rust, Pooling | informational | awning leaking | awning repair, awning rust, water pooling | Awning Problems: Leaks, Rust and Water Pooling | causes, DIY checks, when to call, replacement signs | replacement sub-page |
+| 5 | Awning Maintenance: Leaks, Rust, Pooling | informational | awning leaking | awning repair, awning rust, water pooling | Awning Problems: Leaks, Rust and Water Pooling | causes, safe ground-level checks, leak paths, drainage, repair vs replacement, quote inputs | replacement sub-page | ✅ **PUBLISHED** 2026-08-27 — `/blog/awning-maintenance-leaks-rust-water-pooling` + native MS `/ms/blog/penyelenggaraan-awning-bocor-karat-air-bertakung` + native ZH `/zh/bo-ke/yu-peng-bao-yang-lou-shui-sheng-xiu-ji-shui`; quote-safe (no fabricated maintenance interval, lifespan, price or warranty); links to pillar + replacement sub-service + welding + clogged-gutter/rusting-metal-grille problem nodes + pricing guide; wired into the awning BLOG pool and replacement specialty relatedBlogs; validator 212→213 |
 | 6 | Retractable vs Fixed Awning | commercial | retractable vs fixed awning | motorised awning, fabric awning | Retractable vs Fixed Awnings: Which Fits Your Home? | balcony/patio vs porch, wind care, fabric life | canvas/fabric + retractable sub-page |
 | 7 | Choosing an Awning for Balcony / Patio | informational/commercial | balcony awning Malaysia | patio awning, condo awning strata | Choosing an Awning for a Balcony or Patio | strata/JMB rules, materials, light vs shade | balcony sub-page |
 | 8 | Replacing an Old or Leaking Awning | transactional | replace old awning | awning replacement KL, tukar awning | Replacing an Old or Leaking Awning: What to Check | frame reuse, sheet life, drainage fix, removal | replacement sub-page |
@@ -338,7 +338,7 @@ content (mahligaiidaman, lemon8 contractor posts).
 - [x] HTTP 200 smoke test EN/MS/ZH hub + sub-service; title/meta/canonical/
       FAQPage(15)/HowTo(6)/Service schema verified; sitemap & services index
       include the page
-- [ ] Supporting blog cluster — 4 of 8 published (posts 1–4; §J); posts 5–8 pending
+- [x] Supporting blog cluster — 5 of 8 published (posts 1–5; §J); posts 6–8 pending
 - [ ] Real project photography — pending business supply, section L
 - [ ] Optional WhatsApp pre-filled quote-request message template
 

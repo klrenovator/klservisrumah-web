@@ -4179,6 +4179,272 @@ KL Servis Rumah 在吉隆坡与雪兰莪设计、制作和安装[定制雨棚](/
 
 告诉我们您哪里需要遮阳、最困扰您的是什么——高温、雨水、眩光还是噪音——我们会建议适合现场的雨棚类型，并提供分项、按项目定价的报价单。[与我们的团队在 WhatsApp 聊聊](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah%EF%BC%8C%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A3%E9%9B%A8%E6%A3%9A%E5%BB%BA%E8%AE%AE%E5%92%8C%E6%8A%A5%E4%BB%B7%E3%80%82)`
     }
+  },
+  "awning-maintenance-leaks-rust-water-pooling": {
+    ms: {
+      slug: "penyelenggaraan-awning-bocor-karat-air-bertakung",
+      title: "Penyelenggaraan Awning: Kebocoran, Karat & Air Bertakung", category: "Awning",
+      excerpt: "Awning anda bocor, berkarat atau menakung air selepas hujan? Ketahui perkara yang perlu diperiksa pada lembaran, sendi, rangka dan saliran — serta bila awning perlu dibaiki atau diganti.",
+      metaTitle: "Penyelenggaraan Awning: Baiki Bocor, Karat & Air Bertakung",
+      metaDesc: "Panduan memeriksa awning bocor, berkarat atau menakung air di KL dan Selangor — semak saliran, sendi, pengikat dan rangka sebelum membaiki atau mengganti.",
+      content: `Jika awning anda menitis selepas hujan, menunjukkan kesan oren pada rangka atau menyimpan takungan air cetek, jangan anggap ia sekadar masalah rupa. Kebocoran dan air bertakung boleh berpunca daripada saliran tersumbat, sendi yang gagal, pengikat longgar, kecerunan yang tidak mencukupi atau rangka yang tidak lagi menyokong bumbung dengan baik.
+
+Panduan ini menerangkan pemeriksaan yang boleh dibuat dengan selamat dari aras tanah, perkara yang mungkin ditunjukkan oleh simptom biasa, dan bila anda patut mendapatkan penilaian. KL Servis Rumah menyediakan maklumat [pemasangan awning dan sebut harga projek](/ms/services/awning-installation) di seluruh KL & Selangor; jika awning sedia ada bocor, berkarat atau melendut, skop [penggantian dan pembaikan awning](/ms/services/awning-installation/awning-replacement-and-repair) boleh dibincangkan selepas keadaannya difahami.
+
+## Jawapan ringkas
+
+- Periksa awning selepas hujan lebat: lihat titisan, kesan pada dinding, limpahan longkang dan air yang masih berada di atas bumbung.
+- Pastikan daun dan serpihan tidak terkumpul pada lembaran, longkang atau paip turun, tetapi jangan panjat awning yang tidak direka sebagai laluan berjalan.
+- Dari tempat yang selamat, semak kepingan retak atau menguning, sendi terbuka, pengedap lama, pengikat longgar, karat dan bahagian yang melendut.
+- Masalah setempat pada pengedap, pengikat atau saliran mungkin boleh dibaiki; kerosakan lembaran yang meluas, kakisan teruk atau rangka lemah mungkin memerlukan penggantian. Skop sebenar perlu dinilai, bukan diteka.
+
+## Senarai semak penyelenggaraan awning
+
+Tiada satu jadual penyelenggaraan yang sesuai untuk semua awning. Bumbung di bawah pokok mungkin mengumpulkan daun lebih cepat berbanding awning di kawasan terbuka, manakala sistem boleh tarik atau fabrik mempunyai arahan penjagaan yang berbeza daripada bumbung lembaran tetap. Gunakan pemeriksaan ini selepas hujan lebat dan ketika kerja pembersihan luar rumah, sambil mematuhi arahan pembekal bahan jika ada.
+
+### 1. Perhatikan ke mana air hujan mengalir
+
+Semasa atau selepas hujan lebat, perhatikan laluan air yang dirancang. Air sepatutnya mengalir ke tepi, longkang atau paip turun yang ditetapkan, bukan melimpah ke dinding, pintu atau kawasan jiran. Cari kesan lembap baharu di bawah awning dan limpahan daripada longkang yang mungkin kelihatan kosong tetapi salur keluarnya tersumbat.
+
+Jangan berdiri di bawah panel yang disyaki longgar atau menjangkau longkang tinggi dari kedudukan yang tidak selamat. Foto atau video pendek yang diambil dari tanah lebih berguna daripada mengambil risiko jatuh.
+
+### 2. Lihat keadaan lembaran atau panel
+
+Dari aras tanah, periksa retak, lubang, tepi yang terangkat, perubahan warna, haus teruk, pertindihan yang terbuka atau bentuk yang berubah. Polikarbonat, metal deck, ACP, kaca dan fabrik tidak rosak dengan cara yang sama, tetapi kerosakan pada mana-mana penutup bumbung boleh membawa air ke sendi atau rangka.
+
+Jangan sental polikarbonat dengan pad kasar atau alat keras. Kotoran dan daun biasanya boleh dibersihkan dengan kaedah lembut yang sesuai, tetapi lembaran yang rapuh, rosak atau sukar dicapai patut dinilai dan bukannya dipaksa untuk dicuci.
+
+### 3. Semak sendi dan bahagian pertemuan dengan dinding
+
+Banyak kebocoran berlaku pada sendi, pengikat, flashing atau tempat awning bertemu dinding, bukan di tengah lembaran yang masih elok. Lihat pengedap yang mengelupas atau retak, ruang pada tepi dinding, kesan air di bawah pengikat, atau lembaran yang terangkat di sekeliling skru.
+
+Menyapu pengedap baharu di atas permukaan yang basah atau kotor mungkin hanya menyembunyikan simptom untuk seketika tanpa membetulkan pergerakan, pertindihan yang salah atau air yang mengalir di belakang flashing. Catat lokasinya dan beritahu pemasang apa yang berlaku ketika hujan.
+
+### 4. Periksa rangka dan pengikat
+
+Rangka keluli, braket, tiang, skru dan pengikat lain perlu diberi perhatian dalam keadaan lembap dan hujan Malaysia. Cari kesan oren, kemasan mengelupas, karat di sekitar kimpalan atau hujung potongan, braket longgar, pergerakan pada anchor dan sebarang lenturan atau lendutan yang kelihatan.
+
+Keupayaan kimpalan sedia ada menggunakan primer anti-karat bersama kemasan tahan cuaca atau serbuk pada fabrikasi keluli yang berkaitan. Kemasan itu tetap perlu diperiksa dari semasa ke semasa: apabila kakisan atau hentakan mendedahkan keluli, rawatan awal lebih mudah daripada menunggu sehingga rangka atau pengikat menjadi lemah.
+
+### 5. Pastikan longkang dan paip turun tidak tersumbat
+
+Daun, lumpur dan serpihan kecil mengurangkan laluan air hujan. Longkang tersumbat boleh melimpah ke dinding dan kelihatan seperti kebocoran awning, manakala paip turun yang tersumbat atau longgar boleh melepaskan air ke tempat yang menyebabkan kotoran atau takungan. Periksa sambungan salur keluar, braket longkang dan sama ada air boleh keluar daripada sistem.
+
+Jika masalah utamanya longkang tersumbat atau melimpah, lihat panduan masalah [longkang tersumbat dan bocor](/ms/problems/clogged-gutter-leaking). Jika membersihkan laluan tidak menghentikan kebocoran, kecerunan, sendi, flashing atau sokongan awning masih perlu diperiksa.
+
+### 6. Bersihkan dengan cara yang selamat
+
+Pembersihan ringan dari aras tanah dan membuang daun yang boleh dicapai dengan selamat ialah langkah munasabah. Jangan panjat polikarbonat, ACP, metal deck atau awning fabrik; ia bukan permukaan berjalan yang selamat. Jangan longgarkan pengikat struktur, mengisar karat di atas kepala, menebuk lubang saliran baharu atau melakukan kerja kimpalan tanpa peralatan dan kawalan yang betul.
+
+## Apa yang mungkin ditunjukkan oleh simptom biasa
+
+| Simptom | Perkara yang perlu diperiksa dahulu | Mengapa ia penting |
+|---|---|---|
+| Titisan di dinding atau pintu | Flashing dinding, pengedap atas, longkang dan arah aliran | Air mungkin bergerak di belakang tepi, bukan menembusi tengah lembaran |
+| Titisan pada satu skru atau pertindihan | Washer pengikat, pertindihan dan pengedap setempat | Kecacatan kecil pada pengikat atau sendi boleh mengarahkan air ke dalam |
+| Air kekal di atas bumbung | Kecerunan, sokongan, serpihan dan perubahan bentuk | Takungan menambah beban dan boleh memburukkan lendutan, kebocoran atau kegagalan pengedap |
+| Kesan oren atau kemasan mengelupas | Rangka, kimpalan, hujung potongan, skru dan braket | Kakisan mungkin hanya pada kemasan atau sudah menjejaskan logam di bawahnya |
+| Panel atau rangka kelihatan lebih rendah | Braket, anchor, anggota rangka dan sokongan lembaran | Pergerakan atau sokongan tidak mencukupi perlu diperiksa sebelum pembaikan lain dibuat |
+| Longkang melimpah ketika hujan lebat | Longkang, salur keluar, paip turun dan jumlah aliran | Limpahan boleh disangka kebocoran bumbung dan merosakkan dinding bersebelahan |
+
+Ini ialah titik mula, bukan diagnosis jarak jauh. Air hujan boleh bergerak sepanjang lembaran atau rangka sebelum muncul di tempat anda nampak titisan.
+
+## Kebocoran awning: ikut laluan air
+
+Hari yang kering boleh menyukarkan usaha mencari punca kebocoran. Jika selamat, catat sama ada air muncul ketika hujan lebat, hujan yang ditiup angin atau setiap kali hujan. Ambil foto bahagian bawah, tepi dinding, longkang dan kesan pada siling atau dinding. Perhatikan juga sama ada titisan bermula terus atau selepas bumbung mengumpulkan air.
+
+Kawasan biasa termasuk pertemuan dengan dinding, pertindihan lembaran, lubang skru atau braket, panel retak, pengedap yang gagal dan sambungan longkang. Masalah bumbung atau kebocoran pada dinding di atas awning juga kadangkala kelihatan seperti kebocoran awning, jadi kawasan sekeliling tidak patut diketepikan tanpa pemeriksaan. Jika air masuk berhampiran kelengkapan elektrik, jauhkan diri dan aturkan pemeriksaan yang sesuai dengan segera.
+
+## Karat: kesan permukaan atau masalah rangka?
+
+Karat permukaan pada kepala skru atau hujung kecil yang terdedah berbeza daripada kakisan yang telah mengurangkan bahagian rangka, braket atau anchor. Jangan menganggap mengecat kawasan oren sudah mencukupi. Logam yang terjejas mungkin perlu dibersihkan, dirawat dan diberi kemasan yang sesuai; jika bahagian, kimpalan atau pengikat telah hilang kekuatan, bahagian itu mungkin perlu dibaiki atau diganti.
+
+Pemeriksaan karat perlu melihat lebih daripada kesan yang paling jelas. Periksa bahagian bawah rangka, kimpalan, hujung potongan, plat tapak dan tempat yang menakung air. Untuk contoh simptom karat pada kerja logam, lihat panduan [jeriji logam berkarat](/ms/problems/rusting-window-grille); prinsip pemeriksaan yang sama membantu menunjukkan sama ada kakisan terhad atau memerlukan penilaian rangka yang lebih luas. Perkhidmatan [kimpalan dan fabrikasi logam](/ms/services/welding) berkaitan dengan kerja rangka, tetapi skop awning, bahan dan kemasan sebenar tetap khusus kepada projek.
+
+## Air bertakung dan masalah saliran
+
+Sedikit air yang bergerak di atas bumbung ketika hujan adalah biasa; air yang kekal selepas aliran berhenti ialah tanda amaran. Daun mungkin punca segera, tetapi takungan juga boleh berkaitan dengan kecerunan tidak mencukupi, sokongan berubah kedudukan, panel bengkok, saliran tersumbat atau pemasangan yang tidak direka untuk keluasan bumbung semasa.
+
+Jangan tebuk lubang saliran baharu atau memotong panel sebagai penyelesaian cepat. Tindakan itu boleh mewujudkan laluan kebocoran baharu dan menjejaskan rangka atau dinding di bawah. Bersihkan serpihan yang boleh dicapai dengan selamat, ambil foto lokasi takungan dan minta kecerunan, sokongan, sendi serta laluan saliran diperiksa jika masalah berulang.
+
+## Baiki atau ganti sepenuhnya?
+
+Pembaikan mungkin munasabah apabila masalahnya terhad dan rangka, penutup bumbung serta titik pengancing masih kukuh. Contohnya termasuk masalah pengedap atau pengikat setempat, sambungan longkang atau rawatan karat permukaan pada peringkat awal. Penggantian lebih berkemungkinan apabila kebocoran berulang, lembaran retak atau rapuh secara meluas, kakisan teruk, sokongan gagal, rangka melendut atau saliran tidak boleh dibetulkan tanpa mengubah reka bentuk.
+
+Penilaian perlu membezakan penutup bumbung daripada rangka. Mengganti lembaran sambil meninggalkan rangka yang lemah atau laluan air yang tidak baik mungkin hanya menangguhkan masalah. Sebaliknya, penggantian seluruh awning tidak semestinya perlu jika struktur dan sebahagian besar penutup masih elok. Sebut harga hendaklah menyatakan perkara yang dibaiki, ditanggalkan, digunakan semula atau diganti.
+
+## Bila patut meminta penilaian profesional?
+
+Minta penilaian jika awning berada di atas pintu masuk atau kawasan yang digunakan, rangka bergerak, kebocoran masih aktif, longkang tinggi atau sukar dicapai, karat berada di sekitar sambungan struktur, atau anda tidak pasti sama ada air datang daripada awning atau bangunan. Untuk air berhampiran peralatan elektrik, utamakan keselamatan diri dan pemeriksaan elektrik yang berkaitan.
+
+## Maklumat untuk sebut harga pembaikan atau penggantian
+
+Hantar lokasi atau kawasan anda di KL & Selangor, foto dari beberapa sudut aras tanah, gambar dekat kebocoran atau karat, lebar dan unjuran anggaran, serta penerangan ringkas tentang apa yang berlaku ketika hujan. Sertakan foto titik pengancing pada dinding atau rasuk, longkang dan paip turun, dan beritahu sama ada anda mahu mengekalkan rangka sedia ada atau terbuka kepada penggantian. Jika awning berada di kondominium, komuniti berpagar atau hartanah komersial, sertakan sebarang syarat JMB, MC, pengurusan atau pihak berkuasa tempatan yang anda sudah tahu.
+
+Foto dan dimensi anggaran mungkin cukup untuk sebut harga projek awal. Jika rangka, akses, kecerunan atau saliran perlu diperiksa, penilaian tapak diatur sebelum skop dimuktamadkan. Lihat [panduan harga awning](/ms/blog/bagaimana-harga-awning-dikira-di-malaysia) untuk memahami mengapa sebut harga adalah berperincian, bukan angka generik per kaki persegi.
+
+## Soalan lazim
+
+### Mengapa awning hanya bocor ketika hujan lebat?
+
+Hujan lebat boleh melebihi kapasiti longkang yang separa tersumbat, mendedahkan laluan aliran yang kurang baik atau menolak air melalui pertindihan, flashing dinding atau pengedap yang lemah. Angin juga boleh menolak hujan ke tepi yang kering ketika hujan renyai. Catat keadaan cuaca dan tempat air muncul, kemudian periksa laluan bumbung serta saliran.
+
+### Adakah air bertakung di atas awning perkara biasa?
+
+Tidak. Air sepatutnya mengalir ke tepi atau laluan saliran yang ditetapkan. Takungan berterusan mungkin menunjukkan serpihan, kecerunan tidak mencukupi, sokongan berubah kedudukan, perubahan bentuk atau salur keluar tersumbat. Ia patut diperiksa dan bukan dibiarkan menambah beban pada bumbung.
+
+### Berapa kerap awning perlu dibersihkan?
+
+Tiada jadual sejagat. Periksa selepas hujan lebat dan bersihkan serpihan yang boleh dicapai semasa penyelenggaraan luar rumah; hartanah di bawah pokok mungkin memerlukan perhatian lebih kerap. Ikut arahan pembersihan bahan atau pembekal dan gunakan kaedah yang selamat, bukan memanjat awning.
+
+### Bolehkah saya cat terus rangka awning yang berkarat?
+
+Tidak sebelum logam diperiksa. Karat permukaan mungkin memerlukan penyediaan, rawatan dan kemasan yang sesuai, manakala kakisan pada kimpalan, braket, anchor atau bahagian rangka mungkin memerlukan pembaikan atau penggantian. Menutupnya tanpa membetulkan punca boleh menyembunyikan sambungan yang semakin lemah.
+
+### Bolehkah awning yang bocor dibaiki tanpa diganti?
+
+Kadangkala boleh. Masalah sendi, pengikat, longkang atau pengedap yang setempat mungkin boleh dibaiki jika keseluruhan bumbung dan rangka masih kukuh. Kebocoran berulang, kerosakan lembaran yang meluas, kakisan teruk, lendutan atau saliran yang buruk mungkin menjadikan penggantian pilihan yang lebih sesuai. Keadaan seluruh sistem patut dinilai dahulu.
+
+### Apakah maklumat yang diperlukan untuk sebut harga pembaikan awning?
+
+Hantar lokasi, foto awning dan titik pengancing, saiz anggaran, bahan jika diketahui, tempat ia bocor atau menakung air, sama ada rangka bergerak atau berkarat, dan sama ada awning lama perlu ditanggalkan. Sebut harga khusus projek kemudian boleh menyatakan skop pembaikan, penggantian atau pembongkaran yang dicadangkan.
+
+## Dapatkan penilaian pembaikan atau penggantian awning
+
+Hantar foto dan dimensi anggaran di WhatsApp serta terangkan kebocoran, karat atau takungan yang anda lihat. KL Servis Rumah boleh menyemak aplikasinya dan menyediakan sebut harga berperincian khusus projek untuk skop awning yang sesuai. [Chat dengan pasukan kami](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah!%20Saya%20perlukan%20bantuan%20dengan%20awning%20yang%20bocor%2C%20berkarat%20atau%20menakung%20air.)`
+    },
+    zh: {
+      slug: "yu-peng-bao-yang-lou-shui-sheng-xiu-ji-shui",
+      title: "雨棚保养：漏水、生锈与积水怎么办", category: "雨棚",
+      excerpt: "雨棚出现漏水、骨架生锈或屋面积水？这份马来西亚维护指南教您检查排水、接缝、螺丝和骨架，以及何时维修或更换。",
+      metaTitle: "雨棚保养指南：漏水、生锈与积水 | KL 与雪兰莪",
+      metaDesc: "吉隆坡与雪兰莪雨棚漏水、生锈或积水怎么办？检查排水、接缝、紧固件和骨架，并了解何时维修或更换。",
+      content: `如果雨棚下雨后滴水、骨架出现橙色锈迹，或屋面一直留着一小滩水，不要只把它当成外观问题。漏水和积水可能与排水沟堵塞、接缝失效、固定件松动、坡度不足，或骨架已经不能正常支撑屋面有关。
+
+本指南说明屋主可以怎样在地面安全地做检查、常见症状可能指向什么，以及什么时候应该安排评估。KL Servis Rumah 在吉隆坡与雪兰莪提供[雨棚安装和项目报价](/zh/services/awning-installation)；如果现有雨棚漏水、生锈或下垂，可以在了解状况后讨论[雨棚更换与维修](/zh/services/awning-installation/awning-replacement-and-repair)范围。
+
+## 简短结论
+
+- 大雨后检查雨棚：留意滴水、墙面水痕、排水沟溢水，以及屋面上久久不退的水。
+- 清除板材和排水沟、落水管里的树叶与杂物，但不要爬上没有设计成走道的雨棚。
+- 从安全位置观察板材裂纹或变黄、接缝打开、老化密封胶、松动紧固件、生锈和下垂。
+- 局部密封、固定件或排水问题可能可以维修；大范围板材损坏、严重腐蚀或骨架变弱，可能更适合更换。具体范围需要评估，不能凭猜测决定。
+
+## 雨棚保养检查清单
+
+没有一个保养周期适合所有雨棚。树下的屋面可能比空旷位置更快积满落叶；伸缩或布艺系统的护理方式，也和固定板材屋面不同。大雨后以及进行户外清洁时，可以按以下项目检查，同时遵照材料或供应商提供的说明。
+
+### 1. 观察雨水往哪里走
+
+在大雨中或雨后不久，观察原本规划的排水路线。雨水应该流向指定的边缘、排水沟或落水管，而不是倒流到墙面、门口或邻居一侧。留意雨棚下方新出现的潮湿痕迹，也看看排水沟是否表面看似清楚但出口已经堵住。
+
+不要站在疑似松动的板材下方，也不要从不安全的位置伸手清理高处排水沟。从地面拍摄照片或短片，比冒险攀爬更有用。
+
+### 2. 查看板材或面板
+
+从地面观察是否有裂纹、破洞、边缘翘起、明显变色、严重磨损、搭接打开或板面变形。聚碳酸酯、金属瓦、ACP、玻璃和布艺的损坏方式不同，但任何屋面覆盖物受损，都可能把水带到接缝或骨架。
+
+不要用粗糙百洁布或硬工具擦洗聚碳酸酯。可以用合适的柔和方法清除可触及的灰尘和落叶；但如果板材已经脆化、损坏或位置难以触及，应先评估，不要硬擦硬洗。
+
+### 3. 检查接缝和靠墙位置
+
+许多漏水点不在完整板材的中间，而是在接缝、紧固件、泛水板，或雨棚与墙体的交界处。看看密封胶有没有剥落或裂开，靠墙边缘是否出现缝隙，固定点下方是否有水痕，板材在螺丝周围有没有翘起。
+
+在潮湿或肮脏的表面上再打一层密封胶，可能只是暂时盖住症状，并没有解决板材移动、搭接不当，或水从泛水板后面流入的问题。记录位置，并告诉安装人员下雨时发生了什么。
+
+### 4. 检查骨架与紧固件
+
+在马来西亚潮湿多雨的环境中，钢制骨架、支架、立柱、螺丝和其他固定件都要留意。观察橙色锈迹、饰面剥落、焊接处或切口生锈、支架松动、锚固点移动，以及明显的弯曲或下垂。
+
+现有的焊接能力会在相关钢制制作上使用防锈底漆以及耐候或粉末喷涂饰面。但饰面仍需随着时间检查：腐蚀或碰撞露出钢材后，及早处理比等到骨架或固定件变弱才处理容易。
+
+### 5. 保持排水沟和落水管畅通
+
+树叶、泥土和小杂物会缩小雨水的通道。排水沟堵塞可能溢到墙面，看起来像雨棚漏水；落水管堵塞或松脱，则可能把水排到会造成污渍或积水的位置。检查出口是否接好、排水沟支架有没有脱开，以及水是否能顺利离开系统。
+
+如果问题主要是排水沟堵塞或溢水，请参考[排水沟堵塞导致漏水](/zh/problems/clogged-gutter-leaking)问题指南。清理后仍然漏水的话，还需要检查雨棚的坡度、接缝、泛水板或支撑。
+
+### 6. 用安全的方法清洁
+
+在地面做简单观察，清除安全可触及的落叶，是合理的第一步。不要爬上聚碳酸酯、ACP、金属瓦或布艺雨棚，它们不是安全的行走表面。也不要在头顶松开结构螺丝、打磨锈迹、另开排水孔，或在没有合适设备和安全控制的情况下自行焊接。
+
+## 常见症状可能说明什么
+
+| 症状 | 先检查的位置 | 为什么重要 |
+|---|---|---|
+| 墙边或门口滴水 | 墙面泛水板、上方密封、排水沟和排水方向 | 水可能沿着边缘后方流动，并非从板材中间渗入 |
+| 某一颗螺丝或搭接处滴水 | 固定件垫圈、搭接和局部密封胶 | 小小的固定或接缝问题也能把水引到室内 |
+| 屋面一直有水 | 坡度、支撑、杂物和变形 | 积水会增加负荷，令下垂、漏水或密封失效更严重 |
+| 橙色锈迹或饰面剥落 | 骨架、焊接处、切口、螺丝和支架 | 腐蚀可能只影响饰面，也可能已经影响下面的金属 |
+| 板材或骨架比以前低 | 支架、锚固点、骨架构件和板材支撑 | 在再次维修前，应先检查是否有移动或支撑不足 |
+| 大雨时排水沟溢水 | 排水沟、出口、落水管和雨水量 | 溢水可能被误认为屋面漏水，也会损坏旁边的墙面 |
+
+这些只是初步检查方向，不是远程诊断。雨水可能沿着板材或骨架移动一段距离，最后才在您看到滴水的位置出现。
+
+## 雨棚漏水：沿着水路找原因
+
+天气干燥时，漏水点可能很难确认。如果情况安全，请记录水是在暴雨、有风的雨，还是每次下雨时出现。拍下屋面底部、墙边、排水沟，以及天花板或墙面的水痕。也留意滴水是马上出现，还是屋面积水后才出现。
+
+常见位置包括墙体交界、板材搭接、螺丝或支架穿孔、裂板、失效密封胶和排水沟连接处。上方屋面问题或墙体漏水，有时也会看起来像雨棚漏水，所以不能不检查周围建筑就下结论。如果水靠近电器或电线配件，请保持距离并尽快安排合适的检查。
+
+## 生锈：表面锈迹还是骨架问题？
+
+螺丝头或小段外露边缘的表面锈，与已经削弱骨架、支架或锚固点的腐蚀不同。不要以为把橙色部分涂上油漆就够了。受影响的金属可能需要清理、处理和重新做相容的饰面；如果构件、焊点或固定件已经失去强度，可能要维修或更换。
+
+检查生锈时，不要只看最明显的颜色。也要看骨架底部、焊接处、切口、底板和容易积水的地方。如需参考类似的金属生锈症状，也可查看[铁窗花生锈](/zh/problems/rusting-window-grille)指南；相同的检查思路有助于判断腐蚀是局部问题，还是需要更全面地评估骨架。若涉及骨架工作，可参考[焊接与金属制作服务](/zh/services/welding)；但实际雨棚范围、材料和饰面仍须按项目确认。
+
+## 积水与排水问题
+
+雨中少量流过屋面的水很正常；排水停止后仍然留下的水，则是警讯。落叶可能是直接原因，但积水也可能和坡度不足、支撑移位、板材变形、排水堵塞，或现有屋面面积与原设计不匹配有关。
+
+不要为了快速解决而自行钻排水孔或切板。这可能制造新的漏水路径，也可能影响下面的骨架或墙体。安全地清除可触及的杂物，拍下积水位置；如果问题重复出现，就应检查坡度、支撑、接缝和排水路线。
+
+## 维修还是整组更换？
+
+如果问题局部，且骨架、屋面板材和固定点仍然牢固，维修可能合理。例如局部密封胶或固定件、排水沟连接，或早期表面锈迹的处理。若反复漏水、板材大范围开裂或变脆、腐蚀严重、支撑失效、骨架下垂，或排水无法在不改变设计的情况下改善，则较可能需要更换。
+
+评估时要把屋面覆盖物和骨架分开看。只换板材，却留下变弱的骨架或错误的排水路线，可能只是把问题延后。反过来，如果结构和大部分覆盖物仍然良好，也不一定要整组更换。报价单应说明哪些部分会维修、拆除、保留再用或更换。
+
+## 什么时候应安排专业评估？
+
+如果雨棚位于入口或有人活动的区域上方、骨架会移动、漏水仍在发生、排水沟很高或难以接触、锈迹靠近结构连接处，或您无法判断水来自雨棚还是建筑，就应安排评估。如果水靠近电气设备，请先顾及人身安全，并安排相关的电气检查。
+
+## 维修或更换报价需要准备什么
+
+请发送您在吉隆坡与雪兰莪的位置或地区、从地面不同角度拍摄的照片、漏水或锈迹的近照、大约宽度和悬挑，以及下雨时发生什么的简短说明。也请附上墙体或横梁固定点、排水沟和落水管的照片，并说明您希望保留现有骨架，还是愿意考虑更换。如果是公寓、围篱社区或商业产业，请一并提供您已知的 JMB、MC、管理处或地方当局要求。
+
+照片和大致尺寸有时足以准备初步项目报价；如果需要核实骨架、进场条件、坡度或排水，我们会在确定范围前安排现场评估。您也可以查看[雨棚价格指南](/zh/bo-ke/yu-peng-jia-ge-ru-he-ji-suan-ma-lai-xi-ya)，了解为什么报价会按项目列明细，而不是套用统一的每平方英尺数字。
+
+## 常见问题
+
+### 为什么雨棚只在大雨时漏水？
+
+大雨可能超过部分堵塞的排水沟容量，暴露出排水路线不佳，或把水推过薄弱的搭接、墙面泛水板或密封处。有风时，雨水也会被吹进小雨时保持干燥的边缘。记录天气和出水位置，再检查屋面水路与排水系统。
+
+### 雨棚积水正常吗？
+
+不正常。水应该流向指定的边缘或排水路线。持续积水可能表示有杂物、坡度不足、支撑移位、变形或出口堵塞。不要让它一直增加屋面的负荷，应安排检查。
+
+### 雨棚多久需要清洁一次？
+
+没有适用于所有雨棚的固定周期。大雨后检查，并在日常户外保养时清理安全可触及的杂物；树下的产业可能需要更频繁处理。按照材料或供应商的清洁说明，用安全方法清理，不要爬上雨棚。
+
+### 生锈的雨棚骨架可以直接油漆吗？
+
+先不要直接涂。表面锈可能需要准备、处理和相容的饰面；焊点、支架、锚固点或骨架构件的腐蚀，则可能需要维修或更换。未处理原因就盖住锈迹，可能把正在变弱的连接隐藏起来。
+
+### 漏水雨棚可以维修而不更换吗？
+
+有时可以。如果问题局限在接缝、固定件、排水沟或密封胶，而其余屋面和骨架仍然牢固，就可能维修。反复漏水、大范围板材损坏、严重腐蚀、下垂或排水不良，则可能更适合更换。决定前应先评估整个系统。
+
+### 雨棚维修报价需要什么资料？
+
+请发送位置、雨棚和固定点的照片、大约尺寸、已知材料、漏水或积水的位置、骨架是否移动或生锈，以及是否需要拆除旧雨棚。这样，项目报价才能列出建议的维修、更换或拆除范围。
+
+## 获取雨棚维修或更换评估
+
+在 WhatsApp 发送照片和大致尺寸，并说明您看到的漏水、生锈或积水情况。KL Servis Rumah 可以先了解应用，再为合适的雨棚工程准备针对项目的分项报价。[与我们的团队聊聊](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah%EF%BC%8C%E6%88%91%E9%9C%80%E8%A6%81%E5%B8%AE%E5%BF%99%E5%A4%84%E7%90%86%E6%BC%8F%E6%B0%B4%E3%80%81%E7%94%9F%E9%94%88%E6%88%96%E7%A7%AF%E6%B0%B4%E7%9A%84%E9%9B%A8%E6%A3%9A%E3%80%82)`
+    }
   }
 };
 

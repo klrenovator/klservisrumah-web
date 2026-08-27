@@ -25,7 +25,7 @@ const unique = (values: string[], label: string) => {
   }
 };
 
-if (blogPosts.length !== 212) errors.push(`expected 212 published topics, found ${blogPosts.length}`);
+if (blogPosts.length !== 213) errors.push(`expected 213 published topics, found ${blogPosts.length}`);
 unique(blogPosts.map((post) => post.slug), "English slug");
 unique(blogPosts.map((post) => post.title), "English title");
 for (const locale of locales) {

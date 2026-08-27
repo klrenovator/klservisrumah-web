@@ -443,5 +443,139 @@ Often yes, subject to your building's rules. Most JMB/MCs have guidelines on bal
 
 Tell us where you need shade and what bothers you most — heat, rain, glare or noise — and we will recommend the awning type that fits your site, with an itemised, project-specific quotation. [Chat with our team on WhatsApp](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah!%20I%20would%20like%20a%20recommendation%20and%20quote%20for%20an%20awning.)
 `
+  }),
+  post({
+    slug: "awning-maintenance-leaks-rust-water-pooling",
+    title: "Awning Maintenance: Leaks, Rust & Water Pooling",
+    excerpt: "Is your awning leaking, showing rust or holding water after rain? Learn what to inspect in the sheets, joints, frame and drainage — and when a repair or full replacement needs a proper assessment.",
+    category: "Awning",
+    coverImage: "/hero-awning.svg",
+    metaTitle: "Awning Maintenance: Fix Leaks, Rust & Water Pooling",
+    metaDesc: "Awning leaking, rusting or pooling water in KL or Selangor? Check the drainage, joints, fasteners and frame, then learn when to repair or replace it.",
+    content: `
+If your awning drips after rain, shows orange marks on the frame or holds a shallow pool of water, do not treat it as a cosmetic problem. Leaks and pooling often point to a blocked drainage route, failed joint, loose fixing, insufficient slope or a frame that is no longer supporting the roof as it should.
+
+This guide explains the checks a homeowner can make safely from ground level, what common symptoms may indicate, and when to ask for an assessment. KL Servis Rumah provides [awning installation and project quotations](/services/awning-installation) across KL & Selangor; where an existing awning is leaking, rusted or sagging, the [awning replacement and repair](/services/awning-installation/awning-replacement-and-repair) scope can be discussed after the condition is understood.
+
+## Quick answer
+
+- Check the awning after heavy rain: look for drips, wall staining, gutter overflow and water that stays on the roof.
+- Keep leaves and debris off the sheets and out of gutters and downpipes, but do not climb an unsupported awning to clean it.
+- Inspect from a safe position for cracked or yellowed sheets, open joints, ageing sealant, loose fasteners, rust and sagging.
+- A localised seal, fastener or drainage issue may be repairable; widespread sheet damage, deep corrosion or a weak frame may make replacement more sensible. The right scope needs an assessment rather than a guess.
+
+## A practical awning maintenance checklist
+
+There is no single maintenance interval that suits every awning. A roof beneath trees may collect debris sooner than one in an open area, and a retractable or fabric system has different care instructions from a fixed sheet roof. Use the following checks after severe rain and whenever you carry out routine outdoor cleaning, while following the product supplier's instructions where available.
+
+### 1. Watch where the rainwater goes
+
+During or soon after a downpour, observe the intended runoff. Water should move towards the planned edge, gutter or downpipe rather than spilling against a wall, door or neighbour's property. Look for new damp marks below the awning and for overflow from a gutter that appears clear at first glance.
+
+Do not stand under a suspected loose panel or reach into a high gutter from an unsafe position. A photo or short video taken from the ground is more useful than risking a fall.
+
+### 2. Look over the sheets or panels
+
+From the ground, check for cracks, holes, lifted edges, yellowing, severe surface wear, loose overlaps and visible deformation. Polycarbonate, metal deck, ACP, glass and fabric do not fail in exactly the same way, but damage in any roof covering can let water reach the joints or frame.
+
+Do not scrub polycarbonate with an abrasive pad or harsh tool. Dirt and leaves can usually be removed with a suitable soft cleaning method, but damaged, brittle or difficult-to-reach sheets should be assessed instead of forced clean.
+
+### 3. Check the joints and wall edge
+
+Many leaks appear at a joint, fastener, flashing or the point where the awning meets the wall rather than in the middle of an intact sheet. Look for peeling or cracked sealant, a gap at the wall edge, water marks below a fixing, or a sheet that has lifted around its fasteners.
+
+Adding sealant over a wet or dirty surface may hide the symptom briefly without correcting movement, poor overlap or water flowing behind the flashing. Record the location and tell the installer what happens during rain.
+
+### 4. Inspect the frame and fasteners
+
+Steel frames, brackets, posts, screws and other fixings deserve particular attention in Malaysia's humid, rainy conditions. Look for orange rust stains, flaking finish, rust around welds or cut edges, loose brackets, movement at the anchors and any visible bend or sag.
+
+The existing welding capability uses anti-rust primer with a weather-resistant or powder-coat finish on relevant steel fabrication. That finish still needs checking over time: once corrosion or impact exposes steel, early treatment is easier than waiting until the frame or fixing has weakened.
+
+### 5. Keep gutters and downpipes clear
+
+Leaves, mud and small debris can reduce the route available for rainwater. A blocked gutter may overflow onto the wall and look like an awning leak, while a blocked or loose downpipe can discharge water where it causes staining or ponding. Check that the outlet is connected, the gutter has not pulled away from its brackets and water can leave the system.
+
+If the problem is mainly a blocked or overflowing gutter, see the [clogged gutter leaking](/problems/clogged-gutter-leaking) problem guide. If clearing the route does not stop the leak, the awning slope, joints, flashing or support still needs checking.
+
+## What common symptoms may point to
+
+| Symptom | Areas to inspect first | Why it matters |
+|---|---|---|
+| Drip at the wall or doorway | Wall flashing, upper seal, gutter and runoff direction | Water may be travelling behind the edge rather than through the roof sheet |
+| Drip at one screw or overlap | Fastener washer, overlap and local sealant | A small fixing or joint defect can direct water indoors |
+| Water remains on the roof | Slope, support, debris and deformation | Pooling adds load and can worsen sagging, leaks or seal failure |
+| Orange marks or flaking finish | Frame, welds, cut ends, screws and brackets | Corrosion may be limited to the finish or may be affecting the metal below |
+| Panel or frame looks lower than before | Brackets, anchors, frame members and sheet support | Movement or inadequate support should be checked before another repair is applied |
+| Gutter overflows in heavy rain | Gutter, outlet, downpipe and volume of runoff | Overflow can be mistaken for a roof leak and damage adjacent walls |
+
+These are starting points, not a remote diagnosis. Rain can travel along a sheet or frame before appearing at the place where you see the drip.
+
+## Awning leaks: trace the water path
+
+A dry day can make a leak difficult to locate. If it is safe, note whether the water appears only during heavy rain, wind-driven rain or every shower. Photograph the underside, wall edge, gutter and any ceiling or wall staining. Also note whether the drip starts immediately or only after the roof has collected water.
+
+Common areas include the wall junction, sheet overlaps, screw or bracket penetrations, cracked panels, failed sealant and gutter connections. A roof-repair issue or a leak in the wall above can sometimes look like an awning leak, so the surrounding building should not be ruled out without checking. If water is entering near electrical fittings, keep clear and arrange an appropriate inspection promptly.
+
+## Rust: surface marks versus frame concerns
+
+Surface rust on a screw head or small exposed edge is different from corrosion that has reduced a frame section, bracket or anchor. Do not assume that painting over the orange area is enough. The affected metal may need cleaning, treatment and a compatible finish; if the section, weld or fixing has lost strength, repair or replacement of the affected part may be needed.
+
+A rust inspection should look beyond the most visible stain. Check the underside of the frame, welds, cut ends, base plates and places where water sits. For a related metal-rust symptom guide, see [rusting metal grilles](/problems/rusting-window-grille); the same visual checks can help show whether corrosion is limited or needs a broader frame assessment. The [welding and metal fabrication service](/services/welding) is relevant to frame-related work, but the actual awning scope, material and finish remain project-specific.
+
+## Water pooling and drainage problems
+
+A small amount of rainwater moving across a roof is expected; standing water that remains after runoff has stopped is a warning sign. Leaves may be the immediate cause, but pooling can also relate to insufficient slope, a displaced support, a bent panel, blocked drainage or an installation that was not designed for the current roof area.
+
+Do not drill a new drain hole or cut a panel as a quick fix. That can create another leak path and may affect the frame or wall below. Clear accessible debris safely, photograph the pool and its location, and have the slope, support, joints and drainage route reviewed if the problem returns.
+
+## Repair or full replacement?
+
+Repair can be reasonable when the problem is limited and the frame, roof covering and fixing points remain sound. Examples may include a localised seal or fastener issue, a gutter connection, or treatment of an early surface-rust spot. Replacement becomes more likely when there are repeated leaks, widespread cracked or brittle sheets, extensive corrosion, sagging, failed supports, or drainage that cannot be corrected without changing the design.
+
+An inspection should distinguish the roof covering from the frame. Replacing sheets while leaving a weakened frame or poor runoff route can simply move the problem forward. Conversely, replacing the whole awning may be unnecessary if the structure and most of the covering are sound. The quotation should state what is being repaired, removed, reused or replaced.
+
+## What you can check safely yourself
+
+Ground-level visual checks, clearing loose leaves from an accessible area and recording the symptoms are sensible first steps. Avoid climbing onto polycarbonate, ACP, metal deck or fabric awnings; they are not a safe walking surface. Do not loosen structural fasteners, grind rust above your head, cut drainage openings or attempt welding without the right equipment and controls.
+
+Request an assessment if the awning is above a doorway or occupied area, the frame moves, the leak is active, the gutter is high or inaccessible, rust is around structural connections, or you cannot tell whether water comes from the awning or the building. For urgent water near electrical equipment, prioritise personal safety and the relevant electrical inspection.
+
+## What to send for a repair or replacement quote
+
+Send your location or area in KL & Selangor, photos from several ground-level angles, a close-up of the leak or rust, the approximate width and projection, and a short description of what happens in rain. Include photos of the wall or beam fixing points, gutters and downpipes, and say whether you want to preserve the existing frame or are open to replacement. If the awning is in a condominium, gated community or commercial property, include any JMB, MC, management or local-authority requirements you already know about.
+
+Photos and rough dimensions may be enough for an initial project quotation. Where the frame, access, slope or drainage needs checking, a site assessment is arranged before the scope is finalised. See the [awning pricing guide](/blog/how-awning-pricing-works-malaysia) for why the quotation is itemised rather than a generic per-square-foot figure.
+
+## Frequently asked questions
+
+### Why does an awning leak only during heavy rain?
+
+Heavy rain can exceed a partially blocked gutter, reveal a poor runoff route or force water through a weak overlap, wall flashing or seal. Wind can also drive rain into an edge that stays dry in a light shower. Note the weather and the exact place where water appears, then have the roof path and drainage checked.
+
+### Is water pooling on an awning normal?
+
+No. Water should run to the intended edge or drainage route. Persistent pooling may indicate debris, insufficient slope, displaced support, deformation or a blocked outlet. It should be checked rather than left to add load to the roof.
+
+### How often should I clean an awning?
+
+There is no universal schedule. Check it after heavy rain and clean accessible debris during normal outdoor maintenance; properties beneath trees may need attention more often. Follow the material or supplier cleaning instructions and use a safe method rather than climbing onto the awning.
+
+### Can I paint over a rusted awning frame?
+
+Not without checking the metal first. Surface rust may need preparation, treatment and a compatible finish, while corrosion at a weld, bracket, anchor or frame section may require repair or replacement. Covering it without addressing the cause can hide a weakening connection.
+
+### Can a leaking awning be repaired instead of replaced?
+
+Sometimes. A localised joint, fastener, gutter or seal issue may be repairable if the rest of the roof and frame are sound. Repeated leaks, widespread sheet damage, severe corrosion, sagging or poor drainage may justify a replacement option. The condition of the whole system should be assessed before deciding.
+
+### What information do you need to quote an awning repair?
+
+Send your location, photos of the awning and fixing points, the approximate size, the material if known, where it leaks or pools, whether the frame moves or shows rust, and whether an old awning needs removal. A project-specific quotation can then state the proposed repair, replacement or removal scope.
+
+## Get an awning repair or replacement assessment
+
+Send photos and rough dimensions on WhatsApp and describe the leak, rust or pooling you are seeing. KL Servis Rumah can review the application and prepare a project-specific, itemised quotation for the appropriate awning scope. [Chat with our team](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah!%20I%20would%20like%20help%20with%20a%20leaking%2C%20rusted%20or%20pooling%20awning.)
+`
   })
 ];
