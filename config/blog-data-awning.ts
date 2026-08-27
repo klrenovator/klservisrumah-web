@@ -325,5 +325,123 @@ Not necessarily. Larger spans can need heavier frame profiles or extra posts, an
 
 Send your location, photos and rough dimensions on WhatsApp and we will prepare a project-specific, itemised quotation — no generic figures, no hidden line items. [Chat with our team](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah!%20I%20would%20like%20an%20itemised%20quotation%20for%20an%20awning.)
 `
+  }),
+  post({
+    slug: "how-to-choose-right-awning-malaysia",
+    title: "How to Choose the Right Awning for Your Malaysian Home",
+    excerpt: "Not sure which awning type fits your house? This decision guide maps the awning you need to where it goes — car porch, entrance, windows, balcony, drying yard, walkway or shopfront — and to what matters most: light, heat, rain noise, looks or strata rules.",
+    category: "Awning",
+    coverImage: "/hero-awning.svg",
+    metaTitle: "How to Choose the Right Awning Type for Malaysian Homes",
+    metaDesc: "Which awning type is right for your Malaysian home? A decision guide by application — car porch, entrance, window, balcony, drying yard, walkway, shopfront — and by light, heat, noise and strata needs.",
+    content: `
+"Which awning should I get?" is the first question most homeowners in Kuala Lumpur and Selangor ask — and the honest answer is that it depends less on the material name and more on where the awning goes and what you want it to do. This guide works the way you actually decide: start with the application, then match the awning type to the thing that matters most.
+
+KL Servis Rumah designs, fabricates and installs [custom awnings across KL & Selangor](/services/awning-installation), all quoted per project after we understand your site.
+
+## Quick answer: match the awning to where it goes
+
+| Where the awning goes | Types commonly used | What matters most there |
+|---|---|---|
+| Car porch | Tinted polycarbonate, insulated metal deck, ACP | Heat over the car, drainage, vehicle clearance |
+| Entrance / main door | Glass, polycarbonate, ACP | Looks, a bright welcome, keeping rain off the door |
+| Windows | Polycarbonate, glass, ACP | Light vs glare, rain noise next to bedrooms |
+| Balcony / patio / terrace | Glass, polycarbonate, fabric (fixed or retractable) | Views, light, strata rules |
+| Drying yard / back area | Metal deck, polycarbonate | Economy, durability, all-weather drying |
+| Walkway / side passage | Polycarbonate, metal deck | Keeping a path dry on a budget |
+| Shopfront / commercial | Fabric, retractable, glass, ACP | Signage, looks, day/night flexibility |
+
+These are the usual fits, not fixed rules — orientation, span and the look you want can change the recommendation.
+
+## The common awning types in Malaysia
+
+Five fixed systems make up almost every residential job: **polycarbonate** (translucent sheet, keeps the area bright), **metal deck** (strong, economical steel sheet, insulated profiles available), **ACP** (aluminium composite panel — opaque, clean, very low maintenance), **tempered glass** (premium, light-filled entrance look), and **canvas/fabric** (soft shade for balconies and shopfronts). Retractable and motorised fabric systems sit on top of that range for balconies, patios and shopfronts where you want shade on demand rather than permanent cover.
+
+Rather than repeat the full head-to-head here, our [polycarbonate vs metal vs ACP comparison](/blog/polycarbonate-vs-metal-vs-acp-awning-malaysia) breaks down heat, light, rain noise and maintenance material by material.
+
+## Start with the application
+
+### Car porch — shade the car, plan the drainage
+
+The porch is the most common awning job and is decided by four site facts: span, vehicle clearance, fixing points and drainage. Tinted polycarbonate, insulated metal deck and ACP are the popular choices because they cut heat build-up over the vehicle. Our full [car porch awning guide](/blog/car-porch-awning-guide-malaysia) covers slope, gutters and clearance in detail; the dedicated [car porch awning](/services/awning-installation/car-porch-awning-installation) page covers the service itself.
+
+### Entrance and main door — first impressions
+
+An entrance awning is seen up close, so appearance counts. Tempered glass gives a premium, bright canopy over the door; polycarbonate keeps it light and economical; ACP gives a clean modern line. All three keep rain off anyone standing at the door. See the [glass awning](/services/awning-installation/glass-awning) page for the premium option.
+
+### Windows — shade without darkening the room
+
+Window awnings cut glare and rain on the glass while ideally preserving daylight and the view. Polycarbonate and glass keep the room bright; ACP gives full shade where a west-facing window gets harsh afternoon sun. If rain noise beside a bedroom matters, insulated metal deck or ACP are quieter than thin sheet. The [balcony, patio & window awning](/services/awning-installation/balcony-patio-and-window-awning) service covers window applications.
+
+### Balcony, patio and terrace — views, light and strata rules
+
+Outdoor living spaces usually want shade that does not close the area in. Glass and polycarbonate keep the view and the light; fixed or retractable fabric gives soft shade and can be opened when you want sun. If you are in a condominium or apartment, the JMB/MC almost always has a say here — check the rules before you fall in love with a design (more on that below). The [canvas & fabric awning](/services/awning-installation/canvas-and-fabric-awning) and [balcony/patio/window awning](/services/awning-installation/balcony-patio-and-window-awning) pages cover these.
+
+### Drying yard and back-of-house — practical cover
+
+A drying yard or utility area needs dependable all-weather cover at a sensible cost, which is why metal deck and polycarbonate are the common picks. Durability and good runoff matter more than looks. [Metal deck awning](/services/awning-installation/metal-deck-awning) suits a utility-first budget; [polycarbonate awning](/services/awning-installation/polycarbonate-awning) keeps the yard brighter.
+
+### Walkway and side passage — keep a path dry
+
+Side passages and walkways just need to keep a path dry. Polycarbonate and metal deck are the economical, quick-to-install choices, sized to the narrow span.
+
+### Shopfront and light commercial — signage and flexibility
+
+Shopfront awnings often double as signage and brand presence, so fabric and retractable systems are popular for their looks and their ability to retract at night; glass and ACP give a permanent, premium frontage. We fabricate to the shopfront measurements and any management or council specifications that apply.
+
+## Then decide by what matters most
+
+Once you know the application, rank these priorities — they usually pick the type for you:
+
+- **Want it bright underneath** (entrance, window, walkway) → polycarbonate or glass.
+- **Want maximum heat and glare blocking** (west-facing porch or window) → ACP or insulated metal deck.
+- **Want the quietest cover in heavy rain** (over a seating area or beside a bedroom) → ACP or insulated metal deck over plain sheet.
+- **Want the neatest, most premium look** (entrance, house front) → glass or ACP.
+- **Want the lowest upkeep** → ACP panels do not rust; steel parts on any awning still benefit from the anti-rust primer and powder-coat or weather-resistant finish our frames are fabricated with — see [welding & metal fabrication](/services/welding).
+- **Want a utility cover on a budget** (yard, walkway) → metal deck or polycarbonate.
+- **Want shade you can open and close** (balcony, patio, shopfront) → a retractable fabric system, discussed depending on scope and supplier.
+
+For the material-level trade-offs behind each of these, the [material comparison guide](/blog/polycarbonate-vs-metal-vs-acp-awning-malaysia) is the companion read.
+
+## Fixed or retractable?
+
+Most homes use a **fixed** awning — it is permanent, lower-maintenance and ready for any sudden downpour. **Retractable** fabric awnings suit balconies, patios and shopfronts where you want the option of full sun or full shade; they use fabric and operating hardware rather than solid roofing, so they are not left extended in strong wind and the fabric is a wearing part that eventually needs attention. Motorised operation can be discussed depending on scope and supplier availability — we confirm what suits your site rather than promising it upfront.
+
+## Built for Malaysian weather
+
+Three things decide whether an awning lasts in Klang Valley heat and downpours, more than the material name:
+
+1. **The frame and its finish** — frames sized to the span, with anti-rust primer and a weather-resistant or powder-coat finish.
+2. **Slope and drainage** — adequate fall so water runs to a gutter or downpipe instead of pooling; sealed joints and wall flashings.
+3. **Fixing to a sound structure** — brackets and posts anchored to a wall, beam or slab that can carry the load, with reinforcement added where it cannot.
+
+Get these right and a polycarbonate, metal deck or ACP awning will give years of service. Get them wrong and even a premium panel leaks or sags.
+
+## Landed or strata? Check before you commit
+
+For **landed homes**, you generally have a free hand on design and colour, subject to the local authority rules that apply. For **strata properties** — condominiums, apartments and gated communities — the JMB/MC may restrict projection, height, colour and even the awning type, and council requirements can also apply. Check with your management office before finalising; we can supply the scope, dimensions and specifications to support an application, but the approvals for your property should be confirmed with your management or the local authority.
+
+## What to send us
+
+To recommend the right type and prepare a quote, send on WhatsApp: your location/area, where the awning will go, rough width and projection, photos of the site and fixing points, the look or material you prefer, whether an old awning needs removal, and any strata or council rules. Photos and dimensions are often enough to quote; we arrange a site assessment when the span, structure or drainage needs checking. Every job is priced per project — the eight cost drivers are explained in our [awning pricing guide](/blog/how-awning-pricing-works-malaysia). We publish starting prices for repeatable services on our [pricing page](/pricing); awning work is always itemised and project-specific.
+
+## Frequently asked questions
+
+### What is the best awning type for a Malaysian house?
+
+There is no single best type — it depends on where the awning goes and what matters most. Car porches usually use tinted polycarbonate, insulated metal deck or ACP; entrances suit glass, polycarbonate or ACP; balconies and patios suit glass, polycarbonate or fabric; utility yards and walkways suit metal deck or polycarbonate. Tell us the application and your priority (light, heat, noise, looks) and we will recommend the fit.
+
+### Which awning lasts longest in Malaysian weather?
+
+Longevity depends more on frame gauge, anti-rust finishing, correct slope and drainage, and sound fixing than on the material label. A properly installed polycarbonate, metal deck or ACP awning will give years of service; a poorly fixed or poorly drained one can leak or sag regardless of panel cost.
+
+### Can you install an awning on a condominium balcony?
+
+Often yes, subject to your building's rules. Most JMB/MCs have guidelines on balcony awnings — projection, colour and sometimes the type allowed — and council requirements may also apply. Check with your management office first; we can provide the scope, dimensions and specifications to support your application.
+
+## Get an awning recommendation for your home
+
+Tell us where you need shade and what bothers you most — heat, rain, glare or noise — and we will recommend the awning type that fits your site, with an itemised, project-specific quotation. [Chat with our team on WhatsApp](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah!%20I%20would%20like%20a%20recommendation%20and%20quote%20for%20an%20awning.)
+`
   })
 ];

@@ -3,7 +3,7 @@
 **Project:** Dedicated Awning Installation service page for klservisrumah.my
 **Market:** Kuala Lumpur & Selangor (Klang Valley), Malaysia
 **Created:** 2026-08-27
-**Branch:** `arena/01a040e8-klservisrumah-web` (pillar build) · `arena/01a04137-klservisrumah-web` (§9 testing closeout + blog cluster post 1, 2026-08-27)
+**Branch:** `arena/01a040e8-klservisrumah-web` (pillar build) · `arena/01a04137-klservisrumah-web` (§9 testing closeout + blog cluster post 1, 2026-08-27) · `arena/01a041fd-klservisrumah-web` (blog cluster post 2 — decision guide, 2026-08-27)
 
 ---
 
@@ -125,10 +125,10 @@ H1: Awning Installation in Kuala Lumpur & Selangor
 - [x] Sub-service internal links: welding ("Steel Structure & Awning
       Fabrication") and glass-aluminium remain related via topical map
 - [x] Area links auto-render via ServiceAreaLinks (data-driven)
-- [x] (Cluster rollout in progress) blog posts 1, 3 and 4 now published and link
-      to this page (see §8); the EN hub's related-guides block lists all three;
-      MS/ZH specialty pages link their localized twins; remaining 5 cluster
-      posts are pending
+- [x] (Cluster rollout in progress) blog posts 1–4 now published and link to
+      this page (see §8); the EN hub's related-guides block lists posts 1–3 with
+      the decision guide (post 2) first; MS/ZH specialty pages link their
+      localized twins; remaining 4 cluster posts (5–8) are pending
 
 ## 6. Schema Tasks
 
@@ -150,7 +150,7 @@ H1: Awning Installation in Kuala Lumpur & Selangor
 - [x] MS/ZH localized service twin routes already exist (/ms/services/*,
       /zh/services/*) — auto-render via existing architecture
 
-## 8. Supporting Content Cluster (5 of 8 pending; posts 1, 3, 4 published)
+## 8. Supporting Content Cluster (4 of 8 pending; posts 1–4 published)
 
 Blog/pillar posts (each links to `/services/awning-installation`):
 1. [x] **Polycarbonate vs Metal vs ACP Awning in Malaysia — PUBLISHED**
@@ -160,7 +160,25 @@ Blog/pillar posts (each links to `/services/awning-installation`):
       Quote-safe (no fabricated prices/ratings), links to the pillar + 4
       sub-service pages + welding silo; wired into the topical-map BLOG pool
       and 4 specialty relatedBlogs; category "Awning"; cover `/hero-awning.svg`.
-2. [ ] Best Awning Types for Malaysian Homes (2026)
+2. [x] **How to Choose the Right Awning for Your Malaysian Home — PUBLISHED
+      2026-08-27** (`/blog/how-to-choose-right-awning-malaysia` + native MS
+      `/ms/blog/cara-memilih-awning-yang-sesuai-rumah-malaysia` + native ZH
+      `/zh/bo-ke/ru-he-wei-ma-lai-xi-ya-zhu-jia-xuan-ze-he-shi-yu-peng`).
+      **Re-angled as an application-first decision guide** (per the tracker's
+      overlap warning) instead of a second material comparison: application →
+      awning-type map (car porch, entrance, windows, balcony/patio, drying yard,
+      walkway, shopfront), priority-based selection (light/heat/noise/looks/
+      budget/retractable), fixed-vs-retractable, tropical build basics, strata
+      rules, quote checklist. Quote-safe throughout (no fabricated prices;
+      pricing deferred to post 4, material detail deferred to post 1). Links to
+      the pillar + all 5 application sub-service pages (car-porch, glass,
+      canvas/fabric, balcony-patio-window, metal-deck, polycarbonate) + welding
+      + posts 1/3/4 + /pricing (EN; MS/ZH link the services directory). Wired
+      into the topical-map BLOG pool (placed first so the pillar's
+      `RelatedBlogs maxItems={3}` block surfaces it) + glass-awning,
+      canvas-and-fabric-awning and balcony-patio-and-window-awning specialty
+      relatedBlogs (the three previously empty/thin pools); category "Awning";
+      cover `/hero-awning.svg`; validator count 211 → 212.
 3. [x] **Car Porch Awning Guide: Materials, Drainage & Cost Factors — PUBLISHED
       2026-08-27** (`/blog/car-porch-awning-guide-malaysia` + native MS
       `/ms/blog/panduan-awning-car-porch-malaysia` + native ZH
@@ -233,13 +251,30 @@ Blog/pillar posts (each links to `/services/awning-installation`):
   (no fabricated prices), wired into the topical map (BLOG pool now 6 posts +
   car-porch/polycarbonate/replacement specialty relatedBlogs), validator count
   209 → 211, all gates + build + 6-route smoke + sitemap check pass (§8)
+- Supporting content cluster post 2/8 (2026-08-27, session 3): "How to Choose
+  the Right Awning for Your Malaysian Home" — re-angled per the tracker's
+  overlap warning as an application-first decision guide (NOT a material
+  re-comparison): full native EN/MS/ZH article, quote-safe, links to the pillar
+  + all application sub-services + posts 1/3/4; wired into the topical map
+  (BLOG pool, placed first so the pillar related-guides block shows it;
+  glass/canvas-fabric/balcony-patio specialty relatedBlogs populated),
+  validator count 211 → 212, prebuild gates (320k assertions), type-check,
+  lint, production build, 3-route smoke (200/hreflang/title/no locale leak) +
+  rendered-link audit (435,180 links, 0 broken) + sitemap inclusion all pass (§8)
 
 ### PENDING
-- Supporting blog cluster posts 2, 5–8 (see §8) — same recipe: full native
+- Supporting blog cluster posts 5–8 (see §8) — same recipe: full native
   trilingual article, quote-safe content, topical-map BLOG pool entry,
-  `validate:blog-production.ts` count bump, regenerated indexes, full gate re-run.
-  Post 2 ("Best Awning Types") overlaps post 1's material comparison — consider
-  re-angling it as a decision-guide before writing.
+  `validate:blog-production.ts` count bump, regenerated indexes, full gate
+  re-run + production-build smoke + link audit.
+  - 5: Awning Maintenance: Leaks, Rust & Water Pooling (→ replacement
+    sub-service + clogged-gutter/rust problem nodes)
+  - 6: Retractable vs Fixed Awning (→ canvas-and-fabric-awning; keep the
+    verified-safe hedge on motorised/retractable availability)
+  - 7: Choosing an Awning for Balcony/Patio/Yard (→ balcony-patio-and-window;
+    strata/JMB focus)
+  - 8: Replacing an Old or Leaking Awning: What to Check (→ awning-
+    replacement-and-repair; frame reuse, sheet life, drainage, removal)
 - Real project photography (business to supply — see business confirmation)
 - (Site-wide, outside awning scope — discovered during §9 validation): MS/ZH blog
   article routes emit no BlogPosting/Article schema (all 209 topics; only EN does).
