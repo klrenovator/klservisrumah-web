@@ -2,6 +2,7 @@ import React from "react";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { EstimateHub } from "@/components/estimate/estimate-hub";
 import { buildEstimateLinks, ESTIMATE_INDEX_PATH } from "@/config/estimate-links";
+import { hasServiceEstimator } from "@/lib/estimator/service-estimator";
 import { buildMetadata } from "@/lib/seo-meta";
 import { getOfferCatalogSchema } from "@/lib/seo";
 
@@ -25,7 +26,12 @@ export const metadata = buildMetadata({
  * land here from search get the same one-tap path to a ballpark price.
  */
 export default function EstimateHubPage() {
-  const links = buildEstimateLinks();
+  // Quote-only services (e.g. awning installation) have no estimator — listing
+  // their /estimate/<slug> here would be a dead link (that route 404s), so the
+  // hub only links entries that actually resolve to an estimator or deep tool.
+  const links = buildEstimateLinks().filter(
+    (link) => link.kind === "dedicated" || hasServiceEstimator(link.slug)
+  );
   const catalogSchema = getOfferCatalogSchema(
     links.map((link) => ({ name: link.title, price: link.startPrice }))
   );

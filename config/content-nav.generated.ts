@@ -627,6 +627,13 @@ export const contentNavList: ContentNavItem[] = [
     "relatedServiceSlug": "bathroom-renovation"
   },
   {
+    "slug": "awning-installation-services-kl",
+    "title": "Commercial Awning Installation Services in KL",
+    "category": "Commercial",
+    "intro": "Commercial awning installation services focuses on offices, retail lots, showrooms, warehouses, and strata facilities th",
+    "relatedServiceSlug": "awning-installation"
+  },
+  {
     "slug": "painting-services-kl",
     "title": "Residential House Painting Services in KL",
     "category": "Residential",
@@ -821,6 +828,13 @@ export const contentNavList: ContentNavItem[] = [
     "category": "Residential",
     "intro": "Residential bathroom renovation supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental units across ",
     "relatedServiceSlug": "bathroom-renovation"
+  },
+  {
+    "slug": "awning-installation-services-kl",
+    "title": "Residential Awning Installation Services in KL",
+    "category": "Residential",
+    "intro": "Residential awning installation services supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental unit",
+    "relatedServiceSlug": "awning-installation"
   },
   {
     "slug": "nippon-paint-application-malaysia",
@@ -1303,6 +1317,13 @@ export const contentNavList: ContentNavItem[] = [
     "relatedServiceSlug": "bathroom-renovation"
   },
   {
+    "slug": "awning-installation-ultimate-guide",
+    "title": "Awning Installation Services Ultimate Guide for KL & Selangor",
+    "category": "AI Answer Guide",
+    "intro": "Awning Installation Services in KL and Selangor should be priced fairly and openly, scoped clearly, performed by insured",
+    "relatedServiceSlug": "awning-installation"
+  },
+  {
     "slug": "painting-process-kl",
     "title": "House Painting Services Process in KL",
     "category": "Process",
@@ -1497,6 +1518,13 @@ export const contentNavList: ContentNavItem[] = [
     "category": "Process",
     "intro": "A step-by-step process page for bathroom renovation, including preparation, execution, quality checks, and warranty hand",
     "relatedServiceSlug": "bathroom-renovation"
+  },
+  {
+    "slug": "awning-installation-process-kl",
+    "title": "Awning Installation Services Process in KL",
+    "category": "Process",
+    "intro": "A step-by-step process page for awning installation services, including preparation, execution, quality checks, and warr",
+    "relatedServiceSlug": "awning-installation"
   }
 ];
 
@@ -1925,6 +1953,21 @@ export const contentRelatedServiceBySlug: Record<string, ContentRelatedServiceLi
       {
         "name": "Toilet Renovation",
         "desc": "Small toilet/WC renovation: WC replacement, wall and floor tiling, plumbing and ventilation."
+      }
+    ]
+  },
+  "awning-installation": {
+    "slug": "awning-installation",
+    "title": "Awning Installation Services",
+    "tagline": "Custom awnings and awning roofing for car porches, entrances, windows, balconies and yards across KL & Selangor — polycarbonate, metal deck, aluminium composite (ACP), glass and fabric systems, fabricated and installed to suit your site. Project-quoted.",
+    "subServices": [
+      {
+        "name": "Car Porch Awning Installation",
+        "desc": "New car porch / carport awning to shade and protect vehicles from sun and rain, sized to your porch with suitable slope and drainage."
+      },
+      {
+        "name": "Polycarbonate Awning",
+        "desc": "Polycarbonate sheet awning roofing in clear or tinted profiles — translucent, lightweight cover for porch, yard, walkway or balcony that lets natural light through."
       }
     ]
   }

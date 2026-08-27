@@ -13,8 +13,20 @@ import { RelatedServices } from "@/components/sections/related-services";
 import { RelatedProblems } from "@/components/sections/related-problems";
 import { ServiceAreaLinks } from "@/components/sections/service-area-links";
 import { RelatedBlogs } from "@/components/sections/related-blogs";
+import { ServiceGuideSection } from "@/components/sections/service-guide-section";
 import { warrantyLead, slugify } from "@/lib/utils";
 import Link from "next/link";
+
+/**
+ * Quote-only services publish no numeric price (startPrice "On Quote").
+ * Local helper — NOT an import from config/services-data — so this client
+ * component never drags the ~470 KB service registry into the browser bundle
+ * (the client-bundle guard fails the build on such registry imports).
+ */
+function isQuoteOnly(service: ServiceDetail): boolean {
+  const hasAmount = (price: string) => /RM\s*\d/.test(price);
+  return !hasAmount(service.startPrice) && service.subServices.every((sub) => !hasAmount(sub.price));
+}
 // NOTE: ServiceEstimatorBlock has been moved to locale-service-view.tsx
 // and is now rendered at the TOP of the page (before the hero) for
 // immediate customer access. Do not import it here.
@@ -77,21 +89,41 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
       {/* Section 3 — Direct Answer (AI-citable) */}
       <section className="section-tight bg-slate-50">
         <div className="container-narrow">
-          <DirectAnswer
-            question={t("serviceContent.isRightService", { name: service.title.toLowerCase() })}
-            answer={`${service.title} is recommended when you need ${service.tagline.toLowerCase()} Our ${service.title} packages start from ${service.startPrice} and include transparent itemized quotes, fully insured operations, and a written ${service.warranty.toLowerCase()}. KL Servis Rumah confirms the exact scope, price, and any material costs before work begins so you can book with a clear budget and no hidden surprises.`}
-            trilingualMs={`${service.title} disyorkan apabila anda memerlukan ${service.tagline.toLowerCase()} Pakej kami bermula dari ${service.startPrice} dengan sebut harga terperinci, operasi diinsuranskan, dan ${service.warranty.toLowerCase()}.`}
-            trilingualZh={`${service.title} 适合需要${service.tagline.toLowerCase()}的客户。我们的服务从 ${service.startPrice} 起，包含透明分项报价、全程保险、以及${service.warranty.toLowerCase()}。`}
-            trustItems={[
-              t("serviceContent.priceConfirmed"),
-              t("serviceContent.warranty", { days: warrantyLead(service.warranty) }),
-              t("serviceContent.insuredOps"),
-              t("serviceContent.sameDayAvail"),
-              t("serviceContent.ssmRegistered")
-            ]}
-          />
+          {isQuoteOnly(service) ? (
+            <DirectAnswer
+              question={t("serviceContent.isRightService", { name: service.title.toLowerCase() })}
+              answer={`${service.title} is recommended when you need ${service.tagline.toLowerCase()} This service is priced by project: KL Servis Rumah confirms the exact scope, materials and quotation terms in writing before work begins, with ${service.warranty.toLowerCase()}. Send your location, photos and rough dimensions on WhatsApp for a project-specific quotation — no generic 'starting from' price is published because every awning is built to the site.`}
+              trilingualMs={`${service.title} disyorkan apabila anda memerlukan ${service.tagline.toLowerCase()} Perkhidmatan ini diberi harga mengikut projek: KL Servis Rumah mengesahkan skop, bahan dan terma sebut harga secara bertulis sebelum kerja bermula, dengan ${service.warranty.toLowerCase()}. Hantar lokasi, gambar dan anggaran ukuran di WhatsApp untuk sebut harga khusus projek.`}
+              trilingualZh={`${service.title}适合需要${service.tagline.toLowerCase()}的客户。本服务按项目计价：KL Servis Rumah 在开工前以书面确认施工范围、材料与报价条款，并提供${service.warranty.toLowerCase()}。欢迎通过 WhatsApp 发送位置、照片和大致尺寸，获取项目专项报价。`}
+              trustItems={[
+                t("serviceContent.projectQuotedTrust"),
+                t("serviceContent.ssmRegistered"),
+                t("serviceContent.insuredOps"),
+                t("serviceContent.whatsappResponse")
+              ]}
+            />
+          ) : (
+            <DirectAnswer
+              question={t("serviceContent.isRightService", { name: service.title.toLowerCase() })}
+              answer={`${service.title} is recommended when you need ${service.tagline.toLowerCase()} Our ${service.title} packages start from ${service.startPrice} and include transparent itemized quotes, fully insured operations, and a written ${service.warranty.toLowerCase()}. KL Servis Rumah confirms the exact scope, price, and any material costs before work begins so you can book with a clear budget and no hidden surprises.`}
+              trilingualMs={`${service.title} disyorkan apabila anda memerlukan ${service.tagline.toLowerCase()} Pakej kami bermula dari ${service.startPrice} dengan sebut harga terperinci, operasi diinsuranskan, dan ${service.warranty.toLowerCase()}.`}
+              trilingualZh={`${service.title} 适合需要${service.tagline.toLowerCase()}的客户。我们的服务从 ${service.startPrice} 起，包含透明分项报价、全程保险、以及${service.warranty.toLowerCase()}。`}
+              trustItems={[
+                t("serviceContent.priceConfirmed"),
+                t("serviceContent.warranty", { days: warrantyLead(service.warranty) }),
+                t("serviceContent.insuredOps"),
+                t("serviceContent.sameDayAvail"),
+                t("serviceContent.ssmRegistered")
+              ]}
+            />
+          )}
         </div>
       </section>
+
+      {/* Section 3b — Long-form pillar guide (types, comparison table,
+          applications, problems→solutions, climate notes, quote factors).
+          Rendered only for services that carry a `guide` block. */}
+      <ServiceGuideSection guide={service.guide} serviceTitle={service.title} />
 
       {/* Section 4 — Sub-services pricing */}
       <section className="section-tight bg-white">
@@ -122,7 +154,7 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
                   </p>
                 </div>
                 <span className="text-sm sm:text-base font-extrabold text-[#0EA5E9] shrink-0 bg-[#F0F9FF] px-5 py-2.5 rounded-xl border border-[#BAE6FD] w-fit">
-                  {sub.price}
+                  {/RM\s*\d/.test(sub.price) ? sub.price : t("serviceDetail.quoteOnRequest")}
                 </span>
               </Link>
             ))}

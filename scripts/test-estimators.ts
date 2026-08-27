@@ -54,7 +54,7 @@ const testTranslator = createTranslator(
   },
   "en"
 );
-import { servicesData } from "../config/services-data.ts";
+import { servicesData, isQuoteOnlyService } from "../config/services-data.ts";
 import { toolsContent } from "../config/tools-data.ts";
 import {
   blockingMessage,
@@ -685,6 +685,13 @@ let serviceSpecs = 0;
 let serviceCases = 0;
 for (const service of Object.values(servicesData)) {
   if (!hasServiceEstimator(service.slug)) {
+    // Quote-only services (e.g. awning installation) deliberately publish no
+    // numeric rates: their page routes customers to a project quotation rather
+    // than a calculator. That is expected — not a defect.
+    if (isQuoteOnlyService(service)) {
+      console.log(`  [${service.slug}] quote-only service — no estimator (by design)`);
+      continue;
+    }
     fail(`[${service.slug}] no estimator could be built — the service page would have no calculator`);
     continue;
   }
@@ -1264,11 +1271,19 @@ console.log("\n• Shareable estimator links (/estimate/*)");
   const serviceSlugs = Object.keys(servicesData);
   let dedicatedCount = 0;
   let genericCount = 0;
+  let quoteOnlyCount = 0;
   for (const slug of serviceSlugs) {
     const dedicated = DEDICATED_TOOL_BY_SERVICE[slug];
     if (dedicated) {
       dedicatedCount += 1;
       assert(Boolean(toolsContent[dedicated]), `/estimate/${slug} redirects to unknown tool "${dedicated}"`);
+    } else if (isQuoteOnlyService(servicesData[slug])) {
+      // Quote-only services publish no numeric rates by design: their
+      // /estimate/<slug> share URL is never generated (genericEstimateSlugs
+      // excludes them and the route 404s), and the service page routes
+      // customers to a WhatsApp quotation instead of a calculator.
+      quoteOnlyCount += 1;
+      continue;
     } else {
       assert(
         hasServiceEstimator(slug),
@@ -1278,8 +1293,8 @@ console.log("\n• Shareable estimator links (/estimate/*)");
     }
   }
   assert(
-    dedicatedCount + genericCount === serviceSlugs.length,
-    "every service must resolve to exactly one estimator route"
+    dedicatedCount + genericCount + quoteOnlyCount === serviceSlugs.length,
+    "every service must resolve to exactly one estimator route (or be quote-only by design)"
   );
 
   // estimateShare namespace parity across the three message files.
@@ -1578,9 +1593,12 @@ console.log("\n• AI-context files (llms.txt, llms-full.txt, aeo-faq.txt, site-
       record.warranty === service.warranty,
       `site-summary.json: ${record.slug} warranty drifted from the published terms`
     );
-    // The long file quotes the same figure in prose.
+    // The long file quotes the same figure in prose — or, for quote-only
+    // services, an explicit project-quoted note (never a fabricated number).
     assert(
-      llmsFull.includes(`Starting price: ${service.startPrice}`),
+      isQuoteOnlyService(service)
+        ? llmsFull.includes("Starting price: Project-quoted")
+        : llmsFull.includes(`Starting price: ${service.startPrice}`),
       `llms-full.txt: no published starting price for ${record.slug} (${service.startPrice})`
     );
   }

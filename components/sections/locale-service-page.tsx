@@ -13,8 +13,9 @@ import {
   CheckCircle
 } from "lucide-react";
 import type { Locale } from "@/lib/i18n";
-import { servicesData } from "@/config/services-data";
+import { servicesData, isQuoteOnlyService } from "@/config/services-data";
 import { buildEstimateLinks } from "@/config/estimate-links";
+import { hasServiceEstimator, DEDICATED_TOOL_BY_SERVICE } from "@/lib/estimator/service-estimator";
 import { siteConfig } from "@/config/site";
 import { getLocalizedService } from "@/lib/service-i18n";
 import { getServerTranslator } from "@/lib/i18n-server";
@@ -32,6 +33,7 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { DirectAnswer } from "@/components/content/direct-answer";
 import { LocaleTreeLinks } from "@/components/sections/locale-tree-links";
 import { ProcessTimeline } from "@/components/content/process-timeline";
+import { ServiceGuideSection } from "@/components/sections/service-guide-section";
 
 /**
  * Fully-localised, indexable service page (`/ms/services/<slug>`,
@@ -107,6 +109,9 @@ export function LocaleServicePage({ locale, slug }: { locale: "ms" | "zh"; slug:
   // The estimator destination that does not redirect — see the CTA below.
   const estimateHref =
     buildEstimateLinks().find((link) => link.slug === slug)?.resolvedPath ?? `/estimate/${slug}`;
+  // Quote-only services have no estimator: their /estimate/<slug> route 404s,
+  // so the final CTA goes to WhatsApp instead of a dead calculator link.
+  const quoteOnly = !hasServiceEstimator(slug) && !DEDICATED_TOOL_BY_SERVICE[slug];
 
   const serviceSchema = getServiceSchema({
     title: localized.title,
@@ -181,10 +186,18 @@ export function LocaleServicePage({ locale, slug }: { locale: "ms" | "zh"; slug:
               )}
 
               <div className="flex flex-wrap items-center gap-3 mt-2">
-                <span className="inline-flex items-baseline gap-2 bg-[#F0F9FF] border-2 border-[#BAE6FD] rounded-2xl px-5 py-3">
-                  <span className="text-xs font-extrabold text-[#0EA5E9] uppercase tracking-wider">{t("common.fromLabel")}</span>
-                  <span className="text-3xl sm:text-4xl font-black text-[#075985] tracking-tight">{service.startPrice}</span>
-                </span>
+                {isQuoteOnlyService(service) ? (
+                  <span className="inline-flex items-center gap-2 bg-[#F0F9FF] border-2 border-[#BAE6FD] rounded-2xl px-5 py-3.5">
+                    <span className="text-sm sm:text-base font-black text-[#075985] tracking-tight">
+                      {t("serviceDetail.projectQuoted")}
+                    </span>
+                  </span>
+                ) : (
+                  <span className="inline-flex items-baseline gap-2 bg-[#F0F9FF] border-2 border-[#BAE6FD] rounded-2xl px-5 py-3">
+                    <span className="text-xs font-extrabold text-[#0EA5E9] uppercase tracking-wider">{t("common.fromLabel")}</span>
+                    <span className="text-3xl sm:text-4xl font-black text-[#075985] tracking-tight">{service.startPrice}</span>
+                  </span>
+                )}
                 <span className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 text-emerald-700 px-4 py-3 rounded-2xl text-sm font-bold">
                   <Award className="w-4 h-4" />
                   <span>{localized.warranty}</span>
@@ -291,21 +304,45 @@ export function LocaleServicePage({ locale, slug }: { locale: "ms" | "zh"; slug:
         <div className="container-narrow">
           <DirectAnswer
             question={t("serviceContent.isRightService", { name: localized.title })}
-            answer={`${localized.title} ${t("serviceContent.isRightAnswer", {
-              tagline: localized.tagline,
-              startPrice: service.startPrice,
-              warranty: localized.warranty,
-            })}`}
-            trustItems={[
-              t("serviceContent.priceConfirmed"),
-              t("serviceContent.warranty", { days: warrantyLead(localized.warranty) }),
-              t("serviceContent.insuredOps"),
-              t("serviceContent.sameDayAvail"),
-              t("serviceContent.ssmRegistered"),
-            ]}
+            answer={
+              isQuoteOnlyService(service)
+                ? t("serviceContent.quoteOnlyAnswer", {
+                    title: localized.title,
+                    tagline: localized.tagline,
+                    warranty: localized.warranty,
+                  })
+                : `${localized.title} ${t("serviceContent.isRightAnswer", {
+                    tagline: localized.tagline,
+                    startPrice: service.startPrice,
+                    warranty: localized.warranty,
+                  })}`
+            }
+            trustItems={
+              isQuoteOnlyService(service)
+                ? [
+                    t("serviceContent.projectQuotedTrust"),
+                    t("serviceContent.ssmRegistered"),
+                    t("serviceContent.insuredOps"),
+                    t("serviceContent.whatsappResponse"),
+                  ]
+                : [
+                    t("serviceContent.priceConfirmed"),
+                    t("serviceContent.warranty", { days: warrantyLead(localized.warranty) }),
+                    t("serviceContent.insuredOps"),
+                    t("serviceContent.sameDayAvail"),
+                    t("serviceContent.ssmRegistered"),
+                  ]
+            }
           />
         </div>
       </section>
+
+      {/* ── Long-form pillar guide (quote-only awning page etc.) ─────── */}
+      <ServiceGuideSection
+        guide={service.guide}
+        serviceTitle={localized.title}
+        localeOverride={locale}
+      />
 
       {/* ── Sub-services pricing ─────────────────────────────────────── */}
       <section className="section-tight bg-white">
@@ -473,18 +510,20 @@ export function LocaleServicePage({ locale, slug }: { locale: "ms" | "zh"; slug:
               a primary CTA. `resolvedPath` is the canonical destination the
               rest of the site (e.g. the /estimate hub) already links to.
             */}
-            <Link
-              href={estimateHref}
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#0284C7] px-6 py-3 text-sm font-extrabold text-white shadow-sm hover:bg-[#0369A1] transition-colors"
-            >
-              <Calculator className="w-4 h-4" />
-              {t("serviceContent.estimateCta")}
-            </Link>
+            {!quoteOnly && (
+              <Link
+                href={estimateHref}
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#0284C7] px-6 py-3 text-sm font-extrabold text-white shadow-sm hover:bg-[#0369A1] transition-colors"
+              >
+                <Calculator className="w-4 h-4" />
+                {t("serviceContent.estimateCta")}
+              </Link>
+            )}
             <a
               href={getWhatsAppLink({ service: localized.title, lang: locale })}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-whatsapp"
+              className={quoteOnly ? "btn-whatsapp text-base" : "btn-whatsapp"}
             >
               <MessageSquare className="w-4 h-4 fill-white text-[#25D366]" />
               {t("serviceDetail.bookWhatsApp")}

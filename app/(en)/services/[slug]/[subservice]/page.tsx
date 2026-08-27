@@ -72,13 +72,16 @@ export default async function SubServicePage(props: { params: Promise<{ slug: st
   }
   if (!sub) notFound();
 
+  const numericPrice = /RM\s*\d/.test(sub.price);
   const faqs = [
-    { q: `How much does ${sub.name} cost in KL & Selangor?`, a: `${sub.name} is priced ${sub.price}. Final cost depends on dimensions, access, materials, and actual site condition, and is confirmed before work begins.` },
-    { q: `What is included in ${sub.name}?`, a: `Our quote includes workmanship scope, standard preparation, suitable tools, cleanup, and warranty terms related to ${service.title}.` },
-    { q: `Can I book ${sub.name} on WhatsApp?`, a: `Yes. Send your area, photos, property type, and preferred date so our dispatch desk can confirm a fixed-price quote.` },
-    { q: `Is ${sub.name} available same day?`, a: `Same-day slots depend on technician availability and urgency. Emergency and safety-related ${service.title.toLowerCase()} issues receive priority dispatch.` },
-    { q: `Do you cover my area for ${sub.name}?`, a: `Yes. We dispatch ${service.title.toLowerCase()} teams daily across all of KL and Selangor — Kuala Lumpur, Petaling Jaya, Subang Jaya, Shah Alam, Puchong, Klang, and every major suburb.` },
-    { q: `What warranty comes with ${sub.name}?`, a: `Every ${sub.name} booking is covered by our written ${service.warranty.toLowerCase()}. If anything covered fails within the warranty period, we return to fix it free of charge.` }
+    { q: `How much does ${sub.name} cost in KL & Selangor?`, a: numericPrice
+        ? `${sub.name} is priced ${sub.price}. Final cost depends on dimensions, access, materials, and actual site condition, and is confirmed before work begins.`
+        : `${sub.name} is quoted per project, because cost depends on dimensions, materials, frame and finish, access, drainage and any removal work. Send your location, photos and rough measurements for a project-specific, itemised quotation.` },
+    { q: `What is included in ${sub.name}?`, a: `Our quote covers the agreed workmanship scope, suitable materials and tools, preparation, installation, cleanup, and the warranty terms related to ${service.title}.` },
+    { q: `Can I book ${sub.name} on WhatsApp?`, a: `Yes. Send your area, photos, property type, and rough measurements so our team can confirm the scope and a project-specific quotation.` },
+    { q: `Is ${sub.name} available same day?`, a: `Installation timing depends on fabrication lead time, size, access and weather. Our team will confirm the schedule with your quotation rather than promising a fixed timeframe upfront.` },
+    { q: `Do you cover my area for ${sub.name}?`, a: `Yes. We carry out ${service.title.toLowerCase()} across all of KL and Selangor — Kuala Lumpur, Petaling Jaya, Subang Jaya, Shah Alam, Puchong, Klang, and every major suburb.` },
+    { q: `What warranty comes with ${sub.name}?`, a: `Warranty coverage for ${sub.name} depends on the selected materials, installation scope and agreed quotation terms, and is confirmed in writing before work begins.` }
   ];
 
   return (

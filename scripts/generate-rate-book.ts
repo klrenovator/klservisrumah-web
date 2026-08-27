@@ -258,9 +258,11 @@ const serviceScopes = Object.fromEntries(
 
 for (const [slug, entry] of Object.entries(serviceScopes)) {
   if (!entry.scopes.length) {
-    throw new Error(
-      `[rate-book] Service "${slug}" has no numerically-priced sub-service, so no estimator can be generated for it.`
-    );
+    // Quote-only services (every sub-service is published "On Quote") legitimately
+    // have no numeric scopes: their estimator block stays hidden and customers are
+    // routed to a project quotation instead. The empty scope book is what makes
+    // hasServiceEstimator(slug) false, so this is expected — not an error.
+    console.log(`[rate-book] Note: "${slug}" is quote-only — no estimator scopes generated.`);
   }
 }
 

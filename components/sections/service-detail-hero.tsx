@@ -38,7 +38,9 @@ const trilingualSublines: Record<string, { ms: string; zh: string }> = {
   "locksmith":         { ms: "Kunci pintar & kunci di KL & Selangor", zh: "吉隆坡与雪兰莪智能锁与锁匠" },
   "glass-aluminium":         { ms: "Kaca & aluminium di KL & Selangor", zh: "吉隆坡与雪兰莪玻璃与铝制品" },
   "cctv":                     { ms: "Pemasangan CCTV di KL & Selangor", zh: "吉隆坡与雪兰莪监控摄像头安装" },
-  "autogate":                 { ms: "Pintu pagar automatik di KL & Selangor", zh: "吉隆坡与雪兰莪自动门安装" }
+  "autogate":                 { ms: "Pintu pagar automatik di KL & Selangor", zh: "吉隆坡与雪兰莪自动门安装" },
+  "welding":                  { ms: "Kimpalan & fabrikasi logam di KL & Selangor", zh: "吉隆坡与雪兰莪焊接与金属加工" },
+  "awning-installation":      { ms: "Pemasangan awning rumah di KL & Selangor", zh: "吉隆坡与雪兰莪雨棚安装" }
 };
 
 /**
@@ -84,10 +86,20 @@ export function ServiceDetailHero({ service }: ServiceDetailHeroProps) {
 
             {/* Price + Warranty row */}
             <div className="flex flex-wrap items-center gap-3 mt-2">
-              <span className="inline-flex items-baseline gap-2 bg-[#F0F9FF] border-2 border-[#BAE6FD] rounded-2xl px-5 py-3">
-                <span className="text-xs font-extrabold text-[#0EA5E9] uppercase tracking-wider">From</span>
-                <span className="text-3xl sm:text-4xl font-black text-[#075985] tracking-tight">{service.startPrice}</span>
-              </span>
+              {/RM\s*\d/.test(service.startPrice) ? (
+                <span className="inline-flex items-baseline gap-2 bg-[#F0F9FF] border-2 border-[#BAE6FD] rounded-2xl px-5 py-3">
+                  <span className="text-xs font-extrabold text-[#0EA5E9] uppercase tracking-wider">From</span>
+                  <span className="text-3xl sm:text-4xl font-black text-[#075985] tracking-tight">{service.startPrice}</span>
+                </span>
+              ) : (
+                // Quote-only services (e.g. awning installation) publish no
+                // numeric starting price — show a project-quotation badge.
+                <span className="inline-flex items-center gap-2 bg-[#F0F9FF] border-2 border-[#BAE6FD] rounded-2xl px-5 py-3.5">
+                  <span className="text-sm sm:text-base font-black text-[#075985] tracking-tight">
+                    {t("serviceDetail.projectQuoted")}
+                  </span>
+                </span>
+              )}
               <span className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 text-emerald-700 px-4 py-3 rounded-2xl text-sm font-bold">
                 <Award className="w-4 h-4" />
                 <span>{service.warranty}</span>

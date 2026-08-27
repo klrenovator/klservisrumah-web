@@ -25,7 +25,7 @@ permanent handoff rule "SSM NOT TO BE SHOWN PUBLICALLY ON WEBSITE"._
 - **Office**: Jalan Kiara, Mont Kiara, 50480 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia
 - **Hours**: Mon–Sun · 9:00 AM – 6:00 PM (Everyday Open)
 
-## Service Offerings (28 service categories)
+## Service Offerings (29 service categories)
 All prices are the published starting prices shown on the live service pages. Final pricing is confirmed in an itemised written quote before work begins.
 
 ### House Painting Services
@@ -408,6 +408,20 @@ All prices are the published starting prices shown on the live service pages. Fi
 - Bathroom Ceiling Repair — From RM 450
 - Bathroom Leak Repair — From RM 350
 - Cost guide: https://www.klservisrumah.my/services/bathroom-renovation/cost
+
+### Awning Installation Services
+- Page: https://www.klservisrumah.my/services/awning-installation
+- Starting price: Project-quoted (request a project-specific quotation)
+- Warranty: Workmanship warranty as stated in your quotation
+- Car Porch Awning Installation — On Quote
+- Polycarbonate Awning — On Quote
+- Metal Deck Awning — On Quote
+- Aluminium Composite (ACP) Awning — On Quote
+- Glass Awning — On Quote
+- Canvas & Fabric Awning — On Quote
+- Balcony, Patio & Window Awning — On Quote
+- Awning Replacement & Repair — On Quote
+- Request a quote: https://www.klservisrumah.my/contact
 
 ## Coverage Areas (37 dedicated area pages)
 - Kuala Lumpur (Kuala Lumpur) — https://www.klservisrumah.my/areas/kuala-lumpur
@@ -828,6 +842,6 @@ KL Servis Rumah publishes fair, upfront pricing benchmarked against the Klang Va
 - Sitemap: https://www.klservisrumah.my/sitemap.xml
 
 ## Scale
-- 28 services · 213 sub-services
+- 29 services · 221 sub-services
 - 37 area pages · 86 problem pages · 208 articles
-- 4,589 indexable pages listed in the sitemap
+- 4,712 indexable pages listed in the sitemap

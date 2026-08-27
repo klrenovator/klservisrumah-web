@@ -79,7 +79,10 @@ function keyServiceLines(limit: number): string[] {
       .slice(0, 3)
       .map((sub) => sub.name)
       .join(", ");
-    return `- ${service.title}: from ${service.startPrice} — ${scope}`;
+    const priced = /RM\s*\d/.test(service.startPrice);
+    // Quote-only services (e.g. awning installation) publish no numeric rate;
+    // say so honestly instead of emitting "from On Quote".
+    return `- ${service.title}: ${priced ? `from ${service.startPrice}` : "project-quoted"} — ${scope}`;
   });
 }
 
@@ -93,6 +96,9 @@ function buildLlms(): string {
 
   const estimateLines = buildEstimateLinks()
     .filter((link) => link.kind === "generic")
+    // Quote-only services have no estimator — their /estimate/<slug> route 404s,
+    // so linking it here would hand LLMs a dead URL.
+    .filter((link) => /RM\s*\d/.test(link.startPrice))
     .map((link) => `- ${link.title} (from ${link.startPrice}): ${url(link.path)}`);
 
   return `# ${siteConfig.name} — AI Context
@@ -153,12 +159,13 @@ function buildLlmsFull(): string {
   const serviceSections = services
     .map((service) => {
       const subs = service.subServices.map((sub) => `- ${sub.name} — ${sub.price}`).join("\n");
+      const priced = /RM\s*\d/.test(service.startPrice);
       return `### ${service.title}
 - Page: ${url(`/services/${service.slug}`)}
-- Starting price: ${service.startPrice}
+- Starting price: ${priced ? service.startPrice : "Project-quoted (request a project-specific quotation)"}
 - Warranty: ${service.warranty}
 ${subs}
-- Cost guide: ${url(`/services/${service.slug}/cost`)}`;
+- ${priced ? `Cost guide: ${url(`/services/${service.slug}/cost`)}` : `Request a quote: ${url("/contact")}`}`;
     })
     .join("\n\n");
 

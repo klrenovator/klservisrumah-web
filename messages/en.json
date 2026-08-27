@@ -649,7 +649,14 @@
     "verifiedBadge": "Verified Specialist Service",
     "allCoverage": "All KL & Selangor",
     "otherServicesHeading": "Other services you might need",
-    "otherServicesSub": "Browse our other home services across KL & Selangor — fixed pricing and same-day slots available."
+    "otherServicesSub": "Browse our other home services across KL & Selangor — fixed pricing and same-day slots available.",
+    "projectQuoted": "Project-Quoted",
+    "quoteOnRequest": "Project-quoted",
+    "guideViewTypes": "View awning types",
+    "guideViewComparison": "Compare materials",
+    "guideDiscussProject": "Discuss Your Awning Project",
+    "guideWhatsAppCta": "Request an awning quotation",
+    "guideFactorsNote": "Pricing note"
   },
   "serviceContent": {
     "overviewEyebrow": "Overview",
@@ -710,7 +717,10 @@
     "ctaSub": "Get a fixed quote, same-day slots and a written warranty — tell us your scope on WhatsApp, or try the instant estimator first.",
     "estimateCta": "Get an instant estimate",
     "allServices": "All services",
-    "pricingLink": "Pricing guide"
+    "pricingLink": "Pricing guide",
+    "projectQuotedTrust": "Project-Quoted, Scope Confirmed in Writing",
+    "whatsappResponse": "Fast WhatsApp Response",
+    "quoteOnlyAnswer": "{title} is recommended when you need {tagline} This service is priced by project: KL Servis Rumah confirms the exact scope, materials and quotation terms in writing before work begins, with {warranty}. Send your location, photos and rough dimensions on WhatsApp for a project-specific quotation."
   },
   "subserviceContent": {
     "whatsIncluded": "What's included",
