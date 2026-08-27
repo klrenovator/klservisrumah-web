@@ -2441,3 +2441,36 @@ Continued from `AWNING_INSTALLATION_PROJECT.md` and the previous session's next-
 - Business confirmations 1–9 in the awning tracker remain owner-side; real project photography is still pending.
 - Candidate dedicated session (site-wide, outside awning scope): BlogPosting/Article schema for MS/ZH blog routes.
 - Never create standalone Air Conditioning content.
+
+# Session 2026-08-27 (part 7) — Awning blog cluster posts 7 and 8 (cluster complete)
+
+Continued from `AWNING_INSTALLATION_PROJECT.md` and the previous session's next-priority list. The remaining awning work was supporting-cluster posts 7–8, so no completed pillar work was redone and no business confirmations were assumed. No standalone Air Conditioning content was created; the motorised/retractable availability wording stays conditional.
+
+## What was done
+1. **Post 7/8 — "Choosing an Awning for a Balcony or Patio in Malaysia."** Full native trilingual article (EN + Malaysian Malay `/ms/blog/panduan-awning-balkoni-patio-malaysia` + Simplified Chinese `/zh/bo-ke/yang-tai-lu-tai-yu-peng-xuan-ze-zhi-nan`), category "Awning", cover `/hero-awning.svg`. Strata/JMB-first structure: rules before catalogue, space-by-space framing (condo balcony, landed patio/terrace, windows/doors, drying yard), light-vs-shade material table (polycarbonate, glass, ACP, metal deck, fabric), elevated-floor drainage and balcony-waterproofing care, fixed vs retractable-style with motorised availability kept conditional, quote-input checklist.
+2. **Post 8/8 — "Replacing an Old or Leaking Awning: What to Check."** Full native trilingual article (EN + MS `/ms/blog/tukar-awning-lama-bocor-malaysia` + ZH `/zh/bo-ke/geng-huan-jiu-yu-peng-jian-cha`), differentiated from post 5's maintenance angle as a replacement-decision guide: signs replacement is realistic (sheet yellowing/brittleness/cracking, frame corrosion, sagging/pooling, repeated leaks), safe ground-level checks, what a replacement inspection covers, frame-reuse cautions (only after inspection; new steel gets anti-rust primer + weather-resistant/powder-coat finish per the verified welding line), re-sheet material choices, drainage correction at replacement time, removal/disposal scope, timing consistent with the service FAQ, quote inputs.
+3. **Accuracy boundaries preserved.** No fabricated prices, lifespans, wind ratings, UV percentages, cooling figures or approval guarantees in either post. Strata wording follows the verified hedge: we prepare scope/dimensions/specs to support the discussion; approvals must be confirmed with the JMB/MC/management or local authority. Retractable/motorised availability stays conditional on scope and supplier.
+4. **Internal links and topical wiring.** Added both EN slugs to the awning BLOG pool (after post 6, keeping the pillar's first-3 related-guides block stable) and wired post 7 into the balcony-patio-and-window specialty `relatedBlogs` and post 8 into the awning-replacement-and-repair specialty `relatedBlogs`. Each locale links its localized pillar, specialties, problem nodes (balcony-leak-condo, clogged-gutter) and sibling guides; EN links /pricing, MS/ZH link their services directories. All links validate against the live route universe (741 distinct targets).
+5. **Generated discovery artifacts.** Regenerated `config/blog-slugs.generated.json`, `config/blog-related.generated.json`, `public/llms-full.txt`, `public/site-summary.json` (plus rate-book/service-summary/nav from the predev/prebuild chain). Blog registry: 214 → **216 topics / 648 localized articles**.
+6. **Tracker and strategy documentation.** Updated `AWNING_INSTALLATION_PROJECT.md` (§5, §8 all 8 published, §9 smoke + QA entries, STATUS) and `AWNING_SEO_STRATEGY.md` (§J rows 7–8 marked PUBLISHED; checklist now 8 of 8). The nine business confirmations remain unchanged and owner-side.
+
+## Result
+- Blog registry: 214 → **216 topics / 648 localized articles**; 741 distinct article-link targets, 0 source-level blog validation errors.
+- Production build generated **5,820 static pages** (up from 5,806); sitemap now contains **4,736 URLs** (up from 4,730 — exactly the six new article routes).
+
+## Verification
+- PASS: `npm run validate:blogs` (216 topics, 648 localized articles), `npm run audit:topical-map`, specialty locale/coverage, service-i18n, i18n parity, problem-i18n, client-bundle guard and estimator suite (**320,331 assertions, 0 failures**) via `npm run build` prebuild.
+- PASS: `npm run type-check` and `npm run lint` (0 warnings).
+- PASS: `npm run build` production build (5,820 static pages). Note: one build attempt hit a transient ENOENT rename on `.next/export/500.html` after all pages generated; a clean rebuild passed. Earlier, a killed mid-build left `.next` incomplete — always rebuild after any interrupted build.
+- PASS: production smoke (`next start`): all six new routes return HTTP 200 with one H1, correct `en-MY`/`ms-MY`/`zh-MY` language, localized titles and complete four-entry hreflang clusters; localized pillar/specialty/problem links render; EN BlogPosting schema present (MS/ZH schema remains the known site-wide gap); all six URLs in sitemap.xml; EN pillar related-guides block unchanged; MS balcony and ZH replacement specialty pages surface the new localized guides.
+- PASS: `audit:html` — 5,812 pages, 0 fatal findings / 0 warnings; `audit:seo-head` — 4,736 self-canonical indexable pages, 4,736 sitemap URLs, 0 duplicate titles/descriptions, 0 warnings; `audit:meta` — 0 JSON-LD parse failures, 0 breadcrumb mismatches, 0 duplicate title groups (serial runs, `NODE_OPTIONS=--max-old-space-size=4096`).
+- PASS: rendered internal-link audit — **436,121 links**, 0 broken targets.
+
+## Files changed
+- Modified: `config/blog-data-awning.ts` (+2 EN posts), `config/blog-i18n.ts` (+2 native MS/ZH pairs), `config/topical-authority-map.ts` (awning BLOG pool + balcony and replacement specialty relatedBlogs), `scripts/validate-blog-production.ts` (214 → 216), `AWNING_INSTALLATION_PROJECT.md`, `AWNING_SEO_STRATEGY.md`, `SESSION_LOG.md`.
+- Regenerated: `config/blog-slugs.generated.json`, `config/blog-related.generated.json`, `public/llms-full.txt`, `public/site-summary.json`.
+
+## Next session
+- **The awning project's buildable scope is complete:** pillar + 8 native specialty pages + full 8-post trilingual cluster, all gates green. Remaining items are owner-side: business confirmations 1–9 and real project photography in the awning tracker.
+- Candidate dedicated session (site-wide, outside awning scope): BlogPosting/Article schema for MS/ZH blog routes (now 216 topics; only EN emits it).
+- Never create standalone Air Conditioning content.

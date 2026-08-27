@@ -3,7 +3,7 @@
 **Project:** Dedicated Awning Installation service page for klservisrumah.my
 **Market:** Kuala Lumpur & Selangor (Klang Valley), Malaysia
 **Created:** 2026-08-27
-**Branch:** `arena/01a04228-klservisrumah-web` (current session — blog cluster post 6) · `arena/01a040e8-klservisrumah-web` (pillar build) · `arena/01a04137-klservisrumah-web` (§9 testing closeout + blog cluster post 1, 2026-08-27) · `arena/01a041fd-klservisrumah-web` (blog cluster post 2 — decision guide, 2026-08-27)
+**Branch:** `arena/01a04273-klservisrumah-web` (current session — blog cluster posts 7–8, cluster complete) · `arena/01a04228-klservisrumah-web` (blog cluster posts 5–6) · `arena/01a040e8-klservisrumah-web` (pillar build) · `arena/01a04137-klservisrumah-web` (§9 testing closeout + blog cluster post 1, 2026-08-27) · `arena/01a041fd-klservisrumah-web` (blog cluster post 2 — decision guide, 2026-08-27)
 
 ---
 
@@ -125,11 +125,11 @@ H1: Awning Installation in Kuala Lumpur & Selangor
 - [x] COMPLETED Sub-service internal links: welding ("Steel Structure & Awning
       Fabrication") and glass-aluminium remain related via topical map
 - [x] COMPLETED Area links auto-render via ServiceAreaLinks (data-driven)
-- [x] COMPLETED (Cluster rollout in progress) blog posts 1–6 now published and link to
+- [x] COMPLETED (Cluster rollout complete) all 8 cluster posts are now published and link to
       this page (see §8); the EN hub's related-guides block lists the decision
-      guide (post 2) first, followed by posts 1 and 3; post 6 is wired to the
-      canvas/fabric and balcony/patio/window specialties; MS/ZH specialty pages
-      link their localized twins; remaining 2 cluster posts (7–8) are pending
+      guide (post 2) first, followed by posts 1 and 3; post 7 is wired to the
+      balcony/patio/window specialty and post 8 to the replacement/repair
+      specialty; MS/ZH specialty pages link their localized twins
 
 ## 6. Schema Tasks
 
@@ -151,7 +151,7 @@ H1: Awning Installation in Kuala Lumpur & Selangor
 - [x] COMPLETED MS/ZH localized service twin routes already exist (/ms/services/*,
       /zh/services/*) — auto-render via existing architecture
 
-## 8. Supporting Content Cluster (2 of 8 pending; posts 1–6 published)
+## 8. Supporting Content Cluster (8 of 8 — COMPLETE; all posts published)
 
 Blog/pillar posts (each links to `/services/awning-installation`):
 1. [x] COMPLETED **Polycarbonate vs Metal vs ACP Awning in Malaysia — PUBLISHED**
@@ -218,8 +218,38 @@ Blog/pillar posts (each links to `/services/awning-installation`):
       wording. Quote-safe throughout (no fabricated wind ratings, prices,
       warranties or supplier availability); wired into the awning BLOG pool,
       canvas/fabric specialty and balcony/patio/window specialty.
-7. [ ] PENDING Choosing an Awning for Balcony / Patio / Yard
-8. [ ] PENDING Replacing an Old or Leaking Awning: What to Check
+7. [x] COMPLETED **Choosing an Awning for a Balcony or Patio in Malaysia — PUBLISHED 2026-08-27**
+      (`/blog/balcony-patio-awning-guide-malaysia` + native MS
+      `/ms/blog/panduan-awning-balkoni-patio-malaysia` + native ZH
+      `/zh/bo-ke/yang-tai-lu-tai-yu-peng-xuan-ze-zhi-nan`). Strata/JMB-first
+      balcony/patio/yard guide: rules before catalogue, space-by-space framing
+      (condo balcony, landed patio, windows/doors, drying yard), materials for
+      light-vs-shade (polycarbonate/glass/ACP/metal deck/fabric table),
+      elevated-floor drainage and waterproofing care, fixed vs retractable
+      (motorised availability kept conditional), quote checklist. Quote-safe
+      throughout (no fabricated prices, wind ratings, cooling figures or
+      approval guarantees); links to the pillar, balcony/patio/window and
+      canvas/fabric specialties, polycarbonate sub-page, welding (drying-yard
+      frames), balcony-leak-condo and clogged-gutter problem nodes, plus posts
+      1/2/4/6 and /pricing (EN only — MS/ZH link the services directory). Wired
+      into the awning BLOG pool and the balcony-patio-and-window specialty.
+8. [x] COMPLETED **Replacing an Old or Leaking Awning: What to Check — PUBLISHED 2026-08-27**
+      (`/blog/replacing-old-leaking-awning-malaysia` + native MS
+      `/ms/blog/tukar-awning-lama-bocor-malaysia` + native ZH
+      `/zh/bo-ke/geng-huan-jiu-yu-peng-jian-cha`). Replacement-decision guide
+      (differentiated from post 5's maintenance angle): signs replacement is
+      realistic (sheet ageing/yellowing, frame corrosion, sagging, repeated
+      leaks), safe ground-level checks, what a replacement inspection covers,
+      frame-reuse cautions (inspection-verified; new steel gets anti-rust
+      primer + weather-resistant finish per the verified welding line), re-sheet
+      material choices, drainage fix at replacement time, removal/disposal
+      scope, timing per the service FAQ wording and quote inputs. Quote-safe
+      throughout (no fabricated lifespans, prices or warranties); links to the
+      pillar, replacement-and-repair specialty, three material sub-pages,
+      welding, clogged-gutter problem node, maintenance guide (post 5), pricing
+      guide (post 4), material comparison (post 1) and the balcony guide
+      (post 7). Wired into the awning BLOG pool and the
+      awning-replacement-and-repair specialty.
 
 ## 9. Testing Tasks
 
@@ -265,6 +295,22 @@ Blog/pillar posts (each links to `/services/awning-installation`):
       titles/descriptions and 0 warnings; `audit:meta` found 0 JSON-LD parse
       failures, 0 breadcrumb mismatches and 0 duplicate title groups. Rendered
       internal-link audit: 5,806 pages / 435,635 links, 0 broken targets.
+- [x] COMPLETED Posts 7–8 production smoke (2026-08-27): all six new article
+      routes (EN/MS/ZH × balcony guide and replacement guide) return HTTP 200
+      with one H1, correct `en-MY`/`ms-MY`/`zh-MY` language, localized titles
+      and complete four-entry hreflang clusters; localized awning/pillar/
+      problem links render in all locales; EN BlogPosting schema present
+      (MS/ZH schema remains the known site-wide gap); all six URLs are in
+      sitemap.xml; the EN pillar's related-guides block is unchanged (decision
+      guide, post 1, post 3 first) and the MS balcony + ZH replacement
+      specialty pages surface the new localized guides.
+- [x] COMPLETED Posts 7–8 full-corpus HTML/SEO QA: `audit:html` checked 5,812
+      rendered pages with 0 fatal findings / 0 warnings; `audit:seo-head` found
+      4,736 self-canonical indexable pages, 4,736 sitemap URLs, 0 duplicate
+      titles/descriptions and 0 warnings; `audit:meta` found 0 JSON-LD parse
+      failures, 0 breadcrumb mismatches and 0 duplicate title groups. Rendered
+      internal-link audit: 436,121 links, 0 broken targets. Production build
+      emits 5,820 static pages (up from 5,806).
 
 ---
 
@@ -323,19 +369,29 @@ Blog/pillar posts (each links to `/services/awning-installation`):
   213 → 214; prebuild gates (320,331 assertions), type-check, lint, production
   build, 3-route smoke, sitemap inclusion and rendered-link audit (435,635
   links, 0 broken) all pass (§8).
+- Supporting content cluster posts 7/8 and 8/8 (2026-08-27, current session) —
+  **cluster complete (8 of 8)**: "Choosing an Awning for a Balcony or Patio in
+  Malaysia" (strata/JMB-first, light-vs-shade materials, elevated-floor
+  drainage, quote checklist) and "Replacing an Old or Leaking Awning: What to
+  Check" (replacement-decision guide: ageing signs, inspection scope, frame
+  reuse cautions, drainage fix, removal/disposal). Both full native EN/MS/ZH,
+  quote-safe (no fabricated prices, lifespans, wind ratings, cooling figures
+  or approval guarantees), differentiated from posts 5/6; wired into the
+  awning BLOG pool + balcony-patio-and-window and awning-replacement-and-repair
+  specialty relatedBlogs. Validator count 214 → 216; prebuild gates (320,331
+  assertions), type-check, lint, production build (5,820 pages), 6-route
+  smoke, sitemap inclusion (4,736 URLs), full-corpus audits (5,812 pages, 0
+  fatal/0 warnings; 436,121 links, 0 broken) all pass (§8, §9).
 
 ### PENDING
-- [ ] PENDING Supporting blog cluster posts 7–8 (see §8) — same recipe: full native
-  trilingual article, quote-safe content, topical-map BLOG pool entry,
-  `validate:blog-production.ts` count bump, regenerated indexes, full gate
-  re-run + production-build smoke + link audit.
-  - [ ] PENDING 7: Choosing an Awning for Balcony/Patio/Yard (→
-    balcony-patio-and-window; strata/JMB focus)
-  - [ ] PENDING 8: Replacing an Old or Leaking Awning: What to Check (→
-    awning-replacement-and-repair; frame reuse, sheet life, drainage, removal)
+- [x] COMPLETED Supporting blog cluster posts 7–8 (see §8) — full native trilingual
+  articles, quote-safe content, topical-map BLOG pool entries,
+  `validate:blog-production.ts` count bump (214 → 216), regenerated indexes,
+  full gate re-run + production-build smoke + link audit. **The 8-post awning
+  cluster is now complete; no awning content tasks remain in this tracker.**
 - [ ] PENDING Real project photography (business to supply — see business confirmation)
 - [ ] PENDING (Site-wide, outside awning scope — discovered during §9 validation):
-  MS/ZH blog article routes emit no BlogPosting/Article schema (all 214 topics;
+  MS/ZH blog article routes emit no BlogPosting/Article schema (all 216 topics;
   only EN does). Candidate follow-up for a dedicated session; do not bundle into
   awning work.
 

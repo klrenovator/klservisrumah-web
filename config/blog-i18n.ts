@@ -4719,6 +4719,468 @@ Beritahu kami di mana awning akan dipasang, bila anda memerlukan teduhan dan sam
 
 告诉我们雨棚要装在哪里、什么时候需要遮阴，以及是否必须永久挡雨。在 WhatsApp 发送照片和大致尺寸，KL Servis Rumah 可以讨论适合的固定或伸缩式范围，并准备针对项目的分项报价。[与我们的团队聊聊](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah%EF%BC%8C%E6%88%91%E6%83%B3%E6%AF%94%E8%BE%83%E4%BD%8F%E5%AE%B6%E7%9A%84%E5%9B%BA%E5%AE%9A%E4%B8%8E%E4%BC%B8%E7%BC%A9%E9%9B%A8%E6%A3%9A%E3%80%82)`
     }
+  },
+  "balcony-patio-awning-guide-malaysia": {
+    ms: {
+      slug: "panduan-awning-balkoni-patio-malaysia",
+      title: "Memilih Awning untuk Balkoni atau Patio di Malaysia",
+      category: "Awning",
+      excerpt: "Memilih awning balkoni atau patio di Malaysia? Bandingkan polikarbonat, kaca, ACP dan fabrik dari segi cahaya, teduhan dan penjagaan, rancangkan saliran di aras tinggi, dan semak peraturan strata lebih awal.",
+      metaTitle: "Memilih Awning Balkoni atau Patio di Malaysia | Panduan",
+      metaDesc: "Panduan memilih awning balkoni atau patio di Malaysia: peraturan strata dan JMB dahulu, pilihan bahan untuk cahaya dan teduhan, saliran aras tinggi dan info untuk sebut harga.",
+      content: `Balkoni, patio atau teres ialah bahagian rumah di Malaysia tempat kita mahu udara segar — bukan silau petang, hujan mengejut atau lantai basah. Awning boleh menjadikan ruang itu lebih boleh digunakan sepanjang hari, tetapi aras tinggi dan hartanah terurus menambah perkara yang tiada di car porch: apa yang dibenarkan bangunan, cara air hujan disalurkan, dan bahan mana yang memberikan keseimbangan cahaya dan teduhan yang tepat. KL Servis Rumah memasang [awning tersuai](/ms/services/awning-installation) di seluruh KL & Selangor, dan skop [awning balkoni, patio dan tingkap](/ms/services/awning-installation/balcony-patio-and-window-awning) kami merangkumi aplikasi ini, dengan sebut harga mengikut projek.
+
+## Jawapan ringkas: apa yang perlu diputuskan dahulu
+
+- **Semak peraturan sebelum katalog.** Untuk kondominium, pangsapuri atau komuniti berpagar, JMB, MC atau pejabat pengurusan mungkin menetapkan had unjuran, penampilan dan titik pengancing. Untuk rumah berkembar/teres, garis panduan majlis tetap mungkin terpakai untuk struktur yang menghadap jalan atau sempadan.
+- **Tentukan matlamat utama** — lindungan hujan, kawalan silau dan haba, privasi atau penampilan — kerana ia menentukan pilihan bahan.
+- **Padankan bahan dengan keutamaan cahaya.** Polikarbonat mengekalkan kecerahan ruang; ACP dan metal deck memberikan teduhan legap sepenuhnya; kaca tempered terang dan premium; kanvas atau fabrik memberikan rupa lebih lembut.
+- **Rancangkan laluan air.** Kecerunan, longkang dan paip turun mesti disalurkan ke longkang anda sendiri — bukan ke unit bawah atau laluan awam.
+- **Hantar foto dan ukuran untuk sebut harga berperincian** dan bukan mengharapkan kadar generik. [Panduan harga awning](/ms/blog/bagaimana-harga-awning-dikira-di-malaysia) kami menerangkan mengapa setiap projek disebut harga secara individu.
+
+## Balkoni, patio, teres atau halaman: ruang mana yang anda tutup?
+
+### Balkoni kondominium atau pangsapuri
+
+Balkoni di hartanah terurus biasanya padat, dengan tepi slab, dinding atau pagar sebagai titik pengancing dan muka hadapan yang kelihatan dari jalan. Kedalaman terhad, pilihan saliran lebih sedikit, dan peraturan pengurusan membentuk apa yang mungkin. Pengancing, unjuran dan penampilan perlu menghormati bangunan — baca bahagian strata di bawah sebelum menyenarai pendek reka bentuk.
+
+### Patio, teres atau halaman rumah berkembar/teres
+
+Rumah berkembar/teres biasanya mempunyai lebih kebebasan dari segi unjuran dan gaya, tetapi garis panduan majlis tempatan (contohnya DBKL, MBPJ atau MBSA) tetap mungkin terpakai untuk struktur yang menghadap jalan atau hampir dengan sempadan jiran. Patio dan teres biasanya membenarkan kawasan teduh lebih besar, jadi reka bentuk bentang, rangka dan saliran lebih penting.
+
+### Tingkap dan pintu
+
+Awning kecil di atas tingkap dan pintu mengurangkan silau, melindungi bingkai daripada hujan tertiup dan mengelakkan percikan pada kaca. Pilihan bahan yang sama terpakai dengan unjuran lebih kecil. Perkhidmatan [awning balkoni, patio dan tingkap](/ms/services/awning-installation/balcony-patio-and-window-awning) kami merangkumi bukaan ini bersama balkoni itu sendiri.
+
+### Ruang jemuran atau kawasan utiliti
+
+Ruang jemuran lebih mengutamakan fungsi daripada rupa: melindungi pakaian daripada hujan, menyalurkan air dan kekal rendah penyelenggaraan. Polikarbonat atau metal deck biasanya dipertimbangkan di sini, dan rangka halaman atau rak jemuran yang lebih berat juga boleh difabrikasi oleh pasukan [kimpalan dan kerja logam](/ms/services/welding) kami.
+
+## Peraturan strata, JMB dan pengurusan: baca ini dahulu
+
+Inilah langkah yang paling kerap diketepikan — dan langkah yang menentukan sama ada awning yang dipasang kekal terpasang. Kondominium, pangsapuri dan komuniti berpagar lazimnya menetapkan:
+
+- **Unjuran dan jejak** — sejauh mana awning boleh terunjur melepasi garis balkoni atau parapet.
+- **Penampilan** — warna, bahan dan keterlihatan struktur dari jalan atau blok lain.
+- **Titik pengancing** — sama ada pengancing boleh menembusi muka hadapan, tepi slab atau elemen harta bersama.
+- **Saliran** — ke mana air hujan boleh disalurkan; titisan ke balkoni unit bawah atau laluan awam ialah aduan yang kerap.
+- **Syarat kerja** — dokumen kontraktor, insurans, waktu bekerja dan pengendalian serpihan.
+
+Sebelum membuat keputusan reka bentuk, tanya JMB, MC atau pejabat pengurusan anda secara bertulis peraturan yang terpakai untuk unit anda. Kami boleh menyediakan skop, dimensi dan spesifikasi bahan cadangan untuk menyokong perbincangan tersebut, tetapi syarat kelulusan hartanah anda mesti disahkan dengan pengurusan atau pihak berkuasa tempatan yang berkaitan — kami tidak menentukan atau menjamin kelulusan pihak bangunan.
+
+Pemilik rumah berkembar/teres juga digalakkan menyemak keperluan majlis untuk struktur yang menghadap hadapan sebelum fabrikasi bermula. Reka bentuk yang disahkan lebih dahulu jauh lebih murah daripada arahan pembongkaran kemudian.
+
+## Pilihan bahan untuk balkoni atau patio
+
+| Bahan | Rupa dan cahaya | Biasanya dipertimbangkan untuk | Nota praktikal |
+|---|---|---|---|
+| Polikarbonat (jernih atau tinted) | Mer tembus; mengekalkan kecerahan | Balkoni dan patio yang memerlukan cahaya siang | Profil tinted mengurangkan silau; perlukan kecerunan betul, sendi kedap dan pembersihan berkala |
+| Kaca tempered | Premium, terang, pemandangan penuh | Balkoni istimewa dan pintu masuk yang mengutamakan penampilan | Lebih berat; perlukan rangka dan pengancing yang direka untuk bukaan |
+| Komposit aluminium (ACP) | Legap, garisan kemas, moden | Teduhan penuh dengan garis muka hadapan yang kemas | Penyelenggaraan rendah; menyekat silau dan matahari terus sepenuhnya |
+| Metal deck | Fungsional, legap sepenuhnya | Balkoni utiliti dan ruang jemuran | Lindungan ekonomikal; rangka keluli perlu rawatan anti karat |
+| Kanvas / fabrik | Rupa lembut; keutamaan teduhan | Patio dan teres yang mengutamakan penampilan dan keselesaan | Fabrik ialah komponen yang haus; sistem tetap dan gaya boleh tarik dibincangkan mengikut projek |
+
+Ini panduan pemilihan, bukan spesifikasi. Sistem akhir bergantung pada tapak anda, peraturan bangunan dan sebut harga. Untuk perbandingan bahan lebih mendalam, lihat [perbandingan polikarbonat vs metal vs ACP](/ms/blog/perbandingan-awning-polikarbonat-metal-deck-acp) kami.
+
+## Cahaya berbanding teduhan: memilih penutup
+
+Polikarbonat jernih mengekalkan balkoni cukup cerah untuk tanaman dan membaca, manakala profil tinted mengurangkan silau pada unit yang menghadap barat. ACP dan metal deck menyekat matahari terus sepenuhnya, sesuai untuk patio yang digunakan untuk jemuran atau simpanan berbanding tempat bersantai. Kaca tempered mengekalkan pemandangan terbuka dan cahaya siang tetapi tetap menadah hujan. Fabrik berada di tengah: kanopi tetap memberikan teduhan lembut yang berterusan, manakala sistem gaya boleh tarik boleh membuka ruang kepada langit apabila anda mahu matahari.
+
+Apa pun pilihan anda, berhati-hati dengan dakwaan bahawa sesuatu lembaran atau fabrik menjamin penurunan suhu dalaman yang tertentu. Teduhan ke atas lantai dan kaca mengurangkan kemasukan haba terus, tetapi hasil sebenar bergantung pada orientasi, pengudaraan, kaca dan bangunan itu sendiri — sebab kami menilai tapak sebenar dan bukannya menjanjikan angka.
+
+## Hujan, angin dan saliran di aras tinggi
+
+Air ialah punca masalah utama awning balkoni. Reka bentuk perlu memberikan kecerunan cukup supaya hujan mengalir ke longkang atau tepi tetesan yang membuang air ke longkang anda sendiri — bukan ke balkoni unit bawah, muka hadapan atau laluan awam. Sendi dan sambungan dinding perlu flashing dan pengedap yang betul, manakala longkang dan paip turun mesti kekal tersumbat-bebas; saliran tersumbat ialah salah satu punca paling biasa [awning bocor dan melimpah](/ms/problems/clogged-gutter-leaking).
+
+Berhati-hati dengan pengancing juga. Menebuk ke dalam sked atau jubin balkoni boleh mengganggu kalis air di bawahnya, dan kebocoran yang muncul selepas kerja awning sukar untuk dipertikaikan kemudian. Kedudukan pengancing perlu dirancang mengikut struktur, dan sebarang [bocor balkoni sedia ada](/ms/problems/balcony-leak-condo) patut dinyatakan sebelum kerja disebut harga supaya ia tidak tersalah anggap sebagai kebocoran awning selepas ini.
+
+Bab angin: tiada kontraktor bertanggungjawab yang patut mendakwa awning generik kalis angin. Unjuran, ketinggian, pendedahan dan reka bentuk pengancing semuanya penting, dan sistem fabrik boleh tarik patut ditarik semula mengikut arahan produk ketika angin kencang.
+
+## Tetap atau gaya boleh tarik untuk balkoni anda?
+
+Kanopi tetap polikarbonat, kaca atau ACP sentiasa sedia apabila hujan tiba dan sesuai untuk pemilik yang mahu lindungan tanpa perlu diurus. Sistem fabrik gaya boleh tarik sesuai untuk mereka yang mahu memilih antara teduhan dan langit terbuka, dengan tambahan rutin operasi dan penjagaan fabrik. Operasi bermotor boleh dibincangkan bergantung pada skop dan ketersediaan pembekal — jangan anggap ia termasuk secara automatik. [Perbandingan boleh tarik vs tetap](/ms/blog/awning-boleh-tarik-vs-tetap-malaysia) kami dan skop [awning kanvas dan fabrik](/ms/services/awning-installation/canvas-and-fabric-awning) membincangkan pilihan ini dengan lebih terperinci.
+
+## Apa yang perlu dihantar untuk sebut harga awning balkoni atau patio
+
+Semakin lengkap mesej pertama anda, semakin tepat sebut harganya:
+
+- Lokasi anda — untuk hartanah strata, sertakan nama pembangunan dan aras.
+- Foto dari dalam balkoni atau patio, muka hadapan luar, dan titik pengancing yang berkemungkinan.
+- Lebar anggaran dan sejauh mana lindungan yang anda mahu.
+- Matlamat utama: lindungan hujan, kawalan silau, privasi atau penampilan.
+- Bahan atau rupa pilihan anda — atau minta pilihan dengan pertukaran dijelaskan.
+- Peraturan pengurusan atau majlis yang anda terima, jika ada.
+- Sama ada penutup lama atau struktur sedia ada perlu dibongkar dahulu.
+
+Dengan foto dan ukuran yang jelas, banyak sebut harga balkoni dan patio boleh disediakan dari jauh; penilaian tapak diatur apabila titik pengancing, akses atau saliran perlu diperiksa secara langsung. [Panduan pemilihan awning rumah](/ms/blog/cara-memilih-awning-yang-sesuai-rumah-malaysia) kami boleh membantu anda merangka keputusan sebelum menghantar apa-apa.
+
+## Soalan lazim
+
+### Bolehkah saya memasang awning di balkoni kondominium di Malaysia?
+
+Selalunya boleh, tetapi ia bergantung pada peraturan JMB, MC atau pengurusan anda. Unjuran, penampilan, titik pengancing dan saliran ialah perkara yang biasa jadi isu. Sahkan peraturan secara bertulis sebelum fabrikasi, dan kami boleh menyediakan skop serta spesifikasi untuk menyokong permohonan.
+
+### Bahan manakah paling bagus untuk awning balkoni?
+
+Tiada yang paling bagus untuk semua — polikarbonat untuk kecerahan, ACP atau metal deck untuk teduhan penuh, kaca tempered untuk rupa premium yang terang, fabrik untuk pilihan lebih lembut atau boleh diubah. Peraturan bangunan dan keutamaan cahaya-versus-teduhan anda lebih menentukan daripada carta bahan.
+
+### Adakah awning menyejukkan balkoni saya?
+
+Teduhan ke atas lantai dan kaca mengurangkan matahari terus dan silau, yang secara amnya menjadikan ruang teduh lebih selesa. Kami tidak menjanjikan penurunan suhu yang tertentu, kerana hasilnya bergantung pada orientasi, pengudaraan dan bangunan itu sendiri.
+
+### Ke mana air hujan awning balkoni disalurkan?
+
+Ia dirancang: cerunkan bumbung ke longkang atau tepi tetesan yang membuang air ke longkang atau paip turun anda sendiri. Air tidak boleh dialihkan ke unit bawah, muka hadapan atau laluan awam — ini juga antara perkara pertama yang disemak oleh pejabat pengurusan.
+
+### Bolehkah saya guna awning boleh tarik di kondominium?
+
+Mungkin, tertakluk pada dua perkara: kelulusan pengurusan anda untuk unjuran dan penampilan, serta sistem yang benar-benar tersedia dan sesuai untuk titik pengancing dan pendedahan balkoni anda. Sahkan kedua-duanya sebelum menganggap reka bentuk boleh tarik.
+
+### Adakah anda menukar awning balkoni lama?
+
+Ya. Skop [penggantian dan pembaikan awning](/ms/services/awning-installation/awning-replacement-and-repair) kami merangkumi pemeriksaan rangka, penutup dan saliran sedia ada, kemudian pembaikan atau penggantian penuh dengan pembongkaran termasuk jika dipersetujui.
+
+## Dapatkan nasihat awning balkoni atau patio anda
+
+Beritahu kami jenis hartanah, ruang yang anda mahu tutup dan sebarang peraturan pengurusan yang anda terima. Hantar foto dan ukuran kasar di WhatsApp dan KL Servis Rumah boleh mencadangkan bahan yang sesuai, menandakan pertimbangan strata lebih awal dan menyediakan sebut harga berperincian khusus projek. [Chat dengan pasukan kami](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah!%20Saya%20ingin%20nasihat%20untuk%20awning%20balkoni%20atau%20patio.)`
+    },
+    zh: {
+      slug: "yang-tai-lu-tai-yu-peng-xuan-ze-zhi-nan",
+      title: "阳台与露台雨棚怎么选？马来西亚指南",
+      category: "Awning",
+      excerpt: "在马来西亚为阳台或露台选择雨棚？比较聚碳酸酯、玻璃、ACP与布艺的采光、遮阳与保养差异，规划高层排水，并提前确认分层管理规则。",
+      metaTitle: "阳台露台雨棚怎么选？马来西亚选择指南",
+      metaDesc: "马来西亚阳台露台雨棚选择指南：先了解分层管理与JMB规则，比较聚碳酸酯、玻璃、ACP与布艺的采光遮阳表现，并规划高层排水与报价资料。",
+      content: `阳台、露台或平台是马来西亚住宅里最想要自然通风的地方——而不是午后眩光、突发阵雨或湿漉漉的地面。雨棚能让这个空间在一天中更多时段都可使用，但高层住宅和有管理的物业会带来车棚没有的额外考量：楼宇允许什么、雨水如何排放、以及哪种材料能在采光与遮阳之间取得平衡。KL Servis Rumah 在吉隆坡与雪兰莪全域提供[定制雨棚](/zh/services/awning-installation)安装，其中[阳台、露台与窗户雨棚](/zh/services/awning-installation/balcony-patio-and-window-awning)服务正好覆盖这类应用，按项目逐一报价。
+
+## 简要答案：先决定什么？
+
+- **先查规则，再看款式。**对于共管公寓、组屋或有围篱社区，JMB、MC或管理处可能对悬挑、外观和固定点有规定。有地住宅临路或贴近边界的构筑物，也可能受市政厅指引约束。
+- **确定主要目标**——挡雨、控制眩光与热度、私密还是美观——这决定材料选择。
+- **按采光偏好匹配材料。**聚碳酸酯保持明亮；ACP与金属瓦完全遮光；钢化玻璃明亮且高档；帆布或布艺观感更柔和。
+- **规划水的去向。**坡度、天沟与落水管必须排入自家排水——绝不能排到楼下单位或公共走道。
+- **发送照片和尺寸以获得分项报价**，不要期待通用价格。我们的[雨棚价格指南](/zh/bo-ke/yu-peng-jia-ge-ru-he-ji-suan-ma-lai-xi-ya)解释了为什么每个项目都单独计价。
+
+## 阳台、露台、平台还是后院：你要遮盖哪个空间？
+
+### 共管公寓或组屋阳台
+
+有管理物业的阳台通常紧凑，以楼板边缘、墙体或栏杆作为固定点，外立面从街道清晰可见。进深有限、排水选择更少，管理规则决定了可行范围。固定方式、悬挑与外观都需要尊重建筑本身——筛选设计前先阅读下方分层管理部分。
+
+### 有地住宅的露台、平台或庭院
+
+有地住宅在悬挑与样式上一般更自由，但临路或贴近邻居边界的构筑物仍可能受市政厅（如DBKL、MBPJ或MBSA）指引约束。露台与平台通常可以覆盖更大面积，因此跨距、骨架与排水设计更加重要。
+
+### 窗户与门
+
+装在门窗上方的小型雨棚能减少眩光、保护窗框免受斜雨侵袭、并避免雨水溅到玻璃上。材料选择相同，只是悬挑更小。我们的[阳台、露台与窗户雨棚](/zh/services/awning-installation/balcony-patio-and-window-awning)服务与阳台一起覆盖这些开口。
+
+### 晾衣区或杂物区
+
+晾衣区更重功能而非外观：为衣物挡雨、把水排走、并尽量少维护。这里常考虑聚碳酸酯或金属瓦，而较重的后院或晾衣架骨架也可通过我们的[焊接与金属加工](/zh/services/welding)团队制作。
+
+## 分层管理、JMB与管理处规则：务必先读
+
+这是最常被跳过的一步——也是决定已装雨棚能否保留的一步。共管公寓、组屋与围篱社区常见的规定包括：
+
+- **悬挑与占地**——雨棚可越过阳台界线或压顶墙外伸多少。
+- **外观**——从街道或其他座楼看到的颜色、材料与可见度。
+- **固定点**——是否允许在外立面、楼板边缘或公共部位打钉固定。
+- **排水**——雨水允许排向何处；滴落到楼下单位阳台或公共走道是常见投诉。
+- **施工条件**——承包商文件、保险、施工时间与余泥处理。
+
+在确定设计之前，先以书面方式向JMB、MC或管理处询问适用于你单位的规则。我们可以准备拟议工程范围、尺寸与材料规格以支持沟通，但你房产的审批要求必须与管理处或相关地方当局确认——我们不能代替楼宇方决定或保证批准。
+
+有地住宅业主同样应在制作开始前查证临街构筑物的市政要求。提前与相关方确认的设计，远比之后被要求拆除便宜。
+
+## 阳台与露台的材料选择
+
+| 材料 | 外观与采光 | 常考虑用于 | 实务提示 |
+|---|---|---|---|
+| 聚碳酸酯（透明或茶色） | 半透光；保持空间明亮 | 需要自然光的阳台与露台 | 茶色板减少眩光；需要正确坡度、密封接缝与定期清洁 |
+| 钢化玻璃 | 高档、明亮、视野完整 | 以外观为先的特色阳台与入口 | 更重；需要为开口专门设计的骨架与固定 |
+| 铝复合板（ACP） | 不透光、线条干净、现代 | 需要完全遮阳且立面整洁 | 保养少；完全阻挡眩光与直射阳光 |
+| 金属瓦 | 功能性、完全不透光 | 杂物阳台与晾衣区 | 经济的覆盖；钢骨架需防锈处理 |
+| 帆布 / 布艺 | 观感柔和；以遮阳为先 | 重视外观与舒适的露台平台 | 布艺是易耗部件；固定式与伸缩式按项目商议 |
+
+这是选择指导，不是规格说明。最终系统取决于你的场地、楼宇规则与报价。更深入的材料比较请看我们的[聚碳酸酯 vs 金属瓦 vs ACP 对比](/zh/bo-ke/ju-tan-suan-zhi-jin-shu-wa-yu-acp-yu-peng-bi-jiao)。
+
+## 采光与遮阳：如何选覆盖物
+
+透明聚碳酸酯能让阳台保持适合绿植与阅读的亮度，茶色板则能减少西晒单位的眩光。ACP与金属瓦完全阻挡直射阳光，更适合用于晾晒或储物而非休闲的露台。钢化玻璃保留开放视野与日光，同时仍能挡雨。布艺介于两者之间：固定篷提供持续柔和的遮阳，伸缩式系统则可在想要阳光时把空间向天空打开。
+
+无论偏好如何，请谨慎对待"某种板材或布料保证降低室内温度"的说法。为地面与玻璃遮阳能减少直接得热，但实际效果取决于朝向、通风、玻璃与建筑本身——这正是我们评估实际场地而不承诺数字的原因。
+
+## 高层住宅的雨水、风与排水
+
+水是阳台雨棚最容易出问题的地方。设计应让屋面有足够坡度，使雨水流向天沟或滴水边缘，并排入你自家的排水系统——而不是排到楼下阳台、外立面或公共走道。接缝与墙体交接处需要正确的泛水与密封胶，天沟与落水管必须保持畅通；排水堵塞是[雨棚漏水与溢流](/zh/problems/clogged-gutter-leaking)最常见的原因之一。
+
+固定点同样要小心。在阳台砂浆层或瓷砖上钻孔可能破坏下方的防水层，雨棚施工后才出现的渗漏事后很难厘清责任。固定位置应结合结构规划；如阳台已有[渗水问题](/zh/problems/balcony-leak-condo)，应在报价前说明，避免日后被误认为雨棚漏水。
+
+关于风：负责任的承包商不会声称普通雨棚防风。悬挑、高度、暴露程度与固定设计都影响结果，伸缩布艺系统应按产品说明在强风时收回。
+
+## 阳台选固定式还是伸缩式？
+
+固定式聚碳酸酯、玻璃或ACP篷在下雨时随时可用，适合想要"装好就不用管"的业主。伸缩式布艺系统适合想在遮阳与开放天空之间自由切换的人，代价是操作习惯与布艺保养。电动操作可视工程范围和供应商供应情况商议——不应假定一定包含。我们的[伸缩 vs 固定对比](/zh/bo-ke/shen-suo-yu-peng-vs-gu-ding-yu-peng)与[帆布布艺雨棚](/zh/services/awning-installation/canvas-and-fabric-awning)服务对此有详细说明。
+
+## 阳台露台雨棚报价要提供什么
+
+第一条消息越完整，报价越准确：
+
+- 你的位置——分层物业请注明项目名称与楼层。
+- 阳台或露台内侧照片、外立面照片，以及可能固定点的照片。
+- 大约宽度与想要的悬挑深度。
+- 主要目标：挡雨、控眩光、私密还是美观。
+- 偏好的材料或外观——或请我们列出各选项的取舍。
+- 已收到的管理处或市政规则（如有）。
+- 是否需要先拆除旧覆盖物或现有结构。
+
+照片与尺寸清晰时，许多阳台露台报价可以远程准备；当固定点、出入条件或排水需要实地确认时，我们会安排现场评估。我们的[家居雨棚选择指南](/zh/bo-ke/ru-he-wei-ma-lai-xi-ya-zhu-jia-xuan-ze-he-shi-yu-peng)可以帮你在发送资料前理清思路。
+
+## 常见问题
+
+### 在马来西亚可以在共管公寓阳台装雨棚吗？
+
+通常可以，但取决于你JMB、MC或管理处的规则。悬挑、外观、固定点与排水是常见争议点。制作前先以书面确认规则，我们可以准备范围与规格以支持申请。
+
+### 哪种材料最适合阳台雨棚？
+
+没有唯一答案——聚碳酸酯胜在明亮，ACP或金属瓦胜在完全遮阳，钢化玻璃高档明亮，布艺更柔和或可调节。楼宇规则与你的采光遮阳优先级比材料表更有决定性。
+
+### 雨棚能让阳台更凉快吗？
+
+为地面与玻璃遮阳能减少直射阳光与眩光，通常让被遮盖的空间更舒适。我们不承诺具体的降温数字，因为效果取决于朝向、通风与建筑本身。
+
+### 阳台雨棚的雨水排到哪里？
+
+这是设计出来的：让屋面坡向天沟或滴水边缘，并排入你自家的排水沟或落水管。水不能被引到楼下单位、外立面或公共走道——这也是管理处最先检查的事项之一。
+
+### 共管公寓可以用伸缩雨棚吗？
+
+有可能，但取决于两件事：管理处对悬挑与外观的批准，以及确实有适合你阳台固定点与暴露条件的系统。两者都确认后再考虑伸缩设计。
+
+### 你们更换旧阳台雨棚吗？
+
+会。我们的[雨棚更换与维修](/zh/services/awning-installation/awning-replacement-and-repair)服务包括检查现有骨架、屋面与排水，然后按约定进行维修或整棚更换并包含拆除。
+
+## 获取阳台露台雨棚建议
+
+告诉我们物业类型、想遮盖的空间，以及已收到的管理规则。在 WhatsApp 发送照片与大致尺寸，KL Servis Rumah 可以建议合适的材料、提前提示分层管理考量，并准备针对项目的分项报价。[与我们的团队聊聊](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah%EF%BC%8C%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2%E9%98%B3%E5%8F%B0%E9%9C%B2%E5%8F%B0%E9%9B%A8%E6%A3%9A%E3%80%82)`
+    }
+  },
+  "replacing-old-leaking-awning-malaysia": {
+    ms: {
+      slug: "tukar-awning-lama-bocor-malaysia",
+      title: "Menukar Awning Lama atau Bocor: Apa yang Perlu Diperiksa",
+      category: "Awning",
+      excerpt: "Bila awning lama patut ditukar? Tanda penukaran lebih wajar, apa yang diperiksa semasa pemeriksaan, sama ada rangka boleh diguna semula, pembetulan saliran, skop pembongkaran dan info untuk sebut harga.",
+      metaTitle: "Menukar Awning Lama atau Bocor: Apa Perlu Diperiksa",
+      metaDesc: "Menukar awning lama atau bocor di Malaysia: tanda sudah masa, semakan penggunaan semula rangka, penuaan lembaran, pembetulan saliran, skop pembongkaran dan info sebut harga.",
+      content: `Awning bocor tidak semestinya perlu ditukar — dan awning yang sangat lama belum tentu bocor lagi. Keputusan yang tepat datang daripada keadaan tiga perkara: penutup bumbung, rangka dan saliran. Panduan ini menerangkan pemeriksaan yang penting sebelum anda membayar untuk pembaikan atau penggantian penuh awning di Malaysia. KL Servis Rumah mengendalikan [penggantian dan pembaikan awning](/ms/services/awning-installation/awning-replacement-and-repair) sebagai sebahagian perkhidmatan [pemasangan awning](/ms/services/awning-installation) kami di seluruh KL & Selangor, disebut harga mengikut projek selepas pemeriksaan.
+
+## Jawapan ringkas
+
+- Penukaran menjadi pilihan yang lebih wajar apabila lembaran retak, kuning atau rapuh, rangka berkarat atau melendut, sendi terus bocor selepas tambah pengedap, atau bumbung telah mendatar dan menakung air.
+- Jangan anggap rangka lama boleh menanggung bumbung baharu — kakisan, pergerakan dan keadaan pengancing mesti diperiksa dahulu sebelum penggunaan semula dijanjikan.
+- Betulkan punca, bukan sekadar penutup: kecerunan, longkang, paip turun dan flashing dinding menentukan sama ada bumbung baharu kekal kering di bawahnya.
+- Pastikan sebut harga menyatakan dengan jelas pembongkaran dan pelupusan awning lama.
+
+## Tanda penukaran mungkin pilihan yang lebih wajar
+
+Sebahagian kerosakan boleh dibaiki; corak berikut biasanya menunjukkan penukaran ialah skop yang lebih munasabah:
+
+- **Lembaran polikarbonat yang menguning, rapuh atau retak** pada lubang pengancing dan sendi. Lembaran yang tua kehilangan kekuatan hentaman, jadi menampal satu retakan sering hanya mengalihkan kebocoran ke tempat seterusnya.
+- **Lembaran logam berkarat tertembus** di tepi, lubang pengikat atau pertindihan, terutamanya apabila muka sebelah lain tidak dapat diselenggara.
+- **Kakisan rangka** — karat mengelupas pada rasuk, purus atau pangkal tiang, atau karat keluar dari kimpalan dan sendi.
+- **Lembaran melendut atau kecerunan yang mendatar**, menyebabkan air bertakung dan bukannya mengalir. Menukar bumbung di atas geometri mendatar yang sama akan bertakung semula.
+- **Kebocoran yang berulang** selepas beberapa kali kerja pengedap, bermakna sendi, pertindihan atau saliran salah pada peringkat reka bentuk.
+- **Pergerakan atau bergetar pada pengancing dinding**, jangkar longgar atau rangka yang tidak segaris.
+- **Perubahan pengubahsuaian** — anda mahukan bahan berbeza, lindungan lebih luas, atau awning lama tidak lagi sesuai dengan ruang.
+
+Jika anda belum pasti, [panduan penyelenggaraan tentang bocor, karat dan takungan](/ms/blog/penyelenggaraan-awning-bocor-karat-air-bertakung) kami menerangkan pemeriksaan selamat dan gejala yang realistik untuk dibaiki.
+
+## Sebelum memutuskan: pemeriksaan selamat yang boleh anda buat
+
+Kekal di paras tanah. Jangan panjat awning atau bersandarkan tangga pada lembaran — panel dan pengancing mungkin lebih lemah daripada kelihatan. Dari kedudukan selamat anda boleh merekod: tempat air menitis atau meninggalkan kesan selepas hujan, karat atau retakan yang kelihatan, sama ada air bertakung di atas bumbung, sama ada longkang melimpah, dan sama ada rangka bergerak ketika berangin. Gambar keseluruhan awning, kawasan paling teruk dan titik pengancing. Foto-foto ini juga tepat apa yang diperlukan untuk sebut harga, jadi lawatan pemeriksaan (jika perlu) boleh fokus pada struktur dan bukannya asas.
+
+## Apa yang patut dicakupi oleh pemeriksaan penggantian
+
+Pemeriksaan yang betul — sama ada daripada foto anda atau di tapak — patut melihat awning sebagai satu sistem:
+
+- **Penutup bumbung:** jenis dan profil lembaran, pertindihan, getah pengancing, garisan pengedap, kerapuhan atau kakisan.
+- **Rangka:** bahan dan saiz anggota berbanding bentang, kakisan pada sendi dan pangkal, keadaan kimpalan atau sambungan, kesegarisan dan pergerakan yang kelihatan.
+- **Pengancing ke dalam bangunan:** jangkar pada dinding dan rasuk, struktur apa yang ditanggung, dan keadaan lubang pengancing lama.
+- **Saliran:** arah kecerunan, keadaan longkang dan paip turun, dan ke mana air sebenarnya disalurkan — lihat nota kami tentang [longkang tersumbat dan limpahan](/ms/problems/clogged-gutter-leaking).
+- **Kawasan di bawah:** apa yang sudah terjejas oleh kebocoran, dan akses untuk pembongkaran.
+
+## Bolehkah rangka lama diguna semula?
+
+Kadangkala rangka keluli yang sihat boleh dikekalkan dan ditutup semula dengan lembaran baharu — tetapi kesimpulan itu mesti datang daripada pemeriksaan, bukan harapan. Penggunaan semula hanya masuk akal apabila rangka kukuh secara struktur, kakisan masih aras permukaan dan dirawat, sambungan padu, geometri memberikan kecerunan yang boleh kerja, dan pengancing ke dinding atau rasuk kekal dipercayai. Menggunakan semula rangka yang lemah di bawah bumbung baharu membazirkan sebahagian besar wang yang dibelanjakan: lembaran baharu akan rosak bersama struktur lama.
+
+Jika rangka ditukar, keluli baharu patut difabrikasi mengikut bentang dengan primer anti karat dan kemasan tahan cuaca atau serbuk salut — standard yang sama yang diamalkan pasukan [kimpalan dan fabrikasi logam](/ms/services/welding) kami untuk rangka awning dan kanopi. Apabila karat atau lendutan kelihatan, jangkakan pemeriksaan memberi tumpuan pada rangka dahulu; foto sahaja jarang dapat menyelesaikan soal penggunaan semula.
+
+## Memilih lembaran untuk penggantian
+
+Penggantian juga peluang untuk membetulkan aduan bahan asal. Jika polikarbonat jernih membuat porch panas, polikarbonat tinted, ACP atau profil metal bertebat biasanya dipertimbangkan; jika lembaran logam nipis bising ketika hujan lebat, profil atau bahan lain mungkin lebih sesuai; jika penutup fabrik telah rosak, pertimbangkan bagaimana lembaran tetap mengubah ruang. [Perbandingan polikarbonat vs metal vs ACP](/ms/blog/perbandingan-awning-polikarbonat-metal-deck-acp) kami merangkumi pertukaran ini, dan halaman bahan — [polikarbonat](/ms/services/awning-installation/polycarbonate-awning), [metal deck](/ms/services/awning-installation/metal-deck-awning) dan [ACP](/ms/services/awning-installation/aluminium-composite-acp-awning) — menerangkan setiap sistem. Untuk balkoni dan patio, lihat [panduan awning balkoni dan patio](/ms/blog/panduan-awning-balkoni-patio-malaysia).
+
+## Betulkan saliran, bukan sekadar penutup
+
+Banyak kerja "awning bocor" sebenarnya kerja saliran. Semasa menukar bumbung, penggantian patut memulihkan atau menambah baik kecerunan, menyedut semula flashing dinding, dan menambah atau menukar saiz longkang serta paip turun supaya air dibawa perlu dan bukannya melimpah ke porch atau halaman. Jika bumbung lama bertakung kerana terlalu mendatar, betulkan geometrinya semasa penukaran — jika tidak, lembaran baharu akan bertakung di tempat yang sama.
+
+## Pembongkaran, pelupusan dan tempoh masa
+
+Sebut harga patut menyatakan dengan jelas bahawa pembongkaran, pengalihan dan pelupusan awning lama termasuk, bersama penutupan lubang pengancing yang ditinggalkan di dinding. Membongkar struktur lama yang berkarat pada ketinggian ialah kerja sebenar — ia memerlukan akses selamat dan orang yang tahu bahagian mana boleh dilonggarkan tanpa menyebabkan rangka jatuh.
+
+Bab tempoh, penggantian yang mudah selalunya dapat disiapkan dalam tempoh sehari apabila bahan sedia, manakala penggantian lebih besar atau fabrikasi tersuai memerlukan masa fabrikasi tambah satu atau lebih hari pemasangan. Kami sahkan jadual sebenar dalam sebut harga dan bukannya menjanjikan tempoh tetap lebih awal.
+
+## Apa yang perlu dihantar untuk sebut harga penggantian
+
+- Lokasi anda dan jenis hartanah (berkembar/teres atau strata).
+- Foto keseluruhan awning dari paras tanah, gambar rapat kawasan paling teruk, titik pengancing dan longkang/paip turun.
+- Lebar dan unjuran anggaran, serta ketinggian awning dari tanah.
+- Bahan bumbung semasa, dan keutamaan bahan penggantian.
+- Sejarah kebocoran atau kerosakan — bila bermula, apa yang sudah dicuba.
+- Sama ada pembongkaran dan pelupusan perlu termasuk (biasanya ya).
+- Sebarang peraturan pengurusan atau majlis yang terpakai.
+
+[Panduan harga awning](/ms/blog/bagaimana-harga-awning-dikira-di-malaysia) kami menerangkan bagaimana input ini diterjemahkan menjadi sebut harga berperincian khusus projek, dan mengapa kami tidak memberikan kadar generik tanpa melihat tapak.
+
+## Soalan lazim
+
+### Patut saya baiki atau tukar awning?
+
+Ia bergantung pada umur dan kerosakan penutup berbanding keadaan rangka. Isu terpencil — garisan pengedap gagal, satu panel rosak, longkang tersumbat — biasanya boleh dibaiki. Lembaran yang menguning dan rapuh, rangka berkarat atau melendut, bumbung mendatar yang bertakung, atau kebocoran berulang selepas pembaikan menunjukkan penukaran. Kami memeriksa dan boleh menyebut harga kedua-dua pilihan apabila kedua-duanya munasabah.
+
+### Bolehkah rangka sedia ada diguna semula dengan lembaran baharu?
+
+Hanya jika pemeriksaan mengesahkan rangka kukuh: kakisan permukaan terhad, sambungan padu, kecerunan boleh kerja dan pengancing dinding dipercayai. Jika semakan ini lulus, penutupan semula boleh dibincangkan; jika gagal, penggantian rangka ialah cadangan yang jujur.
+
+### Mengapa awning saya bocor setiap kali hujan lebat?
+
+Kebocoran biasanya berpunca daripada sendi dan pengedap, kerosakan lembaran, pengancing atau saliran, bukannya bahan lembaran itu sendiri. Hujan lebat juga mendedahkan kecerunan mendatar dan longkang melimpah yang tidak kelihatan ketika hujan ringan. [Panduan penyelenggaraan](/ms/blog/penyelenggaraan-awning-bocor-karat-air-bertakung) kami menerangkan laluan kebocoran yang biasa.
+
+### Perlukah awning lama dibongkar dahulu sebelum yang baharu dipasang?
+
+Awning lama biasanya dibongkar sebagai sebahagian skop penggantian, dengan pengalihan dan pelupusan dinyatakan dalam sebut harga. Melakukannya dalam kerja yang sama membolehkan titik pengancing rangka baharu dan saliran disusun dengan betul.
+
+### Berapa kos penggantian awning di Malaysia?
+
+Penggantian disebut harga mengikut projek. Pemboleh ubah kos termasuk kawasan lindungan, pilihan bahan, keadaan rangka, ketinggian dan akses, pembetulan saliran serta skop pembongkaran. Hantar foto dan ukuran di WhatsApp untuk sebut harga berperincian — kami tidak menerbitkan kadar generik.
+
+### Awning saya di kondominium — perlukah kelulusan untuk menukar?
+
+Semak dengan JMB, MC atau pejabat pengurusan anda sebelum menjadualkan kerja; penggantian yang mengubah penampilan atau unjuran lazimnya tertakluk pada peraturan. Kami boleh menyediakan skop dan spesifikasi untuk menyokong perbincangan, tetapi kelulusan mesti disahkan dengan pengurusan atau pihak berkuasa yang berkaitan.
+
+## Dapatkan pemeriksaan awning lama anda
+
+Beritahu kami bahan awning, apa yang bermasalah dan lokasi anda. Hantar foto di WhatsApp dan KL Servis Rumah akan menilai sama ada pembaikan atau penggantian ialah skop yang tepat, lalu menyediakan sebut harga berperincian khusus projek — termasuk pembongkaran dan pelupusan jika diperlukan. [Chat dengan pasukan kami](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah!%20Saya%20ingin%20nasihat%20untuk%20menukar%20awning%20lama%20yang%20bocor.)`
+    },
+    zh: {
+      slug: "geng-huan-jiu-yu-peng-jian-cha",
+      title: "更换旧雨棚或漏水雨棚：需要检查什么",
+      category: "Awning",
+      excerpt: "旧雨棚什么时候该换？需要更换的迹象、检查应覆盖什么、骨架能否复用、排水修正、拆除清运范围，以及报价应提供的资料。",
+      metaTitle: "更换旧雨棚或漏水雨棚：检查清单",
+      metaDesc: "马来西亚更换旧雨棚或漏水雨棚：该换的迹象、骨架复用检查、板材老化、排水修正、拆除与清运范围，以及报价所需资料。",
+      content: `雨棚漏水不一定需要整棚更换——而很旧的雨棚也未必已经漏水。正确的决定来自三个部位的状况：屋面覆盖物、骨架和排水。本文介绍在马来西亚为雨棚决定"维修还是更换"之前值得做的检查。KL Servis Rumah 在吉隆坡与雪兰莪全域通过[雨棚安装](/zh/services/awning-installation)服务提供[雨棚更换与维修](/zh/services/awning-installation/awning-replacement-and-repair)，经检查后按项目逐一报价。
+
+## 简要答案
+
+- 当板材发黄、变脆或开裂、骨架锈蚀或下垂、接缝补胶后仍反复漏水、或屋面变平积水时，更换才是现实的选择。
+- 不要假定旧骨架能承受新屋面——锈蚀、变形和固定件状况必须先经检查，才能承诺复用。
+- 修原因，不只修覆盖物：坡度、天沟、落水管与墙体泛水决定新屋面下方能否保持干燥。
+- 确保报价中明确写明旧雨棚的拆除与清运。
+
+## 需要更换的现实迹象
+
+部分损耗可以维修；以下情况通常说明更换是更合理的范围：
+
+- **聚碳酸酯板材发黄、变脆或在固定孔与接缝处开裂。**老化板材抗冲击性下降，补一处裂缝往往只是把漏水赶到下一处。
+- **金属板边缘、固定孔或搭接处锈穿**，尤其是背面无法保养的部位。
+- **骨架锈蚀**——横梁、檩条或立柱根部起皮锈蚀，或焊缝、接头处渗出锈水。
+- **板材下垂或坡度变平**，积水无法排走。在同样平坦的几何上换新板材，照样积水。
+- **补胶多次后漏水依旧**，说明接缝、搭接或排水在设计层面就有问题。
+- **墙体固定点晃动**、锚栓松动或骨架不直。
+- **装修变更**——想换材料、加大覆盖，或旧雨棚已不适合该空间。
+
+还不确定的话，我们的[漏水、锈蚀与积水保养指南](/zh/bo-ke/yu-peng-bao-yang-lou-shui-sheng-xiu-ji-shui)说明了安全检查方法，以及哪些症状是维修能现实解决的。
+
+## 决定之前：你能做的安全检查
+
+请留在地面。不要爬上雨棚或把梯子靠在板材上——面板和固定件可能比看上去更脆弱。在安全位置你可以记录：雨后哪里滴水或留渍、可见的锈蚀或裂缝、屋面是否积水、天沟是否溢流、起风时骨架是否晃动。给整个雨棚、最差的部位和固定点拍照。这些照片也正是报价所需，因此（如有需要）的现场检查可以把精力放在结构上而非基础信息上。
+
+## 更换前的检查应覆盖什么
+
+一次到位的检查——无论基于你的照片还是现场——应把雨棚当作一个系统来看：
+
+- **屋面覆盖物：**板材类型与 profile、搭接、固定垫圈、密封胶线、脆化或锈蚀。
+- **骨架：**材料与构件尺寸对照跨距、接头与根部锈蚀、焊缝或连接状况、直线度与可见变形。
+- **打入建筑的固定件：**墙体与横梁上的锚栓、传力到什么结构、旧固定孔的状况。
+- **排水：**坡度方向、天沟与落水管状况、水实际排向何处——参见我们关于[天沟堵塞与溢流](/zh/problems/clogged-gutter-leaking)的说明。
+- **下方区域：**渗漏已造成的影响，以及拆除作业的出入条件。
+
+## 旧骨架能复用吗？
+
+有时状况良好的钢骨架可以保留并直接换新板材——但这个结论必须来自检查，而不是一厢情愿。只有骨架结构完好、锈蚀仅限表面并已处理、连接牢固、几何形状能形成可用坡度、墙体固定依然可靠时，复用才合理。把已经削弱的骨架留在新屋面下面，等于把大部分花费浪费掉：新板材会跟着旧结构一起出问题。
+
+如果骨架需要更换，新钢骨架应按跨距制作，并做防锈底漆加耐候或粉末喷涂饰面——这与我们[焊接与金属制作](/zh/services/welding)团队制作雨棚和车棚骨架的标准一致。当可见锈蚀或下垂时，检查重点应先放在骨架上；仅凭照片很少能定复用问题。
+
+## 为更换选择板材
+
+更换也是修正原先材料问题的机会。如果透明聚碳酸酯让车棚很热，常会改考虑茶色聚碳酸酯、ACP 或带隔热的金属 profile；如果薄金属板大雨时很吵，其他 profile 或材料可能更合适；如果布艺篷已经朽坏，可以考虑固定板材会如何改变空间。我们的[聚碳酸酯 vs 金属瓦 vs ACP 对比](/zh/bo-ke/ju-tan-suan-zhi-jin-shu-wa-yu-acp-yu-peng-bi-jiao)讲了取舍，[聚碳酸酯](/zh/services/awning-installation/polycarbonate-awning)、[金属瓦](/zh/services/awning-installation/metal-deck-awning)与[ACP](/zh/services/awning-installation/aluminium-composite-acp-awning)材料页介绍了各系统。阳台与露台请看[阳台露台雨棚指南](/zh/bo-ke/yang-tai-lu-tai-yu-peng-xuan-ze-zhi-nan)。
+
+## 修排水，不只换覆盖物
+
+很多"雨棚漏水"的工程其实是排水工程。换屋面时应恢复或改善坡度、重做墙体泛水密封，并加装或改配天沟与落水管，把水引走而不是漫过边缘冲进车棚或后院。如果旧屋面因为太平而积水，就在更换时纠正几何——否则新板材会在同样的位置积水。
+
+## 拆除、清运与工期
+
+报价应明确写明旧雨棚的拆卸、清运与处理已包含在内，并封闭墙面上留下的旧固定孔。在高处拆除锈蚀的旧结构是实实在在的工作——需要安全的出入条件，以及清楚哪些部件可以松动而不导致骨架坠落的人手。
+
+工期方面，直接的更换在材料备齐后通常一天内可以完成，而较大或需定制的更换需要制作周期加一天或数天安装。我们会在报价中确认实际工期，而不是提前承诺固定时间。
+
+## 更换报价要提供什么
+
+- 你的位置与物业类型（有地或分层）。
+- 地面拍摄的整个雨棚照片、最差部位特写、固定点照片，以及天沟/落水管照片。
+- 大约宽度与悬挑，以及雨棚离地高度。
+- 现有屋面材料，以及对更换材料的偏好。
+- 漏水或损坏历史——何时开始、尝试过什么。
+- 是否需要包含拆除与清运（通常是）。
+- 适用的管理处或市政规则。
+
+我们的[雨棚价格指南](/zh/bo-ke/yu-peng-jia-ge-ru-he-ji-suan-ma-lai-xi-ya)解释了这些资料如何转化为针对项目的分项报价，以及为什么我们不凭空给出通用价格。
+
+## 常见问题
+
+### 我应该维修还是更换雨棚？
+
+取决于覆盖物的年龄与损坏程度对照骨架状况。孤立问题——一条失效的密封胶线、一块损坏的板材、堵塞的天沟——通常可以维修。发黄变脆的板材、锈蚀或下垂的骨架、积水变平的屋面、或维修后反复漏水，则指向更换。我们会检查并在两种方案都合理时分别报价。
+
+### 可以复用现有骨架只换新板材吗？
+
+只有检查确认骨架完好时才可以：锈蚀仅限表面、连接牢固、坡度可用、墙体固定可靠。检查通过可以商议换板；不通过，诚实的建议就是更换骨架。
+
+### 为什么我的雨棚每到大雨就漏？
+
+漏水通常来自接缝与密封胶、板材损坏、固定件或排水，而不是板材本身。大雨还会暴露小雨从不显现的平坡度和溢流天沟。我们的[保养指南](/zh/bo-ke/yu-peng-bao-yang-lou-shui-sheng-xiu-ji-shui)解释了常见漏水路径。
+
+### 需要先拆掉旧雨棚再装新的吗？
+
+旧雨棚通常在更换范围内一并拆除，拆除与清运会写入报价。同一项工程内完成，新骨架的固定点与排水才能正确布置。
+
+### 在马来西亚更换雨棚要多少钱？
+
+更换按项目报价。成本因素包括覆盖面积、材料选择、骨架状况、高度与出入条件、排水修正以及拆除范围。在 WhatsApp 发送照片和尺寸获取分项报价——我们不发布通用价格。
+
+### 雨棚在共管公寓——更换需要批准吗？
+
+安排施工前先咨询你的 JMB、MC 或管理处；改变外观或悬挑的更换通常受规定约束。我们可以准备范围与规格支持沟通，但批准必须与管理处或相关当局确认。
+
+## 让我们检查你的旧雨棚
+
+告诉我们雨棚的材料、出了什么问题以及你的位置。在 WhatsApp 发送照片，KL Servis Rumah 会评估维修还是更换更合理，并准备包括拆除清运（如需要）的针对性分项报价。[与我们的团队聊聊](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah%EF%BC%8C%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2%E6%9B%B4%E6%8D%A2%E6%97%A7%E9%9B%A8%E6%A3%9A%E3%80%82)`
+    }
   }
 };
 

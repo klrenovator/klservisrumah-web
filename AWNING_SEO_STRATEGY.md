@@ -185,7 +185,7 @@ All implemented via `config/topical-authority-map.ts` (validated at build time)
 and the data-driven related/problems/areas/blogs components — no hardcoded
 URLs invented.
 
-## J. Supporting Content Cluster (8+ recommended posts; posts 1–6 published 2026-08-27)
+## J. Supporting Content Cluster (8+ recommended posts; ALL 8 PUBLISHED 2026-08-27 — cluster complete)
 
 | # | Topic | Intent | Primary KW | Secondary KWs | Suggested H1 | Key sections | Links to pillar |
 |---|---|---|---|---|---|---|
@@ -195,8 +195,8 @@ URLs invented.
 | 4 | Awning Cost in Malaysia (factors, no fabricated prices) | commercial | awning cost Malaysia | harga awning, awning price per sqft | How Awning Pricing Works in Malaysia | size, material, frame, access, removal; quote checklist | quote section | ✅ **PUBLISHED** 2026-08-27 — `/blog/how-awning-pricing-works-malaysia` + native MS/ZH twins |
 | 5 | Awning Maintenance: Leaks, Rust, Pooling | informational | awning leaking | awning repair, awning rust, water pooling | Awning Problems: Leaks, Rust and Water Pooling | causes, safe ground-level checks, leak paths, drainage, repair vs replacement, quote inputs | replacement sub-page | ✅ **PUBLISHED** 2026-08-27 — `/blog/awning-maintenance-leaks-rust-water-pooling` + native MS `/ms/blog/penyelenggaraan-awning-bocor-karat-air-bertakung` + native ZH `/zh/bo-ke/yu-peng-bao-yang-lou-shui-sheng-xiu-ji-shui`; quote-safe (no fabricated maintenance interval, lifespan, price or warranty); links to pillar + replacement sub-service + welding + clogged-gutter/rusting-metal-grille problem nodes + pricing guide; wired into the awning BLOG pool and replacement specialty relatedBlogs; validator 212→213 |
 | 6 | Retractable vs Fixed Awning | commercial | retractable vs fixed awning | motorised awning, fabric awning | Retractable vs Fixed Awnings: Which Fits Your Home? | balcony/patio vs porch, rain/wind care, light/heat, maintenance, strata and quote checklist | canvas/fabric + balcony/patio/window sub-pages | ✅ **PUBLISHED** 2026-08-27 — `/blog/retractable-vs-fixed-awning-malaysia` + native MS `/ms/blog/awning-boleh-tarik-vs-tetap-malaysia` + native ZH `/zh/bo-ke/shen-suo-yu-peng-vs-gu-ding-yu-peng`; application-first fixed/retractable comparison with motorised availability kept conditional; quote-safe (no fabricated wind ratings, prices, warranties or supplier availability); wired into the awning BLOG pool, canvas/fabric specialty and balcony/patio/window specialty; validator 213→214 |
-| 7 | Choosing an Awning for Balcony / Patio | informational/commercial | balcony awning Malaysia | patio awning, condo awning strata | Choosing an Awning for a Balcony or Patio | strata/JMB rules, materials, light vs shade | balcony sub-page |
-| 8 | Replacing an Old or Leaking Awning | transactional | replace old awning | awning replacement KL, tukar awning | Replacing an Old or Leaking Awning: What to Check | frame reuse, sheet life, drainage fix, removal | replacement sub-page |
+| 7 | Choosing an Awning for Balcony / Patio | informational/commercial | balcony awning Malaysia | patio awning, condo awning strata | Choosing an Awning for a Balcony or Patio | strata/JMB rules, materials, light vs shade | balcony sub-page | ✅ **PUBLISHED** 2026-08-27 — `/blog/balcony-patio-awning-guide-malaysia` + native MS `/ms/blog/panduan-awning-balkoni-patio-malaysia` + native ZH `/zh/bo-ke/yang-tai-lu-tai-yu-peng-xuan-ze-zhi-nan`; strata/JMB-first guide (rules before catalogue), space-by-space framing (condo balcony / landed patio / windows-doors / drying yard), light-vs-shade material table, elevated-floor drainage + waterproofing care, fixed vs retractable with motorised availability kept conditional, quote checklist; quote-safe (no fabricated prices, wind ratings, cooling figures or approval guarantees); wired into the awning BLOG pool + balcony-patio-and-window specialty; validator 214→215 |
+| 8 | Replacing an Old or Leaking Awning | transactional | replace old awning | awning replacement KL, tukar awning | Replacing an Old or Leaking Awning: What to Check | frame reuse, sheet life, drainage fix, removal | replacement sub-page | ✅ **PUBLISHED** 2026-08-27 — `/blog/replacing-old-leaking-awning-malaysia` + native MS `/ms/blog/tukar-awning-lama-bocor-malaysia` + native ZH `/zh/bo-ke/geng-huan-jiu-yu-peng-jian-cha`; replacement-decision guide differentiated from post 5: ageing signs, safe checks, inspection scope, frame-reuse cautions (inspection-verified; new steel per the anti-rust-primer + weather-resistant-finish welding line), re-sheet material choices, drainage fix at replacement, removal/disposal scope, timing per service FAQ wording; quote-safe (no fabricated lifespans, prices or warranties); wired into the awning BLOG pool + awning-replacement-and-repair specialty; validator 215→216 |
 
 Each post follows the site's existing blog data architecture (`config/blog-data*`)
 and should add an awning link in the topical map BLOG pool when published.
@@ -338,7 +338,7 @@ content (mahligaiidaman, lemon8 contractor posts).
 - [x] HTTP 200 smoke test EN/MS/ZH hub + sub-service; title/meta/canonical/
       FAQPage(15)/HowTo(6)/Service schema verified; sitemap & services index
       include the page
-- [x] Supporting blog cluster — 6 of 8 published (posts 1–6; §J); posts 7–8 pending
+- [x] Supporting blog cluster — **8 of 8 published (posts 1–8; §J) — cluster complete 2026-08-27**
 - [ ] Real project photography — pending business supply, section L
 - [ ] Optional WhatsApp pre-filled quote-request message template
 

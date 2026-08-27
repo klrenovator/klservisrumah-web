@@ -553,7 +553,7 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Uneven Concrete Subfloor Before Flooring Installation — https://www.klservisrumah.my/problems/uneven-floor-subfloor-leveling
 - Masonry Wall Settlement Cracks & Extension Separation — https://www.klservisrumah.my/problems/wall-cracks-settlement-masonry
 
-## Guides & Articles (214)
+## Guides & Articles (216)
 - 5 Tips For Choosing Modern Home Paint Colors in Malaysia — https://www.klservisrumah.my/blog/5-tips-choosing-paint-colors-malaysia
 - How To Fix A Leaking Bathroom Ceiling Without Hacking Tiles — https://www.klservisrumah.my/blog/how-to-fix-leaking-ceiling-without-tile-hacking
 - When to Repaint Your House in Malaysia (Signs, Frequency & Budget) — https://www.klservisrumah.my/blog/when-to-repaint-your-house-malaysia
@@ -598,6 +598,8 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - How to Choose the Right Awning for Your Malaysian Home — https://www.klservisrumah.my/blog/how-to-choose-right-awning-malaysia
 - Awning Maintenance: Leaks, Rust & Water Pooling — https://www.klservisrumah.my/blog/awning-maintenance-leaks-rust-water-pooling
 - Retractable vs Fixed Awnings: Which Fits Your Home? — https://www.klservisrumah.my/blog/retractable-vs-fixed-awning-malaysia
+- Choosing an Awning for a Balcony or Patio in Malaysia — https://www.klservisrumah.my/blog/balcony-patio-awning-guide-malaysia
+- Replacing an Old or Leaking Awning: What to Check — https://www.klservisrumah.my/blog/replacing-old-leaking-awning-malaysia
 - Aircond, Water Heater & Oven Points in KL and Selangor — https://www.klservisrumah.my/blog/aircond-water-heater-and-oven-point
 - Aluminium Sliding Window Installation in KL & Selangor — https://www.klservisrumah.my/blog/aluminium-sliding-window-kl
 - Autogate Motor Replacement & Service in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/autogate-motor-replacement-service-kl
@@ -849,5 +851,5 @@ KL Servis Rumah publishes fair, upfront pricing benchmarked against the Klang Va
 
 ## Scale
 - 29 services · 221 sub-services
-- 37 area pages · 86 problem pages · 214 articles
-- 4,730 indexable pages listed in the sitemap
+- 37 area pages · 86 problem pages · 216 articles
+- 4,736 indexable pages listed in the sitemap
