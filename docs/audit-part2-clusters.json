@@ -1,0 +1,568 @@
+{
+  "/answers/<slug> (EN)": {
+    "n": 29,
+    "meanPairwiseJaccard": 0.202,
+    "distinctSentences": 703,
+    "sentencesSharedBy50pctPlus": 7,
+    "sentencesSharedByAll": 7,
+    "pctShared50": 1,
+    "pctSharedAll": 1,
+    "exampleSharedAll": [
+      "WhatsApp Dispatch Desk Same-day slots available in KL & Selangor.",
+      "WhatsApp us for an instant, transparent quote!",
+      "That means the right method depends on surface condition, access, safety requirements, and whether water or st",
+      "The safest approach is to shortlist the likely cause, collect clear photos, confirm the property type, and req",
+      "KL Servis Rumah confirms scope before work begins and avoids arbitrary pricing.",
+      "Send your photos, area, and preferred timing."
+    ],
+    "exampleShared50": []
+  },
+  "/brands/<slug> (EN)": {
+    "n": 32,
+    "meanPairwiseJaccard": 0.623,
+    "distinctSentences": 189,
+    "sentencesSharedBy50pctPlus": 17,
+    "sentencesSharedByAll": 13,
+    "pctShared50": 9,
+    "pctSharedAll": 6.9,
+    "exampleSharedAll": [
+      "WhatsApp Dispatch Desk Same-day slots available in KL & Selangor.",
+      "WhatsApp us for an instant, transparent quote!",
+      "Key takeaways Compatibility with the surface Correct preparation method Warranty and care considerations No cl",
+      "That means the right method depends on surface condition, access, safety requirements, and whether water or st",
+      "The safest approach is to shortlist the likely cause, collect clear photos, confirm the property type, and req",
+      "KL Servis Rumah confirms scope before work begins and avoids arbitrary pricing."
+    ],
+    "exampleShared50": [
+      "From RM 129 with a 1-month workmanship warranty.",
+      "More from this category Related Aircon Service, Repair & Installation resources Aircon Service, Repair & Insta",
+      "Basic Servicing Filter and coil cleaning, drainage check, gas pressure and cooling test for wall-mounted units",
+      "Chemical Wash Pressure chemical wash of coils and blower without full dismantling, from RM 156."
+    ]
+  },
+  "/commercial/<slug> (EN)": {
+    "n": 29,
+    "meanPairwiseJaccard": 0.543,
+    "distinctSentences": 251,
+    "sentencesSharedBy50pctPlus": 13,
+    "sentencesSharedByAll": 13,
+    "pctShared50": 5.2,
+    "pctSharedAll": 5.2,
+    "exampleSharedAll": [
+      "WhatsApp Dispatch Desk Same-day slots available in KL & Selangor.",
+      "WhatsApp us for an instant, transparent quote!",
+      "Key takeaways After-hours or weekend scheduling Clear scope documentation Material and safety planning Fast Wh",
+      "That means the right method depends on surface condition, access, safety requirements, and whether water or st",
+      "The safest approach is to shortlist the likely cause, collect clear photos, confirm the property type, and req",
+      "KL Servis Rumah confirms scope before work begins and avoids arbitrary pricing."
+    ],
+    "exampleShared50": []
+  },
+  "/compare/<slug> (EN)": {
+    "n": 18,
+    "meanPairwiseJaccard": 0.699,
+    "distinctSentences": 103,
+    "sentencesSharedBy50pctPlus": 13,
+    "sentencesSharedByAll": 13,
+    "pctShared50": 12.6,
+    "pctSharedAll": 12.6,
+    "exampleSharedAll": [
+      "WhatsApp Dispatch Desk Same-day slots available in KL & Selangor.",
+      "WhatsApp us for an instant, transparent quote!",
+      "Key takeaways Best-use scenarios Cost and disruption comparison Durability considerations When to call a profe",
+      "That means the right method depends on surface condition, access, safety requirements, and whether water or st",
+      "The safest approach is to shortlist the likely cause, collect clear photos, confirm the property type, and req",
+      "KL Servis Rumah confirms scope before work begins and avoids arbitrary pricing."
+    ],
+    "exampleShared50": []
+  },
+  "/near-me/<svc> (EN)": {
+    "n": 29,
+    "meanPairwiseJaccard": 0.599,
+    "distinctSentences": 1136,
+    "sentencesSharedBy50pctPlus": 5,
+    "sentencesSharedByAll": 5,
+    "pctShared50": 0.4,
+    "pctSharedAll": 0.4,
+    "exampleSharedAll": [
+      "WhatsApp Dispatch Desk Same-day slots available in KL & Selangor.",
+      "WhatsApp us for an instant, transparent quote!",
+      "Use the locator helper or choose your area below to reach a local landing page.",
+      "Nearest dispatch helper Use your browser location to prepare a more accurate WhatsApp dispatch request.",
+      "Other services you might need Browse our other home services across KL & Selangor — fixed pricing and same-day"
+    ],
+    "exampleShared50": []
+  },
+  "/problems/<p> (EN)": {
+    "n": 74,
+    "meanPairwiseJaccard": 0.087,
+    "distinctSentences": 692,
+    "sentencesSharedBy50pctPlus": 3,
+    "sentencesSharedByAll": 3,
+    "pctShared50": 0.4,
+    "pctSharedAll": 0.4,
+    "exampleSharedAll": [
+      "Review service scope, pricing, warranty, and process before booking.",
+      "Send photos and a short video if safe.",
+      "We confirm a fixed-price quote before dispatch."
+    ],
+    "exampleShared50": []
+  },
+  "/process/<slug> (EN)": {
+    "n": 29,
+    "meanPairwiseJaccard": 0.182,
+    "distinctSentences": 674,
+    "sentencesSharedBy50pctPlus": 7,
+    "sentencesSharedByAll": 7,
+    "pctShared50": 1,
+    "pctSharedAll": 1,
+    "exampleSharedAll": [
+      "WhatsApp Dispatch Desk Same-day slots available in KL & Selangor.",
+      "WhatsApp us for an instant, transparent quote!",
+      "That means the right method depends on surface condition, access, safety requirements, and whether water or st",
+      "The safest approach is to shortlist the likely cause, collect clear photos, confirm the property type, and req",
+      "KL Servis Rumah confirms scope before work begins and avoids arbitrary pricing.",
+      "Send your photos, area, and preferred timing."
+    ],
+    "exampleShared50": []
+  },
+  "/residential/<slug> (EN)": {
+    "n": 29,
+    "meanPairwiseJaccard": 0.537,
+    "distinctSentences": 251,
+    "sentencesSharedBy50pctPlus": 13,
+    "sentencesSharedByAll": 13,
+    "pctShared50": 5.2,
+    "pctSharedAll": 5.2,
+    "exampleSharedAll": [
+      "WhatsApp Dispatch Desk Same-day slots available in KL & Selangor.",
+      "WhatsApp us for an instant, transparent quote!",
+      "Key takeaways Furniture and floor protection Condo/JMB coordination Transparent fixed-price quotes Warranty-ba",
+      "That means the right method depends on surface condition, access, safety requirements, and whether water or st",
+      "The safest approach is to shortlist the likely cause, collect clear photos, confirm the property type, and req",
+      "KL Servis Rumah confirms scope before work begins and avoids arbitrary pricing."
+    ],
+    "exampleShared50": []
+  },
+  "/seasonal/<slug> (EN)": {
+    "n": 8,
+    "meanPairwiseJaccard": 0.842,
+    "distinctSentences": 53,
+    "sentencesSharedBy50pctPlus": 13,
+    "sentencesSharedByAll": 13,
+    "pctShared50": 24.5,
+    "pctSharedAll": 24.5,
+    "exampleSharedAll": [
+      "WhatsApp Dispatch Desk Same-day slots available in KL & Selangor.",
+      "WhatsApp us for an instant, transparent quote!",
+      "Key takeaways Book early before peak weeks Prioritize leaks before repainting Protect furniture and flooring C",
+      "That means the right method depends on surface condition, access, safety requirements, and whether water or st",
+      "The safest approach is to shortlist the likely cause, collect clear photos, confirm the property type, and req",
+      "KL Servis Rumah confirms scope before work begins and avoids arbitrary pricing."
+    ],
+    "exampleShared50": []
+  },
+  "/services/<svc>/cost (EN)": {
+    "n": 29,
+    "meanPairwiseJaccard": 0.315,
+    "distinctSentences": 354,
+    "sentencesSharedBy50pctPlus": 7,
+    "sentencesSharedByAll": 7,
+    "pctShared50": 2,
+    "pctSharedAll": 2,
+    "exampleSharedAll": [
+      "Use this guide to understand fair Klang Valley pricing before requesting a fixed quote.",
+      "Final cost depends on measurements, access, materials and the actual site condition.",
+      "We confirm these points before work starts so the quote is clear and approved first.",
+      "Send photos, measurements and your area.",
+      "We confirm the itemised fixed-price quote before work begins.",
+      "We triage the risk, explain immediate steps, and confirm a fixed emergency quote before permanent work begins."
+    ],
+    "exampleShared50": []
+  },
+  "/services/<svc>/emergency (EN)": {
+    "n": 29,
+    "meanPairwiseJaccard": 0.727,
+    "distinctSentences": 61,
+    "sentencesSharedBy50pctPlus": 3,
+    "sentencesSharedByAll": 3,
+    "pctShared50": 4.9,
+    "pctSharedAll": 4.9,
+    "exampleSharedAll": [
+      "We triage the risk, explain immediate steps, and confirm a fixed emergency quote before permanent work begins.",
+      "0 1 Stop or isolate the source if safe 0 2 Send photos and your location 0 3 Approve the quote before repair s",
+      "Kuala Lumpur Petaling Jaya Subang Jaya Puchong Shah Alam Klang Cheras Ampang Kajang Mont Kiara Bangsar Damansa"
+    ],
+    "exampleShared50": []
+  },
+  "/top/<slug> (EN)": {
+    "n": 10,
+    "meanPairwiseJaccard": 0.81,
+    "distinctSentences": 63,
+    "sentencesSharedBy50pctPlus": 13,
+    "sentencesSharedByAll": 13,
+    "pctShared50": 20.6,
+    "pctSharedAll": 20.6,
+    "exampleSharedAll": [
+      "WhatsApp Dispatch Desk Same-day slots available in KL & Selangor.",
+      "WhatsApp us for an instant, transparent quote!",
+      "Key takeaways Transparent pricing Workmanship warranty Material quality Clean site handover Relevant local exp",
+      "That means the right method depends on surface condition, access, safety requirements, and whether water or st",
+      "The safest approach is to shortlist the likely cause, collect clear photos, confirm the property type, and req",
+      "KL Servis Rumah confirms scope before work begins and avoids arbitrary pricing."
+    ],
+    "exampleShared50": []
+  },
+  "areaVsServicePage (mean)": [
+    {
+      "svc": "aircon",
+      "n": 6,
+      "meanVsService": 0.128,
+      "min": 0.127,
+      "max": 0.129
+    },
+    {
+      "svc": "autogate",
+      "n": 6,
+      "meanVsService": 0.082,
+      "min": 0.082,
+      "max": 0.082
+    },
+    {
+      "svc": "awning-installation",
+      "n": 6,
+      "meanVsService": 0.103,
+      "min": 0.103,
+      "max": 0.104
+    },
+    {
+      "svc": "bathroom-renovation",
+      "n": 6,
+      "meanVsService": 0.143,
+      "min": 0.143,
+      "max": 0.144
+    },
+    {
+      "svc": "carpentry",
+      "n": 6,
+      "meanVsService": 0.116,
+      "min": 0.115,
+      "max": 0.116
+    },
+    {
+      "svc": "cctv",
+      "n": 6,
+      "meanVsService": 0.084,
+      "min": 0.083,
+      "max": 0.084
+    },
+    {
+      "svc": "ceiling-fan",
+      "n": 6,
+      "meanVsService": 0.081,
+      "min": 0.08,
+      "max": 0.081
+    },
+    {
+      "svc": "ceiling",
+      "n": 6,
+      "meanVsService": 0.102,
+      "min": 0.102,
+      "max": 0.103
+    },
+    {
+      "svc": "door",
+      "n": 6,
+      "meanVsService": 0.121,
+      "min": 0.12,
+      "max": 0.122
+    },
+    {
+      "svc": "electrical",
+      "n": 6,
+      "meanVsService": 0.13,
+      "min": 0.129,
+      "max": 0.13
+    },
+    {
+      "svc": "epoxy-flooring",
+      "n": 6,
+      "meanVsService": 0.078,
+      "min": 0.078,
+      "max": 0.079
+    },
+    {
+      "svc": "flooring",
+      "n": 6,
+      "meanVsService": 0.118,
+      "min": 0.118,
+      "max": 0.119
+    },
+    {
+      "svc": "glass-aluminium",
+      "n": 6,
+      "meanVsService": 0.129,
+      "min": 0.128,
+      "max": 0.13
+    },
+    {
+      "svc": "handyman",
+      "n": 6,
+      "meanVsService": 0.107,
+      "min": 0.107,
+      "max": 0.108
+    },
+    {
+      "svc": "house-renovation",
+      "n": 6,
+      "meanVsService": 0.159,
+      "min": 0.158,
+      "max": 0.159
+    },
+    {
+      "svc": "kitchen-cabinet",
+      "n": 6,
+      "meanVsService": 0.085,
+      "min": 0.085,
+      "max": 0.086
+    },
+    {
+      "svc": "kitchen-renovation",
+      "n": 6,
+      "meanVsService": 0.137,
+      "min": 0.137,
+      "max": 0.138
+    },
+    {
+      "svc": "lighting",
+      "n": 6,
+      "meanVsService": 0.082,
+      "min": 0.081,
+      "max": 0.082
+    },
+    {
+      "svc": "locksmith",
+      "n": 6,
+      "meanVsService": 0.087,
+      "min": 0.087,
+      "max": 0.087
+    },
+    {
+      "svc": "painting",
+      "n": 6,
+      "meanVsService": 0.128,
+      "min": 0.128,
+      "max": 0.129
+    },
+    {
+      "svc": "plaster-ceiling",
+      "n": 6,
+      "meanVsService": 0.133,
+      "min": 0.132,
+      "max": 0.134
+    },
+    {
+      "svc": "plumbing",
+      "n": 6,
+      "meanVsService": 0.127,
+      "min": 0.126,
+      "max": 0.128
+    },
+    {
+      "svc": "roof-repair",
+      "n": 6,
+      "meanVsService": 0.111,
+      "min": 0.11,
+      "max": 0.111
+    },
+    {
+      "svc": "skim-coat",
+      "n": 6,
+      "meanVsService": 0.076,
+      "min": 0.076,
+      "max": 0.077
+    },
+    {
+      "svc": "tiling",
+      "n": 6,
+      "meanVsService": 0.127,
+      "min": 0.127,
+      "max": 0.128
+    },
+    {
+      "svc": "water-heater",
+      "n": 6,
+      "meanVsService": 0.086,
+      "min": 0.086,
+      "max": 0.087
+    },
+    {
+      "svc": "waterproofing",
+      "n": 6,
+      "meanVsService": 0.135,
+      "min": 0.134,
+      "max": 0.136
+    },
+    {
+      "svc": "welding",
+      "n": 6,
+      "meanVsService": 0.131,
+      "min": 0.13,
+      "max": 0.132
+    },
+    {
+      "svc": "window-repair",
+      "n": 6,
+      "meanVsService": 0.119,
+      "min": 0.118,
+      "max": 0.12
+    }
+  ],
+  "areaPagesWithinService (mean)": [
+    {
+      "svc": "aircon",
+      "meanPairwiseJaccard": 0.654,
+      "pctShared50": 9.2
+    },
+    {
+      "svc": "autogate",
+      "meanPairwiseJaccard": 0.641,
+      "pctShared50": 7.7
+    },
+    {
+      "svc": "awning-installation",
+      "meanPairwiseJaccard": 0.669,
+      "pctShared50": 8.7
+    },
+    {
+      "svc": "bathroom-renovation",
+      "meanPairwiseJaccard": 0.652,
+      "pctShared50": 9.3
+    },
+    {
+      "svc": "carpentry",
+      "meanPairwiseJaccard": 0.64,
+      "pctShared50": 9
+    },
+    {
+      "svc": "cctv",
+      "meanPairwiseJaccard": 0.645,
+      "pctShared50": 8.3
+    },
+    {
+      "svc": "ceiling-fan",
+      "meanPairwiseJaccard": 0.635,
+      "pctShared50": 7.1
+    },
+    {
+      "svc": "ceiling",
+      "meanPairwiseJaccard": 0.635,
+      "pctShared50": 7.5
+    },
+    {
+      "svc": "door",
+      "meanPairwiseJaccard": 0.651,
+      "pctShared50": 9
+    },
+    {
+      "svc": "electrical",
+      "meanPairwiseJaccard": 0.643,
+      "pctShared50": 8.7
+    },
+    {
+      "svc": "epoxy-flooring",
+      "meanPairwiseJaccard": 0.635,
+      "pctShared50": 7.8
+    },
+    {
+      "svc": "flooring",
+      "meanPairwiseJaccard": 0.643,
+      "pctShared50": 8.6
+    },
+    {
+      "svc": "glass-aluminium",
+      "meanPairwiseJaccard": 0.646,
+      "pctShared50": 8.6
+    },
+    {
+      "svc": "handyman",
+      "meanPairwiseJaccard": 0.639,
+      "pctShared50": 7.8
+    },
+    {
+      "svc": "house-renovation",
+      "meanPairwiseJaccard": 0.656,
+      "pctShared50": 9.9
+    },
+    {
+      "svc": "kitchen-cabinet",
+      "meanPairwiseJaccard": 0.638,
+      "pctShared50": 7.2
+    },
+    {
+      "svc": "kitchen-renovation",
+      "meanPairwiseJaccard": 0.646,
+      "pctShared50": 8.3
+    },
+    {
+      "svc": "lighting",
+      "meanPairwiseJaccard": 0.644,
+      "pctShared50": 7.8
+    },
+    {
+      "svc": "locksmith",
+      "meanPairwiseJaccard": 0.644,
+      "pctShared50": 8.3
+    },
+    {
+      "svc": "painting",
+      "meanPairwiseJaccard": 0.646,
+      "pctShared50": 9
+    },
+    {
+      "svc": "plaster-ceiling",
+      "meanPairwiseJaccard": 0.641,
+      "pctShared50": 8.9
+    },
+    {
+      "svc": "plumbing",
+      "meanPairwiseJaccard": 0.639,
+      "pctShared50": 8.4
+    },
+    {
+      "svc": "roof-repair",
+      "meanPairwiseJaccard": 0.642,
+      "pctShared50": 8
+    },
+    {
+      "svc": "skim-coat",
+      "meanPairwiseJaccard": 0.637,
+      "pctShared50": 7.8
+    },
+    {
+      "svc": "tiling",
+      "meanPairwiseJaccard": 0.641,
+      "pctShared50": 8.7
+    },
+    {
+      "svc": "water-heater",
+      "meanPairwiseJaccard": 0.639,
+      "pctShared50": 8.3
+    },
+    {
+      "svc": "waterproofing",
+      "meanPairwiseJaccard": 0.64,
+      "pctShared50": 8.9
+    },
+    {
+      "svc": "welding",
+      "meanPairwiseJaccard": 0.649,
+      "pctShared50": 8.6
+    },
+    {
+      "svc": "window-repair",
+      "meanPairwiseJaccard": 0.66,
+      "pctShared50": 9.9
+    }
+  ]
+}
