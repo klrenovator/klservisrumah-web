@@ -20,7 +20,7 @@
 | 1 | Technical SEO + Crawlability + Indexation + Architecture | ✅ `PART-1-PROMPT.md` | ✅ `PART-1-AUDIT-REPORT.md` | ✅ | ✅ DONE (PR merged) |
 | 2 | On-page SEO + Content + Semantic + Entity SEO | ✅ `PART-2-PROMPT.md` | ✅ `PART-2-AUDIT-REPORT.md` | ✅ | ✅ DONE (PR #171 — authored this session) |
 | 3 | AEO + GEO + LLMO + AIO / AI Search | ✅ `PART-3-PROMPT.md` | ✅ `PART-3-AUDIT-REPORT.md` | ✅ | ✅ DONE (PR #173 — authored this session) |
-| 4 | SXO + Local SEO + Internal Linking + CRO + Trust | ✅ `PART-4-PROMPT.md` | ⏳ PENDING | ⏳ | ⏳ PENDING |
+| 4 | SXO + Local SEO + Internal Linking + CRO + Trust | ✅ `PART-4-PROMPT.md` | ✅ `PART-4-AUDIT-REPORT.md` | ✅ | ✅ DONE (PR #174 — authored this session) |
 | 5 | Schema + Content Gap + Priority Roadmap | ✅ `PART-5-PROMPT.md` | ⏳ PENDING | ⏳ | ⏳ PENDING |
 
 ---
@@ -35,7 +35,7 @@
 | P0 | Audit Part 1 (Technical / Crawl / Index / Architecture) and publish | ✅ DONE |
 | P0 | Audit Part 2 (On-page / Content / Semantic / Entity) | ✅ DONE |
 | P1 | Audit Part 3 (AEO / GEO / LLMO / AI SEO) | ✅ DONE (PR #173) |
-| P1 | Audit Part 4 (SXO / Local / Internal Linking / CRO / Trust) | ⏳ PENDING |
+| P1 | Audit Part 4 (SXO / Local / Internal Linking / CRO / Trust) | ✅ DONE (PR #174) |
 | P1 | Audit Part 5 (Schema / Content Gap / Roadmap) | ⏳ PENDING |
 | — | Merge per-part audit PRs (this session: Pt 1 merged) | ✅ DONE (Pt 1 + Pt 2) |
 | P0 | Fix Part 1 Critical #1 — Trim programmatic service+location index | ⏳ PENDING |
@@ -59,8 +59,31 @@
 | 2026-08-27 | Part 1 audit + prompt saved + PR merged | ✅ Part 1 committed & merged |
 | 2026-08-28 | Part 2 audit — full-corpus on-page/content/semantic/entity | ✅ Part 2 committed & merged (PR #171) |
 | 2026-08-28 | Part 3 audit — full-corpus AEO/GEO/LLMO/AI-search + entity-consistency scans | ✅ Part 3 committed & merged (PR #173) |
+| 2026-08-28 | Part 4 audit — full-corpus SXO/mobile/CRO/CTA/trust/local + internal-link graph & anchor-text scan | ✅ Part 4 committed & merged (PR #174) |
 
 ---
+
+## Part 4 — Priority Work Queue (findings added — `PART-4-AUDIT-REPORT.md`)
+
+| Prio | Task | Status |
+|---|---|---|
+| P0 | P4-01 — Render page content inside `<main>` (remove SSR "Loading…" shell; content currently after `</footer>` on 5,815 pages) | ⏳ PENDING |
+| P1 | P4-09 — Add AggregateRating+Review to homepage/service/pricing LocalBusiness; remove `aggregateRating` from tool SoftwareApplication | ⏳ PENDING (needs owner review verification) |
+| P1 | P4-05 — Mount `StickyBookButton` globally / on commercial templates (currently service+sub-service only) | ⏳ PENDING |
+| P1 | P4-07 — Add static-SSR inquiry/callback form (all forms JS-gated today) | ⏳ PENDING |
+| P1 | P4-12 — Embed coverage map; set `hasMap` to a valid map URL (0 iframes today) | ⏳ PENDING |
+| P1 | P4-06 — Add include/exclude list to service pages | ⏳ PENDING |
+| P1 | P4-11 — Team/authors page + bio schema (E-E-A-T Experience pillar) | ⏳ PENDING |
+| P1 | P4-16 — Rebalance internal link equity (hub indexes 5,815–22,253 vs content children 7–9) | ⏳ PENDING (after Part 1 P0) |
+| P1 | P4-13 — Restructure the 3,654 local pages (site-wide price + parametric body) | ⏳ PENDING (after Part 1 P0) |
+| P1 | P4-17 — Link aircon problems from aircon service + tools (1–2 inbound) | ⏳ PENDING |
+| P1 | P4-02 — Mobile quote box above the fold (behind full-viewport slideshow today) | ⏳ PENDING |
+| P2 | P4-10 — Make FeaturedProjects/BeforeAfter cards real links; add case-study pages | ⏳ PENDING |
+| P2 | P4-03 — Consolidate floating CTAs (up to 4 on desktop service pages); exit-intent 30s timer → mouse-leave | ⏳ PENDING |
+| P2 | P4-14 — Per-area `Service` entities in LocalBusiness schema | ⏳ PENDING |
+| P2 | P4-15 — NAP contact strip in content block (5,813 pages footer-only) | ⏳ PENDING |
+| P2 | P4-08 — Reword primary CTAs around fixed-quote/no-deposit | ⏳ PENDING |
+| P3 | P4-18 — Anchor-text profile healthy (90% descriptive / 7% generic / 0% branded) — no action required | ⏳ PENDING |
 
 ## Part 3 — Priority Work Queue (findings added)
 

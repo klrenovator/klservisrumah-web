@@ -7,14 +7,15 @@
 ## Current State (Update this each session)
 
 > **AUDIT PROJECT ACTIVE (2026-08-28):** the 5-part Deep Audit is the current
-> workstream. Part 3 (AEO/GEO/LLMO/AI Search) was completed and merged
-> (PR #173). **Next session starts Part 4 — SXO + Local SEO + Internal
-> Linking + CRO + Trust** (`docs/full-website-deep-audit/PART-4-PROMPT.md`).
-> Read `docs/full-website-deep-audit/TRACKING.md` first — it is the
-> authoritative status board with the P0–P3 fix queue from Parts 1–3.
+> workstream. Parts 1–4 are complete and merged: Part 1 (PR #170), Part 2
+> (PR #171), Part 3 (PR #173), Part 4 (PR #174). **Next session starts
+> Part 5 — Schema + Content Gap + Priority Roadmap**
+> (`docs/full-website-deep-audit/PART-5-PROMPT.md`). Read
+> `docs/full-website-deep-audit/TRACKING.md` first — it is the authoritative
+> status board with the P0–P3 fix queue from Parts 1–4.
 
-**Branch:** arena/01a046e9-klservisrumah-web (audit session branch — push PRs from here)
-**Last completed session:** 2026-08-28 — Deep Audit Part 3 ✅ (PR #173)
+**Branch:** arena/01a04729-klservisrumah-web (audit session branch — push PRs from here)
+**Last completed session:** 2026-08-28 — Deep Audit Part 4 ✅ (PR #174)
 
 **Quality gates (must all be green before any new work):**
 - [ ] npm run lint — 0 errors, 0 warnings
