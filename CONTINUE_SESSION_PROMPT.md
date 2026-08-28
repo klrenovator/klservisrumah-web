@@ -6,9 +6,15 @@
 
 ## Current State (Update this each session)
 
-**Branch:** arena/019ff501-klservisrumah-web
-**Base commit:** 5c52226 (main)
-**Last completed session:** 2026-08-12 (S001–S012 + Smart Service Finder + all 112 locale specialties + problem i18n + link equity tiers + trilingual QA)
+> **AUDIT PROJECT ACTIVE (2026-08-28):** the 5-part Deep Audit is the current
+> workstream. Part 3 (AEO/GEO/LLMO/AI Search) was completed and merged
+> (PR #173). **Next session starts Part 4 — SXO + Local SEO + Internal
+> Linking + CRO + Trust** (`docs/full-website-deep-audit/PART-4-PROMPT.md`).
+> Read `docs/full-website-deep-audit/TRACKING.md` first — it is the
+> authoritative status board with the P0–P3 fix queue from Parts 1–3.
+
+**Branch:** arena/01a046e9-klservisrumah-web (audit session branch — push PRs from here)
+**Last completed session:** 2026-08-28 — Deep Audit Part 3 ✅ (PR #173)
 
 **Quality gates (must all be green before any new work):**
 - [ ] npm run lint — 0 errors, 0 warnings
