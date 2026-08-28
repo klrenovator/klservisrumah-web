@@ -306,7 +306,7 @@ export function Hero() {
                 </span>
               </div>
 
-              {/* Main Heading — speakable target for AEO (Gemini/ChatGPT/Perplexity) */}
+              {/* Main Heading — primary AEO surface (Gemini/ChatGPT/Perplexity read it from the HTML) */}
               <h1 className="hero-h1 text-4xl sm:text-5xl md:text-6xl lg:text-[64px] font-black uppercase tracking-tight leading-[1.05] text-white text-balance">
                 {t("home.hero.heading1")}{" "}
                 <br className="hidden sm:block" />
@@ -319,7 +319,7 @@ export function Hero() {
                 {t("hero.subline")}
               </p>
 
-              {/* Semantic Subtext Body Copy — targeted by speakable JSON-LD */}
+              {/* Semantic Subtext Body Copy — read by AI crawlers straight from the HTML */}
               <p className="hero-subhead text-base sm:text-lg text-white/85 leading-relaxed max-w-2xl">
                 {t("home.hero.subhead")}
               </p>

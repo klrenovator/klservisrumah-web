@@ -6,8 +6,6 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import {
   getServiceSchema,
   getFAQSchema,
-  getHowToSchema,
-  getSpeakableSchema
 } from "@/lib/seo";
 import { TrustBar } from "@/components/trust-bar";
 import { StickyBookButton } from "@/components/sticky-book-button";
@@ -76,10 +74,6 @@ async function ServiceSlugPageResolver({
   });
 
   const faqSchema = getFAQSchema(service.faqs);
-  const howToSchema = getHowToSchema(
-    service.process.map((p) => ({ title: p.title, desc: p.desc }))
-  );
-  const speakableSchema = getSpeakableSchema(["h1", ".service-hero-tagline", ".faq-answer"]);
 
   return (
     <>
@@ -97,14 +91,6 @@ async function ServiceSlugPageResolver({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
       />
 
       <LocaleServiceView service={service} />

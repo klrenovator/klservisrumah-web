@@ -37,8 +37,14 @@ function geoCoordinates() {
 }
 
 /**
- * Build a comprehensive areaServed array with GeoCoordinates for LocalBusiness schema.
- * Matches KLRenovator's rich GeoCoordinate-aware area serving.
+ * Build a comprehensive areaServed array with GeoCoordinates.
+ *
+ * Audit P5-04: this list is now emitted ONLY inside the full Organization
+ * node on the three homepages (the entity's home). Everywhere else the
+ * compact `getOrganizationReferenceSchema()` node or a GeoCircle / page-local
+ * Place is used instead — repeating 49 City nodes (each with a
+ * containedInPlace Country sub-node) on every page produced 220,000+ City
+ * nodes and 22–31 KB of JSON-LD per page (Part 5 §P5-04).
  */
 export function getServiceAreaSchema(areas = siteConfig.areas) {
   return areas.map((area) => ({
@@ -164,6 +170,37 @@ export function getOrganizationSchema() {
   };
 }
 
+/**
+ * Compact @id-reference node for the single site entity (audit P5-04).
+ *
+ * The FULL Organization node (`getOrganizationSchema()` — knowsAbout, brand,
+ * full areaServed city list, contactPoints, openingHours…) is emitted only on
+ * the three homepages, where the entity lives. Every other page ships this
+ * ~0.7 KB identifying reference instead of the ~10.7 KB full node: parsers
+ * that resolve @id across pages (Google's structured data pipeline) merge it
+ * with the homepage entity; parsers that don't still learn WHO the business
+ * is (name, URL, logo, NAP, service area as one GeoCircle) without the
+ * site-wide lists re-repeated on thousands of pages.
+ */
+export function getOrganizationReferenceSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "@id": `${baseUrl}/#organization`,
+    name: siteConfig.name,
+    url: baseUrl,
+    logo: {
+      "@type": "ImageObject",
+      url: absoluteUrl(siteConfig.logo),
+      width: 512,
+      height: 512
+    },
+    telephone: siteConfig.phone,
+    address: postalAddress(),
+    areaServed: buildServiceAreaGeoCircle()
+  };
+}
+
 export function getWebsiteSchema() {
   return {
     "@context": "https://schema.org",
@@ -246,6 +283,11 @@ export function parsePricedOffer(price: string): {
   const unitCode = unitText ? unitCodeMap[unitText.toLowerCase()] : undefined;
 
   if (unitText) {
+    // Audit P5-04: the numeric spec keeps its unit in machine-readable
+    // `unitText`/`unitCode` (the audit C7/P5-08 invariant — never a bare
+    // unit-less price). The duplicated human sentence ("Starting from …")
+    // was dropped from every Offer it feeds: ~50 B × thousands of offers,
+    // and the visible page already states the price in full.
     return {
       price: numeric,
       priceSpecification: {
@@ -253,10 +295,7 @@ export function parsePricedOffer(price: string): {
         price: numeric,
         priceCurrency: "MYR",
         unitText,
-        ...(unitCode ? { unitCode } : {}),
-        description: raw.startsWith("From") || raw.startsWith("Dari") || raw.startsWith("从")
-          ? raw
-          : `Starting from ${raw}`
+        ...(unitCode ? { unitCode } : {})
       }
     };
   }
@@ -266,15 +305,17 @@ export function parsePricedOffer(price: string): {
     priceSpecification: {
       "@type": "PriceSpecification",
       price: numeric,
-      priceCurrency: "MYR",
-      description: raw.startsWith("From") || raw.startsWith("Dari") || raw.startsWith("从")
-        ? raw
-        : `Starting from ${raw}`
+      priceCurrency: "MYR"
     }
   };
 }
 
 export function getOfferCatalogSchema(items: { name: string; price: string; desc?: string }[]) {
+  // Audit P5-04: catalog items ship name + unit-aware price only. The
+  // per-item `description` and the repeated `availability` string were ~40%
+  // of every catalog's weight (6.1 KB of the 8.3 KB Service node on
+  // /services/house-renovation); the full descriptions remain on the pages
+  // each catalog item links to from the visible HTML.
   return {
     "@type": "OfferCatalog",
     name: "Service price guide",
@@ -284,13 +325,11 @@ export function getOfferCatalogSchema(items: { name: string; price: string; desc
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: item.name,
-          description: item.desc
+          name: item.name
         },
         priceCurrency: "MYR",
         ...(priced.price ? { price: priced.price } : {}),
-        ...(priced.priceSpecification ? { priceSpecification: priced.priceSpecification } : {}),
-        availability: "https://schema.org/InStock"
+        ...(priced.priceSpecification ? { priceSpecification: priced.priceSpecification } : {})
       };
     })
   };
@@ -304,14 +343,21 @@ export function getWarrantySchema(period: string, scope: string) {
   };
 }
 
-export function getServiceSchema(service: { title: string; description: string; startPrice: string; slug: string; path?: string; subServices?: SubService[] }) {
+export function getServiceSchema(service: { title: string; description: string; startPrice: string; slug: string; path?: string; subServices?: SubService[]; includeCatalog?: boolean }) {
   const detail = servicesData[service.slug];
   const heroImage = detail?.heroImage || siteConfig.defaultOgImage;
   // Localised service pages (`/ms/services/*`, `/zh/services/*`) pass their own
   // path so the schema's @id/url point at the page that actually renders it,
   // and their localized sub-services so the offer catalog is in-language too.
   const servicePath = service.path ?? `/services/${service.slug}`;
-  const catalogSubServices = service.subServices ?? detail?.subServices;
+  // Audit P5-04: only the service's own page carries its full sub-service
+  // OfferCatalog. Variant pages rendered through this builder (sub-service,
+  // specialty and emergency pages) pass `includeCatalog: false` — they used to
+  // inherit the parent's entire catalog (~3 KB each), which misdescribed the
+  // page and was the largest remaining duplication after the org/areaServed
+  // slim.
+  const catalogSubServices =
+    service.includeCatalog === false ? undefined : service.subServices ?? detail?.subServices;
   return {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -320,13 +366,11 @@ export function getServiceSchema(service: { title: string; description: string; 
     name: service.title,
     url: `${baseUrl}${servicePath}`,
     image: absoluteUrl(heroImage),
-    provider: {
-      "@type": "HomeAndConstructionBusiness",
-      "@id": `${baseUrl}/#organization`,
-      name: siteConfig.name,
-      telephone: siteConfig.phone,
-      address: postalAddress()
-    },
+    // Audit P5-04: bare @id reference. The full entity lives on the homepages
+    // and every page carries SiteHead's compact reference node, so repeating
+    // type/name/telephone/address here (~450 B × every service/local page)
+    // only added weight without new signal.
+    provider: { "@id": `${baseUrl}/#organization` },
     description: service.description,
     // Quote-only services (e.g. awning installation) publish no numeric price —
     // emit an availability-only Offer rather than an invalid/empty price, which
@@ -358,10 +402,11 @@ export function getServiceSchema(service: { title: string; description: string; 
       };
     })(),
     hasOfferCatalog: catalogSubServices ? getOfferCatalogSchema(catalogSubServices) : undefined,
-    areaServed: [
-      ...getServiceAreaSchema(),
-      buildServiceAreaGeoCircle()
-    ]
+    // Audit P5-04: service pages assert the Klang Valley coverage GeoCircle
+    // only — the 49-city areaServed list ships once, on the homepage
+    // Organization node. Area/suburb pages keep their page-local Place via
+    // getLocalBusinessServiceSchema().
+    areaServed: buildServiceAreaGeoCircle()
   };
 }
 
@@ -430,8 +475,11 @@ export function getLocalBusinessServiceSchema(area: AreaDetail | SuburbDetail, s
         ...(priced.priceSpecification ? { priceSpecification: priced.priceSpecification } : {}),
         availability: "https://schema.org/InStock"
       };
-    })(),
-    hasOfferCatalog: getOfferCatalogSchema(service.subServices)
+    })()
+    // Audit P5-04: the local page no longer re-emits the service's full
+    // sub-service OfferCatalog (~3 KB × 1,508 local pages). The catalog lives
+    // once, on `/services/<slug>`; this page keeps its page-local Place
+    // areaServed and its own offer as its structured-data footprint.
   };
 }
 
@@ -468,20 +516,26 @@ export function getArticleSchema(post: BlogPost | { title: string; excerpt?: str
   };
 }
 
-export function getHowToSchema(steps: { title: string; desc: string }[], supplies: string[] = [], tools: string[] = []) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-    name: "Professional home service process",
-    supply: supplies.map((supply) => ({ "@type": "HowToSupply", name: supply })),
-    tool: tools.map((tool) => ({ "@type": "HowToTool", name: tool })),
-    step: steps.map((step, index) => ({
-      "@type": "HowToStep",
-      position: index + 1,
-      name: step.title,
-      text: step.desc
-    }))
-  };
+/**
+ * @deprecated Audit P5-06/P5-04 — HowTo JSON-LD removed site-wide.
+ * Google retired HowTo rich results (announced Aug 2023, sunset Sept 2023)
+ * and Bing never surfaced them, so the nodes only added 1–2 KB of JSON-LD to
+ * ~150 pages — weight that stood between the corpus and Part 5's "≤8 KB
+ * JSON-LD per sub-page" success metric. The visible step-by-step sections on
+ * service/problem/process/tool pages are unchanged, so both users and AI
+ * crawlers still read the process in plain HTML. Do not restore; if
+ * structured process data is ever wanted again, give every page its own
+ * per-page HowTo name (the old node hard-coded one generic name for all 74
+ * problem pages — the audit's core P5-06 finding).
+ */
+export function getHowToSchema(
+  _steps: { title: string; desc: string }[],
+  _supplies: string[] = [],
+  _tools: string[] = []
+): never {
+  throw new Error(
+    "getHowToSchema() removed (audit P5-06/P5-04): HowTo rich results are retired; visible process sections stay in HTML."
+  );
 }
 
 /**
@@ -538,15 +592,18 @@ export function getBreadcrumbSchema(items: { name: string; item: string }[]) {
   };
 }
 
-export function getSpeakableSchema(cssSelectors: string[] = ["h1", "h2", ".faq-answer"]) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    speakable: {
-      "@type": "SpeakableSpecification",
-      cssSelector: cssSelectors
-    }
-  };
+/**
+ * @deprecated Audit P5-07/P5-04 — Speakable WebPage nodes removed site-wide.
+ * The emitted node was an orphan `WebPage` (no @id, no url, not linked to the
+ * page's other entities) carrying only a SpeakableSpecification — a property
+ * tied to Google Assistant news surfaces with no active use for a local home
+ * services site. It shipped on 500+ pages (~150–850 B each). The CSS-targeted
+ * content (h1, intros, FAQ answers) remains fully visible in the HTML.
+ */
+export function getSpeakableSchema(_cssSelectors: string[] = ["h1", "h2", ".faq-answer"]): never {
+  throw new Error(
+    "getSpeakableSchema() removed (audit P5-07/P5-04): orphan Speakable WebPage nodes are gone; content stays in HTML."
+  );
 }
 
 export function getWebApplicationSchema(name: string, path: string, description: string) {

@@ -6,7 +6,7 @@ import { faqsByLang } from "@/config/hub-faqs";
 import { FaqHeroHeading } from "@/components/sections/faq-hero-heading";
 import { FaqDirectoryView } from "@/components/sections/faq-directory-view";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { getFAQSchema, getSpeakableSchema } from "@/lib/seo";
+import { getFAQSchema } from "@/lib/seo";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
 import { Phone, MessageSquare } from "lucide-react";
@@ -71,14 +71,6 @@ export default function FAQPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(getFAQSchema(faqsByLang.en))
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            getSpeakableSchema(["h1", ".faq-intro", ".faq-answer"])
-          )
         }}
       />
 

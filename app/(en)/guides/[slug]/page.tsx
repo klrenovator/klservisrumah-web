@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { buildMetadata } from "@/lib/seo-meta";
 import { guidePages } from "@/config/content-data";
 import { GenericContentPageView } from "@/components/content/generic-content-page";
+import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { getArticleSchema, getFAQSchema } from "@/lib/seo";
 
 // Every valid param is enumerated in `generateStaticParams()`, so anything
@@ -24,5 +25,5 @@ export default async function GuidePage(props: { params: Promise<{ slug: string 
   const { slug } = await props.params;
   const page = guidePages.find((item) => item.slug === slug);
   if (!page) notFound();
-  return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getArticleSchema({ title: page.title, slug: page.slug, excerpt: page.intro, path: `/guides/${page.slug}`, category: page.category })) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(page.faqs)) }} /><GenericContentPageView page={page} /></>;
+  return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getArticleSchema({ title: page.title, slug: page.slug, excerpt: page.intro, path: `/guides/${page.slug}`, category: page.category })) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(page.faqs)) }} /><Breadcrumbs items={[{ label: "Guides", href: "/guides" }, { label: page.title, href: `/guides/${page.slug}` }]} /><GenericContentPageView page={page} /></>;
 }

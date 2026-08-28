@@ -30,9 +30,16 @@ export type ToolIndexCard = {
 };
 
 /**
- * JSON-LD graph for the tools index: CollectionPage + ItemList + one
- * SoftwareApplication node per tool + FAQPage. `inLanguage` is only emitted on
- * the locale routes — the English graph keeps its historical shape.
+ * JSON-LD graph for the tools index: CollectionPage + ItemList + FAQPage.
+ * `inLanguage` is only emitted on the locale routes — the English graph keeps
+ * its historical shape.
+ *
+ * Audit P5-04: the graph previously re-emitted a full SoftwareApplication
+ * node for every one of the 43 tools (~450 B each, ~19 KB per hub × 3
+ * languages) even though each tool's own page already publishes the complete
+ * SoftwareApplication + Service + rate-table graph. The hub now enumerates
+ * the tools as a minimal ItemList (position + item URL) — the visible cards
+ * already carry names, descriptions and links for users and AI crawlers.
  */
 export function buildToolsIndexGraph({
   path,
@@ -55,7 +62,6 @@ export function buildToolsIndexGraph({
         name: copy.graphCollectionName,
         description: copy.graphCollectionDescription,
         isPartOf: { "@id": `${baseUrl}/#website` },
-        speakable: { "@type": "SpeakableSpecification", cssSelector: ["h1", ".quick-answer", ".faq-answer"] },
         ...(inLanguage ? { inLanguage } : {})
       },
       {
@@ -66,22 +72,9 @@ export function buildToolsIndexGraph({
         itemListElement: tools.map((tool, index) => ({
           "@type": "ListItem",
           position: index + 1,
-          name: tool.name,
-          description: tool.metaDesc,
-          url: `${baseUrl}${tool.href}`
+          item: `${baseUrl}${tool.href}`
         }))
       },
-      ...tools.map((tool) => ({
-        "@type": ["SoftwareApplication", "WebApplication"],
-        "@id": `${baseUrl}${tool.href}#app`,
-        name: tool.name,
-        url: `${baseUrl}${tool.href}`,
-        applicationCategory: "BusinessApplication",
-        operatingSystem: "Any (web browser)",
-        description: tool.metaDesc,
-        isAccessibleForFree: true,
-        offers: { "@type": "Offer", price: "0", priceCurrency: "MYR" }
-      })),
       {
         "@type": "FAQPage",
         "@id": `${baseUrl}${path}#faq`,

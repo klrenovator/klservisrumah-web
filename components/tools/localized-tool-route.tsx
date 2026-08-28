@@ -59,9 +59,7 @@ export function LocalizedToolRoute({
           __html: JSON.stringify(
             getToolGraph(content, {
               url: `https://www.klservisrumah.my${urls[locale]}`,
-              language: shell.schemaLanguage,
-              howToName: shell.howToSchemaName(content.name),
-              howToDescription: shell.howToSchemaDescription(content.name.toLowerCase(), content.estimatedMinutes)
+              language: shell.schemaLanguage
             })
           )
         }}

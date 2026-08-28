@@ -6,7 +6,6 @@ import { servicesData } from "@/config/services-data";
 import {
   getFAQSchema,
   getOfferCatalogSchema,
-  getSpeakableSchema
 } from "@/lib/seo";
 import { PricingHeroHeading } from "@/components/sections/pricing-hero-heading";
 import { LocalePricingContent } from "@/components/sections/locale-pricing-content";
@@ -43,7 +42,17 @@ const pricingFaqs = [
   },
 ];
 
-const offerCatalogItems = Object.values(servicesData).flatMap((service) => service.subServices);
+// Audit P5-04: this catalog previously flattened ALL 222 sub-services into
+// one 92 KB OfferCatalog — the single largest JSON-LD block on the site.
+// The full per-service sub-service catalogs already ship on the 29
+// `/services/<svc>` pages (getServiceSchema.hasOfferCatalog), so re-emitting
+// every row here only duplicated them at 10× the page's weight. The catalog
+// now lists the flagship service-level offers (same slice(0, 12) precedent
+// the homepage's homeOfferCatalogSchema uses); units stay attached via
+// parsePricedOffer → UnitPriceSpecification (audit C7/P5-08 invariant).
+const offerCatalogItems = Object.values(servicesData)
+  .slice(0, 12)
+  .map((service) => ({ name: service.title, price: service.startPrice, desc: service.tagline }));
 
 export default function PricingPage() {
 
@@ -57,10 +66,6 @@ export default function PricingPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(getOfferCatalogSchema(offerCatalogItems)) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(getSpeakableSchema(["h1", ".pricing-intro", ".faq-answer"])) }}
       />
 
       <section className="bg-gradient-to-b from-slate-50 via-white to-sky-50/30 py-16 sm:py-20">

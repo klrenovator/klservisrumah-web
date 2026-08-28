@@ -24,6 +24,7 @@
     "gen:blog-index": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/generate-blog-index.ts",
     "gen:bp1-map": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/generate-bp1-map.ts",
     "audit:bp1": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/bp1-consolidation-audit.ts",
+    "audit:schema-size": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/schema-size-audit.ts",
     "validate:blogs": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/validate-blog-production.ts",
     "prebuild": "npm run gen:rates && npm run gen:ai-context && npm run gen:service-summary && npm run gen:blog-index && npm run gen:bp1-map && npm run validate:blogs && npm run audit:bp1 -- --source-only && npm run audit:topical-map && npm run audit:specialty-locale && npm run audit:specialty-coverage && npm run audit:service-i18n && npm run audit:i18n && npm run audit:problem-i18n && npm run audit:client-bundle && npm run test:estimators",
     "predev": "npm run gen:rates && npm run gen:ai-context && npm run gen:service-summary && npm run gen:blog-index && npm run gen:bp1-map",

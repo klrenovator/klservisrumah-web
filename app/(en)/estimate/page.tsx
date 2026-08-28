@@ -4,7 +4,7 @@ import { EstimateHub } from "@/components/estimate/estimate-hub";
 import { buildEstimateLinks, ESTIMATE_INDEX_PATH } from "@/config/estimate-links";
 import { hasServiceEstimator } from "@/lib/estimator/service-estimator";
 import { buildMetadata } from "@/lib/seo-meta";
-import { getOfferCatalogSchema } from "@/lib/seo";
+
 
 export const metadata = buildMetadata({
   title: "Instant Cost Estimators for Every Home Service",
@@ -32,15 +32,29 @@ export default function EstimateHubPage() {
   const links = buildEstimateLinks().filter(
     (link) => link.kind === "dedicated" || hasServiceEstimator(link.slug)
   );
-  const catalogSchema = getOfferCatalogSchema(
-    links.map((link) => ({ name: link.title, price: link.startPrice }))
-  );
+  // Audit P5-04: the hub previously re-described every estimator as an Offer
+  // (8.6 KB OfferCatalog) even though each `/estimate/<slug>` page already
+  // carries its own full SoftwareApplication + Service + rate-table graph.
+  // An ordered ItemList of the estimator URLs says the same thing the visible
+  // list says, at a third of the weight.
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Instant home service cost estimators — KL & Selangor",
+    numberOfItems: links.length,
+    itemListElement: links.map((link, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: link.title,
+      item: `https://www.klservisrumah.my${link.resolvedPath}`
+    }))
+  };
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(catalogSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
       />
       <Breadcrumbs
         items={[{ name: "Instant Estimators", href: ESTIMATE_INDEX_PATH }]}

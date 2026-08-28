@@ -4549,9 +4549,6 @@ export type ToolShellCopy = {
   navAriaLabel: string;
   /** Breadcrumb label for the tools index. */
   indexLabel: string;
-  /** HowTo-schema strings. */
-  howToSchemaName: (name: string) => string;
-  howToSchemaDescription: (nameLower: string, minutes: number) => string;
   /** JSON-LD inLanguage tag. */
   schemaLanguage: string;
   /** og:locale (+ the other two for og:locale:alternate). */
@@ -4590,9 +4587,6 @@ export const toolShellCopy: Record<SiteLocale, ToolShellCopy> = {
     homeLabel: "Home",
     navAriaLabel: "Breadcrumb",
     indexLabel: "Free Tools",
-    howToSchemaName: (name) => `How to use the ${name}`,
-    howToSchemaDescription: (nameLower, minutes) =>
-      `Get an instant ${nameLower} estimate for Kuala Lumpur and Selangor in about ${minutes} minute${minutes > 1 ? "s" : ""}.`,
     schemaLanguage: "en-MY",
     ogLocale: "en_MY",
     ogAlternateLocales: ["ms_MY", "zh_MY"]
@@ -4627,9 +4621,6 @@ export const toolShellCopy: Record<SiteLocale, ToolShellCopy> = {
     homeLabel: "Utama",
     navAriaLabel: "Laluan navigasi",
     indexLabel: "Alat Percuma",
-    howToSchemaName: (name) => `Cara menggunakan ${name}`,
-    howToSchemaDescription: (nameLower, minutes) =>
-      `Dapatkan anggaran ${nameLower} serta-merta untuk Kuala Lumpur dan Selangor dalam masa lebih kurang ${minutes} minit.`,
     schemaLanguage: "ms-MY",
     ogLocale: "ms_MY",
     ogAlternateLocales: ["en_MY", "zh_MY"]
@@ -4662,9 +4653,6 @@ export const toolShellCopy: Record<SiteLocale, ToolShellCopy> = {
     homeLabel: "首页",
     navAriaLabel: "面包屑导航",
     indexLabel: "免费工具",
-    howToSchemaName: (name) => `如何使用${name}`,
-    howToSchemaDescription: (nameLower, minutes) =>
-      `约 ${minutes} 分钟即可获得吉隆坡与雪兰莪的${nameLower}即时估价。`,
     schemaLanguage: "zh-MY",
     ogLocale: "zh_MY",
     ogAlternateLocales: ["en_MY", "ms_MY"]

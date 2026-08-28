@@ -9,7 +9,6 @@ import { getServerTranslator } from "@/lib/i18n-server";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { getSpeakableSchema } from "@/lib/seo";
 import { problemPath } from "@/config/problem-canonical";
 import type { Locale } from "@/lib/i18n";
 
@@ -83,10 +82,6 @@ export function LocaleProblemsIndex({ locale }: { locale: Locale }) {
       <Breadcrumbs
         ariaLabel={t("breadcrumbs.navAria")}
         items={[{ label: t("nav.problems"), href: hubPath }]}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(getSpeakableSchema(["h1", "h2"])) }}
       />
 
       <section className="bg-gradient-to-b from-[#F8FAFC] via-white to-white border-b border-slate-100 py-12 sm:py-16">

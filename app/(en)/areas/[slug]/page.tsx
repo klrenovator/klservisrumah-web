@@ -2,7 +2,7 @@ import React from "react";
 import { buildMetadata } from "@/lib/seo-meta";
 import { notFound } from "next/navigation";
 import { areaPages } from "@/config/area-data";
-import { getFAQSchema, getSpeakableSchema } from "@/lib/seo";
+import { getFAQSchema } from "@/lib/seo";
 import { buildAreaBundle } from "@/lib/location-bundles";
 import { LocaleAreaView } from "@/components/sections/locale-area-view";
 
@@ -52,7 +52,6 @@ export default async function AreaSlugPage(props: { params: Promise<{ slug: stri
   // Schema stays canonical (English) for search engines; the visible body is
   // rendered by the client wrapper in the visitor's active language.
   const faqSchema = getFAQSchema(area.faqs);
-  const speakableSchema = getSpeakableSchema(["h1", ".area-intro", ".faq-answer"]);
 
   // This is a coverage page, not a separate business branch. Service schema
   // accurately describes the relationship without inventing a postal address
@@ -77,10 +76,6 @@ export default async function AreaSlugPage(props: { params: Promise<{ slug: stri
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
       />
       <script
         type="application/ld+json"

@@ -21,9 +21,7 @@ import {
   hasSpecialtyLocaleContent,
 } from "@/config/specialty-locale-content";
 import {
-  getBreadcrumbSchema,
   getFAQSchema,
-  getHowToSchema,
   getServiceSchema,
 } from "@/lib/seo";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
@@ -96,24 +94,20 @@ export function LocaleSpecialtyPage({
   const servicePath = locale === "ms" ? `/ms/services/${slug}` : `/zh/services/${slug}`;
 
   const faqSchema = getFAQSchema(content.faqs);
-  const howToSchema = getHowToSchema(content.process.map((p) => ({ title: p.title, desc: p.desc })));
   const serviceSchema = getServiceSchema({
     title: content.name,
     description: content.description,
     startPrice: localizedSub.price,
     slug: service.slug,
     path,
-    // The localized sub-service records so the JSON-LD OfferCatalog is
-    // in-language too — without this it falls back to the English catalogue
-    // (same pattern as `locale-service-page.tsx`).
-    subServices: localized.subServices,
+    // Audit P5-04: the sub-service page no longer re-emits the parent
+    // service's OfferCatalog — the localized catalog ships once on
+    // `/ms|zh/services/<slug>` (locale-service-page.tsx).
+    includeCatalog: false,
   });
-  const breadcrumbSchema = getBreadcrumbSchema([
-    { name: t("breadcrumbs.home"), item: "/" },
-    { name: t("breadcrumbs.services"), item: locale === "ms" ? "/ms/services" : "/zh/services" },
-    { name: localized.title, item: servicePath },
-    { name: content.name, item: path },
-  ]);
+  // Audit P5-10/P5-04: the standalone breadcrumbSchema script was removed —
+  // the <Breadcrumbs> component below already emits the identical
+  // BreadcrumbList JSON-LD together with the visible trail.
 
   const trustItems = [
     { icon: ShieldCheck, text: t("trustBadgesRow.insured") },
@@ -126,10 +120,8 @@ export function LocaleSpecialtyPage({
   return (
     <>
       {/* Schema */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
 
       <Breadcrumbs
         ariaLabel={t("breadcrumbs.navAria")}
