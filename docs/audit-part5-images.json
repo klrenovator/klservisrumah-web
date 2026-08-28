@@ -1,0 +1,1088 @@
+{
+  "generatedAt": "2026-08-28T17:07:50.707Z",
+  "distinctImages": 37,
+  "topImages": [
+    {
+      "src": "/logo/logo-lockup.png",
+      "pages": 5815
+    },
+    {
+      "src": "/hero-aircon.svg",
+      "pages": 27
+    },
+    {
+      "src": "/tools/water-leak-triage-kl.webp",
+      "pages": 18
+    },
+    {
+      "src": "/hero-renovation.svg",
+      "pages": 18
+    },
+    {
+      "src": "/hero/home-services-electrical-kl.jpg",
+      "pages": 18
+    },
+    {
+      "src": "/tools/plumbing-diagnostic-kl.webp",
+      "pages": 15
+    },
+    {
+      "src": "/hero/home-services-waterproofing-kl.jpg",
+      "pages": 15
+    },
+    {
+      "src": "/hero/home-services-plumbing-kl.jpg",
+      "pages": 15
+    },
+    {
+      "src": "/tools/tv-mount-advisor-kl.webp",
+      "pages": 15
+    },
+    {
+      "src": "/hero/home-services-handyman-kl.jpg",
+      "pages": 12
+    },
+    {
+      "src": "/tools/painting-cost-calculator-kl.webp",
+      "pages": 12
+    },
+    {
+      "src": "/tools/ceiling-repair-estimator-kl.webp",
+      "pages": 12
+    },
+    {
+      "src": "/hero-glass-aluminium.svg",
+      "pages": 9
+    },
+    {
+      "src": "/hero/home-services-kitchen-cabinet-kl.jpg",
+      "pages": 6
+    },
+    {
+      "src": "/hero/home-services-painters-kl.jpg",
+      "pages": 4
+    },
+    {
+      "src": "/hero-autogate.svg",
+      "pages": 3
+    },
+    {
+      "src": "/hero-awning.svg",
+      "pages": 3
+    },
+    {
+      "src": "/hero-carpentry.svg",
+      "pages": 3
+    },
+    {
+      "src": "/hero/home-services-cctv-kl.jpg",
+      "pages": 3
+    },
+    {
+      "src": "/hero/home-services-ceiling-fan-kl.jpg",
+      "pages": 3
+    },
+    {
+      "src": "/hero/home-services-ceiling-kl.jpg",
+      "pages": 3
+    },
+    {
+      "src": "/hero-door.svg",
+      "pages": 3
+    },
+    {
+      "src": "/hero-epoxy-flooring.svg",
+      "pages": 3
+    },
+    {
+      "src": "/hero/home-services-flooring-kl.jpg",
+      "pages": 3
+    },
+    {
+      "src": "/hero/home-services-lighting-kl.jpg",
+      "pages": 3
+    },
+    {
+      "src": "/hero-locksmith.svg",
+      "pages": 3
+    },
+    {
+      "src": "/hero/home-services-plaster-ceiling-kl.jpg",
+      "pages": 3
+    },
+    {
+      "src": "/hero-roof-repair.svg",
+      "pages": 3
+    },
+    {
+      "src": "/hero/home-services-skim-coat-kl.jpg",
+      "pages": 3
+    },
+    {
+      "src": "/hero/home-services-tiling-kl.jpg",
+      "pages": 3
+    },
+    {
+      "src": "/hero/home-services-water-heater-kl.jpg",
+      "pages": 3
+    },
+    {
+      "src": "/hero-welding.svg",
+      "pages": 3
+    },
+    {
+      "src": "/hero-window.svg",
+      "pages": 3
+    },
+    {
+      "src": "/hero-painting.svg",
+      "pages": 1
+    },
+    {
+      "src": "/hero-ceiling.svg",
+      "pages": 1
+    },
+    {
+      "src": "/hero-waterproofing.svg",
+      "pages": 1
+    },
+    {
+      "src": "/hero-handyman.svg",
+      "pages": 1
+    }
+  ],
+  "byPattern": {
+    "en:/": {
+      "pages": 1,
+      "meanImgs": 3,
+      "meanRaster": 3,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/about": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/answers": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/answers/<slug>": {
+      "pages": 29,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/areas/<area>": {
+      "pages": 37,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/areas/<area>/<svc>": {
+      "pages": 1073,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/hero-aircon.svg",
+        "https://www.klservisrumah.my/hero-autogate.svg",
+        "https://www.klservisrumah.my/hero-awning.svg"
+      ]
+    },
+    "en:/areas/<area>/<svc>/near-me": {
+      "pages": 1073,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/hero-aircon.svg",
+        "https://www.klservisrumah.my/hero-autogate.svg",
+        "https://www.klservisrumah.my/hero-awning.svg"
+      ]
+    },
+    "en:/areas/other": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/blog": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/blog/<slug>": {
+      "pages": 216,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/hero/home-services-kitchen-cabinet-kl.jpg",
+        "https://www.klservisrumah.my/hero-painting.svg",
+        "https://www.klservisrumah.my/hero-aircon.svg"
+      ]
+    },
+    "en:/brands": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/brands/<slug>": {
+      "pages": 32,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/commercial": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/commercial/<slug>": {
+      "pages": 29,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/compare": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/compare/<slug>": {
+      "pages": 18,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/contact": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/estimate/*": {
+      "pages": 23,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/faq": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/guides": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/guides/*": {
+      "pages": 21,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/near-me/<svc>": {
+      "pages": 30,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/hero-aircon.svg",
+        "https://www.klservisrumah.my/hero-autogate.svg",
+        "https://www.klservisrumah.my/hero-awning.svg"
+      ]
+    },
+    "en:/pricing": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/privacy": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/problems": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/problems/<p>": {
+      "pages": 74,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/process": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/process/<slug>": {
+      "pages": 29,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/projects": {
+      "pages": 1,
+      "meanImgs": 6,
+      "meanRaster": 2,
+      "meanSvg": 4,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 5,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/residential": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/residential/<slug>": {
+      "pages": 29,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/seasonal": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/seasonal/<slug>": {
+      "pages": 8,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/services/<svc>": {
+      "pages": 29,
+      "meanImgs": 3,
+      "meanRaster": 2.6,
+      "meanSvg": 0.4,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/hero-aircon.svg",
+        "https://www.klservisrumah.my/hero-autogate.svg",
+        "https://www.klservisrumah.my/hero-awning.svg"
+      ]
+    },
+    "en:/services/<svc>/<sub>": {
+      "pages": 243,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/hero-aircon.svg",
+        "https://www.klservisrumah.my/hero-autogate.svg",
+        "https://www.klservisrumah.my/hero-awning.svg"
+      ]
+    },
+    "en:/services/<svc>/cost": {
+      "pages": 29,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/hero-aircon.svg",
+        "https://www.klservisrumah.my/hero-autogate.svg",
+        "https://www.klservisrumah.my/hero-awning.svg"
+      ]
+    },
+    "en:/services/<svc>/emergency": {
+      "pages": 29,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/hero-aircon.svg",
+        "https://www.klservisrumah.my/hero-autogate.svg",
+        "https://www.klservisrumah.my/hero-awning.svg"
+      ]
+    },
+    "en:/static/_not-found": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        ""
+      ]
+    },
+    "en:/suburbs/<suburb>/<svc>": {
+      "pages": 1508,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/hero-aircon.svg",
+        "https://www.klservisrumah.my/hero-autogate.svg",
+        "https://www.klservisrumah.my/hero-awning.svg"
+      ]
+    },
+    "en:/terms": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/tools/<slug>": {
+      "pages": 43,
+      "meanImgs": 4,
+      "meanRaster": 3.4,
+      "meanSvg": 0.6,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1.9,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/hero-aircon.svg",
+        "https://www.klservisrumah.my/tools/water-leak-triage-kl.webp",
+        "https://www.klservisrumah.my/hero-renovation.svg"
+      ]
+    },
+    "en:/top": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "en:/top/<slug>": {
+      "pages": 10,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "ms:/": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "ms:/blog": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "ms:/blog/<slug>": {
+      "pages": 216,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/hero-painting.svg",
+        "https://www.klservisrumah.my/hero-carpentry.svg",
+        "https://www.klservisrumah.my/hero-autogate.svg"
+      ]
+    },
+    "ms:/faq": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "ms:/problems": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "ms:/problems/<p>": {
+      "pages": 74,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "ms:/services/<svc>": {
+      "pages": 29,
+      "meanImgs": 3,
+      "meanRaster": 2.6,
+      "meanSvg": 0.4,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/hero-aircon.svg",
+        "https://www.klservisrumah.my/hero-autogate.svg",
+        "https://www.klservisrumah.my/hero-awning.svg"
+      ]
+    },
+    "ms:/services/<svc>/<sub>": {
+      "pages": 223,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/hero-aircon.svg",
+        "https://www.klservisrumah.my/hero-autogate.svg",
+        "https://www.klservisrumah.my/hero-awning.svg"
+      ]
+    },
+    "ms:/static/notis-privasi": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "ms:/static/terma": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "ms:/tools/<slug>": {
+      "pages": 43,
+      "meanImgs": 4,
+      "meanRaster": 3.4,
+      "meanSvg": 0.6,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1.9,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/tools/plumbing-diagnostic-kl.webp",
+        "https://www.klservisrumah.my/hero/home-services-waterproofing-kl.jpg",
+        "https://www.klservisrumah.my/tools/water-leak-triage-kl.webp"
+      ]
+    },
+    "zh:/": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "zh:/faq": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "zh:/problems": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "zh:/problems/<p>": {
+      "pages": 74,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "zh:/services/<svc>": {
+      "pages": 29,
+      "meanImgs": 3,
+      "meanRaster": 2.6,
+      "meanSvg": 0.4,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/hero-aircon.svg",
+        "https://www.klservisrumah.my/hero-autogate.svg",
+        "https://www.klservisrumah.my/hero-awning.svg"
+      ]
+    },
+    "zh:/services/<svc>/<sub>": {
+      "pages": 223,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/hero-aircon.svg",
+        "https://www.klservisrumah.my/hero-autogate.svg",
+        "https://www.klservisrumah.my/hero-awning.svg"
+      ]
+    },
+    "zh:/static/bo-ke": {
+      "pages": 217,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/hero-aircon.svg",
+        "https://www.klservisrumah.my/hero-waterproofing.svg",
+        "https://www.klservisrumah.my/hero/home-services-painters-kl.jpg"
+      ]
+    },
+    "zh:/static/tiao-kuan": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "zh:/static/yin-si-sheng-ming": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/logo/og-image.jpg"
+      ]
+    },
+    "zh:/tools/<slug>": {
+      "pages": 43,
+      "meanImgs": 4,
+      "meanRaster": 3.4,
+      "meanSvg": 0.6,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1.9,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/hero-renovation.svg",
+        "https://www.klservisrumah.my/hero-aircon.svg",
+        "https://www.klservisrumah.my/hero/home-services-electrical-kl.jpg"
+      ]
+    }
+  }
+}
