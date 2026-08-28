@@ -7,6 +7,29 @@ Master references: `📄 MASTER_AI_AGENT_INSTRUCTIONS.md` · `KLServisRumah-Comp
 
 ---
 
+## Session — 2026-08-28 — Fix Wave 1 (post-audit quick wins)
+
+**Scope:** Implementation of Part 5 §C/§N quick wins after all 5 audit parts completed (PRs #170–#175).
+
+**Completed ✅**
+- P2-C2: `content.relatedReading` key ×3 locales + i18n `resolveKey` no longer returns dotted keys as truthy
+- P2-14: near-me breadcrumb/schema label → `{service} Near Me in {area}`
+- C7/P5-08: unit-bearing startPrices + `UnitPriceSpecification` via `parsePricedOffer`
+- P3-05 partial: homepage AggregateOffer `lowPrice` no longer hardcoded `"80"`
+- P5-01: single business entity (`#organization` only); tool providers repointed
+- P5-03: removed tool SoftwareApplication `aggregateRating`; retired `getReviewSchema()`
+- P5-05: blog author schema → Organization
+- P5-11: homepage depth-1 BreadcrumbList removed
+- CF-1: 28 blog↔sub-service exact H1 twins retargeted to informational guides (remaining exact = 0)
+
+**Verification:** type-check PASS, lint PASS, audit:i18n PASS (1110×3), validate:blogs PASS (216)
+
+**Next:** C2/P2-C1/P4-01 content-in-`<main>`, then P5-02 FAQ visibility, then BP-1.
+
+**Report:** `docs/full-website-deep-audit/FIX-WAVE-1-REPORT.md`
+
+---
+
 ## Session 001
 
 **Date:** 2026-08-07 (UTC)
@@ -2614,7 +2637,7 @@ The owner answered the OWNER_ACTION_PLAN round-1 items and asked for all remaini
 - **Positives verified:** WhatsApp + `tel:` anchors on **100%** of EN pages (4,633/4,633); LocalBusiness/Organization/PostalAddress/geo/areaServed schema **100%**; 36 rich area hubs (1,850 words + landmarks + local FAQs); **0 broken internal links**; **0 true orphans**; anchor text **90% descriptive / 7% generic / 0% branded** (over-optimization free); footer bottom spacer clears the sticky mobile bar; viewport allows zoom (max-scale 5).
 
 ### Status / next session
-- **Completed ✅:** Part 0, Part 1 (PR #170), Part 2 (PR #171), Part 3 (PR #173), Part 4 (PR #174).
-- **Next: Part 5 — Schema + Content Gap + Priority Roadmap (per `00-PROMPT-OVERVIEW.md` + `PART-5-PROMPT.md`).** Continue in `docs/full-website-deep-audit/`. `scripts/part4-audit.ts` + `docs/audit-part4-*` are reusable for any SXO/CRO/local re-checks; the 5-part cumulative Final Output A–N consolidates in Part 5.
-- **Part 4 P0 fix queued (TRACKING.md):** P4-01 content-inside-`<main>`. Then P1: P4-09 (reviews markup, needs owner verification), P4-05 StickyBookButton global, P4-07 static lead form, P4-12 map, P4-06 include/exclude, P4-11 team/authors, P4-16 link rebalancing, P4-13 local restructure, P4-17 aircon problem linking, P4-02 mobile quote box.
+- **Completed ✅:** Part 0–5 audits (PRs #170–#175) + **Fix Wave 1** (P2-C2, P2-14, C7/P5-08, P5-01, P5-03, P5-05, P5-11, CF-1).
+- **Next: Fix Wave 2 — C2/P2-C1/P4-01 content-inside-`<main>`, then P5-02 FAQ visibility, then BP-1 programmatic consolidation.** See `docs/full-website-deep-audit/TRACKING.md` + `FIX-WAVE-1-REPORT.md`.
+- **Part 4 P0 fix still queued:** P4-01 content-inside-`<main>`. Then P1: P4-09 (reviews markup, needs owner verification), P4-05 StickyBookButton global, P4-07 static lead form, P4-12 map, P4-06 include/exclude, P4-11 team/authors, P4-16 link rebalancing, P4-13 local restructure, P4-17 aircon problem linking, P4-02 mobile quote box.
 - **REQUIRES VERIFICATION (owner/tools):** real Google review source/count (120 vs "120+"), project stats ("1,200+", "Completed in X"), response times, qualification badges (CIDB/ST/insurance), GBP/maps presence, GSC "Pages"/"Queries" for the 3,654 local tier; all competitor quantitative metrics (traffic/rankings/backlinks/reviews/AI-citations).

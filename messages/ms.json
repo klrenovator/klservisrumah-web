@@ -823,7 +823,7 @@
     "faqHowMuch": "Berapakah kos {service} di {area}?",
     "faqHowMuchA": "{service} bermula dari {price}. Harga akhir disahkan pada kadar tersiar kami yang adil selepas skop, akses dan bahan diperiksa.",
     "faqHowMuchSuburbA": "{service} bermula dari {price}. Harga akhir adalah adil dan disahkan selepas skop, akses dan bahan diperiksa.",
-    "nearMeBadge": "Halaman tempatan berdekatan",
+    "nearMeBadge": "Berdekatan",
     "nearMeH1": "{service} Berdekatan Saya di {area} — Dari {price}",
     "nearMeIntro": "Jika anda mencari “{service}” berdekatan anda di {area}, KL Servis Rumah boleh membantu di seluruh {landmarks}. Pasukan kami mengesahkan akses, skop, dan harga adil dan telus sebelum kerja bermula.",
     "nearMeCta": "Semak slot terdekat di WhatsApp",
@@ -851,7 +851,8 @@
     "nearMeAllServicesInArea": "Semua perkhidmatan di {area}",
     "nearMeViewArea": "Lihat {area}",
     "nearMeParentHeading": "Kembali ke",
-    "nearMeOtherNearMeHeading": "Lagi halaman berdekatan di {area}"
+    "nearMeOtherNearMeHeading": "Lagi halaman berdekatan di {area}",
+    "nearMeCrumb": "{service} Berdekatan di {area}"
   },
   "content": {
     "categoryLabel": "Kategori",
@@ -867,7 +868,8 @@
     "guidanceSafeApproach": "Pendekatan paling selamat ialah membuat senarai pendek kemungkinan punca, mengumpul foto yang jelas, mengesahkan jenis hartanah, dan meminta sebut harga tetap yang terperinci. KL Servis Rumah mengesahkan skop sebelum kerja bermula dan mengelakkan penetapan harga sewenang-wenangnya.",
     "featuredPathways": "Laluan terpilih",
     "completeIndex": "Indeks lengkap",
-    "selectedScopes": "Skop terpilih"
+    "selectedScopes": "Skop terpilih",
+    "relatedReading": "Bacaan berkaitan"
   },
   "faq": {
     "heroEyebrow": "Pusat Pengetahuan",

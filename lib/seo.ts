@@ -17,16 +17,6 @@ function absoluteUrl(path = "") {
   return `${baseUrl}${path.startsWith("/") ? path : `/${path}`}`;
 }
 
-function aggregateRating() {
-  return {
-    "@type": "AggregateRating",
-    ratingValue: siteConfig.reviewRating,
-    reviewCount: siteConfig.reviewCount,
-    bestRating: 5,
-    worstRating: 1
-  };
-}
-
 function postalAddress() {
   return {
     "@type": "PostalAddress",
@@ -195,28 +185,92 @@ export function getWebsiteSchema() {
   };
 }
 
-export function getLocalBusinessSchema() {
+/**
+ * @deprecated Audit P5-01 — do not emit a second business entity.
+ * The single site entity is `getOrganizationSchema()` (`HomeAndConstructionBusiness`
+ * @ `#organization`). This stub is retained only so any stale import fails
+ * loudly at call sites that still expect a full node; prefer deleting call
+ * sites instead of restoring the duplicate.
+ */
+export function getLocalBusinessSchema(): never {
+  throw new Error(
+    "getLocalBusinessSchema() removed (audit P5-01). Use getOrganizationSchema() / @id #organization."
+  );
+}
+
+/**
+ * Parse a human price string into schema.org Offer fields that keep units.
+ * "From RM 14 / sq ft" → price 14 + UnitPriceSpecification referenceUnit
+ * "From RM 450 / room" → price 450 + unit Text
+ * "On Quote" → no numeric price
+ * Bare "RM 14" with no unit is still emitted as a number (callers should pass
+ * unit-bearing strings — see services-data startPrice fixes, audit C7/P5-08).
+ */
+export function parsePricedOffer(price: string): {
+  price?: string;
+  priceSpecification?: Record<string, unknown>;
+} {
+  const raw = price.trim();
+  if (!raw || !/RM\s*[\d.,]/i.test(raw)) {
+    return {
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        priceCurrency: "MYR",
+        description: raw || "Project-specific quotation on request"
+      }
+    };
+  }
+  const numeric = raw.replace(/[^0-9.]/g, "");
+  if (!numeric) return {};
+
+  // Capture trailing unit after / or "per"
+  const unitMatch =
+    raw.match(/\/\s*([A-Za-z][A-Za-z0-9.\s-]{0,24})\s*$/) ||
+    raw.match(/\bper\s+([A-Za-z][A-Za-z0-9.\s-]{0,24})\s*$/i);
+  const unitText = unitMatch ? unitMatch[1].trim() : undefined;
+
+  // Schema.org unit codes where we know them
+  const unitCodeMap: Record<string, string> = {
+    "sq ft": "FTK",
+    sqft: "FTK",
+    "sq. ft": "FTK",
+    "sq. ft.": "FTK",
+    "kaki persegi": "FTK",
+    "平方英尺": "FTK",
+    room: "C62",
+    bilik: "C62",
+    point: "C62",
+    job: "C62",
+    task: "C62"
+  };
+  const unitCode = unitText ? unitCodeMap[unitText.toLowerCase()] : undefined;
+
+  if (unitText) {
+    return {
+      price: numeric,
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: numeric,
+        priceCurrency: "MYR",
+        unitText,
+        ...(unitCode ? { unitCode } : {}),
+        description: raw.startsWith("From") || raw.startsWith("Dari") || raw.startsWith("从")
+          ? raw
+          : `Starting from ${raw}`
+      }
+    };
+  }
+
   return {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": `${baseUrl}/#localbusiness`,
-    name: siteConfig.name,
-    image: absoluteUrl(siteConfig.defaultOgImage),
-    url: baseUrl,
-    telephone: siteConfig.phone,
-    priceRange: "RM80 - RM22000",
-    address: postalAddress(),
-    geo: geoCoordinates(),
-    openingHoursSpecification: {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-      opens: "09:00",
-      closes: "18:00"
-    },
-    areaServed: [
-      ...getServiceAreaSchema(),
-      buildServiceAreaGeoCircle()
-    ]
+    price: numeric,
+    priceSpecification: {
+      "@type": "PriceSpecification",
+      price: numeric,
+      priceCurrency: "MYR",
+      description: raw.startsWith("From") || raw.startsWith("Dari") || raw.startsWith("从")
+        ? raw
+        : `Starting from ${raw}`
+    }
   };
 }
 
@@ -224,17 +278,21 @@ export function getOfferCatalogSchema(items: { name: string; price: string; desc
   return {
     "@type": "OfferCatalog",
     name: "Service price guide",
-    itemListElement: items.map((item) => ({
-      "@type": "Offer",
-      itemOffered: {
-        "@type": "Service",
-        name: item.name,
-        description: item.desc
-      },
-      priceCurrency: "MYR",
-      price: item.price.replace(/[^0-9.]/g, "") || undefined,
-      availability: "https://schema.org/InStock"
-    }))
+    itemListElement: items.map((item) => {
+      const priced = parsePricedOffer(item.price);
+      return {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: item.name,
+          description: item.desc
+        },
+        priceCurrency: "MYR",
+        ...(priced.price ? { price: priced.price } : {}),
+        ...(priced.priceSpecification ? { priceSpecification: priced.priceSpecification } : {}),
+        availability: "https://schema.org/InStock"
+      };
+    })
   };
 }
 
@@ -273,14 +331,17 @@ export function getServiceSchema(service: { title: string; description: string; 
     // Quote-only services (e.g. awning installation) publish no numeric price —
     // emit an availability-only Offer rather than an invalid/empty price, which
     // would mislead structured-data consumers and contradict the visible page.
+    // Unit-bearing prices (e.g. "RM 14 / sq ft") keep their unit via
+    // UnitPriceSpecification so schema does not claim flooring costs "RM 14"
+    // (audit C7 / P5-08).
     offers: (() => {
-      const numericPrice = service.startPrice.replace(/[^0-9.]/g, "");
-      if (!numericPrice) {
+      const priced = parsePricedOffer(service.startPrice);
+      if (!priced.price) {
         return {
           "@type": "Offer",
           priceCurrency: "MYR",
           availability: "https://schema.org/InStock",
-          priceSpecification: {
+          priceSpecification: priced.priceSpecification ?? {
             "@type": "PriceSpecification",
             priceCurrency: "MYR",
             description: "Project-specific quotation on request"
@@ -290,15 +351,10 @@ export function getServiceSchema(service: { title: string; description: string; 
       return {
         "@type": "Offer",
         priceCurrency: "MYR",
-        price: numericPrice,
+        price: priced.price,
         priceValidUntil: "2027-12-31",
         availability: "https://schema.org/InStock",
-        priceSpecification: {
-          "@type": "PriceSpecification",
-          price: numericPrice,
-          priceCurrency: "MYR",
-          description: `Starting from ${service.startPrice}`
-        }
+        priceSpecification: priced.priceSpecification
       };
     })(),
     hasOfferCatalog: catalogSubServices ? getOfferCatalogSchema(catalogSubServices) : undefined,
@@ -365,12 +421,16 @@ export function getLocalBusinessServiceSchema(area: AreaDetail | SuburbDetail, s
         longitude: area.lng
       }
     },
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "MYR",
-      price: service.startPrice.replace(/[^0-9.]/g, ""),
-      availability: "https://schema.org/InStock"
-    },
+    offers: (() => {
+      const priced = parsePricedOffer(service.startPrice);
+      return {
+        "@type": "Offer",
+        priceCurrency: "MYR",
+        ...(priced.price ? { price: priced.price } : {}),
+        ...(priced.priceSpecification ? { priceSpecification: priced.priceSpecification } : {}),
+        availability: "https://schema.org/InStock"
+      };
+    })(),
     hasOfferCatalog: getOfferCatalogSchema(service.subServices)
   };
 }
@@ -387,9 +447,13 @@ export function getArticleSchema(post: BlogPost | { title: string; excerpt?: str
     // which Google rejects as an invalid date and drops the Article rich result.
     datePublished: toIsoDate("date" in post ? post.date : undefined),
     dateModified: toIsoDate("date" in post ? post.date : undefined),
+    // Audit P5-05: "KL Servis Rumah Editorial Team" is an organization, not a
+    // Person. Emit Organization until real human author entities exist. A
+    // Person typed with the company name is invalid schema and weak E-E-A-T.
     author: {
-      "@type": "Person",
-      name: ("author" in post && post.author) || siteConfig.name
+      "@type": "Organization",
+      name: ("author" in post && post.author) || siteConfig.name,
+      url: baseUrl
     },
     publisher: {
       "@type": "Organization",
@@ -420,33 +484,17 @@ export function getHowToSchema(steps: { title: string; desc: string }[], supplie
   };
 }
 
-export function getReviewSchema(reviews: ReviewInput[]) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: siteConfig.name,
-    image: absoluteUrl(siteConfig.defaultOgImage),
-    brand: {
-      "@type": "Brand",
-      name: siteConfig.name
-    },
-    sku: "klsr-reviews",
-    offers: {
-      "@type": "Offer",
-      price: "80.00",
-      priceCurrency: "MYR",
-      availability: "https://schema.org/InStock",
-      priceValidUntil: "2027-12-31"
-    },
-    aggregateRating: aggregateRating(),
-    review: reviews.map((review) => ({
-      "@type": "Review",
-      author: { "@type": "Person", name: review.author },
-      reviewRating: { "@type": "Rating", ratingValue: review.rating, bestRating: 5 },
-      reviewBody: review.body,
-      datePublished: review.datePublished
-    }))
-  };
+/**
+ * @deprecated Audit P5-03 — unused Product-wrapped review schema that would
+ * attach AggregateRating to a fake Product ("KL Servis Rumah") with a dummy
+ * RM 80 offer. Do not call. When reviews are owner-verified, emit
+ * AggregateRating + Review on the real LocalBusiness/Organization entity
+ * where the reviews are visibly shown (homepage/service), never as a Product.
+ */
+export function getReviewSchema(_reviews: ReviewInput[]): never {
+  throw new Error(
+    "getReviewSchema() removed (audit P5-03). Do not emit Product-wrapped AggregateRating; verify review source first."
+  );
 }
 
 export function getVideoSchema(video: VideoInput) {

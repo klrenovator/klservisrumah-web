@@ -823,7 +823,7 @@
     "faqHowMuch": "How much does {service} cost in {area}?",
     "faqHowMuchA": "{service} starts from {price}. Final price is confirmed at our published fair rate after scope, access and materials are checked.",
     "faqHowMuchSuburbA": "{service} starts from {price}. Final pricing is fair and confirmed after checking scope, access and materials.",
-    "nearMeBadge": "Near me local page",
+    "nearMeBadge": "Near Me",
     "nearMeH1": "{service} Near Me in {area} — From {price}",
     "nearMeIntro": "If you searched for “{service}” near you in {area}, KL Servis Rumah can help across {landmarks}. Our teams confirm access, scope, and the full price before work begins.",
     "nearMeCta": "Check nearest slot on WhatsApp",
@@ -851,7 +851,8 @@
     "nearMeAllServicesInArea": "All services in {area}",
     "nearMeViewArea": "View {area}",
     "nearMeParentHeading": "Go back to",
-    "nearMeOtherNearMeHeading": "More near-me pages in {area}"
+    "nearMeOtherNearMeHeading": "More near-me pages in {area}",
+    "nearMeCrumb": "{service} Near Me in {area}"
   },
   "content": {
     "categoryLabel": "Category",
@@ -867,7 +868,8 @@
     "guidanceSafeApproach": "The safest approach is to shortlist the likely cause, collect clear photos, confirm the property type, and request an itemised fixed-price quotation. KL Servis Rumah confirms scope before work begins and avoids arbitrary pricing.",
     "featuredPathways": "Featured pathways",
     "completeIndex": "Complete index",
-    "selectedScopes": "Selected scopes"
+    "selectedScopes": "Selected scopes",
+    "relatedReading": "Related reading"
   },
   "faq": {
     "heroEyebrow": "Knowledge Base",
