@@ -151,6 +151,8 @@ and `public/llms-full.txt` → "indexable pages listed in the sitemap".)*
 
 ### Quality gates
 
+Every row below was run **locally on this branch** and its output read.
+
 | Check | Result |
 |---|---|
 | `npm run lint` | **PASS** (0 errors, 0 warnings) |
@@ -171,6 +173,23 @@ and `public/llms-full.txt` → "indexable pages listed in the sitemap".)*
 | `npm run seo:audit` | **PASS** — metadata consistency |
 | `npm run test:estimators` | **PASS** — 320,331 assertions, 0 failures |
 | `npm audit` | **0 vulnerabilities** |
+
+### CI (PR #178)
+
+| Item | Result |
+|---|---|
+| Job `QA — gates, types, lint, SSG build, audits` | **pass** in 3m11s (run `33215280740`, job `98997403675`) |
+| What it executes | `npm ci` → `npm run prebuild` → `type-check` → `lint` → `build` → `audit:links` → `audit:html` → `seo:audit` → `audit:meta` |
+| BP-1 coverage in CI | `prebuild` includes `gen:bp1-map` and `audit:bp1 -- --source-only`, so the source-level gate **did** run in CI |
+
+> **Verification caveat — stated plainly.** The job *status* above came from
+> `gh pr checks` and `gh run view`. The *contents* of the CI log could **not** be
+> read from this sandbox: `gh run view --log` and the Actions results host both
+> fail with an EOF/network error here. So "CI ran `gen:bp1-map` and
+> `audit:bp1 --source-only`" is inferred from `.github/workflows/ci.yml` (read
+> directly) plus the job passing — **not** from observed CI log text. The same
+> commands were run locally in this session and their output is quoted above,
+> including the `prebuild` chain showing both steps execute and pass.
 
 ### Live HTTP behaviour (`next start`, probed with curl)
 
