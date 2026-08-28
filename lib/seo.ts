@@ -40,11 +40,12 @@ function geoCoordinates() {
  * Build a comprehensive areaServed array with GeoCoordinates.
  *
  * Audit P5-04: this list is now emitted ONLY inside the full Organization
- * node on the three homepages (the entity's home). Everywhere else the
- * compact `getOrganizationReferenceSchema()` node or a GeoCircle / page-local
- * Place is used instead — repeating 49 City nodes (each with a
- * containedInPlace Country sub-node) on every page produced 220,000+ City
- * nodes and 22–31 KB of JSON-LD per page (Part 5 §P5-04).
+ * node on the homepage (`/` — the entity's home; `/ms` and `/zh` are noindex
+ * redirect stubs). Everywhere else the compact
+ * `getOrganizationReferenceSchema()` node or a GeoCircle / page-local Place
+ * is used instead — repeating 49 City nodes (each with a containedInPlace
+ * Country sub-node) on every page produced 220,000+ City nodes and 22–31 KB
+ * of JSON-LD per page (Part 5 §P5-04).
  */
 export function getServiceAreaSchema(areas = siteConfig.areas) {
   return areas.map((area) => ({
@@ -175,7 +176,7 @@ export function getOrganizationSchema() {
  *
  * The FULL Organization node (`getOrganizationSchema()` — knowsAbout, brand,
  * full areaServed city list, contactPoints, openingHours…) is emitted only on
- * the three homepages, where the entity lives. Every other page ships this
+ * the homepage `/`, where the entity lives. Every other page ships this
  * ~0.7 KB identifying reference instead of the ~10.7 KB full node: parsers
  * that resolve @id across pages (Google's structured data pipeline) merge it
  * with the homepage entity; parsers that don't still learn WHO the business

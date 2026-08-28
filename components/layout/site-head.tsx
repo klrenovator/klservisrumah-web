@@ -14,9 +14,9 @@ import { getOrganizationReferenceSchema, getWebsiteSchema } from "@/lib/seo";
  *  - ONE business entity exists: `HomeAndConstructionBusiness` @ `#organization`.
  *    The parallel `LocalBusiness` @ `#localbusiness` node was removed (P5-01).
  *  - The FULL Organization node (knowsAbout, brand, 49-city areaServed,
- *    contactPoints, openingHours — ~10.7 KB) is emitted only on the three
- *    homepages, by the homepage page-components themselves.
- *  - Every page — including the homepages, where it merges with the full node
+ *    contactPoints, openingHours — ~10.7 KB) is emitted only on the homepage
+ *    `/` by its page component (`/ms` and `/zh` are noindex redirect stubs).
+ *  - Every page — including the homepage, where it merges with the full node
  *    by @id — gets the compact `getOrganizationReferenceSchema()` node
  *    (~0.7 KB) identifying the entity. Before P5-04 the full node was
  *    re-emitted here on all 3,669 pages: 22–31 KB of JSON-LD per page and
