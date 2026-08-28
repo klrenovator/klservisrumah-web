@@ -7,17 +7,17 @@
 ## Current State (Update this each session)
 
 > **FIX PHASE ACTIVE (2026-08-28):** the 5-part Deep Audit is complete and
-> merged (Parts 1–5, PRs #170–#175). **Fix Wave 1 (quick wins) is done** —
-> see `docs/full-website-deep-audit/FIX-WAVE-1-REPORT.md`. Read
-> `docs/full-website-deep-audit/TRACKING.md` first — it is the authoritative
-> status board.
+> merged (Parts 1–5, PRs #170–#175). **Fix Wave 1 and Fix Wave 2 are done** —
+> see `docs/full-website-deep-audit/FIX-WAVE-1-REPORT.md` and
+> `FIX-WAVE-2-REPORT.md`. Read `docs/full-website-deep-audit/TRACKING.md`
+> first — it is the authoritative status board.
 >
-> **Next session starts at:** C2 / P2-C1 / P4-01 — render real content inside
-> `<main>` (SSR Loading shell), then P5-02 FAQ visibility, then BP-1
-> programmatic consolidation.
+> **Next session starts at:** BP-1 phase 1 — near-me→parent 301s + stop
+> suburb-twin static generation (Part 1 Critical #1/#2). Do not add more
+> location pages. Do not re-add `app/(en|ms|zh)/loading.tsx`.
 
-**Branch:** arena/01a04966-klservisrumah-web (this session branch — push PRs from here)
-**Last completed session:** 2026-08-28 — Fix Wave 1 ✅ (P2-C2, P2-14, C7/P5-08, P5-01, P5-03, P5-05, P5-11, CF-1)
+**Branch:** arena/01a04976-klservisrumah-web (this session branch — push PRs from here)
+**Last completed session:** 2026-08-28 — Fix Wave 2 ✅ (C2/P2-C1/P4-01, P5-02, P3-11, P3-02 schema)
 
 **Quality gates (must all be green before any new work):**
 - [ ] npm run lint — 0 errors, 0 warnings
@@ -25,7 +25,7 @@
 - [ ] npm run build — SUCCESS (no errors)
 - [ ] npm run seo:audit — PASS
 - [ ] npm run audit:html — 0 fatal / 0 warnings
-- [ ] npm run audit:i18n — 1110 keys × 3, 0 missing
+- [ ] npm run audit:i18n — 1112 keys × 3, 0 missing
 - [ ] npm run audit:topical-map — 28/28, 112 relationships
 - [ ] npm run audit:specialty-locale — 112 × MS/ZH = 224 blocks
 - [ ] npm run audit:problem-i18n — 65 × MS/ZH, 12 redirects excluded

@@ -938,7 +938,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
   "tiling": {
     "slug": "tiling",
     "title": "Professional Tiling & Tile Repair",
-    "startPrice": "RM 14",
+    "startPrice": "RM 14 / sq ft",
     "icon": "grid-3x3",
     "tagline": "Floor and wall tiling for new builds, renovations, and repairs. Homogeneous, porcelain, ceramic, mosaic, and large-format slabs. From RM 14 / sq ft.",
     "subServices": [
@@ -1063,7 +1063,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
   "plaster-ceiling": {
     "slug": "plaster-ceiling",
     "title": "Plaster Ceiling Design & Build",
-    "startPrice": "RM 10",
+    "startPrice": "RM 10 / sq ft",
     "icon": "layers",
     "tagline": "Modern plaster ceiling with concealed LED trough, tiered design, L-box, and cove lighting for landed and high-rise properties. From RM 10 / sq ft.",
     "subServices": [
@@ -1188,7 +1188,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
   "skim-coat": {
     "slug": "skim-coat",
     "title": "Wall & Ceiling Skim Coat",
-    "startPrice": "RM 5",
+    "startPrice": "RM 5 / sq ft",
     "icon": "paint-roller",
     "tagline": "Glass-smooth skim coating for walls and ceilings, paint-ready finish, full surface preparation and crack repair. From RM 5 / sq ft.",
     "subServices": [
@@ -1250,7 +1250,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
   "flooring": {
     "slug": "flooring",
     "title": "Vinyl, SPC & Laminate Flooring",
-    "startPrice": "RM 14",
+    "startPrice": "RM 14 / sq ft",
     "icon": "square",
     "tagline": "Modern click-lock flooring for homes and offices. Waterproof SPC, scratch-resistant laminate, and luxury vinyl planks. From RM 14 / sq ft.",
     "subServices": [
@@ -1375,7 +1375,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
   "epoxy-flooring": {
     "slug": "epoxy-flooring",
     "title": "Epoxy & Polyurethane Flooring",
-    "startPrice": "RM 22",
+    "startPrice": "RM 22 / sq ft",
     "icon": "circle-dot",
     "tagline": "Heavy-duty epoxy floor coating for garages, warehouses, factories, showrooms, and commercial kitchens. From RM 22 / sq ft.",
     "subServices": [

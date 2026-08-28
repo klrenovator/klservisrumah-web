@@ -163,7 +163,7 @@ All prices are the published starting prices shown on the live service pages. Fi
 
 ### Professional Tiling & Tile Repair
 - Page: https://www.klservisrumah.my/services/tiling
-- Starting price: RM 14
+- Starting price: RM 14 / sq ft
 - Warranty: 12-Month Tile Adhesion & Grout Warranty
 - Floor Tiling Installation — From RM 14 / sq ft
 - Wall Tiling Installation — From RM 16 / sq ft
@@ -180,7 +180,7 @@ All prices are the published starting prices shown on the live service pages. Fi
 
 ### Plaster Ceiling Design & Build
 - Page: https://www.klservisrumah.my/services/plaster-ceiling
-- Starting price: RM 10
+- Starting price: RM 10 / sq ft
 - Warranty: 10-Year Sag-Free & Crack-Free Warranty
 - Flat Plaster Ceiling — From RM 10 / sq ft
 - False Ceiling Installation — From RM 10 / sq ft
@@ -197,7 +197,7 @@ All prices are the published starting prices shown on the live service pages. Fi
 
 ### Wall & Ceiling Skim Coat
 - Page: https://www.klservisrumah.my/services/skim-coat
-- Starting price: RM 5
+- Starting price: RM 5 / sq ft
 - Warranty: 12-Month Smoothness & Adhesion Warranty
 - Wall Skim Coating — From RM 5 / sq ft
 - Ceiling Skim Coating — From RM 6 / sq ft
@@ -207,7 +207,7 @@ All prices are the published starting prices shown on the live service pages. Fi
 
 ### Vinyl, SPC & Laminate Flooring
 - Page: https://www.klservisrumah.my/services/flooring
-- Starting price: RM 14
+- Starting price: RM 14 / sq ft
 - Warranty: 5-Year Installation Workmanship Warranty
 - SPC Click-Lock Flooring Install — From RM 14 / sq ft
 - Laminate Flooring Install — From RM 11 / sq ft
@@ -224,7 +224,7 @@ All prices are the published starting prices shown on the live service pages. Fi
 
 ### Epoxy & Polyurethane Flooring
 - Page: https://www.klservisrumah.my/services/epoxy-flooring
-- Starting price: RM 22
+- Starting price: RM 22 / sq ft
 - Warranty: 5-Year Delamination & Yellowing Warranty
 - Self-Levelling Epoxy Floor — From RM 22 / sq ft
 - Flake / Quartz Broadcast Epoxy — From RM 26 / sq ft
@@ -582,8 +582,8 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Flat Plaster Ceiling Installation in KL & Selangor — https://www.klservisrumah.my/blog/flat-plaster-ceiling-kl
 - Tiered & L-Box Ceiling Installation in KL & Selangor — https://www.klservisrumah.my/blog/tiered-l-box-ceiling-kl
 - Wall & Ceiling Skim Coat in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/wall-ceiling-skim-coat-kl
-- Wall Skim Coating in KL & Selangor — https://www.klservisrumah.my/blog/wall-skim-coating-kl
-- Ceiling Skim Coating in KL & Selangor — https://www.klservisrumah.my/blog/ceiling-skim-coating-kl
+- Wall Skim Coating Cost & Process Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/wall-skim-coating-kl
+- Ceiling Skim Coating Cost & Process Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/ceiling-skim-coating-kl
 - Vinyl, SPC & Laminate Flooring in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/vinyl-spc-laminate-flooring-kl
 - SPC Click-Lock Flooring Installation in KL & Selangor — https://www.klservisrumah.my/blog/spc-click-lock-flooring-kl
 - Laminate Flooring Installation in KL & Selangor — https://www.klservisrumah.my/blog/laminate-flooring-kl
@@ -591,7 +591,7 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - How Self-Levelling Epoxy Floors Work in KL Homes — https://www.klservisrumah.my/blog/self-levelling-epoxy-floor-kl
 - Flake vs Quartz Broadcast Epoxy: Which Finish Fits? — https://www.klservisrumah.my/blog/flake-quartz-broadcast-epoxy-kl
 - Roof Repair & Waterproofing in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/roof-repair-waterproofing-kl
-- Roof Leak Diagnosis & Repair in KL & Selangor — https://www.klservisrumah.my/blog/roof-leak-diagnosis-repair-kl
+- Roof Leak Diagnosis & Repair Cost Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/roof-leak-diagnosis-repair-kl
 - When Does a Roof Ridge Need Re-Bedding or Re-Pointing? — https://www.klservisrumah.my/blog/ridge-re-bedding-re-pointing-kl
 - Polycarbonate vs Metal vs ACP Awnings in Malaysia — https://www.klservisrumah.my/blog/polycarbonate-vs-metal-vs-acp-awning-malaysia
 - Car Porch Awning Guide: Materials, Drainage & Cost Factors — https://www.klservisrumah.my/blog/car-porch-awning-guide-malaysia
@@ -605,14 +605,14 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Aluminium Sliding Window Installation in KL & Selangor — https://www.klservisrumah.my/blog/aluminium-sliding-window-kl
 - Autogate Motor Replacement & Service in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/autogate-motor-replacement-service-kl
 - Auto Gate Installation & Motor Repair in KL & Selangor — https://www.klservisrumah.my/blog/autogate-services-kl
-- Bathroom & Wet Area Waterproofing in KL & Selangor — https://www.klservisrumah.my/blog/bathroom-and-wet-area-waterproofing
+- Bathroom Waterproofing Cost & Process Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/bathroom-and-wet-area-waterproofing
 - Built-in Wardrobe Installation in KL & Selangor — https://www.klservisrumah.my/blog/built-in-wardrobe-kl
 - Custom Carpentry & Joinery in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/custom-carpentry-joinery-kl
 - CCTV System Health Check & Relocation in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/cctv-health-check-and-relocation-kl
 - CCTV Installation in KL & Selangor: What the Job Involves — https://www.klservisrumah.my/blog/cctv-installation-kl
 - Ceiling Fan Installation & Replacement in KL & Selangor — https://www.klservisrumah.my/blog/ceiling-fan-installation-replacement
-- Ceiling Fan Replacement in KL & Selangor — https://www.klservisrumah.my/blog/ceiling-fan-replacement
-- Ceiling Repair & Re-Skim in KL & Selangor — https://www.klservisrumah.my/blog/ceiling-repair-reskim-kl
+- Ceiling Fan Replacement Cost & Process Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/ceiling-fan-replacement
+- Ceiling Repair & Re-Skim Cost Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/ceiling-repair-reskim-kl
 - Ceiling & Partition Services in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/ceiling-services-kl
 - Commercial & Office Painting in KL and Selangor — https://www.klservisrumah.my/blog/commercial-and-office-painting
 - Commercial Shoplot Renovation in KL and Selangor — https://www.klservisrumah.my/blog/commercial-shoplot-renovation
@@ -627,7 +627,7 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Custom Window Grille Installation in KL & Selangor — https://www.klservisrumah.my/blog/custom-window-grille-installation-kl
 - DB Box Upgrade & Rewiring in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/db-box-upgrade-and-rewiring
 - DC Motor Smart Fan Installation in KL & Selangor — https://www.klservisrumah.my/blog/dc-motor-smart-fan-installation-kl
-- Door, Hinge & Lockset Repair in KL & Selangor — https://www.klservisrumah.my/blog/door-hinge-and-lockset-repair
+- Door, Hinge & Lockset Repair Cost Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/door-hinge-and-lockset-repair
 - Door Planing and Adjustment in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/door-planing-adjustment-kl
 - Door Repair & Installation in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/door-repair-installation-kl
 - Double Swing Autogate Installation in KL and Selangor — https://www.klservisrumah.my/blog/double-swing-autogate
@@ -637,10 +637,10 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Epoxy Floor Repair & Recoating in KL — https://www.klservisrumah.my/blog/epoxy-floor-repair-recoating-kl
 - Exterior House Painting in KL and Selangor — https://www.klservisrumah.my/blog/exterior-house-painting
 - Fire-Rated Door Installation in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/fire-rated-door-installation-kl
-- Floor Tiling Installation in KL & Selangor — https://www.klservisrumah.my/blog/floor-tiling-installation
+- Floor Tiling Cost & Installation Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/floor-tiling-installation
 - Frameless Shower Screen Installation in KL & Selangor — https://www.klservisrumah.my/blog/frameless-shower-screen-kl
-- Full Condo Re-Skim Package in KL & Selangor — https://www.klservisrumah.my/blog/full-condo-reskim-package-kl
-- Full House Renovation Package in KL & Selangor — https://www.klservisrumah.my/blog/full-house-renovation-package
+- Full Condo Re-Skim Package Cost Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/full-condo-reskim-package-kl
+- Full House Renovation Package Cost Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/full-house-renovation-package
 - Full Torch-On Membrane Waterproofing in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/torch-on-membrane-waterproofing-kl
 - IKEA & Taobao Furniture Assembly in KL and Selangor — https://www.klservisrumah.my/blog/furniture-assembly-ikea-taobao
 - Glass & Aluminium Fabrication in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/glass-aluminium-fabrication-kl
@@ -651,19 +651,19 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Handyman Services in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/handyman-services-kl
 - Heat Pump Water Heater Installation in KL & Selangor — https://www.klservisrumah.my/blog/heat-pump-water-heater-installation-kl
 - Heavy-Duty Epoxy Mortar Screed in KL — https://www.klservisrumah.my/blog/heavy-duty-epoxy-mortar-screed-kl
-- Heavy TV Wall Mounting in KL & Selangor — https://www.klservisrumah.my/blog/heavy-tv-wall-mounting
+- Heavy TV Wall Mounting Cost & Safety Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/heavy-tv-wall-mounting
 - House Renovation Services in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/house-renovation-services-kl
 - Industrial & Shoplot Fan Installation in KL — https://www.klservisrumah.my/blog/industrial-shoplot-fan-installation-kl
-- Instant Water Heater Installation in KL & Selangor — https://www.klservisrumah.my/blog/instant-water-heater-installation
-- Interior House Painting in KL & Selangor — https://www.klservisrumah.my/blog/interior-house-painting
+- Instant Water Heater Installation Cost Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/instant-water-heater-installation
+- Interior House Painting Cost & Process Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/interior-house-painting
 - Key Cutting and Lock Re-Keying in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/key-cutting-lock-rekeying-kl
-- Kitchen & Bathroom Makeover in KL & Selangor — https://www.klservisrumah.my/blog/kitchen-and-bathroom-makeover
+- Kitchen & Bathroom Makeover Cost Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/kitchen-and-bathroom-makeover
 - Kitchen Cabinet & Countertop Services in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/kitchen-cabinet-services-kl
 - Kitchen Makeover: Doors and Hardware Only in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/kitchen-door-hardware-makeover-kl
-- Laminate Door Installation in KL & Selangor — https://www.klservisrumah.my/blog/laminate-door-installation-kl
+- Laminate Door Installation Cost Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/laminate-door-installation-kl
 - Landed House PoE CCTV in KL (8 Cameras) — https://www.klservisrumah.my/blog/landed-house-poe-cctv-kl
-- Large-Format Slab Tiling in KL & Selangor — https://www.klservisrumah.my/blog/large-format-slab-tiling-kl
-- LED Downlight Installation in KL & Selangor — https://www.klservisrumah.my/blog/led-downlight-installation
+- Large-Format Slab Tiling Cost & Process Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/large-format-slab-tiling-kl
+- LED Downlight Installation Cost Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/led-downlight-installation
 - Lighting Design & Installation in KL & Selangor — https://www.klservisrumah.my/blog/lighting-design-installation
 - Lighting Point & Downlight Installation in KL and Selangor — https://www.klservisrumah.my/blog/lighting-point-and-downlight-installation
 - Locksmith & Smart Lock Services in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/locksmith-smart-lock-services-kl
@@ -672,12 +672,12 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - 10ft L-Shape Modular Kitchen Cabinet in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/10ft-l-shape-modular-kitchen-kl
 - Modular Kitchen Cabinet (10 ft L-Shape) in KL & Selangor — https://www.klservisrumah.my/blog/modular-kitchen-cabinet-kl
 - Mortice & Deadbolt Lock Replacement in KL & Selangor — https://www.klservisrumah.my/blog/mortice-deadbolt-lock-replacement-kl
-- New Ceiling Fan Installation in KL & Selangor — https://www.klservisrumah.my/blog/new-ceiling-fan-installation
-- New Power Point & Switch Installation in KL & Selangor — https://www.klservisrumah.my/blog/new-power-point-and-switch-installation
+- New Ceiling Fan Installation Cost Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/new-ceiling-fan-installation
+- New Power Point & Switch Installation Cost Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/new-power-point-and-switch-installation
 - On-Site Welding Repair in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/on-site-welding-repair-kl
 - House Painting Services in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/house-painting-services-kl
 - Pendant & Chandelier Installation in KL & Selangor — https://www.klservisrumah.my/blog/pendant-chandelier-installation
-- Plaster Ceiling Installation in KL & Selangor — https://www.klservisrumah.my/blog/plaster-ceiling-installation
+- Plaster Ceiling Installation Cost & Process Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/plaster-ceiling-installation
 - Plumbing & Leak Repair Services in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/plumbing-services-kl
 - Autogate Not Closing or Motor Running Continuously — https://www.klservisrumah.my/blog/autogate-not-closing
 - Auto Gate Remote Not Working? Quick Checks and Fixes — https://www.klservisrumah.my/blog/autogate-remote-not-working
@@ -748,29 +748,29 @@ Symptom-first pages that identify a likely cause, the fix and the expected cost.
 - Sliding Autogate Installation & Track Repair in KL — https://www.klservisrumah.my/blog/sliding-autogate-installation-kl
 - Sliding Window Roller Replacement in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/sliding-window-roller-replacement-kl
 - Smart Lighting & Dimmer Retrofit in KL — https://www.klservisrumah.my/blog/smart-lighting-dimmer-retrofit-kl
-- Smart Lock Installation in KL & Selangor — https://www.klservisrumah.my/blog/smart-lock-installation-kl
-- Solid Timber Door Installation in KL & Selangor — https://www.klservisrumah.my/blog/solid-timber-door-installation-kl
+- Smart Lock Installation Cost & Buying Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/smart-lock-installation-kl
+- Solid Timber Door Installation Cost Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/solid-timber-door-installation-kl
 - Staircase Stringer Fabrication in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/staircase-stringer-fabrication-kl
 - Storage Tank Water Heater Installation in KL & Selangor — https://www.klservisrumah.my/blog/storage-water-heater-installation
 - Built-In Study Desk and Home Office in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/built-in-study-desk-home-office-kl
-- Tile Repair & Re-Grouting in KL & Selangor — https://www.klservisrumah.my/blog/tile-repair-regrouting-kl
+- Tile Repair & Re-Grouting Cost Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/tile-repair-regrouting-kl
 - Professional Tiling & Tile Repair in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/tiling-services-kl
-- Toilet, Tap & Sink Installation in KL & Selangor — https://www.klservisrumah.my/blog/toilet-tap-and-sink-installation
+- Toilet, Tap & Sink Installation Cost Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/toilet-tap-and-sink-installation
 - TV Console & Feature Wall Carpentry in KL & Selangor — https://www.klservisrumah.my/blog/tv-console-feature-wall-kl
 - Wall Crack & Moisture Repair in KL and Selangor — https://www.klservisrumah.my/blog/wall-crack-and-moisture-repair
 - Wall Dampness & Efflorescence Repair in KL and Selangor — https://www.klservisrumah.my/blog/wall-dampness-and-efflorescence-repair
 - Wall Mirror Installation in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/wall-mirror-installation-kl
-- Wall Tiling Installation in KL & Selangor — https://www.klservisrumah.my/blog/wall-tiling-installation
-- Water-Damaged Ceiling Repair in KL & Selangor — https://www.klservisrumah.my/blog/water-damaged-ceiling-repair
+- Wall Tiling Cost & Installation Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/wall-tiling-installation
+- Water-Damaged Ceiling Repair Cost & Process Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/water-damaged-ceiling-repair
 - Water Heater & Pump Installation in KL and Selangor — https://www.klservisrumah.my/blog/water-heater-and-pump-installation
 - Water Heater Installation & Repair in KL & Selangor — https://www.klservisrumah.my/blog/water-heater-installation-repair
 - Water Heater Repair & Descaling in KL and Selangor — https://www.klservisrumah.my/blog/water-heater-repair-and-descaling
-- Water Leakage Diagnosis & Repair in KL & Selangor — https://www.klservisrumah.my/blog/water-leakage-diagnosis-and-repair
+- Water Leakage Diagnosis & Repair Cost Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/water-leakage-diagnosis-and-repair
 - Waterproofing & Leak Repair Services in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/waterproofing-services-kl
 - Welding & Metal Fabrication Services in KL & Selangor — https://www.klservisrumah.my/blog/welding-metal-fabrication-kl
 - Window Handle and Hinge Repair in Kuala Lumpur & Selangor — https://www.klservisrumah.my/blog/window-handle-hinge-repair-kl
 - Window Repair & Glass Replacement in KL & Selangor — https://www.klservisrumah.my/blog/window-repair-glass-replacement-kl
-- Window Seal Replacement in KL & Selangor — https://www.klservisrumah.my/blog/window-seal-replacement-kl
+- Window Seal Replacement Cost & Process Guide (2026) — KL & Selangor — https://www.klservisrumah.my/blog/window-seal-replacement-kl
 
 ## Free Estimator Tools
 Trilingual, single-page estimators priced from the published rate list.

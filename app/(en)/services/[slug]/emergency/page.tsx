@@ -50,6 +50,7 @@ export default async function EmergencyPage(props: { params: Promise<{ slug: str
         bundle={buildServiceBundle(service)}
         relatedServices={buildRelatedServiceBundles(service.slug)}
         coverageAreaNames={buildCoverageAreaNames()}
+        faqs={faqs}
       />
     </>
   );

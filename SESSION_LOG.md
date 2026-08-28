@@ -2641,3 +2641,21 @@ The owner answered the OWNER_ACTION_PLAN round-1 items and asked for all remaini
 - **Next: Fix Wave 2 — C2/P2-C1/P4-01 content-inside-`<main>`, then P5-02 FAQ visibility, then BP-1 programmatic consolidation.** See `docs/full-website-deep-audit/TRACKING.md` + `FIX-WAVE-1-REPORT.md`.
 - **Part 4 P0 fix still queued:** P4-01 content-inside-`<main>`. Then P1: P4-09 (reviews markup, needs owner verification), P4-05 StickyBookButton global, P4-07 static lead form, P4-12 map, P4-06 include/exclude, P4-11 team/authors, P4-16 link rebalancing, P4-13 local restructure, P4-17 aircon problem linking, P4-02 mobile quote box.
 - **REQUIRES VERIFICATION (owner/tools):** real Google review source/count (120 vs "120+"), project stats ("1,200+", "Completed in X"), response times, qualification badges (CIDB/ST/insurance), GBP/maps presence, GSC "Pages"/"Queries" for the 3,654 local tier; all competitor quantitative metrics (traffic/rankings/backlinks/reviews/AI-citations).
+
+---
+
+## 2026-08-28 — Fix Wave 2 (C2 / P2-C1 / P4-01 + P5-02 FAQ visibility) — COMPLETED ✅
+
+### What was done
+- **C2 / P2-C1 / P4-01:** deleted `app/(en|ms|zh)/loading.tsx` so `{children}` flush inside `<main id="main-content">` instead of a "Loading…" Suspense fallback. Static-imported `EstimateSharePage` on the 22 `/estimate/<slug>` pages (they still streamed the H1 after `</footer>` via `next/dynamic` + loading). Documented the invariant on `SiteChrome` / `LoadingSkeleton`. Extended `audit:html` with `main-loading-shell`, `h1-outside-main`, `h1-after-footer`.
+- **P5-02 / P3-11 / P3-02:** new `VisibleFaqList` (`<details>` + `.faq-answer`). Homepage uses `HOMEPAGE_FAQS` (same array as JSON-LD). Near-me / cost / emergency now render the Q&As that were schema-only. FAQ hubs rewritten off `{isOpen && …}` and emit `getFAQSchema` from server-safe `config/hub-faqs.ts`.
+- Deliverable: `docs/full-website-deep-audit/FIX-WAVE-2-REPORT.md`. `TRACKING.md` + `CONTINUE_SESSION_PROMPT.md` updated.
+
+### Verification
+- lint 0/0 · type-check PASS · production build SUCCESS (5,823 routes / 5,815 HTML) · `audit:html` **0 fatal / 0 warnings** · i18n **1,112 × 3** · estimators 320,331 PASS · npm audit 0.
+- Corpus: loading-only `<main>` **0**, H1 outside `<main>` **0**, H1 after `</footer>` **0** (was 5,815).
+
+### Status / next session
+- **Completed ✅:** Fix Wave 1 + Fix Wave 2.
+- **Next: BP-1 phase 1** — near-me→parent 301s + stop suburb-twin static generation (Part 1 Critical #1/#2). Do **not** recreate route-group `loading.tsx` under SiteChrome.
+- **REQUIRES VERIFICATION (owner):** GSC, www 301, CWV, GBP/reviews, photography, founding/staff.

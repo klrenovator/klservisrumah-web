@@ -41,7 +41,7 @@
 | P0 | Fix Part 1 Critical #1 — Trim programmatic service+location index | ⏳ PENDING |
 | P0 | Fix Part 1 Critical #2 — Consolidate near-me duplicates | ⏳ PENDING |
 | P0 | Fix Part 1 Critical #3 — Resolve www/non-www host canonical | ⏳ PENDING |
-| P0 | Fix Part 2 P2-C1 — Server-render content inside `<main>` (static HTML is a Loading shell) | ⏳ PENDING |
+| P0 | Fix Part 2 P2-C1 — Server-render content inside `<main>` (static HTML is a Loading shell) | ✅ DONE (Fix Wave 2) |
 | P0 | Fix Part 2 P2-C2 — `content.relatedReading` literal key renders as H2 on 224 pages | ✅ DONE (Fix Wave 1) |
 | P0 | Fix Part 2 P2-C3 — 174 generic "content pod" pages (commercial/residential/process/answers/brands/top/seasonal/guides) | ⏳ PENDING |
 | P0 | Fix Part 2 P2-C4 — Replace pair-copy generator; authored local copy for area×service | ⏳ PENDING |
@@ -62,6 +62,7 @@
 | 2026-08-28 | Part 4 audit — full-corpus SXO/mobile/CRO/CTA/trust/local + internal-link graph & anchor-text scan | ✅ Part 4 committed & merged (PR #174) |
 | 2026-08-28 | Part 5 audit — full-corpus schema/breadcrumb/image/cannibalization scan (`scripts/part5-audit.ts`) + content gap + decay + brand/entity + **cumulative Final Output A–N** | ✅ Part 5 committed (PR this session) — **ALL 5 AUDIT PARTS COMPLETE** |
 | 2026-08-28 | **Fix Wave 1** — quick wins from Part 5 §C/§N: P2-C2, P2-14, C7/P5-08, P5-01, P5-03, P5-05, P5-11, CF-1 (28 twin H1s), P3-05 lowPrice | ✅ See `FIX-WAVE-1-REPORT.md` |
+| 2026-08-28 | **Fix Wave 2** — C2/P2-C1/P4-01 content-inside-`<main>` + P5-02/P3-11/P3-02 visible FAQs | ✅ See `FIX-WAVE-2-REPORT.md` |
 
 ---
 
@@ -69,7 +70,7 @@
 
 | Prio | Task | Status |
 |---|---|---|
-| P0 | P5-02 — FAQPage markup on ~1,131 pages whose Q&As are not in rendered HTML (1,073 near-me + 29 cost + 29 emergency + homepage): SSR the FAQs or strip the schema | ⏳ PENDING |
+| P0 | P5-02 — FAQPage markup on ~1,131 pages whose Q&As are not in rendered HTML (1,073 near-me + 29 cost + 29 emergency + homepage): SSR the FAQs or strip the schema | ✅ DONE (Fix Wave 2) |
 | P0 | P5-08 — Unit-less Offer prices (`price:"14"` flooring etc. on ~2,500 pages) → `UnitPriceSpecification` + visible units (with P3-05) | ✅ DONE (Fix Wave 1) |
 | P0 | CF-1 — Retarget/301 the 26 blog↔sub-service H1 twins (list in `audit-part5-cannibalization.json`) | ✅ DONE (Fix Wave 1 — 28 EN exact twins retargeted; remaining exact = 0) |
 | P0 | P5-12 — Photography program: 37 images / 5,815 pages, 0 real project photos (owner-dependent; start immediately) | ⏳ PENDING (owner) |
@@ -90,12 +91,10 @@
 
 ## ⭐ NEXT SESSION MUST CONTINUE HERE
 
-**All 5 audit parts are complete. Fix Wave 1 (quick wins) is complete** — see `FIX-WAVE-1-REPORT.md`.
+**All 5 audit parts are complete. Fix Wave 1 (quick wins) is complete. Fix Wave 2 (content-inside-`<main>` + visible FAQs) is complete** — see `FIX-WAVE-1-REPORT.md` and `FIX-WAVE-2-REPORT.md`.
 
-1. **Next P0 structural work (in order):**
-   - **C2 / P2-C1 / P4-01** — Render real page content inside `<main>` (remove SSR "Loading…" shell; content currently after `</footer>` on 5,815 pages).
-   - **P5-02** — FAQPage markup vs visible FAQ on ~1,131 pages (SSR FAQs or strip schema).
-   - **BP-1 phase 1** — near-me→parent 301s + stop suburb-twin static generation (Part 1 Critical #1/#2).
+1. **Next P0 structural work:**
+   - **BP-1 phase 1** — near-me→parent 301s + stop suburb-twin static generation (Part 1 Critical #1/#2). Do not add more location pages.
 2. Then: P5-04 areaServed slim, P5-10 breadcrumbs on pods, CF-4 cost→rate-book, P3-01 BM/ZH English leaks.
 3. **Still-missing access (blockers to re-request from owner):** Google Search Console, live HTTP/edge check (www 301), CWV/CrUX, GBP + review source verification, owner fact confirmations (reviews count, founding year, staff, stats), photography assets (P5-12).
 
@@ -105,7 +104,7 @@
 
 | Prio | Task | Status |
 |---|---|---|
-| P0 | P4-01 — Render page content inside `<main>` (remove SSR "Loading…" shell; content currently after `</footer>` on 5,815 pages) | ⏳ PENDING |
+| P0 | P4-01 — Render page content inside `<main>` (remove SSR "Loading…" shell; content currently after `</footer>` on 5,815 pages) | ✅ DONE (Fix Wave 2 — 0/5,815 remaining) |
 | P1 | P4-09 — Add AggregateRating+Review to homepage/service/pricing LocalBusiness; remove `aggregateRating` from tool SoftwareApplication | ⏳ PENDING (needs owner review verification) |
 | P1 | P4-05 — Mount `StickyBookButton` globally / on commercial templates (currently service+sub-service only) | ⏳ PENDING |
 | P1 | P4-07 — Add static-SSR inquiry/callback form (all forms JS-gated today) | ⏳ PENDING |
@@ -130,8 +129,8 @@
 | P0 | P3-01 — Fix English leaks inside BM/中文 DirectAnswer blocks (29/29 service pages) + add prebuild leak validator | ⏳ PENDING |
 | P0 | P3-05 — Add units to per-sq-ft prices on all AI surfaces ("from RM 14/10/5/22") + fix `lowPrice: "80"` | 🟡 PARTIAL (Fix Wave 1 — startPrice units + schema UnitPriceSpecification + homepage lowPrice fixed; remaining AI-surface copy leaks still ⏳) |
 | P0 | P3-07 — Reconcile contradictory facts: RM 180 vs 220 ceiling price, "28+" vs 29 services, warranty pill vs per-service warranty (251 pages), stats claims | ⏳ PENDING |
-| P1 | P3-11 — Server-render homepage + /faq hub accordion answers (JS-only today) | ⏳ PENDING |
-| P1 | P3-02 — /faq hub: add FAQPage JSON-LD + question H3s + remove hidden "No matches" text | ⏳ PENDING |
+| P1 | P3-11 — Server-render homepage + /faq hub accordion answers (JS-only today) | ✅ DONE (Fix Wave 2 — native `<details>`) |
+| P1 | P3-02 — /faq hub: add FAQPage JSON-LD + question H3s + remove hidden "No matches" text | 🟡 PARTIAL (Fix Wave 2 — FAQPage JSON-LD + visible answers; question H3s / hidden empty-state still ⏳) |
 | P1 | P3-04 — Cost pages: add "How much does {svc} cost in KL?" DirectAnswer + expand 459-word bodies | ⏳ PENDING |
 | P1 | P3-18 — llms.txt: list all 29 services (aircon missing) with units; link aeo-faq.txt | ⏳ PENDING |
 | P1 | P3-09 — Owner verification of stats/claims (1,200+, 15+ Pros, 120+/120, 30–60 min, "written by local tradesmen") | ⏳ PENDING (owner) |

@@ -1,9 +1,10 @@
 import { buildMetadata } from "@/lib/seo-meta";
 import { FAQAccordion } from "@/components/sections/faq-accordion";
+import { faqsByLang } from "@/config/hub-faqs";
 import { FaqHeroHeading } from "@/components/sections/faq-hero-heading";
 import { FaqDirectoryView } from "@/components/sections/faq-directory-view";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { getSpeakableSchema } from "@/lib/seo";
+import { getFAQSchema, getSpeakableSchema } from "@/lib/seo";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
 import { Phone, MessageSquare } from "lucide-react";
@@ -45,6 +46,7 @@ export default function ChineseFaqPage() {
       </section>
 
       <Breadcrumbs homeLabel="首页" ariaLabel="面包屑导航" items={[{ label: "常见问题", href: "/zh/chang-jian-wen-ti" }]} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(faqsByLang.zh)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getSpeakableSchema(["h1", ".faq-intro", ".faq-answer"])) }} />
 
       <FAQAccordion />

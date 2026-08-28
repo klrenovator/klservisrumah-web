@@ -15,8 +15,8 @@ KL Servis Rumah provides professional home maintenance services across Kuala Lum
 - Water Heater Installation & Repair: from RM 180 — Instant Water Heater Installation, Storage Tank Heater Installation, Water Heater Repair & Descaling
 - Ceiling Fan Installation & Replacement: from RM 150 — New Ceiling Fan Installation, Ceiling Fan Replacement, DC Motor Smart Fan Install
 - Lighting Design & Installation: from RM 120 — LED Downlight Installation, Pendant & Chandelier Install, Cove & Strip LED Installation
-- Professional Tiling & Tile Repair: from RM 14 — Floor Tiling Installation, Wall Tiling Installation, Floor Tile Replacement & Tile Hacking
-- Plaster Ceiling Design & Build: from RM 10 — Flat Plaster Ceiling, False Ceiling Installation, Gypsum Ceiling
+- Professional Tiling & Tile Repair: from RM 14 / sq ft — Floor Tiling Installation, Wall Tiling Installation, Floor Tile Replacement & Tile Hacking
+- Plaster Ceiling Design & Build: from RM 10 / sq ft — Flat Plaster Ceiling, False Ceiling Installation, Gypsum Ceiling
 
 Full directory of all 29 services: https://www.klservisrumah.my/services
 
@@ -100,10 +100,10 @@ One short, stable link per service (https://www.klservisrumah.my/estimate/<servi
 - Water Heater Installation & Repair (from RM 180): https://www.klservisrumah.my/estimate/water-heater
 - Ceiling Fan Installation & Replacement (from RM 150): https://www.klservisrumah.my/estimate/ceiling-fan
 - Lighting Design & Installation (from RM 120): https://www.klservisrumah.my/estimate/lighting
-- Professional Tiling & Tile Repair (from RM 14): https://www.klservisrumah.my/estimate/tiling
-- Wall & Ceiling Skim Coat (from RM 5): https://www.klservisrumah.my/estimate/skim-coat
-- Vinyl, SPC & Laminate Flooring (from RM 14): https://www.klservisrumah.my/estimate/flooring
-- Epoxy & Polyurethane Flooring (from RM 22): https://www.klservisrumah.my/estimate/epoxy-flooring
+- Professional Tiling & Tile Repair (from RM 14 / sq ft): https://www.klservisrumah.my/estimate/tiling
+- Wall & Ceiling Skim Coat (from RM 5 / sq ft): https://www.klservisrumah.my/estimate/skim-coat
+- Vinyl, SPC & Laminate Flooring (from RM 14 / sq ft): https://www.klservisrumah.my/estimate/flooring
+- Epoxy & Polyurethane Flooring (from RM 22 / sq ft): https://www.klservisrumah.my/estimate/epoxy-flooring
 - Roof Repair & Waterproofing (from RM 380): https://www.klservisrumah.my/estimate/roof-repair
 - Kitchen Cabinet & Countertop (from RM 7,500): https://www.klservisrumah.my/estimate/kitchen-cabinet
 - Custom Carpentry & Joinery (from RM 300): https://www.klservisrumah.my/estimate/carpentry

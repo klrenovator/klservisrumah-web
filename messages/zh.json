@@ -1413,7 +1413,8 @@
           "note": "报价会按电视尺寸、支架类型、墙体材料、线槽和锚栓要求调整。"
         }
       }
-    }
+    },
+    "faqHeading": "{name}费用常见问题"
   },
   "emergencyPage": {
     "servicesCrumb": "服务",
@@ -1428,7 +1429,8 @@
     "coverageSub": "请分享准确地址或地图定位，以便我们查看最近可用团队和实际抵达时间。",
     "ctaHeading": "WhatsApp 紧急派工",
     "ctaBody": "请使用下方按钮，并在消息中写上 URGENT。",
-    "ctaButton": "WhatsApp 紧急请求"
+    "ctaButton": "WhatsApp 紧急请求",
+    "faqHeading": "{name}紧急服务常见问题"
   },
   "pricingComparison": {
     "eyebrow": "透明定价",

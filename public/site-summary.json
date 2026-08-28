@@ -90,35 +90,35 @@
     {
       "slug": "tiling",
       "title": "Professional Tiling & Tile Repair",
-      "startPrice": "RM 14",
+      "startPrice": "RM 14 / sq ft",
       "warranty": "12-Month Tile Adhesion & Grout Warranty",
       "path": "/services/tiling"
     },
     {
       "slug": "plaster-ceiling",
       "title": "Plaster Ceiling Design & Build",
-      "startPrice": "RM 10",
+      "startPrice": "RM 10 / sq ft",
       "warranty": "10-Year Sag-Free & Crack-Free Warranty",
       "path": "/services/plaster-ceiling"
     },
     {
       "slug": "skim-coat",
       "title": "Wall & Ceiling Skim Coat",
-      "startPrice": "RM 5",
+      "startPrice": "RM 5 / sq ft",
       "warranty": "12-Month Smoothness & Adhesion Warranty",
       "path": "/services/skim-coat"
     },
     {
       "slug": "flooring",
       "title": "Vinyl, SPC & Laminate Flooring",
-      "startPrice": "RM 14",
+      "startPrice": "RM 14 / sq ft",
       "warranty": "5-Year Installation Workmanship Warranty",
       "path": "/services/flooring"
     },
     {
       "slug": "epoxy-flooring",
       "title": "Epoxy & Polyurethane Flooring",
-      "startPrice": "RM 22",
+      "startPrice": "RM 22 / sq ft",
       "warranty": "5-Year Delamination & Yellowing Warranty",
       "path": "/services/epoxy-flooring"
     },

@@ -1371,7 +1371,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
   "tiling": {
     "slug": "tiling",
     "title": "Professional Tiling & Tile Repair",
-    "startPrice": "RM 14",
+    "startPrice": "RM 14 / sq ft",
     "tagline": "Floor and wall tiling for new builds, renovations, and repairs. Homogeneous, porcelain, ceramic, mosaic, and large-format slabs. From RM 14 / sq ft.",
     "warranty": "12-Month Tile Adhesion & Grout Warranty",
     "subServices": [
@@ -1561,7 +1561,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
   "plaster-ceiling": {
     "slug": "plaster-ceiling",
     "title": "Plaster Ceiling Design & Build",
-    "startPrice": "RM 10",
+    "startPrice": "RM 10 / sq ft",
     "tagline": "Modern plaster ceiling with concealed LED trough, tiered design, L-box, and cove lighting for landed and high-rise properties. From RM 10 / sq ft.",
     "warranty": "10-Year Sag-Free & Crack-Free Warranty",
     "subServices": [
@@ -1751,7 +1751,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
   "skim-coat": {
     "slug": "skim-coat",
     "title": "Wall & Ceiling Skim Coat",
-    "startPrice": "RM 5",
+    "startPrice": "RM 5 / sq ft",
     "tagline": "Glass-smooth skim coating for walls and ceilings, paint-ready finish, full surface preparation and crack repair. From RM 5 / sq ft.",
     "warranty": "12-Month Smoothness & Adhesion Warranty",
     "subServices": [
@@ -1836,7 +1836,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
   "flooring": {
     "slug": "flooring",
     "title": "Vinyl, SPC & Laminate Flooring",
-    "startPrice": "RM 14",
+    "startPrice": "RM 14 / sq ft",
     "tagline": "Modern click-lock flooring for homes and offices. Waterproof SPC, scratch-resistant laminate, and luxury vinyl planks. From RM 14 / sq ft.",
     "warranty": "5-Year Installation Workmanship Warranty",
     "subServices": [
@@ -2026,7 +2026,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
   "epoxy-flooring": {
     "slug": "epoxy-flooring",
     "title": "Epoxy & Polyurethane Flooring",
-    "startPrice": "RM 22",
+    "startPrice": "RM 22 / sq ft",
     "tagline": "Heavy-duty epoxy floor coating for garages, warehouses, factories, showrooms, and commercial kitchens. From RM 22 / sq ft.",
     "warranty": "5-Year Delamination & Yellowing Warranty",
     "subServices": [
