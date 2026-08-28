@@ -8,6 +8,7 @@ import { areaPages } from "@/config/area-data";
 import { blogPosts } from "@/config/blog-data";
 import { blogI18n, localizedBlogPath } from "@/config/blog-i18n";
 import { suburbPages } from "@/config/suburb-data";
+import { hasAreaTwin } from "@/lib/bp1-consolidation";
 import { problemLocaleUrls } from "@/config/problem-canonical";
 import { indexableProblemPages } from "@/config/problem-index";
 import { allGenericPages, clusterPages, maintenancePages } from "@/config/content-data";
@@ -180,21 +181,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]);
 
   const clusterRoutes: Entry[] = clusterPages.map((page) => ({ path: `/services/${page.relatedServiceSlug}/${page.slug}`, priority: 0.82 }));
+  // BP-1 phase 1: `/areas/<area>/<svc>/near-me` is gone. Those 1,073 URLs were
+  // literal duplicates of their own parent (only the word "near" differed) and
+  // are now 301-redirected to `/areas/<area>/<svc>` — see
+  // `lib/bp1-consolidation.ts`. Listing them here would ask Google to crawl a
+  // thousand pages that answer with a redirect.
   const areaRoutes: Entry[] = areaPages.flatMap((area) => [
     { path: `/areas/${area.slug}`, priority: 0.85 },
-    ...Object.keys(servicesData).flatMap((serviceSlug) => [
-      { path: `/areas/${area.slug}/${serviceSlug}`, priority: 0.9 },
-      { path: `/areas/${area.slug}/${serviceSlug}/near-me`, priority: 0.82 }
-    ])
+    ...Object.keys(servicesData).map((serviceSlug) => ({ path: `/areas/${area.slug}/${serviceSlug}`, priority: 0.9 }))
   ]);
   // Only list suburbs that do NOT have an `/areas` twin. The 37 overlapping
-  // suburbs canonicalise to `/areas/<slug>/<service>` (see
-  // `app/suburbs/[slug]/[serviceSlug]/page.tsx`), and a sitemap should never
-  // advertise a URL that points its canonical somewhere else — that asks Google
-  // to crawl 1,036 pages only to discard them.
-  const areaSlugs = new Set(areaPages.map((area) => area.slug));
+  // suburbs 301 to `/areas/<slug>/<service>` (BP-1 phase 1 — they are no longer
+  // generated at all), and a sitemap should never advertise a URL that answers
+  // with a redirect. `hasAreaTwin` is the same predicate the route's
+  // `generateStaticParams` and the middleware redirect use, so the three can
+  // never disagree.
   const suburbRoutes: Entry[] = suburbPages
-    .filter((suburb) => !areaSlugs.has(suburb.slug))
+    .filter((suburb) => !hasAreaTwin(suburb.slug))
     .flatMap((suburb) => Object.keys(servicesData).map((serviceSlug) => ({ path: `/suburbs/${suburb.slug}/${serviceSlug}`, priority: 0.85 })));
   const problemRoutes: Entry[] = indexableProblemPages().flatMap((problem) => {
     const languages = problemLocaleUrls(problem.slug);

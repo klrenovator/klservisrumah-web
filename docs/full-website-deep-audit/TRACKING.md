@@ -38,9 +38,9 @@
 | P1 | Audit Part 4 (SXO / Local / Internal Linking / CRO / Trust) | ✅ DONE (PR #174) |
 | P1 | Audit Part 5 (Schema / Content Gap / Roadmap + cumulative Final Output A–N) | ✅ DONE (this session) |
 | — | Merge per-part audit PRs (this session: Pt 1 merged) | ✅ DONE (Pt 1 + Pt 2) |
-| P0 | Fix Part 1 Critical #1 — Trim programmatic service+location index | ⏳ PENDING |
-| P0 | Fix Part 1 Critical #2 — Consolidate near-me duplicates | ⏳ PENDING |
-| P0 | Fix Part 1 Critical #3 — Resolve www/non-www host canonical | ⏳ PENDING |
+| P0 | Fix Part 1 Critical #1 — Trim programmatic service+location index | ✅ DONE (BP-1 phase 1 — 2,146 duplicate URLs retired) |
+| P0 | Fix Part 1 Critical #2 — Consolidate near-me duplicates | ✅ DONE (BP-1 phase 1 — 1,073 → 301 to parent) |
+| P0 | Fix Part 1 Critical #3 — Resolve www/non-www host canonical | ⏳ PENDING (owner — needs live edge access) |
 | P0 | Fix Part 2 P2-C1 — Server-render content inside `<main>` (static HTML is a Loading shell) | ✅ DONE (Fix Wave 2) |
 | P0 | Fix Part 2 P2-C2 — `content.relatedReading` literal key renders as H2 on 224 pages | ✅ DONE (Fix Wave 1) |
 | P0 | Fix Part 2 P2-C3 — 174 generic "content pod" pages (commercial/residential/process/answers/brands/top/seasonal/guides) | ⏳ PENDING |
@@ -63,6 +63,7 @@
 | 2026-08-28 | Part 5 audit — full-corpus schema/breadcrumb/image/cannibalization scan (`scripts/part5-audit.ts`) + content gap + decay + brand/entity + **cumulative Final Output A–N** | ✅ Part 5 committed (PR this session) — **ALL 5 AUDIT PARTS COMPLETE** |
 | 2026-08-28 | **Fix Wave 1** — quick wins from Part 5 §C/§N: P2-C2, P2-14, C7/P5-08, P5-01, P5-03, P5-05, P5-11, CF-1 (28 twin H1s), P3-05 lowPrice | ✅ See `FIX-WAVE-1-REPORT.md` |
 | 2026-08-28 | **Fix Wave 2** — C2/P2-C1/P4-01 content-inside-`<main>` + P5-02/P3-11/P3-02 visible FAQs | ✅ See `FIX-WAVE-2-REPORT.md` |
+| 2026-08-28 | **BP-1 phase 1** — Part 1 Critical #1/#2: 1,073 `/areas/*/*/near-me` + 1,073 `/suburbs/<twin>/*` retired to 301s; SSG stopped; sitemap 4,739→3,666; HTML 5,815→3,669; near-me Q&A absorbed into parent (FAQPage 3→6); new `audit:bp1` gate + `gen:bp1-map` | ✅ See `BP-1-PHASE-1-REPORT.md` |
 
 ---
 
@@ -78,7 +79,7 @@
 | P1 | P5-03 — Strip `aggregateRating` from tool SoftwareApplication; delete unused Product-wrapped `getReviewSchema()` | ✅ DONE (Fix Wave 1) |
 | P1 | P5-05 — Blog `author` Person→Organization (interim); real author entities later | ✅ DONE (Fix Wave 1 — Organization interim) |
 | P1 | P5-13/14 — Raster 1200×630 OG images (SVG og:image breaks WhatsApp/social previews on ~2,200+ pages); fix schema `image` fields too | ⏳ PENDING |
-| P1 | P5-10 — Breadcrumbs (UI+schema) on 184 pod pages + 20 specialty sub-services + 29 near-me hubs + 20 guides | ⏳ PENDING |
+| P1 | P5-10 — Breadcrumbs (UI+schema) on 184 pod pages + 20 specialty sub-services + 29 near-me hubs + 20 guides | ⏳ PENDING (**unblocked** — was sequenced after BP-1) |
 | P1 | CF-4 — Merge rate-book into `/services/<svc>/cost` pages; evaluate NOINDEX/merge for `/estimate/*` (23 pages) | ⏳ PENDING |
 | P1 | §5.4-B1 — BM commercial tree (harga/problem/money templates) — largest content gap | ⏳ PENDING |
 | P2 | P5-06 — HowTo: per-page names (all 74 problems say "Professional home service process") or drop (rich results retired) | ⏳ PENDING |
@@ -91,12 +92,28 @@
 
 ## ⭐ NEXT SESSION MUST CONTINUE HERE
 
-**All 5 audit parts are complete. Fix Wave 1 (quick wins) is complete. Fix Wave 2 (content-inside-`<main>` + visible FAQs) is complete** — see `FIX-WAVE-1-REPORT.md` and `FIX-WAVE-2-REPORT.md`.
+**All 5 audit parts are complete. Fix Wave 1, Fix Wave 2 and BP-1 phase 1 are complete** — see `FIX-WAVE-1-REPORT.md`, `FIX-WAVE-2-REPORT.md` and `BP-1-PHASE-1-REPORT.md`.
 
-1. **Next P0 structural work:**
-   - **BP-1 phase 1** — near-me→parent 301s + stop suburb-twin static generation (Part 1 Critical #1/#2). Do not add more location pages.
-2. Then: P5-04 areaServed slim, P5-10 breadcrumbs on pods, CF-4 cost→rate-book, P3-01 BM/ZH English leaks.
-3. **Still-missing access (blockers to re-request from owner):** Google Search Console, live HTTP/edge check (www 301), CWV/CrUX, GBP + review source verification, owner fact confirmations (reviews count, founding year, staff, stats), photography assets (P5-12).
+1. **Next structural work — BP-1 phase 2:** the demand-backed keep-list for the
+   remaining **1,073** `/areas/<area>/<svc>` pairs (plus the 435 kept suburb
+   pages). Keep only areas with genuine demand or a unique local signal, and add
+   authored local copy (landmarks, condo/JMB rules, real jobs) to the kept set.
+   **Blocked on GSC data (owner)** — Part 1 §1.3 is explicit: *do not delete on
+   low traffic alone.*
+2. Then: **P5-04** areaServed slim → **P5-10** breadcrumbs on pods (was
+   sequenced "after BP-1", now unblocked) → **CF-4** cost→rate-book →
+   **P3-01** BM/ZH English leaks → **P2-C3/P2-C4** content pods + pair-copy generator.
+3. **Post-deploy for BP-1 (owner/SEO):** GSC + Bing — confirm the 2,146 URLs move
+   to *"Page with redirect"*; resubmit `/sitemap.xml` (3,666 URLs); IndexNow-ping
+   the surviving `/areas/<area>/<svc>` set; watch for the normal 1–2 week dip.
+   Also apply `git apply docs/full-website-deep-audit/BP-1-ci-audit-bp1.patch`
+   (adds `audit:bp1` as a post-build CI step — this session's token lacks the
+   `workflows` permission, so the push was rejected and reverted; the
+   source-level half already runs in CI via `prebuild`).
+4. **Still-missing access (blockers to re-request from owner):** Google Search
+   Console, live HTTP/edge check (www 301 + trailing-slash 301s — Part 1 #3 and
+   #7), CWV/CrUX, GBP + review source verification, owner fact confirmations
+   (reviews count, founding year, staff, stats), photography assets (P5-12).
 
 ---
 
@@ -111,8 +128,8 @@
 | P1 | P4-12 — Embed coverage map; set `hasMap` to a valid map URL (0 iframes today) | ⏳ PENDING |
 | P1 | P4-06 — Add include/exclude list to service pages | ⏳ PENDING |
 | P1 | P4-11 — Team/authors page + bio schema (E-E-A-T Experience pillar) | ⏳ PENDING |
-| P1 | P4-16 — Rebalance internal link equity (hub indexes 5,815–22,253 vs content children 7–9) | ⏳ PENDING (after Part 1 P0) |
-| P1 | P4-13 — Restructure the 3,654 local pages (site-wide price + parametric body) | ⏳ PENDING (after Part 1 P0) |
+| P1 | P4-16 — Rebalance internal link equity (hub indexes vs content children 7–9) | ⏳ PENDING (**unblocked by BP-1** — re-measure on the 3,669-page graph) |
+| P1 | P4-13 — Restructure the local pages (site-wide price + parametric body) | ⏳ PENDING (**unblocked by BP-1** — scope cut 3,654 → 1,508; this is **BP-1 phase 2**) |
 | P1 | P4-17 — Link aircon problems from aircon service + tools (1–2 inbound) | ⏳ PENDING |
 | P1 | P4-02 — Mobile quote box above the fold (behind full-viewport slideshow today) | ⏳ PENDING |
 | P2 | P4-10 — Make FeaturedProjects/BeforeAfter cards real links; add case-study pages | ⏳ PENDING |

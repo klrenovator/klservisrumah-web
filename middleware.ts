@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { DEDICATED_TOOL_BY_SERVICE } from "@/lib/estimator/service-estimator";
 import { PROBLEM_CANONICAL_REDIRECTS } from "@/config/problem-canonical";
+import { bp1RedirectTarget } from "@/lib/bp1-consolidation";
 
 const SUPPORTED_LOCALES = ["ms", "zh"] as const;
 
@@ -79,8 +80,49 @@ const PROBLEM_REDIRECTS: Record<string, string> = Object.fromEntries(
  * the owner confirmed the internal admin page is no longer needed. There is
  * no `/admin` surface left to protect; `ADMIN_PASSWORD` is obsolete.
  */
+/**
+ * BP-1 phase 1 — programmatic consolidation 301s.
+ *
+ * Part 1 of the deep audit found the site's biggest architecture problem was
+ * silent index bloat: 2,581 indexable EN URLs from one template, of which
+ * 2,146 were duplication rather than coverage.
+ *
+ *   1,073  `/areas/<area>/<svc>/near-me`  — identical to their own parent
+ *          `/areas/<area>/<svc>` except for the word "near". Textbook
+ *          self-cannibalisation inside a single template.
+ *   1,073  `/suburbs/<twin>/<svc>`        — the 37 suburbs that are also
+ *          coverage areas published the same place × service × offer as
+ *          `/areas/<twin>/<svc>`. A `rel=canonical` hint was already in place,
+ *          but a canonical still asks Google to crawl, render and store a page
+ *          it is then told to discard, and every internal link into a twin
+ *          spent equity on a page with no independent existence.
+ *
+ * Both sets are now 301-redirected here and are **no longer generated at all**
+ * (the near-me route file is deleted; the suburb route filters its
+ * `generateStaticParams` to the 15 suburbs with no `/areas` twin). A real 301
+ * — not a canonical — is what actually consolidates the ranking signal.
+ *
+ * The redirect target is derived from the tiny generated slug list in
+ * `config/suburb-twin-slugs.generated.ts`; `lib/bp1-consolidation.ts` holds the
+ * matching logic so the audit script and the templates share one definition.
+ *
+ * Kept on purpose: `/near-me` + `/near-me/<svc>` (30 genuine geo-intent hubs)
+ * and the 435 `/suburbs/<slug>/<svc>` pages for suburbs with no area twin.
+ *
+ * `scripts/bp1-consolidation-audit.ts` fails the build if any of this regresses.
+ */
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+  // Retired programmatic duplicate → its canonical parent. Path-only target so
+  // the redirect never moves a visitor between www and non-www.
+  const bp1Target = bp1RedirectTarget(pathname);
+  if (bp1Target) {
+    const targetUrl = request.nextUrl.clone();
+    targetUrl.pathname = bp1Target;
+    targetUrl.search = "";
+    return NextResponse.redirect(targetUrl, 301);
+  }
 
   const problemTarget = PROBLEM_REDIRECTS[pathname];
   if (problemTarget) {

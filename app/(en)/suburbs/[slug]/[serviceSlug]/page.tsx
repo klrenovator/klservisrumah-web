@@ -2,8 +2,8 @@ import React from "react";
 import { buildMetadata } from "@/lib/seo-meta";
 import { notFound } from "next/navigation";
 import { suburbPages } from "@/config/suburb-data";
-import { areaPages } from "@/config/area-data";
 import { servicesData } from "@/config/services-data";
+import { SUBURB_ORIGINAL_SLUGS } from "@/config/suburb-twin-slugs.generated";
 import { getFAQSchema, getLocalBusinessServiceSchema } from "@/lib/seo";
 import { buildServiceBundle, buildServiceLinks, buildSuburbBundle, buildSuburbServicePairBundle } from "@/lib/location-bundles";
 import { LocaleSuburbServiceView } from "@/components/sections/locale-suburb-service-view";
@@ -13,8 +13,30 @@ import { LocaleSuburbServiceView } from "@/components/sections/locale-suburb-ser
 // (a soft 404). See `app/[lang]/[[...slug]]/page.tsx` for the full rationale.
 export const dynamicParams = false;
 
+/**
+ * BP-1 phase 1 — only the suburbs with NO `/areas` twin get pages here.
+ *
+ * 37 of the 52 published suburbs are also coverage areas, so
+ * `/suburbs/<x>/<svc>` and `/areas/<x>/<svc>` shipped the same place, service
+ * and offer on two indexable URLs — 1,073 self-competing duplicates. Those
+ * pairs used a `canonicalPath` override to point at the `/areas` page, but a
+ * canonical is only a hint: Google still crawled, rendered and stored all
+ * 1,073 pages before discarding them, and every internal link into a twin
+ * spent equity on a URL with no independent existence.
+ *
+ * The twins are now **not generated at all** and 301-redirect to
+ * `/areas/<slug>/<svc>` from `middleware.ts` (see `lib/bp1-consolidation.ts`).
+ * The 15 remaining suburbs have genuinely unique content and no `/areas`
+ * equivalent, so they keep real, self-canonical pages.
+ *
+ * `scripts/bp1-consolidation-audit.ts` fails the build if a twin page is ever
+ * generated again or if any internal link points back at one.
+ */
 export function generateStaticParams() {
-  return suburbPages.flatMap((suburb) => Object.keys(servicesData).map((serviceSlug) => ({ slug: suburb.slug, serviceSlug })));
+  const originalSlugs = new Set(SUBURB_ORIGINAL_SLUGS);
+  return suburbPages
+    .filter((suburb) => originalSlugs.has(suburb.slug))
+    .flatMap((suburb) => Object.keys(servicesData).map((serviceSlug) => ({ slug: suburb.slug, serviceSlug })));
 }
 
 export async function generateMetadata(props: { params: Promise<{ slug: string; serviceSlug: string }> }) {
@@ -23,23 +45,11 @@ export async function generateMetadata(props: { params: Promise<{ slug: string; 
   const service = servicesData[serviceSlug];
   if (!suburb || !service) return {};
 
-  // 37 of the 49 suburbs are also published as coverage areas, so
-  // `/suburbs/<x>/<svc>` and `/areas/<x>/<svc>` were shipping the same title,
-  // the same offer and near-identical copy on two indexable URLs — 1,036
-  // self-competing duplicates. Where an `/areas` twin exists it is the stronger
-  // page (roughly 2.7x the body copy), so consolidate the pair onto it.
-  const areaTwin = areaPages.find((area) => area.slug === suburb.slug);
-
   return buildMetadata({
-    // "Local" distinguishes these supporting suburb guides from an `/areas`
-    // canonical twin even when both pages mention the same place and service.
     title: `Local ${suburb.name} ${service.title}`,
     description: `Book ${service.title.toLowerCase()} in ${suburb.name}. View local service scope and upfront pricing, then request a clear quote on WhatsApp.`,
     path: `/suburbs/${suburb.slug}/${service.slug}`,
     image: service.heroImage,
-    canonicalPath: areaTwin
-      ? `/areas/${areaTwin.slug}/${service.slug}`
-      : `/suburbs/${suburb.slug}/${service.slug}`
   });
 }
 

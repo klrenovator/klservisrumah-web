@@ -42,7 +42,21 @@ export default async function AreaServicePage(props: { params: Promise<{ slug: s
   const faqs = [
     { q: `How fast can you reach ${area.name} for ${service.title}?`, a: `Timing depends on crew location and traffic, but ${area.name} is part of our active KL & Selangor dispatch coverage. Same-day slots are offered when available.` },
     { q: `Which ${area.name} neighbourhoods do you cover?`, a: `We cover key landmarks and neighbourhoods including ${area.landmarks.join(", ")}. Send your exact address on WhatsApp to confirm.` },
-    { q: `How much does ${service.title} cost in ${area.name}?`, a: `${service.title} starts from ${service.startPrice}. Final price is confirmed at our published fair rate after scope, access and materials are checked.` }
+    { q: `How much does ${service.title} cost in ${area.name}?`, a: `${service.title} starts from ${service.startPrice}. Final price is confirmed at our published fair rate after scope, access and materials are checked.` },
+    // BP-1 phase 1 — near-me consolidation.
+    //
+    // The 1,073 `/areas/<area>/<svc>/near-me` pages 301 here, and their only
+    // substantive content was this three-question block about proximity and
+    // dispatch. A redirect passes URL equity but not on-page content, so the
+    // questions are absorbed here instead of being dropped: the same intent
+    // ("is <service> available near me in <area>?") is still answered, on the
+    // canonical page, in both the visible copy (LocaleAreaServiceView) and this
+    // FAQPage markup. Keeping the wording identical to the retired pages means
+    // the answer a searcher saw before the migration is still the answer they
+    // get after it.
+    { q: `Is ${service.title} available near me in ${area.name}?`, a: `Yes. We cover ${area.name} and nearby landmarks such as ${area.landmarks.slice(0, 4).join(", ")}.` },
+    { q: "How do I confirm nearest dispatch?", a: "Send your exact address or pin location on WhatsApp so we can check the closest available crew." },
+    { q: "Will near-me pricing be higher?", a: "No arbitrary uplift. Prices stay the same fair rate, with travel or access factors stated before work begins." }
   ];
 
   return (

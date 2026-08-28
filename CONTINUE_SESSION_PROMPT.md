@@ -6,35 +6,66 @@
 
 ## Current State (Update this each session)
 
-> **FIX PHASE ACTIVE (2026-08-28):** the 5-part Deep Audit is complete and
-> merged (Parts 1–5, PRs #170–#175). **Fix Wave 1 and Fix Wave 2 are done** —
-> see `docs/full-website-deep-audit/FIX-WAVE-1-REPORT.md` and
-> `FIX-WAVE-2-REPORT.md`. Read `docs/full-website-deep-audit/TRACKING.md`
-> first — it is the authoritative status board.
+> **BP-1 PHASE 1 COMPLETE (2026-08-28):** Part 1 Critical #1/#2 are closed —
+> 2,146 duplicate programmatic URLs (1,073 `/areas/<a>/<svc>/near-me` + 1,073
+> `/suburbs/<twin>/<svc>`) are now **301s instead of pages**. Built HTML
+> 5,815 → **3,669**; sitemap 4,739 → **3,666**; cross-page canonicals 1,073 → **0**.
+> Read `docs/full-website-deep-audit/TRACKING.md` first — it is the authoritative
+> status board; `docs/full-website-deep-audit/BP-1-PHASE-1-REPORT.md` has the
+> full evidence and the post-deploy GSC/Bing checklist.
 >
-> **Next session starts at:** BP-1 phase 1 — near-me→parent 301s + stop
-> suburb-twin static generation (Part 1 Critical #1/#2). Do not add more
-> location pages. Do not re-add `app/(en|ms|zh)/loading.tsx`.
+> **Next session starts at:** **BP-1 phase 2** — the demand-backed keep-list for
+> the remaining 1,073 `/areas/<area>/<svc>` pairs + authored local copy for the
+> kept set. **Blocked on GSC data (owner).** If GSC is still unavailable, take
+> **P5-04** (areaServed slim) then **P5-10** (breadcrumbs on pods) — both are now
+> unblocked. Do **not** add more location pages. Do **not** re-add
+> `app/(en|ms|zh)/loading.tsx`. Do **not** delete local pages on low traffic alone.
 
-**Branch:** arena/01a04976-klservisrumah-web (this session branch — push PRs from here)
-**Last completed session:** 2026-08-28 — Fix Wave 2 ✅ (C2/P2-C1/P4-01, P5-02, P3-11, P3-02 schema)
+**Branch:** arena/01a04a3f-klservisrumah-web (this session branch — push PRs from here)
+**Last completed session:** 2026-08-28 — BP-1 phase 1 ✅ (Part 1 Critical #1/#2:
+near-me → parent 301s, suburb-twin SSG stopped, 2,146 URLs retired)
 
-**Quality gates (must all be green before any new work):**
+**Quality gates (must all be green before any new work).**
+Numbers are the *measured* output of each command on this branch — update them
+when the corpus changes, don't carry stale values forward:
+
 - [ ] npm run lint — 0 errors, 0 warnings
 - [ ] npm run type-check — PASS
-- [ ] npm run build — SUCCESS (no errors)
+- [ ] npm run build — SUCCESS (3,669 HTML; middleware 35.4 kB)
+- [ ] npm run audit:bp1 — PASS (**run after build**; 2,146 retired URLs, 0 regenerated)
 - [ ] npm run seo:audit — PASS
-- [ ] npm run audit:html — 0 fatal / 0 warnings
-- [ ] npm run audit:i18n — 1112 keys × 3, 0 missing
-- [ ] npm run audit:topical-map — 28/28, 112 relationships
-- [ ] npm run audit:specialty-locale — 112 × MS/ZH = 224 blocks
-- [ ] npm run audit:problem-i18n — 65 × MS/ZH, 12 redirects excluded
-- [ ] npm run test:estimators — 263,301 assertions, 0 failures
+- [ ] npm run audit:html — 0 fatal / 0 warnings (3,669 pages)
+- [ ] npm run audit:links — 277,711 rendered + 53 source links, 0 broken
+- [ ] npm run audit:seo-head — PASS (3,666 self-canonical, 0 canonicalized, 0 dupes)
+- [ ] npm run audit:i18n — 1,104 keys × 3, 0 missing
+- [ ] npm run audit:topical-map — 29/29 services, 222 relationships
+- [ ] npm run audit:specialty-locale — 222 × MS/ZH = 444 blocks
+- [ ] npm run audit:specialty-coverage — 222 subservices across 29 services
+- [ ] npm run audit:service-i18n — 29 services
+- [ ] npm run audit:problem-i18n — 74 keep-URLs × MS/ZH, 12 redirects excluded
+- [ ] npm run audit:client-bundle — 217 client modules, 0 heavy registries
+- [ ] npm run audit:location-similarity — all layers < 70%; near-me layer = 0 pages
+- [ ] npm run test:estimators — 320,331 assertions, 0 failures
 - [ ] npm audit — 0 vulnerabilities
 
 ---
 
 ## What Is COMPLETED (Do NOT redo)
+
+### BP-1 phase 1 (2026-08-28) — DONE — `docs/full-website-deep-audit/BP-1-PHASE-1-REPORT.md`
+- 1,073 `/areas/<area>/<svc>/near-me` pages **deleted**; 301 → `/areas/<area>/<svc>`
+- 1,073 `/suburbs/<twin>/<svc>` pages **no longer generated**; 301 → `/areas/<twin>/<svc>`
+- 15 non-twin suburbs × 29 = 435 `/suburbs/...` pages **kept** (self-canonical)
+- 30 `/near-me` + `/near-me/<svc>` geo-hubs **kept**
+- Near-me Q&A **absorbed** into the parent (visible + FAQPage 3 → 6 Questions)
+- Sitemap 4,739 → 3,666; `audit:seo-head` canonicalized pages 1,073 → 0
+- All internal links retargeted via `suburbServicePath()` — 0 links into retired URLs
+- New: `scripts/generate-bp1-map.ts` (in `prebuild`/`predev`) → `config/suburb-twin-slugs.generated.ts`
+- New: `scripts/bp1-consolidation-audit.ts` → `npm run audit:bp1` (`--source-only` runs in `prebuild`, so **CI already enforces the source-level gate**)
+- ⚠️ **Owner action left open:** add `npm run audit:bp1` as a post-build CI step —
+  `git apply docs/full-website-deep-audit/BP-1-ci-audit-bp1.patch`. The push was
+  rejected because this session's GitHub App token lacks the `workflows`
+  permission; the commit was reverted and the change saved as that patch.
 
 ### Deep Audit Fix Wave 1 (2026-08-28) — DONE
 - P2-C2 `content.relatedReading` H2 leak — DONE
@@ -77,6 +108,11 @@
 - ❌ Never invent or commit NEXT_PUBLIC_GA_ID, ADMIN_PASSWORD, or any credential
 - ❌ Never re-open closed link-equity tiers without fresh crawl evidence
 - ❌ Never mass-generate thin/spun pages
+- ❌ **Never re-create `app/(en)/areas/[slug]/[serviceSlug]/near-me/page.tsx`** or let the suburb route generate `/areas`-twin suburbs — `npm run audit:bp1` exists to catch exactly that
+- ❌ **Never hand-edit `config/suburb-twin-slugs.generated.ts`** — run `npm run gen:bp1-map` (it is in `prebuild`; the gate fails if it drifts)
+- ❌ **Never link directly at `/suburbs/<slug>/<svc>`** — use `suburbServicePath()` from `lib/bp1-consolidation.ts` (37 of 52 suburbs live at `/areas/…`)
+- ❌ **Never change the `:service:` literal in `areaPairCopy()`'s hash seed** (`lib/location-pair-copy.ts`) — it decides landmark/sub-service rotation on all 1,073 kept `/areas` pair pages
+- ❌ Never delete local pages on low traffic alone — Part 1 §1.3 requires demand/unique-value evidence (GSC)
 
 ---
 
@@ -173,6 +209,11 @@ These are tasks I can execute from the repo:
 | File | Purpose |
 |------|---------|
 | `AI_OPTIMIZATION_ROADMAP.md` | Single source of truth — read this first |
+| `docs/full-website-deep-audit/TRACKING.md` | **Authoritative status board** — read first, update last |
+| `docs/full-website-deep-audit/BP-1-PHASE-1-REPORT.md` | BP-1 phase 1 evidence + post-deploy GSC/Bing checklist |
+| `docs/full-website-deep-audit/FIX-WAVE-1-REPORT.md` · `FIX-WAVE-2-REPORT.md` | Fix-wave evidence |
+| `lib/bp1-consolidation.ts` | **Only** place that decides which programmatic URL is retired, and where it 301s |
+| `config/suburb-twin-slugs.generated.ts` | Generated consolidation map (do not hand-edit) |
 | `SESSION_LOG.md` | Permanent session history |
 | `📄 MASTER_AI_AGENT_INSTRUCTIONS.md` | Master instructions — rules for every session |
 | `KLServisRumah-Complete-Forensic-Audit.md` | Original audit (source baseline) |
@@ -190,10 +231,21 @@ These are tasks I can execute from the repo:
 ## Verification Command (run after any change)
 
 ```bash
-npm run lint && npm run type-check && npm run build && \
-npm run seo:audit && npm run audit:html && npm run audit:i18n && \
+# Source gates (fast — no build needed)
+npm run lint && npm run type-check && npm run audit:i18n && \
 npm run audit:topical-map && npm run audit:specialty-locale && \
-npm run audit:problem-i18n && npm run test:estimators && npm audit
+npm run audit:specialty-coverage && npm run audit:service-i18n && \
+npm run audit:problem-i18n && npm run audit:client-bundle && \
+npm run test:estimators && npm audit
+
+# Build, then the corpus gates (these need .next/server/app to exist)
+npm run build && npm run audit:bp1 && npm run audit:html && \
+npm run audit:links && npm run audit:seo-head && \
+npm run audit:location-similarity && npm run seo:audit
 ```
+
+`npm run audit:bp1` has two modes: plain = source + built-corpus checks (run it
+**after** `npm run build`); `npm run audit:bp1 -- --source-only` = source checks
+only, which is what `prebuild` runs.
 
 All must pass before marking anything complete.
