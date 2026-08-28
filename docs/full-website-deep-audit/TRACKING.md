@@ -18,8 +18,8 @@
 |---|---|---|---|---|---|
 | 0 | Overview (shared instructions & output requirements) | ✅ `00-PROMPT-OVERVIEW.md` | — | ✅ | ✅ DONE |
 | 1 | Technical SEO + Crawlability + Indexation + Architecture | ✅ `PART-1-PROMPT.md` | ✅ `PART-1-AUDIT-REPORT.md` | ✅ | ✅ DONE (PR merged) |
-| 2 | On-page SEO + Content + Semantic + Entity SEO | ✅ `PART-2-PROMPT.md` | ⏳ PENDING | ⏳ | ⏳ NEXT |
-| 3 | AEO + GEO + LLMO + AIO / AI Search | ✅ `PART-3-PROMPT.md` | ⏳ PENDING | ⏳ | ⏳ PENDING |
+| 2 | On-page SEO + Content + Semantic + Entity SEO | ✅ `PART-2-PROMPT.md` | ✅ `PART-2-AUDIT-REPORT.md` | ✅ | ✅ DONE (PR #171 — authored this session) |
+| 3 | AEO + GEO + LLMO + AIO / AI Search | ✅ `PART-3-PROMPT.md` | ⏳ PENDING | ⏳ | ⏳ NEXT |
 | 4 | SXO + Local SEO + Internal Linking + CRO + Trust | ✅ `PART-4-PROMPT.md` | ⏳ PENDING | ⏳ | ⏳ PENDING |
 | 5 | Schema + Content Gap + Priority Roadmap | ✅ `PART-5-PROMPT.md` | ⏳ PENDING | ⏳ | ⏳ PENDING |
 
@@ -33,14 +33,22 @@
 | Prio | Task (blocker) | Status |
 |---|---|---|
 | P0 | Audit Part 1 (Technical / Crawl / Index / Architecture) and publish | ✅ DONE |
-| P0 | Audit Part 2 (On-page / Content / Semantic / Entity) | ⏳ PENDING |
+| P0 | Audit Part 2 (On-page / Content / Semantic / Entity) | ✅ DONE |
 | P1 | Audit Part 3 (AEO / GEO / LLMO / AI SEO) | ⏳ PENDING |
 | P1 | Audit Part 4 (SXO / Local / Internal Linking / CRO / Trust) | ⏳ PENDING |
 | P1 | Audit Part 5 (Schema / Content Gap / Roadmap) | ⏳ PENDING |
-| — | Merge per-part audit PRs (this session: Pt 1 merged) | ✅ DONE (Pt 1) |
+| — | Merge per-part audit PRs (this session: Pt 1 merged) | ✅ DONE (Pt 1 + Pt 2) |
 | P0 | Fix Part 1 Critical #1 — Trim programmatic service+location index | ⏳ PENDING |
 | P0 | Fix Part 1 Critical #2 — Consolidate near-me duplicates | ⏳ PENDING |
 | P0 | Fix Part 1 Critical #3 — Resolve www/non-www host canonical | ⏳ PENDING |
+| P0 | Fix Part 2 P2-C1 — Server-render content inside `<main>` (static HTML is a Loading shell) | ⏳ PENDING |
+| P0 | Fix Part 2 P2-C2 — `content.relatedReading` literal key renders as H2 on 224 pages | ⏳ PENDING |
+| P0 | Fix Part 2 P2-C3 — 174 generic "content pod" pages (commercial/residential/process/answers/brands/top/seasonal/guides) | ⏳ PENDING |
+| P0 | Fix Part 2 P2-C4 — Replace pair-copy generator; authored local copy for area×service | ⏳ PENDING |
+| P1 | Fix Part 2 P2-16/17/18 — Expand problems/cost; rewrite or retire emergency pages | ⏳ PENDING |
+| P1 | Fix Part 2 P2-19 — Real per-article blog dates (216 posts / 5 dates) | ⏳ PENDING |
+| P1 | Fix Part 2 P2-21 — Reviews: verify + Review schema or drop AggregateRating | ⏳ PENDING |
+| P1 | Fix Part 2 P2-22 — Add outbound citations (brands/authority/manufacturer) | ⏳ PENDING |
 
 ---
 
@@ -49,6 +57,7 @@
 | Session | Scope | Result |
 |---|---|---|
 | 2026-08-27 | Part 1 audit + prompt saved + PR merged | ✅ Part 1 committed & merged |
+| 2026-08-28 | Part 2 audit — full-corpus on-page/content/semantic/entity | ✅ Part 2 committed & merged (PR #171) |
 
 ---
 

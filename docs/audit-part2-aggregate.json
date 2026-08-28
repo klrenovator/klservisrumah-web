@@ -1,0 +1,4888 @@
+{
+  "totalPages": 5815,
+  "patterns": {
+    "/static/_not-found": {
+      "n": 1,
+      "uniqueTitles": 1,
+      "dupTitlePages": 0,
+      "uniqueDescs": 1,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 32,
+        "mean": 32,
+        "median": 32,
+        "max": 32
+      },
+      "descLen": {
+        "min": 150,
+        "mean": 150,
+        "median": 150,
+        "max": 150
+      },
+      "h1Zero": 0,
+      "h1One": 1,
+      "h1Many": 0,
+      "h1InsideMain": 1,
+      "h1OutsideMain": 0,
+      "h2Mean": 0,
+      "h3Mean": 0,
+      "contentWords": {
+        "min": 25,
+        "mean": 25,
+        "median": 25,
+        "max": 25
+      },
+      "mainWordsMean": 46,
+      "noAltImgs": 0,
+      "imgCount": 2,
+      "schemaCoverage": {},
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Page not found — KL Servis Rumah"
+      ],
+      "sampleH2s": []
+    },
+    "/about": {
+      "n": 1,
+      "uniqueTitles": 1,
+      "dupTitlePages": 0,
+      "uniqueDescs": 1,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 46,
+        "mean": 46,
+        "median": 46,
+        "max": 46
+      },
+      "descLen": {
+        "min": 152,
+        "mean": 152,
+        "median": 152,
+        "max": 152
+      },
+      "h1Zero": 0,
+      "h1One": 1,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 1,
+      "h2Mean": 4,
+      "h3Mean": 4,
+      "contentWords": {
+        "min": 327,
+        "mean": 327,
+        "median": 327,
+        "max": 327
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 2,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 1,
+        "ImageObject": 1,
+        "QuantitativeValue": 1,
+        "PostalAddress": 1,
+        "GeoCoordinates": 1,
+        "OpeningHoursSpecification": 1,
+        "ContactPoint": 1,
+        "Thing": 1,
+        "Organization": 1,
+        "City": 1,
+        "Country": 1,
+        "GeoCircle": 1,
+        "Distance": 1,
+        "Brand": 1,
+        "LocalBusiness": 1,
+        "WebSite": 1,
+        "SearchAction": 1,
+        "EntryPoint": 1,
+        "AboutPage": 1,
+        "WebPage": 1,
+        "SpeakableSpecification": 1,
+        "BreadcrumbList": 1,
+        "ListItem": 1
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "About Us — Trusted Home Services KL & Selangor"
+      ],
+      "sampleH2s": [
+        [
+          "About KL Servis Rumah",
+          1
+        ],
+        [
+          "Company & Service Standards",
+          1
+        ],
+        [
+          "Our Core Mission",
+          1
+        ],
+        [
+          "Our Core Values",
+          1
+        ]
+      ]
+    },
+    "/answers/<slug>": {
+      "n": 29,
+      "uniqueTitles": 29,
+      "dupTitlePages": 0,
+      "uniqueDescs": 29,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 50,
+        "mean": 54.7,
+        "median": 55,
+        "max": 60
+      },
+      "descLen": {
+        "min": 148,
+        "mean": 153.6,
+        "median": 154,
+        "max": 158
+      },
+      "h1Zero": 0,
+      "h1One": 29,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 29,
+      "h2Mean": 6,
+      "h3Mean": 4.4,
+      "contentWords": {
+        "min": 640,
+        "mean": 751.6,
+        "median": 719,
+        "max": 1742
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 58,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 29,
+        "ImageObject": 29,
+        "QuantitativeValue": 29,
+        "PostalAddress": 29,
+        "GeoCoordinates": 29,
+        "OpeningHoursSpecification": 29,
+        "ContactPoint": 29,
+        "Thing": 29,
+        "Organization": 29,
+        "City": 29,
+        "Country": 29,
+        "GeoCircle": 29,
+        "Distance": 29,
+        "Brand": 29,
+        "LocalBusiness": 29,
+        "WebSite": 29,
+        "SearchAction": 29,
+        "EntryPoint": 29,
+        "BlogPosting": 29,
+        "Person": 29,
+        "FAQPage": 29,
+        "Question": 29,
+        "Answer": 29,
+        "WebPage": 29,
+        "SpeakableSpecification": 29
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Aircon Service, Repair & Installation Ultimate Guide for KL",
+        "Auto Gate & Motorised Gate Ultimate Guide for KL & Selangor",
+        "Awning Installation Services Ultimate Guide for KL",
+        "Bathroom Renovation Ultimate Guide for KL & Selangor"
+      ],
+      "sampleH2s": [
+        [
+          "Key takeaways",
+          29
+        ],
+        [
+          "Practical guidance for KL & Selangor",
+          29
+        ],
+        [
+          "content.relatedReading",
+          29
+        ],
+        [
+          "Need help applying this to your property?",
+          29
+        ],
+        [
+          "FAQs",
+          29
+        ],
+        [
+          "Related Aircon Service, Repair & Installation resources",
+          1
+        ],
+        [
+          "Related Auto Gate & Motorised Gate resources",
+          1
+        ],
+        [
+          "Related Awning Installation Services resources",
+          1
+        ],
+        [
+          "Related Bathroom Renovation resources",
+          1
+        ],
+        [
+          "Related Custom Carpentry & Joinery resources",
+          1
+        ],
+        [
+          "Related CCTV & Security Camera Installation resources",
+          1
+        ],
+        [
+          "Related Ceiling Fan Installation & Replacement resources",
+          1
+        ]
+      ]
+    },
+    "/answers": {
+      "n": 1,
+      "uniqueTitles": 1,
+      "dupTitlePages": 0,
+      "uniqueDescs": 1,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 56,
+        "mean": 56,
+        "median": 56,
+        "max": 56
+      },
+      "descLen": {
+        "min": 140,
+        "mean": 140,
+        "median": 140,
+        "max": 140
+      },
+      "h1Zero": 0,
+      "h1One": 1,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 1,
+      "h2Mean": 3,
+      "h3Mean": 35,
+      "contentWords": {
+        "min": 2268,
+        "mean": 2268,
+        "median": 2268,
+        "max": 2268
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 2,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 1,
+        "ImageObject": 1,
+        "QuantitativeValue": 1,
+        "PostalAddress": 1,
+        "GeoCoordinates": 1,
+        "OpeningHoursSpecification": 1,
+        "ContactPoint": 1,
+        "Thing": 1,
+        "Organization": 1,
+        "City": 1,
+        "Country": 1,
+        "GeoCircle": 1,
+        "Distance": 1,
+        "Brand": 1,
+        "LocalBusiness": 1,
+        "WebSite": 1,
+        "SearchAction": 1,
+        "EntryPoint": 1,
+        "BreadcrumbList": 1,
+        "ListItem": 1,
+        "WebPage": 1,
+        "SpeakableSpecification": 1,
+        "CollectionPage": 1,
+        "ItemList": 1
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Home Service Answers for KL & Selangor | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "Start with the most useful pages",
+          1
+        ],
+        [
+          "All pages in this hub",
+          1
+        ],
+        [
+          "Send photos and your area — we will recommend the right next step.",
+          1
+        ]
+      ]
+    },
+    "/areas/<area>/<svc>/near-me": {
+      "n": 1073,
+      "uniqueTitles": 1073,
+      "dupTitlePages": 0,
+      "uniqueDescs": 1073,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 43,
+        "mean": 50.9,
+        "median": 50,
+        "max": 60
+      },
+      "descLen": {
+        "min": 101,
+        "mean": 118.8,
+        "median": 119,
+        "max": 133
+      },
+      "h1Zero": 0,
+      "h1One": 1073,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 1073,
+      "h2Mean": 11.7,
+      "h3Mean": 4,
+      "contentWords": {
+        "min": 784,
+        "mean": 926.9,
+        "median": 928,
+        "max": 1080
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 2146,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 1073,
+        "ImageObject": 1073,
+        "QuantitativeValue": 1073,
+        "PostalAddress": 1073,
+        "GeoCoordinates": 1073,
+        "OpeningHoursSpecification": 1073,
+        "ContactPoint": 1073,
+        "Thing": 1073,
+        "Organization": 1073,
+        "City": 1073,
+        "Country": 1073,
+        "GeoCircle": 1073,
+        "Distance": 1073,
+        "Brand": 1073,
+        "LocalBusiness": 1073,
+        "WebSite": 1073,
+        "SearchAction": 1073,
+        "EntryPoint": 1073,
+        "FAQPage": 1073,
+        "Question": 1073,
+        "Answer": 1073,
+        "Service": 1073,
+        "Place": 1073,
+        "Offer": 1073,
+        "OfferCatalog": 1073,
+        "BreadcrumbList": 1073,
+        "ListItem": 1073
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Ampang Aircon Service, Repair & Installation Near Me",
+        "Ampang Auto Gate & Motorised Gate Near Me | KL Servis Rumah",
+        "Ampang Awning Installation Services Near Me",
+        "Ampang Bathroom Renovation Near Me | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "Details that shape a Aircon Service, Repair & Installation quotation",
+          37
+        ],
+        [
+          "Basic Servicing",
+          37
+        ],
+        [
+          "Chemical Wash",
+          37
+        ],
+        [
+          "Chemical Overhaul",
+          37
+        ],
+        [
+          "Gas Top-Up",
+          37
+        ],
+        [
+          "Installation",
+          37
+        ],
+        [
+          "Repair",
+          37
+        ],
+        [
+          "Ceiling Cassette",
+          37
+        ],
+        [
+          "Dismantling & Relocation",
+          37
+        ],
+        [
+          "Details that shape a Auto Gate & Motorised Gate quotation",
+          37
+        ],
+        [
+          "Single Swing Autogate",
+          37
+        ],
+        [
+          "Double Swing Autogate",
+          37
+        ]
+      ]
+    },
+    "/areas/<area>/<svc>": {
+      "n": 1073,
+      "uniqueTitles": 1073,
+      "dupTitlePages": 0,
+      "uniqueDescs": 1073,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 39,
+        "mean": 51.9,
+        "median": 53,
+        "max": 60
+      },
+      "descLen": {
+        "min": 110,
+        "mean": 127.8,
+        "median": 128,
+        "max": 142
+      },
+      "h1Zero": 0,
+      "h1One": 1073,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 1073,
+      "h2Mean": 8,
+      "h3Mean": 14.7,
+      "contentWords": {
+        "min": 1652,
+        "mean": 1817.1,
+        "median": 1822,
+        "max": 2038
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 2146,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 1073,
+        "ImageObject": 1073,
+        "QuantitativeValue": 1073,
+        "PostalAddress": 1073,
+        "GeoCoordinates": 1073,
+        "OpeningHoursSpecification": 1073,
+        "ContactPoint": 1073,
+        "Thing": 1073,
+        "Organization": 1073,
+        "City": 1073,
+        "Country": 1073,
+        "GeoCircle": 1073,
+        "Distance": 1073,
+        "Brand": 1073,
+        "LocalBusiness": 1073,
+        "WebSite": 1073,
+        "SearchAction": 1073,
+        "EntryPoint": 1073,
+        "FAQPage": 1073,
+        "Question": 1073,
+        "Answer": 1073,
+        "Service": 1073,
+        "Place": 1073,
+        "Offer": 1073,
+        "OfferCatalog": 1073,
+        "BreadcrumbList": 1073,
+        "ListItem": 1073
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Ampang Aircon Service, Repair & Installation",
+        "Ampang Auto Gate & Motorised Gate | KL Servis Rumah",
+        "Ampang Awning Installation Services | KL Servis Rumah",
+        "Ampang Bathroom Renovation | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "Details that shape a Aircon Service, Repair & Installation quotation",
+          37
+        ],
+        [
+          "Details that shape a Auto Gate & Motorised Gate quotation",
+          37
+        ],
+        [
+          "Details that shape a Awning Installation Services quotation",
+          37
+        ],
+        [
+          "Details that shape a Bathroom Renovation quotation",
+          37
+        ],
+        [
+          "Details that shape a Custom Carpentry & Joinery quotation",
+          37
+        ],
+        [
+          "Details that shape a CCTV & Security Camera Installation quotation",
+          37
+        ],
+        [
+          "Details that shape a Ceiling Fan Installation & Replacement quotation",
+          37
+        ],
+        [
+          "Details that shape a Ceiling & Partition Services quotation",
+          37
+        ],
+        [
+          "Details that shape a Door Repair & Installation quotation",
+          37
+        ],
+        [
+          "Details that shape a Licensed Electrical Services quotation",
+          37
+        ],
+        [
+          "Details that shape a Epoxy & Polyurethane Flooring quotation",
+          37
+        ],
+        [
+          "Details that shape a Vinyl, SPC & Laminate Flooring quotation",
+          37
+        ]
+      ]
+    },
+    "/areas/<area>": {
+      "n": 37,
+      "uniqueTitles": 37,
+      "dupTitlePages": 0,
+      "uniqueDescs": 37,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 43,
+        "mean": 53.8,
+        "median": 55,
+        "max": 60
+      },
+      "descLen": {
+        "min": 120,
+        "mean": 138.8,
+        "median": 138,
+        "max": 158
+      },
+      "h1Zero": 0,
+      "h1One": 37,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 37,
+      "h2Mean": 4,
+      "h3Mean": 32,
+      "contentWords": {
+        "min": 1795,
+        "mean": 1850.2,
+        "median": 1850,
+        "max": 1913
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 74,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 37,
+        "ImageObject": 37,
+        "QuantitativeValue": 37,
+        "PostalAddress": 37,
+        "GeoCoordinates": 37,
+        "OpeningHoursSpecification": 37,
+        "ContactPoint": 37,
+        "Thing": 37,
+        "Organization": 37,
+        "City": 37,
+        "Country": 37,
+        "GeoCircle": 37,
+        "Distance": 37,
+        "Brand": 37,
+        "LocalBusiness": 37,
+        "WebSite": 37,
+        "SearchAction": 37,
+        "EntryPoint": 37,
+        "FAQPage": 37,
+        "Question": 37,
+        "Answer": 37,
+        "WebPage": 37,
+        "SpeakableSpecification": 37,
+        "Service": 37,
+        "State": 37,
+        "BreadcrumbList": 37,
+        "ListItem": 37
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Ampang Painting, Plumbing & Waterproofing | KL Servis Rumah",
+        "Ara Damansara Painting & Plumbing | KL Servis Rumah",
+        "Bandar Utama Home Services — Painter, Plumber & Handyman",
+        "Bangsar Painter, Plumber & Handyman | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "Professional painting, plumbing, ceiling, waterproofing and handyman work across Kuala Lumpur and Selangor. Click any service to view details and pricing.",
+          37
+        ],
+        [
+          "Coverage Suburbs & Landmarks in Ampang",
+          1
+        ],
+        [
+          "Book in Ampang",
+          1
+        ],
+        [
+          "Ampang Local FAQs",
+          1
+        ],
+        [
+          "Coverage Suburbs & Landmarks in Ara Damansara",
+          1
+        ],
+        [
+          "Book in Ara Damansara",
+          1
+        ],
+        [
+          "Ara Damansara Local FAQs",
+          1
+        ],
+        [
+          "Coverage Suburbs & Landmarks in Bandar Utama",
+          1
+        ],
+        [
+          "Book in Bandar Utama",
+          1
+        ],
+        [
+          "Bandar Utama Local FAQs",
+          1
+        ],
+        [
+          "Coverage Suburbs & Landmarks in Bangsar",
+          1
+        ],
+        [
+          "Book in Bangsar",
+          1
+        ]
+      ]
+    },
+    "/areas/other": {
+      "n": 1,
+      "uniqueTitles": 1,
+      "dupTitlePages": 0,
+      "uniqueDescs": 1,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 57,
+        "mean": 57,
+        "median": 57,
+        "max": 57
+      },
+      "descLen": {
+        "min": 149,
+        "mean": 149,
+        "median": 149,
+        "max": 149
+      },
+      "h1Zero": 0,
+      "h1One": 1,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 1,
+      "h2Mean": 2,
+      "h3Mean": 4,
+      "contentWords": {
+        "min": 334,
+        "mean": 334,
+        "median": 334,
+        "max": 334
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 2,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 1,
+        "ImageObject": 1,
+        "QuantitativeValue": 1,
+        "PostalAddress": 1,
+        "GeoCoordinates": 1,
+        "OpeningHoursSpecification": 1,
+        "ContactPoint": 1,
+        "Thing": 1,
+        "Organization": 1,
+        "City": 1,
+        "Country": 1,
+        "GeoCircle": 1,
+        "Distance": 1,
+        "Brand": 1,
+        "LocalBusiness": 1,
+        "WebSite": 1,
+        "SearchAction": 1,
+        "EntryPoint": 1,
+        "BreadcrumbList": 1,
+        "ListItem": 1
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Service Coverage Areas in KL & Selangor | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "Areas we cover in KL & Selangor",
+          1
+        ],
+        [
+          "Why KL Servis Rumah",
+          1
+        ]
+      ]
+    },
+    "/blog/<slug>": {
+      "n": 432,
+      "uniqueTitles": 432,
+      "dupTitlePages": 0,
+      "uniqueDescs": 432,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 43,
+        "mean": 51.2,
+        "median": 51,
+        "max": 61
+      },
+      "descLen": {
+        "min": 78,
+        "mean": 145.6,
+        "median": 150,
+        "max": 162
+      },
+      "h1Zero": 0,
+      "h1One": 432,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 432,
+      "h2Mean": 8.2,
+      "h3Mean": 10.8,
+      "contentWords": {
+        "min": 482,
+        "mean": 1028.8,
+        "median": 1014,
+        "max": 2468
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 864,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 432,
+        "ImageObject": 432,
+        "QuantitativeValue": 432,
+        "PostalAddress": 432,
+        "GeoCoordinates": 432,
+        "OpeningHoursSpecification": 432,
+        "ContactPoint": 432,
+        "Thing": 432,
+        "Organization": 432,
+        "City": 432,
+        "Country": 432,
+        "GeoCircle": 432,
+        "Distance": 432,
+        "Brand": 432,
+        "LocalBusiness": 432,
+        "WebSite": 432,
+        "SearchAction": 432,
+        "EntryPoint": 432,
+        "BreadcrumbList": 216,
+        "ListItem": 216,
+        "BlogPosting": 216,
+        "Person": 216
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "10ft L-Shape Modular Kitchen Cabinet in KL | KL Servis Rumah",
+        "How to Choose Living Room & Exterior Paint Colors Malaysia",
+        "Aircon Gas Top-Up Guide — R22, R410A & R32 Prices",
+        "Aircon Installation Cost Malaysia 2026 — What&#x27;s Included"
+      ],
+      "sampleH2s": [
+        [
+          "More Home Maintenance Guides",
+          216
+        ],
+        [
+          "Artikel lain untuk anda",
+          216
+        ],
+        [
+          "Frequently Asked Questions",
+          148
+        ],
+        [
+          "Soalan Lazim",
+          134
+        ],
+        [
+          "Frequently asked questions",
+          44
+        ],
+        [
+          "Common Mistakes to Avoid",
+          41
+        ],
+        [
+          "Cost and Quotation Factors",
+          35
+        ],
+        [
+          "Faktor Kos dan Sebut Harga",
+          35
+        ],
+        [
+          "Costs in KL and Selangor",
+          31
+        ],
+        [
+          "Kos di KL dan Selangor",
+          31
+        ],
+        [
+          "Soalan lazim",
+          29
+        ],
+        [
+          "Related Problems",
+          28
+        ]
+      ]
+    },
+    "/blog": {
+      "n": 2,
+      "uniqueTitles": 2,
+      "dupTitlePages": 0,
+      "uniqueDescs": 2,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 49,
+        "mean": 54.5,
+        "median": 60,
+        "max": 60
+      },
+      "descLen": {
+        "min": 142,
+        "mean": 144,
+        "median": 146,
+        "max": 146
+      },
+      "h1Zero": 0,
+      "h1One": 2,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 2,
+      "h2Mean": 3,
+      "h3Mean": 49,
+      "contentWords": {
+        "min": 3625,
+        "mean": 3837.5,
+        "median": 4050,
+        "max": 4050
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 4,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 2,
+        "ImageObject": 2,
+        "QuantitativeValue": 2,
+        "PostalAddress": 2,
+        "GeoCoordinates": 2,
+        "OpeningHoursSpecification": 2,
+        "ContactPoint": 2,
+        "Thing": 2,
+        "Organization": 2,
+        "City": 2,
+        "Country": 2,
+        "GeoCircle": 2,
+        "Distance": 2,
+        "Brand": 2,
+        "LocalBusiness": 2,
+        "WebSite": 2,
+        "SearchAction": 2,
+        "EntryPoint": 2,
+        "BreadcrumbList": 1,
+        "ListItem": 1
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Home Maintenance Blog — Expert Tips KL & Selangor",
+        "Blog Rumah & Panduan Pakar — KL & Selangor | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "Latest from our experts",
+          1
+        ],
+        [
+          "More Guides & Tips",
+          1
+        ],
+        [
+          "Complete article archive",
+          1
+        ],
+        [
+          "Terkini daripada pakar kami",
+          1
+        ],
+        [
+          "Lagi Panduan & Tip",
+          1
+        ],
+        [
+          "Arkib artikel lengkap",
+          1
+        ]
+      ]
+    },
+    "/brands/<slug>": {
+      "n": 32,
+      "uniqueTitles": 32,
+      "dupTitlePages": 0,
+      "uniqueDescs": 32,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 43,
+        "mean": 48.2,
+        "median": 49,
+        "max": 51
+      },
+      "descLen": {
+        "min": 142,
+        "mean": 155.7,
+        "median": 157,
+        "max": 158
+      },
+      "h1Zero": 0,
+      "h1One": 32,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 32,
+      "h2Mean": 6,
+      "h3Mean": 4,
+      "contentWords": {
+        "min": 495,
+        "mean": 521.5,
+        "median": 526,
+        "max": 542
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 64,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 32,
+        "ImageObject": 32,
+        "QuantitativeValue": 32,
+        "PostalAddress": 32,
+        "GeoCoordinates": 32,
+        "OpeningHoursSpecification": 32,
+        "ContactPoint": 32,
+        "Thing": 32,
+        "Organization": 32,
+        "City": 32,
+        "Country": 32,
+        "GeoCircle": 32,
+        "Distance": 32,
+        "Brand": 32,
+        "LocalBusiness": 32,
+        "WebSite": 32,
+        "SearchAction": 32,
+        "EntryPoint": 32,
+        "BlogPosting": 32,
+        "Person": 32,
+        "FAQPage": 32,
+        "Question": 32,
+        "Answer": 32
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Acson Aircon Service Malaysia | KL Servis Rumah",
+        "Aux Aircon Service Malaysia | KL Servis Rumah",
+        "Boral Gypsum Board Installation | KL Servis Rumah",
+        "Bostik Waterproofing Application | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "Key takeaways",
+          32
+        ],
+        [
+          "Practical guidance for KL & Selangor",
+          32
+        ],
+        [
+          "content.relatedReading",
+          32
+        ],
+        [
+          "Need help applying this to your property?",
+          32
+        ],
+        [
+          "FAQs",
+          32
+        ],
+        [
+          "Related Aircon Service, Repair & Installation resources",
+          20
+        ],
+        [
+          "Related Plumbing & Leak Repair Services resources",
+          4
+        ],
+        [
+          "Related Waterproofing & Leak Repair Services resources",
+          3
+        ],
+        [
+          "Related House Painting Services resources",
+          3
+        ],
+        [
+          "Related Ceiling & Partition Services resources",
+          2
+        ]
+      ]
+    },
+    "/brands": {
+      "n": 1,
+      "uniqueTitles": 1,
+      "dupTitlePages": 0,
+      "uniqueDescs": 1,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 50,
+        "mean": 50,
+        "median": 50,
+        "max": 50
+      },
+      "descLen": {
+        "min": 129,
+        "mean": 129,
+        "median": 129,
+        "max": 129
+      },
+      "h1Zero": 0,
+      "h1One": 1,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 1,
+      "h2Mean": 3,
+      "h3Mean": 38,
+      "contentWords": {
+        "min": 1999,
+        "mean": 1999,
+        "median": 1999,
+        "max": 1999
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 2,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 1,
+        "ImageObject": 1,
+        "QuantitativeValue": 1,
+        "PostalAddress": 1,
+        "GeoCoordinates": 1,
+        "OpeningHoursSpecification": 1,
+        "ContactPoint": 1,
+        "Thing": 1,
+        "Organization": 1,
+        "City": 1,
+        "Country": 1,
+        "GeoCircle": 1,
+        "Distance": 1,
+        "Brand": 1,
+        "LocalBusiness": 1,
+        "WebSite": 1,
+        "SearchAction": 1,
+        "EntryPoint": 1,
+        "BreadcrumbList": 1,
+        "ListItem": 1,
+        "WebPage": 1,
+        "SpeakableSpecification": 1,
+        "CollectionPage": 1,
+        "ItemList": 1
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Material & Brand Guides Malaysia | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "Start with the most useful pages",
+          1
+        ],
+        [
+          "All pages in this hub",
+          1
+        ],
+        [
+          "Send photos and your area — we will recommend the right next step.",
+          1
+        ]
+      ]
+    },
+    "/commercial/<slug>": {
+      "n": 29,
+      "uniqueTitles": 29,
+      "dupTitlePages": 0,
+      "uniqueDescs": 29,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 43,
+        "mean": 49.2,
+        "median": 48,
+        "max": 60
+      },
+      "descLen": {
+        "min": 147,
+        "mean": 153.9,
+        "median": 154,
+        "max": 158
+      },
+      "h1Zero": 0,
+      "h1One": 29,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 29,
+      "h2Mean": 6,
+      "h3Mean": 4,
+      "contentWords": {
+        "min": 490,
+        "mean": 515.7,
+        "median": 517,
+        "max": 552
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 58,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 29,
+        "ImageObject": 29,
+        "QuantitativeValue": 29,
+        "PostalAddress": 29,
+        "GeoCoordinates": 29,
+        "OpeningHoursSpecification": 29,
+        "ContactPoint": 29,
+        "Thing": 29,
+        "Organization": 29,
+        "City": 29,
+        "Country": 29,
+        "GeoCircle": 29,
+        "Distance": 29,
+        "Brand": 29,
+        "LocalBusiness": 29,
+        "WebSite": 29,
+        "SearchAction": 29,
+        "EntryPoint": 29,
+        "BlogPosting": 29,
+        "Person": 29,
+        "FAQPage": 29,
+        "Question": 29,
+        "Answer": 29
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Commercial Aircon Service, Repair & Installation in KL",
+        "Commercial Auto Gate & Motorised Gate in KL",
+        "Commercial Awning Installation Services in KL",
+        "Commercial Bathroom Renovation in KL | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "Key takeaways",
+          29
+        ],
+        [
+          "Practical guidance for KL & Selangor",
+          29
+        ],
+        [
+          "content.relatedReading",
+          29
+        ],
+        [
+          "Need help applying this to your property?",
+          29
+        ],
+        [
+          "FAQs",
+          29
+        ],
+        [
+          "Related Aircon Service, Repair & Installation resources",
+          1
+        ],
+        [
+          "Related Auto Gate & Motorised Gate resources",
+          1
+        ],
+        [
+          "Related Awning Installation Services resources",
+          1
+        ],
+        [
+          "Related Bathroom Renovation resources",
+          1
+        ],
+        [
+          "Related Custom Carpentry & Joinery resources",
+          1
+        ],
+        [
+          "Related CCTV & Security Camera Installation resources",
+          1
+        ],
+        [
+          "Related Ceiling Fan Installation & Replacement resources",
+          1
+        ]
+      ]
+    },
+    "/commercial": {
+      "n": 1,
+      "uniqueTitles": 1,
+      "dupTitlePages": 0,
+      "uniqueDescs": 1,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 56,
+        "mean": 56,
+        "median": 56,
+        "max": 56
+      },
+      "descLen": {
+        "min": 115,
+        "mean": 115,
+        "median": 115,
+        "max": 115
+      },
+      "h1Zero": 0,
+      "h1One": 1,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 1,
+      "h2Mean": 3,
+      "h3Mean": 35,
+      "contentWords": {
+        "min": 1366,
+        "mean": 1366,
+        "median": 1366,
+        "max": 1366
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 2,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 1,
+        "ImageObject": 1,
+        "QuantitativeValue": 1,
+        "PostalAddress": 1,
+        "GeoCoordinates": 1,
+        "OpeningHoursSpecification": 1,
+        "ContactPoint": 1,
+        "Thing": 1,
+        "Organization": 1,
+        "City": 1,
+        "Country": 1,
+        "GeoCircle": 1,
+        "Distance": 1,
+        "Brand": 1,
+        "LocalBusiness": 1,
+        "WebSite": 1,
+        "SearchAction": 1,
+        "EntryPoint": 1,
+        "BreadcrumbList": 1,
+        "ListItem": 1,
+        "WebPage": 1,
+        "SpeakableSpecification": 1,
+        "CollectionPage": 1,
+        "ItemList": 1
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Commercial Home Services KL & Selangor | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "Start with the most useful pages",
+          1
+        ],
+        [
+          "All pages in this hub",
+          1
+        ],
+        [
+          "Send photos and your area — we will recommend the right next step.",
+          1
+        ]
+      ]
+    },
+    "/compare/<slug>": {
+      "n": 18,
+      "uniqueTitles": 18,
+      "dupTitlePages": 0,
+      "uniqueDescs": 18,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 43,
+        "mean": 50.4,
+        "median": 51,
+        "max": 57
+      },
+      "descLen": {
+        "min": 136,
+        "mean": 144.8,
+        "median": 145,
+        "max": 157
+      },
+      "h1Zero": 0,
+      "h1One": 18,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 18,
+      "h2Mean": 5,
+      "h3Mean": 4,
+      "contentWords": {
+        "min": 429,
+        "mean": 435.4,
+        "median": 437,
+        "max": 447
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 36,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 18,
+        "ImageObject": 18,
+        "QuantitativeValue": 18,
+        "PostalAddress": 18,
+        "GeoCoordinates": 18,
+        "OpeningHoursSpecification": 18,
+        "ContactPoint": 18,
+        "Thing": 18,
+        "Organization": 18,
+        "City": 18,
+        "Country": 18,
+        "GeoCircle": 18,
+        "Distance": 18,
+        "Brand": 18,
+        "LocalBusiness": 18,
+        "WebSite": 18,
+        "SearchAction": 18,
+        "EntryPoint": 18,
+        "BlogPosting": 18,
+        "Person": 18,
+        "FAQPage": 18,
+        "Question": 18,
+        "Answer": 18
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Acrylic vs Cementitious Waterproofing | KL Servis Rumah",
+        "Cheap Handyman vs Insured Contractor | KL Servis Rumah",
+        "Chemical Wash vs Chemical Overhaul | KL Servis Rumah",
+        "DIY Painting vs Professional Painting | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "Key takeaways",
+          18
+        ],
+        [
+          "Practical guidance for KL & Selangor",
+          18
+        ],
+        [
+          "content.relatedReading",
+          18
+        ],
+        [
+          "Need help applying this to your property?",
+          18
+        ],
+        [
+          "FAQs",
+          18
+        ]
+      ]
+    },
+    "/compare": {
+      "n": 1,
+      "uniqueTitles": 1,
+      "dupTitlePages": 0,
+      "uniqueDescs": 1,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 56,
+        "mean": 56,
+        "median": 56,
+        "max": 56
+      },
+      "descLen": {
+        "min": 119,
+        "mean": 119,
+        "median": 119,
+        "max": 119
+      },
+      "h1Zero": 0,
+      "h1One": 1,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 1,
+      "h2Mean": 3,
+      "h3Mean": 24,
+      "contentWords": {
+        "min": 834,
+        "mean": 834,
+        "median": 834,
+        "max": 834
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 2,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 1,
+        "ImageObject": 1,
+        "QuantitativeValue": 1,
+        "PostalAddress": 1,
+        "GeoCoordinates": 1,
+        "OpeningHoursSpecification": 1,
+        "ContactPoint": 1,
+        "Thing": 1,
+        "Organization": 1,
+        "City": 1,
+        "Country": 1,
+        "GeoCircle": 1,
+        "Distance": 1,
+        "Brand": 1,
+        "LocalBusiness": 1,
+        "WebSite": 1,
+        "SearchAction": 1,
+        "EntryPoint": 1,
+        "BreadcrumbList": 1,
+        "ListItem": 1,
+        "WebPage": 1,
+        "SpeakableSpecification": 1,
+        "CollectionPage": 1,
+        "ItemList": 1
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Home Service Comparisons KL & Selangor | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "Start with the most useful pages",
+          1
+        ],
+        [
+          "All pages in this hub",
+          1
+        ],
+        [
+          "Send photos and your area — we will recommend the right next step.",
+          1
+        ]
+      ]
+    },
+    "/contact": {
+      "n": 1,
+      "uniqueTitles": 1,
+      "dupTitlePages": 0,
+      "uniqueDescs": 1,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 47,
+        "mean": 47,
+        "median": 47,
+        "max": 47
+      },
+      "descLen": {
+        "min": 147,
+        "mean": 147,
+        "median": 147,
+        "max": 147
+      },
+      "h1Zero": 0,
+      "h1One": 1,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 1,
+      "h2Mean": 1,
+      "h3Mean": 1,
+      "contentWords": {
+        "min": 358,
+        "mean": 358,
+        "median": 358,
+        "max": 358
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 2,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 1,
+        "ImageObject": 1,
+        "QuantitativeValue": 1,
+        "PostalAddress": 1,
+        "GeoCoordinates": 1,
+        "OpeningHoursSpecification": 1,
+        "ContactPoint": 1,
+        "Thing": 1,
+        "Organization": 1,
+        "City": 1,
+        "Country": 1,
+        "GeoCircle": 1,
+        "Distance": 1,
+        "Brand": 1,
+        "LocalBusiness": 1,
+        "WebSite": 1,
+        "SearchAction": 1,
+        "EntryPoint": 1,
+        "ContactPage": 1,
+        "WebPage": 1,
+        "SpeakableSpecification": 1,
+        "BreadcrumbList": 1,
+        "ListItem": 1
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Contact & Booking — Home Services KL & Selangor"
+      ],
+      "sampleH2s": [
+        [
+          "Book a Job",
+          1
+        ]
+      ]
+    },
+    "/estimate/*": {
+      "n": 23,
+      "uniqueTitles": 23,
+      "dupTitlePages": 0,
+      "uniqueDescs": 23,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 43,
+        "mean": 50.9,
+        "median": 50,
+        "max": 60
+      },
+      "descLen": {
+        "min": 99,
+        "mean": 130.3,
+        "median": 131,
+        "max": 141
+      },
+      "h1Zero": 0,
+      "h1One": 23,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 23,
+      "h2Mean": 2.9,
+      "h3Mean": 3.1,
+      "contentWords": {
+        "min": 433,
+        "mean": 494.6,
+        "median": 503,
+        "max": 539
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 46,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 23,
+        "ImageObject": 23,
+        "QuantitativeValue": 23,
+        "PostalAddress": 23,
+        "GeoCoordinates": 23,
+        "OpeningHoursSpecification": 23,
+        "ContactPoint": 23,
+        "Thing": 23,
+        "Organization": 23,
+        "City": 23,
+        "Country": 23,
+        "GeoCircle": 23,
+        "Distance": 23,
+        "Brand": 23,
+        "LocalBusiness": 23,
+        "WebSite": 23,
+        "SearchAction": 23,
+        "EntryPoint": 23,
+        "BreadcrumbList": 23,
+        "ListItem": 23,
+        "OfferCatalog": 1,
+        "Offer": 1,
+        "Service": 1
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Aircon Service, Repair & Installation Cost Estimator",
+        "Auto Gate & Motorised Gate Cost Estimator | KL Servis Rumah",
+        "Bathroom Renovation Cost Estimator | KL Servis Rumah",
+        "Custom Carpentry & Joinery Cost Estimator | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "How this estimate works",
+          22
+        ],
+        [
+          "Try another instant estimator",
+          22
+        ],
+        [
+          "Aircon Service, Repair & Installation cost estimator",
+          1
+        ],
+        [
+          "Auto Gate & Motorised Gate cost estimator",
+          1
+        ],
+        [
+          "Bathroom Renovation cost estimator",
+          1
+        ],
+        [
+          "Custom Carpentry & Joinery cost estimator",
+          1
+        ],
+        [
+          "CCTV & Security Camera Installation cost estimator",
+          1
+        ],
+        [
+          "Ceiling Fan Installation & Replacement cost estimator",
+          1
+        ],
+        [
+          "Door Repair & Installation cost estimator",
+          1
+        ],
+        [
+          "Licensed Electrical Services cost estimator",
+          1
+        ],
+        [
+          "Epoxy & Polyurethane Flooring cost estimator",
+          1
+        ],
+        [
+          "Vinyl, SPC & Laminate Flooring cost estimator",
+          1
+        ]
+      ]
+    },
+    "/faq": {
+      "n": 3,
+      "uniqueTitles": 3,
+      "dupTitlePages": 0,
+      "uniqueDescs": 3,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 17,
+        "mean": 44,
+        "median": 55,
+        "max": 60
+      },
+      "descLen": {
+        "min": 54,
+        "mean": 122,
+        "median": 154,
+        "max": 158
+      },
+      "h1Zero": 0,
+      "h1One": 3,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 3,
+      "h2Mean": 2,
+      "h3Mean": 18,
+      "contentWords": {
+        "min": 4758,
+        "mean": 6295,
+        "median": 4915,
+        "max": 9212
+      },
+      "mainWordsMean": 2,
+      "noAltImgs": 0,
+      "imgCount": 6,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 3,
+        "ImageObject": 3,
+        "QuantitativeValue": 3,
+        "PostalAddress": 3,
+        "GeoCoordinates": 3,
+        "OpeningHoursSpecification": 3,
+        "ContactPoint": 3,
+        "Thing": 3,
+        "Organization": 3,
+        "City": 3,
+        "Country": 3,
+        "GeoCircle": 3,
+        "Distance": 3,
+        "Brand": 3,
+        "LocalBusiness": 3,
+        "WebSite": 3,
+        "SearchAction": 3,
+        "EntryPoint": 3,
+        "BreadcrumbList": 3,
+        "ListItem": 3,
+        "WebPage": 3,
+        "SpeakableSpecification": 3
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "FAQ — Every Home Service Question Answered | KL Servis Rumah",
+        "Soalan Lazim — Setiap Soalan Perkhidmatan Rumah Dijawab",
+        "常见问题 — 所有住宅服务问题解答"
+      ],
+      "sampleH2s": [
+        [
+          "Home Service Questions, Answered",
+          1
+        ],
+        [
+          "A fast directory to 1,137+ answers across the site",
+          1
+        ],
+        [
+          "Soalan Perkhidmatan Rumah, Dijawab",
+          1
+        ],
+        [
+          "Direktori pantas kepada 1,137+ jawapan di seluruh laman",
+          1
+        ],
+        [
+          "家居服务问题解答",
+          1
+        ],
+        [
+          "快速查找全站 1,137+ 个答案",
+          1
+        ]
+      ]
+    },
+    "/guides/*": {
+      "n": 21,
+      "uniqueTitles": 21,
+      "dupTitlePages": 0,
+      "uniqueDescs": 21,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 40,
+        "mean": 48.1,
+        "median": 47,
+        "max": 59
+      },
+      "descLen": {
+        "min": 123,
+        "mean": 152,
+        "median": 155,
+        "max": 158
+      },
+      "h1Zero": 0,
+      "h1One": 21,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 21,
+      "h2Mean": 4.9,
+      "h3Mean": 4.6,
+      "contentWords": {
+        "min": 387,
+        "mean": 424.2,
+        "median": 424,
+        "max": 662
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 42,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 21,
+        "ImageObject": 21,
+        "QuantitativeValue": 21,
+        "PostalAddress": 21,
+        "GeoCoordinates": 21,
+        "OpeningHoursSpecification": 21,
+        "ContactPoint": 21,
+        "Thing": 21,
+        "Organization": 21,
+        "City": 21,
+        "Country": 21,
+        "GeoCircle": 21,
+        "Distance": 21,
+        "Brand": 21,
+        "LocalBusiness": 21,
+        "WebSite": 21,
+        "SearchAction": 21,
+        "EntryPoint": 21,
+        "BlogPosting": 20,
+        "Person": 20,
+        "FAQPage": 20,
+        "Question": 20,
+        "Answer": 20,
+        "BreadcrumbList": 1,
+        "ListItem": 1,
+        "WebPage": 1,
+        "SpeakableSpecification": 1,
+        "CollectionPage": 1,
+        "ItemList": 1
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Ceiling Material Comparison: Plaster vs Gypsum",
+        "How to Choose a Ceiling Contractor in KL | KL Servis Rumah",
+        "How to Choose a Handyman in KL | KL Servis Rumah",
+        "How to Choose a House Painter in KL | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "Key takeaways",
+          20
+        ],
+        [
+          "Practical guidance for KL & Selangor",
+          20
+        ],
+        [
+          "content.relatedReading",
+          20
+        ],
+        [
+          "Need help applying this to your property?",
+          20
+        ],
+        [
+          "FAQs",
+          20
+        ],
+        [
+          "Start with the most useful pages",
+          1
+        ],
+        [
+          "All pages in this hub",
+          1
+        ],
+        [
+          "Send photos and your area — we will recommend the right next step.",
+          1
+        ]
+      ]
+    },
+    "/guides": {
+      "n": 1,
+      "uniqueTitles": 1,
+      "dupTitlePages": 0,
+      "uniqueDescs": 1,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 51,
+        "mean": 51,
+        "median": 51,
+        "max": 51
+      },
+      "descLen": {
+        "min": 129,
+        "mean": 129,
+        "median": 129,
+        "max": 129
+      },
+      "h1Zero": 0,
+      "h1One": 1,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 1,
+      "h2Mean": 3,
+      "h3Mean": 17,
+      "contentWords": {
+        "min": 784,
+        "mean": 784,
+        "median": 784,
+        "max": 784
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 2,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 1,
+        "ImageObject": 1,
+        "QuantitativeValue": 1,
+        "PostalAddress": 1,
+        "GeoCoordinates": 1,
+        "OpeningHoursSpecification": 1,
+        "ContactPoint": 1,
+        "Thing": 1,
+        "Organization": 1,
+        "City": 1,
+        "Country": 1,
+        "GeoCircle": 1,
+        "Distance": 1,
+        "Brand": 1,
+        "LocalBusiness": 1,
+        "WebSite": 1,
+        "SearchAction": 1,
+        "EntryPoint": 1,
+        "BreadcrumbList": 1,
+        "ListItem": 1,
+        "WebPage": 1,
+        "SpeakableSpecification": 1,
+        "CollectionPage": 1,
+        "ItemList": 1
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Home Service Guides KL & Selangor | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "Start with the most useful pages",
+          1
+        ],
+        [
+          "All pages in this hub",
+          1
+        ],
+        [
+          "Send photos and your area — we will recommend the right next step.",
+          1
+        ]
+      ]
+    },
+    "/": {
+      "n": 3,
+      "uniqueTitles": 3,
+      "dupTitlePages": 0,
+      "uniqueDescs": 3,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 22,
+        "mean": 38.7,
+        "median": 35,
+        "max": 59
+      },
+      "descLen": {
+        "min": 60,
+        "mean": 94,
+        "median": 70,
+        "max": 152
+      },
+      "h1Zero": 0,
+      "h1One": 3,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 3,
+      "h2Mean": 5.3,
+      "h3Mean": 19.3,
+      "contentWords": {
+        "min": 106,
+        "mean": 1386.7,
+        "median": 172,
+        "max": 3882
+      },
+      "mainWordsMean": 2,
+      "noAltImgs": 0,
+      "imgCount": 7,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 3,
+        "ImageObject": 3,
+        "QuantitativeValue": 3,
+        "PostalAddress": 3,
+        "GeoCoordinates": 3,
+        "OpeningHoursSpecification": 3,
+        "ContactPoint": 3,
+        "Thing": 3,
+        "Organization": 3,
+        "City": 3,
+        "Country": 3,
+        "GeoCircle": 3,
+        "Distance": 3,
+        "Brand": 3,
+        "LocalBusiness": 3,
+        "WebSite": 3,
+        "SearchAction": 3,
+        "EntryPoint": 3,
+        "BreadcrumbList": 1,
+        "ListItem": 1,
+        "FAQPage": 1,
+        "Question": 1,
+        "Answer": 1,
+        "WebPage": 1,
+        "SpeakableSpecification": 1,
+        "Service": 1,
+        "State": 1,
+        "AggregateOffer": 1,
+        "OfferCatalog": 1,
+        "Offer": 1,
+        "ItemList": 1
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "KL Servis Rumah | Painting & Ceiling Services KL & Selangor",
+        "Selamat datang ke | KL Servis Rumah",
+        "欢迎来到 | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "Get Your Quote in 60 Seconds",
+          2
+        ],
+        [
+          "What home problem can we fix for you today?",
+          1
+        ],
+        [
+          "Professional painting, plumbing, ceiling, waterproofing and handyman work across Kuala Lumpur and Selangor. Click any service to view details and pricing.",
+          1
+        ],
+        [
+          "Trusted across Klang Valley",
+          1
+        ],
+        [
+          "Why KL Servis Rumah",
+          1
+        ],
+        [
+          "Our Professional 5-Step Process",
+          1
+        ],
+        [
+          "Before and after: real project results",
+          1
+        ],
+        [
+          "Recent projects delivered across KL & Selangor",
+          1
+        ],
+        [
+          "Google Reviews",
+          1
+        ],
+        [
+          "KL Servis Rumah vs Typical Competitors",
+          1
+        ],
+        [
+          "Send us a photo on WhatsApp",
+          1
+        ],
+        [
+          "Areas we cover in KL & Selangor",
+          1
+        ]
+      ]
+    },
+    "/tools/<slug>": {
+      "n": 129,
+      "uniqueTitles": 129,
+      "dupTitlePages": 0,
+      "uniqueDescs": 129,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 17,
+        "mean": 44.1,
+        "median": 48,
+        "max": 60
+      },
+      "descLen": {
+        "min": 38,
+        "mean": 113.8,
+        "median": 144,
+        "max": 158
+      },
+      "h1Zero": 0,
+      "h1One": 129,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 129,
+      "h2Mean": 7.9,
+      "h3Mean": 5.8,
+      "contentWords": {
+        "min": 607,
+        "mean": 1082.9,
+        "median": 787,
+        "max": 3947
+      },
+      "mainWordsMean": 2,
+      "noAltImgs": 0,
+      "imgCount": 510,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 129,
+        "ImageObject": 129,
+        "QuantitativeValue": 129,
+        "PostalAddress": 129,
+        "GeoCoordinates": 129,
+        "OpeningHoursSpecification": 129,
+        "ContactPoint": 129,
+        "Thing": 129,
+        "Organization": 129,
+        "City": 129,
+        "Country": 129,
+        "GeoCircle": 129,
+        "Distance": 129,
+        "Brand": 129,
+        "LocalBusiness": 129,
+        "WebSite": 129,
+        "SearchAction": 129,
+        "EntryPoint": 129,
+        "Offer": 129,
+        "AggregateRating": 126,
+        "Service": 126,
+        "OfferCatalog": 126,
+        "PriceSpecification": 126,
+        "HowTo": 126,
+        "MonetaryAmount": 126,
+        "HowToTool": 126,
+        "HowToStep": 126,
+        "FAQPage": 129,
+        "Question": 129,
+        "Answer": 129,
+        "WebPage": 126,
+        "SpeakableSpecification": 129,
+        "BreadcrumbList": 129,
+        "ListItem": 129,
+        "CollectionPage": 3,
+        "ItemList": 3
+      },
+      "dupContentPages": 0,
+      "canonicalized": 42,
+      "sampleTitles": [
+        "Kalkulator Baiki Paip Bocor KL | KL Servis Rumah",
+        "Kalkulator Kos Baiki Bumbung KL | KL Servis Rumah",
+        "Trias Kebocoran KL — Punca & Kos | KL Servis Rumah",
+        "Alat Diagnostik Paip KL — Punca & Kos | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "Senarai harga 2026 di sebalik setiap anggaran",
+          42
+        ],
+        [
+          "Perkhidmatan berkaitan",
+          42
+        ],
+        [
+          "Cuba alat anggaran lain",
+          42
+        ],
+        [
+          "Lebih selesa berbincang?",
+          42
+        ],
+        [
+          "2026 price list behind every estimate",
+          42
+        ],
+        [
+          "Related services",
+          42
+        ],
+        [
+          "Try another estimator",
+          42
+        ],
+        [
+          "Prefer to talk it through?",
+          42
+        ],
+        [
+          "每份估价背后的 2026 年价格表",
+          42
+        ],
+        [
+          "相关服务",
+          42
+        ],
+        [
+          "试用其他估价工具",
+          42
+        ],
+        [
+          "想直接沟通？",
+          42
+        ]
+      ]
+    },
+    "/static/notis-privasi": {
+      "n": 1,
+      "uniqueTitles": 1,
+      "dupTitlePages": 0,
+      "uniqueDescs": 1,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 31,
+        "mean": 31,
+        "median": 31,
+        "max": 31
+      },
+      "descLen": {
+        "min": 154,
+        "mean": 154,
+        "median": 154,
+        "max": 154
+      },
+      "h1Zero": 0,
+      "h1One": 1,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 1,
+      "h2Mean": 8,
+      "h3Mean": 0,
+      "contentWords": {
+        "min": 560,
+        "mean": 560,
+        "median": 560,
+        "max": 560
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 2,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 1,
+        "ImageObject": 1,
+        "QuantitativeValue": 1,
+        "PostalAddress": 1,
+        "GeoCoordinates": 1,
+        "OpeningHoursSpecification": 1,
+        "ContactPoint": 1,
+        "Thing": 1,
+        "Organization": 1,
+        "City": 1,
+        "Country": 1,
+        "GeoCircle": 1,
+        "Distance": 1,
+        "Brand": 1,
+        "LocalBusiness": 1,
+        "WebSite": 1,
+        "SearchAction": 1,
+        "EntryPoint": 1
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Notis Privasi | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "1. Pihak yang bertanggungjawab",
+          1
+        ],
+        [
+          "2. Data yang mungkin kami kumpulkan",
+          1
+        ],
+        [
+          "3. Tujuan penggunaan",
+          1
+        ],
+        [
+          "4. Perkongsian data",
+          1
+        ],
+        [
+          "5. Kuki, storan setempat dan pilihan analitik",
+          1
+        ],
+        [
+          "6. Tempoh simpanan dan keselamatan",
+          1
+        ],
+        [
+          "7. Pilihan dan hak anda",
+          1
+        ],
+        [
+          "8. Pautan luar, kanak-kanak dan pindaan",
+          1
+        ]
+      ]
+    },
+    "/problems/<p>": {
+      "n": 222,
+      "uniqueTitles": 222,
+      "dupTitlePages": 0,
+      "uniqueDescs": 222,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 17,
+        "mean": 41.3,
+        "median": 45,
+        "max": 60
+      },
+      "descLen": {
+        "min": 63,
+        "mean": 120.9,
+        "median": 138,
+        "max": 158
+      },
+      "h1Zero": 0,
+      "h1One": 222,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 222,
+      "h2Mean": 6,
+      "h3Mean": 3.9,
+      "contentWords": {
+        "min": 193,
+        "mean": 383.1,
+        "median": 309,
+        "max": 1014
+      },
+      "mainWordsMean": 2,
+      "noAltImgs": 0,
+      "imgCount": 444,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 222,
+        "ImageObject": 222,
+        "QuantitativeValue": 222,
+        "PostalAddress": 222,
+        "GeoCoordinates": 222,
+        "OpeningHoursSpecification": 222,
+        "ContactPoint": 222,
+        "Thing": 222,
+        "Organization": 222,
+        "City": 222,
+        "Country": 222,
+        "GeoCircle": 222,
+        "Distance": 222,
+        "Brand": 222,
+        "LocalBusiness": 222,
+        "WebSite": 222,
+        "SearchAction": 222,
+        "EntryPoint": 222,
+        "BreadcrumbList": 222,
+        "ListItem": 222,
+        "FAQPage": 222,
+        "Question": 222,
+        "Answer": 222,
+        "HowTo": 222,
+        "HowToStep": 222,
+        "BlogPosting": 222,
+        "Person": 222,
+        "WebPage": 222,
+        "SpeakableSpecification": 222
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Aircond Berbau Busuk (Bau Kulat atau Apak)",
+        "Aircond Berbunyi Bising (Bergetar, Berdengung, Mengisar)",
+        "Aircond Tidak Sejuk (Hembusan Udara Panas)",
+        "Aircond Tidak Boleh Dihidupkan: Punca, Baiki & Kos"
+      ],
+      "sampleH2s": [
+        [
+          "Punca biasa",
+          74
+        ],
+        [
+          "Penyelesaian profesional",
+          74
+        ],
+        [
+          "Bila perlu hubungi pakar",
+          74
+        ],
+        [
+          "Perkhidmatan berkaitan",
+          74
+        ],
+        [
+          "Soalan Lazim",
+          74
+        ],
+        [
+          "Perlu dibaiki?",
+          74
+        ],
+        [
+          "Common causes",
+          74
+        ],
+        [
+          "Professional solutions",
+          74
+        ],
+        [
+          "When to call a pro",
+          74
+        ],
+        [
+          "Related service",
+          74
+        ],
+        [
+          "FAQs",
+          74
+        ],
+        [
+          "Need this fixed?",
+          74
+        ]
+      ]
+    },
+    "/problems": {
+      "n": 3,
+      "uniqueTitles": 3,
+      "dupTitlePages": 0,
+      "uniqueDescs": 3,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 23,
+        "mean": 38.3,
+        "median": 45,
+        "max": 47
+      },
+      "descLen": {
+        "min": 58,
+        "mean": 119,
+        "median": 149,
+        "max": 150
+      },
+      "h1Zero": 0,
+      "h1One": 3,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 3,
+      "h2Mean": 1,
+      "h3Mean": 74,
+      "contentWords": {
+        "min": 2292,
+        "mean": 2896.7,
+        "median": 2405,
+        "max": 3993
+      },
+      "mainWordsMean": 2,
+      "noAltImgs": 0,
+      "imgCount": 6,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 3,
+        "ImageObject": 3,
+        "QuantitativeValue": 3,
+        "PostalAddress": 3,
+        "GeoCoordinates": 3,
+        "OpeningHoursSpecification": 3,
+        "ContactPoint": 3,
+        "Thing": 3,
+        "Organization": 3,
+        "City": 3,
+        "Country": 3,
+        "GeoCircle": 3,
+        "Distance": 3,
+        "Brand": 3,
+        "LocalBusiness": 3,
+        "WebSite": 3,
+        "SearchAction": 3,
+        "EntryPoint": 3,
+        "BreadcrumbList": 3,
+        "ListItem": 3,
+        "WebPage": 3,
+        "SpeakableSpecification": 3
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Masalah Rumah Biasa KL & Selangor — Punca & Kos",
+        "Home Problem Guides — Diagnose & Fix KL Homes",
+        "吉隆坡与雪兰莪常见家居问题 — 成因与维修费用"
+      ],
+      "sampleH2s": [
+        [
+          "Pilih Masalah Rumah Anda",
+          1
+        ],
+        [
+          "Select Your Home Problem",
+          1
+        ],
+        [
+          "选择您的家居问题",
+          1
+        ]
+      ]
+    },
+    "/services/<svc>/<sub>": {
+      "n": 689,
+      "uniqueTitles": 689,
+      "dupTitlePages": 0,
+      "uniqueDescs": 689,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 17,
+        "mean": 41.9,
+        "median": 48,
+        "max": 60
+      },
+      "descLen": {
+        "min": 40,
+        "mean": 116.1,
+        "median": 143,
+        "max": 159
+      },
+      "h1Zero": 0,
+      "h1One": 689,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 689,
+      "h2Mean": 7,
+      "h3Mean": 9.3,
+      "contentWords": {
+        "min": 479,
+        "mean": 1206.7,
+        "median": 1291,
+        "max": 2620
+      },
+      "mainWordsMean": 2,
+      "noAltImgs": 0,
+      "imgCount": 1378,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 689,
+        "ImageObject": 689,
+        "QuantitativeValue": 689,
+        "PostalAddress": 689,
+        "GeoCoordinates": 689,
+        "OpeningHoursSpecification": 689,
+        "ContactPoint": 689,
+        "Thing": 689,
+        "Organization": 689,
+        "City": 689,
+        "Country": 689,
+        "GeoCircle": 689,
+        "Distance": 689,
+        "Brand": 689,
+        "LocalBusiness": 689,
+        "WebSite": 689,
+        "SearchAction": 689,
+        "EntryPoint": 689,
+        "BreadcrumbList": 669,
+        "ListItem": 669,
+        "Service": 666,
+        "Offer": 666,
+        "PriceSpecification": 666,
+        "OfferCatalog": 666,
+        "FAQPage": 666,
+        "Question": 666,
+        "Answer": 666,
+        "HowTo": 444,
+        "HowToStep": 444
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Servis Asas Aircond KL & Selangor — Dari RM 129",
+        "Servis Kaset Siling Aircond KL & Selangor — Dari RM 195",
+        "Overhaul Kimia Aircond KL & Selangor — Dari RM 286",
+        "Cucian Kimia Aircond KL & Selangor — Dari RM 156"
+      ],
+      "sampleH2s": [
+        [
+          "Perkhidmatan lain yang mungkin anda perlukan",
+          222
+        ],
+        [
+          "At a glance",
+          222
+        ],
+        [
+          "您可能需要的其他服务",
+          222
+        ],
+        [
+          "Panduan Berkaitan",
+          220
+        ],
+        [
+          "相关指南",
+          220
+        ],
+        [
+          "Key takeaways",
+          20
+        ],
+        [
+          "Practical guidance for KL & Selangor",
+          20
+        ],
+        [
+          "content.relatedReading",
+          20
+        ],
+        [
+          "Need help applying this to your property?",
+          20
+        ],
+        [
+          "FAQs",
+          20
+        ],
+        [
+          "Other Complete House Renovation sub-services",
+          15
+        ],
+        [
+          "Other Bathroom Renovation sub-services",
+          12
+        ]
+      ]
+    },
+    "/services/<svc>": {
+      "n": 87,
+      "uniqueTitles": 87,
+      "dupTitlePages": 0,
+      "uniqueDescs": 87,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 17,
+        "mean": 44.8,
+        "median": 48,
+        "max": 60
+      },
+      "descLen": {
+        "min": 43,
+        "mean": 119.6,
+        "median": 144,
+        "max": 159
+      },
+      "h1Zero": 0,
+      "h1One": 87,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 87,
+      "h2Mean": 9.1,
+      "h3Mean": 18.7,
+      "contentWords": {
+        "min": 1355,
+        "mean": 2232.4,
+        "median": 2231,
+        "max": 7700
+      },
+      "mainWordsMean": 2,
+      "noAltImgs": 0,
+      "imgCount": 261,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 87,
+        "ImageObject": 87,
+        "QuantitativeValue": 87,
+        "PostalAddress": 87,
+        "GeoCoordinates": 87,
+        "OpeningHoursSpecification": 87,
+        "ContactPoint": 87,
+        "Thing": 87,
+        "Organization": 87,
+        "City": 87,
+        "Country": 87,
+        "GeoCircle": 87,
+        "Distance": 87,
+        "Brand": 87,
+        "LocalBusiness": 87,
+        "WebSite": 87,
+        "SearchAction": 87,
+        "EntryPoint": 87,
+        "BreadcrumbList": 87,
+        "ListItem": 87,
+        "Service": 87,
+        "Offer": 87,
+        "PriceSpecification": 87,
+        "OfferCatalog": 87,
+        "FAQPage": 87,
+        "Question": 87,
+        "Answer": 87,
+        "HowTo": 87,
+        "HowToStep": 87,
+        "WebPage": 87,
+        "SpeakableSpecification": 87
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Servis, Baiki & Pemasangan Aircond KL & Selangor",
+        "Pemasangan Autogate KL & Selangor | KL Servis Rumah",
+        "Pemasangan Awning KL & Selangor | Car Porch & Polikarbonat",
+        "Kontraktor Pengubahsuaian Bilik Mandi KL & Selangor"
+      ],
+      "sampleH2s": [
+        [
+          "Perkhidmatan lain yang mungkin anda perlukan",
+          29
+        ],
+        [
+          "您可能需要的其他服务",
+          29
+        ],
+        [
+          "Related issues we can solve",
+          28
+        ],
+        [
+          "Available in your area",
+          28
+        ],
+        [
+          "Related resources",
+          28
+        ],
+        [
+          "Work out your price now",
+          22
+        ],
+        [
+          "Related Guides",
+          22
+        ],
+        [
+          "Ceiling Repair Estimator",
+          2
+        ],
+        [
+          "Mengenai perkhidmatan Servis, Baiki & Pemasangan Aircond ini",
+          1
+        ],
+        [
+          "Adakah Servis, Baiki & Pemasangan Aircond perkhidmatan yang sesuai untuk anda?",
+          1
+        ],
+        [
+          "Senarai harga Servis, Baiki & Pemasangan Aircond di KL & Selangor",
+          1
+        ],
+        [
+          "Bagaimana kami menyiapkan Servis, Baiki & Pemasangan Aircond — langkah demi langkah",
+          1
+        ]
+      ]
+    },
+    "/static/terma": {
+      "n": 1,
+      "uniqueTitles": 1,
+      "dupTitlePages": 0,
+      "uniqueDescs": 1,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 44,
+        "mean": 44,
+        "median": 44,
+        "max": 44
+      },
+      "descLen": {
+        "min": 147,
+        "mean": 147,
+        "median": 147,
+        "max": 147
+      },
+      "h1Zero": 0,
+      "h1One": 1,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 1,
+      "h2Mean": 10,
+      "h3Mean": 0,
+      "contentWords": {
+        "min": 553,
+        "mean": 553,
+        "median": 553,
+        "max": 553
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 2,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 1,
+        "ImageObject": 1,
+        "QuantitativeValue": 1,
+        "PostalAddress": 1,
+        "GeoCoordinates": 1,
+        "OpeningHoursSpecification": 1,
+        "ContactPoint": 1,
+        "Thing": 1,
+        "Organization": 1,
+        "City": 1,
+        "Country": 1,
+        "GeoCircle": 1,
+        "Distance": 1,
+        "Brand": 1,
+        "LocalBusiness": 1,
+        "WebSite": 1,
+        "SearchAction": 1,
+        "EntryPoint": 1
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Terma Laman & Perkhidmatan | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "1. Pengendali dan penerimaan",
+          1
+        ],
+        [
+          "2. Maklumat dan anggaran",
+          1
+        ],
+        [
+          "3. Pertanyaan, tempahan dan kontrak",
+          1
+        ],
+        [
+          "4. Skop, harga dan perubahan",
+          1
+        ],
+        [
+          "5. Tanggungjawab pelanggan",
+          1
+        ],
+        [
+          "6. Jadual, akses dan pembatalan",
+          1
+        ],
+        [
+          "7. Waranti dan produk pihak ketiga",
+          1
+        ],
+        [
+          "8. Penggunaan laman dan pautan pihak ketiga",
+          1
+        ],
+        [
+          "9. Liabiliti dan hak undang-undang",
+          1
+        ],
+        [
+          "10. Undang-undang, hubungan dan pindaan",
+          1
+        ]
+      ]
+    },
+    "/near-me/<svc>": {
+      "n": 30,
+      "uniqueTitles": 30,
+      "dupTitlePages": 0,
+      "uniqueDescs": 30,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 43,
+        "mean": 53.1,
+        "median": 53,
+        "max": 60
+      },
+      "descLen": {
+        "min": 118,
+        "mean": 130.1,
+        "median": 130,
+        "max": 147
+      },
+      "h1Zero": 0,
+      "h1One": 30,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 30,
+      "h2Mean": 38.8,
+      "h3Mean": 7,
+      "contentWords": {
+        "min": 725,
+        "mean": 852.1,
+        "median": 807,
+        "max": 2145
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 60,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 30,
+        "ImageObject": 30,
+        "QuantitativeValue": 30,
+        "PostalAddress": 30,
+        "GeoCoordinates": 30,
+        "OpeningHoursSpecification": 30,
+        "ContactPoint": 30,
+        "Thing": 30,
+        "Organization": 30,
+        "City": 30,
+        "Country": 30,
+        "GeoCircle": 30,
+        "Distance": 30,
+        "Brand": 30,
+        "LocalBusiness": 30,
+        "WebSite": 30,
+        "SearchAction": 30,
+        "EntryPoint": 30,
+        "Service": 29,
+        "Place": 29,
+        "Offer": 29,
+        "OfferCatalog": 29,
+        "BreadcrumbList": 1,
+        "ListItem": 1,
+        "WebPage": 1,
+        "SpeakableSpecification": 1,
+        "CollectionPage": 1,
+        "ItemList": 1
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Aircon Service, Repair & Installation Near Me in KL",
+        "Auto Gate & Motorised Gate Near Me in KL & Selangor",
+        "Awning Installation Services Near Me in KL & Selangor",
+        "Bathroom Renovation Near Me in KL & Selangor"
+      ],
+      "sampleH2s": [
+        [
+          "Nearest dispatch helper",
+          29
+        ],
+        [
+          "Aircon Service, Repair & Installation — Kuala Lumpur",
+          1
+        ],
+        [
+          "Aircon Service, Repair & Installation — Petaling Jaya",
+          1
+        ],
+        [
+          "Aircon Service, Repair & Installation — Subang Jaya",
+          1
+        ],
+        [
+          "Aircon Service, Repair & Installation — Puchong",
+          1
+        ],
+        [
+          "Aircon Service, Repair & Installation — Shah Alam",
+          1
+        ],
+        [
+          "Aircon Service, Repair & Installation — Klang",
+          1
+        ],
+        [
+          "Aircon Service, Repair & Installation — Cheras",
+          1
+        ],
+        [
+          "Aircon Service, Repair & Installation — Ampang",
+          1
+        ],
+        [
+          "Aircon Service, Repair & Installation — Kajang",
+          1
+        ],
+        [
+          "Aircon Service, Repair & Installation — Mont Kiara",
+          1
+        ],
+        [
+          "Aircon Service, Repair & Installation — Bangsar",
+          1
+        ]
+      ]
+    },
+    "/pricing": {
+      "n": 1,
+      "uniqueTitles": 1,
+      "dupTitlePages": 0,
+      "uniqueDescs": 1,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 48,
+        "mean": 48,
+        "median": 48,
+        "max": 48
+      },
+      "descLen": {
+        "min": 140,
+        "mean": 140,
+        "median": 140,
+        "max": 140
+      },
+      "h1Zero": 0,
+      "h1One": 1,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 1,
+      "h2Mean": 8,
+      "h3Mean": 33,
+      "contentWords": {
+        "min": 3347,
+        "mean": 3347,
+        "median": 3347,
+        "max": 3347
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 2,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 1,
+        "ImageObject": 1,
+        "QuantitativeValue": 1,
+        "PostalAddress": 1,
+        "GeoCoordinates": 1,
+        "OpeningHoursSpecification": 1,
+        "ContactPoint": 1,
+        "Thing": 1,
+        "Organization": 1,
+        "City": 1,
+        "Country": 1,
+        "GeoCircle": 1,
+        "Distance": 1,
+        "Brand": 1,
+        "LocalBusiness": 1,
+        "WebSite": 1,
+        "SearchAction": 1,
+        "EntryPoint": 1,
+        "BreadcrumbList": 1,
+        "ListItem": 1,
+        "FAQPage": 1,
+        "Question": 1,
+        "Answer": 1,
+        "OfferCatalog": 1,
+        "Offer": 1,
+        "Service": 1,
+        "WebPage": 1,
+        "SpeakableSpecification": 1
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Home Services Pricing KL & Selangor — 2026 Guide"
+      ],
+      "sampleH2s": [
+        [
+          "Fair, honest pricing",
+          1
+        ],
+        [
+          "Itemized before work",
+          1
+        ],
+        [
+          "Warranty-aware quoting",
+          1
+        ],
+        [
+          "WhatsApp-first convenience",
+          1
+        ],
+        [
+          "Choose a service and open the full pricing guide",
+          1
+        ],
+        [
+          "What usually changes the price on site?",
+          1
+        ],
+        [
+          "Send photos on WhatsApp",
+          1
+        ],
+        [
+          "Common pricing questions",
+          1
+        ]
+      ]
+    },
+    "/privacy": {
+      "n": 1,
+      "uniqueTitles": 1,
+      "dupTitlePages": 0,
+      "uniqueDescs": 1,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 32,
+        "mean": 32,
+        "median": 32,
+        "max": 32
+      },
+      "descLen": {
+        "min": 157,
+        "mean": 157,
+        "median": 157,
+        "max": 157
+      },
+      "h1Zero": 0,
+      "h1One": 1,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 1,
+      "h2Mean": 8,
+      "h3Mean": 0,
+      "contentWords": {
+        "min": 632,
+        "mean": 632,
+        "median": 632,
+        "max": 632
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 2,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 1,
+        "ImageObject": 1,
+        "QuantitativeValue": 1,
+        "PostalAddress": 1,
+        "GeoCoordinates": 1,
+        "OpeningHoursSpecification": 1,
+        "ContactPoint": 1,
+        "Thing": 1,
+        "Organization": 1,
+        "City": 1,
+        "Country": 1,
+        "GeoCircle": 1,
+        "Distance": 1,
+        "Brand": 1,
+        "LocalBusiness": 1,
+        "WebSite": 1,
+        "SearchAction": 1,
+        "EntryPoint": 1
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Privacy Notice | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "1. Who is responsible for your data",
+          1
+        ],
+        [
+          "2. Data we may collect",
+          1
+        ],
+        [
+          "3. Why we use personal data",
+          1
+        ],
+        [
+          "4. When data is shared",
+          1
+        ],
+        [
+          "5. Cookies, local storage and analytics choice",
+          1
+        ],
+        [
+          "6. Retention and security",
+          1
+        ],
+        [
+          "7. Your choices and rights",
+          1
+        ],
+        [
+          "8. External links, children and updates",
+          1
+        ]
+      ]
+    },
+    "/process/<slug>": {
+      "n": 29,
+      "uniqueTitles": 29,
+      "dupTitlePages": 0,
+      "uniqueDescs": 29,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 43,
+        "mean": 51.8,
+        "median": 51,
+        "max": 60
+      },
+      "descLen": {
+        "min": 123,
+        "mean": 134.5,
+        "median": 134,
+        "max": 144
+      },
+      "h1Zero": 0,
+      "h1One": 29,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 29,
+      "h2Mean": 6,
+      "h3Mean": 4.4,
+      "contentWords": {
+        "min": 558,
+        "mean": 680.4,
+        "median": 646,
+        "max": 1637
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 58,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 29,
+        "ImageObject": 29,
+        "QuantitativeValue": 29,
+        "PostalAddress": 29,
+        "GeoCoordinates": 29,
+        "OpeningHoursSpecification": 29,
+        "ContactPoint": 29,
+        "Thing": 29,
+        "Organization": 29,
+        "City": 29,
+        "Country": 29,
+        "GeoCircle": 29,
+        "Distance": 29,
+        "Brand": 29,
+        "LocalBusiness": 29,
+        "WebSite": 29,
+        "SearchAction": 29,
+        "EntryPoint": 29,
+        "HowTo": 29,
+        "HowToStep": 29,
+        "FAQPage": 29,
+        "Question": 29,
+        "Answer": 29
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Aircon Service, Repair & Installation Process in KL",
+        "Auto Gate & Motorised Gate Process in KL | KL Servis Rumah",
+        "Awning Installation Services Process in KL | KL Servis Rumah",
+        "Bathroom Renovation Process in KL | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "Key takeaways",
+          29
+        ],
+        [
+          "Practical guidance for KL & Selangor",
+          29
+        ],
+        [
+          "content.relatedReading",
+          29
+        ],
+        [
+          "Need help applying this to your property?",
+          29
+        ],
+        [
+          "FAQs",
+          29
+        ],
+        [
+          "Related Aircon Service, Repair & Installation resources",
+          1
+        ],
+        [
+          "Related Auto Gate & Motorised Gate resources",
+          1
+        ],
+        [
+          "Related Awning Installation Services resources",
+          1
+        ],
+        [
+          "Related Bathroom Renovation resources",
+          1
+        ],
+        [
+          "Related Custom Carpentry & Joinery resources",
+          1
+        ],
+        [
+          "Related CCTV & Security Camera Installation resources",
+          1
+        ],
+        [
+          "Related Ceiling Fan Installation & Replacement resources",
+          1
+        ]
+      ]
+    },
+    "/process": {
+      "n": 1,
+      "uniqueTitles": 1,
+      "dupTitlePages": 0,
+      "uniqueDescs": 1,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 48,
+        "mean": 48,
+        "median": 48,
+        "max": 48
+      },
+      "descLen": {
+        "min": 119,
+        "mean": 119,
+        "median": 119,
+        "max": 119
+      },
+      "h1Zero": 0,
+      "h1One": 1,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 1,
+      "h2Mean": 3,
+      "h3Mean": 35,
+      "contentWords": {
+        "min": 1204,
+        "mean": 1204,
+        "median": 1204,
+        "max": 1204
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 2,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 1,
+        "ImageObject": 1,
+        "QuantitativeValue": 1,
+        "PostalAddress": 1,
+        "GeoCoordinates": 1,
+        "OpeningHoursSpecification": 1,
+        "ContactPoint": 1,
+        "Thing": 1,
+        "Organization": 1,
+        "City": 1,
+        "Country": 1,
+        "GeoCircle": 1,
+        "Distance": 1,
+        "Brand": 1,
+        "LocalBusiness": 1,
+        "WebSite": 1,
+        "SearchAction": 1,
+        "EntryPoint": 1,
+        "BreadcrumbList": 1,
+        "ListItem": 1,
+        "WebPage": 1,
+        "SpeakableSpecification": 1,
+        "CollectionPage": 1,
+        "ItemList": 1
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Home Service Process Guides KL | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "Start with the most useful pages",
+          1
+        ],
+        [
+          "All pages in this hub",
+          1
+        ],
+        [
+          "Send photos and your area — we will recommend the right next step.",
+          1
+        ]
+      ]
+    },
+    "/projects": {
+      "n": 1,
+      "uniqueTitles": 1,
+      "dupTitlePages": 0,
+      "uniqueDescs": 1,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 33,
+        "mean": 33,
+        "median": 33,
+        "max": 33
+      },
+      "descLen": {
+        "min": 123,
+        "mean": 123,
+        "median": 123,
+        "max": 123
+      },
+      "h1Zero": 0,
+      "h1One": 1,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 1,
+      "h2Mean": 1,
+      "h3Mean": 4,
+      "contentWords": {
+        "min": 173,
+        "mean": 173,
+        "median": 173,
+        "max": 173
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 6,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 1,
+        "ImageObject": 1,
+        "QuantitativeValue": 1,
+        "PostalAddress": 1,
+        "GeoCoordinates": 1,
+        "OpeningHoursSpecification": 1,
+        "ContactPoint": 1,
+        "Thing": 1,
+        "Organization": 1,
+        "City": 1,
+        "Country": 1,
+        "GeoCircle": 1,
+        "Distance": 1,
+        "Brand": 1,
+        "LocalBusiness": 1,
+        "WebSite": 1,
+        "SearchAction": 1,
+        "EntryPoint": 1,
+        "BreadcrumbList": 1,
+        "ListItem": 1,
+        "WebPage": 1,
+        "SpeakableSpecification": 1,
+        "CollectionPage": 1,
+        "ItemList": 1
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Project Gallery | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "What our teams commonly handle",
+          1
+        ]
+      ]
+    },
+    "/residential/<slug>": {
+      "n": 29,
+      "uniqueTitles": 29,
+      "dupTitlePages": 0,
+      "uniqueDescs": 29,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 43,
+        "mean": 49.6,
+        "median": 48,
+        "max": 60
+      },
+      "descLen": {
+        "min": 134,
+        "mean": 145.5,
+        "median": 145,
+        "max": 155
+      },
+      "h1Zero": 0,
+      "h1One": 29,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 29,
+      "h2Mean": 6,
+      "h3Mean": 4,
+      "contentWords": {
+        "min": 479,
+        "mean": 504.7,
+        "median": 505,
+        "max": 542
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 58,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 29,
+        "ImageObject": 29,
+        "QuantitativeValue": 29,
+        "PostalAddress": 29,
+        "GeoCoordinates": 29,
+        "OpeningHoursSpecification": 29,
+        "ContactPoint": 29,
+        "Thing": 29,
+        "Organization": 29,
+        "City": 29,
+        "Country": 29,
+        "GeoCircle": 29,
+        "Distance": 29,
+        "Brand": 29,
+        "LocalBusiness": 29,
+        "WebSite": 29,
+        "SearchAction": 29,
+        "EntryPoint": 29,
+        "BlogPosting": 29,
+        "Person": 29,
+        "FAQPage": 29,
+        "Question": 29,
+        "Answer": 29
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Residential Aircon Service, Repair & Installation in KL",
+        "Residential Auto Gate & Motorised Gate in KL",
+        "Residential Awning Installation Services in KL",
+        "Residential Bathroom Renovation in KL | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "Key takeaways",
+          29
+        ],
+        [
+          "Practical guidance for KL & Selangor",
+          29
+        ],
+        [
+          "content.relatedReading",
+          29
+        ],
+        [
+          "Need help applying this to your property?",
+          29
+        ],
+        [
+          "FAQs",
+          29
+        ],
+        [
+          "Related Aircon Service, Repair & Installation resources",
+          1
+        ],
+        [
+          "Related Auto Gate & Motorised Gate resources",
+          1
+        ],
+        [
+          "Related Awning Installation Services resources",
+          1
+        ],
+        [
+          "Related Bathroom Renovation resources",
+          1
+        ],
+        [
+          "Related Custom Carpentry & Joinery resources",
+          1
+        ],
+        [
+          "Related CCTV & Security Camera Installation resources",
+          1
+        ],
+        [
+          "Related Ceiling Fan Installation & Replacement resources",
+          1
+        ]
+      ]
+    },
+    "/residential": {
+      "n": 1,
+      "uniqueTitles": 1,
+      "dupTitlePages": 0,
+      "uniqueDescs": 1,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 57,
+        "mean": 57,
+        "median": 57,
+        "max": 57
+      },
+      "descLen": {
+        "min": 121,
+        "mean": 121,
+        "median": 121,
+        "max": 121
+      },
+      "h1Zero": 0,
+      "h1One": 1,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 1,
+      "h2Mean": 3,
+      "h3Mean": 35,
+      "contentWords": {
+        "min": 1262,
+        "mean": 1262,
+        "median": 1262,
+        "max": 1262
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 2,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 1,
+        "ImageObject": 1,
+        "QuantitativeValue": 1,
+        "PostalAddress": 1,
+        "GeoCoordinates": 1,
+        "OpeningHoursSpecification": 1,
+        "ContactPoint": 1,
+        "Thing": 1,
+        "Organization": 1,
+        "City": 1,
+        "Country": 1,
+        "GeoCircle": 1,
+        "Distance": 1,
+        "Brand": 1,
+        "LocalBusiness": 1,
+        "WebSite": 1,
+        "SearchAction": 1,
+        "EntryPoint": 1,
+        "BreadcrumbList": 1,
+        "ListItem": 1,
+        "WebPage": 1,
+        "SpeakableSpecification": 1,
+        "CollectionPage": 1,
+        "ItemList": 1
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Residential Home Services KL & Selangor | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "Start with the most useful pages",
+          1
+        ],
+        [
+          "All pages in this hub",
+          1
+        ],
+        [
+          "Send photos and your area — we will recommend the right next step.",
+          1
+        ]
+      ]
+    },
+    "/seasonal/<slug>": {
+      "n": 8,
+      "uniqueTitles": 8,
+      "dupTitlePages": 0,
+      "uniqueDescs": 8,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 42,
+        "mean": 46.4,
+        "median": 46,
+        "max": 53
+      },
+      "descLen": {
+        "min": 151,
+        "mean": 154.4,
+        "median": 155,
+        "max": 158
+      },
+      "h1Zero": 0,
+      "h1One": 8,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 8,
+      "h2Mean": 5,
+      "h3Mean": 4,
+      "contentWords": {
+        "min": 432,
+        "mean": 435.9,
+        "median": 435,
+        "max": 443
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 16,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 8,
+        "ImageObject": 8,
+        "QuantitativeValue": 8,
+        "PostalAddress": 8,
+        "GeoCoordinates": 8,
+        "OpeningHoursSpecification": 8,
+        "ContactPoint": 8,
+        "Thing": 8,
+        "Organization": 8,
+        "City": 8,
+        "Country": 8,
+        "GeoCircle": 8,
+        "Distance": 8,
+        "Brand": 8,
+        "LocalBusiness": 8,
+        "WebSite": 8,
+        "SearchAction": 8,
+        "EntryPoint": 8,
+        "BlogPosting": 8,
+        "Person": 8,
+        "FAQPage": 8,
+        "Question": 8,
+        "Answer": 8
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Chinese New Year Home Repaint Guide | KL Servis Rumah",
+        "Hari Raya Painting Promo | KL Servis Rumah",
+        "Home Prep Rainy Season Kl | KL Servis Rumah",
+        "Monsoon Leak Emergency Guide | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "Key takeaways",
+          8
+        ],
+        [
+          "Practical guidance for KL & Selangor",
+          8
+        ],
+        [
+          "content.relatedReading",
+          8
+        ],
+        [
+          "Need help applying this to your property?",
+          8
+        ],
+        [
+          "FAQs",
+          8
+        ]
+      ]
+    },
+    "/seasonal": {
+      "n": 1,
+      "uniqueTitles": 1,
+      "dupTitlePages": 0,
+      "uniqueDescs": 1,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 55,
+        "mean": 55,
+        "median": 55,
+        "max": 55
+      },
+      "descLen": {
+        "min": 110,
+        "mean": 110,
+        "median": 110,
+        "max": 110
+      },
+      "h1Zero": 0,
+      "h1One": 1,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 1,
+      "h2Mean": 3,
+      "h3Mean": 14,
+      "contentWords": {
+        "min": 608,
+        "mean": 608,
+        "median": 608,
+        "max": 608
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 2,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 1,
+        "ImageObject": 1,
+        "QuantitativeValue": 1,
+        "PostalAddress": 1,
+        "GeoCoordinates": 1,
+        "OpeningHoursSpecification": 1,
+        "ContactPoint": 1,
+        "Thing": 1,
+        "Organization": 1,
+        "City": 1,
+        "Country": 1,
+        "GeoCircle": 1,
+        "Distance": 1,
+        "Brand": 1,
+        "LocalBusiness": 1,
+        "WebSite": 1,
+        "SearchAction": 1,
+        "EntryPoint": 1,
+        "BreadcrumbList": 1,
+        "ListItem": 1,
+        "WebPage": 1,
+        "SpeakableSpecification": 1,
+        "CollectionPage": 1,
+        "ItemList": 1
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Seasonal Home Service Guides Malaysia | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "Start with the most useful pages",
+          1
+        ],
+        [
+          "All pages in this hub",
+          1
+        ],
+        [
+          "Send photos and your area — we will recommend the right next step.",
+          1
+        ]
+      ]
+    },
+    "/services/<svc>/cost": {
+      "n": 29,
+      "uniqueTitles": 29,
+      "dupTitlePages": 0,
+      "uniqueDescs": 29,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 40,
+        "mean": 51.2,
+        "median": 51,
+        "max": 60
+      },
+      "descLen": {
+        "min": 136,
+        "mean": 147.5,
+        "median": 147,
+        "max": 157
+      },
+      "h1Zero": 0,
+      "h1One": 29,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 29,
+      "h2Mean": 4,
+      "h3Mean": 6,
+      "contentWords": {
+        "min": 332,
+        "mean": 459.2,
+        "median": 410,
+        "max": 622
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 58,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 29,
+        "ImageObject": 29,
+        "QuantitativeValue": 29,
+        "PostalAddress": 29,
+        "GeoCoordinates": 29,
+        "OpeningHoursSpecification": 29,
+        "ContactPoint": 29,
+        "Thing": 29,
+        "Organization": 29,
+        "City": 29,
+        "Country": 29,
+        "GeoCircle": 29,
+        "Distance": 29,
+        "Brand": 29,
+        "LocalBusiness": 29,
+        "WebSite": 29,
+        "SearchAction": 29,
+        "EntryPoint": 29,
+        "FAQPage": 29,
+        "Question": 29,
+        "Answer": 29,
+        "OfferCatalog": 29,
+        "Offer": 29,
+        "Service": 29,
+        "BlogPosting": 29,
+        "Person": 29,
+        "BreadcrumbList": 29,
+        "ListItem": 29
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Aircon Service, Repair & Installation Cost in KL & Selangor",
+        "Auto Gate & Motorised Gate Cost in KL & Selangor",
+        "Awning Installation Services Cost in KL & Selangor",
+        "Bathroom Renovation Cost in KL & Selangor"
+      ],
+      "sampleH2s": [
+        [
+          "Other services you might need",
+          29
+        ],
+        [
+          "What affects Aircon Service, Repair & Installation cost?",
+          1
+        ],
+        [
+          "Need an exact Aircon Service, Repair & Installation quote?",
+          1
+        ],
+        [
+          "Emergency Aircon Service, Repair & Installation in KL & Selangor",
+          1
+        ],
+        [
+          "What affects Auto Gate & Motorised Gate cost?",
+          1
+        ],
+        [
+          "Need an exact Auto Gate & Motorised Gate quote?",
+          1
+        ],
+        [
+          "Emergency Auto Gate & Motorised Gate in KL & Selangor",
+          1
+        ],
+        [
+          "What affects Awning Installation Services cost?",
+          1
+        ],
+        [
+          "Need an exact Awning Installation Services quote?",
+          1
+        ],
+        [
+          "Emergency Awning Installation Services in KL & Selangor",
+          1
+        ],
+        [
+          "What affects Bathroom Renovation cost?",
+          1
+        ],
+        [
+          "Need an exact Bathroom Renovation quote?",
+          1
+        ]
+      ]
+    },
+    "/services/<svc>/emergency": {
+      "n": 29,
+      "uniqueTitles": 29,
+      "dupTitlePages": 0,
+      "uniqueDescs": 29,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 44,
+        "mean": 51.3,
+        "median": 51,
+        "max": 59
+      },
+      "descLen": {
+        "min": 139,
+        "mean": 149.9,
+        "median": 150,
+        "max": 158
+      },
+      "h1Zero": 0,
+      "h1One": 29,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 29,
+      "h2Mean": 6,
+      "h3Mean": 6,
+      "contentWords": {
+        "min": 257,
+        "mean": 263.8,
+        "median": 265,
+        "max": 270
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 58,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 29,
+        "ImageObject": 29,
+        "QuantitativeValue": 29,
+        "PostalAddress": 29,
+        "GeoCoordinates": 29,
+        "OpeningHoursSpecification": 29,
+        "ContactPoint": 29,
+        "Thing": 29,
+        "Organization": 29,
+        "City": 29,
+        "Country": 29,
+        "GeoCircle": 29,
+        "Distance": 29,
+        "Brand": 29,
+        "LocalBusiness": 29,
+        "WebSite": 29,
+        "SearchAction": 29,
+        "EntryPoint": 29,
+        "FAQPage": 29,
+        "Question": 29,
+        "Answer": 29,
+        "Service": 29,
+        "Offer": 29,
+        "PriceSpecification": 29,
+        "OfferCatalog": 29,
+        "BreadcrumbList": 29,
+        "ListItem": 29
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Urgent Aircon Service, Repair & Installation KL & Selangor",
+        "Urgent Auto Gate & Motorised Gate KL & Selangor",
+        "Urgent Awning Installation Services KL & Selangor",
+        "Urgent Bathroom Renovation KL & Selangor | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "Stop or isolate the source if safe",
+          29
+        ],
+        [
+          "Send photos and your location",
+          29
+        ],
+        [
+          "Approve the quote before repair starts",
+          29
+        ],
+        [
+          "Fastest coverage areas",
+          29
+        ],
+        [
+          "Other services you might need",
+          29
+        ],
+        [
+          "Urgent WhatsApp dispatch",
+          29
+        ]
+      ]
+    },
+    "/suburbs/<suburb>/<svc>": {
+      "n": 1508,
+      "uniqueTitles": 1508,
+      "dupTitlePages": 0,
+      "uniqueDescs": 1508,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 43,
+        "mean": 50.8,
+        "median": 50,
+        "max": 60
+      },
+      "descLen": {
+        "min": 116,
+        "mean": 134.2,
+        "median": 134,
+        "max": 155
+      },
+      "h1Zero": 0,
+      "h1One": 1508,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 1508,
+      "h2Mean": 9,
+      "h3Mean": 14.7,
+      "contentWords": {
+        "min": 828,
+        "mean": 994,
+        "median": 992,
+        "max": 1203
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 3016,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 1508,
+        "ImageObject": 1508,
+        "QuantitativeValue": 1508,
+        "PostalAddress": 1508,
+        "GeoCoordinates": 1508,
+        "OpeningHoursSpecification": 1508,
+        "ContactPoint": 1508,
+        "Thing": 1508,
+        "Organization": 1508,
+        "City": 1508,
+        "Country": 1508,
+        "GeoCircle": 1508,
+        "Distance": 1508,
+        "Brand": 1508,
+        "LocalBusiness": 1508,
+        "WebSite": 1508,
+        "SearchAction": 1508,
+        "EntryPoint": 1508,
+        "FAQPage": 1508,
+        "Question": 1508,
+        "Answer": 1508,
+        "Service": 1508,
+        "Place": 1508,
+        "Offer": 1508,
+        "OfferCatalog": 1508,
+        "BreadcrumbList": 1508,
+        "ListItem": 1508
+      },
+      "dupContentPages": 0,
+      "canonicalized": 1073,
+      "sampleTitles": [
+        "Local Ampang Aircon Service, Repair & Installation",
+        "Local Ampang Auto Gate & Motorised Gate | KL Servis Rumah",
+        "Local Ampang Awning Installation Services | KL Servis Rumah",
+        "Local Ampang Bathroom Renovation | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "Local landmarks covered",
+          1508
+        ],
+        [
+          "Pricing guide",
+          1508
+        ],
+        [
+          "Nearby suburb pages",
+          1508
+        ],
+        [
+          "FAQs",
+          1508
+        ],
+        [
+          "How to prepare the scope in Ampang",
+          29
+        ],
+        [
+          "Other services near you in Ampang",
+          29
+        ],
+        [
+          "Book in Ampang",
+          29
+        ],
+        [
+          "How to prepare the scope in Ara Damansara",
+          29
+        ],
+        [
+          "Other services near you in Ara Damansara",
+          29
+        ],
+        [
+          "Book in Ara Damansara",
+          29
+        ],
+        [
+          "How to prepare the scope in Balakong",
+          29
+        ],
+        [
+          "Other services near you in Balakong",
+          29
+        ]
+      ]
+    },
+    "/terms": {
+      "n": 1,
+      "uniqueTitles": 1,
+      "dupTitlePages": 0,
+      "uniqueDescs": 1,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 41,
+        "mean": 41,
+        "median": 41,
+        "max": 41
+      },
+      "descLen": {
+        "min": 151,
+        "mean": 151,
+        "median": 151,
+        "max": 151
+      },
+      "h1Zero": 0,
+      "h1One": 1,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 1,
+      "h2Mean": 10,
+      "h3Mean": 0,
+      "contentWords": {
+        "min": 712,
+        "mean": 712,
+        "median": 712,
+        "max": 712
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 2,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 1,
+        "ImageObject": 1,
+        "QuantitativeValue": 1,
+        "PostalAddress": 1,
+        "GeoCoordinates": 1,
+        "OpeningHoursSpecification": 1,
+        "ContactPoint": 1,
+        "Thing": 1,
+        "Organization": 1,
+        "City": 1,
+        "Country": 1,
+        "GeoCircle": 1,
+        "Distance": 1,
+        "Brand": 1,
+        "LocalBusiness": 1,
+        "WebSite": 1,
+        "SearchAction": 1,
+        "EntryPoint": 1
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Website & Service Terms | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "1. Operator and acceptance",
+          1
+        ],
+        [
+          "2. Website information and estimates",
+          1
+        ],
+        [
+          "3. Enquiries, bookings and contract formation",
+          1
+        ],
+        [
+          "4. Scope, price and changes",
+          1
+        ],
+        [
+          "5. Customer responsibilities",
+          1
+        ],
+        [
+          "6. Scheduling, access and cancellation",
+          1
+        ],
+        [
+          "7. Warranties and third-party products",
+          1
+        ],
+        [
+          "8. Website, calculators and third-party links",
+          1
+        ],
+        [
+          "9. Liability and legal rights",
+          1
+        ],
+        [
+          "10. Governing law, contact and changes",
+          1
+        ]
+      ]
+    },
+    "/top/<slug>": {
+      "n": 10,
+      "uniqueTitles": 10,
+      "dupTitlePages": 0,
+      "uniqueDescs": 10,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 46,
+        "mean": 52.4,
+        "median": 54,
+        "max": 60
+      },
+      "descLen": {
+        "min": 148,
+        "mean": 154.8,
+        "median": 156,
+        "max": 158
+      },
+      "h1Zero": 0,
+      "h1One": 10,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 10,
+      "h2Mean": 5,
+      "h3Mean": 4,
+      "contentWords": {
+        "min": 422,
+        "mean": 431.7,
+        "median": 432,
+        "max": 448
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 20,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 10,
+        "ImageObject": 10,
+        "QuantitativeValue": 10,
+        "PostalAddress": 10,
+        "GeoCoordinates": 10,
+        "OpeningHoursSpecification": 10,
+        "ContactPoint": 10,
+        "Thing": 10,
+        "Organization": 10,
+        "City": 10,
+        "Country": 10,
+        "GeoCircle": 10,
+        "Distance": 10,
+        "Brand": 10,
+        "LocalBusiness": 10,
+        "WebSite": 10,
+        "SearchAction": 10,
+        "EntryPoint": 10,
+        "BlogPosting": 10,
+        "Person": 10,
+        "FAQPage": 10,
+        "Question": 10,
+        "Answer": 10
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Bathroom Waterproofing Options | KL Servis Rumah",
+        "How to Compare Ceiling Contractors in KL | KL Servis Rumah",
+        "How to Compare Handyman Services in KL | KL Servis Rumah",
+        "How to Compare House Painters in KL (2026) | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "Key takeaways",
+          10
+        ],
+        [
+          "Practical guidance for KL & Selangor",
+          10
+        ],
+        [
+          "content.relatedReading",
+          10
+        ],
+        [
+          "Need help applying this to your property?",
+          10
+        ],
+        [
+          "FAQs",
+          10
+        ]
+      ]
+    },
+    "/top": {
+      "n": 1,
+      "uniqueTitles": 1,
+      "dupTitlePages": 0,
+      "uniqueDescs": 1,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 53,
+        "mean": 53,
+        "median": 53,
+        "max": 53
+      },
+      "descLen": {
+        "min": 123,
+        "mean": 123,
+        "median": 123,
+        "max": 123
+      },
+      "h1Zero": 0,
+      "h1One": 1,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 1,
+      "h2Mean": 3,
+      "h3Mean": 16,
+      "contentWords": {
+        "min": 701,
+        "mean": 701,
+        "median": 701,
+        "max": 701
+      },
+      "mainWordsMean": 1,
+      "noAltImgs": 0,
+      "imgCount": 2,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 1,
+        "ImageObject": 1,
+        "QuantitativeValue": 1,
+        "PostalAddress": 1,
+        "GeoCoordinates": 1,
+        "OpeningHoursSpecification": 1,
+        "ContactPoint": 1,
+        "Thing": 1,
+        "Organization": 1,
+        "City": 1,
+        "Country": 1,
+        "GeoCircle": 1,
+        "Distance": 1,
+        "Brand": 1,
+        "LocalBusiness": 1,
+        "WebSite": 1,
+        "SearchAction": 1,
+        "EntryPoint": 1,
+        "BreadcrumbList": 1,
+        "ListItem": 1,
+        "WebPage": 1,
+        "SpeakableSpecification": 1,
+        "CollectionPage": 1,
+        "ItemList": 1
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "Home Service Comparison Criteria KL | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "Start with the most useful pages",
+          1
+        ],
+        [
+          "All pages in this hub",
+          1
+        ],
+        [
+          "Send photos and your area — we will recommend the right next step.",
+          1
+        ]
+      ]
+    },
+    "/static/bo-ke": {
+      "n": 217,
+      "uniqueTitles": 217,
+      "dupTitlePages": 0,
+      "uniqueDescs": 217,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 17,
+        "mean": 27.6,
+        "median": 31,
+        "max": 34
+      },
+      "descLen": {
+        "min": 29,
+        "mean": 53.8,
+        "median": 54,
+        "max": 79
+      },
+      "h1Zero": 0,
+      "h1One": 217,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 217,
+      "h2Mean": 8.6,
+      "h3Mean": 10.8,
+      "contentWords": {
+        "min": 864,
+        "mean": 1790.7,
+        "median": 1775,
+        "max": 6570
+      },
+      "mainWordsMean": 4,
+      "noAltImgs": 0,
+      "imgCount": 434,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 217,
+        "ImageObject": 217,
+        "QuantitativeValue": 217,
+        "PostalAddress": 217,
+        "GeoCoordinates": 217,
+        "OpeningHoursSpecification": 217,
+        "ContactPoint": 217,
+        "Thing": 217,
+        "Organization": 217,
+        "City": 217,
+        "Country": 217,
+        "GeoCircle": 217,
+        "Distance": 217,
+        "Brand": 217,
+        "LocalBusiness": 217,
+        "WebSite": 217,
+        "SearchAction": 217,
+        "EntryPoint": 217
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "空调加雪种指南 — R22、R410A 与 R32 价格",
+        "马来西亚空调安装费用 2026 — 包含哪些内容",
+        "马来西亚空调保养价格 2026 — 完整价格指南",
+        "巴生谷雨季住宅防护——清单 | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "更多您可能需要的文章",
+          216
+        ],
+        [
+          "常见问题",
+          163
+        ],
+        [
+          "应避免的常见错误",
+          35
+        ],
+        [
+          "费用与报价因素",
+          35
+        ],
+        [
+          "获取针对现场的报价",
+          35
+        ],
+        [
+          "吉隆坡与雪兰莪费用",
+          31
+        ],
+        [
+          "相关问题",
+          28
+        ],
+        [
+          "需要 电气工程 帮助？",
+          27
+        ],
+        [
+          "常见施工流程",
+          20
+        ],
+        [
+          "何时适合采用这项服务",
+          19
+        ],
+        [
+          "动工前要检查什么",
+          18
+        ],
+        [
+          "方案比较",
+          18
+        ]
+      ]
+    },
+    "/static/tiao-kuan": {
+      "n": 1,
+      "uniqueTitles": 1,
+      "dupTitlePages": 0,
+      "uniqueDescs": 1,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 25,
+        "mean": 25,
+        "median": 25,
+        "max": 25
+      },
+      "descLen": {
+        "min": 65,
+        "mean": 65,
+        "median": 65,
+        "max": 65
+      },
+      "h1Zero": 0,
+      "h1One": 1,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 1,
+      "h2Mean": 10,
+      "h3Mean": 0,
+      "contentWords": {
+        "min": 1117,
+        "mean": 1117,
+        "median": 1117,
+        "max": 1117
+      },
+      "mainWordsMean": 4,
+      "noAltImgs": 0,
+      "imgCount": 2,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 1,
+        "ImageObject": 1,
+        "QuantitativeValue": 1,
+        "PostalAddress": 1,
+        "GeoCoordinates": 1,
+        "OpeningHoursSpecification": 1,
+        "ContactPoint": 1,
+        "Thing": 1,
+        "Organization": 1,
+        "City": 1,
+        "Country": 1,
+        "GeoCircle": 1,
+        "Distance": 1,
+        "Brand": 1,
+        "LocalBusiness": 1,
+        "WebSite": 1,
+        "SearchAction": 1,
+        "EntryPoint": 1
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "网站与服务条款 | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "1. 运营方与接受条款",
+          1
+        ],
+        [
+          "2. 网站资料与估价",
+          1
+        ],
+        [
+          "3. 咨询、预约与合同成立",
+          1
+        ],
+        [
+          "4. 范围、价格与变更",
+          1
+        ],
+        [
+          "5. 客户责任",
+          1
+        ],
+        [
+          "6. 时间、通道与取消",
+          1
+        ],
+        [
+          "7. 保修与第三方产品",
+          1
+        ],
+        [
+          "8. 网站使用与第三方链接",
+          1
+        ],
+        [
+          "9. 责任与法定权利",
+          1
+        ],
+        [
+          "10. 适用法律、联系与更新",
+          1
+        ]
+      ]
+    },
+    "/static/yin-si-sheng-ming": {
+      "n": 1,
+      "uniqueTitles": 1,
+      "dupTitlePages": 0,
+      "uniqueDescs": 1,
+      "dupDescPages": 0,
+      "titleLen": {
+        "min": 22,
+        "mean": 22,
+        "median": 22,
+        "max": 22
+      },
+      "descLen": {
+        "min": 66,
+        "mean": 66,
+        "median": 66,
+        "max": 66
+      },
+      "h1Zero": 0,
+      "h1One": 1,
+      "h1Many": 0,
+      "h1InsideMain": 0,
+      "h1OutsideMain": 1,
+      "h2Mean": 8,
+      "h3Mean": 0,
+      "contentWords": {
+        "min": 1111,
+        "mean": 1111,
+        "median": 1111,
+        "max": 1111
+      },
+      "mainWordsMean": 4,
+      "noAltImgs": 0,
+      "imgCount": 2,
+      "schemaCoverage": {
+        "HomeAndConstructionBusiness": 1,
+        "ImageObject": 1,
+        "QuantitativeValue": 1,
+        "PostalAddress": 1,
+        "GeoCoordinates": 1,
+        "OpeningHoursSpecification": 1,
+        "ContactPoint": 1,
+        "Thing": 1,
+        "Organization": 1,
+        "City": 1,
+        "Country": 1,
+        "GeoCircle": 1,
+        "Distance": 1,
+        "Brand": 1,
+        "LocalBusiness": 1,
+        "WebSite": 1,
+        "SearchAction": 1,
+        "EntryPoint": 1
+      },
+      "dupContentPages": 0,
+      "canonicalized": 0,
+      "sampleTitles": [
+        "隐私声明 | KL Servis Rumah"
+      ],
+      "sampleH2s": [
+        [
+          "1. 资料使用者",
+          1
+        ],
+        [
+          "2. 我们可能收集的资料",
+          1
+        ],
+        [
+          "3. 使用目的",
+          1
+        ],
+        [
+          "4. 资料共享",
+          1
+        ],
+        [
+          "5. Cookie、本地存储与分析选择",
+          1
+        ],
+        [
+          "6. 保存期限与安全",
+          1
+        ],
+        [
+          "7. 您的选择与权利",
+          1
+        ],
+        [
+          "8. 外部链接、儿童与更新",
+          1
+        ]
+      ]
+    }
+  },
+  "nearMeDup": {
+    "total": 1073,
+    "identicalContentHash": 0,
+    "pct": 0,
+    "samples": [
+      {
+        "parent": "/areas/ampang/aircon",
+        "identical": false,
+        "h1Parent": "Aircon Service, Repair & Installation in Ampang — From RM 129",
+        "h1Near": "Aircon Service, Repair & Installation Near Me in Ampang — From RM 129"
+      },
+      {
+        "parent": "/areas/ampang/autogate",
+        "identical": false,
+        "h1Parent": "Auto Gate & Motorised Gate in Ampang — From RM 2,200",
+        "h1Near": "Auto Gate & Motorised Gate Near Me in Ampang — From RM 2,200"
+      },
+      {
+        "parent": "/areas/ampang/awning-installation",
+        "identical": false,
+        "h1Parent": "Awning Installation Services in Ampang — From On Quote",
+        "h1Near": "Awning Installation Services Near Me in Ampang — From On Quote"
+      },
+      {
+        "parent": "/areas/ampang/bathroom-renovation",
+        "identical": false,
+        "h1Parent": "Bathroom Renovation in Ampang — From RM 6,000",
+        "h1Near": "Bathroom Renovation Near Me in Ampang — From RM 6,000"
+      },
+      {
+        "parent": "/areas/ampang/carpentry",
+        "identical": false,
+        "h1Parent": "Custom Carpentry & Joinery in Ampang — From RM 300",
+        "h1Near": "Custom Carpentry & Joinery Near Me in Ampang — From RM 300"
+      },
+      {
+        "parent": "/areas/ampang/cctv",
+        "identical": false,
+        "h1Parent": "CCTV & Security Camera Installation in Ampang — From RM 420",
+        "h1Near": "CCTV & Security Camera Installation Near Me in Ampang — From RM 420"
+      }
+    ]
+  },
+  "areaVsServiceSim": {
+    "sampled": 87,
+    "mean": 0.643,
+    "samples": [
+      {
+        "url": "/areas/cheras/aircon",
+        "svc": "aircon",
+        "area": "cheras",
+        "sim": 0.647
+      },
+      {
+        "url": "/areas/cheras/autogate",
+        "svc": "autogate",
+        "area": "cheras",
+        "sim": 0.629
+      },
+      {
+        "url": "/areas/cheras/awning-installation",
+        "svc": "awning-installation",
+        "area": "cheras",
+        "sim": 0.647
+      },
+      {
+        "url": "/areas/cheras/bathroom-renovation",
+        "svc": "bathroom-renovation",
+        "area": "cheras",
+        "sim": 0.647
+      },
+      {
+        "url": "/areas/cheras/carpentry",
+        "svc": "carpentry",
+        "area": "cheras",
+        "sim": 0.647
+      },
+      {
+        "url": "/areas/cheras/cctv",
+        "svc": "cctv",
+        "area": "cheras",
+        "sim": 0.647
+      },
+      {
+        "url": "/areas/cheras/ceiling-fan",
+        "svc": "ceiling-fan",
+        "area": "cheras",
+        "sim": 0.629
+      },
+      {
+        "url": "/areas/cheras/ceiling",
+        "svc": "ceiling",
+        "area": "cheras",
+        "sim": 0.647
+      }
+    ]
+  },
+  "generatedAt": "2026-08-28T04:43:00.835Z"
+}
