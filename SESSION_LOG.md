@@ -2536,3 +2536,29 @@ The owner answered the OWNER_ACTION_PLAN round-1 items and asked for all remaini
 - Owner round-2 (when answers/photos arrive): integrate real awning photography (§A8), apply GA4/GSC confirmations if given, optional decision-tree generic "permits" line rewording.
 - Candidate dedicated session (site-wide, not awning): BlogPosting/Article schema for MS/ZH blog routes (216 topics; only EN emits it).
 - Never create standalone Air Conditioning content; never invent credentials or business claims.
+
+---
+
+## 2026-08-28 — Deep Audit Part 2 (On-page / Content / Semantic / Entity SEO) — COMPLETED ✅
+
+### What was done
+- Ran **Part 2 full-corpus audit** (not sampled): rewrote `scripts/part2-corpus-audit.ts` (v2 — fixed meta/canonical regexes, content = text after last `</footer>`, H1/H2/H3 tree, word counts, content hash, per-pattern aggregates) → `docs/audit-part2-corpus.jsonl` (5,815 records) + `docs/audit-part2-aggregate.json`.
+- Wrote + ran `scripts/part2-cluster-audit.ts` → `docs/audit-part2-clusters.json` (per-cluster mean pairwise shingle Jaccard + % sentences shared by ≥50% siblings).
+- **PR #171 merged** into `main` (merge `d340fb5`, via `arena/01a046a3-klservisrumah-web`).
+- Deliverable: `docs/full-website-deep-audit/PART-2-AUDIT-REPORT.md` (findings P2-01…P2-37, exec summary, 20 weaknesses / 20 opportunities, priority matrix, dev/content/SEO task lists, REQUIRES-VERIFICATION list). `TRACKING.md` → Part 2 ✅ DONE.
+
+### Headline findings (see report for full detail)
+- **P2-C1 CRITICAL:** static HTML streams `<main>` = "Loading…" shell; real content (incl. H1) renders AFTER `</footer>`, outside `<main>`, on all 5,815 pages → JS-less AI crawlers (all allowed in robots.txt) see broken order/landmarks.
+- **P2-C2 HIGH:** literal `content.relatedReading` renders as a visible H2 on 224 pages (i18n key missing from `content` namespace, fallback never fires); confirmed live at `/commercial/aircon-services-kl`.
+- **P2-C3 HIGH:** 174 generic "content pod" pages (commercial/residential/process/answers/compare/brands/top/seasonal/guides) share one body; process↔answers sentence overlap 89%; commercial copy talks about "homes".
+- **P2-C4 CRITICAL:** `lib/location-pair-copy.ts` rotates landmark/sub-service lists → sentence salad on 2,581 indexable area×service/near-me/suburb URLs; same-service area pages 0.635–0.669 similar.
+- **P2-C5 HIGH:** blog freshness — 216 posts / 5 dates (99 on one day); `dateModified = datePublished`.
+- **P2-C6 HIGH:** E-E-A-T — 4 hardcoded "Google Reviews" vs schema AggregateRating 4.9/120; `getReviewSchema` unused; 0 outbound citations; no named authors; 5 SVG project entries.
+- P2-01 title cannibalization (3 title families per query); P2-02 62% EN titles lack brand; P2-03 29 fake "urgent" pages; P2-16 problem pages mean 383 words; P2-18 cost pages 332–622 words.
+
+### Status / next session
+- **Completed ✅:** Part 0, Part 1 (PR #170), Part 2 (PR #171).
+- **Next: Part 3 — AEO/GEO/LLMO/AIO (per `00-PROMPT-OVERVIEW.md` + `PART-3-PROMPT.md`).** Continue in `docs/full-website-deep-audit/`; reuse corpus/cluster analyzers for any content checks.
+- **Part 3 notes already queued:** llms.txt/robots AI-crawler policy mismatch (GPTBot/ClaudeBot/PerplexityBot/CCBot/OAI-SearchBot allowed), AEO answer-block structure, `content.relatedReading` fix (P0), 174 generic pods (blocks LLM summarization), zero outbound citations, blog freshness, schema gaps (BlogPosting 216/432, HowTo 444/689).
+- **PENDING (from Part 1 + Part 2):** programmatic index restructure P0; near-me merge P0 (refined: NOT literal duplicates — 0/1,073 hash-identical, but thin 927-word variants, 34% sentence overlap); www/non-www canonical P0; `audit:seo-head`/`audit:meta` still not run (rerun with `NODE_OPTIONS=--max-old-space-size=3072`).
+- **REQUIRES VERIFICATION (owner/tools):** real Google reviews + 4.9/120 aggregate; insurance/ST-license/background-check claims; 1,200+ projects / 15+ pros / 30-min response; real article dates; GBP/social canonical URLs; live deploy completeness (built `/commercial/painting` 404s on live host).
