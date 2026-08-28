@@ -1,0 +1,559 @@
+{
+  "totalInternalLinks": 407199,
+  "totalDistinctTargets": 5812,
+  "orphans": [
+    "/_not-found",
+    "/ms",
+    "/zh"
+  ],
+  "orphanCount": 3,
+  "underlinkedCount": 28,
+  "underlinkedSample": [
+    {
+      "url": "/ms/problems/aircon-making-noise",
+      "in": 2
+    },
+    {
+      "url": "/ms/problems/aircon-not-turning-on",
+      "in": 2
+    },
+    {
+      "url": "/ms/problems/aircon-remote-display-issue",
+      "in": 2
+    },
+    {
+      "url": "/ms/problems/aircon-tripping-mcb",
+      "in": 2
+    },
+    {
+      "url": "/ms/problems/aircon-weak-airflow",
+      "in": 2
+    },
+    {
+      "url": "/ms/problems/ice-forming-on-aircon",
+      "in": 2
+    },
+    {
+      "url": "/problems/aircon-bad-smell",
+      "in": 2
+    },
+    {
+      "url": "/problems/aircon-making-noise",
+      "in": 2
+    },
+    {
+      "url": "/problems/aircon-not-cold",
+      "in": 2
+    },
+    {
+      "url": "/problems/aircon-not-turning-on",
+      "in": 1
+    },
+    {
+      "url": "/problems/aircon-remote-display-issue",
+      "in": 1
+    },
+    {
+      "url": "/problems/aircon-tripping-mcb",
+      "in": 1
+    },
+    {
+      "url": "/problems/aircon-water-leaking",
+      "in": 2
+    },
+    {
+      "url": "/problems/aircon-weak-airflow",
+      "in": 1
+    },
+    {
+      "url": "/problems/damaged-gypsum-partition-wall",
+      "in": 2
+    },
+    {
+      "url": "/problems/epoxy-floor-yellowing",
+      "in": 2
+    },
+    {
+      "url": "/problems/ice-forming-on-aircon",
+      "in": 1
+    },
+    {
+      "url": "/problems/old-bathroom-plumbing-tiles",
+      "in": 2
+    },
+    {
+      "url": "/problems/old-kitchen-cabinet-plumbing-damage",
+      "in": 2
+    },
+    {
+      "url": "/problems/popping-tiles-buckling",
+      "in": 2
+    },
+    {
+      "url": "/problems/uneven-floor-subfloor-leveling",
+      "in": 2
+    },
+    {
+      "url": "/problems/wall-cracks-settlement-masonry",
+      "in": 2
+    },
+    {
+      "url": "/zh/problems/aircon-making-noise",
+      "in": 2
+    },
+    {
+      "url": "/zh/problems/aircon-not-turning-on",
+      "in": 2
+    },
+    {
+      "url": "/zh/problems/aircon-remote-display-issue",
+      "in": 2
+    },
+    {
+      "url": "/zh/problems/aircon-tripping-mcb",
+      "in": 2
+    },
+    {
+      "url": "/zh/problems/aircon-weak-airflow",
+      "in": 2
+    },
+    {
+      "url": "/zh/problems/ice-forming-on-aircon",
+      "in": 2
+    }
+  ],
+  "overlinkedCount": 59,
+  "overlinkedSample": [
+    {
+      "url": "/areas",
+      "in": 22253
+    },
+    {
+      "url": "/about",
+      "in": 17445
+    },
+    {
+      "url": "/blog",
+      "in": 12063
+    },
+    {
+      "url": "/pricing",
+      "in": 11945
+    },
+    {
+      "url": "/contact",
+      "in": 11858
+    },
+    {
+      "url": "/services/plumbing",
+      "in": 9394
+    },
+    {
+      "url": "/services/waterproofing",
+      "in": 9394
+    },
+    {
+      "url": "/services/painting",
+      "in": 9377
+    },
+    {
+      "url": "/areas/kuala-lumpur",
+      "in": 5943
+    },
+    {
+      "url": "/areas/petaling-jaya",
+      "in": 5943
+    },
+    {
+      "url": "/areas/subang-jaya",
+      "in": 5940
+    },
+    {
+      "url": "/areas/shah-alam",
+      "in": 5934
+    },
+    {
+      "url": "/areas/puchong",
+      "in": 5934
+    },
+    {
+      "url": "/areas/klang",
+      "in": 5934
+    },
+    {
+      "url": "/areas/cheras",
+      "in": 5934
+    },
+    {
+      "url": "/areas/ampang",
+      "in": 5934
+    },
+    {
+      "url": "/problems",
+      "in": 5918
+    },
+    {
+      "url": "/guides",
+      "in": 5817
+    },
+    {
+      "url": "/projects",
+      "in": 5816
+    },
+    {
+      "url": "/faq",
+      "in": 5816
+    },
+    {
+      "url": "/near-me",
+      "in": 5815
+    },
+    {
+      "url": "/answers",
+      "in": 5815
+    },
+    {
+      "url": "/process",
+      "in": 5815
+    },
+    {
+      "url": "/compare",
+      "in": 5815
+    },
+    {
+      "url": "/top",
+      "in": 5815
+    },
+    {
+      "url": "/brands",
+      "in": 5815
+    },
+    {
+      "url": "/residential",
+      "in": 5815
+    },
+    {
+      "url": "/commercial",
+      "in": 5815
+    },
+    {
+      "url": "/seasonal",
+      "in": 5815
+    },
+    {
+      "url": "/services",
+      "in": 5173
+    }
+  ],
+  "inboundPatterns": {
+    "/": {
+      "n": 1,
+      "avgInbound": 23006,
+      "maxInbound": 23006,
+      "lowInboundSample": []
+    },
+    "/pricing": {
+      "n": 1,
+      "avgInbound": 11945,
+      "maxInbound": 11945,
+      "lowInboundSample": []
+    },
+    "/areas/other": {
+      "n": 1,
+      "avgInbound": 22253,
+      "maxInbound": 22253,
+      "lowInboundSample": []
+    },
+    "/blog": {
+      "n": 2,
+      "avgInbound": 6414,
+      "maxInbound": 12063,
+      "lowInboundSample": []
+    },
+    "/about": {
+      "n": 1,
+      "avgInbound": 17445,
+      "maxInbound": 17445,
+      "lowInboundSample": []
+    },
+    "/contact": {
+      "n": 1,
+      "avgInbound": 11858,
+      "maxInbound": 11858,
+      "lowInboundSample": []
+    },
+    "/services/<svc>/<sub>": {
+      "n": 689,
+      "avgInbound": 18.4,
+      "maxInbound": 5173,
+      "lowInboundSample": []
+    },
+    "/services/<svc>": {
+      "n": 87,
+      "avgInbound": 796.6,
+      "maxInbound": 9394,
+      "lowInboundSample": []
+    },
+    "/near-me/<svc>": {
+      "n": 30,
+      "avgInbound": 200.8,
+      "maxInbound": 5815,
+      "lowInboundSample": []
+    },
+    "/problems": {
+      "n": 3,
+      "avgInbound": 2022,
+      "maxInbound": 5918,
+      "lowInboundSample": []
+    },
+    "/answers": {
+      "n": 1,
+      "avgInbound": 5815,
+      "maxInbound": 5815,
+      "lowInboundSample": []
+    },
+    "/guides": {
+      "n": 1,
+      "avgInbound": 5817,
+      "maxInbound": 5817,
+      "lowInboundSample": []
+    },
+    "/process": {
+      "n": 1,
+      "avgInbound": 5815,
+      "maxInbound": 5815,
+      "lowInboundSample": []
+    },
+    "/compare": {
+      "n": 1,
+      "avgInbound": 5815,
+      "maxInbound": 5815,
+      "lowInboundSample": []
+    },
+    "/top": {
+      "n": 1,
+      "avgInbound": 5815,
+      "maxInbound": 5815,
+      "lowInboundSample": []
+    },
+    "/brands": {
+      "n": 1,
+      "avgInbound": 5815,
+      "maxInbound": 5815,
+      "lowInboundSample": []
+    },
+    "/residential": {
+      "n": 1,
+      "avgInbound": 5815,
+      "maxInbound": 5815,
+      "lowInboundSample": []
+    },
+    "/commercial": {
+      "n": 1,
+      "avgInbound": 5815,
+      "maxInbound": 5815,
+      "lowInboundSample": []
+    },
+    "/seasonal": {
+      "n": 1,
+      "avgInbound": 5815,
+      "maxInbound": 5815,
+      "lowInboundSample": []
+    },
+    "/projects": {
+      "n": 1,
+      "avgInbound": 5816,
+      "maxInbound": 5816,
+      "lowInboundSample": []
+    },
+    "/faq": {
+      "n": 3,
+      "avgInbound": 2304.7,
+      "maxInbound": 5816,
+      "lowInboundSample": []
+    },
+    "/areas/<area>": {
+      "n": 37,
+      "avgInbound": 1376.2,
+      "maxInbound": 5943,
+      "lowInboundSample": []
+    },
+    "/privacy": {
+      "n": 1,
+      "avgInbound": 4634,
+      "maxInbound": 4634,
+      "lowInboundSample": []
+    },
+    "/terms": {
+      "n": 1,
+      "avgInbound": 4634,
+      "maxInbound": 4634,
+      "lowInboundSample": []
+    },
+    "/answers/<slug>": {
+      "n": 29,
+      "avgInbound": 7.2,
+      "maxInbound": 8,
+      "lowInboundSample": []
+    },
+    "/areas/<area>/<svc>": {
+      "n": 1073,
+      "avgInbound": 30.2,
+      "maxInbound": 31,
+      "lowInboundSample": []
+    },
+    "/areas/<area>/<svc>/near-me": {
+      "n": 1073,
+      "avgInbound": 13,
+      "maxInbound": 13,
+      "lowInboundSample": []
+    },
+    "/blog/<slug>": {
+      "n": 432,
+      "avgInbound": 9.2,
+      "maxInbound": 26,
+      "lowInboundSample": []
+    },
+    "/problems/<p>": {
+      "n": 222,
+      "avgInbound": 8.5,
+      "maxInbound": 24,
+      "lowInboundSample": [
+        "/problems/cracked-roof-tiles (3)",
+        "/problems/old-condo-full-refurbishment (3)",
+        "/problems/ikea-furniture-assembly-help (3)",
+        "/problems/burst-pipe-emergency (3)",
+        "/problems/vinyl-flooring-lifting-edges (3)"
+      ]
+    },
+    "/tools/<slug>": {
+      "n": 129,
+      "avgInbound": 21.2,
+      "maxInbound": 628,
+      "lowInboundSample": []
+    },
+    "/brands/<slug>": {
+      "n": 32,
+      "avgInbound": 7.9,
+      "maxInbound": 17,
+      "lowInboundSample": []
+    },
+    "/commercial/<slug>": {
+      "n": 29,
+      "avgInbound": 8,
+      "maxInbound": 17,
+      "lowInboundSample": []
+    },
+    "/compare/<slug>": {
+      "n": 18,
+      "avgInbound": 8.7,
+      "maxInbound": 17,
+      "lowInboundSample": []
+    },
+    "/estimate/*": {
+      "n": 23,
+      "avgInbound": 8.4,
+      "maxInbound": 22,
+      "lowInboundSample": []
+    },
+    "/suburbs/<suburb>/<svc>": {
+      "n": 1508,
+      "avgInbound": 17.4,
+      "maxInbound": 42,
+      "lowInboundSample": []
+    },
+    "/guides/*": {
+      "n": 21,
+      "avgInbound": 8.7,
+      "maxInbound": 17,
+      "lowInboundSample": []
+    },
+    "/seasonal/<slug>": {
+      "n": 8,
+      "avgInbound": 10.8,
+      "maxInbound": 17,
+      "lowInboundSample": []
+    },
+    "/residential/<slug>": {
+      "n": 29,
+      "avgInbound": 8,
+      "maxInbound": 13,
+      "lowInboundSample": []
+    },
+    "/top/<slug>": {
+      "n": 10,
+      "avgInbound": 10,
+      "maxInbound": 17,
+      "lowInboundSample": []
+    },
+    "/static/notis-privasi": {
+      "n": 1,
+      "avgInbound": 592,
+      "maxInbound": 592,
+      "lowInboundSample": []
+    },
+    "/static/terma": {
+      "n": 1,
+      "avgInbound": 592,
+      "maxInbound": 592,
+      "lowInboundSample": []
+    },
+    "/services/<svc>/cost": {
+      "n": 29,
+      "avgInbound": 8.4,
+      "maxInbound": 11,
+      "lowInboundSample": []
+    },
+    "/services/<svc>/emergency": {
+      "n": 29,
+      "avgInbound": 7.1,
+      "maxInbound": 10,
+      "lowInboundSample": []
+    },
+    "/static/bo-ke": {
+      "n": 217,
+      "avgInbound": 12.5,
+      "maxInbound": 765,
+      "lowInboundSample": []
+    },
+    "/process/<slug>": {
+      "n": 29,
+      "avgInbound": 7.2,
+      "maxInbound": 8,
+      "lowInboundSample": []
+    },
+    "/static/yin-si-sheng-ming": {
+      "n": 1,
+      "avgInbound": 592,
+      "maxInbound": 592,
+      "lowInboundSample": []
+    },
+    "/static/tiao-kuan": {
+      "n": 1,
+      "avgInbound": 592,
+      "maxInbound": 592,
+      "lowInboundSample": []
+    }
+  },
+  "anchorCategories": {
+    "branded": {
+      "n": 0,
+      "pct": 0,
+      "examples": []
+    },
+    "generic": {
+      "n": 29642,
+      "pct": 7,
+      "examples": [
+        "Home",
+        "Pricing",
+        "View Areas"
+      ]
+    },
+    "descriptive": {
+      "n": 365853,
+      "pct": 90,
+      "examples": []
+    }
+  }
+}
