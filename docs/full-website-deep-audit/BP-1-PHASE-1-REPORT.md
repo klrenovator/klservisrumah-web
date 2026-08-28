@@ -104,8 +104,8 @@ on *every* request.
 re-added route file silently restores a thousand-page duplicate set and the next
 sitemap ships it straight back to Google.
 
-* **Source-only mode** (`--source-only`) runs in `prebuild`, before any build output exists.
-* **Full mode** adds the built-corpus checks after `npm run build`.
+* **Source-only mode** (`--source-only`) runs in `prebuild`, before any build output exists — so **CI already enforces it**, since CI's first step after `npm ci` is `npm run prebuild`.
+* **Full mode** adds the built-corpus checks after `npm run build`. Adding this as a post-build CI step needs the `workflows` permission this session does not have — see **§G** for the ready-to-apply patch.
 
 Seven check groups: map/data sync (incl. `AREA_SLUGS`/`SERVICE_SLUGS`), route-file
 absence, `generateStaticParams` filtering + no cross-page canonical, middleware
@@ -238,7 +238,39 @@ trailing-slash normalisation, which runs *before* middleware) → **301** → 20
 
 ---
 
-## G. POST-DEPLOY OWNER / SEO TASKS (cannot be done from the repo)
+## G. ONE THING THAT COULD NOT BE DONE FROM THIS SESSION
+
+**`.github/workflows/ci.yml` could not be updated.** The push was rejected:
+
+```
+! [remote rejected] ... (refusing to allow a GitHub App to create or update
+  workflow `.github/workflows/ci.yml` without `workflows` permission)
+```
+
+The commit was reverted so the branch stays pushable; the intended change is
+preserved as a one-command patch:
+
+```bash
+git apply docs/full-website-deep-audit/BP-1-ci-audit-bp1.patch
+```
+
+It adds `npm run audit:bp1` as a post-build CI step and refreshes two stale header
+counts (prebuild is now 15 gates; the site renders ~3,670 pages, not ~6,200).
+The YAML was validated before reverting (12 steps, gate ordered after the build).
+
+**How much protection is actually missing: less than it looks.** Because
+`audit:bp1 -- --source-only` runs *inside* `prebuild`, and CI's first job step
+after `npm ci` is `npm run prebuild`, **CI already fails on every source-level
+BP-1 regression today** — a re-added near-me route, an unfiltered
+`generateStaticParams`, a stale generated slug map, a missing middleware call, or
+a retired URL back in the sitemap. The patch only adds the *built-corpus* half
+(proving 0 retired `.html` files exist and 0 rendered links point at them).
+Applying it is still worth doing; it is not a gap that leaves the change
+unguarded in the meantime.
+
+---
+
+## H. POST-DEPLOY OWNER / SEO TASKS (cannot be done from the repo)
 
 BP-1 changes 2,146 live URLs from 200 to 301. These need production access:
 
@@ -260,7 +292,7 @@ BP-1 changes 2,146 live URLs from 200 to 301. These need production access:
 
 ---
 
-## H. NEXT PENDING (unchanged order, minus BP-1 phase 1)
+## I. NEXT PENDING (unchanged order, minus BP-1 phase 1)
 
 1. **BP-1 phase 2** — the demand-backed keep-list for the remaining 1,073
    `/areas/<area>/<svc>` pairs: keep only areas with genuine demand or unique

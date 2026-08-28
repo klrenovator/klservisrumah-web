@@ -61,7 +61,11 @@ when the corpus changes, don't carry stale values forward:
 - Sitemap 4,739 → 3,666; `audit:seo-head` canonicalized pages 1,073 → 0
 - All internal links retargeted via `suburbServicePath()` — 0 links into retired URLs
 - New: `scripts/generate-bp1-map.ts` (in `prebuild`/`predev`) → `config/suburb-twin-slugs.generated.ts`
-- New: `scripts/bp1-consolidation-audit.ts` → `npm run audit:bp1` (`--source-only` runs in `prebuild`)
+- New: `scripts/bp1-consolidation-audit.ts` → `npm run audit:bp1` (`--source-only` runs in `prebuild`, so **CI already enforces the source-level gate**)
+- ⚠️ **Owner action left open:** add `npm run audit:bp1` as a post-build CI step —
+  `git apply docs/full-website-deep-audit/BP-1-ci-audit-bp1.patch`. The push was
+  rejected because this session's GitHub App token lacks the `workflows`
+  permission; the commit was reverted and the change saved as that patch.
 
 ### Deep Audit Fix Wave 1 (2026-08-28) — DONE
 - P2-C2 `content.relatedReading` H2 leak — DONE

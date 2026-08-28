@@ -1,0 +1,62 @@
+diff --git a/.github/workflows/ci.yml b/.github/workflows/ci.yml
+index e935cdc..b3f3406 100644
+--- a/.github/workflows/ci.yml
++++ b/.github/workflows/ci.yml
+@@ -3,19 +3,27 @@
+ # exact sequence verified locally (Session 12, plan §"Task 3 — CI pipeline"):
+ #
+ #   npm ci → prebuild (all content & i18n gates) → type-check → lint
+-#         → full SSG build → audit:links → audit:html → seo:audit → audit:meta
++#         → full SSG build → audit:bp1 → audit:links → audit:html → seo:audit
++#         → audit:meta
+ #
+ # Gates inside `prebuild`:
+ #   gen:rates · gen:ai-context · gen:service-summary · gen:blog-index
+-#   validate:blogs · audit:topical-map · audit:specialty-locale
+-#   audit:specialty-coverage · audit:service-i18n · audit:i18n
+-#   audit:problem-i18n · audit:client-bundle · test:estimators
++#   gen:bp1-map · validate:blogs · audit:bp1 (--source-only)
++#   audit:topical-map · audit:specialty-locale · audit:specialty-coverage
++#   audit:service-i18n · audit:i18n · audit:problem-i18n · audit:client-bundle
++#   test:estimators
++#
++# `audit:bp1` runs twice on purpose: `--source-only` inside prebuild (fails fast
++# on a source regression, before a multi-minute build) and in full mode after the
++# build, where it also proves the built corpus contains 0 retired pages and 0
++# rendered links into them.
+ #
+ # Post-build audits read `.next/server/app` (static SSG output), so the build
+ # step must complete before they run. audit:meta needs a large Node heap
+-# (~6,200 rendered pages); ubuntu-latest runners have 16 GB RAM, so 8 GB is a
+-# safe ceiling. No secrets are required: every protected endpoint fails closed
+-# without env vars and NEXT_PUBLIC_GA_ID is optional.
++# (~3,700 rendered pages since BP-1 phase 1 retired 2,146 duplicates);
++# ubuntu-latest runners have 16 GB RAM, so 8 GB is a safe ceiling. No secrets are
++# required: every protected endpoint fails closed without env vars and
++# NEXT_PUBLIC_GA_ID is optional.
+ # ─────────────────────────────────────────────────────────────────────────────
+ 
+ name: CI
+@@ -54,7 +62,7 @@ jobs:
+       - name: Install dependencies
+         run: npm ci
+ 
+-      - name: Prebuild — content generation + 13 validation gates
++      - name: Prebuild — content generation + 15 validation gates
+         run: npm run prebuild
+ 
+       - name: TypeScript — tsc --noEmit
+@@ -63,9 +71,12 @@ jobs:
+       - name: ESLint — zero warnings policy
+         run: npm run lint
+ 
+-      - name: SSG build — ~6,200 static pages
++      - name: SSG build — ~3,670 static pages
+         run: npm run build
+ 
++      - name: BP-1 consolidation gate — retired programmatic URLs stay retired
++        run: npm run audit:bp1
++
+       - name: Internal link audit — rendered pages + source scan
+         run: npm run audit:links
+ 

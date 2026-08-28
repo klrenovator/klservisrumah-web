@@ -106,6 +106,10 @@
 3. **Post-deploy for BP-1 (owner/SEO):** GSC + Bing — confirm the 2,146 URLs move
    to *"Page with redirect"*; resubmit `/sitemap.xml` (3,666 URLs); IndexNow-ping
    the surviving `/areas/<area>/<svc>` set; watch for the normal 1–2 week dip.
+   Also apply `git apply docs/full-website-deep-audit/BP-1-ci-audit-bp1.patch`
+   (adds `audit:bp1` as a post-build CI step — this session's token lacks the
+   `workflows` permission, so the push was rejected and reverted; the
+   source-level half already runs in CI via `prebuild`).
 4. **Still-missing access (blockers to re-request from owner):** Google Search
    Console, live HTTP/edge check (www 301 + trailing-slash 301s — Part 1 #3 and
    #7), CWV/CrUX, GBP + review source verification, owner fact confirmations
