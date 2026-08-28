@@ -21,7 +21,7 @@
 | 2 | On-page SEO + Content + Semantic + Entity SEO | ✅ `PART-2-PROMPT.md` | ✅ `PART-2-AUDIT-REPORT.md` | ✅ | ✅ DONE (PR #171 — authored this session) |
 | 3 | AEO + GEO + LLMO + AIO / AI Search | ✅ `PART-3-PROMPT.md` | ✅ `PART-3-AUDIT-REPORT.md` | ✅ | ✅ DONE (PR #173 — authored this session) |
 | 4 | SXO + Local SEO + Internal Linking + CRO + Trust | ✅ `PART-4-PROMPT.md` | ✅ `PART-4-AUDIT-REPORT.md` | ✅ | ✅ DONE (PR #174 — authored this session) |
-| 5 | Schema + Content Gap + Priority Roadmap | ✅ `PART-5-PROMPT.md` | ⏳ PENDING | ⏳ | ⏳ PENDING |
+| 5 | Schema + Content Gap + Priority Roadmap | ✅ `PART-5-PROMPT.md` | ✅ `PART-5-AUDIT-REPORT.md` | ✅ | ✅ DONE (PR authored this session) |
 
 ---
 
@@ -36,7 +36,7 @@
 | P0 | Audit Part 2 (On-page / Content / Semantic / Entity) | ✅ DONE |
 | P1 | Audit Part 3 (AEO / GEO / LLMO / AI SEO) | ✅ DONE (PR #173) |
 | P1 | Audit Part 4 (SXO / Local / Internal Linking / CRO / Trust) | ✅ DONE (PR #174) |
-| P1 | Audit Part 5 (Schema / Content Gap / Roadmap) | ⏳ PENDING |
+| P1 | Audit Part 5 (Schema / Content Gap / Roadmap + cumulative Final Output A–N) | ✅ DONE (this session) |
 | — | Merge per-part audit PRs (this session: Pt 1 merged) | ✅ DONE (Pt 1 + Pt 2) |
 | P0 | Fix Part 1 Critical #1 — Trim programmatic service+location index | ⏳ PENDING |
 | P0 | Fix Part 1 Critical #2 — Consolidate near-me duplicates | ⏳ PENDING |
@@ -60,6 +60,41 @@
 | 2026-08-28 | Part 2 audit — full-corpus on-page/content/semantic/entity | ✅ Part 2 committed & merged (PR #171) |
 | 2026-08-28 | Part 3 audit — full-corpus AEO/GEO/LLMO/AI-search + entity-consistency scans | ✅ Part 3 committed & merged (PR #173) |
 | 2026-08-28 | Part 4 audit — full-corpus SXO/mobile/CRO/CTA/trust/local + internal-link graph & anchor-text scan | ✅ Part 4 committed & merged (PR #174) |
+| 2026-08-28 | Part 5 audit — full-corpus schema/breadcrumb/image/cannibalization scan (`scripts/part5-audit.ts`) + content gap + decay + brand/entity + **cumulative Final Output A–N** | ✅ Part 5 committed (PR this session) — **ALL 5 AUDIT PARTS COMPLETE** |
+
+---
+
+## Part 5 — Priority Work Queue (findings added — `PART-5-AUDIT-REPORT.md`)
+
+| Prio | Task | Status |
+|---|---|---|
+| P0 | P5-02 — FAQPage markup on ~1,131 pages whose Q&As are not in rendered HTML (1,073 near-me + 29 cost + 29 emergency + homepage): SSR the FAQs or strip the schema | ⏳ PENDING |
+| P0 | P5-08 — Unit-less Offer prices (`price:"14"` flooring etc. on ~2,500 pages) → `UnitPriceSpecification` + visible units (with P3-05) | ⏳ PENDING |
+| P0 | CF-1 — Retarget/301 the 26 blog↔sub-service H1 twins (list in `audit-part5-cannibalization.json`) | ⏳ PENDING |
+| P0 | P5-12 — Photography program: 37 images / 5,815 pages, 0 real project photos (owner-dependent; start immediately) | ⏳ PENDING (owner) |
+| P1 | P5-01/04 — Remove duplicate `LocalBusiness` node; single `/#organization` entity; @id-reference schema + trim areaServed (22–31 KB JSON-LD/page today) | ⏳ PENDING |
+| P1 | P5-03 — Strip `aggregateRating` from tool SoftwareApplication; delete unused Product-wrapped `getReviewSchema()` | ⏳ PENDING |
+| P1 | P5-05 — Blog `author` Person→Organization (interim); real author entities later | ⏳ PENDING |
+| P1 | P5-13/14 — Raster 1200×630 OG images (SVG og:image breaks WhatsApp/social previews on ~2,200+ pages); fix schema `image` fields too | ⏳ PENDING |
+| P1 | P5-10 — Breadcrumbs (UI+schema) on 184 pod pages + 20 specialty sub-services + 29 near-me hubs + 20 guides | ⏳ PENDING |
+| P1 | CF-4 — Merge rate-book into `/services/<svc>/cost` pages; evaluate NOINDEX/merge for `/estimate/*` (23 pages) | ⏳ PENDING |
+| P1 | §5.4-B1 — BM commercial tree (harga/problem/money templates) — largest content gap | ⏳ PENDING |
+| P2 | P5-06 — HowTo: per-page names (all 74 problems say "Professional home service process") or drop (rich results retired) | ⏳ PENDING |
+| P2 | P5-07 — Remove Speakable/orphan WebPage nodes (526 pages) | ⏳ PENDING |
+| P2 | §5.6 — Freshness pipeline: RATE_YEAR assertion, refresh rota, real lastMod | ⏳ PENDING |
+| P2 | P5-09 — Owner verification: foundingDate 2014 vs SSM 202503227236 (2025); employees 10 vs "15+" | ⏳ PENDING (owner) |
+| P3 | P5-11 — Suppress depth-1 BreadcrumbList on homepage | ⏳ PENDING |
+
+---
+
+## ⭐ NEXT SESSION MUST CONTINUE HERE
+
+**All 5 audit parts are complete.** The audit phase is finished; the fix phase begins.
+
+1. **Start with the consolidated roadmap** in `PART-5-AUDIT-REPORT.md` → Final Output **J (priority table)** and **N ("if we fix only 10 things")**.
+2. First implementation wave (quick wins, ≤1 day each): C7 price units, P2-C2 `content.relatedReading`, P2-14 near-me label, CF-1 twin retargets, P5-01 entity unification, P5-03 rating cleanup, P5-05 author type, P5-11.
+3. Then the P0 structural work in order: C2 content-in-`<main>` (P2-C1/P4-01) → P5-02 FAQ visibility → BP-1 programmatic consolidation (Part 1 Critical #1/#2).
+4. **Still-missing access (blockers to re-request from owner):** Google Search Console, live HTTP/edge check (www 301), CWV/CrUX, GBP + review source verification, owner fact confirmations (reviews count, founding year, staff, stats).
 
 ---
 
