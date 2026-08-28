@@ -1,6 +1,6 @@
 # SEO Audit Report
 
-Generated: 2026-08-27T04:43:18.619Z
+Generated: 2026-08-28T21:53:20.819Z
 
 ## Route Inventory
 
@@ -76,26 +76,26 @@ Generated: 2026-08-27T04:43:18.619Z
 - /areas/seri-kembangan
 - /areas/pandan-indah
 - /areas/sentul
-- /suburbs/kuala-lumpur/painting
-- /suburbs/cheras/painting
-- /suburbs/ampang/painting
-- /suburbs/setapak/painting
-- /suburbs/wangsa-maju/painting
-- /suburbs/kepong/painting
-- /suburbs/sri-petaling/painting
-- /suburbs/bukit-jalil/painting
-- /suburbs/mont-kiara/painting
-- /suburbs/bangsar/painting
-- /suburbs/desa-parkcity/painting
-- /suburbs/taman-melawati/painting
+- /areas/kuala-lumpur/painting
+- /areas/cheras/painting
+- /areas/ampang/painting
+- /areas/setapak/painting
+- /areas/wangsa-maju/painting
+- /areas/kepong/painting
+- /areas/sri-petaling/painting
+- /areas/bukit-jalil/painting
+- /areas/mont-kiara/painting
+- /areas/bangsar/painting
+- /areas/desa-parkcity/painting
+- /areas/taman-melawati/painting
 - /suburbs/hulu-kelang/painting
-- /suburbs/petaling-jaya/painting
-- /suburbs/subang-jaya/painting
-- /suburbs/shah-alam/painting
-- /suburbs/puchong/painting
-- /suburbs/damansara/painting
-- /suburbs/kota-damansara/painting
-- /suburbs/ara-damansara/painting
+- /areas/petaling-jaya/painting
+- /areas/subang-jaya/painting
+- /areas/shah-alam/painting
+- /areas/puchong/painting
+- /areas/damansara/painting
+- /areas/kota-damansara/painting
+- /areas/ara-damansara/painting
 - /problems/peeling-paint-malaysia
 - /problems/faded-exterior-paint-malaysia
 - /problems/damp-walls-paint-bubbling
@@ -223,6 +223,11 @@ Generated: 2026-08-27T04:43:18.619Z
 - /blog/polycarbonate-vs-metal-vs-acp-awning-malaysia
 - /blog/car-porch-awning-guide-malaysia
 - /blog/how-awning-pricing-works-malaysia
+- /blog/how-to-choose-right-awning-malaysia
+- /blog/awning-maintenance-leaks-rust-water-pooling
+- /blog/retractable-vs-fixed-awning-malaysia
+- /blog/balcony-patio-awning-guide-malaysia
+- /blog/replacing-old-leaking-awning-malaysia
 - /blog/aircond-water-heater-and-oven-point
 - /blog/aluminium-sliding-window-kl
 - /blog/autogate-motor-replacement-service-kl
@@ -396,16 +401,16 @@ Generated: 2026-08-27T04:43:18.619Z
 
 ## Checks
 
-- Total representative routes: 389
+- Total representative routes: 394
 - Service pages: 29
 - Area pages: 37
 - Suburb records: 52
 - Problem pages: 86
-- Blog posts: 211
+- Blog posts: 216
 
 ## Metadata consistency (post-build full-corpus)
 
-- Pages checked: 5797
+- Pages checked: 3669
 - Pages with hreflang while canonicalised to a different URL: 0
 
 _No issues found — every page that canonicalises to a different URL correctly omits hreflang (Google: canonical overrides hreflang)._

@@ -9,7 +9,6 @@ import { localizeAreaDescription } from "@/lib/area-body-i18n";
 import { localizeSuburbBody } from "@/lib/suburb-body-i18n";
 import {
   buildAreaServicePairCopy,
-  buildNearMePairCopy,
   buildSuburbServicePairCopy,
   type LocationPairCopy
 } from "@/lib/location-pair-copy";
@@ -115,10 +114,6 @@ export type LocationPairBundleEntry = LocationPairCopy;
 
 export function buildAreaServicePairBundle(area: AreaDetail, service: ServiceDetail): LocaleMap<LocationPairBundleEntry> {
   return forEachLocale((locale) => buildAreaServicePairCopy(area, service, locale));
-}
-
-export function buildNearMePairBundle(area: AreaDetail, service: ServiceDetail): LocaleMap<LocationPairBundleEntry> {
-  return forEachLocale((locale) => buildNearMePairCopy(area, service, locale));
 }
 
 export function buildSuburbServicePairBundle(suburb: SuburbDetail, service: ServiceDetail): LocaleMap<LocationPairBundleEntry> {

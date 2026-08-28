@@ -77,14 +77,22 @@ for (const file of files) {
 const audits = [
   ["area-service across areas", auditGroups(groupBy(areaService, (page) => page.service))],
   ["area-service across services", auditGroups(groupBy(areaService, (page) => page.place))],
-  ["near-me across areas", auditGroups(groupBy(nearMe, (page) => page.service))],
-  ["near-me across services", auditGroups(groupBy(nearMe, (page) => page.place))],
   ["suburb-service across suburbs", auditGroups(groupBy(suburbService, (page) => page.service))],
   ["suburb-service across services", auditGroups(groupBy(suburbService, (page) => page.place))]
 ] as const;
 
 console.log(`Location similarity audit: ${areaService.length} area-service, ${nearMe.length} near-me and ${suburbService.length} suburb-service pages.`);
 console.log(`Metric: Jaccard similarity of normalized ${shingleSize}-word visible-text shingles; required maximum < ${(threshold * 100).toFixed(0)}%.`);
+
+// BP-1 phase 1 retired all 1,073 `/areas/<a>/<s>/near-me` pages (301 → parent).
+// Their similarity layers are therefore gone from the corpus; assert that rather
+// than quietly printing a meaningless "0.0% max ( ↔ )".
+if (nearMe.length !== 0) {
+  console.error(`✖ ${nearMe.length} /areas/*/*/near-me pages are still being generated — BP-1 phase 1 regression.`);
+  process.exit(1);
+}
+console.log("  near-me layer: 0 pages (BP-1 phase 1 — consolidated into /areas/<area>/<svc>)");
+
 let failed = false;
 for (const [label, result] of audits) {
   console.log(`  ${label}: ${(result.score * 100).toFixed(1)}% max (${result.left} ↔ ${result.right})`);

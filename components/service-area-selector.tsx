@@ -4,6 +4,7 @@ import React, { useId, useState } from "react";
 import { useRouter } from "next/navigation";
 import { MapPin } from "lucide-react";
 import { suburbPages } from "@/config/suburb-data";
+import { suburbServicePath } from "@/lib/bp1-consolidation";
 import { useTranslations } from "@/hooks/use-translations";
 
 export function ServiceAreaSelector({ serviceSlug }: { serviceSlug: string }) {
@@ -33,7 +34,12 @@ export function ServiceAreaSelector({ serviceSlug }: { serviceSlug: string }) {
         <button
           type="button"
           disabled={!selected}
-          onClick={() => router.push(`/suburbs/${selected}/${serviceSlug}`)}
+          // BP-1 phase 1: 37 of the 52 listed suburbs are also coverage areas,
+          // so their local page lives at `/areas/<slug>/<svc>` and the
+          // `/suburbs/...` URL is a 301. `suburbServicePath` picks the live URL
+          // for whichever kind the visitor selected, so the button never lands
+          // on a redirect.
+          onClick={() => router.push(suburbServicePath(selected, serviceSlug))}
           className="rounded-xl bg-[#0284C7] px-5 py-3 text-sm font-extrabold text-white disabled:cursor-not-allowed disabled:bg-slate-300"
         >
           {t("areaSelector.viewLocal")}

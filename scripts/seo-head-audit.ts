@@ -166,9 +166,13 @@ for (const page of pages) {
   if (!noindex && expectedNoindex.has(page.url)) failures.push(`${page.url}: expected noindex is missing`);
 
   if (!noindex && !selfCanonical) {
-    if (!page.url.startsWith("/suburbs/")) {
-      failures.push(`${page.url}: unexpected cross-page canonical -> ${page.canonical}`);
-    }
+    // BP-1 phase 1 removed the last cross-page canonical on the site: the 1,073
+    // `/suburbs/<twin>/<svc>` pages that used to canonicalise to
+    // `/areas/<twin>/<svc>` are now 301s instead of pages, so the old
+    // `/suburbs/` exemption here is obsolete. Every indexable page must be
+    // self-canonical — a canonical pointing elsewhere now means a duplicate has
+    // crept back in.
+    failures.push(`${page.url}: unexpected cross-page canonical -> ${page.canonical}`);
     if (page.hreflangCount > 0) failures.push(`${page.url}: canonicalized page emits hreflang`);
   }
   if (!noindex && selfCanonical && page.hreflangCount === 0) failures.push(`${page.url}: self-canonical page has no hreflang`);

@@ -63,6 +63,34 @@ export function LocaleAreaServiceView({
     }
   ];
 
+  /**
+   * BP-1 phase 1 — near-me consolidation.
+   *
+   * The 1,073 `/areas/<area>/<svc>/near-me` pages now 301 to this page. Their
+   * only substantive content was this three-question block about proximity,
+   * dispatch and pricing, so the block moved here rather than being deleted:
+   * a redirect carries URL equity but not on-page content, and dropping the
+   * answers would have made the canonical page answer less than the duplicate
+   * it replaced. The wording is unchanged from the retired pages, and the same
+   * three Q&As are emitted into this page's FAQPage JSON-LD (see
+   * `app/(en)/areas/[slug]/[serviceSlug]/page.tsx`) so the markup and the
+   * visible copy cannot drift apart.
+   */
+  const nearMeFaqs = [
+    {
+      q: t("location.nearMeFaqAvailable", { area: area.name, service: service.title }),
+      a: t("location.nearMeFaqAvailableA", { area: area.name, landmarks: landmarks.slice(0, 4).join(", ") })
+    },
+    {
+      q: t("location.nearMeFaqConfirm"),
+      a: t("location.nearMeFaqConfirmA")
+    },
+    {
+      q: t("location.nearMeFaqPricing"),
+      a: t("location.nearMeFaqPricingA")
+    }
+  ];
+
   return (
     <>
       <Breadcrumbs
@@ -97,20 +125,24 @@ export function LocaleAreaServiceView({
               <p className="mt-4 text-base font-semibold leading-relaxed text-[#475569]">{service.description}</p>
 
               {/*
-                Crawl path to the "near me" variant of this exact area × service
-                pair. Before this link, all 1,036 `/areas/<area>/<service>/near-me`
-                pages were orphans: they were listed in the sitemap but had zero
-                inbound internal links anywhere on the site, so they depended
-                entirely on sitemap discovery and received no internal link
-                equity. The parent page is the only natural, contextually
-                relevant referrer, and it exists for every one of the 1,036 pairs.
+                BP-1 phase 1: this link used to point at
+                `/areas/<area>/<svc>/near-me`, one of 1,073 pages that were
+                literal duplicates of this page (only the word "near" differed)
+                and are now 301-redirected back here. Linking at a retired URL
+                would send users — and crawlers — through a pointless redirect
+                hop to the page they are already on.
+
+                The "near me" intent is still served, by the 30 kept
+                `/near-me/<service>` geo-hub pages (Part 1 §1.3: KEEP INDEXED),
+                which genuinely differ from this page: they list every covered
+                area for the service instead of describing one.
               */}
               <Link
-                href={`/areas/${areaSlug}/${serviceSlug}/near-me`}
+                href={`/near-me/${serviceSlug}`}
                 className="mt-5 inline-flex items-center gap-2 rounded-xl border border-sky-200 bg-sky-50 px-4 py-2.5 text-sm font-extrabold text-[#0284C7] transition hover:border-[#0EA5E9] hover:bg-sky-100"
               >
                 <MapPin className="h-4 w-4" />
-                {t("location.nearMeH1", { service: service.title, area: area.name, price: startPrice })}
+                {t("location.nearMeHubLink", { service: service.title })}
               </Link>
             </div>
 
@@ -165,6 +197,27 @@ export function LocaleAreaServiceView({
               <div className="space-y-4">
                 {faqs.map((faq) => (
                   <div key={faq.q} className="rounded-2xl bg-slate-50 p-4">
+                    <h3 className="font-extrabold text-[#075985]">{faq.q}</h3>
+                    <p className="mt-2 text-sm font-semibold text-[#475569]">{faq.a}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/*
+              BP-1 phase 1 — the visible half of the absorbed near-me Q&A block.
+              Mirrors the three `location.nearMeFaq*` entries in this page's
+              FAQPage JSON-LD; P5-02 (Fix Wave 2) established the rule that a
+              FAQ in the schema must also be in the rendered HTML, so the two
+              lists are kept in the same order and with the same wording.
+            */}
+            <div className="rounded-3xl border border-sky-100 bg-sky-50/50 p-6 shadow-xs sm:p-8">
+              <h2 className="mb-5 text-2xl font-extrabold text-[#075985]">
+                {t("location.nearMeFaqsHeading", { area: area.name, service: service.title })}
+              </h2>
+              <div className="space-y-4">
+                {nearMeFaqs.map((faq) => (
+                  <div key={faq.q} className="rounded-2xl bg-white p-4">
                     <h3 className="font-extrabold text-[#075985]">{faq.q}</h3>
                     <p className="mt-2 text-sm font-semibold text-[#475569]">{faq.a}</p>
                   </div>

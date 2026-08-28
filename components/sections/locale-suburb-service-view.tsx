@@ -9,6 +9,7 @@ import type { LocaleMap, LocationPairBundleEntry, ServiceBundleEntry, ServiceLin
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { LocationPairContent } from "@/components/sections/location-pair-content";
+import { suburbServicePath } from "@/lib/bp1-consolidation";
 
 export type NearbySuburbLink = { slug: string; name: string };
 
@@ -60,8 +61,13 @@ export function LocaleSuburbServiceView({
       <Breadcrumbs
         items={[
           { label: t("location.suburbs"), href: "/areas" },
-          { label: suburbName, href: `/suburbs/${suburbSlug}/${serviceSlug}` },
-          { label: service.title, href: `/suburbs/${suburbSlug}/${serviceSlug}` }
+          // BP-1 phase 1: `suburbServicePath` is used even for this page's own
+          // URL so the breadcrumb can never point at a 301. Today this route
+          // only renders non-twin suburbs (where the helper returns the same
+          // `/suburbs/...` path), but routing it through the shared helper means
+          // a future twin could not reintroduce a self-link to a redirect.
+          { label: suburbName, href: suburbServicePath(suburbSlug, serviceSlug) },
+          { label: service.title, href: suburbServicePath(suburbSlug, serviceSlug) }
         ]}
       />
 
@@ -121,7 +127,13 @@ export function LocaleSuburbServiceView({
                 {nearby.map((item) => (
                   <Link
                     key={item.slug}
-                    href={`/suburbs/${item.slug}/${serviceSlug}`}
+                    // BP-1 phase 1: a neighbouring suburb is very often one of the
+                    // 37 that are also coverage areas (e.g. Cheras, Kepong,
+                    // Mont Kiara). Linking straight at `/suburbs/<twin>/<svc>`
+                    // would send the click through a 301 to `/areas/<twin>/<svc>`
+                    // — a wasted hop that also spends the link equity the sibling
+                    // card exists to pass.
+                    href={suburbServicePath(item.slug, serviceSlug)}
                     className="rounded-2xl bg-slate-50 p-4 text-sm font-extrabold text-[#075985] hover:bg-[#E0F2FE]"
                   >
                     {item.name} — {service.title}

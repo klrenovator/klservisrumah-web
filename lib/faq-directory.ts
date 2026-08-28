@@ -11,6 +11,7 @@ import { contentI18nMsFull, contentI18nZhFull } from "@/config/content-i18n";
 import type { Locale } from "@/lib/i18n";
 import { areaPages } from "@/config/area-data";
 import { suburbPages } from "@/config/suburb-data";
+import { suburbServicePath } from "@/lib/bp1-consolidation";
 import {
   clusterPages,
   guidePages,
@@ -153,7 +154,11 @@ function buildDirectory(locale: Locale = "en"): FaqCategory[] {
     "Same-day availability, condo/JMB rules and pricing questions for individual suburbs.",
     suburbPages.flatMap((suburb) => {
       const localized = localize ? getLocalizedSuburb(suburb, locale) : suburb;
-      return localized.faqs.map((faq) => ({ ...faq, href: `/suburbs/${suburb.slug}/painting`, source: localized.name }));
+      // BP-1 phase 1: 37 of the 52 suburbs now live at `/areas/<slug>/painting`;
+      // the `/suburbs/...` URL for those is a 301. Every one of the 156 suburb
+      // FAQ cards links out from the /faq directory, so pointing them at
+      // retired URLs would have put 111 dead-end hops on that page alone.
+      return localized.faqs.map((faq) => ({ ...faq, href: suburbServicePath(suburb.slug, "painting"), source: localized.name }));
     })
   );
 

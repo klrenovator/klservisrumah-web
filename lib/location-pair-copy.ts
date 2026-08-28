@@ -31,25 +31,35 @@ function rotate<T>(values: T[], offset: number) {
   return values.map((_, index) => values[(index + offset) % values.length]);
 }
 
-function areaPairCopy(area: AreaDetail, service: ServiceDetail, locale: Locale, nearMe: boolean): LocationPairCopy {
+/**
+ * Parametric body copy for an area × service page.
+ *
+ * The `nearMe` variant used to live here and produced a second, near-identical
+ * copy block for `/areas/<a>/<s>/near-me`. BP-1 phase 1 retired those 1,073
+ * pages (301 → parent), so only the canonical branch remains.
+ *
+ * NB: the `:service:` literal in the hash seed is load-bearing. It is the input
+ * that decides which landmark and sub-service each paragraph rotates to, so
+ * changing it would silently re-shuffle the copy on all 1,073 surviving
+ * `/areas/<area>/<svc>` pages. Keep it exactly as-is.
+ */
+function areaPairCopy(area: AreaDetail, service: ServiceDetail, locale: Locale): LocationPairCopy {
   const place = getLocalizedArea(area, locale);
   const work = getLocalizedService(service, locale);
   const areaDescription = localizeAreaDescription(area.slug, locale, place.description);
-  const seed = hash(`${area.slug}:${service.slug}:${nearMe ? "near" : "service"}:${locale}`);
+  const seed = hash(`${area.slug}:${service.slug}:service:${locale}`);
   const landmarks = rotate(area.landmarks, seed % area.landmarks.length);
   const subServices = rotate(work.subServices, (seed >>> 4) % work.subServices.length);
 
   if (locale === "ms") {
     return {
-      contextHeading: nearMe ? `Cara memilih ${work.title} berdekatan ${place.name}` : `Merancang ${work.title} untuk hartanah di ${place.name}`,
+      contextHeading: `Merancang ${work.title} untuk hartanah di ${place.name}`,
       contextParagraphs: [
         areaDescription,
-        nearMe
-          ? `Carian “berdekatan saya” hanya menunjukkan niat lokasi; ia tidak mengesahkan jarak kru, slot atau skop. Untuk permintaan ${work.title} di ${place.name}, hantar pin atau alamat sebenar dan gunakan ${landmarks[0]} atau ${landmarks[1]} sebagai rujukan arah sahaja. Nyatakan sama ada anda memerlukan ${subServices[0].name.toLowerCase()} atau pemeriksaan bagi menentukan punca terlebih dahulu.`
-          : `Untuk menyediakan skop ${work.title} yang boleh dibandingkan di ${place.name}, mulakan dengan lokasi tepat, jenis hartanah dan bahagian yang terjejas. Rujukan seperti ${landmarks[0]} dan ${landmarks[1]} membantu menerangkan akses, tetapi alamat sebenar masih diperlukan. Bezakan ${subServices[0].name.toLowerCase()} daripada ${subServices[1]?.name.toLowerCase() ?? "kerja tambahan"} supaya item pilihan tidak bercampur dengan pembaikan utama.`,
+          `Untuk menyediakan skop ${work.title} yang boleh dibandingkan di ${place.name}, mulakan dengan lokasi tepat, jenis hartanah dan bahagian yang terjejas. Rujukan seperti ${landmarks[0]} dan ${landmarks[1]} membantu menerangkan akses, tetapi alamat sebenar masih diperlukan. Bezakan ${subServices[0].name.toLowerCase()} daripada ${subServices[1]?.name.toLowerCase() ?? "kerja tambahan"} supaya item pilihan tidak bercampur dengan pembaikan utama.`,
         `Foto lebar menunjukkan kedudukan kerja, manakala foto dekat menunjukkan kerosakan atau kemasan. Sertakan ukuran, bilangan titik atau bilik, tingkat, tempat letak kenderaan dan peraturan pengurusan jika berkaitan. Maklumat ini lebih berguna daripada sekadar menyebut ${place.name}, dan membantu menentukan sama ada ${subServices[2]?.name.toLowerCase() ?? subServices[0].name.toLowerCase()} perlu dimasukkan dalam penilaian.`
       ],
-      scopeHeading: nearMe ? `Semakan sebelum meminta penghantaran ke ${place.name}` : `Senarai semak skop setempat untuk ${place.name}`,
+      scopeHeading: `Senarai semak skop setempat untuk ${place.name}`,
       scopeIntro: `Gunakan senarai ini untuk menerangkan kerja tanpa menganggap semua hartanah sekitar ${place.name} mempunyai keadaan yang sama.`,
       scopeItems: subServices.slice(0, 4).map((sub, index) => ({
         title: sub.name,
@@ -69,15 +79,13 @@ function areaPairCopy(area: AreaDetail, service: ServiceDetail, locale: Locale, 
 
   if (locale === "zh") {
     return {
-      contextHeading: nearMe ? `如何在${place.name}附近寻找${work.title}` : `${place.name}${work.title}规划要点`,
+      contextHeading: `${place.name}${work.title}规划要点`,
       contextParagraphs: [
         areaDescription,
-        nearMe
-          ? `“附近”搜索只表达地点意图，并不确认师傅距离、档期或工程范围。如需在${place.name}安排${work.title}，请发送准确地址或定位；${landmarks[0]}和${landmarks[1]}只能作为路线参考。同时说明您需要${subServices[0].name}，还是先检查原因再决定方案。`
-          : `要比较${place.name}的${work.title}报价，应先说明准确地点、房产类型和受影响位置。${landmarks[0]}与${landmarks[1]}可帮助描述通道，但仍须提供实际地址。请把${subServices[0].name}和${subServices[1]?.name ?? "附加工程"}分开，以免选配项目混入主要维修范围。`,
+          `要比较${place.name}的${work.title}报价，应先说明准确地点、房产类型和受影响位置。${landmarks[0]}与${landmarks[1]}可帮助描述通道，但仍须提供实际地址。请把${subServices[0].name}和${subServices[1]?.name ?? "附加工程"}分开，以免选配项目混入主要维修范围。`,
         `广角照片用于交代施工位置，近照用于显示损坏或饰面；另外提供尺寸、点位或房间数量、楼层、停车和物业施工规定。这样的资料比只写${place.name}更有用，也有助判断是否需要把${subServices[2]?.name ?? subServices[0].name}纳入评估。`
       ],
-      scopeHeading: nearMe ? `${place.name}派工前检查清单` : `${place.name}本地工程范围清单`,
+      scopeHeading: `${place.name}本地工程范围清单`,
       scopeIntro: `以下清单用于准确说明需求，并不假设${place.name}所有房产的现场情况相同。`,
       scopeItems: subServices.slice(0, 4).map((sub, index) => ({
         title: sub.name,
@@ -96,15 +104,13 @@ function areaPairCopy(area: AreaDetail, service: ServiceDetail, locale: Locale, 
   }
 
   return {
-    contextHeading: nearMe ? `How to choose ${work.title} near ${place.name}` : `Planning ${work.title} for a ${place.name} property`,
+    contextHeading: `Planning ${work.title} for a ${place.name} property`,
     contextParagraphs: [
       areaDescription,
-      nearMe
-        ? `A “near me” search signals location intent; it does not confirm crew distance, availability or scope. For ${work.title} in ${place.name}, send the exact address or map pin and use ${landmarks[0]} or ${landmarks[1]} only as a navigation reference. State whether you need ${subServices[0].name.toLowerCase()} or an assessment to identify the cause first.`
-        : `To create a comparable ${work.title} scope in ${place.name}, start with the exact location, property type and affected part. References such as ${landmarks[0]} and ${landmarks[1]} help explain access, but the actual address is still needed. Separate ${subServices[0].name.toLowerCase()} from ${subServices[1]?.name.toLowerCase() ?? "additional work"} so optional work is not mixed into the core repair.`,
+        `To create a comparable ${work.title} scope in ${place.name}, start with the exact location, property type and affected part. References such as ${landmarks[0]} and ${landmarks[1]} help explain access, but the actual address is still needed. Separate ${subServices[0].name.toLowerCase()} from ${subServices[1]?.name.toLowerCase() ?? "additional work"} so optional work is not mixed into the core repair.`,
       `A wide photo shows where the work sits; a close photo shows the defect or finish. Add measurements, the number of points or rooms, floor level, parking and management work rules where relevant. This is more useful than naming ${place.name} alone and helps establish whether ${subServices[2]?.name.toLowerCase() ?? subServices[0].name.toLowerCase()} belongs in the assessment.`
     ],
-    scopeHeading: nearMe ? `Checks before requesting dispatch to ${place.name}` : `A local scope checklist for ${place.name}`,
+    scopeHeading: `A local scope checklist for ${place.name}`,
     scopeIntro: `Use this checklist to describe the work without assuming that every property around ${place.name} has the same site conditions.`,
     scopeItems: subServices.slice(0, 4).map((sub, index) => ({
       title: sub.name,
@@ -123,11 +129,7 @@ function areaPairCopy(area: AreaDetail, service: ServiceDetail, locale: Locale, 
 }
 
 export function buildAreaServicePairCopy(area: AreaDetail, service: ServiceDetail, locale: Locale) {
-  return areaPairCopy(area, service, locale, false);
-}
-
-export function buildNearMePairCopy(area: AreaDetail, service: ServiceDetail, locale: Locale) {
-  return areaPairCopy(area, service, locale, true);
+  return areaPairCopy(area, service, locale);
 }
 
 export function buildSuburbServicePairCopy(suburb: SuburbDetail, service: ServiceDetail, locale: Locale): LocationPairCopy {

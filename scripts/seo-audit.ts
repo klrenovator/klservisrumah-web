@@ -3,6 +3,7 @@ import path from "node:path";
 import { servicesData } from "../config/services-data.ts";
 import { areaPages } from "../config/area-data.ts";
 import { suburbPages } from "../config/suburb-data.ts";
+import { suburbServicePath } from "../lib/bp1-consolidation.ts";
 import { problemPages } from "../config/problem-data.ts";
 import { blogPosts } from "../config/blog-data.ts";
 
@@ -108,7 +109,11 @@ const routes = [
   "/blog",
   ...Object.keys(servicesData).map((slug) => `/services/${slug}`),
   ...areaPages.map((area) => `/areas/${area.slug}`),
-  ...suburbPages.slice(0, 20).map((suburb) => `/suburbs/${suburb.slug}/painting`),
+  // BP-1 phase 1: 37 of the 52 suburbs are also coverage areas, so their local
+  // page is at `/areas/<slug>/painting` and `/suburbs/<slug>/painting` is a 301.
+  // Auditing the retired URL would report the redirect page instead of the real
+  // one, so the route list goes through the same helper the site uses.
+  ...suburbPages.slice(0, 20).map((suburb) => suburbServicePath(suburb.slug, "painting")),
   ...problemPages.map((problem) => `/problems/${problem.slug}`),
   ...blogPosts.map((post) => `/blog/${post.slug}`)
 ];

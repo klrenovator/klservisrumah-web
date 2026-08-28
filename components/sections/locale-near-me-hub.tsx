@@ -8,6 +8,7 @@ import { useTranslations } from "@/hooks/use-translations";
 import type { AreaLinkEntry, LocaleMap, ServiceBundleEntry, ServiceLinkEntry } from "@/lib/location-bundles";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { NearMeLocator } from "@/components/near-me-locator";
+import { suburbServicePath } from "@/lib/bp1-consolidation";
 
 export type SuburbChip = { slug: string; name: string };
 
@@ -96,7 +97,11 @@ export function LocaleNearMeHub({
             {suburbChips.map((suburb) => (
               <Link
                 key={suburb.slug}
-                href={`/suburbs/${suburb.slug}/${serviceSlug}`}
+                // BP-1 phase 1: most suburb chips are for suburbs that are also
+                // coverage areas, whose page is at `/areas/<slug>/<svc>`.
+                // `suburbServicePath` returns the live URL for either kind so
+                // the chip never lands on a 301.
+                href={suburbServicePath(suburb.slug, serviceSlug)}
                 className="rounded-full bg-slate-50 px-4 py-2 text-xs font-bold text-[#475569] hover:bg-[#E0F2FE]"
               >
                 {suburb.name}
