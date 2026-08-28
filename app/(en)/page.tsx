@@ -22,10 +22,10 @@ import { siteConfig } from "@/config/site";
 import { servicesData } from "@/config/services-data";
 import {
   getFAQSchema,
-  getBreadcrumbSchema,
   getSpeakableSchema,
   getOfferCatalogSchema,
-  buildServiceAreaGeoCircle
+  buildServiceAreaGeoCircle,
+  parsePricedOffer
 } from "@/lib/seo";
 
 // ── Homepage AI-Ready FAQPage (short, direct answers optimised for AEO /
@@ -59,9 +59,8 @@ const HOMEPAGE_FAQS = [
 
 const homepageFaqSchema = getFAQSchema(HOMEPAGE_FAQS);
 
-const homepageBreadcrumbSchema = getBreadcrumbSchema([
-  { name: "Home", item: "https://www.klservisrumah.my/" }
-]);
+// Homepage BreadcrumbList intentionally omitted (audit P5-11): a depth-1
+// trail of only "Home" adds no navigation value and is invalid UX/schema noise.
 
 const homepageSpeakableSchema = getSpeakableSchema([
   "h1",
@@ -94,14 +93,26 @@ const homeServicesSchema = {
     { "@type": "State", name: "Selangor" },
     buildServiceAreaGeoCircle()
   ],
-  offers: {
-    "@type": "AggregateOffer",
-    priceCurrency: "MYR",
-    lowPrice: "80",
-    highPrice: "22000",
-    offerCount: Object.keys(servicesData).length,
-    availability: "https://schema.org/InStock"
-  }
+  // AggregateOffer low/high use flat job-start prices only (not per-sq-ft
+  // unit rates). Audit P3-05: previous lowPrice "80" was a stale priceRange
+  // floor that no service actually starts at.
+  offers: (() => {
+    const flatPrices = Object.values(servicesData)
+      .map((s) => s.startPrice)
+      .filter((p) => /RM\s*[\d.,]+/i.test(p) && !/\//.test(p))
+      .map((p) => Number(p.replace(/[^0-9.]/g, "")))
+      .filter((n) => Number.isFinite(n) && n > 0);
+    const low = flatPrices.length ? Math.min(...flatPrices) : undefined;
+    const high = flatPrices.length ? Math.max(...flatPrices) : undefined;
+    return {
+      "@type": "AggregateOffer",
+      priceCurrency: "MYR",
+      ...(low !== undefined ? { lowPrice: String(low) } : {}),
+      ...(high !== undefined ? { highPrice: String(high) } : {}),
+      offerCount: Object.keys(servicesData).length,
+      availability: "https://schema.org/InStock"
+    };
+  })()
 };
 
 const homeOfferCatalogSchema = {
@@ -119,33 +130,35 @@ const homeOfferCatalogSchema = {
 const homeEntitySchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  itemListElement: Object.values(servicesData).slice(0, 10).map((service, i) => ({
-    "@type": "ListItem",
-    position: i + 1,
-    item: {
-      "@type": "Service",
-      name: service.title,
-      description: service.tagline,
-      url: `https://www.klservisrumah.my/services/${service.slug}`,
-      provider: { "@id": "https://www.klservisrumah.my/#organization" },
-      offers: {
-        "@type": "Offer",
-        priceCurrency: "MYR",
-        price: service.startPrice.replace(/[^0-9.]/g, ""),
-        availability: "https://schema.org/InStock"
+  itemListElement: Object.values(servicesData).slice(0, 10).map((service, i) => {
+    const priced = parsePricedOffer(service.startPrice);
+    return {
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "Service",
+        name: service.title,
+        description: service.tagline,
+        url: `https://www.klservisrumah.my/services/${service.slug}`,
+        provider: { "@id": "https://www.klservisrumah.my/#organization" },
+        offers: {
+          "@type": "Offer",
+          priceCurrency: "MYR",
+          ...(priced.price ? { price: priced.price } : {}),
+          ...(priced.priceSpecification
+            ? { priceSpecification: priced.priceSpecification }
+            : {}),
+          availability: "https://schema.org/InStock"
+        }
       }
-    }
-  }))
+    };
+  })
 };
 
 export default function Home() {
   return (
     <>
       {/* ── AEO / GEO / SEO JSON-LD (homepage-specific) ────────────── */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageBreadcrumbSchema) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageFaqSchema) }}

@@ -13,12 +13,13 @@ import type { ToolContent } from "@/config/tools-data";
 const baseUrl = "https://www.klservisrumah.my";
 
 /**
- * The site-wide LocalBusiness node is emitted once in `app/layout.tsx`. Tool
- * pages only *reference* it by @id so the graph stays a single connected
- * entity instead of two competing definitions. The same applies to
- * BreadcrumbList, which `components/ui/breadcrumbs.tsx` already renders.
+ * The site-wide business entity is emitted once in `SiteHead` as
+ * `HomeAndConstructionBusiness` @ `#organization`. Tool pages only
+ * *reference* it by @id so the graph stays a single connected entity
+ * (audit P5-01 — the parallel `#localbusiness` node was removed).
+ * BreadcrumbList is rendered by `components/ui/breadcrumbs.tsx`.
  */
-const LOCAL_BUSINESS_ID = `${baseUrl}/#localbusiness`;
+const ORGANIZATION_ID = `${baseUrl}/#organization`;
 
 function absolute(path = "") {
   if (path.startsWith("http")) return path;
@@ -63,14 +64,12 @@ export function getToolGraph(
         isAccessibleForFree: true,
         offers: { "@type": "Offer", price: "0", priceCurrency: "MYR" },
         featureList: content.covers,
-        provider: { "@id": LOCAL_BUSINESS_ID },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: siteConfig.reviewRating,
-          reviewCount: siteConfig.reviewCount,
-          bestRating: 5,
-          worstRating: 1
-        }
+        provider: { "@id": ORGANIZATION_ID }
+        // aggregateRating deliberately omitted (audit P5-03): the business's
+        // review score must not be attached to a free calculator
+        // SoftwareApplication. Rating markup belongs only where reviews are
+        // visibly shown AND the owner has verified the source — neither is
+        // true on tool pages today.
       },
 
       /* The service the tool prices, with the published rate table attached. */
@@ -80,7 +79,7 @@ export function getToolGraph(
         name: content.heading,
         description: content.directAnswer,
         serviceType: content.name,
-        provider: { "@id": LOCAL_BUSINESS_ID },
+        provider: { "@id": ORGANIZATION_ID },
         areaServed: siteConfig.areas.slice(0, 20).map((area) => ({
           "@type": "City",
           name: area,

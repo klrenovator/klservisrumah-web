@@ -63,7 +63,17 @@ export function LocaleNearMeView({
         items={[
           { label: t("location.coverageAreas"), href: "/areas" },
           { label: area.name, href: `/areas/${areaSlug}` },
-          { label: t("location.nearMeBadge"), href: `/areas/${areaSlug}/${serviceSlug}/near-me` }
+          {
+            // Audit P2-14: never put the internal "Near me local page" label
+            // (or its short badge) into BreadcrumbList — use the same intent
+            // phrase as the H1 so UI + schema match the page.
+            label: t("location.nearMeCrumb", {
+              service: service.title,
+              area: area.name,
+              defaultValue: `${service.title} Near Me in ${area.name}`
+            }),
+            href: `/areas/${areaSlug}/${serviceSlug}/near-me`
+          }
         ]}
       />
 

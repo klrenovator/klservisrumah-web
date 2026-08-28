@@ -823,7 +823,7 @@
     "faqHowMuch": "在{area}做{service}需要多少钱？",
     "faqHowMuchA": "{service}起价为{price}。最终价格会在确认施工范围、出入条件和材料后，按我们公开的公道价确定。",
     "faqHowMuchSuburbA": "{service}起价为{price}。最终价格公道合理，并在确认施工范围、出入条件和材料后确定。",
-    "nearMeBadge": "附近本地页面",
+    "nearMeBadge": "附近服务",
     "nearMeH1": "{area}附近的{service} — {price}起",
     "nearMeIntro": "如果您在{area}搜索附近的“{service}”，KL Servis Rumah 可为{landmarks}一带提供服务。我们的团队会在开工前确认出入条件、施工范围和公道报价。",
     "nearMeCta": "通过 WhatsApp 查询最近档期",
@@ -851,7 +851,8 @@
     "nearMeAllServicesInArea": "{area}所有服务",
     "nearMeViewArea": "查看{area}",
     "nearMeParentHeading": "返回",
-    "nearMeOtherNearMeHeading": "{area}更多附近页面"
+    "nearMeOtherNearMeHeading": "{area}更多附近页面",
+    "nearMeCrumb": "{area}附近的{service}"
   },
   "content": {
     "categoryLabel": "分类",
@@ -867,7 +868,8 @@
     "guidanceSafeApproach": "最安全的方法是列出可能原因的简短清单，收集清晰照片，确认房产类型，并索取一份公道的逐项报价。KL Servis Rumah 在开始工作前确认范围，避免随意定价。",
     "featuredPathways": "精选路径",
     "completeIndex": "完整索引",
-    "selectedScopes": "精选范围"
+    "selectedScopes": "精选范围",
+    "relatedReading": "延伸阅读"
   },
   "faq": {
     "heroEyebrow": "知识库",

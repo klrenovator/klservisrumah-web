@@ -170,7 +170,7 @@ export function GenericContentPageView({ page }: { page: GenericContentPage }) {
               : [];
           return (
             <InternalLinkGrid
-              title={t("content.relatedReading") || "Related reading"}
+              title={t("content.relatedReading", { defaultValue: "Related reading" })}
               subtitle={`${page.category} — ${finalSiblings.length} more guides`}
               links={[
                 ...finalSiblings.map((s) => ({

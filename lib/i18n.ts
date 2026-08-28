@@ -82,20 +82,26 @@ export type MessageDictionary = {
 
 /**
  * Resolve a dotted key against a dictionary.
- * Returns the key as a fallback if not found.
+ * Returns `undefined` when the key is missing so callers can apply a real
+ * fallback (audit P2-C2: previously returned the key itself, which is truthy,
+ * so `t("content.relatedReading") || "Related reading"` never fired and the
+ * literal key rendered as an H2 on 224 pages).
  */
-export function resolveKey(dict: MessageDictionary, key: string): string {
+export function resolveKey(
+  dict: MessageDictionary,
+  key: string
+): string | undefined {
   const segments = key.split(".");
   let current: string | MessageDictionary | MessageDictionary[] | undefined = dict;
   for (const segment of segments) {
     if (current && typeof current === "object" && !Array.isArray(current)) {
       current = (current as MessageDictionary)[segment];
     } else {
-      return key;
+      return undefined;
     }
   }
   if (typeof current === "string") return current;
-  return key;
+  return undefined;
 }
 
 export type TranslateOptions = {
@@ -139,14 +145,15 @@ export function createTranslator(
       vars && typeof vars === "object" && !Array.isArray(vars)
         ? (vars as TranslateOptions)
         : { defaultValue: undefined };
-    let value = resolveKey(primary, key);
-    value = value === key ? resolveKey(fallback, key) : value;
-    let finalValue: string;
-    if (value === key && typeof defaultValue === "string") {
-      finalValue = defaultValue;
-    } else {
-      finalValue = value;
-    }
+    const primaryValue = resolveKey(primary, key);
+    const fallbackValue =
+      primaryValue === undefined ? resolveKey(fallback, key) : primaryValue;
+    // Prefer an explicit defaultValue over echoing the dotted key back into
+    // the UI (P2-C2). Only fall back to the key itself as a last resort so
+    // missing translations stay visible in development.
+    const finalValue =
+      fallbackValue ??
+      (typeof defaultValue === "string" ? defaultValue : key);
     if (typeof replacements !== "object" || replacements === null) return finalValue;
     return Object.entries(replacements).reduce(
       (acc, [k, v]) => (k === "defaultValue" ? acc : acc.replaceAll(`{${k}}`, String(v))),

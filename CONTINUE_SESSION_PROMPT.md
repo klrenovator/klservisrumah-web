@@ -6,16 +6,18 @@
 
 ## Current State (Update this each session)
 
-> **AUDIT PROJECT ACTIVE (2026-08-28):** the 5-part Deep Audit is the current
-> workstream. Parts 1–4 are complete and merged: Part 1 (PR #170), Part 2
-> (PR #171), Part 3 (PR #173), Part 4 (PR #174). **Next session starts
-> Part 5 — Schema + Content Gap + Priority Roadmap**
-> (`docs/full-website-deep-audit/PART-5-PROMPT.md`). Read
+> **FIX PHASE ACTIVE (2026-08-28):** the 5-part Deep Audit is complete and
+> merged (Parts 1–5, PRs #170–#175). **Fix Wave 1 (quick wins) is done** —
+> see `docs/full-website-deep-audit/FIX-WAVE-1-REPORT.md`. Read
 > `docs/full-website-deep-audit/TRACKING.md` first — it is the authoritative
-> status board with the P0–P3 fix queue from Parts 1–4.
+> status board.
+>
+> **Next session starts at:** C2 / P2-C1 / P4-01 — render real content inside
+> `<main>` (SSR Loading shell), then P5-02 FAQ visibility, then BP-1
+> programmatic consolidation.
 
-**Branch:** arena/01a04729-klservisrumah-web (audit session branch — push PRs from here)
-**Last completed session:** 2026-08-28 — Deep Audit Part 4 ✅ (PR #174)
+**Branch:** arena/01a04966-klservisrumah-web (this session branch — push PRs from here)
+**Last completed session:** 2026-08-28 — Fix Wave 1 ✅ (P2-C2, P2-14, C7/P5-08, P5-01, P5-03, P5-05, P5-11, CF-1)
 
 **Quality gates (must all be green before any new work):**
 - [ ] npm run lint — 0 errors, 0 warnings
@@ -23,7 +25,7 @@
 - [ ] npm run build — SUCCESS (no errors)
 - [ ] npm run seo:audit — PASS
 - [ ] npm run audit:html — 0 fatal / 0 warnings
-- [ ] npm run audit:i18n — 1077 keys × 3, 0 missing
+- [ ] npm run audit:i18n — 1110 keys × 3, 0 missing
 - [ ] npm run audit:topical-map — 28/28, 112 relationships
 - [ ] npm run audit:specialty-locale — 112 × MS/ZH = 224 blocks
 - [ ] npm run audit:problem-i18n — 65 × MS/ZH, 12 redirects excluded
@@ -33,6 +35,17 @@
 ---
 
 ## What Is COMPLETED (Do NOT redo)
+
+### Deep Audit Fix Wave 1 (2026-08-28) — DONE
+- P2-C2 `content.relatedReading` H2 leak — DONE
+- P2-14 near-me breadcrumb/schema label — DONE
+- C7/P5-08 unit-bearing prices + UnitPriceSpecification — DONE
+- P5-01 single `#organization` business entity — DONE
+- P5-03 tool AggregateRating removed; getReviewSchema retired — DONE
+- P5-05 blog author → Organization — DONE
+- P5-11 homepage depth-1 breadcrumb removed — DONE
+- CF-1 28 blog↔sub-service H1 twins retargeted — DONE
+- Report: `docs/full-website-deep-audit/FIX-WAVE-1-REPORT.md`
 
 ### Critical / High fixes (all done)
 - Admin auth: server-side HMAC-SHA256 cookie auth (C1) — DONE

@@ -1397,7 +1397,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     tagline: "Floor and wall tiling for new builds, renovations, and repairs. Homogeneous, porcelain, ceramic, mosaic, and large-format slabs. From RM 14 / sq ft.",
     description:
       "KL Servis Rumah delivers professional floor and wall tiling services across Kuala Lumpur and Selangor. We work with every major tile type — homogeneous, porcelain, ceramic, mosaic, glass, natural stone (marble, granite, travertine), and the increasingly popular large-format slabs (600x1200mm, 800x1800mm, 1200x2400mm). Our tilers are experienced with modern installation methods including decoupling membranes (Schlüter DITRA), self-levelling underlayments (Mapei Ultraplan), and lippage-tuning systems (Raimondi Levelling System) for perfectly flat floors. We also repair loose, hollow, and cracked tiles, replace grout, and re-tile wet areas with proper waterproofing underneath.",
-    startPrice: "RM 14",
+    startPrice: "RM 14 / sq ft",
     icon: "grid-3x3",
     highlights: [
       "Tilers experienced with homogeneous, porcelain, ceramic, mosaic, natural stone, and large-format slabs",
@@ -1535,7 +1535,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     tagline: "Modern plaster ceiling with concealed LED trough, tiered design, L-box, and cove lighting for landed and high-rise properties. From RM 10 / sq ft.",
     description:
       "KL Servis Rumah designs and builds modern plaster ceilings for residential and commercial properties across Kuala Lumpur and Selangor. Whether you want a clean minimalist flat ceiling, a tiered multi-level design, an L-box with concealed LED strip, or a full curved cove for ambient lighting, our plaster ceiling specialists deliver factory-flat, paint-ready finishes. We use only fire-rated and moisture-resistant gypsum boards from reputable Malaysian brands (Knauf, BNBM, Gyproc) supported by rust-proof galvanized iron (GI) metal frames. Every ceiling includes proper access panels, fan-hook reinforcements where required, and detailed coordination with your electrician for downlight and AC cassette positions.",
-    startPrice: "RM 10",
+    startPrice: "RM 10 / sq ft",
     icon: "layers",
     highlights: [
       "Knauf, BNBM, and Gyproc fire-rated and moisture-resistant gypsum boards",
@@ -1673,7 +1673,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     tagline: "Glass-smooth skim coating for walls and ceilings, paint-ready finish, full surface preparation and crack repair. From RM 5 / sq ft.",
     description:
       "KL Servis Rumah provides professional skim coating services across Kuala Lumpur and Selangor to give your walls and ceilings a perfectly flat, paint-ready surface. Skim coating is the final layer of fine plaster applied over plastered or previously painted surfaces to eliminate trowel marks, hairline cracks, uneven joins, and minor substrate imperfections. We use premium polymer-modified skim coat compounds (Knauf, Gyproc, Mapei) applied in two to three coats, with hand-sanding or pole-sander finishing depending on the area. The result is a perfectly smooth, uniform, paint-ready surface that makes even basic paint look premium.",
-    startPrice: "RM 5",
+    startPrice: "RM 5 / sq ft",
     icon: "paint-roller",
     highlights: [
       "Glass-smooth finish suitable for high-gloss, satin, and feature-wall paint systems",
@@ -1790,7 +1790,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     tagline: "Modern click-lock flooring for homes and offices. Waterproof SPC, scratch-resistant laminate, and luxury vinyl planks. From RM 14 / sq ft.",
     description:
       "KL Servis Rumah supplies and installs modern click-lock flooring across Kuala Lumpur and Selangor. We work with every major Malaysian flooring brand — FloorEver, NS Floors, Quick-Step, Kronotex, and Audacity — and we install three main systems: SPC (Stone Polymer Composite, the most popular waterproof choice for Malaysian homes), laminate (the budget-friendly wood-look option), and luxury vinyl planks / tiles (LVP/LVT) for wet areas. Every installation includes moisture testing of the subfloor, proper underlayment, expansion gap planning, transition strip fitting, and skirting finishing. Our floorers use premium pull bars, tapping blocks, and undercut door jamb saws to deliver a professional, squeak-free finish that lasts 15+ years.",
-    startPrice: "RM 14",
+    startPrice: "RM 14 / sq ft",
     icon: "square",
     highlights: [
       "Waterproof SPC flooring suitable for kitchens, bathrooms, and high-humidity Malaysian homes",
@@ -1928,7 +1928,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     tagline: "Heavy-duty epoxy floor coating for garages, warehouses, factories, showrooms, and commercial kitchens. From RM 22 / sq ft.",
     description:
       "KL Servis Rumah installs industrial-grade epoxy and polyurethane floor coatings across Kuala Lumpur and Selangor. Epoxy is the go-to solution for areas that need a seamless, chemical-resistant, easy-to-clean, and abrasion-resistant surface: garages, warehouses, factories, commercial kitchens, car showrooms, pharmaceutical plants, and even modern residential interiors. We work with every major system — self-levelling epoxy (mirror-smooth 2–4mm), broadcast quartz or flake (slip-resistant 3–6mm), mortar screed (heavy-duty 5–10mm for forklift traffic), and polyurethane (UV-stable, scratch-resistant topcoats). Every installation includes diamond-grinding substrate preparation, primer, body coat, optional decorative flake, and a UV-stable aliphatic polyurethane topcoat for the longest service life.",
-    startPrice: "RM 22",
+    startPrice: "RM 22 / sq ft",
     icon: "circle-dot",
     highlights: [
       "Diamond-grinding surface preparation (CSP 3–4 profile) for maximum epoxy bond strength",

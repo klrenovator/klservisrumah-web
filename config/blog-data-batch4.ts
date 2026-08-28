@@ -234,11 +234,11 @@ Give your walls and ceilings a smooth, flawless finish. WhatsApp us for a free a
   }),
   post({
     slug: "wall-skim-coating-kl",
-    title: "Wall Skim Coating in KL & Selangor",
+    title: "Wall Skim Coating Cost & Process Guide (2026) — KL & Selangor",
     excerpt: "Smooth, even walls with professional wall skim coating across KL & Selangor — evens rough or patchy surfaces and creates a flawless paint-ready finish, from RM 5 per sq ft.",
     category: "Skim Coat",
     coverImage: "/hero/home-services-skim-coat-kl.jpg",
-    metaTitle: "Wall Skim Coating in KL & Selangor",
+    metaTitle: "Wall Skim Coating Cost & Process Guide | KL",
     metaDesc: "Smooth, even walls with professional wall skim coating in KL & Selangor — evens rough or patchy surfaces and creates a flawless paint-ready finish. From RM 5 per sq ft.",
     content: `
 Rough, wavy, or patchy walls ruin an otherwise good paint job. Wall skim coating evens out the surface so the final paint finish looks smooth and professional. KL Servis Rumah provides professional wall skim coating across Kuala Lumpur and Selangor, from RM 5 per sq ft.
@@ -283,11 +283,11 @@ For smooth, even walls and a flawless paint finish, wall skim coating is the ans
   }),
   post({
     slug: "ceiling-skim-coating-kl",
-    title: "Ceiling Skim Coating in KL & Selangor",
+    title: "Ceiling Skim Coating Cost & Process Guide (2026) — KL & Selangor",
     excerpt: "Level and smooth your ceiling with professional ceiling skim coating across KL & Selangor — evens joints, cracks and uneven surfaces for a clean paint-ready finish, from RM 6 per sq ft.",
     category: "Skim Coat",
     coverImage: "/hero/home-services-skim-coat-kl.jpg",
-    metaTitle: "Ceiling Skim Coating in KL & Selangor",
+    metaTitle: "Ceiling Skim Coating Cost & Process Guide | KL",
     metaDesc: "Level and smooth your ceiling with professional ceiling skim coating in KL & Selangor — evens joints, cracks and uneven surfaces for a clean paint-ready finish. From RM 6 per sq ft.",
     content: `
 An uneven or cracked ceiling is very visible and detracts from the whole room. Ceiling skim coating levels the surface, evens out joints and small cracks, and gives you a clean, smooth ceiling ready for painting. KL Servis Rumah provides professional ceiling skim coating across Kuala Lumpur and Selangor, from RM 6 per sq ft.
@@ -676,11 +676,11 @@ Protect your home from roof damage with professional repair and waterproofing. W
   }),
   post({
     slug: "roof-leak-diagnosis-repair-kl",
-    title: "Roof Leak Diagnosis & Repair in KL & Selangor",
+    title: "Roof Leak Diagnosis & Repair Cost Guide (2026) — KL & Selangor",
     excerpt: "Find and fix the source of your roof leak across KL & Selangor — professional diagnosis of tiles, ridges, flashings and gutters, with targeted repair from RM 380.",
     category: "Roof Repair",
     coverImage: "/hero-roof-repair.svg",
-    metaTitle: "Roof Leak Diagnosis & Repair in KL & Selangor",
+    metaTitle: "Roof Leak Diagnosis & Repair Cost Guide | KL",
     metaDesc: "Find and fix the source of your roof leak in KL & Selangor — professional diagnosis of tiles, ridges, flashings and gutters, with targeted repair. From RM 380.",
     content: `
 A leaking roof damages ceilings, walls, insulation, and even the structure over time. KL Servis Rumah provides professional roof leak diagnosis and repair across Kuala Lumpur and Selangor, from RM 380.

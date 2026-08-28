@@ -42,12 +42,12 @@
 | P0 | Fix Part 1 Critical #2 — Consolidate near-me duplicates | ⏳ PENDING |
 | P0 | Fix Part 1 Critical #3 — Resolve www/non-www host canonical | ⏳ PENDING |
 | P0 | Fix Part 2 P2-C1 — Server-render content inside `<main>` (static HTML is a Loading shell) | ⏳ PENDING |
-| P0 | Fix Part 2 P2-C2 — `content.relatedReading` literal key renders as H2 on 224 pages | ⏳ PENDING |
+| P0 | Fix Part 2 P2-C2 — `content.relatedReading` literal key renders as H2 on 224 pages | ✅ DONE (Fix Wave 1) |
 | P0 | Fix Part 2 P2-C3 — 174 generic "content pod" pages (commercial/residential/process/answers/brands/top/seasonal/guides) | ⏳ PENDING |
 | P0 | Fix Part 2 P2-C4 — Replace pair-copy generator; authored local copy for area×service | ⏳ PENDING |
 | P1 | Fix Part 2 P2-16/17/18 — Expand problems/cost; rewrite or retire emergency pages | ⏳ PENDING |
 | P1 | Fix Part 2 P2-19 — Real per-article blog dates (216 posts / 5 dates) | ⏳ PENDING |
-| P1 | Fix Part 2 P2-21 — Reviews: verify + Review schema or drop AggregateRating | ⏳ PENDING |
+| P1 | Fix Part 2 P2-21 — Reviews: verify + Review schema or drop AggregateRating | ⏳ PENDING (owner) |
 | P1 | Fix Part 2 P2-22 — Add outbound citations (brands/authority/manufacturer) | ⏳ PENDING |
 
 ---
@@ -61,6 +61,7 @@
 | 2026-08-28 | Part 3 audit — full-corpus AEO/GEO/LLMO/AI-search + entity-consistency scans | ✅ Part 3 committed & merged (PR #173) |
 | 2026-08-28 | Part 4 audit — full-corpus SXO/mobile/CRO/CTA/trust/local + internal-link graph & anchor-text scan | ✅ Part 4 committed & merged (PR #174) |
 | 2026-08-28 | Part 5 audit — full-corpus schema/breadcrumb/image/cannibalization scan (`scripts/part5-audit.ts`) + content gap + decay + brand/entity + **cumulative Final Output A–N** | ✅ Part 5 committed (PR this session) — **ALL 5 AUDIT PARTS COMPLETE** |
+| 2026-08-28 | **Fix Wave 1** — quick wins from Part 5 §C/§N: P2-C2, P2-14, C7/P5-08, P5-01, P5-03, P5-05, P5-11, CF-1 (28 twin H1s), P3-05 lowPrice | ✅ See `FIX-WAVE-1-REPORT.md` |
 
 ---
 
@@ -69,12 +70,12 @@
 | Prio | Task | Status |
 |---|---|---|
 | P0 | P5-02 — FAQPage markup on ~1,131 pages whose Q&As are not in rendered HTML (1,073 near-me + 29 cost + 29 emergency + homepage): SSR the FAQs or strip the schema | ⏳ PENDING |
-| P0 | P5-08 — Unit-less Offer prices (`price:"14"` flooring etc. on ~2,500 pages) → `UnitPriceSpecification` + visible units (with P3-05) | ⏳ PENDING |
-| P0 | CF-1 — Retarget/301 the 26 blog↔sub-service H1 twins (list in `audit-part5-cannibalization.json`) | ⏳ PENDING |
+| P0 | P5-08 — Unit-less Offer prices (`price:"14"` flooring etc. on ~2,500 pages) → `UnitPriceSpecification` + visible units (with P3-05) | ✅ DONE (Fix Wave 1) |
+| P0 | CF-1 — Retarget/301 the 26 blog↔sub-service H1 twins (list in `audit-part5-cannibalization.json`) | ✅ DONE (Fix Wave 1 — 28 EN exact twins retargeted; remaining exact = 0) |
 | P0 | P5-12 — Photography program: 37 images / 5,815 pages, 0 real project photos (owner-dependent; start immediately) | ⏳ PENDING (owner) |
-| P1 | P5-01/04 — Remove duplicate `LocalBusiness` node; single `/#organization` entity; @id-reference schema + trim areaServed (22–31 KB JSON-LD/page today) | ⏳ PENDING |
-| P1 | P5-03 — Strip `aggregateRating` from tool SoftwareApplication; delete unused Product-wrapped `getReviewSchema()` | ⏳ PENDING |
-| P1 | P5-05 — Blog `author` Person→Organization (interim); real author entities later | ⏳ PENDING |
+| P1 | P5-01/04 — Remove duplicate `LocalBusiness` node; single `/#organization` entity; @id-reference schema + trim areaServed (22–31 KB JSON-LD/page today) | 🟡 PARTIAL — P5-01 entity unification ✅; P5-04 areaServed slim still ⏳ |
+| P1 | P5-03 — Strip `aggregateRating` from tool SoftwareApplication; delete unused Product-wrapped `getReviewSchema()` | ✅ DONE (Fix Wave 1) |
+| P1 | P5-05 — Blog `author` Person→Organization (interim); real author entities later | ✅ DONE (Fix Wave 1 — Organization interim) |
 | P1 | P5-13/14 — Raster 1200×630 OG images (SVG og:image breaks WhatsApp/social previews on ~2,200+ pages); fix schema `image` fields too | ⏳ PENDING |
 | P1 | P5-10 — Breadcrumbs (UI+schema) on 184 pod pages + 20 specialty sub-services + 29 near-me hubs + 20 guides | ⏳ PENDING |
 | P1 | CF-4 — Merge rate-book into `/services/<svc>/cost` pages; evaluate NOINDEX/merge for `/estimate/*` (23 pages) | ⏳ PENDING |
@@ -83,18 +84,20 @@
 | P2 | P5-07 — Remove Speakable/orphan WebPage nodes (526 pages) | ⏳ PENDING |
 | P2 | §5.6 — Freshness pipeline: RATE_YEAR assertion, refresh rota, real lastMod | ⏳ PENDING |
 | P2 | P5-09 — Owner verification: foundingDate 2014 vs SSM 202503227236 (2025); employees 10 vs "15+" | ⏳ PENDING (owner) |
-| P3 | P5-11 — Suppress depth-1 BreadcrumbList on homepage | ⏳ PENDING |
+| P3 | P5-11 — Suppress depth-1 BreadcrumbList on homepage | ✅ DONE (Fix Wave 1) |
 
 ---
 
 ## ⭐ NEXT SESSION MUST CONTINUE HERE
 
-**All 5 audit parts are complete.** The audit phase is finished; the fix phase begins.
+**All 5 audit parts are complete. Fix Wave 1 (quick wins) is complete** — see `FIX-WAVE-1-REPORT.md`.
 
-1. **Start with the consolidated roadmap** in `PART-5-AUDIT-REPORT.md` → Final Output **J (priority table)** and **N ("if we fix only 10 things")**.
-2. First implementation wave (quick wins, ≤1 day each): C7 price units, P2-C2 `content.relatedReading`, P2-14 near-me label, CF-1 twin retargets, P5-01 entity unification, P5-03 rating cleanup, P5-05 author type, P5-11.
-3. Then the P0 structural work in order: C2 content-in-`<main>` (P2-C1/P4-01) → P5-02 FAQ visibility → BP-1 programmatic consolidation (Part 1 Critical #1/#2).
-4. **Still-missing access (blockers to re-request from owner):** Google Search Console, live HTTP/edge check (www 301), CWV/CrUX, GBP + review source verification, owner fact confirmations (reviews count, founding year, staff, stats).
+1. **Next P0 structural work (in order):**
+   - **C2 / P2-C1 / P4-01** — Render real page content inside `<main>` (remove SSR "Loading…" shell; content currently after `</footer>` on 5,815 pages).
+   - **P5-02** — FAQPage markup vs visible FAQ on ~1,131 pages (SSR FAQs or strip schema).
+   - **BP-1 phase 1** — near-me→parent 301s + stop suburb-twin static generation (Part 1 Critical #1/#2).
+2. Then: P5-04 areaServed slim, P5-10 breadcrumbs on pods, CF-4 cost→rate-book, P3-01 BM/ZH English leaks.
+3. **Still-missing access (blockers to re-request from owner):** Google Search Console, live HTTP/edge check (www 301), CWV/CrUX, GBP + review source verification, owner fact confirmations (reviews count, founding year, staff, stats), photography assets (P5-12).
 
 ---
 
@@ -125,7 +128,7 @@
 | Prio | Task (from PART-3-AUDIT-REPORT.md) | Status |
 |---|---|---|
 | P0 | P3-01 — Fix English leaks inside BM/中文 DirectAnswer blocks (29/29 service pages) + add prebuild leak validator | ⏳ PENDING |
-| P0 | P3-05 — Add units to per-sq-ft prices on all AI surfaces ("from RM 14/10/5/22") + fix `lowPrice: "80"` | ⏳ PENDING |
+| P0 | P3-05 — Add units to per-sq-ft prices on all AI surfaces ("from RM 14/10/5/22") + fix `lowPrice: "80"` | 🟡 PARTIAL (Fix Wave 1 — startPrice units + schema UnitPriceSpecification + homepage lowPrice fixed; remaining AI-surface copy leaks still ⏳) |
 | P0 | P3-07 — Reconcile contradictory facts: RM 180 vs 220 ceiling price, "28+" vs 29 services, warranty pill vs per-service warranty (251 pages), stats claims | ⏳ PENDING |
 | P1 | P3-11 — Server-render homepage + /faq hub accordion answers (JS-only today) | ⏳ PENDING |
 | P1 | P3-02 — /faq hub: add FAQPage JSON-LD + question H3s + remove hidden "No matches" text | ⏳ PENDING |
