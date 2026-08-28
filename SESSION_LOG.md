@@ -2562,3 +2562,28 @@ The owner answered the OWNER_ACTION_PLAN round-1 items and asked for all remaini
 - **Part 3 notes already queued:** llms.txt/robots AI-crawler policy mismatch (GPTBot/ClaudeBot/PerplexityBot/CCBot/OAI-SearchBot allowed), AEO answer-block structure, `content.relatedReading` fix (P0), 174 generic pods (blocks LLM summarization), zero outbound citations, blog freshness, schema gaps (BlogPosting 216/432, HowTo 444/689).
 - **PENDING (from Part 1 + Part 2):** programmatic index restructure P0; near-me merge P0 (refined: NOT literal duplicates — 0/1,073 hash-identical, but thin 927-word variants, 34% sentence overlap); www/non-www canonical P0; `audit:seo-head`/`audit:meta` still not run (rerun with `NODE_OPTIONS=--max-old-space-size=3072`).
 - **REQUIRES VERIFICATION (owner/tools):** real Google reviews + 4.9/120 aggregate; insurance/ST-license/background-check claims; 1,200+ projects / 15+ pros / 30-min response; real article dates; GBP/social canonical URLs; live deploy completeness (built `/commercial/painting` 404s on live host).
+
+---
+
+## 2026-08-28 — Deep Audit Part 3 (AEO + GEO + LLMO + AIO / AI Search) — COMPLETED ✅
+
+### What was done
+- **Build unblocked first:** the initial `npm run build` failed on latent type errors in the Part 2 audit scripts (`scripts/part2-cluster-audit.ts` `areaVsSvc` typed `unknown`; `scripts/part2-corpus-audit.ts` `parentByKey` mis-typed, dead `attr()` fn, `prefer-const`). Fixed all (type-check + lint clean) so CI/build gates are green again — a real regression from PR #171 that would have blocked any deployment.
+- **Wrote + ran `scripts/part3-aeo-audit.ts`** (corpus-wide, 5,815 pages) → `docs/audit-part3-corpus.jsonl` + `docs/audit-part3-aggregate.json`: question-heading coverage and families, DirectAnswer ("quick-answer") blocks, FAQPage/HowTo/Speakable schema, FAQ question counts, NAP in content vs whole page, vague-marketing terms, and **trilingual-leak counters** inside the DirectAnswer BM/中文 sub-blocks.
+- **Ran sitewide entity-consistency scans** over the built HTML (price/warranty/count/response-time strings) and verified headline findings **live** (homepage, /services/tiling, /faq, llms.txt, robots.txt).
+- **PR #173 created & merged** into `main`.
+- Deliverable: `docs/full-website-deep-audit/PART-3-AUDIT-REPORT.md` (findings P3-01…P3-19, exec summary, per-template AI Citation Potential scores, per-engine AI strategy, priority matrix, dev/content/SEO task lists, REQUIRES-VERIFICATION list). `TRACKING.md` → Part 3 ✅ DONE (+ Part 3 work queue added).
+
+### Headline findings (see report for full detail)
+- **P3-01 CRITICAL:** the AI-citable DirectAnswer block on **all 29 service pages** embeds untranslated English (tagline, units, warranty) inside the BM/中文 sentences — e.g. `…适合需要floor and wall tiling for new builds… from rm 14 / sq ft.的客户。` (live-confirmed; root cause `service-detail-content.tsx` interpolates EN strings into `trilingualMs`/`trilingualZh`).
+- **P3-05 HIGH:** unit-less per-sq-ft prices fed to AI surfaces — DirectAnswer "packages start from RM 14", smart-finder "From RM 14/10/5", llms.txt "from RM 14" — plus homepage schema `lowPrice: "80"` matches no published price.
+- **P3-07 HIGH:** fact contradictions across surfaces — homepage FAQ schema + visible FAQ say "plaster ceiling repair from RM 180" (catalog: RM 220; aeo-faq.txt: RM 220); "28+ services" vs 29; three different warranty summaries on the homepage; generic "Up to 90-Day Warranty" pill contradicts the page's own 12-Month/5-Year/10-Year warranty on **251 pages**; "120+" vs schema 120; "30 min" vs "30–60 min" vs "60 seconds".
+- **P3-02/P3-11 HIGH:** /faq hub + homepage FAQAccordion answers are **absent from static HTML** (`{isOpen && …}` client-only) — non-JS AI crawlers see questions with no answers; /faq hub also has no FAQPage schema and zero question headings; 13 hidden "No matches in this topic." strings pollute its raw text.
+- **P3-08:** 205 EN-only pod/guide/top pages read as one doorway template to summarizers (P2-C3 cross-ref); **P3-12:** they have no MS/ZH routes (i18n data exists but no URLs).
+- **Positives verified:** 3,481/4,633 EN pages have question H2/H3s; 4,323 FAQPage schemas; DirectAnswer cards on 294 pages; service-page FAQs render answers in `<details>` (static); llms.txt/llms-full/aeo-faq/site-summary are generator-derived and internally consistent — the contradictions are between those files and *page copy*.
+
+### Status / next session
+- **Completed ✅:** Part 0, Part 1 (PR #170), Part 2 (PR #171), Part 3 (PR #173).
+- **Next: Part 4 — SXO + Local SEO + Internal Linking + CRO + Trust (per `00-PROMPT-OVERVIEW.md` + `PART-4-PROMPT.md`).** Continue in `docs/full-website-deep-audit/`; `scripts/part3-aeo-audit.ts` is reusable for any AI-surface checks.
+- **Part 3 P0 fixes now queued (TRACKING.md):** P3-01 trilingual leak + validator, P3-05 units + lowPrice, P3-07 fact reconciliation; then P1: P3-11/P3-02 server-rendered FAQ answers + /faq schema, P3-04 cost-page answer cards, P3-18 full llms.txt, P3-09 owner verification of stats.
+- **REQUIRES VERIFICATION (owner/tools):** real reviews (120 vs "120+"), projects (1,200+), pros (15+ vs 10), response times (30 min / 30–60 min / 60 s), insurance/background claims, article dates; which AI crawlers render JS (server logs); GSC AI Overviews data; live deploy parity.

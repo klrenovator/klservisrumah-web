@@ -129,24 +129,6 @@ function wordStats(text: string): { words: number; cjk: number } {
   return { words: latin + cjk, cjk };
 }
 
-function attr(html: string, attrName: string): string {
-  const re = new RegExp(
-    `<meta[^>]*${attrName}=["'][^"']*["'][^>]*content=["']([^"']*)["']`,
-    "i"
-  );
-  const rev = new RegExp(
-    `<meta[^>]*content=["'][^"']*["'][^>]*${attrName}=["'][^"']*["']`,
-    "i"
-  );
-  let m = html.match(re) ?? html.match(rev);
-  if (!m && attrName === "name") {
-    // generic: name="X"
-    const g = html.match(/<meta[^>]*name=["']([^"']+)["'][^>]*content=["']([^"']*)["']/i);
-    if (g) return g[2];
-  }
-  return m ? m[1].replace(/&quot;/g, '"').replace(/&amp;/g, "&") : "";
-}
-
 function metaContent(html: string, name: string): string {
   const direct = html.match(
     new RegExp(`<meta[^>]*name=["']${name}["'][^>]*content=["']([^"']*)["']`, "i")
@@ -305,7 +287,7 @@ async function main() {
   }
 
   // ---- Near-me vs parent duplication ----
-  const parentByKey = new Map<string, { url: string; hash: string; start: string }>();
+  const parentByKey = new Map<string, PageRec>();
   for (const r of recs) if (r.pattern === "/areas/<area>/<svc>") parentByKey.set(r.url.replace(/\/index$/, ""), r);
   const nearMe = recs.filter((r) => r.pattern === "/areas/<area>/<svc>/near-me");
   let nearMeIdentical = 0;

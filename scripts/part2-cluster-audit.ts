@@ -155,7 +155,7 @@ async function main() {
       areaSvc.get(m2[2])!.push({ url, text: contentText(fs.readFileSync(f, "utf8")) });
     }
   }
-  const areaVsSvc: Record<string, unknown>[] = [];
+  const areaVsSvc: { svc: string; n: number; meanVsService: number; min: number; max: number }[] = [];
   for (const [svc, pages] of areaSvc) {
     const svcText = svcPages.get(svc);
     if (!svcText) continue;
