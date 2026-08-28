@@ -51,6 +51,7 @@ export default async function CostPage(props: { params: Promise<{ slug: string }
         bundle={buildServiceBundle(service)}
         rates={rates}
         relatedCostGuides={buildRelatedCostBundles(service.slug)}
+        faqs={faqs}
       />
     </>
   );

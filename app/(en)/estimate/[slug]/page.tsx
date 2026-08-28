@@ -1,26 +1,18 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import { notFound, redirect } from "next/navigation";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
+import { EstimateSharePage } from "@/components/estimate/estimate-share-page";
 import { servicesData } from "@/config/services-data";
 import { ESTIMATE_INDEX_PATH, estimatePath, genericEstimateSlugs } from "@/config/estimate-links";
 import { DEDICATED_TOOL_BY_SERVICE } from "@/lib/estimator/service-estimator";
 import { buildMetadata } from "@/lib/seo-meta";
 
 /**
- * The wizard form is the only heavy interactive part of the page; deferring it
- * keeps the heading, share bar and how-it-works copy in the static HTML.
+ * Import the share page statically (audit C2 / P2-C1 / P4-01).
+ * `next/dynamic` + a loading fallback opened a Suspense boundary that flushed
+ * only breadcrumbs into `<main>` and streamed the H1 after `</footer>` for
+ * JS-less crawlers — the same defect the root `loading.tsx` files caused.
  */
-const EstimateSharePage = dynamic(
-  () => import("@/components/estimate/estimate-share-page").then((mod) => mod.EstimateSharePage),
-  {
-    loading: () => (
-      <div className="container-narrow pt-8">
-        <div className="h-[30rem] animate-pulse rounded-3xl border border-slate-200 bg-slate-50" aria-hidden="true" />
-      </div>
-    )
-  }
-);
 
 export const dynamicParams = false;
 

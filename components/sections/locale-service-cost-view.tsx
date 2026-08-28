@@ -10,12 +10,14 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { useLang } from "@/context/lang-context";
 import { useTranslations } from "@/hooks/use-translations";
 import { getWhatsAppLink } from "@/lib/whatsapp";
+import { VisibleFaqList } from "@/components/content/visible-faq";
 
 type LocaleServiceCostViewProps = {
   slug: string;
   bundle: LocaleMap<ServiceBundleEntry>;
   rates: MarketRateItem[];
   relatedCostGuides?: ServiceLinkEntry[];
+  faqs?: { q: string; a: string }[];
 };
 
 type CostTableRow = {
@@ -34,7 +36,7 @@ const factorKeys = [1, 2, 3, 4, 5, 6] as const;
  * this compact client view swaps the visible copy, breadcrumbs, service name,
  * fallback sub-service rows and CTA chrome for EN / BM / 中文.
  */
-export function LocaleServiceCostView({ slug, bundle, rates, relatedCostGuides = [] }: LocaleServiceCostViewProps) {
+export function LocaleServiceCostView({ slug, bundle, rates, relatedCostGuides = [], faqs = [] }: LocaleServiceCostViewProps) {
   const { lang } = useLang();
   const t = useTranslations();
   const locale = lang as Locale;
@@ -151,6 +153,15 @@ export function LocaleServiceCostView({ slug, bundle, rates, relatedCostGuides =
               {t("emergencyPage.badge")}
             </Link>
           </div>
+
+          {faqs.length > 0 && (
+            <VisibleFaqList
+              className="mt-10 rounded-3xl border border-slate-100 bg-white py-8 sm:py-10"
+              headingId="cost-faq-heading"
+              heading={t("costPage.faqHeading", { name: service.title })}
+              faqs={faqs}
+            />
+          )}
 
           {relatedCostGuides.length > 0 && (
             <section className="mt-10" aria-labelledby="related-cost-guides-heading">

@@ -9,6 +9,7 @@ import type { AreaBundleEntry, LocaleMap, LocationPairBundleEntry, ServiceBundle
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { LocationPairContent } from "@/components/sections/location-pair-content";
+import { VisibleFaqList } from "@/components/content/visible-faq";
 
 type RelatedNearMe = {
   slug: string;
@@ -56,6 +57,25 @@ export function LocaleNearMeView({
     area: area.name,
     price: startPrice
   });
+  // Same Q&As as the FAQPage JSON-LD on the server route (P5-02). EN SSR
+  // interpolations match the schema strings exactly.
+  const faqs = [
+    {
+      q: t("location.nearMeFaqAvailable", { service: service.title, area: area.name }),
+      a: t("location.nearMeFaqAvailableA", {
+        area: area.name,
+        landmarks: landmarks.slice(0, 4).join(", ")
+      })
+    },
+    {
+      q: t("location.nearMeFaqConfirm"),
+      a: t("location.nearMeFaqConfirmA")
+    },
+    {
+      q: t("location.nearMeFaqPricing"),
+      a: t("location.nearMeFaqPricingA")
+    }
+  ];
 
   return (
     <>
@@ -138,6 +158,13 @@ export function LocaleNearMeView({
           >
             {t("location.nearMeCta")}
           </a>
+
+          <VisibleFaqList
+            className="rounded-3xl border border-slate-200 bg-white py-8 sm:py-10"
+            headingId="near-me-faq-heading"
+            heading={t("location.faqs")}
+            faqs={faqs}
+          />
 
           {/* Related near-me pages in same area — lifts inbound for the whole cluster */}
           {relatedNearMe.length > 0 && (

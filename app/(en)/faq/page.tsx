@@ -2,10 +2,11 @@ import React from "react";
 import { buildMetadata } from "@/lib/seo-meta";
 import type { Metadata } from "next";
 import { FAQAccordion } from "@/components/sections/faq-accordion";
+import { faqsByLang } from "@/config/hub-faqs";
 import { FaqHeroHeading } from "@/components/sections/faq-hero-heading";
 import { FaqDirectoryView } from "@/components/sections/faq-directory-view";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { getSpeakableSchema } from "@/lib/seo";
+import { getFAQSchema, getSpeakableSchema } from "@/lib/seo";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
 import { Phone, MessageSquare } from "lucide-react";
@@ -66,6 +67,12 @@ export default function FAQPage() {
       </section>
 
       <Breadcrumbs items={[{ label: "FAQ Helpdesk", href: "/faq" }]} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(getFAQSchema(faqsByLang.en))
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

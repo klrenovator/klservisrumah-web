@@ -1413,7 +1413,8 @@
           "note": "Sebut harga berubah mengikut saiz TV, jenis bracket, bahan dinding, trunking kabel dan keperluan anchor."
         }
       }
-    }
+    },
+    "faqHeading": "Soalan lazim harga {name}"
   },
   "emergencyPage": {
     "servicesCrumb": "Perkhidmatan",
@@ -1428,7 +1429,8 @@
     "coverageSub": "Kongsi alamat tepat atau pin peta supaya kami boleh menyemak krew terdekat yang tersedia dan masa ketibaan praktikal.",
     "ctaHeading": "Dispatch segera melalui WhatsApp",
     "ctaBody": "Gunakan butang di bawah dan sertakan perkataan URGENT dalam mesej anda.",
-    "ctaButton": "WhatsApp Permintaan Segera"
+    "ctaButton": "WhatsApp Permintaan Segera",
+    "faqHeading": "Soalan lazim kecemasan {name}"
   },
   "pricingComparison": {
     "eyebrow": "Harga Telus",

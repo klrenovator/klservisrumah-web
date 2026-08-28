@@ -21,6 +21,12 @@ import { SkipToContentLink } from "@/components/ui/skip-to-content";
  * tree ships a correct server-side `<html lang>` attribute. Everything inside
  * `<body>` is identical across languages — providers, analytics, navigation,
  * footer, floating CTAs — and lives here so it is defined exactly once.
+ *
+ * Rendering invariant (audit C2 / P2-C1 / P4-01): `{children}` must resolve
+ * inside `<main id="main-content">` in the static HTML, *before* `</footer>`.
+ * Never add `app/(en|ms|zh)/loading.tsx` at this segment — that Suspense
+ * fallback ("Loading…") is what used to occupy `<main>` while the real page
+ * streamed after the footer for JS-less crawlers.
  */
 export function SiteChrome({
   children,

@@ -8,12 +8,14 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { useLang } from "@/context/lang-context";
 import { useTranslations } from "@/hooks/use-translations";
 import { getWhatsAppLink } from "@/lib/whatsapp";
+import { VisibleFaqList } from "@/components/content/visible-faq";
 
 type LocaleServiceEmergencyViewProps = {
   slug: string;
   bundle: LocaleMap<ServiceBundleEntry>;
   relatedServices: ServiceLinkEntry[];
   coverageAreaNames: LocaleMap<string[]>;
+  faqs?: { q: string; a: string }[];
 };
 
 const emergencySteps = [1, 2, 3] as const;
@@ -29,7 +31,8 @@ export function LocaleServiceEmergencyView({
   slug,
   bundle,
   relatedServices,
-  coverageAreaNames
+  coverageAreaNames,
+  faqs = []
 }: LocaleServiceEmergencyViewProps) {
   const { lang } = useLang();
   const t = useTranslations();
@@ -91,6 +94,15 @@ export function LocaleServiceEmergencyView({
               ))}
             </div>
           </div>
+
+          {faqs.length > 0 && (
+            <VisibleFaqList
+              className="mt-10 rounded-3xl border border-slate-100 bg-white py-8 sm:py-10"
+              headingId="emergency-faq-heading"
+              heading={t("emergencyPage.faqHeading", { name: service.title })}
+              faqs={faqs}
+            />
+          )}
 
           <section className="mt-10" aria-labelledby="emergency-related-services">
             <h2 id="emergency-related-services" className="text-2xl font-extrabold text-[#075985]">

@@ -222,6 +222,30 @@ function audit(file: string) {
   if (h1Count !== 1) {
     report(url, h1Count === 0 ? "no-h1" : "multiple-h1", `${h1Count} <h1> elements`);
   }
+
+  // 12–14. Landmark reading order (audit C2 / P2-C1 / P4-01).
+  //
+  //     A root `loading.tsx` used to flush "Loading…" into `<main>` and stream
+  //     the real page (including the H1) after `</footer>`. JS-less crawlers
+  //     then saw an empty landmark. These checks fail the build if that
+  //     pattern returns.
+  const mainOpen = html.search(/<main\b/i);
+  const mainClose = html.search(/<\/main>/i);
+  const h1Open = html.search(/<h1\b/i);
+  const footerClose = html.lastIndexOf("</footer>");
+  if (mainOpen >= 0 && mainClose > mainOpen) {
+    const mainInner = html.slice(mainOpen, mainClose);
+    const mainText = mainInner.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+    if (/^(Loading\.\.\.|Memuatkan\.\.\.|加载中\.\.\.)$/i.test(mainText)) {
+      report(url, "main-loading-shell", truncate(mainText));
+    }
+    if (h1Open >= 0 && (h1Open < mainOpen || h1Open > mainClose)) {
+      report(url, "h1-outside-main", `h1@${h1Open} main=${mainOpen}–${mainClose}`);
+    }
+  }
+  if (h1Open >= 0 && footerClose >= 0 && h1Open > footerClose) {
+    report(url, "h1-after-footer", `h1@${h1Open} footer@${footerClose}`);
+  }
 }
 
 function truncate(s: string, n = 140): string {

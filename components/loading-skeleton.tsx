@@ -1,23 +1,14 @@
 import React from "react";
 
 /**
- * Global loading state — shows a professional skeleton while pages stream.
- * Matches the brand's sky-blue palette.
+ * Optional in-page loading placeholder (server component, zero JS).
  *
- * This is a server component (no `"use client"`) so it ships zero JS. The
- * label is passed in per language tree (`Loading...` / `Memuatkan...` /
- * `加载中...`) so localized routes never show English UI, while keeping the
- * component itself language-agnostic. It is also marked `aria-live="polite"`
- * so screen readers announce progress.
- *
- * CLS NOTE: the placeholder is at least as tall as the viewport
- * (`min-h-[100svh]`). Next.js streams the shell (header → this fallback →
- * footer) before the page content, and `body` uses `justify-between`, so a
- * short fallback left the footer visible at the bottom of the screen and it
- * jumped thousands of pixels when the real content replaced the skeleton —
- * a measurable Cumulative Layout Shift on every first load. With the
- * fallback filling the viewport, the footer stays below the fold during
- * streaming and nothing visibly moves.
+ * DO NOT mount this via `app/(en|ms|zh)/loading.tsx`. A route-group
+ * `loading.tsx` wraps every page in a React Suspense boundary *inside* the
+ * client `Providers` tree. Next.js then flushes the fallback into `<main>`
+ * and streams the real page after `</footer>` — the P2-C1 / P4-01 defect
+ * (`<main>` = "Loading…", H1 after the footer on all 5,815 pages). Keep
+ * this component for nested/manual use only.
  */
 export function LoadingSkeleton({ label = "Loading..." }: { label?: string }) {
   return (

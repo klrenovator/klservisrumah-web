@@ -136,7 +136,7 @@ export const serviceNavBySlug: Record<string, ServiceNavItem> = {
   "tiling": {
     "slug": "tiling",
     "title": "Professional Tiling & Tile Repair",
-    "startPrice": "RM 14",
+    "startPrice": "RM 14 / sq ft",
     "i18n": {
       "ms": {
         "title": "Jubin & Pembaikan Jubin Profesional"
@@ -149,7 +149,7 @@ export const serviceNavBySlug: Record<string, ServiceNavItem> = {
   "plaster-ceiling": {
     "slug": "plaster-ceiling",
     "title": "Plaster Ceiling Design & Build",
-    "startPrice": "RM 10",
+    "startPrice": "RM 10 / sq ft",
     "i18n": {
       "ms": {
         "title": "Reka Bentuk & Bina Siling Plaster Moden"
@@ -162,7 +162,7 @@ export const serviceNavBySlug: Record<string, ServiceNavItem> = {
   "skim-coat": {
     "slug": "skim-coat",
     "title": "Wall & Ceiling Skim Coat",
-    "startPrice": "RM 5",
+    "startPrice": "RM 5 / sq ft",
     "i18n": {
       "ms": {
         "title": "Skim Coat Dinding & Siling"
@@ -175,7 +175,7 @@ export const serviceNavBySlug: Record<string, ServiceNavItem> = {
   "flooring": {
     "slug": "flooring",
     "title": "Vinyl, SPC & Laminate Flooring",
-    "startPrice": "RM 14",
+    "startPrice": "RM 14 / sq ft",
     "i18n": {
       "ms": {
         "title": "Lantai Vinyl, SPC & Laminate"
@@ -188,7 +188,7 @@ export const serviceNavBySlug: Record<string, ServiceNavItem> = {
   "epoxy-flooring": {
     "slug": "epoxy-flooring",
     "title": "Epoxy & Polyurethane Flooring",
-    "startPrice": "RM 22",
+    "startPrice": "RM 22 / sq ft",
     "i18n": {
       "ms": {
         "title": "Lantai Epoxy & Polyurethane"

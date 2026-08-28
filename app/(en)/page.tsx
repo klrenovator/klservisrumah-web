@@ -14,7 +14,7 @@ import { GoogleReviews } from "@/components/sections/google-reviews";
 import { PricingComparison } from "@/components/sections/pricing-comparison";
 import { NotSureSection } from "@/components/sections/not-sure-section";
 import { ServiceAreas } from "@/components/sections/service-areas";
-import { FAQAccordion } from "@/components/sections/faq-accordion";
+import { VisibleFaqList } from "@/components/content/visible-faq";
 import { HomeCTA } from "@/components/sections/home-cta";
 import { HomepageAeoLinks } from "@/components/sections/homepage-aeo-links";
 
@@ -222,7 +222,17 @@ export default function Home() {
       {/* AEO-optimised internal linking hub (top areas, services, problems, tools) */}
       <HomepageAeoLinks />
 
-      <FAQAccordion />
+      {/* P5-02 / P3-11: FAQPage schema must match visible HTML. The old
+          FAQAccordion used a different 5-question set and hid answers behind
+          `{isOpen && …}`. This list is the same HOMEPAGE_FAQS array as the
+          JSON-LD above, rendered with native <details> so answers are in SSR. */}
+      <VisibleFaqList
+        className="bg-slate-50 border-y border-slate-100 py-20 sm:py-24"
+        headingId="homepage-faq-heading"
+        eyebrow="Helpdesk Support"
+        heading="Home service questions, answered"
+        faqs={HOMEPAGE_FAQS}
+      />
 
       {/* Lightweight social proof sections — match the KLRenovator trust pattern without loading third-party embeds on page load. */}
 
