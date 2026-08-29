@@ -143,3 +143,41 @@ export function buildCostDirectAnswer(t: Translator, vars: CostDirectAnswerVars)
 export function buildCostDirectAnswerPills(t: Translator): string[] {
   return [1, 2, 3].map((index) => t(`${COST_DIRECT_ANSWER_KEYS.pill}${index}`));
 }
+
+/**
+ * The four site-wide cost FAQs (CF-4), read from the same `costPage.faqs.*`
+ * dictionary keys the page body renders — the EN route previously kept a
+ * hand-copied array that had drifted from the rendered copy (part 5's
+ * `faqSchemaNoVisibleMatch` compares marked-up Q&As against the document).
+ * One key set, one builder: schema and HTML cannot diverge again.
+ *
+ * `startPrice` must be the DISPLAY value for the active locale — the raw
+ * `service.startPrice` for English, `localizeUnits(service.startPrice, locale)`
+ * for BM/中文 — so FAQ 0 quotes the same unit-carrying figure the DirectAnswer
+ * card above it renders.
+ */
+export function buildCostPageSiteFaqs(
+  t: Translator,
+  { name, startPrice }: { name: string; startPrice: string }
+): { q: string; a: string }[] {
+  return [0, 1, 2, 3].map((index) => ({
+    q: t(`costPage.faqs.${index}.q`, { name, startPrice }),
+    a: t(`costPage.faqs.${index}.a`, { name, startPrice })
+  }));
+}
+
+/**
+ * The full `FAQPage` question list for one `/services/<slug>/cost` document:
+ * the DirectAnswer Q&A first (it is the headline query, and part 5 checks the
+ * FIRST marked-up Question against the rendered text), then the site-wide cost
+ * FAQ templates, then the service's own published FAQs. The array must mirror
+ * exactly what the page body renders in the same order — `VisibleFaqList`
+ * ships the same three blocks.
+ */
+export function buildCostPageFaqs(
+  directAnswer: CostDirectAnswer,
+  siteFaqs: { q: string; a: string }[],
+  serviceFaqs: { q: string; a: string }[]
+): { q: string; a: string }[] {
+  return [{ q: directAnswer.question, a: directAnswer.answer }, ...siteFaqs, ...serviceFaqs];
+}

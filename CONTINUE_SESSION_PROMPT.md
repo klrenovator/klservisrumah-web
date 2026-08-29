@@ -6,6 +6,40 @@
 
 ## Current State (Update this each session)
 
+> **Fix Wave 14 COMPLETE (2026-08-29): P3-12 phase 3** — the 29
+> `/services/<svc>/cost` money pages (the site's highest-intent "how much"
+> URLs, and the LAST un-localized surface) now have **real MS/ZH server
+> routes**: `/ms/services/<slug>/cost` + `/zh/services/<slug>/cost` (+58
+> indexable pages; sitemap parity 4,054 → **4,112**). The whole cost-guide
+> body was extracted into a shared server-compatible `CostPageBody`
+> (`components/sections/locale-service-cost-body.tsx` — `locale` + `t` as
+> props, internal links composed per tree) used by BOTH the EN client view
+> and the new `LocaleServiceCostPage` server component; thin route stubs
+> under `app/(ms|zh)/…/services/[slug]/cost/` (dynamicParams=false, true
+> 404 otherwise, self-canonical + full EN/MS/ZH/x-default hreflang,
+> ogLocale, raster cost OG template, localized meta via new
+> `costPage.metaTitle`/`metaDesc` keys ×3). EN cost route's hreflang upgraded
+> to the genuine 3-URL cluster; its drifted `COST_FAQS_EN` schema array
+> replaced by the shared `buildCostPageFaqs`/`buildCostPageSiteFaqs` pure
+> builders (3 of 4 site-wide FAQ answers had diverged from the rendered
+> copy; EN SERP strings byte-identical). MS/ZH FAQ 0 interpolates the
+> localized unit-carrying start price (`kaki persegi` / `平方呎`).
+> `buildRelatedCostGuideEntries` → `lib/location-bundles.ts`. MS/ZH service
+> heroes gained the P4-16 cost-guide button → localized twin (+58 inbounds).
+> Verified 58/58: html lang, self-canonical, 4-URL hreflang, first-FAQ =
+> rendered H2, EVERY marked-up Q&A verbatim in visible HTML, in-language
+> DirectAnswer. All gates PASS: prebuild **329,897 × 0**, type-check,
+> lint 0/0, build **4,139 HTML**, audit:html none/none, audit:links
+> 312,732+56 → 0, seo-head **4,112 = 4,112** (0 dup titles/descs),
+> schema-size, bp1, raster-og (cost=174), location-similarity 69.4%, meta,
+> seo:audit, part5 0 errors, part3 corpus 4,139 pages BM/ZH leaks 0/0.
+> Full log: `docs/full-website-deep-audit/FIX-WAVE-14-REPORT.md`.
+>
+> **NEXT (P3-12 phase 2):** native MS/ZH translation of the 146 authored
+> per-pod FAQ sets (no MT) — see TRACKING.md item 10 for the full value-
+> ordered candidate list (P2-16 tranche 3, §5.4-B1, P4-10, P4-14, P4-08,
+> P4-16 footer tiering, P3-15/P3-16, P3-19).
+>
 > **Fix Wave 13 COMPLETE (2026-08-29, owner request):** awning start-from
 > prices + market-rate verification. `awning-installation` — the last
 > "On Quote" service — now publishes **RM 380** starting price + 9 priced

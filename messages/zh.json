@@ -1317,6 +1317,8 @@
     "costCrumb": "费用",
     "badge": "2026 价格指南",
     "h1": "{name}在KL与雪兰莪需要多少钱？",
+    "metaTitle": "{name}在KL与雪兰莪多少钱？2026价格指南",
+    "metaDesc": "{name}在KL与雪兰莪多少钱？查看已发布的价格范围、成本因素、实际例子与 WhatsApp 报价方式。",
     "directAnswer": {
       "question": "{name}在KL与雪兰莪需要多少钱？",
       "answer": "{name}在KL与雪兰莪从{startPrice}起。下方{scopeCount}项公开价格按{unitBasis}计算，动工前每个数字都会以书面确认。出入条件、材料与现场状况会影响最终金额——先用{name}估价器算出大约范围，再传送照片与尺寸以取得固定书面报价。",

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-29T17:22:14.395Z",
-  "totalPages": 4081,
+  "generatedAt": "2026-08-29T18:03:38.537Z",
+  "totalPages": 4139,
   "trilingualLeaks": {
     "pagesWithBmLeak": 0,
     "pagesWithZhLeak": 0,
@@ -754,6 +754,32 @@
         "Is 1 HP Aircon Installation in KL relevant for KL and Selangor homes?"
       ]
     },
+    "/services/<svc>/cost": {
+      "n": 29,
+      "pctQuestionH2": 100,
+      "pctQuestionH3": 0,
+      "meanQuestionHeadings": 3,
+      "familyPages": {
+        "howMuch": 29
+      },
+      "pctQuickAnswer": 100,
+      "pctFaqSchema": 100,
+      "pctHowToSchema": 0,
+      "pctSpeakable": 0,
+      "pctNap": 100,
+      "pctNapWholePage": 100,
+      "faqQuestionMean": 9.4,
+      "pctVague": 72,
+      "meanWords": 1704,
+      "sampleQuestions": [
+        "How much does Aircon Service, Repair & Installation cost in KL & Selangor?",
+        "What affects Aircon Service, Repair & Installation cost?",
+        "Need an exact Aircon Service, Repair & Installation quote?",
+        "How much does Auto Gate & Motorised Gate cost in KL & Selangor?",
+        "What affects Auto Gate & Motorised Gate cost?",
+        "Need an exact Auto Gate & Motorised Gate quote?"
+      ]
+    },
     "/services/<svc>": {
       "n": 29,
       "pctQuestionH2": 100,
@@ -909,32 +935,6 @@
       "pctVague": 0,
       "meanWords": 361,
       "sampleQuestions": []
-    },
-    "/services/<svc>/cost": {
-      "n": 29,
-      "pctQuestionH2": 100,
-      "pctQuestionH3": 0,
-      "meanQuestionHeadings": 3,
-      "familyPages": {
-        "howMuch": 29
-      },
-      "pctQuickAnswer": 100,
-      "pctFaqSchema": 100,
-      "pctHowToSchema": 0,
-      "pctSpeakable": 0,
-      "pctNap": 100,
-      "pctNapWholePage": 100,
-      "faqQuestionMean": 9.4,
-      "pctVague": 72,
-      "meanWords": 1707,
-      "sampleQuestions": [
-        "How much does Aircon Service, Repair & Installation cost in KL & Selangor?",
-        "What affects Aircon Service, Repair & Installation cost?",
-        "Need an exact Aircon Service, Repair & Installation quote?",
-        "How much does Auto Gate & Motorised Gate cost in KL & Selangor?",
-        "What affects Auto Gate & Motorised Gate cost?",
-        "Need an exact Auto Gate & Motorised Gate quote?"
-      ]
     },
     "/services/<svc>/emergency": {
       "n": 12,
