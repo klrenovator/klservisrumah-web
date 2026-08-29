@@ -73,6 +73,7 @@
 | 2026-08-29 | **Fix Wave 6** — P2-17/P2-03: emergency pages rewritten per-service for the 12 real-emergency services (`config/emergency-services.ts`, EN/MS/ZH) and the 17 fake-emergency pages retired via middleware 301 + `generateStaticParams` + sitemap + cost-card gate (sitemap 3,643→3,626). P2-16: 15 thinnest problem pages enriched with `overview`/`diyChecks`/`prevention`/`costDetail` (EN/MS/ZH, native) + `audit:problem-i18n` extended to enforce native depth parity. All gates PASS (3,652 HTML; 320,291 assertions × 0 failures) | ✅ See `FIX-WAVE-6-REPORT.md` |
 | 2026-08-29 | **Fix Wave 7** — P2-16 tranche 2: next 15 thinnest problems enriched (`rusting-window-grille`, `loose-door-hinge`, `stuck-window-lock`, `ikea-furniture-assembly-help`, `downlight-flickering`, `sagging-plaster-ceiling`, `blocked-drain-toilet`, `ceiling-leak-after-rain`, `roof-leak-rainy-season`, `swimming-pool-leak-balcony`, `wardrobe-door-jamming`, `cracked-ceiling-joints`, `locked-out-of-house`, `uneven-wall-surface-skim`, `cctv-not-recording-storage-full`) — 45 hand-authored depth blocks EN/MS/ZH; new `scripts/p2-16-wordcount.ts` ranking helper. **30/74 problems enriched** (audit's top-30-by-demand target closed via thinness ranking). All gates PASS: lint/type-check/prebuild (320,291 assertions × 0 failures)/build (3,660 static)/audit:html/audit:links (277,170+53, 0 broken)/audit:seo-head | ✅ See `FIX-WAVE-7-REPORT.md` |
 | 2026-08-29 | **Fix Wave 8** — P2-19: real per-article blog dates + per-article sitemap lastMod. 216 posts shared 5 dates (99 on one day) → **54 distinct dates (max 7/day)**, bucket-capped deterministic assignment (`scripts/assign-blog-dates.ts`); `dateModified` split from `datePublished` via new `blogDateModified()` (migrated → 2026-08-16 release date; awning → own dates); sitemap blog URLs emit per-article lastMod (648 URLs, 0 on the constant); blog `post()` helpers now require explicit `date`; validator gate: parseable, non-future, ≤10 posts/date. All gates PASS (prebuild 320,291 × 0; build 3,660 static; seo-head/html/links green) | ✅ See `FIX-WAVE-8-REPORT.md` |
+| 2026-08-29 | **Fix Wave 9** — the unblocked CRO/UX queue: P4-05 (global sticky book button w/ pathname-derived context) + P4-03 (single desktop float — WhatsApp dispatch desk removed); P4-02 (static quick-quote form inside mobile hero; content-driven min-height); P4-07 (new `/api/inquiry` route + `QuickQuoteForm` — static JS-free form on `/` + `/contact`, 302 → WhatsApp prefill); P4-12 (static SVG coverage map on `/areas` + 37 area pages; `hasMap` → real Google Maps URL); P4-06 (rate-book include/exclude block on 29 service pages, server-passed slim data); P4-16 (Full Price Guide link in service hero); P4-17 (aircon 6 problems + 4 aircon cost-tool links); P4-11 code half (authorship claim re-attributed). All gates PASS (build 3,652 HTML; prebuild 320,291 × 0; audit:html 0/0; audit:links 278,649+54 → 0 broken; audit:seo-head; audit:i18n 1,213 × 3; audit:schema-size; audit:bp1; audit:location-similarity; seo:audit+meta) | ✅ See `FIX-WAVE-9-REPORT.md` |
 
 ---
 
@@ -101,24 +102,35 @@
 
 ## ⭐ NEXT SESSION MUST CONTINUE HERE
 
-**All 5 audit parts are complete; Fix Wave 1–8, BP-1 phase 1 and CF-4 are
-complete.** Wave 7 closed P2-16 (30/74 problems enriched EN/MS/ZH, audit's
-top-30 depth target) and Wave 8 closed **P2-19** (54 distinct per-article
-blog dates — max 7/day, was 99 — plus per-article sitemap lastMod on all 648
-blog URLs and a split dateModified policy). See `FIX-WAVE-7-REPORT.md` and
-`FIX-WAVE-8-REPORT.md`.
+**All 5 audit parts are complete; Fix Wave 1–9, BP-1 phase 1 and CF-4 are
+complete.** Wave 7 closed P2-16 (30/74 problems enriched EN/MS/ZH), Wave 8
+closed **P2-19** (54 distinct per-article blog dates + per-article sitemap
+lastMod), and **Wave 9 closed the entire unblocked CRO/UX queue**
+(P4-05/P4-03/P4-02/P4-07/P4-12/P4-06/P4-16/P4-17 + P4-11 code half). See
+`FIX-WAVE-9-REPORT.md` (and `FIX-WAVE-7/8-REPORT.md` for the earlier waves).
+With that, **no unblocked, code-only audit finding remains** — everything
+left on the boards is owner-blocked, needs owner data/access, or is a
+P2/P3 enhancement listed in item 8 below.
 
-1. **P2-16 tranche 3 (optional, needs demand data):** the remaining 44
+1. **The unblocked CRO/UX queue is now COMPLETE (Fix Wave 9, 2026-08-29):**
+   P4-05 (global persistent booking float), P4-03 (single desktop float — WhatsApp
+   dispatch desk removed), P4-02 (mobile quote box inside the hero viewport),
+   P4-07 (static SSR inquiry form `/api/inquiry` + QuickQuoteForm on `/` + `/contact`),
+   P4-12 (static SVG coverage map on `/areas` + 37 area pages; `hasMap` now a real
+   Google Maps URL), P4-06 (include/exclude block on 29 service pages from the
+   rate-book), P4-16 (cost-guide link in service hero), P4-17 (aircon 6 problems +
+   aircon tools row), P4-11 code half (authorship claim re-attributed). All gates
+   PASS (build 3,652 HTML; 320,291 assertions × 0 failures; audit:html 0/0;
+   audit:links 278,649+54 → 0 broken; audit:seo-head; audit:i18n 1,213 × 3;
+   audit:schema-size; audit:bp1; audit:location-similarity). Full log:
+   `docs/full-website-deep-audit/FIX-WAVE-9-REPORT.md`.
+2. **P2-16 tranche 3 (optional, needs demand data):** the remaining 44
    problems — next thinnest: `vinyl-flooring-lifting-edges` (166),
    `wall-dampness-rising` (167), `autogate-remote-not-working` (167),
    `ceiling-mold-stains` (168), `rccb-tripping-kl` (168). Owner GSC data
    would re-rank this list; without it, use `scripts/p2-16-wordcount.ts`
    thinness order.
-2. **P2-22 (owner decision):** add outbound citations to brands/authorities.
-3. **P4-05 / P4-07 / P4-12 / P4-06 / P4-11 / P4-16 / P4-17 / P4-02 (unblocked
-   CRO/UX queue)** — sticky CTA on commercial templates, static-SSR inquiry
-   form, coverage map, include/exclude lists, team/authors page, link-equity
-   rebalance, aircon-problem inlinks, mobile quote box.
+3. **P2-22 (owner decision):** add outbound citations to brands/authorities.
 4. **BP-1 phase 2 / P2-C4 still blocked on owner GSC keep-set** — do **not**
    add more location pages; do **not** delete local pages on low traffic alone.
 5. **CI patch still unapplied:** `git apply docs/full-website-deep-audit/BP-1-ci-audit-bp1.patch`
@@ -132,6 +144,11 @@ blog URLs and a split dateModified policy). See `FIX-WAVE-7-REPORT.md` and
 7. **Still-missing access (re-request from owner):** GSC, live HTTP/edge check,
    CWV/CrUX, GBP + review verification, owner fact confirmations (reviews,
    founding year, staff, stats), photography (P5-12).
+8. **Next code-level candidates (owner decisions or P2/P3):** P4-15 NAP strip
+   in content blocks (small code-only win), P3-02 /faq question H3s + hidden
+   empty-state, P3-06 blog FAQPage schema, P3-18 llms.txt aircon+units check,
+   P3-12 MS/ZH pod routes, P5-13/14 raster OG images, §5.6 freshness rota,
+   P4-10 case-study pages, P4-14 per-area Service entities, P4-08 CTA wording.
 
 ---
 
@@ -141,17 +158,17 @@ blog URLs and a split dateModified policy). See `FIX-WAVE-7-REPORT.md` and
 |---|---|---|
 | P0 | P4-01 — Render page content inside `<main>` (remove SSR "Loading…" shell; content currently after `</footer>` on 5,815 pages) | ✅ DONE (Fix Wave 2 — 0/5,815 remaining) |
 | P1 | P4-09 — Add AggregateRating+Review to homepage/service/pricing LocalBusiness; remove `aggregateRating` from tool SoftwareApplication | ⏳ PENDING (needs owner review verification) |
-| P1 | P4-05 — Mount `StickyBookButton` globally / on commercial templates (currently service+sub-service only) | ⏳ PENDING |
-| P1 | P4-07 — Add static-SSR inquiry/callback form (all forms JS-gated today) | ⏳ PENDING |
-| P1 | P4-12 — Embed coverage map; set `hasMap` to a valid map URL (0 iframes today) | ⏳ PENDING |
-| P1 | P4-06 — Add include/exclude list to service pages | ⏳ PENDING |
-| P1 | P4-11 — Team/authors page + bio schema (E-E-A-T Experience pillar) | ⏳ PENDING |
-| P1 | P4-16 — Rebalance internal link equity (hub indexes vs content children 7–9) | ⏳ PENDING (**unblocked by BP-1** — re-measure on the 3,669-page graph) |
+| P1 | P4-05 — Mount `StickyBookButton` globally / on commercial templates (currently service+sub-service only) | ✅ DONE (Fix Wave 9 — global mount in SiteChrome with pathname-derived service/area context) |
+| P1 | P4-07 — Add static-SSR inquiry/callback form (all forms JS-gated today) | ✅ DONE (Fix Wave 9 — `/api/inquiry` route + QuickQuoteForm, static JS-free form on `/` hero + `/contact`) |
+| P1 | P4-12 — Embed coverage map; set `hasMap` to a valid map URL (0 iframes today) | ✅ DONE (Fix Wave 9 — static SVG coverage map on `/areas` + 37 area pages; hasMap → Google Maps universal URL; CSP-safe, no owner key) |
+| P1 | P4-06 — Add include/exclude list to service pages | ✅ DONE (Fix Wave 9 — rate-book-driven included/not-included block on 29 service pages) |
+| P1 | P4-11 — Team/authors page + bio schema (E-E-A-T Experience pillar) | 🟡 PARTIAL (Fix Wave 9 — code half done: unverifiable "written by local tradesmen" claim re-attributed; named team page ⏳ owner bios) |
+| P1 | P4-16 — Rebalance internal link equity (hub indexes vs content children 7–9) | 🟡 PARTIAL (Fix Wave 9 — cost guide linked from service hero +29 inbounds; footer tiering / full rebalance still ⏳ PENDING) |
 | P1 | P4-13 — Restructure the local pages (site-wide price + parametric body) | ⏳ PENDING (**unblocked by BP-1** — scope cut 3,654 → 1,508; this is **BP-1 phase 2**) |
-| P1 | P4-17 — Link aircon problems from aircon service + tools (1–2 inbound) | ⏳ PENDING |
-| P1 | P4-02 — Mobile quote box above the fold (behind full-viewport slideshow today) | ⏳ PENDING |
+| P1 | P4-17 — Link aircon problems from aircon service + tools (1–2 inbound) | ✅ DONE (Fix Wave 9 — aircon shows 6 problems + 4 aircon cost-tool links) |
+| P1 | P4-02 — Mobile quote box above the fold (behind full-viewport slideshow today) | ✅ DONE (Fix Wave 9 — static quick-quote form inside the hero viewport; mobile min-height content-driven) |
 | P2 | P4-10 — Make FeaturedProjects/BeforeAfter cards real links; add case-study pages | ⏳ PENDING |
-| P2 | P4-03 — Consolidate floating CTAs (up to 4 on desktop service pages); exit-intent 30s timer → mouse-leave | ⏳ PENDING |
+| P2 | P4-03 — Consolidate floating CTAs (up to 4 on desktop service pages); exit-intent 30s timer → mouse-leave | 🟡 PARTIAL (Fix Wave 9 — single desktop float now (WhatsApp desk removed); exit-intent 30s timer → mouse-leave still ⏳) |
 | P2 | P4-14 — Per-area `Service` entities in LocalBusiness schema | ⏳ PENDING |
 | P2 | P4-15 — NAP contact strip in content block (5,813 pages footer-only) | ⏳ PENDING |
 | P2 | P4-08 — Reword primary CTAs around fixed-quote/no-deposit | ⏳ PENDING |

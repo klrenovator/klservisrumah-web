@@ -61,3 +61,54 @@ export function getWhatsAppLink(messageDetails?: {
   const encodedText = encodeURIComponent(text);
   return `https://wa.me/${siteConfig.whatsapp}?text=${encodedText}`;
 }
+
+/**
+ * Inquiry link for the static SSR quote form (`/api/inquiry` → this builder).
+ *
+ * Composes the standard locale-aware service/location greeting and appends the
+ * caller's name and free-text job details, so a fully JS-free form submission
+ * still lands in WhatsApp with a complete, structured request.
+ */
+export function getWhatsAppInquiryLink(details: {
+  service?: string;
+  area?: string;
+  name?: string;
+  message?: string;
+  lang?: Locale;
+}) {
+  const lang = details.lang ?? "en";
+  const t = templates[lang] ?? templates.en;
+
+  let text: string;
+
+  if (details.service && details.area) {
+    text = t.serviceAndLocation
+      .replace("{service}", details.service)
+      .replace("{location}", details.area);
+  } else if (details.service) {
+    text = t.service.replace("{service}", details.service);
+  } else if (details.area) {
+    text = t.location.replace("{location}", details.area);
+  } else {
+    text = t.default;
+  }
+
+  const extra: string[] = [];
+  if (details.name) {
+    extra.push(
+      lang === "ms" ? `Nama saya: ${details.name}` :
+      lang === "zh" ? `我的名字：${details.name}` :
+      `My name: ${details.name}`
+    );
+  }
+  if (details.message) {
+    extra.push(
+      lang === "ms" ? `Butiran kerja: ${details.message}` :
+      lang === "zh" ? `工作详情：${details.message}` :
+      `Job details: ${details.message}`
+    );
+  }
+  if (extra.length) text += `\n\n${extra.join("\n")}`;
+
+  return `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(text)}`;
+}

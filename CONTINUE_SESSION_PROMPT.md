@@ -6,6 +6,41 @@
 
 ## Current State (Update this each session)
 
+> **Fix Wave 9 COMPLETE (2026-08-29):** the unblocked CRO/UX queue is done —
+> **P4-05/P4-03** `StickyBookButton` is now mounted ONCE globally in
+> `SiteChrome` (pathname-derived service/area context via
+> `serviceNavBySlug`/`areaNavBySlug`, localized); the WhatsApp dispatch desk
+> (`components/ui/whatsapp-button.tsx`) was **deleted** → exactly one desktop
+> float per viewport (mobile keeps the sticky WhatsApp+Call bar).
+> **P4-02/P4-07** new static JS-free `QuickQuoteForm` (native
+> `<form action="/api/inquiry" method="get">`, renders in SSR HTML, submits
+> without JS) mounted inside the mobile hero viewport (hero `min-h-0` on
+> mobile) + top of `/contact`; new `app/api/inquiry/route.ts` (GET+POST,
+> field caps, lang allowlist, 302 → wa.me with locale-aware prefill via new
+> `getWhatsAppInquiryLink()` in `lib/whatsapp.ts`). **P4-12** new static SVG
+> `CoverageMap` (equirectangular projection of `areaPages` lat/lng, 37
+> clickable markers, highlight variant) on `/areas` + all 37 area pages —
+> CSP `frame-src 'none'` rules out iframes, so this is the audit's listed
+> alternative; `hasMap` now emits `links.mapUrl` (Google Maps universal URL)
+> instead of the GBP share shortlink. **P4-06** include/exclude block on all
+> 29 service pages driven by the rate-book (`SERVICE_SCOPES` scopes = included
+> + quoteOnly rows + 3 generic exclusions), data passed server-side as a slim
+> `scopeSummary` prop (63 KB rate-book stays out of client bundles).
+> **P4-16** "Full Price Guide" link in the service hero CTA row (+29 inbounds
+> to `/services/<svc>/cost`). **P4-17** aircon service now shows 6 problems
+> (maxItems 4→6) + a new "Aircon cost calculators" row (4 tools). **P4-11
+> code half** — "written by local tradesmen" claim re-attributed to job
+> records/published rates/warranty terms. New i18n keys ×3 locales
+> (`quickQuote.*`, `serviceContent.includedHeading/includedSub/
+> notIncludedHeading/notIncludedSub/excludedGeneric.{1..3}`,
+> `serviceDetail.fullPriceGuide`, `internalLinks.airconTools/airconToolsSub`,
+> `toolsList.*`, `coverageMap.*`) — parity PASS 1,213 × 3. All gates PASS:
+> lint 0/0, type-check, prebuild 320,291 × 0 failures (client-bundle guard
+> 218 modules), build SUCCESS (3,652 static), audit:html 0/0, audit:links
+> 278,649+54 → 0 broken, audit:seo-head (3,626 indexable/26 noindex),
+> audit:schema-size, audit:bp1, audit:location-similarity, seo:audit+meta.
+> Full log: `docs/full-website-deep-audit/FIX-WAVE-9-REPORT.md`.
+>
 > **CF-4 COMPLETE (2026-08-29):** cost pages are now the canonical rate-book
 > "harga" guides. All 29 `/services/<svc>/cost` pages: 409–702 words (mean 543)
 > → **1,152–2,264 (mean 1,373)**, 222 rate-book rows (162 priced + 60
@@ -105,16 +140,20 @@
 > (3,626 sitemap, 0 dupes), html 0/0, links 277,170+53 → 0 broken. Full log:
 > `docs/full-website-deep-audit/FIX-WAVE-8-REPORT.md`.
 >
-> **Next session starts at:** **P2-16 tranche 3** (44 remaining problems;
-> needs owner GSC demand data to re-rank, else `scripts/p2-16-wordcount.ts`
-> thinness order: `vinyl-flooring-lifting-edges` 166, `wall-dampness-rising`
-> 167, `autogate-remote-not-working` 167, `ceiling-mold-stains` 168,
-> `rccb-tripping-kl` 168) — or the **unblocked CRO/UX queue** (P4-05 sticky
-> CTA, P4-07 static-SSR form, P4-12 coverage map, P4-06 include/exclude
-> lists, P4-11 team/authors page, P4-16 link-equity rebalance, P4-17 aircon
-> problem inlinks, P4-02 mobile quote box). **P2-C4** stays tied to the BP-1
-> phase-2 owner/GSC keep-set decision. BP-1 phase 2 still **blocked on GSC
-> data (owner)**. Do **not** add more location pages. Do **not** re-add
+> **Next session starts at:** with Wave 9 done, **no unblocked code-only
+> audit finding remains**. Candidates, in rough value order:
+> **P4-15** (NAP contact strip at the end of content blocks — small code-only
+> win), **P2-16 tranche 3** (44 remaining problems; needs owner GSC demand
+> data to re-rank, else `scripts/p2-16-wordcount.ts` thinness order:
+> `vinyl-flooring-lifting-edges` 166, `wall-dampness-rising` 167,
+> `autogate-remote-not-working` 167, `ceiling-mold-stains` 168,
+> `rccb-tripping-kl` 168), **P3-02** (/faq question H3s + hidden
+> empty-state), **P3-06** (blog FAQPage schema), **P3-18** (llms.txt aircon
+> + units), **P3-12** (MS/ZH pod routes), **P5-13/14** (raster OG images),
+> **§5.6** (freshness rota), **P2-22** (outbound citations — owner decision),
+> **P4-10/P4-14/P4-08** (P2/P3). **P4-11 named team page** needs owner bios.
+> **P4-13 / P2-C4 / BP-1 phase 2** still blocked on owner GSC keep-set. Do
+> **not** add more location pages. Do **not** re-add
 > `app/(en|ms|zh)/loading.tsx`. Do **not** delete local pages on low traffic
 > alone. Do **not** retry the CI patch push (no `workflows` permission). Do
 > **not** weaken the estimator trilingual-parity asserts to accommodate new
@@ -124,10 +163,12 @@
 > (type-check enforces), and never reintroduce per-day date concentration
 > above the validator's 10-post cap.
 >
-> **Branch:** arena/01a04c97-klservisrumah-web (this session branch — push PRs from here)
-> **Last completed session:** 2026-08-29 — Fix Wave 8 ✅ (P2-19: per-article
-> blog dates 5→54 distinct + per-article sitemap lastMod; Wave 7 same day:
-> P2-16 30/74 problems enriched)
+> **Branch:** arena/01a04cc0-klservisrumah-web (this session branch — push PRs from here)
+> **Last completed session:** 2026-08-29 — Fix Wave 9 ✅ (the whole unblocked
+> CRO/UX queue: P4-05/P4-03 global single float, P4-02 mobile hero quote box,
+> P4-07 static SSR inquiry form + /api/inquiry, P4-12 SVG coverage map +
+> hasMap fix, P4-06 include/exclude blocks, P4-16 hero cost-guide link,
+> P4-17 aircon problem/tool inlinks, P4-11 code half)
 
 **Quality gates (must all be green before any new work).**
 Numbers are the *measured* output of each command on this branch — update them
@@ -139,15 +180,15 @@ when the corpus changes, don't carry stale values forward:
 - [ ] npm run audit:bp1 — PASS (**run after build**; 2,146 retired URLs, 0 regenerated)
 - [ ] npm run seo:audit — PASS
 - [ ] npm run audit:html — 0 fatal / 0 warnings (3,652 pages)
-- [ ] npm run audit:links — 277,170 rendered + 53 source links, 0 broken
+- [ ] npm run audit:links — 278,649 rendered + 54 source links, 0 broken
 - [ ] npm run audit:seo-head — PASS (3,626 self-canonical indexable, 26 noindex incl. 23 estimate URLs, sitemap = 3,626, 0 dupes)
-- [ ] npm run audit:i18n — 1,183 keys × 3, 0 missing
+- [ ] npm run audit:i18n — 1,213 keys × 3, 0 missing
 - [ ] npm run audit:topical-map — 29/29 services, 222 relationships
 - [ ] npm run audit:specialty-locale — 222 × MS/ZH = 444 blocks
 - [ ] npm run audit:specialty-coverage — 222 subservices across 29 services
 - [ ] npm run audit:service-i18n — 29 services
 - [ ] npm run audit:problem-i18n — 74 keep-URLs × MS/ZH, 12 redirects excluded (native depth parity for enriched problems)
-- [ ] npm run audit:client-bundle — 217 client modules, 0 heavy registries
+- [ ] npm run audit:client-bundle — 218 client modules, 0 heavy registries
 - [ ] npm run audit:location-similarity — all layers < 70%; near-me layer = 0 pages
 - [ ] npm run audit:trilingual-leak — 29 services × 3 locale bases, 58 unique notes, 0 English leaks (prebuild too)
 - [ ] npm run audit:content-pods — 29 services × commercial+residential: 58 unique intros, 4 bullets/4 FAQs each, all pod bullets localized ×2 (prebuild too)

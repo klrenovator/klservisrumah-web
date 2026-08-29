@@ -34,6 +34,11 @@ function isQuoteOnly(service: ServiceDetail): boolean {
 
 type ServiceDetailContentProps = {
   service: ServiceDetail;
+  /** Audit P4-06 — rate-book include/exclude data (server-computed, slim). */
+  scopeSummary?: {
+    scopes: { name: string; published: string }[];
+    quoteOnly: { name: string; desc: string }[];
+  };
 };
 
 /**
@@ -53,7 +58,7 @@ type ServiceDetailContentProps = {
  * in locale-service-view.tsx, NOT here. This ensures customers see the
  * calculator immediately without scrolling.
  */
-export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
+export function ServiceDetailContent({ service, scopeSummary }: ServiceDetailContentProps) {
   const t = useTranslations();
   // P3-01: the BM/中文 sub-notes are assembled in one shared, pure builder
   // (lib/direct-answer-trilingual.ts) so each note always interpolates the
@@ -173,6 +178,74 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
             <AlertCircle className="w-4 h-4 text-[#0EA5E9] shrink-0 mt-0.5" />
             <span>{t("serviceContent.pricingNote")}</span>
           </div>
+
+          {/* Audit P4-06 — explicit "what's included / not included" scoping.
+              Data comes from the rate-book (the same published scopes + the
+              quote-only list the cost guide shows), passed server-side so the
+              client bundle stays lean. Removes the uncertainty that makes
+              visitors abandon before requesting a quote. */}
+          {scopeSummary && (scopeSummary.scopes.length > 0 || scopeSummary.quoteOnly.length > 0) && (
+            <div className="mt-8 grid gap-4 lg:grid-cols-2">
+              <div className="rounded-2xl border border-emerald-100 bg-emerald-50/40 p-5">
+                <h3 className="flex items-center gap-2 text-sm font-extrabold text-[#075985]">
+                  <CheckCircle className="w-4 h-4 text-emerald-500" aria-hidden="true" />
+                  {t("serviceContent.includedHeading")}
+                </h3>
+                <p className="mt-1.5 text-xs font-semibold text-[#475569] leading-relaxed">
+                  {t("serviceContent.includedSub")}
+                </p>
+                <ul className="mt-4 flex flex-col gap-2.5">
+                  {scopeSummary.scopes.map((scope) => (
+                    <li
+                      key={scope.name}
+                      className="flex items-start gap-2.5 text-sm font-semibold text-[#334155] leading-snug"
+                    >
+                      <CheckCircle className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" aria-hidden="true" />
+                      <span>
+                        {scope.name}{" "}
+                        <span className="font-extrabold text-[#0284C7] whitespace-nowrap">
+                          ({scope.published})
+                        </span>
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="rounded-2xl border border-amber-100 bg-amber-50/40 p-5">
+                <h3 className="flex items-center gap-2 text-sm font-extrabold text-[#075985]">
+                  <AlertCircle className="w-4 h-4 text-amber-500" aria-hidden="true" />
+                  {t("serviceContent.notIncludedHeading")}
+                </h3>
+                <p className="mt-1.5 text-xs font-semibold text-[#475569] leading-relaxed">
+                  {t("serviceContent.notIncludedSub")}
+                </p>
+                <ul className="mt-4 flex flex-col gap-2.5">
+                  {scopeSummary.quoteOnly.map((quote) => (
+                    <li
+                      key={quote.name}
+                      className="flex items-start gap-2.5 text-sm font-semibold text-[#334155] leading-snug"
+                    >
+                      <AlertCircle className="w-4 h-4 text-amber-500 shrink-0 mt-0.5" aria-hidden="true" />
+                      <span>
+                        <span className="font-extrabold">{quote.name}</span>
+                        <span className="text-[#475569]"> — {quote.desc}</span>
+                      </span>
+                    </li>
+                  ))}
+                  {[1, 2, 3].map((n) => (
+                    <li
+                      key={`generic-${n}`}
+                      className="flex items-start gap-2.5 text-sm font-semibold text-[#334155] leading-snug"
+                    >
+                      <AlertCircle className="w-4 h-4 text-amber-500 shrink-0 mt-0.5" aria-hidden="true" />
+                      <span>{t(`serviceContent.excludedGeneric.${n}`)}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          )}
         </div>
       </section>
 
@@ -321,7 +394,14 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
       </section>
 
       {/* Section 10 — Related Problems (internal linking to symptom/diagnostic pages) */}
-      <RelatedProblems serviceSlug={service.slug} maxItems={4} />
+      {/* Audit P4-17 — aircon is the flagship price-led service (RM 129) but
+          its symptom pages received only 1–2 inbound each. Surface 6 of the 9
+          aircon problems (vs 4 for other services) + the aircon cost tools. */}
+      <RelatedProblems
+        serviceSlug={service.slug}
+        maxItems={service.slug === "aircon" ? 6 : 4}
+        showTools={service.slug === "aircon"}
+      />
 
       {/* Section 10b — Related Blogs (internal linking service ↔ blog) */}
       <RelatedBlogs serviceSlug={service.slug} maxItems={3} />

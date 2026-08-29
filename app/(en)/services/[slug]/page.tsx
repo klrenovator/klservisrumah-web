@@ -8,10 +8,10 @@ import {
   getFAQSchema,
 } from "@/lib/seo";
 import { TrustBar } from "@/components/trust-bar";
-import { StickyBookButton } from "@/components/sticky-book-button";
 import { LocaleServiceView } from "@/components/sections/locale-service-view";
 import { localizedServiceLanguageUrls } from "@/components/sections/locale-service-page";
 import { getServiceSeo } from "@/config/service-seo";
+import { SERVICE_SCOPES } from "@/lib/estimator/rate-book.generated";
 
 export const dynamicParams = false;
 
@@ -78,7 +78,6 @@ async function ServiceSlugPageResolver({
   return (
     <>
       <TrustBar />
-      <StickyBookButton service={service.title} />
       <Breadcrumbs items={[
         { name: "Services", href: "/services" },
         { name: service.title, href: `/services/${service.slug}` }
@@ -93,7 +92,20 @@ async function ServiceSlugPageResolver({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      <LocaleServiceView service={service} />
+      {/* Audit P4-06 — pass the rate-book include/exclude rows as a slim
+          server-computed prop (keeps the 63 KB rate-book registry out of the
+          client bundle; mirrors the cost page's scopeBook pattern). */}
+      <LocaleServiceView
+        service={service}
+        scopeSummary={(() => {
+          const book = SERVICE_SCOPES[slug];
+          if (!book) return undefined;
+          return {
+            scopes: book.scopes.map((s) => ({ name: s.name, published: s.published })),
+            quoteOnly: book.quoteOnly.map((q) => ({ name: q.name, desc: q.desc }))
+          };
+        })()}
+      />
     </>
   );
 }

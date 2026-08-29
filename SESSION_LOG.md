@@ -2767,3 +2767,92 @@ The owner answered the OWNER_ACTION_PLAN round-1 items and asked for all remaini
 - **Post-deploy (owner/SEO):** GSC + Bing — confirm the 2,146 URLs migrate to *"Page with redirect"*; resubmit `/sitemap.xml` (3,666 URLs); IndexNow-ping the surviving `/areas/<area>/<svc>` set; expect a normal 1–2 week dip.
 - **REQUIRES VERIFICATION (owner):** GSC, live edge www/non-www 301 (#3) + trailing-slash 301s (#7), CWV/CrUX, GBP/reviews, photography (P5-12), founding/staff facts.
 - **Could not be done from this session:** `.github/workflows/ci.yml` could not be updated — the push was rejected with *"refusing to allow a GitHub App to create or update workflow … without `workflows` permission"*. The commit was **reverted** so the branch stays pushable, and the intended change is saved as `docs/full-website-deep-audit/BP-1-ci-audit-bp1.patch` (`git apply` it). It adds `npm run audit:bp1` as a post-build CI step and refreshes two stale header counts. **Protection lost is smaller than it looks:** `audit:bp1 -- --source-only` runs inside `prebuild`, which is CI's first step after `npm ci`, so CI already fails on every source-level BP-1 regression; only the built-corpus half is missing. YAML was validated (12 steps, gate ordered after the build) before reverting.
+
+---
+
+## Session 2026-08-29 (later) — Fix Wave 9: the unblocked CRO/UX queue (Part 4 findings)
+
+### Scope
+Closed the **entire unblocked, code-only queue** from `TRACKING.md`:
+P4-05, P4-03, P4-02, P4-07, P4-12, P4-06, P4-16, P4-17 + the code half of P4-11.
+Owner-blocked items (P4-09 reviews, P4-13/BP-1 phase 2 GSC keep-set, P4-11 named
+team bios, P5-12 photography) were deliberately left ⏳.
+
+### What landed
+1. **P4-05 + P4-03 — one global booking float.** `StickyBookButton` now mounts once
+   in `SiteChrome` and derives context from the pathname (`/services/<slug>` →
+   localized service title; `/areas/<slug>` → localized area name). Page-level
+   mounts removed; the desktop WhatsApp dispatch desk (`whatsapp-button.tsx`)
+   deleted → exactly one desktop float per viewport; mobile sticky bar unchanged.
+   `whatsappDesk.*` i18n keys kept (generic-content-page still uses `whatsappDesk.cta`).
+2. **P4-02 — mobile quote box above the fold.** Hero mobile min-height is now
+   content-driven (`min-h-0`) and the new static `QuickQuoteForm` (compact) renders
+   **inside** the hero viewport on mobile/tablet; the after-hero mobile QuoteBox
+   section was removed. Desktop QuoteBox unchanged.
+3. **P4-07 — static SSR inquiry form.** New `app/api/inquiry/route.ts` (GET+POST,
+   field caps, lang allowlist, `force-dynamic`) 302s to `wa.me` with a locale-aware
+   pre-filled message built by new `getWhatsAppInquiryLink()` in `lib/whatsapp.ts`
+   (appends name + job details in native MS/ZH). New `QuickQuoteForm` is a plain
+   JS-free `<form method="get" action="/api/inquiry">` — renders in static HTML with
+   all options; mounted on the homepage hero (mobile) and top of `/contact`
+   (above the detailed booking form).
+4. **P4-12 — coverage map + real hasMap.** New `CoverageMap` static inline SVG
+   (equirectangular projection of the 37 `areaPages` lat/lng, hand-traced Klang
+   Valley silhouette, 37 clickable markers, highlight variant, legend + CTAs)
+   mounted on `/areas` and all 37 area pages. CSP `frame-src 'none'` forbids
+   iframes, so this is the audit's listed alternative — zero third-party requests,
+   zero owner keys. `siteConfig.links.mapUrl` (Google Maps universal URL) is now
+   emitted as schema `hasMap` everywhere; the GBP share URL stays in `sameAs`.
+5. **P4-06 — include/exclude blocks.** All 29 service pages now show "What's
+   included" (rate-book `scopes` + published prices) and "What's not included
+   (quoted separately)" (`quoteOnly` rows + 3 honest generic exclusions). Data is
+   computed server-side (`SERVICE_SCOPES` → slim `scopeSummary` prop →
+   `LocaleServiceView` → pricing section) so the 63 KB rate-book never enters the
+   client bundle (client-bundle guard: 218 modules, 0 registry leaks).
+6. **P4-16 — cost-guide link in the service hero** (`serviceDetail.fullPriceGuide`
+   → `/services/<svc>/cost`, +29 inbounds to the money pages; `/pricing` already
+   linked them after CF-4).
+7. **P4-17 — aircon problem/tool inlinks.** Aircon service shows 6 of its 9 problem
+   pages (maxItems 4→6) plus a new "Aircon cost calculators" row linking
+   `aircon-btu-calculator`, `aircon-installation-cost`, `aircon-gas-topup-cost`,
+   `aircon-electricity-cost` (tools already link back to the service page).
+8. **P4-11 code half — authorship claim re-attributed.** "Every page is written by
+   local tradesmen" → "Every guide is researched from our own job records,
+   published rates and written warranty terms, and refreshed for {year}."
+9. **i18n:** new `quickQuote.*`, `serviceContent.included*/notIncluded*/excludedGeneric.*`,
+   `serviceDetail.fullPriceGuide`, `internalLinks.airconTools*`, `toolsList.*`,
+   `coverageMap.*` — all EN/MS/ZH native, parity gate PASS (1,213 × 3).
+
+### Verification (all run on this branch)
+lint 0/0 · type-check PASS · prebuild **320,291 assertions × 0 failures**
+(client-bundle 218 modules) · build SUCCESS (**3,652 HTML**, middleware 35.6 kB) ·
+`audit:html` **0 fatal / 0 warnings** · `audit:links` **278,649 rendered + 54 source,
+0 broken** · `audit:seo-head` PASS (3,626 indexable / 26 noindex, 0 dupes) ·
+`audit:i18n` **1,213 × 3** · `audit:schema-size` PASS · `audit:bp1` PASS (2,146
+retired stay retired) · `audit:location-similarity` PASS · `seo:audit` + `audit:meta`
+PASS (`docs/seo-audit-report.md` regenerated).
+- **Built-HTML spot-checks:** include/exclude block + 6 aircon problems + 4 aircon
+  tool links on `/services/aircon.html`; `action="/api/inquiry"` on `/` + `/contact`;
+  desktop QuoteBox + quick form both on `/`; 37 map markers on `/areas`; map
+  highlight on `/areas/kuala-lumpur`; exactly 1 sticky float on service pages;
+  `hasMap` = maps.google.com universal URL; 0 references to the deleted
+  whatsapp-button in the corpus.
+- **Live HTTP (`next start` + curl):** `GET`/`POST /api/inquiry` → 302 to `wa.me`
+  with correct EN/MS/ZH prefills (incl. name + details lines); `/`, `/contact`,
+  `/areas`, `/areas/kuala-lumpur`, `/services/aircon`, `/services/aircon/cost`,
+  `/ms`, `/zh`, `/ms/services` all 200; `/zh/areas/*` → 301 to EN canonical
+  (pre-existing).
+
+### Status / next session
+- **Completed ✅:** Parts 0–5 audits + Fix Waves 1–9 + BP-1 phase 1 + CF-4.
+  **No unblocked code-only audit finding remains.**
+- **Next candidates (value order):** P4-15 NAP strip in content blocks (small
+  code-only win) → P2-16 tranche 3 (44 problems; thinness order via
+  `scripts/p2-16-wordcount.ts` unless owner GSC re-ranks) → P3-02 /faq H3s +
+  hidden empty-state → P3-06 blog FAQPage → P3-18 llms.txt aircon+units →
+  P3-12 MS/ZH pod routes → P5-13/14 raster OG images → §5.6 freshness rota →
+  P2-22 outbound citations (owner decision) → P4-10/P4-14/P4-08 (P2/P3).
+- **Still owner-blocked:** P4-09/P2-21/P3-09 (review verification + stats, GBP),
+  P4-13/P2-C4/BP-1 phase 2 (GSC keep-set), P4-11 named team page (owner bios),
+  P5-12 photography, P1-C3 www/non-www, CI `workflows` permission (patch saved at
+  `docs/full-website-deep-audit/BP-1-ci-audit-bp1.patch`).

@@ -616,7 +616,9 @@
     "nearMeDesc": "选择您的位置以查看当地价格、服务时段与联系方式。",
     "guides": "相关指南",
     "guidesEyebrow": "专家指南",
-    "guidesSub": "实用指南助您选择、规划与维护——从油漆颜色到装修费用。"
+    "guidesSub": "实用指南助您选择、规划与维护——从油漆颜色到装修费用。",
+    "airconTools": "空调费用计算器",
+    "airconToolsSub": "联系我们之前，先花几秒钟估算费用——所有计算器均免费。"
   },
   "hero": {
     "subline": "吉隆坡与雪兰莪油漆、天花板、隔墙及家居维修服务",
@@ -656,7 +658,8 @@
     "guideViewComparison": "比较材料",
     "guideDiscussProject": "沟通您的雨棚需求",
     "guideWhatsAppCta": "获取雨棚报价",
-    "guideFactorsNote": "价格说明"
+    "guideFactorsNote": "价格说明",
+    "fullPriceGuide": "完整价格指南"
   },
   "serviceContent": {
     "overviewEyebrow": "概述",
@@ -720,7 +723,16 @@
     "pricingLink": "价格指南",
     "projectQuotedTrust": "按项目报价，范围书面确认",
     "whatsappResponse": "WhatsApp 快速回复",
-    "quoteOnlyAnswer": "{title}适合需要{tagline}的客户。本服务按项目计价：KL Servis Rumah 在开工前以书面确认施工范围、材料与报价条款，并提供{warranty}。欢迎通过 WhatsApp 发送位置、照片和大致尺寸，获取项目专项报价。"
+    "quoteOnlyAnswer": "{title}适合需要{tagline}的客户。本服务按项目计价：KL Servis Rumah 在开工前以书面确认施工范围、材料与报价条款，并提供{warranty}。欢迎通过 WhatsApp 发送位置、照片和大致尺寸，获取项目专项报价。",
+    "includedHeading": "报价包含什么",
+    "includedSub": "以下各项均包含在公布的价格内，绝无隐藏收费。",
+    "notIncludedHeading": "报价不包含什么（需另行报价）",
+    "notIncludedSub": "以下工程因现场条件和材料不同，需要单独报价。",
+    "excludedGeneric": {
+      "1": "超出标准规格的材料（例如进口优质涂料、设计师瓷砖、定制木作）。",
+      "2": "结构性、承重或需要许可证的工程——另行报价并经您批准。",
+      "3": "开墙后发现的其他工程——我们会暂停、报价并等待您的批准。"
+    }
   },
   "subserviceContent": {
     "whatsIncluded": "包括",
@@ -1617,5 +1629,31 @@
   },
   "smartFinder": {
     "closeAria": "关闭搜索"
+  },
+  "quickQuote": {
+    "nameLabel": "您的姓名（选填）",
+    "namePlaceholder": "例如：陈小明",
+    "messageLabel": "描述您需要的工作（选填）",
+    "messagePlaceholder": "例如：粉刷2个房间、20英尺天花板漏水…",
+    "submit": "通过WhatsApp获取报价",
+    "note": "将打开WhatsApp并自动填入您的请求——无需注册账号。"
+  },
+  "toolsList": {
+    "airconBtu": "空调BTU计算器",
+    "airconInstall": "空调安装费用",
+    "airconGas": "空调加冷媒费用",
+    "airconElectricity": "空调电费计算"
+  },
+  "coverageMap": {
+    "eyebrow": "服务覆盖范围",
+    "title": "我们覆盖整个巴生谷",
+    "subtitle": "KL Servis Rumah 服务覆盖吉隆坡与雪兰莪的38个地区——可安排当天上门服务。",
+    "legend": "服务区域",
+    "viewAll": "查看所有地区",
+    "caption": "点击任意标记，查看该地区的服务与价格。",
+    "ariaDefault": "KL Servis Rumah 在巴生谷所有服务区域的覆盖地图",
+    "ariaHighlighted": "覆盖地图，其中突出显示{area}",
+    "highlight": "突出显示的地区",
+    "ask": "不确定？通过WhatsApp咨询"
   }
 }

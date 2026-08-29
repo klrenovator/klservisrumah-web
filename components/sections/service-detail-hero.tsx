@@ -1,10 +1,11 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { siteConfig } from "@/config/site";
 import { getWhatsAppLink } from "@/lib/whatsapp";
-import { CheckCircle2, MessageSquare, Phone, Award, Star } from "lucide-react";
+import { CheckCircle2, MessageSquare, Phone, Award, Star, FileText } from "lucide-react";
 import { TrustBadgesRow } from "@/components/content/trust-badges-row";
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
@@ -127,6 +128,15 @@ export function ServiceDetailHero({ service }: ServiceDetailHeroProps) {
                 <Phone className="w-4 h-4 text-[#0EA5E9]" />
                 <span>{siteConfig.phoneDisplay}</span>
               </a>
+              {/* Audit P4-16 — link the rate-book/cost guide from the hero so
+                  the highest-intent "how much" page inherits hub equity. */}
+              <Link
+                href={`/services/${service.slug}/cost`}
+                className="inline-flex items-center justify-center gap-2 rounded-xl border border-sky-200 bg-white px-5 py-3 text-sm font-extrabold text-[#075985] transition hover:border-[#0EA5E9] hover:bg-sky-50"
+              >
+                <FileText className="w-4 h-4 text-[#0EA5E9]" />
+                <span>{t("serviceDetail.fullPriceGuide")}</span>
+              </Link>
             </div>
 
             {/* Google rating strip */}

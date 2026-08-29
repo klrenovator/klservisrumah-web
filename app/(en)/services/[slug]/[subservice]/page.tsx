@@ -9,7 +9,6 @@ import { getFAQSchema, getServiceSchema } from "@/lib/seo";
 import { slugify } from "@/lib/utils";
 import { LocaleServiceView } from "@/components/sections/locale-service-view";
 import { TrustBar } from "@/components/trust-bar";
-import { StickyBookButton } from "@/components/sticky-book-button";
 import { localeSpecialtyPaths } from "@/components/sections/locale-specialty-page";
 import { hasSpecialtyLocaleContent } from "@/config/specialty-locale-content";
 
@@ -99,7 +98,6 @@ export default async function SubServicePage(props: { params: Promise<{ slug: st
   return (
     <>
       <TrustBar />
-      <StickyBookButton service={sub.name} />
       <Breadcrumbs items={[
         { label: "Services", href: "/services" },
         { label: service.title, href: `/services/${service.slug}` },

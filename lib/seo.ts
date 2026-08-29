@@ -115,7 +115,7 @@ export function getOrganizationSchema() {
     paymentAccepted: "Cash, Bank Transfer, DuitNow",
     address: postalAddress(),
     geo: geoCoordinates(),
-    hasMap: siteConfig.links.googleMaps,
+    hasMap: siteConfig.links.mapUrl,
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
