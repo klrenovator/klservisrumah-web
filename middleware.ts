@@ -4,6 +4,7 @@ import { DEDICATED_TOOL_BY_SERVICE } from "@/lib/estimator/service-estimator";
 import { PROBLEM_CANONICAL_REDIRECTS } from "@/config/problem-canonical";
 import { bp1RedirectTarget } from "@/lib/bp1-consolidation";
 import { RETIRED_EMERGENCY_SERVICE_SLUGS } from "@/config/emergency-services";
+import { POD_LOCALE_TREES } from "@/config/pod-family-paths";
 
 const SUPPORTED_LOCALES = ["ms", "zh"] as const;
 
@@ -49,6 +50,11 @@ const REAL_LOCALE_TREES = [
   "/ms/terma",
   "/zh/yin-si-sheng-ming",
   "/zh/tiao-kuan",
+  // Audit P3-12 — the real localized content-pod trees (answers, brands,
+  // commercial, compare, guides + guides/maintenance, process, residential,
+  // seasonal, top). Derived from `config/pod-family-paths.ts` so this list
+  // always matches the routes that exist.
+  ...POD_LOCALE_TREES,
 ] as const;
 
 const PROBLEM_REDIRECTS: Record<string, string> = Object.fromEntries(

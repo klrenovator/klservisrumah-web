@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { buildMetadata } from "@/lib/seo-meta";
+import { podDetailUrls } from "@/config/content-locale";
 import { seasonalPages } from "@/config/content-data";
 import { GenericContentPageView } from "@/components/content/generic-content-page";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
@@ -13,6 +14,7 @@ export function generateStaticParams() { return seasonalPages.map((page) => ({ s
 export async function generateMetadata(props: { params: Promise<{ slug: string }> }) { const { slug } = await props.params; const page = seasonalPages.find((item) => item.slug === slug); if (!page) return {}; return buildMetadata({
     title: page.title,
     description: page.intro,
-    path: `/seasonal/${page.slug}`
+    path: `/seasonal/${page.slug}`,
+    languageUrls: podDetailUrls("seasonal", page.slug)
   }); }
 export default async function SeasonalPage(props: { params: Promise<{ slug: string }> }) { const { slug } = await props.params; const page = seasonalPages.find((item) => item.slug === slug); if (!page) notFound(); return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getArticleSchema({ title: page.title, slug: page.slug, excerpt: page.intro, path: `/seasonal/${page.slug}`, category: page.category })) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(page.faqs)) }} /><Breadcrumbs items={[{ label: "Seasonal", href: "/seasonal" }, { label: page.title, href: `/seasonal/${page.slug}` }]} /><GenericContentPageView page={page} /></>; }

@@ -2,13 +2,14 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { ContentHubPage } from "@/components/content/content-hub-page";
 import { answerPages } from "@/config/content-data";
 import { genericToHubItems, getHubMetadata, getItemListSchema } from "@/lib/hub";
+import { podHubUrls } from "@/config/content-locale";
 
 const title = "Home Service Answers for KL & Selangor";
 const description = "Straight answers to the most common home service questions in Kuala Lumpur and Selangor — cost, timing, warranty and what to expect on site.";
 const path = "/answers";
 const items = genericToHubItems(answerPages, path);
 
-export const metadata = getHubMetadata({ title, description, path });
+export const metadata = getHubMetadata({ title, description, path, languageUrls: podHubUrls("answers") });
 
 export default function AnswersHubPage() {
   return (

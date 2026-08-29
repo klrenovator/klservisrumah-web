@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { buildMetadata } from "@/lib/seo-meta";
+import { podDetailUrls } from "@/config/content-locale";
 import { maintenancePages } from "@/config/content-data";
 import { GenericContentPageView } from "@/components/content/generic-content-page";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
@@ -18,7 +19,8 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   return buildMetadata({
     title: page.title,
     description: page.intro,
-    path: `/guides/maintenance/${page.slug}`
+    path: `/guides/maintenance/${page.slug}`,
+    languageUrls: podDetailUrls("guidesMaintenance", page.slug)
   });
 }
 export default async function MaintenanceGuidePage(props: { params: Promise<{ slug: string }> }) {

@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { buildMetadata } from "@/lib/seo-meta";
+import { podDetailUrls } from "@/config/content-locale";
 import { commercialPages } from "@/config/content-data";
 import { GenericContentPageView } from "@/components/content/generic-content-page";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
@@ -13,6 +14,7 @@ export function generateStaticParams() { return commercialPages.map((page) => ({
 export async function generateMetadata(props: { params: Promise<{ slug: string }> }) { const { slug } = await props.params; const page = commercialPages.find((item) => item.slug === slug); if (!page) return {}; return buildMetadata({
     title: page.title,
     description: page.intro,
-    path: `/commercial/${page.slug}`
+    path: `/commercial/${page.slug}`,
+    languageUrls: podDetailUrls("commercial", page.slug)
   }); }
 export default async function CommercialPage(props: { params: Promise<{ slug: string }> }) { const { slug } = await props.params; const page = commercialPages.find((item) => item.slug === slug); if (!page) notFound(); return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getArticleSchema({ title: page.title, slug: page.slug, excerpt: page.intro, path: `/commercial/${page.slug}`, category: page.category })) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(page.faqs)) }} /><Breadcrumbs items={[{ label: "Commercial", href: "/commercial" }, { label: page.title, href: `/commercial/${page.slug}` }]} /><GenericContentPageView page={page} /></>; }

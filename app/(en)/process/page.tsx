@@ -2,13 +2,14 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { ContentHubPage } from "@/components/content/content-hub-page";
 import { processPages } from "@/config/content-data";
 import { genericToHubItems, getHubMetadata, getItemListSchema } from "@/lib/hub";
+import { podHubUrls } from "@/config/content-locale";
 
 const title = "Home Service Process Guides KL";
 const description = "Step-by-step process pages explaining preparation, workmanship checks, cleanup and warranty handover for every service.";
 const path = "/process";
 const items = genericToHubItems(processPages, path);
 
-export const metadata = getHubMetadata({ title, description, path });
+export const metadata = getHubMetadata({ title, description, path, languageUrls: podHubUrls("process") });
 
 export default function ProcessHubPage() {
   return (

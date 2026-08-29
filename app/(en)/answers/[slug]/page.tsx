@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { buildMetadata } from "@/lib/seo-meta";
+import { podDetailUrls } from "@/config/content-locale";
 import { answerPages } from "@/config/content-data";
 import { GenericContentPageView } from "@/components/content/generic-content-page";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
@@ -13,6 +14,7 @@ export function generateStaticParams() { return answerPages.map((page) => ({ slu
 export async function generateMetadata(props: { params: Promise<{ slug: string }> }) { const { slug } = await props.params; const page = answerPages.find((item) => item.slug === slug); if (!page) return {}; return buildMetadata({
     title: page.title,
     description: page.intro,
-    path: `/answers/${page.slug}`
+    path: `/answers/${page.slug}`,
+    languageUrls: podDetailUrls("answers", page.slug)
   }); }
 export default async function AnswerPage(props: { params: Promise<{ slug: string }> }) { const { slug } = await props.params; const page = answerPages.find((item) => item.slug === slug); if (!page) notFound(); return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getArticleSchema({ title: page.title, slug: page.slug, excerpt: page.intro, path: `/answers/${page.slug}`, category: page.category })) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(page.faqs)) }} /><Breadcrumbs items={[{ label: "Answers", href: "/answers" }, { label: page.title, href: `/answers/${page.slug}` }]} /><GenericContentPageView page={page} /></>; }
