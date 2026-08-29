@@ -47,7 +47,7 @@
 | P0 | Fix Part 2 P2-C2 — `content.relatedReading` literal key renders as H2 on 224 pages | ✅ DONE (Fix Wave 1) |
 | P0 | Fix Part 2 P2-C3 — 174 generic "content pod" pages (commercial/residential/process/answers/brands/top/seasonal/guides) | ✅ DONE (Wave 4 batch 1: 58 commercial+residential pods; Wave 5 batch 2: 88 brands+compare+guides+maintenance+seasonal+top pods — all 146/174 hand-authored; process+answers carry real service data) |
 | P0 | Fix Part 2 P2-C4 — Replace pair-copy generator; authored local copy for area×service | ⏳ PENDING |
-| P1 | Fix Part 2 P2-16/17/18 — Expand problems/cost; rewrite or retire emergency pages | ✅ DONE (Fix Wave 6 — P2-18 was CF-4; P2-17/03: 12 emergency pages rewritten per-service + 17 retired 301; P2-16: 15 thinnest problems enriched EN/MS/ZH) |
+| P1 | Fix Part 2 P2-16/17/18 — Expand problems/cost; rewrite or retire emergency pages | ✅ DONE (Fix Wave 6 + Wave 7 — P2-18 was CF-4; P2-17/03: 12 emergency pages rewritten per-service + 17 retired 301; P2-16: 15 thinnest enriched in Wave 6 + next 15 thinnest enriched in Wave 7 — 30/74 problems now carry full overview/DIY/prevention/cost depth EN/MS/ZH) |
 | P1 | Fix Part 2 P2-19 — Real per-article blog dates (216 posts / 5 dates) | ⏳ PENDING |
 | P1 | Fix Part 2 P2-21 — Reviews: verify + Review schema or drop AggregateRating | ⏳ PENDING (owner) |
 | P1 | Fix Part 2 P2-22 — Add outbound citations (brands/authority/manufacturer) | ⏳ PENDING |
@@ -71,6 +71,7 @@
 | 2026-08-28 | **Fix Wave 3** — P5-04 (@id-reference org architecture: full node homepage-only, GeoCircle areaServed, catalog dedup on 1,508 local + 773 variant pages, /pricing −95%, tools hubs −19 KB each; corpus JSON-LD 62.2→14.5 MB, City nodes 220,616→95) + P5-06 (HowTo retired) + P5-07 (Speakable orphans) + P5-10 (+256 breadcrumbed pages) + new `audit:schema-size` gate (≤8 KB non-FAQ ceiling enforced) | ✅ See `FIX-WAVE-3-REPORT.md` |
 | 2026-08-29 | **CF-4** — cost pages → canonical rate-book "harga" guides (29 pages: 222 rate-book rows, market baselines, worked example, methodology, measurement guide, localized job process + FAQs; words 543→1,373 mean, all ≥1,000) + `/estimate` hub & 22 generics NOINDEX (sitemap −23, IndexNow −23, seo-head gate extended) + aircon rateCopy 7×3 + `&#x27;` cleanText fix (part5 FAQ false positives 5→0) | ✅ See `PART-5-AUDIT-REPORT.md` §5.5 implementation log |
 | 2026-08-29 | **Fix Wave 6** — P2-17/P2-03: emergency pages rewritten per-service for the 12 real-emergency services (`config/emergency-services.ts`, EN/MS/ZH) and the 17 fake-emergency pages retired via middleware 301 + `generateStaticParams` + sitemap + cost-card gate (sitemap 3,643→3,626). P2-16: 15 thinnest problem pages enriched with `overview`/`diyChecks`/`prevention`/`costDetail` (EN/MS/ZH, native) + `audit:problem-i18n` extended to enforce native depth parity. All gates PASS (3,652 HTML; 320,291 assertions × 0 failures) | ✅ See `FIX-WAVE-6-REPORT.md` |
+| 2026-08-29 | **Fix Wave 7** — P2-16 tranche 2: next 15 thinnest problems enriched (`rusting-window-grille`, `loose-door-hinge`, `stuck-window-lock`, `ikea-furniture-assembly-help`, `downlight-flickering`, `sagging-plaster-ceiling`, `blocked-drain-toilet`, `ceiling-leak-after-rain`, `roof-leak-rainy-season`, `swimming-pool-leak-balcony`, `wardrobe-door-jamming`, `cracked-ceiling-joints`, `locked-out-of-house`, `uneven-wall-surface-skim`, `cctv-not-recording-storage-full`) — 45 hand-authored depth blocks EN/MS/ZH; new `scripts/p2-16-wordcount.ts` ranking helper. **30/74 problems enriched** (audit's top-30-by-demand target closed via thinness ranking). All gates PASS: lint/type-check/prebuild (320,291 assertions × 0 failures)/build (3,660 static)/audit:html/audit:links (277,170+53, 0 broken)/audit:seo-head | ✅ See `FIX-WAVE-7-REPORT.md` |
 
 ---
 
@@ -99,19 +100,25 @@
 
 ## ⭐ NEXT SESSION MUST CONTINUE HERE
 
-**All 5 audit parts are complete; Fix Wave 1–6, BP-1 phase 1 and CF-4 are
-complete.** Fix Wave 6 (this session) closed the last unblocked Part 2 queue:
-**P2-17/P2-03** (12 real-emergency pages rewritten per-service; 17 fake
-emergencies retired 301) and **P2-16 first tranche** (15 thinnest problem
-pages enriched EN/MS/ZH). See `FIX-WAVE-6-REPORT.md`.
+**All 5 audit parts are complete; Fix Wave 1–7, BP-1 phase 1 and CF-4 are
+complete.** Wave 7 (this session) closed the audit's **top-30 problem depth
+target**: P2-16 is fully done — 30/74 problems (15 thinnest in Wave 6 + next
+15 thinnest in Wave 7) now carry `overview`/`diyChecks`/`prevention`/
+`costDetail` in EN/MS/ZH, ranked by measured thinness via the new
+`scripts/p2-16-wordcount.ts` (no GSC demand data available — fallback per the
+tracker). See `FIX-WAVE-7-REPORT.md`.
 
-1. **P2-16 remainder (unblocked, next candidate):** extend the enrichment to
-   the rest of the **top-30 problems by demand** — the audit's stated 700+ word
-   target. The 15 thinnest are done; ranking the next 15 needs the owner's GSC
-   query data (same blocker as BP-1 phase 2). Without GSC, fall back to
-   urgency-weighted service prominence and say so in the report.
-2. **P2-19 (unblocked, independent):** real per-article blog dates +
-   per-article sitemap `lastMod` — 216 posts currently share 5 dates.
+1. **P2-19 (unblocked, next candidate):** real per-article blog dates +
+   per-article sitemap `lastMod` — 216 posts currently share 5 dates; sitemap
+   emits one constant `lastMod`. Start by locating the blog data files and
+   the sitemap's date source, then spread believable per-article dates
+   (publication batches exist: 2026-08-12/13/14/15, 2026-07-25, 2026-08-27,
+   legacy Jul 12/20).
+2. **P2-16 tranche 3 (optional, needs demand data):** the remaining 44
+   problems — next thinnest: `vinyl-flooring-lifting-edges` (166),
+   `wall-dampness-rising` (167), `autogate-remote-not-working` (167),
+   `ceiling-mold-stains` (168), `rccb-tripping-kl` (168). Owner GSC data
+   would re-rank this list.
 3. **P2-22 (owner decision):** add outbound citations to brands/authorities.
 4. **BP-1 phase 2 / P2-C4 still blocked on owner GSC keep-set** — do **not**
    add more location pages; do **not** delete local pages on low traffic alone.

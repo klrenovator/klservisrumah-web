@@ -147,7 +147,21 @@ export const problemPages: ProblemDetail[] = [
       { q: "How long does drain clearing take?", a: "Simple clogs may take under an hour; deeper blockages need more tools and time." },
       { q: "Why does my toilet keep clogging?", a: "Recurring toilet choke can be caused by trapped objects, weak flush, or deeper drain-line restrictions." },
       { q: "Is there a warranty after clearing?", a: "Workmanship warranty applies to the clearing work, but new foreign objects or grease buildup are separate causes." }
-    ]
+    ],
+    overview: "A blocked drain or toilet choke is one of the most common plumbing calls in KL and Selangor homes, and it usually builds up slowly — hair, soap scum, and grease narrow the pipe until one day the water stops draining. What makes it urgent is when the blockage is in the main drain or the toilet: waste water has nowhere to go and can back up into the lowest floor of the house.",
+    diyChecks: [
+      "Stop using the affected sink, shower, or toilet immediately — each flush pushes the blockage deeper",
+      "Check whether other drains are slow too — that points to the main line, not one fixture",
+      "Use a plunger with a full seal around the drain mouth; do not mix it with chemicals",
+      "Watch for water rising in floor traps or a smell of sewage, which signals a main drain issue"
+    ],
+    prevention: [
+      "Use a drain strainer in showers and basins to catch hair",
+      "Never pour cooking oil or grease down the sink — it solidifies inside the pipe",
+      "Flush only toilet paper; wet wipes and sanitary items are the most common toilet choke causes",
+      "Pour hot water down drains weekly to keep soap film from building up"
+    ],
+    costDetail: "Simple fixture clearing with a manual or spring tool starts around RM150. Toilet removal, floor-trap cleaning, or a main-drain obstruction can reach RM500 and above. We confirm the blockage depth and method before starting, and workmanship is covered by the standard warranty."
   },
   {
     slug: "water-heater-not-working",
@@ -181,7 +195,21 @@ export const problemPages: ProblemDetail[] = [
       { q: "Can sagging plaster ceiling be repaired only?", a: "Small dry sagging areas may be reinforced, but wet or soft boards should be replaced." },
       { q: "What frame material is best?", a: "Galvanized iron metal framing is commonly used for stable and rust-resistant ceiling support." },
       { q: "Do you repaint after ceiling repair?", a: "Yes, skim coating, primer, and paint can be included in the final quote." }
-    ]
+    ],
+    overview: "A sagging plaster ceiling is the one ceiling problem you should not wait on. Boards bow when they have been soaked by a leak, when hangers and timber framing fail, or when they are overloaded — and once the board has sagged, the fixings are already losing grip, so the ceiling can drop suddenly. The visible dip is usually worse than it looks because the air gap hides how far the board has moved.",
+    diyChecks: [
+      "Do not stand directly under the sagging area and keep furniture clear",
+      "Gently press the lowest point with a flat hand — soft or spongy board means water damage",
+      "Look for water stains or dark rings on the sagging board, which point to an active leak",
+      "Check the ceiling above the sag for fans or heavy lights that may have been added later"
+    ],
+    prevention: [
+      "Fix roof or bathroom leaks immediately — moisture is the main killer of plasterboard",
+      "Never hang heavy fixtures from plasterboard without proper framing support",
+      "After any renovation, check ceilings at the start of the monsoon for early sagging signs",
+      "Use moisture-resistant board in bathrooms, kitchens, and near air-conditioners"
+    ],
+    costDetail: "Reinforcing a small dry sag and re-skimming starts around RM180. Replacing water-damaged boards with metal framing runs RM600–RM1,500+ depending on area and whether electrical or paint work is included. We inspect the framing before quoting — a sagging ceiling is quoted by structure, not by board count."
   },
   {
     slug: "ceiling-leak-after-rain",
@@ -198,7 +226,21 @@ export const problemPages: ProblemDetail[] = [
       { q: "Can PU injection fix rain leaks?", a: "PU injection can seal concrete cracks, but roof or wall leaks may need external waterproofing or flashing repairs." },
       { q: "Should ceiling be repaired first?", a: "No. Stop the water source first, then replace or repaint the affected ceiling area." },
       { q: "Is this urgent?", a: "Yes if water is active, close to electrical points, or spreading quickly." }
-    ]
+    ],
+    overview: "A ceiling that leaks only after rain points to the building envelope, not the plumbing: a cracked or slipped roof tile, failed flashing around a parapet or chimney, a balcony that lets water through, or an external wall crack that funnels rain straight down inside the wall. The leak on the ceiling is usually far from the entry point, because water travels along the underside of the slab before it drips.",
+    diyChecks: [
+      "Put a bucket under the drip and note where the water enters — the source is usually elsewhere",
+      "During rain, watch the ceiling for the drip path: stains often trace the slab joint or beam line",
+      "After the rain stops, check the nearest balcony, parapet, and roof valley for ponding or cracks",
+      "Keep water away from electrical fittings — if the leak is near a light, switch off that circuit"
+    ],
+    prevention: [
+      "Clear gutters and check roof tiles before the monsoon each year",
+      "Reseal parapet and balcony junctions on a schedule, not when stains appear",
+      "Fix external wall cracks in the same season they appear",
+      "After repairs, confirm with a water test rather than waiting for the next rain"
+    ],
+    costDetail: "Tracing and sealing a single external entry point starts around RM250. Balcony or flat-roof membrane failure runs higher — RM1,500–RM3,500+ depending on area and whether tiles are lifted. We always locate and stop the source before quoting ceiling repairs, so the stain does not return."
   },
   {
     slug: "cracked-ceiling-joints",
@@ -215,7 +257,21 @@ export const problemPages: ProblemDetail[] = [
       { q: "Do ceiling cracks mean structural damage?", a: "Most plasterboard joint cracks are finishing issues, but wide or moving cracks should be inspected." },
       { q: "Will the repaired joint be visible?", a: "A proper skim, sand, primer, and paint system should make the joint blend with the ceiling." },
       { q: "How long does joint repair take?", a: "Small repairs can be done in one day, but drying and repainting may extend the schedule." }
-    ]
+    ],
+    overview: "Straight-line cracks along plasterboard joints are the most common ceiling defect in Malaysian homes, and they are usually a finishing issue, not a structural one. The joint tape or compound was applied too thinly, the frame moved slightly as the house settled, or moisture softened the compound — and each repaint that skips the joint fails again within a season.",
+    diyChecks: [
+      "Run a finger along the crack — if the tape edge lifts, the joint was not embedded properly",
+      "Check whether the crack follows a straight line (joint crack) or steps across the board (frame movement)",
+      "Press gently on both sides of the crack — movement means the boards are not fixed properly",
+      "Look for damp or stains near the crack, which point to a water source softening the joint"
+    ],
+    prevention: [
+      "Use fiberglass mesh tape and quality joint compound for any new ceiling work",
+      "Keep indoor humidity moderate — air-conditioned rooms should not be left humid for long periods",
+      "Check for roof or bathroom leaks when a joint cracks near a wet area",
+      "When repainting, treat cracks properly first — paint alone never fixes a joint crack"
+    ],
+    costDetail: "Re-taping a single cracked joint with skim, primer, and paint starts around RM180. Multiple joints or a whole-ceiling re-skim runs RM500–RM900+; if board movement is found, frame reinforcement is quoted separately. We check whether the crack is still moving before quoting so the repair lasts."
   },
   {
     slug: "condensation-ceiling-mold",
@@ -280,7 +336,21 @@ export const problemPages: ProblemDetail[] = [
       { q: "How do I know if it is roof or pipe leak?", a: "Rain-only leaks usually point to roof, gutter, balcony, or exterior wall sources rather than plumbing." },
       { q: "Do flat roofs need different waterproofing?", a: "Yes, flat roofs typically need membrane systems that handle ponding and UV exposure." },
       { q: "Can you repair the ceiling after roof leak?", a: "Yes, after the roof leak is controlled we can replace stained or damaged ceiling boards and repaint." }
-    ]
+    ],
+    overview: "Roof leaks appear most during the monsoon simply because that is when roofs are tested — and in Malaysia, most leaks start at the edges: cracked or slipped tiles, blocked gutters that overflow back under the fascia, or failed flashing where the roof meets a wall, parapet, or aircon pipe. Water can travel a long way along rafters and insulation before it appears as a ceiling stain, so the drip point rarely marks the true entry.",
+    diyChecks: [
+      "From inside the attic, look for daylight through the roof — that is the shortest way to find a hole",
+      "After rain, check gutters and downpipes for overflow — blocked gutters cause many 'roof' leaks",
+      "Check flashing around chimneys, parapets, and pipe penetrations for lifted or corroded edges",
+      "Mark the stain position and date; a growing stain means active water, a static one may be old damage"
+    ],
+    prevention: [
+      "Clear gutters and trim overhanging branches before the monsoon",
+      "Replace cracked tiles as soon as you spot them, not when the ceiling stains",
+      "Re-seal roof penetrations (aircon pipes, antennas, skylights) every few years",
+      "Schedule a roof inspection annually, ideally before November"
+    ],
+    costDetail: "A single cracked tile or flashing repair with access is the low end (from RM250). Re-bedding ridges, replacing a section of tiles, or re-coating a flat roof area climbs to RM1,500–RM5,000+ depending on roof type and access difficulty. We quote after a safe roof inspection and explain the repair before any work."
   },
   {
     slug: "wall-dampness-rising",
@@ -314,7 +384,21 @@ export const problemPages: ProblemDetail[] = [
       { q: "Why is ponding a problem?", a: "Standing water increases pressure on weak grout, cracks, and membrane defects, making leaks return." },
       { q: "Do you do ponding tests?", a: "For suitable waterproofing scopes, water ponding tests confirm whether the repaired area resists seepage." },
       { q: "How is pricing calculated?", a: "Pricing depends on area size, access, surface condition, crack treatment, and whether hacking is needed." }
-    ]
+    ],
+    overview: "A leaking balcony or pool deck is a waterproofing failure, not a tile problem — the tiles themselves hold no water, the membrane beneath them does. Over years of sun and rain, the membrane ages, cracks at the wall-floor junction, or the grout lets water through to the slab, and the leak shows up on the ceiling or wall below, sometimes metres away from the actual source.",
+    diyChecks: [
+      "Dry the balcony floor, then pour a small amount of water and watch where it runs — ponding areas are suspects",
+      "Check the ceiling below for a drip pattern and mark its position before and after rain or washing",
+      "Tap tiles with a coin or key — a hollow sound means the tile has debonded from the membrane",
+      "Check grout lines and the wall-floor junction for cracks, especially near drains"
+    ],
+    prevention: [
+      "Re-seal grout and silicone junctions every few years before stains appear",
+      "Keep drains clear so water does not pond against the membrane",
+      "Avoid cutting or drilling into balcony floors for washing lines or storage without resealing",
+      "After any waterproofing work, insist on a ponding test before tiles are relaid"
+    ],
+    costDetail: "A no-hack coating or crack-injection repair for a small balcony starts around RM850. Full membrane replacement with tile removal is where the RM12,000+ figure comes from for large decks and pool surrounds. We moisture-map the slab first so the repair targets the true path, not just the stain."
   },
   {
     slug: "loose-door-hinge",
@@ -331,7 +415,21 @@ export const problemPages: ProblemDetail[] = [
       { q: "Do you supply hinges?", a: "Standard hinges can be supplied, or we can install customer-supplied hardware." },
       { q: "Can you fix bedroom and main doors?", a: "Yes, we repair common timber doors, hinges, handles, locksets, and latch alignment." },
       { q: "How long does door repair take?", a: "Most minor hinge or latch repairs take under one hour." }
-    ]
+    ],
+    overview: "A door that drops, scrapes, or refuses to latch is usually a hinge problem, not a door problem. The screws holding the hinge to the timber frame work loose over years of use, the hinge pins wear, or the frame timber swells and shrinks with humidity until it can no longer grip the screws.",
+    diyChecks: [
+      "Open the door fully and check whether the top or bottom hinge screws are loose or stripped",
+      "Lift the door slightly by the handle — vertical movement means worn hinge pins or loose screws",
+      "Look at the gap between door and frame: uneven gaps top-to-bottom mean the door has dropped",
+      "Check whether the latch tongue still lines up with the strike plate when the door closes"
+    ],
+    prevention: [
+      "Tighten hinge screws as soon as you notice a creak or drop, before the holes strip",
+      "Use longer screws that reach into the frame stud, not just the trim",
+      "Keep door edges sealed and painted so humidity does not swell the timber",
+      "Fix a sticking latch early — forcing the door strains the hinges"
+    ],
+    costDetail: "Re-tightening with stronger screws or adding dowels to a stripped frame is the cheap end (from RM90). A full hinge-set replacement with alignment runs higher; heavy doors or doors with digital locks need stronger hinges, pushing toward RM350 and above. We confirm the approach before any work starts."
   },
   {
     slug: "tv-fell-off-wall",
@@ -365,7 +463,21 @@ export const problemPages: ProblemDetail[] = [
       { q: "Do you repair sliding windows?", a: "We can adjust tracks, handles, latches, and minor alignment issues for common residential windows." },
       { q: "Is this an emergency?", a: "It is urgent if the window cannot be secured, especially on lower floors or accessible balconies." },
       { q: "Should I send photos first?", a: "Yes, photos of the handle, lock, and full window help us prepare the right tools and parts." }
-    ]
+    ],
+    overview: "A window lock or handle that jams is more than an annoyance — on lower floors and accessible balconies it is a security gap, and a sliding window that will not close properly lets rain and dust in during storms. The mechanism usually fails because the track or lock has collected grit, the lock catch has drifted out of alignment as the frame moved, or the handle mechanism has worn out.",
+    diyChecks: [
+      "Try the lock with the window fully closed — if it engages only with force, the catch is misaligned",
+      "Vacuum the sliding track and check for grit blocking the lock tongue",
+      "Wipe the mechanism dry and test again; never force the handle when it resists",
+      "Check the glass panel for wobble — an unstable sash should not be forced"
+    ],
+    prevention: [
+      "Clean window tracks and lock mechanisms every few months, especially before the monsoon",
+      "Use a dry silicone lubricant on tracks and locks, never oil or grease",
+      "Fix frame or track damage early before it distorts the lock alignment",
+      "Test every window lock at the start of the rainy season"
+    ],
+    costDetail: "Cleaning, lubrication, and realignment is the low end (from RM80). Replacing a handle or lock catch with a matching part typically lands RM150–RM300 depending on the window type; bent tracks or casement hardware cost more. We check parts availability before quoting."
   },
   {
     slug: "ikea-furniture-assembly-help",
@@ -382,7 +494,21 @@ export const problemPages: ProblemDetail[] = [
       { q: "Do you anchor wardrobes to walls?", a: "Yes, we recommend anchoring tall or heavy furniture where safety requires it." },
       { q: "Can you fix wrongly assembled furniture?", a: "Often yes, but damaged panels or missing hardware may require replacement parts." },
       { q: "How is assembly priced?", a: "Pricing depends on furniture size, number of items, complexity, and whether wall drilling is required." }
-    ]
+    ],
+    overview: "Flat-pack furniture is a common frustration in Malaysian homes — a wardrobe that looks easy in the diagram can take hours, needs two people, and can end up wobbly or unsafe if panels are forced. Most problems are not missing skill but missed steps: panels assembled in the wrong order, cam locks not seated, or heavy wardrobes never anchored to the wall.",
+    diyChecks: [
+      "Lay out all panels and hardware against the instruction sheet before starting",
+      "Check that cam locks turn to the locked position — a loose cam is the most common wobbly-furniture cause",
+      "Test the frame for square: a wardrobe that rocks has a panel not seated fully",
+      "Check the wall anchor kit — tall units over about 60 cm should be fixed to the wall"
+    ],
+    prevention: [
+      "Keep the instruction sheet and spare hardware in the original box for future moves",
+      "Re-tighten cam locks and screws after the first two weeks, when wood settles",
+      "Anchor tall furniture to the wall even if the manufacturer marks it optional",
+      "Wipe spills quickly — moisture swells particle-board edges and ruins the joints"
+    ],
+    costDetail: "Assembly is priced by size and complexity: a small shelf or desk from around RM100, a 3-door wardrobe typically RM200–RM400, and large or multiple units with wall anchoring RM400–RM600+. Disassembly, moving, or fixing a wrongly assembled unit adds time. We quote from photos and the item list."
   },
 
   // ==================== NEW PROBLEMS (Round 13) ====================
@@ -924,7 +1050,21 @@ export const problemPages: ProblemDetail[] = [
     faqs: [
       { q: "Can you repaint existing grilles?", a: "Yes — we sandblast, treat rust, and apply proper primer + topcoat system." },
       { q: "Is powder coating better than paint?", a: "Yes — powder coating is more durable and recommended for coastal or high-humidity areas." }
-    ]
+    ],
+    overview: "Rust on a window grille or gate almost never starts on the surface — moisture gets into the metal through scratches, cut edges, and welded joints, then spreads under the paint. In Malaysian humidity and coastal air this can happen within months even on a newly painted grille, because the metal was never properly primed or the paint was applied straight over old rust.",
+    diyChecks: [
+      "Knock gently along the bars with a screwdriver handle — a dull, flaky sound means rust has spread under the paint",
+      "Look for rust starting at cut ends, welds, and drill holes, where the coating is thinnest",
+      "Scrape one spot to bare metal with sandpaper to see whether the rust is surface-level or pitting deep",
+      "Know that repainting without removing rust will fail again within months"
+    ],
+    prevention: [
+      "Choose powder coating or hot-dip galvanising for new grilles and gates, especially within 10 km of the coast",
+      "Touch up scratches and cut edges with anti-rust primer as soon as they appear",
+      "Keep plants and stored items away from grilles so air can dry the metal after rain",
+      "Wash off salt and grime with plain water a few times a year"
+    ],
+    costDetail: "Spot sanding, rust converter, and repainting a single window grille starts around RM150. Full sandblasting, re-priming, and repainting all of a house's grilles moves toward RM680 and above; powder coating or replacing badly pitted sections costs more. We quote after checking how deep the rust has gone."
   }
 ];
 
