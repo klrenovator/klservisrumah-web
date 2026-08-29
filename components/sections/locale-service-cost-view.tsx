@@ -93,7 +93,7 @@ export function LocaleServiceCostView({
   // priced and quote-only splits zip index-for-index.
   const pricedSubs = service.subServices.filter((sub) => hasAmount(sub.price));
   const quoteOnlySubs = service.subServices.filter((sub) => !hasAmount(sub.price));
-  const marketRows = buildRows({ slug, rates, service, t });
+  const marketRows = buildRows({ slug, rates, t });
   const waLink = getWhatsAppLink({ service: `${service.title} cost quote`, lang: locale });
 
   const example = buildExample({ scopeBook, pricedSubs, t });
@@ -510,12 +510,10 @@ function cleanAmount(published: string): string {
 function buildRows({
   slug,
   rates,
-  service,
   t
 }: {
   slug: string;
   rates: MarketRateItem[];
-  service: ServiceBundleEntry;
   t: (key: string, vars?: Record<string, string | number>) => string;
 }): CostTableRow[] {
   return rates.map((rate, index) => {
