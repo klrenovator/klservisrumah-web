@@ -2666,9 +2666,9 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
   "awning-installation": {
     "slug": "awning-installation",
     "title": "Awning Installation Services",
-    "startPrice": "On Quote",
+    "startPrice": "RM 380",
     "icon": "awning-canopy",
-    "tagline": "Custom awnings and awning roofing for car porches, entrances, windows, balconies and yards across the Klang Valley (KL & Selangor) — polycarbonate, metal deck, aluminium composite (ACP), glass and fabric systems, plus retractable awnings and outdoor roller blinds, fabricated and installed to suit your site. Project-quoted with a 12-month workmanship warranty.",
+    "tagline": "Custom awnings and awning roofing for car porches, entrances, windows, balconies and yards across the Klang Valley (KL & Selangor) — polycarbonate, metal deck, aluminium composite (ACP), glass and fabric systems, plus retractable awnings and outdoor roller blinds, fabricated and installed to suit your site. Starting from RM 380 with per-sq-ft rates for every material, project-quoted with a 12-month workmanship warranty.",
     "subServices": [
       {
         "name": "Car Porch Awning Installation"
@@ -2702,7 +2702,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
     "i18n": {
       "ms": {
         "title": "Perkhidmatan Pemasangan Awning",
-        "tagline": "Awning tersuai dan bumbung awning untuk car porch, pintu masuk, tingkap, balkoni dan halaman rumah di seluruh Lembah Klang (KL & Selangor) — sistem polikarbonat, metal deck, panel komposit aluminium (ACP), kaca dan fabrik, serta awning boleh-tarik dan bidai luar (roller blind), difabrikasi dan dipasang mengikut tapak anda. Harga atas sebut harga projek dengan waranti mutu kerja 12 bulan.",
+        "tagline": "Awning tersuai dan bumbung awning untuk car porch, pintu masuk, tingkap, balkoni dan halaman rumah di seluruh Lembah Klang (KL & Selangor) — sistem polikarbonat, metal deck, panel komposit aluminium (ACP), kaca dan fabrik, serta awning boleh-tarik dan bidai luar (roller blind), difabrikasi dan dipasang mengikut tapak anda. Bermula dari RM 380 dengan kadar sekaki persegi untuk setiap bahan, sebut harga projek dengan waranti mutu kerja 12 bulan.",
         "subServices": [
           {
             "name": "Pemasangan Awning Car Porch"
@@ -2736,7 +2736,7 @@ export const serviceSummaryBySlug: Record<string, ServiceSummary> = {
       },
       "zh": {
         "title": "雨棚安装服务",
-        "tagline": "为巴生谷（吉隆坡与雪兰莪）的车棚、入口、窗户、阳台及庭院定制雨棚与雨棚屋顶——聚碳酸酯、金属瓦、铝塑板（ACP）、玻璃与布艺系统，另有伸缩雨棚与户外卷帘，按现场尺寸制作安装。按项目报价，含12个月工艺保修。",
+        "tagline": "为巴生谷（吉隆坡与雪兰莪）的车棚、入口、窗户、阳台及庭院定制雨棚与雨棚屋顶——聚碳酸酯、金属瓦、铝塑板（ACP）、玻璃与布艺系统，另有伸缩雨棚与户外卷帘，按现场尺寸制作安装。小型工程从 RM 380 起，每种材料均公布每平方尺起步价，按项目报价，含12个月工艺保修。",
         "subServices": [
           {
             "name": "车棚雨棚安装"

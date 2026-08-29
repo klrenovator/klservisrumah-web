@@ -110,7 +110,7 @@ For car porches specifically, tinted polycarbonate, ACP and insulated metal deck
 
 ## What affects the price of an awning
 
-Awning work in Malaysia is priced per project, not at a fixed per-square-foot rate, because every site differs. The main cost factors are:
+KL Servis Rumah publishes minimum starting prices for every awning scope — small awnings from RM 380, material rates from RM 18–60 per square foot depending on the material, and outdoor roller blinds from RM 15 per square foot — but the final figure is confirmed per project, because every site differs. The main cost factors are:
 
 - Width, projection and total covered area
 - Roofing material and the sheet or panel profile (tint, twin-wall, insulated)
@@ -235,7 +235,7 @@ Send photos of your porch with rough dimensions on WhatsApp and we will recommen
     slug: "how-awning-pricing-works-malaysia",
     date: "August 22, 2026",
     title: "How Awning Pricing Works in Malaysia",
-    excerpt: "Awning prices in Malaysia are quoted per project, not at a fixed rate. This guide breaks down the eight cost factors — size, material, frame, access, drainage, removal and more — and what to send for an accurate itemised quote.",
+    excerpt: "Awning prices in Malaysia start from published minimums — small awnings from RM 380, material rates from RM 18–60 per sq ft — with the final figure quoted per project. This guide breaks down the eight cost factors — size, material, frame, access, drainage, removal and more — and what to send for an accurate itemised quote.",
     category: "Awning",
     coverImage: "/hero-awning.svg",
     metaTitle: "How Awning Pricing Works in Malaysia: Cost Factors",
@@ -258,7 +258,7 @@ Awning prices in Malaysia are quoted per project because eight variables change 
 7. **Removal and disposal of an old awning**
 8. **Custom design and any management specifications**
 
-A generic published rate cannot account for these — which is why we quote per project instead.
+Published starting rates cannot account for these — which is why the final figure is quoted per project after the site is understood.
 
 ## Published market rate ranges (for budgeting)
 
@@ -309,9 +309,9 @@ Replacing an existing awning? Dismantling and disposing of the old structure is 
 
 Colour, sheet tint, panel colour and custom shapes are usually selectable, subject to material availability. If you live in a strata property, your management (JMB/MC) may specify allowed colours, projections or designs — meeting those specifications can affect the work quoted.
 
-## Why not publish a fixed price list?
+## Why publish starting prices and still quote per project?
 
-We publish starting prices for most of our services on our [pricing page](/pricing) because those jobs have repeatable scopes. Awning work does not: the span, structure, access and drainage differ at every house. A generic figure would either be misleadingly low or padded to cover worst cases — so we quote per project after seeing your photos and dimensions.
+We publish minimum starting prices for every awning scope on the [service page](/services/awning-installation) — small awnings from RM 380, car porch awnings from RM 1,800, per-sq-ft material rates from RM 18 (metal deck) to RM 60 (tempered glass) — so you can budget before contacting anyone. The span, structure, access and drainage still differ at every house, so the figure you are quoted after sending photos and dimensions is the exact, itemised total rather than a generic number padded to cover worst cases.
 
 ## How to get an accurate quote the first time
 
@@ -343,7 +343,7 @@ Not necessarily. Larger spans can need heavier frame profiles or extra posts, an
 
 ## Get an itemised awning quotation
 
-Send your location, photos and rough dimensions on WhatsApp and we will prepare a project-specific, itemised quotation — no generic figures, no hidden line items. [Chat with our team](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah!%20I%20would%20like%20an%20itemised%20quotation%20for%20an%20awning.)
+Send your location, photos and rough dimensions on WhatsApp and we will prepare a project-specific, itemised quotation — published starting prices, no hidden line items. [Chat with our team](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah!%20I%20would%20like%20an%20itemised%20quotation%20for%20an%20awning.)
 `
   }),
   post({
@@ -567,7 +567,7 @@ Request an assessment if the awning is above a doorway or occupied area, the fra
 
 Send your location or area in KL & Selangor, photos from several ground-level angles, a close-up of the leak or rust, the approximate width and projection, and a short description of what happens in rain. Include photos of the wall or beam fixing points, gutters and downpipes, and say whether you want to preserve the existing frame or are open to replacement. If the awning is in a condominium, gated community or commercial property, include any JMB, MC, management or local-authority requirements you already know about.
 
-Photos and rough dimensions may be enough for an initial project quotation. Where the frame, access, slope or drainage needs checking, a site assessment is arranged before the scope is finalised. See the [awning pricing guide](/blog/how-awning-pricing-works-malaysia) for why the quotation is itemised rather than a generic per-square-foot figure.
+Photos and rough dimensions may be enough for an initial project quotation. Where the frame, access, slope or drainage needs checking, a site assessment is arranged before the scope is finalised. See the [awning pricing guide](/blog/how-awning-pricing-works-malaysia) for how the published starting rates turn into an exact, itemised figure.
 
 ## Frequently asked questions
 
@@ -967,7 +967,7 @@ The old awning is normally dismantled as part of the replacement scope, with rem
 
 ### How much does awning replacement cost in Malaysia?
 
-Replacement is quoted per project. Cost drivers include the covered area, material choice, frame condition, height and access, drainage corrections and the removal scope. Send photos and sizes on WhatsApp for an itemised quotation — we do not publish a generic rate.
+Awning replacement and repair starts from RM 280 for repair scope and follows the same published material rates as new installation. Cost drivers include the covered area, material choice, frame condition, height and access, drainage corrections and the removal scope. Send photos and sizes on WhatsApp for an itemised quotation.
 
 ### The awning is in a condominium — do I need approval to replace it?
 

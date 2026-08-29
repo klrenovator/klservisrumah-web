@@ -1686,45 +1686,72 @@ export const SERVICE_SCOPES: Record<string, ServiceScopeBook> = {
     "quoteOnly": []
   },
   "awning-installation": {
-    "startPrice": 0,
-    "scopes": [],
-    "quoteOnly": [
+    "startPrice": 380,
+    "scopes": [
       {
         "name": "Car Porch Awning Installation",
+        "amount": 1800,
+        "unit": "job",
+        "published": "From RM 1,800",
         "desc": "New car porch / carport awning to shade and protect vehicles from sun and rain, sized to your porch with suitable slope and drainage."
       },
       {
         "name": "Polycarbonate Awning",
+        "amount": 25,
+        "unit": "sqft",
+        "published": "From RM 25 / sq ft",
         "desc": "Polycarbonate sheet awning roofing in clear or tinted profiles — translucent, lightweight cover for porch, yard, walkway or balcony that lets natural light through."
       },
       {
         "name": "Metal Deck Awning",
+        "amount": 18,
+        "unit": "sqft",
+        "published": "From RM 18 / sq ft",
         "desc": "Metal deck / metal-sheet awning roofing for strong rain and sun protection over utility areas, drying yards and porches, with anti-rust frame treatment."
       },
       {
         "name": "Aluminium Composite (ACP) Awning",
+        "amount": 30,
+        "unit": "sqft",
+        "published": "From RM 30 / sq ft",
         "desc": "Aluminium composite panel awning — opaque, clean-lined and low-maintenance cover that reduces glare and rain noise for porches and yards."
       },
       {
         "name": "Glass Awning",
+        "amount": 60,
+        "unit": "sqft",
+        "published": "From RM 60 / sq ft",
         "desc": "Tempered glass awning for entrances, windows and feature areas where a premium, light-filled look is wanted, framed and fixed to suit the opening."
       },
       {
         "name": "Canvas & Fabric Awning",
+        "amount": 20,
+        "unit": "sqft",
+        "published": "From RM 20 / sq ft",
         "desc": "Fixed canvas/fabric awnings and retractable systems — manual or motorised — for balconies, patios, terraces and shopfronts where shade and appearance are the priority."
       },
       {
         "name": "Balcony, Patio & Window Awning",
+        "amount": 380,
+        "unit": "job",
+        "published": "From RM 380",
         "desc": "Awnings sized for balconies, patios, terraces, windows and doors — shade and rain protection without closing up the space."
       },
       {
         "name": "Awning Replacement & Repair",
+        "amount": 280,
+        "unit": "job",
+        "published": "From RM 280",
         "desc": "Replacing old, leaking, rusted or sagging awnings — inspection of the existing frame, roofing, joints and drainage, with repair or full replacement options."
       },
       {
         "name": "Outdoor Roller Blinds",
+        "amount": 15,
+        "unit": "sqft",
+        "published": "From RM 15 / sq ft",
         "desc": "Outdoor and zip roller blinds for balconies, patios, windows and shopfronts — manual or motorised shade, privacy and rain screening that rolls away when not needed."
       }
-    ]
+    ],
+    "quoteOnly": []
   }
 };

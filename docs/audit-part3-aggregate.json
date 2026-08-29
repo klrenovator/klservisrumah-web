@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-29T16:25:43.805Z",
-  "totalPages": 4080,
+  "generatedAt": "2026-08-29T17:22:14.395Z",
+  "totalPages": 4081,
   "trilingualLeaks": {
     "pagesWithBmLeak": 0,
     "pagesWithZhLeak": 0,
@@ -63,7 +63,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 4.4,
       "pctVague": 59,
-      "meanWords": 967,
+      "meanWords": 968,
       "sampleQuestions": [
         "Need help applying this to your property?",
         "Are your aircon prices fixed or starting prices?",
@@ -87,7 +87,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 0,
       "pctVague": 0,
-      "meanWords": 2456,
+      "meanWords": 2466,
       "sampleQuestions": []
     },
     "/areas/<area>/<svc>": {
@@ -107,7 +107,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 6,
       "pctVague": 57,
-      "meanWords": 2089,
+      "meanWords": 2101,
       "sampleQuestions": [
         "How fast can you reach Ampang for Aircon Service, Repair & Installation?",
         "Which Ampang neighbourhoods do you cover?",
@@ -137,7 +137,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 3,
       "pctVague": 100,
-      "meanWords": 2106,
+      "meanWords": 2116,
       "sampleQuestions": [
         "Do you paint bungalows and 3-storey homes in Ampang Hilir?",
         "Can you diagnose ceiling leaks in a Bukit Antarabangsa hillside condo?",
@@ -186,7 +186,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 3.7,
       "pctVague": 100,
-      "meanWords": 1302,
+      "meanWords": 1303,
       "sampleQuestions": [
         "Is 10 feet measured along both walls?",
         "Can the layout include a dishwasher?",
@@ -214,7 +214,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 0,
       "pctVague": 100,
-      "meanWords": 4389,
+      "meanWords": 4406,
       "sampleQuestions": [
         "Gypsum vs Plaster Ceiling: Which One Is Right for Your Malaysian Home?",
         "SPC vs Vinyl vs Laminate Flooring in Malaysia: Which Is Right for You?",
@@ -383,12 +383,12 @@
       "sampleQuestions": []
     },
     "/estimate/*": {
-      "n": 23,
+      "n": 24,
       "pctQuestionH2": 0,
       "pctQuestionH3": 96,
-      "meanQuestionHeadings": 1.91,
+      "meanQuestionHeadings": 1.92,
       "familyPages": {
-        "howMuch": 22
+        "howMuch": 23
       },
       "pctQuickAnswer": 0,
       "pctFaqSchema": 0,
@@ -398,7 +398,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 0,
       "pctVague": 0,
-      "meanWords": 687,
+      "meanWords": 686,
       "sampleQuestions": [
         "1 What do you need?",
         "2 How much of it?"
@@ -502,7 +502,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 6,
       "pctVague": 100,
-      "meanWords": 4509,
+      "meanWords": 4519,
       "sampleQuestions": [
         "What home problem can we fix for you today?",
         "Ready to book your premium home service?"
@@ -758,12 +758,12 @@
       "n": 29,
       "pctQuestionH2": 100,
       "pctQuestionH3": 100,
-      "meanQuestionHeadings": 8.1,
+      "meanQuestionHeadings": 8.17,
       "familyPages": {
         "isIt": 40,
         "canDo": 77,
         "whichBetter": 41,
-        "howMuch": 25,
+        "howMuch": 26,
         "howLong": 13,
         "whatCauses": 6,
         "whenShould": 2
@@ -776,7 +776,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 4.4,
       "pctVague": 100,
-      "meanWords": 2726,
+      "meanWords": 2733,
       "sampleQuestions": [
         "Is aircon service, repair & installation the right service for you?",
         "Do you need full Aircon Service, Repair & Installation, a smaller job, or an inspection first?",
@@ -867,7 +867,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 4,
       "pctVague": 0,
-      "meanWords": 3550,
+      "meanWords": 3569,
       "sampleQuestions": [
         "What usually changes the price on site?",
         "How do you set your prices?",
@@ -926,7 +926,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 9.4,
       "pctVague": 72,
-      "meanWords": 1703,
+      "meanWords": 1707,
       "sampleQuestions": [
         "How much does Aircon Service, Repair & Installation cost in KL & Selangor?",
         "What affects Aircon Service, Repair & Installation cost?",
@@ -972,7 +972,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 3,
       "pctVague": 20,
-      "meanWords": 1184,
+      "meanWords": 1186,
       "sampleQuestions": [
         "Do you provide same-day service in Balakong?",
         "Can your team work inside condos and managed buildings in Balakong?",

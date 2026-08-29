@@ -370,7 +370,7 @@ export const serviceNavBySlug: Record<string, ServiceNavItem> = {
   "awning-installation": {
     "slug": "awning-installation",
     "title": "Awning Installation Services",
-    "startPrice": "On Quote",
+    "startPrice": "RM 380",
     "i18n": {
       "ms": {
         "title": "Perkhidmatan Pemasangan Awning"
