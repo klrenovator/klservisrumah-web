@@ -2,6 +2,7 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { ContentHubPage } from "@/components/content/content-hub-page";
 import { guidePages } from "@/config/content-data";
 import { genericToHubItems, getHubMetadata, getItemListSchema } from "@/lib/hub";
+import { podHubUrls } from "@/config/content-locale";
 
 const title = "Home Service Guides KL & Selangor";
 const description = "Decision guides for choosing painters, plumbers, waterproofing contractors, ceiling teams and handyman services in KL & Selangor.";
@@ -20,7 +21,7 @@ const items = [
   }
 ];
 
-export const metadata = getHubMetadata({ title, description, path });
+export const metadata = getHubMetadata({ title, description, path, languageUrls: podHubUrls("guides") });
 
 export default function GuidesHubPage() {
   return (

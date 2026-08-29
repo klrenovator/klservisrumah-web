@@ -2,13 +2,14 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { ContentHubPage } from "@/components/content/content-hub-page";
 import { maintenancePages } from "@/config/content-data";
 import { genericToHubItems, getHubMetadata, getItemListSchema } from "@/lib/hub";
+import { podHubUrls } from "@/config/content-locale";
 
 const title = "Home Maintenance Checklists KL & Selangor";
 const description = "Monthly, rainy-season, rental-turnover and renovation-cleanup checklists for Malaysian homes, condos and landed properties.";
 const path = "/guides/maintenance";
 const items = genericToHubItems(maintenancePages, path);
 
-export const metadata = getHubMetadata({ title, description, path });
+export const metadata = getHubMetadata({ title, description, path, languageUrls: podHubUrls("guidesMaintenance") });
 
 export default function MaintenanceHubPage() {
   return (

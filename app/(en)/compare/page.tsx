@@ -2,13 +2,14 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { ContentHubPage } from "@/components/content/content-hub-page";
 import { comparisonPages } from "@/config/content-data";
 import { genericToHubItems, getHubMetadata, getItemListSchema } from "@/lib/hub";
+import { podHubUrls } from "@/config/content-locale";
 
 const title = "Home Service Comparisons KL & Selangor";
 const description = "Compare methods, materials and quote types before choosing painting, plumbing, ceiling, waterproofing or handyman work.";
 const path = "/compare";
 const items = genericToHubItems(comparisonPages, path);
 
-export const metadata = getHubMetadata({ title, description, path });
+export const metadata = getHubMetadata({ title, description, path, languageUrls: podHubUrls("compare") });
 
 export default function CompareHubPage() {
   return (

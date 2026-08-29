@@ -10,12 +10,18 @@ type HubMeta = {
   title: string;
   description: string;
   path: string;
+  /**
+   * Real per-language URL cluster (audit P3-12). Only hubs that have genuine
+   * localized `/ms` + `/zh` twins (the ten content-pod hubs) pass this; pages
+   * without localized twins keep the self-referencing cluster.
+   */
+  languageUrls?: { en: string; ms: string; zh: string };
 };
 
-export function getHubMetadata({ title, description, path }: HubMeta): Metadata {
+export function getHubMetadata({ title, description, path, languageUrls }: HubMeta): Metadata {
   // Routed through the central builder so every hub gets a self-canonical,
-  // self-referencing hreflang and a length-clamped title/description.
-  return buildMetadata({ title, description, path });
+  // hreflang-correct and length-clamped title/description.
+  return buildMetadata({ title, description, path, languageUrls });
 }
 
 export function genericToHubItems(pages: GenericContentPage[], basePath: string): HubItem[] {

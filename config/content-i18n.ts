@@ -144,14 +144,14 @@ export const contentI18nMsFull: Record<string, Partial<{ title: string; intro: s
   "ceiling-maintenance-tips": { title: "Tip Penyelenggaraan Siling", intro: "Tip penyelenggaraan siling gypsum dan plaster.", category: "Panduan Penyelenggaraan" },
   "waterproofing-recheck-schedule": { title: "Jadual Semak Semula Kalis Air", intro: "Jadual penyelenggaraan kalis air berkala.", category: "Panduan Penyelenggaraan" },
   "home-handyman-monthly-checklist": { title: "Senarai Semak Bulanan Tukang Serba", intro: "Senarai semak penyelenggaraan rumah bulanan.", category: "Panduan Penyelenggaraan" },
-  "rainy-season-home-prep": { title: "Persediaan Rumah Musim Hujan", intro: "Panduan persediaan rumah sebelum musim monsun.", category: "Panduan Penyelenggaraan" },
+  "rainy-season-home-prep": { title: "Persediaan Rumah Musim Hujan", intro: "Persediaan rumah menghadapi musim hujan di KL & Selangor — semakan sebelum monsun yang mencegah kebocoran, banjir dan kerosakan akibat ribut.", category: "Panduan Penyelenggaraan" },
   "post-renovation-cleanup-checklist": { title: "Senarai Semak Pembersihan Selepas Renovasi", intro: "Senarai semak pembersihan post-renovasi.", category: "Panduan Penyelenggaraan" },
   "condo-maintenance-checklist": { title: "Senarai Semak Kondominium", intro: "Senarai semak penyelenggaraan kondo.", category: "Panduan Penyelenggaraan" },
   "landed-house-maintenance-calendar": { title: "Kalendar Penyelenggaraan Rumah Teres", intro: "Kalendar penyelenggaraan rumah teres.", category: "Panduan Penyelenggaraan" },
   "rental-property-turnover-checklist": { title: "Senarai Semak Pusing Harta Sewa", intro: "Senarai semak pembersihan harta sewa.", category: "Panduan Penyelenggaraan" },
 
   // ─── Seasonal (8) ───
-  "home-prep-rainy-season-kl": { title: "Persediaan Rumah Musim Hujan KL", intro: "Panduan persediaan rumah sebelum musim monsun.", category: "Musiman" },
+  "home-prep-rainy-season-kl": { title: "Persediaan Rumah Musim Hujan KL", intro: "Sediakan rumah anda di KL & Selangor untuk musim hujan — senarai semak berjadual merangkumi bumbung, saliran, kalis air dan bahagian luar sebelum monsun tiba.", category: "Musiman" },
   "painting-dry-season-tips": { title: "Tip Pengecatan Musim Kering", intro: "Tip pengecatan semasa musim kering di Malaysia.", category: "Musiman" },
   "waterproofing-pre-monsoon-checklist": { title: "Senarai Semak Kalis Air Sebelum Monsoon", intro: "Senarai semak kalis air sebelum monsun.", category: "Musiman" },
   "chinese-new-year-home-repaint-guide": { title: "Panduan Pengecatan Rumah Tahun Baru Cina", intro: "Panduan pengecatan rumah sebelum Tahun Baru Cina.", category: "Musiman" },
@@ -298,7 +298,7 @@ export const contentI18nZhFull: Record<string, Partial<{ title: string; intro: s
 
   // ─── Painting guides (2) ───
   "how-to-choose-house-painter-kl": { title: "如何在吉隆坡选择油漆工", intro: "选择优质油漆工的实用标准。", category: "油漆" },
-  "paint-brand-comparison-nippon-vs-dulux-vs-jotun": { title: "油漆品牌比较：立邦vs多乐士vs佐敦", intro: "马来西亚主要油漆品牌比较。", category: "油漆" },
+  "paint-brand-comparison-nippon-vs-dulux-vs-jotun": { title: "油漆品牌比较：立邦vs多乐士vs佐敦", intro: "立邦、多乐士与佐敦的三方对比——帮助马来西亚屋主在审阅每份报价时，从顶级油漆品牌中作出选择。", category: "油漆" },
 
   // ─── Plumbing guides (2) ───
   "how-to-choose-plumber-kl": { title: "如何在吉隆坡选择水管工", intro: "选择优质水管工的实用标准。", category: "水管" },
@@ -319,7 +319,7 @@ export const contentI18nZhFull: Record<string, Partial<{ title: string; intro: s
   // ─── Comparison (15) ───
   "pu-grouting-vs-tile-hacking": { title: "PU注浆vs砸瓷砖", intro: "无砸瓷砖防水方法与传统方法比较。", category: "比较" },
   "plaster-ceiling-vs-gypsum-ceiling": { title: "石膏天花板vs石膏板天花板", intro: "天花板材料比较。", category: "比较" },
-  "nippon-paint-vs-dulux-paint": { title: "立邦漆vs多乐士漆", intro: "马来西亚主要油漆品牌比较。", category: "比较" },
+  "nippon-paint-vs-dulux-paint": { title: "立邦漆vs多乐士漆", intro: "立邦与多乐士针对马来西亚家庭的对比——从抗污性、耐候性、色彩选择到价格的实用比较，而非品牌之争。", category: "比较" },
   "acrylic-vs-cementitious-waterproofing": { title: "丙烯酸防水vs水泥防水", intro: "防水材料比较。", category: "比较" },
   "pvc-pipes-vs-copper-pipes": { title: "PVC管vs铜管", intro: "水管类型比较。", category: "比较" },
   "pvc-vs-molly-bolt-anchors": { title: "PVC锚栓vs膨胀锚栓", intro: "墙壁锚固系统比较。", category: "比较" },
@@ -339,14 +339,14 @@ export const contentI18nZhFull: Record<string, Partial<{ title: string; intro: s
   "ceiling-maintenance-tips": { title: "天花板维护提示", intro: "石膏板与石膏天花板维护提示。", category: "维护指南" },
   "waterproofing-recheck-schedule": { title: "防水复查时间表", intro: "定期防水维护时间表。", category: "维护指南" },
   "home-handyman-monthly-checklist": { title: "杂工月度检查清单", intro: "住宅月度维护检查清单。", category: "维护指南" },
-  "rainy-season-home-prep": { title: "雨季房屋准备", intro: "季风季节前的房屋准备指南。", category: "维护指南" },
+  "rainy-season-home-prep": { title: "雨季房屋准备", intro: "吉隆坡与雪兰莪雨季房屋准备——季风来临前的防护检查，防止漏水、积水与暴风雨损坏。", category: "维护指南" },
   "post-renovation-cleanup-checklist": { title: "装修后清洁检查清单", intro: "装修后清洁检查清单。", category: "维护指南" },
   "condo-maintenance-checklist": { title: "公寓维护检查清单", intro: "公寓维护检查清单。", category: "维护指南" },
   "landed-house-maintenance-calendar": { title: "排屋维护日历", intro: "排屋维护日历。", category: "维护指南" },
   "rental-property-turnover-checklist": { title: "租赁物业交接清单", intro: "租赁物业清洁交接清单。", category: "维护指南" },
 
   // ─── Seasonal (8) ───
-  "home-prep-rainy-season-kl": { title: "吉隆坡雨季房屋准备", intro: "季风季节前的房屋准备指南。", category: "季节性" },
+  "home-prep-rainy-season-kl": { title: "吉隆坡雨季房屋准备", intro: "为吉隆坡与雪兰莪的房屋迎接雨季——季风到来前，按时间表完成屋顶、排水、防水与外墙检查。", category: "季节性" },
   "painting-dry-season-tips": { title: "旱季油漆提示", intro: "马来西亚旱季油漆提示。", category: "季节性" },
   "waterproofing-pre-monsoon-checklist": { title: "季风前防水检查清单", intro: "季风前防水检查清单。", category: "季节性" },
   "chinese-new-year-home-repaint-guide": { title: "春节房屋重刷指南", intro: "春节前房屋油漆指南。", category: "季节性" },

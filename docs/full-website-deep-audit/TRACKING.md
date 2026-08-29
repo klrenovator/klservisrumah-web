@@ -102,19 +102,21 @@
 
 ## ⭐ NEXT SESSION MUST CONTINUE HERE
 
-**All 5 audit parts are complete; Fix Wave 1–10, BP-1 phase 1 and CF-4 are
+**All 5 audit parts are complete; Fix Wave 1–11, BP-1 phase 1 and CF-4 are
 complete.** Wave 7 closed P2-16 (30/74 problems enriched EN/MS/ZH), Wave 8
 closed **P2-19** (54 distinct per-article blog dates + per-article sitemap
 lastMod), Wave 9 closed the entire unblocked CRO/UX queue
-(P4-05/P4-03/P4-02/P4-07/P4-12/P4-06/P4-16/P4-17 + P4-11 code half), and
-**Wave 10 closed the final unblocked code queue** — §5.6 RATE_YEAR gate,
+(P4-05/P4-03/P4-02/P4-07/P4-12/P4-06/P4-16/P4-17 + P4-11 code half),
+**Wave 10 closed the §5.6/AEO/OG/NAP queue** — §5.6 RATE_YEAR gate,
 P5-13/14 raster OG (with `audit:raster-og` gate), P4-15 NAP-in-content
 (57.8%, asserted in `audit:bp1`), P3-02 completion, P3-06 blog FAQPage,
-P3-18 llms.txt + robots AI bots. See `FIX-WAVE-10-REPORT.md` (and the
-earlier `FIX-WAVE-7/8/9-REPORT.md` files). With that, **no unblocked,
-code-only audit finding remains** — everything left on the boards is
-owner-blocked, needs owner data/access, or is a P2/P3 enhancement listed
-in item 8 below.
+P3-18 llms.txt + robots AI bots — and **Wave 11 closed P3-12** (MS/ZH server
+routes for all 215 kept pod details + 10 hubs, with hreflang clusters and
+localized canonical/OG; +450 localized URLs, indexable=sitemap 4,054 parity).
+See `FIX-WAVE-11-REPORT.md` (and the earlier `FIX-WAVE-7/8/9/10-REPORT.md`
+files). With that, **the only audit findings left on the boards are
+owner-blocked, need owner data/access, or are the P2/P3 enhancements listed
+in item 8 below.**
 
 1. **The unblocked CRO/UX queue is now COMPLETE (Fix Wave 9, 2026-08-29):**
    P4-05 (global persistent booking float), P4-03 (single desktop float — WhatsApp
@@ -150,10 +152,12 @@ in item 8 below.
 7. **Still-missing access (re-request from owner):** GSC, live HTTP/edge check,
    CWV/CrUX, GBP + review verification, owner fact confirmations (reviews,
    founding year, staff, stats), photography (P5-12).
-8. **Next code-level candidates (P2/P3, unblocked):** **P3-12 MS/ZH pod routes
-   (205 pages; i18n data already exists — NEXT)**, P2-16 tranche 3 (use
-   `scripts/p2-16-wordcount.ts` thinness order), P2-22 outbound citations,
-   P4-10 case-study pages, P4-14 per-area Service entities, P4-08 CTA wording.
+8. **Next code-level candidates (P2/P3, unblocked) — value order:** **P2-16 tranche 3**
+   (remaining 44 problems; use `scripts/p2-16-wordcount.ts` thinness order), **P3-12
+   phase 2** (native MS/ZH translation of the 146 authored per-pod FAQ sets — natural
+   translation, no MT), **P2-22** outbound citations (owner decision), **P4-10**
+   case-study pages, **P4-14** per-area Service entities, **P4-08** CTA wording.
+   P3-12 phase 1 (the MS/ZH pod ROUTES) was closed in Fix Wave 11.
 
 ---
 
@@ -192,7 +196,7 @@ in item 8 below.
 | P1 | P3-18 — llms.txt: list all 29 services (aircon missing) with units; link aeo-faq.txt | ✅ DONE (Fix Wave 10 — 29 service lines with units + aeo-faq.txt link; robots.ts + DuckAssistBot/Applebot-Extended) |
 | P1 | P3-09 — Owner verification of stats/claims (1,200+, 15+ Pros, 120+/120, 30–60 min, "written by local tradesmen") | ⏳ PENDING (owner) |
 | P2 | P3-06 — Blog: FAQPage schema + promote top FAQ to question H2 (216 posts) | ✅ DONE (Fix Wave 10 — 193 EN + 192 MS + 192 ZH blog posts emit FAQPage JSON-LD; top FAQ promoted to H2) |
-| P2 | P3-12 — MS/ZH routes for kept pods (205 pages; i18n data already exists) | ⏳ PENDING |
+| P2 | P3-12 — MS/ZH routes for kept pods (215 details + 10 hubs × 2 locales; i18n data already exists) | ✅ DONE (Fix Wave 11 — localized server routes via `locale-content-router.tsx` factory: 215 details + 10 hubs under `/ms/<family>` + `/zh/<family>`, self-canonical + full EN/MS/ZH/x-default hreflang clusters, localized OG/`lang`, schema matching rendered FAQs; 6 duplicate localized descriptions disambiguated; indexable=sitemap 4,054 parity, all gates PASS. **Phase 2 follow-up:** native MS/ZH translation of 146 authored per-pod FAQ sets — no MT — stays ⏳ P2) |
 | P2 | P3-15/P3-16/P3-17 — SearchAction vs /search; news-sitemap freshness; Applebot-Extended/DuckAssistBot | 🟡 PARTIAL (Fix Wave 10 — Applebot-Extended/DuckAssistBot done in robots.ts; SearchAction vs /search + news-sitemap still ⏳) |
 | P2 | P3-10/P3-19/P3-13 — NAP in content block; link+expand aeo-faq.txt; hidden empty-state text | ✅ DONE (Fix Wave 10 — NAP strip = P4-15; llms.txt links aeo-faq.txt = P3-18; empty-state removed = P3-02. aeo-faq.txt expansion stays P2 with content work) |
 

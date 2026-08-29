@@ -11,7 +11,8 @@ import { suburbPages } from "@/config/suburb-data";
 import { hasAreaTwin } from "@/lib/bp1-consolidation";
 import { problemLocaleUrls } from "@/config/problem-canonical";
 import { indexableProblemPages } from "@/config/problem-index";
-import { allGenericPages, clusterPages, maintenancePages } from "@/config/content-data";
+import { clusterPages } from "@/config/content-data";
+import { POD_FAMILIES, POD_FAMILY_KEYS, podDetailUrls, podHubUrls, type ContentPodFamily } from "@/config/content-locale";
 import { toolsList } from "@/config/tools-data";
 import { TOOLS_INDEX_PATH, toolLocaleUrls } from "@/config/tools-i18n";
 import { slugify, toIsoDate, DEFAULT_CONTENT_DATE } from "@/lib/utils";
@@ -108,16 +109,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/projects", priority: 0.7 },
     { path: "/problems", priority: 0.75, languages: { en: "/problems", ms: "/ms/problems", zh: "/zh/problems" } },
     { path: "/near-me", priority: 0.78 },
-    { path: "/guides", priority: 0.74 },
-    { path: "/guides/maintenance", priority: 0.7 },
-    { path: "/compare", priority: 0.72 },
-    { path: "/brands", priority: 0.66 },
-    { path: "/top", priority: 0.66 },
-    { path: "/answers", priority: 0.76 },
-    { path: "/process", priority: 0.72 },
-    { path: "/commercial", priority: 0.72 },
-    { path: "/residential", priority: 0.72 },
-    { path: "/seasonal", priority: 0.68 },
+    // The ten content-pod hubs are now emitted (with their localized twins) in
+    // the `contentPodRoutes` block below — audit P3-12.
     // The free-tools cluster exists in three languages at three real URLs —
     // every member entry carries the full hreflang cluster so the annotations
     // resolve both ways (Google drops clusters that only link one way).
@@ -253,20 +246,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/zh/problems", priority: 0.7, languages: { en: "/problems", ms: "/ms/problems", zh: "/zh/problems" } },
   ];
 
-  const genericRoutes: Entry[] = allGenericPages
-    .filter((page) => !clusterPages.some((cluster) => cluster.slug === page.slug) && !maintenancePages.some((maintenance) => maintenance.slug === page.slug))
-    .map((page) => {
-      if (page.category === "Comparison") return { path: `/compare/${page.slug}`, priority: 0.7 };
-      if (page.category === "Seasonal") return { path: `/seasonal/${page.slug}`, priority: 0.65 };
-      if (page.category === "Commercial") return { path: `/commercial/${page.slug}`, priority: 0.72 };
-      if (page.category === "Residential") return { path: `/residential/${page.slug}`, priority: 0.72 };
-      if (page.category === "Brand Guide") return { path: `/brands/${page.slug}`, priority: 0.66 };
-      if (page.category === "Top Considerations") return { path: `/top/${page.slug}`, priority: 0.64 };
-      if (page.category === "AI Answer Guide") return { path: `/answers/${page.slug}`, priority: 0.8 };
-      if (page.category === "Process") return { path: `/process/${page.slug}`, priority: 0.74 };
-      return { path: `/guides/${page.slug}`, priority: 0.7 };
-    });
-  const maintenanceRoutes: Entry[] = maintenancePages.map((page) => ({ path: `/guides/maintenance/${page.slug}`, priority: 0.68 }));
+  // Audit P3-12 — content-pod hubs and detail pages now exist as real
+  // three-URL hreflang clusters (`/…`, `/ms/…`, `/zh/…`). The English page is
+  // the cluster head; its MS/ZH twins are crawlable, indexable routes, so
+  // every member carries the full cluster (Google drops one-way annotations).
+  const POD_DETAIL_PRIORITY: Record<ContentPodFamily, number> = {
+    answers: 0.8, brands: 0.66, commercial: 0.72, compare: 0.7, guides: 0.7,
+    guidesMaintenance: 0.68, process: 0.74, residential: 0.72, seasonal: 0.65, top: 0.64,
+  };
+  const POD_HUB_PRIORITY: Record<ContentPodFamily, number> = {
+    answers: 0.76, brands: 0.66, commercial: 0.72, compare: 0.72, guides: 0.74,
+    guidesMaintenance: 0.7, process: 0.72, residential: 0.72, seasonal: 0.68, top: 0.66,
+  };
+  const contentPodRoutes: Entry[] = POD_FAMILY_KEYS.flatMap((family) => {
+    const detailPriority = POD_DETAIL_PRIORITY[family];
+    const hubPriority = POD_HUB_PRIORITY[family];
+    const hub = podHubUrls(family);
+    const entries: Entry[] = [
+      { path: hub.en, priority: hubPriority, languages: hub },
+      { path: hub.ms, priority: hubPriority - 0.04, languages: hub },
+      { path: hub.zh, priority: hubPriority - 0.04, languages: hub },
+    ];
+    for (const page of POD_FAMILIES[family].pages) {
+      const urls = podDetailUrls(family, page.slug);
+      entries.push(
+        { path: urls.en, priority: detailPriority, languages: urls },
+        { path: urls.ms, priority: detailPriority - 0.04, languages: urls },
+        { path: urls.zh, priority: detailPriority - 0.04, languages: urls },
+      );
+    }
+    return entries;
+  });
 
   return [
     ...staticRoutes,
@@ -278,7 +288,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...blogRoutes,
     ...localeBlogRoutes,
     ...localeFaqRoutes,
-    ...genericRoutes,
-    ...maintenanceRoutes
+    ...contentPodRoutes
   ].map(entry);
 }

@@ -2915,3 +2915,55 @@ audit:meta · seo:audit (docs/seo-audit-report.md regenerated).
   P4-13/P2-C4/BP-1 phase 2 (GSC keep-set), P4-11 named team page (owner bios),
   P5-12 photography, P1-C3 www/non-www, CI `workflows` permission (patch saved
   at `docs/full-website-deep-audit/BP-1-ci-audit-bp1.patch`).
+
+## Session — 2026-08-29 — FIX WAVE 11 (P3-12 MS/ZH pod routes)
+
+### Scope
+Close **P3-12** (Part 3): the kept guide/pod/top pages had client-side i18n but **no
+MS/ZH URL**. Emit localized server routes for every kept pod detail + family hub.
+Decision per Part 3: *keep* the pods, *emit localized routes* (the i18n data exists).
+Owner-blocked items (www canonical, BP-1 phase 2/P2-C4, reviews, photography, stats)
+untouched.
+
+### What changed
+- **Foundation:** NEW `config/pod-family-paths.ts` (10 `POD_FAMILY_BASE_PATHS` + derived
+  `POD_LOCALE_TREES`; dependency-free for `middleware.ts`), `config/content-locale-data.ts`,
+  `lib/content-locale-resolver.ts` (`resolvePodHeader` namespaced override → service-derived
+  → legacy dict; `resolvePod` incl. commercial audience-fixed FAQ templates).
+- **One route factory + thin stubs:** NEW `lib/locale-content-router.tsx` —
+  `localizedPodDetailRoute` → `{ generateStaticParams, generateMetadata, Page }`;
+  `localizedPodHubRoute` → `{ generateMetadata, Page }`; central OG-locale map. 40 stubs
+  under `app/(ms)/ms/**` + `app/(zh)/zh/**` (all 10 families + nested `guides/maintenance`)
+  each `const route = localized*Route(...)` + named re-exports + `export const dynamicParams
+  = false;` (literal — Next rejects `route.dynamicParams` as a MemberExpression config).
+- **Server UI:** NEW `components/sections/locale-content-page.tsx` (detail: article+FAQPage
+  schema from the same rendered FAQs, breadcrumbs, hero, takeaways, guidance, related-service
+  card, 6-sibling InternalLinkGrid, need-help CTA, FAQs, NAP strip, locale-tree links) and
+  `locale-content-hub.tsx` (hub: ItemList schema, breadcrumbs, hero, family card grid).
+- **SEO wiring:** 20 EN pod routes now emit `languageUrls` via `podDetailUrls`/`podHubUrls`
+  (hubs through `getHubMetadata`'s new optional `languageUrls`); `app/(en)/sitemap.ts` emits
+  a 3-URL hreflang cluster per pod; `middleware.ts` spreads `POD_LOCALE_TREES` into
+  `REAL_LOCALE_TREES`.
+- **Root-caused:** `audit:seo-head` duplicate-description gate flagged 3 collisions where two
+  distinct EN pods shared one localized intro (slug-keyed `contentI18nMsFull/ZhFull`).
+  Disambiguated 6 intros in `config/content-i18n.ts` (2 MS rainy-season + 4 ZH: rainy ×2,
+  paint 2-way-vs-3-way ×2), mirroring the distinct EN nuance; MS paint already distinct.
+
+### Gates (all PASS)
+prebuild **test:estimators 320,291 × 0** · audit:content-pods ✓ · type-check 0 · lint 0 ·
+build **BUILD_EXIT=0, 4,088/4,088 static** · audit:seo-head **4,054 indexable = 4,054
+sitemap (parity), 0 dup titles/descriptions, 0 warnings** · audit:bp1 (62.3% NAP-in-content)
+· audit:html · audit:links (308,725 rendered + 56 source → 0 broken) · audit:schema-size ·
+audit:raster-og · audit:i18n (1,215 × 3) · audit:location-similarity (<70%) · audit:meta.
+Verified built HTML `/ms/top/best-house-painters-kl-2026`: `lang="ms-MY"`, localized title,
+self-canonical, en-MY/ms-MY/zh-MY/x-default hreflang, localized FAQs + matching schema.
+
+### Status / next session
+- **Completed ✅:** Parts 0–5 audits + Fix Waves 1–11 + BP-1 phase 1 + CF-4. P3-12 phase 1
+  (localized pod ROUTES) done — +450 localized URLs.
+- **Next candidates (value order):** P2-16 tranche 3 (44 problems; `scripts/p2-16-wordcount.ts`)
+  → **P3-12 phase 2** (native MS/ZH translation of 146 authored per-pod FAQ sets; no MT)
+  → P2-22 citations (owner) → P4-10/P4-14/P4-08 (P2/P3).
+- **Still owner-blocked:** P4-09/P2-21/P3-09 (reviews + stats, GBP), P4-13/P2-C4/BP-1 phase 2
+  (GSC keep-set), P4-11 named team page (owner bios), P5-12 photography, P1-C3 www/non-www,
+  CI `workflows` permission (patch at `docs/full-website-deep-audit/BP-1-ci-audit-bp1.patch`).

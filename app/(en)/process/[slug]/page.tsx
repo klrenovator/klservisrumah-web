@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { buildMetadata } from "@/lib/seo-meta";
+import { podDetailUrls } from "@/config/content-locale";
 import { processPages } from "@/config/content-data";
 import { GenericContentPageView } from "@/components/content/generic-content-page";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
@@ -13,6 +14,7 @@ export function generateStaticParams() { return processPages.map((page) => ({ sl
 export async function generateMetadata(props: { params: Promise<{ slug: string }> }) { const { slug } = await props.params; const page = processPages.find((item) => item.slug === slug); if (!page) return {}; return buildMetadata({
     title: page.title,
     description: page.intro,
-    path: `/process/${page.slug}`
+    path: `/process/${page.slug}`,
+    languageUrls: podDetailUrls("process", page.slug)
   }); }
 export default async function ProcessPage(props: { params: Promise<{ slug: string }> }) { const { slug } = await props.params; const page = processPages.find((item) => item.slug === slug); if (!page) notFound(); return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(page.faqs)) }} /><Breadcrumbs items={[{ label: "Process", href: "/process" }, { label: page.title, href: `/process/${page.slug}` }]} /><GenericContentPageView page={page} /></>; }
