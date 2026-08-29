@@ -3437,7 +3437,7 @@ Khusus untuk car porch, polikarbonat tinted, ACP dan metal deck berinsulasi iala
 
 ## Apa yang menjejaskan harga awning
 
-Kerja awning di Malaysia disebut harga mengikut projek, bukan kadar tetap per kaki persegi, kerana setiap tapak berbeza. Faktor kos utama:
+KL Servis Rumah menerbitkan harga mula minimum untuk setiap skop awning — awning kecil dari RM 380, kadar bahan dari RM 18–60 sekaki persegi mengikut bahan, dan bidai luar dari RM 15 sekaki persegi — tetapi angka akhir disahkan mengikut projek kerana setiap tapak berbeza. Faktor kos utama:
 
 - Lebar, unjuran dan jumlah kawasan yang dilindungi
 - Bahan bumbung dan profil lembaran atau panel (tint, twin-wall, berinsulasi)
@@ -3551,7 +3551,7 @@ ACP 雨棚使用坚硬的铝面复合板，呈现干净、现代、不透光的�
 
 ## 雨棚价格受什么影响
 
-马来西亚的雨棚按项目报价，没有固定的每平方英尺单价，因为每个现场都不同。主要成本因素包括：
+KL Servis Rumah 为每项雨棚工程公布最低起步价——小型雨棚从 RM 380 起、材料价按材料每平方尺从 RM 18–60 起、户外卷帘每平方尺从 RM 15 起——但最终价格仍按项目确认，因为每个现场都不同。主要成本因素包括：
 
 - 宽度、悬挑和总覆盖面积
 - 屋面材料和板材型号（有色、中空、保温）
@@ -3757,9 +3757,9 @@ KL Servis Rumah 在吉隆坡与雪兰莪测量、加工并安装[车棚雨棚](/
     ms: {
       slug: "bagaimana-harga-awning-dikira-di-malaysia",
       title: "Bagaimana Harga Awning Dikira di Malaysia", category: "Awning",
-      excerpt: "Harga awning di Malaysia disebut mengikut projek, bukan kadar tetap. Panduan ini mengupas lapan faktor kos — saiz, bahan, rangka, akses, saliran, pembongkaran dan lagi — serta apa yang perlu dihantar untuk sebut harga tepat.",
+      excerpt: "Harga awning di Malaysia bermula dari harga minimum yang diterbitkan — awning kecil dari RM 380, kadar bahan dari RM 18–60 sekaki persegi — dengan angka akhir disebut mengikut projek. Panduan ini mengupas lapan faktor kos — saiz, bahan, rangka, akses, saliran, pembongkaran dan lagi — serta apa yang perlu dihantar untuk sebut harga tepat.",
       metaTitle: "Bagaimana Harga Awning Dikira di Malaysia",
-      metaDesc: "Harga awning di Malaysia disebut mengikut projek. Kenali lapan faktor kos — saiz, bahan, rangka, akses, saliran, pembongkaran — dan cara mendapatkan sebut harga tepat.",
+      metaDesc: "Harga awning di Malaysia bermula dari RM 380 (bahan dari RM 18 sekaki persegi). Kenali lapan faktor kos — saiz, bahan, rangka, akses, saliran, pembongkaran — dan cara mendapatkan sebut harga tepat.",
       content: `Cari "harga awning Malaysia" dan anda akan jumpa angka per kaki persegi di merata tempat — tetapi jarang penjelasan apa yang termasuk dalam angka itu. Sebenarnya, kerja awning disebut harga mengikut projek: dua awning bersaiz sama boleh berbeza harga bergantung pada bahan, rangka, akses dan saliran.
 
 Panduan ini menerangkan bagaimana sebut harga awning disusun, apa yang menggerakkan harga, dan maklumat tepat yang perlu dihantar supaya sebut harga anda tepat dari kali pertama. KL Servis Rumah memasang [awning tersuai di seluruh KL & Selangor](/ms/services/awning-installation); setiap sebut harga kami adalah khusus projek dan berperincian.
@@ -3828,9 +3828,9 @@ Menggantikan awning sedia ada? Pembongkaran dan pelupusan struktur lama juga ker
 
 Warna, tint lembaran, warna panel dan bentuk tersuai selalunya boleh dipilih, tertakluk kepada ketersediaan bahan. Jika anda tinggal di hartanah strata, pengurusan (JMB/MC) anda mungkin menetapkan warna, unjuran atau reka bentuk yang dibenarkan — memenuhi spesifikasi itu boleh mempengaruhi kerja yang disebut harga.
 
-## Kenapa tidak menerbitkan senarai harga tetap?
+## Kenapa terbitkan harga mula tetapi sebut harga tetap mengikut projek?
 
-Kami menerbitkan harga permulaan untuk kebanyakan perkhidmatan kami dalam [direktori perkhidmatan](/ms/services) kerana kerja tersebut mempunyai skop yang berulang. Kerja awning tidak: bentang, struktur, akses dan saliran berbeza di setiap rumah. Angka generik akan menjadi terlalu rendah sehingga mengelirukan atau dilembutkan untuk menampung kes terburuk — jadi kami menyebut harga mengikut projek selepas melihat foto dan dimensi anda.
+Kami menerbitkan harga mula minimum untuk setiap skop awning di [laman perkhidmatan](/ms/services/awning-installation) — awning kecil dari RM 380, awning car porch dari RM 1,800, kadar bahan sekaki persegi dari RM 18 (metal deck) hingga RM 60 (kaca tempered) — supaya anda dapat membuat bajet sebelum menghubungi sesiapa. Bentang, struktur, akses dan saliran tetap berbeza di setiap rumah, jadi angka yang anda terima selepas menghantar foto dan dimensi ialah jumlah tepat yang diperincikan, bukan angka generik yang dilembutkan untuk menampung kes terburuk.
 
 ## Cara mendapatkan sebut harga yang tepat dari kali pertama
 
@@ -3862,14 +3862,14 @@ Tidak semestinya. Bentang lebih besar mungkin memerlukan profil rangka lebih ber
 
 ## Dapatkan sebut harga awning berperincian
 
-Hantar lokasi, foto dan dimensi anggaran anda di WhatsApp dan kami akan menyediakan sebut harga khusus projek dan berperincian — tiada angka generik, tiada item tersembunyi. [Chat dengan pasukan kami](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah%2C%20saya%20ingin%20sebut%20harga%20awning%20yang%20berperincian.)`
+Hantar lokasi, foto dan dimensi anggaran anda di WhatsApp dan kami akan menyediakan sebut harga khusus projek dan berperincian — harga mula diterbitkan, tiada item tersembunyi. [Chat dengan pasukan kami](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah%2C%20saya%20ingin%20sebut%20harga%20awning%20yang%20berperincian.)`
     },
     zh: {
       slug: "yu-peng-jia-ge-ru-he-ji-suan-ma-lai-xi-ya",
       title: "马来西亚雨棚价格如何计算", category: "雨棚",
-      excerpt: "马来西亚的雨棚按项目报价，没有固定单价。本文拆解八大成本因素——面积、材料、骨架、进场、排水、拆旧等——以及如何一次就拿到准确的分项报价。",
+      excerpt: "马来西亚的雨棚从公布的起步价开始——小型雨棚从 RM 380 起、材料价每平方尺从 RM 18–60 起——最终价格按项目报价。本文拆解八大成本因素——面积、材料、骨架、进场、排水、拆旧等——以及如何一次就拿到准确的分项报价。",
       metaTitle: "马来西亚雨棚价格如何计算",
-      metaDesc: "马来西亚雨棚按项目报价。了解八大成本因素——面积、材料、骨架、进场、排水与拆旧——以及如何获得准确报价。",
+      metaDesc: "马来西亚雨棚从 RM 380 起（材料价每平方尺从 RM 18 起）。了解八大成本因素——面积、材料、骨架、进场、排水与拆旧——以及如何获得准确报价。",
       content: `搜索"马来西亚雨棚价格"，到处都能看到每平方英尺的报价——却很少有人解释这些数字包含什么。实际上，雨棚工程按项目报价：同样大小的两个雨棚，因材料、骨架、进场条件和排水不同，价格可能相差明显。
 
 本文解释雨棚报价单是如何构成的、哪些因素影响价格，以及第一次询价就拿到准确报价需要准备什么。KL Servis Rumah 在吉隆坡与雪兰莪安装[定制雨棚](/zh/services/awning-installation)；我们发出的每份报价单都针对具体项目并列明细项。
@@ -3887,7 +3887,7 @@ Hantar lokasi, foto dan dimensi anggaran anda di WhatsApp dan kami akan menyedia
 7. **旧雨棚的拆除与清运**
 8. **定制设计与物业管理规范**
 
-公开的统一单价无法涵盖这些——所以我们按项目报价。
+公布的起步价无法涵盖这些——所以最终价格按项目报价。
 
 ## 公开市场价格区间（预算参考）
 
@@ -3938,9 +3938,9 @@ Hantar lokasi, foto dan dimensi anggaran anda di WhatsApp dan kami akan menyedia
 
 颜色、板材色调、面板颜色和定制造型通常可选择，视材料供应而定。分层地契产业的管理层（JMB/MC）可能规定允许的颜色、悬挑或设计——满足这些规范会影响报价工程。
 
-## 为什么不发布固定价目表？
+## 为什么公布起步价，报价仍按项目计算？
 
-我们在[服务目录](/zh/services)为大多数服务公布起步价，因为那些工程的范围可重复。雨棚工程不是：跨距、结构、进场和排水在每栋房子都不同。一个笼统的数字要么低得误导，要么为覆盖最坏情况而虚高——所以我们看过照片和尺寸后按项目报价。
+我们在[雨棚服务页面](/zh/services/awning-installation)为每项雨棚工程公布最低起步价——小型雨棚从 RM 380 起、车棚雨棚从 RM 1,800 起、材料价每平方尺从 RM 18（金属瓦）到 RM 60（钢化玻璃）——让您在联系任何人之前就能做预算。跨距、结构、进场和排水在每栋房子仍然不同，因此您发送照片和尺寸后拿到的数字是准确、分项列明的总价，而不是为覆盖最坏情况而虚高的笼统数字。
 
 ## 如何一次就拿到准确报价
 
@@ -3972,7 +3972,7 @@ Hantar lokasi, foto dan dimensi anggaran anda di WhatsApp dan kami akan menyedia
 
 ## 获取分项雨棚报价
 
-在 WhatsApp 上发送位置、照片和大致尺寸，我们将为您准备针对项目的分项报价单——没有笼统数字，没有隐藏项目。[与我们的团队聊聊](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah%EF%BC%8C%E6%88%91%E6%83%B3%E8%8E%B7%E5%8F%96%E9%9B%A8%E6%A3%9A%E7%9A%84%E5%88%86%E9%A1%B9%E6%8A%A5%E4%BB%B7%E3%80%82)`
+在 WhatsApp 上发送位置、照片和大致尺寸，我们将为您准备针对项目的分项报价单——起步价已公布，没有隐藏项目。[与我们的团队聊聊](https://wa.me/601116627349?text=Hi%20KL%20Servis%20Rumah%EF%BC%8C%E6%88%91%E6%83%B3%E8%8E%B7%E5%8F%96%E9%9B%A8%E6%A3%9A%E7%9A%84%E5%88%86%E9%A1%B9%E6%8A%A5%E4%BB%B7%E3%80%82)`
     }
   },
   /* ──────────────────────────────────────────────────────────────────────
@@ -4572,7 +4572,7 @@ Semak dengan JMB, MC atau pejabat pengurusan sebelum membuat keputusan. Kami bol
 
 Tiada harga generik yang boleh dipercayai untuk membandingkan awning tetap dan boleh tarik. Sebut harga boleh berubah mengikut lebar dan unjuran, sistem bumbung atau fabrik, rangka, braket, kelengkapan operasi, ketinggian dan akses, struktur sedia ada, saliran, kemasan tersuai, pembongkaran serta spesifikasi strata. Sistem bermotor juga mempunyai keperluan peralatan dan pemasangan yang berbeza daripada sistem manual, jika tersedia untuk projek tersebut.
 
-Hantar lokasi, foto bukaan dan titik pengancing, lebar serta unjuran anggaran, waktu anda mahu teduhan, sama ada lindungan hujan kekal penting, dan sebarang peraturan pengurusan. [Panduan harga awning](/ms/blog/bagaimana-harga-awning-dikira-di-malaysia) kami menerangkan mengapa sebut harga khusus projek dan berperincian, bukan kadar tetap yang diterbitkan.
+Hantar lokasi, foto bukaan dan titik pengancing, lebar serta unjuran anggaran, waktu anda mahu teduhan, sama ada lindungan hujan kekal penting, dan sebarang peraturan pengurusan. [Panduan harga awning](/ms/blog/bagaimana-harga-awning-dikira-di-malaysia) kami menerangkan bagaimana harga mula yang diterbitkan diterjemahkan menjadi sebut harga akhir yang tepat dan berperincian.
 
 ## Senarai semak keputusan mudah
 
@@ -5073,7 +5073,7 @@ Bab tempoh, penggantian yang mudah selalunya dapat disiapkan dalam tempoh sehari
 - Sama ada pembongkaran dan pelupusan perlu termasuk (biasanya ya).
 - Sebarang peraturan pengurusan atau majlis yang terpakai.
 
-[Panduan harga awning](/ms/blog/bagaimana-harga-awning-dikira-di-malaysia) kami menerangkan bagaimana input ini diterjemahkan menjadi sebut harga berperincian khusus projek, dan mengapa kami tidak memberikan kadar generik tanpa melihat tapak.
+[Panduan harga awning](/ms/blog/bagaimana-harga-awning-dikira-di-malaysia) kami menerangkan bagaimana input ini diterjemahkan menjadi sebut harga berperincian khusus projek, dan bagaimana harga mula yang diterbitkan menjadi angka akhir yang tepat selepas tapak dinilai.
 
 ## Soalan lazim
 
@@ -5095,7 +5095,7 @@ Awning lama biasanya dibongkar sebagai sebahagian skop penggantian, dengan penga
 
 ### Berapa kos penggantian awning di Malaysia?
 
-Penggantian disebut harga mengikut projek. Pemboleh ubah kos termasuk kawasan lindungan, pilihan bahan, keadaan rangka, ketinggian dan akses, pembetulan saliran serta skop pembongkaran. Hantar foto dan ukuran di WhatsApp untuk sebut harga berperincian — kami tidak menerbitkan kadar generik.
+Pembaikan bermula dari RM 280 dan penggantian mengikut kadar bahan yang sama dengan pemasangan baharu. Pemboleh ubah kos termasuk kawasan lindungan, pilihan bahan, keadaan rangka, ketinggian dan akses, pembetulan saliran serta skop pembongkaran. Hantar foto dan ukuran di WhatsApp untuk sebut harga berperincian.
 
 ### Awning saya di kondominium — perlukah kelulusan untuk menukar?
 
@@ -5201,7 +5201,7 @@ Beritahu kami bahan awning, apa yang bermasalah dan lokasi anda. Hantar foto di 
 
 ### 在马来西亚更换雨棚要多少钱？
 
-更换按项目报价。成本因素包括覆盖面积、材料选择、骨架状况、高度与出入条件、排水修正以及拆除范围。在 WhatsApp 发送照片和尺寸获取分项报价——我们不发布通用价格。
+维修从 RM 280 起，更换按与全新安装一致的材料价计算。成本因素包括覆盖面积、材料选择、骨架状况、高度与出入条件、排水修正以及拆除范围。在 WhatsApp 发送照片和尺寸获取分项报价。
 
 ### 雨棚在共管公寓——更换需要批准吗？
 

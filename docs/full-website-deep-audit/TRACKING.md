@@ -77,6 +77,7 @@
 | 2026-08-29 | **Fix Wave 10** — final unblocked code queue: §5.6 RATE_YEAR freshness gate (`audit:rate-year` in prebuild; 714 files / 162 tokens = 2026); P5-13/14 raster OG (next/og 1200×630 route, 8 templates wired via `inferOgTemplate` + explicit ogTemplate on 126 tool routes + 29 cost pages; schema images rasterised; new `audit:raster-og` gate — 0 SVG, all 8 templates emitted, 1,979 pages on /og-image); P4-15 NAP strip in content on all template families (2,112/3,652 = 57.8%, baseline 0%; asserted in `audit:bp1` check 8); P3-02 completed (H3 questions + empty-state removed, FAQPage verified EN/MS/ZH); P3-06 blog FAQPage (193/192/192 posts EN/MS/ZH + top-FAQ H2, CTA-heading exclusion); P3-18 llms.txt 29 services + aeo-faq.txt link + robots AI bots. All gates PASS (prebuild 320,291 × 0; build 3,660; audit:html/links/seo-head/bp1/schema-size/location-similarity/meta/seo PASS) | ✅ See `FIX-WAVE-10-REPORT.md` |
 | 2026-08-29 | **Fix Wave 11** — P3-12 phase 1: MS/ZH server routes for all 215 kept pod details + 10 hubs via the `locale-content-router.tsx` factory (40 thin route stubs), each self-canonical with full EN/MS/ZH/x-default hreflang, localized OG/`lang` and schema matching the rendered FAQs; 6 duplicate localized descriptions disambiguated; +450 localized URLs; indexable = sitemap = 4,054 parity. All gates PASS | ✅ See `FIX-WAVE-11-REPORT.md` |
 | 2026-08-29 | **Fix Wave 12** — P3-04: literal "How much does {svc} cost in KL & Selangor?" DirectAnswer card on all 29 `/services/<svc>/cost` pages (question H2 + 2–3 sentence answer citing the published price **with units** + rate-book-derived pricing basis + estimator link, EN/BM/中文) built by the new pure `lib/cost-direct-answer.ts`, which also feeds the first `FAQPage` Question so schema and HTML cannot drift; new prebuild gate `audit:cost-direct-answer` (87 cards = 29 × 3; negative-tested 3 ways). Also closed P3-05: verified all four recorded AI-surface leaks already fixed, then fixed the two it missed — 28/29 service hubs printed "from **rm** 14 / sq ft" inside the DirectAnswer (`lowerFirstSentence()`) — and added a case-sensitive `lowercase-currency` check to `audit:html` (28 fatals pre-fix → none post-fix). Fixed the stale `part3-aeo-audit` `contentText()` (text-after-`</footer>` → document body) which had silently zeroed every readability/DirectAnswer/NAP signal since Wave 2. Corpus: `/services/<svc>/cost` **qa 0% → 100%**, "how much" H2 0 → 29/29, faqSchemaNoVisibleMatch 0, BM/中文 leaks 0/0. All gates PASS: lint 0/0, type-check, prebuild **320,291 × 0 failures**, build SUCCESS (4,080 HTML), audit:html none/none, audit:links 308,753+56 → 0 broken, audit:seo-head (4,054 = 4,054), schema-size, bp1 (NAP-in-content 62.3%), location-similarity, meta, seo:audit, part5 (0 JSON-LD errors) | ✅ DONE — **PR #189**, CI green (QA job 3m21s: gates/types/lint/SSG build/audits) — See `FIX-WAVE-12-REPORT.md` |
+| 2026-08-29 | **Fix Wave 13** — owner request: awning start-from prices + market-rate verification. `awning-installation` (the last "On Quote" service) now publishes **RM 380** start + 9 priced scopes (car porch **From RM 1,800**, polycarbonate **RM 25/sq ft**, metal deck **RM 18/sq ft**, ACP **RM 30/sq ft**, glass **RM 60/sq ft**, canvas **RM 20/sq ft**, balcony/window **From RM 380**, repair **From RM 280**, roller blinds **RM 15/sq ft**) — every figure inside fresh 2026 KL/Selangor competitor bands (research: `PRICE-MARKET-RESEARCH-2026-08-29.md`). All 29 services' start prices re-verified vs market — no other change needed. Copy updated EN/BM/中文: tagline/description/highlights/first-FAQ/meta/aio + guide `quoteIntro` ×3 ("we do not publish a starting price" → published-minimums wording) + 9 BM/ZH specialty pages + 3 blog posts ×3 locales. Regenerated: rate book (awning = 9 scopes), **new generic estimator + `/estimate/awning-installation`** (noindex; 23rd direct estimator), llms.txt "from RM 380" (29/29 services priced), schema lowPrice/UnitPriceSpecification, cost DirectAnswer "starts from RM 380; the 9 published rates below are priced per job, per sq ft". Guardrail documented: identical shared pricing copy pushed awning area pairs to 70.4% > 70% location-similarity budget → enumerations kept to service/cost pages only → 69.4% PASS. All gates PASS: prebuild **329,897 × 0**, type-check, lint 0/0, build **4,081 HTML**, audit:html none/none, audit:links 308,822+56 → 0, seo-head 4,054 parity, schema-size, bp1 (NAP 62.2%), location-similarity 69.4%, meta, seo:audit, part5 0 errors; corpus cost qa=100%, BM/ZH leaks 0/0 | ✅ DONE — See `FIX-WAVE-13-REPORT.md` |
 
 ---
 
@@ -105,22 +106,35 @@
 
 ## ⭐ NEXT SESSION MUST CONTINUE HERE
 
-**All 5 audit parts are complete; Fix Wave 1–12, BP-1 phase 1 and CF-4 are
+**All 5 audit parts are complete; Fix Wave 1–13, BP-1 phase 1 and CF-4 are
 complete.** Wave 9 closed the unblocked CRO/UX queue, Wave 10 the
-§5.6/AEO/OG/NAP queue, Wave 11 closed P3-12 phase 1 (MS/ZH pod routes), and
-**Wave 12 closed P3-04** (the last unblocked **P1** on the board): every one of
-the 29 `/services/<svc>/cost` money pages now opens with the literal
-*"How much does {service} cost in KL & Selangor?"* DirectAnswer card — question
-H2 + a 2–3 sentence answer citing the published starting price **with its unit**
-+ the rate-book-derived pricing basis + an estimator link, in EN / BM / 中文 —
-and that same Q&A is the first `FAQPage` `Question` on the page. Corpus proof:
-`/services/<svc>/cost` **qa 0% → 100%**, "how much" H2 **0 → 29/29**,
-`faqSchemaNoVisibleMatch` **0** site-wide. Wave 12 also closed **P3-05** and
-repaired two audit tools. See `FIX-WAVE-12-REPORT.md`.
+§5.6/AEO/OG/NAP queue, Wave 11 closed P3-12 phase 1 (MS/ZH pod routes), Wave 12
+closed P3-04/P3-05 (the last unblocked **P1**s), and **Wave 13 (2026-08-29)
+closed the owner's pricing request**: `awning-installation` — the last
+"On Quote" service — now publishes **RM 380** as its starting price plus nine
+priced scopes (From RM 1,800 car porch; RM 18/25/30/60 per sq ft for metal
+deck / polycarbonate / ACP / glass; RM 20/sq ft canvas; From RM 380
+balcony-window; From RM 280 repair; RM 15/sq ft roller blinds), every figure
+set from fresh 2026 KL/Selangor competitor and market-rate research
+(`PRICE-MARKET-RESEARCH-2026-08-29.md`). All 29 services' start prices were
+re-verified against the market and needed no other change. The price change
+regenerated the rate book (awning = 9 estimator scopes), added the 23rd
+generic estimator + `/estimate/awning-installation` (noindex), and priced the
+AI surfaces (llms.txt 29/29, schema `lowPrice: 380`). **All 29 of 29 services
+now publish start-from prices.** See `FIX-WAVE-13-REPORT.md`.
 
-**With Wave 12 done, no P0 or P1 audit finding remains unblocked.** Everything
+**With Wave 13 done, no P0 or P1 audit finding remains unblocked.** Everything
 left is owner-blocked, needs owner data/access, or is a P2/P3 enhancement.
 
+0. **What Wave 13 changed (2026-08-29):** prices + pricing copy in
+   `config/services-data.ts` (awning EN/BM/中文), 9 BM/ZH specialty pages in
+   `config/specialty-locale-content.ts`, 3 awning blog posts ×3 locales
+   (`config/blog-data-awning.ts` + `config/blog-i18n.ts`). Guardrail learned:
+   identical pricing enumerations in area-shared copy (description,
+   sub-service descs) pushed awning area pairs to 70.4% on the
+   location-similarity gate (<70% budget) — keep detailed rate lists on the
+   service/cost pages (price table, FAQ, guide) and headline figures only in
+   area-shared fields; awning area pairs now sit at 69.4%. Watch it.
 1. **What Wave 12 changed (2026-08-29):** new `lib/cost-direct-answer.ts` (pure
    builder, shared by the client view and the server route so schema and HTML
    cannot drift), 8 new `costPage.directAnswer.*` keys × 3 locales, an optional

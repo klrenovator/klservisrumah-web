@@ -12248,7 +12248,7 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       name: "Pemasangan Awning Car Porch",
       tagline: "Awning car porch tersuai untuk melindungi kenderaan anda daripada matahari terik dan hujan lebat di seluruh KL & Selangor, dengan kecerunan, saliran dan bahan yang bersesuaian.",
       description:
-        "Pemasangan awning car porch direka khas mengikut ukuran porch anda — lebar, unjuran, ketinggian ruang kenderaan, titik pengancing pada dinding atau tiang, serta aliran air hujan. Kami membantu anda memilih bahan yang sesuai untuk ruang letak kereta: polikarbonat tinted mengurangkan haba sambil mengekalkan cahaya, metal deck bertebat atau ACP memberi teduhan yang lebih padat, dan kesemuanya dipasang pada rangka keluli atau aluminium dengan primer anti-karat. Kerja merangkumi pengukuran, cadangan reka bentuk, fabrikasi, pemasangan, pengedap sambungan dan semakan aliran air. Harga adalah atas sebut harga projek kerana setiap porch berbeza dari segi saiz dan keadaan.",
+        "Pemasangan awning car porch direka khas mengikut ukuran porch anda — lebar, unjuran, ketinggian ruang kenderaan, titik pengancing pada dinding atau tiang, serta aliran air hujan. Kami membantu anda memilih bahan yang sesuai untuk ruang letak kereta: polikarbonat tinted mengurangkan haba sambil mengekalkan cahaya, metal deck bertebat atau ACP memberi teduhan yang lebih padat, dan kesemuanya dipasang pada rangka keluli atau aluminium dengan primer anti-karat. Kerja merangkumi pengukuran, cadangan reka bentuk, fabrikasi, pemasangan, pengedap sambungan dan semakan aliran air. Harga bermula dari RM 1,800 seperti yang diterbitkan di laman perkhidmatan, dan disahkan sebagai sebut harga projek kerana setiap porch berbeza dari segi saiz dan keadaan.",
       highlights: [
         "Reka bentuk mengikut ukuran car porch anda — rentang, unjuran dan ketinggian ruang kenderaan",
         "Pilihan bahan mengikut keperluan haba: polikarbonat tinted, ACP atau metal deck bertebat",
@@ -12276,7 +12276,7 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       name: "车棚雨棚安装",
       tagline: "按您的车棚定制雨棚，在吉隆坡与雪兰莪为车辆遮挡烈日与大雨，坡度、排水和材料都经过针对性设计。",
       description:
-        "车棚雨棚按您的车棚尺寸定制——宽度、伸出长度、车辆净空、墙面或立柱固定点，以及雨水流向。我们协助您选择适合停车区的材料：着色聚碳酸酯在减少热量的同时保留光线，隔热金属瓦或 ACP 遮阳更彻底，并全部安装在施有防锈底漆的钢或铝骨架上。施工范围包括测量、设计建议、制作、安装、接缝密封和水流检查。价格按项目报价，因为每个车棚的尺寸和状况都不同。",
+        "车棚雨棚按您的车棚尺寸定制——宽度、伸出长度、车辆净空、墙面或立柱固定点，以及雨水流向。我们协助您选择适合停车区的材料：着色聚碳酸酯在减少热量的同时保留光线，隔热金属瓦或 ACP 遮阳更彻底，并全部安装在施有防锈底漆的钢或铝骨架上。施工范围包括测量、设计建议、制作、安装、接缝密封和水流检查。价格从公布的 RM 1,800 起步，并按项目确认，因为每个车棚的尺寸和状况都不同。",
       highlights: [
         "按车棚尺寸设计——跨度、伸出长度与车辆净空",
         "按隔热需求选材：着色聚碳酸酯、ACP 或隔热金属瓦",
@@ -12307,7 +12307,7 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       name: "Awning Polikarbonat",
       tagline: "Bumbung awning polikarbonat jernih atau tinted yang ringan dan membenarkan cahaya semula jadi masuk, untuk porch, halaman, laluan dan balkoni di KL & Selangor.",
       description:
-        "Awning polikarbonat menggunakan kepingan polikarbonat berkualiti pada rangka keluli atau aluminium. Kepingan tersedia dalam profil jernih, tinted atau gangsa, serta pilihan twin-wall untuk penebatan lebih baik. Jernih sesuai untuk laluan dan kawasan yang mahukan cahaya maksimum; tinted mengurangkan silau dan haba untuk car porch dan ruang duduk luar. Pemasangan yang betul menitikberatkan kecerunan, pengedap pada sambungan dinding, pengikat yang sesuai dan pembersihan berkala supaya kekal jernih. Atas sebut harga projek, bergantung pada luas, profil kepingan dan kemasan rangka.",
+        "Awning polikarbonat menggunakan kepingan polikarbonat berkualiti pada rangka keluli atau aluminium. Kepingan tersedia dalam profil jernih, tinted atau gangsa, serta pilihan twin-wall untuk penebatan lebih baik. Jernih sesuai untuk laluan dan kawasan yang mahukan cahaya maksimum; tinted mengurangkan silau dan haba untuk car porch dan ruang duduk luar. Pemasangan yang betul menitikberatkan kecerunan, pengedap pada sambungan dinding, pengikat yang sesuai dan pembersihan berkala supaya kekal jernih. Bermula dari RM 25 sekaki persegi seperti yang diterbitkan, dengan angka akhir bergantung pada luas, profil kepingan dan kemasan rangka.",
       highlights: [
         "Kepingan jernih, tinted atau gangsa, termasuk pilihan twin-wall",
         "Ringan — kurang beban pada struktur berbanding kaca",
@@ -12335,7 +12335,7 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       name: "聚碳酸酯雨棚",
       tagline: "透明或着色聚碳酸酯雨棚屋顶，轻质且可引入自然光，适用于吉隆坡与雪兰莪的车棚、庭院、走道和阳台。",
       description:
-        "聚碳酸酯雨棚采用优质聚碳酸酯板安装在钢或铝骨架上。板材有透明、着色或古铜色型材，以及隔热更佳的双层中空板可选。透明板适合走道和想要最多光线的区域；着色板可为车棚和户外休憩区减少眩光与热量。正确的安装重视坡度、墙面接缝密封、合适的紧固件和定期清洁以保持通透。价格按项目报价，取决于面积、板材型材和骨架饰面。",
+        "聚碳酸酯雨棚采用优质聚碳酸酯板安装在钢或铝骨架上。板材有透明、着色或古铜色型材，以及隔热更佳的双层中空板可选。透明板适合走道和想要最多光线的区域；着色板可为车棚和户外休憩区减少眩光与热量。正确的安装重视坡度、墙面接缝密封、合适的紧固件和定期清洁以保持通透。价格每平方尺从公布的 RM 25 起步，最终取决于面积、板材型材和骨架饰面。",
       highlights: [
         "透明、着色或古铜色板材，含双层中空选项",
         "轻质——对结构的负荷小于玻璃",
@@ -12366,7 +12366,7 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       name: "Awning Metal Deck",
       tagline: "Bumbung metal deck yang kukuh dan menjimatkan untuk perlindungan hujan dan matahari di kawasan utiliti, ruang jemuran dan porch seluruh KL & Selangor.",
       description:
-        "Awning metal deck menggunakan kepingan logam berprofil pada rangka keluli dengan primer anti-karat dan kemasan tahan cuaca. Ia adalah pilihan yang kukuh dan menjimatkan untuk ruang utiliti, ruang menjemur, porch samping dan kawasan kerja. Untuk mengurangkan haba dan bunyi hujan, profil bertebat (dengan lapisan busa PU) boleh dipilih berbanding kepingan biasa. Pasukan kami memastikan kecerunan yang mencukupi, pengancing pada struktur yang kukuh dan rawatan anti-karat pada rangka keluli. Harga adalah atas sebut harga projek mengikut luas, jenis profil dan keperluan kemasan.",
+        "Awning metal deck menggunakan kepingan logam berprofil pada rangka keluli dengan primer anti-karat dan kemasan tahan cuaca. Ia adalah pilihan yang kukuh dan menjimatkan untuk ruang utiliti, ruang menjemur, porch samping dan kawasan kerja. Untuk mengurangkan haba dan bunyi hujan, profil bertebat (dengan lapisan busa PU) boleh dipilih berbanding kepingan biasa. Pasukan kami memastikan kecerunan yang mencukupi, pengancing pada struktur yang kukuh dan rawatan anti-karat pada rangka keluli. Harga bermula dari RM 18 sekaki persegi seperti yang diterbitkan, mengikut luas, jenis profil dan keperluan kemasan.",
       highlights: [
         "Pilihan kukuh dan menjimatkan untuk gunaan utiliti",
         "Profil bertebat PU tersedia untuk kurang haba dan bunyi hujan",
@@ -12394,7 +12394,7 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       name: "金属瓦雨棚",
       tagline: "坚固实惠的金属瓦屋面，为吉隆坡与雪兰莪的工作区、晒衣区和车棚提供防雨防晒保护。",
       description:
-        "金属瓦雨棚采用压型金属板安装在钢架上，钢架施以防锈底漆和耐候饰面。对工作区、晒衣区、侧车棚和作业区而言，它是坚固又经济的选择。为减少热量和雨声，可选用带 PU 发泡层的隔热型材而非普通板。我们的团队会确保足够坡度、固定在牢固结构上，并对钢架做防锈处理。价格按项目报价，取决于面积、型材类型和饰面需求。",
+        "金属瓦雨棚采用压型金属板安装在钢架上，钢架施以防锈底漆和耐候饰面。对工作区、晒衣区、侧车棚和作业区而言，它是坚固又经济的选择。为减少热量和雨声，可选用带 PU 发泡层的隔热型材而非普通板。我们的团队会确保足够坡度、固定在牢固结构上，并对钢架做防锈处理。价格每平方尺从公布的 RM 18 起步，取决于面积、型材类型和饰面需求。",
       highlights: [
         "坚固实惠，适合实用型用途",
         "可选 PU 隔热型材，减少热量和雨声",
@@ -12425,7 +12425,7 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       name: "Awning Panel Komposit Aluminium (ACP)",
       tagline: "Awning ACP yang legap, kemas dan moden dengan penyelenggaraan rendah — sesuai untuk car porch, depan rumah dan patio di KL & Selangor.",
       description:
-        "Awning panel komposit aluminium (ACP) menggunakan panel tegar bermuka aluminium pada rangka keluli atau aluminium. ACP legap, jadi ia memberi teduhan maksimum, mengurangkan silau dan haba, dan lebih senyap ketika hujan berbanding kepingan nipis. Penampilannya kemas dan moden, tahan lama serta mudah diselenggara — sekadar dicuci sekali-sekala dan panel tidak berkarat. Ia sesuai untuk car porch, bahagian depan rumah, patio dan halaman yang mengutamakan rupa. Dipasang mengikut ukuran tapak dengan kecerunan, pengancing dan pengedap yang betul. Atas sebut harga projek.",
+        "Awning panel komposit aluminium (ACP) menggunakan panel tegar bermuka aluminium pada rangka keluli atau aluminium. ACP legap, jadi ia memberi teduhan maksimum, mengurangkan silau dan haba, dan lebih senyap ketika hujan berbanding kepingan nipis. Penampilannya kemas dan moden, tahan lama serta mudah diselenggara — sekadar dicuci sekali-sekala dan panel tidak berkarat. Ia sesuai untuk car porch, bahagian depan rumah, patio dan halaman yang mengutamakan rupa. Dipasang mengikut ukuran tapak dengan kecerunan, pengancing dan pengedap yang betul. Harga bermula dari RM 30 sekaki persegi seperti yang diterbitkan.",
       highlights: [
         "Penampilan moden kemas dengan warna yang boleh dipadankan",
         "Legap — teduhan maksimum, kurang silau dan haba",
@@ -12453,7 +12453,7 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       name: "铝塑板（ACP）雨棚",
       tagline: "不透明、整洁现代且维护极少的 ACP 雨棚——适合吉隆坡与雪兰莪的车棚、屋前和露台。",
       description:
-        "铝塑复合板（ACP）雨棚采用刚性铝面面板安装在钢或铝骨架上。ACP 不透明，因此遮阳最彻底，能减少眩光和热量，且下雨时比薄板更安静。外观整洁现代，耐用且维护简单——偶尔清洗即可，板材不生锈。它适合重视外观的车棚、屋前、露台和庭院。按现场尺寸安装，并做好坡度、固定和密封。价格按项目报价。",
+        "铝塑复合板（ACP）雨棚采用刚性铝面面板安装在钢或铝骨架上。ACP 不透明，因此遮阳最彻底，能减少眩光和热量，且下雨时比薄板更安静。外观整洁现代，耐用且维护简单——偶尔清洗即可，板材不生锈。它适合重视外观的车棚、屋前、露台和庭院。按现场尺寸安装，并做好坡度、固定和密封。价格每平方尺从公布的 RM 30 起步。",
       highlights: [
         "整洁现代的外观，颜色可与房屋搭配",
         "不透明——遮阳最彻底，眩光和热量更少",
@@ -12484,7 +12484,7 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       name: "Awning Kaca",
       tagline: "Awning kaca tempered premium untuk pintu masuk, tingkap dan kawasan ciri yang mahukan penampilan cerah dan mewah di KL & Selangor.",
       description:
-        "Awning kaca menggunakan panel kaca keselamatan tempered pada rangka keluli, keluli tahan karat atau aluminium. Ia memberi penutup hujan yang elegan sambil membenarkan cahaya maksimum masuk, sesuai untuk pintu masuk utama, pintu, tingkap dan laluan hiasan. Oleh kerana kaca lebih berat berbanding kepingan, rangka, pendakap dan pengancing mesti bersesuaian dengan rentang dan beban — ini adalah tumpuan utama pemasangan kami. Penyelenggaraan adalah minimum: kaca dicuci seperti tingkap dan pengedap diperiksa. Atas sebut harga projek mengikut luas, ketebalan kaca dan kemasan rangka.",
+        "Awning kaca menggunakan panel kaca keselamatan tempered pada rangka keluli, keluli tahan karat atau aluminium. Ia memberi penutup hujan yang elegan sambil membenarkan cahaya maksimum masuk, sesuai untuk pintu masuk utama, pintu, tingkap dan laluan hiasan. Oleh kerana kaca lebih berat berbanding kepingan, rangka, pendakap dan pengancing mesti bersesuaian dengan rentang dan beban — ini adalah tumpuan utama pemasangan kami. Penyelenggaraan adalah minimum: kaca dicuci seperti tingkap dan pengedap diperiksa. Harga bermula dari RM 60 sekaki persegi seperti yang diterbitkan, mengikut luas, ketebalan kaca dan kemasan rangka.",
       highlights: [
         "Kaca keselamatan tempered untuk penampilan premium",
         "Cahaya maksimum sambil menumpahkan hujan",
@@ -12512,7 +12512,7 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       name: "玻璃雨棚",
       tagline: "用于吉隆坡与雪兰莪入口、窗户和特色区域的高档钢化玻璃雨棚，外观明亮、质感高级。",
       description:
-        "玻璃雨棚采用钢化安全玻璃板，安装在钢、不锈钢或铝骨架上。它既能优雅挡雨，又能让最多光线进入，适合大门入口、门、窗和装饰走道。由于玻璃比板材重，骨架、支架和固定件必须匹配跨度和负荷——这是我们安装的重点。维护极少：玻璃像窗户一样清洁，并检查密封胶。价格按项目报价，取决于面积、玻璃厚度和骨架饰面。",
+        "玻璃雨棚采用钢化安全玻璃板，安装在钢、不锈钢或铝骨架上。它既能优雅挡雨，又能让最多光线进入，适合大门入口、门、窗和装饰走道。由于玻璃比板材重，骨架、支架和固定件必须匹配跨度和负荷——这是我们安装的重点。维护极少：玻璃像窗户一样清洁，并检查密封胶。价格每平方尺从公布的 RM 60 起步，取决于面积、玻璃厚度和骨架饰面。",
       highlights: [
         "钢化安全玻璃，外观高档",
         "挡雨同时采光最佳",
@@ -12543,7 +12543,7 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       name: "Awning Kanvas & Fabrik",
       tagline: "Awning kanvas dan fabrik tetap atau boleh-tarik untuk balkoni, patio, teres dan kedai — teduhan yang cantik dengan rupa yang lembut, di KL & Selangor.",
       description:
-        "Awning kanvas dan fabrik memberikan teduhan yang menarik untuk balkoni, patio, teres, halaman dan muka kedai. Sistem fabrik tetap memberi rupa kanopi yang lembut, manakala sistem boleh-tarik (retractable) boleh dibuka apabila mahu teduh dan ditarik balik untuk matahari atau pemandangan. Sistem ini tertumpu pada teduhan, bukan bumbung hujan kekal — fabrik patut dilindung atau ditarik balik ketika ribut, dan fabrik perlu dicuci serta akhirnya diganti sepanjang hayatnya. Pilihan manual dan bermotor tersedia untuk sistem boleh-tarik; kami sahkan pilihan yang sesuai untuk tapak anda. Atas sebut harga projek.",
+        "Awning kanvas dan fabrik memberikan teduhan yang menarik untuk balkoni, patio, teres, halaman dan muka kedai. Sistem fabrik tetap memberi rupa kanopi yang lembut, manakala sistem boleh-tarik (retractable) boleh dibuka apabila mahu teduh dan ditarik balik untuk matahari atau pemandangan. Sistem ini tertumpu pada teduhan, bukan bumbung hujan kekal — fabrik patut dilindung atau ditarik balik ketika ribut, dan fabrik perlu dicuci serta akhirnya diganti sepanjang hayatnya. Pilihan manual dan bermotor tersedia untuk sistem boleh-tarik; kami sahkan pilihan yang sesuai untuk tapak anda. Kanvas tetap bermula dari RM 20 sekaki persegi seperti yang diterbitkan; sistem boleh-tarik disebut mengikut model dan saiz.",
       highlights: [
         "Teduhan yang cantik untuk balkoni, patio dan muka kedai",
         "Sistem tetap atau boleh-tarik (retractable) mengikut keperluan",
@@ -12571,7 +12571,7 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       name: "帆布与布艺雨棚",
       tagline: "用于吉隆坡与雪兰莪阳台、露台、天台和店面的固定或伸缩式帆布布艺雨棚——遮阳美观、线条柔和。",
       description:
-        "帆布布艺雨棚为阳台、露台、天台、庭院和店面提供美观遮阳。固定布艺系统带来柔和的雨篷外观，伸缩式系统则可在需要遮阳时打开、要阳光或景观时收回。这类系统以遮阳为主，不是永久防雨屋顶——风暴时应收起或收回布艺，布料也需要清洗并在使用寿命内更换。提供手动与电动伸缩系统；我们会为您的现场确认合适方案。价格按项目报价。",
+        "帆布布艺雨棚为阳台、露台、天台、庭院和店面提供美观遮阳。固定布艺系统带来柔和的雨篷外观，伸缩式系统则可在需要遮阳时打开、要阳光或景观时收回。这类系统以遮阳为主，不是永久防雨屋顶——风暴时应收起或收回布艺，布料也需要清洗并在使用寿命内更换。提供手动与电动伸缩系统；我们会为您的现场确认合适方案。固定布艺每平方尺从公布的 RM 20 起步，伸缩系统按型号与尺寸报价。",
       highlights: [
         "为阳台、露台和店面提供美观遮阳",
         "按需选择固定或伸缩式系统",
@@ -12602,7 +12602,7 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       name: "Awning Balkoni, Patio & Tingkap",
       tagline: "Awning bersaiz khas untuk balkoni, patio, teres, tingkap dan pintu di KL & Selangor — teduhan dan perlindungan hujan tanpa menutup ruang anda.",
       description:
-        "Awning untuk balkoni, patio, teres, tingkap dan pintu direka mengikut bukaan anda supaya ruang luar lebih selesa digunakan untuk berehat, menjemur atau berkebun. Bahan yang biasa dipilih termasuk polikarbonat untuk cahaya, ACP untuk naungan yang kemas, dan fabrik boleh-tarik untuk fleksibiliti. Untuk hartanah strata seperti kondominium dan pangsapuri, garis panduan JMB/MC mengenai reka bentuk dan unjuran perlu dipatuhi — kami menyediakan ukuran dan spesifikasi untuk perbincangan anda dengan pengurusan. Atas sebut harga projek mengikut saiz, bahan dan akses.",
+        "Awning untuk balkoni, patio, teres, tingkap dan pintu direka mengikut bukaan anda supaya ruang luar lebih selesa digunakan untuk berehat, menjemur atau berkebun. Bahan yang biasa dipilih termasuk polikarbonat untuk cahaya, ACP untuk naungan yang kemas, dan fabrik boleh-tarik untuk fleksibiliti. Untuk hartanah strata seperti kondominium dan pangsapuri, garis panduan JMB/MC mengenai reka bentuk dan unjuran perlu dipatuhi — kami menyediakan ukuran dan spesifikasi untuk perbincangan anda dengan pengurusan. Harga bermula dari RM 380 seperti yang diterbitkan, mengikut saiz, bahan dan akses.",
       highlights: [
         "Disesuaikan dengan bukaan balkoni, patio, tingkap atau pintu anda",
         "Pilihan polikarbonat, ACP atau fabrik mengikut cahaya yang diingini",
@@ -12630,7 +12630,7 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       name: "阳台、露台与窗户雨棚",
       tagline: "为吉隆坡与雪兰莪的阳台、露台、天台、窗户和门量身定制的雨棚——遮阳挡雨又不封闭空间。",
       description:
-        "阳台、露台、天台、窗户和门的雨棚按您的开口定制，让户外空间更适合休憩、晾晒或种植。常见选材包括用于透光的聚碳酸酯、整洁遮阳的 ACP，以及灵活的伸缩布艺。对于共管公寓和分层房产，须遵守 JMB/MC 关于设计和伸出长度的规定——我们可提供尺寸和规格，供您与管理处沟通。价格按项目报价，取决于尺寸、材料和施工通道。",
+        "阳台、露台、天台、窗户和门的雨棚按您的开口定制，让户外空间更适合休憩、晾晒或种植。常见选材包括用于透光的聚碳酸酯、整洁遮阳的 ACP，以及灵活的伸缩布艺。对于共管公寓和分层房产，须遵守 JMB/MC 关于设计和伸出长度的规定——我们可提供尺寸和规格，供您与管理处沟通。价格从公布的 RM 380 起步，取决于尺寸、材料和施工通道。",
       highlights: [
         "按您的阳台、露台、窗户或门口尺寸定制",
         "按光线需求可选聚碳酸酯、ACP 或布艺",
@@ -12661,7 +12661,7 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       name: "Penggantian & Pembaikan Awning",
       tagline: "Menilai, membaiki atau menggantikan awning lama yang bocor, berkarat, retak atau melendut di KL & Selangor — dengan pilihan yang jelas sebelum sebarang kerja.",
       description:
-        "Perkhidmatan penggantian dan pembaikan awning bermula dengan penilaian struktur sedia ada: kepingan bumbung, rangka, sambungan, pengikat, pengedap dan saliran. Kebocoran lazimnya berpunca daripada kepingan retak, pengedap yang usang, pengikat longgar atau longkang tersumbat; air bertakung menandakan kecerunan atau sokongan tidak mencukupi; dan rangka yang berkarat atau melendut mungkin perlu diganti. Kami laporkan apa yang boleh dibaiki berbanding apa yang perlu diganti, sediakan sebut harga berasingan untuk pembongkaran dan pelupusan awning lama jika perlu, dan pastikan pemasangan baharu menumpukan pada kecerunan, pengedap dan aliran air. Atas sebut harga projek.",
+        "Perkhidmatan penggantian dan pembaikan awning bermula dengan penilaian struktur sedia ada: kepingan bumbung, rangka, sambungan, pengikat, pengedap dan saliran. Kebocoran lazimnya berpunca daripada kepingan retak, pengedap yang usang, pengikat longgar atau longkang tersumbat; air bertakung menandakan kecerunan atau sokongan tidak mencukupi; dan rangka yang berkarat atau melendut mungkin perlu diganti. Kami laporkan apa yang boleh dibaiki berbanding apa yang perlu diganti, sediakan sebut harga berasingan untuk pembongkaran dan pelupusan awning lama jika perlu, dan pastikan pemasangan baharu menumpukan pada kecerunan, pengedap dan aliran air. Pembaikan bermula dari RM 280 seperti yang diterbitkan; penggantian mengikut kadar bahan yang sama.",
       highlights: [
         "Penilaian punca bocor, takung air, karat dan lendutan",
         "Pilihan pembaikan berbanding penggantian yang jelas",
@@ -12689,7 +12689,7 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       name: "雨棚更换与维修",
       tagline: "在吉隆坡与雪兰莪评估、维修或更换漏水、生锈、开裂或下垂的旧雨棚——动工前给您清晰的方案选择。",
       description:
-        "雨棚维修与更换服务从评估现有结构开始：屋面板、骨架、接缝、紧固件、密封胶和排水。漏水通常源于板材开裂、密封胶老化、紧固件松动或天沟堵塞；积水表示坡度或支撑不足；生锈或下垂的骨架可能需要更换。我们会说明哪些可以修、哪些需要换，必要时为旧雨棚拆除与清运单独报价，并确保新安装在坡度、密封和水流出上都处理到位。价格按项目报价。",
+        "雨棚维修与更换服务从评估现有结构开始：屋面板、骨架、接缝、紧固件、密封胶和排水。漏水通常源于板材开裂、密封胶老化、紧固件松动或天沟堵塞；积水表示坡度或支撑不足；生锈或下垂的骨架可能需要更换。我们会说明哪些可以修、哪些需要换，必要时为旧雨棚拆除与清运单独报价，并确保新安装在坡度、密封和水流出上都处理到位。维修从公布的 RM 280 起步，更换按材料价计算。",
       highlights: [
         "诊断漏水、积水、生锈和下垂的原因",
         "维修与更换的选择清晰说明",
@@ -12711,7 +12711,7 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
         { q: "现有骨架可以沿用吗？", a: "如果骨架仍牢固、没有严重生锈且尺寸合适，有时可以配合新面板和新密封继续使用。我们会先评估结构再作此建议。" },
       ],
       metaTitle: "吉隆坡与雪兰莪雨棚更换与维修 | 漏水、生锈",
-      metaDesc: "维修与更换吉隆坡、雪兰莪老旧、漏水、生锈、积水或下垂的雨棚——评估清晰、按项目报价。欢迎通过 WhatsApp 联系。",
+      metaDesc: "维修与更换吉隆坡、雪兰莪老旧、漏水、生锈、积水或下垂的雨棚——维修从公布的 RM 280 起，评估清晰、报价明确。欢迎通过 WhatsApp 联系。",
     },
   },
 
@@ -12720,7 +12720,7 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       name: "Bidai Luar (Roller Blind)",
       tagline: "Bidai luar dan zip roller blind untuk balkoni, patio, tingkap dan kedai di KL & Selangor — teduhan, privasi dan lindungan hujan yang boleh digulung apabila tidak digunakan.",
       description:
-        "Bidai luar (roller blind) ialah pelengkap popular kepada awning untuk balkoni, patio, tingkap, pintu leret dan muka kedai. Fabrik menegak digulung ke atas apabila tidak digunakan, dan direndahkan untuk menapis matahari, pandangan dan gerimis. Pilihan manual (tali atau engkol) dan bermotor tersedia; sistem zip memegang fabrik kekal dalam rel supaya tidak kembang ketika berangin. Kami mengukur bukaan, membincangkan pilihan fabrik — daripada teduhan separa hingga gelap — dan menetapkan pengancing yang sesuai pada dinding, siling atau struktur sedia ada. Atas sebut harga projek mengikut saiz bukaan, pilihan fabrik dan sistem operasi.",
+        "Bidai luar (roller blind) ialah pelengkap popular kepada awning untuk balkoni, patio, tingkap, pintu leret dan muka kedai. Fabrik menegak digulung ke atas apabila tidak digunakan, dan direndahkan untuk menapis matahari, pandangan dan gerimis. Pilihan manual (tali atau engkol) dan bermotor tersedia; sistem zip memegang fabrik kekal dalam rel supaya tidak kembang ketika berangin. Kami mengukur bukaan, membincangkan pilihan fabrik — daripada teduhan separa hingga gelap — dan menetapkan pengancing yang sesuai pada dinding, siling atau struktur sedia ada. Harga bermula dari RM 15 sekaki persegi seperti yang diterbitkan, mengikut saiz bukaan, pilihan fabrik dan sistem operasi.",
       highlights: [
         "Pilihan operasi manual (tali/engkol) atau bermotor",
         "Sistem zip memegang fabrik kekal dalam rel ketika berangin",
@@ -12748,7 +12748,7 @@ export const specialtyLocaleContent: Record<string, SpecialtyLocaleContent> = {
       name: "户外卷帘",
       tagline: "适用于吉隆坡与雪兰莪阳台、露台、窗户和店面的户外与拉链卷帘——可调遮阳、隐私与挡雨，不用时可收起。",
       description:
-        "户外卷帘（roller blind）是雨棚的热门搭配，适用于阳台、露台、窗户、推拉门和店面。布帘不用时向上收起，需要时放下以遮挡阳光、视线和毛毛雨。提供手动（拉绳或摇柄）与电动操作；拉链（zip）系统将布料固定在导轨内，有风时不易鼓胀。我们会测量洞口，讨论布料选择——从半遮光到全遮光——并根据墙面、天花板或现有结构选定合适的固定方式。价格按项目报价，取决于洞口尺寸、布料选择与操作系统。",
+        "户外卷帘（roller blind）是雨棚的热门搭配，适用于阳台、露台、窗户、推拉门和店面。布帘不用时向上收起，需要时放下以遮挡阳光、视线和毛毛雨。提供手动（拉绳或摇柄）与电动操作；拉链（zip）系统将布料固定在导轨内，有风时不易鼓胀。我们会测量洞口，讨论布料选择——从半遮光到全遮光——并根据墙面、天花板或现有结构选定合适的固定方式。价格每平方尺从公布的 RM 15 起步，取决于洞口尺寸、布料选择与操作系统。",
       highlights: [
         "手动（拉绳/摇柄）或电动操作可选",
         "拉链系统有风时保持布料贴合导轨",

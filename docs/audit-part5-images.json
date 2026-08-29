@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-29T16:25:51.126Z",
+  "generatedAt": "2026-08-29T17:21:32.751Z",
   "distinctImages": 37,
   "topImages": [
     {
       "src": "/logo/logo-lockup.png",
-      "pages": 4080
+      "pages": 4081
     },
     {
       "src": "/hero-aircon.svg",
@@ -391,7 +391,7 @@
       ]
     },
     "en:/estimate/*": {
-      "pages": 23,
+      "pages": 24,
       "meanImgs": 2,
       "meanRaster": 2,
       "meanSvg": 0,
@@ -403,7 +403,7 @@
       "ogImages": [
         "https://www.klservisrumah.my/og-image?title=Aircon+Service%2C+Repair+%26+Installation+Cost+Estimator&amp;t=default",
         "https://www.klservisrumah.my/og-image?title=Auto+Gate+%26+Motorised+Gate+Cost+Estimator+%7C+KL+Servis+Rumah&amp;t=default",
-        "https://www.klservisrumah.my/og-image?title=Bathroom+Renovation+Cost+Estimator+%7C+KL+Servis+Rumah&amp;t=default"
+        "https://www.klservisrumah.my/og-image?title=Awning+Installation+Services+Cost+Estimator&amp;t=default"
       ]
     },
     "en:/faq": {

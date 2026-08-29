@@ -1,5 +1,16 @@
 # Awning Installation Service Page — Project Tracker
 
+> **⚠️ UPDATE 2026-08-29 (Fix Wave 13):** the "quote-safe / no published
+> prices" positioning described throughout this tracker was **superseded by an
+> owner decision**. The service now publishes market-aligned starting prices:
+> **RM 380** start + 9 priced scopes (From RM 1,800 car porch; RM 18–60/sq ft
+> by material; From RM 380 balcony/window; From RM 280 repair; RM 15/sq ft
+> roller blinds), sourced from 2026 competitor/market research — see
+> `docs/full-website-deep-audit/PRICE-MARKET-RESEARCH-2026-08-29.md` and
+> `docs/full-website-deep-audit/FIX-WAVE-13-REPORT.md`. The per-project
+> quotation workflow (free site visit, itemised fixed quote) is unchanged;
+> published figures are explicitly minimum starting prices.
+
 **Project:** Dedicated Awning Installation service page for klservisrumah.my
 **Market:** Kuala Lumpur & Selangor (Klang Valley), Malaysia
 **Created:** 2026-08-27

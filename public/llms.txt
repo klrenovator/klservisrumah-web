@@ -33,7 +33,7 @@ KL Servis Rumah provides professional home maintenance services across Kuala Lum
 - Aircon Service, Repair & Installation: from RM 129 — Basic Servicing, Chemical Wash, Chemical Overhaul
 - Kitchen Renovation: from RM 8,000 — Full Kitchen Renovation, Kitchen Cabinet Installation, Kitchen Countertop Replacement
 - Bathroom Renovation: from RM 6,000 — Full Bathroom Renovation, Toilet Renovation, Bathroom Makeover
-- Awning Installation Services: project-quoted — Car Porch Awning Installation, Polycarbonate Awning, Metal Deck Awning
+- Awning Installation Services: from RM 380 — Car Porch Awning Installation, Polycarbonate Awning, Metal Deck Awning
 
 Full directory of all 29 services: https://www.klservisrumah.my/services
 
@@ -135,6 +135,7 @@ One short, stable link per service (https://www.klservisrumah.my/estimate/<servi
 - Aircon Service, Repair & Installation (from RM 129): https://www.klservisrumah.my/estimate/aircon
 - Kitchen Renovation (from RM 8,000): https://www.klservisrumah.my/estimate/kitchen-renovation
 - Bathroom Renovation (from RM 6,000): https://www.klservisrumah.my/estimate/bathroom-renovation
+- Awning Installation Services (from RM 380): https://www.klservisrumah.my/estimate/awning-installation
 
 ## Business Details
 - Legal Name: Multicore Dynamics Resources

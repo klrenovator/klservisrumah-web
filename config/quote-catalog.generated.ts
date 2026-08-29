@@ -3921,157 +3921,157 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
   "awning-installation": {
     "slug": "awning-installation",
     "title": "Awning Installation Services",
-    "startPrice": "On Quote",
-    "tagline": "Custom awnings and awning roofing for car porches, entrances, windows, balconies and yards across the Klang Valley (KL & Selangor) — polycarbonate, metal deck, aluminium composite (ACP), glass and fabric systems, plus retractable awnings and outdoor roller blinds, fabricated and installed to suit your site. Project-quoted with a 12-month workmanship warranty.",
+    "startPrice": "RM 380",
+    "tagline": "Custom awnings and awning roofing for car porches, entrances, windows, balconies and yards across the Klang Valley (KL & Selangor) — polycarbonate, metal deck, aluminium composite (ACP), glass and fabric systems, plus retractable awnings and outdoor roller blinds, fabricated and installed to suit your site. Starting from RM 380 with per-sq-ft rates for every material, project-quoted with a 12-month workmanship warranty.",
     "warranty": "12-month workmanship warranty on fabrication & installation, as stated in your quotation",
     "subServices": [
       {
         "name": "Car Porch Awning Installation",
-        "price": "On Quote",
+        "price": "From RM 1,800",
         "desc": "New car porch / carport awning to shade and protect vehicles from sun and rain, sized to your porch with suitable slope and drainage."
       },
       {
         "name": "Polycarbonate Awning",
-        "price": "On Quote",
+        "price": "From RM 25 / sq ft",
         "desc": "Polycarbonate sheet awning roofing in clear or tinted profiles — translucent, lightweight cover for porch, yard, walkway or balcony that lets natural light through."
       },
       {
         "name": "Metal Deck Awning",
-        "price": "On Quote",
+        "price": "From RM 18 / sq ft",
         "desc": "Metal deck / metal-sheet awning roofing for strong rain and sun protection over utility areas, drying yards and porches, with anti-rust frame treatment."
       },
       {
         "name": "Aluminium Composite (ACP) Awning",
-        "price": "On Quote",
+        "price": "From RM 30 / sq ft",
         "desc": "Aluminium composite panel awning — opaque, clean-lined and low-maintenance cover that reduces glare and rain noise for porches and yards."
       },
       {
         "name": "Glass Awning",
-        "price": "On Quote",
+        "price": "From RM 60 / sq ft",
         "desc": "Tempered glass awning for entrances, windows and feature areas where a premium, light-filled look is wanted, framed and fixed to suit the opening."
       },
       {
         "name": "Canvas & Fabric Awning",
-        "price": "On Quote",
+        "price": "From RM 20 / sq ft",
         "desc": "Fixed canvas/fabric awnings and retractable systems — manual or motorised — for balconies, patios, terraces and shopfronts where shade and appearance are the priority."
       },
       {
         "name": "Balcony, Patio & Window Awning",
-        "price": "On Quote",
+        "price": "From RM 380",
         "desc": "Awnings sized for balconies, patios, terraces, windows and doors — shade and rain protection without closing up the space."
       },
       {
         "name": "Awning Replacement & Repair",
-        "price": "On Quote",
+        "price": "From RM 280",
         "desc": "Replacing old, leaking, rusted or sagging awnings — inspection of the existing frame, roofing, joints and drainage, with repair or full replacement options."
       },
       {
         "name": "Outdoor Roller Blinds",
-        "price": "On Quote",
+        "price": "From RM 15 / sq ft",
         "desc": "Outdoor and zip roller blinds for balconies, patios, windows and shopfronts — manual or motorised shade, privacy and rain screening that rolls away when not needed."
       }
     ],
     "i18n": {
       "ms": {
         "title": "Perkhidmatan Pemasangan Awning",
-        "tagline": "Awning tersuai dan bumbung awning untuk car porch, pintu masuk, tingkap, balkoni dan halaman rumah di seluruh Lembah Klang (KL & Selangor) — sistem polikarbonat, metal deck, panel komposit aluminium (ACP), kaca dan fabrik, serta awning boleh-tarik dan bidai luar (roller blind), difabrikasi dan dipasang mengikut tapak anda. Harga atas sebut harga projek dengan waranti mutu kerja 12 bulan.",
+        "tagline": "Awning tersuai dan bumbung awning untuk car porch, pintu masuk, tingkap, balkoni dan halaman rumah di seluruh Lembah Klang (KL & Selangor) — sistem polikarbonat, metal deck, panel komposit aluminium (ACP), kaca dan fabrik, serta awning boleh-tarik dan bidai luar (roller blind), difabrikasi dan dipasang mengikut tapak anda. Bermula dari RM 380 dengan kadar sekaki persegi untuk setiap bahan, sebut harga projek dengan waranti mutu kerja 12 bulan.",
         "warranty": "Waranti mutu kerja 12 bulan untuk fabrikasi & pemasangan, seperti yang dinyatakan dalam sebut harga anda",
         "subServices": [
           {
             "name": "Pemasangan Awning Car Porch",
-            "price": "Atas Sebut Harga",
+            "price": "Dari RM 1,800",
             "desc": "Awning car porch/port kereta baharu untuk melindungi kenderaan daripada matahari dan hujan, bersaiz mengikut porch anda dengan kecerunan dan saliran yang sesuai."
           },
           {
             "name": "Awning Polikarbonat",
-            "price": "Atas Sebut Harga",
+            "price": "Dari RM 25 / kaki persegi",
             "desc": "Bumbung awning kepingan polikarbonat dalam profil jernih atau tinted — penutup lut cahaya dan ringan untuk porch, halaman, laluan atau balkoni."
           },
           {
             "name": "Awning Metal Deck",
-            "price": "Atas Sebut Harga",
+            "price": "Dari RM 18 / kaki persegi",
             "desc": "Bumbung awning metal deck/kepingan logam untuk perlindungan hujan dan matahari yang kuat di kawasan utiliti, ruang jemuran dan porch, dengan rangka dirawat anti-karat."
           },
           {
             "name": "Awning Panel Komposit Aluminium (ACP)",
-            "price": "Atas Sebut Harga",
+            "price": "Dari RM 30 / kaki persegi",
             "desc": "Awning panel komposit aluminium — penutup legap, kemas dan kurang penyelenggaraan yang mengurangkan silau dan bunyi hujan untuk porch dan halaman."
           },
           {
             "name": "Awning Kaca",
-            "price": "Atas Sebut Harga",
+            "price": "Dari RM 60 / kaki persegi",
             "desc": "Awning kaca tempered untuk pintu masuk, tingkap dan kawasan ciri yang mahukan penampilan premium dan terang, dengan rangka dan pengancing yang sesuai."
           },
           {
             "name": "Awning Kanvas & Fabrik",
-            "price": "Atas Sebut Harga",
+            "price": "Dari RM 20 / kaki persegi",
             "desc": "Awning kanvas/fabrik tetap dan sistem boleh-tarik — manual atau bermotor — untuk balkoni, patio, teres dan kedai di mana teduhan dan rupa menjadi keutamaan."
           },
           {
             "name": "Awning Balkoni, Patio & Tingkap",
-            "price": "Atas Sebut Harga",
+            "price": "Dari RM 380",
             "desc": "Awning bersaiz untuk balkoni, patio, teres, tingkap dan pintu — teduhan dan perlindungan hujan tanpa menutup ruang."
           },
           {
             "name": "Penggantian & Pembaikan Awning",
-            "price": "Atas Sebut Harga",
+            "price": "Dari RM 280",
             "desc": "Menggantikan awning lama, bocor, berkarat atau melendut — pemeriksaan rangka, bumbung, sambungan dan saliran sedia ada, dengan pilihan pembaikan atau penggantian penuh."
           },
           {
             "name": "Bidai Luar (Roller Blind)",
-            "price": "Atas Sebut Harga",
+            "price": "Dari RM 15 / kaki persegi",
             "desc": "Bidai luar dan zip roller blind untuk balkoni, patio, tingkap dan kedai — teduhan, privasi dan lindungan hujan secara manual atau bermotor, boleh digulung apabila tidak digunakan."
           }
         ]
       },
       "zh": {
         "title": "雨棚安装服务",
-        "tagline": "为巴生谷（吉隆坡与雪兰莪）的车棚、入口、窗户、阳台及庭院定制雨棚与雨棚屋顶——聚碳酸酯、金属瓦、铝塑板（ACP）、玻璃与布艺系统，另有伸缩雨棚与户外卷帘，按现场尺寸制作安装。按项目报价，含12个月工艺保修。",
+        "tagline": "为巴生谷（吉隆坡与雪兰莪）的车棚、入口、窗户、阳台及庭院定制雨棚与雨棚屋顶——聚碳酸酯、金属瓦、铝塑板（ACP）、玻璃与布艺系统，另有伸缩雨棚与户外卷帘，按现场尺寸制作安装。小型工程从 RM 380 起，每种材料均公布每平方尺起步价，按项目报价，含12个月工艺保修。",
         "warranty": "12 个月制作与安装工艺保修，以报价单为准",
         "subServices": [
           {
             "name": "车棚雨棚安装",
-            "price": "依报价",
+            "price": "从 RM 1,800 起",
             "desc": "全新车棚（car porch）雨棚，为车辆遮阳挡雨，按您的车棚尺寸制作，配合适坡度与排水。"
           },
           {
             "name": "聚碳酸酯雨棚",
-            "price": "依报价",
+            "price": "从 RM 25 / 平方英尺 起",
             "desc": "透明或着色聚碳酸酯板雨棚屋顶——透光、轻质，适用于车棚、庭院、走道或阳台。"
           },
           {
             "name": "金属瓦雨棚",
-            "price": "依报价",
+            "price": "从 RM 18 / 平方英尺 起",
             "desc": "金属瓦/金属板雨棚屋顶，为工作区、晒衣区和车棚提供强力挡雨防晒，钢架经防锈处理。"
           },
           {
             "name": "铝塑板（ACP）雨棚",
-            "price": "依报价",
+            "price": "从 RM 30 / 平方英尺 起",
             "desc": "铝塑复合板雨棚——不透明、线条简洁、维护少，可减少眩光与雨声，适用于车棚与庭院。"
           },
           {
             "name": "玻璃雨棚",
-            "price": "依报价",
+            "price": "从 RM 60 / 平方英尺 起",
             "desc": "用于入口、窗户和特色区域的钢化玻璃雨棚，外观高档、采光好，骨架与固定方式按跨度匹配。"
           },
           {
             "name": "帆布与布艺雨棚",
-            "price": "依报价",
+            "price": "从 RM 20 / 平方英尺 起",
             "desc": "适用于阳台、露台、天台和店面的固定帆布及伸缩式系统——手动或电动——以遮阳与美观为优先。"
           },
           {
             "name": "阳台、露台与窗户雨棚",
-            "price": "依报价",
+            "price": "从 RM 380 起",
             "desc": "为阳台、露台、天台、窗户和门量身定制的雨棚——遮阳挡雨又不封闭空间。"
           },
           {
             "name": "雨棚更换与维修",
-            "price": "依报价",
+            "price": "从 RM 280 起",
             "desc": "更换老旧、漏水、生锈或下垂的雨棚——检查原有骨架、面板、接缝与排水，提供维修或整体更换方案。"
           },
           {
             "name": "户外卷帘",
-            "price": "依报价",
+            "price": "从 RM 15 / 平方英尺 起",
             "desc": "适用于阳台、露台、窗户和店面的户外与拉链卷帘——手动或电动遮阳、隐私与挡雨，不用时可收起。"
           }
         ]

@@ -6,6 +6,30 @@
 
 ## Current State (Update this each session)
 
+> **Fix Wave 13 COMPLETE (2026-08-29, owner request):** awning start-from
+> prices + market-rate verification. `awning-installation` — the last
+> "On Quote" service — now publishes **RM 380** starting price + 9 priced
+> scopes (car porch From RM 1,800 · polycarbonate RM 25/sq ft · metal deck
+> RM 18/sq ft · ACP RM 30/sq ft · glass RM 60/sq ft · canvas RM 20/sq ft ·
+> balcony/window From RM 380 · repair From RM 280 · roller blinds RM 15/sq ft),
+> every figure set from fresh 2026 KL/Selangor competitor + market research
+> (`docs/full-website-deep-audit/PRICE-MARKET-RESEARCH-2026-08-29.md`). All 29
+> services' start prices re-verified vs market — no other change needed.
+> Pricing copy updated EN/BM/中文 (tagline/description/highlights/first
+> FAQ/meta/aio, guide `quoteIntro` ×3, 9 BM/ZH specialty pages, 3 blog posts
+> ×3 locales). Regenerated: rate book (awning = 9 scopes → 23rd generic
+> estimator + new noindex `/estimate/awning-installation`), llms.txt priced
+> 29/29, schema `lowPrice: 380`, cost DirectAnswer "starts from RM 380; the 9
+> published rates below are priced per job, per sq ft". Guardrail learned:
+> identical pricing enumerations in area-shared copy pushed awning area pairs
+> to 70.4% on the location-similarity gate (<70%) → keep rate lists on
+> service/cost pages, headline figures only in area-shared fields (now 69.4%).
+> All gates PASS: prebuild **329,897 × 0**, type-check, lint 0/0, build
+> **4,081 HTML**, audit:html none/none, audit:links 308,822+56 → 0, seo-head
+> 4,054 parity, schema-size, bp1, location-similarity, meta, seo:audit, part5
+> 0 errors; corpus cost qa=100%, BM/ZH leaks 0/0. Full logs:
+> `docs/full-website-deep-audit/FIX-WAVE-13-REPORT.md`.
+>
 > **Fix Wave 12 COMPLETE (2026-08-29):** **P3-04 closed** — the last unblocked
 > **P1** on the board. All 29 `/services/<svc>/cost` money pages now open with
 > the literal *"How much does {service} cost in KL & Selangor?"* DirectAnswer
