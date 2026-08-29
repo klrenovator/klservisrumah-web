@@ -5,7 +5,7 @@
 > ko search kr k or Malaysia mein Jo market rates hn un k hisaab se likhen
 > tamam services ki start from price."
 >
-> **Result:** ✅ COMPLETED — `awning-installation` (the last "On Quote"
+> **Result:** ✅ COMPLETED — **PR #190 merged to main (2026-08-29, commit dfcbb38; CI green: QA 3m30s + Vercel)** — `awning-installation` (the last "On Quote"
 > service) now publishes market-aligned starting prices like the other 28
 > services; all 29 start-from prices verified against fresh 2026 Malaysian
 > competitor/market data.
