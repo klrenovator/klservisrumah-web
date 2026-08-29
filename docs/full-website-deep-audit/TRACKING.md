@@ -67,6 +67,7 @@
 | 2026-08-28 | **Fix Wave 2** — C2/P2-C1/P4-01 content-inside-`<main>` + P5-02/P3-11/P3-02 visible FAQs | ✅ See `FIX-WAVE-2-REPORT.md` |
 | 2026-08-28 | **BP-1 phase 1** — Part 1 Critical #1/#2: 1,073 `/areas/*/*/near-me` + 1,073 `/suburbs/<twin>/*` retired to 301s; SSG stopped; sitemap 4,739→3,666; HTML 5,815→3,669; near-me Q&A absorbed into parent (FAQPage 3→6); new `audit:bp1` gate + `gen:bp1-map` | ✅ See `BP-1-PHASE-1-REPORT.md` |
 | 2026-08-28 | **Fix Wave 3** — P5-04 (@id-reference org architecture: full node homepage-only, GeoCircle areaServed, catalog dedup on 1,508 local + 773 variant pages, /pricing −95%, tools hubs −19 KB each; corpus JSON-LD 62.2→14.5 MB, City nodes 220,616→95) + P5-06 (HowTo retired) + P5-07 (Speakable orphans) + P5-10 (+256 breadcrumbed pages) + new `audit:schema-size` gate (≤8 KB non-FAQ ceiling enforced) | ✅ See `FIX-WAVE-3-REPORT.md` |
+| 2026-08-29 | **CF-4** — cost pages → canonical rate-book "harga" guides (29 pages: 222 rate-book rows, market baselines, worked example, methodology, measurement guide, localized job process + FAQs; words 543→1,373 mean, all ≥1,000) + `/estimate` hub & 22 generics NOINDEX (sitemap −23, IndexNow −23, seo-head gate extended) + aircon rateCopy 7×3 + `&#x27;` cleanText fix (part5 FAQ false positives 5→0) | ✅ See `PART-5-AUDIT-REPORT.md` §5.5 implementation log |
 
 ---
 
@@ -83,7 +84,7 @@
 | P1 | P5-05 — Blog `author` Person→Organization (interim); real author entities later | ✅ DONE (Fix Wave 1 — Organization interim) |
 | P1 | P5-13/14 — Raster 1200×630 OG images (SVG og:image breaks WhatsApp/social previews on ~2,200+ pages); fix schema `image` fields too | ⏳ PENDING |
 | P1 | P5-10 — Breadcrumbs (UI+schema) on 184 pod pages + 20 specialty sub-services + 29 near-me hubs + 20 guides | ✅ DONE (Fix Wave 3 — 256 pages: 184 pods + 21 guides-tree + 29 near-me hubs + 22 cluster pages; duplicate BreadcrumbList on localized service/specialty templates removed; MS/ZH blog trails stay with P3-12 per Part 5 §P5-12b) |
-| P1 | CF-4 — Merge rate-book into `/services/<svc>/cost` pages; evaluate NOINDEX/merge for `/estimate/*` (23 pages) | ⏳ PENDING |
+| P1 | CF-4 — Merge rate-book into `/services/<svc>/cost` pages; evaluate NOINDEX/merge for `/estimate/*` (23 pages) | ✅ COMPLETED 2026-08-29 — 29 cost pages 1,152–2,264 words (mean 1,373), 222 rate-book rows, trilingual FAQs + aircon rateCopy; `/estimate` hub + 22 generics noindex; sitemap/indexnow cleaned; seo-head gate extended; all gates PASS. See `PART-5-AUDIT-REPORT.md` §5.5 implementation log |
 | P1 | §5.4-B1 — BM commercial tree (harga/problem/money templates) — largest content gap | ⏳ PENDING |
 | P2 | P5-06 — HowTo: per-page names (all 74 problems say "Professional home service process") or drop (rich results retired) | ✅ DONE (Fix Wave 3 — dropped site-wide; Google retired the rich result, visible process sections kept in HTML) |
 | P2 | P5-07 — Remove Speakable/orphan WebPage nodes (526 pages) | ✅ DONE (Fix Wave 3 — all orphan Speakable WebPage nodes removed; targeted content stays visible in HTML) |
@@ -95,11 +96,13 @@
 
 ## ⭐ NEXT SESSION MUST CONTINUE HERE
 
-**All 5 audit parts are complete. Fix Wave 1, Fix Wave 2, BP-1 phase 1 and
-Fix Wave 3 are complete** — see `FIX-WAVE-1-REPORT.md`, `FIX-WAVE-2-REPORT.md`,
-`BP-1-PHASE-1-REPORT.md` and `FIX-WAVE-3-REPORT.md`. Fix Wave 3 closed
-**P5-04 (schema slim: corpus JSON-LD 62.2→14.5 MB), P5-06 (HowTo), P5-07
-(Speakable) and P5-10 (breadcrumbs, EN)**.
+**All 5 audit parts are complete. Fix Wave 1, Fix Wave 2, BP-1 phase 1,
+Fix Wave 3 and CF-4 are complete** — see `FIX-WAVE-1-REPORT.md`,
+`FIX-WAVE-2-REPORT.md`, `BP-1-PHASE-1-REPORT.md`, `FIX-WAVE-3-REPORT.md` and
+`PART-5-AUDIT-REPORT.md` §5.5 implementation log. Fix Wave 3 closed
+**P5-04 (schema slim), P5-06 (HowTo), P5-07 (Speakable) and P5-10
+(breadcrumbs, EN)**; CF-4 closed **the cost-page/rate-book merge (§5.4-B2)
+and the `/estimate/*` NOINDEX decision (§5.5-CF-4)**.
 
 1. **BP-1 phase 2 is still blocked on owner data:** the demand-backed
    keep-list for the remaining **1,073** `/areas/<area>/<svc>` pairs (plus the
@@ -107,14 +110,13 @@ Fix Wave 3 are complete** — see `FIX-WAVE-1-REPORT.md`, `FIX-WAVE-2-REPORT.md`
    local signal, and add authored local copy (landmarks, condo/JMB rules,
    real jobs) to the kept set. **Blocked on GSC data (owner)** — Part 1 §1.3
    is explicit: *do not delete on low traffic alone.*
-2. **Next unblocked work — CF-4:** merge the rate-book into
-   `/services/<svc>/cost` pages; evaluate NOINDEX/merge for `/estimate/*`
-   (23 pages). Note: `/pricing` now ships only the flagship 12-service
-   catalog (Fix Wave 3) — CF-4 owns where the full rate-book content lives.
-3. Then: **P3-01** BM/ZH English leaks in DirectAnswer blocks (29/29 service
-   pages, P0) + prebuild leak validator → **P2-C3** 174 generic content pods
-   → **P2-C4** replace the pair-copy generator with authored area×service
-   copy → remaining Part 3 P0s (P3-07 fact reconciliation).
+2. **Next unblocked work — P3-01:** BM/ZH English leaks in DirectAnswer
+   blocks (29/29 service pages, P0) + prebuild leak validator.
+3. Then: **P2-C3** 174 generic content pods → **P2-C4** replace the
+   pair-copy generator with authored area×service copy → remaining Part 3
+   P0s (**P3-07** fact reconciliation: RM 180 vs 220, 30-day vs 5-year
+   warranty, 10 vs 15+ staff) → **P2-16/17/18 remainder** (emergency-page
+   depth, problem-page expansion still PENDING).
 4. **CI patch still unapplied (retried this session — same rejection):**
    `git apply docs/full-website-deep-audit/BP-1-ci-audit-bp1.patch` adds
    **both** `audit:bp1` and `audit:schema-size` as post-build CI steps

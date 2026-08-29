@@ -42,7 +42,11 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
       `${service.title} price KL`,
       `${service.title} estimate`,
       "home service cost calculator Malaysia"
-    ]
+    ],
+    // CF-4: share URL, not a search landing page. NOINDEX keeps the owner's
+    // WhatsApp link working while the canonical money page for the query is
+    // `/services/<slug>/cost` (now the full rate-book guide).
+    noIndex: true
   });
 }
 

@@ -853,4 +853,4 @@ KL Servis Rumah publishes fair, upfront pricing benchmarked against the Klang Va
 ## Scale
 - 29 services · 222 sub-services
 - 37 area pages · 86 problem pages · 216 articles
-- 3,666 indexable pages listed in the sitemap
+- 3,643 indexable pages listed in the sitemap

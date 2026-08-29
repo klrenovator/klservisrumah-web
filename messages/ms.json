@@ -1404,9 +1404,113 @@
           "range": "RM 80–RM 300+ bergantung pada saiz TV dan jenis dinding",
           "note": "Sebut harga berubah mengikut saiz TV, jenis bracket, bahan dinding, trunking kabel dan keperluan anchor."
         }
+      },
+      "aircon": {
+        "0": {
+          "label": "Servis asas aircond dinding",
+          "publishedRate": "Dari RM 129",
+          "unit": "unit",
+          "range": "RM 99–RM 195 bergantung pada HP (1.0–3.5 HP)",
+          "note": "Harga minimum; kos akhir bergantung pada HP unit, keadaan dan akses, disahkan selepas pemeriksaan."
+        },
+        "1": {
+          "label": "Cuci kimia bertekanan",
+          "publishedRate": "Dari RM 156",
+          "unit": "unit",
+          "range": "RM 120–RM 260 bergantung pada HP dan jenis unit",
+          "note": "Unit dinding, tingkap dan kaset siling dinilai ikut HP; jenama kimia premium disebut berasingan."
+        },
+        "2": {
+          "label": "Baik pulih kimia penuh (overhaul)",
+          "publishedRate": "Dari RM 286",
+          "unit": "unit",
+          "range": "RM 220–RM 650 bergantung pada HP dan jenis unit",
+          "note": "Overhaul buka cuci penuh; penyelesaian muktamad untuk kebocoran air kronik."
+        },
+        "3": {
+          "label": "Tambah gas (R22 / R410A / R32)",
+          "publishedRate": "RM 2.50–3.00 / PSI",
+          "unit": "PSI",
+          "range": "RM 2.50–RM 3.00 setiap PSI bergantung pada jenis penyejuk",
+          "note": "Dikenakan mengikut PSI sebenar selepas pemeriksaan di tapak; semakan kebocoran disertakan."
+        },
+        "4": {
+          "label": "Pemasangan aircond dinding baharu",
+          "publishedRate": "Dari RM 259",
+          "unit": "unit",
+          "range": "RM 199–RM 584 bergantung pada HP",
+          "note": "Pemasangan sahaja — unit tidak termasuk. Termasuk paip kuprum 7 kaki, penebat, pendawaian dan ujian."
+        },
+        "5": {
+          "label": "Diagnosis pembaikan & alat ganti",
+          "publishedRate": "Dari RM 114",
+          "unit": "tugas",
+          "range": "RM 88–RM 1,040 bergantung pada bahagian rosak",
+          "note": "Yuran diagnosis dimaafkan jika dibaiki pada lawatan sama; alat ganti ada jaminan 3 bulan."
+        },
+        "6": {
+          "label": "Buka pasang & pindah lokasi",
+          "publishedRate": "Dari RM 117",
+          "unit": "tugas",
+          "range": "RM 90–RM 455 bergantung pada skop dan lokasi",
+          "note": "Buka sahaja, pasang semula berdekatan, atau pindah ke lokasi lain; dinilai ikut HP dan jarak."
+        }
       }
     },
-    "faqHeading": "Soalan lazim harga {name}"
+    "faqHeading": "Soalan lazim harga {name}",
+    "whatsCovered": "Apa yang termasuk",
+    "onQuote": "Atas sebut harga",
+    "quoteOnlyEyebrow": "Sebut harga selepas lawatan sahaja",
+    "quoteOnlyHeading": "Kerja {name} yang dinilai selepas lawatan tapak",
+    "quoteOnlySub": "Kerja ini bergantung pada ukuran, akses atau keadaan tapak yang tidak dapat kami nilai dari mesej. Hantar foto di WhatsApp dan kami sahkan harga tetap sebelum kerja bermula.",
+    "rateBookEyebrow": "Kadar tersiar",
+    "rateBookHeading": "Senarai harga {name}",
+    "rateBookSub": "Setiap angka dalam jadual ini ialah kadar tersiar yang sama digunakan oleh kalkulator dan sebut harga bertulis kami — satu buku kadar, tiga permukaan, tiada percanggahan.",
+    "marketEyebrow": "Kontekst pasaran",
+    "marketHeading": "Harga biasa {name} di KL & Selangor",
+    "marketSub": "Julat asas yang disahkan, dikemas kini terakhir {reviewed}. Sebut harga akhir anda disahkan selepas skop dan lawatan tapak.",
+    "noMarketRange": "Kami tidak menerbitkan purata pasaran pihak ketiga untuk {name}. Setiap angka di atas ialah kadar sebenar yang kami kenakan dan sahkan secara bertulis sebelum kerja bermula.",
+    "methodEyebrow": "Cara kami menetapkan harga",
+    "methodHeading": "Dari mana harga {name} ini datang",
+    "method1": "Satu buku kadar. Jadual di atas, kalkulator segera dan sebut harga bertulis semuanya membaca kadar tersiar yang sama, jadi harga yang anda lihat di sini ialah harga yang anda akan ditanya.",
+    "method2": "Tersiar, bukan iklan. Kami menerbitkan harga sebenar paling rendah yang kami kenakan bagi setiap skop. Jika kerja memerlukan ukuran di tapak, kami nyatakan begitu daripada mencipta angka.",
+    "method3": "Piawaian adil Lembah Klang. Julat di sebelah kadar kami menunjukkan kos biasa kerja yang sama di kawasan ini, supaya anda boleh menilai sebut harga berbanding harga pasaran sebenar.",
+    "method4": "Tiada yuran tersembunyi. Jika keadaan tapak menambah kerja, kami terangkan dan dapatkan persetujuan anda dahulu — sebut harga bertulis tidak pernah berubah di belakang anda.",
+    "measureEyebrow": "Dapatkan sebut harga yang tepat",
+    "measureHeading": "Apa yang perlu diukur sebelum anda menghubungi",
+    "measureIntro": "Cara terpantas untuk harga tetap: hantar foto dan ukuran ini di WhatsApp. Kami sahkan harga sebelum penghantaran.",
+    "measureStep1": "Foto kawasan terlibat dari sekurang-kurangnya tiga sudut, serta satu gambar luas bilik atau bahagian luar",
+    "measureStep2": "Ukuran dalam unit yang digunakan di atas — kaki persegi untuk permukaan, kaki linier untuk tepi, kiraan titik, bilik atau panel untuk lekapan",
+    "measureStep3": "Pilihan bahan atau jenama — contohnya gred cat, julat jubin, atau guna pilihan standard kami",
+    "measureStep4": "Nota akses — lif atau tangga, jarak parkir, peraturan pengurusan kondominium, atau sama ada unit didiami semasa kerja",
+    "exampleEyebrow": "Contoh pengiraan",
+    "exampleHeading": "Bagaimana anggaran {name} dikira",
+    "exampleBody": "Pada kuantiti biasa, {qty} × {name} pada {amount} = {total}, sebelum faktor keadaan, akses dan segera di atas. Kalkulator di bawah mengira matematik yang sama untuk kuantiti sebenar anda.",
+    "calculatorEyebrow": "Anggaran segera",
+    "calculatorHeading": "Cuba kalkulator {name}",
+    "calculatorBody": "Jawab beberapa soalan dan dapatkan anggaran harga daripada kadar tersiar yang sama — termasuk buruh dan bahan standard.",
+    "calculatorButton": "Buka penganggar {name}",
+    "faqs": {
+      "0": {
+        "q": "Berapakah harga permulaan untuk {name}?",
+        "a": "{name} bermula dari {startPrice}. Kos akhir bergantung pada ukuran, akses, bahan dan keadaan sebenar di tapak."
+      },
+      "1": {
+        "q": "Adakah harga anda adil untuk KL & Selangor?",
+        "a": "Ya. Harga KL Servis Rumah adalah piawaian adil Lembah Klang: tidak melambung, tidak terlalu murah, dan disahkan sebelum kerja bermula."
+      },
+      "2": {
+        "q": "Boleh saya minta sebut harga dari foto?",
+        "a": "Untuk banyak kerja kecil, foto yang jelas dan ukuran membantu kami menganggarkan. Kebocoran kompleks, siling dan akses luaran mungkin perlu pemeriksaan."
+      },
+      "3": {
+        "q": "Adakah anda mengenakan yuran tersembunyi?",
+        "a": "Tidak. Skop tambahan dijelaskan dan diluluskan sebelum kami meneruskan."
+      }
+    },
+    "processEyebrow": "Apa yang harga bayar",
+    "processHeading": "Kerja {name}, langkah demi langkah",
+    "processSub": "Ini adalah langkah yang dilindungi oleh sebut harga {name} yang disahkan — harga di atas membeli kerja ini, mengikut urutan ini."
   },
   "emergencyPage": {
     "servicesCrumb": "Perkhidmatan",

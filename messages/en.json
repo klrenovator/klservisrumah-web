@@ -1404,9 +1404,113 @@
           "range": "RM 80–RM 300+ depending on TV size and wall type",
           "note": "Quote adjusts for TV size, bracket type, wall material, cable trunking and anchor requirements."
         }
+      },
+      "aircon": {
+        "0": {
+          "label": "Wall-mounted basic servicing",
+          "publishedRate": "From RM 129",
+          "unit": "unit",
+          "range": "RM 99–RM 195 depending on HP (1.0–3.5 HP)",
+          "note": "Minimum starting price; final cost depends on unit HP, condition and access, confirmed after inspection."
+        },
+        "1": {
+          "label": "Pressure chemical wash",
+          "publishedRate": "From RM 156",
+          "unit": "unit",
+          "range": "RM 120–RM 260 depending on HP and unit type",
+          "note": "Wall, window and ceiling cassette units priced by HP; premium chemical brands quoted separately."
+        },
+        "2": {
+          "label": "Chemical overhaul",
+          "publishedRate": "From RM 286",
+          "unit": "unit",
+          "range": "RM 220–RM 650 depending on HP and unit type",
+          "note": "Full dismantle-and-wash overhaul; the definitive fix for chronic water leaks."
+        },
+        "3": {
+          "label": "Gas top-up (R22 / R410A / R32)",
+          "publishedRate": "RM 2.50–3.00 / PSI",
+          "unit": "PSI",
+          "range": "RM 2.50–RM 3.00 per PSI depending on refrigerant type",
+          "note": "Charged on the actual PSI required after on-site inspection; leak check included."
+        },
+        "4": {
+          "label": "New wall-mounted installation",
+          "publishedRate": "From RM 259",
+          "unit": "unit",
+          "range": "RM 199–RM 584 depending on HP",
+          "note": "Installation only — the unit is not included. Includes 7 ft copper pipe, insulation, wiring and commissioning."
+        },
+        "5": {
+          "label": "Repair diagnosis & spare parts",
+          "publishedRate": "From RM 114",
+          "unit": "task",
+          "range": "RM 88–RM 1,040 depending on the faulty part",
+          "note": "Diagnostic fee waived if repaired the same visit; spare parts carry a 3-month warranty."
+        },
+        "6": {
+          "label": "Dismantling & relocation",
+          "publishedRate": "From RM 117",
+          "unit": "task",
+          "range": "RM 90–RM 455 depending on scope and location",
+          "note": "Dismantle only, nearby reinstall, or different-location relocation, priced by HP and distance."
+        }
       }
     },
-    "faqHeading": "{name} cost FAQs"
+    "faqHeading": "{name} cost FAQs",
+    "whatsCovered": "What's covered",
+    "onQuote": "On quote",
+    "quoteOnlyEyebrow": "Site-visit quote only",
+    "quoteOnlyHeading": "{name} jobs priced after a site visit",
+    "quoteOnlySub": "These jobs depend on measurement, access or site conditions we can't judge from a message. Send photos on WhatsApp and we confirm a fixed price before work starts.",
+    "rateBookEyebrow": "Published rates",
+    "rateBookHeading": "{name} price list",
+    "rateBookSub": "Every figure in this table is the same published rate our estimators and written quotes use — one rate book, three surfaces, no drift.",
+    "marketEyebrow": "Market context",
+    "marketHeading": "Typical {name} prices in KL & Selangor",
+    "marketSub": "Verified baseline ranges, last reviewed {reviewed}. Your final quote is confirmed after scope and a site visit.",
+    "noMarketRange": "We don't publish third-party market averages for {name}. Every figure above is a rate we actually charge and confirm in writing before work starts.",
+    "methodEyebrow": "How we price",
+    "methodHeading": "Where these {name} prices come from",
+    "method1": "One rate book. The table above, the instant calculator and the written quote all read the same published rates, so the price you see here is the price you are quoted.",
+    "method2": "Published, not advertised. We publish the lowest real price we charge for each scope. Where a job needs site measurement, we say so instead of inventing a number.",
+    "method3": "Fair Klang Valley standard. Ranges beside our rates show what the same job typically costs locally, so you can judge the quote against real market pricing.",
+    "method4": "No hidden fees. If site conditions add work, we explain and get your approval before continuing — the written quote never changes behind your back.",
+    "measureEyebrow": "Get an accurate quote",
+    "measureHeading": "What to measure before you call",
+    "measureIntro": "The fastest way to a fixed price: send photos and these measurements on WhatsApp. We confirm the price before dispatch.",
+    "measureStep1": "Photos of the affected area from at least three angles, plus one wide shot of the room or exterior",
+    "measureStep2": "Measurements in the units used above — square feet for surfaces, running feet for edges, point, room or panel counts for fixtures",
+    "measureStep3": "Material or brand preference — for example paint grade, tile range, or keep our standard choice",
+    "measureStep4": "Access notes — lift or stairs, parking distance, condo management rules, or whether the unit is occupied during work",
+    "exampleEyebrow": "Worked example",
+    "exampleHeading": "How a {name} estimate adds up",
+    "exampleBody": "At typical quantities, {qty} × {name} at {amount} = {total}, before the condition, access and urgency factors above. The calculator below runs the same math for your exact quantities.",
+    "calculatorEyebrow": "Instant estimate",
+    "calculatorHeading": "Try the {name} calculator",
+    "calculatorBody": "Answer a few questions and get a ballpark price from the same published rates — including labour and standard materials.",
+    "calculatorButton": "Open the {name} estimator",
+    "faqs": {
+      "0": {
+        "q": "What is the starting price for {name}?",
+        "a": "{name} starts from {startPrice}. Final cost depends on dimensions, access, materials and the actual site condition."
+      },
+      "1": {
+        "q": "Are your prices fair for KL & Selangor?",
+        "a": "Yes. KL Servis Rumah prices are the fair Klang Valley standard: not inflated, not underpriced, and confirmed before work starts."
+      },
+      "2": {
+        "q": "Can I get a quote from photos?",
+        "a": "For many small jobs, clear photos and measurements help us estimate. Complex leaks, ceilings and exterior access may need an inspection."
+      },
+      "3": {
+        "q": "Do you charge hidden fees?",
+        "a": "No. Additional scope is explained and approved before we continue."
+      }
+    },
+    "processEyebrow": "What the price pays for",
+    "processHeading": "The {name} job, step by step",
+    "processSub": "These are the steps a confirmed {name} quote covers — the price above buys this work, in this order."
   },
   "emergencyPage": {
     "servicesCrumb": "Services",

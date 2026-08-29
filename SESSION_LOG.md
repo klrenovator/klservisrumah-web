@@ -7,6 +7,40 @@ Master references: `📄 MASTER_AI_AGENT_INSTRUCTIONS.md` · `KLServisRumah-Comp
 
 ---
 
+## Session — 2026-08-29 — CF-4 (cost pages → rate-book guides; `/estimate/*` NOINDEX)
+
+**Scope:** Part 5 §5.5-CF-4 (P1) — the "pricing intent split 4 ways" conflict family.
+
+**Completed ✅**
+- **CF-4(a):** all 29 `/services/<svc>/cost` pages rebuilt as canonical rate-book "harga" pages:
+  full published scope table (162 priced rows) + "site-visit quote only" block (60 rows) from
+  `SERVICE_SCOPES`; verified market baselines (17 rows / 6 services, real `lastReviewed` dates);
+  worked example (quantity × published rate at estimator-typical quantities); 4-point pricing
+  methodology; "what to measure" ×4; calculator CTA (deep tool for 6 trades, share URL otherwise);
+  service job process (5–6 steps) + service FAQs (4–15), all localized. Depth 409–702 (mean 543)
+  → 1,152–2,264 (mean 1,373) words; all 29 ≥ 1,000; FAQ visible 4 → 8–19 `<details>`.
+- **Trilingual:** costPage messages 25 → 61 keys × EN/MS/ZH (incl. localized FAQ templates,
+  process/measure/method/example sections); new `rateCopy.aircon` 7 rows × 3 locales (was 0 → EN
+  fallback). `audit:i18n` parity PASS (320,331 assertions).
+- **CF-4(b):** `scripts/part5-audit.ts` `cleanText()` now decodes `&#x27;` → `'` (React hex
+  apostrophes) — FAQ schema/visible mismatch false positives 5 → 0, verified, no page edits.
+- **CF-4(c):** `/estimate` hub + 22 generic share pages → `noindex,follow` (stay live/crawlable for
+  the owner's WhatsApp links); removed from sitemap (−23 URLs) and IndexNow (−23 entries);
+  `scripts/seo-head-audit.ts` `expectedNoindex` extended (26 noindex pages; indexable = sitemap =
+  3,643). `/pricing` unchanged as the hub.
+
+**Verification:** prebuild 320,331/0 · build PASS (3,677 pages) · audit:html PASS ·
+audit:schema-size PASS · audit:links PASS (278,275 links, 0 broken) · audit:seo-head PASS ·
+audit:location-similarity PASS · seo:audit PASS · part5 fresh: 3,669 pages, 0 JSON-LD errors,
+37 images, 0 dup titles/H1s, FAQ mismatch 0.
+
+**Next:** P3-01 (BM/ZH DirectAnswer English leaks + prebuild validator) → P2-C3 → P2-C4 →
+P3-07. BP-1 phase 2 blocked on owner GSC data.
+
+**Report:** `docs/full-website-deep-audit/PART-5-AUDIT-REPORT.md` §5.5 implementation log.
+
+---
+
 ## Session — 2026-08-28 — Fix Wave 1 (post-audit quick wins)
 
 **Scope:** Implementation of Part 5 §C/§N quick wins after all 5 audit parts completed (PRs #170–#175).

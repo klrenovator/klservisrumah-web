@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-28T17:07:50.707Z",
+  "generatedAt": "2026-08-29T03:23:11.476Z",
   "distinctImages": 37,
   "topImages": [
     {
       "src": "/logo/logo-lockup.png",
-      "pages": 5815
+      "pages": 3669
     },
     {
       "src": "/hero-aircon.svg",
@@ -223,22 +223,6 @@
       ]
     },
     "en:/areas/<area>/<svc>": {
-      "pages": 1073,
-      "meanImgs": 2,
-      "meanRaster": 2,
-      "meanSvg": 0,
-      "totalNoAlt": 0,
-      "totalEmptyAlt": 0,
-      "pctPagesZeroRaster": 0,
-      "meanLazy": 1,
-      "totalNoDims": 0,
-      "ogImages": [
-        "https://www.klservisrumah.my/hero-aircon.svg",
-        "https://www.klservisrumah.my/hero-autogate.svg",
-        "https://www.klservisrumah.my/hero-awning.svg"
-      ]
-    },
-    "en:/areas/<area>/<svc>/near-me": {
       "pages": 1073,
       "meanImgs": 2,
       "meanRaster": 2,
@@ -701,7 +685,7 @@
       ]
     },
     "en:/suburbs/<suburb>/<svc>": {
-      "pages": 1508,
+      "pages": 435,
       "meanImgs": 2,
       "meanRaster": 2,
       "meanSvg": 0,
