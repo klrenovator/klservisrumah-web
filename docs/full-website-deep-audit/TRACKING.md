@@ -45,7 +45,7 @@
 | P0 | Fix Part 1 Critical #3 — Resolve www/non-www host canonical | ⏳ PENDING (owner — needs live edge access) |
 | P0 | Fix Part 2 P2-C1 — Server-render content inside `<main>` (static HTML is a Loading shell) | ✅ DONE (Fix Wave 2) |
 | P0 | Fix Part 2 P2-C2 — `content.relatedReading` literal key renders as H2 on 224 pages | ✅ DONE (Fix Wave 1) |
-| P0 | Fix Part 2 P2-C3 — 174 generic "content pod" pages (commercial/residential/process/answers/brands/top/seasonal/guides) | 🔶 IN PROGRESS (Wave 4 batch 1 — commercial + residential 58 pods hand-authored + `audit:content-pods` prebuild gate; brands/compare/guides/maintenance/seasonal/top remain) |
+| P0 | Fix Part 2 P2-C3 — 174 generic "content pod" pages (commercial/residential/process/answers/brands/top/seasonal/guides) | ✅ DONE (Wave 4 batch 1: 58 commercial+residential pods; Wave 5 batch 2: 88 brands+compare+guides+maintenance+seasonal+top pods — all 146/174 hand-authored; process+answers carry real service data) |
 | P0 | Fix Part 2 P2-C4 — Replace pair-copy generator; authored local copy for area×service | ⏳ PENDING |
 | P1 | Fix Part 2 P2-16/17/18 — Expand problems/cost; rewrite or retire emergency pages | ⏳ PENDING |
 | P1 | Fix Part 2 P2-19 — Real per-article blog dates (216 posts / 5 dates) | ⏳ PENDING |
@@ -65,7 +65,8 @@
 | 2026-08-28 | Part 5 audit — full-corpus schema/breadcrumb/image/cannibalization scan (`scripts/part5-audit.ts`) + content gap + decay + brand/entity + **cumulative Final Output A–N** | ✅ Part 5 committed (PR this session) — **ALL 5 AUDIT PARTS COMPLETE** |
 | 2026-08-28 | **Fix Wave 1** — quick wins from Part 5 §C/§N: P2-C2, P2-14, C7/P5-08, P5-01, P5-03, P5-05, P5-11, CF-1 (28 twin H1s), P3-05 lowPrice | ✅ See `FIX-WAVE-1-REPORT.md` |
 | 2026-08-28 | **Fix Wave 2** — C2/P2-C1/P4-01 content-inside-`<main>` + P5-02/P3-11/P3-02 visible FAQs | ✅ See `FIX-WAVE-2-REPORT.md` |
-| 2026-08-29 | **Fix Wave 4** — P3-01 trilingual DirectAnswer + leak gate · P3-07 fact reconciliation (code half of P3-14) · P2-C3 batch 1: 58 commercial+residential pods hand-authored + `audit:content-pods` gate | 🔶 P2-C3 batch 2+ remains; see `FIX-WAVE-4-REPORT.md` |
+| 2026-08-29 | **Fix Wave 4** — P3-01 trilingual DirectAnswer + leak gate · P3-07 fact reconciliation (code half of P3-14) · P2-C3 batch 1: 58 commercial+residential pods hand-authored + `audit:content-pods` gate | ✅ See `FIX-WAVE-4-REPORT.md` |
+| 2026-08-29 | **Fix Wave 5** — P2-C3 batch 2: 88 remaining pod pages hand-authored (brands 32, compare 18, guides 10, maintenance 10, seasonal 8, top 10) — unique intros, 4 topic-specific bullets, 4 AEO FAQs each + 263 MS/ZH bullet translations; all gates PASS (320,291 assertions × 0 failures) | ✅ See `FIX-WAVE-5-REPORT.md` |
 | 2026-08-28 | **BP-1 phase 1** — Part 1 Critical #1/#2: 1,073 `/areas/*/*/near-me` + 1,073 `/suburbs/<twin>/*` retired to 301s; SSG stopped; sitemap 4,739→3,666; HTML 5,815→3,669; near-me Q&A absorbed into parent (FAQPage 3→6); new `audit:bp1` gate + `gen:bp1-map` | ✅ See `BP-1-PHASE-1-REPORT.md` |
 | 2026-08-28 | **Fix Wave 3** — P5-04 (@id-reference org architecture: full node homepage-only, GeoCircle areaServed, catalog dedup on 1,508 local + 773 variant pages, /pricing −95%, tools hubs −19 KB each; corpus JSON-LD 62.2→14.5 MB, City nodes 220,616→95) + P5-06 (HowTo retired) + P5-07 (Speakable orphans) + P5-10 (+256 breadcrumbed pages) + new `audit:schema-size` gate (≤8 KB non-FAQ ceiling enforced) | ✅ See `FIX-WAVE-3-REPORT.md` |
 | 2026-08-29 | **CF-4** — cost pages → canonical rate-book "harga" guides (29 pages: 222 rate-book rows, market baselines, worked example, methodology, measurement guide, localized job process + FAQs; words 543→1,373 mean, all ≥1,000) + `/estimate` hub & 22 generics NOINDEX (sitemap −23, IndexNow −23, seo-head gate extended) + aircon rateCopy 7×3 + `&#x27;` cleanText fix (part5 FAQ false positives 5→0) | ✅ See `PART-5-AUDIT-REPORT.md` §5.5 implementation log |
@@ -116,11 +117,11 @@ and the `/estimate/*` NOINDEX decision (§5.5-CF-4)**.
    owner stat verification stays ⏳), P2-C3 **batch 1** ✅ (58 commercial +
    residential pods hand-authored with trilingual parity behind the new
    `audit:content-pods` prebuild gate).
-3. **Next unblocked work — P2-C3 batch 2:** the remaining pod families
-   (brands 32, compare 18, guides 10, maintenance 10, seasonal 8, top 10)
-   under the same authoring rules + gate. Then **P2-16/17/18 remainder**
-   (emergency-page depth, problem-page expansion). **P2-C4** stays tied to
-   the BP-1 phase-2 owner/GSC keep-set decision — never mass-generate
+3. **P2-C3 batch 2 complete (Fix Wave 5):** all 88 remaining pod pages
+   hand-authored (brands 32, compare 18, guides 10, maintenance 10, seasonal 8,
+   top 10) with 263 MS/ZH bullet translations. **Next unblocked work —
+   P2-16/17/18:** emergency-page depth, problem-page expansion. **P2-C4** stays
+   tied to the BP-1 phase-2 owner/GSC keep-set decision — never mass-generate
    location pages.
 4. **CI patch still unapplied (retried this session — same rejection):**
    `git apply docs/full-website-deep-audit/BP-1-ci-audit-bp1.patch` adds

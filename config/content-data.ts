@@ -1,5 +1,15 @@
 import { servicesData } from "@/config/services-data";
 import { commercialCopy, residentialCopy, type PodCopy } from "@/config/content-pod-copy";
+import {
+  brandCopy,
+  airconBrandCopy,
+  comparisonCopy,
+  guideCopy,
+  maintenanceCopy,
+  seasonalCopy,
+  topCopy,
+  type Batch2PodCopy,
+} from "@/config/content-pod-copy-batch2";
 
 export type GenericContentPage = {
   slug: string;
@@ -78,7 +88,7 @@ export const guidePages: GenericContentPage[] = [
   ["ceiling-material-comparison-plaster-vs-gypsum", "Ceiling Material Comparison: Plaster vs Gypsum", "Ceiling"],
   ["plumbing-pipe-comparison-pvc-vs-copper-vs-ppr", "Plumbing Pipe Comparison: PVC vs Copper vs PPR", "Plumbing"],
   ["tv-mount-types-comparison-fixed-vs-tilt-vs-full-motion", "TV Mount Types: Fixed vs Tilt vs Full-Motion", "Handyman"]
-].map(([slug, title, category]) => ({ slug, title, category, intro: `${title} explains practical decision criteria, pricing signals, material quality checks, warranty questions, and red flags for Malaysian homeowners.`, bullets: ["Check proven scope and material details", "Ask for an itemised, fixed-price quote", "Confirm warranty scope in writing", "Avoid vague quotes and pressure tactics"], faqs: faq(title), faqTopic: title }));
+].map(([slug, title, category]) => applyBatch2Copy({ slug, title, category, intro: `${title} explains practical decision criteria, pricing signals, material quality checks, warranty questions, and red flags for Malaysian homeowners.`, bullets: ["Check proven scope and material details", "Ask for an itemised, fixed-price quote", "Confirm warranty scope in writing", "Avoid vague quotes and pressure tactics"], faqs: faq(title), faqTopic: title }, guideCopy[slug]));
 
 export const comparisonPages: GenericContentPage[] = [
   ["pu-grouting-vs-tile-hacking", "PU Grouting vs Tile Hacking"],
@@ -99,7 +109,7 @@ export const comparisonPages: GenericContentPage[] = [
   ["chemical-wash-vs-chemical-overhaul", "Chemical Wash vs Chemical Overhaul"],
   ["inverter-vs-non-inverter-aircon", "Inverter vs Non-Inverter Aircon"],
   ["wall-mounted-vs-ceiling-cassette-aircon", "Wall-Mounted vs Ceiling Cassette Aircon"]
-].map(([slug, title]) => ({ slug, title, category: "Comparison", intro: `${title} compares use cases, cost ranges, durability, disruption level, and suitability for KL and Selangor properties.`, bullets: ["Best-use scenarios", "Cost and disruption comparison", "Durability considerations", "When to call a professional"], faqs: faq(title), faqTopic: title }));
+].map(([slug, title]) => applyBatch2Copy({ slug, title, category: "Comparison", intro: `${title} compares use cases, cost ranges, durability, disruption level, and suitability for KL and Selangor properties.`, bullets: ["Best-use scenarios", "Cost and disruption comparison", "Durability considerations", "When to call a professional"], faqs: faq(title), faqTopic: title }, comparisonCopy[slug]));
 
 export const maintenancePages: GenericContentPage[] = [
   "painting-maintenance-schedule",
@@ -114,7 +124,7 @@ export const maintenancePages: GenericContentPage[] = [
   "rental-property-turnover-checklist"
 ].map((slug) => {
   const title = slug.split("-").map((w) => w[0].toUpperCase() + w.slice(1)).join(" ");
-  return {
+  return applyBatch2Copy({
     slug,
     title,
     category: "Maintenance Guide",
@@ -122,7 +132,7 @@ export const maintenancePages: GenericContentPage[] = [
     bullets: ["Monthly checks", "Quarterly prevention", "Rainy-season readiness", "When to book inspection"],
     faqs: faq(slug.replace(/-/g, " ")),
     faqTopic: slug.replace(/-/g, " ")
-  };
+  }, maintenanceCopy[slug]);
 });
 
 export const seasonalPages: GenericContentPage[] = [
@@ -136,7 +146,7 @@ export const seasonalPages: GenericContentPage[] = [
   "monsoon-leak-emergency-guide"
 ].map((slug) => {
   const title = slug.split("-").map((w) => w[0].toUpperCase() + w.slice(1)).join(" ");
-  return {
+  return applyBatch2Copy({
     slug,
     title,
     category: "Seasonal",
@@ -144,7 +154,7 @@ export const seasonalPages: GenericContentPage[] = [
     bullets: ["Book early before peak weeks", "Prioritize leaks before repainting", "Protect furniture and flooring", "Confirm work hours with building management"],
     faqs: faq(slug.replace(/-/g, " ")),
     faqTopic: slug.replace(/-/g, " ")
-  };
+  }, seasonalCopy[slug]);
 });
 
 // P2-C3: per-service authored bodies (config/content-pod-copy.ts) replace the
@@ -211,6 +221,25 @@ export const residentialPages: GenericContentPage[] = Object.values(servicesData
   )
 );
 
+/**
+ * P2-C3 batch 2: apply authored copy (from content-pod-copy-batch2.ts) to a
+ * generic content page, replacing the shared template. The `faqTopic` is kept
+ * so the MS/ZH client resolver can regenerate 4 localized template FAQs that
+ * count-match the 4 authored EN FAQs (trilingual parity).
+ */
+function applyBatch2Copy(
+  page: GenericContentPage,
+  copy: Batch2PodCopy | undefined
+): GenericContentPage {
+  if (!copy) return page;
+  return {
+    ...page,
+    intro: copy.intro,
+    bullets: copy.bullets,
+    faqs: copy.faqs,
+  };
+}
+
 export const brandPages: GenericContentPage[] = [
   ["nippon-paint-application-malaysia", "Nippon Paint Application Malaysia", "painting"],
   ["dulux-paint-application-malaysia", "Dulux Paint Application Malaysia", "painting"],
@@ -224,7 +253,7 @@ export const brandPages: GenericContentPage[] = [
   ["sika-waterproofing-application", "Sika Waterproofing Application", "waterproofing"],
   ["bostik-waterproofing-application", "Bostik Waterproofing Application", "waterproofing"],
   ["mapei-waterproofing-application", "Mapei Waterproofing Application", "waterproofing"]
-].map(([slug, title, relatedServiceSlug]) => ({ slug, title, category: "Brand Guide", intro: `${title} explains when this brand or material category is suitable, how it should be applied, and what homeowners should check before approving a quote.`, bullets: ["Compatibility with the surface", "Correct preparation method", "Warranty and care considerations", "No claim of exclusive partnership unless documented"], faqs: faq(title), faqTopic: title, relatedServiceSlug: relatedServiceSlug as keyof typeof servicesData }));
+].map(([slug, title, relatedServiceSlug]) => applyBatch2Copy({ slug, title, category: "Brand Guide", intro: `${title} explains when this brand or material category is suitable, how it should be applied, and what homeowners should check before approving a quote.`, bullets: ["Compatibility with the surface", "Correct preparation method", "Warranty and care considerations", "No claim of exclusive partnership unless documented"], faqs: faq(title), faqTopic: title, relatedServiceSlug: relatedServiceSlug as keyof typeof servicesData }, brandCopy[slug]));
 
 // Aircon brand pages — 20 brands, same content model as klrenovator.com/brands/*.
 // Each lists brand-specific service scope, the common faults we see on that
@@ -254,7 +283,7 @@ const airconBrands: [string, string][] = [
 (brandPages as GenericContentPage[]).push(
   ...airconBrands.map(([slug, title]) => {
     const brand = title.replace(" Aircon Service Malaysia", "");
-    return {
+    const base: GenericContentPage = {
       slug,
       title,
       category: "Brand Guide",
@@ -269,6 +298,7 @@ const airconBrands: [string, string][] = [
       faqTopic: title,
       relatedServiceSlug: "aircon" as keyof typeof servicesData
     };
+    return applyBatch2Copy(base, airconBrandCopy[slug]);
   })
 );
 
@@ -283,7 +313,7 @@ export const topPages: GenericContentPage[] = [
   ["bathroom-waterproofing-options", "Bathroom Waterproofing Options"],
   ["ceiling-materials-malaysia", "Ceiling Materials in Malaysia"],
   ["handyman-services-every-homeowner-needs", "Useful Handyman Services for Homeowners"]
-].map(([slug, title]) => ({
+].map(([slug, title]) => applyBatch2Copy({
   slug,
   title,
   category: "Top Considerations",
@@ -291,7 +321,7 @@ export const topPages: GenericContentPage[] = [
   bullets: ["Transparent pricing", "Workmanship warranty", "Material quality", "Clean site handover", "Relevant local experience"],
   faqs: faq(title),
   faqTopic: title
-}));
+}, topCopy[slug]));
 
 export const answerPages: GenericContentPage[] = Object.values(servicesData).map((service) => ({
   slug: `${service.slug}-ultimate-guide`,
