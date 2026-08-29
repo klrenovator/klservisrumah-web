@@ -22,20 +22,42 @@
 > audit:location-similarity, seo:audit; part5 re-run: 3,669 pages, 0 JSON-LD
 > errors). Full log: `PART-5-AUDIT-REPORT.md` §5.5.
 >
-> **Next session starts at:** **P3-01** — BM/ZH English leaks in DirectAnswer
-> blocks (29/29 service pages, P0) + prebuild leak validator → **P2-C3** (174
-> generic content pods) → **P2-C4** (replace pair-copy generator with authored
-> area×service copy) → **P3-07** (fact reconciliation: RM 180 vs 220, 30-day vs
-> 5-year warranty, 10 vs 15+ staff) → P2-16/17/18 remainder (emergency depth,
-> problem expansion). BP-1 phase 2 still **blocked on GSC data (owner)**.
-> P5-04/06/07/10 (Fix Wave 3) + CF-4 all ✅. Do **not** add more location pages.
-> Do **not** re-add `app/(en|ms|zh)/loading.tsx`. Do **not** delete local pages
-> on low traffic alone. Do **not** retry the CI patch push (no `workflows`
-> permission).
+> **Fix Wave 4 COMPLETE (2026-08-29):** **P3-01** ✅ — all 29 services × MS/ZH
+> DirectAnswer notes rewritten (58 unique, native-style) + new prebuild gate
+> `audit:trilingual-leak` (L1 containment / L2 units / L3 function words +
+> anchor checks). **P3-07** ✅ — ceiling price RM 220 everywhere, "29+" counts,
+> "Written warranty, 30 days to 10 years (per service)" pill wording, painting
+> "single-room from RM 450" (per-room unit!), AI-context files regenerated and
+> regression-checked; the *owner-stat* half (1,200+/120+ reviews/15+ Pros/
+> 30-min) stays ⏳ under P3-09. **P2-C3 batch 1** 🔶 — the 58 wrong-audience
+> indexable pods (29 commercial + 29 residential) now carry hand-authored
+> bodies: unique ≤158-char intros, 4 audience-correct bullets + 4 AEO FAQs per
+> pod (`config/content-pod-copy.ts`), MS/ZH bullet translations preserving
+> client-switch localization (`config/content-pod-copy-i18n.ts` merged into
+> the body dictionaries), per-family guidance paragraphs via the new optional
+> `GenericContentPage.guidance` (`POD_GUIDANCE` in `content-data.ts`), and
+> prebuild gate `audit:content-pods` (coverage/uniqueness/audience/trilingual
+> wiring — a new service WITHOUT authored pods now fails the build).
+> Full log: `docs/full-website-deep-audit/FIX-WAVE-4-REPORT.md`.
+>
+> **Next session starts at:** **P2-C3 batch 2** — remaining pod families
+> (brands 32, compare 18, guides 10, maintenance 10, seasonal 8, top 10) under
+> the same authoring rules: extend `config/content-pod-copy.ts` (+ its i18n
+> sidecar for bullets), keep FAQ counts matched to the localized template,
+> `audit:content-pods` enforces. process/answers bodies already carry real
+> service data (only intros/guidance were template-generic). Then
+> **P2-16/17/18 remainder** (emergency depth, problem expansion).
+> **P2-C4** stays tied to the BP-1 phase-2 owner/GSC keep-set decision.
+> BP-1 phase 2 still **blocked on GSC data (owner)**. P5-04/06/07/10 (Fix Wave
+> 3) + CF-4 + Wave 4 all ✅. Do **not** add more location pages. Do **not**
+> re-add `app/(en|ms|zh)/loading.tsx`. Do **not** delete local pages on low
+> traffic alone. Do **not** retry the CI patch push (no `workflows`
+> permission). Do **not** weaken the estimator trilingual-parity asserts to
+> accommodate new copy — supply the translations instead.
 
-**Branch:** arena/01a04ad8-klservisrumah-web (this session branch — push PRs from here)
-**Last completed session:** 2026-08-29 — CF-4 ✅ (rate-book cost guides,
-`/estimate/*` noindex, aircon rateCopy trilingual, part5 cleanText fix)
+**Branch:** arena/01a04bb1-klservisrumah-web (this session branch — push PRs from here)
+**Last completed session:** 2026-08-29 — Fix Wave 4 ✅ (P3-01 + P3-07 +
+P2-C3 batch 1: 58 pods hand-authored, 2 new prebuild gates)
 
 **Quality gates (must all be green before any new work).**
 Numbers are the *measured* output of each command on this branch — update them
@@ -49,7 +71,7 @@ when the corpus changes, don't carry stale values forward:
 - [ ] npm run audit:html — 0 fatal / 0 warnings (3,669 pages)
 - [ ] npm run audit:links — 278,275 rendered + 53 source links, 0 broken
 - [ ] npm run audit:seo-head — PASS (3,643 self-canonical indexable, 26 noindex incl. 23 estimate URLs, sitemap = 3,643, 0 dupes)
-- [ ] npm run audit:i18n — 1,104 keys × 3, 0 missing
+- [ ] npm run audit:i18n — 1,182 keys × 3, 0 missing
 - [ ] npm run audit:topical-map — 29/29 services, 222 relationships
 - [ ] npm run audit:specialty-locale — 222 × MS/ZH = 444 blocks
 - [ ] npm run audit:specialty-coverage — 222 subservices across 29 services
@@ -57,6 +79,8 @@ when the corpus changes, don't carry stale values forward:
 - [ ] npm run audit:problem-i18n — 74 keep-URLs × MS/ZH, 12 redirects excluded
 - [ ] npm run audit:client-bundle — 217 client modules, 0 heavy registries
 - [ ] npm run audit:location-similarity — all layers < 70%; near-me layer = 0 pages
+- [ ] npm run audit:trilingual-leak — 29 services × 3 locale bases, 58 unique notes, 0 English leaks (prebuild too)
+- [ ] npm run audit:content-pods — 29 services × commercial+residential: 58 unique intros, 4 bullets/4 FAQs each, all pod bullets localized ×2 (prebuild too)
 - [ ] npm run test:estimators — 320,331 assertions, 0 failures
 - [ ] npm audit — 0 vulnerabilities
 
@@ -262,6 +286,7 @@ npm run lint && npm run type-check && npm run audit:i18n && \
 npm run audit:topical-map && npm run audit:specialty-locale && \
 npm run audit:specialty-coverage && npm run audit:service-i18n && \
 npm run audit:problem-i18n && npm run audit:client-bundle && \
+npm run audit:trilingual-leak && npm run audit:content-pods && \
 npm run test:estimators && npm audit
 
 # Build, then the corpus gates (these need .next/server/app to exist)

@@ -107,7 +107,7 @@ export function ServiceDetailHero({ service }: ServiceDetailHeroProps) {
             </div>
 
             {/* Trust badges row */}
-            <TrustBadgesRow variant="light" />
+            <TrustBadgesRow variant="light" warrantyText={service.warranty} />
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto mt-2">

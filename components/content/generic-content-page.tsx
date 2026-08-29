@@ -91,10 +91,10 @@ export function GenericContentPageView({ page }: { page: GenericContentPage }) {
           <h2 className="mb-5 text-2xl font-extrabold text-[#075985]">{t("content.practicalGuidance")}</h2>
           <div className="space-y-4 text-sm font-semibold leading-relaxed text-[#475569]">
             <p>
-              {t("content.guidanceIntro")}
+              {page.guidance?.intro ?? t("content.guidanceIntro")}
             </p>
             <p>
-              {t("content.guidanceSafeApproach")}
+              {page.guidance?.safe ?? t("content.guidanceSafeApproach")}
             </p>
           </div>
         </div>

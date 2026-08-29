@@ -1434,7 +1434,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
     "i18n": {
       "ms": {
         "title": "Jubin & Pembaikan Jubin Profesional",
-        "tagline": "Jubin lantai dan dinding untuk pembinaan baru, pengubahsuaian, dan pembaikan. Homogen, porselin, seramik, mozek, dan slab format besar. Dari RM 14 / sq ft.",
+        "tagline": "Jubin lantai dan dinding untuk pembinaan baru, pengubahsuaian, dan pembaikan. Homogen, porselin, seramik, mozek, dan slab format besar. Dari RM 14 / kaki persegi.",
         "warranty": "Jaminan Lekatan Jubin & Grout 12 Bulan",
         "subServices": [
           {
@@ -1496,7 +1496,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
       },
       "zh": {
         "title": "专业瓷砖与瓷砖修补",
-        "tagline": "新房、翻新与修补的地面和墙面瓷砖。瓷质、玻化、陶瓷、马赛克与超大板。从 RM 14 / sq ft 起。",
+        "tagline": "新房、翻新与修补的地面和墙面瓷砖。瓷质、玻化、陶瓷、马赛克与超大板。从 RM 14 / 平方呎 起。",
         "warranty": "12 个月瓷砖粘结与勾缝保修",
         "subServices": [
           {
@@ -1624,7 +1624,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
     "i18n": {
       "ms": {
         "title": "Reka Bentuk & Bina Siling Plaster Moden",
-        "tagline": "Siling plaster moden dengan alur LED tersembunyi, reka bentuk bertingkat, L-box, dan pencahayaan cove untuk hartanah bertanah dan bertingkat tinggi. Dari RM 10 / sq ft.",
+        "tagline": "Siling plaster moden dengan alur LED tersembunyi, reka bentuk bertingkat, L-box, dan pencahayaan cove untuk hartanah bertanah dan bertingkat tinggi. Dari RM 10 / kaki persegi.",
         "warranty": "Jaminan Bebas Lentur & Retak 10 Tahun",
         "subServices": [
           {
@@ -1686,7 +1686,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
       },
       "zh": {
         "title": "现代石膏天花板设计与施工",
-        "tagline": "为有地与高层物业打造的现代石膏天花板，含隐藏式 LED 灯槽、错层、L 盒与灯带。从 RM 10 / sq ft 起。",
+        "tagline": "为有地与高层物业打造的现代石膏天花板，含隐藏式 LED 灯槽、错层、L 盒与灯带。从 RM 10 / 平方呎 起。",
         "warranty": "10 年防下垂与防开裂保修",
         "subServices": [
           {
@@ -1779,7 +1779,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
     "i18n": {
       "ms": {
         "title": "Skim Coat Dinding & Siling",
-        "tagline": "Salutan skim licin kaca untuk dinding dan siling, kemasan siap-cat, penyediaan permukaan penuh dan pembaikan retak. Dari RM 5 / sq ft.",
+        "tagline": "Salutan skim licin kaca untuk dinding dan siling, kemasan siap-cat, penyediaan permukaan penuh dan pembaikan retak. Dari RM 5 / kaki persegi.",
         "warranty": "Jaminan Kelicinan & Lekatan 12 Bulan",
         "subServices": [
           {
@@ -1806,7 +1806,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
       },
       "zh": {
         "title": "墙面与天花腻子",
-        "tagline": "玻璃般光滑的墙面与天花腻子，可上漆的表面，全套基层处理与裂缝修补。从 RM 5 / sq ft 起。",
+        "tagline": "玻璃般光滑的墙面与天花腻子，可上漆的表面，全套基层处理与裂缝修补。从 RM 5 / 平方呎 起。",
         "warranty": "12 个月平整度与粘结保修",
         "subServices": [
           {

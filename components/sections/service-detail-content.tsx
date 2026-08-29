@@ -15,6 +15,7 @@ import { ServiceAreaLinks } from "@/components/sections/service-area-links";
 import { RelatedBlogs } from "@/components/sections/related-blogs";
 import { ServiceGuideSection } from "@/components/sections/service-guide-section";
 import { warrantyLead, slugify } from "@/lib/utils";
+import { buildServiceTrilingualNotes } from "@/lib/direct-answer-trilingual";
 import Link from "next/link";
 
 /**
@@ -54,6 +55,12 @@ type ServiceDetailContentProps = {
  */
 export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
   const t = useTranslations();
+  // P3-01: the BM/中文 sub-notes are assembled in one shared, pure builder
+  // (lib/direct-answer-trilingual.ts) so each note always interpolates the
+  // fields localized *for its own language* — never the page locale's English
+  // tagline/warranty — and so the prebuild validator can run the exact same
+  // code path over all 29 services.
+  const notes = buildServiceTrilingualNotes(service);
   return (
     <>
       {/* Section 1 — Overview */}
@@ -93,21 +100,23 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
             <DirectAnswer
               question={t("serviceContent.isRightService", { name: service.title.toLowerCase() })}
               answer={`${service.title} is recommended when you need ${service.tagline.toLowerCase()} This service is priced by project: KL Servis Rumah confirms the exact scope, materials and quotation terms in writing before work begins, with ${service.warranty.toLowerCase()}. Send your location, photos and rough dimensions on WhatsApp for a project-specific quotation — no generic 'starting from' price is published because every awning is built to the site.`}
-              trilingualMs={`${service.title} disyorkan apabila anda memerlukan ${service.tagline.toLowerCase()} Perkhidmatan ini diberi harga mengikut projek: KL Servis Rumah mengesahkan skop, bahan dan terma sebut harga secara bertulis sebelum kerja bermula, dengan ${service.warranty.toLowerCase()}. Hantar lokasi, gambar dan anggaran ukuran di WhatsApp untuk sebut harga khusus projek.`}
-              trilingualZh={`${service.title}适合需要${service.tagline.toLowerCase()}的客户。本服务按项目计价：KL Servis Rumah 在开工前以书面确认施工范围、材料与报价条款，并提供${service.warranty.toLowerCase()}。欢迎通过 WhatsApp 发送位置、照片和大致尺寸，获取项目专项报价。`}
-              trustItems={[
-                t("serviceContent.projectQuotedTrust"),
-                t("serviceContent.ssmRegistered"),
-                t("serviceContent.insuredOps"),
-                t("serviceContent.whatsappResponse")
-              ]}
+              trilingualMs={notes.ms}
+              trilingualZh={notes.zh}
+              trustItems={
+                [
+                  t("serviceContent.projectQuotedTrust"),
+                  t("serviceContent.ssmRegistered"),
+                  t("serviceContent.insuredOps"),
+                  t("serviceContent.whatsappResponse")
+                ]
+              }
             />
           ) : (
             <DirectAnswer
               question={t("serviceContent.isRightService", { name: service.title.toLowerCase() })}
               answer={`${service.title} is recommended when you need ${service.tagline.toLowerCase()} Our ${service.title} packages start from ${service.startPrice} and include transparent itemized quotes, fully insured operations, and a written ${service.warranty.toLowerCase()}. KL Servis Rumah confirms the exact scope, price, and any material costs before work begins so you can book with a clear budget and no hidden surprises.`}
-              trilingualMs={`${service.title} disyorkan apabila anda memerlukan ${service.tagline.toLowerCase()} Pakej kami bermula dari ${service.startPrice} dengan sebut harga terperinci, operasi diinsuranskan, dan ${service.warranty.toLowerCase()}.`}
-              trilingualZh={`${service.title} 适合需要${service.tagline.toLowerCase()}的客户。我们的服务从 ${service.startPrice} 起，包含透明分项报价、全程保险、以及${service.warranty.toLowerCase()}。`}
+              trilingualMs={notes.ms}
+              trilingualZh={notes.zh}
               trustItems={[
                 t("serviceContent.priceConfirmed"),
                 t("serviceContent.warranty", { days: warrantyLead(service.warranty) }),
@@ -271,7 +280,7 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
               {t("serviceContent.trustSub", { nameLower: service.title.toLowerCase() })}
             </p>
             <div className="mt-6 flex justify-center">
-              <TrustBadgesRow variant="light" />
+              <TrustBadgesRow variant="light" warrantyText={service.warranty} />
             </div>
           </div>
         </div>

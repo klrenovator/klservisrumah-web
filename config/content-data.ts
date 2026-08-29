@@ -1,4 +1,5 @@
 import { servicesData } from "@/config/services-data";
+import { commercialCopy, residentialCopy, type PodCopy } from "@/config/content-pod-copy";
 
 export type GenericContentPage = {
   slug: string;
@@ -26,6 +27,14 @@ export type GenericContentPage = {
     ms?: Partial<Pick<GenericContentPage, "title" | "intro" | "category">>;
     zh?: Partial<Pick<GenericContentPage, "title" | "intro" | "category">>;
   };
+  /**
+   * P2-C3: when a page belongs to an audience with its own guidance (the
+   * commercial pods were telling office managers about "Malaysian homes …
+   * condo management rules"), the family's authored paragraphs override the
+   * shared `content.guidanceIntro` / `content.guidanceSafeApproach` messages.
+   * Absent → the default (residential-flavoured) guidance renders as before.
+   */
+  guidance?: { intro: string; safe: string };
 };
 
 const faq = (topic: string) => [
@@ -138,27 +147,69 @@ export const seasonalPages: GenericContentPage[] = [
   };
 });
 
-export const commercialPages: GenericContentPage[] = Object.values(servicesData).map((service) => ({
-  slug: `${service.slug}-services-kl`,
-  title: `Commercial ${service.title} in KL`,
-  category: "Commercial",
-  intro: `Commercial ${service.title.toLowerCase()} focuses on offices, retail lots, showrooms, warehouses, and strata facilities that need tidy scheduling and minimal disruption.`,
-  bullets: ["After-hours or weekend scheduling", "Clear scope documentation", "Material and safety planning", "Fast WhatsApp coordination"],
-  faqs: faq(`commercial ${service.title}`),
-  faqTopic: `commercial ${service.title}`,
-  relatedServiceSlug: service.slug as keyof typeof servicesData
-}));
+// P2-C3: per-service authored bodies (config/content-pod-copy.ts) replace the
+// old shared commercial template — wrong-audience FAQ questions ("…relevant for
+// KL and Selangor homes?") and one bullet set for all 29 pages. The generic
+// fallback only remains as a safety net for future services; validate-content-
+// pods.ts fails prebuild until every service carries authored copy, so the net
+// is never actually relied on.
+const POD_GUIDANCE = {
+  commercial: {
+    intro:
+      "Commercial fit-out work succeeds or fails on logistics: access windows, lift and loading-bay bookings, JMB or management approvals, after-hours scheduling and a clean handover before trading resumes. Plan the trade around the tenancy, not the other way around.",
+    safe:
+      "Before approving any commercial quotation, confirm the scope, working hours, material schedules, insurance cover and disruption plan in writing — and keep a signed record for your landlord or building management. KL Servis Rumah prices commercial jobs on documented scope with a fixed, itemised quote before work starts."
+  },
+  residential: {
+    intro:
+      "In an occupied home the same job is judged differently: furniture and floor protection, dust control, kid- and pet-safe material choices, and a tidy close at the end of every day decide whether the works are survivable. Condo and high-rise living adds management hours and access rules on top.",
+    safe:
+      "Before booking any in-home trade, confirm protection arrangements, working hours and warranty terms in writing, and check what materials are included versus supplied. KL Servis Rumah quotes residential jobs with a fixed, itemised price confirmed in writing before the team arrives."
+  }
+};
 
-export const residentialPages: GenericContentPage[] = Object.values(servicesData).map((service) => ({
-  slug: `${service.slug}-services-kl`,
-  title: `Residential ${service.title} in KL`,
-  category: "Residential",
-  intro: `Residential ${service.title.toLowerCase()} supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental units across KL and Selangor.`,
-  bullets: ["Furniture and floor protection", "Condo/JMB coordination", "Transparent fixed-price quotes", "Warranty-backed workmanship"],
-  faqs: faq(`residential ${service.title}`),
-  faqTopic: `residential ${service.title}`,
-  relatedServiceSlug: service.slug as keyof typeof servicesData
-}));
+function podEntry(
+  service: (typeof servicesData)[keyof typeof servicesData],
+  family: "commercial" | "residential",
+  copy: PodCopy | undefined,
+  fallbackIntro: (title: string) => string
+): GenericContentPage {
+  return {
+    slug: `${service.slug}-services-kl`,
+    title: `${family === "commercial" ? "Commercial" : "Residential"} ${service.title} in KL`,
+    category: family === "commercial" ? "Commercial" : "Residential",
+    intro: copy?.intro ?? fallbackIntro(service.title),
+    bullets: copy?.bullets ?? (family === "commercial"
+      ? ["After-hours or weekend scheduling", "Clear scope documentation", "Material and safety planning", "Fast WhatsApp coordination"]
+      : ["Furniture and floor protection", "Condo/JMB coordination", "Transparent fixed-price quotes", "Warranty-backed workmanship"]),
+    faqs: copy?.faqs ?? faq(`${family} ${service.title}`),
+    // faqTopic stays so the MS/ZH client view keeps regenerating its four
+    // localized template FAQs (count-matched by the four authored FAQs above);
+    // the EN page itself renders the authored set. Localized per-pod FAQ
+    // answers are P3-12 territory.
+    faqTopic: `${family} ${service.title}`,
+    guidance: POD_GUIDANCE[family],
+    relatedServiceSlug: service.slug as keyof typeof servicesData
+  };
+}
+
+export const commercialPages: GenericContentPage[] = Object.values(servicesData).map((service) =>
+  podEntry(
+    service,
+    "commercial",
+    commercialCopy[service.slug],
+    (title) => `Commercial ${title.toLowerCase()} focuses on offices, retail lots, showrooms, warehouses, and strata facilities that need tidy scheduling and minimal disruption.`
+  )
+);
+
+export const residentialPages: GenericContentPage[] = Object.values(servicesData).map((service) =>
+  podEntry(
+    service,
+    "residential",
+    residentialCopy[service.slug],
+    (title) => `Residential ${title.toLowerCase()} supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental units across KL and Selangor.`
+  )
+);
 
 export const brandPages: GenericContentPage[] = [
   ["nippon-paint-application-malaysia", "Nippon Paint Application Malaysia", "painting"],

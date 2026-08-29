@@ -27,6 +27,7 @@ import {
   type SmartSearchEngine,
 } from "@/lib/smart-finder-loader";
 import { useLang } from "@/context/lang-context";
+import { SERVICE_COUNT } from "@/config/service-nav.generated";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { trackSmartFinderSearch, trackSmartFinderCardExpand, trackSmartFinderCalculatorClick, trackSmartFinderQuoteClick, trackSmartFinderNoResults, trackSmartFinderPopularTag, trackSmartFinderRelatedClick } from "@/lib/analytics";
 
@@ -55,7 +56,7 @@ const FINDER_COPY = {
     noResultsHeading: "Didn't find exactly what you're looking for?",
     noResultsSubheading: "Don't worry! We offer custom home repairs and specialist solutions across Kuala Lumpur and Selangor. Speak directly with our master technician on WhatsApp.",
     whatsappConsult: "Chat on WhatsApp for Instant Consultation",
-    browseAll: "Browse All 28+ Professional Services",
+    browseAll: `Browse All ${SERVICE_COUNT}+ Professional Services`,
     estimatedPriceNote: "Estimated Price — Final quotation confirmed after on-site or video inspection",
     viewDetails: "View Details & Scope",
     hideDetails: "Hide Details",
@@ -92,7 +93,7 @@ const FINDER_COPY = {
     noResultsHeading: "Tidak menjumpai servis yang anda cari?",
     noResultsSubheading: "Jangan risau! Kami menyediakan pembaikan kustom dan penyelesaian pakar di seluruh KL & Selangor. Hubungi terus juruteknik master kami di WhatsApp.",
     whatsappConsult: "Tanya di WhatsApp untuk Konsultasi Serta-merta",
-    browseAll: "Lihat Semua 28+ Perkhidmatan Profesional",
+    browseAll: `Lihat Semua ${SERVICE_COUNT}+ Perkhidmatan Profesional`,
     estimatedPriceNote: "Harga Anggaran — Sebut harga muktamad disahkan selepas pemeriksaan tapak atau video",
     viewDetails: "Lihat Butiran & Skop Kerja",
     hideDetails: "Tutup Butiran",
@@ -129,7 +130,7 @@ const FINDER_COPY = {
     noResultsHeading: "找不到您完全符合的需求？",
     noResultsSubheading: "别担心！在吉隆坡与雪兰莪，我们提供全方位定制化修缮与专业检修服务。点击通过 WhatsApp 直接向首席师傅咨询。",
     whatsappConsult: "通过 WhatsApp 直接在线咨询",
-    browseAll: "浏览全部 28+ 专业服务目录",
+    browseAll: `浏览全部 ${SERVICE_COUNT}+ 专业服务目录`,
     estimatedPriceNote: "预估费用参考 — 最终确实报价将在现场检查或评估后作准",
     viewDetails: "查看施工内容与材料详情",
     hideDetails: "收起详情",

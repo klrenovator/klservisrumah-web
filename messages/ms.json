@@ -92,7 +92,7 @@
         },
         "warranty": {
           "title": "Jaminan kerja sebenar",
-          "desc": "Sehingga 90 hari jaminan untuk kerja tangan dan jaminan lebih panjang untuk pengecatan, paip, dan kalis air."
+          "desc": "Setiap kerja datang dengan jaminan bertulis yang direkodkan dalam invois anda — dari 30 hari untuk pembaikan handyman dan paip, 12 bulan untuk cat dan pemasangan, hingga 5 tahun untuk kalis air dan lantai, dan 10 tahun untuk bumbung serta siling plaster perdana."
         },
         "verified": {
           "title": "Profesional yang disahkan dan ditapis",
@@ -129,7 +129,7 @@
         },
         "5": {
           "title": "Jaminan & Tandatangan",
-          "desc": "Kami melakukan ujian tekanan akhir (semak kebocoran / paras). Anda semak, tandatangan, dan terima jaminan bertulis 30-90 hari."
+          "desc": "Kami melakukan ujian tekanan akhir (semak kebocoran / paras). Anda semak, tandatangan, dan terima jaminan bertulis — 30 hari hingga 10 tahun, ikut perkhidmatan."
         }
       }
     },
@@ -640,7 +640,7 @@
     "priceFirst": "Harga Disahkan Dahulu",
     "google": "4.9 / 5 Google",
     "sameDay": "Hari Sama Tersedia",
-    "warranty": "Sehingga Jaminan 90 Hari"
+    "warranty": "Jaminan bertulis, 30 hari hingga 10 tahun (ikut perkhidmatan)"
   },
   "serviceDetail": {
     "bookWhatsApp": "Tempah melalui WhatsApp",
@@ -797,7 +797,7 @@
     "safetyInsured": "Operasi tempatan dilindungi insurans sepenuhnya",
     "safetyBoundaries": "Skop kerja yang jelas dan dipersetujui",
     "safetyQuotes": "Sebut harga tetap terperinci 100% sebelum kerja",
-    "safetyWarranty": "Jaminan kukuh sehingga 90 hari",
+    "safetyWarranty": "Jaminan bertulis pada setiap kerja — 30 hari hingga 10 tahun, ikut perkhidmatan",
     "callSupport": "Hubungi Sokongan {phone}",
     "areaFaqs": "Soalan Lazim Tempatan {area}",
     "coverageAreas": "Kawasan Liputan",
@@ -1543,7 +1543,7 @@
     "hiddenFeesOurs": "Sifar yuran tersembunyi. Bahan, pengangkutan & upah termasuk dalam harga permulaan.",
     "hiddenFeesTheirs": "Yuran pengangkutan, caj perkhidmatan, caj hujung minggu — semua ditambah selepas ketibaan.",
     "warranty": "Jaminan Kualiti Kerja",
-    "warrantyOurs": "Sehingga 90 hari jaminan bertulis untuk kerja tukang, lebih lama untuk cat & kalis air.",
+    "warrantyOurs": "Jaminan bertulis direkodkan ikut perkhidmatan — dari 30 hari untuk pembaikan tukang & paip sehingga 10 tahun untuk bumbung dan siling plaster perdana.",
     "warrantyTheirs": "Kebanyakan tidak menawarkan jaminan. Jika ya, ia hanya secara lisan — tiada jaminan bertulis.",
     "registration": "Pendaftaran Perniagaan",
     "registrationOurs": "Berdaftar SSM. Perniagaan Malaysia yang sah dengan rekod prestasi.",

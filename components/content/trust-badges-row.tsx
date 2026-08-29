@@ -12,6 +12,13 @@ type TrustBadgeItem = {
 type TrustBadgesRowProps = {
   items?: TrustBadgeItem[];
   variant?: "light" | "dark";
+  /**
+   * P3-07: when the page belongs to a specific service, pass that service's
+   * own warranty string (already localized via getLocalizedService) so the
+   * badge never contradicts the page's published warranty. Omit on generic
+   * surfaces — they fall back to the accurate range wording.
+   */
+  warrantyText?: string;
 };
 
 const iconMap = {
@@ -29,7 +36,8 @@ const iconMap = {
  */
 export function TrustBadgesRow({
   items,
-  variant = "light"
+  variant = "light",
+  warrantyText
 }: TrustBadgesRowProps) {
   const t = useTranslations();
   const isDark = variant === "dark";
@@ -40,7 +48,7 @@ export function TrustBadgesRow({
     { icon: "check", text: t("trustBadgesRow.priceFirst") },
     { icon: "star", text: t("trustBadgesRow.google") },
     { icon: "clock", text: t("trustBadgesRow.sameDay") },
-    { icon: "award", text: t("trustBadgesRow.warranty") }
+    { icon: "award", text: warrantyText?.trim() || t("trustBadgesRow.warranty") }
   ];
 
   const displayItems = items ?? defaultItems;

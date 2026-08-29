@@ -434,406 +434,406 @@ export const contentNavList: ContentNavItem[] = [
     "slug": "painting-services-kl",
     "title": "Commercial House Painting Services in KL",
     "category": "Commercial",
-    "intro": "Commercial house painting services focuses on offices, retail lots, showrooms, warehouses, and strata facilities that ne",
+    "intro": "Offices, shoplots and showrooms repainted after hours with low-odour systems, brand-colour matching and clean handover b",
     "relatedServiceSlug": "painting"
   },
   {
     "slug": "plumbing-services-kl",
     "title": "Commercial Plumbing & Leak Repair Services in KL",
     "category": "Commercial",
-    "intro": "Commercial plumbing & leak repair services focuses on offices, retail lots, showrooms, warehouses, and strata facilities",
+    "intro": "Commercial plumbing for F&B units, offices and strata plant rooms: leak isolation, riser and washroom repairs, pump work",
     "relatedServiceSlug": "plumbing"
   },
   {
     "slug": "ceiling-services-kl",
     "title": "Commercial Ceiling & Partition Services in KL",
     "category": "Commercial",
-    "intro": "Commercial ceiling & partition services focuses on offices, retail lots, showrooms, warehouses, and strata facilities th",
+    "intro": "Gypsum ceilings and partitions for offices and retail — laser-level framing, MEP access panels, tidy board schedules and",
     "relatedServiceSlug": "ceiling"
   },
   {
     "slug": "waterproofing-services-kl",
     "title": "Commercial Waterproofing & Leak Repair Services in KL",
     "category": "Commercial",
-    "intro": "Commercial waterproofing & leak repair services focuses on offices, retail lots, showrooms, warehouses, and strata facil",
+    "intro": "Warehouse roofs, podium decks and planter boxes: torch-on membranes, PU injection and ponding tests, documented for land",
     "relatedServiceSlug": "waterproofing"
   },
   {
     "slug": "handyman-services-kl",
     "title": "Commercial Handyman Services in KL",
     "category": "Commercial",
-    "intro": "Commercial handyman services focuses on offices, retail lots, showrooms, warehouses, and strata facilities that need tid",
+    "intro": "One work order, one tidy visit: signage and screen mounting, door and furniture fixes, anchor checks and wall repairs fo",
     "relatedServiceSlug": "handyman"
   },
   {
     "slug": "house-renovation-services-kl",
     "title": "Commercial Complete House Renovation in KL",
     "category": "Commercial",
-    "intro": "Commercial complete house renovation focuses on offices, retail lots, showrooms, warehouses, and strata facilities that ",
+    "intro": "Office and F&B fit-out refurbishment for Klang Valley tenancies: knock-down, rebuild and finishing sequenced around land",
     "relatedServiceSlug": "house-renovation"
   },
   {
     "slug": "electrical-services-kl",
     "title": "Commercial Licensed Electrical Services in KL",
     "category": "Commercial",
-    "intro": "Commercial licensed electrical services focuses on offices, retail lots, showrooms, warehouses, and strata facilities th",
+    "intro": "Commercial electrical for units and offices: dedicated appliance circuits, DB upgrades, ST-licensed wiremen and test rec",
     "relatedServiceSlug": "electrical"
   },
   {
     "slug": "water-heater-services-kl",
     "title": "Commercial Water Heater Installation & Repair in KL",
     "category": "Commercial",
-    "intro": "Commercial water heater installation & repair focuses on offices, retail lots, showrooms, warehouses, and strata facilit",
+    "intro": "Pantry and staff-quarter hot water for offices, salons and F&B back-of-house: heater supply, dedicated points and descal",
     "relatedServiceSlug": "water-heater"
   },
   {
     "slug": "ceiling-fan-services-kl",
     "title": "Commercial Ceiling Fan Installation & Replacement in KL",
     "category": "Commercial",
-    "intro": "Commercial ceiling fan installation & replacement focuses on offices, retail lots, showrooms, warehouses, and strata fac",
+    "intro": "Showroom, classroom and workshop fans: high-mount installs, balancing and regulator checks — with double-height spaces s",
     "relatedServiceSlug": "ceiling-fan"
   },
   {
     "slug": "lighting-services-kl",
     "title": "Commercial Lighting Design & Installation in KL",
     "category": "Commercial",
-    "intro": "Commercial lighting design & installation focuses on offices, retail lots, showrooms, warehouses, and strata facilities ",
+    "intro": "Downlight grids, track heads and LED retrofits for retail and offices: energy-first relamping, driver swaps and high-lev",
     "relatedServiceSlug": "lighting"
   },
   {
     "slug": "tiling-services-kl",
     "title": "Commercial Professional Tiling & Tile Repair in KL",
     "category": "Commercial",
-    "intro": "Commercial professional tiling & tile repair focuses on offices, retail lots, showrooms, warehouses, and strata faciliti",
+    "intro": "Lobbies, corridors and wet commercial areas: large-format and anti-slip tile schedules, setting-out drawings and phased ",
     "relatedServiceSlug": "tiling"
   },
   {
     "slug": "plaster-ceiling-services-kl",
     "title": "Commercial Plaster Ceiling Design & Build in KL",
     "category": "Commercial",
-    "intro": "Commercial plaster ceiling design & build focuses on offices, retail lots, showrooms, warehouses, and strata facilities ",
+    "intro": "Feature plaster, cove strips and bulkheads for lobbies and showrooms — decorative systems backed by a 10-year sag-free w",
     "relatedServiceSlug": "plaster-ceiling"
   },
   {
     "slug": "skim-coat-services-kl",
     "title": "Commercial Wall & Ceiling Skim Coat in KL",
     "category": "Commercial",
-    "intro": "Commercial wall & ceiling skim coat focuses on offices, retail lots, showrooms, warehouses, and strata facilities that n",
+    "intro": "Photo-ready wall finishes for showrooms and handovers: full surface prep and glass-smooth skim before final paint and th",
     "relatedServiceSlug": "skim-coat"
   },
   {
     "slug": "flooring-services-kl",
     "title": "Commercial Vinyl, SPC & Laminate Flooring in KL",
     "category": "Commercial",
-    "intro": "Commercial vinyl, spc & laminate flooring focuses on offices, retail lots, showrooms, warehouses, and strata facilities ",
+    "intro": "SPC and vinyl for offices, studios and shoplots: caster-rated build-ups, transition details to common floors and phased ",
     "relatedServiceSlug": "flooring"
   },
   {
     "slug": "epoxy-flooring-services-kl",
     "title": "Commercial Epoxy & Polyurethane Flooring in KL",
     "category": "Commercial",
-    "intro": "Commercial epoxy & polyurethane flooring focuses on offices, retail lots, showrooms, warehouses, and strata facilities t",
+    "intro": "Warehouse bays, workshop floors and car-park decks: self-levelled epoxy and anti-slip topcoats with coved skirtings, lai",
     "relatedServiceSlug": "epoxy-flooring"
   },
   {
     "slug": "roof-repair-services-kl",
     "title": "Commercial Roof Repair & Waterproofing in KL",
     "category": "Commercial",
-    "intro": "Commercial roof repair & waterproofing focuses on offices, retail lots, showrooms, warehouses, and strata facilities tha",
+    "intro": "Shed, factory and shoplot roof fixes: sheet replacement, flashing and ridge seals, skylight re-bedding and membrane syst",
     "relatedServiceSlug": "roof-repair"
   },
   {
     "slug": "kitchen-cabinet-services-kl",
     "title": "Commercial Kitchen Cabinet & Countertop in KL",
     "category": "Commercial",
-    "intro": "Commercial kitchen cabinet & countertop focuses on offices, retail lots, showrooms, warehouses, and strata facilities th",
+    "intro": "Café counters, staff pantries and prep lines: cabinet structures sized to the workflow, laminate fronts matched to brand",
     "relatedServiceSlug": "kitchen-cabinet"
   },
   {
     "slug": "carpentry-services-kl",
     "title": "Commercial Custom Carpentry & Joinery in KL",
     "category": "Commercial",
-    "intro": "Commercial custom carpentry & joinery focuses on offices, retail lots, showrooms, warehouses, and strata facilities that",
+    "intro": "Reception joinery, display walls and back-of-house fit-outs: brand-matched veneers and laminates, fabricated ahead and i",
     "relatedServiceSlug": "carpentry"
   },
   {
     "slug": "door-services-kl",
     "title": "Commercial Door Repair & Installation in KL",
     "category": "Commercial",
-    "intro": "Commercial door repair & installation focuses on offices, retail lots, showrooms, warehouses, and strata facilities that",
+    "intro": "High-traffic commercial doors: closers and hinges on heavy cycles, patch and clamp fittings for glass entrances, alignme",
     "relatedServiceSlug": "door"
   },
   {
     "slug": "window-repair-services-kl",
     "title": "Commercial Window Repair & Glass Replacement in KL",
     "category": "Commercial",
-    "intro": "Commercial window repair & glass replacement focuses on offices, retail lots, showrooms, warehouses, and strata faciliti",
+    "intro": "Shopfront and office windows: seal and gasket renewal, stiff sliding tracks, rollers and handles — including high-level ",
     "relatedServiceSlug": "window-repair"
   },
   {
     "slug": "locksmith-services-kl",
     "title": "Commercial Locksmith & Smart Lock Services in KL",
     "category": "Commercial",
-    "intro": "Commercial locksmith & smart lock services focuses on offices, retail lots, showrooms, warehouses, and strata facilities",
+    "intro": "Offices, stockrooms and warehouses: master-key planning, cylinder changes on tenant turnover, panic-exit hardware servic",
     "relatedServiceSlug": "locksmith"
   },
   {
     "slug": "glass-aluminium-services-kl",
     "title": "Commercial Glass & Aluminium Fabrication in KL",
     "category": "Commercial",
-    "intro": "Commercial glass & aluminium fabrication focuses on offices, retail lots, showrooms, warehouses, and strata facilities t",
+    "intro": "Storefront glass, aluminium partitions and glass doors for retail and offices: framing, fittings and seals installed to ",
     "relatedServiceSlug": "glass-aluminium"
   },
   {
     "slug": "cctv-services-kl",
     "title": "Commercial CCTV & Security Camera Installation in KL",
     "category": "Commercial",
-    "intro": "Commercial cctv & security camera installation focuses on offices, retail lots, showrooms, warehouses, and strata facili",
+    "intro": "Retail and warehouse coverage: camera planning against your floor plan, recorder retention settings and remote view — co",
     "relatedServiceSlug": "cctv"
   },
   {
     "slug": "autogate-services-kl",
     "title": "Commercial Auto Gate & Motorised Gate in KL",
     "category": "Commercial",
-    "intro": "Commercial auto gate & motorised gate focuses on offices, retail lots, showrooms, warehouses, and strata facilities that",
+    "intro": "Shared lots and factory yards: sliding and swing gate automation, safety beams and intercom tie-ins, plus service plans ",
     "relatedServiceSlug": "autogate"
   },
   {
     "slug": "welding-services-kl",
     "title": "Commercial Welding & Metal Fabrication in KL",
     "category": "Commercial",
-    "intro": "Commercial welding & metal fabrication focuses on offices, retail lots, showrooms, warehouses, and strata facilities tha",
+    "intro": "Fabrication and repair for workshops and yards: gates, grilles, canopies and stainless back-of-house work — site-welded,",
     "relatedServiceSlug": "welding"
   },
   {
     "slug": "aircon-services-kl",
     "title": "Commercial Aircon Service, Repair & Installation in KL",
     "category": "Commercial",
-    "intro": "Commercial aircon service, repair & installation focuses on offices, retail lots, showrooms, warehouses, and strata faci",
+    "intro": "Office and restaurant aircon: cassette and multi-split servicing after trade hours, chemical wash cycles, gas checks and",
     "relatedServiceSlug": "aircon"
   },
   {
     "slug": "kitchen-renovation-services-kl",
     "title": "Commercial Kitchen Renovation in KL",
     "category": "Commercial",
-    "intro": "Commercial kitchen renovation focuses on offices, retail lots, showrooms, warehouses, and strata facilities that need ti",
+    "intro": "Café, canteen and F&B kitchen refurbs: tiling, counters, water and drainage rework sequenced for the shortest close, quo",
     "relatedServiceSlug": "kitchen-renovation"
   },
   {
     "slug": "bathroom-renovation-services-kl",
     "title": "Commercial Bathroom Renovation in KL",
     "category": "Commercial",
-    "intro": "Commercial bathroom renovation focuses on offices, retail lots, showrooms, warehouses, and strata facilities that need t",
+    "intro": "Office and mall washroom refurbishment: one cubicle at a time keeps facilities open, with anti-slip floors, fixture swap",
     "relatedServiceSlug": "bathroom-renovation"
   },
   {
     "slug": "awning-installation-services-kl",
     "title": "Commercial Awning Installation Services in KL",
     "category": "Commercial",
-    "intro": "Commercial awning installation services focuses on offices, retail lots, showrooms, warehouses, and strata facilities th",
+    "intro": "Shoplot and alfresco awnings: five-footway-cleared designs, council-aware fabrication, after-hours installs where needed",
     "relatedServiceSlug": "awning-installation"
   },
   {
     "slug": "painting-services-kl",
     "title": "Residential House Painting Services in KL",
     "category": "Residential",
-    "intro": "Residential house painting services supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental units acr",
+    "intro": "Interior and exterior repainting for occupied homes: wrapped furniture, low-odour washable systems and room-by-room hand",
     "relatedServiceSlug": "painting"
   },
   {
     "slug": "plumbing-services-kl",
     "title": "Residential Plumbing & Leak Repair Services in KL",
     "category": "Residential",
-    "intro": "Residential plumbing & leak repair services supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental u",
+    "intro": "Home plumbing for condos and landed houses: leak tracing, fixture and heater work, pumps and pressures — isolation expla",
     "relatedServiceSlug": "plumbing"
   },
   {
     "slug": "ceiling-services-kl",
     "title": "Residential Ceiling & Partition Services in KL",
     "category": "Residential",
-    "intro": "Residential ceiling & partition services supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental unit",
+    "intro": "Gypsum ceilings and partitions for homes: laser-level framing, moisture-resistant boards where it counts and downlight-r",
     "relatedServiceSlug": "ceiling"
   },
   {
     "slug": "waterproofing-services-kl",
     "title": "Residential Waterproofing & Leak Repair Services in KL",
     "category": "Residential",
-    "intro": "Residential waterproofing & leak repair services supports condos, apartments, terrace homes, semi-Ds, bungalows, and ren",
+    "intro": "Bathroom, balcony and roof leaks for homes: no-hack PU options where possible, membrane systems where needed, and pondin",
     "relatedServiceSlug": "waterproofing"
   },
   {
     "slug": "handyman-services-kl",
     "title": "Residential Handyman Services in KL",
     "category": "Residential",
-    "intro": "Residential handyman services supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental units across KL",
+    "intro": "The mounted, fixed, hung and assembled jobs for homes: TVs anchored to the right wall, furniture assembled, doors and sh",
     "relatedServiceSlug": "handyman"
   },
   {
     "slug": "house-renovation-services-kl",
     "title": "Residential Complete House Renovation in KL",
     "category": "Residential",
-    "intro": "Residential complete house renovation supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental units a",
+    "intro": "Whole-home renovation for condos, terraces and bungalows: phased so you can keep living in parts of the home, with itemi",
     "relatedServiceSlug": "house-renovation"
   },
   {
     "slug": "electrical-services-kl",
     "title": "Residential Licensed Electrical Services in KL",
     "category": "Residential",
-    "intro": "Residential licensed electrical services supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental unit",
+    "intro": "Home wiring and points by ST-registered wiremen: dedicated circuits for aircons and kitchen gear, DB upgrades, labelled ",
     "relatedServiceSlug": "electrical"
   },
   {
     "slug": "water-heater-services-kl",
     "title": "Residential Water Heater Installation & Repair in KL",
     "category": "Residential",
-    "intro": "Residential water heater installation & repair supports condos, apartments, terrace homes, semi-Ds, bungalows, and renta",
+    "intro": "Instant and storage heaters for Malaysian bathrooms: supply, installation on a dedicated tested point, and descaling whe",
     "relatedServiceSlug": "water-heater"
   },
   {
     "slug": "ceiling-fan-services-kl",
     "title": "Residential Ceiling Fan Installation & Replacement in KL",
     "category": "Residential",
-    "intro": "Residential ceiling fan installation & replacement supports condos, apartments, terrace homes, semi-Ds, bungalows, and r",
+    "intro": "Bedroom and living-room fans done safely: rated brackets and downrods for your slab or joists, wobble-free balancing, li",
     "relatedServiceSlug": "ceiling-fan"
   },
   {
     "slug": "lighting-services-kl",
     "title": "Residential Lighting Design & Installation in KL",
     "category": "Residential",
-    "intro": "Residential lighting design & installation supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental un",
+    "intro": "Downlights, pendants and cove strips for homes: cleanly cut ceilings, serviceable driver placement and matched colour te",
     "relatedServiceSlug": "lighting"
   },
   {
     "slug": "tiling-services-kl",
     "title": "Residential Professional Tiling & Tile Repair in KL",
     "category": "Residential",
-    "intro": "Residential professional tiling & tile repair supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental",
+    "intro": "Floor and wall tiling for renovations and repairs: homogeneous, porcelain, ceramic, mosaic and large-format slabs — set ",
     "relatedServiceSlug": "tiling"
   },
   {
     "slug": "plaster-ceiling-services-kl",
     "title": "Residential Plaster Ceiling Design & Build in KL",
     "category": "Residential",
-    "intro": "Residential plaster ceiling design & build supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental un",
+    "intro": "Modern plaster ceilings for landed and high-rise homes: hidden cove light channels, stepped profiles, L-boxes and pelmet",
     "relatedServiceSlug": "plaster-ceiling"
   },
   {
     "slug": "skim-coat-services-kl",
     "title": "Residential Wall & Ceiling Skim Coat in KL",
     "category": "Residential",
-    "intro": "Residential wall & ceiling skim coat supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental units ac",
+    "intro": "Glass-smooth skim before the paint: full-surface prep, crack treatment and trowel-flat walls under raking light — the fi",
     "relatedServiceSlug": "skim-coat"
   },
   {
     "slug": "flooring-services-kl",
     "title": "Residential Vinyl, SPC & Laminate Flooring in KL",
     "category": "Residential",
-    "intro": "Residential vinyl, spc & laminate flooring supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental un",
+    "intro": "Click-lock SPC, laminate and vinyl for homes: level subfloors, moisture barriers where they belong, quiet underfoot — us",
     "relatedServiceSlug": "flooring"
   },
   {
     "slug": "epoxy-flooring-services-kl",
     "title": "Residential Epoxy & Polyurethane Flooring in KL",
     "category": "Residential",
-    "intro": "Residential epoxy & polyurethane flooring supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental uni",
+    "intro": "Garage and utility floors in epoxy: ground-prepped, self-levelled and sealed with wipe-clean, anti-slip options and cove",
     "relatedServiceSlug": "epoxy-flooring"
   },
   {
     "slug": "roof-repair-services-kl",
     "title": "Residential Roof Repair & Waterproofing in KL",
     "category": "Residential",
-    "intro": "Residential roof repair & waterproofing supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental units",
+    "intro": "Terrace and bungalow roof leaks fixed at the source: sheet and tile replacement, ridge and flashing seals, valley cleara",
     "relatedServiceSlug": "roof-repair"
   },
   {
     "slug": "kitchen-cabinet-services-kl",
     "title": "Residential Kitchen Cabinet & Countertop in KL",
     "category": "Residential",
-    "intro": "Residential kitchen cabinet & countertop supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental unit",
+    "intro": "Kitchen cabinets built for real Malaysian cooking: anti-termite boards, soft-close fittings, wipe-clean laminates or PU ",
     "relatedServiceSlug": "kitchen-cabinet"
   },
   {
     "slug": "carpentry-services-kl",
     "title": "Residential Custom Carpentry & Joinery in KL",
     "category": "Residential",
-    "intro": "Residential custom carpentry & joinery supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental units ",
+    "intro": "Joinery and carpentry at home: fitted wardrobes, feature walls, doors and trims patched to match — existing pieces reviv",
     "relatedServiceSlug": "carpentry"
   },
   {
     "slug": "door-services-kl",
     "title": "Residential Door Repair & Installation in KL",
     "category": "Residential",
-    "intro": "Residential door repair & installation supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental units ",
+    "intro": "Doors that bind, sag, rattle or won't lock: planed, rehinged, latched and sealed — front doors, bathroom doors and gates",
     "relatedServiceSlug": "door"
   },
   {
     "slug": "window-repair-services-kl",
     "title": "Residential Window Repair & Glass Replacement in KL",
     "category": "Residential",
-    "intro": "Residential window repair & glass replacement supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental",
+    "intro": "Casement, sliding and top-hung windows made smooth again: glass replacement, roller and track service, new seals, handle",
     "relatedServiceSlug": "window-repair"
   },
   {
     "slug": "locksmith-services-kl",
     "title": "Residential Locksmith & Smart Lock Services in KL",
     "category": "Residential",
-    "intro": "Residential locksmith & smart lock services supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental u",
+    "intro": "Home locks, hinges and entry security: cylinder upgrades when keys outlive their owners, strike reinforcement, smart-loc",
     "relatedServiceSlug": "locksmith"
   },
   {
     "slug": "glass-aluminium-services-kl",
     "title": "Residential Glass & Aluminium Fabrication in KL",
     "category": "Residential",
-    "intro": "Residential glass & aluminium fabrication supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental uni",
+    "intro": "Glass and aluminium at home: mirror walls for gyms and studies, splashbacks, wardrobe glass, partitions and shower enclo",
     "relatedServiceSlug": "glass-aluminium"
   },
   {
     "slug": "cctv-services-kl",
     "title": "Residential CCTV & Security Camera Installation in KL",
     "category": "Residential",
-    "intro": "Residential cctv & security camera installation supports condos, apartments, terrace homes, semi-Ds, bungalows, and rent",
+    "intro": "Home CCTV the honest way: coverage from porch to drive, discreet cabling, recorder placement agreed with you and phone v",
     "relatedServiceSlug": "cctv"
   },
   {
     "slug": "autogate-services-kl",
     "title": "Residential Auto Gate & Motorised Gate in KL",
     "category": "Residential",
-    "intro": "Residential auto gate & motorised gate supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental units ",
+    "intro": "Auto-gates for homes and cluster schemes: motor repair or replacement, rollers and tracks, safety beams, remotes and key",
     "relatedServiceSlug": "autogate"
   },
   {
     "slug": "welding-services-kl",
     "title": "Residential Welding & Metal Fabrication in KL",
     "category": "Residential",
-    "intro": "Residential welding & metal fabrication supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental units",
+    "intro": "Welding around the house: gates and grilles repaired, extenders and canopies built, stainless handrails and yard repairs",
     "relatedServiceSlug": "welding"
   },
   {
     "slug": "aircon-services-kl",
     "title": "Residential Aircon Service, Repair & Installation in KL",
     "category": "Residential",
-    "intro": "Residential aircon service, repair & installation supports condos, apartments, terrace homes, semi-Ds, bungalows, and re",
+    "intro": "Home aircon that actually cools: installs, chemical washes, gas top-ups and repairs — with drain tests, clean-sheet habi",
     "relatedServiceSlug": "aircon"
   },
   {
     "slug": "kitchen-renovation-services-kl",
     "title": "Residential Kitchen Renovation in KL",
     "category": "Residential",
-    "intro": "Residential kitchen renovation supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental units across K",
+    "intro": "Kitchen refurbs in a workable sequence: cabinets, tiles, water and extraction changed over in order — kitchen out of act",
     "relatedServiceSlug": "kitchen-renovation"
   },
   {
     "slug": "bathroom-renovation-services-kl",
     "title": "Residential Bathroom Renovation in KL",
     "category": "Residential",
-    "intro": "Residential bathroom renovation supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental units across ",
+    "intro": "Bathroom renovation without the dread: leak-safe waterproofing, new tiles, fresh fixtures — planned so the house keeps o",
     "relatedServiceSlug": "bathroom-renovation"
   },
   {
     "slug": "awning-installation-services-kl",
     "title": "Residential Awning Installation Services in KL",
     "category": "Residential",
-    "intro": "Residential awning installation services supports condos, apartments, terrace homes, semi-Ds, bungalows, and rental unit",
+    "intro": "Awnings and roofing for car porches, patios and yards: polycarbonate, metal deck or ACP chosen against your actual sun a",
     "relatedServiceSlug": "awning-installation"
   },
   {

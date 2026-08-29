@@ -45,7 +45,7 @@
 | P0 | Fix Part 1 Critical #3 — Resolve www/non-www host canonical | ⏳ PENDING (owner — needs live edge access) |
 | P0 | Fix Part 2 P2-C1 — Server-render content inside `<main>` (static HTML is a Loading shell) | ✅ DONE (Fix Wave 2) |
 | P0 | Fix Part 2 P2-C2 — `content.relatedReading` literal key renders as H2 on 224 pages | ✅ DONE (Fix Wave 1) |
-| P0 | Fix Part 2 P2-C3 — 174 generic "content pod" pages (commercial/residential/process/answers/brands/top/seasonal/guides) | ⏳ PENDING |
+| P0 | Fix Part 2 P2-C3 — 174 generic "content pod" pages (commercial/residential/process/answers/brands/top/seasonal/guides) | 🔶 IN PROGRESS (Wave 4 batch 1 — commercial + residential 58 pods hand-authored + `audit:content-pods` prebuild gate; brands/compare/guides/maintenance/seasonal/top remain) |
 | P0 | Fix Part 2 P2-C4 — Replace pair-copy generator; authored local copy for area×service | ⏳ PENDING |
 | P1 | Fix Part 2 P2-16/17/18 — Expand problems/cost; rewrite or retire emergency pages | ⏳ PENDING |
 | P1 | Fix Part 2 P2-19 — Real per-article blog dates (216 posts / 5 dates) | ⏳ PENDING |
@@ -65,6 +65,7 @@
 | 2026-08-28 | Part 5 audit — full-corpus schema/breadcrumb/image/cannibalization scan (`scripts/part5-audit.ts`) + content gap + decay + brand/entity + **cumulative Final Output A–N** | ✅ Part 5 committed (PR this session) — **ALL 5 AUDIT PARTS COMPLETE** |
 | 2026-08-28 | **Fix Wave 1** — quick wins from Part 5 §C/§N: P2-C2, P2-14, C7/P5-08, P5-01, P5-03, P5-05, P5-11, CF-1 (28 twin H1s), P3-05 lowPrice | ✅ See `FIX-WAVE-1-REPORT.md` |
 | 2026-08-28 | **Fix Wave 2** — C2/P2-C1/P4-01 content-inside-`<main>` + P5-02/P3-11/P3-02 visible FAQs | ✅ See `FIX-WAVE-2-REPORT.md` |
+| 2026-08-29 | **Fix Wave 4** — P3-01 trilingual DirectAnswer + leak gate · P3-07 fact reconciliation (code half of P3-14) · P2-C3 batch 1: 58 commercial+residential pods hand-authored + `audit:content-pods` gate | 🔶 P2-C3 batch 2+ remains; see `FIX-WAVE-4-REPORT.md` |
 | 2026-08-28 | **BP-1 phase 1** — Part 1 Critical #1/#2: 1,073 `/areas/*/*/near-me` + 1,073 `/suburbs/<twin>/*` retired to 301s; SSG stopped; sitemap 4,739→3,666; HTML 5,815→3,669; near-me Q&A absorbed into parent (FAQPage 3→6); new `audit:bp1` gate + `gen:bp1-map` | ✅ See `BP-1-PHASE-1-REPORT.md` |
 | 2026-08-28 | **Fix Wave 3** — P5-04 (@id-reference org architecture: full node homepage-only, GeoCircle areaServed, catalog dedup on 1,508 local + 773 variant pages, /pricing −95%, tools hubs −19 KB each; corpus JSON-LD 62.2→14.5 MB, City nodes 220,616→95) + P5-06 (HowTo retired) + P5-07 (Speakable orphans) + P5-10 (+256 breadcrumbed pages) + new `audit:schema-size` gate (≤8 KB non-FAQ ceiling enforced) | ✅ See `FIX-WAVE-3-REPORT.md` |
 | 2026-08-29 | **CF-4** — cost pages → canonical rate-book "harga" guides (29 pages: 222 rate-book rows, market baselines, worked example, methodology, measurement guide, localized job process + FAQs; words 543→1,373 mean, all ≥1,000) + `/estimate` hub & 22 generics NOINDEX (sitemap −23, IndexNow −23, seo-head gate extended) + aircon rateCopy 7×3 + `&#x27;` cleanText fix (part5 FAQ false positives 5→0) | ✅ See `PART-5-AUDIT-REPORT.md` §5.5 implementation log |
@@ -110,13 +111,17 @@ and the `/estimate/*` NOINDEX decision (§5.5-CF-4)**.
    local signal, and add authored local copy (landmarks, condo/JMB rules,
    real jobs) to the kept set. **Blocked on GSC data (owner)** — Part 1 §1.3
    is explicit: *do not delete on low traffic alone.*
-2. **Next unblocked work — P3-01:** BM/ZH English leaks in DirectAnswer
-   blocks (29/29 service pages, P0) + prebuild leak validator.
-3. Then: **P2-C3** 174 generic content pods → **P2-C4** replace the
-   pair-copy generator with authored area×service copy → remaining Part 3
-   P0s (**P3-07** fact reconciliation: RM 180 vs 220, 30-day vs 5-year
-   warranty, 10 vs 15+ staff) → **P2-16/17/18 remainder** (emergency-page
-   depth, problem-page expansion still PENDING).
+2. **Fix Wave 4 done:** P3-01 ✅ (localized DirectAnswer notes +
+   `audit:trilingual-leak`), P3-07 ✅ (price/count/warranty reconciliation;
+   owner stat verification stays ⏳), P2-C3 **batch 1** ✅ (58 commercial +
+   residential pods hand-authored with trilingual parity behind the new
+   `audit:content-pods` prebuild gate).
+3. **Next unblocked work — P2-C3 batch 2:** the remaining pod families
+   (brands 32, compare 18, guides 10, maintenance 10, seasonal 8, top 10)
+   under the same authoring rules + gate. Then **P2-16/17/18 remainder**
+   (emergency-page depth, problem-page expansion). **P2-C4** stays tied to
+   the BP-1 phase-2 owner/GSC keep-set decision — never mass-generate
+   location pages.
 4. **CI patch still unapplied (retried this session — same rejection):**
    `git apply docs/full-website-deep-audit/BP-1-ci-audit-bp1.patch` adds
    **both** `audit:bp1` and `audit:schema-size` as post-build CI steps
@@ -165,9 +170,9 @@ and the `/estimate/*` NOINDEX decision (§5.5-CF-4)**.
 
 | Prio | Task (from PART-3-AUDIT-REPORT.md) | Status |
 |---|---|---|
-| P0 | P3-01 — Fix English leaks inside BM/中文 DirectAnswer blocks (29/29 service pages) + add prebuild leak validator | ⏳ PENDING |
+| P0 | P3-01 — Fix English leaks inside BM/中文 DirectAnswer blocks (29/29 service pages) + add prebuild leak validator | ✅ DONE (Fix Wave 4 — 58 unique localized notes + `audit:trilingual-leak` in prebuild) |
 | P0 | P3-05 — Add units to per-sq-ft prices on all AI surfaces ("from RM 14/10/5/22") + fix `lowPrice: "80"` | 🟡 PARTIAL (Fix Wave 1 — startPrice units + schema UnitPriceSpecification + homepage lowPrice fixed; remaining AI-surface copy leaks still ⏳) |
-| P0 | P3-07 — Reconcile contradictory facts: RM 180 vs 220 ceiling price, "28+" vs 29 services, warranty pill vs per-service warranty (251 pages), stats claims | ⏳ PENDING |
+| P0 | P3-07 — Reconcile contradictory facts: RM 180 vs 220 ceiling price, "28+" vs 29 services, warranty pill vs per-service warranty (251 pages), stats claims | ✅ DONE (Fix Wave 4 — all surfaces unified + AI-context regression-checked; the *stats claims* half stays owner-⏳ under P3-09/P2-21) |
 | P1 | P3-11 — Server-render homepage + /faq hub accordion answers (JS-only today) | ✅ DONE (Fix Wave 2 — native `<details>`) |
 | P1 | P3-02 — /faq hub: add FAQPage JSON-LD + question H3s + remove hidden "No matches" text | 🟡 PARTIAL (Fix Wave 2 — FAQPage JSON-LD + visible answers; question H3s / hidden empty-state still ⏳) |
 | P1 | P3-04 — Cost pages: add "How much does {svc} cost in KL?" DirectAnswer + expand 459-word bodies | ⏳ PENDING |

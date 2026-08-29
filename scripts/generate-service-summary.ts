@@ -70,7 +70,7 @@ const serviceNavigation = Object.fromEntries(
     }
   }])
 );
-const navContents = `// AUTO-GENERATED FILE — do not edit by hand.\n// Compact client-safe service navigation and quote-picker data.\n\nexport type ServiceNavItem = { slug: string; title: string; startPrice: string; i18n: Record<"ms" | "zh", { title: string }> };\nexport const serviceNavBySlug: Record<string, ServiceNavItem> = ${JSON.stringify(serviceNavigation, null, 2)};\nexport const serviceNavList = Object.values(serviceNavBySlug);\nexport function getLocalizedServiceNav(item: ServiceNavItem, locale: "en" | "ms" | "zh") {\n  return locale === "en" ? item : { ...item, title: item.i18n[locale].title };\n}\n`;
+const navContents = `// AUTO-GENERATED FILE — do not edit by hand.\n// Compact client-safe service navigation and quote-picker data.\n\nexport type ServiceNavItem = { slug: string; title: string; startPrice: string; i18n: Record<"ms" | "zh", { title: string }> };\nexport const serviceNavBySlug: Record<string, ServiceNavItem> = ${JSON.stringify(serviceNavigation, null, 2)};\nexport const serviceNavList = Object.values(serviceNavBySlug);\n// Number of services in the registry — the ONLY source for "N+ services" copy\n// (homepage FAQ, smart finder, /services hub). Regenerated on every prebuild,\n// so a new service can never re-create the 28+/29 drift (P3-07).\nexport const SERVICE_COUNT = ${Object.keys(servicesData).length};\nexport function getLocalizedServiceNav(item: ServiceNavItem, locale: "en" | "ms" | "zh") {\n  return locale === "en" ? item : { ...item, title: item.i18n[locale].title };\n}\n`;
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const outPath = path.resolve(__dirname, "../config/service-summary.generated.ts");
