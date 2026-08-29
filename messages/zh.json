@@ -1317,6 +1317,16 @@
     "costCrumb": "费用",
     "badge": "2026 价格指南",
     "h1": "{name}在KL与雪兰莪需要多少钱？",
+    "directAnswer": {
+      "question": "{name}在KL与雪兰莪需要多少钱？",
+      "answer": "{name}在KL与雪兰莪从{startPrice}起。下方{scopeCount}项公开价格按{unitBasis}计算，动工前每个数字都会以书面确认。出入条件、材料与现场状况会影响最终金额——先用{name}估价器算出大约范围，再传送照片与尺寸以取得固定书面报价。",
+      "answerQuoteOnly": "{name}在KL与雪兰莪按项目报价：由于每一项工程都根据现场设计与制作，我们不公布通用起步价。下方{quoteOnlyCount}项范围在取得尺寸与现场照片后才定价。请传送地点、图纸或照片，我们会在制作开始前以书面确认范围、材料与价格。",
+      "perUnit": "每{unit}",
+      "unitSeparator": "、",
+      "pill1": "公开价目表",
+      "pill2": "书面固定报价",
+      "pill3": "无隐藏收费"
+    },
     "intro": "使用本指南先了解巴生谷公道价格，再索取固定报价。最终费用取决于实际尺寸、出入条件、材料和现场状况。",
     "tableCaption": "{name}价格范围",
     "scope": "范围",

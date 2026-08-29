@@ -73,7 +73,10 @@
 | 2026-08-29 | **Fix Wave 6** — P2-17/P2-03: emergency pages rewritten per-service for the 12 real-emergency services (`config/emergency-services.ts`, EN/MS/ZH) and the 17 fake-emergency pages retired via middleware 301 + `generateStaticParams` + sitemap + cost-card gate (sitemap 3,643→3,626). P2-16: 15 thinnest problem pages enriched with `overview`/`diyChecks`/`prevention`/`costDetail` (EN/MS/ZH, native) + `audit:problem-i18n` extended to enforce native depth parity. All gates PASS (3,652 HTML; 320,291 assertions × 0 failures) | ✅ See `FIX-WAVE-6-REPORT.md` |
 | 2026-08-29 | **Fix Wave 7** — P2-16 tranche 2: next 15 thinnest problems enriched (`rusting-window-grille`, `loose-door-hinge`, `stuck-window-lock`, `ikea-furniture-assembly-help`, `downlight-flickering`, `sagging-plaster-ceiling`, `blocked-drain-toilet`, `ceiling-leak-after-rain`, `roof-leak-rainy-season`, `swimming-pool-leak-balcony`, `wardrobe-door-jamming`, `cracked-ceiling-joints`, `locked-out-of-house`, `uneven-wall-surface-skim`, `cctv-not-recording-storage-full`) — 45 hand-authored depth blocks EN/MS/ZH; new `scripts/p2-16-wordcount.ts` ranking helper. **30/74 problems enriched** (audit's top-30-by-demand target closed via thinness ranking). All gates PASS: lint/type-check/prebuild (320,291 assertions × 0 failures)/build (3,660 static)/audit:html/audit:links (277,170+53, 0 broken)/audit:seo-head | ✅ See `FIX-WAVE-7-REPORT.md` |
 | 2026-08-29 | **Fix Wave 8** — P2-19: real per-article blog dates + per-article sitemap lastMod. 216 posts shared 5 dates (99 on one day) → **54 distinct dates (max 7/day)**, bucket-capped deterministic assignment (`scripts/assign-blog-dates.ts`); `dateModified` split from `datePublished` via new `blogDateModified()` (migrated → 2026-08-16 release date; awning → own dates); sitemap blog URLs emit per-article lastMod (648 URLs, 0 on the constant); blog `post()` helpers now require explicit `date`; validator gate: parseable, non-future, ≤10 posts/date. All gates PASS (prebuild 320,291 × 0; build 3,660 static; seo-head/html/links green) | ✅ See `FIX-WAVE-8-REPORT.md` |
-| 2026-08-29 | **Fix Wave 9** — the unblocked CRO/UX queue: P4-05 (global sticky book button w/ pathname-derived context) + P4-03 (single desktop float — WhatsApp dispatch desk removed); P4-02 (static quick-quote form inside mobile hero; content-driven min-height); P4-07 (new `/api/inquiry` route + `QuickQuoteForm` — static JS-free form on `/` + `/contact`, 302 → WhatsApp prefill); P4-12 (static SVG coverage map on `/areas` + 37 area pages; `hasMap` → real Google Maps URL); P4-06 (rate-book include/exclude block on 29 service pages, server-passed slim data); P4-16 (Full Price Guide link in service hero); P4-17 (aircon 6 problems + 4 aircon cost-tool links); P4-11 code half (authorship claim re-attributed). All gates PASS (build 3,652 HTML; prebuild 320,291 × 0; audit:html 0/0; audit:links 278,649+54 → 0 broken; audit:seo-head; audit:i18n 1,213 × 3; audit:schema-size; audit:bp1; audit:location-similarity; seo:audit+meta) | ✅ See `FIX-WAVE-9-REPORT.md` |\n| 2026-08-29 | **Fix Wave 10** — final unblocked code queue: §5.6 RATE_YEAR freshness gate (`audit:rate-year` in prebuild; 714 files / 162 tokens = 2026); P5-13/14 raster OG (next/og 1200×630 route, 8 templates wired via `inferOgTemplate` + explicit ogTemplate on 126 tool routes + 29 cost pages; schema images rasterised; new `audit:raster-og` gate — 0 SVG, all 8 templates emitted, 1,979 pages on /og-image); P4-15 NAP strip in content on all template families (2,112/3,652 = 57.8%, baseline 0%; asserted in `audit:bp1` check 8); P3-02 completed (H3 questions + empty-state removed, FAQPage verified EN/MS/ZH); P3-06 blog FAQPage (193/192/192 posts EN/MS/ZH + top-FAQ H2, CTA-heading exclusion); P3-18 llms.txt 29 services + aeo-faq.txt link + robots AI bots. All gates PASS (prebuild 320,291 × 0; build 3,660; audit:html/links/seo-head/bp1/schema-size/location-similarity/meta/seo PASS) | ✅ See `FIX-WAVE-10-REPORT.md` |
+| 2026-08-29 | **Fix Wave 9** — the unblocked CRO/UX queue: P4-05 (global sticky book button w/ pathname-derived context) + P4-03 (single desktop float — WhatsApp dispatch desk removed); P4-02 (static quick-quote form inside mobile hero; content-driven min-height); P4-07 (new `/api/inquiry` route + `QuickQuoteForm` — static JS-free form on `/` + `/contact`, 302 → WhatsApp prefill); P4-12 (static SVG coverage map on `/areas` + 37 area pages; `hasMap` → real Google Maps URL); P4-06 (rate-book include/exclude block on 29 service pages, server-passed slim data); P4-16 (Full Price Guide link in service hero); P4-17 (aircon 6 problems + 4 aircon cost-tool links); P4-11 code half (authorship claim re-attributed). All gates PASS (build 3,652 HTML; prebuild 320,291 × 0; audit:html 0/0; audit:links 278,649+54 → 0 broken; audit:seo-head; audit:i18n 1,213 × 3; audit:schema-size; audit:bp1; audit:location-similarity; seo:audit+meta) | ✅ See `FIX-WAVE-9-REPORT.md` |
+| 2026-08-29 | **Fix Wave 10** — final unblocked code queue: §5.6 RATE_YEAR freshness gate (`audit:rate-year` in prebuild; 714 files / 162 tokens = 2026); P5-13/14 raster OG (next/og 1200×630 route, 8 templates wired via `inferOgTemplate` + explicit ogTemplate on 126 tool routes + 29 cost pages; schema images rasterised; new `audit:raster-og` gate — 0 SVG, all 8 templates emitted, 1,979 pages on /og-image); P4-15 NAP strip in content on all template families (2,112/3,652 = 57.8%, baseline 0%; asserted in `audit:bp1` check 8); P3-02 completed (H3 questions + empty-state removed, FAQPage verified EN/MS/ZH); P3-06 blog FAQPage (193/192/192 posts EN/MS/ZH + top-FAQ H2, CTA-heading exclusion); P3-18 llms.txt 29 services + aeo-faq.txt link + robots AI bots. All gates PASS (prebuild 320,291 × 0; build 3,660; audit:html/links/seo-head/bp1/schema-size/location-similarity/meta/seo PASS) | ✅ See `FIX-WAVE-10-REPORT.md` |
+| 2026-08-29 | **Fix Wave 11** — P3-12 phase 1: MS/ZH server routes for all 215 kept pod details + 10 hubs via the `locale-content-router.tsx` factory (40 thin route stubs), each self-canonical with full EN/MS/ZH/x-default hreflang, localized OG/`lang` and schema matching the rendered FAQs; 6 duplicate localized descriptions disambiguated; +450 localized URLs; indexable = sitemap = 4,054 parity. All gates PASS | ✅ See `FIX-WAVE-11-REPORT.md` |
+| 2026-08-29 | **Fix Wave 12** — P3-04: literal "How much does {svc} cost in KL & Selangor?" DirectAnswer card on all 29 `/services/<svc>/cost` pages (question H2 + 2–3 sentence answer citing the published price **with units** + rate-book-derived pricing basis + estimator link, EN/BM/中文) built by the new pure `lib/cost-direct-answer.ts`, which also feeds the first `FAQPage` Question so schema and HTML cannot drift; new prebuild gate `audit:cost-direct-answer` (87 cards = 29 × 3; negative-tested 3 ways). Also closed P3-05: verified all four recorded AI-surface leaks already fixed, then fixed the two it missed — 28/29 service hubs printed "from **rm** 14 / sq ft" inside the DirectAnswer (`lowerFirstSentence()`) — and added a case-sensitive `lowercase-currency` check to `audit:html` (28 fatals pre-fix → none post-fix). Fixed the stale `part3-aeo-audit` `contentText()` (text-after-`</footer>` → document body) which had silently zeroed every readability/DirectAnswer/NAP signal since Wave 2. Corpus: `/services/<svc>/cost` **qa 0% → 100%**, "how much" H2 0 → 29/29, faqSchemaNoVisibleMatch 0, BM/中文 leaks 0/0. All gates PASS: lint 0/0, type-check, prebuild **320,291 × 0 failures**, build SUCCESS (4,080 HTML), audit:html none/none, audit:links 308,753+56 → 0 broken, audit:seo-head (4,054 = 4,054), schema-size, bp1 (NAP-in-content 62.3%), location-similarity, meta, seo:audit, part5 (0 JSON-LD errors) | ✅ DONE — **PR #189**, CI green (QA job 3m21s: gates/types/lint/SSG build/audits) — See `FIX-WAVE-12-REPORT.md` |
 
 ---
 
@@ -102,62 +105,97 @@
 
 ## ⭐ NEXT SESSION MUST CONTINUE HERE
 
-**All 5 audit parts are complete; Fix Wave 1–11, BP-1 phase 1 and CF-4 are
-complete.** Wave 7 closed P2-16 (30/74 problems enriched EN/MS/ZH), Wave 8
-closed **P2-19** (54 distinct per-article blog dates + per-article sitemap
-lastMod), Wave 9 closed the entire unblocked CRO/UX queue
-(P4-05/P4-03/P4-02/P4-07/P4-12/P4-06/P4-16/P4-17 + P4-11 code half),
-**Wave 10 closed the §5.6/AEO/OG/NAP queue** — §5.6 RATE_YEAR gate,
-P5-13/14 raster OG (with `audit:raster-og` gate), P4-15 NAP-in-content
-(57.8%, asserted in `audit:bp1`), P3-02 completion, P3-06 blog FAQPage,
-P3-18 llms.txt + robots AI bots — and **Wave 11 closed P3-12** (MS/ZH server
-routes for all 215 kept pod details + 10 hubs, with hreflang clusters and
-localized canonical/OG; +450 localized URLs, indexable=sitemap 4,054 parity).
-See `FIX-WAVE-11-REPORT.md` (and the earlier `FIX-WAVE-7/8/9/10-REPORT.md`
-files). With that, **the only audit findings left on the boards are
-owner-blocked, need owner data/access, or are the P2/P3 enhancements listed
-in item 8 below.**
+**All 5 audit parts are complete; Fix Wave 1–12, BP-1 phase 1 and CF-4 are
+complete.** Wave 9 closed the unblocked CRO/UX queue, Wave 10 the
+§5.6/AEO/OG/NAP queue, Wave 11 closed P3-12 phase 1 (MS/ZH pod routes), and
+**Wave 12 closed P3-04** (the last unblocked **P1** on the board): every one of
+the 29 `/services/<svc>/cost` money pages now opens with the literal
+*"How much does {service} cost in KL & Selangor?"* DirectAnswer card — question
+H2 + a 2–3 sentence answer citing the published starting price **with its unit**
++ the rate-book-derived pricing basis + an estimator link, in EN / BM / 中文 —
+and that same Q&A is the first `FAQPage` `Question` on the page. Corpus proof:
+`/services/<svc>/cost` **qa 0% → 100%**, "how much" H2 **0 → 29/29**,
+`faqSchemaNoVisibleMatch` **0** site-wide. Wave 12 also closed **P3-05** and
+repaired two audit tools. See `FIX-WAVE-12-REPORT.md`.
 
-1. **The unblocked CRO/UX queue is now COMPLETE (Fix Wave 9, 2026-08-29):**
-   P4-05 (global persistent booking float), P4-03 (single desktop float — WhatsApp
-   dispatch desk removed), P4-02 (mobile quote box inside the hero viewport),
-   P4-07 (static SSR inquiry form `/api/inquiry` + QuickQuoteForm on `/` + `/contact`),
-   P4-12 (static SVG coverage map on `/areas` + 37 area pages; `hasMap` now a real
-   Google Maps URL), P4-06 (include/exclude block on 29 service pages from the
-   rate-book), P4-16 (cost-guide link in service hero), P4-17 (aircon 6 problems +
-   aircon tools row), P4-11 code half (authorship claim re-attributed). All gates
-   PASS (build 3,652 HTML; 320,291 assertions × 0 failures; audit:html 0/0;
-   audit:links 278,649+54 → 0 broken; audit:seo-head; audit:i18n 1,213 × 3;
-   audit:schema-size; audit:bp1; audit:location-similarity). Full log:
-   `docs/full-website-deep-audit/FIX-WAVE-9-REPORT.md`.
-2. **P2-16 tranche 3 (optional, needs demand data):** the remaining 44
+**With Wave 12 done, no P0 or P1 audit finding remains unblocked.** Everything
+left is owner-blocked, needs owner data/access, or is a P2/P3 enhancement.
+
+1. **What Wave 12 changed (2026-08-29):** new `lib/cost-direct-answer.ts` (pure
+   builder, shared by the client view and the server route so schema and HTML
+   cannot drift), 8 new `costPage.directAnswer.*` keys × 3 locales, an optional
+   `actions[]` row on `components/content/direct-answer.tsx`, the new prebuild
+   gate `audit:cost-direct-answer` (87 cards), `lowerFirstSentence()` in
+   `lib/utils.ts` (+ a case-sensitive `lowercase-currency` check in
+   `audit:html`), and a fix to `scripts/part3-aeo-audit.ts#contentText()`.
+   All gates PASS: lint 0/0, type-check, prebuild **320,291 assertions × 0
+   failures**, build SUCCESS (**4,080** HTML), audit:html none/none,
+   audit:links 308,753+56 → 0 broken, audit:seo-head (4,054 indexable = 4,054
+   sitemap), schema-size, bp1 (NAP-in-content 62.3%), location-similarity,
+   meta, seo:audit, part5 (0 JSON-LD errors).
+2. **⚠️ Audit-tooling warning (read before quoting any Part 3 number):**
+   `part3-aeo-audit.ts#contentText()` used to slice the text **after the last
+   `</footer>`** — correct only for the pre-Wave-2 layout. Every re-run between
+   Wave 2 and Wave 12 therefore reported `words=8`, `qa=0%`, `nap=0%` and
+   `vague=0` for essentially the whole corpus. Fixed in Wave 12 (it now reads
+   the document `<body>`). **Pre-Wave-12 `meanWords` / `pctQuickAnswer` /
+   `pctNap` / vague-term figures are not comparable with current ones**;
+   `pctQuestionH2`, `pctFaqSchema` and the leak counts were always raw-HTML
+   regexes and remain comparable. If another corpus analyzer shows a suspiciously
+   uniform `words=8`, suspect the same stale-slice bug.
+3. **P2-16 tranche 3 (optional, needs demand data):** the remaining 44
    problems — next thinnest: `vinyl-flooring-lifting-edges` (166),
    `wall-dampness-rising` (167), `autogate-remote-not-working` (167),
    `ceiling-mold-stains` (168), `rccb-tripping-kl` (168). Owner GSC data
    would re-rank this list; without it, use `scripts/p2-16-wordcount.ts`
    thinness order.
-3. **P2-22 (owner decision):** add outbound citations to brands/authorities.
-4. **BP-1 phase 2 / P2-C4 still blocked on owner GSC keep-set** — do **not**
+4. **P2-22 (owner decision):** add outbound citations to brands/authorities.
+5. **BP-1 phase 2 / P2-C4 still blocked on owner GSC keep-set** — do **not**
    add more location pages; do **not** delete local pages on low traffic alone.
-5. **CI patch now APPLIED in-tree (uncommitted):**
-   `docs/full-website-deep-audit/BP-1-ci-audit-bp1.patch` adds `audit:bp1` +
-   `audit:schema-size` (now also `audit:raster-og`) as post-build CI steps.
-   The GitHub App token still lacks the `workflows` permission — keep the
-   ci.yml change out of commits unless the token has it; retry on any session
-   whose token does, or apply from an owner account. Source-level gates
-   (incl. `audit:raster-og --source-only`) already run in CI via `prebuild`.
-6. **Post-deploy (owner/SEO):** confirm the 2,146 BP-1 URLs and the 17 retired
+6. **CI patch — status corrected this session.** `TRACKING.md` previously said
+   the BP-1 CI patch was "APPLIED in-tree (uncommitted)". Verified on a clean
+   checkout at `6195245`: **`.github/workflows/ci.yml` is unmodified** and runs
+   `prebuild → type-check → lint → build → audit:links → audit:html → seo:audit
+   → audit:meta`. The patch in `BP-1-ci-audit-bp1.patch` is therefore **not**
+   applied here; keep it out of commits unless the token has the `workflows`
+   permission. Good news: **both Wave-12 gates already run in CI without any
+   workflow change** — `audit:cost-direct-answer` via the existing `prebuild`
+   step and `lowercase-currency` via the existing post-build `audit:html` step.
+   If you ever do get `workflows` permission, the patch would additionally add
+   `audit:bp1` / `audit:schema-size` / `audit:raster-og` post-build.
+7. **Post-deploy (owner/SEO):** confirm the 2,146 BP-1 URLs and the 17 retired
    emergency URLs move to *"Page with redirect"*; resubmit `/sitemap.xml`
-   (3,626 URLs; blog lastMods now per-article).
-7. **Still-missing access (re-request from owner):** GSC, live HTTP/edge check,
+   (now **4,054** URLs after Wave 11; blog lastMods are per-article).
+8. **Still-missing access (re-request from owner):** GSC, live HTTP/edge check,
    CWV/CrUX, GBP + review verification, owner fact confirmations (reviews,
    founding year, staff, stats), photography (P5-12).
-8. **Next code-level candidates (P2/P3, unblocked) — value order:** **P2-16 tranche 3**
-   (remaining 44 problems; use `scripts/p2-16-wordcount.ts` thinness order), **P3-12
-   phase 2** (native MS/ZH translation of the 146 authored per-pod FAQ sets — natural
-   translation, no MT), **P2-22** outbound citations (owner decision), **P4-10**
-   case-study pages, **P4-14** per-area Service entities, **P4-08** CTA wording.
-   P3-12 phase 1 (the MS/ZH pod ROUTES) was closed in Fix Wave 11.
+9. **Next code-level candidates (P2/P3, unblocked) — value order:**
+   **P3-12 phase 3** — MS/ZH **server routes** for `/services/<svc>/cost` (the
+   29 money pages are still one EN URL client-localized by the toggle;
+   `app/(ms|zh)/…/services/[slug]/` ships only `page.tsx` + `[subservice]`, so
+   Wave 11's `locale-content-router` pattern is the obvious vehicle);
+   **P2-16 tranche 3** (remaining 44 problems); **P3-12 phase 2** (native MS/ZH
+   translation of the 146 authored per-pod FAQ sets — natural translation, no
+   MT); **§5.4-B1** BM commercial tree; **P4-10** case-study pages;
+   **P4-14** per-area `Service` entities; **P4-08** CTA wording; **P4-16**
+   footer link tiering; **P3-15/P3-16** SearchAction vs `/search` + news-sitemap
+   freshness; **P3-19** expand `aeo-faq.txt`. **P2-22** outbound citations is an
+   owner decision. **P4-11 named team page** needs owner bios. **P4-13 / P2-C4 /
+   BP-1 phase 2** stay blocked on the owner GSC keep-set.
+10. **Standing "do not" list:** do **not** add more location pages; do **not**
+    re-add `app/(en|ms|zh)/loading.tsx`; do **not** delete local pages on low
+    traffic alone; do **not** retry the CI patch push without `workflows`
+    permission; do **not** weaken the estimator trilingual-parity asserts to
+    accommodate new copy — supply the translations instead; do **not** enrich a
+    problem in English without its native MS/ZH depth block
+    (`audit:problem-i18n` fails the build on a gap); do **not** add a blog post
+    without an explicit `date`, and never reintroduce per-day date
+    concentration above the validator's 10-post cap; do **not** interpolate a
+    registry field into a sentence with `.toLowerCase()` — prices must keep
+    their `RM` (`lowerFirstSentence()`, guarded by `audit:html`
+    `lowercase-currency`); do **not** hand-edit `lib/estimator/rate-book.generated.ts`
+    or the `public/llms*.txt` / `aeo-faq.txt` / `site-summary.json` outputs —
+    they are regenerated by `prebuild`.
 
 ---
 
@@ -188,11 +226,11 @@ in item 8 below.**
 | Prio | Task (from PART-3-AUDIT-REPORT.md) | Status |
 |---|---|---|
 | P0 | P3-01 — Fix English leaks inside BM/中文 DirectAnswer blocks (29/29 service pages) + add prebuild leak validator | ✅ DONE (Fix Wave 4 — 58 unique localized notes + `audit:trilingual-leak` in prebuild) |
-| P0 | P3-05 — Add units to per-sq-ft prices on all AI surfaces ("from RM 14/10/5/22") + fix `lowPrice: "80"` | 🟡 PARTIAL (Fix Wave 1 — startPrice units + schema UnitPriceSpecification + homepage lowPrice fixed; remaining AI-surface copy leaks still ⏳) |
+| P0 | P3-05 — Add units to per-sq-ft prices on all AI surfaces ("from RM 14/10/5/22") + fix `lowPrice: "80"` | ✅ DONE (Fix Wave 1 — startPrice units + UnitPriceSpecification + `lowPrice` 80→120. Fix Wave 12 re-verified every recorded leak on the built corpus: DirectAnswer "start from RM 14 / sq ft" ✓, smart-finder renders `startPrice` verbatim ✓, llms.txt "from RM 14 / sq ft" ✓, homepage schema `lowPrice: 120` ✓ — and fixed the two it missed: 28/29 service hubs lower-cased the currency inside the DirectAnswer ("from **rm** 14 / sq ft") → new `lowerFirstSentence()`, plus a permanent case-sensitive `lowercase-currency` check in `audit:html` (negative-tested: 28 fatals pre-fix → none post-fix)) |
 | P0 | P3-07 — Reconcile contradictory facts: RM 180 vs 220 ceiling price, "28+" vs 29 services, warranty pill vs per-service warranty (251 pages), stats claims | ✅ DONE (Fix Wave 4 — all surfaces unified + AI-context regression-checked; the *stats claims* half stays owner-⏳ under P3-09/P2-21) |
 | P1 | P3-11 — Server-render homepage + /faq hub accordion answers (JS-only today) | ✅ DONE (Fix Wave 2 — native `<details>`) |
 | P1 | P3-02 — /faq hub: add FAQPage JSON-LD + question H3s + remove hidden "No matches" text | ✅ DONE (Fix Wave 2 FAQPage JSON-LD + visible answers; Fix Wave 10: question H3s + hidden empty-state removed — verified EN/MS/ZH built HTML) |
-| P1 | P3-04 — Cost pages: add "How much does {svc} cost in KL?" DirectAnswer + expand 459-word bodies | ⏳ PENDING |
+| P1 | P3-04 — Cost pages: add "How much does {svc} cost in KL?" DirectAnswer + expand 459-word bodies | ✅ DONE (**PR #189**, CI green; bodies = CF-4; Fix Wave 12 — literal "How much does {svc} cost in KL & Selangor?" DirectAnswer card on all 29 cost pages via `lib/cost-direct-answer.ts` (question H2 + 2–3 sentence answer citing the published price **with units** + derived pricing basis + estimator link, EN/BM/中文), same builder feeds the first `FAQPage` Question (29/29 visible-match), new prebuild gate `audit:cost-direct-answer` (87 cards, negative-tested). Corpus `/services/<svc>/cost`: **qa 0% → 100%**, "how much" H2 0 → 29/29, faqSchemaNoVisibleMatch 0) |
 | P1 | P3-18 — llms.txt: list all 29 services (aircon missing) with units; link aeo-faq.txt | ✅ DONE (Fix Wave 10 — 29 service lines with units + aeo-faq.txt link; robots.ts + DuckAssistBot/Applebot-Extended) |
 | P1 | P3-09 — Owner verification of stats/claims (1,200+, 15+ Pros, 120+/120, 30–60 min, "written by local tradesmen") | ⏳ PENDING (owner) |
 | P2 | P3-06 — Blog: FAQPage schema + promote top FAQ to question H2 (216 posts) | ✅ DONE (Fix Wave 10 — 193 EN + 192 MS + 192 ZH blog posts emit FAQPage JSON-LD; top FAQ promoted to H2) |
