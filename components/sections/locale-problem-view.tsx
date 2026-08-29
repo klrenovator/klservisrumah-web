@@ -7,6 +7,7 @@ import { useLang } from "@/context/lang-context";
 import type { Locale } from "@/lib/i18n";
 import type { ProblemDetail } from "@/config/problem-data";
 import { getWhatsAppLink } from "@/lib/whatsapp";
+import { NapContactStrip } from "@/components/content/nap-contact-strip";
 
 /**
  * The three locale variants are resolved on the server and handed down as
@@ -117,6 +118,9 @@ export function LocaleProblemView({ problem, service }: LocaleProblemViewProps) 
               ))}
             </div>
           </div>
+
+          {/* Audit P4-15 — NAP contact strip at the end of the content block. */}
+          <NapContactStrip service={localizedServiceTitle} />
         </article>
 
         <aside className="lg:col-span-4">

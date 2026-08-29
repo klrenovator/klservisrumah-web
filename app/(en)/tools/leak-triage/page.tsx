@@ -26,6 +26,7 @@ export const metadata = buildMetadata({
   path: "/tools/leak-triage",
   keywords: content.keywords,
   image: content.heroImage,
+  ogTemplate: "tool",
   languageUrls: toolLocaleUrls(content.slug)
 });
 

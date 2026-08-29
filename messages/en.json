@@ -1655,5 +1655,9 @@
     "ariaHighlighted": "Coverage map with {area} highlighted",
     "highlight": "Highlighted area",
     "ask": "Not sure? Ask on WhatsApp"
+  },
+  "napStrip": {
+    "label": "Contact KL Servis Rumah",
+    "whatsapp": "WhatsApp us"
   }
 }

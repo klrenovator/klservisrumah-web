@@ -18,6 +18,7 @@ export const metadata = buildMetadata({
   path: "/zh/gongju/插座数量计算器",
   keywords: content.keywords,
   image: content.heroImage,
+  ogTemplate: "tool",
   languageUrls: toolLocaleUrls(content.slug)
 });
 

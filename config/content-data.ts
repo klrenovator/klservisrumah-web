@@ -1,3 +1,4 @@
+import { RATE_YEAR_LABEL } from "@/config/rate-year";
 import { servicesData } from "@/config/services-data";
 import { commercialCopy, residentialCopy, type PodCopy } from "@/config/content-pod-copy";
 import {
@@ -303,12 +304,12 @@ const airconBrands: [string, string][] = [
 );
 
 export const topPages: GenericContentPage[] = [
-  ["best-house-painters-kl-2026", "How to Compare House Painters in KL (2026)"],
+  ["best-house-painters-kl-2026", `How to Compare House Painters in KL (${RATE_YEAR_LABEL})`],
   ["best-plumbers-kl", "How to Compare Plumbers in KL"],
   ["best-ceiling-contractors-kl", "How to Compare Ceiling Contractors in KL"],
   ["best-waterproofing-contractors-kl", "How to Compare Waterproofing Contractors in KL"],
   ["best-handyman-kl", "How to Compare Handyman Services in KL"],
-  ["best-paint-brands-malaysia-2026", "Paint Brands in Malaysia: 2026 Guide"],
+  ["best-paint-brands-malaysia-2026", `Paint Brands in Malaysia: ${RATE_YEAR_LABEL} Guide`],
   ["best-waterproofing-methods-malaysia", "Waterproofing Methods in Malaysia"],
   ["bathroom-waterproofing-options", "Bathroom Waterproofing Options"],
   ["ceiling-materials-malaysia", "Ceiling Materials in Malaysia"],

@@ -9,6 +9,7 @@ import { getLocalizedService } from "@/lib/service-i18n";
 import { getServerTranslator } from "@/lib/i18n-server";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
+import { NapContactStrip } from "@/components/content/nap-contact-strip";
 import { getArticleSchema, getFAQSchema } from "@/lib/seo";
 import { isRedirectedProblemSlug, problemLocaleUrls } from "@/config/problem-canonical";
 import { indexableProblemPages } from "@/config/problem-index";
@@ -153,6 +154,10 @@ export function LocaleProblemPage({ locale, slug }: { locale: Locale; slug: stri
           </aside>
         </div>
       </section>
+
+      {/* Audit P4-15 — NAP contact strip at the end of the content block. */}
+      <NapContactStrip service={localizedProblem.title} />
+
       {locale !== "en" ? <LocaleTreeLinks locale={locale} current="services" /> : null}
     </>
   );

@@ -1,4 +1,5 @@
 import type { GenericContentPage } from "./content-data";
+import { RATE_YEAR_LABEL } from "./rate-year";
 
 // ─── Detailed hand-written MS translations (9 slugs) ───
 export const contentI18n: Record<string, Partial<GenericContentPage>> = {
@@ -207,12 +208,12 @@ export const contentI18nMsFull: Record<string, Partial<{ title: string; intro: s
   "mapei-waterproofing-application": { title: "Aplikasi Kalis Air Mapei", intro: "Panduan aplikasi kalis air Mapei.", category: "Panduan Jenama" },
 
   // ─── Top Considerations (10) ───
-  "best-house-painters-kl-2026": { title: "Cara Membandingkan Tukang Cat Rumah di KL (2026)", intro: "Panduan praktikal untuk membandingkan skop, bahan, sebut harga dan terma kerja tukang cat rumah di KL.", category: "Pertimbangan Utama" },
+  "best-house-painters-kl-2026": { title: `Cara Membandingkan Tukang Cat Rumah di KL (${RATE_YEAR_LABEL})`, intro: "Panduan praktikal untuk membandingkan skop, bahan, sebut harga dan terma kerja tukang cat rumah di KL.", category: "Pertimbangan Utama" },
   "best-plumbers-kl": { title: "Cara Membandingkan Tukang Paip di KL", intro: "Panduan praktikal untuk membandingkan skop, bahan, sebut harga dan terma kerja tukang paip di KL.", category: "Pertimbangan Utama" },
   "best-ceiling-contractors-kl": { title: "Cara Membandingkan Kontraktor Siling di KL", intro: "Panduan praktikal untuk membandingkan kaedah, bahan, sebut harga dan terma kerja kontraktor siling di KL.", category: "Pertimbangan Utama" },
   "best-waterproofing-contractors-kl": { title: "Cara Membandingkan Kontraktor Kalis Air di KL", intro: "Panduan praktikal untuk membandingkan diagnosis, kaedah, sebut harga dan terma kerja kalis air di KL.", category: "Pertimbangan Utama" },
   "best-handyman-kl": { title: "Cara Membandingkan Servis Handyman di KL", intro: "Panduan praktikal untuk membandingkan skop, sebut harga dan terma kerja handyman di KL.", category: "Pertimbangan Utama" },
-  "best-paint-brands-malaysia-2026": { title: "Panduan Jenama Cat Malaysia 2026", intro: "Panduan membandingkan jenis, kemasan dan kesesuaian jenama cat di Malaysia.", category: "Pertimbangan Utama" },
+  "best-paint-brands-malaysia-2026": { title: `Panduan Jenama Cat Malaysia ${RATE_YEAR_LABEL}`, intro: "Panduan membandingkan jenis, kemasan dan kesesuaian jenama cat di Malaysia.", category: "Pertimbangan Utama" },
   "best-waterproofing-methods-malaysia": { title: "Kaedah Kalis Air di Malaysia", intro: "Panduan membandingkan kegunaan, gangguan dan ketahanan kaedah kalis air di Malaysia.", category: "Pertimbangan Utama" },
   "bathroom-waterproofing-options": { title: "Pilihan Kalis Air Bilik Air", intro: "Pilihan kalis air bilik air di Malaysia.", category: "Pertimbangan Teratas" },
   "ceiling-materials-malaysia": { title: "Bahan Siling Malaysia", intro: "Pilihan bahan siling di Malaysia.", category: "Pertimbangan Teratas" },
@@ -396,12 +397,12 @@ export const contentI18nZhFull: Record<string, Partial<{ title: string; intro: s
   "mapei-waterproofing-application": { title: "马佩防水施工", intro: "马佩防水施工指南。", category: "品牌指南" },
 
   // ─── Top Considerations (10) ───
-  "best-house-painters-kl-2026": { title: "2026吉隆坡房屋油漆工比较指南", intro: "实用比较吉隆坡房屋油漆工的施工范围、材料、报价与工程条款。", category: "重要考量" },
+  "best-house-painters-kl-2026": { title: `${RATE_YEAR_LABEL}吉隆坡房屋油漆工比较指南`, intro: "实用比较吉隆坡房屋油漆工的施工范围、材料、报价与工程条款。", category: "重要考量" },
   "best-plumbers-kl": { title: "吉隆坡水管工比较指南", intro: "实用比较吉隆坡水管工的维修范围、材料、报价与工程条款。", category: "重要考量" },
   "best-ceiling-contractors-kl": { title: "吉隆坡天花板承包商比较指南", intro: "实用比较吉隆坡天花板承包商的施工方法、材料、报价与工程条款。", category: "重要考量" },
   "best-waterproofing-contractors-kl": { title: "吉隆坡防水承包商比较指南", intro: "实用比较吉隆坡防水承包商的诊断、方法、报价与工程条款。", category: "重要考量" },
   "best-handyman-kl": { title: "吉隆坡家居杂工服务比较指南", intro: "实用比较吉隆坡家居杂工服务的范围、报价与工程条款。", category: "重要考量" },
-  "best-paint-brands-malaysia-2026": { title: "2026马来西亚油漆品牌指南", intro: "比较马来西亚油漆品牌的类型、表面效果与适用空间。", category: "重要考量" },
+  "best-paint-brands-malaysia-2026": { title: `${RATE_YEAR_LABEL}马来西亚油漆品牌指南`, intro: "比较马来西亚油漆品牌的类型、表面效果与适用空间。", category: "重要考量" },
   "best-waterproofing-methods-malaysia": { title: "马来西亚防水方法指南", intro: "比较马来西亚常见防水方法的用途、施工影响与耐久性。", category: "重要考量" },
   "bathroom-waterproofing-options": { title: "浴室防水选择", intro: "马来西亚浴室防水方案。", category: "重要考量" },
   "ceiling-materials-malaysia": { title: "马来西亚天花板材料", intro: "马来西亚天花板材料选择。", category: "重要考量" },

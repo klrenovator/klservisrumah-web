@@ -19,6 +19,7 @@ export const metadata = buildMetadata({
   path: "/tools/bathroom-waterproofing-estimator",
   keywords: content.keywords,
   image: content.heroImage,
+  ogTemplate: "tool",
   languageUrls: toolLocaleUrls(content.slug)
 });
 

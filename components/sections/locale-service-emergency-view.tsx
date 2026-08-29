@@ -10,6 +10,7 @@ import { useLang } from "@/context/lang-context";
 import { useTranslations } from "@/hooks/use-translations";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { VisibleFaqList } from "@/components/content/visible-faq";
+import { NapContactStrip } from "@/components/content/nap-contact-strip";
 
 type LocaleServiceEmergencyViewProps = {
   slug: string;
@@ -189,6 +190,9 @@ export function LocaleServiceEmergencyView({
           </div>
         </div>
       </section>
+
+      {/* Audit P4-15 — NAP contact strip at the end of the content block. */}
+      <NapContactStrip service={service.title} />
     </>
   );
 }

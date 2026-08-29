@@ -6,6 +6,37 @@
 
 ## Current State (Update this each session)
 
+> **Fix Wave 10 COMPLETE (2026-08-29):** the final unblocked code queue is done —
+> **§5.6** freshness rota: `config/rate-year.ts` (`RATE_YEAR`/`RATE_YEAR_LABEL`)
+> + `audit:rate-year` in prebuild (string-literal-aware scanner; 714 files /
+> 162 in-string year tokens = 2026; path/URL/class-list exemption added this
+> wave). **P5-13/14** raster OG images: `app/og-image/route.tsx` (next/og
+> 1200×630 PNG, 8 template variants), `lib/og-image.ts` helpers, `lib/seo-meta.ts`
+> now takes `ogTemplate` + `inferOgTemplate(path)` (explicit template forces the
+> card; generic-default/SVG heroes get title-customised cards; raster heroes pass
+> through); 126 tool routes + 29 cost pages wire `ogTemplate`; schema `image`
+> fields rasterised; new `audit:raster-og` gate (source-only in prebuild; corpus
+> mode: 0 SVG, ≥1,000 route pages, all 8 templates emitted — PASS:
+> default=72/pod=428/area=1,350/service=1,660/blog=762/tool=258/problem=450/
+> cost=58, 1,979 pages on /og-image). **P4-15** NAP contact strip
+> (`components/content/nap-contact-strip.tsx`, localized labels) mounted on all
+> template families → 2,112/3,652 built pages (57.8%, baseline 0%) — asserted by
+> new check 8 in `audit:bp1` (`pctNapInContent > 0` + 7 template spot checks).
+> **P3-02** completed: FAQ question H3s + hidden empty-state removed; FAQPage
+> verified EN/MS/ZH built HTML. **P3-06** blog FAQPage: `lib/blog-faq.ts`
+> `extractBlogFaq` (CTA-heading exclusion), 193 EN + 192 MS + 192 ZH posts emit
+> FAQPage JSON-LD, top FAQ promoted to H2. **P3-18** llms.txt: 29 services with
+> units + aeo-faq.txt link; robots.ts + DuckAssistBot/Applebot-Extended.
+> All gates PASS (prebuild 320,291 × 0; build 3,660; audit:html/links/
+> seo-head/bp1/schema-size/location-similarity/meta/seo). Full log:
+> `docs/full-website-deep-audit/FIX-WAVE-10-REPORT.md`.
+>
+> **Wave 10 state note:** `npm run audit:raster-og` (corpus mode) and
+> `audit:bp1` check 8 need `npm run build` output first; prebuild runs their
+> source-only halves. `.github/workflows/ci.yml` still carries the BP-1 CI
+> patch **uncommitted** — do not commit it unless the token has `workflows`
+> permission (see TRACKING.md item 5).
+>
 > **Fix Wave 9 COMPLETE (2026-08-29):** the unblocked CRO/UX queue is done —
 > **P4-05/P4-03** `StickyBookButton` is now mounted ONCE globally in
 > `SiteChrome` (pathname-derived service/area context via

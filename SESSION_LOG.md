@@ -2856,3 +2856,62 @@ PASS (`docs/seo-audit-report.md` regenerated).
   P4-13/P2-C4/BP-1 phase 2 (GSC keep-set), P4-11 named team page (owner bios),
   P5-12 photography, P1-C3 www/non-www, CI `workflows` permission (patch saved at
   `docs/full-website-deep-audit/BP-1-ci-audit-bp1.patch`).
+
+---
+
+## Session — 2026-08-29 (late) — FIX WAVE 10 (final unblocked code queue)
+
+### Scope
+§5.6 freshness rota · P5-13/14 raster OG · P4-15 NAP-in-content · P3-02
+completion · P3-06 blog FAQPage · P3-18 llms.txt + robots AI bots.
+
+### What changed
+- **§5.6:** `config/rate-year.ts` (RATE_YEAR/RATE_YEAR_LABEL single source) +
+  `scripts/validate-rate-year.ts` `audit:rate-year` wired into prebuild.
+  String-literal-aware year scanner (filters decimals/product codes/longer
+  numbers/measurements/historical 2000/年 dates/Act-Akta-PDPA-SSM-Tahun
+  prefixes; this wave: path/URL/class-list exemption via `isNonCopyString`).
+  5 config files interpolate RATE_YEAR_LABEL. PASS: 714 files / 162 tokens = 2026.
+- **P5-13/14:** `lib/og-image.ts` (ogImageUrl/isSvgImage/rasterOgFor/OgTemplate/
+  stripControlChars) + `app/og-image/route.tsx` (next/og 1200×630 PNG, 8
+  templates, nodejs runtime). `lib/seo-meta.ts` gained `ogTemplate` +
+  `inferOgTemplate(path)` — explicit template forces the card; generic-default
+  or SVG heroes get title-customised cards; raster heroes pass through. 116
+  inline tool routes + `localizedToolMetadata` (10 routes) wire `ogTemplate:
+  "tool"`; EN cost page wires `"cost"`. `lib/seo.ts` schema image fields
+  rasterised (3 call sites). New `scripts/validate-raster-og.ts`
+  (`audit:raster-og`, source-only in prebuild). Corpus: 0 SVG og/twitter/schema
+  images; all 8 templates emitted; 1,979 pages on /og-image. Route smoke-tested
+  live (200 PNG 1200×630).
+- **P4-15:** `components/content/nap-contact-strip.tsx` mounted on service
+  (EN/MS/ZH), problem (EN/MS/ZH), cost, emergency, tool, pod/generic, near-me
+  hub, blog (EN/MS/ZH). `audit:bp1` check 8 asserts `pctNapInContent > 0` +
+  7 template spot checks. Corpus: 2,112/3,652 = 57.8% (baseline 0%).
+- **P3-02:** FAQ question H3s + hidden empty-state removed (i18n keys deleted).
+  FAQPage verified in built EN `/faq` + MS `/ms/soalan-lazim` + ZH
+  `/zh/chang-jian-wen-ti`.
+- **P3-06:** `lib/blog-faq.ts` extractBlogFaq (CTA-heading exclusion, max 6);
+  EN/MS/ZH blog pages emit FAQPage JSON-LD when ≥2 Q&As; top FAQ promoted to
+  H2 in `blog-article-body.tsx`. Built: 193 EN + 192 MS + 192 ZH posts.
+- **P3-18:** `generate-ai-context.ts` emits all 29 services with units +
+  aeo-faq.txt link; `app/robots.ts` + DuckAssistBot/Applebot-Extended.
+
+### Gates (all PASS)
+prebuild **320,291 assertions × 0 failures** (incl. audit:raster-og
+--source-only + audit:rate-year) · type-check · lint 0/0 · build 3,660 static
+(3,652 HTML) · audit:html 0 fatal · audit:links 0 broken · audit:seo-head ·
+audit:bp1 (incl. new P4-15 check) · audit:schema-size · audit:location-similarity ·
+audit:meta · seo:audit (docs/seo-audit-report.md regenerated).
+
+### Status / next session
+- **Completed ✅:** Parts 0–5 audits + Fix Waves 1–10 + BP-1 phase 1 + CF-4.
+  **No unblocked code-only audit finding remains.**
+- **Next candidates (value order):** **P3-12 MS/ZH pod routes (205 pages; i18n
+  data exists; middleware REAL_LOCALE_TREES already covers ms/zh blog/services/
+  problems/tools/FAQ/privacy/terms — NEXT)** → P2-16 tranche 3 (44 problems;
+  thinness order via `scripts/p2-16-wordcount.ts`) → P2-22 outbound citations
+  (owner decision) → P4-10/P4-14/P4-08 (P2/P3).
+- **Still owner-blocked:** P4-09/P2-21/P3-09 (review verification + stats, GBP),
+  P4-13/P2-C4/BP-1 phase 2 (GSC keep-set), P4-11 named team page (owner bios),
+  P5-12 photography, P1-C3 www/non-www, CI `workflows` permission (patch saved
+  at `docs/full-website-deep-audit/BP-1-ci-audit-bp1.patch`).

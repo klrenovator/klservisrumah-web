@@ -4,13 +4,15 @@ import { buildMetadata } from "@/lib/seo-meta";
 import { notFound } from "next/navigation";
 import { blogPosts } from "@/config/blog-data";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { getArticleSchema } from "@/lib/seo";
+import { getArticleSchema, getFAQSchema } from "@/lib/seo";
 import { Calendar, User, Clock, MessageSquare, ArrowRight, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { blogI18n, localizedBlogPath } from "@/config/blog-i18n";
 import { BlogPostLocaleRedirect } from "@/components/ui/blog-post-locale-redirect";
 import { BlogArticleBody } from "@/components/blog/blog-article-body";
+import { NapContactStrip } from "@/components/content/nap-contact-strip";
+import { extractBlogFaq } from "@/lib/blog-faq";
 
 // Every valid param is enumerated in `generateStaticParams()`, so anything
 // else must 404 rather than be rendered on demand and cached as a 200
@@ -62,6 +64,11 @@ export default async function BlogPostSlugPage(props: { params: Promise<{ slug: 
 
   const articleSchema = getArticleSchema(post);
 
+  // Audit P3-06: FAQPage JSON-LD derived from the article's own question
+  // headings (≥2 Q&As for the rich-result threshold; capped at 6).
+  const blogFaq = extractBlogFaq(post.content);
+  const faqSchema = blogFaq.length >= 2 ? getFAQSchema(blogFaq) : null;
+
   const waLink = getWhatsAppLink({ service: post.category });
 
   // Circular selection gives every article equal inlinks instead of repeatedly
@@ -89,6 +96,12 @@ export default async function BlogPostSlugPage(props: { params: Promise<{ slug: 
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
 
       <section className="bg-white py-12 sm:py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -153,6 +166,9 @@ export default async function BlogPostSlugPage(props: { params: Promise<{ slug: 
 
         </div>
       </section>
+
+      {/* Audit P4-15 — NAP contact strip at the end of the content block. */}
+      <NapContactStrip service={post.category} />
 
       {relatedPosts.length > 0 && (
         <section className="bg-slate-50 border-t border-slate-100 py-16" aria-label="Related blog posts">

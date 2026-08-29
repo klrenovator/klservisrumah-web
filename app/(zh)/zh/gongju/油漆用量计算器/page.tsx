@@ -18,6 +18,7 @@ export const metadata = buildMetadata({
   path: "/zh/gongju/油漆用量计算器",
   keywords: content.keywords,
   image: content.heroImage,
+  ogTemplate: "tool",
   languageUrls: toolLocaleUrls(content.slug)
 });
 

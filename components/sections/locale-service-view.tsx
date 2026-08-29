@@ -10,6 +10,7 @@ import { SubserviceDetailHero } from "@/components/sections/subservice-detail-he
 import { SubserviceDetailContent } from "@/components/sections/subservice-detail-content";
 import type { SubService } from "@/config/services-data";
 import { ServiceEstimatorBlock } from "@/components/tools/service-estimator-block";
+import { NapContactStrip } from "@/components/content/nap-contact-strip";
 
 type LocaleServiceViewProps = {
   service: ServiceDetail;
@@ -43,6 +44,8 @@ export function LocaleServiceView({ service, sub, scopeSummary }: LocaleServiceV
       <>
         <SubserviceDetailHero service={localized} sub={localizedSub} />
         <SubserviceDetailContent service={localized} sub={localizedSub} baseService={service} />
+        {/* Audit P4-15 — NAP contact strip at the end of the content block. */}
+        <NapContactStrip service={localized.title} />
       </>
     );
   }
@@ -60,6 +63,9 @@ export function LocaleServiceView({ service, sub, scopeSummary }: LocaleServiceV
       
       {/* Rest of content (overviews, FAQs, etc.) */}
       <ServiceDetailContent service={localized} scopeSummary={scopeSummary} />
+
+      {/* Audit P4-15 — NAP contact strip at the end of the content block. */}
+      <NapContactStrip service={localized.title} />
     </>
   );
 }

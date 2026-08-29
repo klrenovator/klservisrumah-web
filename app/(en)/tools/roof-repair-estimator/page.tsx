@@ -19,6 +19,7 @@ export const metadata = buildMetadata({
   path: "/tools/roof-repair-estimator",
   keywords: content.keywords,
   image: content.heroImage,
+  ogTemplate: "tool",
   languageUrls: toolLocaleUrls(content.slug)
 });
 

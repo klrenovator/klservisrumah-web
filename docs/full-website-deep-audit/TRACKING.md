@@ -73,7 +73,7 @@
 | 2026-08-29 | **Fix Wave 6** — P2-17/P2-03: emergency pages rewritten per-service for the 12 real-emergency services (`config/emergency-services.ts`, EN/MS/ZH) and the 17 fake-emergency pages retired via middleware 301 + `generateStaticParams` + sitemap + cost-card gate (sitemap 3,643→3,626). P2-16: 15 thinnest problem pages enriched with `overview`/`diyChecks`/`prevention`/`costDetail` (EN/MS/ZH, native) + `audit:problem-i18n` extended to enforce native depth parity. All gates PASS (3,652 HTML; 320,291 assertions × 0 failures) | ✅ See `FIX-WAVE-6-REPORT.md` |
 | 2026-08-29 | **Fix Wave 7** — P2-16 tranche 2: next 15 thinnest problems enriched (`rusting-window-grille`, `loose-door-hinge`, `stuck-window-lock`, `ikea-furniture-assembly-help`, `downlight-flickering`, `sagging-plaster-ceiling`, `blocked-drain-toilet`, `ceiling-leak-after-rain`, `roof-leak-rainy-season`, `swimming-pool-leak-balcony`, `wardrobe-door-jamming`, `cracked-ceiling-joints`, `locked-out-of-house`, `uneven-wall-surface-skim`, `cctv-not-recording-storage-full`) — 45 hand-authored depth blocks EN/MS/ZH; new `scripts/p2-16-wordcount.ts` ranking helper. **30/74 problems enriched** (audit's top-30-by-demand target closed via thinness ranking). All gates PASS: lint/type-check/prebuild (320,291 assertions × 0 failures)/build (3,660 static)/audit:html/audit:links (277,170+53, 0 broken)/audit:seo-head | ✅ See `FIX-WAVE-7-REPORT.md` |
 | 2026-08-29 | **Fix Wave 8** — P2-19: real per-article blog dates + per-article sitemap lastMod. 216 posts shared 5 dates (99 on one day) → **54 distinct dates (max 7/day)**, bucket-capped deterministic assignment (`scripts/assign-blog-dates.ts`); `dateModified` split from `datePublished` via new `blogDateModified()` (migrated → 2026-08-16 release date; awning → own dates); sitemap blog URLs emit per-article lastMod (648 URLs, 0 on the constant); blog `post()` helpers now require explicit `date`; validator gate: parseable, non-future, ≤10 posts/date. All gates PASS (prebuild 320,291 × 0; build 3,660 static; seo-head/html/links green) | ✅ See `FIX-WAVE-8-REPORT.md` |
-| 2026-08-29 | **Fix Wave 9** — the unblocked CRO/UX queue: P4-05 (global sticky book button w/ pathname-derived context) + P4-03 (single desktop float — WhatsApp dispatch desk removed); P4-02 (static quick-quote form inside mobile hero; content-driven min-height); P4-07 (new `/api/inquiry` route + `QuickQuoteForm` — static JS-free form on `/` + `/contact`, 302 → WhatsApp prefill); P4-12 (static SVG coverage map on `/areas` + 37 area pages; `hasMap` → real Google Maps URL); P4-06 (rate-book include/exclude block on 29 service pages, server-passed slim data); P4-16 (Full Price Guide link in service hero); P4-17 (aircon 6 problems + 4 aircon cost-tool links); P4-11 code half (authorship claim re-attributed). All gates PASS (build 3,652 HTML; prebuild 320,291 × 0; audit:html 0/0; audit:links 278,649+54 → 0 broken; audit:seo-head; audit:i18n 1,213 × 3; audit:schema-size; audit:bp1; audit:location-similarity; seo:audit+meta) | ✅ See `FIX-WAVE-9-REPORT.md` |
+| 2026-08-29 | **Fix Wave 9** — the unblocked CRO/UX queue: P4-05 (global sticky book button w/ pathname-derived context) + P4-03 (single desktop float — WhatsApp dispatch desk removed); P4-02 (static quick-quote form inside mobile hero; content-driven min-height); P4-07 (new `/api/inquiry` route + `QuickQuoteForm` — static JS-free form on `/` + `/contact`, 302 → WhatsApp prefill); P4-12 (static SVG coverage map on `/areas` + 37 area pages; `hasMap` → real Google Maps URL); P4-06 (rate-book include/exclude block on 29 service pages, server-passed slim data); P4-16 (Full Price Guide link in service hero); P4-17 (aircon 6 problems + 4 aircon cost-tool links); P4-11 code half (authorship claim re-attributed). All gates PASS (build 3,652 HTML; prebuild 320,291 × 0; audit:html 0/0; audit:links 278,649+54 → 0 broken; audit:seo-head; audit:i18n 1,213 × 3; audit:schema-size; audit:bp1; audit:location-similarity; seo:audit+meta) | ✅ See `FIX-WAVE-9-REPORT.md` |\n| 2026-08-29 | **Fix Wave 10** — final unblocked code queue: §5.6 RATE_YEAR freshness gate (`audit:rate-year` in prebuild; 714 files / 162 tokens = 2026); P5-13/14 raster OG (next/og 1200×630 route, 8 templates wired via `inferOgTemplate` + explicit ogTemplate on 126 tool routes + 29 cost pages; schema images rasterised; new `audit:raster-og` gate — 0 SVG, all 8 templates emitted, 1,979 pages on /og-image); P4-15 NAP strip in content on all template families (2,112/3,652 = 57.8%, baseline 0%; asserted in `audit:bp1` check 8); P3-02 completed (H3 questions + empty-state removed, FAQPage verified EN/MS/ZH); P3-06 blog FAQPage (193/192/192 posts EN/MS/ZH + top-FAQ H2, CTA-heading exclusion); P3-18 llms.txt 29 services + aeo-faq.txt link + robots AI bots. All gates PASS (prebuild 320,291 × 0; build 3,660; audit:html/links/seo-head/bp1/schema-size/location-similarity/meta/seo PASS) | ✅ See `FIX-WAVE-10-REPORT.md` |
 
 ---
 
@@ -88,13 +88,13 @@
 | P1 | P5-01/04 — Remove duplicate `LocalBusiness` node; single `/#organization` entity; @id-reference schema + trim areaServed (22–31 KB JSON-LD/page today) | ✅ DONE — P5-01 (Fix Wave 1) + P5-04 (Fix Wave 3: full org homepage-only, GeoCircle, catalog dedup; corpus 62.2→14.5 MB, max sub-page 7.1 KB non-FAQ) |
 | P1 | P5-03 — Strip `aggregateRating` from tool SoftwareApplication; delete unused Product-wrapped `getReviewSchema()` | ✅ DONE (Fix Wave 1) |
 | P1 | P5-05 — Blog `author` Person→Organization (interim); real author entities later | ✅ DONE (Fix Wave 1 — Organization interim) |
-| P1 | P5-13/14 — Raster 1200×630 OG images (SVG og:image breaks WhatsApp/social previews on ~2,200+ pages); fix schema `image` fields too | ⏳ PENDING |
+| P1 | P5-13/14 — Raster 1200×630 OG images (SVG og:image breaks WhatsApp/social previews on ~2,200+ pages); fix schema `image` fields too | ✅ DONE (Fix Wave 10 — next/og route + all 8 templates wired to every template family; `audit:raster-og` gate; 0 SVG in 3,652 built pages) |
 | P1 | P5-10 — Breadcrumbs (UI+schema) on 184 pod pages + 20 specialty sub-services + 29 near-me hubs + 20 guides | ✅ DONE (Fix Wave 3 — 256 pages: 184 pods + 21 guides-tree + 29 near-me hubs + 22 cluster pages; duplicate BreadcrumbList on localized service/specialty templates removed; MS/ZH blog trails stay with P3-12 per Part 5 §P5-12b) |
 | P1 | CF-4 — Merge rate-book into `/services/<svc>/cost` pages; evaluate NOINDEX/merge for `/estimate/*` (23 pages) | ✅ COMPLETED 2026-08-29 — 29 cost pages 1,152–2,264 words (mean 1,373), 222 rate-book rows, trilingual FAQs + aircon rateCopy; `/estimate` hub + 22 generics noindex; sitemap/indexnow cleaned; seo-head gate extended; all gates PASS. See `PART-5-AUDIT-REPORT.md` §5.5 implementation log |
 | P1 | §5.4-B1 — BM commercial tree (harga/problem/money templates) — largest content gap | ⏳ PENDING |
 | P2 | P5-06 — HowTo: per-page names (all 74 problems say "Professional home service process") or drop (rich results retired) | ✅ DONE (Fix Wave 3 — dropped site-wide; Google retired the rich result, visible process sections kept in HTML) |
 | P2 | P5-07 — Remove Speakable/orphan WebPage nodes (526 pages) | ✅ DONE (Fix Wave 3 — all orphan Speakable WebPage nodes removed; targeted content stays visible in HTML) |
-| P2 | §5.6 — Freshness pipeline: RATE_YEAR assertion, refresh rota, real lastMod | ⏳ PENDING |
+| P2 | §5.6 — Freshness pipeline: RATE_YEAR assertion, refresh rota, real lastMod | ✅ DONE (Fix Wave 10 — `config/rate-year.ts` + `audit:rate-year` in prebuild: 714 files / 162 in-string year tokens = 2026; P2-19 per-article lastMod done in Wave 8) |
 | P2 | P5-09 — Owner verification: foundingDate 2014 vs SSM 202503227236 (2025); employees 10 vs "15+" | ⏳ PENDING (owner) |
 | P3 | P5-11 — Suppress depth-1 BreadcrumbList on homepage | ✅ DONE (Fix Wave 1) |
 
@@ -102,15 +102,19 @@
 
 ## ⭐ NEXT SESSION MUST CONTINUE HERE
 
-**All 5 audit parts are complete; Fix Wave 1–9, BP-1 phase 1 and CF-4 are
+**All 5 audit parts are complete; Fix Wave 1–10, BP-1 phase 1 and CF-4 are
 complete.** Wave 7 closed P2-16 (30/74 problems enriched EN/MS/ZH), Wave 8
 closed **P2-19** (54 distinct per-article blog dates + per-article sitemap
-lastMod), and **Wave 9 closed the entire unblocked CRO/UX queue**
-(P4-05/P4-03/P4-02/P4-07/P4-12/P4-06/P4-16/P4-17 + P4-11 code half). See
-`FIX-WAVE-9-REPORT.md` (and `FIX-WAVE-7/8-REPORT.md` for the earlier waves).
-With that, **no unblocked, code-only audit finding remains** — everything
-left on the boards is owner-blocked, needs owner data/access, or is a
-P2/P3 enhancement listed in item 8 below.
+lastMod), Wave 9 closed the entire unblocked CRO/UX queue
+(P4-05/P4-03/P4-02/P4-07/P4-12/P4-06/P4-16/P4-17 + P4-11 code half), and
+**Wave 10 closed the final unblocked code queue** — §5.6 RATE_YEAR gate,
+P5-13/14 raster OG (with `audit:raster-og` gate), P4-15 NAP-in-content
+(57.8%, asserted in `audit:bp1`), P3-02 completion, P3-06 blog FAQPage,
+P3-18 llms.txt + robots AI bots. See `FIX-WAVE-10-REPORT.md` (and the
+earlier `FIX-WAVE-7/8/9-REPORT.md` files). With that, **no unblocked,
+code-only audit finding remains** — everything left on the boards is
+owner-blocked, needs owner data/access, or is a P2/P3 enhancement listed
+in item 8 below.
 
 1. **The unblocked CRO/UX queue is now COMPLETE (Fix Wave 9, 2026-08-29):**
    P4-05 (global persistent booking float), P4-03 (single desktop float — WhatsApp
@@ -133,21 +137,22 @@ P2/P3 enhancement listed in item 8 below.
 3. **P2-22 (owner decision):** add outbound citations to brands/authorities.
 4. **BP-1 phase 2 / P2-C4 still blocked on owner GSC keep-set** — do **not**
    add more location pages; do **not** delete local pages on low traffic alone.
-5. **CI patch still unapplied:** `git apply docs/full-website-deep-audit/BP-1-ci-audit-bp1.patch`
-   adds `audit:bp1` + `audit:schema-size` as post-build CI steps. The GitHub
-   App token still lacks the `workflows` permission — retry on any session
-   whose token has it, or apply from an owner account. Source-level BP-1 half
-   already runs in CI via `prebuild`.
+5. **CI patch now APPLIED in-tree (uncommitted):**
+   `docs/full-website-deep-audit/BP-1-ci-audit-bp1.patch` adds `audit:bp1` +
+   `audit:schema-size` (now also `audit:raster-og`) as post-build CI steps.
+   The GitHub App token still lacks the `workflows` permission — keep the
+   ci.yml change out of commits unless the token has it; retry on any session
+   whose token does, or apply from an owner account. Source-level gates
+   (incl. `audit:raster-og --source-only`) already run in CI via `prebuild`.
 6. **Post-deploy (owner/SEO):** confirm the 2,146 BP-1 URLs and the 17 retired
    emergency URLs move to *"Page with redirect"*; resubmit `/sitemap.xml`
    (3,626 URLs; blog lastMods now per-article).
 7. **Still-missing access (re-request from owner):** GSC, live HTTP/edge check,
    CWV/CrUX, GBP + review verification, owner fact confirmations (reviews,
    founding year, staff, stats), photography (P5-12).
-8. **Next code-level candidates (owner decisions or P2/P3):** P4-15 NAP strip
-   in content blocks (small code-only win), P3-02 /faq question H3s + hidden
-   empty-state, P3-06 blog FAQPage schema, P3-18 llms.txt aircon+units check,
-   P3-12 MS/ZH pod routes, P5-13/14 raster OG images, §5.6 freshness rota,
+8. **Next code-level candidates (P2/P3, unblocked):** **P3-12 MS/ZH pod routes
+   (205 pages; i18n data already exists — NEXT)**, P2-16 tranche 3 (use
+   `scripts/p2-16-wordcount.ts` thinness order), P2-22 outbound citations,
    P4-10 case-study pages, P4-14 per-area Service entities, P4-08 CTA wording.
 
 ---
@@ -170,7 +175,7 @@ P2/P3 enhancement listed in item 8 below.
 | P2 | P4-10 — Make FeaturedProjects/BeforeAfter cards real links; add case-study pages | ⏳ PENDING |
 | P2 | P4-03 — Consolidate floating CTAs (up to 4 on desktop service pages); exit-intent 30s timer → mouse-leave | 🟡 PARTIAL (Fix Wave 9 — single desktop float now (WhatsApp desk removed); exit-intent 30s timer → mouse-leave still ⏳) |
 | P2 | P4-14 — Per-area `Service` entities in LocalBusiness schema | ⏳ PENDING |
-| P2 | P4-15 — NAP contact strip in content block (5,813 pages footer-only) | ⏳ PENDING |
+| P2 | P4-15 — NAP contact strip in content block (5,813 pages footer-only) | ✅ DONE (Fix Wave 10 — 2,112/3,652 built pages = 57.8% carry the strip in content, baseline 0%; asserted in `audit:bp1` check 8) |
 | P2 | P4-08 — Reword primary CTAs around fixed-quote/no-deposit | ⏳ PENDING |
 | P3 | P4-18 — Anchor-text profile healthy (90% descriptive / 7% generic / 0% branded) — no action required | ⏳ PENDING |
 
@@ -182,14 +187,14 @@ P2/P3 enhancement listed in item 8 below.
 | P0 | P3-05 — Add units to per-sq-ft prices on all AI surfaces ("from RM 14/10/5/22") + fix `lowPrice: "80"` | 🟡 PARTIAL (Fix Wave 1 — startPrice units + schema UnitPriceSpecification + homepage lowPrice fixed; remaining AI-surface copy leaks still ⏳) |
 | P0 | P3-07 — Reconcile contradictory facts: RM 180 vs 220 ceiling price, "28+" vs 29 services, warranty pill vs per-service warranty (251 pages), stats claims | ✅ DONE (Fix Wave 4 — all surfaces unified + AI-context regression-checked; the *stats claims* half stays owner-⏳ under P3-09/P2-21) |
 | P1 | P3-11 — Server-render homepage + /faq hub accordion answers (JS-only today) | ✅ DONE (Fix Wave 2 — native `<details>`) |
-| P1 | P3-02 — /faq hub: add FAQPage JSON-LD + question H3s + remove hidden "No matches" text | 🟡 PARTIAL (Fix Wave 2 — FAQPage JSON-LD + visible answers; question H3s / hidden empty-state still ⏳) |
+| P1 | P3-02 — /faq hub: add FAQPage JSON-LD + question H3s + remove hidden "No matches" text | ✅ DONE (Fix Wave 2 FAQPage JSON-LD + visible answers; Fix Wave 10: question H3s + hidden empty-state removed — verified EN/MS/ZH built HTML) |
 | P1 | P3-04 — Cost pages: add "How much does {svc} cost in KL?" DirectAnswer + expand 459-word bodies | ⏳ PENDING |
-| P1 | P3-18 — llms.txt: list all 29 services (aircon missing) with units; link aeo-faq.txt | ⏳ PENDING |
+| P1 | P3-18 — llms.txt: list all 29 services (aircon missing) with units; link aeo-faq.txt | ✅ DONE (Fix Wave 10 — 29 service lines with units + aeo-faq.txt link; robots.ts + DuckAssistBot/Applebot-Extended) |
 | P1 | P3-09 — Owner verification of stats/claims (1,200+, 15+ Pros, 120+/120, 30–60 min, "written by local tradesmen") | ⏳ PENDING (owner) |
-| P2 | P3-06 — Blog: FAQPage schema + promote top FAQ to question H2 (216 posts) | ⏳ PENDING |
+| P2 | P3-06 — Blog: FAQPage schema + promote top FAQ to question H2 (216 posts) | ✅ DONE (Fix Wave 10 — 193 EN + 192 MS + 192 ZH blog posts emit FAQPage JSON-LD; top FAQ promoted to H2) |
 | P2 | P3-12 — MS/ZH routes for kept pods (205 pages; i18n data already exists) | ⏳ PENDING |
-| P2 | P3-15/P3-16/P3-17 — SearchAction vs /search; news-sitemap freshness; Applebot-Extended/DuckAssistBot | ⏳ PENDING |
-| P2 | P3-10/P3-19/P3-13 — NAP in content block; link+expand aeo-faq.txt; hidden empty-state text | ⏳ PENDING |
+| P2 | P3-15/P3-16/P3-17 — SearchAction vs /search; news-sitemap freshness; Applebot-Extended/DuckAssistBot | 🟡 PARTIAL (Fix Wave 10 — Applebot-Extended/DuckAssistBot done in robots.ts; SearchAction vs /search + news-sitemap still ⏳) |
+| P2 | P3-10/P3-19/P3-13 — NAP in content block; link+expand aeo-faq.txt; hidden empty-state text | ✅ DONE (Fix Wave 10 — NAP strip = P4-15; llms.txt links aeo-faq.txt = P3-18; empty-state removed = P3-02. aeo-faq.txt expansion stays P2 with content work) |
 
 ---
 

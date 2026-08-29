@@ -26,6 +26,7 @@ import {
 } from "@/lib/seo";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { DirectAnswer } from "@/components/content/direct-answer";
+import { NapContactStrip } from "@/components/content/nap-contact-strip";
 import { ProcessTimeline } from "@/components/content/process-timeline";
 import { LocaleTreeLinks } from "@/components/sections/locale-tree-links";
 import { getSpecialtySilo } from "@/config/topical-authority-map";
@@ -355,6 +356,9 @@ export function LocaleSpecialtyPage({
           </div>
         </div>
       </section>
+
+      {/* Audit P4-15 — NAP contact strip at the end of the content block. */}
+      <NapContactStrip service={content.name} />
 
       {/* Crawl path from this tree to the other localized trees. */}
       <LocaleTreeLinks locale={locale} current="services" />
