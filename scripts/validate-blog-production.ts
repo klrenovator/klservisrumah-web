@@ -6,7 +6,7 @@ import { servicesData } from "@/config/services-data";
 import { problemPages } from "@/config/problem-data";
 import { PROBLEM_CANONICAL_REDIRECTS } from "@/config/problem-canonical";
 import { TOOL_SLUG_I18N } from "@/config/tools-i18n";
-import { slugify } from "@/lib/utils";
+import { slugify, toIsoDate, DEFAULT_CONTENT_DATE } from "@/lib/utils";
 import productionBlogRecords from "@/config/blog-production.generated.json" with { type: "json" };
 
 /** Validates the live production article store after the Markdown migration. */
@@ -117,6 +117,30 @@ function validateCopy(
     if (locale === "en" && (/^\/ms\//.test(href) || /^\/zh\//.test(href))) errors.push(`${key}/en: cross-locale link ${href}`);
   }
 }
+
+// P2-19 date invariants — the Part 2 audit found 216 posts sharing 5 dates
+// (99 on one day) and a constant sitemap lastMod. Per-article dates were
+// assigned deterministically (see scripts/assign-blog-dates.ts); this gate
+// keeps the corpus from regressing to a burst-publish pattern:
+//   1. every post's date must parse to ISO without the fallback,
+//   2. no future dates (campaign window ends 2026-08-27, the awning launch),
+//   3. no single date may host more than 10 posts (was 99).
+const MAX_POSTS_PER_DATE = 10;
+const CAMPAIGN_END = "2026-08-27";
+const dateHistogram = new Map<string, number>();
+for (const post of blogPosts) {
+  const iso = toIsoDate(post.date);
+  if (iso === DEFAULT_CONTENT_DATE && post.date.trim() !== DEFAULT_CONTENT_DATE) {
+    errors.push(`${post.slug}: date "${post.date}" does not parse to ISO-8601`);
+  }
+  if (iso > CAMPAIGN_END) errors.push(`${post.slug}: date ${iso} is in the future (campaign ends ${CAMPAIGN_END})`);
+  dateHistogram.set(iso, (dateHistogram.get(iso) ?? 0) + 1);
+}
+for (const [date, count] of [...dateHistogram.entries()].sort()) {
+  if (count > MAX_POSTS_PER_DATE) errors.push(`date ${date}: ${count} posts share one date (max ${MAX_POSTS_PER_DATE})`);
+}
+const maxPostsPerDate = Math.max(...dateHistogram.values());
+console.log(`Blog dates: ${dateHistogram.size} distinct dates across ${blogPosts.length} posts; max ${maxPostsPerDate} posts on one date.`);
 
 for (const post of blogPosts) {
   validateCopy(post.slug, "en", post);

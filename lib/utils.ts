@@ -78,3 +78,19 @@ export function toIsoDate(value?: string, fallback = DEFAULT_CONTENT_DATE): stri
   if (Number.isNaN(parsed.getTime())) return fallback;
   return parsed.toISOString().slice(0, 10);
 }
+
+/**
+ * P2-19: per-article `dateModified`.
+ *
+ * The Part 2 audit found `dateModified = datePublished` on every blog post —
+ * a false "never edited" signal for migrated content. Without a per-article
+ * edit log, the honest stable signal is the site-wide content release/QA
+ * date (`DEFAULT_CONTENT_DATE`, 2026-08-16 — the documented migration date):
+ * anything published before it was last reviewed on that date; anything
+ * published after it (the awning cluster) has never been edited since.
+ * Always >= datePublished, so schema/OG validity holds.
+ */
+export function blogDateModified(date?: string): string {
+  const published = toIsoDate(date);
+  return published < DEFAULT_CONTENT_DATE ? DEFAULT_CONTENT_DATE : published;
+}

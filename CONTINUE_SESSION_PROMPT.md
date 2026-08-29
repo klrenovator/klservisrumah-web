@@ -86,22 +86,48 @@
 > 277,170+53 → 0 broken, audit:seo-head PASS. Corpus unchanged: 3,652 HTML /
 > 3,626 sitemap. Full log: `docs/full-website-deep-audit/FIX-WAVE-7-REPORT.md`.
 >
-> **Next session starts at:** **P2-19** (real per-article blog dates +
-> per-article sitemap `lastMod` — 216 posts share 5 dates; fully unblocked).
-> P2-16 is COMPLETE (30/74); tranche 3 (44 remaining problems) is optional
-> and needs owner GSC demand data to re-rank. **P2-C4** stays tied to the
-> BP-1 phase-2 owner/GSC keep-set decision. BP-1 phase 2 still **blocked on
-> GSC data (owner)**. Do **not** add more location pages. Do **not** re-add
+> **Fix Wave 8 COMPLETE (2026-08-29):** **P2-19 ✅** — real per-article blog
+> dates + per-article sitemap `lastMod`. The 216 posts that shared 5 dates
+> (99 on one day) now carry **54 distinct dates, max 7/day**, all within
+> 2026-07-01..08-27: migrated 170 bucket-capped (each article keeps its
+> batch-completion date as the upper bound) and spread deterministically by
+> `scripts/assign-blog-dates.ts`; extras 21 daily 07-05..25; batch-4 15 across
+> 08-05..13; awning 8 daily 08-20..27 (launch window); legacy 2 untouched.
+> `dateModified` split from `datePublished` via new `lib/utils.ts#blogDateModified`
+> (migrated content → DEFAULT_CONTENT_DATE 2026-08-16 release/QA date; awning
+> → own date) wired into `getArticleSchema` + OG `article:modified_time`.
+> Sitemap: blog + locale-blog URLs emit per-article `lastMod` (648 URLs, 0 on
+> the constant; 2,978 non-blog keep 2026-08-16). Blog `post()` helpers now
+> require an explicit `date` (dead `const now` defaults removed); validator
+> gate added (parseable / non-future ≤ 2026-08-27 / ≤ 10 posts per date).
+> All gates PASS: validate:blogs (54 dates, max 7/day), lint 0/0, type-check,
+> prebuild **320,291 × 0 failures**, build SUCCESS (3,660 static), seo-head
+> (3,626 sitemap, 0 dupes), html 0/0, links 277,170+53 → 0 broken. Full log:
+> `docs/full-website-deep-audit/FIX-WAVE-8-REPORT.md`.
+>
+> **Next session starts at:** **P2-16 tranche 3** (44 remaining problems;
+> needs owner GSC demand data to re-rank, else `scripts/p2-16-wordcount.ts`
+> thinness order: `vinyl-flooring-lifting-edges` 166, `wall-dampness-rising`
+> 167, `autogate-remote-not-working` 167, `ceiling-mold-stains` 168,
+> `rccb-tripping-kl` 168) — or the **unblocked CRO/UX queue** (P4-05 sticky
+> CTA, P4-07 static-SSR form, P4-12 coverage map, P4-06 include/exclude
+> lists, P4-11 team/authors page, P4-16 link-equity rebalance, P4-17 aircon
+> problem inlinks, P4-02 mobile quote box). **P2-C4** stays tied to the BP-1
+> phase-2 owner/GSC keep-set decision. BP-1 phase 2 still **blocked on GSC
+> data (owner)**. Do **not** add more location pages. Do **not** re-add
 > `app/(en|ms|zh)/loading.tsx`. Do **not** delete local pages on low traffic
 > alone. Do **not** retry the CI patch push (no `workflows` permission). Do
 > **not** weaken the estimator trilingual-parity asserts to accommodate new
 > copy — supply the translations instead. Do **not** enrich a problem in
 > English without its native MS/ZH depth block (`audit:problem-i18n` fails
-> the build on a gap).
+> the build on a gap). Do **not** add a blog post without an explicit `date`
+> (type-check enforces), and never reintroduce per-day date concentration
+> above the validator's 10-post cap.
 >
 > **Branch:** arena/01a04c97-klservisrumah-web (this session branch — push PRs from here)
-> **Last completed session:** 2026-08-29 — Fix Wave 7 ✅ (P2-16 tranche 2: next
-> 15 thinnest problems enriched EN/MS/ZH → 30/74 problems carry full depth)
+> **Last completed session:** 2026-08-29 — Fix Wave 8 ✅ (P2-19: per-article
+> blog dates 5→54 distinct + per-article sitemap lastMod; Wave 7 same day:
+> P2-16 30/74 problems enriched)
 
 **Quality gates (must all be green before any new work).**
 Numbers are the *measured* output of each command on this branch — update them

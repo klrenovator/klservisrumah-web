@@ -8,12 +8,14 @@ import type { BlogPost } from "@/config/blog-data";
  * always explained through cost factors, in line with the service page.
  *
  * MS/ZH native copies live in `config/blog-i18n.ts`.
+ *
+ * P2-19: each post carries its own hand-assigned publication date (spread
+ * across the 2026-08-20..27 awning launch window); the shared `now` default
+ * was removed so a new post without a date fails type-check instead of
+ * silently reusing a stale date.
  */
-const now = "2026-08-27";
-
-function post(entry: Omit<BlogPost, "date" | "author" | "readTime">): BlogPost {
+function post(entry: Omit<BlogPost, "author" | "readTime">): BlogPost {
   return {
-    date: now,
     author: "KL Servis Rumah Editorial Team",
     readTime: "6 min read",
     ...entry
@@ -23,6 +25,7 @@ function post(entry: Omit<BlogPost, "date" | "author" | "readTime">): BlogPost {
 export const awningBlogPosts: BlogPost[] = [
   post({
     slug: "polycarbonate-vs-metal-vs-acp-awning-malaysia",
+    date: "August 20, 2026",
     title: "Polycarbonate vs Metal vs ACP Awnings in Malaysia",
     excerpt: "Comparing the three most common awning materials for Malaysian homes — polycarbonate, metal deck and ACP — on light, heat, rain noise, maintenance and cost factors, so you can shortlist the right one before asking for a quote.",
     category: "Awning",
@@ -141,6 +144,7 @@ Tell us where the awning will go and what bothers you most — heat, rain, light
   }),
   post({
     slug: "car-porch-awning-guide-malaysia",
+    date: "August 21, 2026",
     title: "Car Porch Awning Guide: Materials, Drainage & Cost Factors",
     excerpt: "The complete car porch awning guide for KL & Selangor homes — material choices, heat, vehicle clearance, slope and drainage, strata rules, and exactly what to send for an accurate quote.",
     category: "Awning",
@@ -229,6 +233,7 @@ Send photos of your porch with rough dimensions on WhatsApp and we will recommen
   }),
   post({
     slug: "how-awning-pricing-works-malaysia",
+    date: "August 22, 2026",
     title: "How Awning Pricing Works in Malaysia",
     excerpt: "Awning prices in Malaysia are quoted per project, not at a fixed rate. This guide breaks down the eight cost factors — size, material, frame, access, drainage, removal and more — and what to send for an accurate itemised quote.",
     category: "Awning",
@@ -343,6 +348,7 @@ Send your location, photos and rough dimensions on WhatsApp and we will prepare 
   }),
   post({
     slug: "how-to-choose-right-awning-malaysia",
+    date: "August 23, 2026",
     title: "How to Choose the Right Awning for Your Malaysian Home",
     excerpt: "Not sure which awning type fits your house? This decision guide maps the awning you need to where it goes — car porch, entrance, windows, balcony, drying yard, walkway or shopfront — and to what matters most: light, heat, rain noise, looks or strata rules.",
     category: "Awning",
@@ -461,6 +467,7 @@ Tell us where you need shade and what bothers you most — heat, rain, glare or 
   }),
   post({
     slug: "awning-maintenance-leaks-rust-water-pooling",
+    date: "August 24, 2026",
     title: "Awning Maintenance: Leaks, Rust & Water Pooling",
     excerpt: "Is your awning leaking, showing rust or holding water after rain? Learn what to inspect in the sheets, joints, frame and drainage — and when a repair or full replacement needs a proper assessment.",
     category: "Awning",
@@ -595,6 +602,7 @@ Send photos and rough dimensions on WhatsApp and describe the leak, rust or pool
   }),
   post({
     slug: "retractable-vs-fixed-awning-malaysia",
+    date: "August 25, 2026",
     title: "Retractable vs Fixed Awnings: Which Fits Your Home?",
     excerpt: "Should you choose a permanent fixed awning or shade you can open and close? Compare rain cover, wind care, light, maintenance, strata rules and suitable applications for Malaysian homes.",
     category: "Awning",
@@ -735,6 +743,7 @@ Tell us where the awning will go, when you want shade and whether permanent rain
   }),
   post({
     slug: "balcony-patio-awning-guide-malaysia",
+    date: "August 26, 2026",
     title: "Choosing an Awning for a Balcony or Patio in Malaysia",
     excerpt: "Choosing a balcony or patio awning in Malaysia? Compare polycarbonate, glass, ACP and fabric on light, shade and upkeep, plan drainage on an elevated floor, and check strata rules before you commit.",
     category: "Awning",
@@ -861,6 +870,7 @@ Tell us your property type, the space you want to cover and any management rules
   }),
   post({
     slug: "replacing-old-leaking-awning-malaysia",
+    date: "August 27, 2026",
     title: "Replacing an Old or Leaking Awning: What to Check",
     excerpt: "Is it time to replace your old awning? The signs replacement is realistic, what an inspection should cover, whether the frame can be reused, drainage fixes, removal scope and what to send for a quote.",
     category: "Awning",

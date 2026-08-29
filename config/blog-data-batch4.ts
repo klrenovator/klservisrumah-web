@@ -8,12 +8,14 @@ import type { BlogPost } from "@/config/blog-data";
  *
  * All entries default to English; MS/ZH fallback rendered from the primary
  * translation layer in `config/blog-i18n.ts`.
+ *
+ * P2-19: each post carries its own hand-assigned publication date (spread
+ * across the August 2026 production window); the shared `now` default was
+ * removed so a new post without a date fails type-check instead of silently
+ * reusing a stale date.
  */
-const now = "2026-08-13";
-
-function post(entry: Omit<BlogPost, "date" | "author" | "readTime">): BlogPost {
+function post(entry: Omit<BlogPost, "author" | "readTime">): BlogPost {
   return {
-    date: now,
     author: "KL Servis Rumah Editorial Team",
     readTime: "6 min read",
     ...entry
@@ -23,6 +25,7 @@ function post(entry: Omit<BlogPost, "date" | "author" | "readTime">): BlogPost {
 export const batch4BlogPosts: BlogPost[] = [
   post({
     slug: "plaster-ceiling-design-build-kl",
+    date: "August 5, 2026",
     title: "Plaster Ceiling Design & Build in Kuala Lumpur & Selangor",
     excerpt: "Flat, tiered, L-box, cove and curved plaster ceilings with concealed lighting, designed and built across KL & Selangor from RM 10 per sq ft.",
     category: "Ceiling",
@@ -89,6 +92,7 @@ KL Servis Rumah provides professional plaster ceiling design and build across Ku
   }),
   post({
     slug: "flat-plaster-ceiling-kl",
+    date: "August 6, 2026",
     title: "Flat Plaster Ceiling Installation in KL & Selangor",
     excerpt: "A clean, smooth flat plaster ceiling across KL & Selangor — hides wiring, evens out the surface and gives rooms a modern look, from RM 10 per sq ft.",
     category: "Ceiling",
@@ -138,6 +142,7 @@ For a clean, modern ceiling that hides imperfections and wiring, a flat plaster 
   }),
   post({
     slug: "tiered-l-box-ceiling-kl",
+    date: "August 6, 2026",
     title: "Tiered & L-Box Ceiling Installation in KL & Selangor",
     excerpt: "Add depth and elegance to a room with a tiered or L-box ceiling and concealed lighting across KL & Selangor, from RM 14 per sq ft.",
     category: "Ceiling",
@@ -181,6 +186,7 @@ Add depth, elegance, and soft concealed lighting to your home with a tiered or L
   }),
   post({
     slug: "wall-ceiling-skim-coat-kl",
+    date: "August 7, 2026",
     title: "Wall & Ceiling Skim Coat in Kuala Lumpur & Selangor",
     excerpt: "Smooth, even walls and ceilings with professional skim coating across KL & Selangor — wall and ceiling skim coat, crack repair and full condo re-skim, from RM 5 per sq ft.",
     category: "Skim Coat",
@@ -234,6 +240,7 @@ Give your walls and ceilings a smooth, flawless finish. WhatsApp us for a free a
   }),
   post({
     slug: "wall-skim-coating-kl",
+    date: "August 7, 2026",
     title: "Wall Skim Coating Cost & Process Guide (2026) — KL & Selangor",
     excerpt: "Smooth, even walls with professional wall skim coating across KL & Selangor — evens rough or patchy surfaces and creates a flawless paint-ready finish, from RM 5 per sq ft.",
     category: "Skim Coat",
@@ -283,6 +290,7 @@ For smooth, even walls and a flawless paint finish, wall skim coating is the ans
   }),
   post({
     slug: "ceiling-skim-coating-kl",
+    date: "August 8, 2026",
     title: "Ceiling Skim Coating Cost & Process Guide (2026) — KL & Selangor",
     excerpt: "Level and smooth your ceiling with professional ceiling skim coating across KL & Selangor — evens joints, cracks and uneven surfaces for a clean paint-ready finish, from RM 6 per sq ft.",
     category: "Skim Coat",
@@ -328,6 +336,7 @@ Give your ceiling a clean, smooth finish. WhatsApp us for a free quote — [chat
   }),
   post({
     slug: "vinyl-spc-laminate-flooring-kl",
+    date: "August 8, 2026",
     title: "Vinyl, SPC & Laminate Flooring in Kuala Lumpur & Selangor",
     excerpt: "Professional flooring installation across KL & Selangor — SPC click-lock, laminate and luxury vinyl plank plus skirting & transition fitting, from RM 14 per sq ft.",
     category: "Flooring",
@@ -386,6 +395,7 @@ Whether you prefer SPC, laminate, or vinyl plank, KL Servis Rumah provides profe
   }),
   post({
     slug: "spc-click-lock-flooring-kl",
+    date: "August 9, 2026",
     title: "SPC Click-Lock Flooring Installation in KL & Selangor",
     excerpt: "Durable, waterproof SPC click-lock flooring installed across KL & Selangor — perfect for kitchens and wet areas, from RM 14 per sq ft.",
     category: "Flooring",
@@ -432,6 +442,7 @@ Enjoy a durable, waterproof floor with a realistic timber look. WhatsApp us for 
   }),
   post({
     slug: "laminate-flooring-kl",
+    date: "August 10, 2026",
     title: "Laminate Flooring Installation in KL & Selangor",
     excerpt: "Cost-effective timber-look laminate flooring installed across KL & Selangor — great for bedrooms and living areas, from RM 11 per sq ft.",
     category: "Flooring",
@@ -478,6 +489,7 @@ Add the warm look of timber at an affordable price. WhatsApp us for a free quote
   }),
   post({
     slug: "epoxy-polyurethane-flooring-kl",
+    date: "August 10, 2026",
     title: "Epoxy & Polyurethane Flooring in Kuala Lumpur & Selangor",
     excerpt: "Professional epoxy & polyurethane flooring across KL & Selangor — self-levelling, flake/quartz broadcast and heavy-duty mortar screed floors plus repair, from RM 22 per sq ft.",
     category: "Flooring",
@@ -528,6 +540,7 @@ Give your garage, balcony, or commercial space a tough, seamless, easy-to-clean 
   }),
   post({
     slug: "self-levelling-epoxy-floor-kl",
+    date: "August 11, 2026",
     title: "How Self-Levelling Epoxy Floors Work in KL Homes",
     excerpt: "A smooth, seamless, self-levelling epoxy floor installed across KL & Selangor — ideal for garages, offices, balconies and showrooms, from RM 22 per sq ft.",
     category: "Flooring",
@@ -574,6 +587,7 @@ Give your garage, office, or balcony a smooth, seamless, durable floor. WhatsApp
   }),
   post({
     slug: "flake-quartz-broadcast-epoxy-kl",
+    date: "August 11, 2026",
     title: "Flake vs Quartz Broadcast Epoxy: Which Finish Fits?",
     excerpt: "A decorative, slip-resistant flake or quartz broadcast epoxy floor installed across KL & Selangor — ideal for garages, balconies and high-traffic areas, from RM 26 per sq ft.",
     category: "Flooring",
@@ -620,6 +634,7 @@ Combine durability with a decorative, slip-resistant finish. WhatsApp us for a f
   }),
   post({
     slug: "roof-repair-waterproofing-kl",
+    date: "August 12, 2026",
     title: "Roof Repair & Waterproofing in Kuala Lumpur & Selangor",
     excerpt: "Professional roof repair and waterproofing across KL & Selangor — roof leak diagnosis and repair, ridge re-bedding, gutter cleaning and torch-on membrane waterproofing, with fixed quotes.",
     category: "Roof Repair",
@@ -676,6 +691,7 @@ Protect your home from roof damage with professional repair and waterproofing. W
   }),
   post({
     slug: "roof-leak-diagnosis-repair-kl",
+    date: "August 12, 2026",
     title: "Roof Leak Diagnosis & Repair Cost Guide (2026) — KL & Selangor",
     excerpt: "Find and fix the source of your roof leak across KL & Selangor — professional diagnosis of tiles, ridges, flashings and gutters, with targeted repair from RM 380.",
     category: "Roof Repair",
@@ -726,6 +742,7 @@ If your roof is leaking, a proper diagnosis finds the source and a targeted repa
   }),
   post({
     slug: "ridge-re-bedding-re-pointing-kl",
+    date: "August 13, 2026",
     title: "When Does a Roof Ridge Need Re-Bedding or Re-Pointing?",
     excerpt: "Reseal cracked or loose roof ridge tiles to stop leaks across KL & Selangor — professional ridge re-bedding and re-pointing, from RM 22 per linier ft.",
     category: "Roof Repair",

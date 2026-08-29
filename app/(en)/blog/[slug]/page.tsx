@@ -1,5 +1,5 @@
 import React from "react";
-import { toIsoDate } from "@/lib/utils";
+import { toIsoDate, blogDateModified } from "@/lib/utils";
 import { buildMetadata } from "@/lib/seo-meta";
 import { notFound } from "next/navigation";
 import { blogPosts } from "@/config/blog-data";
@@ -39,7 +39,9 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
     image: post.coverImage,
     type: "article",
     publishedTime: toIsoDate(post.date),
-    modifiedTime: toIsoDate(post.date),
+    // P2-19: modifiedTime reflects the site-wide release/QA date for migrated
+    // content instead of copying the publication date.
+    modifiedTime: blogDateModified(post.date),
     keywords: [post.title, post.category, "home maintenance Malaysia"],
     ...(hasFullCluster ? {
       languageUrls: {
