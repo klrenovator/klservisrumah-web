@@ -170,7 +170,7 @@ Method: KLSR's 29-service catalog + 726 specialty/problem/blog topics (repo grou
 
 ### B. Topic/intent gaps for services KLSR already sells (all HIGH priority, zero business risk)
 1. **Bahasa Malaysia commercial coverage — the single largest gap on the site.** The brand *is* Malay ("Servis Rumah") yet only 591 of 5,815 pages are MS, and none of the money templates (cost, emergency, near-me, pods, problems, blog) exist in MS. Queries like *"tukang paip Kuala Lumpur"*, *"harga cat rumah 2026"*, *"tukang rumah near me"*, *"servis aircond murah KL"* have no dedicated MS pages. Intent: transactional. Suggested URLs: `/ms/services/<svc>/harga` family + MS problem pages. Entities: service + harga + area. Conversion: WhatsApp pre-filled in BM (already supported). AI-answer: MS-language AI queries currently retrieve nothing from KLSR. **(Extends P3-12 from parity to *opportunity*.)**
-2. **"Harga/price list {year}" hub pages per service** — competitors publish explicit per-job price lists and rank for "senarai harga"; KLSR's `/services/<svc>/cost` pages are 332–622 words (P2-18) with no per-sub-service price table markup. Merge cost pages with the rate-book data that *already exists* in `lib/` (the estimators are driven by it) — a genuinely unique asset competitors lack.
+2. **"Harga/price list {year}" hub pages per service** — competitors publish explicit per-job price lists and rank for "senarai harga"; KLSR's `/services/<svc>/cost` pages are 332–622 words (P2-18) with no per-sub-service price table markup. Merge cost pages with the rate-book data that *already exists* in `lib/` (the estimators are driven by it) — a genuinely unique asset competitors lack. **✅ IMPLEMENTED 2026-08-29 (CF-4 — see §5.5 implementation log): all 29 pages now carry the full published rate book, 1,152–2,264 words (mean 1,373), market baselines and service FAQs.**
 3. **Problem-page families are 90% missing:** 74 problem pages ÷ 29 services — aircon has 9–10, most services have 0–2 (plumbing 2, electrical 0, roofing 0…). Every service should own its top 5 symptom queries ("roof leaking during rain Malaysia", "autogate not opening after rain", "water heater no hot water"). Suggested: +70 problem pages, 700+ words, symptom → cause table → DIY-safe steps → when-to-call → price anchor. Highest AI-answer opportunity on the site (problem pages already score 72/100 citability, P3).
 4. **Condo/strata-specific content:** JMB/management approval, renovation deposit, working-hours rules, lift protection — high-anxiety KL-specific decisions; nothing on-site covers strata rules. `/guides/condo-renovation-rules-kl`. Strong LLM-citation bait (unique local facts).
 5. **Case studies with photos + itemized cost** — `/projects/<case>` (P4-10): 10 real jobs with scope/cost/duration/photos. This single template feeds E-E-A-T, image SEO, local proof, and AI citation simultaneously.
@@ -196,9 +196,39 @@ Near-me×area had already over-expanded (1,073 pages — Part 1 P0-2 says consol
 
 **CF-3 — Service head-term diffusion across 8+ templates.** Measured example families (self-canonical EN pages matching the service token): **ceiling 360 pages, flooring 222, aircon 154, waterproofing 134, plumbing 118, painting 117, handyman 112, electrical 112.** For "aircon service KL" the plausible contenders are `/services/aircon`, `/near-me/aircon`, `/commercial/aircon-services-kl`, `/residential/…`, `/answers/…`, `/process/…`, plus 20 brand pages. The pods (174 pages) exist *only* as extra shots at the same head terms with 33–71% shared copy (P2-C3). **Decision:** collapse pods → 301 to the service hub (or rewrite the 2–3 with genuine distinct intent, e.g. commercial with actual B2B content); keep `/near-me/<svc>` only if rewritten as genuine "coverage + dispatch" pages; brand pages become entity pages or get folded. **Priority: P0 (carried, now with page-count evidence).**
 
-**CF-4 — Pricing intent split 4 ways:** `/pricing` (site-wide table) vs `/services/<svc>/cost` vs `/tools/<calculator>` vs `/estimate/*` (23 pages). Tools deservedly win (unique function); cost pages are thin; estimate pages are index-thin duplicates of tools. **Decision:** cost pages become the canonical "harga {service}" content pages (merge rate-book tables, §5.4-B2); `/estimate/*` → evaluate NOINDEX or merge into tools; `/pricing` stays as hub linking down. **Priority: P1.**
+**CF-4 — Pricing intent split 4 ways:** `/pricing` (site-wide table) vs `/services/<svc>/cost` vs `/tools/<calculator>` vs `/estimate/*` (23 pages). Tools deservedly win (unique function); cost pages are thin; estimate pages are index-thin duplicates of tools. **Decision:** cost pages become the canonical "harga {service}" content pages (merge rate-book tables, §5.4-B2); `/estimate/*` → evaluate NOINDEX or merge into tools; `/pricing` stays as hub linking down. **Priority: P1. — ✅ IMPLEMENTED 2026-08-29 (log below).**
 
 **CF-5 — `/problems/<p>` ↔ blog symptom posts:** modest overlap now (2 H1 collisions); will grow if §5.4-B3 expands problems while blog also writes symptom posts. **Decision:** problems own "symptom + fix now" intent; blog owns "cost/why/prevention" — enforce via title conventions and interlinks. **Priority: P2 (governance).**
+
+---
+
+### CF-4 — IMPLEMENTATION LOG (2026-08-29, branch `arena/01a04ad8-klservisrumah-web`)
+
+**What shipped**
+
+1. **`/services/<slug>/cost` (29 pages) → canonical rate-book "harga" guides.**
+   - Full published rate book per service: **162 priced scope rows + 60 quote-only scope rows (222 across 29 pages)** — the same `SERVICE_SCOPES` data that drives the estimators (`lib/estimator/rate-book.generated.ts`, regenerated every build), now rendered on the money page as a 3-column scope table (`Scope | Our published rate | What's covered`) plus a dedicated "site-visit quote only" block for unpriced scopes.
+   - Verified Klang Valley market baselines stay (17 rows over 6 services), now under a "typical prices" heading with the **actual `lastReviewed` date** rendered from `config/market-rates.ts` (2026-07-25 / aircon 2026-08-17) instead of a hard-coded sentence.
+   - New services on every page: pricing methodology (4 points — one rate book, published-not-advertised, fair-KV anchor, no hidden fees), worked example (quantity × published rate, computed from the book's first scope at estimator-typical quantities), "what to measure before you call" (4 steps), instant-calculator CTA (deep tool for the 6 dedicated trades, share URL otherwise), and the service's own **job process (5–6 steps)** + **service FAQs (4–15)**, both localized.
+   - **Depth: `<main>` visible words 409–702 (mean 543) → 1,152–2,264 (mean 1,373); all 29 ≥ 1,000** (§K acceptance met). Visibility: 4 `<details>` → 8–19 per page (generic 4 + service FAQs), so every FAQPage Q&A remains in the server-rendered HTML (P5-02).
+   - **Trilingual:** costPage messages 25 → **61 keys** × EN/MS/ZH, including localized FAQ templates and a new **`rateCopy.aircon` 7 rows × 3 locales** (aircon previously had 0 rateCopy rows and fell back to English — gap closed; all other rateCopy rows unchanged).
+2. **`/estimate` + `/estimate/<slug>` (hub + 22 generic pages) → NOINDEX, nofollow** (CF-4(c)). They stay live, self-canonical and crawlable — the owner's WhatsApp share links keep working — but are removed from the index and from both crawl surfaces: **sitemap −23 URLs** (`app/(en)/sitemap.ts`) and **IndexNow −23 URL entries** (`app/api/indexnow/route.ts`). `scripts/seo-head-audit.ts` now expects them noindex (`expectedNoindex` = 3 locales/framework + 23 estimate URLs). `app/(en)/pricing` unchanged — still the hub linking down to cost guides.
+3. **Audit-script fix (CF-4(b)):** `scripts/part5-audit.ts` `cleanText()` now decodes `&#x27;` → `'` (React emits apostrophes as hex entities), eliminating the **5 false `faqSchemaNoVisibleMatch` positives** — the pages were never broken. Verified 5 → 0 with no page edits.
+4. **Schema:** OfferCatalog/Article/FAQPage on cost pages updated in sync with the new visible content (FAQPage now includes the service's own FAQs, both visible); no other schema changes on this branch.
+
+**Verification (post-build, all gates PASS):**
+
+| Gate | Result |
+|---|---|
+| `npm run prebuild` | 320,331 assertions, 0 failures (incl. i18n parity, service-i18n, client-bundle) |
+| `npm run build` | PASS, 3,677 static pages |
+| `audit:seo-head` | PASS — 3,669 rendered; **indexable = sitemap = 3,643**; noindex 26 (3 framework/locale + 23 estimate); 0 dup titles/descriptions; 0 warnings |
+| `audit:html` / `audit:schema-size` / `audit:links` (278,275 links) / `audit:location-similarity` / `seo:audit` | ALL PASS |
+| `scripts/part5-audit.ts` (fresh) | 3,669 pages, 0 JSON-LD errors, 37 images, 0 dup titles/H1s, **`faqSchemaNoVisibleMatch` = 0** |
+
+**Files changed:** `app/(en)/services/[slug]/cost/page.tsx`, `components/sections/locale-service-cost-view.tsx`, `lib/location-bundles.ts` (+`ServiceCostDetail`/`buildServiceCostDetail`), `messages/{en,ms,zh}.json`, `app/(en)/estimate/page.tsx`, `app/(en)/estimate/[slug]/page.tsx`, `app/(en)/sitemap.ts`, `app/api/indexnow/route.ts`, `scripts/seo-head-audit.ts`, `scripts/part5-audit.ts`, regenerated `docs/audit-part5-*` + AI-context outputs. (Trade-off accepted: internal links from the 44 localized service pages still point at `/estimate/<slug>`; they remain crawlable `noindex, follow`, and the estimate share pages stay the calculator UX for the 22 generic services.)
+
+**Not done / next for this family (tracked):** embedding the interactive estimator directly in the cost page (chose CTA link to keep JS lean); `RATE_YEAR` build assertion for the "2026" badge (§5.6); emergency-template depth (P2-17). Any ranking/traffic effect of the noindex change is **REQUIRES VERIFICATION** (no GSC access).
 
 ---
 
@@ -436,7 +466,8 @@ Sequencing by impact/effort/risk: (1) C7 units + fact reconciliation (low effort
 | 301 map near-me→parent; stop suburb-twin static generation | BP-1 | route configs, middleware, sitemap | build emits 0 canonicalised twin HTML; redirects live; sitemap −2,146 URLs |
 | Single business entity: drop `getLocalBusinessSchema()` from site-head, repoint `LOCAL_BUSINESS_ID` | P5-01 | site-head, estimator schema | corpus scan: 1 business node/page, all providers → `/#organization` |
 | @id-reference schema architecture + page-local areaServed | P5-04 | lib/seo.ts | JSON-LD ≤8 KB on sub-pages |
-| SSR FAQ answers on near-me/cost/emergency/homepage/faq-hub or strip FAQPage | P5-02 | templates | analyzer `faqSchemaNoVisibleMatch=0` |
+| SSR FAQ answers on near-me/cost/emergency/homepage/faq-hub or strip FAQPage | P5-02 | templates | analyzer `faqSchemaNoVisibleMatch=0` (cost pages done in CF-4) |
+| Cost pages → rate-book "harga" guides; `/estimate/*` NOINDEX | CF-4 | cost route/view, sitemap, indexnow, seo-head gate | 29 pages ≥1,000 words; 23 estimate URLs noindex; gates pass — **✅ 2026-08-29** |
 | `UnitPriceSpecification` + visible units | C7 | rate-book, seo.ts, copy | no naked per-sqft numbers in Offer.price |
 | Raster OG images (`next/og` template) | P5-13 | metadata layer | og:image = 1200×630 png/jpg on all patterns |
 | Blog author → Organization; real dates plumbing; sitemap lastMod | C10 | blog-data, seo.ts, sitemap | dateModified ≠ datePublished after first refresh |
@@ -451,7 +482,7 @@ Sequencing by impact/effort/risk: (1) C7 units + fact reconciliation (low effort
 1. **Photography brief** (P5-12): shot list per job type; 90-day targets (29 service heroes, 10 case studies × 6, 37 area photos).
 2. **10 case studies** — scope, itemized cost, duration, photos, area, testimonial (verified).
 3. **Retarget 26 twin blog posts** to informational H1s/angles (CF-1 list in `audit-part5-cannibalization.json`).
-4. **Rewrite 29 cost pages** into rate-book "harga" guides (tables from estimator data; 1,000+ words; FAQ).
+4. **Rewrite 29 cost pages** into rate-book "harga" guides (tables from estimator data; 1,000+ words; FAQ). — **✅ DONE 2026-08-29 (CF-4, see §5.5 implementation log): 1,152–2,264 words/page, full rate-book tables, localized FAQs.**
 5. **Expand 74 problem pages** to 700+ words; **author +70 new** per family plan (BP-6).
 6. **Rewrite or sign off folding** of each pod family (BP-5) — per-service commercial content only where real B2B scope exists.
 7. **BM tree** (BP-4): translate-and-localize money templates; native-BM titles ("harga", "tukang", "upah").
@@ -491,7 +522,7 @@ Sequencing by impact/effort/risk: (1) C7 units + fact reconciliation (low effort
 14. BM/ZH money content missing though the brand is Malay (C8)
 15. Blog↔sub-service H1 twins on 26 head terms (CF-1)
 16. og:image SVGs break WhatsApp/social previews for a WhatsApp-first business (P5-13)
-17. Emergency/cost templates: 257–622 words on the highest-value queries (P2-17/18)
+17. Emergency/cost templates: 257–622 words on the highest-value queries (P2-17/18) — cost side fixed 2026-08-29 (CF-4: 1,152–2,264 words + rate books); **emergency templates still pending**
 18. Zero outbound citations sitewide — 3 footer social links are the only external hrefs (P2-22)
 19. 22–31 KB of JSON-LD per page, mostly 610k repeated City nodes (P5-04)
 20. Breadcrumbs absent exactly on the templates that most need context (P5-10)

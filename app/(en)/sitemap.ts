@@ -14,7 +14,6 @@ import { indexableProblemPages } from "@/config/problem-index";
 import { allGenericPages, clusterPages, maintenancePages } from "@/config/content-data";
 import { toolsList } from "@/config/tools-data";
 import { TOOLS_INDEX_PATH, toolLocaleUrls } from "@/config/tools-i18n";
-import { ESTIMATE_INDEX_PATH, estimatePath, genericEstimateSlugs } from "@/config/estimate-links";
 import { slugify, DEFAULT_CONTENT_DATE } from "@/lib/utils";
 import { hasSpecialtyLocaleContent } from "@/config/specialty-locale-content";
 
@@ -122,12 +121,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { path: urls.zh, priority: 0.82, languages: urls }
       ];
     }),
-    // Shareable per-service estimator links (`/estimate/<slug>`). Only the
-    // hub and the pages that actually render here are listed — the six
-    // dedicated-tool services 301-redirect to `/tools/*` at the middleware,
-    // and a sitemap must never advertise a redirect.
-    { path: ESTIMATE_INDEX_PATH, priority: 0.74 },
-    ...genericEstimateSlugs().map((slug) => ({ path: estimatePath(slug), priority: 0.62 }))
+    // CF-4: `/estimate` + `/estimate/<slug>` are the owner's WhatsApp share
+    // links — live and crawlable but NOINDEX (they are index-thin duplicates
+    // of the tools, and the canonical money pages are `/services/<slug>/cost`).
+    // A sitemap must never advertise a URL that answers with `noindex`.
   ];
 
   // The main service page is the head of a REAL three-URL hreflang cluster

@@ -6,29 +6,36 @@
 
 ## Current State (Update this each session)
 
-> **BP-1 PHASE 1 COMPLETE (2026-08-28):** Part 1 Critical #1/#2 are closed —
-> 2,146 duplicate programmatic URLs (1,073 `/areas/<a>/<svc>/near-me` + 1,073
-> `/suburbs/<twin>/<svc>`) are now **301s instead of pages**. Built HTML
-> 5,815 → **3,669**; sitemap 4,739 → **3,666**; cross-page canonicals 1,073 → **0**.
-> Read `docs/full-website-deep-audit/TRACKING.md` first — it is the authoritative
-> status board; `docs/full-website-deep-audit/BP-1-PHASE-1-REPORT.md` and
-> `docs/full-website-deep-audit/FIX-WAVE-3-REPORT.md` have the full evidence,
-> the post-deploy GSC/Bing checklist, and the schema-size gate.
+> **CF-4 COMPLETE (2026-08-29):** cost pages are now the canonical rate-book
+> "harga" guides. All 29 `/services/<svc>/cost` pages: 409–702 words (mean 543)
+> → **1,152–2,264 (mean 1,373)**, 222 rate-book rows (162 priced + 60
+> quote-only), market baselines (17 rows/6 services with real `lastReviewed`),
+> worked example, 4-point methodology, measurement guide, calculator CTA, and
+> the service's own localized job process + FAQs (8–19 visible answers).
+> costPage messages 25 → 61 keys ×3 locales + new `rateCopy.aircon` 7×3.
+> **CF-4(c):** `/estimate` hub + 22 generic slugs now `noindex,follow`
+> (live WhatsApp share links) — removed from sitemap (−23 URLs) and IndexNow
+> (−23 entries); `scripts/seo-head-audit.ts` extended (noindex 26; indexable =
+> sitemap = 3,643). **CF-4(b):** part5 `cleanText()` decodes `&#x27;` →
+> FAQ false positives 5 → 0. All gates PASS (prebuild 320,331 assertions;
+> audit:html, audit:schema-size, audit:links 278,275, audit:seo-head,
+> audit:location-similarity, seo:audit; part5 re-run: 3,669 pages, 0 JSON-LD
+> errors). Full log: `PART-5-AUDIT-REPORT.md` §5.5.
 >
-> **Next session starts at:** **BP-1 phase 2** — the demand-backed keep-list for
-> the remaining 1,073 `/areas/<area>/<svc>` pairs + authored local copy for the
-> kept set. **Blocked on GSC data (owner).** If GSC is still unavailable, take
-> **CF-4** (rate-book → `/services/<svc>/cost` merge; evaluate `/estimate/*`),
-> then **P3-01** (BM/ZH English leaks + prebuild leak validator), then
-> **P2-C3/P2-C4** (content pods + pair-copy generator). P5-04, P5-06, P5-07 and
-> P5-10 are all ✅ complete (Fix Wave 3) and enforced by `npm run
-> audit:schema-size`. Do **not** add more location pages. Do **not** re-add
-> `app/(en|ms|zh)/loading.tsx`. Do **not** delete local pages on low traffic alone.
+> **Next session starts at:** **P3-01** — BM/ZH English leaks in DirectAnswer
+> blocks (29/29 service pages, P0) + prebuild leak validator → **P2-C3** (174
+> generic content pods) → **P2-C4** (replace pair-copy generator with authored
+> area×service copy) → **P3-07** (fact reconciliation: RM 180 vs 220, 30-day vs
+> 5-year warranty, 10 vs 15+ staff) → P2-16/17/18 remainder (emergency depth,
+> problem expansion). BP-1 phase 2 still **blocked on GSC data (owner)**.
+> P5-04/06/07/10 (Fix Wave 3) + CF-4 all ✅. Do **not** add more location pages.
+> Do **not** re-add `app/(en|ms|zh)/loading.tsx`. Do **not** delete local pages
+> on low traffic alone. Do **not** retry the CI patch push (no `workflows`
+> permission).
 
-**Branch:** arena/01a04a81-klservisrumah-web (this session branch — push PRs from here)
-**Last completed session:** 2026-08-28 — Fix Wave 3 ✅ (P5-04 schema slim
-62.2→14.5 MB, P5-06 HowTo, P5-07 Speakable, P5-10 breadcrumbs +256 pages,
-new `audit:schema-size` gate)
+**Branch:** arena/01a04ad8-klservisrumah-web (this session branch — push PRs from here)
+**Last completed session:** 2026-08-29 — CF-4 ✅ (rate-book cost guides,
+`/estimate/*` noindex, aircon rateCopy trilingual, part5 cleanText fix)
 
 **Quality gates (must all be green before any new work).**
 Numbers are the *measured* output of each command on this branch — update them
@@ -36,12 +43,12 @@ when the corpus changes, don't carry stale values forward:
 
 - [ ] npm run lint — 0 errors, 0 warnings
 - [ ] npm run type-check — PASS
-- [ ] npm run build — SUCCESS (3,669 HTML; middleware 35.4 kB)
+- [ ] npm run build — SUCCESS (3,677 HTML; middleware 35.4 kB)
 - [ ] npm run audit:bp1 — PASS (**run after build**; 2,146 retired URLs, 0 regenerated)
 - [ ] npm run seo:audit — PASS
 - [ ] npm run audit:html — 0 fatal / 0 warnings (3,669 pages)
-- [ ] npm run audit:links — 277,711 rendered + 53 source links, 0 broken
-- [ ] npm run audit:seo-head — PASS (3,666 self-canonical, 0 canonicalized, 0 dupes)
+- [ ] npm run audit:links — 278,275 rendered + 53 source links, 0 broken
+- [ ] npm run audit:seo-head — PASS (3,643 self-canonical indexable, 26 noindex incl. 23 estimate URLs, sitemap = 3,643, 0 dupes)
 - [ ] npm run audit:i18n — 1,104 keys × 3, 0 missing
 - [ ] npm run audit:topical-map — 29/29 services, 222 relationships
 - [ ] npm run audit:specialty-locale — 222 × MS/ZH = 444 blocks
@@ -56,6 +63,20 @@ when the corpus changes, don't carry stale values forward:
 ---
 
 ## What Is COMPLETED (Do NOT redo)
+
+### CF-4 (2026-08-29) — DONE — log in `docs/full-website-deep-audit/PART-5-AUDIT-REPORT.md` §5.5
+- 29 `/services/<svc>/cost` pages → rate-book guides: full scope table (162 rows)
+  + quote-only block (60 rows) from `SERVICE_SCOPES`, market baselines, worked
+  example, methodology ×4, measurement ×4, calculator CTA, service job process
+  (5–6 steps) + service FAQs (4–15) — all localized (costPage 25 → 61 keys ×3,
+  new `rateCopy.aircon` 7×3); words 409–702/mean 543 → 1,152–2,264/mean 1,373
+- `/estimate` + 22 generics → `noindex,follow`; sitemap −23, IndexNow −23,
+  `seo-head-audit.ts` extended; 44 ms/zh links retained by design
+- part5 `cleanText()` `&#x27;` fix → FAQ false positives 5 → 0
+- Files: cost route + `locale-service-cost-view.tsx` (rewritten),
+  `lib/location-bundles.ts` (+`ServiceCostDetail`), messages ×3, sitemap,
+  indexnow, seo-head-audit, part5-audit; regenerated `docs/audit-part5-*`,
+  `public/llms*`, `public/site-summary.json`, `docs/seo-audit-report.md`
 
 ### BP-1 phase 1 (2026-08-28) — DONE — `docs/full-website-deep-audit/BP-1-PHASE-1-REPORT.md`
 - 1,073 `/areas/<area>/<svc>/near-me` pages **deleted**; 301 → `/areas/<area>/<svc>`

@@ -4,7 +4,9 @@ import { notFound } from "next/navigation";
 import { servicesData } from "@/config/services-data";
 import { getMarketRatesForService, type MarketRateItem } from "@/config/market-rates";
 import { getArticleSchema, getFAQSchema, getOfferCatalogSchema } from "@/lib/seo";
-import { buildServiceBundle, buildServiceLinks } from "@/lib/location-bundles";
+import { SERVICE_SCOPES } from "@/lib/estimator/rate-book.generated";
+import { buildEstimateLinks } from "@/config/estimate-links";
+import { buildServiceBundle, buildServiceCostDetail, buildServiceLinks } from "@/lib/location-bundles";
 import { LocaleServiceCostView } from "@/components/sections/locale-service-cost-view";
 
 // Every valid param is enumerated in `generateStaticParams()`, so anything
@@ -28,17 +30,37 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   });
 }
 
+/**
+ * The four site-wide cost FAQs (CF-4). The same Q&As are shipped to the
+ * client as localized `costPage.faqs` message keys; this EN array exists
+ * because the FAQPage markup on the canonical URL must match the
+ * server-rendered English HTML 1:1 (P5-02). Keep both in sync.
+ */
+const COST_FAQS_EN = [
+  { q: "What is the starting price for {name}?", a: "{name} starts from {startPrice}. Final cost depends on dimensions, access, materials, and actual site condition." },
+  { q: "Are your prices fair for KL & Selangor?", a: "Yes. KL Servis Rumah prices are the fair Klang Valley standard: not inflated, not underpriced, and confirmed before work starts." },
+  { q: "Can I get a quote from photos?", a: "For many small jobs, clear photos and measurements help us estimate. Complex leaks, ceilings, and exterior access may need inspection." },
+  { q: "Do you charge hidden fees?", a: "No. Additional scope is explained and approved before proceeding." }
+];
+
 export default async function CostPage(props: { params: Promise<{ slug: string }> }) {
   const { slug } = await props.params;
   const service = servicesData[slug];
   if (!service) notFound();
   const rates = getMarketRatesForService(slug as MarketRateItem["serviceSlug"]);
+  // Schema (canonical EN HTML): site-wide FAQ templates + this service's own
+  // published FAQs. Both are rendered visibly by the client view, so the
+  // marked-up Q&As always exist in the server-rendered document.
   const faqs = [
-    { q: `What is the starting price for ${service.title}?`, a: `${service.title} starts from ${service.startPrice}. Final cost depends on dimensions, access, materials, and actual site condition.` },
-    { q: "Are your prices fair for KL & Selangor?", a: "Yes. KL Servis Rumah prices are the fair Klang Valley standard: not inflated, not underpriced, and confirmed before work starts." },
-    { q: "Can I get a quote from photos?", a: "For many small jobs, clear photos and measurements help us estimate. Complex leaks, ceilings, and exterior access may need inspection." },
-    { q: "Do you charge hidden fees?", a: "No. Additional scope is explained and approved before proceeding." }
+    ...COST_FAQS_EN.map((faq) => ({
+      q: faq.q.replace("{name}", service.title).replace("{startPrice}", service.startPrice),
+      a: faq.a.replace("{name}", service.title).replace("{startPrice}", service.startPrice)
+    })),
+    ...service.faqs
   ];
+  const scopeBook = SERVICE_SCOPES[slug];
+  const estimatorHref =
+    buildEstimateLinks().find((link) => link.slug === slug)?.resolvedPath ?? `/estimate/${slug}`;
 
   return (
     <>
@@ -49,9 +71,12 @@ export default async function CostPage(props: { params: Promise<{ slug: string }
       <LocaleServiceCostView
         slug={slug}
         bundle={buildServiceBundle(service)}
+        detail={buildServiceCostDetail(service)}
+        scopeBook={scopeBook}
         rates={rates}
+        startPrice={service.startPrice}
+        estimatorHref={estimatorHref}
         relatedCostGuides={buildRelatedCostBundles(service.slug)}
-        faqs={faqs}
       />
     </>
   );

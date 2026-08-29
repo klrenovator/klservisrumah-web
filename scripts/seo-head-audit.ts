@@ -8,10 +8,20 @@
 import fs from "node:fs";
 import path from "node:path";
 import sitemap from "../app/(en)/sitemap.ts";
+// CF-4: the estimator share hub + all 22 generic share pages are live but
+// NOINDEX. The gate must know them so they are not flagged as "unexpected
+// noindex" (and their absence from the sitemap is then consistent).
+import { genericEstimateSlugs, ESTIMATE_INDEX_PATH } from "../config/estimate-links.ts";
 
 const BUILD_DIR = path.join(process.cwd(), ".next", "server", "app");
 const ORIGIN = "https://www.klservisrumah.my";
-const expectedNoindex = new Set(["/_not-found", "/ms", "/zh"]);
+const expectedNoindex = new Set([
+  "/_not-found",
+  "/ms",
+  "/zh",
+  ESTIMATE_INDEX_PATH,
+  ...genericEstimateSlugs().map((slug) => `${ESTIMATE_INDEX_PATH}/${slug}`)
+]);
 
 type Page = {
   url: string;

@@ -95,6 +95,31 @@ export type ServiceBundleEntry = {
   subServices: SubServiceCopy[];
 };
 
+/**
+ * Localized deep-detail copy for `/services/<slug>/cost` (CF-4).
+ *
+ * The cost guide needs the service's own job process and service FAQs in the
+ * active language so the money page can be genuinely trilingual without
+ * duplicating the `services-data` i18n blocks. `getLocalizedService` already
+ * returns both with complete MS/ZH coverage (verified 29/29), so this is a
+ * thin per-locale projection — the SAME copy shown on the service page, on a
+ * page where the visitor is deciding whether the quoted price buys it.
+ */
+export type ServiceCostDetail = {
+  process: { step: string; title: string; desc: string }[];
+  faqs: { q: string; a: string }[];
+};
+
+export function buildServiceCostDetail(service: ServiceDetail): LocaleMap<ServiceCostDetail> {
+  return forEachLocale((locale) => {
+    const localized = getLocalizedService(service, locale);
+    return {
+      process: localized.process,
+      faqs: localized.faqs
+    };
+  });
+}
+
 export function buildServiceBundle(service: ServiceDetail): LocaleMap<ServiceBundleEntry> {
   return forEachLocale((locale) => {
     const localized = getLocalizedService(service, locale);

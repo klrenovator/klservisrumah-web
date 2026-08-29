@@ -98,6 +98,11 @@ function cleanText(html: string): string {
     .replace(/&nbsp;/g, " ")
     .replace(/&amp;/g, "&")
     .replace(/&quot;/g, '"')
+    // Rendered HTML emits apostrophes as the hex entity `&#x27;` (React
+    // escape). Without decoding it, texts like "Can't" fail to match the
+    // corpus source, producing false FAQ-mismatch positives (5 pages with
+    // faqSchemaNoVisibleMatch=True, verified → 0 after this fix).
+    .replace(/&#x27;/g, "'")
     .replace(/&#39;|&apos;/g, "'")
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">")

@@ -16,7 +16,12 @@ export const metadata = buildMetadata({
     "renovation cost calculator KL",
     "house repair estimate Malaysia",
     "instant quote KL Selangor"
-  ]
+  ],
+  // CF-4: these are the owner's WhatsApp share links, not search landing
+  // pages — index-thin duplicates of the tools. The calculators stay live
+  // and crawlable (noindex, follow) but are removed from the index; the
+  // canonical money pages are `/services/<slug>/cost`.
+  noIndex: true
 });
 
 /**

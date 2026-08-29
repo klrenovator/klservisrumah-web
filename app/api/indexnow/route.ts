@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server";
-import { buildEstimateLinks, ESTIMATE_INDEX_PATH } from "@/config/estimate-links";
 import { toolsList } from "@/config/tools-data";
 import { TOOLS_INDEX_PATH, toolLocaleUrls } from "@/config/tools-i18n";
 
@@ -20,9 +19,8 @@ const INDEXNOW_KEY = "2427f86a83154e488745beb379b3eec8";
 /**
  * The URL set to ping. Derived from the real registries (not a hand-maintained
  * list) so a new estimator or tool is submitted automatically. Redirecting
- * URLs are never submitted — IndexNow wants canonical targets only, so the
- * six `/estimate/<slug>` links that 301 to `/tools/*` are excluded by taking
- * only the generic entries, and the tools themselves are listed directly.
+ * URLs are never submitted — IndexNow wants canonical targets only — and the
+ * NOINDEX `/estimate/*` share links were removed in CF-4 (see below).
  */
 const CORE_PATHS = [
   "/",
@@ -50,14 +48,11 @@ const TOOL_PATHS = [
   })
 ];
 
-const ESTIMATE_PATHS = [
-  ESTIMATE_INDEX_PATH,
-  ...buildEstimateLinks()
-    .filter((link) => link.kind === "generic")
-    .map((link) => link.path)
-];
-
-const URL_LIST = [...CORE_PATHS, ...TOOL_PATHS, ...ESTIMATE_PATHS].map(
+// CF-4: `/estimate` + `/estimate/<slug>` are NOINDEX (owner WhatsApp share
+// links, index-thin duplicates of the tools). IndexNow must never ping a
+// URL that answers `noindex` — the canonical money pages are the
+// `/services/<slug>/cost` rate-book guides, which ship in the sitemap.
+const URL_LIST = [...CORE_PATHS, ...TOOL_PATHS].map(
   (path) => `https://${HOST}${path}`
 );
 
