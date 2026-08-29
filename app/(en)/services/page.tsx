@@ -8,6 +8,7 @@ import { WhyChooseUs } from "@/components/sections/why-choose-us";
 import { ServiceComparisonTable } from "@/components/service-comparison-table";
 import { LocaleDecisionTree } from "@/components/sections/locale-decision-tree";
 import { StatsCounter } from "@/components/content/stats-counter";
+import { SERVICE_COUNT } from "@/config/service-nav.generated";
 import { localizedServicesIndexLanguageUrls } from "@/components/sections/locale-services-index";
 
 export const metadata = buildMetadata({
@@ -48,10 +49,14 @@ export default function ServicesPage() {
       <StatsCounter
         variant="gradient"
         stats={[
-          { value: "28", label: "Expert Services", trilingualMs: "Perkhidmatan Pakar", trilingualZh: "专业服务" },
+          // Count + warranty wording derived from the same registries that
+          // render the pages (P3-07): a hand-tuned "28" and a blanket
+          // "90 Days" contradicted the 29-service catalog and the per-service
+          // warranty strings printed on this very grid.
+          { value: String(SERVICE_COUNT), label: "Expert Services", trilingualMs: "Perkhidmatan Pakar", trilingualZh: "专业服务" },
           { value: "1,200+", label: "Projects Completed", trilingualMs: "Projek Siap", trilingualZh: "已完成项目" },
           { value: "4.9★", label: "Google Rating", trilingualMs: "Penilaian Google", trilingualZh: "Google 评分" },
-          { value: "90 Days", label: "Warranty Coverage", trilingualMs: "Liputan Jaminan", trilingualZh: "保修覆盖" }
+          { value: "30 Days – 10 Years", label: "Warranty Coverage (per service)", trilingualMs: "Liputan Jaminan (ikut perkhidmatan)", trilingualZh: "保修覆盖（按服务）" }
         ]}
       />
 

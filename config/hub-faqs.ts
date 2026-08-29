@@ -5,7 +5,7 @@ export const faqsByLang: Record<"en" | "ms" | "zh", HubFaq[]> = {
   en: [
     {
       q: "What is your starting price for your home services?",
-      a: "Our minor handyman jobs start from RM 280, basic plumbing repairs from RM 280, plaster ceiling repair from RM 180, and single room painting from RM 450. Every quote we issue is fixed and itemized before any actual work is commenced, so there are absolutely no hidden fees."
+      a: "Our minor handyman jobs start from RM 280, basic plumbing repairs from RM 280, plaster ceiling repair from RM 220, and single room painting from RM 450. Every quote we issue is fixed and itemized before any actual work is commenced, so there are absolutely no hidden fees."
     },
     {
       q: "Are you an established local company in Malaysia?",
@@ -13,7 +13,7 @@ export const faqsByLang: Record<"en" | "ms" | "zh", HubFaq[]> = {
     },
     {
       q: "Do you offer warranties on your services?",
-      a: "Absolutely! We offer up to 90 days written warranties on plaster ceilings and structural partitions, up to 5-year guarantees on full chemical waterproofing membrane works, and a 30-day warranty on plumbing joint seals and general handyman installations."
+      a: "Absolutely! We offer a written warranty on every job, per service: 30 days on plumbing joint seals and general handyman installations; 90 days on ceiling repair and structural partitions; 12 months on painting, tiling and electrical/appliance installs; up to 5 years on waterproofing membranes, flooring, epoxy and cabinetry; and up to 10 years on roof membranes and premium plaster-ceiling systems."
     },
     {
       q: "Can I get a same-day technician visit in KL or Selangor?",
@@ -27,7 +27,7 @@ export const faqsByLang: Record<"en" | "ms" | "zh", HubFaq[]> = {
   ms: [
     {
       q: "Apakah harga permulaan untuk perkhidmatan rumah anda?",
-      a: "Kerja tukang kecil kami bermula dari RM 280, pembaikan paip asas dari RM 280, pembaikan siling plaster dari RM 180, dan pengecatan satu bilik dari RM 450. Setiap sebut harga yang kami keluarkan adalah tetap dan terperinci sebelum sebarang kerja sebenar bermula, jadi tiada sebarang yuran tersembunyi."
+      a: "Kerja tukang kecil kami bermula dari RM 280, pembaikan paip asas dari RM 280, pembaikan siling plaster dari RM 220, dan pengecatan satu bilik dari RM 450. Setiap sebut harga yang kami keluarkan adalah tetap dan terperinci sebelum sebarang kerja sebenar bermula, jadi tiada sebarang yuran tersembunyi."
     },
     {
       q: "Adakah anda syarikat tempatan yang mantap di Malaysia?",
@@ -35,7 +35,7 @@ export const faqsByLang: Record<"en" | "ms" | "zh", HubFaq[]> = {
     },
     {
       q: "Adakah anda menawarkan jaminan untuk perkhidmatan anda?",
-      a: "Sudah tentu! Kami menawarkan jaminan bertulis sehingga 90 hari untuk siling plaster dan partition struktur, jaminan sehingga 5 tahun untuk kerja membran kalis air kimia penuh, dan jaminan 30 hari untuk pengedap sendi paip dan pemasangan tukang am."
+      a: "Sudah tentu! Kami menawarkan jaminan bertulis untuk setiap kerja, ikut perkhidmatan: 30 hari untuk pengedap sendi paip dan pemasangan tukang am; 90 hari untuk pembaikan siling dan partition struktur; 12 bulan untuk cat, jubin dan pemasangan elektrik/perkakas; sehingga 5 tahun untuk membran kalis air, lantai, epoksi dan kabinet; dan sehingga 10 tahun untuk membran bumbung serta sistem siling plaster perdana."
     },
     {
       q: "Bolehkah saya mendapatkan lawatan juruteknik pada hari yang sama di KL atau Selangor?",
@@ -49,7 +49,7 @@ export const faqsByLang: Record<"en" | "ms" | "zh", HubFaq[]> = {
   zh: [
     {
       q: "你们家庭服务的起价是多少？",
-      a: "我们的小型维修工作从 RM 280 起，基础水管维修从 RM 280 起，石膏天花板维修从 RM 180 起，单间房油漆从 RM 450 起。我们提供的每份报价在实际施工前都是固定且逐项列明的，因此绝无任何隐藏费用。"
+      a: "我们的小型维修工作从 RM 280 起，基础水管维修从 RM 280 起，石膏天花板维修从 RM 220 起，单间房油漆从 RM 450 起。我们提供的每份报价在实际施工前都是固定且逐项列明的，因此绝无任何隐藏费用。"
     },
     {
       q: "你们是马来西亚的正规本地公司吗？",
@@ -57,7 +57,7 @@ export const faqsByLang: Record<"en" | "ms" | "zh", HubFaq[]> = {
     },
     {
       q: "你们的服务提供保修吗？",
-      a: "当然！我们为石膏天花板和结构隔墙提供长达 90 天的书面保修，为完整的化学防水层工程提供长达 5 年的保证，并为水管接头密封与一般维修安装提供 30 天保修。"
+      a: "当然！每项工程均附按服务的书面保修：水管接头密封与一般维修安装 30 天；天花板维修与结构隔墙 90 天；油漆、瓷砖与电气/电器安装 12 个月；防水层、地板、环氧地坪与橱柜长达 5 年；屋顶防水层与优质石膏天花系统长达 10 年。"
     },
     {
       q: "我能在吉隆坡或雪兰莪获得当天技术员上门服务吗？",

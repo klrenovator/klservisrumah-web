@@ -382,6 +382,10 @@ export const serviceNavBySlug: Record<string, ServiceNavItem> = {
   }
 };
 export const serviceNavList = Object.values(serviceNavBySlug);
+// Number of services in the registry — the ONLY source for "N+ services" copy
+// (homepage FAQ, smart finder, /services hub). Regenerated on every prebuild,
+// so a new service can never re-create the 28+/29 drift (P3-07).
+export const SERVICE_COUNT = 29;
 export function getLocalizedServiceNav(item: ServiceNavItem, locale: "en" | "ms" | "zh") {
   return locale === "en" ? item : { ...item, title: item.i18n[locale].title };
 }

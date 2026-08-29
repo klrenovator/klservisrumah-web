@@ -280,7 +280,7 @@ export function ServiceDetailContent({ service }: ServiceDetailContentProps) {
               {t("serviceContent.trustSub", { nameLower: service.title.toLowerCase() })}
             </p>
             <div className="mt-6 flex justify-center">
-              <TrustBadgesRow variant="light" />
+              <TrustBadgesRow variant="light" warrantyText={service.warranty} />
             </div>
           </div>
         </div>

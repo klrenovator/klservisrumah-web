@@ -92,7 +92,7 @@
         },
         "warranty": {
           "title": "Real workmanship warranty",
-          "desc": "Up to 90 days of warranty on handyman work and longer warranties on painting, plumbing, and waterproofing."
+          "desc": "Every job carries a written warranty recorded on your invoice — from 30 days on handyman and plumbing repairs, 12 months on painting and installations, up to 5 years on waterproofing and flooring, and 10 years on roof and premium plaster-ceiling systems."
         },
         "verified": {
           "title": "Verified, background-checked pros",
@@ -129,7 +129,7 @@
         },
         "5": {
           "title": "Warranty & Sign-Off",
-          "desc": "We perform final stress tests (leak checks / level checks). You review, sign off, and unlock a 30-to-90 days written warranty."
+          "desc": "We perform final stress tests (leak checks / level checks). You review, sign off, and unlock a written warranty — 30 days to 10 years, per service."
         }
       }
     },
@@ -640,7 +640,7 @@
     "priceFirst": "Price Confirmed First",
     "google": "4.9 / 5 Google",
     "sameDay": "Same-Day Available",
-    "warranty": "Up to 90-Day Warranty"
+    "warranty": "Written warranty, 30 days to 10 years (per service)"
   },
   "serviceDetail": {
     "bookWhatsApp": "Book via WhatsApp",
@@ -797,7 +797,7 @@
     "safetyInsured": "Fully insured local operations",
     "safetyBoundaries": "Clear, agreed work boundaries",
     "safetyQuotes": "100% itemized fixed quotes before work",
-    "safetyWarranty": "Up to 90 days solid warranties",
+    "safetyWarranty": "Written warranty on every job — 30 days to 10 years, by service",
     "callSupport": "Call Support {phone}",
     "areaFaqs": "{area} Local FAQs",
     "coverageAreas": "Coverage Areas",
@@ -1543,7 +1543,7 @@
     "hiddenFeesOurs": "Zero hidden fees. Materials, transport & labour included in the starting price.",
     "hiddenFeesTheirs": "Transport fee, service charge, weekend surcharge — all added after arrival.",
     "warranty": "Workmanship Warranty",
-    "warrantyOurs": "Up to 90 days written warranty on handyman work, longer on painting & waterproofing.",
+    "warrantyOurs": "Written warranty recorded per service — from 30 days on handyman & plumbing repairs up to 10 years on roof and premium plaster-ceiling systems.",
     "warrantyTheirs": "Most offer no warranty. If they do, it's verbal only — no written guarantee.",
     "registration": "Business Registration",
     "registrationOurs": "SSM registered. Legitimate Malaysian business with a track record.",

@@ -33,7 +33,7 @@ import {
 const HOMEPAGE_FAQS = [
   {
     q: "How much do home services cost in KL & Selangor?",
-    a: "KL Servis Rumah pricing is transparent and fixed upfront. Handyman jobs start at RM 280, plumbing repairs from RM 280, plaster ceiling repair from RM 180, single-room painting from RM 450, PU grouting waterproofing from RM 300 and full-house renovation from RM 22,000. Every quote is fixed and itemised before work begins — no hidden fees, no surprise charges."
+    a: `KL Servis Rumah pricing is transparent and fixed upfront. Handyman jobs start at ${servicesData.handyman.startPrice}, plumbing repairs from ${servicesData.plumbing.startPrice}, plaster ceiling repair from ${servicesData.ceiling.startPrice}, single-room interior painting from ${servicesData.painting.startPrice}, PU grouting waterproofing from ${servicesData.waterproofing.startPrice} and full-house renovation from ${servicesData["house-renovation"].startPrice}. Every quote is fixed and itemised before work begins — no hidden fees, no surprise charges.`
   },
   {
     q: "Do you offer same-day home service in Kuala Lumpur?",
@@ -41,7 +41,7 @@ const HOMEPAGE_FAQS = [
   },
   {
     q: "Which home services does KL Servis Rumah provide?",
-    a: "We provide 28+ residential and light-commercial services across Klang Valley: interior/exterior painting, plumbing leak repair, plaster ceiling & gypsum partitions, PU-grouting waterproofing, handyman work, electrical wiring, water-heater install, ceiling fans, downlights, tiling, vinyl/SPC flooring, epoxy flooring, roof repair, kitchen cabinet, carpentry, door & lock repair, glass & aluminium, CCTV, auto gate, welding and full house renovation."
+    a: `We provide ${Object.keys(servicesData).length}+ residential and light-commercial services across Klang Valley: interior/exterior painting, plumbing leak repair, plaster ceiling & gypsum partitions, PU-grouting waterproofing, handyman work, electrical wiring, water-heater install, ceiling fans, downlights, tiling, vinyl/SPC flooring, epoxy flooring, roof repair, kitchen cabinet, carpentry, door & lock repair, glass & aluminium, CCTV, auto gate, welding and full house renovation.`
   },
   {
     q: "Are your tradesmen insured and background-verified?",
@@ -49,7 +49,7 @@ const HOMEPAGE_FAQS = [
   },
   {
     q: "What warranty does KL Servis Rumah give?",
-    a: "Written warranties: 30 days on handyman installations & plumbing joints, 60–90 days on plaster ceiling and gypsum partitions, up to 12 months on electrical, water heater, ceiling fan and lighting installs, and up to 5 years on full chemical waterproofing membrane works. All warranties are recorded on your official invoice."
+    a: "Every warranty is written and recorded on your official invoice, per service: 30 days on handyman work and plumbing joint seals; 90 days on plaster ceiling and gypsum partitions; 12 months on painting, tiling, skim coat, doors, windows, CCTV, auto-gates, welding, renovation trades and electrical/appliance installs; up to 5 years on waterproofing membranes, flooring, epoxy and cabinetry; and up to 10 years on roof membranes and premium plaster-ceiling systems."
   },
   {
     q: "Which areas in KL & Selangor do you cover?",
