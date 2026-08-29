@@ -1317,6 +1317,8 @@
     "costCrumb": "Cost",
     "badge": "2026 pricing guide",
     "h1": "How much does {name} cost in KL & Selangor?",
+    "metaTitle": "{name} Cost in KL & Selangor — 2026 Pricing Guide",
+    "metaDesc": "How much does {name} cost in KL & Selangor? Review published price ranges, cost factors, examples and WhatsApp quote options.",
     "directAnswer": {
       "question": "How much does {name} cost in KL & Selangor?",
       "answer": "{name} in KL & Selangor starts from {startPrice}; the {scopeCount} published rates below are priced {unitBasis}. Every figure is confirmed in writing before work starts, while access, materials and site condition move the final number — run the {name} estimator for an instant ballpark, then send photos and measurements for a fixed written quote.",

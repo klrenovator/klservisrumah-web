@@ -3,6 +3,7 @@ import { SUPPORTED_LOCALES } from "@/lib/i18n";
 import type { AreaDetail } from "@/config/area-data";
 import type { SuburbDetail } from "@/config/suburb-data";
 import type { ServiceDetail } from "@/config/services-data";
+import { servicesData } from "@/config/services-data";
 import { getLocalizedArea, getLocalizedSuburb } from "@/lib/location-i18n";
 import { getLocalizedService } from "@/lib/service-i18n";
 import { localizeAreaDescription } from "@/lib/area-body-i18n";
@@ -143,6 +144,39 @@ export function buildAreaServicePairBundle(area: AreaDetail, service: ServiceDet
 
 export function buildSuburbServicePairBundle(suburb: SuburbDetail, service: ServiceDetail): LocaleMap<LocationPairBundleEntry> {
   return forEachLocale((locale) => buildSuburbServicePairCopy(suburb, service, locale));
+}
+
+/**
+ * Slim related-cost-guide entries for the circular inlink grid at the foot of
+ * every `/services/<slug>/cost` page (EN and the MS/ZH server routes).
+ *
+ * Circular selection gives every cost guide the same six sibling inlinks —
+ * the same pattern the emergency pages use, so no cost page depends on one
+ * neighbour. The entries deliberately carry no `href`: the href differs per
+ * locale tree (`/services/<slug>/cost` vs `/ms/services/<slug>/cost`), and the
+ * rendering body composes it from the active locale prefix, so the browser
+ * never needs to know where a sibling lives in a different tree.
+ *
+ * This module is a server-side builder (it reads the service registry); the
+ * client views import only its TYPES, which erase before bundling — the same
+ * contract as every other bundle in this file.
+ */
+export type RelatedCostGuideEntry = {
+  slug: string;
+  titles: LocaleMap<string>;
+};
+
+export function buildRelatedCostGuideEntries(serviceSlug: string): RelatedCostGuideEntry[] {
+  const allServices = Object.values(servicesData);
+  const currentIndex = allServices.findIndex((service) => service.slug === serviceSlug);
+
+  return Array.from({ length: Math.min(6, allServices.length - 1) }, (_, offset) => {
+    const related = allServices[(currentIndex + offset + 1) % allServices.length];
+    return {
+      slug: related.slug,
+      titles: forEachLocale((locale) => getLocalizedService(related, locale).title)
+    };
+  });
 }
 
 /** Compact localized title/tagline pairs used by internal link grids. */

@@ -1317,6 +1317,8 @@
     "costCrumb": "Kos",
     "badge": "Panduan harga 2026",
     "h1": "Berapakah kos {name} di KL & Selangor?",
+    "metaTitle": "{name} — Harga di KL & Selangor (2026)",
+    "metaDesc": "Berapakah kos {name} di KL & Selangor? Lihat julat harga tersiar, faktor kos, contoh kerja dan pilihan sebut harga WhatsApp.",
     "directAnswer": {
       "question": "Berapakah kos {name} di KL & Selangor?",
       "answer": "{name} di KL & Selangor bermula dari {startPrice}; {scopeCount} kadar tersiar di bawah dikira mengikut {unitBasis}. Setiap angka disahkan secara bertulis sebelum kerja bermula, manakala akses, bahan serta keadaan tapak menentukan jumlah akhir — buka penganggar {name} untuk anggaran segera, kemudian hantar gambar dan ukuran untuk sebut harga tetap bertulis.",

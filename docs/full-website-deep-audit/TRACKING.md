@@ -78,6 +78,7 @@
 | 2026-08-29 | **Fix Wave 11** — P3-12 phase 1: MS/ZH server routes for all 215 kept pod details + 10 hubs via the `locale-content-router.tsx` factory (40 thin route stubs), each self-canonical with full EN/MS/ZH/x-default hreflang, localized OG/`lang` and schema matching the rendered FAQs; 6 duplicate localized descriptions disambiguated; +450 localized URLs; indexable = sitemap = 4,054 parity. All gates PASS | ✅ See `FIX-WAVE-11-REPORT.md` |
 | 2026-08-29 | **Fix Wave 12** — P3-04: literal "How much does {svc} cost in KL & Selangor?" DirectAnswer card on all 29 `/services/<svc>/cost` pages (question H2 + 2–3 sentence answer citing the published price **with units** + rate-book-derived pricing basis + estimator link, EN/BM/中文) built by the new pure `lib/cost-direct-answer.ts`, which also feeds the first `FAQPage` Question so schema and HTML cannot drift; new prebuild gate `audit:cost-direct-answer` (87 cards = 29 × 3; negative-tested 3 ways). Also closed P3-05: verified all four recorded AI-surface leaks already fixed, then fixed the two it missed — 28/29 service hubs printed "from **rm** 14 / sq ft" inside the DirectAnswer (`lowerFirstSentence()`) — and added a case-sensitive `lowercase-currency` check to `audit:html` (28 fatals pre-fix → none post-fix). Fixed the stale `part3-aeo-audit` `contentText()` (text-after-`</footer>` → document body) which had silently zeroed every readability/DirectAnswer/NAP signal since Wave 2. Corpus: `/services/<svc>/cost` **qa 0% → 100%**, "how much" H2 0 → 29/29, faqSchemaNoVisibleMatch 0, BM/中文 leaks 0/0. All gates PASS: lint 0/0, type-check, prebuild **320,291 × 0 failures**, build SUCCESS (4,080 HTML), audit:html none/none, audit:links 308,753+56 → 0 broken, audit:seo-head (4,054 = 4,054), schema-size, bp1 (NAP-in-content 62.3%), location-similarity, meta, seo:audit, part5 (0 JSON-LD errors) | ✅ DONE — **PR #189**, CI green (QA job 3m21s: gates/types/lint/SSG build/audits) — See `FIX-WAVE-12-REPORT.md` |
 | 2026-08-29 | **Fix Wave 13** — owner request: awning start-from prices + market-rate verification. `awning-installation` (the last "On Quote" service) now publishes **RM 380** start + 9 priced scopes (car porch **From RM 1,800**, polycarbonate **RM 25/sq ft**, metal deck **RM 18/sq ft**, ACP **RM 30/sq ft**, glass **RM 60/sq ft**, canvas **RM 20/sq ft**, balcony/window **From RM 380**, repair **From RM 280**, roller blinds **RM 15/sq ft**) — every figure inside fresh 2026 KL/Selangor competitor bands (research: `PRICE-MARKET-RESEARCH-2026-08-29.md`). All 29 services' start prices re-verified vs market — no other change needed. Copy updated EN/BM/中文: tagline/description/highlights/first-FAQ/meta/aio + guide `quoteIntro` ×3 ("we do not publish a starting price" → published-minimums wording) + 9 BM/ZH specialty pages + 3 blog posts ×3 locales. Regenerated: rate book (awning = 9 scopes), **new generic estimator + `/estimate/awning-installation`** (noindex; 23rd direct estimator), llms.txt "from RM 380" (29/29 services priced), schema lowPrice/UnitPriceSpecification, cost DirectAnswer "starts from RM 380; the 9 published rates below are priced per job, per sq ft". Guardrail documented: identical shared pricing copy pushed awning area pairs to 70.4% > 70% location-similarity budget → enumerations kept to service/cost pages only → 69.4% PASS. All gates PASS: prebuild **329,897 × 0**, type-check, lint 0/0, build **4,081 HTML**, audit:html none/none, audit:links 308,822+56 → 0, seo-head 4,054 parity, schema-size, bp1 (NAP 62.2%), location-similarity 69.4%, meta, seo:audit, part5 0 errors; corpus cost qa=100%, BM/ZH leaks 0/0 | ✅ DONE — See `FIX-WAVE-13-REPORT.md` |
+| 2026-08-29 | **Fix Wave 14** — **P3-12 phase 3**: real MS/ZH **server routes** for the 29 cost money pages — the last un-localized surface on the site. Whole cost-guide body extracted into a shared server-compatible `CostPageBody` (locale + `t` as props; internal links composed per tree) used by BOTH the EN client view and the new `LocaleServiceCostPage` server component; new thin route stubs `app/(ms|zh)/…/services/[slug]/cost/page.tsx` (`dynamicParams = false`, 29 static params, true 404 otherwise, self-canonical + full EN/MS/ZH/x-default hreflang, `ogLocale` ms_MY/zh_MY, raster `cost` OG template, localized meta via new `costPage.metaTitle`/`metaDesc` keys ×3). +58 indexable pages (sitemap parity 4,054 → **4,112**); EN cost route's hreflang upgraded from self-referencing to the genuine three-URL cluster; EN route's drifted `COST_FAQS_EN` schema array replaced by the shared `buildCostPageFaqs`/`buildCostPageSiteFaqs` pure builders (P5-02 class drift fixed — 3 of 4 site-wide answers had diverged from the rendered copy; EN SERP strings byte-identical). MS/ZH FAQ 0 now interpolates the localized unit-carrying start price (`kaki persegi` / `平方呎` — P3-05). `buildRelatedCostGuideEntries` moved to `lib/location-bundles.ts` (slim slug+titles; body composes per-tree hrefs). MS/ZH service heroes gained the P4-16 cost-guide button pointing at the localized twin (+58 inbounds). Verified 58/58: html lang, self-canonical, 4-URL hreflang, first-FAQ = rendered H2, **every** marked-up Q&A verbatim in visible HTML, in-language DirectAnswer. All gates PASS: prebuild **329,897 × 0**, type-check, lint 0/0, build **4,139 HTML**, audit:html none/none, audit:links 312,732+56 → 0 broken, seo-head **4,112 = 4,112** (0 dup titles/descs, 0 warnings), schema-size (max non-FAQ 7.1 KB), bp1, raster-og (cost template 174), location-similarity 69.4%, meta, seo:audit (4,139 checked), part5 0 JSON-LD errors, part3 corpus 4,139 pages with BM/ZH leaks 0/0 | ✅ DONE — See `FIX-WAVE-14-REPORT.md` |
 
 ---
 
@@ -106,27 +107,47 @@
 
 ## ⭐ NEXT SESSION MUST CONTINUE HERE
 
-**All 5 audit parts are complete; Fix Wave 1–13, BP-1 phase 1 and CF-4 are
+**All 5 audit parts are complete; Fix Wave 1–14, BP-1 phase 1 and CF-4 are
 complete.** Wave 9 closed the unblocked CRO/UX queue, Wave 10 the
 §5.6/AEO/OG/NAP queue, Wave 11 closed P3-12 phase 1 (MS/ZH pod routes), Wave 12
-closed P3-04/P3-05 (the last unblocked **P1**s), and **Wave 13 (2026-08-29)
-closed the owner's pricing request**: `awning-installation` — the last
-"On Quote" service — now publishes **RM 380** as its starting price plus nine
-priced scopes (From RM 1,800 car porch; RM 18/25/30/60 per sq ft for metal
-deck / polycarbonate / ACP / glass; RM 20/sq ft canvas; From RM 380
-balcony-window; From RM 280 repair; RM 15/sq ft roller blinds), every figure
-set from fresh 2026 KL/Selangor competitor and market-rate research
-(`PRICE-MARKET-RESEARCH-2026-08-29.md`). All 29 services' start prices were
-re-verified against the market and needed no other change. The price change
-regenerated the rate book (awning = 9 estimator scopes), added the 23rd
-generic estimator + `/estimate/awning-installation` (noindex), and priced the
-AI surfaces (llms.txt 29/29, schema `lowPrice: 380`). **All 29 of 29 services
-now publish start-from prices.** See `FIX-WAVE-13-REPORT.md`.
+closed P3-04/P3-05 (the last unblocked **P1**s), Wave 13 (2026-08-29) closed
+the owner's pricing request (`awning-installation` now publishes **RM 380** +
+9 priced scopes; **all 29 of 29 services publish start-from prices**), and
+**Wave 14 (2026-08-29) closed P3-12 phase 3**: the 29 `/services/<slug>/cost`
+money pages — the site's highest-intent "how much" URLs and the last
+un-localized surface — now have **real MS/ZH server routes**
+(`/ms/services/<slug>/cost` + `/zh/services/<slug>/cost`, +58 indexable pages,
+sitemap parity **4,112**), genuine three-URL hreflang clusters on all three
+trees, a shared server-compatible `CostPageBody` (one body for the EN client
+view and both localized server routes), localized DirectAnswer + FAQPage
+markup byte-identical to the rendered HTML (58/58 verified), localized
+unit-carrying start prices in BM/中文 FAQ 0, and localized cost-guide links in
+the MS/ZH service heroes. Along the way the EN cost route's drifted
+`COST_FAQS_EN` schema array was replaced by the shared pure builders (3 of 4
+site-wide FAQ answers had diverged from the rendered copy; EN SERP strings
+unchanged). See `FIX-WAVE-14-REPORT.md`.
 
-**With Wave 13 done, no P0 or P1 audit finding remains unblocked.** Everything
+**With Wave 14 done, no P0 or P1 audit finding remains unblocked, and no
+major content surface is left without a real localized URL.** Everything
 left is owner-blocked, needs owner data/access, or is a P2/P3 enhancement.
 
-0. **What Wave 13 changed (2026-08-29):** prices + pricing copy in
+0. **What Wave 14 changed (2026-08-29):** new
+   `components/sections/locale-service-cost-body.tsx` (shared,
+   server-compatible body — `locale` + `t` as props, per-tree link prefix),
+   new `components/sections/locale-service-cost-page.tsx` (`LocaleServiceCostPage`
+   server component + `buildServiceCostPageData()` + `SERVICE_COST_LOCALE_PATHS`
+   + `localizedServiceCostLanguageUrls()`), new route stubs
+   `app/(ms|zh)/…/services/[slug]/cost/page.tsx`, slimmed
+   `components/sections/locale-service-cost-view.tsx` to a client wrapper,
+   `buildCostPageSiteFaqs`/`buildCostPageFaqs` in `lib/cost-direct-answer.ts`,
+   `buildRelatedCostGuideEntries` in `lib/location-bundles.ts`, localized
+   cost-guide button in the `LocaleServicePage` hero, `costPage.metaTitle`/
+   `metaDesc` ×3 locales, sitemap +58 entries with the 3-URL cluster.
+   Architecture note for future waves: the cost body takes `locale`/`t` as
+   props — if another template family needs the same "one body, three trees"
+   treatment, follow that pattern (never read the language context in a body
+   that must also render on a localized server route).
+1. **What Wave 13 changed (2026-08-29):** prices + pricing copy in
    `config/services-data.ts` (awning EN/BM/中文), 9 BM/ZH specialty pages in
    `config/specialty-locale-content.ts`, 3 awning blog posts ×3 locales
    (`config/blog-data-awning.ts` + `config/blog-i18n.ts`). Guardrail learned:
@@ -135,7 +156,7 @@ left is owner-blocked, needs owner data/access, or is a P2/P3 enhancement.
    location-similarity gate (<70% budget) — keep detailed rate lists on the
    service/cost pages (price table, FAQ, guide) and headline figures only in
    area-shared fields; awning area pairs now sit at 69.4%. Watch it.
-1. **What Wave 12 changed (2026-08-29):** new `lib/cost-direct-answer.ts` (pure
+2. **What Wave 12 changed (2026-08-29):** new `lib/cost-direct-answer.ts` (pure
    builder, shared by the client view and the server route so schema and HTML
    cannot drift), 8 new `costPage.directAnswer.*` keys × 3 locales, an optional
    `actions[]` row on `components/content/direct-answer.tsx`, the new prebuild
@@ -147,7 +168,7 @@ left is owner-blocked, needs owner data/access, or is a P2/P3 enhancement.
    audit:links 308,753+56 → 0 broken, audit:seo-head (4,054 indexable = 4,054
    sitemap), schema-size, bp1 (NAP-in-content 62.3%), location-similarity,
    meta, seo:audit, part5 (0 JSON-LD errors).
-2. **⚠️ Audit-tooling warning (read before quoting any Part 3 number):**
+3. **⚠️ Audit-tooling warning (read before quoting any Part 3 number):**
    `part3-aeo-audit.ts#contentText()` used to slice the text **after the last
    `</footer>`** — correct only for the pre-Wave-2 layout. Every re-run between
    Wave 2 and Wave 12 therefore reported `words=8`, `qa=0%`, `nap=0%` and
@@ -157,16 +178,16 @@ left is owner-blocked, needs owner data/access, or is a P2/P3 enhancement.
    `pctQuestionH2`, `pctFaqSchema` and the leak counts were always raw-HTML
    regexes and remain comparable. If another corpus analyzer shows a suspiciously
    uniform `words=8`, suspect the same stale-slice bug.
-3. **P2-16 tranche 3 (optional, needs demand data):** the remaining 44
+4. **P2-16 tranche 3 (optional, needs demand data):** the remaining 44
    problems — next thinnest: `vinyl-flooring-lifting-edges` (166),
    `wall-dampness-rising` (167), `autogate-remote-not-working` (167),
    `ceiling-mold-stains` (168), `rccb-tripping-kl` (168). Owner GSC data
    would re-rank this list; without it, use `scripts/p2-16-wordcount.ts`
    thinness order.
-4. **P2-22 (owner decision):** add outbound citations to brands/authorities.
-5. **BP-1 phase 2 / P2-C4 still blocked on owner GSC keep-set** — do **not**
+5. **P2-22 (owner decision):** add outbound citations to brands/authorities.
+6. **BP-1 phase 2 / P2-C4 still blocked on owner GSC keep-set** — do **not**
    add more location pages; do **not** delete local pages on low traffic alone.
-6. **CI patch — status corrected this session.** `TRACKING.md` previously said
+7. **CI patch — status corrected this session.** `TRACKING.md` previously said
    the BP-1 CI patch was "APPLIED in-tree (uncommitted)". Verified on a clean
    checkout at `6195245`: **`.github/workflows/ci.yml` is unmodified** and runs
    `prebuild → type-check → lint → build → audit:links → audit:html → seo:audit
@@ -183,20 +204,19 @@ left is owner-blocked, needs owner data/access, or is a P2/P3 enhancement.
 8. **Still-missing access (re-request from owner):** GSC, live HTTP/edge check,
    CWV/CrUX, GBP + review verification, owner fact confirmations (reviews,
    founding year, staff, stats), photography (P5-12).
-9. **Next code-level candidates (P2/P3, unblocked) — value order:**
-   **P3-12 phase 3** — MS/ZH **server routes** for `/services/<svc>/cost` (the
-   29 money pages are still one EN URL client-localized by the toggle;
-   `app/(ms|zh)/…/services/[slug]/` ships only `page.tsx` + `[subservice]`, so
-   Wave 11's `locale-content-router` pattern is the obvious vehicle);
-   **P2-16 tranche 3** (remaining 44 problems); **P3-12 phase 2** (native MS/ZH
-   translation of the 146 authored per-pod FAQ sets — natural translation, no
-   MT); **§5.4-B1** BM commercial tree; **P4-10** case-study pages;
-   **P4-14** per-area `Service` entities; **P4-08** CTA wording; **P4-16**
-   footer link tiering; **P3-15/P3-16** SearchAction vs `/search` + news-sitemap
-   freshness; **P3-19** expand `aeo-faq.txt`. **P2-22** outbound citations is an
-   owner decision. **P4-11 named team page** needs owner bios. **P4-13 / P2-C4 /
-   BP-1 phase 2** stay blocked on the owner GSC keep-set.
-10. **Standing "do not" list:** do **not** add more location pages; do **not**
+10. **Next code-level candidates (P2/P3, unblocked) — value order:**
+   **P3-12 phase 2** — native MS/ZH **translation** of the 146 authored
+   per-pod FAQ sets (natural translation, no MT; the pod DETAIL routes from
+   Wave 11 already render them, and Wave 14's `CostPageBody`/`getServerTranslator`
+   pattern is the reference for keeping schema + HTML in lock-step);
+   **P2-16 tranche 3** (remaining 44 problems); **§5.4-B1** BM commercial tree;
+   **P4-10** case-study pages; **P4-14** per-area `Service` entities; **P4-08**
+   CTA wording; **P4-16** footer link tiering; **P3-15/P3-16** SearchAction vs
+   `/search` + news-sitemap freshness; **P3-19** expand `aeo-faq.txt`.
+   **P2-22** outbound citations is an owner decision. **P4-11 named team page**
+   needs owner bios. **P4-13 / P2-C4 / BP-1 phase 2** stay blocked on the
+   owner GSC keep-set.
+11. **Standing "do not" list:** do **not** add more location pages; do **not**
     re-add `app/(en|ms|zh)/loading.tsx`; do **not** delete local pages on low
     traffic alone; do **not** retry the CI patch push without `workflows`
     permission; do **not** weaken the estimator trilingual-parity asserts to
@@ -248,7 +268,7 @@ left is owner-blocked, needs owner data/access, or is a P2/P3 enhancement.
 | P1 | P3-18 — llms.txt: list all 29 services (aircon missing) with units; link aeo-faq.txt | ✅ DONE (Fix Wave 10 — 29 service lines with units + aeo-faq.txt link; robots.ts + DuckAssistBot/Applebot-Extended) |
 | P1 | P3-09 — Owner verification of stats/claims (1,200+, 15+ Pros, 120+/120, 30–60 min, "written by local tradesmen") | ⏳ PENDING (owner) |
 | P2 | P3-06 — Blog: FAQPage schema + promote top FAQ to question H2 (216 posts) | ✅ DONE (Fix Wave 10 — 193 EN + 192 MS + 192 ZH blog posts emit FAQPage JSON-LD; top FAQ promoted to H2) |
-| P2 | P3-12 — MS/ZH routes for kept pods (215 details + 10 hubs × 2 locales; i18n data already exists) | ✅ DONE (Fix Wave 11 — localized server routes via `locale-content-router.tsx` factory: 215 details + 10 hubs under `/ms/<family>` + `/zh/<family>`, self-canonical + full EN/MS/ZH/x-default hreflang clusters, localized OG/`lang`, schema matching rendered FAQs; 6 duplicate localized descriptions disambiguated; indexable=sitemap 4,054 parity, all gates PASS. **Phase 2 follow-up:** native MS/ZH translation of 146 authored per-pod FAQ sets — no MT — stays ⏳ P2) |
+| P2 | P3-12 — MS/ZH routes for kept pods (215 details + 10 hubs × 2 locales; i18n data already exists) | ✅ DONE (Fix Wave 11 — localized server routes via `locale-content-router.tsx` factory: 215 details + 10 hubs under `/ms/<family>` + `/zh/<family>`, self-canonical + full EN/MS/ZH/x-default hreflang clusters, localized OG/`lang`, schema matching rendered FAQs; 6 duplicate localized descriptions disambiguated; indexable=sitemap 4,054 parity, all gates PASS). **Phase 3 — 29 `/services/<svc>/cost` money pages ✅ DONE (Fix Wave 14):** shared server-compatible `CostPageBody` + `LocaleServiceCostPage` server component, real `/ms/services/<slug>/cost` + `/zh/services/<slug>/cost` routes (29×2 = +58 indexable), genuine three-URL hreflang clusters on all three trees, localized DirectAnswer/FAQ schema byte-identical to rendered HTML (verified 58/58), localized units in FAQ 0, MS/ZH service heroes now link the localized cost guide (P4-16), EN cost schema's drifted FAQ array fixed to the dictionary keys; indexable=sitemap **4,112** parity, all gates PASS. **Phase 2 follow-up:** native MS/ZH translation of 146 authored per-pod FAQ sets — no MT — stays ⏳ P2) |
 | P2 | P3-15/P3-16/P3-17 — SearchAction vs /search; news-sitemap freshness; Applebot-Extended/DuckAssistBot | 🟡 PARTIAL (Fix Wave 10 — Applebot-Extended/DuckAssistBot done in robots.ts; SearchAction vs /search + news-sitemap still ⏳) |
 | P2 | P3-10/P3-19/P3-13 — NAP in content block; link+expand aeo-faq.txt; hidden empty-state text | ✅ DONE (Fix Wave 10 — NAP strip = P4-15; llms.txt links aeo-faq.txt = P3-18; empty-state removed = P3-02. aeo-faq.txt expansion stays P2 with content work) |
 

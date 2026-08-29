@@ -139,9 +139,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // The main service page is the head of a REAL three-URL hreflang cluster
   // (`/services/<slug>` + `/ms/services/<slug>` + `/zh/services/<slug>`, the
   // H3 pilot) — every member carries the full cluster so the annotations
-  // resolve both ways. The /cost, /emergency and sub-service pages stay
-  // English-only and keep self-referencing hreflang.
-  const serviceRoutes: Entry[] = Object.values(servicesData).flatMap((service) => [
+  // resolve both ways. The /cost money pages join the same pattern (P3-12
+  // phase 3: real MS/ZH cost guides); only /emergency and the non-tranche
+  // sub-service pages stay English-only with self-referencing hreflang.
+  const serviceRoutes: Entry[] = Object.values(servicesData).flatMap((service) => {
+    const costLanguages = {
+      en: `/services/${service.slug}/cost`,
+      ms: `/ms/services/${service.slug}/cost`,
+      zh: `/zh/services/${service.slug}/cost`,
+    };
+    return [
     {
       path: `/services/${service.slug}`,
       priority: 0.95,
@@ -154,7 +161,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: `/ms/services/${service.slug}`, priority: 0.9, languages: { en: `/services/${service.slug}`, ms: `/ms/services/${service.slug}`, zh: `/zh/services/${service.slug}` } },
     { path: `/zh/services/${service.slug}`, priority: 0.9, languages: { en: `/services/${service.slug}`, ms: `/ms/services/${service.slug}`, zh: `/zh/services/${service.slug}` } },
     { path: `/near-me/${service.slug}`, priority: 0.86 },
-    { path: `/services/${service.slug}/cost`, priority: 0.88 },
+    { path: `/services/${service.slug}/cost`, priority: 0.88, languages: costLanguages },
+    { path: `/ms/services/${service.slug}/cost`, priority: 0.85, languages: costLanguages },
+    { path: `/zh/services/${service.slug}/cost`, priority: 0.85, languages: costLanguages },
     // P2-03: only the 12 services with real emergency semantics ship an
     // emergency page — the retired 17 are 301'd (middleware) and must not be
     // advertised in the sitemap.
@@ -189,7 +198,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { path: `/zh/services/${service.slug}/${subSlug}`, priority: 0.86, languages },
       ];
     }),
-  ]);
+    ];
+  });
 
   const clusterRoutes: Entry[] = clusterPages.map((page) => ({ path: `/services/${page.relatedServiceSlug}/${page.slug}`, priority: 0.82 }));
   // BP-1 phase 1: `/areas/<area>/<svc>/near-me` is gone. Those 1,073 URLs were

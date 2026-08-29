@@ -5,6 +5,7 @@ import {
   Award,
   CheckCircle2,
   Clock,
+  FileText,
   MessageSquare,
   Phone,
   ShieldCheck,
@@ -32,6 +33,7 @@ import { NapContactStrip } from "@/components/content/nap-contact-strip";
 import { LocaleTreeLinks } from "@/components/sections/locale-tree-links";
 import { ProcessTimeline } from "@/components/content/process-timeline";
 import { ServiceGuideSection } from "@/components/sections/service-guide-section";
+import { SERVICE_COST_LOCALE_PATHS } from "@/components/sections/locale-service-cost-page";
 
 /**
  * Fully-localised, indexable service page (`/ms/services/<slug>`,
@@ -220,6 +222,16 @@ export function LocaleServicePage({ locale, slug }: { locale: "ms" | "zh"; slug:
                   <Phone className="w-4 h-4 text-[#0EA5E9]" />
                   <span>{siteConfig.phoneDisplay}</span>
                 </a>
+                {/* Audit P4-16 (P3-12 phase 3) — link the localized cost guide
+                    from the hero so the in-language money page inherits the
+                    in-language hub's equity, mirroring the EN hero. */}
+                <Link
+                  href={SERVICE_COST_LOCALE_PATHS[locale](slug)}
+                  className="inline-flex items-center justify-center gap-2 rounded-xl border border-sky-200 bg-white px-5 py-3 text-sm font-extrabold text-[#075985] transition hover:border-[#0EA5E9] hover:bg-sky-50"
+                >
+                  <FileText className="w-4 h-4 text-[#0EA5E9]" />
+                  <span>{t("serviceDetail.fullPriceGuide")}</span>
+                </Link>
               </div>
 
               <div className="flex items-center gap-3 mt-2">
