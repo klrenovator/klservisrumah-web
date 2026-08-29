@@ -64,20 +64,44 @@
 > depth parity. All gates PASS (3,652 HTML; 320,291 assertions × 0 failures).
 > Full log: `docs/full-website-deep-audit/FIX-WAVE-6-REPORT.md`.
 >
-> **Next session starts at:** **P2-16 remainder** — extend the enrichment to the
-> rest of the top-30 problems by demand (needs GSC; else urgency-weighted
-> fallback) — or **P2-19** (real per-article blog dates + per-article sitemap
-> lastMod, fully unblocked). P2-C3 is complete (146/174 pods). **P2-C4** stays
-> tied to the BP-1 phase-2 owner/GSC keep-set decision. BP-1 phase 2 still
-> **blocked on GSC data (owner)**. Do **not** add more location pages. Do
-> **not** re-add `app/(en|ms|zh)/loading.tsx`. Do **not** delete local pages on
-> low traffic alone. Do **not** retry the CI patch push (no `workflows`
-> permission). Do **not** weaken the estimator trilingual-parity asserts to
-> accommodate new copy — supply the translations instead.
-
-**Branch:** arena/01a04c6b-klservisrumah-web (this session branch — push PRs from here)
-**Last completed session:** 2026-08-29 — Fix Wave 6 ✅ (P2-17/03: emergency
-pages rewritten/retired; P2-16 tranche 1: 15 thinnest problems enriched EN/MS/ZH)
+> **Fix Wave 7 COMPLETE (2026-08-29):** **P2-16 ✅** — tranche 2 finished the
+> audit's top-30 depth target. The next 15 thinnest problems were enriched
+> (`rusting-window-grille`, `loose-door-hinge`, `stuck-window-lock`,
+> `ikea-furniture-assembly-help`, `downlight-flickering`,
+> `sagging-plaster-ceiling`, `blocked-drain-toilet`, `ceiling-leak-after-rain`,
+> `roof-leak-rainy-season`, `swimming-pool-leak-balcony`,
+> `wardrobe-door-jamming`, `cracked-ceiling-joints`, `locked-out-of-house`,
+> `uneven-wall-surface-skim`, `cctv-not-recording-storage-full`) with
+> `overview` + 4 `diyChecks` + 4 `prevention` + `costDetail` hand-authored in
+> **EN + native MS + native ZH** (45 blocks; EN in `config/problem-data.ts` +
+> `config/problem-data-extra.ts`, MS/ZH in `config/problem-body-i18n.ts`).
+> English config words 2,324 → 5,730 (mean 155 → 382; +147%). New helper
+> `scripts/p2-16-wordcount.ts` ranks all 74 indexable problems by measured
+> thinness (30 enriched; next candidates: `vinyl-flooring-lifting-edges` 166,
+> `wall-dampness-rising` 167, `autogate-remote-not-working` 167,
+> `ceiling-mold-stains` 168, `rccb-tripping-kl` 168). All gates PASS: lint
+> 0/0, type-check, prebuild **320,291 assertions × 0 failures**
+> (`audit:problem-i18n`: 74 × ms/zh, 0 gaps/leaks/dupes), `npm run build`
+> SUCCESS (3,660 static; middleware 35.6 kB), audit:html 0/0, audit:links
+> 277,170+53 → 0 broken, audit:seo-head PASS. Corpus unchanged: 3,652 HTML /
+> 3,626 sitemap. Full log: `docs/full-website-deep-audit/FIX-WAVE-7-REPORT.md`.
+>
+> **Next session starts at:** **P2-19** (real per-article blog dates +
+> per-article sitemap `lastMod` — 216 posts share 5 dates; fully unblocked).
+> P2-16 is COMPLETE (30/74); tranche 3 (44 remaining problems) is optional
+> and needs owner GSC demand data to re-rank. **P2-C4** stays tied to the
+> BP-1 phase-2 owner/GSC keep-set decision. BP-1 phase 2 still **blocked on
+> GSC data (owner)**. Do **not** add more location pages. Do **not** re-add
+> `app/(en|ms|zh)/loading.tsx`. Do **not** delete local pages on low traffic
+> alone. Do **not** retry the CI patch push (no `workflows` permission). Do
+> **not** weaken the estimator trilingual-parity asserts to accommodate new
+> copy — supply the translations instead. Do **not** enrich a problem in
+> English without its native MS/ZH depth block (`audit:problem-i18n` fails
+> the build on a gap).
+>
+> **Branch:** arena/01a04c97-klservisrumah-web (this session branch — push PRs from here)
+> **Last completed session:** 2026-08-29 — Fix Wave 7 ✅ (P2-16 tranche 2: next
+> 15 thinnest problems enriched EN/MS/ZH → 30/74 problems carry full depth)
 
 **Quality gates (must all be green before any new work).**
 Numbers are the *measured* output of each command on this branch — update them

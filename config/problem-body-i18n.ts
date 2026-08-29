@@ -89,7 +89,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Apa yang perlu saya lakukan jika tandas tersumbat?",
       a: "Jangan terus siram. Gunakan plunger terlebih dahulu. Jika gagal, hubungi tukang paip dengan segera."
-    }
+    },
+    overview: "Paip tersumbat atau tandas tersumbat ialah antara panggilan paip paling biasa di rumah KL dan Selangor, dan ia biasanya berlaku perlahan-lahan — rambut, buih sabun dan gris menyempitkan paip sehingga suatu hari air berhenti mengalir. Ia menjadi mendesak apabila tersumbat di saluran utama atau tandas: air kotor tiada tempat keluar dan boleh naik semula ke tingkat terendah rumah.",
+    diyChecks: [
+      "Berhenti menggunakan sinki, bilik mandi atau tandas yang terjejas segera — setiap siraman menolak tersumbat lebih dalam",
+      "Periksa sama ada longkang lain turut perlahan — itu menunjuk ke saluran utama, bukan satu lekapan",
+      "Guna plunger dengan kedap penuh di mulut longkang; jangan campur dengan bahan kimia",
+      "Perhatikan air naik di perangkap lantai atau bau kumbahan — tanda masalah saluran utama"
+    ],
+    prevention: [
+      "Guna penapis longkang di bilik mandi dan besen untuk menangkap rambut",
+      "Jangan tuang minyak masak atau gris ke sinki — ia membeku di dalam paip",
+      "Siram hanya kertas tandas; tisu basah dan barangan sanitari punca paling biasa tandas tersumbat",
+      "Tuang air panas ke longkang setiap minggu untuk mengelak pembentukan filem sabun"
+    ],
+    costDetail: "Pembersihan lekapan ringkas dengan alat manual atau spring bermula sekitar RM150. Penanggalkan tandas, pembersihan perangkap lantai atau halangan saluran utama boleh mencecah RM500 dan ke atas. Kami sahkan kedalaman tersumbat dan kaedah sebelum mula, dan mutu kerja dilindungi jaminan standard."
   },
   "water-heater-not-working": {
     symptom: "Pemanas air tidak panas, bocor atau tidak berfungsi sama sekali.",
@@ -109,7 +123,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Bolehkah saya baiki siling kendur sendiri?",
       a: "Tidak disyorkan. Siling kendur biasanya bermakna ada masalah struktur atau kebocoran yang perlu dibaiki oleh profesional."
-    }
+    },
+    overview: "Siling plaster yang kendur ialah satu masalah siling yang tidak patut ditunggu. Papan melendut apabila direndam kebocoran, apabila gantungan dan bingkai kayu gagal, atau apabila terlebih beban — dan sebaik papan mula kendur, pemasangan sudah kehilangan cengkaman, jadi siling boleh jatuh secara tiba-tiba. Lekukan yang kelihatan biasanya lebih teruk daripada yang disangka kerana jurang udara menyembunyikan sejauh mana papan telah bergerak.",
+    diyChecks: [
+      "Jangan berdiri terus di bawah kawasan kendur dan jauhi perabot",
+      "Tekan perlahan titik terendah dengan tapak tangan — papan lembut atau span bermakna kerosakan air",
+      "Cari kesan air atau cincin gelap pada papan kendur, yang menunjuk ke kebocoran aktif",
+      "Periksa siling di atas kendur untuk kipas atau lampu berat yang ditambah kemudian"
+    ],
+    prevention: [
+      "Baiki kebocoran bumbung atau bilik mandi segera — kelembapan pembunuh utama plasterboard",
+      "Jangan gantung lekapan berat dari plasterboard tanpa sokongan bingkai yang betul",
+      "Selepas pengubahsuaian, periksa siling pada awal monsun untuk tanda kendur awal",
+      "Gunakan papan tahan lembapan di bilik mandi, dapur dan berhampiran penghawa dingin"
+    ],
+    costDetail: "Pengukuhan kawasan kendur kecil yang kering dan skim semula bermula sekitar RM180. Penggantian papan rosak air dengan bingkai logam RM600–RM1,500+ bergantung keluasan dan sama ada kerja elektrik atau cat disertakan. Kami periksa bingkai sebelum sebut harga — siling kendur dinilai mengikut struktur, bukan bilangan papan."
   },
   "ceiling-leak-after-rain": {
     symptom: "Kesan air muncul di siling selepas hujan lebat.",
@@ -119,7 +147,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Bagaimana anda tahu punca kebocoran siling?",
       a: "Kami periksa bumbung, flashing, longkang dan balkoni, kemudian gunakan ujian air untuk mengesahkan sumber."
-    }
+    },
+    overview: "Siling yang bocor hanya selepas hujan menunjuk ke sampul bangunan, bukan paip: jubin bumbung retak atau tergelincir, flashing gagal di sekeliling parapet atau cerobong, balkoni yang membiarkan air menembusi, atau retak dinding luaran yang menyalurkan hujan terus ke dalam dinding. Kesan di siling biasanya jauh dari titik masuk, kerana air bergerak di sepanjang bawah papak sebelum menitis.",
+    diyChecks: [
+      "Letak baldi di bawah titisan dan catat tempat air masuk — punca biasanya di tempat lain",
+      "Semasa hujan, perhatikan laluan titisan di siling: kesan sering mengikuti garis sambungan papak atau rasuk",
+      "Selepas hujan berhenti, periksa balkoni, parapet dan lembah bumbung terdekat untuk air bertakung atau retak",
+      "Jauhkan air dari fitting elektrik — jika bocor berhampiran lampu, matikan litar itu"
+    ],
+    prevention: [
+      "Bersihkan longkang dan periksa jubin bumbung sebelum monsun setiap tahun",
+      "Segel semula sambungan parapet dan balkoni mengikut jadual, bukan apabila kesan muncul",
+      "Baiki retak dinding luaran pada musim yang sama ia muncul",
+      "Selepas pembaikan, sahkan dengan ujian air, bukan tunggu hujan seterusnya"
+    ],
+    costDetail: "Penjejakan dan penyegelan satu titik masuk luaran bermula sekitar RM250. Kegagalan membran balkoni atau bumbung rata lebih mahal — RM1,500–RM3,500+ bergantung keluasan dan sama ada jubin diangkat. Kami sentiasa cari dan hentikan punca sebelum sebut harga kerja siling, supaya kesan tidak kembali."
   },
   "cracked-ceiling-joints": {
     symptom: "Sambungan siling plaster retak atau terbuka, terutamanya di sudut dan tepi.",
@@ -129,7 +171,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Adakah retak di sambungan siling serius?",
       a: "Biasanya tidak serius jika hanya kosmetik. Walau bagaimanapun, jika retak lebar atau berulang, ia mungkin menunjukkan pergerakan struktur."
-    }
+    },
+    overview: "Retak garis lurus di sepanjang sambungan plasterboard ialah kecacatan siling paling biasa di rumah Malaysia, dan ia biasanya isu kemasan, bukan isu struktur. Pita sambungan atau kompaun disapu terlalu nipis, bingkai bergerak sedikit apabila rumah mendap, atau kelembapan melembutkan kompaun — dan setiap cat semula yang melangkau sambungan gagal semula dalam satu musim.",
+    diyChecks: [
+      "Lari jari di sepanjang retak — jika tepi pita terangkat, sambungan tidak dilekatkan dengan betul",
+      "Periksa sama ada retak mengikut garis lurus (retak sambungan) atau melangkah merentasi papan (pergerakan bingkai)",
+      "Tekan perlahan kedua-dua belah retak — pergerakan bermakna papan tidak dipasang dengan betul",
+      "Cari lembapan atau kesan berhampiran retak, yang menunjuk ke punca air melembutkan sambungan"
+    ],
+    prevention: [
+      "Guna pita gentian kaca dan kompaun sambungan berkualiti untuk sebarang kerja siling baharu",
+      "Kekalkan kelembapan dalaman sederhana — bilik beraircond tidak boleh dibiarkan lembap lama",
+      "Periksa kebocoran bumbung atau bilik mandi apabila sambungan retak berhampiran kawasan basah",
+      "Semasa mengecat semula, rawat retak dengan betul dahulu — cat sahaja tidak pernah menyelesaikan retak sambungan"
+    ],
+    costDetail: "Pita semula satu sambungan retak dengan skim, primer dan cat bermula sekitar RM180. Berbilang sambungan atau skim semula seluruh siling RM500–RM900+; jika pergerakan papan ditemui, pengukuhan bingkai dinilai berasingan. Kami semak sama ada retak masih bergerak sebelum sebut harga supaya pembaikan tahan."
   },
   "condensation-ceiling-mold": {
     symptom: "Acuan hitam muncul di siling akibat kondensasi, terutamanya di bilik mandi atau dapur.",
@@ -173,7 +229,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Berapa lama bumbung biasanya tahan sebelum bocor?",
       a: "Bumbung genting biasanya tahan 15–25 tahun. Pemeriksaan tahunan boleh membantu mengesan masalah awal."
-    }
+    },
+    overview: "Kebocoran bumbung paling banyak muncul semasa monsun kerana itulah masa bumbung diuji — dan di Malaysia, kebanyakan bocor bermula di tepi: jubin retak atau tergelincir, longkang tersumbat yang melimpah balik ke bawah faschia, atau flashing gagal di tempat bumbung bertemu dinding, parapet atau paip aircon. Air boleh bergerak jauh di sepanjang kasau dan penebat sebelum muncul sebagai kesan siling, jadi titik titisan jarang menandakan punca sebenar.",
+    diyChecks: [
+      "Dari dalam attic, cari cahaya menembusi bumbung — itu cara terpendek mencari lubang",
+      "Selepas hujan, periksa longkang dan paip turun untuk limpahan — longkang tersumbat punca banyak 'kebocoran bumbung'",
+      "Periksa flashing di sekeliling cerobong, parapet dan penembusan paip untuk tepi terangkat atau reput",
+      "Tanda kedudukan kesan dan tarikh; kesan membesar bermakna air aktif, kesan statik mungkin kerosakan lama"
+    ],
+    prevention: [
+      "Bersihkan longkang dan potong dahan menggantung sebelum monsun",
+      "Ganti jubin retak sebaik sahaja dikesan, bukan apabila siling bernoda",
+      "Segel semula penembusan bumbung (paip aircon, antena, skylight) setiap beberapa tahun",
+      "Jadualkan pemeriksaan bumbung tahunan, idealnya sebelum November"
+    ],
+    costDetail: "Satu jubin retak atau pembaikan flashing dengan akses ialah hujung rendah (dari RM250). Pembedahan semula rabung, penggantian bahagian jubin atau salutan semula kawasan bumbung rata naik ke RM1,500–RM5,000+ bergantung jenis bumbung dan kesukaran akses. Kami sebut harga selepas pemeriksaan bumbung yang selamat dan terangkan pembaikan sebelum apa-apa kerja."
   },
   "wall-dampness-rising": {
     symptom: "Dinding lembap dari bawah naik ke atas, biasanya di rumah lama atau kawasan tanah rendah.",
@@ -193,7 +263,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Bolehkah anda membaiki kebocoran balkoni tanpa memecah jubin?",
       a: "Ya, dalam kebanyakan kes kami gunakan suntikan PU atau membran cecair yang tidak memerlukan hacking."
-    }
+    },
+    overview: "Balkoni atau lantai kolam yang bocor ialah kegagalan kalis air, bukan masalah jubin — jubin sendiri tidak menahan air, membran di bawahnya yang berfungsi. Selepas bertahun-tahun terdedah kepada matahari dan hujan, membran berusia, retak di sambungan dinding-lantai, atau grout membiarkan air menembusi papak, dan kebocoran muncul di siling atau dinding bawah, kadang-kadang beberapa meter dari punca sebenar.",
+    diyChecks: [
+      "Keringkan lantai balkoni, kemudian tuang sedikit air dan perhatikan arah alirannya — kawasan bertakung adalah suspek",
+      "Periksa siling bawah untuk corak titisan dan tandakan kedudukannya sebelum dan selepas hujan atau cucian",
+      "Ketuk jubin dengan syiling atau kunci — bunyi hampa bermakna jubin telah tercabut dari membran",
+      "Periksa garisan grout dan sambungan dinding-lantai untuk retak, terutama berhampiran longkang"
+    ],
+    prevention: [
+      "Segel semula grout dan sambungan silikon setiap beberapa tahun sebelum kesan muncul",
+      "Pastikan longkang bersih supaya air tidak bertakung menekan membran",
+      "Elak memotong atau menggerudi lantai balkoni untuk ampaian atau storan tanpa penyegelan semula",
+      "Selepas kerja kalis air, minta ujian takungan sebelum jubin dipasang semula"
+    ],
+    costDetail: "Salutan tanpa pecah jubin atau pembaikan suntikan retak untuk balkoni kecil bermula sekitar RM850. Penggantian membran penuh dengan penanggalkan jubin ialah punca angka RM12,000+ untuk dek besar dan sekeliling kolam. Kami petakan lembapan papak dahulu supaya pembaikan menyasar laluan sebenar, bukan hanya kesan."
   },
   "loose-door-hinge": {
     symptom: "Engsel pintu longgar, pintu tidak sejajar atau berdecit.",
@@ -203,7 +287,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Bolehkah anda baiki engsel pintu yang longgar?",
       a: "Ya. Kami boleh ketatkan skru, gunakan dowel kayu atau ganti engsel dalam masa 30–45 minit."
-    }
+    },
+    overview: "Pintu yang kendur, menggesel lantai atau tidak mahu mengunci biasanya masalah engsel, bukan masalah pintu. Skru engsel pada bingkai kayu longgar selepas bertahun-tahun digunakan, pin engsel haus, atau kayu bingkai membengkak dan mengecut dengan kelembapan sehingga tidak lagi dapat memegang skru.",
+    diyChecks: [
+      "Buka pintu sepenuhnya dan periksa sama ada skru engsel atas atau bawah longgar atau tercabut",
+      "Angkat pintu sedikit pada pemegang — pergerakan menegak bermakna pin engsel haus atau skru longgar",
+      "Perhatikan jurang antara pintu dan bingkai — jurang tidak sama rata bermakna pintu telah kendur",
+      "Periksa sama ada lidah kunci masih sejajar dengan plat pengunci"
+    ],
+    prevention: [
+      "Ketatkan skru engsel sebaik sahaja terdengar bunyi atau pintu mula kendur, sebelum lubang tercabut",
+      "Gunakan skru lebih panjang yang menembusi kayu struktur, bukan hanya trim",
+      "Pastikan tepi pintu bersalut cat supaya kelembapan tidak membengkakkan kayu",
+      "Baiki kunci yang ketat awal — memaksa pintu menekan engsel"
+    ],
+    costDetail: "Pengetatan dengan skru lebih kuat atau penambahan dowel pada bingkai yang tercabut ialah hujung murah (dari RM90). Penggantian set engsel penuh dengan pelarasan lebih mahal; pintu berat atau pintu berkunci digital memerlukan engsel lebih kuat, sehingga RM350 dan ke atas. Kami sahkan sebelum mula."
   },
   "tv-fell-off-wall": {
     symptom: "TV jatuh dari dinding kerana pemasangan tidak kukuh.",
@@ -223,7 +321,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Bolehkah anda membaiki kunci tingkap yang tersangkut?",
       a: "Ya. Kami biasanya boleh membersihkan, melincirkan atau menggantikan kunci dalam masa 30–60 minit."
-    }
+    },
+    overview: "Kunci tingkap yang tersangkut bukan sekadar menyusahkan — di tingkat bawah dan balkoni yang mudah diakses, ia adalah jurang keselamatan, dan tingkap gelangsar yang tidak tertutup rapat membiarkan hujan dan habuk masuk semasa ribut. Mekanisme biasanya gagal kerana track atau kunci mengumpul kotoran, cangkuk kunci beralih apabila bingkai bergerak, atau pemegang telah haus.",
+    diyChecks: [
+      "Cuba kunci dengan tingkap tertutup sepenuhnya — jika hanya masuk dengan paksaan, cangkuk tidak sejajar",
+      "Vakum track gelangsar dan periksa serpihan yang menyekat lidah kunci",
+      "Lap mekanisme kering dan uji semula; jangan paksa pemegang yang menahan",
+      "Periksa panel kaca untuk goyangan — daun yang tidak stabil tidak boleh dipaksa"
+    ],
+    prevention: [
+      "Bersihkan track dan mekanisme kunci setiap beberapa bulan, terutama sebelum monsun",
+      "Guna semburan silikon kering pada track dan kunci, bukan minyak atau gris",
+      "Baiki kerosakan bingkai awal sebelum ia mengubah penjajaran kunci",
+      "Uji semua kunci tingkap pada awal musim hujan"
+    ],
+    costDetail: "Pembersihan, pelinciran dan pelarasan semula ialah hujung murah (dari RM80). Penggantian pemegang atau cangkuk kunci dengan bahagian sepadan biasanya RM150–RM300 bergantung jenis tingkap; track bengkok atau perkakasan casement lebih mahal. Kami semak ketersediaan bahagian sebelum sebut harga."
   },
   "ikea-furniture-assembly-help": {
     symptom: "Perabot IKEA sukar dipasang atau tidak stabil selepas dipasang.",
@@ -233,7 +345,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Berapa lama masa untuk memasang almari IKEA 3 pintu?",
       a: "Biasanya 2–4 jam untuk satu orang yang berpengalaman. Kami boleh melakukannya dalam masa 1–2 jam."
-    }
+    },
+    overview: "Perabot flat-pack sering menjadi punca frustrasi di rumah Malaysia — almari yang kelihatan mudah dalam gambar rajah boleh mengambil masa berjam-jam, memerlukan dua orang, dan akhirnya goyah atau tidak selamat jika panel dipaksa. Kebanyakan masalah bukan kekurangan kemahiran tetapi langkah yang terlepas: panel dipasang dalam urutan salah, cam lock tidak duduk, atau almari berat tidak pernah diikat ke dinding.",
+    diyChecks: [
+      "Susun semua panel dan perkakasan mengikut helaian arahan sebelum mula",
+      "Periksa sama ada cam lock dipusing ke kedudukan terkunci — cam longgar punca paling biasa perabot goyah",
+      "Uji segi empat sama bingkai: almari yang bergoyang bermakna panel tidak masuk sepenuhnya",
+      "Semak kit sauh dinding — unit tinggi melebihi 60 cm perlu diikat ke dinding"
+    ],
+    prevention: [
+      "Simpan helaian arahan dan perkakasan tambahan dalam kotak asal untuk masa depan",
+      "Ketatkan semula cam lock dan skru selepas dua minggu pertama, apabila kayu mendap",
+      "Ikat perabot tinggi ke dinding walaupun pengilang menandakan ia pilihan",
+      "Lap tumpahan cepat — kelembapan membengkakkan tepi papan dan merosakkan sambungan"
+    ],
+    costDetail: "Pemasangan dinilai mengikut saiz dan kerumitan: rak atau meja kecil dari RM100, almari 3 pintu biasanya RM200–RM400, dan unit besar atau banyak dengan sauh dinding RM400–RM600+. Buka semula, pindah atau pembetulan unit yang salah dipasang menambah masa. Kami sebut harga dari foto dan senarai item."
   },
   "rccb-tripping-kl": {
     symptom: "RCCB (Residual Current Circuit Breaker) kerap trip tanpa sebab yang jelas.",
@@ -629,7 +755,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Berapa lama pagar tingkap biasanya tahan sebelum berkarat?",
       a: "Dengan rawatan anti-karat yang betul, pagar boleh tahan 5–10 tahun. Tanpa rawatan, karat boleh muncul dalam masa 1–2 tahun."
-    }
+    },
+    overview: "Karat pada pagar tingkap atau pintu pagar jarang bermula di permukaan — lembapan masuk melalui calar, hujung potongan dan sambungan kimpalan, kemudian merebak di bawah cat. Dalam kelembapan Malaysia dan udara pantai, ini boleh berlaku dalam beberapa bulan walaupun pagar baru dicat, kerana logam tidak disiapkan dengan primer yang betul atau cat disapu terus di atas karat lama.",
+    diyChecks: [
+      "Ketuk perlahan palang pagar dengan pemegang pemutar skru — bunyi pekak dan berkapur bermakna karat telah merebak di bawah cat",
+      "Periksa hujung potongan, sambungan kimpalan dan lubang skru — tempat salutan paling nipis",
+      "Kikis satu titik sehingga logam bersih untuk melihat sama ada karat di permukaan atau sudah menebuk dalam",
+      "Cat semula tanpa buang karat akan gagal semula dalam beberapa bulan sahaja"
+    ],
+    prevention: [
+      "Pilih powder coating atau galvanizing celup panas untuk pagar baharu, terutama dalam 10 km dari pantai",
+      "Sentuh calar dan hujung potongan dengan primer anti-karat sebaik sahaja muncul",
+      "Jauhkan pokok dan barang dari pagar supaya udara dapat mengeringkan logam selepas hujan",
+      "Basuh garam dan kotoran dengan air biasa beberapa kali setahun"
+    ],
+    costDetail: "Kikisan setempat, rust converter dan cat semula satu pagar tingkap bermula sekitar RM150. Sandblasting penuh, primer semula dan cat semula semua pagar rumah naik ke RM680 dan ke atas; powder coating atau penggantian bahagian yang berkarat teruk lebih mahal. Kami sebut harga selepas memeriksa kedalaman karat."
   },
   // ── Extra problem pages (from problem-data-extra.ts) ──────────────────
   "yellowing-white-walls": {
@@ -820,7 +960,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Berapa kos skim-coat satu bilik?",
       a: "Biasanya RM 400 hingga RM 1,200 untuk satu bilik, bergantung pada luas dinding dan tahap ketidakrataan."
-    }
+    },
+    overview: "Dinding tidak rata ialah masalah kemasan yang tidak boleh diselesaikan dengan cat. Benjol, lekuk dan rabung datang daripada cat bertekstur lama, bertahun-tahun pembaikan tampal, atau plaster yang tidak diratakan — dan ia menjadi jelas apabila warna baharu yang bersih disapu, kerana cat flat memaparkan setiap bayang. Skim coat penuh ialah penyelesaian standard: lapisan nipis plaster ke seluruh dinding, disandarkan licin sebelum mengecat.",
+    diyChecks: [
+      "Sorot lampu suluh di sepanjang dinding pada sudut rendah — cahaya sisi mendedahkan setiap benjol dan lekuk",
+      "Lari pembaris lurus merentasi dinding untuk cari lekuk lebih dalam daripada kira-kira 3 mm",
+      "Periksa sama ada ketidakrataan adalah tekstur (cat lama) atau pergerakan (retak, bengkak)",
+      "Tekan tampalan yang mencurigakan — kawasan pembaikan longgar atau hampa mesti dibuang sebelum skim"
+    ],
+    prevention: [
+      "Semasa pengubahsuaian, minta skim coat dalam skop kerja cat, bukan 'spot filler'",
+      "Guna sealer antara cat lama dan skim baharu supaya plaster melekat dengan betul",
+      "Baiki masalah lembapan dahulu — skim atas dinding lembap akan melepuh dan gagal",
+      "Untuk rumah sewa, persetujui standard kemasan dinding sebelum kerja bermula"
+    ],
+    costDetail: "Skim coat dinilai setiap kaki persegi — kira-kira RM5–RM12 bergantung keadaan dinding, akses dan sama ada lapisan kedua diperlukan. Bilik tidur utama biasa RM400–RM1,200. Pembaikan tampal lebih murah tetapi meninggalkan tompok kelihatan; skim penuh memberi kemasan flat premium."
   },
   "vinyl-flooring-lifting-edges": {
     symptom: "Tepi vinyl flooring terangkat, melengkung atau tidak lagi melekat pada lantai.",
@@ -860,7 +1014,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Berapa kos untuk baiki pintu almari tersangkut?",
       a: "Biasanya RM 200 hingga RM 500 termasuk penggantian roda dan pelarasan, bergantung pada jenis almari."
-    }
+    },
+    overview: "Pintu almari yang tersangkut biasanya masalah track atau roda, bukan masalah pertukangan. Pintu gelangsar mengumpul habuk dan pasir yang menggesek roda menjadi leper; pintu berengsel membengkak dengan kelembapan atau bingkai mendap tidak segi. Semakin lama pintu tersangkut dipaksa, semakin banyak kerosakan — roda haus leper, track bengkok dan tepi pintu pecah.",
+    diyChecks: [
+      "Vakum track gelangsar sepenuhnya — pasir punca paling biasa pintu melekat",
+      "Angkat pintu sedikit dan lepaskan: pergerakan menegak bebas bermakna roda haus, bukan masalah track",
+      "Untuk pintu berengsel, periksa engsel dan jurang di tepi penutup untuk pembengkakan",
+      "Jangan paksa pintu tersangkut tertutup — tepi panel pecah jauh lebih mahal daripada roda"
+    ],
+    prevention: [
+      "Bersihkan track almari dua kali setahun, sebelum dan selepas kelembapan monsun",
+      "Jauhkan almari dari aliran udara aircond langsung yang menyebabkan kondensasi",
+      "Baiki pintu melekat pada tanda pertama — roda dan track haus cepat setelah mula mengisar",
+      "Simpan barang berat rendah dan seimbang supaya bingkai tidak senget"
+    ],
+    costDetail: "Pembersihan track dan pelarasan semula bermula sekitar RM180. Penggantian roda RM250–RM450 setiap pintu; gantung semula pintu berengsel dengan engsel baharu lebih kurang sama. Jika panel telah bengkak atau pecah, penggantian mungkin lebih mahal daripada pembaikan — kami periksa keadaan pintu sebelum sebut harga."
   },
   "digital-smart-lock-installation": {
     symptom: "Kunci pintar tidak berfungsi, bateri cepat habis, WiFi/Bluetooth tidak stabil atau kunci tidak boleh dikunci/dibuka.",
@@ -880,7 +1048,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Berapa kos untuk panggil tukang kunci kecemasan?",
       a: "Khosmestik biasa: RM 150 hingga RM 350 untuk rumah. Harga berbeza mengikut masa (lebih mahal pada waktu malam/hujung minggu) dan jenis kunci."
-    }
+    },
+    overview: "Terkunci di luar rumah ialah salah satu daripada sedikit kecemasan rumah sebenar — ia boleh meninggalkan kanak-kanak atau haiwan peliharaan tanpa pengawasan, atau anda terdampar di luar pada waktu malam. Dalam kebanyakan kes kunci tidak rosak langsung; masalahnya ialah akses. Tukang kunci yang baik akan membuka silinder standard tanpa merosakkan, dan hanya menggerudi atau menanggalkan silinder apabila kunci berkualiti tinggi, tersita atau sudah rosak.",
+    diyChecks: [
+      "Periksa tingkap dan pintu sisi yang mungkin tidak berkunci — tetapi jangan memanjat balkoni untuk masuk",
+      "Semak dengan ahli keluarga atau jiran yang mungkin memegang kunci ganti",
+      "Jika anda ada smart lock, cuba kunci fizikal sandaran, kod, atau jump kuasa bank pada terminal luaran",
+      "Hubungi kami sebelum memaksa apa-apa — kunci dan pintu rosak lebih mahal daripada panggilan"
+    ],
+    prevention: [
+      "Simpan kunci ganti dengan jiran yang dipercayai, bukan bawah tikar",
+      "Pasang key safe atau smart lock dengan kod sandaran untuk akses keluarga",
+      "Ganti kunci haus sebelum ia patah di dalam silinder",
+      "Simpan nombor tukang kunci sebelum anda memerlukannya"
+    ],
+    costDetail: "Lockout waktu siang standard dengan bukaan tanpa kerosakan RM180–RM380. Selepas waktu kerja (10 malam–6 pagi) dan hujung minggu lebih mahal, sehingga RM550+; penggantian silinder atau kunci yang digerudi kerana rosak menambah bahagian. Kami sahkan harga sebelum tiba dan tunjukkan kaedah bukaan sebelum kerja."
   },
   "downlight-flickering": {
     symptom: "Downlight berkelip-kelip, menyala dan padam, atau tidak menyala dengan terang.",
@@ -890,7 +1072,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Adakah lampu berkelip berbahaya?",
       a: "Kelip biasanya menunjukkan sambungan longgar atau driver rosak. Sambungan longgar boleh menyebabkan panas dan risiko kebakaran — sila diperiksa segera."
-    }
+    },
+    overview: "Lampu downlight LED yang berkelip hampir selalu masalah driver atau sambungan, bukan masalah mentol. Driver murah tanpa jenama yang digunakan dalam pemasangan bajet gagal dalam beberapa bulan, suis dimmer yang tidak direka untuk LED menyebabkan kelipan, dan sambungan longgar di kotak simpang siling menjana haba selain kelipan — sebab itu ia perlu diperiksa dan bukan diabaikan.",
+    diyChecks: [
+      "Catat sama ada satu atau beberapa lampu berkelip — beberapa lampu biasanya menunjuk ke masalah litar atau dimmer",
+      "Periksa dimmer: dimmer standard selalunya tidak dapat mengawal beban LED dengan betul",
+      "Matikan lampu pada suis dan rasa trim — haba luar biasa di satu fitting perlu pemeriksaan",
+      "Ambil foto jenama dan model fitting sebelum menghubungi kami, supaya penggantian tepat dapat disediakan"
+    ],
+    prevention: [
+      "Spesifikasikan driver dan fitting LED berjenama (Philips, Osram, Panasonic) untuk pemasangan baharu",
+      "Gunakan dimmer serasi LED jika anda mahu fungsi dimming",
+      "Minta sambungan simpang diperiksa semasa pengubahsuaian, bukan hanya tukar lampu",
+      "Simpan rekod tarikh pemasangan — fitting yang gagal dalam tempoh jaminan patut dituntut"
+    ],
+    costDetail: "Penggantian driver atau fitting yang gagal kira-kira RM80–RM320 setiap lampu bergantung jenama dan jenis trim. Perlindungan lonjakan seluruh rumah atau pendawaian semula simpang siling menambah jumlah; kerja juruelektrik berlesen ST disertakan dalam setiap sebut harga. Kami padankan gaya fitting sedia ada jika boleh."
   },
   "shower-screen-water-leak": {
     symptom: "Air bocor dari bawah atau tepi skrin mandi (shower screen), membasahkan lantai bilik mandi.",
@@ -910,7 +1106,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Berapa lama hard disk CCTV bertahan?",
       a: "Hard disk CCTV gred khas (WD Purple, Seagate SkyHawk) biasanya bertahan 4–7 tahun dengan operasi 24/7."
-    }
+    },
+    overview: "Sistem CCTV yang menunjukkan video langsung tetapi tidak merakam apa-apa ialah masalah storan atau bekalan kuasa, dan ia mudah terlepas pandang — paparan langsung nampak baik, jadi kebanyakan orang hanya menyedari masalah apabila perlu rakaman untuk laporan insiden atau insurans. Punca biasa ialah hard disk penuh atau gagal, bekalan kuasa DVR/NVR yang jatuh di bawah beban, kabel longgar, atau kamera yang beku dan berhenti menghantar bingkai.",
+    diyChecks: [
+      "Periksa menu DVR/NVR untuk status hard disk dan ruang kosong — disk penuh menghentikan rakaman secara senyap",
+      "Periksa jadual rakaman: sesetengah sistem berhenti merakam selepas kemas kini firmware",
+      "But semula DVR/NVR sekali — perakam beku selalunya kembali berfungsi selepas but bersih",
+      "Periksa setiap suapan kamera secara individu; satu kamera beku dalam grid mudah terlepas"
+    ],
+    prevention: [
+      "Guna hard disk gred pengawasan (WD Purple, Seagate SkyHawk) yang direka untuk tulis 24/7",
+      "Tetapkan jadual rakaman untuk menulis ganti rakaman lama secara automatik",
+      "Uji main balik setiap bulan — periksa rakaman minggu lepas, bukan hanya paparan langsung",
+      "Letak DVR/NVR pada soket pelindung lonjakan; kegagalan kuasa merosakkan disk"
+    ],
+    costDetail: "Penggantian hard disk atau bekalan kuasa dengan ujian bermula sekitar RM180–RM400. Sistem DVR 8 saluran penuh + disk + pemasangan RM850–RM1,800; pemulihan data dari disk gagal dinilai berasingan (RM350–RM1,200) bergantung kerosakan. Kami uji seluruh sistem sebelum meninggalkan tapak supaya rakaman disahkan berfungsi."
   },
   "autogate-remote-not-working": {
     symptom: "Remot pagar automatik tidak lagi membuka pagar, atau hanya berfungsi secara sekejap-sekejap dari jarak sangat dekat.",
@@ -1243,7 +1453,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "马桶堵塞时我应该做什么？",
       a: "不要继续冲水。先使用吸盘。如果无效，立即联系水管工。"
-    }
+    },
+    overview: "管道堵塞或马桶堵塞是吉隆坡和雪兰莪家庭最常见的管道维修之一，而且通常是慢慢累积的——头发、皂垢和油污逐渐收窄管径，直到某天水排不下去。一旦堵塞发生在主排水管或马桶就变得紧急：污水无处可去，可能倒灌到房子最低层。",
+    diyChecks: [
+      "立即停止使用受影响的洗手盆、淋浴或马桶——每冲一次水都把堵塞推得更深",
+      "检查其他排水口是否也变慢——这说明是主管问题而非单个洁具",
+      "用吸盘对准排水口形成完整密封；不要与化学品混用",
+      "留意地漏返水或污水气味——这是主管堵塞的信号"
+    ],
+    prevention: [
+      "淋浴间和洗手盆使用滤网拦截头发",
+      "不要把食用油或油脂倒进水池——它们会在管内凝固",
+      "只冲厕纸；湿巾和卫生用品是马桶堵塞最常见的原因",
+      "每周用热水冲洗排水管，防止皂垢堆积"
+    ],
+    costDetail: "用手动工具或弹簧疏通单个洁具约 RM150 起。拆马桶、清理存水弯或主管堵塞可达 RM500 以上。开工前我们会先确认堵塞深度和施工方式；人工享受标准保修。"
   },
   "water-heater-not-working": {
     symptom: "热水器不加热、漏水或完全不工作。",
@@ -1263,7 +1487,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "我可以自己修复下垂的天花板吗？",
       a: "不建议。下垂通常表示有结构问题或漏水，需要专业人员处理。"
-    }
+    },
+    overview: "天花板下垂是最不能拖延的天花板问题。吊顶板因漏水浸泡、吊杆和木龙骨失效或超载而弯曲——一旦开始下垂，固定件已在失去抓力，天花板可能突然掉落。肉眼看到的凹陷往往比实际更严重，因为空隙掩盖了板材移动的距离。",
+    diyChecks: [
+      "不要站在下垂区域正下方，并移开家具",
+      "用手掌轻按最低点——板材发软或有弹性说明受过水损",
+      "查看下垂板材上的水渍或深色水环，这指向活跃的漏水点",
+      "检查下垂位置上方的吊扇或重型灯具是否后期加装"
+    ],
+    prevention: [
+      "屋顶或浴室漏水要立即修复——潮湿是石膏板最大的敌人",
+      "切勿在没有龙骨支撑的情况下把重物挂上石膏板",
+      "装修后每逢雨季开始检查天花板，及早发现下垂迹象",
+      "浴室、厨房和空调附近使用防潮板"
+    ],
+    costDetail: "小面积干性下垂的加固和重新批灰约 RM180 起。更换受潮板材并改用金属龙骨约 RM600–RM1,500+，视面积及是否包含电工和油漆而定。我们会先检查龙骨再报价——下垂天花板按结构计价，而不是按板材数量。"
   },
   "ceiling-leak-after-rain": {
     symptom: "雨后天花板出现水渍。",
@@ -1273,7 +1511,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "你们如何确定天花板漏水的来源？",
       a: "我们会检查屋顶、泛水板、排水沟和阳台，然后进行淋水测试确认来源。"
-    }
+    },
+    overview: "只有下雨后才漏水的天花板指向建筑外围而非水管：瓦片开裂或移位、女儿墙或烟囱周围泛水板失效、阳台渗水，或外墙裂缝把雨水直接引到墙内。天花板上的水渍通常离进水点很远，因为水会沿着楼板底面流动一段距离才滴落。",
+    diyChecks: [
+      "在滴水处放水桶并记录进水位置——源头通常在别处",
+      "下雨时观察天花板的水痕走向：水渍常沿楼板接缝或梁线延伸",
+      "雨停后检查最近的阳台、女儿墙和屋顶天沟是否有积水或裂缝",
+      "让水远离电气设备——如果漏水靠近灯具，先关闭该回路"
+    ],
+    prevention: [
+      "每年雨季前清理天沟并检查瓦片",
+      "女儿墙和阳台接缝按计划定期重新密封，而不是等出现水渍",
+      "外墙裂缝出现当年就修补",
+      "修复后用淋水测试验证，而不是等下一场雨"
+    ],
+    costDetail: "定位并封堵单一外部进水点约 RM250 起。阳台或平屋顶防水层失效更贵——RM1,500–RM3,500+，视面积和是否掀砖而定。我们总是先找到并止住水源，再报天花板修复价，确保水渍不再复发。"
   },
   "cracked-ceiling-joints": {
     symptom: "石膏天花板接缝处开裂或张开，尤其在角落和边缘。",
@@ -1283,7 +1535,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "天花板接缝开裂是否严重？",
       a: "如果只是外观问题，通常不严重。但如果裂缝较宽或反复出现，可能表示结构移动。"
-    }
+    },
+    overview: "沿石膏板接缝的直线裂缝是马来西亚家庭最常见的天花板缺陷，而且通常是饰面问题而非结构问题。接缝带或嵌缝膏刮得太薄、房屋沉降导致龙骨轻微移动，或潮气使嵌缝膏软化——每次刷漆不处理接缝，一个季节内又裂开。",
+    diyChecks: [
+      "用手指沿裂缝划过——如果接缝带边缘翘起，说明接缝没有贴好",
+      "判断裂缝是沿直线延伸（接缝开裂）还是跨板斜走（龙骨位移）",
+      "轻按裂缝两侧——有位移说明板材固定不牢",
+      "查看裂缝附近是否潮湿或有水渍，这可能指向软化接缝的水源"
+    ],
+    prevention: [
+      "任何新吊顶工程使用玻纤接缝带和优质嵌缝膏",
+      "保持室内湿度适中——空调房不宜长时间处于高湿状态",
+      "湿区附近接缝开裂时，检查屋顶或浴室是否漏水",
+      "刷漆时先正确处理裂缝——光靠油漆永远修不好接缝裂缝"
+    ],
+    costDetail: "单条接缝重贴（含批灰、底漆和面漆）约 RM180 起。多条接缝或全屋顶面批灰 RM500–RM900+；若发现板材位移，龙骨加固单独计价。我们会先判断裂缝是否仍在扩展，确保修复持久。"
   },
   "condensation-ceiling-mold": {
     symptom: "浴室或厨房天花板因冷凝出现黑色霉菌。",
@@ -1327,7 +1593,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "屋顶通常能使用多久才开始漏水？",
       a: "瓦片屋顶通常可使用 15–25 年。每年检查可帮助及早发现问题。"
-    }
+    },
+    overview: "屋顶漏水在雨季最常见，因为雨季才是对屋顶的真正考验——在马来西亚，多数漏水从边缘开始：瓦片开裂或移位、天沟堵塞后从封檐板下倒灌，或屋顶与墙体、女儿墙、空调管道交接处的泛水板失效。水会沿着椽子和保温层流很远才在天花板显现，所以滴水点很少是真正的进水点。",
+    diyChecks: [
+      "从阁楼内寻找透过屋顶的光线——这是找洞最快的方法",
+      "雨后检查天沟和落水管是否溢流——堵塞的天沟是许多'屋顶漏水'的元凶",
+      "检查烟囱、女儿墙和管道穿出点周围的泛水板是否翘起或锈蚀",
+      "标记水渍位置和日期；水渍扩大说明仍在进水，静止的可能是旧伤"
+    ],
+    prevention: [
+      "雨季前清理天沟并修剪伸到屋顶的树枝",
+      "发现瓦片开裂立即更换，不要等天花板出现水渍",
+      "每几年重新密封屋顶穿透点（空调管、天线、天窗）",
+      "每年安排一次屋顶检查，最好在十一月前"
+    ],
+    costDetail: "单块瓦片或泛水板修补（含架设）约 RM250 起。重新铺设屋脊、更换部分瓦片或重做平屋顶防水层，费用升至 RM1,500–RM5,000+，视屋顶类型和攀爬难度而定。我们会先安全检查屋顶再报价，并事先说明维修方案。"
   },
   "wall-dampness-rising": {
     symptom: "墙壁从下方向上潮湿，通常出现在老房子或低洼地区。",
@@ -1347,7 +1627,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "你们能不敲砖修复阳台漏水吗？",
       a: "可以。在大多数情况下，我们使用 PU 灌浆或液体防水膜，无需敲砖。"
-    }
+    },
+    overview: "阳台或泳池平台漏水是防水层失效，而不是瓷砖问题——瓷砖本身不防水，靠的是下面的防水膜。多年日晒雨淋后，防水膜老化、在墙地交接处开裂，或美缝让水渗到楼板，漏水在楼下天花板或墙面显现，有时距真正源头好几米。",
+    diyChecks: [
+      "把阳台地面擦干，再倒少量水观察流向——积水处是重点怀疑对象",
+      "查看楼下天花板的滴水痕迹，在雨前雨后或冲洗前后标记其位置变化",
+      "用硬币或钥匙轻敲瓷砖——空洞声说明瓷砖已与防水层脱开",
+      "检查美缝和墙地交接处是否有裂缝，尤其是地漏附近"
+    ],
+    prevention: [
+      "每隔几年在出现水渍前重新密封美缝和硅胶接缝",
+      "保持地漏畅通，避免积水长时间压迫防水层",
+      "不要在阳台地面打孔安装晾衣架或储物架而不做重新防水",
+      "防水施工后坚持做蓄水试验，再铺贴瓷砖"
+    ],
+    costDetail: "小阳台免敲砖涂层或裂缝注浆约 RM850 起。大面积平台和泳池周边掀砖重做防水层，费用可达 RM12,000+。我们会先对楼板做湿度定位，让修复针对真实渗水路径，而不只是处理水渍。"
   },
   "loose-door-hinge": {
     symptom: "门铰链松动，门不对齐或发出吱吱声。",
@@ -1357,7 +1651,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "你们能修复松动的门铰链吗？",
       a: "可以。我们可以在 30–45 分钟内拧紧螺丝、使用木塞或更换铰链。"
-    }
+    },
+    overview: "门下垂、刮地或锁不上，通常是铰链问题而非门本身的问题。多年使用后，固定在木门框上的铰链螺丝逐渐松动，铰链销磨损，或门框木材因湿度而膨胀收缩，再也无法咬紧螺丝。",
+    diyChecks: [
+      "把门完全打开，检查上下铰链的螺丝是否松动或滑丝",
+      "握住门把手轻轻上提——有垂直位移说明铰链销磨损或螺丝松动",
+      "观察门与门框的缝隙：上下缝隙不均说明门已下垂",
+      "关门时检查锁舌是否仍对准锁扣板"
+    ],
+    prevention: [
+      "一听到异响或发现门下垂就立即拧紧铰链螺丝，避免孔位滑丝",
+      "使用能深入门框木方的长螺丝，而不仅是固定在饰条上",
+      "保持门边油漆完好，防止湿气使木材膨胀",
+      "锁舌卡滞要及早维修——用力推门会拉伤铰链"
+    ],
+    costDetail: "用加长螺丝重新固定或向滑丝的孔位打入木塞，费用约 RM90 起。整套更换铰链并重新对准较贵；重型门或带智能锁的门需要更坚固的铰链，费用可达 RM350 以上。开工前我们会先确认方案。"
   },
   "tv-fell-off-wall": {
     symptom: "电视从墙上掉落，因为安装不牢固。",
@@ -1377,7 +1685,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "你们能修复卡住的窗户锁吗？",
       a: "可以。我们通常可以在 30–60 分钟内清洁、润滑或更换锁具。"
-    }
+    },
+    overview: "窗户锁或把手卡住不只是不便——在低楼层和易于攀爬的阳台上，这是安全隐患；推拉窗关不严还会在暴雨时进水进灰。问题通常源于轨道或锁具积灰、窗框位移导致锁扣错位，或把手机构磨损。",
+    diyChecks: [
+      "把窗完全关上再试锁——如果用力才能锁上，说明锁扣已错位",
+      "用吸尘器清理推拉轨道，检查是否有碎屑卡住锁舌",
+      "擦干机构后再试一次；把手阻力大时切勿强行扳动",
+      "检查玻璃窗扇是否晃动——不稳定的窗扇不能强推"
+    ],
+    prevention: [
+      "每几个月清理一次窗轨和锁机构，雨季前尤其重要",
+      "轨道和锁具使用干性硅油，不要用机油或黄油",
+      "窗框变形要及早修理，避免锁位越来越偏",
+      "雨季开始时逐一测试所有窗户锁"
+    ],
+    costDetail: "清洁、润滑和重新对准约 RM80 起。更换把手或锁扣（含配件）通常 RM150–RM300，视窗型而定；轨道弯曲或平开窗五金更贵。我们会先确认配件货源再报价。"
   },
   "ikea-furniture-assembly-help": {
     symptom: "IKEA 家具难以组装或组装后不稳定。",
@@ -1387,7 +1709,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "组装一个 3 门 IKEA 衣柜需要多长时间？",
       a: "有经验的人通常需要 2–4 小时。我们可以在 1–2 小时内完成。"
-    }
+    },
+    overview: "板式家具组装是马来西亚家庭的常见烦恼——说明书上看起来简单的衣柜，实际可能要装几个小时、需要两个人，装不好还会摇晃甚至不安全。多数问题不是手艺问题而是漏了步骤：面板顺序装错、偏心锁没到位，或高柜从未固定上墙。",
+    diyChecks: [
+      "开始前把所有面板和五金按说明书摆开清点",
+      "检查偏心锁是否转到锁定位置——偏心锁松动是家具摇晃最常见的原因",
+      "测试框架是否方正：衣柜摇晃说明有面板没有完全到位",
+      "检查墙体固定套件——高度超过约 60 厘米的高柜应固定上墙"
+    ],
+    prevention: [
+      "把说明书和备用五金收进原包装盒，方便日后搬家",
+      "使用两周后重新拧紧偏心锁和螺丝，木材会自然沉降",
+      "即使厂家标注为可选，高大家具也应固定上墙",
+      "液体洒落立即擦干——潮气会使刨花板边缘膨胀、损坏接合处"
+    ],
+    costDetail: "组装按大小和复杂程度计价：小书架或书桌约 RM100 起，三门衣柜通常 RM200–RM400，大型或多件家具加上墙固定为 RM400–RM600+。拆装、搬运或修正装错的家具需另计时间。凭照片和物品清单即可报价。"
   },
   "rccb-tripping-kl": {
     symptom: "RCCB（漏电保护器）无明显原因频繁跳闸。",
@@ -1783,7 +2119,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "窗户铁栅通常能使用多久才开始生锈？",
       a: "经过正确防锈处理，铁栅可使用 5–10 年。如果没有处理，1–2 年内可能出现铁锈。"
-    }
+    },
+    overview: "窗户铁栅或大门生锈很少从表面开始——湿气通过划痕、切口和焊接点进入金属，然后在漆膜下扩散。在马来西亚的湿度和沿海空气中，即使是新刷漆的铁栅也可能在几个月内生锈，因为金属没有正确打底，或油漆直接涂在旧锈上。",
+    diyChecks: [
+      "用螺丝刀柄轻轻敲击铁枝——沉闷松散的声音说明锈蚀已在漆膜下扩散",
+      "检查切口、焊缝和螺丝孔——这些位置涂层最薄",
+      "用砂纸打磨一处至露出金属，判断锈蚀只是在表面还是已深入",
+      "不除锈就重刷油漆，几个月内会再次生锈"
+    ],
+    prevention: [
+      "新装铁栅和铁门选择粉末喷涂或热浸镀锌，沿海 10 公里内尤其如此",
+      "划痕和切口一出现就补涂防锈底漆",
+      "让铁栅周围保持通风干燥，避免植物和杂物紧贴堆放",
+      "每年用清水冲洗几次，去除盐分和污垢"
+    ],
+    costDetail: "局部打磨、涂防锈剂并重刷一扇窗铁栅约 RM150 起。整屋铁栅喷砂、重新打底和刷漆则升至 RM680 以上；粉末喷涂或更换锈蚀严重的部分更贵。我们会先检查锈蚀深度再报价。"
   },
   // ── Extra problem pages (from problem-data-extra.ts) ──────────────────
   "yellowing-white-walls": {
@@ -1974,7 +2324,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "一间房批腻子多少钱？",
       a: "通常 RM 400 至 RM 1,200 一间房，取决于墙面面积和不平整程度。"
-    }
+    },
+    overview: "墙面不平整是油漆无法解决的饰面问题。凹凸和棱线来自旧纹理漆、多年局部修补或从未批平的灰层——一旦刷上干净的浅色新漆就原形毕露，因为平光漆会映出每一道阴影。全墙批腻子（skim coat）是标准做法：在全墙抹一层薄灰浆，打磨平整后再上漆。",
+    diyChecks: [
+      "用手电筒低角度照射墙面——侧光会暴露每一处凹凸",
+      "用直尺或长水平尺横过墙面，检查超过约 3 毫米的凹陷",
+      "判断不平整是纹理问题（旧漆）还是位移问题（开裂、膨胀）",
+      "按压可疑修补处——松动的旧修补必须先铲除再批灰"
+    ],
+    prevention: [
+      "装修时在油漆工程里明确要求全墙批腻子，而不是'局部修补'",
+      "旧漆与新腻子之间使用封闭底漆，确保灰层粘结牢固",
+      "先解决潮湿问题——在湿墙上批腻子会起泡脱落",
+      "出租房施工前先与业主确定墙面验收标准"
+    ],
+    costDetail: "批腻子按平方英尺计价——约 RM5–RM12，视墙面状况、施工条件及是否需要第二遍而定。一间主卧通常 RM400–RM1,200。局部修补更便宜但会留下可见色差；全墙批灰才能呈现平整的哑光质感。"
   },
   "vinyl-flooring-lifting-edges": {
     symptom: "乙烯基地板边缘翘起、卷曲或不再粘附地面。",
@@ -2014,7 +2378,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "修衣柜门卡住多少钱？",
       a: "通常 RM 200 至 RM 500，包括更换轮子和调整，取决于衣柜类型。"
-    }
+    },
+    overview: "衣柜门卡住通常是轨道或滑轮问题，而不是木工问题。推拉门会积灰，沙粒把滑轮磨平；平开门受潮膨胀，或柜体沉降变形。门越卡越用力推，损坏越大——滑轮磨平、轨道弯曲、门边开裂。",
+    diyChecks: [
+      "彻底清理推拉轨道——沙粒是门卡住最常见的原因",
+      "把门轻轻抬起再松手：有明显上下位移说明滑轮磨损，而不是轨道问题",
+      "平开门检查铰链和关合边的缝隙，判断是否受潮膨胀",
+      "不要用力硬推卡住的门——门边开裂比换滑轮贵得多"
+    ],
+    prevention: [
+      "每年雨季前后各清理一次衣柜轨道",
+      "衣柜避免正对空调出风口，防止冷凝水",
+      "门一出现卡滞就及早维修——开始摩擦后滑轮和轨道磨损很快",
+      "重物放低层并保持平衡，避免柜体变形"
+    ],
+    costDetail: "轨道清洁和重新调整约 RM180 起。更换滑轮每扇门 RM250–RM450；平开门换铰链重挂费用相近。如果板材已膨胀或开裂，更换可能比维修更划算——我们先检查门的状态再报价。"
   },
   "digital-smart-lock-installation": {
     symptom: "智能锁不工作、电池快速耗尽、WiFi/蓝牙不稳定或无法上锁/开锁。",
@@ -2034,7 +2412,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "紧急叫锁匠多少钱？",
       a: "房屋通常 RM 150 至 RM 350。价格因时间（夜间/周末更贵）和锁类型而异。"
-    }
+    },
+    overview: "被锁在门外是少数真正的家庭紧急情况之一——可能让孩子或宠物无人看管，或让你深夜流落门外。多数情况下锁本身没有坏，问题只是进不了门。有经验的锁匠会用无损方式打开标准锁芯，只有遇到高安保锁、卡死或已损坏的锁才会钻孔或拆锁芯。",
+    diyChecks: [
+      "检查可能没锁的窗户和侧门——但切勿攀爬阳台进屋",
+      "联系可能持有备用钥匙的家人或邻居",
+      "如果使用智能锁，尝试备用钥匙、密码或对外接线用充电宝临时供电",
+      "先打电话再动手撬——弄坏锁和门比叫锁匠更贵"
+    ],
+    prevention: [
+      "备用钥匙放在信任的邻居处，而不是门垫下",
+      "安装钥匙保险箱，或为智能锁设置家人备用密码",
+      "磨损的钥匙及时更换，避免断在锁芯里",
+      "提前保存锁匠电话，别等需要时再找"
+    ],
+    costDetail: "白天标准开锁（无损）RM180–RM380。夜间（晚上 10 点至早上 6 点）和周末更贵，可达 RM550+；更换锁芯或因锁损坏而钻孔另计配件费。我们会在到场前确认价格，开工前说明开锁方式。"
   },
   "downlight-flickering": {
     symptom: "筒灯闪烁、反复亮灭或亮度不足。",
@@ -2044,7 +2436,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "灯闪烁危险吗？",
       a: "闪烁通常表示连接松动或驱动器损坏。松动连接可能导致过热和火灾风险——请立即检查。"
-    }
+    },
+    overview: "LED 筒灯闪烁几乎都是驱动或接线问题，而不是灯泡问题。廉价安装中使用的杂牌驱动器几个月内就会损坏；不兼容 LED 的调光开关会引起频闪；天花板接线盒里的松动连接不但导致闪烁还会发热——所以这个问题应该检修而不是忽视。",
+    diyChecks: [
+      "记录是一盏还是多盏闪烁——多盏通常指向电路或调光器问题",
+      "检查调光器：普通调光器往往无法正确驱动 LED 负载",
+      "关灯后触摸灯具外壳——某个灯具异常发热需要检查",
+      "拍照记录灯具品牌和型号再联系我们，以便准备正确配件"
+    ],
+    prevention: [
+      "新装灯具指定品牌 LED 驱动器与灯具（Philips、Osram、Panasonic）",
+      "需要调光时使用兼容 LED 的调光器",
+      "装修时要求检查接线盒连接，而不只是换灯",
+      "保留安装日期记录——保修期内损坏的灯具应申请索赔"
+    ],
+    costDetail: "更换损坏的驱动器或灯具约 RM80–RM320/盏，视品牌和面板类型而定。全屋防浪涌或重接天花板接线会增加总价；每次报价均含 ST 注册电工人工。我们尽量匹配现有灯具款式。"
   },
   "shower-screen-water-leak": {
     symptom: "水从淋浴屏风底部或侧面泄漏，弄湿浴室地板。",
@@ -2064,7 +2470,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "CCTV 硬盘能用多久？",
       a: "专用 CCTV 硬盘（WD Purple、Seagate SkyHawk）24/7 运行通常可使用 4–7 年。"
-    }
+    },
+    overview: "监控系统能看实时画面但不录像，通常是存储或电源问题，而且很容易被忽略——实时画面看起来正常，多数人直到需要调取录像做事故或保险报告时才发现。常见原因包括硬盘已满或损坏、DVR/NVR 电源负载下电压跌落、线缆松动，或摄像头死机停止发送画面。",
+    diyChecks: [
+      "在 DVR/NVR 菜单检查硬盘状态和剩余空间——硬盘满会静默停止录像",
+      "检查录像计划：部分系统固件升级后会停止录像",
+      "重启一次 DVR/NVR——死机的录像机重启后通常会恢复",
+      "逐个检查每路摄像头画面；网格里一台死机很容易漏看"
+    ],
+    prevention: [
+      "使用专为 24/7 写入设计的监控级硬盘（WD Purple、Seagate SkyHawk）",
+      "设置录像计划为自动覆盖旧录像",
+      "每月测试回放——检查上周的录像，而不是只看实时画面",
+      "DVR/NVR 接防浪涌插座；断电会损坏硬盘"
+    ],
+    costDetail: "更换硬盘或电源并测试约 RM180–RM400。8 路 DVR 整机加硬盘加安装 RM850–RM1,800；故障硬盘数据恢复按损坏程度单独报价（RM350–RM1,200）。我们会在离场前测试整套系统，确认录像正常。"
   },
   "autogate-remote-not-working": {
     symptom: "自动门遥控器不再开门、或只能在非常短的距离内间歇性工作。",

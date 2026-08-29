@@ -600,7 +600,21 @@ export const extraProblemPages: ProblemDetail[] = [
       { q: "Is skim coat different from filler?", a: "Yes. Filler is for spot repairs. Skim coat is a full-wall thin plaster layer that gives a perfectly smooth premium finish." },
       { q: "How thick is a skim coat?", a: "Standard skim coat is 2 to 3 mm thick. Very uneven walls may need multiple layers." },
       { q: "Can I skip skim coat if I'm repainting anyway?", a: "You can, but paint alone doesn't hide bumps. Premium finishes always start with a proper skim." }
-    ]
+    ],
+    overview: "Uneven walls are a finishing problem that paint cannot fix. Bumps, dips, and ridges come from old textured paint, years of patch repairs, or plaster that was never floated flat — and they become obvious the moment a clean new colour is applied, because flat paint shows every shadow. A full skim coat is the standard fix: a thin layer of plaster over the whole wall, sanded flat before painting.",
+    diyChecks: [
+      "Shine a torch along the wall at a low angle — sidelight reveals every bump and dip",
+      "Run a straightedge (or a long level) across the wall to find hollows deeper than about 3 mm",
+      "Check if the unevenness is texture (old paint) or movement (cracks, swelling)",
+      "Press on suspect patches — loose or hollow repair areas must be removed before skimming"
+    ],
+    prevention: [
+      "When renovating, request a skim coat in the painting scope instead of 'spot filler'",
+      "Use a sealer between old paint and new skim so the plaster bonds properly",
+      "Fix moisture issues first — skim over damp walls will blister and fail",
+      "For rentals, agree on the wall finish standard before the work starts"
+    ],
+    costDetail: "Skim coating is quoted per square foot — roughly RM5–RM12 depending on wall condition, access, and whether a second coat is needed. A typical master bedroom runs RM400–RM1,200. Spot repairs are cheaper but leave visible patches; full-wall skim gives the flat premium finish."
   },
 
   // ── FLOORING extras ──────────────────────────────────────────────────────
@@ -728,7 +742,21 @@ export const extraProblemPages: ProblemDetail[] = [
       { q: "Can I fix a sliding wardrobe door myself?", a: "Cleaning the track and adjusting rollers is DIY-friendly. Roller replacement usually needs a technician for proper alignment." },
       { q: "How much for wardrobe door repair?", a: "Standard sliding door realignment + track clean: RM 180 to RM 320. Roller replacement: RM 250 to RM 450 per door." },
       { q: "Should I replace instead of repair?", a: "For 8+ year-old built-in wardrobes with warped panels or missing spare parts, replacement is often more economical." }
-    ]
+    ],
+    overview: "A wardrobe door that jams is usually a track or roller problem, not a carpentry problem. Sliding doors collect dust and grit that grind the rollers flat; hinged doors swell with humidity or the frame settles out of square. The longer a jammed door is forced, the more damage it does — rollers wear flat, tracks bend, and door edges split.",
+    diyChecks: [
+      "Vacuum the sliding track completely — grit is the most common cause of sticking doors",
+      "Lift the door slightly and release: free vertical movement means worn rollers, not a track problem",
+      "For hinged doors, check the hinges and the gap along the closing edge for swelling",
+      "Do not force a stuck door shut — a split panel edge is far more expensive than a roller"
+    ],
+    prevention: [
+      "Clean wardrobe tracks twice a year, before and after the monsoon humidity",
+      "Keep wardrobes away from direct air-conditioner airflow that causes condensation",
+      "Fix a sticking door at the first sign — rollers and tracks wear fast once they start grinding",
+      "Store heavy items low and balanced so the frame does not rack"
+    ],
+    costDetail: "Track cleaning and realignment starts around RM180. Roller replacement runs RM250–RM450 per door; re-hanging hinged doors with new hinges is similar. If panels have swelled or split, replacement may cost more than repair — we check the door condition before quoting."
   },
 
   // ── DOOR extras ──────────────────────────────────────────────────────────
@@ -792,7 +820,21 @@ export const extraProblemPages: ProblemDetail[] = [
       { q: "How fast can you arrive for a lockout?", a: "Typical response time within KL/Selangor is 30 to 75 minutes. Late-night after-hours call: 60 to 90 minutes." },
       { q: "Will you damage my door?", a: "For 90% of standard cylinder locks, we use non-destructive picking. Only high-security or damaged locks may need the cylinder drilled." },
       { q: "How much does after-hours lockout cost?", a: "Standard lockout: RM 180 to RM 380. After-hours (10 PM - 6 AM): RM 350 to RM 650. Emergency uplift is explained before we arrive." }
-    ]
+    ],
+    overview: "Being locked out is one of the few genuine home emergencies — it can leave children or pets unattended, or you stranded outside at night. In most cases the lock is not damaged at all; the problem is access. A good locksmith will open a standard cylinder non-destructively, and only drill or remove the cylinder when the lock is high-security, seized, or already broken.",
+    diyChecks: [
+      "Check windows and side doors you may have left unlocked — but never climb balconies to get in",
+      "Check with family members or neighbours who may hold a spare key",
+      "If you have a smart lock, try the backup key, code, or a power-bank jump on the external terminal",
+      "Call before you force anything — a damaged lock and door costs more than the callout"
+    ],
+    prevention: [
+      "Hide a spare key with a trusted neighbour, not under the doormat",
+      "Fit a key safe or a smart lock with a backup code for family access",
+      "Replace worn keys before they snap inside the cylinder",
+      "Keep a locksmith's number saved before you need it"
+    ],
+    costDetail: "Standard daytime lockout with non-destructive opening runs RM180–RM380. After-hours (10 PM–6 AM) and weekends cost more, toward RM550+; cylinder replacement or drilling damaged locks adds parts. We confirm the price before arrival and show the opening method before work."
   },
 
   // ── LIGHTING extras ──────────────────────────────────────────────────────
@@ -824,7 +866,21 @@ export const extraProblemPages: ProblemDetail[] = [
       { q: "Are all LED downlights the same?", a: "No. Cheap unbranded LEDs die in 6-18 months. Branded (Philips, Osram, Panasonic) last 8-15 years with warranty." },
       { q: "How much for premium LED downlight retrofit?", a: "Branded LED downlight supply + install: RM 120 to RM 220 per point including the ST-licensed electrician." },
       { q: "Can I replace bulbs myself?", a: "For plug-in bulbs yes. Recessed LED downlights are hard-wired and should be replaced by a licensed electrician." }
-    ]
+    ],
+    overview: "Flickering LED downlights are almost always a driver or connection problem, not a bulb problem. The cheap unbranded drivers used in budget installations fail within months, dimmer switches not designed for LEDs cause strobing, and loose connections in ceiling junction boxes create heat as well as flicker — which is why this should be checked rather than ignored.",
+    diyChecks: [
+      "Note whether one light or several flicker — several usually points to a circuit or dimmer issue",
+      "Check the dimmer: standard dimmers often cannot control LED loads correctly",
+      "Turn the light off at the switch and feel the trim — unusual heat around one fitting needs a check",
+      "Take a photo of the fitting brand and model before calling, so the right replacement can be prepared"
+    ],
+    prevention: [
+      "Specify branded LED drivers and fittings (Philips, Osram, Panasonic) for new installations",
+      "Use LED-compatible dimmers if you want dimming at all",
+      "Have junction connections checked when renovating, not just the light changed",
+      "Keep a record of installation dates — fittings that fail within warranty should be claimed"
+    ],
+    costDetail: "Swapping a failed driver or fitting runs about RM80–RM320 per light depending on brand and trim type. Whole-house surge protection or rewiring a ceiling junction raises the total; ST-licensed electrician work is included in every quote. We match the existing fitting style where possible."
   },
 
   // ── CEILING FAN extras ───────────────────────────────────────────────────
@@ -952,7 +1008,21 @@ export const extraProblemPages: ProblemDetail[] = [
       { q: "How long do CCTV hard drives last?", a: "Purpose-built CCTV hard drives (WD Purple, Seagate SkyHawk) typically last 4-7 years with 24/7 operation." },
       { q: "How much to replace a full 8-channel DVR system?", a: "Full 8-channel DVR + hard drive + install: RM 850 to RM 1,800 excluding cameras." },
       { q: "Can you recover footage from a failed DVR?", a: "For hard drive failures, professional data recovery can retrieve most footage — RM 350 to RM 1,200 depending on damage." }
-    ]
+    ],
+    overview: "A CCTV system that shows live video but records nothing is a storage or power fault, and it is easy to miss — the live view looks fine, so most people only discover the problem when they need footage for an incident or insurance report. The usual causes are a full or failed hard drive, a DVR/NVR power supply that drops under load, a loose cable, or a camera that has frozen and stopped sending frames.",
+    diyChecks: [
+      "Check the DVR/NVR menu for hard-drive status and free space — a full drive stops recording silently",
+      "Check the recording schedule: some systems stop recording after firmware updates",
+      "Reboot the DVR/NVR once — frozen recorders often resume after a clean restart",
+      "Check all camera feeds individually; one frozen camera on the grid is easy to miss"
+    ],
+    prevention: [
+      "Use surveillance-grade hard drives (WD Purple, Seagate SkyHawk) designed for 24/7 writes",
+      "Set the recording schedule to overwrite old footage automatically",
+      "Test playback monthly — check last week's recording, not just the live view",
+      "Put the DVR/NVR on a surge-protected socket; power failures corrupt drives"
+    ],
+    costDetail: "A hard-drive or power-supply replacement with testing starts around RM180–RM400. A full 8-channel DVR + drive + install runs RM850–RM1,800; data recovery from a failed drive is quoted separately (RM350–RM1,200) depending on damage. We test the whole system before leaving so recording is confirmed working."
   },
 
   // ── AUTOGATE extras ──────────────────────────────────────────────────────
