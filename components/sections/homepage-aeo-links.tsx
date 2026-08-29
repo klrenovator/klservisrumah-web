@@ -75,8 +75,9 @@ export function HomepageAeoLinks() {
             </h2>
             <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
               Jump straight to the service, area, common home problem or planning tool
-              that matches what you&apos;re dealing with today. Every page is written by
-              local tradesmen and updated for {new Date().getFullYear()}.
+              that matches what you&apos;re dealing with today. Every guide is researched
+              from our own job records, published rates and written warranty terms,
+              and refreshed for {new Date().getFullYear()}.
             </p>
           </div>
         </Reveal>

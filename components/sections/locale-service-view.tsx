@@ -14,6 +14,13 @@ import { ServiceEstimatorBlock } from "@/components/tools/service-estimator-bloc
 type LocaleServiceViewProps = {
   service: ServiceDetail;
   sub?: SubService;
+  /** Audit P4-06 — slim include/exclude data from the rate-book, computed on
+      the server so the 63 KB rate-book registry never enters the client
+      bundle. Threaded through to the pricing section. */
+  scopeSummary?: {
+    scopes: { name: string; published: string }[];
+    quoteOnly: { name: string; desc: string }[];
+  };
 };
 
 /**
@@ -24,7 +31,7 @@ type LocaleServiceViewProps = {
  * IMPORTANT: The ServiceEstimatorBlock is rendered FIRST, before the hero,
  * so customers can immediately calculate their estimate without scrolling.
  */
-export function LocaleServiceView({ service, sub }: LocaleServiceViewProps) {
+export function LocaleServiceView({ service, sub, scopeSummary }: LocaleServiceViewProps) {
   const { lang } = useLang();
   const localized = getLocalizedService(service, lang);
 
@@ -52,7 +59,7 @@ export function LocaleServiceView({ service, sub }: LocaleServiceViewProps) {
       <ServiceDetailHero service={localized} />
       
       {/* Rest of content (overviews, FAQs, etc.) */}
-      <ServiceDetailContent service={localized} />
+      <ServiceDetailContent service={localized} scopeSummary={scopeSummary} />
     </>
   );
 }

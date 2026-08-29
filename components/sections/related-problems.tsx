@@ -4,13 +4,27 @@ import React from "react";
 import Link from "next/link";
 import { getLocalizedProblemNav, problemNavList } from "@/config/problem-nav.generated";
 import { isRedirectedProblemSlug, problemPath } from "@/config/problem-canonical";
-import { ArrowRight, AlertTriangle } from "lucide-react";
+import { ArrowRight, AlertTriangle, Calculator } from "lucide-react";
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
 
 type RelatedProblemsProps = {
   serviceSlug: string;
   maxItems?: number;
+  /** Audit P4-17 — render the service's cost-calculator tools under the
+      problems (closes the tools ↔ problems link loop for aircon). */
+  showTools?: boolean;
+};
+
+// Audit P4-17 — tool ↔ problem cross-links for the flagship aircon service.
+// Slugs are the published `/tools/<slug>` routes (verified in the corpus).
+const SERVICE_TOOLS: Record<string, { slug: string; labelKey: string }[]> = {
+  aircon: [
+    { slug: "aircon-btu-calculator", labelKey: "toolsList.airconBtu" },
+    { slug: "aircon-installation-cost", labelKey: "toolsList.airconInstall" },
+    { slug: "aircon-gas-topup-cost", labelKey: "toolsList.airconGas" },
+    { slug: "aircon-electricity-cost", labelKey: "toolsList.airconElectricity" }
+  ]
 };
 
 /**
@@ -25,7 +39,7 @@ type RelatedProblemsProps = {
  * of English. The links still resolve to the EN `/problems/[slug]` route,
  * where `LocaleProblemView` renders the locale-appropriate full page.
  */
-export function RelatedProblems({ serviceSlug, maxItems = 4 }: RelatedProblemsProps) {
+export function RelatedProblems({ serviceSlug, maxItems = 4, showTools = false }: RelatedProblemsProps) {
   const t = useTranslations();
   const { lang } = useLang();
 
@@ -90,6 +104,34 @@ export function RelatedProblems({ serviceSlug, maxItems = 4 }: RelatedProblemsPr
             >
               {t("internalLinks.viewAllProblems")} <ArrowRight className="w-4 h-4" />
             </Link>
+          </div>
+        )}
+
+        {showTools && SERVICE_TOOLS[serviceSlug] && (
+          <div className="mt-10 rounded-2xl border border-sky-100 bg-sky-50/50 p-5 sm:p-6">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+              <div>
+                <h3 className="flex items-center gap-2 text-sm font-extrabold text-[#075985]">
+                  <Calculator className="w-4 h-4 text-[#0EA5E9]" aria-hidden="true" />
+                  {t("internalLinks.airconTools")}
+                </h3>
+                <p className="mt-1 text-xs font-semibold text-[#475569] leading-relaxed">
+                  {t("internalLinks.airconToolsSub")}
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {SERVICE_TOOLS[serviceSlug].map((tool) => (
+                  <Link
+                    key={tool.slug}
+                    href={`/tools/${tool.slug}`}
+                    className="inline-flex items-center gap-1.5 rounded-full border border-sky-200 bg-white px-3.5 py-2 text-xs font-extrabold text-[#075985] transition hover:border-[#0EA5E9] hover:bg-sky-50"
+                  >
+                    {t(tool.labelKey)}
+                    <ArrowRight className="h-3 w-3" aria-hidden="true" />
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
         )}
       </div>

@@ -5,6 +5,7 @@ import { areaPages } from "@/config/area-data";
 import { getFAQSchema } from "@/lib/seo";
 import { buildAreaBundle } from "@/lib/location-bundles";
 import { LocaleAreaView } from "@/components/sections/locale-area-view";
+import { CoverageMap } from "@/components/sections/coverage-map";
 
 const baseUrl = "https://www.klservisrumah.my";
 
@@ -83,6 +84,19 @@ export default async function AreaSlugPage(props: { params: Promise<{ slug: stri
       />
 
       <LocaleAreaView slug={area.slug} landmarks={area.landmarks} bundle={buildAreaBundle(area)} />
+
+      {/* Audit P4-12 — coverage map with the current area highlighted (static
+          SVG; CSP `frame-src 'none'` rules out third-party map iframes). */}
+      <CoverageMap
+        highlightSlug={area.slug}
+        areas={areaPages.map((a) => ({
+          slug: a.slug,
+          name: a.name,
+          shortName: a.shortName,
+          lat: a.lat,
+          lng: a.lng
+        }))}
+      />
     </>
   );
 }

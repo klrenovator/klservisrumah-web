@@ -3,7 +3,7 @@ import { Providers } from "@/app/providers";
 import type { Locale, MessageDictionary } from "@/lib/i18n";
 import { Navbar } from "@/components/ui/navbar";
 import { Footer } from "@/components/ui/footer";
-import { WhatsAppButton } from "@/components/ui/whatsapp-button";
+import { StickyBookButton } from "@/components/sticky-book-button";
 import { StickyMobileWhatsAppBar } from "@/components/sticky-mobile-whatsapp-bar";
 import { WebVitalsReporter } from "@/components/web-vitals-reporter";
 import { ErrorReporter } from "@/components/error-reporter";
@@ -56,7 +56,12 @@ export function SiteChrome({
           {children}
         </main>
         <Footer />
-        <WhatsAppButton />
+        {/* Audit P4-05/P4-03 — ONE persistent desktop booking float on every
+            page (service/area context derived from the path in the
+            component). The old WhatsApp dispatch desk was removed so service
+            pages no longer stack two floating CTAs; mobile keeps the sticky
+            WhatsApp+Call bar. */}
+        <StickyBookButton />
         <StickyMobileWhatsAppBar />
         <CookieConsent />
         <DeferredWidgets />

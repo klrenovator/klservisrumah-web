@@ -1,10 +1,12 @@
 import React from "react";
 import { buildMetadata } from "@/lib/seo-meta";
 import { ServiceAreas } from "@/components/sections/service-areas";
+import { CoverageMap } from "@/components/sections/coverage-map";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { WhyChooseUs } from "@/components/sections/why-choose-us";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
+import { areaPages } from "@/config/area-data";
 import { MapPin, Phone, MessageSquare } from "lucide-react";
 
 export const metadata = buildMetadata({
@@ -73,6 +75,18 @@ export default function AreasPage() {
       </section>
 
       <Breadcrumbs items={[{ label: "Coverage Areas", href: "/areas" }]} />
+
+      {/* Audit P4-12 — visible coverage map (static SVG; the CSP blocks
+          third-party iframes, so this is the audit's listed alternative). */}
+      <CoverageMap
+        areas={areaPages.map((a) => ({
+          slug: a.slug,
+          name: a.name,
+          shortName: a.shortName,
+          lat: a.lat,
+          lng: a.lng
+        }))}
+      />
 
       <ServiceAreas />
 

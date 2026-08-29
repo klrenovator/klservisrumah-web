@@ -9,6 +9,7 @@ import { getWhatsAppLink } from "@/lib/whatsapp";
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
 import { HeroSearchBar } from "@/components/ui/hero-search-bar";
+import { QuickQuoteForm } from "@/components/sections/quick-quote-form";
 
 // Photographic hero slideshow — matches the KLRenovator gold-standard
 // visual language while keeping the KL Servis Rumah quote form.
@@ -219,7 +220,7 @@ export function Hero() {
   return (
     <>
       <section
-        className="relative flex min-h-[calc(100svh-5rem)] w-full items-center overflow-hidden bg-slate-950 sm:min-h-[calc(100svh-7rem)]"
+        className="relative flex min-h-0 w-full items-center overflow-hidden bg-slate-950 sm:min-h-[calc(100svh-7rem)]"
         aria-label={t("a11y.heroSection")}
       >
         {/* Background slideshow — only current + previous frames stay mounted.
@@ -360,6 +361,22 @@ export function Hero() {
                   <span>{t("common.callUs")} {siteConfig.phoneDisplay}</span>
                 </a>
               </div>
+
+              {/* Audit P4-02 — the quote form previously sat in a separate
+                  section AFTER the full-viewport mobile hero, i.e. below the
+                  fold. Surface the (static, JS-free) quick quote form inside
+                  the hero viewport on mobile/tablet; desktop keeps the rich
+                  QuoteBox in the right column. The hero min-height is
+                  content-driven on mobile (min-h-0) so the form is reachable
+                  without scrolling. */}
+              <div className="w-full mt-4 lg:hidden">
+                <div className="rounded-3xl border border-white/20 bg-white/95 p-5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] backdrop-blur-xl sm:p-6">
+                  <p className="mb-4 text-sm font-extrabold text-[#075985]">
+                    {t("hero.quoteTitle")}
+                  </p>
+                  <QuickQuoteForm compact />
+                </div>
+              </div>
             </div>
 
             {/* Right conversion box (desktop only to preserve the desktop hero layout) */}
@@ -367,14 +384,6 @@ export function Hero() {
               <QuoteBox {...quoteBoxProps} variant="desktop" />
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Mobile quote card is intentionally placed after the hero image section,
-          preventing the form from overlapping the photographic background. */}
-      <section className="bg-white px-4 py-8 sm:px-6 sm:py-10 lg:hidden" aria-label={t("hero.quoteTitle")}>
-        <div className="mx-auto max-w-xl">
-          <QuoteBox {...quoteBoxProps} variant="mobile" />
         </div>
       </section>
     </>

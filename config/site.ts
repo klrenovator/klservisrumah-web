@@ -151,6 +151,10 @@ export const siteConfig = {
     // Verified KL Servis Rumah Google Business Profile (replaces the old
     // short link that resolved to the unrelated KLRenovator presence).
     googleMaps: "https://share.google/7GZef2rDjtRuqW2h1",
-    googleBusiness: "https://share.google/7GZef2rDjtRuqW2h1"
+    googleBusiness: "https://share.google/7GZef2rDjtRuqW2h1",
+    // Audit P4-12: schema `hasMap` must be a real map URL, not a GBP share
+    // shortlink. Google's universal place URL (no API key required).
+    mapUrl:
+      "https://www.google.com/maps/search/?api=1&query=KL+Servis+Rumah%2C+Jalan+Kiara%2C+Mont+Kiara%2C+50480+Kuala+Lumpur"
   }
 };

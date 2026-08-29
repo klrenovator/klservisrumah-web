@@ -616,7 +616,9 @@
     "nearMeDesc": "Pilih lokasi anda untuk melihat harga tempatan, ketersediaan dan maklumat perhubungan.",
     "guides": "Panduan Berkaitan",
     "guidesEyebrow": "Panduan Pakar",
-    "guidesSub": "Panduan praktikal untuk membantu anda memilih, merancang dan menyelenggara — daripada warna cat hingga kos pengubahsuaian."
+    "guidesSub": "Panduan praktikal untuk membantu anda memilih, merancang dan menyelenggara — daripada warna cat hingga kos pengubahsuaian.",
+    "airconTools": "Kalkulator kos aircond",
+    "airconToolsSub": "Anggarkan kos dengan pantas sebelum menghubungi kami — semua kalkulator percuma."
   },
   "hero": {
     "subline": "Servis mengecat, siling, partition dan penyelenggaraan rumah di KL & Selangor",
@@ -656,7 +658,8 @@
     "guideViewComparison": "Bandingkan bahan",
     "guideDiscussProject": "Bincangkan Projek Awning Anda",
     "guideWhatsAppCta": "Minta sebut harga awning",
-    "guideFactorsNote": "Nota harga"
+    "guideFactorsNote": "Nota harga",
+    "fullPriceGuide": "Panduan Harga Penuh"
   },
   "serviceContent": {
     "overviewEyebrow": "Gambaran keseluruhan",
@@ -720,7 +723,16 @@
     "pricingLink": "Panduan harga",
     "projectQuotedTrust": "Harga Ikut Sebut Harga, Skop Disahkan Bertulis",
     "whatsappResponse": "Respons WhatsApp Pantas",
-    "quoteOnlyAnswer": "{title} disyorkan apabila anda memerlukan {tagline} Perkhidmatan ini diberi harga mengikut projek: KL Servis Rumah mengesahkan skop, bahan dan terma sebut harga secara bertulis sebelum kerja bermula, dengan {warranty}. Hantar lokasi, gambar dan anggaran ukuran di WhatsApp untuk sebut harga khusus projek."
+    "quoteOnlyAnswer": "{title} disyorkan apabila anda memerlukan {tagline} Perkhidmatan ini diberi harga mengikut projek: KL Servis Rumah mengesahkan skop, bahan dan terma sebut harga secara bertulis sebelum kerja bermula, dengan {warranty}. Hantar lokasi, gambar dan anggaran ukuran di WhatsApp untuk sebut harga khusus projek.",
+    "includedHeading": "Apa yang termasuk dalam sebut harga",
+    "includedSub": "Setiap item di bawah termasuk dalam kadar yang diterbitkan — tiada kejutan.",
+    "notIncludedHeading": "Apa yang TIDAK termasuk (disebut harga berasingan)",
+    "notIncludedSub": "Kerja di bawah memerlukan sebut harga berasingan kerana ia berbeza mengikut tapak dan bahan.",
+    "excludedGeneric": {
+      "1": "Bahan di luar spesifikasi standard (cth. cat import premium, jubin pereka, kerja kayu tersuai).",
+      "2": "Kerja struktur, galas beban atau yang memerlukan permit — disebut harga dan diluluskan berasingan.",
+      "3": "Kerja tambahan yang ditemui selepas pembukaan tapak — kami berhenti, sebut harga dan tunggu kelulusan anda."
+    }
   },
   "subserviceContent": {
     "whatsIncluded": "Apa yang disertakan",
@@ -1617,5 +1629,31 @@
   },
   "smartFinder": {
     "closeAria": "Tutup carian"
+  },
+  "quickQuote": {
+    "nameLabel": "Nama anda (pilihan)",
+    "namePlaceholder": "cth. Ahmad bin Ali",
+    "messageLabel": "Terangkan kerja yang diperlukan (pilihan)",
+    "messagePlaceholder": "cth. Cat 2 bilik, bocor siling 20 kaki…",
+    "submit": "Dapatkan Sebut Harga di WhatsApp",
+    "note": "Membuka WhatsApp dengan permintaan anda — tiada akaun diperlukan."
+  },
+  "toolsList": {
+    "airconBtu": "Kalkulator BTU Aircond",
+    "airconInstall": "Kos Pemasangan Aircond",
+    "airconGas": "Kos Top-Up Gas Aircond",
+    "airconElectricity": "Kos Elektrik Aircond"
+  },
+  "coverageMap": {
+    "eyebrow": "Kawasan Liputan",
+    "title": "Kami Meliputi Seluruh Lembah Klang",
+    "subtitle": "KL Servis Rumah berkhidmat di 38 kawasan di seluruh Kuala Lumpur & Selangor — penghantaran hari yang sama tersedia.",
+    "legend": "Kawasan perkhidmatan",
+    "viewAll": "Lihat Semua Kawasan",
+    "caption": "Klik mana-mana titik untuk melihat perkhidmatan dan harga di kawasan itu.",
+    "ariaDefault": "Peta liputan semua kawasan perkhidmatan KL Servis Rumah di Lembah Klang",
+    "ariaHighlighted": "Peta liputan dengan {area} diserlahkan",
+    "highlight": "Kawasan diserlahkan",
+    "ask": "Tidak pasti? Tanya di WhatsApp"
   }
 }

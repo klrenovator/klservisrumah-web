@@ -616,7 +616,9 @@
     "nearMeDesc": "Select your location to see local pricing, availability, and contact information.",
     "guides": "Related Guides",
     "guidesEyebrow": "Expert Guides",
-    "guidesSub": "Practical guides to help you choose, plan and maintain — from paint colours to renovation costs."
+    "guidesSub": "Practical guides to help you choose, plan and maintain — from paint colours to renovation costs.",
+    "airconTools": "Aircon cost calculators",
+    "airconToolsSub": "Estimate the cost in seconds before you call — all calculators are free."
   },
   "hero": {
     "subline": "Painting, ceiling, partition and home maintenance across KL & Selangor",
@@ -656,7 +658,8 @@
     "guideViewComparison": "Compare materials",
     "guideDiscussProject": "Discuss Your Awning Project",
     "guideWhatsAppCta": "Request an awning quotation",
-    "guideFactorsNote": "Pricing note"
+    "guideFactorsNote": "Pricing note",
+    "fullPriceGuide": "Full Price Guide"
   },
   "serviceContent": {
     "overviewEyebrow": "Overview",
@@ -720,7 +723,16 @@
     "pricingLink": "Pricing guide",
     "projectQuotedTrust": "Project-Quoted, Scope Confirmed in Writing",
     "whatsappResponse": "Fast WhatsApp Response",
-    "quoteOnlyAnswer": "{title} is recommended when you need {tagline} This service is priced by project: KL Servis Rumah confirms the exact scope, materials and quotation terms in writing before work begins, with {warranty}. Send your location, photos and rough dimensions on WhatsApp for a project-specific quotation."
+    "quoteOnlyAnswer": "{title} is recommended when you need {tagline} This service is priced by project: KL Servis Rumah confirms the exact scope, materials and quotation terms in writing before work begins, with {warranty}. Send your location, photos and rough dimensions on WhatsApp for a project-specific quotation.",
+    "includedHeading": "What's included in your quote",
+    "includedSub": "Every item below is covered by the published rates — no surprises.",
+    "notIncludedHeading": "What's not included (quoted separately)",
+    "notIncludedSub": "The work below needs a separate quote because it varies by site and materials.",
+    "excludedGeneric": {
+      "1": "Materials beyond the standard specification (e.g. premium imported paint, designer tiles, custom joinery).",
+      "2": "Structural, load-bearing or permit-required work — quoted and approved separately.",
+      "3": "Additional work discovered after opening up the site — we stop, quote and wait for your approval."
+    }
   },
   "subserviceContent": {
     "whatsIncluded": "What's included",
@@ -1617,5 +1629,31 @@
   },
   "smartFinder": {
     "closeAria": "Close search"
+  },
+  "quickQuote": {
+    "nameLabel": "Your name (optional)",
+    "namePlaceholder": "e.g. Ahmad bin Ali",
+    "messageLabel": "Describe the job (optional)",
+    "messagePlaceholder": "e.g. Repaint 2 rooms, 20 ft ceiling leak…",
+    "submit": "Get Quote on WhatsApp",
+    "note": "Opens WhatsApp with your request pre-filled — no account needed."
+  },
+  "toolsList": {
+    "airconBtu": "Aircon BTU Calculator",
+    "airconInstall": "Aircon Installation Cost",
+    "airconGas": "Aircon Gas Top-Up Cost",
+    "airconElectricity": "Aircon Electricity Cost"
+  },
+  "coverageMap": {
+    "eyebrow": "Service Coverage",
+    "title": "We Cover All of Klang Valley",
+    "subtitle": "KL Servis Rumah serves 38 areas across Kuala Lumpur & Selangor — same-day dispatch available.",
+    "legend": "Service area",
+    "viewAll": "View All Areas",
+    "caption": "Click any marker to see services and pricing for that area.",
+    "ariaDefault": "Coverage map of all KL Servis Rumah service areas in the Klang Valley",
+    "ariaHighlighted": "Coverage map with {area} highlighted",
+    "highlight": "Highlighted area",
+    "ask": "Not sure? Ask on WhatsApp"
   }
 }
