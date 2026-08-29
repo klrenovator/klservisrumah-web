@@ -121,6 +121,10 @@ function cleanText(html: string): string {
     .replace(/&nbsp;/g, " ")
     .replace(/&amp;/g, "&")
     .replace(/&quot;/g, '"')
+    // Rendered HTML emits apostrophes as the hex entity `&#x27;` (React
+    // escape). part 5 decodes it for the same reason — without it, quoted
+    // phrases like "Can't" never match the readable text.
+    .replace(/&#x27;/g, "'")
     .replace(/&#39;|&apos;/g, "'")
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">")
@@ -131,9 +135,18 @@ function cleanText(html: string): string {
 
 /** Content block = everything after the last </footer> (same convention as Part 2). */
 function contentText(html: string): string {
-  const idx = html.lastIndexOf("</footer>");
-  const block = idx === -1 ? html : html.slice(idx + 9);
-  return cleanText(block);
+  // FIX WAVE 12 — this used to slice the text AFTER the last `</footer>`,
+  // because the pre-Wave-2 layout rendered page content there (P2-C1/P4-01:
+  // "content currently after `</footer>` on 5,815 pages"). Wave 2 moved the
+  // content inside `<main>`, so the old slice measured only the trailing
+  // inline scripts and every readability / DirectAnswer / NAP / vague-term
+  // signal silently read zero (words=8 on 3,600+ pages, qa=0% even on the 29
+  // service hubs that demonstrably carry the card). Read the whole document
+  // body instead — `cleanText()` already drops `<script>`, `<style>`, `<svg>`
+  // and comments, so JSON-LD and CSS never pollute the readable text.
+  const bodyStart = html.search(/<body[^>]*>/i);
+  const body = bodyStart === -1 ? html : html.slice(bodyStart);
+  return cleanText(body);
 }
 
 function wordStats(text: string): { words: number; cjk: number } {

@@ -7,7 +7,24 @@ import { getArticleSchema, getFAQSchema, getOfferCatalogSchema } from "@/lib/seo
 import { SERVICE_SCOPES } from "@/lib/estimator/rate-book.generated";
 import { buildEstimateLinks } from "@/config/estimate-links";
 import { buildServiceBundle, buildServiceCostDetail, buildServiceLinks } from "@/lib/location-bundles";
+import { createTranslator, type MessageDictionary } from "@/lib/i18n";
+import { buildCostDirectAnswer, buildCostDirectAnswerVars } from "@/lib/cost-direct-answer";
+import enMessagesJson from "@/messages/en.json";
 import { LocaleServiceCostView } from "@/components/sections/locale-service-cost-view";
+
+const englishMessages = enMessagesJson as MessageDictionary;
+
+/**
+ * English translator for the strings this route marks up in JSON-LD. The
+ * DirectAnswer card is rendered by the localized client view; running the very
+ * same builder against the EN dictionary guarantees the marked-up Question and
+ * Answer are byte-identical to the server-rendered H2 and paragraph (P5-02 /
+ * part 5's `faqSchemaNoVisibleMatch` check).
+ */
+const translateEn = createTranslator(
+  { en: englishMessages, ms: englishMessages, zh: englishMessages },
+  "en"
+);
 
 // Every valid param is enumerated in `generateStaticParams()`, so anything
 // else must 404 rather than be rendered on demand and cached as a 200
@@ -49,17 +66,38 @@ export default async function CostPage(props: { params: Promise<{ slug: string }
   const service = servicesData[slug];
   if (!service) notFound();
   const rates = getMarketRatesForService(slug as MarketRateItem["serviceSlug"]);
-  // Schema (canonical EN HTML): site-wide FAQ templates + this service's own
-  // published FAQs. Both are rendered visibly by the client view, so the
-  // marked-up Q&As always exist in the server-rendered document.
+  const scopeBook = SERVICE_SCOPES[slug] ?? { startPrice: 0, scopes: [], quoteOnly: [] };
+
+  // P3-04 — the literal "how much does {service} cost in KL & Selangor?" card
+  // is both rendered (client view) and marked up (below), so the highest-intent
+  // query for this business is answered in the extractable format on all 29
+  // money pages. Built here from the same pure builder the view calls.
+  const directAnswer = buildCostDirectAnswer(
+    translateEn,
+    buildCostDirectAnswerVars({
+      t: translateEn,
+      locale: "en",
+      name: service.title,
+      startPrice: service.startPrice,
+      units: scopeBook.scopes.map((scope) => scope.unit),
+      scopeCount: scopeBook.scopes.length,
+      quoteOnlyCount: scopeBook.quoteOnly.length
+    })
+  );
+
+  // Schema (canonical EN HTML): the DirectAnswer Q&A first (it is the headline
+  // query, and part 5 checks the FIRST marked-up Question against the rendered
+  // text), then the site-wide FAQ templates, then this service's own published
+  // FAQs. All of them are rendered visibly by the client view, so the marked-up
+  // Q&As always exist in the server-rendered document.
   const faqs = [
+    { q: directAnswer.question, a: directAnswer.answer },
     ...COST_FAQS_EN.map((faq) => ({
       q: faq.q.replace("{name}", service.title).replace("{startPrice}", service.startPrice),
       a: faq.a.replace("{name}", service.title).replace("{startPrice}", service.startPrice)
     })),
     ...service.faqs
   ];
-  const scopeBook = SERVICE_SCOPES[slug];
   const estimatorHref =
     buildEstimateLinks().find((link) => link.slug === slug)?.resolvedPath ?? `/estimate/${slug}`;
 

@@ -14,7 +14,7 @@ import { RelatedProblems } from "@/components/sections/related-problems";
 import { ServiceAreaLinks } from "@/components/sections/service-area-links";
 import { RelatedBlogs } from "@/components/sections/related-blogs";
 import { ServiceGuideSection } from "@/components/sections/service-guide-section";
-import { warrantyLead, slugify } from "@/lib/utils";
+import { warrantyLead, slugify, lowerFirstSentence } from "@/lib/utils";
 import { buildServiceTrilingualNotes } from "@/lib/direct-answer-trilingual";
 import Link from "next/link";
 
@@ -104,7 +104,7 @@ export function ServiceDetailContent({ service, scopeSummary }: ServiceDetailCon
           {isQuoteOnly(service) ? (
             <DirectAnswer
               question={t("serviceContent.isRightService", { name: service.title.toLowerCase() })}
-              answer={`${service.title} is recommended when you need ${service.tagline.toLowerCase()} This service is priced by project: KL Servis Rumah confirms the exact scope, materials and quotation terms in writing before work begins, with ${service.warranty.toLowerCase()}. Send your location, photos and rough dimensions on WhatsApp for a project-specific quotation — no generic 'starting from' price is published because every awning is built to the site.`}
+              answer={`${service.title} is recommended when you need ${lowerFirstSentence(service.tagline)} This service is priced by project: KL Servis Rumah confirms the exact scope, materials and quotation terms in writing before work begins, with ${service.warranty.toLowerCase()}. Send your location, photos and rough dimensions on WhatsApp for a project-specific quotation — no generic 'starting from' price is published because every awning is built to the site.`}
               trilingualMs={notes.ms}
               trilingualZh={notes.zh}
               trustItems={
@@ -119,7 +119,7 @@ export function ServiceDetailContent({ service, scopeSummary }: ServiceDetailCon
           ) : (
             <DirectAnswer
               question={t("serviceContent.isRightService", { name: service.title.toLowerCase() })}
-              answer={`${service.title} is recommended when you need ${service.tagline.toLowerCase()} Our ${service.title} packages start from ${service.startPrice} and include transparent itemized quotes, fully insured operations, and a written ${service.warranty.toLowerCase()}. KL Servis Rumah confirms the exact scope, price, and any material costs before work begins so you can book with a clear budget and no hidden surprises.`}
+              answer={`${service.title} is recommended when you need ${lowerFirstSentence(service.tagline)} Our ${service.title} packages start from ${service.startPrice} and include transparent itemized quotes, fully insured operations, and a written ${service.warranty.toLowerCase()}. KL Servis Rumah confirms the exact scope, price, and any material costs before work begins so you can book with a clear budget and no hidden surprises.`}
               trilingualMs={notes.ms}
               trilingualZh={notes.zh}
               trustItems={[

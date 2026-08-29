@@ -8,12 +8,19 @@ import type { Locale } from "@/lib/i18n";
 import type { LocaleMap, ServiceBundleEntry, ServiceCostDetail, ServiceLinkEntry } from "@/lib/location-bundles";
 import type { ServiceScopeBook, ScopeUnit } from "@/lib/estimator/rate-book.generated";
 import { formatMYR } from "@/lib/estimator/format";
+import { lowerFirstSentence } from "@/lib/utils";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { useLang } from "@/context/lang-context";
 import { useTranslations } from "@/hooks/use-translations";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { VisibleFaqList } from "@/components/content/visible-faq";
+import { DirectAnswer } from "@/components/content/direct-answer";
 import { NapContactStrip } from "@/components/content/nap-contact-strip";
+import {
+  buildCostDirectAnswer,
+  buildCostDirectAnswerPills,
+  buildCostDirectAnswerVars
+} from "@/lib/cost-direct-answer";
 import { isEmergencyService } from "@/config/emergency-services";
 
 type LocaleServiceCostViewProps = {
@@ -100,6 +107,26 @@ export function LocaleServiceCostView({
 
   const example = buildExample({ scopeBook, pricedSubs, t });
 
+  // P3-04 — the money page's AI-citable answer card. Built by the same pure
+  // builder the server route uses for the FAQPage JSON-LD, so the marked-up
+  // Question/Answer and the rendered H2/paragraph stay byte-identical.
+  const directAnswerVars = buildCostDirectAnswerVars({
+    t,
+    locale,
+    name: service.title,
+    startPrice,
+    units: scopeBook.scopes.map((scope) => scope.unit),
+    scopeCount: scopeBook.scopes.length,
+    quoteOnlyCount: scopeBook.quoteOnly.length
+  });
+  const directAnswer = buildCostDirectAnswer(t, directAnswerVars);
+  const directAnswerActions = [
+    ...(scopeBook.scopes.length > 0
+      ? [{ href: estimatorHref, label: t("costPage.calculatorButton", { name: service.title }) }]
+      : []),
+    { href: waLink, label: t("costPage.ctaButton") }
+  ];
+
   return (
     <>
       <Breadcrumbs
@@ -123,6 +150,20 @@ export function LocaleServiceCostView({
           <p className="mt-4 text-base font-semibold leading-relaxed text-[#475569]">
             {t("costPage.intro")}
           </p>
+
+          {/* ── DirectAnswer — literal "how much" card (P3-04) ──────── */}
+          {/* The question is an H2 ending in "?" (the extractable format AI
+              Overviews quote) and the answer cites the published starting
+              price *with its unit* plus the pricing basis, then hands the
+              visitor the estimator. Same card in EN / BM / 中文. */}
+          <div className="mt-8">
+            <DirectAnswer
+              question={directAnswer.question}
+              answer={directAnswer.answer}
+              trustItems={buildCostDirectAnswerPills(t)}
+              actions={directAnswerActions}
+            />
+          </div>
 
           {/* ── Published rate book ─────────────────────────────────── */}
           {scopeBook.scopes.length > 0 && (
@@ -499,9 +540,8 @@ function buildExample({
   });
 }
 
-function lowerFirst(value: string): string {
-  return value ? value.charAt(0).toLowerCase() + value.slice(1) : value;
-}
+/** Shared with the service-hub DirectAnswer (P3-05: never lower-case a price). */
+const lowerFirst = lowerFirstSentence;
 
 /** "From RM 450 / room" → "RM 450 / room"; "RM 450 / 房间起" → "RM 450 / 房间". */
 function cleanAmount(published: string): string {

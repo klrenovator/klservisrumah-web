@@ -1317,6 +1317,16 @@
     "costCrumb": "Cost",
     "badge": "2026 pricing guide",
     "h1": "How much does {name} cost in KL & Selangor?",
+    "directAnswer": {
+      "question": "How much does {name} cost in KL & Selangor?",
+      "answer": "{name} in KL & Selangor starts from {startPrice}; the {scopeCount} published rates below are priced {unitBasis}. Every figure is confirmed in writing before work starts, while access, materials and site condition move the final number — run the {name} estimator for an instant ballpark, then send photos and measurements for a fixed written quote.",
+      "answerQuoteOnly": "{name} in KL & Selangor is quoted per project: no generic starting price is published because every job is designed and fabricated for the site. The {quoteOnlyCount} scopes below are priced after measurements and site photos. Send your location, drawings or photos and we will confirm scope, materials and price in writing before fabrication begins.",
+      "perUnit": "per {unit}",
+      "unitSeparator": ", ",
+      "pill1": "Published rate book",
+      "pill2": "Fixed quote in writing",
+      "pill3": "No hidden fees"
+    },
     "intro": "Use this guide to understand fair Klang Valley pricing before requesting a fixed quote. Final cost depends on measurements, access, materials and the actual site condition.",
     "tableCaption": "{name} price ranges",
     "scope": "Scope",

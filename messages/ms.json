@@ -1317,6 +1317,16 @@
     "costCrumb": "Kos",
     "badge": "Panduan harga 2026",
     "h1": "Berapakah kos {name} di KL & Selangor?",
+    "directAnswer": {
+      "question": "Berapakah kos {name} di KL & Selangor?",
+      "answer": "{name} di KL & Selangor bermula dari {startPrice}; {scopeCount} kadar tersiar di bawah dikira mengikut {unitBasis}. Setiap angka disahkan secara bertulis sebelum kerja bermula, manakala akses, bahan serta keadaan tapak menentukan jumlah akhir — buka penganggar {name} untuk anggaran segera, kemudian hantar gambar dan ukuran untuk sebut harga tetap bertulis.",
+      "answerQuoteOnly": "{name} di KL & Selangor diberi harga mengikut projek: tiada harga mula umum diterbitkan kerana setiap kerja direka dan difabrikasi mengikut tapak. {quoteOnlyCount} skop di bawah dinilai selepas ukuran serta gambar tapak diambil. Hantar lokasi, lukisan atau gambar anda dan kami akan sahkan skop, bahan serta harga secara bertulis sebelum fabrikasi bermula.",
+      "perUnit": "{unit}",
+      "unitSeparator": ", ",
+      "pill1": "Senarai kadar tersiar",
+      "pill2": "Sebut harga tetap bertulis",
+      "pill3": "Tiada caj tersembunyi"
+    },
     "intro": "Gunakan panduan ini untuk memahami harga adil Lembah Klang sebelum meminta sebut harga tetap. Kos akhir bergantung pada ukuran, akses, bahan dan keadaan sebenar di tapak.",
     "tableCaption": "Julat harga {name}",
     "scope": "Skop",

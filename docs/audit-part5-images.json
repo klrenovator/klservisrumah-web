@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-29T03:23:11.476Z",
+  "generatedAt": "2026-08-29T16:25:51.126Z",
   "distinctImages": 37,
   "topImages": [
     {
       "src": "/logo/logo-lockup.png",
-      "pages": 3669
+      "pages": 4080
     },
     {
       "src": "/hero-aircon.svg",
@@ -177,7 +177,7 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=About+Us+%E2%80%94+Trusted+Home+Services+KL+%26+Selangor&amp;t=default"
       ]
     },
     "en:/answers": {
@@ -191,7 +191,7 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Home+Service+Answers+for+KL+%26+Selangor+%7C+KL+Servis+Rumah&amp;t=pod"
       ]
     },
     "en:/answers/<slug>": {
@@ -205,7 +205,9 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Aircon+Service%2C+Repair+%26+Installation+Ultimate+Guide+for+KL&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Auto+Gate+%26+Motorised+Gate+Ultimate+Guide+for+KL+%26+Selangor&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Awning+Installation+Services+Ultimate+Guide+for+KL&amp;t=pod"
       ]
     },
     "en:/areas/<area>": {
@@ -219,7 +221,9 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Ampang+Painting%2C+Plumbing+%26+Waterproofing+%7C+KL+Servis+Rumah&amp;t=area",
+        "https://www.klservisrumah.my/og-image?title=Ara+Damansara+Painting+%26+Plumbing+%7C+KL+Servis+Rumah&amp;t=area",
+        "https://www.klservisrumah.my/og-image?title=Bandar+Utama+Home+Services+%E2%80%94+Painter%2C+Plumber+%26+Handyman&amp;t=area"
       ]
     },
     "en:/areas/<area>/<svc>": {
@@ -233,9 +237,9 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/hero-aircon.svg",
-        "https://www.klservisrumah.my/hero-autogate.svg",
-        "https://www.klservisrumah.my/hero-awning.svg"
+        "https://www.klservisrumah.my/og-image?title=Ampang+Aircon+Service%2C+Repair+%26+Installation&amp;t=area",
+        "https://www.klservisrumah.my/og-image?title=Ampang+Auto+Gate+%26+Motorised+Gate+%7C+KL+Servis+Rumah&amp;t=area",
+        "https://www.klservisrumah.my/og-image?title=Ampang+Awning+Installation+Services+%7C+KL+Servis+Rumah&amp;t=area"
       ]
     },
     "en:/areas/other": {
@@ -249,7 +253,7 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Service+Coverage+Areas+in+KL+%26+Selangor+%7C+KL+Servis+Rumah&amp;t=area"
       ]
     },
     "en:/blog": {
@@ -263,7 +267,7 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Home+Maintenance+Blog+%E2%80%94+Expert+Tips+KL+%26+Selangor&amp;t=blog"
       ]
     },
     "en:/blog/<slug>": {
@@ -278,8 +282,8 @@
       "totalNoDims": 0,
       "ogImages": [
         "https://www.klservisrumah.my/hero/home-services-kitchen-cabinet-kl.jpg",
-        "https://www.klservisrumah.my/hero-painting.svg",
-        "https://www.klservisrumah.my/hero-aircon.svg"
+        "https://www.klservisrumah.my/og-image?title=How+to+Choose+Living+Room+%26+Exterior+Paint+Colors+Malaysia&amp;t=blog",
+        "https://www.klservisrumah.my/og-image?title=Aircon+Gas+Top-Up+Guide+%E2%80%94+R22%2C+R410A+%26+R32+Prices&amp;t=blog"
       ]
     },
     "en:/brands": {
@@ -293,7 +297,7 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Material+%26+Brand+Guides+Malaysia+%7C+KL+Servis+Rumah&amp;t=pod"
       ]
     },
     "en:/brands/<slug>": {
@@ -307,7 +311,9 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Acson+Aircon+Service+Malaysia+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Aux+Aircon+Service+Malaysia+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Boral+Gypsum+Board+Installation+%7C+KL+Servis+Rumah&amp;t=pod"
       ]
     },
     "en:/commercial": {
@@ -321,7 +327,7 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Commercial+Home+Services+KL+%26+Selangor+%7C+KL+Servis+Rumah&amp;t=pod"
       ]
     },
     "en:/commercial/<slug>": {
@@ -335,7 +341,9 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Commercial+Aircon+Service%2C+Repair+%26+Installation+in+KL&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Commercial+Auto+Gate+%26+Motorised+Gate+in+KL&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Commercial+Awning+Installation+Services+in+KL&amp;t=pod"
       ]
     },
     "en:/compare": {
@@ -349,7 +357,7 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Home+Service+Comparisons+KL+%26+Selangor+%7C+KL+Servis+Rumah&amp;t=pod"
       ]
     },
     "en:/compare/<slug>": {
@@ -363,7 +371,9 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Acrylic+vs+Cementitious+Waterproofing+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Cheap+Handyman+vs+Insured+Contractor+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Chemical+Wash+vs+Chemical+Overhaul+%7C+KL+Servis+Rumah&amp;t=pod"
       ]
     },
     "en:/contact": {
@@ -377,7 +387,7 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Contact+%26+Booking+%E2%80%94+Home+Services+KL+%26+Selangor&amp;t=default"
       ]
     },
     "en:/estimate/*": {
@@ -391,7 +401,9 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Aircon+Service%2C+Repair+%26+Installation+Cost+Estimator&amp;t=default",
+        "https://www.klservisrumah.my/og-image?title=Auto+Gate+%26+Motorised+Gate+Cost+Estimator+%7C+KL+Servis+Rumah&amp;t=default",
+        "https://www.klservisrumah.my/og-image?title=Bathroom+Renovation+Cost+Estimator+%7C+KL+Servis+Rumah&amp;t=default"
       ]
     },
     "en:/faq": {
@@ -405,7 +417,7 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=FAQ+%E2%80%94+Every+Home+Service+Question+Answered+%7C+KL+Servis+Rumah&amp;t=default"
       ]
     },
     "en:/guides": {
@@ -419,7 +431,7 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Home+Service+Guides+KL+%26+Selangor+%7C+KL+Servis+Rumah&amp;t=pod"
       ]
     },
     "en:/guides/*": {
@@ -433,7 +445,9 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Ceiling+Material+Comparison%3A+Plaster+vs+Gypsum&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=How+to+Choose+a+Ceiling+Contractor+in+KL+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=How+to+Choose+a+Handyman+in+KL+%7C+KL+Servis+Rumah&amp;t=pod"
       ]
     },
     "en:/near-me/<svc>": {
@@ -447,9 +461,9 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/hero-aircon.svg",
-        "https://www.klservisrumah.my/hero-autogate.svg",
-        "https://www.klservisrumah.my/hero-awning.svg"
+        "https://www.klservisrumah.my/og-image?title=Aircon+Service%2C+Repair+%26+Installation+Near+Me+in+KL&amp;t=area",
+        "https://www.klservisrumah.my/og-image?title=Auto+Gate+%26+Motorised+Gate+Near+Me+in+KL+%26+Selangor&amp;t=area",
+        "https://www.klservisrumah.my/og-image?title=Awning+Installation+Services+Near+Me+in+KL+%26+Selangor&amp;t=area"
       ]
     },
     "en:/pricing": {
@@ -463,7 +477,7 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Home+Services+Pricing+KL+%26+Selangor+%E2%80%94+2026+Guide&amp;t=default"
       ]
     },
     "en:/privacy": {
@@ -477,7 +491,7 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Privacy+Notice+%7C+KL+Servis+Rumah&amp;t=default"
       ]
     },
     "en:/problems": {
@@ -491,7 +505,7 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Home+Problem+Guides+%E2%80%94+Diagnose+%26+Fix+KL+Homes&amp;t=problem"
       ]
     },
     "en:/problems/<p>": {
@@ -505,7 +519,9 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Aircon+Bad+Smell+%28Mouldy+or+Musty+Odour%29&amp;t=problem",
+        "https://www.klservisrumah.my/og-image?title=Aircon+Making+Noise+%28Rattling%2C+Buzzing%2C+Grinding%29&amp;t=problem",
+        "https://www.klservisrumah.my/og-image?title=Aircon+Not+Cold+%28Warm+Air+Blowing%29%3A+Causes%2C+Fixes+%26+Cost&amp;t=problem"
       ]
     },
     "en:/process": {
@@ -519,7 +535,7 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Home+Service+Process+Guides+KL+%7C+KL+Servis+Rumah&amp;t=pod"
       ]
     },
     "en:/process/<slug>": {
@@ -533,7 +549,9 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Aircon+Service%2C+Repair+%26+Installation+Process+in+KL&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Auto+Gate+%26+Motorised+Gate+Process+in+KL+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Awning+Installation+Services+Process+in+KL+%7C+KL+Servis+Rumah&amp;t=pod"
       ]
     },
     "en:/projects": {
@@ -547,7 +565,7 @@
       "meanLazy": 5,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Project+Gallery+%7C+KL+Servis+Rumah&amp;t=default"
       ]
     },
     "en:/residential": {
@@ -561,7 +579,7 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Residential+Home+Services+KL+%26+Selangor+%7C+KL+Servis+Rumah&amp;t=pod"
       ]
     },
     "en:/residential/<slug>": {
@@ -575,7 +593,9 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Residential+Aircon+Service%2C+Repair+%26+Installation+in+KL&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Residential+Auto+Gate+%26+Motorised+Gate+in+KL&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Residential+Awning+Installation+Services+in+KL&amp;t=pod"
       ]
     },
     "en:/seasonal": {
@@ -589,7 +609,7 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Seasonal+Home+Service+Guides+Malaysia+%7C+KL+Servis+Rumah&amp;t=pod"
       ]
     },
     "en:/seasonal/<slug>": {
@@ -603,7 +623,9 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Chinese+New+Year+Home+Repaint+Guide+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Hari+Raya+Painting+Promo+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Home+Prep+Rainy+Season+Kl+%7C+KL+Servis+Rumah&amp;t=pod"
       ]
     },
     "en:/services/<svc>": {
@@ -617,9 +639,9 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/hero-aircon.svg",
-        "https://www.klservisrumah.my/hero-autogate.svg",
-        "https://www.klservisrumah.my/hero-awning.svg"
+        "https://www.klservisrumah.my/og-image?title=Aircon+Service%2C+Repair+%26+Installation+KL+%26+Selangor&amp;t=service",
+        "https://www.klservisrumah.my/og-image?title=Auto+Gate+Installation+%26+Repair+KL+%26+Selangor&amp;t=service",
+        "https://www.klservisrumah.my/og-image?title=Awning+Installation+KL+%26+Selangor+%7C+Car+Porch&amp;t=service"
       ]
     },
     "en:/services/<svc>/<sub>": {
@@ -633,9 +655,9 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/hero-aircon.svg",
-        "https://www.klservisrumah.my/hero-autogate.svg",
-        "https://www.klservisrumah.my/hero-awning.svg"
+        "https://www.klservisrumah.my/og-image?title=1.5+HP+Aircon+Installation+in+KL+%7C+KL+Servis+Rumah&amp;t=service",
+        "https://www.klservisrumah.my/og-image?title=1+HP+Aircon+Installation+in+KL+%7C+KL+Servis+Rumah&amp;t=service",
+        "https://www.klservisrumah.my/og-image?title=2+HP+Aircon+Installation+in+KL+%7C+KL+Servis+Rumah&amp;t=service"
       ]
     },
     "en:/services/<svc>/cost": {
@@ -649,13 +671,13 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/hero-aircon.svg",
-        "https://www.klservisrumah.my/hero-autogate.svg",
-        "https://www.klservisrumah.my/hero-awning.svg"
+        "https://www.klservisrumah.my/og-image?title=Aircon+Service%2C+Repair+%26+Installation+Cost+in+KL+%26+Selangor&amp;t=cost",
+        "https://www.klservisrumah.my/og-image?title=Auto+Gate+%26+Motorised+Gate+Cost+in+KL+%26+Selangor&amp;t=cost",
+        "https://www.klservisrumah.my/og-image?title=Awning+Installation+Services+Cost+in+KL+%26+Selangor&amp;t=cost"
       ]
     },
     "en:/services/<svc>/emergency": {
-      "pages": 29,
+      "pages": 12,
       "meanImgs": 2,
       "meanRaster": 2,
       "meanSvg": 0,
@@ -665,9 +687,9 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/hero-aircon.svg",
-        "https://www.klservisrumah.my/hero-autogate.svg",
-        "https://www.klservisrumah.my/hero-awning.svg"
+        "https://www.klservisrumah.my/og-image?title=Urgent+Auto+Gate+%26+Motorised+Gate+KL+%26+Selangor&amp;t=service",
+        "https://www.klservisrumah.my/hero/home-services-cctv-kl.jpg",
+        "https://www.klservisrumah.my/hero/home-services-ceiling-kl.jpg"
       ]
     },
     "en:/static/_not-found": {
@@ -695,9 +717,9 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/hero-aircon.svg",
-        "https://www.klservisrumah.my/hero-autogate.svg",
-        "https://www.klservisrumah.my/hero-awning.svg"
+        "https://www.klservisrumah.my/og-image?title=Local+Balakong+Aircon+Service%2C+Repair+%26+Installation&amp;t=area",
+        "https://www.klservisrumah.my/og-image?title=Local+Balakong+Auto+Gate+%26+Motorised+Gate+%7C+KL+Servis+Rumah&amp;t=area",
+        "https://www.klservisrumah.my/og-image?title=Local+Balakong+Awning+Installation+Services&amp;t=area"
       ]
     },
     "en:/terms": {
@@ -711,7 +733,7 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Website+%26+Service+Terms+%7C+KL+Servis+Rumah&amp;t=default"
       ]
     },
     "en:/tools/<slug>": {
@@ -725,9 +747,9 @@
       "meanLazy": 1.9,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/hero-aircon.svg",
-        "https://www.klservisrumah.my/tools/water-leak-triage-kl.webp",
-        "https://www.klservisrumah.my/hero-renovation.svg"
+        "https://www.klservisrumah.my/og-image?title=Aircon+BTU+Calculator+%E2%80%94+Cooling+Capacity+%7C+KL+Servis+Rumah&amp;t=tool",
+        "https://www.klservisrumah.my/og-image?title=Aircon+Electricity+Cost+Calculator+Malaysia&amp;t=tool",
+        "https://www.klservisrumah.my/og-image?title=Aircon+Gas+Top-Up+Cost+Calculator+KL+%7C+KL+Servis+Rumah&amp;t=tool"
       ]
     },
     "en:/top": {
@@ -741,7 +763,7 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Home+Service+Comparison+Criteria+KL+%7C+KL+Servis+Rumah&amp;t=pod"
       ]
     },
     "en:/top/<slug>": {
@@ -755,7 +777,9 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Bathroom+Waterproofing+Options+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=How+to+Compare+Ceiling+Contractors+in+KL+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=How+to+Compare+Handyman+Services+in+KL+%7C+KL+Servis+Rumah&amp;t=pod"
       ]
     },
     "ms:/": {
@@ -772,6 +796,36 @@
         "https://www.klservisrumah.my/logo/og-image.jpg"
       ]
     },
+    "ms:/answers": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=Panduan+Perkhidmatan+Rumah+KL+%26+Selangor+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
+    "ms:/answers/<slug>": {
+      "pages": 29,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=Panduan+Lengkap+Aircond+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Panduan+Lengkap+Pintu+Automatik+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Panduan+Lengkap+Pemasangan+Awning+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
     "ms:/blog": {
       "pages": 1,
       "meanImgs": 2,
@@ -783,7 +837,7 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Blog+Rumah+%26+Panduan+Pakar+%E2%80%94+KL+%26+Selangor+%7C+KL+Servis+Rumah&amp;t=blog"
       ]
     },
     "ms:/blog/<slug>": {
@@ -797,9 +851,99 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/hero-painting.svg",
-        "https://www.klservisrumah.my/hero-carpentry.svg",
-        "https://www.klservisrumah.my/hero-autogate.svg"
+        "https://www.klservisrumah.my/og-image?title=5+Petua+Memilih+Warna+Cat+Rumah+di+Malaysia&amp;t=blog",
+        "https://www.klservisrumah.my/og-image?title=Pemasangan+Almari+Pakaian+Tanam+di+KL+%26+Selangor&amp;t=blog",
+        "https://www.klservisrumah.my/og-image?title=Pemasangan+Autogate+Ayunan+Double+di+KL+%26+Selangor&amp;t=blog"
+      ]
+    },
+    "ms:/brands": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=Panduan+Jenama+%26+Bahan+di+Malaysia+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
+    "ms:/brands/<slug>": {
+      "pages": 32,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=Servis+Aircond+Acson+di+Malaysia+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Servis+Aircond+AUX+di+Malaysia+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Pemasangan+Papan+Gypsum+Boral+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
+    "ms:/commercial": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=Perkhidmatan+Komersial+KL+%26+Selangor+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
+    "ms:/commercial/<slug>": {
+      "pages": 29,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=Perkhidmatan+Aircond+Komersial+di+KL+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Perkhidmatan+Pintu+Automatik+Komersial+di+KL&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Perkhidmatan+Pemasangan+Awning+Komersial+di+KL&amp;t=pod"
+      ]
+    },
+    "ms:/compare": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=Perbandingan+Kaedah+%26+Bahan+Rumah+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
+    "ms:/compare/<slug>": {
+      "pages": 18,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=Kalis+Air+Akrilik+vs+Cement+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Tukang+Murah+vs+Kontraktor+Berinsurans+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Cucian+Kimia+vs+Overhaul+Kimia+%7C+KL+Servis+Rumah&amp;t=pod"
       ]
     },
     "ms:/faq": {
@@ -813,7 +957,37 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Soalan+Lazim+%E2%80%94+Setiap+Soalan+Perkhidmatan+Rumah+Dijawab&amp;t=default"
+      ]
+    },
+    "ms:/guides": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=Panduan+Memilih+Kontraktor+%26+Kaedah+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
+    "ms:/guides/*": {
+      "pages": 21,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=Perbandingan+Bahan+Siling%3A+Plaster+vs+Gypsum&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Cara+Memilih+Kontraktor+Siling+di+KL+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Cara+Memilih+Tukang+Serba+di+KL+%7C+KL+Servis+Rumah&amp;t=pod"
       ]
     },
     "ms:/problems": {
@@ -827,7 +1001,7 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Masalah+Rumah+Biasa+KL+%26+Selangor+%E2%80%94+Punca+%26+Kos&amp;t=problem"
       ]
     },
     "ms:/problems/<p>": {
@@ -841,7 +1015,99 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Aircond+Berbau+Busuk+%28Bau+Kulat+atau+Apak%29&amp;t=problem",
+        "https://www.klservisrumah.my/og-image?title=Aircond+Berbunyi+Bising+%28Bergetar%2C+Berdengung%2C+Mengisar%29&amp;t=problem",
+        "https://www.klservisrumah.my/og-image?title=Aircond+Tidak+Sejuk+%28Hembusan+Udara+Panas%29&amp;t=problem"
+      ]
+    },
+    "ms:/process": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=Proses+Perkhidmatan+Rumah+di+KL+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
+    "ms:/process/<slug>": {
+      "pages": 29,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=Proses+Aircond+di+KL+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Proses+Pintu+Automatik+di+KL+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Proses+Pemasangan+Awning+di+KL+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
+    "ms:/residential": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=Perkhidmatan+Kediaman+KL+%26+Selangor+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
+    "ms:/residential/<slug>": {
+      "pages": 29,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=Perkhidmatan+Aircond+Kediaman+di+KL+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Perkhidmatan+Pintu+Automatik+Kediaman+di+KL&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Perkhidmatan+Pemasangan+Awning+Kediaman+di+KL&amp;t=pod"
+      ]
+    },
+    "ms:/seasonal": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=Penyelenggaraan+%26+Perancangan+Musiman+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
+    "ms:/seasonal/<slug>": {
+      "pages": 8,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=Panduan+Pengecatan+Rumah+Tahun+Baru+Cina+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Promosi+Pengecatan+Hari+Raya+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Persediaan+Rumah+Musim+Hujan+KL+%7C+KL+Servis+Rumah&amp;t=pod"
       ]
     },
     "ms:/services/<svc>": {
@@ -855,9 +1121,9 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/hero-aircon.svg",
-        "https://www.klservisrumah.my/hero-autogate.svg",
-        "https://www.klservisrumah.my/hero-awning.svg"
+        "https://www.klservisrumah.my/og-image?title=Servis%2C+Baiki+%26+Pemasangan+Aircond+KL+%26+Selangor&amp;t=service",
+        "https://www.klservisrumah.my/og-image?title=Pemasangan+Autogate+KL+%26+Selangor+%7C+KL+Servis+Rumah&amp;t=service",
+        "https://www.klservisrumah.my/og-image?title=Pemasangan+Awning+KL+%26+Selangor+%7C+Car+Porch+%26+Polikarbonat&amp;t=service"
       ]
     },
     "ms:/services/<svc>/<sub>": {
@@ -871,9 +1137,9 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/hero-aircon.svg",
-        "https://www.klservisrumah.my/hero-autogate.svg",
-        "https://www.klservisrumah.my/hero-awning.svg"
+        "https://www.klservisrumah.my/og-image?title=Servis+Asas+Aircond+KL+%26+Selangor+%E2%80%94+Dari+RM+129&amp;t=service",
+        "https://www.klservisrumah.my/og-image?title=Servis+Kaset+Siling+Aircond+KL+%26+Selangor+%E2%80%94+Dari+RM+195&amp;t=service",
+        "https://www.klservisrumah.my/og-image?title=Overhaul+Kimia+Aircond+KL+%26+Selangor+%E2%80%94+Dari+RM+286&amp;t=service"
       ]
     },
     "ms:/static/notis-privasi": {
@@ -887,7 +1153,7 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Notis+Privasi+%7C+KL+Servis+Rumah&amp;t=default"
       ]
     },
     "ms:/static/terma": {
@@ -901,7 +1167,7 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=Terma+Laman+%26+Perkhidmatan+%7C+KL+Servis+Rumah&amp;t=default"
       ]
     },
     "ms:/tools/<slug>": {
@@ -915,9 +1181,39 @@
       "meanLazy": 1.9,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/tools/plumbing-diagnostic-kl.webp",
-        "https://www.klservisrumah.my/hero/home-services-waterproofing-kl.jpg",
-        "https://www.klservisrumah.my/tools/water-leak-triage-kl.webp"
+        "https://www.klservisrumah.my/og-image?title=Kalkulator+Baiki+Paip+Bocor+KL+%7C+KL+Servis+Rumah&amp;t=tool",
+        "https://www.klservisrumah.my/og-image?title=Kalkulator+Kos+Baiki+Bumbung+KL+%7C+KL+Servis+Rumah&amp;t=tool",
+        "https://www.klservisrumah.my/og-image?title=Trias+Kebocoran+KL+%E2%80%94+Punca+%26+Kos+%7C+KL+Servis+Rumah&amp;t=tool"
+      ]
+    },
+    "ms:/top": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=Cara+Membanding+Perkhidmatan+Rumah+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
+    "ms:/top/<slug>": {
+      "pages": 10,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=Pilihan+Kalis+Air+Bilik+Air+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Cara+Membandingkan+Kontraktor+Siling+di+KL+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=Cara+Membandingkan+Servis+Handyman+di+KL+%7C+KL+Servis+Rumah&amp;t=pod"
       ]
     },
     "zh:/": {
@@ -934,6 +1230,126 @@
         "https://www.klservisrumah.my/logo/og-image.jpg"
       ]
     },
+    "zh:/answers": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=%E5%90%89%E9%9A%86%E5%9D%A1%E4%B8%8E%E9%9B%AA%E5%85%B0%E8%8E%AA%E5%AE%B6%E5%B1%85%E6%9C%8D%E5%8A%A1%E8%A7%A3%E7%AD%94%E6%8C%87%E5%8D%97+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
+    "zh:/answers/<slug>": {
+      "pages": 29,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=%E7%A9%BA%E8%B0%83%E5%AE%8C%E6%95%B4%E6%8C%87%E5%8D%97+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=%E8%87%AA%E5%8A%A8%E9%97%A8%E5%AE%8C%E6%95%B4%E6%8C%87%E5%8D%97+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=%E9%9B%A8%E6%A3%9A%E5%AE%89%E8%A3%85%E5%AE%8C%E6%95%B4%E6%8C%87%E5%8D%97+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
+    "zh:/brands": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A%E5%93%81%E7%89%8C%E4%B8%8E%E6%9D%90%E6%96%99%E6%8C%87%E5%8D%97+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
+    "zh:/brands/<slug>": {
+      "pages": 32,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=Acson%E7%A9%BA%E8%B0%83%E6%9C%8D%E5%8A%A1%EF%BC%88%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A%EF%BC%89+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=AUX%E7%A9%BA%E8%B0%83%E6%9C%8D%E5%8A%A1%EF%BC%88%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A%EF%BC%89+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=%E5%8D%9A%E6%8B%89%E5%B0%94%E7%9F%B3%E8%86%8F%E6%9D%BF%E5%AE%89%E8%A3%85+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
+    "zh:/commercial": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=%E5%90%89%E9%9A%86%E5%9D%A1%E4%B8%8E%E9%9B%AA%E5%85%B0%E8%8E%AA%E5%95%86%E4%B8%9A%E6%9C%8D%E5%8A%A1+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
+    "zh:/commercial/<slug>": {
+      "pages": 29,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=%E5%90%89%E9%9A%86%E5%9D%A1%E5%95%86%E4%B8%9A%E7%A9%BA%E8%B0%83%E6%9C%8D%E5%8A%A1+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=%E5%90%89%E9%9A%86%E5%9D%A1%E5%95%86%E4%B8%9A%E8%87%AA%E5%8A%A8%E9%97%A8%E6%9C%8D%E5%8A%A1+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=%E5%90%89%E9%9A%86%E5%9D%A1%E5%95%86%E4%B8%9A%E9%9B%A8%E6%A3%9A%E5%AE%89%E8%A3%85%E6%9C%8D%E5%8A%A1+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
+    "zh:/compare": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=%E5%AE%B6%E5%B1%85%E6%96%B9%E6%B3%95%E4%B8%8E%E6%9D%90%E6%96%99%E5%AF%B9%E6%AF%94+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
+    "zh:/compare/<slug>": {
+      "pages": 18,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=%E4%B8%99%E7%83%AF%E9%85%B8%E9%98%B2%E6%B0%B4vs%E6%B0%B4%E6%B3%A5%E9%98%B2%E6%B0%B4+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=%E5%BB%89%E4%BB%B7%E6%9D%82%E5%B7%A5vs%E6%9C%89%E4%BF%9D%E9%99%A9%E6%89%BF%E5%8C%85%E5%95%86+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=%E5%8C%96%E5%AD%A6%E6%B8%85%E6%B4%97+vs+%E5%8C%96%E5%AD%A6%E6%B7%B1%E5%BA%A6%E4%BF%9D%E5%85%BB+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
     "zh:/faq": {
       "pages": 1,
       "meanImgs": 2,
@@ -945,7 +1361,37 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98+%E2%80%94+%E6%89%80%E6%9C%89%E4%BD%8F%E5%AE%85%E6%9C%8D%E5%8A%A1%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94&amp;t=default"
+      ]
+    },
+    "zh:/guides": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=%E9%80%89%E6%8B%A9%E6%89%BF%E5%8C%85%E5%95%86%E4%B8%8E%E6%96%B9%E6%B3%95%E6%8C%87%E5%8D%97+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
+    "zh:/guides/*": {
+      "pages": 21,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=%E5%A4%A9%E8%8A%B1%E6%9D%BF%E6%9D%90%E6%96%99%E6%AF%94%E8%BE%83%EF%BC%9A%E7%9F%B3%E8%86%8Fvs%E7%9F%B3%E8%86%8F%E6%9D%BF+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=%E5%A6%82%E4%BD%95%E5%9C%A8%E5%90%89%E9%9A%86%E5%9D%A1%E9%80%89%E6%8B%A9%E5%A4%A9%E8%8A%B1%E6%9D%BF%E6%89%BF%E5%8C%85%E5%95%86+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=%E5%A6%82%E4%BD%95%E5%9C%A8%E5%90%89%E9%9A%86%E5%9D%A1%E9%80%89%E6%8B%A9%E6%9D%82%E5%B7%A5+%7C+KL+Servis+Rumah&amp;t=pod"
       ]
     },
     "zh:/problems": {
@@ -959,7 +1405,7 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=%E5%90%89%E9%9A%86%E5%9D%A1%E4%B8%8E%E9%9B%AA%E5%85%B0%E8%8E%AA%E5%B8%B8%E8%A7%81%E5%AE%B6%E5%B1%85%E9%97%AE%E9%A2%98+%E2%80%94+%E6%88%90%E5%9B%A0%E4%B8%8E%E7%BB%B4%E4%BF%AE%E8%B4%B9%E7%94%A8&amp;t=problem"
       ]
     },
     "zh:/problems/<p>": {
@@ -973,7 +1419,99 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=%E7%A9%BA%E8%B0%83%E6%9C%89%E5%BC%82%E5%91%B3%EF%BC%88%E9%9C%89%E5%91%B3%E6%88%96%E5%8F%91%E9%85%B8%E5%91%B3%EF%BC%89%EF%BC%9A%E5%8E%9F%E5%9B%A0%E3%80%81%E4%BF%AE%E5%A4%8D%E4%B8%8E%E8%B4%B9%E7%94%A8&amp;t=problem",
+        "https://www.klservisrumah.my/og-image?title=%E7%A9%BA%E8%B0%83%E6%9C%89%E5%99%AA%E9%9F%B3%EF%BC%88%E5%92%94%E5%97%92%E3%80%81%E5%97%A1%E5%97%A1%E3%80%81%E6%91%A9%E6%93%A6%E5%A3%B0%EF%BC%89%EF%BC%9A%E5%8E%9F%E5%9B%A0%E3%80%81%E4%BF%AE%E5%A4%8D%E4%B8%8E%E8%B4%B9%E7%94%A8&amp;t=problem",
+        "https://www.klservisrumah.my/og-image?title=%E7%A9%BA%E8%B0%83%E4%B8%8D%E5%86%B7%EF%BC%88%E5%90%B9%E5%87%BA%E7%83%AD%E9%A3%8E%EF%BC%89%EF%BC%9A%E5%8E%9F%E5%9B%A0%E3%80%81%E4%BF%AE%E5%A4%8D%E4%B8%8E%E8%B4%B9%E7%94%A8&amp;t=problem"
+      ]
+    },
+    "zh:/process": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=%E5%90%89%E9%9A%86%E5%9D%A1%E5%AE%B6%E5%B1%85%E6%9C%8D%E5%8A%A1%E6%B5%81%E7%A8%8B+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
+    "zh:/process/<slug>": {
+      "pages": 29,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=%E7%A9%BA%E8%B0%83%E6%B5%81%E7%A8%8B+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=%E8%87%AA%E5%8A%A8%E9%97%A8%E6%B5%81%E7%A8%8B+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=%E9%9B%A8%E6%A3%9A%E5%AE%89%E8%A3%85%E6%B5%81%E7%A8%8B+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
+    "zh:/residential": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=%E5%90%89%E9%9A%86%E5%9D%A1%E4%B8%8E%E9%9B%AA%E5%85%B0%E8%8E%AA%E4%BD%8F%E5%AE%85%E6%9C%8D%E5%8A%A1+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
+    "zh:/residential/<slug>": {
+      "pages": 29,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=%E5%90%89%E9%9A%86%E5%9D%A1%E4%BD%8F%E5%AE%85%E7%A9%BA%E8%B0%83%E6%9C%8D%E5%8A%A1+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=%E5%90%89%E9%9A%86%E5%9D%A1%E4%BD%8F%E5%AE%85%E8%87%AA%E5%8A%A8%E9%97%A8%E6%9C%8D%E5%8A%A1+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=%E5%90%89%E9%9A%86%E5%9D%A1%E4%BD%8F%E5%AE%85%E9%9B%A8%E6%A3%9A%E5%AE%89%E8%A3%85%E6%9C%8D%E5%8A%A1+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
+    "zh:/seasonal": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=%E5%AD%A3%E8%8A%82%E6%80%A7%E4%BF%9D%E5%85%BB%E4%B8%8E%E8%A7%84%E5%88%92+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
+    "zh:/seasonal/<slug>": {
+      "pages": 8,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=%E6%98%A5%E8%8A%82%E6%88%BF%E5%B1%8B%E9%87%8D%E5%88%B7%E6%8C%87%E5%8D%97+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=%E5%BC%80%E6%96%8B%E8%8A%82%E6%B2%B9%E6%BC%86%E4%BC%98%E6%83%A0+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=%E5%90%89%E9%9A%86%E5%9D%A1%E9%9B%A8%E5%AD%A3%E6%88%BF%E5%B1%8B%E5%87%86%E5%A4%87+%7C+KL+Servis+Rumah&amp;t=pod"
       ]
     },
     "zh:/services/<svc>": {
@@ -987,9 +1525,9 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/hero-aircon.svg",
-        "https://www.klservisrumah.my/hero-autogate.svg",
-        "https://www.klservisrumah.my/hero-awning.svg"
+        "https://www.klservisrumah.my/og-image?title=%E5%90%89%E9%9A%86%E5%9D%A1%E4%B8%8E%E9%9B%AA%E5%85%B0%E8%8E%AA%E7%A9%BA%E8%B0%83%E4%BF%9D%E5%85%BB%E3%80%81%E7%BB%B4%E4%BF%AE%E4%B8%8E%E5%AE%89%E8%A3%85&amp;t=service",
+        "https://www.klservisrumah.my/og-image?title=%E5%90%89%E9%9A%86%E5%9D%A1%E4%B8%8E%E9%9B%AA%E5%85%B0%E8%8E%AA%E7%94%B5%E5%8A%A8%E9%97%A8%E5%AE%89%E8%A3%85+%7C+KL+Servis+Rumah&amp;t=service",
+        "https://www.klservisrumah.my/og-image?title=%E5%90%89%E9%9A%86%E5%9D%A1%E4%B8%8E%E9%9B%AA%E5%85%B0%E8%8E%AA%E9%9B%A8%E6%A3%9A%E5%AE%89%E8%A3%85+%7C+%E8%BD%A6%E6%A3%9A%E4%B8%8E%E8%81%9A%E7%A2%B3%E9%85%B8%E9%85%AF%E9%9B%A8%E6%A3%9A&amp;t=service"
       ]
     },
     "zh:/services/<svc>/<sub>": {
@@ -1003,9 +1541,9 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/hero-aircon.svg",
-        "https://www.klservisrumah.my/hero-autogate.svg",
-        "https://www.klservisrumah.my/hero-awning.svg"
+        "https://www.klservisrumah.my/og-image?title=%E5%90%89%E9%9A%86%E5%9D%A1%E4%B8%8E%E9%9B%AA%E5%85%B0%E8%8E%AA%E7%A9%BA%E8%B0%83%E5%9F%BA%E6%9C%AC%E4%BF%9D%E5%85%BB+%E2%80%94+%E4%BB%8E+RM+129+%E8%B5%B7&amp;t=service",
+        "https://www.klservisrumah.my/og-image?title=%E5%90%89%E9%9A%86%E5%9D%A1%E4%B8%8E%E9%9B%AA%E5%85%B0%E8%8E%AA%E5%A4%A9%E8%8A%B1%E5%8D%A1%E5%BC%8F%E7%A9%BA%E8%B0%83%E4%BF%9D%E5%85%BB+%E2%80%94+%E4%BB%8E+RM+195+%E8%B5%B7&amp;t=service",
+        "https://www.klservisrumah.my/og-image?title=%E5%90%89%E9%9A%86%E5%9D%A1%E4%B8%8E%E9%9B%AA%E5%85%B0%E8%8E%AA%E7%A9%BA%E8%B0%83%E5%8C%96%E5%AD%A6%E5%A4%A7%E4%BF%AE+%E2%80%94+%E4%BB%8E+RM+286+%E8%B5%B7&amp;t=service"
       ]
     },
     "zh:/static/bo-ke": {
@@ -1019,9 +1557,9 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/hero-aircon.svg",
-        "https://www.klservisrumah.my/hero-waterproofing.svg",
-        "https://www.klservisrumah.my/hero/home-services-painters-kl.jpg"
+        "https://www.klservisrumah.my/og-image?title=%E7%A9%BA%E8%B0%83%E5%8A%A0%E9%9B%AA%E7%A7%8D%E6%8C%87%E5%8D%97+%E2%80%94+R22%E3%80%81R410A+%E4%B8%8E+R32+%E4%BB%B7%E6%A0%BC&amp;t=blog",
+        "https://www.klservisrumah.my/og-image?title=%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A%E7%A9%BA%E8%B0%83%E5%AE%89%E8%A3%85%E8%B4%B9%E7%94%A8+2026+%E2%80%94+%E5%8C%85%E5%90%AB%E5%93%AA%E4%BA%9B%E5%86%85%E5%AE%B9&amp;t=blog",
+        "https://www.klservisrumah.my/og-image?title=%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A%E7%A9%BA%E8%B0%83%E4%BF%9D%E5%85%BB%E4%BB%B7%E6%A0%BC+2026+%E2%80%94+%E5%AE%8C%E6%95%B4%E4%BB%B7%E6%A0%BC%E6%8C%87%E5%8D%97&amp;t=blog"
       ]
     },
     "zh:/static/tiao-kuan": {
@@ -1035,7 +1573,7 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=%E7%BD%91%E7%AB%99%E4%B8%8E%E6%9C%8D%E5%8A%A1%E6%9D%A1%E6%AC%BE+%7C+KL+Servis+Rumah&amp;t=default"
       ]
     },
     "zh:/static/yin-si-sheng-ming": {
@@ -1049,7 +1587,7 @@
       "meanLazy": 1,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/logo/og-image.jpg"
+        "https://www.klservisrumah.my/og-image?title=%E9%9A%90%E7%A7%81%E5%A3%B0%E6%98%8E+%7C+KL+Servis+Rumah&amp;t=default"
       ]
     },
     "zh:/tools/<slug>": {
@@ -1063,9 +1601,39 @@
       "meanLazy": 1.9,
       "totalNoDims": 0,
       "ogImages": [
-        "https://www.klservisrumah.my/hero-renovation.svg",
-        "https://www.klservisrumah.my/hero-aircon.svg",
-        "https://www.klservisrumah.my/hero/home-services-electrical-kl.jpg"
+        "https://www.klservisrumah.my/og-image?title=%E5%8E%A8%E6%88%BF%E8%A3%85%E4%BF%AE%E8%B4%B9%E7%94%A8%E4%BC%B0%E4%BB%B7+KL+%7C+KL+Servis+Rumah&amp;t=tool",
+        "https://www.klservisrumah.my/og-image?title=%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A%E5%8F%98%E9%A2%91%E7%A9%BA%E8%B0%83%E7%9C%81%E7%94%B5%E8%AE%A1%E7%AE%97%E5%99%A8+%7C+KL+Servis+Rumah&amp;t=tool",
+        "https://www.klservisrumah.my/og-image?title=%E5%90%8A%E6%89%87%E5%AE%89%E8%A3%85%E8%B4%B9%E7%94%A8%E4%BC%B0%E4%BB%B7+KL+%7C+KL+Servis+Rumah&amp;t=tool"
+      ]
+    },
+    "zh:/top": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=%E5%A6%82%E4%BD%95%E5%AF%B9%E6%AF%94%E5%AE%B6%E5%B1%85%E6%9C%8D%E5%8A%A1+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
+    "zh:/top/<slug>": {
+      "pages": 10,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=%E6%B5%B4%E5%AE%A4%E9%98%B2%E6%B0%B4%E9%80%89%E6%8B%A9+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=%E5%90%89%E9%9A%86%E5%9D%A1%E5%A4%A9%E8%8A%B1%E6%9D%BF%E6%89%BF%E5%8C%85%E5%95%86%E6%AF%94%E8%BE%83%E6%8C%87%E5%8D%97+%7C+KL+Servis+Rumah&amp;t=pod",
+        "https://www.klservisrumah.my/og-image?title=%E5%90%89%E9%9A%86%E5%9D%A1%E5%AE%B6%E5%B1%85%E6%9D%82%E5%B7%A5%E6%9C%8D%E5%8A%A1%E6%AF%94%E8%BE%83%E6%8C%87%E5%8D%97+%7C+KL+Servis+Rumah&amp;t=pod"
       ]
     }
   }

@@ -6,6 +6,37 @@
 
 ## Current State (Update this each session)
 
+> **Fix Wave 12 COMPLETE (2026-08-29):** **P3-04 closed** — the last unblocked
+> **P1** on the board. All 29 `/services/<svc>/cost` money pages now open with
+> the literal *"How much does {service} cost in KL & Selangor?"* DirectAnswer
+> card: question H2 + a 2–3 sentence answer citing the published starting price
+> **with its unit** + the rate-book-derived pricing basis + an estimator link,
+> in EN / BM / 中文, built by the new pure `lib/cost-direct-answer.ts`. The same
+> builder feeds the first `FAQPage` `Question`, so marked-up schema and rendered
+> HTML cannot drift (verified 29/29). New prebuild gate
+> `audit:cost-direct-answer` (87 cards = 29 services × 3 locales; negative-tested
+> 3 ways). **P3-05 closed too:** all four recorded AI-surface leaks re-verified
+> fixed, plus the two it missed — 28/29 service hubs printed "from **rm** 14 /
+> sq ft" inside the DirectAnswer (`.toLowerCase()` on a registry field) →
+> new `lowerFirstSentence()` + a permanent case-sensitive `lowercase-currency`
+> check in `audit:html` (28 fatals pre-fix → none post-fix). Also repaired
+> `scripts/part3-aeo-audit.ts#contentText()`, which still sliced the text after
+> the last `</footer>` (pre-Wave-2 layout) and had silently zeroed every
+> readability / DirectAnswer / NAP signal since Wave 2. Corpus result:
+> `/services/<svc>/cost` **qa 0% → 100%**, "how much" H2 **0 → 29/29**,
+> `faqSchemaNoVisibleMatch` **0**, BM/中文 leaks 0/0. All gates PASS (prebuild
+> 320,291 × 0; build 4,080 HTML; audit:html none/none; audit:links 308,753+56 →
+> 0 broken; audit:seo-head 4,054 = 4,054; schema-size; bp1; location-similarity;
+> meta; seo:audit; part5 0 JSON-LD errors). Full log:
+> `docs/full-website-deep-audit/FIX-WAVE-12-REPORT.md`.
+>
+> **Fix Wave 11 COMPLETE (2026-08-29):** **P3-12 phase 1** — MS/ZH server routes
+> for all 215 kept pod details + 10 hubs via the `locale-content-router.tsx`
+> factory (40 thin route stubs), each self-canonical with full EN/MS/ZH/x-default
+> hreflang, localized OG/`lang` and schema matching the rendered FAQs; +450
+> localized URLs; indexable = sitemap = **4,054** parity. Full log:
+> `docs/full-website-deep-audit/FIX-WAVE-11-REPORT.md`.
+>
 > **Fix Wave 10 COMPLETE (2026-08-29):** the final unblocked code queue is done —
 > **§5.6** freshness rota: `config/rate-year.ts` (`RATE_YEAR`/`RATE_YEAR_LABEL`)
 > + `audit:rate-year` in prebuild (string-literal-aware scanner; 714 files /
@@ -171,35 +202,48 @@
 > (3,626 sitemap, 0 dupes), html 0/0, links 277,170+53 → 0 broken. Full log:
 > `docs/full-website-deep-audit/FIX-WAVE-8-REPORT.md`.
 >
-> **Next session starts at:** with Wave 9 done, **no unblocked code-only
-> audit finding remains**. Candidates, in rough value order:
-> **P4-15** (NAP contact strip at the end of content blocks — small code-only
-> win), **P2-16 tranche 3** (44 remaining problems; needs owner GSC demand
-> data to re-rank, else `scripts/p2-16-wordcount.ts` thinness order:
+> **Next session starts at:** with Wave 12 done, **no P0 or P1 audit finding
+> remains unblocked.** Candidates, in rough value order: **P3-12 phase 3**
+> (MS/ZH **server routes** for `/services/<svc>/cost` — the 29 money pages are
+> still one EN URL client-localized by the toggle;
+> `app/(ms|zh)/…/services/[slug]/` ships only `page.tsx` + `[subservice]`, so
+> Wave 11's `locale-content-router` pattern is the obvious vehicle),
+> **P2-16 tranche 3** (44 remaining problems; needs owner GSC demand data to
+> re-rank, else `scripts/p2-16-wordcount.ts` thinness order:
 > `vinyl-flooring-lifting-edges` 166, `wall-dampness-rising` 167,
 > `autogate-remote-not-working` 167, `ceiling-mold-stains` 168,
-> `rccb-tripping-kl` 168), **P3-02** (/faq question H3s + hidden
-> empty-state), **P3-06** (blog FAQPage schema), **P3-18** (llms.txt aircon
-> + units), **P3-12** (MS/ZH pod routes), **P5-13/14** (raster OG images),
-> **§5.6** (freshness rota), **P2-22** (outbound citations — owner decision),
-> **P4-10/P4-14/P4-08** (P2/P3). **P4-11 named team page** needs owner bios.
-> **P4-13 / P2-C4 / BP-1 phase 2** still blocked on owner GSC keep-set. Do
-> **not** add more location pages. Do **not** re-add
-> `app/(en|ms|zh)/loading.tsx`. Do **not** delete local pages on low traffic
-> alone. Do **not** retry the CI patch push (no `workflows` permission). Do
-> **not** weaken the estimator trilingual-parity asserts to accommodate new
-> copy — supply the translations instead. Do **not** enrich a problem in
-> English without its native MS/ZH depth block (`audit:problem-i18n` fails
-> the build on a gap). Do **not** add a blog post without an explicit `date`
-> (type-check enforces), and never reintroduce per-day date concentration
-> above the validator's 10-post cap.
+> `rccb-tripping-kl` 168), **P3-12 phase 2** (native MS/ZH translation of the
+> 146 authored per-pod FAQ sets — natural translation, no MT), **§5.4-B1** (BM
+> commercial tree), **P2-22** (outbound citations — owner decision),
+> **P4-10/P4-14/P4-08**, **P4-16** footer link tiering, **P3-15/P3-16**
+> (SearchAction vs `/search`, news-sitemap freshness), **P3-19** (expand
+> `aeo-faq.txt`). **P4-11 named team page** needs owner bios. **P4-13 / P2-C4 /
+> BP-1 phase 2** still blocked on owner GSC keep-set. Do **not** add more
+> location pages. Do **not** re-add `app/(en|ms|zh)/loading.tsx`. Do **not**
+> delete local pages on low traffic alone. Do **not** retry the CI patch push
+> (no `workflows` permission) — note both Wave-12 gates already run in CI via
+> the existing `prebuild` and `audit:html` steps, so no workflow change was
+> needed. Do **not** weaken the estimator trilingual-parity asserts to
+> accommodate new copy — supply the translations instead. Do **not** enrich a
+> problem in English without its native MS/ZH depth block
+> (`audit:problem-i18n` fails the build on a gap). Do **not** add a blog post
+> without an explicit `date` (type-check enforces), and never reintroduce
+> per-day date concentration above the validator's 10-post cap. Do **not**
+> interpolate a registry field into a sentence with `.toLowerCase()` — prices
+> must keep their `RM` (use `lowerFirstSentence()`; `audit:html`
+> `lowercase-currency` fails the build otherwise). Do **not** hand-edit
+> generated files (`lib/estimator/rate-book.generated.ts`, `public/llms*.txt`,
+> `public/aeo-faq.txt`, `public/site-summary.json`) — `prebuild` regenerates
+> them. **⚠️ Do not quote any Part 3 `meanWords` / `pctQuickAnswer` / `pctNap`
+> figure recorded before Wave 12** — `contentText()` was measuring the wrong
+> slice and reported `words=8` / `qa=0%` corpus-wide.
 >
-> **Branch:** arena/01a04cc0-klservisrumah-web (this session branch — push PRs from here)
-> **Last completed session:** 2026-08-29 — Fix Wave 9 ✅ (the whole unblocked
-> CRO/UX queue: P4-05/P4-03 global single float, P4-02 mobile hero quote box,
-> P4-07 static SSR inquiry form + /api/inquiry, P4-12 SVG coverage map +
-> hasMap fix, P4-06 include/exclude blocks, P4-16 hero cost-guide link,
-> P4-17 aircon problem/tool inlinks, P4-11 code half)
+> **Branch:** arena/01a04e39-klservisrumah-web (this session branch — push PRs from here)
+> **Last completed session:** 2026-08-29 — Fix Wave 12 ✅ (P3-04 cost-page
+> DirectAnswer + P3-05 AI-surface prices + two audit-tool repairs). Before
+> that: Wave 11 ✅ (P3-12 phase 1 — MS/ZH pod routes), Wave 10 ✅
+> (§5.6/P5-13/14/P4-15/P3-02/P3-06/P3-18), Wave 9 ✅ (the whole unblocked
+> CRO/UX queue).
 
 **Quality gates (must all be green before any new work).**
 Numbers are the *measured* output of each command on this branch — update them
@@ -207,19 +251,20 @@ when the corpus changes, don't carry stale values forward:
 
 - [ ] npm run lint — 0 errors, 0 warnings
 - [ ] npm run type-check — PASS
-- [ ] npm run build — SUCCESS (3,652 HTML; middleware 35.6 kB)
-- [ ] npm run audit:bp1 — PASS (**run after build**; 2,146 retired URLs, 0 regenerated)
+- [ ] npm run build — SUCCESS (4,080 HTML; middleware 35.7 kB; shared JS 102 kB)
+- [ ] npm run audit:bp1 — PASS (**run after build**; 2,146 retired URLs, 0 regenerated; NAP-in-content 2,540/4,080 = 62.3%)
 - [ ] npm run seo:audit — PASS
-- [ ] npm run audit:html — 0 fatal / 0 warnings (3,652 pages)
-- [ ] npm run audit:links — 278,649 rendered + 54 source links, 0 broken
-- [ ] npm run audit:seo-head — PASS (3,626 self-canonical indexable, 26 noindex incl. 23 estimate URLs, sitemap = 3,626, 0 dupes)
-- [ ] npm run audit:i18n — 1,213 keys × 3, 0 missing
+- [ ] npm run audit:html — 0 fatal / 0 warnings (4,080 pages; includes the new case-sensitive `lowercase-currency` check)
+- [ ] npm run audit:links — 308,753 rendered + 56 source links, 0 broken
+- [ ] npm run audit:seo-head — PASS (4,054 self-canonical indexable, 26 noindex incl. 23 estimate URLs, sitemap = 4,054, 0 dupes)
+- [ ] npm run audit:i18n — 1,223 keys × 3, 0 missing
 - [ ] npm run audit:topical-map — 29/29 services, 222 relationships
 - [ ] npm run audit:specialty-locale — 222 × MS/ZH = 444 blocks
 - [ ] npm run audit:specialty-coverage — 222 subservices across 29 services
 - [ ] npm run audit:service-i18n — 29 services
 - [ ] npm run audit:problem-i18n — 74 keep-URLs × MS/ZH, 12 redirects excluded (native depth parity for enriched problems)
-- [ ] npm run audit:client-bundle — 218 client modules, 0 heavy registries
+- [ ] npm run audit:client-bundle — 219 client modules, 0 heavy registries
+- [ ] npm run audit:cost-direct-answer — 87 cards (29 services × 3 locales), 0 failures (prebuild too)
 - [ ] npm run audit:location-similarity — all layers < 70%; near-me layer = 0 pages
 - [ ] npm run audit:trilingual-leak — 29 services × 3 locale bases, 58 unique notes, 0 English leaks (prebuild too)
 - [ ] npm run audit:content-pods — 29 services × commercial+residential: 58 unique intros, 4 bullets/4 FAQs each, all pod bullets localized ×2 (prebuild too)

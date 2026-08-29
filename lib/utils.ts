@@ -34,6 +34,23 @@ export function formatCurrencyRange(startPrice: string) {
  * "Up", producing visibly broken badges ("Up Guarantee"). This helper walks the
  * leading tokens until we have a complete duration phrase, then stops.
  */
+/**
+ * Lower-case only the FIRST character of a sentence so it can be interpolated
+ * mid-sentence without mangling the rest of it.
+ *
+ * P3-05 follow-up: the service-hub DirectAnswer interpolated
+ * `service.tagline.toLowerCase()` to avoid a capital letter mid-sentence. That
+ * also lower-cased everything else in the tagline — including the currency —
+ * so the AI-citable card on 28 of 29 service hubs read
+ * "packages start from rm 14 / sq ft" instead of "…from RM 14 / sq ft".
+ * Answer engines quote this sentence verbatim; a lower-cased "rm" is both a
+ * trust problem and a machine-readability one.
+ */
+export function lowerFirstSentence(value: string): string {
+  const trimmed = (value ?? "").trim();
+  return trimmed ? trimmed.charAt(0).toLowerCase() + trimmed.slice(1) : trimmed;
+}
+
 export function warrantyLead(warranty: string): string {
   const w = warranty.trim();
   

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { CheckCircle2 } from "lucide-react";
 
 type DirectAnswerProps = {
@@ -7,6 +8,13 @@ type DirectAnswerProps = {
   trilingualMs?: string;
   trilingualZh?: string;
   trustItems?: string[];
+  /**
+   * Optional action row inside the card (P3-04: the audit asks the cost-page
+   * DirectAnswer to cite the published price *and* link the estimator, so the
+   * next step lives in the same extractable block instead of two screens away).
+   * Rendered with `next/link` so it works in server and client components.
+   */
+  actions?: { href: string; label: string }[];
 };
 
 /**
@@ -19,7 +27,8 @@ export function DirectAnswer({
   answer,
   trilingualMs,
   trilingualZh,
-  trustItems = []
+  trustItems = [],
+  actions = []
 }: DirectAnswerProps) {
   return (
     <section className="quick-answer">
@@ -38,6 +47,23 @@ export function DirectAnswer({
           {trilingualMs && trilingualZh && <span className="mx-2 text-slate-300">·</span>}
           {trilingualZh && <span><b>中文:</b> {trilingualZh}</span>}
         </p>
+      )}
+      {actions.length > 0 && (
+        <div className="mt-4 flex flex-wrap gap-2.5">
+          {actions.map((action, index) => (
+            <Link
+              key={action.href}
+              href={action.href}
+              className={
+                index === 0
+                  ? "inline-flex items-center rounded-xl bg-[#0284C7] px-4 py-2.5 text-xs font-extrabold text-white transition hover:bg-[#075985]"
+                  : "inline-flex items-center rounded-xl border border-[#BAE6FD] bg-white px-4 py-2.5 text-xs font-extrabold text-[#075985] transition hover:border-[#0EA5E9]"
+              }
+            >
+              {action.label}
+            </Link>
+          ))}
+        </div>
       )}
       {trustItems.length > 0 && (
         <ul className="mt-5 flex flex-wrap gap-2">

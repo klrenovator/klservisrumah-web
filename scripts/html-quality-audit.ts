@@ -19,6 +19,8 @@
  *  10. Exactly one `<main>` landmark per document (duplicate landmarks break
  *      the skip link and the screen-reader landmark list).
  *  11. Exactly one `<h1>` per document.
+ *  12. No lower-cased currency in readable text ("from rm 14 / sq ft") — a
+ *      price mangled by a `.toLowerCase()` interpolation (P3-05 follow-up).
  *
  * Exits non-zero if any FATAL finding exists, so it can be wired into CI or
  * `prebuild` like `seo-audit.ts`. Warnings are reported but do not fail.
@@ -245,6 +247,26 @@ function audit(file: string) {
   }
   if (h1Open >= 0 && footerClose >= 0 && h1Open > footerClose) {
     report(url, "h1-after-footer", `h1@${h1Open} footer@${footerClose}`);
+  }
+
+  // 15. Lower-cased currency in readable text (P3-05 follow-up, Fix Wave 12).
+  //
+  //     "…packages start from rm 14 / sq ft" — a price whose currency token was
+  //     lower-cased by a `.toLowerCase()` interpolation of a registry field
+  //     into a sentence. The service-hub DirectAnswer did exactly that on 28 of
+  //     29 hubs. Answer engines quote that sentence verbatim, so a mangled "rm"
+  //     is both a trust problem for the reader and a machine-readability one
+  //     for the extractor. Case-SENSITIVE on purpose: "RM 450" must not match.
+  //     Scripts/styles are stripped first so JSON-LD, CSS and JS never trigger
+  //     it.
+  const readable = html
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ");
+  const lowerCurrency = readable.match(/(^|[^A-Za-z])rm\s?\d[\d,.]*/);
+  if (lowerCurrency) {
+    const at = lowerCurrency.index ?? 0;
+    report(url, "lowercase-currency", truncate(readable.slice(Math.max(0, at - 60), at + 60)));
   }
 }
 
