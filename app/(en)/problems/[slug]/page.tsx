@@ -6,7 +6,7 @@ import { isRedirectedProblemSlug, problemLocaleUrls } from "@/config/problem-can
 import { indexableProblemPages } from "@/config/problem-index";
 import { servicesData } from "@/config/services-data";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { getArticleSchema, getFAQSchema, getHowToSchema, getSpeakableSchema } from "@/lib/seo";
+import { getArticleSchema, getFAQSchema } from "@/lib/seo";
 import { LocaleProblemView } from "@/components/sections/locale-problem-view";
 import { getLocalizedProblem } from "@/lib/problem-i18n";
 import { getLocalizedService } from "@/lib/service-i18n";
@@ -50,15 +50,12 @@ export default async function ProblemPage(props: { params: Promise<{ slug: strin
   const problem = problemPages.find((item) => item.slug === slug);
   if (!problem) notFound();
   const service = servicesData[problem.serviceSlug];
-  const howToSteps = problem.solutions.map((solution) => ({ title: solution, desc: `Apply this step only after the cause is confirmed: ${solution}.` }));
 
   return (
     <>
       <Breadcrumbs items={[{ label: "Problems", href: "/problems" }, { label: problem.title, href: `/problems/${problem.slug}` }]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(problem.faqs)) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getHowToSchema(howToSteps)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getArticleSchema({ title: problem.title, slug: problem.slug, excerpt: problem.symptom, path: `/problems/${problem.slug}`, category: service.title })) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getSpeakableSchema(["h1", ".problem-symptom", ".faq-answer"])) }} />
 
       <LocaleProblemView
         problem={Object.fromEntries(SUPPORTED_LOCALES.map((locale) => [locale, getLocalizedProblem(problem, locale)])) as Record<Locale, typeof problem>}

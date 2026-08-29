@@ -7,7 +7,7 @@
  * LocalBusiness + PriceSpecification.
  */
 
-import { siteConfig } from "@/config/site";
+import { buildServiceAreaGeoCircle } from "@/lib/seo";
 import type { ToolContent } from "@/config/tools-data";
 
 const baseUrl = "https://www.klservisrumah.my";
@@ -33,18 +33,10 @@ export function getToolGraph(
     url?: string;
     /** BCP-47 tag for this rendering (default: the trilingual EN-page list). */
     language?: string;
-    /** Localised HowTo node strings (defaults keep the English wording). */
-    howToName?: string;
-    howToDescription?: string;
   } = {}
 ) {
   const url = options.url ?? absolute(`/tools/${content.slug}`);
   const inLanguage = options.language ? [options.language] : ["en-MY", "ms-MY", "zh-MY"];
-  const howToName =
-    options.howToName ?? `How to use the ${content.name}`;
-  const howToDescription =
-    options.howToDescription ??
-    `Get an instant ${content.name.toLowerCase()} estimate for Kuala Lumpur and Selangor in about ${content.estimatedMinutes} minute${content.estimatedMinutes > 1 ? "s" : ""}.`;
 
   return {
     "@context": "https://schema.org",
@@ -80,11 +72,10 @@ export function getToolGraph(
         description: content.directAnswer,
         serviceType: content.name,
         provider: { "@id": ORGANIZATION_ID },
-        areaServed: siteConfig.areas.slice(0, 20).map((area) => ({
-          "@type": "City",
-          name: area,
-          containedInPlace: { "@type": "Country", name: "Malaysia" }
-        })),
+        // Audit P5-04: the 20-city areaServed list (repeated on all 43×3 tool
+        // pages) is replaced by the Klang Valley GeoCircle — the full city
+        // list ships once, on the homepage Organization node.
+        areaServed: buildServiceAreaGeoCircle(),
         hasOfferCatalog: {
           "@type": "OfferCatalog",
           name: `${content.name} — published 2026 rates`,
@@ -102,23 +93,9 @@ export function getToolGraph(
         }
       },
 
-      /* How to use the estimator. */
-      {
-        "@type": "HowTo",
-        "@id": `${url}#howto`,
-        name: howToName,
-        description: howToDescription,
-        totalTime: `PT${content.estimatedMinutes}M`,
-        estimatedCost: { "@type": "MonetaryAmount", currency: "MYR", value: "0" },
-        tool: [{ "@type": "HowToTool", name: content.name }],
-        step: content.howTo.map((step, index) => ({
-          "@type": "HowToStep",
-          position: index + 1,
-          name: step.title,
-          text: step.desc,
-          url: `${url}#estimator`
-        }))
-      },
+      /* Audit P5-06: the HowTo node was removed — Google retired HowTo rich
+         results (Sept 2023) and the visible "How it works" section still
+         carries the steps in plain HTML for users and AI crawlers. */
 
       /* FAQ — the primary AEO surface. */
       {
@@ -129,22 +106,11 @@ export function getToolGraph(
           name: faq.q,
           acceptedAnswer: { "@type": "Answer", text: faq.a }
         }))
-      },
-
-      /* Speakable — voice assistants and AI readers. */
-      {
-        "@type": "WebPage",
-        "@id": `${url}#webpage`,
-        url,
-        name: content.metaTitle,
-        description: content.metaDesc,
-        isPartOf: { "@id": `${baseUrl}/#website` },
-        primaryImageOfPage: { "@type": "ImageObject", url: absolute(content.heroImage), caption: content.heroAlt },
-        speakable: {
-          "@type": "SpeakableSpecification",
-          cssSelector: ["h1", ".quick-answer", ".faq-answer"]
-        }
       }
+
+      /* Audit P5-07: the trailing WebPage node (speakable + primaryImageOfPage)
+         was removed — an orphan node duplicating the document's own metadata;
+         speakable has no active Google rich-result use. */
     ]
   };
 }

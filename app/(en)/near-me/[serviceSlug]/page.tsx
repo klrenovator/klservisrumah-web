@@ -7,6 +7,7 @@ import { suburbPages } from "@/config/suburb-data";
 import { getLocalBusinessServiceSchema } from "@/lib/seo";
 import { buildAreaLinks, buildServiceBundle, buildServiceLinks } from "@/lib/location-bundles";
 import { LocaleNearMeHub } from "@/components/sections/locale-near-me-hub";
+import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 
 // Every valid param is enumerated in `generateStaticParams()`, so anything
 // else must 404 rather than be rendered on demand and cached as a 200
@@ -36,6 +37,11 @@ export default async function NearMeServicePage(props: { params: Promise<{ servi
 
   return (
     <>
+      {/* Audit P5-10: the 29 per-service near-me hubs had no breadcrumb trail */}
+      <Breadcrumbs items={[
+        { label: "Near Me", href: "/near-me" },
+        { label: `${service.title} Near Me`, href: `/near-me/${service.slug}` }
+      ]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getLocalBusinessServiceSchema(areaPages[0], service, `/near-me/${service.slug}`)) }} />
 
       <LocaleNearMeHub

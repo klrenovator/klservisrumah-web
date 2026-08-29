@@ -68,7 +68,19 @@ export default async function SubServicePage(props: { params: Promise<{ slug: st
   const cluster = clusterPages.find((page) => page.relatedServiceSlug === params.slug && page.slug === params.subservice);
   if (!service) notFound();
   if (cluster && !sub) {
-    return <GenericContentPageView page={cluster} />;
+    return (
+      <>
+        {/* Audit P5-10: the service-cluster pages mounted under this route
+            (e.g. /services/painting/interior-painting-kl) rendered through
+            GenericContentPageView with no breadcrumb trail or schema. */}
+        <Breadcrumbs items={[
+          { label: "Services", href: "/services" },
+          { label: service.title, href: `/services/${service.slug}` },
+          { label: cluster.title, href: `/services/${service.slug}/${cluster.slug}` }
+        ]} />
+        <GenericContentPageView page={cluster} />
+      </>
+    );
   }
   if (!sub) notFound();
 
@@ -94,7 +106,7 @@ export default async function SubServicePage(props: { params: Promise<{ slug: st
         { label: sub.name, href: `/services/${service.slug}/${params.subservice}` }
       ]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(faqs)) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getServiceSchema({ title: sub.name, description: sub.desc, startPrice: sub.price, slug: service.slug })) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getServiceSchema({ title: sub.name, description: sub.desc, startPrice: sub.price, slug: service.slug, includeCatalog: false })) }} />
 
       <LocaleServiceView service={service} sub={sub} />
     </>

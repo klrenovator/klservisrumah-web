@@ -7,7 +7,6 @@ import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
 import { Phone, MessageSquare, AlertCircle } from "lucide-react";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { getSpeakableSchema } from "@/lib/seo";
 import { localizedProblemsIndexLanguageUrls } from "@/components/sections/locale-problems-index";
 
 export const metadata = buildMetadata({
@@ -24,12 +23,10 @@ export const metadata = buildMetadata({
 });
 
 export default function ProblemsIndexPage() {
-  const speakableSchema = getSpeakableSchema(["h1", "h2"]);
 
   return (
     <>
       <Breadcrumbs items={[{ label: "Problems", href: "/problems" }]} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
       {/* Hero Section — matches klrenovator.com problems page */}
       <section className="bg-gradient-to-b from-[#F8FAFC] via-white to-white border-b border-slate-100 py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

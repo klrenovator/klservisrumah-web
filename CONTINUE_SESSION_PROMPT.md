@@ -11,19 +11,24 @@
 > `/suburbs/<twin>/<svc>`) are now **301s instead of pages**. Built HTML
 > 5,815 → **3,669**; sitemap 4,739 → **3,666**; cross-page canonicals 1,073 → **0**.
 > Read `docs/full-website-deep-audit/TRACKING.md` first — it is the authoritative
-> status board; `docs/full-website-deep-audit/BP-1-PHASE-1-REPORT.md` has the
-> full evidence and the post-deploy GSC/Bing checklist.
+> status board; `docs/full-website-deep-audit/BP-1-PHASE-1-REPORT.md` and
+> `docs/full-website-deep-audit/FIX-WAVE-3-REPORT.md` have the full evidence,
+> the post-deploy GSC/Bing checklist, and the schema-size gate.
 >
 > **Next session starts at:** **BP-1 phase 2** — the demand-backed keep-list for
 > the remaining 1,073 `/areas/<area>/<svc>` pairs + authored local copy for the
 > kept set. **Blocked on GSC data (owner).** If GSC is still unavailable, take
-> **P5-04** (areaServed slim) then **P5-10** (breadcrumbs on pods) — both are now
-> unblocked. Do **not** add more location pages. Do **not** re-add
+> **CF-4** (rate-book → `/services/<svc>/cost` merge; evaluate `/estimate/*`),
+> then **P3-01** (BM/ZH English leaks + prebuild leak validator), then
+> **P2-C3/P2-C4** (content pods + pair-copy generator). P5-04, P5-06, P5-07 and
+> P5-10 are all ✅ complete (Fix Wave 3) and enforced by `npm run
+> audit:schema-size`. Do **not** add more location pages. Do **not** re-add
 > `app/(en|ms|zh)/loading.tsx`. Do **not** delete local pages on low traffic alone.
 
-**Branch:** arena/01a04a3f-klservisrumah-web (this session branch — push PRs from here)
-**Last completed session:** 2026-08-28 — BP-1 phase 1 ✅ (Part 1 Critical #1/#2:
-near-me → parent 301s, suburb-twin SSG stopped, 2,146 URLs retired)
+**Branch:** arena/01a04a81-klservisrumah-web (this session branch — push PRs from here)
+**Last completed session:** 2026-08-28 — Fix Wave 3 ✅ (P5-04 schema slim
+62.2→14.5 MB, P5-06 HowTo, P5-07 Speakable, P5-10 breadcrumbs +256 pages,
+new `audit:schema-size` gate)
 
 **Quality gates (must all be green before any new work).**
 Numbers are the *measured* output of each command on this branch — update them
@@ -239,8 +244,8 @@ npm run audit:problem-i18n && npm run audit:client-bundle && \
 npm run test:estimators && npm audit
 
 # Build, then the corpus gates (these need .next/server/app to exist)
-npm run build && npm run audit:bp1 && npm run audit:html && \
-npm run audit:links && npm run audit:seo-head && \
+npm run build && npm run audit:bp1 && npm run audit:schema-size && \
+npm run audit:html && npm run audit:links && npm run audit:seo-head && \
 npm run audit:location-similarity && npm run seo:audit
 ```
 

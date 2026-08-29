@@ -7,7 +7,6 @@ import { AboutHeroHeading } from "@/components/sections/about-hero-heading";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
 import { servicesData } from "@/config/services-data";
-import { getSpeakableSchema } from "@/lib/seo";
 import { Phone, MessageSquare, Users, Award, Clock } from "lucide-react";
 
 const baseUrl = "https://www.klservisrumah.my";
@@ -40,17 +39,12 @@ const aboutPageSchema = {
 };
 
 export default function AboutPage() {
-  const speakableSchema = getSpeakableSchema(["h1", ".about-lead", ".about-body"]);
 
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
       />
 
       {/* Hero Section — matches klrenovator.com about page */}

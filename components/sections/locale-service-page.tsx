@@ -23,11 +23,8 @@ import { getWhatsAppLink } from "@/lib/whatsapp";
 import { warrantyLead, slugify } from "@/lib/utils";
 import { hasSpecialtyLocaleContent } from "@/config/specialty-locale-content";
 import {
-  getBreadcrumbSchema,
   getFAQSchema,
-  getHowToSchema,
   getServiceSchema,
-  getSpeakableSchema
 } from "@/lib/seo";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { DirectAnswer } from "@/components/content/direct-answer";
@@ -122,13 +119,10 @@ export function LocaleServicePage({ locale, slug }: { locale: "ms" | "zh"; slug:
     subServices: localized.subServices,
   });
   const faqSchema = getFAQSchema(localized.faqs);
-  const howToSchema = getHowToSchema(localized.process.map((p) => ({ title: p.title, desc: p.desc })));
-  const speakableSchema = getSpeakableSchema(["h1", ".service-hero-tagline", ".faq-answer"]);
-  const breadcrumbSchema = getBreadcrumbSchema([
-    { name: t("breadcrumbs.home"), item: "/" },
-    { name: t("breadcrumbs.services"), item: "/services" },
-    { name: localized.title, item: path },
-  ]);
+  // Audit P5-10/P5-04: the standalone breadcrumbSchema script was removed —
+  // the <Breadcrumbs> component below already emits the identical
+  // BreadcrumbList JSON-LD together with the visible trail, and two lists per
+  // page gave parsers conflicting trails.
 
   const trustItems = [
     { icon: ShieldCheck, text: t("trustBadgesRow.insured") },
@@ -141,11 +135,8 @@ export function LocaleServicePage({ locale, slug }: { locale: "ms" | "zh"; slug:
   return (
     <>
       {/* Schema */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
 
       <Breadcrumbs
         ariaLabel={t("breadcrumbs.navAria")}

@@ -22,8 +22,8 @@ import { siteConfig } from "@/config/site";
 import { servicesData } from "@/config/services-data";
 import {
   getFAQSchema,
-  getSpeakableSchema,
   getOfferCatalogSchema,
+  getOrganizationSchema,
   buildServiceAreaGeoCircle,
   parsePricedOffer
 } from "@/lib/seo";
@@ -62,11 +62,12 @@ const homepageFaqSchema = getFAQSchema(HOMEPAGE_FAQS);
 // Homepage BreadcrumbList intentionally omitted (audit P5-11): a depth-1
 // trail of only "Home" adds no navigation value and is invalid UX/schema noise.
 
-const homepageSpeakableSchema = getSpeakableSchema([
-  "h1",
-  ".hero-subhead",
-  ".faq-answer"
-]);
+// Audit P5-04 — the homepage is the entity's home: the ONLY page that emits
+// the full Organization node (knowsAbout, brand, 49-city areaServed,
+// contactPoints, openingHours). SiteHead emits the compact @id-reference
+// node everywhere else (including here, where it merges by @id). `/ms` and
+// `/zh` are noindex redirect stubs, so the entity lives on `/` alone.
+const homepageOrganizationSchema = getOrganizationSchema();
 
 // Build a homepage-wide Service listing so search engines see the top
 // service pillars & their offers directly on `/`.
@@ -158,14 +159,16 @@ const homeEntitySchema = {
 export default function Home() {
   return (
     <>
+      {/* ── Organization — full entity node, homepage-only (audit P5-04) ── */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageOrganizationSchema) }}
+      />
+
       {/* ── AEO / GEO / SEO JSON-LD (homepage-specific) ────────────── */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageFaqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageSpeakableSchema) }}
       />
       <script
         type="application/ld+json"

@@ -43,7 +43,7 @@ export default async function EmergencyPage(props: { params: Promise<{ slug: str
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(faqs)) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getServiceSchema({ title: `Emergency ${service.title}`, description: service.description, startPrice: service.startPrice, slug: service.slug })) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getServiceSchema({ title: `Emergency ${service.title}`, description: service.description, startPrice: service.startPrice, slug: service.slug, includeCatalog: false })) }} />
 
       <LocaleServiceEmergencyView
         slug={slug}

@@ -6,7 +6,6 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { ContactHeroHeading } from "@/components/sections/contact-hero-heading";
 import { LocaleContactInfo } from "@/components/sections/locale-contact-info";
 import { siteConfig } from "@/config/site";
-import { getSpeakableSchema } from "@/lib/seo";
 
 const baseUrl = "https://www.klservisrumah.my";
 
@@ -61,17 +60,12 @@ const contactPageSchema = {
 };
 
 export default function ContactPage() {
-  const speakableSchema = getSpeakableSchema(["h1", ".contact-body"]);
 
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
       />
 
       <Breadcrumbs items={[{ label: "Contact & Booking", href: "/contact" }]} />

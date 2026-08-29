@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { buildMetadata } from "@/lib/seo-meta";
 import { comparisonPages } from "@/config/content-data";
 import { GenericContentPageView } from "@/components/content/generic-content-page";
+import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { getArticleSchema, getFAQSchema } from "@/lib/seo";
 // Every valid param is enumerated in `generateStaticParams()`, so anything
 // else must 404 rather than be rendered on demand and cached as a 200
@@ -14,4 +15,4 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
     description: page.intro,
     path: `/compare/${page.slug}`
   }); }
-export default async function ComparePage(props: { params: Promise<{ slug: string }> }) { const { slug } = await props.params; const page = comparisonPages.find((item) => item.slug === slug); if (!page) notFound(); return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getArticleSchema({ title: page.title, slug: page.slug, excerpt: page.intro, path: `/compare/${page.slug}`, category: page.category })) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(page.faqs)) }} /><GenericContentPageView page={page} /></>; }
+export default async function ComparePage(props: { params: Promise<{ slug: string }> }) { const { slug } = await props.params; const page = comparisonPages.find((item) => item.slug === slug); if (!page) notFound(); return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getArticleSchema({ title: page.title, slug: page.slug, excerpt: page.intro, path: `/compare/${page.slug}`, category: page.category })) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(page.faqs)) }} /><Breadcrumbs items={[{ label: "Compare", href: "/compare" }, { label: page.title, href: `/compare/${page.slug}` }]} /><GenericContentPageView page={page} /></>; }

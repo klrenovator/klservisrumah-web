@@ -9,7 +9,7 @@ import { getLocalizedService } from "@/lib/service-i18n";
 import { getServerTranslator } from "@/lib/i18n-server";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { getArticleSchema, getFAQSchema, getHowToSchema, getSpeakableSchema } from "@/lib/seo";
+import { getArticleSchema, getFAQSchema } from "@/lib/seo";
 import { isRedirectedProblemSlug, problemLocaleUrls } from "@/config/problem-canonical";
 import { indexableProblemPages } from "@/config/problem-index";
 import { LocaleTreeLinks } from "@/components/sections/locale-tree-links";
@@ -34,11 +34,6 @@ export function LocaleProblemPage({ locale, slug }: { locale: Locale; slug: stri
   const serviceHref = locale === "ms" ? `/ms/services/${service.slug}` : locale === "zh" ? `/zh/services/${service.slug}` : `/services/${service.slug}`;
   const hubHref = locale === "ms" ? "/ms/problems" : locale === "zh" ? "/zh/problems" : "/problems";
 
-  const howToSteps = localizedProblem.solutions.map((solution) => ({
-    title: solution,
-    desc: solution,
-  }));
-
   const headingSuffix =
     locale === "ms"
       ? "— Punca, Cara Baiki & Kos di KL"
@@ -62,9 +57,7 @@ export function LocaleProblemPage({ locale, slug }: { locale: Locale; slug: stri
         ]}
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(localizedProblem.faqs)) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getHowToSchema(howToSteps)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getArticleSchema({ title: localizedProblem.title, slug: problem.slug, excerpt: localizedProblem.symptom, path, category: localizedService.title })) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getSpeakableSchema(["h1", ".problem-symptom", ".faq-answer"])) }} />
 
       <section className="bg-gradient-to-b from-slate-50 to-white py-16 sm:py-20">
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-12 lg:px-8">
