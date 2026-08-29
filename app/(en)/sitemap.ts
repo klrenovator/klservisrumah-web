@@ -14,7 +14,7 @@ import { indexableProblemPages } from "@/config/problem-index";
 import { allGenericPages, clusterPages, maintenancePages } from "@/config/content-data";
 import { toolsList } from "@/config/tools-data";
 import { TOOLS_INDEX_PATH, toolLocaleUrls } from "@/config/tools-i18n";
-import { slugify, DEFAULT_CONTENT_DATE } from "@/lib/utils";
+import { slugify, toIsoDate, DEFAULT_CONTENT_DATE } from "@/lib/utils";
 import { hasSpecialtyLocaleContent } from "@/config/specialty-locale-content";
 import { isEmergencyService } from "@/config/emergency-services";
 
@@ -37,9 +37,15 @@ type Entry = {
    * hreflang points at the actual localised siblings instead of self-referencing.
    */
   languages?: { en: string; ms: string; zh: string };
+  /**
+   * P2-19: per-URL lastModified override. Blog articles pass their own
+   * publication date so the sitemap no longer emits one constant `lastMod`
+   * for all 216 posts. All non-blog pages keep the stable release date.
+   */
+  lastModified?: Date;
 };
 
-function entry({ path, priority, changeFrequency = "weekly", languages }: Entry): MetadataRoute.Sitemap[number] {
+function entry({ path, priority, changeFrequency = "weekly", languages, lastModified }: Entry): MetadataRoute.Sitemap[number] {
   const cleanPath = path === "/" ? "" : path;
   const pageUrl = `${baseUrl}${cleanPath}`;
   // Self-referencing hreflang. Language switching is client-side, so all three
@@ -61,13 +67,22 @@ function entry({ path, priority, changeFrequency = "weekly", languages }: Entry)
       };
   return {
     url: pageUrl,
-    lastModified: SITEMAP_LAST_MODIFIED,
+    lastModified: lastModified ?? SITEMAP_LAST_MODIFIED,
     changeFrequency,
     priority,
     alternates: {
       languages: langs
     }
   };
+}
+
+/**
+ * P2-19: per-article sitemap `lastMod` from the post's own publication date
+ * (parsed via `toIsoDate` so both "July 20, 2026" and ISO values work).
+ */
+function blogLastModified(date: string): Date {
+  const iso = toIsoDate(date);
+  return new Date(`${iso}T00:00:00.000Z`);
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -210,14 +225,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { path: languages.zh, priority: 0.76, languages },
     ];
   });
-  const blogRoutes: Entry[] = blogPosts.map((post) => ({ path: `/blog/${post.slug}`, priority: 0.7, changeFrequency: "monthly" }));
+  // P2-19: each article carries its own lastMod (publication date) so the
+  // sitemap stops emitting one constant date for all 216 posts.
+  const blogRoutes: Entry[] = blogPosts.map((post) => ({ path: `/blog/${post.slug}`, priority: 0.7, changeFrequency: "monthly", lastModified: blogLastModified(post.date) }));
 
   // Locale blog and FAQ routes — only include posts that have full translations
   const localeBlogRoutes: Entry[] = [];
   for (const post of blogPosts) {
     const i18n = blogI18n[post.slug];
-    if (i18n?.ms) localeBlogRoutes.push({ path: localizedBlogPath("ms", i18n.ms.slug), priority: 0.65, changeFrequency: "monthly" });
-    if (i18n?.zh) localeBlogRoutes.push({ path: localizedBlogPath("zh", i18n.zh.slug), priority: 0.65, changeFrequency: "monthly" });
+    if (i18n?.ms) localeBlogRoutes.push({ path: localizedBlogPath("ms", i18n.ms.slug), priority: 0.65, changeFrequency: "monthly", lastModified: blogLastModified(post.date) });
+    if (i18n?.zh) localeBlogRoutes.push({ path: localizedBlogPath("zh", i18n.zh.slug), priority: 0.65, changeFrequency: "monthly", lastModified: blogLastModified(post.date) });
   }
   const localeFaqRoutes: Entry[] = [
     { path: "/ms/soalan-lazim", priority: 0.7 },

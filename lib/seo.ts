@@ -1,5 +1,5 @@
 import { siteConfig } from "@/config/site";
-import { toIsoDate } from "@/lib/utils";
+import { toIsoDate, blogDateModified } from "@/lib/utils";
 import { servicesData, type ServiceDetail } from "@/config/services-data";
 import type { AreaDetail } from "@/config/area-data";
 import type { SuburbDetail } from "@/config/suburb-data";
@@ -495,7 +495,9 @@ export function getArticleSchema(post: BlogPost | { title: string; excerpt?: str
     // Must be ISO-8601 — the blog data stores display strings like "July 20, 2026",
     // which Google rejects as an invalid date and drops the Article rich result.
     datePublished: toIsoDate("date" in post ? post.date : undefined),
-    dateModified: toIsoDate("date" in post ? post.date : undefined),
+    // P2-19: dateModified is no longer a copy of datePublished — migrated
+    // content carries the site-wide release/QA date (2026-08-16) instead.
+    dateModified: blogDateModified("date" in post ? post.date : undefined),
     // Audit P5-05: "KL Servis Rumah Editorial Team" is an organization, not a
     // Person. Emit Organization until real human author entities exist. A
     // Person typed with the company name is invalid schema and weak E-E-A-T.

@@ -11,12 +11,14 @@ import type { BlogPost } from "@/config/blog-data";
  *
  * All entries default to English; MS/ZH fallback rendered from the
  * primary translation layer.
+ *
+ * P2-19: each post carries its own hand-assigned publication date (spread
+ * across the July 2026 production window); the shared `now` default was
+ * removed so a new post without a date fails type-check instead of silently
+ * reusing a stale date.
  */
-const now = "July 25, 2026";
-
-function post(entry: Omit<BlogPost, "date" | "author" | "readTime">): BlogPost {
+function post(entry: Omit<BlogPost, "author" | "readTime">): BlogPost {
   return {
-    date: now,
     author: "KL Servis Rumah Editorial Team",
     readTime: "6 min read",
     ...entry
@@ -26,6 +28,7 @@ function post(entry: Omit<BlogPost, "date" | "author" | "readTime">): BlogPost {
 export const extraBlogPosts: BlogPost[] = [
   post({
     slug: "when-to-repaint-your-house-malaysia",
+    date: "July 5, 2026",
     title: "When to Repaint Your House in Malaysia (Signs, Frequency & Budget)",
     excerpt: "Interior every 5–7 years, exterior every 4–6 years — here are the real signals that tell you it's time to repaint your Klang Valley home, plus a fair budget for each option.",
     category: "Painting",
@@ -93,6 +96,7 @@ Avoid unbranded "tinting shop" paint for anything outside a temporary rental —
 
   post({
     slug: "hidden-water-leak-detection-kl",
+    date: "July 6, 2026",
     title: "How to Find a Hidden Water Leak Before Your Bill Explodes",
     excerpt: "If your SYABAS bill jumped, but you can't see any leak, chances are it's a hidden pipe. Here's how professional leak detection works in Malaysian homes — no unnecessary hacking.",
     category: "Plumbing",
@@ -158,6 +162,7 @@ If any of these are true, WhatsApp us the meter reading and a photo of the damp 
 
   post({
     slug: "gypsum-vs-plaster-ceiling-malaysia",
+    date: "July 7, 2026",
     title: "Gypsum vs Plaster Ceiling: Which One Is Right for Your Malaysian Home?",
     excerpt: "Both are used interchangeably in KL — but they perform very differently under humidity, roof leaks and design. Here's the honest side-by-side.",
     category: "Ceiling",
@@ -227,6 +232,7 @@ Ready to plan your ceiling? WhatsApp us a photo of your current ceiling + a roug
 
   post({
     slug: "pu-grouting-vs-full-membrane-waterproofing",
+    date: "July 8, 2026",
     title: "PU Grouting vs Full Membrane Waterproofing: How to Choose",
     excerpt: "PU grouting is fast, cheap and non-destructive. Full membrane is bulletproof but destructive. Here's exactly when each one is right in KL.",
     category: "Waterproofing",
@@ -302,6 +308,7 @@ WhatsApp us the leak photo and the room layout — we'll advise which method fit
 
   post({
     slug: "tv-wall-mounting-safety-guide",
+    date: "July 9, 2026",
     title: "The 2026 TV Wall Mounting Safety Guide for Malaysian Homes",
     excerpt: "Wrong anchors on a plaster wall can send a 65-inch OLED to the floor. Here's how professional TV mounting is actually done — brick, concrete, gypsum, false ceiling.",
     category: "Handyman",
@@ -376,6 +383,7 @@ WhatsApp us your TV model + a photo of the wall you want to mount it on for an e
 
   post({
     slug: "cost-of-full-house-renovation-kl",
+    date: "July 10, 2026",
     title: "The Real Cost of a Full House Renovation in KL (2026 Guide)",
     excerpt: "From RM 22,000 for a condo cosmetic refresh to RM 250,000+ for a full landed rebuild — here's how our project managers actually break down renovation budgets.",
     category: "Renovation",
@@ -467,6 +475,7 @@ Ready to plan? WhatsApp us and we'll book a free scoping call this week.
 
   post({
     slug: "safe-electrical-wiring-upgrade-old-house",
+    date: "July 11, 2026",
     title: "Safe Electrical Wiring Upgrade for Old KL Houses",
     excerpt: "If your house was built before 2000, chances are the DB box is under-spec, the wiring is aged rubber, and the earthing is questionable. Here's the safe upgrade path.",
     category: "Electrical",
@@ -555,6 +564,7 @@ Every KL Servis Rumah electrical job comes with a **12-month workmanship warrant
 
   post({
     slug: "spc-vs-vinyl-vs-laminate-flooring-malaysia",
+    date: "July 12, 2026",
     title: "SPC vs Vinyl vs Laminate Flooring in Malaysia: Which Is Right for You?",
     excerpt: "SPC is trending, vinyl is affordable, laminate is classic — but they age very differently under Malaysian humidity. Here's the honest comparison.",
     category: "Flooring",
@@ -642,6 +652,7 @@ Every KL Servis Rumah flooring install carries a **12-month workmanship warranty
 
   post({
     slug: "how-to-fix-a-leaking-roof-in-kl",
+    date: "July 13, 2026",
     title: "How to Fix a Leaking Roof in KL Before the Monsoon",
     excerpt: "Whether it's a metal deck warehouse, a concrete flat roof, or a terraced house tiled roof — here's the pre-monsoon roof inspection and repair method that actually holds.",
     category: "Waterproofing",
@@ -731,6 +742,7 @@ We usually come back with a same-day advisory and a slot for a paid inspection (
 
   post({
     slug: "kitchen-cabinet-material-guide-malaysia",
+    date: "July 14, 2026",
     title: "Kitchen Cabinet Material Guide for Malaysian Homes",
     excerpt: "Aluminium, solid plywood, MDF or 3G? Choosing the right kitchen cabinet material saves you RM 5k–RM 25k over 10 years — here's the honest breakdown.",
     category: "Renovation",
@@ -833,6 +845,7 @@ Ready to plan your new kitchen? WhatsApp us today.
 
   post({
     slug: "monsoon-home-prep-klang-valley",
+    date: "July 15, 2026",
     title: "Monsoon Home Prep Checklist for the Klang Valley",
     excerpt: "The northeast monsoon hits Klang Valley hard from October to March. Here are the 10 preventive checks that stop 90% of rainy-season damage.",
     category: "Seasonal",
@@ -917,6 +930,7 @@ WhatsApp us to book — early September is the sweet spot.
 
   post({
     slug: "smart-lock-buying-guide-malaysia-2026",
+    date: "July 16, 2026",
     title: "Smart Lock Buying Guide for Malaysian Homes (2026)",
     excerpt: "Samsung, Yale, Kaadas, Philips or Lockin? Here's how our locksmiths compare the top 5 smart locks sold in Malaysia — features, install, warranty, real-world reliability.",
     category: "Guide",
@@ -1004,6 +1018,7 @@ WhatsApp us a photo of your existing door + the smart lock model you're consider
 
   post({
     slug: "cctv-installation-buying-guide-kl",
+    date: "July 17, 2026",
     title: "CCTV Buying & Installation Guide for KL Homes",
     excerpt: "Analog vs IP, 4-channel vs 8-channel, cloud vs local storage — here's how to specify a home CCTV system that actually works when you need it.",
     category: "Guide",
@@ -1100,6 +1115,7 @@ WhatsApp us a photo of your house exterior + a rough floor plan. We come back wi
 
   post({
     slug: "auto-gate-installation-guide-malaysia",
+    date: "July 18, 2026",
     title: "Auto Gate Installation Guide for Malaysian Homes",
     excerpt: "Swing arm vs sliding vs underground — which motor is right for your gate? Plus install cost, safety features and reliability tips.",
     category: "Guide",
@@ -1199,6 +1215,7 @@ WhatsApp us a photo of your gate + a photo of your driveway from the road. We'll
 
   post({
     slug: "when-to-repaint-condo-vs-repaint-terrace-house",
+    date: "July 19, 2026",
     title: "Condo Repaint vs Landed Terrace House Repaint: What's Different?",
     excerpt: "The scope, the JMB rules, the paint choice, and the timeline are all different. Here's what every KL homeowner should know before repainting.",
     category: "Painting",
@@ -1294,6 +1311,7 @@ WhatsApp us your unit address + a few photos of your worst walls. We'll come bac
 
   post({
     slug: "how-to-hire-honest-contractor-malaysia",
+    date: "July 20, 2026",
     title: "How to Hire an Honest Home Contractor in Malaysia (Red Flag Guide)",
     excerpt: "The biggest ripoff signals in Malaysian home services — from vague quotes to zero warranty — and the questions that force honest answers.",
     category: "Guide",
@@ -1369,6 +1387,7 @@ Ready to hire someone who ticks all these boxes? WhatsApp us and we'll respond w
   // ── AIRCON ARTICLES ─────────────────────────────────────────────────────
   post({
     slug: "aircon-service-price-malaysia-2026",
+    date: "July 21, 2026",
     title: "Aircon Service Price Malaysia 2026: Full Price Guide",
     excerpt: "Basic servicing from RM 129, chemical wash from RM 156, overhaul from RM 286 and installation from RM 259 — the complete KL & Selangor aircon price list, with what each service includes.",
     category: "Aircon",
@@ -1409,6 +1428,7 @@ See our [aircon service page](/services/aircon) for the full breakdown and book 
   }),
   post({
     slug: "chemical-wash-vs-chemical-overhaul-aircon",
+    date: "July 22, 2026",
     title: "Chemical Wash vs Chemical Overhaul: Which Aircon Service Do You Need?",
     excerpt: "A chemical wash cleans the coil and blower without removing the unit; an overhaul fully dismantles it. Here's how to choose the right one for your aircon and budget.",
     category: "Aircon",
@@ -1440,6 +1460,7 @@ Both are covered by our 1-month workmanship warranty. Compare the full prices on
   }),
   post({
     slug: "aircon-gas-topup-guide-malaysia",
+    date: "July 23, 2026",
     title: "Aircon Gas Top-Up Guide: R22, R410A & R32 Prices in Malaysia",
     excerpt: "R22 is RM 2.50 per PSI, R410A and R32 are RM 3.00 per PSI. Learn how gas top-up is charged, why a leak check matters, and when topping up isn't the real fix.",
     category: "Aircon",
@@ -1470,6 +1491,7 @@ Book a gas top-up or diagnosis on our [aircon service page](/services/aircon).
   }),
   post({
     slug: "aircon-installation-cost-malaysia",
+    date: "July 24, 2026",
     title: "Aircon Installation Cost in Malaysia 2026: What's Included",
     excerpt: "Wall-mounted installation from RM 259, ceiling cassette from RM 377. Here's exactly what's included — and why the aircon unit itself is not part of the price.",
     category: "Aircon",
@@ -1505,6 +1527,7 @@ See the full breakdown on our [aircon service page](/services/aircon).
   }),
   post({
     slug: "how-often-to-service-aircon-malaysia",
+    date: "July 25, 2026",
     title: "How Often Should You Service Your Aircon in Malaysia?",
     excerpt: "Most Malaysian homes should service their aircon every 3–6 months, with a chemical wash annually. Here's the schedule that keeps your unit cold, clean and efficient.",
     category: "Aircon",
