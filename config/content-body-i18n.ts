@@ -29,10 +29,12 @@
  * bundle-discipline reason as `content-i18n.ts`.
  */
 
+import { podBulletsMs, podBulletsZh } from "@/config/content-pod-copy-i18n";
+
 type Dict = Record<string, string>;
 
 /** The 93 fixed bullet phrases the content generator can emit, in Malay. */
-export const bulletsMs: Dict = {
+const fixedBulletsMs: Dict = {
   // Painting clusters
   "Wall inspection and crack patching": "Pemeriksaan dinding dan tampalan retak",
   "Low-odor washable paint choices": "Pilihan cat boleh dicuci berbau rendah",
@@ -162,7 +164,7 @@ export const bulletsMs: Dict = {
 };
 
 /** The same 93 bullet phrases in Simplified Chinese. */
-export const bulletsZh: Dict = {
+const fixedBulletsZh: Dict = {
   "Wall inspection and crack patching": "墙面检查与裂缝修补",
   "Low-odor washable paint choices": "低气味可擦洗油漆选择",
   "Furniture masking and cleanup": "家具遮蔽与清理",
@@ -323,3 +325,10 @@ export const answerLabels = {
   ms: { startingPrice: "Harga permulaan", warranty: "Jaminan", lastUpdated: "Kemas kini terakhir" },
   zh: { startingPrice: "起价", warranty: "保修", lastUpdated: "最后更新" }
 } as const;
+
+// P2-C3: pod-authored bullet phrases ride the same exact-lookup path; the
+// authored pods (58) emit 228 unique bullets that the fixed vocabulary above
+// predates. Merged here so content-body-i18n stays the single source the
+// resolver looks up, and future pod copy only has to extend the sidecar.
+export const bulletsMs: Dict = { ...fixedBulletsMs, ...podBulletsMs };
+export const bulletsZh: Dict = { ...fixedBulletsZh, ...podBulletsZh };

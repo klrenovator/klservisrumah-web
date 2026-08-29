@@ -26,14 +26,15 @@
     "audit:bp1": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/bp1-consolidation-audit.ts",
     "audit:schema-size": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/schema-size-audit.ts",
     "validate:blogs": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/validate-blog-production.ts",
-    "prebuild": "npm run gen:rates && npm run gen:ai-context && npm run gen:service-summary && npm run gen:blog-index && npm run gen:bp1-map && npm run validate:blogs && npm run audit:bp1 -- --source-only && npm run audit:topical-map && npm run audit:specialty-locale && npm run audit:specialty-coverage && npm run audit:service-i18n && npm run audit:trilingual-leak && npm run audit:i18n && npm run audit:problem-i18n && npm run audit:client-bundle && npm run test:estimators",
+    "prebuild": "npm run gen:rates && npm run gen:ai-context && npm run gen:service-summary && npm run gen:blog-index && npm run gen:bp1-map && npm run validate:blogs && npm run audit:bp1 -- --source-only && npm run audit:topical-map && npm run audit:specialty-locale && npm run audit:specialty-coverage && npm run audit:service-i18n && npm run audit:trilingual-leak && npm run audit:content-pods && npm run audit:i18n && npm run audit:problem-i18n && npm run audit:client-bundle && npm run test:estimators",
     "predev": "npm run gen:rates && npm run gen:ai-context && npm run gen:service-summary && npm run gen:blog-index && npm run gen:bp1-map",
     "test:estimators": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/test-estimators.ts",
     "audit:client-bundle": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/client-bundle-guard.ts",
     "audit:links": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/internal-link-audit.ts",
     "audit:specialty-coverage": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/validate-specialty-coverage.ts",
     "audit:service-i18n": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/validate-service-i18n.ts",
-    "audit:trilingual-leak": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/validate-trilingual-direct-answer.ts"
+    "audit:trilingual-leak": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/validate-trilingual-direct-answer.ts",
+    "audit:content-pods": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./scripts/ts-resolver.mjs scripts/validate-content-pods.ts"
   },
   "dependencies": {
     "clsx": "^2.1.1",
