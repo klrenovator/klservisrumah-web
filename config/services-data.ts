@@ -1441,7 +1441,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     i18n: {
       ms: {
         title: "Jubin & Pembaikan Jubin Profesional",
-        tagline: "Jubin lantai dan dinding untuk pembinaan baru, pengubahsuaian, dan pembaikan. Homogen, porselin, seramik, mozek, dan slab format besar. Dari RM 14 / sq ft.",
+        tagline: "Jubin lantai dan dinding untuk pembinaan baru, pengubahsuaian, dan pembaikan. Homogen, porselin, seramik, mozek, dan slab format besar. Dari RM 14 / kaki persegi.",
         description: "KL Servis Rumah menyampaikan perkhidmatan jubin lantai dan dinding profesional di seluruh Kuala Lumpur dan Selangor. Kami bekerja dengan setiap jenis jubin utama — homogen, porselin, seramik, mozek, kaca, batu semula jadi (marmar, granit, travertine), dan slab format besar yang semakin popular (600x1200mm, 800x1800mm, 1200x2400mm). Tukang jubin kami berpengalaman dengan kaedah pemasangan moden termasuk membran decoupling (Schlüter DITRA), underlayment self-levelling (Mapei Ultraplan), dan sistem lippage-tuning (Raimondi Levelling System) untuk lantai yang sempurna rata. Kami juga membaiki jubin yang longgar, berongga, dan retak, menggantikan grout, dan memasang semula jubin kawasan basah dengan kalis air yang betul.",
         highlights: [
           "Tukang jubin berpengalaman dengan homogen, porselin, seramik, mozek, batu semula jadi, dan slab format besar",
@@ -1484,7 +1484,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       },
       zh: {
         title: "专业瓷砖与瓷砖修补",
-        tagline: "新房、翻新与修补的地面和墙面瓷砖。瓷质、玻化、陶瓷、马赛克与超大板。从 RM 14 / sq ft 起。",
+        tagline: "新房、翻新与修补的地面和墙面瓷砖。瓷质、玻化、陶瓷、马赛克与超大板。从 RM 14 / 平方呎 起。",
         description: "KL Servis Rumah 在整个吉隆坡与雪兰莪提供专业的地面和墙面瓷砖服务。我们熟悉所有主流瓷砖种类——瓷质砖、玻化砖、陶瓷砖、马赛克、玻璃、天然石材（大理石、花岗岩、石灰华）以及越来越受欢迎的超大板（600x1200mm、800x1800mm、1200x2400mm）。我们的瓦工掌握现代铺贴工艺，包括 Schlüter DITRA 抗裂膜、Mapei Ultraplan 自流平，以及 Raimondi 找平器系统，确保地面绝对平整。我们也维修松动、空鼓和开裂的瓷砖，重新勾缝，并在湿区重新铺贴并做好防水层。",
         highlights: [
           "瓦工熟悉瓷质、玻化、陶瓷、马赛克、天然石材与超大板",
@@ -1579,7 +1579,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     i18n: {
       ms: {
         title: "Reka Bentuk & Bina Siling Plaster Moden",
-        tagline: "Siling plaster moden dengan alur LED tersembunyi, reka bentuk bertingkat, L-box, dan pencahayaan cove untuk hartanah bertanah dan bertingkat tinggi. Dari RM 10 / sq ft.",
+        tagline: "Siling plaster moden dengan alur LED tersembunyi, reka bentuk bertingkat, L-box, dan pencahayaan cove untuk hartanah bertanah dan bertingkat tinggi. Dari RM 10 / kaki persegi.",
         description: "KL Servis Rumah mereka dan membina siling plaster moden untuk hartanah kediaman dan komersial di seluruh Kuala Lumpur dan Selangor. Sama ada anda mahukan siling rata minimalis yang bersih, reka bentuk bertingkat pelbagai aras, L-box dengan jalur LED tersembunyi, atau cove melengkung penuh untuk pencahayaan ambien, pakar siling plaster kami menyampaikan kemasan yang rata kilang dan bersedia untuk cat. Kami hanya menggunakan papan gipsum gred tahan api dan tahan lembapan dari jenama Malaysia yang bereputasi (Knauf, BNBM, Gyproc) yang disokong oleh rangka logam besi tergalvani (GI) tahan karat. Setiap siling termasuk panel akses yang betul, tetulang cangkuk kipas di mana diperlukan, dan koordinasi terperinci dengan juruelektrik anda untuk posisi downlight dan kaset AC.",
         highlights: [
           "Papan gipsum Knauf, BNBM, dan Gyproc gred tahan api dan tahan lembapan",
@@ -1622,7 +1622,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       },
       zh: {
         title: "现代石膏天花板设计与施工",
-        tagline: "为有地与高层物业打造的现代石膏天花板，含隐藏式 LED 灯槽、错层、L 盒与灯带。从 RM 10 / sq ft 起。",
+        tagline: "为有地与高层物业打造的现代石膏天花板，含隐藏式 LED 灯槽、错层、L 盒与灯带。从 RM 10 / 平方呎 起。",
         description: "KL Servis Rumah 在整个吉隆坡与雪兰莪为住宅与商业物业设计并建造现代石膏天花板。无论是极简的平顶、多层错层、带隐藏式 LED 灯带的 L 盒，还是为间接氛围照明打造的整体弧形灯带，我们的天花板专家都能交付工厂级平整度、即可上漆的表面。我们只使用知名品牌（Knauf、BNBM、Gyproc）的防火与防潮石膏板，配合坚固的镀锌铁（GI）金属龙骨。每套天花板都包含检修口、吊扇加固点，并与您的电工协同规划筒灯与空调出风口的位置。",
         highlights: [
           "采用 Knauf、BNBM、Gyproc 防火与防潮石膏板",
@@ -1710,7 +1710,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     i18n: {
       ms: {
         title: "Skim Coat Dinding & Siling",
-        tagline: "Salutan skim licin kaca untuk dinding dan siling, kemasan siap-cat, penyediaan permukaan penuh dan pembaikan retak. Dari RM 5 / sq ft.",
+        tagline: "Salutan skim licin kaca untuk dinding dan siling, kemasan siap-cat, penyediaan permukaan penuh dan pembaikan retak. Dari RM 5 / kaki persegi.",
         description: "KL Servis Rumah menyediakan perkhidmatan salutan skim profesional di seluruh Kuala Lumpur dan Selangor untuk memberikan dinding dan siling anda permukaan yang sempurna rata dan bersedia untuk cat. Salutan skim adalah lapisan akhir plaster halus yang digunakan atas plaster atau permukaan yang sebelumnya dicat untuk menghapuskan tanda trowel, retak halus, sendi tidak rata, dan ketidaksempurnaan substrat kecil. Kami menggunakan sebatian skim diubah suai polimer premium (Knauf, Gyproc, Mapei) yang digunakan dalam dua hingga tiga lapisan, dengan kemasan tangan atau tiang pengamplasan bergantung pada kawasan. Hasilnya adalah permukaan yang sempurna licin, seragam, dan bersedia untuk cat yang membuat cat asas pun kelihatan premium.",
         highlights: [
           "Kemasan licin kaca sesuai untuk sistem cat gloss tinggi, satin, dan dinding ciri",
@@ -1746,7 +1746,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       },
       zh: {
         title: "墙面与天花腻子",
-        tagline: "玻璃般光滑的墙面与天花腻子，可上漆的表面，全套基层处理与裂缝修补。从 RM 5 / sq ft 起。",
+        tagline: "玻璃般光滑的墙面与天花腻子，可上漆的表面，全套基层处理与裂缝修补。从 RM 5 / 平方呎 起。",
         description: "KL Servis Rumah 在整个吉隆坡与雪兰莪提供专业腻子服务，让您的墙面与天花获得完美平整、即可上漆的表面。腻子是涂在已抹灰或旧漆面上的一层细石膏，用来消除抹刀痕、细裂纹、接缝不平和小瑕疵。我们使用优质聚合物改性腻子（Knauf、Gyproc、Mapei），做两到三道，根据面积用手工或长杆打磨。最终得到完全光滑、均匀、可上漆的表面，连普通底漆都能呈现高端效果。",
         highlights: [
           "玻璃般光滑的表面，适合高光、丝光和主题墙漆系统",

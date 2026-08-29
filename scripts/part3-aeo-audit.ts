@@ -27,6 +27,8 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { servicesData } from "@/config/services-data";
+import { trilingualLeakSignatures } from "@/lib/trilingual-leak";
 
 const BUILD_DIR = path.join(process.cwd(), ".next", "server", "app");
 const OUT_CORPUS = path.join(process.cwd(), "docs", "audit-part3-corpus.jsonl");
@@ -55,8 +57,8 @@ type PageRec = {
   hasNapAddress: boolean;
   vagueCount: number;
   vagueSamples: string[];
-  trilingualBmLeak: number; // ASCII words inside the BM segment of the trilingual sub-block
-  trilingualZhLeak: number; // ASCII words inside the 中文 segment
+  trilingualBmLeak: number; // leak signatures inside rendered BM note spans (P3-01 detector)
+  trilingualZhLeak: number; // leak signatures inside rendered 中文 note spans (P3-01 detector)
   contentStart: string;
 };
 
@@ -183,21 +185,30 @@ const VAGUE_TERMS = [
 ];
 
 /**
- * Count ASCII words inside the DirectAnswer trilingual sub-blocks.
- * The block templates are:
- *   BM: `{title} disyorkan apabila anda memerlukan {tagline}... Pakej kami bermula...`
- *   ZH: `{title} 适合需要{tagline}...的客户。我们的服务...`
- * The tagline/warranty interpolations are English, so the segments between the
- * fixed Malay/Chinese anchors and the next Malay/Chinese phrase carry the leak.
+ * Count English-leakage signatures inside the DirectAnswer trilingual sub-note
+ * (P3-01). This replaces the original "ASCII words between fixed anchors"
+ * counter, which (a) could not tell Malay from English — Malay is written in
+ * the Latin script, so clean localized notes scored as leaks and (b) missed
+ * the quote-only BM branch (no "Pakej kami bermula" end anchor). The notes are
+ * now extracted from the rendered `trilingual-sub` paragraphs (hero subline +
+ * quick-answer note spans) and scored with the shared structural detector in
+ * lib/trilingual-leak: EN-field containment against the page's own registry
+ * entry, English area-unit tokens, and English function-word density.
  */
-function trilingualLeaks(text: string): { bm: number; zh: number } {
-  const asciiWords = (s: string) => (s.match(/[A-Za-z]{3,}/g) || []).length;
-  const bmStart = text.indexOf("disyorkan apabila anda memerlukan");
-  const bmEnd = text.indexOf("Pakej kami bermula");
-  const bm = bmStart !== -1 && bmEnd !== -1 && bmEnd > bmStart ? asciiWords(text.slice(bmStart + 32, bmEnd)) : 0;
-  const zhStart = text.indexOf("适合需要");
-  const zhEnd = text.indexOf("的客户");
-  const zh = zhStart !== -1 && zhEnd !== -1 && zhEnd > zhStart ? asciiWords(text.slice(zhStart + 4, zhEnd)) : 0;
+function trilingualLeaks(html: string, url: string): { bm: number; zh: number } {
+  const slug = url.match(/^(?:\/(?:ms|zh))?\/services\/([a-z0-9-]+)$/)?.[1];
+  const svc = slug ? servicesData[slug] : undefined;
+  const en = svc ? { title: svc.title, tagline: svc.tagline, warranty: svc.warranty } : {};
+  let bm = 0;
+  let zh = 0;
+  const paras = html.match(/<p class="trilingual-sub[^"]*"[^>]*>[\s\S]*?<\/p>/g) || [];
+  for (const p of paras) {
+    const flat = cleanText(p);
+    const bmM = flat.match(/BM:\s*(.*?)(?:[·|]\s*中文:|中文:|$)/);
+    const zhM = flat.match(/中文:\s*(.*)$/);
+    if (bmM) bm += trilingualLeakSignatures(bmM[1].trim(), en).length;
+    if (zhM) zh += trilingualLeakSignatures(zhM[1].trim(), en).length;
+  }
   return { bm, zh };
 }
 
@@ -244,7 +255,7 @@ function main() {
       const m = text.match(re);
       if (m && vague.length < 8) vague.push(m[0]);
     }
-    const leaks = trilingualLeaks(text);
+    const leaks = trilingualLeaks(html, url);
     recs.push({
       url,
       pattern,
@@ -328,8 +339,8 @@ function main() {
   const bmByPattern: Record<string, number> = {};
   const zhByPattern: Record<string, number> = {};
   for (const r of recs) {
-    if (r.trilingualBmLeak > 2) bmByPattern[r.pattern] = (bmByPattern[r.pattern] ?? 0) + 1;
-    if (r.trilingualZhLeak > 2) zhByPattern[r.pattern] = (zhByPattern[r.pattern] ?? 0) + 1;
+    if (r.trilingualBmLeak > 0) bmByPattern[r.pattern] = (bmByPattern[r.pattern] ?? 0) + 1;
+    if (r.trilingualZhLeak > 0) zhByPattern[r.pattern] = (zhByPattern[r.pattern] ?? 0) + 1;
   }
   (aggregate.trilingualLeaks as Record<string, unknown>).bmLeakByPattern = bmByPattern;
   (aggregate.trilingualLeaks as Record<string, unknown>).zhLeakByPattern = zhByPattern;
@@ -343,9 +354,9 @@ function main() {
   const en = recs.filter((r) => r.lang === "en");
   console.log(`EN pages with ≥1 question heading: ${en.filter((r) => r.questionH2 + r.questionH3 > 0).length}/${en.length}`);
   console.log(`EN pages with quick-answer block: ${en.filter((r) => r.hasQuickAnswer).length}`);
-  console.log(`Trilingual-leak pages (BM seg >2 ASCII words): ${recs.filter((r) => r.trilingualBmLeak > 2).length} | (ZH seg): ${recs.filter((r) => r.trilingualZhLeak > 2).length}`);
-  const bmLeakPages = recs.filter((r) => r.trilingualBmLeak > 2);
-  const zhLeakPages = recs.filter((r) => r.trilingualZhLeak > 2);
+  console.log(`Trilingual-leak pages (structural: EN containment / units / function words — see lib/trilingual-leak): BM ${recs.filter((r) => r.trilingualBmLeak > 0).length} | ZH ${recs.filter((r) => r.trilingualZhLeak > 0).length}`);
+  const bmLeakPages = recs.filter((r) => r.trilingualBmLeak > 0);
+  const zhLeakPages = recs.filter((r) => r.trilingualZhLeak > 0);
   const leakByPattern = (pages: PageRec[]) => {
     const m = new Map<string, number>();
     for (const r of pages) m.set(r.pattern, (m.get(r.pattern) ?? 0) + 1);
@@ -353,7 +364,7 @@ function main() {
   };
   console.log('BM leak by pattern:', JSON.stringify(leakByPattern(bmLeakPages)));
   console.log('ZH leak by pattern:', JSON.stringify(leakByPattern(zhLeakPages)));
-  const leakSamples = recs.filter((r) => r.trilingualBmLeak > 2 || r.trilingualZhLeak > 2).slice(0, 8).map((r) => r.url);
+  const leakSamples = recs.filter((r) => r.trilingualBmLeak > 0 || r.trilingualZhLeak > 0).slice(0, 8).map((r) => r.url);
   console.log('leak samples:', JSON.stringify(leakSamples));
   for (const [key, v] of Object.entries(aggregate.patterns as Record<string, unknown>)) {
     const p = v as { n: number; pctQuestionH2: number; pctFaqSchema: number; pctQuickAnswer: number; pctNap: number; meanWords: number };
