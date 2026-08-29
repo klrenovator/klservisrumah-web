@@ -29,7 +29,7 @@
  * bundle-discipline reason as `content-i18n.ts`.
  */
 
-import { podBulletsMs, podBulletsZh } from "@/config/content-pod-copy-i18n";
+import { podBulletsMs, podBulletsZh, batch2BulletsMs, batch2BulletsZh } from "@/config/content-pod-copy-i18n";
 
 type Dict = Record<string, string>;
 
@@ -330,5 +330,5 @@ export const answerLabels = {
 // authored pods (58) emit 228 unique bullets that the fixed vocabulary above
 // predates. Merged here so content-body-i18n stays the single source the
 // resolver looks up, and future pod copy only has to extend the sidecar.
-export const bulletsMs: Dict = { ...fixedBulletsMs, ...podBulletsMs };
-export const bulletsZh: Dict = { ...fixedBulletsZh, ...podBulletsZh };
+export const bulletsMs: Dict = { ...fixedBulletsMs, ...podBulletsMs, ...batch2BulletsMs };
+export const bulletsZh: Dict = { ...fixedBulletsZh, ...podBulletsZh, ...batch2BulletsZh };

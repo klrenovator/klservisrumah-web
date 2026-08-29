@@ -158,277 +158,277 @@ export const contentNavList: ContentNavItem[] = [
     "slug": "how-to-choose-house-painter-kl",
     "title": "How to Choose a House Painter in KL",
     "category": "Painting",
-    "intro": "How to Choose a House Painter in KL explains practical decision criteria, pricing signals, material quality checks, warr"
+    "intro": "How to choose a house painter in KL: five checks that separate a professional job from a botched repaint — before you si"
   },
   {
     "slug": "how-to-choose-plumber-kl",
     "title": "How to Choose a Plumber in KL",
     "category": "Plumbing",
-    "intro": "How to Choose a Plumber in KL explains practical decision criteria, pricing signals, material quality checks, warranty q"
+    "intro": "How to choose a plumber in KL: the checks that prevent a simple repair from becoming a flooding disaster — licensing, is"
   },
   {
     "slug": "how-to-choose-waterproofing-contractor-kl",
     "title": "How to Choose a Waterproofing Contractor in KL",
     "category": "Waterproofing",
-    "intro": "How to Choose a Waterproofing Contractor in KL explains practical decision criteria, pricing signals, material quality c"
+    "intro": "How to choose a waterproofing contractor in KL: the five questions that expose contractors who sell no-hack solutions fo"
   },
   {
     "slug": "how-to-choose-ceiling-contractor-kl",
     "title": "How to Choose a Ceiling Contractor in KL",
     "category": "Ceiling",
-    "intro": "How to Choose a Ceiling Contractor in KL explains practical decision criteria, pricing signals, material quality checks,"
+    "intro": "How to choose a ceiling contractor in KL: from framing quality to skim finishing — the checks that prevent sagging, crac"
   },
   {
     "slug": "how-to-choose-handyman-kl",
     "title": "How to Choose a Handyman in KL",
     "category": "Handyman",
-    "intro": "How to Choose a Handyman in KL explains practical decision criteria, pricing signals, material quality checks, warranty "
+    "intro": "How to choose a handyman in KL: the difference between a professional who fixes it once and a cowboy who comes back thre"
   },
   {
     "slug": "paint-brand-comparison-nippon-vs-dulux-vs-jotun",
     "title": "Paint Brand Comparison: Nippon vs Dulux vs Jotun",
     "category": "Painting",
-    "intro": "Paint Brand Comparison: Nippon vs Dulux vs Jotun explains practical decision criteria, pricing signals, material quality"
+    "intro": "Nippon Paint versus Dulux versus Jotun: a practical three-way comparison for Malaysian homeowners choosing between the t"
   },
   {
     "slug": "waterproofing-method-comparison-pu-vs-membrane",
     "title": "Waterproofing Method Comparison: PU vs Membrane",
     "category": "Waterproofing",
-    "intro": "Waterproofing Method Comparison: PU vs Membrane explains practical decision criteria, pricing signals, material quality "
+    "intro": "PU injection versus full membrane waterproofing: a practical comparison for Malaysian bathroom, balcony and roof leaks —"
   },
   {
     "slug": "ceiling-material-comparison-plaster-vs-gypsum",
     "title": "Ceiling Material Comparison: Plaster vs Gypsum",
     "category": "Ceiling",
-    "intro": "Ceiling Material Comparison: Plaster vs Gypsum explains practical decision criteria, pricing signals, material quality c"
+    "intro": "Plaster ceiling versus gypsum board for Malaysian homes: cost, durability, finish quality and warranty compared for real"
   },
   {
     "slug": "plumbing-pipe-comparison-pvc-vs-copper-vs-ppr",
     "title": "Plumbing Pipe Comparison: PVC vs Copper vs PPR",
     "category": "Plumbing",
-    "intro": "Plumbing Pipe Comparison: PVC vs Copper vs PPR explains practical decision criteria, pricing signals, material quality c"
+    "intro": "PVC, copper and PPR pipes for Malaysian homes: pressure ratings, temperature limits, installation cost and lifespan comp"
   },
   {
     "slug": "tv-mount-types-comparison-fixed-vs-tilt-vs-full-motion",
     "title": "TV Mount Types: Fixed vs Tilt vs Full-Motion",
     "category": "Handyman",
-    "intro": "TV Mount Types: Fixed vs Tilt vs Full-Motion explains practical decision criteria, pricing signals, material quality che"
+    "intro": "Fixed, tilt or full-motion TV mount: which bracket suits your wall type, viewing angle and the weight of your TV — a saf"
   },
   {
     "slug": "pu-grouting-vs-tile-hacking",
     "title": "PU Grouting vs Tile Hacking",
     "category": "Comparison",
-    "intro": "PU Grouting vs Tile Hacking compares use cases, cost ranges, durability, disruption level, and suitability for KL and Se"
+    "intro": "PU grouting versus full tile hacking for bathroom leaks: when the no-hack injection method holds, and when only a full m"
   },
   {
     "slug": "plaster-ceiling-vs-gypsum-ceiling",
     "title": "Plaster Ceiling vs Gypsum Ceiling",
     "category": "Comparison",
-    "intro": "Plaster Ceiling vs Gypsum Ceiling compares use cases, cost ranges, durability, disruption level, and suitability for KL "
+    "intro": "Plaster ceiling versus gypsum board ceiling: the 10-year premium system versus the faster, cheaper alternative — which o"
   },
   {
     "slug": "nippon-paint-vs-dulux-paint",
     "title": "Nippon Paint vs Dulux Paint",
     "category": "Comparison",
-    "intro": "Nippon Paint vs Dulux Paint compares use cases, cost ranges, durability, disruption level, and suitability for KL and Se"
+    "intro": "Nippon Paint versus Dulux for Malaysian homes: stain resistance, weather durability, colour range and price — a practica"
   },
   {
     "slug": "acrylic-vs-cementitious-waterproofing",
     "title": "Acrylic vs Cementitious Waterproofing",
     "category": "Comparison",
-    "intro": "Acrylic vs Cementitious Waterproofing compares use cases, cost ranges, durability, disruption level, and suitability for"
+    "intro": "Acrylic coating versus cementitious waterproofing for Malaysian roofs and walls: when a brush-on membrane works, and whe"
   },
   {
     "slug": "pvc-pipes-vs-copper-pipes",
     "title": "PVC Pipes vs Copper Pipes",
     "category": "Comparison",
-    "intro": "PVC Pipes vs Copper Pipes compares use cases, cost ranges, durability, disruption level, and suitability for KL and Sela"
+    "intro": "PVC versus copper pipes for Malaysian plumbing: cost, durability, pressure ratings and where each material earns its pla"
   },
   {
     "slug": "pvc-vs-molly-bolt-anchors",
     "title": "PVC Plugs vs Molly Bolt Anchors",
     "category": "Comparison",
-    "intro": "PVC Plugs vs Molly Bolt Anchors compares use cases, cost ranges, durability, disruption level, and suitability for KL an"
+    "intro": "PVC wall plugs versus molly bolt anchors for mounting on Malaysian walls: which fixing earns its place on plasterboard, "
   },
   {
     "slug": "interior-paint-finishes-matte-vs-satin-vs-gloss",
     "title": "Interior Paint Finishes: Matte vs Satin vs Gloss",
     "category": "Comparison",
-    "intro": "Interior Paint Finishes: Matte vs Satin vs Gloss compares use cases, cost ranges, durability, disruption level, and suit"
+    "intro": "Matte, satin or gloss interior paint: which finish hides imperfections, survives wiping, and reads well under Malaysian "
   },
   {
     "slug": "wall-putty-vs-plaster-smoothening",
     "title": "Wall Putty vs Plaster Smoothening",
     "category": "Comparison",
-    "intro": "Wall Putty vs Plaster Smoothening compares use cases, cost ranges, durability, disruption level, and suitability for KL "
+    "intro": "Wall putty versus full plaster smoothening: when a thin skim coat is enough, and when the wall needs the full trowel-fla"
   },
   {
     "slug": "partition-materials-gypsum-vs-bricks-vs-glass",
     "title": "Partition Materials: Gypsum vs Bricks vs Glass",
     "category": "Comparison",
-    "intro": "Partition Materials: Gypsum vs Bricks vs Glass compares use cases, cost ranges, durability, disruption level, and suitab"
+    "intro": "Gypsum, brick or glass partitions for KL & Selangor properties: sound insulation, weight, cost and installation speed co"
   },
   {
     "slug": "diy-painting-vs-professional-painting",
     "title": "DIY Painting vs Professional Painting",
     "category": "Comparison",
-    "intro": "DIY Painting vs Professional Painting compares use cases, cost ranges, durability, disruption level, and suitability for"
+    "intro": "DIY painting versus hiring a professional painter in KL: real cost comparison including materials, time, waste and the f"
   },
   {
     "slug": "cheap-handyman-vs-insured-contractor",
     "title": "Cheap Handyman vs Insured Contractor",
     "category": "Comparison",
-    "intro": "Cheap Handyman vs Insured Contractor compares use cases, cost ranges, durability, disruption level, and suitability for "
+    "intro": "Cheap handyman versus insured contractor in KL: the real cost when a RM 50 job becomes a RM 5,000 repair — insurance, wa"
   },
   {
     "slug": "pu-injection-vs-surface-waterproofing",
     "title": "PU Injection vs Surface Waterproofing",
     "category": "Comparison",
-    "intro": "PU Injection vs Surface Waterproofing compares use cases, cost ranges, durability, disruption level, and suitability for"
+    "intro": "PU injection versus surface waterproofing for concrete leaks: when to inject from below, when to coat from above, and wh"
   },
   {
     "slug": "fixed-quote-vs-hourly-handyman",
     "title": "Fixed Quote vs Hourly Handyman",
     "category": "Comparison",
-    "intro": "Fixed Quote vs Hourly Handyman compares use cases, cost ranges, durability, disruption level, and suitability for KL and"
+    "intro": "Fixed quote versus hourly rate for handyman work in KL: which pricing model protects you from surprises, and when hourly"
   },
   {
     "slug": "drywall-partition-vs-glass-partition",
     "title": "Drywall Partition vs Glass Partition",
     "category": "Comparison",
-    "intro": "Drywall Partition vs Glass Partition compares use cases, cost ranges, durability, disruption level, and suitability for "
+    "intro": "Drywall versus glass partitions for offices and homes in KL: privacy, light, cost and installation speed compared for re"
   },
   {
     "slug": "roof-coating-vs-torch-on-membrane",
     "title": "Roof Coating vs Torch-On Membrane",
     "category": "Comparison",
-    "intro": "Roof Coating vs Torch-On Membrane compares use cases, cost ranges, durability, disruption level, and suitability for KL "
+    "intro": "Roof coating versus torch-on membrane for Malaysian flat roofs and concrete slabs: when a brush-on system holds, and whe"
   },
   {
     "slug": "chemical-wash-vs-chemical-overhaul",
     "title": "Chemical Wash vs Chemical Overhaul",
     "category": "Comparison",
-    "intro": "Chemical Wash vs Chemical Overhaul compares use cases, cost ranges, durability, disruption level, and suitability for KL"
+    "intro": "Chemical wash versus chemical overhaul for aircon servicing: when a coil clean restores cooling, and when the full strip"
   },
   {
     "slug": "inverter-vs-non-inverter-aircon",
     "title": "Inverter vs Non-Inverter Aircon",
     "category": "Comparison",
-    "intro": "Inverter vs Non-Inverter Aircon compares use cases, cost ranges, durability, disruption level, and suitability for KL an"
+    "intro": "Inverter versus non-inverter aircon for Malaysian homes: the electricity bill difference, comfort level and when the pre"
   },
   {
     "slug": "wall-mounted-vs-ceiling-cassette-aircon",
     "title": "Wall-Mounted vs Ceiling Cassette Aircon",
     "category": "Comparison",
-    "intro": "Wall-Mounted vs Ceiling Cassette Aircon compares use cases, cost ranges, durability, disruption level, and suitability f"
+    "intro": "Wall-mounted versus ceiling cassette aircon for KL & Selangor properties: installation cost, airflow pattern and which t"
   },
   {
     "slug": "painting-maintenance-schedule",
     "title": "Painting Maintenance Schedule",
     "category": "Maintenance Guide",
-    "intro": "Painting Maintenance Schedule provides a practical checklist for Malaysian homes, with tasks grouped by urgency, frequen"
+    "intro": "A painting maintenance schedule for Malaysian homes: when to touch up, when to re-coat and how to extend the life of you"
   },
   {
     "slug": "plumbing-annual-checklist",
     "title": "Plumbing Annual Checklist",
     "category": "Maintenance Guide",
-    "intro": "Plumbing Annual Checklist provides a practical checklist for Malaysian homes, with tasks grouped by urgency, frequency, "
+    "intro": "An annual plumbing checklist for Malaysian homes: the 12 checks that catch leaks, pressure problems and fixture wear bef"
   },
   {
     "slug": "ceiling-maintenance-tips",
     "title": "Ceiling Maintenance Tips",
     "category": "Maintenance Guide",
-    "intro": "Ceiling Maintenance Tips provides a practical checklist for Malaysian homes, with tasks grouped by urgency, frequency, r"
+    "intro": "Ceiling maintenance tips for Malaysian homes: spotting early signs of leaks, sagging and mould before they become expens"
   },
   {
     "slug": "waterproofing-recheck-schedule",
     "title": "Waterproofing Recheck Schedule",
     "category": "Maintenance Guide",
-    "intro": "Waterproofing Recheck Schedule provides a practical checklist for Malaysian homes, with tasks grouped by urgency, freque"
+    "intro": "A waterproofing recheck schedule for Malaysian properties: when to inspect bathrooms, balconies and roofs before leaks d"
   },
   {
     "slug": "home-handyman-monthly-checklist",
     "title": "Home Handyman Monthly Checklist",
     "category": "Maintenance Guide",
-    "intro": "Home Handyman Monthly Checklist provides a practical checklist for Malaysian homes, with tasks grouped by urgency, frequ"
+    "intro": "A monthly handyman checklist for Malaysian homes: the small fixes that prevent big problems — doors, locks, mounts, seal"
   },
   {
     "slug": "rainy-season-home-prep",
     "title": "Rainy Season Home Prep",
     "category": "Maintenance Guide",
-    "intro": "Rainy Season Home Prep provides a practical checklist for Malaysian homes, with tasks grouped by urgency, frequency, rai"
+    "intro": "Rainy season home preparation for KL & Selangor: the pre-monsoon checks that prevent leaks, flooding and storm damage to"
   },
   {
     "slug": "post-renovation-cleanup-checklist",
     "title": "Post Renovation Cleanup Checklist",
     "category": "Maintenance Guide",
-    "intro": "Post Renovation Cleanup Checklist provides a practical checklist for Malaysian homes, with tasks grouped by urgency, fre"
+    "intro": "A post-renovation cleanup checklist for Malaysian homes: the steps that turn a construction site back into a liveable ho"
   },
   {
     "slug": "condo-maintenance-checklist",
     "title": "Condo Maintenance Checklist",
     "category": "Maintenance Guide",
-    "intro": "Condo Maintenance Checklist provides a practical checklist for Malaysian homes, with tasks grouped by urgency, frequency"
+    "intro": "A condo maintenance checklist for Malaysian high-rise living: the items specific to strata properties that JMB rules and"
   },
   {
     "slug": "landed-house-maintenance-calendar",
     "title": "Landed House Maintenance Calendar",
     "category": "Maintenance Guide",
-    "intro": "Landed House Maintenance Calendar provides a practical checklist for Malaysian homes, with tasks grouped by urgency, fre"
+    "intro": "A landed house maintenance calendar for Malaysian terrace, semi-D and bungalow owners: monthly, quarterly and annual tas"
   },
   {
     "slug": "rental-property-turnover-checklist",
     "title": "Rental Property Turnover Checklist",
     "category": "Maintenance Guide",
-    "intro": "Rental Property Turnover Checklist provides a practical checklist for Malaysian homes, with tasks grouped by urgency, fr"
+    "intro": "A rental property turnover checklist for Malaysian landlords: the between-tenant maintenance that protects your property"
   },
   {
     "slug": "home-prep-rainy-season-kl",
     "title": "Home Prep Rainy Season Kl",
     "category": "Seasonal",
-    "intro": "Home Prep Rainy Season Kl offers season-aware planning for KL and Selangor homes, with practical timing around Malaysian"
+    "intro": "Prepare your KL & Selangor home for the rainy season: a timed checklist of roof, drainage, waterproofing and exterior ch"
   },
   {
     "slug": "painting-dry-season-tips",
     "title": "Painting Dry Season Tips",
     "category": "Seasonal",
-    "intro": "Painting Dry Season Tips offers season-aware planning for KL and Selangor homes, with practical timing around Malaysian "
+    "intro": "Dry season painting tips for KL & Selangor homes: why the drier months are the ideal window for exterior repainting and "
   },
   {
     "slug": "waterproofing-pre-monsoon-checklist",
     "title": "Waterproofing Pre Monsoon Checklist",
     "category": "Seasonal",
-    "intro": "Waterproofing Pre Monsoon Checklist offers season-aware planning for KL and Selangor homes, with practical timing around"
+    "intro": "A pre-monsoon waterproofing checklist for Malaysian homes: the inspections and repairs that prevent the leaks monsoon ra"
   },
   {
     "slug": "chinese-new-year-home-repaint-guide",
     "title": "Chinese New Year Home Repaint Guide",
     "category": "Seasonal",
-    "intro": "Chinese New Year Home Repaint Guide offers season-aware planning for KL and Selangor homes, with practical timing around"
+    "intro": "Chinese New Year home repaint guide for KL & Selangor: timing, colour choices and booking windows for a fresh home befor"
   },
   {
     "slug": "raya-home-makeover-checklist",
     "title": "Raya Home Makeover Checklist",
     "category": "Seasonal",
-    "intro": "Raya Home Makeover Checklist offers season-aware planning for KL and Selangor homes, with practical timing around Malays"
+    "intro": "Hari Raya home makeover checklist for KL & Selangor: the timed plan for painting, repairs and deep cleaning before the f"
   },
   {
     "slug": "year-end-renovation-planning",
     "title": "Year End Renovation Planning",
     "category": "Seasonal",
-    "intro": "Year End Renovation Planning offers season-aware planning for KL and Selangor homes, with practical timing around Malays"
+    "intro": "Year-end renovation planning for KL & Selangor homes: how to use the December–January window for projects that finish be"
   },
   {
     "slug": "hari-raya-painting-promo",
     "title": "Hari Raya Painting Promo",
     "category": "Seasonal",
-    "intro": "Hari Raya Painting Promo offers season-aware planning for KL and Selangor homes, with practical timing around Malaysian "
+    "intro": "Hari Raya painting planning for KL & Selangor: how to book early, choose colours and time your repaint for a fresh home "
   },
   {
     "slug": "monsoon-leak-emergency-guide",
     "title": "Monsoon Leak Emergency Guide",
     "category": "Seasonal",
-    "intro": "Monsoon Leak Emergency Guide offers season-aware planning for KL and Selangor homes, with practical timing around Malays"
+    "intro": "Monsoon leak emergency guide for KL & Selangor homes: immediate steps when heavy rain finds your roof, ceiling or wall l"
   },
   {
     "slug": "painting-services-kl",
@@ -840,285 +840,285 @@ export const contentNavList: ContentNavItem[] = [
     "slug": "nippon-paint-application-malaysia",
     "title": "Nippon Paint Application Malaysia",
     "category": "Brand Guide",
-    "intro": "Nippon Paint Application Malaysia explains when this brand or material category is suitable, how it should be applied, a",
+    "intro": "Nippon Paint systems for Malaysian walls: when Spot Less Plus, Vinilex 5000 or Weatherbond earn their place over competi",
     "relatedServiceSlug": "painting"
   },
   {
     "slug": "dulux-paint-application-malaysia",
     "title": "Dulux Paint Application Malaysia",
     "category": "Brand Guide",
-    "intro": "Dulux Paint Application Malaysia explains when this brand or material category is suitable, how it should be applied, an",
+    "intro": "Dulux paint systems for KL and Selangor projects: when Weathershield, EasyClean or Ambiance Silk justify their price ver",
     "relatedServiceSlug": "painting"
   },
   {
     "slug": "jotun-paint-application-malaysia",
     "title": "Jotun Paint Application Malaysia",
     "category": "Brand Guide",
-    "intro": "Jotun Paint Application Malaysia explains when this brand or material category is suitable, how it should be applied, an",
+    "intro": "Jotun coatings for Malaysian properties: Jotashield exteriors, Majestic interiors and when the Scandinavian brand's prem",
     "relatedServiceSlug": "painting"
   },
   {
     "slug": "sirim-certified-pipes-malaysia",
     "title": "SIRIM-Certified Pipes Malaysia",
     "category": "Brand Guide",
-    "intro": "SIRIM-Certified Pipes Malaysia explains when this brand or material category is suitable, how it should be applied, and ",
+    "intro": "SIRIM-certified pipes for Malaysian plumbing: why the MS certification mark matters, which brands carry it, and how it a",
     "relatedServiceSlug": "plumbing"
   },
   {
     "slug": "grundfos-water-pump-installation",
     "title": "Grundfos Water Pump Installation",
     "category": "Brand Guide",
-    "intro": "Grundfos Water Pump Installation explains when this brand or material category is suitable, how it should be applied, an",
+    "intro": "Grundfos water pump installation for Malaysian homes: booster, transfer and circulation pumps sized to your pressure pro",
     "relatedServiceSlug": "plumbing"
   },
   {
     "slug": "joven-water-heater-installation",
     "title": "Joven Water Heater Installation",
     "category": "Brand Guide",
-    "intro": "Joven Water Heater Installation explains when this brand or material category is suitable, how it should be applied, and",
+    "intro": "Joven water heater installation and servicing for Malaysian bathrooms: instant and storage models, dedicated wiring, and",
     "relatedServiceSlug": "plumbing"
   },
   {
     "slug": "rinnai-water-heater-installation",
     "title": "Rinnai Water Heater Installation",
     "category": "Brand Guide",
-    "intro": "Rinnai Water Heater Installation explains when this brand or material category is suitable, how it should be applied, an",
+    "intro": "Rinnai water heater installation for Malaysian homes: gas instant heaters, storage electric models, and the ventilation ",
     "relatedServiceSlug": "plumbing"
   },
   {
     "slug": "knauf-gypsum-board-installation",
     "title": "Knauf Gypsum Board Installation",
     "category": "Brand Guide",
-    "intro": "Knauf Gypsum Board Installation explains when this brand or material category is suitable, how it should be applied, and",
+    "intro": "Knauf gypsum board for Malaysian ceilings and partitions: standard, moisture-resistant and fire-rated boards chosen for ",
     "relatedServiceSlug": "ceiling"
   },
   {
     "slug": "boral-gypsum-board-installation",
     "title": "Boral Gypsum Board Installation",
     "category": "Brand Guide",
-    "intro": "Boral Gypsum Board Installation explains when this brand or material category is suitable, how it should be applied, and",
+    "intro": "Boral gypsum board installation in KL & Selangor: Australian-made boards for ceilings and walls, with system specs match",
     "relatedServiceSlug": "ceiling"
   },
   {
     "slug": "sika-waterproofing-application",
     "title": "Sika Waterproofing Application",
     "category": "Brand Guide",
-    "intro": "Sika Waterproofing Application explains when this brand or material category is suitable, how it should be applied, and ",
+    "intro": "Sika waterproofing systems for Malaysian properties: cementitious coatings, PU membranes and injection resins — specifie",
     "relatedServiceSlug": "waterproofing"
   },
   {
     "slug": "bostik-waterproofing-application",
     "title": "Bostik Waterproofing Application",
     "category": "Brand Guide",
-    "intro": "Bostik Waterproofing Application explains when this brand or material category is suitable, how it should be applied, an",
+    "intro": "Bostik waterproofing for Malaysian homes: French-engineered sealants and membranes for bathrooms, balconies and tile joi",
     "relatedServiceSlug": "waterproofing"
   },
   {
     "slug": "mapei-waterproofing-application",
     "title": "Mapei Waterproofing Application",
     "category": "Brand Guide",
-    "intro": "Mapei Waterproofing Application explains when this brand or material category is suitable, how it should be applied, and",
+    "intro": "Mapei waterproofing for Malaysian renovations: Italian-made cementitious and liquid membranes for bathrooms, pools and w",
     "relatedServiceSlug": "waterproofing"
   },
   {
     "slug": "daikin-aircon-service-malaysia",
     "title": "Daikin Aircon Service Malaysia",
     "category": "Brand Guide",
-    "intro": "Daikin Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and installa",
+    "intro": "Daikin aircon service across KL & Selangor: chemical wash, gas top-up, PCB repair and installation for the most common A",
     "relatedServiceSlug": "aircon"
   },
   {
     "slug": "panasonic-aircon-service-malaysia",
     "title": "Panasonic Aircon Service Malaysia",
     "category": "Brand Guide",
-    "intro": "Panasonic Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and insta",
+    "intro": "Panasonic aircon service in KL & Selangor: nanoe-G cleaning, inverter servicing and Econavi sensor calibration for Panas",
     "relatedServiceSlug": "aircon"
   },
   {
     "slug": "mitsubishi-electric-aircon-service-malaysia",
     "title": "Mitsubishi Electric Aircon Service Malaysia",
     "category": "Brand Guide",
-    "intro": "Mitsubishi Electric Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair",
+    "intro": "Mitsubishi Electric aircon service across KL & Selangor: Mr. Slim and Starmex ranges, inverter diagnostics, and the quie",
     "relatedServiceSlug": "aircon"
   },
   {
     "slug": "york-aircon-service-malaysia",
     "title": "York Aircon Service Malaysia",
     "category": "Brand Guide",
-    "intro": "York Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and installati",
+    "intro": "York aircon service in KL & Selangor: commercial and residential units, ducted system maintenance and the brand's energy",
     "relatedServiceSlug": "aircon"
   },
   {
     "slug": "acson-aircon-service-malaysia",
     "title": "Acson Aircon Service Malaysia",
     "category": "Brand Guide",
-    "intro": "Acson Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and installat",
+    "intro": "Acson aircon service in KL & Selangor: the Malaysian-made brand's portable, split and ceiling units serviced with brand-",
     "relatedServiceSlug": "aircon"
   },
   {
     "slug": "carrier-aircon-service-malaysia",
     "title": "Carrier Aircon Service Malaysia",
     "category": "Brand Guide",
-    "intro": "Carrier Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and install",
+    "intro": "Carrier aircon service across KL & Selangor: the original AC inventor's residential and light-commercial range, with XPo",
     "relatedServiceSlug": "aircon"
   },
   {
     "slug": "midea-aircon-service-malaysia",
     "title": "Midea Aircon Service Malaysia",
     "category": "Brand Guide",
-    "intro": "Midea Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and installat",
+    "intro": "Midea aircon service in KL & Selangor: affordable Chinese-engineered splits and inverters, popular in Malaysian rental p",
     "relatedServiceSlug": "aircon"
   },
   {
     "slug": "haier-aircon-service-malaysia",
     "title": "Haier Aircon Service Malaysia",
     "category": "Brand Guide",
-    "intro": "Haier Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and installat",
+    "intro": "Haier aircon service across KL & Selangor: Chinese-engineered residential splits with self-clean technology, serviced wi",
     "relatedServiceSlug": "aircon"
   },
   {
     "slug": "toshiba-aircon-service-malaysia",
     "title": "Toshiba Aircon Service Malaysia",
     "category": "Brand Guide",
-    "intro": "Toshiba Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and install",
+    "intro": "Toshiba aircon service in KL & Selangor: Japanese-engineered splits and inverters known for durability, with chemical wa",
     "relatedServiceSlug": "aircon"
   },
   {
     "slug": "hitachi-aircon-service-malaysia",
     "title": "Hitachi Aircon Service Malaysia",
     "category": "Brand Guide",
-    "intro": "Hitachi Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and install",
+    "intro": "Hitachi aircon service in KL & Selangor: Japanese-engineered residential and commercial units with iClean and inverter t",
     "relatedServiceSlug": "aircon"
   },
   {
     "slug": "samsung-aircon-service-malaysia",
     "title": "Samsung Aircon Service Malaysia",
     "category": "Brand Guide",
-    "intro": "Samsung Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and install",
+    "intro": "Samsung aircon service in KL & Selangor: WindFree and digital inverter ranges serviced with Samsung-specific diagnostics",
     "relatedServiceSlug": "aircon"
   },
   {
     "slug": "lg-aircon-service-malaysia",
     "title": "LG Aircon Service Malaysia",
     "category": "Brand Guide",
-    "intro": "LG Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and installation",
+    "intro": "LG aircon service in KL & Selangor: Dual Inverter and Artcool ranges with LG-specific diagnostics, energy monitoring and",
     "relatedServiceSlug": "aircon"
   },
   {
     "slug": "sharp-aircon-service-malaysia",
     "title": "Sharp Aircon Service Malaysia",
     "category": "Brand Guide",
-    "intro": "Sharp Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and installat",
+    "intro": "Sharp aircon service in KL & Selangor: Plasmacluster ion technology and J-Tech inverter ranges serviced with Sharp-speci",
     "relatedServiceSlug": "aircon"
   },
   {
     "slug": "fujitsu-aircon-service-malaysia",
     "title": "Fujitsu Aircon Service Malaysia",
     "category": "Brand Guide",
-    "intro": "Fujitsu Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and install",
+    "intro": "Fujitsu aircon service in KL & Selangor: Japanese-engineered premium splits and multi-systems known for extreme-climate ",
     "relatedServiceSlug": "aircon"
   },
   {
     "slug": "gree-aircon-service-malaysia",
     "title": "Gree Aircon Service Malaysia",
     "category": "Brand Guide",
-    "intro": "Gree Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and installati",
+    "intro": "Gree aircon service in KL & Selangor: the world's largest AC manufacturer's residential range, affordable inverters and ",
     "relatedServiceSlug": "aircon"
   },
   {
     "slug": "national-aircon-service-malaysia",
     "title": "National Aircon Service Malaysia",
     "category": "Brand Guide",
-    "intro": "National Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and instal",
+    "intro": "National aircon service in KL & Selangor: legacy Panasonic-group units still running in Malaysian homes, serviced with c",
     "relatedServiceSlug": "aircon"
   },
   {
     "slug": "hisense-aircon-service-malaysia",
     "title": "Hisense Aircon Service Malaysia",
     "category": "Brand Guide",
-    "intro": "Hisense Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and install",
+    "intro": "Hisense aircon service in KL & Selangor: Chinese-engineered residential splits and inverters at competitive prices, with",
     "relatedServiceSlug": "aircon"
   },
   {
     "slug": "aux-aircon-service-malaysia",
     "title": "Aux Aircon Service Malaysia",
     "category": "Brand Guide",
-    "intro": "Aux Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and installatio",
+    "intro": "AUX aircon service in KL & Selangor: one of China's largest AC exporters, offering affordable splits for Malaysian homes",
     "relatedServiceSlug": "aircon"
   },
   {
     "slug": "tcl-aircon-service-malaysia",
     "title": "TCL Aircon Service Malaysia",
     "category": "Brand Guide",
-    "intro": "TCL Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and installatio",
+    "intro": "TCL aircon service in KL & Selangor: the electronics brand's residential AC range, offering affordable cooling with smar",
     "relatedServiceSlug": "aircon"
   },
   {
     "slug": "isonic-aircon-service-malaysia",
     "title": "Isonic Aircon Service Malaysia",
     "category": "Brand Guide",
-    "intro": "Isonic Aircon Service Malaysia covers basic servicing, chemical wash, chemical overhaul, gas top-up, repair and installa",
+    "intro": "Isonic aircon service in KL & Selangor: the Malaysian-market brand's affordable splits and inverters, serviced locally w",
     "relatedServiceSlug": "aircon"
   },
   {
     "slug": "best-house-painters-kl-2026",
     "title": "How to Compare House Painters in KL (2026)",
     "category": "Top Considerations",
-    "intro": "How to Compare House Painters in KL (2026) explains practical criteria for comparing providers, methods, materials, work"
+    "intro": "How to compare house painters in KL for 2026: the criteria that separate a professional repaint from a rushed job — pric"
   },
   {
     "slug": "best-plumbers-kl",
     "title": "How to Compare Plumbers in KL",
     "category": "Top Considerations",
-    "intro": "How to Compare Plumbers in KL explains practical criteria for comparing providers, methods, materials, workmanship terms"
+    "intro": "How to compare plumbers in KL: diagnostic ability, material quality, isolation knowledge and warranty terms — the criter"
   },
   {
     "slug": "best-ceiling-contractors-kl",
     "title": "How to Compare Ceiling Contractors in KL",
     "category": "Top Considerations",
-    "intro": "How to Compare Ceiling Contractors in KL explains practical criteria for comparing providers, methods, materials, workma"
+    "intro": "How to compare ceiling contractors in KL: framing quality, board systems, joint finishing and warranty — the technical c"
   },
   {
     "slug": "best-waterproofing-contractors-kl",
     "title": "How to Compare Waterproofing Contractors in KL",
     "category": "Top Considerations",
-    "intro": "How to Compare Waterproofing Contractors in KL explains practical criteria for comparing providers, methods, materials, "
+    "intro": "How to compare waterproofing contractors in KL: diagnostic honesty, test-before-fix discipline, warranty scope and neigh"
   },
   {
     "slug": "best-handyman-kl",
     "title": "How to Compare Handyman Services in KL",
     "category": "Top Considerations",
-    "intro": "How to Compare Handyman Services in KL explains practical criteria for comparing providers, methods, materials, workmans"
+    "intro": "How to compare handyman services in KL: wall-type knowledge, load-rated fixings, insurance and warranty — the checks tha"
   },
   {
     "slug": "best-paint-brands-malaysia-2026",
     "title": "Paint Brands in Malaysia: 2026 Guide",
     "category": "Top Considerations",
-    "intro": "Paint Brands in Malaysia: 2026 Guide explains practical criteria for comparing providers, methods, materials, workmanshi"
+    "intro": "Paint brands in Malaysia for 2026: a practical guide to Nippon, Dulux, Jotun and the brands that earn their place on you"
   },
   {
     "slug": "best-waterproofing-methods-malaysia",
     "title": "Waterproofing Methods in Malaysia",
     "category": "Top Considerations",
-    "intro": "Waterproofing Methods in Malaysia explains practical criteria for comparing providers, methods, materials, workmanship t"
+    "intro": "Waterproofing methods in Malaysia compared: PU injection, cementitious coating, torch-on membrane and liquid-applied sys"
   },
   {
     "slug": "bathroom-waterproofing-options",
     "title": "Bathroom Waterproofing Options",
     "category": "Top Considerations",
-    "intro": "Bathroom Waterproofing Options explains practical criteria for comparing providers, methods, materials, workmanship term"
+    "intro": "Bathroom waterproofing options for Malaysian homes: from silicone joint renewal to full membrane replacement — what each"
   },
   {
     "slug": "ceiling-materials-malaysia",
     "title": "Ceiling Materials in Malaysia",
     "category": "Top Considerations",
-    "intro": "Ceiling Materials in Malaysia explains practical criteria for comparing providers, methods, materials, workmanship terms"
+    "intro": "Ceiling materials in Malaysia compared: gypsum board, plaster systems, cement board and metal — which one suits your roo"
   },
   {
     "slug": "handyman-services-every-homeowner-needs",
     "title": "Useful Handyman Services for Homeowners",
     "category": "Top Considerations",
-    "intro": "Useful Handyman Services for Homeowners explains practical criteria for comparing providers, methods, materials, workman"
+    "intro": "Useful handyman services for Malaysian homeowners: the mounting, fixing and repair jobs that improve daily life — and wh"
   },
   {
     "slug": "painting-ultimate-guide",

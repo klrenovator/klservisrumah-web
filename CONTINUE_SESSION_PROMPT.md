@@ -40,24 +40,29 @@
 > wiring — a new service WITHOUT authored pods now fails the build).
 > Full log: `docs/full-website-deep-audit/FIX-WAVE-4-REPORT.md`.
 >
-> **Next session starts at:** **P2-C3 batch 2** — remaining pod families
-> (brands 32, compare 18, guides 10, maintenance 10, seasonal 8, top 10) under
-> the same authoring rules: extend `config/content-pod-copy.ts` (+ its i18n
-> sidecar for bullets), keep FAQ counts matched to the localized template,
-> `audit:content-pods` enforces. process/answers bodies already carry real
-> service data (only intros/guidance were template-generic). Then
-> **P2-16/17/18 remainder** (emergency depth, problem expansion).
-> **P2-C4** stays tied to the BP-1 phase-2 owner/GSC keep-set decision.
-> BP-1 phase 2 still **blocked on GSC data (owner)**. P5-04/06/07/10 (Fix Wave
-> 3) + CF-4 + Wave 4 all ✅. Do **not** add more location pages. Do **not**
-> re-add `app/(en|ms|zh)/loading.tsx`. Do **not** delete local pages on low
-> traffic alone. Do **not** retry the CI patch push (no `workflows`
-> permission). Do **not** weaken the estimator trilingual-parity asserts to
-> accommodate new copy — supply the translations instead.
+> **Fix Wave 5 COMPLETE (2026-08-29):** **P2-C3 batch 2** ✅ — 88 remaining pod
+> pages hand-authored (brands 32, compare 18, guides 10, maintenance 10,
+> seasonal 8, top 10): unique intros ≤158 chars, 4 topic-specific bullets,
+> 4 AEO FAQs each. 263 new MS/ZH bullet translations added
+> (`batch2BulletsMs` + `batch2BulletsZh` merged into main dictionaries).
+> All gates PASS: build 3,669 HTML; test:estimators 320,291 × 0 failures;
+> audit:links 278,275 + 53 source, 0 broken; audit:content-pods 58 unique
+> intros (batch 1 gate); full i18n/trilingual/similarity/bp1/schema-size
+> all green. Full log: `docs/full-website-deep-audit/FIX-WAVE-5-REPORT.md`.
+>
+> **Next session starts at:** **P2-16/17/18** — emergency-page depth,
+> problem-page expansion. P2-C3 is now complete (146/174 pods hand-authored;
+> process/answers carry real service data). **P2-C4** stays tied to the BP-1
+> phase-2 owner/GSC keep-set decision. BP-1 phase 2 still **blocked on GSC
+> data (owner)**. Do **not** add more location pages. Do **not** re-add
+> `app/(en|ms|zh)/loading.tsx`. Do **not** delete local pages on low traffic
+> alone. Do **not** retry the CI patch push (no `workflows` permission).
+> Do **not** weaken the estimator trilingual-parity asserts to accommodate
+> new copy — supply the translations instead.
 
-**Branch:** arena/01a04bb1-klservisrumah-web (this session branch — push PRs from here)
-**Last completed session:** 2026-08-29 — Fix Wave 4 ✅ (P3-01 + P3-07 +
-P2-C3 batch 1: 58 pods hand-authored, 2 new prebuild gates)
+**Branch:** arena/01a04be3-klservisrumah-web (this session branch — push PRs from here)
+**Last completed session:** 2026-08-29 — Fix Wave 5 ✅ (P2-C3 batch 2: 88 pods
+hand-authored, 263 MS/ZH bullet translations)
 
 **Quality gates (must all be green before any new work).**
 Numbers are the *measured* output of each command on this branch — update them
@@ -87,6 +92,17 @@ when the corpus changes, don't carry stale values forward:
 ---
 
 ## What Is COMPLETED (Do NOT redo)
+
+### Fix Wave 5 (2026-08-29) — DONE — `docs/full-website-deep-audit/FIX-WAVE-5-REPORT.md`
+- P2-C3 batch 2: 88 remaining pod pages hand-authored
+  - Brands (32): 12 general + 20 aircon — unique brand-specific intros, bullets, FAQs
+  - Compare (18): all comparison pages with topic-specific decision criteria
+  - Guides (10): how-to-choose and comparison guides with real decision frameworks
+  - Maintenance (10): practical checklists with frequency and urgency guidance
+  - Seasonal (8): monsoon, CNY, Raya and year-end timing-specific planning
+  - Top (10): comparison criteria pages without fabricated rankings
+- 263 unique new bullet phrases with full MS/ZH translations
+- All gates PASS: 320,291 assertions × 0 failures
 
 ### CF-4 (2026-08-29) — DONE — log in `docs/full-website-deep-audit/PART-5-AUDIT-REPORT.md` §5.5
 - 29 `/services/<svc>/cost` pages → rate-book guides: full scope table (162 rows)
