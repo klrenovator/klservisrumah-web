@@ -108,7 +108,7 @@ function buildLlms(): string {
 ${siteConfig.name} provides professional home maintenance services across Kuala Lumpur & Selangor (Klang Valley). Fully insured operations, background-verified teams, and an itemised fixed-price quote confirmed in writing before work begins. Same-day dispatch available.
 
 ## Key Services (published starting prices)
-${keyServiceLines(12).join("\n")}
+${keyServiceLines(services.length).join("\n")}
 
 Full directory of all ${services.length} services: ${url("/services")}
 
@@ -128,6 +128,7 @@ ${contactLines().join("\n")}
 - FAQ: ${url("/faq")}
 - Contact: ${url("/contact")}
 - About: ${url("/about")}
+- AEO FAQ (answer-engine knowledge base): ${url("/aeo-faq.txt")}
 
 ## Free Tools (Instant Estimators)
 Free single-page estimators priced from the published rate list — available in English, Bahasa Malaysia and Chinese.

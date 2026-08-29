@@ -23,9 +23,40 @@
 
 import type { Metadata } from "next";
 import { siteConfig } from "@/config/site";
+import { ogImageUrl, rasterOgFor, type OgTemplate } from "@/lib/og-image";
 
 export const SITE_URL = "https://www.klservisrumah.my";
 export const BRAND = siteConfig.name;
+
+/**
+ * Map a page path to its raster OG template (audit P5-13/14). Every template
+ * family gets its own branded card label/accent; pages without a custom
+ * raster hero get a title-customised template URL instead of the generic
+ * default image. Explicit `ogTemplate` in buildMetadata overrides this.
+ */
+export function inferOgTemplate(path: string): OgTemplate {
+  const p = path.replace(/^\/(?:ms|zh)\//, "/");
+  if (p.startsWith("/blog") || p.startsWith("/bo-ke")) return "blog";
+  if (p.startsWith("/tools") || p.startsWith("/alatan") || p.startsWith("/gongju")) return "tool";
+  if (p.startsWith("/problems")) return "problem";
+  if (p.includes("/cost")) return "cost";
+  if (p.startsWith("/services")) return "service";
+  if (p.startsWith("/areas") || p.startsWith("/suburbs") || p.startsWith("/near-me")) return "area";
+  if (
+    p.startsWith("/commercial") ||
+    p.startsWith("/residential") ||
+    p.startsWith("/guides") ||
+    p.startsWith("/compare") ||
+    p.startsWith("/brands") ||
+    p.startsWith("/answers") ||
+    p.startsWith("/process") ||
+    p.startsWith("/top") ||
+    p.startsWith("/seasonal")
+  ) {
+    return "pod";
+  }
+  return "default";
+}
 
 /** SERP pixel budgets. Google truncates around 580px ≈ 60 chars for titles. */
 export const TITLE_MAX = 60;
@@ -249,6 +280,13 @@ export type BuildMetadataInput = {
   ogLocale?: string;
   ogAlternateLocales?: [string, string];
   image?: string;
+  /**
+   * Raster OG template (audit P5-13/14). SVG images are replaced by the
+   * next/og raster route carrying this template id — default|service|area|
+   * blog|tool|problem|cost|pod. When the page already has a raster hero
+   * (jpeg/png/webp) this is ignored and the hero is used as-is.
+   */
+  ogTemplate?: OgTemplate;
   type?: "website" | "article";
   keywords?: string[];
   publishedTime?: string;
@@ -272,6 +310,7 @@ export function buildMetadata({
   ogLocale = "en_MY",
   ogAlternateLocales = ["ms_MY", "zh_MY"],
   image = siteConfig.defaultOgImage,
+  ogTemplate,
   type = "website",
   keywords = [],
   publishedTime,
@@ -283,7 +322,18 @@ export function buildMetadata({
   const finalDescription = optimizeDescription(description);
   // og:url should agree with the canonical, otherwise the two signals conflict.
   const url = absoluteUrl(canonicalPath ?? path);
-  const imageUrl = image.startsWith("http") ? image : `${SITE_URL}${image.startsWith("/") ? image : `/${image}`}`;
+  const rawImageUrl = image.startsWith("http") ? image : `${SITE_URL}${image.startsWith("/") ? image : `/${image}`}`;
+  // Audit P5-13: og:image must be a raster. Pages that pass an SVG
+  // (hero-*.svg, blog cover SVGs) get the next/og raster template carrying
+  // the page title instead — WhatsApp/social previews otherwise break.
+  // Pages without a custom raster hero (the generic default image) get a
+  // title-customised template card so every page previews uniquely.
+  // An explicitly-passed ogTemplate always forces the branded card.
+  const template = ogTemplate ?? inferOgTemplate(path);
+  const imageUrl =
+    ogTemplate !== undefined || image === siteConfig.defaultOgImage
+      ? ogImageUrl(finalTitle, template)
+      : rasterOgFor(rawImageUrl, finalTitle, template);
 
   // A genuine multilingual cluster (the MS/ZH tool pages) links its three
   // sibling URLs. A page that points its canonical at a different URL must

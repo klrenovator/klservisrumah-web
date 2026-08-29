@@ -19,6 +19,7 @@ export const metadata = buildMetadata({
   path: "/tools/ceiling-replacement-cost",
   keywords: content.keywords,
   image: content.heroImage,
+  ogTemplate: "tool",
   languageUrls: toolLocaleUrls(content.slug)
 });
 

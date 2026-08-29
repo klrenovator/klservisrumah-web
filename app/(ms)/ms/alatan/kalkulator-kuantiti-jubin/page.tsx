@@ -18,6 +18,7 @@ export const metadata = buildMetadata({
   path: "/ms/alatan/kalkulator-kuantiti-jubin",
   keywords: content.keywords,
   image: content.heroImage,
+  ogTemplate: "tool",
   languageUrls: toolLocaleUrls(content.slug)
 });
 

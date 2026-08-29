@@ -1655,5 +1655,9 @@
     "ariaHighlighted": "Peta liputan dengan {area} diserlahkan",
     "highlight": "Kawasan diserlahkan",
     "ask": "Tidak pasti? Tanya di WhatsApp"
+  },
+  "napStrip": {
+    "label": "Hubungi KL Servis Rumah",
+    "whatsapp": "WhatsApp kami"
   }
 }

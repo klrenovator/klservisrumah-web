@@ -1,3 +1,5 @@
+import { RATE_YEAR_LABEL } from "./rate-year";
+
 export type MarketRateItem = {
   serviceSlug: "painting" | "plumbing" | "ceiling" | "waterproofing" | "handyman" | "aircon";
   label: string;
@@ -15,7 +17,7 @@ export const marketRateBaseline: MarketRateItem[] = [
     publishedRate: "From RM 450 / room",
     marketRange: "RM 300–RM 900 / room or RM 1.50–RM 6.80 / sq ft",
     pricingUnit: "room / sq ft",
-    validationNote: "Aligned to typical Klang Valley 2026 room-painting ranges; final quote depends on wall repair, ceiling height, paint grade, and protection scope.",
+    validationNote: `Aligned to typical Klang Valley ${RATE_YEAR_LABEL} room-painting ranges; final quote depends on wall repair, ceiling height, paint grade, and protection scope.`,
     lastReviewed: "2026-07-25"
   },
   {

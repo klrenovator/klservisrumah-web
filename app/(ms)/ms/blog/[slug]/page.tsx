@@ -7,6 +7,9 @@ import { Calendar, User, Clock, MessageSquare, ArrowLeft } from "lucide-react";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { LocaleTreeLinks } from "@/components/sections/locale-tree-links";
 import { BlogArticleBody } from "@/components/blog/blog-article-body";
+import { NapContactStrip } from "@/components/content/nap-contact-strip";
+import { extractBlogFaq } from "@/lib/blog-faq";
+import { getFAQSchema } from "@/lib/seo";
 
 export const dynamicParams = false;
 export async function generateStaticParams() {
@@ -47,6 +50,11 @@ export default async function MalayArticle({ params }: { params: Promise<{ slug:
   if (!result) notFound();
   const { original, post, englishSlug } = result;
   const zhPost = blogI18n[englishSlug]?.zh;
+
+  // Audit P3-06: localized FAQPage JSON-LD from the Malay article's own
+  // question headings (≥2 Q&As; capped at 6).
+  const malayFaq = extractBlogFaq(post.content);
+  const faqSchema = malayFaq.length >= 2 ? getFAQSchema(malayFaq) : null;
   const localizedPosts = Object.entries(blogI18n)
     .flatMap(([sourceSlug, locales]) => locales.ms ? [{ englishSlug: sourceSlug, post: locales.ms }] : []);
   const currentIndex = localizedPosts.findIndex((entry) => entry.englishSlug === englishSlug);
@@ -71,6 +79,13 @@ export default async function MalayArticle({ params }: { params: Promise<{ slug:
           {zhPost && <Link href={localizedBlogPath("zh", zhPost.slug)} className="px-2 py-1 rounded border border-slate-200 hover:border-[#0EA5E9] hover:text-[#0EA5E9]">中文</Link>}
         </div>
       </nav>
+
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
 
       <div className="bg-white py-8 sm:py-12">
         <article className="mx-auto max-w-4xl px-4 sm:px-6">
@@ -109,6 +124,9 @@ export default async function MalayArticle({ params }: { params: Promise<{ slug:
             </a>
           </aside>
         </article>
+
+        {/* Audit P4-15 — NAP contact strip at the end of the content block. */}
+        <NapContactStrip service={post.category} />
 
         {/* Crawl path from this tree to the other three localized trees. */}
         <LocaleTreeLinks locale="ms" current="blog" />

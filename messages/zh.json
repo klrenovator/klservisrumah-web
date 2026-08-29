@@ -1655,5 +1655,9 @@
     "ariaHighlighted": "覆盖地图，其中突出显示{area}",
     "highlight": "突出显示的地区",
     "ask": "不确定？通过WhatsApp咨询"
+  },
+  "napStrip": {
+    "label": "联系 KL Servis Rumah",
+    "whatsapp": "WhatsApp 联系我们"
   }
 }

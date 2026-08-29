@@ -31,6 +31,7 @@ export function localizedToolMetadata(locale: ToolLocale, canonicalSlug: string)
     path: urls[locale],
     keywords: content.keywords,
     image: content.heroImage,
+    ogTemplate: "tool",
     languageUrls: urls,
     ogLocale: shell.ogLocale,
     ogAlternateLocales: shell.ogAlternateLocales

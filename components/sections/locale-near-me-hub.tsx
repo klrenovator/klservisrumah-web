@@ -7,6 +7,7 @@ import { useLang } from "@/context/lang-context";
 import { useTranslations } from "@/hooks/use-translations";
 import type { AreaLinkEntry, LocaleMap, ServiceBundleEntry, ServiceLinkEntry } from "@/lib/location-bundles";
 import { getWhatsAppLink } from "@/lib/whatsapp";
+import { NapContactStrip } from "@/components/content/nap-contact-strip";
 import { NearMeLocator } from "@/components/near-me-locator";
 import { suburbServicePath } from "@/lib/bp1-consolidation";
 
@@ -34,6 +35,7 @@ export function LocaleNearMeHub({
   const service = serviceBundle[lang] ?? serviceBundle.en;
 
   return (
+    <>
     <section className="bg-gradient-to-b from-slate-50 to-white py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <span className="inline-flex items-center gap-2 rounded-full bg-[#E0F2FE] px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-[#0284C7]">
@@ -120,5 +122,9 @@ export function LocaleNearMeHub({
         </a>
       </div>
     </section>
+
+    {/* Audit P4-15 — NAP contact strip at the end of the content block. */}
+    <NapContactStrip service={serviceBundle[lang]?.title ?? serviceBundle.en.title} />
+    </>
   );
 }

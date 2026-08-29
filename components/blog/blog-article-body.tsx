@@ -55,6 +55,10 @@ export function BlogArticleBody({ content }: { content: string }) {
   const blocks: React.ReactNode[] = [];
   let cursor = 0;
   let block = 0;
+  // Audit P3-06: the first question heading in an article is promoted to H2
+  // so every post exposes a visible question H2 → answer pair for AI
+  // answer engines (the audit's "promote the top FAQ block per article").
+  let questionPromoted = false;
 
   while (cursor < lines.length) {
     const line = lines[cursor].trim();
@@ -66,13 +70,18 @@ export function BlogArticleBody({ content }: { content: string }) {
     const heading = line.match(/^(#{2,4})\s+(.+)$/);
     if (heading) {
       const level = heading[1].length;
-      const className = level === 2
+      const isQuestion = /(\?|？)$/.test(heading[2].trim());
+      // Promote the first question heading to H2 (P3-06); later question
+      // headings keep their authored level so the outline stays honest.
+      const effectiveLevel = isQuestion && !questionPromoted && level > 2 ? 2 : level;
+      if (isQuestion && !questionPromoted) questionPromoted = true;
+      const className = effectiveLevel === 2
         ? "mt-9 text-2xl font-extrabold tracking-tight text-[#075985] sm:text-3xl"
         : "mt-6 text-xl font-extrabold tracking-tight text-[#075985]";
       const children = renderInline(heading[2], `heading-${block}`);
-      blocks.push(level === 2
+      blocks.push(effectiveLevel === 2
         ? <h2 key={block++} className={className}>{children}</h2>
-        : level === 3
+        : effectiveLevel === 3
           ? <h3 key={block++} className={className}>{children}</h3>
           : <h4 key={block++} className={className}>{children}</h4>);
       cursor += 1;

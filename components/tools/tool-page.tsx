@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { getWhatsAppLink } from "@/lib/whatsapp";
+import { NapContactStrip } from "@/components/content/nap-contact-strip";
 import { ESTIMATE_DISCLAIMER } from "@/lib/estimator/format";
 import { toolsContent, type ToolContent } from "@/config/tools-data";
 import { chromeMsDict } from "@/lib/estimator/i18n/chrome-ms";
@@ -379,6 +380,9 @@ export function ToolPage({
           </div>
         </div>
       </section>
+
+      {/* Audit P4-15 — NAP contact strip at the end of the content block. */}
+      <NapContactStrip service={content.name} />
     </>
   );
 }

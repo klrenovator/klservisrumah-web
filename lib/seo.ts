@@ -5,6 +5,7 @@ import type { AreaDetail } from "@/config/area-data";
 import type { SuburbDetail } from "@/config/suburb-data";
 import type { BlogPost } from "@/config/blog-data";
 import type { SubService } from "@/config/services-data";
+import { rasterOgFor } from "@/lib/og-image";
 
 const baseUrl = "https://www.klservisrumah.my";
 
@@ -366,7 +367,10 @@ export function getServiceSchema(service: { title: string; description: string; 
     serviceType: service.title,
     name: service.title,
     url: `${baseUrl}${servicePath}`,
-    image: absoluteUrl(heroImage),
+    // Audit P5-14: schema image must be a raster — SVGs are skipped by
+    // Google's structured-data image pipeline. SVG heroes become the
+    // next/og raster template; raster heroes pass through.
+    image: absoluteUrl(rasterOgFor(heroImage, service.title, "service")),
     // Audit P5-04: bare @id reference. The full entity lives on the homepages
     // and every page carries SiteHead's compact reference node, so repeating
     // type/name/telephone/address here (~450 B × every service/local page)
@@ -456,7 +460,8 @@ export function getLocalBusinessServiceSchema(area: AreaDetail | SuburbDetail, s
     serviceType: service.title,
     description: service.description,
     url: absoluteUrl(pagePath),
-    image: absoluteUrl(service.heroImage),
+    // Audit P5-14: raster only — SVG heroes map to the next/og template.
+    image: absoluteUrl(rasterOgFor(service.heroImage, `${service.title} in ${area.name}`, "service")),
     provider: { "@id": `${baseUrl}/#organization` },
     areaServed: {
       "@type": "Place",
@@ -491,7 +496,9 @@ export function getArticleSchema(post: BlogPost | { title: string; excerpt?: str
     "@type": "BlogPosting",
     headline: post.title,
     description: "excerpt" in post ? post.excerpt : undefined,
-    image: absoluteUrl(("coverImage" in post && post.coverImage) || siteConfig.defaultOgImage),
+    // Audit P5-14: raster only — blog cover SVGs become the next/og
+    // template so the image is usable by Google's image pipeline.
+    image: absoluteUrl(rasterOgFor(("coverImage" in post && post.coverImage) || siteConfig.defaultOgImage, post.title, "blog")),
     // Must be ISO-8601 — the blog data stores display strings like "July 20, 2026",
     // which Google rejects as an invalid date and drops the Article rich result.
     datePublished: toIsoDate("date" in post ? post.date : undefined),

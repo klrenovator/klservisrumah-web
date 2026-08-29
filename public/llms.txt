@@ -17,6 +17,23 @@ KL Servis Rumah provides professional home maintenance services across Kuala Lum
 - Lighting Design & Installation: from RM 120 — LED Downlight Installation, Pendant & Chandelier Install, Cove & Strip LED Installation
 - Professional Tiling & Tile Repair: from RM 14 / sq ft — Floor Tiling Installation, Wall Tiling Installation, Floor Tile Replacement & Tile Hacking
 - Plaster Ceiling Design & Build: from RM 10 / sq ft — Flat Plaster Ceiling, False Ceiling Installation, Gypsum Ceiling
+- Wall & Ceiling Skim Coat: from RM 5 / sq ft — Wall Skim Coating, Ceiling Skim Coating, Crack & Joint Repair
+- Vinyl, SPC & Laminate Flooring: from RM 14 / sq ft — SPC Click-Lock Flooring Install, Laminate Flooring Install, Luxury Vinyl Plank (LVP) Install
+- Epoxy & Polyurethane Flooring: from RM 22 / sq ft — Self-Levelling Epoxy Floor, Flake / Quartz Broadcast Epoxy, Heavy-Duty Mortar Screed
+- Roof Repair & Waterproofing: from RM 380 — Roof Leak Diagnosis & Repair, Ridge Re-Bedding & Re-Pointing, Gutter Cleaning & Realignment
+- Kitchen Cabinet & Countertop: from RM 7,500 — Modular Kitchen Cabinet (10ft L-shape), Custom Plywood Kitchen, Quartz / Granite Countertop
+- Custom Carpentry & Joinery: from RM 300 — Built-in Wardrobe, TV Console & Feature Wall, Study Desk & Home Office
+- Door Repair & Installation: from RM 250 — Solid Timber Door Installation, Laminate Door Installation, Door Planing & Adjustment
+- Window Repair & Glass Replacement: from RM 200 — Glass Replacement, Window Seal Replacement, Window Handle & Hinge Repair
+- Locksmith & Smart Lock Services: from RM 180 — Smart Lock Installation, Mortice / Deadbolt Lock Replacement, Key Cutting & Re-Keying
+- Glass & Aluminium Fabrication: from RM 320 — Frameless Shower Screen, Aluminium Sliding Window, Glass Office Partition
+- CCTV & Security Camera Installation: from RM 420 — Condo Wi-Fi CCTV Package (4 cameras), Landed House PoE CCTV (8 cameras), Single Camera Add-On
+- Auto Gate & Motorised Gate: from RM 2,200 — Single Swing Autogate, Double Swing Autogate, Sliding Autogate
+- Welding & Metal Fabrication: from RM 280 — Custom Window Grille, Main Gate Fabrication, On-Site Welding Repair
+- Aircon Service, Repair & Installation: from RM 129 — Basic Servicing, Chemical Wash, Chemical Overhaul
+- Kitchen Renovation: from RM 8,000 — Full Kitchen Renovation, Kitchen Cabinet Installation, Kitchen Countertop Replacement
+- Bathroom Renovation: from RM 6,000 — Full Bathroom Renovation, Toilet Renovation, Bathroom Makeover
+- Awning Installation Services: project-quoted — Car Porch Awning Installation, Polycarbonate Awning, Metal Deck Awning
 
 Full directory of all 29 services: https://www.klservisrumah.my/services
 
@@ -43,6 +60,7 @@ Kuala Lumpur, Cheras, Ampang, Setapak, Wangsa Maju, Kepong, Sri Petaling, Bukit 
 - FAQ: https://www.klservisrumah.my/faq
 - Contact: https://www.klservisrumah.my/contact
 - About: https://www.klservisrumah.my/about
+- AEO FAQ (answer-engine knowledge base): https://www.klservisrumah.my/aeo-faq.txt
 
 ## Free Tools (Instant Estimators)
 Free single-page estimators priced from the published rate list — available in English, Bahasa Malaysia and Chinese.

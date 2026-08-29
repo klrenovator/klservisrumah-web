@@ -26,7 +26,8 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
     title: `${service.title} Cost in KL & Selangor — 2026 Pricing Guide`,
     description: `How much does ${service.title.toLowerCase()} cost in KL & Selangor? Review published price ranges, cost factors, examples and WhatsApp quote options.`,
     path: `/services/${slug}/cost`,
-    image: service.heroImage
+    image: service.heroImage,
+    ogTemplate: "cost"
   });
 }
 

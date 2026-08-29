@@ -48,6 +48,23 @@ function ok(label: string, detail: string) {
 const serviceSlugs = Object.keys(servicesData);
 const areaSlugs = new Set(areaPages.map((area) => area.slug));
 
+/** Walk the build output and return every rendered path (e.g. "/services/painting"). */
+function listBuiltPages(): string[] {
+  const built: string[] = [];
+  (function walkBuild(dir: string) {
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) walkBuild(full);
+      else if (entry.name.endsWith(".html")) {
+        let rel = "/" + path.relative(BUILD, full).split(path.sep).join("/");
+        rel = rel.replace(/\.html$/, "").replace(/\/\([^)]+\)/g, "");
+        built.push(rel);
+      }
+    }
+  })(BUILD);
+  return built;
+}
+
 /* ------------------------------------------------------------------ *
  * 1. The generated twin map must match the data it was derived from.
  * ------------------------------------------------------------------ */
@@ -321,19 +338,7 @@ if (!SOURCE_ONLY) {
   if (!fs.existsSync(BUILD)) {
     fail(`no build output at .next/server/app — run \`npm run build\` first (or pass --source-only)`);
   } else {
-    const built: string[] = [];
-    (function walkBuild(dir: string) {
-      for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-        const full = path.join(dir, entry.name);
-        if (entry.isDirectory()) walkBuild(full);
-        else if (entry.name.endsWith(".html")) {
-          let rel = "/" + path.relative(BUILD, full).split(path.sep).join("/");
-          rel = rel.replace(/\.html$/, "").replace(/\/\([^)]+\)/g, "");
-          built.push(rel);
-        }
-      }
-    })(BUILD);
-
+    const built = listBuiltPages();
     const builtSet = new Set(built);
 
     const builtNearMe = built.filter((u) => /^\/areas\/[^/]+\/[^/]+\/near-me$/.test(u));
@@ -408,6 +413,67 @@ if (!SOURCE_ONLY) {
   }
 } else {
   console.log("\n7. Build corpus — skipped (--source-only)");
+}
+
+/* ------------------------------------------------------------------ *
+ * 8. Part-4 evidence: NAP contact strip inside content (audit P4-15).
+ * ------------------------------------------------------------------ */
+if (!SOURCE_ONLY) {
+  console.log("\n8. NAP contact strip in content (P4-15)");
+
+  if (!fs.existsSync(BUILD)) {
+    fail(`no build output at .next/server/app — run \`npm run build\` first (or pass --source-only)`);
+  } else {
+    // The strip's <section> is the only element carrying these localized
+    // aria-labels; the footer NAP (tel/mailto/address) shares the same raw
+    // values, so the label is the only footprint that proves *content*-level
+    // placement. Matches messages/{en,ms,zh}.json napStrip.label.
+    const NAP_STRIP_LABELS = ["Contact KL Servis Rumah", "Hubungi KL Servis Rumah", "联系 KL Servis Rumah"];
+
+    const napBuilt = listBuiltPages();
+    let napPages = 0;
+    for (const rel of napBuilt) {
+      const file = path.join(BUILD, rel === "/" ? "index.html" : `${rel.slice(1)}.html`);
+      if (!fs.existsSync(file)) continue;
+      const html = fs.readFileSync(file, "utf8");
+      if (NAP_STRIP_LABELS.some((label) => html.includes(label))) napPages++;
+    }
+    const pctNapInContent = napBuilt.length > 0 ? Math.round((napPages / napBuilt.length) * 1000) / 10 : 0;
+    console.log(`   ℹ️  NAP strip in content: ${napPages}/${napBuilt.length} pages (${pctNapInContent}%)`);
+
+    // Part 4 measured corpus pctNapInContent = 0%; P4-15 acceptance is > 0.
+    // (The strip ships on service/problem/cost/tool/commercial/blog bodies in
+    // all three locales, so a healthy build lands far above zero — the gate
+    // merely refuses a silent regression back to footer-only NAP.)
+    if (napPages === 0) {
+      fail("pctNapInContent = 0% — the P4-15 NAP contact strip is missing from every built page");
+    } else {
+      ok("pctNapInContent", `${pctNapInContent}% > 0 (${napPages} pages carry the contact strip inside content)`);
+    }
+
+    // One representative page per template family, so a strip mount that is
+    // accidentally dropped from a single template is caught here instead of
+    // in a manual grep.
+    const templateSamples: Array<[string, string]> = [
+      ["EN service", "/services/painting"],
+      ["MS service", "/ms/services/painting"],
+      ["ZH service", "/zh/services/painting"],
+      ["EN problem", "/problems/damp-walls-paint-bubbling"],
+      ["EN cost guide", "/services/painting/cost"],
+      ["EN tool", "/tools/painting-calculator"],
+      ["EN commercial pod", "/commercial/painting-services-kl"],
+    ];
+    for (const [label, rel] of templateSamples) {
+      const file = path.join(BUILD, rel === "/" ? "index.html" : `${rel.slice(1)}.html`);
+      const html = fs.existsSync(file) ? fs.readFileSync(file, "utf8") : "";
+      if (!NAP_STRIP_LABELS.some((l) => html.includes(l))) {
+        fail(`NAP strip missing on ${label} page ${rel}`);
+      }
+    }
+    ok("template coverage", `${templateSamples.length} template families (EN/MS/ZH service, problem, cost, tool, pod) all carry the strip`);
+  }
+} else {
+  console.log("\n8. NAP contact strip in content (P4-15) — skipped (--source-only)");
 }
 
 /* ------------------------------------------------------------------ */

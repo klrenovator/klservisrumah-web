@@ -18,6 +18,7 @@ export const metadata = buildMetadata({
   path: "/zh/gongju/水压问题排查",
   keywords: content.keywords,
   image: content.heroImage,
+  ogTemplate: "tool",
   languageUrls: toolLocaleUrls(content.slug)
 });
 

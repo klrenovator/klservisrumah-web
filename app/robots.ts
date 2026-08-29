@@ -15,7 +15,9 @@ export default function robots(): MetadataRoute.Robots {
     "Googlebot-News",
     "Bingbot",
     "DuckDuckBot",
+    "DuckAssistBot",
     "Applebot",
+    "Applebot-Extended",
     // AI / answer-engine crawlers
     "GPTBot",
     "OAI-SearchBot",

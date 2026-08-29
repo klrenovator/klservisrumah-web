@@ -28,6 +28,7 @@ import {
 } from "@/lib/seo";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { DirectAnswer } from "@/components/content/direct-answer";
+import { NapContactStrip } from "@/components/content/nap-contact-strip";
 import { LocaleTreeLinks } from "@/components/sections/locale-tree-links";
 import { ProcessTimeline } from "@/components/content/process-timeline";
 import { ServiceGuideSection } from "@/components/sections/service-guide-section";
@@ -531,6 +532,10 @@ export function LocaleServicePage({ locale, slug }: { locale: "ms" | "zh"; slug:
           </p>
         </div>
       </section>
+
+      {/* Audit P4-15 — NAP contact strip at the end of the content block
+          (client island; labels SSR from the tree's initialLang). */}
+      <NapContactStrip service={localized.title} />
 
       {/* Crawl path from this tree to the other three localized trees. */}
       <LocaleTreeLinks locale={locale} current="services" />

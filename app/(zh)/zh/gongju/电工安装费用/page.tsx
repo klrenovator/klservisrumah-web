@@ -18,6 +18,7 @@ export const metadata = buildMetadata({
   path: "/zh/gongju/电工安装费用",
   keywords: content.keywords,
   image: content.heroImage,
+  ogTemplate: "tool",
   languageUrls: toolLocaleUrls(content.slug)
 });
 

@@ -7,6 +7,9 @@ import { Calendar, User, Clock, MessageSquare, ArrowLeft } from "lucide-react";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { LocaleTreeLinks } from "@/components/sections/locale-tree-links";
 import { BlogArticleBody } from "@/components/blog/blog-article-body";
+import { NapContactStrip } from "@/components/content/nap-contact-strip";
+import { extractBlogFaq } from "@/lib/blog-faq";
+import { getFAQSchema } from "@/lib/seo";
 
 export const dynamicParams = false;
 export async function generateStaticParams() {
@@ -54,8 +57,20 @@ export default async function ChineseArticle({ params }: { params: Promise<{ slu
     localizedPosts[(currentIndex + offset + 1) % localizedPosts.length]
   ));
 
+  // Audit P3-06: localized FAQPage JSON-LD from the Chinese article's own
+  // question headings (≥2 Q&As; capped at 6).
+  const chineseFaq = extractBlogFaq(post.content);
+  const faqSchema = chineseFaq.length >= 2 ? getFAQSchema(chineseFaq) : null;
+
   return (
     <>
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+
       <nav aria-label="面包屑导航" className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-8 text-sm">
         <ol className="flex items-center gap-2 text-[#475569]">
           <li><Link href="/" className="hover:text-[#0EA5E9]">首页</Link></li>
@@ -108,6 +123,9 @@ export default async function ChineseArticle({ params }: { params: Promise<{ slu
             </a>
           </aside>
         </article>
+
+        {/* Audit P4-15 — NAP contact strip at the end of the content block. */}
+        <NapContactStrip service={post.category} />
 
         {/* Crawl path from this tree to the other three localized trees. */}
         <LocaleTreeLinks locale="zh" current="blog" />

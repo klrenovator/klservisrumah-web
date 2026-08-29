@@ -18,6 +18,7 @@ export const metadata = buildMetadata({
   path: "/zh/gongju/空调匹数计算器",
   keywords: content.keywords,
   image: content.heroImage,
+  ogTemplate: "tool",
   languageUrls: toolLocaleUrls(content.slug)
 });
 

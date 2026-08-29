@@ -6,6 +6,7 @@ import { CheckCircle2, MessageCircle } from "lucide-react";
 import type { GenericContentPage } from "@/config/content-data";
 import { contentNavList, contentRelatedServiceBySlug, type ContentNavItem } from "@/config/content-nav.generated";
 import { getWhatsAppLink } from "@/lib/whatsapp";
+import { NapContactStrip } from "@/components/content/nap-contact-strip";
 import { InternalLinkGrid } from "@/components/internal-link-grid";
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
@@ -61,6 +62,7 @@ export function GenericContentPageView({ page }: { page: GenericContentPage }) {
   const localizedFaqs = remoteBody?.faqs ?? page.faqs;
 
   return (
+    <>
     <section className="bg-gradient-to-b from-slate-50 to-white py-16 sm:py-20">
       <div className="mx-auto flex max-w-5xl flex-col gap-10 px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-4">
@@ -212,5 +214,9 @@ export function GenericContentPageView({ page }: { page: GenericContentPage }) {
         </div>
       </div>
     </section>
+
+    {/* Audit P4-15 — NAP contact strip at the end of the content block. */}
+    <NapContactStrip service={page.title} />
+    </>
   );
 }

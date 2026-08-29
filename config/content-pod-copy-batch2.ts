@@ -6,6 +6,7 @@
 //
 // `scripts/validate-content-pods.ts` (prebuild) checks uniqueness of intros
 // across all batch-2 families, structure (4/4/4), and ≥80-char FAQ answers.
+import { RATE_YEAR_LABEL } from "./rate-year";
 
 export type Batch2PodCopy = {
   intro: string;
@@ -827,7 +828,7 @@ export const seasonalCopy: Record<string, Batch2PodCopy> = {
 
 export const topCopy: Record<string, Batch2PodCopy> = {
   "best-house-painters-kl-2026": {
-    intro: "How to compare house painters in KL for 2026: the criteria that separate a professional repaint from a rushed job — pricing, prep, warranty and finish quality.",
+    intro: `How to compare house painters in KL for ${RATE_YEAR_LABEL}: the criteria that separate a professional repaint from a rushed job — pricing, prep, warranty and finish quality.`,
     bullets: ["Itemised quotes with prep, primer and topcoat listed", "Documented preparation including crack filling and sanding", "Written warranty covering peeling and blistering", "Consistent finish under natural and artificial light"],
     faqs: [
       { q: "What makes a painter professional versus average?", a: "Documented preparation (photos of crack filling, sanding and priming before topcoat), itemised quotes that name every material, written warranties, and a finish that looks consistent under both sunlight and downlighting." },
@@ -877,10 +878,10 @@ export const topCopy: Record<string, Batch2PodCopy> = {
     ]
   },
   "best-paint-brands-malaysia-2026": {
-    intro: "Paint brands in Malaysia for 2026: a practical guide to Nippon, Dulux, Jotun and the brands that earn their place on your quote — by application, not loyalty.",
+    intro: `Paint brands in Malaysia for ${RATE_YEAR_LABEL}: a practical guide to Nippon, Dulux, Jotun and the brands that earn their place on your quote — by application, not loyalty.`,
     bullets: ["Interior stain resistance: Nippon Spot Less Plus vs Dulux EasyClean", "Exterior durability: Jotun Jotashield vs Dulux Weathershield", "Budget range: local brands for rental and utility areas", "Primer and sealer systems matched to the topcoat brand"],
     faqs: [
-      { q: "Which paint brand is best for Malaysian homes in 2026?", a: "There is no single best — Nippon leads on stain-resistant interiors, Jotun on heat-reflective exteriors, and Dulux competes closely on both. The right brand depends on which room or surface you are painting." },
+      { q: `Which paint brand is best for Malaysian homes in ${RATE_YEAR_LABEL}?`, a: "There is no single best — Nippon leads on stain-resistant interiors, Jotun on heat-reflective exteriors, and Dulux competes closely on both. The right brand depends on which room or surface you are painting." },
       { q: "Are premium paints worth the cost?", a: "For high-traffic interiors and exposed exteriors, yes — premium ranges last longer, resist marks better and need fewer coats. For storerooms and rental units, the budget range delivers adequate performance at lower cost." },
       { q: "Can I use different brands in different rooms?", a: "Yes — many homeowners use premium paint in living areas and bedrooms, and budget paint in utility spaces. Just keep the primer and topcoat from the same brand within each room for the system warranty." },
       { q: "How do I verify paint quality on site?", a: "Check that tints arrive sealed from the brand's authorised tinting centre, with batch numbers matching — shop-mixed tints from general hardware stores vary more in colour consistency." }

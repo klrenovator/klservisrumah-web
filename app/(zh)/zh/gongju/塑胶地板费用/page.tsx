@@ -18,6 +18,7 @@ export const metadata = buildMetadata({
   path: "/zh/gongju/塑胶地板费用",
   keywords: content.keywords,
   image: content.heroImage,
+  ogTemplate: "tool",
   languageUrls: toolLocaleUrls(content.slug)
 });
 

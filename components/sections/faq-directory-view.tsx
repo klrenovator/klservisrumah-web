@@ -19,7 +19,6 @@ const DIRECTORY_COPY: Record<SupportedLang, {
   body: string;
   questions: (n: number) => string;
   readMore: string;
-  noMatches: string;
   categoriesAria: string;
 }> = {
   en: {
@@ -28,7 +27,6 @@ const DIRECTORY_COPY: Record<SupportedLang, {
     body: "Browse a concise selection from each topic, then follow the source link for the complete answer, local context, pricing tables and related booking guidance. Keeping the hub selective makes it much faster on mobile while every answer remains available on its relevant page.",
     questions: (n) => `${n} question${n === 1 ? "" : "s"}`,
     readMore: "Read more on",
-    noMatches: "No matches in this topic.",
     categoriesAria: "FAQ categories",
   },
   ms: {
@@ -37,7 +35,6 @@ const DIRECTORY_COPY: Record<SupportedLang, {
     body: "Lihat pilihan ringkas bagi setiap topik, kemudian ikuti pautan sumber untuk jawapan lengkap, konteks setempat, jadual harga dan panduan tempahan. Direktori terpilih ini lebih pantas pada telefon, manakala semua jawapan kekal pada halaman berkaitan.",
     questions: (n) => `${n} soalan`,
     readMore: "Baca lagi di",
-    noMatches: "Tiada padanan dalam topik ini.",
     categoriesAria: "Kategori soalan lazim",
   },
   zh: {
@@ -46,7 +43,6 @@ const DIRECTORY_COPY: Record<SupportedLang, {
     body: "每个主题展示精简问题；点击来源链接可查看完整答案、本地背景、价格表和预约说明。精选目录可大幅加快手机加载速度，而所有答案仍保留在各自相关页面。",
     questions: (n) => `${n} 个问题`,
     readMore: "阅读更多：",
-    noMatches: "该主题下没有匹配项。",
     categoriesAria: "常见问题类别",
   },
 };
@@ -153,9 +149,6 @@ export function FaqDirectoryView({ categories, totalCount, lang = "en" }: { cate
                   </span>
                 </h3>
                 <p className="text-sm font-semibold leading-relaxed text-[#475569]">{localCat?.description ?? category.description}</p>
-                <p data-faq-empty className="hidden text-sm font-semibold text-slate-400">
-                  {copy.noMatches}
-                </p>
               </div>
 
               <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
@@ -165,8 +158,11 @@ export function FaqDirectoryView({ categories, totalCount, lang = "en" }: { cate
                     data-faq-item
                     className="group rounded-2xl border border-slate-100 bg-slate-50/60 transition-colors open:bg-white open:border-[#BAE6FD] hover:border-[#BAE6FD]"
                   >
+                    {/* Audit P3-02 — questions are real heading elements (H3)
+                        so AI/LLM extractors and screen readers see a question
+                        outline, not bare text in a <summary>. */}
                     <summary className="flex cursor-pointer list-none items-start justify-between gap-3 p-4 text-sm font-bold text-[#075985] sm:p-5">
-                      <span>{item.q}</span>
+                      <h3 className="text-sm font-extrabold leading-snug text-[#075985] sm:text-base">{item.q}</h3>
                       <span className="mt-0.5 shrink-0 text-lg font-bold text-[#0EA5E9] transition-transform group-open:rotate-45">
                         +
                       </span>

@@ -8,6 +8,7 @@
  * calculator itself is progressive enhancement on top.
  */
 
+import { RATE_YEAR_LABEL } from "./rate-year";
 import { RATES } from "@/lib/estimator/pricing";
 import { formatMYR } from "@/lib/estimator/format";
 
@@ -61,7 +62,7 @@ export const toolsContent: Record<string, ToolContent> = {
     heading: "Painting Cost Calculator for KL & Selangor",
     metaTitle: "Painting Cost Calculator KL — Instant Price Estimate",
     metaDesc:
-      "Free painting cost calculator for KL & Selangor. Pick your surface, size, condition and paint grade to get an instant estimate from our published 2026 rates.",
+      `Free painting cost calculator for KL & Selangor. Pick your surface, size, condition and paint grade to get an instant estimate from our published ${RATE_YEAR_LABEL} rates.`,
     keywords: [
       "painting cost calculator Malaysia",
       "house painting price KL",
@@ -101,7 +102,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Wall dampness treatment", rate: `From ${money(RATES.painting.dampRemedial)}`, note: "Efflorescence and moisture barrier" }
     ],
     priceTableNote:
-      "These are the same published rates the calculator uses. They reflect standard Klang Valley market pricing for 2026 — not inflated, not underpriced.",
+      `These are the same published rates the calculator uses. They reflect standard Klang Valley market pricing for ${RATE_YEAR_LABEL} — not inflated, not underpriced.`,
     faqs: [
       { q: "How much does it cost to paint a room in KL?", a: `A standard 10 × 12 ft bedroom with walls in good condition typically lands near our published minimum of ${money(RATES.painting.roomMinimum)} per room. Larger rooms, high ceilings, dark colour changes or heavy crack repair push the figure up, which is exactly what the calculator models.` },
       { q: "How much does exterior house painting cost in Selangor?", a: `Exterior painting is priced at ${band(RATES.painting.exteriorSqft.low, RATES.painting.exteriorSqft.high)} per square foot depending on access and paint system, starting from ${money(RATES.painting.exteriorMinimum)} for a small facade. Scaffold or rope access adds cost, and the calculator includes both options.` },
@@ -436,9 +437,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free paint quantity estimator for KL & Selangor. Enter room size, coats and get litres, coverage and cost instantly.",
     keywords: ["paint quantity calculator Malaysia","how much paint per sq ft","paint coverage calculator KL"],
     eyebrow: "Free paint quantity tool",
-    intro: "Estimate litres of paint needed for any room size, coats and wastage. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Estimate litres of paint needed for any room size, coats and wastage. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does paint quantity estimator cost in KL and Selangor?",
-    directAnswer: "Estimate litres of paint needed for any room size, coats and wastage. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Estimate litres of paint needed for any room size, coats and wastage. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Paint Quantity Estimator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Paint Quantity Estimator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/tools/painting-cost-calculator-kl.webp",
@@ -460,7 +461,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Paint Quantity Estimator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Paint Quantity Estimator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -491,9 +492,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free wall area calculator. Enter length, width, height to get total wall area in sq ft.",
     keywords: ["wall area calculator","how to calculate wall area","wall sq ft Malaysia"],
     eyebrow: "Free area tool",
-    intro: "Calculate wall paintable area using 2×(L+W)×H formula instantly. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Calculate wall paintable area using 2×(L+W)×H formula instantly. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does wall area calculator cost in KL and Selangor?",
-    directAnswer: "Calculate wall paintable area using 2×(L+W)×H formula instantly. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Calculate wall paintable area using 2×(L+W)×H formula instantly. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Wall Area Calculator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Wall Area Calculator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/tools/painting-cost-calculator-kl.webp",
@@ -515,7 +516,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Wall Area Calculator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Wall Area Calculator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -546,9 +547,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free ceiling area calculator for any room size.",
     keywords: ["ceiling area calculator","sq ft ceiling"],
     eyebrow: "Free area tool",
-    intro: "Calculate ceiling area L×W instantly. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Calculate ceiling area L×W instantly. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does ceiling area calculator cost in KL and Selangor?",
-    directAnswer: "Calculate ceiling area L×W instantly. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Calculate ceiling area L×W instantly. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Ceiling Area Calculator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Ceiling Area Calculator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/tools/ceiling-repair-estimator-kl.webp",
@@ -570,7 +571,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Ceiling Area Calculator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Ceiling Area Calculator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -601,9 +602,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Estimate plaster ceiling replacement cost in KL & Selangor from published sq ft rates.",
     keywords: ["ceiling replacement cost Malaysia","plaster ceiling price"],
     eyebrow: "Free cost estimator",
-    intro: "Estimate ceiling replacement cost from sq ft rates. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Estimate ceiling replacement cost from sq ft rates. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does ceiling replacement cost calculator cost in KL and Selangor?",
-    directAnswer: "Estimate ceiling replacement cost from sq ft rates. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Estimate ceiling replacement cost from sq ft rates. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Ceiling Replacement Cost Calculator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Ceiling Replacement Cost Calculator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/tools/ceiling-repair-estimator-kl.webp",
@@ -625,7 +626,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Ceiling Replacement Cost Calculator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Ceiling Replacement Cost Calculator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -656,9 +657,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free pipe leak estimator for KL & Selangor homes. Get cause, urgency and cost.",
     keywords: ["pipe leak repair cost Malaysia","water pipe leak KL"],
     eyebrow: "Free diagnostic",
-    intro: "Diagnose pipe leak cause and cost. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Diagnose pipe leak cause and cost. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does pipe leak repair estimator cost in KL and Selangor?",
-    directAnswer: "Diagnose pipe leak cause and cost. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Diagnose pipe leak cause and cost. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Pipe Leak Repair Estimator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Pipe Leak Repair Estimator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/tools/plumbing-diagnostic-kl.webp",
@@ -680,7 +681,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Pipe Leak Repair Estimator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Pipe Leak Repair Estimator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -711,9 +712,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Diagnose low water pressure causes and get fix cost estimate.",
     keywords: ["low water pressure fix Malaysia","water pressure low KL"],
     eyebrow: "Free troubleshooter",
-    intro: "Troubleshoot low water pressure causes and fixes. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Troubleshoot low water pressure causes and fixes. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does water pressure troubleshooter cost in KL and Selangor?",
-    directAnswer: "Troubleshoot low water pressure causes and fixes. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Troubleshoot low water pressure causes and fixes. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Water Pressure Troubleshooter — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Water Pressure Troubleshooter——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/tools/plumbing-diagnostic-kl.webp",
@@ -735,7 +736,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Water Pressure Troubleshooter — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Water Pressure Troubleshooter — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -766,9 +767,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free pipe replacement cost calculator for KL & Selangor.",
     keywords: ["pipe replacement cost Malaysia","repipe house price KL"],
     eyebrow: "Free cost estimator",
-    intro: "Estimate pipe replacement cost per linear foot. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Estimate pipe replacement cost per linear foot. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does pipe replacement cost calculator cost in KL and Selangor?",
-    directAnswer: "Estimate pipe replacement cost per linear foot. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Estimate pipe replacement cost per linear foot. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Pipe Replacement Cost Calculator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Pipe Replacement Cost Calculator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/tools/plumbing-diagnostic-kl.webp",
@@ -790,7 +791,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Pipe Replacement Cost Calculator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Pipe Replacement Cost Calculator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -821,9 +822,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free waterproofing cost calculator for bathrooms, roof, balcony.",
     keywords: ["waterproofing cost Malaysia","bathroom waterproofing price KL"],
     eyebrow: "Free cost estimator",
-    intro: "Estimate waterproofing cost from sq ft and type. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Estimate waterproofing cost from sq ft and type. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does waterproofing cost calculator cost in KL and Selangor?",
-    directAnswer: "Estimate waterproofing cost from sq ft and type. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Estimate waterproofing cost from sq ft and type. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Waterproofing Cost Calculator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Waterproofing Cost Calculator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/tools/water-leak-triage-kl.webp",
@@ -845,7 +846,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Waterproofing Cost Calculator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Waterproofing Cost Calculator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -876,9 +877,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free roof area calculator with slope factor.",
     keywords: ["roof area calculator","roof sq ft Malaysia"],
     eyebrow: "Free area tool",
-    intro: "Calculate roof area from length, width and slope. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Calculate roof area from length, width and slope. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does roof area calculator cost in KL and Selangor?",
-    directAnswer: "Calculate roof area from length, width and slope. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Calculate roof area from length, width and slope. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Roof Area Calculator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Roof Area Calculator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/tools/water-leak-triage-kl.webp",
@@ -900,7 +901,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Roof Area Calculator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Roof Area Calculator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -931,9 +932,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free bathroom waterproofing cost estimator for KL & Selangor.",
     keywords: ["bathroom waterproofing cost Malaysia","toilet waterproofing KL"],
     eyebrow: "Free estimator",
-    intro: "Estimate bathroom waterproofing cost. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Estimate bathroom waterproofing cost. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does bathroom waterproofing estimator cost in KL and Selangor?",
-    directAnswer: "Estimate bathroom waterproofing cost. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Estimate bathroom waterproofing cost. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Bathroom Waterproofing Estimator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Bathroom Waterproofing Estimator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/tools/water-leak-triage-kl.webp",
@@ -955,7 +956,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Bathroom Waterproofing Estimator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Bathroom Waterproofing Estimator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -986,9 +987,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free balcony waterproofing cost estimator.",
     keywords: ["balcony waterproofing cost Malaysia"],
     eyebrow: "Free estimator",
-    intro: "Estimate balcony waterproofing cost. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Estimate balcony waterproofing cost. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does balcony waterproofing estimator cost in KL and Selangor?",
-    directAnswer: "Estimate balcony waterproofing cost. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Estimate balcony waterproofing cost. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Balcony Waterproofing Estimator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Balcony Waterproofing Estimator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/tools/water-leak-triage-kl.webp",
@@ -1010,7 +1011,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Balcony Waterproofing Estimator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Balcony Waterproofing Estimator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -1041,9 +1042,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free electrical installation cost estimator for KL & Selangor.",
     keywords: ["electrical installation cost Malaysia","power point price KL"],
     eyebrow: "Free cost estimator",
-    intro: "Estimate electrical point installation cost. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Estimate electrical point installation cost. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does electrical installation cost estimator cost in KL and Selangor?",
-    directAnswer: "Estimate electrical point installation cost. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Estimate electrical point installation cost. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Electrical Installation Cost Estimator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Electrical Installation Cost Estimator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/hero/home-services-electrical-kl.jpg",
@@ -1065,7 +1066,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Electrical Installation Cost Estimator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Electrical Installation Cost Estimator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -1096,9 +1097,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free tool to calculate ideal socket quantity for any room.",
     keywords: ["how many sockets per room","socket quantity calculator"],
     eyebrow: "Free quantity tool",
-    intro: "Calculate recommended socket quantity per room. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Calculate recommended socket quantity per room. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does socket quantity calculator cost in KL and Selangor?",
-    directAnswer: "Calculate recommended socket quantity per room. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Calculate recommended socket quantity per room. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Socket Quantity Calculator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Socket Quantity Calculator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/hero/home-services-electrical-kl.jpg",
@@ -1120,7 +1121,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Socket Quantity Calculator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Socket Quantity Calculator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -1151,9 +1152,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free lighting installation cost calculator.",
     keywords: ["downlight installation cost Malaysia","lighting point price KL"],
     eyebrow: "Free cost tool",
-    intro: "Estimate lighting point and downlight cost. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Estimate lighting point and downlight cost. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does lighting installation calculator cost in KL and Selangor?",
-    directAnswer: "Estimate lighting point and downlight cost. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Estimate lighting point and downlight cost. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Lighting Installation Calculator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Lighting Installation Calculator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/hero/home-services-electrical-kl.jpg",
@@ -1175,7 +1176,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Lighting Installation Calculator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Lighting Installation Calculator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -1206,9 +1207,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free ceiling fan installation cost estimator.",
     keywords: ["ceiling fan installation cost Malaysia"],
     eyebrow: "Free estimator",
-    intro: "Estimate ceiling fan installation cost. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Estimate ceiling fan installation cost. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does ceiling fan installation estimator cost in KL and Selangor?",
-    directAnswer: "Estimate ceiling fan installation cost. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Estimate ceiling fan installation cost. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Ceiling Fan Installation Estimator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Ceiling Fan Installation Estimator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/hero/home-services-electrical-kl.jpg",
@@ -1230,7 +1231,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Ceiling Fan Installation Estimator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Ceiling Fan Installation Estimator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -1261,9 +1262,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free handyman cost estimator for any odd job.",
     keywords: ["handyman cost Malaysia","odd job price KL"],
     eyebrow: "Free estimator",
-    intro: "Estimate handyman job cost. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Estimate handyman job cost. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does handyman cost estimator cost in KL and Selangor?",
-    directAnswer: "Estimate handyman job cost. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Estimate handyman job cost. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Handyman Cost Estimator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Handyman Cost Estimator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/tools/tv-mount-advisor-kl.webp",
@@ -1285,7 +1286,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Handyman Cost Estimator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Handyman Cost Estimator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -1316,9 +1317,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free furniture assembly cost estimator.",
     keywords: ["furniture assembly cost Malaysia","IKEA assembly price KL"],
     eyebrow: "Free estimator",
-    intro: "Estimate furniture assembly cost for IKEA etc. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Estimate furniture assembly cost for IKEA etc. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does furniture assembly estimator cost in KL and Selangor?",
-    directAnswer: "Estimate furniture assembly cost for IKEA etc. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Estimate furniture assembly cost for IKEA etc. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Furniture Assembly Estimator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Furniture Assembly Estimator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/tools/tv-mount-advisor-kl.webp",
@@ -1340,7 +1341,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Furniture Assembly Estimator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Furniture Assembly Estimator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -1371,9 +1372,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free curtain installation cost calculator.",
     keywords: ["curtain installation cost Malaysia"],
     eyebrow: "Free cost tool",
-    intro: "Estimate curtain track and installation cost. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Estimate curtain track and installation cost. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does curtain installation calculator cost in KL and Selangor?",
-    directAnswer: "Estimate curtain track and installation cost. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Estimate curtain track and installation cost. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Curtain Installation Calculator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Curtain Installation Calculator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/tools/tv-mount-advisor-kl.webp",
@@ -1395,7 +1396,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Curtain Installation Calculator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Curtain Installation Calculator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -1426,9 +1427,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free door installation cost calculator for KL & Selangor.",
     keywords: ["door installation cost Malaysia"],
     eyebrow: "Free estimator",
-    intro: "Estimate door installation cost. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Estimate door installation cost. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does door installation cost calculator cost in KL and Selangor?",
-    directAnswer: "Estimate door installation cost. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Estimate door installation cost. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Door Installation Cost Calculator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Door Installation Cost Calculator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/hero/home-services-handyman-kl.jpg",
@@ -1450,7 +1451,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Door Installation Cost Calculator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Door Installation Cost Calculator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -1481,9 +1482,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free window replacement cost estimator.",
     keywords: ["window replacement cost Malaysia"],
     eyebrow: "Free estimator",
-    intro: "Estimate window replacement cost. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Estimate window replacement cost. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does window replacement estimator cost in KL and Selangor?",
-    directAnswer: "Estimate window replacement cost. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Estimate window replacement cost. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Window Replacement Estimator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Window Replacement Estimator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/hero/home-services-handyman-kl.jpg",
@@ -1505,7 +1506,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Window Replacement Estimator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Window Replacement Estimator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -1536,9 +1537,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free glass replacement cost calculator.",
     keywords: ["glass replacement cost Malaysia"],
     eyebrow: "Free cost tool",
-    intro: "Estimate glass replacement cost per sq ft. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Estimate glass replacement cost per sq ft. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does glass replacement calculator cost in KL and Selangor?",
-    directAnswer: "Estimate glass replacement cost per sq ft. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Estimate glass replacement cost per sq ft. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Glass Replacement Calculator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Glass Replacement Calculator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/hero-glass-aluminium.svg",
@@ -1560,7 +1561,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Glass Replacement Calculator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Glass Replacement Calculator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -1591,9 +1592,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free flooring area calculator with 10% waste.",
     keywords: ["flooring area calculator","how much flooring"],
     eyebrow: "Free area tool",
-    intro: "Calculate flooring area and waste. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Calculate flooring area and waste. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does flooring area calculator cost in KL and Selangor?",
-    directAnswer: "Calculate flooring area and waste. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Calculate flooring area and waste. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Flooring Area Calculator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Flooring Area Calculator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/hero/home-services-plumbing-kl.jpg",
@@ -1615,7 +1616,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Flooring Area Calculator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Flooring Area Calculator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -1646,9 +1647,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free tile quantity calculator for floor and wall.",
     keywords: ["tile calculator","how many tiles needed"],
     eyebrow: "Free quantity tool",
-    intro: "Calculate tile quantity needed with waste. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Calculate tile quantity needed with waste. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does tile quantity calculator cost in KL and Selangor?",
-    directAnswer: "Calculate tile quantity needed with waste. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Calculate tile quantity needed with waste. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Tile Quantity Calculator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Tile Quantity Calculator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/hero/home-services-plumbing-kl.jpg",
@@ -1670,7 +1671,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Tile Quantity Calculator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Tile Quantity Calculator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -1701,9 +1702,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free vinyl flooring cost estimator for KL & Selangor.",
     keywords: ["vinyl flooring cost Malaysia","SPC flooring price KL"],
     eyebrow: "Free estimator",
-    intro: "Estimate vinyl flooring cost per sq ft. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Estimate vinyl flooring cost per sq ft. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does vinyl flooring cost estimator cost in KL and Selangor?",
-    directAnswer: "Estimate vinyl flooring cost per sq ft. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Estimate vinyl flooring cost per sq ft. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Vinyl Flooring Cost Estimator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Vinyl Flooring Cost Estimator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/hero/home-services-plumbing-kl.jpg",
@@ -1725,7 +1726,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Vinyl Flooring Cost Estimator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Vinyl Flooring Cost Estimator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -1756,9 +1757,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free roof repair cost estimator.",
     keywords: ["roof repair cost Malaysia","bumbung bocor price KL"],
     eyebrow: "Free estimator",
-    intro: "Estimate roof leak repair cost. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Estimate roof leak repair cost. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does roof repair estimator cost in KL and Selangor?",
-    directAnswer: "Estimate roof leak repair cost. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Estimate roof leak repair cost. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Roof Repair Estimator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Roof Repair Estimator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/hero/home-services-waterproofing-kl.jpg",
@@ -1780,7 +1781,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Roof Repair Estimator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Roof Repair Estimator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -1811,9 +1812,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free roof replacement cost calculator.",
     keywords: ["roof replacement cost Malaysia"],
     eyebrow: "Free estimator",
-    intro: "Estimate roof replacement cost per sq ft. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Estimate roof replacement cost per sq ft. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does roof replacement cost calculator cost in KL and Selangor?",
-    directAnswer: "Estimate roof replacement cost per sq ft. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Estimate roof replacement cost per sq ft. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Roof Replacement Cost Calculator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Roof Replacement Cost Calculator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/hero/home-services-waterproofing-kl.jpg",
@@ -1835,7 +1836,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Roof Replacement Cost Calculator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Roof Replacement Cost Calculator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -1866,9 +1867,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free renovation budget calculator for Malaysia.",
     keywords: ["renovation budget calculator Malaysia","house renovation cost per sq ft KL"],
     eyebrow: "Free budget tool",
-    intro: "Estimate full renovation budget per sq ft. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Estimate full renovation budget per sq ft. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does renovation budget calculator cost in KL and Selangor?",
-    directAnswer: "Estimate full renovation budget per sq ft. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Estimate full renovation budget per sq ft. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Renovation Budget Calculator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Renovation Budget Calculator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/hero-renovation.svg",
@@ -1890,7 +1891,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Renovation Budget Calculator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Renovation Budget Calculator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -1921,9 +1922,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free room renovation cost estimator.",
     keywords: ["room renovation cost Malaysia"],
     eyebrow: "Free estimator",
-    intro: "Estimate per-room renovation cost. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Estimate per-room renovation cost. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does room renovation estimator cost in KL and Selangor?",
-    directAnswer: "Estimate per-room renovation cost. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Estimate per-room renovation cost. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Room Renovation Estimator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Room Renovation Estimator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/hero-renovation.svg",
@@ -1945,7 +1946,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Room Renovation Estimator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Room Renovation Estimator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -1976,9 +1977,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free kitchen renovation cost estimator.",
     keywords: ["kitchen renovation cost Malaysia","kitchen cabinet price KL"],
     eyebrow: "Free estimator",
-    intro: "Estimate kitchen renovation cost. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Estimate kitchen renovation cost. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does kitchen renovation estimator cost in KL and Selangor?",
-    directAnswer: "Estimate kitchen renovation cost. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Estimate kitchen renovation cost. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Kitchen Renovation Estimator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Kitchen Renovation Estimator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/hero-renovation.svg",
@@ -2000,7 +2001,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Kitchen Renovation Estimator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Kitchen Renovation Estimator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },
@@ -2031,9 +2032,9 @@ export const toolsContent: Record<string, ToolContent> = {
     metaDesc: "Free bathroom renovation cost estimator.",
     keywords: ["bathroom renovation cost Malaysia"],
     eyebrow: "Free estimator",
-    intro: "Estimate bathroom renovation cost. One page, no next buttons. Enter your size and get instant estimate from our published 2026 KL & Selangor rates.",
+    intro: `Estimate bathroom renovation cost. One page, no next buttons. Enter your size and get instant estimate from our published ${RATE_YEAR_LABEL} KL & Selangor rates.`,
     directQuestion: "How much does bathroom renovation estimator cost in KL and Selangor?",
-    directAnswer: "Estimate bathroom renovation cost. This free calculator gives you an instant estimate from our published 2026 rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.",
+    directAnswer: `Estimate bathroom renovation cost. This free calculator gives you an instant estimate from our published ${RATE_YEAR_LABEL} rates for KL & Selangor. Enter your dimensions and get total paintable area, labour, materials, total estimate, range and duration.`,
     trilingualMs: "Bathroom Renovation Estimator — anggaran segera untuk KL & Selangor.",
     trilingualZh: "Bathroom Renovation Estimator——吉隆坡与雪兰莪即时估价工具。",
     heroImage: "/hero-renovation.svg",
@@ -2055,7 +2056,7 @@ export const toolsContent: Record<string, ToolContent> = {
       { scope: "Bathroom Renovation Estimator — Materials", rate: "From RM 80 / unit", note: "Material cost" },
       { scope: "Bathroom Renovation Estimator — Labour", rate: "From RM 120", note: "Labour only" }
     ],
-    priceTableNote: "Rates are from our published 2026 price list and used directly by this calculator.",
+    priceTableNote: `Rates are from our published ${RATE_YEAR_LABEL} price list and used directly by this calculator.`,
     faqs: [
       { q: "How is the estimate calculated?", a: "We use published rates: wall area = 2×(Length+Width)×Height for walls, ceiling area = Length×Width, and combined total for walls+ceiling. Labour and materials are split from the published band. See breakdown for details." },
       { q: "Is this a final quotation?", a: "No. This is an estimated price only. Final quotation will be provided after inspection or after confirming project details." },

@@ -18,6 +18,7 @@ export const metadata = buildMetadata({
   path: "/zh/gongju/阳台防水估价",
   keywords: content.keywords,
   image: content.heroImage,
+  ogTemplate: "tool",
   languageUrls: toolLocaleUrls(content.slug)
 });
 

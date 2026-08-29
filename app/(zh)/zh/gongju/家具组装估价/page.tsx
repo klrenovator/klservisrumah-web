@@ -18,6 +18,7 @@ export const metadata = buildMetadata({
   path: "/zh/gongju/家具组装估价",
   keywords: content.keywords,
   image: content.heroImage,
+  ogTemplate: "tool",
   languageUrls: toolLocaleUrls(content.slug)
 });
 
