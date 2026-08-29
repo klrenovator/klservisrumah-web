@@ -50,19 +50,34 @@
 > intros (batch 1 gate); full i18n/trilingual/similarity/bp1/schema-size
 > all green. Full log: `docs/full-website-deep-audit/FIX-WAVE-5-REPORT.md`.
 >
-> **Next session starts at:** **P2-16/17/18** — emergency-page depth,
-> problem-page expansion. P2-C3 is now complete (146/174 pods hand-authored;
-> process/answers carry real service data). **P2-C4** stays tied to the BP-1
-> phase-2 owner/GSC keep-set decision. BP-1 phase 2 still **blocked on GSC
-> data (owner)**. Do **not** add more location pages. Do **not** re-add
-> `app/(en|ms|zh)/loading.tsx`. Do **not** delete local pages on low traffic
-> alone. Do **not** retry the CI patch push (no `workflows` permission).
-> Do **not** weaken the estimator trilingual-parity asserts to accommodate
-> new copy — supply the translations instead.
+> **Fix Wave 6 COMPLETE (2026-08-29):** **P2-17/P2-03** ✅ — `/services/<svc>/emergency`
+> rewritten per-service for the 12 real-emergency services (`config/emergency-services.ts`,
+> EN/MS/ZH: emergencies, immediate steps, when-to-call, cost factors, 4 FAQs each);
+> the 17 fake-emergency pages (`painting`, `handyman`, `house-renovation`,
+> `ceiling-fan`, `lighting`, `tiling`, `plaster-ceiling`, `skim-coat`, `flooring`,
+> `epoxy-flooring`, `kitchen-cabinet`, `carpentry`, `welding`, `aircon`,
+> `kitchen-renovation`, `bathroom-renovation`, `awning-installation`) 301 to their
+> service page in `middleware.ts` + dropped from `generateStaticParams`, sitemap
+> (3,643→3,626) and the cost-page emergency card. **P2-16 (tranche 1)** ✅ — the
+> 15 thinnest problem pages enriched with `overview`/`diyChecks`/`prevention`/
+> `costDetail` (EN/MS/ZH native) + `audit:problem-i18n` extended to enforce native
+> depth parity. All gates PASS (3,652 HTML; 320,291 assertions × 0 failures).
+> Full log: `docs/full-website-deep-audit/FIX-WAVE-6-REPORT.md`.
+>
+> **Next session starts at:** **P2-16 remainder** — extend the enrichment to the
+> rest of the top-30 problems by demand (needs GSC; else urgency-weighted
+> fallback) — or **P2-19** (real per-article blog dates + per-article sitemap
+> lastMod, fully unblocked). P2-C3 is complete (146/174 pods). **P2-C4** stays
+> tied to the BP-1 phase-2 owner/GSC keep-set decision. BP-1 phase 2 still
+> **blocked on GSC data (owner)**. Do **not** add more location pages. Do
+> **not** re-add `app/(en|ms|zh)/loading.tsx`. Do **not** delete local pages on
+> low traffic alone. Do **not** retry the CI patch push (no `workflows`
+> permission). Do **not** weaken the estimator trilingual-parity asserts to
+> accommodate new copy — supply the translations instead.
 
-**Branch:** arena/01a04be3-klservisrumah-web (this session branch — push PRs from here)
-**Last completed session:** 2026-08-29 — Fix Wave 5 ✅ (P2-C3 batch 2: 88 pods
-hand-authored, 263 MS/ZH bullet translations)
+**Branch:** arena/01a04c6b-klservisrumah-web (this session branch — push PRs from here)
+**Last completed session:** 2026-08-29 — Fix Wave 6 ✅ (P2-17/03: emergency
+pages rewritten/retired; P2-16 tranche 1: 15 thinnest problems enriched EN/MS/ZH)
 
 **Quality gates (must all be green before any new work).**
 Numbers are the *measured* output of each command on this branch — update them
@@ -70,23 +85,23 @@ when the corpus changes, don't carry stale values forward:
 
 - [ ] npm run lint — 0 errors, 0 warnings
 - [ ] npm run type-check — PASS
-- [ ] npm run build — SUCCESS (3,677 HTML; middleware 35.4 kB)
+- [ ] npm run build — SUCCESS (3,652 HTML; middleware 35.6 kB)
 - [ ] npm run audit:bp1 — PASS (**run after build**; 2,146 retired URLs, 0 regenerated)
 - [ ] npm run seo:audit — PASS
-- [ ] npm run audit:html — 0 fatal / 0 warnings (3,669 pages)
-- [ ] npm run audit:links — 278,275 rendered + 53 source links, 0 broken
-- [ ] npm run audit:seo-head — PASS (3,643 self-canonical indexable, 26 noindex incl. 23 estimate URLs, sitemap = 3,643, 0 dupes)
-- [ ] npm run audit:i18n — 1,182 keys × 3, 0 missing
+- [ ] npm run audit:html — 0 fatal / 0 warnings (3,652 pages)
+- [ ] npm run audit:links — 277,170 rendered + 53 source links, 0 broken
+- [ ] npm run audit:seo-head — PASS (3,626 self-canonical indexable, 26 noindex incl. 23 estimate URLs, sitemap = 3,626, 0 dupes)
+- [ ] npm run audit:i18n — 1,183 keys × 3, 0 missing
 - [ ] npm run audit:topical-map — 29/29 services, 222 relationships
 - [ ] npm run audit:specialty-locale — 222 × MS/ZH = 444 blocks
 - [ ] npm run audit:specialty-coverage — 222 subservices across 29 services
 - [ ] npm run audit:service-i18n — 29 services
-- [ ] npm run audit:problem-i18n — 74 keep-URLs × MS/ZH, 12 redirects excluded
+- [ ] npm run audit:problem-i18n — 74 keep-URLs × MS/ZH, 12 redirects excluded (native depth parity for enriched problems)
 - [ ] npm run audit:client-bundle — 217 client modules, 0 heavy registries
 - [ ] npm run audit:location-similarity — all layers < 70%; near-me layer = 0 pages
 - [ ] npm run audit:trilingual-leak — 29 services × 3 locale bases, 58 unique notes, 0 English leaks (prebuild too)
 - [ ] npm run audit:content-pods — 29 services × commercial+residential: 58 unique intros, 4 bullets/4 FAQs each, all pod bullets localized ×2 (prebuild too)
-- [ ] npm run test:estimators — 320,331 assertions, 0 failures
+- [ ] npm run test:estimators — 320,291 assertions, 0 failures
 - [ ] npm audit — 0 vulnerabilities
 
 ---

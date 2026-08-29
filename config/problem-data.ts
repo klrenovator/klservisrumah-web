@@ -15,6 +15,18 @@ export type ProblemDetail = {
   solutions: string[];
   whenToCall: string[];
   faqs: { q: string; a: string }[];
+  /**
+   * P2-16 depth fields (optional). The audit found the 74 problem pages were
+   * the thinnest important template (mean 383 words; 15 pages ≤233 words).
+   * These add the symptom → cause → DIY-check → when-to-call → cost →
+   * prevention narrative high-intent diagnostic queries expect. Present only
+   * on enriched records; `getLocalizedProblem` fills them from
+   * `config/problem-body-i18n.ts` for ms/zh so enriched pages stay native.
+   */
+  overview?: string;
+  diyChecks?: string[];
+  prevention?: string[];
+  costDetail?: string;
 };
 
 export const problemPages: ProblemDetail[] = [
@@ -220,7 +232,21 @@ export const problemPages: ProblemDetail[] = [
       { q: "Can anti-mold paint stop it permanently?", a: "Paint helps, but ventilation and humidity control must be fixed too." },
       { q: "Should moldy boards be replaced?", a: "If mold has penetrated soft or damp board, replacement is safer than surface cleaning only." },
       { q: "What rooms are most affected?", a: "Bathrooms, air-conditioned bedrooms, and poorly ventilated corners are common." }
-    ]
+    ],
+    overview: "Condensation mould forms when warm humid air meets a cool ceiling — typically bathrooms, kitchens, and air-conditioned rooms with poor airflow. It is not always a leak, but it must still be checked, because an undetected leak behind the board produces the same black spotting.",
+    diyChecks: [
+      "Check whether mould follows the coolest spots or a clear water path",
+      "Feel the board — soft or damp suggests a leak rather than condensation",
+      "Run the exhaust fan and see whether condensation clears",
+      "Look for dripping AC pipes or bathroom steam sources"
+    ],
+    prevention: [
+      "Run exhaust fans during and after showers",
+      "Keep air-conditioned rooms ventilated occasionally",
+      "Use anti-mould primer and paint in damp rooms",
+      "Fix any slow leak or dripping AC pipe promptly"
+    ],
+    costDetail: "Cleaning and anti-mould repainting is the lower end (from RM180). If the board is soft or mould is embedded, board replacement moves toward RM1,000. We confirm whether the cause is humidity or a leak before quoting.",
   },
   {
     slug: "bathroom-leak-upper-floor",
@@ -411,7 +437,21 @@ export const problemPages: ProblemDetail[] = [
       { q: "Can you repair or must I replace?", a: "Most instant heaters can be repaired by replacing the element (RM150–RM280). Full replacement only if the tank is leaking." },
       { q: "How long does replacement take?", a: "Standard instant heater replacement takes 1–2 hours including testing." },
       { q: "Do you supply popular brands?", a: "We install Joven, Rheem, Alpha, Faber and Rinnai models." }
-    ]
+    ],
+    overview: "An instant water heater that stays cold usually has a burnt heating element, a failed thermostat, a blocked inlet filter, or an air lock. It is a safety-sensitive repair because the unit combines water and electricity, so it should not be opened by a non-electrician.",
+    diyChecks: [
+      "Check the isolator switch and the breaker feeding the heater",
+      "Confirm other appliances on the same circuit still work",
+      "Check whether water flow is weaker than normal (blocked filter)",
+      "Do not open the unit — the element and wiring are live"
+    ],
+    prevention: [
+      "Have the element and thermostat checked every 2 years",
+      "Clean the inlet filter when flow drops",
+      "Fix tripping or flickering immediately",
+      "Replace units at the end of their expected life"
+    ],
+    costDetail: "Element replacement is the lower end (from RM150). A failed thermostat or a full unit replacement moves toward RM680. We quote the part and labour before starting, and always isolate water and power first.",
   },
 
   // CEILING FAN
@@ -429,7 +469,21 @@ export const problemPages: ProblemDetail[] = [
       { q: "Can you balance the fan without replacing it?", a: "Yes — most wobble issues are fixed by balancing blades and tightening the bracket." },
       { q: "Is it safe on plaster ceiling?", a: "Only if a proper reinforced fan hook was installed during ceiling work. We check and reinforce if needed." },
       { q: "How long does balancing take?", a: "Usually 30–45 minutes including safety check." }
-    ]
+    ],
+    overview: "A wobbling ceiling fan is usually an imbalance — a blade out of true, a loose mounting bracket, or a fan hung on an unreinforced plaster ceiling hook. Left alone the movement loosens fixings further and can damage the ceiling.",
+    diyChecks: [
+      "Check all blade screws are tight and blades are not bent",
+      "Clean dust build-up off the blades — it changes their weight",
+      "Confirm the fan does not wobble when running at low speed",
+      "Look for a loose canopy or mounting bracket at the ceiling"
+    ],
+    prevention: [
+      "Tighten blade screws every 6 months",
+      "Use a reinforced fan hook, especially on plaster ceilings",
+      "Clean blades regularly to avoid imbalance",
+      "Have bearings checked at the first unusual noise"
+    ],
+    costDetail: "Blade balancing and bracket tightening is the lower end (from RM90). A worn motor or a missing reinforced hook costs more, up to RM380 or a replacement fan. We confirm on site.",
   },
 
   // TILING
@@ -464,7 +518,21 @@ export const problemPages: ProblemDetail[] = [
     faqs: [
       { q: "Can you repair only the damaged area?", a: "Yes for small areas. Large areas usually need partial or full re-installation." },
       { q: "Do you check moisture before installation?", a: "Always — we test subfloor moisture content before any SPC or vinyl work." }
-    ]
+    ],
+    overview: "Lifting SPC or vinyl edges are almost always moisture or movement — a subfloor that was not dry or level, expansion gaps that were too tight, or planks laid under heavy furniture. The fix is to correct the cause, not glue the plank back down, or it will lift again.",
+    diyChecks: [
+      "Press the lifted edge — does water or moisture appear?",
+      "Check whether skirting is pinning the planks and removing the expansion gap",
+      "Look for signs of damp at walls, doors, or the kitchen",
+      "Note whether the lifting is one plank or a whole run"
+    ],
+    prevention: [
+      "Always test subfloor moisture before installation",
+      "Leave the correct expansion gap at walls",
+      "Use felt pads under heavy furniture",
+      "Wipe spills immediately, especially at joints"
+    ],
+    costDetail: "Re-laying a few planks is the lower end (from RM120). If the subfloor needs drying, levelling, or a moisture barrier, the job moves up toward RM950. We check the subfloor first so the repair actually lasts.",
   },
 
   // ROOF REPAIR
@@ -481,7 +549,21 @@ export const problemPages: ProblemDetail[] = [
     faqs: [
       { q: "How often should gutters be cleaned in Malaysia?", a: "At least twice a year (before and after monsoon season)." },
       { q: "Do you install gutter guards?", a: "Yes — we recommend leaf guards on landed properties with trees nearby." }
-    ]
+    ],
+    overview: "Gutters overflow in Malaysian downpours when leaves and debris block the channel or the downpipe, and sagging sections let water pool instead of draining. The overflow then runs down fascia and walls, and can find its way into the ceiling.",
+    diyChecks: [
+      "From ground level, look for water spilling over the gutter edge in rain",
+      "Check for plants, leaves, or moss growing in the channel",
+      "Look for sagging or pulled-away gutter brackets",
+      "Clear the downpipe outlet of visible blockages"
+    ],
+    prevention: [
+      "Clean gutters before and after each monsoon",
+      "Install leaf guards if trees overhang the roof",
+      "Re-secure brackets when gutters start to sag",
+      "Trim branches that shed onto the roof"
+    ],
+    costDetail: "Clearing and minor realignment is the lower end (from RM280). Replacing sagging sections, fascia repair, or adding guards moves toward RM1,200. We quote after a roof-level check of the gutter run.",
   },
 
   // KITCHEN CABINET
@@ -498,7 +580,21 @@ export const problemPages: ProblemDetail[] = [
     faqs: [
       { q: "Can you fix soft-close hinges?", a: "Yes — we replace with Blum or Häfele soft-close hinges." },
       { q: "Do you repair existing cabinets or only new?", a: "We repair and adjust existing kitchen cabinets as well as install new ones." }
-    ]
+    ],
+    overview: "Kitchen doors that hang uneven or will not stay shut are usually worn hinges or a carcase that has moved with humidity and load. It is a quick fix at the hinge, but leaving it means the doors rub, the hinges wear faster, and the catches stop holding.",
+    diyChecks: [
+      "Check which hinge is loose and tighten the screws",
+      "See if the door catches the adjacent door or the frame",
+      "Test the soft-close action — a dead damper lets doors slam",
+      "Level-check the cabinet run for any frame movement"
+    ],
+    prevention: [
+      "Tighten hinge screws during kitchen cleaning",
+      "Replace worn dampers before doors start slamming",
+      "Do not hang heavy items on door fronts",
+      "Keep kitchen humidity steady"
+    ],
+    costDetail: "Hinge adjustment and damper replacement is the cheap end (from RM90). Reinforcing a moved carcase or replacing multiple hinges costs more. We quote after checking whether it is adjustment or frame movement.",
   },
 
   // LIGHTING
@@ -549,7 +645,21 @@ export const problemPages: ProblemDetail[] = [
     faqs: [
       { q: "Why does skim coat peel after painting?", a: "Usually due to dust, moisture, or poor bonding. We fix the substrate first then re-skim." },
       { q: "How long should skim coat dry before painting?", a: "Minimum 7–14 days depending on thickness and humidity." }
-    ]
+    ],
+    overview: "A skim coat that powders or peels after painting has usually lost its bond — the wall was dusty, the mix was too thin, or it was painted before it fully cured. Re-skimming over a failed coat without fixing the surface will just peel again.",
+    diyChecks: [
+      "Rub the surface — if chalk comes off, the bond has failed",
+      "Check whether peeling is localised or across whole walls",
+      "Look for damp or condensation behind the failed areas",
+      "Test paint adhesion with a small tape pull on an unaffected patch"
+    ],
+    prevention: [
+      "Always prime dust-free, cured skim before painting",
+      "Use a bonding agent on smooth or previously painted walls",
+      "Let skim cure fully (7–14 days) before decorating",
+      "Control ventilation and humidity during curing"
+    ],
+    costDetail: "Scraping and re-skimming small areas is the lower end (from RM120). Full-wall re-skim and redecoration costs more. We confirm the failed area and substrate before quoting.",
   },
 
   // EPOXY FLOORING
@@ -566,7 +676,21 @@ export const problemPages: ProblemDetail[] = [
     faqs: [
       { q: "Can yellowed epoxy be fixed?", a: "Yes — we sand the surface and apply a UV-stable topcoat." },
       { q: "How do you prevent yellowing?", a: "Always use aliphatic PU topcoat on areas exposed to sunlight." }
-    ]
+    ],
+    overview: "Yellowing on a new epoxy floor is almost always UV exposure hitting a topcoat that was not UV-stable — common with aromatic resins used indoors then exposed to sunlight. It does not mean the floor is failing, but it will keep getting worse until the surface is re-coated with a UV-stable finish.",
+    diyChecks: [
+      "Note which areas are yellowing — usually sun-facing zones only",
+      "Test whether the surface is still hard or has turned soft or sticky",
+      "Check for furniture marks or chemical spills in the affected area",
+      "Avoid harsh solvents until the finish is identified"
+    ],
+    prevention: [
+      "Specify an aliphatic PU topcoat on any sun-exposed area",
+      "Use curtains, blinds, or window film on direct-sun windows",
+      "Keep the floor clear of strong chemicals",
+      "Re-coat before the yellowing penetrates deep"
+    ],
+    costDetail: "Re-coating with a UV-stable PU topcoat usually sits in the lower half of the RM280–RM1,800 band for small areas; full sanding and recoat of large floors costs more. We confirm the resin type and area before quoting.",
   },
 
   // CARPENTRY
@@ -583,7 +707,21 @@ export const problemPages: ProblemDetail[] = [
     faqs: [
       { q: "Can you fix existing wardrobes?", a: "Yes — we repair and adjust built-in wardrobes, replace hinges, and realign doors." },
       { q: "Do you use soft-close hinges?", a: "Yes — we install Blum or Häfele soft-close systems." }
-    ]
+    ],
+    overview: "Wardrobe doors that rub or refuse to close flush are usually out of level — the frame settled, the hinges wore, or heavy shelves pulled the carcase out of square. Small adjustments usually fix it, but ignoring it wears the hinges and can crack the door edges.",
+    diyChecks: [
+      "Open and close each door slowly to see where it catches first",
+      "Check hinge screws and tighten any that are loose",
+      "Use a spirit level across the top of the frame",
+      "Lighten heavily loaded shelves if doors have started sagging"
+    ],
+    prevention: [
+      "Do not overload upper shelves",
+      "Tighten hinge screws during cleaning",
+      "Adjust hinges rather than forcing warped doors",
+      "Keep humidity steady to reduce wood movement"
+    ],
+    costDetail: "Hinge adjustment and re-alignment is the cheap end (from RM120). Warped solid doors or frame re-levelling cost more. We quote after checking whether it is an adjustment job or the carcase itself has moved.",
   },
 
   // DOOR
@@ -600,7 +738,21 @@ export const problemPages: ProblemDetail[] = [
     faqs: [
       { q: "Can you plane the door without removing it?", a: "Yes for minor adjustments. Heavier doors may need removal." },
       { q: "Do you repair fire-rated doors?", a: "Yes — we maintain the fire rating during repairs." }
-    ]
+    ],
+    overview: "A door that scrapes the floor has usually swollen with humidity, dropped on loose hinges, or the floor finish has raised it. Left alone, the scraping wears the door bottom, strains the hinges, and eventually stops the latch from lining up so the door no longer closes securely.",
+    diyChecks: [
+      "Check the hinge screws and tighten any that are loose",
+      "See whether the gap is even all round or tight at one corner",
+      "Look for visible swelling or moisture staining at the bottom edge",
+      "Try the latch — if it misses the strike plate, the door has dropped"
+    ],
+    prevention: [
+      "Run a dehumidifier or fan in very humid rooms",
+      "Tighten hinge screws twice a year",
+      "Use a door sweep instead of trimming too much off the bottom",
+      "Repaint or seal the bottom edge to slow moisture uptake"
+    ],
+    costDetail: "Trimming and hinge adjustment is the cheap end (from about RM80). Heavier doors, digital-lock re-alignment, or work on fire-rated doors costs more. We quote after checking whether the door needs planning or just hinge and strike-plate work.",
   },
 
   // WINDOW REPAIR
@@ -617,7 +769,21 @@ export const problemPages: ProblemDetail[] = [
     faqs: [
       { q: "Can you replace window rollers?", a: "Yes — we stock common roller sizes for aluminium and UPVC windows." },
       { q: "Do you repair casement windows too?", a: "Yes — hinges, handles, and seals for all common window types." }
-    ]
+    ],
+    overview: "A sliding window that sticks is usually a sign of worn rollers, a dirty track, or a frame that has moved with the building. It is more than an inconvenience — a window that will not close or lock properly is a security and weather-sealing risk, and forcing it can pop the sash off its track.",
+    diyChecks: [
+      "Vacuum the track and wipe both rails with a dry cloth to remove grit",
+      "Check whether the rollers touch the track evenly or are worn flat",
+      "Test the lock with the window closed — a stiff lock often means the sash has dropped",
+      "Do not use oil: it attracts dust and makes aluminium tracks worse"
+    ],
+    prevention: [
+      "Clean tracks every 3–6 months",
+      "Use a dry silicone spray (never grease) on rollers",
+      "Close gently instead of slamming the sash",
+      "Have rollers replaced at the first sign of grinding"
+    ],
+    costDetail: "Most call-outs are simple roller or track work (RM90–RM420), but if the frame is out of square or the glass has to come out to reach the rollers, the price moves up. We confirm the exact figure after seeing the window and the roller type.",
   },
 
   // LOCKSMITH
@@ -634,7 +800,21 @@ export const problemPages: ProblemDetail[] = [
     faqs: [
       { q: "Can you install Yale, Samsung or Tuya smart locks?", a: "Yes — we install and configure all popular smart lock brands." },
       { q: "Do you provide emergency lockout service?", a: "Yes — 24/7 emergency lockout service available." }
-    ]
+    ],
+    overview: "A smart lock that stops responding can leave you locked out, or worse, leave the door unlocked without you knowing. Most failures come down to battery, motor, or pairing problems, but a lock that drains batteries fast is often misaligned and fighting the door bolt on every cycle.",
+    diyChecks: [
+      "Replace the batteries with fresh ones and check the terminal contacts",
+      "Confirm the app and lock firmware are up to date",
+      "Check that the bolt moves freely with the door open",
+      "Re-align the strike plate if the bolt scrapes when locking"
+    ],
+    prevention: [
+      "Use quality alkaline or lithium batteries and change them on schedule",
+      "Keep a physical key or backup code as a failsafe",
+      "Lubricate the bolt and keep the strike plate aligned",
+      "Avoid forcing the handle when the motor is still turning"
+    ],
+    costDetail: "Battery and re-pairing fixes are the cheap end (from about RM150). A failed motor module or a replacement lock pushes the cost toward RM680 or more, depending on the brand and model. We quote the part before replacing anything.",
   },
 
   // GLASS & ALUMINIUM
@@ -651,7 +831,21 @@ export const problemPages: ProblemDetail[] = [
     faqs: [
       { q: "Can you replace only the seal?", a: "Yes — most leaks are fixed by replacing the bottom wipe seal and re-siliconing." },
       { q: "Do you install frameless shower screens?", a: "Yes — we supply and install 10mm tempered glass frameless systems." }
-    ]
+    ],
+    overview: "Water pooling outside a frameless shower screen is almost always a seal or level problem, not a broken screen. The bottom wipe seal wears flat, silicone joints let go, or the screen was pitched slightly the wrong way so water runs outward instead of back to the drain.",
+    diyChecks: [
+      "Check the bottom seal for flattening, cracks, or gaps at the ends",
+      "Run a slow shower and watch exactly where water escapes first",
+      "Test whether the floor tile falls toward the drain or away from it",
+      "Inspect the silicone corners for peeling or black mould"
+    ],
+    prevention: [
+      "Squeegee the glass and wipe the bottom seal after each shower",
+      "Replace the wipe seal at the first sign of wear",
+      "Keep the drain clear so water never backs up",
+      "Re-silicone corners every 1–2 years"
+    ],
+    costDetail: "A bottom-seal and silicone refresh is the common fix and sits at the lower end of the RM180–RM750 band. If the tray pitch is wrong, we may need to re-level the screen or add a threshold strip, which adds cost. We confirm after measuring the screen and checking the slope.",
   },
 
   // CCTV
@@ -668,7 +862,21 @@ export const problemPages: ProblemDetail[] = [
     faqs: [
       { q: "Can you recover lost footage?", a: "Sometimes — we attempt data recovery from the HDD before replacement." },
       { q: "Do you install Hikvision and Dahua systems?", a: "Yes — we are experienced with Hikvision, Dahua, Ezviz and Tuya systems." }
-    ]
+    ],
+    overview: "Cameras that show a live picture but record nothing usually point to storage — a failed hard drive, a full or misconfigured schedule, or a power supply that drops under load. Because the live view works, the problem is easy to miss until you actually need the footage.",
+    diyChecks: [
+      "Confirm the recorder still has a working hard drive in the storage menu",
+      "Check the recording schedule and whether motion detection is enabled",
+      "Verify the date and time are correct — a wrong clock breaks the schedule",
+      "Test the power supply and network cable to each camera"
+    ],
+    prevention: [
+      "Use a surveillance-rated hard drive, not a desktop drive",
+      "Set the recorder to overwrite oldest footage automatically",
+      "Keep the recorder in a ventilated spot",
+      "Review a clip once a month to catch silent failures early"
+    ],
+    costDetail: "A settings or power fix is the cheaper end (from RM180). A failed hard drive or NVR pushes the cost up to RM850 or more with a surveillance-grade replacement. We attempt data recovery from the old drive before swapping it.",
   },
 
   // AUTOGATE
@@ -685,7 +893,21 @@ export const problemPages: ProblemDetail[] = [
     faqs: [
       { q: "Can you repair existing autogate motors?", a: "Yes — we repair and service Autogate 2000, Nice, FAAC and many other brands." },
       { q: "Do you install battery backup?", a: "Yes — we recommend and install battery backup for power outages." }
-    ]
+    ],
+    overview: "An autogate that opens but will not close usually has a failed limit switch, a blocked safety sensor, or a motor capacitor on its way out. It is a security problem as much as a convenience one — a gate stuck open overnight leaves the whole property exposed.",
+    diyChecks: [
+      "Check the safety photocell lenses are clean and aligned",
+      "Remove any leaves or debris in the track",
+      "Watch whether the gate stops at the same point every time",
+      "Listen for a humming motor that does not move the gate"
+    ],
+    prevention: [
+      "Keep the track clear and lubricate hinges quarterly",
+      "Clean the photocell lenses monthly",
+      "Service the motor and check the capacitor yearly",
+      "Test the manual release every few months"
+    ],
+    costDetail: "A limit switch or sensor fix is the lower end (from RM250). A failed capacitor or control board pushes toward RM1,200. We diagnose on site and confirm the part price before replacing anything.",
   },
 
   // WELDING

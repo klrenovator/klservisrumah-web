@@ -13,6 +13,7 @@ import { useLang } from "@/context/lang-context";
 import { useTranslations } from "@/hooks/use-translations";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { VisibleFaqList } from "@/components/content/visible-faq";
+import { isEmergencyService } from "@/config/emergency-services";
 
 type LocaleServiceCostViewProps = {
   slug: string;
@@ -366,28 +367,28 @@ export function LocaleServiceCostView({
           </div>
 
           {/* ── Emergency path ──────────────────────────────────────── */}
-          {/* Crawl path to the emergency variant of this service. 27 of the
-              28 `/services/<slug>/emergency` pages had zero inbound internal
-              links sitewide (only `/services/plumbing/emergency` was linked,
-              from the plumbing-diagnostic tool). They were sitemap-only URLs.
-              The cost page is the closest sibling in the same service silo —
-              a visitor comparing prices is exactly who needs to know an urgent
-              option exists — and it is built for all 28 services. */}
-          <div className="mt-6 rounded-3xl border border-amber-200 bg-amber-50 p-6 sm:p-7">
-            <h2 className="text-lg font-extrabold text-[#075985]">
-              {t("emergencyPage.h1", { name: service.title })}
-            </h2>
-            <p className="mt-2 text-sm font-semibold leading-relaxed text-[#475569]">
-              {t("emergencyPage.intro")}
-            </p>
-            <Link
-              href={`/services/${slug}/emergency`}
-              className="mt-4 inline-flex items-center gap-2 rounded-xl border border-amber-300 bg-white px-4 py-2.5 text-sm font-extrabold text-[#B45309] transition hover:border-amber-400 hover:bg-amber-100"
-            >
-              <Siren className="h-4 w-4" />
-              {t("emergencyPage.badge")}
-            </Link>
-          </div>
+          {/* P2-03: only the 12 services with real emergency semantics keep an
+              emergency page. The cost page is the closest sibling in the same
+              service silo — a visitor comparing prices is exactly who needs to
+              know an urgent option exists — so it links the emergency variant
+              where one genuinely exists, and never links a retired 301. */}
+          {isEmergencyService(slug) && (
+            <div className="mt-6 rounded-3xl border border-amber-200 bg-amber-50 p-6 sm:p-7">
+              <h2 className="text-lg font-extrabold text-[#075985]">
+                {t("emergencyPage.h1", { name: service.title })}
+              </h2>
+              <p className="mt-2 text-sm font-semibold leading-relaxed text-[#475569]">
+                {t("emergencyPage.intro")}
+              </p>
+              <Link
+                href={`/services/${slug}/emergency`}
+                className="mt-4 inline-flex items-center gap-2 rounded-xl border border-amber-300 bg-white px-4 py-2.5 text-sm font-extrabold text-[#B45309] transition hover:border-amber-400 hover:bg-amber-100"
+              >
+                <Siren className="h-4 w-4" />
+                {t("emergencyPage.badge")}
+              </Link>
+            </div>
+          )}
 
           {/* ── FAQs (generic + service-specific, localized) ───────── */}
           <div className="mt-10">

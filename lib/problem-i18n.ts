@@ -7,6 +7,11 @@ import { localizeProblemBody } from "@/lib/problem-body-i18n";
  * Returns the problem/diagnostic entry with localized content applied for
  * the given locale. Falls back to English when a locale-specific field is
  * missing, mirroring the pattern used by getLocalizedService().
+ *
+ * P2-16: the optional depth fields (overview / diyChecks / prevention /
+ * costDetail) are localised through `config/problem-body-i18n.ts` — the same
+ * source that carries the native symptom/causes/solutions/whenToCall body — so
+ * an enriched problem page never silently falls back to English depth copy.
  */
 export function getLocalizedProblem(problem: ProblemDetail, locale: Locale): ProblemDetail {
   let localizedProblem = problem;
@@ -33,7 +38,13 @@ export function getLocalizedProblem(problem: ProblemDetail, locale: Locale): Pro
     localizedProblem.symptom,
     localizedProblem.causes,
     localizedProblem.solutions,
-    localizedProblem.whenToCall
+    localizedProblem.whenToCall,
+    {
+      overview: problem.overview,
+      diyChecks: problem.diyChecks,
+      prevention: problem.prevention,
+      costDetail: problem.costDetail
+    }
   );
 
   const faqs = [...localizedProblem.faqs];
@@ -47,6 +58,10 @@ export function getLocalizedProblem(problem: ProblemDetail, locale: Locale): Pro
     causes: localisedBody.causes,
     solutions: localisedBody.solutions,
     whenToCall: localisedBody.whenToCall,
-    faqs: faqs
+    faqs: faqs,
+    overview: localisedBody.overview,
+    diyChecks: localisedBody.diyChecks,
+    prevention: localisedBody.prevention,
+    costDetail: localisedBody.costDetail
   };
 }

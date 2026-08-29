@@ -97,6 +97,33 @@ function checkProblem(slug: string) {
       }
     }
 
+    // 3b. P2-16 depth fields — where the English record carries them, the
+    // localized body must too (no silent English fallback on enriched pages).
+    if (problem.overview) {
+      if (!lp.overview) push(slug, locale, "overview", "English depth copy present but no native overview");
+      else if (lp.overview === problem.overview) push(slug, locale, "overview", "falls back to English");
+      else if (lp.overview.length < min[locale].symptom) push(slug, locale, "overview", `too short (${lp.overview.length} chars)`);
+    }
+    if (problem.diyChecks?.length) {
+      if (!lp.diyChecks?.length) push(slug, locale, "diyChecks", "English depth copy present but no native diyChecks");
+      else if (JSON.stringify(lp.diyChecks) === JSON.stringify(problem.diyChecks)) push(slug, locale, "diyChecks", "falls back to English");
+      else lp.diyChecks.forEach((item, i) => {
+        if (item.length < min[locale].listItem) push(slug, locale, `diyChecks[${i}]`, `too short (${item.length} chars)`);
+      });
+    }
+    if (problem.prevention?.length) {
+      if (!lp.prevention?.length) push(slug, locale, "prevention", "English depth copy present but no native prevention");
+      else if (JSON.stringify(lp.prevention) === JSON.stringify(problem.prevention)) push(slug, locale, "prevention", "falls back to English");
+      else lp.prevention.forEach((item, i) => {
+        if (item.length < min[locale].listItem) push(slug, locale, `prevention[${i}]`, `too short (${item.length} chars)`);
+      });
+    }
+    if (problem.costDetail) {
+      if (!lp.costDetail) push(slug, locale, "costDetail", "English depth copy present but no native costDetail");
+      else if (lp.costDetail === problem.costDetail) push(slug, locale, "costDetail", "falls back to English");
+      else if (lp.costDetail.length < min[locale].costRange) push(slug, locale, "costDetail", `too short (${lp.costDetail.length} chars)`);
+    }
+
     // 4 + 5. FAQ duplicates + English leakage, on the final rendered list.
     const faqQs = lp.faqs.map((f) => norm(f.q));
     const faqAnswers = lp.faqs.map((f) => f.a);

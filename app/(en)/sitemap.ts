@@ -16,6 +16,7 @@ import { toolsList } from "@/config/tools-data";
 import { TOOLS_INDEX_PATH, toolLocaleUrls } from "@/config/tools-i18n";
 import { slugify, DEFAULT_CONTENT_DATE } from "@/lib/utils";
 import { hasSpecialtyLocaleContent } from "@/config/specialty-locale-content";
+import { isEmergencyService } from "@/config/emergency-services";
 
 const baseUrl = "https://www.klservisrumah.my";
 
@@ -146,7 +147,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: `/zh/services/${service.slug}`, priority: 0.9, languages: { en: `/services/${service.slug}`, ms: `/ms/services/${service.slug}`, zh: `/zh/services/${service.slug}` } },
     { path: `/near-me/${service.slug}`, priority: 0.86 },
     { path: `/services/${service.slug}/cost`, priority: 0.88 },
-    { path: `/services/${service.slug}/emergency`, priority: 0.86 },
+    // P2-03: only the 12 services with real emergency semantics ship an
+    // emergency page — the retired 17 are 301'd (middleware) and must not be
+    // advertised in the sitemap.
+    ...(isEmergencyService(service.slug)
+      ? [{ path: `/services/${service.slug}/emergency`, priority: 0.86 }]
+      : []),
     ...service.subServices.map((sub) => {
       const subSlug = slugify(sub.name);
       // Priority tranche specialties have real MS/ZH twins — emit the full

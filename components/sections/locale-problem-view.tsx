@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { AlertTriangle, CheckCircle2, MessageCircle } from "lucide-react";
+import { AlertTriangle, CheckCircle2, MessageCircle, SearchCheck, ShieldCheck } from "lucide-react";
 import { useLang } from "@/context/lang-context";
 import type { Locale } from "@/lib/i18n";
 import type { ProblemDetail } from "@/config/problem-data";
@@ -20,9 +20,9 @@ type LocaleProblemViewProps = {
 };
 
 const copy = {
-  en: { causes: "Common causes", solutions: "Professional solutions", whenToCall: "When to call a pro", related: "Related service", relatedBody: (title: string) => `This problem usually connects to ${title}. Review service scope, pricing, warranty, and process before booking.`, view: "View", faqs: "FAQs", needFixed: "Need this fixed?", needFixedBody: "Send photos and a short video if safe. We confirm a fixed-price quote before dispatch.", whatsapp: "WhatsApp Diagnosis", estimate: "Estimated professional fix:", urgency: "Urgency", headingSuffix: "— Causes, Fixes & Cost in KL" },
-  ms: { causes: "Punca biasa", solutions: "Penyelesaian profesional", whenToCall: "Bila perlu hubungi pakar", related: "Perkhidmatan berkaitan", relatedBody: (title: string) => `Masalah ini biasanya berkaitan dengan ${title}. Semak skop perkhidmatan, harga, jaminan, dan proses sebelum menempah.`, view: "Lihat", faqs: "Soalan Lazim", needFixed: "Perlu dibaiki?", needFixedBody: "Hantar foto dan video pendek jika selamat. Kami sahkan sebut harga tetap sebelum penghantaran.", whatsapp: "Diagnosis WhatsApp", estimate: "Anggaran pembaikan profesional:", urgency: "Kesegeraan", headingSuffix: "— Punca, Cara Baiki & Kos di KL" },
-  zh: { causes: "常见原因", solutions: "专业解决方案", whenToCall: "何时应联系专业人员", related: "相关服务", relatedBody: (title: string) => `此问题通常与${title}相关。预约前请先了解服务范围、价格、保修与流程。`, view: "查看", faqs: "常见问题", needFixed: "需要维修吗？", needFixedBody: "如安全的话，请发送照片和简短视频。我们会在派工前确认固定价报价。", whatsapp: "WhatsApp 诊断", estimate: "专业维修预估费用：", urgency: "紧急程度", headingSuffix: "— 原因、修复方法与吉隆坡费用" }
+  en: { causes: "Common causes", solutions: "Professional solutions", whenToCall: "When to call a pro", related: "Related service", relatedBody: (title: string) => `This problem usually connects to ${title}. Review service scope, pricing, warranty, and process before booking.`, view: "View", faqs: "FAQs", needFixed: "Need this fixed?", needFixedBody: "Send photos and a short video if safe. We confirm a fixed-price quote before dispatch.", whatsapp: "WhatsApp Diagnosis", estimate: "Estimated professional fix:", urgency: "Urgency", headingSuffix: "— Causes, Fixes & Cost in KL", diyChecks: "Safe DIY checks first", prevention: "How to prevent it", costDetail: "What affects the cost" },
+  ms: { causes: "Punca biasa", solutions: "Penyelesaian profesional", whenToCall: "Bila perlu hubungi pakar", related: "Perkhidmatan berkaitan", relatedBody: (title: string) => `Masalah ini biasanya berkaitan dengan ${title}. Semak skop perkhidmatan, harga, jaminan, dan proses sebelum menempah.`, view: "Lihat", faqs: "Soalan Lazim", needFixed: "Perlu dibaiki?", needFixedBody: "Hantar foto dan video pendek jika selamat. Kami sahkan sebut harga tetap sebelum penghantaran.", whatsapp: "Diagnosis WhatsApp", estimate: "Anggaran pembaikan profesional:", urgency: "Kesegeraan", headingSuffix: "— Punca, Cara Baiki & Kos di KL", diyChecks: "Pemeriksaan DIY yang selamat dahulu", prevention: "Cara mencegahnya", costDetail: "Apa yang mempengaruhi kos" },
+  zh: { causes: "常见原因", solutions: "专业解决方案", whenToCall: "何时应联系专业人员", related: "相关服务", relatedBody: (title: string) => `此问题通常与${title}相关。预约前请先了解服务范围、价格、保修与流程。`, view: "查看", faqs: "常见问题", needFixed: "需要维修吗？", needFixedBody: "如安全的话，请发送照片和简短视频。我们会在派工前确认固定价报价。", whatsapp: "WhatsApp 诊断", estimate: "专业维修预估费用：", urgency: "紧急程度", headingSuffix: "— 原因、修复方法与吉隆坡费用", diyChecks: "先做安全的自助检查", prevention: "如何预防", costDetail: "影响费用的因素" }
 } as const;
 
 export function LocaleProblemView({ problem, service }: LocaleProblemViewProps) {
@@ -48,11 +48,57 @@ export function LocaleProblemView({ problem, service }: LocaleProblemViewProps) 
             </h1>
             <p className="mt-4 text-base font-semibold leading-relaxed text-[#475569]">{localizedProblem.symptom}</p>
             <p className="mt-3 text-sm font-extrabold text-[#0EA5E9]">{t.estimate} {localizedProblem.costRange}</p>
+            {localizedProblem.overview && (
+              <p className="mt-4 rounded-2xl border border-slate-100 bg-white p-4 text-sm font-semibold leading-relaxed text-[#475569] shadow-xs">
+                {localizedProblem.overview}
+              </p>
+            )}
           </div>
 
           <Section title={t.causes} items={localizedProblem.causes} />
           <Section title={t.solutions} items={localizedProblem.solutions} />
+
+          {localizedProblem.diyChecks?.length ? (
+            <div className="rounded-3xl border border-slate-100 bg-white p-6 shadow-xs sm:p-8">
+              <h2 className="mb-5 flex items-center gap-2 text-2xl font-extrabold text-[#075985]">
+                <SearchCheck className="h-6 w-6 text-[#0EA5E9]" /> {t.diyChecks}
+              </h2>
+              <ol className="grid grid-cols-1 gap-3">
+                {localizedProblem.diyChecks.map((item, index) => (
+                  <li key={item} className="flex items-start gap-3 rounded-2xl bg-slate-50 p-4 text-sm font-semibold text-[#475569]">
+                    <span className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#E0F2FE] text-xs font-extrabold text-[#0284C7]">
+                      {index + 1}
+                    </span>
+                    {item}
+                  </li>
+                ))}
+              </ol>
+            </div>
+          ) : null}
+
           <Section title={t.whenToCall} items={localizedProblem.whenToCall} />
+
+          {localizedProblem.costDetail && (
+            <div className="rounded-3xl border border-amber-200 bg-amber-50 p-6 shadow-xs sm:p-8">
+              <h2 className="text-2xl font-extrabold text-[#075985]">{t.costDetail}</h2>
+              <p className="mt-3 text-sm font-semibold leading-relaxed text-[#475569]">{localizedProblem.costDetail}</p>
+            </div>
+          )}
+
+          {localizedProblem.prevention?.length ? (
+            <div className="rounded-3xl border border-slate-100 bg-white p-6 shadow-xs sm:p-8">
+              <h2 className="mb-5 flex items-center gap-2 text-2xl font-extrabold text-[#075985]">
+                <ShieldCheck className="h-6 w-6 text-emerald-500" /> {t.prevention}
+              </h2>
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                {localizedProblem.prevention.map((item) => (
+                  <div key={item} className="flex items-start gap-3 rounded-2xl bg-slate-50 p-4 text-sm font-semibold text-[#475569]">
+                    <ShieldCheck className="mt-0.5 h-5 w-5 shrink-0 text-emerald-500" />{item}
+                  </div>
+                ))}
+              </div>
+            </div>
+          ) : null}
 
           <div className="rounded-3xl border border-slate-100 bg-white p-6 shadow-xs sm:p-8">
             <h2 className="text-2xl font-extrabold text-[#075985]">{t.related}</h2>
