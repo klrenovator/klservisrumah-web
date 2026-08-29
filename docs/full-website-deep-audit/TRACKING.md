@@ -47,7 +47,7 @@
 | P0 | Fix Part 2 P2-C2 — `content.relatedReading` literal key renders as H2 on 224 pages | ✅ DONE (Fix Wave 1) |
 | P0 | Fix Part 2 P2-C3 — 174 generic "content pod" pages (commercial/residential/process/answers/brands/top/seasonal/guides) | ✅ DONE (Wave 4 batch 1: 58 commercial+residential pods; Wave 5 batch 2: 88 brands+compare+guides+maintenance+seasonal+top pods — all 146/174 hand-authored; process+answers carry real service data) |
 | P0 | Fix Part 2 P2-C4 — Replace pair-copy generator; authored local copy for area×service | ⏳ PENDING |
-| P1 | Fix Part 2 P2-16/17/18 — Expand problems/cost; rewrite or retire emergency pages | ⏳ PENDING |
+| P1 | Fix Part 2 P2-16/17/18 — Expand problems/cost; rewrite or retire emergency pages | ✅ DONE (Fix Wave 6 — P2-18 was CF-4; P2-17/03: 12 emergency pages rewritten per-service + 17 retired 301; P2-16: 15 thinnest problems enriched EN/MS/ZH) |
 | P1 | Fix Part 2 P2-19 — Real per-article blog dates (216 posts / 5 dates) | ⏳ PENDING |
 | P1 | Fix Part 2 P2-21 — Reviews: verify + Review schema or drop AggregateRating | ⏳ PENDING (owner) |
 | P1 | Fix Part 2 P2-22 — Add outbound citations (brands/authority/manufacturer) | ⏳ PENDING |
@@ -70,6 +70,7 @@
 | 2026-08-28 | **BP-1 phase 1** — Part 1 Critical #1/#2: 1,073 `/areas/*/*/near-me` + 1,073 `/suburbs/<twin>/*` retired to 301s; SSG stopped; sitemap 4,739→3,666; HTML 5,815→3,669; near-me Q&A absorbed into parent (FAQPage 3→6); new `audit:bp1` gate + `gen:bp1-map` | ✅ See `BP-1-PHASE-1-REPORT.md` |
 | 2026-08-28 | **Fix Wave 3** — P5-04 (@id-reference org architecture: full node homepage-only, GeoCircle areaServed, catalog dedup on 1,508 local + 773 variant pages, /pricing −95%, tools hubs −19 KB each; corpus JSON-LD 62.2→14.5 MB, City nodes 220,616→95) + P5-06 (HowTo retired) + P5-07 (Speakable orphans) + P5-10 (+256 breadcrumbed pages) + new `audit:schema-size` gate (≤8 KB non-FAQ ceiling enforced) | ✅ See `FIX-WAVE-3-REPORT.md` |
 | 2026-08-29 | **CF-4** — cost pages → canonical rate-book "harga" guides (29 pages: 222 rate-book rows, market baselines, worked example, methodology, measurement guide, localized job process + FAQs; words 543→1,373 mean, all ≥1,000) + `/estimate` hub & 22 generics NOINDEX (sitemap −23, IndexNow −23, seo-head gate extended) + aircon rateCopy 7×3 + `&#x27;` cleanText fix (part5 FAQ false positives 5→0) | ✅ See `PART-5-AUDIT-REPORT.md` §5.5 implementation log |
+| 2026-08-29 | **Fix Wave 6** — P2-17/P2-03: emergency pages rewritten per-service for the 12 real-emergency services (`config/emergency-services.ts`, EN/MS/ZH) and the 17 fake-emergency pages retired via middleware 301 + `generateStaticParams` + sitemap + cost-card gate (sitemap 3,643→3,626). P2-16: 15 thinnest problem pages enriched with `overview`/`diyChecks`/`prevention`/`costDetail` (EN/MS/ZH, native) + `audit:problem-i18n` extended to enforce native depth parity. All gates PASS (3,652 HTML; 320,291 assertions × 0 failures) | ✅ See `FIX-WAVE-6-REPORT.md` |
 
 ---
 
@@ -98,50 +99,33 @@
 
 ## ⭐ NEXT SESSION MUST CONTINUE HERE
 
-**All 5 audit parts are complete. Fix Wave 1, Fix Wave 2, BP-1 phase 1,
-Fix Wave 3 and CF-4 are complete** — see `FIX-WAVE-1-REPORT.md`,
-`FIX-WAVE-2-REPORT.md`, `BP-1-PHASE-1-REPORT.md`, `FIX-WAVE-3-REPORT.md` and
-`PART-5-AUDIT-REPORT.md` §5.5 implementation log. Fix Wave 3 closed
-**P5-04 (schema slim), P5-06 (HowTo), P5-07 (Speakable) and P5-10
-(breadcrumbs, EN)**; CF-4 closed **the cost-page/rate-book merge (§5.4-B2)
-and the `/estimate/*` NOINDEX decision (§5.5-CF-4)**.
+**All 5 audit parts are complete; Fix Wave 1–6, BP-1 phase 1 and CF-4 are
+complete.** Fix Wave 6 (this session) closed the last unblocked Part 2 queue:
+**P2-17/P2-03** (12 real-emergency pages rewritten per-service; 17 fake
+emergencies retired 301) and **P2-16 first tranche** (15 thinnest problem
+pages enriched EN/MS/ZH). See `FIX-WAVE-6-REPORT.md`.
 
-1. **BP-1 phase 2 is still blocked on owner data:** the demand-backed
-   keep-list for the remaining **1,073** `/areas/<area>/<svc>` pairs (plus the
-   435 kept suburb pages). Keep only areas with genuine demand or a unique
-   local signal, and add authored local copy (landmarks, condo/JMB rules,
-   real jobs) to the kept set. **Blocked on GSC data (owner)** — Part 1 §1.3
-   is explicit: *do not delete on low traffic alone.*
-2. **Fix Wave 4 done:** P3-01 ✅ (localized DirectAnswer notes +
-   `audit:trilingual-leak`), P3-07 ✅ (price/count/warranty reconciliation;
-   owner stat verification stays ⏳), P2-C3 **batch 1** ✅ (58 commercial +
-   residential pods hand-authored with trilingual parity behind the new
-   `audit:content-pods` prebuild gate).
-3. **P2-C3 batch 2 complete (Fix Wave 5):** all 88 remaining pod pages
-   hand-authored (brands 32, compare 18, guides 10, maintenance 10, seasonal 8,
-   top 10) with 263 MS/ZH bullet translations. **Next unblocked work —
-   P2-16/17/18:** emergency-page depth, problem-page expansion. **P2-C4** stays
-   tied to the BP-1 phase-2 owner/GSC keep-set decision — never mass-generate
-   location pages.
-4. **CI patch still unapplied (retried this session — same rejection):**
-   `git apply docs/full-website-deep-audit/BP-1-ci-audit-bp1.patch` adds
-   **both** `audit:bp1` and `audit:schema-size` as post-build CI steps
-   (patch refreshed this session to include the Fix Wave 3 gate). The
-   GitHub App token still lacks the `workflows` permission — the push was
-   rejected on 2026-08-28 (first attempt) and again this session (second
-   attempt), and the workflow change was reverted both times so the branch
-   stays pushable. Retry on any session whose token has it, or apply from
-   an owner account. The source-level BP-1 half already runs in CI via
-   `prebuild`; the schema-size gate runs locally via `npm run
-   audit:schema-size` until the patch lands.
-5. **Post-deploy for BP-1 (owner/SEO):** GSC + Bing — confirm the 2,146 URLs
-   move to *"Page with redirect"*; resubmit `/sitemap.xml` (3,666 URLs);
-   IndexNow-ping the surviving `/areas/<area>/<svc>` set; watch for the
-   normal 1–2 week dip.
-6. **Still-missing access (blockers to re-request from owner):** Google Search
-   Console, live HTTP/edge check (www 301 + trailing-slash 301s — Part 1 #3 and
-   #7), CWV/CrUX, GBP + review source verification, owner fact confirmations
-   (reviews count, founding year, staff, stats), photography assets (P5-12).
+1. **P2-16 remainder (unblocked, next candidate):** extend the enrichment to
+   the rest of the **top-30 problems by demand** — the audit's stated 700+ word
+   target. The 15 thinnest are done; ranking the next 15 needs the owner's GSC
+   query data (same blocker as BP-1 phase 2). Without GSC, fall back to
+   urgency-weighted service prominence and say so in the report.
+2. **P2-19 (unblocked, independent):** real per-article blog dates +
+   per-article sitemap `lastMod` — 216 posts currently share 5 dates.
+3. **P2-22 (owner decision):** add outbound citations to brands/authorities.
+4. **BP-1 phase 2 / P2-C4 still blocked on owner GSC keep-set** — do **not**
+   add more location pages; do **not** delete local pages on low traffic alone.
+5. **CI patch still unapplied:** `git apply docs/full-website-deep-audit/BP-1-ci-audit-bp1.patch`
+   adds `audit:bp1` + `audit:schema-size` as post-build CI steps. The GitHub
+   App token still lacks the `workflows` permission — retry on any session
+   whose token has it, or apply from an owner account. Source-level BP-1 half
+   already runs in CI via `prebuild`.
+6. **Post-deploy (owner/SEO):** confirm the 2,146 BP-1 URLs and the 17 retired
+   emergency URLs move to *"Page with redirect"*; resubmit `/sitemap.xml`
+   (3,626 URLs).
+7. **Still-missing access (re-request from owner):** GSC, live HTTP/edge check,
+   CWV/CrUX, GBP + review verification, owner fact confirmations (reviews,
+   founding year, staff, stats), photography (P5-12).
 
 ---
 

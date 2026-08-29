@@ -13,20 +13,31 @@ export function localizeProblemBody(
   englishSymptom: string,
   englishCauses: string[],
   englishSolutions: string[],
-  englishWhenToCall: string[]
+  englishWhenToCall: string[],
+  englishDepth?: {
+    overview?: string;
+    diyChecks?: string[];
+    prevention?: string[];
+    costDetail?: string;
+  }
 ): {
   symptom: string;
   causes: string[];
   solutions: string[];
   whenToCall: string[];
   localFaq?: { q: string; a: string };
+  overview?: string;
+  diyChecks?: string[];
+  prevention?: string[];
+  costDetail?: string;
 } {
   if (locale === "en") {
     return {
       symptom: englishSymptom,
       causes: englishCauses,
       solutions: englishSolutions,
-      whenToCall: englishWhenToCall
+      whenToCall: englishWhenToCall,
+      ...(englishDepth ?? {})
     };
   }
 
@@ -37,7 +48,8 @@ export function localizeProblemBody(
       symptom: englishSymptom,
       causes: englishCauses,
       solutions: englishSolutions,
-      whenToCall: englishWhenToCall
+      whenToCall: englishWhenToCall,
+      ...(englishDepth ?? {})
     };
   }
 
@@ -46,6 +58,10 @@ export function localizeProblemBody(
     causes: localised.causes,
     solutions: localised.solutions,
     whenToCall: localised.whenToCall,
-    localFaq: localised.localFaq
+    localFaq: localised.localFaq,
+    overview: localised.overview,
+    diyChecks: localised.diyChecks,
+    prevention: localised.prevention,
+    costDetail: localised.costDetail
   };
 }

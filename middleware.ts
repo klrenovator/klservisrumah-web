@@ -3,6 +3,7 @@ import type { NextRequest } from "next/server";
 import { DEDICATED_TOOL_BY_SERVICE } from "@/lib/estimator/service-estimator";
 import { PROBLEM_CANONICAL_REDIRECTS } from "@/config/problem-canonical";
 import { bp1RedirectTarget } from "@/lib/bp1-consolidation";
+import { RETIRED_EMERGENCY_SERVICE_SLUGS } from "@/config/emergency-services";
 
 const SUPPORTED_LOCALES = ["ms", "zh"] as const;
 
@@ -56,6 +57,24 @@ const PROBLEM_REDIRECTS: Record<string, string> = Object.fromEntries(
     [`/ms/problems/${from}`, `/ms/problems/${to}`],
     [`/zh/problems/${from}`, `/zh/problems/${to}`],
   ]),
+);
+
+/**
+ * P2-03 / P2-17 (Fix Wave 6) — retired emergency pages.
+ *
+ * `/services/<svc>/emergency` is kept only for the 12 services with real
+ * emergency semantics (plumbing, electrical, water-heater, locksmith,
+ * roof-repair, window-repair, door, autogate, cctv, waterproofing, ceiling,
+ * glass-aluminium). The other 17 ("Urgent Complete House Renovation",
+ * "Urgent Epoxy Flooring", "Urgent Skim Coat"…) are keyword-slot fillers with
+ * near-zero genuine emergency demand, so they 301 here to the service page —
+ * the same real-301 pattern as BP-1 phase 1 — and are no longer generated.
+ */
+const RETIRED_EMERGENCY_REDIRECTS: Record<string, string> = Object.fromEntries(
+  RETIRED_EMERGENCY_SERVICE_SLUGS.map((slug) => [
+    `/services/${slug}/emergency`,
+    `/services/${slug}`
+  ])
 );
 
 /**
@@ -128,6 +147,16 @@ export async function middleware(request: NextRequest) {
   if (problemTarget) {
     const targetUrl = request.nextUrl.clone();
     targetUrl.pathname = problemTarget;
+    return NextResponse.redirect(targetUrl, 301);
+  }
+
+  // Retired emergency page → its service page (P2-03). Path-only target so the
+  // redirect never moves a visitor between www and non-www.
+  const emergencyTarget = RETIRED_EMERGENCY_REDIRECTS[pathname];
+  if (emergencyTarget) {
+    const targetUrl = request.nextUrl.clone();
+    targetUrl.pathname = emergencyTarget;
+    targetUrl.search = "";
     return NextResponse.redirect(targetUrl, 301);
   }
 

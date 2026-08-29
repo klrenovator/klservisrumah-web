@@ -7,6 +7,47 @@ Master references: `📄 MASTER_AI_AGENT_INSTRUCTIONS.md` · `KLServisRumah-Comp
 
 ---
 
+## Session — 2026-08-29 — Fix Wave 6 (P2-17/P2-03 emergency rewrite+retire; P2-16 problem depth)
+
+**Scope:** The last unblocked Part 2 priority queue — `P2-16/17/18`. P2-18 (cost) was already
+closed by CF-4; this session closed P2-17 (emergency-page depth), P2-03 (emergency retirement)
+and the first tranche of P2-16 (problem-page depth).
+
+**Completed ✅**
+- **P2-03 classification:** new `config/emergency-services.ts` — 12 services with real emergency
+  semantics kept (`plumbing`, `electrical`, `water-heater`, `locksmith`, `roof-repair`,
+  `window-repair`, `door`, `autogate`, `cctv`, `waterproofing`, `ceiling`, `glass-aluminium`);
+  17 fake-emergency services retired (`painting`, `handyman`, `house-renovation`, `ceiling-fan`,
+  `lighting`, `tiling`, `plaster-ceiling`, `skim-coat`, `flooring`, `epoxy-flooring`,
+  `kitchen-cabinet`, `carpentry`, `welding`, `aircon`, `kitchen-renovation`, `bathroom-renovation`,
+  `awning-installation`).
+- **P2-17 rewrite:** `locale-service-emergency-view.tsx` rebuilt from the fixed 3-step template to
+  per-service, per-locale content — what counts as an emergency (5), what to do right now (4),
+  when to call a pro (4), emergency cost factors (1), 4 service-specific FAQs (FAQPage schema),
+  6 sibling emergency inlinks from the kept set, WhatsApp CTA. All EN/MS/ZH copy in
+  `config/emergency-services.ts`.
+- **Retirement mechanics:** `middleware.ts` `RETIRED_EMERGENCY_REDIRECTS` 301 →
+  `/services/<slug>` (BP-1 pattern); route `generateStaticParams` → 12 kept only
+  (`dynamicParams=false`); sitemap + cost-page emergency card gated on `isEmergencyService`.
+- **P2-16 tranche 1:** new optional `overview`/`diyChecks`/`prevention`/`costDetail` fields on
+  `ProblemDetail`; 15 thinnest problems (≤233 words, the Part 2 §2.5 examples) enriched in
+  EN + native MS/ZH (`config/problem-body-i18n.ts`); rendered in both problem views;
+  `scripts/validate-problem-i18n.ts` extended so enriched pages can never fall back to English.
+
+**Verification (all green):** lint 0/0 · type-check PASS · build 3,652 HTML (middleware 35.6 kB) ·
+audit:bp1 PASS · audit:schema-size PASS · audit:html 0 fatal/0 warnings · audit:links 277,170 + 53
+source, 0 broken · audit:seo-head PASS (3,626 indexable = sitemap, 26 noindex, 0 dupes) ·
+audit:i18n 1,183 keys × 3 · audit:problem-i18n 74 keep-URLs × ms/zh · audit:location-similarity
+PASS · seo:audit PASS · test:estimators 320,291 × 0 failures · npm audit 0 vulns.
+
+**Next:** P2-16 remainder (top-30 by demand — needs GSC; else urgency-weighted fallback) or
+P2-19 (real per-article blog dates + sitemap lastMod, unblocked). BP-1 phase 2 / P2-C4 blocked on
+owner GSC keep-set.
+
+**Report:** `docs/full-website-deep-audit/FIX-WAVE-6-REPORT.md`.
+
+---
+
 ## Session — 2026-08-29 — CF-4 (cost pages → rate-book guides; `/estimate/*` NOINDEX)
 
 **Scope:** Part 5 §5.5-CF-4 (P1) — the "pricing intent split 4 ways" conflict family.

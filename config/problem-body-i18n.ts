@@ -13,6 +13,11 @@ export type LocalizedProblemBody = {
   solutions: string[];
   whenToCall: string[];
   localFaq?: { q: string; a: string };
+  /** P2-16 depth fields — native MS/ZH for the enriched problem pages. */
+  overview?: string;
+  diyChecks?: string[];
+  prevention?: string[];
+  costDetail?: string;
 };
 
 const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
@@ -134,7 +139,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Bagaimana untuk menghalang acuan di siling bilik mandi?",
       a: "Gunakan kipas ekzos semasa dan selepas mandi, pastikan pengudaraan baik, dan sapukan cat anti-kulat."
-    }
+    },
+    overview: "Kulat kondensasi terbentuk apabila udara panas lembap bertemu siling sejuk — biasanya bilik mandi, dapur dan bilik berhawa dingin dengan aliran udara lemah. Ia tidak semestinya kebocoran, tetapi mesti diperiksa, kerana kebocoran tersembunyi di belakang papan menghasilkan bintik hitam yang sama.",
+    diyChecks: [
+      "Periksa sama ada kulat mengikut tempat paling sejuk atau laluan air yang jelas",
+      "Rasa papan — lembut atau lembap menandakan kebocoran dan bukan kondensasi",
+      "Hidupkan kipas ekzos dan lihat sama ada kondensasi hilang",
+      "Cari paip AC menitis atau punca wap bilik mandi"
+    ],
+    prevention: [
+      "Hidupkan kipas ekzos semasa dan selepas mandi",
+      "Ventilasi bilik berhawa dingin sekali-sekala",
+      "Guna primer dan cat anti-kulat di bilik lembap",
+      "Baiki kebocoran perlahan atau paip AC menitis dengan segera"
+    ],
+    costDetail: "Pembersihan dan cat semula anti-kulat ialah hujung rendah (dari RM180). Jika papan lembut atau kulat terbenam, penggantian papan naik ke RM1,000. Kami sahkan sama ada punca kelembapan atau kebocoran sebelum sebut harga.",
   },
   "bathroom-leak-upper-floor": {
     symptom: "Kebocoran dari bilik mandi tingkat atas menyebabkan kesan air di siling atau dinding bawah.",
@@ -244,7 +263,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Berapa kos untuk menggantikan elemen pemanas air?",
       a: "Kos biasanya antara RM150–RM350 bergantung pada jenama dan model pemanas."
-    }
+    },
+    overview: "Pemanas air segera yang kekal sejuk biasanya ada elemen pemanas terbakar, termostat gagal, penapis masuk tersumbat, atau air lock. Ia pembaikan sensitif keselamatan kerana unit menggabungkan air dan elektrik, jadi ia tidak boleh dibuka oleh bukan juruelektrik.",
+    diyChecks: [
+      "Periksa suis pengasing dan pemutus yang membekalkan pemanas",
+      "Sahkan peralatan lain pada litar sama masih berfungsi",
+      "Periksa sama ada aliran air lebih lemah daripada biasa (penapis tersumbat)",
+      "Jangan buka unit — elemen dan pendawaian hidup"
+    ],
+    prevention: [
+      "Periksa elemen dan termostat setiap 2 tahun",
+      "Bersihkan penapis masuk apabila aliran menurun",
+      "Baiki trip atau kelipan dengan segera",
+      "Ganti unit pada hujung jangka hayat"
+    ],
+    costDetail: "Penggantian elemen ialah hujung rendah (dari RM150). Termostat gagal atau penggantian unit penuh naik ke RM680. Kami sebut harga alat ganti dan upah sebelum mula, dan sentiasa asingkan air dan kuasa dahulu.",
   },
   "ceiling-fan-wobbling": {
     symptom: "Kipas siling bergetar atau bergoyang semasa berputar.",
@@ -254,7 +287,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Bolehkah anda membaiki kipas siling yang bergetar?",
       a: "Ya. Kami boleh menyeimbangkan bilah, mengetatkan skru atau menggantikan motor dalam masa 45–90 minit."
-    }
+    },
+    overview: "Kipas siling yang bergegar biasanya tidak seimbang — bilah tidak sejajar, kurungan pemasangan longgar, atau kipas digantung pada cangkuk siling plaster yang tidak diperkukuh. Jika dibiarkan, pergerakan melonggarkan pemasangan dan boleh merosakkan siling.",
+    diyChecks: [
+      "Periksa semua skru bilah ketat dan bilah tidak bengkok",
+      "Bersihkan habuk pada bilah — ia mengubah berat bilah",
+      "Sahkan kipas tidak bergegar ketika kelajuan rendah",
+      "Lihat canopy atau kurungan pemasangan longgar di siling"
+    ],
+    prevention: [
+      "Ketatkan skru bilah setiap 6 bulan",
+      "Guna cangkuk kipas diperkukuh, terutama pada siling plaster",
+      "Bersihkan bilah secara berkala untuk elak ketidakseimbangan",
+      "Periksa bearing pada bunyi luar biasa pertama"
+    ],
+    costDetail: "Pengimbangan bilah dan pengetatan kurungan ialah hujung rendah (dari RM90). Motor haus atau cangkuk diperkukuh yang tiada lebih mahal, sehingga RM380 atau ganti kipas. Kami sahkan di tapak.",
   },
   "hollow-tiles-floor": {
     symptom: "Jubin lantai berbunyi kosong apabila diketuk, menunjukkan tidak melekat dengan baik.",
@@ -274,7 +321,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Adakah lantai SPC sesuai untuk kawasan lembap seperti dapur?",
       a: "Ya, jika dipasang dengan betul dan ada ruang pengembangan yang mencukupi. Kelembapan tinggi boleh menyebabkan masalah jika tidak dikawal."
-    }
+    },
+    overview: "Tepi SPC atau vinil yang terangkat hampir selalu berpunca daripada kelembapan atau pergerakan — subfloor tidak kering atau tidak rata, jurang pengembangan terlalu ketat, atau papan dipasang di bawah perabot berat. Penyelesaiannya ialah membetulkan punca, bukan gam semula papan, jika tidak ia akan terangkat lagi.",
+    diyChecks: [
+      "Tekan tepi yang terangkat — adakah air atau lembapan muncul?",
+      "Periksa sama ada skirting menyemat papan dan menghilangkan jurang pengembangan",
+      "Cari tanda lembap di dinding, pintu atau dapur",
+      "Perhatikan sama ada yang terangkat satu papan atau keseluruhan barisan"
+    ],
+    prevention: [
+      "Sentiasa uji kelembapan subfloor sebelum pemasangan",
+      "Tinggalkan jurang pengembangan yang betul di dinding",
+      "Guna pad felt di bawah perabot berat",
+      "Lap tumpahan segera, terutama di sambungan"
+    ],
+    costDetail: "Pasang semula beberapa papan ialah hujung rendah (dari RM120). Jika subfloor perlu dikeringkan, diratakan atau diberi lapisan kalis lembapan, kerja naik ke RM950. Kami periksa subfloor dahulu supaya pembaikan benar-benar tahan.",
   },
   "clogged-gutter-leaking": {
     symptom: "Longkang bumbung tersumbat menyebabkan air melimpah dan meresap ke dinding.",
@@ -284,7 +345,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Berapa kerap longkang bumbung perlu dibersihkan?",
       a: "Kami sarankan membersihkan longkang sekurang-kurangnya 2 kali setahun, atau lebih kerap jika ada pokok berhampiran."
-    }
+    },
+    overview: "Gutter melimpah dalam hujan lebat Malaysia apabila daun dan serpihan menyumbat saluran atau paip turun, dan bahagian yang melendut membiarkan air bertakung dan bukannya mengalir. Limpahan kemudian mengalir turun faschia dan dinding, dan boleh meresap masuk ke siling.",
+    diyChecks: [
+      "Dari aras tanah, lihat air melimpah di tepi gutter ketika hujan",
+      "Periksa tumbuhan, daun atau lumut tumbuh dalam saluran",
+      "Cari kurungan gutter yang melendut atau tertanggal",
+      "Bersihkan penyumbatan yang kelihatan di lubang paip turun"
+    ],
+    prevention: [
+      "Bersihkan gutter sebelum dan selepas setiap monsun",
+      "Pasang pengadang daun jika pokok menaungi bumbung",
+      "Ketatkan semula kurungan apabila gutter mula melendut",
+      "Potong dahan yang menggugurkan daun ke bumbung"
+    ],
+    costDetail: "Pembersihan dan pelarasan kecil ialah hujung rendah (dari RM280). Mengganti bahagian melendut, membaiki faschia atau menambah pengadang naik ke RM1,200. Kami sebut harga selepas pemeriksaan aras bumbung.",
   },
   "kitchen-cabinet-door-misaligned": {
     symptom: "Pintu kabinet dapur tidak sejajar, sukar ditutup atau terbuka sendiri.",
@@ -294,7 +369,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Bolehkah anda melaraskan pintu kabinet yang tidak sejajar?",
       a: "Ya. Kami boleh melaraskan engsel dan penjajaran dalam masa 30–60 minit untuk kebanyakan kes."
-    }
+    },
+    overview: "Pintu dapur yang tergantung tidak rata atau tidak mahu tertutup biasanya engsel haus atau kabinet yang beralih dengan kelembapan dan beban. Ia cepat dibaiki pada engsel, tetapi jika dibiarkan pintu bergesel, engsel lebih cepat haus, dan cangkuk tidak lagi memegang.",
+    diyChecks: [
+      "Periksa engsel mana yang longgar dan ketatkan skrunya",
+      "Lihat sama ada pintu tersangkut pada pintu sebelah atau bingkai",
+      "Uji aksi soft-close — damper mati menyebabkan pintu menghentak",
+      "Periksa aras barisan kabinet untuk pergerakan bingkai"
+    ],
+    prevention: [
+      "Ketatkan skru engsel semasa membersih dapur",
+      "Ganti damper haus sebelum pintu mula menghentak",
+      "Jangan gantung barang berat pada muka pintu",
+      "Kekalkan kelembapan dapur stabil"
+    ],
+    costDetail: "Pelarasan engsel dan ganti damper ialah hujung murah (dari RM90). Mengukuhkan kabinet yang beralih atau mengganti banyak engsel lebih mahal. Kami sebut harga selepas memeriksa sama ada pelarasan atau pergerakan bingkai.",
   },
   "flickering-downlights": {
     symptom: "Downlight berkelip-kelip atau tidak menyala dengan stabil.",
@@ -324,7 +413,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Bolehkah skim coat yang mengelupas dibaiki tanpa mengganti keseluruhan dinding?",
       a: "Ya. Kami boleh mengikis bahagian yang rosak, membersihkan permukaan dan menyapu skim baharu di kawasan tersebut."
-    }
+    },
+    overview: "Skim coat yang berhabuk atau mengelupas selepas mengecat biasanya telah hilang ikatan — dinding berdebu, bancuhan terlalu cair, atau dicat sebelum sembuh sepenuhnya. Skim semula di atas lapisan gagal tanpa membetulkan permukaan hanya akan mengelupas lagi.",
+    diyChecks: [
+      "Gosok permukaan — jika kapur tertanggal, ikatan telah gagal",
+      "Periksa sama ada pengelupasan setempat atau di seluruh dinding",
+      "Cari lembap atau kondensasi di belakang kawasan gagal",
+      "Uji lekatan cat dengan pita pada tompok yang tidak terjejas"
+    ],
+    prevention: [
+      "Sentiasa primer pada skim yang bersih dan sembuh sebelum mengecat",
+      "Guna agen ikatan pada dinding licin atau yang pernah dicat",
+      "Biarkan skim sembuh sepenuhnya (7–14 hari) sebelum menghias",
+      "Kawal pengudaraan dan kelembapan semasa proses sembuh"
+    ],
+    costDetail: "Kikis dan skim semula kawasan kecil ialah hujung rendah (dari RM120). Skim semula seluruh dinding dan hiasan semula lebih mahal. Kami sahkan kawasan gagal dan substrat sebelum sebut harga.",
   },
   "epoxy-floor-yellowing": {
     symptom: "Lantai epoxy bertukar warna menjadi kuning atau pudar.",
@@ -334,7 +437,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Bolehkah lantai epoxy yang bertukar warna dibaiki?",
       a: "Dalam kebanyakan kes kami boleh mengisar permukaan dan menyapu lapisan baharu. Jika kerosakan teruk, mungkin perlu ganti keseluruhan."
-    }
+    },
+    overview: "Kekuningan pada lantai epoksi baharu hampir selalu berpunca daripada pendedahan UV pada topcoat yang tidak stabil UV — biasa dengan resin aromatik yang digunakan di dalam kemudian terdedah cahaya matahari. Ia tidak bermakna lantai gagal, tetapi ia akan terus menjadi lebih teruk sehingga permukaan disalut semula dengan kemasan stabil UV.",
+    diyChecks: [
+      "Perhatikan kawasan mana yang kekuningan — biasanya hanya zon menghadap matahari",
+      "Uji sama ada permukaan masih keras atau telah lembut atau melekit",
+      "Periksa kesan perabot atau tumpahan kimia di kawasan terjejas",
+      "Elak pelarut keras sehingga jenis kemasan dikenal pasti"
+    ],
+    prevention: [
+      "Tentukan topcoat PU alifatik pada mana-mana kawasan terdedah matahari",
+      "Guna langsir, bidai atau filem tingkap pada tingkap cahaya terus",
+      "Jauhkan lantai daripada kimia kuat",
+      "Salut semula sebelum kekuningan meresap dalam"
+    ],
+    costDetail: "Salut semula dengan topcoat PU stabil UV biasanya di separuh bawah julat RM280–RM1,800 untuk kawasan kecil; pasir penuh dan salut semula lantai besar lebih mahal. Kami sahkan jenis resin dan keluasan sebelum sebut harga.",
   },
   "wardrobe-door-not-closing": {
     symptom: "Pintu almari tidak tertutup dengan betul atau terbuka sendiri.",
@@ -344,7 +461,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Bolehkah anda melaraskan pintu almari yang tidak sejajar?",
       a: "Ya. Kami boleh melaraskan engsel dan penjajaran dalam masa 30–60 minit untuk kebanyakan kes."
-    }
+    },
+    overview: "Pintu almari yang bergesel atau tidak mahu tutup rata biasanya tidak paras — bingkai mendap, engsel haus, atau rak berat menarik kabinet keluar segi. Pelarasan kecil biasanya menyelesaikannya, tetapi jika diabaikan ia menghauskan engsel dan boleh merekah tepi pintu.",
+    diyChecks: [
+      "Buka dan tutup setiap pintu perlahan untuk lihat di mana ia tersangkut dahulu",
+      "Periksa skru engsel dan ketatkan yang longgar",
+      "Guna aras spirit di atas bingkai",
+      "Ringankan rak yang terlalu berat jika pintu mula melendut"
+    ],
+    prevention: [
+      "Jangan lebih muatkan rak atas",
+      "Ketatkan skru engsel semasa membersih",
+      "Laraskan engsel daripada memaksa pintu yang meleding",
+      "Kekalkan kelembapan stabil untuk kurangkan pergerakan kayu"
+    ],
+    costDetail: "Pelarasan dan penjajaran engsel ialah hujung murah (dari RM120). Pintu kayu meleding atau kerja meratakan bingkai lebih mahal. Kami sebut harga selepas memeriksa sama ada kerja pelarasan atau kabinet itu sendiri telah beralih.",
   },
   "door-scraping-floor": {
     symptom: "Pintu mengikis lantai semasa dibuka atau ditutup.",
@@ -354,7 +485,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Bolehkah anda membaiki pintu yang mengikis lantai?",
       a: "Ya. Kami boleh melaraskan engsel, mengurangkan ketinggian pintu atau menggantikan engsel dalam masa 30–60 minit."
-    }
+    },
+    overview: "Pintu yang menggeser lantai biasanya membengkak akibat kelembapan, jatuh pada engsel longgar, atau kemasan lantai telah menaikkannya. Jika dibiarkan, geseran menghauskan bahagian bawah pintu, menegangkan engsel, dan akhirnya selak tidak sejajar sehingga pintu tidak lagi menutup dengan selamat.",
+    diyChecks: [
+      "Periksa skru engsel dan ketatkan yang longgar",
+      "Lihat sama ada jurang sekata di sekeliling atau ketat di satu sudut",
+      "Periksa bengkak atau kesan lembap di tepi bawah",
+      "Cuba selak — jika ia terlepas strike plate, pintu telah jatuh"
+    ],
+    prevention: [
+      "Guna penyahlembap atau kipas di bilik yang sangat lembap",
+      "Ketatkan skru engsel dua kali setahun",
+      "Guna door sweep dan elak memotong terlalu banyak di bahagian bawah",
+      "Cat atau sapu pengedap pada tepi bawah untuk perlahan penyerapan lembapan"
+    ],
+    costDetail: "Pemangkasan dan pelarasan engsel ialah hujung murah (dari kira-kira RM80). Pintu lebih berat, pelarasan semula kunci digital, atau kerja pada pintu tahan api lebih mahal. Kami sebut harga selepas memeriksa sama ada pintu perlu diketam atau sekadar kerja engsel dan strike plate.",
   },
   "sliding-window-stuck": {
     symptom: "Tingkap gelangsar tersangkut atau sukar digerakkan.",
@@ -364,7 +509,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Bolehkah anda membaiki tingkap gelangsar yang tersangkut?",
       a: "Ya. Kami boleh membersihkan rel, menggantikan roda atau melaraskan penjajaran dalam masa 30–60 minit."
-    }
+    },
+    overview: "Tingkap gelangsar yang tersangkut biasanya berpunca daripada roller haus, landasan kotor, atau bingkai yang sudah beralih bersama bangunan. Ia bukan sekadar menyusahkan — tingkap yang tidak boleh ditutup atau dikunci dengan betul adalah risiko keselamatan dan kebocoran cuaca, dan memaksanya boleh menyebabkan daun tingkap terkeluar dari landasan.",
+    diyChecks: [
+      "Vakum landasan dan lap kedua-dua rel dengan kain kering untuk buang pasir",
+      "Periksa sama ada roller menyentuh landasan dengan rata atau sudah haus leper",
+      "Uji kunci ketika tingkap tertutup — kunci ketat selalunya bermakna daun telah jatuh",
+      "Jangan guna minyak: ia menarik habuk dan memburukkan landasan aluminium"
+    ],
+    prevention: [
+      "Bersihkan landasan setiap 3–6 bulan",
+      "Guna semburan silikon kering (bukan gris) pada roller",
+      "Tutup perlahan-lahan dan elak menghentak daun",
+      "Ganti roller sebaik sahaja ada bunyi mengisar"
+    ],
+    costDetail: "Kebanyakan call-out ialah kerja roller atau landasan ringkas (RM90–RM420), tetapi jika bingkai sudah tidak segi atau kaca perlu ditanggalkan untuk sampai ke roller, harga akan naik. Kami sahkan angka tepat selepas melihat tingkap dan jenis roller.",
   },
   "smart-lock-not-working": {
     symptom: "Kunci pintar tidak berfungsi, bateri cepat habis atau tidak dapat dikunci.",
@@ -374,7 +533,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Berapa lama bateri kunci pintar biasanya bertahan?",
       a: "Bateri biasanya bertahan 6–12 bulan bergantung pada kekerapan penggunaan dan jenama."
-    }
+    },
+    overview: "Kunci pintar yang berhenti bertindak balas boleh menyebabkan anda terkunci di luar, atau lebih teruk, pintu tidak berkunci tanpa anda sedari. Kebanyakan kegagalan berpunca daripada bateri, motor, atau masalah pairing, tetapi kunci yang cepat menghabiskan bateri selalunya tidak sejajar dan bergesel dengan bolt pintu pada setiap kitaran.",
+    diyChecks: [
+      "Ganti bateri dengan yang baharu dan periksa sesentuh terminal",
+      "Sahkan aplikasi dan firmware kunci adalah versi terkini",
+      "Periksa bolt bergerak bebas ketika pintu terbuka",
+      "Sejajarkan semula strike plate jika bolt bergesel semasa mengunci"
+    ],
+    prevention: [
+      "Guna bateri alkali atau litium berkualiti dan tukar mengikut jadual",
+      "Simpan kunci fizikal atau kod sandaran sebagai langkah keselamatan",
+      "Lincirkan bolt dan kekalkan strike plate sejajar",
+      "Elak memaksa pemegang ketika motor masih berpusing"
+    ],
+    costDetail: "Baiki bateri dan re-pairing ialah hujung murah (dari kira-kira RM150). Modul motor rosak atau kunci gantian menolak kos ke RM680 atau lebih, bergantung pada jenama dan model. Kami sebut harga alat ganti sebelum mengganti apa-apa.",
   },
   "shower-screen-leaking": {
     symptom: "Skrin pancuran mandi bocor di bahagian bawah atau sisi.",
@@ -384,7 +557,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Bolehkah anda membaiki skrin pancuran yang bocor tanpa mengganti keseluruhan?",
       a: "Ya. Dalam kebanyakan kes kami hanya perlu menggantikan sealant dan melaraskan rel."
-    }
+    },
+    overview: "Air bertakung di luar cermin pancuran tanpa bingkai hampir selalu berpunca daripada seal atau masalah paras, bukan cermin pecah. Seal bawah haus leper, sambungan silikon terlepas, atau cermin dipasang condong sedikit ke arah yang salah sehingga air mengalir keluar dan bukannya kembali ke longkang.",
+    diyChecks: [
+      "Periksa seal bawah untuk keleperan, retak atau jurang di hujung",
+      "Buka pancuran perlahan dan perhatikan di mana air keluar dahulu",
+      "Uji sama ada jubin lantai condong ke arah longkang atau menjauhinya",
+      "Periksa sudut silikon untuk pengelupasan atau kulat hitam"
+    ],
+    prevention: [
+      "Lapkan kaca dan seal bawah selepas setiap mandian",
+      "Ganti seal lap sebaik sahaja haus",
+      "Pastikan longkang tidak tersumbat supaya air tidak naik",
+      "Sapu semula silikon sudut setiap 1–2 tahun"
+    ],
+    costDetail: "Ganti seal bawah dan silikon ialah pembaikan biasa di hujung rendah julat RM180–RM750. Jika kecerunan dulang salah, kami mungkin perlu ratakan semula cermin atau tambah jalur ambang, yang menambah kos. Kami sahkan selepas mengukur cermin dan memeriksa kecerunan.",
   },
   "cctv-not-recording": {
     symptom: "Kamera CCTV tidak merakam atau rakaman tidak disimpan.",
@@ -394,7 +581,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Berapa lama rakaman CCTV biasanya disimpan?",
       a: "Bergantung pada saiz kad SD dan tetapan. Kad 128GB biasanya boleh menyimpan 7–14 hari rakaman berterusan."
-    }
+    },
+    overview: "Kamera yang menunjukkan imej langsung tetapi tiada rakaman biasanya menunjuk kepada storan — cakera keras rosak, jadual penuh atau salah konfigurasi, atau bekalan kuasa yang jatuh ketika beban. Kerana imej langsung berfungsi, masalah mudah terlepas sehingga anda benar-benar memerlukan rakaman itu.",
+    diyChecks: [
+      "Sahkan perakam masih ada cakera keras yang berfungsi dalam menu storan",
+      "Semak jadual rakaman dan sama ada pengesanan gerakan dihidupkan",
+      "Sahkan tarikh dan masa betul — jam salah merosakkan jadual",
+      "Uji bekalan kuasa dan kabel rangkaian ke setiap kamera"
+    ],
+    prevention: [
+      "Guna cakera keras gred pengawasan, bukan cakera desktop",
+      "Tetapkan perakam menimpa rakaman lama secara automatik",
+      "Letak perakam di tempat berventilasi",
+      "Semak satu klip sebulan sekali untuk kesan kegagalan senyap awal"
+    ],
+    costDetail: "Pembaikan tetapan atau kuasa ialah hujung murah (dari RM180). Cakera keras atau NVR rosak menolak kos ke RM850 atau lebih dengan penggantian gred pengawasan. Kami cuba pulihkan data dari cakera lama sebelum menukarnya.",
   },
   "autogate-not-closing": {
     symptom: "Pagar automatik tidak tertutup atau terbuka sendiri.",
@@ -404,7 +605,21 @@ const PROBLEM_BODY_MS: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "Bolehkah anda membaiki pagar automatik yang tidak tertutup?",
       a: "Ya. Kami boleh membaiki sensor, motor atau sambungan wayar dalam masa 1–2 jam."
-    }
+    },
+    overview: "Autogate yang boleh buka tetapi tidak boleh tutup biasanya ada suis had rosak, sensor keselamatan tersekat, atau kapasitor motor hampir mati. Ia masalah keselamatan dan juga kemudahan — pagar tersekat terbuka semalaman mendedahkan seluruh hartanah.",
+    diyChecks: [
+      "Periksa lensa photocell bersih dan sejajar",
+      "Buang daun atau serpihan di landasan",
+      "Perhatikan sama ada pagar berhenti di titik sama setiap kali",
+      "Dengar motor berdengung tanpa menggerakkan pagar"
+    ],
+    prevention: [
+      "Pastikan landasan bersih dan lincirkan engsel setiap suku tahun",
+      "Bersihkan lensa photocell setiap bulan",
+      "Servis motor dan periksa kapasitor setiap tahun",
+      "Uji pelepas manual setiap beberapa bulan"
+    ],
+    costDetail: "Pembaikan suis had atau sensor ialah hujung rendah (dari RM250). Kapasitor atau papan kawalan rosak menolak ke RM1,200. Kami diagnosis di tapak dan sahkan harga alat ganti sebelum mengganti apa-apa.",
   },
   "rusting-window-grille": {
     symptom: "Pagar tingkap berkarat dan cat mengelupas.",
@@ -1078,7 +1293,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "如何防止浴室天花板发霉？",
       a: "洗澡时和之后使用排气扇，确保通风良好，并涂抹防霉漆。"
-    }
+    },
+    overview: "冷凝霉斑是湿热空气遇到较冷的天花形成——常见于通风不良的浴室、厨房和空调房。这不一定是漏水，但必须检查，因为板材后方的隐藏漏水也会产生同样的黑斑。",
+    diyChecks: [
+      "观察霉斑是沿最冷区域分布，还是沿明显的水迹路径",
+      "触摸板材——变软或受潮说明是漏水而非冷凝",
+      "打开排气扇，看冷凝是否消散",
+      "检查是否有空调管滴水或浴室蒸汽来源"
+    ],
+    prevention: [
+      "淋浴期间和之后打开排气扇",
+      "空调房偶尔通风",
+      "潮湿房间使用防霉底漆和涂料",
+      "及时修复慢漏或空调管滴水"
+    ],
+    costDetail: "清洁和防霉重涂是较低方案（RM180 起）。若板材变软或霉已深入，更换板材会升至 RM1,000。我们会先确认是湿气还是漏水。",
   },
   "bathroom-leak-upper-floor": {
     symptom: "楼上浴室漏水导致楼下天花板或墙壁出现水渍。",
@@ -1188,7 +1417,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "更换热水器加热元件的费用是多少？",
       a: "费用通常在 RM150–RM350 之间，具体取决于品牌和型号。"
-    }
+    },
+    overview: "即热式热水器一直不热，通常是加热管烧毁、温控器失效、进水滤网堵塞或管道有气锁。这是安全性敏感的维修，因为热水器水电交汇，非电工不应自行拆开。",
+    diyChecks: [
+      "检查热水器的隔离开关和供电断路器",
+      "确认同一线路上的其他电器仍正常",
+      "检查水流是否比平时弱（滤网堵塞）",
+      "不要拆开机器——加热管和线路带电"
+    ],
+    prevention: [
+      "每 2 年检查一次加热管和温控器",
+      "水流变小时清洁进水滤网",
+      "出现跳闸或闪烁立即处理",
+      "在寿命末期及时更换整机"
+    ],
+    costDetail: "更换加热管是较低方案（RM150 起）。温控器故障或整机更换会升至 RM680。开工前我们会报零件和人工费，并先断水断电。",
   },
   "ceiling-fan-wobbling": {
     symptom: "吊扇旋转时振动或摇晃。",
@@ -1198,7 +1441,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "你们能修复摇晃的吊扇吗？",
       a: "可以。我们可以在 45–90 分钟内平衡扇叶、拧紧螺丝或更换电机。"
-    }
+    },
+    overview: "吊扇晃动通常是失衡——扇叶不正、安装支架松动，或风扇挂在未加固的石膏天花吊钩上。放任不管会进一步松动固定件，甚至损坏天花。",
+    diyChecks: [
+      "检查所有扇叶螺丝是否拧紧、扇叶是否变形",
+      "清理扇叶积尘——积尘会改变扇叶重量",
+      "确认低速运转时风扇不晃动",
+      "查看天花处的吊罩或安装支架是否松动"
+    ],
+    prevention: [
+      "每 6 个月拧紧一次扇叶螺丝",
+      "使用加固吊钩，尤其是石膏天花",
+      "定期清洁扇叶避免失衡",
+      "一出现异响就检查轴承"
+    ],
+    costDetail: "扇叶配平和拧紧支架是较低方案（RM90 起）。电机磨损或缺少加固吊钩费用更高，可达 RM380 或更换整机。我们会现场确认。",
   },
   "hollow-tiles-floor": {
     symptom: "敲击地板瓷砖时发出空响，表示粘贴不牢固。",
@@ -1218,7 +1475,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "SPC 地板适合潮湿区域如厨房吗？",
       a: "如果安装正确且有足够膨胀空间，是适合的。高湿度如果不控制，可能会导致问题。"
-    }
+    },
+    overview: "SPC 或乙烯基地板边缘翘起，几乎都是湿气或位移问题——基层未干燥或未找平、伸缩缝留得太紧，或地板铺在沉重家具下。解决办法是纠正根源而不是把地板粘回去，否则还会再次翘起。",
+    diyChecks: [
+      "按压翘起的边缘——是否出现水或潮气？",
+      "检查踢脚线是否压住地板、挤掉了伸缩缝",
+      "查看墙边、门边或厨房是否有受潮迹象",
+      "观察是单块翘起还是整排翘起"
+    ],
+    prevention: [
+      "安装前务必检测基层含水率",
+      "靠墙留出正确的伸缩缝",
+      "沉重家具下使用毛毡垫",
+      "及时擦干泼洒，尤其是接缝处"
+    ],
+    costDetail: "重新铺设几块地板是较低方案（RM120 起）。若基层需烘干、找平或加防潮层，费用会升至约 RM950。我们会先检查基层，确保修复持久。",
   },
   "clogged-gutter-leaking": {
     symptom: "屋顶排水沟堵塞导致水溢出并渗入墙壁。",
@@ -1228,7 +1499,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "屋顶排水沟需要多久清洁一次？",
       a: "我们建议至少每年清洁 2 次，如果附近有树木则需要更频繁。"
-    }
+    },
+    overview: "马来西亚大雨时天沟溢水，是因为树叶和杂物堵塞了沟槽或落水管，而下垂的部分让积水无法排出。溢出的水沿檐板和墙面流下，甚至渗入天花。",
+    diyChecks: [
+      "下雨时从地面观察水是否从天沟边缘溢出",
+      "检查沟槽内是否长出植物、树叶或苔藓",
+      "查看天沟托架是否下垂或脱落",
+      "清理落水管入口处可见的堵塞"
+    ],
+    prevention: [
+      "每次季风前后清理天沟",
+      "若树木遮蔽屋顶，安装防叶网",
+      "天沟开始下垂时重新固定托架",
+      "修剪会掉落到屋顶的树枝"
+    ],
+    costDetail: "清理和轻微校正天沟是较低方案（RM280 起）。更换下垂段、维修檐板或加装防叶网会升至 RM1,200。我们会先做屋顶高度检查再报价。",
   },
   "kitchen-cabinet-door-misaligned": {
     symptom: "厨房橱柜门不对齐，难以关闭或自行打开。",
@@ -1238,7 +1523,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "你们能调整不对齐的橱柜门吗？",
       a: "可以。我们可以在 30–60 分钟内调整铰链和对齐。"
-    }
+    },
+    overview: "橱柜门高低不平或关不严，通常是铰链磨损，或柜体因湿气和负重而移位。调整铰链很快就能解决，但放任不管会让门相互刮擦、铰链加速磨损，门扣也失效。",
+    diyChecks: [
+      "检查哪个铰链松动并拧紧螺丝",
+      "观察门是刮到旁边的门还是柜体",
+      "测试缓冲闭合——阻尼器失效会让门撞击",
+      "用水平尺检查整排柜体是否移位"
+    ],
+    prevention: [
+      "打扫厨房时拧紧铰链螺丝",
+      "在门开始撞击前更换磨损的阻尼器",
+      "不要在门面上挂重物",
+      "保持厨房湿度稳定"
+    ],
+    costDetail: "铰链调整和更换阻尼器是较便宜的方案（RM90 起）。加固移位的柜体或更换多个铰链费用更高。我们会检查后确认是调整问题还是柜体移位。",
   },
   "flickering-downlights": {
     symptom: "筒灯闪烁或亮度不稳定。",
@@ -1268,7 +1567,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "剥落的批灰可以在不更换整个墙面的情况下修复吗？",
       a: "可以。我们可以刮除损坏部分、清洁表面并在该区域涂抹新批灰。"
-    }
+    },
+    overview: "批灰层在刷漆后起粉或剥落，通常是粘结失效——墙面有灰尘、灰浆配比过稀，或在完全固化前就刷漆。不处理基层就直接重新批灰，只会再次剥落。",
+    diyChecks: [
+      "用手擦拭表面——若掉粉，说明粘结已失效",
+      "检查剥落是局部还是整面墙",
+      "查看失效区域后方是否有潮湿或冷凝",
+      "在未受影响处用胶带测试漆膜附着力"
+    ],
+    prevention: [
+      "刷漆前务必对干净、已固化的批灰层上底漆",
+      "在光滑或曾刷漆的墙面使用界面剂",
+      "批灰完全固化（7–14 天）后再装饰",
+      "固化期间控制通风和湿度"
+    ],
+    costDetail: "铲除并重新批灰小面积是较低方案（RM120 起）。整墙重新批灰和重新装饰费用更高。我们会先确认失效面积和基层情况再报价。",
   },
   "epoxy-floor-yellowing": {
     symptom: "环氧地坪变黄或褪色。",
@@ -1278,7 +1591,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "变色的环氧地坪可以修复吗？",
       a: "在大多数情况下，我们可以打磨表面并涂抹新层。如果损坏严重，可能需要更换整个地坪。"
-    }
+    },
+    overview: "新环氧地坪变黄几乎都是紫外线照射到不耐紫外线的面漆——常见于本用于室内、之后暴露在阳光下的芳香族树脂。这并不代表地坪失效，但会持续恶化，直到用耐紫外线面漆重新罩面。",
+    diyChecks: [
+      "观察哪些区域变黄——通常只有朝阳区域",
+      "测试表面是否仍然坚硬，还是已变软发粘",
+      "检查受影响区域是否有家具压痕或化学品泼洒",
+      "在确认涂层类型前避免使用强溶剂"
+    ],
+    prevention: [
+      "在阳光照射区域指定使用脂肪族 PU 面漆",
+      "在直射阳光的窗户使用窗帘、百叶或窗膜",
+      "避免地坪接触强化学品",
+      "在变黄深入前重新罩面"
+    ],
+    costDetail: "小面积重新罩耐紫外线 PU 面漆通常处于 RM280–RM1,800 区间的下半段；大面积整体打磨重涂费用更高。我们会先确认树脂类型和面积再报价。",
   },
   "wardrobe-door-not-closing": {
     symptom: "衣柜门无法正确关闭或自行打开。",
@@ -1288,7 +1615,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "你们能调整无法关闭的衣柜门吗？",
       a: "可以。我们可以在 30–60 分钟内调整铰链和对齐。"
-    }
+    },
+    overview: "衣柜门相互摩擦或关不严，通常是柜体不水平——框架沉降、铰链磨损，或沉重搁板把柜体拉变形。小调整通常能解决，但放任不管会磨损铰链，甚至让门边开裂。",
+    diyChecks: [
+      "缓慢开关每扇门，观察最先卡住的位置",
+      "检查铰链螺丝并拧紧松动的螺丝",
+      "用水平尺检查框架顶部",
+      "若门已开始下垂，减轻过重的搁板"
+    ],
+    prevention: [
+      "不要让上层搁板超载",
+      "打扫时拧紧铰链螺丝",
+      "通过调整铰链解决，而非硬扳变形的门",
+      "保持湿度稳定以减少木材变形"
+    ],
+    costDetail: "铰链调整和对位是较便宜的方案（RM120 起）。实木门变形或框架重新调平费用更高。我们会检查后确认是调整问题还是柜体已移动。",
   },
   "door-scraping-floor": {
     symptom: "门在开关时刮到地板。",
@@ -1298,7 +1639,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "你们能修复刮到地板的门吗？",
       a: "可以。我们可以在 30–60 分钟内调整铰链、降低门扇高度或更换铰链。"
-    }
+    },
+    overview: "门刮擦地板通常是受潮膨胀、铰链松动下垂，或地板饰面升高所致。放任不管会磨损门底、拉扯铰链，最终锁舌对不上锁扣板，门无法安全关闭。",
+    diyChecks: [
+      "检查铰链螺丝并拧紧松动的螺丝",
+      "观察门缝是否四周均匀，还是某一角特别紧",
+      "查看门底边缘是否有膨胀或受潮痕迹",
+      "试锁——若锁舌错过锁扣板，说明门已下垂"
+    ],
+    prevention: [
+      "在潮湿房间使用除湿机或风扇",
+      "每年两次拧紧铰链螺丝",
+      "使用门底挡条，避免把门底削得过多",
+      "给门底边缘刷漆或封边以减缓吸潮"
+    ],
+    costDetail: "刨门和调整铰链是较便宜的方案（约 RM80 起）。较重的门、智能锁重新对位或防火门维修费用更高。我们会检查后确认是刨门还是仅调整铰链与锁扣板。",
   },
   "sliding-window-stuck": {
     symptom: "推拉窗卡住或难以移动。",
@@ -1308,7 +1663,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "你们能修复卡住的推拉窗吗？",
       a: "可以。我们可以在 30–60 分钟内清洁轨道、更换滑轮或调整对齐。"
-    }
+    },
+    overview: "推拉窗卡住通常是因为滑轮磨损、轨道积尘或窗框随建筑沉降而移位。这不仅是不便——窗户无法正常关闭或上锁会带来安全和风雨渗漏风险，强行推动还可能使窗扇脱轨。",
+    diyChecks: [
+      "用吸尘器清理轨道，并用干布擦拭两条轨道去除沙粒",
+      "检查滑轮是否均匀接触轨道，或已磨平",
+      "关窗后测试锁具——锁具发紧通常意味着窗扇已下沉",
+      "不要使用油类润滑：会吸附灰尘，使铝合金轨道更糟"
+    ],
+    prevention: [
+      "每 3–6 个月清理一次轨道",
+      "在滑轮上使用干性硅油（切勿用油脂）",
+      "轻缓关闭，避免猛推窗扇",
+      "一出现异响就更换滑轮"
+    ],
+    costDetail: "多数上门是简单的滑轮或轨道维修（RM90–RM420），但若窗框已变形，或需拆下玻璃才能更换滑轮，价格会上调。我们会在查看窗户和滑轮型号后确认具体价格。",
   },
   "smart-lock-not-working": {
     symptom: "智能锁不工作、电池快速耗尽或无法上锁。",
@@ -1318,7 +1687,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "智能锁电池通常能使用多久？",
       a: "电池通常可使用 6–12 个月，具体取决于使用频率和品牌。"
-    }
+    },
+    overview: "智能锁停止响应可能让您被锁在门外，更糟的是门在您不知情时未上锁。大多数故障来自电池、电机或配对问题，但电池耗电过快的锁通常安装不正，每次开合都与锁舌摩擦。",
+    diyChecks: [
+      "更换新电池并检查电池触点",
+      "确认 App 和门锁固件为最新版本",
+      "开门状态下检查锁舌能否自由伸缩",
+      "若锁舌上锁时刮擦，重新调整锁扣板"
+    ],
+    prevention: [
+      "使用优质碱性或锂电池并按周期更换",
+      "保留实体钥匙或备用密码作为应急方案",
+      "润滑锁舌并保持锁扣板对位",
+      "电机运转时不要强行扳动手柄"
+    ],
+    costDetail: "更换电池和重新配对是较便宜的方案（约 RM150 起）。电机模块故障或整锁更换会升至 RM680 或更高，视品牌和型号而定。更换前我们会先报零件价格。",
   },
   "shower-screen-leaking": {
     symptom: "淋浴屏风底部或侧面漏水。",
@@ -1328,7 +1711,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "你们能在不更换整个屏风的情况下修复漏水的淋浴屏风吗？",
       a: "可以。在大多数情况下，我们只需更换密封胶并调整轨道。"
-    }
+    },
+    overview: "无框淋浴屏外积水几乎都是密封条或水平问题，而非玻璃破损。底部挡水条磨平、硅胶接缝脱落，或淋浴屏安装时倾斜方向不对，导致水流向外而不是流回地漏。",
+    diyChecks: [
+      "检查底部挡水条是否磨平、开裂或两端有缝隙",
+      "缓慢放水，观察水最先从哪里漏出",
+      "检查地砖是坡向地漏还是背向地漏",
+      "检查硅胶角落是否有脱落或黑色霉斑"
+    ],
+    prevention: [
+      "每次淋浴后刮干玻璃并擦净底部挡水条",
+      "挡水条一出现磨损就更换",
+      "保持地漏畅通，避免积水倒流",
+      "每 1–2 年重新打一次角落硅胶"
+    ],
+    costDetail: "更换底部挡水条和重新打硅胶是常见维修，位于 RM180–RM750 区间的低端。若托盘坡度不对，可能需要重新调平淋浴屏或加装门槛条，费用会增加。我们会在测量后确认。",
   },
   "cctv-not-recording": {
     symptom: "CCTV 摄像头不录像或录像未保存。",
@@ -1338,7 +1735,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "CCTV 录像通常能保存多久？",
       a: "取决于 SD 卡容量和设置。128GB 卡通常可保存 7–14 天的连续录像。"
-    }
+    },
+    overview: "摄像头有实时画面却没有录像，通常指向存储——硬盘故障、录像计划已满或配置错误，或电源在负载下掉压。因为实时画面正常，问题很容易被忽略，直到您真正需要回看时才被发现。",
+    diyChecks: [
+      "在存储菜单确认录像机仍有可用的硬盘",
+      "检查录像计划以及是否开启移动侦测",
+      "确认日期时间正确——时间错误会打乱录像计划",
+      "检测每路摄像头的电源和网线"
+    ],
+    prevention: [
+      "使用监控专用硬盘，而非台式机硬盘",
+      "设置录像机自动覆盖最旧录像",
+      "把录像机放在通风处",
+      "每月回看一段录像，及早发现隐性故障"
+    ],
+    costDetail: "设置或电源维修是较便宜的方案（RM180 起）。硬盘或 NVR 故障，含监控级替换件，费用会升至 RM850 或更高。更换前我们会尝试从旧硬盘恢复数据。",
   },
   "autogate-not-closing": {
     symptom: "自动门无法关闭或自行打开。",
@@ -1348,7 +1759,21 @@ const PROBLEM_BODY_ZH: Record<string, LocalizedProblemBody> = {
     localFaq: {
       q: "你们能修复无法关闭的自动门吗？",
       a: "可以。我们可以在 1–2 小时内修复传感器、电机或电线连接。"
-    }
+    },
+    overview: "自动门能开不能关，通常是限位开关故障、安全传感器被遮挡，或电机电容即将失效。这既是便利问题也是安全问题——大门整夜敞开会暴露整个物业。",
+    diyChecks: [
+      "检查安全光电传感器镜头是否干净且对位",
+      "清除轨道里的树叶和杂物",
+      "观察大门是否每次都停在同一点",
+      "听电机是否嗡嗡响但门不动"
+    ],
+    prevention: [
+      "保持轨道清洁，每季度润滑铰链",
+      "每月清洁光电传感器镜头",
+      "每年保养电机并检查电容",
+      "每隔几个月测试一次手动释放装置"
+    ],
+    costDetail: "限位开关或传感器维修是较低方案（RM250 起）。电容或控制板故障会升至 RM1,200。我们现场诊断，并在更换前确认零件价格。",
   },
   "rusting-window-grille": {
     symptom: "窗户铁栅生锈且油漆剥落。",
