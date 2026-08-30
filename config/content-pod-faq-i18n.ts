@@ -9,8 +9,11 @@
  * family; Wave 19 adds the complete `compare` family; Wave 20 adds the complete
  * `brands` family (all 32 pages — the 12 material/brand guides sourced from
  * `brandCopy` plus the 20 aircon brand pages sourced from `airconBrandCopy`,
- * both in `config/content-pod-copy-batch2.ts`). Together: 88 pages, 704
- * translated Q&As. Remaining families stay explicitly pending in TRACKING.
+ * both in `config/content-pod-copy-batch2.ts`); Wave 21 adds the complete
+ * `commercial` family and Wave 22 adds the complete `residential` family (both
+ * from `commercialCopy` / `residentialCopy` in `config/content-pod-copy.ts`).
+ * Together: **146 pages, 1168 translated Q&As** — P3-12 phase 2 is COMPLETE
+ * (all ten pod families carry page-specific editorial MS/ZH FAQ translations).
  */
 
 export type LocalizedPodFaq = { q: string; a: string };
@@ -1251,6 +1254,817 @@ export const CONTENT_POD_FAQ_I18N: Record<string, LocalizedPodFaqSet> = {
       { q: "Isonic 与大品牌相比可靠性如何？", a: "以它的价位，可靠性是合理的。延长寿命的关键是定期保养，这对经济型品牌比高端品牌更重要。" },
       { q: "该选 Isonic 还是日本品牌？", a: "出租房或每天只开几个小时的房间，选 Isonic 更划算。若是每天运行 8 小时以上的主卧，日本变频机的能效和耐用性会逐步回本。" }
     ]
-  }
-
+  },
+  "commercial:painting-services-kl": {
+    ms: [
+      { q: "Bolehkah anda mengecat semasa pejabat kami digunakan?", a: "Boleh — kerja dipecahkan mengikut zon dengan syif malam atau hujung minggu, cat bau rendah serta perlindungan penuh, jadi pasukan terus berkerja sementara setiap tingkat disiapkan dan diserahkan semula dengan kemas." },
+      { q: "Adakah anda menguruskan kelulusan strata atau JMB?", a: "Kerja mengecat kawasan umum dan kedai lot mengandungi skop, waktu dan butiran pekerja untuk penyerahan kepada JMB atau pengurusan anda. Kami sediakan dokumen dan berkerja mengikut tempoh yang diluluskan sepenuhnya." },
+      { q: "Bagaimana harga kerja mengecat komersial dikira?", a: "Dikira mengikut luas yang diukur, spesifikasi kemasan, keperluan akses dan waktu berkerja — satu angka tetap terperinci bagi setiap fasa, disemak bersama pasukan kemudahan atau fit-out anda sebelum kerja bermula." },
+      { q: "Adakah anda mengecat kawasan umum strata?", a: "Ya — program mengecat koridor, tepi lobi dan kawasan belakang rumah berjalan di bawah disiplin kelulusan dan akses yang sama, dengan satu hubungan untuk pejabat pengurusan anda." }
+    ],
+    zh: [
+      { q: "我们办公时您能进行油漆施工吗？", a: "可以。我们会分区并在夜间或周末施工，采用低气味涂料并全面遮盖，让每一层完成并交付前，团队都能继续正常工作。" },
+      { q: "你们负责处理共管或JMB审批吗？", a: "公共区域和店铺重刷会连同范围、施工时间和工人资料提交给您的JMB或物业管理。我们会准备文件，并在获批的时间段内施工。" },
+      { q: "商业油漆如何计价？", a: "按实际测量面积、涂装规格、施工条件和作业时段综合计算，每一阶段给出固定、分项的价格，并在动工前与您的设施或装修团队确认。" },
+      { q: "你们处理共管公共区域吗？", a: "是的。走廊、大堂边缘和后区油漆项目都在同一套审批与进出管理下进行，并为物业管理提供单一对接人。" }
+    ]
+  },
+  "commercial:plumbing-services-kl": {
+    ms: [
+      { q: "Bolehkah pembaikan dijalankan tanpa menutup unit?", a: "Bagi kebanyakan pembaikan, ya. Bekalan diasingkan bahagian demi bahagian, kerja bising atau yang memerlukan penutupan dialih ke luar waktu perniagaan, dan pengasingan penuh dipersetujui dengan anda terlebih dahulu." },
+      { q: "Apakah dokumen yang disertakan dengan kerja ini?", a: "Skop terperinci, foto sebelum dan selepas, terma waranti dan invois yang disusun untuk rekod JMB atau tuan tanah — setiap pembaikan dapat dikesan ke paip atau lekapan yang disentuhnya." },
+      { q: "Adakah anda menguruskan kecemasan bocor komersial?", a: "Laluan keutamaan untuk paip pecah, lantai banjir dan pam gagal: kami hadir, asingkan, keringkan dan dokumentasikan, kemudian sebut harga pembaikan kekal sementara unit terus dilindungi." },
+      { q: "Bolehkah anda bekerja mengikut jadual kemudahan kami?", a: "Kerja diselaraskan dengan tetingkap penyelenggaraan anda — pengasingan paip, waktu bising dan tempahan lif dipersetujui mengikut jadual anda sebelum pasukan digerakkan." }
+    ],
+    zh: [
+      { q: "维修可以在不关闭店面时进行吗？", a: "大多数维修可以。供水会逐段隔离，吵闹或需要停工的工序会挪到营业时间之外，全面隔离也会提前与您确认。" },
+      { q: "工程会附带哪些文件？", a: "分项范围、施工前后照片、保修条款以及符合JMB或业主记录的发票——每项维修都能追溯到所接触的立管或洁具。" },
+      { q: "你们处理商业漏水紧急情况吗？", a: "对立管爆裂、地面受淹和水泵故障提供优先响应：到场、隔离、排水并记录，然后在店面保持正常运转的同时报价永久性维修。" },
+      { q: "能按我们的设施排程施工吗？", a: "工程会安排进您的维护窗口，立管隔离、噪音时段和电梯预约都会在进场前依您的计划确定。" }
+    ]
+  },
+  "commercial:ceiling-services-kl": {
+    ms: [
+      { q: "Bolehkah siling dipasang semasa pejabat beroperasi?", a: "Boleh. Kerja dipecahkan kepada zon yang dijadualkan pada waktu malam atau hujung minggu; pembongkaran disedut secara berterusan dan setiap zon diserahkan dalam keadaan tertutup dan siap dicat sebelum zon seterusnya dibuka." },
+      { q: "Bagaimana lampu dan pemercik diselaraskan?", a: "Tanda letak disemak terhadap susun atur lampu dan pemercik sebelum papan dipasang; potongan diperkukuh, dan panel akses diletakkan pada laluan servis yang benar-benar memerlukannya." },
+      { q: "Adakah terdapat waranti untuk kerja siling komersial?", a: "Ya — 90 hari untuk mutu kerja siling yang meliputi kendur dan serahan tanpa retak, dicatat pada invois, dengan bahan papan dan rangka dikendalikan mengikut jadual yang dipersetujui." },
+      { q: "Bolehkah siling dipasang semasa pejabat berjalan?", a: "Boleh. Kerja dipecahkan kepada zon yang dijadualkan pada waktu malam atau hujung minggu; pembongkaran disedut secara berterusan dan setiap zon diserahkan tertutup dan siap dicat sebelum zon seterusnya dibuka." }
+    ],
+    zh: [
+      { q: "办公时能安装天花板吗？", a: "可以。工程会分区并安排在夜间或周末进行；拆除过程持续吸尘，每一区在下一区开工前都会封闭并完成油漆后移交。" },
+      { q: "筒灯和喷淋如何协调？", a: "封板前会依据您的照明与喷淋布局标定位置；开孔会加固，检修口会开在实际需要检修管线的位置。" },
+      { q: "商业天花板工程有保修吗？", a: "有。对下沉和不开裂交付提供90天工艺保修，并记录在发票上，板材与龙骨材料按约定的范围负责。" },
+      { q: "办公期间能安装天花板吗？", a: "可以。工程分区并在夜间或周末作业；拆除持续吸尘，每一区在下一区开始前完成封闭与油漆后再移交。" }
+    ]
+  },
+  "commercial:waterproofing-services-kl": {
+    ms: [
+      { q: "Bolehkah kerja dijalankan semasa penyewa berada di bawah?", a: "Kerja basah dicorak bahagian demi bahagian dengan perlindungan sementara di bawah jika perlu, dan jadual dipersetujui dengan pengurusan supaya kawasan niaga terdedah hanya untuk beberapa jam, bukan berhari-hari." },
+      { q: "Apakah yang dilindungi oleh waranti 5 tahun?", a: "Sistem membran membawa jaminan bebas bocor bertulis sehingga 5 tahun untuk mutu kerja dan sistem yang dipasang, direkodkan pada invois bersama skop, kawasan dan keputusan ujian." },
+      { q: "Bagaimana anda membuktikan kebocoran telah dibaiki?", a: "Ujian rendam sebelum dan selepas dengan foto berwaktu, serta peta pembaikan setiap sambungan, retak dan laluan yang dirawat — rekod yang boleh diserahkan kepada tuan tanah atau insurer tanpa kerja tambahan." },
+      { q: "Apa berlaku jika bocor berulang dalam tempoh waranti?", a: "Kebocoran yang dilaporkan akan dikunjungi dan diuji semula di bawah terma waranti bertulis, dengan peta dan foto pembaikan asal digunakan untuk menyemak butiran yang sama dahulu." }
+    ],
+    zh: [
+      { q: "下方租户在时也能施工吗？", a: "湿作业会逐段进行，并在需要时在下方设置临时保护；排程与物业确认，使营业区域只暴露数小时而非数天。" },
+      { q: "5年保修涵盖什么？", a: "防水膜系统对施工和所装系统提供最长5年书面防漏保证，并在发票上记录范围、面积与测试结果。" },
+      { q: "你们如何证明漏水已修复？", a: "通过前后蓄水测试并附带时间拍照，以及所有已处理接缝、裂缝和穿透点的修复图——这份记录无需额外工作即可交给业主或保险公司。" },
+      { q: "保修期内再次漏水怎么办？", a: "已报告的漏水会按书面保修条款重新上门并测试，先利用原有修复图和照片重新核对相同细部。" }
+    ]
+  },
+  "commercial:handyman-services-kl": {
+    ms: [
+      { q: "Bolehkah anda menggabungkan item senarai tugas kami?", a: "Boleh — hantar senarai bersama foto dan kami harganya sebagai satu pelan lawatan tetap. Pemasangan, penggantungan, tampalan dan penalaan semuanya dilakukan dalam satu tetingkap terjadual di mana akses mengizinkan." },
+      { q: "Adakah anda berkerja selepas waktu pejabat?", a: "Biasa. Slot malam dan hujung minggu meliputi kerja lobi, bilik mesyuarat dan lantai runcit di mana gangguan siang hari tidak boleh diterima oleh penyewa atau pelanggan." },
+      { q: "Adakah kerja tukang rumah komersial diinsuranskan?", a: "Setiap lawatan dilindungi di bawah insurans liabiliti awam kami, dan invois pesanan kerja turut menjadi rekod yang diminta oleh pengurus kemudahan untuk kerja di kawasan umum." },
+      { q: "Bolehkah anda bekerja berdasarkan senarai tugas?", a: "Hantar senarai bersama foto dan ukuran kasar; kami harganya sebagai satu pelan lawatan, siapkan mengikut turutan, dan ambil gambar bagi apa-apa yang perlu diubah." }
+    ],
+    zh: [
+      { q: "你们能合并我们的整改清单吗？", a: "可以。把清单和照片发给我们，我们会作为一次固定上门计划报价；安装、悬挂、修补和调试都在一个安排好的时间段内完成。" },
+      { q: "你们下班后也工作吗？", a: "常见。夜间和周末时段用于大堂、会议室和零售楼层的工程，这些地方的日间打扰对租户或顾客难以接受。" },
+      { q: "商业杂工工作有保险吗？", a: "每次上门都受我们的公众责任险承保，作业单发票同时是设施经理在公共区域工程后索要的记录。" },
+      { q: "可以按整改清单施工吗？", a: "把清单连同照片和大致尺寸发来，我们会按一次上门计划报价，按顺序完成，并拍摄任何需要改动之处。" }
+    ]
+  },
+  "commercial:house-renovation-services-kl": {
+    ms: [
+      { q: "Bolehkah fit-out siap menjelang tarikh akhir pajakan?", a: "Itu kekangan perancangan dari hari pertama: skop, turutan dan item jangka panjang dipersetujui sebelum pembongkaran, dan program dibina ke belakang dari tarikh serahan anda." },
+      { q: "Adakah anda mematuhi keperluan tuan tanah kami?", a: "Ya — penyerahan JMB atau pengurusan, peraturan waktu berkerja dan syarat pemulihan ditulis ke dalam program, dan laporan harian memastikan kawasan umum sentiasa bersih dan terlindung." },
+      { q: "Apakah yang termasuk dalam sebut harga?", a: "Setiap jabatan, jadual bahan dan pelan perlindungan dalam satu angka tetap yang terperinci — tiada permainan jumlah sementara selepas tapak dibuka." },
+      { q: "Siapa menguruskan pelbagai jabatan di tapak?", a: "Seorang penyelia tapak bagi setiap program — jabatan dijadualkan harian mengikut jadual yang dipersetujui, dan anda menerima status akhir hari bertulis supaya tiada siapa menunggu orang lain." }
+    ],
+    zh: [
+      { q: "装修能在租约期限内完工吗？", a: "这正是从头就要规划的问题：拆除前便确定范围、顺序和长交期材料，并自交付日期倒排工期。" },
+      { q: "你们会配合业主的要求吗？", a: "会。JMB或物业申报、工时规定和恢复条件都会写进计划，每日收工记录让公共区域保持清洁与受保护。" },
+      { q: "报价包含什么？", a: "所有工种、材料表和保护方案打包成一个固定分项金额——开工后不会再出现暂定费用的操作。" },
+      { q: "谁在现场统筹多个工种？", a: "每个项目有一名现场负责人，各工种按约定排程每日推进，并提供书面收工状态，避免互相等待。" }
+    ]
+  },
+  "commercial:electrical-services-kl": {
+    ms: [
+      { q: "Adakah juruelektrik anda berlesen untuk kerja komersial?", a: "Kerja elektrik dijalankan oleh juruwiring yang didaftarkan dengan Suruhanjaya Tenaga, dengan permit dikendalikan di premis yang memerlukannya, jadi kerja tersebut sah, boleh diinsuranskan dan boleh diperakui." },
+      { q: "Bolehkah kami menambah litar tanpa menukar papan penuh?", a: "Selalunya boleh — tinjauan beban dan papan menentukan. Jika ruang dan kapasiti tersedia, kami tambah dan lindungi litar dengan betul; jika tidak, naik taraf papan berperingkat ditawarkan secara jujur." },
+      { q: "Adakah kerja malam dikenakan kos tambahan?", a: "Penjadualan selepas waktu dimasukkan ke dalam sebut harga tetap sebagai kerja syif yang dirancang — tiada caj mengejut pada invois untuk menutup unit perniagaan." },
+      { q: "Bolehkah kerja berjalan tanpa pemadaman penuh?", a: "Papan dan panel diasingkan mengikut litar dengan tetingkap gangguan berjadual bagi setiap lantai atau unit; jika pemadaman penuh tidak dapat dielakkan, ia dijadualkan dan dinyatakan dalam sebut harga." }
+    ],
+    zh: [
+      { q: "你们的电工有商业工程资质吗？", a: "电气工程由在能源委员会注册的技工执行，并按要求办理相关许可，因此工程合法、可投保、可验收。" },
+      { q: "不整体更换电箱能加装电路吗？", a: "通常可以，由负荷与电箱勘察决定。若有多余回路和容量，我们会正确加装并保护；否则会诚实提出分阶段升级电箱。" },
+      { q: "夜间施工会加价吗？", a: "非营业时段作业按计划性轮班计入固定报价，不会在发票上对关闭营业单位再加意外收费。" },
+      { q: "工程可以不完全断电进行吗？", a: "电箱与配电板按回路隔离，每层或每单元有计划的停电窗口；确需全停时，会安排并写入报价。" }
+    ]
+  },
+  "commercial:water-heater-services-kl": {
+    ms: [
+      { q: "Bolehkah servis dijalankan semasa kami berniaga?", a: "Boleh — penggantian unit dilakukan pada waktu tutup, dan premis berbilang unit diservis satu pemanas demi satu supaya ruang pencuci terus beroperasi sepanjang masa." },
+      { q: "Pemanas apa yang anda pasang?", a: "Jenama Malaysia biasa yang dipasang dan diselenggara oleh pasukan kami — jenis segera dan simpanan — pada litar khusus bersaiz betul dengan pembumian disahkan dan perlindungan RCCB." },
+      { q: "Apakah waranti yang meliputi pemasangan komersial?", a: "12 bulan waranti mutu kerja pemasangan, dengan waranti pengilang disalurkan secara bertulis pada invois anda untuk unit itu sendiri." },
+      { q: "Adakah lawatan nyahkerak perlu menutup unit?", a: "Tidak — servis dan nyahkerak dijalankan satu pemanas demi satu pada pelan bergilir, jadi kuarters kakitangan dan ruang pencuci sentiasa ada air panas." }
+    ],
+    zh: [
+      { q: "营业期间能进行维护吗？", a: "可以。换机会在闭店时段进行，多机组场所会一台台轮流保养，让茶水间始终正常运作。" },
+      { q: "你们安装哪些热水器？", a: "我们团队安装并维护常见的马来西亚品牌，含即热式和储水式，均接在尺寸适配的专用回路上，并确认接地与RCCB防护。" },
+      { q: "商业安装有什么保修？", a: "安装工艺保修12个月，制造商对机组本身的保修也会在发票上以书面方式转交。" },
+      { q: "除垢上门需要关闭机组吗？", a: "不需要。保养与除垢按轮换计划一台台进行，员工宿舍和茶水间始终有热水可用。" }
+    ]
+  },
+  "commercial:ceiling-fan-services-kl": {
+    ms: [
+      { q: "Bolehkah siling tinggi dipasang dengan selamat?", a: "Ruang dua tingkat tinggi mendapat pelan akses yang betul — menara atau lif, pengasingan litar lampu dan pemasangan dua orang — dihargakan sebagai sebahagian skop, bukan dibuat improvisasi sebaik tiba." },
+      { q: "Adakah anda menyervis kipas sedia ada kami?", a: "Ya — semakan bunyi bearing, goyang, rod dan bracing, penggantian pengatur serta pembersihan, setiap unit atau digabungkan dalam satu lawatan tapak." },
+      { q: "Adakah pemasangan di dek bumbung selamat untuk kipas?", a: "Jika struktur mengizinkan, kami sauh melalui pengikat berkadar dengan plat sokongan dan bukannya plak geseran sahaja, dan nyatakan jelas apabila tapak perlu dibuka silingnya dahulu." },
+      { q: "Bolehkah penyelenggaraan kipas menyertai kontrak sedia ada?", a: "Boleh — lawatan setiap unit atau gabungan diselaraskan dengan jadual kemudahan; kami catat bacaan dan tarikh tetingkap seterusnya pada kad bertarikh yang boleh diaudit pasukan FM anda." }
+    ],
+    zh: [
+      { q: "高天花能安全安装风扇吗？", a: "挑高空间会制定规范的作业方案——使用高空作业台或升降机、隔离照明回路并由两人固定——作为范围的一部分报价，而非到场后临时应付。" },
+      { q: "你们保养我们已有的风扇吗？", a: "会。检查轴承噪音、晃动、吊杆与支架、更换调节器并清洁，可逐台或合并为一次上门。" },
+      { q: "在屋顶平台安装风扇安全吗？", a: "在结构允许时，我们会用额定固定件加背板锚固，而非仅靠摩擦栓；当现场需要先开天花板时也会明确告知。" },
+      { q: "风扇维护能并入现有合同吗？", a: "可以。逐台或合并上门会安排进设施排程，并在带日期的卡片上记录读数和下次窗口日期，供您的设施团队审计。" }
+    ]
+  },
+  "commercial:lighting-services-kl": {
+    ms: [
+      { q: "Bolehkah anda mengurangkan bil elektrik kami?", a: "Selalunya boleh — penukaran bilik demi bilik kepada pemasangan LED yang sepadan dengan suhu warna betul, serta penyingkiran balast magnetik yang rosak, dihargakan berdasarkan bayaran balik terukur, bukan janji." },
+      { q: "Bagaimana lampu paparan dihalakan dengan betul?", a: "Kepala trek diselaraskan dengan lekapan dan barisan produk anda semasa tinjauan berpenampilan, supaya cahaya runcit jatuh pada paparan dan bukan silau di lorong." },
+      { q: "Bagaimana dengan lampu rosak selepas waktu?", a: "Kelengkapan gagal secara berkelompok; kami sediakan pemandu dan lekapan sepadan di tapak supaya penggantian hanya beberapa minit bagi lawatan malam berjadual, bukan rangkaian panggilan kecemasan." },
+      { q: "Apa berlaku pada lekapan yang ditanggalkan?", a: "Tiub lama, pemandu dan kelengkapan magnetik dibawa keluar, diasingkan dan dilupus atau dipulangkan mengikut dasar kitar semula atau tuan tanah anda — serahan hari itu benar-benar jelas." }
+    ],
+    zh: [
+      { q: "你们能帮我们降低电费吗？", a: "通常可以。按房间更换为色温匹配的LED灯具，并拆除已失效的磁镇流器，按实测回收期计价，而不是空口承诺。" },
+      { q: "展示照明如何正确调焦？", a: "在风格化走场时，轨道灯头会依据您的陈列与产品线设定，让零售光线落在展示品上，而不是照向过道造成眩光。" },
+      { q: "过了营业时间灯具坏怎么办？", a: "灯具故障常成批出现；我们会在现场备好匹配的驱动与灯具，因此更换只需一个计划性夜间时段几分钟，而不是一连串紧急上门。" },
+      { q: "拆下的灯具如何处理？", a: "旧灯管、驱动器和磁式元件会被取出、分类，并按您的回收或业主规定处置或返还——当天的交接记录清晰可查。" }
+    ]
+  },
+  "commercial:tiling-services-kl": {
+    ms: [
+      { q: "Bolehkah pemasangan jubin dijalankan semasa bangunan masih dibuka?", a: "Boleh — zon dipagar, satu laluan aliran dikekalkan pada setiap masa, dan pemotongan berat dilakukan di luar waktu atau di luar tapak supaya akustik lobi tidak terjejas." },
+      { q: "Jubin apa yang sesuai untuk pintu masuk komersial?", a: "Porselin padat dengan penarafan PE betul dan kelas geseran teruji untuk laluan kasut dan kesan hujan; kami sebut harga mengikut jadual yang anda luluskan, termasuk kelas pelekat." },
+      { q: "Bagaimana perbezaan ketinggian dikawal pada kepingan besar?", a: "Sistem klip meratakan, aplikasi pelekat bergerigi penuh dan semakan kerataan dengan pembaris lurus panjang — ditandatangani zon demi zon sebelum grout." },
+      { q: "Bolehkah kerja jubin lobi mengelak pintu masuk?", a: "Boleh — pintu masuk kekal terbuka; pemasangan berjalan di sekelilingnya dalam fasa yang diluluskan dengan kepingan pelindung dan tanjakan, supaya orang ramai tidak memijak pelekat baharu." }
+    ],
+    zh: [
+      { q: "建筑营业时能铺贴瓷砖吗？", a: "可以。会分区围挡，并始终保留一条通行动线；重型切割安排在非营业时段或场外进行，以免大堂声学受损。" },
+      { q: "商业入口适合什么瓷砖？", a: "选用PE等级适宜、抗滑等级经过测试的高密度瓷砖，可承受鞋底磨蹭和雨水带入；我们会按您批准的清单报价，包括粘合材料等级。" },
+      { q: "大规格瓷砖如何控制高低差？", a: "使用找平卡扣系统、满刀灰抹浆，并以长直尺检验平整度，在勾缝前逐区确认签字。" },
+      { q: "大堂铺砖能避开入口吗？", a: "可以。入口保持通行，铺贴按已批准的分期围绕其进行，并铺保护板和坡道，确保行人不会踩到新粘合层。" }
+    ]
+  },
+  "commercial:plaster-ceiling-services-kl": {
+    ms: [
+      { q: "Adakah waranti 10 tahun benar untuk kegunaan komersial?", a: "Ya — 10 tahun untuk sistem siling plaster premium terhadap kendur dan retak, ditulis pada invois bersama spesifikasi sistem yang terpakai." },
+      { q: "Bolehkah kerja hiasan dilakukan di pusat membeli-belah yang beroperasi?", a: "Peraturan waktu pusat membeli-belah dan strata dirancang ke dalam program, dengan penutup habuk, pengekstrakan vakum dan serahan setiap ciri pada waktu malam sebelum fasa seterusnya bermula." },
+      { q: "Apakah kemasan yang anda sebut harga?", a: "Skim-koat sehingga rata siap-cat, sambungan yang ditampal dan dibetulkan, serta jurang penyelarasan untuk pita LED — semuanya dalam skop terperinci supaya juru cat menerima permukaan bersih." },
+      { q: "Bagaimana habuk dikawal berhampiran stok atau peralatan?", a: "Pemotongan dilakukan di luar atau dalam zon tertutup dengan pengekstrakan; lekapan bersebelahan dilindungi dengan kepingan dan pita, dan setiap fasa ditutup dengan pembersihan vakum." }
+    ],
+    zh: [
+      { q: "10年保修对商业用途真实吗？", a: "真实。高端灰泥天花系统对下沉与开裂保修10年，并在发票上写明适用的系统规格。" },
+      { q: "在营业中的商场能进行装饰施工吗？", a: "商场与共管工时规定会编入计划，使用防尘罩、吸尘抽排，并在下一阶段开始前于夜间移交每一处造型。" },
+      { q: "你们报价包含哪些饰面？", a: "从批灰到可涂刷的平整度、贴带与固缝，以及LED灯槽的预留间隙，全部列入分项范围，让油漆工接手干净的表面。" },
+      { q: "靠近货物或设备时如何控尘？", a: "切割在场外或密封区进行并配抽尘；相邻设施用保护膜和胶带覆盖，每阶段结束前完成真空清洁。" }
+    ]
+  },
+  "commercial:skim-coat-services-kl": {
+    ms: [
+      { q: "Adakah skim-koat tahan haus komersial?", a: "Diaplikasikan atas plaster baik dengan pengawetan betul, ya — dan di mana dinding melentur atau lembap kembali, kami menyatakannya dan membaiki puncanya dahulu daripada menutupnya." },
+      { q: "Bolehkah kerja dijalankan antara penyewaan?", a: "Itu tetingkap biasa: penyediaan, sapuan dan pengawetan dijadualkan berturutan bersama kerja mengecat semula, supaya unit kelihatan siap pada hari penyerahan." },
+      { q: "Apakah yang disemak sebelum kami bermula?", a: "Titik berlubang, retak dan lembap dipetakan dan dimasukkan atau dikecualikan dalam sebut harga tetap, jadi harga yang anda luluskan sepadan dengan dinding sebenar anda." },
+      { q: "Berapa lama skim perlu kering sebelum dicat?", a: "Setiap lapisan dijadualkan semalaman dengan masa kering yang betul, jadi primer mengikuti tetingkap kerja seterusnya dan bukannya memerangkap lembap di bawah warna jenama anda." }
+    ],
+    zh: [
+      { q: "批灰能经得起商业磨损吗？", a: "在完好的灰面上并正确养护后，可以。若墙面会变形或再度受潮，我们会说明并先解决根因，而不是把它封在涂层里。" },
+      { q: "可以在租赁交接的间隙施工吗？", a: "这正是常见作窗口：基层处理、批灰与养护与重新涂装紧密衔接，使单位在交付当天即可拍照呈现完工状态。" },
+      { q: "开工前会检查什么？", a: "空鼓点、裂缝与受潮处都会被标出并计入或排除在固定报价内，因此您批准的价格与实际墙面一致。" },
+      { q: "批灰后多久可以涂漆？", a: "各层按过夜安排并保证合适干燥时间，底漆会在下一施工窗口跟进，而不会把潮湿封在您的品牌色之下。" }
+    ]
+  },
+  "commercial:flooring-services-kl": {
+    ms: [
+      { q: "Adakah vinil klik menampung trafik kerusi pejabat?", a: "Dengan lapisan haus betul dan subfloor rata serta tegar, ya — kami gunakan SPC gred komersial dan nyatakan di mana alas kerusi masih jawapan jangka panjang lebih murah untuk meja panas." },
+      { q: "Bolehkah lantai ditukar semasa kakitangan bekerja?", a: "Boleh — lantai dipasang mengikut zon pada waktu hujung minggu atau petang, termasuk angkat perabot, dengan kawasan aktif dilindungi dan boleh digunakan setiap pagi." },
+      { q: "Apakah waranti untuk lantai komersial?", a: "5 tahun waranti mutu kerja pemasangan pada sistem yang dipasang, direkodkan pada invois bersama waranti haus produk itu sendiri." },
+      { q: "Bolehkah tapak digunakan pada hari yang sama?", a: "SPC dan vinil klik boleh dilalui pada hari ia dipasang; perabot berat diletakkan atas pelapik pelindung selepas semakan akhir, mengikut pelan zon hari tersebut." }
+    ],
+    zh: [
+      { q: "锁扣PVC能承受办公椅的磨损吗？", a: "只要耐磨层合适、底层平整坚固，可以。我们会选用商用级SPC，并注明在开放工位使用椅垫仍是更省钱的长期方案。" },
+      { q: "员工工作时能换地板吗？", a: "可以。地板按区域在周末或晚间铺装，含家具搬移；使用区会受保护，每天早上均可使用。" },
+      { q: "商业地板有什么保修？", a: "所铺系统提供5年安装工艺保修，并连同产品自身的耐磨保修一起记录在发票上。" },
+      { q: "当天就能使用现场吗？", a: "SPC和锁扣PVC在当天即可行走；重型家具在最终检查后放置于保护垫上，按当天分区计划执行。" }
+    ]
+  },
+  "commercial:epoxy-flooring-services-kl": {
+    ms: [
+      { q: "Berapa cepat lantai gudang boleh digunakan semula?", a: "Lalu lintas biasanya boleh dibuka semula bagi setiap ruang siap dalam beberapa hari pada jadual jubin kaki, dengan pengawetan kimia penuh berperingkat — program dipersetujui mengikut operasi anda, bukan sebaliknya." },
+      { q: "Adakah lantai menampung trafik forklift?", a: "Disetkan sepadan: ketebalan salutan betul, penyediaan keluli-tembak atau penggilingan, dan topcoat yang sepadan dengan jenis roda — dihargakan bersama profil beban yang anda berikan." },
+      { q: "Mengapa skirt koved?", a: "Sambungan dinding segi empat tepat mudah serpih dan memerangkap kotoran; skirt epoksi berkoved mudah disapu dan tahan mesin gosok, yang sememangnya disemak dalam audit lantai makanan dan bengkel." },
+      { q: "Apakah yang disertakan pada penyerahan?", a: "Jadual pengawetan, foto siap setiap ruang dan spesifikasi topcoat pada invois — dokumen yang diminta oleh tuan tanah atau juruaudit anda selepas kerja." }
+    ],
+    zh: [
+      { q: "仓库地板多久可以恢复使用？", a: "按预留地面排程，每完成一个区，几天内即可开放通行，并分阶段完成化学固化——方案围绕您的运营来定，而不是反过来。" },
+      { q: "地板能承受叉车吗？", a: "按要求设定：正确的膜厚、钢砂或打磨基层处理，以及匹配轮型的表面涂层——依据您提供的载荷档案报价。" },
+      { q: "为什么要做踢脚转角？", a: "方形墙角易崩裂并藏污；带弧度的环氧踢脚可轻松擦洗并耐洗地机，这正是食品与车间地面审计实际检查的内容。" },
+      { q: "交付包含什么？", a: "固化排程、逐区完工照片和发票上的面漆规格——这是业主或审计方事后会索取的文档。" }
+    ]
+  },
+  "commercial:roof-repair-services-kl": {
+    ms: [
+      { q: "Bolehkah kerja bumbung menghentikan kebocoran sebelum monsun?", a: "Pengedap kecemasan mengasingkan bocor aktif dengan pantas; program pembaikan kekal — kepingan, peraih atau membran — dihargakan dari tinjauan supaya monsun menemui bumbung yang tertutup, bukan ditampal." },
+      { q: "Apakah yang dilindungi oleh waranti 10 tahun?", a: "10 tahun untuk membran dan mutu kerja mengikut sistem yang dipasang, direkodkan pada invois dengan kawasan dirawat dan keadaan ujian disenaraikan." },
+      { q: "Adakah anda bekerja di atas kawasan pengeluaran aktif?", a: "Dengan perlindungan di bawah, pengasingan ruang dan waktu yang dipersetujui — ya; di mana pendedahan dalaman tidak boleh diterima, kerja dialih ke hujung minggu penutupan." },
+      { q: "Adakah kerja mematuhi peraturan sisa dan bunyi kami?", a: "Potongan kepingan dan pembungkusan dibawa keluar oleh kru setiap hari; waktu bising mengikut permit atau tetingkap strata yang dipersetujui sebelum pasukan digerakkan." }
+    ],
+    zh: [
+      { q: "雨季前能做屋顶防水止漏吗？", a: "紧急密封能快速隔离活跃漏点；永久性修复方案，如板材、泛水或防水膜，会依据勘察报价，让雨季来临时屋顶是封闭的而非贴补的。" },
+      { q: "10年保修涵盖什么？", a: "按所装系统对防水膜和施工保修10年，并在发票上记录处理区域与测试条件。" },
+      { q: "你们会在仍在作业的生产区上方施工吗？", a: "在下方作好保护、隔离区域并约定时段，可以；若内部暴露不可接受，工程会改到停产周末进行。" },
+      { q: "施工会遵守我们的垃圾与噪音规定吗？", a: "板材边角与包装物由班组每天清走；噪音时段遵循进场前商定的许可或共管窗口。" }
+    ]
+  },
+  "commercial:kitchen-cabinet-services-kl": {
+    ms: [
+      { q: "Bolehkah kerja kabinet kafe menampung penggunaan komersial?", a: "Ditetapkan untuk itu: papan tahan lembap, bahagian depan bertepi, engsel lembut tutup dan engsel komersial — dan di mana spesifikasi domestik lebih murah akan gagal di talian anda, sebut harga menyatakannya." },
+      { q: "Berapa lama fit-out berada di luar operasi?", a: "Unit difabrikasi di luar tapak dan dipasang dalam tetingkap penggantian berjadual, selalunya semalaman atau pada hari tutup, supaya talian pantry kembali beroperasi pada syif seterusnya." },
+      { q: "Adakah anda memadankan warna jenama?", a: "Ya — kemasan lamina dan PU dipadankan dengan palet jenama anda dengan sampel diluluskan sebelum fabrikasi." },
+      { q: "Bolehkah kaunter dibaiki berbanding dibina semula?", a: "Di mana substrat baik, pakej baiki-atas dan baiki-depan ditinjau dan dihargakan secara jujur — pemusnahan hanya apabila teras tidak lagi mampu menampung." }
+    ],
+    zh: [
+      { q: "咖啡店橱柜能承受商业使用吗？", a: "按此设定：防潮板材、封边门板、缓冲与商用铰链——若较便宜的民用规格会在您的产线上失效，报价会明确说明。" },
+      { q: "装修停业多久？", a: "柜体在场外制造，并在安排的更换窗口内安装，通常过夜或闭店一天，让茶水间在下一个班次恢复运作。" },
+      { q: "你们会匹配品牌颜色吗？", a: "会。层压板和PU饰面按您的品牌色匹配，并在制造前固定已批准的样板。" },
+      { q: "台面能修复而不是重做吗？", a: "在基材完好的情况下，会如实勘察并报价台面重做或门板翻新套装——只有当芯材无法再用时才拆除。" }
+    ]
+  },
+  "commercial:carpentry-services-kl": {
+    ms: [
+      { q: "Bolehkah kerja kayu siap untuk tarikh pelancaran kami?", a: "Itulah tujuan pra-fabrikasi: lukisan diluluskan, sampel ditetapkan awal, pemasangan semalaman dan kemasan di tapak — dengan program dipersetujui sebelum anda menandatangani." },
+      { q: "Adakah anda turut menguruskan pemulihan tuan tanah?", a: "Ya — penyingkiran, tampalan dan pengecatan semula fit-out lama kembali ke keadaan kosong, didokumentasikan dengan foto untuk tuntutan deposit dan kelulusan pengurusan." },
+      { q: "Apakah waranti yang terpakai?", a: "5 tahun untuk struktur kabinet di mana kerja kayu adalah sebahagian daripada sistem yang kami bina, dan 12 bulan mutu kerja pemasangan — kedua-duanya ditulis pada invois anda." },
+      { q: "Bolehkah fit-out melalui pemeriksaan?", a: "Kerja kayu dipasang pada struktur, disiapkan kepada sampel yang diluluskan, dan ditinggalkan dengan pemulihan dinding dan lantai — tinjauan lulus tanpa helaian isu yang tidak berkesudahan." }
+    ],
+    zh: [
+      { q: "木作能在开业日期前完成吗？", a: "这正是预制化的目的：先批准图纸、提早确定样板、夜间安装并现场收面，计划在您签约前即已确定。" },
+      { q: "你们也处理业主的恢复要求吗？", a: "会。拆除、修补并重新粉刷旧装修至空壳状态，并附照片以便取回押金和物业验收。" },
+      { q: "适用什么保修？", a: "柜体结构（若属于我们建造的系统）保修5年，安装工艺保修12个月——两者均写入您的发票。" },
+      { q: "装修能顺利通过检查吗？", a: "木作固定于结构、按批准的样板收面，并完成墙面与地面恢复——检查可顺利通过，不会有一长串整改清单。" }
+    ]
+  },
+  "commercial:door-services-kl": {
+    ms: [
+      { q: "Pintu depan kedai kami turun menjelang tengah hari — boleh dibaiki?", a: "Selalunya boleh: pemeriksaan engsel dan pangsi, penutup berpenilaian betul serta penjajaran semula; jika bingkai atau kelengkapan kaca haus, penggantian dihargakan dengan penjagaan yang sama seperti pelarasan." },
+      { q: "Bolehkah kerja dijalankan semasa waktu perniagaan?", a: "Kebanyakan pelarasan mengambil masa di bawah satu jam setiap pintu dan boleh dijalankan antara waktu sibuk; penggantian kelengkapan pada pintu utama dijadualkan sebelum atau selepas perniagaan supaya pintu depan tidak pernah dibiarkan terbuka." },
+      { q: "Adakah anda menyervis pintu belakang dan pintu api?", a: "Kami membaiki dan menala penutup, engsel, selak dan pengedap pada pintu servis; pensijilan itu sendiri kekal dengan pihak bertauliah, dan kami akan memberitahu bila itu yang anda perlukan." },
+      { q: "Adakah anda menyimpan stok kelengkapan komersial?", a: "Penutup, engsel, kelengkapan tampalan dan rumah kunci biasa disimpan atau dibekalkan dengan pantas, dan sebut harga menamakan jenama serta model yang diputuskan semasa tinjauan." }
+    ],
+    zh: [
+      { q: "店门到中午就垂下，能修吗？", a: "通常可以：检查铰链与转轴、安装额定正确的闭门器并重新校准；若框架或玻璃五金磨损，会以与调整同等的细致来报价更换。" },
+      { q: "营业时段能施工吗？", a: "多数调整每扇门不到一小时，可安排在客流间隙；主入口的五金更换会安排在开店前或打烊后，确保前门从不处于敞开状态。" },
+      { q: "你们保养后区和防火门吗？", a: "我们维修并调校服务门的闭门器、铰链、锁舌与密封条；认证本身仍由具备资质的机构负责，当需要时我们会明确告知。" },
+      { q: "你们备有商用五金吗？", a: "闭门器、铰链、门夹及常见锁体均有备货或可快速调货，报价会写明勘察时确定的品牌与型号。" }
+    ]
+  },
+  "commercial:window-repair-services-kl": {
+    ms: [
+      { q: "Hujan bocor di sekeliling kaca kedai — dari mana kita mula?", a: "Pengedap dan lubang saliran dahulu: garisan gasket dan slot saliran gagal jauh sebelum kaca. Kami periksa, sebut harga dan baiki dengan ujian mampatan semasa tutup." },
+      { q: "Bolehkah tingkap tingkat atas dilakukan dengan selamat?", a: "Ya — dengan akses terancang bagi ketinggian yang terlibat, dan kaedah akses ditulis ke dalam sebut harga tetap, bukan dibuat improvisasi pada hari itu." },
+      { q: "Adakah anda menggantikan kaca dwilapis yang berkabus?", a: "Kabus bermaksud unit kedap telah gagal; kami tinjau, pesan IGU yang sepadan dan pasang semula dengan blok penetap dan pengedap perimeter baharu." },
+      { q: "Bolehkah kerja dijalankan semasa kami berniaga?", a: "Kerja bahagian depan dijalankan awal atau lewat; satu ruang kekal beroperasi, dan hari berakhir dengan bahagian tersebut dikunci dan selamat." }
+    ],
+    zh: [
+      { q: "雨水从店面玻璃周围渗入，该从哪里着手？", a: "先处理密封与排水孔：胶条线和排水槽远在玻璃损坏前就失效。我们会检查、报价并以关闭时的压缩测试修复。" },
+      { q: "高层窗户能安全施工吗？", a: "可以。会根据对应高度制定作业平台方案，并把方式写入固定报价，而不是当天临时应付。" },
+      { q: "你们更换起雾的双层玻璃吗？", a: "起雾意味着密封单元失效；我们勘察、订购匹配的中空玻璃，并以新的定位块和周边密封重新安装。" },
+      { q: "营业期间能施工吗？", a: "临街工程安排在早间或晚间；保留一个可营运的柜台，并在当天结束时将该区域上锁固定。" }
+    ]
+  },
+  "commercial:locksmith-services-kl": {
+    ms: [
+      { q: "Bolehkah kami menyusun seluruh lantai kepada satu induk?", a: "Boleh — hierarki kunci sepadan atau satu induk dirancang mengikut jadual pintu dan tahap akses anda, dipotong dan dikeluarkan bersama daftar kunci bertandatangan semasa penyerahan." },
+      { q: "Kami menukar penyewa di tengah pajakan — apa sekarang?", a: "Kekunci semula atau tukar silinder pada pintu kongsi dan terhad pada hari yang sama jika stok mengizinkan, dan kemas kini daftar kunci supaya kunci lama tidak lagi membuka ruang aktif." },
+      { q: "Adakah anda mengendalikan kunci digital kedai?", a: "Kami memasang dan menyervis kawalan akses yang sesuai untuk unit runcit — papan kekunci dan silinder pintar dengan lampau mekanikal — dan menyerahkan kod admin yang benar-benar anda kawal." },
+      { q: "Bolehkah kami mengawal siapa memegang kunci?", a: "Daftar kunci, kosong terhad dan kod boleh ditarik adalah standard pada kerja komersial — dikeluarkan kepada penjaga bernama, bukan laci di kaunter." }
+    ],
+    zh: [
+      { q: "能把整层钥匙设为主钥匙吗？", a: "可以。我们会按您的门表和权限层级规划同钥匙或主钥匙体系，并在交付时切配并附上签字的钥匙登记册。" },
+      { q: "租约中途更换租户，怎么办？", a: "在库存允许的情况下，当天即可为共用与受限门重新配钥匙或更换锁芯，并更新登记册，确保旧钥匙不再打开使用中的空间。" },
+      { q: "你们处理店面数码锁吗？", a: "我们安装并维护适合零售场所的门禁，含密码键盘与具机械应急的智能锁芯，并让您拥有真正可控制的管理员密码。" },
+      { q: "我们能控制谁持有钥匙吗？", a: "钥匙登记册、受限钥匙坯和可撤销密码是商业项目的常规做法——发放给指定保管人，而不是放在前台抽屉。" }
+    ]
+  },
+  "commercial:glass-aluminium-services-kl": {
+    ms: [
+      { q: "Pelanggan melanggar panel kaca kami — boleh ditukar pantas?", a: "Boleh — tapak dijamin dan diukur pada hari yang sama, dan panel terbaja yang sepadan dengan kelengkapan baharu dipasang sebaik sahaja difabrikasi, biasanya dalam beberapa hari bukan minggu." },
+      { q: "Adakah partition aluminium sedia untuk lampu?", a: "Bingkai membawa jurang servis dan jadual glazing bead dari lukisan, dengan konduit disalurkan di dalam tiang sebelum panel menutup laluan." },
+      { q: "Adakah terdapat waranti pada kelengkapan?", a: "12 bulan untuk kelengkapan, pengedap dan mutu kerja pemasangan, ditulis pada invois; kaca itu sendiri mengikut pensijilan pembaja." },
+      { q: "Adakah kaca depan kedai diganti pada hari yang sama?", a: "Kerosakan dibuat selamat pada lawatan tersebut; kaca terbaja gantian diukur serta-merta dan dipasang sebaik sahaja pengeluar melepaskannya, biasanya dalam beberapa hari." }
+    ],
+    zh: [
+      { q: "顾客撞坏了玻璃面板，能快速更换吗？", a: "可以。当天即可封控现场并测量，制造完成后立即安装匹配的钢化面板与五金，通常只需几天而非数周。" },
+      { q: "铝隔断是否预留给筒灯？", a: "框架按图纸预留走线间隙与玻璃压条位置，并在面板封闭前于立柱内走好线管。" },
+      { q: "五金有保修吗？", a: "五金、密封件与安装工艺保修12个月，写入发票；玻璃本身遵循钢化厂的认证。" },
+      { q: "店面玻璃能当天更换吗？", a: "破裂会在当次上门先做安全处置；替换钢化玻璃随即测量，并在制造商交付后尽快安装，通常几日之内。" }
+    ]
+  },
+  "commercial:cctv-services-kl": {
+    ms: [
+      { q: "Berapa banyak kamera yang unit kami perlukan?", a: "Tinjauan tapak atau pelan lantai menentukannya: titik buta di pintu masuk, lorong daftar, bilik stok dan pintu penerimaan ialah perkara biasa, dan sebut harga menyenaraikan kedudukan bukan bilangan berlebihan." },
+      { q: "Bolehkah pejabat pengurusan melihat paparan?", a: "Paparan langsung disediakan untuk log masuk bernama melalui laluan akses yang dipersetujui dengan IT anda, dan pengekalan perakam dikonfigurasikan mengikut jam yang diperlukan strata atau polisi anda." },
+      { q: "Apa berlaku apabila kamera gagal?", a: "Kesihatan liputan disemak pada lawatan servis; unit, bekalan kuasa dan kabel yang gagal diganti daripada stok jika boleh, dengan perubahan dicatat pada helaian tapak anda." },
+      { q: "Adakah pemasangan anda memenuhi keperluan insurans?", a: "Pelan liputan, tetapan pengekalan dan rekod pentauliahan didokumenkan supaya tuntutan dan semakan pengurusan boleh menjejak dengan tepat apa yang dipasang dan di mana." }
+    ],
+    zh: [
+      { q: "我们单位到底需要多少摄像头？", a: "现场巡查或平面图就能确定：入口盲区、收银通道、仓库与收货门通常是必装点，报价列出位置而非虚增数量。" },
+      { q: "管理办公室能查看画面吗？", a: "会按您IT部门同意的访问路径为具名账号开通实时查看，录像保留期按您的共管或政策实际要求配置。" },
+      { q: "摄像头故障时怎么办？", a: "服务上门时检查覆盖率；故障的摄像头、电源与布线在可能时用库存更换，并把变更记录到您的现场表。" },
+      { q: "你们的安装能满足保险要求吗？", a: "我们会记录覆盖方案、保留设置与调试记录，使理赔与管理审查能准确追溯装了什么、装在何处。" }
+    ]
+  },
+  "commercial:autogate-services-kl": {
+    ms: [
+      { q: "Pintu gerbang kami rosak semasa tukar syif — berapa cepat?", a: "Diagnosis kecemasan menyelesaikan kebanyakan kegagalan semasa lawatan; di mana papan atau motor tiada stok, pelan pelepasan manual sementara memastikan kawasan terus berfungsi sehingga penggantian." },
+      { q: "Bolehkah pelawat menghubungi pengawal keselamatan?", a: "Boleh — pelepasan interkom atau gaya telefon disambungkan ke pos pengawal, dan tag akses untuk kakitangan dikeluarkan serta boleh ditarik oleh sesiapa yang anda lantik untuk mengurusnya." },
+      { q: "Adakah pelan servis berbaloi?", a: "Pada pintu gerbang yang menanggung setiap syif, ya: pembersihan rel, semakan penggelek dan had serta pengetatan kelengkapan berbolt menghalang kesesakan yang menutup kawasan selama sehari." },
+      { q: "Bolehkah anda menyelenggara pintu kami dengan pelan?", a: "Lawatan berjadual menyemak rel, penggelek, had, pancaran dan tork — lebih murah daripada kerosakan semasa syif yang akan terhenti." }
+    ],
+    zh: [
+      { q: "换班时大门坏了，多久能到？", a: "紧急诊断通常当场排除多数故障；若控制板或电机缺货，会提供临时手动释放方案，让场地在更换前继续运作。" },
+      { q: "访客能呼叫保安开门吗？", a: "可以。对讲或电话式释放会接到岗亭，员工门禁标签由您指定的人发放并可撤销。" },
+      { q: "保养计划值得吗？", a: "对于每个班次都要用的大门，值得：清洁轨道、检查滚轮与限位、紧固螺栓五金，可防止让货场停运一天的卡死。" },
+      { q: "你们能按计划保养大门吗？", a: "预约上门检查轨道、滚轮、限位、红外与扭矩——比在它会卡住的班次里发生故障更省钱。" }
+    ]
+  },
+  "commercial:welding-services-kl": {
+    ms: [
+      { q: "Bolehkah kimpalan dijalankan di dalam unit yang beroperasi?", a: "Dengan pendekatan permit kerja panas: skrin, pengawasan kebakaran, pengekstrakan dan pemindahan bahan mudah terbakar — dirancang dalam sebut harga, dan wajib di bangunan kongsi." },
+      { q: "Adakah anda membaiki pintu dan jeriji yang bengkok?", a: "Ya — meluruskan, kimpalan semula, bahagian baharu atau penggelek, kemudian mengisar dan mengecat supaya pembaikan tidak kelihatan jelas dari sepuluh meter." },
+      { q: "Adakah fabrikasi keluli tahan karat sesuai untuk kawasan makanan?", a: "Kaunter belakang, singki dan pelindung dikimpal, digiling licin dan disiapkan untuk pembersihan — dibina mengikut senarai semak kebersihan yang digunakan untuk audit dapur anda." },
+      { q: "Adakah kerja panas didokumenkan untuk bangunan?", a: "Maklumat permit, susunan pengawasan kebakaran dan foto siap dimasukkan ke dalam pakej penutupan yang dijangkakan oleh pejabat pengurusan anda." }
+    ],
+    zh: [
+      { q: "能在仍在营业的店内焊接吗？", a: "按动火作业许可流程进行：加屏障、设防火监护、抽排并移走可燃物——写入报价，且在共用建筑中为强制要求。" },
+      { q: "你们修复弯曲的铁门和格栅吗？", a: "会。矫正、重新焊接、更换段件或滚轮，再打磨与喷漆，让修复在十米外看不出来。" },
+      { q: "不锈钢制作符合食品区标准吗？", a: "后厨台面、水槽与护罩均焊接、打磨平滑并按清洁要求收面——按您厨房审计所依据的卫生清单打造。" },
+      { q: "动火作业会为建筑留档吗？", a: "许可信息、防火监护安排和完工照片会一并放入物业管理所期望的收尾资料包。" }
+    ]
+  },
+  "commercial:aircon-services-kl": {
+    ms: [
+      { q: "Bolehkah servis dijalankan tanpa menutup lantai?", a: "Boleh — unit dilakukan satu demi satu selepas waktu dagangan, dengan dulang saliran dibungkus dan penapis dicuci supaya pagi seterusnya bermula sejuk dan bersih." },
+      { q: "Adakah anda menyervis sistem bumbung atau besar?", a: "Sistem dinding, kaset siling dan multi-split sehingga saiz biasa di pejabat Klang Valley dan unit F&B berada dalam skop; peralatan melebihi itu ditanda dengan jujur semasa tinjauan." },
+      { q: "Apakah waranti untuk pemasangan komersial?", a: "1 bulan waranti mutu kerja dengan 3 bulan waranti bahagian, setiap unit dan ditulis pada invois; waranti pengilang disalurkan secara berasingan." },
+      { q: "Bagaimana kami menjejak servis bagi banyak unit?", a: "Setiap unit mendapat kad bertarikh — jenis servis, bacaan dan tetingkap seterusnya — jadi log kemudahan menulis sendiri." }
+    ],
+    zh: [
+      { q: "不关闭楼层就能进行保养吗？", a: "可以。营业结束后逐台处理，接水盘用袋包好、滤网清洗，让第二天早上凉爽干净地开始。" },
+      { q: "你们保养屋顶或大型系统吗？", a: "壁挂式、天花嵌入式及多联机等巴生谷办公与餐饮常见规格都在范围内；更大机组会在勘察时如实说明。" },
+      { q: "商业冷气安装有什么保修？", a: "安装工艺保修1个月、零件保修3个月，逐台写入发票；制造商保修另行转交。" },
+      { q: "多台机组如何跟踪保养？", a: "每台都有一张带日期的卡片，记录保养类型、读数与下次窗口，让设施日志自动成形。" }
+    ]
+  },
+  "commercial:kitchen-renovation-services-kl": {
+    ms: [
+      { q: "Berapa hari kami perlu tutup?", a: "Kebanyakan ubah suai kafe merancang tetingkap tutup beberapa hari, bukan minggu: kerja kotor dijalankan malam dan hujung minggu, penyiapan berlaku secara langsung, dan program dipersetujui sebelum anda menandatangani." },
+      { q: "Bolehkah anda mengendalikan kerja semula perangkap gris dan saliran?", a: "Skop ditentukan oleh tinjauan — akses perangkap, cerun dan pembersihan dibina semula di mana senarai semak audit memerlukannya, dengan paip dilakukan pada harga tetap, bukan bayaran harian." },
+      { q: "Apakah waranti untuk dapur komersial?", a: "12 bulan mutu kerja pada ubah suai, dengan sistem kalis air membawa sehingga 5 tahun, semuanya terperinci dan ditulis sebelum jubin pertama ditanggalkan." },
+      { q: "Bolehkah dapur dibuka semula dalam sehari?", a: "Program berakhir dengan pengujian dan pembersihan semalaman supaya talian dibuka semula untuk hari perkhidmatan seterusnya — senarai tutup memacu kelulusan." }
+    ],
+    zh: [
+      { q: "我们需要停业多少天？", a: "多数咖啡店改造只安排几天而非数周：脏活安排在夜间与周末，收尾则在营业状态下进行，项目在您签约前即已确定。" },
+      { q: "你们能处理隔油池与排水改造吗？", a: "范围由勘察确定——凡审计清单要求处，重建池体入口、坡度与清污口，给排水按固定价而非计时计费。" },
+      { q: "商用厨房有什么保修？", a: "改造工艺保修12个月，防水系统最长5年，并在第一片瓷砖拆除前全部分项写明。" },
+      { q: "厨房能一天内重开吗？", a: "项目以过夜测试与彻底清洁收尾，让产线在下一个营业日重开——由关闭清单推动验收。" }
+    ]
+  },
+  "commercial:bathroom-renovation-services-kl": {
+    ms: [
+      { q: "Bolehkah tandas kami kekal dibuka semasa kerja?", a: "Itu kekangan reka bentuk: gerai diambil satu demi satu dengan sekatan kedap, supaya setiap lantai terus berfungsi sementara setiap bilik dibina semula di belakangnya." },
+      { q: "Bagaimana bau dan penutupan air dikendalikan?", a: "Paip menegak ditutup semasa kerja terbuka, saliran disambung semula dalam peringkat yang diuji, dan tetingkap penutupan semalaman membersihkan kerja basah dengan bekalan kembali sebelum pagi." },
+      { q: "Apakah yang dilindungi waranti?", a: "12 bulan pada mutu kerja ubah suai, dengan sistem kalis air membawa sehingga 5 tahun pada skop membran — semuanya pada invois, setiap gerai atau zon." },
+      { q: "Bagaimana anda memastikan kemudahan kekal boleh digunakan?", a: "Dengan menyusun kelengkapan dan pengasingan supaya blok tandas tidak pernah terputus sepenuhnya, dan dengan menyiapkan pengedap serta silikon setiap gerai sebelum membuka yang seterusnya." }
+    ],
+    zh: [
+      { q: "施工期间我们的洗手间能保持开放吗？", a: "这正是设计约束：隔间逐间拆除并用密封围挡，让每层在逐一重建隔间的同时持续可用。" },
+      { q: "异味和停水如何处理？", a: "开放施工时封住立管，排水按测试过的阶段恢复；夜间停水窗口清理湿作业，供水在第二天早上恢复。" },
+      { q: "保修涵盖什么？", a: "改造工艺保修12个月，防水膜范围最长5年——全部列入发票，按隔间或区域分别注明。" },
+      { q: "你们如何保持设施可用？", a: "通过分阶段安排洁具与隔离，使洗手间区永不整体停用，并在开启下一间前完成每间的密封与打胶。" }
+    ]
+  },
+  "commercial:awning-installation-services-kl": {
+    ms: [
+      { q: "Adakah awning kedai memerlukan kelulusan majlis?", a: "Selalunya, ya — peraturan reka bentuk, unjuran dan ketinggian berbeza mengikut majlis. Kami bina kepada geometri patuh dan menyediakan maklumat yang diperlukan penyerahan atau CDR ubah suai anda." },
+      { q: "Bolehkah awning dipasang tanpa menutup kedai?", a: "Kebanyakan pemasangan dijalankan awal pagi atau selepas waktu dengan pengurusan trafik di bahagian hadapan, jadi perniagaan dan arked lima kaki terjejas hanya untuk beberapa jam, bukan berhari-hari." },
+      { q: "Berapa harga awning komersial?", a: "Dihargakan setiap tapak berdasarkan rentang, bahan dan keadaan penyambungan — tiada harga 'bermula dari' generik, kerana setiap awning direka mengikut bangunan yang dipasang." },
+      { q: "Adakah pemasangan termasuk membuang awning lama?", a: "Ya — penyingkiran, tampalan penyambungan dan sentuhan cat di sekitar penambat baharu adalah item terperinci, bukan kejutan." }
+    ],
+    zh: [
+      { q: "店铺遮阳篷需要市政审批吗？", a: "经常需要——设计、挑出与高度规定各市政不同。我们按合规几何制造，并准备您提交或装修CDR所需的资料。" },
+      { q: "不关店就能装遮阳篷吗？", a: "多数安装在清晨或打烊后进行，并在门前做交通疏导，因此营业与五脚基只受数小时影响，而非数天。" },
+      { q: "商用遮阳篷多少钱？", a: "按现场跨度、材料和固定状况分别报价——没有通用的'起价'，因为每个遮阳篷都针对其所附建筑量身设计。" },
+      { q: "安装包括拆除旧遮阳篷吗？", a: "包括。拆除、修补固定点以及新锚位周边的补漆都是分项列出，而非事后加价。" }
+    ]
+  },
+  "residential:painting-services-kl": {
+    ms: [
+      { q: "Bolehkah kami tinggal di rumah semasa anda mengecat?", a: "Boleh — kerja dijadualkan bilik demi bilik, setiap satu ditutup, dikeringkan dan diserahkan semula sebelum yang seterusnya bermula, dengan cat bau rendah supaya bilik tidur dan ruang tamu terus boleh digunakan." },
+      { q: "Bagaimana dengan peraturan kondo tentang waktu dan bau?", a: "Kami berkerja dalam waktu diluluskan JMB dengan pengudaraan dan sistem VOC rendah dipersetujui lebih awal, dan dinding, siling serta sentuhan kawasan umum didokumentasikan dengan cara yang sama." },
+      { q: "Bagaimana sebut harga cat dikira untuk sebuah rumah?", a: "Diukur setiap bilik atau permukaan dinding dengan penyediaan disenaraikan secara jujur — tampalan retak, dempul, primer dan lapisan kemasan — sebagai satu harga tetap yang disahkan sebelum tin pertama dibuka." },
+      { q: "Adakah bau itu selamat untuk anak dan haiwan?", a: "Sistem boleh basuh VOC rendah digunakan di rumah berpenghuni, dan bilik tidur dialirkan udara semalaman dengan tingkap serta akses dipersetujui bersama anda sebelum lapisan pertama disapu." }
+    ],
+    zh: [
+      { q: "你们刷漆时我们能住在屋里吗？", a: "可以。工程按房间安排，每间在下一间开始前完成封闭、晾干并交还，采用低气味涂料，让卧室和客厅保持可正常使用。" },
+      { q: "共管物业对工时和气味有什么要求？", a: "我们在JMB批准的时段内施工，并提前商定通风与低VOC方案；公共区域墙、天花和修补也一样按此记录。" },
+      { q: "住宅刷漆如何计价？", a: "按每间或每面墙测量，并如实列出基层处理，如补裂、腻子、底漆与面漆，作为在开第一桶漆前确认的固定价格。" },
+      { q: "气味对孩子和宠物安全吗？", a: "有人居住的房屋使用低VOC可擦洗涂料，卧室过夜通风，窗户与通行安排在首道漆前与您确认。" }
+    ]
+  },
+  "residential:plumbing-services-kl": {
+    ms: [
+      { q: "Bagaimana anda mencari bocor tersembunyi tanpa memecahkan jubin?", a: "Ujian tekanan paip demi paip dan pemeriksaan akustik mengecilkan laluan dahulu, jadi hanya titik yang disahkan dibuka. Bocor lantai bilik mandi mendapat ujian yang sama sebelum sebarang pemecahan disyorkan." },
+      { q: "Adakah anda bekerja di sekeliling kanak-kanak dan haiwan?", a: "Pemutusan air diumumkan bersama tempoh jangkaan, zon kerja dipagari, dan alatan serta bahan dibersihkan pada akhir setiap lawatan — tiada kejutan tajam di lantai." },
+      { q: "Apakah waranti untuk paip rumah?", a: "30 hari pada pengedap sambungan dan mutu kerja pembaikan, ditulis pada invois, dengan apa-apa alat ganti membawa terma pengilang sendiri." },
+      { q: "Bolehkah anda menunjukkan injap pengasingan?", a: "Boleh — semasa penyerahan kami menerangkan injap utama, injap unit dan pengasing pemanas, serta menanda apa-apa yang belum berlabel supaya kecemasan seterusnya bermula lebih cepat." }
+    ],
+    zh: [
+      { q: "你们如何在不敲瓷砖的情况下找出暗漏？", a: "先逐段做压力测试和声学检查，缩小管路范围，只在确认的点开口。卫生间地面漏水在建议任何敲砖前也会做同样的测试。" },
+      { q: "你们会在孩子和宠物周围施工吗？", a: "会事先说明停水与预计时长，用围栏隔开作业区，并在每次离开前收走工具与材料，避免地面出现尖锐物。" },
+      { q: "住宅水管工程有什么保修？", a: "接头密封与维修工艺保修30天，写入发票，任何零件按制造商自身条款处理。" },
+      { q: "能带我看看各处的关水阀吗？", a: "可以。交付时会带您认清主管、单元阀门和热水器隔离阀，并为未标注处贴上标签，让下次紧急处理更快。" }
+    ]
+  },
+  "residential:ceiling-services-kl": {
+    ms: [
+      { q: "Bolehkah keluarga tinggal di rumah semasa kerja siling?", a: "Bilik kecil boleh — kawasan kerja ditutup dengan dinding zip dan kawalan habuk tekanan negatif jika boleh, dan setiap siling ditutup serta dicat sebelum yang berikutnya bermula." },
+      { q: "Siling saya bernoda selepas hujan — tampal atau ganti?", a: "Jika papan kendur atau rapuh ia diganti; jika masih kukuh, kami baiki punca air dahulu, kemudian potong, tampal, skim dan cat semula supaya pembaikan hilang di bawah cahaya." },
+      { q: "Adakah kelulusan kondo penting untuk siling?", a: "Ya — penggerudian, waktu dan laluan serpihan mengikut peraturan JMB; kami menguruskan butiran pekerja dan memastikan lif serta lorong biasa dilindungi semasa kerja." },
+      { q: "Bagaimana jika bocor merosakkan papan di atas?", a: "Punca dibaiki dahulu, kemudian papan yang terjejas diganti berbanding dicat di atasnya — set foto pemeriksaan menunjukkan dengan tepat apa yang dibuka." }
+    ],
+    zh: [
+      { q: "天花施工时家人能留在家里吗？", a: "小房间可以。作业区会用拉链墙和负压吸尘尽可能封闭，每间天花在下一间开工前完成封板并刷漆。" },
+      { q: "雨天后天花板渗色，是修补还是更换？", a: "若板材下沉或酥松就更换；若仍完好，会先解决水源，再切除、贴带、批灰并重刷，让修复在光线下看不出痕迹。" },
+      { q: "天花工程需要共管审批吗？", a: "需要。钻孔、工时与碎料清运都要遵守JMB规定；我们会处理工人资料，并在施工期间保护好公共电梯和走廊。" },
+      { q: "漏水损坏了吊顶板材怎么办？", a: "先修源头，再更换受影响板材，而不是直接刷漆覆盖——检查照片会清楚显示打开了哪些部位。" }
+    ]
+  },
+  "residential:waterproofing-services-kl": {
+    ms: [
+      { q: "Bolehkah bilik air dibaiki tanpa memecahkan jubin?", a: "Kadangkala — kebocoran garis halus dan sambungan bertindak balas kepada suntikan PU dan pengedapan semula. Jika membran benar-benar gagal, kami katakan begitu dan sebut harga pembaikan penuh, bukan menjual kemungkinan." },
+      { q: "Bagaimana anda membuktikan kebocoran berhenti?", a: "Ujian rendam 24–72 jam dengan foto siling di bawah pada setiap peringkat — pembaikan hanya disahkan apabila ujian lulus di rumah anda, bukan atas janji." },
+      { q: "Adakah kerja kalis air mengganggu seluruh rumah?", a: "Hanya kawasan basah yang terjejas — biasanya beberapa hari, dengan air dan saliran diuruskan serta ruang boleh digunakan semula sebaik masa pengawetan mengizinkan." },
+      { q: "Bolehkah anda bekerja semasa kami masih tinggal?", a: "Kerja bilik air disusun supaya sekurang-kurangnya satu zon kering kekal boleh digunakan, dengan pengaturan sementara dipersetujui dalam sebut harga, bukan dibuat improvisasi pada hari kedua." }
+    ],
+    zh: [
+      { q: "卫生间能免敲砖修复吗？", a: "有时可以。细小裂缝与接缝漏水可用PU灌注和重新封缝解决；若防水层确实失效，我们会如实告知并报价整体修复，而不是给您一个模棱两可的方案。" },
+      { q: "你们如何证明漏水已止住？", a: "进行24至72小时蓄水测试，并在每个阶段拍摄下方天花照片——只有测试在您家通过才签认，而不是靠承诺。" },
+      { q: "防水会弄乱整栋房子吗？", a: "只涉及受影响的湿区，通常几天；会管好水和排水，待养护时间一到即可恢复使用。" },
+      { q: "我们住着也能施工吗？", a: "卫生间工程顺序安排，至少保留一个干燥区可用；临时安排写入报价，而不是第二天临时起意。" }
+    ]
+  },
+  "residential:handyman-services-kl": {
+    ms: [
+      { q: "Adakah papan plaster selamat untuk TV besar?", a: "Bergantung pada dinding dan berat — kami imbas untuk stud atau sokongan kayu, gunakan sauh berkadar, dan tambah plat sokongan jika pemasangan selamat memerlukannya, bukannya terus menggantung." },
+      { q: "Bolehkah anda menyiapkan semua senarai tugasan dalam satu lawatan?", a: "Boleh — hantar senarai bersama foto dan ukuran kasar; kami menghargainya sebagai satu pelan lawatan supaya pemasangan, pembaikan dan pemasangan perabot berlaku dalam satu tempahan." },
+      { q: "Adakah anda turut mengendalikan bunyi decit dan kendur kecil?", a: "Selak pintu, retrofit tutup lembut, rel goyah dan penambat perabot untuk kanak-kanak adalah piawai pada lawatan rumah — pembaikan kecil yang membuatkan rumah terasa siap." },
+      { q: "Adakah anda membawa sauh yang betul untuk dinding saya?", a: "Setiap pemasangan bermula dengan semakan jenis dinding — imbas stud, sauh batu atau papan dipilih mengikut beban, dan pengikat diuji sebelum kami beredar." }
+    ],
+    zh: [
+      { q: "石膏板能挂大电视吗？", a: "取决于墙体和重量。我们会扫描木龙骨或木质背衬，采用额定锚栓，并在安全挂载需要时加装背板，而不是直接挂上去。" },
+      { q: "一次上门能完成整张待办清单吗？", a: "可以。把清单连同照片和大致尺寸发来，我们会作为一次上门计划报价，让挂装、维修和组装在单次预约内完成。" },
+      { q: "你们也处理奇怪的响声和下垂吗？", a: "门锁、缓冲加装、摇晃的栏杆以及为孩子做的家具固定都是家庭上门的常规项目——这些小修补让房子显得更完整。" },
+      { q: "你们带对了适合我墙面的锚栓吗？", a: "每次挂装都先检查墙体类型，扫描龙骨或针对砖墙/板材选择承载锚栓，并在离开前测试固定。" }
+    ]
+  },
+  "residential:house-renovation-services-kl": {
+    ms: [
+      { q: "Bolehkah kami tinggal di rumah semasa pengubahsuaian?", a: "Selalunya boleh untuk kerja berperingkat — kawasan basah dan bilik tidur disusun supaya satu bilik air dan satu bilik tidur kekal berfungsi; ubah suai penuh lebih mudah dengan pemindahan sementara, dan kami nyatakan yang mana anda ada." },
+      { q: "Apa sebenarnya berlaku pada peraturan kondo saya?", a: "Waktu berkerja, tempahan lif, laluan serpihan dan butiran pekerja difailkan dengan pengurusan sebelum hari pertama, dan keadaan tapak mengekalkan komitmen itu sepanjang kerja." },
+      { q: "Bagaimana anda mengelakkan harga melonjak?", a: "Sebut harga diperincikan mengikut bilik dan jabatan, disahkan selepas pemeriksaan tapak; perubahan hanya berlaku atas arahan bertulis anda dengan variasi berharga — tiada apa yang 'ditemui' pada masa invois." },
+      { q: "Bagaimana anda melindungi bilik yang masih kami gunakan?", a: "Partisi habuk, perlindungan lantai dan pembersihan akhir hari ditulis ke dalam program — ruang tamu kekal boleh digunakan sementara kerja berjalan di sebalik sekatan." }
+    ],
+    zh: [
+      { q: "装修期间我们还能住在家里吗？", a: "分阶段施工通常可以。湿区与卧室会按顺序安排，至少保留一个卫生间和一间卧室可用；全屋翻新则建议临时搬出，我们会说明您属于哪种情况。" },
+      { q: "我的共管规定实际怎么执行？", a: "施工时段、电梯预约、碎料清运和工人资料会在开工前报备物业，并让现场条件在整个工程期间遵守这些承诺。" },
+      { q: "你们如何避免价格上涨？", a: "报价按房间和工种分项，现场勘查后确认；变更只在您书面指示并有定价变动时发生——发票时不会出现'意外'。" },
+      { q: "你们如何保护我们仍在使用的房间？", a: "防尘隔断、地面保护与每日收尾都写入计划，居住区在封闭区后方继续作业时仍可使用。" }
+    ]
+  },
+  "residential:electrical-services-kl": {
+    ms: [
+      { q: "Pemutus saya tersentuh apabila pemanas dan cerek digunakan — normal?", a: "Tidak normal, tetapi biasa: perkakas berat berkongsi litar berkapasiti rendah. Pembetulannya ialah titik khusus bersaiz mengikut beban, bukan pemutus lebih besar — kami betulkan dan uji." },
+      { q: "Adakah pendawaian semula diperlukan di rumah lama?", a: "Hanya jika tinjauan menyatakannya — keadaan penebat, pembumian dan kapasiti papan menentukan. Jika menambah titik dengan selamat sudah memadai, itulah yang kami sebut harga." },
+      { q: "Apakah waranti untuk kerja elektrik?", a: "12 bulan waranti mutu kerja pada pemasangan dan pembaikan, dengan litar dilabel dan keputusan ujian dicatat pada invois anda." },
+      { q: "Adakah anda berkerja dengan juruelektrik JMB kami?", a: "Boleh — papan, penegak dan pengasingan biasa diselaraskan dengan kakitangan bangunan, dengan permit diuruskan sebelum apa-apa dibuka." }
+    ],
+    zh: [
+      { q: "热水器和烧水壶一起用时跳闸，正常吗？", a: "不正常，但较常见：大功率电器共用一条容量不足的回路。正确做法是按负荷设专用插座，而不是换更大的开关，我们会做对并测试。" },
+      { q: "老房子需要重新布线吗？", a: "只有勘察认为需要才做——绝缘状况、接地和电箱容量决定。若安全加装点位已够，我们就按此报价。" },
+      { q: "电气工程有什么保修？", a: "安装与维修工艺保修12个月，回路会贴标签，测试结果记录在发票上。" },
+      { q: "你们会与物业的电工配合吗？", a: "会。电箱、母排和公共隔离会与楼宇人员协调，并在打开任何部位前办妥许可。" }
+    ]
+  },
+  "residential:water-heater-services-kl": {
+    ms: [
+      { q: "Pemanas mana yang sesuai untuk bilik air tingkat tinggi?", a: "Unit kondo biasanya menggunakan jenis segera pada litar khusus 15–20A; di mana air panas membekal tab mandi atau berbilang titik, saiz tangki dihargakan mengikut bekalan dan ruang anda, bukan anggaran kasar." },
+      { q: "Pancuran memanaskan kemudian sejuk — apa yang rosak?", a: "Biasanya elemen berkerak atau isu pemutus aliran/terma pada talian air keras. Nyahkerak selalunya membetulkannya; jika elemen telah habis, penggantian dihargakan sebelum menyentuh unit." },
+      { q: "Adakah anda memasang pemanas yang saya beli sendiri?", a: "Boleh — pada titik khusus yang betul dengan pengasing dan pembumian disahkan; jika unit kedai tidak sesuai dengan pendawaian bilik air anda, kami nyakannya sebelum memasang apa-apa." },
+      { q: "Bagaimana saya tahu saiz yang sesuai untuk keluarga saya?", a: "Bilangan lekapan, susun atur bilik air dan tekanan utama menentukan jenis segera vs simpanan — disaizkan semasa tinjauan dengan pendawaian ditunjukkan kepada anda, bukan diagak daripada katalog." }
+    ],
+    zh: [
+      { q: "高层卫生间适合什么热水器？", a: "共管单元通常使用即热式，接在15到20A专用回路上；若热水供浴缸或多个用水点，储水式会按您的供水和空间报价，而不是按习惯估算。" },
+      { q: "淋浴先热后冷，是哪里坏了？", a: "常见是硬水水路上元件结垢或流量/温控保护问题。除垢往往能解决；若元件已损，会在动手前先报价更换。" },
+      { q: "你们安装我自己买的热水器吗？", a: "会。接在正确专用点并带隔离器与核实接地；若商家机型不适合您卫生间的线路，会在安装前明确告知。" },
+      { q: "我怎么知道哪个尺寸适合我家？", a: "由洁具数量、卫生间布局和主管水压决定即热还是储水——在勘察时定尺寸并让您看清线路，而不是凭目录猜测。" }
+    ]
+  },
+  "residential:ceiling-fan-services-kl": {
+    ms: [
+      { q: "Adakah kipas selamat pada papak konkrit?", a: "Dengan corak sauh yang betul dan pengikat berkadar beban, ya — dan di mana kotak siling atau pemasangan gipsum sahaja tidak dapat menampung tork kipas berputar, kami nyatakan apa yang diperlukan sebelum memasang." },
+      { q: "Kipas saya goyah dan berbunyi klik — seimbang atau ganti?", a: "Selalunya penjejakan bilah, batang longgar atau bearing haus; kami uji pada kelajuan selepas membaik pulih, dan serahan tanpa goyah ialah sebahagian daripada kerja." },
+      { q: "Bolehkah anda menggantikan lampu dengan kipas?", a: "Boleh — laluan beban disemak, pengikat baharu dipasang, pendawaian dirapikan dan lubang lampu lama ditutup dengan betul, bukan ditutup dengan pita." },
+      { q: "Adakah pengimbangan benar-benar sebahagian kerja?", a: "Ya — semakan goyah kelajuan demi kelajuan, pengesahan tork pendakap dan panduan pemasangan alat kawalan jauh dilakukan di hadapan anda sebelum serahan." }
+    ],
+    zh: [
+      { q: "风扇安装在混凝土楼板上安全吗？", a: "采用正确的锚固型式与承载固定件就安全；若吊盒或纯石膏板无法承受旋转风扇的扭矩，我们会在安装前说明需要什么。" },
+      { q: "我的风扇晃动并咔哒响，是平衡还是更换？", a: "通常是叶片轨迹、吊杆松动或轴承老化；修好后我们会按档位测试，并且无晃动地交付是工序的一部分。" },
+      { q: "能用风扇替换灯吗？", a: "可以。会检查承重路径、安装新固定件、理好线路并妥善封闭旧灯孔，而不是用胶带盖上。" },
+      { q: "平衡真的在施工范围内吗？", a: "是的。逐档检查晃动、核实支架扭矩并在交付前当面对接设定遥控器。" }
+    ]
+  },
+  "residential:lighting-services-kl": {
+    ms: [
+      { q: "Bolehkah penggantian LED berjalan pada dimer lama saya?", a: "Kadangkala, tetapi pemandu tidak sepadan berkelip dan memendekkan hayat lampu — kami menguji pasangan semasa pemasangan dan sebut harga dimer yang betul apabila yang lama tidak berfungsi." },
+      { q: "Berapa terang 'cukup terang' untuk dapur?", a: "Lapisan tugas mengatasi watt mentah: lampu bawah kabinet atau sisi kaunter ditambah grid lampu turun sekata, ditentukan dalam zon lux berbanding bilangan lampu." },
+      { q: "Adakah anda menampal siling selepas memotong?", a: "Boleh — potongan lekapan tersembunyi dirapikan, dikotak jika perlu dan disekir rata di sekeliling lekapan, supaya siling kelihatan asal di sekeliling lampu baharu." },
+      { q: "Bolehkah anda bekerja mengikut waktu tidur bayi?", a: "Waktu bising terpulang kepada anda — kerja memotong dan menggerudi dijadualkan di luar tetingkap rehat yang dipersetujui, dengan kemasan senyap di sekelilingnya." }
+    ],
+    zh: [
+      { q: "LED改造能在老调光器上运行吗？", a: "有时可以，但不匹配的驱动器会闪烁并缩短寿命；安装时我们会测试组合，并在此前调光器不适用时报价合适的调光器。" },
+      { q: "厨房要多亮才算'够亮'？", a: "任务照明比总功率更重要：橱柜下或台面侧照明，加上均匀的筒灯网格，按勒克斯分区来定，而不是按灯数。" },
+      { q: "开孔后你们会修补天花吗？", a: "会。嵌入式灯具开孔会修边、按需加装底盒并围绕灯具批平，让新灯周围的天花看起来是原装的。" },
+      { q: "你们能配合宝宝的午睡时间吗？", a: "嘈杂时段由您选择——切割与钻孔会安排在约定的休息时间之外，并在其周围进行安静收尾。" }
+    ]
+  },
+  "residential:tiling-services-kl": {
+    ms: [
+      { q: "Bolehkah satu jubin retak benar-benar diganti?", a: "Selalunya — jubin diangkat dengan teliti, substrat dibersihkan, jubin sepadan dipasang dengan pelekat baharu dan digrout semula kepada warna. Jika kelompok itu tiada lagi, kami tunjukkan pelan sambungan dahulu." },
+      { q: "Mengapa jubin bilik air retak semula selepas pemasangan semula?", a: "Kerana pergerakan dan kalis air dilangkau. Kami sediakan papak, buat semula membran zon basah dan biarkan ia mengawet sebelum jubin baharu dipasang — kerja dua kali ganda, separuh panggilan balik." },
+      { q: "Apakah waranti untuk kerja jubin?", a: "12 bulan pada lekatan jubin dan mutu kerja grout, ditulis pada invois, jadi terangkat dan kegagalan grout dilindungi, bukan diperdebatkan." },
+      { q: "Apa yang mengelakkan jubin retak kembali?", a: "Bedding pelekat liputan penuh, sambungan pergerakan di mana bangunan memerlukannya dan klip meratakan pada format besar — spesifikasi dinyatakan, bukan diandaikan." }
+    ],
+    zh: [
+      { q: "单独一块瓷砖真能更换吗？", a: "通常可以。小心撬起瓷砖、清理基层，用新粘合料铺上匹配的砖并重新勾缝调色；若该批次已无货，我们会先展示接缝方案。" },
+      { q: "为什么卫生间瓷砖重贴后又会开裂？", a: "因为漏掉了基层处理和防水。我们处理楼板、重做湿区防水层并养护后再上砖——多一倍工序，少一半返修。" },
+      { q: "铺砖有什么保修？", a: "瓷砖粘结与勾缝工艺保修12个月，写入发票，因此起翘和勾缝开裂都受保，而非靠争辩。" },
+      { q: "怎么防止瓷砖再次开裂？", a: "满刀灰找平、在需处设置伸缩缝，大规格用找平卡扣——规格明确写入，而非想当然。" }
+    ]
+  },
+  "residential:plaster-ceiling-services-kl": {
+    ms: [
+      { q: "Adakah siling plaster sesuai untuk siling kondo rendah?", a: "Bergantung pada penurunan — kedalaman profil direka di sekeliling lampu dan langsir anda, dan di mana siling berunsur sahaja lebih sesuai berbanding bakul penuh, kami lukis sedemikian." },
+      { q: "Mengapa siling plaster retak di sudut?", a: "Pergerakan dan sistem sambungan lemah. Dipasang dan ditampal dengan betul dengan sudut diperkukuh dan jarak pengikat tepat — sistem itulah yang dilindungi waranti 10 tahun." },
+      { q: "Adakah kerja itu berhabuk untuk isi rumah?", a: "Pemotongan berlaku di luar atau dalam zon tertutup dengan pengekstrakan, dan setiap bilik diserahkan selepas diampelas, dicat dan perabot dipasang semula sebelum bilik seterusnya dibuka." },
+      { q: "Adakah lampu cove menjadi panas?", a: "Pemilihan pita LED dan jarak saluran dipilih mengikut profil, dengan pemandu mudah diakses supaya cove boleh diservis tanpa menyentuh plaster." }
+    ],
+    zh: [
+      { q: "低矮共管天花板适合做石膏天花吗？", a: "取决于下吊幅度——轮廓高度会围绕您的灯光与窗帘设计；若只做造型天花比整圈回字形更合适，我们会按此绘制。" },
+      { q: "为什么石膏天花在转角处开裂？", a: "是因为变形和接缝系统薄弱。用加固角与正确固定间距贴带固缝，正是10年保修所覆盖的系统。" },
+      { q: "这项施工对家人来说很脏吗？", a: "切割在场外或密闭区进行并辅以抽尘，每间房在下一间开工前都会打磨、刷漆并复位家具后再移交。" },
+      { q: "灯槽会发热吗？", a: "LED灯带与槽间距会按轮廓选择，驱动器便于取用，以便维护灯槽而不必触碰石膏。" }
+    ]
+  },
+  "residential:skim-coat-services-kl": {
+    ms: [
+      { q: "Perlukah saya skim-koat sebelum mengecat semula?", a: "Jika dinding menunjukkan tompokan, kesan penggelek atau retak halus di bawah cahaya matahari, ya — mengecat di atas plaster buruk hanya menjadikan masalah itu berkilat. Licin dahulu, warna kemudian." },
+      { q: "Berapa banyak habuk terkena perabot?", a: "Kaedah pengamplasan basah memastikan habuk udara rendah, dan apa-apa yang masih di dalam bilik ditutup di bawah kepingan dengan pintu dirapat; penyerahan termasuk pembersihan, bukan sekadar cadangan untuk menyapu." },
+      { q: "Apakah waranti untuk kerja skim?", a: "12 bulan pada kelicinan dan lekatan, direkodkan pada invois — terangkat atau terlalu mengamplas dikembalikan dan disiapkan semula secara percuma." },
+      { q: "Adakah skim cukup untuk unit sewa?", a: "Ya — skim tambah dua lapisan kemasan biasanya yang diterima oleh pemeriksaan tuan tanah; di mana dinding gagal ujian pembaris, penyediaan itu disebutharga dahulu." }
+    ],
+    zh: [
+      { q: "重刷前需要做批灰吗？", a: "若墙面在日光下出现斑驳、滚筒痕或细小裂缝，需要——在差的底灰上刷漆只会让问题变得更显眼。先平整，再上色。" },
+      { q: "扬尘会影响家具吗？", a: "湿磨方法可降低空气悬浮粉尘，房内物品用保护膜盖住并封好门缝；交付包含清扫，而非只是建议您去扫。" },
+      { q: "批灰有什么保修？", a: "平整度与粘结保修12个月，记录在发票上——起翘或打磨过度会免费返工。" },
+      { q: "出租房只做批灰够吗？", a: "够。批灰加两层面漆通常就能通过业主验收；若墙面通不过靠尺检测，会先报价基层处理。" }
+    ]
+  },
+  "residential:flooring-services-kl": {
+    ms: [
+      { q: "Bolehkah lantai dipasang di sekeliling perabot saya?", a: "Untuk kebanyakan pemasangan, ya — bilik dikosongkan ke perimeter, dipasang dan diserahkan semula dengan perabot diletakkan kembali serta pad felt dipasang di mana lantai bertemu kaki." },
+      { q: "Lantai mana yang sesuai untuk dapur basah dan anak-anak?", a: "SPC dengan lapisan haus yang dinilai untuk ruang, penghalang lembapan di tepi basah dan butiran skirt koved — lamina mendapat perbincangan jujur di mana percikan adalah realiti harian." },
+      { q: "Mengapa lantai baharu berkeriuk atau bergelombang?", a: "Hampir selalu subfloor: gelombang bermakna kerataan luar spesifikasi, keriuk bermakna tekanan bawah/kunci. Kami uji kerataan dengan pembaris sebelum memasang dan membetulkan apa yang dijumpai." },
+      { q: "Adakah anda mengalihkan perabot untuk kami?", a: "Perabot perimeter diangkat, dilindungi dan diletakkan semula dengan pad felt sebagai piawai; kepingan berat dibincangkan sebelum pemasangan, bukan selepas lantai tiba." }
+    ],
+    zh: [
+      { q: "地板能绕着家具铺吗？", a: "多数安装可以。房间清到墙边、铺好并把家具归位，在落地处装裆垫；重物会在安装前商定，而非地板到货后。" },
+      { q: "哪种地板适合湿厨房和小孩？", a: "选用耐磨层按房间评定的SPC，湿边设防潮层并做弧形踢脚；若日常溅水频繁，我们会如实与您讨论层压板的适用性。" },
+      { q: "为什么新地板会响或波浪？", a: "几乎都是基层问题：波浪说明平整度超差，吱嘎说明垫层或锁扣受力。安装前用靠尺测平整并处理发现的问题。" },
+      { q: "你们会替我们搬家具吗？", a: "靠墙家具会抬起、保护并按标准加裆垫后归位；重型物件会在铺装前讨论，而不是等地板到位后再说。" }
+    ]
+  },
+  "residential:epoxy-flooring-services-kl": {
+    ms: [
+      { q: "Adakah epoksi tahan minyak, petrol dan kesan tayar?", a: "Topcoat tahan kimia melakukannya — pembersihan hanya sekali mop, bukan gosok. Di mana tayar panas melekat pada hari cerah, spesifikasi menambah topcoat yang betul, bukan menyalahkan anda kemudian." },
+      { q: "Berapa lama sebelum saya boleh parkir di atasnya?", a: "Laluan kaki dalam sehari; beban kenderaan selepas tetingkap pengawetan penuh yang diperlukan sistem — jadual diberi lebih awal supaya kereta ada tempat berehat sementara." },
+      { q: "Bagaimana dengan lembapan naik dari papak?", a: "Diuji sebelum sebut harga. Jika tekanan wap tinggi, binaan tahan lembapan atau butiran pengudaraan ditetapkan — jika tidak, sebarang epoksi akan terangkat dalam beberapa bulan, dan kami tidak akan menjualnya." },
+      { q: "Bolehkah kami buat bahagian demi bahagian?", a: "Boleh — lantai garaj dan utiliti dibahagikan kepada ruang kerja supaya satu ruang parkir kekal berfungsi sepanjang program pengawetan." }
+    ],
+    zh: [
+      { q: "环氧地坪能耐油、汽油和轮胎印吗？", a: "耐化学面漆可以，清洁只需拖一遍而非擦洗。当热轮胎在晴天会粘连时，规格会加对的面漆，而不是事后怪您。" },
+      { q: "多久可以停车？", a: "当天可行人；车辆需待系统所需的完整固化窗口——排程提前给出，让车在此期间有地方停放。" },
+      { q: "基层水分上升怎么办？", a: "报价前会检测。若蒸汽压力偏高，会指定耐潮构造或排气细部；否则任何环氧都会在几个月内起翘，我们不会卖这种。" },
+      { q: "可以分区施工吗？", a: "可以。车库与杂物间地面会分成可施工区，让整个固化期间始终保留一个车位可用。" }
+    ]
+  },
+  "residential:roof-repair-services-kl": {
+    ms: [
+      { q: "Kami hanya bocor dalam hujan lebat berangin — mengapa?", a: "Itu menunjuk kepada lapisan, peraih dan limpahan lembangan berbanding retakan: air menolak ke atas di bawah kepingan terangkat atau ke dalam lembangan tersumbat. Kami uji dan tutup tepat garis kegagalan itu." },
+      { q: "Bolehkah bocor dibaiki minggu ini?", a: "Pengedap sementara untuk menghentikan kerosakan dalaman biasanya minggu yang sama; program kekal menyusul selepas tinjauan bumbung penuh, dihargakan setiap kawasan dan kerosakan, bukan berdasarkan khabar angin." },
+      { q: "Apakah waranti untuk kerja ini?", a: "Sistem membran membawa sehingga 10 tahun pada sistem dan mutu kerja yang dipasang; pembaikan kepingan dan peraih membawa 90 hari — kedua-duanya disenaraikan pada invois dengan kawasan dirawat." },
+      { q: "Adakah anda menyemak bahagian dalam juga?", a: "Pemeriksaan ruang loteng dan sisi siling menyertai tinjauan bumbung di mana akses mengizinkan, kerana corak noda menunjukkan di mana kepingan dan peraih gagal." }
+    ],
+    zh: [
+      { q: "只在狂风暴雨时漏水，为什么？", a: "这指向搭接、泛水和天沟溢流而非裂缝：水在翘起的板材下或受阻的天沟里向上冲。我们会测试并封住这些失效线。" },
+      { q: "这周能修好漏水吗？", a: "临时封堵以阻止室内损坏通常可当周完成；在全面屋顶勘察后按面积与缺陷分别报价永久方案，而不是凭传言。" },
+      { q: "这项工程有什么保修？", a: "防水膜系统对所装系统与施工最长保修10年；板材和泛水修补保修90天——两者列出处理区域并记在发票上。" },
+      { q: "你们也会检查室内吗？", a: "在可进入时，屋面勘察会同时检查阁楼和天花板吊顶，因为污渍图案能显示板材与泛水在哪里失效。" }
+    ]
+  },
+  "residential:kitchen-cabinet-services-kl": {
+    ms: [
+      { q: "Berapa lama dari ukuran ke dapur siap?", a: "Kabinet tipikal berjalan beberapa hari di tapak selepas fabrikasi luar — pembongkaran, pemasangan, permukaan dan kemasan disusun supaya dapur anda terhenti hanya dalam tetingkap paling singkat yang jujur." },
+      { q: "Lamina atau hadapan PU — mana lebih tahan lama di sini?", a: "Dalam dapur lembap dan berminyak, lamina menahan stim dan gosokan; PU kelihatan lebih lembut dan memerlukan penjagaan lebih lembut. Kami padankan kemasan dengan cara anda sebenarnya memasak, dan katakan kenapa." },
+      { q: "Bolehkah anda kekal dan membina semula kabinet sedia ada?", a: "Di mana kotak masih kukuh, pasang semula hadapan dengan pintu, kelengkapan dan permukaan baharu selalunya separuh kos — ditawarkan apabila pemeriksaan menunjukkan teras itu berbaloi." },
+      { q: "Bagaimana panel dipadankan dengan warna sedia ada?", a: "Papan sampel diletakkan bersebelahan dalam cahaya dapur anda sebelum kelulusan; jika padanan tepat mustahil, kami nyakannya sebelum fabrikasi, bukan selepas." }
+    ],
+    zh: [
+      { q: "从测量到厨房完工要多久？", a: "典型橱柜在厂外制造后，现场只需几天——拆除、安装、台面与收面按序进行，让您的厨房在最短且真实的时间内停用。" },
+      { q: "层压板还是PU门板，哪种更耐用？", a: "在潮湿多油的厨房，层压板能抵御蒸汽和擦洗；PU观感更柔和，需要更细心打理。我们会照您的实际烹饪习惯来配，并说明原因。" },
+      { q: "能保留并重建现有柜体吗？", a: "若箱体完好，换新门板、五金和台面往往是半价方案——仅在检查确认芯材值得时才提供。" },
+      { q: "板材如何匹配现有颜色？", a: "样板会在您厨房的光线下并排比对后再确认；若无法精准匹配，会在制造前说明，而不是事后。" }
+    ]
+  },
+  "residential:carpentry-services-kl": {
+    ms: [
+      { q: "Pintu almari lama saya tidak boleh ditutup — baiki atau ganti?", a: "Engsel, pelari dan tepi bengkak lebih kerap dibaiki daripada yang pembeli jangkakan; jika badan almari sudah penat, kami sebut harga binaan semula sepadan secara jujur — bina dahulu, bukan sentiasa ganti." },
+      { q: "Bolehkah anda memadankan warna kayu asal?", a: "Noda dan lakuer diuji pada potongan buangan dan diluluskan sebelum menyiapkan kepingan, supaya architrave yang dibaiki hilang ke dalam barisan dan bukannya kelihatan minggu depan." },
+      { q: "Bagaimana habuk dan bunyi di tapak?", a: "Pemotongan diminimumkan dengan pra-fabrikasi; di mana gergaji mesti berjalan di dalam, bilik ditutup dan pengekstrakan digunakan, dan ruang diserahkan bersih pada hari yang sama." },
+      { q: "Bolehkah almari dihidupkan semula berbanding diganti?", a: "Selalunya — pelari, engsel, rak dan hadapan baharu ditinjau terhadap binaan semula dan dihargakan kedua-duanya; jawapan berfungsi lebih murah menang." }
+    ],
+    zh: [
+      { q: "我的旧衣柜门关不上，是修还是换？", a: "铰链、滑轨和肿胀边缘修好的情况比买家预期的多；若箱体已老化，我们会如实报价匹配的重做——先修，而不是一律更换。" },
+      { q: "你们能匹配原木色调吗？", a: "染色与清漆会在边角料上试板并在完工前批准，使修复的门套隐入整体，而不是下周就显眼。" },
+      { q: "现场粉尘和噪音如何？", a: "通过预制尽量减少切割；若确实需在室内开锯，会密封房间并抽尘，且当天清理干净交还。" },
+      { q: "衣柜能翻新而不是更换吗？", a: "通常可以。滑轨、铰链、层板和新门板会与重做方案一并勘察并双报价；更省钱且可行的方案胜出。" }
+    ]
+  },
+  "residential:door-services-kl": {
+    ms: [
+      { q: "Mengapa pintu saya menggesel hanya dalam cuaca basah?", a: "Kayu menyerap lembapan dan membengkak — biasanya pada tepi selak atau garis lantai. Pembetulannya ialah penggapaan terukur ditambah kelengkapan yang membolehkan pintu menutup tanpa paksaan, bukan mengakis hingga rosak." },
+      { q: "Bolehkah pintu bilik air MDF bengkak diselamatkan?", a: "Kadangkala — jika teras masih kukuh, pengedapan tepi dan gantung semula berkesan; jika ia sudah lembut, penggantian dengan panel berkadar lembapan adalah pilihan paling bijak untuk anda, bukan pemasang." },
+      { q: "Adakah anda memasang kunci dan penutup pintu?", a: "Boleh — selak mati, persediaan kunci digital, penutup dan plat henti lembut, dengan semakan bingkai dan rebat supaya kelengkapan baharu benar-benar memegang." },
+      { q: "Adakah anda turut membaiki pintu gelangsar beranda?", a: "Boleh — rel, penggelek, kunci dan penjajaran, termasuk daun yang terangkat dan pintu yang berhenti mengedap apabila angin monsun memasukinya." }
+    ],
+    zh: [
+      { q: "为什么我的门只在潮湿天气卡住？", a: "木材吸湿膨胀，通常在锁舌边或地面线。正确做法是按测量修整并让五金允许门无用力关闭，而不是一直削到坏。" },
+      { q: "肿胀的MDF卫生间门还能救吗？", a: "有时可以。若芯材完好，封边并重新挂装即有效；若已松软，则换成防潮面板才是对您最划算，而不是让安装工省事。" },
+      { q: "你们安装锁和闭门器吗？", a: "会。装锁、数码锁预留、闭门器和缓冲锁扣，并检查门框与止口，确保新五金真正牢固。" },
+      { q: "你们也修推拉露台门吗？", a: "会。处理轨道、滚轮、锁与对位，包括抬起的门扇和季风风进来时关不严的门。" }
+    ]
+  },
+  "residential:window-repair-services-kl": {
+    ms: [
+      { q: "Hujan masuk di bawah tingkap gelangsar — normal?", a: "Tidak — biasanya pengedap bulu haus, saliran tersumbat atau daun melunjur atas rel. Kami bersih, segel dan selaraskan supaya saliran berfungsi seperti profil jangkakan." },
+      { q: "Kaca retak — berapa cepat?", a: "Penguncian dan papan pengadang pada hari yang sama untuk keselamatan; kaca gantian terukur dipasang sebaik sahaja siap, dengan nota pengendalian untuk panel tingkat atas dan sukar dicapai." },
+      { q: "Bolehkah tingkap aluminium lama berasa baharu?", a: "Selalunya: rel bersih, penggelek baharu, pengedap segar dan daun terkunci benar memulihkan kebanyakannya. Di mana bingkai terhakis atau bengkok, penggantian dihargakan — dengan sebabnya." },
+      { q: "Adakah kaca gantian dipadankan dengan yang lama?", a: "Bingkai, warna dan ketebalan ditinjau untuk padanan seperti-dengan-seperti — dwilapis mendapat unit kedap sepadan, bukan satu keping berpura-pura." }
+    ],
+    zh: [
+      { q: "雨水从推拉窗下面渗进来，正常吗？", a: "不正常。通常是毛条磨损、排水孔堵塞或窗扇越出轨道。我们会清理、重新密封并调整，让排水按型材预期工作。" },
+      { q: "玻璃裂了，有多快能处理？", a: "当天先做安全封控与木板遮挡；测量好的替换玻璃一到位就装，并为高处和难触及的玻璃注明搬运要点。" },
+      { q: "旧铝窗能焕然一新吗？", a: "多数可以：清理轨道、换新滚轮、换新密封并让窗扇锁合到位。若框材腐蚀或变形，会报价更换并说明原因。" },
+      { q: "替换玻璃会与原窗匹配吗？", a: "会勘察框、色调与厚度做到对等更换——双层玻璃配对应的密封单元，而不是用单片冒充实心。" }
+    ]
+  },
+  "residential:locksmith-services-kl": {
+    ms: [
+      { q: "Baru berpindah — patutkah saya menukar kunci?", a: "Kekunci semula sekurang-kurangnya: anda tidak tahu berapa banyak salinan terselamat daripada penghuni sebelum. Kekunci semula murah; laporan pencerobohan jam 2 pagi lebih mahal daripada sebuah pintu." },
+      { q: "Bateri kunci digital saya mati — terperangkap?", a: "Kebanyakan unit mempunyai bekalan kuasa ganti atau kunci mekanikal; kami buka tanpa merosakkan jika boleh dan memasang kunci dengan kegagalan-selamat yang anda sebenarnya mahu." },
+      { q: "Adakah anda mengukuhkan bingkai pintu lama?", a: "Boleh — skru lebih panjang, plat senggangan keluli dan naik taraf sisi engsel menutup jurang 'tendang-masuk' tanpa menggantikan pintu yang sebaliknya masih elok." },
+      { q: "Bolehkah anda membantu sebelum penggerak saya tiba?", a: "Kekunci semula dan pemasangan kunci pintar dijadualkan mengelilingi hari pindah; tambahan respons berkunci cepat meliputi hari kunci tidak muncul." }
+    ],
+    zh: [
+      { q: "刚搬进来，应该换锁吗？", a: "至少重配钥匙：您不知道前任住户留下多少把。重配钥匙很便宜，而凌晨两点被人进屋的代价是一扇门。" },
+      { q: "我的数码锁没电了，会被困住吗？", a: "多数型号有应急供电或机械钥匙；我们尽可能无损开启，并为您装上真正想要的失效保护形式。" },
+      { q: "你们会加固旧门框吗？", a: "会。用更长螺丝、钢制锁扣板和铰链侧升级，在不更换尚好的门的情况下封住'踹门而入'的缝隙。" },
+      { q: "搬家公司来之前能帮忙吗？", a: "重配钥匙和安装智能锁会围绕搬家日安排；再加一项快速开锁响应，覆盖钥匙找不到的那天。" }
+    ]
+  },
+  "residential:glass-aluminium-services-kl": {
+    ms: [
+      { q: "Bolehkah panel kaca bilik air diganti tanpa jubin terkeluar?", a: "Selalunya boleh — pendakap dan saluran dilegakan dengan teliti, panel terbaja baharu dipasang pada geometri sedia ada, dan pengedap diperbaharui pada lawatan yang sama." },
+      { q: "Adakah kaca selamat-filem cukup untuk cermin bilik kanak-kanak?", a: "Kaca terbaja dengan filem sandaran keselamatan ialah spesifikasi untuk garis pandang dekat katil dan bermain — begitulah ia disebutharga dan dipasang." },
+      { q: "Pintu lipat aluminium saya kendur dan berdecit — boleh dibaiki?", a: "Penggelek gantung atas, galas dan penjajaran rel memulihkan kebanyakan sistem lipatan; di mana profil haus atau bengkok, penggantian dihargakan dengan naik taraf sepadan." },
+      { q: "Adakah anda mengendalikan dinding cermin berat?", a: "Boleh — pengikat berkadar, perataan dan butiran tepi terhadap laluan beban sebenar dinding, dengan semakan tapak sebelum kaca ditempah." }
+    ],
+    zh: [
+      { q: "不拆瓷砖能更换淋浴玻璃吗？", a: "通常可以。小心卸下支架与卡槽，把新钢化玻璃按现有几何安装，并在同次上门更换密封。" },
+      { q: "带安全膜玻璃够用作儿童房镜子吗？", a: "钢化玻璃加安全背膜正是床旁和玩耍视线的规格——报价与安装都按此执行。" },
+      { q: "我的折叠铝门下垂并吱呀，能修吗？", a: "上吊滚轮、轴承与轨道对位能修复多数折叠系统；若型材磨损或弯折，会报价对等更换升级。" },
+      { q: "你们处理重型镜墙吗？", a: "会。按墙体真实承重路径采用额定固定件、对位与边角处理，并在订购玻璃前勘察现场。" }
+    ]
+  },
+  "residential:cctv-services-kl": {
+    ms: [
+      { q: "Berapa banyak kamera diperlukan untuk rumah teres?", a: "Pemacu, beranda, pagar belakang dan mana-mana sisi servis buta — biasanya empat, diputuskan oleh pelan anda, bukan pakej jualan. Kami petakan pandangan di tapak sebelum sebut harga." },
+      { q: "Bolehkah rakaman itu peribadi?", a: "Boleh — rakaman tempatan dengan akses jauh disulitkan, tiada akaun awan vendor, dan akses ditarik balik atas permintaan; kebenaran penonton kongsi adalah milik anda." },
+      { q: "Adakah penyewa juga dipasang?", a: "Pemasangan selamat-sewa dan pelan kabel boleh dibuka ditawarkan supaya pemasangan mengekalkan deposit anda — wajar diminta pada peringkat sebut harga." },
+      { q: "Bolehkah saya melihat paparan pada telefon?", a: "Disediakan pada penyerahan dengan akaun dan kod anda sendiri, diuji di hadapan anda pada rangkaian rumah dan data mudah alih, kemudian didokumentasikan." }
+    ],
+    zh: [
+      { q: "排屋需要多少个摄像头？", a: "车道、门廊、后门及任何盲侧服务区，通常四个，由您的平面决定而非销售套餐。我们会在报价前现场规划视野。" },
+      { q: "录像能保持私密吗？", a: "可以。本地录制并加密远程访问，不涉及厂商云账号，可应要求撤销访问；共享观看权限由您管理。" },
+      { q: "租户也能安装吗？", a: "提供免损安装与可拆除布线方案，让安装不损害您的押金——报价阶段值得提出。" },
+      { q: "我能在手机上查看画面吗？", a: "交付时用您自己的账号和密码设置，面对您在家庭网络与移动数据下测试，并留下文档。" }
+    ]
+  },
+  "residential:autogate-services-kl": {
+    ms: [
+      { q: "Pintu pagar saya berhenti di tengah — boleh diselamatkan malam ini?", a: "Pelepasan manual tambah lawatan hari sama atau pagi seterusnya adalah piawai: kebanyakan kegagalan adalah suis had, fius papan atau penggelek tersekat, bukan motor mati." },
+      { q: "Bolehkah anda menambah automasi pada pagar ayun lama?", a: "Selalunya boleh — pilihan operator lengan atau bawah tanah bergantung pada daun, engsel dan jarak; tinjauan memutuskan dengan jujur dan menghargai retrofit atau penggantian, mana-mana yang sesuai." },
+      { q: "Bagaimana saya elakkan pagar menghancurkan kereta?", a: "Auto-berbalik dan pancaran keselamatan ditetapkan dengan betul, diuji pada penyerahan dan lawatan servis — ciri yang semua orang anggap berfungsi, dibuktikan dengan objek ujian sebelum kami pergi." },
+      { q: "Adakah alat kawalan jauh berfungsi dengan pagar jiran?", a: "Sistem kluster dan halaman kongsi mendapat frekuensi diselaraskan dan kawalan akses betul; di mana perkongsian mengubah pendawaian, ia disebutharga sebagai pelan, bukan tekaan." }
+    ],
+    zh: [
+      { q: "大门开到一半停了，今晚能救吗？", a: "手动释放加当天或次日早晨上门是常规：多数故障是限位开关、主板保险丝或滚轮卡住，而非电机报废。" },
+      { q: "能给旧平开门加自动化吗？", a: "通常可以。臂式或地埋式电机取决于门扇、铰链与间隙；勘察会如实决定，并报价加装或更换，哪个合适用哪个。" },
+      { q: "怎么防止大门压到车？", a: "正确设置自动遇阻与安全红外，并在交付和维保时测试——这个大家都以为有效但未必的功能，会用测试物当面验证再离开。" },
+      { q: "遥控器能和邻居的大门互用吗？", a: "集群与共享院门会协调频率并采用正确门禁；若共用需改线路，会作为方案报价，而非猜测。" }
+    ]
+  },
+  "residential:welding-services-kl": {
+    ms: [
+      { q: "Bolehkah pintu pagar bengkok atau kendur diluruskan?", a: "Selalunya — engsel, tiang dan geometri bingkai ditetapkan semula atau dibina semula, kemudian diperkukuh; hanya keluli yang benar-benar letih mendapat sebut harga penggantian, dan disertai sebab." },
+      { q: "Adakah kimpalan di tapak selamat berhampiran rumah saya?", a: "Dengan skrin, pengawasan kebakaran, bahan mudah terbakar dialihkan dan lantai siap dilindungi — itulah piawai, ditulis ke dalam sebut harga untuk kerja di tapak dalam rumah berpenghuni." },
+      { q: "Adakah tanda kimpalan kelihatan?", a: "Pengisaran, primer dan kemasan topcoat adalah sebahagian kerja; di mana kawasan tidak dapat disepadukan — sistem cat pada bahagian galvanis lama, contohnya — ia dimaklumkan lebih awal." },
+      { q: "Adakah pembaikan akan berkarat kemudian?", a: "Kimpalan yang dikisar rata mendapat primer dan cat dengan salutan kemasan sepadan — disiplin yang sama dikekalkan pada bahagian galvanis di mana integriti salutan penting." }
+    ],
+    zh: [
+      { q: "弯曲或下垂的铁门能校直吗？", a: "通常可以。铰链、立柱与门框几何会被复位或重建，然后加固；只有真正疲劳的钢材才报价更换，并说明原因。" },
+      { q: "在家附近现场焊接安全吗？", a: "加屏障、设防火监护、移走可燃物并保护成品地面——这是标准，并写入有人居住现场的报价。" },
+      { q: "焊痕会看得出来吗？", a: "打磨、底漆与面漆属于工程一部分；若某处无法调和，例如旧镀锌段上的油漆系统，会提前说明。" },
+      { q: "修复后会不会生锈？", a: "打磨平的焊缝会涂底漆并用匹配面漆补好——在涂层完整性重要的镀锌段也保持同样标准。" }
+    ]
+  },
+  "residential:aircon-services-kl": {
+    ms: [
+      { q: "Mengapa penyaman udara saya berbau apabila dihidupkan?", a: "Pertumbuhan mikrob pada gegelung dan dulang saliran lembap — tepat apa yang dibersihkan oleh basuhan kimia. Penapis habuk sahaja jarang membunuh bau; kami rawat punca, bukan gejala." },
+      { q: "Ia sejuk sepuluh minit, kemudian tiup panas?", a: "Biasanya aliran udara, gegelung beku atau cas rendah daripada kebocoran perlahan. Urutan diagnosis penting — tambah cas tanpa mencari kebocoran hanya mengisi lubang; kami cari lubang itu dahulu." },
+      { q: "Bagaimana dengan air menitis di dalam?", a: "Saluran saliran tersumbat atau cerun dan gegelung beku — dibersihkan, diuji aliran dan ditebat semula dengan betul, dengan ujian dicatat sebelum dinding ditutup." },
+      { q: "Bolehkah pemasangan siap dalam satu lawatan?", a: "Biasanya ya — pendakap, paip, vakum dan ujian penyejukan siap pada hari yang sama, dengan pemulihan dinding disenaraikan sebelum van tiba." }
+    ],
+    zh: [
+      { q: "为什么我的空调一开就有味道？", a: "潮湿的盘管和接水盘上滋生微生物——药水清洗正是解决这个。仅洗滤网很少能去除霉味；我们治本，而非治标。" },
+      { q: "制冷十分钟后就吹热风？", a: "通常是风量、盘管结霜或缓慢泄漏导致缺氟。诊断顺序很关键——不查漏就补氟只是给漏洞充气；我们会先找到漏点。" },
+      { q: "室内滴水怎么办？", a: "排水管堵塞或倒坡与盘管结霜——会清理、做流量测试并正确重做保温，在封墙前记录测试。" },
+      { q: "安装能一次上门完成吗？", a: "通常可以。支架、管路、抽真空与制冷测试当日完成，并在车到之前列好墙面补修。" }
+    ]
+  },
+  "residential:kitchen-renovation-services-kl": {
+    ms: [
+      { q: "Adakah saya benar-benar perlu hidup tanpa dapur?", a: "Biasanya untuk tetingkap terancang yang singkat — penyambungan servis ialah kekangan, jadi kami menjadualkan dari pembongkaran ke boleh-memasak dalam beberapa hari dan menyusun apa yang boleh berjalan di sekelilingnya." },
+      { q: "Apakah yang paling sering merosakkan dapur bajet?", a: "Pemindahan air dan kuasa tersembunyi ditambah naik taraf 'sementara kita di sini'. Kedua-duanya diputuskan pada peringkat sebut harga — diharga, bertarikh dan ditandatangani, atau ditinggalkan dengan bersih." },
+      { q: "Adakah pengubahsuaian saya dilindungi waranti?", a: "Ya — 12 bulan mutu kerja pada ubah suai, skop kalis air membawa sehingga 5 tahun, dan invois menyatakan yang mana untuk setiap jabatan." },
+      { q: "Bolehkah kami kekalkan peti sejuk lama semasa kerja?", a: "Penjadualan mengekalkan zon boleh guna anda berjalan — air dan kuasa dialih dalam pertukaran terancang, dan pelan dapur sementara adalah sebahagian program." }
+    ],
+    zh: [
+      { q: "我真的要过一段没有厨房的日子吗？", a: "通常只需一个短暂的计划窗口——水电接驳是制约，因此我们把从拆除到可开火安排在几天内，并分阶段安排可绕行的部分。" },
+      { q: "最易毁掉预算厨房的是什么？", a: "隐蔽的水电移位，以及'顺便'的升级。两者都在报价阶段决定——定价、注明并签字，或干净地排除。" },
+      { q: "我的翻新有保修吗？", a: "有。改造工艺保修12个月，防水范围最长5年，发票上按工种分别注明。" },
+      { q: "施工期间能保留旧冰箱吗？", a: "按顺序让可用的区域继续运作——水电按计划切换，临时厨房也是方案的一部分。" }
+    ]
+  },
+  "residential:bathroom-renovation-services-kl": {
+    ms: [
+      { q: "Berapa lama kami tanpa bilik air?", a: "Ubah suai bilik air tunggal penuh biasanya memerlukan tetingkap beberapa hari yang dirancang; turutan dan pengaturan sementara dipersetujui dalam sebut harga, bukan dibuat improvisasi pada lawatan pertama." },
+      { q: "Mengapa grout saya terus menjadi hitam semula?", a: "Kerana pengedap zon basah gagal, bukan grout — tepi membran, ketinggian ambang dan sambungan silikon dibina semula semasa ubah suai supaya sistem jubin kering sebagaimana sepatutnya." },
+      { q: "Apakah jaminan yang disertakan dengan ubah suai?", a: "12 bulan mutu kerja dan sehingga 5 tahun pada sistem kalis air — kedua-duanya pada invois, setiap zon, dengan rekod ujian rendam dilampirkan." },
+      { q: "Adakah anda juga membaiki bocor yang kami tidak minta diperiksa?", a: "Jika tinjauan menemui laluan bocor, ia masuk dalam sebut harga dengan sebab — kerana bilik air cantik di atas bocor aktif hanyalah esok yang mahal." }
+    ],
+    zh: [
+      { q: "我们要多久没有卫生间用？", a: "整间单卫翻新通常需要计划内的数天窗口；顺序与临时安排写入报价，而不是第一次上门才临时决定。" },
+      { q: "为什么我的勾缝又变黑？", a: "因为湿区密封失效，而不是勾缝本身——翻新时会重建防水膜边缘、挡水高度与硅胶缝，让瓷砖系统按预期干燥。" },
+      { q: "翻新附带什么保障？", a: "工艺保修12个月，防水系统最长5年——两者都写在发票上，按区域并附上蓄水测试记录。" },
+      { q: "你们也会修我们没提的漏水吗？", a: "若勘察发现漏点，会连同原因列入报价——因为漂亮的卫生间下面有活漏，只是明天更贵。" }
+    ]
+  },
+  "residential:awning-installation-services-kl": {
+    ms: [
+      { q: "Polikarbonat, ACP atau dek logam — mana satu untuk beranda saya?", a: "Tapak yang memutuskan: haba di bawah bumbung, rentang, sudut hujan dan bunyi. Kami mengesyorkan menentang apa-apa yang gagal dalam keadaan anda, walaupun ia lebih besar jualannya." },
+      { q: "Berapa harga sebuah awning?", a: "Dihargakan setiap tapak — rentang, bahan, keadaan penyambungan dan saliran. Tiada nombor 'bermula dari' generik, kerana sebut harga bersaiz salah adalah bil bersaiz salah kemudian." },
+      { q: "Adakah pemasangan merosakkan cat atau jubin baharu saya?", a: "Penyambungan dipasang ke struktur, bukan kemasan; perlindungan dipasang, garis pengedap disiapkan, dan tapak dibiarkan bersih pada penyerahan — waranti 12 bulan meliputi mutu kerja." },
+      { q: "Adakah penyambungan bocor menembusi jubin saya?", a: "Titik penambat dimeterai dan ditetapkan dengan keluarga pengikat yang betul untuk substrat; selepas kerja dinding dibiarkan seperti asal, bukan diisi buih." }
+    ],
+    zh: [
+      { q: "PC板、ACP还是金属板，我门廊该选哪个？", a: "由现场决定：屋顶下热量、跨度、雨斜角度与噪音。即使某方案卖得更火，只要不符合您的条件，我们也会建议避开。" },
+      { q: "遮阳篷多少钱？", a: "按现场报价——跨度、材料、固定状况与排水。没有通用的'起价'，因为尺寸不对的报价就是日后尺寸不对的账单。" },
+      { q: "安装会损坏我的新漆或瓷砖吗？", a: "固定件打入结构而非饰面；铺设保护、收好密封线，交付时现场保持干净——12个月保修覆盖工艺。" },
+      { q: "固定件会从瓷砖渗水吗？", a: "锚点会封填并按基层选用正确紧固件；完工后墙面恢复原样，而不是用泡沫填充。" }
+    ]
+  },
 };
