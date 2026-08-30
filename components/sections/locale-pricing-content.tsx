@@ -124,14 +124,26 @@ export function LocalePricingContent() {
 
                   <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                     <Link
-                      href={`/services/${service.slug}/cost`}
+                      href={
+                        lang === "ms"
+                          ? `/ms/services/${service.slug}/cost`
+                          : lang === "zh"
+                            ? `/zh/services/${service.slug}/cost`
+                            : `/services/${service.slug}/cost`
+                      }
                       className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#0284C7] px-5 py-3 text-sm font-extrabold text-white transition hover:bg-[#0369A1]"
                     >
                       {t("pricingPage.openPricingGuide")}
                       <ArrowRight className="h-4 w-4" />
                     </Link>
                     <Link
-                      href={`/services/${service.slug}`}
+                      href={
+                        lang === "ms"
+                          ? `/ms/services/${service.slug}`
+                          : lang === "zh"
+                            ? `/zh/services/${service.slug}`
+                            : `/services/${service.slug}`
+                      }
                       className="inline-flex items-center justify-center rounded-xl border border-sky-200 px-5 py-3 text-sm font-extrabold text-[#075985] transition hover:bg-sky-50"
                     >
                       {t("pricingPage.viewServicePage")}

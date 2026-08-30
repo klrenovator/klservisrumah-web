@@ -15,6 +15,11 @@ export const metadata = buildMetadata({
   description:
     "Honest 2026 prices for painting, plumbing, plaster ceiling, waterproofing and handyman work in Kuala Lumpur and Selangor. No hidden charges.",
   path: "/pricing",
+  languageUrls: {
+    en: "/pricing",
+    ms: "/ms/harga",
+    zh: "/zh/pricing"
+  },
   keywords: [
     "home service price Malaysia",
     "painting cost KL",

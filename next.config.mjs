@@ -101,6 +101,14 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // Pricing shortcut and BM/ZH pricing aliases
+      { source: "/ms/pricing", destination: "/ms/harga", permanent: true },
+      { source: "/ms/harga/:slug", destination: "/ms/services/:slug/cost", permanent: true },
+      { source: "/ms/services/:slug/harga", destination: "/ms/services/:slug/cost", permanent: true },
+      { source: "/zh/jiage", destination: "/zh/pricing", permanent: true },
+      { source: "/zh/services/:slug/jiage", destination: "/zh/services/:slug/cost", permanent: true },
+      { source: "/zh/jiage/:slug", destination: "/zh/services/:slug/cost", permanent: true },
+
       // Service shortcut URLs — redirect root-level paths to canonical service pages
       { source: "/painting", destination: "/services/painting", permanent: true },
       { source: "/plumbing", destination: "/services/plumbing", permanent: true },
