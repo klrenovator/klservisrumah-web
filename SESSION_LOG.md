@@ -3218,6 +3218,14 @@ self-canonical, en-MY/ms-MY/zh-MY/x-default hreflang, localized FAQs + matching 
   **90 remain.** No MT, generic replacement or premature ✅ for the whole
   phase.
 
+## Session backfill note — 2026-08-30 — FIX WAVE 20 (P3-12 phase 2, tranche 6)
+
+The Wave 20 session (tranche 6 — all 32 `brands` pods, `brandCopy` 12 +
+`airconBrandCopy` 20; 256 localized Q&As; probe 64/64 pages, 256/256
+byte-identical; phase total 88/146) ended before appending here. Full
+narrative: `docs/full-website-deep-audit/FIX-WAVE-20-REPORT.md`. Merged as
+PR #202 (CI green).
+
 ## Session — 2026-08-30 — Fix Wave 21 (P3-12 phase 2 tranche 7: native MS/ZH commercial FAQs)
 
 **Scope:** Translate the remaining 29 `commercial` content-pod FAQ sets editorially

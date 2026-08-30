@@ -6,21 +6,27 @@
 
 ## Current State (Update this each session)
 
-> **Fix Wave 19 tranche 5 COMPLETE (2026-08-30); P3-12 phase 2 remains ⏳:**
-> all 18 `compare` pods now have native editorial MS/ZH translations of their
-> four authored English FAQs (**144 localized Q&As**). Together with Wave 15's
-> `top`, Wave 16's `guides`, Wave 17's `guidesMaintenance` and Wave 18's
-> `seasonal` families, the permanent gate reports **56/146 pods and 448
-> localized Q&As**; completed families are `top`, `guides`,
-> `guidesMaintenance`, `seasonal` and `compare`. Production build: 4,139 HTML;
-> direct probe: 36/36 MS/ZH compare pages and 144/144 Q&As visible and
-> byte-identical to FAQPage schema. Full corpus gates pass.
-> **Exact next stop: tranche 6, all 32 `brands` pages** (sources `brandCopy`
-> 12 + `airconBrandCopy` 20, both in `config/content-pod-copy-batch2.ts`),
-> then commercial 29 → residential 29. Current phase total 56/146;
-> **90 remain**.
-> No MT, generic replacement or premature phase completion.
-> Full log: `docs/full-website-deep-audit/FIX-WAVE-19-REPORT.md`.
+> **P3-12 PHASE 2 ✅ COMPLETE (2026-08-30, Fix Waves 21–22, PR #203 merged):**
+> the phase's last two families — all 29 `commercial` (Wave 21) and all 29
+> `residential` (Wave 22) pods — now carry native editorial MS/ZH
+> translations of their four authored English FAQs (232 + 232 localized
+> Q&As; sources `commercialCopy` / `residentialCopy` in
+> `config/content-pod-copy.ts`, family-qualified keys).
+> The permanent gate reports **146/146 pods and 1,168 localized Q&As across
+> all eight families** (`top`, `guides`, `guidesMaintenance`, `seasonal`,
+> `compare`, `brands`, `commercial`, `residential`); `COMMERCIAL_FAQ_TEMPLATES`
+> is bypassed site-wide. Production build: 4,139 HTML, sitemap parity 4,112;
+> built probes: commercial 58/58 pages + 232/232 Q&As and residential 58/58 +
+> 232/232, all visible and byte-identical to FAQPage schema. Full corpus gates
+> pass (prebuild 329,897 × 0).
+> **Exact next stop: P2-16 tranche 3** — the remaining 44 problem pages, in
+> thinness order from `scripts/p2-16-wordcount.ts` (owner GSC data would
+> re-rank). See TRACKING.md item 10 for the full P2/P3 value queue
+> (§5.4-B1 BM commercial tree, P4-10 case studies, P4-14 per-area `Service`
+> entities, P4-08 CTA, P4-16 footer tiering, P3-15/16, P3-19).
+> **Do not re-open P3-12** — the phase is closed, not pending.
+> Full logs: `docs/full-website-deep-audit/FIX-WAVE-21-REPORT.md` and
+> `FIX-WAVE-22-REPORT.md`.
 >
 > **Fix Wave 14 COMPLETE (2026-08-29): P3-12 phase 3** — the 29
 > `/services/<svc>/cost` money pages (the site's highest-intent "how much"
@@ -51,13 +57,13 @@
 > seo:audit, part5 0 errors, part3 corpus 4,139 pages BM/ZH leaks 0/0.
 > Full log: `docs/full-website-deep-audit/FIX-WAVE-14-REPORT.md`.
 >
-> **NEXT (P3-12 phase 2, tranche 5):** native MS/ZH editorial translation
-> of all 18 authored `compare` FAQ sets. Start in `comparisonCopy`
-> inside `config/content-pod-copy-batch2.ts`; add `compare:<slug>`
-> records to `CONTENT_POD_FAQ_I18N`; add `compare` to
-> `COMPLETED_FAMILIES` only after all 18 pass. Verify with
-> `scripts/probe-pod-faq-i18n.ts compare`. Phase status is 38/146, not
-> complete. See TRACKING.md item 10 for the fixed remaining family order.
+> **P3-12 phase 2 tranches — history (all ✅):** tranche 1 `top` (Wave 15,
+> PR #193) → 2 `guides` (Wave 16, PR #195) → 3 `guidesMaintenance` (Wave 17,
+> PR #196) → 4 `seasonal` (Wave 18, PR #198) → 5 `compare` (Wave 19, PR #200)
+> → 6 `brands` (Wave 20, PR #202) → 7 `commercial` (Wave 21) → 8
+> `residential` (Wave 22; #21–22 merged together as PR #203). Phase closed
+> 2026-08-30 at 146/146; see the Current State block above and TRACKING.md
+> item 10 for what comes next.
 >
 > **Fix Wave 13 COMPLETE (2026-08-29, owner request):** awning start-from
 > prices + market-rate verification. `awning-installation` — the last
