@@ -6,18 +6,18 @@
 
 ## Current State (Update this each session)
 
-> **Fix Wave 16 tranche 2 COMPLETE (2026-08-30); P3-12 phase 2 remains ⏳:**
-> all 10 `guides` pods now have native editorial MS/ZH translations of their
-> four authored English FAQs (**80 localized Q&As**). Together with Wave 15's
-> `top` family, the permanent gate reports **20/146 pods and 160 localized
-> Q&As**; completed families are `top` and `guides`. Production build: 4,139
-> HTML; direct probe: 20/20 MS/ZH guide pages and 80/80 Q&As visible and
-> byte-identical to FAQPage schema. Full corpus gates pass. **Exact next stop:
-> tranche 3, all 10 `guidesMaintenance` pages**, then seasonal 8 → compare 18
-> → brands 32 → commercial 29 → residential 29. Current phase total 20/146;
-> **126 remain**. No MT, generic replacement or premature phase completion.
-> GitHub: commit `6747afb`, PR #195. Full log:
-> `docs/full-website-deep-audit/FIX-WAVE-16-REPORT.md`.
+> **Fix Wave 17 tranche 3 COMPLETE (2026-08-30); P3-12 phase 2 remains ⏳:**
+> all 10 `guidesMaintenance` pods now have native editorial MS/ZH translations
+> of their four authored English FAQs (**80 localized Q&As**). Together with
+> Wave 15's `top` and Wave 16's `guides` families, the permanent gate reports
+> **30/146 pods and 240 localized Q&As**; completed families are `top`,
+> `guides` and `guidesMaintenance`. Production build: 4,139 HTML; direct
+> probe: 20/20 MS/ZH maintenance pages and 80/80 Q&As visible and
+> byte-identical to FAQPage schema. Full corpus gates pass. **Exact next
+> stop: tranche 4, all 8 `seasonal` pages**, then compare 18 → brands 32 →
+> commercial 29 → residential 29. Current phase total 30/146; **116 remain**.
+> No MT, generic replacement or premature phase completion.
+> Full log: `docs/full-website-deep-audit/FIX-WAVE-17-REPORT.md`.
 >
 > **Fix Wave 14 COMPLETE (2026-08-29): P3-12 phase 3** — the 29
 > `/services/<svc>/cost` money pages (the site's highest-intent "how much"
@@ -48,11 +48,12 @@
 > seo:audit, part5 0 errors, part3 corpus 4,139 pages BM/ZH leaks 0/0.
 > Full log: `docs/full-website-deep-audit/FIX-WAVE-14-REPORT.md`.
 >
-> **NEXT (P3-12 phase 2, tranche 3):** native MS/ZH editorial translation
-> of all 10 authored `guidesMaintenance` FAQ sets. Start in `maintenanceCopy`
-> inside `config/content-pod-copy-batch2.ts`; add `guidesMaintenance:<slug>`
-> records to `CONTENT_POD_FAQ_I18N`; add `guidesMaintenance` to
-> `COMPLETED_FAMILIES` only after all 10 pass. Phase status is 20/146, not
+> **NEXT (P3-12 phase 2, tranche 4):** native MS/ZH editorial translation
+> of all 8 authored `seasonal` FAQ sets. Start in `seasonalCopy`
+> inside `config/content-pod-copy-batch2.ts`; add `seasonal:<slug>`
+> records to `CONTENT_POD_FAQ_I18N`; add `seasonal` to
+> `COMPLETED_FAMILIES` only after all 8 pass. Verify with
+> `scripts/probe-pod-faq-i18n.ts seasonal`. Phase status is 30/146, not
 > complete. See TRACKING.md item 10 for the fixed remaining family order.
 >
 > **Fix Wave 13 COMPLETE (2026-08-29, owner request):** awning start-from
