@@ -6,27 +6,32 @@
 
 ## Current State (Update this each session)
 
-> **P3-12 PHASE 2 ✅ COMPLETE (2026-08-30, Fix Waves 21–22, PR #203 merged):**
-> the phase's last two families — all 29 `commercial` (Wave 21) and all 29
-> `residential` (Wave 22) pods — now carry native editorial MS/ZH
-> translations of their four authored English FAQs (232 + 232 localized
-> Q&As; sources `commercialCopy` / `residentialCopy` in
-> `config/content-pod-copy.ts`, family-qualified keys).
-> The permanent gate reports **146/146 pods and 1,168 localized Q&As across
-> all eight families** (`top`, `guides`, `guidesMaintenance`, `seasonal`,
-> `compare`, `brands`, `commercial`, `residential`); `COMMERCIAL_FAQ_TEMPLATES`
-> is bypassed site-wide. Production build: 4,139 HTML, sitemap parity 4,112;
-> built probes: commercial 58/58 pages + 232/232 Q&As and residential 58/58 +
-> 232/232, all visible and byte-identical to FAQPage schema. Full corpus gates
-> pass (prebuild 329,897 × 0).
-> **Exact next stop: P2-16 tranche 3** — the remaining 44 problem pages, in
-> thinness order from `scripts/p2-16-wordcount.ts` (owner GSC data would
-> re-rank). See TRACKING.md item 10 for the full P2/P3 value queue
-> (§5.4-B1 BM commercial tree, P4-10 case studies, P4-14 per-area `Service`
-> entities, P4-08 CTA, P4-16 footer tiering, P3-15/16, P3-19).
-> **Do not re-open P3-12** — the phase is closed, not pending.
-> Full logs: `docs/full-website-deep-audit/FIX-WAVE-21-REPORT.md` and
-> `FIX-WAVE-22-REPORT.md`.
+> **P2-16 ✅ COMPLETE (2026-08-30, Fix Wave 23, PR #206 merged):** the final
+> 44 un-enriched problem pages (thinness order from
+> `scripts/p2-16-wordcount.ts`) received the full native EN/BM/中文 depth set —
+> 132 hand-authored blocks (44 × `overview`/`diyChecks[4]`/`prevention[4]`/
+> `costDetail`, prices anchored to each record's published
+> `costRange`/FAQ figures, no MT) across `config/problem-data.ts` (9),
+> `config/problem-data-extra.ts` (35) and `config/problem-body-i18n.ts`
+> (44 MS + 44 ZH). **All 74/74 indexable problem pages are now enriched**
+> (min 242 / mean 471 / max 728 config words; was mean 383, 15 pages ≤233),
+> and the new permanent `audit:problem-i18n` check 10 fails the build if any
+> indexable problem ever ships thin again. Production build: 4,139 HTML,
+> sitemap parity 4,112; all gates pass (prebuild 329,897 × 0).
+> Also closed earlier today: **P3-12 PHASE 2 ✅ COMPLETE** (Waves 15–22, PR
+> #203) — 146/146 pods, 1,168 localized Q&As across all eight families,
+> permanently gated by `audit:content-pod-faq-i18n`.
+> **Do not re-open P3-12 or P2-16** — both are closed, not pending.
+> **Exact next stop: §5.4-B1 — BM commercial tree** (Part 5 §5.4-B1, the
+> largest remaining content gap). Re-scope against the post-Wave-14 state
+> first: MS cost/problem/pod/emergency/blog routes now exist, so the
+> residual gap is the `harga`-family naming/convention,
+> near-me-consolidated MS coverage and BM transactional query coverage.
+> Full P2/P3 value queue in TRACKING.md item 10
+> (P4-10 case studies, P4-14 per-area `Service` entities, P4-08 CTA,
+> P4-16 footer tiering, P3-15/16, P3-19).
+> Full logs: `docs/full-website-deep-audit/FIX-WAVE-23-REPORT.md` (also
+> `FIX-WAVE-21-REPORT.md` / `FIX-WAVE-22-REPORT.md`).
 >
 > **Fix Wave 14 COMPLETE (2026-08-29): P3-12 phase 3** — the 29
 > `/services/<svc>/cost` money pages (the site's highest-intent "how much"
