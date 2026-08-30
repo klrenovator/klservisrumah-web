@@ -3320,3 +3320,74 @@ repeated; owner-blocked work untouched.
 - Owner-blocked (unchanged): Part 1 Critical #3 www/non-www; P2-21 reviews;
   P2-22 outbound citations; P3-09 stats/claims; P4-11 named team page (bios);
   P5-12 photography; P4-13 / P2-C4 / BP-1 phase 2 (GSC keep-set).
+
+## Session — 2026-08-30 — Fix Wave 23 (P2-16 tranche 3 FINAL: all remaining 44 problem pages enriched — 74/74)
+
+**Scope:** Enrich the final 44 un-enriched indexable problem pages with the
+full native trilingual depth set (`overview` / `diyChecks[4]` / `prevention[4]`
+/ `costDetail`), closing Part 2 P2-16 in full. Parts 1–5, Fix Waves 1–22,
+BP-1 phase 1 and CF-4 already complete and **not** repeated; owner-blocked
+work left untouched. Tracker + Wave 22 report agreed on one exact next task:
+**P2-16 tranche 3 (remaining 44 problems)**, in `scripts/p2-16-wordcount.ts`
+thinness order (no owner GSC data, per the standing instruction).
+
+**Completed ✅**
+- 132 hand-authored native depth sets (44 pages × 3 locales, no MT):
+  - 9 EN records in `config/problem-data.ts`
+  - 35 EN records in `config/problem-data-extra.ts`
+  - 44 MS + 44 ZH blocks in `config/problem-body-i18n.ts`
+- Batches (thinness order): 15 + 15 + 14. B1: vinyl-flooring-lifting-edges,
+  wall-dampness-rising, autogate-remote-not-working, ceiling-mold-stains,
+  rccb-tripping-kl, loose-metal-gate-hinges, tv-fell-off-wall,
+  digital-smart-lock-installation, faded-exterior-paint-malaysia,
+  bathroom-leak-upper-floor, cracked-tile-grout, damp-walls-paint-bubbling,
+  cabinet-door-sagging, burst-pipe-emergency, ceiling-cornice-crack. B2:
+  cracked-roof-tiles, aircon-remote-display-issue, loose-hollow-tiles,
+  curtain-track-falling, aircon-tripping-mcb, aircon-making-noise,
+  yellowing-white-walls, balcony-leak-condo, concrete-slab-crack-leak,
+  aircon-not-turning-on, aircon-weak-airflow, ice-forming-on-aircon,
+  clogged-drain, power-tripping-frequently, toilet-not-flushing. B3:
+  aircon-bad-smell, old-condo-full-refurbishment, peeling-paint-malaysia,
+  paint-cracking-hairline-walls, low-water-pressure, leaking-bathroom,
+  aircon-water-leaking, aircon-not-cold, damaged-gypsum-partition-wall,
+  popping-tiles-buckling, uneven-floor-subfloor-leveling,
+  old-kitchen-cabinet-plumbing-damage, wall-cracks-settlement-masonry,
+  old-bathroom-plumbing-tiles.
+- Every `costDetail` anchored exactly to the record's published `costRange`
+  and FAQ figures (no invented prices); service-specific mechanics preserved
+  per locale (ST/Suruhanjaya Tenaga wiremen, JMB liability + ponding test,
+  PU 8–15 yr flex life + 5-yr written warranty, 3 mm over 2 m tolerance,
+  dowel-bar stitching, 72-hour flood test, 45–90 min same-day dispatch, …).
+- **New permanent gate** in `scripts/validate-problem-i18n.ts` (check 10,
+  runs in `prebuild`): every indexable problem must carry the full depth set
+  → a thin or English-fallback problem page now fails the build.
+  Negative-tested (strip one `overview` → gate fails; restore → green).
+
+**Verification (all green)**
+- `scripts/p2-16-wordcount.ts` — **74/74 enriched** (was 30/74); min 242 /
+  mean 471 / max 728 config words per page (template mean was 383; 15 pages
+  were ≤233).
+- `audit:problem-i18n` — 74 indexable keep-URLs × ms/zh, 0 native-content
+  gaps / 0 English leaks / 0 duplicate FAQs (now incl. full-depth parity).
+- Prebuild **329,897 assertions × 0 failures**; lint 0/0; type-check PASS.
+- Production build SUCCESS — **4,141 static HTML pages**.
+- Rendered-HTML spot-checks (EN/MS/ZH built pages, scripts stripped): native
+  overview + all three new sections visible per locale; **0 cross-language
+  leaks in visible HTML** (MS/ZH strings inside EN pages exist only in the
+  pre-existing client flight payload shared by the trilingual component).
+- `audit:html` 0/0; `audit:links` 0 broken; `audit:seo-head` 0 dup/0
+  warnings; `audit:schema-size` PASS; `audit:bp1` PASS (NAP 62.8%);
+  `audit:location-similarity` PASS (68.8% max < 70%); `audit:meta` /
+  `seo:audit` PASS; Part 5 re-walk 4,139 pages, 0 JSON-LD parse errors,
+  0 duplicate titles/H1s (corpus JSON outputs refreshed in `docs/`).
+
+### Exact continuation
+- **P2-16 is COMPLETE — 74/74.** No problem-page enrichment remains.
+- **Next: §5.4-B1 — BM commercial tree** (Part 5 largest content gap; P1 in
+  the Part 5 queue). Re-scope against the post-Wave-14 state first: MS
+  cost/problem/pod/emergency/blog routes now exist, so the residual gap is
+  the `harga`-family naming/convention, near-me-consolidated MS coverage,
+  and BM transactional query coverage.
+- Owner-blocked (unchanged): Part 1 Critical #3 www/non-www; P2-21 reviews;
+  P2-22 outbound citations; P3-09 stats/claims; P4-11 named team page (bios);
+  P5-12 photography; P4-13 / P2-C4 / BP-1 phase 2 (GSC keep-set).

@@ -22,6 +22,10 @@
  *      redirected (no chains or cycles), and every redirect key is a real
  *      problem slug (no dangling/typo'd keys)
  *   9. Every problemPages record is accounted for (indexable or redirected)
+ *  10. P2-16 completeness: every indexable problem carries the full depth
+ *      set (overview / diyChecks / prevention / costDetail) — all 74 were
+ *      enriched (Waves 6–7 + Wave 23), so a thin new problem page fails the
+ *      build instead of shipping.
  *
  * Wired into `prebuild` alongside the other gates so a regression fails the
  * build instead of reaching production.
@@ -144,6 +148,24 @@ for (const problem of indexableProblemPages()) {
   }
   if (resolveProblemSlug(problem.slug) !== problem.slug) {
     push(problem.slug, "any", "canonical", "keep URL does not resolve to itself");
+  }
+}
+
+// 10. P2-16 completeness (Fix Wave 23): every indexable problem carries the
+// full depth set (overview / diyChecks / prevention / costDetail). The audit
+// found the 74 problem pages were the site's thinnest important template
+// (mean 383 words); all 74 were enriched in Waves 6–7 (top-30) and Wave 23
+// (remaining 44), so a new thin problem page now fails the build instead of
+// shipping. The native-parity checks above (3b) keep MS/ZH in lockstep.
+for (const problem of indexableProblemPages()) {
+  const missing = [
+    !problem.overview && "overview",
+    !problem.diyChecks?.length && "diyChecks",
+    !problem.prevention?.length && "prevention",
+    !problem.costDetail && "costDetail"
+  ].filter(Boolean);
+  if (missing.length) {
+    push(problem.slug, "any", "depth", `P2-16: missing depth field(s): ${missing.join(", ")}`);
   }
 }
 
