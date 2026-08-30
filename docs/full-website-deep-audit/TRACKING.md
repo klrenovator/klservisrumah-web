@@ -47,7 +47,7 @@
 | P0 | Fix Part 2 P2-C2 — `content.relatedReading` literal key renders as H2 on 224 pages | ✅ DONE (Fix Wave 1) |
 | P0 | Fix Part 2 P2-C3 — 174 generic "content pod" pages (commercial/residential/process/answers/brands/top/seasonal/guides) | ✅ DONE (Wave 4 batch 1: 58 commercial+residential pods; Wave 5 batch 2: 88 brands+compare+guides+maintenance+seasonal+top pods — all 146/174 hand-authored; process+answers carry real service data) |
 | P0 | Fix Part 2 P2-C4 — Replace pair-copy generator; authored local copy for area×service | ⏳ PENDING |
-| P1 | Fix Part 2 P2-16/17/18 — Expand problems/cost; rewrite or retire emergency pages | ✅ DONE (Fix Wave 6 + Wave 7 — P2-18 was CF-4; P2-17/03: 12 emergency pages rewritten per-service + 17 retired 301; P2-16: 15 thinnest enriched in Wave 6 + next 15 thinnest enriched in Wave 7 — 30/74 problems now carry full overview/DIY/prevention/cost depth EN/MS/ZH) |
+| P1 | Fix Part 2 P2-16/17/18 — Expand problems/cost; rewrite or retire emergency pages | ✅ DONE (Fix Wave 6 + Wave 7 + Wave 23 — P2-18 was CF-4; P2-17/03: 12 emergency pages rewritten per-service + 17 retired 301; **P2-16: all 74/74 problem pages now carry full overview/DIY/prevention/cost depth EN/MS/ZH** (15 thinnest Wave 6 + 15 Wave 7 + remaining 44 in Wave 23) + permanent prebuild gate `audit:problem-i18n` check 10) |
 | P1 | Fix Part 2 P2-19 — Real per-article blog dates (216 posts / 5 dates) | ✅ DONE (Fix Wave 8 — 54 distinct dates across 216 posts (max 7/day, was 99/day); dateModified split from datePublished (migrated content → 2026-08-16 release date); sitemap emits per-article lastMod for 648 blog URLs; `scripts/assign-blog-dates.ts` + validator date gate) |
 | P1 | Fix Part 2 P2-21 — Reviews: verify + Review schema or drop AggregateRating | ⏳ PENDING (owner) |
 | P1 | Fix Part 2 P2-22 — Add outbound citations (brands/authority/manufacturer) | ⏳ PENDING |
@@ -87,6 +87,7 @@
 | 2026-08-30 | **Fix Wave 20** — **P3-12 phase 2, tranche 6**: native editorial MS/ZH translations for all 32 `brands` pods (256 localized Q&As) — the 12 material/brand guides from `brandCopy` plus the 20 aircon brand pages from `airconBrandCopy` (both in `config/content-pod-copy-batch2.ts`; slug set confirmed against `config/content-data.ts` `brandPages` before authoring); `brands` promoted to a complete gated family. Built corpus verified 64/64 localized pages and 256/256 visible Q&As byte-identical to FAQPage schema. Technical detail preserved per page (Nippon Weatherbond 5-yr vs Dulux Weathershield 7-yr, SIRIM QAS insurance/JMB consequences, Grundfos SCALA/UPA sizing 8–12 yr life, Joven 20 A dedicated circuit + RM 80–120 descale, Rinnai balanced-flue + flame-failure device, Knauf MR board system-matched warranty, SikaTop Seal 107 vs PU decks + PU injection resin, Bostik 5–8 yr vs acrylic 1–2 yr, Mapei Aquadefense ~4 h tiling readiness, Daikin R32, Panasonic H11, Mitsubishi Electric vs Heavy, Acson/OYL + R22 economics, WindFree micro-hole airflow, LG twin-rotary + solar minimum wattage, R32/R410A split). All gates PASS: prebuild **329,897 × 0**, lint 0/0, type-check, build **4,139 HTML**, audit:html 0 fatal/0 warnings, audit:links 312,732+56 → 0 broken, seo-head 4,112 = 4,112 (0 dup metadata), schema-size, bp1 (NAP 62.8%), location-similarity 69.4%, raster-og, meta, seo:audit, part5 0 JSON-LD errors, part3 corpus 4,139 pages with BM/ZH leaks 0/0. **Phase total 88/146; 58 remain.** | ✅ TRANCHE 6 COMPLETED — PR #202 merged, CI green; phase ⏳ PENDING (closed by Waves 21–22). See `FIX-WAVE-20-REPORT.md` |
 | 2026-08-30 | **Fix Wave 21** — **P3-12 phase 2, tranche 7**: native editorial MS/ZH translations for all 29 `commercial` pods (232 localized Q&As) sourced from `commercialCopy` in `config/content-pod-copy.ts` (editorial, no MT); `commercial` promoted to a complete gated family. Built corpus verified 58/58 localized `/ms/commercial/*` + `/zh/commercial/*` pages and 232/232 visible Q&As byte-identical to FAQPage schema. Business-property specific detail preserved per service (JMB/strata approval, after-hours & weekend scheduling, per-zone shutdown switching, 90-day ceiling workmanship, 5-year membrane systems, Suruhanjaya Tenaga wiremen, RCCB protection, pre-staged ballast/driver swaps, lippage clip systems, 10-year plaster-ceiling, commercial-grade SPC wear layers, forklift load profiles, coved epoxy skirtings, pre-fabrication launch dates, master-keyed hierarchies, tempered-glass swaps, IGU fogging, key registers/revocable codes, hot-works permits, master-key hierarchies, PER% access control, site-unit dated service cards, grease-trap rework, sealed-hoarding washroom staging, vendor/council awning rules). All gates PASS: prebuild **329,897 × 0**, lint 0/0, type-check, build **4,139 HTML**, audit:html 0 fatal/0 warnings, audit:links 312,732+56 → 0 broken, seo-head 4,112 = 4,112 (0 dup metadata, 0 warnings), schema-size, bp1 (NAP 62.8%), location-similarity 69.4%, meta, seo:audit, part5 0 JSON-LD errors, part3 corpus 4,139 pages with BM/ZH leaks 0/0. **Phase total 117/146; 29 remain (residential).** | ✅ TRANCHE 7 COMPLETED — phase ⏳ PENDING. See `FIX-WAVE-21-REPORT.md` |
 | 2026-08-30 | **Fix Wave 22** — **P3-12 phase 2, tranche 8**: native editorial MS/ZH translations for all 29 `residential` pods (232 localized Q&As) sourced from `residentialCopy` in `config/content-pod-copy.ts` (editorial, no MT); `residential` promoted to a complete gated family. Built corpus verified 58/58 localized `/ms/residential/*` + `/zh/residential/*` pages and 232/232 visible Q&As byte-identical to FAQPage schema. **P3-12 phase 2 COMPLETE — 146/146 pods, 1168 localized Q&As.** All gates PASS: prebuild **329,897 × 0**, lint 0/0, type-check, build **4,139 HTML**, audit:html 0 fatal/0 warnings, audit:links 312,732+56 → 0 broken, seo-head 4,112 = 4,112 (0 dup metadata, 0 warnings), schema-size, bp1 (NAP 62.8%), location-similarity 69.4%, meta, seo:audit, part5 0 JSON-LD errors, part3 corpus 4,139 pages with BM/ZH leaks 0/0. | ✅ TRANCHE 8 COMPLETED — **P3-12 phase 2 COMPLETE.** See `FIX-WAVE-22-REPORT.md` |
+| 2026-08-30 | **Fix Wave 23** — **P2-16 tranche 3 (FINAL): all remaining 44 problem pages enriched — 74/74 COMPLETE.** 132 hand-authored native depth sets (EN+BM+中文: `overview`/`diyChecks[4]`/`prevention[4]`/`costDetail` per page) added to 9 records in `config/problem-data.ts` + 35 in `config/problem-data-extra.ts` + 88 blocks in `config/problem-body-i18n.ts`, in `p2-16-wordcount.ts` thinness order (no owner GSC data, per the standing instruction); prices anchored exactly to each record's published `costRange`/FAQ figures. New permanent prebuild gate: `audit:problem-i18n` **check 10** — every indexable problem must carry the full depth set (negative-tested). Problem template: min 242 / mean 471 / max 728 config words (was mean 383, 15 pages ≤233). All gates PASS: problem-i18n **74 × ms/zh, 0 gaps/leaks**, prebuild **329,897 × 0**, lint 0/0, type-check, build **4,141 HTML**, audit:html 0/0, audit:links 0 broken, seo-head 0 dup/0 warnings, schema-size, bp1 (NAP 62.8%), location-similarity 68.8% max, meta, seo:audit, part5 re-walk 4,139 pages / 0 JSON-LD errors / 0 dup titles+H1s; rendered EN/MS/ZH spot-checks: native overview + all 3 new sections visible, 0 cross-language leaks in visible HTML. | ✅ **P2-16 COMPLETE — 74/74.** See `FIX-WAVE-23-REPORT.md` |
 
 ---
 
@@ -136,17 +137,28 @@ site-wide FAQ answers had diverged from the rendered copy; EN SERP strings
 unchanged). See `FIX-WAVE-14-REPORT.md`.
 
 **With Wave 14 done, no P0 or P1 audit finding remains unblocked, and no
-major content surface is left without a real localized URL. With Waves 21–22
-(merged as PR #203, 2026-08-30), the highest-value unblocked P2 enhancement is
-also ✅ DONE: P3-12 phase 2 is COMPLETE at 146/146** — all eight pod families
-(`top` 10, `guides` 10, `guidesMaintenance` 10, `seasonal` 8, `compare` 18,
-`brands` 32, `commercial` 29, `residential` 29) now carry page-specific,
-editorial MS/ZH FAQ translations (**1,168 localized Q&As**), every one visible
-in the built HTML and byte-identical to its FAQPage schema, permanently guarded
-by `audit:content-pod-faq-i18n`; the `COMMERCIAL_FAQ_TEMPLATES` audience
-fallback is bypassed site-wide. **Do not re-open P3-12.** Everything else left
-is owner-blocked, needs owner data/access, or is a lower-value P2/P3
-enhancement (see item 10 — next stop: P2-16 tranche 3).
+major content surface is left without a real localized URL.** Waves 15–22
+(merged as PR #203, 2026-08-30) then closed **P3-12 phase 2 in full**:
+146/146 pod FAQ sets translated into editorial BM/中文 (**1,168 localized
+Q&As** across all eight pod families — `top` 10, `guides` 10,
+`guidesMaintenance` 10, `seasonal` 8, `compare` 18, `brands` 32,
+`commercial` 29, `residential` 29), every one visible in the built HTML and
+byte-identical to its FAQPage schema, permanently guarded by
+`audit:content-pod-faq-i18n`; the `COMMERCIAL_FAQ_TEMPLATES` audience fallback
+is bypassed site-wide. **Do not re-open P3-12.** **Wave 23 (2026-08-30)
+closed P2-16 in full**: the remaining 44 problem pages (thinnest-first per
+`scripts/p2-16-wordcount.ts`) received the full native EN/BM/中文 depth set,
+so **all 74/74 indexable problem pages now carry `overview`/`diyChecks`/
+`prevention`/`costDetail`** (min 242 / mean 471 / max 728 config words; the
+template's old mean was 383 with 15 pages ≤233), and the new
+`audit:problem-i18n` check 10 fails the build if any indexable problem ever
+ships thin again. See `FIX-WAVE-23-REPORT.md`.
+
+**⏳ EXACT NEXT STOP: §5.4-B1 — BM commercial tree** (Part 5 §5.4-B1, the
+largest remaining content gap: BM transactional coverage — `harga`-family
+convention, near-me-consolidated MS pages, BM query coverage). Everything
+else left is owner-blocked, needs owner data/access, or is a P2/P3
+enhancement below.
 
 0. **What Wave 14 changed (2026-08-29):** new
    `components/sections/locale-service-cost-body.tsx` (shared,
@@ -195,12 +207,10 @@ enhancement (see item 10 — next stop: P2-16 tranche 3).
    `pctQuestionH2`, `pctFaqSchema` and the leak counts were always raw-HTML
    regexes and remain comparable. If another corpus analyzer shows a suspiciously
    uniform `words=8`, suspect the same stale-slice bug.
-4. **P2-16 tranche 3 (optional, needs demand data):** the remaining 44
-   problems — next thinnest: `vinyl-flooring-lifting-edges` (166),
-   `wall-dampness-rising` (167), `autogate-remote-not-working` (167),
-   `ceiling-mold-stains` (168), `rccb-tripping-kl` (168). Owner GSC data
-   would re-rank this list; without it, use `scripts/p2-16-wordcount.ts`
-   thinness order.
+4. **P2-16 tranche 3 — ✅ COMPLETED (Fix Wave 23, 2026-08-30).** All 44
+   remaining problems enriched (thinness order, per the standing instruction);
+   74/74 complete and permanently gated by `audit:problem-i18n` check 10.
+   Owner GSC data can now only re-rank *refresh* priorities, not scope.
 5. **P2-22 (owner decision):** add outbound citations to brands/authorities.
 6. **BP-1 phase 2 / P2-C4 still blocked on owner GSC keep-set** — do **not**
    add more location pages; do **not** delete local pages on low traffic alone.
@@ -233,9 +243,14 @@ enhancement (see item 10 — next stop: P2-16 tranche 3).
    visible HTML = FAQPage schema**, verified with
    `scripts/probe-pod-faq-i18n.ts commercial` (58/58, 232/232) and
    `... residential` (58/58, 232/232). No tranches remain — P3-12 phase 2
-   is done;
-   **P2-16 tranche 3** (remaining 44 problems); **§5.4-B1** BM commercial tree;
-   **P4-10** case-study pages; **P4-14** per-area `Service` entities; **P4-08**
+   is done; **P2-16 tranche 3 — ✅ COMPLETE (Wave 23, 2026-08-30: all
+   remaining 44 problems, 74/74 total, permanently gated by
+   `audit:problem-i18n` check 10).** **Next: §5.4-B1** BM commercial tree
+   (re-scope against the post-Wave-14 state first — MS cost/problem/pod/
+   emergency/blog routes now exist; the residual gap is the `harga`-family
+   naming/convention, near-me-consolidated MS coverage, and BM transactional
+   query coverage); **P4-10** case-study pages; **P4-14** per-area `Service`
+   entities; **P4-08**
    CTA wording; **P4-16** footer link tiering; **P3-15/P3-16** SearchAction vs
    `/search` + news-sitemap freshness; **P3-19** expand `aeo-faq.txt`.
    **P2-22** outbound citations is an owner decision. **P4-11 named team page**

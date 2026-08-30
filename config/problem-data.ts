@@ -45,7 +45,21 @@ export const problemPages: ProblemDetail[] = [
       { q: "Does peeling paint mean there is a leak?", a: "Sometimes. Peeling near bathrooms, ceilings, or exterior walls often points to moisture intrusion that should be checked before repainting." },
       { q: "What paint should I use after repairs?", a: "Use a proper sealer first, then a quality washable or exterior weatherproof topcoat that suits the wall location." },
       { q: "How much does peeling paint repair cost in KL?", a: "Small patching starts from around RM150, while full room repainting with preparation is usually quoted from RM400 per room." }
-    ]
+    ],
+    overview: "Peeling paint in a Malaysian home is the wall telling you the bond has failed — and in a hot, humid climate the failure has a short list of causes. Moisture trapped behind the wall pushes the paint off from the back; a weak or missing sealer means the topcoat never properly bonded to the plaster in the first place; chalky old paint that was not sanded down gives the new coat nothing to grip; and hairline cracks let monsoon rain work its way behind the film. The pattern tells you which one: peeling near a bathroom or the ceiling points at moisture, uniform flaking points at the paint system, and patchy peeling after a DIY repaint points at preparation. The fix is always the same sequence — scrape to a firm edge, treat the moisture, seal, and repaint — and skipping the scrape is why the problem comes back on schedule.",
+    diyChecks: [
+      "Scrape a small area of the peeling: if the paint comes off in large sheets with the old coat still attached, the failure is at the sealer/plaster line",
+      "Press the wall: a damp or cold feel, or white powdery salts, means moisture must be fixed before any paint",
+      "Check the location: peeling clustered around bathrooms, ceilings, or exterior walls is a moisture story; uniform flaking is a paint-system story",
+      "After a DIY repaint, note where it failed first — the first failure point marks the unprepared or damp zone",
+    ],
+    prevention: [
+      "Always seal before you paint, especially on new plaster or any wall with a moisture history",
+      "Sand chalky or glossy old paint back to a sound, lightly rough surface before the new coat",
+      "Use a washable, moisture-tolerant emulsion in humid rooms and a weatherproof system outside",
+      "Fix the moisture source — leak, condensation, or seepage — in the same job as the repaint, not after",
+    ],
+    costDetail: "Patching a localised peel — scrape, sealer, and two coats — starts around RM150. A full room with proper preparation (scrape, sand, sealer, primer, and two topcoats) is typically quoted from RM400 per room, and the price moves with wall condition, ceiling height, and whether a moisture repair is included. We check the wall for moisture before quoting, because repainting over an active leak just moves the problem to next season. The work carries the standard warranty."
   },
   {
     slug: "faded-exterior-paint-malaysia",
@@ -62,7 +76,21 @@ export const problemPages: ProblemDetail[] = [
       { q: "Can faded paint be touched up only?", a: "Small areas can be touched up, but large faded elevations often need full repainting for an even finish." },
       { q: "Which paint is best for hot exterior walls?", a: "Use a weatherproof exterior system with sealer and UV-resistant topcoat from a reputable paint brand." },
       { q: "Is pressure washing required?", a: "Yes, exterior surfaces should be washed and dried properly before sealer and paint are applied." }
-    ]
+    ],
+    overview: "Exterior paint in Malaysia has a short shelf life — most homes visibly chalk and fade within 5–7 years, and west-facing walls do it faster because they take the full afternoon sun. The process is UV breaking the paint binder down to powder (chalking), rain washing the powder off in streaks, and mould and dirt filling the rest. Once the surface chalking is severe, the topcoat has no more protective film left: the plaster or render beneath is now taking the weather directly, and every monsoon is doing a little more damage. Faded paint is the cheap warning before an expensive repaint-becomes-a-patching-job.",
+    diyChecks: [
+      "Rub a faded area with a damp cloth — if white powder comes off, the topcoat has chalked beyond touch-up",
+      "Check the lowest 1 metre of the elevation: mould and dirt banding there means the surface has lost its self-cleaning ability",
+      "Look for hairline cracks and blisters — if the paint is cracking, the substrate movement needs checking before any repaint",
+      "After a heavy rain, note where streaks and brown water lines appear — those mark the fastest-weathering zones",
+    ],
+    prevention: [
+      "Repaint the exterior every 5–7 years with a weatherproof sealer-plus-topcoat system, not a single cheap coat",
+      "Pressure-wash the elevations before painting so mould and chalking do not get sealed under the new coat",
+      "Trim trees and vines that hold moisture against west-facing walls",
+      "Fix any exterior crack or leaking point within the year — water and UV working together age the wall twice as fast",
+    ],
+    costDetail: "A full-house exterior repaint in the Klang Valley runs RM1,800–RM8,000+ depending on house size, storeys, and whether scaffolding or a boom lift is needed; the work includes pressure washing, crack treatment, an alkali-resistant sealer, and two weatherproof topcoats. West-facing or heavily chalked elevations may need extra preparation, which we quote on inspection. We use reputable weatherproof systems and the paint is applied under the correct humidity and drying windows; workmanship and the paint film are covered under the standard warranty."
   },
   {
     slug: "damp-walls-paint-bubbling",
@@ -79,7 +107,21 @@ export const problemPages: ProblemDetail[] = [
       { q: "How do you diagnose damp walls?", a: "We inspect nearby bathrooms, roofs, pipes, and exterior cracks, then use moisture readings to identify the most likely source." },
       { q: "Do I need waterproofing or painting?", a: "Most damp wall cases need waterproofing or leak repair first, then plaster repair and repainting." },
       { q: "How long should a damp wall dry before paint?", a: "Drying time depends on severity, but walls must reach safe moisture levels before primer and topcoat are applied." }
-    ]
+    ],
+    overview: "Paint that bubbles, blisters, or browns is not a paint problem — it is a water problem wearing a paint costume. Moisture moving through the wall or slab lifts the paint film from the plaster as it evaporates, leaves brown stains where dissolved minerals settle, and white salt marks where it dries. In KL homes the sources are usually one of four: a bathroom or balcony seeping from the floor above, rising damp from the ground, an exterior crack funneling rain into the wall, or a concealed pipe leaking inside. The order of operations matters: seal the source, let the wall dry, repair the plaster, then paint. Skip any step and the bubbles come back on schedule.",
+    diyChecks: [
+      "Touch the affected wall — a cold, damp feel versus a dry warm wall separates active moisture from an old stain",
+      "Check the rooms directly above and opposite: a bathroom, balcony, or external wall above the bubbling is the prime suspect",
+      "Shine a torch along the wall at an angle — bubbles catch the light and reveal their full spread faster than the eye does",
+      "After a heavy rain, note whether the stain darkens or the bubble count rises — that confirms a weather-driven source",
+    ],
+    prevention: [
+      "Fix bathroom and balcony waterproofing problems the same year they are found",
+      "Keep exterior cracks sealed and downpipes clearing water away from the wall",
+      "Use a breathable, moisture-tolerant primer on walls with a history of damp",
+      "Check the wall with a moisture meter before any repaint if the same area has bubbled twice",
+    ],
+    costDetail: "Diagnosis with moisture readings starts around RM150–RM300. Sealing a single source (grout, crack, or silicone line) plus plaster repair and repainting of the affected wall runs RM600–RM1,500, while a full leak-source repair involving a bathroom or balcony membrane sits at RM1,500–RM2,500+. We always confirm the source with readings before quoting, because painting over an active leak just moves the problem to next season. Workmanship is covered by the standard warranty."
   },
   {
     slug: "ceiling-mold-stains",
@@ -96,7 +138,21 @@ export const problemPages: ProblemDetail[] = [
       { q: "Is ceiling mold dangerous?", a: "Mold can affect indoor air quality, so active moisture and contaminated boards should be addressed promptly." },
       { q: "Do I need a plumber or ceiling contractor?", a: "If the source is plumbing, fix the leak first; then repair or replace the affected plaster ceiling." },
       { q: "How fast can ceiling repairs be done?", a: "Small board replacements can often be completed in one visit after the leak source is controlled." }
-    ]
+    ],
+    overview: "Mold on a ceiling is the visible end of a moisture story that started somewhere above. The brown rings and black spotting form when warm, humid Malaysian air meets a wet plasterboard surface — after a bathroom leak on the floor above, an aircon drain that has been quietly weeping into the ceiling for months, or a roof or balcony seepage that only shows up in the monsoon. The stain itself is cosmetic; the real risk is the board going soft. Once a plasterboard has soaked long enough to sag or feel mushy under a fingernail, no amount of anti-mould paint saves it — that board has to come out.",
+    diyChecks: [
+      "Press the stained area gently with a pencil tip or fingernail — firm and dry means repaint-able, soft means replace",
+      "Trace the likely source: is there a bathroom, aircon unit, or external wall directly above the stain?",
+      "Run a shower or use the bathroom upstairs, then watch the stain for 20–30 minutes — a darkening ring confirms an active leak",
+      "Smell for mustiness and check for black spotting spreading beyond the original ring, which signals live mould",
+    ],
+    prevention: [
+      "Service aircon units and check the drain line every 3–6 months — a blocked drain is a ceiling stain in waiting",
+      "Keep bathroom exhaust fans running during and 15 minutes after showers",
+      "Check the balcony and roof for standing water after heavy rain",
+      "Repaint ceilings with a mildew-resistant emulsion in humid rooms",
+    ],
+    costDetail: "Cleaning and anti-mould repainting of a dry, firm stain starts around RM180–RM450 per patch. Replacing a soft or mold-damaged board with moisture-resistant plasterboard runs RM600–RM1,200+ depending on size, height, and whether the leak source (pipe, aircon drain, roof) is included in the same job. We always identify and stop the source first — repaint a ceiling above an active leak and the stain returns within one monsoon. Workmanship is covered by the standard warranty."
   },
   {
     slug: "burst-pipe-emergency",
@@ -113,7 +169,21 @@ export const problemPages: ProblemDetail[] = [
       { q: "Can a burst pipe be repaired without hacking?", a: "Visible pipe bursts can be fixed directly; concealed bursts may require limited access opening at the damaged section." },
       { q: "Is burst pipe service available same day?", a: "Yes, emergency plumbing requests are prioritized based on technician availability and location." },
       { q: "Will the quote be confirmed first?", a: "Yes. After inspection, the technician explains the scope and confirms pricing before permanent repair starts where possible." }
-    ]
+    ],
+    overview: "A burst pipe is the plumbing equivalent of a house fire: the damage multiplies every minute the water runs, and the second biggest cost after the pipe itself is usually the water damage it causes to the floor, the ceiling below, and the neighbour. In older KL and Selangor homes the usual culprits are corroded galvanized joints that finally give under pressure, fittings that were glued rather than threaded, a pressure surge from the mains, or — in renovation season — a drill that finds a concealed pipe. The response order is fixed: stop the water first, protect the electrics second, and only then start on the pipe. Doing it in that order is what keeps a RM200 pipe repair from becoming a RM2,000 water-damage claim.",
+    diyChecks: [
+      "Find and turn off the main water valve (usually at the meter) before anything else — even if you cannot see the burst",
+      "Switch off power to any socket or appliance standing in water at the main DB, not at the socket",
+      "Photograph or video the burst and the water path before cleanup — the photos are what an insurer or JMB needs",
+      "If the pipe is inside a wall, open a small access panel at the lowest wet point rather than hacking the whole wall",
+    ],
+    prevention: [
+      "Know where your main water valve is and keep it accessible — test it once a year",
+      "Replace visible corroded fittings and flex hoses on water heaters and washing machines every 5–7 years",
+      "Before drilling any wall or floor, check for concealed pipe runs or use a pipe detector",
+      "Fit a water leak detector under the water heater and in the bathroom for unattended homes",
+    ],
+    costDetail: "Emergency call-out and a visible-pipe repair start around RM180–RM400. A concealed burst that needs limited wall access and re-rendering runs RM500–RM800+, and the more the water has run before we arrive, the more the job includes (drying, plaster repair, ceiling work below). We confirm the scope and a fixed price after the first inspection, prioritise the shutoff and containment first, and the pipe work itself is covered by the standard warranty."
   },
   {
     slug: "low-water-pressure-kl",
@@ -319,7 +389,21 @@ export const problemPages: ProblemDetail[] = [
       { q: "How do you choose the method?", a: "We inspect the leak pattern, floor traps, grout, and ceiling moisture before recommending a repair method." },
       { q: "Is PU injection priced per point?", a: "PU injection is commonly priced per point, with final count based on crack line and leak severity." },
       { q: "Will you repair the damaged ceiling too?", a: "Yes, ceiling board replacement and repainting can be quoted after the leak is stopped." }
-    ]
+    ],
+    overview: "A ceiling that drips under an upstairs bathroom is one of the most stressful — and most expensive-to-misjudge — leaks in a Malaysian home, because the fix ranges from a RM250 trap gasket to a full re-waterproofing that costs five figures. The pattern tells you where on that scale you sit: dripping only after showering points at the floor surface (grout, membrane, or slab); a constant slow drip points at a pipe or trap; and a stain that darkens with the monsoon points at the slab itself. The wrong guess is expensive in both directions — hacking tiles for a pipe leak destroys a good floor, and PU-grouting a failed membrane gives up after the first heavy rain.",
+    diyChecks: [
+      "Time the leak: run the upstairs shower for 5 minutes, then watch the lower ceiling for 30 — a direct darkening is a surface/slab leak",
+      "Turn off the upstairs water supply and watch: if the drip continues with no water running, the source is likely a pipe or trap, not the floor",
+      "Check the bathroom floor tiles — tap-test for hollow sounds and look for cracked grout, which marks where water is getting in",
+      "Note the stain pattern: a spreading ring under the shower area versus a line under a wall helps separate slab leak from pipe leak",
+    ],
+    prevention: [
+      "Re-grout the bathroom floor with epoxy or sealed grout every 3–5 years",
+      "Keep the shower screen and tub silicone fresh — replace any cracked or mouldy seal yearly",
+      "Service the floor trap and check for weeping joints every 12 months",
+      "In condos, report slow-ceiling stains to the JMB early so the leak is diagnosed before it becomes a claim",
+    ],
+    costDetail: "Trap or pipe gasket replacements start around RM250–RM500. PU injection into slab cracks is priced per point and typically lands at RM1,500–RM3,500 for a standard bathroom leak, while a no-hack surface coating system suits grout-line seepage in the RM800–RM2,000 band. Full hacking and membrane replacement — the last resort for a completely failed membrane — runs RM4,500–RM9,000 depending on bathroom size and tiling. We diagnose the leak source first and quote the method that actually matches it; the leak-seal work carries the standard warranty, and ceiling repair is quoted separately if needed."
   },
   {
     slug: "roof-leak-rainy-season",
@@ -367,7 +451,21 @@ export const problemPages: ProblemDetail[] = [
       { q: "Can waterproof paint fix rising damp?", a: "Paint alone is not enough. Salt-contaminated plaster and moisture source must be treated first." },
       { q: "Is rising damp common in Malaysia?", a: "It appears in humid areas, older landed homes, and walls affected by drainage or external water exposure." },
       { q: "How long before repainting?", a: "The wall must be dried and treated properly before primer and paint are applied." }
-    ]
+    ],
+    overview: "Rising damp is ground moisture wicking up through porous masonry — brick, block, or old cement render — until it meets the paint and salt-crystal deposits at the lower wall. In Malaysia it shows up mostly in older landed homes: walls that sit close to the ground, failed damp-proof courses, exterior paving that holds water against the wall, or a leaking pipe or bathroom wall hiding behind the plaster. The white powdery salts (efflorescence) are the giveaway: every repaint that skips the moisture source just traps the damp under a fresh coat, and the same peeling returns within a season.",
+    diyChecks: [
+      "Rub the lower 300 mm of the wall — a damp or cold feel plus white powdery salts confirms active moisture, not old paint",
+      "Check the exterior opposite the wall: is paving sloping towards the house, or is there standing water after rain?",
+      "Note the height of the staining — a clean horizontal line suggests rising damp; a patch from a pipe or bathroom suggests a leak",
+      "Press the plaster: if it crumbles or feels soft, the salt has already attacked the plaster body and needs removal",
+    ],
+    prevention: [
+      "Keep exterior paving and planters away from the wall so water drains clear of the foundation",
+      "Clear scuppers and downpipes so rainwater does not run along the wall base",
+      "Repaint only after the wall reads dry — never seal damp with waterproof paint alone",
+      "Check bathrooms and concealed pipes on the floor above any stained wall each year",
+    ],
+    costDetail: "Diagnosis and treatment of a single wall starts around RM300–RM800. Where salt-contaminated plaster must be removed and re-rendered with a damp-control barrier, the job runs RM1,000–RM3,000+ depending on wall length and access. We always confirm whether the moisture is ground-related or pipe-related before quoting, because a painted-over pipe leak will simply reappear under the new plaster. Workmanship is covered by the standard warranty."
   },
   {
     slug: "swimming-pool-leak-balcony",
@@ -446,7 +544,21 @@ export const problemPages: ProblemDetail[] = [
       { q: "Do you hide TV wires?", a: "Wire trunking or concealed cable options can be discussed depending on wall type." },
       { q: "Should I buy the bracket first?", a: "You can, but we can also advise whether fixed, tilt, or full-motion brackets suit your TV and wall." },
       { q: "How long does TV mounting take?", a: "A standard TV mount usually takes 45–90 minutes depending on wall type and cable work." }
-    ]
+    ],
+    overview: "A TV mount that is loose — or a TV that has already fallen — is a safety problem first and a furniture problem second. In Malaysian homes the usual failure chain is predictable: a cheap plastic plug drilled into a gypsum partition without checking for studs, a bracket rated below the TV's real weight, or a drill that did not go deep enough for the wall type. The mount holds for months, then the wall material crumbles around the anchor and the whole bracket — plus a 50–80 kg TV — comes down. The fix is to stop trusting that anchor, find what the wall actually is (concrete, brick, or hollow gypsum), and re-mount on fixings rated for the load.",
+    diyChecks: [
+      "With the TV off and supported, tug each anchor point by hand — any movement or a plug pulling out of the wall means re-mount, not tighten",
+      "Check the bracket's weight rating against the TV's actual weight plus bracket; a 65-inch TV with a full-motion arm easily passes 30 kg of load",
+      "Identify the wall: tap it and look for the wall type — gypsum partition behind paint is the highest-risk surface",
+      "Check the TV's VESA pattern matches the bracket holes before buying anything new",
+    ],
+    prevention: [
+      "Mount TVs on hollow walls with heavy-duty toggle bolts or into studs, never basic plastic plugs",
+      "Choose the bracket type to the room: fixed for tight walls, tilt for above furniture, full-motion for corner viewing",
+      "Route cables with trunking or concealed channels so they cannot pull on the mount",
+      "Re-check the mount yearly — especially after house settling in the first 2–5 years",
+    ],
+    costDetail: "A standard wall re-mount with correct anchors for concrete, brick, or reinforced gypsum starts around RM120–RM250; a full-motion or heavy bracket with stud reinforcement on a partition wall runs RM300–RM450+. We identify the wall type, select the correct fixings, weight-test the installation, and level it before handover. Cable concealment is quoted separately where the wall type allows. Typical job time is 45–90 minutes."
   },
   {
     slug: "stuck-window-lock",
@@ -529,7 +641,21 @@ export const problemPages: ProblemDetail[] = [
       { q: "Can you fix RCCB tripping without changing the whole DB?", a: "Often yes. We first isolate the faulty circuit and only replace the RCCB or rewire the affected line." },
       { q: "How long does diagnosis take?", a: "Usually 30–60 minutes. We test each circuit systematically." },
       { q: "Do you provide ST-registered electricians?", a: "Yes, all electrical work is handled by licensed wiremen registered with ST (Suruhanjaya Tenaga)." }
-    ]
+    ],
+    overview: "An RCCB (earth-leakage circuit breaker) that keeps tripping is doing its job — something in the house is leaking current to earth, and the breaker is cutting power before a person or the wiring can be harmed. In KL homes the usual suspects are a failing appliance (water heater, induction hob, aircon) leaking a few milliamps, aged wiring where the insulation has cracked and wept moisture, water ingress into the distribution board after heavy rain, or a circuit quietly overloaded beyond what the breaker was sized for. What you should never do is keep resetting it: every reset is the fault still there, and a breaker that trips on demand is a fire and shock risk, not an inconvenience.",
+    diyChecks: [
+      "Unplug major appliances one by one and test the breaker — if it stops tripping when a specific appliance is off, you have found the leak",
+      "Look inside the DB box: any water marks, corrosion, or discolouration around the RCCB means water ingress",
+      "Note the pattern: does it trip the moment a specific appliance starts, or only when several run together?",
+      "Check for a burning smell or warm breaker casing — if either is present, stop resetting and switch the circuit off",
+    ],
+    prevention: [
+      "Replace appliance flex cords and earth connections of water heaters and hobs every 5–7 years",
+      "Keep the DB box dry: fix any leak above it and ensure the enclosure is sealed against rain",
+      "Match each high-load appliance (aircon, water heater, oven) to its own dedicated circuit",
+      "Have the DB box inspected every 5–10 years, especially in homes over 20 years old",
+    ],
+    costDetail: "A diagnosis visit with circuit-by-circuit isolation testing starts around RM180–RM350 and usually takes 30–60 minutes. Replacing a single faulty RCCB runs RM250–RM450 including parts; rewiring a faulty line or replacing a leaking appliance moves the job higher, and a full DB box upgrade with better load distribution sits at RM600–RM850+. All work is done by ST-registered wiremen, and the repair is covered by the standard workmanship warranty."
   },
   {
     slug: "flickering-lights-kl",
