@@ -115,7 +115,7 @@
 
 ## ⭐ NEXT SESSION MUST CONTINUE HERE
 
-**All 5 audit parts are complete; Fix Wave 1–14, BP-1 phase 1 and CF-4 are
+**All 5 audit parts are complete; Fix Wave 1–22, BP-1 phase 1 and CF-4 are
 complete.** Wave 9 closed the unblocked CRO/UX queue, Wave 10 the
 §5.6/AEO/OG/NAP queue, Wave 11 closed P3-12 phase 1 (MS/ZH pod routes), Wave 12
 closed P3-04/P3-05 (the last unblocked **P1**s), Wave 13 (2026-08-29) closed
@@ -136,13 +136,17 @@ site-wide FAQ answers had diverged from the rendered copy; EN SERP strings
 unchanged). See `FIX-WAVE-14-REPORT.md`.
 
 **With Wave 14 done, no P0 or P1 audit finding remains unblocked, and no
-major content surface is left without a real localized URL.** Waves 15–20 have
-started the highest-value unblocked P2 enhancement: authored pod FAQ translation.
-Tranches 1–6 are ✅ (all `top`, `guides`, `guidesMaintenance`, `seasonal`,
-`compare` and `brands` pods); the phase remains ⏳ at **88/146**, with
-`commercial` (29 pages) the exact next stop, then `residential` (29).
-Everything else left is owner-blocked,
-needs owner data/access, or is a P2/P3 enhancement.
+major content surface is left without a real localized URL. With Waves 21–22
+(merged as PR #203, 2026-08-30), the highest-value unblocked P2 enhancement is
+also ✅ DONE: P3-12 phase 2 is COMPLETE at 146/146** — all eight pod families
+(`top` 10, `guides` 10, `guidesMaintenance` 10, `seasonal` 8, `compare` 18,
+`brands` 32, `commercial` 29, `residential` 29) now carry page-specific,
+editorial MS/ZH FAQ translations (**1,168 localized Q&As**), every one visible
+in the built HTML and byte-identical to its FAQPage schema, permanently guarded
+by `audit:content-pod-faq-i18n`; the `COMMERCIAL_FAQ_TEMPLATES` audience
+fallback is bypassed site-wide. **Do not re-open P3-12.** Everything else left
+is owner-blocked, needs owner data/access, or is a lower-value P2/P3
+enhancement (see item 10 — next stop: P2-16 tranche 3).
 
 0. **What Wave 14 changed (2026-08-29):** new
    `components/sections/locale-service-cost-body.tsx` (shared,
