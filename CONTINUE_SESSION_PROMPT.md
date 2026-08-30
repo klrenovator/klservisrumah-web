@@ -20,7 +20,7 @@
 > all 10 `guides` pages**, then maintenance 10 → seasonal 8 → compare 18 →
 > brands 32 → commercial 29 → residential 29. Current phase total **10/146;
 > 136 remain**. Do not mark complete until the gate reports 146/146; no MT or
-> generic replacement. Full log: `FIX-WAVE-15-REPORT.md`.
+> generic replacement. PR #193. Full log: `FIX-WAVE-15-REPORT.md`.
 >
 > **Fix Wave 14 COMPLETE (2026-08-29): P3-12 phase 3** — the 29
 > `/services/<svc>/cost` money pages (the site's highest-intent "how much"
