@@ -4,8 +4,8 @@
  * across families. These are editorial translations, not generic templates.
  *
  * Coverage is intentionally gated by scripts/validate-content-pod-faq-i18n.ts.
- * Wave 15 tranche 1 covers all 10 `top` pages (80 translated Q&As: 10 pages ×
- * 4 FAQs × 2 locales). Remaining families stay explicitly pending in TRACKING.
+ * Waves 15–16 cover the complete `top` and `guides` families (20 pages, 160
+ * translated Q&As). Remaining families stay explicitly pending in TRACKING.
  */
 
 export type LocalizedPodFaq = { q: string; a: string };
@@ -152,5 +152,146 @@ export const CONTENT_POD_FAQ_I18N: Record<string, LocalizedPodFaqSet> = {
       { q: "怎样高效地一次安排多项杂工工作？", a: "发送一份附照片和大概尺寸的清单。专业杂工可按一次上门计划报价，在同一预约时段完成所有项目，比每项工作分别预约更有效率。" },
       { q: "一次专业杂工上门应包括什么？", a: "钻孔前确认墙体类型、每个安装点使用符合承重的固定件、保护地板和家具、离场前清理，并提供书面记录，说明完成了什么以及适用的保修。" }
     ]
+  },
+  "guides:how-to-choose-house-painter-kl": {
+    ms: [
+      { q: "Apakah yang perlu dinyatakan dalam sebut harga tukang cat?", a: "Sebut harga perlu memperincikan penyediaan permukaan seperti menampal retak, mengampelas dan menyapu primer, jenama serta rangkaian cat, bilangan lapisan, perlindungan perabot dan lantai, waktu kerja, dan waranti bertulis bagi pengelupasan, gelembung serta warna tidak sekata." },
+      { q: "Bagaimanakah saya mengesahkan hasil kerja terdahulu tukang cat?", a: "Minta foto setiap peringkat penyediaan, bukan bilik yang sudah siap sahaja. Tukang cat yang merekod kerja menampal, mengampelas dan menyapu primer biasanya benar-benar melaksanakan langkah tersebut. Jika jadual mengizinkan, lawatan ke tapak kerja semasa memberi bukti lebih kukuh." },
+      { q: "Patutkah saya membeli cat atau membiarkan tukang cat membekalkannya?", a: "Biarkan tukang cat membekalkannya supaya beliau bertanggungjawab terhadap keserasian bahan dan waranti sistem. Jika anda membeli cat sendiri lalu kemasan gagal, tukang cat mungkin menyalahkan bahan manakala kedai cat pula menyalahkan cara sapuan." },
+      { q: "Apakah tempoh mengecat yang munasabah bagi rumah teres?", a: "Bahagian dalaman rumah teres dua tingkat biasa mengambil kira-kira 5–7 hari bekerja dengan pasukan dua atau tiga orang. Kerja luaran menambah 3–5 hari bergantung pada akses dan cuaca. Jadual yang jauh lebih singkat mungkin menandakan langkah persediaan dipotong." }
+    ],
+    zh: [
+      { q: "油漆工的报价应包括什么？", a: "报价应逐项列明基层处理，例如补裂、打磨和底漆，以及油漆品牌与系列、涂层数量、家具和地板保护、施工时间，并提供涵盖脱皮、起泡与色泽不均的书面保修。" },
+      { q: "怎样核实油漆工过去的工程？", a: "要求查看基层处理各阶段的照片，而不只是完工房间。愿意记录补裂、打磨和底漆过程的油漆工，通常确实执行这些步骤；若时间许可，到其当前工地查看会更可靠。" },
+      { q: "油漆应该由我购买，还是由油漆工供应？", a: "让油漆工供应较妥当，这样材料配套和系统保修都由其负责。若屋主自行供漆后出现问题，油漆工可能归咎于产品，油漆店则可能归咎于施工，责任难以厘清。" },
+      { q: "粉刷一间排屋需要多长时间才合理？", a: "一般两层排屋的室内工程，由两至三人团队施工约需 5–7 个工作日；外墙则按通道和天气再增加 3–5 天。若工期明显更短，可能意味着省略了必要的基层处理。" }
+    ]
+  },
+  "guides:how-to-choose-plumber-kl": {
+    ms: [
+      { q: "Adakah tukang paip memerlukan lesen di Malaysia?", a: "Bagi kerja bekalan air yang bersambung dengan saluran utama, kelayakan berkaitan diperlukan, termasuk kerja pada sambungan IWK dan bekalan utama. Penggantian kelengkapan dalaman mungkin kurang formal dari segi syarat, tetapi kemahiran diagnosis dan pemasangan tetap mesti dibuktikan." },
+      { q: "Bagaimanakah saya mengetahui sama ada tukang paip itu cekap?", a: "Tanya cara beliau mengesan kebocoran tersembunyi sebelum memecahkan lantai atau dinding. Tukang yang cekap akan menerangkan ujian tekanan dan pengesanan akustik, bukannya terus mencadangkan untuk membuka permukaan dan mencari secara cuba-cuba." },
+      { q: "Patutkah sebut harga tukang paip disertakan foto?", a: "Bagi kerja pembaikan, tukang paip profesional lazimnya menyediakan foto sebelum dan selepas. Foto tersebut merekodkan kerosakan, kaedah pembaikan dan bahan yang digunakan, lalu menjadi bukti penting untuk tuntutan insurans serta penguatkuasaan waranti." },
+      { q: "Apakah waranti yang patut diberikan bagi kerja paip?", a: "Kerja pembaikan patut mempunyai waranti mutu kerja sekurang-kurangnya 30 hari, manakala pemasangan baharu sekitar 12 bulan. Waranti perlu meliputi kebocoran sambungan dan kegagalan kelengkapan, bukan alat ganti sahaja." }
+    ],
+    zh: [
+      { q: "马来西亚的水管工需要执照吗？", a: "涉及连接总水管的供水工程需要相关资格，包括 IWK 连接和主供水工程。更换室内洁具的要求可能较不正式，但施工人员仍须证明其诊断和安装能力。" },
+      { q: "怎样判断水管工是否胜任？", a: "先问他在敲开地面或墙壁前会怎样寻找暗漏。合格水管工会说明压力测试和声学检测方法，而不是只说先拆开地面再找；诊断思路最能反映其专业程度。" },
+      { q: "水管维修报价应该附照片吗？", a: "专业水管工通常会为维修提供施工前后照片，记录故障、修复过程和所用材料。这些资料也是日后申请保险赔偿和执行保修时的重要证据。" },
+      { q: "水管工程应提供怎样的保修？", a: "一般维修的施工保修至少应有 30 天，新安装工程则应有约 12 个月。保修必须涵盖接头漏水与配件安装故障，而不能只保障零件本身。" }
+    ]
+  },
+  "guides:how-to-choose-waterproofing-contractor-kl": {
+    ms: [
+      { q: "Bagaimanakah saya tahu kebocoran perlu dipecahkan atau boleh dibaiki tanpa pecah?", a: "Kontraktor yang cekap akan menjalankan ujian takungan air, pengesanan pewarna dan penilaian keadaan membran terlebih dahulu. Jika kaedah tanpa pecah disyorkan tanpa ujian, atau kerja pecah dicadangkan tanpa menunjukkan membran yang gagal, dapatkan pendapat kedua." },
+      { q: "Apakah yang patut diliputi oleh waranti kalis air?", a: "Waranti perlu meliputi keseluruhan sistem yang dipasang daripada kebocoran berulang sepanjang tempoh yang dinyatakan, bukan bahan sahaja. Waranti bahan semata-mata tidak membantu jika kegagalan berpunca daripada penyediaan atau sapuan yang salah." },
+      { q: "Patutkah kontraktor berurusan dengan jiran di tingkat bawah?", a: "Ya. Kebocoran antara tingkat memerlukan akses ke unit bawah untuk pemeriksaan dan ujian. Kontraktor profesional mengatur penyelarasan ini dan memasukkannya dalam skop kerja, bukannya menyerahkan urusan tersebut kepada anda selepas kerja bermula." },
+      { q: "Bagaimanakah saya mengesahkan pengalaman kontraktor kalis air?", a: "Minta kajian kes yang menunjukkan foto diagnosis, setiap peringkat pembaikan dan ujian selepas siap. Rekod lengkap membolehkan anda menilai sama ada kontraktor menggunakan proses yang konsisten, bukan sekadar mempamerkan permukaan yang sudah cantik." }
+    ],
+    zh: [
+      { q: "怎样判断漏水需要拆砖，还是可以免拆维修？", a: "合格承包商会先进行蓄水测试、染色追踪及防水层状况评估。若未测试便推荐免拆方案，或无法展示防水层失效证据便要求拆除，应另寻第二意见。" },
+      { q: "防水保修应该涵盖什么？", a: "保修应保障已安装的整个系统在指定期限内不再渗漏，而不只是保障材料。若只保材料，基层处理或涂布失误造成的漏水便可能无人负责，保修也失去实际意义。" },
+      { q: "承包商应负责与楼下邻居协调吗？", a: "应该。楼层间渗漏需要进入楼下单位检查和测试，专业承包商应把协调工作纳入施工范围，而不是开工后才要求屋主自行处理。" },
+      { q: "怎样核实防水承包商的经验？", a: "要求查看包含诊断、维修各阶段及完工后测试照片的案例。完整记录比单纯展示漂亮的完成面更能证明承包商是否持续依照正确流程施工。" }
+    ]
+  },
+  "guides:how-to-choose-ceiling-contractor-kl": {
+    ms: [
+      { q: "Berapakah jarak rangka yang betul untuk siling papan gipsum?", a: "Kebanyakan pengeluar menetapkan jarak pusat 400–450 mm bagi papan standard kerana jarak lebih lebar boleh menyebabkan siling kendur. Minta kontraktor menunjukkan ukuran pada pelan rangka, bukan sekadar mengatakan bahawa pasukan mereka mengikut kebiasaan industri." },
+      { q: "Perlukah sambungan siling diperkukuh?", a: "Ya. Setiap sambungan dan penjuru sistem siling plaster perlu menggunakan pita pengukuh serta beberapa lapisan sebatian penyambung. Kaedah inilah yang mengurangkan retak akibat pergerakan, berbanding kemasan satu lapisan yang mudah retak dalam beberapa bulan." },
+      { q: "Bagaimanakah saya memeriksa penyelarasan lampu bawah?", a: "Sebelum papan dipasang, kedudukan setiap lampu perlu ditanda pada rangka dan kawasan potongan diperkukuh. Menambah lampu selepas papan siap memerlukan pemotongan pada siling berkemasan dan meningkatkan risiko retak serta kedudukan yang tersasar." },
+      { q: "Apakah waranti yang patut diberikan bagi kerja siling?", a: "Siling papan gipsum standard patut membawa waranti mutu kerja selama 12 bulan. Sistem siling plaster premium boleh menawarkan sehingga 10 tahun bagi masalah kendur dan retak; tempohnya mesti mencerminkan spesifikasi sistem, bukan janji lisan semata-mata." }
+    ],
+    zh: [
+      { q: "石膏板天花的龙骨间距应该是多少？", a: "大多数制造商为普通板规定 400–450 毫米的中心间距，间距过宽日后容易下垂。应要求承包商在龙骨图上标示实际尺寸，而不是只说会按照行业标准。" },
+      { q: "天花板接缝需要加固吗？", a: "需要。灰泥天花系统的每一道接缝和转角都应使用加强带及多层接缝膏，这正是减少热胀冷缩裂缝的关键；普通单层处理往往数月后便会开裂。" },
+      { q: "怎样检查筒灯位置是否已协调？", a: "封板前应在龙骨上标出每盏筒灯的位置，并加固开孔周围。封板后才增加筒灯会切入已完成的天花，提高裂缝和位置偏差的风险。" },
+      { q: "天花工程应提供怎样的保修？", a: "普通石膏板天花的施工保修应为 12 个月；高档灰泥天花系统对下垂和开裂可提供最长 10 年保修。期限应与完整系统规格相符，而不能只是口头承诺。" }
+    ]
+  },
+  "guides:how-to-choose-handyman-kl": {
+    ms: [
+      { q: "Bagaimanakah saya mengenal pasti tukang rumah yang profesional?", a: "Tukang profesional menerangkan langkahnya sebelum bermula, termasuk mengenal pasti jenis dinding, memilih sauh dan mengira beban. Tukang cuai terus mengambil gerudi lalu membuat keputusan pada dinding; perbezaan sikap ini biasanya jelas dalam lima minit pertama." },
+      { q: "Patutkah tukang rumah mempunyai perlindungan insurans?", a: "Ya. Insurans liabiliti awam melindungi anda jika tukang merosakkan harta anda atau jiran, ataupun mencederakan seseorang semasa bekerja. Minta sijil yang masih sah; penyedia perkhidmatan profesional sepatutnya boleh menunjukkannya tanpa berlengah." },
+      { q: "Manakah lebih baik, sebut harga tetap atau kadar mengikut jam?", a: "Bagi kerja yang skopnya jelas seperti pemasangan, pembaikan dan pemasangan perabot, harga tetap melindungi anda daripada tempoh yang sengaja dipanjangkan. Bagi senarai kerja terbuka yang skopnya belum diketahui, kadar jam bersama anggaran masa ialah pilihan yang lebih jujur." },
+      { q: "Apakah yang berlaku jika kerja tukang rumah gagal kemudian?", a: "Kerja dengan waranti perlu dibaiki semula tanpa caj dalam tempoh perlindungan. Jika tukang langsung tidak menawarkan waranti, bayaran anda sebenarnya hanya membeli satu percubaan, bukan hasil siap yang dipertanggungjawabkan." }
+    ],
+    zh: [
+      { q: "怎样判断杂工是否专业？", a: "专业人员开工前会说明方法，包括辨认墙体、选择锚栓和计算承重；草率施工者则拿起电钻后才在墙上临时决定。通常在最初五分钟内便能看出这种差别。" },
+      { q: "杂工应该购买保险吗？", a: "应该。公共责任保险可在施工人员损坏你或邻居的财物，或工作期间导致他人受伤时提供保障。应要求查看有效证书，专业服务商通常能立即提供。" },
+      { q: "固定报价和按小时收费哪一种较好？", a: "挂装、维修和家具组装等范围明确的工作适合固定报价，可避免工时被拖长。若待办清单开放且范围确实无法预先确定，按小时收费并提供时间估算会更诚实。" },
+      { q: "如果杂工的工程之后失效怎么办？", a: "有保修的工程应在保障期内免费返工。若施工人员完全不提供保修，你付费购买的只是一次尝试，而不是由对方负责到底的完成成果。" }
+    ]
+  },
+  "guides:paint-brand-comparison-nippon-vs-dulux-vs-jotun": {
+    ms: [
+      { q: "Jenama manakah mempunyai cat dalaman paling tahan kotoran?", a: "Nippon Spot-less Plus dan Dulux EasyClean hampir setara dari segi ketahanan kotoran, manakala Jotun Majestic True Beauty menumpukan kemasan premium. Pilihan terbaik bergantung pada sama ada anda lebih mengutamakan permukaan mudah dilap atau kedalaman rupa warna." },
+      { q: "Jenama manakah paling tahan lama pada luaran rumah di Malaysia?", a: "Dulux Weathershield, Nippon Weatherbond dan Jotun Jotashield masing-masing membawa tuntutan sekitar 5–7 tahun. Prestasi sebenar lebih bergantung pada pilihan primer, penyediaan permukaan dan mutu sapuan berbanding jenama cat kemasan semata-mata." },
+      { q: "Adakah Jotun berbaloi dengan harga lebih tinggi berbanding Nippon dan Dulux?", a: "Bagi dinding tumpu dan luaran yang menerima cahaya matahari sangat kuat, pantulan haba serta pengekalan warna Jotun boleh mewajarkan kosnya. Untuk dalaman biasa dan luaran terlindung, Nippon atau Dulux mampu memberi hasil setanding pada harga lebih rendah." },
+      { q: "Bolehkah saya menggunakan primer dan cat kemasan daripada jenama berlainan?", a: "Pengeluar menguji dan memberi waranti kepada primer serta cat kemasan sebagai satu sistem sepadan. Apabila jenama dicampur, kedua-dua pihak boleh menolak tuntutan jika kemasan gagal. Gunakan satu sistem jenama supaya perlindungan waranti kekal jelas." }
+    ],
+    zh: [
+      { q: "哪一个品牌的内墙漆最抗污？", a: "Nippon Spot-less Plus 与 Dulux EasyClean 的抗污表现相近，Jotun Majestic True Beauty 则着重高档饰面。最佳选择取决于你更重视容易擦洗，还是颜色与表面的视觉层次。" },
+      { q: "哪一个品牌在马来西亚外墙上最耐久？", a: "Dulux Weathershield、Nippon Weatherbond 和 Jotun Jotashield 都有约 5–7 年的耐久说明。实际寿命更取决于底漆选择、基层处理与施工质量，而不是只由面漆品牌决定。" },
+      { q: "Jotun 比 Nippon 和 Dulux 贵，是否值得？", a: "对于特色墙或受到强烈日晒的外墙，Jotun 的热反射和保色表现可能值得额外费用。普通室内与有遮挡的外墙使用 Nippon 或 Dulux，通常能以较低成本取得相近效果。" },
+      { q: "底漆和面漆可以使用不同品牌吗？", a: "制造商以配套系统测试并保修底漆与面漆。混用品牌后若系统失效，双方都可能拒绝保修；采用同一品牌的完整配套，责任和保障才清楚。" }
+    ]
+  },
+  "guides:waterproofing-method-comparison-pu-vs-membrane": {
+    ms: [
+      { q: "Bagaimanakah saya mengetahui sama ada membran kalis air sudah gagal?", a: "Jalankan ujian takungan air sambil memeriksa siling di bawah, kemudian periksa sama ada membran terpisah pada garisan grout dan tepi. Jika lapisan itu terangkat atau hancur apabila diuji, membran telah gagal dan suntikan sahaja tidak dapat memulihkannya." },
+      { q: "Bolehkah suntikan PU memberi masa sebelum pembaikan penuh?", a: "Boleh. Suntikan menghentikan kebocoran aktif sementara anda merancang penggantian membran penuh. Ini pendekatan dua peringkat yang munasabah apabila kerja meroboh serta-merta tidak praktikal, asalkan ia tidak digambarkan sebagai penyelesaian kekal." },
+      { q: "Kaedah manakah mempunyai waranti lebih panjang?", a: "Penggantian membran penuh boleh membawa waranti sehingga 5 tahun, manakala suntikan PU biasanya 1–2 tahun. Perbezaan itu mencerminkan skop: suntikan merawat titik tertentu, tetapi membran menggantikan keseluruhan sistem kalis air." },
+      { q: "Adakah terdapat pilihan antara suntikan dan kerja pecah penuh?", a: "Dalam keadaan tertentu, membran cecair boleh disapu di atas jubin sedia ada tanpa kerja pecah. Namun, kaedah ini menaikkan aras lantai, mempengaruhi kelegaan pintu dan hanya sesuai jika substrat di bawah jubin masih kukuh." }
+    ],
+    zh: [
+      { q: "怎样判断防水层已经失效？", a: "进行蓄水测试并观察楼下天花，同时检查填缝线和边缘是否出现防水层脱层。若探查时防水层会掀起或碎裂，表示系统已经失效，单靠灌注不能修复。" },
+      { q: "PU 灌注能否为全面维修争取时间？", a: "可以。灌注可先阻止活动漏水，让屋主有时间安排全面更换防水层。在无法立即拆除时，这是合理的两阶段方法，但不应被当作永久修复来销售。" },
+      { q: "哪一种方法的保修较长？", a: "全面更换防水层可提供最长约 5 年保修，PU 灌注通常为 1–2 年。差别来自工程范围：灌注只处理特定裂缝或接缝，防水层则更换整个系统。" },
+      { q: "灌注和全面拆除之间还有其他方法吗？", a: "某些情况下可在现有瓷砖上涂布液体防水膜而无需拆除，但会提高地面、影响门底净空，而且只有在瓷砖下基层仍然稳固时才适用。" }
+    ]
+  },
+  "guides:ceiling-material-comparison-plaster-vs-gypsum": {
+    ms: [
+      { q: "Jenis siling manakah sesuai untuk kondominium yang rendah?", a: "Papan gipsum rata dengan penurunan minimum sesuai apabila ruang kepala terhad, manakala sistem siling plaster memerlukan kedalaman tambahan untuk beberapa lapisan skim. Jika lampu teluk dirancang, kedalaman profil mesti mengambil kira saluran lampu dari awal." },
+      { q: "Mengapakah siling gipsum saya retak selepas setahun?", a: "Kemasan sambungan biasa tanpa pengukuh tidak mampu menampung pergerakan haba dalam iklim Malaysia. Sistem siling plaster menggunakan sambungan berpengukuh dan beberapa lapisan skim yang direka khusus untuk mengurangkan jenis keretakan ini." },
+      { q: "Bolehkah siling plaster dipasang di kawasan basah?", a: "Boleh jika sistem premium menggunakan papan tahan lembap di bilik mandi dan dapur bersama sambungan berpengukuh yang sama. Kosnya lebih tinggi daripada papan gipsum MR, tetapi memberikan rupa tanpa sambungan yang seragam di seluruh rumah." },
+      { q: "Jenis siling manakah menambah lebih banyak nilai hartanah?", a: "Siling plaster yang dipasang rapi bersama lampu teluk kelihatan sebagai ciri premium semasa lawatan pembeli. Namun, nilainya datang daripada reka bentuk dan mutu pelaksanaan, bukan nama bahan sahaja; kerja yang retak atau kendur menjejaskan tanggapan sebaliknya." }
+    ],
+    zh: [
+      { q: "哪一种天花适合层高较低的公寓？", a: "净高有限时，采用最小降高的平面石膏板较合适；灰泥天花系统因多层批荡需要更多深度。若计划安装灯槽，应在设计时把灯槽所需空间一并计算。" },
+      { q: "为什么石膏板天花一年后会开裂？", a: "没有加强处理的普通接缝难以承受马来西亚环境中的热胀冷缩。灰泥天花系统采用加强接缝和多层批荡，正是为了降低这类裂缝风险。" },
+      { q: "潮湿空间可以安装灰泥天花吗？", a: "可以，但高档系统应在卫生间和厨房采用防潮板，并使用同样的加强接缝。其费用高于 MR 防潮石膏板，却能让全屋保持一致的无缝饰面。" },
+      { q: "哪一种天花更能提升房产价值？", a: "施工精良并配有灯槽的灰泥天花，在看房时通常显得较高档。但价值来自设计与施工质量，而不只是材料名称；若出现裂缝或下垂，反而会降低观感。" }
+    ]
+  },
+  "guides:plumbing-pipe-comparison-pvc-vs-copper-vs-ppr": {
+    ms: [
+      { q: "Paip manakah paling sesuai untuk saluran air panas?", a: "Tembaga menampung julat suhu penuh dan boleh bertahan berdekad-dekad. PPR dengan sambungan kimpalan haba ialah pilihan moden yang menghapuskan sambungan berulir yang mudah bocor pada sistem tembaga. PVC biasa tidak dinilai untuk air panas." },
+      { q: "Adakah PPR lebih baik daripada tembaga?", a: "Sambungan kimpalan haba PPR mengurangkan titik bocor pada sambungan berulir dan pemasangannya lebih pantas. Namun, rekod penggunaan tembaga melebihi 50 tahun, lebih panjang daripada sejarah PPR sekitar 25 tahun di Malaysia; pilihan perlu mengambil kira aplikasi dan pemasang." },
+      { q: "Bolehkah saya menggunakan PVC untuk seluruh rumah?", a: "PVC sesuai bagi bekalan air sejuk dan saliran sahaja. Saluran air panas memerlukan tembaga, PPR atau CPVC. Menggunakan PVC biasa untuk air panas ialah jalan pintas yang boleh menyebabkan paip lembut, berubah bentuk dan akhirnya bocor." },
+      { q: "Adakah ketiga-tiga jenis paip memerlukan pensijilan SIRIM?", a: "Ya. Setiap paip yang membawa air minuman di Malaysia patut mempunyai pensijilan SIRIM QAS bagi mengesahkan kadar tekanan dan keselamatan bahan. Paip tanpa pensijilan boleh menjejaskan tuntutan insurans apabila berlaku kerosakan air." }
+    ],
+    zh: [
+      { q: "热水管最适合使用哪一种管材？", a: "铜管可承受完整温度范围并使用数十年；采用热熔接头的 PPR 是现代替代方案，可避免铜管螺纹连接常见的漏点。普通 PVC 不适用于热水。" },
+      { q: "PPR 比铜管更好吗？", a: "PPR 热熔接头减少了螺纹连接的漏水点，安装也较快；但铜管已有超过 50 年的使用记录，长于 PPR 在马来西亚约 25 年的历史。选择仍应按用途与施工能力决定。" },
+      { q: "全屋都可以使用 PVC 管吗？", a: "PVC 只适合冷水供应和排水。热水管应采用铜管、PPR 或 CPVC；把普通 PVC 用于热水会令管材软化、变形，最终造成漏水。" },
+      { q: "这三种管材都需要 SIRIM 认证吗？", a: "需要。马来西亚所有输送饮用水的管材都应具备 SIRIM QAS 认证，以确认耐压等级和材料安全。使用未经认证的管材，也可能影响水损保险索赔。" }
+    ]
+  },
+  "guides:tv-mount-types-comparison-fixed-vs-tilt-vs-full-motion": {
+    ms: [
+      { q: "Jenis pendakap televisyen manakah paling selamat?", a: "Pendakap tetap yang dinilai melebihi berat televisyen dan dipasang pada batu padu atau stud yang disauh dengan betul biasanya paling selamat. Mekanisme yang lebih ringkas mempunyai kurang titik kegagalan, manakala lengan gerak penuh menambah daya tuil pada setiap pengikat." },
+      { q: "Bolehkah pendakap gerak penuh dipasang pada papan plaster?", a: "Boleh hanya jika pendakap disauh pada stud logam atau kayu di belakang papan, bukan pada papan itu sendiri. Televisyen 55 inci pada lengan yang dipanjangkan menghasilkan daya tuil besar yang tidak mampu ditanggung oleh papan plaster sahaja." },
+      { q: "Adakah pendakap condong membantu mengurangkan silau tingkap?", a: "Ya. Kecondongan ke bawah sekitar 15° boleh mengurangkan pantulan lampu siling dan tingkap pada aras mata. Ciri ini amat berguna di ruang tamu Malaysia yang mempunyai tingkap besar serta banyak lampu bawah." },
+      { q: "Bagaimanakah saya mengetahui berat televisyen saya?", a: "Semak helaian spesifikasi pengeluar dan gunakan angka berat tanpa kaki meja. Pendakap mesti dinilai melebihi angka itu dengan margin keselamatan; jangan sekali-kali memilih pendakap yang had bebannya lebih rendah daripada berat sebenar televisyen." }
+    ],
+    zh: [
+      { q: "哪一种电视挂架最安全？", a: "额定承重高于电视重量，并正确固定在实心砖墙或龙骨上的固定式挂架通常最安全。结构越简单，潜在失效点越少；全活动臂则会放大每个固定点承受的杠杆力。" },
+      { q: "全活动挂架可以安装在石膏板墙上吗？", a: "只有固定件穿过板材并锚定在后方金属或木龙骨时才可以，不能只靠石膏板承重。55 英寸电视伸出墙面后会产生很大杠杆力，单独的石膏板无法安全承受。" },
+      { q: "倾斜式挂架有助于减少窗户眩光吗？", a: "有帮助。向下约 15° 可减少视线高度的窗户反光和顶灯倒影，尤其适合设有大窗户和多盏筒灯的马来西亚客厅。" },
+      { q: "怎样查出电视机的重量？", a: "查看制造商规格表中不含桌面底座的重量，并选择额定承重留有安全余量的挂架。绝不能使用额定承重低于电视实际重量的产品。" }
+    ]
   }
+
 };

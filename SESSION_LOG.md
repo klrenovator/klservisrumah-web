@@ -3012,3 +3012,43 @@ self-canonical, en-MY/ms-MY/zh-MY/x-default hreflang, localized FAQs + matching 
 - Fixed remaining order: guides 10 → guidesMaintenance 10 → seasonal 8 → compare
   18 → brands 32 → commercial 29 → residential 29. **136 remain.** No MT,
   template replacement or premature ✅ for the whole phase.
+
+---
+
+## Session — 2026-08-30 — FIX WAVE 16 (P3-12 phase 2, tranche 2)
+
+### Scope and tracker decision
+- Read `docs/full-website-deep-audit/TRACKING.md`, Wave 15's report, the
+  continuation prompt and prior session log before changing code. Their exact
+  next stop was **all 10 `guides` FAQ sets**; completed work was not repeated.
+- Completed the whole family: 10 pages × 4 FAQs × 2 locales = **80 native
+  localized Q&As**. Full phase remains ⏳ at **20/146**.
+
+### Implementation
+- Added 10 `guides:<slug>` editorial records to
+  `config/content-pod-faq-i18n.ts`, preserving each source FAQ's concrete
+  selection evidence, dimensions, timelines, warranty terms and trade-offs.
+- Promoted `guides` into the validator's `COMPLETED_FAMILIES` only after complete
+  MS/ZH count and resolver parity passed. Existing route/schema/fallback wiring
+  remains the single source; no generic template or machine translation added.
+- Full evidence: `docs/full-website-deep-audit/FIX-WAVE-16-REPORT.md`.
+
+### Verification
+- `npm ci`: 177 packages, 0 vulnerabilities; lint 0/0; type-check PASS.
+- Full prebuild PASS including `audit:content-pod-faq-i18n` (**20/146 pods,
+  160 localized Q&As**) and estimator harness **329,897 assertions × 0**.
+- Production build PASS (**4,139 HTML**). Dedicated built probe: 20/20
+  `/ms/guides/*` + `/zh/guides/*` pages; all 80 translated Q&As visible and
+  byte-identical to FAQPage schema.
+- `audit:html` 0/0; links 312,732+56, 0 broken; seo-head 4,112 indexable = 4,112
+  sitemap, 0 duplicate metadata/warnings; schema-size max non-FAQ 7.1 KB; BP-1
+  PASS; location similarity max 69.4%; raster OG/meta/seo audits PASS.
+
+### Exact continuation
+- **Next: P3-12 phase 2 tranche 3 — all 10 `guidesMaintenance` pages.** Source
+  is `maintenanceCopy` in `config/content-pod-copy-batch2.ts`; add
+  `guidesMaintenance:<slug>` sets, then add `guidesMaintenance` to the gate's
+  `COMPLETED_FAMILIES` only when all 10 pass.
+- Fixed remaining order: guidesMaintenance 10 → seasonal 8 → compare 18 →
+  brands 32 → commercial 29 → residential 29. **126 remain.** No MT, generic
+  replacement or premature ✅ for the whole phase.
