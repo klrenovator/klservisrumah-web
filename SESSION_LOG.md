@@ -3217,3 +3217,98 @@ self-canonical, en-MY/ms-MY/zh-MY/x-default hreflang, localized FAQs + matching 
 - Fixed remaining order: brands 32 → commercial 29 → residential 29.
   **90 remain.** No MT, generic replacement or premature ✅ for the whole
   phase.
+
+## Session — 2026-08-30 — Fix Wave 21 (P3-12 phase 2 tranche 7: native MS/ZH commercial FAQs)
+
+**Scope:** Translate the remaining 29 `commercial` content-pod FAQ sets editorially
+into Bahasa Malaysia and Simplified Chinese. Parts 1–5, Fix Waves 1–20, BP-1
+phase 1 and CF-4 already complete and **not** repeated; owner-blocked work left
+untouched.
+
+**Completed ✅**
+- Authored 29 `commercial:<slug>` sets in `config/content-pod-faq-i18n.ts`
+  (29 × 4 FAQs × 2 locales = 232 new localized Q&As), sourced from
+  `commercialCopy` in `config/content-pod-copy.ts` (editorial, no MT).
+- Business-premise detail preserved per service (not generic "homes" copy):
+  strata/JMB approvals, after-hours & weekend scheduling, per-zone shutdown
+  switching, 90-day ceiling workmanship, 5-year membrane systems, Suruhanjaya
+  Tenaga wiremen, RCCB protection, pre-staged ballast/driver swaps, lippage
+  clip systems, 10-year plaster-ceiling, commercial-grade SPC wear layers,
+  forklift load profiles, coved epoxy skirtings, pre-fabrication launch dates,
+  master-keyed hierarchies with key registers, tempered-glass swaps, IGU
+  fogging, hot-works permits, PER% retail access control, dated unit service
+  cards, grease-trap rework, sealed-hoarding washroom staging, council
+  shoplot awning rules.
+- `commercial` promoted to a **completed, gated family** in
+  `scripts/validate-content-pod-faq-i18n.ts` (`COMPLETED_FAMILIES` now =
+  top, guides, guidesMaintenance, seasonal, compare, brands, commercial);
+  header comment updated (117 pages, 936 Q&As). The prebuild gate now fails if
+  any commercial set is missing (no silent generic-FAQ fallback).
+
+**Verification (all green)**
+- `audit:content-pod-faq-i18n` — **117/146** pods, **936** localized Q&As;
+  completed families incl. commercial.
+- Prebuild **329,897 assertions × 0 failures**; lint 0/0; type-check PASS.
+- Production build PASS (**4,139 HTML**). Dedicated probe
+  (`scripts/probe-pod-faq-i18n.ts commercial`): **58/58** localized
+  `/ms/commercial/*` + `/zh/commercial/*` pages; **232/232** Q&As visible and
+  byte-identical to FAQPage schema.
+- `audit:html` 0/0; links 312,732+56 → 0 broken; seo-head 4,112 = 4,112 (0 dup
+  metadata, 0 warnings); schema-size PASS; BP-1 PASS (NAP 62.8%); location
+  similarity max 69.4% (<70%); meta/seo/part5 PASS (0 JSON-LD errors).
+
+### Exact continuation
+- **Next: P3-12 phase 2 tranche 8 — all 29 `residential` pages.** Source is
+  `residentialCopy` in `config/content-pod-copy.ts`; add `residential:<slug>`
+  sets, then add `residential` to the gate's `COMPLETED_FAMILIES` only when all
+  29 pass. Verify with `scripts/probe-pod-faq-i18n.ts residential`. Scope target
+  **146/146** closes the phase. **29 remain.** No MT, generic replacement or
+  premature ✅ for the whole phase.
+
+## Session — 2026-08-30 — Fix Wave 22 (P3-12 phase 2 tranche 8: native MS/ZH residential FAQs — PHASE COMPLETE)
+
+**Scope:** Translate the remaining 29 `residential` content-pod FAQ sets editorially
+into Bahasa Malaysia and Simplified Chinese, closing P3-12 phase 2 at 146/146.
+Parts 1–5, Fix Waves 1–21, BP-1 phase 1 and CF-4 already complete and **not**
+repeated; owner-blocked work untouched.
+
+**Completed ✅**
+- Authored 29 `residential:<slug>` sets in `config/content-pod-faq-i18n.ts`
+  (29 × 4 FAQs × 2 locales = 232 new localized Q&As), sourced from
+  `residentialCopy` in `config/content-pod-copy.ts` (editorial, no MT).
+- Home-owner detail preserved per service (not "homes-copy"): room-by-room
+  sealed/dried/handback painting with low-VOC, bath sequencing keeping one dry
+  zone, bedroom/bathroom kept functional on phased reno, nap-time scheduling,
+  condo/JMB hour/lift/debris filing, wet-zone seal failure for grout-black,
+  batch-seam plan for cracked tiles, timber-swell door scrape, wind-driven-rain
+  roof leak via laps/flashings/valley, terrace camera counts, gate auto-reverse
+  proven with test object, rental-safe mounts and deposit-friendly cabling.
+- `residential` promoted to a **completed, gated family** in
+  `scripts/validate-content-pod-faq-i18n.ts` (`COMPLETED_FAMILIES` now =
+  top, guides, guidesMaintenance, seasonal, compare, brands, commercial,
+  residential); header comment updated (146 pages, 1168 Q&As). The prebuild
+  gate now fails if any residential set is missing.
+
+**Verification (all green)**
+- `audit:content-pod-faq-i18n` — **146/146** pods, **1168** localized Q&As;
+  completed families incl. commercial + residential. **P3-12 phase 2 COMPLETE.**
+- Prebuild **329,897 assertions × 0 failures**; lint 0/0; type-check PASS.
+- Production build PASS (**4,139 HTML**). Dedicated probe
+  (`scripts/probe-pod-faq-i18n.ts residential`): **58/58** localized
+  `/ms/residential/*` + `/zh/residential/*` pages; **232/232** Q&As visible and
+  byte-identical to FAQPage schema.
+- `audit:html` 0/0; links 312,732+56 → 0 broken; seo-head 4,112 = 4,112 (0 dup
+  metadata, 0 warnings); schema-size PASS; BP-1 PASS (NAP 62.8%); location
+  similarity max 69.4% (<70%); meta/seo/part5 PASS (0 JSON-LD errors).
+
+### Exact continuation
+- **P3-12 phase 2 is COMPLETE** — 146/146 pods carry page-specific editorial
+  MS/ZH FAQ translations. No tranches remain.
+- Next candidates (unblocked, value order): **P2-16 tranche 3** (remaining 44
+  problems); **§5.4-B1** BM commercial tree; **P4-10** case-study pages;
+  **P4-14** per-area `Service` entities; **P4-08** CTA wording; **P4-16** footer
+  link tiering; **P3-15/P3-16** SearchAction vs `/search` + news-sitemap
+  freshness; **P3-19** expand `aeo-faq.txt`.
+- Owner-blocked (unchanged): Part 1 Critical #3 www/non-www; P2-21 reviews;
+  P2-22 outbound citations; P3-09 stats/claims; P4-11 named team page (bios);
+  P5-12 photography; P4-13 / P2-C4 / BP-1 phase 2 (GSC keep-set).
