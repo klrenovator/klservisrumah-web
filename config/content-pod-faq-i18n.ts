@@ -5,8 +5,9 @@
  *
  * Coverage is intentionally gated by scripts/validate-content-pod-faq-i18n.ts.
  * Waves 15–16 cover the complete `top` and `guides` families; Wave 17 adds the
- * complete `guidesMaintenance` family (30 pages, 240 translated Q&As in all).
- * Remaining families stay explicitly pending in TRACKING.
+ * complete `guidesMaintenance` family; Wave 18 adds the complete `seasonal`
+ * family (38 pages, 304 translated Q&As in all). Remaining families stay
+ * explicitly pending in TRACKING.
  */
 
 export type LocalizedPodFaq = { q: string; a: string };
@@ -432,6 +433,118 @@ export const CONTENT_POD_FAQ_I18N: Record<string, LocalizedPodFaqSet> = {
       { q: "换租客时需要换锁吗？", a: "一定要。你不知道旧钥匙复制了多少份。重新配匙花费不多，而前钥匙持有者闯入的报案却代价高昂。数字门锁更换密码更加方便。" },
       { q: "怎样记录房屋状况？", a: "在新租客入住前，给每个房间、每件设备和装置拍照并加上日期，与租约一起保存。这是租期结束时扣除押金的有力证据。" },
       { q: "换租客之间需要保养空调吗？", a: "需要。租客之间做一次化学清洗和雪种检查，能确保新租客接手的是正常运转的机组；保养记录也能在你被指空调入住时已损坏的情况下保护你。" }
+    ]
+  },
+  "seasonal:home-prep-rainy-season-kl": {
+    ms: [
+      { q: "Bilakah saya perlu mula bersiap sedia untuk musim tengkujuh?", a: "Menjelang bulan Oktober — monsun timur laut lazimnya membawa hujan lebat dari November hingga Mac, dan kerja kalis air, pembaikan bumbung serta saliran memerlukan cuaca kering untuk mengeras dengan sempurna sebelum hujan tiba." },
+      { q: "Apakah pemeriksaan pra-tengkujuh yang paling penting?", a: "Talang bumbung dan paip turun — talang tersumbat melimpah ke papan fasia dan ke ruang siling semasa hujan lebat, menyebabkan kerosakan yang sebenarnya boleh dicegah dengan pembersihan selama 30 minit." },
+      { q: "Adakah kerja kalis air masih boleh dilakukan selepas hujan mula turun?", a: "Pengedapan kecemasan antara hujan masih boleh dilakukan, tetapi sistem membran yang betul memerlukan 2–3 hari kering untuk pemasangan dan pengerasan. Menjadualkan kerja sebelum tengkujuh sentiasa lebih murah dan lebih selamat." },
+      { q: "Perlukah saya mengambil kira longkang rumah jiran dalam persediaan saya?", a: "Di rumah teres, ya — saliran berkongsi, dinding sempadan dan garisan bumbung yang bersambung bermakna paip turun jiran yang tersumbat boleh membanjiri hartanah anda. Perbincangan mesra sebelum tengkujuh menghalang pertikaian semasa hujan." }
+    ],
+    zh: [
+      { q: "我应该从什么时候开始为雨季做准备？", a: "最迟十月就要开始。东北季风通常从十一月持续到次年三月并带来暴雨，而防水、修屋顶和排水工程都需要干爽天气才能正确固化，所以必须在雨季来临前完成。" },
+      { q: "雨季前最重要的一项检查是什么？", a: "屋顶天沟和落水管。天沟堵塞会在暴雨时溢到檐板和天花空间，造成本可避免的损害；花三十分钟清理一次，就能防患于未然。" },
+      { q: "雨季开始后还能做防水工程吗？", a: "两次降雨之间的紧急密封可以应急，但正规的防水系统需要两到三天干爽天气来完成施工和固化。在季风来临前安排施工，始终更省钱也更可靠。" },
+      { q: "我也应该检查邻居的排水吗？", a: "在排屋，应该。共享排水、共用围墙和相连的屋顶线，意味着邻居堵塞的落水管也可能淹没你家。雨季前友好沟通，能避免雨季中的纠纷。" }
+    ]
+  },
+  "seasonal:painting-dry-season-tips": {
+    ms: [
+      { q: "Mengapa mengecat semasa musim kering?", a: "Cat luaran memerlukan keadaan kering untuk lekatan dan pengerasan yang betul — hujan yang mengenai lapisan cat baharu menyebabkan gelembung, lekatan lemah dan warna tidak sekata. Bulan-bulan lebih kering, lazimnya Mei hingga September, memberi jendela pengecatan paling dipercayai." },
+      { q: "Bolehkah kerja mengecat dalaman dilakukan semasa musim hujan?", a: "Ya — kerja mengecat dalaman tidak bergantung pada cuaca, walaupun pengudaraan dan masa pengeringan perlu diurus dalam keadaan lembap. Alat penyahlembapan dan kipas membantu cat mengeras dengan betul apabila tingkap terpaksa ditutup." },
+      { q: "Berapa awal saya perlu menempah tukang cat?", a: "4–6 minggu semasa kemuncak musim kering — tukang cat profesional paling sibuk apabila cuaca paling baik, dan tempahan saat akhir selalunya bermakna pasukan kurang berpengalaman atau persediaan tergesa-gesa." },
+      { q: "Bagaimana jika hujan turun semasa kerja mengecat luaran saya?", a: "Tukang cat profesional memantau ramalan cuaca dan memberhentikan kerja sebelum hujan tiba — cat baharu memerlukan sekurang-kurangnya 2–4 jam sebelum terdedah kepada hujan, dan tukang yang baik merancang pelan kontingensi cuaca dalam jadual." }
+    ],
+    zh: [
+      { q: "为什么要选在旱季油漆？", a: "外墙漆需要干爽环境才能良好附着和固化。雨水打在新漆面上会造成起泡、附着力差和颜色不均。旱季（通常五月至九月）是最可靠的施工窗口。" },
+      { q: "雨季可以做室内油漆吗？", a: "可以。室内油漆不受天气影响，但潮湿环境下需要处理好通风和干燥时间。无法开窗时，抽湿机和风扇有助于漆面正确固化。" },
+      { q: "我应该提前多久预约油漆工？", a: "旱季高峰期提前四到六周。专业油漆工在天气最好的时候最忙，临期预约往往只能请到经验较少的团队，或导致施工准备仓促。" },
+      { q: "外墙施工时下雨了怎么办？", a: "专业油漆工会留意天气预报，在下雨前暂停施工。新漆面至少需要两到四个小时才能接触雨水，负责的团队会在排期时预留应对天气的缓冲。" }
+    ]
+  },
+  "seasonal:waterproofing-pre-monsoon-checklist": {
+    ms: [
+      { q: "Apakah pemeriksaan kalis air yang perlu saya lakukan sebelum tengkujuh?", a: "Ujian rendaman di bilik mandi dan balkoni, pemeriksaan visual membran bumbung dan tebat, keadaan sendi silikon di kawasan pancuran dan sekitar tingkap, serta ujian aliran longkang pada setiap saluran keluar — semua ini menangkap kegagalan yang akan dieksploitasi hujan." },
+      { q: "Bolehkah saya membaiki masalah kalis air semasa tengkujuh?", a: "Langkah kecemasan seperti membaharui silikon dan membersihkan longkang boleh dilakukan antara hujan, tetapi pembaikan membran dan penggantian sistem penuh memerlukan keadaan kering — jendela pra-tengkujuh ialah masa kerja sebenar dilakukan." },
+      { q: "Bagaimanakah saya menguji kalis air bilik mandi?", a: "Sumbat saliran, banjiri lantai setinggi 20–30 mm, dan periksa siling di bawah pada jam ke-24 dan ke-72. Sebarang kelembapan atau kesan kotoran bermakna membran memerlukan perhatian sebelum tengkujuh memberi tekanan berterusan." },
+      { q: "Perlukah saya membaharui sendi silikon sebagai penyelenggaraan pencegahan?", a: "Ya — sendi silikon bilik mandi dan balkoni merosot setiap 2–3 tahun dalam kelembapan Malaysia. Membaharui sebelum ia gagal ialah penyelenggaraan kalis air paling murah yang boleh anda lakukan." }
+    ],
+    zh: [
+      { q: "雨季前应该做哪些防水检查？", a: "卫生间和阳台的蓄水测试、屋顶防水层与泛水的目视检查、淋浴区及窗户周围的硅胶接缝状况，以及每个排水口的水流测试。这些检查能揪出雨水最容易钻入的隐患。" },
+      { q: "雨季中可以修复防水问题吗？", a: "更换硅胶、疏通排水等应急措施可在两次降雨之间进行，但防水层修复和整套更换需要干爽条件。季风前的窗口期，才是真正能施工的时候。" },
+      { q: "怎样测试卫生间的防水？", a: "堵住地漏，把地面淹水至二十到三十毫米，再在二十四小时和七十二小时后检查楼下天花板。出现任何潮湿或水渍，都说明防水层需要在季风施压前处理。" },
+      { q: "应该定期重做硅胶接缝作为预防性维护吗？", a: "应该。马来西亚潮湿环境下，卫生间和阳台的硅胶接缝每两三年就会老化。在失效前更换，是你能做的最便宜的防水维护。" }
+    ]
+  },
+  "seasonal:chinese-new-year-home-repaint-guide": {
+    ms: [
+      { q: "Bilakah saya perlu menempah kerja mengecat semula untuk Tahun Baharu Cina?", a: "6–8 minggu sebelum Tahun Baharu Cina — tempoh pra-perayaan ialah musim mengecat paling sibuk di Malaysia, dan tempahan lewat selalunya bermakna persediaan tergesa-gesa atau pasukan kurang berpengalaman." },
+      { q: "Apakah warna yang popular untuk kerja mengecat semula Tahun Baharu Cina?", a: "Dinding penyeri merah melambangkan kemakmuran, warna emas dan krim yang hangat untuk ruang tamu, serta putih segar untuk kesan permulaan baharu — tetapi warna terbaik ialah warna yang anda suka sepanjang tahun, bukan hanya semasa perayaan." },
+      { q: "Bolehkah saya mengecat semula ruang tamu sahaja untuk Tahun Baharu Cina?", a: "Ya — penyegaran satu bilik mengambil masa 2–3 hari dan mengubah ruang yang paling kerap dilihat tetamu. Tumpukan pada ruang tamu, ruang makan dan lorong pintu masuk untuk kesan perayaan yang maksimum." },
+      { q: "Berapa lama sebelum Tahun Baharu Cina kerja mengecat perlu siap?", a: "Sekurang-kurangnya 2 minggu — cat memerlukan masa untuk mengeras sepenuhnya dan menghilangkan bau sebelum rumah dipenuhi tetamu, makanan dan colok. Mengecat terlalu hampir dengan perayaan bermakna anda tinggal bersama bau cat." }
+    ],
+    zh: [
+      { q: "农历新年前应该什么时候预约刷漆？", a: "提前六到八周。春节前是马来西亚油漆最繁忙的时段，临期预约往往意味着施工准备仓促，或只能安排经验较少的团队。" },
+      { q: "农历新年流行刷什么颜色？", a: "红色主题墙象征兴旺，客厅适合温暖的金色和米色，白色则带来焕然一新的感觉。但最好的颜色，是你全年都喜欢的那一种，而不只是为了过节。" },
+      { q: "可以只重新粉刷客厅吗？", a: "可以。单间翻新只需两到三天，就能改变客人最常看到的空间。重点处理客厅、餐厅和进门走廊，就能营造最浓的节日氛围。" },
+      { q: "刷漆应该在春节前多久完成？", a: "至少提前两周。油漆需要时间完全固化和散味，之后家里才会迎来宾客、饭菜和香烛。临近节前才刷完，就得一直闻着油漆味。" }
+    ]
+  },
+  "seasonal:raya-home-makeover-checklist": {
+    ms: [
+      { q: "Bilakah saya perlu memulakan persiapan rumah untuk Hari Raya?", a: "8–10 minggu sebelum Hari Raya — kerja mengecat mengambil 1–2 minggu termasuk tempahan, pembaikan dan sentuhan memerlukan seminggu lagi, dan pembersihan mendalam dilakukan pada minggu terakhir. Bermula lewat bermakna kerja terpaksa dipendekkan." },
+      { q: "Bilik manakah yang perlu saya utamakan untuk Hari Raya?", a: "Ruang tamu, ruang makan, lorong pintu masuk dan bilik mandi tetamu — ini ialah ruang yang dilihat dan dinilai tetamu. Bilik tidur dan kawasan peribadi boleh menunggu musim yang kurang sibuk." },
+      { q: "Bolehkah saya menggabungkan kerja mengecat dan pembaikan dalam satu projek?", a: "Ya — pelan terselaras yang melakukan pembaikan dahulu, iaitu menampal, membaiki dan mengisi, kemudian mengecat pada peringkat akhir, adalah lebih cekap daripada tempahan berasingan. Ramai tukang menawarkan pakej gabungan untuk Hari Raya." },
+      { q: "Perlukah saya membersih secara mendalam sebelum atau selepas mengecat?", a: "Selepas — kerja mengecat menghasilkan habuk dan titisan yang membatalkan sebarang pembersihan terdahulu. Urutannya ialah pembaikan, pengecatan, kemudian pembersihan mendalam pada hari-hari terakhir sebelum rumah terbuka pertama." }
+    ],
+    zh: [
+      { q: "开斋节家居焕新应该什么时候开始？", a: "提前八到十周。刷漆含预约在内需要一到两周，修补和收尾再要一周，最后一周做深度清洁。开始得太晚，就只能赶工。" },
+      { q: "开斋节应该优先整理哪些房间？", a: "客厅、餐厅、进门走廊和客用卫生间，这些是访客看到并评价的空间。卧室和私人区域可以留到不那么繁忙的季节再处理。" },
+      { q: "可以把刷漆和修补合并在一个项目里吗？", a: "可以。先修补（补洞、修复、填缝）后刷漆的统筹安排，比分开预约更高效。不少施工方也提供开斋节合并套餐。" },
+      { q: "深度清洁应该在刷漆前还是刷漆后做？", a: "刷漆后。刷漆会产生粉尘和滴落，会破坏之前的清洁成果。正确顺序是先修补、再刷漆，最后在首次开放日前的最后几天做深度清洁。" }
+    ]
+  },
+  "seasonal:year-end-renovation-planning": {
+    ms: [
+      { q: "Adakah penghujung tahun masa yang baik untuk mengubah suai?", a: "Disember hingga Januari selalunya lebih sunyi bagi kontraktor, bermakna ketersediaan dan tumpuan lebih baik — tetapi pembekal bahan binaan dan pejabat pengurusan kondo mungkin tutup semasa cuti, dan ini perlu diambil kira dalam garis masa." },
+      { q: "Berapa awal saya perlu merancang pengubahsuaian penghujung tahun?", a: "Mula mendapatkan sebut harga pada Oktober–November supaya skop, bahan dan jadual terkunci sebelum Disember. Pengubahsuaian yang bermula tanpa pelan tetap pada Disember selalunya berlarutan hingga Februari dan seterusnya." },
+      { q: "Bolehkah saya mengubah suai semasa penutupan cuti kondo?", a: "Semak dengan JMB anda — kebanyakan kondo menyekat kerja pengubahsuaian semasa tempoh cuti utama seperti Tahun Baharu Cina, Hari Raya, Krismas dan Deepavali, dan bekerja semasa tempoh penutupan berisiko didenda serta menerima aduan jiran." },
+      { q: "Apakah pengubahsuaian yang sesuai untuk jendela penghujung tahun?", a: "Projek dalaman yang tidak bergantung pada cuaca — pengubahsuaian dapur dan bilik mandi, kerja siling, lantai dan pengecatan. Kerja luaran lebih baik dijadualkan pada bulan-bulan yang lebih kering." }
+    ],
+    zh: [
+      { q: "年底适合装修吗？", a: "十二月至一月通常是施工淡季，施工方的档期和关注度都更好。但建材供应商和公寓管理处可能在假期休息，这些都要纳入工期安排。" },
+      { q: "年底装修应该提前多久规划？", a: "十月至十一月就开始报价，让范围、材料和工期在十二月前定下来。没有固定计划就开工的装修，往往拖到二月甚至更久。" },
+      { q: "公寓假期封闭期间可以装修吗？", a: "先向物业查询。很多公寓在春节、开斋节、圣诞节和屠妖节等主要假期限制施工，在封闭期施工可能被罚款，也容易招来邻居投诉。" },
+      { q: "哪些装修适合年底窗口期？", a: "不受天气影响的室内工程，例如厨房和卫生间翻新、吊顶、地板和刷漆。外墙工程最好安排在较干燥的月份。" }
+    ]
+  },
+  "seasonal:hari-raya-painting-promo": {
+    ms: [
+      { q: "Bilakah masa terbaik untuk menempah kerja mengecat Hari Raya?", a: "6–8 minggu sebelum Hari Raya — kesibukan mengecat pra-Raya memenuhi jadual tukang dengan cepat, dan tempahan lewat selalunya bermakna masa persediaan kurang atau pasukan kurang berpengalaman." },
+      { q: "Apakah warna yang sesuai untuk rumah terbuka Hari Raya?", a: "Warna neutral hangat seperti krim, kelabu lembut dan putih suam kelihatan baik dalam foto serta sesuai dengan hiasan perayaan; dinding penyeri hijau tua atau keemasan menambah karakter tanpa memenatkan ruang." },
+      { q: "Bolehkah saya mengecat semula kawasan yang dilihat tetamu sahaja?", a: "Ya — ruang tamu, ruang makan, pintu masuk dan bilik mandi tetamu ialah ruang yang dilihat pengunjung. Penyegaran tertumpu pada kawasan ini memberi impak maksimum pada sebahagian kecil kos mengecat seluruh rumah." },
+      { q: "Berapa lama cat mengambil masa untuk mengeras sebelum tetamu tiba?", a: "Cat moden rendah VOC kering sentuh dalam beberapa jam tetapi mengeras sepenuhnya dalam 2–4 minggu. Untuk kemasan terbaik dan bau minimum semasa rumah terbuka, selesaikan kerja mengecat sekurang-kurangnya 2 minggu sebelum acara pertama." }
+    ],
+    zh: [
+      { q: "开斋节刷漆最好什么时候预约？", a: "提前六到八周。开斋节前的刷漆高峰会很快占满施工方档期，临期预约往往意味着准备时间不足或团队经验较少。" },
+      { q: "开斋节开放日适合什么颜色？", a: "米色、柔灰、暖白等暖色调中性色拍照好看，也容易搭配节日装饰；深绿或金色的主题墙能增添特色，又不会让空间显得拥挤。" },
+      { q: "可以只刷客人会看到的区域吗？", a: "可以。客厅、餐厅、玄关和客用卫生间是访客看到的地方，集中翻新这些区域，就能用一小部分成本达到整屋刷漆的效果。" },
+      { q: "油漆要多久才干透，才能迎接客人？", a: "现代低 VOC 漆几小时即可表干，但要两到四周才能完全固化。为获得最佳效果并减少开放日的气味，应在首次活动前至少两周完成刷漆。" }
+    ]
+  },
+  "seasonal:monsoon-leak-emergency-guide": {
+    ms: [
+      { q: "Apakah yang perlu saya lakukan dahulu apabila kebocoran bermula semasa hujan?", a: "Lindungi isi rumah — alihkan perabot, peralatan elektronik dan barang berharga daripada air, letakkan baldi dan tuala untuk menampung aliran, dan ambil gambar segala-galanya untuk insurans sebelum menyentuh apa-apa." },
+      { q: "Bolehkah kebocoran dibaiki semasa hujan masih turun?", a: "Pemasangan terpal kecemasan dan penahanan dalaman boleh dilakukan serta-merta; pembaikan kekal memerlukan permukaan kering. Juruteknik boleh meletakkan pengedap sementara antara hujan untuk mengurangkan kerosakan sehingga pembaikan penuh." },
+      { q: "Perlukah saya menghubungi insurans sebelum atau selepas pembaikan?", a: "Sebelum sebarang pembaikan kekal — ambil gambar kerosakan, punca kebocoran dan apa-apa isi yang terjejas, kemudian maklumkan syarikat insurans anda. Pembaikan yang dilakukan sebelum penilaian insurans mungkin tidak ditanggung." },
+      { q: "Bagaimanakah saya menghalang kebocoran yang sama pada tengkujuh seterusnya?", a: "Selepas kecemasan selesai, pemeriksaan penuh bumbung atau membran mengenal pasti punca sebenar — pengedapan kecemasan ialah langkah sementara, dan pembaikan kekal perlu dijadualkan semasa jendela kering seterusnya." }
+    ],
+    zh: [
+      { q: "下雨时突然漏水，第一步该做什么？", a: "先保护财物。把家具、电器和贵重物品移离漏水处，用桶和毛巾接住水流，并在移动任何东西之前先拍照留证，方便后续保险理赔。" },
+      { q: "下雨时可以修漏水吗？", a: "紧急遮盖和屋内接水可以马上进行，但永久修复需要表面干透。专业人员可以在两次降雨之间涂抹临时密封，在正式修复前减少损失。" },
+      { q: "应该先报保险还是先维修？", a: "先报保险。在永久维修前，先拍下损坏情况、漏水源头和受损财物，再通知保险公司。在保险定损之前完成的维修，可能不在理赔范围内。" },
+      { q: "怎样防止下次季风再出现同样的漏水？", a: "紧急处理结束后，全面检查屋顶或防水层找出根本原因。紧急密封只是临时措施，永久修复应安排在下一次干爽窗口期进行。" }
     ]
   }
 
