@@ -4,7 +4,7 @@
 
 **Branch:** `arena/01a0507d-klservisrumah-web`
 
-**GitHub:** PR #193
+**GitHub:** PR #193 merged; CI green (QA 3m31s + Vercel)
 
 **Tracker source:** `TRACKING.md` → “Next code-level candidates” → first item,
 **P3-12 phase 2** (native MS/ZH translation of 146 authored per-pod FAQ sets;

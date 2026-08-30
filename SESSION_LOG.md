@@ -2993,7 +2993,7 @@ self-canonical, en-MY/ms-MY/zh-MY/x-default hreflang, localized FAQs + matching 
   `prebuild`: real-key coverage, complete-family coverage, count parity, minimum
   depth, no unchanged English/obvious leaks, Chinese-script presence, duplicate
   questions and production-resolver identity. Gate reports 10/146 honestly.
-- GitHub: commit `008ee08`, PR #193. Full evidence: `docs/full-website-deep-audit/FIX-WAVE-15-REPORT.md`.
+- GitHub: commit `008ee08`, PR #193 merged; CI green (QA 3m31s + Vercel). Full evidence: `docs/full-website-deep-audit/FIX-WAVE-15-REPORT.md`.
 
 ### Verification
 - `npm ci`: 177 packages audited, 0 vulnerabilities.
