@@ -6,8 +6,11 @@
  * Coverage is intentionally gated by scripts/validate-content-pod-faq-i18n.ts.
  * Waves 15–16 cover the complete `top` and `guides` families; Wave 17 adds the
  * complete `guidesMaintenance` family; Wave 18 adds the complete `seasonal`
- * family; Wave 19 adds the complete `compare` family (56 pages, 448 translated
- * Q&As in all). Remaining families stay explicitly pending in TRACKING.
+ * family; Wave 19 adds the complete `compare` family; Wave 20 adds the complete
+ * `brands` family (all 32 pages — the 12 material/brand guides sourced from
+ * `brandCopy` plus the 20 aircon brand pages sourced from `airconBrandCopy`,
+ * both in `config/content-pod-copy-batch2.ts`). Together: 88 pages, 704
+ * translated Q&As. Remaining families stay explicitly pending in TRACKING.
  */
 
 export type LocalizedPodFaq = { q: string; a: string };
@@ -797,6 +800,456 @@ export const CONTENT_POD_FAQ_I18N: Record<string, LocalizedPodFaqSet> = {
       { q: "天花卡式机安装更贵吗？", a: "是的。吊装结构、更长的冷媒管和隐藏在天花内的排水，使安装费高出 30–50%，机器本身也比同匹数挂机贵。" },
       { q: "层高较低的公寓可以装卡式机吗？", a: "只有天花夹层深度能容纳机身时才行，一般需要 250–350 毫米。夹层空间有限的公寓，挂机或超薄卡式机更实际。" },
       { q: "哪种机型日常保养更省事？", a: "挂机更省事。滤网一拉就能取下，机器就在视线高度；卡式机要爬梯子取滤网，接水盘也难检查，更需要定期请专业人员保养。" }
+    ]
+  },
+
+  // ─── Wave 20 — `brands` family (32 pages × 4 FAQs × MS/ZH) ───────────────
+  "brands:nippon-paint-application-malaysia": {
+    ms: [
+      { q: "Adakah cat Nippon lebih baik daripada Dulux untuk bahagian dalam rumah?", a: "Bergantung pada julat produk. Spot Less Plus daripada Nippon sangat tahan kotoran di laluan sibuk dan bilik kanak-kanak, manakala Dulux EasyClean hampir setanding. Pilihan yang tepat bergantung pada corak lalu lintas di rumah anda, bukan kesetiaan kepada jenama." },
+      { q: "Adakah cat kalis cuaca Nippon tahan dalam cuaca panas Malaysia?", a: "Weatherbond direka khusus untuk kitaran cahaya matahari tropika dan hujan lebat, dan lazimnya membawa jaminan pengeluar 5 tahun bagi ketahanan luaran apabila disapu di atas sistem primer dan penutup yang betul." },
+      { q: "Bolehkah cat Nippon digunakan pada dinding lama yang berkapur?", a: "Boleh, asalkan 5400 Wall Sealer atau primer tahan alkali yang sesuai disapu terlebih dahulu. Mengecat terus di atas lapisan kapur yang sudah longgar tanpa penutup ialah punca paling lazim cat mula mengelupas lebih awal." },
+      { q: "Bagaimanakah saya mengesahkan produk Nippon yang tulen di tapak?", a: "Semak nombor kelompok pada tin dengan rekod pengedar sah Nippon di Malaysia. Warna yang dikisar di kilang sepatutnya tiba dalam tin belum dibuka, bukan dipindahkan ke dalam bekas tanpa tanda." }
+    ],
+    zh: [
+      { q: "室内用漆，立邦比多乐士好吗？", a: "要看具体系列。立邦 Spot Less Plus 在走廊和儿童房的耐污表现突出，多乐士 EasyClean 也相当接近。正确选择取决于家里的使用频率与动线，而不是品牌偏好。" },
+      { q: "立邦外墙漆耐得住马来西亚的酷热吗？", a: "Weatherbond 专为热带紫外线与暴雨循环设计，只要按正确底漆和封闭底涂层施工，外墙耐久性通常可获得长达 5 年的厂家质量保证。" },
+      { q: "旧墙起粉可以直接上立邦漆吗？", a: "可以，但必须先涂 5400 墙面封闭底漆或合适的抗碱底漆。直接在已经松散的粉化层上刷面漆，是油漆过早剥落最常见的原因。" },
+      { q: "怎样确认送到现场的立邦产品是正品？", a: "核对罐身批号与立邦马来西亚授权经销商的记录。工厂调色的包装应当原封未开，而不是从不带标识的容器分装而来。" }
+    ]
+  },
+  "brands:dulux-paint-application-malaysia": {
+    ms: [
+      { q: "Adakah Dulux Weathershield berbaloi dengan harganya yang lebih tinggi?", a: "Pada bahagian luar rumah yang terdedah terus kepada hujan monsun dan cahaya matahari petang, ya. Dakwaan ketahanan 7 tahun itu disokong ujian iklim tropika sebenar, dan prestasinya mengatasi emulsi biasa dari segi keberkapuran dan pudar warna." },
+      { q: "Adakah Dulux EasyClean sesuai untuk bilik kanak-kanak?", a: "Memang itulah tujuannya. Tahap ketahanan gosok Kelas 1 bermaksud kesan krayon, cap jari dan percikan boleh dilap tanpa menanggalkan kilauan cat — itulah bezanya berbanding emulsi mat asas." },
+      { q: "Perlukah Dulux menggunakan primer tertentu?", a: "Dulux mengesyorkan primer profesional mereka sendiri untuk lekatan dan kekalan warna terbaik, tetapi sebarang primer tahan alkali yang berkualiti daripada sistem yang serasi juga berkesan jika digunakan mengikut spesifikasi." },
+      { q: "Bagaimanakah tahap VOC Dulux berbanding jenama lain?", a: "Julat cat dalaman Dulux membawa pensijilan VOC rendah termasuk Green Choice, setanding dengan julat mesra alam Nippon. Kedua-duanya memenuhi garis panduan kualiti udara dalaman DOSH Malaysia jika pengudaraan mencukupi semasa kerja mengecat." }
+    ],
+    zh: [
+      { q: "多乐士晴雨漆贵得有道理吗？", a: "对外墙长期直面季候风暴雨和午后紫外线的情况，值得。7 年耐久承诺有真实热带气候测试支撑，在抗粉化和抗褪色方面明显优于普通乳胶漆。" },
+      { q: "多乐士 EasyClean 适合用在儿童房吗？", a: "它正是为此设计。1 级耐擦洗意味着蜡笔痕、手印和污渍都能擦掉而不破坏光泽，这正是它与普通哑光乳胶漆的区别。" },
+      { q: "多乐士必须配专用底漆吗？", a: "多乐士建议使用自家专业底漆，附着力和保色性最佳；但只要是相容体系的优质抗碱底漆，并按规范施工，同样可以达到要求。" },
+      { q: "多乐士的 VOC 水平如何？", a: "多乐士室内系列通过低 VOC 认证，包括 Green Choice，与立邦的环保系列相当。施工时只要保持良好通风，两者都符合马来西亚职业安全与健康局（DOSH）的室内空气指引。" }
+    ]
+  },
+  "brands:jotun-paint-application-malaysia": {
+    ms: [
+      { q: "Mengapakah memilih Jotun berbanding Nippon atau Dulux?", a: "Julat Jotashield mendahului dari segi pemantulan haba dan kekalan warna di bawah pendedahan tropika. Jika dinding luar rumah anda terkena cahaya matahari petang yang terik, pengurangan haba dan ketahanan pudar itu memang berbaloi dengan kosnya." },
+      { q: "Adakah Jotun Majestic berbaloi untuk ruang tamu?", a: "Jika anda mahukan kemasan mutiara atau sutera premium yang kekal konsisten pada pelbagai sudut cahaya, ya. Inilah jenama yang lazim dinyatakan oleh arkitek apabila dinding perlu menjadi elemen rekaan, bukan sekadar lapisan cat." },
+      { q: "Adakah cat Jotun tahan kulat di bilik mandi?", a: "Julat bilik mandi dan dapur Jotun mengandungi bahan tambah antikulat yang berkesan dalam kelembapan Malaysia. Namun pengudaraan yang betul serta substrat tahan lembapan tetap menjadi pertahanan pertama." },
+      { q: "Di manakah Jotun boleh didapati di Malaysia?", a: "Melalui pengedar sah dan pusat bancuhan warna Jotun di seluruh Lembah Klang. Warna yang dibancuh di kilang oleh pusat ini lebih konsisten berbanding bancuhan di kedai perkakasan biasa." }
+    ],
+    zh: [
+      { q: "为什么选佐敦而不是立邦或多乐士？", a: "Jotashield 系列在热带暴晒环境下的反射隔热和保色表现领先。如果外墙长期承受午后烈日，降温和抗褪色效果足以证明这笔花费是合理的。" },
+      { q: "客厅用佐敦 Majestic 值得吗？", a: "如果你要的是在不同光线角度下都保持一致的珍珠或丝光高档效果，就值得。当墙面需要作为设计元素而不只是一层涂料时，建筑师通常指定这个品牌。" },
+      { q: "佐敦漆在浴室能防霉吗？", a: "佐敦的浴室与厨房系列含有防霉添加剂，在马来西亚的潮湿环境下有效。但良好的通风和防潮基层仍然是最重要的一道防线。" },
+      { q: "马来西亚哪里可以买到佐敦漆？", a: "通过巴生谷一带的佐敦授权经销商和调色中心。这些中心出厂调色的颜色，比一般五金店现场调配更为稳定一致。" }
+    ]
+  },
+  "brands:sirim-certified-pipes-malaysia": {
+    ms: [
+      { q: "Mengapakah pensijilan SIRIM penting untuk paip?", a: "Pensijilan SIRIM QAS mengesahkan paip itu memenuhi Piawaian Malaysia bagi tekanan, keselamatan bahan dan ketahanan. Paip tanpa pensijilan lazimnya menyebabkan tuntutan insurans bangunan ditolak apabila ia gagal." },
+      { q: "Jenama paip manakah yang membawa pensijilan SIRIM?", a: "Antara jenama lazim di Malaysia ialah PPI (Polyplumb), Wira Plumb dan sesetengah julat tembaga Heng Hong. Sentiasa semak label SIRIM pada setiap kelompok yang dihantar, bukan sekadar nama jenama." },
+      { q: "Bolehkah saya menggunakan paip tanpa SIRIM untuk menjimatkan kos?", a: "Boleh, tetapi penjimatan itu kecil berbanding risikonya. Paip tidak bersijil yang pecah sehingga membanjiri unit anda atau jiran di bawah tidak dilindungi insurans, dan pihak JMB boleh mengarahkan penggantian semula." },
+      { q: "Bagaimanakah saya mengesahkan pensijilan SIRIM di tapak?", a: "Cari pelekat SIRIM QAS atau tanda timbul pada badan paip sendiri, bukan hanya pada bungkusan, kemudian padankan nombor kelompok dengan direktori produk berdaftar SIRIM dalam talian." }
+    ],
+    zh: [
+      { q: "为什么水管要有 SIRIM 认证？", a: "SIRIM QAS 认证证明水管符合马来西亚标准对耐压、材料安全和耐久性的要求。使用无认证水管，一旦发生破损，大多数建筑保险索赔都会被拒绝。" },
+      { q: "哪些水管品牌有 SIRIM 认证？", a: "马来西亚常见的有 PPI（Polyplumb）、Wira Plumb，以及部分 Heng Hong 铜管系列。每次送货都要核对管身上的 SIRIM 标签，不能只看品牌名称。" },
+      { q: "可以用无认证水管省钱吗？", a: "技术上可以，但省下的钱远抵不上风险。无认证水管爆裂导致自家或楼下单位浸水，保险不赔，而且物业管理处（JMB）仍可能要求全部更换。" },
+      { q: "怎样在现场核实 SIRIM 认证？", a: "查看管身上的 SIRIM QAS 贴纸或压印标记，而不只是包装；同时用批号在 SIRIM 网上认证产品目录中比对确认。" }
+    ]
+  },
+  "brands:grundfos-water-pump-installation": {
+    ms: [
+      { q: "Mengapakah tekanan pancuran masih lemah selepas pam dipasang?", a: "Selalunya pam itu terlalu besar atau terlalu kecil untuk panjang paip sebenar dan bilangan mata air. Julat SCALA dan UPA daripada Grundfos meliputi situasi berbeza, dan saiz yang tepat lebih penting daripada jenama." },
+      { q: "Adakah pam Grundfos cukup senyap untuk kondo?", a: "Julat SCALA2 dan UPA beroperasi pada paras bising yang sangat rendah, sesuai dipasang di dalam rumah berhampiran bilik tidur. Itulah sebab ia kerap dinyatakan untuk kediaman bertingkat di Malaysia." },
+      { q: "Berapa lamakah jangka hayat pam Grundfos?", a: "Lazimnya 8 hingga 12 tahun dengan air yang bersih dan pemasangan yang betul. Perlindungan kering dan pemotongan haba mengelakkan kerosakan awal yang kerap berlaku pada pam murah tanpa ciri ini." },
+      { q: "Bolehkah pam Grundfos mengatasi tekanan tidak sekata antara tingkat?", a: "Bagi rumah teres bertingkat, boleh. Pam penggalak bersaiz betul yang dipadankan dengan tangki tekanan akan mengimbangi penghantaran air ke tingkat atas, iaitu tempat sistem graviti biasanya gagal." }
+    ],
+    zh: [
+      { q: "装了水泵后花洒水压还是很小，为什么？", a: "通常是水泵与实际管长和用水点位不匹配，偏大或偏小。Grundfos 的 SCALA 和 UPA 系列对应不同场景，选对规格比选品牌更关键。" },
+      { q: "格兰富水泵够安静，适合公寓吗？", a: "SCALA2 和 UPA 系列运行噪音很低，可以安装在靠近卧室的室内位置，这正是马来西亚高层住宅经常指定它们的原因。" },
+      { q: "格兰富水泵能用多久？", a: "在水质干净、安装正确的情况下，一般可用 8 至 12 年。缺水保护和过热断电功能，可以避免廉价水泵常见的早期故障。" },
+      { q: "格兰富水泵能解决楼层之间水压不均吗？", a: "对多层排屋可以。规格合适的增压泵配合压力罐，能平衡送往楼上各层的水量，而这正是重力供水系统最容易出问题的地方。" }
+    ]
+  },
+  "brands:joven-water-heater-installation": {
+    ms: [
+      { q: "Model Joven manakah sesuai untuk bilik mandi kondo?", a: "Untuk satu mata pancuran, julat serta-merta Joven pada litar khusus 20A sudah memadai. Jika anda menggunakan tab mandi atau pancuran hujan yang memerlukan aliran lebih tinggi, model tangki simpanan yang disesuaikan dengan corak penggunaan lebih sesuai." },
+      { q: "Adakah Joven lebih selamat daripada jenama lain?", a: "ELCB terbina dalam dan pemotongan haba ialah ciri piawai pada seluruh julat Joven, setanding dengan ciri keselamatan Jumbo, Panasonic dan Rinnai. Pendawaian yang betul lebih menentukan keselamatan berbanding nama jenama." },
+      { q: "Mengapakah pemanas Joven saya kerap menjatuhkan suis utama?", a: "Lazimnya elemen pemanas yang sudah lemah atau litar kongsi yang tidak mencukupi kadaran arusnya. Pemanas serta-merta Joven memerlukan litar khusus 20A, dan berkongsi litar dengan peralatan lain akan menyebabkan suis kerap terpelantik." },
+      { q: "Berapa kerapkah pemanas Joven perlu dinyahkerak?", a: "Di kawasan air keras Lembah Klang, sekali setahun. Kerak yang terkumpul pada elemen mengurangkan kecekapan dan akhirnya menyebabkan kerosakan awal, yang dapat dicegah dengan lawatan nyah kerak sekitar RM 80 hingga RM 120." }
+    ],
+    zh: [
+      { q: "公寓浴室适合用哪款 Joven 热水器？", a: "只有一个花洒位时，安装在 20A 专用回路上的即热系列已经足够。如果要配浴缸或大流量的花洒顶喷，则应按用水习惯选择相应容量的储水式机型。" },
+      { q: "Joven 比其他品牌更安全吗？", a: "内置漏电断路器和过热保护是 Joven 全系列的标准配置，与 Jumbo、Panasonic、Rinnai 的安全功能相当。真正决定安全的是接线是否正确，而不是品牌。" },
+      { q: "为什么我的 Joven 热水器老是跳闸？", a: "通常是加热元件老化，或与其他电器共用电流不足的回路。Joven 即热式热水器需要独立的 20A 专用回路，与其它电器共用会导致反复跳闸。" },
+      { q: "Joven 热水器多久除一次水垢？", a: "巴生谷硬水区建议每年一次。水垢附着在加热元件上会降低效率，最终导致提前损坏；一次约 RM 80 至 RM 120 的除垢服务就能避免这个问题。" }
+    ]
+  },
+  "brands:rinnai-water-heater-installation": {
+    ms: [
+      { q: "Adakah pemanas gas Rinnai selamat dipasang di dalam rumah?", a: "Hanya jika laluan serombong ke luar dibuat dengan betul dan bilik mempunyai pengudaraan mencukupi. Model serombong seimbang Rinnai direka untuk dipasang di dalam rumah, tetapi jenis serombong terbuka memerlukan ruang utiliti yang berventilasi." },
+      { q: "Mengapakah memilih pemanas gas Rinnai berbanding elektrik?", a: "Pemanas gas serta-merta memberikan kadar aliran lebih tinggi pada suhu yang stabil untuk pancuran hujan dan tab mandi. Kos operasi bagi setiap liter air panas juga lazimnya lebih rendah daripada elektrik di Malaysia." },
+      { q: "Adakah perkhidmatan Rinnai tersedia di Lembah Klang?", a: "Ya. Rinnai Malaysia mempunyai pusat servis sah di seluruh Lembah Klang untuk pemeriksaan keselamatan tahunan, iaitu syarat wajib bagi model gas supaya perlindungan jaminan dan insurans kekal sah." },
+      { q: "Apakah yang berlaku jika bekalan gas terputus semasa mandi?", a: "Peranti gagal nyala Rinnai memotong bekalan gas serta-merta dan unit berhenti memanaskan air. Anda hanya mendapat air sejuk, bukan kebocoran gas — itulah mekanisme keselamatan yang wajib ada pada setiap pemanas gas berpensijilan." }
+    ],
+    zh: [
+      { q: "Rinnai 燃气热水器可以装在室内吗？", a: "只有在烟道正确通向室外、房间通风充足的情况下才可以。Rinnai 的平衡式烟道机型专为室内安装设计，而开放式烟道机型则必须安装在通风良好的设备空间。" },
+      { q: "为什么选燃气而不是电热？", a: "即热式燃气热水器流量更大、水温更稳定，适合顶喷花洒和浴缸使用。在马来西亚，每升热水的运行成本通常也低于电热。" },
+      { q: "巴生谷有 Rinnai 的售后服务吗？", a: "有。Rinnai Malaysia 在巴生谷设有授权服务中心，提供年度安全检查；燃气机型必须完成年检，才能维持产品保修和保险保障。" },
+      { q: "洗澡时燃气突然中断会怎样？", a: "Rinnai 的熄火保护装置会立即切断燃气，机器停止加热。您只会流出冷水，不会发生燃气泄漏，这是每台合格燃气热水器都必须具备的安全机制。" }
+    ]
+  },
+  "brands:knauf-gypsum-board-installation": {
+    ms: [
+      { q: "Adakah Knauf lebih baik daripada jenama papan gipsum lain?", a: "Knauf antara pengeluar terbesar dunia dengan ketumpatan papan dan mutu tepi yang konsisten. Di Malaysia ia bersaing dengan Boral dan Yoshima, dan pilihan yang tepat selalunya bergantung pada spesifikasi sistem, bukan jenama papan semata-mata." },
+      { q: "Perlukah bilik mandi menggunakan papan tahan lembapan?", a: "Wajib. Papan MR berwajah hijau Knauf menahan serapan lembapan dalam kelembapan bilik mandi Malaysia, sekali gus mengelakkan kendur dan pertumbuhan kulat yang muncul pada papan standard dalam tempoh satu atau dua tahun." },
+      { q: "Adakah papan Knauf disertakan jaminan?", a: "Knauf memberikan jaminan bahan ke atas sistem papannya apabila dipasang bersama rangka dan bahan sambungan yang ditentukan mereka. Mencampur jenama dalam satu sistem boleh membatalkan jaminan papan tersebut." },
+      { q: "Bolehkah papan Knauf bertahan dengan kelembapan Malaysia?", a: "Papan standard mengendalikan kelembapan dalaman biasa dengan baik. Bagi kawasan berhampiran sumber air atau unit tingkat bawah yang mengalami kelembapan naik, julat MR atau papan simen akan dinyatakan sebagai ganti." }
+    ],
+    zh: [
+      { q: "Knauf 比其他石膏板品牌好吗？", a: "Knauf 是全球顶尖制造商之一，板材密度和边角质量稳定。在马来西亚它与 Boral、Yoshima 竞争，正确选择往往取决于整个系统的规格，而不只是板材品牌。" },
+      { q: "浴室一定要用防潮板吗？", a: "一定要。Knauf 绿面防潮板能抵御马来西亚浴室的湿气，避免普通板材在一两年内出现下垂和发霉。" },
+      { q: "Knauf 板材有质量保证吗？", a: "若按其指定的龙骨和接缝材料配套施工，Knauf 会为板材系统提供材料质量保证。在同一系统中混用不同品牌，可能导致板材保修失效。" },
+      { q: "Knauf 板材能应付马来西亚的湿度吗？", a: "普通板用于一般室内湿度没有问题；靠近水源的位置，或有返潮现象的底层单位，则应改用防潮板或水泥板系列。" }
+    ]
+  },
+  "brands:boral-gypsum-board-installation": {
+    ms: [
+      { q: "Adakah papan Boral boleh didapati di Malaysia?", a: "Ya. Julat gipsum Boral diedarkan di seluruh Malaysia melalui pengedar sah, bersaing terus dengan Knauf dan jenama tempatan dari segi harga dan ketersediaan untuk projek kediaman mahupun komersial." },
+      { q: "Adakah papan Boral akan kendur dalam kelembapan tropika?", a: "Tidak jika dipasang mengikut spesifikasi dengan jarak rangka dan corak pemasangan yang betul. Papan Boral diuji untuk keadaan tropika, dan kendur hampir selalu berpunca daripada jarak rangka yang salah atau beban berlebihan." },
+      { q: "Bolehkah papan Boral digunakan untuk penebat bunyi?", a: "Boleh. Sistem sekatan akustik Boral menggunakan ketebalan papan tertentu, isian bulu mineral dan sambungan yang ditutup rapat bagi mencapai kadar pengurangan bunyi yang diiktiraf antara bilik atau unit." },
+      { q: "Bagaimanakah harga Boral berbanding Knauf?", a: "Harganya secara umumnya setanding. Faktor penentu lazimnya sistem mana yang biasa digunakan oleh tukang anda, dan sama ada keseluruhan sistem papan, rangka dan sambungan dinyatakan sebagai satu set yang sepadan." }
+    ],
+    zh: [
+      { q: "马来西亚能买到 Boral 板材吗？", a: "可以。Boral 石膏板系列通过授权经销商在全马分销，在价格和供货方面直接与 Knauf 及本地品牌竞争，适用于住宅和商业项目。" },
+      { q: "Boral 板材在热带潮湿环境下会下垂吗？", a: "只要按规范施工，龙骨间距和固定方式正确，就不会。Boral 板材针对热带气候做过测试，下垂几乎总是因为龙骨间距不当或超重。" },
+      { q: "Boral 板材可以用来隔音吗？", a: "可以。Boral 的隔音隔墙系统通过特定的板材厚度、填充岩棉和密封接缝，达到标称的隔声量，用于房间或单位之间的隔音。" },
+      { q: "Boral 与 Knauf 相比价格如何？", a: "价格大致相当。决定因素通常是施工队熟悉哪套系统，以及整套管材、龙骨和接缝材料是否按配套规格指定。" }
+    ]
+  },
+  "brands:sika-waterproofing-application": {
+    ms: [
+      { q: "Adakah kalis air Sika sesuai untuk bilik mandi?", a: "SikaTop Seal 107 dan salutan bersimen serupa berfungsi baik di bawah jubin bilik mandi sebagai membran terikat. Ia disapu dengan berus, boleh menampung sedikit pergerakan substrat dan serasi dengan pelekat jubin piawai." },
+      { q: "Bagaimanakah Sika berbanding sistem membran sahaja?", a: "Sika merangkumi kedua-dua sistem bersimen dan membran sapuan cecair. Pilihannya bergantung pada substrat, pendedahan dan akses: bersimen untuk di bawah jubin, manakala membran PU untuk bumbung dan dek yang terdedah." },
+      { q: "Adakah kalis air Sika disertakan jaminan?", a: "Sika memberikan jaminan sistem melalui rangkaian pemasang yang diluluskan mereka. Tempoh jaminan bergantung pada sistem yang dinyatakan dan persediaan permukaan yang disahkan pada setiap peringkat kerja." },
+      { q: "Bolehkah produk Sika menghentikan kebocoran yang sedang aktif?", a: "Resin suntikan PU daripada Sika direka khusus untuk itu. Ia mengembang apabila bertemu air lalu menutup retakan aktif pada konkrit, memberikan masa untuk pembaikan membran kekal dilakukan jika perlu." }
+    ],
+    zh: [
+      { q: "Sika 防水适合用在浴室吗？", a: "SikaTop Seal 107 及同类水泥基涂料很适合作为浴室瓷砖下的粘结式防水膜，可采用刷涂施工，能承受基层的轻微位移，并与标准瓷砖胶相容。" },
+      { q: "Sika 与单一膜类系统相比如何？", a: "Sika 同时提供水泥基和液体涂膜系统。选择取决于基层、暴露条件和施工可达性：瓷砖下用水泥基，暴露的屋面和平台用 PU 涂膜。" },
+      { q: "Sika 防水有质保吗？", a: "Sika 通过其认证施工商网络提供系统质保。质保期取决于所指定的系统，以及每个阶段经核实的基层处理情况。" },
+      { q: "Sika 产品能处理正在渗漏的裂缝吗？", a: "Sika 的 PU 注浆树脂正是为此设计。它遇水膨胀，封堵混凝土中正在渗漏的裂缝，为后续做永久性防水膜争取时间。" }
+    ]
+  },
+  "brands:bostik-waterproofing-application": {
+    ms: [
+      { q: "Adakah silikon Bostik lebih baik daripada jenama biasa?", a: "Silikon sanitari Bostik mengekalkan keanjalan dan sifat antikulat lebih lama berbanding pilihan murah yang lazimnya retak dan menjadi hitam dalam tempoh setahun di persekitaran bilik mandi Malaysia." },
+      { q: "Bolehkah Bostik digunakan untuk kalis air di bawah jubin bilik mandi?", a: "Boleh. Sistem bersimen dan membran cecair Bostik disapu di bawah pelekat jubin sebagai lapisan kalis air terikat, dan diuji mengikut Piawaian Malaysia bagi prestasi kawasan basah." },
+      { q: "Berapa lamakah sealant Bostik bertahan di pancuran mandian?", a: "Lazimnya 5 hingga 8 tahun sebelum perlu diganti, berbanding 1 hingga 2 tahun bagi sealant akrilik asas. Perbezaan kos awalnya kecil jika dibandingkan dengan kerja mengulang seal yang berulang kali." },
+      { q: "Adakah Bostik serasi dengan semua pelekat jubin?", a: "Membran kalis air Bostik diuji dengan julat pelekat mereka sendiri dan kebanyakan pelekat jubin ubah suai polimer piawai. Sentiasa sahkan keserasian pada peringkat sebut harga, bukan selepas jubin dipasang." }
+    ],
+    zh: [
+      { q: "Bostik 硅胶比普通品牌好吗？", a: "Bostik 卫浴硅胶的弹性和防霉性能比廉价产品持久得多；在马来西亚的浴室环境下，廉价产品通常一年内就会开裂发黑。" },
+      { q: "Bostik 可以做浴室瓷砖下的防水吗？", a: "可以。Bostik 的水泥基和液体涂膜系统涂在瓷砖胶之下，形成粘结式防水层，并通过马来西亚标准对湿区性能的测试。" },
+      { q: "Bostik 密封胶在淋浴区能用多久？", a: "一般 5 至 8 年才需要更换，而普通丙烯酸密封胶只有 1 至 2 年。相比反复重打的工时，前期的差价其实很小。" },
+      { q: "Bostik 与所有瓷砖胶都相容吗？", a: "Bostik 防水膜与自家胶粘剂系列以及多数标准聚合物改性瓷砖胶做过相容性测试。务必在报价阶段就确认相容性，而不是等瓷砖铺好之后。" }
+    ]
+  },
+  "brands:mapei-waterproofing-application": {
+    ms: [
+      { q: "Mengapakah pemasang jubin profesional memilih Mapei?", a: "Pendekatan sistem Mapei — kalis air, pelekat dan grout daripada satu pengeluar — menjamin keserasian dan menjadikan tuntutan jaminan ditanggung oleh satu pihak yang bertanggungjawab, bukan rantaian saling menyalahkan." },
+      { q: "Adakah Mapei Aquadefense cukup cepat untuk ubah suai pantas?", a: "Ya. Aquadefense sedia untuk pemasangan jubin kira-kira 4 jam selepas lapisan terakhir, menjadikannya sesuai untuk ubah suai bilik mandi yang perlu disiapkan dengan segera kerana keluarga memerlukan bilik itu kembali." },
+      { q: "Bolehkah Mapei digunakan di atas jubin sedia ada?", a: "Pemasangan jubin bertindih dengan sistem Mapei boleh dilakukan jika jubin sedia ada masih kukuh dan diberi primer dengan betul. Tetapi jika membran lama sudah gagal, membuangnya sehingga ke substrat ialah jawapan yang jujur." },
+      { q: "Adakah Mapei lebih mahal daripada jenama tempatan?", a: "Kos bahannya lebih tinggi, tetapi jaminan sistem dan risiko panggilan semula yang lebih rendah sering menjadikannya setanding dari segi jumlah kos kerja — terutamanya bagi bilik mandi yang memerlukan kerja memecah jubin semula jika berlaku kebocoran." }
+    ],
+    zh: [
+      { q: "为什么瓷砖专业施工方偏爱 Mapei？", a: "Mapei 采用系统方案，防水、胶粘剂和填缝剂都来自同一厂家，相容性有保证，质保索赔也只需找单一责任方，不会陷入互相推诿。" },
+      { q: "Mapei Aquadefense 干得快，适合赶工的翻新吗？", a: "适合。Aquadefense 在最后一遍涂刷后约 4 小时即可铺砖，非常适合需要尽快恢复使用的浴室翻新。" },
+      { q: "Mapei 能用在原有瓷砖上吗？", a: "只要原有瓷砖仍然牢固并做好底涂，Mapei 系统可以做砖上贴砖。但如果旧防水层已经失效，诚实的做法还是拆除至基层重做。" },
+      { q: "Mapei 比本地品牌贵吗？", a: "材料成本较高，但系统质保和更低的返修风险，往往使其在总工程造价上仍具竞争力，尤其是卫生间一旦漏水就要重新打掉瓷砖的情况。" }
+    ]
+  },
+  "brands:daikin-aircon-service-malaysia": {
+    ms: [
+      { q: "Mengapakah Daikin paling kerap diservis di Malaysia?", a: "Kerana Daikin mempunyai jumlah unit terpasang paling besar di rumah-rumah Malaysia. Lebih banyak unit bermakna lebih banyak panggilan servis, bukannya semestinya lebih banyak kerosakan. Julat inverter mereka tahan lama jika diselenggara mengikut jadual." },
+      { q: "Bolehkah mana-mana juruteknik menyervis inverter Daikin?", a: "Servis asas boleh, tetapi diagnosis PCB inverter memerlukan pembacaan kod ralat khusus Daikin. Pasukan kami membawa alat diagnostik untuk kod kerosakan inverter Daikin yang lazim ditemui." },
+      { q: "Berapa kerapkah penyaman udara Daikin perlu diservis?", a: "Cuci penapis sendiri di rumah setiap 3 hingga 4 bulan, dan basuhan kimia profesional setiap 6 hingga 12 bulan bergantung pada jumlah jam penggunaan serta paras habuk di kawasan anda." },
+      { q: "Adakah gas R32 Daikin selamat dikendalikan?", a: "R32 mudah terbakar pada tahap ringan tetapi selamat apabila dikendalikan oleh juruteknik terlatih dengan peralatan pemulihan yang betul. Semua kerja gas Daikin kami mengikut prosedur pengendalian yang ditetapkan pengeluar." }
+    ],
+    zh: [
+      { q: "为什么大金是马来西亚维修量最高的品牌？", a: "因为大金在马来西亚家庭中的装机量最大。机器多自然维修电话多，不等于故障率高。只要按时保养，大金的变频系列相当可靠。" },
+      { q: "任何技师都能修大金变频机吗？", a: "基础保养可以，但变频电路板的诊断需要读取大金专用故障码。我们的团队配备了读取大金常见变频故障码的诊断工具。" },
+      { q: "大金空调多久保养一次？", a: "滤网自己在家每 3 至 4 个月清洗一次；专业药水清洗每 6 至 12 个月一次，具体取决于使用时长和所在区域的灰尘情况。" },
+      { q: "大金 R32 冷媒处理起来安全吗？", a: "R32 属于轻微可燃，但由受过培训、配备合格回收设备的技师操作是安全的。我们所有大金冷媒作业都遵循厂家规定的操作流程。" }
+    ]
+  },
+  "brands:panasonic-aircon-service-malaysia": {
+    ms: [
+      { q: "Apakah yang membezakan servis penyaman udara Panasonic?", a: "Sistem penulenan udara nanoe-G dan penderia Econavi menambah langkah diagnostik yang dilangkau oleh servis biasa. Lawatan juruteknik terlatih Panasonic kami termasuk penentukuran penderia dan semakan keutuhan penapis." },
+      { q: "Adakah Panasonic lebih tahan lama daripada Daikin?", a: "Kedua-duanya jenama teratas di Malaysia. Panasonic sangat kompetitif dari segi kecekapan tenaga dan ciri kualiti udara, manakala Daikin mendahului dari segi penguasaan pasaran. Tahap ketahanannya setanding dengan penyelenggaraan yang betul." },
+      { q: "Bolehkah penyaman udara Panasonic menggunakan alat ganti biasa?", a: "Sesetengah bahagian mekanikal boleh ditukar ganti, tetapi papan PCB dan modul penderia adalah khusus jenama. Memasang papan biasa pada inverter Panasonic akan menghasilkan kod ralat dan membatalkan jaminan." },
+      { q: "Mengapakah penyaman udara Panasonic saya memaparkan ralat H11?", a: "H11 lazimnya menandakan masalah komunikasi antara unit dalam dan unit luar, berpunca daripada kerosakan pendawaian, masalah PCB atau kegagalan penderia. Setiap kemungkinan diperiksa mengikut urutan tertentu sebelum sebarang alat ganti ditukar." }
+    ],
+    zh: [
+      { q: "松下空调的保养有什么不同？", a: "nanoe-G 空气净化和 Econavi 感应系统比普通保养多了几道检测工序。我们受过松下培训的技师上门时，会做感应器校准和滤网完整性检查。" },
+      { q: "松下比大金更耐用吗？", a: "两者在马来西亚都是一线品牌。松下在能效和空气净化功能上很有竞争力，大金则在市场占有率上领先。在保养得当的前提下，可靠性不相上下。" },
+      { q: "松下空调可以用通用配件吗？", a: "部分机械配件可以互换，但电路板和感应模块是品牌专用。在松下变频机上装通用电路板会出现故障码，并导致保修失效。" },
+      { q: "松下空调显示 H11 是什么原因？", a: "H11 通常表示室内机与室外机之间通讯异常，可能是接线故障、电路板问题或感应器失效。我们会按既定顺序逐项排查，确定原因后才更换零件。" }
+    ]
+  },
+  "brands:mitsubishi-electric-aircon-service-malaysia": {
+    ms: [
+      { q: "Adakah Mitsubishi Electric berbeza daripada Mitsubishi Heavy?", a: "Ya, kedua-duanya syarikat berasingan dengan barisan produk, alat ganti dan kod ralat yang berlainan. Mr. Slim dan Starmex daripada Mitsubishi Electric ialah julat yang paling lazim di rumah Malaysia." },
+      { q: "Mengapakah harga belian Mitsubishi Electric lebih tinggi?", a: "Mutu binaan, operasi yang senyap dan kecekapan tenaga menjelaskan premiumnya, manakala kos servisnya setanding dengan Daikin dan Panasonic jika diselenggara mengikut jadual yang sama." },
+      { q: "Bolehkah penyaman udara Mitsubishi jarang-jarang diservis?", a: "Sebaiknya tidak. Mutu binaan premium mengurangkan kerosakan, tetapi kekotoran pada gegelung dan saliran tersumbat menjejaskan semua jenama sama rata dalam keadaan berhabuk dan lembap di Malaysia." },
+      { q: "Apakah kerosakan Mitsubishi Electric yang paling kerap berlaku?", a: "Kehausan motor kipas dalaman dan kegagalan pam saliran pada model kaset siling. Kedua-duanya pembaikan mudah jika alat ganti ada dalam stok, dan lazimnya disiapkan dalam satu lawatan." }
+    ],
+    zh: [
+      { q: "三菱电机和三菱重工不一样吗？", a: "不一样。两家是独立公司，产品线、配件和故障码都不同。马来西亚家庭最常见的是三菱电机的 Mr. Slim 和 Starmex 系列。" },
+      { q: "为什么三菱电机的售价更高？", a: "做工、静音表现和能效水平支撑了它的溢价。而在相同保养周期下，维修费用与大金、松下相当。" },
+      { q: "三菱空调可以延长保养间隔吗？", a: "不建议。优质做工确实减少故障，但在马来西亚多尘潮湿的环境下，盘管积污和排水堵塞对所有品牌一视同仁。" },
+      { q: "三菱电机最常见的故障是什么？", a: "室内风机马达磨损，以及天花卡式机型的排水泵故障。只要配件有库存，两种问题维修都不复杂，通常一次上门就能完成。" }
+    ]
+  },
+  "brands:york-aircon-service-malaysia": {
+    ms: [
+      { q: "Adakah York jenama penyaman udara yang baik untuk Malaysia?", a: "York ialah jenama pertengahan yang kukuh dengan harga kompetitif dan mutu binaan yang munasabah. Ia popular di ruang komersial Malaysia dan semakin banyak digunakan pada pemasangan kediaman." },
+      { q: "Bolehkah alat ganti York diperoleh di dalam negara?", a: "Boleh. York mempunyai rangkaian pengedaran yang mantap di Malaysia, dan alat ganti lazim seperti kapasitor, penderia dan motor kipas boleh didapati dalam beberapa hari, bukan berminggu-minggu." },
+      { q: "Bagaimanakah tahap kecekapan tenaga York?", a: "Julat inverter York bersaing baik dari segi penarafan bintang berbanding Daikin dan Panasonic, walaupun jenama premium masih mendahului pada peringkat kecekapan tertinggi bagi unit kediaman." },
+      { q: "Adakah sistem saluran komersial York diservis?", a: "Ya. Pasukan kami mengendalikan sistem saluran dan kaset York yang lazim di pejabat dan kedai Malaysia, termasuk penggantian penapis, pencucian gegelung dan diagnostik papan kawalan." }
+    ],
+    zh: [
+      { q: "York 在马来西亚算是好品牌吗？", a: "York 是扎实的中端品牌，价格有竞争力，做工也合理。它在马来西亚商业场所很常见，近年也越来越多用于住宅安装。" },
+      { q: "York 的配件在本地买得到吗？", a: "买得到。York 在马来西亚有成熟的分销网络，电容、感应器、风机马达等常用配件几天内就能拿到，不用等上几周。" },
+      { q: "York 的能效表现如何？", a: "York 的变频系列在能效星级上可与大金、松下一争，但在家用机型的最高能效档位上，依然是高端品牌领先。" },
+      { q: "可以做 York 商用风管系统吗？", a: "可以。我们处理马来西亚办公室和店铺常见的 York 风管机与卡式机，包括更换滤网、清洗盘管和诊断控制板。" }
+    ]
+  },
+  "brands:acson-aircon-service-malaysia": {
+    ms: [
+      { q: "Adakah Acson jenama Malaysia?", a: "Ya. Acson dikeluarkan di Malaysia oleh OYL Industries yang kini sebahagian daripada kumpulan Daikin. Ini memberikan bekalan alat ganti tempatan yang kukuh serta harga yang sangat kompetitif untuk pemasangan yang mementingkan bajet." },
+      { q: "Adakah penyaman udara Acson tahan lama?", a: "Pada julat harganya, Acson memberikan ketahanan yang baik. Ia mungkin tidak menandingi jenama premium dari segi penarafan kecekapan atau tahap kesenyapan, tetapi penyejukannya berkesan dan alat ganti mudah didapati." },
+      { q: "Bolehkah penyaman udara mudah alih Acson diservis?", a: "Boleh. Unit mudah alih memerlukan cucian penapis, basuhan gegelung dan semakan gas yang sama seperti unit dinding, cuma panel capaian dan susunan salirannya berbeza — dan pasukan kami sudah biasa dengan kedua-duanya." },
+      { q: "Patutkah unit Acson lama saya dibaiki atau diganti?", a: "Jika pemampat masih sihat dan hanya PCB atau motor kipas yang perlu diperhatikan, membaiki lebih berbaloi. Tetapi unit Acson berusia lebih 10 tahun yang menggunakan gas R22 lazimnya lebih baik diganti dengan inverter moden." }
+    ],
+    zh: [
+      { q: "Acson 是马来西亚品牌吗？", a: "是的。Acson 由 OYL Industries 在马来西亚生产，该公司现已并入大金集团。因此本地配件供应充足，价格对预算有限的安装项目很有竞争力。" },
+      { q: "Acson 空调可靠吗？", a: "以它的价位来说，可靠性相当不错。虽然在能效等级和静音方面比不上高端品牌，但制冷效果良好，配件也容易买到。" },
+      { q: "Acson 移动式空调可以维修吗？", a: "可以。移动机与挂机一样需要清洗滤网、冲洗盘管和检查冷媒，只是检修面板和排水方式不同，而我们的团队对此都很熟悉。" },
+      { q: "旧 Acson 该修还是该换？", a: "如果压缩机状态良好，只是电路板或风机马达需要处理，维修更划算。但一台使用超过 10 年、仍用 R22 冷媒的 Acson，通常换成现代变频机更合适。" }
+    ]
+  },
+  "brands:carrier-aircon-service-malaysia": {
+    ms: [
+      { q: "Adakah Carrier masih jenama yang baik di Malaysia?", a: "Carrier kekal dihormati di peringkat global mahupun di Malaysia. Julat inverter XPower mereka kompetitif dari segi kecekapan, dan sejarah panjang jenama ini menjamin rangkaian servis serta bekalan alat ganti yang mantap." },
+      { q: "Bagaimanakah harga Carrier berbanding Daikin?", a: "Harga Carrier lazimnya sedikit di bawah Daikin dan Panasonic pada penarafan bintang yang setara, menjadikannya pilihan nilai bagi pemilik rumah yang mahukan jenama dikenali tanpa premium jenama teratas." },
+      { q: "Sukarkah mencari alat ganti Carrier?", a: "Alat ganti lazim seperti kapasitor, penderia dan motor kipas mudah didapati. Papan PCB mungkin mengambil masa beberapa hari untuk ditempah, tetapi tidak sukar seperti sesetengah jenama kecil yang lain." },
+      { q: "Bolehkah penyaman udara Carrier menggunakan gas R32?", a: "Model Carrier yang lebih baharu menggunakan bahan penyejuk R32, dan juruteknik kami diiktiraf untuk mengendalikan kedua-dua R32 serta sistem R410A lama yang masih lazim pada pemasangan sedia ada di Malaysia." }
+    ],
+    zh: [
+      { q: "Carrier 在马来西亚还算好品牌吗？", a: "依然算。Carrier 在全球和马来西亚都保持着良好口碑，XPower 变频系列在能效上很有竞争力；品牌历史悠久，也意味着服务网络和配件供应都很成熟。" },
+      { q: "Carrier 与大金相比价格如何？", a: "在同等能效星级下，Carrier 的价格通常略低于大金和松下，是既想要知名品牌、又不想付一线溢价的房主的实惠之选。" },
+      { q: "Carrier 的配件难找吗？", a: "电容、感应器、风机马达等常用配件供应充足。电路板可能需要几天订货，但不像一些小品牌那样面临缺货问题。" },
+      { q: "Carrier 空调使用 R32 冷媒吗？", a: "较新的 Carrier 机型使用 R32 冷媒。我们的技师具备处理 R32 以及马来西亚现有安装中仍很常见的 R410A 系统的资质。" }
+    ]
+  },
+  "brands:midea-aircon-service-malaysia": {
+    ms: [
+      { q: "Adakah penyaman udara Midea boleh diharap untuk rumah Malaysia?", a: "Midea menawarkan harga yang kompetitif dengan tahap ketahanan yang munasabah pada kos tersebut. Ia popular untuk hartanah sewa dan pemasangan bajet di mana harga jenama premium sukar dibenarkan." },
+      { q: "Mampukah Midea bersaing dengan jenama Jepun?", a: "Dari segi harga dan prestasi penyejukan asas, ya. Dari segi kekalan kecekapan jangka panjang dan kesenyapan, jenama Jepun masih mendahului. Pilihan yang tepat bergantung pada bajet dan tempoh penggunaan yang anda jangkakan." },
+      { q: "Adakah alat ganti Midea tersedia di Malaysia?", a: "Ya. Midea mempunyai rangkaian pengedaran yang semakin berkembang di Malaysia, dan alat ganti servis lazim boleh didapati melalui pengedar sah serta pembekal alat ganti penyaman udara am." },
+      { q: "Perlukah penyaman udara Midea diservis sekerap Daikin?", a: "Perlu. Semua jenama mengumpul habuk, kulat dan kekotoran gegelung yang sama dalam keadaan Malaysia. Melangkau servis pada jenama bajet hanya membuatkan ia rosak lebih cepat berbanding jenama premium." }
+    ],
+    zh: [
+      { q: "美的空调在马来西亚家庭中用得住吗？", a: "美的价格有竞争力，以这个价位来说可靠性合理。它在出租房和预算有限的安装中很常见，因为这些场合确实难以负担高端品牌的价格。" },
+      { q: "美的能和日本品牌竞争吗？", a: "在价格和基础制冷表现上可以；但在长期能效保持和静音方面，日本品牌依然领先。如何选择取决于预算和预计使用年限。" },
+      { q: "马来西亚买得到美的配件吗？", a: "买得到。美的在马来西亚的分销网络不断扩大，常用维修配件可通过授权经销商和通用空调配件商买到。" },
+      { q: "美的空调需要像大金一样频繁保养吗？", a: "需要。在马来西亚的环境里，所有品牌的空调都会同样积聚灰尘、霉菌和盘管污垢。预算型品牌省掉保养，只会比高端品牌更快出问题。" }
+    ]
+  },
+  "brands:haier-aircon-service-malaysia": {
+    ms: [
+      { q: "Bolehkah ciri pembersihan sendiri Haier menggantikan servis?", a: "Tidak. Fungsi pembersihan sendiri membantu mengurangkan habuk pada permukaan gegelung antara lawatan profesional, tetapi ia tidak menggantikan basuhan kimia, pembersihan saliran dan semakan gas yang mencegah kehilangan prestasi sebenar." },
+      { q: "Adakah Haier pilihan bajet yang baik?", a: "Haier bersaing baik dalam segmen nilai dengan ciri seperti pembersihan sendiri dan kawalan WiFi pada harga lebih rendah. Tahap ketahanannya munasabah untuk kos tersebut jika diselenggara mengikut jadual." },
+      { q: "Mudahkah penyaman udara Haier dibaiki?", a: "Kebanyakan pembaikan lazim — kapasitor, penderia, motor kipas — menggunakan komponen piawai. Papan PCB khusus Haier boleh didapati melalui saluran sah, walaupun kadangkala perlu menunggu." },
+      { q: "Bagaimanakah bil elektrik Haier berbanding jenama lain?", a: "Model inverter Haier membawa penarafan bintang yang kompetitif dan penggunaan sebenarnya setanding dengan jenama nilai lain. Faktor kecekapan terbesar tetap servis berkala, tanpa mengira jenama." }
+    ],
+    zh: [
+      { q: "海尔的自清洁功能可以代替保养吗？", a: "不能。自清洁能在两次专业保养之间减少盘管表面的浮尘，但无法替代药水清洗、排水管清理和冷媒检查，而这些才是防止性能真正下降的关键。" },
+      { q: "海尔是好的经济型选择吗？", a: "是。海尔在性价比区间很有竞争力，以更低的价格提供自清洁、WiFi 控制等功能。只要按时保养，以这个价位来说可靠性不错。" },
+      { q: "海尔空调容易修吗？", a: "多数常见维修，如电容、感应器、风机马达，用的都是通用元件。海尔专用电路板可通过授权渠道买到，只是有时需要等待。" },
+      { q: "海尔的电费表现如何？", a: "海尔变频机型的能效星级很有竞争力，实际耗电与其它性价比品牌相当。影响能耗最大的因素始终是定期保养，与品牌无关。" }
+    ]
+  },
+  "brands:toshiba-aircon-service-malaysia": {
+    ms: [
+      { q: "Adakah penyaman udara Toshiba masih dibuat di Jepun?", a: "Bahagian penyaman udara Toshiba, kini Toshiba Carrier, mengeluarkan produk di Jepun, Thailand dan China bergantung pada model. Unit di Malaysia lazimnya dipasang di Thailand, dan ini tidak menjejaskan mutu mahupun bekalan alat ganti." },
+      { q: "Sejauh manakah ketahanan penyaman udara Toshiba?", a: "Toshiba antara jenama Jepun yang paling tahan lama, dengan pemampat yang terkenal panjang umur. Banyak unit Toshiba berusia 15 tahun masih beroperasi dengan cekap apabila diselenggara dengan betul." },
+      { q: "Adakah alat ganti Toshiba mahal?", a: "Harga alat ganti tulen sedikit di atas paras pertengahan, tetapi kadar kegagalan yang lebih rendah bermakna lebih sedikit penggantian sepanjang hayat unit. Jumlah kos pemilikan kekal kompetitif." },
+      { q: "Bolehkah penyaman udara Toshiba menghadapi cuaca panas Malaysia?", a: "Unit Toshiba direka untuk suhu persekitaran tropika dan berprestasi baik dalam keadaan Malaysia. Pengurusan haba jenama ini menjadi sebab pemasang mengesyorkannya untuk bilik yang menghadap barat." }
+    ],
+    zh: [
+      { q: "东芝空调还是日本制造吗？", a: "东芝空调部门（现为 Toshiba Carrier）按机型分别在日本、泰国和中国生产。马来西亚销售的机器通常在泰国组装，这并不影响质量，也不影响配件供应。" },
+      { q: "东芝空调耐用吗？", a: "东芝是日本品牌中最耐用的一批，压缩机以寿命长著称。保养得当的情况下，许多使用 15 年的东芝机器仍能高效运行。" },
+      { q: "东芝配件贵吗？", a: "原厂配件价格略高于中端水平，但故障率低意味着整个使用周期内更换次数更少，总体持有成本依然有竞争力。" },
+      { q: "东芝空调能应付马来西亚的酷热吗？", a: "东芝机型按热带环温设计，在马来西亚环境下表现良好。其出色的热管理，正是安装师傅推荐它用于西晒房间的原因之一。" }
+    ]
+  },
+  "brands:hitachi-aircon-service-malaysia": {
+    ms: [
+      { q: "Adakah penyaman udara Hitachi sesuai dengan cuaca Malaysia?", a: "Hitachi mereka model gred tropika khusus untuk keadaan Asia Tenggara, dengan penyahlembapan yang dipertingkat dan penarafan pemampat untuk suhu persekitaran tinggi yang sesuai dengan cuaca panas Malaysia." },
+      { q: "Bolehkah fungsi iClean Hitachi menggantikan servis manual?", a: "iClean membantu antara lawatan dengan membekukan lalu menanggalkan habuk permukaan, tetapi basuhan kimia profesional, pembersihan saliran dan semakan gas masih diperlukan setiap 6 hingga 12 bulan." },
+      { q: "Bagaimanakah harga Hitachi berbanding Daikin?", a: "Harga Hitachi lazimnya sedikit di bawah Daikin pada kapasiti dan penarafan bintang yang setara, menjadikannya pilihan nilai dalam kalangan jenama Jepun tanpa jurang mutu yang ketara." },
+      { q: "Adakah alat ganti Hitachi tersedia di KL?", a: "Ya. Hitachi mempunyai rangkaian pengedaran alat ganti yang mantap di Malaysia, dan komponen servis lazim boleh didapati dalam beberapa hari bagi kebanyakan model kediaman dan komersial ringan." }
+    ],
+    zh: [
+      { q: "日立空调适合马来西亚天气吗？", a: "适合。日立专为东南亚环境设计了热带级机型，强化除湿能力，并按高环温标定压缩机，很适合马来西亚的炎热气候。" },
+      { q: "日立 iClean 可以代替人工保养吗？", a: "不能完全代替。iClean 通过结霜再化霜带走表面浮尘，在两次保养之间有帮助，但每 6 至 12 个月仍需要专业药水清洗、疏通排水和检查冷媒。" },
+      { q: "日立与大金相比价格如何？", a: "在相同匹数和能效星级下，日立通常略低于大金，是日本品牌中性价比较高的选择，质量差距并不明显。" },
+      { q: "吉隆坡买得到日立配件吗？", a: "买得到。日立在马来西亚有成熟的配件分销体系，多数家用和轻型商用机型的常用维修件几天内就能拿到。" }
+    ]
+  },
+  "brands:samsung-aircon-service-malaysia": {
+    ms: [
+      { q: "Adakah Samsung WindFree berbaloi dengan harganya?", a: "Jika anda benar-benar sensitif kepada tiupan angin terus — di bilik tidur, bilik bayi atau meja kerja yang terletak betul-betul di bawah unit — aliran udara melalui lubang mikro WindFree memang mengurangkan masalah tiupan sejuk secara ketara." },
+      { q: "Bolehkah penyaman udara Samsung dikawal melalui telefon?", a: "Boleh. Integrasi SmartThings Samsung berfungsi melalui WiFi untuk kawalan jarak jauh, penjadualan dan pemantauan. Pemasangan kami termasuk pemasangan serta ujian fungsi ini sebelum diserahkan kepada anda." },
+      { q: "Mudahkah mendapatkan alat ganti Samsung?", a: "Pengedaran alat ganti penyaman udara Samsung di Malaysia sudah mantap. Alat ganti lazim seperti penderia, kapasitor dan motor kipas cepat didapati, manakala papan PCB dapat ditempah dalam beberapa hari." },
+      { q: "Sejauh manakah ketahanan Samsung berbanding jenama Jepun?", a: "Julat inverter digital Samsung meningkat ketara dari segi ketahanan pada beberapa generasi terkini. Pada julat harganya, ia bersaing baik dengan jenama pertengahan Jepun dari segi ciri mahupun ketahanan." }
+    ],
+    zh: [
+      { q: "三星 WindFree 贵得值吗？", a: "如果你确实怕直吹，例如卧室、婴儿房，或正好在机器下方的居家办公桌位，WindFree 的微孔送风确实能明显改善冷风直吹的问题。" },
+      { q: "三星空调可以用手机控制吗？", a: "可以。三星的 SmartThings 通过 WiFi 实现远程控制、定时和状态监测。我们的安装服务会一并完成设置，并在交付前测试功能。" },
+      { q: "三星空调配件好买吗？", a: "好买。三星在马来西亚的空调配件分销体系成熟，感应器、电容、风机马达等常用件供应很快，电路板也能在几天内订到。" },
+      { q: "三星与日本品牌相比可靠性如何？", a: "三星数码变频系列近几代的可靠性提升明显。以它的价位，在功能和耐用性上都能与日本中端品牌一较高下。" }
+    ]
+  },
+  "brands:lg-aircon-service-malaysia": {
+    ms: [
+      { q: "Adakah Dual Inverter LG benar-benar lebih cekap?", a: "Reka bentuk pemampat kembar berputar LG mengurangkan getaran dan meningkatkan kecekapan pada beban separa. Ujian bebas mengesahkan penggunaan elektrik lebih rendah berbanding inverter putar tunggal pada kapasiti yang sama." },
+      { q: "Bolehkah penyaman udara LG beroperasi dengan kuasa solar atau rendah?", a: "Julat Dual Inverter LG popular untuk rumah bersistem solar kerana watt minimum yang rendah membolehkannya mengekalkan penyejukan pada sistem inverter yang lebih kecil tanpa tersandung." },
+      { q: "Bagaimanakah LG berbanding Samsung dari segi ketahanan?", a: "Kedua-dua jenama Korea ini mencapai tahap ketahanan yang setanding pada generasi terkini. Tempoh jaminan pemampat LG antara yang terpanjang di pasaran, mencerminkan keyakinan terhadap rekaan mereka." },
+      { q: "Adakah kos servis LG lebih tinggi daripada jenama Jepun?", a: "Kos servis hampir sama merentas semua jenama utama. Basuhan kimia, semakan gas dan diagnostik elektrik mengambil masa yang sama, sama ada unit itu LG, Daikin atau Panasonic." }
+    ],
+    zh: [
+      { q: "LG 双转子变频真的更省电吗？", a: "LG 的双转子压缩机设计降低振动，并提升部分负荷效率。独立测试证实，在相同匹数下，它的耗电量低于单转子变频机。" },
+      { q: "LG 空调能在太阳能或低功率环境下运行吗？", a: "LG 双转子变频系列在太阳能住宅中很受欢迎，因为其最低运行功率低，可以在较小的逆变系统上持续制冷而不跳闸。" },
+      { q: "LG 与三星相比可靠性如何？", a: "两个韩国品牌在近几代产品上的可靠性已经相当接近。LG 的压缩机保修期是市场上最长的之一，反映出对自身设计的信心。" },
+      { q: "LG 的保养费用比日本品牌高吗？", a: "各大品牌的保养费用相近。药水清洗、冷媒检查和电气诊断所需时间相同，无论是 LG、大金还是松下都一样。" }
+    ]
+  },
+  "brands:sharp-aircon-service-malaysia": {
+    ms: [
+      { q: "Adakah Plasmacluster Sharp benar-benar membersihkan udara?", a: "Ion Plasmacluster menunjukkan kesan antimikrob dalam kajian makmal. Di dalam bilik sebenar kesannya lebih halus, tetapi ia memang membantu mengurangkan pertumbuhan kulat pada gegelung dalaman antara dua servis." },
+      { q: "Adakah penyaman udara Sharp boleh diharap di Malaysia?", a: "Sharp ialah jenama Jepun pertengahan yang kukuh dengan bekalan alat ganti yang baik di Malaysia. Tahap ketahanannya setanding dengan Hitachi dan Toshiba pada julat harga yang serupa." },
+      { q: "Bolehkah penyaman udara Sharp dibaiki di dalam negara?", a: "Boleh. Sharp mempunyai rangkaian servis yang mantap di Malaysia, dan alat ganti pembaikan lazim boleh didapati melalui pengedar sah serta pembekal alat ganti penyaman udara am." },
+      { q: "Bagaimanakah inverter J-Tech Sharp berbanding yang lain?", a: "Inverter J-Tech menawarkan penarafan tenaga yang kompetitif dan kawalan suhu yang stabil. Ia tawaran nilai yang kukuh dalam kalangan jenama inverter Jepun bagi pemilik rumah yang mementingkan kos." }
+    ],
+    zh: [
+      { q: "夏普的净离子群真能净化空气吗？", a: "实验室研究显示，净离子群具有抗菌效果。在实际房间里的效果没有那么明显，但确实有助于减少两次保养之间内机盘管上的霉菌滋生。" },
+      { q: "夏普空调在马来西亚可靠吗？", a: "夏普是扎实的中端日本品牌，在马来西亚配件供应良好。在相近价位上，可靠性与日立、东芝相当。" },
+      { q: "夏普空调可以在本地维修吗？", a: "可以。夏普在马来西亚有成熟的服务网络，常用维修配件可通过授权经销商和通用空调配件商买到。" },
+      { q: "夏普 J-Tech 变频表现如何？", a: "J-Tech 变频机能效等级有竞争力，温控也很稳定。对注重预算的业主来说，它是日本变频品牌中性价比较高的选择。" }
+    ]
+  },
+  "brands:fujitsu-aircon-service-malaysia": {
+    ms: [
+      { q: "Mengapakah Fujitsu dianggap jenama premium?", a: "Fujitsu membina produknya untuk keadaan melampau. Unit mereka dinilai untuk suhu persekitaran yang lebih tinggi dan pemampatnya terkenal lebih tahan lama berbanding pesaing, sekali gus menjelaskan harga belian yang lebih tinggi." },
+      { q: "Adakah Fujitsu berbaloi dengan kos tambahan berbanding Daikin?", a: "Bagi bilik yang menghadap barat, unit di tingkat teratas atau kawasan yang terdedah kepada haba melampau, premium itu lazimnya kembali melalui hayat lebih panjang dan kurang kerosakan. Untuk kegunaan bilik tidur biasa, Daikin sama baiknya." },
+      { q: "Adakah alat ganti Fujitsu mahal di Malaysia?", a: "Alat ganti tulen Fujitsu memang lebih mahal, tetapi kadar kegagalan yang rendah bermakna anda membelinya lebih jarang. Jumlah kos penyelenggaraan selama 10 tahun kekal setanding dengan jenama arus perdana Jepun." },
+      { q: "Bolehkah Fujitsu mengendalikan kelembapan Malaysia?", a: "Prestasi penyahlembapan Fujitsu antara yang terbaik di pasaran. Unitnya mengekalkan kelembapan yang selesa tanpa menyejukkan secara berlebihan, iaitu apa yang sebenarnya diperlukan oleh iklim tropika." }
+    ],
+    zh: [
+      { q: "为什么富士通被视为高端品牌？", a: "富士通按极端工况设计产品，机型按更高的环温标定，压缩机寿命也普遍优于竞品，这些都是其较高售价的理由。" },
+      { q: "富士通比大金贵，值得吗？", a: "对西晒房间、顶层单位或长期高温暴晒的位置，这笔溢价通常会通过更长的使用寿命和更少的故障回本；如果只是普通卧室使用，大金同样够好。" },
+      { q: "富士通配件在马来西亚贵吗？", a: "原厂配件确实有溢价，但故障率低意味着更换次数少。按 10 年计算，总维护成本与日本主流品牌相比仍有竞争力。" },
+      { q: "富士通能应付马来西亚的湿度吗？", a: "富士通的除湿表现是市场上最好的之一。它能保持舒适湿度而不过度降温，这正是热带气候真正需要的。" }
+    ]
+  },
+  "brands:gree-aircon-service-malaysia": {
+    ms: [
+      { q: "Adakah Gree pengeluar penyaman udara terbesar di dunia?", a: "Ya. Gree mengeluarkan lebih banyak unit penyaman udara berbanding mana-mana syarikat lain di peringkat global, termasuk pengeluaran OEM untuk beberapa jenama terkenal. Skala ini memberikan kelebihan dari segi harga." },
+      { q: "Adakah penyaman udara Gree cukup boleh diharap untuk rumah?", a: "Julat kediaman Gree menawarkan ketahanan yang munasabah pada harga kompetitif. Ia pilihan popular untuk hartanah sewa dan bilik kedua di mana harga jenama premium sukar dibenarkan." },
+      { q: "Bolehkah alat ganti Gree ditemui di Malaysia?", a: "Pengedaran Gree di Malaysia berkembang pesat, dan alat ganti lazim boleh didapati melalui pengedar sah. Papan PCB bagi model baharu mungkin mengambil masa beberapa hari tambahan untuk ditempah." },
+      { q: "Bagaimanakah kecekapan tenaga Gree berbanding jenama lain?", a: "Julat inverter Gree membawa penarafan bintang yang kompetitif berbanding jenama nilai lain. Kecekapan sebenar lebih bergantung pada pemilihan saiz yang tepat dan servis berkala berbanding jenama semata-mata." }
+    ],
+    zh: [
+      { q: "格力是全球最大的空调制造商吗？", a: "是的。格力的空调产量全球第一，还为多个知名品牌做 OEM 代工，规模优势让它在价格上更有竞争力。" },
+      { q: "格力空调家用可靠吗？", a: "格力的家用系列以有竞争力的价格提供合理的可靠性。在出租房和次要房间，它是很常见的选择，因为这些地方很难为高端品牌的价格买单。" },
+      { q: "马来西亚买得到格力配件吗？", a: "格力在马来西亚的分销发展很快，常用配件可通过授权经销商买到。较新型号的电路板可能需要多等几天。" },
+      { q: "格力的能效表现如何？", a: "格力变频系列的能效星级与其它性价比品牌相比很有竞争力。实际能效更多取决于匹数是否选对和是否定期保养，而不只是品牌。" }
+    ]
+  },
+  "brands:national-aircon-service-malaysia": {
+    ms: [
+      { q: "Adakah National sama dengan Panasonic?", a: "National ialah nama jenama awal Panasonic di banyak pasaran. Teknologi penyaman udaranya ada kaitan dan sesetengah alat ganti boleh saling ganti, tetapi kedua-duanya dianggap barisan produk berasingan untuk tujuan servis." },
+      { q: "Patutkah saya terus menyervis penyaman udara National yang lama?", a: "Jika pemampat masih sihat dan unit menyejukkan dengan baik, servis memanjangkan hayatnya secara ekonomi. Tetapi jika ia menggunakan gas R22 dan memerlukan pembaikan besar, penggantian dengan inverter moden lazimnya lebih berbaloi." },
+      { q: "Bolehkah penyaman udara National masih mendapat gas R22?", a: "R22 sedang dihentikan secara global dan bekalan semakin mahal. Menambah gas pada unit R22 selalunya menjadi titik di mana penggantian dengan inverter R32 atau R410A lebih masuk akal dari segi kewangan." },
+      { q: "Adakah alat ganti National masih tersedia?", a: "Bahagian mekanikal lazim masih boleh didapati melalui pembekal penyaman udara am, tetapi papan PCB khusus jenama dan komponen elektronik semakin sukar ditemui bagi model National yang sudah dihentikan." }
+    ],
+    zh: [
+      { q: "National 和 Panasonic 是同一家吗？", a: "National 是松下早年在全球多个市场使用的品牌名。空调技术上有渊源，部分配件也可互换，但在维修上被视为两条独立的产品线。" },
+      { q: "旧 National 空调还值得继续保养吗？", a: "如果压缩机状态良好、制冷正常，保养能经济地延长使用寿命。但如果它使用 R22 冷媒且需要大修，换成现代变频机通常更划算。" },
+      { q: "National 空调还能加 R22 冷媒吗？", a: "R22 正在全球淘汰，供应也日益昂贵。给 R22 机型加冷媒，往往正是换成 R32 或 R410A 变频机在经济上更合理的转折点。" },
+      { q: "National 配件还买得到吗？", a: "常用机械配件仍可通过通用空调配件商买到，但已停产 National 机型的品牌专用电路板和电子元件越来越难找。" }
+    ]
+  },
+  "brands:hisense-aircon-service-malaysia": {
+    ms: [
+      { q: "Adakah Hisense pilihan bajet yang baik?", a: "Hisense menawarkan ciri yang kompetitif pada harga lebih rendah. Kawalan WiFi, teknologi inverter dan mutu binaan yang munasabah menjadikannya pilihan yang praktikal untuk pemasangan yang mementingkan kos." },
+      { q: "Bagaimanakah Hisense berbanding Midea dan Gree?", a: "Ketiga-tiganya bersaing dalam segmen nilai dengan ketahanan dan ciri yang serupa. Pilihan lazimnya bergantung pada jenama yang distok oleh pemasang anda dan model yang paling sesuai dengan saiz bilik." },
+      { q: "Bolehkah penyaman udara Hisense diservis di KL?", a: "Boleh. Rangkaian servis Hisense di Malaysia semakin berkembang, dan penyelenggaraan piawai seperti basuhan kimia serta semakan gas boleh dilakukan oleh mana-mana juruteknik penyaman udara yang bertauliah." },
+      { q: "Perlukah saya bimbang tentang ketahanan jangka panjang Hisense?", a: "Pada julat harganya, ketahanannya munasabah. Kuncinya ialah menyelenggaranya mengikut jadual, kerana jenama bajet kurang memaafkan servis yang dilangkau berbanding unit Jepun premium." }
+    ],
+    zh: [
+      { q: "海信是好的经济型选择吗？", a: "海信以更低的价格提供有竞争力的功能。WiFi 控制、变频技术和合理的做工，使它成为注重成本的安装项目的可行选项。" },
+      { q: "海信与美的、格力相比如何？", a: "三者在性价比区间竞争，可靠性和功能相近。最终选择往往取决于安装师傅备货哪个品牌，以及哪个型号最匹配你的房间面积。" },
+      { q: "吉隆坡可以维修海信空调吗？", a: "可以。海信在马来西亚的服务网络正在扩大，药水清洗、冷媒检查等常规保养，任何合格的空调技师都能完成。" },
+      { q: "需要担心海信的长期可靠性吗？", a: "以它的价位，可靠性是合理的。关键在于按时保养，因为经济型品牌比高端日本机型更经不起跳过保养。" }
+    ]
+  },
+  "brands:aux-aircon-service-malaysia": {
+    ms: [
+      { q: "Adakah AUX jenama penyaman udara yang dikenali di Malaysia?", a: "AUX ialah pengeluar besar dari China dengan kehadiran yang semakin berkembang di Asia Tenggara. Walaupun kurang dikenali berbanding Daikin atau Panasonic di sini, ia bersaing agresif dari segi harga dalam segmen nilai." },
+      { q: "Bolehkah penyaman udara AUX menghadapi cuaca panas Malaysia?", a: "Unit AUX dinilai untuk suhu persekitaran tropika dan berprestasi memadai dalam keadaan Malaysia. Ia mungkin tidak menandingi jenama premium pada prestasi haba melampau, tetapi penyejukannya berkesan." },
+      { q: "Adakah alat ganti AUX tersedia?", a: "Alat ganti servis lazim boleh didapati melalui rangkaian pengedaran Malaysia, walaupun komponen elektronik khusus jenama mungkin mengambil masa lebih lama untuk ditempah berbanding jenama Jepun yang sudah mantap." },
+      { q: "Adakah AUX sesuai dipertimbangkan untuk hartanah sewa?", a: "Bagi unit sewa di mana penyaman udara ialah kos dan bukan faktor jualan, AUX menawarkan harga yang kompetitif dengan ketahanan yang munasabah — satu pilihan bajet yang praktikal." }
+    ],
+    zh: [
+      { q: "AUX 在马来西亚是知名空调品牌吗？", a: "AUX 是中国大型制造商，在东南亚的存在感正不断提升。虽然在本地知名度不及大金或松下，但它在性价比区间以价格积极竞争。" },
+      { q: "AUX 空调能应付马来西亚的酷热吗？", a: "AUX 机型按热带环温标定，在马来西亚环境下表现尚可。极端高温性能可能比不上高端品牌，但制冷效果没有问题。" },
+      { q: "AUX 配件有供应吗？", a: "常用维修配件可通过马来西亚的分销网络买到，但品牌专用电子元件的订货时间，可能比成熟的日本品牌更长。" },
+      { q: "出租房适合考虑 AUX 吗？", a: "对出租单位来说，空调是成本项而非卖点，AUX 价格有竞争力、可靠性也合理，是务实的经济之选。" }
+    ]
+  },
+  "brands:tcl-aircon-service-malaysia": {
+    ms: [
+      { q: "Adakah TCL mengeluarkan penyaman udara yang baik?", a: "Julat penyaman udara TCL bersaing dalam segmen nilai dengan mutu binaan yang munasabah dan ciri yang kompetitif. Ia pilihan praktikal untuk bilik kedua dan pemasangan bajet." },
+      { q: "Bolehkah penyaman udara TCL disambungkan ke sistem rumah pintar?", a: "Model baharu TCL dilengkapi ciri WiFi dan kawalan melalui aplikasi. Pemasangan kami termasuk persediaan ini, dan kami mengesahkan sambungannya sebelum unit diserahkan." },
+      { q: "Bagaimanakah TCL berbanding jenama bajet lain?", a: "TCL bersaing dengan Midea, Gree dan AUX dari segi harga dan ciri. Tahap ketahanan dalam segmen nilai secara umumnya serupa, dan kekerapan servis lebih menentukan berbanding jenama." },
+      { q: "Adakah servis penyaman udara TCL tersedia di KL?", a: "Ya. Servis penyaman udara piawai terpakai kepada unit TCL, dan pasukan kami mengendalikan basuhan kimia, semakan gas serta pembaikan asas bagi julat kediaman TCL." }
+    ],
+    zh: [
+      { q: "TCL 空调做得好吗？", a: "TCL 空调系列在性价比区间竞争，做工合理、功能有竞争力，是次要房间和预算型安装的务实选择。" },
+      { q: "TCL 空调能接入智能家居吗？", a: "TCL 较新型号具备 WiFi 和 App 控制功能。我们的安装包含设置，并在交付前验证连接是否正常。" },
+      { q: "TCL 与其它经济型品牌相比如何？", a: "TCL 与美的、格力、AUX 在价格和功能上互相竞争。性价比区间内的可靠性大致相当，保养频率比品牌更重要。" },
+      { q: "吉隆坡提供 TCL 空调维修吗？", a: "提供。TCL 机组适用标准空调保养，我们的团队可处理 TCL 家用系列的药水清洗、冷媒检查和基础维修。" }
+    ]
+  },
+  "brands:isonic-aircon-service-malaysia": {
+    ms: [
+      { q: "Adakah Isonic jenama penyaman udara Malaysia?", a: "Isonic diedarkan dalam pasaran Malaysia pada julat harga yang kompetitif. Ia menyasarkan pemilik rumah yang mementingkan bajet serta pemasangan hartanah sewa, di mana harga jenama premium sukar dibenarkan." },
+      { q: "Mudahkah penyaman udara Isonic dibaiki?", a: "Bahagian mekanikal piawai mudah didapati, dan servis asas — basuhan kimia, semakan gas, cucian penapis — sama sahaja seperti jenama lain." },
+      { q: "Sejauh manakah ketahanan Isonic berbanding jenama utama?", a: "Pada julat harga nilainya, tahap ketahanannya munasabah. Kunci kepada jangka hayat yang panjang ialah servis berkala, yang lebih penting bagi jenama bajet berbanding jenama premium." },
+      { q: "Patutkah saya memilih Isonic atau jenama Jepun?", a: "Untuk hartanah sewa atau bilik yang digunakan beberapa jam sehari, Isonic lebih masuk akal dari segi kewangan. Bagi bilik tidur utama yang beroperasi lebih 8 jam sehari, kecekapan dan ketahanan inverter Jepun akan kembali menjimatkan kosnya." }
+    ],
+    zh: [
+      { q: "Isonic 是马来西亚空调品牌吗？", a: "Isonic 在马来西亚市场以有竞争力的价位分销，主要面向注重预算的业主和出租房安装，这类场合确实难以承担高端品牌的价格。" },
+      { q: "Isonic 空调容易修吗？", a: "标准机械配件供应充足，基础保养，如药水清洗、冷媒检查、清洗滤网，与其它品牌没有区别。" },
+      { q: "Isonic 与大品牌相比可靠性如何？", a: "以它的价位，可靠性是合理的。延长寿命的关键是定期保养，这对经济型品牌比高端品牌更重要。" },
+      { q: "该选 Isonic 还是日本品牌？", a: "出租房或每天只开几个小时的房间，选 Isonic 更划算。若是每天运行 8 小时以上的主卧，日本变频机的能效和耐用性会逐步回本。" }
     ]
   }
 

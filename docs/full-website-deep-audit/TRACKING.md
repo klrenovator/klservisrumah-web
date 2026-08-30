@@ -84,6 +84,7 @@
 | 2026-08-30 | **Fix Wave 17** — **P3-12 phase 2, tranche 3**: native editorial MS/ZH translations for all 10 `guidesMaintenance` (maintenance-guide) pods (80 localized Q&As); `guidesMaintenance` promoted to a complete gated family. Built corpus verified 20/20 localized pages and 80/80 visible Q&As byte-identical to FAQPage schema. **Phase total 30/146; 116 remain.** | ✅ TRANCHE 3 COMPLETED — PR #196 merged, CI green; phase ⏳ PENDING. See `FIX-WAVE-17-REPORT.md` |
 | 2026-08-30 | **Fix Wave 18** — **P3-12 phase 2, tranche 4**: native editorial MS/ZH translations for all 8 `seasonal` pods (64 localized Q&As); `seasonal` promoted to a complete gated family. Built corpus verified 16/16 localized pages and 64/64 visible Q&As byte-identical to FAQPage schema. **Phase total 38/146; 108 remain.** | ✅ TRANCHE 4 COMPLETED — PR #198 merged, CI green; phase ⏳ PENDING. See `FIX-WAVE-18-REPORT.md` |
 | 2026-08-30 | **Fix Wave 19** — **P3-12 phase 2, tranche 5**: native editorial MS/ZH translations for all 18 `compare` pods (144 localized Q&As); `compare` promoted to a complete gated family. Built corpus verified 36/36 localized pages and 144/144 visible Q&As byte-identical to FAQPage schema. **Phase total 56/146; 90 remain.** | ✅ TRANCHE 5 COMPLETED — PR #200 merged, CI green; phase ⏳ PENDING. See `FIX-WAVE-19-REPORT.md` |
+| 2026-08-30 | **Fix Wave 20** — **P3-12 phase 2, tranche 6**: native editorial MS/ZH translations for all 32 `brands` pods (256 localized Q&As) — the 12 material/brand guides from `brandCopy` plus the 20 aircon brand pages from `airconBrandCopy` (both in `config/content-pod-copy-batch2.ts`; slug set confirmed against `config/content-data.ts` `brandPages` before authoring); `brands` promoted to a complete gated family. Built corpus verified 64/64 localized pages and 256/256 visible Q&As byte-identical to FAQPage schema. Technical detail preserved per page (Nippon Weatherbond 5-yr vs Dulux Weathershield 7-yr, SIRIM QAS insurance/JMB consequences, Grundfos SCALA/UPA sizing 8–12 yr life, Joven 20 A dedicated circuit + RM 80–120 descale, Rinnai balanced-flue + flame-failure device, Knauf MR board system-matched warranty, SikaTop Seal 107 vs PU decks + PU injection resin, Bostik 5–8 yr vs acrylic 1–2 yr, Mapei Aquadefense ~4 h tiling readiness, Daikin R32, Panasonic H11, Mitsubishi Electric vs Heavy, Acson/OYL + R22 economics, WindFree micro-hole airflow, LG twin-rotary + solar minimum wattage, R32/R410A split). All gates PASS: prebuild **329,897 × 0**, lint 0/0, type-check, build **4,139 HTML**, audit:html 0 fatal/0 warnings, audit:links 312,732+56 → 0 broken, seo-head 4,112 = 4,112 (0 dup metadata), schema-size, bp1 (NAP 62.8%), location-similarity 69.4%, raster-og, meta, seo:audit, part5 0 JSON-LD errors, part3 corpus 4,139 pages with BM/ZH leaks 0/0. **Phase total 88/146; 58 remain.** | ✅ TRANCHE 6 COMPLETED — phase ⏳ PENDING. See `FIX-WAVE-20-REPORT.md` |
 
 ---
 
@@ -133,11 +134,11 @@ site-wide FAQ answers had diverged from the rendered copy; EN SERP strings
 unchanged). See `FIX-WAVE-14-REPORT.md`.
 
 **With Wave 14 done, no P0 or P1 audit finding remains unblocked, and no
-major content surface is left without a real localized URL.** Waves 15–19 have
+major content surface is left without a real localized URL.** Waves 15–20 have
 started the highest-value unblocked P2 enhancement: authored pod FAQ translation.
-Tranches 1–5 are ✅ (all `top`, `guides`, `guidesMaintenance`, `seasonal` and
-`compare` pods); the phase remains ⏳ at **56/146**, with `brands` (32 pages)
-the exact next stop.
+Tranches 1–6 are ✅ (all `top`, `guides`, `guidesMaintenance`, `seasonal`,
+`compare` and `brands` pods); the phase remains ⏳ at **88/146**, with
+`commercial` (29 pages) the exact next stop, then `residential` (29).
 Everything else left is owner-blocked,
 needs owner data/access, or is a P2/P3 enhancement.
 
@@ -215,15 +216,20 @@ needs owner data/access, or is a P2/P3 enhancement.
    CWV/CrUX, GBP + review verification, owner fact confirmations (reviews,
    founding year, staff, stats), photography (P5-12).
 10. **Next code-level candidates (P2/P3, unblocked) — value order:**
-   **P3-12 phase 2** — ⏳ **IN PROGRESS: 56/146 complete.** Waves 15–19 finished
+   **P3-12 phase 2** — ⏳ **IN PROGRESS: 88/146 complete.** Waves 15–19 finished
    all 10 `top`, all 10 `guides`, all 10 `guidesMaintenance`, all 8
-   `seasonal` and all 18 `compare` pods (448 native MS/ZH Q&As; visible HTML =
-   FAQPage schema).
-   **NEXT EXACT STOP: tranche 6, all 32 `brands` pages** (source `brandCopy`
-   for the 12 brand guides + `airconBrandCopy` for the 20 aircon brand pages,
-   both in `config/content-pod-copy-batch2.ts`; verify with
-   `scripts/probe-pod-faq-i18n.ts brands`), then `commercial` 29 →
-   `residential` 29. Natural editorial
+   `seasonal` and all 18 `compare` pods; **Wave 20 finished all 32 `brands`
+   pages** (source `brandCopy` for the 12 brand guides + `airconBrandCopy` for
+   the 20 aircon brand pages, both in `config/content-pod-copy-batch2.ts`).
+   Together: 704 native MS/ZH Q&As, visible HTML = FAQPage schema, verified
+   with `scripts/probe-pod-faq-i18n.ts brands` (64/64 pages, 256/256 Q&As).
+   **NEXT EXACT STOP: tranche 7, all 29 `commercial` pages**, then tranche 8,
+   all 29 `residential` pages. Author them as `commercial:<slug>` /
+   `residential:<slug>` — these two families deliberately share slugs, which is
+   why the registry is family-qualified. Note `commercial` has a
+   `COMMERCIAL_FAQ_TEMPLATES` fallback in `lib/content-locale-resolver.ts` that
+   is bypassed only when a real registry set exists, so finish all 29 before
+   adding `commercial` to `COMPLETED_FAMILIES`. Natural editorial
    translation only, no MT; the new prebuild gate must reach 146/146 before
    completion;
    **P2-16 tranche 3** (remaining 44 problems); **§5.4-B1** BM commercial tree;
@@ -285,7 +291,7 @@ needs owner data/access, or is a P2/P3 enhancement.
 | P1 | P3-18 — llms.txt: list all 29 services (aircon missing) with units; link aeo-faq.txt | ✅ DONE (Fix Wave 10 — 29 service lines with units + aeo-faq.txt link; robots.ts + DuckAssistBot/Applebot-Extended) |
 | P1 | P3-09 — Owner verification of stats/claims (1,200+, 15+ Pros, 120+/120, 30–60 min, "written by local tradesmen") | ⏳ PENDING (owner) |
 | P2 | P3-06 — Blog: FAQPage schema + promote top FAQ to question H2 (216 posts) | ✅ DONE (Fix Wave 10 — 193 EN + 192 MS + 192 ZH blog posts emit FAQPage JSON-LD; top FAQ promoted to H2) |
-| P2 | P3-12 — MS/ZH routes for kept pods (215 details + 10 hubs × 2 locales; i18n data already exists) | 🟡 PARTIAL — Route rollout ✅ DONE (Fix Wave 11); cost routes ✅ DONE (Fix Wave 14, PR #191). **Phase 2 editorial FAQ translation ⏳ PENDING: 56/146 complete** (Fix Waves 15–19 completed all 10 `top` + all 10 `guides` + all 10 `guidesMaintenance` + all 8 `seasonal` + all 18 `compare` pods = 448 localized Q&As; each tranche's built routes visible/schema exact; permanent prebuild gate). **NEXT: all 32 `brands` pages**, then commercial 29, residential 29. No MT. |
+| P2 | P3-12 — MS/ZH routes for kept pods (215 details + 10 hubs × 2 locales; i18n data already exists) | 🟡 PARTIAL — Route rollout ✅ DONE (Fix Wave 11); cost routes ✅ DONE (Fix Wave 14, PR #191). **Phase 2 editorial FAQ translation ⏳ PENDING: 88/146 complete** (Fix Waves 15–20 completed all 10 `top` + all 10 `guides` + all 10 `guidesMaintenance` + all 8 `seasonal` + all 18 `compare` + all 32 `brands` pods = 704 localized Q&As; each tranche's built routes visible/schema exact; permanent prebuild gate protecting all six completed families). **NEXT: all 29 `commercial` pages**, then residential 29. No MT. |
 | P2 | P3-15/P3-16/P3-17 — SearchAction vs /search; news-sitemap freshness; Applebot-Extended/DuckAssistBot | 🟡 PARTIAL (Fix Wave 10 — Applebot-Extended/DuckAssistBot done in robots.ts; SearchAction vs /search + news-sitemap still ⏳) |
 | P2 | P3-10/P3-19/P3-13 — NAP in content block; link+expand aeo-faq.txt; hidden empty-state text | ✅ DONE (Fix Wave 10 — NAP strip = P4-15; llms.txt links aeo-faq.txt = P3-18; empty-state removed = P3-02. aeo-faq.txt expansion stays P2 with content work) |
 
