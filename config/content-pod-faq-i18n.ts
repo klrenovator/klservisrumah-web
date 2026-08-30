@@ -4,8 +4,9 @@
  * across families. These are editorial translations, not generic templates.
  *
  * Coverage is intentionally gated by scripts/validate-content-pod-faq-i18n.ts.
- * Waves 15–16 cover the complete `top` and `guides` families (20 pages, 160
- * translated Q&As). Remaining families stay explicitly pending in TRACKING.
+ * Waves 15–16 cover the complete `top` and `guides` families; Wave 17 adds the
+ * complete `guidesMaintenance` family (30 pages, 240 translated Q&As in all).
+ * Remaining families stay explicitly pending in TRACKING.
  */
 
 export type LocalizedPodFaq = { q: string; a: string };
@@ -291,6 +292,146 @@ export const CONTENT_POD_FAQ_I18N: Record<string, LocalizedPodFaqSet> = {
       { q: "全活动挂架可以安装在石膏板墙上吗？", a: "只有固定件穿过板材并锚定在后方金属或木龙骨时才可以，不能只靠石膏板承重。55 英寸电视伸出墙面后会产生很大杠杆力，单独的石膏板无法安全承受。" },
       { q: "倾斜式挂架有助于减少窗户眩光吗？", a: "有帮助。向下约 15° 可减少视线高度的窗户反光和顶灯倒影，尤其适合设有大窗户和多盏筒灯的马来西亚客厅。" },
       { q: "怎样查出电视机的重量？", a: "查看制造商规格表中不含桌面底座的重量，并选择额定承重留有安全余量的挂架。绝不能使用额定承重低于电视实际重量的产品。" }
+    ]
+  },
+  "guidesMaintenance:painting-maintenance-schedule": {
+    ms: [
+      { q: "Berapa kerapkah saya perlu mengecat semula bahagian dalam rumah?", a: "Kawasan lalu lintas tinggi seperti lorong dan dapur biasanya perlu dicat semula setiap 3–5 tahun; bilik tidur dan ruang tamu bertahan 5–8 tahun dengan cat berkualiti. Kerja sentuhan kecil memanjangkan kitaran jika dikesan awal." },
+      { q: "Apakah yang menyebabkan cat luaran cepat rosak di Malaysia?", a: "Kemerosotan UV, pertumbuhan alga pada dinding teduh, dan rekahan halus yang membenarkan lembapan masuk ke belakang filem — merawat rekahan dan alga sebelum merebak memanjangkan kitaran cat luaran dengan ketara." },
+      { q: "Bolehkah saya membuat sentuhan tanpa mengecat semula seluruh dinding?", a: "Boleh, jika anda menyimpan kod dan kelompok cat asal — tetapi sentuhan pada cat lama sering kelihatan dengan kilauan yang sedikit berbeza. Untuk kawasan yang terlihat, cat keseluruhan dinding dari satu penjuru ke penjuru lain menyembunyikan pembaikan." },
+      { q: "Perlukah saya mencuci dinding sebelum membuat sentuhan?", a: "Sentiasa — habuk, gris dan kesan nikotin pada permukaan menghalang cat sentuhan daripada melekat dengan baik. Cucian dengan detergen lembut dan pengeringan menyeluruh sebelum sebarang cat digunakan adalah wajib." }
+    ],
+    zh: [
+      { q: "室内的墙壁应该多久重新粉刷一次？", a: "走廊和厨房等人流较多的区域通常每 3–5 年需要重新粉刷；使用优质油漆时，卧室和客厅可维持 5–8 年。及早发现并补漆能延长整体周期。" },
+      { q: "在马来西亚，外墙漆为什么会提早损坏？", a: "紫外线老化、背阴墙面长藻，以及细小裂缝让水分渗入漆膜背后，都是主因。在裂缝和藻类扩散前处理，能明显延长外墙重新粉刷的周期。" },
+      { q: "可以只补漆而不整面墙重刷吗？", a: "如果还保留原来的漆色编号和批次，可以。但旧漆上的补漆常会呈现略微不同的光泽。在显眼区域，从墙角到墙角整面重刷才能盖住修补痕迹。" },
+      { q: "补漆前需要先清洗墙壁吗？", a: "一定要。表面的灰尘、油污和尼古丁会让补漆无法牢固附着。用温和清洁剂清洗并彻底晾干后再上漆，这一步不可省略。" }
+    ]
+  },
+  "guidesMaintenance:plumbing-annual-checklist": {
+    ms: [
+      { q: "Apakah yang perlu saya periksa pada sistem paip setiap tahun?", a: "Injap pengasingan (putar buka dan tutup), hos fleksibel (periksa bengkak atau karat), tekanan air (konsisten pada semua kelengkapan), dan sambungan paip yang terlihat (kering bermakna sihat, lembap bermakna perlu siasat)." },
+      { q: "Mengapakah injap pengasingan penting?", a: "Kerana apabila paip pecah pada pukul 2 pagi, injap pengasingan menjadi penentu antara pembaikan terkawal dengan rumah yang banjir — injap yang bertahun-tahun tidak diputar akan tersekat tepat ketika paling diperlukan." },
+      { q: "Perlukah hos fleksibel diganti mengikut jadual?", a: "Ya — hos berjalinan keluli pada pemanas air dan mesin basuh perlu diganti setiap 5 tahun tanpa mengira rupa, kerana kemerosotan dalaman tidak kelihatan sehingga hos pecah." },
+      { q: "Berapakah tekanan air normal di rumah Malaysia?", a: "Lazimnya 2–4 bar pada pili — bawah 2 bar menandakan masalah bekalan atau pam; melebihi 5 bar berisiko merosakkan kelengkapan dan hos fleksibel. Tolok tekanan ringkas pada mana-mana pili menunjukkan keadaan sebenar." }
+    ],
+    zh: [
+      { q: "每年应该检查水管系统的哪些部分？", a: "隔离阀（来回开关）、软管（看是否鼓包或生锈）、水压（各出水口是否一致），以及外露的管接头（干燥代表正常，潮湿代表需要排查）。" },
+      { q: "隔离阀为什么这么重要？", a: "因为当水管在凌晨两点爆裂时，隔离阀决定了是小范围抢修还是全屋被淹。多年没有转动过的阀门，恰恰会在最需要它时卡死。" },
+      { q: "软管是否需要按固定周期更换？", a: "需要。热水器和洗衣机上的不锈钢编织软管无论外观如何，都应每 5 年更换一次，因为内部老化在外观上无法察觉，直到软管爆裂才会发现。" },
+      { q: "马来西亚住宅的正常水压是多少？", a: "水龙头处通常为 2–4 bar。低于 2 bar 可能是供水或水泵问题；高于 5 bar 则可能损坏洁具和软管。用简单的压力表在任一水龙头测量即可判断。" }
+    ]
+  },
+  "guidesMaintenance:ceiling-maintenance-tips": {
+    ms: [
+      { q: "Apakah tanda awal masalah pada siling?", a: "Kesan air (gelang kuning atau coklat selepas hujan), rekahan halus pada sambungan, kendur yang terlihat antara titik rangka, dan tompok kulat pada siling bilik mandi — semuanya menandakan masalah yang bertambah buruk jika diabaikan." },
+      { q: "Bolehkah siling yang kendur runtuh?", a: "Boleh — papan gipsum yang tepu air boleh tertanggal daripada rangka tanpa amaran. Jika anda melihat kendur, jauhkan perabot dan penghuni daripada kawasan itu dan panggil pemeriksaan pada hari yang sama." },
+      { q: "Perlukah saya memeriksa siling selepas setiap musim tengkujuh?", a: "Selepas setiap hujan lebat, lakukan pemeriksaan visual ringkas pada semua siling — terutamanya di bawah bilik mandi, balkoni dan lembah bumbung di atas — untuk menangkap kebocoran ketika masih kecil dan mudah dibaiki." },
+      { q: "Bagaimanakah saya membersihkan kulat daripada siling bilik mandi?", a: "Gunakan peluntur cair atau rawatan kulat komersial, pengudaraan yang baik dan alat perlindungan — tetapi jika kulat kembali dalam beberapa minggu, puncanya ialah lembapan berterusan daripada kebocoran atau pengaliran udara yang tidak mencukupi, bukan sekadar pertumbuhan permukaan." }
+    ],
+    zh: [
+      { q: "天花板出问题的最初征兆是什么？", a: "水渍（雨后出现的黄色或褐色水圈）、接缝处的细小裂缝、龙骨之间可见的下垂，以及卫生间天花板的霉斑，这些都是问题恶化的信号，不应忽视。" },
+      { q: "下垂的天花板会塌下来吗？", a: "会。吸满水的石膏板可能毫无预警地从龙骨上脱落。一旦发现下垂，应把家具和人员移离该区域，并在当天安排检查。" },
+      { q: "每次季风后都需要检查天花板吗？", a: "每次暴雨后都应快速目视检查所有天花板，尤其是卫生间、阳台下方及上方屋面天沟的位置，以便在漏水尚小、容易修复时就发现。" },
+      { q: "怎样清除卫生间天花板上的霉菌？", a: "使用稀释漂白水或市售除霉剂，并做好通风和防护。但若霉菌在数周内复发，原因是漏水或通风不良造成的持续潮湿，而不只是表面滋生。" }
+    ]
+  },
+  "guidesMaintenance:waterproofing-recheck-schedule": {
+    ms: [
+      { q: "Berapa kerapkah kalis air bilik mandi perlu diperiksa?", a: "Sambungan silikon dan garisan grout setiap 6 bulan; ujian takungan air penuh setiap 2–3 tahun atau selepas sebarang kerja ubah suai yang mengganggu lantai. Mengesan sambungan gagal lebih awal mengelakkan kebocoran antara tingkat yang kosnya 10 kali ganda." },
+      { q: "Apakah yang terlibat dalam ujian takungan air?", a: "Sumbat saliran, takungkan air sedalam 20–30 mm, dan periksa siling di bawah pada jam ke-24 dan ke-72 untuk sebarang kelembapan atau kesan air — ujian ringkas yang mengesahkan sama ada membran masih berfungsi." },
+      { q: "Perlukah kalis air bumbung diperiksa sebelum tengkujuh?", a: "Semestinya — pemeriksaan pra-tengkujuh terhadap keadaan membran, kelancaran saliran dan pengedap tebat ialah insurans termurah bagi kebocoran yang dijumpai hujan tengkujuh dalam masa beberapa hari." },
+      { q: "Bolehkah saya mengedap semula sambungan bilik mandi sendiri?", a: "Boleh untuk pembaharuan silikon permukaan — bersihkan, keringkan dan sapukan silikon sanitari berkualiti. Tetapi jika sambungan terus gagal, substrat di belakangnya mungkin lembap atau bergerak, dan ini memerlukan penilaian profesional." }
+    ],
+    zh: [
+      { q: "卫生间防水应该多久检查一次？", a: "硅胶接缝和填缝线每 6 个月检查一次；蓄水测试每 2–3 年或任何翻动地面的装修改动后进行一次。及早发现失效接缝，可避免费用高出 10 倍的楼层间渗漏。" },
+      { q: "蓄水测试怎么做？", a: "堵住地漏，把地面蓄水到 20–30 毫米深，在第 24 和第 72 小时检查楼下天花板有无潮湿或水渍——这个简单测试能确认防水层是否仍然有效。" },
+      { q: "季风前需要检查屋面防水吗？", a: "非常需要。在季风前检查防水层状况、排水是否畅通以及泛水密封，是防范暴雨数天内就会暴露的漏水的最便宜保险。" },
+      { q: "卫生间接缝可以自己重新密封吗？", a: "表面硅胶更新可以自己动手——清洁、晾干并涂上优质卫生级硅胶。但如果接缝反复失效，背后的基层可能已潮湿或移动，就需要专业人员评估。" }
+    ]
+  },
+  "guidesMaintenance:home-handyman-monthly-checklist": {
+    ms: [
+      { q: "Apakah yang perlu saya periksa di sekitar rumah setiap bulan?", a: "Kendalian pintu (selak, engsel, kunci), kunci tingkap dan jeriji, pengukuhan perabot pada unit tinggi, fungsi pengesan asap, dan sebarang barang yang dipasang di dinding yang mungkin longgar akibat gegaran atau kelembapan." },
+      { q: "Mengapakah pintu mengendur di rumah Malaysia?", a: "Kelembapan menyebabkan kayu mengembang dan engsel longgar — pemeriksaan bulanan menangkap kendur awal sebelum pintu bergesel dengan lantai atau selak gagal berfungsi, iaitu ketika pembaikan hanyalah pelarasan lima minit." },
+      { q: "Perlukah perabot tinggi diikat pada dinding?", a: "Sentiasa — rak buku, almari pakaian dan unit TV yang lebih tinggi daripada 1.2 m perlu diikat pada dinding dengan pengikat yang dinilai, terutamanya di rumah beranak kecil. Rak buku yang tumbang ialah risiko keselamatan yang serius." },
+      { q: "Berapa kerapkah pengesan asap perlu diuji?", a: "Setiap bulan — tekan butang ujian dan pastikan penggera berbunyi. Ganti bateri setiap tahun (atau gunakan unit litium 10 tahun), dan ganti keseluruhan pengesan setiap 10 tahun tanpa mengira keadaannya." }
+    ],
+    zh: [
+      { q: "每个月应该检查家里的哪些地方？", a: "门的运作（锁舌、铰链、门锁）、窗锁和铁花、高大家具的固定、烟雾探测器的功能，以及任何可能因震动或潮湿而松动的壁挂物品。" },
+      { q: "马来西亚住宅的门为什么会下垂？", a: "潮湿会让木材膨胀、铰链松动。每月检查能在门刮地板或锁舌失效前发现早期下垂，这时只需五分钟的调整就能修复。" },
+      { q: "高家具需要固定在墙上吗？", a: "一定要。高度超过 1.2 米的书架、衣柜和电视柜都应使用有额定承重的固定件固定到墙上，尤其是有小孩的家庭。倾倒的书架是严重的安全隐患。" },
+      { q: "烟雾探测器应该多久测试一次？", a: "每月一次，按下测试按钮确认警报响起。电池每年更换（或使用 10 年寿命的锂电池型号），整个探测器无论是否仍正常，都应每 10 年更换一次。" }
+    ]
+  },
+  "guidesMaintenance:rainy-season-home-prep": {
+    ms: [
+      { q: "Bilakah musim tengkujuh menjejaskan rumah di KL?", a: "Monsun barat daya (Mei–September) membawa cuaca lebih kering; monsun timur laut (November–Mac) membawa hujan lebat yang menguji kalis air, sistem saliran dan kemasan luaran rumah anda." },
+      { q: "Apakah yang perlu saya periksa sebelum musim hujan?", a: "Talang bumbung dan paip turun (bersih daripada daun dan sampah), pengedap tingkap dan lubang tangis air (mengalir lancar), keadaan cat luaran (rekahan membenarkan air masuk ke belakang filem), dan mana-mana titik bocor dari musim sebelumnya." },
+      { q: "Bolehkah saya membuat kerja kalis air semasa musim hujan?", a: "Pengedap kecemasan boleh dibuat antara kejadian hujan, tetapi pemasangan membran yang betul memerlukan keadaan kering dan masa pengawetan — menjadualkan kalis air sebelum tengkujuh sentiasa lebih bijak." },
+      { q: "Perlukah saya memeriksa saliran jiran juga?", a: "Jika paip turun atau saliran mereka mengalir ke arah hartanah anda, ya — masalah saliran berkongsi adalah lazim di rumah teres, dan longkang jiran yang tersumbat boleh membanjiri tingkat bawah anda walau bagaimana lengkapnya persediaan anda sendiri." }
+    ],
+    zh: [
+      { q: "季风什么时候会影响吉隆坡的房屋？", a: "西南季风（5–9 月）天气较干燥；东北季风（11–3 月）带来考验房屋防水、排水和外墙饰面的暴雨。" },
+      { q: "雨季前应该检查什么？", a: "屋面天沟和落水管（清除树叶和杂物）、窗户密封条和泄水孔（排水顺畅）、外墙漆状况（裂缝会让水渗入漆膜背后），以及以往雨季出现过的任何漏水点。" },
+      { q: "雨季期间可以做防水吗？", a: "两次降雨之间可以做紧急密封，但正规的防水层施工需要干燥条件和养护时间，所以在季风前安排防水始终是更明智的做法。" },
+      { q: "也需要检查邻居的排水吗？", a: "如果邻居的落水管或排水口流向你的物业，就应该检查。排屋常见的共用排水问题中，邻居堵塞的排水沟无论你自己准备得多充分，都可能淹到你的底层。" }
+    ]
+  },
+  "guidesMaintenance:post-renovation-cleanup-checklist": {
+    ms: [
+      { q: "Seberapa teliti pembersihan selepas ubah suai perlu dilakukan?", a: "Habuk pembinaan masuk ke dalam unit penyaman udara, soket elektrik, landasan almari dan saluran tingkap — pembersihan yang betul merangkumi semua ini, bukan sekadar permukaan yang terlihat, sebelum keluarga berpindah semula." },
+      { q: "Perlukah saya memeriksa penyaman udara selepas ubah suai?", a: "Ya — habuk pembinaan menyumbat penapis penyaman udara dan menyelaputi gegelung, mengurangkan kecekapan dan kualiti udara. Cucian penapis dan pemeriksaan gegelung selepas ubah suai mengembalikan unit kepada keadaan asal." },
+      { q: "Apakah yang perlu saya sahkan sebelum kontraktor beredar?", a: "Setiap kelengkapan berfungsi dengan betul, setiap sentuhan cat siap, setiap pengedap silikon bersih dan berterusan, setiap titik elektrik berfungsi, dan setiap permukaan bersih — ini ialah pemeriksaan senarai semak yang menangkap masalah ketika kontraktor masih bertanggungjawab." },
+      { q: "Berapa lamakah pembersihan selepas ubah suai mengambil masa?", a: "Bagi pengubahsuaian rumah teres biasa, 1–2 hari pembersihan teliti termasuk servis penyaman udara, pembersihan landasan tingkap dan habuk bolong — pembersihan secara bajet membiarkan habuk pembinaan bertebaran selama berminggu-minggu." }
+    ],
+    zh: [
+      { q: "装修后的清洁需要做到多彻底？", a: "建筑粉尘会进入空调机组、电源插座、衣柜轨道和窗槽。在家人搬回前，彻底清洁应覆盖所有这些地方，而不只是看得见的表面。" },
+      { q: "装修后需要检查空调吗？", a: "需要。建筑粉尘会堵塞空调过滤网并覆盖盘管，降低效率和空气质量。装修后清洗过滤网并检查盘管，能让机组恢复到施工前的状态。" },
+      { q: "承包商离开前应该确认什么？", a: "每件设施运作正常、每处补漆完成、每条硅胶密封干净连续、每个电源点正常、每个表面干净——这是逐项验收，能在承包商仍承担责任时发现并解决问题。" },
+      { q: "装修后清洁需要多长时间？", a: "一般排屋装修后需要 1–2 天彻底清洁，包括空调保养、窗槽清洁和风口除尘。仅做预算级清洁会让建筑粉尘在室内循环数周。" }
+    ]
+  },
+  "guidesMaintenance:condo-maintenance-checklist": {
+    ms: [
+      { q: "Apakah penyelenggaraan yang khusus untuk kehidupan kondo?", a: "Injap pengasingan unit (penutupan air kecemasan anda), saliran balkoni (kebocoran anda menjadi siling jiran), pintu kalis api (diwajibkan oleh peraturan strata), dan kerja berjadual JMB yang menjejaskan akses unit anda." },
+      { q: "Adakah saya bertanggungjawab terhadap paip di dalam dinding kondo saya?", a: "Umumnya ya — paip dalam sempadan unit anda ialah tanggungjawab anda, manakala riser dan paip kawasan bersama adalah milik JMB. Semak pelan strata anda untuk sempadan yang tepat, kerana ini menentukan siapa yang menanggung kos kebocoran." },
+      { q: "Perlukah saya berkoordinasi dengan JMB sebelum ubah suai?", a: "Sentiasa — kebanyakan kondo memerlukan notis ubah suai, sekatan waktu bekerja, tempahan lif dan kelulusan laluan sisa. Memulakan kerja tanpa koordinasi JMB berisiko didenda dan kerja dihentikan." },
+      { q: "Berapa kerapkah saya perlu memeriksa kalis air balkoni?", a: "Setiap 6 bulan untuk rekahan yang terlihat pada lapisan dasar atau jubin, dan setiap tahun untuk kelancaran saliran — longkang balkoni yang tersumbat semasa hujan lebat boleh membanjiri ruang tamu anda dan unit di bawah serentak." }
+    ],
+    zh: [
+      { q: "公寓生活有哪些特有的维护项目？", a: "单元隔离阀（你的紧急断水开关）、阳台排水（你的漏水会变成邻居的天花板问题）、防火门（分层地契规则要求），以及会影响你单元进出的物业管理公司安排的工作。" },
+      { q: "公寓墙内的水管由我负责吗？", a: "通常是的。你单元范围内的水管由你负责，而竖管和公共区域水管归物业管理公司。请查看分层地契图以确认确切边界，因为这决定了漏水由谁承担。" },
+      { q: "装修前需要与物业协调吗？", a: "一定要。多数公寓要求装修申报、遵守施工时间限制、预约电梯并取得建筑废料清运许可。未经物业协调就开工，可能面临罚款和停工。" },
+      { q: "阳台防水应该多久检查一次？", a: "每 6 个月检查找平层或瓷砖有无可见裂缝，每年检查排水是否顺畅。暴雨时堵塞的阳台排水口，可能同时淹没你的客厅和楼下的单元。" }
+    ]
+  },
+  "guidesMaintenance:landed-house-maintenance-calendar": {
+    ms: [
+      { q: "Apakah penyelenggaraan rumah ber tanah yang tidak diperlukan oleh kondo?", a: "Penyelenggaraan bumbung dan talang, cat luaran dan kalis air, penjagaan dinding sempadan dan pagar, saliran luaran serta kawalan serangga perimeter — semua perkara yang dikendalikan JMB bagi pemilik kondo." },
+      { q: "Berapa kerapkah saya perlu membersihkan talang?", a: "Setiap bulan semasa musim daun gugur dan selepas ribut; sekurang-kurangnya setiap suku tahun. Talang tersumbat melimpah ke papan fasia dan ke ruang siling, menyebabkan kerosakan air yang kemudian dijumpai hujan tengkujuh." },
+      { q: "Perlukah saya menservis bumbung sebelum tengkujuh?", a: "Ya — pemeriksaan bumbung pra-tengkujuh memeriksa jubin, permatang, tebat dan talang lembah bagi kecacatan yang dieksploitasi hujan berangin. Pemeriksaan RM 200 menghalang pembaikan siling RM 5,000." },
+      { q: "Berapa kerapkah rumah ber tanah perlu dicat semula?", a: "Bahagian luar setiap 5–7 tahun bergantung pada pendedahan; bahagian dalam setiap 5–8 tahun. UV dan hujan tropika merosakkan cat luaran lebih cepat berbanding iklim sederhana, menjadikan kitaran cat semula lebih pendek." }
+    ],
+    zh: [
+      { q: "排屋独有而公寓不需要的维护是什么？", a: "屋顶和天沟维护、外墙漆和防水、围墙和大门保养、外部排水以及周边除虫——这些在公寓都由物业管理公司处理。" },
+      { q: "天沟应该多久清理一次？", a: "落叶季和风暴过后每月清理一次，至少每季度一次。堵塞的天沟会溢到檐板和天花空间，造成季风暴雨后才会发现的渗水损害。" },
+      { q: "季风前需要保养屋顶吗？", a: "需要。季风前检查屋顶，重点看瓦片、屋脊、泛水和天沟，找出风吹雨打最容易钻入的缺陷。RM 200 的检查可避免 RM 5,000 的天花板维修。" },
+      { q: "排屋应该多久重新粉刷一次？", a: "外墙视日照情况每 5–7 年一次，室内每 5–8 年一次。热带的紫外线和雨水使外墙漆比温带气候老化更快，因此重新粉刷周期更短。" }
+    ]
+  },
+  "guidesMaintenance:rental-property-turnover-checklist": {
+    ms: [
+      { q: "Apakah yang perlu dibaiki tuan rumah antara penyewa?", a: "Kunci (kemas semula atau tukar silinder), keselamatan elektrik (ujian RCD, keadaan soket), kelengkapan paip (pili, hos, mekanisme tandas), keadaan cat dan pembersihan mendalam — ini ialah perkara yang menjejaskan keselamatan dan daya tarikan sewa." },
+      { q: "Perlukah saya menukar kunci antara penyewa?", a: "Sentiasa — anda tidak tahu berapa salinan kunci lama yang wujud. Mengemas semula kunci adalah murah; laporan pecah masuk daripada bekas pemegang kunci tidak. Kunci digital menjadikannya lebih mudah dengan perubahan kod." },
+      { q: "Bagaimanakah saya mendokumenkan keadaan hartanah?", a: "Ambil gambar setiap bilik, kelengkapan dan pemasangan dengan cop tarikh sebelum penyewa baharu masuk, dan simpan gambar bersama perjanjian sewa. Ini bukti anda untuk potongan deposit pada akhir tempoh sewa." },
+      { q: "Perlukah saya menservis penyaman udara antara penyewa?", a: "Ya — cucian kimia dan pemeriksaan gas antara penyewa memastikan penyewa baharu mewarisi unit yang berfungsi, dan rekod servis melindungi anda jika penyewa kemudian mendakwa penyaman udara rosak semasa masuk." }
+    ],
+    zh: [
+      { q: "租客之间房东应该修理什么？", a: "门锁（重新配匙或更换锁芯）、电气安全（漏电保护测试、插座状况）、卫浴设施（水龙头、软管、马桶配件）、油漆状况和深度清洁——这些都影响安全与出租吸引力。" },
+      { q: "换租客时需要换锁吗？", a: "一定要。你不知道旧钥匙复制了多少份。重新配匙花费不多，而前钥匙持有者闯入的报案却代价高昂。数字门锁更换密码更加方便。" },
+      { q: "怎样记录房屋状况？", a: "在新租客入住前，给每个房间、每件设备和装置拍照并加上日期，与租约一起保存。这是租期结束时扣除押金的有力证据。" },
+      { q: "换租客之间需要保养空调吗？", a: "需要。租客之间做一次化学清洗和雪种检查，能确保新租客接手的是正常运转的机组；保养记录也能在你被指空调入住时已损坏的情况下保护你。" }
     ]
   }
 

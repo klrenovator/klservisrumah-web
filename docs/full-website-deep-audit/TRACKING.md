@@ -81,6 +81,7 @@
 | 2026-08-29 | **Fix Wave 14** — **P3-12 phase 3**: real MS/ZH **server routes** for the 29 cost money pages — the last un-localized surface on the site. Whole cost-guide body extracted into a shared server-compatible `CostPageBody` (locale + `t` as props; internal links composed per tree) used by BOTH the EN client view and the new `LocaleServiceCostPage` server component; new thin route stubs `app/(ms|zh)/…/services/[slug]/cost/page.tsx` (`dynamicParams = false`, 29 static params, true 404 otherwise, self-canonical + full EN/MS/ZH/x-default hreflang, `ogLocale` ms_MY/zh_MY, raster `cost` OG template, localized meta via new `costPage.metaTitle`/`metaDesc` keys ×3). +58 indexable pages (sitemap parity 4,054 → **4,112**); EN cost route's hreflang upgraded from self-referencing to the genuine three-URL cluster; EN route's drifted `COST_FAQS_EN` schema array replaced by the shared `buildCostPageFaqs`/`buildCostPageSiteFaqs` pure builders (P5-02 class drift fixed — 3 of 4 site-wide answers had diverged from the rendered copy; EN SERP strings byte-identical). MS/ZH FAQ 0 now interpolates the localized unit-carrying start price (`kaki persegi` / `平方呎` — P3-05). `buildRelatedCostGuideEntries` moved to `lib/location-bundles.ts` (slim slug+titles; body composes per-tree hrefs). MS/ZH service heroes gained the P4-16 cost-guide button pointing at the localized twin (+58 inbounds). Verified 58/58: html lang, self-canonical, 4-URL hreflang, first-FAQ = rendered H2, **every** marked-up Q&A verbatim in visible HTML, in-language DirectAnswer. All gates PASS: prebuild **329,897 × 0**, type-check, lint 0/0, build **4,139 HTML**, audit:html none/none, audit:links 312,732+56 → 0 broken, seo-head **4,112 = 4,112** (0 dup titles/descs, 0 warnings), schema-size (max non-FAQ 7.1 KB), bp1, raster-og (cost template 174), location-similarity 69.4%, meta, seo:audit (4,139 checked), part5 0 JSON-LD errors, part3 corpus 4,139 pages with BM/ZH leaks 0/0 | ✅ DONE — **PR #191**, CI green (QA job 2m50s: gates/types/lint/SSG build/audits) — See `FIX-WAVE-14-REPORT.md` |
 | 2026-08-30 | **Fix Wave 15** — **P3-12 phase 2, tranche 1**: native editorial MS/ZH translations for all 10 `top` pods (80 localized Q&As); family-qualified registry + resolver wiring across server routes/client fallback/FAQ directory + new prebuild gate. Built corpus verified 20/20 localized pages and 80/80 visible Q&As byte-identical to FAQPage schema. **Phase total 10/146; 136 remain.** | ✅ TRANCHE 1 COMPLETED — PR #193 merged, CI green; phase ⏳ PENDING. See `FIX-WAVE-15-REPORT.md` |
 | 2026-08-30 | **Fix Wave 16** — **P3-12 phase 2, tranche 2**: native editorial MS/ZH translations for all 10 `guides` pods (80 localized Q&As); `guides` promoted to a complete gated family. Built corpus verified 20/20 localized guide pages and 80/80 visible Q&As byte-identical to FAQPage schema. **Phase total 20/146; 126 remain.** | ✅ TRANCHE 2 COMPLETED — PR #195; phase ⏳ PENDING. See `FIX-WAVE-16-REPORT.md` |
+| 2026-08-30 | **Fix Wave 17** — **P3-12 phase 2, tranche 3**: native editorial MS/ZH translations for all 10 `guidesMaintenance` (maintenance-guide) pods (80 localized Q&As); `guidesMaintenance` promoted to a complete gated family. Built corpus verified 20/20 localized pages and 80/80 visible Q&As byte-identical to FAQPage schema. **Phase total 30/146; 116 remain.** | ✅ TRANCHE 3 COMPLETED; phase ⏳ PENDING. See `FIX-WAVE-17-REPORT.md` |
 
 ---
 
@@ -130,11 +131,11 @@ site-wide FAQ answers had diverged from the rendered copy; EN SERP strings
 unchanged). See `FIX-WAVE-14-REPORT.md`.
 
 **With Wave 14 done, no P0 or P1 audit finding remains unblocked, and no
-major content surface is left without a real localized URL.** Waves 15–16 have
+major content surface is left without a real localized URL.** Waves 15–17 have
 started the highest-value unblocked P2 enhancement: authored pod FAQ translation.
-Tranches 1–2 are ✅ (all `top` and `guides` pods); the phase remains ⏳ at
-**20/146**, with `guidesMaintenance` (10 pages) the exact next stop. Everything
-else left is owner-blocked,
+Tranches 1–3 are ✅ (all `top`, `guides` and `guidesMaintenance` pods); the phase
+remains ⏳ at **30/146**, with `seasonal` (8 pages) the exact next stop.
+Everything else left is owner-blocked,
 needs owner data/access, or is a P2/P3 enhancement.
 
 0. **What Wave 14 changed (2026-08-29):** new
@@ -211,10 +212,11 @@ needs owner data/access, or is a P2/P3 enhancement.
    CWV/CrUX, GBP + review verification, owner fact confirmations (reviews,
    founding year, staff, stats), photography (P5-12).
 10. **Next code-level candidates (P2/P3, unblocked) — value order:**
-   **P3-12 phase 2** — ⏳ **IN PROGRESS: 20/146 complete.** Waves 15–16 finished
-   all 10 `top` and all 10 `guides` pods (160 native MS/ZH Q&As; visible HTML =
-   FAQPage schema). **NEXT EXACT STOP: tranche 3, all 10 `guidesMaintenance`
-   pages**, then `seasonal` 8 → `compare` 18 → `brands` 32 →
+   **P3-12 phase 2** — ⏳ **IN PROGRESS: 30/146 complete.** Waves 15–17 finished
+   all 10 `top`, all 10 `guides` and all 10 `guidesMaintenance` pods (240 native
+   MS/ZH Q&As; visible HTML = FAQPage schema). **NEXT EXACT STOP: tranche 4, all
+   8 `seasonal` pages** (source `seasonalCopy`; verify with
+   `scripts/probe-pod-faq-i18n.ts seasonal`), then `compare` 18 → `brands` 32 →
    `commercial` 29 → `residential` 29. Natural editorial translation only,
    no MT; the new prebuild gate must reach 146/146 before completion;
    **P2-16 tranche 3** (remaining 44 problems); **§5.4-B1** BM commercial tree;
@@ -276,7 +278,7 @@ needs owner data/access, or is a P2/P3 enhancement.
 | P1 | P3-18 — llms.txt: list all 29 services (aircon missing) with units; link aeo-faq.txt | ✅ DONE (Fix Wave 10 — 29 service lines with units + aeo-faq.txt link; robots.ts + DuckAssistBot/Applebot-Extended) |
 | P1 | P3-09 — Owner verification of stats/claims (1,200+, 15+ Pros, 120+/120, 30–60 min, "written by local tradesmen") | ⏳ PENDING (owner) |
 | P2 | P3-06 — Blog: FAQPage schema + promote top FAQ to question H2 (216 posts) | ✅ DONE (Fix Wave 10 — 193 EN + 192 MS + 192 ZH blog posts emit FAQPage JSON-LD; top FAQ promoted to H2) |
-| P2 | P3-12 — MS/ZH routes for kept pods (215 details + 10 hubs × 2 locales; i18n data already exists) | 🟡 PARTIAL — Route rollout ✅ DONE (Fix Wave 11); cost routes ✅ DONE (Fix Wave 14, PR #191). **Phase 2 editorial FAQ translation ⏳ PENDING: 20/146 complete** (Fix Waves 15–16 completed all 10 `top` + all 10 `guides` pods = 160 localized Q&As; each tranche's 20/20 built routes visible/schema exact; permanent prebuild gate). **NEXT: all 10 `guidesMaintenance` pages**, then seasonal 8, compare 18, brands 32, commercial 29, residential 29. No MT. |
+| P2 | P3-12 — MS/ZH routes for kept pods (215 details + 10 hubs × 2 locales; i18n data already exists) | 🟡 PARTIAL — Route rollout ✅ DONE (Fix Wave 11); cost routes ✅ DONE (Fix Wave 14, PR #191). **Phase 2 editorial FAQ translation ⏳ PENDING: 30/146 complete** (Fix Waves 15–17 completed all 10 `top` + all 10 `guides` + all 10 `guidesMaintenance` pods = 240 localized Q&As; each tranche's 20/20 built routes visible/schema exact; permanent prebuild gate). **NEXT: all 8 `seasonal` pages**, then compare 18, brands 32, commercial 29, residential 29. No MT. |
 | P2 | P3-15/P3-16/P3-17 — SearchAction vs /search; news-sitemap freshness; Applebot-Extended/DuckAssistBot | 🟡 PARTIAL (Fix Wave 10 — Applebot-Extended/DuckAssistBot done in robots.ts; SearchAction vs /search + news-sitemap still ⏳) |
 | P2 | P3-10/P3-19/P3-13 — NAP in content block; link+expand aeo-faq.txt; hidden empty-state text | ✅ DONE (Fix Wave 10 — NAP strip = P4-15; llms.txt links aeo-faq.txt = P3-18; empty-state removed = P3-02. aeo-faq.txt expansion stays P2 with content work) |
 
