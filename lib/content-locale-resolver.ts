@@ -16,6 +16,7 @@ import {
 } from "@/config/content-locale-data";
 import type { ContentPodFamily } from "@/config/content-locale";
 import type { Translator } from "@/lib/i18n";
+import { CONTENT_POD_FAQ_I18N } from "@/config/content-pod-faq-i18n";
 
 /**
  * lib/content-locale-resolver.ts — resolve a fully-localized pod header + body
@@ -219,14 +220,19 @@ export function resolvePod(
   t: Translator
 ): ResolvedPod {
   const header = resolvePodHeader(page, family, locale);
-  const resolvedBody = localizeContentBody(page, locale, header.title);
+  const resolvedBody = localizeContentBody(page, locale, header.title, family);
   const bullets = resolvedBody.bullets;
   let faqs = resolvedBody.faqs;
   // Commercial pods use premises-focused FAQ templates so a business-property
   // reader is never answered with "…for homes" copy (audience fix carried over
   // from the EN Wave-4 work). Service-derived pages (answers/process) already
   // carry the service's real localized FAQs and are left untouched.
-  if (family === "commercial" && page.faqTopic && !page.serviceDerived) {
+  if (
+    family === "commercial" &&
+    page.faqTopic &&
+    !page.serviceDerived &&
+    !CONTENT_POD_FAQ_I18N[`${family}:${page.slug}`]?.[locale]
+  ) {
     faqs = COMMERCIAL_FAQ_TEMPLATES[locale].map((template) => ({
       q: template.q.replace("{topic}", header.title),
       a: template.a,

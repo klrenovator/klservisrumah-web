@@ -9,6 +9,7 @@ import { localizeContentBody } from "@/lib/content-body-i18n";
 import { faqTemplatesMs, faqTemplatesZh } from "@/config/content-body-i18n";
 import { contentI18nMsFull, contentI18nZhFull } from "@/config/content-i18n";
 import type { Locale } from "@/lib/i18n";
+import type { ContentPodFamily } from "@/config/content-locale";
 import { areaPages } from "@/config/area-data";
 import { suburbPages } from "@/config/suburb-data";
 import { suburbServicePath } from "@/lib/bp1-consolidation";
@@ -82,9 +83,9 @@ function buildDirectory(locale: Locale = "en"): FaqCategory[] {
       return { q: template.q.replace("{topic}", title), a: template.a };
     });
   };
-  const localizedGeneric = (page: (typeof clusterPages)[number]) => {
+  const localizedGeneric = (page: (typeof clusterPages)[number], family?: ContentPodFamily) => {
     if (!localize) return page.faqs;
-    const faqs = localizeContentBody(page, locale, localizedPageTitle(page)).faqs;
+    const faqs = localizeContentBody(page, locale, localizedPageTitle(page), family).faqs;
     return faqs.some((faq, index) => faq.q !== page.faqs[index]?.q || faq.a !== page.faqs[index]?.a)
       ? faqs
       : localizedFallbackFaqs(page.faqs.length, localizedPageTitle(page));
@@ -179,14 +180,14 @@ function buildDirectory(locale: Locale = "en"): FaqCategory[] {
     "guides",
     "How-To Guides",
     "Practical guidance for choosing a contractor, comparing paint brands, and other decision-support topics.",
-    guidePages.flatMap((page) => localizedGeneric(page).map((faq) => ({ ...faq, href: `/guides/${page.slug}`, source: localizedPageTitle(page) })))
+    guidePages.flatMap((page) => localizedGeneric(page, "guides").map((faq) => ({ ...faq, href: `/guides/${page.slug}`, source: localizedPageTitle(page) })))
   );
 
   addCategory(
     "comparisons",
     "Comparisons",
     "Side-by-side comparisons of materials and methods — PU grouting vs tile hacking, PVC vs copper pipes and more.",
-    comparisonPages.flatMap((page) => localizedGeneric(page).map((faq) => ({ ...faq, href: `/compare/${page.slug}`, source: localizedPageTitle(page) })))
+    comparisonPages.flatMap((page) => localizedGeneric(page, "compare").map((faq) => ({ ...faq, href: `/compare/${page.slug}`, source: localizedPageTitle(page) })))
   );
 
   addCategory(
@@ -194,7 +195,7 @@ function buildDirectory(locale: Locale = "en"): FaqCategory[] {
     "Maintenance Checklists",
     "Seasonal and routine maintenance schedules for condos, landed homes and rental properties.",
     maintenancePages.flatMap((page) =>
-      localizedGeneric(page).map((faq) => ({ ...faq, href: `/guides/maintenance/${page.slug}`, source: localizedPageTitle(page) }))
+      localizedGeneric(page, "guidesMaintenance").map((faq) => ({ ...faq, href: `/guides/maintenance/${page.slug}`, source: localizedPageTitle(page) }))
     )
   );
 
@@ -202,35 +203,35 @@ function buildDirectory(locale: Locale = "en"): FaqCategory[] {
     "seasonal",
     "Seasonal Planning",
     "Monsoon prep, festive-season repaints and year-end renovation planning questions.",
-    seasonalPages.flatMap((page) => localizedGeneric(page).map((faq) => ({ ...faq, href: `/seasonal/${page.slug}`, source: localizedPageTitle(page) })))
+    seasonalPages.flatMap((page) => localizedGeneric(page, "seasonal").map((faq) => ({ ...faq, href: `/seasonal/${page.slug}`, source: localizedPageTitle(page) })))
   );
 
   addCategory(
     "commercial",
     "Commercial Properties",
     "Office, retail and strata-facility scheduling and scope questions.",
-    commercialPages.flatMap((page) => localizedGeneric(page).map((faq) => ({ ...faq, href: `/commercial/${page.slug}`, source: localizedPageTitle(page) })))
+    commercialPages.flatMap((page) => localizedGeneric(page, "commercial").map((faq) => ({ ...faq, href: `/commercial/${page.slug}`, source: localizedPageTitle(page) })))
   );
 
   addCategory(
     "residential",
     "Residential Properties",
     "Condo, apartment, terrace and bungalow specific service questions.",
-    residentialPages.flatMap((page) => localizedGeneric(page).map((faq) => ({ ...faq, href: `/residential/${page.slug}`, source: localizedPageTitle(page) })))
+    residentialPages.flatMap((page) => localizedGeneric(page, "residential").map((faq) => ({ ...faq, href: `/residential/${page.slug}`, source: localizedPageTitle(page) })))
   );
 
   addCategory(
     "brands",
     "Brands & Materials",
     "Application questions for the paint, pipe, gypsum board and waterproofing brands we work with.",
-    brandPages.flatMap((page) => localizedGeneric(page).map((faq) => ({ ...faq, href: `/brands/${page.slug}`, source: localizedPageTitle(page) })))
+    brandPages.flatMap((page) => localizedGeneric(page, "brands").map((faq) => ({ ...faq, href: `/brands/${page.slug}`, source: localizedPageTitle(page) })))
   );
 
   addCategory(
     "top",
     "Buying Considerations",
     "What to check before hiring a painter, plumber, ceiling or waterproofing contractor in KL & Selangor.",
-    topPages.flatMap((page) => localizedGeneric(page).map((faq) => ({ ...faq, href: `/top/${page.slug}`, source: localizedPageTitle(page) })))
+    topPages.flatMap((page) => localizedGeneric(page, "top").map((faq) => ({ ...faq, href: `/top/${page.slug}`, source: localizedPageTitle(page) })))
   );
 
   return categories;

@@ -8,6 +8,8 @@ import {
   faqTemplatesMs,
   faqTemplatesZh
 } from "@/config/content-body-i18n";
+import { CONTENT_POD_FAQ_I18N } from "@/config/content-pod-faq-i18n";
+import type { ContentPodFamily } from "@/config/content-locale";
 
 type BodyLocale = "ms" | "zh";
 
@@ -35,7 +37,8 @@ export type LocalizedBody = {
 export function localizeContentBody(
   page: GenericContentPage,
   locale: BodyLocale,
-  localizedTitle?: string
+  localizedTitle?: string,
+  family?: ContentPodFamily
 ): LocalizedBody {
   const service = page.relatedServiceSlug ? servicesData[page.relatedServiceSlug] : undefined;
   const localizedService = service ? getLocalizedService(service, locale) : undefined;
@@ -63,6 +66,14 @@ export function localizeContentBody(
   if (!page.faqTopic) {
     return { bullets, faqs: page.faqs };
   }
+
+  // P3-12 phase 2: prefer the page-specific editorial translation whenever a
+  // family-qualified set exists. Family qualification is mandatory because
+  // commercial and residential pages deliberately share slugs.
+  const authoredFaqs = family
+    ? CONTENT_POD_FAQ_I18N[`${family}:${page.slug}`]?.[locale]
+    : undefined;
+  if (authoredFaqs) return { bullets, faqs: authoredFaqs };
 
   const topic = localizedTitle ?? page.faqTopic;
   const templates = locale === "ms" ? faqTemplatesMs : faqTemplatesZh;

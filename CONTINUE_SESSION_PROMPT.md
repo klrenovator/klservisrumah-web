@@ -6,6 +6,22 @@
 
 ## Current State (Update this each session)
 
+> **Fix Wave 15 tranche 1 COMPLETE (2026-08-30); P3-12 phase 2 remains ⏳:**
+> all 10 `top` buying-consideration pods now have native editorial MS/ZH
+> translations of their 4 authored English FAQs (**10 pages × 4 FAQs × 2 = 80
+> localized Q&As**). New family-qualified registry:
+> `config/content-pod-faq-i18n.ts`; `localizeContentBody`/`resolvePod` now prefer
+> the editorial set over generic templates; the real server routes, EN client
+> fallback and localized `/faq` directory all pass the same family identity.
+> New `audit:content-pod-faq-i18n` prebuild gate validates coverage, structure,
+> language and production-resolver wiring. Production build: 4,139 HTML; direct
+> probe: 20/20 MS/ZH top pages and 80/80 Q&As visible and byte-identical to
+> FAQPage schema. All corpus gates pass. **Exact next stop: tranche 2, translate
+> all 10 `guides` pages**, then maintenance 10 → seasonal 8 → compare 18 →
+> brands 32 → commercial 29 → residential 29. Current phase total **10/146;
+> 136 remain**. Do not mark complete until the gate reports 146/146; no MT or
+> generic replacement. Full log: `FIX-WAVE-15-REPORT.md`.
+>
 > **Fix Wave 14 COMPLETE (2026-08-29): P3-12 phase 3** — the 29
 > `/services/<svc>/cost` money pages (the site's highest-intent "how much"
 > URLs, and the LAST un-localized surface) now have **real MS/ZH server
@@ -35,10 +51,12 @@
 > seo:audit, part5 0 errors, part3 corpus 4,139 pages BM/ZH leaks 0/0.
 > Full log: `docs/full-website-deep-audit/FIX-WAVE-14-REPORT.md`.
 >
-> **NEXT (P3-12 phase 2):** native MS/ZH translation of the 146 authored
-> per-pod FAQ sets (no MT) — see TRACKING.md item 10 for the full value-
-> ordered candidate list (P2-16 tranche 3, §5.4-B1, P4-10, P4-14, P4-08,
-> P4-16 footer tiering, P3-15/P3-16, P3-19).
+> **NEXT (P3-12 phase 2, tranche 2):** native MS/ZH editorial translation
+> of all 10 authored `guides` FAQ sets. Start in `guideCopy` inside
+> `config/content-pod-copy-batch2.ts`; add `guides:<slug>` records to
+> `CONTENT_POD_FAQ_I18N`; add `guides` to `COMPLETED_FAMILIES` only after all
+> 10 pass. Phase status is 10/146, not complete. See TRACKING.md item 10 for
+> the remaining fixed family order and later candidates.
 >
 > **Fix Wave 13 COMPLETE (2026-08-29, owner request):** awning start-from
 > prices + market-rate verification. `awning-installation` — the last
