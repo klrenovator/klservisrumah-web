@@ -16,7 +16,8 @@
 > tranche 3, all 10 `guidesMaintenance` pages**, then seasonal 8 → compare 18
 > → brands 32 → commercial 29 → residential 29. Current phase total 20/146;
 > **126 remain**. No MT, generic replacement or premature phase completion.
-> Full log: `docs/full-website-deep-audit/FIX-WAVE-16-REPORT.md`.
+> GitHub: commit `6747afb`, PR #195. Full log:
+> `docs/full-website-deep-audit/FIX-WAVE-16-REPORT.md`.
 >
 > **Fix Wave 14 COMPLETE (2026-08-29): P3-12 phase 3** — the 29
 > `/services/<svc>/cost` money pages (the site's highest-intent "how much"

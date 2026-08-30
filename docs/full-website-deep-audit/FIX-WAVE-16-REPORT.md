@@ -4,6 +4,8 @@
 
 **Branch:** `arena/01a0508e-klservisrumah-web`
 
+**GitHub:** commit `6747afb`, PR #195
+
 **Tracker source:** `TRACKING.md` → P3-12 phase 2 → exact next stop after Wave 15.
 
 > **Result:** ✅ **TRANCHE 2 COMPLETED** — all 10 `/guides/*` pages now render
