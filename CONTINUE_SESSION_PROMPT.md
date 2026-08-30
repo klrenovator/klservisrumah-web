@@ -6,18 +6,21 @@
 
 ## Current State (Update this each session)
 
-> **Fix Wave 18 tranche 4 COMPLETE (2026-08-30); P3-12 phase 2 remains ⏳:**
-> all 8 `seasonal` pods now have native editorial MS/ZH translations of their
-> four authored English FAQs (**64 localized Q&As**). Together with Wave 15's
-> `top`, Wave 16's `guides` and Wave 17's `guidesMaintenance` families, the
-> permanent gate reports **38/146 pods and 304 localized Q&As**; completed
-> families are `top`, `guides`, `guidesMaintenance` and `seasonal`. Production
-> build: 4,139 HTML; direct probe: 16/16 MS/ZH seasonal pages and 64/64 Q&As
-> visible and byte-identical to FAQPage schema. Full corpus gates pass.
-> **Exact next stop: tranche 5, all 18 `compare` pages**, then brands 32 →
-> commercial 29 → residential 29. Current phase total 38/146; **108 remain**.
+> **Fix Wave 19 tranche 5 COMPLETE (2026-08-30); P3-12 phase 2 remains ⏳:**
+> all 18 `compare` pods now have native editorial MS/ZH translations of their
+> four authored English FAQs (**144 localized Q&As**). Together with Wave 15's
+> `top`, Wave 16's `guides`, Wave 17's `guidesMaintenance` and Wave 18's
+> `seasonal` families, the permanent gate reports **56/146 pods and 448
+> localized Q&As**; completed families are `top`, `guides`,
+> `guidesMaintenance`, `seasonal` and `compare`. Production build: 4,139 HTML;
+> direct probe: 36/36 MS/ZH compare pages and 144/144 Q&As visible and
+> byte-identical to FAQPage schema. Full corpus gates pass.
+> **Exact next stop: tranche 6, all 32 `brands` pages** (sources `brandCopy`
+> 12 + `airconBrandCopy` 20, both in `config/content-pod-copy-batch2.ts`),
+> then commercial 29 → residential 29. Current phase total 56/146;
+> **90 remain**.
 > No MT, generic replacement or premature phase completion.
-> Full log: `docs/full-website-deep-audit/FIX-WAVE-18-REPORT.md`.
+> Full log: `docs/full-website-deep-audit/FIX-WAVE-19-REPORT.md`.
 >
 > **Fix Wave 14 COMPLETE (2026-08-29): P3-12 phase 3** — the 29
 > `/services/<svc>/cost` money pages (the site's highest-intent "how much"
