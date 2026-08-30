@@ -10,6 +10,24 @@ import { NapContactStrip } from "@/components/content/nap-contact-strip";
 import { InternalLinkGrid } from "@/components/internal-link-grid";
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
+import type { ContentPodFamily } from "@/config/content-locale";
+
+const POD_FAMILY_BY_CATEGORY: Record<string, ContentPodFamily> = {
+  "AI Answer Guide": "answers",
+  "Brand Guide": "brands",
+  Commercial: "commercial",
+  Comparison: "compare",
+  Painting: "guides",
+  Plumbing: "guides",
+  Waterproofing: "guides",
+  Ceiling: "guides",
+  Handyman: "guides",
+  "Maintenance Guide": "guidesMaintenance",
+  Process: "process",
+  Residential: "residential",
+  Seasonal: "seasonal",
+  "Top Considerations": "top",
+};
 
 type GenericContentI18nLookup = Partial<Pick<GenericContentPage, "title" | "intro" | "category">> | null;
 type GenericContentBody = { bullets: string[]; faqs: { q: string; a: string }[] } | null;
@@ -44,7 +62,14 @@ export function GenericContentPageView({ page }: { page: GenericContentPage }) {
             ? dictionaries.contentI18nMsFull[page.slug] ?? dictionaries.contentI18n[page.slug]
             : dictionaries.contentI18nZhFull[page.slug] ?? dictionaries.contentI18nZh[page.slug];
         setRemoteI18n(lookup ?? null);
-        setRemoteBody(body.localizeContentBody(page, lang, lookup?.title as string | undefined));
+        setRemoteBody(
+          body.localizeContentBody(
+            page,
+            lang,
+            lookup?.title as string | undefined,
+            POD_FAMILY_BY_CATEGORY[page.category]
+          )
+        );
       }
     );
 

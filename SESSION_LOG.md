@@ -2967,3 +2967,48 @@ self-canonical, en-MY/ms-MY/zh-MY/x-default hreflang, localized FAQs + matching 
 - **Still owner-blocked:** P4-09/P2-21/P3-09 (reviews + stats, GBP), P4-13/P2-C4/BP-1 phase 2
   (GSC keep-set), P4-11 named team page (owner bios), P5-12 photography, P1-C3 www/non-www,
   CI `workflows` permission (patch at `docs/full-website-deep-audit/BP-1-ci-audit-bp1.patch`).
+
+---
+
+## Session — 2026-08-30 — FIX WAVE 15 (P3-12 phase 2, tranche 1)
+
+### Scope and tracker decision
+- Read `docs/full-website-deep-audit/TRACKING.md` before changing code. Parts 1–5,
+  BP-1 phase 1, CF-4 and Fix Waves 1–14 were complete; owner-blocked P0/P1 work
+  remained unavailable. The tracker's first unblocked candidate was **P3-12
+  phase 2**, native MS/ZH translation of 146 authored pod FAQ sets (no MT).
+- Completed the first whole-family tranche: all **10 `top` pods**, 4 FAQs each,
+  2 locales = **80 native localized Q&As**. Full phase remains ⏳ at **10/146**.
+
+### Implementation
+- New `config/content-pod-faq-i18n.ts`: editorial FAQ registry keyed by
+  `${family}:${slug}` to prevent commercial/residential slug collisions.
+- `localizeContentBody(page, locale, title, family)` now prefers editorial sets;
+  `resolvePod` passes family and retains commercial's premises-safe template only
+  where no authored translation exists.
+- EN client fallback now maps content category→pod family; localized FAQ directory
+  now passes family for all eligible pod sections. Thus route HTML, FAQPage schema,
+  FAQ hub and fallback view share one source.
+- New `scripts/validate-content-pod-faq-i18n.ts` + package command, wired into
+  `prebuild`: real-key coverage, complete-family coverage, count parity, minimum
+  depth, no unchanged English/obvious leaks, Chinese-script presence, duplicate
+  questions and production-resolver identity. Gate reports 10/146 honestly.
+- GitHub: commit `008ee08`, PR #193. Full evidence: `docs/full-website-deep-audit/FIX-WAVE-15-REPORT.md`.
+
+### Verification
+- `npm ci`: 177 packages audited, 0 vulnerabilities.
+- lint 0/0; type-check PASS; full prebuild PASS incl. estimator harness **329,897
+  assertions × 0 failures**; production build PASS (**4,139 HTML**).
+- Dedicated built probe: 20/20 `/ms/top/*` + `/zh/top/*` pages; all 80 translated
+  Q&As visible and byte-identical to FAQPage schema.
+- `audit:html` 0/0; links 312,732+56, 0 broken; seo-head 4,112 indexable = 4,112
+  sitemap, 0 duplicate metadata/warnings; schema-size PASS (max non-FAQ 7.1 KB);
+  BP-1 PASS; location similarity max 69.4%; raster OG/meta/seo audits PASS.
+
+### Exact continuation
+- **Next: P3-12 phase 2 tranche 2 — all 10 `guides` pages.** Source is
+  `guideCopy` in `config/content-pod-copy-batch2.ts`; add `guides:<slug>` sets,
+  then add `guides` to the gate's `COMPLETED_FAMILIES` only when all 10 pass.
+- Fixed remaining order: guides 10 → guidesMaintenance 10 → seasonal 8 → compare
+  18 → brands 32 → commercial 29 → residential 29. **136 remain.** No MT,
+  template replacement or premature ✅ for the whole phase.
