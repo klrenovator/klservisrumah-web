@@ -3100,3 +3100,59 @@ self-canonical, en-MY/ms-MY/zh-MY/x-default hreflang, localized FAQs + matching 
 - Fixed remaining order: seasonal 8 → compare 18 → brands 32 → commercial 29 →
   residential 29. **116 remain.** No MT, generic replacement or premature ✅
   for the whole phase.
+
+## Session — 2026-08-30 — FIX WAVE 18 (P3-12 phase 2, tranche 4)
+
+### Scope and tracker decision
+- Read `docs/full-website-deep-audit/TRACKING.md`, Wave 17's report, the
+  continuation prompt and prior session log before changing code. Their exact
+  next stop was **all 8 `seasonal` FAQ sets**; completed work was not
+  repeated.
+- Completed the whole family: 8 pages × 4 FAQs × 2 locales = **64 native
+  localized Q&As**. Full phase remains ⏳ at **38/146**.
+
+### Implementation
+- Added 8 `seasonal:<slug>` editorial records to
+  `config/content-pod-faq-i18n.ts`, preserving each source FAQ's concrete
+  specifics (October start for the November–March northeast monsoon; 30-minute
+  gutter clearing; 2–3 dry days for membrane curing; shared drainage and
+  neighbour coordination in terrace houses; May–September dry painting window,
+  4–6 week booking lead, 2–4 hour fresh-paint rain window; 20–30 mm ponding at
+  24/72 h; 6–8 week pre-CNY/Raya booking and the 2-week touch-dry vs 2–4 week
+  full-cure paint timing; 8–10 week Raya makeover; December–January contractor
+  window with JMB holiday closures; and the emergency-leak protect/photograph/
+  temporary-seal/notify-insurer sequence).
+- The gate's duplicate-question check caught three overlaps with Wave 17's
+  `guidesMaintenance:rainy-season-home-prep` (a genuinely similar pre-monsoon
+  topic); reworded the seasonal side questions while keeping answers faithful
+  to the English source.
+- Promoted `seasonal` into the validator's `COMPLETED_FAMILIES` only after
+  complete MS/ZH count and resolver parity passed. Existing
+  route/schema/fallback wiring remains the single source; no generic template
+  or machine translation added.
+- Reused the built-corpus probe `scripts/probe-pod-faq-i18n.ts` (`seasonal`).
+- Full evidence: `docs/full-website-deep-audit/FIX-WAVE-18-REPORT.md`.
+
+### Verification
+- `npm ci`: 176 packages, 0 vulnerabilities; lint 0/0; type-check PASS.
+- Full prebuild PASS including `audit:content-pod-faq-i18n` (**38/146 pods,
+  304 localized Q&As**; completed families top, guides, guidesMaintenance,
+  seasonal) and estimator harness **329,897 assertions × 0**.
+- Production build PASS (**4,139 HTML**; URL count unchanged — this tranche
+  edits existing localized routes' FAQ content only). Dedicated built probe:
+  16/16 `/ms/seasonal/*` + `/zh/seasonal/*` pages; all 64 translated Q&As
+  visible and byte-identical to FAQPage schema.
+- `audit:html` 0/0 (4,139 pages); links 312,732+56, 0 broken; seo-head 4,112
+  indexable = 4,112 sitemap, 0 duplicate metadata/warnings; schema-size PASS;
+  BP-1 PASS (NAP 62.8%); location similarity max 69.4%; raster OG (0 SVG, all 8
+  templates); meta/seo/part5 audits PASS (0 JSON-LD parse errors, 0 duplicate
+  titles/H1s); part3 corpus 4,139 pages, BM/ZH leaks 0/0.
+
+### Exact continuation
+- **Next: P3-12 phase 2 tranche 5 — all 18 `compare` pages.** Source is
+  `comparisonCopy` in `config/content-pod-copy-batch2.ts`; add `compare:<slug>`
+  sets, then add `compare` to the gate's `COMPLETED_FAMILIES` only when all 18
+  pass. Verify with `scripts/probe-pod-faq-i18n.ts compare`.
+- Fixed remaining order: compare 18 → brands 32 → commercial 29 →
+  residential 29. **108 remain.** No MT, generic replacement or premature ✅
+  for the whole phase.
