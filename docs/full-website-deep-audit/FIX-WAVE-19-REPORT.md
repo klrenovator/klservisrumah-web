@@ -4,7 +4,7 @@
 
 **Branch:** `arena/01a05208-klservisrumah-web`
 
-**GitHub:** PR opened this session; CI pending at commit time.
+**GitHub:** PR #200 (merged), CI green (QA job 3m31s: gates/types/lint/SSG build/audits).
 
 **Tracker source:** `TRACKING.md` → P3-12 phase 2 → exact next stop after Wave 18.
 
