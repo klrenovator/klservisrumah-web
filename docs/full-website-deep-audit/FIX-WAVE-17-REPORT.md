@@ -4,6 +4,8 @@
 
 **Branch:** `arena/01a0509c-klservisrumah-web`
 
+**GitHub:** PR #196 (merged), CI green.
+
 **Tracker source:** `TRACKING.md` → P3-12 phase 2 → exact next stop after Wave 16.
 
 > **Result:** ✅ **TRANCHE 3 COMPLETED** — all 10 `/guides/maintenance/*` pages
