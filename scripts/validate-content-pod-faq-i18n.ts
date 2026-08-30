@@ -2,8 +2,8 @@
  * P3-12 phase-2 regression gate for page-specific content-pod FAQ translations.
  *
  * The rollout is editorial and tranche-based. TOP, GUIDES,
- * GUIDESMAINTENANCE, SEASONAL and COMPARE are the complete
- * Wave-15/16/17/18/19 tranches; adding a key outside them is allowed only
+ * GUIDESMAINTENANCE, SEASONAL, COMPARE and BRANDS are the complete
+ * Wave-15/16/17/18/19/20 tranches; adding a key outside them is allowed only
  * for a real authored pod. Once a family is completed, add it to
  * COMPLETED_FAMILIES so a missing translation can never silently fall back
  * to the four generic FAQs.
@@ -17,7 +17,7 @@ import type { Translator } from "@/lib/i18n";
 // keeps this source gate independent of Node's JSON import-attribute support.
 const gateTranslator = ((key: string) => key) as Translator;
 
-const COMPLETED_FAMILIES = new Set<ContentPodFamily>(["top", "guides", "guidesMaintenance", "seasonal", "compare"]);
+const COMPLETED_FAMILIES = new Set<ContentPodFamily>(["top", "guides", "guidesMaintenance", "seasonal", "compare", "brands"]);
 const problems: string[] = [];
 const valid = new Map<string, (typeof POD_FAMILIES)[ContentPodFamily]["pages"][number]>();
 for (const [family, def] of Object.entries(POD_FAMILIES) as [ContentPodFamily, (typeof POD_FAMILIES)[ContentPodFamily]][]) {
