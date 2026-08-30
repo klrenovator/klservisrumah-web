@@ -6,32 +6,32 @@
 
 ## Current State (Update this each session)
 
-> **P2-16 ✅ COMPLETE (2026-08-30, Fix Wave 23, PR #206 merged):** the final
-> 44 un-enriched problem pages (thinness order from
-> `scripts/p2-16-wordcount.ts`) received the full native EN/BM/中文 depth set —
-> 132 hand-authored blocks (44 × `overview`/`diyChecks[4]`/`prevention[4]`/
-> `costDetail`, prices anchored to each record's published
-> `costRange`/FAQ figures, no MT) across `config/problem-data.ts` (9),
-> `config/problem-data-extra.ts` (35) and `config/problem-body-i18n.ts`
-> (44 MS + 44 ZH). **All 74/74 indexable problem pages are now enriched**
-> (min 242 / mean 471 / max 728 config words; was mean 383, 15 pages ≤233),
-> and the new permanent `audit:problem-i18n` check 10 fails the build if any
-> indexable problem ever ships thin again. Production build: 4,139 HTML,
-> sitemap parity 4,112; all gates pass (prebuild 329,897 × 0).
-> Also closed earlier today: **P3-12 PHASE 2 ✅ COMPLETE** (Waves 15–22, PR
-> #203) — 146/146 pods, 1,168 localized Q&As across all eight families,
-> permanently gated by `audit:content-pod-faq-i18n`.
-> **Do not re-open P3-12 or P2-16** — both are closed, not pending.
-> **Exact next stop: §5.4-B1 — BM commercial tree** (Part 5 §5.4-B1, the
-> largest remaining content gap). Re-scope against the post-Wave-14 state
-> first: MS cost/problem/pod/emergency/blog routes now exist, so the
-> residual gap is the `harga`-family naming/convention,
-> near-me-consolidated MS coverage and BM transactional query coverage.
-> Full P2/P3 value queue in TRACKING.md item 10
-> (P4-10 case studies, P4-14 per-area `Service` entities, P4-08 CTA,
-> P4-16 footer tiering, P3-15/16, P3-19).
-> Full logs: `docs/full-website-deep-audit/FIX-WAVE-23-REPORT.md` (also
-> `FIX-WAVE-21-REPORT.md` / `FIX-WAVE-22-REPORT.md`).
+> **§5.4-B1 ✅ COMPLETE (2026-08-30, Fix Wave 24):** The Bahasa Melayu
+> Pricing Hub (`/ms/harga`) and Chinese Pricing Hub (`/zh/pricing`) were
+> authored and linked in a reciprocal 3-URL hreflang cluster with `/pricing`.
+> All `harga` transactional queries (`/ms/harga/*`, `/ms/pricing`,
+> `/ms/services/*/harga`) 301-redirect to canonical localized money pages
+> (`/ms/services/*/cost`). `LocalePricingContent` updated to keep visitors
+> inside their active language tree. Sitemap updated (+2 indexable pages =
+> **4,114** total). All gates PASS: prebuild **329,897 × 0**, type-check,
+> lint 0/0. Full log: `docs/full-website-deep-audit/FIX-WAVE-24-REPORT.md`.
+>
+> **Exact next stop: Priority Work Queue Value Queue** (P4-10 case studies
+> with photos + itemized cost, P4-14 per-area `Service` entities in
+> LocalBusiness schema, P4-08 CTA rewording, P4-16 footer tiering, P3-15/16).
+>
+> **Earlier completed highlights:**
+> - **P2-16 ✅ COMPLETE (Fix Wave 23):** all 74/74 indexable problem pages
+>   enriched with EN/MS/ZH native depth sets (`overview`, `diyChecks[4]`,
+>   `prevention[4]`, `costDetail`). Permanent gate `audit:problem-i18n`
+>   check 10 protects all 74 pages. See `FIX-WAVE-23-REPORT.md`.
+> - **P3-12 PHASE 2 ✅ COMPLETE (Fix Waves 15–22, PR #203):** 146/146 pods,
+>   1,168 localized Q&As across all eight families, permanently gated by
+>   `audit:content-pod-faq-i18n`.
+> - **P3-12 PHASE 3 ✅ COMPLETE (Fix Wave 14):** 29 `/services/<slug>/cost`
+>   money pages localized in MS/ZH (`/ms/services/<slug>/cost` +
+>   `/zh/services/<slug>/cost`).
+> - **Do not re-open P3-12, P2-16, or §5.4-B1** — all are closed.
 >
 > **Fix Wave 14 COMPLETE (2026-08-29): P3-12 phase 3** — the 29
 > `/services/<svc>/cost` money pages (the site's highest-intent "how much"

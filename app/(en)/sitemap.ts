@@ -94,7 +94,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
       languages: { en: "/services", ms: "/ms/services", zh: "/zh/services" },
     },
-    { path: "/pricing", priority: 0.82 },
+    {
+      path: "/pricing",
+      priority: 0.82,
+      languages: { en: "/pricing", ms: "/ms/harga", zh: "/zh/pricing" },
+    },
+    {
+      path: "/ms/harga",
+      priority: 0.8,
+      languages: { en: "/pricing", ms: "/ms/harga", zh: "/zh/pricing" },
+    },
+    {
+      path: "/zh/pricing",
+      priority: 0.8,
+      languages: { en: "/pricing", ms: "/ms/harga", zh: "/zh/pricing" },
+    },
     { path: "/areas", priority: 0.8 },
     { path: "/blog", priority: 0.7 },
     { path: "/faq", priority: 0.7 },
