@@ -3156,3 +3156,64 @@ self-canonical, en-MY/ms-MY/zh-MY/x-default hreflang, localized FAQs + matching 
 - Fixed remaining order: compare 18 → brands 32 → commercial 29 →
   residential 29. **108 remain.** No MT, generic replacement or premature ✅
   for the whole phase.
+
+## Session — 2026-08-30 — FIX WAVE 19 (P3-12 phase 2, tranche 5)
+
+### Scope and tracker decision
+- Read `docs/full-website-deep-audit/TRACKING.md`, Wave 18's report, the
+  continuation prompt and prior session log before changing code. Their exact
+  next stop was **all 18 `compare` FAQ sets**; completed work (Parts 1–5,
+  Fix Waves 1–18, BP-1 phase 1, CF-4) was not repeated.
+- Completed the whole family: 18 pages × 4 FAQs × 2 locales = **144 native
+  localized Q&As**. Full phase remains ⏳ at **56/146**.
+
+### Implementation
+- Added 18 `compare:<slug>` editorial records to
+  `config/content-pod-faq-i18n.ts`, preserving each source FAQ's concrete
+  specifics (PU injection vs full hacking 3–5× cost and 1–2 vs up-to-5-year
+  warranty gap; plaster premium 30–50% and gypsum single-coat joint failure;
+  Weathershield/Weatherbond 5–7-year claims and matched-system warranty
+  rules; cementitious 10–15 vs acrylic 3–5-year cycles; CPVC ~82°C and
+  SIRIM QAS; hollow-board anchor load paths; finish/sheen behaviour under
+  downlighting; putty 1–2 mm vs skim 3–5 mm; brick/gypsum/glass sound and
+  slab-load limits; DIY 2–3 weekend reality; public-liability and JMB
+  exposure; negative-side injection vs positive-side membrane; fixed-quote
+  plus capped-hourly extras; drywall 2–3 vs glass 5–7 days; torch-on 2–3×
+  price but 3× life; wash 6–12 months vs overhaul 2–3 years; inverter 30–50%
+  savings and 6+ hour payback; cassette 250–350 mm void depth).
+- Question phrasing deliberately steered around the 304 already-published
+  MS/ZH questions (compare shares waterproofing/ceiling/paint-brand/pipe/
+  anchor/handyman ground with them) — the gate's duplicate-question check
+  passed with zero reword cycles.
+- Promoted `compare` into the validator's `COMPLETED_FAMILIES` only after
+  complete MS/ZH count and resolver parity passed. Existing
+  route/schema/fallback wiring remains the single source; no generic template
+  or machine translation added.
+- Reused the built-corpus probe `scripts/probe-pod-faq-i18n.ts` (`compare`).
+- Full evidence: `docs/full-website-deep-audit/FIX-WAVE-19-REPORT.md`.
+
+### Verification
+- `npm ci`: 176 packages, 0 vulnerabilities; lint 0/0; type-check PASS.
+- Full prebuild PASS including `audit:content-pod-faq-i18n` (**56/146 pods,
+  448 localized Q&As**; completed families top, guides, guidesMaintenance,
+  seasonal, compare) and estimator harness **329,897 assertions × 0**.
+- Production build PASS (**4,139 HTML**; URL count unchanged — this tranche
+  edits existing localized routes' FAQ content only). Dedicated built probe:
+  36/36 `/ms/compare/*` + `/zh/compare/*` pages; all 144 translated Q&As
+  visible and byte-identical to FAQPage schema.
+- `audit:html` 0/0 (4,139 pages); links 312,732+56, 0 broken; seo-head 4,112
+  indexable = 4,112 sitemap, 0 duplicate metadata/warnings; schema-size PASS;
+  BP-1 PASS (NAP 62.8%); location similarity max 68.8%; raster OG PASS;
+  meta/seo/part5 audits PASS (0 JSON-LD parse errors, 0 duplicate
+  titles/H1s); part3 corpus 4,139 pages, BM/ZH leaks 0/0; compare pages carry
+  `questionH3:4`, `faqQuestions:4` on the localized routes.
+
+### Exact continuation
+- **Next: P3-12 phase 2 tranche 6 — all 32 `brands` pages.** Sources are
+  `brandCopy` (12 brand guides) and `airconBrandCopy` (20 aircon brand
+  pages), both in `config/content-pod-copy-batch2.ts`; add `brands:<slug>`
+  sets, then add `brands` to the gate's `COMPLETED_FAMILIES` only when all
+  32 pass. Verify with `scripts/probe-pod-faq-i18n.ts brands`.
+- Fixed remaining order: brands 32 → commercial 29 → residential 29.
+  **90 remain.** No MT, generic replacement or premature ✅ for the whole
+  phase.

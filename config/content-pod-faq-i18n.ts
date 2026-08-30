@@ -6,8 +6,8 @@
  * Coverage is intentionally gated by scripts/validate-content-pod-faq-i18n.ts.
  * Waves 15–16 cover the complete `top` and `guides` families; Wave 17 adds the
  * complete `guidesMaintenance` family; Wave 18 adds the complete `seasonal`
- * family (38 pages, 304 translated Q&As in all). Remaining families stay
- * explicitly pending in TRACKING.
+ * family; Wave 19 adds the complete `compare` family (56 pages, 448 translated
+ * Q&As in all). Remaining families stay explicitly pending in TRACKING.
  */
 
 export type LocalizedPodFaq = { q: string; a: string };
@@ -545,6 +545,258 @@ export const CONTENT_POD_FAQ_I18N: Record<string, LocalizedPodFaqSet> = {
       { q: "下雨时可以修漏水吗？", a: "紧急遮盖和屋内接水可以马上进行，但永久修复需要表面干透。专业人员可以在两次降雨之间涂抹临时密封，在正式修复前减少损失。" },
       { q: "应该先报保险还是先维修？", a: "先报保险。在永久维修前，先拍下损坏情况、漏水源头和受损财物，再通知保险公司。在保险定损之前完成的维修，可能不在理赔范围内。" },
       { q: "怎样防止下次季风再出现同样的漏水？", a: "紧急处理结束后，全面检查屋顶或防水层找出根本原因。紧急密封只是临时措施，永久修复应安排在下一次干爽窗口期进行。" }
+    ]
+  },
+  "compare:pu-grouting-vs-tile-hacking": {
+    ms: [
+      { q: "Bolehkah grouting PU membaiki kebocoran bilik mandi secara kekal?", a: "Bagi retak rambut pada konkrit dan kebocoran sendi, ya — resin PU mengembang apabila bersentuhan dengan air dan mengisi rongga yang tidak dapat dicapai pengedap permukaan. Namun jika membran kalis air itu sendiri sudah gagal, grouting hanyalah tampalan sementara." },
+      { q: "Bilakah kerja pecah jubin menjadi satu-satunya jawapan yang jujur?", a: "Apabila membran di bawah jubin koyak, terpisah daripada permukaan atau terlalu uzur untuk dibaiki — tiada kaedah suntikan dapat memulihkan membran yang sudah tiada, dan menawarkannya dalam keadaan itu ialah taktik jualan tambahan paling lazim dalam kerja kalis air." },
+      { q: "Bagaimanakah saya memastikan kaedah yang sesuai untuk bilik mandi saya?", a: "Melalui ujian air yang memetakan corak kebocoran, ditambah pemeriksaan keadaan membran melalui garis grout yang dibuka atau titik akses — kontraktor yang jujur menunjukkan bukti itu dahulu sebelum mencadangkan mana-mana pendekatan." },
+      { q: "Adakah grouting PU disertakan waranti?", a: "Lazimnya 1–2 tahun bagi kerja suntikan, berbanding sehingga 5 tahun bagi penggantian membran penuh. Perbezaan tempoh waranti itu mencerminkan skop kerja sebenar, bukan tahap keyakinan kontraktor." }
+    ],
+    zh: [
+      { q: "PU 注浆能永久修复卫生间漏水吗？", a: "对混凝土发丝裂缝和接缝渗漏来说可以。PU 树脂遇水膨胀，能填补表面密封剂无法进入的空隙。但如果防水层本身已经失效，注浆只能算是临时补救。" },
+      { q: "什么情况下只能敲掉瓷砖重做？", a: "当瓷砖下的防水层撕裂、脱层或老化到无法修复时。任何注浆方法都无法修复已经不存在的防水层，这种情况下仍推销免敲方案，是防水行业最常见的加价套路。" },
+      { q: "怎样判断我的卫生间适合哪一种方法？", a: "先做水测试绘制渗漏分布，再通过拆除一段填缝或检修口检查防水层的实际状况。诚实的施工方会先展示这些证据，再建议采用哪一种方案。" },
+      { q: "PU 注浆工程有保修吗？", a: "注浆工程通常保修 1–2 年，全面更换防水层最长可达 5 年。保修期的差异反映的是工程范围本身，而不是施工方对自己手艺的信心。" }
+    ]
+  },
+  "compare:plaster-ceiling-vs-gypsum-ceiling": {
+    ms: [
+      { q: "Betulkah siling plaster lebih unggul daripada papan gipsum?", a: "Bagi siling penyeri licin tanpa sambungan dengan lampu cove yang dijamin 10 tahun daripada kendur dan retak, ya — sistem premium ini menggunakan sambungan bertetulang dan lapisan skim berbilang lapis yang tidak dapat ditandingi papan gipsum sahaja." },
+      { q: "Bilakah papan gipsum menjadi pilihan yang lebih bijak?", a: "Untuk kawasan utiliti, bilik stor dan unit sewa di mana garis sambungan yang kelihatan di bawah cahaya condong masih boleh diterima, papan gipsum dipasang lebih cepat dan jauh lebih murah tanpa menjejaskan kekukuhan struktur." },
+      { q: "Mengapa sambungan siling gipsum mudah retak?", a: "Kerana pita sambungan biasa dan kemasan satu lapisan tidak mampu menampung pergerakan haba dan struktur bangunan Malaysia — sambungan bertetulang serta skim berbilang lapis sistem plaster memang direka untuk menyerap pergerakan itu." },
+      { q: "Bolehkah saya menaik taraf daripada gipsum kepada plaster kemudian?", a: "Boleh, tetapi ia bermakna menanggalkan papan sedia ada dan menyapu skim baharu pada rangka — memilih sistem yang betul sejak awal jauh lebih murah daripada membayar untuk kedua-duanya." }
+    ],
+    zh: [
+      { q: "灰泥天花真的比石膏板天花好吗？", a: "对追求无缝整体效果、配灯槽造型，并要求十年防下垂防开裂保修的空间来说，确实更好。优质系统采用加固接缝和多层批刮收面，这是单靠石膏板无法做到的。" },
+      { q: "什么情况下石膏板反而更明智？", a: "杂物间、储藏室和出租单位等空间，斜射光下能看到接缝线通常可以接受。石膏板安装更快、成本明显更低，而结构稳固性并不打折。" },
+      { q: "为什么石膏板天花容易在接缝处开裂？", a: "普通的接缝带加单层收面，承受不了马来西亚建筑的热胀冷缩和结构位移。灰泥天花系统的加固接缝与多层批刮，正是为吸收这类位移而设计的。" },
+      { q: "以后可以把石膏板升级成灰泥天花吗？", a: "可以，但需要拆掉现有板材、在龙骨上重新批刮。相比一开始就选对系统，等于花了两倍的费用。" }
+    ]
+  },
+  "compare:nippon-paint-vs-dulux-paint": {
+    ms: [
+      { q: "Jenama manakah yang lebih tahan lama pada dinding luaran?", a: "Dulux Weathershield dan Nippon Weatherbond kedua-duanya menggalas tuntutan ketahanan 5–7 tahun, tetapi prestasi sebenar lebih bergantung pada kerja persediaan permukaan dan pemilihan primer berbanding semata-mata jenama cat kemasan." },
+      { q: "Adakah Nippon Spot Less Plus berbaloi untuk ruang lorong?", a: "Bagi kawasan lalu lintas tinggi di mana calar dan cap jari berlaku setiap hari, Spot Less Plus memang lebih tahan berbekas berbanding emulsi biasa — harga premiumnya dibalas dengan kekerapan mengecat semula yang lebih rendah." },
+      { q: "Bolehkah saya mencampurkan primer Nippon dengan cat kemasan Dulux?", a: "Dari segi teknikal boleh jika kedua-duanya berasaskan air dan serasi, tetapi pengeluar menguji dan memberi waranti sistem mereka sebagai set sepadan — mencampur jenama bermakna tiada satu pun waranti terpakai jika berlaku kegagalan." },
+      { q: "Jenama manakah yang mempunyai padanan warna lebih baik?", a: "Kedua-dua jenama mempunyai sistem pembancuhan kilang yang menghasilkan warna konsisten — pembolehubah yang lebih besar ialah sama ada tukang cat anda menggunakan pusat pewarnaan sah jenama itu atau pengadun biasa di kedai perkakasan." }
+    ],
+    zh: [
+      { q: "外墙漆哪一个品牌更耐久？", a: "Dulux Weathershield 与 Nippon Weatherbond 都声称有 5–7 年耐久性，但实际表现更多取决于基层处理和底漆选择，而不只是面漆品牌本身。" },
+      { q: "走廊用 Nippon Spot Less Plus 值得吗？", a: "对于鞋痕和指纹每天都会出现的高频区域，Spot Less Plus 确实比普通乳胶漆更抗污。多花的差价，会以较低的重刷频率赚回来。" },
+      { q: "Nippon 底漆可以搭配 Dulux 面漆吗？", a: "只要两者都是水性且相容，技术上可行。但厂家是按整套系统来测试和保修的，混用品牌意味着任何一方都不会为故障承担责任。" },
+      { q: "哪一个品牌的调色更准确？", a: "两个品牌都有工厂调色系统，颜色稳定性相当。更大的变量是施工方使用品牌官方调色中心，还是在普通五金店现场混合调色。" }
+    ]
+  },
+  "compare:acrylic-vs-cementitious-waterproofing": {
+    ms: [
+      { q: "Bolehkah kalis air akrilik menampung bumbung rata?", a: "Bagi bumbung rata terdedah yang mempunyai saliran baik, ya — salutan akrilik seperti Sikalastic melentur mengikut pergerakan haba dan menahan hakisan UV. Tetapi jika air bertakung berhari-hari, akrilik akhirnya akan melepuh dan gagal." },
+      { q: "Bilakah sistem bersimen menjadi pilihan yang betul?", a: "Di bawah jubin, dalam bilik mandi dan pada permukaan konkrit yang memerlukan membran terlekat yang dicengkam pelekat jubin — sistem bersimen ialah standard kawasan basah kerana ia berfungsi seiring sistem jubin." },
+      { q: "Kaedah manakah yang bertahan lebih lama antara keduanya?", a: "Sistem bersimen di bawah jubin bertahan 10–15 tahun apabila disapu dengan betul; akrilik pada permukaan terdedah memerlukan salutan semula setiap 3–5 tahun bergantung pada pendedahan UV dan keadaan cuaca." },
+      { q: "Bolehkah saya menyapu akrilik di atas lapisan bersimen sedia ada?", a: "Hanya jika lapisan bersimen itu masih kukuh dan diberi primer dengan betul — menyapu akrilik di atas membran bersimen yang sudah gagal hanya memerangkap kegagalan di bawahnya dan melambatkan masalah yang pasti berlaku." }
+    ],
+    zh: [
+      { q: "丙烯酸防水能用在平屋顶上吗？", a: "排水良好的外露平屋顶可以。Sikalastic 这类丙烯酸涂层能随热胀冷缩伸缩并抗紫外线。但如果积水持续多天，涂层最终会起泡失效。" },
+      { q: "什么情况应该选择水泥基防水？", a: "瓷砖下面、卫生间，以及需要瓷砖胶能粘附的粘结型防水层的混凝土表面。水泥基系统是湿区的标准做法，因为它能与贴砖系统配合。" },
+      { q: "两种方法哪一种寿命更长？", a: "施工到位的砖下水泥基系统可使用 10–15 年；外露表面的丙烯酸涂层则需每 3–5 年重新涂刷，视紫外线照射和风雨侵蚀程度而定。" },
+      { q: "可以在旧的水泥基防水层上直接涂丙烯酸吗？", a: "只有旧涂层仍然牢固、并且正确涂刷底漆的前提下才可以。在已经失效的水泥基层上覆盖丙烯酸，只是把问题封在里面，并不能阻止它继续恶化。" }
+    ]
+  },
+  "compare:pvc-pipes-vs-copper-pipes": {
+    ms: [
+      { q: "Bolehkah paip PVC menampung air panas daripada pemanas?", a: "PVC standard dikadar untuk air sejuk sahaja — saluran air panas memerlukan CPVC (berkadar sekitar 82°C) atau tembaga yang mampu menampung julat penuh. Menggunakan PVC pada saluran panas ialah jalan pintas biasa yang membawa kepada kelembutan paip dan kebocoran." },
+      { q: "Adakah tembaga berbaloi dengan harga lebih tinggi berbanding PVC?", a: "Bagi saluran air panas dan laluan terdedah di mana ketahanan penting, ya — tembaga bertahan lebih 50 tahun dan menahan kitaran haba yang akan melemahkan sambungan plastik dari semasa ke semasa." },
+      { q: "Adakah paip PVC memerlukan pensijilan SIRIM?", a: "Ya — mana-mana paip yang membawa air minum di Malaysia patut membawa pensijilan SIRIM QAS, yang mengesahkan kadaran tekanan dan keselamatan bahan. PVC tanpa pensijilan ialah penjimatan palsu yang boleh membatalkan insurans." },
+      { q: "Bolehkah saya mencampurkan PVC dan tembaga dalam satu sistem?", a: "Boleh, dengan sambungan dielektrik yang betul pada titik peralihan bagi menghalang kakisan galvanik — tukang paip yang cekap mengetahui perkara ini, dan ia patut dinyatakan dalam sebut harga." }
+    ],
+    zh: [
+      { q: "PVC 管可以接热水器的热水吗？", a: "普通 PVC 只能用于冷水。热水管需要使用 CPVC（耐温约 82°C）或铜管，才能承受全部温度范围。把 PVC 用在热水管上是常见的偷工做法，会导致管材软化和渗漏。" },
+      { q: "铜管比 PVC 贵，值得吗？", a: "在热水管线和外露敷设等对耐用性要求高的位置，值得。铜管可使用 50 年以上，其承受的冷热循环会让塑料接头逐渐疲劳。" },
+      { q: "PVC 管需要 SIRIM 认证吗？", a: "需要。马来西亚任何输送饮用水的管材都应具备 SIRIM QAS 认证，以确认耐压等级和材料安全。使用无证 PVC 看似省钱，却可能让保险失效。" },
+      { q: "PVC 管和铜管可以混用在同一系统里吗？", a: "可以，但转接处必须安装介质绝缘接头，防止电化学腐蚀。合格的水管工都懂这一点，报价单中也应写清楚。" }
+    ]
+  },
+  "compare:pvc-vs-molly-bolt-anchors": {
+    ms: [
+      { q: "Bolehkah saya menggunakan palam PVC pada dinding gipsum?", a: "Tidak — palam PVC memerlukan bahan padat untuk mencengkam, dan ia akan tercabut terus daripada papan gipsum berongga di bawah sebarang beban besar. Bolt molly atau sauh togel mengagihkan beban di belakang papan, dan itulah yang diperlukan papan plaster." },
+      { q: "Sauh manakah yang paling selamat untuk televisyen berat?", a: "Pada bata padu atau konkrit, palam PVC atau nilon tugas berat berkadaran beban berfungsi dengan baik — pada papan plaster, anda memerlukan bolt molly masuk ke stud atau plat sandar, jangan sekali-kali pada papan sahaja." },
+      { q: "Adakah bolt molly merosakkan dinding?", a: "Ia meninggalkan lubang lebih besar berbanding palam PVC, tetapi lubang itu boleh dibaiki dengan pengisi — pilihan lainnya ialah televisyen yang jatuh, yang merosakkan dinding, lantai dan mungkin mencederakan orang di sebelahnya." },
+      { q: "Bagaimanakah saya mengenal pasti jenis dinding saya?", a: "Ujian ketukan dan tebukan gerudi kecil memberi jawapan — bunyi padat dengan habuk bermakna batu-bata, bunyi berongga dengan potongan bersih bermakna papan. Kami memeriksa sebelum setiap pemasangan, kerana meneka ialah cara televisyen jatuh." }
+    ],
+    zh: [
+      { q: "石膏板墙上可以用 PVC 膨胀塞吗？", a: "不可以。PVC 膨胀塞需要握在实体材料里，在空心石膏板上受一点力就会直接脱出。空心墙需要飞机螺栓或翻板锚栓，把受力分散到板背面。" },
+      { q: "挂沉重的电视用哪种锚栓最安全？", a: "实心砖墙或混凝土墙上，按承重选用重型 PVC 或尼龙膨胀塞即可；石膏板墙上则必须用飞机螺栓锁进龙骨或加装背板，绝不能只固定在板面上。" },
+      { q: "飞机螺栓会损坏墙面吗？", a: "留下的孔比 PVC 膨胀塞大，但用填缝剂就能修补。相比之下，电视掉下来会同时损坏墙面、地板，还可能砸伤旁边的人。" },
+      { q: "怎样判断墙面是什么材质？", a: "敲一敲，再用小钻头试钻就能分辨。声音实、钻出粉末的是砖墙；声音空、钻屑整齐的是板材。我们每次安装前都会先确认，因为猜错材质正是电视掉落的原因。" }
+    ]
+  },
+  "compare:interior-paint-finishes-matte-vs-satin-vs-gloss": {
+    ms: [
+      { q: "Kemasan cat manakah yang dapat menyembunyikan dinding tidak sekata saya?", a: "Kemasan mate atau rata menyerap cahaya dan menyembunyikan kecacatan permukaan — kilat dan separa kilat memantulkan cahaya lalu mendedahkan setiap bonggol, tampalan dan kesan berus di bawah lampu bawah Malaysia." },
+      { q: "Bolehkah cat mate dilap bersih?", a: "Formulasi mate boleh basuh moden tahan lapisan ringan, tetapi ia tidak akan menandingi satin atau eggshell dari segi ketahanan gosokan — bagi bilik kanak-kanak dan dapur, satin ialah kompromi praktikal." },
+      { q: "Patutkah cat bilik mandi berkilat penuh?", a: "Bilik mandi lebih sesuai dengan satin atau separa kilat kerana ketahanan lembapan dan kebolehlapan, tetapi kilat penuh pada dinding bilik mandi kelihatan seperti institusi — satin memberi ketahanan tanpa rasa klinikal itu." },
+      { q: "Bolehkah saya mencampur beberapa kemasan dalam satu bilik?", a: "Boleh — pendekatan biasa ialah mate pada dinding dengan satin pada bingkai dan pintu, memberi kedalaman visual serta meletakkan kemasan boleh lap di tempat yang disentuh tangan dan kaki." }
+    ],
+    zh: [
+      { q: "哪种漆面能遮住墙面的不平整？", a: "哑光或平光漆吸收光线，能掩盖表面缺陷。亮光和半亮光会反光，在马来西亚常见的筒灯下，让每个凸起、补丁和刷痕都一览无遗。" },
+      { q: "哑光漆可以擦洗吗？", a: "现在的可水洗哑光漆配方能承受轻度擦拭，但耐磨擦洗能力始终比不上丝光和蛋壳光。儿童房和厨房想要方便清洁，丝光是更实际的选择。" },
+      { q: "卫生间应该用亮光漆吗？", a: "卫生间适合防潮性好、易擦洗的丝光或半亮光；整墙全亮光会有医院般的生硬感。丝光既有耐用性，又不会显得冷冰冰。" },
+      { q: "同一个房间可以混用不同光泽吗？", a: "可以。常见做法是墙面用哑光、门窗边线用丝光，既增加层次感，又把耐擦洗的光泽放在手经常接触的位置。" }
+    ]
+  },
+  "compare:wall-putty-vs-plaster-smoothening": {
+    ms: [
+      { q: "Adakah putty dinding mencukupi sebelum mengecat semula?", a: "Jika dinding masih kukuh secara struktur dengan hanya kekasaran permukaan kecil, ya — putty mengisi retak rambut dan melicinkan tekstur. Tetapi jika cahaya matahari mendedahkan beralun dan tampalan, anda memerlukan rawatan skim coat penuh." },
+      { q: "Mengapa tukang cat saya mencadangkan skim coat dan bukannya putty?", a: "Kerana putty setebal 1–2 mm sahaja dan tidak dapat melicinkan dinding yang tidak sekata — skim coat ialah kompaun pelicin 3–5 mm yang menjadikan keseluruhan permukaan rata di bawah cahaya condong." },
+      { q: "Adakah skim coat mengambil masa lebih lama daripada putty?", a: "Ya — skim coat memerlukan beberapa lapisan dengan masa pengeringan antara setiap satu, menambah 1–2 hari pada jadual. Hasilnya dinding yang kelihatan betul pada sebarang sudut pencahayaan, sesuatu yang tidak dapat dicapai putty." },
+      { q: "Bolehkah saya melangkau kedua-duanya dan terus mengecat?", a: "Pada dinding baharu yang kemasannya baik, mungkin — pada mana-mana dinding dengan kecacatan kelihatan, mengecat tanpa kerja persediaan hanya menjadikan setiap cacat berkilat dan lebih jelas, sebab itulah mengecat semula diperlukan sejak awal." }
+    ],
+    zh: [
+      { q: "重刷前只批腻子够吗？", a: "如果墙体结构完好、只有轻微粗糙，够了。腻子能填补细纹、抹平质感。但如果阳光下能看出棱线和补丁，就需要做满批找平。" },
+      { q: "为什么油漆工建议满批而不是局部批腻子？", a: "腻子最多批 1–2 毫米，无法把不平的墙找平。满批找平层厚 3–5 毫米，能让整面墙在斜射光下仍保持平整。" },
+      { q: "满批比批腻子更费时间吗？", a: "是的。满批需要分几层施工，每层之间要留干燥时间，工期通常多花一到两天。但完工后无论从哪个角度看，墙面都足够平整。" },
+      { q: "可以什么都不处理直接刷漆吗？", a: "新的、收面良好的墙也许可以。但只要有看得见的瑕疵，不做处理直接上漆只会让缺陷被光泽放大得更加明显，这正是当初需要重刷的原因。" }
+    ]
+  },
+  "compare:partition-materials-gypsum-vs-bricks-vs-glass": {
+    ms: [
+      { q: "Dinding pembahagi bahan manakah yang paling menahan bunyi?", a: "Dinding bata dengan plaster pada kedua-dua sisi memberi pengurangan bunyi tertinggi, diikuti gipsum dua lapisan dengan isian bulu mineral — pembahagi kaca mudah memindahkan bunyi kecuali dinyatakan dengan panel laminasi akustik." },
+      { q: "Bolehkah lantai kondo menampung pembahagi bata?", a: "Selalunya tidak tanpa penilaian struktur — pembahagi bata adalah berat, dan kebanyakan papak kondo direka untuk pembahagi gipsum atau kaca yang ringan. Semak dahulu dengan jurutera bangunan anda sebelum menetapkan bata." },
+      { q: "Adakah pembahagi kaca lebih murah daripada gipsum?", a: "Tidak — pembahagi kaca dengan bingkai aluminium dan panel terbaja jauh lebih mahal daripada gipsum, tetapi ia memberikan cahaya semula jadi dan estetik moden yang tidak dapat dihasilkan gipsum." },
+      { q: "Berapa cepatkah pembahagi gipsum boleh siap?", a: "Pembahagi bilik biasa menggunakan gipsum dengan rangka logam boleh dipasang, ditutup papan dan dikemaskan dalam 1–2 hari, berbanding 5–7 hari untuk bata termasuk masa pengerasan plaster." }
+    ],
+    zh: [
+      { q: "哪种隔墙材料的隔音效果最好？", a: "双面抹灰的砖墙隔音最好，其次是双层石膏板加岩棉填充。玻璃隔断容易传声，除非选用声学夹胶玻璃。" },
+      { q: "公寓楼板能承受砖砌隔墙吗？", a: "未经结构评估通常不行。砖隔墙很重，而多数公寓楼板按轻质石膏板或玻璃隔断设计。决定用砖前，请先咨询楼宇结构工程师。" },
+      { q: "玻璃隔断比石膏板便宜吗？", a: "不会。铝框加钢化玻璃的价格明显高于石膏板，但它能带来自然采光和现代感，这是石膏板做不到的。" },
+      { q: "石膏板隔墙施工有多快？", a: "标准房间用轻钢龙骨石膏板做隔墙，安装、封板和收面一到两天即可完成；砖墙加上抹灰养护则需要五到七天。" }
+    ]
+  },
+  "compare:diy-painting-vs-professional-painting": {
+    ms: [
+      { q: "Betulkah mengecat sendiri lebih jimat?", a: "Bagi satu bilik kecil dengan dinding mudah, ya — untuk seluruh rumah, kos bahan hampir sama tetapi masa anda, sewa peralatan, pembaziran dan kemungkinan kerja semula merapatkan jurang dengan cepat. Rumah teres tiga bilik secara DIY selalunya memakan 2–3 hujung minggu." },
+      { q: "Apakah yang dilakukan tukang cat profesional yang saya sendiri tidak mampu?", a: "Penilaian dan persediaan permukaan: mengenal pasti plaster berongga, merawat retakan, memilih primer yang betul, memotong tepi yang kemas dan menyapu lapisan sekata — kemahiran inilah yang membezakan kemasan yang anda nikmati daripada yang anda perasan setiap hari." },
+      { q: "Bolehkah saya buat sendiri bilik yang mudah dan upah untuk selebihnya?", a: "Boleh — bilik tidur dan kawasan jarang dilalui sesuai untuk DIY; bahagian luar, dinding tinggi, siling dan kemasan penyeri memerlukan peralatan serta teknik profesional. Ramai tukang cat akan memberi harga skop separa jika diminta." },
+      { q: "Bagaimana jika hasil kerja profesional itu bermasalah?", a: "Kerja profesional yang berwaranti merangkumi kerja semula tanpa kos — kerja DIY yang rosak memaksa anda membeli bahan dua kali ditambah bayaran profesional untuk memperbetulkannya, dan begitulah cara menjimatkan wang menjadi pilihan paling mahal." }
+    ],
+    zh: [
+      { q: "自己刷漆真的更省钱吗？", a: "一间墙面简单的小房间，确实省钱。整屋刷就不一样了：材料费差不多，但你的时间、工具租赁、浪费和返工风险会迅速拉近差距。三间房的排屋自己动手，往往要花两三个周末。" },
+      { q: "专业油漆工做的哪些事是我做不到的？", a: "基层评估和处理：识别空鼓灰层、修补裂缝、选对底漆、边线收得整齐、涂刷均匀。正是这些手艺，决定了完工后你是享受这面墙，还是每天看着它别扭。" },
+      { q: "可以简单的房间自己刷，其他请人做吗？", a: "可以。卧室和低使用频率的空间适合自己动手；外墙、高墙、天花和造型墙面则更适合专业工具和技术。只要开口询问，很多油漆工都愿意按部分范围报价。" },
+      { q: "如果请人施工出了问题怎么办？", a: "有保修的专业工程会免费返工。自己做坏了，则要把材料买第二次，再付一笔专业费用来补救——本想省钱，结果反而最贵。" }
+    ]
+  },
+  "compare:cheap-handyman-vs-insured-contractor": {
+    ms: [
+      { q: "Mengapa kontraktor berinsurans mengenakan kos lebih tinggi?", a: "Premium insurans, peralatan yang betul, pekerja terlatih dan rizab waranti semuanya memerlukan wang — kontraktor yang melangkau semua ini boleh memberi harga lebih rendah, tetapi apabila sesuatu pecah atau jatuh, bilnya sampai kepada anda." },
+      { q: "Apa yang berlaku jika tukang murah merosakkan harta saya?", a: "Tanpa insurans liabiliti awam, anda yang membayar kerosakan dan pembaikannya — dan jika tukang itu merosakkan hartanah jiran melalui unit anda, JMB atau pihak pengurusan akan datang kepada anda, bukan kepadanya." },
+      { q: "Adakah waranti benar-benar berbaloi untuk dibayar?", a: "Untuk kerja pemasangan, paip dan elektrik, ya — televisyen yang jatuh daripada dinding, paip yang bocor ke unit di bawah, atau litar yang melompat pada jam 2 pagi adalah perkara yang dibaiki percuma oleh waranti." },
+      { q: "Bagaimanakah saya mengesahkan insurans sesebuah kontraktor?", a: "Minta salinan sijil liabiliti awam mereka dan sahkan terus dengan pihak insurans. Kontraktor sah mempunyai dokumen ini dengan segera; yang tidak serius akan memberi pelbagai alasan." }
+    ],
+    zh: [
+      { q: "为什么有保险的承包商收费更高？", a: "保险费、像样的工具、训练有素的工人和保修准备金都是成本。省掉这些环节的承包商报价可以更低，但一旦东西坏掉或掉下来，账单就会落到你头上。" },
+      { q: "如果便宜的杂工弄坏了我的房子怎么办？", a: "没有公共责任保险，损坏和维修费用都得自己承担。如果对方还通过你的单位弄坏了邻居的物业，物业或管理处找的人是你，不是他。" },
+      { q: "保修真的值得多花钱吗？", a: "在安装、水电这类工程上值得。电视从墙上掉下、水管漏到楼下单位、凌晨两点电路跳闸——有保修，这些都能免费修好。" },
+      { q: "怎样核实承包商真的有保险？", a: "要求提供公共责任保险证书副本，并直接联系保险公司核实。正规承包商会随时拿得出来；临时搭伙的团队只会找借口。" }
+    ]
+  },
+  "compare:pu-injection-vs-surface-waterproofing": {
+    ms: [
+      { q: "Bilakah suntikan PU menjadi pilihan yang tepat?", a: "Apabila kebocoran hanya boleh dicapai dari bawah — siling besmen, papak antara tingkat dan keadaan di mana sisi positif (bumbung atau lantai bilik mandi) tidak boleh dibuka tanpa kerja pecah besar." },
+      { q: "Bilakah kalis air permukaan lebih baik?", a: "Apabila sisi positif boleh dicapai dan membran boleh diperbaharui — kalis air permukaan menghalang air memasuki konkrit dari awal, dan itulah penyelesaian jangka panjang yang sentiasa diutamakan." },
+      { q: "Bolehkah kedua-dua kaedah digunakan serentak?", a: "Boleh — suntikan PU menghentikan kebocoran aktif serta-merta, kemudian kalis air permukaan pada sisi positif menghalang kejadian semula. Pendekatan dua peringkat ini biasa untuk kebocoran antara tingkat apabila kedua-dua sisi boleh diakses." },
+      { q: "Mengapa kontraktor saya hanya menawarkan suntikan?", a: "Kerana suntikan lebih cepat, lebih murah dan mengelakkan kerja pecah lantai di atas — tetapi jika punca sebenar ialah membran gagal pada sisi positif, suntikan semata-mata ialah kos berulang, bukan pembaikan kekal." }
+    ],
+    zh: [
+      { q: "什么情况适合 PU 灌注？", a: "漏水点只能从背水面施工时，例如地下室天花板、楼层间楼板，或迎水面（屋顶、卫生间地面）不拆开就无法施工的情况。" },
+      { q: "什么时候表面防水更好？", a: "迎水面可以施工、能重做防水层时。表面防水从源头上阻止水进入混凝土，始终是最优先的长期方案。" },
+      { q: "两种方法可以一起做吗？", a: "可以。先用 PU 灌注马上止住渗漏，再从迎水面做表面防水防复发。楼层间漏水且两侧都能施工时，这是常见的两阶段做法。" },
+      { q: "为什么施工方只向我推荐灌注？", a: "因为灌注更快、更便宜，也免去拆开楼上地面的工程。但如果根源是迎水面防水层已失效，只靠灌注只会变成一再重复的开支，而不是永久修复。" }
+    ]
+  },
+  "compare:fixed-quote-vs-hourly-handyman": {
+    ms: [
+      { q: "Adakah sebut harga tetap sentiasa lebih baik?", a: "Bagi kerja yang jelas skopnya — memasang televisyen, menukar paip sinki, membaiki pintu — ya. Bagi kerja terbuka yang skop sebenarnya baru diketahui apabila dinding dibuka, kadar mengikut jam dengan had maksimum boleh menjadi lebih jujur." },
+      { q: "Mengapa sesetengah tukang enggan memberi sebut harga tetap?", a: "Kerana mereka tidak dapat meramal apa yang akan dijumpai di belakang dinding atau di bawah jubin — tetapi tukang yang cekap patut memberi harga tetap untuk skop yang kelihatan dan kadar jam tertentu untuk sebarang kerja tambahan yang ditemui." },
+      { q: "Bagaimana jika kerja bersebut harga tetap mengambil masa lebih lama daripada jangkaan?", a: "Itu risiko kontraktor, bukan anda — harga sudah dipersetujui berdasarkan skop yang kelihatan, dan sebarang tambahan tulen patut dimaklumkan serta diluluskan dahulu sebelum kerja diteruskan, bukan ditambah pada invois selepas itu." },
+      { q: "Bolehkah bil mengikut jam mengakibatkan masa yang dipanjangkan?", a: "Tanpa anggaran masa dan laporan kemajuan, ya — sentiasa persetujui julat masa yang dijangka sebelum kerja bermula, dan minta makluman jika kerja melampaui julat itu dengan ketara." }
+    ],
+    zh: [
+      { q: "固定报价一定更好吗？", a: "范围明确的活——挂电视、换水龙头、修门——是的。但要拆墙才知道实际情况的开放性工程，按小时收费并约定上限，反而更诚实。" },
+      { q: "为什么有些杂工不愿意报固定价？", a: "因为他们无法预知墙后或砖下会发现什么。但有经验的杂工应能给出固定价覆盖看得见的范围，再约定明确的小时费率处理施工中新发现的问题。" },
+      { q: "固定报价的工程超时了怎么办？", a: "这是承包商要承担的风险，不是你的。价格是按可见范围谈定的，确实需要增加的项目应先提出并征得同意再施工，而不是事后直接加进账单。" },
+      { q: "按小时计费会不会被故意拖时间？", a: "没有预估时间和进度汇报，确实有可能。开工前应先约定预计用时区间，若工程明显超出，要求对方及时说明情况。" }
+    ]
+  },
+  "compare:drywall-partition-vs-glass-partition": {
+    ms: [
+      { q: "Pembahagi jenis manakah yang lebih sesuai untuk pejabat di rumah?", a: "Jika anda perlukan privasi akustik untuk panggilan, drywall dengan isian bulu mineral — jika anda mahu cahaya daripada tingkap sampai ke bilik dalaman, kaca berfros atau reeded untuk privasi separa." },
+      { q: "Adakah pembahagi kaca memindahkan bunyi?", a: "Pembahagi kaca lapisan tunggal memindahkan perbualan dengan mudah — kaca berkadaran akustik dengan panel laminasi dan sendi berkedap mengurangkannya dengan ketara, pada kos lebih tinggi." },
+      { q: "Adakah drywall cukup kuat untuk memasang rak?", a: "Dengan sauh yang betul masuk ke stud logam, ya untuk beban sederhana — untuk barang berat, kedudukan stud perlu dirancang sebelum papan dipasang, dan kontraktor yang baik melakukannya pada peringkat rangka." },
+      { q: "Berapa cepatkah setiap jenis pembahagi boleh dipasang?", a: "Pembahagi drywall boleh dirangka, dipasang papan dan dikemaskan dalam 2–3 hari; pembahagi kaca dengan bingkai aluminium lazimnya memerlukan 5–7 hari termasuk fabrikasi dan pemasangan kaca." }
+    ],
+    zh: [
+      { q: "家庭办公室用哪种隔断更好？", a: "打电话需要隔音就选加岩棉的轻钢龙骨墙；想让窗户的光照进室内，就选磨砂或长虹玻璃，保留部分私密。" },
+      { q: "玻璃隔断会传声吗？", a: "单层玻璃隔断很容易传走谈话声。声学级的夹胶玻璃配密封接缝可以明显改善，但造价更高。" },
+      { q: "轻钢龙骨墙挂得住置物架吗？", a: "用合适的锚栓锁进金属龙骨，挂中等重量没问题。要挂重物，应在封板前就规划好龙骨位置，靠谱的施工方会在做骨架时就安排好。" },
+      { q: "两种隔断的施工速度差多少？", a: "轻钢龙骨墙从做骨架、封板到收面大约两到三天；铝框玻璃隔断加上玻璃加工和安装，通常需要五到七天。" }
+    ]
+  },
+  "compare:roof-coating-vs-torch-on-membrane": {
+    ms: [
+      { q: "Bolehkah salutan bumbung menghalang kebocoran bumbung rata?", a: "Bagi retak kecil dan kemerosotan permukaan dengan saliran baik, ya — salutan akrilik atau poliuretana merentangi retak rambut dan menahan UV. Tetapi jika air bertakung berhari-hari, salutan akan melepuh dan gagal pada titik lemah." },
+      { q: "Bilakah membran torch-on menjadi jawapan yang betul?", a: "Apabila bumbung mempunyai takungan air, beberapa titik bocor, atau memerlukan penyelesaian lebih 10 tahun — sendi kimpalan dan tetulang membran torch-on menahan air bertakung yang tidak mampu diharungi salutan." },
+      { q: "Berapa lebih mahalkah kos torch-on?", a: "Lazimnya 2–3 kali ganda kos salutan bagi setiap meter persegi, tetapi dengan jangka hayat tiga kali lebih lama — atas dasar kos setiap tahun, torch-on selalunya lebih jimat bagi bumbung yang memerlukan penyelesaian jangka panjang." },
+      { q: "Bolehkah saya menyalut di atas membran torch-on sedia ada?", a: "Hanya jika membran itu masih kukuh dan diberi primer dengan betul — menyalut di atas membran yang gagal memerangkap lembapan dan mempercepatkan kerosakan. Keadaan membran mesti dinilai terlebih dahulu." }
+    ],
+    zh: [
+      { q: "屋面涂层能止住平屋顶漏水吗？", a: "排水良好、只是细裂缝和表层老化时可以。丙烯酸或聚氨酯涂层能覆盖发丝裂缝并抗紫外线。但如果积水持续多天，涂层会在薄弱处起泡失效。" },
+      { q: "什么情况必须用热熔防水卷材？", a: "屋顶有积水、漏水点多，或需要十年以上的长期方案时。热熔卷材的焊接接缝和胎体增强能承受涂层撑不住的长期积水。" },
+      { q: "热熔卷材要贵多少？", a: "按每平方米算，通常是涂层的两到三倍，但寿命也是三倍以上。折算成年成本，对需要长期方案的屋顶来说，热熔卷材往往反而更划算。" },
+      { q: "可以在旧热熔卷材上直接刷涂层吗？", a: "只有卷材仍然牢固并正确涂刷底漆时才可以。在已经失效的卷材上加涂层，会把水汽封在里面、加速恶化。施工前必须先评估卷材状况。" }
+    ]
+  },
+  "compare:chemical-wash-vs-chemical-overhaul": {
+    ms: [
+      { q: "Apakah sebenarnya yang dibersihkan oleh basuhan kimia?", a: "Gegelung penyejatan, roda peniup dan takung saliran disiram larutan kimia yang melarutkan habuk, kulat dan biofilem tanpa menanggalkan unit — berkesan untuk penyelenggaraan rutin apabila penyejukan masih memuaskan." },
+      { q: "Bilakah overhaul kimia diperlukan?", a: "Apabila penyaman udara meniup angin lemah walaupun penapis bersih, bau kekal selepas basuhan, atau unit sudah bertahun tidak dibersihkan secara mendalam — penanggalaan penuh mencapai permukaan yang tidak dapat dijangkau basuhan di tempat." },
+      { q: "Adakah overhaul berbaloi untuk penyaman udara lama?", a: "Jika pemampat dan sistem penyejuk masih sihat, ya — overhaul memulihkan aliran udara dan kecekapan hampir seperti baharu pada sebahagian kecil kos penggantian. Jika pemampat sudah gagal, penggantian ialah jawapan yang jujur." },
+      { q: "Berapa kerapkah setiap servis perlu dilakukan?", a: "Basuhan kimia setiap 6–12 bulan bergantung pada penggunaan dan habuk; overhaul kimia setiap 2–3 tahun atau apabila prestasi menurun walaupun dibasuh berkala — kedua-duanya memanjangkan hayat unit dan mengurangkan penggunaan elektrik." }
+    ],
+    zh: [
+      { q: "药水清洗到底清洁了什么？", a: "用药水冲洗蒸发器盘管、贯流风轮和接水盘，溶掉灰尘、霉菌和生物膜，整机不用拆下。冷却效果还能接受时的日常保养，这样做就够了。" },
+      { q: "什么时候需要整机药水深度清洗？", a: "滤网干净但风量明显变小、洗过之后异味仍在，或多年没有深度清洁时。整机拆解才能洗到原位清洗够不着的部位。" },
+      { q: "旧空调值得做深度清洗吗？", a: "只要压缩机和制冷系统健康，就值得。深度清洗能让风量和能效恢复到接近新机水平，费用远低于换新。如果压缩机已经在衰退，换新才是诚实的建议。" },
+      { q: "两种保养各应多久做一次？", a: "药水清洗视使用频率和灰尘情况，每 6–12 个月一次；深度清洗每 2–3 年一次，或正常清洗后效果仍明显下降时。两者都能延长空调寿命、降低电费。" }
+    ]
+  },
+  "compare:inverter-vs-non-inverter-aircon": {
+    ms: [
+      { q: "Berapa banyakkah elektrik yang dijimatkan oleh inverter?", a: "Lazimnya 30–50% berbanding bukan inverter berkapasiti sama, kerana pemampat melaraskan kelajuan dan bukannya hidup-mati berulang kali — penjimatan paling besar pada unit yang beroperasi lebih 6 jam setiap hari." },
+      { q: "Adakah inverter berbaloi untuk bilik tetamu?", a: "Jika bilik itu hanya beroperasi beberapa jam sekali-sekala, harga belian lebih rendah model bukan inverter mungkin tidak pernah dapat diimbangi oleh kecekapan inverter — inverter membayar premiumnya pada bilik yang kerap digunakan." },
+      { q: "Adakah kos membaiki inverter lebih tinggi?", a: "Papan PCB pada inverter lebih mahal untuk diganti berbanding kapasitor ringkas pada bukan inverter, tetapi pemampat inverter mengalami kurang haus daripada kitaran hidup-mati, yang boleh bermakna kurang kegagalan pemampat." },
+      { q: "Bolehkah saya memasang inverter pada pendawaian sedia ada?", a: "Selalunya boleh — inverter menarik arus sama atau lebih rendah daripada bukan inverter berkapasiti sama, tetapi litar khusus dan pemutus mestilah bersaiz betul mengikut tarikan maksimum unit." }
+    ],
+    zh: [
+      { q: "变频空调能省多少电？", a: "同匹数相比，通常省 30–50%。因为压缩机是调速运行，而不是反复启停。每天运行六小时以上的房间，省电效果最明显。" },
+      { q: "客房装变频值得吗？", a: "如果只是偶尔开几个小时，变频省下的电费可能永远追不回与定频的差价。变频的溢价，要靠高频使用的房间才能回本。" },
+      { q: "变频空调维修更贵吗？", a: "变频机换电路板的费用高于定频机换电容，但变频压缩机少了反复启停的磨损，压缩机故障反而可能更少。" },
+      { q: "现有线路可以装变频空调吗？", a: "大多数情况可以。同匹数下变频的运行电流不高于定频，但专用回路和断路器仍须按机组最大电流正确选型。" }
+    ]
+  },
+  "compare:wall-mounted-vs-ceiling-cassette-aircon": {
+    ms: [
+      { q: "Jenis manakah yang menyejukkan ruang tamu besar dengan lebih baik?", a: "Kaset siling — aliran udara empat hala mengagihkan penyejukan sekata merentasi ruang konsep terbuka, manakala unit dinding meniup ke satu arah dan membiarkan penjuru jauh lebih panas." },
+      { q: "Adakah kaset siling lebih mahal untuk dipasang?", a: "Ya — kos pemasangan 30–50% lebih tinggi kerana pemasangan struktur, laluan penyejuk lebih panjang dan saliran melalui siling. Unit itu sendiri juga berharga lebih tinggi daripada unit dinding setara." },
+      { q: "Bolehkah saya memasang kaset di kondo berlangit-langit rendah?", a: "Hanya jika rongga siling cukup dalam untuk badan kaset — lazimnya 250–350 mm. Pada kondo dengan ruang siling minimum, unit dinding atau kaset profil nipis ialah pilihan praktikal." },
+      { q: "Jenis manakah yang lebih mudah diselenggara?", a: "Unit dinding lebih ringkas — penapis diloncir keluar dan unit berada pada aras mata. Penapis kaset memerlukan tangga dan takung salirannya lebih sukar dicapai, menjadikan servis profesional lebih penting." }
+    ],
+    zh: [
+      { q: "大客厅用哪种空调制冷更均匀？", a: "天花卡式机。四面出风能把冷气均匀送到开放式空间的每个角落；挂机只朝一个方向送风，远端角落会偏热。" },
+      { q: "天花卡式机安装更贵吗？", a: "是的。吊装结构、更长的冷媒管和隐藏在天花内的排水，使安装费高出 30–50%，机器本身也比同匹数挂机贵。" },
+      { q: "层高较低的公寓可以装卡式机吗？", a: "只有天花夹层深度能容纳机身时才行，一般需要 250–350 毫米。夹层空间有限的公寓，挂机或超薄卡式机更实际。" },
+      { q: "哪种机型日常保养更省事？", a: "挂机更省事。滤网一拉就能取下，机器就在视线高度；卡式机要爬梯子取滤网，接水盘也难检查，更需要定期请专业人员保养。" }
     ]
   }
 
