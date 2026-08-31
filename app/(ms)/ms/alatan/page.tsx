@@ -52,6 +52,7 @@ export default function AlatanPage() {
     <>
       <ToolsIndexPage
         copy={copy}
+        locale="ms"
         path={path}
         tools={tools}
         graph={buildToolsIndexGraph({ path, copy, tools, inLanguage: copy.schemaLanguage })}

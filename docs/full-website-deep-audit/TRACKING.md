@@ -42,7 +42,7 @@
 | P1 | Fix Part 5 P5-10 — breadcrumbs on 184 pods + 21 guides + 29 near-me hubs + 22 cluster pages | ✅ DONE (Fix Wave 3) |
 | P0 | Fix Part 1 Critical #1 — Trim programmatic service+location index | ✅ DONE (BP-1 phase 1 — 2,146 duplicate URLs retired) |
 | P0 | Fix Part 1 Critical #2 — Consolidate near-me duplicates | ✅ DONE (BP-1 phase 1 — 1,073 → 301 to parent) |
-| P0 | Fix Part 1 Critical #3 — Resolve www/non-www host canonical | ⏳ PENDING (owner — needs live edge access) |
+| P0 | Fix Part 1 Critical #3 — Resolve www/non-www host canonical | ✅ VERIFIED EXTERNALLY (Fix Wave 28, 2026-08-31 — all 4 scheme×host variants resolve to `https://www.klservisrumah.my`; robots.txt `Host:` + `lib/seo.ts` baseUrl + Google-index www URLs agree. Owner `curl -I` hop-chain check remains a micro nice-to-have, not a blocker) |
 | P0 | Fix Part 2 P2-C1 — Server-render content inside `<main>` (static HTML is a Loading shell) | ✅ DONE (Fix Wave 2) |
 | P0 | Fix Part 2 P2-C2 — `content.relatedReading` literal key renders as H2 on 224 pages | ✅ DONE (Fix Wave 1) |
 | P0 | Fix Part 2 P2-C3 — 174 generic "content pod" pages (commercial/residential/process/answers/brands/top/seasonal/guides) | ✅ DONE (Wave 4 batch 1: 58 commercial+residential pods; Wave 5 batch 2: 88 brands+compare+guides+maintenance+seasonal+top pods — all 146/174 hand-authored; process+answers carry real service data) |
@@ -92,6 +92,7 @@
 | 2026-08-31 | **Fix Wave 25** — **Value Queue cleared (all unblocked code-level items).** **P3-15** SearchAction↔robots consistency (`/search` un-blocked in robots.txt; bare finder indexable while `/search?q=…` noindex in all 3 trees; EN hreflang cluster; `/ms/search`+`/zh/search` added to middleware `REAL_LOCALE_TREES` — they were 301 dead-ends; MS/ZH popular-shortcut links retargeted to in-tree routes) · **P3-16** news sitemap rebuilt as a dynamic last-48-hour EN/MS/ZH feed (valid empty `<urlset>` when stale) · **P3-19** `aeo-faq.txt` expanded 8→24 data-grounded Q&As · **P4-08** primary CTAs reworded around the fixed-quote differentiator EN/MS/ZH (hero/service heroes/grid/sticky/footer + neutral WhatsApp-prefill key) · **P4-03** exit-intent 30s timer removed (mouse-leave only) · **P4-16** footer Explore split into primary/secondary tiers + tree-native `hubPath()` links (pricing/blog/FAQ/problems/pods resolve in-tree; zero cross-tree footer leaks) · **P4-14** per-area Place entities (`#place` City w/ geo+State on hubs, @id-referenced by the 1,500+ area×service pages and the homepage 37-city areaServed) · **P4-10** all FeaturedProjects (4) + BeforeAfter (3) cards converted to real `<Link>`s (gallery/service pages, aria-labelled). All gates PASS: prebuild **329,897 × 0**, lint 0/0, type-check, build **4,141 HTML**, audit:html 0/0, audit:links **312,968+55 → 0 broken**, seo-head **4,114=4,114**, schema-size PASS, bp1 (NAP 62.8%), location-similarity 69.5% max, meta, seo:audit, part5 0 JSON-LD errors, part3 BM/ZH leaks 0/0. **CI QA pass (3m47s), Vercel pass — PR #209.** | ✅ See `FIX-WAVE-25-REPORT.md` |
 | 2026-08-31 | **Fix Wave 26** — **P2-C4 copy half + leftover on-page/entity items.** Pair-copy generator replaced (no landmark×sub-service salad): 37 area + 15 suburb work profiles, generic EN suburb issues omitted from pair-copy, landmarks as meeting pins only. **P2-13** area-hub H1 no longer painting+ceiling-only. **P2-12** area-hub ServicesGrid H2 uses `servicesInArea`. **P2-27** Organization `knowsAbout` = 29 live service titles. **MS/ZH BlogPosting** JSON-LD + ISO dates on localized blog routes. All gates PASS: lint 0/0, type-check, prebuild **329,897 × 0**, build **4,148 static**, location-similarity **68.8% PASS** (suburb-across-suburbs 68.2%; glenmarie↔selangor house-renovation). URL keep-set still owner GSC. | ✅ See `FIX-WAVE-26-REPORT.md` |
 | 2026-08-31 | **Verification Session (this session)** — confirmed the merged Wave-26 tree is fully **on gates** with **no unblocked audit work remaining**: prebuild **329,897 × 0**, type-check PASS, lint **0/0**, build **4,141 static HTML**, audit:links **312,968 rendered + 55 source → 0 broken**, audit:html **0 fatal / 0 warnings**, seo:audit PASS, audit:meta 0 JSON-LD parse failures / 0 NAP-missing / 0 breadcrumb mismatches / 0 generic anchors, validate:blogs **216 topics / 648 localized articles / 54 distinct dates** PASS. **P4-18 marked ✅** (audit already determined anchor-text healthy — no action required). **Every remaining PENDING row is owner-blocked** (reviews/facts, GSC keep-set, photos, bios, outbound-citation decision, www edge). See `FIX-WAVE-27-VERIFICATION-REPORT.md`. | ✅ Verified on gates |
+| 2026-08-31 | **Fix Wave 28** — **Live-production verification + trilingual price-unit leaks + locale-tree edge fix.** New angle: external live probes of production (fetch/search tools report final resolved URLs). **P0 Critical #3 VERIFIED EXTERNALLY ✅** (all 4 scheme×host variants → canonical www). Probes then exposed unblocked repo defects invisible to prior gates: **W28-4** `/ms/harga` 404 + `/zh/pricing`→EN at the edge (missing `REAL_LOCALE_TREES` entries; same whack-a-mole class as P3-15) — fixed + prod-server-verified 12/12 routes; **W28-1** 50 registry strings with EN unit leaks in BM/中文 prices (`sq ft` ×46, `/ point` ×7 ms electrical, `linier ft`, desc/metaDesc tokens → kaki persegi/平方英尺/位/titik); **W28-2** raw `{name}` placeholders on 87 cost pages ×2 keys (174 visible leaks); **W28-3** English WhatsApp prefills (cost-page " cost quote" ×87, tools-index missing `lang:` ×4 links, EN rate-book units in localized worked examples). New permanent gates: `audit:price-i18n` + `audit:locale-trees` (prebuild, negative-tested) and `audit:html` checks #16 raw-template-placeholder + #17 wa-prefill-locale-leak (both caught real leaks on first run, then verified 0). All gates PASS: prebuild **329,897 × 0**, type-check, lint 0/0, build **4,141 HTML**, audit:links 312,968+55 → 0, audit:html 0/0, meta, seo:audit, seo-head, schema-size, raster-og, location-similarity 68.8% max. | ✅ See `FIX-WAVE-28-REPORT.md` |
 
 ---
 
@@ -168,13 +169,30 @@ removed), P4-16 (footer tiering + tree-native links), P4-14 (per-area Place
 entities) and P4-10's code half (all 7 trust cards are now real links). Full
 log: `FIX-WAVE-25-REPORT.md`.
 
-**⏳ EXACT NEXT STOP (verified 2026-08-31, Verification Session): only
-owner-blocked / owner-data items remain.** A full gate re-run on the merged
-Wave-26 tree confirmed the site is **on gates** with **no unblocked audit
-finding left to implement in code** (prebuild 329,897 × 0, type-check, lint
-0/0, build 4,141 static, audit:links 312,968+55 → 0, audit:html 0/0,
-seo:audit PASS, audit:meta 0 JSON-LD errors, validate:blogs 216 topics).
-The remaining PENDING rows are all gated on the owner:
+**✅ Fix Wave 28 (2026-08-31) — live-production verification + new leak-class
+fixes.** First session to probe production externally: **P0 Critical #3
+(www/non-www host canonical) VERIFIED** (all 4 scheme×host variants →
+canonical www). The probes then exposed an unblocked leak/edge class invisible
+to repo gates — real pricing hubs `/ms/harga` 404 + `/zh/pricing`→EN at the
+edge (`REAL_LOCALE_TREES` gap, P3-15 whack-a-mole class), 50 EN-unit strings
+inside BM/中文 registry prices (sq ft / point / linier ft leaks), 174 raw
+`{name}` placeholders on the 87 cost pages, English WhatsApp prefills
+(` cost quote`, tools-index missing `lang:`), EN rate-book units in localized
+worked examples. All fixed, all permanently gated (`audit:price-i18n` +
+`audit:locale-trees` prebuild gates, `audit:html` #16 raw-template-placeholder
++ #17 wa-prefill-locale-leak — every gate negative-tested). Full log:
+`FIX-WAVE-28-REPORT.md`.
+
+**⏳ EXACT NEXT STOP (verified 2026-08-31, Fix Wave 28): only
+owner-blocked / owner-data items remain — the last P0 is now closed.** A full
+gate re-run on the fixed tree: prebuild **329,897 × 0** (incl. the 2 new
+gates), type-check, lint 0/0, build **4,141 static**, audit:links
+312,968+55 → 0, audit:html 0/0 (incl. the 2 new checks), seo:audit PASS,
+audit:meta 0 errors, seo-head / schema-size / raster-og / location-similarity
+(68.8% max) PASS, prod-server middleware probes 12/12. **After the owner
+deploys this commit, re-probe `/ms/harga` + `/zh/pricing` live** (the
+middleware fix only takes effect on the next deploy). The remaining PENDING
+rows are all gated on the owner:
 - **P4-10 content half** — real per-project case-study pages with actual
   photos + itemised cost (needs owner photography, P5-12; the link scaffolding
   is done — cards already route to `/projects` + service pages).
@@ -185,11 +203,15 @@ The remaining PENDING rows are all gated on the owner:
 - **P4-13 / P2-C4 URL keep-set / BP-1 phase 2** — local-page restructure
   (blocked on owner GSC keep-set; do NOT add/delete location pages on traffic
   assumptions). The **generator** is done in Wave 26.
-- **P0 www/non-www host canonical** — needs live edge/CDN access.
+- ~~P0 www/non-www host canonical~~ — ✅ VERIFIED EXTERNALLY (Wave 28); an
+  owner `curl -I` hop-chain check is a micro nice-to-have only.
 - **P5-12** — real project/team photography program.
+- **Editorial note (non-blocking)** — zh strings mix "平方呎" / "平方英尺" for
+  *sq ft* (estimator + swap vs authored majority): a terminology decision for
+  the owner/translator, not a leak. Recorded so it isn't "rediscovered".
 If the owner supplies any of the above (review verification, GSC export,
-photos, bios, edge access), that is the next work — otherwise the audit backlog
-is fully actioned and the site is on gates. Do **not** invent owner facts.
+photos, bios), that is the next work — otherwise the audit backlog is fully
+actioned and the site is on gates. Do **not** invent owner facts.
 
 0. **What Wave 14 changed (2026-08-29):** new
    `components/sections/locale-service-cost-body.tsx` (shared,
@@ -301,7 +323,15 @@ is fully actioned and the site is on gates. Do **not** invent owner facts.
 11. **Standing "do not" list:** do **not** add more location pages; do **not**
     re-add `app/(en|ms|zh)/loading.tsx`; do **not** delete local pages on low
     traffic alone; do **not** retry the CI patch push without `workflows`
-    permission; do **not** weaken the estimator trilingual-parity asserts to
+    permission; do **not** add a real `/ms|/zh` route tree without adding it
+    to `REAL_LOCALE_TREES` — the edge 301-strips unlisted trees
+    (`audit:locale-trees` fails prebuild); do **not** render a message key
+    containing a `{placeholder}` without passing every variable
+    (`audit:html` #16 fails); do **not** build a WhatsApp link on a localized
+    surface without `lang:` (`audit:html` #17 fails); do **not** put English
+    unit tokens (`sq ft`, `/ point`, `From RM`) inside BM/中文 registry
+    strings (`audit:price-i18n` fails); do **not** weaken the estimator
+    trilingual-parity asserts to
     accommodate new copy — supply the translations instead; do **not** enrich a
     problem in English without its native MS/ZH depth block
     (`audit:problem-i18n` fails the build on a gap); do **not** add a blog post

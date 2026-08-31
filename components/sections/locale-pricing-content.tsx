@@ -7,6 +7,7 @@ import { getLocalizedQuoteEntry, quoteCatalogList } from "@/config/quote-catalog
 import { getMarketRatesForService, type MarketRateItem } from "@/config/market-rates";
 import { siteConfig } from "@/config/site";
 import { getWhatsAppLink } from "@/lib/whatsapp";
+import { localizeUnits } from "@/lib/direct-answer-trilingual";
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
 
@@ -72,6 +73,12 @@ export function LocalePricingContent() {
           <div className="grid gap-6 lg:grid-cols-2">
             {quoteCatalogList.map((sourceService) => {
               const service = getLocalizedQuoteEntry(sourceService, lang);
+              // The catalog's `startPrice` is the registry's English string
+              // ("RM 14 / sq ft") — the same EN unit leaked into the BM/中文
+              // badge on the pricing hub. Swap the area unit for the locale's
+              // own term, exactly like the DirectAnswer card does (P3-05).
+              const displayStartPrice =
+                lang === "en" ? service.startPrice : localizeUnits(service.startPrice, lang);
               const rates = getMarketRatesForService(service.slug as MarketRateItem["serviceSlug"]);
               const visibleRates = rates.length
                 ? rates.map((rate, index) => localizeRateRow(t, sourceService.slug, index, rate))
@@ -94,7 +101,7 @@ export function LocalePricingContent() {
                     <div>
                       <div className="inline-flex items-center gap-2 rounded-full bg-[#E0F2FE] px-3 py-1 text-[11px] font-extrabold uppercase tracking-[0.24em] text-[#0284C7]">
                         <BadgeCheck className="h-3.5 w-3.5" />
-                        {t("pricingPage.startsFrom")} {service.startPrice}
+                        {t("pricingPage.startsFrom")} {displayStartPrice}
                       </div>
                       <h3 className="mt-4 text-2xl font-extrabold text-[#075985]">{service.title}</h3>
                       <p className="mt-2 max-w-2xl text-sm font-semibold leading-relaxed text-[#475569]">

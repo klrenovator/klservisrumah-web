@@ -61,6 +61,13 @@ const REAL_LOCALE_TREES = [
   // paths are.
   "/ms/search",
   "/zh/search",
+  // Audit §5.4-B1 — the localized pricing hubs. NOT whitelisting them made
+  // the edge 301-strip `/ms/harga` → `/harga` (404!) and `/zh/pricing` →
+  // `/pricing` (EN) even though both pages are built, sitemap-listed and
+  // footer-linked (`hubPath()`). Found live on 2026-08-31 (Fix Wave 28);
+  // permanently guarded by `audit:locale-trees`.
+  "/ms/harga",
+  "/zh/pricing",
 ] as const;
 
 const PROBLEM_REDIRECTS: Record<string, string> = Object.fromEntries(
