@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-30T16:21:55.723Z",
-  "totalPages": 4139,
+  "generatedAt": "2026-08-31T03:00:19.668Z",
+  "totalPages": 4141,
   "trilingualLeaks": {
     "pagesWithBmLeak": 0,
     "pagesWithZhLeak": 0,
@@ -22,7 +22,7 @@
       "pctNapWholePage": 0,
       "faqQuestionMean": 0,
       "pctVague": 0,
-      "meanWords": 259,
+      "meanWords": 264,
       "sampleQuestions": []
     },
     "/about": {
@@ -39,7 +39,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 0,
       "pctVague": 100,
-      "meanWords": 515,
+      "meanWords": 520,
       "sampleQuestions": []
     },
     "/answers/<slug>": {
@@ -63,7 +63,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 4.4,
       "pctVague": 59,
-      "meanWords": 968,
+      "meanWords": 973,
       "sampleQuestions": [
         "Need help applying this to your property?",
         "Are your aircon prices fixed or starting prices?",
@@ -87,7 +87,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 0,
       "pctVague": 0,
-      "meanWords": 2466,
+      "meanWords": 2471,
       "sampleQuestions": []
     },
     "/areas/<area>/<svc>": {
@@ -107,7 +107,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 6,
       "pctVague": 57,
-      "meanWords": 2101,
+      "meanWords": 2106,
       "sampleQuestions": [
         "How fast can you reach Ampang for Aircon Service, Repair & Installation?",
         "Which Ampang neighbourhoods do you cover?",
@@ -137,7 +137,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 3,
       "pctVague": 100,
-      "meanWords": 2116,
+      "meanWords": 2153,
       "sampleQuestions": [
         "Do you paint bungalows and 3-storey homes in Ampang Hilir?",
         "Can you diagnose ceiling leaks in a Bukit Antarabangsa hillside condo?",
@@ -161,7 +161,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 0,
       "pctVague": 100,
-      "meanWords": 593,
+      "meanWords": 598,
       "sampleQuestions": []
     },
     "/blog/<slug>": {
@@ -186,7 +186,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 3.7,
       "pctVague": 100,
-      "meanWords": 1303,
+      "meanWords": 1308,
       "sampleQuestions": [
         "Is 10 feet measured along both walls?",
         "Can the layout include a dishwasher?",
@@ -214,7 +214,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 0,
       "pctVague": 100,
-      "meanWords": 4406,
+      "meanWords": 4411,
       "sampleQuestions": [
         "Gypsum vs Plaster Ceiling: Which One Is Right for Your Malaysian Home?",
         "SPC vs Vinyl vs Laminate Flooring in Malaysia: Which Is Right for You?",
@@ -244,7 +244,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 4,
       "pctVague": 72,
-      "meanWords": 744,
+      "meanWords": 749,
       "sampleQuestions": [
         "Need help applying this to your property?",
         "Is Acson a Malaysian brand?",
@@ -268,7 +268,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 0,
       "pctVague": 100,
-      "meanWords": 1601,
+      "meanWords": 1606,
       "sampleQuestions": []
     },
     "/commercial/<slug>": {
@@ -289,7 +289,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 4,
       "pctVague": 10,
-      "meanWords": 770,
+      "meanWords": 775,
       "sampleQuestions": [
         "Need help applying this to your property?",
         "Can servicing happen without closing the floor?",
@@ -313,7 +313,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 0,
       "pctVague": 0,
-      "meanWords": 1563,
+      "meanWords": 1568,
       "sampleQuestions": []
     },
     "/compare/<slug>": {
@@ -336,7 +336,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 4,
       "pctVague": 61,
-      "meanWords": 717,
+      "meanWords": 722,
       "sampleQuestions": [
         "Need help applying this to your property?",
         "Can acrylic waterproofing handle a flat roof?",
@@ -362,7 +362,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 0,
       "pctVague": 100,
-      "meanWords": 1193,
+      "meanWords": 1198,
       "sampleQuestions": []
     },
     "/contact": {
@@ -379,7 +379,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 0,
       "pctVague": 0,
-      "meanWords": 990,
+      "meanWords": 995,
       "sampleQuestions": []
     },
     "/estimate/*": {
@@ -398,7 +398,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 0,
       "pctVague": 0,
-      "meanWords": 686,
+      "meanWords": 691,
       "sampleQuestions": [
         "1 What do you need?",
         "2 How much of it?"
@@ -426,7 +426,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 5,
       "pctVague": 100,
-      "meanWords": 5567,
+      "meanWords": 5572,
       "sampleQuestions": [
         "Which paint brands do you use for painting?",
         "How long does it take to paint a standard 3-bedroom apartment?",
@@ -457,7 +457,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 3.8,
       "pctVague": 24,
-      "meanWords": 697,
+      "meanWords": 702,
       "sampleQuestions": [
         "Need help applying this to your property?",
         "Which ceiling type suits a condo with low ceilings?",
@@ -483,7 +483,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 0,
       "pctVague": 100,
-      "meanWords": 980,
+      "meanWords": 985,
       "sampleQuestions": []
     },
     "/": {
@@ -502,7 +502,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 6,
       "pctVague": 100,
-      "meanWords": 4519,
+      "meanWords": 4573,
       "sampleQuestions": [
         "What home problem can we fix for you today?",
         "Ready to book your premium home service?"
@@ -525,7 +525,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 5.1,
       "pctVague": 77,
-      "meanWords": 1084,
+      "meanWords": 1089,
       "sampleQuestions": [
         "How many BTU does my room need?",
         "Prefer to talk it through?",
@@ -556,8 +556,8 @@
       "pctNap": 100,
       "pctNapWholePage": 100,
       "faqQuestionMean": 3.3,
-      "pctVague": 16,
-      "meanWords": 566,
+      "pctVague": 20,
+      "meanWords": 795,
       "sampleQuestions": [
         "Need this fixed?",
         "Why does my aircon smell bad?",
@@ -581,7 +581,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 0,
       "pctVague": 0,
-      "meanWords": 2593,
+      "meanWords": 2598,
       "sampleQuestions": []
     },
     "/process/<slug>": {
@@ -605,7 +605,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 4.4,
       "pctVague": 59,
-      "meanWords": 893,
+      "meanWords": 898,
       "sampleQuestions": [
         "Need help applying this to your property?",
         "Are your aircon prices fixed or starting prices?",
@@ -629,7 +629,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 0,
       "pctVague": 0,
-      "meanWords": 1392,
+      "meanWords": 1397,
       "sampleQuestions": []
     },
     "/residential/<slug>": {
@@ -653,7 +653,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 4,
       "pctVague": 7,
-      "meanWords": 790,
+      "meanWords": 795,
       "sampleQuestions": [
         "Need help applying this to your property?",
         "Why does my aircon smell when it starts?",
@@ -677,7 +677,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 0,
       "pctVague": 0,
-      "meanWords": 1720,
+      "meanWords": 1725,
       "sampleQuestions": []
     },
     "/seasonal/<slug>": {
@@ -699,7 +699,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 4,
       "pctVague": 50,
-      "meanWords": 715,
+      "meanWords": 720,
       "sampleQuestions": [
         "Need help applying this to your property?",
         "When should I book a CNY repaint?",
@@ -723,7 +723,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 0,
       "pctVague": 100,
-      "meanWords": 819,
+      "meanWords": 824,
       "sampleQuestions": []
     },
     "/services/<svc>/<sub>": {
@@ -744,7 +744,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 5.5,
       "pctVague": 94,
-      "meanWords": 1471,
+      "meanWords": 1479,
       "sampleQuestions": [
         "Need help applying this to your property?",
         "Is 1.5 HP Aircon Installation in KL relevant for KL and Selangor homes?",
@@ -770,7 +770,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 9.4,
       "pctVague": 72,
-      "meanWords": 1704,
+      "meanWords": 1709,
       "sampleQuestions": [
         "How much does Aircon Service, Repair & Installation cost in KL & Selangor?",
         "What affects Aircon Service, Repair & Installation cost?",
@@ -802,7 +802,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 4.4,
       "pctVague": 100,
-      "meanWords": 2733,
+      "meanWords": 2741,
       "sampleQuestions": [
         "Is aircon service, repair & installation the right service for you?",
         "Do you need full Aircon Service, Repair & Installation, a smaller job, or an inspection first?",
@@ -832,7 +832,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 4,
       "pctVague": 30,
-      "meanWords": 723,
+      "meanWords": 728,
       "sampleQuestions": [
         "Need help applying this to your property?",
         "What is the cheapest way to fix a bathroom leak?",
@@ -856,7 +856,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 0,
       "pctVague": 0,
-      "meanWords": 930,
+      "meanWords": 935,
       "sampleQuestions": []
     },
     "/near-me/<svc>": {
@@ -873,7 +873,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 0,
       "pctVague": 0,
-      "meanWords": 1063,
+      "meanWords": 1068,
       "sampleQuestions": []
     },
     "/pricing": {
@@ -893,7 +893,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 4,
       "pctVague": 0,
-      "meanWords": 3569,
+      "meanWords": 3574,
       "sampleQuestions": [
         "What usually changes the price on site?",
         "How do you set your prices?",
@@ -916,7 +916,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 0,
       "pctVague": 0,
-      "meanWords": 820,
+      "meanWords": 825,
       "sampleQuestions": []
     },
     "/projects": {
@@ -933,7 +933,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 0,
       "pctVague": 0,
-      "meanWords": 361,
+      "meanWords": 366,
       "sampleQuestions": []
     },
     "/services/<svc>/emergency": {
@@ -952,7 +952,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 4,
       "pctVague": 0,
-      "meanWords": 790,
+      "meanWords": 795,
       "sampleQuestions": []
     },
     "/suburbs/<suburb>/<svc>": {
@@ -972,7 +972,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 3,
       "pctVague": 20,
-      "meanWords": 1186,
+      "meanWords": 1191,
       "sampleQuestions": [
         "Do you provide same-day service in Balakong?",
         "Can your team work inside condos and managed buildings in Balakong?",
@@ -996,7 +996,7 @@
       "pctNapWholePage": 100,
       "faqQuestionMean": 0,
       "pctVague": 0,
-      "meanWords": 900,
+      "meanWords": 905,
       "sampleQuestions": []
     }
   }

@@ -15,34 +15,54 @@ async function SearchPageFinder({ searchParams }: { searchParams: Promise<{ q?: 
   return <SmartServiceFinder initialQuery={resolved.q || ""} />;
 }
 
-export const metadata: Metadata = buildMetadata({
-  title: "Carian Servis Rumah Pintar — Pengesyoran 3 Bahasa Servis Rumah & Pengiraan Kos",
-  description:
-    "Cari servis rumah KL Servis Rumah dalam Bahasa Melayu, Inggeris, atau Cina. Laman carian pintar dengan pengecaman problema, harga anggaran, kalkulator kos, dan harga tetap sebelum kerja bermula.",
-  path: "/ms/search",
-  languageUrls: {
-    en: "/search",
-    ms: "/ms/search",
-    zh: "/zh/search"
-  },
-  ogLocale: "ms_MY",
-  ogAlternateLocales: ["en_MY", "zh_MY"],
-  keywords: [
-    "carian servis rumah",
-    "perkhidmatan rumah KL Bahasa Melayu",
-    "carian masalah rumah",
-    "kalkulator kos renovation",
-    "tukang rumah KL"
-  ]
-});
+// Audit P3-15: query variants (/ms/search?q=…) are near-duplicate states and
+// stay noindex; the bare finder page is indexable and crawlable (robots.txt
+// now allows /search for the WebSite SearchAction entry point).
+export async function generateMetadata({
+  searchParams
+}: {
+  searchParams: Promise<{ q?: string }>;
+}): Promise<Metadata> {
+  const resolved = await searchParams;
+  const hasQuery = Boolean(resolved.q && resolved.q.trim());
+  return {
+    ...buildMetadata({
+      title: "Carian Servis Rumah Pintar — Pengesyoran 3 Bahasa Servis Rumah & Pengiraan Kos",
+      description:
+        "Cari servis rumah KL Servis Rumah dalam Bahasa Melayu, Inggeris, atau Cina. Laman carian pintar dengan pengecaman problema, harga anggaran, kalkulator kos, dan harga tetap sebelum kerja bermula.",
+      path: "/ms/search",
+      languageUrls: {
+        en: "/search",
+        ms: "/ms/search",
+        zh: "/zh/search"
+      },
+      ogLocale: "ms_MY",
+      ogAlternateLocales: ["en_MY", "zh_MY"],
+      keywords: [
+        "carian servis rumah",
+        "perkhidmatan rumah KL Bahasa Melayu",
+        "carian masalah rumah",
+        "kalkulator kos renovation",
+        "tukang rumah KL"
+      ]
+    }),
+    robots: {
+      index: !hasQuery,
+      follow: true
+    }
+  };
+}
 
 const POPULAR_QUERIES = [
   { label: "Harga cat rumah", href: "/ms/services/painting/cost" },
   { label: "PU grouting kalis air", href: "/ms/services/waterproofing" },
   { label: "Baiki siling plaster", href: "/ms/services/ceiling" },
   { label: "Baiki bilik air bocor", href: "/ms/problems/leaking-bathroom" },
-  { label: "Tukang paip same-day KL", href: "/ms/near-me/plumbing" },
-  { label: "Pasang TV Petaling Jaya", href: "/ms/areas/petaling-jaya/handyman" },
+  // No /ms/near-me or /ms/areas trees exist (middleware 301s them to the EN
+  // tree) — link to the in-tree money/tool pages instead, so MS visitors stay
+  // in their language tree with no redirect hop.
+  { label: "Tukang paip same-day KL", href: "/ms/services/plumbing" },
+  { label: "Pasang TV Petaling Jaya", href: "/ms/services/handyman" },
   { label: "Harga kabel elektrik", href: "/ms/services/electrical/cost" }
 ];
 

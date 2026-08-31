@@ -6,6 +6,54 @@
 
 ## Current State (Update this each session)
 
+> **VALUE QUEUE ✅ CLEARED (2026-08-31, Fix Wave 25):** Every unblocked
+> code-level audit finding is now implemented. Closed this wave: **P3-15**
+> (`/search` un-blocked in robots.txt so the WebSite SearchAction entry point
+> is crawlable; bare `/search` + `/ms/search` + `/zh/search` are indexable,
+> `/search?q=…` variants are `noindex,follow` in all 3 trees; EN page emits the
+> 4-URL hreflang cluster; `/ms/search` & `/zh/search` were added to middleware
+> `REAL_LOCALE_TREES` — they previously 301-redirected to `/search` making the
+> localized finder a dead-end); **P3-16** (sitemap-news.xml rebuilt as a
+> dynamic last-48-hour EN/MS/ZH feed — returns a valid empty `<urlset>` when no
+> post is fresh, instead of listing 216 stale articles); **P3-19**
+> (`aeo-faq.txt` expanded 8 → 24 data-grounded Q&As via `buildAeoFaq()` in
+> `scripts/generate-ai-context.ts`); **P4-08** (primary CTAs now lead with the
+> fixed-quote differentiator EN/MS/ZH — "Get a fixed quote" / "Dapatkan sebut
+> harga tetap" / "获取固定报价" — across hero/service heroes/grid/sticky/footer;
+> new `common.serviceNameGeneric` keeps the hero WhatsApp prefill from carrying
+> a CTA label); **P4-03** (exit-intent popup no longer fires on a 30s timer —
+> genuine mouse-leave-towards-chrome only); **P4-16** (footer Explore split
+> into primary + de-emphasised secondary tiers; new `hubPath()` helper routes
+> pricing/blog/FAQ/problems/pods links to real in-tree URLs — `/ms/harga`,
+> `/zh/pricing`, `/ms/soalan-lazim`, etc. — zero cross-tree footer links);
+> **P4-14** (`lib/seo.ts` `getAreaPlaceSchema` emits a full `#place` City entity
+> with geo+State on each area hub; `getAreaServiceSchema` +
+> `getLocalBusinessServiceSchema` @id-reference it; homepage 37-city areaServed
+> @id-links to the hub Places; type stays `Place` on sub-pages to respect the
+> schema-size gate); **P4-10 code half** (all 4 FeaturedProjects + 3 BeforeAfter
+> homepage cards are now real `<Link>`s to `/projects` / the matching service
+> page, tree-prefixed and aria-labelled).
+>
+> All gates PASS: prebuild **329,897 assertions × 0**, lint 0/0, type-check,
+> build **4,141 HTML**, audit:html 0/0, audit:links **312,968 + 55 → 0 broken**,
+> seo-head **4,114 = 4,114**, schema-size PASS, bp1 (NAP strip 62.8%),
+> location-similarity **69.5% max** (<70%), meta, seo:audit, part5 0 JSON-LD
+> errors, part3 BM/ZH leaks 0/0. Full log:
+> `docs/full-website-deep-audit/FIX-WAVE-25-REPORT.md`.
+>
+> **Exact next stop: ONLY owner-blocked items remain — no unblocked code work
+> is left.** Next work needs owner input: P4-10 case-study *pages* with real
+> photos + itemised cost (P5-12 photography); P4-09/P2-21/P3-09/P5-09 verified
+> reviews → Review/AggregateRating schema + stats/founding-year fact check;
+> P2-22 outbound authority citations (editorial decision); P4-11 named team/bio
+> page (owner bios); P4-13 / P2-C4 / BP-1 phase 2 local-page restructure
+> (owner GSC keep-set — do NOT add/delete location pages on assumptions);
+> P0 www/non-www host canonical (live edge/CDN access). Do not invent owner
+> facts. If the owner provides none of the above, the audit backlog is fully
+> actioned; focus on publishing fresh blog batches (BLOG_PRODUCTION_LIST.md).
+>
+> ---
+>
 > **§5.4-B1 ✅ COMPLETE (2026-08-30, Fix Wave 24):** The Bahasa Melayu
 > Pricing Hub (`/ms/harga`) and Chinese Pricing Hub (`/zh/pricing`) were
 > authored and linked in a reciprocal 3-URL hreflang cluster with `/pricing`.
@@ -16,7 +64,9 @@
 > **4,114** total). All gates PASS: prebuild **329,897 × 0**, type-check,
 > lint 0/0. Full log: `docs/full-website-deep-audit/FIX-WAVE-24-REPORT.md`.
 >
-> **Exact next stop: Priority Work Queue Value Queue** (P4-10 case studies
+> **[SUPERSEDED by Fix Wave 25, 2026-08-31 — the Value Queue below is now
+> DONE; see the Current State block at the top of this file.]** Exact next
+> stop was: Priority Work Queue Value Queue (P4-10 case studies
 > with photos + itemized cost, P4-14 per-area `Service` entities in
 > LocalBusiness schema, P4-08 CTA rewording, P4-16 footer tiering, P3-15/16).
 >

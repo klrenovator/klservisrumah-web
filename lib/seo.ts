@@ -2,6 +2,7 @@ import { siteConfig } from "@/config/site";
 import { toIsoDate, blogDateModified } from "@/lib/utils";
 import { servicesData, type ServiceDetail } from "@/config/services-data";
 import type { AreaDetail } from "@/config/area-data";
+import { areaPages } from "@/config/area-data";
 import type { SuburbDetail } from "@/config/suburb-data";
 import type { BlogPost } from "@/config/blog-data";
 import type { SubService } from "@/config/services-data";
@@ -48,15 +49,106 @@ function geoCoordinates() {
  * Country sub-node) on every page produced 220,000+ City nodes and 22–31 KB
  * of JSON-LD per page (Part 5 §P5-04).
  */
+/** Audit P4-14 — name → area-page lookup so homepage City nodes can reference
+ *  the full Place entities (geo + State) emitted once per area hub page. */
+const areaPageByName = new Map(areaPages.map((area) => [area.name, area]));
+
 export function getServiceAreaSchema(areas = siteConfig.areas) {
-  return areas.map((area) => ({
-    "@type": "City",
-    name: area,
-    containedInPlace: {
-      "@type": "Country",
-      name: "Malaysia"
+  return areas.map((area) => {
+    const page = areaPageByName.get(area);
+    // Cities with their own /areas/<slug> hub reference the hub's full Place
+    // node (which carries GeoCoordinates + State); others stay name-only.
+    if (page) {
+      return { "@id": areaPlaceId(page.slug) };
     }
-  }));
+    return {
+      "@type": "City",
+      name: area,
+      containedInPlace: {
+        "@type": "Country",
+        name: "Malaysia"
+      }
+    };
+  });
+}
+
+/**
+ * Audit P4-14 — per-area Place entity, defined once.
+ *
+ * The area hub page (`/areas/<slug>`) emits this FULL node: a City with real
+ * GeoCoordinates, the containing State and a stable `@id`. Every other surface
+ * that serves the same area (the 1,500+ area×service pages, the homepage
+ * organization node) references it by `@id` instead of re-inlining a partial
+ * city object, so Google's parser can merge one canonical Place entity per
+ * coverage city and associate every Service offered there with a geo-located
+ * place — the entity association P4-14 found missing.
+ */
+export function areaPlaceId(slug: string) {
+  return `${baseUrl}/areas/${slug}#place`;
+}
+
+export function getAreaPlaceSchema(area: {
+  slug: string;
+  name: string;
+  state: string;
+  lat: number;
+  lng: number;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "City",
+    "@id": areaPlaceId(area.slug),
+    name: area.name,
+    url: `${baseUrl}/areas/${area.slug}`,
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: area.lat,
+      longitude: area.lng
+    },
+    containedInPlace: { "@type": "State", name: area.state }
+  };
+}
+
+/**
+ * Audit P4-14 — the area hub page's Service node.
+ *
+ * Compared with the previous inline node this adds: (a) the area's real
+ * GeoCoordinates on the served Place (via the shared `@id` Place), and (b) an
+ * Offer carrying the site's published from-price floor, so the geo-targeted
+ * Service entity is commercially complete. Stays a single small node — the
+ * 8 KB non-FAQ sub-page ceiling is not threatened.
+ */
+export function getAreaServiceSchema(area: {
+  slug: string;
+  name: string;
+  state: string;
+  lat: number;
+  lng: number;
+  description?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${baseUrl}/areas/${area.slug}#service`,
+    name: `Home services in ${area.name}`,
+    description:
+      area.description ??
+      `Painting, plumbing, ceiling repair, waterproofing, electrical and handyman services in ${area.name}, KL & Selangor.`,
+    url: `${baseUrl}/areas/${area.slug}`,
+    provider: { "@id": `${baseUrl}/#organization` },
+    areaServed: { "@id": areaPlaceId(area.slug) },
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "MYR",
+      availability: "https://schema.org/InStock",
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        priceCurrency: "MYR",
+        description:
+          "Itemised fixed-price quote confirmed in writing before work begins; published from-prices start at RM 120."
+      }
+    }
+  };
 }
 
 /**
@@ -463,15 +555,35 @@ export function getLocalBusinessServiceSchema(area: AreaDetail | SuburbDetail, s
     // Audit P5-14: raster only — SVG heroes map to the next/og template.
     image: absoluteUrl(rasterOgFor(service.heroImage, `${service.title} in ${area.name}`, "service")),
     provider: { "@id": `${baseUrl}/#organization` },
-    areaServed: {
-      "@type": "Place",
-      name: area.name,
-      geo: {
-        "@type": "GeoCoordinates",
-        latitude: area.lat,
-        longitude: area.lng
-      }
-    },
+    // Audit P4-14: area (city) pages reference the hub's full Place @id (City
+    // with GeoCoordinates + State) so every service×area pair merges with one
+    // canonical geo-located Place entity; the inline name/geo keeps the node
+    // self-describing for parsers that do not resolve cross-page @ids.
+    // Suburbs have no area hub, so they keep their self-contained Place.
+    areaServed:
+      "parentArea" in area
+        ? {
+            "@type": "Place",
+            name: area.name,
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: area.lat,
+              longitude: area.lng
+            }
+          }
+        : {
+            // @id points at the hub page's canonical City Place node (P4-14);
+            // type stays `Place` because a service page describes a served
+            // location, not the city entity itself (schema-size gate).
+            "@id": areaPlaceId(area.slug),
+            "@type": "Place",
+            name: area.name,
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: area.lat,
+              longitude: area.lng
+            }
+          },
     offers: (() => {
       const priced = parsePricedOffer(service.startPrice);
       return {

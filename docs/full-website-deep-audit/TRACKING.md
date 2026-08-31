@@ -89,6 +89,7 @@
 | 2026-08-30 | **Fix Wave 22** — **P3-12 phase 2, tranche 8**: native editorial MS/ZH translations for all 29 `residential` pods (232 localized Q&As) sourced from `residentialCopy` in `config/content-pod-copy.ts` (editorial, no MT); `residential` promoted to a complete gated family. Built corpus verified 58/58 localized `/ms/residential/*` + `/zh/residential/*` pages and 232/232 visible Q&As byte-identical to FAQPage schema. **P3-12 phase 2 COMPLETE — 146/146 pods, 1168 localized Q&As.** All gates PASS: prebuild **329,897 × 0**, lint 0/0, type-check, build **4,139 HTML**, audit:html 0 fatal/0 warnings, audit:links 312,732+56 → 0 broken, seo-head 4,112 = 4,112 (0 dup metadata, 0 warnings), schema-size, bp1 (NAP 62.8%), location-similarity 69.4%, meta, seo:audit, part5 0 JSON-LD errors, part3 corpus 4,139 pages with BM/ZH leaks 0/0. | ✅ TRANCHE 8 COMPLETED — **P3-12 phase 2 COMPLETE.** See `FIX-WAVE-22-REPORT.md` |
 | 2026-08-30 | **Fix Wave 23** — **P2-16 tranche 3 (FINAL): all remaining 44 problem pages enriched — 74/74 COMPLETE.** 132 hand-authored native depth sets (EN+BM+中文: `overview`/`diyChecks[4]`/`prevention[4]`/`costDetail` per page) added to 9 records in `config/problem-data.ts` + 35 in `config/problem-data-extra.ts` + 88 blocks in `config/problem-body-i18n.ts`, in `p2-16-wordcount.ts` thinness order (no owner GSC data, per the standing instruction); prices anchored exactly to each record's published `costRange`/FAQ figures. New permanent prebuild gate: `audit:problem-i18n` **check 10** — every indexable problem must carry the full depth set (negative-tested). Problem template: min 242 / mean 471 / max 728 config words (was mean 383, 15 pages ≤233). All gates PASS: problem-i18n **74 × ms/zh, 0 gaps/leaks**, prebuild **329,897 × 0**, lint 0/0, type-check, build **4,141 HTML**, audit:html 0/0, audit:links 0 broken, seo-head 0 dup/0 warnings, schema-size, bp1 (NAP 62.8%), location-similarity 68.8% max, meta, seo:audit, part5 re-walk 4,139 pages / 0 JSON-LD errors / 0 dup titles+H1s; rendered EN/MS/ZH spot-checks: native overview + all 3 new sections visible, 0 cross-language leaks in visible HTML. | ✅ **P2-16 COMPLETE — 74/74.** See `FIX-WAVE-23-REPORT.md` |
 | 2026-08-30 | **Fix Wave 24** — **§5.4-B1 BM Commercial Tree & Pricing Hub Expansion COMPLETE.** Dedicated Bahasa Melayu Pricing Hub (`/ms/harga`) and Chinese Pricing Hub (`/zh/pricing`) authored and linked in a 3-URL reciprocal hreflang cluster with `/pricing`; transactional query aliases (`/ms/harga/*`, `/ms/pricing`, `/ms/services/*/harga`) 301-redirected to canonical localized money pages (`/ms/services/*/cost`); `LocalePricingContent` updated to keep visitors inside their active language tree; sitemap updated (+2 URLs = 4,114 total). All gates PASS: prebuild **329,897 × 0**, lint 0/0, type-check. | ✅ **§5.4-B1 COMPLETE.** See `FIX-WAVE-24-REPORT.md` |
+| 2026-08-31 | **Fix Wave 25** — **Value Queue cleared (all unblocked code-level items).** **P3-15** SearchAction↔robots consistency (`/search` un-blocked in robots.txt; bare finder indexable while `/search?q=…` noindex in all 3 trees; EN hreflang cluster; `/ms/search`+`/zh/search` added to middleware `REAL_LOCALE_TREES` — they were 301 dead-ends; MS/ZH popular-shortcut links retargeted to in-tree routes) · **P3-16** news sitemap rebuilt as a dynamic last-48-hour EN/MS/ZH feed (valid empty `<urlset>` when stale) · **P3-19** `aeo-faq.txt` expanded 8→24 data-grounded Q&As · **P4-08** primary CTAs reworded around the fixed-quote differentiator EN/MS/ZH (hero/service heroes/grid/sticky/footer + neutral WhatsApp-prefill key) · **P4-03** exit-intent 30s timer removed (mouse-leave only) · **P4-16** footer Explore split into primary/secondary tiers + tree-native `hubPath()` links (pricing/blog/FAQ/problems/pods resolve in-tree; zero cross-tree footer leaks) · **P4-14** per-area Place entities (`#place` City w/ geo+State on hubs, @id-referenced by the 1,500+ area×service pages and the homepage 37-city areaServed) · **P4-10** all FeaturedProjects (4) + BeforeAfter (3) cards converted to real `<Link>`s (gallery/service pages, aria-labelled). All gates PASS: prebuild **329,897 × 0**, lint 0/0, type-check, build **4,141 HTML**, audit:html 0/0, audit:links **312,968+55 → 0 broken**, seo-head **4,114=4,114**, schema-size PASS, bp1 (NAP 62.8%), location-similarity 69.5% max, meta, seo:audit, part5 0 JSON-LD errors, part3 BM/ZH leaks 0/0. | ✅ See `FIX-WAVE-25-REPORT.md` |
 
 ---
 
@@ -157,7 +158,31 @@ ships thin again. See `FIX-WAVE-23-REPORT.md`.
 
 **Wave 24 (2026-08-30) closed §5.4-B1 in full**: the Bahasa Melayu Pricing Hub (`/ms/harga`) and Chinese Pricing Hub (`/zh/pricing`) were authored and linked in a reciprocal 3-URL hreflang cluster with `/pricing`; all `harga` transactional queries (`/ms/harga/*`, `/ms/pricing`, `/ms/services/*/harga`) 301-redirect to canonical localized money pages (`/ms/services/*/cost`); `LocalePricingContent` was updated to keep visitors inside their active language tree; sitemap updated to include the full pricing cluster (+2 indexable pages = 4,114 total). See `FIX-WAVE-24-REPORT.md`.
 
-**⏳ EXACT NEXT STOP: Priority Work Queue Value Items** (P4-10 case studies with photos + itemized cost, P4-14 per-area `Service` entities in LocalBusiness schema, P4-08 CTA rewording, P4-16 footer tiering, P3-15/16). Everything else left is owner-blocked or needs owner data/access.
+**✅ Fix Wave 25 (2026-08-31) cleared the Priority Work Queue Value Items**:
+P3-15 (SearchAction↔robots + `/ms/search`+`/zh/search` promoted to real trees),
+P3-16 (dynamic last-48h news sitemap), P3-19 (`aeo-faq.txt` 8→24 Q&As),
+P4-08 (fixed-quote CTA rewording ×3 locales), P4-03 (exit-intent timer
+removed), P4-16 (footer tiering + tree-native links), P4-14 (per-area Place
+entities) and P4-10's code half (all 7 trust cards are now real links). Full
+log: `FIX-WAVE-25-REPORT.md`.
+
+**⏳ EXACT NEXT STOP: only owner-blocked / owner-data items remain.** No
+unblocked audit finding is left to implement in code. The remaining PENDING
+rows are all gated on the owner:
+- **P4-10 content half** — real per-project case-study pages with actual
+  photos + itemised cost (needs owner photography, P5-12; the link scaffolding
+  is done — cards already route to `/projects` + service pages).
+- **P4-09 / P2-21 / P3-09 / P5-09** — verified reviews → AggregateRating/Review
+  schema; stats/founding-year/employee-count fact verification (owner GSC/GBP).
+- **P2-22** — outbound authority citations (owner editorial decision).
+- **P4-11** — named team/bio page (owner bios).
+- **P4-13 / P2-C4 / BP-1 phase 2** — local-page restructure (blocked on owner
+  GSC keep-set; do NOT add/delete location pages on traffic assumptions).
+- **P0 www/non-www host canonical** — needs live edge/CDN access.
+- **P5-12** — real project/team photography program.
+If the owner supplies any of the above (review verification, GSC export,
+photos, bios, edge access), that is the next work — otherwise the audit backlog
+is fully actioned and the site is on gates. Do **not** invent owner facts.
 
 0. **What Wave 14 changed (2026-08-29):** new
    `components/sections/locale-service-cost-body.tsx` (shared,
@@ -230,7 +255,17 @@ ships thin again. See `FIX-WAVE-23-REPORT.md`.
 8. **Still-missing access (re-request from owner):** GSC, live HTTP/edge check,
    CWV/CrUX, GBP + review verification, owner fact confirmations (reviews,
    founding year, staff, stats), photography (P5-12).
-10. **Next code-level candidates (P2/P3, unblocked) — value order:**
+10. **Next code-level candidates — ✅ VALUE QUEUE CLEARED IN WAVE 25
+   (2026-08-31).** The items this list used to name are all done:
+   §5.4-B1 (Wave 24), **P4-10 code half** (all 7 trust cards are real links;
+   case-study *pages* stay owner-photo dependent), **P4-14** (per-area Place
+   entities), **P4-08** (fixed-quote CTAs), **P4-16** (footer tiering +
+   tree-native links), **P3-15/P3-16** (`/search` un-blocked + noindex query
+   variants + `/ms//zh/search` promoted to real trees; dynamic 48h news
+   sitemap), **P3-19** (`aeo-faq.txt` 24 Q&As). **No unblocked code-level
+   finding remains** — every PENDING row is owner-blocked (reviews/facts,
+   photos, bios, outbound-citation decision, GSC keep-set, www edge). History
+   of the P3-12 rollout is retained below.
    **P3-12 phase 2** — ✅ **COMPLETE: 146/146 pods.** Waves 15–19 finished
    all 10 `top`, all 10 `guides`, all 10 `guidesMaintenance`, all 8
    `seasonal` and all 18 `compare` pods; Wave 20 finished all 32 `brands`
@@ -283,15 +318,15 @@ ships thin again. See `FIX-WAVE-23-REPORT.md`.
 | P1 | P4-12 — Embed coverage map; set `hasMap` to a valid map URL (0 iframes today) | ✅ DONE (Fix Wave 9 — static SVG coverage map on `/areas` + 37 area pages; hasMap → Google Maps universal URL; CSP-safe, no owner key) |
 | P1 | P4-06 — Add include/exclude list to service pages | ✅ DONE (Fix Wave 9 — rate-book-driven included/not-included block on 29 service pages) |
 | P1 | P4-11 — Team/authors page + bio schema (E-E-A-T Experience pillar) | 🟡 PARTIAL (Fix Wave 9 — code half done: unverifiable "written by local tradesmen" claim re-attributed; named team page ⏳ owner bios) |
-| P1 | P4-16 — Rebalance internal link equity (hub indexes vs content children 7–9) | 🟡 PARTIAL (Fix Wave 9 — cost guide linked from service hero +29 inbounds; footer tiering / full rebalance still ⏳ PENDING) |
+| P1 | P4-16 — Rebalance internal link equity (hub indexes vs content children 7–9) | ✅ DONE (Fix Wave 9 — cost guide linked from service hero +29 inbounds; **Fix Wave 25 — footer Explore split into primary/secondary tiers + tree-native `hubPath()` links (pricing/blog/FAQ/problems/pods → in-tree /ms/harga, /zh/pricing, etc.), zero cross-tree footer leaks**) |
 | P1 | P4-13 — Restructure the local pages (site-wide price + parametric body) | ⏳ PENDING (**unblocked by BP-1** — scope cut 3,654 → 1,508; this is **BP-1 phase 2**) |
 | P1 | P4-17 — Link aircon problems from aircon service + tools (1–2 inbound) | ✅ DONE (Fix Wave 9 — aircon shows 6 problems + 4 aircon cost-tool links) |
 | P1 | P4-02 — Mobile quote box above the fold (behind full-viewport slideshow today) | ✅ DONE (Fix Wave 9 — static quick-quote form inside the hero viewport; mobile min-height content-driven) |
-| P2 | P4-10 — Make FeaturedProjects/BeforeAfter cards real links; add case-study pages | ⏳ PENDING |
-| P2 | P4-03 — Consolidate floating CTAs (up to 4 on desktop service pages); exit-intent 30s timer → mouse-leave | 🟡 PARTIAL (Fix Wave 9 — single desktop float now (WhatsApp desk removed); exit-intent 30s timer → mouse-leave still ⏳) |
-| P2 | P4-14 — Per-area `Service` entities in LocalBusiness schema | ⏳ PENDING |
+| P2 | P4-10 — Make FeaturedProjects/BeforeAfter cards real links; add case-study pages | 🟡 MOSTLY DONE (**Fix Wave 25 — all 4 FeaturedProjects cards + all 3 BeforeAfter cards are now real `<Link>`s (gallery hub / matching service page, tree-prefixed, aria-labelled); code half complete.** Real per-project case-study pages with photos + itemised cost remain owner-photography dependent — see P5-12) |
+| P2 | P4-03 — Consolidate floating CTAs (up to 4 on desktop service pages); exit-intent 30s timer → mouse-leave | ✅ DONE (Fix Wave 9 — single desktop float; **Fix Wave 25 — exit popup 30s timer removed, mouse-leave exit-intent only**) |
+| P2 | P4-14 — Per-area `Service` entities in LocalBusiness schema | ✅ DONE (Fix Wave 25 — area hubs emit full `#place` City Place entity (geo+State); area×service pages @id-reference it; homepage 37-city areaServed @id-linked to the hub Place entities; schema-size gate green) |
 | P2 | P4-15 — NAP contact strip in content block (5,813 pages footer-only) | ✅ DONE (Fix Wave 10 — 2,112/3,652 built pages = 57.8% carry the strip in content, baseline 0%; asserted in `audit:bp1` check 8) |
-| P2 | P4-08 — Reword primary CTAs around fixed-quote/no-deposit | ⏳ PENDING |
+| P2 | P4-08 — Reword primary CTAs around fixed-quote/no-deposit | ✅ DONE (Fix Wave 25 — primary CTA labels now lead with the fixed-quote differentiator EN/MS/ZH: "Get a fixed quote" / "Dapatkan sebut harga tetap" / "获取固定报价" across hero, service heroes, services grid, sticky button, footer; neutral `serviceNameGeneric` added so WhatsApp prefills don't carry a CTA label) |
 | P3 | P4-18 — Anchor-text profile healthy (90% descriptive / 7% generic / 0% branded) — no action required | ⏳ PENDING |
 
 ## Part 3 — Priority Work Queue (findings added)
@@ -308,8 +343,8 @@ ships thin again. See `FIX-WAVE-23-REPORT.md`.
 | P1 | P3-09 — Owner verification of stats/claims (1,200+, 15+ Pros, 120+/120, 30–60 min, "written by local tradesmen") | ⏳ PENDING (owner) |
 | P2 | P3-06 — Blog: FAQPage schema + promote top FAQ to question H2 (216 posts) | ✅ DONE (Fix Wave 10 — 193 EN + 192 MS + 192 ZH blog posts emit FAQPage JSON-LD; top FAQ promoted to H2) |
 | P2 | P3-12 — MS/ZH routes for kept pods (215 details + 10 hubs × 2 locales; i18n data already exists) | ✅ DONE — Route rollout (Fix Wave 11) · cost routes (Fix Wave 14, PR #191) · **Phase 2 editorial FAQ translation 146/146** (Fix Waves 15–20: top/guides/guidesMaintenance/seasonal/compare/brands = 704 Q&As; Wave 21 commercial 29 = 232; Wave 22 residential 29 = 232 → **1168 localized Q&As**; every tranche's built routes visible/schema exact; permanent prebuild gate protecting all eight completed families). No MT. |
-| P2 | P3-15/P3-16/P3-17 — SearchAction vs /search; news-sitemap freshness; Applebot-Extended/DuckAssistBot | 🟡 PARTIAL (Fix Wave 10 — Applebot-Extended/DuckAssistBot done in robots.ts; SearchAction vs /search + news-sitemap still ⏳) |
-| P2 | P3-10/P3-19/P3-13 — NAP in content block; link+expand aeo-faq.txt; hidden empty-state text | ✅ DONE (Fix Wave 10 — NAP strip = P4-15; llms.txt links aeo-faq.txt = P3-18; empty-state removed = P3-02. aeo-faq.txt expansion stays P2 with content work) |
+| P2 | P3-15/P3-16/P3-17 — SearchAction vs /search; news-sitemap freshness; Applebot-Extended/DuckAssistBot | ✅ DONE (Fix Wave 10 — Applebot-Extended/DuckAssistBot; **Fix Wave 25 — P3-15: `/search` allowed in robots.txt + bare finder indexable & query variants noindex + `/ms/search` & `/zh/search` added to REAL_LOCALE_TREES (were 301 dead-ends) with full hreflang cluster; P3-16: news sitemap rebuilt as dynamic last-48h EN/MS/ZH feed (valid-when-empty)**) |
+| P2 | P3-10/P3-19/P3-13 — NAP in content block; link+expand aeo-faq.txt; hidden empty-state text | ✅ DONE (Fix Wave 10 — NAP strip = P4-15; llms.txt links aeo-faq.txt = P3-18; empty-state removed = P3-02; **Fix Wave 25 — P3-19 depth half closed: `aeo-faq.txt` expanded 8 → 24 data-grounded Q&As (deposit, quoting, hours, languages, emergency, per-service pricing, commercial, calculators, coverage, guides)**) |
 
 ---
 

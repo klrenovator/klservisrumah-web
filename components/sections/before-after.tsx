@@ -1,11 +1,22 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { CheckCircle2, AlertCircle } from "lucide-react";
 import { useTranslations } from "@/hooks/use-translations";
+import { useLang } from "@/context/lang-context";
+
+/**
+ * Audit P4-10 — the Before/After cards were inert (no click target, no
+ * case-study URL). Each card now links to the matching service page for its
+ * trade, so the trust proof routes visitors toward a real conversion surface.
+ */
+const COMPARISON_SERVICE_SLUGS = ["painting", "waterproofing", "ceiling"] as const;
 
 export function BeforeAfter() {
   const t = useTranslations();
+  const { lang } = useLang();
+  const prefix = lang === "ms" ? "/ms" : lang === "zh" ? "/zh" : "";
 
   const comparisons = [1, 2, 3].map((n) => ({
     title: t(`home.beforeAfter.items.${n}.title`),
@@ -13,7 +24,8 @@ export function BeforeAfter() {
     location: t(`home.beforeAfter.items.${n}.location`),
     before: t(`home.beforeAfter.items.${n}.before`),
     after: t(`home.beforeAfter.items.${n}.after`),
-    benefit: t(`home.beforeAfter.items.${n}.benefit`)
+    benefit: t(`home.beforeAfter.items.${n}.benefit`),
+    href: `${prefix}/services/${COMPARISON_SERVICE_SLUGS[n - 1]}`
   }));
 
   return (
@@ -36,7 +48,12 @@ export function BeforeAfter() {
         {/* Comparison grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {comparisons.map((item, idx) => (
-            <div key={idx} className="bg-white rounded-3xl p-6 border border-slate-100 shadow-3xs flex flex-col justify-between">
+            <Link
+              key={idx}
+              href={item.href}
+              aria-label={`${item.service} — ${item.title} in ${item.location} · ${t("common.viewDetails")}`}
+              className="bg-white rounded-3xl p-6 border border-slate-100 shadow-3xs flex flex-col justify-between hover:border-[#0EA5E9]/40 hover:shadow-lg transition-all duration-300 group"
+            >
               <div>
                 
                 {/* Badge tags */}
@@ -88,7 +105,11 @@ export function BeforeAfter() {
                 <span className="text-[#0EA5E9] bg-[#E0F2FE]/25 px-2.5 py-1 rounded-md">{item.benefit}</span>
               </div>
 
-            </div>
+              <span className="mt-3 text-[10px] font-black uppercase tracking-widest text-[#0EA5E9] group-hover:text-[#075985] transition-colors">
+                {t("home.beforeAfter.viewService", { defaultValue: "View service & pricing" })} →
+              </span>
+
+            </Link>
           ))}
         </div>
 

@@ -35,12 +35,32 @@ import { OPEN_CONSENT_SETTINGS_EVENT } from "@/lib/consent";
  * reused from the existing `menu.links.*` namespace (already translated to
  * EN/MS/ZH), so this adds no new translation debt.
  */
-const EXPLORE_LINKS = [
+/**
+ * Audit P4-16 — value-tiered "Explore" links.
+ *
+ * The footer previously rendered one flat 16-item list, giving every content
+ * hub equal link weight on every page — so thin front-door index pages
+ * absorbed the same equity as the money/decision surfaces. Links are now split
+ * into two tiers: PRIMARY links to the highest-value discovery + conversion
+ * surfaces (prominent list), and a compact, de-emphasised "all sections"
+ * cluster for the remaining content hubs. Every hub stays reachable from
+ * every page (the 146 pod/guide children would otherwise lose their persistent
+ * inbound link and regress to the pre-history zero-inbound state documented
+ * above), but the structural + visual emphasis now concentrates on the
+ * surfaces that drive decisions.
+ */
+const PRIMARY_LINKS = [
   { href: "/areas", key: "nav.areas" },
   { href: "/near-me", key: "menu.links.nearMe" },
   { href: "/problems", key: "nav.problems" },
   { href: "/answers", key: "menu.links.answers" },
   { href: "/guides", key: "menu.links.guides" },
+  { href: "/blog", key: "nav.blog" },
+  { href: "/faq", key: "nav.faq" },
+  { href: "/about", key: "nav.about" }
+] as const;
+
+const MORE_LINKS = [
   { href: "/process", key: "menu.links.process" },
   { href: "/compare", key: "menu.links.compare" },
   { href: "/top", key: "menu.links.top" },
@@ -48,11 +68,36 @@ const EXPLORE_LINKS = [
   { href: "/residential", key: "menu.links.residential" },
   { href: "/commercial", key: "menu.links.commercial" },
   { href: "/seasonal", key: "menu.links.seasonal" },
-  { href: "/projects", key: "menu.links.projects" },
-  { href: "/blog", key: "nav.blog" },
-  { href: "/faq", key: "nav.faq" },
-  { href: "/about", key: "nav.about" }
+  { href: "/projects", key: "menu.links.projects" }
 ] as const;
+
+/**
+ * Tree-native hub path. Content hubs that have a real localized route
+ * (services, pricing, blog, FAQ, problems and the content pods) resolve inside
+ * the active language tree so MS/ZH visitors never take a 301 hop out of their
+ * tree; EN-only surfaces (areas, near-me, projects, contact — no localized
+ * route exists by design) keep their canonical English path, matching the
+ * navbar's chrome convention.
+ */
+function hubPath(englishHref: string, lang: "en" | "ms" | "zh"): string {
+  if (lang === "en") return englishHref;
+  const map: Record<string, { ms: string; zh: string }> = {
+    "/pricing": { ms: "/ms/harga", zh: "/zh/pricing" },
+    "/blog": { ms: "/ms/blog", zh: "/zh/bo-ke" },
+    "/faq": { ms: "/ms/soalan-lazim", zh: "/zh/chang-jian-wen-ti" },
+    "/problems": { ms: "/ms/problems", zh: "/zh/problems" },
+    "/answers": { ms: "/ms/answers", zh: "/zh/answers" },
+    "/guides": { ms: "/ms/guides", zh: "/zh/guides" },
+    "/process": { ms: "/ms/process", zh: "/zh/process" },
+    "/compare": { ms: "/ms/compare", zh: "/zh/compare" },
+    "/top": { ms: "/ms/top", zh: "/zh/top" },
+    "/brands": { ms: "/ms/brands", zh: "/zh/brands" },
+    "/residential": { ms: "/ms/residential", zh: "/zh/residential" },
+    "/commercial": { ms: "/ms/commercial", zh: "/zh/commercial" },
+    "/seasonal": { ms: "/ms/seasonal", zh: "/zh/seasonal" }
+  };
+  return map[englishHref]?.[lang] ?? englishHref;
+}
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -165,7 +210,7 @@ export function Footer() {
           <div>
             <p className="text-[10px] font-black uppercase tracking-widest text-sky-600 mb-2">{t("nav.pricing")}</p>
             <ul className="space-y-1.5">
-              <li><Link href="/pricing" className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("pricing.pageTitle")}</Link></li>
+              <li><Link href={hubPath("/pricing", lang)} className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("pricing.pageTitle")}</Link></li>
               <li><Link href={localizedServicePath("painting")} className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("footer.priceGuide", { service: getLocalizedServiceNav(serviceNavBySlug.painting, lang).title })}</Link></li>
               <li><Link href={localizedServicePath("plumbing")} className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("footer.priceGuide", { service: getLocalizedServiceNav(serviceNavBySlug.plumbing, lang).title })}</Link></li>
               <li><Link href={localizedServicePath("waterproofing")} className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">{t("footer.priceGuide", { service: getLocalizedServiceNav(serviceNavBySlug.waterproofing, lang).title })}</Link></li>
@@ -174,10 +219,26 @@ export function Footer() {
 
           <div className="pt-2 border-t border-slate-100">
             <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">{t("footer.explore")}</p>
+            {/* P4-16 primary tier — the decision/discovery hubs, full weight. */}
             <ul className="space-y-1.5">
-              {EXPLORE_LINKS.map((link) => (
+              {PRIMARY_LINKS.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">
+                  <Link href={hubPath(link.href, lang)} className="text-xs text-slate-500 hover:text-sky-600 transition-colors font-medium">
+                    {t(link.key)}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            {/* P4-16 secondary tier — the remaining content hubs stay linked
+                from every page (no orphaned pods) but compact + de-emphasised
+                so equity stops over-concentrating on thin index pages. */}
+            <ul className="mt-3 flex flex-wrap gap-x-2.5 gap-y-1 border-t border-slate-100 pt-2">
+              {MORE_LINKS.map((link) => (
+                <li key={link.href} className="flex items-center">
+                  <Link
+                    href={hubPath(link.href, lang)}
+                    className="text-[10px] text-slate-400 hover:text-sky-600 transition-colors"
+                  >
                     {t(link.key)}
                   </Link>
                 </li>

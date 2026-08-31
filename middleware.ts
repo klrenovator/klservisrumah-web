@@ -55,6 +55,12 @@ const REAL_LOCALE_TREES = [
   // seasonal, top). Derived from `config/pod-family-paths.ts` so this list
   // always matches the routes that exist.
   ...POD_LOCALE_TREES,
+  // Audit P3-15 — the localized Smart Service Finder pages. These render a
+  // real in-tree page (server-rendered, indexable at the bare URL), so they
+  // must NOT be 301-redirected to the English tree like locale-prefixed EN
+  // paths are.
+  "/ms/search",
+  "/zh/search",
 ] as const;
 
 const PROBLEM_REDIRECTS: Record<string, string> = Object.fromEntries(

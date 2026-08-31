@@ -6,12 +6,13 @@
     "viewAll": "Lihat semua",
     "viewDetails": "Lihat butiran & harga",
     "viewMore": "Lihat lagi",
-    "bookService": "Tempah perkhidmatan ini",
-    "bookWhatsApp": "Tempah melalui WhatsApp",
-    "bookWhatsAppAria": "Tempah melalui WhatsApp — buka sembang WhatsApp dengan KL Servis Rumah",
+    "bookService": "Dapatkan sebut harga tetap",
+    "serviceNameGeneric": "perkhidmatan rumah",
+    "bookWhatsApp": "Dapatkan sebut harga tetap di WhatsApp",
+    "bookWhatsAppAria": "Dapatkan sebut harga tetap — buka sembang WhatsApp dengan KL Servis Rumah",
     "callUs": "Hubungi kami",
     "callUsAria": "Hubungi kami — hubungi KL Servis Rumah di {phone}",
-    "getQuote": "Dapatkan sebut harga percuma",
+    "getQuote": "Dapatkan sebut harga tetap percuma",
     "learnMore": "Ketahui lebih lanjut",
     "readMore": "Baca lagi",
     "fromPrice": "Dari {price}",
@@ -585,7 +586,7 @@
     "whatsappUs": "WhatsApp kami"
   },
   "stickyBook": {
-    "label": "Tempah Perkhidmatan Ini"
+    "label": "Dapatkan Sebut Harga Tetap Saya"
   },
   "exitPopup": {
     "badge": "Sebelum anda pergi",
@@ -627,12 +628,12 @@
     "chipPrice": "Harga disahkan dahulu",
     "chipSameDay": "Tersedia hari yang sama",
     "chipWarranty": "Jaminan 30 hari hingga 10 tahun",
-    "quoteTitle": "Dapatkan Sebut Harga dalam 60 Saat",
+    "quoteTitle": "Dapatkan Sebut Harga Tetap dalam 60 Saat",
     "serviceLabel": "Perkhidmatan apa yang anda perlukan?",
     "locationLabel": "Lokasi Anda (KL & Selangor)",
     "selectService": "Pilih perkhidmatan...",
     "selectArea": "Pilih kawasan anda...",
-    "getQuote": "Dapatkan Sebut Harga Segera",
+    "getQuote": "Dapatkan Sebut Harga Tetap Saya",
     "noDeposit": "Tiada deposit awal",
     "googleReviews": "{count}+ ulasan Google",
     "slideAria": "Slaid {n}: {alt}"
@@ -645,7 +646,7 @@
     "warranty": "Jaminan bertulis, 30 hari hingga 10 tahun (ikut perkhidmatan)"
   },
   "serviceDetail": {
-    "bookWhatsApp": "Tempah melalui WhatsApp",
+    "bookWhatsApp": "Dapatkan sebut harga tetap saya di WhatsApp",
     "trustLine": "Hari sama tersedia · Dijamin · Diinsuranskan",
     "bookSubWhatsApp": "Tempah {name} di WhatsApp",
     "verifiedBadge": "Perkhidmatan Pakar Disahkan",

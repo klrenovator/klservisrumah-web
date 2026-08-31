@@ -6,12 +6,13 @@
     "viewAll": "查看全部",
     "viewDetails": "查看详情与价格",
     "viewMore": "查看更多",
-    "bookService": "预订此服务",
-    "bookWhatsApp": "通过 WhatsApp 预订",
-    "bookWhatsAppAria": "通过 WhatsApp 预订 — 打开与 KL Servis Rumah 的 WhatsApp 对话",
+    "bookService": "获取固定报价",
+    "serviceNameGeneric": "家居服务",
+    "bookWhatsApp": "在 WhatsApp 获取固定报价",
+    "bookWhatsAppAria": "获取固定报价 — 打开与 KL Servis Rumah 的 WhatsApp 对话",
     "callUs": "联系我们",
     "callUsAria": "联系我们 — 致电 KL Servis Rumah：{phone}",
-    "getQuote": "获取免费报价",
+    "getQuote": "获取免费固定报价",
     "learnMore": "了解更多",
     "readMore": "阅读更多",
     "fromPrice": "起价 {price}",
@@ -585,7 +586,7 @@
     "whatsappUs": "WhatsApp 联系我们"
   },
   "stickyBook": {
-    "label": "预订此服务"
+    "label": "获取我的固定报价"
   },
   "exitPopup": {
     "badge": "离开之前",
@@ -627,12 +628,12 @@
     "chipPrice": "价格先确认",
     "chipSameDay": "当天可用",
     "chipWarranty": "30天至10年保修",
-    "quoteTitle": "60秒内获得报价",
+    "quoteTitle": "60秒内获得固定报价",
     "serviceLabel": "您需要什么服务？",
     "locationLabel": "您的位置（吉隆坡 & 雪兰莪）",
     "selectService": "选择服务...",
     "selectArea": "选择您的区域...",
-    "getQuote": "获取即时报价",
+    "getQuote": "获取我的固定报价",
     "noDeposit": "无需预付定金",
     "googleReviews": "{count}+ Google评价",
     "slideAria": "幻灯片 {n}：{alt}"
@@ -645,7 +646,7 @@
     "warranty": "书面保修，30 天至 10 年（按服务）"
   },
   "serviceDetail": {
-    "bookWhatsApp": "通过 WhatsApp 预订",
+    "bookWhatsApp": "在 WhatsApp 获取我的固定报价",
     "trustLine": "当日可约 · 有保修 · 已投保",
     "bookSubWhatsApp": "通过 WhatsApp 预订{name}",
     "verifiedBadge": "认证专家服务",

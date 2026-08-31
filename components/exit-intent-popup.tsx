@@ -30,19 +30,23 @@ export function ExitIntentPopup() {
     setOpen(false);
   }, []);
 
-  // Open trigger: 30s timer + mouse-leave-towards-top (desktop only).
+  // Open trigger: mouse-leave-towards-top only (desktop). Audit P4-03 — the
+  // previous 30-second timer popped the modal for engaged, actively-reading
+  // visitors, which is the highest-intrusiveness/lowest-intent timing
+  // combination. A genuine exit-intent signal (cursor leaving the viewport
+  // toward the browser chrome) is both the trigger users expect and the only
+  // moment the fixed-quote value prop interrupts instead of nags. The 30-day
+  // dismissal cap still applies regardless of how the dialog opened.
   useEffect(() => {
     const dismissedAt = Number(window.localStorage.getItem(STORAGE_KEY) || 0);
     if (Date.now() - dismissedAt < THIRTY_DAYS) return;
 
-    const timeoutId = window.setTimeout(() => setOpen(true), 30000);
     const handleMouseOut = (event: MouseEvent) => {
       if (event.clientY <= 8) setOpen(true);
     };
 
     document.addEventListener("mouseout", handleMouseOut);
     return () => {
-      window.clearTimeout(timeoutId);
       document.removeEventListener("mouseout", handleMouseOut);
     };
   }, []);

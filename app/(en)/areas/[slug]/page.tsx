@@ -2,12 +2,10 @@ import React from "react";
 import { buildMetadata } from "@/lib/seo-meta";
 import { notFound } from "next/navigation";
 import { areaPages } from "@/config/area-data";
-import { getFAQSchema } from "@/lib/seo";
+import { getFAQSchema, getAreaPlaceSchema, getAreaServiceSchema } from "@/lib/seo";
 import { buildAreaBundle } from "@/lib/location-bundles";
 import { LocaleAreaView } from "@/components/sections/locale-area-view";
 import { CoverageMap } from "@/components/sections/coverage-map";
-
-const baseUrl = "https://www.klservisrumah.my";
 
 // Every valid param is enumerated in `generateStaticParams()`, so anything
 // else must 404 rather than be rendered on demand and cached as a 200
@@ -54,29 +52,24 @@ export default async function AreaSlugPage(props: { params: Promise<{ slug: stri
   // rendered by the client wrapper in the visitor's active language.
   const faqSchema = getFAQSchema(area.faqs);
 
-  // This is a coverage page, not a separate business branch. Service schema
-  // accurately describes the relationship without inventing a postal address
-  // or placing the company's physical geo coordinates at the area centroid.
-  const areaServiceSchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "@id": `${baseUrl}/areas/${area.slug}#service`,
-    name: `Home services in ${area.name}`,
-    description: area.description,
-    url: `${baseUrl}/areas/${area.slug}`,
-    provider: { "@id": `${baseUrl}/#organization` },
-    areaServed: {
-      "@type": "City",
-      name: area.name,
-      containedInPlace: { "@type": "State", name: area.state }
-    }
-  };
+  // Audit P4-14: this is a coverage page, not a separate business branch. The
+  // page now defines the area's full Place entity ONCE (City + real
+  // GeoCoordinates + State, stable `#place` @id) and a Service node whose
+  // areaServed references that Place by @id. Area×service pages and the
+  // homepage organization node reference these same Place @ids, so engines can
+  // associate every Service+area pair with one geo-located city entity.
+  const areaPlaceSchema = getAreaPlaceSchema(area);
+  const areaServiceSchema = getAreaServiceSchema(area);
 
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(areaPlaceSchema) }}
       />
       <script
         type="application/ld+json"

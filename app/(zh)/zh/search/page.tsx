@@ -15,34 +15,54 @@ async function SearchPageFinder({ searchParams }: { searchParams: Promise<{ q?: 
   return <SmartServiceFinder initialQuery={resolved.q || ""} />;
 }
 
-export const metadata: Metadata = buildMetadata({
-  title: "智能家居服务搜索 — 马来文、英文与中文三语服务查找与估价",
-  description:
-    "在吉隆坡与雪兰莪搜索 KL Servis Rumah 的家居维修装潢服务，可用马来文、英文或中文输入问题描述。智能搜索识别问题、提供工项范围、在线估价计算器与固定报价保障。",
-  path: "/zh/search",
-  languageUrls: {
-    en: "/search",
-    ms: "/ms/search",
-    zh: "/zh/search"
-  },
-  ogLocale: "zh_MY",
-  ogAlternateLocales: ["en_MY", "ms_MY"],
-  keywords: [
-    "吉隆坡家居维修搜索",
-    "中文家居服务",
-    "马来西亚装修搜索",
-    "在线估价计算器",
-    "吉隆坡杂工服务"
-  ]
-});
+// Audit P3-15: query variants (/zh/search?q=…) are near-duplicate states and
+// stay noindex; the bare finder page is indexable and crawlable (robots.txt
+// now allows /search for the WebSite SearchAction entry point).
+export async function generateMetadata({
+  searchParams
+}: {
+  searchParams: Promise<{ q?: string }>;
+}): Promise<Metadata> {
+  const resolved = await searchParams;
+  const hasQuery = Boolean(resolved.q && resolved.q.trim());
+  return {
+    ...buildMetadata({
+      title: "智能家居服务搜索 — 马来文、英文与中文三语服务查找与估价",
+      description:
+        "在吉隆坡与雪兰莪搜索 KL Servis Rumah 的家居维修装潢服务，可用马来文、英文或中文输入问题描述。智能搜索识别问题、提供工项范围、在线估价计算器与固定报价保障。",
+      path: "/zh/search",
+      languageUrls: {
+        en: "/search",
+        ms: "/ms/search",
+        zh: "/zh/search"
+      },
+      ogLocale: "zh_MY",
+      ogAlternateLocales: ["en_MY", "ms_MY"],
+      keywords: [
+        "吉隆坡家居维修搜索",
+        "中文家居服务",
+        "马来西亚装修搜索",
+        "在线估价计算器",
+        "吉隆坡杂工服务"
+      ]
+    }),
+    robots: {
+      index: !hasQuery,
+      follow: true
+    }
+  };
+}
 
 const POPULAR_QUERIES = [
   { label: "油漆房子价格", href: "/zh/services/painting/cost" },
   { label: "PU灌注防水", href: "/zh/services/waterproofing" },
   { label: "修补石膏天花板", href: "/zh/services/ceiling" },
   { label: "维修厕所漏水", href: "/zh/problems/leaking-bathroom" },
-  { label: "吉隆坡当日水管维修", href: "/zh/near-me/plumbing" },
-  { label: "八打灵再也安装电视", href: "/zh/areas/petaling-jaya/handyman" },
+  // No /zh/near-me or /zh/areas trees exist (middleware 301s them to the EN
+  // tree) — link to the in-tree service pages so 中文 visitors stay in their
+  // language tree with no redirect hop.
+  { label: "吉隆坡当日水管维修", href: "/zh/services/plumbing" },
+  { label: "八打灵再也安装电视", href: "/zh/services/handyman" },
   { label: "电工布线价格", href: "/zh/services/electrical/cost" }
 ];
 
