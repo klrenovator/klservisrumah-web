@@ -76,7 +76,10 @@ export function LocaleAreaView({
               </div>
 
               <div>
-                <ServicesGrid />
+                <ServicesGrid
+                  heading={t("location.servicesInArea", { area: area.name })}
+                  lede={t("location.servicesInAreaLede", { area: area.name })}
+                />
               </div>
             </div>
 
