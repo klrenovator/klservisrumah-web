@@ -1,6 +1,6 @@
 # Fix Wave 25 — Value Queue: Search/News consistency, Fixed-Quote CTA, Footer Tiering, Per-Area Schema Entities, Clickable Trust Cards (2026-08-31)
 
-> **PR #209 — CI QA PASS (gates/types/lint/SSG build/audits, 3m47s), Vercel PASS.**
+> **PR #209 — CI QA PASS (gates/types/lint/SSG build/audits), Vercel PASS; MERGED into `main` 2026-08-31 (merge commit `31f8b9b`).**
 
 > Scope: the next pending stop on the audit tracker ("Priority Work Queue Value
 > Items" — P4-10, P4-14, P4-08, P4-16, P3-15/16, plus the P4-03 remainder).
