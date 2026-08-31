@@ -9,7 +9,8 @@ import { LocaleTreeLinks } from "@/components/sections/locale-tree-links";
 import { BlogArticleBody } from "@/components/blog/blog-article-body";
 import { NapContactStrip } from "@/components/content/nap-contact-strip";
 import { extractBlogFaq } from "@/lib/blog-faq";
-import { getFAQSchema } from "@/lib/seo";
+import { getArticleSchema, getFAQSchema } from "@/lib/seo";
+import { blogDateModified, toIsoDate } from "@/lib/utils";
 
 export const dynamicParams = false;
 export async function generateStaticParams() {
@@ -34,8 +35,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     path: localizedBlogPath("zh", result.post.slug),
     image: result.original.coverImage,
     type: "article",
-    publishedTime: result.original.date,
-    modifiedTime: result.original.date,
+    publishedTime: toIsoDate(result.original.date),
+    modifiedTime: blogDateModified(result.original.date),
     keywords: [result.post.title, result.post.category, "马来西亚家居"],
     languageUrls: {
       en: `/blog/${result.englishSlug}`,
@@ -61,9 +62,24 @@ export default async function ChineseArticle({ params }: { params: Promise<{ slu
   // question headings (≥2 Q&As; capped at 6).
   const chineseFaq = extractBlogFaq(post.content);
   const faqSchema = chineseFaq.length >= 2 ? getFAQSchema(chineseFaq) : null;
+  const articleSchema = getArticleSchema({
+    title: post.title,
+    excerpt: post.excerpt,
+    content: post.content,
+    slug: post.slug,
+    date: original.date,
+    author: original.author,
+    coverImage: original.coverImage,
+    category: post.category,
+    path: localizedBlogPath("zh", post.slug)
+  });
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       {faqSchema && (
         <script
           type="application/ld+json"

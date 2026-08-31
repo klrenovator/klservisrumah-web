@@ -12,7 +12,13 @@ import { useLang } from "@/context/lang-context";
 import { warrantyLead } from "@/lib/utils";
 import { Reveal } from "@/components/ui/reveal";
 
-export function ServicesGrid() {
+export function ServicesGrid({
+  heading,
+  lede
+}: {
+  heading?: string;
+  lede?: string;
+} = {}) {
   const t = useTranslations();
   const { lang } = useLang();
 
@@ -23,14 +29,16 @@ export function ServicesGrid() {
         {/* Section Heading Panel */}
         <Reveal>
           <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto mb-16">
-            <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
-              {t("home.servicesGrid.heading")}
-            </span>
+            {heading ? (
+              <span className="text-xs font-bold text-[#0EA5E9] tracking-widest uppercase bg-[#E0F2FE]/30 px-4 py-1.5 rounded-full">
+                {t("home.servicesGrid.heading")}
+              </span>
+            ) : null}
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#075985] tracking-tight">
-              {t("home.servicesGrid.subheading")}
+              {heading ?? t("home.servicesGrid.heading")}
             </h2>
             <p className="text-base text-[#475569] leading-relaxed">
-              {t("services.pageSubtitle")}
+              {lede ?? t("home.servicesGrid.subheading")}
             </p>
           </div>
         </Reveal>

@@ -800,8 +800,10 @@
   },
   "location": {
     "servingBadge": "Berkhidmat di {area}",
-    "areaH1": "Servis Mengecat, Siling & Rumah di {area}",
+    "areaH1": "Mengecat, Paip, Elektrik & Pengubahsuaian di {area}",
     "areaSubtitle": "Perkhidmatan Mengecat, Paip, Siling Plaster, Kalis Air & Kerja Tangan Tempatan.",
+    "servicesInArea": "Perkhidmatan rumah di {area}",
+    "servicesInAreaLede": "Pilih mengecat, paip, elektrik, pengubahsuaian dan 29 perkhidmatan lain yang kami hantar di {area}.",
     "coverageHeading": "Kawasan & Mercu Tanda Liputan di {area}",
     "immediateDispatch": "Penghantaran Segera",
     "bookIn": "Tempah di {area}",

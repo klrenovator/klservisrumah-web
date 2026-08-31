@@ -800,8 +800,10 @@
   },
   "location": {
     "servingBadge": "Serving {area}",
-    "areaH1": "Painting, Ceiling & Home Services in {area}",
+    "areaH1": "Painting, Plumbing, Electrical & Renovation in {area}",
     "areaSubtitle": "Local Painting, Plumbing, Plaster Ceiling, Waterproofing & Handyman Services.",
+    "servicesInArea": "Home services in {area}",
+    "servicesInAreaLede": "Choose painting, plumbing, electrical, renovation and the rest of the 29 services we dispatch in {area}.",
     "coverageHeading": "Coverage Suburbs & Landmarks in {area}",
     "immediateDispatch": "Immediate Dispatch",
     "bookIn": "Book in {area}",

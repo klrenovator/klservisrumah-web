@@ -800,8 +800,10 @@
   },
   "location": {
     "servingBadge": "服务范围：{area}",
-    "areaH1": "{area}油漆、天花板与家居服务",
+    "areaH1": "{area}油漆、水管、电气与翻新服务",
     "areaSubtitle": "本地油漆、水管、石膏天花板、防水与杂工服务。",
+    "servicesInArea": "{area}家居服务",
+    "servicesInAreaLede": "选择油漆、水管、电气、翻新以及我们在{area}派工的其余29项服务。",
     "coverageHeading": "{area}覆盖社区与地标",
     "immediateDispatch": "即时派工",
     "bookIn": "预约{area}服务",
