@@ -6,6 +6,35 @@
 
 ## Current State (Update this each session)
 
+> **✅ VERIFICATION SESSION COMPLETE (2026-08-31, after Fix Wave 26):** The
+> merged Wave-26 tree was re-verified end-to-end and the site is confirmed
+> fully **on gates with no unblocked audit work remaining.** Gates re-run this
+> session: prebuild **329,897 assertions × 0**, type-check PASS, lint **0/0**,
+> build **4,141 static HTML**, audit:links **312,968 rendered + 55 source → 0
+> broken**, audit:html **0 fatal / 0 warnings**, seo:audit PASS, audit:meta **0
+> JSON-LD parse failures / 0 NAP-missing / 0 breadcrumb mismatches / 0 generic
+> anchors**, validate:blogs **216 topics / 648 localized articles / 54 distinct
+> dates** PASS. **P4-18 closed ✅** (audit already determined the anchor-text
+> profile is healthy — no action required; `audit:meta` re-confirmed 0 generic
+> anchors). Full log: `docs/full-website-deep-audit/FIX-WAVE-27-VERIFICATION-REPORT.md`.
+>
+> **⏳ EXACT NEXT STOP — every remaining PENDING row is owner-blocked** (needs
+> owner-provided data; do **not** invent owner facts): **P4-10** case-study
+> *pages* with real photos + itemised cost (owner photography, P5-12);
+> **P4-09 / P2-21 / P3-09 / P5-09** verified reviews → Review/AggregateRating
+> schema + stats/founding-year/employee-count fact check (owner GSC/GBP);
+> **P2-22** outbound authority citations (owner editorial decision); **P4-11**
+> named team/bio page (owner bios); **P4-13 / P2-C4 URL keep-set / BP-1 phase
+> 2** local-page restructure (owner GSC keep-set — do NOT add/delete location
+> pages on assumptions; the **generator** is already done in Wave 26);
+> **P0 www/non-www host canonical** (live edge/CDN access); **P5-12** real
+> project/team photography. If the owner supplies any of these, that is the
+> next work. The **blog production list is complete** (216 topics / 648
+> localized articles, `validate:blogs` PASS) — the older "publish fresh blog
+> batches" fallback is superseded. Pick up whichever owner item arrives first.
+>
+> ---
+>
 > **VALUE QUEUE ✅ CLEARED (2026-08-31, Fix Wave 25):** Every unblocked
 > code-level audit finding is now implemented. Closed this wave: **P3-15**
 > (`/search` un-blocked in robots.txt so the WebSite SearchAction entry point

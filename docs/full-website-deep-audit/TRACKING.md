@@ -91,6 +91,7 @@
 | 2026-08-30 | **Fix Wave 24** — **§5.4-B1 BM Commercial Tree & Pricing Hub Expansion COMPLETE.** Dedicated Bahasa Melayu Pricing Hub (`/ms/harga`) and Chinese Pricing Hub (`/zh/pricing`) authored and linked in a 3-URL reciprocal hreflang cluster with `/pricing`; transactional query aliases (`/ms/harga/*`, `/ms/pricing`, `/ms/services/*/harga`) 301-redirected to canonical localized money pages (`/ms/services/*/cost`); `LocalePricingContent` updated to keep visitors inside their active language tree; sitemap updated (+2 URLs = 4,114 total). All gates PASS: prebuild **329,897 × 0**, lint 0/0, type-check. | ✅ **§5.4-B1 COMPLETE.** See `FIX-WAVE-24-REPORT.md` |
 | 2026-08-31 | **Fix Wave 25** — **Value Queue cleared (all unblocked code-level items).** **P3-15** SearchAction↔robots consistency (`/search` un-blocked in robots.txt; bare finder indexable while `/search?q=…` noindex in all 3 trees; EN hreflang cluster; `/ms/search`+`/zh/search` added to middleware `REAL_LOCALE_TREES` — they were 301 dead-ends; MS/ZH popular-shortcut links retargeted to in-tree routes) · **P3-16** news sitemap rebuilt as a dynamic last-48-hour EN/MS/ZH feed (valid empty `<urlset>` when stale) · **P3-19** `aeo-faq.txt` expanded 8→24 data-grounded Q&As · **P4-08** primary CTAs reworded around the fixed-quote differentiator EN/MS/ZH (hero/service heroes/grid/sticky/footer + neutral WhatsApp-prefill key) · **P4-03** exit-intent 30s timer removed (mouse-leave only) · **P4-16** footer Explore split into primary/secondary tiers + tree-native `hubPath()` links (pricing/blog/FAQ/problems/pods resolve in-tree; zero cross-tree footer leaks) · **P4-14** per-area Place entities (`#place` City w/ geo+State on hubs, @id-referenced by the 1,500+ area×service pages and the homepage 37-city areaServed) · **P4-10** all FeaturedProjects (4) + BeforeAfter (3) cards converted to real `<Link>`s (gallery/service pages, aria-labelled). All gates PASS: prebuild **329,897 × 0**, lint 0/0, type-check, build **4,141 HTML**, audit:html 0/0, audit:links **312,968+55 → 0 broken**, seo-head **4,114=4,114**, schema-size PASS, bp1 (NAP 62.8%), location-similarity 69.5% max, meta, seo:audit, part5 0 JSON-LD errors, part3 BM/ZH leaks 0/0. **CI QA pass (3m47s), Vercel pass — PR #209.** | ✅ See `FIX-WAVE-25-REPORT.md` |
 | 2026-08-31 | **Fix Wave 26** — **P2-C4 copy half + leftover on-page/entity items.** Pair-copy generator replaced (no landmark×sub-service salad): 37 area + 15 suburb work profiles, generic EN suburb issues omitted from pair-copy, landmarks as meeting pins only. **P2-13** area-hub H1 no longer painting+ceiling-only. **P2-12** area-hub ServicesGrid H2 uses `servicesInArea`. **P2-27** Organization `knowsAbout` = 29 live service titles. **MS/ZH BlogPosting** JSON-LD + ISO dates on localized blog routes. All gates PASS: lint 0/0, type-check, prebuild **329,897 × 0**, build **4,148 static**, location-similarity **68.8% PASS** (suburb-across-suburbs 68.2%; glenmarie↔selangor house-renovation). URL keep-set still owner GSC. | ✅ See `FIX-WAVE-26-REPORT.md` |
+| 2026-08-31 | **Verification Session (this session)** — confirmed the merged Wave-26 tree is fully **on gates** with **no unblocked audit work remaining**: prebuild **329,897 × 0**, type-check PASS, lint **0/0**, build **4,141 static HTML**, audit:links **312,968 rendered + 55 source → 0 broken**, audit:html **0 fatal / 0 warnings**, seo:audit PASS, audit:meta 0 JSON-LD parse failures / 0 NAP-missing / 0 breadcrumb mismatches / 0 generic anchors, validate:blogs **216 topics / 648 localized articles / 54 distinct dates** PASS. **P4-18 marked ✅** (audit already determined anchor-text healthy — no action required). **Every remaining PENDING row is owner-blocked** (reviews/facts, GSC keep-set, photos, bios, outbound-citation decision, www edge). See `FIX-WAVE-27-VERIFICATION-REPORT.md`. | ✅ Verified on gates |
 
 ---
 
@@ -167,9 +168,13 @@ removed), P4-16 (footer tiering + tree-native links), P4-14 (per-area Place
 entities) and P4-10's code half (all 7 trust cards are now real links). Full
 log: `FIX-WAVE-25-REPORT.md`.
 
-**⏳ EXACT NEXT STOP: only owner-blocked / owner-data items remain.** No
-unblocked audit finding is left to implement in code. The remaining PENDING
-rows are all gated on the owner:
+**⏳ EXACT NEXT STOP (verified 2026-08-31, Verification Session): only
+owner-blocked / owner-data items remain.** A full gate re-run on the merged
+Wave-26 tree confirmed the site is **on gates** with **no unblocked audit
+finding left to implement in code** (prebuild 329,897 × 0, type-check, lint
+0/0, build 4,141 static, audit:links 312,968+55 → 0, audit:html 0/0,
+seo:audit PASS, audit:meta 0 JSON-LD errors, validate:blogs 216 topics).
+The remaining PENDING rows are all gated on the owner:
 - **P4-10 content half** — real per-project case-study pages with actual
   photos + itemised cost (needs owner photography, P5-12; the link scaffolding
   is done — cards already route to `/projects` + service pages).
@@ -330,7 +335,7 @@ is fully actioned and the site is on gates. Do **not** invent owner facts.
 | P2 | P4-14 — Per-area `Service` entities in LocalBusiness schema | ✅ DONE (Fix Wave 25 — area hubs emit full `#place` City Place entity (geo+State); area×service pages @id-reference it; homepage 37-city areaServed @id-linked to the hub Place entities; schema-size gate green) |
 | P2 | P4-15 — NAP contact strip in content block (5,813 pages footer-only) | ✅ DONE (Fix Wave 10 — 2,112/3,652 built pages = 57.8% carry the strip in content, baseline 0%; asserted in `audit:bp1` check 8) |
 | P2 | P4-08 — Reword primary CTAs around fixed-quote/no-deposit | ✅ DONE (Fix Wave 25 — primary CTA labels now lead with the fixed-quote differentiator EN/MS/ZH: "Get a fixed quote" / "Dapatkan sebut harga tetap" / "获取固定报价" across hero, service heroes, services grid, sticky button, footer; neutral `serviceNameGeneric` added so WhatsApp prefills don't carry a CTA label) |
-| P3 | P4-18 — Anchor-text profile healthy (90% descriptive / 7% generic / 0% branded) — no action required | ⏳ PENDING |
+| P3 | P4-18 — Anchor-text profile healthy (90% descriptive / 7% generic / 0% branded) — no action required | ✅ DONE (2026-08-31 — no action required; audit verified healthy anchor-text; re-confirmed 0 generic anchors by `audit:meta` this session) |
 
 ## Part 3 — Priority Work Queue (findings added)
 
