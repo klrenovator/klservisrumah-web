@@ -14,18 +14,38 @@ async function SearchPageFinder({ searchParams }: { searchParams: Promise<{ q?: 
   return <SmartServiceFinder initialQuery={resolved.q || ""} />;
 }
 
-export const metadata: Metadata = {
-  ...buildMetadata({
-    title: "Smart Service Finder — Instant 3-Language Home Service Discovery",
-    description:
-      "Search KL Servis Rumah for home services, coverage areas, common problems, guides, pricing, and cost calculators across Kuala Lumpur and Selangor in English, Malay, or Chinese.",
-    path: "/search"
-  }),
-  robots: {
-    index: true,
-    follow: true
-  }
-};
+/**
+ * Audit P3-15: the bare `/search` page is an indexable smart-finder tool, but
+ * parameterized result variants (`/search?q=…`) are near-duplicate states of
+ * the same page — they must not be indexed (they are also the SearchAction
+ * entry-point URLs Googlebot now fetches, so allowing `/search` in robots.txt
+ * plus noindex on variants is the consistent policy).
+ */
+export async function generateMetadata({
+  searchParams
+}: {
+  searchParams: Promise<{ q?: string }>;
+}): Promise<Metadata> {
+  const resolved = await searchParams;
+  const hasQuery = Boolean(resolved.q && resolved.q.trim());
+  return {
+    ...buildMetadata({
+      title: "Smart Service Finder — Instant 3-Language Home Service Discovery",
+      description:
+        "Search KL Servis Rumah for home services, coverage areas, common problems, guides, pricing, and cost calculators across Kuala Lumpur and Selangor in English, Malay, or Chinese.",
+      path: "/search",
+      languageUrls: {
+        en: "/search",
+        ms: "/ms/search",
+        zh: "/zh/search"
+      }
+    }),
+    robots: {
+      index: !hasQuery,
+      follow: true
+    }
+  };
+}
 
 const POPULAR_QUERIES = [
   { label: "House painting price", href: "/services/painting/cost" },

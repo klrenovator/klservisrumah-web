@@ -157,8 +157,8 @@ export function Hero() {
     const localizedSelectedService = selectedService
       ? serviceNavBySlug[selectedService]
         ? getLocalizedServiceNav(serviceNavBySlug[selectedService], lang).title
-        : t("common.bookService")
-      : t("common.bookService");
+        : t("common.serviceNameGeneric")
+      : t("common.serviceNameGeneric");
     const waLink = getWhatsAppLink({ service: localizedSelectedService, location: selectedArea, lang });
     window.open(waLink, "_blank");
   };

@@ -332,6 +332,98 @@ function buildAeoFaq(): string {
     [
       `Does ${siteConfig.name} offer same-day service?`,
       "Same-day dispatch is available across many KL and Selangor areas when booked early, especially for urgent plumbing leaks, ceiling water stains, waterproofing triage and essential handyman repairs. Send photos and a location over WhatsApp for confirmation."
+    ],
+    [
+      "Do you charge a deposit before work starts?",
+      "No upfront deposit is required. The price is confirmed in an itemised written quote first; work begins only after the quote is approved. Full renovations use a milestone-based payment schedule so payments follow verified work stages."
+    ],
+    [
+      "How do I get a quote?",
+      `Send your job photos, location and service needed on WhatsApp (${siteConfig.phoneDisplay}) or use the quick-quote form on the homepage; you can also browse starting prices and rate-based cost guides at ${url(
+        "/pricing"
+      )}. A fixed itemised quote is confirmed in writing before any work begins.`
+    ],
+    [
+      "What are your operating hours?",
+      `${siteConfig.hours} WhatsApp enquiries are answered throughout the day; urgent leaks and essential repairs can be scheduled for same-day dispatch where slots are available.`
+    ],
+    [
+      "What languages does the service support?",
+      "The website and quoting service support English, Bahasa Malaysia and Chinese (中文). All price guides, service pages, problem guides and calculators are available in three languages."
+    ],
+    [
+      "Do you handle emergency repairs like burst pipes or major leaks?",
+      "Yes — urgent plumbing leaks, flooding and broken lines are treated as emergencies with immediate dispatch of the nearest available technician. Emergency service details per trade: " +
+        url("/services/plumbing") +
+        " and the problem guides at " +
+        url("/problems") +
+        "."
+    ],
+    [
+      "How much does aircon servicing cost?",
+      `Aircon servicing starts from ${priced("aircon")}; aircon installation, gas top-up and chemical cleaning have their own published rates in the aircon cost guide at ${url(
+        "/services/aircon/cost"
+      )}.`
+    ],
+    [
+      "How much does house painting cost?",
+      `Interior painting starts from ${priced("painting")} per room; exterior and full-house repaints are priced per scope in the painting cost guide at ${url(
+        "/services/painting/cost"
+      )}, which includes paint quantity and wall-area calculators.`
+    ],
+    [
+      "How much does waterproofing / leaking bathroom repair cost?",
+      `Waterproofing work starts from ${priced("waterproofing")}; non-hacking PU grouting injection and full membrane systems are itemised in the waterproofing cost guide at ${url(
+        "/services/waterproofing/cost"
+      )}, with up to a 5-year written leak-free guarantee on complete installations.`
+    ],
+    [
+      "How much do electrical services cost?",
+      `Electrical work starts from ${priced("electrical")}; wiring, socket, lighting and fan installation rates are published in the electrical cost guide at ${url(
+        "/services/electrical/cost"
+      )}, with free socket-count and lighting-install calculators.`
+    ],
+    [
+      "Do you do full house renovation?",
+      `Yes. Turnkey house, kitchen and bathroom renovation starts from ${priced(
+        "house-renovation"
+      )} with a single project manager, fixed-price quotation, Gantt-chart timeline, daily progress photos and milestone payments. Kitchen renovation: ${url(
+        "/services/kitchen-renovation"
+      )}; bathroom renovation: ${url("/services/bathroom-renovation")}.`
+    ],
+    [
+      "Do you install awnings and how much do they cost?",
+      `Awning installation starts from ${priced("awning-installation")} (balcony/window awnings from RM 380; car porch awnings from RM 1,800), with per-sq-ft rates for polycarbonate, metal deck, ACP, glass and canvas published at ${url(
+        "/services/awning-installation/cost"
+      )}.`
+    ],
+    [
+      "Do you serve commercial properties, offices and condos?",
+      "Yes — commercial and strata properties are handled with JMB/management coordination, after-hours and weekend scheduling, and commercial-grade materials. Commercial service guides are published per trade, e.g. " +
+        url("/commercial/painting-services-kl") +
+        "."
+    ],
+    [
+      "How can I estimate the cost before calling?",
+      `Free cost calculators and estimators cover paint quantity, wall/floor/ceiling area, aircon BTU and sizing, waterproofing, electrical, tiling and renovation budgeting — see ${url(
+        "/tools"
+      )}. Every estimate links back to the matching fixed-price service page.`
+    ],
+    [
+      "Do you offer free site visits or inspections?",
+      "Quotes are prepared from WhatsApp photos and your area first; on-site or video inspections are arranged where the scope needs measurement (for example renovation, awning and waterproofing scopes). The final quotation is itemised and confirmed in writing before work begins."
+    ],
+    [
+      "What areas around Kuala Lumpur do you cover?",
+      `Coverage spans the whole Klang Valley — Kuala Lumpur and Selangor including Petaling Jaya, Subang Jaya, Shah Alam, Klang, Puchong, Cheras, Ampang, Mont Kiara, Bangsar, Kepong, Setapak, Kajang and Putrajaya. The full coverage list with local details is at ${url(
+        "/areas"
+      )}.`
+    ],
+    [
+      "Where can I read problem diagnosis and repair guides?",
+      `${url(
+        "/problems"
+      )} publishes symptom-by-symptom repair guides (leaks, ceiling stains, electrical faults, aircon issues and more) in English, Bahasa Malaysia and Chinese, each with DIY checks, prevention tips and the published repair price range.`
     ]
   ];
 

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-30T16:50:44.885Z",
+  "generatedAt": "2026-08-31T02:59:39.770Z",
   "distinctImages": 37,
   "topImages": [
     {
       "src": "/logo/logo-lockup.png",
-      "pages": 4139
+      "pages": 4141
     },
     {
       "src": "/hero-aircon.svg",
@@ -1158,6 +1158,20 @@
         "https://www.klservisrumah.my/og-image?title=Perkhidmatan+Pemasangan+Awning+%E2%80%94+Harga+di+KL+%26+Selangor&amp;t=cost"
       ]
     },
+    "ms:/static/harga": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=Senarai+Harga+Servis+Rumah+KL+%26+Selangor+2026+%E2%80%94+Panduan+Kos&amp;t=default"
+      ]
+    },
     "ms:/static/notis-privasi": {
       "pages": 1,
       "meanImgs": 2,
@@ -1408,6 +1422,20 @@
         "https://www.klservisrumah.my/og-image?title=%E5%A4%A9%E8%8A%B1%E6%9D%BF%E6%9D%90%E6%96%99%E6%AF%94%E8%BE%83%EF%BC%9A%E7%9F%B3%E8%86%8Fvs%E7%9F%B3%E8%86%8F%E6%9D%BF+%7C+KL+Servis+Rumah&amp;t=pod",
         "https://www.klservisrumah.my/og-image?title=%E5%A6%82%E4%BD%95%E5%9C%A8%E5%90%89%E9%9A%86%E5%9D%A1%E9%80%89%E6%8B%A9%E5%A4%A9%E8%8A%B1%E6%9D%BF%E6%89%BF%E5%8C%85%E5%95%86+%7C+KL+Servis+Rumah&amp;t=pod",
         "https://www.klservisrumah.my/og-image?title=%E5%A6%82%E4%BD%95%E5%9C%A8%E5%90%89%E9%9A%86%E5%9D%A1%E9%80%89%E6%8B%A9%E6%9D%82%E5%B7%A5+%7C+KL+Servis+Rumah&amp;t=pod"
+      ]
+    },
+    "zh:/pricing": {
+      "pages": 1,
+      "meanImgs": 2,
+      "meanRaster": 2,
+      "meanSvg": 0,
+      "totalNoAlt": 0,
+      "totalEmptyAlt": 0,
+      "pctPagesZeroRaster": 0,
+      "meanLazy": 1,
+      "totalNoDims": 0,
+      "ogImages": [
+        "https://www.klservisrumah.my/og-image?title=%E5%90%89%E9%9A%86%E5%9D%A1%E4%B8%8E%E9%9B%AA%E5%85%B0%E8%8E%AA%E5%AE%B6%E5%B1%85%E6%9C%8D%E5%8A%A1%E4%BB%B7%E6%A0%BC%E8%A1%A8+%E2%80%94+2026%E6%8C%87%E5%8D%97&amp;t=default"
       ]
     },
     "zh:/problems": {

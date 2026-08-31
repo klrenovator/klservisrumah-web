@@ -6,12 +6,13 @@
     "viewAll": "View all",
     "viewDetails": "View details & pricing",
     "viewMore": "View more",
-    "bookService": "Book this service",
-    "bookWhatsApp": "Book via WhatsApp",
-    "bookWhatsAppAria": "Book via WhatsApp — open WhatsApp chat with KL Servis Rumah",
+    "bookService": "Get a fixed quote",
+    "serviceNameGeneric": "home service",
+    "bookWhatsApp": "Get a fixed quote on WhatsApp",
+    "bookWhatsAppAria": "Get a fixed quote — open WhatsApp chat with KL Servis Rumah",
     "callUs": "Call us",
     "callUsAria": "Call us — call KL Servis Rumah at {phone}",
-    "getQuote": "Get a free quote",
+    "getQuote": "Get a free fixed quote",
     "learnMore": "Learn more",
     "readMore": "Read more",
     "fromPrice": "From {price}",
@@ -585,7 +586,7 @@
     "whatsappUs": "WhatsApp us"
   },
   "stickyBook": {
-    "label": "Book This Service"
+    "label": "Get My Fixed Quote"
   },
   "exitPopup": {
     "badge": "Before you go",
@@ -627,12 +628,12 @@
     "chipPrice": "Price confirmed first",
     "chipSameDay": "Same-day available",
     "chipWarranty": "30-day to 10-year warranty",
-    "quoteTitle": "Get Your Quote in 60 Seconds",
+    "quoteTitle": "Get Your Fixed Quote in 60 Seconds",
     "serviceLabel": "What service do you need?",
     "locationLabel": "Your Location (KL & Selangor)",
     "selectService": "Select a service...",
     "selectArea": "Select your area...",
-    "getQuote": "Get My Instant Quote",
+    "getQuote": "Get My Fixed Quote",
     "noDeposit": "No upfront deposits",
     "googleReviews": "{count}+ Google reviews",
     "slideAria": "Slide {n}: {alt}"
@@ -645,7 +646,7 @@
     "warranty": "Written warranty, 30 days to 10 years (per service)"
   },
   "serviceDetail": {
-    "bookWhatsApp": "Book via WhatsApp",
+    "bookWhatsApp": "Get my fixed quote on WhatsApp",
     "trustLine": "Same-day available · Warranty-backed · Insured",
     "bookSubWhatsApp": "Book {name} on WhatsApp",
     "verifiedBadge": "Verified Specialist Service",
