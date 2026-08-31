@@ -21,6 +21,13 @@
  *  11. Exactly one `<h1>` per document.
  *  12. No lower-cased currency in readable text ("from rm 14 / sq ft") — a
  *      price mangled by a `.toLowerCase()` interpolation (P3-05 follow-up).
+ *  16. No raw message-template placeholder ("{name}") in readable text — a
+ *      missing substitution variable renders the literal token to visitors
+ *      (caught live on /ms/services/painting/cost, Fix Wave 28).
+ *  17. On /ms/… and /zh/… pages, WhatsApp prefill links must not carry
+ *      English template phrases ("cost quote", "I would like…") — a BM/中文
+ *      visitor must never send an English message to the dispatch desk
+ *      (caught live, Fix Wave 28).
  *
  * Exits non-zero if any FATAL finding exists, so it can be wired into CI or
  * `prebuild` like `seo-audit.ts`. Warnings are reported but do not fail.
@@ -267,6 +274,43 @@ function audit(file: string) {
   if (lowerCurrency) {
     const at = lowerCurrency.index ?? 0;
     report(url, "lowercase-currency", truncate(readable.slice(Math.max(0, at - 60), at + 60)));
+  }
+
+  // 16. Raw message-template placeholder in readable text (Fix Wave 28).
+  //
+  //     `{t("costPage.methodHeading")}` was rendered WITHOUT its {name}
+  //     variable, so 29 cost pages × 3 locales published the literal heading
+  //     "Dari mana harga {name} ini datang". Scripts/styles are stripped
+  //     above, so a brace token here is always visible visitor-facing text.
+  const rawPlaceholder = readable.match(/\{[a-zA-Z][a-zA-Z0-9_]*\}/);
+  if (rawPlaceholder) {
+    const at = rawPlaceholder.index ?? 0;
+    report(url, "raw-template-placeholder", truncate(readable.slice(Math.max(0, at - 60), at + 60)));
+  }
+
+  // 17. English WhatsApp prefill phrases on BM/中文 pages (Fix Wave 28).
+  //
+  //     The cost page built its WhatsApp link as `${service.title} cost
+  //     quote`, so BM visitors were set up to text the dispatch desk
+  //     "…Perkhidmatan Mengecat Rumah cost quote untuk harta saya". The
+  //     prefill lives in the href (never visible text), so only an attribute
+  //     scan can catch it. Forbidden substrings are the English templates
+  //     from lib/whatsapp.ts — they can never legitimately appear inside a
+  //     /ms/… or /zh/… page's wa.me link.
+  if (url.startsWith("/ms/") || url.startsWith("/zh/")) {
+    const waRe = /href="https:\/\/wa\.me\/[^"]*[?&]text=([^"&]+)[^"]*"/gi;
+    let waMatch: RegExpExecArray | null;
+    while ((waMatch = waRe.exec(html)) !== null) {
+      let decoded: string;
+      try {
+        decoded = decodeURIComponent(waMatch[1]);
+      } catch {
+        continue;
+      }
+      if (/\bcost\s+quote\b|\bI would like\b|\bI am looking\b|\bI am located\b|\bCan I check\b|\bHello KL Servis Rumah\b|\bfor my property\b|\bbook a home service\b/i.test(decoded)) {
+        report(url, "wa-prefill-locale-leak", truncate(decoded));
+      }
+    }
   }
 }
 

@@ -965,15 +965,15 @@ export const servicesData: Record<string, ServiceDetail> = {
           "Trunking rapi, pendawaian kabel kemas, dan pelabelan penuh pada setiap papan agihan"
         ],
         subServices: [
-          { name: "Pemasangan Power Point & Suis Baru", price: "Dari RM 150 / point", desc: "Menambah soket 13A baru, outlet USB, suis double-pole, dan kawalan dimmer pada litar sedia ada atau baru." },
+          { name: "Pemasangan Power Point & Suis Baru", price: "Dari RM 150 / titik", desc: "Menambah soket 13A baru, outlet USB, suis double-pole, dan kawalan dimmer pada litar sedia ada atau baru." },
           { name: "Naik Taraf DB Box & Pendawaian Semula", price: "Dari RM 2,200", desc: "Menggantikan kotak fius lama dengan papan agihan MCB+RCCB moden dan pendawaian semula rumah penuh atau separa." },
-          { name: "Titik Pencahayaan & Downlight", price: "Dari RM 120 / point", desc: "Memotong dan mendawai titik downlight siling, titik pendant, dan pencahayaan trek pada siling sedia ada." },
-          { name: "Titik Aircond, Pemanas Air & Ketuhar", price: "Dari RM 220 / point", desc: "Titik beban berat 20A–32A khusus dengan isolator dan saiz kabel yang betul setiap perkakas." },
+          { name: "Titik Pencahayaan & Downlight", price: "Dari RM 120 / titik", desc: "Memotong dan mendawai titik downlight siling, titik pendant, dan pencahayaan trek pada siling sedia ada." },
+          { name: "Titik Aircond, Pemanas Air & Ketuhar", price: "Dari RM 220 / titik", desc: "Titik beban berat 20A–32A khusus dengan isolator dan saiz kabel yang betul setiap perkakas." },
           { name: "Pendawaian Semula Rumah", price: "Dari RM 2,200", desc: "Pendawaian semula penuh atau separa untuk rumah teres, kondominium dan banglo lama, dengan ujian penebat dan gelung bumi." },
-          { name: "Power Point Tambahan", price: "Dari RM 150 / point", desc: "Soket 13A tambahan semasa pengubahsuaian — ruang tamu, bilik tidur, bilik belajar dan island dapur pada litar sedia ada atau baru." },
-          { name: "Pemasangan Suis", price: "Dari RM 150 / point", desc: "Suis baharu atau gantian, suis dua hala, dimmer dan retrofit suis pintar pada litar lampu sedia ada." },
-          { name: "Elektrik Dapur", price: "Dari RM 220 / point", desc: "Titik ketuhar, hob, hood, dishwasher dan tambahan 13A/15A dapur diselaraskan dengan susun atur kabinet dan countertop." },
-          { name: "Elektrik Bilik Mandi", price: "Dari RM 220 / point", desc: "Pendawaian pemanas air, kipas ekzos, pencahayaan dan titik pencukur untuk kawasan basah, dengan isolator dan aksesori berkadar IP." },
+          { name: "Power Point Tambahan", price: "Dari RM 150 / titik", desc: "Soket 13A tambahan semasa pengubahsuaian — ruang tamu, bilik tidur, bilik belajar dan island dapur pada litar sedia ada atau baru." },
+          { name: "Pemasangan Suis", price: "Dari RM 150 / titik", desc: "Suis baharu atau gantian, suis dua hala, dimmer dan retrofit suis pintar pada litar lampu sedia ada." },
+          { name: "Elektrik Dapur", price: "Dari RM 220 / titik", desc: "Titik ketuhar, hob, hood, dishwasher dan tambahan 13A/15A dapur diselaraskan dengan susun atur kabinet dan countertop." },
+          { name: "Elektrik Bilik Mandi", price: "Dari RM 220 / titik", desc: "Pendawaian pemanas air, kipas ekzos, pencahayaan dan titik pencukur untuk kawasan basah, dengan isolator dan aksesori berkadar IP." },
           { name: "Kerja Elektrik Pengubahsuaian", price: "Atas Sebut Harga", desc: "Rough-in dan first-fix elektrik untuk pengubahsuaian rumah, dapur dan bilik mandi — litar baharu, perancangan DB dan ujian." }
         ],
         process: [
@@ -1452,17 +1452,17 @@ export const servicesData: Record<string, ServiceDetail> = {
           "Padanan warna grout, grout epoksi, dan pengedap silikon anti-kulat untuk bilik mandi dan dapur"
         ],
         subServices: [
-          { name: "Pemasangan Jubin Lantai", price: "Dari RM 14 / sq ft", desc: "Pemasangan jubin lantai standard 300x300mm hingga 600x600mm dengan screed simen-pasir dan pelekat jubin." },
-          { name: "Pemasangan Jubin Dinding", price: "Dari RM 16 / sq ft", desc: "Splashback dapur, dinding bilik mandi, dan jubin dinding ciri dengan corak lurus atau bata." },
-          { name: "Penggantian Jubin & Pemecahan Jubin", price: "Dari RM 18 / sq ft", desc: "Pemecahan jubin lama, screed, kalis air dan pemasangan jubin baru dengan pelupusan serpihan." },
-          { name: "Pemasangan Jubin Porselin", price: "Dari RM 16 / sq ft", desc: "Jubin porselin homogen dalam kemasan matte, berkilat, rupa kayu dan rupa batu dengan tepi rectified." },
-          { name: "Pemasangan Jubin Seramik", price: "Dari RM 14 / sq ft", desc: "Jubin seramik dinding dan lantai untuk bilik mandi, dapur dan balkoni dengan grout sepadan warna." },
-          { name: "Pemasangan Slab Format Besar", price: "Dari RM 26 / sq ft", desc: "Slab 600x1200mm, 800x800mm, 1200x2400mm dengan self-levelling, cawan sedutan, dan lippage tuning." },
-          { name: "Pemasangan Jubin Mozek", price: "Dari RM 22 / sq ft", desc: "Mozek kaca, porselin dan batu untuk backsplash, niche pancuran dan dinding ciri dengan backing mesh." },
-          { name: "Jubin Bilik Mandi & Kalis Air", price: "Dari RM 18 / sq ft", desc: "Jubin lantai dan dinding bilik mandi dengan membran kalis air 3 lapisan dan ujian kolam 24 jam." },
-          { name: "Jubin Backsplash Dapur", price: "Dari RM 18 / sq ft", desc: "Jubin backsplash dapur dengan jubin subway, mozek atau format besar dan seal silikon anti-kulat." },
-          { name: "Pembaikan Jubin & Grout Semula", price: "Dari RM 22 / sq ft", desc: "Menanggalkan jubin berongga, retak atau pecah, penyediaan permukaan, penggantian, grout epoxy dan sealing silikon." },
-          { name: "Pemerataan Lantai & Self-Leveling", price: "Dari RM 8 / sq ft", desc: "Screed simen dan sebatian self-leveling untuk membetulkan lantai tidak rata sebelum jubin." }
+          { name: "Pemasangan Jubin Lantai", price: "Dari RM 14 / kaki persegi", desc: "Pemasangan jubin lantai standard 300x300mm hingga 600x600mm dengan screed simen-pasir dan pelekat jubin." },
+          { name: "Pemasangan Jubin Dinding", price: "Dari RM 16 / kaki persegi", desc: "Splashback dapur, dinding bilik mandi, dan jubin dinding ciri dengan corak lurus atau bata." },
+          { name: "Penggantian Jubin & Pemecahan Jubin", price: "Dari RM 18 / kaki persegi", desc: "Pemecahan jubin lama, screed, kalis air dan pemasangan jubin baru dengan pelupusan serpihan." },
+          { name: "Pemasangan Jubin Porselin", price: "Dari RM 16 / kaki persegi", desc: "Jubin porselin homogen dalam kemasan matte, berkilat, rupa kayu dan rupa batu dengan tepi rectified." },
+          { name: "Pemasangan Jubin Seramik", price: "Dari RM 14 / kaki persegi", desc: "Jubin seramik dinding dan lantai untuk bilik mandi, dapur dan balkoni dengan grout sepadan warna." },
+          { name: "Pemasangan Slab Format Besar", price: "Dari RM 26 / kaki persegi", desc: "Slab 600x1200mm, 800x800mm, 1200x2400mm dengan self-levelling, cawan sedutan, dan lippage tuning." },
+          { name: "Pemasangan Jubin Mozek", price: "Dari RM 22 / kaki persegi", desc: "Mozek kaca, porselin dan batu untuk backsplash, niche pancuran dan dinding ciri dengan backing mesh." },
+          { name: "Jubin Bilik Mandi & Kalis Air", price: "Dari RM 18 / kaki persegi", desc: "Jubin lantai dan dinding bilik mandi dengan membran kalis air 3 lapisan dan ujian kolam 24 jam." },
+          { name: "Jubin Backsplash Dapur", price: "Dari RM 18 / kaki persegi", desc: "Jubin backsplash dapur dengan jubin subway, mozek atau format besar dan seal silikon anti-kulat." },
+          { name: "Pembaikan Jubin & Grout Semula", price: "Dari RM 22 / kaki persegi", desc: "Menanggalkan jubin berongga, retak atau pecah, penyediaan permukaan, penggantian, grout epoxy dan sealing silikon." },
+          { name: "Pemerataan Lantai & Self-Leveling", price: "Dari RM 8 / kaki persegi", desc: "Screed simen dan sebatian self-leveling untuk membetulkan lantai tidak rata sebelum jubin." }
         ],
         process: [
           { step: "01", title: "Pemeriksaan Substrat", desc: "Kami periksa kerataan substrat, pergerakan struktur, kandungan lembapan, dan kesesuaian. Kami menandakan sebarang kerja paip atau kalis air yang diperlukan sebelum jubin dimulakan." },
@@ -1473,12 +1473,12 @@ export const servicesData: Record<string, ServiceDetail> = {
         ],
         faqs: [
           { q: "Apakah saiz trowel yang saya perlukan untuk jubin lantai 600x600mm?", a: "Kami gunakan trowel takuk segi empat sama 10mm hingga 12mm untuk jubin porselin 600x600mm, dan 12mm hingga 15mm untuk format yang lebih besar. Back-buttering (menggunakan pelekat di belakang jubin) juga penting untuk jubin melebihi 600mm untuk memastikan liputan penuh dan mencegah bintik berongga." },
-          { q: "Boleh saya pasang jubin terus di atas lantai kayu?", a: "Tidak secara terus — pergerakan kayu akan memecahkan grout dan jubin. Kami pasang membran decoupling (Schlüter DITRA atau Mapei Mapelastic) di atas kayu terlebih dahulu, yang menyerap pergerakan dan mencegah keretakan. Ini menambah kira-kira RM 8–12 setiap sq ft kepada kos penyediaan substrat tetapi penting untuk kemasan tahan lama." },
+          { q: "Boleh saya pasang jubin terus di atas lantai kayu?", a: "Tidak secara terus — pergerakan kayu akan memecahkan grout dan jubin. Kami pasang membran decoupling (Schlüter DITRA atau Mapei Mapelastic) di atas kayu terlebih dahulu, yang menyerap pergerakan dan mencegah keretakan. Ini menambah kira-kira RM 8–12 setiap kaki persegi kepada kos penyediaan substrat tetapi penting untuk kemasan tahan lama." },
           { q: "Mengapa jubin bilik mandi saya berongga atau longgar?", a: "Punca biasa: liputan pelekat yang lemah (kurang daripada 80% sentuhan), pergerakan dalam substrat, kerosakan air dari membran kalis air yang gagal, atau kerosakan hentaman. Kami gunakan rantai drag dan ujian ketukan untuk mengenal pasti jubin berongga, kemudian menanggalkan dan meletakkan semula dengan pelekat segar dan penyediaan substrat yang betul." },
           { q: "Adakah anda mengendalikan batu semula jadi seperti marmar dan granit?", a: "Ya. Kami pasang marmar, granit, travertine, dan batu kapur menggunakan pelekat dan grout batu khusus. Selepas pemasangan kami boleh gunakan pengedap penembus, menggilap, atau mengkristal permukaan kepada kemasan yang anda tentukan. Batu semula jadi juga lebih sensitif terhadap lippage, jadi kami gunakan sistem Raimondi pada semua pemasangan batu." }
         ],
         metaTitle: "Jubin Profesional & Pembaikan Jubin KL & Selangor",
-        metaDesc: "Jubin lantai dan dinding di KL & Selangor. Porselin, seramik, slab format besar, mozek, marmar. Schlüter DITRA, self-levelling, lippage tuning. Dari RM14/sqft.",
+        metaDesc: "Jubin lantai dan dinding di KL & Selangor. Porselin, seramik, slab format besar, mozek, marmar. Schlüter DITRA, self-levelling, lippage tuning. Dari RM 14 / kaki persegi.",
         aioSummary: "KL Servis Rumah menyediakan jubin profesional di KL & Selangor. Jubin lantai dan dinding, slab format besar, batu semula jadi, mozek, dan pembaikan. Schlüter DITRA decoupling, Mapei self-levelling, Raimondi lippage tuning. Grout semula, silikon anti-kulat, dan pasang semula kawasan basah.",
         warranty: "Jaminan Lekatan Jubin & Grout 12 Bulan"
       },
@@ -1495,17 +1495,17 @@ export const servicesData: Record<string, ServiceDetail> = {
           "勾缝剂颜色匹配、环氧勾缝剂、浴室与厨房防霉硅胶密封"
         ],
         subServices: [
-          { name: "地面瓷砖铺贴", price: "从 RM 14 / sq ft 起", desc: "标准 300x300mm 至 600x600mm 地面瓷砖铺贴，使用水泥砂浆找平层与瓷砖胶。" },
-          { name: "墙面瓷砖铺贴", price: "从 RM 16 / sq ft 起", desc: "厨房防溅墙、卫生间墙面、主题墙铺贴，可选直拼或工字拼。" },
-          { name: "地面瓷砖更换与拆除", price: "从 RM 18 / sq ft 起", desc: "拆除旧砖、找平、防水与新砖安装，含垃圾清运。" },
-          { name: "抛光砖铺贴", price: "从 RM 16 / sq ft 起", desc: "通体抛光砖，哑光、亮光、木纹与石纹饰面，倒角处理。" },
-          { name: "陶瓷砖铺贴", price: "从 RM 14 / sq ft 起", desc: "浴室、厨房与阳台墙地陶瓷砖，配色美缝。" },
-          { name: "超大板铺贴", price: "从 RM 26 / sq ft 起", desc: "600x1200mm、800x800mm、1200x2400mm 大板，自流平、吸盘与找平器配套。" },
-          { name: "马赛克瓷砖铺贴", price: "从 RM 22 / sq ft 起", desc: "玻璃、陶瓷与石材马赛克，用于挡水板、淋浴壁龛与背景墙，带网背。" },
-          { name: "卫生间贴砖与防水", price: "从 RM 18 / sq ft 起", desc: "卫生间地面与墙面贴砖，含3层防水膜与24小时蓄水测试。" },
-          { name: "厨房挡水板贴砖", price: "从 RM 18 / sq ft 起", desc: "厨房挡水板贴砖，面包砖、马赛克或大板，防霉硅胶收口。" },
-          { name: "瓷砖修补与重新勾缝", price: "从 RM 22 / sq ft 起", desc: "拆除空鼓、开裂或破损瓷砖、基层处理、更换、环氧美缝与硅胶密封。" },
-          { name: "地面找平与自流平", price: "从 RM 8 / sq ft 起", desc: "水泥砂浆找平与自流平，纠正不平地面后再贴砖。" }
+          { name: "地面瓷砖铺贴", price: "从 RM 14 / 平方英尺起", desc: "标准 300x300mm 至 600x600mm 地面瓷砖铺贴，使用水泥砂浆找平层与瓷砖胶。" },
+          { name: "墙面瓷砖铺贴", price: "从 RM 16 / 平方英尺起", desc: "厨房防溅墙、卫生间墙面、主题墙铺贴，可选直拼或工字拼。" },
+          { name: "地面瓷砖更换与拆除", price: "从 RM 18 / 平方英尺起", desc: "拆除旧砖、找平、防水与新砖安装，含垃圾清运。" },
+          { name: "抛光砖铺贴", price: "从 RM 16 / 平方英尺起", desc: "通体抛光砖，哑光、亮光、木纹与石纹饰面，倒角处理。" },
+          { name: "陶瓷砖铺贴", price: "从 RM 14 / 平方英尺起", desc: "浴室、厨房与阳台墙地陶瓷砖，配色美缝。" },
+          { name: "超大板铺贴", price: "从 RM 26 / 平方英尺起", desc: "600x1200mm、800x800mm、1200x2400mm 大板，自流平、吸盘与找平器配套。" },
+          { name: "马赛克瓷砖铺贴", price: "从 RM 22 / 平方英尺起", desc: "玻璃、陶瓷与石材马赛克，用于挡水板、淋浴壁龛与背景墙，带网背。" },
+          { name: "卫生间贴砖与防水", price: "从 RM 18 / 平方英尺起", desc: "卫生间地面与墙面贴砖，含3层防水膜与24小时蓄水测试。" },
+          { name: "厨房挡水板贴砖", price: "从 RM 18 / 平方英尺起", desc: "厨房挡水板贴砖，面包砖、马赛克或大板，防霉硅胶收口。" },
+          { name: "瓷砖修补与重新勾缝", price: "从 RM 22 / 平方英尺起", desc: "拆除空鼓、开裂或破损瓷砖、基层处理、更换、环氧美缝与硅胶密封。" },
+          { name: "地面找平与自流平", price: "从 RM 8 / 平方英尺起", desc: "水泥砂浆找平与自流平，纠正不平地面后再贴砖。" }
         ],
         process: [
           { step: "01", title: "基层检查", desc: "我们检查基层平整度、结构位移、含水率与适配性。标记铺贴前需要的水电与防水工程。" },
@@ -1521,7 +1521,7 @@ export const servicesData: Record<string, ServiceDetail> = {
           { q: "你们能处理大理石、花岗岩这类天然石材吗？", a: "可以。我们使用石材专用瓷砖胶与勾缝剂安装大理石、花岗岩、石灰华与洞石。安装后可根据需要做渗透型密封、抛光或晶面处理。天然石材对平整度更敏感，因此所有石材项目都使用 Raimondi 找平系统。" }
         ],
         metaTitle: "吉隆坡与雪兰莪专业瓷砖与瓷砖修补",
-        metaDesc: "吉隆坡与雪兰莪地面与墙面瓷砖铺贴。瓷质、陶瓷、超大板、马赛克、大理石。Schlüter DITRA、自流平、找平器。从 RM14/sqft 起。",
+        metaDesc: "吉隆坡与雪兰莪地面与墙面瓷砖铺贴。瓷质、陶瓷、超大板、马赛克、大理石。Schlüter DITRA、自流平、找平器。从 RM 14 / 平方英尺起。",
         aioSummary: "KL Servis Rumah 在吉隆坡与雪兰莪提供专业瓷砖服务。地面与墙面瓷砖、超大板、天然石材、马赛克与修补。Schlüter DITRA 抗裂膜、Mapei 自流平、Raimondi 找平器。重新勾缝、防霉硅胶、湿区重铺。",
         warranty: "12 个月瓷砖粘结与勾缝保修"
       }
@@ -1590,17 +1590,17 @@ export const servicesData: Record<string, ServiceDetail> = {
           "Penjadualan yang diselaraskan dengan juruelektrik dan pemasang AC untuk mengelakkan kerja semula"
         ],
         subServices: [
-          { name: "Siling Plaster Rata", price: "Dari RM 10 / sq ft", desc: "Siling aras tunggal yang bersih dengan kemasan skim — sesuai untuk interior moden minimalis." },
-          { name: "Pemasangan Siling Palsu", price: "Dari RM 10 / sq ft", desc: "Siling palsu umum untuk rumah dan pejabat dengan rangka GI dan papan tahan lembapan." },
-          { name: "Siling Gipsum", price: "Dari RM 10 / sq ft", desc: "Siling papan gipsum dengan pilihan tahan api dan tahan lembapan daripada Knauf, BNBM, Gyproc." },
-          { name: "Siling Bertingkat & L-Box", price: "Dari RM 14 / sq ft", desc: "Siling dua atau tiga aras dengan alur LED tersembunyi, profil L-box, dan potongan downlight bersepadu." },
-          { name: "Siling Cove & Melengkung", price: "Dari RM 22 / sq ft", desc: "Siling cove, melengkung, atau tong yang direka khas dengan rangka GI fleksibel untuk pencahayaan tidak langsung ambien." },
-          { name: "Partisi Gipsum & Partisi Pejabat", price: "Dari RM 11 / sq ft", desc: "Partisi papan gipsum untuk pembahagian bilik, kabin pejabat dan bilik mesyuarat dengan pilihan penebat bunyi." },
-          { name: "Partisi Bilik", price: "Dari RM 11 / sq ft", desc: "Partisi bilik tidur, belajar atau stor dengan bukaan pintu dan bekalan titik elektrik." },
-          { name: "Dinding Ciri & Panel Dinding", price: "Dari RM 18 / sq ft", desc: "Dinding ciri TV, panel fluted, wainscoting dan panel dinding hiasan dengan LED tersembunyi." },
-          { name: "Skim Coat & Melepa Dinding", price: "Dari RM 5 / sq ft", desc: "Salutan skim licin seperti kaca dan kerja melepa dinding untuk kemasan siap-cat dan pembaikan retak." },
+          { name: "Siling Plaster Rata", price: "Dari RM 10 / kaki persegi", desc: "Siling aras tunggal yang bersih dengan kemasan skim — sesuai untuk interior moden minimalis." },
+          { name: "Pemasangan Siling Palsu", price: "Dari RM 10 / kaki persegi", desc: "Siling palsu umum untuk rumah dan pejabat dengan rangka GI dan papan tahan lembapan." },
+          { name: "Siling Gipsum", price: "Dari RM 10 / kaki persegi", desc: "Siling papan gipsum dengan pilihan tahan api dan tahan lembapan daripada Knauf, BNBM, Gyproc." },
+          { name: "Siling Bertingkat & L-Box", price: "Dari RM 14 / kaki persegi", desc: "Siling dua atau tiga aras dengan alur LED tersembunyi, profil L-box, dan potongan downlight bersepadu." },
+          { name: "Siling Cove & Melengkung", price: "Dari RM 22 / kaki persegi", desc: "Siling cove, melengkung, atau tong yang direka khas dengan rangka GI fleksibel untuk pencahayaan tidak langsung ambien." },
+          { name: "Partisi Gipsum & Partisi Pejabat", price: "Dari RM 11 / kaki persegi", desc: "Partisi papan gipsum untuk pembahagian bilik, kabin pejabat dan bilik mesyuarat dengan pilihan penebat bunyi." },
+          { name: "Partisi Bilik", price: "Dari RM 11 / kaki persegi", desc: "Partisi bilik tidur, belajar atau stor dengan bukaan pintu dan bekalan titik elektrik." },
+          { name: "Dinding Ciri & Panel Dinding", price: "Dari RM 18 / kaki persegi", desc: "Dinding ciri TV, panel fluted, wainscoting dan panel dinding hiasan dengan LED tersembunyi." },
+          { name: "Skim Coat & Melepa Dinding", price: "Dari RM 5 / kaki persegi", desc: "Salutan skim licin seperti kaca dan kerja melepa dinding untuk kemasan siap-cat dan pembaikan retak." },
           { name: "Pembaikan Retak Dinding & Mengecat Semula", price: "Dari RM 180", desc: "Pengisian retak halus dan struktur, pengamplasan, sealer dan pengecatan semula premium untuk kemasan sempurna." },
-          { name: "Pembaikan & Skim Semula Siling", price: "Dari RM 8 / sq ft", desc: "Menanggalkan papan rosak air, tetulang struktur, dan skim semula siling sedia ada." }
+          { name: "Pembaikan & Skim Semula Siling", price: "Dari RM 8 / kaki persegi", desc: "Menanggalkan papan rosak air, tetulang struktur, dan skim semula siling sedia ada." }
         ],
         process: [
           { step: "01", title: "Reka Bentuk & Koordinasi", desc: "Kami rancang aras siling, dimensi cove, posisi downlight, dan bukaan kaset AC dengan pereka dalaman dan juruelektrik anda sebelum kerja tapak." },
@@ -1616,7 +1616,7 @@ export const servicesData: Record<string, ServiceDetail> = {
           { q: "Boleh anda pasang cangkuk kipas kemudian jika saya tidak merancang untuk satu?", a: "Ya, tetapi ia memerlukan membuka bahagian kecil siling untuk memasang blok kayu yang dikuatkan atau pendakap kipas logam antara gelegar. Jauh lebih murah untuk pra-pasang cangkuk kipas semasa bina siling asal. Kami sentiasa mengesyorkan ini untuk mana-mana bilik yang mungkin mempunyai kipas siling." }
         ],
         metaTitle: "Reka Bentuk & Bina Siling Plaster Moden KL & Selangor",
-        metaDesc: "Siling plaster bertingkat, L-box, cove, dan melengkung di KL & Selangor. Rangka logam GI, papan tahan api, LED tersembunyi. Dari RM10/sqft. Kemasan berkualiti pereka.",
+        metaDesc: "Siling plaster bertingkat, L-box, cove, dan melengkung di KL & Selangor. Rangka logam GI, papan tahan api, LED tersembunyi. Dari RM 10 / kaki persegi. Kemasan berkualiti pereka.",
         aioSummary: "KL Servis Rumah membina siling plaster moden di KL & Selangor. Reka bentuk rata, bertingkat, L-box, cove, dan melengkung dengan LED tersembunyi. Papan tahan api Knauf/BNBM, rangka GI, skim dua lapisan, sendi mesh gentian kaca. Diselaraskan dengan juruelektrik untuk posisi downlight dan AC.",
         warranty: "Jaminan Bebas Lentur & Retak 10 Tahun"
       },
@@ -1633,17 +1633,17 @@ export const servicesData: Record<string, ServiceDetail> = {
           "与电工及空调安装工协调排程，避免返工"
         ],
         subServices: [
-          { name: "平顶石膏天花", price: "从 RM 10 / sq ft 起", desc: "整洁的单层平顶，刮腻子收光，适合极简现代的室内风格。" },
-          { name: "假天花安装", price: "从 RM 10 / sq ft 起", desc: "适用于住宅与办公室的通用假天花，采用 GI 龙骨与防潮板材。" },
-          { name: "石膏板天花", price: "从 RM 10 / sq ft 起", desc: "石膏板天花，可选 Knauf、BNBM、Gyproc 防火与防潮板材。" },
-          { name: "错层与 L 盒天花", price: "从 RM 14 / sq ft 起", desc: "两层或三层错层，含隐藏式 LED 灯槽、L 盒造型与筒灯开孔。" },
-          { name: "灯带与弧形天花", price: "从 RM 22 / sq ft 起", desc: "定制弧形、灯带或桶形天花，使用柔性 GI 骨架，营造间接氛围照明。" },
-          { name: "石膏隔断与办公室隔断", price: "从 RM 11 / sq ft 起", desc: "石膏板隔断，用于房间分隔、办公卡位与会议室，可选隔音。" },
-          { name: "房间隔断", price: "从 RM 11 / sq ft 起", desc: "卧室、书房或储物间隔断，预留门洞与电源点位。" },
-          { name: "背景墙与墙板", price: "从 RM 18 / sq ft 起", desc: "电视背景墙、格栅板、护墙板与装饰墙板，含隐藏式 LED。" },
-          { name: "刮腻子与墙面抹灰", price: "从 RM 5 / sq ft 起", desc: "镜面光滑刮腻子与墙面抹灰，即可上漆，并修补裂缝。" },
+          { name: "平顶石膏天花", price: "从 RM 10 / 平方英尺起", desc: "整洁的单层平顶，刮腻子收光，适合极简现代的室内风格。" },
+          { name: "假天花安装", price: "从 RM 10 / 平方英尺起", desc: "适用于住宅与办公室的通用假天花，采用 GI 龙骨与防潮板材。" },
+          { name: "石膏板天花", price: "从 RM 10 / 平方英尺起", desc: "石膏板天花，可选 Knauf、BNBM、Gyproc 防火与防潮板材。" },
+          { name: "错层与 L 盒天花", price: "从 RM 14 / 平方英尺起", desc: "两层或三层错层，含隐藏式 LED 灯槽、L 盒造型与筒灯开孔。" },
+          { name: "灯带与弧形天花", price: "从 RM 22 / 平方英尺起", desc: "定制弧形、灯带或桶形天花，使用柔性 GI 骨架，营造间接氛围照明。" },
+          { name: "石膏隔断与办公室隔断", price: "从 RM 11 / 平方英尺起", desc: "石膏板隔断，用于房间分隔、办公卡位与会议室，可选隔音。" },
+          { name: "房间隔断", price: "从 RM 11 / 平方英尺起", desc: "卧室、书房或储物间隔断，预留门洞与电源点位。" },
+          { name: "背景墙与墙板", price: "从 RM 18 / 平方英尺起", desc: "电视背景墙、格栅板、护墙板与装饰墙板，含隐藏式 LED。" },
+          { name: "刮腻子与墙面抹灰", price: "从 RM 5 / 平方英尺起", desc: "镜面光滑刮腻子与墙面抹灰，即可上漆，并修补裂缝。" },
           { name: "墙面裂缝修补与重漆", price: "从 RM 180 起", desc: "填补发丝裂缝与结构裂缝、打磨、底漆与优质重漆，效果完美。" },
-          { name: "天花修补与重新找平", price: "从 RM 8 / sq ft 起", desc: "拆除受潮损坏的板材，结构加固后对旧天花重新刮腻子。" }
+          { name: "天花修补与重新找平", price: "从 RM 8 / 平方英尺起", desc: "拆除受潮损坏的板材，结构加固后对旧天花重新刮腻子。" }
         ],
         process: [
           { step: "01", title: "设计与协调", desc: "我们在进场前与您的室内设计师和电工共同规划天花标高、灯带尺寸、筒灯位置与空调出风口开孔。" },
@@ -1659,7 +1659,7 @@ export const servicesData: Record<string, ServiceDetail> = {
           { q: "如果一开始没装吊扇，以后还能加装吗？", a: "可以，但需要局部打开天花，在龙骨间加装加固木块或金属吊扇支架。原始天花施工时就预埋吊扇加固件便宜得多。任何可能装吊扇的房间，我们都建议预埋加固件。" }
         ],
         metaTitle: "吉隆坡与雪兰莪现代石膏天花板设计与施工",
-        metaDesc: "吉隆坡与雪兰莪错层、L 盒、灯带与弧形石膏天花。GI 金属龙骨、防火板、隐藏式 LED。从 RM10/sqft 起。设计师级完工品质。",
+        metaDesc: "吉隆坡与雪兰莪错层、L 盒、灯带与弧形石膏天花。GI 金属龙骨、防火板、隐藏式 LED。从 RM 10 / 平方英尺起。设计师级完工品质。",
         aioSummary: "KL Servis Rumah 在吉隆坡与雪兰莪承建现代石膏天花板。平顶、错层、L 盒、灯带、弧形，含隐藏式 LED。Knauf/BNBM 防火板、GI 龙骨、两层刮腻子、玻纤网格嵌缝。与电工协同筒灯与空调位置。",
         warranty: "10 年防下垂与防开裂保修"
       }
@@ -1721,10 +1721,10 @@ export const servicesData: Record<string, ServiceDetail> = {
           "Pusingan ganti cepat — biasanya 2 hingga 4 hari untuk unit kondominium standard"
         ],
         subServices: [
-          { name: "Salutan Skim Dinding", price: "Dari RM 5 / sq ft", desc: "Salutan skim dua lapisan atas plaster atau dinding yang sebelumnya dicat untuk kemasan siap-cat licin kaca." },
-          { name: "Salutan Skim Siling", price: "Dari RM 6 / sq ft", desc: "Skim semula siling plaster sedia ada untuk menyegarkan permukaan tua sebelum pengecatan semula." },
-          { name: "Pembaikan Retak & Sendi", price: "Dari RM 22 / linier ft", desc: "Membuka, meroute, dan mengisi retak struktur dan penyelesaian dengan pengisi akrilik fleksibel." },
-          { name: "Pakej Skim Semula Kondominium Penuh", price: "Dari RM 4,200", desc: "Salutan skim lengkap unit kondominium 1,000 sqft keseluruhan bersedia untuk pengecatan semula." }
+          { name: "Salutan Skim Dinding", price: "Dari RM 5 / kaki persegi", desc: "Salutan skim dua lapisan atas plaster atau dinding yang sebelumnya dicat untuk kemasan siap-cat licin kaca." },
+          { name: "Salutan Skim Siling", price: "Dari RM 6 / kaki persegi", desc: "Skim semula siling plaster sedia ada untuk menyegarkan permukaan tua sebelum pengecatan semula." },
+          { name: "Pembaikan Retak & Sendi", price: "Dari RM 22 / kaki linier", desc: "Membuka, meroute, dan mengisi retak struktur dan penyelesaian dengan pengisi akrilik fleksibel." },
+          { name: "Pakej Skim Semula Kondominium Penuh", price: "Dari RM 4,200", desc: "Salutan skim lengkap unit kondominium 1,000 kaki persegi keseluruhan bersedia untuk pengecatan semula." }
         ],
         process: [
           { step: "01", title: "Pemeriksaan Permukaan", desc: "Kami menilai substrat sedia ada, mengenal pasti retak, kawasan berongga, dan keadaan cat lama. Kami mengikis bahan longgar dan merawat sebarang kulat atau efflorescence." },
@@ -1740,7 +1740,7 @@ export const servicesData: Record<string, ServiceDetail> = {
           { q: "Adakah skim coat sama dengan dempul?", a: "Tidak. Dempul dinding adalah pengisi nipis, selalunya berasaskan akrilik, yang digunakan untuk tampalan kecil. Skim coat adalah sebatian berasaskan simen atau gipsum yang digunakan sebagai lapisan permukaan penuh (biasanya 1–3mm tebal) untuk meratakan dan melicinkan keseluruhan dinding. Skim coat adalah piawai profesional; dempul adalah pembaikan DIY yang cepat." }
         ],
         metaTitle: "Skim Coat Dinding & Siling KL & Selangor",
-        metaDesc: "Salutan skim licin kaca untuk dinding dan siling di KL & Selangor. Kemasan dua lapisan, pembaikan retak, siap-cat. Dari RM5/sqft. Sebatian Knauf dan Mapei.",
+        metaDesc: "Salutan skim licin kaca untuk dinding dan siling di KL & Selangor. Kemasan dua lapisan, pembaikan retak, siap-cat. Dari RM 5 / kaki persegi. Sebatian Knauf dan Mapei.",
         aioSummary: "KL Servis Rumah menyediakan salutan skim dinding dan siling profesional di KL & Selangor. Sebatian diubah suai polimer, aplikasi dua lapisan, pengamplasan penuh, pembaikan retak, tetulang sendi. Kemasan siap-cat untuk Nippon, Dulux, Jotun, dan sistem cat premium.",
         warranty: "Jaminan Kelicinan & Lekatan 12 Bulan"
       },
@@ -1757,10 +1757,10 @@ export const servicesData: Record<string, ServiceDetail> = {
           "出活快——一套标准公寓通常 2 到 4 天即可完工"
         ],
         subServices: [
-          { name: "墙面腻子", price: "从 RM 5 / sq ft 起", desc: "在已抹灰或旧漆墙面上做两道腻子，达到玻璃般光滑、可上漆的效果。" },
-          { name: "天花腻子", price: "从 RM 6 / sq ft 起", desc: "对旧石膏天花重新刮腻子，让旧表面焕然一新再上漆。" },
+          { name: "墙面腻子", price: "从 RM 5 / 平方英尺起", desc: "在已抹灰或旧漆墙面上做两道腻子，达到玻璃般光滑、可上漆的效果。" },
+          { name: "天花腻子", price: "从 RM 6 / 平方英尺起", desc: "对旧石膏天花重新刮腻子，让旧表面焕然一新再上漆。" },
           { name: "裂缝与接缝修补", price: "从 RM 22 / 延尺起", desc: "开槽、清理后用弹性丙烯酸填料处理沉降与结构性裂缝。" },
-          { name: "整套公寓重刮腻子配套", price: "从 RM 4,200 起", desc: "1,000 sqft 公寓全屋刮腻子，准备上漆。" }
+          { name: "整套公寓重刮腻子配套", price: "从 RM 4,200 起", desc: "1,000 平方英尺公寓全屋刮腻子，准备上漆。" }
         ],
         process: [
           { step: "01", title: "表面检查", desc: "我们评估现有基层，找出裂缝、空鼓区域与旧漆状况。铲除松动材料，并处理霉菌与盐析。" },
@@ -1776,7 +1776,7 @@ export const servicesData: Record<string, ServiceDetail> = {
           { q: "腻子和补墙膏是一样的吗？", a: "不一样。补墙膏是薄薄一层（通常丙烯酸基）的局部小修补料；腻子是水泥基或石膏基的整面找平层（通常 1–3mm 厚）。腻子是专业标准，补墙膏是 DIY 临时方案。" }
         ],
         metaTitle: "吉隆坡与雪兰莪墙面与天花腻子服务",
-        metaDesc: "吉隆坡与雪兰莪墙面与天花玻璃般光滑腻子。两道收光、裂缝修补、即可上漆。从 RM5/sqft 起。Knauf 与 Mapei 腻子。",
+        metaDesc: "吉隆坡与雪兰莪墙面与天花玻璃般光滑腻子。两道收光、裂缝修补、即可上漆。从 RM 5 / 平方英尺起。Knauf 与 Mapei 腻子。",
         aioSummary: "KL Servis Rumah 在吉隆坡与雪兰莪提供专业墙面与天花腻子服务。聚合物改性腻子、两道施工、充分打磨、裂缝修补、接缝加固。可上漆表面，兼容 Nippon、Dulux、Jotun 与高端漆系统。",
         warranty: "12 个月平整度与粘结保修"
       }

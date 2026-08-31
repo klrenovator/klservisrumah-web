@@ -33,6 +33,7 @@ export default function ToolsPage() {
   return (
     <ToolsIndexPage
       copy={copy}
+        locale="en"
       path={path}
       tools={tools}
       graph={buildToolsIndexGraph({ path, copy, tools })}

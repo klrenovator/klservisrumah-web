@@ -14,6 +14,7 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { siteConfig } from "@/config/site";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import type { ToolsIndexCopy } from "@/config/tools-i18n";
+import type { Locale } from "@/lib/i18n";
 
 const baseUrl = "https://www.klservisrumah.my";
 
@@ -96,11 +97,18 @@ export function buildToolsIndexGraph({
  */
 export function ToolsIndexPage({
   copy,
+  locale,
   path,
   tools,
   graph
 }: {
   copy: ToolsIndexCopy;
+  /** The route's language — the WhatsApp prefills must greet the dispatch
+   *  desk in the visitor's own tongue. It used to be omitted, so the BM/中文
+   *  tool indexes interpolated localized labels into the ENGLISH template
+   *  ("I would like to get a quote for … service for my property"), caught
+   *  by the audit:html wa-prefill-locale-leak check (Fix Wave 28). */
+  locale: Locale;
   /** This route's own path — used for the breadcrumb JSON-LD item URL. */
   path: string;
   tools: ToolIndexCard[];
@@ -141,7 +149,7 @@ export function ToolsIndexPage({
           </div>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
-              href={getWhatsAppLink({ service: copy.waFollowUpService })}
+              href={getWhatsAppLink({ service: copy.waFollowUpService, lang: locale })}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-whatsapp"
@@ -225,7 +233,7 @@ export function ToolsIndexPage({
                 {copy.ctaBody}
               </p>
               <a
-                href={getWhatsAppLink({ service: copy.waCustomService })}
+                href={getWhatsAppLink({ service: copy.waCustomService, lang: locale })}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-5 inline-flex items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-5 py-3.5 text-sm font-black text-white transition hover:bg-[#128C7E]"

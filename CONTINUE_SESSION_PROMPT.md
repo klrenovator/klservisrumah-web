@@ -6,6 +6,45 @@
 
 ## Current State (Update this each session)
 
+> **✅ FIX WAVE 28 COMPLETE (2026-08-31) — live-production verification +
+> trilingual price/leak sweep.** First session to probe production externally
+> (fetch/search tools expose final resolved URLs): **P0 Critical #3 —
+> www/non-www host canonical — VERIFIED ✅** (all 4 scheme×host variants →
+> `https://www.klservisrumah.my`; robots.txt `Host:` + Google www-only index
+> agree). The probes caught an unblocked defect class invisible to repo gates,
+> ALL FIXED + permanently gated: **edge**: `/ms/harga` 404 and
+> `/zh/pricing`→EN (missing `REAL_LOCALE_TREES` entries — P3-15 whack-a-mole
+> class closed by new **bidirectional** prebuild gate `audit:locale-trees`;
+> prod-server probes 12/12 ✓); **data**: 50 English-unit strings inside
+> BM/中文 registry prices (`sq ft` ×46, `/ point` ×7, `linier ft`, desc/meta
+> tokens → kaki persegi/平方英尺/位/titik; new prebuild gate
+> `audit:price-i18n`); **templates**: 174 raw `{name}` placeholders on the 87
+> cost pages (`methodHeading` + `processSub` now pass `name`; new `audit:html`
+> check #16); **WhatsApp**: English prefills — cost-page " cost quote" ×87,
+> `/ms/alatan`+`/zh/gongju` links missing `lang:` (EN template with localized
+> label), EN rate-book units in localized worked examples ("RM 450 / room" →
+> "RM 450 / bilik" / "RM 450 / 房间"; `cleanAmount()` strips 从…起; new
+> `audit:html` check #17). All gates PASS on the fixed tree: prebuild
+> **329,897 × 0** (incl. 2 new gates), type-check, lint 0/0, build **4,141
+> HTML**, audit:links 312,968+55 → 0, audit:html 0/0 (incl. 2 new checks),
+> meta, seo:audit, seo-head, schema-size, raster-og, location-similarity
+> 68.8% max. Full log: `docs/full-website-deep-audit/FIX-WAVE-28-REPORT.md`.
+>
+> **⏳ EXACT NEXT STOP — only owner-blocked rows remain; the last P0 is
+> closed.** After the owner **deploys this commit**, re-probe the two fixed
+> hubs live (`/ms/harga` must 200, `/zh/pricing` must 200 — the middleware fix
+> only takes effect on deploy). Owner items that unblock the rest: **P4-10**
+> case-study pages + **P5-12** photography; **P4-09/P2-21/P3-09/P5-09** review
+> + stats/founding verification (GSC/GBP); **P2-22** outbound citations
+> (editorial decision); **P4-11** named team bios; **P4-13/P2-C4 keep-set/
+> BP-1 phase 2** (owner GSC — generator done Wave 26). Non-blocking note: zh
+> mixes "平方呎"/"平方英尺" (terminology decision, not a leak). Do **not**
+> invent owner facts.
+>
+> ---
+>
+> **[SUPERSEDED by Fix Wave 28, 2026-08-31 — see the Current State block at
+> the top. The verification state below predates the Wave-28 live probes.]**
 > **✅ VERIFICATION SESSION COMPLETE (2026-08-31, after Fix Wave 26):** The
 > merged Wave-26 tree was re-verified end-to-end and the site is confirmed
 > fully **on gates with no unblocked audit work remaining.** Gates re-run this

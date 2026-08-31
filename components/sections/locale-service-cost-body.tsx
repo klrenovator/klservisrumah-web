@@ -127,7 +127,11 @@ export function CostPageBody({
   const pricedSubs = service.subServices.filter((sub) => hasAmount(sub.price));
   const quoteOnlySubs = service.subServices.filter((sub) => !hasAmount(sub.price));
   const marketRows = buildRows({ slug, rates, t });
-  const waLink = getWhatsAppLink({ service: `${service.title} cost quote`, lang: locale });
+  // The prefill keeps the *localized* service title only. It used to append
+  // the English words " cost quote", which leaked into the BM/中文 WhatsApp
+  // message the visitor sends — the template itself already asks for a quote
+  // in the visitor's language (same rule as P4-08's serviceNameGeneric).
+  const waLink = getWhatsAppLink({ service: service.title, lang: locale });
 
   const example = buildExample({ scopeBook, pricedSubs, t });
 
@@ -370,7 +374,10 @@ export function CostPageBody({
               {t("costPage.methodEyebrow")}
             </span>
             <h2 className="mt-3 text-2xl font-extrabold text-[#075985] sm:text-3xl">
-              {t("costPage.methodHeading")}
+              {/* This heading carries a {name} placeholder — pass the service
+                  title or the raw token renders literally on all 87 cost
+                  pages (caught live on /ms/services/painting/cost). */}
+              {t("costPage.methodHeading", { name: service.title })}
             </h2>
             <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2">
               {[1, 2, 3, 4].map((step) => (
@@ -488,7 +495,7 @@ export function CostPageBody({
                 {t("costPage.processHeading", { name: service.title })}
               </h2>
               <p className="mt-2 max-w-3xl text-sm font-semibold leading-relaxed text-[#475569]">
-                {t("costPage.processSub")}
+                {t("costPage.processSub", { name: service.title })}
               </p>
               <ol className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2">
                 {localizedDetail.process.map((step) => (
@@ -562,9 +569,12 @@ function buildExample({
   return t("costPage.exampleBody", {
     qty,
     name: displayName,
-    // Drop the marketing prefix ("From RM 450 / room" → "RM 450 / room")
-    // so the worked example reads as arithmetic, not a starting-price promo.
-    amount: cleanAmount(scope.published),
+    // Quote the LOCALIZED published rate (same string the rate table shows:
+    // "Dari RM 450 / bilik", "从 RM 450 / 房间起"), never the English
+    // rate-book value — "RM 450 / room" used to leak the English unit into
+    // the BM/中文 worked example on every cost page. Drop the marketing
+    // prefix ("From/Dari/从 …起") so the example reads as arithmetic.
+    amount: cleanAmount(pricedSubs[0]?.price ?? scope.published),
     total: formatMYR(total)
   });
 }
@@ -572,11 +582,12 @@ function buildExample({
 /** Shared with the service-hub DirectAnswer (P3-05: never lower-case a price). */
 const lowerFirst = lowerFirstSentence;
 
-/** "From RM 450 / room" → "RM 450 / room"; "RM 450 / 房间起" → "RM 450 / 房间". */
+/** "From RM 450 / room" → "RM 450 / room"; "Dari RM 450 / bilik" → "RM 450 / bilik"; "从 RM 450 / 房间起" → "RM 450 / 房间". */
 function cleanAmount(published: string): string {
   return published
     .replace(/^From\s+/i, "")
     .replace(/^Dari\s+/i, "")
+    .replace(/^从\s*/u, "")
     .replace(/起$/, "")
     .trim();
 }

@@ -1004,7 +1004,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
         "subServices": [
           {
             "name": "Pemasangan Power Point & Suis Baru",
-            "price": "Dari RM 150 / point",
+            "price": "Dari RM 150 / titik",
             "desc": "Menambah soket 13A baru, outlet USB, suis double-pole, dan kawalan dimmer pada litar sedia ada atau baru."
           },
           {
@@ -1014,12 +1014,12 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
           },
           {
             "name": "Titik Pencahayaan & Downlight",
-            "price": "Dari RM 120 / point",
+            "price": "Dari RM 120 / titik",
             "desc": "Memotong dan mendawai titik downlight siling, titik pendant, dan pencahayaan trek pada siling sedia ada."
           },
           {
             "name": "Titik Aircond, Pemanas Air & Ketuhar",
-            "price": "Dari RM 220 / point",
+            "price": "Dari RM 220 / titik",
             "desc": "Titik beban berat 20A–32A khusus dengan isolator dan saiz kabel yang betul setiap perkakas."
           },
           {
@@ -1029,22 +1029,22 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
           },
           {
             "name": "Power Point Tambahan",
-            "price": "Dari RM 150 / point",
+            "price": "Dari RM 150 / titik",
             "desc": "Soket 13A tambahan semasa pengubahsuaian — ruang tamu, bilik tidur, bilik belajar dan island dapur pada litar sedia ada atau baru."
           },
           {
             "name": "Pemasangan Suis",
-            "price": "Dari RM 150 / point",
+            "price": "Dari RM 150 / titik",
             "desc": "Suis baharu atau gantian, suis dua hala, dimmer dan retrofit suis pintar pada litar lampu sedia ada."
           },
           {
             "name": "Elektrik Dapur",
-            "price": "Dari RM 220 / point",
+            "price": "Dari RM 220 / titik",
             "desc": "Titik ketuhar, hob, hood, dishwasher dan tambahan 13A/15A dapur diselaraskan dengan susun atur kabinet dan countertop."
           },
           {
             "name": "Elektrik Bilik Mandi",
-            "price": "Dari RM 220 / point",
+            "price": "Dari RM 220 / titik",
             "desc": "Pendawaian pemanas air, kipas ekzos, pencahayaan dan titik pencukur untuk kawasan basah, dengan isolator dan aksesori berkadar IP."
           },
           {
@@ -1439,57 +1439,57 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
         "subServices": [
           {
             "name": "Pemasangan Jubin Lantai",
-            "price": "Dari RM 14 / sq ft",
+            "price": "Dari RM 14 / kaki persegi",
             "desc": "Pemasangan jubin lantai standard 300x300mm hingga 600x600mm dengan screed simen-pasir dan pelekat jubin."
           },
           {
             "name": "Pemasangan Jubin Dinding",
-            "price": "Dari RM 16 / sq ft",
+            "price": "Dari RM 16 / kaki persegi",
             "desc": "Splashback dapur, dinding bilik mandi, dan jubin dinding ciri dengan corak lurus atau bata."
           },
           {
             "name": "Penggantian Jubin & Pemecahan Jubin",
-            "price": "Dari RM 18 / sq ft",
+            "price": "Dari RM 18 / kaki persegi",
             "desc": "Pemecahan jubin lama, screed, kalis air dan pemasangan jubin baru dengan pelupusan serpihan."
           },
           {
             "name": "Pemasangan Jubin Porselin",
-            "price": "Dari RM 16 / sq ft",
+            "price": "Dari RM 16 / kaki persegi",
             "desc": "Jubin porselin homogen dalam kemasan matte, berkilat, rupa kayu dan rupa batu dengan tepi rectified."
           },
           {
             "name": "Pemasangan Jubin Seramik",
-            "price": "Dari RM 14 / sq ft",
+            "price": "Dari RM 14 / kaki persegi",
             "desc": "Jubin seramik dinding dan lantai untuk bilik mandi, dapur dan balkoni dengan grout sepadan warna."
           },
           {
             "name": "Pemasangan Slab Format Besar",
-            "price": "Dari RM 26 / sq ft",
+            "price": "Dari RM 26 / kaki persegi",
             "desc": "Slab 600x1200mm, 800x800mm, 1200x2400mm dengan self-levelling, cawan sedutan, dan lippage tuning."
           },
           {
             "name": "Pemasangan Jubin Mozek",
-            "price": "Dari RM 22 / sq ft",
+            "price": "Dari RM 22 / kaki persegi",
             "desc": "Mozek kaca, porselin dan batu untuk backsplash, niche pancuran dan dinding ciri dengan backing mesh."
           },
           {
             "name": "Jubin Bilik Mandi & Kalis Air",
-            "price": "Dari RM 18 / sq ft",
+            "price": "Dari RM 18 / kaki persegi",
             "desc": "Jubin lantai dan dinding bilik mandi dengan membran kalis air 3 lapisan dan ujian kolam 24 jam."
           },
           {
             "name": "Jubin Backsplash Dapur",
-            "price": "Dari RM 18 / sq ft",
+            "price": "Dari RM 18 / kaki persegi",
             "desc": "Jubin backsplash dapur dengan jubin subway, mozek atau format besar dan seal silikon anti-kulat."
           },
           {
             "name": "Pembaikan Jubin & Grout Semula",
-            "price": "Dari RM 22 / sq ft",
+            "price": "Dari RM 22 / kaki persegi",
             "desc": "Menanggalkan jubin berongga, retak atau pecah, penyediaan permukaan, penggantian, grout epoxy dan sealing silikon."
           },
           {
             "name": "Pemerataan Lantai & Self-Leveling",
-            "price": "Dari RM 8 / sq ft",
+            "price": "Dari RM 8 / kaki persegi",
             "desc": "Screed simen dan sebatian self-leveling untuk membetulkan lantai tidak rata sebelum jubin."
           }
         ]
@@ -1501,57 +1501,57 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
         "subServices": [
           {
             "name": "地面瓷砖铺贴",
-            "price": "从 RM 14 / sq ft 起",
+            "price": "从 RM 14 / 平方英尺起",
             "desc": "标准 300x300mm 至 600x600mm 地面瓷砖铺贴，使用水泥砂浆找平层与瓷砖胶。"
           },
           {
             "name": "墙面瓷砖铺贴",
-            "price": "从 RM 16 / sq ft 起",
+            "price": "从 RM 16 / 平方英尺起",
             "desc": "厨房防溅墙、卫生间墙面、主题墙铺贴，可选直拼或工字拼。"
           },
           {
             "name": "地面瓷砖更换与拆除",
-            "price": "从 RM 18 / sq ft 起",
+            "price": "从 RM 18 / 平方英尺起",
             "desc": "拆除旧砖、找平、防水与新砖安装，含垃圾清运。"
           },
           {
             "name": "抛光砖铺贴",
-            "price": "从 RM 16 / sq ft 起",
+            "price": "从 RM 16 / 平方英尺起",
             "desc": "通体抛光砖，哑光、亮光、木纹与石纹饰面，倒角处理。"
           },
           {
             "name": "陶瓷砖铺贴",
-            "price": "从 RM 14 / sq ft 起",
+            "price": "从 RM 14 / 平方英尺起",
             "desc": "浴室、厨房与阳台墙地陶瓷砖，配色美缝。"
           },
           {
             "name": "超大板铺贴",
-            "price": "从 RM 26 / sq ft 起",
+            "price": "从 RM 26 / 平方英尺起",
             "desc": "600x1200mm、800x800mm、1200x2400mm 大板，自流平、吸盘与找平器配套。"
           },
           {
             "name": "马赛克瓷砖铺贴",
-            "price": "从 RM 22 / sq ft 起",
+            "price": "从 RM 22 / 平方英尺起",
             "desc": "玻璃、陶瓷与石材马赛克，用于挡水板、淋浴壁龛与背景墙，带网背。"
           },
           {
             "name": "卫生间贴砖与防水",
-            "price": "从 RM 18 / sq ft 起",
+            "price": "从 RM 18 / 平方英尺起",
             "desc": "卫生间地面与墙面贴砖，含3层防水膜与24小时蓄水测试。"
           },
           {
             "name": "厨房挡水板贴砖",
-            "price": "从 RM 18 / sq ft 起",
+            "price": "从 RM 18 / 平方英尺起",
             "desc": "厨房挡水板贴砖，面包砖、马赛克或大板，防霉硅胶收口。"
           },
           {
             "name": "瓷砖修补与重新勾缝",
-            "price": "从 RM 22 / sq ft 起",
+            "price": "从 RM 22 / 平方英尺起",
             "desc": "拆除空鼓、开裂或破损瓷砖、基层处理、更换、环氧美缝与硅胶密封。"
           },
           {
             "name": "地面找平与自流平",
-            "price": "从 RM 8 / sq ft 起",
+            "price": "从 RM 8 / 平方英尺起",
             "desc": "水泥砂浆找平与自流平，纠正不平地面后再贴砖。"
           }
         ]
@@ -1629,47 +1629,47 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
         "subServices": [
           {
             "name": "Siling Plaster Rata",
-            "price": "Dari RM 10 / sq ft",
+            "price": "Dari RM 10 / kaki persegi",
             "desc": "Siling aras tunggal yang bersih dengan kemasan skim — sesuai untuk interior moden minimalis."
           },
           {
             "name": "Pemasangan Siling Palsu",
-            "price": "Dari RM 10 / sq ft",
+            "price": "Dari RM 10 / kaki persegi",
             "desc": "Siling palsu umum untuk rumah dan pejabat dengan rangka GI dan papan tahan lembapan."
           },
           {
             "name": "Siling Gipsum",
-            "price": "Dari RM 10 / sq ft",
+            "price": "Dari RM 10 / kaki persegi",
             "desc": "Siling papan gipsum dengan pilihan tahan api dan tahan lembapan daripada Knauf, BNBM, Gyproc."
           },
           {
             "name": "Siling Bertingkat & L-Box",
-            "price": "Dari RM 14 / sq ft",
+            "price": "Dari RM 14 / kaki persegi",
             "desc": "Siling dua atau tiga aras dengan alur LED tersembunyi, profil L-box, dan potongan downlight bersepadu."
           },
           {
             "name": "Siling Cove & Melengkung",
-            "price": "Dari RM 22 / sq ft",
+            "price": "Dari RM 22 / kaki persegi",
             "desc": "Siling cove, melengkung, atau tong yang direka khas dengan rangka GI fleksibel untuk pencahayaan tidak langsung ambien."
           },
           {
             "name": "Partisi Gipsum & Partisi Pejabat",
-            "price": "Dari RM 11 / sq ft",
+            "price": "Dari RM 11 / kaki persegi",
             "desc": "Partisi papan gipsum untuk pembahagian bilik, kabin pejabat dan bilik mesyuarat dengan pilihan penebat bunyi."
           },
           {
             "name": "Partisi Bilik",
-            "price": "Dari RM 11 / sq ft",
+            "price": "Dari RM 11 / kaki persegi",
             "desc": "Partisi bilik tidur, belajar atau stor dengan bukaan pintu dan bekalan titik elektrik."
           },
           {
             "name": "Dinding Ciri & Panel Dinding",
-            "price": "Dari RM 18 / sq ft",
+            "price": "Dari RM 18 / kaki persegi",
             "desc": "Dinding ciri TV, panel fluted, wainscoting dan panel dinding hiasan dengan LED tersembunyi."
           },
           {
             "name": "Skim Coat & Melepa Dinding",
-            "price": "Dari RM 5 / sq ft",
+            "price": "Dari RM 5 / kaki persegi",
             "desc": "Salutan skim licin seperti kaca dan kerja melepa dinding untuk kemasan siap-cat dan pembaikan retak."
           },
           {
@@ -1679,7 +1679,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
           },
           {
             "name": "Pembaikan & Skim Semula Siling",
-            "price": "Dari RM 8 / sq ft",
+            "price": "Dari RM 8 / kaki persegi",
             "desc": "Menanggalkan papan rosak air, tetulang struktur, dan skim semula siling sedia ada."
           }
         ]
@@ -1691,47 +1691,47 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
         "subServices": [
           {
             "name": "平顶石膏天花",
-            "price": "从 RM 10 / sq ft 起",
+            "price": "从 RM 10 / 平方英尺起",
             "desc": "整洁的单层平顶，刮腻子收光，适合极简现代的室内风格。"
           },
           {
             "name": "假天花安装",
-            "price": "从 RM 10 / sq ft 起",
+            "price": "从 RM 10 / 平方英尺起",
             "desc": "适用于住宅与办公室的通用假天花，采用 GI 龙骨与防潮板材。"
           },
           {
             "name": "石膏板天花",
-            "price": "从 RM 10 / sq ft 起",
+            "price": "从 RM 10 / 平方英尺起",
             "desc": "石膏板天花，可选 Knauf、BNBM、Gyproc 防火与防潮板材。"
           },
           {
             "name": "错层与 L 盒天花",
-            "price": "从 RM 14 / sq ft 起",
+            "price": "从 RM 14 / 平方英尺起",
             "desc": "两层或三层错层，含隐藏式 LED 灯槽、L 盒造型与筒灯开孔。"
           },
           {
             "name": "灯带与弧形天花",
-            "price": "从 RM 22 / sq ft 起",
+            "price": "从 RM 22 / 平方英尺起",
             "desc": "定制弧形、灯带或桶形天花，使用柔性 GI 骨架，营造间接氛围照明。"
           },
           {
             "name": "石膏隔断与办公室隔断",
-            "price": "从 RM 11 / sq ft 起",
+            "price": "从 RM 11 / 平方英尺起",
             "desc": "石膏板隔断，用于房间分隔、办公卡位与会议室，可选隔音。"
           },
           {
             "name": "房间隔断",
-            "price": "从 RM 11 / sq ft 起",
+            "price": "从 RM 11 / 平方英尺起",
             "desc": "卧室、书房或储物间隔断，预留门洞与电源点位。"
           },
           {
             "name": "背景墙与墙板",
-            "price": "从 RM 18 / sq ft 起",
+            "price": "从 RM 18 / 平方英尺起",
             "desc": "电视背景墙、格栅板、护墙板与装饰墙板，含隐藏式 LED。"
           },
           {
             "name": "刮腻子与墙面抹灰",
-            "price": "从 RM 5 / sq ft 起",
+            "price": "从 RM 5 / 平方英尺起",
             "desc": "镜面光滑刮腻子与墙面抹灰，即可上漆，并修补裂缝。"
           },
           {
@@ -1741,7 +1741,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
           },
           {
             "name": "天花修补与重新找平",
-            "price": "从 RM 8 / sq ft 起",
+            "price": "从 RM 8 / 平方英尺起",
             "desc": "拆除受潮损坏的板材，结构加固后对旧天花重新刮腻子。"
           }
         ]
@@ -1784,23 +1784,23 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
         "subServices": [
           {
             "name": "Salutan Skim Dinding",
-            "price": "Dari RM 5 / sq ft",
+            "price": "Dari RM 5 / kaki persegi",
             "desc": "Salutan skim dua lapisan atas plaster atau dinding yang sebelumnya dicat untuk kemasan siap-cat licin kaca."
           },
           {
             "name": "Salutan Skim Siling",
-            "price": "Dari RM 6 / sq ft",
+            "price": "Dari RM 6 / kaki persegi",
             "desc": "Skim semula siling plaster sedia ada untuk menyegarkan permukaan tua sebelum pengecatan semula."
           },
           {
             "name": "Pembaikan Retak & Sendi",
-            "price": "Dari RM 22 / linier ft",
+            "price": "Dari RM 22 / kaki linier",
             "desc": "Membuka, meroute, dan mengisi retak struktur dan penyelesaian dengan pengisi akrilik fleksibel."
           },
           {
             "name": "Pakej Skim Semula Kondominium Penuh",
             "price": "Dari RM 4,200",
-            "desc": "Salutan skim lengkap unit kondominium 1,000 sqft keseluruhan bersedia untuk pengecatan semula."
+            "desc": "Salutan skim lengkap unit kondominium 1,000 kaki persegi keseluruhan bersedia untuk pengecatan semula."
           }
         ]
       },
@@ -1811,12 +1811,12 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
         "subServices": [
           {
             "name": "墙面腻子",
-            "price": "从 RM 5 / sq ft 起",
+            "price": "从 RM 5 / 平方英尺起",
             "desc": "在已抹灰或旧漆墙面上做两道腻子，达到玻璃般光滑、可上漆的效果。"
           },
           {
             "name": "天花腻子",
-            "price": "从 RM 6 / sq ft 起",
+            "price": "从 RM 6 / 平方英尺起",
             "desc": "对旧石膏天花重新刮腻子，让旧表面焕然一新再上漆。"
           },
           {
@@ -1827,7 +1827,7 @@ export const quoteCatalogBySlug: Record<string, QuoteCatalogEntry> = {
           {
             "name": "整套公寓重刮腻子配套",
             "price": "从 RM 4,200 起",
-            "desc": "1,000 sqft 公寓全屋刮腻子，准备上漆。"
+            "desc": "1,000 平方英尺公寓全屋刮腻子，准备上漆。"
           }
         ]
       }

@@ -51,6 +51,7 @@ export default function GongjuPage() {
     <>
       <ToolsIndexPage
         copy={copy}
+        locale="zh"
         path={path}
         tools={tools}
         graph={buildToolsIndexGraph({ path, copy, tools, inLanguage: copy.schemaLanguage })}
