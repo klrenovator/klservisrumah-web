@@ -16,10 +16,18 @@ import type { NextRequest } from "next/server";
  *   t     — template id (default|service|area|blog|tool|problem|cost|pod);
  *           selects the accent colour + chip label only
  *
- * The image is deterministic per (title, t), so we cache it briefly at the
- * CDN edge; crawlers re-fetch per page.
+ * The image is deterministic per (title, t), so we cache it at the CDN
+ * (`s-maxage` below) and in the browser; crawlers re-fetch per page.
+ *
+ * RUNTIME CHOICE (changed 2026-09-01): Edge, not Node. Live probes showed the
+ * Node serverless version intermittently returning HTTP 500 (multi-second
+ * cold starts bundling the resvg WASM + satori graph on Vercel's Hobby
+ * functions) — and since nearly every page's og:image points here, a failure
+ * breaks WhatsApp/Facebook/Telegram link previews sitewide. Edge functions
+ * cold-start in milliseconds and `next/og`'s ImageResponse is fully
+ * supported on the Edge runtime.
  */
-export const runtime = "nodejs";
+export const runtime = "edge";
 export const dynamic = "force-dynamic";
 
 const TEMPLATES: Record<string, { accent: string; label: string }> = {
@@ -171,7 +179,10 @@ export async function GET(request: NextRequest) {
       width: 1200,
       height: 630,
       headers: {
-        "Cache-Control": "public, max-age=86400, stale-while-revalidate=604800",
+        // s-maxage caches the deterministic image at the CDN for 24h so
+        // crawlers and social fetchers (WhatsApp, Facebook, Telegram) never
+        // re-invoke the rendering function per page; max-age covers browsers.
+        "Cache-Control": "public, max-age=86400, s-maxage=86400, stale-while-revalidate=604800",
       },
     }
   );

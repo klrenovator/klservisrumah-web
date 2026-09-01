@@ -13,6 +13,7 @@ import {
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { siteConfig } from "@/config/site";
 import { getWhatsAppLink } from "@/lib/whatsapp";
+import { hubPath } from "@/lib/hub-links";
 import type { ToolsIndexCopy } from "@/config/tools-i18n";
 import type { Locale } from "@/lib/i18n";
 
@@ -157,7 +158,7 @@ export function ToolsIndexPage({
               <MessageSquare className="h-4 w-4" /> {copy.askWhatsapp}
             </a>
             <Link
-              href="/pricing"
+              href={hubPath("/pricing", locale)}
               className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3 text-sm font-black uppercase tracking-wider text-[#075985] transition hover:bg-sky-50"
             >
               {copy.viewPriceGuide} <ArrowRight className="h-4 w-4" />
@@ -241,7 +242,7 @@ export function ToolsIndexPage({
                 <MessageSquare className="h-4 w-4" /> {copy.ctaQuote}
               </a>
               <Link
-                href="/services"
+                href={hubPath("/services", locale)}
                 className="mt-3 inline-flex items-center justify-center gap-2 rounded-2xl bg-white/10 px-5 py-3.5 text-sm font-black text-white transition hover:bg-white/20"
               >
                 {copy.ctaBrowse} <ArrowRight className="h-4 w-4" />

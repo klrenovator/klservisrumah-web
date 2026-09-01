@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { getWhatsAppLink } from "@/lib/whatsapp";
+import { hubPath, localizeHref } from "@/lib/hub-links";
 import { NapContactStrip } from "@/components/content/nap-contact-strip";
 import { ESTIMATE_DISCLAIMER } from "@/lib/estimator/format";
 import { toolsContent, type ToolContent } from "@/config/tools-data";
@@ -263,7 +264,7 @@ export function ToolPage({
             </p>
 
             <Link
-              href="/pricing"
+              href={hubPath("/pricing", locale)}
               className="mt-5 inline-flex items-center gap-1.5 text-sm font-black text-[#0EA5E9] hover:text-[#075985]"
             >
               {shell.fullGuideLink} <ArrowRight className="h-4 w-4" />
@@ -313,7 +314,7 @@ export function ToolPage({
                 {content.relatedServices.map((service) => (
                   <li key={service.href}>
                     <Link
-                      href={service.href}
+                      href={localizeHref(service.href, locale)}
                       className="group flex items-center justify-between gap-2 rounded-xl border border-slate-100 bg-slate-50/60 px-4 py-3 text-sm font-bold text-slate-700 transition hover:border-sky-200 hover:bg-sky-50 hover:text-[#075985]"
                     >
                       {service.label}

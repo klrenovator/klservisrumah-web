@@ -10,6 +10,7 @@ import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
 import { areaNavBySlug, getLocalizedAreaName } from "@/config/area-nav.generated";
 import { OPEN_CONSENT_SETTINGS_EVENT } from "@/lib/consent";
+import { hubPath } from "@/lib/hub-links";
 
 /**
  * Sitewide "Explore" links.
@@ -72,33 +73,10 @@ const MORE_LINKS = [
 ] as const;
 
 /**
- * Tree-native hub path. Content hubs that have a real localized route
- * (services, pricing, blog, FAQ, problems and the content pods) resolve inside
- * the active language tree so MS/ZH visitors never take a 301 hop out of their
- * tree; EN-only surfaces (areas, near-me, projects, contact — no localized
- * route exists by design) keep their canonical English path, matching the
- * navbar's chrome convention.
+ * Tree-native hub path (shared helper in `lib/hub-links.ts` — see its doc
+ * comment for the full rationale; extracted here so every component that
+ * renders on MS/ZH pages uses one source of truth).
  */
-function hubPath(englishHref: string, lang: "en" | "ms" | "zh"): string {
-  if (lang === "en") return englishHref;
-  const map: Record<string, { ms: string; zh: string }> = {
-    "/pricing": { ms: "/ms/harga", zh: "/zh/pricing" },
-    "/blog": { ms: "/ms/blog", zh: "/zh/bo-ke" },
-    "/faq": { ms: "/ms/soalan-lazim", zh: "/zh/chang-jian-wen-ti" },
-    "/problems": { ms: "/ms/problems", zh: "/zh/problems" },
-    "/answers": { ms: "/ms/answers", zh: "/zh/answers" },
-    "/guides": { ms: "/ms/guides", zh: "/zh/guides" },
-    "/process": { ms: "/ms/process", zh: "/zh/process" },
-    "/compare": { ms: "/ms/compare", zh: "/zh/compare" },
-    "/top": { ms: "/ms/top", zh: "/zh/top" },
-    "/brands": { ms: "/ms/brands", zh: "/zh/brands" },
-    "/residential": { ms: "/ms/residential", zh: "/zh/residential" },
-    "/commercial": { ms: "/ms/commercial", zh: "/zh/commercial" },
-    "/seasonal": { ms: "/ms/seasonal", zh: "/zh/seasonal" }
-  };
-  return map[englishHref]?.[lang] ?? englishHref;
-}
-
 export function Footer() {
   const year = new Date().getFullYear();
   const t = useTranslations();

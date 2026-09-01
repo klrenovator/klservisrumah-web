@@ -21,6 +21,7 @@ import { siteConfig } from "@/config/site";
 import { getLocalizedService } from "@/lib/service-i18n";
 import { getServerTranslator } from "@/lib/i18n-server";
 import { getWhatsAppLink } from "@/lib/whatsapp";
+import { hubPath } from "@/lib/hub-links";
 import { warrantyLead, slugify } from "@/lib/utils";
 import { hasSpecialtyLocaleContent } from "@/config/specialty-locale-content";
 import {
@@ -538,7 +539,7 @@ export function LocaleServicePage({ locale, slug }: { locale: "ms" | "zh"; slug:
               {t("serviceContent.allServices")}
             </Link>
             {" · "}
-            <Link href="/pricing" className="text-[#0EA5E9] hover:underline">
+            <Link href={hubPath("/pricing", locale)} className="text-[#0EA5E9] hover:underline">
               {t("serviceContent.pricingLink")}
             </Link>
           </p>

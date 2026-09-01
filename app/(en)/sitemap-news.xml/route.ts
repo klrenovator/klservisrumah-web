@@ -6,13 +6,15 @@ import { getLocalizedBlogPost } from "@/config/blog-i18n";
  *
  * Google News sitemaps may only include articles published within the **last
  * 48 hours**; an item older than that window is ignored at best and treated as
- * a freshness signal against the site at worst. The previous version was
- * `force-static` and listed all 216 blog posts (spread across ~54 dates, none
- * inside 48h of any crawl) with EN-only titles.
+ * a freshness signal against the site at worst. The version before this
+ * rewrite was `force-static` and listed all 216 blog posts (spread across ~54
+ * dates, none inside 48h of any crawl) with EN-only titles.
  *
  * This version:
- *   - is a **dynamic** feed (revalidated hourly) that emits only posts whose
- *     publication date is inside the 48-hour Google News window;
+ *   - emits only posts whose publication date is inside the 48-hour Google
+ *     News window **as of build time** — this site ships content exclusively
+ *     through rebuilds (everything is SSG; there is no runtime content path),
+ *     so the build-time window is exactly when a post becomes visible anyway;
  *   - returns a valid **empty** `<urlset>` when nothing is fresh — Google
  *     explicitly accepts an empty news sitemap, and this is the normal state
  *     for a site that publishes in batches;
@@ -20,9 +22,17 @@ import { getLocalizedBlogPost } from "@/config/blog-i18n";
  *     post with the correct `<news:language>` tag and localized title;
  *   - never includes stale posts, so the feed is permanently policy-valid
  *     without manual removal when content ages.
+ *
+ * Why static (force-static) rather than a dynamic route handler: the dynamic
+ * version ran as a Vercel serverless function that bundled the entire blog
+ * corpus (~3 MB generated JSON + the full MS/ZH article copies) and
+ * intermittently failed with 500s / multi-second cold starts in production
+ * (2026-09-01 live probes: `/sitemap-news.xml` returned 500 and timed out
+ * repeatedly while every static route served instantly). A build-time static
+ * feed has identical semantics for this site (see above) and zero runtime
+ * failure surface — it is a plain static file on the CDN.
  */
-export const revalidate = 3600; // 1 hour — a post becomes eligible within an hour of publication
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
 
 const NEWS_WINDOW_MS = 48 * 60 * 60 * 1000;
 
@@ -85,8 +95,9 @@ ${urls}
   return new Response(xml, {
     headers: {
       "content-type": "application/xml; charset=utf-8",
-      // News crawlers re-fetch this feed regularly; keep the 48h window
-      // accurate rather than serving a cached empty/stale copy.
+      // Served as a static file from the CDN; the 1-hour CDN freshness lets
+      // news crawlers re-fetch the feed regularly while the file itself only
+      // changes when a fresh post ships in a rebuild.
       "cache-control": "public, s-maxage=3600, stale-while-revalidate=600"
     }
   });
