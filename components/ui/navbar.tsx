@@ -13,7 +13,12 @@ import { AllPagesMenu } from "@/components/ui/all-pages-menu";
 import { Logo } from "@/components/ui/logo";
 import { useTranslations } from "@/hooks/use-translations";
 import { useLang } from "@/context/lang-context";
+import { hubPath, localizeHref, toolHubPath } from "@/lib/hub-links";
 
+// Hubs with a real localized twin are resolved inside the active language
+// tree (hubPath). Home, Areas, About and Contact have no localized route by
+// design (the /ms and /zh roots are noindex redirect stubs), so they keep
+// their canonical English path — matching the footer's chrome convention.
 const PRIMARY_LINKS = [
   { href: "/", key: "nav.home" },
   { href: "/pricing", key: "nav.pricing" },
@@ -23,6 +28,9 @@ const PRIMARY_LINKS = [
   { href: "/contact", key: "nav.contact" }
 ];
 
+// Deep service links in the desktop mega-menus resolve inside the active
+// language tree (shared service slugs) via `localizeHref`; `/emergency`
+// sub-routes are EN-only by design and keep their canonical path.
 function WhatsAppIcon({ className = "h-5 w-5" }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -161,11 +169,11 @@ export function Navbar() {
     <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-1 min-[430px]:gap-3 px-2 min-[430px]:px-3 sm:px-6 lg:px-8">
       <Link href="/" className="shrink-0" aria-label={t("a11y.logoLink")}><Logo size="md" priority heightClassName="h-[34px] min-[430px]:h-[40px] sm:h-[52px]" /></Link>
       <div className="hidden items-center gap-1 lg:flex">
-        {PRIMARY_LINKS.slice(0, 1).map(item => <NavLink key={item.href} href={item.href} active={pathname === item.href} label={t(item.key)} />)}
+        {PRIMARY_LINKS.slice(0, 1).map(item => <NavLink key={item.href} href={hubPath(item.href, lang)} active={pathname === hubPath(item.href, lang)} label={t(item.key)} />)}
         <div ref={renovationRef} className="relative" onMouseEnter={() => setRenovationOpen(true)} onMouseLeave={() => setRenovationOpen(false)}>
           <button type="button" onClick={() => setRenovationOpen(v => !v)} className={`relative inline-flex items-center gap-1 px-3 py-2 text-xs font-black uppercase tracking-widest transition-colors ${isRenovation ? "text-[#0284C7]" : "text-slate-900 hover:text-[#0284C7]"}`} aria-expanded={renovationOpen} aria-haspopup="true">{t("nav.renovation")}<ChevronDown className={`h-3.5 w-3.5 transition-transform ${renovationOpen ? "rotate-180" : ""}`} aria-hidden="true" />{isRenovation && <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#0284C7]" />}</button>
           {renovationOpen && <div className="absolute left-0 top-full mt-2 w-[720px] rounded-2xl border border-slate-100 bg-white p-4 shadow-[0_18px_50px_rgba(2,31,68,0.15)] animate-in fade-in zoom-in-95 duration-150 transform-gpu">
-            <div className="mb-3 flex items-center justify-between px-2"><span className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-500">{t("menu.renovation")}</span><Link href="/services/house-renovation" className="text-xs font-bold text-[#0284C7] hover:text-[#075985]">{t("common.viewAll")}</Link></div>
+            <div className="mb-3 flex items-center justify-between px-2"><span className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-500">{t("menu.renovation")}</span><Link href={localizeHref("/services/house-renovation", lang)} className="text-xs font-bold text-[#0284C7] hover:text-[#075985]">{t("common.viewAll")}</Link></div>
             <div className="grid grid-cols-2 gap-1">
               {renovationNav.map(source => {
                 const service = getLocalizedServiceNav(source, lang);
@@ -176,23 +184,26 @@ export function Navbar() {
               })}
             </div>
             <div className="mt-3 grid grid-cols-3 gap-2 border-t border-slate-100 pt-3">
-              <Link href="/tools/renovation-budget-calculator" className="rounded-xl bg-slate-50 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-sky-50 hover:text-[#0284C7]">{t("common.renovationCalculator")}</Link>
-              <Link href="/services/house-renovation/terrace-house-renovation" className="rounded-xl bg-slate-50 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-sky-50 hover:text-[#0284C7]">{t("menu.terraceRenovation")}</Link>
-              <Link href="/services/house-renovation/condo-interior-refurbishment" className="rounded-xl bg-slate-50 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-sky-50 hover:text-[#0284C7]">{t("menu.condoRenovation")}</Link>
+              <Link href={toolHubPath("/tools/renovation-budget-calculator", lang)} className="rounded-xl bg-slate-50 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-sky-50 hover:text-[#0284C7]">{t("common.renovationCalculator")}</Link>
+              <Link href={localizeHref("/services/house-renovation/terrace-house-renovation", lang)} className="rounded-xl bg-slate-50 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-sky-50 hover:text-[#0284C7]">{t("menu.terraceRenovation")}</Link>
+              <Link href={localizeHref("/services/house-renovation/condo-interior-refurbishment", lang)} className="rounded-xl bg-slate-50 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-sky-50 hover:text-[#0284C7]">{t("menu.condoRenovation")}</Link>
             </div>
           </div>}
         </div>
         <div ref={servicesRef} className="relative" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
           <button type="button" onClick={() => setServicesOpen(value => !value)} className={`relative inline-flex items-center gap-1 px-3 py-2 text-xs font-black uppercase tracking-widest transition-colors ${isServices && !isRenovation ? "text-[#0284C7]" : "text-slate-900 hover:text-[#0284C7]"}`} aria-expanded={servicesOpen} aria-haspopup="true">{t("nav.services")}<ChevronDown className={`h-3.5 w-3.5 transition-transform ${servicesOpen ? "rotate-180" : ""}`} aria-hidden="true" />{isServices && !isRenovation && <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#0284C7]" />}</button>
           {servicesOpen && <div className="absolute left-0 top-full mt-2 w-[620px] rounded-2xl border border-slate-100 bg-white p-3 shadow-[0_18px_50px_rgba(2,31,68,0.15)] animate-in fade-in zoom-in-95 duration-150 transform-gpu">
-            <div className="mb-2 flex items-center justify-between px-2"><span className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-500">{t("menu.services")}</span><Link href="/services" className="text-xs font-bold text-[#0284C7] hover:text-[#075985]">{t("common.viewAll")}</Link></div>
+            <div className="mb-2 flex items-center justify-between px-2"><span className="text-[10px] font-black uppercase tracking-[0.15em] text-slate-500">{t("menu.services")}</span><Link href={hubPath("/services", lang)} className="text-xs font-bold text-[#0284C7] hover:text-[#075985]">{t("common.viewAll")}</Link></div>
             <div className="mb-2 text-[10px] font-black uppercase tracking-[0.15em] text-slate-500 px-2">{t("menu.renovation")}</div>
             <div className="grid grid-cols-2 gap-1 mb-3">{renovationNav.slice(0,6).map(source => { const service = getLocalizedServiceNav(source, lang); return <Link key={service.slug} href={`/services/${service.slug}`} className="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-sky-50 hover:text-[#0284C7]">{service.title}</Link>; })}</div>
             <div className="mb-2 text-[10px] font-black uppercase tracking-[0.15em] text-slate-500 px-2">{t("menu.otherServices")}</div>
             <div className="grid grid-cols-2 gap-1">{otherNav.map(source => { const service = getLocalizedServiceNav(source, lang); return <Link key={service.slug} href={`/services/${service.slug}`} className="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-sky-50 hover:text-[#0284C7]">{service.title}</Link>; })}</div>
           </div>}
         </div>
-        {PRIMARY_LINKS.slice(1).map(item => <NavLink key={item.href} href={item.href} active={pathname === item.href || pathname.startsWith(`${item.href}/`)} label={t(item.key)} />)}
+        {PRIMARY_LINKS.slice(1).map(item => {
+          const localized = hubPath(item.href, lang);
+          return <NavLink key={item.href} href={localized} active={pathname === localized || pathname.startsWith(`${localized}/`)} label={t(item.key)} />;
+        })}
       </div>
       <div className="hidden items-center gap-3 lg:flex"><LanguageSwitcher /><HeaderWhatsAppActions /></div>
       {/*

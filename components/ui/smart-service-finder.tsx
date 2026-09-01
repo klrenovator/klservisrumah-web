@@ -27,6 +27,7 @@ import {
   type SmartSearchEngine,
 } from "@/lib/smart-finder-loader";
 import { useLang } from "@/context/lang-context";
+import { hubPath } from "@/lib/hub-links";
 import { SERVICE_COUNT } from "@/config/service-nav.generated";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { trackSmartFinderSearch, trackSmartFinderCardExpand, trackSmartFinderCalculatorClick, trackSmartFinderQuoteClick, trackSmartFinderNoResults, trackSmartFinderPopularTag, trackSmartFinderRelatedClick } from "@/lib/analytics";
@@ -675,7 +676,7 @@ export function SmartServiceFinder({ initialQuery = "" }: { initialQuery?: strin
                     <span>{copy.whatsappConsult}</span>
                   </a>
                   <Link
-                    href="/services"
+                    href={hubPath("/services", lang)}
                     className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-700 bg-slate-800 px-6 py-3.5 text-sm font-extrabold text-white hover:bg-slate-700 transition-colors"
                   >
                     <span>{copy.browseAll}</span>

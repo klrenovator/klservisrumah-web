@@ -4,6 +4,8 @@ import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { Menu, X, ChevronRight } from "lucide-react";
 import { useTranslations } from "@/hooks/use-translations";
+import { useLang } from "@/context/lang-context";
+import { hubPath } from "@/lib/hub-links";
 
 /**
  * Primary destinations — the main website pages. Mirrors the desktop primary
@@ -26,6 +28,7 @@ const MAIN_PAGES = [
 export function AllPagesMenu() {
   const [open, setOpen] = useState(false);
   const t = useTranslations();
+  const { lang } = useLang();
   const triggerRef = useRef<HTMLButtonElement>(null);
   const drawerRef = useRef<HTMLDivElement>(null);
 
@@ -96,7 +99,7 @@ export function AllPagesMenu() {
         <nav className="flex-1 px-4 py-5" aria-label={t("menu.main")}>
           <p className="px-3 pb-2 text-[10px] font-black uppercase tracking-[0.16em] text-slate-400">{t("menu.main")}</p>
           <div className="space-y-1">
-            {MAIN_PAGES.map((page) => <Link key={page.href} href={page.href} onClick={() => setOpen(false)} className="flex items-center justify-between rounded-xl px-3 py-3 text-sm font-bold text-slate-700 transition hover:bg-sky-50 hover:text-[#0284C7]">
+            {MAIN_PAGES.map((page) => <Link key={page.href} href={hubPath(page.href, lang)} onClick={() => setOpen(false)} className="flex items-center justify-between rounded-xl px-3 py-3 text-sm font-bold text-slate-700 transition hover:bg-sky-50 hover:text-[#0284C7]">
               {t(page.key)} <ChevronRight className="h-4 w-4 text-sky-500" />
             </Link>)}
           </div>

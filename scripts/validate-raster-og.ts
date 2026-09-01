@@ -60,11 +60,15 @@ if (!fs.existsSync(routeFile)) {
 } else {
   const src = fs.readFileSync(routeFile, "utf8");
   if (!src.includes("ImageResponse")) fail("app/og-image/route.tsx no longer renders with next/og ImageResponse");
-  if (!/export const runtime\s*=\s*"nodejs"/.test(src)) fail("app/og-image/route.tsx lost runtime = \"nodejs\"");
+  // Edge (not Node) since 2026-09-01: live probes showed the Node serverless
+  // version intermittently 500ing (heavy resvg/satori cold starts on Vercel
+  // Hobby). next/og ImageResponse is fully supported on the Edge runtime —
+  // assert the explicit runtime declaration exists so it is never dropped.
+  if (!/export const runtime\s*=\s*"edge"/.test(src)) fail("app/og-image/route.tsx lost runtime = \"edge\"");
   for (const id of OG_TEMPLATE_IDS) {
     if (!new RegExp(`\\b${id}:\\s*\\{`).test(src)) fail(`app/og-image/route.tsx lost the "${id}" template`);
   }
-  ok("app/og-image/route.tsx", "ImageResponse + nodejs runtime + all 8 template ids present");
+  ok("app/og-image/route.tsx", "ImageResponse + edge runtime + all 8 template ids present");
 }
 
 const seoMeta = path.join(ROOT, "lib", "seo-meta.ts");

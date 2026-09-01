@@ -28,6 +28,12 @@
  *      English template phrases ("cost quote", "I would like…") — a BM/中文
  *      visitor must never send an English message to the dispatch desk
  *      (caught live, Fix Wave 28).
+ *  18. On /ms/… and /zh/… pages, no link may target an English content hub
+ *      that has a real localized twin (/pricing, /services, /blog, /faq,
+ *      /problems and the pod families) — the localized crawl and MS/ZH
+ *      visitors must stay inside their language tree instead of 301-hopping
+ *      back to English (leaks found live on /zh/gongju → /pricing, the
+ *      localized tool pages and the MS/ZH service pages, 2026-09-01).
  *
  * Exits non-zero if any FATAL finding exists, so it can be wired into CI or
  * `prebuild` like `seo-audit.ts`. Warnings are reported but do not fail.
@@ -37,6 +43,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { gzipSync } from "node:zlib";
+import { LOCALIZED_HUB_PATHS } from "../lib/hub-links";
 
 const BUILD = path.join(process.cwd(), ".next", "server", "app");
 
@@ -310,6 +317,28 @@ function audit(file: string) {
       if (/\bcost\s+quote\b|\bI would like\b|\bI am looking\b|\bI am located\b|\bCan I check\b|\bHello KL Servis Rumah\b|\bfor my property\b|\bbook a home service\b/i.test(decoded)) {
         report(url, "wa-prefill-locale-leak", truncate(decoded));
       }
+    }
+  }
+
+  // 18. Cross-tree hub link leak on /ms/… and /zh/… pages (2026-09-01).
+  //
+  //     The navbar primary links, tools index, every localized tool page and
+  //     the localized service pages hardcoded `href="/pricing"` (and the
+  //     tools index `href="/services"`), so a BM/中文 visitor or the localized
+  //     crawl took a 301 hop out of their language tree to the English
+  //     pricing/services hub — exactly the leak class Fix Wave 25 (P4-16)
+  //     closed in the footer. Every hub in `LOCALIZED_HUB_PATHS` has a real
+  //     localized twin (`lib/hub-links.ts`), so an English href on a /ms or
+  //     /zh page is always a defect. Only exact hub hrefs are flagged: deep
+  //     links to EN-only sub-pages (e.g. a non-localized specialty or the
+  //     /emergency service views) are legitimate and out of scope for this
+  //     check.
+  if (url.startsWith("/ms/") || url.startsWith("/zh/")) {
+    const HUB_ALT = LOCALIZED_HUB_PATHS.map((p) => p.slice(1)).join("|");
+    const HUB_RE = new RegExp(`href="/(${HUB_ALT})"`, "g");
+    let hubMatch: RegExpExecArray | null;
+    while ((hubMatch = HUB_RE.exec(html)) !== null) {
+      report(url, "cross-tree-hub-link", `href="/${hubMatch[1]}" on a localized page`);
     }
   }
 }
