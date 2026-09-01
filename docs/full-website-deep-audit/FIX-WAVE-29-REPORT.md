@@ -94,3 +94,19 @@ Corpus scan after fix: **0 English hub hrefs across all 1,668 built `/ms/*` + `/
 - PR: https://github.com/klrenovator/klservisrumah-web/pull/213
 - Pushed to origin: ✅ (`git push origin arena/01a05b3a-klservisrumah-web`)
 - Working tree clean after commit. CI/deploy runs on merge (workflow-file push not attempted — token lacks workflows permission).
+
+---
+
+## 9. Merge + live verification (post-deploy)
+
+- PR #213 **merged** 2026-09-01T09:12:21Z → merge commit `c781914` on `main` (all checks green: QA gates 2m59s, Vercel, Vercel Preview Comments).
+- Vercel **Production deployment for `c781914` completed** 2026-09-01T09:15:36Z.
+- Live probes after deploy (independent fetcher r.jina.ai; the sandbox's direct fetcher keeps returning a stale 500 for the two fixed URLs — it cached the pre-fix failures and has 500'd on them all session even when healthy):
+
+| Probe | Result | Verdict |
+|---|---|---|
+| `https://www.klservisrumah.my/sitemap-news.xml` | 200 — valid empty `<urlset>` ("Title: Sitemap", empty body) | ✅ static feed live |
+| `https://www.klservisrumah.my/og-image?title=Live%20Verify&template=service` | 200 — PNG described as "Blue color background with white text on the highlight of KL Servis Rumah" | ✅ Edge OG renderer live |
+| `https://www.klservisrumah.my/zh/gongju` | Navbar `价格 → /zh/pricing`, `博客 → /zh/bo-ke`; CTA "查看 2026 年价格指南" → `/zh/pricing`; EN-only surfaces (`/`, `/areas`, `/about`, `/contact`) unchanged | ✅ cross-tree fix live |
+
+- Remaining action (owner/Google side): GSC + Bing recrawl of `/ms/*` and `/zh/*` to pick up the in-tree hub links; no URL changes were made so no 301s or sitemap resubmission are needed. `/sitemap-news.xml` and `/og-image` are healthy static/edge responses going forward.
