@@ -175,6 +175,7 @@ async function main() {
   for (const [key, pages] of clusters) out[key] = clusterAnalyze(pages);
   out["areaVsServicePage (mean)"] = areaVsSvc;
   out["areaPagesWithinService (mean)"] = areaVsArea.map((r) => ({ svc: (r as { svc: string }).svc, meanPairwiseJaccard: r.meanPairwiseJaccard, pctShared50: r.pctShared50 }));
+  fs.mkdirSync(path.dirname(OUT), { recursive: true });
   fs.writeFileSync(OUT, JSON.stringify(out, null, 2));
   for (const [key, v] of Object.entries(out)) {
     if (typeof v === "object" && "meanPairwiseJaccard" in (v as object)) {
