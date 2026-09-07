@@ -197,6 +197,7 @@ async function main() {
   const files: string[] = [];
   walk(BUILD_DIR, files);
   console.log(`Rendered pages found: ${files.length}`);
+  fs.mkdirSync(path.dirname(OUT_LINES), { recursive: true });
   const out = fs.createWriteStream(OUT_LINES);
   const recs: PageRec[] = [];
 

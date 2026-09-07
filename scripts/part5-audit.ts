@@ -303,6 +303,7 @@ function main() {
   }
 
   // ---------- Write corpus ----------
+  fs.mkdirSync(path.dirname(OUT_CORPUS), { recursive: true });
   fs.writeFileSync(OUT_CORPUS, recs.map((r) => JSON.stringify(r)).join("\n") + "\n");
 
   // ---------- Schema aggregate by pattern (EN) ----------
